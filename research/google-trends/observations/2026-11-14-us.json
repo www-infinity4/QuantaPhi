@@ -3,41 +3,321 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T17:01:07.497883Z",
+  "checked_at": "2026-11-14T17:30:57.095473Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "keelon russell",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T16:40:00Z",
+      "query": "kraken vs hurricanes",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T17:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50474755/sources-alabama-start-qb-austin-mack-russell-available",
-        "https://sports.yahoo.com/articles/keelon-russell-deemed-game-time-161743561.html",
-        "https://www.al.com/alabamafootball/2026/11/austin-mack-expected-to-start-vanderbilt-game-per-espn-report.html"
+        "https://www.nhl.com/hurricanes/news/preview-november-14-vs-seattle",
+        "https://sports.yahoo.com/articles/sebastian-aho-goes-full-circle-164457630.html",
+        "https://www.canescountry.com/carolina-hurricanes-game-day-previews/54660/global-series-game-two-hurricanes-vs-kraken-preview-how-to-watch-game-thread"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3Dad_846wk4fFsE1hI7wYQXFdhI5fwUvny3L-2gwYVf7ugmXmo4BvxSskv6E",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSZ_ao45PhQYap2ST4Cd4fLRELROekvgt7G-koURmQI13Uti2pRZr2cc9dT14",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50474755/sources-alabama-start-qb-austin-mack-russell-available",
-          "title": "Sources: Alabama to start QB Austin Mack; Keelon Russell available",
-          "publisher": "ESPN",
+          "url": "https://www.nhl.com/hurricanes/news/preview-november-14-vs-seattle",
+          "title": "Preview: November 14 vs. Seattle",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3Dad_846wk4fFsE1hI7wYQXFdhI5fwUvny3L-2gwYVf7ugmXmo4BvxSskv6E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSZ_ao45PhQYap2ST4Cd4fLRELROekvgt7G-koURmQI13Uti2pRZr2cc9dT14"
         },
         {
-          "url": "https://sports.yahoo.com/articles/keelon-russell-deemed-game-time-161743561.html",
-          "title": "Keelon Russell deemed game-time decision for Alabama vs Vanderbilt",
+          "url": "https://sports.yahoo.com/articles/sebastian-aho-goes-full-circle-164457630.html",
+          "title": "Sebastian Aho Goes Full Circle, Scoring On 10th Anniversary Of First Career Goal While In Finland",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZir4-UdeUrTa42lPfQVjp5Ajocd3dsWMXgsl0obX8Va7VKnUAO1iPe-zBtWE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDEwDCEnDLuXKJgGBZgqMsLrldEFwAqDtdOnwVLIClsg6cvaTThkWEOF5tNU4"
         },
         {
-          "url": "https://www.al.com/alabamafootball/2026/11/austin-mack-expected-to-start-vanderbilt-game-per-espn-report.html",
-          "title": "Austin Mack expected to start Vanderbilt game, per ESPN report, plus other injury updates",
+          "url": "https://www.canescountry.com/carolina-hurricanes-game-day-previews/54660/global-series-game-two-hurricanes-vs-kraken-preview-how-to-watch-game-thread",
+          "title": "Global Series Game Two: Hurricanes vs Kraken—Preview, How to Watch, Game Thread",
+          "publisher": "Canes Country",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhjDTMzbm7HaQycz3Zm1wMmEEvx_ZNWVvmLjvEiqzMonp5ZynjnkTWGAZY_Nw"
+        }
+      ]
+    },
+    {
+      "query": "east carolina vs charlotte",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T17:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/east-carolina/article/ecu-football-charlotte-final-picks-and-bold-predictions-for-game-292650404/",
+        "https://www.sportsgambler.com/betting-tips/ncaaf/east-carolina-pirates-vs-charlotte-49ers-prediction-odds-2026-11-14/",
+        "https://bonesville.net/2026/11/13/1114-2026_pregame-show_charlotte/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp2FtB-nX3CDZIg4SP8bGPhSXxJe5EONRotMtYZuSb0vuF7x8SNXQzlld7vS0",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/east-carolina/article/ecu-football-charlotte-final-picks-and-bold-predictions-for-game-292650404/",
+          "title": "Final Picks, and Bold Predictions, for ECU’s Game Against Charlotte",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp2FtB-nX3CDZIg4SP8bGPhSXxJe5EONRotMtYZuSb0vuF7x8SNXQzlld7vS0"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/east-carolina-pirates-vs-charlotte-49ers-prediction-odds-2026-11-14/",
+          "title": "East Carolina vs Charlotte Prediction, Picks & Odds | 14 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNYkVtY1dMuxwSfoNEZvddpY0Jwfe16N-15Zcx9mRR9bSr2Rug7jZHsjEMfo4"
+        },
+        {
+          "url": "https://bonesville.net/2026/11/13/1114-2026_pregame-show_charlotte/",
+          "title": "Bonesville Pregame Show",
+          "publisher": "Bonesville",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXClTKHqqcYJ2HEBuaKd3voiyhbIOw67RcIYziQxe_rmucSY3mdstub7rNW5w"
+        }
+      ]
+    },
+    {
+      "query": "uab vs temple",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T17:10:00Z",
+      "related_news_urls": [
+        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-uabs-game-at-temple.html",
+        "https://247sports.com/college/temple/article/temple-uab-gameday-owls-seek-senior-day-redemption-292659258/",
+        "https://phlsportsnow.com/temple-football-preview-dragons-defense-a-top-20-unit/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN5AzQ42Rgpdyq34chuHZGLI6fkJWQeNA_kKgXBxRI1bagB8QeXoreuyzRmzQ",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-uabs-game-at-temple.html",
+          "title": "Scouting report: What you need to know for UAB’s game at Temple",
           "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXvFkIayU50nildr9fvIVbZAVlnv3a2VLBQKeeonC2z5OHrZUiPuZPiWHArR4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN5AzQ42Rgpdyq34chuHZGLI6fkJWQeNA_kKgXBxRI1bagB8QeXoreuyzRmzQ"
+        },
+        {
+          "url": "https://247sports.com/college/temple/article/temple-uab-gameday-owls-seek-senior-day-redemption-292659258/",
+          "title": "Temple-UAB Gameday: Owls seek Senior Day redemption",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8eugMDS2XqikDE-thcuCYzgVKZcSqpichFrv3J72hqRP3Xi0uHqhI24BMzZQ"
+        },
+        {
+          "url": "https://phlsportsnow.com/temple-football-preview-dragons-defense-a-top-20-unit/",
+          "title": "Temple Football Preview: Dragons’ Defense a Top 20 Unit",
+          "publisher": "Philadelphia Sports Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStA22bS1uuSwEE5dNcuOmMRLL-zHehvEvDYOTBiUkftTIgGFVE8X7q6yjxKMM"
+        }
+      ]
+    },
+    {
+      "query": "george bush",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T17:00:00Z",
+      "related_news_urls": [
+        "https://smotus.substack.com/p/do-we-do-accountability",
+        "https://www.streetinsider.com/PRNewswire/President+George+W.+Bush%2C+National+Leaders+Headline+Launch+of+New+National+Academy+for+Free+Expression+and+Pluralism+at+the+University+of+Denver/27327348.html",
+        "https://www.nytimes.com/2026/11/06/us/george-bush-highland-park-methodist-church.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3tnL4JSCVwCKD5YRAZqzvvpaiB3P8d0CW_CXxUsbHaqwW141PT3yNbt5fils",
+      "image_credit": "Seth Masket | Substack",
+      "news": [
+        {
+          "url": "https://smotus.substack.com/p/do-we-do-accountability",
+          "title": "Do we do accountability?",
+          "publisher": "Seth Masket | Substack",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3tnL4JSCVwCKD5YRAZqzvvpaiB3P8d0CW_CXxUsbHaqwW141PT3yNbt5fils"
+        },
+        {
+          "url": "https://www.streetinsider.com/PRNewswire/President+George+W.+Bush%2C+National+Leaders+Headline+Launch+of+New+National+Academy+for+Free+Expression+and+Pluralism+at+the+University+of+Denver/27327348.html",
+          "title": "President George W. Bush, National Leaders Headline Launch of New National Academy for Free Expression and Pluralism at the University of Denver",
+          "publisher": "StreetInsider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAOwp4Kv4BEdWxtV8AipjV3l4Np5Kw-ez6a1L_Ke2X-nDH0JF40oBmpC4tE0w"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/06/us/george-bush-highland-park-methodist-church.html",
+          "title": "In Fight for an Influential Church’s Future, the Bushes Pick a Side",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCwYUt3olJn5bXOlog4573Ys5RtlOmdthFB_gUUC0sjEnwMp-gLSP6yUk1iw"
+        }
+      ]
+    },
+    {
+      "query": "rob gronkowski",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T17:00:00Z",
+      "related_news_urls": [
+        "https://tucson.com/news/local/video_088c5dd6-fd71-5ed9-8948-4af845cb452b.html",
+        "https://www.foxsports.com/replay/fmc-p5cq1q2rmxp3nxa9",
+        "https://arizonasports.com/ncaa/arizona-wildcats/uofa-football/noah-fifita-spikes-football-gronk-big-noon-kickoff"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuGnO7_UvTR_wwVXVWs2hEsPSbYdV3uIYczG3mqENRCIX7DddK9cXYfcs9Pcw",
+      "image_credit": "Arizona Daily Star",
+      "news": [
+        {
+          "url": "https://tucson.com/news/local/video_088c5dd6-fd71-5ed9-8948-4af845cb452b.html",
+          "title": "Rob Gronkowski and the FOX Big Noon Kickoff crew talk with Arizona head coach Brent Brennan and quarterback Noah Fifita.",
+          "publisher": "Arizona Daily Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuGnO7_UvTR_wwVXVWs2hEsPSbYdV3uIYczG3mqENRCIX7DddK9cXYfcs9Pcw"
+        },
+        {
+          "url": "https://www.foxsports.com/replay/fmc-p5cq1q2rmxp3nxa9",
+          "title": "Full-length Replay: The Gronk & Jules Show",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUh2t4HLUm05H9uKHb7EYYoeeBcAqTzn6vCDpEmKEW9FktjfTwCA6Pogx-OkU"
+        },
+        {
+          "url": "https://arizonasports.com/ncaa/arizona-wildcats/uofa-football/noah-fifita-spikes-football-gronk-big-noon-kickoff",
+          "title": "Noah Fifita spikes football with Gronk during Big Noon Kickoff",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs0Ic2gqvSrWlAYFkWiBQ5oLsVsBlpNgZRNBtbOboYbIpgwl7GiVQ_lxhg3Ss"
+        }
+      ]
+    },
+    {
+      "query": "apple tv 4k",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T17:00:00Z",
+      "related_news_urls": [
+        "https://www.fastcompany.com/91636474/dont-buy-the-new-apple-tv-4k-until-apple-does-these-3-things",
+        "https://www.cnn.com/cnn-underscored/reviews/apple-tv-4k-4th-generation",
+        "https://www.pcmag.com/reviews/apple-tv-4k-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAjx54GjSIX6SfdEfIOUA2d0jPds3JyeIC3rXFWDC1ajJJ4MkbLxvemqbIfWQ",
+      "image_credit": "Fast Company",
+      "news": [
+        {
+          "url": "https://www.fastcompany.com/91636474/dont-buy-the-new-apple-tv-4k-until-apple-does-these-3-things",
+          "title": "Don’t buy the new Apple TV 4K until Apple does these 3 things",
+          "publisher": "Fast Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAjx54GjSIX6SfdEfIOUA2d0jPds3JyeIC3rXFWDC1ajJJ4MkbLxvemqbIfWQ"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/reviews/apple-tv-4k-4th-generation",
+          "title": "The new Apple TV 4K is my favorite streaming box ever, but is the price too high?",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAk_T4mg9Gp-jdb3eo6b7GWT0OAANgSuHanP4TlUFz49rvEf6eKX9h0Z8aCs"
+        },
+        {
+          "url": "https://www.pcmag.com/reviews/apple-tv-4k-2026",
+          "title": "Apple TV 4K (2026) Review: Hands-Free Siri and an A19 Chip Justify the $300 Price Tag",
+          "publisher": "PCMag",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlWSOP3xijppExtytSJqPUsBIUXDcGQ9MgULzxTgIu11HM8v6kd4CRS8qlBfY"
+        }
+      ]
+    },
+    {
+      "query": "gronkowski",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T17:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/unfortunately-just-couldn-t-rob-103000286.html",
+        "https://www.bostonherald.com/2026/11/08/report-bill-belichick-made-surprise-foxboro-trip-to-see-ex-patriots-without-robert-kraft-present/",
+        "https://www.masslive.com/patriots/2026/11/bill-belichick-makes-surprise-appearance-at-patriots-event-in-foxborough.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLpQUkrXlbLk5Y5O8Hz-rmeS4EaS7Y8qlqisQ1CZILe2h7AuzxjkUW5IR78pY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/unfortunately-just-couldn-t-rob-103000286.html",
+          "title": "“Unfortunately, I Just Couldn’t”: Rob Gronkowski Regrets Missing Bill Belichick at Patriots HOF Reunion for Fox Duties",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLpQUkrXlbLk5Y5O8Hz-rmeS4EaS7Y8qlqisQ1CZILe2h7AuzxjkUW5IR78pY"
+        },
+        {
+          "url": "https://www.bostonherald.com/2026/11/08/report-bill-belichick-made-surprise-foxboro-trip-to-see-ex-patriots-without-robert-kraft-present/",
+          "title": "Report: Bill Belichick made surprise Foxboro trip to see ex-Patriots without Robert Kraft present",
+          "publisher": "Boston Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHpvQZclPjjdDdx-0eNbcBXe_e1yoFJT4QyjdxLZFqBhAsYi_7npbJTBYqr7I"
+        },
+        {
+          "url": "https://www.masslive.com/patriots/2026/11/bill-belichick-makes-surprise-appearance-at-patriots-event-in-foxborough.html",
+          "title": "Bill Belichick makes surprise appearance at Patriots event in Foxborough",
+          "publisher": "MassLive",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJNtfQo4fuh6V-RKCo9kMZhcnxWdGrOAfGVcdbWSX56-G_PyTfnVawx63OIAY"
+        }
+      ]
+    },
+    {
+      "query": "auburn vs mississippi state",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T17:00:00Z",
+      "related_news_urls": [
+        "https://hailstate.com/news/2026/11/13/sec-adjusts-football-kickoff-time-as-state-hosts-auburn",
+        "https://auburntigers.com/news/2026/11/13/football-kickoff-at-mississippi-state-moved-to-315-pm",
+        "https://sports.yahoo.com/articles/auburn-mississippi-state-game-time-151055076.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSE8FV7sEi_d9sv36gbCItwgXszE1VotvWJm4sLIF3nA34LPCPQhTpAGABFzY",
+      "image_credit": "Mississippi State - Official Athletics Website",
+      "news": [
+        {
+          "url": "https://hailstate.com/news/2026/11/13/sec-adjusts-football-kickoff-time-as-state-hosts-auburn",
+          "title": "SEC Adjusts Football Kickoff Time As State Hosts Auburn",
+          "publisher": "Mississippi State - Official Athletics Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSE8FV7sEi_d9sv36gbCItwgXszE1VotvWJm4sLIF3nA34LPCPQhTpAGABFzY"
+        },
+        {
+          "url": "https://auburntigers.com/news/2026/11/13/football-kickoff-at-mississippi-state-moved-to-315-pm",
+          "title": "Football kickoff at Mississippi State moved to 3:15 PM",
+          "publisher": "Auburn Tigers - Official Athletics Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTp_69sXt97mSETHRb5pVZ2GsNU_YKztPkKlMrp-2iWU12qpcC9-vVEE7_I2s"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/auburn-mississippi-state-game-time-151055076.html",
+          "title": "Auburn-Mississippi State Game Time Changed in Final Decision",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrADyY2Nv2nlbcbzvju32bTCNijF58Yj1fITsJTD1lv-6hmBxTumy-yONuDUs"
+        }
+      ]
+    },
+    {
+      "query": "kevin jennings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T17:00:00Z",
+      "related_news_urls": [
+        "https://www.dallasnews.com/sports/smu-mustangs/article/smu-mustangs-kevin-jennings-final-game-wake-forest-22522226.php",
+        "https://www.dmagazine.com/micropost/kevin-jennings-plays-his-last-smu-home-game-tomorrow/",
+        "https://www.kgw.com/video/sports/locked-on/lo-dallas/smu-show/is-kevin-jennings-smus-greatest-qbwhy-his-legacy-sets-a-new-standard-ahead-of-wake-forest-tilt/535-480b5b6a-ee69-4305-ba45-c8da96b5baa8"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP07957p34ZkO4IWDz6U7GByXBUIW4fqRSHGfqVYUv74HVcDFsJT0PFYfTIoc",
+      "image_credit": "Dallas News",
+      "news": [
+        {
+          "url": "https://www.dallasnews.com/sports/smu-mustangs/article/smu-mustangs-kevin-jennings-final-game-wake-forest-22522226.php",
+          "title": "From SOC to SMU, Kevin Jennings' final home game caps off legacy as the 'King of Dallas'",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP07957p34ZkO4IWDz6U7GByXBUIW4fqRSHGfqVYUv74HVcDFsJT0PFYfTIoc"
+        },
+        {
+          "url": "https://www.dmagazine.com/micropost/kevin-jennings-plays-his-last-smu-home-game-tomorrow/",
+          "title": "Kevin Jennings plays his last SMU home game tomorrow.",
+          "publisher": "D Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB3bioQMU8n33Vr2b8uwXqJrxN5rjb0gmMSm8FVNTWAg_MbvVQGzX3YkwSbVA"
+        },
+        {
+          "url": "https://www.kgw.com/video/sports/locked-on/lo-dallas/smu-show/is-kevin-jennings-smus-greatest-qbwhy-his-legacy-sets-a-new-standard-ahead-of-wake-forest-tilt/535-480b5b6a-ee69-4305-ba45-c8da96b5baa8",
+          "title": "Is Kevin Jennings SMU's Greatest QB?—Why His Legacy SETS a New Standard Ahead of Wake Forest Tilt?",
+          "publisher": "KGW",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN44Dx4qen_RS-ab9F2RPcpAudukir8Yn_2rqq06LOxoLlhIjda6By8C38u7c"
         }
       ]
     },
@@ -48,7 +328,7 @@
       "related_news_urls": [
         "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-saints-to-activate-rb-travis-etienne-for-sundays-game",
         "https://www.neworleanssaints.com/news/injury-report-carolina-panthers-vs-new-orleans-saints-2026-nfl-week-10-friday",
-        "https://www.theclemsoninsider.com/2026/11/12/good-news-for-etienne/"
+        "https://www.cbssports.com/fantasy/football/news/saints-travis-etienne-expected-to-be-activated-from-ir/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUmreIWSv_w9rCh_zdSviQ2QkVBx40btDvU68uCw5YKmAoRTyu1Dy12AazYQ",
       "image_credit": "NBC Sports",
@@ -68,283 +348,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBzPLby5oWF3LBm6YUY7YFpcB4I9frj9o3A5s_b_-69lcBQXpeu9Q-6QY3xes"
         },
         {
-          "url": "https://www.theclemsoninsider.com/2026/11/12/good-news-for-etienne/",
-          "title": "Good News for Etienne",
-          "publisher": "The Clemson Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcsZ3AWsFvaRtmgry6g2jeVvH6MdSb2UBMZ3DcqY3yP00w6lEuMo271aV_YvA"
-        }
-      ]
-    },
-    {
-      "query": "alexei pergande",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T16:40:00Z",
-      "related_news_urls": [
-        "https://mmajunkie.usatoday.com/story/sports/pfl/2026/11/13/pfl-mvp-alexei-pergande-social-media-jake-paul-dubai/92762907007/",
-        "https://www.sherdog.com/news/articles/Prospect-watch-Undefeated-PFL-lightweight-Alexei-Pergande-203574"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_6mBkcNRWJTvQRRSipwI0u6seLyr7cDSlVbA7Y8MF0SS6T4eRKkB__SV5gs",
-      "image_credit": "MMA Junkie",
-      "news": [
-        {
-          "url": "https://mmajunkie.usatoday.com/story/sports/pfl/2026/11/13/pfl-mvp-alexei-pergande-social-media-jake-paul-dubai/92762907007/",
-          "title": "Alexei Pergande discusses sudden social media fame, potential with Jake Paul and MVP",
-          "publisher": "MMA Junkie",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_6mBkcNRWJTvQRRSipwI0u6seLyr7cDSlVbA7Y8MF0SS6T4eRKkB__SV5gs"
-        },
-        {
-          "url": "https://www.sherdog.com/news/articles/Prospect-watch-Undefeated-PFL-lightweight-Alexei-Pergande-203574",
-          "title": "Prospect watch: Undefeated PFL lightweight Alexei Pergande",
-          "publisher": "Sherdog",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJXVyZa4hEJQ4mQsS8hTeMv7KncsO4_rgmMd51_OH1sdkgelPnGIpaKRRd42s"
-        }
-      ]
-    },
-    {
-      "query": "princeton vs yale",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T16:40:00Z",
-      "related_news_urls": [
-        "https://goprincetontigers.com/news/2026/11/13/football-wraps-up-road-schedule-at-yale-saturday",
-        "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2171387",
-        "https://yaledailynews.com/articles/facing-tigers-team-153-s-seniors-look-to-win-one-last-game-at-yale-bowl"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpNdhuHYiN7YOgOtd1BM_TT5Py0hirW0zsF6nbkCOcZ0lU5xMeCgeD8uhGkio",
-      "image_credit": "Princeton University Athletics",
-      "news": [
-        {
-          "url": "https://goprincetontigers.com/news/2026/11/13/football-wraps-up-road-schedule-at-yale-saturday",
-          "title": "No. 23 Football Wraps Up Road Schedule at Yale Saturday",
-          "publisher": "Princeton University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpNdhuHYiN7YOgOtd1BM_TT5Py0hirW0zsF6nbkCOcZ0lU5xMeCgeD8uhGkio"
-        },
-        {
-          "url": "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2171387",
-          "title": "LIVE/FREE: Yale vs Princeton Live Strea.ms Free College Football Game On TV Channel 2026",
-          "publisher": "Powell River Peak",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7dRm3fhkPgBbX2CccuzokQSQKn22CK2RWCe6R3eLlHh8CcKS5cfQTTmucDzE"
-        },
-        {
-          "url": "https://yaledailynews.com/articles/facing-tigers-team-153-s-seniors-look-to-win-one-last-game-at-yale-bowl",
-          "title": "Facing Tigers, Team 153’s seniors look to win one last game at Yale Bowl",
-          "publisher": "Yale Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHqitfkuU6pjcgaRbOW_pPZGzXnI-QQLdKD8uWJJCxY68lZFpvNH8SCL1Tj88"
-        }
-      ]
-    },
-    {
-      "query": "georgia tech vs clemson",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-14T16:30:00Z",
-      "related_news_urls": [
-        "https://www.wltx.com/article/sports/football/hours-from-a-career-milestone-dabo-swinney-will-put-on-the-headset-for-the-250th-time-as-a-head-coach/101-7adfc7d8-423d-4d4c-8104-ff5f4e50e7c1",
-        "https://sports.yahoo.com/articles/watch-georgia-tech-vs-clemson-163500720.html",
-        "https://clemsontigers.com/news/2026/11/10/fbgameday26-gt"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTROSXZpRMXEyrIqYOWczLi-QDP5RR6T_-nWcawRVB-EZYLWHBrfwnoBeBhwf0",
-      "image_credit": "WLTX",
-      "news": [
-        {
-          "url": "https://www.wltx.com/article/sports/football/hours-from-a-career-milestone-dabo-swinney-will-put-on-the-headset-for-the-250th-time-as-a-head-coach/101-7adfc7d8-423d-4d4c-8104-ff5f4e50e7c1",
-          "title": "Hours from a career milestone, Dabo Swinney will put on the headset for the 250th time as a head coach",
-          "publisher": "WLTX",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTROSXZpRMXEyrIqYOWczLi-QDP5RR6T_-nWcawRVB-EZYLWHBrfwnoBeBhwf0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-georgia-tech-vs-clemson-163500720.html",
-          "title": "How to watch Georgia Tech vs Clemson: Live stream College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-DBDAGFtko5HDx6h8l5qkeOibkWFf8zwbEcW6uqS7D5qlWpEjnPFOBjb7kkA"
-        },
-        {
-          "url": "https://clemsontigers.com/news/2026/11/10/fbgameday26-gt",
-          "title": "Gameday: Football vs. Georgia Tech • Nov. 14 • 12:30 p.m. • CW Sports",
-          "publisher": "Clemson University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY8Ffyt4Tc9WmB51Ek-TrZLExo51EylXqJF8wzXbxT41Pc6lGX6Lup-j8Sk9c"
-        }
-      ]
-    },
-    {
-      "query": "nebraska vs rutgers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-14T16:30:00Z",
-      "related_news_urls": [
-        "https://scarletknights.com/news/2026/11/9/game-10-football-vs-nebraska",
-        "https://sports.yahoo.com/articles/week-11-predictions-huskers-scarlet-154546984.html",
-        "https://247sports.com/college/nebraska/article/nebraska-huskers-football-rutgers-scarlet-knights-football-friday-injury-report-292667942/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdBAS5sgTf0nElxPsQvBmmTsR4UvEp-bN3VRrZQKo_p1KEjBTvmgMbIyljre4",
-      "image_credit": "Rutgers University Athletics",
-      "news": [
-        {
-          "url": "https://scarletknights.com/news/2026/11/9/game-10-football-vs-nebraska",
-          "title": "Game 10: Football vs. Nebraska",
-          "publisher": "Rutgers University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdBAS5sgTf0nElxPsQvBmmTsR4UvEp-bN3VRrZQKo_p1KEjBTvmgMbIyljre4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/week-11-predictions-huskers-scarlet-154546984.html",
-          "title": "Week 11 Predictions: Huskers at Scarlet Knights",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiuco-JwgVR8szwHJDIQStyJQW1ktPC76g6byanZW5WHQsCmI5sA2IB603Pu8"
-        },
-        {
-          "url": "https://247sports.com/college/nebraska/article/nebraska-huskers-football-rutgers-scarlet-knights-football-friday-injury-report-292667942/",
-          "title": "Status quo for Nebraska injury report on Friday night",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj5r1UxVoik004eu9mIoMrt99ITLxJCxZ4MZhKWRghFSjWWcgRh3tMQEn8iKU"
-        }
-      ]
-    },
-    {
-      "query": "kenneth walker",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-14T16:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50473948/chiefs-rb-walker-groin-misses-practice-status-uncertain",
-        "https://bleacherreport.com/articles/25533161-kenneth-walker-injured-latest-rumors-chiefs-rb-vs-falcons-and-emmett-johnson-fantasy-outlook",
-        "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsA4pYHZ3AUI0wTGpJ7Ow6b6dWJiR9Jn2xqsxOHNLCvCtVQ3q_uICal4J9uIk",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50473948/chiefs-rb-walker-groin-misses-practice-status-uncertain",
-          "title": "Chiefs RB Kenneth Walker III (groin) misses practice, status uncertain",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsA4pYHZ3AUI0wTGpJ7Ow6b6dWJiR9Jn2xqsxOHNLCvCtVQ3q_uICal4J9uIk"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25533161-kenneth-walker-injured-latest-rumors-chiefs-rb-vs-falcons-and-emmett-johnson-fantasy-outlook",
-          "title": "Kenneth Walker Injured, Latest Rumors on Chiefs RB vs. Falcons and Emmett Johnson Fantasy Outlook",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_EUZQrdkoMFLr7_6dCGXV-t4ZXqSyxaP_yfNiIXGJydzsETRfkGJKOc_V78"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/",
-          "title": "NFL Week 10 injury report: Chiefs' Kenneth Walker III ruled out, Patriots' A.J. Brown questionable",
+          "url": "https://www.cbssports.com/fantasy/football/news/saints-travis-etienne-expected-to-be-activated-from-ir/",
+          "title": "Saints' Travis Etienne: Expected to be activated from IR",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa-cjoh4stNJyoRTBMnBZRLoJluiHXzCbExn2vi1DMYFzE2K9TkkxB0yzy2Ps"
-        }
-      ]
-    },
-    {
-      "query": "chiefs depth chart",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T16:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50464631/jaguars-jessie-bates-trade-travis-hunter",
-        "https://www.atlantafalcons.com/news/falcons-news-now-top-headlines-for-week-10-game-vs-chiefs",
-        "https://www.jaguars.com/news/thursday-insider-i-look-at-it-as-a-blessing"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKcJuo6F7SaPG_qmrtX_8X-uKAXDppEswV5g_Iy0A2qgrlmeVVE6rFSh1aKvM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50464631/jaguars-jessie-bates-trade-travis-hunter",
-          "title": "Travis Hunter makes Jessie Bates' Jaguars trade a hit with his nephews",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKcJuo6F7SaPG_qmrtX_8X-uKAXDppEswV5g_Iy0A2qgrlmeVVE6rFSh1aKvM"
-        },
-        {
-          "url": "https://www.atlantafalcons.com/news/falcons-news-now-top-headlines-for-week-10-game-vs-chiefs",
-          "title": "Falcons News Now: Top headlines for Week 10 game vs. Chiefs",
-          "publisher": "Atlanta Falcons",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQy9xz0dFQN16EOkQmGv6oigy25PCPzrkK3nkcp10gwRtpxd4aBLNF3A6ie-ls"
-        },
-        {
-          "url": "https://www.jaguars.com/news/thursday-insider-i-look-at-it-as-a-blessing",
-          "title": "Thursday Insider: \"I Look at It as a Blessing…\"",
-          "publisher": "Jacksonville Jaguars",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVxJrn7rk5XVtnS0NLtPO2zrnfmaDjbLnIf1TpMBrUIeKq61vYgSmS6tqJJfg"
-        }
-      ]
-    },
-    {
-      "query": "utah royals fc vs washington spirit",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T16:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7771742/2026/11/14/nwsl-semifinals-schedule-2026-how-to-watch/",
-        "https://washingtonspirit.com/blog/2026/11/13/know-before-you-go-washington-spirit-vs-utah-royals-fc-2026-nwsl-playoffs-semifinal/",
-        "https://wtop.com/washington-spirit/2026/11/washington-spirit-prepare-for-the-nwsl-semifinals-as-audi-field-hosts-historic-doubleheader/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREmQGUAcS6MD1kTUKe3QEMXOFwc-aEVayLi31HLWQ6sIozukBPwCUxfyc1myc",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7771742/2026/11/14/nwsl-semifinals-schedule-2026-how-to-watch/",
-          "title": "NWSL semifinals guide 2026: Schedule, TV info and our staff’s reasons to watch - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREmQGUAcS6MD1kTUKe3QEMXOFwc-aEVayLi31HLWQ6sIozukBPwCUxfyc1myc"
-        },
-        {
-          "url": "https://washingtonspirit.com/blog/2026/11/13/know-before-you-go-washington-spirit-vs-utah-royals-fc-2026-nwsl-playoffs-semifinal/",
-          "title": "KNOW BEFORE YOU GO: Washington Spirit vs Utah Royals FC - 2026 NWSL Playoffs Semifinal",
-          "publisher": "Washington Spirit",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOgYceuMzh_FshRx8kZLgumalR0EIxNRDLSSL46jl-s7MxrgZIw48zDoT6PBA"
-        },
-        {
-          "url": "https://wtop.com/washington-spirit/2026/11/washington-spirit-prepare-for-the-nwsl-semifinals-as-audi-field-hosts-historic-doubleheader/",
-          "title": "Washington Spirit prepare for the NWSL semifinals as Audi Field hosts historic doubleheader",
-          "publisher": "WTOP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7r8rPe0oJ2PfGynt-Dw4HaYQCN2Bl4QgLDGy0G5orWX-OpqZ6rwMR0opXrbM"
-        }
-      ]
-    },
-    {
-      "query": "deebo samuel sr.",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T16:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/deebo-samuel-has-no-injury-designation-but-four-cbs-are-questionable-for-49ers",
-        "https://www.profootballrumors.com/2026/11/49ers-designate-dt-cj-west-for-return-latest-on-mike-evans-deebo-samuel",
-        "https://www.thefantasyfootballers.com/news/647560/deebo-samuel-set-to-return-in-week-10/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStcy82fV-RnyQ8wlLtjhrHSm6tiCsb8iqCxavCoyy3_2SRsxBWDb_ZY_uRzeI",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/deebo-samuel-has-no-injury-designation-but-four-cbs-are-questionable-for-49ers",
-          "title": "Deebo Samuel has no injury designation, but four CBs are questionable for 49ers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStcy82fV-RnyQ8wlLtjhrHSm6tiCsb8iqCxavCoyy3_2SRsxBWDb_ZY_uRzeI"
-        },
-        {
-          "url": "https://www.profootballrumors.com/2026/11/49ers-designate-dt-cj-west-for-return-latest-on-mike-evans-deebo-samuel",
-          "title": "49ers Designate DT CJ West For Return; Latest On Mike Evans, Deebo Samuel",
-          "publisher": "ProFootballRumors.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTALL8_Tz79_AurvnbOBwVRvLWWSrlGr5v4AAUsYUZV6ssKxYtF0IyMmiDE--c"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/647560/deebo-samuel-set-to-return-in-week-10/",
-          "title": "Deebo Samuel Sr. Set to return in Week 10",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTd71MclTuMxtHx4eFiKS0UxDykXIi9Cpl-H8P-i34-EuA1gxJLemJzU1Iz_AM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
         }
       ]
     }
