@@ -24,9 +24,12 @@ test('available-card chooser exposes original tools plus all 17 actual source se
  await expect(stage.locator('.oracle-original-cover')).toBeVisible();
  await page.locator('#oracleCardChooser').selectOption('source-pcgs');
  await stage.getByRole('button',{name:'Next item ›'}).click();await expect(stage.getByText('1891-CC Morgan Dollar',{exact:true})).toBeVisible();
- await stage.getByRole('button',{name:'☆ Star',exact:true}).click();
- await stage.getByRole('button',{name:'+ Collect',exact:true}).click();
- await expect(stage.getByRole('button',{name:'✓ Collected',exact:true})).toBeVisible();
+ const itemActions=stage.locator('.premium-selected .qca-toolbar');
+ await expect(itemActions).toHaveCount(1);
+ await expect(stage.locator('[data-source-id="pcgs"] > div > .qca-toolbar [data-action="follow"]')).toBeVisible();
+ await itemActions.getByRole('button',{name:'☆ Star',exact:true}).click();
+ await itemActions.getByRole('button',{name:'+ Collect',exact:true}).click();
+ await expect(itemActions.getByRole('button',{name:'✓ Collected',exact:true})).toBeVisible();
  await page.locator('#oracleCardChooser').selectOption('phiStoryWriter');await expect(stage.locator('#sw-idea')).toHaveValue('Preserve this story draft');
  expect(await stage.evaluate(el=>el.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
 });
