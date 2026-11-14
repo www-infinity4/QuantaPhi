@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T09:01:11.606914Z",
+  "checked_at": "2026-11-14T09:30:55.032864Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "angelina jolie",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T09:00:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/13/celebrity-news/angelina-jolie-brad-pitts-daughter-vivienne-reveals-hospitalization-for-eating-disorder-at-la-art-exhibit/",
+        "https://www.imdb.com/news/ni66110497/?ref_=nmnw_art_perm",
+        "https://www.yahoo.com/entertainment/articles/brad-pitt-heartbroken-learn-estranged-110053452.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7FlXB9lIJILrOJ65nv3pKxQMD5pr-lvgd18qESJSVNK_it9oxPbx37Lcmdh4",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/13/celebrity-news/angelina-jolie-brad-pitts-daughter-vivienne-reveals-hospitalization-for-eating-disorder-at-la-art-exhibit/",
+          "title": "Angelina Jolie, Brad Pitt’s daughter Vivienne reveals hospitalization for eating disorder at LA art exhibit: ‘It wasn’t easy’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7FlXB9lIJILrOJ65nv3pKxQMD5pr-lvgd18qESJSVNK_it9oxPbx37Lcmdh4"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66110497/?ref_=nmnw_art_perm",
+          "title": "Angelina Jolie & Brad Pitt’s Daughter, Vivienne, Reveals She Was Hospitalized For An Eating Disorder In Moving Art Exhibit After Dropping Dad’s Last Name",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZug4lAtsdsvmu6BNnlKGmk_s_Q9fyG9Le4q0jj-Ctl4un15V3KUWWKYv4jw"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/brad-pitt-heartbroken-learn-estranged-110053452.html",
+          "title": "Brad Pitt Was ‘Heartbroken’ to Learn of Estranged Daughter Vivienne Jolie’s Eating Disorder Battle",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tPPVWB61CNHM16lIvgrhd5gWSz3pBrw2PrLD3ehQHMITT_S1GrJvPjeBpOE"
+        }
+      ]
+    },
+    {
+      "query": "nyt games",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:50:00Z",
+      "related_news_urls": [
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-14-2026",
+        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-14-1252/",
+        "https://tech.yahoo.com/puzzles/connections/articles/nyt-connections-hints-answers-friday-190000657.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-14-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 14, 2026",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-14-1252/",
+          "title": "Today’s NYT Connections Hints and Answers for Saturday, Nov. 14, #1252",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
+        },
+        {
+          "url": "https://tech.yahoo.com/puzzles/connections/articles/nyt-connections-hints-answers-friday-190000657.html",
+          "title": "NYT ‘Connections’ Hints And Answers For Friday, November 13",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuTl0DmV8jcnI9l5GTTcxmRUSeyy-tYK2ou1ebrXuPiKy4oBM4Fh7RQRuUHMU"
+        }
+      ]
+    },
+    {
+      "query": "u19 asia cup",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T08:50:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/pakistan-ask-india-to-field-in-under-19-asia-cup-final-1562576",
+        "https://www.espn.com/cricket/series/8616/game/1558444/india-under-19s-vs-pakistan-under-19s-final-asian-cricket-council-under-19s-asia-cup-2026-27",
+        "https://www.bcci.tv/matches/276f2365-6b4a-4306-aeea-cdf5286d1471/pakistan-under-19s-vs-india-under-19s"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPxuCa1uuqY1d3MP9Ln7vg1b6Da1IqDafA5ejakDYsyG7qBeCSrwzKqzgn1-k",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/pakistan-ask-india-to-field-in-under-19-asia-cup-final-1562576",
+          "title": "Pakistan ask India to field in Under-19 Asia Cup final",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPxuCa1uuqY1d3MP9Ln7vg1b6Da1IqDafA5ejakDYsyG7qBeCSrwzKqzgn1-k"
+        },
+        {
+          "url": "https://www.espn.com/cricket/series/8616/game/1558444/india-under-19s-vs-pakistan-under-19s-final-asian-cricket-council-under-19s-asia-cup-2026-27",
+          "title": "Final, Asian Cricket Council Under-19s Asia Cup at Al Amarat, Nov 14 2026",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ntsB0gST_kxus_R2wxMcK8_qsbeDLWhTlmdoJt9TsIRr8b92bBIrLnEuhcY"
+        },
+        {
+          "url": "https://www.bcci.tv/matches/276f2365-6b4a-4306-aeea-cdf5286d1471/pakistan-under-19s-vs-india-under-19s",
+          "title": "Pakistan Under-19s vs India Under-19s at Al Amerat, DP World Men’s U19 Asia Cup, Final, 14 Nov 2026",
+          "publisher": "BCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb7iZKuf1N4MIKit5MtXS6f2w2PslqEVQ9gN_2hsfC9vEm8XjGwqWAo2yLCnk"
+        }
+      ]
+    },
+    {
+      "query": "timothee chalamet",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T08:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cqly4lnxn031o",
+        "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
+        "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cqly4lnxn031o",
+          "title": "Timothée Chalamet and Zendaya prank Rylan Clark for Children in Need",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw"
+        },
+        {
+          "url": "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
+          "title": "‘Dune: Part Three’ Stars Set For Very Childish BBC Prank Tonight",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0T8xqwQ9OZ7ry6BuBIVAxH7ySt73sfoGrWYhPJ_yRZJO-5lZzuTot4CIwmt4"
+        },
+        {
+          "url": "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/",
+          "title": "Mel Giedroyc struggles to pronounce Oscar-nominees name during Children in Need",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHccVkK3Tz5gC7GJYloFE9z195Ike3mJZhK1lIgjirSfjnedJ4vPaPV-SCrcs"
+        }
+      ]
+    },
+    {
+      "query": "the tomb of the unknown soldier",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
+        "https://www.cnn.com/2026/11/12/politics/hegseth-awards-medal-soldier-reprimanded-him",
+        "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
+          "title": "Pete Hegseth, a Soldier’s Scolding and a Lesson at the Tomb of Unknowns",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/12/politics/hegseth-awards-medal-soldier-reprimanded-him",
+          "title": "Hegseth awards medal to soldier who reprimanded him and aides at Arlington Cemetery",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWRi_06KWS8aEpxQmaTIzXQzsAgK7EPlJqYclV8O6Y9wBCTzYku2G8kiEai98"
+        },
+        {
+          "url": "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/",
+          "title": "Hegseth awards medal to guard who scolded him at the Tomb of the Unknown Soldier",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH8wuQTZ6jCVAMSV5kZGvI1QOY2u9Yfme5yeiAVn3ZFrdjvllEhqy5KZ6Uzpw"
+        }
+      ]
+    },
     {
       "query": "hltv",
       "approx_searches": "100+",
@@ -116,33 +291,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-14T08:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50453988/kobe-lebron-steph-brady-tips-commanders-jayden-daniels",
-        "https://sports.yahoo.com/articles/kobe-bryant-inspired-nfl-quarterback-170038705.html",
-        "https://bleacherreport.com/articles/25532666-jayden-daniels-dishes-kobe-lebron-tom-brady-steph-currys-impact-his-chase-greatness"
+        "https://sports.yahoo.com/articles/no-shaq-dont-beat-us-225800694.html",
+        "https://sports.yahoo.com/articles/had-hospital-three-days-jerry-154106806.html",
+        "https://hoopswire.com/jerry-west-spent-three-days-in-hospital-after-bringing-shaq-kobe-to-lakers/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmTj9Lw5xLzD9v_L9HaYRwK8kZd3O1BtsB0gO6w2Amf6jlF37VFnUoyhPfTeA",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW3rZbmNITgBNNnbeSaYJYi9xf4WB67TFGvMrMgBUqvPf02yPPl7w6lGG_N2Y",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50453988/kobe-lebron-steph-brady-tips-commanders-jayden-daniels",
-          "title": "How Kobe, LeBron, Steph and Brady are helping Jayden Daniels chase greatness",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmTj9Lw5xLzD9v_L9HaYRwK8kZd3O1BtsB0gO6w2Amf6jlF37VFnUoyhPfTeA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/kobe-bryant-inspired-nfl-quarterback-170038705.html",
-          "title": "Kobe Bryant inspired an NFL quarterback to adopt the 'Mamba Mentality'",
+          "url": "https://sports.yahoo.com/articles/no-shaq-dont-beat-us-225800694.html",
+          "title": "\"With no Shaq, they don't beat us\" - Kenyon Martin explains why the Nets feared Shaquille O'Neal more than Kobe Bryant",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj3WhunJVUBHWbWLaBwmhw-B34NnzL-fH9V_8Ryq0SuzisbLlQNNW8HFLNP50"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW3rZbmNITgBNNnbeSaYJYi9xf4WB67TFGvMrMgBUqvPf02yPPl7w6lGG_N2Y"
         },
         {
-          "url": "https://bleacherreport.com/articles/25532666-jayden-daniels-dishes-kobe-lebron-tom-brady-steph-currys-impact-his-chase-greatness",
-          "title": "Jayden Daniels Dishes on Kobe, LeBron, Tom Brady, Steph Curry's Impact on His 'Chase for Greatness'",
-          "publisher": "Bleacher Report",
+          "url": "https://sports.yahoo.com/articles/had-hospital-three-days-jerry-154106806.html",
+          "title": "\"I had to go to the hospital for three days\" - Jerry West recalls the price he paid to bring Shaq and Kobe to Los Angeles",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4YxDxqSghwxUeKWC5Z1vmrvGjeHUfjSnrsYMcLry3rLrWf3LGABWVdmMVa5M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSB8BXdo2LNAaC89IabaF62j0-_Cvgk9a-kQTc_n7yBhXuo62E_Ma0xrvbacIE"
+        },
+        {
+          "url": "https://hoopswire.com/jerry-west-spent-three-days-in-hospital-after-bringing-shaq-kobe-to-lakers/",
+          "title": "Jerry West spent three days in hospital after bringing Shaq, Kobe to Lakers",
+          "publisher": "Hoops Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8f6kS0FAFrD6zXbIEBBRJuEeo7HE_Kpw3UBSflWlZkPK2H23Hw5mFz51_hDY"
         }
       ]
     },
@@ -152,7 +327,7 @@
       "published_at": "2026-11-14T08:20:00Z",
       "related_news_urls": [
         "https://www.imdb.com/news/ni66101296/?ref_=nmnw_art_perm",
-        "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1E",
+        "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1I",
         "https://www.mediaplaynews.com/roadside-attractions-drops-trailer-for-the-gallerist-hitting-theaters-dec-4/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOLbuZUaeJkfAHSPYMrmcRgLeZYV8xYUNRYWgXkCfI3a9_NYOqrKE80d4i7o",
@@ -166,11 +341,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOLbuZUaeJkfAHSPYMrmcRgLeZYV8xYUNRYWgXkCfI3a9_NYOqrKE80d4i7o"
         },
         {
-          "url": "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1E",
+          "url": "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1I",
           "title": "Licensable picture: 2026 - THE GALLERIST - Movie Set",
           "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGOcHnKGagc1mpVyPlDONeDN9wNNuqRKb5-hVKWc-2ZrD9vMCgESIU7LRIZQI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHxB6Z6T_Jf4xrjVfh64obUMdrOrOZSoypj1fYPU2NFDLEq5912V-GjaodbQo"
         },
         {
           "url": "https://www.mediaplaynews.com/roadside-attractions-drops-trailer-for-the-gallerist-hitting-theaters-dec-4/",
@@ -178,181 +353,6 @@
           "publisher": "Media Play News",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKHsrtHXWsbHn-9oByoe961RjiYxspws6Wjqc9tmu_lVutdqWUoOXVQ9Fe8mA"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 ultimate edition",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T08:10:00Z",
-      "related_news_urls": [
-        "https://ktla.com/entertainment/free-copies-of-grand-theft-auto-vi-for-californians-what-to-know-about-kick-sweepstakes/",
-        "https://www.notebookcheck.net/10K-free-GTA-6-Ultimate-Edition-game-codes-coming-in-livestream-Twitch-drops.1449873.0.html",
-        "https://www.tweaktown.com/news/114652/kick-viewers-can-win-one-of-10000-free-gta-6-ultimate-edition-copies-by-watching-3-hours/index.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9LxfvV6Aku-36afdXY9rQxna6G84QWx23KuKcNJfdDck3pXJ7k28SGwLdjE",
-      "image_credit": "KTLA",
-      "news": [
-        {
-          "url": "https://ktla.com/entertainment/free-copies-of-grand-theft-auto-vi-for-californians-what-to-know-about-kick-sweepstakes/",
-          "title": "Free copies of Grand Theft Auto VI for Californians? What to know about Kick sweepstakes",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9LxfvV6Aku-36afdXY9rQxna6G84QWx23KuKcNJfdDck3pXJ7k28SGwLdjE"
-        },
-        {
-          "url": "https://www.notebookcheck.net/10K-free-GTA-6-Ultimate-Edition-game-codes-coming-in-livestream-Twitch-drops.1449873.0.html",
-          "title": "Deal | 10K+ free GTA 6 Ultimate Edition game codes coming in livestream Twitch drops",
-          "publisher": "Notebookcheck",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8efLCxwUqUCNBOp7hcz_CB8KM4eLtZQ5OsSa3UfAJlmdZxkXaXkwH7xP6nP0"
-        },
-        {
-          "url": "https://www.tweaktown.com/news/114652/kick-viewers-can-win-one-of-10000-free-gta-6-ultimate-edition-copies-by-watching-3-hours/index.html",
-          "title": "Kick viewers can win one of 10,000 free GTA 6 Ultimate Edition copies by watching 3 hours",
-          "publisher": "TweakTown",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjtqbK-eT9DAZ6JMBtFShWJnu3L058hxq38GOOQMiRuSNpJynNXVbOyZtqM2k"
-        }
-      ]
-    },
-    {
-      "query": "hong kong",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T08:10:00Z",
-      "related_news_urls": [
-        "https://worldathletics.org/competitions/world-athletics-label-road-races/news/hong-kong-zhuhai-macao-bridge-half-marathon-barega-kefale",
-        "https://english.dotdotnews.com/a/202611/13/AP6af6c46ee4b091a65a2f8004.html",
-        "https://www.scmp.com/sport/hong-kong/article/3374380/hong-kong-bridge-half-marathons-platinum-status-set-boost-distance-running-city"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK0l6KgB72Xvw9UeWO_BnaSwjfx3qaUQiYkOSHIh6sRD50uIE1SciWuWkzj5A",
-      "image_credit": "worldathletics.org",
-      "news": [
-        {
-          "url": "https://worldathletics.org/competitions/world-athletics-label-road-races/news/hong-kong-zhuhai-macao-bridge-half-marathon-barega-kefale",
-          "title": "Barega and Kefale head half marathon fields in Hong Kong",
-          "publisher": "worldathletics.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK0l6KgB72Xvw9UeWO_BnaSwjfx3qaUQiYkOSHIh6sRD50uIE1SciWuWkzj5A"
-        },
-        {
-          "url": "https://english.dotdotnews.com/a/202611/13/AP6af6c46ee4b091a65a2f8004.html",
-          "title": "Police announced traffic arrangements from Nov. 14 to 15 to facilitate HZMB Half Marathon 2026",
-          "publisher": "dotdotnews",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKZMxBrwaYDjeZ8NjL1PVNAEodoHLk8wf2Ljto6h5tCKJjFA7KWh_gHR3WnEU"
-        },
-        {
-          "url": "https://www.scmp.com/sport/hong-kong/article/3374380/hong-kong-bridge-half-marathons-platinum-status-set-boost-distance-running-city",
-          "title": "Hong Kong bridge half-marathon’s ‘platinum’ status set to boost distance running",
-          "publisher": "South China Morning Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNEhn0vyxKu_YEnNaTUUHP4KpvJJspyfFOww6PcBauh0aoioBRSwjGdrY_ofw"
-        }
-      ]
-    },
-    {
-      "query": "haiti",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T08:00:00Z",
-      "related_news_urls": [
-        "https://www.dw.com/en/why-does-el-salvadors-bukele-have-troops-in-haiti/a-79940771",
-        "https://americasquarterly.org/article/el-salvadors-presence-and-a-gangs-offer-test-haitis-security/",
-        "https://www.amnestyusa.org/press-releases/haiti-haiti-and-el-salvador-governments-must-ensure-salvadoran-military-personnel-respect-human-rights/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7NTvBVtZlQrO5xCky70LPBJ9G9HTHLpRXfNuzJsrnwI95HFpT-6_aaIlT8Rw",
-      "image_credit": "DW.com",
-      "news": [
-        {
-          "url": "https://www.dw.com/en/why-does-el-salvadors-bukele-have-troops-in-haiti/a-79940771",
-          "title": "El Salvador has built up a military presence in Haiti. What's in it for the Central American country?",
-          "publisher": "DW.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7NTvBVtZlQrO5xCky70LPBJ9G9HTHLpRXfNuzJsrnwI95HFpT-6_aaIlT8Rw"
-        },
-        {
-          "url": "https://americasquarterly.org/article/el-salvadors-presence-and-a-gangs-offer-test-haitis-security/",
-          "title": "El Salvador’s Presence and a Gang’s Offer Test Haiti’s Security",
-          "publisher": "Americas Quarterly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwKbGkRZNKov9vgMaxtpVVHzehZDgKrPtF4xFDQy8ruoJsdvU7fsHXWLVh3gY"
-        },
-        {
-          "url": "https://www.amnestyusa.org/press-releases/haiti-haiti-and-el-salvador-governments-must-ensure-salvadoran-military-personnel-respect-human-rights/",
-          "title": "Haiti: Haiti and El Salvador Governments Must Ensure Salvadoran Military Personnel Respect Human Rights",
-          "publisher": "Amnesty International USA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJ3l_ynqxR8hXbQLwLa5WkXehu539s_uUJ7Jz5ZHpIn2LVq1A4G4Xj1YlC3w"
-        }
-      ]
-    },
-    {
-      "query": "xrp",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T08:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/crypto/articles/xrp-crashes-toward-0-99-223000273.html",
-        "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
-        "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5BkwhyjM2nTBdkPAaUae8p-nISy2EGXv1e3UV1mOIsksphuKSqYexXKF2-0M",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-crashes-toward-0-99-223000273.html",
-          "title": "XRP crashes toward $0.99 as analyst warns of another brutal drop",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5BkwhyjM2nTBdkPAaUae8p-nISy2EGXv1e3UV1mOIsksphuKSqYexXKF2-0M"
-        },
-        {
-          "url": "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
-          "title": "XRP Drops 26% in a Month: Could $0.60 Be Next?",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/",
-          "title": "Could XRP Be the Next Bitcoin?",
-          "publisher": "24/7 Wall St.",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzjt61fA6zVKufhhsUKErmSTNmOxa5_OpGSVMS0ZwuBmZTtnJkMb-mcfozGMc"
-        }
-      ]
-    },
-    {
-      "query": "andrew garfield",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T08:00:00Z",
-      "related_news_urls": [
-        "https://people.com/andrew-garfield-and-monica-barbaro-step-out-together-for-date-night-12252706",
-        "https://www.imdb.com/it/news/ni66109743/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/celebrity/articles/andrew-garfield-monica-barbaro-hold-153257111.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGPXhKh3DAHHsQMaV2hl9FAxqC4elofoYWUkCvDynZLBHtr19J9YZE-BIpCPo",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/andrew-garfield-and-monica-barbaro-step-out-together-for-date-night-12252706",
-          "title": "Andrew Garfield and Monica Barbaro Step Out Together for Star-Studded Date Night in Los Angeles",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGPXhKh3DAHHsQMaV2hl9FAxqC4elofoYWUkCvDynZLBHtr19J9YZE-BIpCPo"
-        },
-        {
-          "url": "https://www.imdb.com/it/news/ni66109743/?ref_=nwc_art_perm",
-          "title": "Andrew Garfield & Monica Barbaro Hold Hands While Leaving GQ’s Men of the Year Party Together",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiSKIDmBp-tFBnvRKg0C5BYUgdQ_OOqcqKRuwiKj8B0uoUk6ybJsLwsRjfBUc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/andrew-garfield-monica-barbaro-hold-153257111.html",
-          "title": "Andrew Garfield & Monica Barbaro Hold Hands While Leaving GQ’s Men of the Year Party Together",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEdfed64aWbjPSK83HIkbZ4r67CRdIFDruDPas9m8rRlLvBPwQExK1kj_c1UM"
         }
       ]
     }
