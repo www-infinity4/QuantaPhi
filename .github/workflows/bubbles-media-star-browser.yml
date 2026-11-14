@@ -30,7 +30,9 @@ permissions:
   contents: read
 jobs:
   chromium_card_and_chat:
-    runs-on: ubuntu-latest
+    # Playwright 1.56.1 Chromium install is incompatible with ubuntu26.04-x64.
+    # Use its supported Linux host; do not skip browser assertions.
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
