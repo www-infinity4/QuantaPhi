@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T00:41:55.105094Z",
+  "checked_at": "2026-11-14T01:01:30.717128Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ihsaa football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T00:20:00Z",
+      "query": "auburn basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T00:40:00Z",
       "related_news_urls": [
-        "https://www.indystar.com/story/sports/high-school/2026/11/12/predictions-on-high-school-football-central-indiana-regional-title-games/92735826007/",
-        "https://www.si.com/high-school/indiana/center-grove-vs-warren-central-live-updates-indiana-class-6a-high-school-football-playoff-01m7bhg66w27",
-        "https://linknky.com/sports/football/2026/11/09/what-could-the-region-championship-football-round-look-like/"
+        "https://auburntigers.com/news/2026/11/12/auburn-hosts-no-12-arizona-friday-in-marquee-matchup",
+        "https://arizonawildcats.com/news/2026/11/12/mens-basketball-12th-ranked-wildcats-travel-to-auburn",
+        "https://www.azdesertswarm.com/basketball/85483/arizona-wildcats-mens-basketball-auburn-tigers-preview-sec-big12-seven-pearl-tahad-pettiford-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9dUb8ccU2wtL3JF0odvkoCCDTUuPwc5fLJK_rHcqLST7m42YjBrn6dVZ2gY",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz5OoMwkM-JX2Hx-ZHmFh_YgQyH8osO54Fk6Sw-7R04R18tR-UcLYoT4HI_sc",
+      "image_credit": "Auburn Tigers - Official Athletics Website",
+      "news": [
+        {
+          "url": "https://auburntigers.com/news/2026/11/12/auburn-hosts-no-12-arizona-friday-in-marquee-matchup",
+          "title": "Auburn hosts No. 12 Arizona Friday in marquee matchup",
+          "publisher": "Auburn Tigers - Official Athletics Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz5OoMwkM-JX2Hx-ZHmFh_YgQyH8osO54Fk6Sw-7R04R18tR-UcLYoT4HI_sc"
+        },
+        {
+          "url": "https://arizonawildcats.com/news/2026/11/12/mens-basketball-12th-ranked-wildcats-travel-to-auburn",
+          "title": "12th-Ranked Wildcats Travel to Auburn",
+          "publisher": "University of Arizona Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlqtU3b8HdtwVSJasUmVq_QWJExOBrHDUdxwGlEHN7vToHs_SBhokddL2k0LE"
+        },
+        {
+          "url": "https://www.azdesertswarm.com/basketball/85483/arizona-wildcats-mens-basketball-auburn-tigers-preview-sec-big12-seven-pearl-tahad-pettiford-2026",
+          "title": "What to watch for when Arizona men’s basketball visits Auburn",
+          "publisher": "Arizona Desert Swarm",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCH2L5y6EunnEsKwXNEvuk_vVwZbnUtY41x5DxKhHI58vd3PcYH5DaiTJjZjw"
+        }
+      ]
+    },
+    {
+      "query": "pascal siakam",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T00:40:00Z",
+      "related_news_urls": [
+        "https://www.indystar.com/story/sports/nba/pacers/2026/11/11/pacers-vs-wizards-3-observations-on-indianas-win-including-a-ivica-zubac/92648612007/",
+        "https://www.nba.com/watch/video/game-recap-pacers-114-wizards-101-nov-11",
+        "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-wizards-vs-pacers-sacramento-st-vs-central-michigan-and-more/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsBY-pY8FKSPSRFFmDq73TKHfyNyODhsXE0hWDnTbPgVx6SxG-djDbZiHXcrc",
       "image_credit": "IndyStar",
       "news": [
         {
-          "url": "https://www.indystar.com/story/sports/high-school/2026/11/12/predictions-on-high-school-football-central-indiana-regional-title-games/92735826007/",
-          "title": "Regional titles on line. Predictions on all of the Central Indiana football regional games",
+          "url": "https://www.indystar.com/story/sports/nba/pacers/2026/11/11/pacers-vs-wizards-3-observations-on-indianas-win-including-a-ivica-zubac/92648612007/",
+          "title": "3 observations on the Pacers win over the Wizards, including an unusual fourth-quarter lineup",
           "publisher": "IndyStar",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9dUb8ccU2wtL3JF0odvkoCCDTUuPwc5fLJK_rHcqLST7m42YjBrn6dVZ2gY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsBY-pY8FKSPSRFFmDq73TKHfyNyODhsXE0hWDnTbPgVx6SxG-djDbZiHXcrc"
         },
         {
-          "url": "https://www.si.com/high-school/indiana/center-grove-vs-warren-central-live-updates-indiana-class-6a-high-school-football-playoff-01m7bhg66w27",
-          "title": "Center Grove vs. Warren Central Live Updates: Indiana Class 6A High School Football Playoff",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.nba.com/watch/video/game-recap-pacers-114-wizards-101-nov-11",
+          "title": "Game Recap: Pacers 114, Wizards 101 (Nov. 11)",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS83eAhoAnc4n523LS0b1bVDWvRDBxumU8bWgbJPdkk4JmNExj4YdSTh5vc9G8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQvkSqV8MUqSjOFqPVk7Nw_TeQGb_NjurddcEiHSU0sJDZpVsW8GLxdCYLpFM"
         },
         {
-          "url": "https://linknky.com/sports/football/2026/11/09/what-could-the-region-championship-football-round-look-like/",
-          "title": "What could the region championship football round look like?",
-          "publisher": "LINK nky",
+          "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-wizards-vs-pacers-sacramento-st-vs-central-michigan-and-more/",
+          "title": "Today's top games to watch, best bets, odds: Wizards vs. Pacers, Sacramento St. vs. Central Michigan and more",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdzOgoRv3Vour_EQS_pFaqIJs8z5hMEmO-iwdCUadRBH6xTGl9OPDlFED0dTQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSro-B21Fj9BUX_N0YrlegqF1t00ka8q0jFFUn6eoBFItJQ0Qic-tP1hmvlaxQ"
         }
       ]
     },
     {
-      "query": "maximiliano araújo",
+      "query": "peoria civic center",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T00:20:00Z",
+      "published_at": "2026-11-14T00:40:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17507416/capitan-uruguay-argentina-valverde-bentancur-gimenez-forlan",
-        "https://tntsports.com.ar/seleccion/los-clasicos-se-ganan-como-sea-frase-de-un-uruguayo-antes-del-partido-con-argentina-20261113-0012.html",
-        "https://www.cadena3.com/noticia/futbol/uruguay-con-seis-titulares-del-ultimo-partido-del-mundial_612562"
+        "https://www.tallahassee.com/story/entertainment/things-to-do/2026/11/11/jim-gaffigan-brings-new-comedy-tour-to-tallahassee-in-february/92724447007/",
+        "https://www.yahoo.com/entertainment/music/concerts/articles/comedian-jim-gaffigan-visit-sioux-170940262.html",
+        "https://www.ticketnews.com/2026/11/jim-gaffigan-la-crosse-tickets-on-sale-at-la-crosse-center/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-BJm0aOD9a7N504A_GuKo4C16GhwSJg513Ggiez7vhDLpPj0XgHLogqJrB4g",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSzvbop32snr58ezGRK1h66l6seecV8wHHU5S0KucmVFmCPkE2yTo5DAfmU3g",
+      "image_credit": "Tallahassee Democrat",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17507416/capitan-uruguay-argentina-valverde-bentancur-gimenez-forlan",
-          "title": "¿Quién será el capitán de Uruguay ante Argentina?",
-          "publisher": "ESPN Deportes",
+          "url": "https://www.tallahassee.com/story/entertainment/things-to-do/2026/11/11/jim-gaffigan-brings-new-comedy-tour-to-tallahassee-in-february/92724447007/",
+          "title": "Jim Gaffigan brings new comedy tour to Tallahassee in February",
+          "publisher": "Tallahassee Democrat",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-BJm0aOD9a7N504A_GuKo4C16GhwSJg513Ggiez7vhDLpPj0XgHLogqJrB4g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSzvbop32snr58ezGRK1h66l6seecV8wHHU5S0KucmVFmCPkE2yTo5DAfmU3g"
         },
         {
-          "url": "https://tntsports.com.ar/seleccion/los-clasicos-se-ganan-como-sea-frase-de-un-uruguayo-antes-del-partido-con-argentina-20261113-0012.html",
-          "title": "“Los clásicos se ganan como sea”: frase de un uruguayo antes del partido con Argentina",
-          "publisher": "TNT Sports",
+          "url": "https://www.yahoo.com/entertainment/music/concerts/articles/comedian-jim-gaffigan-visit-sioux-170940262.html",
+          "title": "Comedian Jim Gaffigan to visit Sioux Falls in 2027",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoYJZzM5nmv_Q8ucXbu4NZrNJOPuBujqfB9iPgyO-p1HjfAAHx8zbESPkU_ns"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTirBex6WOabgIDQGWd1vn26McEOYC3NcRmY7z2n-MjYjYCS8jkJJKZCEp7W5A"
         },
         {
-          "url": "https://www.cadena3.com/noticia/futbol/uruguay-con-seis-titulares-del-ultimo-partido-del-mundial_612562",
-          "title": "Uruguay, con seis titulares del último partido del Mundial",
-          "publisher": "Cadena 3 Argentina",
+          "url": "https://www.ticketnews.com/2026/11/jim-gaffigan-la-crosse-tickets-on-sale-at-la-crosse-center/",
+          "title": "Jim Gaffigan La Crosse tickets on sale at La Crosse Center",
+          "publisher": "TicketNews",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS24xsS6AI2EonKEpqgrZNfZT-z-zNJjHfXzuh7Cy_l0ELGT6PeS3MloorBIs4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9KMRwOQBUCNsyh_Y0r-_CtqgFCPVXTR_QhiI2CDO_PNW3SnTfCRJni0RDhOU"
         }
       ]
     },
     {
-      "query": "ronald araújo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T00:20:00Z",
+      "query": "demi moore",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T00:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/still-lot-more-come-barcelona-040000162.html",
-        "https://liverpooloffside.sbnation.com/liverpool-fc-news-coverage/85025/85025",
-        "https://www.aol.com/articles/more-come-araujo-liverpool-start-135632000.html"
+        "https://people.com/demi-moore-celebrates-64th-birthday-with-her-daughters-granddaughter-12253516",
+        "https://www.instyle.com/demi-moore-celebrates-64th-birthday-daughters-granddaughter-12253430",
+        "https://shopping.yahoo.com/beauty/article/its-demi-moores-birthday-today--and-were-shopping-her-best-hair-and-beauty-secrets-130000621.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQxD5wbI44-Ei4AuCQ523RNv62H1N-rpjTU3xcloE0zVfyUr7BXROrsR0ULpQ",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJwbztlC2qRJf2kznJE-1tLr4Vf98ZOxnf-s_1IRgrxwwzM4uGVKTPrcSD1Ww",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/demi-moore-celebrates-64th-birthday-with-her-daughters-granddaughter-12253516",
+          "title": "Demi Moore Celebrates 64th Birthday with Her 3 Daughters and Granddaughter: ‘Grateful’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJwbztlC2qRJf2kznJE-1tLr4Vf98ZOxnf-s_1IRgrxwwzM4uGVKTPrcSD1Ww"
+        },
+        {
+          "url": "https://www.instyle.com/demi-moore-celebrates-64th-birthday-daughters-granddaughter-12253430",
+          "title": "Demi Moore Enjoys Family-Packed 64th Birthday Celebration With All 3 Daughters and Granddaughter",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQolEOsSKvqNkXHxsmo4aWGMw9CG9KnH2klLVGaoKvDq4rbEUYSKzbH21AnTAE"
+        },
+        {
+          "url": "https://shopping.yahoo.com/beauty/article/its-demi-moores-birthday-today--and-were-shopping-her-best-hair-and-beauty-secrets-130000621.html",
+          "title": "It's Demi Moore's birthday today — and we're shopping her best hair and beauty secrets",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkGy9ynZDpcFMcpKQTm6xj-QESMdIn1WjCY3GKFs9Ai9bP0IxEkQS6swvlKdQ"
+        }
+      ]
+    },
+    {
+      "query": "91 freeway accident",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T00:40:00Z",
+      "related_news_urls": [
+        "https://abc7.com/post/3-killed-crash-involving-wrong-driver-westbound-91-freeway-riverside/20035699/",
+        "https://www.pressenterprise.com/2026/11/12/3-killed-in-riverside-crash-triggered-by-wrongway-motorist-on-91-freeway/",
+        "https://www.latimes.com/california/story/2026-11-12/three-dead-in-early-morning-wrong-way-crash-in-riverside"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4_AiKEvYZvG1Bqr1ZL1lin6_yW9kU1R7ByPSyh-_NGsOzRm9vWwnoW3TqLg",
+      "image_credit": "ABC7 Los Angeles",
+      "news": [
+        {
+          "url": "https://abc7.com/post/3-killed-crash-involving-wrong-driver-westbound-91-freeway-riverside/20035699/",
+          "title": "3 people killed in crash involving wrong-way driver on westbound 91 Freeway in Riverside",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4_AiKEvYZvG1Bqr1ZL1lin6_yW9kU1R7ByPSyh-_NGsOzRm9vWwnoW3TqLg"
+        },
+        {
+          "url": "https://www.pressenterprise.com/2026/11/12/3-killed-in-riverside-crash-triggered-by-wrongway-motorist-on-91-freeway/",
+          "title": "3 killed in 91 Freeway crash in Riverside triggered by wrong-way driver, CHP says",
+          "publisher": "The Press-Enterprise",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWKLc7UBXuKdruTauS_v0ZZawQMrOzkKxwcCd_gmNW_JFOnq03jXwkZZcFIgQ"
+        },
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-12/three-dead-in-early-morning-wrong-way-crash-in-riverside",
+          "title": "Three dead in early-morning wrong-way crash in Riverside",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqbyEJ82Rb16z6YIF2ixfgfObHz0cTdxTPY_ah9A5ATI5xqw0NLzhtegd2tQ"
+        }
+      ]
+    },
+    {
+      "query": "haliburton",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T00:40:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25532370-tyrese-haliburton-injury-return-timeline-updated-pacers-rick-carlisle-amid-hamstring-issue",
+        "https://sports.yahoo.com/articles/pacers-reportedly-sniffing-around-trade-174648467.html",
+        "https://www.si.com/nba/pacers/onsi/how-indiana-survives-this-stretch-without-haliburton-01m78ak67fhv"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4OXqV8KNb2UmRBgvckUhT9BJwF3cKrSLGRmQTQ4zlI1MdVKOKkQ2Pb3sUFro",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25532370-tyrese-haliburton-injury-return-timeline-updated-pacers-rick-carlisle-amid-hamstring-issue",
+          "title": "Tyrese Haliburton Injury, Return Timeline Updated By Pacers' Rick Carlisle Amid Hamstring Issue",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4OXqV8KNb2UmRBgvckUhT9BJwF3cKrSLGRmQTQ4zlI1MdVKOKkQ2Pb3sUFro"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/pacers-reportedly-sniffing-around-trade-174648467.html",
+          "title": "Pacers Reportedly ‘Sniffing Around’ the Trade Market",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd441PzDzicKYCSYwKKSM1__b02ZLeqpj0gNURrxl-sYw_i932Jus3QFil9tA"
+        },
+        {
+          "url": "https://www.si.com/nba/pacers/onsi/how-indiana-survives-this-stretch-without-haliburton-01m78ak67fhv",
+          "title": "How Indiana survives this stretch without Haliburton",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRux3aBctGTsCtHTGRv1Ld6I3i5O5ABJBh6Kyj6FGewpO8o33ACvmC3FBoFtBA"
+        }
+      ]
+    },
+    {
+      "query": "jazz vs rockets",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T00:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/friday-13th-injury-report-houston-234517156.html",
+        "https://www.sportsgambler.com/betting-tips/basketball/utah-jazz-vs-houston-rockets-prediction-odds-6014917/",
+        "https://www.nytimes.com/athletic/7779527/2026/11/13/jazz-vs-rockets-stream-how-to-watch-nov-13/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvF5q-OkrPOkwCfk21qEWIZAZH2r-dlTyO7VM9ChY6bSOpj6OBi9O4X88Qlw",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/still-lot-more-come-barcelona-040000162.html",
-          "title": "‘Still a lot more to come’ – Barcelona loanee Ronald Araujo makes promise to Liverpool fans",
+          "url": "https://sports.yahoo.com/articles/friday-13th-injury-report-houston-234517156.html",
+          "title": "Friday the 13th Injury Report For Houston Rockets vs Utah Jazz",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQxD5wbI44-Ei4AuCQ523RNv62H1N-rpjTU3xcloE0zVfyUr7BXROrsR0ULpQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvF5q-OkrPOkwCfk21qEWIZAZH2r-dlTyO7VM9ChY6bSOpj6OBi9O4X88Qlw"
         },
         {
-          "url": "https://liverpooloffside.sbnation.com/liverpool-fc-news-coverage/85025/85025",
-          "title": "The Liverpool Offside",
-          "publisher": "The Liverpool Offside",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/utah-jazz-vs-houston-rockets-prediction-odds-6014917/",
+          "title": "Utah Jazz vs Houston Rockets Prediction, Picks & Odds | NBA Friday",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReVtQXxIHTWAOZk53LUtMIYnaIQqHiK_Pdb5XugK8h16849YlPGvdV92ZuFGc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlQqJvQNU64pzICcm-I9vy3N8DKuEDexddaG5JgMBS04hLM3OqDBVnM_bd-RA"
         },
         {
-          "url": "https://www.aol.com/articles/more-come-araujo-liverpool-start-135632000.html",
-          "title": "'More to come' - Araujo on his Liverpool start",
-          "publisher": "AOL.com",
+          "url": "https://www.nytimes.com/athletic/7779527/2026/11/13/jazz-vs-rockets-stream-how-to-watch-nov-13/",
+          "title": "How to watch Jazz vs. Rockets: TV channel and streaming options for November 13",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj3dlcdfP81AZAd1FBY4uKETTSpYa9bgupB7hq7Y6rCTGzlyuthNj4dY1J7_0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJxhXe22rdkejriauMYrNZ5L9JnQO_5KLAPxcajaXLa4gmvnSXSMrt_bblu6Q"
         }
       ]
     },
     {
-      "query": "troy vs nc state",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T00:20:00Z",
+      "query": "illinois basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T00:30:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/north-carolina-state/article/former-nc-state-assistant-current-troy-head-coach-adam-howard-joins-the-show-coffee-with-cory-292609088/",
-        "https://sports.yahoo.com/articles/game-thread-troy-vs-nc-234500970.html",
-        "https://www.backingthepack.com/nc-state-basketball/42283/nc-state-welcomes-the-trojans-of-troy-university"
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401913527",
+        "https://247sports.com/college/illinois/article/illinois-fighting-illini-basketball-notebook-texas-tech-zvonimir-ivisic-quentin-coleman-292604801/",
+        "https://www.si.com/college/illinois/basketball/where-cbb-experts-rank-illinois-basketball-after-texas-tech-loss"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTktLpQwiWCrIiAQOyjhq1MPkYZ7hRN1k9MKc8amUrQoxK45UxMPE4vEcVelmg",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREvDB0Y1hbDhe3c2zybpecO7tGULZt5lhvoHFfmo6t43X5HBTOszlL90Dt_O8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401913527",
+          "title": "Texas Tech 84-78 Illinois (Nov 10, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREvDB0Y1hbDhe3c2zybpecO7tGULZt5lhvoHFfmo6t43X5HBTOszlL90Dt_O8"
+        },
+        {
+          "url": "https://247sports.com/college/illinois/article/illinois-fighting-illini-basketball-notebook-texas-tech-zvonimir-ivisic-quentin-coleman-292604801/",
+          "title": "Notebook: Illini 'had to go through' Texas Tech disappointment to grow; Getting more from Zvonimir Ivisic",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKlcqcVqFPGwSxEchlkLsDQFVAhi0GzMHihwCXVRELcLU9Tgg_NLrkWi4PB-M"
+        },
+        {
+          "url": "https://www.si.com/college/illinois/basketball/where-cbb-experts-rank-illinois-basketball-after-texas-tech-loss",
+          "title": "Where CBB Experts Rank Illinois Basketball After Texas Tech Loss: Spot On or Way Off?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFo6RcSa1RDxTHkvdves7ppBAffbunJxUDMcF55Ur9je635tMrSaaxXBRZQ4o"
+        }
+      ]
+    },
+    {
+      "query": "ohio state vs uconn",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T00:30:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-visits-uconn-huskies-292631046/",
+        "https://www.espn.com/womens-college-basketball/recap/_/gameId/401911739",
+        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/ohio-state-score-olivia-vukosa-sarah-strong-22521179.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQshLh38AlTQlHAOFaa_h6IxtXXVwTFX4Gsmmr8_llA7diAt0uexm3NCz9lkFE",
       "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://247sports.com/college/north-carolina-state/article/former-nc-state-assistant-current-troy-head-coach-adam-howard-joins-the-show-coffee-with-cory-292609088/",
-          "title": "Former NC State Assistant, Current Troy Head Coach Adam Howard Joins the Show | Coffee With Cory",
+          "url": "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-visits-uconn-huskies-292631046/",
+          "title": "What To Watch: Ohio State faces stiff challenge with road trip to No. 4 UConn",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTktLpQwiWCrIiAQOyjhq1MPkYZ7hRN1k9MKc8amUrQoxK45UxMPE4vEcVelmg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQshLh38AlTQlHAOFaa_h6IxtXXVwTFX4Gsmmr8_llA7diAt0uexm3NCz9lkFE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/game-thread-troy-vs-nc-234500970.html",
-          "title": "Game thread: Troy vs. NC State",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401911739",
+          "title": "UConn 87-55 Ohio State (Nov 12, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd0JCf5a9udHxF39ElhujC7iuURX0A0Fss-dTY9moeeg6pIHGNUBMm9y45ubQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyRmVEbrkqlF74oFwh-r8QFJKsD_rI8xW9Pwt6yOoaSniZA13ouTiDgPzZ3Fg"
         },
         {
-          "url": "https://www.backingthepack.com/nc-state-basketball/42283/nc-state-welcomes-the-trojans-of-troy-university",
-          "title": "NC State Welcomes the Trojans of Troy University",
-          "publisher": "Backing The Pack",
+          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/ohio-state-score-olivia-vukosa-sarah-strong-22521179.php",
+          "title": "Olivia Vukosa, Sarah Strong lead UConn over Ohio State",
+          "publisher": "CT Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDUVhvPIcVnbaR0Ty5TajSVIR0z3_66KO0ZGoIiSG5yDl2Nxzr_rDZdBn8-As"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-EfxW1OBkmvA5BCjDWpr36lGB_nLU_3OgAqRRVBtk38aR14qag9RyyONrc6Y"
         }
       ]
     },
     {
-      "query": "noel fielding",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T00:20:00Z",
-      "related_news_urls": [
-        "https://www.telegraph.co.uk/tv/2026/11/10/great-british-bake-off-quarter-final-review/",
-        "https://www.the-independent.com/news/uk/home-news/noel-fielding-russell-brand-rape-joke-apology-b3084866.html",
-        "https://www.thesun.co.uk/tvandshowbiz/41013330/noel-fielding-addresses-russell-brand-friendship/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTUbJ02zvZX1onAyauHRQ6eqUP0WrJ70uYacBmE_ZkWyyuJQnZEPRTWVAg4ew",
-      "image_credit": "The Telegraph",
-      "news": [
-        {
-          "url": "https://www.telegraph.co.uk/tv/2026/11/10/great-british-bake-off-quarter-final-review/",
-          "title": "It might be time for Noel Fielding to move on from Bake Off",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTUbJ02zvZX1onAyauHRQ6eqUP0WrJ70uYacBmE_ZkWyyuJQnZEPRTWVAg4ew"
-        },
-        {
-          "url": "https://www.the-independent.com/news/uk/home-news/noel-fielding-russell-brand-rape-joke-apology-b3084866.html",
-          "title": "Noel Fielding ‘appalled’ at ‘horrible jokes’ he made with Russell Brand",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpuMDBtwptuODWBslUxegvGcw6bTtsBAJD1a1KXRfp0Mnz7qkEuhLnFM9ODRc"
-        },
-        {
-          "url": "https://www.thesun.co.uk/tvandshowbiz/41013330/noel-fielding-addresses-russell-brand-friendship/",
-          "title": "Noel Fielding breaks silence on Brand rape shame…read his shock statement",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6aa6-6EWnYyhnTaIzgtNHW3GBXau4sGrfpQQIdOqmfnl-ZppaOe_CvQ8Hhr4"
-        }
-      ]
-    },
-    {
-      "query": "amtrak news",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T00:20:00Z",
-      "related_news_urls": [
-        "https://abc7chicago.com/post/western-springs-train-crash-2-girls-pleasantdale-elementary-school-killed-amtrak-strikes-vehicle/20036209/",
-        "https://www.chicagotribune.com/2026/11/12/fatal-amtrak-train-crash-gates/",
-        "https://wgntv.com/western-suburbs/its-not-about-being-a-hero-its-about-being-human-bystander-helps-amid-fiery-amtrak-suv-crash-in-western-springs/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJAr5HrmJ4WyMxgxk-4T4w0HImlXsJTvPebUnfuVrhypzto553IkTe-Sa4FM",
-      "image_credit": "ABC7 Chicago",
-      "news": [
-        {
-          "url": "https://abc7chicago.com/post/western-springs-train-crash-2-girls-pleasantdale-elementary-school-killed-amtrak-strikes-vehicle/20036209/",
-          "title": "Western Springs train crash: 2 girls of Pleasantdale Elementary School in La Grange killed after Amtrak train hits vehicle",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJAr5HrmJ4WyMxgxk-4T4w0HImlXsJTvPebUnfuVrhypzto553IkTe-Sa4FM"
-        },
-        {
-          "url": "https://www.chicagotribune.com/2026/11/12/fatal-amtrak-train-crash-gates/",
-          "title": "A community in mourning day after fatal train collision in Western Springs",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkmmlfXklCBGCMNBje3iwvAUHjQ2GNIXAz9Oc9CMjzIAvOQ3ZdUvbmZbuW3ac"
-        },
-        {
-          "url": "https://wgntv.com/western-suburbs/its-not-about-being-a-hero-its-about-being-human-bystander-helps-amid-fiery-amtrak-suv-crash-in-western-springs/",
-          "title": "‘It’s not about being a hero, it’s about being human’: Bystander helps amid fiery Amtrak-SUV crash in Western Springs",
-          "publisher": "WGN-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIX3aAoftqy7nBdJlLnrdIQPItRZTQxxQ14G-cnn15XebvU3jdxQkk-sDd0U4"
-        }
-      ]
-    },
-    {
-      "query": "magic vs bucks",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T00:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/suggs-status-magic-seek-first-200514400.html",
-        "https://www.hoopsrumors.com/2026/11/jalen-suggs-to-return-from-injury-friday.html",
-        "https://www.nba.com/magic/videos/jalen-suggs-orlando-magic-milwaukee-bucks-shootaround-interview-20261113"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBFtnWpcyHlg_MPx-EXBZDjKvVijX5_voOIxfEt5DrhIDmdoxmL1fpPQm6lE",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/suggs-status-magic-seek-first-200514400.html",
-          "title": "Suggs status update as Magic seek first home win vs. Bucks: Preview, Starters, Injuries, How to Watch",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBFtnWpcyHlg_MPx-EXBZDjKvVijX5_voOIxfEt5DrhIDmdoxmL1fpPQm6lE"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/jalen-suggs-to-return-from-injury-friday.html",
-          "title": "Jalen Suggs To Return From Injury Friday",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSooM48nqRE7DwexKUJAib7sAUuOO50DWF-MeR5LvPwrwOpVeJF0zuZ3n_iQqY"
-        },
-        {
-          "url": "https://www.nba.com/magic/videos/jalen-suggs-orlando-magic-milwaukee-bucks-shootaround-interview-20261113",
-          "title": "Bucks Pregame: Jalen Suggs",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVMRK4ageY2_M1XFCb-dxMabYfuja3dcHGcR7T946KRO9NwkKCgfTuotM0-18"
-        }
-      ]
-    },
-    {
-      "query": "hawks vs bulls",
+      "query": "ucla football schedule",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T00:10:00Z",
+      "published_at": "2026-11-14T00:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/bulls-vs-hawks-preview-watch-234640419.html",
-        "https://www.sportsgambler.com/betting-tips/basketball/atlanta-hawks-vs-chicago-bulls-prediction-odds-6014916/",
-        "https://www.si.com/nba/bulls/onsi/bulls-vs-hawks-7-00-pm-ct-starting-lineups-injury-report-3-keys-to-victory-13"
+        "https://uclabruins.com/news/2026/11/11/gameday-information-ucla-vs-illinois",
+        "https://www.latimes.com/sports/ucla/live/ucla-football-illinois-live-updates-start-time-watch-score-highlights",
+        "https://sportsbook.fanduel.com/football/ncaa-football-games/illinois-@-ucla-36285251"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6u5PJiPe7JSk3-RjehDEsnQdWBS6yJvIlSDqJ51V7ySU-4lcAfU30F5nGGlY",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFA3pLl31fRm1NxwyHMWLRDGtkBf7H5sK02yLaoSC0v40axupSluUaQExHAyc",
+      "image_credit": "UCLA Bruins",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/bulls-vs-hawks-preview-watch-234640419.html",
-          "title": "Bulls vs. Hawks Preview: How to Watch, Injury Report & Odds",
-          "publisher": "Yahoo Sports",
+          "url": "https://uclabruins.com/news/2026/11/11/gameday-information-ucla-vs-illinois",
+          "title": "Gameday Information – UCLA vs. Illinois",
+          "publisher": "UCLA Bruins",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6u5PJiPe7JSk3-RjehDEsnQdWBS6yJvIlSDqJ51V7ySU-4lcAfU30F5nGGlY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFA3pLl31fRm1NxwyHMWLRDGtkBf7H5sK02yLaoSC0v40axupSluUaQExHAyc"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/atlanta-hawks-vs-chicago-bulls-prediction-odds-6014916/",
-          "title": "Atlanta Hawks vs Chicago Bulls Prediction, Picks & Odds | NBA Friday",
-          "publisher": "Sportsgambler",
+          "url": "https://www.latimes.com/sports/ucla/live/ucla-football-illinois-live-updates-start-time-watch-score-highlights",
+          "title": "UCLA football vs. Illinois: Live updates, start time and how to watch",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2oBTXkGEaa1vSRUf6stZE_FL_IXMuhhHaX9N7prz5sv8c5QdXyQB37lpa-bQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG7O1IinjMgtSH6zitsqYUIIwARR-eFb5rpF3ho4R7m3u-t6BiwvT_ytbBN1Y"
         },
         {
-          "url": "https://www.si.com/nba/bulls/onsi/bulls-vs-hawks-7-00-pm-ct-starting-lineups-injury-report-3-keys-to-victory-13",
-          "title": "Bulls vs. Hawks (7:00 PM CT): Starting Lineups, Injury Report, 3 Keys to Victory",
-          "publisher": "Sports Illustrated",
+          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/illinois-@-ucla-36285251",
+          "title": "Illinois @ UCLA Odds",
+          "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMz38wPz65zekWHMDZu0XObYlzcYxPOX5PmVmXS1sAOez9Lb9AxlOJmLdhfLo"
-        }
-      ]
-    },
-    {
-      "query": "nfhs",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T00:10:00Z",
-      "related_news_urls": [
-        "https://www.nfhsnetwork.com/events/ohsaa/gamb09bea57a8",
-        "https://www.morningjournalnews.com/sports/local-sports/2026/11/golden-eagles-fly-the-flag-for-eoac/",
-        "https://www.wfmj.com/video/news/south-range-vs-united/video_5cc593e8-5b8d-595b-b9a0-1dfcd843cb7b.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbPG3vVvYDQZ-Lz-58Np9jgDDs0iLB9aELck1nYcECRo7PgIdwDPkPNqf8mX0",
-      "image_credit": "NFHS Network",
-      "news": [
-        {
-          "url": "https://www.nfhsnetwork.com/events/ohsaa/gamb09bea57a8",
-          "title": "2026 OHSAA Football Regional United High School vs. South Range - 11/13/2026 | Live & On Demand",
-          "publisher": "NFHS Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbPG3vVvYDQZ-Lz-58Np9jgDDs0iLB9aELck1nYcECRo7PgIdwDPkPNqf8mX0"
-        },
-        {
-          "url": "https://www.morningjournalnews.com/sports/local-sports/2026/11/golden-eagles-fly-the-flag-for-eoac/",
-          "title": "Golden Eagles fly the flag for EOAC",
-          "publisher": "Morning Journal - News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaUtJlFHJWhmKfvFssmnWw9Lr2zMWdJ9Ot5N9-RIVSrjXaX_-aQ_LJn-9JgTw"
-        },
-        {
-          "url": "https://www.wfmj.com/video/news/south-range-vs-united/video_5cc593e8-5b8d-595b-b9a0-1dfcd843cb7b.html",
-          "title": "South Range vs. United",
-          "publisher": "WFMJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKxzzwJO5J5dKbqyQlJbUk9PHAo6wM4VbAG0t-ThJS9-EcXbOcf5IiYhv_QdI"
-        }
-      ]
-    },
-    {
-      "query": "uk basketball schedule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T00:10:00Z",
-      "related_news_urls": [
-        "https://ukathletics.com/news/2026/11/12/big-blue-preview-kentucky-vs-northern-arizona/",
-        "https://www.kentucky.com/sports/spt-columns-blogs/mark-story/article318005048.html",
-        "https://www.on3.com/teams/kentucky-wildcats/news/the-ksr-pregame-show-is-live-to-get-you-ready-for-uk-vs-northern-arizona/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6afg0AJwPBGGxWud4c8lcsF19MnsnuhI7G4rPL2WBqm1udvXzLfM2p7vwXgs",
-      "image_credit": "UKAthletics",
-      "news": [
-        {
-          "url": "https://ukathletics.com/news/2026/11/12/big-blue-preview-kentucky-vs-northern-arizona/",
-          "title": "Big Blue Preview: Kentucky vs. Northern Arizona",
-          "publisher": "UKAthletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6afg0AJwPBGGxWud4c8lcsF19MnsnuhI7G4rPL2WBqm1udvXzLfM2p7vwXgs"
-        },
-        {
-          "url": "https://www.kentucky.com/sports/spt-columns-blogs/mark-story/article318005048.html",
-          "title": "Where to watch, how to follow the UK men’s basketball game vs. Northern Arizona",
-          "publisher": "Lexington Herald Leader",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuWriD18T6DpbfuAwF-pdo55PRZdtk8FXghdt2MKvfmyk3nZAFAd4Zb_sbQfQ"
-        },
-        {
-          "url": "https://www.on3.com/teams/kentucky-wildcats/news/the-ksr-pregame-show-is-live-to-get-you-ready-for-uk-vs-northern-arizona/",
-          "title": "The KSR Pregame Show is live to get you ready for UK vs. Northern Arizona",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm6ppqbpTYrZkRulbmBOfyqGaXEJl6ZSiRMV70H_FVB5nBtAn3CXUwu0yhSZo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY"
         }
       ]
     }
