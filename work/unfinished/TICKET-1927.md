@@ -4,7 +4,9 @@ project: "Complete Me AI"
 state: source_tested
 dot: "🟡"
 progress_percent: unknown
-sessions_spent: 1
+progress_basis: "Owner-scoped project intake, source-verification guard, two dependent jobs and dedupe regressions are source tested; independent review, merge, deployed runner, live owner claim, Android card and production acceptance are unverified"
+sessions_spent: 2
+agent: "GitHub-connected source repair, not a signed Brain writer lease"
 sessions_remaining_estimate: unknown
 lease_id: null
 lease_expires_at: null
