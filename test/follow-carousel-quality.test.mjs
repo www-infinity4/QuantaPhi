@@ -45,6 +45,12 @@ test('featured and detail views do not display duplicate Follow on top of toolba
  assert.match(deck,/follow\.hidden=!active\|\|active\.id\.startsWith\('source-'\)/);
  assert.match(actions,/if\(options\.showFollow!==false\)/);
 });
+test('source publisher Follow stays visible when a result has separate item actions',()=>{
+ const style=file('premium-source-cards.css'),source=file('premium-source-cards.mjs');
+ assert.doesNotMatch(style,/\.premium-card:has\(\.premium-selected\)>\.premium-footnote\+div\s*\{\s*display:none/);
+ assert.match(source,/mountCardActions\(actions,\{\.\.\.card,/);
+ assert.match(source,/mountCardActions\(itemActions,\{id:card\.id\+'-item-'/);
+});
 test('carousel explains rotation neutrally without describing the visitor or diagnosing pages',()=>{
  const oracle=file('oracle-card-deck.js'),feed=file('quanta-feed.mjs');
  assert.doesNotMatch(oracle,/proposed\.title\+' · '\+pick\.reason/);
