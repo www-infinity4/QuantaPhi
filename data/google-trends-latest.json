@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T06:33:48.627456Z",
+  "checked_at": "2026-11-14T07:01:25.404173Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "colorado football schedule",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T06:40:00Z",
+      "related_news_urls": [
+        "https://fbschedules.com/colorado-state-adds-unlv-akron-to-2027-football-schedule/",
+        "https://www.kansascity.com/sports/article318025998.html",
+        "https://fbschedules.com/colorado-state-sam-houston-cancel-2027-28-football-series/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdX04wCT0L7mpeuZOGlDib1MZoqWNESyCpt5i4KwGmCa34uS_ZpEnKFgLC1p0",
+      "image_credit": "FBSchedules.com",
+      "news": [
+        {
+          "url": "https://fbschedules.com/colorado-state-adds-unlv-akron-to-2027-football-schedule/",
+          "title": "Colorado State adds UNLV, Akron to 2027 football schedule",
+          "publisher": "FBSchedules.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdX04wCT0L7mpeuZOGlDib1MZoqWNESyCpt5i4KwGmCa34uS_ZpEnKFgLC1p0"
+        },
+        {
+          "url": "https://www.kansascity.com/sports/article318025998.html",
+          "title": "Wisconsin out, UNLV in as part of CSU football schedule changes",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREvM25ibQgqYNFeDk_FdbDDbur10EAJzan6i4yDnO9EhiSwZdTan4o6VqB1Lg"
+        },
+        {
+          "url": "https://fbschedules.com/colorado-state-sam-houston-cancel-2027-28-football-series/",
+          "title": "Colorado State, Sam Houston cancel 2027-28 football series",
+          "publisher": "FBSchedules.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsayQnsK2dBco25EpW3f-YSG9T9ajrHeQTWIthY7ddm-oYpsr8YOKYj2n7NrU"
+        }
+      ]
+    },
+    {
+      "query": "donte johnson",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T06:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/donte-johnson-vs-cesar-almeida-031647170.html",
+        "https://www.wearegreenbay.com/sports/fond-du-lacs-donte-lock-jaw-johnson-looks-to-keep-perfect-record-intact-at-madison-square-garden/",
+        "https://www.ufc.com/news/donte-johnson-you-might-go-home-lunchtime-polymarket-ufc-334"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlgllyZjd8apnKmHWNkjt-wXtxVK2_lAMno7LPBkvVhpF7897sP1RYx7bTt6o",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/donte-johnson-vs-cesar-almeida-031647170.html",
+          "title": "Donte Johnson vs. Cesar Almeida prediction, odds, pick for UFC 334",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlgllyZjd8apnKmHWNkjt-wXtxVK2_lAMno7LPBkvVhpF7897sP1RYx7bTt6o"
+        },
+        {
+          "url": "https://www.wearegreenbay.com/sports/fond-du-lacs-donte-lock-jaw-johnson-looks-to-keep-perfect-record-intact-at-madison-square-garden/",
+          "title": "Fond du Lac’s Donte ‘Lock Jaw’ Johnson looks to keep perfect record intact at Madison Square Garden",
+          "publisher": "WFRV Local 5",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohbFmZwfY-ad1EI14ucb5zvfFTWY55fEycwkC6S_-d8KCGQmyPxml30V3lbU"
+        },
+        {
+          "url": "https://www.ufc.com/news/donte-johnson-you-might-go-home-lunchtime-polymarket-ufc-334",
+          "title": "Donte Johnson: ‘You Might Go Home At Lunchtime!’",
+          "publisher": "UFC.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-WS2YhBoWOcr2J22GSVsuizcNx2XvkibhmL9kiBqs2Gx6Gt4VeH2i7c1b2RQ"
+        }
+      ]
+    },
+    {
+      "query": "christian langmo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T06:30:00Z",
+      "related_news_urls": [
+        "https://www.coinbase.com/predictions/event/KXITFWMATCH-26NOV13SAWWAT?marketTicker=KXITFWMATCH-26NOV13SAWWAT-WAT-KALSHI",
+        "https://www.coinbase.com/en-nl/predictions/event/KXCS2GAME-26NOV131700CHAMABAR",
+        "https://www.coinbase.com/en-gb/predictions/event/KXCS2GAME-26NOV130900MIXMAY"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUSiNasePOgTklvpOepJ_rapXMa2El0p1tUJ_Q6He8L4TDRPQ7f_Zrg9LGyws",
+      "image_credit": "Coinbase",
+      "news": [
+        {
+          "url": "https://www.coinbase.com/predictions/event/KXITFWMATCH-26NOV13SAWWAT?marketTicker=KXITFWMATCH-26NOV13SAWWAT-WAT-KALSHI",
+          "title": "Sawashiro vs Watson | Prediction Markets",
+          "publisher": "Coinbase",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUSiNasePOgTklvpOepJ_rapXMa2El0p1tUJ_Q6He8L4TDRPQ7f_Zrg9LGyws"
+        },
+        {
+          "url": "https://www.coinbase.com/en-nl/predictions/event/KXCS2GAME-26NOV131700CHAMABAR",
+          "title": "BORRACHEIROS vs. BARCA | Prediction Markets",
+          "publisher": "Coinbase",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIVKmd2BeVJIoSYly9XbGZjt4TNYwZ_8jMR3BDbNjOfRa9P8IyeMhmvD58-rA"
+        },
+        {
+          "url": "https://www.coinbase.com/en-gb/predictions/event/KXCS2GAME-26NOV130900MIXMAY",
+          "title": "mixLVLT vs. maybe | Prediction Markets",
+          "publisher": "Coinbase",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjlJgibVFbfgt3I35-Nme4J7pzDfx1dPyhrRTB7zXS8HZjXTWD_C0GNAzV0u4"
+        }
+      ]
+    },
+    {
+      "query": "caio borralho",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T06:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/caio-borralho-vs-yousri-belgaroui-032747879.html",
+        "https://www.mmafighting.com/ufc/520430/caio-borralho-reveals-conversation-with-alex-pereira-after-booking-ufc-334-fight-with-yousri-belgaroui",
+        "https://www.sherdog.com/news/news/How-Alex-Pereiras-striking-and-Glover-Teixeiras-wrestling-are-helping-Yousri-Belgaroui-203596"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlgllyZjd8apnKmHWNkjt-wXtxVK2_lAMno7LPBkvVhpF7897sP1RYx7bTt6o",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/caio-borralho-vs-yousri-belgaroui-032747879.html",
+          "title": "Caio Borralho vs. Yousri Belgaroui prediction, odds, pick for UFC 334",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlgllyZjd8apnKmHWNkjt-wXtxVK2_lAMno7LPBkvVhpF7897sP1RYx7bTt6o"
+        },
+        {
+          "url": "https://www.mmafighting.com/ufc/520430/caio-borralho-reveals-conversation-with-alex-pereira-after-booking-ufc-334-fight-with-yousri-belgaroui",
+          "title": "Caio Borralho reveals conversation he had with Alex Pereira after booking UFC 334 fight with Pereira teammate Yousri Belgaroui",
+          "publisher": "MMA Fighting",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY_1ovvORQbXN_3Oe5-cqYVoPIEOWV6043EaK_J7bOVjO_N_bO9qu_3PlsRtI"
+        },
+        {
+          "url": "https://www.sherdog.com/news/news/How-Alex-Pereiras-striking-and-Glover-Teixeiras-wrestling-are-helping-Yousri-Belgaroui-203596",
+          "title": "How Alex Pereira's striking and Glover Teixeira's wrestling are helping Yousri Belgaroui",
+          "publisher": "Sherdog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaZ4eV_ldTfRJKl4B7h7Ya_Cdj-GpdVzhq9HCKdqr8Mo3jy0a3gWwHyk-kvdE"
+        }
+      ]
+    },
+    {
+      "query": "portugal vs denmark",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T06:30:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/sports/2026/11/13/portugal-denmark-ronaldo-uefa-nations-league-predictions-teams",
+        "https://www.bbc.com/sport/football/live/cmgj9jnvxx2qt",
+        "https://www.uefa.com/uefanationsleague/news/02ab-220793bfb8a3-00d5842942af-1000--uefa-nations-league-matchday-5-preview-portugal-host-denmark/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUFGjHw6dfx1CvJzlPCq1FftIQLKwnZhC2A80XivGvRpYbNKVT_OGLjUpL_0w",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/sports/2026/11/13/portugal-denmark-ronaldo-uefa-nations-league-predictions-teams",
+          "title": "Portugal vs Denmark: UEFA Nations League – predictions, how to watch, teams",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUFGjHw6dfx1CvJzlPCq1FftIQLKwnZhC2A80XivGvRpYbNKVT_OGLjUpL_0w"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmgj9jnvxx2qt",
+          "title": "Portugal vs Denmark: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.uefa.com/uefanationsleague/news/02ab-220793bfb8a3-00d5842942af-1000--uefa-nations-league-matchday-5-preview-portugal-host-denmark/",
+          "title": "UEFA Nations League Matchday 5 preview: Portugal host Denmark, Norway welcome Wales in League A action",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLStDjDKRBb237gA2rwmEapxhGzV5RSU-mV6o4TklERtAI6BlfuFo-rgUH7A"
+        }
+      ]
+    },
     {
       "query": "conner weigman",
       "approx_searches": "200+",
@@ -38,6 +213,41 @@
           "publisher": "The Denver Post",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xxEEWer-sLu7NV5VhFEn2kJ8Ux5oAj907JCngEQXzyF5YzJmaEJb5olEN3E"
+        }
+      ]
+    },
+    {
+      "query": "jim miller",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T06:10:00Z",
+      "related_news_urls": [
+        "https://www.ufc.com/news/the-way-of-jim-miller-polymarket-ufc-334",
+        "https://sports.yahoo.com/articles/jim-miller-terrance-mckinney-very-004034915.html",
+        "https://www.mmafighting.com/ufc/520891/ufc-334-weigh-in-results-1-fighter-misses-weight-by-over-4-pounds-championship-bouts-set"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbHB7LSiXFv9Januut7Mu9Yi4sRF7yaFv-YZrsgkKPg1SmlJBBFBzN8yO3zI8",
+      "image_credit": "UFC.com",
+      "news": [
+        {
+          "url": "https://www.ufc.com/news/the-way-of-jim-miller-polymarket-ufc-334",
+          "title": "The Tao of Jim Miller",
+          "publisher": "UFC.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbHB7LSiXFv9Januut7Mu9Yi4sRF7yaFv-YZrsgkKPg1SmlJBBFBzN8yO3zI8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/jim-miller-terrance-mckinney-very-004034915.html",
+          "title": "Jim Miller: Terrance McKinney 'very dangerous, but he fades a little bit'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSruQBssxQzJ9Aw0S3fZg9aTYoioTTa_2OQ4DKGTRqRr1hfFao3zr2nm5WDYQw"
+        },
+        {
+          "url": "https://www.mmafighting.com/ufc/520891/ufc-334-weigh-in-results-1-fighter-misses-weight-by-over-4-pounds-championship-bouts-set",
+          "title": "UFC 334 weigh-in results: 1 fighter misses weight by over 4 pounds, championship bouts set",
+          "publisher": "MMA Fighting",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9YiHwN9EYwqEH7Pi2tx-nJEONM9FKItCFZ4PsnZj71pV6Y5ZV6nho6FCnYU"
         }
       ]
     },
@@ -77,43 +287,8 @@
       ]
     },
     {
-      "query": "jim miller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T06:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/jim-miller-terrance-mckinney-very-004034915.html",
-        "https://www.mmafighting.com/ufc/520891/ufc-334-weigh-in-results-1-fighter-misses-weight-by-over-4-pounds-championship-bouts-set",
-        "https://www.ufc.com/news/the-way-of-jim-miller-polymarket-ufc-334"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSruQBssxQzJ9Aw0S3fZg9aTYoioTTa_2OQ4DKGTRqRr1hfFao3zr2nm5WDYQw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/jim-miller-terrance-mckinney-very-004034915.html",
-          "title": "Jim Miller: Terrance McKinney 'very dangerous, but he fades a little bit'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSruQBssxQzJ9Aw0S3fZg9aTYoioTTa_2OQ4DKGTRqRr1hfFao3zr2nm5WDYQw"
-        },
-        {
-          "url": "https://www.mmafighting.com/ufc/520891/ufc-334-weigh-in-results-1-fighter-misses-weight-by-over-4-pounds-championship-bouts-set",
-          "title": "UFC 334 weigh-in results: 1 fighter misses weight by over 4 pounds, championship bouts set",
-          "publisher": "MMA Fighting",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9YiHwN9EYwqEH7Pi2tx-nJEONM9FKItCFZ4PsnZj71pV6Y5ZV6nho6FCnYU"
-        },
-        {
-          "url": "https://www.ufc.com/news/the-way-of-jim-miller-polymarket-ufc-334",
-          "title": "The Tao of Jim Miller",
-          "publisher": "UFC.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbHB7LSiXFv9Januut7Mu9Yi4sRF7yaFv-YZrsgkKPg1SmlJBBFBzN8yO3zI8"
-        }
-      ]
-    },
-    {
       "query": "tahiti vs cook islands",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-14T06:00:00Z",
       "related_news_urls": [
         "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
@@ -152,7 +327,7 @@
       "published_at": "2026-11-14T06:00:00Z",
       "related_news_urls": [
         "https://apnews.com/video/radcliffe-holds-back-on-advice-for-new-harry-potter-f70d964fc5b445b4a5e0b927975be4c4",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/daniel-radcliffe-uncertain-watching-hbos-204700535.html",
+        "https://deadline.com/2026/11/daniel-radcliffe-unsure-watch-hbo-harry-potter-series-1237217464/",
         "https://www.vulture.com/article/daniel-radcliffe-on-the-harry-potter-reboot.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyl31dJaTpx8yHcuEGIxSZ9mFb5-aVBL7i6tg8JAkZOSEiQgoOUEVGBTJeZ9Q",
@@ -166,11 +341,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyl31dJaTpx8yHcuEGIxSZ9mFb5-aVBL7i6tg8JAkZOSEiQgoOUEVGBTJeZ9Q"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/daniel-radcliffe-uncertain-watching-hbos-204700535.html",
-          "title": "Daniel Radcliffe Uncertain About Watching HBO's New Harry Potter Series for Personal Reasons",
-          "publisher": "Yahoo",
+          "url": "https://deadline.com/2026/11/daniel-radcliffe-unsure-watch-hbo-harry-potter-series-1237217464/",
+          "title": "Daniel Radcliffe Unsure If He’ll Watch HBO’s ‘Harry Potter’ Series: “Eight Hours Is A Lot Of Anything”",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7L_VIbQ6Baw-2jE3zSPSNB046YI2mGlInbe-wHIzvU_UJpLPgmOV0Uwm2k3o"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwl1Sch-VA9GyqOj3fnyu9vzjarZJFhWALpgSMfrqrvuw42aMWAe7RPciBNXM"
         },
         {
           "url": "https://www.vulture.com/article/daniel-radcliffe-on-the-harry-potter-reboot.html",
@@ -178,181 +353,6 @@
           "publisher": "Vulture",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TgkKWh4_IDHIOMPaqgKbyCsBqA9yOV_x2Tvw1qsMJml9IyHZ8NnnQqsM_kQ"
-        }
-      ]
-    },
-    {
-      "query": "rui hachimura",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T06:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/sandro-mamukelashvili-could-lakers-most-235132268.html",
-        "https://www.silverscreenandroll.com/lakers-news/128871/lakers-news-sandro-mamukelashvili-bucks",
-        "https://lakeshowlife.com/los-angeles-lakers-sandro-mamukelashvili-showing-exactly-why-signed-over-rui-hachimura"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2H1ticnvktQr3FONqRrzxYM9OlJSsXphqi1InJssgbjyKggtuoTlrW9At3OA",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/sandro-mamukelashvili-could-lakers-most-235132268.html",
-          "title": "Sandro Mamukelashvili Could Be the Lakers' Most Underrated Weapon",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2H1ticnvktQr3FONqRrzxYM9OlJSsXphqi1InJssgbjyKggtuoTlrW9At3OA"
-        },
-        {
-          "url": "https://www.silverscreenandroll.com/lakers-news/128871/lakers-news-sandro-mamukelashvili-bucks",
-          "title": "Sandro Mamukelashvili threw a jab at the Bucks after helping Lakers to win",
-          "publisher": "Silver Screen and Roll",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnTzCT9TY0tqHvWZVnhLaPk4pm_7lRWbM0_xoLuV-kpSbpoJyPKOQZumw41Sk"
-        },
-        {
-          "url": "https://lakeshowlife.com/los-angeles-lakers-sandro-mamukelashvili-showing-exactly-why-signed-over-rui-hachimura",
-          "title": "Sandro Mamukelashvili is showing exactly why Lakers signed him over Rui Hachimura",
-          "publisher": "Lake Show Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRE4s3H7BBdW49f0BLZr2tcRLUAVHD6d-WIQzTlsGeqxEugrUkd3FUEaH4aV1c"
-        }
-      ]
-    },
-    {
-      "query": "ncaaf",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T05:50:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/georgia/longformarticle/georgia-bulldogs-football-injury-update-report-vs-missouri-tigers-drew-bobo-josh-horton-ellis-robinson-kirby-smart-sec-292623864/",
-        "https://mutigers.com/news/2026/11/12/no-22-tigers-geared-up-for-road-test-at-no-1-georgia",
-        "https://www.cbssports.com/college-football/news/georgia-missouri-prediction-picks-odds-spread-where-to-watch-live/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcrf6bU5ihzHQzpgfno5U8KkV4RSCa25DC4U-QOZe3eXlu4n-xfUSnlhFAWS0",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/georgia/longformarticle/georgia-bulldogs-football-injury-update-report-vs-missouri-tigers-drew-bobo-josh-horton-ellis-robinson-kirby-smart-sec-292623864/",
-          "title": "Georgia football injury report vs. Missouri",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcrf6bU5ihzHQzpgfno5U8KkV4RSCa25DC4U-QOZe3eXlu4n-xfUSnlhFAWS0"
-        },
-        {
-          "url": "https://mutigers.com/news/2026/11/12/no-22-tigers-geared-up-for-road-test-at-no-1-georgia",
-          "title": "No. 22 Tigers Geared Up for Road Test at No. 1 Georgia",
-          "publisher": "Mizzou Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5UG0nuiQHdf3Gea9Gmhu3MhdMt1ZBaqTDvPo4pMeyq9HyLNoHpYRf6AIlw4"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/georgia-missouri-prediction-picks-odds-spread-where-to-watch-live/",
-          "title": "Georgia vs. Missouri prediction, pick, odds, spread: Bulldogs look to keep rolling against Tigers",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLwrvRr8_R-Cv9dns76uTwYPFnZDLbRBUmawi1qhYLFD7ZS5SQXWZJ6zsjPyU"
-        }
-      ]
-    },
-    {
-      "query": "houston colorado",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T05:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com.au/college-football/game?gameId=401856860",
-        "https://www.denverpost.com/2026/11/12/cu-buffs-houston-football-2026-tv-predictions/",
-        "https://247sports.com/college/houston/article/no-14-houston-cougars-vs-colorado-buffaloes-game-day-thread-live-updates-292637573/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrostR_WNJ5IDxRuJO05y3txnY3ZoEOoB7bFVALr_duB6C7n1_fIsz5zq8cjI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com.au/college-football/game?gameId=401856860",
-          "title": "Houston vs. Colorado (14 Nov, 2026) Live Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrostR_WNJ5IDxRuJO05y3txnY3ZoEOoB7bFVALr_duB6C7n1_fIsz5zq8cjI"
-        },
-        {
-          "url": "https://www.denverpost.com/2026/11/12/cu-buffs-houston-football-2026-tv-predictions/",
-          "title": "CU Buffs vs. Houston football: How to watch, keys to the game, odds, staff predictions",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xxEEWer-sLu7NV5VhFEn2kJ8Ux5oAj907JCngEQXzyF5YzJmaEJb5olEN3E"
-        },
-        {
-          "url": "https://247sports.com/college/houston/article/no-14-houston-cougars-vs-colorado-buffaloes-game-day-thread-live-updates-292637573/",
-          "title": "No. 14 Houston Cougars vs Colorado Buffaloes Game Day Thread; Live Updates",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG6yu8E5yToSP6vlm_0Mh6Rz93zMtue2WOWUqi65ZJ4XAO_CsphP680Zl5Rqk"
-        }
-      ]
-    },
-    {
-      "query": "cj mccollum",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T05:50:00Z",
-      "related_news_urls": [
-        "https://awfulannouncing.com/amazon/cj-mccollum-nba-on-prime-player-contributor.html",
-        "https://sports.yahoo.com/articles/hawks-cj-mccollum-taking-talents-204810797.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/12/cj-mccollum-who-you-may-know-as-a-guard-for-the/92745382007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfYB85WNA1jd_SoMe8F3rE76Re2yHJOfGmIBU3aY_CZ04B9b_5vJmEteYA5UU",
-      "image_credit": "Awful Announcing",
-      "news": [
-        {
-          "url": "https://awfulannouncing.com/amazon/cj-mccollum-nba-on-prime-player-contributor.html",
-          "title": "CJ McCollum joins NBA on Prime as a player contributor",
-          "publisher": "Awful Announcing",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfYB85WNA1jd_SoMe8F3rE76Re2yHJOfGmIBU3aY_CZ04B9b_5vJmEteYA5UU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/hawks-cj-mccollum-taking-talents-204810797.html",
-          "title": "Hawks’ CJ McCollum taking his talents to TV amid rough start to season",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxWsUWYYq88FCehtUJ4MHYv2i7xtXWhy3fXw55_b3xBlZQicMPQed4iUjCJG8"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/12/cj-mccollum-who-you-may-know-as-a-guard-for-the/92745382007/",
-          "title": "CJ McCollum, who you may know as a guard for the …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs6wppa3ANziQFjj8VrdOQbdubtE-GrkowgG1JrfoHyMt1vp4UvJzWxhnu_p4"
-        }
-      ]
-    },
-    {
-      "query": "portland state football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T05:40:00Z",
-      "related_news_urls": [
-        "https://goviks.com/news/2026/11/9/FB_20261109.aspx",
-        "https://www.kptv.com/2026/11/13/psu-vikings-prep-final-two-games-first-season-under-new-head-coach/",
-        "https://www.finehomebuilding.com/forum/southern-utah-vs-portland-state-college-football"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtgnxr0PkQMrRHC9RGP9Vhe-7bXTFwVJ0FPECpudlZeljhEO04cejWitF8UTg",
-      "image_credit": "Portland State University Athletics",
-      "news": [
-        {
-          "url": "https://goviks.com/news/2026/11/9/FB_20261109.aspx",
-          "title": "Vikings Host Southern Utah Friday Night for Final Home Game of 2026 Season",
-          "publisher": "Portland State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtgnxr0PkQMrRHC9RGP9Vhe-7bXTFwVJ0FPECpudlZeljhEO04cejWitF8UTg"
-        },
-        {
-          "url": "https://www.kptv.com/2026/11/13/psu-vikings-prep-final-two-games-first-season-under-new-head-coach/",
-          "title": "PSU Vikings prep for final two games in first season under new head coach",
-          "publisher": "KPTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxACr1QRRYrBvA_6qXOJy9fkJ0JtMFkhbVSH6C2xtB97mcWqYJ5NG_RAq53Pg"
-        },
-        {
-          "url": "https://www.finehomebuilding.com/forum/southern-utah-vs-portland-state-college-football",
-          "title": "Watch Southern Utah vs Portland State Live Stream Free College Football on TV and Online",
-          "publisher": "Fine Homebuilding",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoJYEYPX85LTm7CjadMNPPpTCrvoWPUJhcMKsn3xK7ubg19Io8H9cj7YAxwFg"
         }
       ]
     }
