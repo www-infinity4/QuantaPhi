@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T05:31:10.606123Z",
+  "checked_at": "2026-11-14T06:01:36.392512Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "bill hader",
+      "query": "justine lupe",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T05:10:00Z",
+      "published_at": "2026-11-14T05:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/snl-icon-reveals-why-resistant-210336169.html",
-        "https://www.thedailybeast.com/obsessed/bill-hader-reveals-why-hes-so-resistant-to-going-back-to-snl",
-        "https://www.pluggedin.com/movie-reviews/cat-in-the-hat-2026/"
+        "https://www.yahoo.com/news/videos/justine-lupe-thinks-shep-rose-034608440.html",
+        "https://www.hollywoodreporter.com/tv/tv-features/nobody-wants-this-timothy-simons-adam-brody-sasha-morgan-s4-1236751303/",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/nobody-wants-cast-proposed-lead-002100778.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFAZh8RStFFbwfqzAqL5_DXI8h8NBO1Vsdnytm8jw-p8579vSFLWm5CPQz4vY",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPC7gIdAl0pww1VL6vJAUFoi41s9pMpOJdpkwiRqgQXfq2-GGGtoFELFJRJsc",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/snl-icon-reveals-why-resistant-210336169.html",
-          "title": "‘SNL’ Icon Reveals Why He’s So ‘Resistant’ to Going Back",
+          "url": "https://www.yahoo.com/news/videos/justine-lupe-thinks-shep-rose-034608440.html",
+          "title": "Justine Lupe Thinks Shep Rose and Taylor Ann Green Should Get Married",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFAZh8RStFFbwfqzAqL5_DXI8h8NBO1Vsdnytm8jw-p8579vSFLWm5CPQz4vY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPC7gIdAl0pww1VL6vJAUFoi41s9pMpOJdpkwiRqgQXfq2-GGGtoFELFJRJsc"
         },
         {
-          "url": "https://www.thedailybeast.com/obsessed/bill-hader-reveals-why-hes-so-resistant-to-going-back-to-snl",
-          "title": "‘SNL’ Icon Reveals Why He’s So ‘Resistant’ to Going Back",
-          "publisher": "The Daily Beast",
+          "url": "https://www.hollywoodreporter.com/tv/tv-features/nobody-wants-this-timothy-simons-adam-brody-sasha-morgan-s4-1236751303/",
+          "title": "‘Nobody Wants This’ Star Timothy Simons Reveals Biggest Season 3 Concern and Looks to Season 4: “They Burned One Another — So They’re Even”",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvwuiPU3HGeKIalgZN_ZJak7cIKncOsT4xaSLGawXiEXF1FuL2dPoThT_DYKc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Zluv3uw0zMlSMBOK-RlwDIXGHoOfYbIRo6X3ola_yuI1wZNjktyvIcodBK0"
         },
         {
-          "url": "https://www.pluggedin.com/movie-reviews/cat-in-the-hat-2026/",
-          "title": "The Cat in the Hat",
-          "publisher": "Plugged In",
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/nobody-wants-cast-proposed-lead-002100778.html",
+          "title": "The Nobody Wants This Cast Proposed A New Lead For Season 4 (I Need This To Happen)",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSodI6LMI9MVfKrtEr0HNzLGa3WK_Gs6r3HEBAC7oYAr5gM5hIsM5MYqibDH1o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjNnklyo7kEmb_cPfisWpjslTV0LkTXquHmrsCFDFoRHIow-80Lxb-hjiUFqM"
         }
       ]
     },
     {
-      "query": "kevin holland",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T05:10:00Z",
+      "query": "cher",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T05:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/uros-medic-vs-kevin-holland-032711511.html",
-        "https://www.ufc.com/video/161823",
-        "https://themaclife.com/sports/mma/were-almost-done-kevin-holland-outlines-retirement-plans-ahead-of-ufc-334/"
+        "https://www.the-independent.com/arts-entertainment/music/features/cher-believe-autotune-how-it-was-made-b3082433.html",
+        "https://www.the-independent.com/bulletin/culture/cher-effect-autotune-believe-music-b3083792.html",
+        "https://www.yahoo.com/entertainment/music/new-albums/articles/55-years-ago-today-cher-002526278.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdge_xUYlxlGpWuNzlrbqWOOV1oqp1XmwXa6kP2uJgYRYdINDK5McTGgGtV0",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1zacobs4E0A7l-hL0zeU1zxXXKBt9CQ1Vy3mpHGnzqnW4W5vibXze37s_n-8",
+      "image_credit": "The Independent",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/uros-medic-vs-kevin-holland-032711511.html",
-          "title": "Uros Medic vs. Kevin Holland prediction, odds, pick for UFC 334",
+          "url": "https://www.the-independent.com/arts-entertainment/music/features/cher-believe-autotune-how-it-was-made-b3082433.html",
+          "title": "Cher, Autotune and the song that changed music forever",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1zacobs4E0A7l-hL0zeU1zxXXKBt9CQ1Vy3mpHGnzqnW4W5vibXze37s_n-8"
+        },
+        {
+          "url": "https://www.the-independent.com/bulletin/culture/cher-effect-autotune-believe-music-b3083792.html",
+          "title": "The ground breaking science behind an iconic Cher hit",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8vHJZ0YB1p2SU3cxiq6LnioQhf-UJUHq0ukabZEqeVWsFzRMqT9EoA-BYGpE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/new-albums/articles/55-years-ago-today-cher-002526278.html",
+          "title": "55 Years Ago Today, Cher Scored Her First Solo No. 1 Hit",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMnNTTp3jDXlNhSyorQ3o7rCjAXPbpAt6xgFmlwbFxxD-4599laoWsGdea9mQ"
+        }
+      ]
+    },
+    {
+      "query": "colorado",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T05:40:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/13/trump-maga-lauren-boebert-colorado",
+        "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
+        "https://www.washingtonpost.com/politics/2026/11/13/lauren-boebert-loses-colorado-4th-district-election-eileen-laubacher/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3ozkFEDpr_WO1uhljjUOdY65p4K8sR8X2rgNCED83CK1ZpE9AlywfP8FpN_0",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/13/trump-maga-lauren-boebert-colorado",
+          "title": "Trump-backed Maga firebrand Lauren Boebert defeated in Colorado congressional race",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3ozkFEDpr_WO1uhljjUOdY65p4K8sR8X2rgNCED83CK1ZpE9AlywfP8FpN_0"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
+          "title": "Meet Eileen Laubacher, the Navy Veteran Who Beat Lauren Boebert",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpnrE3ukGf16a45yNl80xUYGFisk-_GYoFMrwgaRe8muZfA4ygX0I5C8AxsQ"
+        },
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/11/13/lauren-boebert-loses-colorado-4th-district-election-eileen-laubacher/",
+          "title": "Rep. Lauren Boebert ousted in Colorado’s conservative 4th District",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHVHFVjpuTsdeQYuvoRlR_JLs1rt1drqxiGuLMzPVF-YOu3QkBRnHYgWCmclk"
+        }
+      ]
+    },
+    {
+      "query": "portland state football",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T05:40:00Z",
+      "related_news_urls": [
+        "https://goviks.com/story.aspx?filename=FB_20261109&file_date=11-9-2026",
+        "https://www.kptv.com/2026/11/13/psu-vikings-prep-final-two-games-first-season-under-new-head-coach/",
+        "https://www.finehomebuilding.com/forum/southern-utah-vs-portland-state-college-football"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtgnxr0PkQMrRHC9RGP9Vhe-7bXTFwVJ0FPECpudlZeljhEO04cejWitF8UTg",
+      "image_credit": "Portland State University Athletics",
+      "news": [
+        {
+          "url": "https://goviks.com/story.aspx?filename=FB_20261109&file_date=11-9-2026",
+          "title": "Vikings Host Southern Utah Friday Night for Final Home Game of 2026 Season",
+          "publisher": "Portland State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtgnxr0PkQMrRHC9RGP9Vhe-7bXTFwVJ0FPECpudlZeljhEO04cejWitF8UTg"
+        },
+        {
+          "url": "https://www.kptv.com/2026/11/13/psu-vikings-prep-final-two-games-first-season-under-new-head-coach/",
+          "title": "PSU Vikings prep for final two games in first season under new head coach",
+          "publisher": "KPTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxACr1QRRYrBvA_6qXOJy9fkJ0JtMFkhbVSH6C2xtB97mcWqYJ5NG_RAq53Pg"
+        },
+        {
+          "url": "https://www.finehomebuilding.com/forum/southern-utah-vs-portland-state-college-football",
+          "title": "Watch Southern Utah vs Portland State Live Stream Free College Football on TV and Online",
+          "publisher": "Fine Homebuilding",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoJYEYPX85LTm7CjadMNPPpTCrvoWPUJhcMKsn3xK7ubg19Io8H9cj7YAxwFg"
+        }
+      ]
+    },
+    {
+      "query": "bomb found",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T05:40:00Z",
+      "related_news_urls": [
+        "https://asiatimes.com/2026/11/trump-could-hit-pickaxe-mountain-declare-victory-and-end-the-war/",
+        "https://www.newsweek.com/iran-trump-pickaxe-mountain-nuclear-program-12656979",
+        "https://www.aljazeera.com/news/2026/11/7/will-trump-strike-nuclear-sites-again-as-iran-engages-cognitive"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlNY4BzDFrWzVIulzfWoBbQeTwhEQ2MaWEbm6ys6wCtGrK56VvXaYJrTlcShA",
+      "image_credit": "Asia Times",
+      "news": [
+        {
+          "url": "https://asiatimes.com/2026/11/trump-could-hit-pickaxe-mountain-declare-victory-and-end-the-war/",
+          "title": "Trump could hit Pickaxe Mountain, declare victory and end the war",
+          "publisher": "Asia Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlNY4BzDFrWzVIulzfWoBbQeTwhEQ2MaWEbm6ys6wCtGrK56VvXaYJrTlcShA"
+        },
+        {
+          "url": "https://www.newsweek.com/iran-trump-pickaxe-mountain-nuclear-program-12656979",
+          "title": "Iran’s Real Fortification at Pickaxe Mountain Is Doubt",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYiHWLCyyGyQGcuEu3B7dNfUwhRPWKwAqW78f-A0mFZVKv_NaSvq5xND8v4yI"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/7/will-trump-strike-nuclear-sites-again-as-iran-engages-cognitive",
+          "title": "Will Trump strike nuclear sites again as Iran engages ‘cognitive warfare’?",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxqrlsJWQMK0C2Ogznu6meew-0oKiZeh5oyPBmicaeOBg0uSmeUH6RifWrYmk"
+        }
+      ]
+    },
+    {
+      "query": "isaiah hartenstein",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T05:40:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/watch/video/block-by-isaiah-hartenstein-9?plsrc=nba&collection=more-to-watch",
+        "https://sports.yahoo.com/articles/probably-just-playing-team-think-210056499.html",
+        "https://www.fantasypros.com/nba/news/619443/isaiah-hartenstein-logs-double-double-wednesday.php"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZjYZduxC52ZIPlN0oMwrLdhILWRpSVp5_MiqdFcdIXMciBvrIJ0Kl7zG4Tg",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/watch/video/block-by-isaiah-hartenstein-9?plsrc=nba&collection=more-to-watch",
+          "title": "Isaiah Hartenstein meets the challenge at the basket with a huge rejection",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZjYZduxC52ZIPlN0oMwrLdhILWRpSVp5_MiqdFcdIXMciBvrIJ0Kl7zG4Tg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/probably-just-playing-team-think-210056499.html",
+          "title": "“Probably just playing as a team. I think we’ve done a …",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdge_xUYlxlGpWuNzlrbqWOOV1oqp1XmwXa6kP2uJgYRYdINDK5McTGgGtV0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04qWr60sv6OOSGy2nqaobk1tFp3aAPK66AMETNDeazz4UgcYull2NisYnKJM"
         },
         {
-          "url": "https://www.ufc.com/video/161823",
-          "title": "Uroš Medić: 'I'm Making My Way Towards The Belt' | Polymarket UFC 334",
-          "publisher": "UFC.com",
+          "url": "https://www.fantasypros.com/nba/news/619443/isaiah-hartenstein-logs-double-double-wednesday.php",
+          "title": "Isaiah Hartenstein logs double-double Wednesday",
+          "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXVNdN5n2thS_nOXOFdq0mvJ1nr8QLO_QAr6o61MjH0CceJulBIO3Oo8CmLM"
-        },
-        {
-          "url": "https://themaclife.com/sports/mma/were-almost-done-kevin-holland-outlines-retirement-plans-ahead-of-ufc-334/",
-          "title": "‘We’re almost done’: Kevin Holland outlines retirement plans ahead of UFC 334",
-          "publisher": "The Mac Life - MMA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcK9ex6PT3FmEP-Fe-4Xvrp6CFFyTxm7TKKF_fxECwQBHzQKoXZiOJAJB7z7I"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG3ePMfGx_UErN6ixj8QRFfsCsgKslhttSmfS-YEGdkDhyFt_Mo_196D0SGyA"
         }
       ]
     },
     {
-      "query": "santa margarita football",
+      "query": "alex caruso",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T05:10:00Z",
+      "published_at": "2026-11-14T05:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-moreno-valley-vs-northwood-230633727.html",
-        "https://www.maxpreps.com/news/de9YhCUHnk6DsNnu2l70jw/grady-long-game-report-vs-valencia--how-to-watch.htm",
-        "https://www.sgvtribune.com/2026/11/06/la-serna-football-outlasts-valencia-for-division-3-playoff-victory/"
+        "https://www.rotowire.com/basketball/headlines/alex-caruso-news-not-starting-friday-538981",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/alex-caruso-hits-four-triples-in-spot-start",
+        "https://sports.yahoo.com/articles/expect-see-alex-caruso-bigger-000003159.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMwzvqFWTZUmqSRViA9NaO3iMAPD7R2HUJtranatnWtM3PO2PKn6AsBJxHtmk",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXkuF-yJUNgxW6zTt20xIXr912TGepGvDDn8VfO2QTVczmWH7EaEdHYdcOAlM",
+      "image_credit": "RotoWire",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-moreno-valley-vs-northwood-230633727.html",
-          "title": "How to watch Moreno Valley vs Northwood CIF-SS high school football playoffs",
+          "url": "https://www.rotowire.com/basketball/headlines/alex-caruso-news-not-starting-friday-538981",
+          "title": "Alex Caruso News: Not starting Friday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXkuF-yJUNgxW6zTt20xIXr912TGepGvDDn8VfO2QTVczmWH7EaEdHYdcOAlM"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/alex-caruso-hits-four-triples-in-spot-start",
+          "title": "Alex Caruso hits four triples in spot start",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp33ZUm5qq_lPgWmNQ8UuxtjllxX_s_rAvxRRgFFdkE56p6382_BLBb7Im6Ps"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/expect-see-alex-caruso-bigger-000003159.html",
+          "title": "Expect To See Alex Caruso In A Bigger Role For The Thunder This Season",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMwzvqFWTZUmqSRViA9NaO3iMAPD7R2HUJtranatnWtM3PO2PKn6AsBJxHtmk"
-        },
-        {
-          "url": "https://www.maxpreps.com/news/de9YhCUHnk6DsNnu2l70jw/grady-long-game-report-vs-valencia--how-to-watch.htm",
-          "title": "Grady Long Game Report: vs Valencia + How To Watch",
-          "publisher": "MaxPreps",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiC3y7kug5X9fYNfEnPNkDaL72e4dEEp_5p8YHY7qFVVv-ecim1412jD699gc"
-        },
-        {
-          "url": "https://www.sgvtribune.com/2026/11/06/la-serna-football-outlasts-valencia-for-division-3-playoff-victory/",
-          "title": "La Serna football outlasts Valencia for Division 3 playoff victory",
-          "publisher": "San Gabriel Valley Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqaoySXBnzyavYodq9JLuKuRjXlmaU38NqmWM6c-4aNrs06Ts6ssShC2czpiI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT8_zAju6QSAzNpnAn_mVkOdqdJoI3IMn7s5zTN4g5uZFijnbR3HMI63Rz200"
         }
       ]
     },
     {
-      "query": "karely ruiz",
+      "query": "okc vs lac",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T05:00:00Z",
+      "published_at": "2026-11-14T05:40:00Z",
       "related_news_urls": [
-        "https://www.milenio.com/espectaculos/famosos/karely-ruiz-abandonara-la-mansion-vip-2-esto-dijo",
-        "https://www.diariocambio.com.mx/2026/show-y-estilo/karely-ruiz-salida-la-mansion-vip/",
-        "https://www.record.com.mx/historia/karely-ruiz-abandona-la-mansion-vip-todo-podria-indicar-que-si-2026111317223182725"
+        "https://www.espn.com/nba/game/_/gameId/401909967/cavaliers-knicks",
+        "https://www.espn.com/nba/game/_/gameId/401909972/nets-pelicans",
+        "https://www.espn.com/nba/game/_/gameId/401909973/magic-jazz"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIRHKt-0CgxnT6KhTxPPUoXHhUCb5VDTakgFitA9yWW7vlNX7ltNzM0gcN1mI",
-      "image_credit": "Milenio",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqmk7cPJkKgSdG4NlahfcjYUIZ4gQnDSfk5EWNboSo82rgRrzvPfG3hBhsiU8",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.milenio.com/espectaculos/famosos/karely-ruiz-abandonara-la-mansion-vip-2-esto-dijo",
-          "title": "¿Karely Ruiz ABANDONARÁ La Mansión VIP 2? Esto dijo sobre su salida",
-          "publisher": "Milenio",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIRHKt-0CgxnT6KhTxPPUoXHhUCb5VDTakgFitA9yWW7vlNX7ltNzM0gcN1mI"
-        },
-        {
-          "url": "https://www.diariocambio.com.mx/2026/show-y-estilo/karely-ruiz-salida-la-mansion-vip/",
-          "title": "¿Karely Ruiz también abandona La Mansión VIP?",
-          "publisher": "Diario Cambio",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5cUrdlz8DLizMJkC19GRVdV1wvwUn9AvDTR00Ph4tR3FbfwYdXkPKyQCrSko"
-        },
-        {
-          "url": "https://www.record.com.mx/historia/karely-ruiz-abandona-la-mansion-vip-todo-podria-indicar-que-si-2026111317223182725",
-          "title": "¿Karely Ruiz abandona La Mansión VIP? Todo podría indicar que sí",
-          "publisher": "Récord",
-          "description": "",
-          "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "de'andre hunter",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T05:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/article/darius-acuff-frustrated-with-kings-brutal-1-10-record-despite-his-hot-start-in-the-nba-im-not-a-loser-204823834.html",
-        "https://www.hoopsrumors.com/2026/11/kings-notes-acuff-christie-clifford-trade-murray.html",
-        "https://www.espn.com/nba/story/_/id/50452813/darius-acuff-jr-kings-1-10-start-not-loser"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAaoDE98wgnp-xu1tYiAbN-p8reAEQwcX071nL5b1YE6i-uKKm5u5rvnYbd7c",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/article/darius-acuff-frustrated-with-kings-brutal-1-10-record-despite-his-hot-start-in-the-nba-im-not-a-loser-204823834.html",
-          "title": "Darius Acuff frustrated with Kings brutal 1-10 record despite his hot start in the NBA: 'I'm not a loser'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAaoDE98wgnp-xu1tYiAbN-p8reAEQwcX071nL5b1YE6i-uKKm5u5rvnYbd7c"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/kings-notes-acuff-christie-clifford-trade-murray.html",
-          "title": "Kings Notes: Acuff, Christie, Clifford Trade, Murray",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_rdZxekrhHmOpR66TVu4te_BBw1P74tRGDsXclMdOXKwnG5C-FL6-ZAAF89Y"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50452813/darius-acuff-jr-kings-1-10-start-not-loser",
-          "title": "Kings rookie star Darius Acuff Jr. frustrated over 1-10 start: 'I'm not a loser'",
+          "url": "https://www.espn.com/nba/game/_/gameId/401909967/cavaliers-knicks",
+          "title": "Cavaliers 115-107 Knicks (Nov 11, 2026) Final Score",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL1YEKkE-oA3GRCWgBKbaHzR6afDvj5AtIGX_SdrHBGi7Ll5EYHVkTwACIb2c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqmk7cPJkKgSdG4NlahfcjYUIZ4gQnDSfk5EWNboSo82rgRrzvPfG3hBhsiU8"
+        },
+        {
+          "url": "https://www.espn.com/nba/game/_/gameId/401909972/nets-pelicans",
+          "title": "Nets 145-111 Pelicans (Nov 11, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR12BlisXJPGQQZWU75sdUvaslFV4L2REra58tqhQ8fGISRsAxmtNqXErwkRsc"
+        },
+        {
+          "url": "https://www.espn.com/nba/game/_/gameId/401909973/magic-jazz",
+          "title": "Magic 123-108 Jazz (Nov 11, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2GZHd6X86Gbkg8Um803he0G8lEY_58I-GSYDrR7WXomxVakT379hQ5PfpG-Q"
         }
       ]
     },
     {
-      "query": "katt williams",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T05:00:00Z",
-      "related_news_urls": [
-        "https://www.complex.com/pop-culture/a/will-lavin/katt-williams-shaquille-oneal-jetski",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/comedian-katt-williams-credits-prince-180925061.html",
-        "https://www.christianpost.com/news/katt-williams-opens-up-about-his-views-on-god-religion.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBPfLMcrsr2CI15XMmNzFMNzXPRHlcMuEwVdksIyQde3sDyGeXPykuazmIvGQ",
-      "image_credit": "Complex",
-      "news": [
-        {
-          "url": "https://www.complex.com/pop-culture/a/will-lavin/katt-williams-shaquille-oneal-jetski",
-          "title": "Katt Williams Recalls Shaquille O'Neal Almost Killing Him on Jet Ski",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBPfLMcrsr2CI15XMmNzFMNzXPRHlcMuEwVdksIyQde3sDyGeXPykuazmIvGQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/comedian-katt-williams-credits-prince-180925061.html",
-          "title": "Comedian Katt Williams Credits The Late Prince For Giving Him Business Advice That Encouraged Him To Remain Independent",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT17Y3ZYV9Y6fLB8Ajrd0AOpTgx1FZb7TZU9iol6PqrkuAnWz9jMmyhjCREWKg"
-        },
-        {
-          "url": "https://www.christianpost.com/news/katt-williams-opens-up-about-his-views-on-god-religion.html",
-          "title": "Actor, comedian Katt Williams says he isn't religious but roots his self-worth in God",
-          "publisher": "Christian Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuz_fZ2_5v2I3O-edr-bXBgSYiclo4yFHnYuY_ilNcwX62q2kll2GvrBUb6eM"
-        }
-      ]
-    },
-    {
-      "query": "jamie lee curtis",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T04:50:00Z",
-      "related_news_urls": [
-        "https://www.today.com/popculture/tv/jamie-lee-curtis-teacher-inspiration-newlyweds-tribute-rcna607024",
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/jamie-lee-curtis-tv-show-000100731.html",
-        "https://screenrant.com/newlyweds-nbc-jamie-lee-curtis-jeanie-break-comedy-formula/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH7ZpzBRaMeB3_Jtk51zhs1KMQ6n2Aqq4JZUowtiKH6bCk_Xk7vD-xyrv228s",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/popculture/tv/jamie-lee-curtis-teacher-inspiration-newlyweds-tribute-rcna607024",
-          "title": "Why Jamie Lee Curtis Is Honoring Her 8th Grade Teacher in Her Sitcom ‘Newlyweds’",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH7ZpzBRaMeB3_Jtk51zhs1KMQ6n2Aqq4JZUowtiKH6bCk_Xk7vD-xyrv228s"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/jamie-lee-curtis-tv-show-000100731.html",
-          "title": "Jamie Lee Curtis’s New TV Show Is Giving Me All The ‘90s Sitcom Nostalgia, But Now I’m Worried",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgYC-lzFquMdbuIpaFY8WnuNQ16X8apGOORDMU3MG3BJ5xzGPr-BAw419zgBY"
-        },
-        {
-          "url": "https://screenrant.com/newlyweds-nbc-jamie-lee-curtis-jeanie-break-comedy-formula/",
-          "title": "Jamie Lee Curtis’ 89% RT Comedy Upends TV’s Long-Standing Formula",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHzJW3omI9_4pIEVc1tkqIH1GUCtq4FXxURW4pKXpRKB-LEwi5jzROvHRlYik"
-        }
-      ]
-    },
-    {
-      "query": "keldon johnson",
+      "query": "uh football",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T04:50:00Z",
+      "published_at": "2026-11-14T05:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nba/breaking-news/article/nba-issues-retroactive-flagrant-foul-to-keldon-johnson-after-officials-missed-his-blatant-groin-kick-of-devin-booker-010052132.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/10/sass-keldon-johnson-was-assessed-a-postgame-flagrant/92715553007/",
-        "https://www.brightsideofthesun.com/suns-analysis/113464/devin-booker-keldon-johnson-flagrant-foul-dillon-brooks-ejection-nba-officiating"
+        "https://www.espn.com/college-football/story/_/id/50433738/cfp-playoff-24-team-format-faq",
+        "https://sports.yahoo.com/college-football/article/with-expanded-cfp-eliminating-conference-championships-missouris-eli-drinkwitz-and-wake-forests-jake-dickert-ask-why-conferences-exist-145908231.html",
+        "https://www.nytimes.com/athletic/7773602/2026/11/12/college-football-playoff-espn-ncaa-sec-moneycall/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJRFxGjnnaSJEEnqpuZYszRD9wCfU1oath_Pf3ehNzWqEMaJ3lh4V2VXwnKK4",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUzZIh448wuI0RM2cip5LaFGFldbXb-kI1E043qjFwl_UtFfcY60mX7cW1dd8",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/nba-issues-retroactive-flagrant-foul-to-keldon-johnson-after-officials-missed-his-blatant-groin-kick-of-devin-booker-010052132.html",
-          "title": "NBA issues retroactive flagrant foul to Keldon Johnson after officials missed his blatant groin kick of Devin Booker",
+          "url": "https://www.espn.com/college-football/story/_/id/50433738/cfp-playoff-24-team-format-faq",
+          "title": "CFP 24-team format: What you need to know about the new playoff",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUzZIh448wuI0RM2cip5LaFGFldbXb-kI1E043qjFwl_UtFfcY60mX7cW1dd8"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/article/with-expanded-cfp-eliminating-conference-championships-missouris-eli-drinkwitz-and-wake-forests-jake-dickert-ask-why-conferences-exist-145908231.html",
+          "title": "With expanded CFP eliminating conference championships, Missouri's Eli Drinkwitz and Wake Forest's Jake Dickert ask why conferences exist",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJRFxGjnnaSJEEnqpuZYszRD9wCfU1oath_Pf3ehNzWqEMaJ3lh4V2VXwnKK4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcST0SotsP4iKsbqYCzmHTqX-ZxqsZ9rkx_9U-yBZzjITQqsAtwokBcm7FI2TjI"
         },
         {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/10/sass-keldon-johnson-was-assessed-a-postgame-flagrant/92715553007/",
-          "title": "SAS’s Keldon Johnson was assessed a postgame flagrant …",
-          "publisher": "HoopsHype",
+          "url": "https://www.nytimes.com/athletic/7773602/2026/11/12/college-football-playoff-espn-ncaa-sec-moneycall/",
+          "title": "The bullish case for the success of a 24-team College Football Playoff: MoneyCall",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToRmL6LLDnnN6_6AzEQA-6wfnGYgue61IjCE_m4DyaANqrie-rimXxt2wWYFw"
-        },
-        {
-          "url": "https://www.brightsideofthesun.com/suns-analysis/113464/devin-booker-keldon-johnson-flagrant-foul-dillon-brooks-ejection-nba-officiating",
-          "title": "Apparently, kicking Devin Booker in the nuts is a judgment call",
-          "publisher": "Bright Side Of The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_95VJ7hp_l_J9KIgxjb3dNnr_KxtSir57oZl3L4ZSb_cbYrm4SHhf5CLFGgk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn2ywVfB1EZ9tYMgVRLYKpGuoVojIx9phI0Wwzo7w-xkFmHYVYiaBPqj1ZU20"
         }
       ]
     },
     {
-      "query": "brook lopez",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T04:50:00Z",
-      "related_news_urls": [
-        "https://basketnews.com/news-259413-four-la-clippers-veterans-emerge-as-trade-targets-including-lakers-linked-wing.html",
-        "https://www.si.com/nba/clippers/onsi/clippers-can-t-fumble-excellent-kris-dunn-opportunity-trade-deadline-01m72tbxcse2",
-        "https://lastwordonsports.com/basketball/2026/11/12/clippers-players-trade/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBFFOKx2ib2RlsJeY8FiXbm8NOIxhQYZM5oxRSLvAM1mmeU8X24cEoUH7aEFg",
-      "image_credit": "BasketNews.com",
-      "news": [
-        {
-          "url": "https://basketnews.com/news-259413-four-la-clippers-veterans-emerge-as-trade-targets-including-lakers-linked-wing.html",
-          "title": "Four LA Clippers veterans emerge as trade targets, including Lakers-linked wing",
-          "publisher": "BasketNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBFFOKx2ib2RlsJeY8FiXbm8NOIxhQYZM5oxRSLvAM1mmeU8X24cEoUH7aEFg"
-        },
-        {
-          "url": "https://www.si.com/nba/clippers/onsi/clippers-can-t-fumble-excellent-kris-dunn-opportunity-trade-deadline-01m72tbxcse2",
-          "title": "Clippers Can't Fumble the Excellent Kris Dunn Opportunity Before Trade Deadline",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQYlVaytQP1NPDQba8WKDPcZ-I5oDByGyLr-YNn6dsPPeY1kNqIIdcuVOXE0"
-        },
-        {
-          "url": "https://lastwordonsports.com/basketball/2026/11/12/clippers-players-trade/",
-          "title": "4 Clippers Players Who Could Be Traded By The 2027 NBA Trade Deadline",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk6Ix-45sY9YPDUOtT0VhE_rSQ1XQkNIj7GqHcPb3rX7apWCNIfqTuwT0kQtc"
-        }
-      ]
-    },
-    {
-      "query": "slomw oc",
+      "query": "measles elimination status",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T04:50:00Z",
+      "published_at": "2026-11-14T05:30:00Z",
       "related_news_urls": [
-        "https://people.com/meet-the-kids-secret-lives-of-mormon-wives-orange-county-cast-12246971",
-        "https://abc7.com/post/secret-lives-mormon-wives-orange-county-cast-previews-drama-friendships-personal-growth/20031273/",
-        "https://www.yahoo.com/entertainment/tv/article/a-throuple-a-divorce-and-some-familiar-faces-your-guide-to-the-mormon-wives-of-orange-county-213320039.html"
+        "https://www.cnn.com/2026/11/13/health/us-measles-elimination-status",
+        "https://apnews.com/article/measles-paho-rfk-elimination-child-deaths-c2f73f91458992f3320d0228b7787627",
+        "https://abcnews.com/Health/measles-cases-nationwide-top-5400-outbreaks-spread-us/story?id=138108176"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYICSp7JrYSszxJk7EmnCzrpYuTmDeQWBZKkbR1Sd3xXLC3DMz8H-nLSR5pIg",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPpCBB35-ZbqMoLvNe7AW8h4Ho3Nw9GKK75U0YIhQjJTivg89RmhcXe6pPRD8",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://people.com/meet-the-kids-secret-lives-of-mormon-wives-orange-county-cast-12246971",
-          "title": "Meet the Kids of the ‘Secret Lives of Mormon Wives: Orange County’ Cast",
-          "publisher": "People.com",
+          "url": "https://www.cnn.com/2026/11/13/health/us-measles-elimination-status",
+          "title": "After 26 years, the US has lost its measles elimination status",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYICSp7JrYSszxJk7EmnCzrpYuTmDeQWBZKkbR1Sd3xXLC3DMz8H-nLSR5pIg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPpCBB35-ZbqMoLvNe7AW8h4Ho3Nw9GKK75U0YIhQjJTivg89RmhcXe6pPRD8"
         },
         {
-          "url": "https://abc7.com/post/secret-lives-mormon-wives-orange-county-cast-previews-drama-friendships-personal-growth/20031273/",
-          "title": "'The Secret Lives of Mormon Wives: Orange County' cast previews drama, friendships and personal growth",
-          "publisher": "ABC7 Los Angeles",
+          "url": "https://apnews.com/article/measles-paho-rfk-elimination-child-deaths-c2f73f91458992f3320d0228b7787627",
+          "title": "The US and Mexico are on the verge of forfeiting a major health victory. Here’s what to know",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdyrgJHT_ttJ-dgl-XF5qnHsYHlldRXooGTauWSEgfV_bblMsSX0moAFuNuT8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4qKDID6tKNW3o-JSNIlX4smlDKkZeItqLGmUzIL23SQ9y4w2kJWcOm21tej4"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/article/a-throuple-a-divorce-and-some-familiar-faces-your-guide-to-the-mormon-wives-of-orange-county-213320039.html",
-          "title": "A throuple, a divorce and some familiar faces: Your guide to the 'Mormon Wives' of Orange County",
-          "publisher": "Yahoo",
+          "url": "https://abcnews.com/Health/measles-cases-nationwide-top-5400-outbreaks-spread-us/story?id=138108176",
+          "title": "Measles cases nationwide top 5,400 as deaths rise to 10",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvlXupMper_kFaPUTdA9dJcq-KDIsDekNmEsawKQh9syZIj7SIvd2gCl6oDyA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIj9SCmCyuiOgJyyVAjtIBDk1lLDqAfoZO0MEF7OXn6K1H7e97ikqDjIMTJco"
         }
       ]
     }
