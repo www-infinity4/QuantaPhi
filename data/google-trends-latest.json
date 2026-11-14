@@ -3,330 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T21:01:28.835494Z",
+  "checked_at": "2026-11-14T21:31:07.744217Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "lsu vs gonzaga",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T20:40:00Z",
+      "query": "southern miss vs la tech",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T21:10:00Z",
       "related_news_urls": [
-        "https://lsusports.net/news/2026/11/13/tiger-basketball-team-takes-on-no-14-gonzaga-in-spokane-saturday",
-        "https://www.slipperstillfits.com/gonzaga-mens-basketball/31327/game-preview-zags-to-face-captivating-lsu-at-spokane-arena",
-        "https://www.freep.com/story/sports/ncaab/2026/11/14/lsu-at-gonzaga-odds-picks-and-predictions/92772232007/"
+        "https://lincolnparishjournal.com/2026/11/14/bulldogs-look-to-clinch-sun-belt-west-title-against-longtime-rival/",
+        "https://www.si.com/college/southernmiss/the-55th-edition-of-the-rivalry-in-dixie-key-matchups-southern-miss-storylines-and-more",
+        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2pvbm9uaXR2cy5naXRodWIuaW8vcmFqL2N0LnhtbCIvPjwva3JwYW5vPg==&id=video-livestream-southern-miss-vs-c8miquo4"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwcBDwbadi9k4GfofUbD_G4hatn_nEq5eFiwtvCv_Ezrccz6QY6t5bAWVgZXI",
-      "image_credit": "LSUsports.net",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSac7zDeB7Z57cwBjsv1SRUAsXI0qiggmtQH5DVhVTtrdrvTMe9vFQP3ms4Uu8",
+      "image_credit": "Lincoln Parish Journal",
       "news": [
         {
-          "url": "https://lsusports.net/news/2026/11/13/tiger-basketball-team-takes-on-no-14-gonzaga-in-spokane-saturday",
-          "title": "Tiger Basketball Team Takes On No. 14 Gonzaga In Spokane Saturday",
-          "publisher": "LSUsports.net",
+          "url": "https://lincolnparishjournal.com/2026/11/14/bulldogs-look-to-clinch-sun-belt-west-title-against-longtime-rival/",
+          "title": "Bulldogs look to clinch Sun Belt West title against longtime rival",
+          "publisher": "Lincoln Parish Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwcBDwbadi9k4GfofUbD_G4hatn_nEq5eFiwtvCv_Ezrccz6QY6t5bAWVgZXI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSac7zDeB7Z57cwBjsv1SRUAsXI0qiggmtQH5DVhVTtrdrvTMe9vFQP3ms4Uu8"
         },
         {
-          "url": "https://www.slipperstillfits.com/gonzaga-mens-basketball/31327/game-preview-zags-to-face-captivating-lsu-at-spokane-arena",
-          "title": "Game Preview: Zags to face captivating LSU at Spokane Arena",
-          "publisher": "The Slipper Still Fits",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBHkUzSu69mt709ICcb6q4iilaUmSZ8lRXZe8mbUvdcaY1_4WoVbxkt8qWMeE"
-        },
-        {
-          "url": "https://www.freep.com/story/sports/ncaab/2026/11/14/lsu-at-gonzaga-odds-picks-and-predictions/92772232007/",
-          "title": "LSU Tigers at Gonzaga Bulldogs odds, picks and predictions",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdizyvF1pwvlVoPpAdRsYZu2iv7HvKc8LoFAIhWgYLtDdhofWWi6iWssgWScs"
-        }
-      ]
-    },
-    {
-      "query": "big 10 standings",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T20:40:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-11-college-football-playoff/",
-        "https://www.si.com/college/nebraska/football/where-football-polls-and-metrics-have-nebraska-placed-going-into-week-11",
-        "https://www.elevenwarriors.com/the-big-ten/2026/11/165372/big-ten-power-rankings-ucla-indiana-and-oregon-on-top-entering-fourth-quarter-of-regular-season"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQioctg15K5938y1sbcAVXj_JQ5t9PdRtB1yCqkcivGqWuEF1ztc0CuVJI3ULs",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-11-college-football-playoff/",
-          "title": "Big Ten Power Rankings, Week 11: League in a precarious College Football Playoff position",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQioctg15K5938y1sbcAVXj_JQ5t9PdRtB1yCqkcivGqWuEF1ztc0CuVJI3ULs"
-        },
-        {
-          "url": "https://www.si.com/college/nebraska/football/where-football-polls-and-metrics-have-nebraska-placed-going-into-week-11",
-          "title": "Where Football Polls and Metrics Have Nebraska Placed Going Into Week 11",
+          "url": "https://www.si.com/college/southernmiss/the-55th-edition-of-the-rivalry-in-dixie-key-matchups-southern-miss-storylines-and-more",
+          "title": "The 55th Edition of the Rivalry in Dixie: Key Matchups, Southern Miss Storylines, and More",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN6LGSsyNsWrBFnbQ9Kbvxl_XS0_D0rbUZWV-6FWjO7oybXlWSUqB64f74x_E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf8V7KYalYz8wuYvOj4mDkE-toU6cB3ytxeXnNa7FnMzfnsMv1dFo4UcOHze0"
         },
         {
-          "url": "https://www.elevenwarriors.com/the-big-ten/2026/11/165372/big-ten-power-rankings-ucla-indiana-and-oregon-on-top-entering-fourth-quarter-of-regular-season",
-          "title": "Big Ten Power Rankings: UCLA, Indiana and Oregon On Top Entering Fourth Quarter of Regular Season",
-          "publisher": "Eleven Warriors",
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2pvbm9uaXR2cy5naXRodWIuaW8vcmFqL2N0LnhtbCIvPjwva3JwYW5vPg==&id=video-livestream-southern-miss-vs-c8miquo4",
+          "title": "[#LIVESTREAm]+! Southern Miss vs Louisiana Tech Live Free Saturday Night Football - Nov. 14",
+          "publisher": "日本取引所グループ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH0lUyQkvbdQ5Vw6sHlAslc-tX2NHHArhA-DFRI6ECon6OfEqUEvH6YNqLV14"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTViAuz74yecJjjjZ_96jnvxu0nQSSourWGeRNkYQNOdEM8OifAzVnEZUNJ-mk"
         }
       ]
     },
     {
-      "query": "tulane vs rice",
+      "query": "coastal carolina football",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T20:40:00Z",
+      "published_at": "2026-11-14T21:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/3-keys-victory-tulane-vs-130006573.html",
-        "https://www.fox8live.com/2026/11/14/tulane-football-travel-plans-houston-altered-due-nationwide-ground-stop/",
-        "https://riceowls.com/news/2026/11/13/football-homecoming-start-moved-back-to-3-30"
+        "https://www.usatoday.com/sports/ncaaf/event/2026/2973254/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=5",
+        "https://uwbadgers.com/news/2026/11/13/mens-basketball-five-things-to-know-badgers-wrap-up-homestand-vs-coastal-carolina",
+        "https://sports.yahoo.com/articles/wisconsin-badgers-play-coastal-carolina-094321691.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiNUtgINAc7UBIZ5SgvMlo6kVLpylbzuPmqa0Dq4AEM0Ailo1gyRHq4e2aV74",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ2ealm3U-z5DI2Zm4WthtIT8rogsNRoPTgi83W2uHYFT_Lx0iYvyACw3_oG0",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2973254/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=5",
+          "title": "Arkansas State Red Wolves at Coastal Carolina Chanticleers - NCAAF Game Summary - Nov 14, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ2ealm3U-z5DI2Zm4WthtIT8rogsNRoPTgi83W2uHYFT_Lx0iYvyACw3_oG0"
+        },
+        {
+          "url": "https://uwbadgers.com/news/2026/11/13/mens-basketball-five-things-to-know-badgers-wrap-up-homestand-vs-coastal-carolina",
+          "title": "Five Things to Know: Badgers wrap up homestand vs. Coastal Carolina",
+          "publisher": "Wisconsin Badgers",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LXljflO-_vF1yf6ULAIon1Fsv6tYyIfjVO0ZJ5iihLVYyC4EnWCSLtwPvvg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/wisconsin-badgers-play-coastal-carolina-094321691.html",
+          "title": "Wisconsin Badgers play the Coastal Carolina Chanticleers on 3-game win streak",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEHkjsDlghGGoSHUAab4uHGcmdEajSBa3hwPv7KoqKkQu3jGYzRy4uha6HGeE"
+        }
+      ]
+    },
+    {
+      "query": "dante moore",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T21:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/dante-moore-shares-nil-partner-120200670.html",
+        "https://athlonsports.com/college-football/dante-moore-shares-new-nil-partner-amid-oregon-season",
+        "https://heavy.com/sports/college-football/oregon-ducks/oregon-dante-moore-dylan-raiola-michigan/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHy9vO81RqDeXcC7_LE5CT9ZYnxJOMGqQHRmcKkGpzS46_fX7aKcmXFlE8B4Y",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/3-keys-victory-tulane-vs-130006573.html",
-          "title": "3 Keys to Victory: Tulane vs. Rice",
+          "url": "https://sports.yahoo.com/articles/dante-moore-shares-nil-partner-120200670.html",
+          "title": "Dante Moore Shares New NIL Partner Amid Oregon Season",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiNUtgINAc7UBIZ5SgvMlo6kVLpylbzuPmqa0Dq4AEM0Ailo1gyRHq4e2aV74"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHy9vO81RqDeXcC7_LE5CT9ZYnxJOMGqQHRmcKkGpzS46_fX7aKcmXFlE8B4Y"
         },
         {
-          "url": "https://www.fox8live.com/2026/11/14/tulane-football-travel-plans-houston-altered-due-nationwide-ground-stop/",
-          "title": "Tulane Football travel plans to Houston altered due to nationwide ground stop",
-          "publisher": "FOX 8 Local First",
+          "url": "https://athlonsports.com/college-football/dante-moore-shares-new-nil-partner-amid-oregon-season",
+          "title": "Dante Moore Announces Career Move After 6th Oregon Win",
+          "publisher": "Athlon Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1pxqBPgQbhvo2RieWgZlgsfDFZFP8vQDH6X4ksC_obz5L2pRe7a6c-3or1M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3GYG9bj_skCdlrQ7Tql55oZRmjnd_xKUzLgLVoCeBrDLIldThPGK-pzrFwA"
         },
         {
-          "url": "https://riceowls.com/news/2026/11/13/football-homecoming-start-moved-back-to-3-30",
-          "title": "Homecoming Start Moved Back to 3:30",
-          "publisher": "Rice University Athletics",
+          "url": "https://heavy.com/sports/college-football/oregon-ducks/oregon-dante-moore-dylan-raiola-michigan/",
+          "title": "Why Isn’t Oregon QB Dante Moore Playing Today vs Michigan? Dylan Raiola Starts",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDymm9wW-ykLa8Y_2SvZ4jB5evdQBqh4Gw4zqjbs3DY_70CTLR6xcjPvg-XKE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3judeGaFDcNlnL1BGTqKYElqQbWVfj3Nh5Xv9SlqhnflcgA5z3vea-1zB--E"
         }
       ]
     },
     {
-      "query": "haití - estados unidos",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-14T20:40:00Z",
-      "related_news_urls": [
-        "https://es.concacaf.com/competitions/nations-league/news/haiti-vs-estados-unidos-y-jamaica-vs-mexico-encabezan-doble-jornada-de-cuartos-de-final-de-la-liga-de-naciones",
-        "https://www.telemundo.com/deportes/us-soccer/video/antonee-robinson-quiere-ser-un-ejemplo-para-las-nuevas-generaciones-del-usmnt-tmvo13244435",
-        "https://www.si.com/es-us/como-ver-el-haiti-vs-estados-unidos-en-tv-y-streaming-14-11-2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKUmjWVj5DmITylYvP1z20jAHtdwhuKQ1_d-G0t-_tsy1DhyzLfk_T9WmyZ2I",
-      "image_credit": "Concacaf | Official Website",
-      "news": [
-        {
-          "url": "https://es.concacaf.com/competitions/nations-league/news/haiti-vs-estados-unidos-y-jamaica-vs-mexico-encabezan-doble-jornada-de-cuartos-de-final-de-la-liga-de-naciones",
-          "title": "Haití vs. Estados Unidos y Jamaica vs. México encabezan doble jornada de Cuartos de Final de la Liga de Naciones",
-          "publisher": "Concacaf | Official Website",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKUmjWVj5DmITylYvP1z20jAHtdwhuKQ1_d-G0t-_tsy1DhyzLfk_T9WmyZ2I"
-        },
-        {
-          "url": "https://www.telemundo.com/deportes/us-soccer/video/antonee-robinson-quiere-ser-un-ejemplo-para-las-nuevas-generaciones-del-usmnt-tmvo13244435",
-          "title": "Antonee Robinson quiere ser un ejemplo para las nuevas generaciones del USMNT",
-          "publisher": "Telemundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQl_3vP0VCDzbdEaiSpsZtvt-TKqmGC7VfHx96gJproTXG97ve_XX__d2bpmzw"
-        },
-        {
-          "url": "https://www.si.com/es-us/como-ver-el-haiti-vs-estados-unidos-en-tv-y-streaming-14-11-2026",
-          "title": "¿Cómo ver el Haití vs Estados Unidos en TV y streaming?",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnAgYTBE4bE5zCpUpv_GDfmIht6MMbO3s9YaUEYOe2Th9_Wvt_TOdpDDu77BU"
-        }
-      ]
-    },
-    {
-      "query": "luke fickell",
+      "query": "nate frazier",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T20:40:00Z",
+      "published_at": "2026-11-14T21:10:00Z",
       "related_news_urls": [
-        "https://badgerofhonor.com/luke-fickell-has-to-fire-jeff-grimes-and-the-maryland-loss-revealed-it-clearly",
-        "https://badgerextra.com/commentary/columns/polzin/polzin-how-3-sisters-and-tough-love-prepared-ryan-hopkins-for-wisconsin-s-spotlight/article_99be1aca-0dae-4418-a917-4743cc38a5f0.html",
-        "https://www.jsonline.com/story/sports/college/uw/2026/11/12/ryan-hopkins-embraces-challenge-of-being-wisconsin-badgers-quarterback/92739779007/"
+        "https://www.espn.com/college-football/story/_/id/50462413/connelly-previews-week-11-texas-lsu",
+        "https://sports.yahoo.com/college-football/betting/article/college-football-week-11-picks-odds-2-best-bets-for-this-weeks-games-172025052.html",
+        "https://www.nytimes.com/athletic/7776674/2026/11/13/college-football-top-games-week-11/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7J68RdiuDGxeiMCJJTFGhBEim1G42_TTpoi7OIdi7hifw_wcJQOmBr-qeCmg",
-      "image_credit": "Badger of Honor",
-      "news": [
-        {
-          "url": "https://badgerofhonor.com/luke-fickell-has-to-fire-jeff-grimes-and-the-maryland-loss-revealed-it-clearly",
-          "title": "Luke Fickell has to fire Jeff Grimes and the Maryland loss revealed it clearly",
-          "publisher": "Badger of Honor",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7J68RdiuDGxeiMCJJTFGhBEim1G42_TTpoi7OIdi7hifw_wcJQOmBr-qeCmg"
-        },
-        {
-          "url": "https://badgerextra.com/commentary/columns/polzin/polzin-how-3-sisters-and-tough-love-prepared-ryan-hopkins-for-wisconsin-s-spotlight/article_99be1aca-0dae-4418-a917-4743cc38a5f0.html",
-          "title": "Polzin: The making of Ryan Hopkins includes three sisters, tough love and a Wisconsin breakthrough",
-          "publisher": "BadgerExtra",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREVE_MOsy9JxTObEUrYOJh_mkjNrZmtqzypTLA0QVtI91HyIc71PLq2KPDuaA"
-        },
-        {
-          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/12/ryan-hopkins-embraces-challenge-of-being-wisconsin-badgers-quarterback/92739779007/",
-          "title": "Ryan Hopkins embraces challenge of being Wisconsin's quarterback",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOdYqigrXgKIk7HQZdM-EQX-EcRycJYr1gL-kN9Qd4E_uR1s8AZLKN1SSwAs"
-        }
-      ]
-    },
-    {
-      "query": "byu vs baylor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T20:40:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/stories/college-football/how-to-watch-baylor-vs-byu-tv-channel-live-stream-time-nov-14-2026",
-        "https://byucougars.com/news/2026/11/09/byu-football-game-week-2026-baylor",
-        "https://www.deseret.com/sports/2026/11/13/byu-football-baylor-bears-cougars-must-win-tiebreakers-big-12-provo/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNfuvHtm4XFQbzSNlQBigjD0i53KDPhgmHJeF4rJiUvsRixybyAcTwV06cf3I",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/stories/college-football/how-to-watch-baylor-vs-byu-tv-channel-live-stream-time-nov-14-2026",
-          "title": "How to Watch Baylor vs. BYU: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNfuvHtm4XFQbzSNlQBigjD0i53KDPhgmHJeF4rJiUvsRixybyAcTwV06cf3I"
-        },
-        {
-          "url": "https://byucougars.com/news/2026/11/09/byu-football-game-week-2026-baylor",
-          "title": "BYU Football Game Week 2026 — Baylor",
-          "publisher": "BYU Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ31riP01vudtU8XxN0L0EF-sA8xYxKlcS-nRSzfmT2DhSpcGTD42020ge7EHQ"
-        },
-        {
-          "url": "https://www.deseret.com/sports/2026/11/13/byu-football-baylor-bears-cougars-must-win-tiebreakers-big-12-provo/",
-          "title": "BYU vs. Baylor: Is predicted rainy weather a bad sign for Bear?",
-          "publisher": "Deseret News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMovN3ha68B3PmwlWqwkvhNIyQPsRtp3smLf6TPK0AEy8r8Vm3AbavYFoE_zs"
-        }
-      ]
-    },
-    {
-      "query": "jason eck",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T20:40:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "jessica pegula",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T20:30:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4609170/follow-live-a-semifinal-saturday-you-wont-want-to-miss-at-the-fage-wta-finals",
-        "https://www.nytimes.com/athletic/7750694/2026/11/13/wta-finals-2026-draw-prize-money-format-schedule/",
-        "https://tennisnow.com/wta-finals-championship-matches-will-simulcast-for-free-on-tennis-channel-2-on-sunday-november-15th/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSso4yiMBPlun0qZvjy80Xo_Al_n9BVSoHpu5LQ76-OOsmE4fe9xOK1cws15tA",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4609170/follow-live-a-semifinal-saturday-you-wont-want-to-miss-at-the-fage-wta-finals",
-          "title": "Follow live: A semifinal Saturday you won’t want to miss at the FAGE WTA Finals",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSso4yiMBPlun0qZvjy80Xo_Al_n9BVSoHpu5LQ76-OOsmE4fe9xOK1cws15tA"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7750694/2026/11/13/wta-finals-2026-draw-prize-money-format-schedule/",
-          "title": "WTA Finals 2026: Singles semifinals set after Elina Svitolina shocks Aryna Sabalenka - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0IqHtgcEZDTsPM29rkQ8pa7NBVLYHhSfxwH_eLRqAKH43izYAUP8DGCqCC0E"
-        },
-        {
-          "url": "https://tennisnow.com/wta-finals-championship-matches-will-simulcast-for-free-on-tennis-channel-2-on-sunday-november-15th/",
-          "title": "WTA Finals Championship Matches Will Simulcast for Free on Tennis Channel 2 on Sunday, November 15th",
-          "publisher": "Tennis Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_4i5PZi3ttsRL7C8ow5OROcBpkmuRqN97sSk3bUhY2xCGmG7xQKN8MvBkABw"
-        }
-      ]
-    },
-    {
-      "query": "heisman odds",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T20:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50433120/heisman-race-week-10-cj-carr",
-        "https://www.si.com/college-football/heisman-rankings-after-week-10-julian-sayin-malachi-toney-injuries-have-thrown-race-wide-open",
-        "https://www.nytimes.com/athletic/7768872/2026/11/10/heisman-trophy-candidates-race-cj-carr-jeremiah-smith/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2eRIncimPlUNfa0IPJPF8WPqz0kvpZ69A5yS6Npxt3ffc_6sEfe1E4yRjxhQ",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzUEgc3W4Q2SKinKuyA9svrsr1t9wrivf7I-TJTGj_Qc0lFEWoVrjmhqL4itM",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50433120/heisman-race-week-10-cj-carr",
-          "title": "Heisman race after Week 10 - CJ Carr, new contenders emerge",
+          "url": "https://www.espn.com/college-football/story/_/id/50462413/connelly-previews-week-11-texas-lsu",
+          "title": "Connelly previews Week 11 - 32 make-or-break showdowns",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2eRIncimPlUNfa0IPJPF8WPqz0kvpZ69A5yS6Npxt3ffc_6sEfe1E4yRjxhQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzUEgc3W4Q2SKinKuyA9svrsr1t9wrivf7I-TJTGj_Qc0lFEWoVrjmhqL4itM"
         },
         {
-          "url": "https://www.si.com/college-football/heisman-rankings-after-week-10-julian-sayin-malachi-toney-injuries-have-thrown-race-wide-open",
-          "title": "Heisman Rankings After Week 10: Julian Sayin, Malachi Toney Injuries Have Thrown Race Wide Open",
-          "publisher": "Sports Illustrated",
+          "url": "https://sports.yahoo.com/college-football/betting/article/college-football-week-11-picks-odds-2-best-bets-for-this-weeks-games-172025052.html",
+          "title": "College football Week 11 picks, odds: 2 best bets for this week's games",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStPEVjuPwr5droPTKDL-ArkSD2eO8FtZWUGSCluafNcYgubWjKzM5iyLecp18"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT72e1AmXCxB1tC2OxLHReYtdFaD0wAxYD7GNJLeOUxBRAkE0nNncw3IIM8Lww"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7768872/2026/11/10/heisman-trophy-candidates-race-cj-carr-jeremiah-smith/",
-          "title": "Who’s winning the Heisman Trophy? Jeremiah Smith, CJ Carr lead 9 contenders after Week 10",
+          "url": "https://www.nytimes.com/athletic/7776674/2026/11/13/college-football-top-games-week-11/",
+          "title": "College football Week 11 top 10 games: Texas-LSU, USC-Indiana and more",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIE3q-lrNwmmRMy67nle9SSpTPZ5DQNuIGRyHtx4OeCcPVvE2EXOH4bDQmyrw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBAyNpIR9gyW8qia8z_4CRCtXAnGlsZQOWaczYnhmPA9I6-QjaYm3_1CApNco"
         }
       ]
     },
     {
-      "query": "atlético nacional - once caldas",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T20:30:00Z",
+      "query": "dylan raiola",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T21:00:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17513175/nacional-vs-once-caldas-fecha-19-liga-betplay-lucas-20-convocados-gran-noticia-james-rodriguez",
-        "https://www.elcolombiano.com/deportes/futbol/donde-ver-nacional-vs-once-caldas-en-vivo-previa-liga-betplay-CK43587885",
-        "https://www.facebook.com/lapatria.manizales/videos/no-se-pierda-la-transmisi%C3%B3n-en-vivo-del-juego-entre-atl%C3%A9tico-nacional-y-once-cal/1942685963807069/"
+        "https://heavy.com/sports/college-football/oregon-ducks/oregon-dante-moore-dylan-raiola-michigan/",
+        "https://www.oregonlive.com/ducks/2026/11/cookies-continuity-and-clean-pockets-oregons-offensive-line-makes-tremendous-leap.html",
+        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165337/dylan-raiola-saw-seams-everywhere-while-preparing-for-ohio-states-defense-and-chip-kelly-may-too"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTWLdvRWak2BVDD82Z38xBmZ6ZDrypXanIFnSI3ZWkGjzY5HTg9rNKj1mVlAY",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3judeGaFDcNlnL1BGTqKYElqQbWVfj3Nh5Xv9SlqhnflcgA5z3vea-1zB--E",
+      "image_credit": "Heavy.com",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17513175/nacional-vs-once-caldas-fecha-19-liga-betplay-lucas-20-convocados-gran-noticia-james-rodriguez",
-          "title": "Nacional vs. Once Caldas: Lucas confirma 20 convocados con una gran noticia",
-          "publisher": "ESPN Deportes",
+          "url": "https://heavy.com/sports/college-football/oregon-ducks/oregon-dante-moore-dylan-raiola-michigan/",
+          "title": "Why Isn’t Oregon QB Dante Moore Playing Today vs Michigan? Dylan Raiola Starts",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTWLdvRWak2BVDD82Z38xBmZ6ZDrypXanIFnSI3ZWkGjzY5HTg9rNKj1mVlAY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3judeGaFDcNlnL1BGTqKYElqQbWVfj3Nh5Xv9SlqhnflcgA5z3vea-1zB--E"
         },
         {
-          "url": "https://www.elcolombiano.com/deportes/futbol/donde-ver-nacional-vs-once-caldas-en-vivo-previa-liga-betplay-CK43587885",
-          "title": "Nacional tiene los puntos, pero debe recuperar el juego ante Once Caldas: ¿a qué horas y dónde verlo? | El Colombiano",
-          "publisher": "El Colombiano",
+          "url": "https://www.oregonlive.com/ducks/2026/11/cookies-continuity-and-clean-pockets-oregons-offensive-line-makes-tremendous-leap.html",
+          "title": "How continuity up front has fueled Oregon's offensive resurgence",
+          "publisher": "OregonLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0T80gCwZzpEz37vFDCc87nWqVxgb9OmgMzSE0rWAKgiP2KD5fMBZCI_GoI8Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmomU009k3UedCm3QbeR9aksj2mhVVEYgzXCNVtdICvt_8UvUxPpVwVKCgiR8"
         },
         {
-          "url": "https://www.facebook.com/lapatria.manizales/videos/no-se-pierda-la-transmisi%C3%B3n-en-vivo-del-juego-entre-atl%C3%A9tico-nacional-y-once-cal/1942685963807069/",
-          "title": "La Patria Manizales. . #AlAire ⚽ Atlético Nacional vs Once Caldas | Fecha 19 - Liga BetPlay 2026 II",
-          "publisher": "Facebook",
+          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165337/dylan-raiola-saw-seams-everywhere-while-preparing-for-ohio-states-defense-and-chip-kelly-may-too",
+          "title": "Dylan Raiola “Saw Seams Everywhere” While Preparing for Ohio State’s Defense, and Chip Kelly May, Too",
+          "publisher": "Eleven Warriors",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjFDOyDvFxigsCgwzBcof7nFeKSV4UjDhHAk9IKQUeAszQ-iGHvO9hLWFX_Vs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfsqYgkyZI0vleqeHm7bZw14uYTliCaf3_Boh7jO_PpzPzk0LDOyzLW2L8ntA"
+        }
+      ]
+    },
+    {
+      "query": "mike matthews",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T21:00:00Z",
+      "related_news_urls": [
+        "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/14/mike-matthews-injury-update-tennessee-football-vs-texas-am/92498203007/",
+        "https://www.usatoday.com/story/sports/ncaaf/2026/11/14/mike-matthews-injury-updates-vols-receiver-right-knee-latest/92783750007/",
+        "https://247sports.com/college/tennessee/article/mike-matthews-exits-tennessee-football-game-at-texas-am-with-apparent-right-leg-injury-josh-heupel-292706149/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQAy4UkvRSyjmsTmWptbWe2mbg1qu2YrYy0UmqKgVCerilmbF7814koqdYVNM",
+      "image_credit": "Knoxville News Sentinel",
+      "news": [
+        {
+          "url": "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/14/mike-matthews-injury-update-tennessee-football-vs-texas-am/92498203007/",
+          "title": "Tennessee football Mike Matthews suffers leg injury vs Texas A&M",
+          "publisher": "Knoxville News Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQAy4UkvRSyjmsTmWptbWe2mbg1qu2YrYy0UmqKgVCerilmbF7814koqdYVNM"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/14/mike-matthews-injury-updates-vols-receiver-right-knee-latest/92783750007/",
+          "title": "Mike Matthews injury updates: Latest on leading Tennessee receiver after hurting knee",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVU6_YfW_lno-9pt6dL367g39RGdc_D3RIiGJPodcq9XklgnR6GNmphFt6hlo"
+        },
+        {
+          "url": "https://247sports.com/college/tennessee/article/mike-matthews-exits-tennessee-football-game-at-texas-am-with-apparent-right-leg-injury-josh-heupel-292706149/",
+          "title": "Mike Matthews exits Tennessee's game at Texas A&M with apparent right leg injury",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfRTUEpRDM_4rxoQwBLpKIFcjIcbY2Cj0FZBwvp7pYOZpbIs9u7W2-I5jal08"
+        }
+      ]
+    },
+    {
+      "query": "mavericks surfing",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T21:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/13/weather/california-storm-mavericks-surfers.html",
+        "https://ktla.com/news/local-news/manhattan-beach-pier-closed-to-due-very-large-surf/",
+        "https://localnewsmatters.org/2026/11/13/evacuation-warning-issued-roads-and-beaches-close-as-towering-waves-take-aim/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKxw5MzH_MM1msGfgCZNYJbU1t5bWV0H_fPXlTAl2nJoFqrVfsZ1Oy7PdJ98",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/13/weather/california-storm-mavericks-surfers.html",
+          "title": "Surfers Scramble to Mavericks in California to Catch Building-Size Waves",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKxw5MzH_MM1msGfgCZNYJbU1t5bWV0H_fPXlTAl2nJoFqrVfsZ1Oy7PdJ98"
+        },
+        {
+          "url": "https://ktla.com/news/local-news/manhattan-beach-pier-closed-to-due-very-large-surf/",
+          "title": "Manhattan Beach Pier closed due to ‘very large surf’",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4P5GSgcdAIqI7m4zCh4a_xs6-21Hc0ryUCND_CZXhI3ez5UB5zhPkGbAIOs"
+        },
+        {
+          "url": "https://localnewsmatters.org/2026/11/13/evacuation-warning-issued-roads-and-beaches-close-as-towering-waves-take-aim/",
+          "title": "Evacuation warning issued, roads and beaches close as towering waves take aim",
+          "publisher": "Local News Matters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTaLsCjvl3JAxxLi-PPJRdolOI0JWLqHaJft31IlpS8BW8kX8WQwe7GanulFI"
+        }
+      ]
+    },
+    {
+      "query": "mirassol vs atlético mineiro",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T21:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.co.uk/sport/football/live/cqly3y5nelp7t",
+        "https://sports.yahoo.com/articles/mirassol-v-atl-tico-galo-120500746.html",
+        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-mirassol-v-atletico-mg/blt0afb7b208b11b69a"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.co.uk/sport/football/live/cqly3y5nelp7t",
+          "title": "Mirassol vs Atlético Mineiro: Brazilian Serie A stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/mirassol-v-atl-tico-galo-120500746.html",
+          "title": "Mirassol v Atlético: Galo are in action today!",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkxJpbWo6ewB3dNOAUXsHHww-UCnQLNsoafHWtUp_oheSGYQtlQkMehNEHuUI"
+        },
+        {
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-mirassol-v-atletico-mg/blt0afb7b208b11b69a",
+          "title": "Mirassol vs Atletico MG: Where to watch, TV channel, live stream & kick-off time | Serie A",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepoPB5r9vFT4_Cm1ZBFBMJSSxRgJCufJhBBHeQSbX2b1HTahQ6tbOkKiaYW0"
+        }
+      ]
+    },
+    {
+      "query": "mirassol x atlético-mg",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T21:00:00Z",
+      "related_news_urls": [
+        "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/14/rodada-brasileirao-sabado-luta-rebaixamento.ghtm",
+        "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/noticia/2026/11/14/mirassol-x-atletico-mg-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://www.otempo.com.br/sports/atletico/2026/11/14/fred-cassierra-e-ruan-tressoldi-voltam-a-ser-titulares-do-atletico-antes-da-final-da-sul-americana"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3NaDrnNWlu6yp-2FYPr91b2pQjRP-TySBerbdlbKIJgW2kMdTNxmu_--chDA",
+      "image_credit": "UOL",
+      "news": [
+        {
+          "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/14/rodada-brasileirao-sabado-luta-rebaixamento.ghtm",
+          "title": "Brasileirão tem dois jogos hoje e vai movimentar luta contra o rebaixamento",
+          "publisher": "UOL",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3NaDrnNWlu6yp-2FYPr91b2pQjRP-TySBerbdlbKIJgW2kMdTNxmu_--chDA"
+        },
+        {
+          "url": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/noticia/2026/11/14/mirassol-x-atletico-mg-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Mirassol x Atlético-MG: onde assistir ao vivo, horário e escalações",
+          "publisher": "ge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr8U9hoVaSqrN-Vv7OB7CMqwQ_6fgbM0sEXrYg9ME5y9PTjH44WeGNkpOJ9vQ"
+        },
+        {
+          "url": "https://www.otempo.com.br/sports/atletico/2026/11/14/fred-cassierra-e-ruan-tressoldi-voltam-a-ser-titulares-do-atletico-antes-da-final-da-sul-americana",
+          "title": "Fred, Cassierra e Ruan Tressoldi voltam a ser titulares do Atlético antes da final da Sul-Americana",
+          "publisher": "O Tempo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO1iPPJ7ts_z_kdO0uVlxOm3joe-65K1RG9ekXE4DgL2jr6S6GNNOfvH1jMYo"
+        }
+      ]
+    },
+    {
+      "query": "why is crypto crashing",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T21:00:00Z",
+      "related_news_urls": [
+        "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
+        "https://www.fastcompany.com/91642070/bitcoin-price-why-btc-down-today-inflation-outflows-more",
+        "https://www.wsj.com/finance/currencies/bitcoin-holds-below-70-000-as-risk-off-mood-pressures-crypto-d61d684d"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXB5l-8J7fwJwEfKtvDqGTs5nELPnPSHHYhZdjT_IL_qX0frq4B--04JvtmdA",
+      "image_credit": "CoinDesk",
+      "news": [
+        {
+          "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
+          "title": "Bitcoin price analysis: BTC continues to decline Saturday, entering 'deep value zone'",
+          "publisher": "CoinDesk",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXB5l-8J7fwJwEfKtvDqGTs5nELPnPSHHYhZdjT_IL_qX0frq4B--04JvtmdA"
+        },
+        {
+          "url": "https://www.fastcompany.com/91642070/bitcoin-price-why-btc-down-today-inflation-outflows-more",
+          "title": "Bitcoin is falling to fresh lows today: What’s causing the crypto decline?",
+          "publisher": "Fast Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSmWYozqRH0rq4Lj-chqzZvCPJgpBKIUayZA9TBS7m-drmoDoWE_dsNoNg_Uw"
+        },
+        {
+          "url": "https://www.wsj.com/finance/currencies/bitcoin-holds-below-70-000-as-risk-off-mood-pressures-crypto-d61d684d",
+          "title": "Bitcoin Holds Below $70,000 as Risk-Off Mood Pressures Crypto",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_jfDkshoArG8fFfXxuApgLVKSOrYFw6kqdxoQ3iQ6NZXkHfRt_Z2WNGc-M_c"
         }
       ]
     }
