@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T19:01:27.963304Z",
+  "checked_at": "2026-11-14T19:31:06.192460Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "shane gillis",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T18:30:00Z",
+      "query": "jackson state vs alabama state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T19:10:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/shane-gillis-addresses-snl-monologue-promised-no-controversy-1237223484/",
-        "https://www.hollywoodreporter.com/tv/tv-news/shane-gillis-addresses-snl-monologue-backlash-1236755428/",
-        "https://www.yahoo.com/entertainment/videos/shane-gillis-breaks-silence-backlash-171527918.html"
+        "https://sports.yahoo.com/articles/alabama-state-football-vs-jackson-120141508.html",
+        "https://www.covers.com/sport/football/ncaaf/matchup/379064/picks",
+        "https://sportsbook.fanduel.com/football/ncaa-fcs/jackson-state-@-alabama-state-36298534"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8XyK_gOCeaVIrJ__qkkyU2AEvc_oAubm2VtM2-y36s7A0BEdiYmSG1Jul66U",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/shane-gillis-addresses-snl-monologue-promised-no-controversy-1237223484/",
-          "title": "Shane Gillis Addresses ‘SNL’ Monologue After He Promised Show “No Controversy”",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8XyK_gOCeaVIrJ__qkkyU2AEvc_oAubm2VtM2-y36s7A0BEdiYmSG1Jul66U"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/shane-gillis-addresses-snl-monologue-backlash-1236755428/",
-          "title": "Shane Gillis Addresses ‘SNL’ Monologue Backlash After Controversial Joke About Women at the Gym",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRl3bXd7nIn4hL2KZXDt1lzbWpNSZQp3iHPt0VaWFszJ8Xr9Z6hmjHX4ecOHCY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/videos/shane-gillis-breaks-silence-backlash-171527918.html",
-          "title": "Shane Gillis Breaks Silence on Backlash Over His Controversial ‘Saturday Night Live’ Monologue",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgjK1dh_-ghC6YwsHgLeGeSoDPHXdO9tz6Jahy4SvvZpBIDTzR19ztRC3NOyI"
-        }
-      ]
-    },
-    {
-      "query": "kennesaw st vs sam houston",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T18:20:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/ncaaf/kennesaw-state-owls-vs-sam-houston-state-bearkats-prediction-odds-2026-11-14/",
-        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3YueG1sIi8+PC9rcnBhbm8+&id=video-live-kennesaw-state-v-sam-houston-football-wssrkdkvucha",
-        "https://athlonsports.com/college-football/kennesaw-state-owls-at-sam-houston-bearkats-ncaaf-prediction-picks-odds-week11-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcPd-FURvkQdl2zEa929luSWTdsOGCG9ClAMzdMuwAbilFIaS32JCEzbDESdc",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/kennesaw-state-owls-vs-sam-houston-state-bearkats-prediction-odds-2026-11-14/",
-          "title": "Kennesaw State vs Sam Houston Prediction, Picks & Odds | 14 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcPd-FURvkQdl2zEa929luSWTdsOGCG9ClAMzdMuwAbilFIaS32JCEzbDESdc"
-        },
-        {
-          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3YueG1sIi8+PC9rcnBhbm8+&id=video-live-kennesaw-state-v-sam-houston-football-wssrkdkvucha",
-          "title": "[#LIVESTREAm]+! Sam Houston v Kennesaw State LIVE Score Updates in College Football Match - Nov. 14, 2026",
-          "publisher": "日本取引所グループ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiAjaSnUkaQMOynjmSOOXMaFaDlqfET3VgCIT8Hzn_c84cYPvfBlH_9pWEZN0"
-        },
-        {
-          "url": "https://athlonsports.com/college-football/kennesaw-state-owls-at-sam-houston-bearkats-ncaaf-prediction-picks-odds-week11-2026",
-          "title": "Kennesaw State Rides Two-Game Win Streak Into Sam Houston",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfHtuJaDMWrlBfyknVEjGJ_wfG0UdUB9-VrGfvIiTlp23681q0ZCSINxztq0w"
-        }
-      ]
-    },
-    {
-      "query": "northern iowa vs south dakota",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T18:20:00Z",
-      "related_news_urls": [
-        "https://www.argusleader.com/story/sports/college/university-of-south-dakota/2026/11/14/south-dakota-state-vs-northern-iowa-live-updates-recap--live/92780975007/",
-        "https://wcfcourier.com/sports/college/uni/football/article_56714f17-3cb5-4ef4-bfc7-259631958861.html",
-        "https://unipanthers.com/news/2026/11/11/football-panther-football-heads-to-vermillion-for-a-showdown-with-the-coyotes"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7dgYpQ14G0yMz1iZQixU-DSyvrkwD3pAQ4c7XkpJtu_lQ-obzcQP5Lh-380k",
-      "image_credit": "Argus Leader",
-      "news": [
-        {
-          "url": "https://www.argusleader.com/story/sports/college/university-of-south-dakota/2026/11/14/south-dakota-state-vs-northern-iowa-live-updates-recap--live/92780975007/",
-          "title": "South Dakota vs Northern Iowa live updates, score, highlights",
-          "publisher": "Argus Leader",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7dgYpQ14G0yMz1iZQixU-DSyvrkwD3pAQ4c7XkpJtu_lQ-obzcQP5Lh-380k"
-        },
-        {
-          "url": "https://wcfcourier.com/sports/college/uni/football/article_56714f17-3cb5-4ef4-bfc7-259631958861.html",
-          "title": "Does a win at South Dakota put UNI back in FCS playoff picture?",
-          "publisher": "Waterloo-Cedar Falls Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStYyhgbIvIezdmJDCG7VfLOUcVkPf8R_YFE85e5W7jLxGQy3MVSCHvaOa1Adw"
-        },
-        {
-          "url": "https://unipanthers.com/news/2026/11/11/football-panther-football-heads-to-vermillion-for-a-showdown-with-the-coyotes",
-          "title": "Panther football heads to Vermillion for a showdown with the Coyotes",
-          "publisher": "UNI Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTboLCG_2TLdECW61JALKxWIoO3C1LK8LPdwkZRZXi7_GuTELNTABA_VtkQT8U"
-        }
-      ]
-    },
-    {
-      "query": "bo jackson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T18:20:00Z",
-      "related_news_urls": [
-        "https://www.courier-journal.com/videos/sports/2026/11/13/bo-jackson-broken-baseball-bats-mlb-stats-career-kansas-city-royals-louisville-slugger/92771599007/",
-        "https://www.kentucky.com/sports/article318073810.html",
-        "https://www.courier-journal.com/picture-gallery/sports/mlb/2026/11/13/louisville-slugger-bo-jackson-living-legend-award-photos/92749266007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYbb23zvmKQpmiSp5vLmWAfpWHw9kMdEXfExfz39ZwPLI4dug3bWK0V_ROww8",
-      "image_credit": "The Courier-Journal",
-      "news": [
-        {
-          "url": "https://www.courier-journal.com/videos/sports/2026/11/13/bo-jackson-broken-baseball-bats-mlb-stats-career-kansas-city-royals-louisville-slugger/92771599007/",
-          "title": "Bo Jackson explains broken bats at Louisville Slugger Museum & Factory",
-          "publisher": "The Courier-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYbb23zvmKQpmiSp5vLmWAfpWHw9kMdEXfExfz39ZwPLI4dug3bWK0V_ROww8"
-        },
-        {
-          "url": "https://www.kentucky.com/sports/article318073810.html",
-          "title": "Bo Jackson crowned Louisville Slugger Museum & Factory's 2026 Living Legend",
-          "publisher": "Lexington Herald Leader",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrQ8O-x-L4uGboUy4zW2cteOvghuKnbpSDSKRP9_eEGaePIoz3JDHsD4BpxrQ"
-        },
-        {
-          "url": "https://www.courier-journal.com/picture-gallery/sports/mlb/2026/11/13/louisville-slugger-bo-jackson-living-legend-award-photos/92749266007/",
-          "title": "Louisville Slugger honors Bo Jackson with Living Legend Award",
-          "publisher": "The Courier-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRV5J3xKGlL7HboNG2cKzCSn-tv9IlV5vadX5GMl6UK9yTUdHEWG3psg_uUv8M"
-        }
-      ]
-    },
-    {
-      "query": "algeria vs togo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T18:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c620r0842054t",
-        "https://www.aps.dz/en/sports/team-sports/mwgezn5e-we-must-put-everything-in-place-to-rise-to-occasion-says-hemdani",
-        "https://uk.sports.yahoo.com/news/albion-star-withdrawn-international-duty-095543300.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c620r0842054t",
-          "title": "Algeria vs Togo: Africa Cup of Nations Qualification stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.aps.dz/en/sports/team-sports/mwgezn5e-we-must-put-everything-in-place-to-rise-to-occasion-says-hemdani",
-          "title": "\"We must put everything in place to rise to occasion,\" says Hemdani",
-          "publisher": "وكالة الأنباء الجزائرية",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSME_EuhYp7vaqYN_yA3uoQoxSnp0k5NqAtwepXAarpjy3TUuuJR4NKtd6cRJI"
-        },
-        {
-          "url": "https://uk.sports.yahoo.com/news/albion-star-withdrawn-international-duty-095543300.html",
-          "title": "Albion star withdrawn from international duty",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRG9CAt5yNi_mGosfavd2M8gwSDDX7_1CZ0HLD0nugANwHFZSmkoqYdUiMziIw"
-        }
-      ]
-    },
-    {
-      "query": "depaul vs notre dame",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T18:20:00Z",
-      "related_news_urls": [
-        "https://fightingirish.com/news/2026/11/12/no-13-notre-dame-set-for-sofi-shamrock-classic-against-depaul",
-        "https://www.nytimes.com/athletic/7781208/2026/11/14/depaul-vs-notre-dame-stream-how-to-watch-nov-14/",
-        "https://bvmsports.com/2026/11/13/unbeaten-depaul-women-face-no-13-notre-dame-in-shamrock-classic/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOBY0DMFVT7ZU8Ps2fUqI4euGzckKfDpgJSW05pDjvVvQsDIE2lAb-eeb2vLc",
-      "image_credit": "Notre Dame Fighting Irish",
-      "news": [
-        {
-          "url": "https://fightingirish.com/news/2026/11/12/no-13-notre-dame-set-for-sofi-shamrock-classic-against-depaul",
-          "title": "No. 13 Notre Dame Set For SoFi Shamrock Classic Against DePaul",
-          "publisher": "Notre Dame Fighting Irish",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOBY0DMFVT7ZU8Ps2fUqI4euGzckKfDpgJSW05pDjvVvQsDIE2lAb-eeb2vLc"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7781208/2026/11/14/depaul-vs-notre-dame-stream-how-to-watch-nov-14/",
-          "title": "How to watch DePaul vs. Notre Dame women’s basketball: TV channel and streaming options for November 14",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkowRtzN8iLaX_LSeZUeTUwpHPNcvBnMegxlp31uJ-Nk0GmPkFvN5RB47kTBQ"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/13/unbeaten-depaul-women-face-no-13-notre-dame-in-shamrock-classic/",
-          "title": "Unbeaten DePaul Women Face No. 13 Notre Dame in Shamrock Classic",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSiM14mYjJX3KR4lgu3QvCiCbcxNCiLs-CUFW7LpwcO6F-4hFf5afnLie6dfs"
-        }
-      ]
-    },
-    {
-      "query": "rob ezell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T18:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
-        "https://www.al.com/sports/2026/11/philip-rivers-to-nc-state-contact-details-salary-and-more-for-new-wolfpack-football-coach.html",
-        "https://www.newsobserver.com/sports/college/acc/nc-state/article317988360.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D8TfxbCksBXZz3UeDqiVu9Gp8KVJl5JrgHIyRF7Vq9dwUVTODfuXQRlh9Zw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
-          "title": "NC State officially hires Philip Rivers as football coach",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D8TfxbCksBXZz3UeDqiVu9Gp8KVJl5JrgHIyRF7Vq9dwUVTODfuXQRlh9Zw"
-        },
-        {
-          "url": "https://www.al.com/sports/2026/11/philip-rivers-to-nc-state-contact-details-salary-and-more-for-new-wolfpack-football-coach.html",
-          "title": "Philip Rivers to NC State: Contact details, salary and more for new Wolfpack football coach",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzBRXK3bBWHEWN0ji1qurV22HcEQSVgx-r3SRLA5WkmUewevEcJFj54aeZmrA"
-        },
-        {
-          "url": "https://www.newsobserver.com/sports/college/acc/nc-state/article317988360.html",
-          "title": "How much is NC State paying Philip Rivers? Details from his coaching contract",
-          "publisher": "News & Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkpwS_K-D1KLVaq0mpEJkCVZ5axJhZLN19DVeft0itXopz2ILG4t70NnZUwfY"
-        }
-      ]
-    },
-    {
-      "query": "david montgomery",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T18:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/texans-rule-david-montgomery-sunday-184507963.html",
-        "https://www.thefantasyfootballers.com/news/647711/woody-marks-will-once-again-serve-as-rb1/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-12/david-montgomery-groin-working-out-at-practice"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVT2E9MyOb5y71sXd82s4GjnOX6pxNm-RkOV7EhVKUfMJBxeDN0RQ35_GuV18",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYGVaLbNc8eJjPbVCpLPqbduV0__tyY2EmTKnr_B1TcrvtZfm_UGlypiZfrZA",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/texans-rule-david-montgomery-sunday-184507963.html",
-          "title": "Texans rule David Montgomery out for Sunday",
+          "url": "https://sports.yahoo.com/articles/alabama-state-football-vs-jackson-120141508.html",
+          "title": "Alabama State football vs Jackson State live updates: Follow SWAC showdown",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVT2E9MyOb5y71sXd82s4GjnOX6pxNm-RkOV7EhVKUfMJBxeDN0RQ35_GuV18"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYGVaLbNc8eJjPbVCpLPqbduV0__tyY2EmTKnr_B1TcrvtZfm_UGlypiZfrZA"
         },
         {
-          "url": "https://www.thefantasyfootballers.com/news/647711/woody-marks-will-once-again-serve-as-rb1/",
-          "title": "Woody Marks Will once again serve as RB1",
-          "publisher": "Fantasy Footballers Podcast",
+          "url": "https://www.covers.com/sport/football/ncaaf/matchup/379064/picks",
+          "title": "Tuskegee Golden Tigers vs Alabama State Hornets Prediction, Picks, Prop Bets For November 26, 2026 - NCAAF",
+          "publisher": "Covers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTygYTj9Qv7r95wZIzN6pcOnLoXhUgOGLo_mdUwpDAJL9fAoDxGpT2G3x95L0o"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTyQHrqE-kRyqyxx2HQe16ZXwvdVjNQ_sK34B7nwmwwiyrkNmrV-feA2y4TuU"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-12/david-montgomery-groin-working-out-at-practice",
-          "title": "David Montgomery (groin) working out at practice",
-          "publisher": "NBC Sports",
+          "url": "https://sportsbook.fanduel.com/football/ncaa-fcs/jackson-state-@-alabama-state-36298534",
+          "title": "Jackson State @ Alabama State Odds",
+          "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWVxwV2HY3nu-BI5nrZ3JeWi7npj-bH6cSL_dWY3ow947AlkOyxXdMXUi7ndY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY"
         }
       ]
     },
     {
-      "query": "sd state vs southern il",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T18:10:00Z",
+      "query": "alcorn state vs southern u",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T19:10:00Z",
       "related_news_urls": [
-        "https://www.siouxfallslive.com/sports/college/week-12-sdsu-at-southern-illinois-what-im-watching",
-        "https://thesouthern.com/news/siu/jackrabbits-hunting-another-fcs-crown/article_40c6c430-5b62-5b8f-9723-415136c62942.html",
-        "https://www.brookingsregister.com/sports/south-dakota-state-football-aiming-to-stop-sius-late-surge-in-regular-season-road-finale/"
+        "https://hbcusports.com/2026/11/13/swac-offensive-player-of-the-year-could-be-decided-in-alcorn-southern-showdown/",
+        "https://crescentcitysports.com/marshall-faulk-enjoys-trey-holly-in-the-present-sees-his-bright-future/",
+        "https://alcornsports.com/news/2026/11/13/football-alcorn-looks-to-extend-winning-streak-at-southern.aspx"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHKRCuut_RG1qtbfQgA_DOpoqlPrG846QyVUCnVv-AWuRbqZyFvMDjs5AujpU",
-      "image_credit": "Sioux Falls Live",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp6LojfLiz1wcpFzrTGQ4FPxlUXWcb5xyAFuemVPIbxE-eBY0HbUW6vsPECuk",
+      "image_credit": "HBCU Sports",
       "news": [
         {
-          "url": "https://www.siouxfallslive.com/sports/college/week-12-sdsu-at-southern-illinois-what-im-watching",
-          "title": "Week 12: SDSU at Southern Illinois - What I'm watching",
-          "publisher": "Sioux Falls Live",
+          "url": "https://hbcusports.com/2026/11/13/swac-offensive-player-of-the-year-could-be-decided-in-alcorn-southern-showdown/",
+          "title": "SWAC Offensive Player of the Year could be decided in Alcorn-Southern showdown",
+          "publisher": "HBCU Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHKRCuut_RG1qtbfQgA_DOpoqlPrG846QyVUCnVv-AWuRbqZyFvMDjs5AujpU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp6LojfLiz1wcpFzrTGQ4FPxlUXWcb5xyAFuemVPIbxE-eBY0HbUW6vsPECuk"
         },
         {
-          "url": "https://thesouthern.com/news/siu/jackrabbits-hunting-another-fcs-crown/article_40c6c430-5b62-5b8f-9723-415136c62942.html",
-          "title": "Jackrabbits hunting another FCS crown",
-          "publisher": "Southern Illinoisan",
+          "url": "https://crescentcitysports.com/marshall-faulk-enjoys-trey-holly-in-the-present-sees-his-bright-future/",
+          "title": "Marshall Faulk enjoys Trey Holly in the present, sees his bright future",
+          "publisher": "Crescent City Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0uIx7jZerviuyVjh2m0yW_HXhwOVAJSiJJeyq-c8IS9AdfPZj_sAN2SFuMTY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRexwqZDtGWS4tK5AhNpo4inH9UhMCIF2MTmK2SkkKhA2_yE2vjx4PuyGIA-Tg"
         },
         {
-          "url": "https://www.brookingsregister.com/sports/south-dakota-state-football-aiming-to-stop-sius-late-surge-in-regular-season-road-finale/",
-          "title": "South Dakota State football aiming to stop SIU’s late surge in regular season road finale",
-          "publisher": "Brookings Register -",
+          "url": "https://alcornsports.com/news/2026/11/13/football-alcorn-looks-to-extend-winning-streak-at-southern.aspx",
+          "title": "Alcorn Looks to Extend Winning Streak at Southern",
+          "publisher": "Alcorn State University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGGkk6uHXs2y_-VXJ3OfCmCCNSoJhhP4I2BEg7JGmi7-UTPCvzlsJI2iz8baM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTo7ayMWnbn3Pe6plJrSH_OoPsR-x8zdvMIlaAWOC9Ep7l9QKBR0TcVItgQGp8"
         }
       ]
     },
     {
-      "query": "lol worlds",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T18:10:00Z",
+      "query": "ms valley vs florida a&m",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T19:10:00Z",
       "related_news_urls": [
-        "https://rg.org/news/esports/worlds-2026-final-first-without-t1-since-2021-viewership",
-        "https://www.invenglobal.com/articles/28579/lpl-back-to-the-top-blg-sets-sights-on-lck-gauntlet",
-        "https://celebrityaccess.com/2026/11/12/inside-barclays-centers-two-year-pursuit-of-the-league-of-legends-world-championship-final/"
+        "https://www.tallahassee.com/story/sports/college/famu/2026/11/14/famu-mississippi-valley-state-score-game-updates--live/92626048007/",
+        "https://www.gwcommonwealth.com/valley-rattlers-hook-saturday",
+        "https://www.bradenton.com/sports/article318076385.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe85sPCJJqKlKli8gTC762n9qE_0XzpCMxCJhrUZiPIKPBjm9lPL_RWCzT1oQ",
-      "image_credit": "RG.org",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCN2OSVg94yfoAlHJxsAxhibeK0uUTzhPTB6iy8-mSnm9esIHAV7jaEUwycCE",
+      "image_credit": "Tallahassee Democrat",
       "news": [
         {
-          "url": "https://rg.org/news/esports/worlds-2026-final-first-without-t1-since-2021-viewership",
-          "title": "Worlds Final Is First Without T1 Since 2021 After 3.6M Semi Peak",
-          "publisher": "RG.org",
+          "url": "https://www.tallahassee.com/story/sports/college/famu/2026/11/14/famu-mississippi-valley-state-score-game-updates--live/92626048007/",
+          "title": "FAMU football vs Mississippi Valley State live updates: Start time, TV",
+          "publisher": "Tallahassee Democrat",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe85sPCJJqKlKli8gTC762n9qE_0XzpCMxCJhrUZiPIKPBjm9lPL_RWCzT1oQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCN2OSVg94yfoAlHJxsAxhibeK0uUTzhPTB6iy8-mSnm9esIHAV7jaEUwycCE"
         },
         {
-          "url": "https://www.invenglobal.com/articles/28579/lpl-back-to-the-top-blg-sets-sights-on-lck-gauntlet",
-          "title": "\"LPL Back to the Top\" — BLG Sets Sights on LCK Gauntlet",
-          "publisher": "Inven Global",
+          "url": "https://www.gwcommonwealth.com/valley-rattlers-hook-saturday",
+          "title": "Valley, Rattlers hook up Saturday",
+          "publisher": "The Greenwood Commonwealth",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSkUSgxpRD8IJOqwxS4cdh8JWwmy3ueGRRy1CtFGlU7f-V7c_4pGICAw4UPYc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FV7h0wGrcvYmMQOZqRQUK44a8b8sPss74VYqh-O0b3ntIibP6i4SiN-kCB0"
         },
         {
-          "url": "https://celebrityaccess.com/2026/11/12/inside-barclays-centers-two-year-pursuit-of-the-league-of-legends-world-championship-final/",
-          "title": "Inside Barclays Center's Two-Year Pursuit of the League of Legends World Championship Final",
-          "publisher": "CelebrityAccess",
+          "url": "https://www.bradenton.com/sports/article318076385.html",
+          "title": "FAMU football vs MVSU prediction fan poll for today's SWAC game",
+          "publisher": "Bradenton Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCHLjpHa1LVOPRiVklZGOQowWzfaVQG2YkhNAq0sznLxb-y0cfmQN6tqk5N0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSL0uwz0a2fJEr78FCUHUlQlJjEg9jSTy_GlrikSuFtZv0sOJS6gu2yPfaIqwE"
+        }
+      ]
+    },
+    {
+      "query": "catherine, princess of wales",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T19:10:00Z",
+      "related_news_urls": [
+        "https://people.com/kate-middleton-reminds-herself-give-prince-george-princess-charlotte-prince-louis-freedom-explore-12251073",
+        "https://www.countrylife.co.uk/countryside/nature-wildlife/the-princess-of-wales-i-was-told-that-my-recovery-would-not-be-linear-there-will-be-good-days-and-bad-days-that-it-will-take-time-this-is-the-same-in-nature",
+        "https://www.goodmorningamerica.com/culture/story/kate-middleton-doctors-cancer-recovery-nature-138050564"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXB73IHFqchtMeUtFpcZwXK-Tf8JK-qpiv3vgvlpiZJ9INjexvt4GQli9YvfM",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/kate-middleton-reminds-herself-give-prince-george-princess-charlotte-prince-louis-freedom-explore-12251073",
+          "title": "Kate Middleton Reveals What She Tries Not to Do as a Mom to Prince George, Princess Charlotte and Prince Louis",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXB73IHFqchtMeUtFpcZwXK-Tf8JK-qpiv3vgvlpiZJ9INjexvt4GQli9YvfM"
+        },
+        {
+          "url": "https://www.countrylife.co.uk/countryside/nature-wildlife/the-princess-of-wales-i-was-told-that-my-recovery-would-not-be-linear-there-will-be-good-days-and-bad-days-that-it-will-take-time-this-is-the-same-in-nature",
+          "title": "The Princess of Wales: 'I was told that my recovery would not be linear. There will be good days and bad days, that it will take time. This is the same in nature'",
+          "publisher": "Country Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKmg7lBbqaD5rC5E1cQmxEolQpoNnorSgal6tHH_ThTp9895_VFYXaZ4k2SAQ"
+        },
+        {
+          "url": "https://www.goodmorningamerica.com/culture/story/kate-middleton-doctors-cancer-recovery-nature-138050564",
+          "title": "Kate Middleton shares what doctors told her during cancer recovery",
+          "publisher": "Good Morning America",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTE-_zadBsQr19QlLPaNZ1lZyOsQMh304MBYs0JT6W_v_hTk4Wg_S7sMi7cYg"
+        }
+      ]
+    },
+    {
+      "query": "fiu vs delaware",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T19:10:00Z",
+      "related_news_urls": [
+        "https://www.delawareonline.com/story/sports/college/ud/2026/11/14/fiu-at-delaware-in-conference-usa-football-live-report-updates/92689356007/",
+        "https://www.wdel.com/sports/delaware-and-florida-international-meet-in-cusa-play/article_e84a73f7-d74e-5b85-b605-edd6f657f899.html",
+        "https://www.actionnetwork.com/ncaaf/fiu-panthers-vs-delaware-blue-hens-prediction-pick-odds-ncaaf-saturday-nov-14"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYis1RfPj524ZzuM7t6LEn9nQx9vhs8d2ifdxozLtVtLSY3-u0Hig3UjFjYRI",
+      "image_credit": "Delawareonline.com",
+      "news": [
+        {
+          "url": "https://www.delawareonline.com/story/sports/college/ud/2026/11/14/fiu-at-delaware-in-conference-usa-football-live-report-updates/92689356007/",
+          "title": "FIU at Delaware in Conference USA football, live report, updates",
+          "publisher": "Delawareonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYis1RfPj524ZzuM7t6LEn9nQx9vhs8d2ifdxozLtVtLSY3-u0Hig3UjFjYRI"
+        },
+        {
+          "url": "https://www.wdel.com/sports/delaware-and-florida-international-meet-in-cusa-play/article_e84a73f7-d74e-5b85-b605-edd6f657f899.html",
+          "title": "Delaware and Florida International meet in CUSA play",
+          "publisher": "WDEL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS38Xl6B32JUfPFOa81pLbXQ8rxR08oMtNx_YMIWQAtE9wJJm-jz265FpmZGEY"
+        },
+        {
+          "url": "https://www.actionnetwork.com/ncaaf/fiu-panthers-vs-delaware-blue-hens-prediction-pick-odds-ncaaf-saturday-nov-14",
+          "title": "FIU vs Delaware Prediction, Pick, NCAAF Odds for Nov. 14",
+          "publisher": "Action Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIOPICKbEL9FkEQq_mERT_QYdUkrXJYJqyAl8XqUzV_lP1CuXx9E9A2rZCf5Q"
+        }
+      ]
+    },
+    {
+      "query": "prairie view vs ar-pine bluff",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T19:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/massive-college-football-brawl-ends-23-players-suspended-90s-tv-app-espn-laura-rutledge-stays-hot",
+        "https://www.thv11.com/video/news/local/uapb-football-suspended-fight-grambling-state/91-7cc09386-19ef-4511-9bdf-a3abc0359d51",
+        "https://www.knoe.com/2026/11/11/my-kids-are-not-thugs-theyre-not-gangsters-theyre-here-getting-educated-mickey-joseph-apologizes-postgame-fight-defends-players/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6__jp28-Hz41mgCzPgr2042BS9u31vY2e46Ukt03s-tcp7PwPOchh_aVT2c4",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/massive-college-football-brawl-ends-23-players-suspended-90s-tv-app-espn-laura-rutledge-stays-hot",
+          "title": "Massive college football brawl ends with 23 players suspended, '90s TV app & ESPN's Laura Rutledge stays hot!",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6__jp28-Hz41mgCzPgr2042BS9u31vY2e46Ukt03s-tcp7PwPOchh_aVT2c4"
+        },
+        {
+          "url": "https://www.thv11.com/video/news/local/uapb-football-suspended-fight-grambling-state/91-7cc09386-19ef-4511-9bdf-a3abc0359d51",
+          "title": "Nine UAPB football players suspended after fight with Grambling State",
+          "publisher": "thv11.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc7DrNAVcW267Xg9j50sD--VlMw3Ywvm8inMMd5-M9YUHsxitTCLE20Uid_PA"
+        },
+        {
+          "url": "https://www.knoe.com/2026/11/11/my-kids-are-not-thugs-theyre-not-gangsters-theyre-here-getting-educated-mickey-joseph-apologizes-postgame-fight-defends-players/",
+          "title": "“My kids are not thugs. They’re not gangsters. They’re here getting educated.” Mickey Joseph apologizes for postgame fight, defends players",
+          "publisher": "KNOE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AhCiF9sz8XnBmXmQeHBe9OrekeF0s3QuDgOYavXlg22JBi-_OsykHKf1TCw"
+        }
+      ]
+    },
+    {
+      "query": "tx southern vs alabama a&m",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T19:10:00Z",
+      "related_news_urls": [
+        "https://www.houstonchronicle.com/sports/college/article/texas-southern-alabama-am-watch-22526159.php",
+        "https://aamusports.com/news/2026/11/12/football-aamu-hosts-texas-southern-for-senior-day-and-military-appreciation-day.aspx",
+        "https://sportsbook.fanduel.com/football/ncaa-fcs/texas-southern-@-alabama-a-m-36298508"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ77bWwBY5OZu-kRgL2fBU9XY3PIBSAerJn96LOKg2IR5A_myMbE8DKXQXmWTQ",
+      "image_credit": "Houston Chronicle",
+      "news": [
+        {
+          "url": "https://www.houstonchronicle.com/sports/college/article/texas-southern-alabama-am-watch-22526159.php",
+          "title": "Texas Southern at Alabama A&M: How to watch, date, time, TV channel",
+          "publisher": "Houston Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ77bWwBY5OZu-kRgL2fBU9XY3PIBSAerJn96LOKg2IR5A_myMbE8DKXQXmWTQ"
+        },
+        {
+          "url": "https://aamusports.com/news/2026/11/12/football-aamu-hosts-texas-southern-for-senior-day-and-military-appreciation-day.aspx",
+          "title": "AAMU Hosts Texas Southern for Senior Day and Military Appreciation Day",
+          "publisher": "Alabama A&M Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTalhELCydw05iLJEPNQVrjK7V3WjyJNyufcy7gMVCVIzE1G1drnLC-c56PKPk"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/football/ncaa-fcs/texas-southern-@-alabama-a-m-36298508",
+          "title": "Texas Southern @ Alabama A&M Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY"
+        }
+      ]
+    },
+    {
+      "query": "twitch",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T19:00:00Z",
+      "related_news_urls": [
+        "https://ktla.com/entertainment/free-copies-of-grand-theft-auto-vi-for-californians-what-to-know-about-kick-sweepstakes/",
+        "https://www.notebookcheck.net/10K-free-GTA-6-Ultimate-Edition-game-codes-coming-in-livestream-Twitch-drops.1449873.0.html",
+        "https://sports.ndtv.com/us/us-streamers/kick-takes-gta-6-giveaway-to-california-with-lucia-cosplayer-on-special-truck-12326023"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9LxfvV6Aku-36afdXY9rQxna6G84QWx23KuKcNJfdDck3pXJ7k28SGwLdjE",
+      "image_credit": "KTLA",
+      "news": [
+        {
+          "url": "https://ktla.com/entertainment/free-copies-of-grand-theft-auto-vi-for-californians-what-to-know-about-kick-sweepstakes/",
+          "title": "Free copies of Grand Theft Auto VI for Californians? What to know about Kick sweepstakes",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9LxfvV6Aku-36afdXY9rQxna6G84QWx23KuKcNJfdDck3pXJ7k28SGwLdjE"
+        },
+        {
+          "url": "https://www.notebookcheck.net/10K-free-GTA-6-Ultimate-Edition-game-codes-coming-in-livestream-Twitch-drops.1449873.0.html",
+          "title": "Deal | 10K+ free GTA 6 Ultimate Edition game codes coming in livestream Twitch drops",
+          "publisher": "Notebookcheck",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8efLCxwUqUCNBOp7hcz_CB8KM4eLtZQ5OsSa3UfAJlmdZxkXaXkwH7xP6nP0"
+        },
+        {
+          "url": "https://sports.ndtv.com/us/us-streamers/kick-takes-gta-6-giveaway-to-california-with-lucia-cosplayer-on-special-truck-12326023",
+          "title": "Kick Takes GTA 6 Giveaway to California With Lucia Cosplayer On Special Truck",
+          "publisher": "NDTV Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR5EDuZJ0Q-fPy39m2yMS2HcHLXqBVtzi3pwJoiDFXysSeb4N9DKWOCQDU_lA"
+        }
+      ]
+    },
+    {
+      "query": "lol",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T19:00:00Z",
+      "related_news_urls": [
+        "https://lolesports.com/news/lol-esports-2027-and-beyond",
+        "https://www.sheepesports.com/en/articles/seoul-allocates-usd1-million-to-host-2027-worlds-final-and-fan-fest/en",
+        "https://www.vietnam.vn/en/first-stand-se-duoc-to-chuc-tai-dong-nam-a-vao-nam-2028"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnqXytY2zsgGb-35ABk0E4opZuu_zz2BWVxk7H6BKUQyHlD-SJZ822qMW68u8",
+      "image_credit": "LoL Esports",
+      "news": [
+        {
+          "url": "https://lolesports.com/news/lol-esports-2027-and-beyond",
+          "title": "LoL Esports 2027 and Beyond",
+          "publisher": "LoL Esports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnqXytY2zsgGb-35ABk0E4opZuu_zz2BWVxk7H6BKUQyHlD-SJZ822qMW68u8"
+        },
+        {
+          "url": "https://www.sheepesports.com/en/articles/seoul-allocates-usd1-million-to-host-2027-worlds-final-and-fan-fest/en",
+          "title": "Seoul allocates $1 million to host 2027 Worlds final and Fan Fest",
+          "publisher": "Sheep Esports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4rQcgUdur63RXzPrVKFf9h2pEaHUARyWMdFtg14Z0uZbBllpJ5JephKLdGU8"
+        },
+        {
+          "url": "https://www.vietnam.vn/en/first-stand-se-duoc-to-chuc-tai-dong-nam-a-vao-nam-2028",
+          "title": "First Stand will be held in Southeast Asia in 2028.",
+          "publisher": "Vietnam.vn",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShkluXFG2nwcQTWgs79AGY-4aEeYvdc5hsaMBzeIEDTlKQHaseobb5QS0JX7s"
+        }
+      ]
+    },
+    {
+      "query": "northern ireland vs ukraine",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T19:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cj93z3np22dwt",
+        "https://unn.ua/en/news/shaparenko-is-feeling-unwell-bondar-is-a-little-tired-maldera-on-the-players-condition-ahead-of-the-match-against-northern-ireland",
+        "https://www.belfasttelegraph.co.uk/sport/football/international/referee-at-centre-of-world-cup-storm-to-take-charge-of-crucial-northern-ireland-clash/a/164527160.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6XhxLhWSsSutzEq9HO29IyDlSEycENqTT4D8moaJ-aXX7SyY7WReTOKuAzjw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cj93z3np22dwt",
+          "title": "Northern Ireland v Ukraine: Build-up to Saturday's Nations League match",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6XhxLhWSsSutzEq9HO29IyDlSEycENqTT4D8moaJ-aXX7SyY7WReTOKuAzjw"
+        },
+        {
+          "url": "https://unn.ua/en/news/shaparenko-is-feeling-unwell-bondar-is-a-little-tired-maldera-on-the-players-condition-ahead-of-the-match-against-northern-ireland",
+          "title": "Shaparenko is feeling unwell, Bondar is slightly fatigued – Maldera on the players’ condition ahead of the match against Northern Ireland",
+          "publisher": "Українські Національні Новини (УНН)",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIioscdM660kjIJOnGtSwmIMjkpwvhCYkdSgiN6qVcnbd1YfZoAzsl2EjDkQ"
+        },
+        {
+          "url": "https://www.belfasttelegraph.co.uk/sport/football/international/referee-at-centre-of-world-cup-storm-to-take-charge-of-crucial-northern-ireland-clash/a/164527160.html",
+          "title": "Referee at centre of World Cup storm to take charge of crucial Northern Ireland clash",
+          "publisher": "Belfast Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsJ4eLVPWdSKPkGdywkr08kH0eyD9jYq2_-vxbvgDomjrUKTuHcKtXRpu5aCo"
         }
       ]
     }
