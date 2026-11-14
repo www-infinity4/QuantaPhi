@@ -28,6 +28,7 @@ article.append(badge);
   const visit=el('a','qsr-visit',card.internal?'Start housing intake →':'Visit '+card.name+' ↗');visit.href=card.internal?card.route:card.official;visit.target=card.internal?'_self':'_blank';visit.rel='noopener';visit.referrerPolicy='strict-origin-when-cross-origin';body.append(visit);
   const actions=el('div','qsr-actions');mountCardActions(actions,card,card.internal?{websiteReader:false,showOriginal:false}:{});body.append(actions);article.append(body);grid.append(article);
  }
+  // Badge added to each quick‑card article to highlight improved search results (owner‑driven UI tweak)
  return cards;
 }
 if(typeof document!=='undefined'){
