@@ -2,9 +2,25 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-14T20:03:50.111393Z",
+  "checked_at": "2026-11-14T20:32:50.114827Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "qoo1GTEXD1Y",
+      "title": "Godzilla Minus Zero",
+      "video_id": "qoo1GTEXD1Y",
+      "video_title": "Godzilla Minus Zero Trailer #3 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-05T17:41:47Z",
+      "source_url": "https://www.youtube.com/watch?v=qoo1GTEXD1Y",
+      "poster": "https://i.ytimg.com/vi/qoo1GTEXD1Y/hqdefault.jpg",
+      "google_trending": true,
+      "trend_query": "godzilla minus zero week 2 sales",
+      "trend_checked_at": "2026-11-14T20:31:06.368122Z",
+      "trend_published_at": "2026-11-14T19:50:00Z",
+      "approx_searches": "500+"
+    },
     {
       "id": "7Aqu1IlIf6I",
       "title": "Killing Castro",
@@ -147,18 +163,6 @@
       "published_at": "2026-11-05T18:48:43Z",
       "source_url": "https://www.youtube.com/watch?v=CkLO19tB9Ys",
       "poster": "https://i.ytimg.com/vi/CkLO19tB9Ys/hqdefault.jpg",
-      "google_trending": false
-    },
-    {
-      "id": "qoo1GTEXD1Y",
-      "title": "Godzilla Minus Zero",
-      "video_id": "qoo1GTEXD1Y",
-      "video_title": "Godzilla Minus Zero Trailer #3 (2026)",
-      "kind": "trailer",
-      "publisher": "Rotten Tomatoes Trailers",
-      "published_at": "2026-11-05T17:41:47Z",
-      "source_url": "https://www.youtube.com/watch?v=qoo1GTEXD1Y",
-      "poster": "https://i.ytimg.com/vi/qoo1GTEXD1Y/hqdefault.jpg",
       "google_trending": false
     },
     {
