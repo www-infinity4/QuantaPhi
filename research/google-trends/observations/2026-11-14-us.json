@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T22:31:14.121907Z",
+  "checked_at": "2026-11-14T23:01:20.441515Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "oregon state vs boise state",
+      "query": "xrp price",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T22:10:00Z",
+      "published_at": "2026-11-14T22:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/pat-mcafee-literally-smashes-oregon-210019189.html",
-        "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article318080108.html",
-        "https://www.saturdaydownsouth.com/news/college-football/pat-mcafee-arrives-to-college-gameday-set-on-horseback-cites-faa-delays/"
+        "https://finance.yahoo.com/markets/crypto/articles/xrp-did-last-time-fell-205716270.html",
+        "https://coinpedia.org/price-analysis/xrp-loses-1-support-as-selling-accelerates-how-low-can-the-xrp-price-go/",
+        "https://www.tradingview.com/news/u_today:53b9789ca094b:0-xrp-is-not-in-free-fall-according-to-bollinger-bands-even-after-nine-red-days/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI3LMAGpUzfZ5MrQoDND1CzoNZb7911Wkg8vukdsg6vxsKPGiQl6Y_IKEkP0w",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJH2xuvobhThodQuox9podM_mjMtKGIgQzntKzDeBx46HXkT0-YBqXdiBA8uY",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-did-last-time-fell-205716270.html",
+          "title": "What XRP Did the Last Time It Fell Below $1",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJH2xuvobhThodQuox9podM_mjMtKGIgQzntKzDeBx46HXkT0-YBqXdiBA8uY"
+        },
+        {
+          "url": "https://coinpedia.org/price-analysis/xrp-loses-1-support-as-selling-accelerates-how-low-can-the-xrp-price-go/",
+          "title": "XRP Loses $1 Support as Selling Accelerates: How Low Can the XRP Price Go?",
+          "publisher": "Coinpedia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8VIXIffw2kkHiyRNXf7Nz7lq61rLrlv5Yq-7pw7drG5Lmvw_ZWgGf9rKY_xc"
+        },
+        {
+          "url": "https://www.tradingview.com/news/u_today:53b9789ca094b:0-xrp-is-not-in-free-fall-according-to-bollinger-bands-even-after-nine-red-days/",
+          "title": "XRP Is Not in Free Fall According to Bollinger Bands, Even After Nine Red Days",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91HIK9tmKJFYBlyrzdx8BIB2Wb6HzJzWbn4FjlPsFg5tZFCCi0-0kEniaM8E"
+        }
+      ]
+    },
+    {
+      "query": "jeffery simmons chicago bears trade",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T22:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/videos/stood-dt-jeffery-simmons-joining-212841576.html",
+        "https://www.si.com/nfl/bears/onsi/jeffery-simmons-titans-frustration-trade-bears",
+        "https://www.foxsports.com/watch/fmc-dlkh8jlp5aay0fko"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP8C0acFu8F1vrsWGBPrYXSZhi80cImboG_uibqxpWg-JGmMLivF8BoiyxMnQ",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/pat-mcafee-literally-smashes-oregon-210019189.html",
-          "title": "Pat McAfee literally smashes Oregon State helmet after Boise State football pick",
+          "url": "https://sports.yahoo.com/videos/stood-dt-jeffery-simmons-joining-212841576.html",
+          "title": "What Stood Out to DT Jeffery Simmons After Joining the Chicago Bears",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI3LMAGpUzfZ5MrQoDND1CzoNZb7911Wkg8vukdsg6vxsKPGiQl6Y_IKEkP0w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP8C0acFu8F1vrsWGBPrYXSZhi80cImboG_uibqxpWg-JGmMLivF8BoiyxMnQ"
         },
         {
-          "url": "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article318080108.html",
-          "title": "A gender reveal, Pat McAfee horseback - experience Boise State’s ‘College GameDay’",
-          "publisher": "Idaho Statesman",
+          "url": "https://www.si.com/nfl/bears/onsi/jeffery-simmons-titans-frustration-trade-bears",
+          "title": "Jeffery Simmons Was Frustrated With Titans After Trade to Bears",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5MbuOHtDHpSIM7w9HJhz8y7PSXQ3kZ3HCyfQSeCn1Ey3bOJn66yntdln7V3s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRozHDYC3QDSEy9qcNG4dcze1ny4wXaodrvGcc5CudXFbHygrP6EuL6esprGvc"
         },
         {
-          "url": "https://www.saturdaydownsouth.com/news/college-football/pat-mcafee-arrives-to-college-gameday-set-on-horseback-cites-faa-delays/",
-          "title": "Pat McAfee arrives to College GameDay set on horseback, cites FAA delays",
-          "publisher": "Saturday Down South",
+          "url": "https://www.foxsports.com/watch/fmc-dlkh8jlp5aay0fko",
+          "title": "Jeffery Simmons on Bears’ Super Bowl chances, Caleb Williams & new team | FULL INTERVIEW | The Herd",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSp1SZwJHMK0pzNScsZkDKA4uP1pKGJyjsY2SLGFMGoF6rkU1heJs9z7nkkiow"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSw2ydB7SGjKqxf1uP-XNTh-UlxzabezRBwrD6V5qlionVkhReJZtTJu_aX8bU"
         }
       ]
     },
     {
-      "query": "elina svitolina",
+      "query": "gold",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T22:10:00Z",
+      "published_at": "2026-11-14T22:40:00Z",
       "related_news_urls": [
-        "https://kyivindependent.com/tsikhanouskaya-ally-condemns-belarusian-athlete-for-insulting-ukrainian-opponent-complacency-in-russias-war/",
-        "https://sports.yahoo.com/articles/sabalenka-sorry-outburst-svitolina-defeat-215629998.html",
-        "https://thespun.com/tennis/aryna-sabalenka-apologizes-after-showing-poor-sportsmanship-at-wta-finals"
+        "https://www.foxnews.com/travel/grandmother-mistakes-medieval-gold-cross-costume-jewelry-learning-five-figure-value",
+        "https://www.foxnews.com/video/6408359832112",
+        "https://www.nytimes.com/2026/11/14/nyregion/gold-bars-scam-new-york-city.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYx9vMPT6gpP7To5fDW9KBYfIS2IAYOZpv6LiDHRjdyxVHVTZI_uUqcZJNkB0",
-      "image_credit": "The Kyiv Independent",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw304MR2sZwSLxnelYvvGAur4yRAy_wO5PfcPPaB0epaBxNtOHDOSWY32uLLU",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://kyivindependent.com/tsikhanouskaya-ally-condemns-belarusian-athlete-for-insulting-ukrainian-opponent-complacency-in-russias-war/",
-          "title": "Tsikhanouskaya ally condemns Belarusian athlete for insulting Ukrainian opponent, complacency in Russia's war",
-          "publisher": "The Kyiv Independent",
+          "url": "https://www.foxnews.com/travel/grandmother-mistakes-medieval-gold-cross-costume-jewelry-learning-five-figure-value",
+          "title": "Grandmother mistakes medieval gold cross for costume jewelry before learning its five-figure value",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYx9vMPT6gpP7To5fDW9KBYfIS2IAYOZpv6LiDHRjdyxVHVTZI_uUqcZJNkB0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw304MR2sZwSLxnelYvvGAur4yRAy_wO5PfcPPaB0epaBxNtOHDOSWY32uLLU"
         },
         {
-          "url": "https://sports.yahoo.com/articles/sabalenka-sorry-outburst-svitolina-defeat-215629998.html",
-          "title": "Sabalenka sorry for outburst in Svitolina defeat",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.foxnews.com/video/6408359832112",
+          "title": "Henry VIII mystery emerges after grandmother unearths gold cross in field",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAn95vQSQK-jmSkyptUKqzMeG6w6FWxxbpmQBAttJWu2L-nR779CTJE_4kI-c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd3HMKS99R5-ATb2V9sUgM3bWFaHW6ad55dSNckmbcdeE4AYUsJP12XLHLdmM"
         },
         {
-          "url": "https://thespun.com/tennis/aryna-sabalenka-apologizes-after-showing-poor-sportsmanship-at-wta-finals",
-          "title": "Aryna Sabalenka Apologizes After Showing Poor Sportsmanship At WTA Finals",
-          "publisher": "The Spun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlEVdti_7gtVSJyF3p2mqTlI0-RYYsWQzAkO_Rm3Q5HNrfM_7GEaud2fz639s"
-        }
-      ]
-    },
-    {
-      "query": "weber state vs northern az",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T22:10:00Z",
-      "related_news_urls": [
-        "https://nauathletics.com/news/2026/11/13/saturdays-nau-football-kickoff-versus-weber-state-moved-back-to-4-pm.aspx",
-        "https://www.espn.com/espnplus/player/_/eventCalendarId/401868127",
-        "https://www.azcentral.com/story/sports/college/nau/2026/11/12/northern-arizona-football-eyes-revenge-red-rock-trophy-against-weber-state/92747718007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbQWJkB8TiwSLMDAPQHm6rMhNe7moZFuQ_x4Bxykxgtga6TaajlZP8DaG9wSY",
-      "image_credit": "Northern Arizona University Athletics",
-      "news": [
-        {
-          "url": "https://nauathletics.com/news/2026/11/13/saturdays-nau-football-kickoff-versus-weber-state-moved-back-to-4-pm.aspx",
-          "title": "Saturday’s NAU Football Kickoff Versus Weber State Moved Back to 4 p.m.",
-          "publisher": "Northern Arizona University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbQWJkB8TiwSLMDAPQHm6rMhNe7moZFuQ_x4Bxykxgtga6TaajlZP8DaG9wSY"
-        },
-        {
-          "url": "https://www.espn.com/espnplus/player/_/eventCalendarId/401868127",
-          "title": "Weber State vs. Northern Arizona",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIIS8CnYzasbpAMRNL8xqspDrHd0dfWACMlpP6JGWryLek5cCYQZFpUn7Q1I0"
-        },
-        {
-          "url": "https://www.azcentral.com/story/sports/college/nau/2026/11/12/northern-arizona-football-eyes-revenge-red-rock-trophy-against-weber-state/92747718007/",
-          "title": "No. 5 NAU Lumberjacks host Weber State seeking 5th straight win",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCvJmzNTWpA3ayHHAYSkgCHTCcr_Gc9NDwSC1OVoJ2-ASnPFKC0EtuqOEf2dc"
-        }
-      ]
-    },
-    {
-      "query": "linda nosková",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T22:10:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4609170/follow-live-a-semifinal-saturday-you-wont-want-to-miss-at-the-fage-wta-finals",
-        "https://www.nytimes.com/athletic/7750694/2026/11/13/wta-finals-2026-draw-prize-money-format-schedule/",
-        "https://www.reutersconnect.com/item/wta-finals-indian-wells/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkUxTUcwQUc"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSso4yiMBPlun0qZvjy80Xo_Al_n9BVSoHpu5LQ76-OOsmE4fe9xOK1cws15tA",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4609170/follow-live-a-semifinal-saturday-you-wont-want-to-miss-at-the-fage-wta-finals",
-          "title": "Follow live: A semifinal Saturday you won’t want to miss at the FAGE WTA Finals",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSso4yiMBPlun0qZvjy80Xo_Al_n9BVSoHpu5LQ76-OOsmE4fe9xOK1cws15tA"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7750694/2026/11/13/wta-finals-2026-draw-prize-money-format-schedule/",
-          "title": "WTA Finals 2026: Singles semifinals set after Elina Svitolina shocks Aryna Sabalenka - The Athletic",
+          "url": "https://www.nytimes.com/2026/11/14/nyregion/gold-bars-scam-new-york-city.html",
+          "title": "This Man Stole $9 Million in Gold Bars on the Upper West Side, Police Say",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0IqHtgcEZDTsPM29rkQ8pa7NBVLYHhSfxwH_eLRqAKH43izYAUP8DGCqCC0E"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/wta-finals-indian-wells/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkUxTUcwQUc",
-          "title": "Licensable picture: WTA Finals Indian Wells",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF0E4FDnLj237YQ8DBd4cvLGZoKSfbPrqIARnHlCWwL0Z33cJzgkU-gZGfWAc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZ89wyxiR_ryhgOp3_kTXga3f0YQo-Rn3521nHeS8_vLa3n86tT3mkPM7Gu-M"
         }
       ]
     },
     {
-      "query": "kelly monaco anniversary tribute heath freeman",
+      "query": "joe jonas",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T22:10:00Z",
+      "published_at": "2026-11-14T22:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/general-hospital-kelly-monaco-mourns-203213430.html",
-        "https://www.imdb.com/news/ni66111007/?ref_=nwc_art_perm",
-        "https://www.tvinsider.com/swooon/1312757/general-hospital-kelly-monaco-heath-freeman-love-story-tribute-video/"
+        "https://www.usmagazine.com/celebrity-news/news/joe-jonas-and-tatiana-gabriela-split-after-1-year-of-dating/",
+        "https://www.imdb.com/news/ni66111283/?ref_=nwc_art_perm",
+        "https://www.yahoo.com/entertainment/videos/joe-jonas-tatiana-gabriela-break-213809518.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStvntT2uRQ4emoBBqdKBddwV02zo973UBAeOc_ittAuxq-PUewPWoWsoTSEg",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sf90f7qFUACeoMTq3uVo4rrLfk_Z8YIIh28t5AvDxR2TpLst_kRu1ZptebA",
+      "image_credit": "Us Weekly",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/general-hospital-kelly-monaco-mourns-203213430.html",
-          "title": "General Hospital’s Kelly Monaco Mourns On a Heartbreaking Anniversary: ‘Missing a Piece of My Heart’",
-          "publisher": "Yahoo",
+          "url": "https://www.usmagazine.com/celebrity-news/news/joe-jonas-and-tatiana-gabriela-split-after-1-year-of-dating/",
+          "title": "Joe Jonas and Girlfriend Tatiana Gabriela Split After 1 Year of Dating: ‘Things Shifted’",
+          "publisher": "Us Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStvntT2uRQ4emoBBqdKBddwV02zo973UBAeOc_ittAuxq-PUewPWoWsoTSEg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sf90f7qFUACeoMTq3uVo4rrLfk_Z8YIIh28t5AvDxR2TpLst_kRu1ZptebA"
         },
         {
-          "url": "https://www.imdb.com/news/ni66111007/?ref_=nwc_art_perm",
-          "title": "‘General Hospital’s Kelly Monaco Remembers Heath Freeman: ‘Missing a Piece of My Heart’",
+          "url": "https://www.imdb.com/news/ni66111283/?ref_=nwc_art_perm",
+          "title": "Joe Jonas Splits from Girlfriend Tatiana Gabriela After Year of Dating",
           "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjctnWzA2jq5o14XlDml40ap8BS-r4PQDg5n5LCtRq42L37lVfW1dU1fhtMdo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrI9AGlX6enXbIVBQU0E91scDTDgZl6g9oxbZBVM5JwtTAqD92kvORr9T0kog"
         },
         {
-          "url": "https://www.tvinsider.com/swooon/1312757/general-hospital-kelly-monaco-heath-freeman-love-story-tribute-video/",
-          "title": "‘GH’s Kelly Monaco Remembers Her 'Love Story' With Heath Freeman",
-          "publisher": "TV Insider",
+          "url": "https://www.yahoo.com/entertainment/videos/joe-jonas-tatiana-gabriela-break-213809518.html",
+          "title": "Joe Jonas and Tatiana Gabriela Break Up 6 Months After Confirming Romance",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVNIvKa57ZkRjA0QJRYF0f2pVINXkcwCKphmlXN-B51TilN0_b5xUzFcHkmPU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTv-MtQEDSDuKH9drcb7Rtt2oVK1X5gkjmkP7ZOeaTihuIkA6WEhvyYgqzbMnk"
         }
       ]
     },
     {
-      "query": "ysu football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T22:10:00Z",
-      "related_news_urls": [
-        "https://www.wkbn.com/sports/ysu-football-and-basketball-game-schedules-changed-following-nationwide-ground-stop/",
-        "https://www.wfmj.com/news/local-news/ysu-changes-saturday-athletic-schedule-due-to-ground-stop/article_f6513627-526b-4091-a701-c4185dd8ddc7.html",
-        "https://herdzone.com/news/2026/11/13/mens-basketball-marshall-mens-basketballs-nov-14-game-time-switched-to-1-pm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx41X-q51s3UwbGubO326Rt-GlP10aJCZqUiHGxeIEADjjxewt72Zpjs-iFTY",
-      "image_credit": "WKBN.com",
-      "news": [
-        {
-          "url": "https://www.wkbn.com/sports/ysu-football-and-basketball-game-schedules-changed-following-nationwide-ground-stop/",
-          "title": "YSU football and basketball game schedules changed following nationwide ground stop",
-          "publisher": "WKBN.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx41X-q51s3UwbGubO326Rt-GlP10aJCZqUiHGxeIEADjjxewt72Zpjs-iFTY"
-        },
-        {
-          "url": "https://www.wfmj.com/news/local-news/ysu-changes-saturday-athletic-schedule-due-to-ground-stop/article_f6513627-526b-4091-a701-c4185dd8ddc7.html",
-          "title": "YSU changes Saturday athletic schedule due to ground stop",
-          "publisher": "WFMJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5ugl0aaRHUfvOXHmxZLqtlpdYOJNVyYoK8FDMuVlTdPDUwULRumppRN37g"
-        },
-        {
-          "url": "https://herdzone.com/news/2026/11/13/mens-basketball-marshall-mens-basketballs-nov-14-game-time-switched-to-1-pm",
-          "title": "Marshall Men’s Basketball’s Nov. 14 Game-Time Switched To 1 p.m.",
-          "publisher": "Marshall University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2DNVPR_S9jHqhJ9XtZNxIuWhiqc7-Vcj71J0959F-IKWxtD9Au8ZoO3PCXPI"
-        }
-      ]
-    },
-    {
-      "query": "app state vs marshall",
+      "query": "boa grand nationals 2026",
       "approx_searches": "1000+",
-      "published_at": "2026-11-14T22:00:00Z",
+      "published_at": "2026-11-14T22:40:00Z",
       "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/ncaaf/appalachian-state-mountaineers-vs-marshall-thundering-herd-prediction-odds-2026-11-14/",
-        "https://247sports.com/college/marshall/article/game-thread-app-state-292639381/",
-        "https://herdzone.com/news/2026/11/13/marshall-football-hosts-app-state-at-6-pm-on-saturday"
+        "https://www.indystar.com/story/entertainment/music/2026/11/14/2026-boa-grand-nationals-semifinals-schedule-lucas-oil-stadium-indianapolis/92246113007/",
+        "https://fox59.com/indiana-news/bands-of-america-grand-national-championships-return-to-lucas-oil-stadium/",
+        "https://www.wral.com/news/local/green-level-high-school-marching-band-compete-grand-national-championship/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0",
-      "image_credit": "Sportsgambler",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb4mC8W4TH_-JWwkfllTCPq5YeD9RyYk2UJXlS9BrIFp-JNc64FH7WV02G5VI",
+      "image_credit": "IndyStar",
       "news": [
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/appalachian-state-mountaineers-vs-marshall-thundering-herd-prediction-odds-2026-11-14/",
-          "title": "Appalachian State vs Marshall Prediction, Picks & Odds | 14 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.indystar.com/story/entertainment/music/2026/11/14/2026-boa-grand-nationals-semifinals-schedule-lucas-oil-stadium-indianapolis/92246113007/",
+          "title": "See who's competing in 2026 BOA Grand National Championships semifinals",
+          "publisher": "IndyStar",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb4mC8W4TH_-JWwkfllTCPq5YeD9RyYk2UJXlS9BrIFp-JNc64FH7WV02G5VI"
         },
         {
-          "url": "https://247sports.com/college/marshall/article/game-thread-app-state-292639381/",
-          "title": "Game Thread: App State",
+          "url": "https://fox59.com/indiana-news/bands-of-america-grand-national-championships-return-to-lucas-oil-stadium/",
+          "title": "Bands of America Grand National Championships return to Lucas Oil Stadium",
+          "publisher": "Fox 59",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0P8gvj5MkkKBnKfqCmPjfsa-drP6JdI_CBez9xB-ahSp_ayh37A4fPPVOAsU"
+        },
+        {
+          "url": "https://www.wral.com/news/local/green-level-high-school-marching-band-compete-grand-national-championship/",
+          "title": "Green Level High School's marching band to compete in Grand National Championship",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr7n0N7J45p1cLbf7SfQfyZ5z2MSfibf8ZtypPI8yuq2FSvKCk1mDH7UzCHFg"
+        }
+      ]
+    },
+    {
+      "query": "querétaro vs monterrey",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T22:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17499550/queretaro-vs-monterrey-como-afecta-pumas-liguilla",
+        "https://www.facebook.com/MilenioDiario/posts/-imperdiblecheca-a-qu%C3%A9-hora-y-en-d%C3%B3nde-ver-el-quer%C3%A9taro-vs-monterrey-de-la-liga-/1681443350679796/",
+        "https://www.reforma.com/va-rayados-con-de-la-rosa-de-titular/ar3314868?redirectcancha=1"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaSjsNpLSA5tXA7IMmjxn230d8Zh8HQphZedJujbb26sJXCtXN1jJpE1GOImM",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17499550/queretaro-vs-monterrey-como-afecta-pumas-liguilla",
+          "title": "Querétaro vs Monterrey: ¿Cómo afecta a Pumas y Liguilla?",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaSjsNpLSA5tXA7IMmjxn230d8Zh8HQphZedJujbb26sJXCtXN1jJpE1GOImM"
+        },
+        {
+          "url": "https://www.facebook.com/MilenioDiario/posts/-imperdiblecheca-a-qu%C3%A9-hora-y-en-d%C3%B3nde-ver-el-quer%C3%A9taro-vs-monterrey-de-la-liga-/1681443350679796/",
+          "title": "⚽ ¡Imperdible! Checa a qué HORA y en DÓNDE VER el Querétaro vs Monterrey de la Liga MX 🐔🆚🤠",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCrgp6gzc_Eq_v0BoXxubbZf_cY9PshjKQeDrNsr71uZJyh5Q6x2hu69lGcy8"
+        },
+        {
+          "url": "https://www.reforma.com/va-rayados-con-de-la-rosa-de-titular/ar3314868?redirectcancha=1",
+          "title": "Va Rayados con De la Rosa de titular",
+          "publisher": "Reforma",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7pDxby7SmtvEHKKlQTLoChqDj0n9tSEBagUzNMH-dvM7Di1sjFJstxbPNeyU"
+        }
+      ]
+    },
+    {
+      "query": "juan diaz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T22:30:00Z",
+      "related_news_urls": [
+        "https://www.ole.com.ar/artes-marciales/juan-pegajoso-diaz-ufc-peru-argentina-cordoba-cuarteto-peso-gallo_0_ZkneSUH4Pp.html",
+        "https://www.infobae.com/peru/deportes/2026/11/13/juan-pegajoso-diaz-no-dio-el-peso-para-su-pelea-en-la-ufc-334-combate-sigue-en-pie-y-el-20-de-su-bolsa-sera-destinada-a-su-rival/",
+        "https://bolavip.com/pe/deportes/a-que-hora-pelea-juan-pegajoso-diaz-ante-alatengheili-en-la-ufc-334-donde-ver-y-cartelera-completa"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAUtzYMffad526P1vdlRV0VlP-BA7ojP96Kf9sOUsY9orIH5nqi91ljQHE7zs",
+      "image_credit": "Olé",
+      "news": [
+        {
+          "url": "https://www.ole.com.ar/artes-marciales/juan-pegajoso-diaz-ufc-peru-argentina-cordoba-cuarteto-peso-gallo_0_ZkneSUH4Pp.html",
+          "title": "Nació en Perú, vivió su adolescencia en la Argentina, escucha a La Mona y a Ulises y va por su segunda pelea en la UFC",
+          "publisher": "Olé",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAUtzYMffad526P1vdlRV0VlP-BA7ojP96Kf9sOUsY9orIH5nqi91ljQHE7zs"
+        },
+        {
+          "url": "https://www.infobae.com/peru/deportes/2026/11/13/juan-pegajoso-diaz-no-dio-el-peso-para-su-pelea-en-la-ufc-334-combate-sigue-en-pie-y-el-20-de-su-bolsa-sera-destinada-a-su-rival/",
+          "title": "Juan ‘Pegajoso’ Díaz no dio el peso para su pelea en la UFC 334: combate sigue en pie y el 20% de su bolsa será destinada a su rival",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGsVxpXdozmxvIzAdgmyv7au3PqrjIJGKt9v2_IQvuiry3NSyai9Lne8OV-w"
+        },
+        {
+          "url": "https://bolavip.com/pe/deportes/a-que-hora-pelea-juan-pegajoso-diaz-ante-alatengheili-en-la-ufc-334-donde-ver-y-cartelera-completa",
+          "title": "¿A qué hora pelea Juan ‘Pegajoso’ Díaz ante Alatengheili en la UFC 334? Dónde ver y cartelera completa",
+          "publisher": "Bolavip Perú",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5KLKhXAlOdxxpydruOLasz9cqNrbSNEYLI4FbdOPCTKPnn77Aa6lFcCyPW4Q"
+        }
+      ]
+    },
+    {
+      "query": "faizon brandon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T22:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/george-macintyre-injury-tennessee-qb-222039656.html",
+        "https://sports.yahoo.com/articles/tennessee-football-qb-george-macintyre-221252060.html",
+        "https://247sports.com/article/faizon-brandon-replaces-george-macintyre-at-quarterback-in-tennessee-football-game-at-texas-am-aggies-josh-heupel-292718162/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEXjjbuVOX1i_oAB_rU02CXxikBGZYBRkCECRAeaRm6NbEvvRwMvm7jqGPwyI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/george-macintyre-injury-tennessee-qb-222039656.html",
+          "title": "George MacIntyre injury update: Tennessee QB leaves Texas A&M game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEXjjbuVOX1i_oAB_rU02CXxikBGZYBRkCECRAeaRm6NbEvvRwMvm7jqGPwyI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/tennessee-football-qb-george-macintyre-221252060.html",
+          "title": "Tennessee football QB George MacIntyre leaves Texas A&M game after hard hit",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3DDqFGIv5jzBlZ25M_Di3CqOCP4dId34PkQ8bR5yyNCw7xn2DvaKf7JObp4M"
+        },
+        {
+          "url": "https://247sports.com/article/faizon-brandon-replaces-george-macintyre-at-quarterback-in-tennessee-football-game-at-texas-am-aggies-josh-heupel-292718162/",
+          "title": "Faizon Brandon replaces George MacIntyre at quarterback in Tennessee's game at Texas A&M",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSavSLSyR40hnkbE1qljnKD8N0Ukou95XsC7Z7S_Q2H_EWCMh6hqBkXNAw9LKM"
-        },
-        {
-          "url": "https://herdzone.com/news/2026/11/13/marshall-football-hosts-app-state-at-6-pm-on-saturday",
-          "title": "Marshall Football Hosts App State At 6 p.m. On Saturday",
-          "publisher": "Marshall University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4R2aKRIjIjEJg3yGQmRLTULQY0iZK5nMx7ujqwdDdQ-9uRS7R6oFsvgMdtJE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcTCl6Q_Z8E6Jq5I3o9yp5vfFOH-W0tEgSwNfw192SqnfI3yHkiXLU60pz07o"
         }
       ]
     },
     {
-      "query": "league 2",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T22:00:00Z",
+      "query": "high potential",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T22:30:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c8vgxg1re3q1t",
-        "https://www.essexcountynews.co.uk/sport/national/26729871.peter-cklamovski-frustrated-salfords-disjointed-first-half/",
-        "https://www.northamptonchron.co.uk/sport/football/mixed-emotions-for-hogg-after-cobblers-hold-the-league-leaders-9351329"
+        "https://www.eonline.com/news/1438090/abcs-high-potential-reveals-january-2027-season-3-premiere-date",
+        "https://www.tvline.com/2316654/high-potential-season-3-release-date-cast-details-abc/",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/high-potential-fans-losing-over-151600860.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYcRbGaH-RqfHSYABOydL58VWN-5uDji-DtRJ-4E49yAsuw9QQj3soCmzm0QY",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAu14r7W0zht9pE1eFDG04gM_UhNFseWJGXeZQREsRkKn-ucpa96RZSkRpxR4",
+      "image_credit": "E! News",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c8vgxg1re3q1t",
-          "title": "Salford City 1-1 Northampton Town: League Two leaders held at home",
-          "publisher": "BBC",
+          "url": "https://www.eonline.com/news/1438090/abcs-high-potential-reveals-january-2027-season-3-premiere-date",
+          "title": "High Potential Reveals Season 3 Premiere Date on ABC",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYcRbGaH-RqfHSYABOydL58VWN-5uDji-DtRJ-4E49yAsuw9QQj3soCmzm0QY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAu14r7W0zht9pE1eFDG04gM_UhNFseWJGXeZQREsRkKn-ucpa96RZSkRpxR4"
         },
         {
-          "url": "https://www.essexcountynews.co.uk/sport/national/26729871.peter-cklamovski-frustrated-salfords-disjointed-first-half/",
-          "title": "Peter Cklamovski frustrated with Salford’s ‘disjointed first half’",
-          "publisher": "www.essexcountynews.co.uk",
+          "url": "https://www.tvline.com/2316654/high-potential-season-3-release-date-cast-details-abc/",
+          "title": "High Potential Season 3: Everything We Know So Far",
+          "publisher": "TVLine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQXwO4XJuunW5vLljupEipf3cK4ANYrvaeJmoVMG6wyW9GFqLabsVqcaM0A-g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIXERh8CzcJXGpTJD1TkmxKeZ--g6DBq_NwLBlK0qpqPrlvU4AENsOCW5hn1U"
         },
         {
-          "url": "https://www.northamptonchron.co.uk/sport/football/mixed-emotions-for-hogg-after-cobblers-hold-the-league-leaders-9351329",
-          "title": "Mixed emotions for Hogg after Cobblers hold the league leaders",
-          "publisher": "Northampton Chronicle and Echo",
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/high-potential-fans-losing-over-151600860.html",
+          "title": "‘High Potential’ Fans Are Losing It Over the Show’s Epic Announcement About Season 3",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQZH6Yey91Tjyp_Gahcsl7Tb5JwMhp6b2LVptQFMJMYvDezVnyBKDcS6S2xo8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQodbGQwtTaFGrB3WAGLYuXHR80NiR4mZWv3EIv9KvFdTMgfaQdZ_Ss_RAqTQ4"
         }
       ]
     },
     {
-      "query": "protect college sports act",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T22:00:00Z",
+      "query": "paramount",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T22:20:00Z",
       "related_news_urls": [
-        "https://www.wsj.com/sports/randy-levine-yankees-trump-protect-college-sports-act-6e118a2c",
-        "https://www.ms.now/opinion/protect-college-sports-act-democrats-midterms-trump",
-        "https://www.cnbc.com/2026/11/12/yankees-randy-levine-discusses-college-sports-bill-mlb-labor-deal.html"
+        "https://deadline.com/2026/11/box-office-ebenezer-1237222749/",
+        "https://www.yahoo.com/entertainment/movies/articles/why-d-sense-johnny-depp-222912753.html",
+        "https://www.wsj.com/arts-culture/film/ebenezer-review-johnny-depp-steps-into-scrooges-slippers-983b0417"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM_dDhEbh5p08U4HEHacpcZEk_DNt0NFkLU5roOcPsCIFN9C81YV87W8ocYaU",
-      "image_credit": "WSJ",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvkVE92s4ek0L5srwAwZIklHBnD7_Y_g9WJlAABLZnpanCWANl_8thu84ScBY",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://www.wsj.com/sports/randy-levine-yankees-trump-protect-college-sports-act-6e118a2c",
-          "title": "The Top Yankees Executive at the Center of College Sports’ Big Fight",
+          "url": "https://deadline.com/2026/11/box-office-ebenezer-1237222749/",
+          "title": "Johnny Depp Pic ‘Ebenezer’ Hoping For $20M+ U.S. – Saturday AM Box Office Update",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvkVE92s4ek0L5srwAwZIklHBnD7_Y_g9WJlAABLZnpanCWANl_8thu84ScBY"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/why-d-sense-johnny-depp-222912753.html",
+          "title": "Why It’d Make Sense For Johnny Depp’s ‘Ebenezer’ To Break With Paramount’s Streaming Strategy",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxNwbOdLt3Kjw11YyLVx-zTCmacq3_UsNKqiyERF5Z5PRjmCuwQYGafClvEHc"
+        },
+        {
+          "url": "https://www.wsj.com/arts-culture/film/ebenezer-review-johnny-depp-steps-into-scrooges-slippers-983b0417",
+          "title": "‘Ebenezer’ Review: Johnny Depp Steps Into Scrooge’s Slippers",
           "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM_dDhEbh5p08U4HEHacpcZEk_DNt0NFkLU5roOcPsCIFN9C81YV87W8ocYaU"
-        },
-        {
-          "url": "https://www.ms.now/opinion/protect-college-sports-act-democrats-midterms-trump",
-          "title": "Opinion | Democrats’ blue wave has doused Trump’s college sports hopes",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqdgq7l0rL0sewphxKtKBbOoxFyfiDK0an7-xi_1Qha6wTmXL-ZSxHIRS02D4"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/12/yankees-randy-levine-discusses-college-sports-bill-mlb-labor-deal.html",
-          "title": "Yankees President Randy Levine pushes college sports bill, discusses MLB labor negotiations",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWXkyh87HRjJNKeK62GcOnDkT8ST8mzHXgq8SI1VN5xVfOFSvL5XdmbhYsJQc"
-        }
-      ]
-    },
-    {
-      "query": "lehigh football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T22:00:00Z",
-      "related_news_urls": [
-        "https://www.mcall.com/2026/11/13/patriot-league-football-the-ayache-family-will-be-busy-saturday-as-becahi-lehigh-have-big-games/",
-        "https://www.college-sports-journal.com/game-eleven-lehigh-at-richmond-spiders-strive-to-spoil-mountain-hawk-threepeat/",
-        "https://pafootballnews.com/lehigh-travels-to-richmond-for-patriot-league-showdown-with-spiders/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHlslDxn0pcnk91ix-eHfrIuQp753zDgViID7WY5Gp2_N-_zohJ2kRZtJOxSg",
-      "image_credit": "The Morning Call",
-      "news": [
-        {
-          "url": "https://www.mcall.com/2026/11/13/patriot-league-football-the-ayache-family-will-be-busy-saturday-as-becahi-lehigh-have-big-games/",
-          "title": "Patriot League football: The Ayache family will be busy Saturday as Becahi, Lehigh have big games",
-          "publisher": "The Morning Call",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHlslDxn0pcnk91ix-eHfrIuQp753zDgViID7WY5Gp2_N-_zohJ2kRZtJOxSg"
-        },
-        {
-          "url": "https://www.college-sports-journal.com/game-eleven-lehigh-at-richmond-spiders-strive-to-spoil-mountain-hawk-threepeat/",
-          "title": "GAME ELEVEN, LEHIGH AT RICHMOND – Spiders Strive to Spoil Mountain Hawk Threepeat",
-          "publisher": "College Sports Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD6aQyBrprNC4KWwg5gw6VgY4Cgc_6IvZJ4QcGi_HYHXgzpQgfASPjPaU2a5c"
-        },
-        {
-          "url": "https://pafootballnews.com/lehigh-travels-to-richmond-for-patriot-league-showdown-with-spiders/",
-          "title": "Lehigh Travels to Richmond for Patriot League Showdown with Spiders",
-          "publisher": "PA Football News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7s_GVI_VDx30Z2wrvdFa6uJYYp5I_9MEdsq-qkg_cSjJp11gy46rc003OokE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpSYctinYRdKCPYE5KZyaySR_496gLIahOl18oLCZdxqxkajhFmYkmgMFf7eM"
         }
       ]
     }
