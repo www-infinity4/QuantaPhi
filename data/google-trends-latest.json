@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T21:31:07.744217Z",
+  "checked_at": "2026-11-14T22:01:28.075996Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "southern miss vs la tech",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T21:10:00Z",
+      "query": "banfield - boca juniors",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T21:40:00Z",
       "related_news_urls": [
-        "https://lincolnparishjournal.com/2026/11/14/bulldogs-look-to-clinch-sun-belt-west-title-against-longtime-rival/",
-        "https://www.si.com/college/southernmiss/the-55th-edition-of-the-rivalry-in-dixie-key-matchups-southern-miss-storylines-and-more",
-        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2pvbm9uaXR2cy5naXRodWIuaW8vcmFqL2N0LnhtbCIvPjwva3JwYW5vPg==&id=video-livestream-southern-miss-vs-c8miquo4"
+        "https://www.tycsports.com/copa-argentina/argentina-copa-argentina-2026-banfield-vs-boca-juniors-semifinal-1-id771386.html",
+        "https://www.clarin.com/deportes/llegada-boca-banfield-malvinas-argentinas_3_duc9hh58a0.html",
+        "https://www.lanacion.com.ar/deportes/futbol/boca-vs-banfield-en-vivo-nid14112026/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSac7zDeB7Z57cwBjsv1SRUAsXI0qiggmtQH5DVhVTtrdrvTMe9vFQP3ms4Uu8",
-      "image_credit": "Lincoln Parish Journal",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0JoI6A7wwncMQEN7NuT9aOYZ-hJkqgjbS0_D9gLez_58XYzfsWAFvvbB-hl0",
+      "image_credit": "TyC Sports",
       "news": [
         {
-          "url": "https://lincolnparishjournal.com/2026/11/14/bulldogs-look-to-clinch-sun-belt-west-title-against-longtime-rival/",
-          "title": "Bulldogs look to clinch Sun Belt West title against longtime rival",
-          "publisher": "Lincoln Parish Journal",
+          "url": "https://www.tycsports.com/copa-argentina/argentina-copa-argentina-2026-banfield-vs-boca-juniors-semifinal-1-id771386.html",
+          "title": "Banfield vs. Boca, por la Copa Argentina: seguilo EN VIVO",
+          "publisher": "TyC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSac7zDeB7Z57cwBjsv1SRUAsXI0qiggmtQH5DVhVTtrdrvTMe9vFQP3ms4Uu8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0JoI6A7wwncMQEN7NuT9aOYZ-hJkqgjbS0_D9gLez_58XYzfsWAFvvbB-hl0"
         },
         {
-          "url": "https://www.si.com/college/southernmiss/the-55th-edition-of-the-rivalry-in-dixie-key-matchups-southern-miss-storylines-and-more",
-          "title": "The 55th Edition of the Rivalry in Dixie: Key Matchups, Southern Miss Storylines, and More",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.clarin.com/deportes/llegada-boca-banfield-malvinas-argentinas_3_duc9hh58a0.html",
+          "title": "Video La llegada de Boca y Banfield al Malvinas Argentinas",
+          "publisher": "Clarín",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf8V7KYalYz8wuYvOj4mDkE-toU6cB3ytxeXnNa7FnMzfnsMv1dFo4UcOHze0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyGK0cYvnT_bizrZtbXbR4i_dltjQbQQRzUOuOKsUY_Ngi6X4e4ZpPLUWOZY8"
         },
         {
-          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2pvbm9uaXR2cy5naXRodWIuaW8vcmFqL2N0LnhtbCIvPjwva3JwYW5vPg==&id=video-livestream-southern-miss-vs-c8miquo4",
-          "title": "[#LIVESTREAm]+! Southern Miss vs Louisiana Tech Live Free Saturday Night Football - Nov. 14",
-          "publisher": "日本取引所グループ",
+          "url": "https://www.lanacion.com.ar/deportes/futbol/boca-vs-banfield-en-vivo-nid14112026/",
+          "title": "Boca vs. Banfield, en vivo: la semifinal de la Copa Argentina",
+          "publisher": "La Nación",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTViAuz74yecJjjjZ_96jnvxu0nQSSourWGeRNkYQNOdEM8OifAzVnEZUNJ-mk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeFKnUMduvsF4CibvOvKU0EGwJYLCbB7F9yyBng136KrbRxalDwpKKi1HsQrU"
         }
       ]
     },
     {
-      "query": "coastal carolina football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T21:10:00Z",
+      "query": "ihsa football playoffs",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T21:40:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/sports/ncaaf/event/2026/2973254/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=5",
-        "https://uwbadgers.com/news/2026/11/13/mens-basketball-five-things-to-know-badgers-wrap-up-homestand-vs-coastal-carolina",
-        "https://sports.yahoo.com/articles/wisconsin-badgers-play-coastal-carolina-094321691.html"
+        "https://www.pjstar.com/story/sports/high-school/football/2026/11/13/ihsa-playoffs-statewide-illinois-high-school-football-quarterfinal-scores/92736310007/",
+        "https://chicago.suntimes.com/high-school-football/2026/11/13/previewing-the-top-ihsa-football-quarterfinal-playoff-games",
+        "https://sports.yahoo.com/articles/illinois-high-school-football-live-180503259.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ2ealm3U-z5DI2Zm4WthtIT8rogsNRoPTgi83W2uHYFT_Lx0iYvyACw3_oG0",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ4PsgsSQxFoG0X7FonfxOjMxKWel-TF1uT6jjy_0jdN_NAAaaFC6zanjQyQE",
+      "image_credit": "Peoria Journal Star",
       "news": [
         {
-          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2973254/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=5",
-          "title": "Arkansas State Red Wolves at Coastal Carolina Chanticleers - NCAAF Game Summary - Nov 14, 2026",
-          "publisher": "USA Today",
+          "url": "https://www.pjstar.com/story/sports/high-school/football/2026/11/13/ihsa-playoffs-statewide-illinois-high-school-football-quarterfinal-scores/92736310007/",
+          "title": "IHSA football playoffs: Live, updated statewide scores in Illinois | Quarterfinals",
+          "publisher": "Peoria Journal Star",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ2ealm3U-z5DI2Zm4WthtIT8rogsNRoPTgi83W2uHYFT_Lx0iYvyACw3_oG0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ4PsgsSQxFoG0X7FonfxOjMxKWel-TF1uT6jjy_0jdN_NAAaaFC6zanjQyQE"
         },
         {
-          "url": "https://uwbadgers.com/news/2026/11/13/mens-basketball-five-things-to-know-badgers-wrap-up-homestand-vs-coastal-carolina",
-          "title": "Five Things to Know: Badgers wrap up homestand vs. Coastal Carolina",
-          "publisher": "Wisconsin Badgers",
+          "url": "https://chicago.suntimes.com/high-school-football/2026/11/13/previewing-the-top-ihsa-football-quarterfinal-playoff-games",
+          "title": "Previewing the top IHSA football playoff quarterfinals",
+          "publisher": "Chicago Sun-Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LXljflO-_vF1yf6ULAIon1Fsv6tYyIfjVO0ZJ5iihLVYyC4EnWCSLtwPvvg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSe0WqAFQHb09cLbWvvzRTxGHTheYheOU8n5D6DedVOyo87FmNKtYl73uDBDqI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/wisconsin-badgers-play-coastal-carolina-094321691.html",
-          "title": "Wisconsin Badgers play the Coastal Carolina Chanticleers on 3-game win streak",
+          "url": "https://sports.yahoo.com/articles/illinois-high-school-football-live-180503259.html",
+          "title": "Illinois high school football: Live updates from Peoria-area IHSA quarterfinal playoff games",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEHkjsDlghGGoSHUAab4uHGcmdEajSBa3hwPv7KoqKkQu3jGYzRy4uha6HGeE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufnCJnlNjF7VMKKTVOMal6Lsl9TQJ6G5iuQtKrDhbSGnfB2HBnQPWSVCbgkI"
         }
       ]
     },
     {
-      "query": "dante moore",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T21:10:00Z",
+      "query": "evacuación",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T21:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/dante-moore-shares-nil-partner-120200670.html",
-        "https://athlonsports.com/college-football/dante-moore-shares-new-nil-partner-amid-oregon-season",
-        "https://heavy.com/sports/college-football/oregon-ducks/oregon-dante-moore-dylan-raiola-michigan/"
+        "https://www.telemundo.com/noticias/noticias-telemundo/estados-unidos/hallan-una-bomba-cerca-de-una-planta-de-etanol-en-illinois-y-ordenan-e-rcna609318",
+        "https://palabrasclaras.mx/politica/amenaza-de-bomba-en-planta-industrial-obliga-a-evacuar-viviendas-y-negocios-en-illinois/",
+        "https://gamavision.com/noticias/desalojan-a-5-mil-personas-tras-hallazgo-de-una-bomba-en-planta-de-etanol-en-illinois"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHy9vO81RqDeXcC7_LE5CT9ZYnxJOMGqQHRmcKkGpzS46_fX7aKcmXFlE8B4Y",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vAI0FKokWmYJzAX_pWu05LTD1C7JPcu47At58V0bBMrO0O0hGTI_mnauqnI",
+      "image_credit": "Telemundo",
+      "news": [
+        {
+          "url": "https://www.telemundo.com/noticias/noticias-telemundo/estados-unidos/hallan-una-bomba-cerca-de-una-planta-de-etanol-en-illinois-y-ordenan-e-rcna609318",
+          "title": "Hallan una bomba cerca de una planta de etanol en Illinois y ordenan evacuar a los residentes de la zona",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vAI0FKokWmYJzAX_pWu05LTD1C7JPcu47At58V0bBMrO0O0hGTI_mnauqnI"
+        },
+        {
+          "url": "https://palabrasclaras.mx/politica/amenaza-de-bomba-en-planta-industrial-obliga-a-evacuar-viviendas-y-negocios-en-illinois/",
+          "title": "Amenaza de bomba en planta industrial obliga a evacuar viviendas y negocios en Illinois",
+          "publisher": "PalabrasClaras.mx",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZrOyeorOQCcQOavIcyN2abBSrWi0xaTU8vPzm2AkWHJqDCznKUfXSWfpqtzg"
+        },
+        {
+          "url": "https://gamavision.com/noticias/desalojan-a-5-mil-personas-tras-hallazgo-de-una-bomba-en-planta-de-etanol-en-illinois",
+          "title": "Desalojan a 5 mil personas tras hallazgo de una bomba en planta de etanol en Illinois",
+          "publisher": "gamavisión",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAmwNpR-BqoMB2deP5U8qCtkTqfKODXzVL1z9pCv7k5H9JYajhRlNjF6HSVSY"
+        }
+      ]
+    },
+    {
+      "query": "washington vs mi state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T21:30:00Z",
+      "related_news_urls": [
+        "https://www.wilx.com/2026/11/14/msu-washington-football-kickoff-time-pushed-back/",
+        "https://www.seattletimes.com/sports/washington-huskies-football/washington-huskies-at-michigan-state-live-updates-score-kickoff-time/",
+        "https://www.freep.com/story/sports/2026/11/13/which-detroit-and-michigan-sports-teams-are-stranded-by-faa-grounding/92768580007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5Aiu4-s8ZH7abM1Zfo8oT0rowAP2bAZ9PjQRn9FrW8GeMhaU8xN7_GGjoTqI",
+      "image_credit": "WILX",
+      "news": [
+        {
+          "url": "https://www.wilx.com/2026/11/14/msu-washington-football-kickoff-time-pushed-back/",
+          "title": "MSU-Washington football kickoff time pushed back",
+          "publisher": "WILX",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5Aiu4-s8ZH7abM1Zfo8oT0rowAP2bAZ9PjQRn9FrW8GeMhaU8xN7_GGjoTqI"
+        },
+        {
+          "url": "https://www.seattletimes.com/sports/washington-huskies-football/washington-huskies-at-michigan-state-live-updates-score-kickoff-time/",
+          "title": "Live: Updates: Delayed Huskies will fight for bowl eligibility at Michigan State",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoeSfsooi6qThpmvJl_c7vn3IsHihU5dgPN_yzJMeKgtCHq2whVn9riO-RPFw"
+        },
+        {
+          "url": "https://www.freep.com/story/sports/2026/11/13/which-detroit-and-michigan-sports-teams-are-stranded-by-faa-grounding/92768580007/",
+          "title": "Which Detroit and Michigan sports teams are stranded by FAA grounding?",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRmss4tR1-KqGO_QNoreItAfs1DrHLanFYzNk0BT06Yg0my1v9N0C5vXECzn0"
+        }
+      ]
+    },
+    {
+      "query": "arizona state vs ucf",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T21:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ucf-football-vs-arizona-state-193042011.html",
+        "https://247sports.com/college/arizona-state/article/asu-football-ucf-kenny-dillingham-scott-frost-jake-fette-orlando-florida-big-12-conference-reed-harris-alonza-barnett-iii-keyone-jenkins-292618227/",
+        "https://www.si.com/college/ucf/football/how-to-watch-ucf-knights-vs-arizona-state-sun-devils-tv-channel-kickoff-time-everything-you-need-to-know-scott-frost-lewis-carter-mikey-keene-faa-ground-stop-01m7bsyw2hs1"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQElo2ykmWjxNMFrCnOAs6WImhnPPY_Jb5zi0lR6rrs0H0ZxTFKb0fxVVTPGTc",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/dante-moore-shares-nil-partner-120200670.html",
-          "title": "Dante Moore Shares New NIL Partner Amid Oregon Season",
+          "url": "https://sports.yahoo.com/articles/ucf-football-vs-arizona-state-193042011.html",
+          "title": "UCF football vs Arizona State live updates: Start time, TV, predictions",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHy9vO81RqDeXcC7_LE5CT9ZYnxJOMGqQHRmcKkGpzS46_fX7aKcmXFlE8B4Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQElo2ykmWjxNMFrCnOAs6WImhnPPY_Jb5zi0lR6rrs0H0ZxTFKb0fxVVTPGTc"
         },
         {
-          "url": "https://athlonsports.com/college-football/dante-moore-shares-new-nil-partner-amid-oregon-season",
-          "title": "Dante Moore Announces Career Move After 6th Oregon Win",
-          "publisher": "Athlon Sports",
+          "url": "https://247sports.com/college/arizona-state/article/asu-football-ucf-kenny-dillingham-scott-frost-jake-fette-orlando-florida-big-12-conference-reed-harris-alonza-barnett-iii-keyone-jenkins-292618227/",
+          "title": "ASU vs UCF: How to watch, betting lines, staff picks, depth chart",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3GYG9bj_skCdlrQ7Tql55oZRmjnd_xKUzLgLVoCeBrDLIldThPGK-pzrFwA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbN5AVZEXb1r3rpeU8V7iQmsScA1p0eTPB89c-1eLydzV6BnxAwqUaFG0NNo8"
         },
         {
-          "url": "https://heavy.com/sports/college-football/oregon-ducks/oregon-dante-moore-dylan-raiola-michigan/",
-          "title": "Why Isn’t Oregon QB Dante Moore Playing Today vs Michigan? Dylan Raiola Starts",
-          "publisher": "Heavy.com",
+          "url": "https://www.si.com/college/ucf/football/how-to-watch-ucf-knights-vs-arizona-state-sun-devils-tv-channel-kickoff-time-everything-you-need-to-know-scott-frost-lewis-carter-mikey-keene-faa-ground-stop-01m7bsyw2hs1",
+          "title": "How to Watch UCF Knights vs. Arizona State: TV Channel, Kickoff Time, and Everything You Need To Know",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3judeGaFDcNlnL1BGTqKYElqQbWVfj3Nh5Xv9SlqhnflcgA5z3vea-1zB--E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDuKlC2iR_6WRX78zE6Qk609Q7id46_YV24cL8IW0iQAFZ00-YgdFKMEJlG2Q"
         }
       ]
     },
     {
-      "query": "nate frazier",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T21:10:00Z",
+      "query": "julian hall",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T21:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50462413/connelly-previews-week-11-texas-lsu",
-        "https://sports.yahoo.com/college-football/betting/article/college-football-week-11-picks-odds-2-best-bets-for-this-weeks-games-172025052.html",
-        "https://www.nytimes.com/athletic/7776674/2026/11/13/college-football-top-games-week-11/"
+        "https://www.espn.com/soccer/story/_/id/50482590/julian-hall-usa-poland-haiti-fifa-nations-league-concacaf",
+        "https://sports.yahoo.com/articles/julian-hall-cap-tied-usmnt-204331110.html",
+        "https://www.usatoday.com/story/sports/soccer/usmnt/2026/11/14/julian-hall-cap-tied-usmnt-poland/92748412007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzUEgc3W4Q2SKinKuyA9svrsr1t9wrivf7I-TJTGj_Qc0lFEWoVrjmhqL4itM",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlosKthIvUfK-ciMAZ1_iWp3f1V-Fh53UVF__FV8RPehpogFyfjT7A9LpsRhY",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50462413/connelly-previews-week-11-texas-lsu",
-          "title": "Connelly previews Week 11 - 32 make-or-break showdowns",
+          "url": "https://www.espn.com/soccer/story/_/id/50482590/julian-hall-usa-poland-haiti-fifa-nations-league-concacaf",
+          "title": "Dual-national Julian Hall officially tied to USMNT with appearance vs. Haiti",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzUEgc3W4Q2SKinKuyA9svrsr1t9wrivf7I-TJTGj_Qc0lFEWoVrjmhqL4itM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlosKthIvUfK-ciMAZ1_iWp3f1V-Fh53UVF__FV8RPehpogFyfjT7A9LpsRhY"
         },
         {
-          "url": "https://sports.yahoo.com/college-football/betting/article/college-football-week-11-picks-odds-2-best-bets-for-this-weeks-games-172025052.html",
-          "title": "College football Week 11 picks, odds: 2 best bets for this week's games",
+          "url": "https://sports.yahoo.com/articles/julian-hall-cap-tied-usmnt-204331110.html",
+          "title": "Julian Hall cap-tied to USMNT after Nations League appearance vs Haiti",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT72e1AmXCxB1tC2OxLHReYtdFaD0wAxYD7GNJLeOUxBRAkE0nNncw3IIM8Lww"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9OougZ4ddD3pCaOMbP3EH-LG5QAVLQ93g_VUvt4l5q7De-ntQc9Veavrz2Eg"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7776674/2026/11/13/college-football-top-games-week-11/",
-          "title": "College football Week 11 top 10 games: Texas-LSU, USC-Indiana and more",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBAyNpIR9gyW8qia8z_4CRCtXAnGlsZQOWaczYnhmPA9I6-QjaYm3_1CApNco"
-        }
-      ]
-    },
-    {
-      "query": "dylan raiola",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T21:00:00Z",
-      "related_news_urls": [
-        "https://heavy.com/sports/college-football/oregon-ducks/oregon-dante-moore-dylan-raiola-michigan/",
-        "https://www.oregonlive.com/ducks/2026/11/cookies-continuity-and-clean-pockets-oregons-offensive-line-makes-tremendous-leap.html",
-        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165337/dylan-raiola-saw-seams-everywhere-while-preparing-for-ohio-states-defense-and-chip-kelly-may-too"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3judeGaFDcNlnL1BGTqKYElqQbWVfj3Nh5Xv9SlqhnflcgA5z3vea-1zB--E",
-      "image_credit": "Heavy.com",
-      "news": [
-        {
-          "url": "https://heavy.com/sports/college-football/oregon-ducks/oregon-dante-moore-dylan-raiola-michigan/",
-          "title": "Why Isn’t Oregon QB Dante Moore Playing Today vs Michigan? Dylan Raiola Starts",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3judeGaFDcNlnL1BGTqKYElqQbWVfj3Nh5Xv9SlqhnflcgA5z3vea-1zB--E"
-        },
-        {
-          "url": "https://www.oregonlive.com/ducks/2026/11/cookies-continuity-and-clean-pockets-oregons-offensive-line-makes-tremendous-leap.html",
-          "title": "How continuity up front has fueled Oregon's offensive resurgence",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmomU009k3UedCm3QbeR9aksj2mhVVEYgzXCNVtdICvt_8UvUxPpVwVKCgiR8"
-        },
-        {
-          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165337/dylan-raiola-saw-seams-everywhere-while-preparing-for-ohio-states-defense-and-chip-kelly-may-too",
-          "title": "Dylan Raiola “Saw Seams Everywhere” While Preparing for Ohio State’s Defense, and Chip Kelly May, Too",
-          "publisher": "Eleven Warriors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfsqYgkyZI0vleqeHm7bZw14uYTliCaf3_Boh7jO_PpzPzk0LDOyzLW2L8ntA"
-        }
-      ]
-    },
-    {
-      "query": "mike matthews",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T21:00:00Z",
-      "related_news_urls": [
-        "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/14/mike-matthews-injury-update-tennessee-football-vs-texas-am/92498203007/",
-        "https://www.usatoday.com/story/sports/ncaaf/2026/11/14/mike-matthews-injury-updates-vols-receiver-right-knee-latest/92783750007/",
-        "https://247sports.com/college/tennessee/article/mike-matthews-exits-tennessee-football-game-at-texas-am-with-apparent-right-leg-injury-josh-heupel-292706149/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQAy4UkvRSyjmsTmWptbWe2mbg1qu2YrYy0UmqKgVCerilmbF7814koqdYVNM",
-      "image_credit": "Knoxville News Sentinel",
-      "news": [
-        {
-          "url": "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/14/mike-matthews-injury-update-tennessee-football-vs-texas-am/92498203007/",
-          "title": "Tennessee football Mike Matthews suffers leg injury vs Texas A&M",
-          "publisher": "Knoxville News Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQAy4UkvRSyjmsTmWptbWe2mbg1qu2YrYy0UmqKgVCerilmbF7814koqdYVNM"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/14/mike-matthews-injury-updates-vols-receiver-right-knee-latest/92783750007/",
-          "title": "Mike Matthews injury updates: Latest on leading Tennessee receiver after hurting knee",
+          "url": "https://www.usatoday.com/story/sports/soccer/usmnt/2026/11/14/julian-hall-cap-tied-usmnt-poland/92748412007/",
+          "title": "Julian Hall cap-tied to USMNT after Nations League appearance vs Haiti",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVU6_YfW_lno-9pt6dL367g39RGdc_D3RIiGJPodcq9XklgnR6GNmphFt6hlo"
-        },
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIKH_71IUUSkm0dGWv8Nq0vY7qbo2_lHGqu6lHAXx25ZI7KOZfTLaLit0NIWk"
+        }
+      ]
+    },
+    {
+      "query": "nolan james jr",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T21:30:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/notre-dame/article/notre-dame-fighting-irish-college-football-running-back-nolan-james-jr-feeling-electric-after-defeating-no-1-miami-hurricanes-292637679/",
+        "https://irishsportsdaily.com/s/28550/6-thoughts-on-a-thursday",
+        "https://www.sportsmediawatch.com/2026/11/miami-notre-dame-viewership-nbc-most-watched-week-ten-alabama-lsu-abc/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVexOczDuZ5tRmRfmEFE1krZzChN3jqm9K_c9bzuOLOLZgywAKYruTgcZhJyY",
+      "image_credit": "247Sports",
+      "news": [
         {
-          "url": "https://247sports.com/college/tennessee/article/mike-matthews-exits-tennessee-football-game-at-texas-am-with-apparent-right-leg-injury-josh-heupel-292706149/",
-          "title": "Mike Matthews exits Tennessee's game at Texas A&M with apparent right leg injury",
+          "url": "https://247sports.com/college/notre-dame/article/notre-dame-fighting-irish-college-football-running-back-nolan-james-jr-feeling-electric-after-defeating-no-1-miami-hurricanes-292637679/",
+          "title": "Notre Dame’s Nolan James Jr. Feeling ‘Electric’ After Defeating No. 1 Miami",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfRTUEpRDM_4rxoQwBLpKIFcjIcbY2Cj0FZBwvp7pYOZpbIs9u7W2-I5jal08"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVexOczDuZ5tRmRfmEFE1krZzChN3jqm9K_c9bzuOLOLZgywAKYruTgcZhJyY"
+        },
+        {
+          "url": "https://irishsportsdaily.com/s/28550/6-thoughts-on-a-thursday",
+          "title": "6 Thoughts on a Thursday",
+          "publisher": "Irish Sports Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFEHpbpw0O0ojRSOjv_w6znGgtDRF9MRVaou9ZU-Sh2KRtUePbV2hV2o8G-sI"
+        },
+        {
+          "url": "https://www.sportsmediawatch.com/2026/11/miami-notre-dame-viewership-nbc-most-watched-week-ten-alabama-lsu-abc/",
+          "title": "More variety in top CFB audiences as NBC’s Miami-Notre Dame wins week ten",
+          "publisher": "Sports Media Watch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwK9xw1oxv9wD8mQYLyyW92J68H_jT5h4f4kFzc-x71aNKX7L1eHwp2_T5t6w"
         }
       ]
     },
     {
-      "query": "mavericks surfing",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-14T21:00:00Z",
+      "query": "alateng heili",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T21:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/13/weather/california-storm-mavericks-surfers.html",
-        "https://ktla.com/news/local-news/manhattan-beach-pier-closed-to-due-very-large-surf/",
-        "https://localnewsmatters.org/2026/11/13/evacuation-warning-issued-roads-and-beaches-close-as-towering-waves-take-aim/"
+        "https://www.ufc.com/news/updates-polymarket-ufc-334-gane-vs-hokit",
+        "https://sports.yahoo.com/articles/heili-alateng-vs-juan-diaz-100042435.html",
+        "https://sports.betmgm.com/en/blog/ufc/334-alatengheili-juan-diaz-predictions-odds-bm05/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKxw5MzH_MM1msGfgCZNYJbU1t5bWV0H_fPXlTAl2nJoFqrVfsZ1Oy7PdJ98",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnRMeE0eGmfvyMh2J15D4QPe3cf6QhutahsuEjbuty-Q3aDqjlbL_Ad0_y-P4",
+      "image_credit": "UFC.com",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/13/weather/california-storm-mavericks-surfers.html",
-          "title": "Surfers Scramble to Mavericks in California to Catch Building-Size Waves",
-          "publisher": "The New York Times",
+          "url": "https://www.ufc.com/news/updates-polymarket-ufc-334-gane-vs-hokit",
+          "title": "Updates To Polymarket UFC 334: Gane vs Hokit",
+          "publisher": "UFC.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKxw5MzH_MM1msGfgCZNYJbU1t5bWV0H_fPXlTAl2nJoFqrVfsZ1Oy7PdJ98"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnRMeE0eGmfvyMh2J15D4QPe3cf6QhutahsuEjbuty-Q3aDqjlbL_Ad0_y-P4"
         },
         {
-          "url": "https://ktla.com/news/local-news/manhattan-beach-pier-closed-to-due-very-large-surf/",
-          "title": "Manhattan Beach Pier closed due to ‘very large surf’",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4P5GSgcdAIqI7m4zCh4a_xs6-21Hc0ryUCND_CZXhI3ez5UB5zhPkGbAIOs"
-        },
-        {
-          "url": "https://localnewsmatters.org/2026/11/13/evacuation-warning-issued-roads-and-beaches-close-as-towering-waves-take-aim/",
-          "title": "Evacuation warning issued, roads and beaches close as towering waves take aim",
-          "publisher": "Local News Matters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTaLsCjvl3JAxxLi-PPJRdolOI0JWLqHaJft31IlpS8BW8kX8WQwe7GanulFI"
-        }
-      ]
-    },
-    {
-      "query": "mirassol vs atlético mineiro",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T21:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.co.uk/sport/football/live/cqly3y5nelp7t",
-        "https://sports.yahoo.com/articles/mirassol-v-atl-tico-galo-120500746.html",
-        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-mirassol-v-atletico-mg/blt0afb7b208b11b69a"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.co.uk/sport/football/live/cqly3y5nelp7t",
-          "title": "Mirassol vs Atlético Mineiro: Brazilian Serie A stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/mirassol-v-atl-tico-galo-120500746.html",
-          "title": "Mirassol v Atlético: Galo are in action today!",
+          "url": "https://sports.yahoo.com/articles/heili-alateng-vs-juan-diaz-100042435.html",
+          "title": "Heili Alateng vs Juan Diaz Prediction, Picks, Odds for UFC 334, Saturday, November 14",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkxJpbWo6ewB3dNOAUXsHHww-UCnQLNsoafHWtUp_oheSGYQtlQkMehNEHuUI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMeGYcoYQMeWsz7T0H9JSn_pS8ybJNhi6NThCTkoXtbNvALj2b4yciZFRtOUg"
         },
         {
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-mirassol-v-atletico-mg/blt0afb7b208b11b69a",
-          "title": "Mirassol vs Atletico MG: Where to watch, TV channel, live stream & kick-off time | Serie A",
-          "publisher": "Goal.com",
+          "url": "https://sports.betmgm.com/en/blog/ufc/334-alatengheili-juan-diaz-predictions-odds-bm05/",
+          "title": "UFC 334: Alatengheili vs. Juan Diaz Predictions & Odds",
+          "publisher": "sports.betmgm.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepoPB5r9vFT4_Cm1ZBFBMJSSxRgJCufJhBBHeQSbX2b1HTahQ6tbOkKiaYW0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7aIdLztdJ_leSdHNZP3ItBT9rATsLswFwAgEFGu5ReM7EMwczBodDyIcaMWc"
         }
       ]
     },
     {
-      "query": "mirassol x atlético-mg",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T21:00:00Z",
-      "related_news_urls": [
-        "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/14/rodada-brasileirao-sabado-luta-rebaixamento.ghtm",
-        "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/noticia/2026/11/14/mirassol-x-atletico-mg-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://www.otempo.com.br/sports/atletico/2026/11/14/fred-cassierra-e-ruan-tressoldi-voltam-a-ser-titulares-do-atletico-antes-da-final-da-sul-americana"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3NaDrnNWlu6yp-2FYPr91b2pQjRP-TySBerbdlbKIJgW2kMdTNxmu_--chDA",
-      "image_credit": "UOL",
-      "news": [
-        {
-          "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/14/rodada-brasileirao-sabado-luta-rebaixamento.ghtm",
-          "title": "Brasileirão tem dois jogos hoje e vai movimentar luta contra o rebaixamento",
-          "publisher": "UOL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3NaDrnNWlu6yp-2FYPr91b2pQjRP-TySBerbdlbKIJgW2kMdTNxmu_--chDA"
-        },
-        {
-          "url": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/noticia/2026/11/14/mirassol-x-atletico-mg-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-          "title": "Mirassol x Atlético-MG: onde assistir ao vivo, horário e escalações",
-          "publisher": "ge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr8U9hoVaSqrN-Vv7OB7CMqwQ_6fgbM0sEXrYg9ME5y9PTjH44WeGNkpOJ9vQ"
-        },
-        {
-          "url": "https://www.otempo.com.br/sports/atletico/2026/11/14/fred-cassierra-e-ruan-tressoldi-voltam-a-ser-titulares-do-atletico-antes-da-final-da-sul-americana",
-          "title": "Fred, Cassierra e Ruan Tressoldi voltam a ser titulares do Atlético antes da final da Sul-Americana",
-          "publisher": "O Tempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO1iPPJ7ts_z_kdO0uVlxOm3joe-65K1RG9ekXE4DgL2jr6S6GNNOfvH1jMYo"
-        }
-      ]
-    },
-    {
-      "query": "why is crypto crashing",
+      "query": "jeremiah mcclellan",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T21:00:00Z",
+      "published_at": "2026-11-14T21:30:00Z",
       "related_news_urls": [
-        "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
-        "https://www.fastcompany.com/91642070/bitcoin-price-why-btc-down-today-inflation-outflows-more",
-        "https://www.wsj.com/finance/currencies/bitcoin-holds-below-70-000-as-risk-off-mood-pressures-crypto-d61d684d"
+        "https://247sports.com/college/oregon/article/jeremiah-mcclellan-explains-how-he-broke-his-foot-before-portland-state-talks-challenges-of-returning-292530919/",
+        "https://sports.yahoo.com/articles/dan-lanning-says-quiet-part-152000934.html",
+        "https://www.centraloregondaily.com/sports/oregon_ducks/oregon-wr-jeremiah-mcclellan-opens-up-on-challenges-of-returning-to-play/article_56a2b793-e3fa-518b-acb9-d86b465740da.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXB5l-8J7fwJwEfKtvDqGTs5nELPnPSHHYhZdjT_IL_qX0frq4B--04JvtmdA",
-      "image_credit": "CoinDesk",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStNtylwISAJKon9RdLX6Ws5Ks-8DvS1DBg06tk3OyikusJNqG008r33yomxbE",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
-          "title": "Bitcoin price analysis: BTC continues to decline Saturday, entering 'deep value zone'",
-          "publisher": "CoinDesk",
+          "url": "https://247sports.com/college/oregon/article/jeremiah-mcclellan-explains-how-he-broke-his-foot-before-portland-state-talks-challenges-of-returning-292530919/",
+          "title": "Jeremiah McClellan explains how he broke his foot before Portland State, talks challenges of returning",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXB5l-8J7fwJwEfKtvDqGTs5nELPnPSHHYhZdjT_IL_qX0frq4B--04JvtmdA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStNtylwISAJKon9RdLX6Ws5Ks-8DvS1DBg06tk3OyikusJNqG008r33yomxbE"
         },
         {
-          "url": "https://www.fastcompany.com/91642070/bitcoin-price-why-btc-down-today-inflation-outflows-more",
-          "title": "Bitcoin is falling to fresh lows today: What’s causing the crypto decline?",
-          "publisher": "Fast Company",
+          "url": "https://sports.yahoo.com/articles/dan-lanning-says-quiet-part-152000934.html",
+          "title": "Dan Lanning Says the Quiet Part Out Loud About Jeremiah McClellan's Return From Injury",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSmWYozqRH0rq4Lj-chqzZvCPJgpBKIUayZA9TBS7m-drmoDoWE_dsNoNg_Uw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6sTNcAltkm_unJkjp7pqiR_GMKkzgx9QjdSu9R_g8mB6xpyc-M1VYjjPbMG0"
         },
         {
-          "url": "https://www.wsj.com/finance/currencies/bitcoin-holds-below-70-000-as-risk-off-mood-pressures-crypto-d61d684d",
-          "title": "Bitcoin Holds Below $70,000 as Risk-Off Mood Pressures Crypto",
-          "publisher": "WSJ",
+          "url": "https://www.centraloregondaily.com/sports/oregon_ducks/oregon-wr-jeremiah-mcclellan-opens-up-on-challenges-of-returning-to-play/article_56a2b793-e3fa-518b-acb9-d86b465740da.html",
+          "title": "Oregon WR Jeremiah McClellan opens up on challenges of returning to play",
+          "publisher": "Central Oregon Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_jfDkshoArG8fFfXxuApgLVKSOrYFw6kqdxoQ3iQ6NZXkHfRt_Z2WNGc-M_c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF9IywoWfmGDvRNK-Z2w7mFcAMaH-XbWafte4wcEIWES8CvJjVGw6R1sIITqs"
+        }
+      ]
+    },
+    {
+      "query": "valerie bertinelli",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T21:20:00Z",
+      "related_news_urls": [
+        "https://people.com/valerie-bertinelli-shows-off-her-weight-loss-in-new-video-feeling-good-12254420",
+        "https://www.yahoo.com/entertainment/celebrity/articles/food-network-star-66-lifts-035902511.html",
+        "https://www.usmagazine.com/celebrity-body/news/valerie-bertinelli-flaunts-midsection-amid-weight-loss-journey/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjj73Y0czYI88wCgk_ValEqRj8WHqau65IHynJU517-fBZ6eY4AUaA5QsqnDk",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/valerie-bertinelli-shows-off-her-weight-loss-in-new-video-feeling-good-12254420",
+          "title": "Valerie Bertinelli Proudly Shows Off Her Ongoing Weight Loss in New Video: ‘Feelin’ Good’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjj73Y0czYI88wCgk_ValEqRj8WHqau65IHynJU517-fBZ6eY4AUaA5QsqnDk"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/food-network-star-66-lifts-035902511.html",
+          "title": "Food Network star, 66, lifts her top to showcase incredible weight loss transformation in new video",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8p9qDqt35wLzqMOtxsk0HUmtp7mL4bsybTcXxg-_Y257dNI6W3ieXYA_BRlg"
+        },
+        {
+          "url": "https://www.usmagazine.com/celebrity-body/news/valerie-bertinelli-flaunts-midsection-amid-weight-loss-journey/",
+          "title": "Valerie Bertinelli Flaunts Bare Midsection Amid Ongoing Weight Loss Journey: ‘Feelin Good’",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJMdOwxL1VE77OBnyvjAfijMrlliwlb1PNnYOUu_QUEqvuLo2go1G8JEydFd8"
         }
       ]
     }
