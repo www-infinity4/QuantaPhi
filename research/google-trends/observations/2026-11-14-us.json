@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T09:30:55.032864Z",
+  "checked_at": "2026-11-14T10:01:26.857711Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "japón - brasil",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T09:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17511798/raphinha-brasil-barcelona-polemica-ancelotti",
+        "https://www.si.com/es-us/la-posible-alineacion-titular-de-brasil-para-enfrentar-a-japon-14-11-2026",
+        "https://onefootball.com/es/noticias/el-mensaje-de-carlo-ancelotti-a-los-clubes-que-les-quito-jugadores-por-la-fecha-fifa-con-brasil-43772985"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvYovq-Pg-1niI0je94oFDP8c7f_2g31D3EDltTLS6Mn0Ch-suBkJjYF9jGe4",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17511798/raphinha-brasil-barcelona-polemica-ancelotti",
+          "title": "Ancelotti calma a clubes tras polémica con Raphinha: \"su salud es prioridad\"",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvYovq-Pg-1niI0je94oFDP8c7f_2g31D3EDltTLS6Mn0Ch-suBkJjYF9jGe4"
+        },
+        {
+          "url": "https://www.si.com/es-us/la-posible-alineacion-titular-de-brasil-para-enfrentar-a-japon-14-11-2026",
+          "title": "La posible alineación titular de Brasil para enfrentar a Japón",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRub4K77fgfwGphgaV8nOWcHnMP_eabAjCTndTN6LTfIuZ1MBWIJuCwrz_paBo"
+        },
+        {
+          "url": "https://onefootball.com/es/noticias/el-mensaje-de-carlo-ancelotti-a-los-clubes-que-les-quito-jugadores-por-la-fecha-fifa-con-brasil-43772985",
+          "title": "El mensaje de Carlo Ancelotti a los clubes que les QUITÓ JUGADORES por la fecha FIFA con Brasil",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvp95l81R4IJL7IwGfw99rcnPTNNO8b0ius1u3wYuuRK-1gx5KJTVil1l_iEE"
+        }
+      ]
+    },
+    {
+      "query": "dune 3",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T09:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cqly4lnxn031o",
+        "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
+        "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cqly4lnxn031o",
+          "title": "Timothée Chalamet and Zendaya prank Rylan Clark for Children in Need",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw"
+        },
+        {
+          "url": "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
+          "title": "‘Dune: Part Three’ Stars Set For Very Childish BBC Prank Tonight",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0T8xqwQ9OZ7ry6BuBIVAxH7ySt73sfoGrWYhPJ_yRZJO-5lZzuTot4CIwmt4"
+        },
+        {
+          "url": "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/",
+          "title": "Mel Giedroyc struggles to pronounce Oscar-nominees name during Children in Need",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHccVkK3Tz5gC7GJYloFE9z195Ike3mJZhK1lIgjirSfjnedJ4vPaPV-SCrcs"
+        }
+      ]
+    },
     {
       "query": "angelina jolie",
       "approx_searches": "100+",
@@ -46,138 +116,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-14T08:50:00Z",
       "related_news_urls": [
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-14-2026",
-        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-14-1252/",
-        "https://tech.yahoo.com/puzzles/connections/articles/nyt-connections-hints-answers-friday-190000657.html"
+        "https://www.nytimes.com/2026/11/13/crosswords/wordle-review-1974.html",
+        "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-14-1974/",
+        "https://tech.yahoo.com/puzzles/wordle/articles/today-wordle-hint-answers-1973-050400647.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-14-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 14, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-14-1252/",
-          "title": "Today’s NYT Connections Hints and Answers for Saturday, Nov. 14, #1252",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
-        },
-        {
-          "url": "https://tech.yahoo.com/puzzles/connections/articles/nyt-connections-hints-answers-friday-190000657.html",
-          "title": "NYT ‘Connections’ Hints And Answers For Friday, November 13",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuTl0DmV8jcnI9l5GTTcxmRUSeyy-tYK2ou1ebrXuPiKy4oBM4Fh7RQRuUHMU"
-        }
-      ]
-    },
-    {
-      "query": "u19 asia cup",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T08:50:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/story/pakistan-ask-india-to-field-in-under-19-asia-cup-final-1562576",
-        "https://www.espn.com/cricket/series/8616/game/1558444/india-under-19s-vs-pakistan-under-19s-final-asian-cricket-council-under-19s-asia-cup-2026-27",
-        "https://www.bcci.tv/matches/276f2365-6b4a-4306-aeea-cdf5286d1471/pakistan-under-19s-vs-india-under-19s"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPxuCa1uuqY1d3MP9Ln7vg1b6Da1IqDafA5ejakDYsyG7qBeCSrwzKqzgn1-k",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/story/pakistan-ask-india-to-field-in-under-19-asia-cup-final-1562576",
-          "title": "Pakistan ask India to field in Under-19 Asia Cup final",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPxuCa1uuqY1d3MP9Ln7vg1b6Da1IqDafA5ejakDYsyG7qBeCSrwzKqzgn1-k"
-        },
-        {
-          "url": "https://www.espn.com/cricket/series/8616/game/1558444/india-under-19s-vs-pakistan-under-19s-final-asian-cricket-council-under-19s-asia-cup-2026-27",
-          "title": "Final, Asian Cricket Council Under-19s Asia Cup at Al Amarat, Nov 14 2026",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ntsB0gST_kxus_R2wxMcK8_qsbeDLWhTlmdoJt9TsIRr8b92bBIrLnEuhcY"
-        },
-        {
-          "url": "https://www.bcci.tv/matches/276f2365-6b4a-4306-aeea-cdf5286d1471/pakistan-under-19s-vs-india-under-19s",
-          "title": "Pakistan Under-19s vs India Under-19s at Al Amerat, DP World Men’s U19 Asia Cup, Final, 14 Nov 2026",
-          "publisher": "BCCI",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb7iZKuf1N4MIKit5MtXS6f2w2PslqEVQ9gN_2hsfC9vEm8XjGwqWAo2yLCnk"
-        }
-      ]
-    },
-    {
-      "query": "timothee chalamet",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T08:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cqly4lnxn031o",
-        "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
-        "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cqly4lnxn031o",
-          "title": "Timothée Chalamet and Zendaya prank Rylan Clark for Children in Need",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw"
-        },
-        {
-          "url": "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
-          "title": "‘Dune: Part Three’ Stars Set For Very Childish BBC Prank Tonight",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0T8xqwQ9OZ7ry6BuBIVAxH7ySt73sfoGrWYhPJ_yRZJO-5lZzuTot4CIwmt4"
-        },
-        {
-          "url": "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/",
-          "title": "Mel Giedroyc struggles to pronounce Oscar-nominees name during Children in Need",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHccVkK3Tz5gC7GJYloFE9z195Ike3mJZhK1lIgjirSfjnedJ4vPaPV-SCrcs"
-        }
-      ]
-    },
-    {
-      "query": "the tomb of the unknown soldier",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T08:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
-        "https://www.cnn.com/2026/11/12/politics/hegseth-awards-medal-soldier-reprimanded-him",
-        "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXzy5eP_EEjrxshmd3BpD6fgSCLFfaqYksBnIdscC9SiQ-yWoOq0XSEIy_jF4",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
-          "title": "Pete Hegseth, a Soldier’s Scolding and a Lesson at the Tomb of Unknowns",
+          "url": "https://www.nytimes.com/2026/11/13/crosswords/wordle-review-1974.html",
+          "title": "Today’s Wordle HInts for November 14, 2026",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXzy5eP_EEjrxshmd3BpD6fgSCLFfaqYksBnIdscC9SiQ-yWoOq0XSEIy_jF4"
         },
         {
-          "url": "https://www.cnn.com/2026/11/12/politics/hegseth-awards-medal-soldier-reprimanded-him",
-          "title": "Hegseth awards medal to soldier who reprimanded him and aides at Arlington Cemetery",
-          "publisher": "CNN",
+          "url": "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-14-1974/",
+          "title": "Today’s NYT Wordle Hints, Answer and Help for Saturday, Nov. 14, #1974",
+          "publisher": "CNET",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWRi_06KWS8aEpxQmaTIzXQzsAgK7EPlJqYclV8O6Y9wBCTzYku2G8kiEai98"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEa5gGqbzlxCuoKeG_Swy0F8UbP2kaD6mieuiuEbz6lIybuNLvqvWJPLR8u40"
         },
         {
-          "url": "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/",
-          "title": "Hegseth awards medal to guard who scolded him at the Tomb of the Unknown Soldier",
-          "publisher": "NBC4 Washington",
+          "url": "https://tech.yahoo.com/puzzles/wordle/articles/today-wordle-hint-answers-1973-050400647.html",
+          "title": "Today’s Wordle Hint, Answers for #1973 on Friday, November 13, 2026",
+          "publisher": "Yahoo Tech",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH8wuQTZ6jCVAMSV5kZGvI1QOY2u9Yfme5yeiAVn3ZFrdjvllEhqy5KZ6Uzpw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_zek9GnkJzkuuIogmCG9sWyRaOhV98zBHYMEsB_zAqiI_MDZgisFCktOA1zA"
         }
       ]
     },
@@ -213,6 +178,41 @@
           "publisher": "Dust2.us",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMvyYRlhE35rjTAUMZ7BU6zZ3MsvPl6GOevjtGpM9RImH2ZVmc3iVEysRXDTc"
+        }
+      ]
+    },
+    {
+      "query": "norway vs wales",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/videos/c5kg7mwzp8lno",
+        "https://sports.yahoo.com/articles/norway-captain-martin-odegaard-eyes-065102562.html",
+        "https://www.espn.in/football/story/_/id/50470263/wales-norway-nations-league-haaland-bellamy"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQA1l936isU3puf74NZjXBHlX4jIjJjKZatXawamB7T5LCozlyxDm-gjHUgl8",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/videos/c5kg7mwzp8lno",
+          "title": "Nations League: What's at stake for Wales against Norway and Portugal?",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQA1l936isU3puf74NZjXBHlX4jIjJjKZatXawamB7T5LCozlyxDm-gjHUgl8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/norway-captain-martin-odegaard-eyes-065102562.html",
+          "title": "Norway captain Martin Odegaard eyes revenge against Wales in crucial Nations League clash to keep quarter-final dream alive in Oslo",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhKPsqWOKHvYo4Nbp6HnYb_vC3BQqH2WQWJCutApAXmO78ClMlF8IUVFubMo"
+        },
+        {
+          "url": "https://www.espn.in/football/story/_/id/50470263/wales-norway-nations-league-haaland-bellamy",
+          "title": "Wales boss Bellamy lays out plan for stopping Haaland",
+          "publisher": "ESPN India",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyUnp4IkiiGqA9eux2qhI1-a70rEkpeNzPDUdw_RJJwK05KBmUeqV5S2UxJeY"
         }
       ]
     },
@@ -291,33 +291,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-14T08:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/no-shaq-dont-beat-us-225800694.html",
-        "https://sports.yahoo.com/articles/had-hospital-three-days-jerry-154106806.html",
-        "https://hoopswire.com/jerry-west-spent-three-days-in-hospital-after-bringing-shaq-kobe-to-lakers/"
+        "https://sports.yahoo.com/articles/bam-adebayo-did-not-care-203554902.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/13/bam-adebayo-did-not-care-that-fans-were-going-upset-at-him-for-passing-kobe-bryants-scoring-record/92764853007/",
+        "https://sports.yahoo.com/articles/no-shaq-dont-beat-us-225800694.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW3rZbmNITgBNNnbeSaYJYi9xf4WB67TFGvMrMgBUqvPf02yPPl7w6lGG_N2Y",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbQBwwO-ijkVrGymXYtj5SvusaPEziaQQY7bJkgW__RsvohTIGIGFbvQj8_A",
       "image_credit": "Yahoo Sports",
       "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/bam-adebayo-did-not-care-203554902.html",
+          "title": "Bam Adebayo 'did not care' that fans were going to be upset at him for passing Kobe Bryant's scoring record",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbQBwwO-ijkVrGymXYtj5SvusaPEziaQQY7bJkgW__RsvohTIGIGFbvQj8_A"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/13/bam-adebayo-did-not-care-that-fans-were-going-upset-at-him-for-passing-kobe-bryants-scoring-record/92764853007/",
+          "title": "Bam Adebayo 'did not care' that fans were going to be upset at him for passing Kobe Bryant's scoring record",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFW23ulJI31IQ5dymmuc7_xlJffw1OMJvsmCLl8YcUXsVXRUyX7B99YAaI0Mg"
+        },
         {
           "url": "https://sports.yahoo.com/articles/no-shaq-dont-beat-us-225800694.html",
           "title": "\"With no Shaq, they don't beat us\" - Kenyon Martin explains why the Nets feared Shaquille O'Neal more than Kobe Bryant",
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW3rZbmNITgBNNnbeSaYJYi9xf4WB67TFGvMrMgBUqvPf02yPPl7w6lGG_N2Y"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/had-hospital-three-days-jerry-154106806.html",
-          "title": "\"I had to go to the hospital for three days\" - Jerry West recalls the price he paid to bring Shaq and Kobe to Los Angeles",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSB8BXdo2LNAaC89IabaF62j0-_Cvgk9a-kQTc_n7yBhXuo62E_Ma0xrvbacIE"
-        },
-        {
-          "url": "https://hoopswire.com/jerry-west-spent-three-days-in-hospital-after-bringing-shaq-kobe-to-lakers/",
-          "title": "Jerry West spent three days in hospital after bringing Shaq, Kobe to Lakers",
-          "publisher": "Hoops Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8f6kS0FAFrD6zXbIEBBRJuEeo7HE_Kpw3UBSflWlZkPK2H23Hw5mFz51_hDY"
         }
       ]
     },
@@ -327,7 +327,7 @@
       "published_at": "2026-11-14T08:20:00Z",
       "related_news_urls": [
         "https://www.imdb.com/news/ni66101296/?ref_=nmnw_art_perm",
-        "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1I",
+        "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1E",
         "https://www.mediaplaynews.com/roadside-attractions-drops-trailer-for-the-gallerist-hitting-theaters-dec-4/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOLbuZUaeJkfAHSPYMrmcRgLeZYV8xYUNRYWgXkCfI3a9_NYOqrKE80d4i7o",
@@ -341,11 +341,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOLbuZUaeJkfAHSPYMrmcRgLeZYV8xYUNRYWgXkCfI3a9_NYOqrKE80d4i7o"
         },
         {
-          "url": "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1I",
+          "url": "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1E",
           "title": "Licensable picture: 2026 - THE GALLERIST - Movie Set",
           "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHxB6Z6T_Jf4xrjVfh64obUMdrOrOZSoypj1fYPU2NFDLEq5912V-GjaodbQo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGOcHnKGagc1mpVyPlDONeDN9wNNuqRKb5-hVKWc-2ZrD9vMCgESIU7LRIZQI"
         },
         {
           "url": "https://www.mediaplaynews.com/roadside-attractions-drops-trailer-for-the-gallerist-hitting-theaters-dec-4/",
