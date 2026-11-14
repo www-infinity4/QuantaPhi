@@ -3,7 +3,7 @@ import {ownerContinuitySnapshot} from './continuity-snapshot.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
 import {extractAssignedColorTask,runColorHandoffs} from './color-handoff.mjs';
-import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
+import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews,verifyPinkTestProvenance} from './source-review.mjs';
 import {conversationMemory} from './conversation-memory.mjs';
 import {validateOwnerAuditDraft} from './owner-audit-draft.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
@@ -187,6 +187,21 @@ async function read(url,max=14000){
  const data=new Uint8Array(bytes);let i=0;for(const c of chunks){data.set(c,i);i+=c.length;}
  return {url,text:new TextDecoder().decode(data),http:r.status,sha256:await digest(new TextDecoder().decode(data)),truncated:bytes===max};
 }
+async function readBoundedText(response,maximum){
+ const reader=response.body?.getReader();
+ if(!reader)return null;
+ const decoder=new TextDecoder(),chunks=[];
+ let bytes=0;
+ try{
+  for(;;){
+   const {done,value}=await reader.read();
+   if(done)return chunks.join('')+decoder.decode();
+   bytes+=value.byteLength;
+   if(bytes>maximum)return null;
+   chunks.push(decoder.decode(value,{stream:true}));
+  }
+ }finally{await reader.cancel().catch(()=>{});}
+}
 export class BrainClock extends DurableObject{
  constructor(ctx,env){super(ctx,env);this.ctx=ctx;this.env=env;this.running=false;}
  async payWork(quant,verificationToken=''){
@@ -287,6 +302,7 @@ export class BrainClock extends DurableObject{
   const job=(context.color_jobs||[]).find(j=>j.id===lease.jobId);
   const current=pinnedPinkReview(context,job);
   if(!current||current.mergeSha!==pinned.mergeSha||
+    current.sourceCommitSha!==pinned.sourceCommitSha||
     current.prNumber!==pinned.prNumber||
     JSON.stringify(current.repairIds)!==JSON.stringify(pinned.repairIds)||
     current.repository!==lease.repository)throw Error('source_review_dependency_changed');
@@ -297,10 +313,11 @@ export class BrainClock extends DurableObject{
 
   const token=typeof body.verificationToken==='string'&&body.verificationToken?body.verificationToken:'';
   const headers={Accept:'application/vnd.github+json','User-Agent':'Infinity-Pink-Source-Review',...(token?{Authorization:'Bearer '+token}:{})};
-  async function verifiedGithub(path){
-   const r=await fetch('https://api.github.com/'+path,{headers,signal:AbortSignal.timeout(15000)});
+  async function verifiedGithub(path,raw=false){
+   const r=await fetch('https://api.github.com/'+path,{headers:raw?{...headers,Accept:'application/vnd.github.raw+json'}:headers,
+    redirect:'error',signal:AbortSignal.timeout(15000)});
    if(!r.ok)throw Error('source_review_github_read_failed_'+r.status);
-   return r.json();
+   return raw?readBoundedText(r,250000):r.json();
   }
   const repo=current.repository;
   const [pr,head,comparison,files]=await Promise.all([
@@ -310,13 +327,14 @@ export class BrainClock extends DurableObject{
    verifiedGithub('repos/'+repo+'/pulls/'+current.prNumber+'/files?per_page=100')
   ]);
   if(pr.merged!==true||pr.merge_commit_sha!==current.mergeSha||
+    current.sourceCommitSha&&pr.head?.sha!==current.sourceCommitSha||
     pr.base?.repo?.full_name!==repo||pr.base?.ref!=='main'||
     !String(pr.title||'').includes(lease.ticketId+'/'+current.primaryId)||
     head.commit?.sha!==tentative.sourceSha||
     !['ahead','identical'].includes(comparison.status)||
     !Array.isArray(files)||files.length>=100||
-    !files.some(f=>tentative.testPaths.includes(f.filename)&&
-      /\.(?:test|spec)\.(?:js|mjs|cjs)$/.test(f.filename)))
+    !await verifyPinkTestProvenance(files.map(file=>file.filename),tentative.testPaths,path=>
+     verifiedGithub('repos/'+repo+'/contents/'+path.split('/').map(encodeURIComponent).join('/')+'?ref='+tentative.sourceSha,true)))
    throw Error('source_review_pinned_merge_not_current_or_unrelated_tests');
   // Independently exercised native test commands run in Moltnook's isolated
   // checkout, not in this service; OIDC and the exact source SHA pin that claim.
@@ -444,6 +462,10 @@ export class BrainClock extends DurableObject{
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='writer:'+ticket.id+':'+job.id+':'+revision;
      const previous=await storage.get(key);
+     if(await this.generatedRepairHasPendingPink(ticket.id,context,job)){
+      noteRunnerSkip(claimBlockedBy,'source_review_receipt_pending');
+      continue;
+     }
      const active=await repositoryLease(storage,job.repository);
      const deps=effectiveDependencies.map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
      const eligibility=checkOwnerRunnerRequest(job,{now:Date.now(),prior:previous,lease:active,deps});
@@ -465,7 +487,8 @@ export class BrainClock extends DurableObject{
      lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,...(engine?{experientialMemory}:{}),...(sourceReview?{sourceReview}:{})};
      const reserved=await storage.transaction(async tx=>{
       const now=Date.now();
-      if(await tx.get(runKey)||await repositoryIsLocked(tx,job.repository,now))return false;
+      if(await tx.get(runKey)||await repositoryIsLocked(tx,job.repository,now)||
+       await this.generatedRepairHasPendingPink(ticket.id,context,job,tx))return false;
       lease.leaseUntil=now+runnerLeaseDuration(engine);
       await tx.put(key,lease);
       await tx.put(lockKey,lease);
@@ -703,6 +726,22 @@ export class BrainClock extends DurableObject{
   await this.emit('pink-panther','purple-pearl',body.status,message,receipt.commitSha?'https://github.com/'+lease.repository+'/commit/'+receipt.commitSha:runUrl);
   await recordRedBrain(this.ctx.storage,{kind:'runner_receipt',state:body.status,ticketId:lease.ticketId,jobId:lease.jobId,runUrl,commitSha:receipt.commitSha,testsPassed:receipt.testsPassed,reason:message});
   return Response.json({ok:true});
+ }
+ async generatedRepairHasPendingPink(ticketId,context,job,storage=this.ctx.storage){
+  if(job.agent!=='greenbeans')return false;
+  for(const pink of context.color_jobs||[]){
+   if(pink.agent!=='pink-panther'||!['queued','ready','working','blocked'].includes(pink.status))continue;
+   const review=pinnedPinkReview(context,pink);
+   if(!review?.repairIds.includes(job.id))continue;
+   const revision=await digest(JSON.stringify({instructions:pink.instructions,acceptance:pink.acceptance,repository:pink.repository}));
+   const receipt=await storage.get('writer:'+ticketId+':'+pink.id+':'+revision);
+   const proof=receipt?.pinkVerification;
+   if(receipt?.status==='source_verified'&&proof?.mergeSha===review.mergeSha&&proof.prNumber===review.prNumber&&
+    JSON.stringify(proof.repairIds)===JSON.stringify(review.repairIds)&&
+    (!pink.progress?.runUrl||pink.progress.runUrl===receipt.runUrl&&
+     (pink.progress.runAttempt||1)===(receipt.runAttempt||1)))return true;
+  }
+  return false;
  }
  async recoverPublishedJob(lease,now){
   const storage=this.ctx.storage;

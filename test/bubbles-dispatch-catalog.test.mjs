@@ -32,7 +32,7 @@ test('existing repository lease reports overload before starting a second direct
  // The Brain Clock now reserves the repository lease transactionally.
  // Guard must precede the actual reservation AND the ticket's working state;
  // a pre-upgrade string-based check would miss this newer safe implementation.
- const gate=worker.indexOf("if(await tx.get(runKey)||await repositoryIsLocked(tx,job.repository,now))return false;");
+ const gate=worker.indexOf("await repositoryIsLocked(tx,job.repository,now)");
  const transaction=worker.lastIndexOf("await storage.transaction(async tx=>{",gate);
  const reservation=worker.indexOf("await tx.put(lockKey,lease);",gate);
  const start=worker.indexOf("claimedJob.status='working'",reservation);

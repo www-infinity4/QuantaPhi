@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {DatabaseSync} from 'node:sqlite';
-const sourceReviewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/source-review.mjs',import.meta.url))).toString('base64');
+const sourceReviewUrl=new URL('../workers/infinity-brain-clock/source-review.mjs',import.meta.url).href;
 const handoffSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/technical-handoff.mjs',import.meta.url),'utf8')).replace('./source-review.mjs',sourceReviewUrl);
 const handoffUrl='data:text/javascript;base64,'+Buffer.from(handoffSource).toString('base64');
 const credentialUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/github-credential.mjs',import.meta.url))).toString('base64');
@@ -201,12 +201,12 @@ function continuityRunnerFixture(t, entries, env={}, beforeWrite=()=>{}) {
  return {
   memory,send,
   claim:async runId=>(await send('/runner/claim',runId)).json(),
-  job:index=>JSON.parse(sqlite.prepare('SELECT context_json FROM work_tickets WHERE id=?').get('ticket-'+index).context_json).color_jobs[0],
+  job:(index,jobIndex=0)=>JSON.parse(sqlite.prepare('SELECT context_json FROM work_tickets WHERE id=?').get('ticket-'+index).context_json).color_jobs[jobIndex],
   restart:async()=>{clock=restart();return clock.reconcilePendingWork();},
   deferred:()=>clock.recoverDeferredWork(),
-  setGraph(index,jobs){
+  setGraph(index,jobs,extra={}){
    sqlite.prepare('UPDATE work_tickets SET context_json=? WHERE id=?')
-    .run(JSON.stringify({kind:'robot-directions',color_jobs:jobs}),'ticket-'+index);
+    .run(JSON.stringify({kind:'robot-directions',color_jobs:jobs,...extra}),'ticket-'+index);
   },
   dispatchTo:async jobId=>{
    clock.dispatchRunner=async()=>({ok:true,status:'dispatch_accepted'});
@@ -860,9 +860,8 @@ test('public Cloudflare token endpoints reject absent owner sessions before any 
  assert.equal(readSecret,0);
 });
 
-for(const expired of [true,false]){
-test(expired?'an expired Pink lease cannot advance a dependency after GitHub readback':
- 'signed Pink review of merged source finishes without a new PR, payout, or synthetic repair replay',async t=>{
+for(const scenario of ['expired','changed_test','existing_test','unrelated_test','unrelated_pr_head']){
+test('signed Pink source verification handles '+scenario.replaceAll('_',' '),async t=>{
  const previousFetch=globalThis.fetch;
  const repo='www-infinity4/QuantaPhi',mergeSha='a'.repeat(40),headSha='c'.repeat(40),sourceSha='b'.repeat(40);
  const url='https://github.com/www-infinity4/Moltnook/actions/runs/200';
@@ -899,13 +898,17 @@ test(expired?'an expired Pink lease cannot advance a dependency after GitHub rea
  globalThis.fetch=async input=>{
   const target=String(input);calls.push(target);
   if(target.includes('/pulls/418/files?'))return Response.json([
-   {filename:'bubbles-brain-actions.js'},{filename:'test/bubbles-brain-actions.test.cjs'}]);
+   {filename:'bubbles-brain-actions.js'},...(scenario==='changed_test'||scenario==='expired'?
+    [{filename:'test/bubbles-brain-actions.test.cjs'}]:[])]);
+  if(target.endsWith('/contents/test/bubbles-brain-actions.test.cjs?ref='+headSha))
+   return new Response(scenario==='unrelated_test'?"fs.readFileSync('wallet.js', 'utf8');":"fs.readFileSync('bubbles-brain-actions.js', 'utf8');");
   if(target.endsWith('/pulls/418'))return Response.json({
    merged:true,merge_commit_sha:mergeSha,
    title:'Robot review: IW-20261016-706B1494/TASK-1',
+   head:{sha:scenario==='unrelated_pr_head'?headSha:sourceSha},
    base:{ref:'main',repo:{full_name:repo}}});
   if(target.includes('/branches/main')){
-   if(expired)now=lease.leaseUntil;
+   if(scenario==='expired')now=lease.leaseUntil;
    return Response.json({commit:{sha:headSha}});
   }
   if(target.includes('/compare/'))return Response.json({status:'ahead'});
@@ -918,8 +921,9 @@ test(expired?'an expired Pink lease cannot advance a dependency after GitHub rea
     key:lease.key,leaseId:lease.leaseId,status:'source_verified',testsPassed:true,
     reviewedMergeSha:mergeSha,commitSha:headSha,
     testPaths:['test/bubbles-brain-actions.test.cjs'],productionVerified:false})});
-  if(expired){
-   await assert.rejects(clock.runner(request('result')),/writer_lease_rejected/);
+  if(['expired','unrelated_test','unrelated_pr_head'].includes(scenario)){
+   await assert.rejects(clock.runner(request('result')),
+    scenario==='expired'?/writer_lease_rejected/:/source_review_pinned_merge_not_current_or_unrelated_tests/);
    assert.equal(updated,undefined);
    assert.equal(memory.has('source-review-receipt:'+lease.key),false);
    return;
@@ -934,7 +938,7 @@ test(expired?'an expired Pink lease cannot advance a dependency after GitHub rea
   assert.equal(updated.color_jobs[0].status,'merged_verified');
   assert.equal(updatedStatus,'blocked','whole ticket must not claim deployment');
   assert.equal(memory.get('job-quant-index'),undefined,'review never mints');
-  assert.equal(calls.length,4);
+  assert.equal(calls.length,scenario==='existing_test'?5:4);
   const readback=await (await clock.runner(request('source-review-receipt'))).json();
   assert.equal(readback.durableReadback,true);
   assert.equal(readback.coinsMinted,false);
@@ -1018,6 +1022,32 @@ test('signed runner claim defers stale Pink verification when a linked Green rep
  assert.equal(result.lease,null,'do not preclaim Pink while sibling Green repair already finished');
  assert.equal(updates,0,'no D1 ticket change, no Pink completion, no lost completed Green repair');
  assert.equal([...data.keys()].some(k=>k.startsWith('writer:')),false,'no empty lease issued');
+});
+
+test('a durable Pink result holds its generated repair while other tickets continue',async t=>{
+ const repository='www-infinity4/QuantaPhi',mergeSha='a'.repeat(40),commitSha='b'.repeat(40);
+ const primary={...continuityJob('TASK-1'),agent:'greenbeans',status:'merged_verified',
+  progress:{testsPassed:true,mergeSha,commitSha,prUrl:'https://github.com/'+repository+'/pull/418'}};
+ const pink={...continuityJob('TASK-2'),agent:'pink-panther',dependencies:['TASK-1','TASK-3'],
+  instructions:'After TASK-1, independently verify the scoped repair'};
+ const repair={...continuityJob('TASK-3'),agent:'greenbeans',title:'Repair source-routing',
+  instructions:'Diagnose and repair the authenticated source-routing failure in the owner job'};
+ const child={...continuityJob('TASK-4'),dependencies:['TASK-2']};
+ const fixture=continuityRunnerFixture(t,[primary,continuityJob('UNRELATED','www-infinity4/Moltnook')]);
+ fixture.setGraph(0,[primary,pink,repair,child],{technical_handoffs:[
+  {sourceJobId:'TASK-2',repairJobId:'TASK-3',category:'source-routing'}]});
+ const source=new TextEncoder().encode(JSON.stringify({instructions:pink.instructions,acceptance:pink.acceptance,repository}));
+ const revision=Buffer.from(await crypto.subtle.digest('SHA-256',source)).toString('hex');
+ const runUrl='https://github.com/www-infinity4/Moltnook/actions/runs/499';
+ fixture.memory.set('writer:ticket-0:TASK-2:'+revision,{status:'source_verified',jobId:pink.id,ticketId:'ticket-0',
+  revision,repository,runUrl,when:new Date().toISOString(),leaseUntil:0,
+  pinkVerification:{repository,sourceSha:mergeSha,mergeSha,prNumber:418,repairIds:['TASK-3'],testPaths:['test/repair.test.mjs']}});
+ assert.equal((await fixture.claim('500')).lease.jobId,'UNRELATED');
+ assert.equal(fixture.job(0,2).status,'queued');
+ await fixture.restart();
+ assert.equal(fixture.job(0,1).status,'complete');
+ assert.equal(fixture.job(0,2).status,'superseded');
+ assert.equal((await fixture.claim('501')).lease.jobId,'TASK-4');
 });
 
 

@@ -1,3 +1,5 @@
+import {referencesChangedSource} from './source-test-refs.mjs';
+
 /*
  * A Pink verification job is read-only. A successful repository merge is
  * not another Green assignment and cannot be re-implemented indefinitely.
@@ -5,6 +7,10 @@
  */
 const SHA=/^[a-f0-9]{40}$/;
 const REPO=/^www-infinity4\/[A-Za-z0-9_.-]+$/;
+const TEST=/^(?:[A-Za-z0-9_.-]+\/)*[A-Za-z0-9_.-]+\.(?:test|spec)\.(?:js|mjs|cjs)$/;
+const safePath=path=>typeof path==='string'&&path.length<=240&&
+ /^[A-Za-z0-9_.-]+(?:\/[A-Za-z0-9_.-]+)*$/.test(path)&&
+ path.split('/').every(part=>part!=='.'&&part!=='..'&&!part.startsWith('.'));
 const GITHUB_PR=/^https:\/\/github\.com\/www-infinity4\/([A-Za-z0-9_.-]+)\/pull\/([1-9][0-9]*)$/;
 const TECH_CATEGORIES=new Set(['source-routing','implementation','runner-connection']);
 const depIdFromJob=job=>String(job?.instructions||'').match(/^After (TASK-[0-9]+), independently verify\b/)?.[1]||null;
@@ -61,14 +67,24 @@ export function validatePinkSourceReceipt({review,job,body}){
   body.testsPassed!==true||body.reviewedMergeSha!==review.mergeSha||
   !SHA.test(body.commitSha||'')||!Array.isArray(body.testPaths)||
   body.testPaths.length<1||body.testPaths.length>8||
-  body.testPaths.some(x=>typeof x!=='string'||
-   !/^(?:[a-zA-Z0-9_.-]+\/)*[a-zA-Z0-9_.-]+\.(?:test|spec)\.(?:js|mjs|cjs)$/.test(x))||
+  body.testPaths.some(x=>!safePath(x)||!TEST.test(x))||
   new Set(body.testPaths).size!==body.testPaths.length||
   body.productionVerified===true||body.ownerApprovalGranted===true||
   body.mergedNewCode===true)throw Error('source_review_receipt_invalid');
  return {sourceSha:body.commitSha,mergeSha:review.mergeSha,prNumber:review.prNumber,
   repository:review.repository,testPaths:body.testPaths,repairIds:review.repairIds,
   sourceOnly:true,productionVerified:false,noNewCommit:true,noReward:true};
+}
+export async function verifyPinkTestProvenance(changedPaths,testPaths,readPinnedTest){
+ const paths=new Set(changedPaths.filter(safePath));
+ const sources=[...paths].filter(path=>!TEST.test(path));
+ if(!sources.length)return false;
+ for(const test of testPaths){
+  if(paths.has(test))continue;
+  const text=await readPinnedTest(test);
+  if(!referencesChangedSource(text,test,sources))return false;
+ }
+ return true;
 }
 export function completePinkReviewInContext(context,jobId,verification,when,runUrl){
  const clone=structuredClone(context),job=clone.color_jobs?.find(j=>j.id===jobId);
