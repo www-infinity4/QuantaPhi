@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T22:01:28.075996Z",
+  "checked_at": "2026-11-14T22:31:14.121907Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "banfield - boca juniors",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T21:40:00Z",
-      "related_news_urls": [
-        "https://www.tycsports.com/copa-argentina/argentina-copa-argentina-2026-banfield-vs-boca-juniors-semifinal-1-id771386.html",
-        "https://www.clarin.com/deportes/llegada-boca-banfield-malvinas-argentinas_3_duc9hh58a0.html",
-        "https://www.lanacion.com.ar/deportes/futbol/boca-vs-banfield-en-vivo-nid14112026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0JoI6A7wwncMQEN7NuT9aOYZ-hJkqgjbS0_D9gLez_58XYzfsWAFvvbB-hl0",
-      "image_credit": "TyC Sports",
-      "news": [
-        {
-          "url": "https://www.tycsports.com/copa-argentina/argentina-copa-argentina-2026-banfield-vs-boca-juniors-semifinal-1-id771386.html",
-          "title": "Banfield vs. Boca, por la Copa Argentina: seguilo EN VIVO",
-          "publisher": "TyC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0JoI6A7wwncMQEN7NuT9aOYZ-hJkqgjbS0_D9gLez_58XYzfsWAFvvbB-hl0"
-        },
-        {
-          "url": "https://www.clarin.com/deportes/llegada-boca-banfield-malvinas-argentinas_3_duc9hh58a0.html",
-          "title": "Video La llegada de Boca y Banfield al Malvinas Argentinas",
-          "publisher": "Clarín",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyGK0cYvnT_bizrZtbXbR4i_dltjQbQQRzUOuOKsUY_Ngi6X4e4ZpPLUWOZY8"
-        },
-        {
-          "url": "https://www.lanacion.com.ar/deportes/futbol/boca-vs-banfield-en-vivo-nid14112026/",
-          "title": "Boca vs. Banfield, en vivo: la semifinal de la Copa Argentina",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeFKnUMduvsF4CibvOvKU0EGwJYLCbB7F9yyBng136KrbRxalDwpKKi1HsQrU"
-        }
-      ]
-    },
-    {
-      "query": "ihsa football playoffs",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T21:40:00Z",
-      "related_news_urls": [
-        "https://www.pjstar.com/story/sports/high-school/football/2026/11/13/ihsa-playoffs-statewide-illinois-high-school-football-quarterfinal-scores/92736310007/",
-        "https://chicago.suntimes.com/high-school-football/2026/11/13/previewing-the-top-ihsa-football-quarterfinal-playoff-games",
-        "https://sports.yahoo.com/articles/illinois-high-school-football-live-180503259.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ4PsgsSQxFoG0X7FonfxOjMxKWel-TF1uT6jjy_0jdN_NAAaaFC6zanjQyQE",
-      "image_credit": "Peoria Journal Star",
-      "news": [
-        {
-          "url": "https://www.pjstar.com/story/sports/high-school/football/2026/11/13/ihsa-playoffs-statewide-illinois-high-school-football-quarterfinal-scores/92736310007/",
-          "title": "IHSA football playoffs: Live, updated statewide scores in Illinois | Quarterfinals",
-          "publisher": "Peoria Journal Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ4PsgsSQxFoG0X7FonfxOjMxKWel-TF1uT6jjy_0jdN_NAAaaFC6zanjQyQE"
-        },
-        {
-          "url": "https://chicago.suntimes.com/high-school-football/2026/11/13/previewing-the-top-ihsa-football-quarterfinal-playoff-games",
-          "title": "Previewing the top IHSA football playoff quarterfinals",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSe0WqAFQHb09cLbWvvzRTxGHTheYheOU8n5D6DedVOyo87FmNKtYl73uDBDqI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/illinois-high-school-football-live-180503259.html",
-          "title": "Illinois high school football: Live updates from Peoria-area IHSA quarterfinal playoff games",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufnCJnlNjF7VMKKTVOMal6Lsl9TQJ6G5iuQtKrDhbSGnfB2HBnQPWSVCbgkI"
-        }
-      ]
-    },
-    {
-      "query": "evacuación",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T21:40:00Z",
-      "related_news_urls": [
-        "https://www.telemundo.com/noticias/noticias-telemundo/estados-unidos/hallan-una-bomba-cerca-de-una-planta-de-etanol-en-illinois-y-ordenan-e-rcna609318",
-        "https://palabrasclaras.mx/politica/amenaza-de-bomba-en-planta-industrial-obliga-a-evacuar-viviendas-y-negocios-en-illinois/",
-        "https://gamavision.com/noticias/desalojan-a-5-mil-personas-tras-hallazgo-de-una-bomba-en-planta-de-etanol-en-illinois"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vAI0FKokWmYJzAX_pWu05LTD1C7JPcu47At58V0bBMrO0O0hGTI_mnauqnI",
-      "image_credit": "Telemundo",
-      "news": [
-        {
-          "url": "https://www.telemundo.com/noticias/noticias-telemundo/estados-unidos/hallan-una-bomba-cerca-de-una-planta-de-etanol-en-illinois-y-ordenan-e-rcna609318",
-          "title": "Hallan una bomba cerca de una planta de etanol en Illinois y ordenan evacuar a los residentes de la zona",
-          "publisher": "Telemundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vAI0FKokWmYJzAX_pWu05LTD1C7JPcu47At58V0bBMrO0O0hGTI_mnauqnI"
-        },
-        {
-          "url": "https://palabrasclaras.mx/politica/amenaza-de-bomba-en-planta-industrial-obliga-a-evacuar-viviendas-y-negocios-en-illinois/",
-          "title": "Amenaza de bomba en planta industrial obliga a evacuar viviendas y negocios en Illinois",
-          "publisher": "PalabrasClaras.mx",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZrOyeorOQCcQOavIcyN2abBSrWi0xaTU8vPzm2AkWHJqDCznKUfXSWfpqtzg"
-        },
-        {
-          "url": "https://gamavision.com/noticias/desalojan-a-5-mil-personas-tras-hallazgo-de-una-bomba-en-planta-de-etanol-en-illinois",
-          "title": "Desalojan a 5 mil personas tras hallazgo de una bomba en planta de etanol en Illinois",
-          "publisher": "gamavisión",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAmwNpR-BqoMB2deP5U8qCtkTqfKODXzVL1z9pCv7k5H9JYajhRlNjF6HSVSY"
-        }
-      ]
-    },
-    {
-      "query": "washington vs mi state",
+      "query": "oregon state vs boise state",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T21:30:00Z",
+      "published_at": "2026-11-14T22:10:00Z",
       "related_news_urls": [
-        "https://www.wilx.com/2026/11/14/msu-washington-football-kickoff-time-pushed-back/",
-        "https://www.seattletimes.com/sports/washington-huskies-football/washington-huskies-at-michigan-state-live-updates-score-kickoff-time/",
-        "https://www.freep.com/story/sports/2026/11/13/which-detroit-and-michigan-sports-teams-are-stranded-by-faa-grounding/92768580007/"
+        "https://sports.yahoo.com/articles/pat-mcafee-literally-smashes-oregon-210019189.html",
+        "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article318080108.html",
+        "https://www.saturdaydownsouth.com/news/college-football/pat-mcafee-arrives-to-college-gameday-set-on-horseback-cites-faa-delays/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5Aiu4-s8ZH7abM1Zfo8oT0rowAP2bAZ9PjQRn9FrW8GeMhaU8xN7_GGjoTqI",
-      "image_credit": "WILX",
-      "news": [
-        {
-          "url": "https://www.wilx.com/2026/11/14/msu-washington-football-kickoff-time-pushed-back/",
-          "title": "MSU-Washington football kickoff time pushed back",
-          "publisher": "WILX",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5Aiu4-s8ZH7abM1Zfo8oT0rowAP2bAZ9PjQRn9FrW8GeMhaU8xN7_GGjoTqI"
-        },
-        {
-          "url": "https://www.seattletimes.com/sports/washington-huskies-football/washington-huskies-at-michigan-state-live-updates-score-kickoff-time/",
-          "title": "Live: Updates: Delayed Huskies will fight for bowl eligibility at Michigan State",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoeSfsooi6qThpmvJl_c7vn3IsHihU5dgPN_yzJMeKgtCHq2whVn9riO-RPFw"
-        },
-        {
-          "url": "https://www.freep.com/story/sports/2026/11/13/which-detroit-and-michigan-sports-teams-are-stranded-by-faa-grounding/92768580007/",
-          "title": "Which Detroit and Michigan sports teams are stranded by FAA grounding?",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRmss4tR1-KqGO_QNoreItAfs1DrHLanFYzNk0BT06Yg0my1v9N0C5vXECzn0"
-        }
-      ]
-    },
-    {
-      "query": "arizona state vs ucf",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T21:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/ucf-football-vs-arizona-state-193042011.html",
-        "https://247sports.com/college/arizona-state/article/asu-football-ucf-kenny-dillingham-scott-frost-jake-fette-orlando-florida-big-12-conference-reed-harris-alonza-barnett-iii-keyone-jenkins-292618227/",
-        "https://www.si.com/college/ucf/football/how-to-watch-ucf-knights-vs-arizona-state-sun-devils-tv-channel-kickoff-time-everything-you-need-to-know-scott-frost-lewis-carter-mikey-keene-faa-ground-stop-01m7bsyw2hs1"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQElo2ykmWjxNMFrCnOAs6WImhnPPY_Jb5zi0lR6rrs0H0ZxTFKb0fxVVTPGTc",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI3LMAGpUzfZ5MrQoDND1CzoNZb7911Wkg8vukdsg6vxsKPGiQl6Y_IKEkP0w",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/ucf-football-vs-arizona-state-193042011.html",
-          "title": "UCF football vs Arizona State live updates: Start time, TV, predictions",
+          "url": "https://sports.yahoo.com/articles/pat-mcafee-literally-smashes-oregon-210019189.html",
+          "title": "Pat McAfee literally smashes Oregon State helmet after Boise State football pick",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQElo2ykmWjxNMFrCnOAs6WImhnPPY_Jb5zi0lR6rrs0H0ZxTFKb0fxVVTPGTc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI3LMAGpUzfZ5MrQoDND1CzoNZb7911Wkg8vukdsg6vxsKPGiQl6Y_IKEkP0w"
         },
         {
-          "url": "https://247sports.com/college/arizona-state/article/asu-football-ucf-kenny-dillingham-scott-frost-jake-fette-orlando-florida-big-12-conference-reed-harris-alonza-barnett-iii-keyone-jenkins-292618227/",
-          "title": "ASU vs UCF: How to watch, betting lines, staff picks, depth chart",
-          "publisher": "247Sports",
+          "url": "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article318080108.html",
+          "title": "A gender reveal, Pat McAfee horseback - experience Boise State’s ‘College GameDay’",
+          "publisher": "Idaho Statesman",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbN5AVZEXb1r3rpeU8V7iQmsScA1p0eTPB89c-1eLydzV6BnxAwqUaFG0NNo8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5MbuOHtDHpSIM7w9HJhz8y7PSXQ3kZ3HCyfQSeCn1Ey3bOJn66yntdln7V3s"
         },
         {
-          "url": "https://www.si.com/college/ucf/football/how-to-watch-ucf-knights-vs-arizona-state-sun-devils-tv-channel-kickoff-time-everything-you-need-to-know-scott-frost-lewis-carter-mikey-keene-faa-ground-stop-01m7bsyw2hs1",
-          "title": "How to Watch UCF Knights vs. Arizona State: TV Channel, Kickoff Time, and Everything You Need To Know",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.saturdaydownsouth.com/news/college-football/pat-mcafee-arrives-to-college-gameday-set-on-horseback-cites-faa-delays/",
+          "title": "Pat McAfee arrives to College GameDay set on horseback, cites FAA delays",
+          "publisher": "Saturday Down South",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDuKlC2iR_6WRX78zE6Qk609Q7id46_YV24cL8IW0iQAFZ00-YgdFKMEJlG2Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSp1SZwJHMK0pzNScsZkDKA4uP1pKGJyjsY2SLGFMGoF6rkU1heJs9z7nkkiow"
         }
       ]
     },
     {
-      "query": "julian hall",
+      "query": "elina svitolina",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T21:30:00Z",
+      "published_at": "2026-11-14T22:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50482590/julian-hall-usa-poland-haiti-fifa-nations-league-concacaf",
-        "https://sports.yahoo.com/articles/julian-hall-cap-tied-usmnt-204331110.html",
-        "https://www.usatoday.com/story/sports/soccer/usmnt/2026/11/14/julian-hall-cap-tied-usmnt-poland/92748412007/"
+        "https://kyivindependent.com/tsikhanouskaya-ally-condemns-belarusian-athlete-for-insulting-ukrainian-opponent-complacency-in-russias-war/",
+        "https://sports.yahoo.com/articles/sabalenka-sorry-outburst-svitolina-defeat-215629998.html",
+        "https://thespun.com/tennis/aryna-sabalenka-apologizes-after-showing-poor-sportsmanship-at-wta-finals"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlosKthIvUfK-ciMAZ1_iWp3f1V-Fh53UVF__FV8RPehpogFyfjT7A9LpsRhY",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYx9vMPT6gpP7To5fDW9KBYfIS2IAYOZpv6LiDHRjdyxVHVTZI_uUqcZJNkB0",
+      "image_credit": "The Kyiv Independent",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50482590/julian-hall-usa-poland-haiti-fifa-nations-league-concacaf",
-          "title": "Dual-national Julian Hall officially tied to USMNT with appearance vs. Haiti",
+          "url": "https://kyivindependent.com/tsikhanouskaya-ally-condemns-belarusian-athlete-for-insulting-ukrainian-opponent-complacency-in-russias-war/",
+          "title": "Tsikhanouskaya ally condemns Belarusian athlete for insulting Ukrainian opponent, complacency in Russia's war",
+          "publisher": "The Kyiv Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYx9vMPT6gpP7To5fDW9KBYfIS2IAYOZpv6LiDHRjdyxVHVTZI_uUqcZJNkB0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/sabalenka-sorry-outburst-svitolina-defeat-215629998.html",
+          "title": "Sabalenka sorry for outburst in Svitolina defeat",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAn95vQSQK-jmSkyptUKqzMeG6w6FWxxbpmQBAttJWu2L-nR779CTJE_4kI-c"
+        },
+        {
+          "url": "https://thespun.com/tennis/aryna-sabalenka-apologizes-after-showing-poor-sportsmanship-at-wta-finals",
+          "title": "Aryna Sabalenka Apologizes After Showing Poor Sportsmanship At WTA Finals",
+          "publisher": "The Spun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlEVdti_7gtVSJyF3p2mqTlI0-RYYsWQzAkO_Rm3Q5HNrfM_7GEaud2fz639s"
+        }
+      ]
+    },
+    {
+      "query": "weber state vs northern az",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T22:10:00Z",
+      "related_news_urls": [
+        "https://nauathletics.com/news/2026/11/13/saturdays-nau-football-kickoff-versus-weber-state-moved-back-to-4-pm.aspx",
+        "https://www.espn.com/espnplus/player/_/eventCalendarId/401868127",
+        "https://www.azcentral.com/story/sports/college/nau/2026/11/12/northern-arizona-football-eyes-revenge-red-rock-trophy-against-weber-state/92747718007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbQWJkB8TiwSLMDAPQHm6rMhNe7moZFuQ_x4Bxykxgtga6TaajlZP8DaG9wSY",
+      "image_credit": "Northern Arizona University Athletics",
+      "news": [
+        {
+          "url": "https://nauathletics.com/news/2026/11/13/saturdays-nau-football-kickoff-versus-weber-state-moved-back-to-4-pm.aspx",
+          "title": "Saturday’s NAU Football Kickoff Versus Weber State Moved Back to 4 p.m.",
+          "publisher": "Northern Arizona University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbQWJkB8TiwSLMDAPQHm6rMhNe7moZFuQ_x4Bxykxgtga6TaajlZP8DaG9wSY"
+        },
+        {
+          "url": "https://www.espn.com/espnplus/player/_/eventCalendarId/401868127",
+          "title": "Weber State vs. Northern Arizona",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlosKthIvUfK-ciMAZ1_iWp3f1V-Fh53UVF__FV8RPehpogFyfjT7A9LpsRhY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIIS8CnYzasbpAMRNL8xqspDrHd0dfWACMlpP6JGWryLek5cCYQZFpUn7Q1I0"
         },
         {
-          "url": "https://sports.yahoo.com/articles/julian-hall-cap-tied-usmnt-204331110.html",
-          "title": "Julian Hall cap-tied to USMNT after Nations League appearance vs Haiti",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.azcentral.com/story/sports/college/nau/2026/11/12/northern-arizona-football-eyes-revenge-red-rock-trophy-against-weber-state/92747718007/",
+          "title": "No. 5 NAU Lumberjacks host Weber State seeking 5th straight win",
+          "publisher": "azcentral.com and The Arizona Republic",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9OougZ4ddD3pCaOMbP3EH-LG5QAVLQ93g_VUvt4l5q7De-ntQc9Veavrz2Eg"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/soccer/usmnt/2026/11/14/julian-hall-cap-tied-usmnt-poland/92748412007/",
-          "title": "Julian Hall cap-tied to USMNT after Nations League appearance vs Haiti",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIKH_71IUUSkm0dGWv8Nq0vY7qbo2_lHGqu6lHAXx25ZI7KOZfTLaLit0NIWk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCvJmzNTWpA3ayHHAYSkgCHTCcr_Gc9NDwSC1OVoJ2-ASnPFKC0EtuqOEf2dc"
         }
       ]
     },
     {
-      "query": "nolan james jr",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T21:30:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/notre-dame/article/notre-dame-fighting-irish-college-football-running-back-nolan-james-jr-feeling-electric-after-defeating-no-1-miami-hurricanes-292637679/",
-        "https://irishsportsdaily.com/s/28550/6-thoughts-on-a-thursday",
-        "https://www.sportsmediawatch.com/2026/11/miami-notre-dame-viewership-nbc-most-watched-week-ten-alabama-lsu-abc/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVexOczDuZ5tRmRfmEFE1krZzChN3jqm9K_c9bzuOLOLZgywAKYruTgcZhJyY",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/notre-dame/article/notre-dame-fighting-irish-college-football-running-back-nolan-james-jr-feeling-electric-after-defeating-no-1-miami-hurricanes-292637679/",
-          "title": "Notre Dame’s Nolan James Jr. Feeling ‘Electric’ After Defeating No. 1 Miami",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVexOczDuZ5tRmRfmEFE1krZzChN3jqm9K_c9bzuOLOLZgywAKYruTgcZhJyY"
-        },
-        {
-          "url": "https://irishsportsdaily.com/s/28550/6-thoughts-on-a-thursday",
-          "title": "6 Thoughts on a Thursday",
-          "publisher": "Irish Sports Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFEHpbpw0O0ojRSOjv_w6znGgtDRF9MRVaou9ZU-Sh2KRtUePbV2hV2o8G-sI"
-        },
-        {
-          "url": "https://www.sportsmediawatch.com/2026/11/miami-notre-dame-viewership-nbc-most-watched-week-ten-alabama-lsu-abc/",
-          "title": "More variety in top CFB audiences as NBC’s Miami-Notre Dame wins week ten",
-          "publisher": "Sports Media Watch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwK9xw1oxv9wD8mQYLyyW92J68H_jT5h4f4kFzc-x71aNKX7L1eHwp2_T5t6w"
-        }
-      ]
-    },
-    {
-      "query": "alateng heili",
+      "query": "linda nosková",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T21:30:00Z",
+      "published_at": "2026-11-14T22:10:00Z",
       "related_news_urls": [
-        "https://www.ufc.com/news/updates-polymarket-ufc-334-gane-vs-hokit",
-        "https://sports.yahoo.com/articles/heili-alateng-vs-juan-diaz-100042435.html",
-        "https://sports.betmgm.com/en/blog/ufc/334-alatengheili-juan-diaz-predictions-odds-bm05/"
+        "https://www.wtatennis.com/news/4609170/follow-live-a-semifinal-saturday-you-wont-want-to-miss-at-the-fage-wta-finals",
+        "https://www.nytimes.com/athletic/7750694/2026/11/13/wta-finals-2026-draw-prize-money-format-schedule/",
+        "https://www.reutersconnect.com/item/wta-finals-indian-wells/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkUxTUcwQUc"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnRMeE0eGmfvyMh2J15D4QPe3cf6QhutahsuEjbuty-Q3aDqjlbL_Ad0_y-P4",
-      "image_credit": "UFC.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSso4yiMBPlun0qZvjy80Xo_Al_n9BVSoHpu5LQ76-OOsmE4fe9xOK1cws15tA",
+      "image_credit": "WTA Tennis",
       "news": [
         {
-          "url": "https://www.ufc.com/news/updates-polymarket-ufc-334-gane-vs-hokit",
-          "title": "Updates To Polymarket UFC 334: Gane vs Hokit",
-          "publisher": "UFC.com",
+          "url": "https://www.wtatennis.com/news/4609170/follow-live-a-semifinal-saturday-you-wont-want-to-miss-at-the-fage-wta-finals",
+          "title": "Follow live: A semifinal Saturday you won’t want to miss at the FAGE WTA Finals",
+          "publisher": "WTA Tennis",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnRMeE0eGmfvyMh2J15D4QPe3cf6QhutahsuEjbuty-Q3aDqjlbL_Ad0_y-P4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSso4yiMBPlun0qZvjy80Xo_Al_n9BVSoHpu5LQ76-OOsmE4fe9xOK1cws15tA"
         },
         {
-          "url": "https://sports.yahoo.com/articles/heili-alateng-vs-juan-diaz-100042435.html",
-          "title": "Heili Alateng vs Juan Diaz Prediction, Picks, Odds for UFC 334, Saturday, November 14",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nytimes.com/athletic/7750694/2026/11/13/wta-finals-2026-draw-prize-money-format-schedule/",
+          "title": "WTA Finals 2026: Singles semifinals set after Elina Svitolina shocks Aryna Sabalenka - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMeGYcoYQMeWsz7T0H9JSn_pS8ybJNhi6NThCTkoXtbNvALj2b4yciZFRtOUg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0IqHtgcEZDTsPM29rkQ8pa7NBVLYHhSfxwH_eLRqAKH43izYAUP8DGCqCC0E"
         },
         {
-          "url": "https://sports.betmgm.com/en/blog/ufc/334-alatengheili-juan-diaz-predictions-odds-bm05/",
-          "title": "UFC 334: Alatengheili vs. Juan Diaz Predictions & Odds",
-          "publisher": "sports.betmgm.com",
+          "url": "https://www.reutersconnect.com/item/wta-finals-indian-wells/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkUxTUcwQUc",
+          "title": "Licensable picture: WTA Finals Indian Wells",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7aIdLztdJ_leSdHNZP3ItBT9rATsLswFwAgEFGu5ReM7EMwczBodDyIcaMWc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF0E4FDnLj237YQ8DBd4cvLGZoKSfbPrqIARnHlCWwL0Z33cJzgkU-gZGfWAc"
         }
       ]
     },
     {
-      "query": "jeremiah mcclellan",
+      "query": "kelly monaco anniversary tribute heath freeman",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T21:30:00Z",
+      "published_at": "2026-11-14T22:10:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/oregon/article/jeremiah-mcclellan-explains-how-he-broke-his-foot-before-portland-state-talks-challenges-of-returning-292530919/",
-        "https://sports.yahoo.com/articles/dan-lanning-says-quiet-part-152000934.html",
-        "https://www.centraloregondaily.com/sports/oregon_ducks/oregon-wr-jeremiah-mcclellan-opens-up-on-challenges-of-returning-to-play/article_56a2b793-e3fa-518b-acb9-d86b465740da.html"
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/general-hospital-kelly-monaco-mourns-203213430.html",
+        "https://www.imdb.com/news/ni66111007/?ref_=nwc_art_perm",
+        "https://www.tvinsider.com/swooon/1312757/general-hospital-kelly-monaco-heath-freeman-love-story-tribute-video/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStNtylwISAJKon9RdLX6Ws5Ks-8DvS1DBg06tk3OyikusJNqG008r33yomxbE",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStvntT2uRQ4emoBBqdKBddwV02zo973UBAeOc_ittAuxq-PUewPWoWsoTSEg",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://247sports.com/college/oregon/article/jeremiah-mcclellan-explains-how-he-broke-his-foot-before-portland-state-talks-challenges-of-returning-292530919/",
-          "title": "Jeremiah McClellan explains how he broke his foot before Portland State, talks challenges of returning",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStNtylwISAJKon9RdLX6Ws5Ks-8DvS1DBg06tk3OyikusJNqG008r33yomxbE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/dan-lanning-says-quiet-part-152000934.html",
-          "title": "Dan Lanning Says the Quiet Part Out Loud About Jeremiah McClellan's Return From Injury",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6sTNcAltkm_unJkjp7pqiR_GMKkzgx9QjdSu9R_g8mB6xpyc-M1VYjjPbMG0"
-        },
-        {
-          "url": "https://www.centraloregondaily.com/sports/oregon_ducks/oregon-wr-jeremiah-mcclellan-opens-up-on-challenges-of-returning-to-play/article_56a2b793-e3fa-518b-acb9-d86b465740da.html",
-          "title": "Oregon WR Jeremiah McClellan opens up on challenges of returning to play",
-          "publisher": "Central Oregon Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF9IywoWfmGDvRNK-Z2w7mFcAMaH-XbWafte4wcEIWES8CvJjVGw6R1sIITqs"
-        }
-      ]
-    },
-    {
-      "query": "valerie bertinelli",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T21:20:00Z",
-      "related_news_urls": [
-        "https://people.com/valerie-bertinelli-shows-off-her-weight-loss-in-new-video-feeling-good-12254420",
-        "https://www.yahoo.com/entertainment/celebrity/articles/food-network-star-66-lifts-035902511.html",
-        "https://www.usmagazine.com/celebrity-body/news/valerie-bertinelli-flaunts-midsection-amid-weight-loss-journey/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjj73Y0czYI88wCgk_ValEqRj8WHqau65IHynJU517-fBZ6eY4AUaA5QsqnDk",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/valerie-bertinelli-shows-off-her-weight-loss-in-new-video-feeling-good-12254420",
-          "title": "Valerie Bertinelli Proudly Shows Off Her Ongoing Weight Loss in New Video: ‘Feelin’ Good’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjj73Y0czYI88wCgk_ValEqRj8WHqau65IHynJU517-fBZ6eY4AUaA5QsqnDk"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/food-network-star-66-lifts-035902511.html",
-          "title": "Food Network star, 66, lifts her top to showcase incredible weight loss transformation in new video",
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/general-hospital-kelly-monaco-mourns-203213430.html",
+          "title": "General Hospital’s Kelly Monaco Mourns On a Heartbreaking Anniversary: ‘Missing a Piece of My Heart’",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8p9qDqt35wLzqMOtxsk0HUmtp7mL4bsybTcXxg-_Y257dNI6W3ieXYA_BRlg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStvntT2uRQ4emoBBqdKBddwV02zo973UBAeOc_ittAuxq-PUewPWoWsoTSEg"
         },
         {
-          "url": "https://www.usmagazine.com/celebrity-body/news/valerie-bertinelli-flaunts-midsection-amid-weight-loss-journey/",
-          "title": "Valerie Bertinelli Flaunts Bare Midsection Amid Ongoing Weight Loss Journey: ‘Feelin Good’",
-          "publisher": "Us Weekly",
+          "url": "https://www.imdb.com/news/ni66111007/?ref_=nwc_art_perm",
+          "title": "‘General Hospital’s Kelly Monaco Remembers Heath Freeman: ‘Missing a Piece of My Heart’",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJMdOwxL1VE77OBnyvjAfijMrlliwlb1PNnYOUu_QUEqvuLo2go1G8JEydFd8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjctnWzA2jq5o14XlDml40ap8BS-r4PQDg5n5LCtRq42L37lVfW1dU1fhtMdo"
+        },
+        {
+          "url": "https://www.tvinsider.com/swooon/1312757/general-hospital-kelly-monaco-heath-freeman-love-story-tribute-video/",
+          "title": "‘GH’s Kelly Monaco Remembers Her 'Love Story' With Heath Freeman",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVNIvKa57ZkRjA0QJRYF0f2pVINXkcwCKphmlXN-B51TilN0_b5xUzFcHkmPU"
+        }
+      ]
+    },
+    {
+      "query": "ysu football",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T22:10:00Z",
+      "related_news_urls": [
+        "https://www.wkbn.com/sports/ysu-football-and-basketball-game-schedules-changed-following-nationwide-ground-stop/",
+        "https://www.wfmj.com/news/local-news/ysu-changes-saturday-athletic-schedule-due-to-ground-stop/article_f6513627-526b-4091-a701-c4185dd8ddc7.html",
+        "https://herdzone.com/news/2026/11/13/mens-basketball-marshall-mens-basketballs-nov-14-game-time-switched-to-1-pm"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx41X-q51s3UwbGubO326Rt-GlP10aJCZqUiHGxeIEADjjxewt72Zpjs-iFTY",
+      "image_credit": "WKBN.com",
+      "news": [
+        {
+          "url": "https://www.wkbn.com/sports/ysu-football-and-basketball-game-schedules-changed-following-nationwide-ground-stop/",
+          "title": "YSU football and basketball game schedules changed following nationwide ground stop",
+          "publisher": "WKBN.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx41X-q51s3UwbGubO326Rt-GlP10aJCZqUiHGxeIEADjjxewt72Zpjs-iFTY"
+        },
+        {
+          "url": "https://www.wfmj.com/news/local-news/ysu-changes-saturday-athletic-schedule-due-to-ground-stop/article_f6513627-526b-4091-a701-c4185dd8ddc7.html",
+          "title": "YSU changes Saturday athletic schedule due to ground stop",
+          "publisher": "WFMJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5ugl0aaRHUfvOXHmxZLqtlpdYOJNVyYoK8FDMuVlTdPDUwULRumppRN37g"
+        },
+        {
+          "url": "https://herdzone.com/news/2026/11/13/mens-basketball-marshall-mens-basketballs-nov-14-game-time-switched-to-1-pm",
+          "title": "Marshall Men’s Basketball’s Nov. 14 Game-Time Switched To 1 p.m.",
+          "publisher": "Marshall University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2DNVPR_S9jHqhJ9XtZNxIuWhiqc7-Vcj71J0959F-IKWxtD9Au8ZoO3PCXPI"
+        }
+      ]
+    },
+    {
+      "query": "app state vs marshall",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T22:00:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/ncaaf/appalachian-state-mountaineers-vs-marshall-thundering-herd-prediction-odds-2026-11-14/",
+        "https://247sports.com/college/marshall/article/game-thread-app-state-292639381/",
+        "https://herdzone.com/news/2026/11/13/marshall-football-hosts-app-state-at-6-pm-on-saturday"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/appalachian-state-mountaineers-vs-marshall-thundering-herd-prediction-odds-2026-11-14/",
+          "title": "Appalachian State vs Marshall Prediction, Picks & Odds | 14 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
+        },
+        {
+          "url": "https://247sports.com/college/marshall/article/game-thread-app-state-292639381/",
+          "title": "Game Thread: App State",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSavSLSyR40hnkbE1qljnKD8N0Ukou95XsC7Z7S_Q2H_EWCMh6hqBkXNAw9LKM"
+        },
+        {
+          "url": "https://herdzone.com/news/2026/11/13/marshall-football-hosts-app-state-at-6-pm-on-saturday",
+          "title": "Marshall Football Hosts App State At 6 p.m. On Saturday",
+          "publisher": "Marshall University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4R2aKRIjIjEJg3yGQmRLTULQY0iZK5nMx7ujqwdDdQ-9uRS7R6oFsvgMdtJE"
+        }
+      ]
+    },
+    {
+      "query": "league 2",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T22:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c8vgxg1re3q1t",
+        "https://www.essexcountynews.co.uk/sport/national/26729871.peter-cklamovski-frustrated-salfords-disjointed-first-half/",
+        "https://www.northamptonchron.co.uk/sport/football/mixed-emotions-for-hogg-after-cobblers-hold-the-league-leaders-9351329"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYcRbGaH-RqfHSYABOydL58VWN-5uDji-DtRJ-4E49yAsuw9QQj3soCmzm0QY",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c8vgxg1re3q1t",
+          "title": "Salford City 1-1 Northampton Town: League Two leaders held at home",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYcRbGaH-RqfHSYABOydL58VWN-5uDji-DtRJ-4E49yAsuw9QQj3soCmzm0QY"
+        },
+        {
+          "url": "https://www.essexcountynews.co.uk/sport/national/26729871.peter-cklamovski-frustrated-salfords-disjointed-first-half/",
+          "title": "Peter Cklamovski frustrated with Salford’s ‘disjointed first half’",
+          "publisher": "www.essexcountynews.co.uk",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQXwO4XJuunW5vLljupEipf3cK4ANYrvaeJmoVMG6wyW9GFqLabsVqcaM0A-g"
+        },
+        {
+          "url": "https://www.northamptonchron.co.uk/sport/football/mixed-emotions-for-hogg-after-cobblers-hold-the-league-leaders-9351329",
+          "title": "Mixed emotions for Hogg after Cobblers hold the league leaders",
+          "publisher": "Northampton Chronicle and Echo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQZH6Yey91Tjyp_Gahcsl7Tb5JwMhp6b2LVptQFMJMYvDezVnyBKDcS6S2xo8"
+        }
+      ]
+    },
+    {
+      "query": "protect college sports act",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T22:00:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/sports/randy-levine-yankees-trump-protect-college-sports-act-6e118a2c",
+        "https://www.ms.now/opinion/protect-college-sports-act-democrats-midterms-trump",
+        "https://www.cnbc.com/2026/11/12/yankees-randy-levine-discusses-college-sports-bill-mlb-labor-deal.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM_dDhEbh5p08U4HEHacpcZEk_DNt0NFkLU5roOcPsCIFN9C81YV87W8ocYaU",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/sports/randy-levine-yankees-trump-protect-college-sports-act-6e118a2c",
+          "title": "The Top Yankees Executive at the Center of College Sports’ Big Fight",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM_dDhEbh5p08U4HEHacpcZEk_DNt0NFkLU5roOcPsCIFN9C81YV87W8ocYaU"
+        },
+        {
+          "url": "https://www.ms.now/opinion/protect-college-sports-act-democrats-midterms-trump",
+          "title": "Opinion | Democrats’ blue wave has doused Trump’s college sports hopes",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqdgq7l0rL0sewphxKtKBbOoxFyfiDK0an7-xi_1Qha6wTmXL-ZSxHIRS02D4"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/12/yankees-randy-levine-discusses-college-sports-bill-mlb-labor-deal.html",
+          "title": "Yankees President Randy Levine pushes college sports bill, discusses MLB labor negotiations",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWXkyh87HRjJNKeK62GcOnDkT8ST8mzHXgq8SI1VN5xVfOFSvL5XdmbhYsJQc"
+        }
+      ]
+    },
+    {
+      "query": "lehigh football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T22:00:00Z",
+      "related_news_urls": [
+        "https://www.mcall.com/2026/11/13/patriot-league-football-the-ayache-family-will-be-busy-saturday-as-becahi-lehigh-have-big-games/",
+        "https://www.college-sports-journal.com/game-eleven-lehigh-at-richmond-spiders-strive-to-spoil-mountain-hawk-threepeat/",
+        "https://pafootballnews.com/lehigh-travels-to-richmond-for-patriot-league-showdown-with-spiders/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHlslDxn0pcnk91ix-eHfrIuQp753zDgViID7WY5Gp2_N-_zohJ2kRZtJOxSg",
+      "image_credit": "The Morning Call",
+      "news": [
+        {
+          "url": "https://www.mcall.com/2026/11/13/patriot-league-football-the-ayache-family-will-be-busy-saturday-as-becahi-lehigh-have-big-games/",
+          "title": "Patriot League football: The Ayache family will be busy Saturday as Becahi, Lehigh have big games",
+          "publisher": "The Morning Call",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHlslDxn0pcnk91ix-eHfrIuQp753zDgViID7WY5Gp2_N-_zohJ2kRZtJOxSg"
+        },
+        {
+          "url": "https://www.college-sports-journal.com/game-eleven-lehigh-at-richmond-spiders-strive-to-spoil-mountain-hawk-threepeat/",
+          "title": "GAME ELEVEN, LEHIGH AT RICHMOND – Spiders Strive to Spoil Mountain Hawk Threepeat",
+          "publisher": "College Sports Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD6aQyBrprNC4KWwg5gw6VgY4Cgc_6IvZJ4QcGi_HYHXgzpQgfASPjPaU2a5c"
+        },
+        {
+          "url": "https://pafootballnews.com/lehigh-travels-to-richmond-for-patriot-league-showdown-with-spiders/",
+          "title": "Lehigh Travels to Richmond for Patriot League Showdown with Spiders",
+          "publisher": "PA Football News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7s_GVI_VDx30Z2wrvdFa6uJYYp5I_9MEdsq-qkg_cSjJp11gy46rc003OokE"
         }
       ]
     }
