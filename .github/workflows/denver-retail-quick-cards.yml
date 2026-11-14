@@ -1,0 +1,31 @@
+name: Denver retail Quick Card acceptance
+on:
+  pull_request:
+    paths:
+      - 'denver-retail-*'
+      - 'test/denver-retail-quick-cards.test.mjs'
+      - 'index.html'
+      - '.github/workflows/denver-retail-quick-cards.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'denver-retail-*'
+      - 'test/denver-retail-quick-cards.test.mjs'
+      - '.github/workflows/denver-retail-quick-cards.yml'
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check new module syntax
+        run: |
+          node --check denver-retail-catalog.mjs
+          node --check denver-retail-quick-cards.mjs
+      - name: Denver retail and neighboring Oracle regression tests
+        run: |
+          node --test test/denver-retail-quick-cards.test.mjs test/premium-source-cards.test.mjs test/brand-product-cards.test.mjs test/source-quick-cards.test.mjs test/oracle-deck-cycle.test.mjs

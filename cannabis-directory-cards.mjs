@@ -1,0 +1,98 @@
+/* Canonical display model for independently sourced dispensary listings.
+ * This is not a regulated product advertisement, live menu or a checkout.
+ * Media requires documented reuse rights; testimonials require user consent,
+ * moderation and a dated independent source. No inferred ratings/claims. */
+const https=raw=>{try{const u=new URL(raw);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port?u:null}catch{return null}};
+const str=(raw,max=180)=>typeof raw==='string'?raw.replace(/[\u0000-\u001f<>]/g,' ').replace(/\s+/g,' ').trim().slice(0,max):'';
+export function sourceLinkAllowed(raw,domain){
+ const u=https(raw),d=String(domain||'').toLowerCase();
+ return !!u&&/^[a-z0-9-]+(?:\.[a-z0-9-]+)+$/.test(d)&&(u.hostname===d||u.hostname.endsWith('.'+d));
+}
+function reviewQuote(q){
+ if(!q||q.approved!==true||q.consented!==true||!str(q.text,320)||
+  !str(q.reviewer,90)||!str(q.publisher,100)||!https(q.source_url)||
+  !Number.isFinite(Date.parse(q.published_at)))return null;
+ return {text:str(q.text,320),reviewer:str(q.reviewer,90),
+  publisher:str(q.publisher,100),sourceUrl:q.source_url};
+}
+function reviewMedia(m,sourceHost){
+ if(!m||m.status!=='approved'||m.rights_cleared!==true||!m.publisher||
+  !Number.isFinite(Date.parse(m.reviewed_at)))return null;
+ const u=https(m.url);
+ if(!u||!sourceLinkAllowed(m.source_url,sourceHost))return null;
+ // The asset must be on the verified merchant domain or a specifically
+ // reviewed image CDN; no redirect, SVG, data URL or random thumbnail.
+ if(!sourceLinkAllowed(m.url,sourceHost))return null;
+ if(!/\.(?:jpg|jpeg|png|webp)(?:$|\?)/i.test(u.href))return null;
+ return u.href;
+}
+// Official license IDs contain punctuation and uppercase. Encode their exact
+// ASCII bytes as reversible, collision-free lowercase base32 for DOM/feed IDs.
+// The resulting directory-store- ID is <=70 chars, matching feed persistence.
+const BASE32='abcdefghijklmnopqrstuvwxyz234567';
+function base32Bytes(bytes){
+ let bits=0,value=0,encoded='';
+ for(const byte of bytes){
+  value=(value<<8)|byte;bits+=8;
+  while(bits>=5){bits-=5;encoded+=BASE32[(value>>bits)&31]}
+  value&=(1<<bits)-1;
+ }
+ if(bits)encoded+=BASE32[(value<<(5-bits))&31];
+ return encoded;
+}
+// Official regulator-derived keys can exceed 31 ASCII bytes. Use a compact,
+// deterministic 128-bit non-cryptographic digest for DOM/feed identity only;
+// this is not an authentication token or a license verification.
+// 'z' is outside the first base32 symbol for an ASCII alphanumeric raw ID,
+// so long-key IDs cannot alias the legacy reversible short-key namespace.
+function longKeyDigest(raw){
+ const mask=0xffffffffffffffffn,prime=0x100000001b3n;
+ const fnv=(input,seed)=>{
+  let hash=seed;
+  for(let i=0;i<input.length;i++){
+   hash^=BigInt(input.charCodeAt(i));
+   hash=(hash*prime)&mask;
+  }
+  return hash;
+ };
+ const hashes=[fnv(raw,0xcbf29ce484222325n),fnv([...raw].reverse().join(''),0x84222325cbf29ce4n)];
+ const bytes=[];
+ for(const hash of hashes){
+  for(let shift=56n;shift>=0n;shift-=8n)bytes.push(Number((hash>>shift)&255n));
+ }
+ return 'z'+base32Bytes(bytes);
+}
+export function directoryCardId(raw){
+ if(typeof raw!=='string'||!/^[A-Za-z0-9][A-Za-z0-9:._-]{2,109}$/.test(raw))return null;
+ const encoded=raw.length<=31
+  ?base32Bytes(Array.from(raw,c=>c.charCodeAt(0)))
+  :longKeyDigest(raw);
+ return 'directory-store-'+encoded;
+}
+export function directoryCardView(row,acknowledged){
+ const cardId=directoryCardId(row?.id);
+ if(acknowledged!==true||!row||row.sponsored!==false||!cardId||
+  !/^[A-Z]{2}$/.test(String(row.state||''))||!str(row.name)||!str(row.city))return null;
+ const source=https(row.source_url);
+ if(!source||!sourceLinkAllowed(row.source_url,row.source_domain||source.hostname))return null;
+ const star=row.quality_star==='★'&&Array.isArray(row.quality_sources)&&row.quality_sources.length>=2;
+ return {id:cardId,sourceId:row.id,name:str(row.name,140),
+  store:str(row.store,100),city:str(row.city,90),state:row.state,
+  address:str(row.address,240),sourceName:str(row.source_name,120),sourceUrl:source.href,
+  licenseStatus:str(row.license_status,60)||'unverified',
+  accessType:row.access_type==='medical_only'?'medical_only':'unreviewed',
+  qualityLabel:star?'★ Independently reviewed customer-experience evidence':'Unrated',
+  qualitySources:star?row.quality_sources.filter(u=>!!https(u)).slice(0,3):[],
+  sponsorLabel:'Independent directory listing',imageUrl:reviewMedia(row.media,row.source_domain||source.hostname),
+  testimonial:reviewQuote(row.testimonial)};
+}
+export function uniqueStoreCards(rows,existing=[]){
+ const seen=new Set(existing),out=[];
+ for(const row of Array.isArray(rows)?rows:[]){
+  const cardId=directoryCardId(row?.id);
+  if(!cardId||seen.has('dispensary-'+row.id)||seen.has(cardId))continue;
+  seen.add(cardId);
+  out.push(row);
+ }
+ return out;
+}

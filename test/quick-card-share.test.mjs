@@ -30,3 +30,21 @@ test('shared URL is composed as a canonical X intent, not an arbitrary embed',as
  assert.equal(new URL(u).hostname,'x.com');
  assert.equal(new URL(u).searchParams.get('url'),'https://quantaphi.org/cards/real-id');
 });
+
+test('published artwork is carried into X and Android quick-card shares',()=>{
+ const page=read('published-quick-card.js');
+ const helper=read('quick-card-share.js');
+ const actions=read('quanta-card-actions.mjs');
+ assert.match(page,/image:c\.image/);
+ assert.match(page,/xShareLink\(c\.cardUrl,c\.title,c\.image/);
+ assert.match(actions,/sharePreviewUrl\(card,host\)/);
+ assert.match(helper,/\/q-share/);
+});
+test('X composer uses the actual card image metadata and returns to card',async()=>{
+ const mod=await import('../quick-card-share.js');
+ const intent=new URL(mod.xShareLink('https://quantaphi.org/cards/sample','Sample Jeans','https://example.org/jeans.jpg','Blue denim quick card'));
+ const preview=new URL(intent.searchParams.get('url'));
+ assert.equal(preview.pathname,'/q-share');
+ assert.equal(preview.searchParams.get('image'),'https://example.org/jeans.jpg');
+ assert.equal(preview.searchParams.get('dest'),'https://quantaphi.org/cards/sample');
+});

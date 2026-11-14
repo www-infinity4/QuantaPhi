@@ -14,7 +14,7 @@ if(!card){status.textContent='This card is not registered.';}else{
  for(const path of card.styles){const link=document.createElement('link');link.rel='stylesheet';link.href='/'+path;document.head.append(link);}
  try{
   for(const path of ['cloud-wallet-client.js',...card.scripts])await new Promise((resolve,reject)=>{
-   const script=document.createElement('script');script.src='/'+path;script.onload=resolve;script.onerror=()=>reject(Error('Card asset unavailable: '+path));document.head.append(script);
+   const script=document.createElement('script');if(path.endsWith('.mjs'))script.type='module';script.src='/'+path;script.onload=resolve;script.onerror=()=>reject(Error('Card asset unavailable: '+path));document.head.append(script);
   });
   if(!mount.childElementCount)throw Error('Card did not render its controls');
   status.hidden=true;

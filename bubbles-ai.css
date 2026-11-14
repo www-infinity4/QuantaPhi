@@ -343,3 +343,176 @@
 #bubblesAICard .ba-signin-button[aria-busy="true"],.ba-panel .ba-signin-button[aria-busy="true"]{
  opacity:.75;cursor:progress;
 }
+
+
+/* 2026 compact Notes bar and full-size viewer. Chat remains the main workspace. */
+.ba-panel .ba-tools{max-height:125px;min-height:48px;overflow:auto;border:1px solid #d7e2e9;background:#f5f9fb;border-radius:14px;padding:5px 9px;margin-top:4px}
+.ba-panel .ba-tools>summary{font-size:14px;color:#164e76;min-height:44px;line-height:1.65;font-weight:850}
+.ba-panel .ba-tools[open]{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.ba-panel .ba-tools[open]>summary{flex:1 0 100%;min-height:36px}
+.ba-panel .ba-tools>.ba-owner-security,.ba-panel .ba-tools>.ba-tools-viewer-launch{
+ flex:1 1 132px;min-height:50px;border-radius:13px;border:1px solid #a9c5d5;
+ background:#eaf4fa;color:#174b72;text-align:center;padding:11px 10px;
+ text-decoration:none;font:800 14px/1.4 system-ui,sans-serif;cursor:pointer;
+ display:inline-flex;align-items:center;justify-content:center
+}
+.ba-panel .ba-tools>.ba-owner-security{background:#086aaf;border-color:#086aaf;color:#fff}
+.ba-panel .ba-tools>[hidden]{display:none!important}
+.ba-tools-viewer[hidden]{display:none!important}
+.ba-tools-viewer{
+ position:fixed;inset:0;z-index:2147483000;display:flex;flex-direction:column;
+ background:#f4f8fb;color:#173c55;font:500 15px/1.5 system-ui,sans-serif;
+ padding:0;overscroll-behavior:contain;box-sizing:border-box
+}
+.ba-tools-viewer *{box-sizing:border-box}
+.ba-tools-viewer-header{
+ display:flex;align-items:center;justify-content:space-between;gap:16px;
+ padding:16px max(16px,env(safe-area-inset-left)) 14px;
+ border-bottom:1px solid #d6e3eb;background:#fff;
+ box-shadow:0 3px 12px #143e5811;flex:none
+}
+.ba-tools-viewer-header h2{margin:0;color:#15527b;font:850 clamp(19px,5vw,25px)/1.2 system-ui,sans-serif}
+.ba-tools-viewer-close{
+ min-height:44px;padding:8px 12px;flex:none;border:1px solid #c4d7e2;border-radius:14px;
+ background:#f4f8fa;color:#173c55;font:700 16px/1.2 system-ui;cursor:pointer
+}
+.ba-tools-viewer-content{
+ flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;
+ display:grid;align-content:start;gap:12px;padding:18px 14px max(22px,env(safe-area-inset-bottom));
+ max-width:850px;width:100%;margin:0 auto
+}
+.ba-tools-viewer-content>*{margin:0!important;min-width:0;max-width:100%}
+.ba-tools-viewer-content .ba-tool-rail{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;border:0;background:transparent;padding:0
+}
+.ba-tools-viewer-content .ba-tool-rail a{
+ min-height:62px;border-radius:15px;background:#edf6fb;border:1px solid #a7cadf;
+ color:#12557b;font:850 15px/1.35 system-ui;text-decoration:none;display:flex;
+ justify-content:center;align-items:center;text-align:center;padding:10px
+}
+.ba-tools-viewer-content label{font:750 15px/1.45 system-ui;color:#1c485e}
+.ba-tools-viewer-content button,.ba-tools-viewer-content summary,.ba-tools-viewer-content select{
+ font:750 15px/1.45 system-ui;min-height:48px;border:1px solid #b7ccda;
+ border-radius:13px;background:#fff;color:#174b6e;padding:10px 14px
+}
+.ba-tools-viewer-content button:active,.ba-tools-viewer-content a:active{transform:scale(.99)}
+.ba-tools-viewer-content textarea,.ba-tools-viewer-content input:not([type=checkbox]){
+ font:500 16px/1.5 system-ui;border:1px solid #b4c8d5;border-radius:13px;
+ min-height:50px;padding:12px;background:#fff;color:#173c55;max-width:100%
+}
+.ba-tools-viewer-content input[type=checkbox]{
+ appearance:none;-webkit-appearance:none;position:relative;vertical-align:middle;display:inline-grid;
+ place-items:center;width:26px!important;height:26px!important;min-width:26px;min-height:26px;
+ margin-right:10px;border:2px solid #91a9b7;border-radius:7px;background:#fff;cursor:pointer
+}
+.ba-tools-viewer-content input[type=checkbox]:checked{background:#13844e;border-color:#13844e}
+.ba-tools-viewer-content input[type=checkbox]:checked::after{
+ content:"✓";font:900 20px/1 system-ui;color:#fff
+}
+.ba-tools-viewer-content input[type=checkbox]:focus-visible,.ba-tools-viewer :focus-visible{
+ outline:3px solid #e2a92e;outline-offset:3px
+}
+.ba-tools-viewer-content .ba-setting-clear{
+ width:43px;min-height:43px;min-width:43px;margin:4px 0 9px 8px;
+ background:#fff;border:1px solid #bccfd9;border-radius:12px;color:#536a7c;
+ font:800 23px/1 system-ui;cursor:pointer
+}
+.ba-tools-viewer-content .ba-setting-clear[hidden]{display:none!important}
+.ba-tools-viewer-content details,.ba-tools-viewer-content .ba-privacy,.ba-tools-viewer-content .ba-notes,.ba-tools-viewer-content .ba-tool-rail{
+ padding:12px;border:1px solid #d7e2ea;border-radius:14px;background:#fff
+}
+.ba-tools-viewer-content .ba-owner-help>summary{box-sizing:border-box;min-height:44px;padding-block:10px}
+.ba-tools-viewer-content .ba-notes{max-height:45dvh;overflow-y:auto}
+body.ba-viewer-active{overflow:hidden}
+@media(max-width:440px){
+ .ba-tools-viewer-content{padding:12px 10px 26px}
+ .ba-tools-viewer-content .ba-tool-rail a{font-size:13px}
+}
+
+/* Bubbles iteration: small, legible role orbs INSIDE the existing messenger.
+   The color ring is activity status, not a simulation of independent agents. */
+.ba-iteration-bubbles{margin:7px 10px 10px;padding:9px;background:#fff;border:1px solid #d7dcdf;border-radius:13px;color:#263640;min-width:0}
+.ba-iteration-heading{display:flex;align-items:baseline;justify-content:space-between;gap:6px;flex-wrap:wrap;font:600 12px/1.4 system-ui,sans-serif;margin-bottom:8px}
+.ba-iteration-heading strong{font-weight:750}.ba-iteration-heading small{font-size:10px;color:#566874}
+.ba-iteration-row{display:flex;gap:5px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding:2px 1px 6px}
+.ba-iteration-button{min-width:52px;flex:1 0 52px;display:flex;align-items:center;flex-direction:column;gap:3px;text-align:center;padding:4px 2px 5px;background:#fff;color:#3b4b53;border:1px solid transparent;border-radius:10px;cursor:pointer;font:600 10px/1.25 system-ui,sans-serif}
+.ba-iteration-button[aria-pressed="true"]{background:#f0f5f8;border-color:#b9cbd7}
+.ba-iteration-button:focus-visible{outline:3px solid #23739d;outline-offset:1px}
+.ba-iteration-orb{display:block;width:28px;height:28px;border-radius:50%;border:2px solid #cbd3da;background:radial-gradient(circle at 30% 25%,#fff 2%,#e6eff4 24%,#afbfca 60%,#718aa0 100%);box-shadow:inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="active"] .ba-iteration-orb{border-color:#176e9e;box-shadow:0 0 0 3px #b4ddef,inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="verified"] .ba-iteration-orb{border-color:#26835b;box-shadow:0 0 0 3px #b5dfc8,inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="queued"] .ba-iteration-orb{border-color:#9c782f;box-shadow:0 0 0 3px #efdfa9,inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="review"] .ba-iteration-orb{border-color:#a47745;box-shadow:0 0 0 3px #efd8bb,inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="blocked"] .ba-iteration-orb{border-color:#a54c49;box-shadow:0 0 0 3px #ebc3bf,inset -3px -3px 5px #1b344133}
+.ba-iteration-state{color:#52636d;font:500 9px/1.25 system-ui,sans-serif}
+.ba-iteration-detail{margin:3px 0 0;padding:6px 8px;border-top:1px solid #e4e9ec;font:11px/1.45 system-ui,sans-serif;color:#3c505d;overflow-wrap:anywhere}
+.ba-iteration-detail a{color:#165b80;text-decoration:underline}
+@media(max-width:440px){.ba-iteration-button{min-width:48px;flex-basis:48px}.ba-iteration-bubbles{margin-inline:6px;padding:7px}}
+@media(prefers-reduced-motion:reduce){.ba-iteration-orb{animation:none!important}}
+
+/* Receipt candidates share the existing Bubbles panel. No wallet buttons or mint actions. */
+.ba-iteration-bits{margin-top:8px;padding:8px 10px;border:1px solid #dce4e8;background:#f7fafc;border-radius:10px;display:flex;flex-direction:column;gap:3px}
+.ba-iteration-bits strong{font:750 12px/1.4 system-ui,sans-serif;color:#304454}
+.ba-iteration-bits .ba-bits-count{font:700 12px/1.5 system-ui,sans-serif;color:#263d49}
+.ba-iteration-bits .ba-bits-note{font:11px/1.4 system-ui,sans-serif;color:#52656c}
+.ba-iteration-bits .ba-bits-recent{display:flex;gap:4px;flex-wrap:wrap}
+.ba-iteration-bits .ba-bits-proof{font:10px/1.35 system-ui,sans-serif;background:#fff;border:1px solid #dde5e9;color:#435966;padding:3px 6px;border-radius:7px;overflow-wrap:anywhere}
+
+/* Readable mobile iteration controls: override the generic 16px/48px button reset.
+   Seven real role states remain selectable without horizontal clipping or clipping chat input. */
+body .ba-panel .ba-iteration-bubbles{flex:0 0 auto;max-width:100%;margin:8px 4px 10px;padding:10px}
+body .ba-panel .ba-iteration-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;overflow:visible;padding:2px 0 5px}
+body .ba-panel button.ba-iteration-button{
+ display:flex!important;flex-direction:column!important;align-items:center!important;
+ min-width:0!important;min-height:64px!important;padding:7px 3px!important;
+ border:1px solid #aebcc7!important;border-radius:10px!important;
+ background:#fff!important;background-image:none!important;
+ color:#21313a!important;-webkit-text-fill-color:#21313a!important;
+ font:700 13px/1.25 system-ui,sans-serif!important;line-height:1.25!important;
+ opacity:1!important;text-align:center!important;white-space:normal!important;
+}
+body .ba-panel button.ba-iteration-button[aria-pressed="true"]{background:#eaf3f9!important;border-color:#317295!important}
+body .ba-panel .ba-iteration-name{font-size:13px!important;font-weight:750;color:#21313a!important;-webkit-text-fill-color:#21313a!important}
+body .ba-panel .ba-iteration-state{font-size:11px!important;color:#43535d!important;-webkit-text-fill-color:#43535d!important}
+body .ba-panel .ba-iteration-detail{font-size:13px;line-height:1.5;color:#263640;margin-top:7px}
+body .ba-panel .ba-iteration-heading{font-size:14px}
+body .ba-panel .ba-iteration-heading small,body .ba-panel .ba-bits-note{font-size:12px;line-height:1.4}
+body .ba-panel .ba-iteration-bits strong,body .ba-panel .ba-bits-count{font-size:13px}
+body .ba-panel .ba-bits-proof{font-size:12px}
+@media(max-width:350px){body .ba-panel .ba-iteration-row{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+
+/* Notes readability upgrade: keep saved notes untouched; improve only presentation.
+   Comfortable on a 320px Android screen, with no destructive one-tap shortcuts. */
+.ba-panel .ba-tools>summary{font-size:17px;line-height:1.5;letter-spacing:.012em;color:#253f50;min-height:48px}
+.ba-panel .ba-notes{
+ max-height:none;overflow:visible;min-width:0;
+ border:1px solid #d7dee6;border-radius:15px;
+ background:#fafbfc;padding:13px;margin-block:8px;
+}
+.ba-panel .ba-note{
+ border:1px solid #d7dfe6;border-radius:14px;
+ padding:15px;margin-top:10px;min-width:0;
+ background:#fff;box-shadow:0 3px 12px rgba(33,45,58,.06);
+}
+.ba-panel .ba-note p{
+ margin:0 0 9px;font-size:16px;line-height:1.65;
+ letter-spacing:.015em;color:#293a46;white-space:pre-wrap;
+ overflow-wrap:anywhere;word-break:normal;
+}
+.ba-panel .ba-note .ba-remove{
+ min-height:44px;min-width:44px;border:1px solid #bdcad3;
+ border-radius:10px;padding:10px 13px;background:#f5f7f9;
+ color:#344b5a;font-size:14px;font-weight:700;
+}
+.ba-tools-viewer-content .ba-notes{
+ max-height:65dvh;overflow-y:auto;overscroll-behavior:contain;
+ scrollbar-gutter:stable;padding:16px;background:#f7f9fb;
+}
+@media(max-width:440px){
+ .ba-tools-viewer-content .ba-notes{max-height:65dvh;padding:12px}
+ .ba-panel .ba-note{padding:13px}
+ .ba-panel .ba-note p{font-size:16px;line-height:1.7}
+ .ba-panel .ba-note .ba-remove{width:auto;max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){.ba-panel .ba-note{transition:none!important}}

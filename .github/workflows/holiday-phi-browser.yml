@@ -1,0 +1,48 @@
+name: Holiday Phi Android browser acceptance
+on:
+  pull_request:
+    paths:
+      - 'holiday-phi.*'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'test/holiday-phi-browser.spec.mjs'
+      - '.github/workflows/holiday-phi-browser.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'holiday-phi.*'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'test/holiday-phi-browser.spec.mjs'
+      - '.github/workflows/holiday-phi-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  holiday-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check source and local holiday contracts
+        run: |
+          node --check holiday-phi.js
+          node --test test/holiday-phi.test.cjs test/halloween-phi-cards.test.cjs
+      - name: Install test-only browser
+        run: |
+          npm install --no-save --package-lock=false @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Android widths, media selection and Code Phi handoff (provider fixtures)
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 &
+          npx playwright test test/holiday-phi-browser.spec.mjs --reporter=line --workers=1
+      - name: Retain browser failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: holiday-phi-browser-failure
+          path: test-results/
+          retention-days: 14

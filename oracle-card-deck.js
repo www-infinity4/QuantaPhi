@@ -8,76 +8,156 @@ if(!host||!stage)return;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
+ ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
- ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
+ ['identityShieldQuickCard','Infinity Identity Shield · Research & Protection'],
+ ['bubblesIdentitySettingsCard','Bubbles · Identity & Documents'],
+ ['disabilityHousingCard','Home Access · Housing with disability income'],
  ['pixieStoryCard','Pixie Stories · Read and explore'],
  ['googleTrendNba','NBA · Trending matchups'],
- ['googleTrendMlb','MLB · World Series'],
- ['churchOfIAmCard','Church of I AM · Gary Cardone'],
+ ['googleTrendMlb','MLB · Scores'],
  ['googleTrendCulture','Media · Trending searches'],
  ['infiniteBook','Read an original story'],
- ['phiChannelCards','Watch a channel'],
+ ['infinityAffiliates','Infinity Affiliates · Match approved brands'],
+ ['government501Affiliates','501 Affiliates · Government agencies and developer tools'],
+ ['infinityReaderMystery','Tales of Mystery & Suspense · Read'],
+ ['infinityReaderTwilight','Twilight Zone · Original Fiction'],
+ ['infinityReaderTech','Tech History · Discover'],
+ ['infinityReaderFame','Touts of Fame · Biographies'],
+ ['infinityReaderSports','Sports Almanac · Records'],
+ ['infinityReaderCosmic','Beyond the Signal · Read'],
+ ['phiChannelCards','Infinity TV Guide'],
+ ['tvQuantExpansion','CNN CNBC NASA PBS · Quant Movies'],
+  ['infinityStarQuestCard','StarQuest · Infinity TV'],
+  ['infinityOmniTvCard','Omni TV · Channel remote'],
+  ['infinityChillerCard','Chiller · Classic suspense TV'],
+  ['infinityShopLcCard','Shop LC · Live shopping TV'],
+ ['liveFoxGameCard','KYOU · FOX 15.1 · Iowa'],
+ ['liveFoxNewsCard','LiveNOW from FOX · Live news'],
  ['phiStoryWriter','Write a story'],
  ['phiMediaBuilder','Create images and video'],
  ['result','Explore research and Asteroid'],
  ['fredSpacesRadio','Listen to Media Star'],
+ ['xTwitterCard','X · Twitter Quick Card'],
+ ['xSpacesQuickCard','Explore X Spaces'],
  ['followingSpacesRadio','Explore radio shows'],
  ['magooSpacesRadio','Hear featured episodes'],
  ['mediaStarCreator','Build your media card'],
  ['infinityConcepts','Explore ideas'],
  ['groupStoryBuild','Build a group story'],
  ['radioClubhouse','Listen and research'],
- ['halloweenPhi','Watch a cinema'],
+ ['infinityWirelessCard','Infinity Wireless · Bubbles build order'],
+ ['holidayPhi','Thanksgiving & Christmas · Browse and build'],
  ['phiProjectActions','Build a website'],
+ ['businessDirectoryCard','National Business Directory · Explore'],
  ['shopAdPhi','Discover products'],
- ['phiChannelCards','Watch live television'],
+ ['bruceBannerWeedmapsCard','21+ · Bruce Banner / ILLICIT · Weedmaps'],
+ ['infinityAdultContentCard','21+ content preferences'],
+ ['steveMillerBookOfDreamsCard','Steve Miller · Book of Dreams'],
+ ['classicRockOfficialMusicCard','Classic Rock · Official music and releases'],
+ ['cannabisDirectoryCard','21+ · National dispensary source directory'],
+ ['dispensary-livwell-colorado','21+ · LivWell · Colorado Boulevard'],
+ ['dispensary-livwell-central','21+ · LivWell · Central Park'],
+ ['dispensary-native-roots-speer','21+ · Native Roots · Speer Boulevard'],
+ ['dispensary-native-roots-highlands','21+ · Native Roots · Highlands'],
+ ['dispensary-fired-sixth','21+ · Fired Cannabis · 6th Avenue'],
+ ['dispensary-fired-alameda','21+ · Fired Cannabis · Alameda'],
+ ['dispensary-fired-cherry','21+ · Fired Cannabis · Cherry Creek'],
+ ['dispensary-lightshade-evans','21+ · Lightshade · Evans'],
+ ['dispensary-lightshade-dayton','21+ · Lightshade · Dayton'],
+ ['dispensary-star-buds-lakeside','21+ · Star Buds · Lakeside'],
+ ['dispensary-green-solution-wewatta','21+ · The Green Solution · Wewatta'],
+ ['dispensary-maikoh-broadway','21+ · Maikoh Holistics · North Broadway'],
+ ['dispensary-the-dab-alameda','21+ · The Dab by Silverpeak · Alameda'],
+ ['dispensary-the-dispensary-breckenridge','21+ · The Dispensary · Breckenridge'],
+ ['phiChannelCards','Infinity TV Guide'],
  ['publicCardTrends','Explore what is trending']
 ];
 
 /* These are the ORIGINAL live widgets, not duplicated external link previews.
  * Shared IDs connect the Oracle viewer to Public / For You / Following. */
 const CARD_DIRECTIONS={
+ liveFoxGameCard:['fox-live-game','Television','Watch KYOU news in the official station player'],
+ liveFoxNewsCard:['fox-live-news','Television','Watch the official LiveNOW from FOX news player'],
+ coliseumZeusCard:['coliseum-zeus','Collaboration','Pitch, vote, branch and build in the Zeus arena'],
  walmartShoppingCard:['walmart-shopping','Shopping','Shop Walmart pizza, groceries and related products'],
- cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
  quantaDirectoryCards:['public-directory','Directory','Search verified names, businesses and websites'],
+ identityShieldQuickCard:['identity-shield','Protection research','Review official SSA and FTC guidance, read actual public research checks and planned identity safeguards'],
+ bubblesIdentitySettingsCard:['bubbles-identity-settings','Account settings','Open private identity planning, SSI letters and document checklist'],
+ disabilityHousingCard:['disability-housing','Housing','Prepare a housing intake with disability benefit income'],
  scienceQuickCards:['nasa-science','Science','Study current science and research'],
  pixieStoryCard:['pixie-stories','Stories','Read an original Pixie story'],
  googleTrendNba:['trending-nba','Sports','Explore an NBA match and related research'],
- googleTrendMlb:['trending-mlb','Sports','Explore World Series matchups'],
- churchOfIAmCard:['church-of-i-am','Sunday conversations','Find Gary Cardone’s official Sunday I AM gathering'],
+ googleTrendMlb:['trending-mlb','Sports','Explore current MLB matchups'],
  googleTrendCulture:['trending-media','Media','Investigate popular media and events'],
  infiniteBook:['reads-realms','Stories','Read and research an original story'],
- phiChannelCards:['channels','Television','Watch a channel'],
+ infinityAffiliates:['infinity-affiliates','Shopping','Match Infinity Approved brands and request product affiliation'],
+ government501Affiliates:['government-501-affiliates','Public agencies','Find official agency contacts, public APIs and employment resources'],
+ infinityReaderMystery:['reader-mystery','Stories','Read original mysteries and public-domain detective fiction'],
+ infinityReaderTwilight:['reader-twilight','Stories','Read independent, original speculative stories'],
+ infinityReaderTech:['reader-tech','History','Read technology inventions and early computing histories'],
+ infinityReaderFame:['reader-fame','Biographies','Discover pathways to fame and overlooked innovators'],
+ infinityReaderSports:['reader-sports','Sports','Read historical games, milestones and athletic records'],
+ infinityReaderCosmic:['reader-cosmic','Stories','Read original cosmic fiction and public-domain space adventures'],
+ phiChannelCards:['channels','Television','Browse the Infinity TV Guide and select a channel'],
+ tvQuantExpansion:['quant-tv-movies','Television','Watch NASA science documentaries and find official CNN/CNBC/PBS channels'],
+  infinityStarQuestCard:['infinity-tv-starquest','Television','Play the current StarQuest selected movie and browse the guide'],
+  infinityOmniTvCard:['infinity-tv-omni','Television','Use Omni TV’s remote to select verified source channels'],
+  infinityChillerCard:['infinity-tv-chiller','Television','Watch a Chiller selected suspense program with original source details'],
+  infinityShopLcCard:['infinity-tv-shoplc','Television','Watch Shop LC live and open its official program guide'],
  phiStoryWriter:['story-writer','Stories','Write or continue a story'],
  phiMediaBuilder:['image-builder','Media','Create images and video'],
  result:['deck-research','Research','Explore sources and a current AI overview'],
  fredSpacesRadio:['fred-spaces','Music','Listen to an indexed Media Star conversation'],
+ xTwitterCard:['x-twitter','Social','Read real Public and Following X posts, find Spaces, compose, reply, like and repost after authorization'],
+ xSpacesQuickCard:['x-spaces','Live conversations','Find provider-verified live Spaces, browse indexed links, and embed supported X recording clips inside this card'],
  followingSpacesRadio:['following-spaces','Music','Choose a followed host and show'],
  magooSpacesRadio:['magoo-spaces','Music','Listen to a featured Space'],
  mediaStarCreator:['media-star-creator','Media','Produce your own playable media card'],
  infinityConcepts:['concepts','Science','Explore physics, invention and ideas'],
  groupStoryBuild:['group-story','Stories','Build a group story'],
  radioClubhouse:['radio-clubhouse','Vintage radios','Read antique radio discussions and investigate repairs'],
- halloweenPhi:['deck-halloween','Television','Watch an original cinema card'],
+ infinityWirelessCard:['infinity-wireless','Technology','Issue a verified city-level wireless planning request with Bubbles'],
+ holidayPhi:['deck-holidays','Holidays','Find holiday images and videos; build a website'],
  phiProjectActions:['deck-projects','Creation','Build or improve a real website project'],
+ businessDirectoryCard:['business-directory','Directory','Search source-backed businesses across states and territories'],
  shopAdPhi:['deck-shop','Shopping','Explore interactive product and advertising tools'],
+ bruceBannerWeedmapsCard:['bruce-banner-weedmaps','21+ Publisher','Explore rotating original ILLICIT Bruce Banner strain and product references on Weedmaps'],
+ infinityAdultContentCard:['adult-content-preferences','Preferences','Manage optional 21+ ad viewing; no restricted creative without server verification'],
+ steveMillerBookOfDreamsCard:['steve-miller-book-of-dreams','Music','Play verified official Steve Miller Book of Dreams recordings in the Quick Card'],
+ classicRockOfficialMusicCard:['classic-rock-official-music','Music','Play official artist music on YouTube and shop band-linked CD, vinyl, digital releases and merchandise'],
+ ['dispensary-livwell-colorado']:['adult-store-livwell-colorado','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-livwell-central']:['adult-store-livwell-central','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-native-roots-speer']:['adult-store-native-roots-speer','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-native-roots-highlands']:['adult-store-native-roots-highlands','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-fired-sixth']:['adult-store-fired-sixth','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-fired-alameda']:['adult-store-fired-alameda','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-fired-cherry']:['adult-store-fired-cherry','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-lightshade-evans']:['adult-store-lightshade-evans','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-lightshade-dayton']:['adult-store-lightshade-dayton','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-star-buds-lakeside']:['adult-store-star-buds-lakeside','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-green-solution-wewatta']:['adult-store-green-solution-wewatta','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-maikoh-broadway']:['adult-store-maikoh-broadway','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-the-dab-alameda']:['adult-store-the-dab-alameda','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-the-dispensary-breckenridge']:['adult-store-the-dispensary-breckenridge','21+ Directory','Independent location listing, formerly Alpenglow Botanicals'],
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
 };
 
-const unique=[...new Map(choices.map(([id,title])=>[id,title])).entries()];
+// Builders have a dedicated real-widget home beside the advertisement area.
+const DEVELOPER_CARD_IDS=new Set(['mediaStarCreator','government501Affiliates','infinityAffiliates','phiProjectActions']);
+const unique=[...new Map(choices.filter(([id])=>!DEVELOPER_CARD_IDS.has(id)).map(([id,title])=>[id,title])).entries()];
 const entries=unique.map(([id,title])=>{
  const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];
  return {id,title,feedId,category,feature,study:title,node:document.getElementById(id),marker:null,count:0};
 }).filter(x=>x.node);
 const STORE='oracle:card-activity:v1';
-const cardoneButton=document.getElementById('oracleCardCardone');
-const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={walmart:'walmartShoppingCard',google:'source-google','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ const names={twitter:'xTwitterCard',x:'xTwitterCard','x-twitter':'xTwitterCard','x-spaces':'xSpacesQuickCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','termux':'trendingAppTermux','trending-apps':'trendingAppTermux','android-apps':'trendingAppTermux','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
+ names.housing='disabilityHousingCard';names['disability-housing']='disabilityHousingCard';names['home-access']='disabilityHousingCard';
  const requested=url.searchParams.get('card');
- return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
+ return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null);
 }catch{return null}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
@@ -86,15 +166,16 @@ let active=null,expanded=false;
 let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
-let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantConnected=false;
-let feedState=null,proposed=null;
+let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
+const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
+let feedState=null,proposed=null,followingPublisherFeed=null;
 const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
 let viewerTouched=false,selectionVersion=0;
 const ORIGINAL_COVERS={
  phiStoryWriter:['Story Writer','Write it. Illustrate it. Make it yours.','/assets/phi-scholastic-reader.webp'],
  phiMediaBuilder:['Image & Video Studio','Create something worth sharing.','/assets/phi-data-analyst.webp'],
- infinityConcepts:['Infinity Concepts','Physics, experiments and connected ideas.','/assets/julius-physics-002.png'],
+ infinityConcepts:['Infinity Concepts','Physics, experiments and connected ideas.','/assets/julius-balloon-001.jpg'],
  groupStoryBuild:['Group Stories','Build the next chapter together.','/assets/phi-scholastic-reader.webp'],
  mediaStarCreator:['Media Star','Make your own playable media card.','/apps/icons/media-star-512.png'],
  phiProjectActions:['Code Phi · Create Phi','Take an idea into a working project.','/assets/phi-data-analyst.webp'],
@@ -104,7 +185,7 @@ function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
- for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id]')){
+ for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #essentialsQuickCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
   if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
   if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
@@ -112,20 +193,102 @@ function registerSourceCards(){
   const category=node.querySelector('.iqc-kind')?.textContent?.trim()||'Website';
   const entry={id:'source-'+id,title:label+' · Interactive',feedId:id,
    category,feature:'Use the real '+label+' card controls',study:'Original source card with direct controls',
+   official:node.dataset.official||'',
    node,marker:null,count:Math.max(0,Math.min(1000,Number(counts['source-'+id])||0))};
   entries.push(entry);added=true;
  }
  if(added){
   updateTabs();predict();
-  // New sources enter the same rotation as originals, product cards and Cardone.
-  // Explicit deep links still take priority, but source arrival cannot steal
-  // the first slot from a legitimate earlier Quant/rotation selection.
+  // Honor deep links and visitor interaction. Before interaction, newly loaded
+  // accepted brands receive their requested priority over ordinary brands.
   const requested=entries.find(e=>e.id===spotlightRequested||e.feedId===spotlightRequested);
   if(!expanded&&!viewerTouched&&requested&&available(requested))show(requested,false);
   else if(!active&&!expanded)start();
+  // A newly loaded brand must not steal focus from an active website card.
  }
 }
 window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
+// Dynamically mount every loaded, original Cloudflare store listing as its own
+// Oracle card. No personal browsing telemetry, sale controls, or fake ratings.
+function registerDirectoryCards(){
+ let added=false;
+ for(const node of document.querySelectorAll('[data-directory-store-id]')){
+  const id=node.id;
+  if(!/^directory-store-[a-z2-7]{5,52}$/.test(id)||entries.some(e=>e.id===id))continue;
+  const name=node.dataset.directoryStoreName||'Source-backed dispensary';
+  const sourceId=node.dataset.directoryStoreId;
+  if(!/^[A-Za-z0-9][A-Za-z0-9:._-]{2,109}$/.test(sourceId||''))continue;
+  entries.push({id,title:'21+ · '+name,feedId:id,category:'21+ Directory',
+   feature:'Independent Cloudflare source listing; no checkout or unverified reviews',
+   study:'Source-backed business directory',node,marker:null,count:0});
+  observe.observe(node,{childList:true,attributes:true,attributeFilter:['hidden']});
+  added=true;
+ }
+ if(added||entries.some(e=>e.id.startsWith('directory-store-'))){updateTabs();predict();}
+}
+window.addEventListener('quantaphi:directory-cards-ready',registerDirectoryCards);
+// Every verified trending movie is its OWN original Oracle card in the same
+// Public / For You / Following carousel. No nested scrolling movies wall.
+function registerTrendingMovieCards(){
+ let added=false;
+ for(const node of document.querySelectorAll('#trendingMovieCards [data-trending-movie-id]')){
+  const id=node.id,videoId=node.dataset.trendingMovieId;
+  if(!/^trendMovie[A-Za-z0-9_-]{11}$/.test(id)||
+     id!=='trendMovie'+videoId)continue;
+  const title=node.querySelector('.mtc-title')?.textContent?.trim();
+  if(!title)continue;
+  const existing=entries.find(e=>e.id===id);
+  if(existing){
+   if(existing.node!==node&&!existing.node.isConnected){
+    existing.node=node;observe.observe(node,{childList:true});
+   }
+   continue;
+  }
+  const feedId='trending-movie-'+videoId;
+  entries.push({id,title:title+' · Film trailer',feedId,category:'Movies',
+   feature:'Play the original publisher movie trailer inside this Quick Card',
+   study:'Google Trends sourced movie headlines or independently new published trailers',
+   node,marker:null,count:Number(counts[id])||0});
+  observe.observe(node,{childList:true});added=true;
+ }
+ if(added){
+  updateTabs();predict();if(!active)start();
+  if(spotlightRequested==='trending-movies'&&!viewerTouched&&!expanded){
+   const first=entries.find(e=>e.id.startsWith('trendMovie')&&available(e));
+   if(first&&first!==active)show(first,false);
+  }
+ }
+}
+window.addEventListener('quantaphi:trending-movie-cards-ready',registerTrendingMovieCards);
+
+// Each verified source app is a SINGLE original Oracle Quick Card. The
+// Termux card is a local command editor, never a browser privilege escalation.
+function registerTrendingAppCards(){
+ let added=false;
+ for(const node of document.querySelectorAll('#trendingAppCards [data-trending-app-id]')){
+  const id=node.id,source=node.dataset.trendingAppId;
+  if(!/^trendingApp[A-Za-z]{3,32}$/.test(id)||!/^[a-z0-9-]{3,35}$/.test(source))continue;
+  if(entries.some(e=>e.id===id))continue;
+  const name=node.querySelector('.trapp-title')?.textContent?.trim();
+  if(!name)continue;
+  entries.push({id,title:name+' · Interactive App',feedId:'trending-app-'+source,
+   category:'Apps',feature:source==='termux'?'Edit Termux code inside this card with a blinking prompt; no unapproved execution':
+    'Discover the real publisher app, with sourced Google trend status when available',
+   study:name+' · verified app source, not a fabricated live installation',
+   node,marker:null,count:Number(counts[id])||0});
+  observe.observe(node,{childList:true});added=true;
+ }
+ if(added){
+  updateTabs();predict();if(!active)start();
+  if(!viewerTouched&&!expanded&&spotlightRequested==='trendingAppTermux'){
+   const termux=entries.find(e=>e.id==='trendingAppTermux'&&available(e));
+   if(termux&&termux!==active)show(termux,false);
+  }
+ }
+}
+window.addEventListener('quantaphi:trending-app-cards-ready',registerTrendingAppCards);
+
+
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
 function registerLateWidgets(){
@@ -138,6 +301,8 @@ function registerLateWidgets(){
   observe.observe(node,{childList:true});added=true;
  }
  registerSourceCards();
+ registerTrendingMovieCards();
+ registerTrendingAppCards();
  if(added){updateTabs();predict();if(!active)start();}
 }
 
@@ -145,12 +310,18 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study}));}
+function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
  updateInventory();
+  for(const button of host.querySelectorAll('[data-oracle-family]')){
+  const count=eligible().filter(e=>cardFamily(e)===button.dataset.oracleFamily).length;
+  button.disabled=count===0;
+  const total=button.querySelector('[data-family-count]');if(total){total.textContent='';total.hidden=true;}
+ }
  tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
+ followingPublisherFeed?.sync({tab:selectedTab});
  if(follow){
   const saved=Boolean(active&&feedState?.following.includes(active.feedId));
   follow.hidden=!active;
@@ -166,14 +337,17 @@ function updateInventory(){
  if(chooser.dataset.inventory!==signature){
   chooser.replaceChildren();
   const hint=document.createElement('option');hint.value='';hint.textContent='Choose a card…';chooser.append(hint);
-  for(const [label,list] of [['QuantaPhi originals',cards.filter(e=>!e.id.startsWith('source-'))],['Source experiences',cards.filter(e=>e.id.startsWith('source-'))]]){
+  for(const [label,list] of [
+   ['Infinity accepted',cards.filter(e=>e.node.matches('.iac-card'))],
+   ['QuantaPhi originals',cards.filter(e=>!e.id.startsWith('source-'))],
+   ['Source experiences',cards.filter(e=>e.id.startsWith('source-')&&!e.node.matches('.iac-card'))]]){
    if(!list.length)continue;const group=document.createElement('optgroup');group.label=label;
    for(const e of list){const option=document.createElement('option');option.value=e.id;option.textContent=e.title;group.append(option)}chooser.append(group);
   }
   chooser.dataset.inventory=signature;
  }
  chooser.value=active?.id||'';
- if(inventory)inventory.textContent='Choose a card · '+cards.length+' available';
+ if(inventory)inventory.textContent='Choose a real interactive card';
 }
 document.getElementById('oracleCardChooser')?.addEventListener('change',event=>{
  const entry=eligible().find(e=>e.id===event.target.value);
@@ -186,7 +360,7 @@ document.getElementById('oracleCardChooser')?.addEventListener('change',event=>{
 function presentOriginal(entry){
  const cover=ORIGINAL_COVERS[entry.id];if(!cover||entry.node.querySelector(':scope > .oracle-original-cover'))return;
  const header=document.createElement('header');header.className='oracle-original-cover';
- const image=document.createElement('img');image.src=cover[2];image.alt='';image.loading='lazy';
+ const image=document.createElement('img');image.alt='';image.loading='eager';image.decoding='async';image.addEventListener('error',()=>{image.remove();header.classList.add('oracle-cover-no-art')},{once:true});image.src=cover[2];
  const text=document.createElement('div'),brand=document.createElement('small'),title=document.createElement('h2'),copy=document.createElement('p');
  brand.textContent='QUANTAPHI ORIGINAL · INFINITY 2026®';title.textContent=cover[0];copy.textContent=cover[1];
  text.append(brand,title,copy);header.append(image,text);entry.node.prepend(header);
@@ -204,16 +378,22 @@ function predict(){
   const tour=directionApi.nextDeckCycle(
    present.filter(c=>eligibleIds.has(c.id)),active?.feedId||'',seenByTab[selectedTab]);
   seenByTab[selectedTab]=tour.seen;
-  const pick=directionApi.nextFeedDirection(tour.cards,selectedTab,context,active?.feedId||'');
+  const balanced=familyApi?.selectNextFamilyPool(tour.cards,cardFamily(active))||tour.cards;
+  const pick=directionApi.nextFeedDirection(balanced,selectedTab,context,active?.feedId||'');
   proposed=possible.find(e=>e.feedId===pick.card?.id)||null;
   reason.textContent=proposed?(proposed.title+' · '+pick.reason+
    ' · '+tour.remaining+' other cards in this round'):
    'Use a card to help choose the next useful action.';
  }else{
-  proposed=possible.filter(x=>x!==active).sort((a,b)=>a.count-b.count)[0]||possible[0];
+  const rest=possible.filter(x=>x!==active);
+  const groups=['accepted','website','original'],pos=groups.indexOf(cardFamily(active));
+  const nextFamily=groups[(pos+1)%groups.length];
+  proposed=rest.filter(e=>cardFamily(e)===nextFamily).sort((a,b)=>a.count-b.count)[0]||
+   rest.sort((a,b)=>a.count-b.count)[0]||possible[0];
   reason.textContent=proposed?'Next: '+proposed.title:'';
  }
  next.disabled=possible.length<2;
+ primeCardImage(proposed);
 }
 async function connectQuant({select=false,revision=selectionVersion}={}){
  if(selectedTab!=='for-you'||!quantApi||!directionApi)return;
@@ -232,6 +412,13 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
  viewerTouched=true;
  const revision=++selectionVersion;
  selectedTab=b.dataset.oracleFeed;visited.length=0;
+ if(active){
+  stage.dataset.switchboardTab=selectedTab;
+  window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
+   id:stage.dataset.switchboardId,title:stage.dataset.switchboardTitle,
+   category:stage.dataset.switchboardCategory,tab:selectedTab
+  }}));
+ }
  if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
  updateTabs();
@@ -258,9 +445,21 @@ window.addEventListener('quantaphi:feed-updated',e=>{
  feedState=readDirections();
  updateTabs();predict();
 });
-Promise.all([import('/quanta-feed-rank.mjs?v=20261024-clean3'),
- import('/quanta-feed-quants.mjs?v=20261024-directions1')]).then(([r,q])=>{
- directionApi=r;quantApi=q;feedState=readDirections();updateTabs();
+void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountFollowingPublisherFeed})=>{
+ const target=document.getElementById('oracleFollowingFeed');
+ followingPublisherFeed=mountFollowingPublisherFeed(target,{
+  getFollowing:()=>directionApi?readDirections().following:[],
+  getProfiles:()=>entries.filter(e=>e.id.startsWith('source-')&&e.node?.dataset?.official).map(e=>({
+   id:e.feedId,name:e.node.dataset.sourceName||e.title,official:e.node.dataset.official,
+   category:e.node.dataset.sourceCategory||e.category,query:e.node.dataset.sourceQuery||e.title
+  }))
+ });
+ followingPublisherFeed?.sync({tab:selectedTab});
+}).catch(()=>{const target=document.getElementById('oracleFollowingFeed');if(target)target.hidden=true;});
+Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
+ import('/quanta-feed-quants.mjs?v=20261024-directions1'),
+ import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
+ directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
  if(selectedTab==='for-you')void connectQuant();
  predict();
 }).catch(()=>{reason.textContent='Card directions are not available; original interactive cards are still usable.'});
@@ -276,44 +475,72 @@ function returnActive(){
  if(!active)return;
  const {node,marker}=active;
  // Playing TV must stop immediately before the viewer switches away.
- if(active.id==='phiChannelCards')document.dispatchEvent(new CustomEvent('oracle:card-deactivated',{detail:{id:active.id}}));
+ document.dispatchEvent(new CustomEvent('oracle:card-deactivated',{detail:{id:active.id}}));
  // Story generation may reparent Asteroid into the research card while a
  // search begins. Never pull it back out of that authoritative context.
  if(node.parentNode===stage&&marker?.parentNode)marker.parentNode.insertBefore(node,marker);
  marker?.remove();
  active.marker=null;active=null;
  stage.replaceChildren();
+ delete stage.dataset.switchboardId;delete stage.dataset.switchboardTitle;
+ delete stage.dataset.switchboardCategory;delete stage.dataset.switchboardTab;
+ window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:null}));
 }
-function show(entry,remember=true){
+// Organic 21+ directory browsing must not become persistent engagement profiling.
+function nonProfiling(entry){return entry?.id==='cannabisDirectoryCard'||entry?.node?.dataset.personalization==='disabled'}
+// Fetch only the selected picture and the next likely picture early; never
+// flood the network by eagerly hydrating every hidden Quick Card.
+function primeCardImage(entry,high=false){
+ if(!entry?.node)return;
+ const img=entry.node.querySelector('img[src]');
+ if(!img)return;
+ img.loading='eager';img.decoding='async';
+ if(high)img.fetchPriority='high';
+}
+function show(entry,remember=true,automatic=false){
  if(!entry||expanded||entry===active)return;
- if(remember&&active)visited.push(active.id);
+ if(remember&&active&&!nonProfiling(active))visited.push(active.id);
  if(visited.length>45)visited.shift();
  returnActive();
  // Preserve exactly one original node and every listener, media control and data store.
  const marker=document.createComment('Oracle card original location: '+entry.id);
  entry.node.parentNode.insertBefore(marker,entry.node);entry.marker=marker;
- presentOriginal(entry);stage.append(entry.node);active=entry;
+ presentOriginal(entry);primeCardImage(entry,true);stage.append(entry.node);active=entry;
+ stage.dataset.switchboardId=entry.feedId;
+ stage.dataset.switchboardTitle=entry.title;
+ stage.dataset.switchboardCategory=entry.category;
+ stage.dataset.switchboardTab=selectedTab;
+ stage.dataset.switchboardDescription=entry.node.querySelector('.iac-intro,.qbp-description,.iqc-description')?.textContent||entry.feature||'';
+ window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
+  id:entry.feedId,title:entry.title,category:entry.category,tab:selectedTab,
+  description:stage.dataset.switchboardDescription
+ }}));
  entry.node.dispatchEvent(new Event('oracle:activate'));
- void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
+ if(!automatic&&!nonProfiling(entry))void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // Every original Oracle widget receives the same five real actions.
  // Source cards already own the toolbar inside mountCardTools.
- if(!entry.id.startsWith('source-')){
+ if(!nonProfiling(entry)&&!entry.id.startsWith('source-')&&entry.id!=='coliseumZeusCard'){
   const displayed=entry;
   import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
-   if(active!==displayed||!stage.contains(displayed.node))return;
+   if(active!==displayed||!stage.contains(displayed.node)||displayed.node.querySelector('.qca-toolbar'))return;
    const container=document.createElement('div');container.className='oracle-card-actions';
+   // Capture the real photo/artwork from the displayed original card, not
+   // the generic QuantaPhi site preview used by unrelated URLs.
+   const mediaSrc=displayed.node.querySelector('[data-walmart-image],.qbp-photo,.sap-feature img,.iqc-media img,.qcx-art img,.premium-selected img,.oracle-original-cover img,img[src]')?.getAttribute('src')||'';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
-    category:displayed.category,route:'/?card='+encodeURIComponent(displayed.id)});
+    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
- entry.count=Math.min(1000,entry.count+1);counts[entry.id]=entry.count;
- try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
- if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
- seenByTab[selectedTab].add(entry.feedId);
+ if(!automatic&&!nonProfiling(entry)){
+  entry.count=Math.min(1000,entry.count+1);counts[entry.id]=entry.count;
+  try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
+  if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
+  seenByTab[selectedTab].add(entry.feedId);
+ }
  now.textContent=entry.title;updateTabs();predict();
  status.textContent='Live interactive card · '+entry.title+
-  '. '+(selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
+  '. '+(nonProfiling(entry)?'Private browsing: no view or interaction history recorded.':selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
     selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.')+
   ' · '+eligible().length+' ready cards in this direction.';
 }
@@ -333,18 +560,8 @@ function advance(direction){
  const i=active?list.indexOf(active):-1;
  show(list[(i+1+list.length)%list.length]);
 }
-cardoneButton?.addEventListener('click',()=>{
- viewerTouched=true;
- const entry=entries.find(x=>x.id===CARDONE_ID);
- if(!available(entry)){status.textContent='The Cardone card is not available in this page version yet.';return;}
- if(expanded){
-  expanded=false;document.body.classList.remove('oracle-shelf-open');
-  scroll.setAttribute('aria-expanded','false');
-  scroll.textContent='↓ Scroll interactive cards / widgets';
- }
- show(entry);
- host.scrollIntoView?.({block:'start',behavior:'smooth'});
-});
+// The visitor controls the primary Quick Card. Passive ShopPhi rotations may
+// update related offers below it, never replace its player or active controls.
 for(const shortcut of document.querySelectorAll('[data-oracle-spotlight]')){
  shortcut.addEventListener('click',()=>{
   viewerTouched=true;
@@ -359,6 +576,38 @@ for(const shortcut of document.querySelectorAll('[data-oracle-spotlight]')){
   show(entry);host.scrollIntoView?.({block:'start',behavior:'smooth'});
  });
 }
+// Direct group shortcuts make all ready website pages reachable in one tap.
+for(const button of host.querySelectorAll('[data-oracle-family]')){
+ button.addEventListener('click',()=>{
+  const family=button.dataset.oracleFamily;
+  const matches=eligible().filter(e=>cardFamily(e)===family&&e!==active);
+  if(!matches.length){status.textContent='No other ready cards in this group. Try Public or choose a card.';return}
+  const unseen=matches.filter(e=>!seenByTab[selectedTab].has(e.feedId));
+  const pool=unseen.length?unseen:matches;
+  const chosen=[...pool].sort((a,b)=>(feedState?.viewed?.[a.feedId]||0)-
+   (feedState?.viewed?.[b.feedId]||0)||entries.indexOf(a)-entries.indexOf(b))[0];
+  viewerTouched=true;selectionVersion++;
+  if(expanded){
+   expanded=false;document.body.classList.remove('oracle-shelf-open');
+   scroll.setAttribute('aria-expanded','false');
+   scroll.textContent='↓ Scroll interactive cards / widgets';
+  }
+  show(chosen);host.scrollIntoView?.({block:'start',behavior:'smooth'});
+ });
+}
+// Card navigation updates the existing viewer in place. Never move the
+// document viewport as a side effect of swipes, guesses or arrow controls.
+// A companion source points to a real already-mounted Quick Card, not a new
+// browser page. Move that original widget into the viewer on explicit tap.
+window.addEventListener('quantaphi:select-source-card',event=>{
+ const id=event.detail?.sourceId;
+ if(typeof id!=='string'||!/^[a-z0-9-]{2,100}$/.test(id))return;
+ const entry=entries.find(e=>e.feedId===id&&e.id==='source-'+id&&available(e));
+ if(!entry){status.textContent='That source card is not available in the current viewer.';return;}
+ viewerTouched=true;selectionVersion++;
+ if(!eligible().includes(entry)){selectedTab='public';updateTabs();}
+ show(entry);
+});
 next.addEventListener('click',()=>advance(1));
 prev.addEventListener('click',()=>advance(-1));
 scroll.addEventListener('click',()=>{
@@ -378,8 +627,11 @@ scroll.addEventListener('click',()=>{
  }
 });
 // Only a deliberate interaction INSIDE the active working card is a use.
+host.addEventListener('pointerdown',()=>{viewerTouched=true},{capture:true,passive:true});
+host.addEventListener('keydown',()=>{viewerTouched=true},true);
 host.addEventListener('click',e=>{
- if(!active||!stage.contains(e.target)||!e.target.closest?.('button,a,[role="button"],input[type="submit"]'))return;
+ if(!active||nonProfiling(active)||!stage.contains(e.target)||!e.target.closest?.('button,a,[role="button"],input[type="submit"]'))return;
+ viewerTouched=true;
  counts[active.id]=Math.min(1000,(counts[active.id]||0)+1);
  if(directionApi&&feedState){
   feedState=directionApi.markOpened(readDirections(),active.feedId);
@@ -389,26 +641,31 @@ host.addEventListener('click',e=>{
 },true);
 document.body.classList.add('oracle-card-deck-active');
 // Every ready card competes for first placement. The source/museum/product
-// categories and both Cardone cards have no privileged opening positions.
+// categories have no privileged opening positions.
 function chooseOpening(){
- const ready=eligible();
- if(!ready.length)return null;
+ const ready=eligible();if(!ready.length)return null;
+ // Each visit starts with another family; 116 accepted brands no longer monopolize
+ // the starting slot. Preserve direct-link spotlight selection in start().
+ if(openingCursor===null){
+  try{
+   const saved=Number(localStorage.getItem('oracle:opening-rotation:v2'));
+   openingCursor=Number.isSafeInteger(saved)&&saved>=0?saved:0;
+   localStorage.setItem('oracle:opening-rotation:v2',String((openingCursor+1)%1000000));
+  }catch{openingCursor=0}
+ }
+ const cards=ready.map(e=>({...e,family:cardFamily(e)}));
+ const opening=familyApi?.openingFamilyPool(cards,openingCursor)||
+  cards.filter(c=>c.family===['accepted','website','original'][openingCursor%3]);
+ const pool=opening.length?opening:cards;
  if(directionApi&&feedState){
-  const catalog=liveCatalog(),context={...feedState,catalog,quantScores:quantWeights};
-  const selected=directionApi.nextFeedDirection(catalog,selectedTab,context,'').card;
+  const catalog=liveCatalog(),ids=new Set(pool.map(c=>c.feedId));
+  const context={...feedState,catalog,quantScores:quantWeights};
+  const selected=directionApi.nextFeedDirection(catalog.filter(c=>ids.has(c.id)),
+   selectedTab,context,'').card;
   const ranked=ready.find(e=>e.feedId===selected?.id);
   if(ranked)return ranked;
  }
- // Before the ranking module loads, rotate across sessions rather than
- // exposing one permanent first card. Store no raw searches or location.
- if(openingCursor===null){
-  try{
-   const saved=Number(localStorage.getItem('oracle:opening-rotation:v1'));
-   openingCursor=Number.isSafeInteger(saved)&&saved>=0?saved:0;
-   localStorage.setItem('oracle:opening-rotation:v1',String((openingCursor+1)%1000000));
-  }catch{openingCursor=0}
- }
- return ready[openingCursor%ready.length];
+ return pool[openingCursor%pool.length]||ready[0];
 }
 function start(){if(!active&&!expanded){
  const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
@@ -419,6 +676,7 @@ function start(){if(!active&&!expanded){
  if(first)show(first,false);else status.textContent='Loading original interactive cards…';
 }}
 start();
+
 const observe=new MutationObserver(()=>{
  predict();
  if(!viewerTouched&&!expanded&&spotlightRequested){
@@ -429,6 +687,8 @@ const observe=new MutationObserver(()=>{
 });
 for(const entry of entries)observe.observe(entry.node,{childList:true,subtree:false,attributes:entry.id==='result',attributeFilter:entry.id==='result'?['hidden']:undefined});
 new MutationObserver(registerLateWidgets).observe(document.querySelector('main.app')||document.body,{childList:true,subtree:true});
+registerTrendingMovieCards(); // Recover async movie feed loaded before Oracle.
+registerTrendingAppCards(); // Recover app card mounts loaded before the carousel.
 // Reads & Realms can relocate itself on an async home/search cycle. Keep
 // exactly one live DOM node and never fight the search-mode owner.
 new MutationObserver(()=>{
@@ -450,6 +710,7 @@ document.addEventListener('visibilitychange',()=>{
  if(!document.hidden)start();
 });
 window.addEventListener('quantaphi:search-start',()=>{
+ viewerTouched=true;
  // Search owns the current Asteroid story. When the new overview arrives,
  // spotlight the ORIGINAL live result card without needing a long scroll.
  if(active?.id==='infiniteBook')returnActive();
@@ -463,4 +724,5 @@ window.addEventListener('quantaphi:search-start',()=>{
  if(available(entry)){watcher.disconnect();show(entry)}
  setTimeout(()=>watcher.disconnect(),60000);
 });
+window.addEventListener('quantaphi:query-start',()=>{viewerTouched=true;selectionVersion++});
 })();

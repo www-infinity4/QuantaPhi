@@ -43,6 +43,8 @@ jobs:
       - name: Verify Brain auth, queue priority, source windows and owner boundaries
         run: |
           node --check workers/infinity-brain-clock/worker.js
+          node --check workers/infinity-brain-clock/direct-github.mjs
+          node --test test/bubbles-owner-github-auth-read.test.mjs
           node --check workers/infinity-brain-clock/ticket-selector.mjs
           node --check workers/infinity-brain-clock/deferred-recovery.mjs
           node --check workers/infinity-brain-clock/source-review.mjs
@@ -54,11 +56,13 @@ jobs:
             test/brain-clock-binding-parity.test.mjs
           node --test \
             test/brain-ticket-selector.test.mjs \
+            test/brain-runner-candidate-page.test.mjs \
             test/brain-deferred-recovery.test.mjs \
             test/brain-cloudflare-token-broker.test.mjs \
             test/brain-queue-order.test.mjs \
             test/brain-assigned-job-scope.test.mjs \
             test/brain-color-core.test.mjs \
+            test/brain-role-handoffs.test.mjs \
             test/brain-clock.test.mjs \
             test/bubbles-runner-dispatch.test.mjs \
             workers/infinity-brain-clock/arbitration-evidence.test.mjs
@@ -97,7 +101,7 @@ jobs:
         run: node scripts/verify-brain-stage.mjs after
       - name: Upload signed source version verification receipt
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: brain-clock-staging-verification
           path: repository-receipts/brain-clock-staged-version.json

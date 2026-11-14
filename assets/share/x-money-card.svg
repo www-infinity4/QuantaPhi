@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>X Money × Infinity Money - QuantaPhi Quick Card share artwork</title>
+<defs><linearGradient id="a" x1="0" x2="0.95" y1="0" y2="0.8"><stop stop-color="#172e45"/><stop offset="1" stop-color="#071018"/></linearGradient><linearGradient id="silver" x1="0" x2="1"><stop stop-color="#b6c6d0"/><stop offset=".4" stop-color="#e5edf0"/><stop offset=".7" stop-color="#8ca1b3"/><stop offset="1" stop-color="#d1dce5"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#a)"/>
+<rect x="28" y="28" width="1144" height="574" rx="36" fill="none" stroke="#546d86" stroke-width="3"/>
+<path d="M52 530H1148" stroke="#54768e" opacity=".6"/>
+<text x="78" y="109" font-size="32" font-weight="800" fill="#c6dce9" font-family="DejaVu Sans,Arial">QUANTAPHI  ·  QUICK CARDS</text>
+<path d="M78 124H316" stroke="#d65a60" stroke-width="5"/>
+<text x="73" y="243" font-size="96" font-weight="900" fill="#ffffff" font-family="DejaVu Sans,Arial">X MONEY</text>
+<text x="80" y="314" font-size="42" font-weight="800" fill="#e6f1f7" font-family="DejaVu Sans,Arial">THE CONNECTED MONEY CARD</text>
+<text x="80" y="385" font-size="29" fill="#b9d0df" font-family="DejaVu Sans,Arial">Official X Money signup and product guide</text>
+<text x="80" y="433" font-size="29" fill="#b9d0df" font-family="DejaVu Sans,Arial">Plus Infinity Money research and new ideas</text>
+<text x="80" y="574" font-size="22" font-weight="700" fill="#d3e1e8" font-family="DejaVu Sans,Arial">INDEPENDENT QUANTAPHI PRODUCT SPOTLIGHT</text>
+<rect x="690" y="101" width="427" height="370" rx="27" fill="url(#silver)" stroke="#e6edf2" stroke-width="4" opacity=".95"/>
+<path d="M720 209H1085" stroke="#738a9e" stroke-width="2" opacity=".4"/>
+<rect x="747" y="272" width="62" height="44" rx="8" fill="#a99f7b" stroke="#4f6c7b" stroke-width="3"/>
+<path d="M770 276V311M786 276V311M750 294H805" stroke="#566e7b" stroke-width="3"/>
+<text x="746" y="213" font-size="72" font-weight="900" fill="#173b53" font-family="DejaVu Sans,Arial">X</text>
+<text x="747" y="419" font-size="21" font-weight="800" fill="#29465a" font-family="DejaVu Sans,Arial">ILLUSTRATION · NOT AN ISSUED CARD</text>
+</svg>

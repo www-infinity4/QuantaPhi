@@ -1,5 +1,6 @@
 /* Shared QuantaPhi directions: user-directed usage and signed-in, bounded
  * Quant interest scores. No bank data, sensitive identities or raw searches. */
+import {isInfinityAccepted} from './infinity-accepted-catalog.mjs';
 export const FEED_STORAGE_KEY='quanta:discovery:anonymous:v1';
 export const FEED_TABS=Object.freeze(['public','for-you','following']);
 const validId=id=>typeof id==='string'&&/^[a-z0-9-]{1,70}$/.test(id);
@@ -65,10 +66,11 @@ export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
  const filtered=cards.filter(c=>(tab!=='following'||(state.following||[]).includes(c.id))&&
   (!q||[c.name,c.category,c.feature,c.study].join(' ').toLowerCase().includes(q)));
- if(tab==='following')return filtered.sort((a,b)=>(state.counts?.[b.id]||0)-(state.counts?.[a.id]||0)||a.name.localeCompare(b.name));
- if(tab==='for-you')return filtered.sort((a,b)=>feedScore(b,state)-feedScore(a,state)||a.id.localeCompare(b.id));
+ const priority=(a,b)=>Number(isInfinityAccepted(b))-Number(isInfinityAccepted(a));
+ if(tab==='following')return filtered.sort((a,b)=>priority(a,b)||(state.counts?.[b.id]||0)-(state.counts?.[a.id]||0)||a.name.localeCompare(b.name));
+ if(tab==='for-you')return filtered.sort((a,b)=>priority(a,b)||feedScore(b,state)-feedScore(a,state)||a.id.localeCompare(b.id));
  // Public remains a broad catalog rather than a personalized, narrowed feed.
- return filtered;
+ return filtered.sort(priority);
 }
 export function nextFeedDirection(cards,tab,state,currentId='',query=''){
  const filtered=feedCandidates(cards,tab,state,query);
@@ -80,8 +82,10 @@ export function nextFeedDirection(cards,tab,state,currentId='',query=''){
  const leastSeen=Math.min(...other.map(c=>state.viewed?.[c.id]||0));
  // Rank usefulness within the least-exposed group in every tab. A favorite
  // cannot starve the remaining catalog, even after the first complete round.
- const pool=other.filter(c=>(state.viewed?.[c.id]||0)===leastSeen);
- if(!current&&tab==='public')return {card:pool[(state.advance||0)%pool.length],reason:'Discover another interactive card'};
+ const leastExposed=other.filter(c=>(state.viewed?.[c.id]||0)===leastSeen);
+ const accepted=leastExposed.filter(isInfinityAccepted);
+ const pool=accepted.length?accepted:leastExposed;
+ if(!current&&tab==='public')return {card:pool[(state.advance||0)%pool.length],reason:accepted.length?'Infinity accepted · priority discovery':'Discover another interactive card'};
  const scored=pool.map(card=>{
   const relation=directionScore(current,card,state);
   const personal=tab==='public'?0:Math.min(95,feedScore(card,state));
@@ -94,9 +98,9 @@ export function nextFeedDirection(cards,tab,state,currentId='',query=''){
  });
  scored.sort((a,b)=>b.value-a.value||(state.viewed?.[a.card.id]||0)-(state.viewed?.[b.card.id]||0)||a.card.id.localeCompare(b.card.id));
  const found=scored[0];
- const explanation=found.relation.reason||
+ const explanation=(accepted.length?'Infinity accepted · ':'')+(found.relation.reason||
   (tab==='for-you'&&state.quantScores?.[found.card.id]?'Matched to your signed-in Quant search interests':
-   tab==='following'?'From your followed cards':tab==='public'?'Discover another interactive card':'Based on the cards you use');
+   tab==='following'?'From your followed cards':tab==='public'?'Discover another interactive card':'Based on the cards you use'));
  return {card:found.card,reason:explanation};
 }
 /* Round-robin eligibility within each Oracle direction. Personal ranking chooses

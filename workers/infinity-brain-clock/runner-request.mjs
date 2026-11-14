@@ -2,6 +2,7 @@
  * lease or permission to replay blocked/sensitive work. Keep this gate in
  * the Worker, not in the Android microphone or the chat model. */
 import {eligibleForRetry} from './alarm-retry.mjs';
+import {technicalSourceEvidenceNeeded} from './ticket-selector.mjs';
 
 // The five-day bridge may enqueue source work, never impersonate a wallet,
 // approve blocked jobs, release production, or obtain a writer lease.
@@ -36,8 +37,14 @@ export async function submitApprovedBridgeWork({request,claims,body,submit,dispa
   let execution={status:'scheduled_fallback'};
   // A retry does not revive blocked work or redispatch an existing ticket.
   if(saved.result.startRequested)try{execution=await dispatch(ticket.id);}catch{}
+  // The Brain already returns an admission reason. Preserve safe machine-readable
+  // reason codes so the owner bridge does not reduce a concrete blocker to
+  // "job_not_dispatchable". Never forward arbitrary upstream text or secrets.
+  const receipt={status:execution?.status||'unverified'};
+  if(typeof execution?.reason==='string'&&/^[a-z][a-z0-9_]{0,79}$/.test(execution.reason))
+    receipt.reason=execution.reason;
   return {status:200,result:{ok:true,ticketId:ticket.id,repository,status:ticket.status,
-    deduplicated:saved.result.deduplicated===true,execution:{status:execution.status||'unverified'},
+    deduplicated:saved.result.deduplicated===true,execution:receipt,
     completed:false,productionVerified:false}};
 }
 
@@ -54,8 +61,10 @@ export function checkOwnerRunnerRequest(
   if (!job?.id || !/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(String(job.repository || '')) || !String(job.instructions || '').trim()) {
     return { eligible: false, reason: 'invalid_job_scope' };
   }
-  if (ownerBlock.test(String(job.progress?.blocker || '')) || ownerBlock.test(String(job.progress?.summary || ''))) {
-    return { eligible: false, reason: 'owner_decision_required' };
+  const blockerText=[job.progress?.blocker,job.progress?.summary,job.progress?.next].filter(v=>typeof v==='string').join(' ');
+  if (ownerBlock.test(blockerText)) {
+    return { eligible: false, reason: technicalSourceEvidenceNeeded(blockerText)?
+      'technical_source_evidence_required':'owner_decision_required' };
   }
   return eligibleForRetry(job, { now, prior, lease, retry, deps });
 }

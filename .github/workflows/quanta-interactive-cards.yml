@@ -2,30 +2,101 @@ name: QuantaPhi real interactive card quality
 on:
   pull_request:
     paths:
+      - 'card-spotlight-creative.mjs'
+      - 'test/rotating-card-share.test.mjs'
+      - 'test/quick-card-spotlights.browser.spec.mjs'
+      - 'quick-card-spotlights.*'
+      - 'sports-card-data.mjs'
+      - 'google-trending-cards.*'
+      - 'scripts/*spotlight*'
+      - 'test/*spotlight*'
+      - 'test/sports-card-data.test.mjs'
       - 'quanta-card-experience.*'
+      - 'quanta-marketplace-carousel.mjs'
+      - 'test/quanta-marketplace-carousel.test.mjs'
+      - 'test/quanta-marketplace-carousel.browser.spec.mjs'
       - 'quanta-card-actions.mjs'
+      - 'quanta-x-composer.mjs'
+      - 'quanta-integra-x-tour.mjs'
+      - 'integra-automation-router.mjs'
+      - 'test/integra-automation-router.test.mjs'
+      - 'test/integra-automation.browser.spec.mjs'
+      - 'test/quanta-integra-x-tour.test.mjs'
+      - 'test/integra-x-tour.browser.spec.mjs'
+      - 'test/quanta-x-composer.test.mjs'
       - 'art-museum-quick-cards.mjs'
       - 'verified-brand-sports-catalog.mjs'
       - 'verified-brand-sports-cards.mjs'
       - 'verified-brand-sports-cards.css'
       - 'test/verified-brand-sports.test.mjs'
+      - 'tests/colorado-mountain-cards.test.mjs'
+      - 'test/infinity-cards-freshness.test.mjs'
       - 'test/verified-brand-sports-browser.spec.mjs'
       - 'art-museum-quick-cards.css'
       - 'test/art-museum-quick-cards.test.mjs'
       - 'test/art-museum-card-browser.spec.mjs'
       - 'oracle-card-deck.js'
       - 'oracle-card-deck.css'
+      - 'shop-phi-switchboard.*'
+      - 'shopphi-showcase-core.mjs'
+      - 'test/shopphi-showcase.test.mjs'
+      - 'test/shopphi-flanks.browser.spec.mjs'
+      - 'test/shopphi-seller-live.browser.spec.mjs'
+      - 'shop-phi-publish.js'
+      - 'shopphi-wallet-status.js'
       - 'test/cardone-carousel.browser.cjs'
       - 'premium-source-cards.*'
       - 'test/premium*'
       - 'quanta-feed.*'
+      - 'quanta-feed-rank.mjs'
+      - 'infinity-accepted*'
+      - 'infinity-affiliates*'
+      - 'test/infinity-affiliates.test.mjs'
+      - 'test/infinity-affiliates.browser.spec.mjs'
+      - 'quick-card-tinyfish-actions.mjs'
+      - 'workers/infinity-brain-clock/quick-card-browser*'
+      - 'test/infinity-accepted*'
+      - 'test/quick-card-tinyfish.test.mjs'
+      - 'test/tinyfish-broker-bridge.test.mjs'
       - 'quanta-feed-card.html'
       - 'source-quick-cards.mjs'
+      - 'motorcycle-quick-cards.mjs'
+      - 'test/motorcycle-quick-cards.test.mjs'
+      - 'denver-retail-*.mjs'
+      - 'denver-retail-*.css'
+      - 'test/denver-retail-quick-cards.test.mjs'
       - 'brand-product-cards.mjs'
+      - 'essentials-card-batch.mjs'
+      - 'essentials-quick-cards.mjs'
+      - 'essentials-quick-cards.css'
+      - 'test/essentials-live-cards.test.mjs'
+      - 'test/essentials-import-cli.test.mjs'
+      - 'test/essentials-cards.browser.spec.mjs'
+      - 'scripts/build-essentials-batch.mjs'
+      - 'data/essentials-reviewed.json'
       - 'brand-product-cards.css'
       - 'test/brand-product-cards.test.mjs'
       - 'source-quick-card.html'
+      - 'x-money.html'
+      - 'test/x-money-card.test.mjs'
       - 'index.html'
+      - 'quick-card-brand-compact.css'
+      - 'test/quick-card-brand-compact.test.mjs'
+      - 'shopphi-sell.html'
+      - 'oracle-card-spotlight.css'
+      - 'test/share-shopphi-browser.test.mjs'
+      - 'test/share-shopphi-browser.spec.mjs'
+      - 'home-mobile-cards-first.css'
+      - 'cloud-wallet-client.js'
+      - 'test/home-mobile-first.test.mjs'
+      - 'test/home-mobile-first.browser.spec.mjs'
+      - 'test/android-scroll-sections.test.mjs'
+      - 'test/android-scroll-sections.browser.spec.mjs'
+      - 'restricted-ad-card.mjs'
+      - 'restricted-ad-card.css'
+      - 'adult-kit-research.mjs'
+      - 'test/adult-kit-research.test.mjs'
+      - 'test/adult-lifestyle-card.browser.spec.mjs'
       - 'world-series-news.mjs'
       - 'church-iam-card.js'
       - 'church-iam-card.css'
@@ -38,14 +109,25 @@ on:
       - 'phi-assimilation.js'
       - 'test/assimilation-mobile-accessibility.test.mjs'
       - 'test/quanta-card-browser.spec.mjs'
+      - 'quick-card-preview.mjs'
+      - 'quick-card-preview.css'
+      - 'test/quick-card-preview.browser.spec.mjs'
       - 'test/quanta-card-experience.test.mjs'
       - 'test/source-quick-cards.test.mjs'
       - 'test/quanta-card-feed.test.mjs'
       - 'test/quanta-card-actions-fox-one.test.mjs'
+      - 'test/quick-card-single-search.test.mjs'
       - 'test/quanta-card-provider.test.mjs'
       - 'quanta-card-live-source.mjs'
       - 'test/quanta-card-live-source.test.mjs'
       - 'test/quanta-card-live-source.browser.spec.mjs'
+      - 'design-lab/**'
+      - 'test/design-lab-power-chain.test.mjs'
+      - 'test/design-lab-bulk-allocator.test.mjs'
+      - 'test/design-lab-power-chain.browser.spec.mjs'
+      - 'test/design-lab-bulk-allocator.browser.spec.mjs'
+      - 'test/design-lab-cooperative.browser.spec.mjs'
+      - 'test/cooperative-power-chain.test.mjs'
       - '.github/workflows/quanta-interactive-cards.yml'
   workflow_dispatch:
 jobs:
@@ -60,27 +142,69 @@ jobs:
           node-version: '22'
       - name: Validate card module syntax
         run: |
+          node --check card-spotlight-creative.mjs
+          node --check quick-card-spotlights.mjs
+          node --check sports-card-data.mjs
+          node --check google-trending-cards.js
           node --check quanta-card-experience.mjs
+          node --check oracle-card-deck.js
           node --check quanta-card-live-source.mjs
+          node --check quanta-marketplace-carousel.mjs
+          node --check design-lab/power-chain-core.mjs
+          node --check design-lab/app.mjs
+          node --check design-lab/quick-card.mjs
+          node --check design-lab/bulk-allocator.mjs
+          node --check design-lab/bulk-allocator-ui.mjs
           node --check quanta-card-actions.mjs
+          node --check quanta-x-composer.mjs
+          node --check quanta-integra-x-tour.mjs
+          node --check integra-automation-router.mjs
+          node --check quick-card-preview.mjs
           node --check art-museum-quick-cards.mjs
           node --check verified-brand-sports-catalog.mjs
           node --check verified-brand-sports-cards.mjs
           node --check quanta-feed.mjs
+          node --check infinity-accepted-catalog.mjs
+          node --check infinity-accepted-sources.mjs
+          node --check infinity-accepted-cards.mjs
+          node --check infinity-affiliates-core.mjs
+          node --check infinity-affiliates-card.mjs
+          node --check quick-card-tinyfish-actions.mjs
+          node --check workers/infinity-brain-clock/quick-card-browser-policy.mjs
+          node --check workers/infinity-brain-clock/quick-card-browser.mjs
           node --check source-quick-cards.mjs
           node --check premium-source-cards.mjs
+          node --check denver-retail-catalog.mjs
+          node --check denver-retail-quick-cards.mjs
+          node --check shop-phi-switchboard.mjs
           node --check brand-product-cards.mjs
+          node --check essentials-card-batch.mjs
+          node --check essentials-quick-cards.mjs
+          node --check scripts/build-essentials-batch.mjs
           node --check quanta-card-provider.mjs
           node --check quanta-card-actions.mjs
           node --check world-series-news.mjs
           node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
-        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs
-      - name: Check assimilation contrast and action contracts
+        run: node --test tests/colorado-mountain-cards.test.mjs test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/motorcycle-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-x-composer.test.mjs test/quanta-integra-x-tour.test.mjs test/integra-automation-router.test.mjs test/quick-card-single-search.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/quanta-marketplace-carousel.test.mjs test/design-lab-power-chain.test.mjs test/design-lab-bulk-allocator.test.mjs test/cooperative-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/quick-card-brand-compact.test.mjs test/android-scroll-sections.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
+      - name: Verify connected source-backed ShopPhi slideshow
+        run: node --test test/shopphi-showcase.test.mjs tests/shop-phi-switchboard.test.mjs tests/quick-card-mobile-revamp.test.mjs
+      - name: Check today's Infinity card freshness and real product media
+        run: node --test test/infinity-cards-freshness.test.mjs
+      - name: Check changing imagery, source prices, trends and sports data
+        run: |
+          node --test test/rotating-card-share.test.mjs test/quick-card-share.test.mjs test/social-share-preview.test.cjs test/quick-card-spotlights.test.mjs test/sports-card-data.test.mjs test/google-trending-cards.test.cjs
+          python3 -m unittest discover -s test -p 'test_card_spotlights_sync.py' -v
+          python3 -m unittest discover -s test -p 'test_google_trends_sync.py' -v
+      - name: Check Infinity accepted catalog and browser action contracts
+        run: node --test test/infinity-accepted.test.mjs test/quick-card-tinyfish.test.mjs test/brain-clock.test.mjs test/tinyfish-broker-bridge.test.mjs
+      - name: Check assimilation accessibility
         run: node --test test/assimilation-mobile-accessibility.test.mjs
       - name: Validate real-brand retail products and APK disclosure
-        run: node --test test/brand-product-cards.test.mjs
+        run: node --test test/brand-product-cards.test.mjs test/essentials-live-cards.test.mjs test/essentials-import-cli.test.mjs
+      - name: Validate Denver retail source and mobile card contracts
+        run: node --test test/denver-retail-quick-cards.test.mjs
       - name: Check World Series publisher stories and Cardone detail actions
         run: |
           python3 -m unittest discover -s test -p 'test_world_series_sync.py' -v
@@ -95,4 +219,5 @@ jobs:
         run: |
           node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
-          npx playwright test test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/premium-card-browser.spec.mjs test/world-series-browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/quanta-marketplace-carousel.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/design-lab-cooperative.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/android-scroll-sections.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs test/adult-lifestyle-card.browser.spec.mjs test/integra-x-tour.browser.spec.mjs test/integra-automation.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/essentials-cards.browser.spec.mjs --reporter=line --workers=1

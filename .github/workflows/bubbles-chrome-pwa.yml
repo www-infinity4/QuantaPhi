@@ -13,7 +13,7 @@ on:
       - 'bubbles-chrome.html'
       - 'bubbles-pwa*'
       - 'bubbles-ai.js'
-      - 'test/bubbles-pwa-update-safety.test.mjs'
+      - 'test/bubbles-apk-website-release-parity.test.cjs'
       - 'assets/bubbles-pwa-*.png'
       - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/**'
       - 'android/bubbles-overlay/app/src/main/AndroidManifest.xml'
@@ -31,7 +31,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: '17'
@@ -39,7 +39,7 @@ jobs:
         run: |
           node --check bubbles-pwa.js
           node --check bubbles-pwa-sw.js
-          node --test test/bubbles-chrome-pwa.test.cjs test/bubbles-product-first.test.cjs test/bubbles-pwa-update-safety.test.mjs
+          node --test test/bubbles-chrome-pwa.test.cjs test/bubbles-product-first.test.cjs test/bubbles-apk-website-release-parity.test.cjs
       - name: Validate spoken Chrome actions without screen guessing
         run: |
           mkdir -p /tmp/bubbles-chrome

@@ -49,7 +49,17 @@ export async function webSearch(message,env={},fetcher=fetch){
   const url=broker+'?'+new URLSearchParams({q:query,format:'json',categories:'general',safesearch:'1',...(engineOnly?{engines:'google'}:{})});
   // Preserve the binding receiver; public same-zone Worker fetches cannot route here.
   const brokerFetch=typeof env.SEARCH?.fetch==='function'?(input,options)=>env.SEARCH.fetch(input,options):fetcher;
-  const data=await getJson(brokerFetch,url);
+  let data;
+  for(let attempt=0;attempt<2;attempt++){
+   try{data=await getJson(brokerFetch,url);break;}
+   catch(error){
+    // One retry for a temporary bound-service outage. Never retry 403/429,
+    // redirects, malformed data or an untrusted destination. Keep the same
+    // Cloudflare binding receiver and the exact source query.
+    if(attempt>0||!/^upstream_http_(?:502|503|504)$/.test(String(error?.message||'')))throw error;
+    await new Promise(resolve=>setTimeout(resolve,100));
+   }
+  }
   const raw=Array.isArray(data.results)?data.results:[];
   return raw.map(x=>({title:trim(x.title,220),url:safeUrl(x.url),snippet:trim(x.content||x.description,600),
    engine:trim(x.engine||((Array.isArray(x.engines)&&x.engines.includes('google'))?'google':'web'),45)}))

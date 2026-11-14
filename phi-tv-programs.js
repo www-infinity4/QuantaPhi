@@ -57,7 +57,9 @@ function chillerNow(now=new Date()){
  const slot=now.getHours()*2+Math.floor(now.getMinutes()/30);
  const program=chillerSchedule(now)[slot];if(!program)return null;
  const elapsed=(now.getMinutes()%30)*60+now.getSeconds();
- return {...program,channel:'chiller',start:Math.min(5000,(program.startOffset||0)+elapsed),slot,
+ // Preserve the historic synchronized guide offset for the original schedule,
+ // but in-card playback uses playbackStartSeconds to offer a complete episode.
+ return {...program,channel:'chiller',start:Math.min(5000,(program.startOffset||0)+elapsed),playbackStartSeconds:0,slot,
   poster:'https://i.ytimg.com/vi/'+program.videoId+'/hqdefault.jpg'};
 }
 function starquestNow(now=new Date()){
@@ -78,5 +80,66 @@ function now(channel,when=new Date()){
  if(channel==='shoplc')return{channel:'shoplc',title:'Shop LC · live shopping',stream:SHOPLC_STREAMS[0],start:0};
  return starquestNow(when);
 }
-return Object.freeze({STARQUEST,CHILLER,SHOPLC_STREAMS,CHILLER_FEATURE,valid,now,next,chillerSchedule,chillerNow,starquestNow});
+const SUMMARIES=Object.freeze({
+ 'The Phantom Planet':'A 1961 science-fiction adventure about an astronaut encountering an unexpected miniature world.',
+ 'Things to Come':'A 1936 science-fiction vision of war, rebuilding and an imagined technological future.',
+ 'The Amazing Transparent Man':'A 1960 science-fiction crime thriller centered on an experimental invisibility device.',
+ 'Attack from Space':'A Japanese space-adventure film following the superhero Starman.',
+ 'Phantom from Space':'A 1953 science-fiction mystery about an unseen visitor from beyond Earth.',
+ 'Missile to the Moon':'A 1958 lunar-expedition adventure with a mysterious destination.',
+ 'The Monster of Piedras Blancas':'A 1959 coastal creature-feature horror film.',
+ 'Serenity':'A 2005 science-fiction space-western feature; the external video publisher controls viewing rights.'
+});
+const GUIDE_PATH='/infinity-tv/guide.html#';
+const KYOU_POSTER='https://webpubcontent.gray.tv/gray/arc-fusion-assets/images/logo-off-site/kyou.png?d=602&mxId=00000000';
+function programDescription(channel,program){
+ if(channel==='chiller')return program?.family==='hitchcock-feature'?
+  'Blackmail (1929), a Hitchcock suspense film featured in the Infinity Chiller collection.':
+  program?.family==='twilight-zone-1980s'?
+   'A selected story from the 1980s Twilight Zone revival suspense anthology.':
+   'A selected suspense story from the 1980s Alfred Hitchcock anthology lineup.';
+ if(channel==='starquest'||channel==='omni')return SUMMARIES[program?.title]||'A selected science-fiction or classic-movie feature in the Infinity video collection.';
+ if(channel==='shoplc')return 'Live shopping coverage of jewelry, gems, fashion and home products. The exact on-air product, price and host must be confirmed on Shop LC.';
+ if(channel==='kyou')return 'KYOU is the Ottumwa, Iowa station carrying FOX 15.1 and other channels. Check the official schedule for the program currently airing.';
+ return 'Rolling news coverage from LiveNOW from FOX. The network controls which news segment is currently live.';
+}
+function preview(channel,when=new Date()){
+ const date=when instanceof Date&&!Number.isNaN(when.getTime())?when:new Date();
+ const id=channel==='omni'?'starquest':channel;
+ const p=['starquest','chiller','shoplc'].includes(id)?now(id,date):null;
+ const guideUrl=GUIDE_PATH+channel;
+ if(channel==='kyou')return {channel,title:'Check KYOU TV Guide',description:programDescription(channel),poster:KYOU_POSTER,
+  providerUrl:'https://www.kyoutv.com/livestream/',guideUrl,availabilityNote:'Broadcaster schedule not imported. FOX 15.1 broadcast and KYOU news livestream are not the same service.',hour:null,timeLabel:'See station schedule'};
+ if(channel==='livenow')return {channel,title:'LiveNOW from FOX · news',description:programDescription(channel),
+  poster:'https://i.ytimg.com/vi/qoytj8mNq7s/hqdefault.jpg',
+  providerUrl:'https://www.livenowfox.com/live',guideUrl,availabilityNote:'Live news segments change; no current segment title is verified.',hour:null,timeLabel:'Live news · details at source'};
+ if(!p)throw new TypeError('Unsupported Infinity channel');
+ const poster=p.poster||'https://i.ytimg.com/vi/eqpG55UKM8M/hqdefault.jpg';
+ const providerUrl=channel==='shoplc'?'https://www.shoplc.com/pages/live-tv':
+  channel==='omni'?'https://quantaphi.org/infinity-tv/kyou.html':
+  'https://www.youtube.com/watch?v='+encodeURIComponent(p.videoId);
+ const availabilityNote=channel==='shoplc'?'Shop LC is a real live feed; the current product and host are not verified here.':
+  channel==='omni'?'Infinity remote starts with StarQuest. CH−/CH+ moves between channels; not a station broadcast schedule.':
+  channel==='chiller'?'Infinity curated playlist slot, not an official TV network broadcast.':
+  'Infinity daily curated video pick, not an official TV network broadcast.';
+ return {channel,title:p.title,year:p.year||'',description:programDescription(channel,p),poster,providerUrl,guideUrl,
+  availabilityNote,hour:null,timeLabel:channel==='chiller'?'Infinity 30-minute playlist slot':channel==='starquest'?'Daily Infinity video pick':channel==='omni'?'Omni remote · initial channel':'Live Shop LC · current item at source'};
+}
+// Our guide is a schedule of curated Infinity selections, not a claim that
+// third-party station programs were received or licensed as an EPG.
+function guideRows(date=new Date()){
+ const dateOnly=new Date(date.getFullYear(),date.getMonth(),date.getDate());
+ const previews=['starquest','omni','shoplc','kyou','livenow'].map(ch=>preview(ch,dateOnly));
+ const slots=chillerSchedule(dateOnly);
+ for(let i=0;i<slots.length;i++){
+  const p=slots[i],hour=i/2;
+  previews.push({channel:'chiller',title:p.title,year:p.year||'',description:programDescription('chiller',p),
+   poster:'https://i.ytimg.com/vi/'+p.videoId+'/hqdefault.jpg',
+   providerUrl:'https://www.youtube.com/watch?v='+encodeURIComponent(p.videoId),
+   guideUrl:GUIDE_PATH+'chiller',availabilityNote:'Infinity curated playlist slot; actual YouTube access depends on the original uploader.',
+   hour,timeLabel:String(Math.floor(hour)).padStart(2,'0')+':'+(i%2?'30':'00')+' · local device time'});
+ }
+ return previews;
+}
+return Object.freeze({STARQUEST,CHILLER,SHOPLC_STREAMS,CHILLER_FEATURE,valid,now,next,chillerSchedule,chillerNow,starquestNow,programDescription,preview,guideRows});
 });

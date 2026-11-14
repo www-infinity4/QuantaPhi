@@ -1,6 +1,13 @@
 name = "bubbles-cloud-browser"
 main = "worker.mjs"
 compatibility_date = "2026-10-19"
+# Keep dashboard-set variables during Wrangler deployments; never blank or
+# overwrite values entered by the owner. Worker secrets remain in Cloudflare,
+# not this repository. Production already has BROWSER_AUTOMATION_TOKEN.
+# The optional companion browser is not yet connected: configure a real
+# protected BROWSER_AUTOMATION_ORIGIN before attempting that integration.
+# Access credentials must be issued by Cloudflare Access, not generated here.
+keep_vars = true
 [[services]]
 binding = "BRAIN"
 service = "infinity-brain-clock"

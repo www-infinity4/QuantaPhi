@@ -7,6 +7,7 @@ import {handleConnections} from './router.mjs';
 import {ConnectorPairing} from './pairing.mjs';
 import {connectionResult} from './completion.mjs';
 import {checkConnectionSetup} from './setup-check.mjs';
+import {walletEmailPreference} from './wallet-email.mjs';
 
 export class UserConnections extends DurableObject {
   constructor(ctx,env) {
@@ -23,6 +24,7 @@ export class UserConnections extends DurableObject {
     this.service = new ConsentService({storage:ctx.storage,vault:new TokenVault(JSON.parse(env.CONNECTION_KEYRING || '{}'),env.CONNECTION_ACTIVE_KEY),adapters});
   }
   async list(input) {return this.service.list(input);}
+  async walletEmail(input) {return walletEmailPreference(this.service,input);}
   async gateStatus(input) {return this.service.gateStatus(input);}
   async githubRepositories(input) {return this.service.githubRepositories(input);}
   async cloudflareAccounts(input) {return this.service.cloudflareAccounts(input);}
@@ -70,6 +72,8 @@ export class UserConnections extends DurableObject {
   }
   async handoffStatus(input) {return connectionResult(()=>this.service.handoffStatus(input));}
   async finishHandoff(input) {return connectionResult(()=>this.service.finishHandoff(input));}
+  async resumeGoogleHandoff(input) {return connectionResult(()=>this.service.resumeGoogleHandoff(input));}
+  async resumeCloudflareHandoff(input) {return connectionResult(()=>this.service.resumeCloudflareHandoff(input));}
   async complete(input) {return connectionResult(()=>this.service.complete(input));}
   async checkSetup(input) {return connectionResult(()=>checkConnectionSetup(this.service,input));}
   async disconnect(input) {return this.service.disconnect(input);}

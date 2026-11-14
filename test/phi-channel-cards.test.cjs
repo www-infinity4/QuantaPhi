@@ -13,6 +13,11 @@ test('all four QuantaPhi cards display video-only players, not TV websites',()=>
  assert.match(css,/channelphi-video-slot/);
  assert.doesNotThrow(()=>new vm.Script(code));
 });
+test('StarQuest and Omni player posters use current source-backed video artwork, not missing local files',()=>{
+ assert.doesNotMatch(code,/\/TV-Database\/assets\/starquest-share-card\.jpg|\/omni-tv\/preview\.png/);
+ assert.match(code,/catalog\.now\('starquest',new Date\(\)\)\.poster/);
+ assert.match(programs.starquestNow(new Date()).poster,/^https:\/\/i\.ytimg\.com\/vi\/[^/]+\/hqdefault\.jpg$/);
+});
 test('existing TV sources are exact media identifiers and live ShopLC HLS URLs',()=>{
  assert.ok(programs.STARQUEST.length>=6);
  assert.ok(programs.CHILLER.length>=8);
@@ -56,16 +61,27 @@ test('one active TV screen can be played and switched with genuine media element
  }
  const root=new Element('section'),listeners={};
  const document={getElementById:id=>id==='phiChannelCards'?root:null,createElement:tag=>new Element(tag),
-  head:new Element('head'),addEventListener:(kind,callback)=>listeners[kind]=callback,hidden:false};
+  head:new Element('head'),addEventListener:(kind,callback)=>listeners[kind]=callback,dispatchEvent:event=>listeners[event.type]?.(event),hidden:false};
  const window={PhiTVPrograms:programs,YT:{Player:class{stopVideo(){}destroy(){}unMute(){}setVolume(){}playVideo(){}}},
   addEventListener:(kind,cb)=>listeners[kind]=cb};
- const context={document,window,location:{origin:'https://quantaphi.org'},URL,setTimeout,clearTimeout};
+ const context={document,window,location:{origin:'https://quantaphi.org'},URL,setTimeout,clearTimeout,CustomEvent:class{constructor(type,{detail}){this.type=type;this.detail=detail}}};
  vm.runInNewContext(code,context);
  const all=n=>[n,...n.children.flatMap(all)];
  const cards=all(root).filter(n=>n.tagName==='article');
- assert.equal(cards.length,4);
- const star=cards[0],omni=cards[1],chiller=cards[2],shop=cards[3];
+ assert.equal(cards.length,5);
+ const [kyou,star,omni,chiller,shop]=cards;
  const btn=(card,c)=>all(card).find(n=>n.className===c);
+ const kyouScreen=btn(kyou,'channelphi-screen');
+ assert.equal(kyouScreen.tagName,'a','KYOU play belongs inside the screen');
+ assert.match(kyouScreen.href,/^https:\/\/www\.kyoutv\.com\/livestream\/\?utm_source=quantaphi/);
+ assert.equal(kyouScreen.target,'_blank');
+ assert.equal(kyouScreen.rel,'noopener');
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,0,'No page iframe on load');
+ assert.equal(all(kyou).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
+ assert.equal(btn(kyou,'channelphi-stop'),undefined,'No detached Stop button');
+ assert.equal(btn(kyou,'channelphi-prev'),undefined,'No detached Refresh button');
+ assert.equal(btn(kyou,'channelphi-next'),undefined,'No detached website button');
+ assert.match(kyouScreen.attributes['aria-label'],/official KYOU livestream/);
  btn(star,'channelphi-screen').click();
  const f1=all(root).filter(x=>x.tagName==='iframe');assert.equal(f1.length,1);
  assert.match(f1[0].src,/youtube-nocookie.com\/embed\/[A-Za-z0-9_-]{11}/);
@@ -87,4 +103,24 @@ test('one active TV screen can be played and switched with genuine media element
  assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
  listeners['oracle:card-deactivated']({detail:{id:'phiChannelCards'}});
  assert.equal(all(root).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,0);
+ listeners['quantaphi:tv-playback-request']({detail:{owner:'liveFoxNewsCard'}});
+ assert.equal(all(root).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
+});
+
+test('KYOU and shared Quick Card footer actions keep real controls with neutral styling',()=>{
+ const actions=fs.readFileSync('quanta-card-actions.mjs','utf8');
+ const actionCss=fs.readFileSync('quanta-card-experience.css','utf8');
+ for(const action of ['follow','star','collect','preview','share','build']){
+  assert.ok(actions.includes("'"+action+"')"),action+' is a real tagged control');
+ }
+ assert.match(actionCss,/\.qca-toolbar \.qca-controls>\.qca-button\{[^}]*background:#fff!important/);
+ assert.match(actionCss,/\.qca-toolbar \.qca-controls>\.qca-button\[aria-pressed="true"\]\{[^}]*background:#eee!important/);
+ assert.doesNotMatch(actionCss,/data-action="follow"\]\{background:#e7f3ff/);
+ assert.match(actions,/collect\.setAttribute\('aria-pressed','true'\)/);
+ assert.match(actionCss,/@media\(max-width:380px\)/);
+ assert.match(css,/\.channelphi-kyou \.channelphi-screen\{/);
+ assert.match(css,/\.channelphi-kyou \.channelphi-screen \.channelphi-play-icon\{/);
+ assert.doesNotMatch(css,/\.channelphi-kyou \.channelphi-video-slot\{height:520px/);
+ assert.doesNotMatch(css,/\.channelphi-kyou \.channelphi-controls \.channelphi-stop\{background:#7b2638/);
 });

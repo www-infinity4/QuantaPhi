@@ -65,7 +65,7 @@ jobs:
           node scripts/bubbles-components-browser.mjs
       - name: Keep truthful card browser receipts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: bubbles-media-star-browser-evidence
           path: |

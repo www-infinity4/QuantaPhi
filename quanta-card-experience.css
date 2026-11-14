@@ -182,3 +182,145 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .iqc-ai-send:disabled{opacity:.65;cursor:wait}
 .iqc-ai-receipt{margin:0;font-size:13px;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere;color:#544840}
 .iqc-ai-input:focus-visible,.iqc-ai-send:focus-visible{outline:3px solid #70469c;outline-offset:2px}
+
+/* Original-site reads remain inside their card, with accessible mobile controls. */
+.qca-website-reader{margin:10px 0;border:1px solid #cbd8e2;border-radius:14px;background:#fff;color:#22384b;padding:10px;min-width:0}
+.qca-website-reader summary{min-height:44px;display:list-item;cursor:pointer;font:700 14px/1.5 system-ui;padding:10px;box-sizing:border-box}
+.qca-website-reader .qca-controls{margin-top:8px}
+.qca-website-results{min-width:0;max-height:360px;overflow:auto;overscroll-behavior:contain;overflow-wrap:anywhere}
+.qca-website-result{border-top:1px solid #dde5eb;padding:12px 0;font:400 14px/1.55 system-ui}
+.qca-website-text{white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0;color:#243b50}
+.qca-website-receipt{display:block;margin:8px 0;color:#50667a;overflow-wrap:anywhere}
+.qca-website-reader :is(button,a):focus-visible{outline:3px solid #0070ba;outline-offset:2px}
+.qca-website-reader .qca-button{min-height:44px;white-space:normal}
+
+/* Shared Quick Card controls use neutral outlines, never rainbow action colors.
+ * Pressed state remains accessible by text, aria-pressed, and a light gray surface. */
+.qca-toolbar .qca-controls>.qca-button{box-sizing:border-box;min-height:48px;border:1px solid #c9c9c9!important;border-radius:12px;padding:10px 7px;background:#fff!important;color:#252525!important;box-shadow:none!important;font:800 13px/1.3 system-ui,sans-serif;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.qca-toolbar .qca-controls>.qca-button[aria-pressed="true"]{background:#eee!important;border-color:#858585!important;color:#171717!important}
+.qca-toolbar .qca-controls>.qca-button:hover{background:#f5f5f5!important;filter:none}
+.qca-toolbar .qca-controls>.qca-button:focus-visible{outline:3px solid #333;outline-offset:3px}
+@media(max-width:380px){.qca-toolbar .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Matching neutral search and browse buttons on the source-first card experience. */
+.oracle-card-deck-stage :is(.qcx-button,.qcs-open,.qcs-nav button){background:#fff!important;color:#252525!important;border:1px solid #c9c9c9!important;box-shadow:none!important}
+.oracle-card-deck-stage :is(.qcx-button,.qcs-open,.qcs-nav button):hover{background:#f5f5f5!important}
+
+/* The original player stays primary; additional video search stays collapsed. */
+.qcx-discover-details{box-sizing:border-box;margin:12px 0;border:1px solid #c4d9e5;border-radius:14px;background:#f4faff;min-width:0;color:#244760}
+.qcx-discover-details summary{box-sizing:border-box;cursor:pointer;display:list-item;min-height:48px;padding:13px 15px;font:800 14px/1.4 system-ui,sans-serif}
+.qcx-discover-details[open]{background:#fff}
+.qcx-discover-details>.qcx-tool{margin:0 10px 12px;padding:12px;border-radius:12px}
+.qcx-discover-details :is(button,input,summary):focus-visible{outline:3px solid #1485bc;outline-offset:2px}
+
+
+/* Verified-X-provider-only in-card draft. Neutral Infinity controls; X owns sign-in and publish. */
+.qca-x-composer{min-width:0;display:grid;gap:8px;padding:12px;border:1px solid #d4d6d9;border-radius:14px;background:#fff;color:#252525}
+.qca-x-heading{font:750 15px/1.3 system-ui,sans-serif;margin:0}
+.qca-x-note{font:500 12px/1.45 system-ui,sans-serif;color:#535a62;margin:0}
+.qca-x-label{display:grid;gap:6px;min-width:0;font:650 12px/1.4 system-ui,sans-serif;color:#343a40}
+.qca-x-text{box-sizing:border-box;width:100%;max-width:100%;min-height:88px;resize:vertical;padding:11px;border:1px solid #bcc2c8;border-radius:12px;background:white;color:#222;font:500 16px/1.45 system-ui,sans-serif}
+.qca-x-text:focus-visible,.qca-x-review:focus-visible{outline:3px solid #316ea6;outline-offset:2px}
+.qca-x-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;min-width:0}
+.qca-x-count{font:650 12px/1.4 system-ui,sans-serif;color:#4c535a}
+.qca-x-review{box-sizing:border-box;min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border:1px solid #a7adb3;border-radius:11px;background:#f5f5f5!important;color:#252525!important;font:750 13px/1.3 system-ui,sans-serif;text-decoration:none!important}
+.qca-x-review[aria-disabled="true"]{color:#6e7378!important;opacity:.65;pointer-events:none}
+@media(max-width:420px){.qca-x-footer{align-items:stretch}.qca-x-review{flex:1 1 100%}}
+
+
+/* Integra's real, public, source-linked X tour; compact neutral Infinity controls. */
+.qcx-integra-tour{box-sizing:border-box;display:grid;gap:10px;min-width:0;max-width:100%;padding:13px;border:1px solid #d3d5d7;border-radius:16px;background:#fff;color:#24272a}
+.qcx-integra-heading{font:800 clamp(16px,3.7vw,19px)/1.25 system-ui,sans-serif;margin:0}
+.qcx-integra-note,.qcx-integra-foot{color:#58616b;font:500 12px/1.5 system-ui,sans-serif;margin:0}
+.qcx-integra-choose,.qcx-integra-label{display:grid;gap:6px;min-width:0}
+.qcx-integra-label{font:700 12px/1.4 system-ui,sans-serif;color:#35404a}
+.qcx-integra-select{box-sizing:border-box;width:100%;min-width:0;min-height:46px;border:1px solid #b9c1c9;border-radius:12px;background:#fff;color:#21262d;padding:8px 11px;font:650 14px/1.3 system-ui,sans-serif}
+.qcx-integra-step{display:grid;gap:8px;min-width:0;padding:11px;border:1px solid #e1e4e7;border-radius:14px;background:#fafafa}
+.qcx-integra-position{font:750 11px/1.35 system-ui,sans-serif;color:#58636c;letter-spacing:.035em;margin:0}
+.qcx-integra-title{font:750 16px/1.3 system-ui,sans-serif;color:#252525;margin:0}
+.qcx-integra-body{font:450 13px/1.55 system-ui,sans-serif;color:#363b41;margin:0;overflow-wrap:anywhere}
+.qcx-integra-source{display:inline-flex;align-items:center;min-height:44px;width:fit-content;max-width:100%;font:700 13px/1.35 system-ui,sans-serif;color:#12527b!important;text-decoration:underline!important;overflow-wrap:anywhere}
+.qcx-integra-nav{display:flex;gap:8px}
+.qcx-integra-button{box-sizing:border-box;min-width:0;flex:1;min-height:44px;border:1px solid #c7c9cc!important;border-radius:11px;background:white!important;color:#242424!important;font:750 13px/1.3 system-ui,sans-serif;cursor:pointer}
+.qcx-integra-button:disabled{opacity:.52;cursor:default}
+.qcx-integra-select:focus-visible,.qcx-integra-button:focus-visible,.qcx-integra-source:focus-visible{outline:3px solid #4d809d;outline-offset:2px}
+.qcx-integra-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:420px){.qcx-integra-tour{padding:10px}.qcx-integra-step{padding:9px}}
+
+
+/* Integra user-owned automation selection: no unconnected buttons or paid browser calls. */
+.qcx-integra-business{box-sizing:border-box;width:100%;min-width:0;padding:11px 13px;border:1px solid #d2d5d9;border-radius:14px;background:#fff;color:#24282c}
+.qcx-integra-business>summary{min-height:44px;cursor:pointer;display:list-item;padding:10px 3px;font:750 14px/1.4 system-ui,sans-serif;color:#26292c}
+.qcx-integra-business-note,.qcx-integra-business-result p{font:450 13px/1.55 system-ui,sans-serif;color:#384148;overflow-wrap:anywhere;margin:8px 0}
+.qcx-integra-business-label{display:grid;gap:6px;margin:8px 0;font:700 12px/1.4 system-ui,sans-serif;color:#3d454c}
+.qcx-integra-business-select{box-sizing:border-box;min-height:46px;width:100%;min-width:0;padding:8px 10px;border:1px solid #adb5bd;border-radius:11px;background:#fff;color:#24282c;font:500 15px/1.3 system-ui,sans-serif}
+.qcx-integra-business-select:focus-visible,.qcx-integra-business>summary:focus-visible{outline:3px solid #27668c;outline-offset:2px}
+.qcx-integra-business-result{min-width:0;padding:10px;background:#fafafa;border:1px solid #e1e3e5;border-radius:10px}
+.qcx-integra-business-warning{font-weight:700!important;color:#4d5359!important}
+
+/* One source-verified seller carousel inside the existing eBay/vintage cards. */
+.qcm-panel{display:grid;gap:12px;padding:clamp(12px,3vw,20px);background:#fff;border:1px solid #dedbd7;border-radius:17px;min-width:0;max-width:100%;overflow:hidden;color:#24282d}
+.qcm-panel *{box-sizing:border-box;min-width:0}
+.qcm-panel h3{font:750 clamp(18px,3vw,22px)/1.25 system-ui,sans-serif!important;margin:0;color:#202a31!important}
+.qcm-intro,.qcm-status,.qcm-empty{font:400 13px/1.5 system-ui,sans-serif;color:#555f65;margin:0}
+.qcm-form{display:flex;flex-wrap:wrap;gap:8px}
+.qcm-query{flex:1 1 170px;width:100%;min-height:48px;padding:11px 13px;border:1px solid #8e979e;border-radius:10px;background:#fff;color:#1f2730;font:500 15px/1.3 system-ui,sans-serif}
+.qcm-search{min-height:48px;padding:10px 18px;background:#2566a4;border:1px solid #205789;border-radius:10px;color:white!important;font:750 14px/1.4 system-ui,sans-serif;cursor:pointer}
+.qcm-search:disabled{opacity:.65;cursor:wait}
+.qcm-filters{display:flex;flex-wrap:wrap;gap:6px}
+.qcm-filter,.qcm-step{min-height:44px;padding:9px 12px;background:#f6f7f8;color:#2a3540;border:1px solid #cfd4d8;border-radius:10px;cursor:pointer;font:700 13px/1.3 system-ui,sans-serif}
+.qcm-filter[aria-pressed="true"]{background:#e8edf0;color:#152f40;border-color:#6d879b}
+.qcm-filter:focus-visible,.qcm-step:focus-visible,.qcm-open:focus-visible,.qcm-source-link:focus-visible,.qcm-query:focus-visible,.qcm-search:focus-visible{outline:3px solid #d18d27;outline-offset:2px}
+.qcm-viewer{min-height:150px;min-width:0}
+.qcm-listing{padding:16px;display:grid;gap:10px;background:#fcfcfb;border:1px solid #d9dfe3;border-radius:14px;min-width:0;overflow-wrap:anywhere}
+.qcm-seller{font:800 12px/1.4 system-ui,sans-serif;color:#50606a;margin:0}
+.qcm-title{font:750 clamp(17px,3vw,21px)/1.35 system-ui,sans-serif!important;color:#1c2833!important;margin:0}
+.qcm-description{font:400 14px/1.5 system-ui,sans-serif;color:#39444b;margin:0;overflow-wrap:anywhere}
+.qcm-open{padding:11px 13px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;width:fit-content;max-width:100%;background:#f1f4f6;border:1px solid #c8d0d7;border-radius:10px;color:#1c4d75;font:750 13px/1.3 system-ui,sans-serif;text-decoration:none;overflow-wrap:anywhere}
+.qcm-fact{font:400 12px/1.5 system-ui,sans-serif;color:#5f6971}
+.qcm-nav{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.qcm-step:disabled{opacity:.45;cursor:default}
+.qcm-count{font:750 13px/1.3 system-ui,sans-serif;color:#37464e;text-align:center}
+.qcm-links{display:flex;flex-wrap:wrap;gap:6px}
+.qcm-source-link{font:700 12px/1.4 system-ui,sans-serif;color:#23547a;text-decoration:underline;padding:7px 3px;overflow-wrap:anywhere}
+@media(max-width:380px){.qcm-form .qcm-search{flex:1 1 100%}.qcm-filter{flex:1 0 auto}.qcm-step{padding:9px 11px}.qcm-panel{padding:12px}}
+
+.qcx-ebay-direct{min-width:0;max-width:100%;border:1px solid #d9dfe4;border-radius:12px;background:#fff;overflow:hidden}
+.qcx-ebay-direct>summary{list-style:revert;cursor:pointer;min-height:46px;display:list-item;margin:0 13px;padding:12px 4px;color:#273f50;font:750 13px/1.45 system-ui,sans-serif}
+.qcx-ebay-direct[open]{padding-bottom:10px}
+.qcx-ebay-direct .qcx-tool{margin:0 10px}
+
+
+/* Google-authenticated Gemini operates in the original Octaves source card. */
+.iqc-gemini{display:grid;gap:10px;min-width:0}
+.iqc-gemini-connect{min-height:44px;width:100%;border:1px solid #b9aba5;border-radius:12px;background:#f4f1ef;color:#302b2b;padding:10px 14px;font:700 15px/1.4 system-ui;cursor:pointer}
+.iqc-gemini-connect:disabled{opacity:.58}
+.iqc-gemini-account{min-height:44px;min-width:0;max-width:100%;width:100%;padding:10px;border:1px solid #c8b8ac;border-radius:10px;background:#fff;color:#29252b;font:inherit}
+.iqc-gemini .iqc-ai-send{min-height:44px;border:1px solid #a8a3a8;border-radius:12px;background:#ece9ec;color:#25232a;font:700 16px/1.45 system-ui}
+.iqc-gemini-transcript{max-height:280px;overflow:auto;display:grid;gap:8px;overflow-wrap:anywhere}
+.iqc-gemini-line{margin:0;padding:11px 12px;border-radius:12px;background:#f5f2f0;color:#29252b;white-space:pre-wrap;font:15px/1.55 system-ui}
+.iqc-gemini-connect:focus-visible,.iqc-gemini-account:focus-visible{outline:3px solid #70469c;outline-offset:2px}
+
+/* Native motorcycle model selector: existing Oracle Octaves card, no fake dealer widget. */
+.qcx-motorcycle-tool{display:grid;gap:10px;min-width:0}
+.qcx-motorcycle-tool h3{margin:0;font-size:19px;line-height:1.35}
+.qcx-motorcycle-select{width:100%;max-width:100%;min-height:48px;padding:10px 12px;font:600 16px/1.4 system-ui;border:1px solid #b8aeb7;border-radius:12px;background:#fff;color:#292631}
+.qcx-motorcycle-link{display:flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:10px 12px;border:1px solid #bcb3bd;border-radius:12px;background:#eeebed!important;color:#2e2932!important;text-decoration:none!important;font:750 16px/1.4 system-ui}
+.qcx-motorcycle-tool .qcx-link{min-height:44px;display:inline-flex;align-items:center;font-size:15px;line-height:1.4}
+.qcx-motorcycle-tool .qcx-note{margin:0;font-size:14px;line-height:1.5;color:#554e58}
+.qcx-motorcycle-select:focus-visible,.qcx-motorcycle-link:focus-visible{outline:3px solid #784da9;outline-offset:3px}
+
+/* PicoCELA: original network schematic; NOT a live market chart. */
+.qcx-art[data-brand="pcla-picocela"]{background:linear-gradient(140deg,#06152b,#0d4b64 68%,#081b30);color:#fff;border-color:#42e8f3;min-height:205px}
+.qcx-pcla-hero{position:relative;z-index:2;display:flex;flex-direction:column;gap:5px;width:100%}
+.qcx-pcla-ticker{font-size:11px;font-weight:850;letter-spacing:.12em;color:#79f1fa}
+.qcx-pcla-company{font-size:clamp(24px,6vw,36px);font-weight:850;text-shadow:0 0 15px #57dffb}
+.qcx-pcla-tech{font-weight:800;font-size:12px;color:#a4fcfc}.qcx-pcla-caption{font-size:12px;color:#e2f6f7;line-height:1.4}
+.qcx-pcla-mesh{height:84px;position:relative;margin:4px 0;background:linear-gradient(28deg,transparent 21%,#3ed8f980 22%,#3ed8f980 23%,transparent 24%,transparent 60%,#3ed8f980 61%,transparent 62%),linear-gradient(-26deg,transparent 22%,#3ed8f980 23%,#3ed8f980 24%,transparent 25%,transparent 64%,#3ed8f980 65%,transparent 66%)}
+.qcx-pcla-node{position:absolute;width:13px;height:13px;border-radius:50%;border:2px solid #e0ffff;background:#21bfea;box-shadow:0 0 14px #33d7ee}
+.qcx-pcla-node-1{left:4%;top:65%}.qcx-pcla-node-2{left:23%;top:10%}.qcx-pcla-node-3{left:41%;top:55%}
+.qcx-pcla-node-4{left:61%;top:12%}.qcx-pcla-node-5{left:77%;top:62%}.qcx-pcla-node-6{left:93%;top:10%}
+.qcx-pcla-infinity{position:absolute;left:46%;top:5%;font-size:36px;color:#caffffcc;text-shadow:0 0 12px #29d9e5}
+.qcx-pcla-points{margin:0;padding-left:22px;line-height:1.5}.qcx-pcla-points li{margin:7px 0}
+.qcx-pcla-links{display:flex;flex-wrap:wrap;gap:12px}.qcx-pcla-links .qcx-link{min-height:44px;display:inline-flex;align-items:center}
+.qcx-art.qcx-small[data-brand="pcla-picocela"] .qcx-pcla-company{font-size:25px}

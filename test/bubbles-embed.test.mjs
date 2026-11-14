@@ -52,7 +52,9 @@ test('website draft text is bounded',()=>{
 
 test('closed embed paints only a circular accessible button, with no iframe page text',()=>{
  const kit=mount();
- assert.equal(kit.mounted.length,2);
+ assert.equal(kit.mounted.length,1,'closed widgets must not mount a costly iframe');
+ assert.equal(kit.mounted[0],kit.orb);
+ assert.equal(kit.iframe.src,undefined,'closed widget must not even navigate Bubbles');
  assert.equal(kit.iframe.style.display,'none');
  assert.equal(kit.orb.style.display,'block');
  assert.match(kit.orb.style.cssText,/border-radius:50%!important/);
@@ -65,6 +67,9 @@ test('closed embed paints only a circular accessible button, with no iframe page
 test('tap opens iframe and close restores host orb; foreign frames cannot fake close',()=>{
  const kit=mount();
  kit.orb.fire('click');
+ assert.equal(kit.mounted.length,2,'first tap lazily mounts the frame');
+ assert.equal(kit.mounted[1],kit.iframe);
+ assert.match(kit.iframe.src,/^https:\/\/quantaphi\.org\/bubbles\.html\?/);
  assert.equal(kit.iframe.style.display,'block');
  assert.equal(kit.orb.style.display,'none');
  assert.equal(kit.messages.length,0,'open waits for child readiness');
@@ -79,6 +84,7 @@ test('tap opens iframe and close restores host orb; foreign frames cannot fake c
  assert.equal(kit.iframe.style.display,'none');
  assert.equal(kit.orb.style.display,'block');
  kit.orb.fire('click');
+ assert.equal(kit.mounted.length,2,'reopen reuses iframe, not duplicate request or document');
  assert.equal(kit.messages.length,2,'reopening works without reloading or losing chat state');
 });
 

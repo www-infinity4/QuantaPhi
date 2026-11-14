@@ -12,14 +12,14 @@ console.log('Original-card spotlight, flip and accessible shelf contracts passed
 assert.match(deck,/watcher\.observe\(entry\.node/);
 assert.match(deck,/if\(available\(entry\)\)/);
 
-assert.match(deck,/\['cardoneCapitalOffer','10X Westshore/);
-assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
+assert.doesNotMatch(deck,/\['cardoneCapitalOffer','10X Westshore/);
+assert.doesNotMatch(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
 assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested/);
 assert.doesNotMatch(html,/class="oracle-card-deck-feature"/);
-assert.match(html,/oracle-card-deck\.js\?v=20261026-cardone-back1/);
-assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
-assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
+assert.match(html,/<script defer src="\/oracle-card-deck\.js\?v=20\d{6}-[a-z0-9-]+"><\/script>/);
+assert.doesNotMatch(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
+assert.doesNotMatch(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
 
 for(const id of ['googleTrendNba','googleTrendMlb','googleTrendCulture']){
  assert.ok(deck.includes(id),'All live trending cards should rotate');
@@ -59,3 +59,10 @@ assert.match(html,/class=\"search\" role=\"search\"/);
 assert.ok(html.indexOf('class=\"search\"')<html.indexOf('id=\"qtraffic\"'),'Search must lead before traffic counters');
 assert.doesNotMatch(html,/<section class=\"q-bubbles-entry\"/);
 assert.match(deck,/connectQuant\(\{select:true,revision\}\)/);
+
+assert.match(html,/data-oracle-family="accepted"/);
+assert.match(html,/data-oracle-family="website"/);
+assert.match(html,/data-oracle-family="original"/);
+assert.match(deck,/selectNextFamilyPool\(tour\.cards,cardFamily\(active\)\)/);
+assert.match(deck,/openingFamilyPool\(cards,openingCursor\)/);
+assert.match(deck,/show\(chosen\)/);

@@ -17,7 +17,7 @@ export function parseClockIntent(value,{now=new Date()}={}){
  if(control){
   const action=control[1].toLowerCase(),id=control[2];
   if(action==='resume'){
-   const iso=message.match(/\\b(?:at|on)\\s+(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2})?(?:Z|[+-]\\d{2}:\\d{2}))/i)?.[1];
+   const iso=message.match(/\b(?:at|on)\s+(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2})?(?:Z|[+-]\d{2}:\d{2}))/i)?.[1];
    return iso?{action,id,startAt:iso}:{action,id,needsTime:true};
   }
   return {action,id};

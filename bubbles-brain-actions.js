@@ -20,6 +20,27 @@ const OWNER_REPOS={
  'recordb':'www-infinity4/RecordB',
  'record b':'www-infinity4/RecordB'
 };
+// Canonical first-party chat/social repairs can be sent directly to an
+// authenticated Brain ticket without asking for an unrelated repository.
+// Intent detection never grants permissions: the server still verifies owner
+// identity, repository scope and actual runner/job receipts.
+function firstPartyRepairTarget(utterance){
+ const command=String(utterance||'').trim().slice(0,4001);
+ if(!command||command.length>4000)return null;
+ if(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don't|never|stop|how\b|why\b|what\b|when\b|where\b|explain\b|describe\b)/i.test(command))return null;
+ if(/\bwww-infinity4\/[\w.-]+\b/i.test(command))return null;
+ if(/\b(?:moltnook|widget\s*phi|widgetphi|record\s?b|tv-database|code\s*phi|omni\s*phi)\b/i.test(command))return null;
+ if(/\b(?:both|two|multiple|all)\b.{0,50}\b(?:repos?|repositories)\b/i.test(command))return null;
+ const firstParty=/\b(?:bubbles|twitter)\b|\bx[\s/-]+(?:quick\s*card|posting|feed|timeline|spaces)\b|\b(?:infinity|oracle)\s+carousel\b/i;
+ // QuantaPhi owns the artist music Quick Cards. A rock-player repair
+ // must not fall through to an unrelated generic INFINITY code runner.
+ const musicCard=/\b(?:rock\s+music\s+(?:player|buttons?|radio)|(?:steve\s+miller|pink\s+floyd|classic\s+rock|infinity\s+radio)\b.{0,80}\b(?:radio|player|buttons?|quick\s*card|playback|music))\b/i;
+ if(!firstParty.test(command)&&!musicCard.test(command))return null;
+ const verb='(?:fix|repair|finish|complete|restore|debug|update|upgrade|build|create|deploy|wire|connect|replace|correct|implement|integrate|hook\\s+up)';
+ const start=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)*'+verb+'\\b','i');
+ const directive=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)?(?:i\\s+(?:need|want)\\s+(?:you\\s+)?to|you\\s+(?:need|have)\\s+to|(?:can|could|would|will)\\s+you|we\\s+need\\s+to)\\s+'+verb+'\\b','i');
+ return start.test(command)||directive.test(command)?'www-infinity4/QuantaPhi':null;
+}
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
  if(!text||text.length>4000)return 'chat';
@@ -56,9 +77,9 @@ function classify(utterance){
  const dispatch=/\b(?:send|assign|instruct|dispatch|queue|start|launch|submit)\b.{0,100}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther|jobs?|tasks?)\b/i;
  const dispatchByName=/\b(?:tell|ask|have|give)\b.{0,70}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,90}\b(?:to\s+)?(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
  const dispatchReverse=/\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,80}\b(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
- const change=/\b(?:fix|repair|restore|debug|update|upgrade|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install)\b/i;
- const subject=/\b(?:quantaphi|quanta\s*phi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone|app|code\s*phi|omni\s*code|notification\s*cent(?:re|er)|infinity\s*phi|omni\s*phi|omni\s*tv|moltnook|widgetphi|widget\s*phi|channel-creatir|hbo|tv-database)\b/i;
- const imperative=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:fix|repair|restore|debug|update|upgrade|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install|start|queue|assign|dispatch|send|tell|ask|have|launch|search|scan|inspect|combine|pull together|edit)\b/i;
+ const change=/\b(?:fix|repair|restore|debug|update|upgrade|deploy|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install)\b/i;
+ const subject=/\b(?:cloudflare|workers?|deployments?|quantaphi|quanta\s*phi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone|app|code\s*phi|omni\s*code|notification\s*cent(?:re|er)|infinity\s*phi|omni\s*phi|omni\s*tv|moltnook|widgetphi|widget\s*phi|channel-creatir|hbo|tv-database)\b/i;
+ const imperative=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:fix|repair|restore|debug|update|upgrade|deploy|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install|start|queue|assign|dispatch|send|tell|ask|have|launch|search|scan|inspect|combine|pull together|edit)\b/i;
  const directive=/^(?:(?:bubbles)[\s,:]+)?(?:please\s+)?(?:i\s+(?:need|want)\s+(?:you\s+)?to|you\s+(?:need|have)\s+to|can\s+you|could\s+you|would\s+you|we\s+need\s+to)\b/i;
  const makeJob=/\b(?:make|create|add)\s+(?:(?:a|an|the|new)\s+)*(?:job|task)\b.{0,70}\b(?:in|for|to|on)\s+(?:(?:my|the)\s+)?(?:robot\s*brain|brain)\b/i;
  const makeDirective=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:make|create|add)\b/i;
@@ -441,7 +462,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
+const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,firstPartyRepairTarget,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);

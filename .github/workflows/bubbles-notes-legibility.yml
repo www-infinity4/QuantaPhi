@@ -1,0 +1,19 @@
+name: Bubbles Notes legibility
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.css'
+      - 'test/bubbles-notes-legibility.test.cjs'
+      - '.github/workflows/bubbles-notes-legibility.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Run Bubbles Notes CSS regression
+        run: node --test test/bubbles-notes-legibility.test.cjs

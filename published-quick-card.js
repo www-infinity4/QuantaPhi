@@ -8,7 +8,7 @@ export function paintCard(container,c,{embedded=false}={}){
  if(!container||!c)return;
  const article=el('article','qcp-card');article.dataset.cardId='published-'+c.slug;
  const top=el('header','qcp-card-head');
- const badge=el('p','qcp-eyebrow',String(c.interactionRequest||'').startsWith('Media Star creator:')?'MEDIA STAR · CREATOR EDITION':'QUANTAPHI · ORIGINAL WEBSITE CARD');
+ const badge=el('p','qcp-eyebrow','QUANTAPHI · ORIGINAL WEBSITE CARD');
  const title=el('h1','',c.title),desc=el('p','qcp-desc',c.description);
  top.append(badge,title,desc);article.append(top);
  const shareBar=el('div','qcp-share-prominent');
@@ -30,13 +30,6 @@ export function paintCard(container,c,{embedded=false}={}){
   info.append(form,el('p','qcp-small','Results come from the original website.'));
  }else if(c.kind==='video'&&c.videoId){
   const frame=el('iframe','qcp-video');frame.src='https://www.youtube-nocookie.com/embed/'+c.videoId;frame.title=c.title+' video';frame.allow='accelerometer; encrypted-media; picture-in-picture; web-share';frame.allowFullscreen=true;frame.loading='lazy';info.append(frame);
- }else if(c.kind==='visit'&&/^https:\/\//i.test(c.website||'')&&/\.(?:mp3|wav|ogg|m4a|aac|mp4|webm|ogv)$/i.test(new URL(c.website).pathname)){
-  const isAudio=/\.(?:mp3|wav|ogg|m4a|aac)$/i.test(new URL(c.website).pathname);
-  const player=el(isAudio?'audio':'video','qcp-media');
-  player.src=c.website;player.controls=true;player.preload='none';
-  player.setAttribute('aria-label',isAudio?'Play original Media Star audio':'Play original Media Star video');
-  if(!isAudio)player.playsInline=true;
-  info.append(player,el('p','qcp-small','Playback uses the creator’s original HTTPS source. If the host blocks streaming, open the original media link.'));
  }else{
   info.append(el('p','', 'The requested interaction is recorded for Bubbles to build. This first release opens the original website; it does not pretend the advanced feature is connected.'));
  }

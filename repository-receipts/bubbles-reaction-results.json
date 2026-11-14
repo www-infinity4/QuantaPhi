@@ -1,0 +1,38 @@
+{
+  "scope": "Bubbles source behavior and public service checks; no Android device connected",
+  "sourceTests": {
+    "total": 290,
+    "passed": 286,
+    "failed": 4,
+    "failures": [
+      "Brain inbox test pins obsolete cache version",
+      "Embed-header test uses CommonJS VM on a Worker that now imports an ES module",
+      "History import test expects old queued-status wording",
+      "Omni Code test pins obsolete cache version"
+    ]
+  },
+  "focusedVoiceAndSmokeTests": {
+    "total": 13,
+    "passed": 13,
+    "failed": 0
+  },
+  "fixes": [
+    "Check gateway readiness before requesting microphone",
+    "Bound health and session network waits",
+    "Prevent cancelled startup from opening microphone, including cancellation while parsing readiness JSON"
+  ],
+  "apkBuild": {
+    "completed": false,
+    "reason": "Android SDK, Gradle and javac unavailable locally"
+  },
+  "deviceVerification": false,
+  "publication": {
+    "completed": false,
+    "reason": "Automatic approval review rejected git push to GitHub"
+  },
+  "remaining": [
+    "Authenticated Android voice to tool to runner execution and verified result",
+    "Motorola microphone, playback, screen recording and clip export testing",
+    "Live voice gateway credentials and real session verification"
+  ]
+}

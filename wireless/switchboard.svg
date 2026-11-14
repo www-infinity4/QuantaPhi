@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Infinity Wireless switchboard planning concept</title>
+<desc id="desc">A network-planning diagram connects a device to Bubbles AI, then to a proposed authorized network. This is not a live coverage map.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf4fa"/><stop offset="1" stop-color="#dceaf5"/></linearGradient>
+ <linearGradient id="line" x1="0" x2="1"><stop stop-color="#2664a1"/><stop offset="1" stop-color="#669cc3"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="1200" height="520" rx="22" fill="url(#bg)"/>
+<g fill="none" stroke="#8cb0cb" stroke-width="2" opacity=".28">
+<circle cx="602" cy="251" r="95"/><circle cx="602" cy="251" r="135"/><circle cx="602" cy="251" r="177"/>
+</g>
+<path d="M270 251 H479 M726 251 H930" stroke="url(#line)" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 19"/>
+<g>
+<rect x="114" y="161" width="150" height="177" rx="25" fill="#fff" stroke="#8ba9be" stroke-width="6"/>
+<rect x="130" y="185" width="118" height="113" rx="9" fill="#dceaf5"/>
+<circle cx="189" cy="321" r="10" fill="#467da9"/>
+<path d="M155 266 l26 -34 19 17 20 -26" fill="none" stroke="#467da9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g>
+<circle cx="602" cy="251" r="103" fill="#18568b"/>
+<circle cx="602" cy="251" r="78" fill="none" stroke="#b4d5ee" stroke-width="3" opacity=".7"/>
+<path d="M555 237 Q602 193 649 237 M555 263 Q602 307 649 263" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+<circle cx="602" cy="251" r="12" fill="#fff"/>
+</g>
+<g stroke="#285b89" stroke-width="8" fill="none" stroke-linecap="round">
+<path d="M1000 330 L1035 188 L1070 330"/>
+<path d="M992 324 H1078 M1008 267 H1063 M1017 231 H1055"/>
+<path d="M1034 178 V163"/>
+<path d="M991 192 Q1035 141 1079 192"/>
+<path d="M975 174 Q1035 110 1095 174" opacity=".5"/>
+</g>
+<g fill="#1d476c" font-family="system-ui,Arial,sans-serif" text-anchor="middle">
+<text x="189" y="374" font-size="26" font-weight="700">Request</text>
+<text x="602" y="390" font-size="26" font-weight="700">Bubbles switchboard</text>
+<text x="1035" y="374" font-size="26" font-weight="700">Network review</text>
+</g>
+<rect x="27" y="444" width="355" height="48" rx="12" fill="#fff" opacity=".88"/>
+<text x="45" y="476" font-family="system-ui,Arial,sans-serif" font-size="22" font-weight="600" fill="#3e657e">Planning concept · not live coverage</text>
+</svg>

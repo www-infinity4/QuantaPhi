@@ -1,0 +1,38 @@
+name: Cannabis Directory · organic source contracts
+on:
+  pull_request:
+    paths:
+      - 'cannabis-directory-policy.mjs'
+      - 'workers/cannabis-directory.mjs'
+      - 'workers/cannabis-directory-*.sql'
+      - 'scripts/cannabis_missouri_dcr_review.py'
+      - 'scripts/cannabis_maine_ocp_review.py'
+      - 'docs/CANNABIS-MO-DCR-REVIEW.md'
+      - 'docs/CANNABIS-ME-OCP-REVIEW.md'
+      - 'test/cannabis-directory*.test.mjs'
+      - 'test/test_cannabis_*.py'
+      - '.github/workflows/cannabis-directory-contracts.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-privacy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: |
+          node --check cannabis-directory-policy.mjs
+          node --check workers/cannabis-directory.mjs
+          python -m py_compile scripts/cannabis_missouri_dcr_review.py scripts/cannabis_maine_ocp_review.py
+      - name: Organic directory, state policy, privacy and no-ad tests
+        run: node --test test/cannabis-directory.test.mjs test/cannabis-directory-worker.test.mjs test/cannabis-directory-quality.test.mjs
+      - name: Official source manifests and Missouri DCR ATO preflight
+        run: python -m unittest discover -s test -p 'test_cannabis_*.py' -v

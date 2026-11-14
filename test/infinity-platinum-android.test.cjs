@@ -57,3 +57,18 @@ test('Platinum native preview blocks cleartext HTTP at both layers',()=>{
  assert.match(navigation,/!"https"\.equalsIgnoreCase\(scheme\)/);
  assert.doesNotMatch(navigation,/"http"\.equalsIgnoreCase\(scheme\)/);
 });
+
+test('pending media approval stays bound to its original foreground document',()=>{
+ assert.match(java,/pendingPhoneMediaView=web/);
+ assert.match(java,/pendingPhoneMediaResources=grants\.toArray/);
+ assert.match(java,/source==active\(\)/);
+ assert.match(java,/onPageStarted\(WebView view,String url,android\.graphics\.Bitmap favicon\)\{\s*if\(view==pendingPhoneMediaView\)cancelPendingPhoneMedia\(\)/);
+ for(const method of ['showTab','closeTab'])assert.ok(java.includes('private void '+method+'(){\n  cancelPendingPhoneMedia();'));
+ const completion=java.slice(java.indexOf('@Override public void onRequestPermissionsResult'),java.indexOf('@Override public void onBackPressed'));
+ assert.match(completion,/checkSelfPermission\(permission\)!=PackageManager\.PERMISSION_GRANTED/);
+ assert.match(completion,/request\.grant\(resources\)/);
+ assert.doesNotMatch(completion,/request\.grant\(request\.getResources\(\)\)/);
+ assert.match(completion,/!"https"\.equals\(page\.getScheme\(\)\)/);
+ assert.match(completion,/origin\.getPort\(\)!=-1&&origin\.getPort\(\)!=443/);
+ assert.match(java,/if\(pendingPhoneMedia==request\)clearPendingPhoneMedia\(\)/);
+});

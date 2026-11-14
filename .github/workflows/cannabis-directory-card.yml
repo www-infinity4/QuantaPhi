@@ -1,0 +1,25 @@
+name: Cannabis Directory · Oracle Quick Card
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - 'cannabis-directory-card.*'
+      - 'test/cannabis-directory-card.test.mjs'
+      - '.github/workflows/cannabis-directory-card.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  organic-directory-card:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax
+        run: node --check cannabis-directory-card.mjs
+      - name: Mobile, provenance and per-visit acknowledgment contracts
+        run: node --test test/cannabis-directory-card.test.mjs

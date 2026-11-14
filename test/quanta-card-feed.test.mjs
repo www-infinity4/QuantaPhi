@@ -8,14 +8,16 @@ import {quantScores,loadOwnQuantScores} from '../quanta-feed-quants.mjs';
 import {cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,directionScore,markOpened,markViewed,toggleFollowing} from '../quanta-feed-rank.mjs';
 const raw=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const base=()=>({...cleanFeedState({}),catalog:ALL_FEED_CARDS});
-test('public contains every original quick card and 23 new independent cards',()=>{
- assert.equal(DISCOVERY_CARDS.length,23);
+test('public contains every original quick card and 25 independent discovery cards',()=>{
+ assert.equal(DISCOVERY_CARDS.length,25);
  assert.equal(new Set(ALL_FEED_CARDS.map(x=>x.id)).size,ALL_FEED_CARDS.length);
- for(const id of ['muse-ai','webb','google','reddit','radio-philco-90','just-radios','robinhood','chime','ebay','gold','silver','us-mint','pcgs','ngc','x-live-spaces','wikipedia','vam-scarface','instructables','vintage-toys','antique-collectibles']){
+ for(const id of ['muse-ai','webb','google','reddit','radio-philco-90','just-radios','robinhood','chime','x-money','ebay','gold','silver','us-mint','pcgs','ngc','x-live-spaces','wikipedia','vam-scarface','instructables','vintage-toys','antique-collectibles']){
   assert.ok(feedCard(id),id);
  }
  for(const c of DISCOVERY_CARDS){assert.ok(safeDiscovery(c),c.id);assert.equal(findDiscovery(c.id),c);}
- for(const id of ['pixie-stories','cardone-capital','media-star','infinity-radio','bitcoin-crusher','story-writer'])assert.ok(feedCard(id),'Public should contain existing QuantaPhi '+id);
+ for(const id of ['pixie-stories','media-star','infinity-radio','bitcoin-crusher','story-writer'])assert.ok(feedCard(id),'Public should contain existing QuantaPhi '+id);
+ assert.ok(!feedCard('cardone-capital'));
+ assert.ok(!feedCard('church-of-i-am'));
  assert.equal(findDiscovery('unknown-card'),null);
  assert.equal(safeDiscovery({id:'fake',url:'javascript:alert(1)'}),false);
  assert.ok(!ALL_FEED_CARDS.some(c=>/tuberadios\.com/.test(c.url)), 'hijacked TubRadios domain must not be linked');
@@ -48,7 +50,7 @@ test('for you uses explicit engagement and category similarity without opaque or
  const radio=feedCard('radio-zenith-console'),other=feedCard('radio-zenith-transoceanic');
  for(let i=0;i<4;i++)state=markOpened(state,radio.id);
  const ranked=feedCandidates(cards,'for-you',state);
- assert.equal(ranked[0].id,radio.id);
+ assert.equal(ranked.filter(c=>c.origin!=='infinity-accepted')[0].id,radio.id);
  assert.ok(ranked.indexOf(other)<ranked.indexOf(feedCard('whatsapp')),'radio interest helps another radio');
  assert.equal(state.counts[radio.id],4);
  assert.ok(!JSON.stringify(cleanFeedState(state)).includes('token'));
@@ -202,4 +204,13 @@ test('every tab completes repeated catalog rounds despite extreme favorite score
    assert.equal(seen.size,cards.length-1,tab+' must expose every less-seen card each round');
   }
  }
+});
+
+test('Oracle has one-tap website, original and accepted brand shortcuts and balanced rotation',()=>{
+ const source=raw('oracle-card-deck.js'),html=raw('index.html'),css=raw('oracle-card-deck.css');
+ for(const family of ['website','original','accepted'])assert.match(html,new RegExp('data-oracle-family="'+family+'"'));
+ assert.match(source,/selectNextFamilyPool\(tour\.cards,cardFamily\(active\)\)/);
+ assert.match(source,/openingFamilyPool\(cards,openingCursor\)/);
+ assert.match(source,/source-cards-ready/);
+ assert.match(css,/\.oracle-family-jump/);
 });

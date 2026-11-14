@@ -26,6 +26,13 @@ h1{font-size:clamp(2rem,5.5vw,3.5rem);line-height:1.04;letter-spacing:-.04em;mar
 <p class="muted">Projects and tickets come from the existing owner-only Brain database. Opening this page reads saved work. A job runs only when you use its authorized resume control.</p>
 <section class="panel" aria-label="Owner session"><h2>Owner connection</h2><div id="robotBrainOwner" aria-live="polite"></div><p id="connection" role="status">Checking your existing owner session…</p></section>
 <div id="app" class="hide">
+<section class="panel" id="account-security" hidden aria-label="Private owner account security">
+<h2>Private owner account security</h2>
+<p>This section opens only after the existing owner wallet has been verified by Robot Brain. Your email addresses and passkeys are not advertised in public Bubbles pages.</p>
+<div id="ownerPasskeyWorkspace" role="region" aria-label="Phone passkey setup">
+<p role="status" id="ownerPasskeyServiceStatus">Checking the private phone-passkey service…</p>
+</div>
+</section>
 <div id="stats" class="stats" aria-label="Saved work summary"></div>
 <section class="panel"><div class="controls"><h2 class="grow-heading">Project folders</h2><button id="refresh" class="btn" type="button">Refresh actual status</button></div><p class="muted">Tap a folder to see its saved work. Jobs are not restarted simply by opening a folder.</p><div id="folders" class="folders"></div></section>
 <section class="panel"><div class="controls"><h2 class="grow-heading" id="listTitle">Unfinished work</h2><button id="showAll" class="btn secondary" type="button">All projects</button></div><div id="tickets" class="list"></div><div class="bar"><button id="more" class="btn secondary" type="button">Load more saved work</button><p id="coverage" class="muted" role="status"></p></div></section>
@@ -37,4 +44,5 @@ h1{font-size:clamp(2rem,5.5vw,3.5rem);line-height:1.04;letter-spacing:-.04em;mar
 <script src="/cloud-wallet-client.js?v=20261013-brain-bridge1"></script>
 <script src="/robot-brain-owner.js?v=20261014-shared-memory6"></script>
 <script type="module" src="./app.mjs"></script>
+<script type="module" src="./passkeys.mjs"></script>
 </body></html>

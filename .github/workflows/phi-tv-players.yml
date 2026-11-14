@@ -8,6 +8,7 @@ on:
       - 'oracle-card-deck.js'
       - 'index.html'
       - 'test/phi-channel-cards.test.cjs'
+      - 'test/original-tv-player-recovery.test.cjs'
       - '.github/workflows/phi-tv-players.yml'
   push:
     branches: [main]
@@ -18,6 +19,7 @@ on:
       - 'oracle-card-deck.js'
       - 'index.html'
       - 'test/phi-channel-cards.test.cjs'
+      - 'test/original-tv-player-recovery.test.cjs'
       - '.github/workflows/phi-tv-players.yml'
 permissions:
   contents: read
@@ -34,4 +36,4 @@ jobs:
           node --check phi-tv-programs.js
           node --check phi-channel-cards.js
           node --check oracle-card-deck.js
-          node --test test/phi-channel-cards.test.cjs test/oracle-card-deck.test.cjs
+          node --test test/phi-channel-cards.test.cjs test/original-tv-player-recovery.test.cjs test/oracle-card-deck.test.cjs

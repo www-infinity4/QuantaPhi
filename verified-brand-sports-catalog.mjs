@@ -11,7 +11,7 @@ const entry=(id,name,kind,category,description,official,actions,visual,extra={})
 });
 const actions=(...pairs)=>pairs.map(([label,url])=>({label,url}));
 export const REQUESTED_PUBLIC_CARDS=Object.freeze([
- entry('packers-lions-2026','Packers at Lions · FOX','game','NFL','Week 7, Sun Oct 25, 2026 · 3:25 PM Central at Ford Field. Official game status and highlights update at the sources.','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/',actions(
+ entry('packers-lions-2026','Packers at Lions · FOX','game','NFL','Week 7 matchup was scheduled for Sun Oct 25, 2026 at 3:25 PM Central at Ford Field. For verified results and highlights, open the official game center.','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/',actions(
   ['FOX / FOX One viewing','https://www.fox.com/sports/football/nfl/watch-packers-vs-lions-oct-25-2026'],
   ['Official game center','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/'],
   ['Lions highlights','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/']
@@ -19,19 +19,19 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
  entry('fox-nfl-watch','FOX NFL · Watch & highlights','broadcast','NFL','FOX game coverage and licensed FOX One live viewing, subject to the viewer’s location, service and login.','https://www.foxsports.com/nfl',actions(
   ['FOX NFL schedule','https://www.foxsports.com/nfl'],
   ['FOX One streaming','https://www.fox.com/'],
-  ['Packers–Lions coverage','https://www.foxsports.com/live-blog/nfl/packers-vs-lions-live-updates-score']
+  ['FOX NFL highlights','https://www.foxsports.com/nfl']
  ),icon('foxsports.com'),{date:'2026-10-25',event:'NFL'}),
  entry('lions-interception-watch','Lions · turnover and interception watch','tracker','NFL','Watch official play-by-play and video highlights for verified takeaways. This card does not assert an interception happened.','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/',actions(
   ['Scoring and play-by-play','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/'],
   ['FOX live updates','https://www.foxsports.com/live-blog/nfl/packers-vs-lions-live-updates-score'],
   ['Highlights','https://www.nfl.com/videos/']
  ),nfl('det'),{date:'2026-10-25',event:'NFL'}),
- entry('packers-next-schedule','Green Bay · schedule and next game','schedule','NFL','After Detroit, Green Bay is scheduled to host Carolina on Thursday, Oct 29 on Prime Video; confirm schedule changes.','https://www.packers.com/schedule/',actions(
+ entry('packers-next-schedule','Green Bay · schedule and next game','schedule','NFL','See Green Bay’s official schedule for its next upcoming game, kickoff and current broadcaster. Never assume an older fixture is still upcoming.','https://www.packers.com/schedule/',actions(
   ['Official next game','https://www.packers.com/schedule/'],
   ['Roster and lineup','https://www.packers.com/team/players-roster/'],
   ['Latest Packers video','https://www.packers.com/video/']
  ),nfl('gb'),{event:'NFL'}),
- entry('lions-next-schedule','Detroit · upcoming games','schedule','NFL','After Green Bay, Detroit is scheduled to host Minnesota on Sunday, Nov 1 on FOX; confirm schedule changes.','https://www.detroitlions.com/schedule/',actions(
+ entry('lions-next-schedule','Detroit · upcoming games','schedule','NFL','See Detroit’s official schedule for its next upcoming game, kickoff and current broadcaster. Check the official page before claiming live status.','https://www.detroitlions.com/schedule/',actions(
   ['Official next game','https://www.detroitlions.com/schedule/'],
   ['Roster','https://www.detroitlions.com/team/players-roster/'],
   ['Video highlights','https://www.detroitlions.com/video/']
@@ -100,7 +100,7 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Denali original source','https://www.gmc.com/trucks/sierra/1500/denali'],
   ['Compare GMC trucks','https://www.gmc.com/trucks'],
   ['Inventory','https://www.gmc.com/view-inventory']
- ),icon('gmc.com')),
+ ), 'https://www.gmc.com/content/dam/gmc/na/us/english/index/01-images/sept2025/2026-gmc-sierra-1500-denali-downpour-metallic-1000x563.png?imwidth=1200'),
  entry('carhartt-shop','Carhartt · workwear','retail','Clothing','Browse actual workwear and original product photographs at Carhartt.','https://www.carhartt.com/',actions(
   ['Shop workwear','https://www.carhartt.com/'],
   ['New arrivals','https://www.carhartt.com/'],
@@ -131,16 +131,30 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Screening recommendations','https://ebccp.cancercontrol.cancer.gov/recommendation.do?topicId=102265'],
   ['Discuss with a clinician','https://www.cancer.gov/types/colorectal/screening-fact-sheet']
  ),icon('cancer.gov'),{nonTargeted:true}),
+ entry('mcdonalds-big-mac-deals','McDonald’s · Big Mac & app deals','food','Restaurants',
+ 'Explore the real Big Mac and current McValue or app offers. Prices and deal eligibility vary by location, account and date; order only through McDonald’s official services.',
+ 'https://www.mcdonalds.com/us/en-us/product/big-mac.html',actions(
+  ['Big Mac product','https://www.mcdonalds.com/us/en-us/product/big-mac.html'],
+  ['Current McValue & app deals','https://www.mcdonalds.com/us/en-us/deals.html'],
+  ['Explore full menu','https://www.mcdonalds.com/us/en-us/full-menu.html']
+ ),'https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/newsroom/menu-items-2023/NR_202302_0005-999_BigMac_2000x2000.png'),
  entry('burger-king-chicken-2026','Burger King · new chicken sandwiches','food','Restaurants','Burger King announced Loaded Jalapeño and Club Original Chicken Sandwich options in July 2026. Participating restaurant availability may change.','https://news.bk.com/blog-posts/burger-king-r-expands-its-iconic-original-chicken-sandwich-lineup-with-two-bold-new-flavors',actions(
   ['See new sandwiches','https://news.bk.com/blog-posts/burger-king-r-expands-its-iconic-original-chicken-sandwich-lineup-with-two-bold-new-flavors'],
   ['Official menu','https://www.bk.com/'],
   ['Find nearby restaurants','https://www.bk.com/']
- ),icon('bk.com')),
+ ), 'https://cdn.prod.website-files.com/631b4b4e277091ef01450237/65947e705329215630a9828a_Original%20Chicken%20Sandwich%20%281%29.png'),
  entry('royal-caribbean-cruises','Royal Caribbean · cruise explorer','travel','Travel','Compare official itineraries, ships and cruise dates; final costs and availability come from Royal Caribbean.','https://www.royalcaribbean.com/',actions(
   ['Browse cruises','https://www.royalcaribbean.com/'],
   ['Ships and itineraries','https://www.royalcaribbean.com/'],
   ['Original provider','https://www.royalcaribbean.com/']
  ),icon('royalcaribbean.com')),
+ entry('tide-original-liquid','Tide Original · Laundry Detergent','product','Household care',
+ 'Explore Tide Original liquid detergent, compare current Tide products, and find official stain-removal instructions. Prices, sizes, availability and promotions must be verified at the actual merchant; this independent card is not a paid Tide ad.',
+ 'https://tide.com/en-us/shop/type/liquid/tide-original-liquid',actions(
+  ['Original liquid product','https://tide.com/en-us/shop/type/liquid/tide-original-liquid'],
+  ['Browse Tide products','https://tide.com/en-us/shop'],
+  ['Official stain guides','https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains']
+ ),'https://images.ctfassets.net/ajjw8wywicb3/56SpCPjmVKhVPEEryvVCzh/5c1ffc8980151c72d478703dc62810fb/Tide_Belize_SUD_Original_listing_520x520.png?fm=png',{checked:'2026-10-30'}),
  entry('kraft-mac-cheese','Kraft Mac & Cheese · recipes','food','Food & recipes','Original Kraft Mac & Cheese products and cooking ideas at Kraft Heinz.','https://www.kraftheinz.com/kraft-mac-and-cheese',actions(
   ['Original Kraft products','https://www.kraftheinz.com/kraft-mac-and-cheese'],
   ['Kraft recipes','https://www.kraftheinz.com/kraft-mac-and-cheese'],
@@ -155,7 +169,63 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Official NFL game center','https://www.nfl.com/schedules/'],
   ['World Series game center','https://www.mlb.com/postseason'],
   ['FOX authorized viewing','https://www.fox.com/']
- ),icon('nfl.com'),{experimental:true})
+ ),icon('nfl.com'),{experimental:true}),
+ // Colorado Mountain Adventures — real visitor information and openly licensed images.
+ // The Arkansas River rafting photo is illustrative (Royal Gorge, NOT The Numbers).
+ entry('colorado-rocky-mountain','Rocky Mountain National Park · Emerald Lake','travel','Colorado · Alpine hikes',
+  'Explore the Bear Lake–Emerald Lake trail, subalpine forest, mountain lakes and wildlife. Choose a route based on current conditions; seasonal timed-entry permits apply during designated hours.',
+  'https://www.nps.gov/romo/index.htm',actions(
+   ['Official park & trails','https://www.nps.gov/romo/planyourvisit/index.htm'],
+   ['Timed-entry permits','https://www.nps.gov/romo/planyourvisit/timed-entry-permit-system.htm'],
+   ['Park alerts & conditions','https://www.nps.gov/romo/planyourvisit/conditions.htm']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Rocky_Mountain_N.P._1997_09.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Moderate day hike',season:'Best hiking: summer–early autumn',safety:'Bear Lake Road can require a separate Timed Entry+ reservation; snow, altitude and afternoon storms change trail conditions.',
+   photoCredit:{label:'Emerald Lake · LBM1948 · CC BY-SA 4.0',url:'https://commons.wikimedia.org/wiki/File:Rocky_Mountain_N.P._1997_09.jpg'}}),
+ entry('colorado-numbers-rafting','The Numbers · Buena Vista rafting','travel','Colorado · Whitewater',
+  'Advanced, continuous Arkansas River whitewater with a professional local outfitter. The photo depicts the Royal Gorge stretch of the same river, not The Numbers.',
+  'https://www.americanadventure.com/tour-category/the-numbers/',actions(
+   ['Choose The Numbers trip','https://www.americanadventure.com/tour-category/the-numbers/'],
+   ['Half-day trip details','https://www.americanadventure.com/tour/numbers-half-day-private-trip/'],
+   ['Full-day guided option','https://www.americanadventure.com/tour/the-numbers-deluxe-tour/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/White_Water_Rafting.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Advanced · Class IV water',season:'Typical rafting season: late spring–summer',safety:'Fast water is hazardous. Use an experienced guide, wear a properly fitted PFD/helmet and confirm age limits and river flows before booking.',
+   photoCredit:{label:'Arkansas River, Royal Gorge (illustrative) · Jimmyside · public domain',url:'https://commons.wikimedia.org/wiki/File:White_Water_Rafting.jpg'}}),
+ entry('colorado-breckenridge-trails','Breckenridge · Scenic trails','travel','Colorado · Easy hiking',
+  'Explore Blue River Rec Path and sections of Boreas Pass Road at your own pace. Some trails start in town; take local transit or drive to other trailheads.',
+  'https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/',actions(
+   ['Easy trails & maps','https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/'],
+   ['Hiking without a car','https://gobreck.com/guide/hiking/hiking-in-breckenridge-without-a-car/'],
+   ['Seasonal hiking guide','https://gobreck.com/summer/best-summer-hikes-in-breckenridge/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Boreas_Pass_Road.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Easy–moderate · choose your route',season:'Summer and autumn for dry trails',safety:'Boreas Pass Road allows vehicles in warmer months; winter snow and altitude can make routes harder. The gondola is not a shuttle to all trails.',
+   photoCredit:{label:'Boreas Pass Road · jaygannett · CC BY-SA 2.0',url:'https://commons.wikimedia.org/wiki/File:Boreas_Pass_Road.jpg'}}),
+ entry('colorado-glenwood-hot-springs','Glenwood Hot Springs · Mineral pools','travel','Colorado · Relaxation',
+  'Soak and swim at the historic mineral pool in Glenwood Springs. Check opening hours and current day-pass pricing at the resort; passes do not need advance reservations.',
+  'https://hotspringspool.com/',actions(
+   ['Pool tickets & rates','https://hotspringspool.com/hot_springs/rates/'],
+   ['Pools & facilities','https://hotspringspool.com/hot_springs/'],
+   ['Official resort website','https://hotspringspool.com/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Glenwood_Hot_Springs_Pool_2020.JPG?width=960',
+  {collection:'colorado-mountain-adventures',difficulty:'Low · swim and soak',season:'Year-round · check maintenance',safety:'Check posted pool temperatures, current hours and seasonal maintenance; keep hydrated and supervise children in the water.',
+   photoCredit:{label:'Glenwood Hot Springs Pool · Jeffrey Beall · CC BY 4.0',url:'https://commons.wikimedia.org/wiki/File:Glenwood_Hot_Springs_Pool_2020.JPG'}}),
+ entry('colorado-ouray-ice-park','Ouray Ice Park · Winter climbing','travel','Colorado · Technical ice',
+  'Climb naturally formed and farmed ice routes in the Uncompahgre Gorge, with instruction and specialist rental gear available locally. Park entry is free; guides and equipment are separate.',
+  'https://ourayicepark.com/',actions(
+   ['Ice Park conditions','https://ourayicepark.com/conditions'],
+   ['Park visitor FAQs','https://ourayicepark.com/faq'],
+   ['Official Ice Park','https://ourayicepark.com/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Ouray_Ice_Park.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Technical · trained climbers',season:'Weather-dependent: roughly Dec–Mar',safety:'Only climb during officially open conditions. A helmet, crampons, ice tools, rope systems and appropriate training are essential.',
+   photoCredit:{label:'Ouray Ice Park · Lvaughn7 · CC BY-SA 4.0',url:'https://commons.wikimedia.org/wiki/File:Ouray_Ice_Park.jpg'}}),
+ entry('colorado-ice-lakes-basin','Ice Lakes Basin · Silverton alpine hike','travel','Colorado · High alpine',
+  'A steep San Juan Mountains hike to vivid blue lakes above timberline near Silverton. Suitable for fit, acclimatized hikers with proper navigation and weather awareness.',
+  'https://www.fs.usda.gov/r02/sanjuan',actions(
+   ['National Forest planning','https://www.fs.usda.gov/r02/sanjuan'],
+   ['USFS Silverton access and camping guide','https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5417559.pdf'],
+   ['Regional weather alerts','https://www.weather.gov/gjt/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Ice_Lake_Silverton.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Strenuous · high altitude',season:'Typically July–September, snow-dependent',safety:'Steep exposed alpine terrain; begin early, turn back in lightning, pack layers/water, avoid shortcuts and confirm trail access.',
+   photoCredit:{label:'Ice Lake near Silverton · Dave Lyskawa · public domain',url:'https://commons.wikimedia.org/wiki/File:Ice_Lake_Silverton.jpg'}})
 ]);
 export const QUEUED_REQUESTS=Object.freeze([
  {name:'Crown Royal',reason:'Alcohol-related brand: age verification, audience controls and permitted informational artwork needed before publication'},

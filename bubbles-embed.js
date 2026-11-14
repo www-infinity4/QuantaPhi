@@ -13,9 +13,13 @@ const allowedRoles=new Set(['assistant','builder','singer','listener','specialis
 const name=String(script.dataset.bubbleName||'Bubbles').slice(0,MAXLEN.name);
 const instructions=String(script.dataset.bubbleInstructions||'').slice(0,MAXLEN.instructions);
 const id=String(script.dataset.bubbleId||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,MAXLEN.id)||'embedded';
+const theme=script.dataset.bubbleTheme==='family-modern'?'family-modern':'';
 const options=new URLSearchParams({embed:'1',id,role:allowedRoles.has(role)?role:'assistant',name,instructions});
+if(theme)options.set('theme',theme);
 const iframe=document.createElement('iframe');
-iframe.src=ORIGIN+'/bubbles.html?'+options;
+// Defer both iframe insertion and network navigation until the visitor opens
+// this assistant. A homepage can render many cards without eagerly booting
+// multiple Bubbles chat documents, Web Speech services and model tooling.
 iframe.title=name+' · Bubbles AI messenger';
 iframe.loading='eager';
 iframe.setAttribute('allow','microphone');
@@ -23,7 +27,7 @@ iframe.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms allow
 iframe.setAttribute('referrerpolicy','no-referrer');
 // A collapsed HTML iframe paints a rectangular document regardless of the
 // shape of the orb INSIDE it. Hide the iframe completely until chat is opened.
-iframe.style.cssText='position:fixed;right:6px;bottom:6px;width:min(425px,calc(100vw - 12px));height:min(690px,calc(100dvh - 12px));max-width:calc(100vw - 12px);max-height:calc(100dvh - 12px);border:0;background:transparent;overflow:hidden;z-index:2147483000;display:none;';
+iframe.style.cssText='position:fixed;right:6px;bottom:6px;width:min('+(theme?'480px':'425px')+',calc(100vw - 12px));height:min('+(theme?'800px':'690px')+',calc(100dvh - 12px));max-width:calc(100vw - 12px);max-height:calc(100dvh - 12px);border:0;background:transparent;overflow:hidden;z-index:2147483000;display:none;';
 iframe.dataset.bubbleId=id;
 iframe.style.setProperty('display','none','important');
 const orb=document.createElement('button');
@@ -38,7 +42,7 @@ for(const [left,top,size] of [[13,37,14],[21,16,29],[48,37,12]]){
  bubble.style.cssText='position:absolute!important;left:'+left+'px!important;top:'+top+'px!important;width:'+size+'px!important;height:'+size+'px!important;border-radius:50%!important;background:radial-gradient(circle at 28% 26%,white,#dcffff9e 39%,#2e88d89c 85%)!important;pointer-events:none!important;';
  orb.appendChild(bubble);
 }
-let expanded=false,loaded=false,pendingOpen=false,drag=null,suppressClick=false;
+let expanded=false,loaded=false,pendingOpen=false,started=false,drag=null,suppressClick=false;
 const position={right:11,bottom:80};
 function resize(open){
  expanded=Boolean(open);
@@ -49,6 +53,12 @@ function resize(open){
  iframe.style.bottom=expanded?'6px':position.bottom+'px';
 }
 function requestOpen(){
+ if(!started){
+  started=true;pendingOpen=true;
+  iframe.src=ORIGIN+'/bubbles.html?'+options;
+  (document.body||document.documentElement).append(iframe);
+  return;
+ }
  if(!loaded){pendingOpen=true;return}
  pendingOpen=false;
  iframe.contentWindow?.postMessage({type:'quantaphi:bubbles:open',id},ORIGIN);
@@ -99,6 +109,12 @@ function onMessage(event){
  }
 }
 window.addEventListener('message',onMessage);
-iframe.addEventListener('load',()=>{loaded=true;if(expanded||pendingOpen)requestOpen()});
-(document.body||document.documentElement).append(iframe,orb);
+iframe.addEventListener('load',()=>{
+ if(!started)return;
+ loaded=true;
+ if(expanded||pendingOpen)requestOpen();
+});
+// Preserve the same loaded iframe, session and mic permissions after the
+// first open; closing merely hides it. The closed state mounts only an orb.
+(document.body||document.documentElement).append(orb);
 })();

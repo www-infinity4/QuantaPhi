@@ -36,7 +36,7 @@ function harness(options={}){
  return {calls,body,run:patch=>submitApprovedBridgeWork({request,claims,body,
   fetcher:async(url,args)=>{calls.push('approval');assert.equal(url,'https://bubbles-cloud-browser.marvaseater.workers.dev/v1/browser/chatgpt/runner');assert.deepEqual(JSON.parse(args.body),{operation:'status'});return Response.json(options.approval??{ok:true,jobId:'chatgpt_runner_1234'},{status:options.status??200});},
   submit:async packet=>{calls.push(packet);return options.saved??{status:200,result:{ok:true,startRequested:true,ticket:{id:'IW-test',repository:body.repository,request:body.request,status:'ready'}}};},
-  dispatch:async id=>{calls.push(['dispatch',id]);if(options.dispatchFails)throw Error('offline');return {status:'queued_for_runner'};},...patch})};
+  dispatch:async id=>{calls.push(['dispatch',id]);if(options.dispatchFails)throw Error('offline');return options.dispatchResponse??{status:'queued_for_runner'};},...patch})};
 }
 test('active consent produces a real ticket and dispatch receipt, never completion',async()=>{
  const h=harness(),r=await h.run();assert.equal(r.status,200);assert.equal(r.result.ticketId,'IW-test');
@@ -65,4 +65,21 @@ test('existing tickets are not redispatched, changed run content fails closed, a
  const h=harness({saved});const r=await h.run();assert.equal(r.result.status,'blocked');assert.equal(h.calls.length,2);
  saved.result.ticket.request='different';assert.equal((await harness({saved}).run()).status,409);
  const offline=await harness({dispatchFails:true}).run();assert.equal(offline.result.ticketId,'IW-test');assert.equal(offline.result.execution.status,'scheduled_fallback');
+});
+
+test('signed owner bridge preserves safe runner blocker reason without inventing execution',async()=>{
+ const blocked=await harness({dispatchResponse:{ok:true,status:'job_not_dispatchable',reason:'dependency_pending'}}).run();
+ assert.equal(blocked.status,200);
+ assert.deepEqual(blocked.result.execution,{status:'job_not_dispatchable',reason:'dependency_pending'});
+ assert.equal(blocked.result.completed,false);
+ assert.equal(blocked.result.productionVerified,false);
+ const accepted=await harness({dispatchResponse:{ok:true,status:'queued_for_runner',reason:'dispatch_accepted_execution_unverified'}}).run();
+ assert.equal(accepted.result.execution.reason,'dispatch_accepted_execution_unverified');
+});
+test('owner bridge drops unsafe upstream reason text and never leaks private data',async()=>{
+ for(const reason of ['Authorization: Bearer secret', 'owner_decision_required\\nprivate value', 'x'.repeat(120)]){
+  const receipt=await harness({dispatchResponse:{status:'job_not_dispatchable',reason}}).run();
+  assert.deepEqual(receipt.result.execution,{status:'job_not_dispatchable'});
+  assert.equal(JSON.stringify(receipt.result).includes(reason),false);
+ }
 });

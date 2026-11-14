@@ -1,11 +1,13 @@
-import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from './verified-brand-sports-catalog.mjs';
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
+import {mountCurrentSports} from './sports-card-data.mjs?v=20261030-rich1';
+import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from './verified-brand-sports-catalog.mjs?v=20261101-colorado1340';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 
 /* An original, working quick-card body with a source identity, 3 relevant
  * on-card actions, and the shared collection toolbar. No synthetic brand art.
  * A card is only rotation-ready AFTER its actual source icon/image loads.
  */
-export const VERIFIED_CARD_COUNT=REQUESTED_PUBLIC_CARDS.filter(validBrandSportsCard).length;
+export const VERIFIED_CARD_COUNT=REQUESTED_PUBLIC_CARDS.filter(c=>!c.id.startsWith('world-series-')).filter(validBrandSportsCard).length;
 export function isSafeCardUrl(value){
  try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password}catch{return false}
 }
@@ -18,6 +20,11 @@ function link(label,href,cls){
  return a;
 }
 const isEvent=c=>c.event==='NFL'||c.event==='MLB';
+export function isPastDatedGame(card,now=Date.now()){
+ if(!card||!['game','matchup','lineup','tracker'].includes(card.kind)||!isEvent(card)||!/^\d{4}-\d{2}-\d{2}$/.test(card.date||''))return false;
+ const midnight=Date.parse(card.date+'T00:00:00Z');
+ return Number.isFinite(midnight)&&now>=midnight+36*60*60*1000;
+}
 function createVisual(card,article){
  const visual=el('div','vbs-art vbs-'+card.kind);
  const primary=el('img','vbs-identity');
@@ -30,6 +37,12 @@ function createVisual(card,article){
  let failed=false;
  const unavailable=()=>{
   if(failed)return;failed=true;article.dataset.sourceReady='false';
+  if(card.collection==='colorado-mountain-adventures'){
+   primary.remove();visual.classList.add('vbs-photo-fallback');
+   visual.append(el('p','vbs-photo-unavailable','Photo unavailable · Use the linked image credit below'));
+   article.dataset.sourceReady='true';
+   window.dispatchEvent(new Event('quantaphi:source-cards-ready'));return;
+  }
   article.remove();window.dispatchEvent(new Event('quantaphi:source-cards-ready'));
  };
  const sourceReady=()=>{
@@ -73,9 +86,9 @@ function distinctLead(card){
  }
 }
 const sampleAnnouncerFacts=Object.freeze([
- 'Today’s NFL matchup is Green Bay at Detroit. The original FOX broadcast and official game center are one tap away.',
- 'In baseball, Milwaukee won World Series Game 2 by five runs to four on October twenty-fourth. Tampa Bay and Milwaukee meet again for Game 3.',
- 'This is original QuantaPhi commentary from dated public facts, not a live broadcast. Check the official game center for the latest plays.'
+ 'Sports videos and live channels are provided by their original publishers, subject to broadcaster access.',
+ 'Current MLB schedules and verified results can be checked through the generic MLB Match Center.',
+ 'This is original QuantaPhi commentary, not a live broadcast. Visit official sources for highlights and current events.'
 ]);
 export function createVerifiedCard(card){
  if(!validBrandSportsCard(card))throw Error('unverified_card_source');
@@ -86,16 +99,24 @@ export function createVerifiedCard(card){
  node.dataset.kind=card.kind;
  node.dataset.category=card.category;
  node.dataset.checked=card.checked;
+ if(card.collection==='colorado-mountain-adventures')node.dataset.official=card.official;
+ const archivedGame=isPastDatedGame(card);node.dataset.pastGame=String(archivedGame);
  if(card.nonTargeted)node.dataset.personalization='disabled';
  node.append(createVisual(card,node));
  const info=el('div','vbs-info');
- info.append(el('p','vbs-kicker',distinctLead(card)),el('h3','vbs-title',card.name));
+ info.append(el('p','vbs-kicker',archivedGame?'PAST MATCHUP · OFFICIAL RECAP':distinctLead(card)),el('h3','vbs-title',card.name));
  if(isEvent(card)){
   const p=el('p','vbs-broadcaster','SOURCE: '+(card.event==='NFL'?'NFL / OFFICIAL TEAM':'MLB / OFFICIAL TEAM')+
    (card.network?' · '+card.network:''));
   info.append(p);
  }
  info.append(el('p','vbs-description',card.description));
+ if(card.collection==='colorado-mountain-adventures'){
+  const meta=el('div','vbs-travel-meta');
+  meta.append(el('span','vbs-travel-level',card.difficulty),el('span','vbs-travel-season',card.season));
+  info.append(meta,el('p','vbs-travel-safety',card.safety));
+ }
+ if(archivedGame)info.append(el('p','vbs-archive-note','This dated event is in the past, not a live broadcast. Use the official game center for verified results and highlights.'));
  if(card.kind==='coupon'){
   if(card.offer){
    const now=new Date();const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
@@ -113,7 +134,7 @@ export function createVerifiedCard(card){
   info.append(el('p','vbs-neutral','Independent civic directory. Not an endorsement or an official government application.'));
  }
  if(isEvent(card)){
-  const live=el('p','vbs-updates','Scores and highlights can change. Open the official game center for current play-by-play; no live game feed is claimed here.');
+  const live=el('p','vbs-updates',archivedGame?'Archived event: open the official game center for results and replay sources; no live game feed is claimed here.':'Scores and highlights can change. Open the official game center for current play-by-play; no live game feed is claimed here.');
   info.append(live);
  }
  const controls=el('nav','vbs-topics');controls.setAttribute('aria-label',card.name+' actions');
@@ -124,6 +145,11 @@ export function createVerifiedCard(card){
  if(isEvent(card))appendSportsCoverage(card,info,node);
  if(card.kind==='announcer')appendAnnouncer(info);
  const notes=el('p','vbs-attribution','Verified source links · Checked '+card.checked+' · Independent QuantaPhi card, not an official endorsement or paid advertisement.');
+ if(card.photoCredit?.url&&card.photoCredit?.label){
+  const credit=el('p','vbs-photo-credit','Photo: ');
+  credit.append(link(card.photoCredit.label,card.photoCredit.url,'vbs-photo-link'));
+  info.append(credit);
+ }
  info.append(notes);
  const shared=el('div','vbs-shared-actions');
  mountCardActions(shared,{
@@ -132,11 +158,13 @@ export function createVerifiedCard(card){
  },{showSearch:false});
  info.append(shared);
  node.append(info);
+ if(['food','retail','coupon','vehicle','wearable','travel'].includes(card.kind)&&card.collection!=='colorado-mountain-adventures')mountRotatingSpotlights(node,card);
+ if(card.id==='fox-nfl-watch'||card.id==='world-series-future-games')mountCurrentSports(node,card);
  return node;
 }
 const sportsQueries=Object.freeze({
  'packers-lions-2026':['packers.com','Packers Lions October 25 2026 play-by-play highlights'],
- 'fox-nfl-watch':['foxsports.com','Packers Lions NFL October 25 2026 highlights'],
+ 'fox-nfl-watch':['foxsports.com','NFL latest scores highlights'],
  'lions-interception-watch':['detroitlions.com','Packers Lions 2026 interceptions takeaways highlight'],
  'packers-next-schedule':['packers.com','Packers next game 2026 schedule'],
  'lions-next-schedule':['detroitlions.com','Lions next game 2026 schedule'],
@@ -158,7 +186,7 @@ function appendSportsCoverage(card,info,node){
  if(!record)return;
  const [domain,query]=record;
  const panel=el('section','vbs-news-panel');
- const title=el('h4','vbs-news-title','Recent official-source coverage');
+ const title=el('h4','vbs-news-title',isPastDatedGame(card)?'Official-source coverage of this past event':'Recent official-source coverage');
  const status=el('p','vbs-news-status','Source headlines load only when this card opens.');
  const results=el('div','vbs-news-results');
  const refresh=el('button','vbs-news-refresh','Refresh source headlines');refresh.type='button';
@@ -182,6 +210,11 @@ function appendSportsCoverage(card,info,node){
    results.replaceChildren();
    for(const item of list){
     const row=el('article','vbs-news-item');
+    const imageUrl=item.img_src||item.thumbnail_src||item.thumbnail;
+    if(imageUrl&&isSafeCardUrl(imageUrl)){
+     const image=el('img','vbs-news-photo');image.src=imageUrl;image.alt=String(item.title).slice(0,160);
+     image.referrerPolicy='no-referrer';image.loading='lazy';image.addEventListener('error',()=>image.remove(),{once:true});row.append(image);
+    }
     row.append(link(String(item.title).slice(0,160),item.url,'vbs-news-link'));
     if(item.publishedDate){
      const d=new Date(item.publishedDate);
@@ -231,7 +264,7 @@ export function mountVerifiedCards(){
  const bank=document.getElementById('verifiedBrandSportsCards');
  if(!bank||bank.dataset.mounted==='true')return;
  bank.dataset.mounted='true';
- const valid=REQUESTED_PUBLIC_CARDS.filter(validBrandSportsCard);
+ const valid=REQUESTED_PUBLIC_CARDS.filter(c=>!c.id.startsWith('world-series-')).filter(validBrandSportsCard);
  // Keep source widgets in their original hidden bank. The Oracle top viewer
  // moves the same DOM node into the spotlight and preserves all click handlers.
  bank.append(...valid.map(createVerifiedCard));

@@ -3,7 +3,7 @@
 const root=document.getElementById('followingSpacesRadio');if(!root)return;
 const API='https://media-star-following-spaces.marvaseater.workers.dev';
 const item=(tag,cls,str)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(str!==undefined)e.textContent=str;return e};
-const state={following:[],hosts:[],featured:[],ownerAccount:null,xConnected:false,radio:{mode:'equal_hosts',includeFred:false},choice:null,loading:false,notice:'Loading your followed accounts…'};
+const state={following:[],hosts:[],featured:[],ownerAccount:null,xConnected:false,oauthConfigured:false,radio:{mode:'equal_hosts',includeFred:false},choice:null,loading:false,notice:'Loading your followed accounts…'};
 let sessionRequest=null;
 async function token(){return String(await window.QuantaCloudConnection?.resolveDeviceToken?.()||'')}
 async function query(path,method='GET',data){
@@ -28,7 +28,7 @@ async function refresh(preserveNotice=false){
   if(following)state.following=following.following||[];
   if(hosts)state.hosts=hosts.hosts||[];
   if(featured)state.featured=featured.featured||[];
-  if(xAccount){state.ownerAccount=xAccount.account||null;state.xConnected=!!xAccount.xConnected}
+  if(xAccount){state.ownerAccount=xAccount.account||null;state.xConnected=!!xAccount.xConnected;state.oauthConfigured=!!xAccount.oauthConfigured}
   if(radio)state.radio=radio;
   state.notice=problems.length
    ?'Could not confirm all Media Star data: '+problems.join(' · ')+'. Counts may be incomplete.'
@@ -107,6 +107,9 @@ async function sync(type){
   state.notice=e.message==='x_account_not_connected'?'An authorized X connection is not configured yet. You can import your followed handles below; this does not verify an X follow.':String(e.message||e);
  }finally{state.loading=false;render();await refresh(true)}
 }
+
+function connectX(){window.location.assign('https://quantaphi.org/connect-x')}
+
 function parseFollowing(txt){
  return [...new Set(String(txt||'').split(/[\s,;]+/).map(x=>x.replace(/^https?:\/\/(?:x|twitter)\.com\//i,'').replace(/^@/,'').replace(/\/.*$/,'')).filter(x=>/^[A-Za-z0-9_]{1,15}$/.test(x)))].slice(0,500);
 }
@@ -180,7 +183,8 @@ function render(){
  const episodes=item('div','fsr-episodes');panel.append(episodes);
  const status=item('p','fsr-status',state.notice);status.setAttribute('role','status');panel.append(status);
  const settings=item('details','fsr-import');settings.append(item('summary','','Update following list'));
- if(state.xConnected)settings.append(button('Sync my following',()=>void sync('following')));
+ if(state.xConnected){settings.append(button('Sync my following',()=>void sync('following')));settings.append(button('View X connection status',connectX))}
+ else {settings.append(button('Open X connection screen',connectX));if(!state.oauthConfigured)settings.append(item('small','','X app credentials must be configured on the Worker before connecting.'))}
  const handles=item('textarea');handles.setAttribute('aria-label','Followed X handles');
  handles.placeholder='Paste your followed @handles';
  settings.append(handles,button('Save following list',()=>void importFollowing(handles.value)));

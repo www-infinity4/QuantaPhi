@@ -7,8 +7,7 @@ on:
       - 'scripts/sync_world_series.py'
       - 'test/test_world_series_sync.py'
       - '.github/workflows/world-series-rss-sync.yml'
-  schedule:
-    - cron: '*/30 * * * *'
+  # Retired World Series cards: no scheduled feed production.
 
 permissions:
   contents: write

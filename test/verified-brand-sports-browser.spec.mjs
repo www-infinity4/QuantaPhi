@@ -19,11 +19,11 @@ test('NFL game shows two actual source marks, FOX destination and live-data disc
  await expect(stage.getByText(/no live game feed is claimed here/)).toBeVisible();
  expect(await stage.evaluate(node=>node.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
 });
-test('World Series pitchers, actual coupons and medically sourced screening have separate cards',async({page})=>{
+test('retired series cards are absent, while real coupons and sourced screening remain',async({page})=>{
  await images(page);
- await page.goto(base+'/?card=world-series-pitchers-2026',{waitUntil:'domcontentloaded'});
+ await page.goto(base+'/?card=source-kohls-coupons',{waitUntil:'domcontentloaded'});
  const stage=page.locator('#oracleCardStage');
- await expect(stage.getByText(/Robert Gasser vs Rays RHP Freddy Peralta/)).toBeVisible({timeout:20000});
+ await expect(page.locator('[data-source-id="world-series-pitchers-2026"]')).toHaveCount(0);
  await page.locator('.oracle-card-library summary').click();
  await page.locator('#oracleCardChooser').selectOption('source-kohls-coupons');
  await expect(stage.locator('[data-source-id="kohls-coupons"]')).toBeVisible({timeout:10000});

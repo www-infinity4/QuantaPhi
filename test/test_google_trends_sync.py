@@ -27,6 +27,14 @@ class TrendFeedTests(unittest.TestCase):
         self.assertEqual(feed["source_url"], module.SOURCE)
         self.assertEqual(feed["checked_at"], "2026-10-23T12:00:00Z")
 
+    def test_source_picture_and_publisher_metadata_survive_import(self):
+        data = rss([("Example", "Fri, 23 Oct 2026 11:00:00 GMT", "20K+")])
+        data = data.replace(b"<ht:news_item>", b'<ht:picture>https://images.test/topic.jpg</ht:picture><ht:picture_source>Publisher</ht:picture_source><ht:news_item><ht:news_item_title>Source headline</ht:news_item_title><ht:news_item_source>Publisher</ht:news_item_source><ht:news_item_snippet>Source summary</ht:news_item_snippet>')
+        topic = module.parse_rss(data, NOW)["topics"][0]
+        self.assertEqual(topic["image_url"], "https://images.test/topic.jpg")
+        self.assertEqual(topic["news"][0]["title"], "Source headline")
+        self.assertEqual(topic["news"][0]["publisher"], "Publisher")
+
     def test_bad_future_and_duplicate_rows_are_not_published(self):
         data = rss([("One", "Fri, 23 Oct 2026 11:00:00 GMT", "20K+"),
                     (" ONE ", "Fri, 23 Oct 2026 11:00:00 GMT", "20K+"),

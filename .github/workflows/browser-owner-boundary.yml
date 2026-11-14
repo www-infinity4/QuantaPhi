@@ -17,7 +17,7 @@ jobs:
       - run: npm install --no-save --ignore-scripts @playwright/test
       - run: npx playwright install --with-deps chromium
       - run: npx playwright test --config=playwright.owner.config.mjs --reporter=line
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: public-owner-boundary

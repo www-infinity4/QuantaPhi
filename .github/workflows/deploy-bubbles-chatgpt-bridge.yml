@@ -4,6 +4,7 @@ on:
     paths:
       - 'workers/bubbles-cloud-browser/**'
       - 'test/bubbles-signed-browser-check.test.mjs'
+      - 'test/bubbles-server-assist.test.mjs'
       - '.github/workflows/deploy-bubbles-chatgpt-bridge.yml'
   push:
     branches: [main]

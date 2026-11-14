@@ -11,7 +11,8 @@
   <link rel="icon" type="image/svg+xml" href="/assets/bubbles-pwa-oOo.svg">
   <link rel="apple-touch-icon" href="/assets/bubbles-pwa-192.png">
   <meta name="theme-color" content="#5f259f">
-  <link rel="stylesheet" href="/bubbles-ai.css?v=20261020-tool-driver1">
+  <link rel="stylesheet" href="/bubbles-ai.css?v=20261114-settings1">
+<link rel="stylesheet" href="/bubbles-live-iteration-feed.css?v=20261106-inthread-iterations2">
   <style>
     html{min-height:100%;background:#f7f4f0}
     body{margin:0;min-height:100dvh;padding:15px 15px 100px;box-sizing:border-box;background:#f7f4f0;font:16px/1.55 system-ui,sans-serif;color:#312722}
@@ -49,16 +50,16 @@
   <script defer src="/bubbles-voice-gate.js?v=20261012-brain2"></script>
   <script defer src="/bubbles-brain-actions.js?v=20261025-speech-guard1"></script>
   <script defer src="/bubbles-memory.js?v=20261020-synapse1"></script>
-  <script defer src="/bubbles-ai.js?v=20261027-overnight2"></script>
+  <script defer src="/bubbles-ai.js?v=20261114-settings1"></script>
+<script type="module" src="/bubbles-live-iteration-feed.mjs?v=20261107-runner-steps2"></script>
   <script defer src="/bubbles-owner-diagnostic.js?v=20261026-owner-health2"></script>
-  <script defer src="/bubbles-pwa.js?v=20261027-overnight2"></script>
+  <script defer src="/bubbles-pwa.js?v=20261114-settings1"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1">
 <link rel="stylesheet" href="/bubbles-native-chat.css?v=20261015-readable29">
-  <link rel="stylesheet" href="/bubbles-unified.css?v=20261020-chatfolders1">  <link rel="stylesheet" href="/bubbles-product.css?v=20261019-product1">
+  <link rel="stylesheet" href="/bubbles-unified.css?v=20261105-owner-verified1">  <link rel="stylesheet" href="/bubbles-product.css?v=20261019-product1">
   <link rel="stylesheet" href="/bubbles-mobile-access.css?v=20261020-android-scroll1">
   <link rel="stylesheet" href="/bubbles-octaves-chat.css?v=20261020-octaves-chat3">
   <link rel="stylesheet" href="/bubbles-responsive-20261026-v2.css?v=20261026-mobile-layout3">
-  <link rel="stylesheet" href="/bubbles-ui-clean-20261026.css?v=20261027-overnight2">
 </head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
@@ -77,11 +78,6 @@
         </details>
       </div>
     </nav>
-
-    <details class="bubbles-chatgpt-entry" aria-label="Optional GPT session access" hidden style="display:none"><summary>GPT session · optional connection</summary>
-      <button type="button" id="bubblesChatGPTTopAccess">Allow ChatGPT to use Bubbles · 5 days</button>
-      <p>One owner-approved connection for ChatGPT and Bubbles Cloud Browser. You can revoke it in Bubbles.</p>
-    </details>
 
     <section class="bubbles-intro" aria-labelledby="bubbles-title">
       <div class="bubbles-art" role="img" aria-label="Bubbles character with iridescent spheres, shown as an original concept illustration"></div>
@@ -116,6 +112,8 @@
       <div><h2 id="bubbles-install-title">Install Bubbles in Chrome</h2><p>Add Bubbles to your home screen. Chrome will offer installation where supported; otherwise use its three-dot menu.</p></div>
       <button id="bubblesInstallChrome" type="button">Install Bubbles in Chrome</button>
       <p id="bubblesInstallStatus" role="status" aria-live="polite">Open this page in Chrome. Tap Install, or use ⋮ → Install app / Add to Home screen.</p>
+      <button id="bubblesCheckUpdate" type="button">Check for updates</button>
+      <p id="bubblesUpdateStatus" role="status" aria-live="polite"></p>
       <a class="bubbles-install-link" href="/bubbles.html">← Main Bubbles page</a>
     </section>
     <details class="bubbles-development">

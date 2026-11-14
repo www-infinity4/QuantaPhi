@@ -16,6 +16,8 @@ on:
       - 'workers/quantaphi-site/worker.js'
       - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
+      - 'test/bubbles-gmail-inbox.test.mjs'
+      - 'test/bubbles-wallet-email.test.mjs'
       - 'test/starcoin-github-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
   push:
@@ -34,6 +36,8 @@ on:
       - 'workers/quantaphi-site/worker.js'
       - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
+      - 'test/bubbles-gmail-inbox.test.mjs'
+      - 'test/bubbles-wallet-email.test.mjs'
       - 'test/starcoin-github-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
 
@@ -60,4 +64,6 @@ jobs:
             test/bubbles-auth-return.test.mjs \
             test/bubbles-connector-pairing.test.mjs \
             test/bubbles-home-account-link.test.mjs \
+            test/bubbles-gmail-inbox.test.mjs \
+            test/bubbles-wallet-email.test.mjs \
             test/starcoin-github-backup.test.mjs

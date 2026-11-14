@@ -7,6 +7,24 @@ export const validSpaceLink=value=>{
   /^\/i\/spaces\/[A-Za-z0-9]{8,30}\/?$/.test(url.pathname);}
  catch{return false;}
 };
+export async function readVerifiedLiveSpaces({token,topic='technology',fetcher=fetch}){
+ if(typeof token!=='string'||!/^sq_[A-Za-z0-9_-]{32,}$/.test(token))throw Error('wallet_not_connected');
+ const q=String(topic||'').trim();
+ if(!/^[\p{L}\p{N}\s#@_-]{2,60}$/u.test(q))throw Error('invalid_space_topic');
+ const response=await fetcher(API+'/v1/x/spaces/live?q='+encodeURIComponent(q),{
+  headers:{Authorization:'Bearer '+token,Accept:'application/json'},cache:'no-store',signal:AbortSignal.timeout(15000)
+ });
+ const result=await response.json().catch(()=>({}));
+ if(!response.ok||result.error)throw Error(result.error||'spaces_search_http_'+response.status);
+ if(result.source!=='x_api_live')throw Error('live_spaces_unverified');
+ const spaces=(Array.isArray(result.spaces)?result.spaces:[]).filter(space=>
+  space?.state==='live'&&space.source==='x_api_live'&&validSpaceLink(space.url))
+  .slice(0,15).map(space=>({
+   title:String(space.title||'Untitled live Space').slice(0,170),host:space.creatorHandle||'unknown',
+   url:space.url,status:'verified live at fetch time',source:'x_api_live'
+  }));
+ return {spaces,fetchedAt:result.fetchedAt||null};
+}
 export async function readIndexedSpaces({token,fetcher=fetch,maxHosts=5}){
  if(typeof token!=='string'||!/^sq_[A-Za-z0-9_-]{32,}$/.test(token))throw Error('wallet_not_connected');
  async function json(path){

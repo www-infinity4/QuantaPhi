@@ -49,7 +49,7 @@ export function cardHtml(row){
  (img?'<meta name="twitter:image" content="'+img+'"><meta name="twitter:image:alt" content="'+title+' Quick Card image">':'')+
  '<link rel="stylesheet" href="/published-quick-card.css?v=3">'+
  '</head><body><main id="publishedQuickCard" data-card-slug="'+htmlEscape(card.slug)+'"><p role="status">Loading Quick Card…</p></main>'+
- '<script type="module" src="/published-quick-card.js?v=4"></script></body></html>';
+ '<script type="module" src="/published-quick-card.js?v=3"></script></body></html>';
 }
 function validOrigin(request){const source=request.headers.get('Origin');return source===origin||source==='https://www.quantaphi.org';}
 export default {async fetch(request,env){
@@ -93,7 +93,7 @@ export default {async fetch(request,env){
   if(match[2]==='manifest.json')return json({name:row.title,description:row.description,website:row.website,interaction:row.kind,previewMode:row.preview_mode==='visual'?'visual':'interactive',
    canonical:origin+'/cards/'+row.slug,status:row.status});
   const html=cardHtml(row);
-  return new Response(method==='HEAD'?null:html,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'public, max-age=60','x-content-type-options':'nosniff','content-security-policy':"default-src 'none'; script-src 'self'; style-src 'self'; img-src https: data:; media-src https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; form-action 'none'; base-uri 'none'; frame-ancestors *", 'referrer-policy':'strict-origin-when-cross-origin'}});
+  return new Response(method==='HEAD'?null:html,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'public, max-age=60','x-content-type-options':'nosniff','content-security-policy':"default-src 'none'; script-src 'self'; style-src 'self'; img-src https: data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; form-action 'none'; base-uri 'none'; frame-ancestors *", 'referrer-policy':'strict-origin-when-cross-origin'}});
  }
  return json({ok:false,error:'Route not found.'},404);
 }};
