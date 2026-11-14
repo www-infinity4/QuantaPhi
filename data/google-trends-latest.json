@@ -3,9 +3,177 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T14:31:06.292825Z",
+  "checked_at": "2026-11-14T15:01:16.829828Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "boise state football",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T14:40:00Z",
+      "related_news_urls": [
+        "https://www.ktvb.com/article/sports/local-sports/boise-state-fans-brave-cold-college-gameday-tradition-bonds-generations/277-32348d01-c0a9-4547-8dcd-f87dd81583f6",
+        "https://sports.yahoo.com/articles/best-college-gameday-signs-week-142059282.html",
+        "https://broncosports.com/news/2026/11/12/general-boise-state-athletics-shares-additional-fan-information-for-espns-college-gameday"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9NYOp4hyXFQhO3z1q53ZAVXeHICcxkCsNel2A6BJ95vOR0UjVsntA5dE0XsI",
+      "image_credit": "KTVB",
+      "news": [
+        {
+          "url": "https://www.ktvb.com/article/sports/local-sports/boise-state-fans-brave-cold-college-gameday-tradition-bonds-generations/277-32348d01-c0a9-4547-8dcd-f87dd81583f6",
+          "title": "Boise State fans brave cold for 'College GameDay' as tradition bonds generations",
+          "publisher": "KTVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9NYOp4hyXFQhO3z1q53ZAVXeHICcxkCsNel2A6BJ95vOR0UjVsntA5dE0XsI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/best-college-gameday-signs-week-142059282.html",
+          "title": "Best ‘College GameDay’ signs from Week 11: Oregon State vs. Boise State",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRctyHGO8xfdVv24QF65i8DCP7rd85_dklR1ddwv2CG8GEfRvKIDsnaRYYsvs"
+        },
+        {
+          "url": "https://broncosports.com/news/2026/11/12/general-boise-state-athletics-shares-additional-fan-information-for-espns-college-gameday",
+          "title": "Boise State Athletics Shares Additional Fan Information for ESPN’s College GameDay",
+          "publisher": "Boise State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wzwW0LBhMZPDRoXP_W_ub0Tit76WtGSFvjcWFUTgZYidbo-fTNkxsYCSRrY"
+        }
+      ]
+    },
+    {
+      "query": "cancer",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T14:40:00Z",
+      "related_news_urls": [
+        "https://www.astrazeneca.com/media-centre/press-releases/2026/imfinzi-ev-approve-in-us-in-bladder-cancer.html",
+        "https://www.ajmc.com/view/durvalumab-plus-enfortumab-vedotin-before-surgery-cuts-risk-of-death-42-in-cisplatin-ineligible-mibc",
+        "https://www.news-medical.net/news/20261110/Mayo-Clinic-research-advances-treatment-options-for-genitourinary-cancers.aspx"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxxAfQNZaukLT2cWb2SxceZ53wtQNxn2qh4AD5x9v0rOp8EzlTYkuUY1HG65E",
+      "image_credit": "AstraZeneca",
+      "news": [
+        {
+          "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/imfinzi-ev-approve-in-us-in-bladder-cancer.html",
+          "title": "Perioperative Imfinzi approved in the US in novel regimen with neoadjuvant enfortumab vedotin for patients with muscle-invasive bladder cancer",
+          "publisher": "AstraZeneca",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxxAfQNZaukLT2cWb2SxceZ53wtQNxn2qh4AD5x9v0rOp8EzlTYkuUY1HG65E"
+        },
+        {
+          "url": "https://www.ajmc.com/view/durvalumab-plus-enfortumab-vedotin-before-surgery-cuts-risk-of-death-42-in-cisplatin-ineligible-mibc",
+          "title": "FDA Approves Durvalumab Plus EV Before Surgery in Cisplatin-Ineligible MIBC",
+          "publisher": "The American Journal of Managed Care",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV-KLYQhaGecZ_A5HmsxpLKE0nhJYeyepQPVsDN2xZJe2jwPjaNeCaAfISb5A"
+        },
+        {
+          "url": "https://www.news-medical.net/news/20261110/Mayo-Clinic-research-advances-treatment-options-for-genitourinary-cancers.aspx",
+          "title": "Mayo Clinic research advances treatment options for genitourinary cancers",
+          "publisher": "News-Medical",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbuxOH5_CJCdQ3IkHbgA8FBbowida2OvG89Bz9wSHkFApx7qWmkaGD7Nwo4X4"
+        }
+      ]
+    },
+    {
+      "query": "surveillance aircraft",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T14:40:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/investigations/2026/11/14/spy-plane-tied-covert-attacks-leads-back-floridas-largest-senior-community/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8dNHJVizBpkkvUYDgukMr17S1dpiMw48QgV1dcADAy7W5qNYmPFThbcaiQ-Y",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/investigations/2026/11/14/spy-plane-tied-covert-attacks-leads-back-floridas-largest-senior-community/",
+          "title": "A spy plane tied to covert attacks leads back to Florida’s largest senior community",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8dNHJVizBpkkvUYDgukMr17S1dpiMw48QgV1dcADAy7W5qNYmPFThbcaiQ-Y"
+        }
+      ]
+    },
+    {
+      "query": "spencer danielson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T14:30:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "bangladesh vs pakistan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T14:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/match/_/gameId/401934183/pakistan-bangladesh",
+        "https://www.cricinfo.com/series/under-19s-asia-cup-2026-27-1558428/bangladesh-under-19s-vs-pakistan-under-19s-1st-semi-final-1558442/full-scorecard",
+        "https://www.cricbuzz.com/live-cricket-scores/175703/paku19-vs-banu19-semi-final-1-a1-v-b2-acc-mens-u19-asia-cup-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwG4LxE_WZkoaiPb0KdkdFjI-8gLAWbvA2FPXbKEe3AYo1GQAuSN0MyRzAl8c",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/match/_/gameId/401934183/pakistan-bangladesh",
+          "title": "Bangladesh vs. Pakistan (Nov 14, 2026) Live Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwG4LxE_WZkoaiPb0KdkdFjI-8gLAWbvA2FPXbKEe3AYo1GQAuSN0MyRzAl8c"
+        },
+        {
+          "url": "https://www.cricinfo.com/series/under-19s-asia-cup-2026-27-1558428/bangladesh-under-19s-vs-pakistan-under-19s-1st-semi-final-1558442/full-scorecard",
+          "title": "BAN19 vs PAK19 Cricket Scorecard, 1st Semi-Final at Al Amarat, November 12, 2026",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCWT20viMANw8ZEfSqUroAPXO4SH1kYr76qL8OSEZQyHJdjQ-XKyW2ij_Wbys"
+        },
+        {
+          "url": "https://www.cricbuzz.com/live-cricket-scores/175703/paku19-vs-banu19-semi-final-1-a1-v-b2-acc-mens-u19-asia-cup-2026",
+          "title": "PAKU19 vs BANU19, Semi Final 1 (A1 v B2), ACC Men's U19 Asia Cup 2026 - Commentary",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHeFhr-5lSmTxHippoYQoU90y74AaZgsDjq5rFvk9Yvv-mz03r-5hfalH_CbM"
+        }
+      ]
+    },
+    {
+      "query": "alex murdaugh",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T14:20:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/alex-murdaugh-wants-murder-indictments-dismissed/",
+        "https://www.wltx.com/article/news/special-reports/alex-murdaugh/judge-rule-murdaugh-bid-toss-indictments-grand-jury-testimony/101-75f3b709-9308-4548-a352-2c2487e09475",
+        "https://www.postandcourier.com/murdaugh-updates/crime-scene-confusion-alex-murdaugh-murders/article_3c906485-d5d3-494b-8a9f-f6007ade385a.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1hFOiABD-7qPjH2ugFXevSmPtP8Qjo5WmVoCUNZhJcu9Mtf_ZrNiAzMja6BE",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/alex-murdaugh-wants-murder-indictments-dismissed/",
+          "title": "Alex Murdaugh lawyers say top investigator lied to grand jury, want murder indictments tossed",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1hFOiABD-7qPjH2ugFXevSmPtP8Qjo5WmVoCUNZhJcu9Mtf_ZrNiAzMja6BE"
+        },
+        {
+          "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/judge-rule-murdaugh-bid-toss-indictments-grand-jury-testimony/101-75f3b709-9308-4548-a352-2c2487e09475",
+          "title": "Murdaugh asks judge to toss murder indictments, saying grand jury heard false blood evidence",
+          "publisher": "WLTX",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsUQeXFm_L1jot38P4TjDemkCQG8x8XQMhZUANkOpEi4z6b9fjEVmGOhfqh4I"
+        },
+        {
+          "url": "https://www.postandcourier.com/murdaugh-updates/crime-scene-confusion-alex-murdaugh-murders/article_3c906485-d5d3-494b-8a9f-f6007ade385a.html",
+          "title": "Crime scene confusion still rampant as Murdaugh asks judge to toss murder charges",
+          "publisher": "Post and Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl9tlUQxm8HZwDPUpPr72eA7b85ShlUKS-MO9FR9_-uag0QUqTmEoZvCGuS8Y"
+        }
+      ]
+    },
     {
       "query": "frank grillo",
       "approx_searches": "200+",
@@ -35,7 +203,7 @@
         {
           "url": "https://www.bloomberg.com/opinion/articles/2026-11-12/skydance-can-t-afford-dc-s-cinematic-universe",
           "title": "Skydance Can't Afford DC’s Cinematic Universe",
-          "publisher": "Bloomberg",
+          "publisher": "Bloomberg.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXG5L3ST02wG6v4nXxJNQWgRZ5X9k4BJ0EkMJDdhYXGGrzANEDFuNDDY4a0To"
         }
@@ -43,16 +211,23 @@
     },
     {
       "query": "wake forest vs smu",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-14T14:10:00Z",
       "related_news_urls": [
+        "https://www.actionnetwork.com/ncaaf/wake-forest-demon-deacons-vs-smu-mustangs-prediction-pick-odds-college-football-saturday-november-14",
         "https://sports.yahoo.com/articles/smu-vs-wake-forest-watch-131705891.html",
-        "https://www.si.com/college/wake-forest/football/a-defining-day-in-dallas-three-keys-to-wake-forests-championship-push-01m7c5nav73b",
-        "https://247sports.com/college/wake-forest/longformarticle/11-wake-forest-at-25-smu-football-preview-292635991/"
+        "https://www.si.com/college/wake-forest/football/a-defining-day-in-dallas-three-keys-to-wake-forests-championship-push-01m7c5nav73b"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ859wKQaetnF3k96qjUsRpAe7E93U35rkt2Fyt3sQK_u0GnouzkVtOjzwU_j0",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Ee2ehQfVKSJgg3YFrbzA8iHqK-QxgAp_kWrXh4PiVGMu6v-WGPNbE6M2YVE",
+      "image_credit": "Action Network",
       "news": [
+        {
+          "url": "https://www.actionnetwork.com/ncaaf/wake-forest-demon-deacons-vs-smu-mustangs-prediction-pick-odds-college-football-saturday-november-14",
+          "title": "Wake Forest vs SMU Prediction, Pick, College Football Odds for Saturday, November 14",
+          "publisher": "Action Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Ee2ehQfVKSJgg3YFrbzA8iHqK-QxgAp_kWrXh4PiVGMu6v-WGPNbE6M2YVE"
+        },
         {
           "url": "https://sports.yahoo.com/articles/smu-vs-wake-forest-watch-131705891.html",
           "title": "SMU vs. Wake Forest: How To Watch Key ACC Showdown",
@@ -66,118 +241,41 @@
           "publisher": "Sports Illustrated",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ22YHZCMhTllfZEOeDcHkTpVdynya-vErNn90pTUAgoOCQuSwe4xiXi2W6Cak"
-        },
-        {
-          "url": "https://247sports.com/college/wake-forest/longformarticle/11-wake-forest-at-25-smu-football-preview-292635991/",
-          "title": "#11 Wake Forest at #25 SMU football preview",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaAvmbGTbE2EDa7LwwqJLX0e13CizBulsiabnTyYdUKDw5Xzztam1WVMZJI0Q"
-        }
-      ]
-    },
-    {
-      "query": "fritz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T14:10:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/svrcina-vs-virtanen-nov-12-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/ribecai-vs-caniato-nov-12-2026/",
-        "https://www.tennismajors.com/atp/stockholm-open-atp-250-atp/stockholm-day-4-musetti-battles-past-humbert-to-set-up-fritz-semi-final-tabilo-meets-tirante-866848.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTXX87ERZFxiwvYf-QRnmafI4rEjuA7u14mftjCpWNt5vcRYxY03sJMev2r4o",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/svrcina-vs-virtanen-nov-12-2026/",
-          "title": "November 12, 2026: Svrcina vs Virtanen Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTXX87ERZFxiwvYf-QRnmafI4rEjuA7u14mftjCpWNt5vcRYxY03sJMev2r4o"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/ribecai-vs-caniato-nov-12-2026/",
-          "title": "November 12, 2026: Ribecai vs Caniato Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRErc7EBowe60En8GPUdcmMWiD9Zr0xgeazgC2-Lo9aJWEnom2UWAFpRgFhHqM"
-        },
-        {
-          "url": "https://www.tennismajors.com/atp/stockholm-open-atp-250-atp/stockholm-day-4-musetti-battles-past-humbert-to-set-up-fritz-semi-final-tabilo-meets-tirante-866848.html",
-          "title": "Stockholm, Day 4: Musetti battles past Humbert to set up Fritz semi-final, Tabilo meets Tirante",
-          "publisher": "Tennis Majors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRamTtr5J-2TlorH7nK4KRgdWVXx2CnnVtPbUsfbz4GjO45Cxyu5yzeJgoxfqg"
         }
       ]
     },
     {
       "query": "charles iii",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-14T14:00:00Z",
       "related_news_urls": [
-        "https://people.com/king-charles-will-celebrate-his-charity-with-special-birthday-twist-elton-john-radio-show-12249273",
-        "https://www.billboard.com/music/music-news/king-charles-elton-john-rocket-hour-special-apple-music-1236380210/",
-        "https://www.reuters.com/world/uk/king-charles-marks-50-years-his-youth-charity-with-elton-john-radio-show-2026-11-12/"
+        "https://people.com/king-charles-sweetest-grandpa-moments-12253081",
+        "https://www.yahoo.com/entertainment/celebrity/royals/articles/king-experiences-charlesmania-young-fans-204105409.html",
+        "https://www.aol.com/articles/children-sing-happy-birthday-king-173131000.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVkgLGHDwJRDVDXq03_4_tx75Au0EYPSYOrAee33_NxFoNziGgiIbjH6T6jhI",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQq-M-dPAjfpkC8R2Gn-DgvsJk1OMjTtRZKHRKnHzins-NavjMuYGrQUfTBsdY",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/king-charles-will-celebrate-his-charity-with-special-birthday-twist-elton-john-radio-show-12249273",
-          "title": "King Charles Will Celebrate His Charity with a Special Birthday Twist in New Episode of Elton John’s Radio Show",
+          "url": "https://people.com/king-charles-sweetest-grandpa-moments-12253081",
+          "title": "See King Charles’ Sweetest Grandpa Moments as He Celebrates His 78th Birthday Today",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVkgLGHDwJRDVDXq03_4_tx75Au0EYPSYOrAee33_NxFoNziGgiIbjH6T6jhI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQq-M-dPAjfpkC8R2Gn-DgvsJk1OMjTtRZKHRKnHzins-NavjMuYGrQUfTBsdY"
         },
         {
-          "url": "https://www.billboard.com/music/music-news/king-charles-elton-john-rocket-hour-special-apple-music-1236380210/",
-          "title": "King Charles III Joining Elton John For ‘Rocket Hour With His Majesty The King’ Special on Apple Music",
-          "publisher": "Billboard",
+          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/king-experiences-charlesmania-young-fans-204105409.html",
+          "title": "The King Experiences \"Charlesmania\" As Young Fans Go Wild",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReP-6rKEz4EonBmX6EEy5y28_ZkVpAvo1bgUhlqA1ncQFKuTYUSkU-xAccvTI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSawzV63VfIgJHH_5fuBKUtqB2-9LbwXHB529Q6XMlHvrlgmuALY3J5eTsBwPc"
         },
         {
-          "url": "https://www.reuters.com/world/uk/king-charles-marks-50-years-his-youth-charity-with-elton-john-radio-show-2026-11-12/",
-          "title": "King Charles marks 50 years of his youth charity with Elton John on radio show",
-          "publisher": "Reuters",
+          "url": "https://www.aol.com/articles/children-sing-happy-birthday-king-173131000.html",
+          "title": "Children sing Happy Birthday to King as he visits market",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-us7aAyfZxcCFRNqGIGIAaurWVJChR4H3RB_ZKsQas2pN--yRYtgj94U0yvw"
-        }
-      ]
-    },
-    {
-      "query": "celebrity",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T14:00:00Z",
-      "related_news_urls": [
-        "https://people.com/celebrities-who-are-rarely-seen-12154523",
-        "https://www.buzzfeed.com/mikespohr/celebrities-who-cheated-with-their-friends-partners",
-        "https://cosmeticsbusiness.com/return-to-the-2000s-celebrity-fragrance-wardrobe"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS2aDD70DrTVPw_bE10Frn9_s8Vb-ayQ8HAlfdfsJzvQw4EQXHI3A96L6UMxY",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/celebrities-who-are-rarely-seen-12154523",
-          "title": "8 Celebrities Who Are Rarely Seen",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS2aDD70DrTVPw_bE10Frn9_s8Vb-ayQ8HAlfdfsJzvQw4EQXHI3A96L6UMxY"
-        },
-        {
-          "url": "https://www.buzzfeed.com/mikespohr/celebrities-who-cheated-with-their-friends-partners",
-          "title": "Celebrities Who Cheated With Their Friends' Partners And These Betrayals Are So Messy",
-          "publisher": "BuzzFeed",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREEb9gyqED3fhOgYmdvq_OacCm8RFSijBBmna_KCoEOWsk_teeCJ6lgvsUFag"
-        },
-        {
-          "url": "https://cosmeticsbusiness.com/return-to-the-2000s-celebrity-fragrance-wardrobe",
-          "title": "Are we going back to the 2000s celebrity fragrance wardrobe era?",
-          "publisher": "Cosmetics Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg_-CLw12oR-jb5Asba5_J8YHfALLFeuBmB1Qe2rYU-6RyvlpeO8-RCXhjFPQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDMxIp6tWbYA-SjVfXOjNwWC6OVZa_aClz66_QO1Gri80HCWwkrbuSo2xKYHY"
         }
       ]
     },
@@ -187,8 +285,8 @@
       "published_at": "2026-11-14T13:50:00Z",
       "related_news_urls": [
         "https://www.sherdog.com/news/news/PFL-Dubai-Nemkov-vs-Bilostenniy-playbyplay-results-round-scoring-203621",
-        "https://sports.yahoo.com/articles/live-pfl-dubai-results-video-124900482.html",
-        "https://www.mmafighting.com/pfl/520927/pfl-dubai-results-nemkov-vs-bilostenniy"
+        "https://www.mmafighting.com/pfl/520927/pfl-dubai-results-nemkov-vs-bilostenniy",
+        "https://sports.yahoo.com/articles/live-pfl-dubai-results-video-124900482.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQy-ZkCWFu_YTHx2VwfbRLhCOf_rHQ1Z0QHFAEgHf4I-RVWOEAerIFNz5pvGo",
       "image_credit": "Sherdog",
@@ -201,158 +299,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQy-ZkCWFu_YTHx2VwfbRLhCOf_rHQ1Z0QHFAEgHf4I-RVWOEAerIFNz5pvGo"
         },
         {
-          "url": "https://sports.yahoo.com/articles/live-pfl-dubai-results-video-124900482.html",
-          "title": "LIVE! PFL Dubai Results, Video Highlights",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgiFFuNf68xRC2QsBSmUK1a9X-D5t5ksK45UnDdKNMSsPSSOh4MeQernEGooU"
-        },
-        {
           "url": "https://www.mmafighting.com/pfl/520927/pfl-dubai-results-nemkov-vs-bilostenniy",
           "title": "PFL Dubai Results: Nemkov vs. Bilostenniy",
           "publisher": "MMA Fighting",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2y55YhyEF_baq9Ovz5YSnDzSZQChDP5FIsu_dGvR5vGDJWxxhsS-_uVHtu6I"
-        }
-      ]
-    },
-    {
-      "query": "hayley atwell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T13:50:00Z",
-      "related_news_urls": [
-        "https://playbill.com/article/hayley-atwell-and-tom-hiddleston-are-having-a-merry-war-on-broadway-in-much-ado-about-nothing",
-        "https://www.hercampus.com/school/pace/a-much-ado-about-nothing-review-loki-and-peggy-carter-falling-in-love/",
-        "https://www.theatermania.com/news/interview-designer-soutra-gilmour-takes-us-inside-a-confetti-filled-much-ado-on-broadway_1859219/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_WjVa_x4OXoOcOYwVPtLK7JtVa50dcaAWcECDSs8DGhgL_OY7zDLI2QiBOqs",
-      "image_credit": "Playbill",
-      "news": [
-        {
-          "url": "https://playbill.com/article/hayley-atwell-and-tom-hiddleston-are-having-a-merry-war-on-broadway-in-much-ado-about-nothing",
-          "title": "Hayley Atwell and Tom Hiddleston Are Having a 'Merry War' on Broadway in Much Ado About Nothing",
-          "publisher": "Playbill",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_WjVa_x4OXoOcOYwVPtLK7JtVa50dcaAWcECDSs8DGhgL_OY7zDLI2QiBOqs"
         },
         {
-          "url": "https://www.hercampus.com/school/pace/a-much-ado-about-nothing-review-loki-and-peggy-carter-falling-in-love/",
-          "title": "A ‘Much Ado About Nothing’ Review: Loki And Peggy Carter Falling In Love!?",
-          "publisher": "Her Campus",
+          "url": "https://sports.yahoo.com/articles/live-pfl-dubai-results-video-124900482.html",
+          "title": "LIVE! PFL Dubai Results, Video Highlights",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVndLxJfAnRI5UgGM2bJ6L_S236aSid6tXq84rZz6wjtg_C_S1ZhriYXIThfI"
-        },
-        {
-          "url": "https://www.theatermania.com/news/interview-designer-soutra-gilmour-takes-us-inside-a-confetti-filled-much-ado-on-broadway_1859219/",
-          "title": "Interview: Designer Soutra Gilmour Takes Us Inside a Confetti-Filled Much Ado on Broadway",
-          "publisher": "TheaterMania",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT7qPUVOj3rvxH29-MNIw682SjKcvP1vWQHnr_UjrXXfVPELIunzQuLXynXI"
-        }
-      ]
-    },
-    {
-      "query": "carson daly",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T13:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/carson-daly-recalls-unusual-tattoo-220314601.html",
-        "https://people.com/carson-daly-recalls-getting-tattoo-for-ex-jennifer-love-hewitt-covered-up-12252722",
-        "https://www.the-sun.com/tv/17302946/today-carson-daly-tattoos-ex-name-ankle/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmdca3VLJewx4AGnWwGCRuHjO84fy5mcgt9obC7aYG8fxD568lYZWsSeR93Pw",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/carson-daly-recalls-unusual-tattoo-220314601.html",
-          "title": "Carson Daly recalls the unusual tattoo that he got to cover up his ink for ex Jennifer Love Hewitt",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmdca3VLJewx4AGnWwGCRuHjO84fy5mcgt9obC7aYG8fxD568lYZWsSeR93Pw"
-        },
-        {
-          "url": "https://people.com/carson-daly-recalls-getting-tattoo-for-ex-jennifer-love-hewitt-covered-up-12252722",
-          "title": "Carson Daly Recalls Getting Tattoo for Ex Jennifer Love Hewitt Covered Up",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6OyoOrXfVA9N5y0vomONsxpMJOxw2aZcFM0UBPwTyJ5ZKqeT47z0jhzn29Ns"
-        },
-        {
-          "url": "https://www.the-sun.com/tv/17302946/today-carson-daly-tattoos-ex-name-ankle/",
-          "title": "Today’s Carson Daly reveals he has 15 tattoos including ink of ex’s name on ankle that he turned into a crab",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToLLAys8WuT5-cj6Vv8j87I9DNZp03KjIs8tm93jsuPuI6l6M84iUUOcWHDJk"
-        }
-      ]
-    },
-    {
-      "query": "where is game day this week",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T13:40:00Z",
-      "related_news_urls": [
-        "https://www.ktvb.com/article/sports/local-sports/boise-state-fans-brave-cold-college-gameday-tradition-bonds-generations/277-32348d01-c0a9-4547-8dcd-f87dd81583f6",
-        "https://broncosports.com/news/2026/11/12/general-boise-state-athletics-shares-additional-fan-information-for-espns-college-gameday",
-        "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article318068655.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9NYOp4hyXFQhO3z1q53ZAVXeHICcxkCsNel2A6BJ95vOR0UjVsntA5dE0XsI",
-      "image_credit": "KTVB",
-      "news": [
-        {
-          "url": "https://www.ktvb.com/article/sports/local-sports/boise-state-fans-brave-cold-college-gameday-tradition-bonds-generations/277-32348d01-c0a9-4547-8dcd-f87dd81583f6",
-          "title": "Boise State fans brave cold for 'College GameDay' as tradition bonds generations",
-          "publisher": "KTVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9NYOp4hyXFQhO3z1q53ZAVXeHICcxkCsNel2A6BJ95vOR0UjVsntA5dE0XsI"
-        },
-        {
-          "url": "https://broncosports.com/news/2026/11/12/general-boise-state-athletics-shares-additional-fan-information-for-espns-college-gameday",
-          "title": "Boise State Athletics Shares Additional Fan Information for ESPN’s College GameDay",
-          "publisher": "Boise State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wzwW0LBhMZPDRoXP_W_ub0Tit76WtGSFvjcWFUTgZYidbo-fTNkxsYCSRrY"
-        },
-        {
-          "url": "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article318068655.html",
-          "title": "ESPN College GameDay host explains why they chose Boise State (Video)",
-          "publisher": "Idaho Statesman",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8sx9ST1-WRzVVnE6p7pD7NUtnV5JFJqtWRBHnRxx3-dtq3kVEY_NIcpvR7Hk"
-        }
-      ]
-    },
-    {
-      "query": "cook islands",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T13:40:00Z",
-      "related_news_urls": [
-        "https://www.rnz.co.nz/news/pacific/2299511/if-not-alive-repatriate-my-body-family-fears-for-sri-lankan-woman-stranded-in-cook-islands",
-        "https://en.haberler.com/the-woman-who-could-not-obtain-a-transit-visa-has-2326808/",
-        "https://ua.news/en/dovkolo-svitu/gromadianka-shri-lanki-tri-roki-ne-mozhe-viyikhati-z-ostroviv-kuka-bbc-news"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1eaB-tevvOP1oqr8gCoSBR8mzvCQZDurXU1yLE2twpFQpGLtSetSYSjQuq-8",
-      "image_credit": "RNZ",
-      "news": [
-        {
-          "url": "https://www.rnz.co.nz/news/pacific/2299511/if-not-alive-repatriate-my-body-family-fears-for-sri-lankan-woman-stranded-in-cook-islands",
-          "title": "'If not alive... repatriate my body': Family fears for Sri Lankan woman stranded in Cook Islands",
-          "publisher": "RNZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1eaB-tevvOP1oqr8gCoSBR8mzvCQZDurXU1yLE2twpFQpGLtSetSYSjQuq-8"
-        },
-        {
-          "url": "https://en.haberler.com/the-woman-who-could-not-obtain-a-transit-visa-has-2326808/",
-          "title": "The woman who could not obtain a transit visa has been unable to return to her country for 3 years.",
-          "publisher": "Haberler.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNknxmCH1kQP5zXbVFIqbiglXxW6YJFPOS4RImwqtcW4Y3weNMsyRfckKDJv8"
-        },
-        {
-          "url": "https://ua.news/en/dovkolo-svitu/gromadianka-shri-lanki-tri-roki-ne-mozhe-viyikhati-z-ostroviv-kuka-bbc-news",
-          "title": "Sri Lankan unable to leave Cook Islands for three years — BBC",
-          "publisher": "UA.NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQx2GmI7Bp9mT7OfOIYOGMRgkDas6l1EOr4RGzWc7bzF9bnknbLd2ayJenhnlU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgiFFuNf68xRC2QsBSmUK1a9X-D5t5ksK45UnDdKNMSsPSSOh4MeQernEGooU"
         }
       ]
     }
