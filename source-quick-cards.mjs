@@ -20,6 +20,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('gemini','Google Gemini','AI · Planning','Ask Gemini first through Bubbles','https://gemini.google.com/','https://gemini.google.com/','Gemini offers the first research/engineering plan. Independently check model advice before acting.','Use the real Gemini API only with verified Bubbles owner access, or continue in the official Gemini app.'),
  source('claude','Anthropic Claude','AI · Review','Review the Gemini plan with Claude','https://claude.ai/','https://claude.ai/','Claude independently reviews proposed changes, tests and possible hazards; no generated text is execution authorization.','The card can ask Bubbles for an authenticated Anthropic API response, if configured; otherwise use the official Claude interface.'),
  source('copilot','GitHub Copilot','AI · Coding','Review work with GitHub Copilot','https://github.com/copilot','https://github.com/copilot/agents','GitHub Copilot cloud agent can work on appropriately enabled repositories through approved GitHub issues and PRs.','Open the official GitHub Copilot interface. This card does not inherit private repository permissions or claim a direct Copilot chat API.'), 
+ source('microsoft-ai-builder','Microsoft AI · Bubbles Builder','AI · Engineering','Build from your Microsoft AI examples','https://github.com/microsoft/AI','https://github.com/www-infinity4/AI3','Use the owner Microsoft AI example fork as read-only reference. Keep the same job in QuantaPhi #1912 and route authorized changes through the existing signed Moltnook runner, persistent checkpoint, exact-head tests and independent review.','This fork contains samples, not an installed Microsoft Agent Framework. No automatic publishing, no paid API, no inherited GitHub login and no independent writer permissions.',{secondUrl:'https://github.com/www-infinity4/AI3',secondLabel:'Your Microsoft AI fork'}),
  source('x','X / Grok','Social','Trends, posts and Grok','https://x.com/','https://x.com/explore','Explore verified public X posts, native embeds and the separate Grok product only when allowed.','Open the X Explore interface. Post streams and Grok need supported provider authorization.',{secondUrl:'https://x.com/i/grok',secondLabel:'Open Grok'}),
  source('reddit','Reddit','Community','Popular communities and discussions','https://www.reddit.com/','https://www.reddit.com/r/popular/','Find relevant communities and explain posts only from explicitly permitted Reddit sources.','Open Reddit popular. Commercial reuse and embedding require provider permission; no unlicensed card feed.',{extraControls:[{label:'Open Reddit',href:'https://www.reddit.com/',icon:'link'}]}), 
  source('tiktok','TikTok','Video','Discover popular short videos','https://www.tiktok.com/','https://www.tiktok.com/explore','Curate original creators with verified post URLs and approved TikTok Embed Player.','Open TikTok Explore. A real player reel needs actual authorized post IDs and player use; no fabricated trends.'), 
@@ -50,7 +51,7 @@ export const ACTIVE_SOURCE_CARDS=Object.freeze([
 export const PUBLIC_SOURCE_IDS=Object.freeze([
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
- 'chatgpt','gemini','claude','copilot','harley-davidson','indian-motorcycle','pcla-picocela'
+ 'chatgpt','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>{
@@ -217,7 +218,11 @@ function starterCard(card){
  // Search cards are already complete with their own actual search fields.
  if(!['google','bing'].includes(card.id)){
   const actions=el('div','iqc-actions');
-  actions.append(link('Official '+card.name+' website',card.official));if(card.id==='starmaker'){const demo=link('Try & embed the mini card','/starmaker-embed.html','iqc-primary');demo.target='_self';actions.append(demo)}item.append(actions);
+  actions.append(link('Official '+card.name+' website',card.official));
+  if(card.id==='microsoft-ai-builder'){
+   const open=link('Build with Bubbles','/source-quick-card.html?card=microsoft-ai-builder','iqc-primary');open.target='_self';
+   actions.append(open,link('Your Microsoft AI fork',card.secondUrl));
+  }if(card.id==='starmaker'){const demo=link('Try & embed the mini card','/starmaker-embed.html','iqc-primary');demo.target='_self';actions.append(demo)}item.append(actions);
  }
  return item;
 }
