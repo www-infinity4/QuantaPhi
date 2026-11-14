@@ -3,157 +3,17 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T01:31:12.073430Z",
+  "checked_at": "2026-11-14T02:01:40.159632Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "rangers vs canucks",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T01:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50463496/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-        "https://sports.yahoo.com/videos/revisiting-canucks-rangers-move-j-010012792.html",
-        "https://www.nhl.com/rangers/news/rangers-at-canucks-pregame-notes-11-13-26"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaWmhiRoxueyuw_Qn61mEGeVlLuhTsBjxlU9hfGuRIPQ3ifD9AQ5dHDuX7BK0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50463496/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-          "title": "NHL Tonight: What to watch in Rangers-Canucks, Predators-Golden Knights",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaWmhiRoxueyuw_Qn61mEGeVlLuhTsBjxlU9hfGuRIPQ3ifD9AQ5dHDuX7BK0"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/revisiting-canucks-rangers-move-j-010012792.html",
-          "title": "Revisiting The Canucks And Rangers’ Move For J.T. Miller Ahead Of Fifth Matchup Since The Trade",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREtwtcGcPfleq0ZV__fYnIQYmMhYmrqK0gR1LVZzwer5cDcXIwwo8rsvcbPTY"
-        },
-        {
-          "url": "https://www.nhl.com/rangers/news/rangers-at-canucks-pregame-notes-11-13-26",
-          "title": "Rangers at Canucks: Pregame Notes",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXesxTo7e3fIe2BS_KRSAU_fSfLTlYnTYc2VEyFxAsoRe0Rh2zvJ4ZPAgbTMY"
-        }
-      ]
-    },
-    {
-      "query": "charlotte flair",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T01:10:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/gooddaysacramento/video/we-chat-with-charlotte-flair-about-the-royal-rumble-2027/",
-        "https://www.news4jax.com/video/news/local/2026/11/13/going-ringside-ep-222-charlotte-flair/",
-        "https://www.fightful.com/wrestling/charlotte-flair-has-already-filmed-eight-episodes-of-her-mental-health-podcast-currently-waiting-for-the-launch-date/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcpg5LNcmkw-t_tPWkPpyPNxCcrdVnQur-YBW83KDH9-SAuCqwbNduSQgn2_g",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/gooddaysacramento/video/we-chat-with-charlotte-flair-about-the-royal-rumble-2027/",
-          "title": "We chat with Charlotte Flair about the Royal Rumble 2027",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcpg5LNcmkw-t_tPWkPpyPNxCcrdVnQur-YBW83KDH9-SAuCqwbNduSQgn2_g"
-        },
-        {
-          "url": "https://www.news4jax.com/video/news/local/2026/11/13/going-ringside-ep-222-charlotte-flair/",
-          "title": "Going Ringside Ep. 222: Charlotte Flair",
-          "publisher": "News4JAX",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6n_w-B8RiVgDPetSf556d1K1r_T6tFGV-GtXwGL93TOC9V3CBRVC2xmoo4FM"
-        },
-        {
-          "url": "https://www.fightful.com/wrestling/charlotte-flair-has-already-filmed-eight-episodes-of-her-mental-health-podcast-currently-waiting-for-the-launch-date/",
-          "title": "Charlotte Flair Has Already Filmed Eight Episodes Of Her Mental Health Podcast, Currently Waiting For The Launch Date",
-          "publisher": "Fightful",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSicFKlOtDM0rC-9VVu05lcvrCJbfuKbn9F38R36b7GjZy-3vINgps0yUKHVeg"
-        }
-      ]
-    },
-    {
-      "query": "white house press conference",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T01:10:00Z",
-      "related_news_urls": [
-        "https://www.c-span.org/program/white-house-event/espns-stephen-a-smith-speaks-to-reporters-after-meeting-with-president-trump/687865",
-        "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-stephen-a-smith-online-show-november-12-2026/",
-        "https://www.the-independent.com/bulletin/news/stephen-a-smith-white-house-press-secretary-trump-b3084176.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAdSVi04j4GJjyfrBIIOZK5dh3cJ_k70rQQXRAB14fuf6msJiI7EJbrbLlE2Y",
-      "image_credit": "C-SPAN",
-      "news": [
-        {
-          "url": "https://www.c-span.org/program/white-house-event/espns-stephen-a-smith-speaks-to-reporters-after-meeting-with-president-trump/687865",
-          "title": "ESPN's Stephen A. Smith Speaks to Reporters After Meeting with President Trump",
-          "publisher": "C-SPAN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAdSVi04j4GJjyfrBIIOZK5dh3cJ_k70rQQXRAB14fuf6msJiI7EJbrbLlE2Y"
-        },
-        {
-          "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-stephen-a-smith-online-show-november-12-2026/",
-          "title": "Interview: Stephen A. Smith Interviews Donald Trump for His Online Show - November 12, 2026",
-          "publisher": "Roll Call",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6xD8LmybPtJL4alZLsMewopKOB6t8pRo6aMa1Rdj5y8AlN7YSfWeUjU5TtpI"
-        },
-        {
-          "url": "https://www.the-independent.com/bulletin/news/stephen-a-smith-white-house-press-secretary-trump-b3084176.html",
-          "title": "Stephen A Smith sparks press secretary speculation with White House visit",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyUClg_ky8fFTxgZ19b-HBRXC6N0AhJJdC-DFSCHBvhxnuGElcr4mhTf7kgzI"
-        }
-      ]
-    },
-    {
-      "query": "amy acker",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T01:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/luke-macfarlane-reveals-hed-never-195555620.html",
-        "https://www.cleveland.com/tv/2026/11/my-christmas-cowboy-how-to-watch-hallmark-for-free.html",
-        "https://www.imdb.com/news/ni66110102/?ref_=ttnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxFX-dB60_LbC1gc_weRg1GcAjXYUmSGzGFYwh49U5CLwdb7dPTX5EtB00eRc",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/luke-macfarlane-reveals-hed-never-195555620.html",
-          "title": "Luke Macfarlane Reveals He'd Never Ridden a Horse Before Filming My Christmas Cowboy",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxFX-dB60_LbC1gc_weRg1GcAjXYUmSGzGFYwh49U5CLwdb7dPTX5EtB00eRc"
-        },
-        {
-          "url": "https://www.cleveland.com/tv/2026/11/my-christmas-cowboy-how-to-watch-hallmark-for-free.html",
-          "title": "'My Christmas Cowboy' is the latest film in Hallmark's Countdown to Christmas. Here's how to watch",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTSiw3m5eroRNazeS_DnIJgvc8z99ZIhyb3GHl_a_UjA7z-1al1HxTWxLgk5w"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66110102/?ref_=ttnw_art_perm",
-          "title": "My Christmas Cowboy: Filming Locations and Cast Details",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTql9VsnomQ22oFn79lXiogNzD0zWaPnfsfO0ut2kpWvAJngEO7uQcFjx7Q46E"
-        }
-      ]
-    },
-    {
-      "query": "northern arizona basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T01:10:00Z",
+      "query": "kentucky basketball",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-14T01:40:00Z",
       "related_news_urls": [
         "https://ukathletics.com/news/2026/11/12/big-blue-preview-kentucky-vs-northern-arizona/",
         "https://www.aseaofblue.com/kentucky-wildcats-discussion/187769/uk-basketball-vs-northern-arizona-game-chat-pregame-reading",
-        "https://www.on3.com/teams/kentucky-wildcats/news/the-ksr-pregame-show-is-live-to-get-you-ready-for-uk-vs-northern-arizona/"
+        "https://www.kentucky.com/sports/spt-columns-blogs/mark-story/article318005048.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6afg0AJwPBGGxWud4c8lcsF19MnsnuhI7G4rPL2WBqm1udvXzLfM2p7vwXgs",
       "image_credit": "UKAthletics",
@@ -173,154 +33,318 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpRregqii6W6WF7Wv5kjFyRLKuEFXmKxm7ktuGn9XshpWkRDppvUs5k8u3iXc"
         },
         {
-          "url": "https://www.on3.com/teams/kentucky-wildcats/news/the-ksr-pregame-show-is-live-to-get-you-ready-for-uk-vs-northern-arizona/",
-          "title": "The KSR Pregame Show is live to get you ready for UK vs. Northern Arizona",
+          "url": "https://www.kentucky.com/sports/spt-columns-blogs/mark-story/article318005048.html",
+          "title": "Where to watch, how to follow the UK men’s basketball game vs. Northern Arizona",
+          "publisher": "Lexington Herald Leader",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuWriD18T6DpbfuAwF-pdo55PRZdtk8FXghdt2MKvfmyk3nZAFAd4Zb_sbQfQ"
+        }
+      ]
+    },
+    {
+      "query": "sophie cunningham",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T01:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/sophie-cunningham-laughs-stephen-smith-belittling-claim-white-nba-players",
+        "https://basketnews.com/news-259228-stephen-a-smith-gives-racist-remarks-why-luka-doncic-lakers-wont-win-2027-nba-title.html",
+        "https://www.marca.com/en/basketball/nba/los-angeles-lakers/2026/11/11/i-ve-never-seen-an-nba-champion-whose-three-stars-were-white-and-it-s-not-going-to-happen-this-year.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr9MMuRuLU3XSAoMmWpbzaDcWtOVvZ0YpsiKNP8r7u3_zCM1XaS0TxvGJYXpA",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/sophie-cunningham-laughs-stephen-smith-belittling-claim-white-nba-players",
+          "title": "Sophie Cunningham laughs at Stephen A Smith's belittling claim about White NBA players",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr9MMuRuLU3XSAoMmWpbzaDcWtOVvZ0YpsiKNP8r7u3_zCM1XaS0TxvGJYXpA"
+        },
+        {
+          "url": "https://basketnews.com/news-259228-stephen-a-smith-gives-racist-remarks-why-luka-doncic-lakers-wont-win-2027-nba-title.html",
+          "title": "Stephen A. Smith explains why Luka Doncic, Lakers won't win 2027 NBA title",
+          "publisher": "BasketNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsljrVwiBzg6zPKrrXy-XE3B0g8qgnVSm7vTaFO_VH0FUgBsAY8l8MQucEkoY"
+        },
+        {
+          "url": "https://www.marca.com/en/basketball/nba/los-angeles-lakers/2026/11/11/i-ve-never-seen-an-nba-champion-whose-three-stars-were-white-and-it-s-not-going-to-happen-this-year.html",
+          "title": "\"I've never seen an NBA champion whose three stars were white, and it's not going to happen this year\"",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv39CULKAgqc3b1HBHmTUokhqzl0gRyamn3vOylLv3I0aeVR9PxZyYlWNun3U"
+        }
+      ]
+    },
+    {
+      "query": "violent night 2",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T01:40:00Z",
+      "related_news_urls": [
+        "https://www.fantasylandnews.com/2026/11/13/violent-night-2-naughty-knit-popcorn-sweater-is-a-free-ugly-sweater-for-your-popcorn-bucket/",
+        "https://www.tribute.ca/galleries/violent-night-2/198561/4/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKU7XTC95wdgYHi_Lxx2IO4mIzrUMdje3_X3bSwe1_4xFqhDx6kYt4mC6jW9g",
+      "image_credit": "Fantasy Land News",
+      "news": [
+        {
+          "url": "https://www.fantasylandnews.com/2026/11/13/violent-night-2-naughty-knit-popcorn-sweater-is-a-free-ugly-sweater-for-your-popcorn-bucket/",
+          "title": "Violent Night 2 Naughty Knit Popcorn Sweater Is a Free Ugly Sweater for Your Popcorn Bucket",
+          "publisher": "Fantasy Land News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKU7XTC95wdgYHi_Lxx2IO4mIzrUMdje3_X3bSwe1_4xFqhDx6kYt4mC6jW9g"
+        },
+        {
+          "url": "https://www.tribute.ca/galleries/violent-night-2/198561/4/",
+          "title": "Violent Night 2 Photo 4 of 4",
+          "publisher": "Tribute.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTADevkQu4pTCmjJvUlOwd_GmKAXiRKLNtzpJ3OlRy8OrZD01JZyNDX162opqM"
+        }
+      ]
+    },
+    {
+      "query": "tennessee basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T01:40:00Z",
+      "related_news_urls": [
+        "https://utsports.com/news/2026/11/12/mens-basketball-hoops-central-tennessee-state-vs-11-9-tennessee",
+        "https://www.knoxnews.com/story/sports/college/university-of-tennessee/mens-basketball/2026/11/13/tennessee-basketball-tennessee-state-live-updates--live/92649536007/",
+        "https://sports.yahoo.com/articles/watch-tennessee-state-vs-tennessee-230000753.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz08U0Ta8UuAg46BG9HlIkcmPNqbWwhNM2d8gbAKYMlF2P4AUUx109yLMcUxI",
+      "image_credit": "University of Tennessee Athletics",
+      "news": [
+        {
+          "url": "https://utsports.com/news/2026/11/12/mens-basketball-hoops-central-tennessee-state-vs-11-9-tennessee",
+          "title": "HOOPS CENTRAL: #11/9 Tennessee vs. Tennessee State",
+          "publisher": "University of Tennessee Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz08U0Ta8UuAg46BG9HlIkcmPNqbWwhNM2d8gbAKYMlF2P4AUUx109yLMcUxI"
+        },
+        {
+          "url": "https://www.knoxnews.com/story/sports/college/university-of-tennessee/mens-basketball/2026/11/13/tennessee-basketball-tennessee-state-live-updates--live/92649536007/",
+          "title": "Tennessee basketball leads Tennessee State 42-37 at halftime, live updates",
+          "publisher": "Knoxville News Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTX7O2OpQaVFs1rzFmZVDcFEGoBgqHD7UwNdDL6zzOK7QRfMU83JS7CpQ3xGM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-tennessee-state-vs-tennessee-230000753.html",
+          "title": "How to watch Tennessee State vs Tennessee: Live stream NCAA College Basketball, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YO29fWJFY7rHpnyUkgz98g2adJXqLPk43pHBPiFCi7_afiwV0ROhmSsKFX8"
+        }
+      ]
+    },
+    {
+      "query": "nickeil alexander-walker",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T01:40:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/atlanta/video/trae-young-returns-to-state-farm-arena-to-face-off-against-hawks/",
+        "https://www.espn.com/nba/story/_/id/50405029/wizards-trae-young-returns-atlanta-vs-hawks-says-experience-was-different",
+        "https://www.nba.com/watch/video/game-recap-hawks-139-wizards-132-nov-6"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgZFE4OGZeJIdrjIjlal2KREcXOWDauFolu61HL_xrsa_vsdRvoxatsduUgVY",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/atlanta/video/trae-young-returns-to-state-farm-arena-to-face-off-against-hawks/",
+          "title": "Trae Young returns to State Farm Arena to face off against Hawks",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgZFE4OGZeJIdrjIjlal2KREcXOWDauFolu61HL_xrsa_vsdRvoxatsduUgVY"
+        },
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50405029/wizards-trae-young-returns-atlanta-vs-hawks-says-experience-was-different",
+          "title": "Wizards' Trae Young calls Atlanta return a 'cool' experience despite loss",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQS3Bdrnm1Gjacrkxl40vFxkHBC1Z_zrfZq_uCmNTR3drNN0DxhnhbJr0b0j8"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/game-recap-hawks-139-wizards-132-nov-6",
+          "title": "Game Recap: Hawks 139, Wizards 132 (Nov. 6)",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJx0n0d0yG9OPJOu-yzNU32PED3N7PWvXrBGbIhbWqQ9MeIZzH9oTIXZtpz18"
+        }
+      ]
+    },
+    {
+      "query": "tyrese proctor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T01:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50403591/tyrese-proctor-gets-hoop-harm",
+        "https://sports.yahoo.com/articles/tyrese-proctors-emergence-could-player-180003199.html",
+        "https://www.foxsports.com.au/en-AU/news/basketball/tyrese-proctor-season-high-points-james-harden-cleveland-cavaliers-new-york-knicks-josh-giddey-victor-wembanyama/15s1cwby1bhj21mbq5pkvp63pd"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpNhJeWOQ_LABzpwsR4QU6AotU6x169mrBxGp_Ns71o1bqmCZ7C3pkLXl5XSQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50403591/tyrese-proctor-gets-hoop-harm",
+          "title": "Tyrese Proctor gets the hoop and the harm",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpNhJeWOQ_LABzpwsR4QU6AotU6x169mrBxGp_Ns71o1bqmCZ7C3pkLXl5XSQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/tyrese-proctors-emergence-could-player-180003199.html",
+          "title": "Tyrese Proctor's Emergence Could Make This Player Expendable for Cavaliers",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjHqbZ_4Z7ZlCdFScj_US8SpGZrUw8qy9LNNQnRdDqwWeiJ-0wjcta0P0I4Cs"
+        },
+        {
+          "url": "https://www.foxsports.com.au/en-AU/news/basketball/tyrese-proctor-season-high-points-james-harden-cleveland-cavaliers-new-york-knicks-josh-giddey-victor-wembanyama/15s1cwby1bhj21mbq5pkvp63pd",
+          "title": "Aussie goes off for season-high; Wemby crushes Giddey's Bulls in wild 27pt comeback - NBA Wrap",
+          "publisher": "Fox Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPoFAXQkhwnRbPaKcTA7amj5pJLvmwQCIw0MdyOT2OuneCOGaz3CNTL-Caay0"
+        }
+      ]
+    },
+    {
+      "query": "mark pope",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T01:40:00Z",
+      "related_news_urls": [
+        "https://ukathletics.com/news/2026/11/13/mark-pope-post-northern-arizona-press-conference/",
+        "https://sports.yahoo.com/articles/wildcats-fans-allegedly-rallied-against-154316365.html",
+        "https://www.on3.com/teams/kentucky-wildcats/news/john-fanta-the-mark-pope-era-has-been-a-disappointment/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7KsREMvfiKm5zXVPCSU7RrELHz8bWG6_FrhZ9Qyw3rRm_uAOKeVJ7CT7kLO4",
+      "image_credit": "UKAthletics",
+      "news": [
+        {
+          "url": "https://ukathletics.com/news/2026/11/13/mark-pope-post-northern-arizona-press-conference/",
+          "title": "Mark Pope Post-Northern Arizona Press Conference",
+          "publisher": "UKAthletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7KsREMvfiKm5zXVPCSU7RrELHz8bWG6_FrhZ9Qyw3rRm_uAOKeVJ7CT7kLO4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/wildcats-fans-allegedly-rallied-against-154316365.html",
+          "title": "Wildcats Fans Allegedly Rallied Against Kentucky Head Coach After Loud ‘Fire Mark Pope’ Chant During Champions Classic Loss to Kansas",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIXAHpamX6eBKV3jsNfB4k274ZXZ11gY9HGj8cNc6keDGKvLjGWOh2V1v8Ue8"
+        },
+        {
+          "url": "https://www.on3.com/teams/kentucky-wildcats/news/john-fanta-the-mark-pope-era-has-been-a-disappointment/",
+          "title": "John Fanta: 'The Mark Pope era has been a disappointment.'",
           "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm6ppqbpTYrZkRulbmBOfyqGaXEJl6ZSiRMV70H_FVB5nBtAn3CXUwu0yhSZo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm41KKCAk1c4ns8zMMZBi2_KqFJ2d1o_5iGHvQxIEhu_5GkVnbChLYdVTHA30"
         }
       ]
     },
     {
-      "query": "virginia vs maryland",
+      "query": "georgia high school football scores",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T01:40:00Z",
+      "related_news_urls": [
+        "https://www.13wmaz.com/article/sports/high-school/hs-football/ffn-scoreboard-week-13/93-402ed184-8404-4cff-8bbc-c3cd188f82b8",
+        "https://www.mymcr.net/news/stratford-advances-to-giaa-semifinals/article_328eb541-8ec4-469c-9399-c99b05790984.html",
+        "https://wgxa.tv/sports/the-blitz/wgxas-the-blitz-brings-you-friday-football-roundup-middle-georgia-finals-perry-warner-robins-crisp-early-coffee-verterans-peach-troup-windsor-forest-west-laurens-wilcox-truelton-westside-howard-crawford-taylor-johnson-jenkins-baldwin-spalding-macon-chatt"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-8tWU1OsFH6Y3ZvT3QVvE0iipSN9msuS-AgUU_zV7Zw_vW4pqmD0zveoxlcg",
+      "image_credit": "13WMAZ",
+      "news": [
+        {
+          "url": "https://www.13wmaz.com/article/sports/high-school/hs-football/ffn-scoreboard-week-13/93-402ed184-8404-4cff-8bbc-c3cd188f82b8",
+          "title": "Football Friday Night Scoreboard | Week 13",
+          "publisher": "13WMAZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-8tWU1OsFH6Y3ZvT3QVvE0iipSN9msuS-AgUU_zV7Zw_vW4pqmD0zveoxlcg"
+        },
+        {
+          "url": "https://www.mymcr.net/news/stratford-advances-to-giaa-semifinals/article_328eb541-8ec4-469c-9399-c99b05790984.html",
+          "title": "Stratford advances to GIAA semifinals",
+          "publisher": "mymcr.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSG4LtgUUpl_C__1lsROFzic3HBMMWs2U_EWFCn-NFrjv_MYK4P2kQmH5OIqiU"
+        },
+        {
+          "url": "https://wgxa.tv/sports/the-blitz/wgxas-the-blitz-brings-you-friday-football-roundup-middle-georgia-finals-perry-warner-robins-crisp-early-coffee-verterans-peach-troup-windsor-forest-west-laurens-wilcox-truelton-westside-howard-crawford-taylor-johnson-jenkins-baldwin-spalding-macon-chatt",
+          "title": "WGXA's The Blitz brings you Friday football roundup; Middle Georgia finals",
+          "publisher": "WGXA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuGpYANvUlw0sc6JSl6pniJLwBi5KyaiHbJWOvcXA_9nj_6wtP7N9ZQ2nZcNo"
+        }
+      ]
+    },
+    {
+      "query": "white house press briefing",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T01:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/08/us/politics/trump-joke-dana-white-press-secretary.html",
+        "https://www.foxnews.com/media/ufc-boss-dana-white-brushes-off-democratic-probe-threats-recalls-crazy-48-hours-around-trump-job-offer",
+        "https://sports.yahoo.com/articles/ufc-chief-takes-white-house-223446707.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOL-QznZXYtYU6DUYbrRHVS7wKY1e9SAROG2YRlynbr33SV_IUHtemLGvv_Y",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/08/us/politics/trump-joke-dana-white-press-secretary.html",
+          "title": "Trump Was ‘Only Kidding’ in Asking Dana White to Be His Press Secretary",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOL-QznZXYtYU6DUYbrRHVS7wKY1e9SAROG2YRlynbr33SV_IUHtemLGvv_Y"
+        },
+        {
+          "url": "https://www.foxnews.com/media/ufc-boss-dana-white-brushes-off-democratic-probe-threats-recalls-crazy-48-hours-around-trump-job-offer",
+          "title": "UFC boss Dana White brushes off Democratic probe threats, recalls 'crazy 48 hours' around Trump job offer",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUyYe_-m6ZXVk7xXxXFavM7SV_pbbM26g7bMmfbYuHo-zmcCIuvLjh0kmAPU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ufc-chief-takes-white-house-223446707.html",
+          "title": "UFC chief declines Trump's White House job offer",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJz_ejRlx_7NAhUMhbm6zg4dJhIqdg5kQvVUczy8YltANcSukOTmFHDkiHQSw"
+        }
+      ]
+    },
+    {
+      "query": "snow storms",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T01:00:00Z",
+      "published_at": "2026-11-14T01:30:00Z",
       "related_news_urls": [
-        "https://virginiasports.com/news/2026/11/12/no-6-virginia-travels-to-maryland",
-        "https://umterps.com/news/2026/11/11/mens-basketball-long-time-rival-6-virginia-visits-xfinity-for-friday-night-hoops-clash",
-        "https://247sports.com/college/maryland/article/no-6-virginia-isnt-putting-much-stock-into-marylands-lopsided-loss-its-going-to-be-a-stiff-challenge-292599155/"
+        "https://www.nytimes.com/2026/11/12/weather/california-storm-west-coast-rain.html",
+        "https://www.sfchronicle.com/weather-forecast/article/live-storm-rain-snow-22527659.php",
+        "https://weather.com/2026/11/13/forecast/regional/series-of-storms-could-bring-50-foot-waves-heavy-rain-to-the-west"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3jWCUBM5jQCcphDQDGud8n3DSQ1_V9xJe2DWhc4trlb1exrWL5qrJ1R-7eCs",
-      "image_credit": "Virginia Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUbs9x7TYxJeINOef9MiCeSi6fBasyg-xlj6-g7ycHnr9k56kZPBLwbZzqrPE",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://virginiasports.com/news/2026/11/12/no-6-virginia-travels-to-maryland",
-          "title": "No. 6 Virginia Travels to Maryland",
-          "publisher": "Virginia Sports",
+          "url": "https://www.nytimes.com/2026/11/12/weather/california-storm-west-coast-rain.html",
+          "title": "California Could Face 50-Foot Waves as Storms Slam Its Coast",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3jWCUBM5jQCcphDQDGud8n3DSQ1_V9xJe2DWhc4trlb1exrWL5qrJ1R-7eCs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUbs9x7TYxJeINOef9MiCeSi6fBasyg-xlj6-g7ycHnr9k56kZPBLwbZzqrPE"
         },
         {
-          "url": "https://umterps.com/news/2026/11/11/mens-basketball-long-time-rival-6-virginia-visits-xfinity-for-friday-night-hoops-clash",
-          "title": "Long-Time Rival #6 Virginia Visits XFINITY For Friday Night Hoops Clash",
-          "publisher": "University of Maryland Athletics",
+          "url": "https://www.sfchronicle.com/weather-forecast/article/live-storm-rain-snow-22527659.php",
+          "title": "California’s first big storm has arrived. Here are latest forecast updates",
+          "publisher": "San Francisco Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr3-WuOt3bWtuurt4q7g2Y9e9ceW4jnvgAYygyB57YsiEQ_DF4L_xX9cj6KP8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRafj-6jwojO-MieJXwPztX4K3Qli-Cch2FbRZkzP8dHkMvsGgyTr3djc4YNc"
         },
         {
-          "url": "https://247sports.com/college/maryland/article/no-6-virginia-isnt-putting-much-stock-into-marylands-lopsided-loss-its-going-to-be-a-stiff-challenge-292599155/",
-          "title": "No. 6 Virginia isn't putting much stock into Maryland's lopsided loss: \"It's going to be a stiff challenge.\"",
-          "publisher": "247Sports",
+          "url": "https://weather.com/2026/11/13/forecast/regional/series-of-storms-could-bring-50-foot-waves-heavy-rain-to-the-west",
+          "title": "Storms to batter West Coast with waves, rain and Sierra snow",
+          "publisher": "The Weather Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxeSvc6VTGZ3zmNTh1R7UbSqEYmlVwR5QnmQ7T25KsGxsDQhuIHVGMsVkaXlQ"
-        }
-      ]
-    },
-    {
-      "query": "oklahoma state wrestling",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T01:00:00Z",
-      "related_news_urls": [
-        "https://www.ncaa.com/live-updates/wrestling-men/d1/no-2-oklahoma-state-vs-no-3-nebraska-wrestling-live-updates-score",
-        "https://huskers.com/news/2026/11/12/huskers-head-to-oklahoma-state-for-top-three-showdown",
-        "https://www.themat.com/news/2026/november/12/men-s-college-notebook-top-3-dual-in-stillwater-highlights-weekend-slate"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA2K2byflIsjnJsVHksIpxWvwoRjMBA05MiEw6kJ9gxAboxppt5EjxTyH63Wk",
-      "image_credit": "NCAA.com",
-      "news": [
-        {
-          "url": "https://www.ncaa.com/live-updates/wrestling-men/d1/no-2-oklahoma-state-vs-no-3-nebraska-wrestling-live-updates-score",
-          "title": "Live updates: No. 2 Oklahoma State vs. No. 3 Nebraska men's wrestling",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA2K2byflIsjnJsVHksIpxWvwoRjMBA05MiEw6kJ9gxAboxppt5EjxTyH63Wk"
-        },
-        {
-          "url": "https://huskers.com/news/2026/11/12/huskers-head-to-oklahoma-state-for-top-three-showdown",
-          "title": "Huskers Head to Oklahoma State for Top-Three Showdown - University of Nebraska - Official Athletics Website",
-          "publisher": "huskers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS26LRypYJeilTNttTGGk1bPLoWfWwUzdYwz032y4mTJt44UoT_q6dk_MWX8PI"
-        },
-        {
-          "url": "https://www.themat.com/news/2026/november/12/men-s-college-notebook-top-3-dual-in-stillwater-highlights-weekend-slate",
-          "title": "Men’s College Notebook: Top 3 Dual in Stillwater Highlights Weekend Slate",
-          "publisher": "USA Wrestling",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQssUcJopIc_B3SmWZjUUHztQt6qwcqH3VmDUyf4Q4fn57ia_ng-8jnPBRKi9c"
-        }
-      ]
-    },
-    {
-      "query": "peoria bomb threat",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T01:00:00Z",
-      "related_news_urls": [
-        "https://www.25newsnow.com/2026/11/14/much-downtown-peoria-shut-down-due-bomb-threat-biourja/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX5Ccfa47Y301kmEbYwGHTqAqVdH9DcHwvfjWvk3haHaIfEPUbLOzTkS4hMTU",
-      "image_credit": "WEEK | 25 News Now",
-      "news": [
-        {
-          "url": "https://www.25newsnow.com/2026/11/14/much-downtown-peoria-shut-down-due-bomb-threat-biourja/",
-          "title": "Much of Downtown Peoria shut down due to bomb threat at BioUrja",
-          "publisher": "WEEK | 25 News Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX5Ccfa47Y301kmEbYwGHTqAqVdH9DcHwvfjWvk3haHaIfEPUbLOzTkS4hMTU"
-        }
-      ]
-    },
-    {
-      "query": "andrew nembhard",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T01:00:00Z",
-      "related_news_urls": [
-        "https://www.squawka.com/ca/news/nba/pacers-vs-76ers-prediction-team-news/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDfOlv9XhGldP0LRcp-YHapkstcqi9XHteTYcInOquKs7j_FvyOpue65ejbeE",
-      "image_credit": "Squawka",
-      "news": [
-        {
-          "url": "https://www.squawka.com/ca/news/nba/pacers-vs-76ers-prediction-team-news/",
-          "title": "Pacers vs 76ers: Prediction, Team News and Andrew Nembhard Without Haliburton",
-          "publisher": "Squawka",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDfOlv9XhGldP0LRcp-YHapkstcqi9XHteTYcInOquKs7j_FvyOpue65ejbeE"
-        }
-      ]
-    },
-    {
-      "query": "avengers",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T01:00:00Z",
-      "related_news_urls": [
-        "https://www.empireonline.com/movies/news/avengers-doomsday-doctor-doom-worth-being-scared-of-exclusive/",
-        "https://www.yahoo.com/entertainment/movies/articles/marvel-now-given-doctor-doom-101828618.html",
-        "https://people.com/robert-downey-jr-opens-up-about-his-first-time-as-avengers-villain-12251314"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr_lC3E3KC8gH011Lb6BnDBVsbF78YjbPxrRBIzpXA2kk9_rSv5FZnQUP7Ys0",
-      "image_credit": "Empire",
-      "news": [
-        {
-          "url": "https://www.empireonline.com/movies/news/avengers-doomsday-doctor-doom-worth-being-scared-of-exclusive/",
-          "title": "Avengers: Doomsday Will Finally Deliver A Doctor Doom ‘Worth Being Scared Of’",
-          "publisher": "Empire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr_lC3E3KC8gH011Lb6BnDBVsbF78YjbPxrRBIzpXA2kk9_rSv5FZnQUP7Ys0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/marvel-now-given-doctor-doom-101828618.html",
-          "title": "Marvel has now given Doctor Doom the same number of appearances as Thanos in just over a year",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReLjpNEtulryvdxIxawf5Q6MMl7wpd8cjt-Adm-yooe-GAn6I9lScGmuTzaJU"
-        },
-        {
-          "url": "https://people.com/robert-downey-jr-opens-up-about-his-first-time-as-avengers-villain-12251314",
-          "title": "Robert Downey Jr. Reveals How He ‘Leaned In’ to Playing an Avengers Villain After Years as Iron Man",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8VvgDH4p4dNBDpNS8T_f0ZjlzOu8T2w--U_xqUcG6DZtJAdlv7juCppy4Av0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRALJWHEyVpo5NZ8ZGZosU7B1vLeNXj_wIrZF1ThCz0siiDFljzX8VOON-gRcI"
         }
       ]
     }
