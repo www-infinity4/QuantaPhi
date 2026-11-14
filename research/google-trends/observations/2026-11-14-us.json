@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T07:01:25.404173Z",
+  "checked_at": "2026-11-14T07:31:07.219018Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "dune",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T07:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/zendaya-timoth-e-chalamet-anya-223612948.html",
+        "https://www.bbc.com/news/articles/cqly4lnxn031o",
+        "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQYniHpPvV--5IfX24XSnpnNRmAsSwn-5x5FvR3UDMNEkCXYVSNrIxpbYRV6M",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/zendaya-timoth-e-chalamet-anya-223612948.html",
+          "title": "Zendaya, Timothée Chalamet and Anya Taylor-Joy Prank Interviewer During ‘Dune: Part 3’ Press",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQYniHpPvV--5IfX24XSnpnNRmAsSwn-5x5FvR3UDMNEkCXYVSNrIxpbYRV6M"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cqly4lnxn031o",
+          "title": "Timothée Chalamet and Zendaya prank Rylan Clark for Children in Need",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw"
+        },
+        {
+          "url": "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
+          "title": "‘Dune: Part Three’ Stars Set For Very Childish BBC Prank Tonight",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0T8xqwQ9OZ7ry6BuBIVAxH7ySt73sfoGrWYhPJ_yRZJO-5lZzuTot4CIwmt4"
+        }
+      ]
+    },
+    {
+      "query": "jennifer aniston",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T07:10:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/tv-biggest-salaries-zendaya-nicolas-cage-selena-gomez-more-1236945567/",
+        "https://www.thedailybeast.com/obsessed/trump-friendly-stars-revealed-as-highest-paid-actors-on-tv",
+        "https://www.imdb.com/fr-ca/news/ni66108342/?ref_=nm_nwr_2"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLs9LtxejfNApcfLIcaDFF7LGxsBDdalEDIVtJotuZkIuqXR6O0PQaM1OZoc",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/tv-biggest-salaries-zendaya-nicolas-cage-selena-gomez-more-1236945567/",
+          "title": "TV’s Biggest Salaries: Zendaya, Nicolas Cage, Selena Gomez and More Stars Earning Huge Paychecks",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLs9LtxejfNApcfLIcaDFF7LGxsBDdalEDIVtJotuZkIuqXR6O0PQaM1OZoc"
+        },
+        {
+          "url": "https://www.thedailybeast.com/obsessed/trump-friendly-stars-revealed-as-highest-paid-actors-on-tv",
+          "title": "Trump-Friendly Stars Revealed as Highest-Paid Actors on TV",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF0J1TwPPDpGgFiKsLR9HCBaK1ej_7bLQfA637ekjLkP8Nna54aDnQ6vzu2E4"
+        },
+        {
+          "url": "https://www.imdb.com/fr-ca/news/ni66108342/?ref_=nm_nwr_2",
+          "title": "Hollywood’s Biggest TV Paychecks Revealed, and Zendaya’s ‘Euphoria’ Deal Is Only the Start",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBRoKL_uTxOJvoL3TKBEIXDawBOi6H0luU5covol0jNHZ2Bj81MBT6rUtry7M"
+        }
+      ]
+    },
+    {
+      "query": "harrison ford",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T07:10:00Z",
+      "related_news_urls": [
+        "https://www.instyle.com/harrison-ford-wyoming-estate-details-12246846",
+        "https://www.admiddleeast.com/story/10-photos-of-harrison-ford-at-home",
+        "https://www.yahoo.com/entertainment/movies/box-office-results/articles/harrison-ford-2010-box-office-144500489.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxyR5Zb8fJKEu9dEznKqjrtXxHw6eTGSHJ7jIenvOcCSTx0zT3HiC4Vr0w-rA",
+      "image_credit": "InStyle",
+      "news": [
+        {
+          "url": "https://www.instyle.com/harrison-ford-wyoming-estate-details-12246846",
+          "title": "Inside Harrison Ford’s 800-Acre Wyoming Estate, Where He Enjoys ‘Normal’ Life",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxyR5Zb8fJKEu9dEznKqjrtXxHw6eTGSHJ7jIenvOcCSTx0zT3HiC4Vr0w-rA"
+        },
+        {
+          "url": "https://www.admiddleeast.com/story/10-photos-of-harrison-ford-at-home",
+          "title": "10 Photos of Harrison Ford, Hollywood Heartthrob, at Home",
+          "publisher": "AD Middle East",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsLHU8pqqePcAuIuUNBTztvthi6D4Bdtlgd1OUHvGPvR4Kaj4OmeqrW5bADpY"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/box-office-results/articles/harrison-ford-2010-box-office-144500489.html",
+          "title": "Harrison Ford’s 2010 Box Office Flop Becomes Streaming Hit After Its 16th Anniversary",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScWCWVgJYigDIbLBfz6DI28oVe_jEW9fbAAVyanp5mFIwTDX1MyWztRdOLD7s"
+        }
+      ]
+    },
+    {
+      "query": "chris duncan",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T07:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/drew-dober-vs-chris-duncan-031828756.html",
+        "https://www.centraloregondaily.com/sports/drew-dober-aims-to-test-chin-of-zombie-chris-duncan-at-ufc-334/article_ce9b80f7-9233-5e0c-ae9c-3d4b0da42dfa.html",
+        "https://sports.betmgm.com/en/blog/ufc/334-drew-dober-chris-duncan-predictions-odds-bm05/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFoSvMM5h_Cum_GMr10RzT-Io6SwPYsji5oB3qCa9QzoXxpio8TBFfIf5Mt8",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/drew-dober-vs-chris-duncan-031828756.html",
+          "title": "Drew Dober vs. Chris Duncan prediction, odds, pick for UFC 334",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFoSvMM5h_Cum_GMr10RzT-Io6SwPYsji5oB3qCa9QzoXxpio8TBFfIf5Mt8"
+        },
+        {
+          "url": "https://www.centraloregondaily.com/sports/drew-dober-aims-to-test-chin-of-zombie-chris-duncan-at-ufc-334/article_ce9b80f7-9233-5e0c-ae9c-3d4b0da42dfa.html",
+          "title": "Drew Dober aims to test chin of 'zombie' Chris Duncan at UFC 334",
+          "publisher": "Central Oregon Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8k8VnpEPjk_D-Rrug_F9S9S6BBKRHNblN7FH5VXZ70lC2VNqvAENK9TB8a3s"
+        },
+        {
+          "url": "https://sports.betmgm.com/en/blog/ufc/334-drew-dober-chris-duncan-predictions-odds-bm05/",
+          "title": "UFC 334: Drew Dober vs. Chris Duncan Predictions & Odds",
+          "publisher": "sports.betmgm.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaMmaQrViS9cEOPuTcOLlQ5FesWqvWE2s8kAOKaGOgAaGy9F15NCkzG8NJGcs"
+        }
+      ]
+    },
+    {
+      "query": "snow storm weather forecast california",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T06:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/12/weather/california-storm-west-coast-rain.html",
+        "https://www.kcra.com/article/sacramento-norcal-weekend-rain-and-snow-forecast/74428414",
+        "https://www.sfchronicle.com/weather-forecast/article/live-storm-rain-snow-22527659.php"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUbs9x7TYxJeINOef9MiCeSi6fBasyg-xlj6-g7ycHnr9k56kZPBLwbZzqrPE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/12/weather/california-storm-west-coast-rain.html",
+          "title": "California Could Face 50-Foot Waves as Storms Slam Its Coast",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUbs9x7TYxJeINOef9MiCeSi6fBasyg-xlj6-g7ycHnr9k56kZPBLwbZzqrPE"
+        },
+        {
+          "url": "https://www.kcra.com/article/sacramento-norcal-weekend-rain-and-snow-forecast/74428414",
+          "title": "One storm down, two to go: Here's what to expect this weekend in NorCal",
+          "publisher": "KCRA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA0MyYGrmvAszHo7EEKV2UdBow-ocvJ5L5tBNU-IEeNiViACjmaw_nIrPt5s8"
+        },
+        {
+          "url": "https://www.sfchronicle.com/weather-forecast/article/live-storm-rain-snow-22527659.php",
+          "title": "California’s first big storm has arrived. Here are latest forecast updates",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRafj-6jwojO-MieJXwPztX4K3Qli-Cch2FbRZkzP8dHkMvsGgyTr3djc4YNc"
+        }
+      ]
+    },
+    {
+      "query": "big 12 standings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T06:50:00Z",
+      "related_news_urls": [
+        "https://byucougars.com/news/2026/11/13/football-kickoff-moved-to-5-pm-womens-volleyball-and-womens-basketball-times-also-moved",
+        "https://www.kcentv.com/article/news/local/baylor-am-discuss-flying-following-faa-groundings/500-df60f526-5440-4ec4-aaa9-81c56c7370f1",
+        "https://www.orlandosentinel.com/2026/11/13/ucf-knights-big-12-football-arizona-state-sun-devils-faa-ground-stop/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtPxuYUqMUttRqqbUjAlW0NEdlvQ1rezxTy0I3nxlMRceA-20osrlIOSC6kkI",
+      "image_credit": "BYU Athletics",
+      "news": [
+        {
+          "url": "https://byucougars.com/news/2026/11/13/football-kickoff-moved-to-5-pm-womens-volleyball-and-womens-basketball-times-also-moved",
+          "title": "Football Kickoff Moved to 5 p.m., Women's Volleyball and Women's Basketball Times also Moved",
+          "publisher": "BYU Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtPxuYUqMUttRqqbUjAlW0NEdlvQ1rezxTy0I3nxlMRceA-20osrlIOSC6kkI"
+        },
+        {
+          "url": "https://www.kcentv.com/article/news/local/baylor-am-discuss-flying-following-faa-groundings/500-df60f526-5440-4ec4-aaa9-81c56c7370f1",
+          "title": "Baylor, A&M discuss Saturday games following FAA groundings",
+          "publisher": "KCENTV.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnjenqciu-U4MA9vO8sxKia6orKkqcXIQPaS9pKGJoXFoDov-XF6PRa7MhfI8"
+        },
+        {
+          "url": "https://www.orlandosentinel.com/2026/11/13/ucf-knights-big-12-football-arizona-state-sun-devils-faa-ground-stop/",
+          "title": "UCF-Arizona State kickoff pushed back to 5:30 p.m. due to travel issues",
+          "publisher": "Orlando Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJI8tmdR_dRnaE_8zytRQu2IHVvnTMcEoiJGWJlrcFeXJRffHOFemqN-2Ie3I"
+        }
+      ]
+    },
+    {
+      "query": "japan cyber attack",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T06:50:00Z",
+      "related_news_urls": [
+        "https://therecord.media/city-of-osaka-japan-email-data-breach",
+        "https://automaton-media.com/en/news/sega-reports-over-2-19-million-email-addresses-were-compromised-in-cyberattack-on-its-third-party-provider-sega-accounts-not-affected/",
+        "https://finance.biggo.com/news/ee52bd12-cad5-4f2a-b3c1-f433066dd75e"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9g4__VPanZRrbe8rdOTyz_aOjC5YoA1RwuS2BWil60ce-5LMbQ1uNjtzk6UU",
+      "image_credit": "The Record from Recorded Future News",
+      "news": [
+        {
+          "url": "https://therecord.media/city-of-osaka-japan-email-data-breach",
+          "title": "City of Osaka warns of data breach impacting 1 million as Japan reels from dozens of cyber incidents",
+          "publisher": "The Record from Recorded Future News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9g4__VPanZRrbe8rdOTyz_aOjC5YoA1RwuS2BWil60ce-5LMbQ1uNjtzk6UU"
+        },
+        {
+          "url": "https://automaton-media.com/en/news/sega-reports-over-2-19-million-email-addresses-were-compromised-in-cyberattack-on-its-third-party-provider-sega-accounts-not-affected/",
+          "title": "SEGA reports over 2.19 million email addresses were compromised in cyberattack on its third-party provider. SEGA Accounts not affected",
+          "publisher": "AUTOMATON",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ0BV4CxvFXal0elHrNN1Ira5oPMQsyzDJpay1TOYC3ucD-tU4SWb7p9lKjjk"
+        },
+        {
+          "url": "https://finance.biggo.com/news/ee52bd12-cad5-4f2a-b3c1-f433066dd75e",
+          "title": "Japan's Osaka City says about 1.08 million email addresses leaked in administrative system breach via unauthorized access to contractor Arara",
+          "publisher": "BigGo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQROFvEdZatB_VQblw_7dcUmpUz2r2nCLahuQc3vPvFnvs9N6GriQvkOIlDCb4"
+        }
+      ]
+    },
+    {
+      "query": "jonathan kreiss-tomkins",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T06:50:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins",
+        "https://www.cbsnews.com/news/alaska-governor-jkt-jonathan-kreiss-tomkins-election/",
+        "https://www.cnn.com/2026/11/12/politics/live-news/trump-congress"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP0wXVmhkzS6307zdGXcnm9pufMREmNTRDV3SyBPGAokL0mEBcLlF_G4oep7Q",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins",
+          "title": "Democrat Jonathan Kreiss-Tomkins wins race for Alaska governor, replaces a Republican",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP0wXVmhkzS6307zdGXcnm9pufMREmNTRDV3SyBPGAokL0mEBcLlF_G4oep7Q"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/alaska-governor-jkt-jonathan-kreiss-tomkins-election/",
+          "title": "Alaska elects Jonathan Kreiss-Tomkins, the first Democrat governor since 1998",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvMMxBrqgkbWN5dyZWz2Ummjc_M4RQGbUJFM3AB6vq4N25xpmNNepbU58Rj4Q"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/12/politics/live-news/trump-congress",
+          "title": "Democrats pick up win in Alaska governor’s race after midterms shellacking for GOP",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6aLTvO0j4q5YA724scAa-FYTwZYQp59GqPP1h_-XdFMslrYT4GIG7mJuiQyw"
+        }
+      ]
+    },
     {
       "query": "colorado football schedule",
       "approx_searches": "200+",
@@ -73,286 +353,6 @@
           "publisher": "UFC.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-WS2YhBoWOcr2J22GSVsuizcNx2XvkibhmL9kiBqs2Gx6Gt4VeH2i7c1b2RQ"
-        }
-      ]
-    },
-    {
-      "query": "christian langmo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T06:30:00Z",
-      "related_news_urls": [
-        "https://www.coinbase.com/predictions/event/KXITFWMATCH-26NOV13SAWWAT?marketTicker=KXITFWMATCH-26NOV13SAWWAT-WAT-KALSHI",
-        "https://www.coinbase.com/en-nl/predictions/event/KXCS2GAME-26NOV131700CHAMABAR",
-        "https://www.coinbase.com/en-gb/predictions/event/KXCS2GAME-26NOV130900MIXMAY"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUSiNasePOgTklvpOepJ_rapXMa2El0p1tUJ_Q6He8L4TDRPQ7f_Zrg9LGyws",
-      "image_credit": "Coinbase",
-      "news": [
-        {
-          "url": "https://www.coinbase.com/predictions/event/KXITFWMATCH-26NOV13SAWWAT?marketTicker=KXITFWMATCH-26NOV13SAWWAT-WAT-KALSHI",
-          "title": "Sawashiro vs Watson | Prediction Markets",
-          "publisher": "Coinbase",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUSiNasePOgTklvpOepJ_rapXMa2El0p1tUJ_Q6He8L4TDRPQ7f_Zrg9LGyws"
-        },
-        {
-          "url": "https://www.coinbase.com/en-nl/predictions/event/KXCS2GAME-26NOV131700CHAMABAR",
-          "title": "BORRACHEIROS vs. BARCA | Prediction Markets",
-          "publisher": "Coinbase",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIVKmd2BeVJIoSYly9XbGZjt4TNYwZ_8jMR3BDbNjOfRa9P8IyeMhmvD58-rA"
-        },
-        {
-          "url": "https://www.coinbase.com/en-gb/predictions/event/KXCS2GAME-26NOV130900MIXMAY",
-          "title": "mixLVLT vs. maybe | Prediction Markets",
-          "publisher": "Coinbase",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjlJgibVFbfgt3I35-Nme4J7pzDfx1dPyhrRTB7zXS8HZjXTWD_C0GNAzV0u4"
-        }
-      ]
-    },
-    {
-      "query": "caio borralho",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T06:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/caio-borralho-vs-yousri-belgaroui-032747879.html",
-        "https://www.mmafighting.com/ufc/520430/caio-borralho-reveals-conversation-with-alex-pereira-after-booking-ufc-334-fight-with-yousri-belgaroui",
-        "https://www.sherdog.com/news/news/How-Alex-Pereiras-striking-and-Glover-Teixeiras-wrestling-are-helping-Yousri-Belgaroui-203596"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlgllyZjd8apnKmHWNkjt-wXtxVK2_lAMno7LPBkvVhpF7897sP1RYx7bTt6o",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/caio-borralho-vs-yousri-belgaroui-032747879.html",
-          "title": "Caio Borralho vs. Yousri Belgaroui prediction, odds, pick for UFC 334",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlgllyZjd8apnKmHWNkjt-wXtxVK2_lAMno7LPBkvVhpF7897sP1RYx7bTt6o"
-        },
-        {
-          "url": "https://www.mmafighting.com/ufc/520430/caio-borralho-reveals-conversation-with-alex-pereira-after-booking-ufc-334-fight-with-yousri-belgaroui",
-          "title": "Caio Borralho reveals conversation he had with Alex Pereira after booking UFC 334 fight with Pereira teammate Yousri Belgaroui",
-          "publisher": "MMA Fighting",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY_1ovvORQbXN_3Oe5-cqYVoPIEOWV6043EaK_J7bOVjO_N_bO9qu_3PlsRtI"
-        },
-        {
-          "url": "https://www.sherdog.com/news/news/How-Alex-Pereiras-striking-and-Glover-Teixeiras-wrestling-are-helping-Yousri-Belgaroui-203596",
-          "title": "How Alex Pereira's striking and Glover Teixeira's wrestling are helping Yousri Belgaroui",
-          "publisher": "Sherdog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaZ4eV_ldTfRJKl4B7h7Ya_Cdj-GpdVzhq9HCKdqr8Mo3jy0a3gWwHyk-kvdE"
-        }
-      ]
-    },
-    {
-      "query": "portugal vs denmark",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T06:30:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/sports/2026/11/13/portugal-denmark-ronaldo-uefa-nations-league-predictions-teams",
-        "https://www.bbc.com/sport/football/live/cmgj9jnvxx2qt",
-        "https://www.uefa.com/uefanationsleague/news/02ab-220793bfb8a3-00d5842942af-1000--uefa-nations-league-matchday-5-preview-portugal-host-denmark/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUFGjHw6dfx1CvJzlPCq1FftIQLKwnZhC2A80XivGvRpYbNKVT_OGLjUpL_0w",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/sports/2026/11/13/portugal-denmark-ronaldo-uefa-nations-league-predictions-teams",
-          "title": "Portugal vs Denmark: UEFA Nations League – predictions, how to watch, teams",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUFGjHw6dfx1CvJzlPCq1FftIQLKwnZhC2A80XivGvRpYbNKVT_OGLjUpL_0w"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmgj9jnvxx2qt",
-          "title": "Portugal vs Denmark: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.uefa.com/uefanationsleague/news/02ab-220793bfb8a3-00d5842942af-1000--uefa-nations-league-matchday-5-preview-portugal-host-denmark/",
-          "title": "UEFA Nations League Matchday 5 preview: Portugal host Denmark, Norway welcome Wales in League A action",
-          "publisher": "UEFA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLStDjDKRBb237gA2rwmEapxhGzV5RSU-mV6o4TklERtAI6BlfuFo-rgUH7A"
-        }
-      ]
-    },
-    {
-      "query": "conner weigman",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T06:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/steelers-consider-overlooked-qb-prospect-190004994.html",
-        "https://www.si.com/college/houston/football/houston-quarterback-conner-weigman-is-raising-his-draft-stock-significantly",
-        "https://www.denverpost.com/2026/11/12/cu-buffs-houston-football-2026-tv-predictions/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMN4aD9vGE8XARbDE5U309hcTeH7uqdK7S1Z6AUgG2Ed12L80rS-NyUqMw03g",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/steelers-consider-overlooked-qb-prospect-190004994.html",
-          "title": "Steelers should consider overlooked QB prospect Conner Weigman",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMN4aD9vGE8XARbDE5U309hcTeH7uqdK7S1Z6AUgG2Ed12L80rS-NyUqMw03g"
-        },
-        {
-          "url": "https://www.si.com/college/houston/football/houston-quarterback-conner-weigman-is-raising-his-draft-stock-significantly",
-          "title": "Houston Quarterback Conner Weigman Is Raising His Draft Stock Significantly",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRf9YGGgSJ4HJ0B02ot_BTY3nCnxVMNTb9cfjyVyfs2bG8jviXJAdAt79J9Stc"
-        },
-        {
-          "url": "https://www.denverpost.com/2026/11/12/cu-buffs-houston-football-2026-tv-predictions/",
-          "title": "CU Buffs vs. Houston football: How to watch, keys to the game, odds, staff predictions",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xxEEWer-sLu7NV5VhFEn2kJ8Ux5oAj907JCngEQXzyF5YzJmaEJb5olEN3E"
-        }
-      ]
-    },
-    {
-      "query": "jim miller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T06:10:00Z",
-      "related_news_urls": [
-        "https://www.ufc.com/news/the-way-of-jim-miller-polymarket-ufc-334",
-        "https://sports.yahoo.com/articles/jim-miller-terrance-mckinney-very-004034915.html",
-        "https://www.mmafighting.com/ufc/520891/ufc-334-weigh-in-results-1-fighter-misses-weight-by-over-4-pounds-championship-bouts-set"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbHB7LSiXFv9Januut7Mu9Yi4sRF7yaFv-YZrsgkKPg1SmlJBBFBzN8yO3zI8",
-      "image_credit": "UFC.com",
-      "news": [
-        {
-          "url": "https://www.ufc.com/news/the-way-of-jim-miller-polymarket-ufc-334",
-          "title": "The Tao of Jim Miller",
-          "publisher": "UFC.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbHB7LSiXFv9Januut7Mu9Yi4sRF7yaFv-YZrsgkKPg1SmlJBBFBzN8yO3zI8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jim-miller-terrance-mckinney-very-004034915.html",
-          "title": "Jim Miller: Terrance McKinney 'very dangerous, but he fades a little bit'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSruQBssxQzJ9Aw0S3fZg9aTYoioTTa_2OQ4DKGTRqRr1hfFao3zr2nm5WDYQw"
-        },
-        {
-          "url": "https://www.mmafighting.com/ufc/520891/ufc-334-weigh-in-results-1-fighter-misses-weight-by-over-4-pounds-championship-bouts-set",
-          "title": "UFC 334 weigh-in results: 1 fighter misses weight by over 4 pounds, championship bouts set",
-          "publisher": "MMA Fighting",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9YiHwN9EYwqEH7Pi2tx-nJEONM9FKItCFZ4PsnZj71pV6Y5ZV6nho6FCnYU"
-        }
-      ]
-    },
-    {
-      "query": "cif football playoffs 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T06:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/17-scoreboard-2026-cif-central-022031655.html",
-        "https://www.fresnobee.com/sports/high-school/prep-football/article318052675.html",
-        "https://www.bakersfield.com/sports/cif-central-section-football-playoff-scores-nov-13-schedule/article_dac2af60-4423-4848-a3b7-15c40a171dc7.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvLRKVZjyIw8iIsXyWlU_8ICuwFjK2skXW5vG4pdOWT7fx4SYMk-iit2n2RGg",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/17-scoreboard-2026-cif-central-022031655.html",
-          "title": "17 Scoreboard: 2026 CIF Central Section Playoffs semifinal, quarterfinal scores",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvLRKVZjyIw8iIsXyWlU_8ICuwFjK2skXW5vG4pdOWT7fx4SYMk-iit2n2RGg"
-        },
-        {
-          "url": "https://www.fresnobee.com/sports/high-school/prep-football/article318052675.html",
-          "title": "High school football playoffs quarters/semis predictions: Upset in Division I-AA?",
-          "publisher": "Fresno Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrug6IoYasXjjVVMZ5ueHfNk4Vpc4RrkFTdge6OLHQQY7ndXWd6b3-fgejtSs"
-        },
-        {
-          "url": "https://www.bakersfield.com/sports/cif-central-section-football-playoff-scores-nov-13-schedule/article_dac2af60-4423-4848-a3b7-15c40a171dc7.html",
-          "title": "CIF Central Section football playoff scores, Nov. 13 schedule",
-          "publisher": "The Bakersfield Californian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdEHdX-2wbKMSIPBMczvJNL3nAvsdbyB_RBwh3RSHwLWEtPRwRixQzc67nUg4"
-        }
-      ]
-    },
-    {
-      "query": "tahiti vs cook islands",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T06:00:00Z",
-      "related_news_urls": [
-        "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
-        "https://finance.yahoo.com/markets/crypto/articles/sell-hold-xrp-25-drop-161733563.html",
-        "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY",
-      "image_credit": "TradingView",
-      "news": [
-        {
-          "url": "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
-          "title": "XRP Drops 26% in a Month: Could $0.60 Be Next?",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/crypto/articles/sell-hold-xrp-25-drop-161733563.html",
-          "title": "Should You Sell or Hold XRP After a 25% Drop in a Month? We Asked 3 AI Models",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS84taffqWI8UmSgTeVG5Wly0MwwVFrLHmUT87sjRIK6vOpvC4H5RqxPT7BqEA"
-        },
-        {
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/",
-          "title": "Could XRP Be the Next Bitcoin?",
-          "publisher": "24/7 Wall St.",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzjt61fA6zVKufhhsUKErmSTNmOxa5_OpGSVMS0ZwuBmZTtnJkMb-mcfozGMc"
-        }
-      ]
-    },
-    {
-      "query": "daniel radcliffe",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T06:00:00Z",
-      "related_news_urls": [
-        "https://apnews.com/video/radcliffe-holds-back-on-advice-for-new-harry-potter-f70d964fc5b445b4a5e0b927975be4c4",
-        "https://deadline.com/2026/11/daniel-radcliffe-unsure-watch-hbo-harry-potter-series-1237217464/",
-        "https://www.vulture.com/article/daniel-radcliffe-on-the-harry-potter-reboot.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyl31dJaTpx8yHcuEGIxSZ9mFb5-aVBL7i6tg8JAkZOSEiQgoOUEVGBTJeZ9Q",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/video/radcliffe-holds-back-on-advice-for-new-harry-potter-f70d964fc5b445b4a5e0b927975be4c4",
-          "title": "Radcliffe holds back on advice for new Harry Potter",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyl31dJaTpx8yHcuEGIxSZ9mFb5-aVBL7i6tg8JAkZOSEiQgoOUEVGBTJeZ9Q"
-        },
-        {
-          "url": "https://deadline.com/2026/11/daniel-radcliffe-unsure-watch-hbo-harry-potter-series-1237217464/",
-          "title": "Daniel Radcliffe Unsure If He’ll Watch HBO’s ‘Harry Potter’ Series: “Eight Hours Is A Lot Of Anything”",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwl1Sch-VA9GyqOj3fnyu9vzjarZJFhWALpgSMfrqrvuw42aMWAe7RPciBNXM"
-        },
-        {
-          "url": "https://www.vulture.com/article/daniel-radcliffe-on-the-harry-potter-reboot.html",
-          "title": "The Boy Who Is Staying Out of It",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TgkKWh4_IDHIOMPaqgKbyCsBqA9yOV_x2Tvw1qsMJml9IyHZ8NnnQqsM_kQ"
         }
       ]
     }
