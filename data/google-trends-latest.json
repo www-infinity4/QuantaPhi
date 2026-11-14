@@ -3,340 +3,330 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T20:31:06.368122Z",
+  "checked_at": "2026-11-14T21:01:28.835494Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "millonarios - alianza",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T20:10:00Z",
+      "query": "lsu vs gonzaga",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T20:40:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17511509/millonarios-vs-alianza-fecha-19-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-        "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-se-juega-el-semestre-y-la-clasificacion-contra-alianza-valledupar-90-minutos-de-tension-3601044",
-        "https://caracol.com.co/2026/11/12/millonarios-confirmo-la-lesion-de-daniel-ruiz-este-seria-el-tiempo-que-estaria-de-baja/"
+        "https://lsusports.net/news/2026/11/13/tiger-basketball-team-takes-on-no-14-gonzaga-in-spokane-saturday",
+        "https://www.slipperstillfits.com/gonzaga-mens-basketball/31327/game-preview-zags-to-face-captivating-lsu-at-spokane-arena",
+        "https://www.freep.com/story/sports/ncaab/2026/11/14/lsu-at-gonzaga-odds-picks-and-predictions/92772232007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRojYCsn1tDgdFW2tNz-4bcWFVJZFyLFXOPvXfmSpmp5oNg-Hh04xQk7xZ-Y2w",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwcBDwbadi9k4GfofUbD_G4hatn_nEq5eFiwtvCv_Ezrccz6QY6t5bAWVgZXI",
+      "image_credit": "LSUsports.net",
+      "news": [
+        {
+          "url": "https://lsusports.net/news/2026/11/13/tiger-basketball-team-takes-on-no-14-gonzaga-in-spokane-saturday",
+          "title": "Tiger Basketball Team Takes On No. 14 Gonzaga In Spokane Saturday",
+          "publisher": "LSUsports.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwcBDwbadi9k4GfofUbD_G4hatn_nEq5eFiwtvCv_Ezrccz6QY6t5bAWVgZXI"
+        },
+        {
+          "url": "https://www.slipperstillfits.com/gonzaga-mens-basketball/31327/game-preview-zags-to-face-captivating-lsu-at-spokane-arena",
+          "title": "Game Preview: Zags to face captivating LSU at Spokane Arena",
+          "publisher": "The Slipper Still Fits",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBHkUzSu69mt709ICcb6q4iilaUmSZ8lRXZe8mbUvdcaY1_4WoVbxkt8qWMeE"
+        },
+        {
+          "url": "https://www.freep.com/story/sports/ncaab/2026/11/14/lsu-at-gonzaga-odds-picks-and-predictions/92772232007/",
+          "title": "LSU Tigers at Gonzaga Bulldogs odds, picks and predictions",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdizyvF1pwvlVoPpAdRsYZu2iv7HvKc8LoFAIhWgYLtDdhofWWi6iWssgWScs"
+        }
+      ]
+    },
+    {
+      "query": "big 10 standings",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T20:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-11-college-football-playoff/",
+        "https://www.si.com/college/nebraska/football/where-football-polls-and-metrics-have-nebraska-placed-going-into-week-11",
+        "https://www.elevenwarriors.com/the-big-ten/2026/11/165372/big-ten-power-rankings-ucla-indiana-and-oregon-on-top-entering-fourth-quarter-of-regular-season"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQioctg15K5938y1sbcAVXj_JQ5t9PdRtB1yCqkcivGqWuEF1ztc0CuVJI3ULs",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-11-college-football-playoff/",
+          "title": "Big Ten Power Rankings, Week 11: League in a precarious College Football Playoff position",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQioctg15K5938y1sbcAVXj_JQ5t9PdRtB1yCqkcivGqWuEF1ztc0CuVJI3ULs"
+        },
+        {
+          "url": "https://www.si.com/college/nebraska/football/where-football-polls-and-metrics-have-nebraska-placed-going-into-week-11",
+          "title": "Where Football Polls and Metrics Have Nebraska Placed Going Into Week 11",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN6LGSsyNsWrBFnbQ9Kbvxl_XS0_D0rbUZWV-6FWjO7oybXlWSUqB64f74x_E"
+        },
+        {
+          "url": "https://www.elevenwarriors.com/the-big-ten/2026/11/165372/big-ten-power-rankings-ucla-indiana-and-oregon-on-top-entering-fourth-quarter-of-regular-season",
+          "title": "Big Ten Power Rankings: UCLA, Indiana and Oregon On Top Entering Fourth Quarter of Regular Season",
+          "publisher": "Eleven Warriors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH0lUyQkvbdQ5Vw6sHlAslc-tX2NHHArhA-DFRI6ECon6OfEqUEvH6YNqLV14"
+        }
+      ]
+    },
+    {
+      "query": "tulane vs rice",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T20:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/3-keys-victory-tulane-vs-130006573.html",
+        "https://www.fox8live.com/2026/11/14/tulane-football-travel-plans-houston-altered-due-nationwide-ground-stop/",
+        "https://riceowls.com/news/2026/11/13/football-homecoming-start-moved-back-to-3-30"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiNUtgINAc7UBIZ5SgvMlo6kVLpylbzuPmqa0Dq4AEM0Ailo1gyRHq4e2aV74",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/3-keys-victory-tulane-vs-130006573.html",
+          "title": "3 Keys to Victory: Tulane vs. Rice",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiNUtgINAc7UBIZ5SgvMlo6kVLpylbzuPmqa0Dq4AEM0Ailo1gyRHq4e2aV74"
+        },
+        {
+          "url": "https://www.fox8live.com/2026/11/14/tulane-football-travel-plans-houston-altered-due-nationwide-ground-stop/",
+          "title": "Tulane Football travel plans to Houston altered due to nationwide ground stop",
+          "publisher": "FOX 8 Local First",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1pxqBPgQbhvo2RieWgZlgsfDFZFP8vQDH6X4ksC_obz5L2pRe7a6c-3or1M"
+        },
+        {
+          "url": "https://riceowls.com/news/2026/11/13/football-homecoming-start-moved-back-to-3-30",
+          "title": "Homecoming Start Moved Back to 3:30",
+          "publisher": "Rice University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDymm9wW-ykLa8Y_2SvZ4jB5evdQBqh4Gw4zqjbs3DY_70CTLR6xcjPvg-XKE"
+        }
+      ]
+    },
+    {
+      "query": "haití - estados unidos",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-14T20:40:00Z",
+      "related_news_urls": [
+        "https://es.concacaf.com/competitions/nations-league/news/haiti-vs-estados-unidos-y-jamaica-vs-mexico-encabezan-doble-jornada-de-cuartos-de-final-de-la-liga-de-naciones",
+        "https://www.telemundo.com/deportes/us-soccer/video/antonee-robinson-quiere-ser-un-ejemplo-para-las-nuevas-generaciones-del-usmnt-tmvo13244435",
+        "https://www.si.com/es-us/como-ver-el-haiti-vs-estados-unidos-en-tv-y-streaming-14-11-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKUmjWVj5DmITylYvP1z20jAHtdwhuKQ1_d-G0t-_tsy1DhyzLfk_T9WmyZ2I",
+      "image_credit": "Concacaf | Official Website",
+      "news": [
+        {
+          "url": "https://es.concacaf.com/competitions/nations-league/news/haiti-vs-estados-unidos-y-jamaica-vs-mexico-encabezan-doble-jornada-de-cuartos-de-final-de-la-liga-de-naciones",
+          "title": "Haití vs. Estados Unidos y Jamaica vs. México encabezan doble jornada de Cuartos de Final de la Liga de Naciones",
+          "publisher": "Concacaf | Official Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKUmjWVj5DmITylYvP1z20jAHtdwhuKQ1_d-G0t-_tsy1DhyzLfk_T9WmyZ2I"
+        },
+        {
+          "url": "https://www.telemundo.com/deportes/us-soccer/video/antonee-robinson-quiere-ser-un-ejemplo-para-las-nuevas-generaciones-del-usmnt-tmvo13244435",
+          "title": "Antonee Robinson quiere ser un ejemplo para las nuevas generaciones del USMNT",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQl_3vP0VCDzbdEaiSpsZtvt-TKqmGC7VfHx96gJproTXG97ve_XX__d2bpmzw"
+        },
+        {
+          "url": "https://www.si.com/es-us/como-ver-el-haiti-vs-estados-unidos-en-tv-y-streaming-14-11-2026",
+          "title": "¿Cómo ver el Haití vs Estados Unidos en TV y streaming?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnAgYTBE4bE5zCpUpv_GDfmIht6MMbO3s9YaUEYOe2Th9_Wvt_TOdpDDu77BU"
+        }
+      ]
+    },
+    {
+      "query": "luke fickell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T20:40:00Z",
+      "related_news_urls": [
+        "https://badgerofhonor.com/luke-fickell-has-to-fire-jeff-grimes-and-the-maryland-loss-revealed-it-clearly",
+        "https://badgerextra.com/commentary/columns/polzin/polzin-how-3-sisters-and-tough-love-prepared-ryan-hopkins-for-wisconsin-s-spotlight/article_99be1aca-0dae-4418-a917-4743cc38a5f0.html",
+        "https://www.jsonline.com/story/sports/college/uw/2026/11/12/ryan-hopkins-embraces-challenge-of-being-wisconsin-badgers-quarterback/92739779007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7J68RdiuDGxeiMCJJTFGhBEim1G42_TTpoi7OIdi7hifw_wcJQOmBr-qeCmg",
+      "image_credit": "Badger of Honor",
+      "news": [
+        {
+          "url": "https://badgerofhonor.com/luke-fickell-has-to-fire-jeff-grimes-and-the-maryland-loss-revealed-it-clearly",
+          "title": "Luke Fickell has to fire Jeff Grimes and the Maryland loss revealed it clearly",
+          "publisher": "Badger of Honor",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7J68RdiuDGxeiMCJJTFGhBEim1G42_TTpoi7OIdi7hifw_wcJQOmBr-qeCmg"
+        },
+        {
+          "url": "https://badgerextra.com/commentary/columns/polzin/polzin-how-3-sisters-and-tough-love-prepared-ryan-hopkins-for-wisconsin-s-spotlight/article_99be1aca-0dae-4418-a917-4743cc38a5f0.html",
+          "title": "Polzin: The making of Ryan Hopkins includes three sisters, tough love and a Wisconsin breakthrough",
+          "publisher": "BadgerExtra",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREVE_MOsy9JxTObEUrYOJh_mkjNrZmtqzypTLA0QVtI91HyIc71PLq2KPDuaA"
+        },
+        {
+          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/12/ryan-hopkins-embraces-challenge-of-being-wisconsin-badgers-quarterback/92739779007/",
+          "title": "Ryan Hopkins embraces challenge of being Wisconsin's quarterback",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOdYqigrXgKIk7HQZdM-EQX-EcRycJYr1gL-kN9Qd4E_uR1s8AZLKN1SSwAs"
+        }
+      ]
+    },
+    {
+      "query": "byu vs baylor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T20:40:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/stories/college-football/how-to-watch-baylor-vs-byu-tv-channel-live-stream-time-nov-14-2026",
+        "https://byucougars.com/news/2026/11/09/byu-football-game-week-2026-baylor",
+        "https://www.deseret.com/sports/2026/11/13/byu-football-baylor-bears-cougars-must-win-tiebreakers-big-12-provo/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNfuvHtm4XFQbzSNlQBigjD0i53KDPhgmHJeF4rJiUvsRixybyAcTwV06cf3I",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/stories/college-football/how-to-watch-baylor-vs-byu-tv-channel-live-stream-time-nov-14-2026",
+          "title": "How to Watch Baylor vs. BYU: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNfuvHtm4XFQbzSNlQBigjD0i53KDPhgmHJeF4rJiUvsRixybyAcTwV06cf3I"
+        },
+        {
+          "url": "https://byucougars.com/news/2026/11/09/byu-football-game-week-2026-baylor",
+          "title": "BYU Football Game Week 2026 — Baylor",
+          "publisher": "BYU Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ31riP01vudtU8XxN0L0EF-sA8xYxKlcS-nRSzfmT2DhSpcGTD42020ge7EHQ"
+        },
+        {
+          "url": "https://www.deseret.com/sports/2026/11/13/byu-football-baylor-bears-cougars-must-win-tiebreakers-big-12-provo/",
+          "title": "BYU vs. Baylor: Is predicted rainy weather a bad sign for Bear?",
+          "publisher": "Deseret News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMovN3ha68B3PmwlWqwkvhNIyQPsRtp3smLf6TPK0AEy8r8Vm3AbavYFoE_zs"
+        }
+      ]
+    },
+    {
+      "query": "jason eck",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T20:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "jessica pegula",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T20:30:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/news/4609170/follow-live-a-semifinal-saturday-you-wont-want-to-miss-at-the-fage-wta-finals",
+        "https://www.nytimes.com/athletic/7750694/2026/11/13/wta-finals-2026-draw-prize-money-format-schedule/",
+        "https://tennisnow.com/wta-finals-championship-matches-will-simulcast-for-free-on-tennis-channel-2-on-sunday-november-15th/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSso4yiMBPlun0qZvjy80Xo_Al_n9BVSoHpu5LQ76-OOsmE4fe9xOK1cws15tA",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/news/4609170/follow-live-a-semifinal-saturday-you-wont-want-to-miss-at-the-fage-wta-finals",
+          "title": "Follow live: A semifinal Saturday you won’t want to miss at the FAGE WTA Finals",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSso4yiMBPlun0qZvjy80Xo_Al_n9BVSoHpu5LQ76-OOsmE4fe9xOK1cws15tA"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7750694/2026/11/13/wta-finals-2026-draw-prize-money-format-schedule/",
+          "title": "WTA Finals 2026: Singles semifinals set after Elina Svitolina shocks Aryna Sabalenka - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0IqHtgcEZDTsPM29rkQ8pa7NBVLYHhSfxwH_eLRqAKH43izYAUP8DGCqCC0E"
+        },
+        {
+          "url": "https://tennisnow.com/wta-finals-championship-matches-will-simulcast-for-free-on-tennis-channel-2-on-sunday-november-15th/",
+          "title": "WTA Finals Championship Matches Will Simulcast for Free on Tennis Channel 2 on Sunday, November 15th",
+          "publisher": "Tennis Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_4i5PZi3ttsRL7C8ow5OROcBpkmuRqN97sSk3bUhY2xCGmG7xQKN8MvBkABw"
+        }
+      ]
+    },
+    {
+      "query": "heisman odds",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T20:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50433120/heisman-race-week-10-cj-carr",
+        "https://www.si.com/college-football/heisman-rankings-after-week-10-julian-sayin-malachi-toney-injuries-have-thrown-race-wide-open",
+        "https://www.nytimes.com/athletic/7768872/2026/11/10/heisman-trophy-candidates-race-cj-carr-jeremiah-smith/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2eRIncimPlUNfa0IPJPF8WPqz0kvpZ69A5yS6Npxt3ffc_6sEfe1E4yRjxhQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50433120/heisman-race-week-10-cj-carr",
+          "title": "Heisman race after Week 10 - CJ Carr, new contenders emerge",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2eRIncimPlUNfa0IPJPF8WPqz0kvpZ69A5yS6Npxt3ffc_6sEfe1E4yRjxhQ"
+        },
+        {
+          "url": "https://www.si.com/college-football/heisman-rankings-after-week-10-julian-sayin-malachi-toney-injuries-have-thrown-race-wide-open",
+          "title": "Heisman Rankings After Week 10: Julian Sayin, Malachi Toney Injuries Have Thrown Race Wide Open",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStPEVjuPwr5droPTKDL-ArkSD2eO8FtZWUGSCluafNcYgubWjKzM5iyLecp18"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7768872/2026/11/10/heisman-trophy-candidates-race-cj-carr-jeremiah-smith/",
+          "title": "Who’s winning the Heisman Trophy? Jeremiah Smith, CJ Carr lead 9 contenders after Week 10",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIE3q-lrNwmmRMy67nle9SSpTPZ5DQNuIGRyHtx4OeCcPVvE2EXOH4bDQmyrw"
+        }
+      ]
+    },
+    {
+      "query": "atlético nacional - once caldas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T20:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17513175/nacional-vs-once-caldas-fecha-19-liga-betplay-lucas-20-convocados-gran-noticia-james-rodriguez",
+        "https://www.elcolombiano.com/deportes/futbol/donde-ver-nacional-vs-once-caldas-en-vivo-previa-liga-betplay-CK43587885",
+        "https://www.facebook.com/lapatria.manizales/videos/no-se-pierda-la-transmisi%C3%B3n-en-vivo-del-juego-entre-atl%C3%A9tico-nacional-y-once-cal/1942685963807069/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTWLdvRWak2BVDD82Z38xBmZ6ZDrypXanIFnSI3ZWkGjzY5HTg9rNKj1mVlAY",
       "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17511509/millonarios-vs-alianza-fecha-19-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-          "title": "Cuándo juegan Millonarios vs Alianza por fecha 19 de Liga BetPlay: equipo, fecha, hora y TV en vivo",
+          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17513175/nacional-vs-once-caldas-fecha-19-liga-betplay-lucas-20-convocados-gran-noticia-james-rodriguez",
+          "title": "Nacional vs. Once Caldas: Lucas confirma 20 convocados con una gran noticia",
           "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRojYCsn1tDgdFW2tNz-4bcWFVJZFyLFXOPvXfmSpmp5oNg-Hh04xQk7xZ-Y2w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTWLdvRWak2BVDD82Z38xBmZ6ZDrypXanIFnSI3ZWkGjzY5HTg9rNKj1mVlAY"
         },
         {
-          "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-se-juega-el-semestre-y-la-clasificacion-contra-alianza-valledupar-90-minutos-de-tension-3601044",
-          "title": "Millonarios se juega el semestre y la clasificación contra Alianza Valledupar: 90 minutos de tensión",
-          "publisher": "El Tiempo",
+          "url": "https://www.elcolombiano.com/deportes/futbol/donde-ver-nacional-vs-once-caldas-en-vivo-previa-liga-betplay-CK43587885",
+          "title": "Nacional tiene los puntos, pero debe recuperar el juego ante Once Caldas: ¿a qué horas y dónde verlo? | El Colombiano",
+          "publisher": "El Colombiano",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjzlr10ubLj5s6HlAXJG2py88t_gpvZPd1yhTkj38_lG4loxt4ZsI1dI0Kh6Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0T80gCwZzpEz37vFDCc87nWqVxgb9OmgMzSE0rWAKgiP2KD5fMBZCI_GoI8Q"
         },
         {
-          "url": "https://caracol.com.co/2026/11/12/millonarios-confirmo-la-lesion-de-daniel-ruiz-este-seria-el-tiempo-que-estaria-de-baja/",
-          "title": "Millonarios confirmó la lesión de Daniel Ruiz: este sería el tiempo que estaría de baja",
-          "publisher": "Caracol Radio",
+          "url": "https://www.facebook.com/lapatria.manizales/videos/no-se-pierda-la-transmisi%C3%B3n-en-vivo-del-juego-entre-atl%C3%A9tico-nacional-y-once-cal/1942685963807069/",
+          "title": "La Patria Manizales. . #AlAire ⚽ Atlético Nacional vs Once Caldas | Fecha 19 - Liga BetPlay 2026 II",
+          "publisher": "Facebook",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjTZJ8DT18J6YD5bpdiyw-43rVEhNyvbgQY8wca5OLakmGcwsqi65CpzeVU6k"
-        }
-      ]
-    },
-    {
-      "query": "deportivo cali - tolima",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T20:00:00Z",
-      "related_news_urls": [
-        "https://hsbnoticias.com/noticias/luis-fernando-suarez-y-su-partido-contra-el-deportivo-cali-por-la-ultima-fecha",
-        "https://eldeportivo.com.co/futbol-colombiano/deportes-tolima/deportes-tolima-definio-sus-convocados-para-el-duelo-ante-el-cali/",
-        "https://www.winsports.co/futbol-colombiano/noticias/en-vivo-deportivo-cali-vs-tolima-fecha-19-liga-betplay-478664"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaCQQ-CYAKKK3xtjJ_XFQhKCe80hA0bKMF5MvdfRgDRdOgp2agPBDBmyENa_o",
-      "image_credit": "HSB Noticias",
-      "news": [
-        {
-          "url": "https://hsbnoticias.com/noticias/luis-fernando-suarez-y-su-partido-contra-el-deportivo-cali-por-la-ultima-fecha",
-          "title": "Luis Fernando Suárez y su partido contra el deportivo Cali por la última fecha",
-          "publisher": "HSB Noticias",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaCQQ-CYAKKK3xtjJ_XFQhKCe80hA0bKMF5MvdfRgDRdOgp2agPBDBmyENa_o"
-        },
-        {
-          "url": "https://eldeportivo.com.co/futbol-colombiano/deportes-tolima/deportes-tolima-definio-sus-convocados-para-el-duelo-ante-el-cali/",
-          "title": "Deportes Tolima definió sus convocados para el duelo ante el Deportivo Cali",
-          "publisher": "El Deportivo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzwijber5w-YKbHiV7KrT_-gq8NmUUGriQ9PvXZ-lhaJKlCKALvqiu9j2xG2Q"
-        },
-        {
-          "url": "https://www.winsports.co/futbol-colombiano/noticias/en-vivo-deportivo-cali-vs-tolima-fecha-19-liga-betplay-478664",
-          "title": "🔴 EN VIVO: Deportivo Cali vs. Tolima - (Fecha 19 Liga BetPlay)",
-          "publisher": "Win Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL1M4aqdiDgZ8j0bUCJs1oP8bU-gvpfzbSFZchggLIFuBqvH4fSmSz94cTkww"
-        }
-      ]
-    },
-    {
-      "query": "legend bey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T19:50:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/ohio-state/article/ohio-state-buckeyes-football-coach-ryan-day-midweek-update-northwestern-wildcats-292581506/",
-        "https://www.dispatch.com/story/opinion/letters/2026/11/11/ohio-state-ryan-day-luke-fickell-oregon/92709346007/",
-        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165371/ryan-day-radio-show-ryan-day-says-ohio-state-is-focused-on-winning-its-final-three-games-especially-the-rivalry"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLTN8fb1_pqHY2LHLrsRouPRunYNKx5v8hq81wsjuo7DSrTAs2n9Tx5fg6nsQ",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/ohio-state/article/ohio-state-buckeyes-football-coach-ryan-day-midweek-update-northwestern-wildcats-292581506/",
-          "title": "Wednes(Day): Ohio State coach on Legend Bey, O-line inconsistency, stretch run plan",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLTN8fb1_pqHY2LHLrsRouPRunYNKx5v8hq81wsjuo7DSrTAs2n9Tx5fg6nsQ"
-        },
-        {
-          "url": "https://www.dispatch.com/story/opinion/letters/2026/11/11/ohio-state-ryan-day-luke-fickell-oregon/92709346007/",
-          "title": "OSU's Ryan Day deserves the Luke Fickell treatment. We'll get someone better | Letters",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYmiag_AflWOnzKr51BIki67MakYLpumMb1PgZFYU6kZrBbmk_hZgvSaVbr9E"
-        },
-        {
-          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165371/ryan-day-radio-show-ryan-day-says-ohio-state-is-focused-on-winning-its-final-three-games-especially-the-rivalry",
-          "title": "Ryan Day Radio Show: Ryan Day Says Ohio State is Focused on Winning Its Final Three Games, Especially the Rivalry Game, Before Thinking About What Comes Next",
-          "publisher": "Eleven Warriors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-cKZtqtG-xQAGkBfqsoBAFrXoTQYbjW_s7GiQ739IbbUuVI4u_hPIIS1JSAU"
-        }
-      ]
-    },
-    {
-      "query": "godzilla minus zero week 2 sales",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T19:50:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66109254/?ref_=ttnw_art_perm",
-        "https://apnews.com/article/godzilla-japan-director-film-yamazaki-064e16f50f6877826d52b9f06a18e27f",
-        "https://www.yahoo.com/entertainment/movies/articles/28-trivia-nuggets-godzilla-since-140000152.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ513Pk893U2ag_My4qxAFqYcTghuGKGYHzMOQYBM_-qgkIGjVrfsDIwGsEywM",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66109254/?ref_=ttnw_art_perm",
-          "title": "'Godzilla Minus Zero' Exposes the Biggest Problem with Christopher Nolan's World War II Epic",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ513Pk893U2ag_My4qxAFqYcTghuGKGYHzMOQYBM_-qgkIGjVrfsDIwGsEywM"
-        },
-        {
-          "url": "https://apnews.com/article/godzilla-japan-director-film-yamazaki-064e16f50f6877826d52b9f06a18e27f",
-          "title": "Godzilla returns in special-effects glory in the latest movie with an anti-war message",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24_YKLweC6otr9VFiGIWcCEM0Zp0HeVhoCjSq9V3PqRXtpchs0o2S1PD9KfE"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/28-trivia-nuggets-godzilla-since-140000152.html",
-          "title": "28 Trivia Nuggets About Godzilla Since 'Godzilla Minus Zero' Is Out There Stomping Box Office Records",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyM4VIbn1WsH8BBQLZ86XzL1tUrZqANzzsJUfYTVm0JMI5xBf6SMDXheNJe5Y"
-        }
-      ]
-    },
-    {
-      "query": "jets vs blackhawks",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T19:40:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/winnipeg-jets-chicago-blackahwks-game-preview-november-14-2026",
-        "https://sports.yahoo.com/articles/line-combinations-jets-vs-blackhawks-154444175.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/winnipeg-jets-vs-chicago-blackhawks-prediction-odds-2026-11-14/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/winnipeg-jets-chicago-blackahwks-game-preview-november-14-2026",
-          "title": "Jets at Blackhawks projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/line-combinations-jets-vs-blackhawks-154444175.html",
-          "title": "Line Combinations: Jets vs. Blackhawks",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtk00alOISpJ33IuHlRVhTjvfGTCiYMQhmwYrvJShNV7BN9NNFIeHNR1yjsHo"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/winnipeg-jets-vs-chicago-blackhawks-prediction-odds-2026-11-14/",
-          "title": "Winnipeg Jets vs Chicago Blackhawks Prediction, Picks & Odds | 14 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0dd43R_yCfL0xQl4sBQxTBFPnr5Cm5M3a1kFD7u944fxZEv4R8z7qJTcmmgY"
-        }
-      ]
-    },
-    {
-      "query": "california vs virginia",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T19:40:00Z",
-      "related_news_urls": [
-        "https://www.si.com/college/virginia/virginia-vs-cal-acc-football-live-updates-score-analysis-and-highlights-01m7dq42hzee",
-        "https://sports.yahoo.com/articles/california-vs-virginia-prediction-pick-105135285.html",
-        "https://www.mercurynews.com/2026/11/14/cal-virginia-preview-stats-injuries-acc-football/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQujj2qLikru0Rop28KXRrRDpU8S2dklD3nyFOjtyG3OcVb2U-aCbZGaxrAYDM",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/college/virginia/virginia-vs-cal-acc-football-live-updates-score-analysis-and-highlights-01m7dq42hzee",
-          "title": "Virginia vs Cal ACC Football | Live Updates: Score, Analysis and Highlights",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQujj2qLikru0Rop28KXRrRDpU8S2dklD3nyFOjtyG3OcVb2U-aCbZGaxrAYDM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/california-vs-virginia-prediction-pick-105135285.html",
-          "title": "California vs Virginia Prediction, Pick, NCAAF Odds for Saturday, November 14",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTF1c5jLiWI13UTvIkaXk0DeInDUGtjOyGWfLoNUTXkG12aK7O3F3WhP2Ip4tM"
-        },
-        {
-          "url": "https://www.mercurynews.com/2026/11/14/cal-virginia-preview-stats-injuries-acc-football/",
-          "title": "What to know before Cal kicks off against Virginia in Charlottesville",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSC_JRhT8rBCzb0zJUmhXZgxyU-Dfj8tWNqHR8zON-0hJnVm_3F0FiKGjNsis4"
-        }
-      ]
-    },
-    {
-      "query": "jax state vs wku",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T19:40:00Z",
-      "related_news_urls": [
-        "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/14/jacksonville-state-western-kentucky-week-11-betting-odds-prediction/92756498007/",
-        "https://wkuherald.com/99284/sports/wku-football-looks-to-make-a-statement-at-home-against-jax-state/",
-        "https://bgdailynews.com/2026/11/13/tops-still-have-goals-to-reach-against-jax-state/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0IZayjs1tUnq6SFQmoGmR8nUjAD_BMjw9lkLJhGCOVp1zakbsbaZBjNMVem8",
-      "image_credit": "College Sports Wire",
-      "news": [
-        {
-          "url": "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/14/jacksonville-state-western-kentucky-week-11-betting-odds-prediction/92756498007/",
-          "title": "Jacksonville St vs. Western Kentucky: Week 11 Betting Odds, Prediction",
-          "publisher": "College Sports Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0IZayjs1tUnq6SFQmoGmR8nUjAD_BMjw9lkLJhGCOVp1zakbsbaZBjNMVem8"
-        },
-        {
-          "url": "https://wkuherald.com/99284/sports/wku-football-looks-to-make-a-statement-at-home-against-jax-state/",
-          "title": "WKU Football looks to make a statement at home against Jax State",
-          "publisher": "WKUHerald.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi2Ue_U7CBecvroJM5i6Pw-VxM-tDPPIJQLs_UfMQ2JnLimuvbtUJT9nMvaio"
-        },
-        {
-          "url": "https://bgdailynews.com/2026/11/13/tops-still-have-goals-to-reach-against-jax-state/",
-          "title": "Tops still have goals to reach against Jax State",
-          "publisher": "Bowling Green Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZ5WX9w5B24U6G3sHdroXlKy5VnjXHb5SA2jV3VspXZQRAZjW83pTGtkjOiYM"
-        }
-      ]
-    },
-    {
-      "query": "ga southern vs georgia state",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T19:40:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/sports/wncaab/event/2026/3023738/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=WNCAAB&tile=9",
-        "https://www.usatoday.com/sports/wncaab/event/2026/3034083/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=WNCAAB&tile=14",
-        "https://sportsdata.usatoday.com/football/ncaaf/summary/3037986"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk22g0FrTv2VXWRiQKX9Epgji_GMhnU-fA8huLxB0x2D6UDIoRkeDm-VZ4-AE",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/sports/wncaab/event/2026/3023738/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=WNCAAB&tile=9",
-          "title": "Rhode Island Rams at St. John's Red Storm - WNCAAB Game Summary - Nov 14, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk22g0FrTv2VXWRiQKX9Epgji_GMhnU-fA8huLxB0x2D6UDIoRkeDm-VZ4-AE"
-        },
-        {
-          "url": "https://www.usatoday.com/sports/wncaab/event/2026/3034083/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=WNCAAB&tile=14",
-          "title": "DePaul Blue Demons at Notre Dame Fighting Irish - WNCAAB Game Summary - Nov 14, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXlKMaZNt35Pbs7337b8JM1z1TW1xrn_TGz9uKYxpNkkqI3rTxds0rylXZzbM"
-        },
-        {
-          "url": "https://sportsdata.usatoday.com/football/ncaaf/summary/3037986",
-          "title": "Ole Miss Rebels at Oklahoma Sooners - NCAAF Game Summary - Nov 15, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKIjnOeXECm1McLWbtziGY7vaHYEiAcZMuPwbSLXI4jzmYAGzxjAVk1ZKVStg"
-        }
-      ]
-    },
-    {
-      "query": "nevada vs northern il",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T19:40:00Z",
-      "related_news_urls": [
-        "https://nevadasportsnet.com/news/reporters/on-the-road-nevada-football-to-play-first-mountain-west-game-against-northern-illinois",
-        "https://www.nevadaappeal.com/news/2026/nov/11/packs-three-game-quest-begins-at-winless-niu/",
-        "https://nevadawolfpack.com/news/2026/11/9/football-nevada-heads-to-dekalb-to-face-niu.aspx"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ14jDg0tN6nUOVYDUZ3eCKJvLYDJO2G1jUtNZzasaio6WGNDmAGuyw_5VfbWc",
-      "image_credit": "Nevada Sports Net",
-      "news": [
-        {
-          "url": "https://nevadasportsnet.com/news/reporters/on-the-road-nevada-football-to-play-first-mountain-west-game-against-northern-illinois",
-          "title": "On the road: Nevada football to play first Mountain West game against Northern Illinois",
-          "publisher": "Nevada Sports Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ14jDg0tN6nUOVYDUZ3eCKJvLYDJO2G1jUtNZzasaio6WGNDmAGuyw_5VfbWc"
-        },
-        {
-          "url": "https://www.nevadaappeal.com/news/2026/nov/11/packs-three-game-quest-begins-at-winless-niu/",
-          "title": "Pack’s three-game quest begins at winless NIU",
-          "publisher": "Nevada Appeal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcCuapeK-iZl0iw00NR5sZgUoriji0Ok79WKAbsT5NTuVz2aPeYg7qUU6uJpE"
-        },
-        {
-          "url": "https://nevadawolfpack.com/news/2026/11/9/football-nevada-heads-to-dekalb-to-face-niu.aspx",
-          "title": "Nevada heads to DeKalb to face NIU",
-          "publisher": "University of Nevada Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_j6No6S-dY-WaRdWrRAkeIXLHMjp1mmk-EPKB1OmtusbO_WEVI6_xCwtFcM4"
-        }
-      ]
-    },
-    {
-      "query": "monmouth football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T19:40:00Z",
-      "related_news_urls": [
-        "https://www.app.com/story/sports/college/monmouth-university/2026/11/13/monmouth-nj-college-football-seniors-program-breakthrough-matt-fries-kevin-shriner-gavin-nelson/92713599007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKTmiZ2KFKUWVkSWW_ufyhuRTHLWlczbuTDnoBtcrL6UN6fXW1RQqDYkC2bBA",
-      "image_credit": "Asbury Park Press",
-      "news": [
-        {
-          "url": "https://www.app.com/story/sports/college/monmouth-university/2026/11/13/monmouth-nj-college-football-seniors-program-breakthrough-matt-fries-kevin-shriner-gavin-nelson/92713599007/",
-          "title": "The Monmouth football seniors who sparked a program breakthrough | Exclusive",
-          "publisher": "Asbury Park Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKTmiZ2KFKUWVkSWW_ufyhuRTHLWlczbuTDnoBtcrL6UN6fXW1RQqDYkC2bBA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjFDOyDvFxigsCgwzBcof7nFeKSV4UjDhHAk9IKQUeAszQ-iGHvO9hLWFX_Vs"
         }
       ]
     }
