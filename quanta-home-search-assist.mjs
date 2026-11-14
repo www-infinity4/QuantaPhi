@@ -1,5 +1,10 @@
 import {ALL_FEED_CARDS} from './quanta-feed.mjs';
 import {suggestFeedSearch} from './quanta-feed-search-assist.mjs';
+import {TINYFISH_CARDS} from './tinyfish-card-catalog.mjs';
+
+// Registered original-site Quick Cards also belong in public autocomplete.
+// Reuse their approved source URLs instead of maintaining another offer list.
+const HOME_SEARCH_CARDS=Object.freeze([...ALL_FEED_CARDS,...Object.values(TINYFISH_CARDS)]);
 
 // Attaches ONLY to the existing, top-of-homepage Search input. Suggestions
 // come from already-published Quick Cards: never send partial typed queries
@@ -19,7 +24,7 @@ function mountHomeSearchAssistance(){
  wrapper.append(panel);
  const hide=()=>{panel.hidden=true;search.setAttribute('aria-expanded','false');};
  const display=()=>{
-  const rows=suggestFeedSearch(ALL_FEED_CARDS,search.value,{limit:6});
+  const rows=suggestFeedSearch(HOME_SEARCH_CARDS,search.value,{limit:6});
   panel.replaceChildren();
   for(const suggestion of rows){
    const item=document.createElement('div');
