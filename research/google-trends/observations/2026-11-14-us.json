@@ -3,82 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T12:31:09.789278Z",
+  "checked_at": "2026-11-14T13:01:29.993583Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "lendeborg",
+      "query": "pj marley's medina ohio",
       "approx_searches": "100+",
-      "published_at": "2026-11-14T12:10:00Z",
+      "published_at": "2026-11-14T12:40:00Z",
       "related_news_urls": [
-        "https://www.nba.com/news/kia-rookie-ladder-november-11-2026",
-        "https://sports.yahoo.com/videos/yaxel-lendeborg-brandin-podziemski-function-102719308.html",
-        "https://www.wsj.com/sports/basketball/yaxel-lendeborg-warriors-curry-174eda28"
+        "https://www.nytimes.com/2026/11/13/us/medina-ohio-boycott-restaurant-ramaswamy.html",
+        "https://www.yahoo.com/news/politics/articles/maga-loser-sparks-chaos-family-162731595.html",
+        "https://www.the-independent.com/news/world/americas/us-politics/ohio-restaurant-vivek-ramaswamy-visit-b3084757.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxMhum203fssP1C8b_GdY_KHyeB-eo_s-qrBs0L6rBMMXdi-aBEjm-ynjvKeA",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAsdGm0I_8inaHaYvOjVHvVZTYrTBlkLK13UBwWRP8-yvikzpUDz6Hhw40X5c",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nba.com/news/kia-rookie-ladder-november-11-2026",
-          "title": "Kia Rookie Ladder: Yaxel Lendeborg climbs to No. 1 in latest Top 10",
-          "publisher": "NBA.com",
+          "url": "https://www.nytimes.com/2026/11/13/us/medina-ohio-boycott-restaurant-ramaswamy.html",
+          "title": "A Restaurant Hosted Ramaswamy After His Attack Ad. It’s Paying a Price.",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxMhum203fssP1C8b_GdY_KHyeB-eo_s-qrBs0L6rBMMXdi-aBEjm-ynjvKeA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAsdGm0I_8inaHaYvOjVHvVZTYrTBlkLK13UBwWRP8-yvikzpUDz6Hhw40X5c"
         },
         {
-          "url": "https://sports.yahoo.com/videos/yaxel-lendeborg-brandin-podziemski-function-102719308.html",
-          "title": "How Yaxel Lendeborg, Brandin Podziemski will function with Steph Curry out",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.yahoo.com/news/politics/articles/maga-loser-sparks-chaos-family-162731595.html",
+          "title": "MAGA Loser Sparks Chaos at Family Restaurant With Vile Ad",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ52l_XjdqtBCOW_jWos8zOdbkAU4uxHKPTxo4ioaKdMMld0fEKdLKsvNsRS5I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTISNEh5KWL32yitOaE4aPfw5mBPZIoBFEg57QJId_LQq0ane7kFWI-f_nDfcw"
         },
         {
-          "url": "https://www.wsj.com/sports/basketball/yaxel-lendeborg-warriors-curry-174eda28",
-          "title": "He Quit Basketball to Work in a Warehouse. Now He’s the NBA’s Newest Star.",
-          "publisher": "WSJ",
+          "url": "https://www.the-independent.com/news/world/americas/us-politics/ohio-restaurant-vivek-ramaswamy-visit-b3084757.html",
+          "title": "Ohio restaurant left reeling after hosting Vivek Ramaswamy for midterms campaign stop",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLYJx43WOtUKXtLZmeDox48EMe3Ukr4oHzQZgU5cr6DKcgvOyTqGAVGZm6ZGo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOjKjp_9IaNykz2phqqNU_K9loWVWXiZg8Ya9RsI-fKJViKlFlKkR0-Wq4Eg"
         }
       ]
     },
     {
-      "query": "harper murray",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T12:10:00Z",
+      "query": "donbas",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T12:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/volleyball-star-harper-murray-azzi-200617642.html",
-        "https://www.essentiallysports.com/wnba-basketball-news-azzi-fudds-twenty-fourth-birthday-turns-into-a-basketball-wide-celebration-as-alysha-clark-fiba-others-join-in/",
-        "https://www.si.com/college/nebraska/volleyball/nebraska-hosts-unusual-senior-night-saturday-against-iowa-2026"
+        "https://www.bbc.com/news/articles/cwvg2l312ylqo",
+        "https://apnews.com/article/russia-ukraine-war-nato-us-zelenskyy-f9a8629626c087424f05adc85d127780",
+        "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1PLIHSCWyKRbiJfx_23l0JgFbJ0wV2L6Fp1VYeFD36Iu_fYmWs2WVyXG0j8g",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkm6AMWDgxClwMBnVf5KvHFacmO4ZXamURDjScP1ZG32WKcVceXx771bmxDkM",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/volleyball-star-harper-murray-azzi-200617642.html",
-          "title": "Volleyball star Harper Murray, Azzi Fudd flex abs in throwback birthday photo",
+          "url": "https://www.bbc.com/news/articles/cwvg2l312ylqo",
+          "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkm6AMWDgxClwMBnVf5KvHFacmO4ZXamURDjScP1ZG32WKcVceXx771bmxDkM"
+        },
+        {
+          "url": "https://apnews.com/article/russia-ukraine-war-nato-us-zelenskyy-f9a8629626c087424f05adc85d127780",
+          "title": "Zelenskyy says a new European security framework floated by US could benefit Putin",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3zSIlF4G63RjDHvHgFYty7iR8PuzhTW5mI0g1eRQOhopf6CmuT_KbN5pIeWk"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option",
+          "title": "Three killed in Russia as Ukraine claims US floated NATO membership option",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFpTBTpS_2Lbm5w5L619PPGGkJzCyRHE7y_PKf4nsNeXzGgt3lcCvAZxt6uCc"
+        }
+      ]
+    },
+    {
+      "query": "bandy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T12:30:00Z",
+      "related_news_urls": [
+        "https://www.gp.se/nyheter/varlden/iran-tankrar-har-gatt-pa-minor-i-hormuzsundet.4dee2663-4c3f-5ec9-a02a-c441d9eff83a",
+        "https://www.hn.se/nyheter/falkenberg/strombergs-ost-delikatesser-ateruppstar-efter-20-ar.daf31b07-834a-5c19-b1c6-d104bee75155",
+        "https://www.alingsastidning.se/sport/bowling/team-alingsas-kryssade-pa-bortaplan-mot-ikw-koping.896618f9-8ca6-5900-8043-c2f62c2251d7"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkWWCkIINVO6Emrxaekdqt-qptijokvWWrBMivtPv1hf1fXV9oQHjj5ddL-vU",
+      "image_credit": "Göteborgs-Posten",
+      "news": [
+        {
+          "url": "https://www.gp.se/nyheter/varlden/iran-tankrar-har-gatt-pa-minor-i-hormuzsundet.4dee2663-4c3f-5ec9-a02a-c441d9eff83a",
+          "title": "Iran: Tankrar har gått på minor i Hormuzsundet",
+          "publisher": "Göteborgs-Posten",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkWWCkIINVO6Emrxaekdqt-qptijokvWWrBMivtPv1hf1fXV9oQHjj5ddL-vU"
+        },
+        {
+          "url": "https://www.hn.se/nyheter/falkenberg/strombergs-ost-delikatesser-ateruppstar-efter-20-ar.daf31b07-834a-5c19-b1c6-d104bee75155",
+          "title": "Strömbergs Ost i Falkenberg återuppstår efter 20 år",
+          "publisher": "Hallands Nyheter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMqxKeYWuOCFnxv3gbpLxGeICxkuF_rL2XSYoiCkb29TlG0yQctVWjZpHkoLc"
+        },
+        {
+          "url": "https://www.alingsastidning.se/sport/bowling/team-alingsas-kryssade-pa-bortaplan-mot-ikw-koping.896618f9-8ca6-5900-8043-c2f62c2251d7",
+          "title": "Team Alingsås kryssade på bortaplan mot IKW/Köping",
+          "publisher": "Alingsås Tidning",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkhQC35-Q-x_C70AMkZZjjeFbPIS2OEKSG1vtcnswyuXqsqzRvlO-D8faWBdQ"
+        }
+      ]
+    },
+    {
+      "query": "daune morris",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T12:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50471707/source-tennessee-rb-daune-morris-vs-texas-am",
+        "https://sports.yahoo.com/videos/tennessee-volunteers-just-got-huge-182617513.html",
+        "https://wcyb.com/sports/local-college/tennessee-football-prepares-for-texas-am-through-injuries"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1kmpPJJ9sfJJUimcz6IpwpM78-TGFuK-JJSdEkLdJC1rS01PU8VV2HDHdBJs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50471707/source-tennessee-rb-daune-morris-vs-texas-am",
+          "title": "Tennessee RB Daune Morris suffers broken leg in car accident",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1kmpPJJ9sfJJUimcz6IpwpM78-TGFuK-JJSdEkLdJC1rS01PU8VV2HDHdBJs"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/tennessee-volunteers-just-got-huge-182617513.html",
+          "title": "Tennessee Volunteers Just Got a HUGE Blow Before Texas A&M",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1PLIHSCWyKRbiJfx_23l0JgFbJ0wV2L6Fp1VYeFD36Iu_fYmWs2WVyXG0j8g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkW1yX0mt7ztJlSKJCVm4AXkkfzBz9RyMc6K2aFLIQ8ZUyeE8b4pWZCR5KnAI"
         },
         {
-          "url": "https://www.essentiallysports.com/wnba-basketball-news-azzi-fudds-twenty-fourth-birthday-turns-into-a-basketball-wide-celebration-as-alysha-clark-fiba-others-join-in/",
-          "title": "Azzi Fudd's 24th Birthday Turns Into a Basketball-Wide Celebration as Alysha Clark, FIBA & Others Join In",
-          "publisher": "EssentiallySports",
+          "url": "https://wcyb.com/sports/local-college/tennessee-football-prepares-for-texas-am-through-injuries",
+          "title": "Tennessee Football prepares for Texas A&M through injuries",
+          "publisher": "WCYB",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZH12cg1_jfvuwo_BF1UFXisMXMrJz4nw8MO_gaPQaTJAdHp_BBZkcXe0D3VQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLPrjlr1mcHoj8H-tstuYI5tmoMNqRkk1EXHWX77hBJbx8VANY2EyoK6dQENI"
+        }
+      ]
+    },
+    {
+      "query": "kate middleton",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T12:30:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/GMA/Culture/kate-middleton-announces-return-annual-christmas-carol-service/story?id=138108847",
+        "https://people.com/kate-middleton-announces-return-christmas-carol-concert-reveals-theme-12252611",
+        "https://www.the-independent.com/news/uk/home-news/princess-kate-together-at-christmas-2026-b3084395.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD1zidtaMhdHpLixFk0_RusmjkBs_fwCbjS8HHp5MFoGnitxigp2ceTjaCi7Y",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/GMA/Culture/kate-middleton-announces-return-annual-christmas-carol-service/story?id=138108847",
+          "title": "Kate Middleton announces return of her annual Christmas carol service",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD1zidtaMhdHpLixFk0_RusmjkBs_fwCbjS8HHp5MFoGnitxigp2ceTjaCi7Y"
         },
         {
-          "url": "https://www.si.com/college/nebraska/volleyball/nebraska-hosts-unusual-senior-night-saturday-against-iowa-2026",
-          "title": "Nebraska Hosts Unusual Senior Night Saturday Against Iowa",
-          "publisher": "Sports Illustrated",
+          "url": "https://people.com/kate-middleton-announces-return-christmas-carol-concert-reveals-theme-12252611",
+          "title": "Kate Middleton Announces Return of Her Christmas Carol Concert and Reveals This Year’s Theme",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGPptjPJXbBvNKSbLX4sc8-03qDmfqWIMAjYvciTdWY5TEXONWKG21a6etF70"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgEAFgqDTPBHT62_jTv6bghkgd53FXQX0wUwEbJR3x1l9-i72yrGO6VfLT4lM"
+        },
+        {
+          "url": "https://www.the-independent.com/news/uk/home-news/princess-kate-together-at-christmas-2026-b3084395.html",
+          "title": "Details confirmed for Princess Kate’s 2026 Together At Christmas carol service",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ36MIHSnPrhSX86RLQBdTEOrhVbfEeoQN_-E05cfwD1j3-jciDNkjjDHe7Bh8"
+        }
+      ]
+    },
+    {
+      "query": "st thomas aquinas football",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T12:30:00Z",
+      "related_news_urls": [
+        "https://www.nfhsnetwork.com/events/st-thomas-aquinas-high-school-fort-lauderdale-fl/gam4a70c54e8f",
+        "https://www.maxpreps.com/news/RyWGC8nFw0GeIRHv9LZHOA/highlights%2C-recap-lakeland-stuns-no-1-st-thomas-aquinas-in-overtime-to-kick-off-inaugural-florida-open-division-playoffs.htm",
+        "https://www.theledger.com/story/sports/high-school/football/2026/11/13/polk-county-high-school-football-live-scores-from-week-1-of-playoffs/92759191007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRuie5w0NVss2eCVdoxyTa_elWNYRe94puq7fZd4oVrJU9Pthazoy5iusJRKw",
+      "image_credit": "NFHS Network",
+      "news": [
+        {
+          "url": "https://www.nfhsnetwork.com/events/st-thomas-aquinas-high-school-fort-lauderdale-fl/gam4a70c54e8f",
+          "title": "Lakeland High School vs. St. Thomas Aquinas High School",
+          "publisher": "NFHS Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRuie5w0NVss2eCVdoxyTa_elWNYRe94puq7fZd4oVrJU9Pthazoy5iusJRKw"
+        },
+        {
+          "url": "https://www.maxpreps.com/news/RyWGC8nFw0GeIRHv9LZHOA/highlights%2C-recap-lakeland-stuns-no-1-st-thomas-aquinas-in-overtime-to-kick-off-inaugural-florida-open-division-playoffs.htm",
+          "title": "Highlights, recap: Lakeland stuns No. 1 St. Thomas Aquinas in overtime to kick off inaugural Florida Open Division playoffs",
+          "publisher": "MaxPreps",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwiWKR_zn3f7Rw70RyNafZoLTQ3xFyLEnJbkzJHk60lQQnch296FnQQyE0JQo"
+        },
+        {
+          "url": "https://www.theledger.com/story/sports/high-school/football/2026/11/13/polk-county-high-school-football-live-scores-from-week-1-of-playoffs/92759191007/",
+          "title": "Live scoreboard: Keep up with Polk County high school football playoff games",
+          "publisher": "Lakeland Ledger",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Ao8aNwJ7kh8CN76GE9g8YoSJy3KODyy6fdAnnp875fbqaholP9-rw3_gAys"
+        }
+      ]
+    },
+    {
+      "query": "perth wildcats",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T12:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nbl/story/_/id/50460736/nbl-brandon-knight-gritty-perth-wildcats-win-tasmania-jackjumpers",
+        "https://www.nbl.com.au/news/jackjumpers-injury-crisis-kody-stattmann-scott-roth",
+        "https://www.foxsports.com.au/en-AU/news/basketball/brandon-knight-starred-in-his-return-as-perth-ended-a-four-game-losing-streak-while-scott-roth-praised-tasmanias-resilience-despite-another-injury-setback/1ihynbeiy3v8815wn6kw4ipw9x"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk1v0HTmLsVztdf2m3KMvN--J27cb3GRZfLppxaw1FE3o1WR-RkxYzpCw8emk",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nbl/story/_/id/50460736/nbl-brandon-knight-gritty-perth-wildcats-win-tasmania-jackjumpers",
+          "title": "NBL: Big night for Knight in gritty Perth win over Tasmania",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk1v0HTmLsVztdf2m3KMvN--J27cb3GRZfLppxaw1FE3o1WR-RkxYzpCw8emk"
+        },
+        {
+          "url": "https://www.nbl.com.au/news/jackjumpers-injury-crisis-kody-stattmann-scott-roth",
+          "title": "Roth on his stretched JackJumpers: ‘Bit scary’",
+          "publisher": "NBL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyELTApZYnFflyynlHeCID2n-pu4kTwy4SFVGhV79Y-zzgiSQbMIaYwDfNSpM"
+        },
+        {
+          "url": "https://www.foxsports.com.au/en-AU/news/basketball/brandon-knight-starred-in-his-return-as-perth-ended-a-four-game-losing-streak-while-scott-roth-praised-tasmanias-resilience-despite-another-injury-setback/1ihynbeiy3v8815wn6kw4ipw9x",
+          "title": "Wildcats snap losing streak as NBA veteran stars, injury-hit JackJumpers fall short",
+          "publisher": "Fox Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIM020SHXfmhabioOtOZ2umQxxeRTnpXF-1jBc3VQCUv1rFwYjlaWqG8LWXzA"
+        }
+      ]
+    },
+    {
+      "query": "taylor fritz",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T12:20:00Z",
+      "related_news_urls": [
+        "https://www.bleachernation.com/picks/2026/11/12/fritz-vs-musetti-prediction-at-the-stockholm-open-friday-november-13/",
+        "https://www.tennisnerd.net/betting-blog/atp-stockholm-2026-final-prediction-taylor-fritz-vs-thiago-agustin-tirante/70667",
+        "https://lastwordonsports.com/tennis/2026/11/12/atp-stockholm-semifinal-predictions-fritz-musetti/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbAZTkKZicCGQVRBpv-4sN5snVrL4aZHMr6vo2pOZoghHQFfkTd6d60o8i_KY",
+      "image_credit": "Bleacher Nation",
+      "news": [
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/12/fritz-vs-musetti-prediction-at-the-stockholm-open-friday-november-13/",
+          "title": "Fritz vs. Musetti Prediction at the Stockholm Open – Friday, November 13",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbAZTkKZicCGQVRBpv-4sN5snVrL4aZHMr6vo2pOZoghHQFfkTd6d60o8i_KY"
+        },
+        {
+          "url": "https://www.tennisnerd.net/betting-blog/atp-stockholm-2026-final-prediction-taylor-fritz-vs-thiago-agustin-tirante/70667",
+          "title": "ATP Stockholm 2026 Final Prediction – Taylor Fritz vs Thiago Agustin Tirante",
+          "publisher": "Tennisnerd",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROjLpO5bkeFe3wUh-kZ5Zkd5hFPtyG-xVlLRiAGUBh3IakgxGmsAPa4kViAjw"
+        },
+        {
+          "url": "https://lastwordonsports.com/tennis/2026/11/12/atp-stockholm-semifinal-predictions-fritz-musetti/",
+          "title": "ATP Stockholm Semifinal Predictions Including Taylor Fritz vs Lorenzo Musetti",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwuiELka_M2CW84KV9dK5-hUMmLKsA5yVLJZHBcwip9g7usCYHLAenqNNYtek"
         }
       ]
     },
     {
       "query": "caitlin cunningham uss michael murphy relieved",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-14T12:10:00Z",
       "related_news_urls": [
         "https://thehill.com/policy/defense/6219546-cunningham-relieved-uss-michael-murphy/",
@@ -112,247 +322,37 @@
       ]
     },
     {
-      "query": "collin gosselin special forces win",
+      "query": "lendeborg",
       "approx_searches": "100+",
       "published_at": "2026-11-14T12:10:00Z",
       "related_news_urls": [
-        "https://people.com/special-forces-season-5-finale-reveals-three-winners-12250897",
-        "https://www.eonline.com/news/1438081/special-forces-candace-cameron-bure-collin-gosselin-alexia-umansky-win",
-        "https://pagesix.com/video/alexia-umansky-talks-special-forces-win-and-why-mom-kyle-richards-wanted-to-beat-up-the-instructors-with-vrt/"
+        "https://www.nba.com/news/kia-rookie-ladder-november-11-2026",
+        "https://www.wsj.com/sports/basketball/yaxel-lendeborg-warriors-curry-174eda28",
+        "https://sports.yahoo.com/videos/yaxel-lendeborg-brandin-podziemski-function-102719308.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD5Rf_HhbekRjpf0Pw6j_w_S03ibghkKq8W0AKwLJxfc_ow0nw5-UuNmm5Aq0",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxMhum203fssP1C8b_GdY_KHyeB-eo_s-qrBs0L6rBMMXdi-aBEjm-ynjvKeA",
+      "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://people.com/special-forces-season-5-finale-reveals-three-winners-12250897",
-          "title": "‘Special Forces’ Season 5 Finale Ends with 3 Winners as One Celebrity Contestant Breaks Down in Tears",
-          "publisher": "People.com",
+          "url": "https://www.nba.com/news/kia-rookie-ladder-november-11-2026",
+          "title": "Kia Rookie Ladder: Yaxel Lendeborg climbs to No. 1 in latest Top 10",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD5Rf_HhbekRjpf0Pw6j_w_S03ibghkKq8W0AKwLJxfc_ow0nw5-UuNmm5Aq0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxMhum203fssP1C8b_GdY_KHyeB-eo_s-qrBs0L6rBMMXdi-aBEjm-ynjvKeA"
         },
         {
-          "url": "https://www.eonline.com/news/1438081/special-forces-candace-cameron-bure-collin-gosselin-alexia-umansky-win",
-          "title": "Special Forces Season 5 Finale: 3 Celebrity Winners Revealed",
-          "publisher": "E! News",
+          "url": "https://www.wsj.com/sports/basketball/yaxel-lendeborg-warriors-curry-174eda28",
+          "title": "He Quit Basketball to Work in a Warehouse. Now He’s the NBA’s Newest Star.",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ-IFck3MxT2dacte-LY6Sv2ec5xrZfSnLYLbWh-nL8JAlpPEWWHLbONLGiLA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLYJx43WOtUKXtLZmeDox48EMe3Ukr4oHzQZgU5cr6DKcgvOyTqGAVGZm6ZGo"
         },
         {
-          "url": "https://pagesix.com/video/alexia-umansky-talks-special-forces-win-and-why-mom-kyle-richards-wanted-to-beat-up-the-instructors-with-vrt/",
-          "title": "Alexia Umansky talks 'Special Forces' win and why mom Kyle Richards wanted to 'beat up' the instructors with VRT",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIJ6tkaY1KWbfrttNU6_73YhMwwKsiPEC8k6AA_cNoGfZM9M1mzmudQ6GALo0"
-        }
-      ]
-    },
-    {
-      "query": "thiago agustín tirante",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-14T12:10:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/fritz-musetti-tabilo-tirante-stockholm-2026-sfs",
-        "https://www.skysports.com/tennis/watch/8601408047791429112/bybit-stockholm-open-2026",
-        "https://www.bleachernation.com/picks/2026/11/12/fritz-vs-musetti-prediction-at-the-stockholm-open-friday-november-13/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvlqJiLtZ-8Z9JQOxoQ6eEfuJ-WoCGHdDbm5eIGFNnZ-DdTaEbo6tRa-syHOI",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/fritz-musetti-tabilo-tirante-stockholm-2026-sfs",
-          "title": "Fritz fires past Musetti, will face first-time finalist Tirante for Stockholm crown",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvlqJiLtZ-8Z9JQOxoQ6eEfuJ-WoCGHdDbm5eIGFNnZ-DdTaEbo6tRa-syHOI"
-        },
-        {
-          "url": "https://www.skysports.com/tennis/watch/8601408047791429112/bybit-stockholm-open-2026",
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4UQlVdq1lXhdMww1LAEk9BKhTWJn_e_LjKJYiCJ-MPPSOu3aT1VqjQTdQLeU"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/12/fritz-vs-musetti-prediction-at-the-stockholm-open-friday-november-13/",
-          "title": "Fritz vs. Musetti Prediction at the Stockholm Open – Friday, November 13",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbAZTkKZicCGQVRBpv-4sN5snVrL4aZHMr6vo2pOZoghHQFfkTd6d60o8i_KY"
-        }
-      ]
-    },
-    {
-      "query": "haiti vs usa",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T12:10:00Z",
-      "related_news_urls": [
-        "https://www.ussoccer.com/stories/2026/11/usmnt/matchday-stadium-guide-vs-haiti-nations-league-miami-florida",
-        "https://sports.yahoo.com/articles/usmnt-projected-lineup-vs-haiti-110321808.html",
-        "https://www.si.com/soccer/haiti-vs-usmnt-concacaf-nations-league-preview-predictions-lineups-11-14-26"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkF1JZDUzBUFo1LWNdcs1u_sP-N2ftz_1q7osrRjcNx2mBPPDXFjjfCmWyAt8",
-      "image_credit": "U.S. Soccer",
-      "news": [
-        {
-          "url": "https://www.ussoccer.com/stories/2026/11/usmnt/matchday-stadium-guide-vs-haiti-nations-league-miami-florida",
-          "title": "Matchday Guide: USMNT vs. Haiti at Nu Stadium in Miami in Concacaf Nations League",
-          "publisher": "U.S. Soccer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkF1JZDUzBUFo1LWNdcs1u_sP-N2ftz_1q7osrRjcNx2mBPPDXFjjfCmWyAt8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/usmnt-projected-lineup-vs-haiti-110321808.html",
-          "title": "USMNT projected lineup vs Haiti: Will Christian Pulisic, Cavan Sullivan start?",
+          "url": "https://sports.yahoo.com/videos/yaxel-lendeborg-brandin-podziemski-function-102719308.html",
+          "title": "How Yaxel Lendeborg, Brandin Podziemski will function with Steph Curry out",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9OougZ4ddD3pCaOMbP3EH-LG5QAVLQ93g_VUvt4l5q7De-ntQc9Veavrz2Eg"
-        },
-        {
-          "url": "https://www.si.com/soccer/haiti-vs-usmnt-concacaf-nations-league-preview-predictions-lineups-11-14-26",
-          "title": "Haiti vs. USMNT—Concacaf Nations League: Preview, Predictions and Lineups",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-rP7ChJJEdjA-s5kqHAbPZca9GGE43YAnF5MNaEMWZPlA3JKapep7GY3MVAg"
-        }
-      ]
-    },
-    {
-      "query": "ihsaa football scores",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T12:10:00Z",
-      "related_news_urls": [
-        "https://www.wthr.com/article/sports/high-school/hs-football/indiana-high-school-ihsaa-operation-football-regional-championship-scores-friday-november-6-2026/531-cbfcf4bc-34d0-4b45-853a-34801a10f4b1",
-        "https://www.indystar.com/story/sports/high-school/2026/11/13/indiana-high-school-football-regionals-scores-highlights-stats-photos/92741843007/",
-        "https://www.courierpress.com/story/sports/high-school/2026/11/13/southwestern-indiana-ihsaa-regional-football-scores-live-updates/92713403007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR64kauL42PfEqwnIngIU-RLtknzX6SMnmlA6GmXy_ZeG-dCt0Gfx113JdDmrY",
-      "image_credit": "WTHR",
-      "news": [
-        {
-          "url": "https://www.wthr.com/article/sports/high-school/hs-football/indiana-high-school-ihsaa-operation-football-regional-championship-scores-friday-november-6-2026/531-cbfcf4bc-34d0-4b45-853a-34801a10f4b1",
-          "title": "Indiana high school football regional championship scores | Friday, Nov. 6, 2026",
-          "publisher": "WTHR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR64kauL42PfEqwnIngIU-RLtknzX6SMnmlA6GmXy_ZeG-dCt0Gfx113JdDmrY"
-        },
-        {
-          "url": "https://www.indystar.com/story/sports/high-school/2026/11/13/indiana-high-school-football-regionals-scores-highlights-stats-photos/92741843007/",
-          "title": "IHSAA football Regionals roundup: Scores, stats, schedule, highlights from across Indiana",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_LNFvQc57XZTkxMTk1XtA92Mhz6X7yjIw1VVxX7DQLCPlbWSemd4xdgzyfzI"
-        },
-        {
-          "url": "https://www.courierpress.com/story/sports/high-school/2026/11/13/southwestern-indiana-ihsaa-regional-football-scores-live-updates/92713403007/",
-          "title": "Follow LIVE Southwestern Indiana regional football scores, updates",
-          "publisher": "Courier & Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSrPXdjBVLWCFH9CDknfLUa8ulMKbn0iXdlJ8Ecpj67Y77-bFpy0AcYL9oosw"
-        }
-      ]
-    },
-    {
-      "query": "nc high school football scores",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T12:10:00Z",
-      "related_news_urls": [
-        "https://wlos.com/sports/football-frenzy/western-north-carolina-high-school-football-playoff-scores-second-round-2026-friday",
-        "https://www.wect.com/2026/11/14/friday-night-football-second-round-state-playoffs/",
-        "https://www.fayobserver.com/story/sports/high-school/football/2026/11/13/nchsaa-football-playoffs-round-2-scores-seventy-first-cape-fear--live/92745708007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVDAhIdBoWGAvZlLsE7_YdwUKXCh7sXrjeFHhV1QfNfyua09cC8MbarfiXiCA",
-      "image_credit": "WLOS",
-      "news": [
-        {
-          "url": "https://wlos.com/sports/football-frenzy/western-north-carolina-high-school-football-playoff-scores-second-round-2026-friday",
-          "title": "Friday Football Frenzy: Scores and highlights for Nov. 13, 2026",
-          "publisher": "WLOS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVDAhIdBoWGAvZlLsE7_YdwUKXCh7sXrjeFHhV1QfNfyua09cC8MbarfiXiCA"
-        },
-        {
-          "url": "https://www.wect.com/2026/11/14/friday-night-football-second-round-state-playoffs/",
-          "title": "Friday Night Football: Second round of the state playoffs",
-          "publisher": "WECT",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGqULXt2IaN2fIHbvjGZZfp3Ek1qBqcBW6xsi66XDvLvTwvU-ahiH_7wn_4bg"
-        },
-        {
-          "url": "https://www.fayobserver.com/story/sports/high-school/football/2026/11/13/nchsaa-football-playoffs-round-2-scores-seventy-first-cape-fear--live/92745708007/",
-          "title": "High school football scoreboard with second-round results, highlights",
-          "publisher": "The Fayetteville Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGWk-cUkX0sJBV5jv3F7lwOpFntykGZWTDRqv5gbbN5gjY5zk2RCFxFg_NgdU"
-        }
-      ]
-    },
-    {
-      "query": "virginia foxx election",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-5-results",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-north-carolina-us-house-5.html",
-        "https://ncnewsline.com/2026/11/04/us-rep-virginia-foxx-says-vote-count-isnt-over-as-she-trails-dem-in-ncs-5th-district/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxcFVdbf_2_sI7eW4hh_7R-_JkdbNJ0ZfVXrScrAo0d3mfw5VAtThGmOTqnhk",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-5-results",
-          "title": "North Carolina House District 5 Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxcFVdbf_2_sI7eW4hh_7R-_JkdbNJ0ZfVXrScrAo0d3mfw5VAtThGmOTqnhk"
-        },
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-north-carolina-us-house-5.html",
-          "title": "North Carolina Fifth Congressional District 2026: Live Election Results, Foxx vs. Hubbard",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4_Ar63VtpQvbACduIZFgJfJP6cFHpQAAborG1b_6eYHetMLqvMGiGpfl6-F4"
-        },
-        {
-          "url": "https://ncnewsline.com/2026/11/04/us-rep-virginia-foxx-says-vote-count-isnt-over-as-she-trails-dem-in-ncs-5th-district/",
-          "title": "US Rep. Virginia Foxx says vote count isn’t over as she trails Dem in NC’s 5th District",
-          "publisher": "NC Newsline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Qz7nscIoVICHMAp1-_XsLPkFTqC8ztILQ-ta9eB4Eo7pYjbMq_719dU9XSE"
-        }
-      ]
-    },
-    {
-      "query": "orlando weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T12:00:00Z",
-      "related_news_urls": [
-        "https://www.winknews.com/weather/cool-dry-air-has-taken-over-how-long-will-it-last/article_36715f3c-5565-404b-a9aa-51da2eb7f94a.html",
-        "https://cbs12.com/news/local/strong-cold-front-pushing-in-tomorrow",
-        "https://www.wpbf.com/article/florida-first-snowfall-weather-cold-front-weather/74412381"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgvHEIucduebtOrgrCtTukVNkTRKVRufJfAntdt1oMQNqd1SkaPINlkfcYkWo",
-      "image_credit": "WINK News - Southwest Florida",
-      "news": [
-        {
-          "url": "https://www.winknews.com/weather/cool-dry-air-has-taken-over-how-long-will-it-last/article_36715f3c-5565-404b-a9aa-51da2eb7f94a.html",
-          "title": "Cool, Dry Air Has Taken Over. How Long Will It Last?",
-          "publisher": "WINK News - Southwest Florida",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgvHEIucduebtOrgrCtTukVNkTRKVRufJfAntdt1oMQNqd1SkaPINlkfcYkWo"
-        },
-        {
-          "url": "https://cbs12.com/news/local/strong-cold-front-pushing-in-tomorrow",
-          "title": "Strong cold front pushing in tomorrow, bringing coldest temps since March",
-          "publisher": "WPEC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsp5Xdi0ixHbU5ZYL2dftV_4YMmBjcoPc-Hk_9ltGNNELRWfIulR8vJARKLS0"
-        },
-        {
-          "url": "https://www.wpbf.com/article/florida-first-snowfall-weather-cold-front-weather/74412381",
-          "title": "Cold fronts sweep South Florida while early-season snow hits other parts of the US",
-          "publisher": "WPBF",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXt9dCJEVtcgc8ug_qva3bjwmJRK85RDzRrAzazKqVePdr7mGqwDMAz6lNK6E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ52l_XjdqtBCOW_jWos8zOdbkAU4uxHKPTxo4ioaKdMMld0fEKdLKsvNsRS5I"
         }
       ]
     }
