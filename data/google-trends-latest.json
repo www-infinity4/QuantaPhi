@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T16:31:02.440096Z",
+  "checked_at": "2026-11-14T17:01:07.497883Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "noruega - gales",
+      "query": "keelon russell",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T16:10:00Z",
+      "published_at": "2026-11-14T16:40:00Z",
       "related_news_urls": [
-        "https://www.sportytrader.es/pronosticos/noruega-gales-386579/",
-        "https://es-us.noticias.yahoo.com/deportes/estadio-ullevaal-m%C3%A1xima-alerta-caos-165147057.html",
-        "https://onefootball.com/es/noticias/noruega-gales-un-duelo-sin-margen-de-error-para-los-vikingos-y-dragones-rojos-43774960"
+        "https://www.espn.com/college-football/story/_/id/50474755/sources-alabama-start-qb-austin-mack-russell-available",
+        "https://sports.yahoo.com/articles/keelon-russell-deemed-game-time-161743561.html",
+        "https://www.al.com/alabamafootball/2026/11/austin-mack-expected-to-start-vanderbilt-game-per-espn-report.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsI-jsrYFu4YusqWhbUZAuj5cyyCa5JsYtIZeiJfbhkNuG3eJR7wW-RH4aoZo",
-      "image_credit": "SportyTrader",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3Dad_846wk4fFsE1hI7wYQXFdhI5fwUvny3L-2gwYVf7ugmXmo4BvxSskv6E",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.sportytrader.es/pronosticos/noruega-gales-386579/",
-          "title": "Pronóstico Noruega - Gales - Nations League",
-          "publisher": "SportyTrader",
+          "url": "https://www.espn.com/college-football/story/_/id/50474755/sources-alabama-start-qb-austin-mack-russell-available",
+          "title": "Sources: Alabama to start QB Austin Mack; Keelon Russell available",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsI-jsrYFu4YusqWhbUZAuj5cyyCa5JsYtIZeiJfbhkNuG3eJR7wW-RH4aoZo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3Dad_846wk4fFsE1hI7wYQXFdhI5fwUvny3L-2gwYVf7ugmXmo4BvxSskv6E"
         },
         {
-          "url": "https://es-us.noticias.yahoo.com/deportes/estadio-ullevaal-m%C3%A1xima-alerta-caos-165147057.html",
-          "title": "El estadio Ullevaal, en máxima alerta por el caos provocado por la nieve que amenaza el decisivo duelo de Noruega contra Gales en la Liga de Naciones",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpihYUQLh6lubdATA-T4BxlzpSl9nmgk0p0EoKAUZs3WnslsurwRi4XHvGwng"
-        },
-        {
-          "url": "https://onefootball.com/es/noticias/noruega-gales-un-duelo-sin-margen-de-error-para-los-vikingos-y-dragones-rojos-43774960",
-          "title": "Noruega – Galés: Un duelo sin margen de error para los vikingos y dragones rojos",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhA-5JHNTtsHcCOOk4fljIjiqJWPqRhB0FHK0ZMYP8gDL0bbP4oT8g511Nw2M"
-        }
-      ]
-    },
-    {
-      "query": "syracuse vs nc state",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T16:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/north-carolina-state/article/pack-power-predictions-for-nc-state-vs-syracuse-football-in-week-11-292661374/",
-        "https://www.syracuse.com/tv/2026/11/how-to-watch-syracuse-vs-north-carolina-state-football-free-stream-today.html",
-        "https://www.localsyr.com/orange-nation/keys-to-victory-su-vs-nc-state/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3AwZdkvezWTMko-ImBq3jk_92Cr8qY5-uu7hSccwzMS_O19E4kyIBUqfULUo",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/north-carolina-state/article/pack-power-predictions-for-nc-state-vs-syracuse-football-in-week-11-292661374/",
-          "title": "Pack Power Predictions for NC State vs. Syracuse football in Week 11",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3AwZdkvezWTMko-ImBq3jk_92Cr8qY5-uu7hSccwzMS_O19E4kyIBUqfULUo"
-        },
-        {
-          "url": "https://www.syracuse.com/tv/2026/11/how-to-watch-syracuse-vs-north-carolina-state-football-free-stream-today.html",
-          "title": "How to watch Syracuse vs. North Carolina State football free stream today",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxFQqWiZXpvCoDMtgrnnwmEopd2AvbQktwLU--8XMu8JpTAmCaGvinUHYa7yc"
-        },
-        {
-          "url": "https://www.localsyr.com/orange-nation/keys-to-victory-su-vs-nc-state/",
-          "title": "Keys to Victory: SU vs. NC State",
-          "publisher": "WSYR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9LU2v30woqkFr-NqjazSwPbUzVaLj7yd-fJh3ipgdOUvxY41LZsIy_SnHHbI"
-        }
-      ]
-    },
-    {
-      "query": "james madison vs uconn",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T16:10:00Z",
-      "related_news_urls": [
-        "https://www.courant.com/2026/11/13/uconn-football-faces-another-challenge-with-james-madison-visiting-saturday-how-to-watch/",
-        "https://sports.yahoo.com/articles/jmu-vs-uconn-prediction-pick-101321904.html",
-        "https://www.sportsgambler.com/betting-tips/ncaaf/james-madison-dukes-vs-uconn-huskies-prediction-odds-2026-11-14/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoULJ9A0eRF4dfL3MJcygw1UfyPdUHL4m_ZhLzIjAonheAsSMnTKJ56HJiEw",
-      "image_credit": "Hartford Courant",
-      "news": [
-        {
-          "url": "https://www.courant.com/2026/11/13/uconn-football-faces-another-challenge-with-james-madison-visiting-saturday-how-to-watch/",
-          "title": "UConn football faces another challenge with James Madison visiting Saturday: How to watch",
-          "publisher": "Hartford Courant",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoULJ9A0eRF4dfL3MJcygw1UfyPdUHL4m_ZhLzIjAonheAsSMnTKJ56HJiEw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jmu-vs-uconn-prediction-pick-101321904.html",
-          "title": "JMU vs UConn Prediction, Pick, NCAAF Odds for Saturday, Nov. 14",
+          "url": "https://sports.yahoo.com/articles/keelon-russell-deemed-game-time-161743561.html",
+          "title": "Keelon Russell deemed game-time decision for Alabama vs Vanderbilt",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-RorPuY9LPyW2_CTHfKpjk8hoTolTaJBa0WQX4JsUaufbMtghR4bMXqTQlcg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZir4-UdeUrTa42lPfQVjp5Ajocd3dsWMXgsl0obX8Va7VKnUAO1iPe-zBtWE"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/james-madison-dukes-vs-uconn-huskies-prediction-odds-2026-11-14/",
-          "title": "James Madison vs UConn Prediction, Picks & Odds | 14 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.al.com/alabamafootball/2026/11/austin-mack-expected-to-start-vanderbilt-game-per-espn-report.html",
+          "title": "Austin Mack expected to start Vanderbilt game, per ESPN report, plus other injury updates",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXvFkIayU50nildr9fvIVbZAVlnv3a2VLBQKeeonC2z5OHrZUiPuZPiWHArR4"
         }
       ]
     },
     {
-      "query": "georgia vs hungary",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T16:10:00Z",
+      "query": "travis etienne",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T16:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmewewjlqq4pt",
-        "https://insights.betfred.com/football/georgia-vs-hungary-prediction-betting-tips-saturday-14-november-2026/",
-        "https://1tv.ge/lang/en/news/nations-league-georgia-vs-hungary-live-broadcast-on-gpb-first-channel-1tvsport/"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-saints-to-activate-rb-travis-etienne-for-sundays-game",
+        "https://www.neworleanssaints.com/news/injury-report-carolina-panthers-vs-new-orleans-saints-2026-nfl-week-10-friday",
+        "https://www.theclemsoninsider.com/2026/11/12/good-news-for-etienne/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUmreIWSv_w9rCh_zdSviQ2QkVBx40btDvU68uCw5YKmAoRTyu1Dy12AazYQ",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cmewewjlqq4pt",
-          "title": "Georgia vs Hungary: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-saints-to-activate-rb-travis-etienne-for-sundays-game",
+          "title": "Report: Saints to activate RB Travis Etienne for Sunday’s game",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUmreIWSv_w9rCh_zdSviQ2QkVBx40btDvU68uCw5YKmAoRTyu1Dy12AazYQ"
         },
         {
-          "url": "https://insights.betfred.com/football/georgia-vs-hungary-prediction-betting-tips-saturday-14-november-2026/",
-          "title": "Georgia vs Hungary Prediction, Betting Tips, Team News - 14 November 2026",
-          "publisher": "Betfred Insights",
+          "url": "https://www.neworleanssaints.com/news/injury-report-carolina-panthers-vs-new-orleans-saints-2026-nfl-week-10-friday",
+          "title": "Saints Friday Injury Report: 2026 Week 10 vs. Carolina Panthers",
+          "publisher": "New Orleans Saints | NewOrleansSaints.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe-KnakE7Up5qsrbmJ-UqqhN0t6oAiUFzsz8Q1pe_lMN90II5LKZmPwetv9BA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBzPLby5oWF3LBm6YUY7YFpcB4I9frj9o3A5s_b_-69lcBQXpeu9Q-6QY3xes"
         },
         {
-          "url": "https://1tv.ge/lang/en/news/nations-league-georgia-vs-hungary-live-broadcast-on-gpb-first-channel-1tvsport/",
-          "title": "Nations League: Georgia vs Hungary, live broadcast on GPB First Channel #1TVSPORT",
-          "publisher": "1TV.GE",
+          "url": "https://www.theclemsoninsider.com/2026/11/12/good-news-for-etienne/",
+          "title": "Good News for Etienne",
+          "publisher": "The Clemson Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5eL3-s3Q-WyCa11TuCAt_7gC3YAV7TUdRIw_tsBaOpgHWmcp0VSv-V7_pco"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcsZ3AWsFvaRtmgry6g2jeVvH6MdSb2UBMZ3DcqY3yP00w6lEuMo271aV_YvA"
         }
       ]
     },
     {
-      "query": "duke vs miami fl",
+      "query": "alexei pergande",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T16:40:00Z",
+      "related_news_urls": [
+        "https://mmajunkie.usatoday.com/story/sports/pfl/2026/11/13/pfl-mvp-alexei-pergande-social-media-jake-paul-dubai/92762907007/",
+        "https://www.sherdog.com/news/articles/Prospect-watch-Undefeated-PFL-lightweight-Alexei-Pergande-203574"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_6mBkcNRWJTvQRRSipwI0u6seLyr7cDSlVbA7Y8MF0SS6T4eRKkB__SV5gs",
+      "image_credit": "MMA Junkie",
+      "news": [
+        {
+          "url": "https://mmajunkie.usatoday.com/story/sports/pfl/2026/11/13/pfl-mvp-alexei-pergande-social-media-jake-paul-dubai/92762907007/",
+          "title": "Alexei Pergande discusses sudden social media fame, potential with Jake Paul and MVP",
+          "publisher": "MMA Junkie",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_6mBkcNRWJTvQRRSipwI0u6seLyr7cDSlVbA7Y8MF0SS6T4eRKkB__SV5gs"
+        },
+        {
+          "url": "https://www.sherdog.com/news/articles/Prospect-watch-Undefeated-PFL-lightweight-Alexei-Pergande-203574",
+          "title": "Prospect watch: Undefeated PFL lightweight Alexei Pergande",
+          "publisher": "Sherdog",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJXVyZa4hEJQ4mQsS8hTeMv7KncsO4_rgmMd51_OH1sdkgelPnGIpaKRRd42s"
+        }
+      ]
+    },
+    {
+      "query": "princeton vs yale",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T16:40:00Z",
+      "related_news_urls": [
+        "https://goprincetontigers.com/news/2026/11/13/football-wraps-up-road-schedule-at-yale-saturday",
+        "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2171387",
+        "https://yaledailynews.com/articles/facing-tigers-team-153-s-seniors-look-to-win-one-last-game-at-yale-bowl"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpNdhuHYiN7YOgOtd1BM_TT5Py0hirW0zsF6nbkCOcZ0lU5xMeCgeD8uhGkio",
+      "image_credit": "Princeton University Athletics",
+      "news": [
+        {
+          "url": "https://goprincetontigers.com/news/2026/11/13/football-wraps-up-road-schedule-at-yale-saturday",
+          "title": "No. 23 Football Wraps Up Road Schedule at Yale Saturday",
+          "publisher": "Princeton University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpNdhuHYiN7YOgOtd1BM_TT5Py0hirW0zsF6nbkCOcZ0lU5xMeCgeD8uhGkio"
+        },
+        {
+          "url": "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2171387",
+          "title": "LIVE/FREE: Yale vs Princeton Live Strea.ms Free College Football Game On TV Channel 2026",
+          "publisher": "Powell River Peak",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7dRm3fhkPgBbX2CccuzokQSQKn22CK2RWCe6R3eLlHh8CcKS5cfQTTmucDzE"
+        },
+        {
+          "url": "https://yaledailynews.com/articles/facing-tigers-team-153-s-seniors-look-to-win-one-last-game-at-yale-bowl",
+          "title": "Facing Tigers, Team 153’s seniors look to win one last game at Yale Bowl",
+          "publisher": "Yale Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHqitfkuU6pjcgaRbOW_pPZGzXnI-QQLdKD8uWJJCxY68lZFpvNH8SCL1Tj88"
+        }
+      ]
+    },
+    {
+      "query": "georgia tech vs clemson",
       "approx_searches": "5000+",
-      "published_at": "2026-11-14T16:00:00Z",
+      "published_at": "2026-11-14T16:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/game-thread-miami-hurricanes-vs-150839319.html",
-        "https://www.cbssports.com/betting/news/miami-duke-prediction-odds-game-time-2026-week-11-college-football-picks-best-bets/",
-        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318065536.html"
+        "https://www.wltx.com/article/sports/football/hours-from-a-career-milestone-dabo-swinney-will-put-on-the-headset-for-the-250th-time-as-a-head-coach/101-7adfc7d8-423d-4d4c-8104-ff5f4e50e7c1",
+        "https://sports.yahoo.com/articles/watch-georgia-tech-vs-clemson-163500720.html",
+        "https://clemsontigers.com/news/2026/11/10/fbgameday26-gt"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDEduJ5hKSa5KeTKKuhoR9eg8YA5J48m47qabdWRIvtxGQgm2IrUebF_WQD_A",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTROSXZpRMXEyrIqYOWczLi-QDP5RR6T_-nWcawRVB-EZYLWHBrfwnoBeBhwf0",
+      "image_credit": "WLTX",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/game-thread-miami-hurricanes-vs-150839319.html",
-          "title": "GAME THREAD: Miami Hurricanes vs Duke Blue Devils",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.wltx.com/article/sports/football/hours-from-a-career-milestone-dabo-swinney-will-put-on-the-headset-for-the-250th-time-as-a-head-coach/101-7adfc7d8-423d-4d4c-8104-ff5f4e50e7c1",
+          "title": "Hours from a career milestone, Dabo Swinney will put on the headset for the 250th time as a head coach",
+          "publisher": "WLTX",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDEduJ5hKSa5KeTKKuhoR9eg8YA5J48m47qabdWRIvtxGQgm2IrUebF_WQD_A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTROSXZpRMXEyrIqYOWczLi-QDP5RR6T_-nWcawRVB-EZYLWHBrfwnoBeBhwf0"
         },
         {
-          "url": "https://www.cbssports.com/betting/news/miami-duke-prediction-odds-game-time-2026-week-11-college-football-picks-best-bets/",
-          "title": "Miami vs. Duke prediction, odds, time: Week 11 college football picks by proven model",
+          "url": "https://sports.yahoo.com/articles/watch-georgia-tech-vs-clemson-163500720.html",
+          "title": "How to watch Georgia Tech vs Clemson: Live stream College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-DBDAGFtko5HDx6h8l5qkeOibkWFf8zwbEcW6uqS7D5qlWpEjnPFOBjb7kkA"
+        },
+        {
+          "url": "https://clemsontigers.com/news/2026/11/10/fbgameday26-gt",
+          "title": "Gameday: Football vs. Georgia Tech • Nov. 14 • 12:30 p.m. • CW Sports",
+          "publisher": "Clemson University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY8Ffyt4Tc9WmB51Ek-TrZLExo51EylXqJF8wzXbxT41Pc6lGX6Lup-j8Sk9c"
+        }
+      ]
+    },
+    {
+      "query": "nebraska vs rutgers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T16:30:00Z",
+      "related_news_urls": [
+        "https://scarletknights.com/news/2026/11/9/game-10-football-vs-nebraska",
+        "https://sports.yahoo.com/articles/week-11-predictions-huskers-scarlet-154546984.html",
+        "https://247sports.com/college/nebraska/article/nebraska-huskers-football-rutgers-scarlet-knights-football-friday-injury-report-292667942/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdBAS5sgTf0nElxPsQvBmmTsR4UvEp-bN3VRrZQKo_p1KEjBTvmgMbIyljre4",
+      "image_credit": "Rutgers University Athletics",
+      "news": [
+        {
+          "url": "https://scarletknights.com/news/2026/11/9/game-10-football-vs-nebraska",
+          "title": "Game 10: Football vs. Nebraska",
+          "publisher": "Rutgers University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdBAS5sgTf0nElxPsQvBmmTsR4UvEp-bN3VRrZQKo_p1KEjBTvmgMbIyljre4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-11-predictions-huskers-scarlet-154546984.html",
+          "title": "Week 11 Predictions: Huskers at Scarlet Knights",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiuco-JwgVR8szwHJDIQStyJQW1ktPC76g6byanZW5WHQsCmI5sA2IB603Pu8"
+        },
+        {
+          "url": "https://247sports.com/college/nebraska/article/nebraska-huskers-football-rutgers-scarlet-knights-football-friday-injury-report-292667942/",
+          "title": "Status quo for Nebraska injury report on Friday night",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj5r1UxVoik004eu9mIoMrt99ITLxJCxZ4MZhKWRghFSjWWcgRh3tMQEn8iKU"
+        }
+      ]
+    },
+    {
+      "query": "kenneth walker",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-14T16:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50473948/chiefs-rb-walker-groin-misses-practice-status-uncertain",
+        "https://bleacherreport.com/articles/25533161-kenneth-walker-injured-latest-rumors-chiefs-rb-vs-falcons-and-emmett-johnson-fantasy-outlook",
+        "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsA4pYHZ3AUI0wTGpJ7Ow6b6dWJiR9Jn2xqsxOHNLCvCtVQ3q_uICal4J9uIk",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50473948/chiefs-rb-walker-groin-misses-practice-status-uncertain",
+          "title": "Chiefs RB Kenneth Walker III (groin) misses practice, status uncertain",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsA4pYHZ3AUI0wTGpJ7Ow6b6dWJiR9Jn2xqsxOHNLCvCtVQ3q_uICal4J9uIk"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25533161-kenneth-walker-injured-latest-rumors-chiefs-rb-vs-falcons-and-emmett-johnson-fantasy-outlook",
+          "title": "Kenneth Walker Injured, Latest Rumors on Chiefs RB vs. Falcons and Emmett Johnson Fantasy Outlook",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_EUZQrdkoMFLr7_6dCGXV-t4ZXqSyxaP_yfNiIXGJydzsETRfkGJKOc_V78"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/",
+          "title": "NFL Week 10 injury report: Chiefs' Kenneth Walker III ruled out, Patriots' A.J. Brown questionable",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJfe8vRzVWFyebavh0S83lqPteFX0MHp86YYpq9AbjJDfeNdvgND263-Pi1bM"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318065536.html",
-          "title": "Live updates: No. 7 Miami Hurricanes vs. Duke Blue Devils",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKyPoP32tWHim27sUmZDuKoMWemG_bepYHcIZframpLhPi9iQWJQUuwv5Tl1s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa-cjoh4stNJyoRTBMnBZRLoJluiHXzCbExn2vi1DMYFzE2K9TkkxB0yzy2Ps"
         }
       ]
     },
     {
-      "query": "wisconsin vs maryland",
+      "query": "chiefs depth chart",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T16:00:00Z",
+      "published_at": "2026-11-14T16:30:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/wisconsin/longformarticle/all-out-blitz-maryland-wisconsin-badgers-football-2026-292670447/",
-        "https://www.jsonline.com/story/sports/college/uw/2026/11/13/sebastian-cheeks-will-miss-badgers-game-against-maryland-due-to-injury/92769160007/",
-        "https://www.buckys5thquarter.com/wisconsin-badgers-football/91646/wisconsin-badgers-football-news-best-case-worst-case-most-likely-scenarios-maryland-terrapins-luke-fickell"
+        "https://www.espn.com/nfl/story/_/id/50464631/jaguars-jessie-bates-trade-travis-hunter",
+        "https://www.atlantafalcons.com/news/falcons-news-now-top-headlines-for-week-10-game-vs-chiefs",
+        "https://www.jaguars.com/news/thursday-insider-i-look-at-it-as-a-blessing"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTWN847d0H__k-9xn5z_Y7JYxWCXepacvuegYL2fomNaYYN45yKM5hWEA4JSY",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKcJuo6F7SaPG_qmrtX_8X-uKAXDppEswV5g_Iy0A2qgrlmeVVE6rFSh1aKvM",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://247sports.com/college/wisconsin/longformarticle/all-out-blitz-maryland-wisconsin-badgers-football-2026-292670447/",
-          "title": "All-Out Blitz: Maryland",
-          "publisher": "247Sports",
+          "url": "https://www.espn.com/nfl/story/_/id/50464631/jaguars-jessie-bates-trade-travis-hunter",
+          "title": "Travis Hunter makes Jessie Bates' Jaguars trade a hit with his nephews",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTWN847d0H__k-9xn5z_Y7JYxWCXepacvuegYL2fomNaYYN45yKM5hWEA4JSY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKcJuo6F7SaPG_qmrtX_8X-uKAXDppEswV5g_Iy0A2qgrlmeVVE6rFSh1aKvM"
         },
         {
-          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/13/sebastian-cheeks-will-miss-badgers-game-against-maryland-due-to-injury/92769160007/",
-          "title": "Badgers to be without Sebastian Cheeks for game against Maryland",
-          "publisher": "Milwaukee Journal Sentinel",
+          "url": "https://www.atlantafalcons.com/news/falcons-news-now-top-headlines-for-week-10-game-vs-chiefs",
+          "title": "Falcons News Now: Top headlines for Week 10 game vs. Chiefs",
+          "publisher": "Atlanta Falcons",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH3GJnsA5j-oAaZ1CXZAjhjYz2hOEgwcagHN1u8qnuqCfxfd8b3b3aOiEFptk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQy9xz0dFQN16EOkQmGv6oigy25PCPzrkK3nkcp10gwRtpxd4aBLNF3A6ie-ls"
         },
         {
-          "url": "https://www.buckys5thquarter.com/wisconsin-badgers-football/91646/wisconsin-badgers-football-news-best-case-worst-case-most-likely-scenarios-maryland-terrapins-luke-fickell",
-          "title": "Wisconsin Football: Best Case, Worst Case, and Most Likely Scenarios vs. Maryland",
-          "publisher": "Bucky's 5th Quarter",
+          "url": "https://www.jaguars.com/news/thursday-insider-i-look-at-it-as-a-blessing",
+          "title": "Thursday Insider: \"I Look at It as a Blessing…\"",
+          "publisher": "Jacksonville Jaguars",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAYBly8sZMDRp-Da6KVt8exBdif0x31_Vv-Dr2pp8TO03-hkloU8Zf4A-VCj8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVxJrn7rk5XVtnS0NLtPO2zrnfmaDjbLnIf1TpMBrUIeKq61vYgSmS6tqJJfg"
         }
       ]
     },
     {
-      "query": "cincinnati vs iowa state",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T16:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/cincinnati/article/how-to-watch-and-staff-predictions-iowa-st-292655649/",
-        "https://sports.yahoo.com/articles/uc-bearcats-iowa-state-cyclones-140118473.html",
-        "https://cyclonefanatic.com/2026/11/staff-picks-cincinnati-at-iowa-state/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHllRbQrWImkSZfeAEj11bUiWDP-TU3EQjwSrLMGmh-zHJmv2wYa8MNpMiO2Y",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/cincinnati/article/how-to-watch-and-staff-predictions-iowa-st-292655649/",
-          "title": "How To Watch and Staff Predictions: Iowa St",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHllRbQrWImkSZfeAEj11bUiWDP-TU3EQjwSrLMGmh-zHJmv2wYa8MNpMiO2Y"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/uc-bearcats-iowa-state-cyclones-140118473.html",
-          "title": "UC Bearcats at Iowa State Cyclones live updates, score, highlights",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJf0bkDbErRZ77EYmjtTmOJNP6112M7vJ_w2LUhisyXEHmsOTIOYu3_d8mTCg"
-        },
-        {
-          "url": "https://cyclonefanatic.com/2026/11/staff-picks-cincinnati-at-iowa-state/",
-          "title": "Staff Picks: Cincinnati at Iowa State",
-          "publisher": "Cyclone Fanatic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUJ4niak5k4HDwyDnEyp5CSY9o3mrqFgK0N94bm9x7Ef2nivcQA-Vo4ENw9so"
-        }
-      ]
-    },
-    {
-      "query": "england vs japan",
+      "query": "utah royals fc vs washington spirit",
       "approx_searches": "1000+",
-      "published_at": "2026-11-14T15:50:00Z",
+      "published_at": "2026-11-14T16:30:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/sport/live/2026/nov/14/england-v-japan-nations-championship-rugby-union-live",
-        "https://www.bbc.com/sport/rugby-union/articles/c5rmg2djmm1lo",
-        "https://www.skysports.com/rugby-union/news/13611936/england-respond-to-eddie-jones-mind-games-ahead-of-japan-match-in-nations-championship"
+        "https://www.nytimes.com/athletic/7771742/2026/11/14/nwsl-semifinals-schedule-2026-how-to-watch/",
+        "https://washingtonspirit.com/blog/2026/11/13/know-before-you-go-washington-spirit-vs-utah-royals-fc-2026-nwsl-playoffs-semifinal/",
+        "https://wtop.com/washington-spirit/2026/11/washington-spirit-prepare-for-the-nwsl-semifinals-as-audi-field-hosts-historic-doubleheader/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSh8Lv-r6AfXP87SvvPnwLwWsWwtKcpU0ZFNpLNVKdodZVs2c803Umr9ZVuzU",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREmQGUAcS6MD1kTUKe3QEMXOFwc-aEVayLi31HLWQ6sIozukBPwCUxfyc1myc",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/14/england-v-japan-nations-championship-rugby-union-live",
-          "title": "England v Japan: Nations Championship rugby union – live",
-          "publisher": "The Guardian",
+          "url": "https://www.nytimes.com/athletic/7771742/2026/11/14/nwsl-semifinals-schedule-2026-how-to-watch/",
+          "title": "NWSL semifinals guide 2026: Schedule, TV info and our staff’s reasons to watch - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSh8Lv-r6AfXP87SvvPnwLwWsWwtKcpU0ZFNpLNVKdodZVs2c803Umr9ZVuzU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREmQGUAcS6MD1kTUKe3QEMXOFwc-aEVayLi31HLWQ6sIozukBPwCUxfyc1myc"
         },
         {
-          "url": "https://www.bbc.com/sport/rugby-union/articles/c5rmg2djmm1lo",
-          "title": "England v Japan: Max Ojomoh must marry talent and toughness - Steve Borthwick",
-          "publisher": "BBC",
+          "url": "https://washingtonspirit.com/blog/2026/11/13/know-before-you-go-washington-spirit-vs-utah-royals-fc-2026-nwsl-playoffs-semifinal/",
+          "title": "KNOW BEFORE YOU GO: Washington Spirit vs Utah Royals FC - 2026 NWSL Playoffs Semifinal",
+          "publisher": "Washington Spirit",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThCMe1EvPOVxCTC5zeWAn5_FI75P-OdJ5MRj6H8XzH_yWxOUEXnsg-DNQXs7g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOgYceuMzh_FshRx8kZLgumalR0EIxNRDLSSL46jl-s7MxrgZIw48zDoT6PBA"
         },
         {
-          "url": "https://www.skysports.com/rugby-union/news/13611936/england-respond-to-eddie-jones-mind-games-ahead-of-japan-match-in-nations-championship",
-          "title": "England respond to Eddie Jones mind games ahead of Japan match in Nations Championship",
-          "publisher": "Sky Sports",
+          "url": "https://wtop.com/washington-spirit/2026/11/washington-spirit-prepare-for-the-nwsl-semifinals-as-audi-field-hosts-historic-doubleheader/",
+          "title": "Washington Spirit prepare for the NWSL semifinals as Audi Field hosts historic doubleheader",
+          "publisher": "WTOP News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAtpWgjN3Mt3KXw5a_chQ73D29DXw0_mMkrgCoS1Ih0jzYZwdIGkxhvLyIOhs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7r8rPe0oJ2PfGynt-Dw4HaYQCN2Bl4QgLDGy0G5orWX-OpqZ6rwMR0opXrbM"
         }
       ]
     },
     {
-      "query": "michigan vs oregon",
+      "query": "deebo samuel sr.",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T15:50:00Z",
+      "published_at": "2026-11-14T16:30:00Z",
       "related_news_urls": [
-        "https://www.oregonlive.com/ducks/2026/11/what-time-is-oregon-football-vs-michigan-today-tv-channel-streaming-how-to-watch-online.html",
-        "https://www.addictedtoquack.com/football/64954/oregon-ducks-football-duck-tape-film-analysis-of-michigan-football-2026",
-        "https://sports.yahoo.com/articles/watch-michigan-footballs-week-11-110006291.html"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/deebo-samuel-has-no-injury-designation-but-four-cbs-are-questionable-for-49ers",
+        "https://www.profootballrumors.com/2026/11/49ers-designate-dt-cj-west-for-return-latest-on-mike-evans-deebo-samuel",
+        "https://www.thefantasyfootballers.com/news/647560/deebo-samuel-set-to-return-in-week-10/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSE169gX37VGwCIs2t7Yx9Ucjh1Xne9ehtd5x1V2IzTkE3xQJGf14na_g6UEro",
-      "image_credit": "OregonLive.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStcy82fV-RnyQ8wlLtjhrHSm6tiCsb8iqCxavCoyy3_2SRsxBWDb_ZY_uRzeI",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.oregonlive.com/ducks/2026/11/what-time-is-oregon-football-vs-michigan-today-tv-channel-streaming-how-to-watch-online.html",
-          "title": "What time is Oregon football vs. Michigan today? TV channel, streaming, how to watch online",
-          "publisher": "OregonLive.com",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/deebo-samuel-has-no-injury-designation-but-four-cbs-are-questionable-for-49ers",
+          "title": "Deebo Samuel has no injury designation, but four CBs are questionable for 49ers",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSE169gX37VGwCIs2t7Yx9Ucjh1Xne9ehtd5x1V2IzTkE3xQJGf14na_g6UEro"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStcy82fV-RnyQ8wlLtjhrHSm6tiCsb8iqCxavCoyy3_2SRsxBWDb_ZY_uRzeI"
         },
         {
-          "url": "https://www.addictedtoquack.com/football/64954/oregon-ducks-football-duck-tape-film-analysis-of-michigan-football-2026",
-          "title": "Oregon Ducks Football: Duck Tape Film Analysis of Michigan Football 2026",
-          "publisher": "Addicted To Quack",
+          "url": "https://www.profootballrumors.com/2026/11/49ers-designate-dt-cj-west-for-return-latest-on-mike-evans-deebo-samuel",
+          "title": "49ers Designate DT CJ West For Return; Latest On Mike Evans, Deebo Samuel",
+          "publisher": "ProFootballRumors.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTznhi1MfYDOwehE7IvDPZ0Hgr9ndChpb7v1W-C3RVge2N8_503pOkYqbVc0bc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTALL8_Tz79_AurvnbOBwVRvLWWSrlGr5v4AAUsYUZV6ssKxYtF0IyMmiDE--c"
         },
         {
-          "url": "https://sports.yahoo.com/articles/watch-michigan-footballs-week-11-110006291.html",
-          "title": "How to Watch Michigan Football's Week 11 Game Against No. 16 Oregon",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.thefantasyfootballers.com/news/647560/deebo-samuel-set-to-return-in-week-10/",
+          "title": "Deebo Samuel Sr. Set to return in Week 10",
+          "publisher": "Fantasy Footballers Podcast",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSt_GAh3LSYts5QQWQZW1NrQMgasavF1bqOOWFd6PFlhaZEpxQQs6Is7PxTS5w"
-        }
-      ]
-    },
-    {
-      "query": "northwestern vs ohio state",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-14T15:40:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/ohio-state/article/pregame-observations-from-ohio-state-football-vs-northwestern-wildcats-292675118/",
-        "https://www.cbssports.com/betting/news/ohio-state-northwestern-odds-prediction-game-time-2026-week-11-college-football-picks-best-bets/",
-        "https://www.10tv.com/article/sports/football/ohio-state-football/ohio-state-northwestern-injury-report-2026/530-fd4a7b6f-e2f5-4995-ac8e-bb9f4a3925a3"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS77XKt0ngH2zoP1gY9uptGtsO57X5NMVtiffGtrtA_k1J2aIkDqjLN5_z4V2E",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/ohio-state/article/pregame-observations-from-ohio-state-football-vs-northwestern-wildcats-292675118/",
-          "title": "Pregame observations from Ohio State vs. Northwestern",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS77XKt0ngH2zoP1gY9uptGtsO57X5NMVtiffGtrtA_k1J2aIkDqjLN5_z4V2E"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/ohio-state-northwestern-odds-prediction-game-time-2026-week-11-college-football-picks-best-bets/",
-          "title": "Ohio State vs. Northwestern odds, prediction, time: Week 11 college football picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxcmS_ScPK_WbGOceLkS0XfNtyvWTBhLFzIQ8nM47lJ-pCRJf32vZ8T6wrEAc"
-        },
-        {
-          "url": "https://www.10tv.com/article/sports/football/ohio-state-football/ohio-state-northwestern-injury-report-2026/530-fd4a7b6f-e2f5-4995-ac8e-bb9f4a3925a3",
-          "title": "Ohio State vs. Northwestern injury report: 11 Buckeyes out, including starting offensive lineman Luke Montgomery",
-          "publisher": "10TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScQlC_7ENU_i_hanraC2k6eZUqezU_PtmIiyGwFAzQIUy-kw93PZD1HsFaAuw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTd71MclTuMxtHx4eFiKS0UxDykXIi9Cpl-H8P-i34-EuA1gxJLemJzU1Iz_AM"
         }
       ]
     }
