@@ -3,9 +3,193 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T09:01:17.698938Z",
+  "checked_at": "2026-11-15T09:31:24.057974Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "donald trump iran war",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T09:10:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/2026/11/14/how-does-iran-view-shift-in-us-approach-after-vance-ordered-away",
+        "https://www.nytimes.com/2026/11/12/us/politics/trump-vance-iran-fraud.html",
+        "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEfu1ceUNjNKCPsorEGs8MkxK4PkGmXORsBLbgbNCxuDSZL1GEXQVDq_ysOS0",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/14/how-does-iran-view-shift-in-us-approach-after-vance-ordered-away",
+          "title": "How does Iran view Trump sidelining Vance from talks?",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEfu1ceUNjNKCPsorEGs8MkxK4PkGmXORsBLbgbNCxuDSZL1GEXQVDq_ysOS0"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/12/us/politics/trump-vance-iran-fraud.html",
+          "title": "Trump Says He’s Pulling Vance Off Iran Talks to Focus on Fraud Campaign",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3LeT7moDLrdw36cKxk2MmjFxAA5vFS-CFXQ7HpzpM8vfMTksZ1zWBzshVpXM"
+        },
+        {
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/",
+          "title": "Trump says \"we don't need a deal with Iran,\" as Tehran sticks to its demands",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIKMmSdSOmAR6QvOT4CPmhvuWDSW_tddBuzwxA6JJP-3J_drA6Omlcow37gdM"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 pc release date",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T09:10:00Z",
+      "related_news_urls": [
+        "https://www.the-independent.com/extras/indybest/gadgets-tech/video-games-consoles/gta-6-pc-nintendo-switch-2-b3084736.html",
+        "https://finance.yahoo.com/video/two-ceo-zelnick-ai-wont-130209253.html",
+        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-pc-release-date"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqCw83O-T50Az-2GmPIYlCO33EtSSINyKJYkGR7siEMzQ2txirbkqmdc8LJ38",
+      "image_credit": "The Independent",
+      "news": [
+        {
+          "url": "https://www.the-independent.com/extras/indybest/gadgets-tech/video-games-consoles/gta-6-pc-nintendo-switch-2-b3084736.html",
+          "title": "Here’s when GTA 6 could come to PC and Nintendo Switch 2",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqCw83O-T50Az-2GmPIYlCO33EtSSINyKJYkGR7siEMzQ2txirbkqmdc8LJ38"
+        },
+        {
+          "url": "https://finance.yahoo.com/video/two-ceo-zelnick-ai-wont-130209253.html",
+          "title": "Take-Two CEO Zelnick: AI Wont Kill Gaming Jobs",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQa-K5X0HPCA2EDIMrOQac9nRERCVy_F0IZ5q5CIwLwmK5PrDdmC4eRXTdD4-A"
+        },
+        {
+          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-pc-release-date",
+          "title": "GTA 6 PC News - Tracking When It Will Release",
+          "publisher": "Mobalytics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6A1vm6VT7zMqssTwp-pwUPMDlwGaj5BVnJRFgs7oSaikTLEkFSdZJP-lreA"
+        }
+      ]
+    },
+    {
+      "query": "dp world tour championship",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T09:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/golf/story/_/id/50479782/mcilroy-chacarra-set-sunday-showdown-dubai",
+        "https://www.bbc.com/sport/golf/live/cwe85dg7g7lyt",
+        "https://www.europeantour.com/dpworld-tour/news/articles/detail/pga-tour-dual-membership-what-s-at-stake-on-the-final-day-of-dp-world-tour-championship/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50479782/mcilroy-chacarra-set-sunday-showdown-dubai",
+          "title": "Rory McIlroy set for showdown with Eugenio Chacarra for Race to Dubai title",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys"
+        },
+        {
+          "url": "https://www.bbc.com/sport/golf/live/cwe85dg7g7lyt",
+          "title": "Rory McIlroy at DP World Tour Championship in Dubai trying to equal Colin Montgomerie's record",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkC10Qnk9Q-11UbSi-S9UalLRt0hwV11T1SXrFMmbIjCuELPRFglZF1cN1-_c"
+        },
+        {
+          "url": "https://www.europeantour.com/dpworld-tour/news/articles/detail/pga-tour-dual-membership-what-s-at-stake-on-the-final-day-of-dp-world-tour-championship/",
+          "title": "The DP World Tour Championship title, the Race to Dubai Crown, PGA Tour Dual Membership and Open exemptions: Here's what's at stake on the final day",
+          "publisher": "DP World Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_7MvXKirLUYphfDbzVFVkJAJyf8O4R4BR0ek_sUMXCLu7RKXNrLkhUxSUipw"
+        }
+      ]
+    },
+    {
+      "query": "winter storm",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T09:00:00Z",
+      "related_news_urls": [
+        "https://weather.com/2026/11/14/forecast/regional/storms-50-foot-waves-mountain-snow-heavy-rain-west",
+        "https://www.kcra.com/article/northern-california-storm-coverage-updates-november-13-2026/74424506",
+        "https://blog.palisadestahoe.com/weather/10-from-round-1-more-to-come/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTso5AC8GhcZ_Zxg2JdJ2oH8YsiI2vrwahR4AxlZoL_sWXJ7cNTddgvAGVyF0",
+      "image_credit": "The Weather Channel",
+      "news": [
+        {
+          "url": "https://weather.com/2026/11/14/forecast/regional/storms-50-foot-waves-mountain-snow-heavy-rain-west",
+          "title": "West storms to bring feet of mountain snow, heavy rain, 50-foot waves",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTso5AC8GhcZ_Zxg2JdJ2oH8YsiI2vrwahR4AxlZoL_sWXJ7cNTddgvAGVyF0"
+        },
+        {
+          "url": "https://www.kcra.com/article/northern-california-storm-coverage-updates-november-13-2026/74424506",
+          "title": "Northern California storm impacts: Latest updates on chain controls",
+          "publisher": "KCRA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpioc0KkWFz_TaUgxQ1XV48SzM-Ih4e4aGHkOp0e-kG30eNs9MLgFa1HgPpTA"
+        },
+        {
+          "url": "https://blog.palisadestahoe.com/weather/10-from-round-1-more-to-come/",
+          "title": "10″ From Round 1, More to Come",
+          "publisher": "Palisades Tahoe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs0W_mnbp437wV360K0pYrf59RkTEvUTlrD4wIndQcM2rQ2ZH_WPnKAiHqwSw"
+        }
+      ]
+    },
+    {
+      "query": "shameless",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T08:50:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "san diego padres",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T08:50:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/padres-takeaways-from-general-managers-meetings",
+        "https://www.mlbtraderumors.com/2026/11/padres-interested-in-freddy-peralta-nick-martinez-matthew-boyd.html",
+        "https://www.sandiegouniontribune.com/2026/11/13/padres-have-no-choice-but-to-spend-on-their-starting-rotation/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb8poQZiSt3LMhmnTrkzSDtH93A5wbqS_dIsT8zT3f1kOyP_koGCxE4DdfaB4",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/padres-takeaways-from-general-managers-meetings",
+          "title": "Takeaways from GM Meetings: Skubal pursuit, rotation needs and more",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb8poQZiSt3LMhmnTrkzSDtH93A5wbqS_dIsT8zT3f1kOyP_koGCxE4DdfaB4"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/padres-interested-in-freddy-peralta-nick-martinez-matthew-boyd.html",
+          "title": "Padres Interested In Freddy Peralta, Nick Martinez, Matthew Boyd",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUe6luWS0vk_okAAcKQZiekOfKLahFtHO4i9treTuYK9IvIXeHjHJIBhkLHGc"
+        },
+        {
+          "url": "https://www.sandiegouniontribune.com/2026/11/13/padres-have-no-choice-but-to-spend-on-their-starting-rotation/",
+          "title": "Padres have no choice but to spend on their starting rotation",
+          "publisher": "San Diego Union-Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKamGgnJuQQEeASPGrVOBz3dFfqb6fknMeq1Q0qaUAVSS2dsVVXMo5-N-QY4A"
+        }
+      ]
+    },
     {
       "query": "chiefs vs falcons",
       "approx_searches": "10000+",
@@ -47,7 +231,7 @@
       "published_at": "2026-11-15T08:20:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/rugby-league/live/cqx2z52p671wt",
-        "https://www.nrl.com/news/2026/11/10/world-cup-team-lists-mens-final/",
+        "https://www.stuff.co.nz/sport/361058943/kiwis-v-kangaroos-all-you-need-know-about-rugby-league-world-cup-final",
         "https://www.abc.net.au/news/2026-11-15/kangaroos-jillaroos-live-rugby-league-world-cup-finals/107376474"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtPvx_FOC9ogG2akTFp9_x_zZiUwjVKqPh3gV1fIHUrmkZvO6BsCKqdQMmj4",
@@ -61,11 +245,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtPvx_FOC9ogG2akTFp9_x_zZiUwjVKqPh3gV1fIHUrmkZvO6BsCKqdQMmj4"
         },
         {
-          "url": "https://www.nrl.com/news/2026/11/10/world-cup-team-lists-mens-final/",
-          "title": "World Cup Late Mail: Kangaroos-Kiwis finalise teams",
-          "publisher": "NRL.com",
+          "url": "https://www.stuff.co.nz/sport/361058943/kiwis-v-kangaroos-all-you-need-know-about-rugby-league-world-cup-final",
+          "title": "Kiwis v Kangaroos: All you need to know about the Rugby League World Cup final",
+          "publisher": "Stuff",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8X-RdNb7GbgwnAJv83ssvRf5E72_KltiFobmDZDptpBWjFDlz8AyZyFuaIbQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReoMrMVfl72AHpOKKs9pBj92-pEgDZOvs6FcwzFlsougZ2kjlE8dDe2cOCy74"
         },
         {
           "url": "https://www.abc.net.au/news/2026-11-15/kangaroos-jillaroos-live-rugby-league-world-cup-finals/107376474",
@@ -73,6 +257,41 @@
           "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0SVLwEAM1z4XZrH5nh07iSnfTx2Re9f9MIUaT3sS6-V7oy9Jwrvda7VEyZ5w"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 release date and time",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T08:10:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+        "https://corporate.comcast.com/press/releases/xfinity-gives-gamers-a-free-15-day-wifi-speed-increase-for-the-highly-anticipated-grand-theft-auto-vi-launch"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+          "title": "Pre-Load Grand Theft Auto VI Now",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg"
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+        },
+        {
+          "url": "https://corporate.comcast.com/press/releases/xfinity-gives-gamers-a-free-15-day-wifi-speed-increase-for-the-highly-anticipated-grand-theft-auto-vi-launch",
+          "title": "Xfinity Gives Gamers a Free 15-Day WiFi Speed Boost for the Highly Anticipated Grand Theft Auto VI Launch",
+          "publisher": "Comcast Corporation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBImV-v1KBkPXx5NoHDIIt4mXc7aeibfWFi3B5V0VIZga8uY0OZEmJybXnUN4"
         }
       ]
     },
@@ -108,251 +327,6 @@
           "publisher": "Polygon.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHOGpFLFE7jXrAktsgQWLICYiPbsHt7EjDjf3Dkj8OuaXeutKoHUQhFgp7mRU"
-        }
-      ]
-    },
-    {
-      "query": "bills vs jets",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T08:00:00Z",
-      "related_news_urls": [
-        "https://www.buffalobills.com/news/buffalo-bills-at-new-york-jets-where-to-watch-stream-and-listen-week-10",
-        "https://www.buffalorumblings.com/buffalo-bills-analysis/145264/buffalo-bills-trending-up-trending-down-the-players-who-will-decide-game-at-jets",
-        "https://www.syracuse.com/buffalo-bills/2026/11/buffalo-bills-could-exploit-major-jets-weakness-in-sundays-matchup-4-things-to-know.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8z1tcCI4_Q0moELqFXR1oZM2IWp7ykEtnkB996GN7u2WhCJDa2TKBS9yQElk",
-      "image_credit": "Buffalo Bills",
-      "news": [
-        {
-          "url": "https://www.buffalobills.com/news/buffalo-bills-at-new-york-jets-where-to-watch-stream-and-listen-week-10",
-          "title": "Buffalo Bills vs. New York Jets | Where to watch, stream and listen | Week 10",
-          "publisher": "Buffalo Bills",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8z1tcCI4_Q0moELqFXR1oZM2IWp7ykEtnkB996GN7u2WhCJDa2TKBS9yQElk"
-        },
-        {
-          "url": "https://www.buffalorumblings.com/buffalo-bills-analysis/145264/buffalo-bills-trending-up-trending-down-the-players-who-will-decide-game-at-jets",
-          "title": "Bills trending up, trending down: The players who will decide game at Jets",
-          "publisher": "Buffalo Rumblings",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnuL0Z4OWmAIfzbs4kOR6bH6debAlEMolCg5poFTqC3iFxhxyaB_zF8lm3cqw"
-        },
-        {
-          "url": "https://www.syracuse.com/buffalo-bills/2026/11/buffalo-bills-could-exploit-major-jets-weakness-in-sundays-matchup-4-things-to-know.html",
-          "title": "Buffalo Bills could exploit major Jets weakness in Sunday’s matchup (4 things to know)",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26c8FXi086RD51JqLQOXg-ugqWGGJi-t4KWeVIVWLLVBuJDETp2TFPpF8u8I"
-        }
-      ]
-    },
-    {
-      "query": "samsung galaxy s27 pro production",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T07:50:00Z",
-      "related_news_urls": [
-        "https://sammyguru.com/exclusive-galaxy-s27-series-camera-sensors/",
-        "https://www.phonearena.com/reviews/samsung-galaxy-s27-ultra-vs-s24-ultra_id8087",
-        "https://www.forbes.com/sites/jaymcgregor/2026/11/14/samsung-galaxy-s27-release-date-galaxy-s27-pro-ultra-production-price/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBDUXqnHTPvzM5iakp97QVlG4euzUkqMQ_0sGK26cK2T9YdEtQvZJdhLcpstM",
-      "image_credit": "SammyGuru",
-      "news": [
-        {
-          "url": "https://sammyguru.com/exclusive-galaxy-s27-series-camera-sensors/",
-          "title": "Exclusive: Galaxy S27, S27+, S27 Pro, S27 Ultra Camera Sensors Revealed",
-          "publisher": "SammyGuru",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBDUXqnHTPvzM5iakp97QVlG4euzUkqMQ_0sGK26cK2T9YdEtQvZJdhLcpstM"
-        },
-        {
-          "url": "https://www.phonearena.com/reviews/samsung-galaxy-s27-ultra-vs-s24-ultra_id8087",
-          "title": "Samsung Galaxy S27 Ultra vs Galaxy S24 Ultra: Main differences to expect",
-          "publisher": "PhoneArena",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEVSoeipleDWGC4jetAKX-fGnM4GIrbEnJaClXwDdA200kNwZ3IYN0D5Fk1Y"
-        },
-        {
-          "url": "https://www.forbes.com/sites/jaymcgregor/2026/11/14/samsung-galaxy-s27-release-date-galaxy-s27-pro-ultra-production-price/",
-          "title": "Galaxy S27 Release Date: Samsung Bets Big On New 'Pro' Phone",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTycRk5MivmjHVEHRpaPMlkXhQWMQgBWnZ6DF7fjB5xJMXnhtTHKZUd55TckNA"
-        }
-      ]
-    },
-    {
-      "query": "is amon ra st brown playing",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T07:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
-        "https://www.detroitlions.com/news/notebook-st-brown-excited-to-play-in-germany-goff-hutchinson-sewell",
-        "https://www.nytimes.com/athletic/7779846/2026/11/13/lions-munich-amon-ra-st-brown-patriots/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqLgsQkjMhrba8o_2orzMzchGNcvdWCoPd95LTMw_gh7PfnfvJuzhDNALN1MQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
-          "title": "Untold stories of Detroit Lions WR Amon-Ra St. Brown's German upbringing",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqLgsQkjMhrba8o_2orzMzchGNcvdWCoPd95LTMw_gh7PfnfvJuzhDNALN1MQ"
-        },
-        {
-          "url": "https://www.detroitlions.com/news/notebook-st-brown-excited-to-play-in-germany-goff-hutchinson-sewell",
-          "title": "NOTEBOOK: Playing in Germany 'a dream come true' for St. Brown",
-          "publisher": "Detroit Lions",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ljlNM16NrtPP5FztgONqlddw5f2YR6p1SuJ8DZbZACpHI7xmMb8l4dKaiJI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7779846/2026/11/13/lions-munich-amon-ra-st-brown-patriots/",
-          "title": "Lions’ Amon-Ra St. Brown takes center stage in Munich in a special kind of homecoming",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaAIyCEh6tdJ64Yh3GAo9X6132KIi2x3gSkQ_9x_GsOQPIl4X7U95Wg_biPPA"
-        }
-      ]
-    },
-    {
-      "query": "vikings vs packers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T07:40:00Z",
-      "related_news_urls": [
-        "https://www.packers.com/news/inbox-it-is-a-whole-different-ball-game-this-time-around-nov-14-2026",
-        "https://www.nytimes.com/athletic/7776871/2026/11/15/packers-vikings-score-result-stats/",
-        "https://sports.yahoo.com/nfl/betting/article/week-10-nfl-picks-against-the-spread-predictions-for-every-game-kirk-cousins-returns-to-lead-vikings-vs-packers-134850175.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwv_4tv6jzsucmJwMxgWet9off9FvJIqjxoUF963mBMeI6FkQFl9E_jpVH6R0",
-      "image_credit": "Green Bay Packers – packers.com",
-      "news": [
-        {
-          "url": "https://www.packers.com/news/inbox-it-is-a-whole-different-ball-game-this-time-around-nov-14-2026",
-          "title": "Inbox: It is a whole different ball game this time around",
-          "publisher": "Green Bay Packers – packers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwv_4tv6jzsucmJwMxgWet9off9FvJIqjxoUF963mBMeI6FkQFl9E_jpVH6R0"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7776871/2026/11/15/packers-vikings-score-result-stats/",
-          "title": "Packers vs. Vikings score predictions: Can Kirk Cousins turn the tide in huge NFC North battle?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNYHnVKyQYw5QBSUEJuLmilQP3Qm2X7ZHU6uAs3x0yx1YZL-bP2oCtE9l46w"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/betting/article/week-10-nfl-picks-against-the-spread-predictions-for-every-game-kirk-cousins-returns-to-lead-vikings-vs-packers-134850175.html",
-          "title": "Week 10 NFL picks against the spread, predictions for every game: Kirk Cousins returns to lead Vikings vs. Packers",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5BQhtKlcNMkUv8AsRwnzb12q2vSWrXCV7OfreMHnfD5xvgLVE3TArPvIA1lA"
-        }
-      ]
-    },
-    {
-      "query": "seahawks vs raiders",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T07:30:00Z",
-      "related_news_urls": [
-        "https://www.seattletimes.com/sports/seahawks/what-to-know-as-seahawks-face-fernando-mendoza-raiders/",
-        "https://sports.yahoo.com/articles/seahawks-reveal-blunt-approach-facing-064028599.html",
-        "https://www.seahawks.com/news/what-to-watch-in-the-seahawks-week-10-game-at-las-vegas"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLUZbKf0jefdaJCDAXxiU4ODLkcZ9_kb8JxVUFZ0oGpKXF1GU1nfnk1NJurWU",
-      "image_credit": "The Seattle Times",
-      "news": [
-        {
-          "url": "https://www.seattletimes.com/sports/seahawks/what-to-know-as-seahawks-face-fernando-mendoza-raiders/",
-          "title": "What to know as Seahawks face Raiders, plus Bob Condotta's prediction",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLUZbKf0jefdaJCDAXxiU4ODLkcZ9_kb8JxVUFZ0oGpKXF1GU1nfnk1NJurWU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/seahawks-reveal-blunt-approach-facing-064028599.html",
-          "title": "Seahawks Reveal Blunt Approach to Facing Raiders’ Fernando Mendoza",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXCdD-sNRibzYIG5MmNCwMbSJqwpn43UFZSkZzjVw_bIDFF7mGSKfJ7gvR4s8"
-        },
-        {
-          "url": "https://www.seahawks.com/news/what-to-watch-in-the-seahawks-week-10-game-at-las-vegas",
-          "title": "What To Watch In The Seahawks’ Week 10 Game At Las Vegas",
-          "publisher": "Seattle Seahawks",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgX3sJtKYjWkPxoEstSaakBRorFN0R3NNfg69ZkCDqYMH3pMZ3UvOx5nI_Q4Y"
-        }
-      ]
-    },
-    {
-      "query": "earthquake",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T07:30:00Z",
-      "related_news_urls": [
-        "https://www.abc4.com/news/northern-utah/3-4-magnitude-earthquake-shakes-enterprise-northern-utah/",
-        "https://kutv.com/news/local/magnitude-34-earthquake-strikes-about-7-miles-southeast-of-huntsville",
-        "https://gephardtdaily.com/local/magnitude-3-4-earthquake-strikes-near-huntsville-felt-in-weber-and-davis-counties/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnht69hW0xBdETbPI4XT1p4t4jdvgkocz2vbawa-8NZ7GzCJ9Lq1MPY_Ld3o8",
-      "image_credit": "ABC4 Utah",
-      "news": [
-        {
-          "url": "https://www.abc4.com/news/northern-utah/3-4-magnitude-earthquake-shakes-enterprise-northern-utah/",
-          "title": "3.4 magnitude earthquake shakes Huntsville, Northern Utah",
-          "publisher": "ABC4 Utah",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnht69hW0xBdETbPI4XT1p4t4jdvgkocz2vbawa-8NZ7GzCJ9Lq1MPY_Ld3o8"
-        },
-        {
-          "url": "https://kutv.com/news/local/magnitude-34-earthquake-strikes-about-7-miles-southeast-of-huntsville",
-          "title": "Magnitude 3.4 earthquake strikes about 7 miles southeast of Huntsville",
-          "publisher": "KUTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnYcWk6ap5HfBKqEBpP_TC2HYPRjD4Lr9CIOaHtDd4foMjmVcCfmNinydXL88"
-        },
-        {
-          "url": "https://gephardtdaily.com/local/magnitude-3-4-earthquake-strikes-near-huntsville-felt-in-weber-and-davis-counties/",
-          "title": "Magnitude 3.4 earthquake strikes near Huntsville, felt in Weber and Davis counties",
-          "publisher": "Gephardt Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJZhb_dubNnapueQRpIh7i0ePZcir9Zwx-0IPyzh3QS8-uOl0Om8wCguzUcM"
-        }
-      ]
-    },
-    {
-      "query": "sa vs ban",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T07:10:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/match-preview",
-        "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
-        "https://www.thedailystar.net/sports/cricket/news/batting-key-ending-proteas-jinx-4324181"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvpJBlACtu9oI5iNI2IGe1T740oAlcZ67h7DgjaMmb2-OBBZhXlyncGZh5T78",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/match-preview",
-          "title": "On-song South Africa host Bangladesh with an eye on another WTC final",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvpJBlACtu9oI5iNI2IGe1T740oAlcZ67h7DgjaMmb2-OBBZhXlyncGZh5T78"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
-          "title": "Bangladesh wins toss and opts to bat against South Africa in first test",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6v-mUtn4KD_fzQTDmo9txXXX7w2e7v0Oy_nP7KNy50tSWwURGRXScUSqni4"
-        },
-        {
-          "url": "https://www.thedailystar.net/sports/cricket/news/batting-key-ending-proteas-jinx-4324181",
-          "title": "Batting key to ending Proteas jinx",
-          "publisher": "The Daily Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvMMmoD5WBvErQnm_Qwy_WWrRBz-GWamh9q3F0jjzilRdHqHAmgQtzONt0hE"
         }
       ]
     }
