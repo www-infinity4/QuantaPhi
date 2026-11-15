@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-15T00:01:55.545686Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "purdue vs iowa",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://hawkeyesports.com/news/2026/11/09/notes-military-appreciation-vs-purdue",
+        "https://www.cbssports.com/betting/news/purdue-vs-iowa-picks-odds-prediction-start-time-college-football-betting-preview-saturday/",
+        "https://247sports.com/college/iowa/article/iowa-football-game-thread-purdue-boilermakers-292636904/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUo8pXiYzfS9uEJl-bPxRHKfROv-4b79oQT8PJcG0y6LGZDyTX_8qI1j3siC4",
+      "image_credit": "Iowa Hawkeyes Athletics",
+      "news": [
+        {
+          "url": "https://hawkeyesports.com/news/2026/11/09/notes-military-appreciation-vs-purdue",
+          "title": "NOTES: Military Appreciation vs. Purdue",
+          "publisher": "Iowa Hawkeyes Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUo8pXiYzfS9uEJl-bPxRHKfROv-4b79oQT8PJcG0y6LGZDyTX_8qI1j3siC4"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/purdue-vs-iowa-picks-odds-prediction-start-time-college-football-betting-preview-saturday/",
+          "title": "Purdue vs. Iowa picks, odds, prediction, start time: College football betting preview for Saturday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA4ZSW4dJlJ_tmt_0w77dH_sT6nQ_eWY-BbQ5Nfjxyy32kq_bjvQWEUC2O-CY"
+        },
+        {
+          "url": "https://247sports.com/college/iowa/article/iowa-football-game-thread-purdue-boilermakers-292636904/",
+          "title": "Game Thread: No. 15 Iowa vs. Purdue",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxs7pTvebYIoF1SSjnRQ1VVhP0rl5STin6U90uobYgtzGb8qKmLllesfqx4IE"
+        }
+      ]
+    },
+    {
+      "query": "stanford vs virginia tech",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/virginia-tech/article/virginia-tech-stanford-football-how-to-watch-tv-channel-kickoff-2026-292673695/",
+        "https://sports.yahoo.com/articles/game-preview-score-prediction-virginia-173015965.html",
+        "https://hokiesports.com/news/2026/11/10/five-things-to-know-virginia-tech-vs-stanford"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMk8Q_2mjxK7XgBtrC2HO1HwzqAgx9HJbuGEK4ok0j4ncVkUVoDuX_SWdxAzs",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/virginia-tech/article/virginia-tech-stanford-football-how-to-watch-tv-channel-kickoff-2026-292673695/",
+          "title": "How to Watch Virginia Tech vs. Stanford: TV Channel, Kickoff Time, Streaming and More",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMk8Q_2mjxK7XgBtrC2HO1HwzqAgx9HJbuGEK4ok0j4ncVkUVoDuX_SWdxAzs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/game-preview-score-prediction-virginia-173015965.html",
+          "title": "Game Preview and Score Prediction for Virginia Tech Football vs. Stanford",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://hokiesports.com/news/2026/11/10/five-things-to-know-virginia-tech-vs-stanford",
+          "title": "Five Things to Know: Virginia Tech vs. Stanford",
+          "publisher": "Virginia Tech Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLucfilBjlYi9ZIRvGr5xUb2PBRdGorHYtJnoa5u38vpV6DjK-_SlubR_PLZM"
+        }
+      ]
+    },
+    {
+      "query": "unlv vs new mexico",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://golobos.com/news/2026/11/13/game-day-info-game-10-lobos-hosting-unlv",
+        "https://www.abqjournal.com/sports/three-things-to-watch-for-as-no-23-new-mexico-hosts-unlv/3162600",
+        "https://www.reviewjournal.com/sports/unlv/unlv-football/how-to-watch-unlv-vs-new-mexico-tv-channel-time-radio-for-rebels-week-11-matchup-3913843/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9reu6fA40Ku8QM3YudAUBcD5edIeMtllbSR5wWcAGlvgvlDcIyXGfUBOi194",
+      "image_credit": "New Mexico Lobos",
+      "news": [
+        {
+          "url": "https://golobos.com/news/2026/11/13/game-day-info-game-10-lobos-hosting-unlv",
+          "title": "Game Day Info: Game 10- Lobos hosting UNLV",
+          "publisher": "New Mexico Lobos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9reu6fA40Ku8QM3YudAUBcD5edIeMtllbSR5wWcAGlvgvlDcIyXGfUBOi194"
+        },
+        {
+          "url": "https://www.abqjournal.com/sports/three-things-to-watch-for-as-no-23-new-mexico-hosts-unlv/3162600",
+          "title": "Three things to watch for as No. 23 New Mexico hosts UNLV",
+          "publisher": "Albuquerque Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROl98P-pMhMQkM3dmMwYeG4yjvjZTGzcfbaBEBse6yiL4rwMaTbhvQU-QzLxE"
+        },
+        {
+          "url": "https://www.reviewjournal.com/sports/unlv/unlv-football/how-to-watch-unlv-vs-new-mexico-tv-channel-time-radio-for-rebels-week-11-matchup-3913843/",
+          "title": "How to watch UNLV vs. New Mexico: TV channel, time, radio for Rebels Week 11 matchup",
+          "publisher": "Las Vegas Review-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb1aIg_QoqU9kxE8X5CcYbhzsaw0ZXZFNbYO2qSXniwN8533YZ0P3k8B6D8p8"
+        }
+      ]
+    },
+    {
+      "query": "famous birthdays",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-14-2026-includes-celebrities-olga-kurylenko-patrick-warburton.html",
+        "https://www.yahoo.com/entertainment/articles/famous-birthdays-nov-14-vanessa-080007281.html",
+        "https://www.ktvb.com/article/opinion/columnists/scott-slant/november-12-1961-this-day-in-sports-nadia-comaneci-birthday-summer-olympics-first-gymnast-perfect-10-romania/277-baf84cef-3dab-43fe-8fb6-c2d9d73f9dbb"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9raoLvxD1MZO2rK3KNB-7jKSAfwqpeAKpaAuZrMc5H2toYDnmyO_LQ-oLz98",
+      "image_credit": "Cleveland.com",
+      "news": [
+        {
+          "url": "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-14-2026-includes-celebrities-olga-kurylenko-patrick-warburton.html",
+          "title": "Today’s famous birthdays list for November 14, 2026 includes celebrities Olga Kurylenko, Patrick Warburton",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9raoLvxD1MZO2rK3KNB-7jKSAfwqpeAKpaAuZrMc5H2toYDnmyO_LQ-oLz98"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/famous-birthdays-nov-14-vanessa-080007281.html",
+          "title": "Famous birthdays for Nov. 14: Vanessa Bayer, Devonta Smith",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3Xols6ClEReLb2yHDK6ftKDq-VoFuveAG8qkchO1T223FVD40ErTOg6UJY6w"
+        },
+        {
+          "url": "https://www.ktvb.com/article/opinion/columnists/scott-slant/november-12-1961-this-day-in-sports-nadia-comaneci-birthday-summer-olympics-first-gymnast-perfect-10-romania/277-baf84cef-3dab-43fe-8fb6-c2d9d73f9dbb",
+          "title": "This Day In Sports: Nadia Comaneci springs into the world",
+          "publisher": "KTVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWRnzjc7acFBrdd3qHIgzQFeiknVe7bknFeMZ9nn5TLTS40oq7tu6w4i4_I8g"
+        }
+      ]
+    },
+    {
+      "query": "husker volleyball schedule",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/live-updates/wrestling-men/d1/no-2-oklahoma-state-overpowers-no-3-nebraska-27-6-stillwater",
+        "https://huskers.com/news/2026/11/13/no-3-nebraska-falls-to-no-2-oklahoma-state",
+        "https://www.flowrestling.org/articles/16402578-rocklin-zinkin-upsets-vincent-robinson-in-oklahoma-state-win"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA2K2byflIsjnJsVHksIpxWvwoRjMBA05MiEw6kJ9gxAboxppt5EjxTyH63Wk",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/live-updates/wrestling-men/d1/no-2-oklahoma-state-overpowers-no-3-nebraska-27-6-stillwater",
+          "title": "No. 2 Oklahoma State overpowers No. 3 Nebraska 27-6 in Stillwater",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA2K2byflIsjnJsVHksIpxWvwoRjMBA05MiEw6kJ9gxAboxppt5EjxTyH63Wk"
+        },
+        {
+          "url": "https://huskers.com/news/2026/11/13/no-3-nebraska-falls-to-no-2-oklahoma-state",
+          "title": "No. 3 Nebraska Falls to No. 2 Oklahoma State - University of Nebraska - Official Athletics Website",
+          "publisher": "huskers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY_02LVBdpcpNXKblL9cujEWQB4lYQijtIjiTVzUJIilB9jXLKP10tZCdn-mE"
+        },
+        {
+          "url": "https://www.flowrestling.org/articles/16402578-rocklin-zinkin-upsets-vincent-robinson-in-oklahoma-state-win",
+          "title": "Rocklin Zinkin Stuns NCAA Champion Vincent Robinson In Oklahoma State's Win Over Nebraska",
+          "publisher": "FloWrestling",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTLwvYwoZ-l1eFJ8308eIWVnX-_Yx4Urkx5ZhfuquAkPkahJBTgDKDeQrA-Ko"
+        }
+      ]
+    },
+    {
+      "query": "amy acker",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66110656/?ref_=int_nwr_3",
+        "https://www.justjared.com/2026/11/13/is-amy-acker-single-or-married-all-about-her-real-life-husband/",
+        "https://parade.com/tv/two-hallmark-fan-favorites-team-up-for-a-new-christmas-romance-premiering-tonight"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlEYq357QjniR38RZM0ypgYDcCWkDNtljDVuqEkzypV4sB1kDXRjKKOEtl9-U",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66110656/?ref_=int_nwr_3",
+          "title": "Is Amy Acker Single or Married? All About Her Real-Life Husband!",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlEYq357QjniR38RZM0ypgYDcCWkDNtljDVuqEkzypV4sB1kDXRjKKOEtl9-U"
+        },
+        {
+          "url": "https://www.justjared.com/2026/11/13/is-amy-acker-single-or-married-all-about-her-real-life-husband/",
+          "title": "Is Amy Acker Single or Married? All About Her Real-Life Husband!",
+          "publisher": "Just Jared",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmNwV9vCu78mZuZBgIgfQCj7t_KCQfelaUgUQmR_UusAVI6gZ6fphTxQRN1YU"
+        },
+        {
+          "url": "https://parade.com/tv/two-hallmark-fan-favorites-team-up-for-a-new-christmas-romance-premiering-tonight",
+          "title": "Two Hallmark Fan Favorites Team Up for a New Christmas Romance Premiering Tonight",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcI7DGwYzOYzL_9HYK1G5XwBSOegkyWCLB2fw9je1qP9NBxqQPDoqo5RZ726E"
+        }
+      ]
+    },
+    {
+      "query": "jesse palmer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
+        "https://abcnews.com/GMA/Culture/bachelor-season-30-feature-nfl-quarterback-sam-hartman/story?id=138086611",
+        "https://www.charlotteobserver.com/charlottefive/c5-people/article318062832.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2I8XTCTd0WDSpsoHH-zJfvqLmIFH_tdLb9d_M8fWK-3DT6Rq26l80XWxMRDA",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
+          "title": "Commanders QB Sam Hartman to star as 'The Bachelor' in milestone 30th season",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2I8XTCTd0WDSpsoHH-zJfvqLmIFH_tdLb9d_M8fWK-3DT6Rq26l80XWxMRDA"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/bachelor-season-30-feature-nfl-quarterback-sam-hartman/story?id=138086611",
+          "title": "'The Bachelor' season 30 to feature NFL quarterback Sam Hartman",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl2mI7gmxzDgKhVIrULpCk9Epso8e9zjhGCBFk7RdhIEggFfTzctw48cIofgs"
+        },
+        {
+          "url": "https://www.charlotteobserver.com/charlottefive/c5-people/article318062832.html",
+          "title": "Who’s Sam Hartman? 5 things to know about ‘The Bachelor’ and Charlotte native",
+          "publisher": "Charlotte Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScubPyzn8E9WIMQbaZnIUdv5qhF1yG-83p30pva19i9u_ehwwJkflPh-8dPV0"
+        }
+      ]
+    },
+    {
+      "query": "uf",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://www.fox5atlanta.com/news/stepfather-pleads-florida-student-detained-ice-what-more-do-you-want",
+        "https://www.wcjb.com/2026/11/13/university-florida-engineering-student-detained-by-ice-family-seeks-release/",
+        "https://www.alligator.org/article/2026/11/protesters-demand-uf-rescind-287-g-agreement-again"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYzgEaTT8nD8wOlLw6lB1n06T6IOnN82JA4oedqTNm-6mpX0dSMPAhFNfLWx0",
+      "image_credit": "FOX 5 Atlanta",
+      "news": [
+        {
+          "url": "https://www.fox5atlanta.com/news/stepfather-pleads-florida-student-detained-ice-what-more-do-you-want",
+          "title": "Stepfather pleads for Florida student detained by ICE: 'What more do you want?'",
+          "publisher": "FOX 5 Atlanta",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYzgEaTT8nD8wOlLw6lB1n06T6IOnN82JA4oedqTNm-6mpX0dSMPAhFNfLWx0"
+        },
+        {
+          "url": "https://www.wcjb.com/2026/11/13/university-florida-engineering-student-detained-by-ice-family-seeks-release/",
+          "title": "University of Florida engineering student detained by ICE; family seeks release",
+          "publisher": "WCJB",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmxGL86W9kp55vaQm8KU0WrYeMVKLesQCx_pXWZOR28hofVbHYIqXMYSxBbA0"
+        },
+        {
+          "url": "https://www.alligator.org/article/2026/11/protesters-demand-uf-rescind-287-g-agreement-again",
+          "title": "Protesters demand UF rescind 287(g) agreement, again",
+          "publisher": "The Independent Florida Alligator",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh0PVWEddsHHhyc9MeH2TTjhY63NBwnxe1MTrl2pQpPTOEZ7gwsmqu077Ds3U"
+        }
+      ]
+    },
+    {
+      "query": "mavericks vs cavaliers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T23:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/along-cavaliers-host-mavs-injuries-223046452.html",
+        "https://www.si.com/nba/cavaliers/onsi/cavaliers-vs-mavericks-how-to-watch-starting-lineups-injury-report-and-more-01m7dqvsbn8x",
+        "https://www.cleveland.com/cavs/2026/11/cavs-vs-mavericks-preview-odds-injury-report-tv.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVi_6CzGJcTM0rETI4-aisBEZLl6pTg8-GcqKBc60Af9FxyGGi_kcPa6UjW9g",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/along-cavaliers-host-mavs-injuries-223046452.html",
+          "title": "Follow along as the Cavaliers host Mavs, injuries, score updates",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVi_6CzGJcTM0rETI4-aisBEZLl6pTg8-GcqKBc60Af9FxyGGi_kcPa6UjW9g"
+        },
+        {
+          "url": "https://www.si.com/nba/cavaliers/onsi/cavaliers-vs-mavericks-how-to-watch-starting-lineups-injury-report-and-more-01m7dqvsbn8x",
+          "title": "Cavaliers vs. Mavericks: How to Watch, Starting Lineups, Injury Report and More",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFoz6AliyxhGvPdwpW_-QNHuQA06HCiWD1S7cc7c2-ao9IXYq88VuG6GAtrxY"
+        },
+        {
+          "url": "https://www.cleveland.com/cavs/2026/11/cavs-vs-mavericks-preview-odds-injury-report-tv.html",
+          "title": "Cavs vs. Mavericks: preview, odds, injury report, TV",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEeIvEgdHn5JVCvetUCB-H8Fo3Rbn1r6yX2SQCAK4bzZjwkwURJV0J3ujGtzU"
+        }
+      ]
+    },
+    {
+      "query": "alexander skarsgård",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T23:30:00Z",
+      "related_news_urls": [
+        "https://theithacan.org/70547/life-culture/reviews/wicker-is-a-unique-romance-with-deeper-themes-hiding-under-its-eccentrically-woven-surface/",
+        "https://girlculture.substack.com/p/wicker-and-wildwood-rewrite-the-fable",
+        "https://vogueadria.com/monster-romance-films/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7b51BfZ13Gks6QmB_7w-RZt9qln0UAX6mNxjl6sZO3mj2Ovqygou8uIWF64E",
+      "image_credit": "The Ithacan",
+      "news": [
+        {
+          "url": "https://theithacan.org/70547/life-culture/reviews/wicker-is-a-unique-romance-with-deeper-themes-hiding-under-its-eccentrically-woven-surface/",
+          "title": "‘Wicker’ is a unique romance with deeper themes hiding under its eccentrically woven surface",
+          "publisher": "The Ithacan",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7b51BfZ13Gks6QmB_7w-RZt9qln0UAX6mNxjl6sZO3mj2Ovqygou8uIWF64E"
+        },
+        {
+          "url": "https://girlculture.substack.com/p/wicker-and-wildwood-rewrite-the-fable",
+          "title": "‘Wicker’ and ‘Wildwood’ rewrite the fable",
+          "publisher": "Girl Culture | Caroline Siede",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6z6RPX08CYva8iURtAhcTWSEPrXC9SpjSrmt6qGZLhv_qIBCkt0KBttlrnZk"
+        },
+        {
+          "url": "https://vogueadria.com/monster-romance-films/",
+          "title": "Minotaurs, mutants and unlikely lovers… Women are falling for monster romances",
+          "publisher": "Vogue Adria",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiKGSzmDlqiBzImt86U3iVMR9_ACXJ8BT9900g880mwdckFCMUygrAujbVcTo"
+        }
+      ]
+    }
+  ]
+}

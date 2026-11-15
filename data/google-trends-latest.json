@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T23:31:07.853340Z",
+  "checked_at": "2026-11-15T00:01:55.545686Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nuggets vs pelicans",
+      "query": "purdue vs iowa",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://hawkeyesports.com/news/2026/11/09/notes-military-appreciation-vs-purdue",
+        "https://www.cbssports.com/betting/news/purdue-vs-iowa-picks-odds-prediction-start-time-college-football-betting-preview-saturday/",
+        "https://247sports.com/college/iowa/article/iowa-football-game-thread-purdue-boilermakers-292636904/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUo8pXiYzfS9uEJl-bPxRHKfROv-4b79oQT8PJcG0y6LGZDyTX_8qI1j3siC4",
+      "image_credit": "Iowa Hawkeyes Athletics",
+      "news": [
+        {
+          "url": "https://hawkeyesports.com/news/2026/11/09/notes-military-appreciation-vs-purdue",
+          "title": "NOTES: Military Appreciation vs. Purdue",
+          "publisher": "Iowa Hawkeyes Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUo8pXiYzfS9uEJl-bPxRHKfROv-4b79oQT8PJcG0y6LGZDyTX_8qI1j3siC4"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/purdue-vs-iowa-picks-odds-prediction-start-time-college-football-betting-preview-saturday/",
+          "title": "Purdue vs. Iowa picks, odds, prediction, start time: College football betting preview for Saturday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA4ZSW4dJlJ_tmt_0w77dH_sT6nQ_eWY-BbQ5Nfjxyy32kq_bjvQWEUC2O-CY"
+        },
+        {
+          "url": "https://247sports.com/college/iowa/article/iowa-football-game-thread-purdue-boilermakers-292636904/",
+          "title": "Game Thread: No. 15 Iowa vs. Purdue",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxs7pTvebYIoF1SSjnRQ1VVhP0rl5STin6U90uobYgtzGb8qKmLllesfqx4IE"
+        }
+      ]
+    },
+    {
+      "query": "stanford vs virginia tech",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T23:10:00Z",
+      "published_at": "2026-11-14T23:40:00Z",
       "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/denver-nuggets-vs-new-orleans-pelicans-prediction-odds-6019784/",
-        "https://sports.yahoo.com/articles/nuggets-vs-pelicans-injury-report-192248837.html",
-        "https://nuggets.com/news/nuggets-conclude-road-trip-pelicans"
+        "https://247sports.com/college/virginia-tech/article/virginia-tech-stanford-football-how-to-watch-tv-channel-kickoff-2026-292673695/",
+        "https://sports.yahoo.com/articles/game-preview-score-prediction-virginia-173015965.html",
+        "https://hokiesports.com/news/2026/11/10/five-things-to-know-virginia-tech-vs-stanford"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVFtaXQmvM3BvMe1z6mFvl893dqfWUbkhhMSOU0WjNiR9TF-psq8qKlmGv-l0",
-      "image_credit": "Sportsgambler",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMk8Q_2mjxK7XgBtrC2HO1HwzqAgx9HJbuGEK4ok0j4ncVkUVoDuX_SWdxAzs",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/denver-nuggets-vs-new-orleans-pelicans-prediction-odds-6019784/",
-          "title": "Denver Nuggets vs New Orleans Pelicans Prediction, Picks & Odds | NBA Saturday",
-          "publisher": "Sportsgambler",
+          "url": "https://247sports.com/college/virginia-tech/article/virginia-tech-stanford-football-how-to-watch-tv-channel-kickoff-2026-292673695/",
+          "title": "How to Watch Virginia Tech vs. Stanford: TV Channel, Kickoff Time, Streaming and More",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVFtaXQmvM3BvMe1z6mFvl893dqfWUbkhhMSOU0WjNiR9TF-psq8qKlmGv-l0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMk8Q_2mjxK7XgBtrC2HO1HwzqAgx9HJbuGEK4ok0j4ncVkUVoDuX_SWdxAzs"
         },
         {
-          "url": "https://sports.yahoo.com/articles/nuggets-vs-pelicans-injury-report-192248837.html",
-          "title": "Nuggets vs Pelicans Injury Report And Game Preview",
+          "url": "https://sports.yahoo.com/articles/game-preview-score-prediction-virginia-173015965.html",
+          "title": "Game Preview and Score Prediction for Virginia Tech Football vs. Stanford",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFkT8ctFc5lzDMcKRbzeAbQeMfR7VUX55YmSl03gmsXu1jiUfZXGFKXcn4CYY"
+          "image_url": null
         },
         {
-          "url": "https://nuggets.com/news/nuggets-conclude-road-trip-pelicans",
-          "title": "Nuggets conclude road trip against Pelicans",
-          "publisher": "NBA.com",
+          "url": "https://hokiesports.com/news/2026/11/10/five-things-to-know-virginia-tech-vs-stanford",
+          "title": "Five Things to Know: Virginia Tech vs. Stanford",
+          "publisher": "Virginia Tech Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREiSm-0f09hz71VyoNgVK53fWvqF8ondctlfxT0h7r7jvtKFEljg3I_iflAdw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLucfilBjlYi9ZIRvGr5xUb2PBRdGorHYtJnoa5u38vpV6DjK-_SlubR_PLZM"
         }
       ]
     },
     {
-      "query": "wild vs bruins",
+      "query": "unlv vs new mexico",
       "approx_searches": "1000+",
-      "published_at": "2026-11-14T23:10:00Z",
+      "published_at": "2026-11-14T23:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/wild/news/projected-lineup-wild-at-bruins-111426",
-        "https://sports.yahoo.com/articles/bruins-vs-wild-score-live-230002421.html",
-        "https://www.stanleycupofchowder.com/bruins-gameday/59750/bruins-vs-wild-preview-boston-looks-to-rebound-against-minnesota"
+        "https://golobos.com/news/2026/11/13/game-day-info-game-10-lobos-hosting-unlv",
+        "https://www.abqjournal.com/sports/three-things-to-watch-for-as-no-23-new-mexico-hosts-unlv/3162600",
+        "https://www.reviewjournal.com/sports/unlv/unlv-football/how-to-watch-unlv-vs-new-mexico-tv-channel-time-radio-for-rebels-week-11-matchup-3913843/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmVTA7GEbi0jnGTfbwAerBGqsd2tnsDZ_p7yE88pZXE36qYAo1MN7RXsytgjI",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9reu6fA40Ku8QM3YudAUBcD5edIeMtllbSR5wWcAGlvgvlDcIyXGfUBOi194",
+      "image_credit": "New Mexico Lobos",
       "news": [
         {
-          "url": "https://www.nhl.com/wild/news/projected-lineup-wild-at-bruins-111426",
-          "title": "Projected Lineup: Wild at Bruins",
-          "publisher": "NHL.com",
+          "url": "https://golobos.com/news/2026/11/13/game-day-info-game-10-lobos-hosting-unlv",
+          "title": "Game Day Info: Game 10- Lobos hosting UNLV",
+          "publisher": "New Mexico Lobos",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmVTA7GEbi0jnGTfbwAerBGqsd2tnsDZ_p7yE88pZXE36qYAo1MN7RXsytgjI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9reu6fA40Ku8QM3YudAUBcD5edIeMtllbSR5wWcAGlvgvlDcIyXGfUBOi194"
         },
         {
-          "url": "https://sports.yahoo.com/articles/bruins-vs-wild-score-live-230002421.html",
-          "title": "Bruins vs. Wild Score, Live Updates, Highlights From NHL Game",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.abqjournal.com/sports/three-things-to-watch-for-as-no-23-new-mexico-hosts-unlv/3162600",
+          "title": "Three things to watch for as No. 23 New Mexico hosts UNLV",
+          "publisher": "Albuquerque Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBj9RlXvWH8hqkoxcAcTTGB1uDGBZwW7W3x4uBalKT_gPebDQvmVnyfOKdJCU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROl98P-pMhMQkM3dmMwYeG4yjvjZTGzcfbaBEBse6yiL4rwMaTbhvQU-QzLxE"
         },
         {
-          "url": "https://www.stanleycupofchowder.com/bruins-gameday/59750/bruins-vs-wild-preview-boston-looks-to-rebound-against-minnesota",
-          "title": "Bruins vs. Wild PREVIEW: Boston looks to rebound against Minnesota",
-          "publisher": "Stanley Cup of Chowder",
+          "url": "https://www.reviewjournal.com/sports/unlv/unlv-football/how-to-watch-unlv-vs-new-mexico-tv-channel-time-radio-for-rebels-week-11-matchup-3913843/",
+          "title": "How to watch UNLV vs. New Mexico: TV channel, time, radio for Rebels Week 11 matchup",
+          "publisher": "Las Vegas Review-Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH5UAACvC-MpVe-3I77twcyG4fPxyoEA2iw-Pbz8Ke1DsdxWMqeobZvtJOAwc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb1aIg_QoqU9kxE8X5CcYbhzsaw0ZXZFNbYO2qSXniwN8533YZ0P3k8B6D8p8"
         }
       ]
     },
     {
-      "query": "avalanche vs canadiens",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T23:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/colorado-avalanche-montreal-canadiens-game-preview-november-14-2026",
-        "https://sports.yahoo.com/articles/open-thread-colorado-avalanche-montr-230000221.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/colorado-avalanche-vs-montreal-canadiens-prediction-odds-2026-11-14/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/colorado-avalanche-montreal-canadiens-game-preview-november-14-2026",
-          "title": "Avalanche at Canadiens projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/open-thread-colorado-avalanche-montr-230000221.html",
-          "title": "Open Thread: Colorado Avalanche @ Montréal Canadiens 5:00 P.M. MST)",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBi9Vp-n80noKxS1MnfnN8j2kh9YIkX2trtgfBgH_UVMu4ui6cL3ZK3WjPUco"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/colorado-avalanche-vs-montreal-canadiens-prediction-odds-2026-11-14/",
-          "title": "Colorado Avalanche vs Montreal Canadiens Prediction, Picks & Odds | 14 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGwuzibAo7hH5c084jChT-48Kmx59BzpbzVGnHqwJUmyUsQ2zk1DhiMmru2T0"
-        }
-      ]
-    },
-    {
-      "query": "montana state vs northern co",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T23:10:00Z",
-      "related_news_urls": [
-        "https://nbcmontana.com/sports/local-sports/msu-bobcats-head-south-to-take-on-northern-colorado",
-        "https://www.fortmorgantimes.com/2026/11/12/unc-bears-football-montana-state-nottingham-field-greeley/",
-        "https://www.swxlocalsports.com/montana/montana-state/game-preview-montana-state-focused-on-road-test-against-northern-colorado/article_ef27a413-f8ea-48ff-be13-cbd7158760d1.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWlgFocxuX2IB2bCYzJvQz6VMVZGWI-4kaYPuB3ccxjgzecZwUX13ngUt-yzg",
-      "image_credit": "NBC Montana",
-      "news": [
-        {
-          "url": "https://nbcmontana.com/sports/local-sports/msu-bobcats-head-south-to-take-on-northern-colorado",
-          "title": "MSU Bobcats head south to take on Northern Colorado",
-          "publisher": "NBC Montana",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWlgFocxuX2IB2bCYzJvQz6VMVZGWI-4kaYPuB3ccxjgzecZwUX13ngUt-yzg"
-        },
-        {
-          "url": "https://www.fortmorgantimes.com/2026/11/12/unc-bears-football-montana-state-nottingham-field-greeley/",
-          "title": "UNC Bears football look to the future ahead of final home game of the season",
-          "publisher": "The Fort Morgan Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSye7DhA4I5i5gVib5wEgHTHt3Fu79sXfjpg_AmCeGA0E8Zd21izYalIsshGMY"
-        },
-        {
-          "url": "https://www.swxlocalsports.com/montana/montana-state/game-preview-montana-state-focused-on-road-test-against-northern-colorado/article_ef27a413-f8ea-48ff-be13-cbd7158760d1.html",
-          "title": "Game Preview: Montana State focused on road test against Northern Colorado",
-          "publisher": "SWX Local Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlQHZwRoKCNHpBTtovkhMAuvgnpsU-Rh0pPPU8nfYqwIhPLg35Vc1WptsxmqU"
-        }
-      ]
-    },
-    {
-      "query": "flyers vs blue jackets",
+      "query": "famous birthdays",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T23:10:00Z",
+      "published_at": "2026-11-14T23:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/philadelphia-flyers-columbus-blue-jackets-game-preview-november-14-2026",
-        "https://www.nytimes.com/athletic/7781628/2026/11/14/flyers-vs-blue-jackets-stream-how-to-watch-nov-14/",
-        "https://sports.yahoo.com/articles/flyers-game-22-lines-notes-151852274.html"
+        "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-14-2026-includes-celebrities-olga-kurylenko-patrick-warburton.html",
+        "https://www.yahoo.com/entertainment/articles/famous-birthdays-nov-14-vanessa-080007281.html",
+        "https://www.ktvb.com/article/opinion/columnists/scott-slant/november-12-1961-this-day-in-sports-nadia-comaneci-birthday-summer-olympics-first-gymnast-perfect-10-romania/277-baf84cef-3dab-43fe-8fb6-c2d9d73f9dbb"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9raoLvxD1MZO2rK3KNB-7jKSAfwqpeAKpaAuZrMc5H2toYDnmyO_LQ-oLz98",
+      "image_credit": "Cleveland.com",
       "news": [
         {
-          "url": "https://www.nhl.com/news/philadelphia-flyers-columbus-blue-jackets-game-preview-november-14-2026",
-          "title": "Flyers at Blue Jackets projected lineups",
-          "publisher": "NHL.com",
+          "url": "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-14-2026-includes-celebrities-olga-kurylenko-patrick-warburton.html",
+          "title": "Today’s famous birthdays list for November 14, 2026 includes celebrities Olga Kurylenko, Patrick Warburton",
+          "publisher": "Cleveland.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9raoLvxD1MZO2rK3KNB-7jKSAfwqpeAKpaAuZrMc5H2toYDnmyO_LQ-oLz98"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7781628/2026/11/14/flyers-vs-blue-jackets-stream-how-to-watch-nov-14/",
-          "title": "How to watch Flyers vs. Blue Jackets: TV channel and streaming options for November 14",
-          "publisher": "The New York Times",
+          "url": "https://www.yahoo.com/entertainment/articles/famous-birthdays-nov-14-vanessa-080007281.html",
+          "title": "Famous birthdays for Nov. 14: Vanessa Bayer, Devonta Smith",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9nsUHb8vG0bz1FwzFiwglVFn8bDiNFM1S9tKt3ZelIcV4NGq7mOmDhF5x0EA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3Xols6ClEReLb2yHDK6ftKDq-VoFuveAG8qkchO1T223FVD40ErTOg6UJY6w"
         },
         {
-          "url": "https://sports.yahoo.com/articles/flyers-game-22-lines-notes-151852274.html",
-          "title": "Flyers Game 22: Lines, Notes, & How to Watch @ Blue Jackets",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.ktvb.com/article/opinion/columnists/scott-slant/november-12-1961-this-day-in-sports-nadia-comaneci-birthday-summer-olympics-first-gymnast-perfect-10-romania/277-baf84cef-3dab-43fe-8fb6-c2d9d73f9dbb",
+          "title": "This Day In Sports: Nadia Comaneci springs into the world",
+          "publisher": "KTVB",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNh57Lw2EJzMBMt44FKEd5SBMWaHoV4mz54l-82MlP8NF8iwvJR9_zZENCMdc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWRnzjc7acFBrdd3qHIgzQFeiknVe7bknFeMZ9nn5TLTS40oq7tu6w4i4_I8g"
         }
       ]
     },
     {
-      "query": "sjsu vs air force",
+      "query": "husker volleyball schedule",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/live-updates/wrestling-men/d1/no-2-oklahoma-state-overpowers-no-3-nebraska-27-6-stillwater",
+        "https://huskers.com/news/2026/11/13/no-3-nebraska-falls-to-no-2-oklahoma-state",
+        "https://www.flowrestling.org/articles/16402578-rocklin-zinkin-upsets-vincent-robinson-in-oklahoma-state-win"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA2K2byflIsjnJsVHksIpxWvwoRjMBA05MiEw6kJ9gxAboxppt5EjxTyH63Wk",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/live-updates/wrestling-men/d1/no-2-oklahoma-state-overpowers-no-3-nebraska-27-6-stillwater",
+          "title": "No. 2 Oklahoma State overpowers No. 3 Nebraska 27-6 in Stillwater",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA2K2byflIsjnJsVHksIpxWvwoRjMBA05MiEw6kJ9gxAboxppt5EjxTyH63Wk"
+        },
+        {
+          "url": "https://huskers.com/news/2026/11/13/no-3-nebraska-falls-to-no-2-oklahoma-state",
+          "title": "No. 3 Nebraska Falls to No. 2 Oklahoma State - University of Nebraska - Official Athletics Website",
+          "publisher": "huskers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY_02LVBdpcpNXKblL9cujEWQB4lYQijtIjiTVzUJIilB9jXLKP10tZCdn-mE"
+        },
+        {
+          "url": "https://www.flowrestling.org/articles/16402578-rocklin-zinkin-upsets-vincent-robinson-in-oklahoma-state-win",
+          "title": "Rocklin Zinkin Stuns NCAA Champion Vincent Robinson In Oklahoma State's Win Over Nebraska",
+          "publisher": "FloWrestling",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTLwvYwoZ-l1eFJ8308eIWVnX-_Yx4Urkx5ZhfuquAkPkahJBTgDKDeQrA-Ko"
+        }
+      ]
+    },
+    {
+      "query": "amy acker",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T23:10:00Z",
+      "published_at": "2026-11-14T23:40:00Z",
       "related_news_urls": [
-        "https://milehighsports.com/air-force-falcons-vs-san-jose-state-spartans-game-preview-and-best-bets-for-week-11/",
-        "https://www.pressdemocrat.com/2026/11/14/san-jose-state-air-force-stats-mountain-west/",
-        "https://sports.yahoo.com/articles/san-jose-state-vs-air-111103816.html"
+        "https://www.imdb.com/news/ni66110656/?ref_=int_nwr_3",
+        "https://www.justjared.com/2026/11/13/is-amy-acker-single-or-married-all-about-her-real-life-husband/",
+        "https://parade.com/tv/two-hallmark-fan-favorites-team-up-for-a-new-christmas-romance-premiering-tonight"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG2b2M1mHfxK62VkPT_x_XM9wpQYrXOw1GNoXDtAxYpuZ47mA4rnShEgi47R0",
-      "image_credit": "Mile High Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlEYq357QjniR38RZM0ypgYDcCWkDNtljDVuqEkzypV4sB1kDXRjKKOEtl9-U",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://milehighsports.com/air-force-falcons-vs-san-jose-state-spartans-game-preview-and-best-bets-for-week-11/",
-          "title": "Air Force Falcons vs. San Jose State Spartans: Game preview and best bets for Week 11",
-          "publisher": "Mile High Sports",
+          "url": "https://www.imdb.com/news/ni66110656/?ref_=int_nwr_3",
+          "title": "Is Amy Acker Single or Married? All About Her Real-Life Husband!",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG2b2M1mHfxK62VkPT_x_XM9wpQYrXOw1GNoXDtAxYpuZ47mA4rnShEgi47R0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlEYq357QjniR38RZM0ypgYDcCWkDNtljDVuqEkzypV4sB1kDXRjKKOEtl9-U"
         },
         {
-          "url": "https://www.pressdemocrat.com/2026/11/14/san-jose-state-air-force-stats-mountain-west/",
-          "title": "What to know before San Jose State kicks off at Air Force",
-          "publisher": "The Press Democrat",
+          "url": "https://www.justjared.com/2026/11/13/is-amy-acker-single-or-married-all-about-her-real-life-husband/",
+          "title": "Is Amy Acker Single or Married? All About Her Real-Life Husband!",
+          "publisher": "Just Jared",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQst0Qbdjbw9kTPUaPUfp4eU__odpUfGM9A-jwwLMgHQ4UtamxTjWjNeNBrNUo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmNwV9vCu78mZuZBgIgfQCj7t_KCQfelaUgUQmR_UusAVI6gZ6fphTxQRN1YU"
         },
         {
-          "url": "https://sports.yahoo.com/articles/san-jose-state-vs-air-111103816.html",
-          "title": "San Jose State vs Air Force Prediction, Pick, NCAAF Odds for Saturday, Nov. 14",
-          "publisher": "Yahoo Sports",
+          "url": "https://parade.com/tv/two-hallmark-fan-favorites-team-up-for-a-new-christmas-romance-premiering-tonight",
+          "title": "Two Hallmark Fan Favorites Team Up for a New Christmas Romance Premiering Tonight",
+          "publisher": "Parade Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJF6MZlzekuWUb8-nmMoH1T3y8S9VaKy1GPjs1ojPFFEzTvVYRl6-WtgKSwvg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcI7DGwYzOYzL_9HYK1G5XwBSOegkyWCLB2fw9je1qP9NBxqQPDoqo5RZ726E"
         }
       ]
     },
     {
-      "query": "devils vs capitals",
+      "query": "jesse palmer",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T23:10:00Z",
+      "published_at": "2026-11-14T23:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-preview-november-14-2026",
-        "https://sports.yahoo.com/articles/2026-27-gamethread-21-jersey-230029704.html",
-        "https://www.espn.com/nhl/recap/_/gameId/401892700"
+        "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
+        "https://abcnews.com/GMA/Culture/bachelor-season-30-feature-nfl-quarterback-sam-hartman/story?id=138086611",
+        "https://www.charlotteobserver.com/charlottefive/c5-people/article318062832.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-preview-november-14-2026",
-          "title": "Devils at Capitals projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/2026-27-gamethread-21-jersey-230029704.html",
-          "title": "2026-27 Gamethread #21: New Jersey Devils at Washington Capitals",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_0CEKOF8HlcffJmferPq8WEsaE1d1vhKlE5sFWxpo9Gg7-0CTV0WYr3B2QUw"
-        },
-        {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892700",
-          "title": "Devils 5-2 Capitals (Nov 12, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGEdctbdMrxEaI7hFhDXHdo0PV4ay5mm7gBSkPkaJmdojxwN8M92SlUjXSFQQ"
-        }
-      ]
-    },
-    {
-      "query": "troy vs south alabama",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T23:10:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/shopping/news/watch-troy-south-alabama-college-football-espn-live-online-1236946134/",
-        "https://www.fox10tv.com/2026/11/09/battle-belt-week-events-game-university-south-alabama/",
-        "https://troytrojans.com/news/2026/11/12/football-troy-travels-to-mobile-for-battle-for-the-belt"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9oo1_lR0TXbZE7kvd09Jit-1Azg0Rqhhvxb2YsMG0_3eBvuqS1DWEjsSI6io",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/shopping/news/watch-troy-south-alabama-college-football-espn-live-online-1236946134/",
-          "title": "ESPN Unlimited: Here's How to Watch the Troy Trojans vs. South Alabama Jaguars Game Live Online",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9oo1_lR0TXbZE7kvd09Jit-1Azg0Rqhhvxb2YsMG0_3eBvuqS1DWEjsSI6io"
-        },
-        {
-          "url": "https://www.fox10tv.com/2026/11/09/battle-belt-week-events-game-university-south-alabama/",
-          "title": "‘Battle of the Belt’ week events and game at the University of South Alabama",
-          "publisher": "Fox 10 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv9VbRKCwn7iaGMbXoFYJvOvCUqRrkch78_nYBRTIOev92_pdhikhCbIsaLdg"
-        },
-        {
-          "url": "https://troytrojans.com/news/2026/11/12/football-troy-travels-to-mobile-for-battle-for-the-belt",
-          "title": "Troy Travels to Mobile for “Battle for the Belt”",
-          "publisher": "Troy University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02Lmobq7AkbZk7tw0gxMMP4xNCRpQho76LGuyP2zbaezl9UJAqOF0DvWORJk"
-        }
-      ]
-    },
-    {
-      "query": "oilers vs maple leafs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T23:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-14-2026",
-        "https://www.sportsnet.ca/nhl/article/oilers-superstar-connor-mcdavid-brings-his-gretzky-vibe-to-toronto/",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/edmonton-oilers-vs-toronto-maple-leafs-prediction-odds-2026-11-14/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBvu4N2BfOnz6eKCSBu5k01vKYLxJUfbu4d4MKDMhv1a4Ux45k2wP4SEEDuoI",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-14-2026",
-          "title": "NHL On Tap: McDavid eyes point in 21st straight for Oilers at Maple Leafs",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBvu4N2BfOnz6eKCSBu5k01vKYLxJUfbu4d4MKDMhv1a4Ux45k2wP4SEEDuoI"
-        },
-        {
-          "url": "https://www.sportsnet.ca/nhl/article/oilers-superstar-connor-mcdavid-brings-his-gretzky-vibe-to-toronto/",
-          "title": "Oilers superstar Connor McDavid brings his Gretzky vibe to Toronto",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPp1iICLPx5nvZAREMfUCgEIT53eRZtM06lfY_xErFAWqO8nu9DQaDv8lpoxU"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/edmonton-oilers-vs-toronto-maple-leafs-prediction-odds-2026-11-14/",
-          "title": "Edmonton Oilers vs Toronto Maple Leafs Prediction, Picks & Odds | 14 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJv5s4hLGJzZdO8SmvT4WH7WMTBb0JaapmoVQaqSGCyE3KSrOGwmc4mw1e-e8"
-        }
-      ]
-    },
-    {
-      "query": "folarin balogun",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T23:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50469742/transfer-rumors-news-man-united-balogun-freeman-pochettino",
-        "https://www.si.com/soccer/four-strikers-man-utd-should-target-mauricio-pochettino-ranked",
-        "https://sports.yahoo.com/articles/manchester-united-set-sights-ligue-201500349.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLJWHq91V-gYGb5OffVslwjspxvo6t0FftbxFx-1QkoV5Gx-0OQmPJJDOwIkg",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2I8XTCTd0WDSpsoHH-zJfvqLmIFH_tdLb9d_M8fWK-3DT6Rq26l80XWxMRDA",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50469742/transfer-rumors-news-man-united-balogun-freeman-pochettino",
-          "title": "Transfer rumors, news: Real Madrid tracking Bayern Munich star Michael Olise",
+          "url": "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
+          "title": "Commanders QB Sam Hartman to star as 'The Bachelor' in milestone 30th season",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLJWHq91V-gYGb5OffVslwjspxvo6t0FftbxFx-1QkoV5Gx-0OQmPJJDOwIkg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2I8XTCTd0WDSpsoHH-zJfvqLmIFH_tdLb9d_M8fWK-3DT6Rq26l80XWxMRDA"
         },
         {
-          "url": "https://www.si.com/soccer/four-strikers-man-utd-should-target-mauricio-pochettino-ranked",
-          "title": "Four Strikers Man Utd Should Target for Mauricio Pochettino—Ranked",
-          "publisher": "Sports Illustrated",
+          "url": "https://abcnews.com/GMA/Culture/bachelor-season-30-feature-nfl-quarterback-sam-hartman/story?id=138086611",
+          "title": "'The Bachelor' season 30 to feature NFL quarterback Sam Hartman",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxPjCiOCOlMQTDJ4mQRDqwh_0psg8QYLEf8Ke0VD9PXjQkO64dw68S15Gdi3o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl2mI7gmxzDgKhVIrULpCk9Epso8e9zjhGCBFk7RdhIEggFfTzctw48cIofgs"
         },
         {
-          "url": "https://sports.yahoo.com/articles/manchester-united-set-sights-ligue-201500349.html",
-          "title": "Manchester United Have Set Their Sights On This Ligue 1 Striker: Should Pochettino Go For Him?",
+          "url": "https://www.charlotteobserver.com/charlottefive/c5-people/article318062832.html",
+          "title": "Who’s Sam Hartman? 5 things to know about ‘The Bachelor’ and Charlotte native",
+          "publisher": "Charlotte Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScubPyzn8E9WIMQbaZnIUdv5qhF1yG-83p30pva19i9u_ehwwJkflPh-8dPV0"
+        }
+      ]
+    },
+    {
+      "query": "uf",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T23:40:00Z",
+      "related_news_urls": [
+        "https://www.fox5atlanta.com/news/stepfather-pleads-florida-student-detained-ice-what-more-do-you-want",
+        "https://www.wcjb.com/2026/11/13/university-florida-engineering-student-detained-by-ice-family-seeks-release/",
+        "https://www.alligator.org/article/2026/11/protesters-demand-uf-rescind-287-g-agreement-again"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYzgEaTT8nD8wOlLw6lB1n06T6IOnN82JA4oedqTNm-6mpX0dSMPAhFNfLWx0",
+      "image_credit": "FOX 5 Atlanta",
+      "news": [
+        {
+          "url": "https://www.fox5atlanta.com/news/stepfather-pleads-florida-student-detained-ice-what-more-do-you-want",
+          "title": "Stepfather pleads for Florida student detained by ICE: 'What more do you want?'",
+          "publisher": "FOX 5 Atlanta",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYzgEaTT8nD8wOlLw6lB1n06T6IOnN82JA4oedqTNm-6mpX0dSMPAhFNfLWx0"
+        },
+        {
+          "url": "https://www.wcjb.com/2026/11/13/university-florida-engineering-student-detained-by-ice-family-seeks-release/",
+          "title": "University of Florida engineering student detained by ICE; family seeks release",
+          "publisher": "WCJB",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmxGL86W9kp55vaQm8KU0WrYeMVKLesQCx_pXWZOR28hofVbHYIqXMYSxBbA0"
+        },
+        {
+          "url": "https://www.alligator.org/article/2026/11/protesters-demand-uf-rescind-287-g-agreement-again",
+          "title": "Protesters demand UF rescind 287(g) agreement, again",
+          "publisher": "The Independent Florida Alligator",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh0PVWEddsHHhyc9MeH2TTjhY63NBwnxe1MTrl2pQpPTOEZ7gwsmqu077Ds3U"
+        }
+      ]
+    },
+    {
+      "query": "mavericks vs cavaliers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T23:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/along-cavaliers-host-mavs-injuries-223046452.html",
+        "https://www.si.com/nba/cavaliers/onsi/cavaliers-vs-mavericks-how-to-watch-starting-lineups-injury-report-and-more-01m7dqvsbn8x",
+        "https://www.cleveland.com/cavs/2026/11/cavs-vs-mavericks-preview-odds-injury-report-tv.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVi_6CzGJcTM0rETI4-aisBEZLl6pTg8-GcqKBc60Af9FxyGGi_kcPa6UjW9g",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/along-cavaliers-host-mavs-injuries-223046452.html",
+          "title": "Follow along as the Cavaliers host Mavs, injuries, score updates",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9_YvXFLdDDHIClo3vDBCVAN8r_vZzYquLWp6PkMIKjE83sEhmlfVdsJ4KYZQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVi_6CzGJcTM0rETI4-aisBEZLl6pTg8-GcqKBc60Af9FxyGGi_kcPa6UjW9g"
+        },
+        {
+          "url": "https://www.si.com/nba/cavaliers/onsi/cavaliers-vs-mavericks-how-to-watch-starting-lineups-injury-report-and-more-01m7dqvsbn8x",
+          "title": "Cavaliers vs. Mavericks: How to Watch, Starting Lineups, Injury Report and More",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFoz6AliyxhGvPdwpW_-QNHuQA06HCiWD1S7cc7c2-ao9IXYq88VuG6GAtrxY"
+        },
+        {
+          "url": "https://www.cleveland.com/cavs/2026/11/cavs-vs-mavericks-preview-odds-injury-report-tv.html",
+          "title": "Cavs vs. Mavericks: preview, odds, injury report, TV",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEeIvEgdHn5JVCvetUCB-H8Fo3Rbn1r6yX2SQCAK4bzZjwkwURJV0J3ujGtzU"
+        }
+      ]
+    },
+    {
+      "query": "alexander skarsgård",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T23:30:00Z",
+      "related_news_urls": [
+        "https://theithacan.org/70547/life-culture/reviews/wicker-is-a-unique-romance-with-deeper-themes-hiding-under-its-eccentrically-woven-surface/",
+        "https://girlculture.substack.com/p/wicker-and-wildwood-rewrite-the-fable",
+        "https://vogueadria.com/monster-romance-films/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7b51BfZ13Gks6QmB_7w-RZt9qln0UAX6mNxjl6sZO3mj2Ovqygou8uIWF64E",
+      "image_credit": "The Ithacan",
+      "news": [
+        {
+          "url": "https://theithacan.org/70547/life-culture/reviews/wicker-is-a-unique-romance-with-deeper-themes-hiding-under-its-eccentrically-woven-surface/",
+          "title": "‘Wicker’ is a unique romance with deeper themes hiding under its eccentrically woven surface",
+          "publisher": "The Ithacan",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7b51BfZ13Gks6QmB_7w-RZt9qln0UAX6mNxjl6sZO3mj2Ovqygou8uIWF64E"
+        },
+        {
+          "url": "https://girlculture.substack.com/p/wicker-and-wildwood-rewrite-the-fable",
+          "title": "‘Wicker’ and ‘Wildwood’ rewrite the fable",
+          "publisher": "Girl Culture | Caroline Siede",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6z6RPX08CYva8iURtAhcTWSEPrXC9SpjSrmt6qGZLhv_qIBCkt0KBttlrnZk"
+        },
+        {
+          "url": "https://vogueadria.com/monster-romance-films/",
+          "title": "Minotaurs, mutants and unlikely lovers… Women are falling for monster romances",
+          "publisher": "Vogue Adria",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiKGSzmDlqiBzImt86U3iVMR9_ACXJ8BT9900g880mwdckFCMUygrAujbVcTo"
         }
       ]
     }
