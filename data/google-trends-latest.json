@@ -3,76 +3,216 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T08:01:36.043920Z",
+  "checked_at": "2026-11-15T08:31:25.109103Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "maika monroe",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T08:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/12/movies/victorian-psycho-review.html",
+        "https://nofilmschool.com/horror-directingvictorian-psycho-zachary-wigon",
+        "https://www.polygon.com/maika-monroe-victorian-psycho-interview/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTznHpmOgOhOZj5_KfLOYA7gcPxuPzxWDvkyBnV3r5bumICT1SOC2WKdJYcro",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/12/movies/victorian-psycho-review.html",
+          "title": "‘Victorian Psycho’ Review: Who’s the Sanest of Them All?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTznHpmOgOhOZj5_KfLOYA7gcPxuPzxWDvkyBnV3r5bumICT1SOC2WKdJYcro"
+        },
+        {
+          "url": "https://nofilmschool.com/horror-directingvictorian-psycho-zachary-wigon",
+          "title": "'Victorian Psycho' Director Zachary Wigon Only Shot Coverage When His Killer Was Faking It",
+          "publisher": "No Film School",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7Ac-Irc0fOKVIyaAWBFFFTF-5GmcW9HrHIdLBZLlKfw8xWUXfhhyyWLTaZfk"
+        },
+        {
+          "url": "https://www.polygon.com/maika-monroe-victorian-psycho-interview/",
+          "title": "Stephen King and Real-Life Serial Killers Shaped the Most Unhinged Thriller of 2026",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHOGpFLFE7jXrAktsgQWLICYiPbsHt7EjDjf3Dkj8OuaXeutKoHUQhFgp7mRU"
+        }
+      ]
+    },
+    {
+      "query": "bills vs jets",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T08:00:00Z",
+      "related_news_urls": [
+        "https://www.buffalobills.com/news/buffalo-bills-at-new-york-jets-where-to-watch-stream-and-listen-week-10",
+        "https://www.buffalorumblings.com/buffalo-bills-analysis/145264/buffalo-bills-trending-up-trending-down-the-players-who-will-decide-game-at-jets",
+        "https://www.syracuse.com/buffalo-bills/2026/11/buffalo-bills-could-exploit-major-jets-weakness-in-sundays-matchup-4-things-to-know.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXk4hhITBZ-5E2rM5uqIpGFGJaP4LTcOL98EdVPvwuMdU_Oa3z7T_vWUZ-feM",
+      "image_credit": "Buffalo Bills",
+      "news": [
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-at-new-york-jets-where-to-watch-stream-and-listen-week-10",
+          "title": "Buffalo Bills vs. New York Jets | Where to watch, stream and listen | Week 10",
+          "publisher": "Buffalo Bills",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXk4hhITBZ-5E2rM5uqIpGFGJaP4LTcOL98EdVPvwuMdU_Oa3z7T_vWUZ-feM"
+        },
+        {
+          "url": "https://www.buffalorumblings.com/buffalo-bills-analysis/145264/buffalo-bills-trending-up-trending-down-the-players-who-will-decide-game-at-jets",
+          "title": "Bills trending up, trending down: The players who will decide game at Jets",
+          "publisher": "Buffalo Rumblings",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnuL0Z4OWmAIfzbs4kOR6bH6debAlEMolCg5poFTqC3iFxhxyaB_zF8lm3cqw"
+        },
+        {
+          "url": "https://www.syracuse.com/buffalo-bills/2026/11/buffalo-bills-could-exploit-major-jets-weakness-in-sundays-matchup-4-things-to-know.html",
+          "title": "Buffalo Bills could exploit major Jets weakness in Sunday’s matchup (4 things to know)",
+          "publisher": "Syracuse.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26c8FXi086RD51JqLQOXg-ugqWGGJi-t4KWeVIVWLLVBuJDETp2TFPpF8u8I"
+        }
+      ]
+    },
+    {
+      "query": "samsung galaxy s27 pro production",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T07:50:00Z",
+      "related_news_urls": [
+        "https://sammyguru.com/exclusive-galaxy-s27-series-camera-sensors/",
+        "https://www.phonearena.com/reviews/samsung-galaxy-s27-ultra-vs-s24-ultra_id8087",
+        "https://www.forbes.com/sites/jaymcgregor/2026/11/14/samsung-galaxy-s27-release-date-galaxy-s27-pro-ultra-production-price/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBDUXqnHTPvzM5iakp97QVlG4euzUkqMQ_0sGK26cK2T9YdEtQvZJdhLcpstM",
+      "image_credit": "SammyGuru",
+      "news": [
+        {
+          "url": "https://sammyguru.com/exclusive-galaxy-s27-series-camera-sensors/",
+          "title": "Exclusive: Galaxy S27, S27+, S27 Pro, S27 Ultra Camera Sensors Revealed",
+          "publisher": "SammyGuru",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBDUXqnHTPvzM5iakp97QVlG4euzUkqMQ_0sGK26cK2T9YdEtQvZJdhLcpstM"
+        },
+        {
+          "url": "https://www.phonearena.com/reviews/samsung-galaxy-s27-ultra-vs-s24-ultra_id8087",
+          "title": "Samsung Galaxy S27 Ultra vs Galaxy S24 Ultra: Main differences to expect",
+          "publisher": "PhoneArena",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEVSoeipleDWGC4jetAKX-fGnM4GIrbEnJaClXwDdA200kNwZ3IYN0D5Fk1Y"
+        },
+        {
+          "url": "https://www.forbes.com/sites/jaymcgregor/2026/11/14/samsung-galaxy-s27-release-date-galaxy-s27-pro-ultra-production-price/",
+          "title": "Galaxy S27 Release Date: Samsung Bets Big On New 'Pro' Phone",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTycRk5MivmjHVEHRpaPMlkXhQWMQgBWnZ6DF7fjB5xJMXnhtTHKZUd55TckNA"
+        }
+      ]
+    },
     {
       "query": "is amon ra st brown playing",
       "approx_searches": "100+",
       "published_at": "2026-11-15T07:40:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/amon-ra-st-brown-ribs-questionable-for-week-10",
-        "https://sports.yahoo.com/articles/lions-worrying-amon-ra-st-201048463.html",
-        "https://athlonsports.com/nfl/miami-dolphins/fantasy-start-sit-update"
+        "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
+        "https://www.detroitlions.com/news/notebook-st-brown-excited-to-play-in-germany-goff-hutchinson-sewell",
+        "https://www.nytimes.com/athletic/7779846/2026/11/13/lions-munich-amon-ra-st-brown-patriots/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvDMt43LnSHxEIUg2exAh07PRHJ5bqrJDhim6oxxBHcd4xX028ioCY8s8ctX8",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqLgsQkjMhrba8o_2orzMzchGNcvdWCoPd95LTMw_gh7PfnfvJuzhDNALN1MQ",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/amon-ra-st-brown-ribs-questionable-for-week-10",
-          "title": "Amon-Ra St. Brown (ribs) questionable for Week 10",
-          "publisher": "NBC Sports",
+          "url": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
+          "title": "Untold stories of Detroit Lions WR Amon-Ra St. Brown's German upbringing",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvDMt43LnSHxEIUg2exAh07PRHJ5bqrJDhim6oxxBHcd4xX028ioCY8s8ctX8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqLgsQkjMhrba8o_2orzMzchGNcvdWCoPd95LTMw_gh7PfnfvJuzhDNALN1MQ"
         },
         {
-          "url": "https://sports.yahoo.com/articles/lions-worrying-amon-ra-st-201048463.html",
-          "title": "Lions Get Worrying Amon-Ra St. Brown News Ahead of Sunday’s Game",
+          "url": "https://www.detroitlions.com/news/notebook-st-brown-excited-to-play-in-germany-goff-hutchinson-sewell",
+          "title": "NOTEBOOK: Playing in Germany 'a dream come true' for St. Brown",
+          "publisher": "Detroit Lions",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ljlNM16NrtPP5FztgONqlddw5f2YR6p1SuJ8DZbZACpHI7xmMb8l4dKaiJI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7779846/2026/11/13/lions-munich-amon-ra-st-brown-patriots/",
+          "title": "Lions’ Amon-Ra St. Brown takes center stage in Munich in a special kind of homecoming",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaAIyCEh6tdJ64Yh3GAo9X6132KIi2x3gSkQ_9x_GsOQPIl4X7U95Wg_biPPA"
+        }
+      ]
+    },
+    {
+      "query": "vikings vs packers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T07:40:00Z",
+      "related_news_urls": [
+        "https://www.packers.com/news/inbox-it-is-a-whole-different-ball-game-this-time-around-nov-14-2026",
+        "https://www.nytimes.com/athletic/7776871/2026/11/15/packers-vikings-score-result-stats/",
+        "https://sports.yahoo.com/nfl/betting/article/week-10-nfl-picks-against-the-spread-predictions-for-every-game-kirk-cousins-returns-to-lead-vikings-vs-packers-134850175.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwv_4tv6jzsucmJwMxgWet9off9FvJIqjxoUF963mBMeI6FkQFl9E_jpVH6R0",
+      "image_credit": "Green Bay Packers – packers.com",
+      "news": [
+        {
+          "url": "https://www.packers.com/news/inbox-it-is-a-whole-different-ball-game-this-time-around-nov-14-2026",
+          "title": "Inbox: It is a whole different ball game this time around",
+          "publisher": "Green Bay Packers – packers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwv_4tv6jzsucmJwMxgWet9off9FvJIqjxoUF963mBMeI6FkQFl9E_jpVH6R0"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7776871/2026/11/15/packers-vikings-score-result-stats/",
+          "title": "Packers vs. Vikings score predictions: Can Kirk Cousins turn the tide in huge NFC North battle?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNYHnVKyQYw5QBSUEJuLmilQP3Qm2X7ZHU6uAs3x0yx1YZL-bP2oCtE9l46w"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/betting/article/week-10-nfl-picks-against-the-spread-predictions-for-every-game-kirk-cousins-returns-to-lead-vikings-vs-packers-134850175.html",
+          "title": "Week 10 NFL picks against the spread, predictions for every game: Kirk Cousins returns to lead Vikings vs. Packers",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhadTOAMKyNRZtnDe5TLne5c6EUI2HiPgoKS6nlX5N3clEiDhTiJ8DWRPJMpU"
-        },
-        {
-          "url": "https://athlonsports.com/nfl/miami-dolphins/fantasy-start-sit-update",
-          "title": "Fantasy Start/Sit Update",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9w5Qr0yVmpJhXS-84rdk6I11BfMH2UKCJqvOxmtHciYBmXR37P-q27AS4H4A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5BQhtKlcNMkUv8AsRwnzb12q2vSWrXCV7OfreMHnfD5xvgLVE3TArPvIA1lA"
         }
       ]
     },
     {
       "query": "earthquake",
-      "approx_searches": "500+",
+      "approx_searches": "200+",
       "published_at": "2026-11-15T07:30:00Z",
       "related_news_urls": [
-        "https://eastoregonian.com/2026/11/13/ne-oregon-has-strongest-earthquake-in-more-than-30-years/",
-        "https://www.foxweather.com/earth-space/magnitude-4-3-earthquake-rattles-wallowa-county-oregon-morning-moderate-shaking",
-        "https://elkhornmediagroup.com/m-4-3-earthquake-reported-in-wallowa-county/"
+        "https://www.nbclosangeles.com/news/local/chatsworth-earthquake/3967408/",
+        "https://www.yahoo.com/news/weather-news/articles/preliminary-2-4-magnitude-earthquake-181621575.html",
+        "https://www.sacbee.com/news/california/earthquakes/article317972861.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtoH1yy9YSp-U1mazIA3LrElIBOEZN8LibN6DLHGaH0t_xoRIkHxtnC8U3a44",
-      "image_credit": "East Oregonian",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkwtyJu8rVdCcHhNbum6S5oXDkC76496v0nhdusVFC_O_u0DXnFdldc03v-ww",
+      "image_credit": "NBC Los Angeles",
       "news": [
         {
-          "url": "https://eastoregonian.com/2026/11/13/ne-oregon-has-strongest-earthquake-in-more-than-30-years/",
-          "title": "NE Oregon has strongest earthquake in more than 30 years",
-          "publisher": "East Oregonian",
+          "url": "https://www.nbclosangeles.com/news/local/chatsworth-earthquake/3967408/",
+          "title": "Preliminary 2.4-magnitude earthquake rattles Chatsworth",
+          "publisher": "NBC Los Angeles",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtoH1yy9YSp-U1mazIA3LrElIBOEZN8LibN6DLHGaH0t_xoRIkHxtnC8U3a44"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkwtyJu8rVdCcHhNbum6S5oXDkC76496v0nhdusVFC_O_u0DXnFdldc03v-ww"
         },
         {
-          "url": "https://www.foxweather.com/earth-space/magnitude-4-3-earthquake-rattles-wallowa-county-oregon-morning-moderate-shaking",
-          "title": "Magnitude 4.3 earthquake rattles Oregon city with moderate shaking reported",
-          "publisher": "FOX Weather",
+          "url": "https://www.yahoo.com/news/weather-news/articles/preliminary-2-4-magnitude-earthquake-181621575.html",
+          "title": "Preliminary 2.4 magnitude earthquake jolts Southern California",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSOwp7Woald8xqGoV-CJLy0jYFONZXj-CZlHv3hxbJNQPZ1M15irOI-LujwzY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQML1mQBiYKucKz38dnArR2hZGHodObVYDrFLeXsULDlcQWDb75wbdfCQxHeF4"
         },
         {
-          "url": "https://elkhornmediagroup.com/m-4-3-earthquake-reported-in-wallowa-county/",
-          "title": "M 4.3 earthquake reported in Wallowa County",
-          "publisher": "Elkhorn Media Group",
+          "url": "https://www.sacbee.com/news/california/earthquakes/article317972861.html",
+          "title": "Update: Earthquake shakes region near East Quincy, CA on Nov. 7 - 2.3 magnitude recorded",
+          "publisher": "Sacramento Bee",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUmHhL91cnlNGpiH2HKdeK3qOiGI8FxYC8G8r0M1mbB_lif8JfuXa_SCPOAm4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpjZawB9kvcmNRDARwa_BC9KxbmWwO-7uHBjfbPcF0HJedYwkXjKkwi9vyhHg"
         }
       ]
     },
@@ -117,8 +257,8 @@
       "published_at": "2026-11-15T07:10:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/match-preview",
-        "https://www.dhakatribune.com/sport/cricket/424669/shanto-backs-pace-attack-to-make-impact",
-        "https://novanews.co.za/zubayr-hamza-south-africa-bangladesh-first-test/"
+        "https://africa.espn.com/cricket/story/_/id/50488794/sa-vs-ban-1st-test-bangladesh-opt-bat-first-series-opener-wanderers",
+        "https://www.dhakatribune.com/sport/cricket/424669/shanto-backs-pace-attack-to-make-impact"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvpJBlACtu9oI5iNI2IGe1T740oAlcZ67h7DgjaMmb2-OBBZhXlyncGZh5T78",
       "image_credit": "Cricinfo",
@@ -131,53 +271,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvpJBlACtu9oI5iNI2IGe1T740oAlcZ67h7DgjaMmb2-OBBZhXlyncGZh5T78"
         },
         {
+          "url": "https://africa.espn.com/cricket/story/_/id/50488794/sa-vs-ban-1st-test-bangladesh-opt-bat-first-series-opener-wanderers",
+          "title": "Bangladesh opt to bat first in series opener at the Wanderers",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuFLaXDXo4JXm3lZr8DixIBlmQuSYrr9SXMGfdk6RDi2KtlO3m6xBoAOkVaFg"
+        },
+        {
           "url": "https://www.dhakatribune.com/sport/cricket/424669/shanto-backs-pace-attack-to-make-impact",
           "title": "Shanto backs pace attack to make impact",
           "publisher": "Dhaka Tribune",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq4xjqBB58kesxMNv7RFleBW8MJ0-6BEH-MYs7FesEECCztRzxNItEmUO31Qw"
-        },
-        {
-          "url": "https://novanews.co.za/zubayr-hamza-south-africa-bangladesh-first-test/",
-          "title": "Bavuma backs Hamza at number three against Bangladesh",
-          "publisher": "https://novanews.co.za/",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxFs5hpTneiZXgJ_iTqu7UO0lGqw8f3KvuK3BbFvRy5D5zpbQDIrfkIiY3apA"
-        }
-      ]
-    },
-    {
-      "query": "aiden mizell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T07:10:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/sports/ucla/story/2026-11-13/ucla-defeats-illinois-improves-to-10-0-for-first-time-since-1998",
-        "https://www.espn.com/college-football/story/_/id/50477249/ucla-qb-ty-dieffenbach-leaves-game-injury",
-        "https://uclabruins.com/news/2026/11/13/postgame-quotes-ucla-vs-illinois"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd68dT6FKz44KwBcYh-swbkcK4Uo3_YvKCK5BDo_Lfo84OZ6pEwlXKNbhUrW8",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/sports/ucla/story/2026-11-13/ucla-defeats-illinois-improves-to-10-0-for-first-time-since-1998",
-          "title": "No. 4 UCLA defeats Illinois, improves to 10-0 for first time since 1998",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd68dT6FKz44KwBcYh-swbkcK4Uo3_YvKCK5BDo_Lfo84OZ6pEwlXKNbhUrW8"
-        },
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50477249/ucla-qb-ty-dieffenbach-leaves-game-injury",
-          "title": "UCLA QB Ty Dieffenbach says first-half shoulder injury vs. Illinois not serious",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GDkjsBW4AfsyYMZxUFjFoCPXQf6iFp6Kja1ma6CEg7qrqj-SFDTc2KhUMDk"
-        },
-        {
-          "url": "https://uclabruins.com/news/2026/11/13/postgame-quotes-ucla-vs-illinois",
-          "title": "Postgame Quotes - UCLA vs. Illinois",
-          "publisher": "UCLA Bruins",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKSFdGiV5XXYunEkfGAMXoB_jP3L6VXGO6qSyEZyAt0ge47sh7YZuEeUxSc1g"
         }
       ]
     },
@@ -217,142 +322,37 @@
       ]
     },
     {
-      "query": "football games tomorrow",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T07:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7781914/2026/11/14/faa-ground-stop-iowa-punter-peter-everitt/",
-        "https://www.kcrg.com/2026/11/14/faa-ground-stop-order-impacting-iowa-purdue-game/",
-        "https://www.hawkcentral.com/story/sports/college/iowa/football/2026/11/13/purdue-football-buses-iowa-city-faa-ground-stop/92767924007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf2c-4SIfOcbqhKgTFqNZhMjUpBJ_CZx2LKR_nps9PuHGGmaI-xIyTh54seTA",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7781914/2026/11/14/faa-ground-stop-iowa-punter-peter-everitt/",
-          "title": "No flight, no problem: Ground stop doesn’t keep Aussie legend from watching son punt for Iowa",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf2c-4SIfOcbqhKgTFqNZhMjUpBJ_CZx2LKR_nps9PuHGGmaI-xIyTh54seTA"
-        },
-        {
-          "url": "https://www.kcrg.com/2026/11/14/faa-ground-stop-order-impacting-iowa-purdue-game/",
-          "title": "FAA ground stop order impacting travel plans for Iowa, Purdue game",
-          "publisher": "KCRG",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUinkcl98EGErFmFPYm9SVlVYompslgiJbM9OxCrT3x3R0jKMVpEOPq3xqcCs"
-        },
-        {
-          "url": "https://www.hawkcentral.com/story/sports/college/iowa/football/2026/11/13/purdue-football-buses-iowa-city-faa-ground-stop/92767924007/",
-          "title": "Purdue football team to take buses to Iowa City due to FAA ground stop",
-          "publisher": "Hawk Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsrj37MgNIZOAhvDydIx7ddGRJkZ8It_UkFUnf6eVbTVTjafsxUukmDwvjqAs"
-        }
-      ]
-    },
-    {
-      "query": "mike perry",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T07:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/mma/article/mike-perry-re-signs-with-ufc-officially-returning-more-than-5-years-after-leaving-promotion-204136846.html",
-        "https://www.si.com/fannation/mma/news/ufc-reportedly-re-signs-fan-favorite-bkfc-star-more-than-5-years-after-ufc-exit",
-        "https://mmasucka.com/news/mike-perry-re-signs-with-ufc-after-appearing-in-anti-doping-test-records/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBjpqfPii0z456hJtbTSfEws0NwIgreWllNxVfHQtQ_vDM9fUxDSiuC7MUgnM",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/mma/article/mike-perry-re-signs-with-ufc-officially-returning-more-than-5-years-after-leaving-promotion-204136846.html",
-          "title": "Mike Perry re-signs with UFC, officially returning more than 5 years after leaving promotion",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBjpqfPii0z456hJtbTSfEws0NwIgreWllNxVfHQtQ_vDM9fUxDSiuC7MUgnM"
-        },
-        {
-          "url": "https://www.si.com/fannation/mma/news/ufc-reportedly-re-signs-fan-favorite-bkfc-star-more-than-5-years-after-ufc-exit",
-          "title": "UFC Reportedly Re-Signs Fan Favorite BKFC Star More Than 5 Years After UFC Exit",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjF1KCZwgxjpxZ2WYpjvDKUojVQz3aGHIzg-ENYTVQl3H34-IGHsVb8QlcAgg"
-        },
-        {
-          "url": "https://mmasucka.com/news/mike-perry-re-signs-with-ufc-after-appearing-in-anti-doping-test-records/",
-          "title": "Mike Perry Re-Signs With UFC After Appearing in Anti-Doping Test Records",
-          "publisher": "MMA Sucka",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD-cq2dkbux7togRJo1ignmOtrp1QPfaB9lNFhsXqrU7cS7LT34F1wl1AHcN8"
-        }
-      ]
-    },
-    {
-      "query": "travis barker",
+      "query": "aiden mizell",
       "approx_searches": "200+",
-      "published_at": "2026-11-15T06:40:00Z",
+      "published_at": "2026-11-15T07:10:00Z",
       "related_news_urls": [
-        "https://apnews.com/video/phil-collins-on-health-scare-i-live-a-simple-life-85ab59482a504555b163ae05f3753658",
-        "https://www.usatoday.com/story/entertainment/music/2026/11/10/phil-collins-tour-return-health-update-rock-hall-of-fame/92711570007/",
-        "https://consequence.net/2026/11/phil-collins-rock-hall-induction-solo-artist/"
+        "https://www.latimes.com/sports/ucla/story/2026-11-13/ucla-defeats-illinois-improves-to-10-0-for-first-time-since-1998",
+        "https://www.espn.com/college-football/story/_/id/50477249/ucla-qb-ty-dieffenbach-leaves-game-injury",
+        "https://fightingillini.com/news/2026/11/13/football-illinois-falls-at-4-ucla-on-friday-night"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefA4Oyb-3vVL2X4StlFo6iw7e4ZCEPVutn4kGdrq-BMYSK3-XiTjLj1Ve78E",
-      "image_credit": "AP News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd68dT6FKz44KwBcYh-swbkcK4Uo3_YvKCK5BDo_Lfo84OZ6pEwlXKNbhUrW8",
+      "image_credit": "Los Angeles Times",
       "news": [
         {
-          "url": "https://apnews.com/video/phil-collins-on-health-scare-i-live-a-simple-life-85ab59482a504555b163ae05f3753658",
-          "title": "Phil Collins on health scare: ‘I live a simple life’",
-          "publisher": "AP News",
+          "url": "https://www.latimes.com/sports/ucla/story/2026-11-13/ucla-defeats-illinois-improves-to-10-0-for-first-time-since-1998",
+          "title": "No. 4 UCLA defeats Illinois, improves to 10-0 for first time since 1998",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefA4Oyb-3vVL2X4StlFo6iw7e4ZCEPVutn4kGdrq-BMYSK3-XiTjLj1Ve78E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd68dT6FKz44KwBcYh-swbkcK4Uo3_YvKCK5BDo_Lfo84OZ6pEwlXKNbhUrW8"
         },
         {
-          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/10/phil-collins-tour-return-health-update-rock-hall-of-fame/92711570007/",
-          "title": "Phil Collins, 75, considers touring again after years of health struggles",
-          "publisher": "USA Today",
+          "url": "https://www.espn.com/college-football/story/_/id/50477249/ucla-qb-ty-dieffenbach-leaves-game-injury",
+          "title": "UCLA QB Ty Dieffenbach says first-half shoulder injury vs. Illinois not serious",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr_i2vSJKGyAKi89DBq0Y7Fo9Ljj_uhQVIxXmCkUTYJBfgybMIww1Kv4pYkI4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GDkjsBW4AfsyYMZxUFjFoCPXQf6iFp6Kja1ma6CEg7qrqj-SFDTc2KhUMDk"
         },
         {
-          "url": "https://consequence.net/2026/11/phil-collins-rock-hall-induction-solo-artist/",
-          "title": "Phil Collins Inducted Into Rock & Roll Hall of Fame: “You Haven’t Heard the Last from Me”",
-          "publisher": "Consequence of Sound",
+          "url": "https://fightingillini.com/news/2026/11/13/football-illinois-falls-at-4-ucla-on-friday-night",
+          "title": "Illinois Falls at #4 UCLA on Friday Night",
+          "publisher": "University of Illinois Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcJzrBImdZXfGlDGdegdDaWMFBZLmPJoGwce45u_yeOmkfA0a60VeK7SGcOXw"
-        }
-      ]
-    },
-    {
-      "query": "magnus carlsen",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T06:40:00Z",
-      "related_news_urls": [
-        "https://www.chess.com/news/view/2026-total-chess-world-championship-tour-pilot-day-5",
-        "https://en.chessbase.com/post/total-chess-budapest-2026-groups-3",
-        "https://www.fide.com/martirosyan-defeats-carlsen-on-day-3-in-budapest/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwuU2sOmius2Smdc01uL8Wpi5g7V9xVEq2UmjJ-Zhli05dUdoO4AqZrwQ8w6w",
-      "image_credit": "Chess.com",
-      "news": [
-        {
-          "url": "https://www.chess.com/news/view/2026-total-chess-world-championship-tour-pilot-day-5",
-          "title": "Firouzja, Caruana, Giri, MVL Lead Before Final Day; Carlsen Out Of Contention",
-          "publisher": "Chess.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwuU2sOmius2Smdc01uL8Wpi5g7V9xVEq2UmjJ-Zhli05dUdoO4AqZrwQ8w6w"
-        },
-        {
-          "url": "https://en.chessbase.com/post/total-chess-budapest-2026-groups-3",
-          "title": "Total Chess: Caruana and MVL impress, Martirosyan upsets Carlsen",
-          "publisher": "Chess News | ChessBase",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBaegIS_4l8WNMTEn57bssF6j1jtXRSxLcsWPeRmcB0toNg0BiH8ErYgeYFmE"
-        },
-        {
-          "url": "https://www.fide.com/martirosyan-defeats-carlsen-on-day-3-in-budapest/",
-          "title": "Martirosyan defeats Carlsen on Day 3 in Budapest – International Chess Federation",
-          "publisher": "FIDE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwEM37EfgbQLwI-7y53E_82LwyNFj4O0RHoRq4rW_RSPgi4hHa8rJMTrSE3Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSarIhDvxibQQJKn6BpYK9dZJ1PqN5hoMn97D-Qi67IS0gN0tTDi9VKNWcl6Pw"
         }
       ]
     }
