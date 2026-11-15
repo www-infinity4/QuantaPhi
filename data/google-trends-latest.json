@@ -3,340 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T18:31:14.641499Z",
+  "checked_at": "2026-11-15T19:01:23.173289Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nico collins",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T18:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/texans-wr-nico-collins-said-200004571.html",
-        "https://www.rotoballer.com/player-news/nico-collins-a-strong-wr2-in-week-10/1993464",
-        "https://twsn.net/2026/11/13/nico-collins-shrinking-target-share-makes-him-a-risky-start-against-cleveland"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmd6L-M63-Ht-QCkZFePzdoKE1ik1_NHdeckAJ2hv5bM32cE0L7yd3bDBbNw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/texans-wr-nico-collins-said-200004571.html",
-          "title": "What Texans WR Nico Collins Said About Facing Browns CB Denzel Ward",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmd6L-M63-Ht-QCkZFePzdoKE1ik1_NHdeckAJ2hv5bM32cE0L7yd3bDBbNw"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/nico-collins-a-strong-wr2-in-week-10/1993464",
-          "title": "Nico Collins Week 10 Outlook for Fantasy Football (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1n0jWEIuobpIFWLXTt8m7GXV4k-dE0qvrAFPp3ds-ax0ZdFuG1JrXO-wC970"
-        },
-        {
-          "url": "https://twsn.net/2026/11/13/nico-collins-shrinking-target-share-makes-him-a-risky-start-against-cleveland",
-          "title": "Nico Collins’ Shrinking Target Share Makes Him a Risky Start Against Cleveland",
-          "publisher": "TWSN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs5AhVpFptEcPIGN_ruOU_6yVOBmFEbnpeZ6QLcRLea9ug5_g6jFiO3Acmcpo"
-        }
-      ]
-    },
-    {
-      "query": "travis kelce injury",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T18:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/travis-kelce-play-today-injury-114554338.html",
-        "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/13/kansas-city-chiefs-travis-kelce-injury-final-update-nfl-week-10/92772383007/",
-        "https://www.fantasypros.com/nfl/news/619861/travis-kelce-ankle-good-to-go-sunday.php"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUx1ufACzq5QhFuHsHezJIioH-UOuAB2mRg8a3uhtAhE3_g0IMM4_e4U138N0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/travis-kelce-play-today-injury-114554338.html",
-          "title": "Will Travis Kelce play today? Injury news, update for Chiefs TE",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUx1ufACzq5QhFuHsHezJIioH-UOuAB2mRg8a3uhtAhE3_g0IMM4_e4U138N0"
-        },
-        {
-          "url": "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/13/kansas-city-chiefs-travis-kelce-injury-final-update-nfl-week-10/92772383007/",
-          "title": "Will Travis Kelce play this week? Final injury update for Chiefs TE",
-          "publisher": "Chiefs Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCS_pSJ8t183cQ7so5PZeUPXoW5_mj4oGPRsSEYzxCmw80fIrIimTe_KEjqBc"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/news/619861/travis-kelce-ankle-good-to-go-sunday.php",
-          "title": "Travis Kelce (ankle) good to go for Sunday",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1eoyUnCqilgZLCq366VsGyH5oW1JK0p1i-nUFeKXffhWo3uNxq6NfzCb2Nt4"
-        }
-      ]
-    },
-    {
-      "query": "falcons game today",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T18:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-shares-personal-news-084228979.html",
-        "https://www.imdb.com/news/ni66112359/?ref_=nmnw_art_perm",
-        "https://sports.ndtv.com/us/nfl/taylor-swift-drops-big-holiday-update-days-before-kansas-city-chiefs-atlanta-falcons-game-12326557"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxgXxlL7QeQs_qcxCINCz5knm5vconMojV4FkAkMB8Od_r-Qht8F2vzuOwdvQ",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-shares-personal-news-084228979.html",
-          "title": "Taylor Swift Shares Personal News Before Chiefs-Falcons Game",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxgXxlL7QeQs_qcxCINCz5knm5vconMojV4FkAkMB8Od_r-Qht8F2vzuOwdvQ"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66112359/?ref_=nmnw_art_perm",
-          "title": "Is Taylor Swift Attending Today’s Chiefs Game? Latest November 15 Attendance Update",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7BH2nDxcDjCM5eHrF6ofKQRGcatMZ2BY99UU9_uBEAPTRyKTasmI_MtqGMb4"
-        },
-        {
-          "url": "https://sports.ndtv.com/us/nfl/taylor-swift-drops-big-holiday-update-days-before-kansas-city-chiefs-atlanta-falcons-game-12326557",
-          "title": "Taylor Swift Drops Big Holiday Update Days Before Kansas City Chiefs-Atlanta Falcons Game",
-          "publisher": "NDTV Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSppnn_q03NFkAvEXSBsChOCPxVZELwzg7Y-J85tHfQdTlQGgH0s6OempQ4HOE"
-        }
-      ]
-    },
-    {
-      "query": "van ginkel",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T18:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/former-wisconsin-badger-best-chance-193001670.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-IJZFo01ksL_XV7xxFARHEZt18u6mIX4vrLMsGlAD9lpCPVOfbUBX5Y75gwU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/former-wisconsin-badger-best-chance-193001670.html",
-          "title": "Which Former Wisconsin Badger Has the Best Chance to Win Super Bowl LXI?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-IJZFo01ksL_XV7xxFARHEZt18u6mIX4vrLMsGlAD9lpCPVOfbUBX5Y75gwU"
-        }
-      ]
-    },
-    {
-      "query": "chiefs vs falcons where to watch",
+      "query": "omar cooper",
       "approx_searches": "5000+",
-      "published_at": "2026-11-15T18:00:00Z",
+      "published_at": "2026-11-15T18:40:00Z",
       "related_news_urls": [
-        "https://www.sportsline.com/nfl/game-forecast/NFL_20261115_KC@ATL/",
-        "https://sports.yahoo.com/articles/chiefs-final-injury-roundup-vs-170410265.html",
-        "https://www.foxsports.com/stories/nfl/how-to-watch-chiefs-vs-falcons-tv-channel-live-stream-time-nov-15-2026"
+        "https://sports.yahoo.com/articles/buffalo-bills-concerning-injury-news-174952711.html",
+        "https://www.cbssports.com/fantasy/football/news/jets-adonai-mitchell-active-in-week-10/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/cooper-jr-heads-to-locker-room-with-ankle-injury"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcpkbqVAsh8SZynUB21vfzRQ0yA_9dKOaf3-d7n2eVbJu6IC2KYEqCCi_J4rk",
-      "image_credit": "SportsLine",
-      "news": [
-        {
-          "url": "https://www.sportsline.com/nfl/game-forecast/NFL_20261115_KC@ATL/",
-          "title": "Kansas City Chiefs vs. Atlanta Falcons Odds, Betting Lines, Expert picks, Game Projections, DFS Projections and Player Prop Projections - Sunday 11/15 1:00 PM ET",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcpkbqVAsh8SZynUB21vfzRQ0yA_9dKOaf3-d7n2eVbJu6IC2KYEqCCi_J4rk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/chiefs-final-injury-roundup-vs-170410265.html",
-          "title": "Chiefs Final Injury Roundup vs. Falcons: Chris Jones Update, Patrick Mahomes Cleared, 4 Ruled Out",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEM1lOzxB08kiFd-ron0umwKlncg-FSe6MnydKsQ2868BIbjr1AjwwIhDVFY"
-        },
-        {
-          "url": "https://www.foxsports.com/stories/nfl/how-to-watch-chiefs-vs-falcons-tv-channel-live-stream-time-nov-15-2026",
-          "title": "How to Watch Chiefs vs. Falcons: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmd7SswqKruJEzEmgAr58-HnF945vWhCaZVHiaKS_NZiRZ6wq3UiXoM03UUHw"
-        }
-      ]
-    },
-    {
-      "query": "vikings vs packers where to watch",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T18:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50484865/sources-vikings-want-keep-kirk-cousins-2027-season",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kirk-cousins-is-the-first-quarterback-with-20-td-passes-to-change-teams-midseason",
-        "https://www.foxsports.com/stories/nfl/2026-nfl-week-10-best-bets-expert-picks"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZhdGQX2yPLJsOuKysVdy9Hu6qHiofuGkRSwQ7V5zc1s1BGY1Qa96Tq1Xeik",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50484865/sources-vikings-want-keep-kirk-cousins-2027-season",
-          "title": "Sources: Vikings want to keep Kirk Cousins, talked to QB about staying in 2027",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZhdGQX2yPLJsOuKysVdy9Hu6qHiofuGkRSwQ7V5zc1s1BGY1Qa96Tq1Xeik"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kirk-cousins-is-the-first-quarterback-with-20-td-passes-to-change-teams-midseason",
-          "title": "Kirk Cousins is the first quarterback with 20 TD passes to change teams midseason",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGTDxtne-27coTT5WL_fUEHc9w9yfVzpHVIOp1AWH-cr7ZTlYLuEJxobs9Sg4"
-        },
-        {
-          "url": "https://www.foxsports.com/stories/nfl/2026-nfl-week-10-best-bets-expert-picks",
-          "title": "2026 NFL Week 10 Best Bets, Expert Picks: Back Vikings in Kirk Cousins’ Return",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS78PSOR0YvjOoz6o68HOKV6mPYmrU5gfD2YYxQdtWyd_3oDv-3UVwPysiUkho"
-        }
-      ]
-    },
-    {
-      "query": "louisville vs memphis",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T18:00:00Z",
-      "related_news_urls": [
-        "https://dailymemphian.com/article/68575/memphis-tigers-basketball-louisville-preview",
-        "https://247sports.com/college/louisville/article/memphis-two-leading-scorers-are-game-time-decisions-vs-louisville-292705867/",
-        "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/15/jayden-reid-luke-almodovar-injury-updates-memphis-basketball/92321256007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM3gv3Z01MjvpDjMXHD1voxc835KijmWZaP8H_R2m4_jQV-z-Eqq3glIvzC6g",
-      "image_credit": "Daily Memphian",
-      "news": [
-        {
-          "url": "https://dailymemphian.com/article/68575/memphis-tigers-basketball-louisville-preview",
-          "title": "Memphis vs. No. 10 Louisville: What to know for Tigers’ second home game",
-          "publisher": "Daily Memphian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM3gv3Z01MjvpDjMXHD1voxc835KijmWZaP8H_R2m4_jQV-z-Eqq3glIvzC6g"
-        },
-        {
-          "url": "https://247sports.com/college/louisville/article/memphis-two-leading-scorers-are-game-time-decisions-vs-louisville-292705867/",
-          "title": "Memphis' Two Leading Scorers Are Game-Time Decisions vs. Louisville",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzkTaTF9G7ScIkH7AK8HHCjtbIUtWjrBgF_gxKdXArgjVZ3J_j1tEfGtoCDdo"
-        },
-        {
-          "url": "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/15/jayden-reid-luke-almodovar-injury-updates-memphis-basketball/92321256007/",
-          "title": "Memphis basketball starters Jayden Reid, Luke Almodovar injury updates",
-          "publisher": "The Commercial Appeal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS29W8gi_qm7Fj4CoKEz4kT84j1ilH3AODlho2gKecP8CbEuEOHivZmKPfxJng"
-        }
-      ]
-    },
-    {
-      "query": "vanderbilt vs iowa",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T18:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/iowa-womens-basketball-vs-vanderbilt-164519041.html",
-        "https://www.blackheartgoldpants.com/womens-basketball/72474/womens-basketball-iowa-vs-vanderbilt-commodores-how-to-watch-game-thread",
-        "https://hawkeyesports.com/news/2026/11/13/wbb-notes-no-10-iowa-set-for-top-10-showdown-sunday-against-no-8-vanderbilt-on-fs1"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIs-R_DpAI97FPwVIqOfDhLsvJ1A9Q_mX5ZtlAdAqHUmDq5dnBkVo1I9ungXU",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2ONp5eCQElq2I1mrGwY0j_enE2ppPxq-jX9scdMxEUkNJHiN22-Cv5yKoXDk",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/iowa-womens-basketball-vs-vanderbilt-164519041.html",
-          "title": "Iowa women's basketball vs Vanderbilt score, updates, highlights",
+          "url": "https://sports.yahoo.com/articles/buffalo-bills-concerning-injury-news-174952711.html",
+          "title": "Buffalo Bills Get Concerning Injury News Ahead of Jets Week 10 Game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIs-R_DpAI97FPwVIqOfDhLsvJ1A9Q_mX5ZtlAdAqHUmDq5dnBkVo1I9ungXU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2ONp5eCQElq2I1mrGwY0j_enE2ppPxq-jX9scdMxEUkNJHiN22-Cv5yKoXDk"
         },
         {
-          "url": "https://www.blackheartgoldpants.com/womens-basketball/72474/womens-basketball-iowa-vs-vanderbilt-commodores-how-to-watch-game-thread",
-          "title": "Women’s Basketball: Iowa Vs. Vanderbilt Commodores: How to Watch, Game Thread",
-          "publisher": "Black Heart Gold Pants",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_k7J12Tv5g2faB8WTJ3D0BtOg15Ik0hbzT_oUELEbGeBbCAXvNxr_lC_ILUE"
-        },
-        {
-          "url": "https://hawkeyesports.com/news/2026/11/13/wbb-notes-no-10-iowa-set-for-top-10-showdown-sunday-against-no-8-vanderbilt-on-fs1",
-          "title": "WBB Notes: No. 10 Iowa Set for Top-10 Showdown Sunday Against No. 8 Vanderbilt on FS1",
-          "publisher": "Iowa Hawkeyes Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAdrCaBQaoBp0r2HbDm-XIYDdvepbdnTdTpwUAUdVOf4MyP93OoA2A98R82TI"
-        }
-      ]
-    },
-    {
-      "query": "boise state vs nebraska",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T18:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-basketball-boise-state-basketball-preview-sioux-falls-south-dakota-292785352/",
-        "https://www.on3.com/teams/nebraska-cornhuskers/news/nebraska-hoops-game-day-boise-state-2/",
-        "https://sports.yahoo.com/articles/boise-state-vs-nebraska-prediction-103057641.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuS0s2Qz_h26_ZMbVzcBos9inNJj9bcMVCHsL1jCQSp76Y7f6wgisKngj_4b8",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-basketball-boise-state-basketball-preview-sioux-falls-south-dakota-292785352/",
-          "title": "Starting Five: Nebraska Basketball vs. Boise State in Sioux Falls",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuS0s2Qz_h26_ZMbVzcBos9inNJj9bcMVCHsL1jCQSp76Y7f6wgisKngj_4b8"
-        },
-        {
-          "url": "https://www.on3.com/teams/nebraska-cornhuskers/news/nebraska-hoops-game-day-boise-state-2/",
-          "title": "Nebraska Hoops Game Day: Boise State",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTusS1bNR7WLEBwpVfQCBPrZDsEmjg8FuLvE2tFxCDBLfS1gmESf7jVmR3lIo8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/boise-state-vs-nebraska-prediction-103057641.html",
-          "title": "Boise State vs Nebraska Prediction, Pick, College Basketball Odds for Sunday, Nov. 15",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRcCENVRLDBVNgaKu9HXeYO5mj4a_JU_awF4m2uO7PpRFACJgvYhekvn5_dHs"
-        }
-      ]
-    },
-    {
-      "query": "saints game today",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T18:00:00Z",
-      "related_news_urls": [
-        "https://www.panthers.com/news/week-10-inactives-at-new-orleans-cornerback-will-lee-inactive-for-saints-games",
-        "https://www.cbssports.com/fantasy/football/news/panthers-jatavion-sanders-sidelined-for-week-10/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/adonai-mitchell-knee-will-play-in-week-10-vs-bills"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjiY0YxWwZa2EmgC3Cn6NdNZQazK4dK6YoXTeKQGOpaCbMvTsWTZyvqVwBbEA",
-      "image_credit": "Carolina Panthers",
-      "news": [
-        {
-          "url": "https://www.panthers.com/news/week-10-inactives-at-new-orleans-cornerback-will-lee-inactive-for-saints-games",
-          "title": "Week 10 Inactives at New Orleans: Cornerback Will Lee inactive for Saints games",
-          "publisher": "Carolina Panthers",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjiY0YxWwZa2EmgC3Cn6NdNZQazK4dK6YoXTeKQGOpaCbMvTsWTZyvqVwBbEA"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/panthers-jatavion-sanders-sidelined-for-week-10/",
-          "title": "Panthers' Ja'Tavion Sanders: Sidelined for Week 10",
+          "url": "https://www.cbssports.com/fantasy/football/news/jets-adonai-mitchell-active-in-week-10/",
+          "title": "Jets' Adonai Mitchell: Active in Week 10",
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/adonai-mitchell-knee-will-play-in-week-10-vs-bills",
-          "title": "Adonai Mitchell (knee) will play in Week 10 vs Bills",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/cooper-jr-heads-to-locker-room-with-ankle-injury",
+          "title": "Cooper Jr. heads to locker room with ankle injury",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMOYL5WG1IlrG7kyYH5gC3YadPT2YAfDU4pVFd2jsWhXq2SRE00X7Bh5IW6UM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV8IXlNA5P4Gx1bj8Owc0ip7JAo8hyOCNVI7lQwOYs5oMJFL4KhUlAonF9w4g"
+        }
+      ]
+    },
+    {
+      "query": "xavier hutchinson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T18:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
+        "https://www.denverpost.com/2026/11/10/nuggets-team-plane-delay-mexico-city-jamal-murray-jokic/",
+        "https://www.hoopsrumors.com/2026/11/nuggets-notes-murray-starters-jokic-gordon-derozan-more.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
+          "title": "Nuggets upgrade starters to probable vs. Rockets after delayed arrival",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s"
+        },
+        {
+          "url": "https://www.denverpost.com/2026/11/10/nuggets-team-plane-delay-mexico-city-jamal-murray-jokic/",
+          "title": "Nuggets offered starters a night off after Mexico City travel fiasco. Led by Jamal Murray, they refused to sit out.",
+          "publisher": "The Denver Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04x7ijFDykMzkx3eMVeoMLT2WODnJeJH78i0XBNycdWUyho6uxobE792z7JU"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/nuggets-notes-murray-starters-jokic-gordon-derozan-more.html",
+          "title": "Nuggets Notes: Murray, Starters, Jokic, Gordon, DeRozan, More",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3S8av_OnYGB3l_coZ_bGuJqiHuZqXXmMU-B58-VIKOYxEmVjREIS8_OEsOpI"
+        }
+      ]
+    },
+    {
+      "query": "tank dell",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T18:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/week-10-wr-preview-tank-dell-is-back-in-business/",
+        "https://sports.yahoo.com/video/why-tank-dell-was-an-elite-fantasy-waiver-wire-steal-225637064.html",
+        "https://www.nfl.com/videos/tank-dell-on-how-texans-wr-room-stepped-up-after-key-injuries-gmfb"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdp795rYhp7mCrexHZrgTd2QEtar7Sn0ZVLUZL_o5SoO0-i0Cq9kwr8NIHif8",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/week-10-wr-preview-tank-dell-is-back-in-business/",
+          "title": "Fantasy football Week 10 WR preview: Tank Dell is back in business and ready to rescue injury-ravaged lineups",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdp795rYhp7mCrexHZrgTd2QEtar7Sn0ZVLUZL_o5SoO0-i0Cq9kwr8NIHif8"
+        },
+        {
+          "url": "https://sports.yahoo.com/video/why-tank-dell-was-an-elite-fantasy-waiver-wire-steal-225637064.html",
+          "title": "Why Tank Dell was an elite fantasy waiver wire steal",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyK8OUxvc67MALJIIaCyyI0bI994WOUWXyJiLPXSVN0NjqfByTLMzwY3uYLVs"
+        },
+        {
+          "url": "https://www.nfl.com/videos/tank-dell-on-how-texans-wr-room-stepped-up-after-key-injuries-gmfb",
+          "title": "Tank Dell on how Texans WR room stepped up after key injuries | 'GMFB'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaiO15MZBrSusmMNWfkyYZZqdqUMcDGczLwsP9-lWvOtI81QAb9UIC_dUipcw"
+        }
+      ]
+    },
+    {
+      "query": "chloe kitts",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T18:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/south-carolina/article/south-carolina-womens-basketball-transfers-freshman-dawn-staley--292448940/",
+        "https://www.espn.com/womens-college-basketball/recap/_/gameId/401906089",
+        "https://goheels.com/news/2026/11/8/womens-basketball-no-12-wbb-falls-to-no-1-south-carolina-in-ally-tipoff"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRy1Q_ZMelOgAtLOXz5Yp4QsRO_ImVxM15DFspHQEGmTnKdZENr2OHZ4s4C6aQ",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/south-carolina/article/south-carolina-womens-basketball-transfers-freshman-dawn-staley--292448940/",
+          "title": "How freshman and transfers performed in win against No. 12 North Carolina",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRy1Q_ZMelOgAtLOXz5Yp4QsRO_ImVxM15DFspHQEGmTnKdZENr2OHZ4s4C6aQ"
+        },
+        {
+          "url": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401906089",
+          "title": "South Carolina 84-39 North Carolina (Nov 8, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToFy9pusoAY0w3lyshNN1BzKyo7O0e1XUxHLyW2uy1GyxlLB6dwOdFy19tdGE"
+        },
+        {
+          "url": "https://goheels.com/news/2026/11/8/womens-basketball-no-12-wbb-falls-to-no-1-south-carolina-in-ally-tipoff",
+          "title": "No. 12 WBB Falls To No. 1 South Carolina In Ally Tipoff, 84-39 - University of North Carolina Athletics",
+          "publisher": "University of North Carolina Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3T-7KdDwHZiRXcD5KQ6lahqPnpVBDZppHxHOpTzY2Q8ceRpRr34kj6Gu0hLQ"
+        }
+      ]
+    },
+    {
+      "query": "travis etienne jr.",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T18:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50483551/saints-rb-travis-etienne-activated-ir-game-vs-panthers",
+        "https://www.nfl.com/news/saints-activate-rb-travis-etienne-from-injured-reserve-ahead-of-sunday-s-game-vs-panthers",
+        "https://www.cbssports.com/fantasy/football/news/saints-audric-estime-backfield-role-shrinking-for-week-10/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNkZqsj_GbfZcva43661rBLi0ncecvuY9YCLoCyPUnMEZAGks4WNWGDyUoEhg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50483551/saints-rb-travis-etienne-activated-ir-game-vs-panthers",
+          "title": "Saints RB Travis Etienne Jr. activated off IR for game vs. Panthers",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNkZqsj_GbfZcva43661rBLi0ncecvuY9YCLoCyPUnMEZAGks4WNWGDyUoEhg"
+        },
+        {
+          "url": "https://www.nfl.com/news/saints-activate-rb-travis-etienne-from-injured-reserve-ahead-of-sunday-s-game-vs-panthers",
+          "title": "Saints activate RB Travis Etienne from injured reserve ahead of Sunday's game vs. Panthers",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLuSrxxrvH69fYRp_meuiuRqRAxbP7GKE1EQjh2cnQuF7Uahb4y-OX-naYw00"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/saints-audric-estime-backfield-role-shrinking-for-week-10/",
+          "title": "Saints' Audric Estime: Backfield role shrinking for Week 10",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
+        }
+      ]
+    },
+    {
+      "query": "vikings game",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-15T18:30:00Z",
+      "related_news_urls": [
+        "https://www.packers.com/news/packers-vs-vikings-how-to-watch-stream-listen-week-10-2026",
+        "https://www.dailynorseman.com/minnesota-vikings-discussion-chat-message-board/101583/minnesota-vikings-green-bay-packers-week-10-nfl-discussion",
+        "https://www.nytimes.com/athletic/7776871/2026/11/15/packers-vikings-score-result-stats/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHdmUgo72XJ0ZmMT-vXxfu7U6NuMxBXc4s1lFlfZqfLn2FvkHA5BEbC96An7A",
+      "image_credit": "Green Bay Packers – packers.com",
+      "news": [
+        {
+          "url": "https://www.packers.com/news/packers-vs-vikings-how-to-watch-stream-listen-week-10-2026",
+          "title": "Packers vs. Vikings | How to watch, stream & listen | Week 10",
+          "publisher": "Green Bay Packers – packers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHdmUgo72XJ0ZmMT-vXxfu7U6NuMxBXc4s1lFlfZqfLn2FvkHA5BEbC96An7A"
+        },
+        {
+          "url": "https://www.dailynorseman.com/minnesota-vikings-discussion-chat-message-board/101583/minnesota-vikings-green-bay-packers-week-10-nfl-discussion",
+          "title": "Minnesota Vikings at Green Bay Packers: Week 10 NFL Discussion",
+          "publisher": "Daily Norseman",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAxSY_8851Vtawh-GQ51uss3yHneuWSJd2NaRC7XALqSXmm1SU7PWPpCnQGiQ"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7776871/2026/11/15/packers-vikings-score-result-stats/",
+          "title": "Packers vs. Vikings score predictions: Can Kirk Cousins turn the tide in huge NFC North battle?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNYHnVKyQYw5QBSUEJuLmilQP3Qm2X7ZHU6uAs3x0yx1YZL-bP2oCtE9l46w"
+        }
+      ]
+    },
+    {
+      "query": "cj stroud",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T18:30:00Z",
+      "related_news_urls": [
+        "https://www.cleveland.com/browns/2026/11/no-smoke-with-quinshon-judkins-fewer-snaps-cj-stroud-on-a-roll-browns-takeaways.html",
+        "https://247sports.com/nfl/cleveland-browns/article/browns-hc-todd-monken-on-quinshon-judkins-dylan-sampson-snap-count-against-saints-292522229/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/judkins-bottled-up-on-ot-loss-to-the-saints"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhfloUPQV0vE3gR94kWNtIWvwBKF4CeYh-aBfX1yfHFBbUOU9_Jey3gH7QqQg",
+      "image_credit": "Cleveland.com",
+      "news": [
+        {
+          "url": "https://www.cleveland.com/browns/2026/11/no-smoke-with-quinshon-judkins-fewer-snaps-cj-stroud-on-a-roll-browns-takeaways.html",
+          "title": "‘No smoke’ surrounding Quinshon Judkins’ fewer snaps; Texans QB C.J. Stroud on a roll: Browns takeaways",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhfloUPQV0vE3gR94kWNtIWvwBKF4CeYh-aBfX1yfHFBbUOU9_Jey3gH7QqQg"
+        },
+        {
+          "url": "https://247sports.com/nfl/cleveland-browns/article/browns-hc-todd-monken-on-quinshon-judkins-dylan-sampson-snap-count-against-saints-292522229/",
+          "title": "Browns' HC Todd Monken Addresses RB Snap Count Against Saints",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP-r2pXnNyJPjmVgZAbjF6obZj3VFzXVgxvgC_pN63abKcsTOik68SNAkVpGA"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/judkins-bottled-up-on-ot-loss-to-the-saints",
+          "title": "Judkins bottled up on OT loss to the Saints",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVUXImrAjc5C7a8jAazxSAO-l8mA6OQsEBjKrWej0YNq-Llu2sWQErfwWgGQM"
+        }
+      ]
+    },
+    {
+      "query": "justin fields",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T18:30:00Z",
+      "related_news_urls": [
+        "https://arrowheadaddict.com/chiefs-free-agent-stock-report-after-week-9-puts-justin-fields-in-the-spotlight-01m766yewca1",
+        "https://www.newyorkjets.com/news/stock-report-jets-qb-geno-smith-offensive-line-coming-off-strong-perfomances-ahead-of-chiefs-matchup-11-04-2026",
+        "https://www.espn.com/nfl/story/_/id/50400929/jets-qb-upgrade-geno-smith-justin-fields"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkZgNltglzUNu_vPlofV6wSj55q1cS2BSaCvSgFokWJmBswWL7W6TTOmrCg5c",
+      "image_credit": "Arrowhead Addict",
+      "news": [
+        {
+          "url": "https://arrowheadaddict.com/chiefs-free-agent-stock-report-after-week-9-puts-justin-fields-in-the-spotlight-01m766yewca1",
+          "title": "Chiefs free-agent stock report after Week 9 puts Justin Fields in the spotlight",
+          "publisher": "Arrowhead Addict",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkZgNltglzUNu_vPlofV6wSj55q1cS2BSaCvSgFokWJmBswWL7W6TTOmrCg5c"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/stock-report-jets-qb-geno-smith-offensive-line-coming-off-strong-perfomances-ahead-of-chiefs-matchup-11-04-2026",
+          "title": "Stock Report | QB Geno Smith Off to Strong Start With the Long Ball",
+          "publisher": "New York Jets",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6Zt92tIIMGYXtIuMtJCq45Tjt_CvKWTME93zshk3u9caryjIf42R_PbMnyXQ"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50400929/jets-qb-upgrade-geno-smith-justin-fields",
+          "title": "Geno Smith has been upgrade from Justin Fields for Jets -- except in win column",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH2XQZfa6zE9_iK7JYPYacpmbXDVem9LId4-HaR4Dm8XfbJaXnS47l6Pcwrdw"
+        }
+      ]
+    },
+    {
+      "query": "marshawn lloyd",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T18:30:00Z",
+      "related_news_urls": [
+        "https://foxsports1070.iheart.com/content/2026-11-13-marshawn-davon-thamir-lloyd-week-10-preview-vs-the-vikings/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-10/kendre-miller-visiting-cowboys-on-tuesday",
+        "https://www.thefantasyfootballers.com/news/647190/marshawn-lloyd-good-to-go-for-week-10/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5_xvWn1rLOewAFG7_MF6lG9LmfnlTxY4JxgHheP5H-bHu7alZXddVz4CeIo4",
+      "image_credit": "Fox Sports 1070",
+      "news": [
+        {
+          "url": "https://foxsports1070.iheart.com/content/2026-11-13-marshawn-davon-thamir-lloyd-week-10-preview-vs-the-vikings/",
+          "title": "MarShawn Davon Thamir Lloyd Week 10 Preview vs. the Vikings",
+          "publisher": "Fox Sports 1070",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5_xvWn1rLOewAFG7_MF6lG9LmfnlTxY4JxgHheP5H-bHu7alZXddVz4CeIo4"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-10/kendre-miller-visiting-cowboys-on-tuesday",
+          "title": "Kendre Miller visiting Cowboys on Tuesday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZj-on0aKXuehJYvjlP2Y-zY4jGaOIx7vWlekaaDfCD5PfcCsw_oykEV0WGJA"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/647190/marshawn-lloyd-good-to-go-for-week-10/",
+          "title": "MarShawn Lloyd Good to go for Week 10",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7dD9oCBQkQ3SVjMlUXjMvhQtWYwl_xFrPfPpUmou39horsZppHaDBMf2RbEM"
+        }
+      ]
+    },
+    {
+      "query": "jabari walker",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T18:30:00Z",
+      "related_news_urls": [
+        "https://www.vikings.com/news/signing-damon-bankston-josh-ross-practice-squad",
+        "https://sports.yahoo.com/articles/vikings-add-former-packers-running-015834293.html",
+        "https://www.acmepackingcompany.com/green-bay-packers-news/89566/vikings-sign-former-green-bay-packer"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUWmLHX8OHDnvupbpCcCKx0AdKOCC4HIXW6hx5x1aJtqmFyTQdIUs6cmmkLlM",
+      "image_credit": "Minnesota Vikings",
+      "news": [
+        {
+          "url": "https://www.vikings.com/news/signing-damon-bankston-josh-ross-practice-squad",
+          "title": "Vikings Sign RB Damon Bankston & LB Josh Ross to Practice Squad",
+          "publisher": "Minnesota Vikings",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUWmLHX8OHDnvupbpCcCKx0AdKOCC4HIXW6hx5x1aJtqmFyTQdIUs6cmmkLlM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/vikings-add-former-packers-running-015834293.html",
+          "title": "Vikings Add Former Packers Running Back & 6-Foot, 229-Pound Linebacker",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeC2Us0064-eBt4V7KxoyJZRXxoaQ495S2NBnpAooltjb2kyDgUT4b7xSIXsE"
+        },
+        {
+          "url": "https://www.acmepackingcompany.com/green-bay-packers-news/89566/vikings-sign-former-green-bay-packer",
+          "title": "Vikings sign former Green Bay Packer",
+          "publisher": "Acme Packing Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQu52ybamouoXJfMoKdKkkamf4jux_N8725-C8ILsxGNBkzjj6Lly20mZ5Xblc"
         }
       ]
     }
