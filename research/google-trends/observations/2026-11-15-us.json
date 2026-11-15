@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T11:31:01.527721Z",
+  "checked_at": "2026-11-15T12:01:29.477578Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "orlando weather",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T11:40:00Z",
+      "related_news_urls": [
+        "https://www.wfla.com/weather/forecast/coldest-weekend-in-tampa-bay-of-the-season-so-far/",
+        "https://cbs12.com/news/local/chilly-mornings-cool-afternoons-bring-fall-weather-to-the-palm-beaches-and-treasure-coast",
+        "https://www.gulfcoastnewsnow.com/article/weather-forecast-cold-front-florida-gulf-coast-saturday-cool/74429653"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2bN7lYojuHGvZYnaXkskcnDqQNB3txXxxBwFrMRdkOWAAiR1zZi0kpGx0Tmk",
+      "image_credit": "WFLA",
+      "news": [
+        {
+          "url": "https://www.wfla.com/weather/forecast/coldest-weekend-in-tampa-bay-of-the-season-so-far/",
+          "title": "Coldest weekend in Tampa Bay of the season so far",
+          "publisher": "WFLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2bN7lYojuHGvZYnaXkskcnDqQNB3txXxxBwFrMRdkOWAAiR1zZi0kpGx0Tmk"
+        },
+        {
+          "url": "https://cbs12.com/news/local/chilly-mornings-cool-afternoons-bring-fall-weather-to-the-palm-beaches-and-treasure-coast",
+          "title": "Chilly mornings, cool afternoons bring fall weather to the Palm Beaches and Treasure Coast",
+          "publisher": "WPEC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGYwx8tu1Rj9kJhCMVv65tVtL-r_X_ienwbCwK4nF-rj0e1o7iDaqVzbBVDgo"
+        },
+        {
+          "url": "https://www.gulfcoastnewsnow.com/article/weather-forecast-cold-front-florida-gulf-coast-saturday-cool/74429653",
+          "title": "Coolest air of the season so far! Afternoon temperatures in the 60s today",
+          "publisher": "Gulf Coast News and Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYX0VtgU8FTivrc5SDrq6whv62T46B5S0QTQvN1jszenpRl2CuvzBSdiLNo-s"
+        }
+      ]
+    },
+    {
+      "query": "weather houston",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T11:40:00Z",
+      "related_news_urls": [
+        "https://www.click2houston.com/weather/2026/11/14/timeline-strong-cold-front-hits-houston-sunday/",
+        "https://www.khou.com/article/weather/forecast/houston-texas-weather-forecast-update/285-eef90a85-8b4b-472f-b573-d23213b4f4b1",
+        "https://spacecityweather.com/widespread-showers-and-thunderstorms-likely-on-sunday-in-the-houston-region/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9DHrvsFrboQchR8i_i_0P5pbhMYmhHDC1ZhzBM_rm5wxbWvSgY_gNwAqB8s4",
+      "image_credit": "Click2Houston",
+      "news": [
+        {
+          "url": "https://www.click2houston.com/weather/2026/11/14/timeline-strong-cold-front-hits-houston-sunday/",
+          "title": "Timeline: Strong cold front hits Houston Sunday",
+          "publisher": "Click2Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9DHrvsFrboQchR8i_i_0P5pbhMYmhHDC1ZhzBM_rm5wxbWvSgY_gNwAqB8s4"
+        },
+        {
+          "url": "https://www.khou.com/article/weather/forecast/houston-texas-weather-forecast-update/285-eef90a85-8b4b-472f-b573-d23213b4f4b1",
+          "title": "Houston weather: Weather Impact Alert for Strong Storms and Heavy Rain Sunday",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRo9oWKn2B0o0bO0FXrR9NnwkFoQ0u8oQnukJKVLQ97Fz51epwJp4rX3KaS-Qo"
+        },
+        {
+          "url": "https://spacecityweather.com/widespread-showers-and-thunderstorms-likely-on-sunday-in-the-houston-region/",
+          "title": "Widespread showers and thunderstorms likely on Sunday in the Houston region",
+          "publisher": "Space City Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbAVzSknnHOZRlXYPvJ-iGUxUzPElrfeQWMXT1SXrvhoNEs251R5bSIIn1zfw"
+        }
+      ]
+    },
+    {
+      "query": "knock knock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T11:20:00Z",
+      "related_news_urls": [
+        "https://movieweb.com/knock-knock-streaming-november-2026/",
+        "https://collider.com/ana-de-armas-knock-knock-leaving-hbo-max-december-2026/",
+        "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIyKn4H971EAJUI2NYH3Q2qM6Z3y4kFE5qTBHrixHf-Uwrv_NW4LF1MTmVftM",
+      "image_credit": "MovieWeb",
+      "news": [
+        {
+          "url": "https://movieweb.com/knock-knock-streaming-november-2026/",
+          "title": "Ana de Armas' (Very) R-Rated 99-Minute Thriller Remake Is Officially Being Pulled From Streaming",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIyKn4H971EAJUI2NYH3Q2qM6Z3y4kFE5qTBHrixHf-Uwrv_NW4LF1MTmVftM"
+        },
+        {
+          "url": "https://collider.com/ana-de-armas-knock-knock-leaving-hbo-max-december-2026/",
+          "title": "John Wick Faces Off Against Ballerina in This Invasion Thriller Officially Leaving HBO Max",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaA2LKi1VnaQ4S5m_bdXw3Fhf5dpZ1xytddLFgwar4_HkfPtkHovXoIG5in0U"
+        },
+        {
+          "url": "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
+          "title": "Ana de Armas & Beto Montenegro Make Red-Carpet Debut",
+          "publisher": "Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU"
+        }
+      ]
+    },
     {
       "query": "uzbekistan",
       "approx_searches": "200+",
@@ -113,11 +218,11 @@
     },
     {
       "query": "rory mcilroy",
-      "approx_searches": "1000+",
+      "approx_searches": "200+",
       "published_at": "2026-11-15T10:50:00Z",
       "related_news_urls": [
         "https://www.espn.com/golf/story/_/id/50479782/mcilroy-chacarra-set-sunday-showdown-dubai",
-        "https://www.golfdigest.com/story/heres-prize-money-payout-for-each-golfer-at-2026-dp-world-tour-championship",
+        "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool",
         "https://www.skysports.com/golf/live-blog/13612212/dp-world-tour-championship-final-round-live-latest-scores-highlights-as-rory-mcilroy-chases-race-to-dubai-win"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys",
@@ -131,11 +236,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys"
         },
         {
-          "url": "https://www.golfdigest.com/story/heres-prize-money-payout-for-each-golfer-at-2026-dp-world-tour-championship",
-          "title": "Here’s the prize money payout for each golfer at the 2026 DP World Tour Championship",
+          "url": "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool",
+          "title": "Here’s the prize money payout for the DP World Tour's 2026 Race to Dubai bonus pool",
           "publisher": "Golf Digest",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ11Nm2YfgU-Vj6omjJ1VNzTVStOyDcYAMu8yWiiy61EyVUjTq358nFT5g2qtg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2exYDwaMKwG87VL0yNg4XzAIv4s_uLzaE9_yLzb8DzqQmhFXmBpKSAUwzNyY"
         },
         {
           "url": "https://www.skysports.com/golf/live-blog/13612212/dp-world-tour-championship-final-round-live-latest-scores-highlights-as-rory-mcilroy-chases-race-to-dubai-win",
@@ -148,47 +253,47 @@
     },
     {
       "query": "espncricinfo",
-      "approx_searches": "100+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-15T10:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/cricket/articles/c9ly4jm8djy7o",
-        "https://www.theguardian.com/sport/2026/nov/15/chadd-sayers-rejects-pat-cummins-view-on-sandpapergate-ntwnfb",
-        "https://www.cricbuzz.com/cricket-news/140897/usman-khawaja-claims-fall-on-deaf-ears-in-south-africa-cricbuzzcom"
+        "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression",
+        "https://sports.yahoo.com/articles/mo-hits-last-ball-boundary-094200200.html",
+        "https://www.cricinfo.com/series/under-19s-asia-cup-2026-27-1558428/india-under-19s-vs-pakistan-under-19s-final-1558444/ball-by-ball-commentary"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjR7s0L-EeP65dEZYO1uIdwr8n79yx-ZPHUzSP5qRbZRk8AHrtzI3QCqhjcck",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvfGK6JpfRnRSRaEAQwyeP6Idnkn-q1M8hloQz56U6ArcUv_HmMs3rfLJz_cs",
+      "image_credit": "Al Jazeera",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/cricket/articles/c9ly4jm8djy7o",
-          "title": "Sandpaper scandal: Bowler Chadd Sayers says he took sandpaper from the field and rejects Pat Cummins recount",
-          "publisher": "BBC",
+          "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression",
+          "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
+          "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjR7s0L-EeP65dEZYO1uIdwr8n79yx-ZPHUzSP5qRbZRk8AHrtzI3QCqhjcck"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvfGK6JpfRnRSRaEAQwyeP6Idnkn-q1M8hloQz56U6ArcUv_HmMs3rfLJz_cs"
         },
         {
-          "url": "https://www.theguardian.com/sport/2026/nov/15/chadd-sayers-rejects-pat-cummins-view-on-sandpapergate-ntwnfb",
-          "title": "Cricket Australia admits it is ‘very unlikely’ players will ever reach agreement on sandpapergate",
-          "publisher": "The Guardian",
+          "url": "https://sports.yahoo.com/articles/mo-hits-last-ball-boundary-094200200.html",
+          "title": "Mo-hits! Last-ball boundary seals U19 Asia Cup triumph for India",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3Qe02uqSiFHAaatbncNTBgdSM513SD1ItQFbQVMpLPvNmWZrbXFD20tieq0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXanU5iGwaiIC6lIDT8t2_1FkB8g9LXUznIy4JQFva7kopwIPFWB1EWIQrLUU"
         },
         {
-          "url": "https://www.cricbuzz.com/cricket-news/140897/usman-khawaja-claims-fall-on-deaf-ears-in-south-africa-cricbuzzcom",
-          "title": "Usman Khawaja claims fall on deaf ears in South Africa",
-          "publisher": "Cricbuzz",
+          "url": "https://www.cricinfo.com/series/under-19s-asia-cup-2026-27-1558428/india-under-19s-vs-pakistan-under-19s-final-1558444/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - IND19 vs PAK19, Final",
+          "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6Gk7NGgAcIn6H5FPMcbsgw1HF1ZcW7nztr1oHxXkVj9e4hH0_pjtJ982aKA0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZywZJgyZri23vSYQhnSx3-ejYWX2uwpVJVZ_vzJyX5dHjcUBqtja2T_No80M"
         }
       ]
     },
     {
       "query": "unruly aircraft passenger",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-15T10:30:00Z",
       "related_news_urls": [
         "https://abc7chicago.com/post/united-airlines-flight-emergency-unruly-passenger-hospitalized-being-removed-plane-tokyo-japan-chicago-ohare/20034439/",
-        "https://www.cbsnews.com/video/unruly-passenger-cabin-flooding-reported-separate-flights-landed-chicago/",
-        "https://fish4news.co.uk/united-flight-868-level-three-threat-passenger-restrained/"
+        "https://fish4news.co.uk/united-flight-868-level-three-threat-passenger-restrained/",
+        "https://www.thetravel.com/united-airlines-flight-868-declares-level-3-emergency-unruly-passenger-restrained-with-flex-cuffs-chicago-tokyo/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPRH0mY11zlbBIxBmQUSolsB3Xxku1BvOTh8qsr7pCtS0rlifOzGFt3Hnz4Hs",
       "image_credit": "ABC7 Chicago",
@@ -201,24 +306,24 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPRH0mY11zlbBIxBmQUSolsB3Xxku1BvOTh8qsr7pCtS0rlifOzGFt3Hnz4Hs"
         },
         {
-          "url": "https://www.cbsnews.com/video/unruly-passenger-cabin-flooding-reported-separate-flights-landed-chicago/",
-          "title": "Unruly passenger and cabin flooding reported on 2 separate flights that landed in Chicago",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzkTMIVzr74p7YQMJrSpm7417l5EJmQCGyfAzQRL0KcFXVCzcf2UXIF7I16cg"
-        },
-        {
           "url": "https://fish4news.co.uk/united-flight-868-level-three-threat-passenger-restrained/",
           "title": "United Flight 868 Crew Reports Level 3 Threat as Passenger Restrained on Tokyo to Chicago Flight",
           "publisher": "fish4news.co.uk",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQif3zjhcUjiZxcUcwva4M4R7DNCK8MkNluFy9Ie7bJQq8SBpIDs01Pa-r1L3A"
+        },
+        {
+          "url": "https://www.thetravel.com/united-airlines-flight-868-declares-level-3-emergency-unruly-passenger-restrained-with-flex-cuffs-chicago-tokyo/",
+          "title": "United Airlines Flight 868 Declares Level 3 Emergency As Unruly Passenger Is Restrained With Flex Cuffs During 12-Hour Flight To Chicago",
+          "publisher": "TheTravel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTimWbZWUa4EqkbYb_L2QV9DLt46wJgPhu_rhLMoMRjyjRC1rxnN0s3oAw7Fyk"
         }
       ]
     },
     {
       "query": "the tomb of the unknown soldier",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-15T10:30:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
@@ -248,111 +353,6 @@
           "publisher": "NBC4 Washington",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH8wuQTZ6jCVAMSV5kZGvI1QOY2u9Yfme5yeiAVn3ZFrdjvllEhqy5KZ6Uzpw"
-        }
-      ]
-    },
-    {
-      "query": "ana de armas",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T10:30:00Z",
-      "related_news_urls": [
-        "https://movieweb.com/knock-knock-streaming-november-2026/",
-        "https://collider.com/ana-de-armas-knock-knock-leaving-hbo-max-december-2026/",
-        "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIyKn4H971EAJUI2NYH3Q2qM6Z3y4kFE5qTBHrixHf-Uwrv_NW4LF1MTmVftM",
-      "image_credit": "MovieWeb",
-      "news": [
-        {
-          "url": "https://movieweb.com/knock-knock-streaming-november-2026/",
-          "title": "Ana de Armas' (Very) R-Rated 99-Minute Thriller Remake Is Officially Being Pulled From Streaming",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIyKn4H971EAJUI2NYH3Q2qM6Z3y4kFE5qTBHrixHf-Uwrv_NW4LF1MTmVftM"
-        },
-        {
-          "url": "https://collider.com/ana-de-armas-knock-knock-leaving-hbo-max-december-2026/",
-          "title": "John Wick Faces Off Against Ballerina in This Invasion Thriller Officially Leaving HBO Max",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaA2LKi1VnaQ4S5m_bdXw3Fhf5dpZ1xytddLFgwar4_HkfPtkHovXoIG5in0U"
-        },
-        {
-          "url": "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
-          "title": "Ana de Armas & Beto Montenegro Make Red-Carpet Debut",
-          "publisher": "Extra",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU"
-        }
-      ]
-    },
-    {
-      "query": "jeffrey epstein",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T10:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/15/magazine/epstein-victims-recruiting-trafficking.html",
-        "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
-        "https://www.bbc.com/news/articles/c6j9mlldgpgjo"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTswAGXa7uDOvhGhL6kTKIpXw_soGg1Z_vHQ6NWVC4D_MjCpHK_cXIScHQAZo8",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/15/magazine/epstein-victims-recruiting-trafficking.html",
-          "title": "She Was a Victim of Jeffrey Epstein. She Also Helped Him Find Other Girls.",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTswAGXa7uDOvhGhL6kTKIpXw_soGg1Z_vHQ6NWVC4D_MjCpHK_cXIScHQAZo8"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
-          "title": "Meet Eileen Laubacher, the Navy Veteran Who Beat Lauren Boebert",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpnrE3ukGf16a45yNl80xUYGFisk-_GYoFMrwgaRe8muZfA4ygX0I5C8AxsQ"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/c6j9mlldgpgjo",
-          "title": "Lauren Boebert, once a MAGA star, loses her Colorado seat",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSngXs8ktx3BOboTYdaKoBflfV58Rn-bcQ68tEh0AF7GDJoPVibHCPbKhZ7FhM"
-        }
-      ]
-    },
-    {
-      "query": "robot",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T10:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/world/robot-dogs-mounted-rifles-deployed-anti-gang-stadium-operation-haiti",
-        "https://www.dw.com/en/why-does-el-salvadors-bukele-have-troops-in-haiti/a-79940771",
-        "https://www.france24.com/en/americas/20261113-haitian-police-retake-national-stadium-from-gangs-after-two-years"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWwGrWzjFNB0JLnUCItpXRMXEPrXrKV1kvukW50HgXwG5yv3TgKa18ZOmoZDM",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/world/robot-dogs-mounted-rifles-deployed-anti-gang-stadium-operation-haiti",
-          "title": "Robot dogs mounted with rifles deployed in anti-gang stadium operation in Haiti",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWwGrWzjFNB0JLnUCItpXRMXEPrXrKV1kvukW50HgXwG5yv3TgKa18ZOmoZDM"
-        },
-        {
-          "url": "https://www.dw.com/en/why-does-el-salvadors-bukele-have-troops-in-haiti/a-79940771",
-          "title": "El Salvador has built up a military presence in Haiti. What's in it for the Central American country?",
-          "publisher": "DW.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7NTvBVtZlQrO5xCky70LPBJ9G9HTHLpRXfNuzJsrnwI95HFpT-6_aaIlT8Rw"
-        },
-        {
-          "url": "https://www.france24.com/en/americas/20261113-haitian-police-retake-national-stadium-from-gangs-after-two-years",
-          "title": "Haitian police retake national stadium after two years of gang control",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgAAPbZz9CvVDDRMo3lv3_bbtMDld4bZXo3fw50jTGN2lOHACXHAwM6XWfMJY"
         }
       ]
     }
