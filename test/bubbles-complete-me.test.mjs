@@ -172,10 +172,15 @@ test('the existing owner intake saves one project and the signed runner resumes 
   assert.equal(count(), 1);
   assert.equal([...durable.keys()].filter(key => key.startsWith('job-quant:')).length, 0);
 
+  const anotherIssue = await startCompleteMe({...project, issue: '1913'}, browser);
+  assert.notEqual(anotherIssue.project.ticketId, id, 'identical goals on two issues are separate projects');
+  assert.equal(count(), 2);
+  assert.equal((await claim('48')).lease, null, 'a separate project still shares the repository lease');
+
   auth = false;
   await assert.rejects(startCompleteMe(project, browser), /owner|source/i);
   assert.equal((await browser('/work/tickets/list', {})).ok, false);
-  assert.equal(count(), 1);
+  assert.equal(count(), 2);
 });
 
 test('the Bubbles composer intercepts Complete Me before chat history or public inference', async () => {
