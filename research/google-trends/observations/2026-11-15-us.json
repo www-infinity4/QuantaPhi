@@ -3,237 +3,193 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T12:01:29.477578Z",
+  "checked_at": "2026-11-15T12:30:44.851103Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "orlando weather",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T11:40:00Z",
-      "related_news_urls": [
-        "https://www.wfla.com/weather/forecast/coldest-weekend-in-tampa-bay-of-the-season-so-far/",
-        "https://cbs12.com/news/local/chilly-mornings-cool-afternoons-bring-fall-weather-to-the-palm-beaches-and-treasure-coast",
-        "https://www.gulfcoastnewsnow.com/article/weather-forecast-cold-front-florida-gulf-coast-saturday-cool/74429653"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2bN7lYojuHGvZYnaXkskcnDqQNB3txXxxBwFrMRdkOWAAiR1zZi0kpGx0Tmk",
-      "image_credit": "WFLA",
-      "news": [
-        {
-          "url": "https://www.wfla.com/weather/forecast/coldest-weekend-in-tampa-bay-of-the-season-so-far/",
-          "title": "Coldest weekend in Tampa Bay of the season so far",
-          "publisher": "WFLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2bN7lYojuHGvZYnaXkskcnDqQNB3txXxxBwFrMRdkOWAAiR1zZi0kpGx0Tmk"
-        },
-        {
-          "url": "https://cbs12.com/news/local/chilly-mornings-cool-afternoons-bring-fall-weather-to-the-palm-beaches-and-treasure-coast",
-          "title": "Chilly mornings, cool afternoons bring fall weather to the Palm Beaches and Treasure Coast",
-          "publisher": "WPEC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGYwx8tu1Rj9kJhCMVv65tVtL-r_X_ienwbCwK4nF-rj0e1o7iDaqVzbBVDgo"
-        },
-        {
-          "url": "https://www.gulfcoastnewsnow.com/article/weather-forecast-cold-front-florida-gulf-coast-saturday-cool/74429653",
-          "title": "Coolest air of the season so far! Afternoon temperatures in the 60s today",
-          "publisher": "Gulf Coast News and Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYX0VtgU8FTivrc5SDrq6whv62T46B5S0QTQvN1jszenpRl2CuvzBSdiLNo-s"
-        }
-      ]
-    },
-    {
-      "query": "weather houston",
+      "query": "week 10 fantasy rankings",
       "approx_searches": "100+",
-      "published_at": "2026-11-15T11:40:00Z",
+      "published_at": "2026-11-15T12:10:00Z",
       "related_news_urls": [
-        "https://www.click2houston.com/weather/2026/11/14/timeline-strong-cold-front-hits-houston-sunday/",
-        "https://www.khou.com/article/weather/forecast/houston-texas-weather-forecast-update/285-eef90a85-8b4b-472f-b573-d23213b4f4b1",
-        "https://spacecityweather.com/widespread-showers-and-thunderstorms-likely-on-sunday-in-the-houston-region/"
+        "https://sports.yahoo.com/articles/week-10-fantasy-rankings-patrick-113113700.html",
+        "https://www.fantasylife.com/articles/fantasy/qb-rankings-downgrades-for-week-10-fantasy-football",
+        "https://athlonsports.com/nfl/kansas-city-chiefs/patrick-mahomes-falls-to-the-midrange-in-pffs-quarterback-rankings-for-week-10"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9DHrvsFrboQchR8i_i_0P5pbhMYmhHDC1ZhzBM_rm5wxbWvSgY_gNwAqB8s4",
-      "image_credit": "Click2Houston",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCiDS0tBc_wMbuTgQvUYEpofrAa0uE7_b8KqRic0ePYl9GTcS8Bip4gFzkqo",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.click2houston.com/weather/2026/11/14/timeline-strong-cold-front-hits-houston-sunday/",
-          "title": "Timeline: Strong cold front hits Houston Sunday",
-          "publisher": "Click2Houston",
+          "url": "https://sports.yahoo.com/articles/week-10-fantasy-rankings-patrick-113113700.html",
+          "title": "Week 10 fantasy rankings: Patrick Mahomes projects as ninth-best QB",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9DHrvsFrboQchR8i_i_0P5pbhMYmhHDC1ZhzBM_rm5wxbWvSgY_gNwAqB8s4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCiDS0tBc_wMbuTgQvUYEpofrAa0uE7_b8KqRic0ePYl9GTcS8Bip4gFzkqo"
         },
         {
-          "url": "https://www.khou.com/article/weather/forecast/houston-texas-weather-forecast-update/285-eef90a85-8b4b-472f-b573-d23213b4f4b1",
-          "title": "Houston weather: Weather Impact Alert for Strong Storms and Heavy Rain Sunday",
-          "publisher": "KHOU",
+          "url": "https://www.fantasylife.com/articles/fantasy/qb-rankings-downgrades-for-week-10-fantasy-football",
+          "title": "QB Rankings Downgrades For Week 10 Fantasy Football: Patrick Mahomes & More",
+          "publisher": "FantasyLife",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRo9oWKn2B0o0bO0FXrR9NnwkFoQ0u8oQnukJKVLQ97Fz51epwJp4rX3KaS-Qo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSy4Sw5Zo6BR4FJ69SBT_zopBDl7YlHgcHRXEe4cJ_Dm-1_A9RNhq1eZ3yRjHs"
         },
         {
-          "url": "https://spacecityweather.com/widespread-showers-and-thunderstorms-likely-on-sunday-in-the-houston-region/",
-          "title": "Widespread showers and thunderstorms likely on Sunday in the Houston region",
-          "publisher": "Space City Weather",
+          "url": "https://athlonsports.com/nfl/kansas-city-chiefs/patrick-mahomes-falls-to-the-midrange-in-pffs-quarterback-rankings-for-week-10",
+          "title": "Patrick Mahomes Falls to the Midrange in PFF’s Quarterback Rankings for Week 10",
+          "publisher": "Athlon Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbAVzSknnHOZRlXYPvJ-iGUxUzPElrfeQWMXT1SXrvhoNEs251R5bSIIn1zfw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRYkqxVOxbH53fy5Jf5ML0J_L_FoLEbxopBEfpqd7XvUF8fMCF0I5Q6bfrFAo"
         }
       ]
     },
     {
-      "query": "knock knock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T11:20:00Z",
-      "related_news_urls": [
-        "https://movieweb.com/knock-knock-streaming-november-2026/",
-        "https://collider.com/ana-de-armas-knock-knock-leaving-hbo-max-december-2026/",
-        "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIyKn4H971EAJUI2NYH3Q2qM6Z3y4kFE5qTBHrixHf-Uwrv_NW4LF1MTmVftM",
-      "image_credit": "MovieWeb",
-      "news": [
-        {
-          "url": "https://movieweb.com/knock-knock-streaming-november-2026/",
-          "title": "Ana de Armas' (Very) R-Rated 99-Minute Thriller Remake Is Officially Being Pulled From Streaming",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIyKn4H971EAJUI2NYH3Q2qM6Z3y4kFE5qTBHrixHf-Uwrv_NW4LF1MTmVftM"
-        },
-        {
-          "url": "https://collider.com/ana-de-armas-knock-knock-leaving-hbo-max-december-2026/",
-          "title": "John Wick Faces Off Against Ballerina in This Invasion Thriller Officially Leaving HBO Max",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaA2LKi1VnaQ4S5m_bdXw3Fhf5dpZ1xytddLFgwar4_HkfPtkHovXoIG5in0U"
-        },
-        {
-          "url": "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
-          "title": "Ana de Armas & Beto Montenegro Make Red-Carpet Debut",
-          "publisher": "Extra",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU"
-        }
-      ]
-    },
-    {
-      "query": "uzbekistan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T11:10:00Z",
-      "related_news_urls": [
-        "https://eurasianet.org/china-carrying-out-charm-offensive-in-uzbekistan",
-        "https://ua.news/en/dovkolo-svitu/cgtn-vipustiv-blizko-70-materialiv-pro-zviazki-kitaiu-z-uzbekistanom-oilprice",
-        "https://dunyo.info/en/actual/reformy-novogo-uzbekistana-v-centre-vnimaniya-kitayskoy-obshchestvennosti"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr3ehdOp4SSWxDRcjPu8_LVNJaBY6MUj0INConnnCBM8vBFh0nVF1lGET00yU",
-      "image_credit": "Eurasianet",
-      "news": [
-        {
-          "url": "https://eurasianet.org/china-carrying-out-charm-offensive-in-uzbekistan",
-          "title": "China carrying out charm offensive in Uzbekistan",
-          "publisher": "Eurasianet",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr3ehdOp4SSWxDRcjPu8_LVNJaBY6MUj0INConnnCBM8vBFh0nVF1lGET00yU"
-        },
-        {
-          "url": "https://ua.news/en/dovkolo-svitu/cgtn-vipustiv-blizko-70-materialiv-pro-zviazki-kitaiu-z-uzbekistanom-oilprice",
-          "title": "CGTN released about 70 reports on China’s ties with Uzbekistan — OilPrice",
-          "publisher": "UA.NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7RhPkjJCsB9LOGyr9TsBSRqQCcMVDHINA6gy2l0ArtVdp_UbI-XPXn6Broug"
-        },
-        {
-          "url": "https://dunyo.info/en/actual/reformy-novogo-uzbekistana-v-centre-vnimaniya-kitayskoy-obshchestvennosti",
-          "title": "Reforms in New Uzbekistan in the spotlight of the Chinese public",
-          "publisher": "Dunyo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfULeDQaWvvs1lt7kJQa1THN6nVHk5zQOoTnV7QWmlGYSszM1hrCqderP4qoU"
-        }
-      ]
-    },
-    {
-      "query": "ron howard",
+      "query": "allison janney",
       "approx_searches": "100+",
-      "published_at": "2026-11-15T11:10:00Z",
+      "published_at": "2026-11-15T12:10:00Z",
       "related_news_urls": [
-        "https://people.com/ron-howard-reveals-makes-him-fall-in-love-wife-cheryl-over-and-over-after-51-years-marriage-exclusive-12250278",
-        "https://parade.com/celebrities/ron-howard-reveals-what-keeps-his-marriage-strong-after-51-years",
-        "https://www.aol.com/articles/ron-howard-calls-wife-cheryl-224146000.html"
+        "https://faroutmagazine.co.uk/1994-allison-janney-performed-on-stage/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYancsj4RhJSMUxmNsPTM5dYWvovTF1RFUIApvOP2RTZTkMbGsFtoy-wPlpvM",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAZgBK9BeyteSYnInPZG5yUZHn5EpS0Xrg6GcBr5K-TKHjPli9356gEjev1Ko",
+      "image_credit": "Far Out Magazine",
       "news": [
         {
-          "url": "https://people.com/ron-howard-reveals-makes-him-fall-in-love-wife-cheryl-over-and-over-after-51-years-marriage-exclusive-12250278",
-          "title": "Ron Howard Says He Falls in Love with Wife Cheryl ‘Over and Over’ (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://faroutmagazine.co.uk/1994-allison-janney-performed-on-stage/",
+          "title": "One night in 1994, the domino effect that launched Alison Janney’s career began",
+          "publisher": "Far Out Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYancsj4RhJSMUxmNsPTM5dYWvovTF1RFUIApvOP2RTZTkMbGsFtoy-wPlpvM"
-        },
-        {
-          "url": "https://parade.com/celebrities/ron-howard-reveals-what-keeps-his-marriage-strong-after-51-years",
-          "title": "Ron Howard Reveals What Keeps His Marriage Strong After 51 Years",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBcMhoKF5KaN2pVkKiknocyl1e19jB5rf4cBMCVO_oKFawDOaAT_b0hhCKsaU"
-        },
-        {
-          "url": "https://www.aol.com/articles/ron-howard-calls-wife-cheryl-224146000.html",
-          "title": "Ron Howard Calls Wife Cheryl His Career’s ‘Secret Weapon’: ‘She’s Been So Influential’ (Exclusive)",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIzWpZ9pwivSmMrrvO5l7XGrqe3LrZ5qCVJqlzI7QTUB99PC2tCEonoa1MQ80"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAZgBK9BeyteSYnInPZG5yUZHn5EpS0Xrg6GcBr5K-TKHjPli9356gEjev1Ko"
         }
       ]
     },
     {
-      "query": "dallas weather",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T11:00:00Z",
+      "query": "emily ratajkowski",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T12:10:00Z",
       "related_news_urls": [
-        "https://www.fox4news.com/weather/dallas-weather-cold-wet-weekend-north-texas-starts-late-saturday",
-        "https://www.dallasnews.com/news/weather/article/dallas-weather-storms-bring-2-inches-rain-weekend-22520987.php",
-        "https://www.cbsnews.com/texas/video/rain-thunderstorms-expected-across-north-texas-sunday/"
+        "https://www.hellomagazine.com/us/935030/sizzling-emily-ratajkowski-wore-two-naked-dresses-in-one-night/",
+        "https://deadline.com/2026/11/emily-ratajkowski-joins-still-we-met-mary-beth-barone-1237219464/",
+        "https://www.yahoo.com/entertainment/movies/articles/emily-ratajkowski-lena-dunham-reunite-200455052.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT31axCSp4T3UL6id-n3qV3w1pWY9KnllWEkRJjIhpIVmuuzOaR8tMKFb5RgD8",
-      "image_credit": "FOX 4 News Dallas-Fort Worth",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ28ccXUsBMty_IxrOpeNLdgCIeqcH8Iogkow3-QxdxcYJ9bsnQkn6-8Ko_0xk",
+      "image_credit": "HELLO!",
       "news": [
         {
-          "url": "https://www.fox4news.com/weather/dallas-weather-cold-wet-weekend-north-texas-starts-late-saturday",
-          "title": "Dallas weather: Cold, wet weekend for North Texas starts late Saturday",
-          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "url": "https://www.hellomagazine.com/us/935030/sizzling-emily-ratajkowski-wore-two-naked-dresses-in-one-night/",
+          "title": "Sizzling Emily Ratajkowski wore two naked dresses in one night and everyone forgot",
+          "publisher": "HELLO!",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT31axCSp4T3UL6id-n3qV3w1pWY9KnllWEkRJjIhpIVmuuzOaR8tMKFb5RgD8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ28ccXUsBMty_IxrOpeNLdgCIeqcH8Iogkow3-QxdxcYJ9bsnQkn6-8Ko_0xk"
         },
         {
-          "url": "https://www.dallasnews.com/news/weather/article/dallas-weather-storms-bring-2-inches-rain-weekend-22520987.php",
-          "title": "Live radar: Here’s when rain arrives across D-FW this weekend",
-          "publisher": "Dallas News",
+          "url": "https://deadline.com/2026/11/emily-ratajkowski-joins-still-we-met-mary-beth-barone-1237219464/",
+          "title": "Emily Ratajkowski Joins Mary Beth Barone & Joe Alwyn In Rom-Com ‘Still We Met’",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5ahNYo6fj9K6fftYfbq1VGctgxyo020Da2lZm4tvIVCwYy3m93_2tNFPSpw0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRgu-BgqfjME12XyWbga66TQVE9QlhdUglIFNLWdYECcqR88TSfLqWjgOtNV4"
         },
         {
-          "url": "https://www.cbsnews.com/texas/video/rain-thunderstorms-expected-across-north-texas-sunday/",
-          "title": "Rain, thunderstorms expected across North Texas Sunday",
-          "publisher": "CBS News",
+          "url": "https://www.yahoo.com/entertainment/movies/articles/emily-ratajkowski-lena-dunham-reunite-200455052.html",
+          "title": "Emily Ratajkowski & Lena Dunham Reunite for New Movie With a Personal Story",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSePrEMLZTmFGTowFwrSPaAJZz7FAOJjnwfVSacvlbxhVmwwK2h4hfVp7-uZ5o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAtptkTkK13cehnhN3DYwKmjURZr36AzoGqFmTuC17wxELp7wrjC2TEN3NUaM"
         }
       ]
     },
     {
-      "query": "rory mcilroy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T10:50:00Z",
+      "query": "catalina fernández gómez",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T12:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/golf/story/_/id/50479782/mcilroy-chacarra-set-sunday-showdown-dubai",
-        "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool",
-        "https://www.skysports.com/golf/live-blog/13612212/dp-world-tour-championship-final-round-live-latest-scores-highlights-as-rory-mcilroy-chases-race-to-dubai-win"
+        "https://as.com/tikitakas/famosos/muere-catalina-fernandez-a-los-25-anos-f202611-n/",
+        "https://www.univision.com/famosos/muere-querida-actriz-colombiana-a-los-25-anos-documento-su-lucha-contra-agresiva-enfermedad-video",
+        "https://www.caracoltv.com/actualidad/que-tipo-de-cancer-padecio-cata-fernandez-actriz-e-influencer-que-murio-a-los-24-anos-ed45"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaUr76Eund_217pOEgqqhvpB0wGPgMJtpVU88jhDnbjMtce-zwPFIt6uLQk6U",
+      "image_credit": "Diario AS",
+      "news": [
+        {
+          "url": "https://as.com/tikitakas/famosos/muere-catalina-fernandez-a-los-25-anos-f202611-n/",
+          "title": "Muere Catalina Fernández a los 25 años",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaUr76Eund_217pOEgqqhvpB0wGPgMJtpVU88jhDnbjMtce-zwPFIt6uLQk6U"
+        },
+        {
+          "url": "https://www.univision.com/famosos/muere-querida-actriz-colombiana-a-los-25-anos-documento-su-lucha-contra-agresiva-enfermedad-video",
+          "title": "Muere querida actriz colombiana a los 25 años: documentó su lucha contra agresiva enfermedad",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-3ARXMdYsUSTJAxY83dTyXwJ9s50CdlkUaQILHFr9nzDkaXvjujr2ziom7gw"
+        },
+        {
+          "url": "https://www.caracoltv.com/actualidad/que-tipo-de-cancer-padecio-cata-fernandez-actriz-e-influencer-que-murio-a-los-24-anos-ed45",
+          "title": "Qué tipo de cáncer padeció Cata Fernández, actriz e influencer que murió a los 24 años",
+          "publisher": "Caracol TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4mCCBgKCRY5GsJ7AcEnxf-Ufp6LyKMNYp4QR7euJvu2SSYAaFc21pm38DsCs"
+        }
+      ]
+    },
+    {
+      "query": "nfl week 10",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T12:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+        "https://www.nytimes.com/athletic/7776837/2026/11/15/nfl-week-10-preview-sunday-playbook/",
+        "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNho0Ya7Aw_9m3w5DfLgM4N9S6DtMqheYmjPz_seJSGIViNJOxS4PpmMATgnU",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/golf/story/_/id/50479782/mcilroy-chacarra-set-sunday-showdown-dubai",
-          "title": "Rory McIlroy set for showdown with Eugenio Chacarra for Race to Dubai title",
+          "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+          "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNho0Ya7Aw_9m3w5DfLgM4N9S6DtMqheYmjPz_seJSGIViNJOxS4PpmMATgnU"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7776837/2026/11/15/nfl-week-10-preview-sunday-playbook/",
+          "title": "NFL Sunday Playbook: Cousins back with Vikings, Steelers-Bengals stakes, Mendoza debuts",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7oyUbt1bDREj_nlNAD-jqim-7OABwHegVaouOKTs1LvRQQs9iyqC88FlOL-k"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+          "title": "NFL Week 10 expert picks, odds, best bets, teasers, predictions, survivor picks and more",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdp795rYhp7mCrexHZrgTd2QEtar7Sn0ZVLUZL_o5SoO0-i0Cq9kwr8NIHif8"
+        }
+      ]
+    },
+    {
+      "query": "dp world tour",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T12:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/golf/live/cwe85dg7g7lyt",
+        "https://www.wral.com/news/ap/753d2-mcilroy-overhauls-chacarra-to-win-season-long-race-to-dubai-title-for-record-tying-8th-time/",
+        "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7nHiWA83IhrVCOvvuLOEp67dWf4ZJ3u7QkpBBcQasE-3lIM6lZGfA9LFWSQk",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/golf/live/cwe85dg7g7lyt",
+          "title": "Rory McIlroy at DP World Tour Championship in Dubai trying to equal Colin Montgomerie's record",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7nHiWA83IhrVCOvvuLOEp67dWf4ZJ3u7QkpBBcQasE-3lIM6lZGfA9LFWSQk"
+        },
+        {
+          "url": "https://www.wral.com/news/ap/753d2-mcilroy-overhauls-chacarra-to-win-season-long-race-to-dubai-title-for-record-tying-8th-time/",
+          "title": "McIlroy overhauls Chacarra to win season-long Race to Dubai title for record-tying 8th time",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQl6NCHO1krfIuC_PxlGAW1O1FWzbzp8MVEkWBhK_tYLdiUU4pvU4Te93I5AA"
         },
         {
           "url": "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool",
@@ -241,118 +197,146 @@
           "publisher": "Golf Digest",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2exYDwaMKwG87VL0yNg4XzAIv4s_uLzaE9_yLzb8DzqQmhFXmBpKSAUwzNyY"
-        },
-        {
-          "url": "https://www.skysports.com/golf/live-blog/13612212/dp-world-tour-championship-final-round-live-latest-scores-highlights-as-rory-mcilroy-chases-race-to-dubai-win",
-          "title": "DP World Tour Championship - final round LIVE! Latest scores, highlights as Rory McIlroy chases Race to Dubai win",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3PmdLkg-NlGQHVQjxEs5w6RJszhnRPMVzu6FKn2e9Q-TxuoY-RnO88jHjces"
         }
       ]
     },
     {
-      "query": "espncricinfo",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T10:40:00Z",
+      "query": "amon ra st brown",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T12:00:00Z",
       "related_news_urls": [
-        "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression",
-        "https://sports.yahoo.com/articles/mo-hits-last-ball-boundary-094200200.html",
-        "https://www.cricinfo.com/series/under-19s-asia-cup-2026-27-1558428/india-under-19s-vs-pakistan-under-19s-final-1558444/ball-by-ball-commentary"
+        "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
+        "https://www.detroitlions.com/news/notebook-st-brown-excited-to-play-in-germany-goff-hutchinson-sewell",
+        "https://www.nytimes.com/athletic/7779846/2026/11/13/lions-munich-amon-ra-st-brown-patriots/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvfGK6JpfRnRSRaEAQwyeP6Idnkn-q1M8hloQz56U6ArcUv_HmMs3rfLJz_cs",
-      "image_credit": "Al Jazeera",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqLgsQkjMhrba8o_2orzMzchGNcvdWCoPd95LTMw_gh7PfnfvJuzhDNALN1MQ",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression",
-          "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
-          "publisher": "Al Jazeera",
+          "url": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
+          "title": "Untold stories of Detroit Lions WR Amon-Ra St. Brown's German upbringing",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvfGK6JpfRnRSRaEAQwyeP6Idnkn-q1M8hloQz56U6ArcUv_HmMs3rfLJz_cs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqLgsQkjMhrba8o_2orzMzchGNcvdWCoPd95LTMw_gh7PfnfvJuzhDNALN1MQ"
         },
         {
-          "url": "https://sports.yahoo.com/articles/mo-hits-last-ball-boundary-094200200.html",
-          "title": "Mo-hits! Last-ball boundary seals U19 Asia Cup triumph for India",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.detroitlions.com/news/notebook-st-brown-excited-to-play-in-germany-goff-hutchinson-sewell",
+          "title": "NOTEBOOK: Playing in Germany 'a dream come true' for St. Brown",
+          "publisher": "Detroit Lions",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXanU5iGwaiIC6lIDT8t2_1FkB8g9LXUznIy4JQFva7kopwIPFWB1EWIQrLUU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ljlNM16NrtPP5FztgONqlddw5f2YR6p1SuJ8DZbZACpHI7xmMb8l4dKaiJI"
         },
         {
-          "url": "https://www.cricinfo.com/series/under-19s-asia-cup-2026-27-1558428/india-under-19s-vs-pakistan-under-19s-final-1558444/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - IND19 vs PAK19, Final",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZywZJgyZri23vSYQhnSx3-ejYWX2uwpVJVZ_vzJyX5dHjcUBqtja2T_No80M"
-        }
-      ]
-    },
-    {
-      "query": "unruly aircraft passenger",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T10:30:00Z",
-      "related_news_urls": [
-        "https://abc7chicago.com/post/united-airlines-flight-emergency-unruly-passenger-hospitalized-being-removed-plane-tokyo-japan-chicago-ohare/20034439/",
-        "https://fish4news.co.uk/united-flight-868-level-three-threat-passenger-restrained/",
-        "https://www.thetravel.com/united-airlines-flight-868-declares-level-3-emergency-unruly-passenger-restrained-with-flex-cuffs-chicago-tokyo/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPRH0mY11zlbBIxBmQUSolsB3Xxku1BvOTh8qsr7pCtS0rlifOzGFt3Hnz4Hs",
-      "image_credit": "ABC7 Chicago",
-      "news": [
-        {
-          "url": "https://abc7chicago.com/post/united-airlines-flight-emergency-unruly-passenger-hospitalized-being-removed-plane-tokyo-japan-chicago-ohare/20034439/",
-          "title": "United Airlines flight emergency: Unruly passenger hospitalized after being removed from plane from Tokyo, Japan to Chicago O'Hare",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPRH0mY11zlbBIxBmQUSolsB3Xxku1BvOTh8qsr7pCtS0rlifOzGFt3Hnz4Hs"
-        },
-        {
-          "url": "https://fish4news.co.uk/united-flight-868-level-three-threat-passenger-restrained/",
-          "title": "United Flight 868 Crew Reports Level 3 Threat as Passenger Restrained on Tokyo to Chicago Flight",
-          "publisher": "fish4news.co.uk",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQif3zjhcUjiZxcUcwva4M4R7DNCK8MkNluFy9Ie7bJQq8SBpIDs01Pa-r1L3A"
-        },
-        {
-          "url": "https://www.thetravel.com/united-airlines-flight-868-declares-level-3-emergency-unruly-passenger-restrained-with-flex-cuffs-chicago-tokyo/",
-          "title": "United Airlines Flight 868 Declares Level 3 Emergency As Unruly Passenger Is Restrained With Flex Cuffs During 12-Hour Flight To Chicago",
-          "publisher": "TheTravel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTimWbZWUa4EqkbYb_L2QV9DLt46wJgPhu_rhLMoMRjyjRC1rxnN0s3oAw7Fyk"
-        }
-      ]
-    },
-    {
-      "query": "the tomb of the unknown soldier",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T10:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
-        "https://www.wkyc.com/article/news/national/military-news/pete-hegseth-reprimanded-tomb-of-the-unknown-soldier-army-sentinel-defense-secretary-veterans-day-bob-weinberg/95-4eac66ca-433e-4c98-92a0-2ae4d482f544",
-        "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
-          "title": "A Warrior Secretary and a Lesson at the Tomb of the Unknowns",
+          "url": "https://www.nytimes.com/athletic/7779846/2026/11/13/lions-munich-amon-ra-st-brown-patriots/",
+          "title": "Lions’ Amon-Ra St. Brown takes center stage in Munich in a special kind of homecoming",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaAIyCEh6tdJ64Yh3GAo9X6132KIi2x3gSkQ_9x_GsOQPIl4X7U95Wg_biPPA"
+        }
+      ]
+    },
+    {
+      "query": "alabama football sec tiebreakers",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T12:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/alabama/article/updated-scenarios-for-alabama-to-make-sec-championship-game-after-beating-vanderbilt-292762090/",
+        "https://sports.yahoo.com/articles/sec-standings-reveal-frontrunners-last-110500947.html",
+        "https://www.on3.com/teams/tennessee-volunteers/news/tennessee-football-sec-championship-game-tiebreaker-scenarios-standings/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA4o1ocsVAWFVklcfq4OhJVXKPD3dtdifkZk-yyVpGP09w3SNQb1FpcPjOro0",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/alabama/article/updated-scenarios-for-alabama-to-make-sec-championship-game-after-beating-vanderbilt-292762090/",
+          "title": "Updated scenarios for Alabama to make SEC championship game after beating Vanderbilt",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA4o1ocsVAWFVklcfq4OhJVXKPD3dtdifkZk-yyVpGP09w3SNQb1FpcPjOro0"
         },
         {
-          "url": "https://www.wkyc.com/article/news/national/military-news/pete-hegseth-reprimanded-tomb-of-the-unknown-soldier-army-sentinel-defense-secretary-veterans-day-bob-weinberg/95-4eac66ca-433e-4c98-92a0-2ae4d482f544",
-          "title": "Former Army sentinel explains why Defense Secretary Pete Hegseth was reprimanded at Tomb of the Unknown Soldier",
-          "publisher": "WKYC",
+          "url": "https://sports.yahoo.com/articles/sec-standings-reveal-frontrunners-last-110500947.html",
+          "title": "SEC standings update reveal frontrunners for the last SEC title game",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1jXvu6Z_c0h5z3i-nRD7fgeskigKbrFIs7JHmd3i4OAGaKmjdqRtvgCakGe0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjbyFZt0J1yJ9JpGHrZFXSE1fRIL_rw8snZCIBpUmIgDyZBd_lmrc8KGbGHHY"
         },
         {
-          "url": "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/",
-          "title": "Hegseth awards medal to guard who scolded him at the Tomb of the Unknown Soldier",
-          "publisher": "NBC4 Washington",
+          "url": "https://www.on3.com/teams/tennessee-volunteers/news/tennessee-football-sec-championship-game-tiebreaker-scenarios-standings/",
+          "title": "How Tennessee football can reach final SEC Championship Game in 2026",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH8wuQTZ6jCVAMSV5kZGvI1QOY2u9Yfme5yeiAVn3ZFrdjvllEhqy5KZ6Uzpw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvJ422GvsMDEixsR9x4u4sJQwmij3sRABZbj06--s5JPYofjv2YCuDWIgj-jM"
+        }
+      ]
+    },
+    {
+      "query": "ny islanders",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T12:00:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/new-york-islanders-anaheim-ducks-game-recap-november-14-2026",
+        "https://www.espn.com/video/clip/_/id/50487846/simon-holmstrom-hat-trick-propels-islanders-victory",
+        "https://sports.yahoo.com/articles/takeaways-ducks-6-2-loss-064731161.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXR7M7fPtG4CJZML5qWjkClY7RgboUVS0zMmMvuhhe2IX0LxJ-uUEVo-_LE6I",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/new-york-islanders-anaheim-ducks-game-recap-november-14-2026",
+          "title": "Holmstrom scores first career hat trick, Islanders cruise past Ducks",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXR7M7fPtG4CJZML5qWjkClY7RgboUVS0zMmMvuhhe2IX0LxJ-uUEVo-_LE6I"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50487846/simon-holmstrom-hat-trick-propels-islanders-victory",
+          "title": "Simon Holmstrom's hat trick propels Islanders to victory",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnfI0V_ugeHdKNEgbK5uGxQFUwaR-mEt2CKK9_cWnqPkaAO6QYtNWJkbezYEo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/takeaways-ducks-6-2-loss-064731161.html",
+          "title": "Takeaways from the Ducks 6-2 Loss to the Islanders",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJLQqbAI2HZgUCHDm_5xf7MDGQWAp1AgZsAZ0qIibyuhqCpVaF4906Q-SBng0"
+        }
+      ]
+    },
+    {
+      "query": "patriots injury report",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T11:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50462045/fantasy-football-injuries-nfl-week-10-inactive-active",
+        "https://sports.yahoo.com/fantasy/article/nfl-injury-tracker-week-10-latest-news-fantasy-implications-as-patriots-aj-brown-ankleknee-and-chiefs-kenneth-walker-iii-groin-questionable-deshaun-watson-to-start-for-browns-202543511.html",
+        "https://www.fantasypoints.com/nfl/articles/2026/hansens-hints-2026-nfl-week-10-fantasy-breakdown"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCgXo-YY-2aHTsIROaAn2jPc7jJz-zsaCccvDtYvbVvglFIxSRQSaw12wzp64",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50462045/fantasy-football-injuries-nfl-week-10-inactive-active",
+          "title": "Fantasy football Week 10 inactives: Who's in and who's out?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCgXo-YY-2aHTsIROaAn2jPc7jJz-zsaCccvDtYvbVvglFIxSRQSaw12wzp64"
+        },
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/nfl-injury-tracker-week-10-latest-news-fantasy-implications-as-patriots-aj-brown-ankleknee-and-chiefs-kenneth-walker-iii-groin-questionable-deshaun-watson-to-start-for-browns-202543511.html",
+          "title": "NFL injury tracker Week 10: Latest news, fantasy implications as Patriots’ A.J. Brown (ankle/knee) progressing, 49ers’ Mike Evans (Achilles) 'getting real close,' Deshaun Watson to",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4xcjXMChE4N4DEG5XuKs6-3WkmjbqgvlZJNSQwW-sOhjQSHYtDXVDw3eIM5o"
+        },
+        {
+          "url": "https://www.fantasypoints.com/nfl/articles/2026/hansens-hints-2026-nfl-week-10-fantasy-breakdown",
+          "title": "Hansen's Hints: 2026 NFL Week 10 Fantasy Breakdown",
+          "publisher": "Fantasy Points",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdNKFPOKD88CkPFe1IzJBamp2K3SVLIKHbdfxXNSaw1LqDS6CsNpPtc3oRxQg"
         }
       ]
     }
