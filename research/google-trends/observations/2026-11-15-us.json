@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T10:30:47.500950Z",
+  "checked_at": "2026-11-15T11:01:27.886806Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "espncricinfo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T10:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/cricket/articles/c9ly4jm8djy7o",
+        "https://www.theguardian.com/sport/2026/nov/15/chadd-sayers-rejects-pat-cummins-view-on-sandpapergate-ntwnfb",
+        "https://www.cricbuzz.com/cricket-news/140897/usman-khawaja-claims-fall-on-deaf-ears-in-south-africa-cricbuzzcom"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjR7s0L-EeP65dEZYO1uIdwr8n79yx-ZPHUzSP5qRbZRk8AHrtzI3QCqhjcck",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/cricket/articles/c9ly4jm8djy7o",
+          "title": "Sandpaper scandal: Bowler Chadd Sayers says he took sandpaper from the field and rejects Pat Cummins recount",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjR7s0L-EeP65dEZYO1uIdwr8n79yx-ZPHUzSP5qRbZRk8AHrtzI3QCqhjcck"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/2026/nov/15/chadd-sayers-rejects-pat-cummins-view-on-sandpapergate-ntwnfb",
+          "title": "Cricket Australia admits it is ‘very unlikely’ players will ever reach agreement on sandpapergate",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3Qe02uqSiFHAaatbncNTBgdSM513SD1ItQFbQVMpLPvNmWZrbXFD20tieq0"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140897/usman-khawaja-claims-fall-on-deaf-ears-in-south-africa-cricbuzzcom",
+          "title": "Usman Khawaja claims fall on deaf ears in South Africa",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6Gk7NGgAcIn6H5FPMcbsgw1HF1ZcW7nztr1oHxXkVj9e4hH0_pjtJ982aKA0"
+        }
+      ]
+    },
+    {
+      "query": "unruly aircraft passenger",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T10:30:00Z",
+      "related_news_urls": [
+        "https://abc7chicago.com/post/united-airlines-flight-emergency-unruly-passenger-hospitalized-being-removed-plane-tokyo-japan-chicago-ohare/20034439/",
+        "https://www.cbsnews.com/video/unruly-passenger-cabin-flooding-reported-separate-flights-landed-chicago/",
+        "https://fish4news.co.uk/united-flight-868-level-three-threat-passenger-restrained/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPRH0mY11zlbBIxBmQUSolsB3Xxku1BvOTh8qsr7pCtS0rlifOzGFt3Hnz4Hs",
+      "image_credit": "ABC7 Chicago",
+      "news": [
+        {
+          "url": "https://abc7chicago.com/post/united-airlines-flight-emergency-unruly-passenger-hospitalized-being-removed-plane-tokyo-japan-chicago-ohare/20034439/",
+          "title": "United Airlines flight emergency: Unruly passenger hospitalized after being removed from plane from Tokyo, Japan to Chicago O'Hare",
+          "publisher": "ABC7 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPRH0mY11zlbBIxBmQUSolsB3Xxku1BvOTh8qsr7pCtS0rlifOzGFt3Hnz4Hs"
+        },
+        {
+          "url": "https://www.cbsnews.com/video/unruly-passenger-cabin-flooding-reported-separate-flights-landed-chicago/",
+          "title": "Unruly passenger and cabin flooding reported on 2 separate flights that landed in Chicago",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzkTMIVzr74p7YQMJrSpm7417l5EJmQCGyfAzQRL0KcFXVCzcf2UXIF7I16cg"
+        },
+        {
+          "url": "https://fish4news.co.uk/united-flight-868-level-three-threat-passenger-restrained/",
+          "title": "United Flight 868 Crew Reports Level 3 Threat as Passenger Restrained on Tokyo to Chicago Flight",
+          "publisher": "fish4news.co.uk",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQif3zjhcUjiZxcUcwva4M4R7DNCK8MkNluFy9Ie7bJQq8SBpIDs01Pa-r1L3A"
+        }
+      ]
+    },
+    {
+      "query": "the tomb of the unknown soldier",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T10:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
+        "https://www.wkyc.com/article/news/national/military-news/pete-hegseth-reprimanded-tomb-of-the-unknown-soldier-army-sentinel-defense-secretary-veterans-day-bob-weinberg/95-4eac66ca-433e-4c98-92a0-2ae4d482f544",
+        "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
+          "title": "A Warrior Secretary and a Lesson at the Tomb of the Unknowns",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM"
+        },
+        {
+          "url": "https://www.wkyc.com/article/news/national/military-news/pete-hegseth-reprimanded-tomb-of-the-unknown-soldier-army-sentinel-defense-secretary-veterans-day-bob-weinberg/95-4eac66ca-433e-4c98-92a0-2ae4d482f544",
+          "title": "Former Army sentinel explains why Defense Secretary Pete Hegseth was reprimanded at Tomb of the Unknown Soldier",
+          "publisher": "WKYC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1jXvu6Z_c0h5z3i-nRD7fgeskigKbrFIs7JHmd3i4OAGaKmjdqRtvgCakGe0"
+        },
+        {
+          "url": "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/",
+          "title": "Hegseth awards medal to guard who scolded him at the Tomb of the Unknown Soldier",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH8wuQTZ6jCVAMSV5kZGvI1QOY2u9Yfme5yeiAVn3ZFrdjvllEhqy5KZ6Uzpw"
+        }
+      ]
+    },
+    {
+      "query": "ana de armas",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T10:30:00Z",
+      "related_news_urls": [
+        "https://movieweb.com/knock-knock-streaming-november-2026/",
+        "https://collider.com/ana-de-armas-knock-knock-leaving-hbo-max-december-2026/",
+        "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIyKn4H971EAJUI2NYH3Q2qM6Z3y4kFE5qTBHrixHf-Uwrv_NW4LF1MTmVftM",
+      "image_credit": "MovieWeb",
+      "news": [
+        {
+          "url": "https://movieweb.com/knock-knock-streaming-november-2026/",
+          "title": "Ana de Armas' (Very) R-Rated 99-Minute Thriller Remake Is Officially Being Pulled From Streaming",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIyKn4H971EAJUI2NYH3Q2qM6Z3y4kFE5qTBHrixHf-Uwrv_NW4LF1MTmVftM"
+        },
+        {
+          "url": "https://collider.com/ana-de-armas-knock-knock-leaving-hbo-max-december-2026/",
+          "title": "John Wick Faces Off Against Ballerina in This Invasion Thriller Officially Leaving HBO Max",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaA2LKi1VnaQ4S5m_bdXw3Fhf5dpZ1xytddLFgwar4_HkfPtkHovXoIG5in0U"
+        },
+        {
+          "url": "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
+          "title": "Ana de Armas & Beto Montenegro Make Red-Carpet Debut",
+          "publisher": "Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU"
+        }
+      ]
+    },
     {
       "query": "robot",
       "approx_searches": "100+",
@@ -42,37 +182,107 @@
       ]
     },
     {
-      "query": "new zealand national cricket team vs india national cricket team match scorecard",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T09:40:00Z",
+      "query": "india vs new zealand",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-15T09:50:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/story/nz-vs-ind-5th-odi-new-zealand-opt-to-bowl-siraj-and-thakur-in-for-india-1562673",
-        "https://www.cricbuzz.com/cricket-news/140900/nz-vs-ind-5th-odi-indias-misfiring-batting-seeks-strong-finish-in-mount-maunganui-cricbuzzcom",
-        "https://www.reutersconnect.com/item/international-football-friendly-new-zealand-vs-india-november-15th-2026/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBZN0FaNUY"
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-5th-odi-1539441/match-report",
+        "https://www.cricbuzz.com/cricket-news/140916/bowlers-step-up-as-india-complete-3-1-series-win",
+        "https://www.foxsports.com/articles/soccer/sharma-and-kohli-struggle-again-as-india-reach-209-in-the-5th-odi-against-new-zealand"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrGiezVAXnLD5e8RcEIJ0XgEzwBcFRAPoDXfQVadUat4yIz7c-w__nE0w4ufM",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXj4AdgLSahNgQXBL62mU9rWQ68-3VPI_unx-fB6418nGgrG-G3-NBEPrDrrQ",
       "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://www.cricinfo.com/story/nz-vs-ind-5th-odi-new-zealand-opt-to-bowl-siraj-and-thakur-in-for-india-1562673",
-          "title": "NZ opt to bowl in 5th ODI; Siraj and Thakur in for India",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-5th-odi-1539441/match-report",
+          "title": "Arshdeep and Co help India defend 209 for 3-1 series win",
           "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrGiezVAXnLD5e8RcEIJ0XgEzwBcFRAPoDXfQVadUat4yIz7c-w__nE0w4ufM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXj4AdgLSahNgQXBL62mU9rWQ68-3VPI_unx-fB6418nGgrG-G3-NBEPrDrrQ"
         },
         {
-          "url": "https://www.cricbuzz.com/cricket-news/140900/nz-vs-ind-5th-odi-indias-misfiring-batting-seeks-strong-finish-in-mount-maunganui-cricbuzzcom",
-          "title": "NZ vs IND 5th ODI: India's misfiring batting seeks strong finish in Mount Maunganui",
+          "url": "https://www.cricbuzz.com/cricket-news/140916/bowlers-step-up-as-india-complete-3-1-series-win",
+          "title": "India tour of New Zealand 2026: Bowlers step up as India complete 3-1 series win",
           "publisher": "Cricbuzz",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqu3jMQlXt5TvOo3pKlic3QaZm5tdqf_CaTJii_inFFbJcA36EHdJhMDzNlNY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToQ9zHgOHGVCrbXAYQnoRcog4C5suFxPDdBw4aPONYy1xHgKKYtkNWEBRwakE"
         },
         {
-          "url": "https://www.reutersconnect.com/item/international-football-friendly-new-zealand-vs-india-november-15th-2026/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBZN0FaNUY",
-          "title": "Licensable picture: International Football Friendly: New Zealand Vs. India, November 15th 2026.",
-          "publisher": "Reuters Connect",
+          "url": "https://www.foxsports.com/articles/soccer/sharma-and-kohli-struggle-again-as-india-reach-209-in-the-5th-odi-against-new-zealand",
+          "title": "Sharma and Kohli struggle again as India reach 209 in the 5th ODI against New Zealand",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBigt0tSl-jI6iJTFhjTzdjb91a5beyXLobwmp141AOtJWOAt9dDrKm97DfS8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+        }
+      ]
+    },
+    {
+      "query": "rick rubin",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T09:10:00Z",
+      "related_news_urls": [
+        "https://consequence.net/2026/11/red-hot-chili-peppers-rick-rubin-rock-roll-hall-of-fame-performance/",
+        "https://ultimateclassicrock.com/red-hot-chili-peppers-rick-rubin-rock-hall-of-fame/",
+        "https://rockcellarmagazine.com/red-hot-chili-peppers-wear-rick-rubin-costumes-rock-and-roll-hall-of-fame-induction-ceremony/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSq5oHIDjKqynE7wVFPHcQo-VurvcGBePl3fx1778nkL7fx4ez19KZ3j382dg",
+      "image_credit": "Consequence of Sound",
+      "news": [
+        {
+          "url": "https://consequence.net/2026/11/red-hot-chili-peppers-rick-rubin-rock-roll-hall-of-fame-performance/",
+          "title": "Red Hot Chili Peppers All Dress as Rick Rubin for Rock & Roll Hall of Fame Performance",
+          "publisher": "Consequence of Sound",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSq5oHIDjKqynE7wVFPHcQo-VurvcGBePl3fx1778nkL7fx4ez19KZ3j382dg"
+        },
+        {
+          "url": "https://ultimateclassicrock.com/red-hot-chili-peppers-rick-rubin-rock-hall-of-fame/",
+          "title": "Red Hot Chili Peppers, Dressed as Rick Rubin, Induct Rick Rubin Into the Hall of Fame",
+          "publisher": "Ultimate Classic Rock",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_Nt9VqP782q3M7EIP78QXM-3TQdkWcIpuK2yaSTnDuxCkA_7ERHD4Pr7ZIZU"
+        },
+        {
+          "url": "https://rockcellarmagazine.com/red-hot-chili-peppers-wear-rick-rubin-costumes-rock-and-roll-hall-of-fame-induction-ceremony/",
+          "title": "Red Hot Chili Peppers Wear Rick Rubin Costumes at Rock Hall of Fame Induction 2026",
+          "publisher": "Rock Cellar Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS63f7T_ypjGSB83lQ3XzXY9VUI1RvAi4yAe3l89Maxw_KPKYVOy2uXcAtsFho"
+        }
+      ]
+    },
+    {
+      "query": "powerball winning numbers nov 14 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T09:10:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/money/lottery/2026/11/14/powerball-winning-numbers-november-14-2026/92789626007/",
+        "https://www.yahoo.com/news/us/articles/powerball-numbers-tonight-nov-14-030016388.html",
+        "https://www.cincinnati.com/story/news/local/2026/11/14/ohio-lottery-results-saturday-november-14-2026/92792276007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63SkkJq7G3A0u-xkPuNKpXCFO5pZuhDNLCzfLTfuxic3dfdMqhjvGCfuelVk",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/money/lottery/2026/11/14/powerball-winning-numbers-november-14-2026/92789626007/",
+          "title": "Powerball numbers are in for Saturday’s $63M jackpot",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63SkkJq7G3A0u-xkPuNKpXCFO5pZuhDNLCzfLTfuxic3dfdMqhjvGCfuelVk"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/powerball-numbers-tonight-nov-14-030016388.html",
+          "title": "Powerball numbers tonight, Nov. 14? Powerball winning numbers last night",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ44TMtF1Dvb9_X7CrJIIZI-4kvNw8HIPKPTF7_F4TQLueqvITM6xnkKvyW4Yc"
+        },
+        {
+          "url": "https://www.cincinnati.com/story/news/local/2026/11/14/ohio-lottery-results-saturday-november-14-2026/92792276007/",
+          "title": "Ohio Lottery Powerball, Pick 3 Midday winning numbers for Nov. 14, 2026",
+          "publisher": "Cincinnati Enquirer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTusEOVUYPc9oSltPZuIBXlYPhIEk-GLt5J6pCwXl6eu-qx-7sZSWd_HJGhokc"
         }
       ]
     },
@@ -112,43 +322,8 @@
       ]
     },
     {
-      "query": "powerball winning numbers nov 14 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T09:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/money/lottery/2026/11/14/powerball-winning-numbers-november-14-2026/92789626007/",
-        "https://www.yahoo.com/news/us/articles/powerball-numbers-tonight-nov-14-030016388.html",
-        "https://www.cincinnati.com/story/news/local/2026/11/14/ohio-lottery-results-saturday-november-14-2026/92792276007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63SkkJq7G3A0u-xkPuNKpXCFO5pZuhDNLCzfLTfuxic3dfdMqhjvGCfuelVk",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/money/lottery/2026/11/14/powerball-winning-numbers-november-14-2026/92789626007/",
-          "title": "Powerball numbers are in for Saturday’s $63M jackpot",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63SkkJq7G3A0u-xkPuNKpXCFO5pZuhDNLCzfLTfuxic3dfdMqhjvGCfuelVk"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/powerball-numbers-tonight-nov-14-030016388.html",
-          "title": "Powerball numbers tonight, Nov. 14? Powerball winning numbers last night",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ44TMtF1Dvb9_X7CrJIIZI-4kvNw8HIPKPTF7_F4TQLueqvITM6xnkKvyW4Yc"
-        },
-        {
-          "url": "https://www.cincinnati.com/story/news/local/2026/11/14/ohio-lottery-results-saturday-november-14-2026/92792276007/",
-          "title": "Ohio Lottery Powerball, Pick 3 Midday winning numbers for Nov. 14, 2026",
-          "publisher": "Cincinnati Enquirer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTusEOVUYPc9oSltPZuIBXlYPhIEk-GLt5J6pCwXl6eu-qx-7sZSWd_HJGhokc"
-        }
-      ]
-    },
-    {
       "query": "gta 6 pc release date",
-      "approx_searches": "500+",
+      "approx_searches": "200+",
       "published_at": "2026-11-15T09:10:00Z",
       "related_news_urls": [
         "https://www.the-independent.com/extras/indybest/gadgets-tech/video-games-consoles/gta-6-pc-nintendo-switch-2-b3084736.html",
@@ -178,155 +353,6 @@
           "publisher": "Mobalytics",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6A1vm6VT7zMqssTwp-pwUPMDlwGaj5BVnJRFgs7oSaikTLEkFSdZJP-lreA"
-        }
-      ]
-    },
-    {
-      "query": "dp world tour championship",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T09:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/golf/story/_/id/50479782/mcilroy-chacarra-set-sunday-showdown-dubai",
-        "https://www.golfdigest.com/story/heres-prize-money-payout-for-each-golfer-at-2026-dp-world-tour-championship",
-        "https://www.europeantour.com/dpworld-tour/news/articles/detail/pga-tour-dual-membership-what-s-at-stake-on-the-final-day-of-dp-world-tour-championship/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/golf/story/_/id/50479782/mcilroy-chacarra-set-sunday-showdown-dubai",
-          "title": "Rory McIlroy set for showdown with Eugenio Chacarra for Race to Dubai title",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys"
-        },
-        {
-          "url": "https://www.golfdigest.com/story/heres-prize-money-payout-for-each-golfer-at-2026-dp-world-tour-championship",
-          "title": "Here’s the prize money payout for each golfer at the 2026 DP World Tour Championship",
-          "publisher": "Golf Digest",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ11Nm2YfgU-Vj6omjJ1VNzTVStOyDcYAMu8yWiiy61EyVUjTq358nFT5g2qtg"
-        },
-        {
-          "url": "https://www.europeantour.com/dpworld-tour/news/articles/detail/pga-tour-dual-membership-what-s-at-stake-on-the-final-day-of-dp-world-tour-championship/",
-          "title": "The DP World Tour Championship title, the Race to Dubai Crown, PGA Tour Dual Membership and Open exemptions: Here's what's at stake on the final day",
-          "publisher": "DP World Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_7MvXKirLUYphfDbzVFVkJAJyf8O4R4BR0ek_sUMXCLu7RKXNrLkhUxSUipw"
-        }
-      ]
-    },
-    {
-      "query": "winter storm",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T09:00:00Z",
-      "related_news_urls": [
-        "https://weather.com/2026/11/14/forecast/regional/storms-50-foot-waves-mountain-snow-heavy-rain-west",
-        "https://www.kcra.com/article/northern-california-storm-coverage-updates-november-13-2026/74424506",
-        "https://blog.palisadestahoe.com/weather/10-from-round-1-more-to-come/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTso5AC8GhcZ_Zxg2JdJ2oH8YsiI2vrwahR4AxlZoL_sWXJ7cNTddgvAGVyF0",
-      "image_credit": "The Weather Channel",
-      "news": [
-        {
-          "url": "https://weather.com/2026/11/14/forecast/regional/storms-50-foot-waves-mountain-snow-heavy-rain-west",
-          "title": "West storms to bring feet of mountain snow, heavy rain, 50-foot waves",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTso5AC8GhcZ_Zxg2JdJ2oH8YsiI2vrwahR4AxlZoL_sWXJ7cNTddgvAGVyF0"
-        },
-        {
-          "url": "https://www.kcra.com/article/northern-california-storm-coverage-updates-november-13-2026/74424506",
-          "title": "Northern California storm impacts: Latest updates on chain controls",
-          "publisher": "KCRA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpioc0KkWFz_TaUgxQ1XV48SzM-Ih4e4aGHkOp0e-kG30eNs9MLgFa1HgPpTA"
-        },
-        {
-          "url": "https://blog.palisadestahoe.com/weather/10-from-round-1-more-to-come/",
-          "title": "10″ From Round 1, More to Come",
-          "publisher": "Palisades Tahoe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs0W_mnbp437wV360K0pYrf59RkTEvUTlrD4wIndQcM2rQ2ZH_WPnKAiHqwSw"
-        }
-      ]
-    },
-    {
-      "query": "san diego padres",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T08:50:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/padres-takeaways-from-general-managers-meetings",
-        "https://www.sandiegouniontribune.com/2026/11/13/padres-have-no-choice-but-to-spend-on-their-starting-rotation/",
-        "https://www.mlbtraderumors.com/2026/11/padres-interested-in-freddy-peralta-nick-martinez-matthew-boyd.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb8poQZiSt3LMhmnTrkzSDtH93A5wbqS_dIsT8zT3f1kOyP_koGCxE4DdfaB4",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/padres-takeaways-from-general-managers-meetings",
-          "title": "Takeaways from GM Meetings: Skubal pursuit, rotation needs and more",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb8poQZiSt3LMhmnTrkzSDtH93A5wbqS_dIsT8zT3f1kOyP_koGCxE4DdfaB4"
-        },
-        {
-          "url": "https://www.sandiegouniontribune.com/2026/11/13/padres-have-no-choice-but-to-spend-on-their-starting-rotation/",
-          "title": "Padres have no choice but to spend on their starting rotation",
-          "publisher": "San Diego Union-Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKamGgnJuQQEeASPGrVOBz3dFfqb6fknMeq1Q0qaUAVSS2dsVVXMo5-N-QY4A"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/padres-interested-in-freddy-peralta-nick-martinez-matthew-boyd.html",
-          "title": "Padres Interested In Freddy Peralta, Nick Martinez, Matthew Boyd",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUe6luWS0vk_okAAcKQZiekOfKLahFtHO4i9treTuYK9IvIXeHjHJIBhkLHGc"
-        }
-      ]
-    },
-    {
-      "query": "shameless",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T08:50:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "australia vs new zealand",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T08:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/rugby-league/live/cqx2z52p671wt",
-        "https://www.stuff.co.nz/sport/361058943/kiwis-v-kangaroos-all-you-need-know-about-rugby-league-world-cup-final",
-        "https://www.abc.net.au/news/2026-11-15/kangaroos-jillaroos-live-rugby-league-world-cup-finals/107376474"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6iBXoe0Z5y4RFVCSPyI9AUXTndCOJ5tYx_5t9ldazbzIlC02QdRXEHoadOTU",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/rugby-league/live/cqx2z52p671wt",
-          "title": "Australia head for victory in Rugby League World Cup final",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6iBXoe0Z5y4RFVCSPyI9AUXTndCOJ5tYx_5t9ldazbzIlC02QdRXEHoadOTU"
-        },
-        {
-          "url": "https://www.stuff.co.nz/sport/361058943/kiwis-v-kangaroos-all-you-need-know-about-rugby-league-world-cup-final",
-          "title": "Kiwis v Kangaroos: All you need to know about the Rugby League World Cup final",
-          "publisher": "Stuff",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReoMrMVfl72AHpOKKs9pBj92-pEgDZOvs6FcwzFlsougZ2kjlE8dDe2cOCy74"
-        },
-        {
-          "url": "https://www.abc.net.au/news/2026-11-15/kangaroos-jillaroos-live-rugby-league-world-cup-finals/107376474",
-          "title": "Live: Reece Walsh dazzles as Kangaroos put sloppy Kiwis to the sword",
-          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSum6rzbKWQG0NdnA3oJ_I_Sg1NNQdnzu3BTZ71Z0tjbnrMXepYcAUhKVTPxyQ"
         }
       ]
     }
