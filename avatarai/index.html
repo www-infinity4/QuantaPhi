@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Use Avatar AI instructions in ChatGPT to revisit authorized conversations, recover unfinished projects, and choose what to do next.">
+  <meta name="theme-color" content="#f4f0fa">
+  <link rel="canonical" href="https://quantaphi.org/avatarai">
+  <link rel="stylesheet" href="../assets/project-guides.css">
+  <title>Avatar AI · QuantaPhi</title>
+  <script src="../bubbles-embed.js" defer
+    data-bubble-id="avatar-ai-guide"
+    data-bubble-role="builder"
+    data-bubble-name="Bubbles"
+    data-bubble-instructions="Help visitors use the public Avatar AI prompt to review their own authorized work, choose a useful project, and prepare a checkpoint for ChatGPT."></script>
+  <script src="../assets/project-guides.js" defer></script>
+</head>
+<body class="guide-page guide-page--avatar">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="/"><span aria-hidden="true">∞</span> QuantaPhi</a>
+      <nav class="site-nav" aria-label="Project guides">
+        <a href="/continuitybuilder">Continuity Builder</a>
+        <a href="/avatarai" aria-current="page">Avatar AI</a>
+      </nav>
+    </div>
+  </header>
+  <main class="guide-shell" id="main">
+    <section class="guide-hero guide-hero--avatar" aria-labelledby="page-title">
+      <div class="guide-hero__copy">
+        <h1 id="page-title">Avatar AI</h1>
+        <p>Review your past projects in ChatGPT. Recover the decisions that shaped them and choose one unfinished project to move forward.</p>
+        <a class="hero-link" href="#instructions">Get the GPT instructions <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+    <div class="guide-grid">
+      <section class="guide-card" id="instructions" aria-labelledby="instructions-title">
+        <h2 id="instructions-title">Start an Avatar AI session</h2>
+        <p>Copy the instructions into ChatGPT, then share the conversations, notes, or project links you want it to review.</p>
+        <div class="guide-actions">
+          <button class="guide-button" type="button" data-copy-prompt hidden>Copy GPT instructions</button>
+          <a class="guide-button guide-button--secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Open ChatGPT <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="copy-status" role="status"></p>
+        <label class="visually-hidden" for="guide-prompt">Avatar AI GPT instructions</label>
+        <textarea class="guide-prompt" id="guide-prompt" rows="10" readonly spellcheck="false">Act as my Avatar AI project partner in this ChatGPT session. Use the messages, files, memory, and connected sources I have authorized and you can currently access.
+
+Find up to five important unfinished projects. For each one, show what I originally asked for, what is verified today, and one useful next improvement. Cite the sources you used. Keep my decisions distinct from suggestions, and tell me which essential sources are missing.
+
+Summarize the working preferences and constraints I actually stated. Rank the unfinished projects by importance, available evidence, and what can be done now.
+
+Choose one project and propose a focused next step that reuses the existing files and tickets. If I authorized the action and your tools support it, carry it out and record the real result. Otherwise prepare a clear work order I can approve.
+
+Finish with a checkpoint containing the project, evidence, decisions, completed work, blockers, and one next action. Keep private context in this session. Ask for approval before expanding access, spending money, or publishing.</textarea>
+        <noscript><p>Select the instructions above and use your device’s Copy command.</p></noscript>
+      </section>
+      <aside class="guide-card guide-card--bubbles" aria-labelledby="bubbles-title">
+        <h2 id="bubbles-title">Talk to Bubbles</h2>
+        <p>Ask Bubbles how to choose a past project or put the right sources together for your Avatar AI session.</p>
+        <a class="guide-button guide-button--secondary" href="/bubbles.html" data-open-bubbles>Open Bubbles chat</a>
+        <a class="guide-text-link" href="/continuitybuilder">Continue a build with GPT Continuity Builder <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
