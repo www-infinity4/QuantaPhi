@@ -77,6 +77,9 @@ export async function startCompleteMe(project,request){
  const context={
   kind:'robot-directions',project_type:'complete-me-ai',
   submission_id:id,
+  // The stable intake fingerprint ignores submission_id and plan. Keep the
+  // canonical issue in the fingerprint so a matching goal can span issues.
+  project_issue:p.issue,
   repositories:[p.repository],
   // Intake excludes the plan from its stable fingerprint. Concurrent retries
   // that see a different source head still resolve to the same owner ticket.
