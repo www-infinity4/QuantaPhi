@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T14:31:11.264983Z",
+  "checked_at": "2026-11-15T15:01:12.443652Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "inmigración",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T14:10:00Z",
-      "related_news_urls": [
-        "https://www.reutersconnect.com/item/embarcacion-de-salvamento-rescata-161-inmigrantes-en-aguas-cercanas-a-la-isla-el-hierro/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzcwMDE2MzExNzYwMDE",
-        "https://lagacetadecanarias.com/el-editorial-del-domingo-en-la-gaceta-de-canarias-hay-que-prevenir-en-la-politica-migratoria-y-la-ruta-atlantica/",
-        "https://www.elperiodico.com/es/videos/sociedad/llegan-hierro-nuevos-cayucos-270/136446439.shtml"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgSyC_OwNWGqfNFSCOU8H8z4oPd5Rf6H4emkEYh5OnAKWJKJrzsGyJJhl9do8",
-      "image_credit": "Reuters Connect",
-      "news": [
-        {
-          "url": "https://www.reutersconnect.com/item/embarcacion-de-salvamento-rescata-161-inmigrantes-en-aguas-cercanas-a-la-isla-el-hierro/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzcwMDE2MzExNzYwMDE",
-          "title": "Licensable video: Embarcación de salvamento rescata 161 inmigrantes en aguas cercanas a la Isla El Hierro",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgSyC_OwNWGqfNFSCOU8H8z4oPd5Rf6H4emkEYh5OnAKWJKJrzsGyJJhl9do8"
-        },
-        {
-          "url": "https://lagacetadecanarias.com/el-editorial-del-domingo-en-la-gaceta-de-canarias-hay-que-prevenir-en-la-politica-migratoria-y-la-ruta-atlantica/",
-          "title": "El Editorial del domingo en La Gaceta de Canarias: 'Hay que prevenir en la política migratoria y la ruta atlántica'",
-          "publisher": "La Gaceta de Canarias",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEM1h4Uqy3atcXAlL4PEKgDkGItR2x9mAjZKOxxDF-01_i4uRU-C6C3RY7LY"
-        },
-        {
-          "url": "https://www.elperiodico.com/es/videos/sociedad/llegan-hierro-nuevos-cayucos-270/136446439.shtml",
-          "title": "Llegan a El Hierro dos nuevos cayucos con 270 personas, entre ellas 21 posibles menores",
-          "publisher": "El Periódico",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOgYvKiG5b3_04KmrsY1b9Xr9aWKjgBEWgRnJgTq4hdXtzo0-WbLyLqX4-Gc0"
-        }
-      ]
-    },
-    {
-      "query": "mack hollins",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T14:10:00Z",
-      "related_news_urls": [
-        "https://nesn.com/new-england-patriots/news/patriots-mack-hollins-doubles-down-take-after-loss-packers/b1f1ba5cbd0bcb960f2ded0c",
-        "https://www.thefantasyfootballers.com/news/646596/mack-hollins-returns-to-lineup-sunday/",
-        "https://sports.yahoo.com/articles/mack-hollins-happy-patriots-response-110000871.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_fFRgzE5e2ICSxE14RaZ2ALG_7NW22Y5t_C2cS4EdfLSKU0Fthx99QWrNqDk",
-      "image_credit": "NESN",
-      "news": [
-        {
-          "url": "https://nesn.com/new-england-patriots/news/patriots-mack-hollins-doubles-down-take-after-loss-packers/b1f1ba5cbd0bcb960f2ded0c",
-          "title": "Patriots' Mack Hollins Doubles Down on Take After Bad Loss to Packers",
-          "publisher": "NESN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_fFRgzE5e2ICSxE14RaZ2ALG_7NW22Y5t_C2cS4EdfLSKU0Fthx99QWrNqDk"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/646596/mack-hollins-returns-to-lineup-sunday/",
-          "title": "Mack Hollins Returns to lineup Sunday",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_IRVOhnHzTNISclRuhWEsg8egWcm-jK0GJIGk2H90zHaG2ARfI1YdTrAtCp8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/mack-hollins-happy-patriots-response-110000871.html",
-          "title": "Mack Hollins happy with Patriots’ response after post-game challenge",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTqkjIATU1T1bN-hXRjho8zg_bF5FL3t4wAKAfAjOkrGkydv6AFCWGbDcMBXc"
-        }
-      ]
-    },
-    {
-      "query": "michael strahan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T14:00:00Z",
-      "related_news_urls": [
-        "https://www.the-sun.com/sport/17297075/fox-nfl-sunday-week-10-michael-strahan-terry-bradshaw/",
-        "https://www.fox.com/watch/clip/fmc-evyq3qan17dztbl9/big-noon-kickoff-crew-tours-the-historic-campus-of-west-point",
-        "https://www.afgsc.af.mil/News/Videos/?videoid=1028824"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMK1atYc022mhhmDYj0tV8cu99dwL2I4kJCpV3nKFiQn7sQSYw2B3QL3umiU",
-      "image_credit": "The Sun",
-      "news": [
-        {
-          "url": "https://www.the-sun.com/sport/17297075/fox-nfl-sunday-week-10-michael-strahan-terry-bradshaw/",
-          "title": "Fox NFL Sunday makes major broadcast change with Bradshaw and Strahan separated",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMK1atYc022mhhmDYj0tV8cu99dwL2I4kJCpV3nKFiQn7sQSYw2B3QL3umiU"
-        },
-        {
-          "url": "https://www.fox.com/watch/clip/fmc-evyq3qan17dztbl9/big-noon-kickoff-crew-tours-the-historic-campus-of-west-point",
-          "title": "Big Noon Kickoff crew tours the historic campus of West Point",
-          "publisher": "FOX One",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3xacEeUKmmnTetyC8jPE60ZxHIsT0Q9FRoCSKmg43vbUgPLyX317QNPFnjhM"
-        },
-        {
-          "url": "https://www.afgsc.af.mil/News/Videos/?videoid=1028824",
-          "title": "FOX SPORTS - FIRST THINGS FIRST",
-          "publisher": "Air Force Global Strike Command (.mil)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgoApR8fNQTSco4Piu4HLNS8hvCz8r3xRw8dysizfQnPtF2OqwLCuGlND77Yg"
-        }
-      ]
-    },
-    {
-      "query": "dakota johnson",
+      "query": "aidan hutchinson",
       "approx_searches": "2000+",
-      "published_at": "2026-11-15T14:00:00Z",
+      "published_at": "2026-11-15T14:40:00Z",
       "related_news_urls": [
-        "https://www.harpersbazaar.com/celebrity/latest/a74414523/dakota-johnson-tiger-print-coat-mgk-date-studded-bag-photos/",
-        "https://www.wmagazine.com/fashion/dakota-johnson-machine-gun-kelly-valentino-flesh-impact",
-        "https://www.vogue.com/article/dakota-johnson-pop-punk-penny-lane-mgk-2026-11-12"
+        "https://www.patriots.com/news/week-10-inactives-patriots-vs-lions",
+        "https://www.yahoo.com/news/videos/german-detroit-lions-fans-explain-134704377.html",
+        "https://www.wmur.com/article/nfl-teams-with-german-mascots/74431766"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqSjoW0SKeLj-a4Sr92wydEXjjyYowIruIAcbIGfc_1d9YTXbuLrGAAUlY3zw",
-      "image_credit": "Harper's BAZAAR",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5XjxiF-lOHev5SXXX-qJeq3viKtT1eFgBdiDtjhw1I5ferLaQDFkH3oD97Ok",
+      "image_credit": "New England Patriots",
       "news": [
         {
-          "url": "https://www.harpersbazaar.com/celebrity/latest/a74414523/dakota-johnson-tiger-print-coat-mgk-date-studded-bag-photos/",
-          "title": "Dakota Johnson Doubles Down on Animal Print for a Night Out With MGK",
-          "publisher": "Harper's BAZAAR",
+          "url": "https://www.patriots.com/news/week-10-inactives-patriots-vs-lions",
+          "title": "Week 10 Inactives: Patriots vs. Lions",
+          "publisher": "New England Patriots",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqSjoW0SKeLj-a4Sr92wydEXjjyYowIruIAcbIGfc_1d9YTXbuLrGAAUlY3zw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5XjxiF-lOHev5SXXX-qJeq3viKtT1eFgBdiDtjhw1I5ferLaQDFkH3oD97Ok"
         },
         {
-          "url": "https://www.wmagazine.com/fashion/dakota-johnson-machine-gun-kelly-valentino-flesh-impact",
-          "title": "Dakota Johnson Does Two Outfits For a Machine Gun Kelly Date Night",
-          "publisher": "W Magazine",
+          "url": "https://www.yahoo.com/news/videos/german-detroit-lions-fans-explain-134704377.html",
+          "title": "German Detroit Lions fans explain how they picked 'most beautiful team'",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYve12kh410a1EDaKn-pHkjI92IpF3gPFsjpvC3MNOGJmqapQoiEqo0jHPK_k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGOuf8jokd_isitumCrALstqilzaUgWAc1AWQHKIWGUhjI1zYHwlBm9BVHWZ0"
         },
         {
-          "url": "https://www.vogue.com/article/dakota-johnson-pop-punk-penny-lane-mgk-2026-11-12",
-          "title": "Dakota Johnson Transforms Into Pop-Punk Penny Lane for a Night in the Stu With MGK",
-          "publisher": "Vogue",
+          "url": "https://www.wmur.com/article/nfl-teams-with-german-mascots/74431766",
+          "title": "NFL teams with German mascots named Leo, Wolfgang and Fritz wooing fans in Munich",
+          "publisher": "WMUR",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBYXQxjojOrSaYGrvs_KM8HY9qLeybLv3GzQVirw74CH11lz9ODK6EJA9JyuQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAu3iG0gC87ZaqPpESsu0dGY2U4h0dm4oeMBOdwyzs9YKMSK1TUEhN-jY4k4Y"
         }
       ]
     },
     {
-      "query": "who should i start",
+      "query": "jared goff",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T14:00:00Z",
+      "published_at": "2026-11-15T14:40:00Z",
       "related_news_urls": [
-        "https://www.silverandblackpride.com/las-vegas-raiders-news/145632/raiders-former-players-week-8-darren-waller-khalil-mack-gardner-minshew",
-        "https://www.wvnews.com/sports/pro/broncos-panthers-football/image_8e4fd4ef-076c-5a33-aece-6477b4a79507.html",
-        "https://sports.yahoo.com/videos/start-darren-waller-carolina-scheming-141611128.html"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jared-goff-takes-1-3-career-record-vs-patriots-into-germany-game",
+        "https://www.nfl.com/videos/jared-goff-might-torch-the-pats-secondary-nfl-pro",
+        "https://www.foxsports.com/watch/fmc-onmoalkcgrznbk30"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZxnPuhiPQJme1pIr8T6Tpu9N6fxCKdEHt2gcwmHXDUtkKBZuZQKOoi6BGFOo",
-      "image_credit": "Silver And Black Pride",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP9HWofgn8eCMbAcIALGI6eB5fjMuWiovOEpcb__upfRUzdPrqu9pNWqk3Ei4",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.silverandblackpride.com/las-vegas-raiders-news/145632/raiders-former-players-week-8-darren-waller-khalil-mack-gardner-minshew",
-          "title": "Raiders: Darren Waller has best game in 3 years",
-          "publisher": "Silver And Black Pride",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jared-goff-takes-1-3-career-record-vs-patriots-into-germany-game",
+          "title": "Jared Goff takes 1-3 career record vs. Patriots into Germany game",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZxnPuhiPQJme1pIr8T6Tpu9N6fxCKdEHt2gcwmHXDUtkKBZuZQKOoi6BGFOo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP9HWofgn8eCMbAcIALGI6eB5fjMuWiovOEpcb__upfRUzdPrqu9pNWqk3Ei4"
         },
         {
-          "url": "https://www.wvnews.com/sports/pro/broncos-panthers-football/image_8e4fd4ef-076c-5a33-aece-6477b4a79507.html",
-          "title": "Broncos Panthers Football",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx8sWHm0MnSRscKL_2izN4O6bB_-tx646-yM-i4Zgtyupef4isUF_xKdUOtPk"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/start-darren-waller-carolina-scheming-141611128.html",
-          "title": "Start Darren Waller as Carolina Scheming Him Into a Focal Fantasy Role",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZfAwZjY9lyabXcWF3vsj0_x6EtpwTJwEDb-ZV1wlIjuvCS8F89rHNof91IkA"
-        }
-      ]
-    },
-    {
-      "query": "cyprus vs montenegro",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T14:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/ckedq195688qt",
-        "https://www.thestatszone.com/cyprus-vs-montenegro-preview-prediction-2026-27-uefa-nations-league-league-c-239114",
-        "https://en.vijesti.me/sports-e/football-c/836338/What-kind-of-lineup-did-Vucinic-prepare-to-conquer-Limassol-Injuries-and-red-cards-determine-the-team."
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/ckedq195688qt",
-          "title": "Cyprus vs Montenegro: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.thestatszone.com/cyprus-vs-montenegro-preview-prediction-2026-27-uefa-nations-league-league-c-239114",
-          "title": "Cyprus vs Montenegro Preview & Prediction | 2026-27 UEFA Nations League | League C",
-          "publisher": "The Stats Zone",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-X8KYj-VdEjHQncQn6UJe9XtZLp5lhEUWNMePwSFMcC3z8cCk_HGGjQIhuR0"
-        },
-        {
-          "url": "https://en.vijesti.me/sports-e/football-c/836338/What-kind-of-lineup-did-Vucinic-prepare-to-conquer-Limassol-Injuries-and-red-cards-determine-the-team.",
-          "title": "What kind of squad has Vučinić prepared to conquer Limassol - injuries and red cards determine the team",
-          "publisher": "vijesti.me",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTY_maoOB0T71Z2-tZ7EAQCtFwDEulQHVv3aaVrTlQT3G18huRT0hxE0ARvrE"
-        }
-      ]
-    },
-    {
-      "query": "fantasy footballers",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T14:00:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/videos/the-nfl-report-provides-a-weather-update-ahead-of-tnf",
-        "https://www.thefantasyfootballers.com/analysis/nfl-week-10-weather-conditions-fantasy-football-6/",
-        "https://en.as.com/nfl/what-nfl-games-could-be-impacted-by-rainstorms-week-10-weather-forecast-for-sunday-nov-15-f202611-n/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcUcRhDng5RTIXmmKlP-x9gf74DqKUoAxnvQDH9UxuCMOmqdhaggEqKPK-Mg",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/videos/the-nfl-report-provides-a-weather-update-ahead-of-tnf",
-          "title": "'The NFL Report' provides a weather update ahead of 'TNF'",
+          "url": "https://www.nfl.com/videos/jared-goff-might-torch-the-pats-secondary-nfl-pro",
+          "title": "Jared Goff might torch the Pats secondary | NFL Pro",
           "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcUcRhDng5RTIXmmKlP-x9gf74DqKUoAxnvQDH9UxuCMOmqdhaggEqKPK-Mg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxNYverY6NDVYLL2LvXEBkp9bpy8CLkqSRdg4YEbmKPdTnEHUrt7ULFPlqDIE"
         },
         {
-          "url": "https://www.thefantasyfootballers.com/analysis/nfl-week-10-weather-conditions-fantasy-football-6/",
-          "title": "NFL Week 10 Weather Conditions (Fantasy Football)",
-          "publisher": "Fantasy Footballers Podcast",
+          "url": "https://www.foxsports.com/watch/fmc-onmoalkcgrznbk30",
+          "title": "Jared Goff WILL Have Big Game vs Patriots in Germany, Chiefs on Upset Alert vs Falcons in Week 10?",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRs5Gx8UqullywdAgTz-THuyvDifO1HPAFu-DH9jDcN7aKzdZ0NVwcuree4hN4"
-        },
-        {
-          "url": "https://en.as.com/nfl/what-nfl-games-could-be-impacted-by-rainstorms-week-10-weather-forecast-for-sunday-nov-15-f202611-n/",
-          "title": "What NFL games could be impacted by rainstorms? Week 10 weather forecast for Sunday, Nov. 15",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWU3eDum7DyTYqe4Wy0q1gVT208kMYZgEPpjnJRCfRdeTJyZsCn1JFx7cbSWI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRuIGR3VBQFZXDX6C7MZGfAcKgrIEk6isziIaEC6RIMFf5nq7tyhcYDaJ6qBI"
         }
       ]
     },
     {
-      "query": "denzel boston",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T14:00:00Z",
-      "related_news_urls": [
-        "https://www.clevelandbrowns.com/news/denzel-boston-questionable-for-week-10-vs-the-texans-injury-report",
-        "https://sports.yahoo.com/articles/denzel-boston-playing-today-browns-133300842.html",
-        "https://www.cbssports.com/fantasy/football/news/browns-denzel-boston-expected-to-play-sunday/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfWNmsiugeSTLd4t7q3AJWjFUfU0jPsBCDBfz82wxGCOZ4hWslC3C8kmV90DA",
-      "image_credit": "Cleveland Browns",
-      "news": [
-        {
-          "url": "https://www.clevelandbrowns.com/news/denzel-boston-questionable-for-week-10-vs-the-texans-injury-report",
-          "title": "Denzel Boston questionable for Week 10 vs. the Texans | Injury Report",
-          "publisher": "Cleveland Browns",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfWNmsiugeSTLd4t7q3AJWjFUfU0jPsBCDBfz82wxGCOZ4hWslC3C8kmV90DA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/denzel-boston-playing-today-browns-133300842.html",
-          "title": "Is Denzel Boston playing today? Browns injury update for Week 10",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTezJynXwF9EOdVf56vKC5XTSuO-wUz_TIb5r_KAp8rSeP4JaBmHY9cjhICiOc"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/browns-denzel-boston-expected-to-play-sunday/",
-          "title": "Browns' Denzel Boston: Expected to play Sunday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
-        }
-      ]
-    },
-    {
-      "query": "actor",
+      "query": "you can see everything where to watch",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T13:50:00Z",
+      "published_at": "2026-11-15T14:40:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/culture/2026/nov/15/hollywood-trans-actors",
-        "https://www.thewrap.com/industry-news/industry-trends/trans-characters-disappearing-tv-glaad-study/",
-        "https://glaad.org/report-release-glaads-21st-annual-where-we-are-on-tv-report/"
+        "https://www.theguardian.com/film/2026/nov/12/you-can-see-everything-on-this-list-the-20-most-jaw-dropping-documentaries-ranked",
+        "https://collider.com/movies-like-you-can-see-everything/",
+        "https://www.wsuguardian.com/article/2026/11/docstowatchifyoulovedyoucanseeeverything"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOWvFd4esH4r1--3wbxFIw5fRhPIzFuAILlLXM03eMT2HDtgzccnOILoRd6Tk",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJRQbCWnEmW29ZdntF-d1YlkzbZDufAM057RGgwK1EwVW0tgnZOgO2lGvSe9k",
       "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.theguardian.com/culture/2026/nov/15/hollywood-trans-actors",
-          "title": "‘No one wants us any more’: how Hollywood turned its back on trans actors",
+          "url": "https://www.theguardian.com/film/2026/nov/12/you-can-see-everything-on-this-list-the-20-most-jaw-dropping-documentaries-ranked",
+          "title": "You can see everything on this list: the 20 most jaw-dropping documentaries – ranked!",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOWvFd4esH4r1--3wbxFIw5fRhPIzFuAILlLXM03eMT2HDtgzccnOILoRd6Tk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJRQbCWnEmW29ZdntF-d1YlkzbZDufAM057RGgwK1EwVW0tgnZOgO2lGvSe9k"
         },
         {
-          "url": "https://www.thewrap.com/industry-news/industry-trends/trans-characters-disappearing-tv-glaad-study/",
-          "title": "Trans Characters Are Vanishing From TV Next Season, GLAAD Study Finds",
-          "publisher": "TheWrap",
+          "url": "https://collider.com/movies-like-you-can-see-everything/",
+          "title": "10 Movies To Watch if You Loved ‘You Can See Everything’",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP29JJIL6_PokzMuYEwkw287gTxQv8SqwTa0w81QKucvSP7oLITUrvzecwMgI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU96AcgdXmWKodoJP1xGntZmbcZq2H9ex3Z9sFrfggk7eIxVHhCea0LGsdSXs"
         },
         {
-          "url": "https://glaad.org/report-release-glaads-21st-annual-where-we-are-on-tv-report/",
-          "title": "Report Release: GLAAD’s 21st Annual Where We Are on TV Report",
-          "publisher": "GLAAD",
+          "url": "https://www.wsuguardian.com/article/2026/11/docstowatchifyoulovedyoucanseeeverything",
+          "title": "5 Boundary-Breaking Documentaries to Watch if You Loved \"You Can See Everything\"",
+          "publisher": "Wright State Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVA1zDdIayAi9ap3LSR7_oQmQR1fFr2LCOH29PAHqjHIICdNkC7o4-wB1Vtw0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw1b-wAyY0j1ngdLuD0s2rGCmdJoF2yjMJZWoMI0b0i5Mrch2WvfKmp3zbyZM"
         }
       ]
     },
     {
-      "query": "boston logan international airport",
+      "query": "chris harrison",
       "approx_searches": "200+",
-      "published_at": "2026-11-15T13:50:00Z",
+      "published_at": "2026-11-15T14:40:00Z",
       "related_news_urls": [
-        "https://www.wcvb.com/article/logan-passenger-tackled-arrested/74431830",
-        "https://www.nbcboston.com/news/local/disorderly-passenger-fight-arrested-bostons-logan-airport/4049629/",
-        "https://www.yahoo.com/news/articles/passenger-arrested-logan-airport-allegedly-134224392.html"
+        "https://www.washingtonpost.com/style/2026/11/12/vow-is-bachelor-tradwives-its-really-something/",
+        "https://www.foxnews.com/entertainment/chris-harrison-vow-sends-two-women-packing-faith-marriage-take-center-stage",
+        "https://deadline.com/2026/11/chris-harrison-dating-show-the-vow-interview-1237220669/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg3-EUFBF0sGKFzhM7y6W_LUVnWO7clXk7XA5fUoYhskCDsUSrAnA8rlUB1uw",
-      "image_credit": "WCVB",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAeEQ4OT75_YLcYjfsGfNxmmZU-uJz8YevtNanVCzGHwvOQpbKB1LQHlPTD7w",
+      "image_credit": "The Washington Post",
       "news": [
         {
-          "url": "https://www.wcvb.com/article/logan-passenger-tackled-arrested/74431830",
-          "title": "Unruly Logan Airport passenger tackled, arrested after trying to grab computer behind baggage counter",
-          "publisher": "WCVB",
+          "url": "https://www.washingtonpost.com/style/2026/11/12/vow-is-bachelor-tradwives-its-really-something/",
+          "title": "Column | Welcome to ‘The Vow,’ the dating show for budding tradwives",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg3-EUFBF0sGKFzhM7y6W_LUVnWO7clXk7XA5fUoYhskCDsUSrAnA8rlUB1uw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAeEQ4OT75_YLcYjfsGfNxmmZU-uJz8YevtNanVCzGHwvOQpbKB1LQHlPTD7w"
         },
         {
-          "url": "https://www.nbcboston.com/news/local/disorderly-passenger-fight-arrested-bostons-logan-airport/4049629/",
-          "title": "Disorderly passenger arrested at Boston's Logan Airport",
-          "publisher": "NBC Boston",
+          "url": "https://www.foxnews.com/entertainment/chris-harrison-vow-sends-two-women-packing-faith-marriage-take-center-stage",
+          "title": "Chris Harrison’s ‘The Vow’ sparks ‘trad wife’ debate among contestants as emotions run high",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTITJ4nRTcyIpIMVlRwhbLuVzxaeiA0XF16p1Is1hu_qJiAeVxHSIDTM22WA6A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWlCphgO4lp1X_Tf-l-y1q9fitqwr3LJJqQ073NAn2lMEg__x-kmAnJM6TpXg"
         },
         {
-          "url": "https://www.yahoo.com/news/articles/passenger-arrested-logan-airport-allegedly-134224392.html",
-          "title": "Passenger arrested at Logan Airport, allegedly attempted to go behind baggage counter",
-          "publisher": "Yahoo",
+          "url": "https://deadline.com/2026/11/chris-harrison-dating-show-the-vow-interview-1237220669/",
+          "title": "“You Can’t Put A Cease & Desist On Love”: Chris Harrison Talks About Returning To The Dating Scene With ‘The Vow’",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRbR50ggvNYbqkYkdsxjQVUr4v8ikFo5AbWKOCSHmx_IPhRjDBO0wUDCLPGlk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6zUEMMv7p3xtUYerY5DjeOrRhtqFr8nA0WkZZe_Z_RKdhlcM04HoKH3iC-e8"
+        }
+      ]
+    },
+    {
+      "query": "texans vs browns",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T14:40:00Z",
+      "related_news_urls": [
+        "https://www.cleveland.com/betting/2026/11/experts-release-new-browns-vs-texans-predictions-after-denzel-boston-injury-update.html",
+        "https://sports.yahoo.com/articles/browns-score-vs-texans-updates-140107846.html",
+        "https://www.houstontexans.com/news/can-the-browns-slow-down-c-j-stroud-texans-roundup-houston-at-cleveland"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTWA5_5KYGGd9Q2hHdU4873VlFtMYNETeHyDzAjbNX9hF6ajlDKugfv-hSeQs",
+      "image_credit": "Cleveland.com",
+      "news": [
+        {
+          "url": "https://www.cleveland.com/betting/2026/11/experts-release-new-browns-vs-texans-predictions-after-denzel-boston-injury-update.html",
+          "title": "Experts release new Browns vs. Texans predictions after Denzel Boston injury update",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTWA5_5KYGGd9Q2hHdU4873VlFtMYNETeHyDzAjbNX9hF6ajlDKugfv-hSeQs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/browns-score-vs-texans-updates-140107846.html",
+          "title": "Browns score vs. Texans. Updates as Cleveland looks to end 2-game skid",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ63u5qMuJUZKEP5hZGvN2AS0WxVXEkkFfRIQch8M5rKTYHUXGY1_aHv1dq8-M"
+        },
+        {
+          "url": "https://www.houstontexans.com/news/can-the-browns-slow-down-c-j-stroud-texans-roundup-houston-at-cleveland",
+          "title": "Can the Browns Slow Down C.J. Stroud? Texans Roundup: Houston at Cleveland",
+          "publisher": "Houston Texans",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXnJxqiRL2J7oPv4e-3JbZy4tl5j6lVqMsyMvwb3sYUo3F9BuOWDWkJp2hUc"
+        }
+      ]
+    },
+    {
+      "query": "elizabeth holmes",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-15T14:30:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/billy-evans-on-you-can-see-everything-elizabeth-holmes/",
+        "https://www.cbsnews.com/video/billy-evans-on-you-can-see-everything/",
+        "https://people.com/billy-evans-shuts-down-nathan-fielder-in-love-with-elizabeth-holmes-12253699"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCpn_M5w7MFMB7t0KoqgB7McjFmYjKsaAqdfy8921VthdXKOzuSUqg3UMwcJI",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/billy-evans-on-you-can-see-everything-elizabeth-holmes/",
+          "title": "Billy Evans, in first interview, tells his side of \"You Can See Everything,\" its portrayal of Elizabeth Holmes",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCpn_M5w7MFMB7t0KoqgB7McjFmYjKsaAqdfy8921VthdXKOzuSUqg3UMwcJI"
+        },
+        {
+          "url": "https://www.cbsnews.com/video/billy-evans-on-you-can-see-everything/",
+          "title": "Billy Evans on \"You Can See Everything\"",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwY-Uq7x3-cdNA3sqLERLS4Rbl2XUnV4SrZEXOWIui9EZvjbdfMMQMD4dM8s"
+        },
+        {
+          "url": "https://people.com/billy-evans-shuts-down-nathan-fielder-in-love-with-elizabeth-holmes-12253699",
+          "title": "Billy Evans Says Nathan Fielder Isn’t ‘In Love’ with Elizabeth Holmes",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhMT14YLvKBE4nJVwzk9DzEyWuTNXBOzJqlf7hCkrwyAlZTCklHJpn2hnsZ2Y"
+        }
+      ]
+    },
+    {
+      "query": "theranos",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T14:30:00Z",
+      "related_news_urls": [
+        "https://www.mariashriversundaypaper.com/sunday-paper-recommends-week-of-november-15-2026/",
+        "https://www.elle.com/culture/movies-tv/a74133942/who-is-elizabeth-holmess-partner-billy-evans-explained/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp2w_3nbRQxnqK15BMliNw9QhCT8Ir8HYxBTpOK0oWshVHLmWvsLtk_ncyntE",
+      "image_credit": "The Sunday Paper",
+      "news": [
+        {
+          "url": "https://www.mariashriversundaypaper.com/sunday-paper-recommends-week-of-november-15-2026/",
+          "title": "Sunday Paper Recommends—Week of November 15, 2026",
+          "publisher": "The Sunday Paper",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp2w_3nbRQxnqK15BMliNw9QhCT8Ir8HYxBTpOK0oWshVHLmWvsLtk_ncyntE"
+        },
+        {
+          "url": "https://www.elle.com/culture/movies-tv/a74133942/who-is-elizabeth-holmess-partner-billy-evans-explained/",
+          "title": "Billy Evans Addresses Rumors He Controlled Elizabeth Holmes in ‘You Can See Everything’",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_JI7aVdcjOgaoBD4N2ynHp35dhSZaQ0lPCiQPjAQjYxme0g4WxhJHIrrqFUw"
+        }
+      ]
+    },
+    {
+      "query": "elizabeth holmes documentary",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T14:30:00Z",
+      "related_news_urls": [
+        "https://www.theatlantic.com/ideas/2026/11/holmes-documentary-journalistic-ethics/689350/",
+        "https://www.nytimes.com/2026/11/09/arts/you-can-see-everything-amanda-seyfried.html",
+        "https://news.yale.edu/2026/11/10/sit-discomfort-examining-fact-and-fiction-you-can-see-everything"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTstCvYMl-GBP1NwP0j3am_-E32VTVyTviPnruNActQmxAMaGkSomqHe0x1Yps",
+      "image_credit": "The Atlantic",
+      "news": [
+        {
+          "url": "https://www.theatlantic.com/ideas/2026/11/holmes-documentary-journalistic-ethics/689350/",
+          "title": "The Only Thing Nathan Fielder Won’t Show",
+          "publisher": "The Atlantic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTstCvYMl-GBP1NwP0j3am_-E32VTVyTviPnruNActQmxAMaGkSomqHe0x1Yps"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/09/arts/you-can-see-everything-amanda-seyfried.html",
+          "title": "‘You Can See Everything’ Puts ‘The Dropout’ on Trial",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7oepOjLgVOBiGHWeKt4dDKyHWn3YJK0KoirZ6_kl-3uIVodZLjimOIxuwOkk"
+        },
+        {
+          "url": "https://news.yale.edu/2026/11/10/sit-discomfort-examining-fact-and-fiction-you-can-see-everything",
+          "title": "‘Sit with the discomfort’: Examining the fact and fiction of ‘You Can See Everything’",
+          "publisher": "YaleNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtGT0nE_ikCUpBcRHx5fQa5QrrfMpnGcxm9vpfrqnlDQ3UuQVNhqjNnn6n6U"
+        }
+      ]
+    },
+    {
+      "query": "el niño",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T14:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/news/weather/2026/11/15/el-nino-peak-forecast/92739777007/",
+        "https://www.sfchronicle.com/personal-finance/article/home-insurance-claim-el-nino-22517481.php",
+        "https://www.foxweather.com/weather-news/super-el-nino-declared-forecasters-warn-major-shifts-winter-weather"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7qF6903z0_ompMFwprDm1p8SC80Xzz9iUO0zFkL9Q2l2AcQ8z2fdU3X5-AoA",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/news/weather/2026/11/15/el-nino-peak-forecast/92739777007/",
+          "title": "El Niño still growing stronger. Here's what could happen next",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7qF6903z0_ompMFwprDm1p8SC80Xzz9iUO0zFkL9Q2l2AcQ8z2fdU3X5-AoA"
+        },
+        {
+          "url": "https://www.sfchronicle.com/personal-finance/article/home-insurance-claim-el-nino-22517481.php",
+          "title": "The one critical 10-minute step every homeowner should take before El Niño",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ37HF4B7QbVVtUVGcp3IiG0nF-u0BURQcSwcQoyM7Kv-Is_T6FdFWQvXtfeuc"
+        },
+        {
+          "url": "https://www.foxweather.com/weather-news/super-el-nino-declared-forecasters-warn-major-shifts-winter-weather",
+          "title": "Super El Niño declared as forecasters warn of major shifts in weather during winter season",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqHUigvhzSzC-tn7-tZJbvVIEs02ATSHKzBT5dJaRXa8rCIy7CEj-IMxvLug"
+        }
+      ]
+    },
+    {
+      "query": "mike vrabel",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T14:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/l-incoming-patriots-hc-mike-123000053.html",
+        "https://www.boston.com/sports/new-england-patriots/2026/11/14/nfl-international-game-germany-patriots-lions/",
+        "https://clutchpoints.com/nfl/new-england-patriots/mike-vrabel-living-his-best-life-munich-drinking-beers-with-patriots-fans-before-lions-game"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaooHQWt9zdNucIkgO_r8cHiPt2sEHmgDrFo3HHOVVQ6_7M2mv6PHFlEO9ZJQ",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/l-incoming-patriots-hc-mike-123000053.html",
+          "title": "‘L incoming’ – Patriots HC Mike Vrabel under fire for drinking beer before NFL game in Germany",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaooHQWt9zdNucIkgO_r8cHiPt2sEHmgDrFo3HHOVVQ6_7M2mv6PHFlEO9ZJQ"
+        },
+        {
+          "url": "https://www.boston.com/sports/new-england-patriots/2026/11/14/nfl-international-game-germany-patriots-lions/",
+          "title": "Mike Vrabel, Patriots embracing Munich ahead of international matchup vs. Lions",
+          "publisher": "Boston.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpnedz6GltlGhYzO2hd4db5M0NZ3NepwjNL-TcloPQGipW2s9giUaFDXK_McA"
+        },
+        {
+          "url": "https://clutchpoints.com/nfl/new-england-patriots/mike-vrabel-living-his-best-life-munich-drinking-beers-with-patriots-fans-before-lions-game",
+          "title": "Mike Vrabel living his best life in Munich drinking beers with Patriots fans before Lions game",
+          "publisher": "ClutchPoints",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT5BfEEJQ7C6zhBJTAdNmLMkfwjy2HLnad0MT7y5FxWbJzG1iX36OKCU6_I9U"
         }
       ]
     }
