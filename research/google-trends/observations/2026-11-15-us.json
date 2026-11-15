@@ -3,12 +3,82 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T00:47:32.858180Z",
+  "checked_at": "2026-11-15T01:01:17.516829Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "whit weeks",
+      "query": "lane kiffin",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/landry-kiffin-shares-thoughts-lane-222329280.html",
+        "https://www.al.com/alabamafootball/2026/11/finebaum-kevin-costner-looked-like-a-fool-used-as-a-stage-prop-during-lsus-loss-to-alabama.html",
+        "https://swimsuit.si.com/fashion/olivia-dunne-game-day-look-lsu-bermuda-throwback"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOiePDTU4s0jVItHT6OmCfz314rFdLHEsxxS1ucV52W2XWjYSPX6tpng8I48",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/landry-kiffin-shares-thoughts-lane-222329280.html",
+          "title": "Landry Kiffin shares thoughts on Lane’s LSU pregame walkouts with celebrities",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOiePDTU4s0jVItHT6OmCfz314rFdLHEsxxS1ucV52W2XWjYSPX6tpng8I48"
+        },
+        {
+          "url": "https://www.al.com/alabamafootball/2026/11/finebaum-kevin-costner-looked-like-a-fool-used-as-a-stage-prop-during-lsus-loss-to-alabama.html",
+          "title": "Finebaum: Kevin Costner ‘looked like a fool,’ used as a ‘stage prop’ during LSU’s loss to Alabama",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpwih7i5j-Cax08azAqjO8k5R7wYNTxr0ox1aZesQGhzNHAkMhA06I6RZOZ6c"
+        },
+        {
+          "url": "https://swimsuit.si.com/fashion/olivia-dunne-game-day-look-lsu-bermuda-throwback",
+          "title": "Olivia Dunne’s Game-Day Look at LSU Is Bringing Us Back to Her SI Swimsuit Shoot in Bermuda",
+          "publisher": "Sports Illustrated Swimsuit",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1w07YCzOkJtInjC-IoQATYj4Wq8xLShvszzmfArL14sT5BziowRoZ0PPkC18"
+        }
+      ]
+    },
+    {
+      "query": "archie manning",
       "approx_searches": "500+",
+      "published_at": "2026-11-15T00:40:00Z",
+      "related_news_urls": [
+        "https://www.tigerrag.com/the-manning-touch-in-tiger-stadium-will-it-hand-lsu-another-critical-loss-and-playoffs-exit/",
+        "https://wgno.com/sports/whats-going-on-in-sports-lsu-faces-arch-manning-saints-injuries-and-pelicans-spiraling/",
+        "https://www.andthevalleyshook.com/lsu-latest-news/55390/lsu-news-the-tigers-will-have-to-deal-with-arch-manning"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-v1xIaWL6Ftq6-_QaBGti7raTa-FXlJ1mRajID07AwUB_eyvr92kWgwdXWA",
+      "image_credit": "TigerRag.com |",
+      "news": [
+        {
+          "url": "https://www.tigerrag.com/the-manning-touch-in-tiger-stadium-will-it-hand-lsu-another-critical-loss-and-playoffs-exit/",
+          "title": "The MANNING TOUCH In Tiger Stadium: Will It Hand LSU Another Critical Loss And Playoffs Exit?",
+          "publisher": "TigerRag.com |",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-v1xIaWL6Ftq6-_QaBGti7raTa-FXlJ1mRajID07AwUB_eyvr92kWgwdXWA"
+        },
+        {
+          "url": "https://wgno.com/sports/whats-going-on-in-sports-lsu-faces-arch-manning-saints-injuries-and-pelicans-spiraling/",
+          "title": "What’s GoiNg On in Sports?: LSU faces Arch Manning, Saints injuries and Pelicans spiraling",
+          "publisher": "WGNO",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4ZQsWmLHWLh67it82-eGFbMdQ64JxFSkAmlJo9AUb4s1tfahXAAWRaegynmk"
+        },
+        {
+          "url": "https://www.andthevalleyshook.com/lsu-latest-news/55390/lsu-news-the-tigers-will-have-to-deal-with-arch-manning",
+          "title": "Tiger Tails: The Tigers will have to deal with Arch Manning",
+          "publisher": "And The Valley Shook",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Ap2-eqrAk6nuUa_lH5WFa8J65hIoCptTvPl9RoYxcAfjHwuJ4PBJCGr0X_Y"
+        }
+      ]
+    },
+    {
+      "query": "whit weeks",
+      "approx_searches": "2000+",
       "published_at": "2026-11-15T00:30:00Z",
       "related_news_urls": [
         "https://247sports.com/college/texas/article/texas-vs-lsu-injury-report-four-players-left-to-watch-heading-into-saturday--292650029/",
@@ -43,7 +113,7 @@
     },
     {
       "query": "america vs red bulls",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-15T00:30:00Z",
       "related_news_urls": [
         "https://www.redbull.com/us-en/events/red-bull-new-york-vs-club-america",
@@ -73,68 +143,6 @@
           "publisher": "FotMob",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7XapH-9c-m86gmMPvVzPTaZWUHeIhmVu451TFQv5BHL-ZepqFiFvOO2M1OTg"
-        }
-      ]
-    },
-    {
-      "query": "new movies on netflix",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T00:30:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/movies/2026/11/13/new-movies-streaming-netflix-hbo-max-disney-paramount-apple-tv/92642586007/",
-        "https://www.boston.com/culture/streaming/2026/11/13/5-must-watch-movies-tv-shows-streaming-right-now-november-13-2026/",
-        "https://www.imdb.com/news/ni66109716/?ref_=ttnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkVUXv5o806YEp_VkwgBQaJBpbMWmzY3B3RpoBI5l-JmxHr4j_LuIEOVptkH4",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/13/new-movies-streaming-netflix-hbo-max-disney-paramount-apple-tv/92642586007/",
-          "title": "From 'Avengers Endgame' to 'End of Oak Street' 10 movies to stream now",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkVUXv5o806YEp_VkwgBQaJBpbMWmzY3B3RpoBI5l-JmxHr4j_LuIEOVptkH4"
-        },
-        {
-          "url": "https://www.boston.com/culture/streaming/2026/11/13/5-must-watch-movies-tv-shows-streaming-right-now-november-13-2026/",
-          "title": "5 must-watch movies & TV shows streaming right now",
-          "publisher": "Boston.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpv5FdjuKWM2ZoGg0wYW3X16CNogGYuo_XPn0xTHYWfsfWhO8nGTvTlE3mXto"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66109716/?ref_=ttnw_art_perm",
-          "title": "New to Streaming: The End of Oak Street, Being Heumann, Ha-Chan, Shake Your Booty!, Paper Trail & More",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo5ybZdIVg2AZi1-VOlWY1w4p8cL57Lz5liN6rVVsgGykF9khXsjuuHpfZ-sQ"
-        }
-      ]
-    },
-    {
-      "query": "big ten network",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T00:30:00Z",
-      "related_news_urls": [
-        "https://purduesports.com/news/2026/11/13/purdue-wins-the-big-ten-tournament-championship",
-        "https://www.jconline.com/story/sports/college/purdue/2026/11/14/purdue-womens-soccer-big-ten-championship-michigan-state-score-jaiden-anderson/92729378007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXzNd-AYTkTmnluUMlF1q8NgqJK7ELrlMFNBjthuSM7enRCza_H4hjJVidk3s",
-      "image_credit": "Big Ten Conference",
-      "news": [
-        {
-          "url": "https://purduesports.com/news/2026/11/13/purdue-wins-the-big-ten-tournament-championship",
-          "title": "Purdue Wins the Big Ten Tournament Championship",
-          "publisher": "Purdue Boilermakers",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAschyAisD8cRxz97gxKiSqYlvXfYo6KgAd3BiCZstqwjZf0sqmzyzIUV0xtI"
-        },
-        {
-          "url": "https://www.jconline.com/story/sports/college/purdue/2026/11/14/purdue-womens-soccer-big-ten-championship-michigan-state-score-jaiden-anderson/92729378007/",
-          "title": "Cold weather can't cool off Purdue soccer on way to Big Ten Tournament title",
-          "publisher": "Journal & Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQR6jda06p6k0I_pcqz7SmQ3079RA6nG4Uisw1Fs1YTfU-1L2fhzHQpaWidSJU"
         }
       ]
     },
@@ -170,6 +178,68 @@
           "publisher": "Rolling Stone",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlvMw3Fb93uiblCnAEBD0i79wWkW5WJ2qD6T03YCcUpUxha4zId0rXzEXxQXA"
+        }
+      ]
+    },
+    {
+      "query": "big ten network",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T00:30:00Z",
+      "related_news_urls": [
+        "https://purduesports.com/news/2026/11/13/purdue-wins-the-big-ten-tournament-championship",
+        "https://www.jconline.com/story/sports/college/purdue/2026/11/14/purdue-womens-soccer-big-ten-championship-michigan-state-score-jaiden-anderson/92729378007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXzNd-AYTkTmnluUMlF1q8NgqJK7ELrlMFNBjthuSM7enRCza_H4hjJVidk3s",
+      "image_credit": "Big Ten Conference",
+      "news": [
+        {
+          "url": "https://purduesports.com/news/2026/11/13/purdue-wins-the-big-ten-tournament-championship",
+          "title": "Purdue Wins the Big Ten Tournament Championship",
+          "publisher": "Purdue Boilermakers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAschyAisD8cRxz97gxKiSqYlvXfYo6KgAd3BiCZstqwjZf0sqmzyzIUV0xtI"
+        },
+        {
+          "url": "https://www.jconline.com/story/sports/college/purdue/2026/11/14/purdue-womens-soccer-big-ten-championship-michigan-state-score-jaiden-anderson/92729378007/",
+          "title": "Cold weather can't cool off Purdue soccer on way to Big Ten Tournament title",
+          "publisher": "Journal & Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQR6jda06p6k0I_pcqz7SmQ3079RA6nG4Uisw1Fs1YTfU-1L2fhzHQpaWidSJU"
+        }
+      ]
+    },
+    {
+      "query": "new movies on netflix",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T00:30:00Z",
+      "related_news_urls": [
+        "https://www.netflix.com/tudum/articles/what-to-watch-on-netflix-november-13-2026",
+        "https://www.whats-on-netflix.com/whats-new/new-releases-on-netflix-this-week-and-top-10-movies-series-november-14-2026/",
+        "https://news.newonnetflix.info/news/stream-or-skip-heres-everything-added-to-netflix-uk-this-week-13th-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuLN0Edlg6jVio_dsQABWW81K0mHkfB0Gxyf_leDMB-53YBHXcLqB85d0qttQ",
+      "image_credit": "Netflix",
+      "news": [
+        {
+          "url": "https://www.netflix.com/tudum/articles/what-to-watch-on-netflix-november-13-2026",
+          "title": "From Guarding Stars to The Altruists : What to Watch on Netflix",
+          "publisher": "Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuLN0Edlg6jVio_dsQABWW81K0mHkfB0Gxyf_leDMB-53YBHXcLqB85d0qttQ"
+        },
+        {
+          "url": "https://www.whats-on-netflix.com/whats-new/new-releases-on-netflix-this-week-and-top-10-movies-series-november-14-2026/",
+          "title": "New Releases on Netflix This Week and Top 10 Movies & Series: November 14, 2026",
+          "publisher": "What's on Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYL6B9wDseXhG00Q_3ySYq0DSWosbvFgJcHLRMVJgQPQGqtTEgTbEpgg6qBh4"
+        },
+        {
+          "url": "https://news.newonnetflix.info/news/stream-or-skip-heres-everything-added-to-netflix-uk-this-week-13th-november-2026/",
+          "title": "Stream or Skip? Here’s Everything Added to Netflix UK This Week (13th November 2026)",
+          "publisher": "https://news.newonnetflix.info/",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxfyTXEjmruWKQIKJIbRLF5ADGE_bH30JyCps0uzQLcgAEeIXcTp64GVEYblE"
         }
       ]
     },
@@ -210,36 +280,36 @@
     },
     {
       "query": "jamaica - méxico",
-      "approx_searches": "20000+",
+      "approx_searches": "50000+",
       "published_at": "2026-11-15T00:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/jamaica-vs-mexico-concacaf-nations-140138072.html",
-        "https://www.usatoday.com/story/sports/soccer/2026/11/14/mexico-starting-lineup-xi-vs-jamaica-concacaf-nations-league-rafa-marquez/92779663007/",
-        "https://mexiconewsdaily.com/lifestyle/el-tri-back-in-action-saturday-first-official-match-rafa-marquez-era/"
+        "https://sports.yahoo.com/articles/mexico-vs-jamaica-live-stream-214407323.html",
+        "https://www.winknews.com/sports/joshua-grant-returns-to-international-stage-announces-fc-naples-contract-extension/article_515200c3-f652-451b-ac06-cdd71a1affeb.html",
+        "https://www.marca.com/en/football/international-football/2026/11/13/armando-hormiga-gonzalez-is-challenging-rafael-marquez-s-decision-to-bench-him.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVmiqh5k9kHRBQuOTt8yB3Ecx92ippBl3PJZsJ4YFeD3glvD3XzyyaQIuePC8",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpTOXdGj4ZnJgxXa6HaOkC-N0-ZOazt8t0tnb19g2P1lz0Mx0hh6RYoBOj2ig",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/jamaica-vs-mexico-concacaf-nations-140138072.html",
-          "title": "Jamaica vs. Mexico Concacaf Nations League prediction, start time, how to watch",
+          "url": "https://sports.yahoo.com/articles/mexico-vs-jamaica-live-stream-214407323.html",
+          "title": "Mexico vs Jamaica live stream, start time, TV info for CONCACAF Nations League",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVmiqh5k9kHRBQuOTt8yB3Ecx92ippBl3PJZsJ4YFeD3glvD3XzyyaQIuePC8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpTOXdGj4ZnJgxXa6HaOkC-N0-ZOazt8t0tnb19g2P1lz0Mx0hh6RYoBOj2ig"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/soccer/2026/11/14/mexico-starting-lineup-xi-vs-jamaica-concacaf-nations-league-rafa-marquez/92779663007/",
-          "title": "Mexico predicted starting lineup vs. Jamaica today: Santi or Hormiga up top?",
-          "publisher": "USA Today",
+          "url": "https://www.winknews.com/sports/joshua-grant-returns-to-international-stage-announces-fc-naples-contract-extension/article_515200c3-f652-451b-ac06-cdd71a1affeb.html",
+          "title": "Joshua Grant returns to international stage, announces FC Naples contract extension",
+          "publisher": "WINK News - Southwest Florida",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHxk9PpbYGlzf1TzIZvBw_fc_Clr4PZXDTSICN0Da0qGtAtuk8CV9XDJdr2Xw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7006HTQNtebBkQK0B33wQJoAU7XwnfixcjUaV2yVctDoEkDInS7XH0x_RM5o"
         },
         {
-          "url": "https://mexiconewsdaily.com/lifestyle/el-tri-back-in-action-saturday-first-official-match-rafa-marquez-era/",
-          "title": "El Tri is back in action Saturday in its first official match of the Rafa Márquez era",
-          "publisher": "Mexico News Daily",
+          "url": "https://www.marca.com/en/football/international-football/2026/11/13/armando-hormiga-gonzalez-is-challenging-rafael-marquez-s-decision-to-bench-him.html",
+          "title": "Armando la ‘Hormiga’ González is challenging Rafael Márquez’s decision to bench him",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXI5f7aYg3ZFSXPAihs0AVX5jXmXTPD65rC51n2mOxuFmtCsg8VycAJThuJk0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLCrcicqvnCJ3exoAiG9QGdZMAGpa_4NpftP5K9K1DWdxmnMhBp1Zl3xEMyps"
         }
       ]
     },
@@ -250,7 +320,7 @@
       "related_news_urls": [
         "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-dallas-stars-preview-lineup",
         "https://www.dallasnews.com/sports/stars/article/nhl-how-to-watch-dallas-stars-buffalo-sabres-aac-22530060.php",
-        "https://sports.yahoo.com/articles/line-combinations-stars-vs-sabres-181846553.html"
+        "https://www.audacy.com/wgr550/sports/sabres/sabres-looking-to-break-a-three-game-losing-streak"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu0ZkCV27eDRFT3SGZnnQGy1YkIivjOatlPDP452mVG6Jmq2Nx70qCtsvKzqo",
       "image_credit": "NHL.com",
@@ -270,81 +340,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMVG3R5WZ5-nfrfdc8rYby_DXoe-B8Mjx1YNmjDyMJ7GBOSWuU5jqoPsJp-bs"
         },
         {
-          "url": "https://sports.yahoo.com/articles/line-combinations-stars-vs-sabres-181846553.html",
-          "title": "Line Combinations: Stars vs Sabres",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.audacy.com/wgr550/sports/sabres/sabres-looking-to-break-a-three-game-losing-streak",
+          "title": "Sabres looking to break a three game losing streak",
+          "publisher": "Audacy",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8TPQDeBdduQWlqI1v7K9_Y6BYlsLfR0RnITyHexebk5kw3Te9jiTWbOexp8I"
-        }
-      ]
-    },
-    {
-      "query": "alix earle",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T00:10:00Z",
-      "related_news_urls": [
-        "https://swimsuit.si.com/swimnews/alix-earle-announces-earle-meets-world-season-2-return-fan-reactions",
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/netflix-wants-another-dose-alix-163713849.html",
-        "https://www.yoursourceone.com/entertainment/in-brief-earle-meets-world-renewed-for-season-2-and-more/article_6137fc51-1336-5b6b-819e-06eaa1c7c0ef.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIiJputqkwqeMhPvGBmhxipl3P5upU9GAAIwzhM05Z7fvILOSYGr5zUKzLQxc",
-      "image_credit": "Sports Illustrated Swimsuit",
-      "news": [
-        {
-          "url": "https://swimsuit.si.com/swimnews/alix-earle-announces-earle-meets-world-season-2-return-fan-reactions",
-          "title": "Alix Earle Announces ‘Earle Meets World’ Season 2 Return, and Fans Are Beyond Excited",
-          "publisher": "Sports Illustrated Swimsuit",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIiJputqkwqeMhPvGBmhxipl3P5upU9GAAIwzhM05Z7fvILOSYGr5zUKzLQxc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/netflix-wants-another-dose-alix-163713849.html",
-          "title": "Netflix Wants Another Dose of Alix Earle’s Family Drama",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5PYM3usVX81Dqjw2SEGdNXANTvIozIpu1jV0at5VvK64AXLrkxmwOTQoam_0"
-        },
-        {
-          "url": "https://www.yoursourceone.com/entertainment/in-brief-earle-meets-world-renewed-for-season-2-and-more/article_6137fc51-1336-5b6b-819e-06eaa1c7c0ef.html",
-          "title": "In brief: 'Earle Meets World' renewed for season 2 and more",
-          "publisher": "Source ONE News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSet_41djT4iQAm_ytAfVrMXD5SansrThcPObh4YgDKpaBxs_SRcZL4V4YuAQA"
-        }
-      ]
-    },
-    {
-      "query": "flandre",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T00:10:00Z",
-      "related_news_urls": [
-        "https://www.lesoir.be/782503/article/2026-11-13/explosion-en-flandre-la-troisieme-en-une-semaine",
-        "https://www.rtl.be/388309/locations/kortenberg-brabant-flamand",
-        "https://www.7sur7.be/belgique/troisieme-explosion-en-une-semaine-a-kortenberg-une-jeune-famille-visee-pour-la-deuxieme-fois~a4c41077/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSohWKl3X6GA_DTnCSBrq8LBcVya_zHvA8ymNFUsqkq1QWxUd22r_SAjm2anYY",
-      "image_credit": "Le Soir",
-      "news": [
-        {
-          "url": "https://www.lesoir.be/782503/article/2026-11-13/explosion-en-flandre-la-troisieme-en-une-semaine",
-          "title": "Explosion en Flandre : la troisième en une semaine",
-          "publisher": "Le Soir",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSohWKl3X6GA_DTnCSBrq8LBcVya_zHvA8ymNFUsqkq1QWxUd22r_SAjm2anYY"
-        },
-        {
-          "url": "https://www.rtl.be/388309/locations/kortenberg-brabant-flamand",
-          "title": "Kortenberg (Brabant flamand)",
-          "publisher": "RTL Info",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk6JsP5vWfHK0c9U1UUowzZbBcTd3LeYRH5py0kNUOVR-orErIZnEA-N5HAPQ"
-        },
-        {
-          "url": "https://www.7sur7.be/belgique/troisieme-explosion-en-une-semaine-a-kortenberg-une-jeune-famille-visee-pour-la-deuxieme-fois~a4c41077/",
-          "title": "Troisième explosion en une semaine à Kortenberg: une jeune famille visée pour la deuxième fois",
-          "publisher": "7sur7.be",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEfrPktbYkPC4CenDSHYKZZ4bf1eMIRDf7j6UMfEu0rB99cXbbgsZ82LBZCw4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuub8whSYNg81zlsM2UeAP8J-X-ggE4cujDDFbP6vLnKx4LmidJDKo_tejqIw"
         }
       ]
     }
