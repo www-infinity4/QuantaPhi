@@ -3,223 +3,293 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T23:01:14.200383Z",
+  "checked_at": "2026-11-15T23:30:51.061991Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "alexandra ignatova",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T22:40:00Z",
+      "query": "myles garrett",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T23:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/olympics/news/alexandra-ignatova-trusova-figure-skating",
-        "https://www.nbcsports.com/olympics/news/skate-america-womens-short-program-2026",
-        "https://www.kvue.com/article/syndication/associatedpress/olympic-bronze-medalist-ami-nakai-of-japan-leads-after-short-program-at-skate-america/616-8ba148a4-d3b8-4fbf-8743-03c8cd6a8308"
+        "https://www.therams.com/news/steve-avila-and-joe-cardona-among-rams-inactives-for-week-10-2026-at-cardinals",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/trent-mcduffie-active-for-rams-cardinals",
+        "https://www.azcardinals.com/news/injury-report-week-10-vs-rams"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcdeJJt-pXCDOjL44u1h8n-IHt5Kz_PcECbs2aZeABD_6VCTj1EWkx-Ndd6VY",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbn6HiMU7YmKtdBT1FrjkwcBKKToz-tTAROjGAUX4cwzsRjs0xzUnQ2gwPz_o",
+      "image_credit": "Rams",
       "news": [
         {
-          "url": "https://www.nbcsports.com/olympics/news/alexandra-ignatova-trusova-figure-skating",
-          "title": "Alexandra Ignatova has a new name, new title (mom) and new approach to figure skating",
-          "publisher": "NBC Sports",
+          "url": "https://www.therams.com/news/steve-avila-and-joe-cardona-among-rams-inactives-for-week-10-2026-at-cardinals",
+          "title": "Steve Avila and Joe Cardona among Rams' inactives for Week 10 at Cardinals",
+          "publisher": "Rams",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcdeJJt-pXCDOjL44u1h8n-IHt5Kz_PcECbs2aZeABD_6VCTj1EWkx-Ndd6VY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbn6HiMU7YmKtdBT1FrjkwcBKKToz-tTAROjGAUX4cwzsRjs0xzUnQ2gwPz_o"
         },
         {
-          "url": "https://www.nbcsports.com/olympics/news/skate-america-womens-short-program-2026",
-          "title": "Ami Nakai leads at Saatva Skate America, eyes Grand Prix sweep",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/trent-mcduffie-active-for-rams-cardinals",
+          "title": "Trent McDuffie active for Rams-Cardinals",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnrpyLSbar143ZTVDe7UubY_5ebxesETVZ_CjTeoXhR_O8U7cmNufTkuWHvsg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUoSMJuERUMAIyidXOmgYi2yAiO0M-uxzbXLZHrAqFsaw-M3vF2rPiWakLhtg"
         },
         {
-          "url": "https://www.kvue.com/article/syndication/associatedpress/olympic-bronze-medalist-ami-nakai-of-japan-leads-after-short-program-at-skate-america/616-8ba148a4-d3b8-4fbf-8743-03c8cd6a8308",
-          "title": "Olympic bronze medalist Ami Nakai of Japan leads after short program at Skate America",
-          "publisher": "KVUE",
+          "url": "https://www.azcardinals.com/news/injury-report-week-10-vs-rams",
+          "title": "Injury Report: Week 10 vs Rams",
+          "publisher": "Arizona Cardinals",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTitSAuOA5LaWItcsQHBWj1iyd8TZEuGvp9hfjIq-olDmp96co4ErJWIkYPr_E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSalK9yO8qWx0TMUualgd-VbAJO-sb1hyQLh2YfSSn_URoN23QeJqH6qSOv08w"
         }
       ]
     },
     {
-      "query": "knicks - raptors",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T22:40:00Z",
+      "query": "kaelon black",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-15T23:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-knicks-vs-raptors-nba-220000933.html",
-        "https://www.postingandtoasting.com/knicks-game-threads/91272/game-preview-knicks-at-raptors-november-15-2026",
-        "https://www.sportsgambler.com/betting-tips/basketball/new-york-knicks-vs-toronto-raptors-prediction-odds-6019793/"
+        "https://www.nytimes.com/athletic/7776685/2026/11/13/kaelon-black-49ers-christian-mccaffrey/",
+        "https://www.rotoballer.com/player-news/kaelon-black-remains-a-top-waiver-wire-stash-ahead-of-week-10/1993540",
+        "https://www.fantasypros.com/nfl/news/618724/kaelon-black-runs-70-yards-sunday.php"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEWbqO_Ic4XH29r9RsLSMIsRsxDwr_NrEO9_aIk-kCl8_NcVY_lASangF0728",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSyTxa_rRCIchw-xm1e_HUefOIOssE67XHV5T89evCtrnxWNhgWURHr3uJHS0",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7776685/2026/11/13/kaelon-black-49ers-christian-mccaffrey/",
+          "title": "The 49ers finally got Christian McCaffrey a sidekick. Why rookie Kaelon Black is thriving - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSyTxa_rRCIchw-xm1e_HUefOIOssE67XHV5T89evCtrnxWNhgWURHr3uJHS0"
+        },
+        {
+          "url": "https://www.rotoballer.com/player-news/kaelon-black-remains-a-top-waiver-wire-stash-ahead-of-week-10/1993540",
+          "title": "Kaelon Black - Fantasy Football Waiver Wire Pickups for Week 10 (2026) - NFL News",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY2Rqp8TUmdyWtlevHShpM-ue1PDFFSj8UbaB2kXNKywFpRWNFKmPyXPGVa6g"
+        },
+        {
+          "url": "https://www.fantasypros.com/nfl/news/618724/kaelon-black-runs-70-yards-sunday.php",
+          "title": "Kaelon Black runs for 70 yards Sunday",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9IPO-d2bqx3GGcO8RYEnbkGResbu_0C_Ah_1ynmtWR4B4l3Jod5ubK0fLuYE"
+        }
+      ]
+    },
+    {
+      "query": "kyren williams",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-15T23:00:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/stories/nfl/how-to-watch-rams-vs-cardinals-tv-channel-live-stream-time-nov-15-2026",
+        "https://www.nfl.com/videos/blake-corum-s-td-in-arizona-marks-his-sixth-straight-game-with-an-end-zone-trip",
+        "https://www.therams.com/video/highlights-rams-rb-blake-corum-rushes-1-yard-touchdown-to-open-the-second-half-vs-cardinals-week-10"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRramWE7eUPytxsRtxsuE6ky8ZrCXFm7rWc85bIShKaljXL_5x0NgJMlx1cys",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/stories/nfl/how-to-watch-rams-vs-cardinals-tv-channel-live-stream-time-nov-15-2026",
+          "title": "How to Watch Rams vs. Cardinals: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRramWE7eUPytxsRtxsuE6ky8ZrCXFm7rWc85bIShKaljXL_5x0NgJMlx1cys"
+        },
+        {
+          "url": "https://www.nfl.com/videos/blake-corum-s-td-in-arizona-marks-his-sixth-straight-game-with-an-end-zone-trip",
+          "title": "Blake Corum's TD in Arizona marks his sixth-straight game with an end-zone trip",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROO3O3EIuA6S28Y9O95E1dDN5oqid0lM7LDNAjR76vdVvP2VCqYAeaVWBS4pc"
+        },
+        {
+          "url": "https://www.therams.com/video/highlights-rams-rb-blake-corum-rushes-1-yard-touchdown-to-open-the-second-half-vs-cardinals-week-10",
+          "title": "HIGHLIGHTS: Rams RB Blake Corum rushes for a 1-yard touchdown to open the second half vs. the Cardinals",
+          "publisher": "Rams",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsUcWi3ehOnQBbLUEpi5ZZoJC2xYyQbyGZekmGb4Vc5LrtZoi2lPy34dDcF6M"
+        }
+      ]
+    },
+    {
+      "query": "rockets vs wizards",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T23:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/rockets-vs-wizards-odds-why-214947189.html",
+        "https://sports.yahoo.com/articles/injury-report-washington-wizards-vs-214234121.html",
+        "https://www.thedreamshake.com/rockets-game-previews/42551/houston-rockets-vs-washington-wizards-game-preview"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSogSSK0Gec9Ni5sU2Py-sKT4do3wxUVYjwcP-5IorcFvyU3Mr4Dx4AD-yJYus",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-knicks-vs-raptors-nba-220000933.html",
-          "title": "How to watch Knicks vs Raptors: NBA, live stream, TV channel, start time",
+          "url": "https://sports.yahoo.com/articles/rockets-vs-wizards-odds-why-214947189.html",
+          "title": "Rockets vs Wizards Odds and Why Washington Keeps It Close",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEWbqO_Ic4XH29r9RsLSMIsRsxDwr_NrEO9_aIk-kCl8_NcVY_lASangF0728"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSogSSK0Gec9Ni5sU2Py-sKT4do3wxUVYjwcP-5IorcFvyU3Mr4Dx4AD-yJYus"
         },
         {
-          "url": "https://www.postingandtoasting.com/knicks-game-threads/91272/game-preview-knicks-at-raptors-november-15-2026",
-          "title": "Game Preview: Knicks at Raptors, November 15, 2026",
-          "publisher": "Posting and Toasting",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_-Rk_WQiRwFmesGNMQYIuG3ujM_sy4Rs4OgYI2RIJW_3MAWIEyjwrB3qkmfw"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/new-york-knicks-vs-toronto-raptors-prediction-odds-6019793/",
-          "title": "New York Knicks vs Toronto Raptors Prediction, Picks & Odds | NBA Sunday",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXuRi3Ib-MEBlLwnqmu1vQ5v94tIKRi2_LWMdpxzdS3k9HsfxB7cguYvfAvwg"
-        }
-      ]
-    },
-    {
-      "query": "george pickens",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T22:30:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/articles/25532956-george-pickens-drops-viral-quote-updating-injury-status-cowboys-vs-49ers-amid-hamstring-issue",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/george-pickens-hamstring-cleared-to-face-49ers",
-        "https://www.bloggingtheboys.com/dallas-cowboys-injuries/226515/final-game-status-george-pickens-joey-porter-jr"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRy9q6n-oIc43Sg4VaTLOiOhf5uxq-xzC9XGERk5wgMuNGGOG-pFWEAiGtkykg",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25532956-george-pickens-drops-viral-quote-updating-injury-status-cowboys-vs-49ers-amid-hamstring-issue",
-          "title": "George Pickens Drops Viral Quote Updating Injury Status for Cowboys vs. 49ers amid Hamstring Issue",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRy9q6n-oIc43Sg4VaTLOiOhf5uxq-xzC9XGERk5wgMuNGGOG-pFWEAiGtkykg"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/george-pickens-hamstring-cleared-to-face-49ers",
-          "title": "George Pickens (hamstring) cleared to face 49ers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1t9vjK5X3ap6flwtb5GQ0DMY_l-CS43_Wu_bvFwfJ-1WAmhlF4o-Q-wY9hbQ"
-        },
-        {
-          "url": "https://www.bloggingtheboys.com/dallas-cowboys-injuries/226515/final-game-status-george-pickens-joey-porter-jr",
-          "title": "Cowboys injuries: 49ers game status for George Pickens, Joey Porter Jr.",
-          "publisher": "Blogging The Boys",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYSozUL94z-fONu6n-IrxW4PRkjGtbvfXF8AVi_avVnOlk6Rc_A0SKgTyS-20"
-        }
-      ]
-    },
-    {
-      "query": "uconn vs louisville",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T22:30:00Z",
-      "related_news_urls": [
-        "https://uconnhuskies.com/news/2026/11/14/womens-basketball-no-4-uconn-competes-at-no-7-louisville-sunday",
-        "https://sports.yahoo.com/articles/open-thread-louisville-vs-uconn-215000913.html",
-        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/uconn-vs-louisville-3-keys-to-the-game-22521186.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAayz-6Ndhz8S0zAEjGw-hheGlpGglGJIOQ3kIbp_7P6B1_PQZL_BkWQov_D4",
-      "image_credit": "University of Connecticut Athletics",
-      "news": [
-        {
-          "url": "https://uconnhuskies.com/news/2026/11/14/womens-basketball-no-4-uconn-competes-at-no-7-louisville-sunday",
-          "title": "No. 4 UConn Competes at No. 7 Louisville Sunday",
-          "publisher": "University of Connecticut Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAayz-6Ndhz8S0zAEjGw-hheGlpGglGJIOQ3kIbp_7P6B1_PQZL_BkWQov_D4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/open-thread-louisville-vs-uconn-215000913.html",
-          "title": "Open Thread: Louisville vs. UConn",
+          "url": "https://sports.yahoo.com/articles/injury-report-washington-wizards-vs-214234121.html",
+          "title": "Injury Report: Washington Wizards vs. Houston Rockets",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKQnFbMdxztYj5pc69CStKnw3srM4MMT3zML3oZddVnOFysPRhGwnfcRdAz6Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsFKA-GBsjQY_xdwt2RI-Mjxd8GSsE0bJ9SxVQR1ooBCmVzt0HvefOvj1msC0"
         },
         {
-          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/uconn-vs-louisville-3-keys-to-the-game-22521186.php",
-          "title": "3 keys to the game: UConn women's basketball team visits Louisville",
-          "publisher": "CT Insider",
+          "url": "https://www.thedreamshake.com/rockets-game-previews/42551/houston-rockets-vs-washington-wizards-game-preview",
+          "title": "Houston Rockets vs. Washington Wizards game preview",
+          "publisher": "The Dream Shake",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTe_0Tc2s5GaIrSZvBKnKRL_GbDi0E7DJx7aGtcNoFSrEs6ea8dmkDDvI_f7SM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpQu9XR9jsrZdwK8puQN-jZ-a4R8GpWvSxUQMzp4LkcAIsL8sKU03V68ySSLw"
         }
       ]
     },
     {
-      "query": "olivia culpo",
+      "query": "jaxon smith-njigba",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-15T23:00:00Z",
+      "related_news_urls": [
+        "https://www.silverandblackpride.com/las-vegas-raiders-game-information/145723/raiders-2026-week-10-seahawks-game-preview",
+        "https://www.fantasylife.com/articles/dfs/prizepicks-nfl-player-props-for-week-10",
+        "https://www.raiders.com/audio/klint-kubiak-jaxon-smith-njigba-seahawks-2026-nfl-season"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_FOU9g3WyAUAgbrl4rAVwowREy3Z7a2le9noEBmYhIokSyKv5-SEzjRbplkw",
+      "image_credit": "Silver And Black Pride",
+      "news": [
+        {
+          "url": "https://www.silverandblackpride.com/las-vegas-raiders-game-information/145723/raiders-2026-week-10-seahawks-game-preview",
+          "title": "Raiders Week 10: Seahawks’ Jaxon Smith-Njigba a supreme challenge",
+          "publisher": "Silver And Black Pride",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_FOU9g3WyAUAgbrl4rAVwowREy3Z7a2le9noEBmYhIokSyKv5-SEzjRbplkw"
+        },
+        {
+          "url": "https://www.fantasylife.com/articles/dfs/prizepicks-nfl-player-props-for-week-10",
+          "title": "PrizePicks NFL Player Props For Week 10: Jaxon Smith-Njigba Keeps Catching On",
+          "publisher": "FantasyLife",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxcUX0nTdezqS1z3vOyDDtFrtI6TJdBMLpn8WBqzUbbcTkcSzfQICVMLsNdbw"
+        },
+        {
+          "url": "https://www.raiders.com/audio/klint-kubiak-jaxon-smith-njigba-seahawks-2026-nfl-season",
+          "title": "Klint Kubiak previews matchup with Mike Macdonald and the Seahawks | 2026 NFL Season | Podcast",
+          "publisher": "Raiders.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShOc7oWQpDkx08tn5jNWJVKJlkVn6IWo-Rs-QLM5x9blgmt-1NOSuSr5vbdvc"
+        }
+      ]
+    },
+    {
+      "query": "davis allen",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T22:30:00Z",
+      "published_at": "2026-11-15T23:00:00Z",
       "related_news_urls": [
-        "https://www.realtor.com/news/sports/christian-mccaffrey-musical-talent-california-home-baby-number-two-olivia-culpo/",
-        "https://people.com/olivia-culpo-candid-tiktok-postpartum-clothes-12245355",
-        "https://www.yahoo.com/entertainment/celebrity/articles/christian-mccaffrey-wife-proudly-shows-214213931.html"
+        "https://www.cbssports.com/fantasy/football/news/rams-davis-allen-active-for-week-10/",
+        "https://www.aol.com/articles/matthew-stafford-off-week-10-214519000.html",
+        "https://www.fantasypros.com/nfl/news/620252/davis-allen-oblique-officially-active-week-10.php"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUe4AYiJ1x0v3GUqpdISP5WxXkr6MHEovVOSlu50XZpziUYtOZqDwlwq1kcvA",
-      "image_credit": "Realtor.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.realtor.com/news/sports/christian-mccaffrey-musical-talent-california-home-baby-number-two-olivia-culpo/",
-          "title": "Christian McCaffrey Shows Off His Musical Talents Inside California Home",
-          "publisher": "Realtor.com",
+          "url": "https://www.cbssports.com/fantasy/football/news/rams-davis-allen-active-for-week-10/",
+          "title": "Rams' Davis Allen: Active for Week 10",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUe4AYiJ1x0v3GUqpdISP5WxXkr6MHEovVOSlu50XZpziUYtOZqDwlwq1kcvA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
         },
         {
-          "url": "https://people.com/olivia-culpo-candid-tiktok-postpartum-clothes-12245355",
-          "title": "Olivia Culpo Gets Candid About Fitting into Her Clothes 5 Weeks Postpartum and Tracking Her ‘Progress’ After Birth",
-          "publisher": "People.com",
+          "url": "https://www.aol.com/articles/matthew-stafford-off-week-10-214519000.html",
+          "title": "Matthew Stafford off the Week 10 injury report",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC59yI-xfvlnKhriNJwMI5yboaoYTUoGEbzbznGeRLmCBE1B6VjBp4IvHh89Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwZ78eEUXbwIj9l93qdyyJpIkAnw-6wo7fHZnourQ0kF5pebTU5a5HuUegDNs"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/christian-mccaffrey-wife-proudly-shows-214213931.html",
-          "title": "Christian McCaffrey’s wife proudly shows herself breastfeeding during 49ers game",
+          "url": "https://www.fantasypros.com/nfl/news/620252/davis-allen-oblique-officially-active-week-10.php",
+          "title": "Davis Allen (oblique) officially active for Week 10",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-fBeVwpvaeV6d5Qu7FnHf_j93v0oYVapVDfEDp8mh2Hdj9T4bdGGN0IFp7kA"
+        }
+      ]
+    },
+    {
+      "query": "kevin burkhardt",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T23:00:00Z",
+      "related_news_urls": [
+        "https://www.cleveland.com/news/2026/11/kevin-burkhardt-reveals-what-tom-brady-is-really-like-before-fox-nfl-games.html",
+        "https://www.49ers.com/video/kevin-burkhardt-on-49ers-cowboys-tom-brady-the-john-lynch-kyle-shanahan-origin-story-the-49ers-guy",
+        "https://sports.yahoo.com/articles/don-t-best-friends-super-121551447.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVtUr9AB3THi_cMYquDDsU6WYizKF5A-U6_I4wRUKqoe9fB6plM_uLIaTVO0E",
+      "image_credit": "Cleveland.com",
+      "news": [
+        {
+          "url": "https://www.cleveland.com/news/2026/11/kevin-burkhardt-reveals-what-tom-brady-is-really-like-before-fox-nfl-games.html",
+          "title": "Kevin Burkhardt reveals what Tom Brady is really like before FOX NFL games",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVtUr9AB3THi_cMYquDDsU6WYizKF5A-U6_I4wRUKqoe9fB6plM_uLIaTVO0E"
+        },
+        {
+          "url": "https://www.49ers.com/video/kevin-burkhardt-on-49ers-cowboys-tom-brady-the-john-lynch-kyle-shanahan-origin-story-the-49ers-guy",
+          "title": "Kevin Burkhardt on 49ers-Cowboys, Tom Brady & the John Lynch-Kyle Shanahan Origin Story | The 49ers Guy",
+          "publisher": "San Francisco 49ers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQByi7NaRNb-zzBZcXI8oAWPSE3MC0LxUa0ppTEhbjFnuldE3VEcEgsOHkh9ks"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/don-t-best-friends-super-121551447.html",
+          "title": "‘You Don’t Have To Be Best Friends,’ ‘We Are Super Close’ — Kevin Burkhardt Peels Back The Curtain on Working With Tom Brady in FOX’s Broadcast Booth",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZACFOLoZPwLtnixf5fg69WsqQ0RYVE0Rgllx5C3KX4HRzzP_958SlP6hMpfk"
+        }
+      ]
+    },
+    {
+      "query": "harrison short auburn",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T23:00:00Z",
+      "related_news_urls": [
+        "https://www.wsfa.com/2026/11/14/2-killed-4-injured-multi-vehicle-autauga-county-crash/",
+        "https://www.waka.com/2026/11/14/two-people-killed-in-autauga-county-wreck/",
+        "https://www.yahoo.com/news/articles/2-killed-4-injured-central-194253759.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6FWIZSzkArtdwnz3Vl_vho4Qsg1rPJcXft2XZKuhO33GVhkLTEric2F3utEU",
+      "image_credit": "WSFA",
+      "news": [
+        {
+          "url": "https://www.wsfa.com/2026/11/14/2-killed-4-injured-multi-vehicle-autauga-county-crash/",
+          "title": "2 killed, 4 injured in multi-vehicle Autauga County crash",
+          "publisher": "WSFA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6FWIZSzkArtdwnz3Vl_vho4Qsg1rPJcXft2XZKuhO33GVhkLTEric2F3utEU"
+        },
+        {
+          "url": "https://www.waka.com/2026/11/14/two-people-killed-in-autauga-county-wreck/",
+          "title": "Two people killed in Autauga County wreck",
+          "publisher": "WAKA 8",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyvRl-0ZG9JVU00qGzHcosA9umvGnOyOLjnULwYU4b6OygiJoxIut1wLffJxg"
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/2-killed-4-injured-central-194253759.html",
+          "title": "2 killed, 4 injured in central Alabama crash",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROZFS8xaYrD5dlM0mgR78Itu57zWDGBJRvpBY9EpXVQ_3jeKYw3K2xzUIU3FY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuWYKKsRK8m6xcb1rloRBazl6oekayjNviin5IaocpYMwEndgZTtSZRx1Af2s"
         }
       ]
     },
     {
-      "query": "konata mumpfield",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T22:30:00Z",
-      "related_news_urls": [
-        "https://www.fantasysp.com/start/nfl/877573/justice-hill-or-konata-mumpfield",
-        "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-sleepers-puka-nacua-injury-opens-up-opportunity-for-konata-mumpfield-151749386.html",
-        "https://www.nytimes.com/athletic/7778835/2026/11/13/fantasy-football-matthew-stafford-browns-backfield-omar-cooper/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQZTyzO23xzOeocfqd2f38RBRISBkEComfPPTEMk4ZLBnGRT2yFRo89NzhMSc",
-      "image_credit": "FantasySP",
-      "news": [
-        {
-          "url": "https://www.fantasysp.com/start/nfl/877573/justice-hill-or-konata-mumpfield",
-          "title": "Justice Hill or Konata Mumpfield",
-          "publisher": "FantasySP",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQZTyzO23xzOeocfqd2f38RBRISBkEComfPPTEMk4ZLBnGRT2yFRo89NzhMSc"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-sleepers-puka-nacua-injury-opens-up-opportunity-for-konata-mumpfield-151749386.html",
-          "title": "Week 10 Fantasy Football Sleepers: Puka Nacua injury opens up opportunity for Konata Mumpfield",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrtrt6vBO-pN4SYhO0nVsyqknwAEO9jnE1p_NDbk9ryo7JhqfzWaUPdf2Yl0Q"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7778835/2026/11/13/fantasy-football-matthew-stafford-browns-backfield-omar-cooper/",
-          "title": "Deciphering fantasy football’s mystery-wrapped enigmas of Rams receivers, Browns RBs",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk1L3Z6tS7sYkdopvtDNw7StSa6RZNuuQhPATohvclngbe8f6tVExBApiOx9M"
-        }
-      ]
-    },
-    {
-      "query": "grey cup 2026",
+      "query": "cfl",
       "approx_searches": "200+",
-      "published_at": "2026-11-15T22:30:00Z",
+      "published_at": "2026-11-15T23:00:00Z",
       "related_news_urls": [
         "https://cfl.ca/article/canadian-linebackers-dublanko-cantin-arku-look-to-shine-at-the-113th-grey-cup",
         "https://www.tsn.ca/cfl/video/2026/11/15/elks-linebacker-joel-dublanko-visits-his-alberta-roots-ahead-of-the-grey-cup/",
@@ -252,107 +322,37 @@
       ]
     },
     {
-      "query": "panama vs curaçao",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T22:20:00Z",
+      "query": "ami nakai",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T22:50:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/cura-ao-vs-panama-lineups-224600859.html",
-        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-panama-v-curacao/blt6e711ea8d6f37c23",
-        "https://www.vavel.com/en-us/soccer/2026/11/15/1279320-panama-vs-curacao-live-score-concacaf-nations-league.html"
+        "https://www.nbcsports.com/olympics/news/skate-america-womens-short-program-2026",
+        "https://sports.yahoo.com/articles/ami-nakai-wins-saatva-skate-225408921.html",
+        "https://japannews.yomiuri.co.jp/sports/figure-skating/20261115-359051/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOjEupOQ5SfUpLIGEvOUII0QTl2hs1Xs4cn-LMQSmPnYbPJuAW8pmdvDs2Iow",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/cura-ao-vs-panama-lineups-224600859.html",
-          "title": "Curaçao vs. Panama Lineups, Live Streaming, How & Where to Watch on TV",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOjEupOQ5SfUpLIGEvOUII0QTl2hs1Xs4cn-LMQSmPnYbPJuAW8pmdvDs2Iow"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-panama-v-curacao/blt6e711ea8d6f37c23",
-          "title": "Watch Panama vs. Curacao live today: Who is broadcasting the match on TV and via live stream?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4igERgZwzw4gBHOoOMx3HBn0gPUUMKWp4jIl3-UXikG8Ud3z8kpGzEnl322M"
-        },
-        {
-          "url": "https://www.vavel.com/en-us/soccer/2026/11/15/1279320-panama-vs-curacao-live-score-concacaf-nations-league.html",
-          "title": "Panama vs Curaçao LIVE, Latest Score, Goals and Concacaf Nations League Updates",
-          "publisher": "VAVEL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1vZ3YpKR5BahLKsM4SNvH2FYLajnoItIAN0RfBER3x3W5OoBYVjqADhrjBSo"
-        }
-      ]
-    },
-    {
-      "query": "xavier smith",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T22:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/la-rams-sign-two-wide-043344304.html",
-        "https://ramblinfan.com/brennan-presley-gives-rams-much-needed-competition-kick-returner",
-        "https://www.rotowire.com/football/headlines/brennan-presley-news-signed-to-53-man-roster-647461"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcWrIAdTDZ1iLvliL2XOxPL3aS85urNiWyc9vMqD8wMQEntE52HX0IUOCi2Uw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/la-rams-sign-two-wide-043344304.html",
-          "title": "LA Rams Sign Two Wide Receivers Amid Major Puka Nacua News",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcWrIAdTDZ1iLvliL2XOxPL3aS85urNiWyc9vMqD8wMQEntE52HX0IUOCi2Uw"
-        },
-        {
-          "url": "https://ramblinfan.com/brennan-presley-gives-rams-much-needed-competition-kick-returner",
-          "title": "Brennan Presley gives Rams much-needed competition at kick returner",
-          "publisher": "Ramblin' Fan",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpnM6hW_Ay5HcvABXtMY-28d-E7OmgyyqlAP3TrmukPRtv7RdROWRBPLcbmhA"
-        },
-        {
-          "url": "https://www.rotowire.com/football/headlines/brennan-presley-news-signed-to-53-man-roster-647461",
-          "title": "Brennan Presley News: Signed to 53-man roster",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiDlhxxO9uRbDVCAw7Upkn8Wk4Npg0cWH3CURaVeGvIDNrrT60fm6gaRxuME4"
-        }
-      ]
-    },
-    {
-      "query": "mo bamba",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T22:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/uta-starts-george-peterson-green-bailey-bamba",
-        "https://www.rotowire.com/basketball/headlines/mo-bamba-news-starting-against-spurs-539286",
-        "https://www.cbssports.com/fantasy/basketball/news/jazzs-mo-bamba-starting-against-spurs/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScRucwrJScQT7oW-gK4a_q8cwyjFjzUb7WcxfAAY9u5F6dlcexXolsB6HqZM0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnrpyLSbar143ZTVDe7UubY_5ebxesETVZ_CjTeoXhR_O8U7cmNufTkuWHvsg",
       "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/uta-starts-george-peterson-green-bailey-bamba",
-          "title": "UTA starts George, Peterson, Green, Bailey, Bamba",
+          "url": "https://www.nbcsports.com/olympics/news/skate-america-womens-short-program-2026",
+          "title": "Ami Nakai leads at Saatva Skate America, eyes Grand Prix sweep",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScRucwrJScQT7oW-gK4a_q8cwyjFjzUb7WcxfAAY9u5F6dlcexXolsB6HqZM0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnrpyLSbar143ZTVDe7UubY_5ebxesETVZ_CjTeoXhR_O8U7cmNufTkuWHvsg"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/mo-bamba-news-starting-against-spurs-539286",
-          "title": "Mo Bamba News: Starting against Spurs",
-          "publisher": "RotoWire",
+          "url": "https://sports.yahoo.com/articles/ami-nakai-wins-saatva-skate-225408921.html",
+          "title": "Ami Nakai wins Saatva Skate America and moves atop women's figure skating ... for now",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToLAYu94lpFEk_OXJF7g5M25NPPCeTbkKwWMOp3On9qvXicsPy-X1zC7a6lrY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROk3OL54K8rdqQPv1MO9wfKjQmbujsykbpwGSSxL0Uo_h60qMeGTWjigLTQQ8"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/jazzs-mo-bamba-starting-against-spurs/",
-          "title": "Jazz's Mo Bamba: Starting against Spurs",
-          "publisher": "CBS Sports",
+          "url": "https://japannews.yomiuri.co.jp/sports/figure-skating/20261115-359051/",
+          "title": "Olympic Bronze Medalist Ami Nakai of Japan Leads After Short Program at Skate America",
+          "publisher": "The Japan News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIk1AKzw5Ruvo5_uSI8aSkWblGoY2Jgmc2zcKgmsJMPU4poXQ2i6y2aUUGmjk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Ty5k7edTo3GpNf7Au_6pBtFVM-ZFSvoD16H83TjKiv0MJQiD3ztMMpjVceo"
         }
       ]
     }
