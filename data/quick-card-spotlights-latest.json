@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-15T04:20:01.872459Z",
+  "checked_at": "2026-11-15T05:17:47.732110Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -705,17 +705,17 @@
     },
     "durable-knipex": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": []
     },
     "durable-wera": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": []
     },
     "durable-wiha": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.wihatools.com/account/login",
@@ -723,7 +723,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -732,7 +732,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -741,7 +741,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -750,7 +750,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -759,7 +759,7 @@
           "title": "158 piece Overlanding Kit in Rolling Tool Box",
           "kind": "product",
           "description": "Introducing the 158 Piece Industrial MRO Rolling Case Kit; a masterclass in tool storage, protection, and versatility. This premium case is custom molded to perfection, featuring custom foam tray compartments for each tool, ensuring they are securely held in p",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "1614.09",
@@ -775,7 +775,7 @@
           "title": "61 Piece GoBox MaxxTor Impact Bit Set",
           "kind": "product",
           "description": "The Wiha 61-Piece MaxxTor® Red GoBox Impact Bit Set delivers professional-grade durability, precision, and portability for high-torque impact driving applications. Engineered with Wiha’s signature MaxxTor® red energy-absorbing torsion zone, these 29mm impact b",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "41.98",
@@ -805,7 +805,7 @@
     },
     "durable-pb-swiss-tools": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
@@ -813,7 +813,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -822,7 +822,7 @@
           "title": "PB 6464",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -831,7 +831,7 @@
           "title": "PB 900 V01",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -840,7 +840,7 @@
           "title": "PB C6 192",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -849,7 +849,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -858,7 +858,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -867,7 +867,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -876,14 +876,14 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-snap-on": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.snapon.com/EN/Makers-and-Fixers",
@@ -891,14 +891,14 @@
           "title": "Snap-on Makers and Fixers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-lie-nielsen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
@@ -906,7 +906,7 @@
           "title": "Boggs Concave Spokeshave",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -915,7 +915,7 @@
           "title": "1-SP-Boggs-Con.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -924,7 +924,7 @@
           "title": "boggs-concave-2021-iso.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -933,7 +933,7 @@
           "title": "concave-boggs-spokeshave-2019.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -942,7 +942,7 @@
           "title": "Small Router Plane - Open Throat",
           "kind": "website",
           "description": "Small Router Plane Loosely based on the Stanley No. 271, these small Router Planes are perfect for shallow mortise and small relief work. The compact design makes it easy to guide along narrow edges and fit into tight spaces. 4\" long x 2\" wide O1 blade with 1/",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -951,7 +951,7 @@
           "title": "small-router-plane-ot-front.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -960,7 +960,7 @@
           "title": "small-router-plane-ot-iso-l.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -969,14 +969,14 @@
           "title": "small-router-plane-ot-iso-r.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-starrett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.starrett.com/",
@@ -984,7 +984,7 @@
           "title": "Premium Starrett micrometer resting on an American flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -993,7 +993,7 @@
           "title": "W4900 Animated Gif",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1002,7 +1002,7 @@
           "title": "Starrett Carbide Tipped Reciprocating Saw Blade",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1011,7 +1011,7 @@
           "title": "Starrett and Roush Yates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1020,7 +1020,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1029,7 +1029,7 @@
           "title": "HG Electronic Height Gages and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1038,7 +1038,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1047,14 +1047,14 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-mitutoyo": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.mitutoyo.com/services/calibration-repair/calibration-lab/",
@@ -1062,7 +1062,7 @@
           "title": "Mitutoyo Metrology Calibration Lab",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1071,7 +1071,7 @@
           "title": "precision measurement services",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1080,14 +1080,14 @@
           "title": "Coordinate Measuring Machines | Mitutoyo America Corporation",
           "kind": "website",
           "description": "Mitutoyo manufactures top-quality coordinate measuring machines (CMM) that lead the industry in precision. Find the perfect solution for you.",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-leatherman": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.leatherman.com/collections/bestsellers/products/skeletool-cx",
@@ -1095,7 +1095,7 @@
           "title": "Leatherman Skeletool Cx Aurora multitool open with pliers, knife blade, and bit driver visible.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1104,7 +1104,7 @@
           "title": "Nightshade Skeletool® CX multitool open to show pliers, knife blade, and bit driver.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1113,7 +1113,7 @@
           "title": "Leatherman Skeletool Cx multitool in Nocturnal color with open pliers, blade, and bit driver.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1122,7 +1122,7 @@
           "title": "Leatherman Skeletool CX multitool in OD Green, open to show pliers, knife blade, and bit driver.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1131,7 +1131,7 @@
           "title": "Leatherman Gift Card",
           "kind": "product",
           "description": "Leatherman's Digital Gift Card is perfect for any occasion. This e-gift card lets recipients pick their favorite products from our online store. Choose how you deliver — email right away, schedule for later, or send to yourself to pass along personally. Simple",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "10.0",
@@ -1146,7 +1146,7 @@
           "title": "Skeletool® CX",
           "kind": "product",
           "description": "The Leatherman Skeletool CX packs only the most essential features into a lightweight, portable design. It’s made for people who want serious function without carrying extra bulk. The premium 154CM stainless steel straight-edge blade has a great balance of cor",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.95",
@@ -1161,7 +1161,7 @@
           "title": "ARC®",
           "kind": "product",
           "description": "The ARC is our most advanced multi-tool, built to be both durable and easier to use. It features a MagnaCut steel blade that holds its edge longer and resists rust, making it perfect for both daily tasks and hard outdoor jobs. Every feature is outside-accessib",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "249.95",
@@ -1183,7 +1183,7 @@
     },
     "durable-victorinox": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.victorinox.com/en-US/",
@@ -1191,7 +1191,7 @@
           "title": "Victorinox (USA) | Victorinox Homepage",
           "kind": "website",
           "description": "Victorinox ✚ Makers of the Original Swiss Army Knife ✚ High quality products ✚ Watches, Cutlery, Travel Gear and Fragrances ✚ Order online now!",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1200,7 +1200,7 @@
           "title": "Swiss Army Knife™ & Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1209,7 +1209,7 @@
           "title": "CUTLERY",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1218,7 +1218,7 @@
           "title": "WATCHES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1227,13 +1227,13 @@
           "title": "Huntsman Year of the Goat 2027",
           "kind": "product",
           "description": "Swiss-made pocket knife with 16 functions and red Cellidor scales featuring exclusive Year of the Goat artwork. Limited to 8,888 individually numbered pieces worldwide and presented in a special gift box with certificate. Includes scissors, wood saw, screwdriv",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99",
             "currency": "USD",
             "evidence": "jsonld-offer",
-            "availability": "https://schema.org/InStock",
+            "availability": "",
             "valid_until": "9999-12-30T23:59:59+00:00"
           }
         },
@@ -1243,7 +1243,7 @@
           "title": "Swiss Army Knives / Pocket Knives from Victorinox | Victorinox (USA)",
           "kind": "website",
           "description": "Since 1897, the Swiss Army Knife has been a trusted tool of adventurers around the world. The Swiss Army Knife is the companion you can count on.",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1252,7 +1252,7 @@
           "title": "Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1261,14 +1261,14 @@
           "title": "Trades & Crafts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T23:17:37.817252Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-stabila": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T23:17:37.817252Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": []
     },
     "durable-klein-tools": {
@@ -5513,7 +5513,7 @@
     },
     "durable-mystery-ranch": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.mysteryranch.com/shipping-information",
@@ -5521,7 +5521,7 @@
           "title": "American flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5530,7 +5530,7 @@
           "title": "Fitting and Sizing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5539,7 +5539,7 @@
           "title": "Warranty and Repair",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5548,14 +5548,14 @@
           "title": "Backbone Scholarship",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-goruck": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.goruck.com/collections/bestsellers",
@@ -5563,7 +5563,7 @@
           "title": "A Basic Rucker backpack in gray, featuring a red patch, rests on concrete beside the bold, black stenciled words “FIGHT CLUB,” embodying the rugged essence of rucking with this pop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5572,7 +5572,7 @@
           "title": "A person with a backpack stands by a large American flag waving at sunset.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5581,7 +5581,7 @@
           "title": "Two men and two women wearing backpacks hike together outdoors.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5590,7 +5590,7 @@
           "title": "Five people with rucksacks walk together on a sandy beach under a blue sky with scattered clouds, enjoying a day of rucking and the comfort of the Rucker 5.0’s built-in lumbar supp",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5599,7 +5599,7 @@
           "title": "Tribe Membership",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "20.00",
@@ -5614,7 +5614,7 @@
           "title": "Tribe Membership",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "20.0",
@@ -5629,7 +5629,7 @@
           "title": "Rucker® 5.0 - 20L / Black + Orange",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "295.00",
@@ -5644,7 +5644,7 @@
           "title": "Rucker® 5.0 - 20L / Ranger Green + Orange",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "295.00",
@@ -5657,7 +5657,7 @@
     },
     "durable-red-wing-shoes": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.redwingshoes.com/mens/work/safety-toe/king-toe-02240.html?currency=USD",
@@ -5665,7 +5665,7 @@
           "title": "Go to King Toe® Men's 6-inch Waterproof Safety Toe Boot",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5674,7 +5674,7 @@
           "title": "Go to Hoodie with Sleeve Print Men's Hoodie in Black",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5683,7 +5683,7 @@
           "title": "Go to Traction Tred Lite Men's 6-inch Waterproof Safety Toe Boot",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5692,7 +5692,7 @@
           "title": "Go to Hoodie with Sleeve Print Men's Hoodie in Brown",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5717,7 +5717,7 @@
     },
     "durable-danner-boots": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.danner.com/",
@@ -5725,7 +5725,7 @@
           "title": "pair of work boots at a construction project",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5734,7 +5734,7 @@
           "title": "A hiker climbs rocky terrain with clouds and trees visible in the background below",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5743,7 +5743,7 @@
           "title": "A stylishly dressed person with a backpack casually slung over one shoulder and tidily tied boots sits on a weathered wooden bench on a sunny day, the scene suggests they feel prep",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5752,14 +5752,14 @@
           "title": "a worker climbs into a backhoe while wearing brown work boots",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-schott-nyc": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.schottnyc.com/blogs/journal/november-lookbook-the-forge-collection",
@@ -5767,7 +5767,7 @@
           "title": "ForgeCollection MenuImage",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5776,7 +5776,7 @@
           "title": "ReadyToRide Guide 2 Vertical 2.2",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5785,7 +5785,7 @@
           "title": "CabinCollection VertBadge 20681c68 f48e 489f 81c3 87df7b328419",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5794,7 +5794,7 @@
           "title": "A515 Navy",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5803,9 +5803,39 @@
           "title": "598 - Black / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
+        },
+        {
+          "url": "https://www.schottnyc.com/products/hbull-schott-bull-cap?variant=59540997112094",
+          "image": "https://www.schottnyc.com/cdn/shop/files/HBULL_02.jpg?v=1793987875&width=1920",
+          "title": "HBULL - Tan / ALL",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "34.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.schottnyc.com/products/hperf-schott-perfecto-cap?variant=59541000421662",
+          "image": "https://www.schottnyc.com/cdn/shop/files/HPERF_SID.jpg?v=1793987951&width=1920",
+          "title": "HPERF - Black / ALL",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "34.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
         },
         {
           "url": "https://www.schottnyc.com/products/jd1-jd1-type?variant=59932403138846",
@@ -5821,42 +5851,17 @@
             "evidence": "jsonld-offer",
             "availability": "http://schema.org/InStock"
           }
-        },
-        {
-          "url": "https://www.schottnyc.com/products/jd1-jd1-type?variant=59932403138846",
-          "image": "https://cdn.shopify.com/s/files/1/0905/5872/6430/files/JD1_BLK_020.jpg?v=1789648219",
-          "title": "JD1",
-          "kind": "product",
-          "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
-          "category": "Tactical, Environmental & Transport Systems",
-          "offer": null
-        },
-        {
-          "url": "https://www.schottnyc.com/products/8630-denim-western-work-jacket?variant=50375916323102",
-          "image": "https://www.schottnyc.com/cdn/shop/files/8630_IND_FRT.jpg?v=1777314189&width=1920",
-          "title": "8630 - Indigo / S",
-          "kind": "product",
-          "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
-          "category": "Tactical, Environmental & Transport Systems",
-          "offer": {
-            "price": "250.00",
-            "currency": "USD",
-            "evidence": "jsonld-offer",
-            "availability": "http://schema.org/InStock"
-          }
         }
       ]
     },
     "durable-nicks-boots": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": []
     },
     "durable-white-s-boots": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://whitesboots.com/collections/legacy-boots",
@@ -5864,7 +5869,7 @@
           "title": "White's Boots Shop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5873,7 +5878,7 @@
           "title": "White's Boots Shop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5882,7 +5887,7 @@
           "title": "White's Boots Shop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5891,7 +5896,7 @@
           "title": "White's Boots Shop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5900,7 +5905,7 @@
           "title": "CMP Chelsea",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "600.0",
@@ -5915,7 +5920,7 @@
           "title": "355 Cruiser - Dr. Sole",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "850.0",
@@ -5930,7 +5935,7 @@
           "title": "C350 Cruiser",
           "kind": "product",
           "description": "It spans across every Pacific Northwest trade—drivers, cruisers, miners, sportsmen, brakemen, and factory workers. Not surprisingly, it’s a boot that is built and worn for everyday wear, including days off. Thousands of workers have walked into our retail shop",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "675.0",
@@ -5943,12 +5948,12 @@
     },
     "durable-fjallraven": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": []
     },
     "durable-duluth-trading-co": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.duluthtrading.com/crazy-sale/?feature=slim-30offundersouter",
@@ -5956,7 +5961,7 @@
           "title": "Shop Early Black Friday Deals - 30% OFF Outerwear and Underwear",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5965,7 +5970,7 @@
           "title": "No Bull Guarantee",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5974,14 +5979,14 @@
           "title": "Superior Standard",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-hilleberg": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.hilleberg.com/eng",
@@ -5989,7 +5994,7 @@
           "title": "A Hilleberg tent next to the ocean",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5998,7 +6003,7 @@
           "title": "Inspirational image for All-season tents",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6007,7 +6012,7 @@
           "title": "Inspirational image for Snow-free/3-season tents",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6016,14 +6021,14 @@
           "title": "Inspirational image for Shelters",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-snow-peak": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.snowpeak.com/",
@@ -6031,7 +6036,7 @@
           "title": "Snow Peak USA - Japanese-Designed Camping Gear & Apparel",
           "kind": "website",
           "description": "Since 1958, Snow Peak has made Japanese-designed, lifetime-guaranteed camping gear and apparel that create restorative experiences in nature. Free shipping on orders $200+.",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6040,7 +6045,7 @@
           "title": "Titanium Aurora Bottle",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6049,7 +6054,7 @@
           "title": "Alpha Breeze Tent Set",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6058,7 +6063,7 @@
           "title": "Low Beach Chair",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6067,7 +6072,7 @@
           "title": "Titanium Aurora Bottle - Rainbow",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "139.95",
@@ -6082,7 +6087,7 @@
           "title": "Titanium Aurora Bottle - Pink",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -6092,7 +6097,7 @@
           "title": "Titanium Aurora Bottle - Titanium",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "99.95",
@@ -6107,7 +6112,7 @@
           "title": "Titanium Aurora Bottle - Blue",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "109.95",
@@ -6120,7 +6125,7 @@
     },
     "durable-stanley": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.stanley1913.com/",
@@ -6128,7 +6133,7 @@
           "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
           "kind": "website",
           "description": "Stanley PMI Online Store | Offers an assortment of Vacuum Bottles, Mugs, thermoses, Cookware and more!",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6137,7 +6142,7 @@
           "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6146,7 +6151,7 @@
           "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6155,7 +6160,7 @@
           "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6164,7 +6169,7 @@
           "title": "The Quencher® ProTour Flip Straw Tumbler | 40 OZ",
           "kind": "product",
           "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -6174,7 +6179,7 @@
           "title": "The Quencher® ProTour Flip Straw Tumbler | 40 OZ",
           "kind": "product",
           "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -6184,7 +6189,7 @@
           "title": "The Quencher® ProTour Flip Straw Tumbler | 40 OZ",
           "kind": "product",
           "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "45.0",
@@ -6200,7 +6205,7 @@
           "title": "The Quencher® ProTour Flip Straw Tumbler | 40 OZ",
           "kind": "product",
           "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "45.0",
@@ -6214,7 +6219,7 @@
     },
     "durable-klean-kanteen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T22:18:24.954288Z",
+      "attempted_at": "2026-11-15T05:17:47.732110Z",
       "items": [
         {
           "url": "https://www.kleankanteen.com/collections/top-sellers",
@@ -6222,7 +6227,7 @@
           "title": "Woman holding a steel water bottle with bamboo cap",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6231,7 +6236,7 @@
           "title": "Guy with purple coffee mug and laptop inside",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6240,7 +6245,7 @@
           "title": "Four Santa Cruz graphic pint cups on blue stone wall",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6249,7 +6254,7 @@
           "title": "Collection of winter seasonal graphics bottles and mugs on table in coffee shop with snowy window in background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6258,7 +6263,7 @@
           "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Brittany Blue",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "124.95",
@@ -6273,7 +6278,7 @@
           "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "124.95",
@@ -6288,7 +6293,7 @@
           "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Barely Blue",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -6298,7 +6303,7 @@
           "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Dusty Orchid",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T22:18:24.954288Z",
+          "checked_at": "2026-11-15T05:17:47.732110Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         }
