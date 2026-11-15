@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T19:31:15.846451Z",
+  "checked_at": "2026-11-15T20:01:28.920764Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "xavier worthy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T19:10:00Z",
+      "query": "josh downs",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-15T19:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/xavier-worthy-play-today-injury-104524385.html",
-        "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/09/andy-reid-reveals-timelines-on-injuries-to-multiple-kansas-city-chiefs-players/92694720007/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/xavier-worthy-hamstring-cleared-to-face-falcons"
+        "https://www.nfl.com/videos/josh-downs-muffed-punt-gets-his-chiefs-debut-off-to-an-inauspicious-start",
+        "https://www.chiefs.com/video/josh-downs-first-touchdown-as-a-kansas-city-chiefs-comes-on-back-shoulder-connection-with-patrick-mahomes",
+        "https://sports.yahoo.com/articles/chiefs-vs-falcons-wr-josh-193657573.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQz3C-i_Q0nM-QzoIhr_-MEhPt1q_T1iZDGtXcw2emWOz9-10vmfSdqloHKAWo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHE8RlKGnXfDlfZVIvXHpfWgKs_ZQvROWSsmJmMqdRpA5pSNOPYEEnwX9OZOk",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/videos/josh-downs-muffed-punt-gets-his-chiefs-debut-off-to-an-inauspicious-start",
+          "title": "Kansas City Chiefs wide receiver Josh Downs’ muffed punt gets his Chiefs debut off to an inauspicious start",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHE8RlKGnXfDlfZVIvXHpfWgKs_ZQvROWSsmJmMqdRpA5pSNOPYEEnwX9OZOk"
+        },
+        {
+          "url": "https://www.chiefs.com/video/josh-downs-first-touchdown-as-a-kansas-city-chiefs-comes-on-back-shoulder-connection-with-patrick-mahomes",
+          "title": "Josh Downs First Touchdown as a Kansas City Chief Comes on Back-Shoulder Connection with Patrick Mahomes",
+          "publisher": "Kansas City Chiefs",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuQA-ufRIRy4Ip8SQBMSCb9iJtHsV9CWZ5KyApu_UeDDOvisHmfQ1rjyxg9uc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/chiefs-vs-falcons-wr-josh-193657573.html",
+          "title": "Chiefs vs. Falcons: WR Josh Downs scores dazzling TD in Week 10",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeVZOw9D9dV2oJpnzH2QPvpBqfMAMvW5G2A1a2RB1cr_C_eIpcgKvtjMVByFs"
+        }
+      ]
+    },
+    {
+      "query": "madden movie",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T19:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
+        "https://www.indiewire.com/features/commentary/david-o-russell-madden-biopic-amazon-burying-nicolas-cage-film-1235224213/",
+        "https://www.yahoo.com/lifestyle/articles/nicolas-cage-gained-25-pounds-161030968.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQKoNtzzIqjf8mHlS-PmTm3FsMGu82uVVFtbjHgYTdoelTEHdD9MUavOPcd8",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
+          "title": "Nicolas Cage transformed ‘from within’ for ‘Madden,’ co-star Kathryn Hahn says",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQKoNtzzIqjf8mHlS-PmTm3FsMGu82uVVFtbjHgYTdoelTEHdD9MUavOPcd8"
+        },
+        {
+          "url": "https://www.indiewire.com/features/commentary/david-o-russell-madden-biopic-amazon-burying-nicolas-cage-film-1235224213/",
+          "title": "David O. Russell’s ‘Madden’ Biopic Is Out Next Week — Does Anybody Know or Care?",
+          "publisher": "IndieWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrTD0m-l71G58APTi3u20tomdzKAdzL1EOaFT7S8YR0DKzTSI-9RR8uQ0Oo3o"
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/articles/nicolas-cage-gained-25-pounds-161030968.html",
+          "title": "Nicolas Cage Gained 25 Pounds for His New Movie, but Now He's Using One Machine to Lose It",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD6QS4LG9jM5Jeb6bx3feHpbYf7dOju9whppEqDnGd3swBa1Rq5BGBsoNjFJo"
+        }
+      ]
+    },
+    {
+      "query": "john madden",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T19:40:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/video/138107026/",
+        "https://www.broadwayworld.com/bwwtv/article/Christian-Bale-Discusses-Playing-Al-Davis-in-MADDEN-20261113",
+        "https://www.yahoo.com/news/videos/christian-bale-talks-film-madden-085607557.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQOV460f0Lo2iOsYmcsemchxxXVKlOA2s17E64w6oBhE4DWBnJtClKKZJTro",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/video/138107026/",
+          "title": "Video Christian Bale talks new film 'Madden'",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQOV460f0Lo2iOsYmcsemchxxXVKlOA2s17E64w6oBhE4DWBnJtClKKZJTro"
+        },
+        {
+          "url": "https://www.broadwayworld.com/bwwtv/article/Christian-Bale-Discusses-Playing-Al-Davis-in-MADDEN-20261113",
+          "title": "Christian Bale Discusses Playing Al Davis in MADDEN",
+          "publisher": "BroadwayWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFXwf0Jx_jcYkd18RyUw8yjPoJCyPlfrNAikHLg0O16O5xjtD5gqatfxYD308"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/christian-bale-talks-film-madden-085607557.html",
+          "title": "Christian Bale talks new film 'Madden'",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH2L5YZNylldRbwSxjXg6TaB27J_WmpkECjqwXUhMS-AO9xGstmNnWc9UdYjg"
+        }
+      ]
+    },
+    {
+      "query": "brian flores",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T19:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/kevin-o-connell-receives-troubling-204307092.html",
+        "https://www.golongtd.com/p/a-viking-quarterback-odyssey",
+        "https://juddzulgad.substack.com/p/kirk-cousins-return-has-potential"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZjaXmkA2sLkX3HtpKsLT2JV0u-7ZSTdUT4B80VjJKWBMHvvEZcZXwCjFygWE",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/xavier-worthy-play-today-injury-104524385.html",
-          "title": "Will Xavier Worthy play today? Injury news, update for Chiefs WR",
+          "url": "https://sports.yahoo.com/articles/kevin-o-connell-receives-troubling-204307092.html",
+          "title": "Kevin O’Connell Receives Troubling Prediction About Vikings’ Future",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQz3C-i_Q0nM-QzoIhr_-MEhPt1q_T1iZDGtXcw2emWOz9-10vmfSdqloHKAWo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZjaXmkA2sLkX3HtpKsLT2JV0u-7ZSTdUT4B80VjJKWBMHvvEZcZXwCjFygWE"
         },
         {
-          "url": "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/09/andy-reid-reveals-timelines-on-injuries-to-multiple-kansas-city-chiefs-players/92694720007/",
-          "title": "Andy Reid reveals timelines on injuries to multiple Chiefs players",
-          "publisher": "Chiefs Wire",
+          "url": "https://www.golongtd.com/p/a-viking-quarterback-odyssey",
+          "title": "A Viking Quarterback Odyssey...",
+          "publisher": "Go Long | Tyler Dunne",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKe1aF34jUHR6nz82pQcmqnfuCMhz__iuCrB2acZjjyrRn7Z-fKbQcR6x2tDI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIn5AkHB54fZwQ8aQFyEZR4aAx0Xq1roFNRgtvWc8NWwJQ7VpeuM_8SBOjQAU"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/xavier-worthy-hamstring-cleared-to-face-falcons",
-          "title": "Xavier Worthy (hamstring) cleared to face Falcons",
-          "publisher": "NBC Sports",
+          "url": "https://juddzulgad.substack.com/p/kirk-cousins-return-has-potential",
+          "title": "Kirk Cousins’ return has potential to quiet Kevin O’Connell’s critics",
+          "publisher": "Substack",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5aLabbg2Kgu3A97hj65UC7BONwd9sERPXr1opOSyNTA-5V-M3MYfzEuBXFQg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhUIBbaSJMmJQ1IHw9N2luL0X5CadtbRHyLlHAwejm3HK4VIKuR0L5E8pvoHA"
         }
       ]
     },
     {
-      "query": "aaron jones",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T19:00:00Z",
+      "query": "martin short",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T19:40:00Z",
       "related_news_urls": [
-        "https://fantasyfootballcalculator.com/start/aaron-jones-sr.-or-emmett-johnson",
-        "https://dknetwork.draftkings.com/2026/11/09/aaron-jones-or-jordan-mason-fantasy-football-start-or-sit-advice-for-week-9/",
-        "https://www.fantasypros.com/nfl/notes/488548/aaron-jones-2026-week-9-outlook.php"
+        "https://www.nytimes.com/2026/11/13/style/steven-spielberg-moma-colbert-tom-cruise.html",
+        "https://www.cnn.com/2026/11/13/style/steven-spielberg-moma-film-benefit",
+        "https://www.the-independent.com/arts-entertainment/films/news/steve-martin-martin-short-trump-spielberg-b3084594.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6R_mth8ssp72q4nUNsx59_XJifSxHiEDsSCi-g7R1C6vHkunrOHKo2AH27PM",
-      "image_credit": "Fantasy Football Calculator",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH01KNXcuE3XKLI0YBCFS8n9a_cmq0m6xTZger9_7A96xrcc_V7xsl7dj4IUQ",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://fantasyfootballcalculator.com/start/aaron-jones-sr.-or-emmett-johnson",
-          "title": "Who Should I Start? Aaron Jones Sr. or Emmett Johnson",
-          "publisher": "Fantasy Football Calculator",
+          "url": "https://www.nytimes.com/2026/11/13/style/steven-spielberg-moma-colbert-tom-cruise.html",
+          "title": "Tom Cruise Leads the Love Fest for Steven Spielberg at MoMA",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6R_mth8ssp72q4nUNsx59_XJifSxHiEDsSCi-g7R1C6vHkunrOHKo2AH27PM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH01KNXcuE3XKLI0YBCFS8n9a_cmq0m6xTZger9_7A96xrcc_V7xsl7dj4IUQ"
         },
         {
-          "url": "https://dknetwork.draftkings.com/2026/11/09/aaron-jones-or-jordan-mason-fantasy-football-start-or-sit-advice-for-week-9/",
-          "title": "Aaron Jones or Jordan Mason: Fantasy Football Start or Sit Advice for Week 9",
-          "publisher": "DraftKings Network",
+          "url": "https://www.cnn.com/2026/11/13/style/steven-spielberg-moma-film-benefit",
+          "title": "‘Standing up here alone feels wrong’: Steven Spielberg honored at Museum of Modern Art Film Benefit",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTt34hQnN4PG8I5mQCU8d8-dikyFF3L9tUF5yNEJbkd2fwtAF00S73UDbrWg_M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJZw85EOCFLG3dEfuhp_EXP0Z-RwhXarXfbOURnJw86Z-qJljw2CU8mBLVFAM"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/notes/488548/aaron-jones-2026-week-9-outlook.php",
-          "title": "Aaron Jones Sr. Week 9 Outlook - Bills at Vikings",
-          "publisher": "FantasyPros",
+          "url": "https://www.the-independent.com/arts-entertainment/films/news/steve-martin-martin-short-trump-spielberg-b3084594.html",
+          "title": "Steve Martin and Martin Short jab at Trump while honoring Steven Spielberg",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdZQ0_lZvlEXT0Us374F83QvNt5id4kvnXwrxTACZJNHDdNNeghcKRtH5x7oc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQy_7aCf5OnROpN3Y7niRx4zutsNS6S7iro1HXGMTW5bcPdnzKtaQ1MwbOsAVQ"
         }
       ]
     },
     {
-      "query": "travis hunter",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T19:00:00Z",
+      "query": "missouri vs marquette",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T19:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50473666/atlanta-falcons-trade-deadline-jessie-bates-morale",
-        "https://www.jaguars.com/news/thursday-insider-i-look-at-it-as-a-blessing",
-        "https://www.fox5atlanta.com/video/fmc-f2awd1du9kur15fw"
+        "https://247sports.com/college/missouri/article/mizzou-basketball-tiger-tip-off-preview-marquette-292759986/",
+        "https://www.rockmnation.com/missouri-tigers-basketball/162969/mbb-preview-mizzou-faces-marquette-in-chi-town-showdown",
+        "https://sports.yahoo.com/articles/marquette-vs-missouri-game-updates-173041156.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdbk7iTH45iXLHuAnQLTJ-tPHIAHK0Yr7umFd_fYkgTc9cU9HopIMl_X6amrA",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZJbF_OAcsb30LLVVvAb2YCNpu0rNAWZndu_T1GgcWweLebjhdoAks-wLmZ7g",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/missouri/article/mizzou-basketball-tiger-tip-off-preview-marquette-292759986/",
+          "title": "Tiger Tip-Off Preview: Marquette",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZJbF_OAcsb30LLVVvAb2YCNpu0rNAWZndu_T1GgcWweLebjhdoAks-wLmZ7g"
+        },
+        {
+          "url": "https://www.rockmnation.com/missouri-tigers-basketball/162969/mbb-preview-mizzou-faces-marquette-in-chi-town-showdown",
+          "title": "MBB Preview: Mizzou Faces Marquette in Chi-Town Showdown",
+          "publisher": "Rock M Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLTKXbEqGm71naAWly_8vjHWlb_ugqz0CfzLM3tdBgNaPranm_qPkS6MlQA8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/marquette-vs-missouri-game-updates-173041156.html",
+          "title": "Marquette vs Missouri | Game updates, highlights from United Center",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhEC91CdnZQ8yH59rApnLrXhfBZ-EwDm3bQVldvZOZVZzJUQVTfPHmSoZ7k2w"
+        }
+      ]
+    },
+    {
+      "query": "jobe bellingham",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T19:40:00Z",
+      "related_news_urls": [
+        "https://www.sportbible.com/football/football-news/jobe-bellingham-england-ballon-dor-winners-717606-20261115",
+        "https://en.as.com/soccer/who-is-mark-bellingham-judes-father-scored-700-goals-and-seven-on-his-england-debut-at-50-f202611-n//",
+        "https://www.bdtonline.com/sports/national_sports/england-nations-league-soccer/image_7a73ef4c-69d1-5f73-ab6a-4eaf4db3c515.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRep2TPt5nZlLN0bigxW3M4MkK66d_wZLczj1Ilzdijb06KS8WkPtfI37T2paM",
+      "image_credit": "SPORTbible",
+      "news": [
+        {
+          "url": "https://www.sportbible.com/football/football-news/jobe-bellingham-england-ballon-dor-winners-717606-20261115",
+          "title": "England star Jobe Bellingham names every Ballon d'Or winner since 2000 in incredible video",
+          "publisher": "SPORTbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRep2TPt5nZlLN0bigxW3M4MkK66d_wZLczj1Ilzdijb06KS8WkPtfI37T2paM"
+        },
+        {
+          "url": "https://en.as.com/soccer/who-is-mark-bellingham-judes-father-scored-700-goals-and-seven-on-his-england-debut-at-50-f202611-n//",
+          "title": "Who is Mark Bellingham? Jude’s father scored 700 goals and seven on his England debut at 50",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKNSd6K2udeRUPKVQgnYInBpCkY5EBaWPYRLxftpqu4FFl1oL9XjQyOPM7KkU"
+        },
+        {
+          "url": "https://www.bdtonline.com/sports/national_sports/england-nations-league-soccer/image_7a73ef4c-69d1-5f73-ab6a-4eaf4db3c515.html",
+          "title": "England Nations League Soccer",
+          "publisher": "Bluefield Daily Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHXxuh9-DRr3MJWUFJg4XqAlnbOJBjR-GgK8zJUwqaX8kvPd58URmmHnfSdKM"
+        }
+      ]
+    },
+    {
+      "query": "demeco ryans",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T19:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/demeco-ryans-high-praise-texans-015451651.html",
+        "https://www.thefantasyfootballers.com/news/646785/kaimi-fairbairn-converts-three-fgas-in-win/",
+        "https://www.clevelandbrowns.com/news/browns-vs-texans-how-to-watch-listen-live-stream"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUQsDTOM4t6a4xIhF6fzsZaY4KUJpOlAxa8SQFEZ2XZ0FhV38HHNxiLApabg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/demeco-ryans-high-praise-texans-015451651.html",
+          "title": "DeMeco Ryans Has High Praise for Texans Kicker Ka'imi Fairbairn",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUQsDTOM4t6a4xIhF6fzsZaY4KUJpOlAxa8SQFEZ2XZ0FhV38HHNxiLApabg"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/646785/kaimi-fairbairn-converts-three-fgas-in-win/",
+          "title": "Ka'imi Fairbairn Converts three FGAs in win",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKzp6TkJvakmQFijG667pwT9zXwkR0WQVr51eYzaMmJ8X7Z8bwZKUwTQ3kDP0"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-vs-texans-how-to-watch-listen-live-stream",
+          "title": "Browns vs. Texans: How to Watch, Listen & Live Stream",
+          "publisher": "Cleveland Browns",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMnPXuujRCqQQOfgseTENzMHKtwqe2pgLFqpsxVoicUDUnt1KJAKp9MUS2r5M"
+        }
+      ]
+    },
+    {
+      "query": "tacko fall",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T19:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/tacko-fall-appreciates-love-76ers-161310502.html",
+        "https://sixerswire.usatoday.com/story/sports/nba/sixers/2026/11/14/jaylen-brown-gives-praise-to-sixers-two-way-big-man-tacko-fall/92757542007/",
+        "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/rZq332IeNmYV/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbo81quNLCKtNl86DalBQrHAxP44u1q8pw0Nm_vLL1Wvx9XH7f1k_deiZojas",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/tacko-fall-appreciates-love-76ers-161310502.html",
+          "title": "Tacko Fall Appreciates Love From 76ers Fans, But Thinks He’s Treated Like A ‘Make-A-Wish Kid’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbo81quNLCKtNl86DalBQrHAxP44u1q8pw0Nm_vLL1Wvx9XH7f1k_deiZojas"
+        },
+        {
+          "url": "https://sixerswire.usatoday.com/story/sports/nba/sixers/2026/11/14/jaylen-brown-gives-praise-to-sixers-two-way-big-man-tacko-fall/92757542007/",
+          "title": "Jaylen Brown gives praise to Sixers two-way big man Tacko Fall",
+          "publisher": "Sixers Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLuJLMBHwLoLp89R5gc1VXewr995x4tKMqLZkb7CKFl-s2c0d7W9MGXxdiV1g"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/rZq332IeNmYV/",
+          "title": "Wizards take late lead",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJNky1oUlDFfCUU28pANaa_--aRgZA8xgmMCUkFVr4HK_fwbQHUTTEBDL9EY"
+        }
+      ]
+    },
+    {
+      "query": "chiefs score today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T19:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50481210/sources-baseball-doctors-consulted-patrick-mahomes-elbow",
+        "https://bleacherreport.com/articles/25530811-patrick-mahomes-injury-evaluated-renowned-baseball-doctors-latest-nfl-rumors-chiefs-qb",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-news/216398/chiefs-news-chiefs-consult-mlb-doctors-mahomes-elbow"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCWRHVerkb_YrFSS6VuBTp_q1jsakgbTjp4DI4OvBGNJ8rIsvsKpBXRZXbPYs",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50473666/atlanta-falcons-trade-deadline-jessie-bates-morale",
-          "title": "Falcons insist winning still the goal despite trading Jessie Bates III",
+          "url": "https://www.espn.com/nfl/story/_/id/50481210/sources-baseball-doctors-consulted-patrick-mahomes-elbow",
+          "title": "Sources: Chiefs had renowned baseball doctors weigh in on Patrick Mahomes' elbow",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdbk7iTH45iXLHuAnQLTJ-tPHIAHK0Yr7umFd_fYkgTc9cU9HopIMl_X6amrA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCWRHVerkb_YrFSS6VuBTp_q1jsakgbTjp4DI4OvBGNJ8rIsvsKpBXRZXbPYs"
         },
         {
-          "url": "https://www.jaguars.com/news/thursday-insider-i-look-at-it-as-a-blessing",
-          "title": "Thursday Insider: \"I Look at It as a Blessing…\"",
-          "publisher": "Jacksonville Jaguars",
+          "url": "https://bleacherreport.com/articles/25530811-patrick-mahomes-injury-evaluated-renowned-baseball-doctors-latest-nfl-rumors-chiefs-qb",
+          "title": "Patrick Mahomes' Injury Evaluated by 'Renowned Baseball Doctors,' Latest NFL Rumors on Chiefs QB",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4mGqn0KaRiyBRSWstSz7G7zEEL-YNK1iMKKjh5nJ20A2H0Rc9kQACbQT2h7o"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVuZS44cQlkL7CzTiG_a_XC-Lvn0Scwr8emTBGh9SpLxxHh41E6-XMWLYQ4XE"
         },
         {
-          "url": "https://www.fox5atlanta.com/video/fmc-f2awd1du9kur15fw",
-          "title": "New-look Atlanta Falcons host Kansas City Chiefs before bye",
-          "publisher": "FOX 5 Atlanta",
+          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-news/216398/chiefs-news-chiefs-consult-mlb-doctors-mahomes-elbow",
+          "title": "Chiefs News: Chiefs consult MLB doctors about Mahomes’ elbow",
+          "publisher": "Arrowhead Pride",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCZ6BEYG8nRdQcFn6WzbNuKAJJxtH8A5ifx2L7-HDca7TlSV_4ZylS9l20_w"
-        }
-      ]
-    },
-    {
-      "query": "jerry jeudy",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T19:00:00Z",
-      "related_news_urls": [
-        "https://www.brownsnation.com/one-browns-rookie-just-got-the-call-hes-been-waiting-for/",
-        "https://www.brownszone.com/2026/11/13/notes-emmanuel-mcneil-warrens-time-to-shine-with-ronnie-hickman-ruled-out-with-concussion/",
-        "https://sports.yahoo.com/articles/browns-rookie-defender-faces-massive-014219878.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc-9ET0IoCMhG2H34ljmD5opjfpseHiN_RhBPvDBjH_nYhn_ApBls279_bdRA",
-      "image_credit": "Browns Nation",
-      "news": [
-        {
-          "url": "https://www.brownsnation.com/one-browns-rookie-just-got-the-call-hes-been-waiting-for/",
-          "title": "One Browns Rookie Just Got The Call He’s Been Waiting For",
-          "publisher": "Browns Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc-9ET0IoCMhG2H34ljmD5opjfpseHiN_RhBPvDBjH_nYhn_ApBls279_bdRA"
-        },
-        {
-          "url": "https://www.brownszone.com/2026/11/13/notes-emmanuel-mcneil-warrens-time-to-shine-with-ronnie-hickman-ruled-out-with-concussion/",
-          "title": "Notes: Emmanuel McNeil-Warren’s ‘time to shine’ with Ronnie Hickman ruled out with concussion",
-          "publisher": "BrownsZone with Scott Petrak -",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5_F3lKlP639W2DbclxhKSAj3SHducn_FNnl-l8_C3vmr6NQjwh8MPtpfd18c"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/browns-rookie-defender-faces-massive-014219878.html",
-          "title": "Browns Rookie Defender Faces Massive Opportunity Against Texans",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNhSthIk34dRIx9ABGSxlzVylfflf6OP-4tzISpLM5O2nf-LuwDlwh3o_5zyQ"
-        }
-      ]
-    },
-    {
-      "query": "quenton jackson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T19:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/pacers-good-news-aaron-nesmith-173432715.html",
-        "https://www.indystar.com/story/sports/nba/pacers/2026/11/14/andrew-nembhard-injury-update-pacers-guard-late-addition-to-injury-report/92789700007/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/ind-starts-jackson-nesmith-oubre-siakam-zubac"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqpEf2rrXo42PhoiEoFRR_YqOsFpHUTgDM38lBuTMwQowur9he9f_4WoXJN0Q",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/pacers-good-news-aaron-nesmith-173432715.html",
-          "title": "Pacers get good news on Aaron Nesmith, bad news on Andrew Nembhard ahead of 76ers game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqpEf2rrXo42PhoiEoFRR_YqOsFpHUTgDM38lBuTMwQowur9he9f_4WoXJN0Q"
-        },
-        {
-          "url": "https://www.indystar.com/story/sports/nba/pacers/2026/11/14/andrew-nembhard-injury-update-pacers-guard-late-addition-to-injury-report/92789700007/",
-          "title": "Pacers guard Andrew Nembhard late addition to injury report; what we know",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPu7Ibsiq-8aU5Wy2P-WjWF7w29-V2W-NfndEiDGAI2E3r9WfhQy-xoLg7F_Q"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/ind-starts-jackson-nesmith-oubre-siakam-zubac",
-          "title": "IND starts Jackson, Nesmith, Oubre, Siakam, Zubac",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6fDfPZDcvxJubzPHtJ1g44lUxYZMn7guSTHXGaNSNsGGQQSEUkx2cm19qHsc"
-        }
-      ]
-    },
-    {
-      "query": "tetairoa mcmillan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T19:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/fantasy-start-sit-tetairoa-mcmillan-150005838.html",
-        "https://www.footballguys.com/article/2026-cracking-fanduel-week-10",
-        "https://www.nbcsports.com/fantasy/football/news/week-10-best-and-worst-wr-te-matchups-jalen-coker-darren-waller-in-great-spot-vs-saints"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-X5kNUckrX5917fl1JEaj3xug0yGZWmGVcbhHfId-Q_IvGqq3-B0gUtARQlY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/fantasy-start-sit-tetairoa-mcmillan-150005838.html",
-          "title": "Fantasy Start or Sit: Tetairoa McMillan, Panthers D/ST, Darren Waller",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-X5kNUckrX5917fl1JEaj3xug0yGZWmGVcbhHfId-Q_IvGqq3-B0gUtARQlY"
-        },
-        {
-          "url": "https://www.footballguys.com/article/2026-cracking-fanduel-week-10",
-          "title": "Cracking FanDuel Week 10",
-          "publisher": "Footballguys",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJTEPjJTshvFSTnGxnndbj3souyGZxH13aY7vg_KHZ3aJtueRtagRjfEbc5Jc"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/news/week-10-best-and-worst-wr-te-matchups-jalen-coker-darren-waller-in-great-spot-vs-saints",
-          "title": "Week 10 Best and Worst WR, TE Matchups: Jalen Coker, Darren Waller in great spot vs. Saints",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQEPdZgww4xmm3df-sp7ms8T88mcqpW--ARdVL5l38SrWzWyg8HRnNm2O6vlM"
-        }
-      ]
-    },
-    {
-      "query": "pacers vs 76ers match player stats",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T19:00:00Z",
-      "related_news_urls": [
-        "https://www.covers.com/sport/basketball/nba/matchup/388722",
-        "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
-        "https://sports.betmgm.com/en/blog/ncaab/green-bay-st-thomas-prediction-odds-picks-nov-8-college-basketball-jaa/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQPuW-SroVLa4wTJdZeS_m7JNmzC0UutWKK7As2s8-f5JpXKUIYCfEUx9Nn5g",
-      "image_credit": "Covers.com",
-      "news": [
-        {
-          "url": "https://www.covers.com/sport/basketball/nba/matchup/388722",
-          "title": "Pacers vs 76ers Game Overview, Match Player Stats, Injuries, Records - NBA Game on November 15, 2026",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQPuW-SroVLa4wTJdZeS_m7JNmzC0UutWKK7As2s8-f5JpXKUIYCfEUx9Nn5g"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
-          "title": "Licensable picture: NCAA Mens Basketball 2026: Green Bay Vs St. Thomas NOV 08",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKQDQrKivrdmj3wD92p-mgS9xY11UHAvcnBZcvBL99sayVpd8CGB8NjiUUA5Y"
-        },
-        {
-          "url": "https://sports.betmgm.com/en/blog/ncaab/green-bay-st-thomas-prediction-odds-picks-nov-8-college-basketball-jaa/",
-          "title": "Green Bay vs St. Thomas Prediction, Odds & Best Bets Today – NCAAB, Nov. 8",
-          "publisher": "sports.betmgm.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNbDJpVAGEouB_Gx416W98HNYv73Fpryzse4qUgpR6QHrUPmevUm89dHohiI"
-        }
-      ]
-    },
-    {
-      "query": "france vs turkey",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T19:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cw30g3p6vd15t",
-        "https://sports.yahoo.com/articles/uefa-nations-league-olise-2-184500205.html",
-        "https://www.oregonlive.com/tv/2026/11/how-to-watch-france-vs-turkey-soccer-for-free-today-nations-league-live-stream-tv-channel-odds.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cw30g3p6vd15t",
-          "title": "France vs Turkey: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/uefa-nations-league-olise-2-184500205.html",
-          "title": "UEFA Nations League: Olise and 2. Bundesliga defender Kumbedi start for France against Türkiye",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS63dw3NnnHbQOxygrLoELY_pvoCo6NkDKuvOe-Di8rIwV0EnXjA4GZLhzAA-E"
-        },
-        {
-          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-france-vs-turkey-soccer-for-free-today-nations-league-live-stream-tv-channel-odds.html",
-          "title": "How to watch France vs. Turkey soccer for free today: Nations League live stream, TV channel, odds",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLj2kgVEEOnJqg-RBVrkuTaGeUStbh3aSkMLAgq6236JQ_oOaDxjDHET_3xPg"
-        }
-      ]
-    },
-    {
-      "query": "españa - inglaterra",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-15T18:50:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/euro/nota/_/id/17516819/espana-vs-inglaterra-alineaciones-nations-league",
-        "https://www.si.com/es-us/a-que-hora-es-el-partido-espana-vs-inglaterra-y-como-verlo-en-tv-y-streaming-online-15-11-2026",
-        "https://es-us.noticias.yahoo.com/deportes/espa%C3%B1a-inglaterra-zubimendi-toma-rodri-181700955.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg57PRz6QnHmAU7f_ewjK1zbiI0W7Ys87JOhn-rrD39h5uRkXmVwUUdgNMbuc",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/euro/nota/_/id/17516819/espana-vs-inglaterra-alineaciones-nations-league",
-          "title": "España vs Inglaterra: posibles alineaciones y probabilidades",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg57PRz6QnHmAU7f_ewjK1zbiI0W7Ys87JOhn-rrD39h5uRkXmVwUUdgNMbuc"
-        },
-        {
-          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-espana-vs-inglaterra-y-como-verlo-en-tv-y-streaming-online-15-11-2026",
-          "title": "¿A qué hora es el partido España vs Inglaterra y cómo verlo en TV y streaming online?",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR94PDhlAZw_jH03VacuRqnfLvY4oxe3nlF-khMzPS4UhnNOjZANdcA3O0BBIg"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/espa%C3%B1a-inglaterra-zubimendi-toma-rodri-181700955.html",
-          "title": "España-Inglaterra: Zubimendi toma el lugar de Rodri",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGn_aDg_eHwa6Pm2T5PGWi6KXJ2XLC1MbOHwQrUSODnRdLiPDf0uqWD8J6WFE"
-        }
-      ]
-    },
-    {
-      "query": "francia - turquía",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-15T18:50:00Z",
-      "related_news_urls": [
-        "https://www.marca.com/futbol/nations-league/2026/11/15/zidane-afronta-primera-final-pienso-fracaso.html",
-        "https://www.si.com/es-us/la-posible-alineacion-titular-de-francia-para-enfrentar-a-turquia",
-        "https://es-us.noticias.yahoo.com/deportes/mbappe-olise-pesadilla-portero-turqu%C3%ADa-140706766.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlWJaEe08N5QIofsx7olN7ZHPU8oLcw_cnxySyiWWf5OAPRoFshHxT190wyAQ",
-      "image_credit": "MARCA",
-      "news": [
-        {
-          "url": "https://www.marca.com/futbol/nations-league/2026/11/15/zidane-afronta-primera-final-pienso-fracaso.html",
-          "title": "Zidane afronta su primera 'final': \"No pienso en el fracaso\"",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlWJaEe08N5QIofsx7olN7ZHPU8oLcw_cnxySyiWWf5OAPRoFshHxT190wyAQ"
-        },
-        {
-          "url": "https://www.si.com/es-us/la-posible-alineacion-titular-de-francia-para-enfrentar-a-turquia",
-          "title": "La posible alineación titular de Francia para enfrentar a Turquía",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMsiCgcGHrPWWaIWic980s9sbkUFSmcqUul7wKyKvfRnTI90Uc6Fz0zmXvI8M"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/mbappe-olise-pesadilla-portero-turqu%C3%ADa-140706766.html",
-          "title": "¡Mbappe y Olise, una pesadilla! El portero de Turquía Berke Ozer admite que enfrentarse al dúo de talla mundial de Francia es una misión imposible",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXwN5nlOAgSXcC4BAop3-qhaDMrEAR6Eb7JwGjS7Psi5WjtLja3sGkiHCXhOU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWUDyh3949gEiM7YNUU34b-JhVci3Ct-ZzBETN5F-qF5MGqXAEAb35sx4hpCU"
         }
       ]
     }
