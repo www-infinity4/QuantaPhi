@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T01:01:17.516829Z",
+  "checked_at": "2026-11-15T01:31:17.012517Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "lane kiffin",
+      "query": "north texas vs utsa",
       "approx_searches": "1000+",
-      "published_at": "2026-11-15T00:40:00Z",
+      "published_at": "2026-11-15T01:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/landry-kiffin-shares-thoughts-lane-222329280.html",
-        "https://www.al.com/alabamafootball/2026/11/finebaum-kevin-costner-looked-like-a-fool-used-as-a-stage-prop-during-lsus-loss-to-alabama.html",
-        "https://swimsuit.si.com/fashion/olivia-dunne-game-day-look-lsu-bermuda-throwback"
+        "https://www.meangreennation.com/p/2026-the-utsa-preview",
+        "https://sports.yahoo.com/articles/north-texas-turns-zakye-barker-055528725.html",
+        "https://goutsa.com/news/2026/11/12/utsa-to-host-north-texas-in-key-american-conference-matchup"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOiePDTU4s0jVItHT6OmCfz314rFdLHEsxxS1ucV52W2XWjYSPX6tpng8I48",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ39R6a-cD8sm4B83NK5yzJpj3fEIxZ6ClT1tqwcrrIstV1TT2Or8NZKJ-8ZwU",
+      "image_credit": "Mean Green Nation",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/landry-kiffin-shares-thoughts-lane-222329280.html",
-          "title": "Landry Kiffin shares thoughts on Lane’s LSU pregame walkouts with celebrities",
+          "url": "https://www.meangreennation.com/p/2026-the-utsa-preview",
+          "title": "2026: The UTSA Preview",
+          "publisher": "Mean Green Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ39R6a-cD8sm4B83NK5yzJpj3fEIxZ6ClT1tqwcrrIstV1TT2Or8NZKJ-8ZwU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/north-texas-turns-zakye-barker-055528725.html",
+          "title": "North Texas turns to Zakye Barker to lead the way in key game against UTSA",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOiePDTU4s0jVItHT6OmCfz314rFdLHEsxxS1ucV52W2XWjYSPX6tpng8I48"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSERMuwXkx2ZlyF9pLVM1O3sSxlXlD84e6baNwD3Oq7lT79dployXcszbvO7eA"
         },
         {
-          "url": "https://www.al.com/alabamafootball/2026/11/finebaum-kevin-costner-looked-like-a-fool-used-as-a-stage-prop-during-lsus-loss-to-alabama.html",
-          "title": "Finebaum: Kevin Costner ‘looked like a fool,’ used as a ‘stage prop’ during LSU’s loss to Alabama",
-          "publisher": "AL.com",
+          "url": "https://goutsa.com/news/2026/11/12/utsa-to-host-north-texas-in-key-american-conference-matchup",
+          "title": "UTSA to host North Texas in key American Conference matchup",
+          "publisher": "UTSA Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpwih7i5j-Cax08azAqjO8k5R7wYNTxr0ox1aZesQGhzNHAkMhA06I6RZOZ6c"
-        },
-        {
-          "url": "https://swimsuit.si.com/fashion/olivia-dunne-game-day-look-lsu-bermuda-throwback",
-          "title": "Olivia Dunne’s Game-Day Look at LSU Is Bringing Us Back to Her SI Swimsuit Shoot in Bermuda",
-          "publisher": "Sports Illustrated Swimsuit",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1w07YCzOkJtInjC-IoQATYj4Wq8xLShvszzmfArL14sT5BziowRoZ0PPkC18"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgvYslEGXmOnLPoiROtcGG0pjQrXxZC0FPpXLeevwkJR1q3DAeIxC-13FjZe0"
         }
       ]
     },
     {
-      "query": "archie manning",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T00:40:00Z",
-      "related_news_urls": [
-        "https://www.tigerrag.com/the-manning-touch-in-tiger-stadium-will-it-hand-lsu-another-critical-loss-and-playoffs-exit/",
-        "https://wgno.com/sports/whats-going-on-in-sports-lsu-faces-arch-manning-saints-injuries-and-pelicans-spiraling/",
-        "https://www.andthevalleyshook.com/lsu-latest-news/55390/lsu-news-the-tigers-will-have-to-deal-with-arch-manning"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-v1xIaWL6Ftq6-_QaBGti7raTa-FXlJ1mRajID07AwUB_eyvr92kWgwdXWA",
-      "image_credit": "TigerRag.com |",
-      "news": [
-        {
-          "url": "https://www.tigerrag.com/the-manning-touch-in-tiger-stadium-will-it-hand-lsu-another-critical-loss-and-playoffs-exit/",
-          "title": "The MANNING TOUCH In Tiger Stadium: Will It Hand LSU Another Critical Loss And Playoffs Exit?",
-          "publisher": "TigerRag.com |",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-v1xIaWL6Ftq6-_QaBGti7raTa-FXlJ1mRajID07AwUB_eyvr92kWgwdXWA"
-        },
-        {
-          "url": "https://wgno.com/sports/whats-going-on-in-sports-lsu-faces-arch-manning-saints-injuries-and-pelicans-spiraling/",
-          "title": "What’s GoiNg On in Sports?: LSU faces Arch Manning, Saints injuries and Pelicans spiraling",
-          "publisher": "WGNO",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4ZQsWmLHWLh67it82-eGFbMdQ64JxFSkAmlJo9AUb4s1tfahXAAWRaegynmk"
-        },
-        {
-          "url": "https://www.andthevalleyshook.com/lsu-latest-news/55390/lsu-news-the-tigers-will-have-to-deal-with-arch-manning",
-          "title": "Tiger Tails: The Tigers will have to deal with Arch Manning",
-          "publisher": "And The Valley Shook",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Ap2-eqrAk6nuUa_lH5WFa8J65hIoCptTvPl9RoYxcAfjHwuJ4PBJCGr0X_Y"
-        }
-      ]
-    },
-    {
-      "query": "whit weeks",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T00:30:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/texas/article/texas-vs-lsu-injury-report-four-players-left-to-watch-heading-into-saturday--292650029/",
-        "https://www.burntorangenation.com/texas-longhorns-football/107205/hero-kanu-cole-hutson-texas-lsu-injury-report",
-        "https://sports.yahoo.com/articles/texas-lsu-injury-report-doesnt-200003320.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrzHNlmYqNT1uyqBb7VqkmHzRa4FhkeldT5AGUoxyazBgfWAmClOIx-y9FYbo",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/texas/article/texas-vs-lsu-injury-report-four-players-left-to-watch-heading-into-saturday--292650029/",
-          "title": "Texas vs LSU injury report: Four players left to watch heading into Saturday",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrzHNlmYqNT1uyqBb7VqkmHzRa4FhkeldT5AGUoxyazBgfWAmClOIx-y9FYbo"
-        },
-        {
-          "url": "https://www.burntorangenation.com/texas-longhorns-football/107205/hero-kanu-cole-hutson-texas-lsu-injury-report",
-          "title": "OL Cole Hutson, DT Hero Kanu removed from pregame Texas injury report",
-          "publisher": "Burnt Orange Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNi3lN_f_FLpwpJGGIf7SB3kcQtKxdrkX0p7A_PRxbegWDXOXDcR6uxSBF2oM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/texas-lsu-injury-report-doesnt-200003320.html",
-          "title": "What Texas-LSU Injury Report Doesn't Tell You About the Longhorns",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4QN4wvlY7pL2diF53OZ9uTQ1sM3D6nrPYvcOEV8QNRAmfdz326Pbl4lfb5ac"
-        }
-      ]
-    },
-    {
-      "query": "america vs red bulls",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T00:30:00Z",
-      "related_news_urls": [
-        "https://www.redbull.com/us-en/events/red-bull-new-york-vs-club-america",
-        "https://www.newyorkredbulls.com/news/match-preview-pres-by-toyota-red-bull-new-york-takes-on-club-america-in-friendly-on-saturday",
-        "https://www.fotmob.com/matches/red-bull-new-york-vs-cf-america/1f0kn7"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdcvdjYI8TjznKOqv5QLkhUviiA1Nwz6Xh5nUhGIrAmG3sAm_MrqmAC5ITQc",
-      "image_credit": "Red Bull",
-      "news": [
-        {
-          "url": "https://www.redbull.com/us-en/events/red-bull-new-york-vs-club-america",
-          "title": "Red Bull New York vs Club América 2026: watch live",
-          "publisher": "Red Bull",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdcvdjYI8TjznKOqv5QLkhUviiA1Nwz6Xh5nUhGIrAmG3sAm_MrqmAC5ITQc"
-        },
-        {
-          "url": "https://www.newyorkredbulls.com/news/match-preview-pres-by-toyota-red-bull-new-york-takes-on-club-america-in-friendly-on-saturday",
-          "title": "MATCH PREVIEW, pres. by Toyota: Red Bull New York Takes On Club América in Friendly on Saturday",
-          "publisher": "Red Bull New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgjqcb9RkxxKZwCS-Qs_lW6gB6UhFt41O2xY1z1BHq78GMTBbPKzlGiEFbSEE"
-        },
-        {
-          "url": "https://www.fotmob.com/matches/red-bull-new-york-vs-cf-america/1f0kn7",
-          "title": "NY Red Bulls vs América - live score, predicted lineups and H2H stats",
-          "publisher": "FotMob",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7XapH-9c-m86gmMPvVzPTaZWUHeIhmVu451TFQv5BHL-ZepqFiFvOO2M1OTg"
-        }
-      ]
-    },
-    {
-      "query": "rock and roll hall of fame 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T00:30:00Z",
-      "related_news_urls": [
-        "https://www.wkyc.com/article/entertainment/music/rock-hall/rock-and-roll-hall-of-fame-induction-ceremony-live-stream-video-2026-red-carpet/95-d5ad5491-784f-47d6-afb2-20394e1d999a",
-        "https://apnews.com/article/rock-hall-fame-wu-tang-billy-idol-c2c18055a9388a36658343b04492a79d",
-        "https://www.rollingstone.com/music/music-news/rock-and-roll-hall-of-fame-induction-ceremony-flights-1235658269/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT41d_GYoqSwe6DrRuqda3B9ol4D8d-ijNGnoR01KFgskmtOhI3scoLDqXt8ZE",
-      "image_credit": "WKYC",
-      "news": [
-        {
-          "url": "https://www.wkyc.com/article/entertainment/music/rock-hall/rock-and-roll-hall-of-fame-induction-ceremony-live-stream-video-2026-red-carpet/95-d5ad5491-784f-47d6-afb2-20394e1d999a",
-          "title": "Watch live coverage Saturday night: Rock and Roll Hall of Fame 2026 induction ceremony red carpet",
-          "publisher": "WKYC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT41d_GYoqSwe6DrRuqda3B9ol4D8d-ijNGnoR01KFgskmtOhI3scoLDqXt8ZE"
-        },
-        {
-          "url": "https://apnews.com/article/rock-hall-fame-wu-tang-billy-idol-c2c18055a9388a36658343b04492a79d",
-          "title": "The Rock & Roll Hall of Fame ceremony is this weekend. Who's getting in and who's showing up?",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5lwMLzZiioN89NvTceGhQXbRTB_mzPqXlSbDemerZlKghmeVZO-lym2OKqxs"
-        },
-        {
-          "url": "https://www.rollingstone.com/music/music-news/rock-and-roll-hall-of-fame-induction-ceremony-flights-1235658269/",
-          "title": "Rock & Roll Hall of Fame Induction Ceremony to Kick Off as Planned Amid FAA Grounding Flights Debacle",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlvMw3Fb93uiblCnAEBD0i79wWkW5WJ2qD6T03YCcUpUxha4zId0rXzEXxQXA"
-        }
-      ]
-    },
-    {
-      "query": "big ten network",
+      "query": "sharks vs mammoth",
       "approx_searches": "1000+",
-      "published_at": "2026-11-15T00:30:00Z",
+      "published_at": "2026-11-15T01:10:00Z",
       "related_news_urls": [
-        "https://purduesports.com/news/2026/11/13/purdue-wins-the-big-ten-tournament-championship",
-        "https://www.jconline.com/story/sports/college/purdue/2026/11/14/purdue-womens-soccer-big-ten-championship-michigan-state-score-jaiden-anderson/92729378007/"
+        "https://www.nhl.com/utah/news/utah-continues-homestand-hosts-san-jose-game-preview-11-14-26",
+        "https://sports.yahoo.com/articles/sharks-vs-mammoth-game-notes-222633740.html",
+        "https://www.nytimes.com/athletic/7781792/2026/11/14/sharks-vs-mammoth-stream-how-to-watch-nov-14/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXzNd-AYTkTmnluUMlF1q8NgqJK7ELrlMFNBjthuSM7enRCza_H4hjJVidk3s",
-      "image_credit": "Big Ten Conference",
-      "news": [
-        {
-          "url": "https://purduesports.com/news/2026/11/13/purdue-wins-the-big-ten-tournament-championship",
-          "title": "Purdue Wins the Big Ten Tournament Championship",
-          "publisher": "Purdue Boilermakers",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAschyAisD8cRxz97gxKiSqYlvXfYo6KgAd3BiCZstqwjZf0sqmzyzIUV0xtI"
-        },
-        {
-          "url": "https://www.jconline.com/story/sports/college/purdue/2026/11/14/purdue-womens-soccer-big-ten-championship-michigan-state-score-jaiden-anderson/92729378007/",
-          "title": "Cold weather can't cool off Purdue soccer on way to Big Ten Tournament title",
-          "publisher": "Journal & Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQR6jda06p6k0I_pcqz7SmQ3079RA6nG4Uisw1Fs1YTfU-1L2fhzHQpaWidSJU"
-        }
-      ]
-    },
-    {
-      "query": "new movies on netflix",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T00:30:00Z",
-      "related_news_urls": [
-        "https://www.netflix.com/tudum/articles/what-to-watch-on-netflix-november-13-2026",
-        "https://www.whats-on-netflix.com/whats-new/new-releases-on-netflix-this-week-and-top-10-movies-series-november-14-2026/",
-        "https://news.newonnetflix.info/news/stream-or-skip-heres-everything-added-to-netflix-uk-this-week-13th-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuLN0Edlg6jVio_dsQABWW81K0mHkfB0Gxyf_leDMB-53YBHXcLqB85d0qttQ",
-      "image_credit": "Netflix",
-      "news": [
-        {
-          "url": "https://www.netflix.com/tudum/articles/what-to-watch-on-netflix-november-13-2026",
-          "title": "From Guarding Stars to The Altruists : What to Watch on Netflix",
-          "publisher": "Netflix",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuLN0Edlg6jVio_dsQABWW81K0mHkfB0Gxyf_leDMB-53YBHXcLqB85d0qttQ"
-        },
-        {
-          "url": "https://www.whats-on-netflix.com/whats-new/new-releases-on-netflix-this-week-and-top-10-movies-series-november-14-2026/",
-          "title": "New Releases on Netflix This Week and Top 10 Movies & Series: November 14, 2026",
-          "publisher": "What's on Netflix",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYL6B9wDseXhG00Q_3ySYq0DSWosbvFgJcHLRMVJgQPQGqtTEgTbEpgg6qBh4"
-        },
-        {
-          "url": "https://news.newonnetflix.info/news/stream-or-skip-heres-everything-added-to-netflix-uk-this-week-13th-november-2026/",
-          "title": "Stream or Skip? Here’s Everything Added to Netflix UK This Week (13th November 2026)",
-          "publisher": "https://news.newonnetflix.info/",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxfyTXEjmruWKQIKJIbRLF5ADGE_bH30JyCps0uzQLcgAEeIXcTp64GVEYblE"
-        }
-      ]
-    },
-    {
-      "query": "texas state football",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T00:20:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/fresno-state/longformarticle/fresno-state-at-texas-state-preview-predictions-barkboard-and-friends-betting--292637650/",
-        "https://sports.yahoo.com/articles/texas-state-football-photos-bobcats-214049182.html",
-        "https://www.usatoday.com/sports/ncaaf/event/2026/2969525/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=4"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqK7U8ZQ7hoxoRVlmK1oZc75_cygaT6mbOLJ4jHUeCUew6_xEKfzMcK9N1bzo",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/fresno-state/longformarticle/fresno-state-at-texas-state-preview-predictions-barkboard-and-friends-betting--292637650/",
-          "title": "BarkBoard and Friends Predictions: Fresno State at Texas State",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqK7U8ZQ7hoxoRVlmK1oZc75_cygaT6mbOLJ4jHUeCUew6_xEKfzMcK9N1bzo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/texas-state-football-photos-bobcats-214049182.html",
-          "title": "Texas State football photos: The Bobcats take on Fresno State with a Pac-12 Championship berth on the line",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf4zJFrD5P3QUj_aKi9S5WBbMUpfNwz2F4R5vhWFZTnaOCFOEetVmNEqqoQBc"
-        },
-        {
-          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2969525/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=4",
-          "title": "Fresno State Bulldogs at Texas State Bobcats - NCAAF Game Summary - Nov 14, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_QNbwG3ek6DWzCcWJ6iDZsD2tW4ZLFVU0fIbKz5zr07yUUeBUS9NzQtVQiwo"
-        }
-      ]
-    },
-    {
-      "query": "jamaica - méxico",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-15T00:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/mexico-vs-jamaica-live-stream-214407323.html",
-        "https://www.winknews.com/sports/joshua-grant-returns-to-international-stage-announces-fc-naples-contract-extension/article_515200c3-f652-451b-ac06-cdd71a1affeb.html",
-        "https://www.marca.com/en/football/international-football/2026/11/13/armando-hormiga-gonzalez-is-challenging-rafael-marquez-s-decision-to-bench-him.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpTOXdGj4ZnJgxXa6HaOkC-N0-ZOazt8t0tnb19g2P1lz0Mx0hh6RYoBOj2ig",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/mexico-vs-jamaica-live-stream-214407323.html",
-          "title": "Mexico vs Jamaica live stream, start time, TV info for CONCACAF Nations League",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpTOXdGj4ZnJgxXa6HaOkC-N0-ZOazt8t0tnb19g2P1lz0Mx0hh6RYoBOj2ig"
-        },
-        {
-          "url": "https://www.winknews.com/sports/joshua-grant-returns-to-international-stage-announces-fc-naples-contract-extension/article_515200c3-f652-451b-ac06-cdd71a1affeb.html",
-          "title": "Joshua Grant returns to international stage, announces FC Naples contract extension",
-          "publisher": "WINK News - Southwest Florida",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7006HTQNtebBkQK0B33wQJoAU7XwnfixcjUaV2yVctDoEkDInS7XH0x_RM5o"
-        },
-        {
-          "url": "https://www.marca.com/en/football/international-football/2026/11/13/armando-hormiga-gonzalez-is-challenging-rafael-marquez-s-decision-to-bench-him.html",
-          "title": "Armando la ‘Hormiga’ González is challenging Rafael Márquez’s decision to bench him",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLCrcicqvnCJ3exoAiG9QGdZMAGpa_4NpftP5K9K1DWdxmnMhBp1Zl3xEMyps"
-        }
-      ]
-    },
-    {
-      "query": "sabres vs stars",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T00:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-dallas-stars-preview-lineup",
-        "https://www.dallasnews.com/sports/stars/article/nhl-how-to-watch-dallas-stars-buffalo-sabres-aac-22530060.php",
-        "https://www.audacy.com/wgr550/sports/sabres/sabres-looking-to-break-a-three-game-losing-streak"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu0ZkCV27eDRFT3SGZnnQGy1YkIivjOatlPDP452mVG6Jmq2Nx70qCtsvKzqo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2kqFsXD66tX9D59XHtRwCYyy1mwCC0CvZM6_7Ts3O0YdvegyHu-uuXZ10PDU",
       "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-dallas-stars-preview-lineup",
-          "title": "Sabres at Stars | How to watch, lineup notes, and storylines",
+          "url": "https://www.nhl.com/utah/news/utah-continues-homestand-hosts-san-jose-game-preview-11-14-26",
+          "title": "Utah Continues Homestand, Hosts San Jose",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu0ZkCV27eDRFT3SGZnnQGy1YkIivjOatlPDP452mVG6Jmq2Nx70qCtsvKzqo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2kqFsXD66tX9D59XHtRwCYyy1mwCC0CvZM6_7Ts3O0YdvegyHu-uuXZ10PDU"
         },
         {
-          "url": "https://www.dallasnews.com/sports/stars/article/nhl-how-to-watch-dallas-stars-buffalo-sabres-aac-22530060.php",
-          "title": "3 things to know about Stars-Sabres: Dallas looks to respond to worst loss of season",
-          "publisher": "Dallas News",
+          "url": "https://sports.yahoo.com/articles/sharks-vs-mammoth-game-notes-222633740.html",
+          "title": "Sharks vs Mammoth: Game Notes, Lines & More",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMVG3R5WZ5-nfrfdc8rYby_DXoe-B8Mjx1YNmjDyMJ7GBOSWuU5jqoPsJp-bs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixPKEjS0Ua-mpFN63Xb31Kqfg6lg6LUq1ZJc-g_JPq0IBwXBbX4N8ajJLSvU"
         },
         {
-          "url": "https://www.audacy.com/wgr550/sports/sabres/sabres-looking-to-break-a-three-game-losing-streak",
-          "title": "Sabres looking to break a three game losing streak",
-          "publisher": "Audacy",
+          "url": "https://www.nytimes.com/athletic/7781792/2026/11/14/sharks-vs-mammoth-stream-how-to-watch-nov-14/",
+          "title": "How to watch Sharks vs. Mammoth: TV channel and streaming options for November 14",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuub8whSYNg81zlsM2UeAP8J-X-ggE4cujDDFbP6vLnKx4LmidJDKo_tejqIw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_Vju41EpCr_bt7Ql09SdwIBM-wbcK6tpAZnNVPCNgF9eV8ArydRTMRpIKONM"
+        }
+      ]
+    },
+    {
+      "query": "vix",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T01:10:00Z",
+      "related_news_urls": [
+        "https://realinvestmentadvice.com/resources/blog/vix-spike-complacencys-bill-coming-due-what-happens-now/",
+        "https://qz.com/vix-spikes-history-causes",
+        "https://www.stocksbnb.com/reports/sp-500-forward-returns-following-vix-spike-stronger-rebounds-when-above-30/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4Eg8D9ZBidlC7psHLrXH1vd6hFjQYoXEY3aWSDu22fW8KyL9JRo8WQxMyt6w",
+      "image_credit": "Real Investment Advice",
+      "news": [
+        {
+          "url": "https://realinvestmentadvice.com/resources/blog/vix-spike-complacencys-bill-coming-due-what-happens-now/",
+          "title": "VIX Spike: Complacency’s Bill Coming Due. What Happens Now?",
+          "publisher": "Real Investment Advice",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4Eg8D9ZBidlC7psHLrXH1vd6hFjQYoXEY3aWSDu22fW8KyL9JRo8WQxMyt6w"
+        },
+        {
+          "url": "https://qz.com/vix-spikes-history-causes",
+          "title": "VIX spikes in history: 10 market panics and their causes",
+          "publisher": "qz.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQesEXkRtOH7hCAXyHepE4RxIpa0hkoxwbKadpWdQ0HHgYYfpD_2Sf3ahsN48Q"
+        },
+        {
+          "url": "https://www.stocksbnb.com/reports/sp-500-forward-returns-following-vix-spike-stronger-rebounds-when-above-30/",
+          "title": "S&P 500 forward returns following VIX spike – Stronger rebounds when above 30",
+          "publisher": "StocksBNB",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNJxnBZLtY6XFcfxwQrYX0oUoRFox3kfB8vpam3EYn8xrV1v9LWxmSfWrUqLs"
+        }
+      ]
+    },
+    {
+      "query": "jeremiah fears",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T01:10:00Z",
+      "related_news_urls": [
+        "https://www.hoopsrumors.com/2026/11/injury-notes-missi-murphy-barnes-leonard-christie-penda-more.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/nor-starting-fears-herb-bey-zion-missi",
+        "https://sports.yahoo.com/articles/yves-missi-playing-tonight-pelicans-202304834.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsIXqD-kOrXtNLcdo-FIE7884Adz3RQIlpqjUYkV0aVIGijEC1u7hVCuOfMGE",
+      "image_credit": "Hoops Rumors",
+      "news": [
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/injury-notes-missi-murphy-barnes-leonard-christie-penda-more.html",
+          "title": "Injury Notes: Missi, Murphy, Barnes, Leonard, Christie, Penda, More",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsIXqD-kOrXtNLcdo-FIE7884Adz3RQIlpqjUYkV0aVIGijEC1u7hVCuOfMGE"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/nor-starting-fears-herb-bey-zion-missi",
+          "title": "NOR starting Fears, Herb, Bey, Zion, Missi",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSISHno0gwknOujSC0yPgNSTdiXDUbF9i8Msn3elMZZlclL6fh4ZyE4IShmtqg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/yves-missi-playing-tonight-pelicans-202304834.html",
+          "title": "Is Yves Missi playing tonight? Pelicans vs. Nuggets injury report",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK0RvLLFA6w4VLS0jSUep8OkoCaaz_kRxXxpAlAdJeFJzI4BQ5N2cJ8ludox0"
+        }
+      ]
+    },
+    {
+      "query": "hillary clinton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T01:10:00Z",
+      "related_news_urls": [
+        "https://www.ms.now/opinion/lauren-boebert-election-loss-maga-women",
+        "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
+        "https://www.theguardian.com/us-news/2026/nov/13/trump-maga-lauren-boebert-colorado"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROOrukPUnu8u9shOXtixe_D2nFlUk1FSKEkbDxrCZM0CxQeBdiOBu1Y7SbO5s",
+      "image_credit": "MS NOW",
+      "news": [
+        {
+          "url": "https://www.ms.now/opinion/lauren-boebert-election-loss-maga-women",
+          "title": "Opinion | Lauren Boebert’s loss caps a grim year for MAGA women",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROOrukPUnu8u9shOXtixe_D2nFlUk1FSKEkbDxrCZM0CxQeBdiOBu1Y7SbO5s"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
+          "title": "Meet Eileen Laubacher, the Navy Veteran Who Beat Lauren Boebert",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpnrE3ukGf16a45yNl80xUYGFisk-_GYoFMrwgaRe8muZfA4ygX0I5C8AxsQ"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/13/trump-maga-lauren-boebert-colorado",
+          "title": "Trump-backed Maga firebrand Lauren Boebert defeated in Colorado congressional race",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3ozkFEDpr_WO1uhljjUOdY65p4K8sR8X2rgNCED83CK1ZpE9AlywfP8FpN_0"
+        }
+      ]
+    },
+    {
+      "query": "gilberto mora",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T01:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/gilberto-mora-wear-number-shirt-005200093.html",
+        "https://www.soyfutbol.com/en/news/rafa-marquez-sets-the-record-straight-with-alexis-vega-and-shares-heartwarming-moment-with-gilberto-mora-20261113-0050.html",
+        "https://en.as.com/soccer/wholl-be-rafa-marquezs-mexico-no-10-f202611-n/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1qzRrZgy4gdhejD_kMS44y33xy54fgc-WatvfTdlSRqPvAA2-oW0p-DWu-Xk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/gilberto-mora-wear-number-shirt-005200093.html",
+          "title": "Gilberto Mora to wear the number 🔟 shirt for Mexico",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1qzRrZgy4gdhejD_kMS44y33xy54fgc-WatvfTdlSRqPvAA2-oW0p-DWu-Xk"
+        },
+        {
+          "url": "https://www.soyfutbol.com/en/news/rafa-marquez-sets-the-record-straight-with-alexis-vega-and-shares-heartwarming-moment-with-gilberto-mora-20261113-0050.html",
+          "title": "Rafa Márquez Sets the Record Straight with Alexis Vega and Shares Heartwarming Moment with Gilberto Mora",
+          "publisher": "Soy Futbol",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2Jy93thg9J1MIaC2qKQV8j0zXrfUKCX1OrFyEGy0sc9NavzDQbZaVXuugBYo"
+        },
+        {
+          "url": "https://en.as.com/soccer/wholl-be-rafa-marquezs-mexico-no-10-f202611-n/",
+          "title": "Who’ll be Rafa Márquez’s Mexico No. 10?",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7wc8nTVImTzEwJCAaRlyvC0WSNaFXjaeSY7VN4IMTHFMKVavKmQ94XA-8Az8"
+        }
+      ]
+    },
+    {
+      "query": "keke palmer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T01:10:00Z",
+      "related_news_urls": [
+        "https://www.whowhatwear.com/fashion/red-carpet/amazon-fashion-cfda-awards-red-carpet-trends-2026",
+        "https://www.elle.com/culture/celebrities/a74316037/hailey-bieber-red-carpet-photos-cfda-fashion-awards-2026/",
+        "https://www.businessinsider.com/cfda-fashion-awards-best-worst-outfits-2026-11"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ_ZHXOYf0eoPXJRhc54y3RNaST99I_YRy61YHuSDvY_LdL2zPgrd5ch-tca4",
+      "image_credit": "Who What Wear",
+      "news": [
+        {
+          "url": "https://www.whowhatwear.com/fashion/red-carpet/amazon-fashion-cfda-awards-red-carpet-trends-2026",
+          "title": "Feathers! Fringe! 6 Trends the 2026 CFDA Fashion Awards Red Carpet Delighted Us With",
+          "publisher": "Who What Wear",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ_ZHXOYf0eoPXJRhc54y3RNaST99I_YRy61YHuSDvY_LdL2zPgrd5ch-tca4"
+        },
+        {
+          "url": "https://www.elle.com/culture/celebrities/a74316037/hailey-bieber-red-carpet-photos-cfda-fashion-awards-2026/",
+          "title": "Hailey Bieber’s Gold Saint Laurent Look at the CFDA Fashion Awards Is Actually Not a Dress",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0UKUaV2p8xqw9R9DUSzoQ2eCMuThd3kQBcv4WUKty19_BIuQfRxoMBHjEpFc"
+        },
+        {
+          "url": "https://www.businessinsider.com/cfda-fashion-awards-best-worst-outfits-2026-11",
+          "title": "5 of the best and 3 of the worst looks at the 2026 CFDA Fashion Awards",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhv2jucaLt9qHQdwNKfhSsx2y954c_W689sa10agpMX0MpMshY7cJbhQ-IdvI"
+        }
+      ]
+    },
+    {
+      "query": "jackson harris",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T01:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/lsu-football-nfl-draft-stock-033000399.html",
+        "https://www.andthevalleyshook.com/lsu-tigers-football/55091/lsu-footballs-nfl-draft-stock-first-round-landing-spots",
+        "https://www.andthevalleyshook.com/lsu-tigers-football/55373/lsu-footballs-nfl-draft-stock-entering-week-11"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZh7dBpUSEqaDw1Sd0CEz_GEKCDaaEXi14gGU_0Li7KdRh00mEIk5cWoOa35E",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/lsu-football-nfl-draft-stock-033000399.html",
+          "title": "LSU Football’s NFL Draft Stock: Entering Week 11",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZh7dBpUSEqaDw1Sd0CEz_GEKCDaaEXi14gGU_0Li7KdRh00mEIk5cWoOa35E"
+        },
+        {
+          "url": "https://www.andthevalleyshook.com/lsu-tigers-football/55091/lsu-footballs-nfl-draft-stock-first-round-landing-spots",
+          "title": "LSU Football’s NFL Draft Stock: First-round landing spots",
+          "publisher": "And The Valley Shook",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzbBOmmd0t88L8581n6QDfluTCbSuDySRNzsThnDb-qVFIp8SVXZZk8uhQHHA"
+        },
+        {
+          "url": "https://www.andthevalleyshook.com/lsu-tigers-football/55373/lsu-footballs-nfl-draft-stock-entering-week-11",
+          "title": "LSU Football’s NFL Draft Stock: Entering Week 11",
+          "publisher": "And The Valley Shook",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBG8g5l5wDOFhPKX4D1wPcyGpvEARK9V0AU3Cci030eWIllpBPpsZlg7DS-0w"
+        }
+      ]
+    },
+    {
+      "query": "ewan mcgregor",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T01:10:00Z",
+      "related_news_urls": [
+        "https://people.com/ewan-mcgregor-daughter-clara-recalls-him-telling-her-its-f-ing-tough-out-there-when-she-said-she-wanted-to-be-actress-12254800",
+        "https://parade.com/news/ewan-mcgregors-daughter-recalls-his-tough-warning-about-trying-to-make-it-in-hollywood",
+        "https://www.vanityfair.com/story/claire-danes-ewan-mcgregor-the-spot-show"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNS1LKZatPj6UnOsP7U0IPXdpdQlEQRGhuJPn89mC9oy7jST6AaKJ6XBjVSro",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/ewan-mcgregor-daughter-clara-recalls-him-telling-her-its-f-ing-tough-out-there-when-she-said-she-wanted-to-be-actress-12254800",
+          "title": "Ewan McGregor’s Daughter Clara Reveals His Blunt Response to News She Wanted to Be an Actress",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNS1LKZatPj6UnOsP7U0IPXdpdQlEQRGhuJPn89mC9oy7jST6AaKJ6XBjVSro"
+        },
+        {
+          "url": "https://parade.com/news/ewan-mcgregors-daughter-recalls-his-tough-warning-about-trying-to-make-it-in-hollywood",
+          "title": "Ewan McGregor’s Daughter Recalls His ‘Tough’ Warning About Trying to Make It in Hollywood",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc8E_7AMaHtqkmjHs90yguC6b_BxL-cyvf3siJTP9-1YyRBb6brZc0OvO5rTw"
+        },
+        {
+          "url": "https://www.vanityfair.com/story/claire-danes-ewan-mcgregor-the-spot-show",
+          "title": "In ‘The Spot,’ Claire Danes Trades the Whodunit for a “Did I Do It?”",
+          "publisher": "Vanity Fair",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjxnaXHb1mluKsHpKh_1Se8N6UQu9U-TBC30dWCdZtZdxZP_y_3jpZ-xDiSoE"
+        }
+      ]
+    },
+    {
+      "query": "denver nuggets vs new orleans pelicans match player stats",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T01:10:00Z",
+      "related_news_urls": [
+        "https://www.covers.com/sport/basketball/nba/matchup/388216",
+        "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
+        "https://sports.betmgm.com/en/blog/ncaab/green-bay-st-thomas-prediction-odds-picks-nov-8-college-basketball-jaa/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmQUjSqjfXuWClUNdNKWBTSehoGyfQfwptqzZA0uBfcP2h_7zq8CiFTMCRFio",
+      "image_credit": "Covers.com",
+      "news": [
+        {
+          "url": "https://www.covers.com/sport/basketball/nba/matchup/388216",
+          "title": "Grizzlies vs Pelicans Game Overview, Match Player Stats, Injuries, Records - NBA Game on November 13, 2026",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmQUjSqjfXuWClUNdNKWBTSehoGyfQfwptqzZA0uBfcP2h_7zq8CiFTMCRFio"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
+          "title": "Licensable picture: NCAA Mens Basketball 2026: Green Bay Vs St. Thomas NOV 08",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKQDQrKivrdmj3wD92p-mgS9xY11UHAvcnBZcvBL99sayVpd8CGB8NjiUUA5Y"
+        },
+        {
+          "url": "https://sports.betmgm.com/en/blog/ncaab/green-bay-st-thomas-prediction-odds-picks-nov-8-college-basketball-jaa/",
+          "title": "Green Bay vs St. Thomas Prediction, Odds & Best Bets Today – NCAAB, Nov. 8",
+          "publisher": "sports.betmgm.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNbDJpVAGEouB_Gx416W98HNYv73Fpryzse4qUgpR6QHrUPmevUm89dHohiI"
         }
       ]
     }
