@@ -3,6 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {DatabaseSync} from 'node:sqlite';
 import test from 'node:test';
 import {completeMeCommand, completeMeProject, startCompleteMe} from '../bubbles-complete-me.mjs';
+import {githubOperation} from '../workers/infinity-brain-clock/direct-github.mjs';
 
 const repository = 'www-infinity4/QuantaPhi';
 const sourceSha = 'a'.repeat(40);
@@ -40,7 +41,7 @@ test('requires one scoped repository and validated source before creating any jo
 test('distinct Complete Me goals get separate stable project IDs, while retries reuse one',async()=>{
  const ids=[];
  const request=async(path,body)=>{
-  if(path==='/work/github/read')return {ok:true,repository,headSha:sourceSha};
+  if(path==='/work/github/read')return {ok:true,repository,canonicalRepository:repository,headSha:sourceSha};
   assert.equal(path,'/work/tickets/create');
   ids.push(body.context.submission_id);
   return {ok:true,ticket:{id:'IW-20261113-ABCD1234',repository,context:body.context},
@@ -94,7 +95,11 @@ test('the existing owner intake saves one project and the signed runner resumes 
   const env = {WORK_DB: db, WRITER_OWNER_HASH: ownerHash, CLOCK: {idFromName: () => 'owner', get: () => ({
     fetch: async (url, init) => {
       if (url.endsWith('/owner/session-check')) return Response.json({ok: auth && JSON.parse(init.body).token === token});
-      if (url.endsWith('/github/read')) return Response.json({ok: true, repository, headSha: repositoryHead});
+      if (url.endsWith('/github/read')) {
+        const result = await githubOperation({GITHUB_TOKEN: 'fixture-token'}, JSON.parse(init.body), async url =>
+          Response.json(url.includes('/git/ref/heads/') ? {object: {sha: repositoryHead}} : {full_name: repository, default_branch: 'main'}));
+        return Response.json(result);
+      }
       return clock.fetch(new Request(url, init));
     },
   })}};
@@ -148,6 +153,10 @@ test('the existing owner intake saves one project and the signed runner resumes 
   assert.equal(repeated.project.ticketId, id);
   assert.equal(repeated.project.sourceSha, sourceSha);
   assert.equal(repeated.deduplicated, true);
+  const lowercased = await startCompleteMe({...project, repository: repository.toLowerCase()}, browser);
+  assert.equal(lowercased.project.ticketId, id, 'GitHub casing does not create another project');
+  assert.equal(lowercased.project.repository, repository);
+  assert.equal(count(), 1);
   assert.equal(dispatches, 1);
   await assert.rejects(startCompleteMe({...project, second: 'A different second scope'}, browser), /already|scope/i);
   assert.equal((await claim('43')).lease, null, 'the live lease survives the worker restart');

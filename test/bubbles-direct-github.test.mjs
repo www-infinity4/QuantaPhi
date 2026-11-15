@@ -57,6 +57,19 @@ test('missing server credential reports a blocker without making a network call'
  const result=await githubOperation({}, {repository,action:'capabilities'},()=>{throw Error('unexpected network')});
  assert.equal(result.error,'github_runtime_credential_missing');assert.equal(result.capabilities.push,false);
 });
+test('source read reports the canonical GitHub name without changing the requested repository field',async()=>{
+ const requested='www-infinity4/quantaphi';
+ const fetchSource=async (url,options)=>{
+  assert.equal(options.method,'GET');
+  if(url.endsWith('/git/ref/heads/main'))return Response.json({object:{sha}});
+  assert.equal(url,'https://api.github.com/repos/'+requested);
+  return Response.json({default_branch:'main',full_name:repository});
+ };
+ const result=await githubOperation({GITHUB_TOKEN:'fixture-token'},{repository:requested,action:'read_repository'},fetchSource);
+ assert.equal(result.repository,requested);
+ assert.equal(result.canonicalRepository,repository);
+ assert.equal(result.headSha,sha);
+});
 test('repository scope, paths and branch changes are enforced before writes',async()=>{
  await assert.rejects(githubOperation({GITHUB_TOKEN:'test'}, {repository:'other/repo',action:'read_repository'}),/explicit_owner_repository/);
  await assert.rejects(githubOperation({GITHUB_TOKEN:'test'}, {repository,action:'read_file',ref:sha,path:'../secret'}),/invalid_repository_path/);
