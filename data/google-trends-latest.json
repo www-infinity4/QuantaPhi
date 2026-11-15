@@ -3,21 +3,203 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T05:31:22.051029Z",
+  "checked_at": "2026-11-15T06:01:28.405254Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "anthony joshua",
+      "query": "colin jost",
       "approx_searches": "200+",
+      "published_at": "2026-11-15T05:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/scarlett-johansson-makes-candid-admission-230000813.html",
+        "https://pagesix.com/2026/11/12/celebrity-news/scarlett-johansson-reveals-who-wears-the-pants-in-colin-jost-marriage/",
+        "https://www.thedailybeast.com/obsessed/scarlett-johansson-shares-new-insight-into-marriage-with-snl-star-colin-jost"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ81HkCsUNtgGoOlKPs_zde76I_PIORAx9rChcTAy7Ba_4QIT0Avi5DOOWOvXc",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/scarlett-johansson-makes-candid-admission-230000813.html",
+          "title": "Scarlett Johansson Makes Candid Admission About Being In Charge In Her Marriage With ‘SNL’ Star Colin Jost",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ81HkCsUNtgGoOlKPs_zde76I_PIORAx9rChcTAy7Ba_4QIT0Avi5DOOWOvXc"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/12/celebrity-news/scarlett-johansson-reveals-who-wears-the-pants-in-colin-jost-marriage/",
+          "title": "Scarlett Johansson reveals who really wears the pants at home with husband Colin Jost",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYnm_jKYDcxMWOs3V2KY7PaDHgYWHefepgoxZ9n4Rr0nEdwiaS9ssSrMD29js"
+        },
+        {
+          "url": "https://www.thedailybeast.com/obsessed/scarlett-johansson-shares-new-insight-into-marriage-with-snl-star-colin-jost",
+          "title": "A-Lister Shares New Insight Into Marriage With ‘SNL’ Star",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeWqfTLx0KEEcdWt1OfYa115i8EOBIsXGHhGPuAzdQCx6jza7aH-Cp9TTRT1g"
+        }
+      ]
+    },
+    {
+      "query": "snl cast",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T05:30:00Z",
+      "related_news_urls": [
+        "https://www.nbc.com/nbc-insider/snl-tonight-november-14-host-musical-guest-new",
+        "https://www.imdb.com/news/ni66111720/?ref_=nwc_art_perm",
+        "https://mashable.com/entertainment/john-mulaney-phoebe-bridgers-snl-promo-roast"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0",
+      "image_credit": "NBC TV",
+      "news": [
+        {
+          "url": "https://www.nbc.com/nbc-insider/snl-tonight-november-14-host-musical-guest-new",
+          "title": "Is SNL New Tonight, November 14, 2026? About This Week's Host & Musical Guest",
+          "publisher": "NBC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66111720/?ref_=nwc_art_perm",
+          "title": "Is ‘SNL’ New Tonight, November 14? John Mulaney Hosts, Musical Guest & How to Watch",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9eGgKfiGSiYft3OrcanaVBP2TW_1_DuowEIe7ZPmRZkVlOPO3VjxUp5E5HI4"
+        },
+        {
+          "url": "https://mashable.com/entertainment/john-mulaney-phoebe-bridgers-snl-promo-roast",
+          "title": "John Mulaney and Phoebe Bridgers' latest 'SNL' promo contains a brutal roast",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFQPFO5EdS1nN8ynrByEHZJIBNmE5mwvA8mIXPKxq4wBpX0frQFmRPXVTWWpI"
+        }
+      ]
+    },
+    {
+      "query": "lily collins",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T05:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/music/2026/11/10/phil-collins-tour-return-health-update-rock-hall-of-fame/92711570007/",
+        "https://www.imdb.com/pt/news/ni66109937/?ref_=nwc_art_perm",
+        "https://pagesix.com/2026/11/14/celebrity-news/phil-collins-75-makes-rare-public-appearance-with-daughter-lily/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr_i2vSJKGyAKi89DBq0Y7Fo9Ljj_uhQVIxXmCkUTYJBfgybMIww1Kv4pYkI4",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/10/phil-collins-tour-return-health-update-rock-hall-of-fame/92711570007/",
+          "title": "Phil Collins, 75, considers touring again after years of health struggles",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr_i2vSJKGyAKi89DBq0Y7Fo9Ljj_uhQVIxXmCkUTYJBfgybMIww1Kv4pYkI4"
+        },
+        {
+          "url": "https://www.imdb.com/pt/news/ni66109937/?ref_=nwc_art_perm",
+          "title": "Phil Collins’ Health: His Diabetes, Kidney Issues, Knee Surgeries & More",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHM3lHn05ZQPkN6birdR0i6X6Icmq7P_ua1Zk8xboSDqMDIfPbU-QsnxvK4D8"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/14/celebrity-news/phil-collins-75-makes-rare-public-appearance-with-daughter-lily/",
+          "title": "Phil Collins, 75, makes rare public appearance with daughter Lily amid yearslong health battles",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQt0QALC_uzJEqt1vYaNTRK01JYZJiJzQFWE-VJHf3xzqX_Y5o12a2RBfNF35Q"
+        }
+      ]
+    },
+    {
+      "query": "icc",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T05:30:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/world-test-championship-set-to-stay-nine-team-contest-till-2031-1562664",
+        "https://sports.yahoo.com/articles/ftp-explaining-iccs-future-tours-052152160.html",
+        "https://www.cricbuzz.com/cricket-news/140885/icc-draws-up-schedule-for-2032-35-cycle-cricbuzzcom"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRw0yvwAMxobFB7zHIw-dKDU_mkASykrmlPk8Odao4CpJ1X0OGkA9c-j8meBWI",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/world-test-championship-set-to-stay-nine-team-contest-till-2031-1562664",
+          "title": "World Test Championship set to stay nine-team contest till 2031",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRw0yvwAMxobFB7zHIw-dKDU_mkASykrmlPk8Odao4CpJ1X0OGkA9c-j8meBWI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ftp-explaining-iccs-future-tours-052152160.html",
+          "title": "What is FTP? Explaining ICC's Future Tours Program",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIU8o1mvnNFYoumTDr7vIgLLUV1EWSDJuF8ot3IfPhgjNDuYXHJygj2vEWAQY"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140885/icc-draws-up-schedule-for-2032-35-cycle-cricbuzzcom",
+          "title": "ICC draws up schedule for 2032-35 cycle",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSplFAOBM5tGDj5TKiDuOw-1pfK1zaOfPZa42IHnTFNdoE8os1lZyeHXsUxuEQ"
+        }
+      ]
+    },
+    {
+      "query": "gable steveson",
+      "approx_searches": "500+",
       "published_at": "2026-11-15T05:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/anthony-joshuas-trainer-why-heavyweight-100001544.html",
-        "https://www.boxingscene.com/articles/anthony-joshuas-destiny-against-tyson-fury-is-in-his-hands-not-ben-davisons",
-        "https://www.boxing247.com/boxing-news/hearn-warns-anthony-joshua-against-trying-to-outbox-fury/311285"
+        "https://www.mmamania.com/latest-news/485973/not-retiring-gable-steveson-returns-to-action-at-ufc-336",
+        "https://www.yardbarker.com/mma/articles/gable_steveson_reportedly_finds_next_opponent_for_return_at_ufc_336_following_12_second_ko_loss/s1_17730_44559532",
+        "https://sports.ndtv.com/us/mma/gable-steveson-reportedly-set-for-ufc-return-after-brutal-12-second-ufc-setback-12326328"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwKpTEF5Ue1HS-g4Xx316JGdse56VOwAPnzhRlS2v1By1xb838zxrHXa_hCso",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLOzWB3o0-DyhqRx-N1ROCCn-pKJH2kwh4fzPajoqZHB-znbIu3mqBkWzyTlg",
+      "image_credit": "MMA Mania",
+      "news": [
+        {
+          "url": "https://www.mmamania.com/latest-news/485973/not-retiring-gable-steveson-returns-to-action-at-ufc-336",
+          "title": "Not-retiring Gable Steveson returns to action at UFC 336",
+          "publisher": "MMA Mania",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLOzWB3o0-DyhqRx-N1ROCCn-pKJH2kwh4fzPajoqZHB-znbIu3mqBkWzyTlg"
+        },
+        {
+          "url": "https://www.yardbarker.com/mma/articles/gable_steveson_reportedly_finds_next_opponent_for_return_at_ufc_336_following_12_second_ko_loss/s1_17730_44559532",
+          "title": "Gable Steveson Reportedly Finds Next Opponent for Return at UFC 336 Following 12-Second KO Loss",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKOd8B63fspmkxWT7zxSZWEhQjyAxR9BuCq7bzilwr8KrFI2vKAoJuB4aR1C4"
+        },
+        {
+          "url": "https://sports.ndtv.com/us/mma/gable-steveson-reportedly-set-for-ufc-return-after-brutal-12-second-ufc-setback-12326328",
+          "title": "Gable Steveson Reportedly Set For UFC Return After Brutal 12-Second UFC Setback",
+          "publisher": "NDTV Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzgsGh9wz6jW0b4ma3hB2-p-e1B_uoJvVyIgGfTbQg64SUtwpi69c1trCm1H0"
+        }
+      ]
+    },
+    {
+      "query": "anthony joshua",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T05:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/boxing/article/tyson-fury-vs-anthony-joshua-promoter-ben-shalom-exploring-legal-recourse-after-undercard-fight-announced-215348897.html",
+        "https://sports.yahoo.com/articles/anthony-joshuas-trainer-why-heavyweight-100001544.html",
+        "https://www.boxingscene.com/articles/anthony-joshuas-destiny-against-tyson-fury-is-in-his-hands-not-ben-davisons"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqMofNX3D2xmB1MgyqZFTHMynUCzzhJ7lg3z85WixLv5ZyYIzi2kLA_zPwluw",
       "image_credit": "Yahoo Sports",
       "news": [
+        {
+          "url": "https://sports.yahoo.com/boxing/article/tyson-fury-vs-anthony-joshua-promoter-ben-shalom-exploring-legal-recourse-after-undercard-fight-announced-215348897.html",
+          "title": "Tyson Fury vs. Anthony Joshua: Promoter Ben Shalom exploring legal recourse after undercard fight announced",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqMofNX3D2xmB1MgyqZFTHMynUCzzhJ7lg3z85WixLv5ZyYIzi2kLA_zPwluw"
+        },
         {
           "url": "https://sports.yahoo.com/articles/anthony-joshuas-trainer-why-heavyweight-100001544.html",
           "title": "Who is Anthony Joshua's trainer? Why heavyweight made yet another change in advance of Tyson Fury fight",
@@ -31,13 +213,6 @@
           "publisher": "BoxingScene",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4-cx6040mR7eRRW0U3BQX2pB25huDhqJaRRFjIxbdb2rJ-T7hYk7DkDj1JJU"
-        },
-        {
-          "url": "https://www.boxing247.com/boxing-news/hearn-warns-anthony-joshua-against-trying-to-outbox-fury/311285",
-          "title": "Hearn Warns Anthony Joshua Against Trying To Outbox Fury",
-          "publisher": "Boxing News 24/7",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY5hkebEHpC6anGVmtbLmyB45rTn45lMGCoFHvxS4rZkqKjWpDxvKQu2I2EqQ"
         }
       ]
     },
@@ -77,107 +252,37 @@
       ]
     },
     {
-      "query": "bon gamin",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T05:10:00Z",
-      "related_news_urls": [
-        "https://bloodyelbow.com/2026/11/14/ciryl-gane-questions-josh-hokits-cardio-as-he-reveals-lightest-weight-in-seven-years-was-planned/",
-        "https://www.ufc.com/news/polymarket-ufc-334-gane-vs-hokit-results",
-        "https://sports.yahoo.com/articles/live-watch-ufc-334-post-041500973.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGiuEMAuI_AJ9gXHe_MGpyq6aS5HiVPwrxuf75FifKLIX8eNvLQmaAkl_tDb4",
-      "image_credit": "Bloody Elbow",
-      "news": [
-        {
-          "url": "https://bloodyelbow.com/2026/11/14/ciryl-gane-questions-josh-hokits-cardio-as-he-reveals-lightest-weight-in-seven-years-was-planned/",
-          "title": "Ciryl Gane questions Josh Hokit's cardio as he reveals lightest weight in seven years was planned",
-          "publisher": "Bloody Elbow",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGiuEMAuI_AJ9gXHe_MGpyq6aS5HiVPwrxuf75FifKLIX8eNvLQmaAkl_tDb4"
-        },
-        {
-          "url": "https://www.ufc.com/news/polymarket-ufc-334-gane-vs-hokit-results",
-          "title": "Main Card Results | Polymarket UFC 334: Gane vs Hokit",
-          "publisher": "UFC.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWv9wPsUrUvpcJIk9wKn29G9reOATc7zqEuCS6lIsy0-Yi90SQCHS0NPFb1y0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/live-watch-ufc-334-post-041500973.html",
-          "title": "LIVE! Watch UFC 334 Post-Fight Presser",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaAMe5lpVYYm-Vs3mXW3hm55K9Z5ODgL-wEMeloso0FNnuJ3Zd0A3HIjslAg"
-        }
-      ]
-    },
-    {
-      "query": "gable steveson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T05:10:00Z",
-      "related_news_urls": [
-        "https://www.mmamania.com/latest-news/485973/not-retiring-gable-steveson-returns-to-action-at-ufc-336",
-        "https://www.yardbarker.com/mma/articles/gable_steveson_reportedly_finds_next_opponent_for_return_at_ufc_336_following_12_second_ko_loss/s1_17730_44559532",
-        "https://sports.ndtv.com/us/mma/gable-steveson-reportedly-set-for-ufc-return-after-brutal-12-second-ufc-setback-12326328"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLOzWB3o0-DyhqRx-N1ROCCn-pKJH2kwh4fzPajoqZHB-znbIu3mqBkWzyTlg",
-      "image_credit": "MMA Mania",
-      "news": [
-        {
-          "url": "https://www.mmamania.com/latest-news/485973/not-retiring-gable-steveson-returns-to-action-at-ufc-336",
-          "title": "Not-retiring Gable Steveson returns to action at UFC 336",
-          "publisher": "MMA Mania",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLOzWB3o0-DyhqRx-N1ROCCn-pKJH2kwh4fzPajoqZHB-znbIu3mqBkWzyTlg"
-        },
-        {
-          "url": "https://www.yardbarker.com/mma/articles/gable_steveson_reportedly_finds_next_opponent_for_return_at_ufc_336_following_12_second_ko_loss/s1_17730_44559532",
-          "title": "Gable Steveson Reportedly Finds Next Opponent for Return at UFC 336 Following 12-Second KO Loss",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKOd8B63fspmkxWT7zxSZWEhQjyAxR9BuCq7bzilwr8KrFI2vKAoJuB4aR1C4"
-        },
-        {
-          "url": "https://sports.ndtv.com/us/mma/gable-steveson-reportedly-set-for-ufc-return-after-brutal-12-second-ufc-setback-12326328",
-          "title": "Gable Steveson Reportedly Set For UFC Return After Brutal 12-Second UFC Setback",
-          "publisher": "NDTV Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzgsGh9wz6jW0b4ma3hB2-p-e1B_uoJvVyIgGfTbQg64SUtwpi69c1trCm1H0"
-        }
-      ]
-    },
-    {
       "query": "jeremy culhane",
       "approx_searches": "200+",
       "published_at": "2026-11-15T05:10:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/snl-grok-epic-vulgar-roast-elon-musk-weekend-update-1237216693/",
-        "https://www.them.us/entertainment/tv-and-movies/elon-musk-snl-roast",
-        "https://www.hollywoodreporter.com/tv/tv-news/elon-musk-snl-appearance-jeremy-culhane-watch-jost-1236750304/"
+        "https://deadline.com/2026/11/snl-john-mulaney-roasts-rfk-jr-opening-monologue-1237224369/",
+        "https://uk.news.yahoo.com/snl-john-mulaney-roasts-rfk-050442996.html",
+        "https://variety.com/2026/tv/news/john-mulaney-mocks-robert-f-kennedy-jr-snl-monologue-1236947905/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAwelaPGfwD66J1mYSq1toFHlFaP5iSNkLY8pB4hxrNAh1F6-jquWwq-Id-hg",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjhmkewyVaAabnuYAzuLPp3-mXxGTU07ojNg0acU4C6Pije7IWvbWhHp_6T54",
       "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/snl-grok-epic-vulgar-roast-elon-musk-weekend-update-1237216693/",
-          "title": "'SNL' Makes Grok Roast Elon Musk On 'Weekend Update'",
+          "url": "https://deadline.com/2026/11/snl-john-mulaney-roasts-rfk-jr-opening-monologue-1237224369/",
+          "title": "‘SNL’: John Mulaney Roasts RFK Jr. In Opening Monologue: “Your Thing Can’t Be Measles”",
           "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAwelaPGfwD66J1mYSq1toFHlFaP5iSNkLY8pB4hxrNAh1F6-jquWwq-Id-hg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjhmkewyVaAabnuYAzuLPp3-mXxGTU07ojNg0acU4C6Pije7IWvbWhHp_6T54"
         },
         {
-          "url": "https://www.them.us/entertainment/tv-and-movies/elon-musk-snl-roast",
-          "title": "And the Perfect Elon Musk Impression Goes to… SNL’s Jeremy Culhane",
-          "publisher": "Them",
+          "url": "https://uk.news.yahoo.com/snl-john-mulaney-roasts-rfk-050442996.html",
+          "title": "‘SNL’: John Mulaney Roasts RFK Jr. In Opening Monologue, Makes Out With Jeremy Culhane",
+          "publisher": "Yahoo News UK",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQol2-OwHGNkSe5ZJ4Y6nlyUSukvb1dIKBbO_xiObMG8LR_XadTfbWnN0Lz6Pk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpAPGhIPtuotsv3V0NQnbZC8uxeNJRuKUoDExRUX6XNiqDcoWylpJ7PV29Zfk"
         },
         {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/elon-musk-snl-appearance-jeremy-culhane-watch-jost-1236750304/",
-          "title": "Elon Musk Is Portrayed on ‘SNL’: “The Worst Thing South Africa Has Ever Done”",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://variety.com/2026/tv/news/john-mulaney-mocks-robert-f-kennedy-jr-snl-monologue-1236947905/",
+          "title": "John Mulaney Mocks Robert F. Kennedy Jr. in 'SNL' Monologue",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJHmqlIbLeKqG2NV2asoj9AMiytrhrOoG-PEhn4DiTSH6mUbx8SFKg3gd5qpU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLYXyhOtIzDqwdNYEijZeDgISub5sBI380xyPiDhuJTw8A61MfUUDEei8bpmk"
         }
       ]
     },
@@ -218,7 +323,7 @@
     },
     {
       "query": "francis ngannou",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-15T05:00:00Z",
       "related_news_urls": [
         "https://www.mmafighting.com/pfl/520659/vadim-nemkov-sees-really-good-chance-fedor-emelianenko-beats-francis-ngannou-in-boxing",
@@ -248,111 +353,6 @@
           "publisher": "MMA Sucka",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmVWU7xfLTRSdBjEkJl_NJXqQgWz278iech-EnYECcYIn2N366nHGtoRPlqMo"
-        }
-      ]
-    },
-    {
-      "query": "ali abdelaziz",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-15T05:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mma/story/_/id/50471378/8-people-get-prison-nurmagomedov-dvalishvili-brawl",
-        "https://www.foxnews.com/outkick-sports/ufc-star-21-year-old-friend-reportedly-cleared-wrestle-raf-days-after-fending-off-hotel-lobby-ambush",
-        "https://www.aljazeera.com/sports/2026/11/14/usman-nurmagomedov-merab-dvalishvili-abu-dhabi-hotel-brawl-jail-sentence"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqFzJLdWl8yx6MXKL_VA88YU546nmg_VIL8X7LgRflcVLvNK3la2ElT8m_FA8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mma/story/_/id/50471378/8-people-get-prison-nurmagomedov-dvalishvili-brawl",
-          "title": "Six from Team Nurmagomedov, eight in all get prison time over Dvalishvili brawl",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqFzJLdWl8yx6MXKL_VA88YU546nmg_VIL8X7LgRflcVLvNK3la2ElT8m_FA8"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/ufc-star-21-year-old-friend-reportedly-cleared-wrestle-raf-days-after-fending-off-hotel-lobby-ambush",
-          "title": "UFC star and 21-year-old friend reportedly cleared to wrestle at RAF days after fending off hotel lobby ambush",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcqdGnO7QmQvFuSGZIMCzDRe-BUNOMWVwSGVbcLjvp8eRof6jofvo2x09ghXU"
-        },
-        {
-          "url": "https://www.aljazeera.com/sports/2026/11/14/usman-nurmagomedov-merab-dvalishvili-abu-dhabi-hotel-brawl-jail-sentence",
-          "title": "Eight sentenced to jail over Nurmagomedov-Dvalishvili Abu Dhabi hotel brawl",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHpcpA1ILAbZOxEoh72reKbR1f_luZj21LXUns8cnIJHngUkBcBPKH1lHx4RA"
-        }
-      ]
-    },
-    {
-      "query": "raul rosas jr",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T05:00:00Z",
-      "related_news_urls": [
-        "https://www.dazn.com/en-US/news/mma/kamaru-usman-henry-cejudo-colby-covington-raul-rosas-jr-defeat-t3r/1ky88qjdf7e0e1u6bvs5qx4fzi",
-        "https://sports.yahoo.com/articles/conor-mcgregor-dismisses-false-edited-144514902.html",
-        "https://www.mmamania.com/latest-news/483510/dillon-danis-dips-on-grappling-match-with-colby-covington-raul-rosas-jr-steps-in-on-three-days-notice"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAoyxxRVHKT-Qz72KM5sT6ce2m2McccstUpIwA__8woqE_hcp06YYCBC4DWE",
-      "image_credit": "DAZN",
-      "news": [
-        {
-          "url": "https://www.dazn.com/en-US/news/mma/kamaru-usman-henry-cejudo-colby-covington-raul-rosas-jr-defeat-t3r/1ky88qjdf7e0e1u6bvs5qx4fzi",
-          "title": "Kamaru Usman and Henry Cejudo mock Colby Covington after shock defeat to Raul Rosas Jr",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAoyxxRVHKT-Qz72KM5sT6ce2m2McccstUpIwA__8woqE_hcp06YYCBC4DWE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/conor-mcgregor-dismisses-false-edited-144514902.html",
-          "title": "Conor McGregor dismisses ‘false’ & ‘edited’ video from RAF-Hype Italy event",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8CyZFuJtvWj2z2h4er_ap7GEczD6mCRD3PAEurmXwg599c05z68EsTvEkA-U"
-        },
-        {
-          "url": "https://www.mmamania.com/latest-news/483510/dillon-danis-dips-on-grappling-match-with-colby-covington-raul-rosas-jr-steps-in-on-three-days-notice",
-          "title": "Dillon Danis dips on grappling match with Colby Covington, Raul Rosas Jr. steps in on three days notice",
-          "publisher": "MMA Mania",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ-cvcVO4OSeRdDIqFykB_e3cbBK2NeAEnvVORTjW-AFSj357TQkOzXQHegVQ"
-        }
-      ]
-    },
-    {
-      "query": "utah tech football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T05:00:00Z",
-      "related_news_urls": [
-        "https://www.spokesman.com/stories/2026/nov/13/eastern-washington-looks-to-stop-utah-techs-run-ga/",
-        "https://www.swxlocalsports.com/spokane/eastern-washington/talking-eags-after-brutal-loss-to-idaho-ewu-looks-to-finish-difficult-season-on-positive/article_4ca1bd9b-0ea5-45fd-a2f5-35456883af7c.html",
-        "https://www.covers.com/sport/basketball/ncaab/matchup/391466/picks"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNMZlAMObRb-7AI4JVygfClAmyaA0kIv8HW-B_OEhP0mpIxmAgdtlrISyDL_Q",
-      "image_credit": "The Spokesman-Review",
-      "news": [
-        {
-          "url": "https://www.spokesman.com/stories/2026/nov/13/eastern-washington-looks-to-stop-utah-techs-run-ga/",
-          "title": "Eastern Washington looks to stop Utah Tech’s run game | Things to watch",
-          "publisher": "The Spokesman-Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNMZlAMObRb-7AI4JVygfClAmyaA0kIv8HW-B_OEhP0mpIxmAgdtlrISyDL_Q"
-        },
-        {
-          "url": "https://www.swxlocalsports.com/spokane/eastern-washington/talking-eags-after-brutal-loss-to-idaho-ewu-looks-to-finish-difficult-season-on-positive/article_4ca1bd9b-0ea5-45fd-a2f5-35456883af7c.html",
-          "title": "Talking Eags: After brutal loss to Idaho, EWU looks to finish difficult season on positive note",
-          "publisher": "SWX Local Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaosnlvSGhXNUNjFMokCJdJXVXNf3EItaDWytmlGRnR_h-ywv1QrpzSxtqMCA"
-        },
-        {
-          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/391466/picks",
-          "title": "Eastern Washington Eagles vs Oregon State Beavers Prediction, Picks, Prop Bets For November 09, 2026 - NCAAB",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1_tf_xv3gDg169rBzzR1CVnVg-XaCEghrB1_qkMjw6UhBmUmqNV-F5kTa4Wg"
         }
       ]
     }
