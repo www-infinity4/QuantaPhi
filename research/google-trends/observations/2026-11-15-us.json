@@ -3,356 +3,330 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T13:30:51.434065Z",
+  "checked_at": "2026-11-15T14:01:09.938000Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "allianz arena",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T13:10:00Z",
-      "related_news_urls": [
-        "https://www.bild.de/sport/mehr-sport/robert-kraft-das-amerika-von-heute-aehnelt-immer-mehr-dem-deutschland-der-30er-jahre-6af8943e9849eea0701e2eb0",
-        "https://www.blick.ch/sport/american-football/nfl-star-vor-football-spektakel-in-muenchen-ueber-schweizer-wurzeln/3h0sc0h",
-        "https://www.tz.de/muenchen/stadt/schwabing-freimann-ort43408/bahn-in-muenchen-mvg-warnt-vor-einschraenkungen-bei-u3-und-u6-94590856.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQElpTocYmlIGFq-grkFq31DWxu7Fg-h-RPRDwQe1QvQziDUe6qyrvVTxr2ag0",
-      "image_credit": "BILD",
-      "news": [
-        {
-          "url": "https://www.bild.de/sport/mehr-sport/robert-kraft-das-amerika-von-heute-aehnelt-immer-mehr-dem-deutschland-der-30er-jahre-6af8943e9849eea0701e2eb0",
-          "title": "„Das Amerika von heute ähnelt immer mehr dem Deutschland der 30er-Jahre“",
-          "publisher": "BILD",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQElpTocYmlIGFq-grkFq31DWxu7Fg-h-RPRDwQe1QvQziDUe6qyrvVTxr2ag0"
-        },
-        {
-          "url": "https://www.blick.ch/sport/american-football/nfl-star-vor-football-spektakel-in-muenchen-ueber-schweizer-wurzeln/3h0sc0h",
-          "title": "NFL-Star mit Schweizer Wurzeln wagt den Sprachtest",
-          "publisher": "Blick",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTPowHCeqB_Fk1rWImZNZuz8wM9961DbkfEaJEGWz5Rq93xnhhXYsL_sEaqxo"
-        },
-        {
-          "url": "https://www.tz.de/muenchen/stadt/schwabing-freimann-ort43408/bahn-in-muenchen-mvg-warnt-vor-einschraenkungen-bei-u3-und-u6-94590856.html",
-          "title": "„Beeinträchtigungen wegen eines Footballspiels“: MVG warnt vor vollen Zügen bei U3 und U6",
-          "publisher": "TZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFigqEEHEfvwBGzvUUM0ChuOkW8oO3XZ0kvcu2A9AfLz_3XOZKlmnRZFzth1I"
-        }
-      ]
+      "query": "matthew rhys",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T13:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
     },
     {
-      "query": "aerolínea",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T13:10:00Z",
+      "query": "garrett wilson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T13:40:00Z",
       "related_news_urls": [
-        "https://cnnespanol.cnn.com/2026/11/15/economia/sistemas-trafico-aereo-anticuados-trax",
-        "https://www.france24.com/es/minuto-a-minuto/20261115-eeuu-espera-que-los-vuelos-vuelvan-a-la-normalidad-este-domingo",
-        "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/estados-unidos/video/delta-american-y-united-sufren-mayor-impacto-tras-falla-tecnica-en-el-control-aereo-tmvo13244750"
+        "https://sports.yahoo.com/articles/garrett-wilson-omar-cooper-jr-130000661.html",
+        "https://www.cbssports.com/fantasy/football/news/jets-garrett-wilson-reportedly-clear-for-week-10/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/garrett-wilson-cleared-from-concussion-protocol"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrM9laB00SPBMn2EWZ9Mnduy5wGWqSz4Vy4bwqUijOpvOrQsJXvWDs8871m50",
-      "image_credit": "CNN en Español",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPV6T2BG5WRPrr3aMoq5EPBlXqHxaP1C1ixuzLBB7ufzAgg6EP7wI-37Oy3Wk",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://cnnespanol.cnn.com/2026/11/15/economia/sistemas-trafico-aereo-anticuados-trax",
-          "title": "Los sistemas utilizados para mantener a EE.UU. en vuelo son anticuados. Eso hace que solucionar el problema sea más difícil",
-          "publisher": "CNN en Español",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrM9laB00SPBMn2EWZ9Mnduy5wGWqSz4Vy4bwqUijOpvOrQsJXvWDs8871m50"
-        },
-        {
-          "url": "https://www.france24.com/es/minuto-a-minuto/20261115-eeuu-espera-que-los-vuelos-vuelvan-a-la-normalidad-este-domingo",
-          "title": "EEUU espera que los vuelos vuelvan a la normalidad este domingo",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZRd7VSawmSVbrZSJj3w1xQUWcRif8AhcvQQw8SBjovQr423Owuj5Iw_wJfJU"
-        },
-        {
-          "url": "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/estados-unidos/video/delta-american-y-united-sufren-mayor-impacto-tras-falla-tecnica-en-el-control-aereo-tmvo13244750",
-          "title": "Delta, American y United sufren mayor impacto tras falla técnica en el control aéreo",
-          "publisher": "Telemundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9Zh8H850doNVys7DN1do_knpFEDU9oqpDZsumKiQ5rQTtXFmgJveKQSoInH4"
-        }
-      ]
-    },
-    {
-      "query": "cleveland weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T13:10:00Z",
-      "related_news_urls": [
-        "https://www.cleveland19.com/2026/11/14/northeast-ohio-weather-lake-effect-showers-continue-this-weekend/",
-        "https://fox8.com/news/forecast-its-gonna-be-a-cold-rainy-weekend/",
-        "https://www.news5cleveland.com/weather/some-of-us-will-see-our-first-flakes-all-of-us-feel-the-cold-though"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR910D9aS5qYFJrhaKvci0iK4orDwrHBwWAnzSeeC8lAWvRa2iqZWRTnDebKSg",
-      "image_credit": "Cleveland 19 News",
-      "news": [
-        {
-          "url": "https://www.cleveland19.com/2026/11/14/northeast-ohio-weather-lake-effect-showers-continue-this-weekend/",
-          "title": "Northeast Ohio weather: Lake-effect showers continue this weekend",
-          "publisher": "Cleveland 19 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR910D9aS5qYFJrhaKvci0iK4orDwrHBwWAnzSeeC8lAWvRa2iqZWRTnDebKSg"
-        },
-        {
-          "url": "https://fox8.com/news/forecast-its-gonna-be-a-cold-rainy-weekend/",
-          "title": "FORECAST: Lake effect showers continue",
-          "publisher": "FOX 8 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTk6mWejH8-gf-DAgS2UZkmuURzvRy_4dGbvh62oaxhl3D6pBEMmKC2owqdzZ4"
-        },
-        {
-          "url": "https://www.news5cleveland.com/weather/some-of-us-will-see-our-first-flakes-all-of-us-feel-the-cold-though",
-          "title": "Wintry weekend with lingering lake effect rain and snow showers",
-          "publisher": "News 5 Cleveland WEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0UDakF4kaXtU8ugyvTYSq81Xdp187QV9ew5AXLalaTDnzZmldfPC5gYreMbI"
-        }
-      ]
-    },
-    {
-      "query": "weather atlanta",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T13:10:00Z",
-      "related_news_urls": [
-        "https://www.11alive.com/article/news/community/the-city-of-atlanta-set-to-open-two-warming-centers-due-to-freezing-temperatures/85-9bed0f46-9dbb-419c-b4d7-398fc0beeab1",
-        "https://www.wfxg.com/news/salvation-army-helps-warm-residents-in-need-as-temperatures-drop/article_a1e3692b-df74-47d0-918f-21e21cb3cac5.html",
-        "https://www.wrdw.com/2026/11/13/augusta-transit-offer-rides-overnight-warming-shelters/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RC0GvxagHPXRf3X492xPPhxru2LYNal-qWfYZcPoQ7wNHPibZoD8E5G2keo",
-      "image_credit": "11Alive.com",
-      "news": [
-        {
-          "url": "https://www.11alive.com/article/news/community/the-city-of-atlanta-set-to-open-two-warming-centers-due-to-freezing-temperatures/85-9bed0f46-9dbb-419c-b4d7-398fc0beeab1",
-          "title": "The City of Atlanta set to open two warming centers due to freezing temperatures",
-          "publisher": "11Alive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RC0GvxagHPXRf3X492xPPhxru2LYNal-qWfYZcPoQ7wNHPibZoD8E5G2keo"
-        },
-        {
-          "url": "https://www.wfxg.com/news/salvation-army-helps-warm-residents-in-need-as-temperatures-drop/article_a1e3692b-df74-47d0-918f-21e21cb3cac5.html",
-          "title": "Salvation Army Helps Warm Residents in Need as Temperatures Drop",
-          "publisher": "WFXG",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTS7C8g8j4Cb945x2kNckPDXi88QPtmYFuMnl5s5NRadbr-IdbNxQonSxq4e6M"
-        },
-        {
-          "url": "https://www.wrdw.com/2026/11/13/augusta-transit-offer-rides-overnight-warming-shelters/",
-          "title": "Augusta Transit to offer rides to overnight warming shelters",
-          "publisher": "WRDW",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDOEh1E47Bo1TRty0AjPkW6BVG7FpuPiYeENrMIUGpdt4S1lWe9Hy5kk9d2oo"
-        }
-      ]
-    },
-    {
-      "query": "panthers vs saints",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T13:10:00Z",
-      "related_news_urls": [
-        "https://www.panthers.com/news/5-things-to-watch-as-the-panthers-take-on-the-saints-in-week-10-bryce-young-tyler-shough",
-        "https://sports.yahoo.com/articles/nfl-predictions-healthier-carolina-panthers-125132538.html",
-        "https://www.neworleanssaints.com/news/new-orleans-saints-edge-rushers-chase-young-and-carl-granderson-scoring-big-on-pass-rush-this-season"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnTNrEe93wcVQLxXy2KMuPDIRwRHQ1uAJUGAxKDpm8rkvJzRx2D9PlK3LdN4k",
-      "image_credit": "Panthers.com",
-      "news": [
-        {
-          "url": "https://www.panthers.com/news/5-things-to-watch-as-the-panthers-take-on-the-saints-in-week-10-bryce-young-tyler-shough",
-          "title": "5 things to watch as the Panthers take on the Saints in Week 10",
-          "publisher": "Panthers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnTNrEe93wcVQLxXy2KMuPDIRwRHQ1uAJUGAxKDpm8rkvJzRx2D9PlK3LdN4k"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/nfl-predictions-healthier-carolina-panthers-125132538.html",
-          "title": "NFL predictions: Can a healthier Carolina Panthers team finally show up?",
+          "url": "https://sports.yahoo.com/articles/garrett-wilson-omar-cooper-jr-130000661.html",
+          "title": "Will Garrett Wilson, Omar Cooper Jr. play today? Injury update, fantasy advice for Week 10",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8g_ykH3y0T62aflv6RnRpjcnwofjlohHFOPuIbsm-lH-F_JajNTV9qVJtuvU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPV6T2BG5WRPrr3aMoq5EPBlXqHxaP1C1ixuzLBB7ufzAgg6EP7wI-37Oy3Wk"
         },
         {
-          "url": "https://www.neworleanssaints.com/news/new-orleans-saints-edge-rushers-chase-young-and-carl-granderson-scoring-big-on-pass-rush-this-season",
-          "title": "New Orleans Saints edge rushers Chase Young and Carl Granderson scoring big on pass rush",
-          "publisher": "New Orleans Saints | NewOrleansSaints.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEI4FtrgcIpcPP2t_tfKdZWYt-HULeON_11ZdwY7PH0Aiqu7qsibDDAaStvp8"
-        }
-      ]
-    },
-    {
-      "query": "alexandra daddario",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T13:00:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
-        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
-        "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
-          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is Alexandra Daddario's Action Fantasy Epic)",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI"
-        },
-        {
-          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
-          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is A $1.5 Billion Space Opera With Sequels On The Way)",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt85PJdHOblx2XaH282gk2437hKb9PTDJzrKkh0eS1S7N0uxM-iwm2rnlNiRc"
-        },
-        {
-          "url": "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/",
-          "title": "Taylor Kitsch, Alexandra Daddario, Christopher Walken Cast In 'Robber'",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvUWPLXwhkZWeeM90NlJZ0U6dtk8rYW9Vyv4sW4VYgIzyy2k8OaNg9Cx0_iXE"
-        }
-      ]
-    },
-    {
-      "query": "bowl projections",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T12:50:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/bowl-projections-college-football-playoff-bracket-week-11-2026/",
-        "https://fansided.com/college-football/arch-manning-and-4-other-superstars-who-need-a-huge-week-11-to-keep-their-teams-in-the-cfp-picture",
-        "https://sports.yahoo.com/articles/college-football-playoff-committees-week-221114335.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrgL4YwFrH0TSbjXwEEV9cHLYq874C9bTzs88t_UU5hJo7I7N5B1eDWCSbjao",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-football/news/bowl-projections-college-football-playoff-bracket-week-11-2026/",
-          "title": "Bowl projections: Slotting all 47 games after Week 11 snuffs out CFP hopes for several contenders",
+          "url": "https://www.cbssports.com/fantasy/football/news/jets-garrett-wilson-reportedly-clear-for-week-10/",
+          "title": "Jets' Garrett Wilson: Reportedly clear for Week 10",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrgL4YwFrH0TSbjXwEEV9cHLYq874C9bTzs88t_UU5hJo7I7N5B1eDWCSbjao"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
         },
         {
-          "url": "https://fansided.com/college-football/arch-manning-and-4-other-superstars-who-need-a-huge-week-11-to-keep-their-teams-in-the-cfp-picture",
-          "title": "Arch Manning and 4 other superstars who need a huge Week 11 to keep their teams in the CFP picture",
-          "publisher": "FanSided",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/garrett-wilson-cleared-from-concussion-protocol",
+          "title": "Garrett Wilson cleared from concussion protocol",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaJjCQue-uz280KIuml3SCimAAHUF74ZmVoitN8mXzyZ5BWTzZy35MMVMGGJs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/college-football-playoff-committees-week-221114335.html",
-          "title": "The College Football Playoff committee's Week 11 nightmare scenario",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4BW41OwbWnJ7mfwE8Dn49eqfrJYuIyWdUgvxCgnXLQb3q8Pi0wMb-L_ajEWM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj2bgBlB23U6H2df5kErntdugCefXHhc8996e3xWL8qK6Q6cWD6RZUC0Hmt6g"
         }
       ]
     },
     {
-      "query": "nintendo switch 2 black friday deals",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T12:50:00Z",
-      "related_news_urls": [
-        "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
-        "https://mashable.com/tech/nov-13-nintendo-switch-2-deal",
-        "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo",
-      "image_credit": "Nintendo",
-      "news": [
-        {
-          "url": "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
-          "title": "Nintendo announces Black Friday offers to help spread joy this holiday season - News - Nintendo Official Site",
-          "publisher": "Nintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo"
-        },
-        {
-          "url": "https://mashable.com/tech/nov-13-nintendo-switch-2-deal",
-          "title": "The Nintendo Switch 2 gets a rare deal way ahead of Black Friday",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04"
-        },
-        {
-          "url": "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026",
-          "title": "Nintendo's Black Friday Deals Are Actually Pretty Good",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZ6clXKS3O2MrhCcatyLbePNpSLYPegEg-B3wQD9cPl6pTvs1gvXB0sA-5ak"
-        }
-      ]
-    },
-    {
-      "query": "people magazine",
+      "query": "austin weather",
       "approx_searches": "200+",
-      "published_at": "2026-11-15T12:40:00Z",
+      "published_at": "2026-11-15T13:40:00Z",
       "related_news_urls": [
-        "https://people.com/rihanna-and-asap-rocky-son-riot-rose-makes-his-magazine-cover-debut-12252917",
-        "https://www.billboard.com/music/rb-hip-hop/asap-rocky-rihanna-son-riot-rose-cover-arena-homme-1236381957/",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/nephew-model-y-internet-reacts-203118255.html"
+        "https://www.fox7austin.com/weather/austin-weather-stormy-weather-expected-central-texas-weekend",
+        "https://www.kxan.com/weather/forecast/cold-front-brings-rain-and-storms-cooler-temperatures/",
+        "https://www.mysanantonio.com/news/weather/article/cold-front-texas-freeze-22527262.php"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLesejUV-b66kQZKUaCgzFMl1kYJaqeMrgAdzP5TlhhrWynaZ9rdjQ0lUILQ",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjNVj9PPMJtOd_iuZTj3_sz_iSH0-nlirWq4W9f_2MpOIWtR5TLFz2qptTMu0",
+      "image_credit": "FOX 7 Austin",
       "news": [
         {
-          "url": "https://people.com/rihanna-and-asap-rocky-son-riot-rose-makes-his-magazine-cover-debut-12252917",
-          "title": "Rihanna and A$AP Rocky’s Son Riot Rose, 3, Makes His Magazine Cover Debut",
-          "publisher": "People.com",
+          "url": "https://www.fox7austin.com/weather/austin-weather-stormy-weather-expected-central-texas-weekend",
+          "title": "Austin weather: Stormy weather expected in Central Texas this weekend",
+          "publisher": "FOX 7 Austin",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLesejUV-b66kQZKUaCgzFMl1kYJaqeMrgAdzP5TlhhrWynaZ9rdjQ0lUILQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjNVj9PPMJtOd_iuZTj3_sz_iSH0-nlirWq4W9f_2MpOIWtR5TLFz2qptTMu0"
         },
         {
-          "url": "https://www.billboard.com/music/rb-hip-hop/asap-rocky-rihanna-son-riot-rose-cover-arena-homme-1236381957/",
-          "title": "A$AP Rocky & Rihanna’s Son Three-Year-Old Son Riot Rose Is Already a Fashion Magazine Cover Star",
-          "publisher": "Billboard",
+          "url": "https://www.kxan.com/weather/forecast/cold-front-brings-rain-and-storms-cooler-temperatures/",
+          "title": "Cold front, steady rain on Sunday, cooler week",
+          "publisher": "KXAN Austin",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU2MtzgIpWS5sJvwj9G2BksWQB7IRjioYGI3AHnXCDmcj7afQ8hwxgdXIUcgM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStXMwWwTLWXl036oDU7emtNsOmwXcXxxPgvt6fesocVY3451KXcSUEfzumqSY"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/nephew-model-y-internet-reacts-203118255.html",
-          "title": "“Our nephew a model, y’all”: The internet reacts to Riot Rose making his magazine cover debut in Arena Homme+",
-          "publisher": "Yahoo",
+          "url": "https://www.mysanantonio.com/news/weather/article/cold-front-texas-freeze-22527262.php",
+          "title": "Cold front brings near-freezing temps to parts of Texas",
+          "publisher": "MySA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTDf6X8A_rElcmlPGlbe2Ey9MOfyoxIOcm-LLt7mw5d0JVBegKSG9TL8vRP8c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuCCXLynqDSSoAJaMMLaw6HS7n71kKi6PYlbvQUOKbmmiCNFyJOWrxnHElMak"
         }
       ]
     },
     {
-      "query": "days of our lives",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T12:40:00Z",
+      "query": "rafael jodar",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T13:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/days-lives-sneak-peak-xander-054400236.html",
-        "https://www.tvfanatic.com/days-of-our-lives-spoilers-for-the-week-of-11-16-26-hide-the-soaps-best-new-story-under-arrests-accusations-and-high-drama/",
-        "https://www.thetvcave.com/post/days-of-our-lives-recap"
+        "https://www.marca.com/tenis/copa-masters/alexander-zverev-rafa-jodar/2026/11/15/04_0414_20261115_1-directo.html",
+        "https://espndeportes.espn.com/tenis/nota/_/id/17517275/alexander-zverev-vs-rafael-jodar-atp-finals-2026-turin-primera-fecha",
+        "https://elpais.com/deportes/tenis/2026-11-15/el-meteorico-vuelo-de-rafa-jodar-un-debutante-extraordinario-todavia-no-lo-he-asimilado.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1TeJxo02ilpG-38IC8V0C7APHCXvepvLoq314f-6Els1JO1_QFW_UoohSdxM",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgkCILvdz3CK2uXgSO0jWcoAx-u5lQ2wceVavOgPnClnyqvuJ2KJiVxgHNH4",
+      "image_credit": "MARCA",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/days-lives-sneak-peak-xander-054400236.html",
-          "title": "Days of our Lives Sneak Peak: Xander Gets Arrested",
-          "publisher": "Yahoo",
+          "url": "https://www.marca.com/tenis/copa-masters/alexander-zverev-rafa-jodar/2026/11/15/04_0414_20261115_1-directo.html",
+          "title": "Alexander Zverev - Rafa Jódar en directo | Última hora de las ATP Finals, en vivo",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1TeJxo02ilpG-38IC8V0C7APHCXvepvLoq314f-6Els1JO1_QFW_UoohSdxM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgkCILvdz3CK2uXgSO0jWcoAx-u5lQ2wceVavOgPnClnyqvuJ2KJiVxgHNH4"
         },
         {
-          "url": "https://www.tvfanatic.com/days-of-our-lives-spoilers-for-the-week-of-11-16-26-hide-the-soaps-best-new-story-under-arrests-accusations-and-high-drama/",
-          "title": "Days of Our Lives Spoilers for The Week of 11-16-26 Hide The Soap's Best New Story Under Arrests, Accusations, and High Drama",
-          "publisher": "TV Fanatic",
+          "url": "https://espndeportes.espn.com/tenis/nota/_/id/17517275/alexander-zverev-vs-rafael-jodar-atp-finals-2026-turin-primera-fecha",
+          "title": "El dueño del circuito ante el debutante español: la previa del duelo entre Zverev y Jódar en las ATP Finals 2026",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh_9PwvatZpUUlLEMDiI4w7HUES37eoitWcP6gLC_dNYx8kAsBleB2vkMQODI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHMs752gmgZamu90tAU38Zl27SKM1sijKC5bBiSF2DHGx0-mfSUImIw0Wu-NU"
         },
         {
-          "url": "https://www.thetvcave.com/post/days-of-our-lives-recap",
-          "title": "Days of Our Lives Recap: Marlena Faces a Painful Truth, Abe Gets Devastating News, and Leo's Fate Hangs in the Balance",
-          "publisher": "The TV Cave",
+          "url": "https://elpais.com/deportes/tenis/2026-11-15/el-meteorico-vuelo-de-rafa-jodar-un-debutante-extraordinario-todavia-no-lo-he-asimilado.html",
+          "title": "El meteórico vuelo de Rafa Jódar, un debutante extraordinario: “Todavía no lo he asimilado”",
+          "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs4Vmfv9ot-wv_o2urxRVUsiEBbwcbV34zGhQx7rJ1bCLPyngj-GzRihPDtDY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVIpy17HalaSun748wYblF64TsoISfXaWD24kTccbWw0jp3YLqDXxYlLNXSKU"
+        }
+      ]
+    },
+    {
+      "query": "red dead redemption 2",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T13:40:00Z",
+      "related_news_urls": [
+        "https://en.gamegpu.com/news/igry/fanaty-zametili-skhodstvo-glavnykh-geroev-gta-vi-s-personazhami-vesterna-red-dead-redemption-2",
+        "https://en.gamegpu.com/news/igry/sravnenie-zakatnykh-stsen-iz-grand-theft-auto-vi-red-dead-redemption-2-i-grand-theft-auto-v",
+        "https://en.gamegpu.com/news/igry/poklonniki-sravnili-zakatnye-pejzazhi-v-gta-6-i-red-dead-redemption-2-s-raznitsej-v-128-let"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8_pxuP6rKUp25DNMoGpNWSFG50LwXTxcXc5VhXIMuKCp0dP-lA-gekBmOyZA",
+      "image_credit": "GameGPU",
+      "news": [
+        {
+          "url": "https://en.gamegpu.com/news/igry/fanaty-zametili-skhodstvo-glavnykh-geroev-gta-vi-s-personazhami-vesterna-red-dead-redemption-2",
+          "title": "Fans have noticed similarities between GTA VI's main characters and Western characters. Red Dead Redemption 2",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8_pxuP6rKUp25DNMoGpNWSFG50LwXTxcXc5VhXIMuKCp0dP-lA-gekBmOyZA"
+        },
+        {
+          "url": "https://en.gamegpu.com/news/igry/sravnenie-zakatnykh-stsen-iz-grand-theft-auto-vi-red-dead-redemption-2-i-grand-theft-auto-v",
+          "title": "Comparison of sunset scenes from Grand Theft Auto VI, Red Dead Redemption 2 and Grand Theft Auto V",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDhIpYwtLTniKTfdbwu4JdRaKmPb8v4h0B9ixJeS6x-HS8aF_OdsaFIprC0HQ"
+        },
+        {
+          "url": "https://en.gamegpu.com/news/igry/poklonniki-sravnili-zakatnye-pejzazhi-v-gta-6-i-red-dead-redemption-2-s-raznitsej-v-128-let",
+          "title": "Fans compared the sunset landscapes in GTA 6 and Red Dead Redemption 2 with a difference of 128 years",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9eUTW7qEu919WIuBUN69rTjfzEFBDh4PEIFdPs8mkVasTf-WFS9avlYcEKc"
+        }
+      ]
+    },
+    {
+      "query": "is kirk cousins playing this week",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T13:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50484865/sources-vikings-want-keep-kirk-cousins-2027-season",
+        "https://www.vikings.com/news/kirk-cousins-starting-packers-week-10-game-2026",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-vikings-first-reached-out-to-raiders-about-kirk-cousins-on-monday-afternoon"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZhdGQX2yPLJsOuKysVdy9Hu6qHiofuGkRSwQ7V5zc1s1BGY1Qa96Tq1Xeik",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50484865/sources-vikings-want-keep-kirk-cousins-2027-season",
+          "title": "Sources: Vikings want to keep Kirk Cousins, talked to QB about staying in 2027",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZhdGQX2yPLJsOuKysVdy9Hu6qHiofuGkRSwQ7V5zc1s1BGY1Qa96Tq1Xeik"
+        },
+        {
+          "url": "https://www.vikings.com/news/kirk-cousins-starting-packers-week-10-game-2026",
+          "title": "Quarterback Kirk Cousins Starting Vikings at Packers Week 10 Game",
+          "publisher": "Minnesota Vikings",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKt5krs7BOHNBdrXsr_edUFOz0yXZQK8OKvECLfO81LNt9EX3XnfQOy3P9rNA"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-vikings-first-reached-out-to-raiders-about-kirk-cousins-on-monday-afternoon",
+          "title": "Report: Vikings first reached out to Raiders about Kirk Cousins on \"midday Monday\"",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPhpPgibRNWvGafY0ttlBA5YxHe5_wjvqhONDIgL4pwNuFvF-3HN0kqX9EfY"
+        }
+      ]
+    },
+    {
+      "query": "alexander zverev",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T13:30:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/zverev-jodar-shelton-fils-nitto-atp-finals-2026-day-1-preview",
+        "https://www.theguardian.com/sport/live/2026/nov/15/atp-finals-tennis-alexander-zverev-v-rafael-jodar-and-more-live?page=with:block-6af9b8668f080d8d1c27aea7",
+        "https://vsin.com/tennis/atp-finals-best-bets-for-sunday-november-15-wta-finals-prediction-svitolina-vs-andreeva/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJnNnLt9S35nyCqeDBXeam4e_AiUqlWvTUR0nF5cpTu02FSuFZ43vSGLqIvo",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/zverev-jodar-shelton-fils-nitto-atp-finals-2026-day-1-preview",
+          "title": "Zverev meets debutant Jodar, Shelton & Fils clash on Day 1 in Turin",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJnNnLt9S35nyCqeDBXeam4e_AiUqlWvTUR0nF5cpTu02FSuFZ43vSGLqIvo"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/15/atp-finals-tennis-alexander-zverev-v-rafael-jodar-and-more-live?page=with:block-6af9b8668f080d8d1c27aea7",
+          "title": "ATP Finals tennis: Alexander Zverev v Rafael Jódar and more – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsUegwih1caOOKMTyzf2vUg4cbpDJYeqGUSGd25Q9HD4lak_bJBODgtZjskys"
+        },
+        {
+          "url": "https://vsin.com/tennis/atp-finals-best-bets-for-sunday-november-15-wta-finals-prediction-svitolina-vs-andreeva/",
+          "title": "ATP Finals Best Bets for Sunday, November 15 + WTA Finals Prediction: Svitolina vs. Andreeva",
+          "publisher": "VSiN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBK0CWztax2EWwbdsz9PMWsRPRgyMKkUXa_3rdE7kAOLCV2jWFQvppt_DimME"
+        }
+      ]
+    },
+    {
+      "query": "don leonard",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T13:30:00Z",
+      "related_news_urls": [
+        "https://www.democracynow.org/2026/11/12/headlines/rep_elect_don_leonard_says_senior_dems_threatened_to_make_his_life_living_hell_over_jeffries_vote",
+        "https://www.politico.com/live-updates/2026/11/10/congress/don-leonard-hakeem-jeffries-speaker-vote-democrats-01158321",
+        "https://www.axios.com/2026/11/11/don-leonard-ohio-democrat-house-jeffries"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-PUjLqjM0gI-MDeSilFRAev7p0-AUGSn1AwHeEGGr6DoFvRCgLWHS65SUbQs",
+      "image_credit": "Democracy Now!",
+      "news": [
+        {
+          "url": "https://www.democracynow.org/2026/11/12/headlines/rep_elect_don_leonard_says_senior_dems_threatened_to_make_his_life_living_hell_over_jeffries_vote",
+          "title": "Rep.-elect Don Leonard Says Senior Dems Threatened to Make His Life “Living Hell” over Jeffries Vote",
+          "publisher": "Democracy Now!",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-PUjLqjM0gI-MDeSilFRAev7p0-AUGSn1AwHeEGGr6DoFvRCgLWHS65SUbQs"
+        },
+        {
+          "url": "https://www.politico.com/live-updates/2026/11/10/congress/don-leonard-hakeem-jeffries-speaker-vote-democrats-01158321",
+          "title": "Senior Dems will make life ‘hell’ without Jeffries vote , freshman rep says",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKRi4NstAoUdzaOyih1dyr9WB2p4a1TXzKEMiwljAuXpX2ro6T6T0NUYhB_58"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/11/don-leonard-ohio-democrat-house-jeffries",
+          "title": "Don Leonard isn't a House member yet. He's already rocking Capitol Hill.",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrfaKClJnRheM_hXwDDPDqjGZbhOBAk4oMBVrM-J8fmXaP7MtPppusGg7qOm0"
+        }
+      ]
+    },
+    {
+      "query": "demario douglas",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T13:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50462343/how-aj-brown-status-affects-demario-douglas-fantasy-stock-week-10",
+        "https://chowderandchampions.com/patriots-must-reward-demario-douglas-with-new-contract-after-breakout-stretch",
+        "https://dknetwork.draftkings.com/2026/11/15/demario-douglas-fantasy-football-start-or-sit-advice-for-week-10/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqr40_WCcEFmmp-dZQQBAqhpwGdN3zpmYEzTmLoxD7EurriSVn8adchDXCXuw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50462343/how-aj-brown-status-affects-demario-douglas-fantasy-stock-week-10",
+          "title": "How A.J. Brown's status affects DeMario Douglas' fantasy stock in Week 10",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqr40_WCcEFmmp-dZQQBAqhpwGdN3zpmYEzTmLoxD7EurriSVn8adchDXCXuw"
+        },
+        {
+          "url": "https://chowderandchampions.com/patriots-must-reward-demario-douglas-with-new-contract-after-breakout-stretch",
+          "title": "Patriots must reward DeMario Douglas with a new contract after breakout stretch",
+          "publisher": "Chowder and Champions",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZqcYtzGOCAK8AXgNAxZtLx_vqQzBwTEG5FwcSHEd15GFikChAp84xC24Rlzo"
+        },
+        {
+          "url": "https://dknetwork.draftkings.com/2026/11/15/demario-douglas-fantasy-football-start-or-sit-advice-for-week-10/",
+          "title": "DeMario Douglas Fantasy Football Start or Sit Advice for Week 10",
+          "publisher": "DraftKings Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjh5iEQQniTJ5A66PHTC2rQtTwAwPvqCAPwI4cw6rsC8C8p3lqNC4uXhNn7YU"
+        }
+      ]
+    },
+    {
+      "query": "nfl injury report",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-15T13:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
+        "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-14/schultz-kenneth-walker-groin-out-vs-falcons"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdqzx3IWckDsxFFUam1FFQZY2S13sYB8T5C9TqITZjqCbWN8D2Mlhy36L-Mjg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
+          "title": "Chiefs' Kenneth Walker III (groin) to sit out vs. Falcons",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdqzx3IWckDsxFFUam1FFQZY2S13sYB8T5C9TqITZjqCbWN8D2Mlhy36L-Mjg"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/",
+          "title": "NFL Week 10 injury report: Chiefs' Kenneth Walker III ruled out, Patriots' A.J. Brown questionable",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa-cjoh4stNJyoRTBMnBZRLoJluiHXzCbExn2vi1DMYFzE2K9TkkxB0yzy2Ps"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-14/schultz-kenneth-walker-groin-out-vs-falcons",
+          "title": "Schultz: Kenneth Walker (groin) out vs. Falcons",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-9LrE34X5TL5qnaL4AM0Z4qfDQetX8wrjzj1LXW3NFGGvG6e7ovBqx4JnqOQ"
         }
       ]
     }
