@@ -3,27 +3,349 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T07:01:28.117947Z",
+  "checked_at": "2026-11-15T07:31:15.500150Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "fitness",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T07:10:00Z",
+      "related_news_urls": [
+        "https://www.independent.co.uk/health-and-fitness/fitness-goals-2027-advice-better-health-b3084539.html",
+        "https://bioengineer.org/preschool-fitness-ties-to-home-activity-settings-dissolve-after-child-movement-controls/",
+        "https://goodmenproject.com/featured-content/does-it-matter-when-you-work-out/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS4rp9ltBg0aStT8bU2aj5J7PO6cuaQj60iLBjKKKaqIfY118LhBFsB4o3yPw",
+      "image_credit": "The Independent",
+      "news": [
+        {
+          "url": "https://www.independent.co.uk/health-and-fitness/fitness-goals-2027-advice-better-health-b3084539.html",
+          "title": "Want fitness results? Do this every day until 2027",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS4rp9ltBg0aStT8bU2aj5J7PO6cuaQj60iLBjKKKaqIfY118LhBFsB4o3yPw"
+        },
+        {
+          "url": "https://bioengineer.org/preschool-fitness-ties-to-home-activity-settings-dissolve-after-child-movement-controls/",
+          "title": "Preschool Fitness Ties to Home Activity Settings Dissolve After Child Movement Controls",
+          "publisher": "Bioengineer.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6fYJRD9fGb-6NRYODp83JSc-dHEHJ_UFA1-01G-hpQp8UVyuxB7gOtRePc04"
+        },
+        {
+          "url": "https://goodmenproject.com/featured-content/does-it-matter-when-you-work-out/",
+          "title": "Does It Matter When You Work Out?",
+          "publisher": "The Good Men Project",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jV7EamsSN3q7K1n3w2bH7kLc2ThuotZXuJTFoN7Zi7XyRQpOG9B-pAgc9GA"
+        }
+      ]
+    },
+    {
+      "query": "sa vs ban",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T07:10:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/match-preview",
+        "https://www.dhakatribune.com/sport/cricket/424669/shanto-backs-pace-attack-to-make-impact",
+        "https://novanews.co.za/zubayr-hamza-south-africa-bangladesh-first-test/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvpJBlACtu9oI5iNI2IGe1T740oAlcZ67h7DgjaMmb2-OBBZhXlyncGZh5T78",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/match-preview",
+          "title": "On-song South Africa host Bangladesh with an eye on another WTC final",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvpJBlACtu9oI5iNI2IGe1T740oAlcZ67h7DgjaMmb2-OBBZhXlyncGZh5T78"
+        },
+        {
+          "url": "https://www.dhakatribune.com/sport/cricket/424669/shanto-backs-pace-attack-to-make-impact",
+          "title": "Shanto backs pace attack to make impact",
+          "publisher": "Dhaka Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq4xjqBB58kesxMNv7RFleBW8MJ0-6BEH-MYs7FesEECCztRzxNItEmUO31Qw"
+        },
+        {
+          "url": "https://novanews.co.za/zubayr-hamza-south-africa-bangladesh-first-test/",
+          "title": "Bavuma backs Hamza at number three against Bangladesh",
+          "publisher": "https://novanews.co.za/",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxFs5hpTneiZXgJ_iTqu7UO0lGqw8f3KvuK3BbFvRy5D5zpbQDIrfkIiY3apA"
+        }
+      ]
+    },
+    {
+      "query": "big 12 standings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T07:10:00Z",
+      "related_news_urls": [
+        "https://byucougars.com/news/2026/11/14/byu-sweeps-big-12-titles-repeats-as-tournament-champions",
+        "https://wacotrib.com/sports/college/baylor/article_92f15516-78be-4dd0-8382-5b2a665e9a45.html",
+        "https://baylorbears.com/news/2026/11/14/soccer-no-7-soc-falls-to-no-14-byu-in-big-12-championship-3-2"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4W0R8QtUdLsSdV0eClteNx-MQ195ygnq7E60fF058X5XWz7rSvWJW_OzO5SI",
+      "image_credit": "BYU Athletics",
+      "news": [
+        {
+          "url": "https://byucougars.com/news/2026/11/14/byu-sweeps-big-12-titles-repeats-as-tournament-champions",
+          "title": "BYU Sweeps Big 12 Titles, Repeats as Tournament Champions",
+          "publisher": "BYU Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4W0R8QtUdLsSdV0eClteNx-MQ195ygnq7E60fF058X5XWz7rSvWJW_OzO5SI"
+        },
+        {
+          "url": "https://wacotrib.com/sports/college/baylor/article_92f15516-78be-4dd0-8382-5b2a665e9a45.html",
+          "title": "Bears refuse to go quietly but BYU holds on for Big 12 crown",
+          "publisher": "Waco Tribune-Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwsaQAesW2oePCEWFeq5vZMtssVZSOePCy9EocWcEaM5pfFSQPPtXF896-OlI"
+        },
+        {
+          "url": "https://baylorbears.com/news/2026/11/14/soccer-no-7-soc-falls-to-no-14-byu-in-big-12-championship-3-2",
+          "title": "No. 7 SOC Falls to No. 14 BYU in Big 12 Championship, 3-2",
+          "publisher": "BaylorBears.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSboJR5xsL-ZElKanjnYwAwaSINdWwo0jMZMEhvLdRPs06hh9wANMblLf10D1c"
+        }
+      ]
+    },
+    {
+      "query": "dampier utah",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T07:10:00Z",
+      "related_news_urls": [
+        "https://www.sltrib.com/sports/utah-utes/2026/11/12/what-are-devon-dampiers-heisman/",
+        "https://sports.yahoo.com/articles/utah-devon-dampier-explains-fans-061117248.html",
+        "https://247sports.com/article/utah-football-launches-spid4heisman-campaign-for-quarterback-devon-dampier-292607897/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdCG7t3IUoiOwXSIDo8Cg9ggpsdlTm6HvEPm2JOBgIv-TBxPS52kP32aCh_I",
+      "image_credit": "The Salt Lake Tribune",
+      "news": [
+        {
+          "url": "https://www.sltrib.com/sports/utah-utes/2026/11/12/what-are-devon-dampiers-heisman/",
+          "title": "Utah QB Devon Dampier has fourth-best Heisman Trophy odds after BYU performance",
+          "publisher": "The Salt Lake Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdCG7t3IUoiOwXSIDo8Cg9ggpsdlTm6HvEPm2JOBgIv-TBxPS52kP32aCh_I"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/utah-devon-dampier-explains-fans-061117248.html",
+          "title": "Utah’s Devon Dampier Explains What Fans Have Wrong About Growing Heisman Attention",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1aqheyBIXmzDcj0GraAKSF80jxE6-5IGPJKy7sSYL4xmrsCbhmypFnB84PHk"
+        },
+        {
+          "url": "https://247sports.com/article/utah-football-launches-spid4heisman-campaign-for-quarterback-devon-dampier-292607897/",
+          "title": "Utah Launches #SPID4HEISMAN Campaign",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXoQLtH3B8ZjzfjvSJ9gSB6bB29KEFiF8uxTpIGRj-4Fn1brmZLRF7UEGC5B4"
+        }
+      ]
+    },
+    {
+      "query": "aiden mizell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T07:10:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/sports/ucla/story/2026-11-13/ucla-defeats-illinois-improves-to-10-0-for-first-time-since-1998",
+        "https://www.espn.com/college-football/story/_/id/50477249/ucla-qb-ty-dieffenbach-leaves-game-injury",
+        "https://uclabruins.com/news/2026/11/13/postgame-quotes-ucla-vs-illinois"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd68dT6FKz44KwBcYh-swbkcK4Uo3_YvKCK5BDo_Lfo84OZ6pEwlXKNbhUrW8",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/sports/ucla/story/2026-11-13/ucla-defeats-illinois-improves-to-10-0-for-first-time-since-1998",
+          "title": "No. 4 UCLA defeats Illinois, improves to 10-0 for first time since 1998",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd68dT6FKz44KwBcYh-swbkcK4Uo3_YvKCK5BDo_Lfo84OZ6pEwlXKNbhUrW8"
+        },
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50477249/ucla-qb-ty-dieffenbach-leaves-game-injury",
+          "title": "UCLA QB Ty Dieffenbach says first-half shoulder injury vs. Illinois not serious",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GDkjsBW4AfsyYMZxUFjFoCPXQf6iFp6Kja1ma6CEg7qrqj-SFDTc2KhUMDk"
+        },
+        {
+          "url": "https://uclabruins.com/news/2026/11/13/postgame-quotes-ucla-vs-illinois",
+          "title": "Postgame Quotes - UCLA vs. Illinois",
+          "publisher": "UCLA Bruins",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKSFdGiV5XXYunEkfGAMXoB_jP3L6VXGO6qSyEZyAt0ge47sh7YZuEeUxSc1g"
+        }
+      ]
+    },
+    {
+      "query": "aidan mizell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T07:10:00Z",
+      "related_news_urls": [
+        "https://hailfloridahail.com/aidan-mizell-is-giving-ucla-the-breakout-florida-fans-waited-years-to-see",
+        "https://www.fox.com/watch/clip/fmc-m7h1yvtc2l0xxwu9/aidan-mizell-grabs-end-zone-interception-against-illinois",
+        "https://www.dailynews.com/2026/11/09/competition-breeds-success-for-ucla-footballs-aidan-mizell-scooter-jackson/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgu5y6yNqKA66YeRu5I-JItF1lcxPK2IWuwQG6W9sWmzaLvSz01qS70Eh2WR0",
+      "image_credit": "Hail Florida Hail",
+      "news": [
+        {
+          "url": "https://hailfloridahail.com/aidan-mizell-is-giving-ucla-the-breakout-florida-fans-waited-years-to-see",
+          "title": "Aidan Mizell is giving UCLA the breakout Florida fans waited years to see",
+          "publisher": "Hail Florida Hail",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgu5y6yNqKA66YeRu5I-JItF1lcxPK2IWuwQG6W9sWmzaLvSz01qS70Eh2WR0"
+        },
+        {
+          "url": "https://www.fox.com/watch/clip/fmc-m7h1yvtc2l0xxwu9/aidan-mizell-grabs-end-zone-interception-against-illinois",
+          "title": "Aidan Mizell grabs end-zone interception against Illinois",
+          "publisher": "FOX One",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFPBij5cP42CjWIo_kL_xS9J-ho8B99tKb0YoSJlX01VEiVVAwz4bKSDoMWIs"
+        },
+        {
+          "url": "https://www.dailynews.com/2026/11/09/competition-breeds-success-for-ucla-footballs-aidan-mizell-scooter-jackson/",
+          "title": "Competition breeds success for UCLA football’s Aidan Mizell, Scooter Jackson",
+          "publisher": "Los Angeles Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgQqafBjdsISO7WH3YcZ3gHX7Znns-AUfWV5nSXUaKVs2_zLCZxgtpK6cHT-g"
+        }
+      ]
+    },
+    {
+      "query": "karely ruiz",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T07:10:00Z",
+      "related_news_urls": [
+        "https://tribuna.com.mx/espectaculos/2026/11/14/video-karely-ruiz-se-pelea-con-odette-orlena-y-agrediria-a-cukis-seria-expulsada-de-la-mansion-vip_715591/",
+        "https://heraldodemexico.com.mx/espectaculos/2026/11/13/karely-ruiz-abandono-la-mansion-vip-esta-es-la-verdad-2918465.html",
+        "https://www.tvnotas.com.mx/espectaculos-mexico/karely-abandona-la-mansion-vip-2-se-pelea-con-odette-orlena-y-exhiben-presunta-agresion-a-cukis"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsL7OJOlhcESoZBkpWhObwYKDyFTb6hxHlzxYaLL-f8tswncWch5l1sPTuHfI",
+      "image_credit": "La Tribuna (México)",
+      "news": [
+        {
+          "url": "https://tribuna.com.mx/espectaculos/2026/11/14/video-karely-ruiz-se-pelea-con-odette-orlena-y-agrediria-a-cukis-seria-expulsada-de-la-mansion-vip_715591/",
+          "title": "VIDEO: Karely Ruiz se pelea con Odette Orlena y agrediría a Cukis; sería expulsada de ‘La Mansión VIP’",
+          "publisher": "La Tribuna (México)",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsL7OJOlhcESoZBkpWhObwYKDyFTb6hxHlzxYaLL-f8tswncWch5l1sPTuHfI"
+        },
+        {
+          "url": "https://heraldodemexico.com.mx/espectaculos/2026/11/13/karely-ruiz-abandono-la-mansion-vip-esta-es-la-verdad-2918465.html",
+          "title": "¿Karely Ruiz abandonó La Mansión VIP?, esta es la verdad",
+          "publisher": "El Heraldo de México",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaNZbOmPBH4Fv2yVcabSRa2C48vB4MWDtSTF8cQq2b_jm3fHCOOPb8rgF3GWc"
+        },
+        {
+          "url": "https://www.tvnotas.com.mx/espectaculos-mexico/karely-abandona-la-mansion-vip-2-se-pelea-con-odette-orlena-y-exhiben-presunta-agresion-a-cukis",
+          "title": "¿Karely abandona ‘La mansión VIP 2’? Se pelea con Odette Orlena y exhiben presunta agresión a Cukis",
+          "publisher": "TVNotas",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqbIhLf2e1Dm9oQU5TiKJ144Gcdka7NSc-Www1sZ2_sWqQkkFTumTx1WCZCZ8"
+        }
+      ]
+    },
+    {
+      "query": "football games tomorrow",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T07:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7781914/2026/11/14/faa-ground-stop-iowa-punter-peter-everitt/",
+        "https://www.kcrg.com/2026/11/14/faa-ground-stop-order-impacting-iowa-purdue-game/",
+        "https://www.hawkcentral.com/story/sports/college/iowa/football/2026/11/13/purdue-football-buses-iowa-city-faa-ground-stop/92767924007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf2c-4SIfOcbqhKgTFqNZhMjUpBJ_CZx2LKR_nps9PuHGGmaI-xIyTh54seTA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7781914/2026/11/14/faa-ground-stop-iowa-punter-peter-everitt/",
+          "title": "No flight, no problem: Ground stop doesn’t keep Aussie legend from watching son punt for Iowa",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf2c-4SIfOcbqhKgTFqNZhMjUpBJ_CZx2LKR_nps9PuHGGmaI-xIyTh54seTA"
+        },
+        {
+          "url": "https://www.kcrg.com/2026/11/14/faa-ground-stop-order-impacting-iowa-purdue-game/",
+          "title": "FAA ground stop order impacting travel plans for Iowa, Purdue game",
+          "publisher": "KCRG",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUinkcl98EGErFmFPYm9SVlVYompslgiJbM9OxCrT3x3R0jKMVpEOPq3xqcCs"
+        },
+        {
+          "url": "https://www.hawkcentral.com/story/sports/college/iowa/football/2026/11/13/purdue-football-buses-iowa-city-faa-ground-stop/92767924007/",
+          "title": "Purdue football team to take buses to Iowa City due to FAA ground stop",
+          "publisher": "Hawk Central",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsrj37MgNIZOAhvDydIx7ddGRJkZ8It_UkFUnf6eVbTVTjafsxUukmDwvjqAs"
+        }
+      ]
+    },
+    {
+      "query": "mike perry",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T07:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/mma/article/mike-perry-re-signs-with-ufc-officially-returning-more-than-5-years-after-leaving-promotion-204136846.html",
+        "https://www.si.com/fannation/mma/news/ufc-reportedly-re-signs-fan-favorite-bkfc-star-more-than-5-years-after-ufc-exit",
+        "https://mmasucka.com/news/mike-perry-re-signs-with-ufc-after-appearing-in-anti-doping-test-records/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBjpqfPii0z456hJtbTSfEws0NwIgreWllNxVfHQtQ_vDM9fUxDSiuC7MUgnM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/mma/article/mike-perry-re-signs-with-ufc-officially-returning-more-than-5-years-after-leaving-promotion-204136846.html",
+          "title": "Mike Perry re-signs with UFC, officially returning more than 5 years after leaving promotion",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBjpqfPii0z456hJtbTSfEws0NwIgreWllNxVfHQtQ_vDM9fUxDSiuC7MUgnM"
+        },
+        {
+          "url": "https://www.si.com/fannation/mma/news/ufc-reportedly-re-signs-fan-favorite-bkfc-star-more-than-5-years-after-ufc-exit",
+          "title": "UFC Reportedly Re-Signs Fan Favorite BKFC Star More Than 5 Years After UFC Exit",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjF1KCZwgxjpxZ2WYpjvDKUojVQz3aGHIzg-ENYTVQl3H34-IGHsVb8QlcAgg"
+        },
+        {
+          "url": "https://mmasucka.com/news/mike-perry-re-signs-with-ufc-after-appearing-in-anti-doping-test-records/",
+          "title": "Mike Perry Re-Signs With UFC After Appearing in Anti-Doping Test Records",
+          "publisher": "MMA Sucka",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD-cq2dkbux7togRJo1ignmOtrp1QPfaB9lNFhsXqrU7cS7LT34F1wl1AHcN8"
+        }
+      ]
+    },
     {
       "query": "travis barker",
       "approx_searches": "200+",
       "published_at": "2026-11-15T06:40:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/music/2026/11/10/phil-collins-tour-return-health-update-rock-hall-of-fame/92711570007/",
-        "https://www.imdb.com/pt/news/ni66109937/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/music/articles/phil-collins-tells-rock-hall-052825539.html"
+        "https://apnews.com/video/phil-collins-on-health-scare-i-live-a-simple-life-85ab59482a504555b163ae05f3753658",
+        "https://www.usatoday.com/story/entertainment/music/2026/11/14/phil-collins-rock-roll-hall-of-fame-induction/92791157007/",
+        "https://www.imdb.com/pt/news/ni66109937/?ref_=nwc_art_perm"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr_i2vSJKGyAKi89DBq0Y7Fo9Ljj_uhQVIxXmCkUTYJBfgybMIww1Kv4pYkI4",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefA4Oyb-3vVL2X4StlFo6iw7e4ZCEPVutn4kGdrq-BMYSK3-XiTjLj1Ve78E",
+      "image_credit": "AP News",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/10/phil-collins-tour-return-health-update-rock-hall-of-fame/92711570007/",
-          "title": "Phil Collins, 75, considers touring again after years of health struggles",
+          "url": "https://apnews.com/video/phil-collins-on-health-scare-i-live-a-simple-life-85ab59482a504555b163ae05f3753658",
+          "title": "Phil Collins on health scare: ‘I live a simple life’",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefA4Oyb-3vVL2X4StlFo6iw7e4ZCEPVutn4kGdrq-BMYSK3-XiTjLj1Ve78E"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/14/phil-collins-rock-roll-hall-of-fame-induction/92791157007/",
+          "title": "Phil Collins overcomes health issues to attend Rock & Roll Hall of Fame induction",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr_i2vSJKGyAKi89DBq0Y7Fo9Ljj_uhQVIxXmCkUTYJBfgybMIww1Kv4pYkI4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjErsMEOJdmeyqnCU6U5HNLBeEdCKAmfVfxuX6v7TIPGFdigBJ4V1quCqZ-eQ"
         },
         {
           "url": "https://www.imdb.com/pt/news/ni66109937/?ref_=nwc_art_perm",
@@ -31,328 +353,6 @@
           "publisher": "IMDb",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHM3lHn05ZQPkN6birdR0i6X6Icmq7P_ua1Zk8xboSDqMDIfPbU-QsnxvK4D8"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/music/articles/phil-collins-tells-rock-hall-052825539.html",
-          "title": "Phil Collins Tells Rock Hall Crowd: ‘You Haven’t Heard the Last of Me’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAepMcMY6n2iGILsR1kohxl_Xrz5ON5y4mbKW6lgUNrTafRw433Ak6QstzeTo"
-        }
-      ]
-    },
-    {
-      "query": "magnus carlsen",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T06:40:00Z",
-      "related_news_urls": [
-        "https://www.chess.com/news/view/2026-total-chess-world-championship-tour-pilot-day-5",
-        "https://www.fide.com/martirosyan-defeats-carlsen-on-day-3-in-budapest/",
-        "https://chessbase.in/news/can-caruana-overtake-magnus-carlsen-total-chess-pilot-day-3"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwuU2sOmius2Smdc01uL8Wpi5g7V9xVEq2UmjJ-Zhli05dUdoO4AqZrwQ8w6w",
-      "image_credit": "Chess.com",
-      "news": [
-        {
-          "url": "https://www.chess.com/news/view/2026-total-chess-world-championship-tour-pilot-day-5",
-          "title": "Firouzja, Caruana, Giri, MVL Lead Before Final Day; Carlsen Out Of Contention",
-          "publisher": "Chess.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwuU2sOmius2Smdc01uL8Wpi5g7V9xVEq2UmjJ-Zhli05dUdoO4AqZrwQ8w6w"
-        },
-        {
-          "url": "https://www.fide.com/martirosyan-defeats-carlsen-on-day-3-in-budapest/",
-          "title": "Martirosyan defeats Carlsen on Day 3 in Budapest – International Chess Federation",
-          "publisher": "FIDE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwEM37EfgbQLwI-7y53E_82LwyNFj4O0RHoRq4rW_RSPgi4hHa8rJMTrSE3Y"
-        },
-        {
-          "url": "https://chessbase.in/news/can-caruana-overtake-magnus-carlsen-total-chess-pilot-day-3",
-          "title": "Total Chess Pilot 2026 Day 3: 15 years later, Magnus' world no.1 spot in Danger",
-          "publisher": "ChessBase India",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRHz9UkVyvn2a5Us_Yn3Nkm12HgGOtKVekaW_ytU4DRaBuCt4uOO2wcv5iguw"
-        }
-      ]
-    },
-    {
-      "query": "james comey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T06:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/14/us/politics/comey-witness-justice-dept-aggressive-tactics.html",
-        "https://www.yahoo.com/news/politics/articles/ted-cruz-insists-james-comeys-222021273.html",
-        "https://www.nationalreview.com/corner/its-highly-unlikely-the-trump-doj-can-extend-the-comey-statute-of-limitations"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzA1uoM79O7_txBD4KFQUyhMunkv15Y3nOponRR2RCm_84Nh-N90RtXs1hj_Y",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/14/us/politics/comey-witness-justice-dept-aggressive-tactics.html",
-          "title": "Key Witness in Comey Case Attests to Justice Dept.’s Aggressive Tactics",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzA1uoM79O7_txBD4KFQUyhMunkv15Y3nOponRR2RCm_84Nh-N90RtXs1hj_Y"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/ted-cruz-insists-james-comeys-222021273.html",
-          "title": "Ted Cruz Insists That James Comey's '86' Meant 'Kill,' Citing Nonexistent Mob Movies (opinion)",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm5SvTXh6PpupNgmGIip78d4AiCHRrWod9JwZmceY7jl5b8e5vdM8ANqufbxE"
-        },
-        {
-          "url": "https://www.nationalreview.com/corner/its-highly-unlikely-the-trump-doj-can-extend-the-comey-statute-of-limitations",
-          "title": "It’s Highly Unlikely the Trump DOJ Can Extend the Comey Statute of Limitations",
-          "publisher": "National Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStA1vEOACUiMPYQUzy7xmAcf9DCQzCioZ4jAHKILQ0XRcM5RgDYxmW_P4kegM"
-        }
-      ]
-    },
-    {
-      "query": "boxing tonight",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T06:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/boxing/story/_/id/50461800/paul-doumbe-card-adds-overeem-manuwa-boxing-match-co-main",
-        "https://www.mmamania.com/boxing/485639/alistair-overeem-returns-box-ufc-poster-boy-jake-paul-event-christmas-eve",
-        "https://britishboxingnews.co.uk/news/british-ko-artist-paul-doumbe-card/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuBfuOS6u_mTTexQ_EzuvqZg3bpNT8RLecTk4MhqhLZT_Pn51iZAtV3xK3Nx0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/boxing/story/_/id/50461800/paul-doumbe-card-adds-overeem-manuwa-boxing-match-co-main",
-          "title": "Overeem-Manuwa boxing match added to Dec. 24 Paul-Doumbé card",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuBfuOS6u_mTTexQ_EzuvqZg3bpNT8RLecTk4MhqhLZT_Pn51iZAtV3xK3Nx0"
-        },
-        {
-          "url": "https://www.mmamania.com/boxing/485639/alistair-overeem-returns-box-ufc-poster-boy-jake-paul-event-christmas-eve",
-          "title": "Alistair Overeem returns to box UFC ‘Poster Boy’ at Jake Paul boxing event on Christmas Eve",
-          "publisher": "MMA Mania",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTR8-GAlJHb9GBuHko8U56TIKBBnY4VnLi5UlPydrrwm5E4T8y60NWKK2eu84k"
-        },
-        {
-          "url": "https://britishboxingnews.co.uk/news/british-ko-artist-paul-doumbe-card/",
-          "title": "British knockout artist added to Jake Paul-Cédric Doumbé card",
-          "publisher": "British Boxing News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQwBFKZ2xzKvqL50jf_zHHU2UPeCBOpQeFsR_wvWNvZbo3o8T_4l_u3EdqoI4"
-        }
-      ]
-    },
-    {
-      "query": "ryan reynolds",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T06:30:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/avengers-doomsday-ryan-reynolds-hugh-jackman-writers-1236946441/",
-        "https://www.yahoo.com/entertainment/movies/articles/ryan-reynolds-turns-avengers-doomsday-211640359.html",
-        "https://www.imdb.com/news/ni66108918/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7Eh8vlSIX6ZN-8Vj1ve7Kze4_t1HjCw39IvIE83KhktAvco77EJJC7RQRCFI",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/avengers-doomsday-ryan-reynolds-hugh-jackman-writers-1236946441/",
-          "title": "‘Avengers: Doomsday’ Lists Ryan Reynolds and Hugh Jackman Among 10 Writers",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7Eh8vlSIX6ZN-8Vj1ve7Kze4_t1HjCw39IvIE83KhktAvco77EJJC7RQRCFI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/ryan-reynolds-turns-avengers-doomsday-211640359.html",
-          "title": "Ryan Reynolds Turns Avengers: Doomsday Credits Buzz Into a Deadpool Punchline",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66108918/?ref_=nwc_art_perm",
-          "title": "Avengers: Doomsday's Official Writing Credits Confirm Two Major Marvel Cameos",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-ipXQ4VAndrwy4SuhP8a5F3eZ_w6aE6vh2fYvWD0YTxy_deqXhfNIwwM7XY"
-        }
-      ]
-    },
-    {
-      "query": "gus johnson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T06:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/why-gus-johnson-joel-klatt-191121784.html",
-        "https://scarletandgame.com/why-ohio-state-fans-won-t-have-to-listen-to-sleepy-gus-johnson-for-big-noon-game-vs-northwestern",
-        "https://www.essentiallysports.com/ncaa-college-football-news-major-big-ten-matchup-faces-last-minute-changes-amid-nationwide-ground-stop-ohio-state-northwestern-wildcats-joel-klatt-gus-johnson/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkc5W-Q_soUJCTu4pTxVEjGJN5bBtIRMNh3X6ewYetvyKdYQUL5QGyKXRNwvU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/why-gus-johnson-joel-klatt-191121784.html",
-          "title": "Why Gus Johnson & Joel Klatt Won’t Be Calling Ohio State vs. Northwestern ‘Big Noon Kickoff’",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkc5W-Q_soUJCTu4pTxVEjGJN5bBtIRMNh3X6ewYetvyKdYQUL5QGyKXRNwvU"
-        },
-        {
-          "url": "https://scarletandgame.com/why-ohio-state-fans-won-t-have-to-listen-to-sleepy-gus-johnson-for-big-noon-game-vs-northwestern",
-          "title": "Why Ohio State fans won't have to listen to sleepy Gus Johnson for Big Noon game vs. Northwestern",
-          "publisher": "Scarlet and Game",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8JpCkbCFV5wHqkfuNl2lkHhk5jJq2NcY3t51UDAE8WNzvj9se_qwP4pQDZmE"
-        },
-        {
-          "url": "https://www.essentiallysports.com/ncaa-college-football-news-major-big-ten-matchup-faces-last-minute-changes-amid-nationwide-ground-stop-ohio-state-northwestern-wildcats-joel-klatt-gus-johnson/",
-          "title": "Major Big Ten Matchup Faces Last-Minute Changes Amid Nationwide Ground Stop",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFnrQtWZZp6nBMPh2sFqEKfQgzB1cKnd5VsFUkwdFf9SvP5bwWOxTECVtuPPk"
-        }
-      ]
-    },
-    {
-      "query": "when does gta 6 online come out",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T06:20:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
-        "https://www.notebookcheck.net/GTA-6-Online-release-window-has-apparently-leaked.1449676.0.html",
-        "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
-          "title": "Another Update About The ‘GTA 6 Online’ Release Date",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68"
-        },
-        {
-          "url": "https://www.notebookcheck.net/GTA-6-Online-release-window-has-apparently-leaked.1449676.0.html",
-          "title": "GTA 6 Online release window has apparently leaked",
-          "publisher": "Notebookcheck",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfnWEPwO-gSbgY74daTJfgOSKMKyJArFY5Qk2cPadYrIoNc9X-JdthheAuaw"
-        },
-        {
-          "url": "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
-          "title": "PSA: GTA 6 Does Not Have Online Multiplayer at Launch",
-          "publisher": "Push Square",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypL5G2pJbFHZlCFW_tZcnq6-SMbceTH44sP5Veo6_32nZYemNCVnofdtWRZg"
-        }
-      ]
-    },
-    {
-      "query": "spacex starship rocket launch",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-15T06:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/13/science/live-news/spacex-starship-flight-15-ship-catch",
-        "https://www.dallasnews.com/news/article/spacex-s-starship-returns-from-orbit-and-is-22531009.php",
-        "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeaYo1cvDknj1XJRjhWJQgky3jiyc65B9tS8oGsH47FdCdBBj5uXNn0suNGVg",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/13/science/live-news/spacex-starship-flight-15-ship-catch",
-          "title": "Live updates: SpaceX Starship soars in orbit, still aiming for ship catch in unprecedented test flight",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeaYo1cvDknj1XJRjhWJQgky3jiyc65B9tS8oGsH47FdCdBBj5uXNn0suNGVg"
-        },
-        {
-          "url": "https://www.dallasnews.com/news/article/spacex-s-starship-returns-from-orbit-and-is-22531009.php",
-          "title": "SpaceX’s Starship returns from orbit and is captured by launch pad arms in a dramatic first",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJMhcpgNafTyvUHwJ3ooAMVswZlezP1qsO7D2wWzULRsl-5px0dPIs9AKlL6s"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
-          "title": "SpaceX catches upper stage of Starship rocket in historic first",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5o64_F2XPk83rrhXPNpec0l1fkMXAeQp5uMr9xS7a4bEPcs7mtTV9CdepqRg"
-        }
-      ]
-    },
-    {
-      "query": "rhamondre stevenson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T06:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50438482/patriots-rhamondre-stevenson-dealing-knee-tendon-issue",
-        "https://sports.yahoo.com/articles/patriots-decision-signals-good-news-040623687.html",
-        "https://nesn.com/new-england-patriots/news/patriots-rhamondre-stevenson-injury-update-lions/8c8432682d533cd35eb64e32"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFhcg9WMgMFEPZbuLvLnxECtx2rgauj3_-_OrJPeyHL0S0RxyWvdCef8BWun8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50438482/patriots-rhamondre-stevenson-dealing-knee-tendon-issue",
-          "title": "Source: Pats' Rhamondre Stevenson expected to miss time with knee tendon issue",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFhcg9WMgMFEPZbuLvLnxECtx2rgauj3_-_OrJPeyHL0S0RxyWvdCef8BWun8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/patriots-decision-signals-good-news-040623687.html",
-          "title": "Patriots Decision Signals Good News for Rhamondre Stevenson",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmxsfpGp8sxgBx4aZaFDFOXx5i4z4CqqPC_3oJZ_R9nUsoBStZiynaaIdYqyY"
-        },
-        {
-          "url": "https://nesn.com/new-england-patriots/news/patriots-rhamondre-stevenson-injury-update-lions/8c8432682d533cd35eb64e32",
-          "title": "Patriots' Rhamondre Stevenson Pushing to Play vs. Lions",
-          "publisher": "NESN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5Ln5LNmYePOLATQMuNbnAhSApWlNK2-81F75WFg1E43CQvQhT8COm98OWxG8"
-        }
-      ]
-    },
-    {
-      "query": "daayra movie",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T06:00:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66109602/?ref_=ttnw_art_perm",
-        "https://thenewsmill.com/2026/11/kareena-kapoor-and-prithviraj-sukumarans-daayra-to-premiere-on-netflix-on-november-13/",
-        "https://www.telegraphindia.com/entertainment/daayra-ott-release-when-and-where-to-watch-meghna-gulzar-directed-investigative-drama/cid/2189082"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS60Qoo_zN3v0I0D_-vhphV2h5tlAmvcmQdQWvzI88zdIp8FXWJpBmWSIvWBVQ",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66109602/?ref_=ttnw_art_perm",
-          "title": "‘Daayra’ Ending Explained: What Happens to Raman and Ajooni in Meghna Gulzar’s Thriller?",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS60Qoo_zN3v0I0D_-vhphV2h5tlAmvcmQdQWvzI88zdIp8FXWJpBmWSIvWBVQ"
-        },
-        {
-          "url": "https://thenewsmill.com/2026/11/kareena-kapoor-and-prithviraj-sukumarans-daayra-to-premiere-on-netflix-on-november-13/",
-          "title": "Kareena Kapoor and Prithviraj Sukumaran’s ‘Daayra’ to premiere on Netflix on November 13",
-          "publisher": "The News Mill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1SlQM2aeKBf98ys2x-Y0IkTMicy78vQAT0ejQz2cQdC3PcV7HNvQnO7UCXMU"
-        },
-        {
-          "url": "https://www.telegraphindia.com/entertainment/daayra-ott-release-when-and-where-to-watch-meghna-gulzar-directed-investigative-drama/cid/2189082",
-          "title": "‘Daayra’ OTT release: When and where to watch the Meghna Gulzar-directed investigative drama",
-          "publisher": "Telegraph India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlFDP4dcVA_SOwt_PSMjFAMvyU1-32aRi0IxJhtcSiZ2reKEB7dUSm4ccdTXQ"
         }
       ]
     }
