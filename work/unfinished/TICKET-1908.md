@@ -9,7 +9,7 @@ state: source_tested
 dot: "🟡"
 progress_percent: 0
 progress_basis: "0/8 original full-ticket tracks have complete production acceptance. Signed Brain claim, heartbeat, dependency, recovery, and owner progress changes are source-tested."
-sessions_spent: 3
+sessions_spent: 4
 sessions_remaining_estimate: "unknown; exact-head CI, independent review, approved release, and live signed-runner and Android acceptance needed"
 agent: "GPT GitHub-connected source repair; no signed Brain coordinator lease claimed"
 lease_id: null
@@ -29,7 +29,8 @@ tests:
   - "MERGE SESSION 04 GREEN: 283 focused Node tests passed locally, including SQLite-backed job and restart fixtures."
   - "MERGE SESSION 04 exact head c0cf8521ba0686e13f740da9b5d34730221ab4cb: 17 GitHub checks passed, including Continuity runner 43391434377 and packet contracts 43391434643."
   - "2026-11-14: Local regressions reproduced rejection of an existing test that references the changed source, acceptance of a mismatched PR head, and a repair race after a verified review."
-independent_review: "pending on PR #1911"
+  - "2026-11-15: Independent review reproduced mixed-case repository collisions. Five focused regressions failed before the fix. The updated selector and SQLite checkpoint adapter passed 175 local Continuity and Brain regressions."
+independent_review: "Independent source review found mixed-case repository collisions at 1dd3a6e5. Review of the repair and GitHub approval are pending on PR #1911."
 merged: false
 deployed: false
 live_verified: false

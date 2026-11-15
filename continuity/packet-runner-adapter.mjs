@@ -1,4 +1,4 @@
-import {needsHistoryScan,recordPacketReceipt,selectActionPackets,validPacket,scopesOverlap} from './work-packets.mjs';
+import {dependencyPending,needsHistoryScan,normalizedIds,packetKey,recordPacketReceipt,scopesOverlap,selectActionPackets,validPacket} from './work-packets.mjs';
 
 // Only the authenticated coordinator can claim and settle an owner-partitioned
 // cycle. No Github/Brain credential is conferred by this adapter.
@@ -9,7 +9,6 @@ const SCHEMA="CREATE TABLE IF NOT EXISTS continuity_packet_checkpoints ("+
  "result_json TEXT NOT NULL)";
 const SHA=/^(?:[a-f0-9]{40}|[a-f0-9]{64})$/i;
 const MAX_CANDIDATES=100;
-const packetKey=p=>[p.repo,p.issue,p.headSha].join('#');
 const actionKey=p=>[p.repo,p.issue,p.headSha,p.nextAction].join('#');
 const bounded=(v,n)=>typeof v==='string'?v.slice(0,n):'';
 
@@ -53,19 +52,20 @@ function doneFor(ledger,p){
  // This marker is written only after a provider-confirmed action. It protects
  // the currently cached inventory even when the bounded history evicts keys.
  if(p.terminal==='done')return true;
- const key=actionKey(p);
- if(ledger.done.includes(key))return true;
+ const done=normalizedIds(ledger.done);
+ if(done.has(actionKey(p).toLowerCase()))return true;
  // Older checkpoints sometimes stored only the issue/head key. A blocked or
  // observed receipt (or an unrelated successful review) NEVER completed a merge.
- return ledger.done.includes(packetKey(p))&&ledger.receipts.some(r=>
-  r.repo===p.repo&&r.issue===p.issue&&r.headSha===p.headSha&&
+ const packet=packetKey(p);
+ return done.has(packet)&&ledger.receipts.some(r=>
+  packetKey(r)===packet&&
   r.action===p.nextAction&&r.providerConfirmed===true&&
   ['changed','reviewed','merged','deployed'].includes(r.result));
 }
 function blockedFor(ledger,p,sourceVersion){
  if(p.terminal==='blocked')return true;
- return ledger.blocked.some(b=>b.repo===p.repo&&b.issue===p.issue&&
-  b.headSha===p.headSha&&(!b.action||b.action===p.nextAction)&&
+ const packet=packetKey(p);
+ return ledger.blocked.some(b=>packetKey(b)===packet&&(!b.action||b.action===p.nextAction)&&
   (b.sourceVersion===sourceVersion||
    (p.state==='blocked'&&typeof p.blockReason==='string'&&p.blockReason===b.reason)));
 }
@@ -73,10 +73,10 @@ function candidateAvailable(p,ledger,sourceVersion){
  return validPacket(p)&&!doneFor(ledger,p)&&!blockedFor(ledger,p,sourceVersion);
 }
 function skippedCandidates(candidates,selected,ledger,ownerId,sourceVersion,completedDependencies=[]){
- const chosen=new Set(selected.map(actionKey)),seen=new Set(),resolved=new Set(completedDependencies);
+ const chosen=normalizedIds(selected.map(actionKey)),seen=new Set(),resolved=normalizedIds(completedDependencies);
  return candidates.slice(0,MAX_CANDIDATES).flatMap(p=>{
   if(!validPacket(p))return [{issue:p?.issue??null,headSha:p?.headSha??null,reason:'invalid_packet'}];
-  const key=actionKey(p),pair=packetKey(p);
+  const key=actionKey(p).toLowerCase(),pair=packetKey(p);
   if(chosen.has(key)){seen.add(pair);return []}
   let reason='batch_limit';
   if(seen.has(pair))reason='duplicate_issue_head';
@@ -85,8 +85,8 @@ function skippedCandidates(candidates,selected,ledger,ownerId,sourceVersion,comp
   else if(blockedFor(ledger,p,sourceVersion))reason='unchanged_blocker';
   else if(p.lease?.verified&&p.lease?.active&&p.lease?.holder&&p.lease.holder!==ownerId)
    reason='foreign_active_lease';
-  else if((p.dependencies||[]).some(d=>!resolved.has(d)))reason='dependency_pending';
-  else if(selected.some(other=>other.repo===p.repo&&scopesOverlap(other,p)))reason='source_overlap';
+  else if(dependencyPending(p,resolved))reason='dependency_pending';
+  else if(selected.some(other=>scopesOverlap(other,p)))reason='source_overlap';
   else if(p.nextAction==='merge_pr'&&(!p.requiredChecksPassed||!p.requiredReviewsSatisfied||p.securityHold))
    reason='merge_gate';
   else if(p.securityHold&&p.nextAction!=='write_test')reason='safety_hold';
@@ -272,8 +272,8 @@ export async function runPacketPass({
  const left=ledger.candidates.filter(p=>candidateAvailable(p,ledger,sourceVersion));
  // Unknown prerequisites are not terminal blockers. Keep the pinned inventory
  // available for a later signed claim with newly verified dependency receipts.
- const resolved=new Set(completedDependencies);
- const waitingOnDependency=left.some(p=>(p.dependencies||[]).some(d=>!resolved.has(d)));
+ const resolved=normalizedIds(completedDependencies);
+ const waitingOnDependency=left.some(p=>dependencyPending(p,resolved));
  ledger.exhausted=!waitingOnDependency&&
   selectActionPackets(left,{blocked:[],done:[],ownerId,limit:1,completedDependencies}).length===0;
  if(!await saveCheckpoint(db,claim,ownerScope,sourceVersion,ledger,'settled',stamp(clock)))

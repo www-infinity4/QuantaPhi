@@ -63,3 +63,22 @@ test('source write targets must be repository-relative safe paths',()=>{
  assert.equal(validPacket(p(76,{nextSourcePath:'/src/absolute.mjs'})),false);
  assert.equal(validPacket(p(77,{nextSourcePath:'src\\\\escaped.mjs'})),false);
 });
+
+test('repository casing cannot bypass overlapping writes or restart completed work',()=>{
+ const preferred=p(80,{priority:99,nextSourcePath:'src/shared.mjs'});
+ const alias=p(81,{repo:repo.toLowerCase(),priority:90,nextSourcePath:'src/shared.mjs'});
+ const separate=p(82,{priority:80});
+ assert.deepEqual(selectActionPackets([preferred,alias,separate],{limit:2}).map(row=>row.issue),[80,82]);
+ const duplicate={...preferred,repo:repo.toLowerCase(),nextSourcePath:'src/other.mjs'};
+ assert.deepEqual(selectActionPackets([preferred,duplicate]).map(row=>row.issue),[80]);
+ assert.deepEqual(selectActionPackets([duplicate],{done:[repo+'#80#'+SHA]}),[]);
+});
+
+test('dependency IDs resolve regardless of repository capitalization',()=>{
+ const prerequisite=repo+'#89';
+ const candidate=p(90,{dependencies:[prerequisite.toLowerCase()]});
+ assert.equal(validPacket(p(90,{dependencies:[repo.toLowerCase()+'#90']})),false);
+ assert.equal(validPacket(p(90,{dependencies:[prerequisite,prerequisite.toLowerCase()]})),false);
+ assert.deepEqual(selectActionPackets([candidate]),[]);
+ assert.deepEqual(selectActionPackets([candidate],{completedDependencies:[prerequisite]}).map(row=>row.issue),[90]);
+});

@@ -84,8 +84,8 @@ test('changed inventory selects, rotates after one blocker, then resumes without
       loadCandidates: async () => {
         scans++;
         return [
-          packet(1, {state: 'blocked', blockReason: 'needs owner scope'}),
-          packet(2),
+          packet(1, {repo: REPO.toLowerCase(), state: 'blocked', blockReason: 'needs owner scope'}),
+          packet(2, {repo: REPO.toLowerCase()}),
           packet(3, {headSha: THIRD, nextSourcePath: 'src/3.mjs', priority: 10}),
         ];
       },
@@ -451,7 +451,7 @@ test('D1 packet pass persists verified dependency requirements and reports sourc
    loadCandidates:async()=>[
     packet(90,{priority:100,dependencies:[REPO+'#89'],estimatedMinutes:30}),
     packet(91,{priority:99,scopePaths:['src/shared/'],nextSourcePath:'src/shared/module.mjs'}),
-    packet(92,{priority:98,scopePaths:['src/shared/file.mjs'],nextSourcePath:'src/shared/file.mjs'}),
+    packet(92,{repo:REPO.toLowerCase(),priority:98,scopePaths:['src/shared/file.mjs'],nextSourcePath:'src/shared/file.mjs'}),
     packet(93,{priority:97,nextSourcePath:'src/other.mjs'})
    ],
    executePacket:async (work,{idempotencyKey})=>{
@@ -474,7 +474,7 @@ test('dependency completion resumes same-version inventory without history rerea
   let scans=0,executions=0;
   const before=await runPacketPass({
    db:d.db,claim:first,ownerScope:OWNER_SCOPE,ownerId:OWNER,sourceVersion:SHA,now:AT+1,
-   loadCandidates:async()=>{scans++;return [packet(80,{dependencies:[REPO+'#79']})];},
+   loadCandidates:async()=>{scans++;return [packet(80,{dependencies:[REPO.toLowerCase()+'#79']})];},
    executePacket:async()=>{executions++;throw Error('missing dependency must not execute')}
   });
   assert.equal(before.status,'dependency_pending');
