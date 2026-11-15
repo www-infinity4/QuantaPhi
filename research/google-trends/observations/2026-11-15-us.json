@@ -3,348 +3,314 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T03:31:13.954655Z",
+  "checked_at": "2026-11-15T04:01:23.171049Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "duncan robinson",
+      "query": "diego lopes",
       "approx_searches": "1000+",
-      "published_at": "2026-11-15T03:10:00Z",
+      "published_at": "2026-11-15T03:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/detroit-pistons-announce-concerning-duncan-025559096.html",
-        "https://www.rotowire.com/basketball/headlines/duncan-robinson-injury-questionable-to-return-vs-heat-539187",
-        "https://www.cbssports.com/fantasy/basketball/news/pistons-duncan-robinson-questionable-to-return-vs-heat/"
+        "https://mmasucka.com/news/charles-oliveira-claims-hes-next-in-line-for-lightweight-title-if-he-beats-diego-lopes/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu8I5KfgYhAvnBmQL3MaQeUAeg6l2ULoMf-Ra70_MW5kyDGRNmJdVj4BPdLmI",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRmqXfUdKgS4Z7plbcusJUcmRSmbgOEqNxabdLy6uU7ZK2YbO3cgB6u8Q_4oE",
+      "image_credit": "MMA Sucka",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/detroit-pistons-announce-concerning-duncan-025559096.html",
-          "title": "Detroit Pistons Announce Concerning Duncan Robinson Injury Update",
-          "publisher": "Yahoo Sports",
+          "url": "https://mmasucka.com/news/charles-oliveira-claims-hes-next-in-line-for-lightweight-title-if-he-beats-diego-lopes/",
+          "title": "Charles Oliveira Claims He’s Next in Line for Lightweight Title If He Beats Diego Lopes",
+          "publisher": "MMA Sucka",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu8I5KfgYhAvnBmQL3MaQeUAeg6l2ULoMf-Ra70_MW5kyDGRNmJdVj4BPdLmI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRmqXfUdKgS4Z7plbcusJUcmRSmbgOEqNxabdLy6uU7ZK2YbO3cgB6u8Q_4oE"
+        }
+      ]
+    },
+    {
+      "query": "sergei pavlovich",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T03:40:00Z",
+      "related_news_urls": [
+        "https://mmasucka.com/news/sergei-pavlovich-puts-josh-hokit-fight-talk-on-hold-until-after-ufc-334/",
+        "https://www.mmamania.com/midnight-mmamania-news/483649/midnight-mania-is-alex-pereira-in-the-best-shape-of-his-career-heading-into-ufc-335",
+        "https://www.yardbarker.com/mma/articles/sergei_pavlovich_deserves_the_next_heavyweight_title_shot_over_pereira/s1_17349_44550433"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQey-Ym2XosX_7s-bIaOJhbbd-FsSsQbEj63GTyflatdCT0jkp9ySIiUldIYQQ",
+      "image_credit": "MMA Sucka",
+      "news": [
+        {
+          "url": "https://mmasucka.com/news/sergei-pavlovich-puts-josh-hokit-fight-talk-on-hold-until-after-ufc-334/",
+          "title": "Sergei Pavlovich Puts Josh Hokit Fight Talk on Hold Until After UFC 334",
+          "publisher": "MMA Sucka",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQey-Ym2XosX_7s-bIaOJhbbd-FsSsQbEj63GTyflatdCT0jkp9ySIiUldIYQQ"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/duncan-robinson-injury-questionable-to-return-vs-heat-539187",
-          "title": "Duncan Robinson Injury: Questionable to return vs. Heat",
+          "url": "https://www.mmamania.com/midnight-mmamania-news/483649/midnight-mania-is-alex-pereira-in-the-best-shape-of-his-career-heading-into-ufc-335",
+          "title": "Midnight Mania! Is Pereira In The Best Shape Of His Career For UFC 335?",
+          "publisher": "MMA Mania",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzdPLYEQkPNW0MyP9hcvZLoiHLyLej6OdfBDhom9gOb_2M9GAF0PmyF5q597w"
+        },
+        {
+          "url": "https://www.yardbarker.com/mma/articles/sergei_pavlovich_deserves_the_next_heavyweight_title_shot_over_pereira/s1_17349_44550433",
+          "title": "Sergei Pavlovich Deserves the Next Heavyweight Title Shot Over Pereira",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG1eCo36Jow3YInHO5WCjrv0KoSSERXKgp0Bg7UGXhaU4SiVJqvN6NUIOi-Sc"
+        }
+      ]
+    },
+    {
+      "query": "israel adesanya",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T03:40:00Z",
+      "related_news_urls": [
+        "https://www.the-independent.com/sport/ufc/ian-garry-next-fight-amosov-ufc-saudi-arabia-b3081732.html",
+        "https://www.mmafighting.com/ufc/519978/israel-adesanya-vs-shara-magomedov-ian-machado-garry-vs-yaroslav-amosov-set-for-ufc-saudi-arabia",
+        "https://sports.yahoo.com/video/yaroslav-amosov-reacts-to-unexpected-ian-machado-garry-matchup-232903875.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV5oRC11gQ5sZeG3gWe4Cp_TEnKBuAm5Sigfunojxb67UWbVVPZd3tFWp0XG8",
+      "image_credit": "The Independent",
+      "news": [
+        {
+          "url": "https://www.the-independent.com/sport/ufc/ian-garry-next-fight-amosov-ufc-saudi-arabia-b3081732.html",
+          "title": "Ian Machado Garry issues two-word statement as UFC return is confirmed",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV5oRC11gQ5sZeG3gWe4Cp_TEnKBuAm5Sigfunojxb67UWbVVPZd3tFWp0XG8"
+        },
+        {
+          "url": "https://www.mmafighting.com/ufc/519978/israel-adesanya-vs-shara-magomedov-ian-machado-garry-vs-yaroslav-amosov-set-for-ufc-saudi-arabia",
+          "title": "Israel Adesanya vs. Shara Magomedov, Ian Machado Garry vs. Yaroslav Amosov set for UFC Saudi Arabia",
+          "publisher": "MMA Fighting",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmnd89n1k-10dLOTS2RWIizCMZv6-Km0qWVzQpMh524zCo1HgfuFVDQ3GWeLs"
+        },
+        {
+          "url": "https://sports.yahoo.com/video/yaroslav-amosov-reacts-to-unexpected-ian-machado-garry-matchup-232903875.html",
+          "title": "Yaroslav Amosov reacts to unexpected Ian Machado Garry matchup",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJAdOSGookxTiGxy5GhVn2JqnfGqwsVZxtX_ByogowujaoAJ6MJY1I4ooCU1Y"
+        }
+      ]
+    },
+    {
+      "query": "thomas bryant",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T03:40:00Z",
+      "related_news_urls": [
+        "https://sanduskyregister.com/photo-single/1892120/?mode=team",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/thomas-bryant-posts-19-points-11-boards-in-win",
+        "https://www.rotowire.com/basketball/headlines/thomas-bryant-news-adds-nine-points-friday-539118"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaC55N_3EodQJvvfdCY3xMKyYUQbGvriMEV0dOLjIiwp5P2tl-m9NkDQ0BOoY",
+      "image_credit": "Sandusky Register",
+      "news": [
+        {
+          "url": "https://sanduskyregister.com/photo-single/1892120/?mode=team",
+          "title": "Cleveland Cavaliers center Thomas Bryant, left, rebounds against Dallas Mavericks forward Cooper Flagg in the first half of Saturday\\'s game in Cleveland.",
+          "publisher": "Sandusky Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaC55N_3EodQJvvfdCY3xMKyYUQbGvriMEV0dOLjIiwp5P2tl-m9NkDQ0BOoY"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/thomas-bryant-posts-19-points-11-boards-in-win",
+          "title": "Thomas Bryant posts 19 points, 11 boards in win",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkH-qoy6yR4Fn4QkI6Xfj1FBMSdTIB8g-E5d4OkFJzE1P1KkXpD-WGv_F0-3M"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/thomas-bryant-news-adds-nine-points-friday-539118",
+          "title": "Thomas Bryant News: Adds nine points Friday",
           "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZiVgzh1hpbOwQiVoEPp7_zuXfCbnWelG0UuqT3R-yIV3xC7TO0BUu28yzCks"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/pistons-duncan-robinson-questionable-to-return-vs-heat/",
-          "title": "Pistons' Duncan Robinson: Questionable to return vs. Heat",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-KAjyIgyuwINUMNE0RuTlIPtMUiNkaLUWQX3Ldz7weidjbsCrGV7Gf7ejRbE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5fSBaTvTAukzUg4YAVYjueMLvYObB6pALxrT-W_0WHiGnChZSdxACCA8Ug7I"
         }
       ]
     },
     {
-      "query": "norman powell",
+      "query": "manel kape",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T03:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "carlos prates",
       "approx_searches": "2000+",
-      "published_at": "2026-11-15T03:10:00Z",
+      "published_at": "2026-11-15T03:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909299",
-        "https://www.chicagotribune.com/2026/11/13/chicago-bulls-atlanta-hawks-nba-cup/",
-        "https://chicago.suntimes.com/bulls/2026/11/13/chicago-bulls-caleb-wilson-atlanta-hawks-norman-powell-josh-giddey-isaac-okoro-nic-claxton-jalen-smith"
+        "https://sports.yahoo.com/articles/daniel-cormier-defends-islam-makhachev-064652371.html",
+        "https://mmasucka.com/news/ufc-336-title-fight-daniel-cormier-warns-carlos-prates-of-michael-morales/",
+        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/11/ufc-daniel-cormier-islam-makhachev-fight-carlos-prates-anywhere/92721299007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK1-JGMu7Y0dmZOtzvk8A4qXfon6QT5N-LZGBnmzOKQ12zvc60biDh5OSJ-24",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909299",
-          "title": "Bulls 125-117 Hawks (Nov 13, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK1-JGMu7Y0dmZOtzvk8A4qXfon6QT5N-LZGBnmzOKQ12zvc60biDh5OSJ-24"
-        },
-        {
-          "url": "https://www.chicagotribune.com/2026/11/13/chicago-bulls-atlanta-hawks-nba-cup/",
-          "title": "Chicago Bulls keep NBA Cup hopes alive — and snap 8-game skid. Takeaways from their OT win vs. Atlanta Hawks.",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTlI0KuASfnqNBRgdljkoeodGKM7y7AC3RyDoP2lb3qwu5X5MHM2yVg2v0VFY"
-        },
-        {
-          "url": "https://chicago.suntimes.com/bulls/2026/11/13/chicago-bulls-caleb-wilson-atlanta-hawks-norman-powell-josh-giddey-isaac-okoro-nic-claxton-jalen-smith",
-          "title": "Bulls get long-awaited second victory in first game without Caleb Wilson",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTq4cvBCSHPTjOJbDzsqZLPwoKXbJ4-LSo7ZptsSlcQtAhMjNVeSNwokeWoDUQ"
-        }
-      ]
-    },
-    {
-      "query": "miami international airport",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T03:10:00Z",
-      "related_news_urls": [
-        "https://news.cgtn.com/news/2026-11-15/news-1S5lVIfmwGk/p.html",
-        "https://www.dailymail.com/news/article-16293655/planes-collide-Miami-airport.html",
-        "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR32rtFH-BC9qJ58iuCUQF73zEkDG2Dt-xHFRlVf_3ITHjetbr87h3O9fSr-iI",
-      "image_credit": "CGTN",
-      "news": [
-        {
-          "url": "https://news.cgtn.com/news/2026-11-15/news-1S5lVIfmwGk/p.html",
-          "title": "UPS Boeing 767 collides with Copa Airlines 737 while taxiing at Miami International Airport in Florida - reports",
-          "publisher": "CGTN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR32rtFH-BC9qJ58iuCUQF73zEkDG2Dt-xHFRlVf_3ITHjetbr87h3O9fSr-iI"
-        },
-        {
-          "url": "https://www.dailymail.com/news/article-16293655/planes-collide-Miami-airport.html",
-          "title": "Two planes collide at Miami airport as audio reveals moment pilot tells air traffic control they'd been hit",
-          "publisher": "Daily Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1NcZxcGGNh1qwXQfq1sGANpIg5ssjnE2J8oySm2_ohyqcdMZdbhYBeNbWsMg"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html",
-          "title": "What to Know About Continued Flight Disruptions",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgFc8zanPJnfAnC642Rez3SbBDLURhEPC2LJVfn1_E4D4zKcmmFasPLy4y_go"
-        }
-      ]
-    },
-    {
-      "query": "new mexico vs santa clara",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T03:10:00Z",
-      "related_news_urls": [
-        "https://golobos.com/news/2026/11/13/lobos-visit-santa-clara-saturday-in-matchup-of-unbeatens",
-        "https://www.abqjournal.com/sports/lobos-face-pivotal-resume-tests-on-road/3162555",
-        "https://sports.betmgm.com/en/blog/ncaab/new-mexico-santa-clara-prediction-odds-picks-nov-14-college-basketball-jaa/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKMLqmzuhZbCK0jLo_UCyq4Ut22c3m9ihECp_nA5f9FCEKsK2QFN9qHvYliRg",
-      "image_credit": "New Mexico Lobos",
-      "news": [
-        {
-          "url": "https://golobos.com/news/2026/11/13/lobos-visit-santa-clara-saturday-in-matchup-of-unbeatens",
-          "title": "Lobos Visit Santa Clara Saturday in Matchup of Unbeatens - New Mexico Lobos - Official Athletics Website",
-          "publisher": "New Mexico Lobos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKMLqmzuhZbCK0jLo_UCyq4Ut22c3m9ihECp_nA5f9FCEKsK2QFN9qHvYliRg"
-        },
-        {
-          "url": "https://www.abqjournal.com/sports/lobos-face-pivotal-resume-tests-on-road/3162555",
-          "title": "Lobos face early résumé test at Santa Clara",
-          "publisher": "Albuquerque Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzKuwvOSECKcbuEwigohV2ZwQnX4-ZdsUZC7qRtQvldxap9_vNGVNadoqtVA"
-        },
-        {
-          "url": "https://sports.betmgm.com/en/blog/ncaab/new-mexico-santa-clara-prediction-odds-picks-nov-14-college-basketball-jaa/",
-          "title": "New Mexico vs Santa Clara Prediction, Odds & Best Bets Today – NCAAB, Nov. 14",
-          "publisher": "sports.betmgm.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7wCkXxjz5pat5Tb0FNGikeJimeDyU2v6orCDPy_hRcwqB5mGYM5Kp8sdOhTs"
-        }
-      ]
-    },
-    {
-      "query": "mason thames",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T03:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/ella-bright-starring-movie-mason-180519962.html",
-        "https://www.brit.co/narcs-ella-bright-new-movie/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJZsVbmPlDZZg6QZwQCh5qAf5mpOiQ-U1rSih2-G8utdDZ8k5caBTlFckPFMM",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/ella-bright-starring-movie-mason-180519962.html",
-          "title": "Ella Bright is Starring in a Movie With Mason Thames Called 'Narcs' — Right After 'Off-Campus' Season 2",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJZsVbmPlDZZg6QZwQCh5qAf5mpOiQ-U1rSih2-G8utdDZ8k5caBTlFckPFMM"
-        },
-        {
-          "url": "https://www.brit.co/narcs-ella-bright-new-movie/",
-          "title": "Ella Bright is FINALLY Starring in a Movie — Right After 'Off-Campus' Season 2",
-          "publisher": "Brit + Co",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5_T91YBDxFjU9tLKNONZAPJyLM0uJuny37ijEObMtUQkLHB2QP2I6rlPw-vE"
-        }
-      ]
-    },
-    {
-      "query": "serbia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T03:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cq62ypp785rmt",
-        "https://www.uefa.com/uefanationsleague/video/highlights/02ab-22108012db4e-1b799e804f86-1000--nations-league-highlights-serbia-1-3-germany/",
-        "https://www.theguardian.com/football/2026/nov/13/nations-league-germany-set-up-netherlands-clash-serbia-greece"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJxBo8AbSF5iaRVueNZzTr46ZL922Kw0PsylOzm7dFJ_UGMfvHeB25jOtIrkQ",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cq62ypp785rmt",
-          "title": "Serbia 1-3 Germany: Florian Wirtz scores to help Jurgen Klopp earn second win",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJxBo8AbSF5iaRVueNZzTr46ZL922Kw0PsylOzm7dFJ_UGMfvHeB25jOtIrkQ"
-        },
-        {
-          "url": "https://www.uefa.com/uefanationsleague/video/highlights/02ab-22108012db4e-1b799e804f86-1000--nations-league-highlights-serbia-1-3-germany/",
-          "title": "Nations League highlights: Serbia 1-3 Germany",
-          "publisher": "UEFA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0FDMBK9q6t4KCsqaN5eLyV2_Kygjc6lAsK-X1LYepECje_pUv3IWkm0IgSig"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/13/nations-league-germany-set-up-netherlands-clash-serbia-greece",
-          "title": "Nations League: Germany set up Netherlands clash after beating Serbia",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlAgQypXdQYl5z_zoP_iLhJ59KodomkR74Aa0p8sm10HK3jIbNikMsij2mNso"
-        }
-      ]
-    },
-    {
-      "query": "buddy hield",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T03:00:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/bulls/videos/buddy-hield-drains-a-three",
-        "https://sports.yahoo.com/articles/buddy-hield-passes-kyle-lowry-034746819.html",
-        "https://www.cbssports.com/fantasy/basketball/news/bulls-buddy-hield-chips-in-12-points-friday/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hjRVZ7tJxa6tODeHeoNrs5-7Dl-EWSkUv0MByS9KTQ2VT4-QhYV_5bJcICI",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/bulls/videos/buddy-hield-drains-a-three",
-          "title": "Buddy Hield drains a three",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hjRVZ7tJxa6tODeHeoNrs5-7Dl-EWSkUv0MByS9KTQ2VT4-QhYV_5bJcICI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/buddy-hield-passes-kyle-lowry-034746819.html",
-          "title": "Buddy Hield passes Kyle Lowry on all-time 3-point list",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmz6drKtww6ipyFchD_F-t6ThGZAaRo0E16jHrNCs2qGcWj2NYVVXAskKHRuQ"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/bulls-buddy-hield-chips-in-12-points-friday/",
-          "title": "Bulls' Buddy Hield: Chips in 12 points Friday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-KAjyIgyuwINUMNE0RuTlIPtMUiNkaLUWQX3Ldz7weidjbsCrGV7Gf7ejRbE"
-        }
-      ]
-    },
-    {
-      "query": "chiefs game tomorrow",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T03:00:00Z",
-      "related_news_urls": [
-        "https://www.philadelphiaeagles.com/photos/eagles-photo-gallery-best-of-2026-game-action-through-the-bye-week",
-        "https://www.adn.com/sports/national-sports/2026/11/14/nfl-teams-with-german-mascots-named-leo-wolfgang-and-fritz-wooing-fans-in-munich/",
-        "https://www.detroitlions.com/news/4-takeaways-from-rich-haddad-s-media-session-stbrown"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkkrMmMBTRhmTGn9AcMORkgkszndNg-IcmOSFjwXlv1gPNJ5fo8zocOHaypm8",
-      "image_credit": "Philadelphia Eagles",
-      "news": [
-        {
-          "url": "https://www.philadelphiaeagles.com/photos/eagles-photo-gallery-best-of-2026-game-action-through-the-bye-week",
-          "title": "Photo Gallery: Best of 2026 Game Action (Through the Bye Week)",
-          "publisher": "Philadelphia Eagles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkkrMmMBTRhmTGn9AcMORkgkszndNg-IcmOSFjwXlv1gPNJ5fo8zocOHaypm8"
-        },
-        {
-          "url": "https://www.adn.com/sports/national-sports/2026/11/14/nfl-teams-with-german-mascots-named-leo-wolfgang-and-fritz-wooing-fans-in-munich/",
-          "title": "NFL teams with German mascots named Leo, Wolfgang and Fritz wooing fans in Munich",
-          "publisher": "Anchorage Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjZ4fyJuSpeUro3HqrrMKITiGTEkDjKMeFsMibdDkHQhL224toUVk4wtDaato"
-        },
-        {
-          "url": "https://www.detroitlions.com/news/4-takeaways-from-rich-haddad-s-media-session-stbrown",
-          "title": "4 takeaways from Rich Haddad's media session",
-          "publisher": "Detroit Lions",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2XfTffspZJe0PuTPmtFm4a4CmvQvo8fCNDRe5av_cvmtnwstx1vZyMzX8Aro"
-        }
-      ]
-    },
-    {
-      "query": "texas tech football",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-15T02:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-texas-vs-lsu-texas-tech-vs-oklahoma-state-utah-vs-arizona-and-more-021834400.html",
-        "https://www.espn.com/college-football/story/_/id/50474063/week-11-live-highlights",
-        "https://www.ncaa.com/live-updates/football/fbs/college-football-week-11-live-updates-schedule-scores-cfp-rankings"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeBadQG_6oa767JH9hA2usaFTeH6gthF7LK3molmS4e3GcAj99UUCA71D8aTc",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTigI-rb5QWRsGxvgjlwyRceT0HJJ3eanm7K9t9PJ0aUBIi0RYYZv1eR2Df6ds",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-texas-vs-lsu-texas-tech-vs-oklahoma-state-utah-vs-arizona-and-more-021834400.html",
-          "title": "College football live updates, scores: Texas vs. LSU, Texas Tech vs. Oklahoma State, Utah vs. Arizona and more",
+          "url": "https://sports.yahoo.com/articles/daniel-cormier-defends-islam-makhachev-064652371.html",
+          "title": "Daniel Cormier Defends Islam Makhachev Against Claims of Ducking Carlos Prates at UFC 336",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeBadQG_6oa767JH9hA2usaFTeH6gthF7LK3molmS4e3GcAj99UUCA71D8aTc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTigI-rb5QWRsGxvgjlwyRceT0HJJ3eanm7K9t9PJ0aUBIi0RYYZv1eR2Df6ds"
         },
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50474063/week-11-live-highlights",
-          "title": "Watch best moments and top plays live from Week 11",
-          "publisher": "ESPN",
+          "url": "https://mmasucka.com/news/ufc-336-title-fight-daniel-cormier-warns-carlos-prates-of-michael-morales/",
+          "title": "Daniel Cormier warns Carlos Prates ahead of UFC 336",
+          "publisher": "MMA Sucka",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-5XArr0vXahQXL5vx-ugKDUNSiMXn7ETGkxcgYCs7IZQLXdhRBUdkbgjYMw8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTa3bTXBvrRX8hCMXoT79NIjnqgi9ejQrji9gHvJ6mqxTYJVUWpi3oy5R26Pjk"
         },
         {
-          "url": "https://www.ncaa.com/live-updates/football/fbs/college-football-week-11-live-updates-schedule-scores-cfp-rankings",
-          "title": "College football Week 11: Live updates, schedule, scores, CFP rankings",
-          "publisher": "NCAA.com",
+          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/11/ufc-daniel-cormier-islam-makhachev-fight-carlos-prates-anywhere/92721299007/",
+          "title": "Daniel Cormier: Islam Makhachev not afraid of Carlos Prates, 'would fight him anywhere'",
+          "publisher": "MMA Junkie",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUIxvFCzeSK7J_OvN9EHf5vhXvVyp3xU830RmRwcVeIU64rp7EUeTKBVFCWj4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQclCF2ipO8CNcgo336AWHOGslQeCqimAIZmQyzciSBUcjhLp-4TRuAey3yJCE"
         }
       ]
     },
     {
-      "query": "dallas love field",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-15T02:50:00Z",
+      "query": "charles oliveira",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T03:30:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/business/aerospace-defense/us-aviation-shutdown-blamed-l3-harris-installed-router-2026-11-14/",
-        "https://www.washingtonpost.com/transportation/2026/11/14/faa-was-warned-years-about-repair-risks-leading-nationwide-ground-stop/",
-        "https://www.cnn.com/2026/11/13/us/live-news/flights-ground-stop-faa"
+        "https://sports.yahoo.com/videos/ufc-334-drew-dober-put-201852484.html",
+        "https://mmasucka.com/news/charles-oliveira-puts-gaethje-on-the-spot-over-retirement-plans/",
+        "https://bloodyelbow.com/2026/11/11/justin-gaethjes-teammate-would-put-money-on-arman-tsarukyan-fight-happening-in-2027/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaKPDjTZJUtmPno9Ub0in51tGf69NSXaRiLM_dZqjXYF58oa3A2vPUGGdA7MQ",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQItOJmN4XxdV1B1_iyDv_0X7G02Sljb3M74J_H48ALHMcSTI8tcv0cSlJdV6w",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.reuters.com/business/aerospace-defense/us-aviation-shutdown-blamed-l3-harris-installed-router-2026-11-14/",
-          "title": "US aviation shutdown blamed on L3 Harris installed router",
+          "url": "https://sports.yahoo.com/videos/ufc-334-drew-dober-put-201852484.html",
+          "title": "UFC 334: Drew Dober would 'put my money' on Justin Gaethje fighting in 2027",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQItOJmN4XxdV1B1_iyDv_0X7G02Sljb3M74J_H48ALHMcSTI8tcv0cSlJdV6w"
+        },
+        {
+          "url": "https://mmasucka.com/news/charles-oliveira-puts-gaethje-on-the-spot-over-retirement-plans/",
+          "title": "Charles Oliveira Puts Gaethje on the Spot Pre UFC-335",
+          "publisher": "MMA Sucka",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJ0FS_QIlfcnF5wH6Nye60WKy9cGbjs7g_LxjWGL5svtN4UwAY9e9LZ1vzeLw"
+        },
+        {
+          "url": "https://bloodyelbow.com/2026/11/11/justin-gaethjes-teammate-would-put-money-on-arman-tsarukyan-fight-happening-in-2027/",
+          "title": "Justin Gaethje’s teammate would ‘put money’ on Arman Tsarukyan fight happening in 2027",
+          "publisher": "Bloody Elbow",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW3NAmM_9XEGoSqFDBcx4CVZMcbzHCKnb3mRwopCeUQsRIHDW9JuFN_f_TgW0"
+        }
+      ]
+    },
+    {
+      "query": "madden movie",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T03:30:00Z",
+      "related_news_urls": [
+        "https://www.indiewire.com/features/commentary/david-o-russell-madden-biopic-amazon-burying-nicolas-cage-film-1235224213/",
+        "https://abcnews.com/video/138107026/",
+        "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrTD0m-l71G58APTi3u20tomdzKAdzL1EOaFT7S8YR0DKzTSI-9RR8uQ0Oo3o",
+      "image_credit": "IndieWire",
+      "news": [
+        {
+          "url": "https://www.indiewire.com/features/commentary/david-o-russell-madden-biopic-amazon-burying-nicolas-cage-film-1235224213/",
+          "title": "David O. Russell’s ‘Madden’ Biopic Is Out Next Week — Does Anybody Know or Care?",
+          "publisher": "IndieWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrTD0m-l71G58APTi3u20tomdzKAdzL1EOaFT7S8YR0DKzTSI-9RR8uQ0Oo3o"
+        },
+        {
+          "url": "https://abcnews.com/video/138107026/",
+          "title": "Video Christian Bale talks new film 'Madden'",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQOV460f0Lo2iOsYmcsemchxxXVKlOA2s17E64w6oBhE4DWBnJtClKKZJTro"
+        },
+        {
+          "url": "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
+          "title": "Nicolas Cage transformed ‘from within’ for ‘Madden,’ co-star Kathryn Hahn says",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaKPDjTZJUtmPno9Ub0in51tGf69NSXaRiLM_dZqjXYF58oa3A2vPUGGdA7MQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW6xD5FXOwzV6YfYGWEu4K3AuZAqUdi2XnE-h_H94ddFYB8xFDEYoQ60yPbQA"
+        }
+      ]
+    },
+    {
+      "query": "john madden",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T03:30:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/video/138107026/",
+        "https://www.broadwayworld.com/bwwtv/article/Christian-Bale-Discusses-Playing-Al-Davis-in-MADDEN-20261113",
+        "https://www.yahoo.com/news/videos/christian-bale-talks-film-madden-085607557.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQOV460f0Lo2iOsYmcsemchxxXVKlOA2s17E64w6oBhE4DWBnJtClKKZJTro",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/video/138107026/",
+          "title": "Video Christian Bale talks new film 'Madden'",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQOV460f0Lo2iOsYmcsemchxxXVKlOA2s17E64w6oBhE4DWBnJtClKKZJTro"
         },
         {
-          "url": "https://www.washingtonpost.com/transportation/2026/11/14/faa-was-warned-years-about-repair-risks-leading-nationwide-ground-stop/",
-          "title": "FAA was warned for years about repair risks leading to nationwide ground stop",
-          "publisher": "The Washington Post",
+          "url": "https://www.broadwayworld.com/bwwtv/article/Christian-Bale-Discusses-Playing-Al-Davis-in-MADDEN-20261113",
+          "title": "Christian Bale Discusses Playing Al Davis in MADDEN",
+          "publisher": "BroadwayWorld",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmZkA8mJlvfi-5ctAZSnhZOkxqyoNFP4QRVVefoUM0O4fb9pu4En5_6o3-3nI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFXwf0Jx_jcYkd18RyUw8yjPoJCyPlfrNAikHLg0O16O5xjtD5gqatfxYD308"
         },
         {
-          "url": "https://www.cnn.com/2026/11/13/us/live-news/flights-ground-stop-faa",
-          "title": "November 13, 2026 — Some US flights resume after hours-long ground stop",
-          "publisher": "CNN",
+          "url": "https://www.yahoo.com/news/videos/christian-bale-talks-film-madden-085607557.html",
+          "title": "Christian Bale talks new film 'Madden'",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6wfeHYdUtYWZMuIGOqLG1kLwEsa1CrHXyt2fsmaUfpLYyd6E8ZWCyVM95HM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH2L5YZNylldRbwSxjXg6TaB27J_WmpkECjqwXUhMS-AO9xGstmNnWc9UdYjg"
+        }
+      ]
+    },
+    {
+      "query": "lsu football schedule",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T03:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/live/college-football-game-delays-schedule-updates-live-scores-usc-vs-indiana-texas-vs-lsu-utah-vs-arizona-and-more-172326861.html",
+        "https://espnpressroom.com/press-release/programming-update-espn-cfb-in-week-11/",
+        "https://www.al.com/alabamafootball/2026/11/espns-updated-week-11-programming-after-faa-ground-stop-causes-sports-delays.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVEa0nDAs_fCemoe8kZzRvOaaFbNwfCQOFAYWE7TuHuyhNW09kHE8TRBhwIkE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/live/college-football-game-delays-schedule-updates-live-scores-usc-vs-indiana-texas-vs-lsu-utah-vs-arizona-and-more-172326861.html",
+          "title": "College football game delays, schedule updates, live scores: Texas vs. LSU, Baylor vs. BYU and more",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVEa0nDAs_fCemoe8kZzRvOaaFbNwfCQOFAYWE7TuHuyhNW09kHE8TRBhwIkE"
+        },
+        {
+          "url": "https://espnpressroom.com/press-release/programming-update-espn-cfb-in-week-11/",
+          "title": "Programming Update: ESPN CFB in Week 11",
+          "publisher": "ESPN Press Room",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkHEUCNk1ZgDY-KNb1ghIlu8CDU22CYT7oYN1RaWVU9SS9SLGXltQqkv1RFyA"
+        },
+        {
+          "url": "https://www.al.com/alabamafootball/2026/11/espns-updated-week-11-programming-after-faa-ground-stop-causes-sports-delays.html",
+          "title": "ESPN’s updated Week 11 programming after FAA ground stop causes sports delays",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU9dhKPQ-ceHwfy-aKe-tng8D-v-TFSlNPfuCh-ZjTPq27kvJsSbdEwkLVvoE"
         }
       ]
     }
