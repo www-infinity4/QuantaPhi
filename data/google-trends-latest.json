@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T20:31:13.795765Z",
+  "checked_at": "2026-11-15T21:01:14.150173Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cliff booth",
+      "query": "hornets vs clippers",
       "approx_searches": "2000+",
-      "published_at": "2026-11-15T20:10:00Z",
+      "published_at": "2026-11-15T20:40:00Z",
       "related_news_urls": [
-        "https://www.awardsdaily.com/2026/11/15/cliff-booth-meets-the-academy/",
-        "https://www.yahoo.com/entertainment/movies/trailers/articles/netflixs-thriller-sequel-might-literally-180000207.html",
-        "https://www.cbr.com/the-further-mis-adventures-of-cliff-booth-r-rating/"
+        "https://www.nba.com/clippers/news/clippers-vs-hornets-preview-2026-11-15",
+        "https://www.si.com/nba/hornets/onsi/hornets-vs-clippers-full-game-preview-score-predictions-01m7g8sat4pq",
+        "https://www.usatoday.com/sports/nba/event/2026/3018635/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=3"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJmxXKh4nU5brn5cPWgEoqPihdLkJBOFhgKkOkIYvYvK-0d6MW4LaNJdWWTow",
-      "image_credit": "Awards Daily",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsafOcconRhS1-BfFeJV2_6pYKCOrX6R1Gpo9vlKGjnqfnOeRaDgVGk0fFjdw",
+      "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://www.awardsdaily.com/2026/11/15/cliff-booth-meets-the-academy/",
-          "title": "Cliff Booth Meets the Academy",
-          "publisher": "Awards Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJmxXKh4nU5brn5cPWgEoqPihdLkJBOFhgKkOkIYvYvK-0d6MW4LaNJdWWTow"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/netflixs-thriller-sequel-might-literally-180000207.html",
-          "title": "Netflix's new thriller sequel might be literally its biggest film in years – with Brad Pitt in the lead",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQlPUzwfg5tOLrealX79xx5MLYDbm9t-DSBRdXyExlxBcOYnByKyPXYCEvsv8"
-        },
-        {
-          "url": "https://www.cbr.com/the-further-mis-adventures-of-cliff-booth-r-rating/",
-          "title": "Quentin Tarantino's New R-Rated Movie Officially Hits Theaters in Just 2 Weeks",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZsNYOtOhdJFA_IsdoJN-ZLe_WNHvcTe1zl4nEM2nHfRGrwnc3-hj00YgLKM"
-        }
-      ]
-    },
-    {
-      "query": "cliff booth movie",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T20:10:00Z",
-      "related_news_urls": [
-        "https://collider.com/further-mis-adventures-cliff-booth-imax-release-november-25/",
-        "https://www.imdb.com/fr/news/ni66111132/?ref_=nm_nwr_2",
-        "https://screenrant.com/quentin-tarantino-hateful-eight-western-streaming-free-tubi/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrMqrkuc-mxofvi7Te8N-zgZEfrPI6bgBQ1f1Yi1A_TyXI1ays55tsEGpSFJ0",
-      "image_credit": "Collider",
-      "news": [
-        {
-          "url": "https://collider.com/further-mis-adventures-cliff-booth-imax-release-november-25/",
-          "title": "Quentin Tarantino’s First Movie in 7 Years Officially Arrives in 10 Days",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrMqrkuc-mxofvi7Te8N-zgZEfrPI6bgBQ1f1Yi1A_TyXI1ays55tsEGpSFJ0"
-        },
-        {
-          "url": "https://www.imdb.com/fr/news/ni66111132/?ref_=nm_nwr_2",
-          "title": "Quentin Tarantino’s 153-Minute War Movie He Almost Abandoned Is Now Streaming for Free",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxlEiwXKe8u9fE8VYqbcJMZp_VPODTLJ0XDO6dFiSo7D7xmUGnRkBakkwPkXY"
-        },
-        {
-          "url": "https://screenrant.com/quentin-tarantino-hateful-eight-western-streaming-free-tubi/",
-          "title": "Quentin Tarantino's $156 Million Western Thriller Is Now Streaming For Free",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfSRI2ctNjAspadw8ulIGzp2SAZSCJ0CiO9fyAqlHDoo_KqNzhUyMxz86khPg"
-        }
-      ]
-    },
-    {
-      "query": "president donald trump",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-15T20:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
-        "https://people.com/trump-blames-biden-for-faa-ground-stop-while-breaking-silence-on-crisis-12256562",
-        "https://www.nytimes.com/2026/11/14/us/politics/trump-flights-air-traffic-social-media.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQbscJCezO-XttqPDIM560WXfiuWvuUaIh1AUBTrB95NDNyDMYv7t03vt0OQs",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
-          "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQbscJCezO-XttqPDIM560WXfiuWvuUaIh1AUBTrB95NDNyDMYv7t03vt0OQs"
-        },
-        {
-          "url": "https://people.com/trump-blames-biden-for-faa-ground-stop-while-breaking-silence-on-crisis-12256562",
-          "title": "Trump Blames Biden Administration for FAA Ground Stop While Breaking His Silence on Nationwide Crisis",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqa5j2Ry65cypBoORIZxcoMgCNKvVnPhSyYJZ4PvX_lWJLoXcw4wmPondI_4w"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/14/us/politics/trump-flights-air-traffic-social-media.html",
-          "title": "Trump Kept Out of Sight as F.A.A. Issued Flight Ground Stop",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpIYIT0lsDyM8S8pBFwvl5ZPQFrQBK8rYD-myLWivgXJQZKJiL13SlnbM6KHc"
-        }
-      ]
-    },
-    {
-      "query": "creighton vs iowa",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T20:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/iowa/longformarticle/iowa-basketball-creighton-bluejays-preview-ben-mccollum-alan-huss--292624964/",
-        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/15/iowa-mens-basketball-creighton-how-to-watch-channel-time-hawkeyes/92759048007/",
-        "https://sports.yahoo.com/articles/men-basketball-iowa-vs-creighton-190000432.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOxN6MUGN31oH1ZJ5lAX38D2kxLFXDP4COxlTASvBZilvj69AjY-shQD7WJFs",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/iowa/longformarticle/iowa-basketball-creighton-bluejays-preview-ben-mccollum-alan-huss--292624964/",
-          "title": "Three Keys And A Pick: Iowa vs. Creighton",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOxN6MUGN31oH1ZJ5lAX38D2kxLFXDP4COxlTASvBZilvj69AjY-shQD7WJFs"
-        },
-        {
-          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/15/iowa-mens-basketball-creighton-how-to-watch-channel-time-hawkeyes/92759048007/",
-          "title": "Where to watch Iowa men's basketball vs Creighton on Sunday",
-          "publisher": "Hawk Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSynt5zhKUnV5ikojzLzG2RBK2DEMfcDRFfXe_4aTvAuyJxk8MlUi0Gd8HKcf4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/men-basketball-iowa-vs-creighton-190000432.html",
-          "title": "Men’s Basketball: Iowa Vs. Creighton Bluejays: How to Watch, Game Thread",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnfT4aFgCHOIsqk4ZIO6WP4mavay1lT_mVAJuQBQwNfSN-78Xzl-eWVmw60Sg"
-        }
-      ]
-    },
-    {
-      "query": "mackenzie scott",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T20:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/mackenzie-scott-gave-jeff-bezos-163000988.html",
-        "https://moneywise.com/news/top-stories/jeff-bezos-mackenzie-scott-divorce-amazon-stock-split",
-        "https://finance.yahoo.com/markets/article/jensen-huang-leaves-nvidia-with-a-132-billion-stake--heres-when-he-can-sell-and-why-investors-may-not-know-when-he-does-chart-of-the-day-130732443.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvAEaBFIGbFIRT66DHtdv1dg-_SlYPbfB4h8yaglSyFyCk8F7mlzVgZIOXcns",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/mackenzie-scott-gave-jeff-bezos-163000988.html",
-          "title": "MacKenzie Scott gave Jeff Bezos 75% of their Amazon shares, Blue Origin, and the Washington Post in 2019 divorce",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvAEaBFIGbFIRT66DHtdv1dg-_SlYPbfB4h8yaglSyFyCk8F7mlzVgZIOXcns"
-        },
-        {
-          "url": "https://moneywise.com/news/top-stories/jeff-bezos-mackenzie-scott-divorce-amazon-stock-split",
-          "title": "Jeff Bezos kept 75% of their Amazon shares in his divorce from MacKenzie Scott — plus her voting rights on the rest",
-          "publisher": "MoneyWise.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRul8_ru8xu_YimN9Wo9WFGRxgVttvBtyvcPcIUZqbgnym3ijH5QMGvzkzxm6U"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/article/jensen-huang-leaves-nvidia-with-a-132-billion-stake--heres-when-he-can-sell-and-why-investors-may-not-know-when-he-does-chart-of-the-day-130732443.html",
-          "title": "Jensen Huang leaves Nvidia with a $132 billion stake — here's when he can sell and why investors may not know when he does: Chart of the Day",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj8KaYGqqxPw2qkl9JQdcxPOqmyT7H-EGJf3oR8f87OKuB65nzFf12gs9JaXw"
-        }
-      ]
-    },
-    {
-      "query": "pascal siakam",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T20:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909966",
-        "https://www.nba.com/watch/video/game-recap-pacers-114-wizards-101-nov-11",
-        "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-wizards-vs-pacers-sacramento-st-vs-central-michigan-and-more/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2ZcbGaJVm9YjO_s60UQcMO7ZiwcA3YX7jMSrrYd9En98vGnopSvN3Sbymhrk",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909966",
-          "title": "Pacers 114-101 Wizards (Nov 11, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2ZcbGaJVm9YjO_s60UQcMO7ZiwcA3YX7jMSrrYd9En98vGnopSvN3Sbymhrk"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/game-recap-pacers-114-wizards-101-nov-11",
-          "title": "Game Recap: Pacers 114, Wizards 101 (Nov. 11)",
+          "url": "https://www.nba.com/clippers/news/clippers-vs-hornets-preview-2026-11-15",
+          "title": "GAME PREVIEW: 5 Things You Should Know About Clippers vs. Hornets",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQvkSqV8MUqSjOFqPVk7Nw_TeQGb_NjurddcEiHSU0sJDZpVsW8GLxdCYLpFM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsafOcconRhS1-BfFeJV2_6pYKCOrX6R1Gpo9vlKGjnqfnOeRaDgVGk0fFjdw"
         },
         {
-          "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-wizards-vs-pacers-sacramento-st-vs-central-michigan-and-more/",
-          "title": "Today's top games to watch, best bets, odds: Wizards vs. Pacers, Sacramento St. vs. Central Michigan and more",
-          "publisher": "CBS Sports",
+          "url": "https://www.si.com/nba/hornets/onsi/hornets-vs-clippers-full-game-preview-score-predictions-01m7g8sat4pq",
+          "title": "Hornets vs. Clippers Full Game Preview, Score Predictions",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSro-B21Fj9BUX_N0YrlegqF1t00ka8q0jFFUn6eoBFItJQ0Qic-tP1hmvlaxQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj_DeFLBld5Gx7asyQZuMuXPMjWwAELpht10pmKJapR-8_uRvnHB7gpmudXNw"
+        },
+        {
+          "url": "https://www.usatoday.com/sports/nba/event/2026/3018635/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=3",
+          "title": "Charlotte Hornets at Los Angeles Clippers - NBA Game Summary - Nov 15, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS-SBcSmF9jay_fJ7yjaX4a6A-s_f2Mg0BHpnd-YL4C151y8HBbEHFWtaE0Lg"
         }
       ]
     },
     {
-      "query": "lewis hall",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T20:10:00Z",
+      "query": "seahawks game today",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T20:40:00Z",
       "related_news_urls": [
-        "https://www.newcastleworld.com/sport/football/newcastle-united/newcastle-united-news-sunderland-9347700",
-        "https://inews.co.uk/sport/football/newcastle-january-transfers-striker-target-4883297",
-        "https://newcastletoons.com/what-do-newcastle-united-need-in-january-so-matthias-jaissle-has-the-tools-to-succeed-01m78demww7w"
+        "https://www.espn.com/nfl/story/_/id/50454197/top-10-super-bowl-individual-defensive-performances",
+        "https://www.seahawks.com/news/seahawks-at-raiders-week-10-inactives",
+        "https://www.nfl.com/news/drew-lock-no-injury-designation-seahawks-raiders"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrqpUBrBy2BM7vUm0iHr3mYvxB1ONjg1YMX97LP3q6vxXEdpqQ4IiJbBPAplk",
-      "image_credit": "NewcastleWorld",
-      "news": [
-        {
-          "url": "https://www.newcastleworld.com/sport/football/newcastle-united/newcastle-united-news-sunderland-9347700",
-          "title": "Newcastle United fight Sunderland for ‘game-changing’ £35m star who can transform Matthias Jaissle attack",
-          "publisher": "NewcastleWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrqpUBrBy2BM7vUm0iHr3mYvxB1ONjg1YMX97LP3q6vxXEdpqQ4IiJbBPAplk"
-        },
-        {
-          "url": "https://inews.co.uk/sport/football/newcastle-january-transfers-striker-target-4883297",
-          "title": "Newcastle’s January transfer plans – with £20m striker among targets",
-          "publisher": "The i Paper",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS812cjnmbPY8V9G1zl5YeEdTQauMzZoGXUBaeO1MbuSr2BcL9a-MVBTT3yco"
-        },
-        {
-          "url": "https://newcastletoons.com/what-do-newcastle-united-need-in-january-so-matthias-jaissle-has-the-tools-to-succeed-01m78demww7w",
-          "title": "What do Newcastle United need in January so Matthias Jaissle has the tools to succeed",
-          "publisher": "Newcastle Toons",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfxpQyuDpToyJ0na2KlQ7BfGY4lcSMPxFUBNYOGQrXHDBUuQalmXkmDUUpa40"
-        }
-      ]
-    },
-    {
-      "query": "nwsl schedule",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T20:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50481452/washington-spirit-vs-utah-royals-nwsl-championship-semiginal",
-        "https://www.nytimes.com/athletic/7781726/2026/11/14/spirit-royals-clara-luvanga-semifinal-takeaways/",
-        "https://www.washingtonpost.com/sports/2026/11/14/spirit-rallies-past-utah-secure-third-straight-nwsl-final-appearance/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4UDJj7zP7OPgD3SmscTXlXLxZbfc6ue9bPy9JdIvYTcIQxXoV_8d6wPjfB5I",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREMhMhNa-zvH0OV4Q2X1fwk2UE9Voa0FuzWvC08_xpKXWtDszuXjtr4wl2bBI",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50481452/washington-spirit-vs-utah-royals-nwsl-championship-semiginal",
-          "title": "Washington Spirit edge Utah Royals to reach 3rd straight NWSL Championship",
+          "url": "https://www.espn.com/nfl/story/_/id/50454197/top-10-super-bowl-individual-defensive-performances",
+          "title": "Ranking the top 10 Super Bowl performances by a defender",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4UDJj7zP7OPgD3SmscTXlXLxZbfc6ue9bPy9JdIvYTcIQxXoV_8d6wPjfB5I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREMhMhNa-zvH0OV4Q2X1fwk2UE9Voa0FuzWvC08_xpKXWtDszuXjtr4wl2bBI"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7781726/2026/11/14/spirit-royals-clara-luvanga-semifinal-takeaways/",
-          "title": "Spirit come back to beat Royals 2-1, securing a place in the NWSL Championship at home - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.seahawks.com/news/seahawks-at-raiders-week-10-inactives",
+          "title": "Seahawks at Raiders Week 10 Inactives",
+          "publisher": "Seattle Seahawks",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwxzhDeWihwe_aCuip1M60Rk8-ytCOT56Tbnsps_yiZ8OANricTFWekUT88w0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLnkrRfYm0W2Fq1y1ubbeH26AJUlMGKYCopFAUbwxipYHvC74_zzjJJhkWUAQ"
         },
         {
-          "url": "https://www.washingtonpost.com/sports/2026/11/14/spirit-rallies-past-utah-secure-third-straight-nwsl-final-appearance/",
-          "title": "Spirit rallies past Utah to secure third straight NWSL final appearance",
-          "publisher": "The Washington Post",
+          "url": "https://www.nfl.com/news/drew-lock-no-injury-designation-seahawks-raiders",
+          "title": "Drew Lock (elbow/oblique) has no injury designation, will start for Seahawks vs. Raiders",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNctlsbAZReAa8VbKttgZ68gaIrO5LJ9lQ_oQLcnlf8YIK5V_S_umYCa9ISoU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh1OmVCVU3AOmjMI6gSsj3wGbB0x-rhKaEZ1Wp3vzmDgkfVK10gENEFQ2btQM"
         }
       ]
     },
     {
-      "query": "matt lafleur",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T20:10:00Z",
+      "query": "jordyn tyson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T20:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/green-bay-packers-answer-running-110006826.html",
-        "https://www.nytimes.com/athletic/7768948/2026/11/10/kaleb-johnson-packers-josh-jacobs-injury/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-10/kaleb-johnson-to-get-shot-as-lead-rb"
+        "https://people.com/all-about-jordyn-tyson-parents-12153052",
+        "https://www.cbssports.com/fantasy/football/news/jamey-eisenbergs-2026-week-10-fantasy-football-sleepers/",
+        "https://www.espn.com.au/video/clip/_/id/50462354/why-daniel-dopp-field-yates-need-see-more-jordyn-tyson-fantasy"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKVYORtwyDzdvlA_yrSTCOhuLyMc2paQuK8oIdyEKKQ3Q3lqi_IAHzFQXIlkk",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPUhElmxUdQxqBwBT7RRkpPEUktr4tAdEMjeNtxiCQXWgpVyYkXJoo5D341xA",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/green-bay-packers-answer-running-110006826.html",
-          "title": "Green Bay Packers Have an Answer at Running Back in Kaleb Johnson",
-          "publisher": "Yahoo Sports",
+          "url": "https://people.com/all-about-jordyn-tyson-parents-12153052",
+          "title": "Meet Saints Wide Receiver Jordyn Tyson’s Parents, John Tyson and Sandra Brown",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKVYORtwyDzdvlA_yrSTCOhuLyMc2paQuK8oIdyEKKQ3Q3lqi_IAHzFQXIlkk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPUhElmxUdQxqBwBT7RRkpPEUktr4tAdEMjeNtxiCQXWgpVyYkXJoo5D341xA"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7768948/2026/11/10/kaleb-johnson-packers-josh-jacobs-injury/",
-          "title": "With Josh Jacobs sidelined, the case for Kaleb Johnson to lead the Packers’ backfield - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.cbssports.com/fantasy/football/news/jamey-eisenbergs-2026-week-10-fantasy-football-sleepers/",
+          "title": "Jamey Eisenberg's Week 10 Fantasy football sleepers and DFS picks: Jordyn Tyson a likely breakout candidate",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA43AQtFXpgQCHNgavef2aZn452C0M1abxiszKGqGSm4OemlGkka0qU2kFKH0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkCv-lKtmatHxcKZsdrNf_t7NszoB0x25wNl498GosQv0YbqnRGP6iOsfN2U"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-10/kaleb-johnson-to-get-shot-as-lead-rb",
-          "title": "Kaleb Johnson to get shot as lead RB?",
-          "publisher": "NBC Sports",
+          "url": "https://www.espn.com.au/video/clip/_/id/50462354/why-daniel-dopp-field-yates-need-see-more-jordyn-tyson-fantasy",
+          "title": "Why Daniel Dopp, Field Yates need to see more out of Jordyn Tyson in fantasy",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP90MoINTgGhvvwyiz9aYWRFswFPaoeE05KW721rYBrsXsTbZfNNTXTgpA9UQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl99vHhz1I_aoZwo6J92bclzUnASHM6KzRWy9uNU_l4QIDuWtX8NRfUe3o6Pc"
         }
       ]
     },
     {
-      "query": "caleb douglas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T20:10:00Z",
+      "query": "zane gonzalez",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T20:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/video/fantasy-hurry-up-offense-can-fantasy-managers-start-caleb-douglas-with-confidence-161844983.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/douglas-leads-miami-with-six-catches-for-70-yards",
-        "https://www.rotoballer.com/player-news/caleb-douglas-draws-14-targets-ahead-of-week-10/1993893"
+        "https://www.nfl.com/videos/dolphins-add-points-to-the-board-with-53-yard-zane-gonzalez-fg",
+        "https://www.profootballrumors.com/2026/11/dolphins-work-out-k-daniel-carlson",
+        "https://www.fantasypros.com/nfl/news/618540/zane-gonzalez-misses-field-goal-week-9.php"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJJcQxovkmk1TfrKtSKQZZ7yEOituPUcF3StHn1fGpAfNbkzjjEU-8TJGB3w",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmah8AQQf6pOQn8d_Ot6E3AAK1iLYwSJUoOMajbpzB-TfiOkuNWrnceA9bMLA",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/videos/dolphins-add-points-to-the-board-with-53-yard-zane-gonzalez-fg",
+          "title": "Dolphins add points to the board with 53-yard Zane Gonzalez FG",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmah8AQQf6pOQn8d_Ot6E3AAK1iLYwSJUoOMajbpzB-TfiOkuNWrnceA9bMLA"
+        },
+        {
+          "url": "https://www.profootballrumors.com/2026/11/dolphins-work-out-k-daniel-carlson",
+          "title": "Dolphins Work Out K Daniel Carlson",
+          "publisher": "ProFootballRumors.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYrfHIycE-I8E-VFpdveplqMm9aqwAgNoLCUspJnGIgLOYBW7_4ORjuLW03kE"
+        },
+        {
+          "url": "https://www.fantasypros.com/nfl/news/618540/zane-gonzalez-misses-field-goal-week-9.php",
+          "title": "Zane Gonzalez misses field goal in Week 9",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSo0N3k5mLkzYqc_olQPu26cNpzjG6sCIbworzcD5oJH96yNfqJ4ZFeFy58gEc"
+        }
+      ]
+    },
+    {
+      "query": "khalil shakir",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T20:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/dj-moore-finally-shakes-injury-123437881.html",
+        "https://www.si.com/nfl/bills/onsi/fantasy-week-10-start-sit-dj-moore-dalton-kincaid-khalil-shakir-keon-coleman",
+        "https://www.fantasylife.com/articles/fantasy/man-vs-zone-matchups-for-wr-tes-in-week-10"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSOWmFpng7fVgHcuZ1_2j9UY81ggCGO4Zl7jP0nYxZjG7Tg5E-UvTUNm8dAzE",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/video/fantasy-hurry-up-offense-can-fantasy-managers-start-caleb-douglas-with-confidence-161844983.html",
-          "title": "Fantasy Hurry-Up Offense: Can fantasy managers start Caleb Douglas with confidence?",
+          "url": "https://sports.yahoo.com/articles/dj-moore-finally-shakes-injury-123437881.html",
+          "title": "DJ Moore Finally Shakes Injury Status, Appears Ready for Takeoff for Bills in Week 10",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJJcQxovkmk1TfrKtSKQZZ7yEOituPUcF3StHn1fGpAfNbkzjjEU-8TJGB3w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSOWmFpng7fVgHcuZ1_2j9UY81ggCGO4Zl7jP0nYxZjG7Tg5E-UvTUNm8dAzE"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/douglas-leads-miami-with-six-catches-for-70-yards",
-          "title": "Douglas leads Miami with six catches for 70 yards",
-          "publisher": "NBC Sports",
+          "url": "https://www.si.com/nfl/bills/onsi/fantasy-week-10-start-sit-dj-moore-dalton-kincaid-khalil-shakir-keon-coleman",
+          "title": "Fantasy Start-Sit Week 10: DJ Moore, Dalton Kincaid, Khalil Shakir, Keon Coleman",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQjNo94-uSr8y-jxoiVIluMPwYW__YJrUQGr59IfZ_Cpjyr_OpVBEtfxsQ17M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUvSAvK5HxhDl-XVCsdXkarJOWO3CA1JCkQIJ-7xeGJR6kuNXFfCfmFWMNeS8"
         },
         {
-          "url": "https://www.rotoballer.com/player-news/caleb-douglas-draws-14-targets-ahead-of-week-10/1993893",
-          "title": "Caleb Douglas - Fantasy Football Waiver Wire Pickups for Week 10 (2026) - NFL News",
-          "publisher": "RotoBaller",
+          "url": "https://www.fantasylife.com/articles/fantasy/man-vs-zone-matchups-for-wr-tes-in-week-10",
+          "title": "Man vs. Zone Matchups for WR/TEs in Week 10: DJ Moore's Time to Shine",
+          "publisher": "FantasyLife",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRRuzQukAcdvqT3qOQ7YwrFT_pXNO4ZEY3alLeTysdrPpiBDURkX3WLudZXJI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQp134nYYIH4AxnOoxkO_4mAIjZILDsfQV0L6A0sFwviePfepKt6IzrU-syxtw"
+        }
+      ]
+    },
+    {
+      "query": "49ers - cowboys",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-15T20:30:00Z",
+      "related_news_urls": [
+        "https://www.49ers.com/news/ways-to-watch-and-listen-49ers-vs-cowboys-week-10",
+        "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-claim-55-bonus-for-49ers-cowboys-rams-cardinals-steelers-bengals-nfl/",
+        "https://www.nytimes.com/athletic/7776929/2026/11/15/cowboys-49ers-predictions-score-nfl-week-10/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRO2cV_31t861iWIGT9I5LE_hHNSbvHkJY9QQdl4Bi8ATYC9E5U7oWQQQ9gcn4",
+      "image_credit": "San Francisco 49ers",
+      "news": [
+        {
+          "url": "https://www.49ers.com/news/ways-to-watch-and-listen-49ers-vs-cowboys-week-10",
+          "title": "Ways to Watch and Listen: 49ers vs. Cowboys | Week 10",
+          "publisher": "San Francisco 49ers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRO2cV_31t861iWIGT9I5LE_hHNSbvHkJY9QQdl4Bi8ATYC9E5U7oWQQQ9gcn4"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-claim-55-bonus-for-49ers-cowboys-rams-cardinals-steelers-bengals-nfl/",
+          "title": "Best Kalshi promo code CBSSPORTS55: Claim $55 bonus for 49ers-Cowboys, Rams-Cardinals, Steelers-Bengals NFL",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnrfzmZeWglIoRznqZnGDqP0LJKBcEunIHzysQ9EYeI8BAqcU6PX5jiZaY_pI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7776929/2026/11/15/cowboys-49ers-predictions-score-nfl-week-10/",
+          "title": "Cowboys vs. 49ers score predictions: Can Dallas shock the NFL, stay alive in NFC East race?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSus-Jt0tDIIL05a7X5v2e5u9I6Hq7rIvWfgK6CveNsZ0c3db7hXWOTP5TJnvI"
+        }
+      ]
+    },
+    {
+      "query": "mirra andreeva",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T20:30:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/news/4609487/follow-live-andreeva-and-svitolina-meet-again-this-time-for-the-fage-wta-finals-title",
+        "https://www.nytimes.com/athletic/7782008/2026/11/15/wta-finals-final-mirra-andreeva-elina-svitolina/",
+        "https://www.theguardian.com/sport/live/2026/nov/15/wta-finals-final-elina-svitolina-v-mirra-andreeva-live"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQi69AFw0H1rZ2iEqa1cmNVSyOnv56qFOxEpg6xyETozg7yZXvN5IpiNvFciFk",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/news/4609487/follow-live-andreeva-and-svitolina-meet-again-this-time-for-the-fage-wta-finals-title",
+          "title": "Follow live: Andreeva and Svitolina meet again, this time for the FAGE WTA Finals title",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQi69AFw0H1rZ2iEqa1cmNVSyOnv56qFOxEpg6xyETozg7yZXvN5IpiNvFciFk"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7782008/2026/11/15/wta-finals-final-mirra-andreeva-elina-svitolina/",
+          "title": "Mirra Andreeva has taken the WTA Finals by storm. Now she must embrace the pressure",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRQEkhRlrHkdn3pBT3bUqRSRsQU947dU4rBdwwUxnvExAEbQ_DOfaMvh5dQ3Q"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/15/wta-finals-final-elina-svitolina-v-mirra-andreeva-live",
+          "title": "WTA Finals final: Elina Svitolina v Mirra Andreeva – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScNsaFwxB56uEk7RWYw8KJapn0KcHjHqlO0_ix03lAoo-kTRn-rfsM1LGxGGo"
+        }
+      ]
+    },
+    {
+      "query": "kc concepcion",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T20:30:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/watch/fmc-2g4n8d9bfrdadf43",
+        "https://www.nfl.com/videos/kc-concepcion-s-rushing-td-pulls-cleveland-to-within-one-point-of-the-texans",
+        "https://www.clevelandbrowns.com/video/can-t-miss-play-64-yard-td-shedeur-sanders-and-kc-concepcion-stun-saints-in-fourth-quarter"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnZil3bh5ZyE8ZqdXNqRwY1yh442VmOj2-z3aAOdS1HoJOTHlBk3LU9y4h7m0",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/watch/fmc-2g4n8d9bfrdadf43",
+          "title": "Browns' KC Concepcion rushes for six-yard TD, tying game vs Texans | NFL Highlights",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnZil3bh5ZyE8ZqdXNqRwY1yh442VmOj2-z3aAOdS1HoJOTHlBk3LU9y4h7m0"
+        },
+        {
+          "url": "https://www.nfl.com/videos/kc-concepcion-s-rushing-td-pulls-cleveland-to-within-one-point-of-the-texans",
+          "title": "KC Concepcion's rushing TD pulls Cleveland to within one point of the Texans",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAoLeNfphzY9xELKry174x7SUVHZqrlvbsTuidrw5SPp4UWvHchsF8JcoxIQ"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/video/can-t-miss-play-64-yard-td-shedeur-sanders-and-kc-concepcion-stun-saints-in-fourth-quarter",
+          "title": "Can't-Miss Play: 64-yard TD! Shedeur Sanders and KC Concepcion stun Saints in fourth quarter",
+          "publisher": "Cleveland Browns",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2m2bXVfs2hQc1KoT3k8OzQ3G_UqwoM6uIbPgG4za-bXz7X-eF-LF-CXvfObg"
+        }
+      ]
+    },
+    {
+      "query": "christian watson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T20:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/jordan-love-matthew-golden-christian-123000663.html",
+        "https://www.si.com/nfl/packers/onsi/it-took-nine-games-for-christian-watson-to-do-what-hadnt-been-done-in-four-seasons",
+        "https://foxsports1070.iheart.com/content/2026-11-13-christian-justus-watson-week-10-preview-vs-the-vikings/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhO9LqqV0FO32sLWGZPPsm1kaz6fWATb0Hdn_6LacfsEOXKL3Eb1A-NpT_7bA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/jordan-love-matthew-golden-christian-123000663.html",
+          "title": "Jordan Love, Matthew Golden, and Christian Watson's Projected Fantasy Points in Week 10 vs. Vikings",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhO9LqqV0FO32sLWGZPPsm1kaz6fWATb0Hdn_6LacfsEOXKL3Eb1A-NpT_7bA"
+        },
+        {
+          "url": "https://www.si.com/nfl/packers/onsi/it-took-nine-games-for-christian-watson-to-do-what-hadnt-been-done-in-four-seasons",
+          "title": "It Took Nine Games for Christian Watson to Do What Hadn’t Been Done in Four Seasons",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKUdIE00pw-jPEMxllvJtYrRon85CT56gL0UhlOxcr_z06yKDgVG68QAQf37s"
+        },
+        {
+          "url": "https://foxsports1070.iheart.com/content/2026-11-13-christian-justus-watson-week-10-preview-vs-the-vikings/",
+          "title": "Christian Justus Watson Week 10 Preview vs. the Vikings",
+          "publisher": "Fox Sports 1070",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNlj5qvFdtHg8qeR6yta-Osnz6hkWJavGz27uoBZeGm1gWZVrRQqaPQRKZIIQ"
+        }
+      ]
+    },
+    {
+      "query": "dalton schultz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T20:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/videos/bench-tank-dell-cleveland-lockdown-141057474.html",
+        "https://sportstalk790.iheart.com/content/2026-11-14-kayshon-boutte-week-10-preview-vs-the-browns/",
+        "https://fantasyfootballcalculator.com/start/dalton-schultz-or-carnell-tate"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZfAwZjY9lyabXcWF3vsj0_x6EtpwTJwEDb-ZV1wlIjuvCS8F89rHNof91IkA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/videos/bench-tank-dell-cleveland-lockdown-141057474.html",
+          "title": "Bench Tank Dell as Cleveland’s Lockdown Man Coverage Threatens a Total Fantasy Trap",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZfAwZjY9lyabXcWF3vsj0_x6EtpwTJwEDb-ZV1wlIjuvCS8F89rHNof91IkA"
+        },
+        {
+          "url": "https://sportstalk790.iheart.com/content/2026-11-14-kayshon-boutte-week-10-preview-vs-the-browns/",
+          "title": "Kayshon Boutte Week 10 Preview vs. the Browns",
+          "publisher": "SportsTalk 790",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7zmqc-zYxSUur8MQ8128EH6E12Nx3oF9ddD_H6zE513wMTNYP7IK0n12Pdc"
+        },
+        {
+          "url": "https://fantasyfootballcalculator.com/start/dalton-schultz-or-carnell-tate",
+          "title": "Who Should I Start? Dalton Schultz or Carnell Tate",
+          "publisher": "Fantasy Football Calculator",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ZbfcL55HE6MzIj8bWfTMzrfOr0VZ3cOdIZIIejjYJOMN0XK51n2yr0Sp_6Q"
         }
       ]
     }
