@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T08:31:25.109103Z",
+  "checked_at": "2026-11-15T09:01:17.698938Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "chiefs vs falcons",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-15T08:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
+        "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-mansoor-delane-are-questionable-for-chiefs"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdqzx3IWckDsxFFUam1FFQZY2S13sYB8T5C9TqITZjqCbWN8D2Mlhy36L-Mjg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
+          "title": "Chiefs' Kenneth Walker III (groin) to sit out vs. Falcons",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdqzx3IWckDsxFFUam1FFQZY2S13sYB8T5C9TqITZjqCbWN8D2Mlhy36L-Mjg"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/",
+          "title": "NFL Week 10 injury report: Chiefs' Kenneth Walker III ruled out, Patriots' A.J. Brown questionable",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa-cjoh4stNJyoRTBMnBZRLoJluiHXzCbExn2vi1DMYFzE2K9TkkxB0yzy2Ps"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-mansoor-delane-are-questionable-for-chiefs",
+          "title": "Kenneth Walker, Mansoor Delane are questionable for Chiefs",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBIt66BtmInxoybqpN3ruhWJzNkyAhv3zrw2bD_Ypag6rVSYUNRdYK9tSFyJo"
+        }
+      ]
+    },
+    {
+      "query": "australia vs new zealand",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T08:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/rugby-league/live/cqx2z52p671wt",
+        "https://www.nrl.com/news/2026/11/10/world-cup-team-lists-mens-final/",
+        "https://www.abc.net.au/news/2026-11-15/kangaroos-jillaroos-live-rugby-league-world-cup-finals/107376474"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtPvx_FOC9ogG2akTFp9_x_zZiUwjVKqPh3gV1fIHUrmkZvO6BsCKqdQMmj4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/rugby-league/live/cqx2z52p671wt",
+          "title": "Australia and New Zealand meet in Men's Rugby League World Cup final",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtPvx_FOC9ogG2akTFp9_x_zZiUwjVKqPh3gV1fIHUrmkZvO6BsCKqdQMmj4"
+        },
+        {
+          "url": "https://www.nrl.com/news/2026/11/10/world-cup-team-lists-mens-final/",
+          "title": "World Cup Late Mail: Kangaroos-Kiwis finalise teams",
+          "publisher": "NRL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8X-RdNb7GbgwnAJv83ssvRf5E72_KltiFobmDZDptpBWjFDlz8AyZyFuaIbQ"
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-15/kangaroos-jillaroos-live-rugby-league-world-cup-finals/107376474",
+          "title": "Live: Kangaroos try to back up Jillaroos' thrashing in World Cup final against Kiwis",
+          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0SVLwEAM1z4XZrH5nh07iSnfTx2Re9f9MIUaT3sS6-V7oy9Jwrvda7VEyZ5w"
+        }
+      ]
+    },
     {
       "query": "maika monroe",
       "approx_searches": "100+",
@@ -50,7 +120,7 @@
         "https://www.buffalorumblings.com/buffalo-bills-analysis/145264/buffalo-bills-trending-up-trending-down-the-players-who-will-decide-game-at-jets",
         "https://www.syracuse.com/buffalo-bills/2026/11/buffalo-bills-could-exploit-major-jets-weakness-in-sundays-matchup-4-things-to-know.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXk4hhITBZ-5E2rM5uqIpGFGJaP4LTcOL98EdVPvwuMdU_Oa3z7T_vWUZ-feM",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8z1tcCI4_Q0moELqFXR1oZM2IWp7ykEtnkB996GN7u2WhCJDa2TKBS9yQElk",
       "image_credit": "Buffalo Bills",
       "news": [
         {
@@ -58,7 +128,7 @@
           "title": "Buffalo Bills vs. New York Jets | Where to watch, stream and listen | Week 10",
           "publisher": "Buffalo Bills",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXk4hhITBZ-5E2rM5uqIpGFGJaP4LTcOL98EdVPvwuMdU_Oa3z7T_vWUZ-feM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8z1tcCI4_Q0moELqFXR1oZM2IWp7ykEtnkB996GN7u2WhCJDa2TKBS9yQElk"
         },
         {
           "url": "https://www.buffalorumblings.com/buffalo-bills-analysis/145264/buffalo-bills-trending-up-trending-down-the-players-who-will-decide-game-at-jets",
@@ -113,7 +183,7 @@
     },
     {
       "query": "is amon ra st brown playing",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-15T07:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
@@ -182,83 +252,83 @@
       ]
     },
     {
-      "query": "earthquake",
+      "query": "seahawks vs raiders",
       "approx_searches": "200+",
       "published_at": "2026-11-15T07:30:00Z",
       "related_news_urls": [
-        "https://www.nbclosangeles.com/news/local/chatsworth-earthquake/3967408/",
-        "https://www.yahoo.com/news/weather-news/articles/preliminary-2-4-magnitude-earthquake-181621575.html",
-        "https://www.sacbee.com/news/california/earthquakes/article317972861.html"
+        "https://www.seattletimes.com/sports/seahawks/what-to-know-as-seahawks-face-fernando-mendoza-raiders/",
+        "https://sports.yahoo.com/articles/seahawks-reveal-blunt-approach-facing-064028599.html",
+        "https://www.seahawks.com/news/what-to-watch-in-the-seahawks-week-10-game-at-las-vegas"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkwtyJu8rVdCcHhNbum6S5oXDkC76496v0nhdusVFC_O_u0DXnFdldc03v-ww",
-      "image_credit": "NBC Los Angeles",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLUZbKf0jefdaJCDAXxiU4ODLkcZ9_kb8JxVUFZ0oGpKXF1GU1nfnk1NJurWU",
+      "image_credit": "The Seattle Times",
       "news": [
         {
-          "url": "https://www.nbclosangeles.com/news/local/chatsworth-earthquake/3967408/",
-          "title": "Preliminary 2.4-magnitude earthquake rattles Chatsworth",
-          "publisher": "NBC Los Angeles",
+          "url": "https://www.seattletimes.com/sports/seahawks/what-to-know-as-seahawks-face-fernando-mendoza-raiders/",
+          "title": "What to know as Seahawks face Raiders, plus Bob Condotta's prediction",
+          "publisher": "The Seattle Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkwtyJu8rVdCcHhNbum6S5oXDkC76496v0nhdusVFC_O_u0DXnFdldc03v-ww"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLUZbKf0jefdaJCDAXxiU4ODLkcZ9_kb8JxVUFZ0oGpKXF1GU1nfnk1NJurWU"
         },
         {
-          "url": "https://www.yahoo.com/news/weather-news/articles/preliminary-2-4-magnitude-earthquake-181621575.html",
-          "title": "Preliminary 2.4 magnitude earthquake jolts Southern California",
-          "publisher": "Yahoo",
+          "url": "https://sports.yahoo.com/articles/seahawks-reveal-blunt-approach-facing-064028599.html",
+          "title": "Seahawks Reveal Blunt Approach to Facing Raiders’ Fernando Mendoza",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQML1mQBiYKucKz38dnArR2hZGHodObVYDrFLeXsULDlcQWDb75wbdfCQxHeF4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXCdD-sNRibzYIG5MmNCwMbSJqwpn43UFZSkZzjVw_bIDFF7mGSKfJ7gvR4s8"
         },
         {
-          "url": "https://www.sacbee.com/news/california/earthquakes/article317972861.html",
-          "title": "Update: Earthquake shakes region near East Quincy, CA on Nov. 7 - 2.3 magnitude recorded",
-          "publisher": "Sacramento Bee",
+          "url": "https://www.seahawks.com/news/what-to-watch-in-the-seahawks-week-10-game-at-las-vegas",
+          "title": "What To Watch In The Seahawks’ Week 10 Game At Las Vegas",
+          "publisher": "Seattle Seahawks",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpjZawB9kvcmNRDARwa_BC9KxbmWwO-7uHBjfbPcF0HJedYwkXjKkwi9vyhHg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgX3sJtKYjWkPxoEstSaakBRorFN0R3NNfg69ZkCDqYMH3pMZ3UvOx5nI_Q4Y"
         }
       ]
     },
     {
-      "query": "fitness",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T07:10:00Z",
+      "query": "earthquake",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T07:30:00Z",
       "related_news_urls": [
-        "https://www.independent.co.uk/health-and-fitness/fitness-goals-2027-advice-better-health-b3084539.html",
-        "https://www.news4jax.com/video/health/2026/11/12/new-years-resolutions-bariatric-surgeon-shares-tips-on-how-to-keep-going-past-february/",
-        "https://www.news4jax.com/health/2026/11/12/new-years-resolutions-bariatric-surgeon-shares-tips-on-how-to-keep-going-past-february/"
+        "https://www.abc4.com/news/northern-utah/3-4-magnitude-earthquake-shakes-enterprise-northern-utah/",
+        "https://kutv.com/news/local/magnitude-34-earthquake-strikes-about-7-miles-southeast-of-huntsville",
+        "https://gephardtdaily.com/local/magnitude-3-4-earthquake-strikes-near-huntsville-felt-in-weber-and-davis-counties/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS4rp9ltBg0aStT8bU2aj5J7PO6cuaQj60iLBjKKKaqIfY118LhBFsB4o3yPw",
-      "image_credit": "The Independent",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnht69hW0xBdETbPI4XT1p4t4jdvgkocz2vbawa-8NZ7GzCJ9Lq1MPY_Ld3o8",
+      "image_credit": "ABC4 Utah",
       "news": [
         {
-          "url": "https://www.independent.co.uk/health-and-fitness/fitness-goals-2027-advice-better-health-b3084539.html",
-          "title": "Want fitness results? Do this every day until 2027",
-          "publisher": "The Independent",
+          "url": "https://www.abc4.com/news/northern-utah/3-4-magnitude-earthquake-shakes-enterprise-northern-utah/",
+          "title": "3.4 magnitude earthquake shakes Huntsville, Northern Utah",
+          "publisher": "ABC4 Utah",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS4rp9ltBg0aStT8bU2aj5J7PO6cuaQj60iLBjKKKaqIfY118LhBFsB4o3yPw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnht69hW0xBdETbPI4XT1p4t4jdvgkocz2vbawa-8NZ7GzCJ9Lq1MPY_Ld3o8"
         },
         {
-          "url": "https://www.news4jax.com/video/health/2026/11/12/new-years-resolutions-bariatric-surgeon-shares-tips-on-how-to-keep-going-past-february/",
-          "title": "New Year’s resolutions: Bariatric surgeon shares tips on how to keep going past February",
-          "publisher": "News4JAX",
+          "url": "https://kutv.com/news/local/magnitude-34-earthquake-strikes-about-7-miles-southeast-of-huntsville",
+          "title": "Magnitude 3.4 earthquake strikes about 7 miles southeast of Huntsville",
+          "publisher": "KUTV",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLFZqrL8lTROoDZZX8OSDkc5-fth92w3F7xIGB5QYPod3xdjD3qxhyW4LiTMk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnYcWk6ap5HfBKqEBpP_TC2HYPRjD4Lr9CIOaHtDd4foMjmVcCfmNinydXL88"
         },
         {
-          "url": "https://www.news4jax.com/health/2026/11/12/new-years-resolutions-bariatric-surgeon-shares-tips-on-how-to-keep-going-past-february/",
-          "title": "New Year’s resolutions: Bariatric surgeon shares tips on how to keep going past February",
-          "publisher": "News4JAX",
+          "url": "https://gephardtdaily.com/local/magnitude-3-4-earthquake-strikes-near-huntsville-felt-in-weber-and-davis-counties/",
+          "title": "Magnitude 3.4 earthquake strikes near Huntsville, felt in Weber and Davis counties",
+          "publisher": "Gephardt Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLFZqrL8lTROoDZZX8OSDkc5-fth92w3F7xIGB5QYPod3xdjD3qxhyW4LiTMk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJZhb_dubNnapueQRpIh7i0ePZcir9Zwx-0IPyzh3QS8-uOl0Om8wCguzUcM"
         }
       ]
     },
     {
       "query": "sa vs ban",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-15T07:10:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/match-preview",
-        "https://africa.espn.com/cricket/story/_/id/50488794/sa-vs-ban-1st-test-bangladesh-opt-bat-first-series-opener-wanderers",
-        "https://www.dhakatribune.com/sport/cricket/424669/shanto-backs-pace-attack-to-make-impact"
+        "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
+        "https://www.thedailystar.net/sports/cricket/news/batting-key-ending-proteas-jinx-4324181"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvpJBlACtu9oI5iNI2IGe1T740oAlcZ67h7DgjaMmb2-OBBZhXlyncGZh5T78",
       "image_credit": "Cricinfo",
@@ -271,88 +341,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvpJBlACtu9oI5iNI2IGe1T740oAlcZ67h7DgjaMmb2-OBBZhXlyncGZh5T78"
         },
         {
-          "url": "https://africa.espn.com/cricket/story/_/id/50488794/sa-vs-ban-1st-test-bangladesh-opt-bat-first-series-opener-wanderers",
-          "title": "Bangladesh opt to bat first in series opener at the Wanderers",
-          "publisher": "ESPN",
+          "url": "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
+          "title": "Bangladesh wins toss and opts to bat against South Africa in first test",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuFLaXDXo4JXm3lZr8DixIBlmQuSYrr9SXMGfdk6RDi2KtlO3m6xBoAOkVaFg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6v-mUtn4KD_fzQTDmo9txXXX7w2e7v0Oy_nP7KNy50tSWwURGRXScUSqni4"
         },
         {
-          "url": "https://www.dhakatribune.com/sport/cricket/424669/shanto-backs-pace-attack-to-make-impact",
-          "title": "Shanto backs pace attack to make impact",
-          "publisher": "Dhaka Tribune",
+          "url": "https://www.thedailystar.net/sports/cricket/news/batting-key-ending-proteas-jinx-4324181",
+          "title": "Batting key to ending Proteas jinx",
+          "publisher": "The Daily Star",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq4xjqBB58kesxMNv7RFleBW8MJ0-6BEH-MYs7FesEECCztRzxNItEmUO31Qw"
-        }
-      ]
-    },
-    {
-      "query": "karely ruiz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T07:10:00Z",
-      "related_news_urls": [
-        "https://tribuna.com.mx/espectaculos/2026/11/14/video-karely-ruiz-se-pelea-con-odette-orlena-y-agrediria-a-cukis-seria-expulsada-de-la-mansion-vip_715591/",
-        "https://heraldodemexico.com.mx/espectaculos/2026/11/13/karely-ruiz-abandono-la-mansion-vip-esta-es-la-verdad-2918465.html",
-        "https://www.tvnotas.com.mx/espectaculos-mexico/karely-abandona-la-mansion-vip-2-se-pelea-con-odette-orlena-y-exhiben-presunta-agresion-a-cukis"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsL7OJOlhcESoZBkpWhObwYKDyFTb6hxHlzxYaLL-f8tswncWch5l1sPTuHfI",
-      "image_credit": "La Tribuna (México)",
-      "news": [
-        {
-          "url": "https://tribuna.com.mx/espectaculos/2026/11/14/video-karely-ruiz-se-pelea-con-odette-orlena-y-agrediria-a-cukis-seria-expulsada-de-la-mansion-vip_715591/",
-          "title": "VIDEO: Karely Ruiz se pelea con Odette Orlena y agrediría a Cukis; sería expulsada de ‘La Mansión VIP’",
-          "publisher": "La Tribuna (México)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsL7OJOlhcESoZBkpWhObwYKDyFTb6hxHlzxYaLL-f8tswncWch5l1sPTuHfI"
-        },
-        {
-          "url": "https://heraldodemexico.com.mx/espectaculos/2026/11/13/karely-ruiz-abandono-la-mansion-vip-esta-es-la-verdad-2918465.html",
-          "title": "¿Karely Ruiz abandonó La Mansión VIP?, esta es la verdad",
-          "publisher": "El Heraldo de México",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaNZbOmPBH4Fv2yVcabSRa2C48vB4MWDtSTF8cQq2b_jm3fHCOOPb8rgF3GWc"
-        },
-        {
-          "url": "https://www.tvnotas.com.mx/espectaculos-mexico/karely-abandona-la-mansion-vip-2-se-pelea-con-odette-orlena-y-exhiben-presunta-agresion-a-cukis",
-          "title": "¿Karely abandona ‘La mansión VIP 2’? Se pelea con Odette Orlena y exhiben presunta agresión a Cukis",
-          "publisher": "TVNotas",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqbIhLf2e1Dm9oQU5TiKJ144Gcdka7NSc-Www1sZ2_sWqQkkFTumTx1WCZCZ8"
-        }
-      ]
-    },
-    {
-      "query": "aiden mizell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T07:10:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/sports/ucla/story/2026-11-13/ucla-defeats-illinois-improves-to-10-0-for-first-time-since-1998",
-        "https://www.espn.com/college-football/story/_/id/50477249/ucla-qb-ty-dieffenbach-leaves-game-injury",
-        "https://fightingillini.com/news/2026/11/13/football-illinois-falls-at-4-ucla-on-friday-night"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd68dT6FKz44KwBcYh-swbkcK4Uo3_YvKCK5BDo_Lfo84OZ6pEwlXKNbhUrW8",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/sports/ucla/story/2026-11-13/ucla-defeats-illinois-improves-to-10-0-for-first-time-since-1998",
-          "title": "No. 4 UCLA defeats Illinois, improves to 10-0 for first time since 1998",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd68dT6FKz44KwBcYh-swbkcK4Uo3_YvKCK5BDo_Lfo84OZ6pEwlXKNbhUrW8"
-        },
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50477249/ucla-qb-ty-dieffenbach-leaves-game-injury",
-          "title": "UCLA QB Ty Dieffenbach says first-half shoulder injury vs. Illinois not serious",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GDkjsBW4AfsyYMZxUFjFoCPXQf6iFp6Kja1ma6CEg7qrqj-SFDTc2KhUMDk"
-        },
-        {
-          "url": "https://fightingillini.com/news/2026/11/13/football-illinois-falls-at-4-ucla-on-friday-night",
-          "title": "Illinois Falls at #4 UCLA on Friday Night",
-          "publisher": "University of Illinois Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSarIhDvxibQQJKn6BpYK9dZJ1PqN5hoMn97D-Qi67IS0gN0tTDi9VKNWcl6Pw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvMMmoD5WBvErQnm_Qwy_WWrRBz-GWamh9q3F0jjzilRdHqHAmgQtzONt0hE"
         }
       ]
     }
