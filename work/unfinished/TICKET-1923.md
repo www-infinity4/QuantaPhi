@@ -5,7 +5,7 @@ state: source_staged
 dot: "🟡"
 progress_percent: 44
 progress_basis: "44% estimate applies only to initial Nuance source-card phase; overall five-thread Avatar AI pilot and production acceptance remain incomplete. Public prompt and owner-scoped audit source integrated pending CI, independent review and live checks."
-sessions_spent: 3
+sessions_spent: 4
 sessions_remaining_estimate: unknown
 agent: GPT
 lease_id: null
@@ -18,7 +18,7 @@ merged: false
 deployed: false
 live_verified: false
 blocker: "Full original transcript not yet authorized/imported; combined exact-head CI, independent review, production and Android checks pending."
-next_action: "Inspect combined exact-head CI and independent review before guarded merge and live Android/Cloudflare checks."
+next_action: "Read the full exact-head browser CI after pinning supported runners, then obtain independent GitHub review before guarded merge and live Android/Cloudflare checks."
 ---
 # Ticket 1923 · Infinity OS Cart 003/004 → Nuance Discovery
 

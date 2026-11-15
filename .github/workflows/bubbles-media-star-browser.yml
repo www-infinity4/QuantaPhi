@@ -30,7 +30,7 @@ permissions:
   contents: read
 jobs:
   chromium_card_and_chat:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
