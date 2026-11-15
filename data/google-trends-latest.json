@@ -3,348 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T18:01:28.154696Z",
+  "checked_at": "2026-11-15T18:31:14.641499Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "oklahoma football",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-15T17:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50482206/oklahoma-ad-infuriated-sec-ole-miss-sunday-game",
-        "https://www.nytimes.com/athletic/7783772/2026/11/15/ap-top-25-college-football-week-11/",
-        "https://www.koco.com/article/ou-offering-promotions-game-against-ole-miss-moved-sunday/74431341"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFjEI9KHTkdxMi7ydpiFEnU-k3e5Z68sbbTqF5ikboF6BFJk7J9TuY-bmU8uY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50482206/oklahoma-ad-infuriated-sec-ole-miss-sunday-game",
-          "title": "Oklahoma AD rips Ole Miss, SEC; Rebels defend travel effort",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFjEI9KHTkdxMi7ydpiFEnU-k3e5Z68sbbTqF5ikboF6BFJk7J9TuY-bmU8uY"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7783772/2026/11/15/ap-top-25-college-football-week-11/",
-          "title": "AP Top 25 predictions: Who will rise, fall in college football rankings delayed to Monday?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwVP6DXDnoeetDylsCAq_HpQxJR0ONXSPEUcgL7ZOwizp9_Xsy3-KZU2LdWjI"
-        },
-        {
-          "url": "https://www.koco.com/article/ou-offering-promotions-game-against-ole-miss-moved-sunday/74431341",
-          "title": "OU offering promotions for fans after game against Ole Miss moved to Sunday",
-          "publisher": "KOCO",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0swhj012-Ec3uOmS_G8ewQtnossz4z8gi1vpEdPVn7lbOJCnW0w2BRP8v2Xk"
-        }
-      ]
-    },
-    {
-      "query": "vikings - packers",
+      "query": "nico collins",
       "approx_searches": "1000+",
-      "published_at": "2026-11-15T17:40:00Z",
+      "published_at": "2026-11-15T18:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/week-9-game-thread-early-145517397.html",
-        "https://www.vikings.com/news/how-to-watch-listen-to-stream-packers-week-10-2026",
-        "https://sports.yahoo.com/articles/packers-vs-vikings-week-10-164706398.html"
+        "https://sports.yahoo.com/articles/texans-wr-nico-collins-said-200004571.html",
+        "https://www.rotoballer.com/player-news/nico-collins-a-strong-wr2-in-week-10/1993464",
+        "https://twsn.net/2026/11/13/nico-collins-shrinking-target-share-makes-him-a-risky-start-against-cleveland"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTslS034QxPhfHBuDoSL7mwYeAFY95G0z3iySyhSy2cnGExitkCIo9DjXv88_w",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmd6L-M63-Ht-QCkZFePzdoKE1ik1_NHdeckAJ2hv5bM32cE0L7yd3bDBbNw",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/week-9-game-thread-early-145517397.html",
-          "title": "Week 9 game thread: Early Munich game and Vikings-Packers in the AM",
+          "url": "https://sports.yahoo.com/articles/texans-wr-nico-collins-said-200004571.html",
+          "title": "What Texans WR Nico Collins Said About Facing Browns CB Denzel Ward",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTslS034QxPhfHBuDoSL7mwYeAFY95G0z3iySyhSy2cnGExitkCIo9DjXv88_w"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmd6L-M63-Ht-QCkZFePzdoKE1ik1_NHdeckAJ2hv5bM32cE0L7yd3bDBbNw"
         },
         {
-          "url": "https://www.vikings.com/news/how-to-watch-listen-to-stream-packers-week-10-2026",
-          "title": "How to Watch, Listen to & Stream Vikings at Packers in 2026 Week 10 Game",
-          "publisher": "Minnesota Vikings",
+          "url": "https://www.rotoballer.com/player-news/nico-collins-a-strong-wr2-in-week-10/1993464",
+          "title": "Nico Collins Week 10 Outlook for Fantasy Football (2026)",
+          "publisher": "RotoBaller",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCDU_aNKSO8eRbUKteZv_yWIY7YGZjYI8OPAhOoEwnSBKeQKWPa7KOhxtQdkk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1n0jWEIuobpIFWLXTt8m7GXV4k-dE0qvrAFPp3ds-ax0ZdFuG1JrXO-wC970"
         },
         {
-          "url": "https://sports.yahoo.com/articles/packers-vs-vikings-week-10-164706398.html",
-          "title": "Packers vs. Vikings Week 10 Live Game Discussion",
+          "url": "https://twsn.net/2026/11/13/nico-collins-shrinking-target-share-makes-him-a-risky-start-against-cleveland",
+          "title": "Nico Collins’ Shrinking Target Share Makes Him a Risky Start Against Cleveland",
+          "publisher": "TWSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs5AhVpFptEcPIGN_ruOU_6yVOBmFEbnpeZ6QLcRLea9ug5_g6jFiO3Acmcpo"
+        }
+      ]
+    },
+    {
+      "query": "travis kelce injury",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T18:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/travis-kelce-play-today-injury-114554338.html",
+        "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/13/kansas-city-chiefs-travis-kelce-injury-final-update-nfl-week-10/92772383007/",
+        "https://www.fantasypros.com/nfl/news/619861/travis-kelce-ankle-good-to-go-sunday.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUx1ufACzq5QhFuHsHezJIioH-UOuAB2mRg8a3uhtAhE3_g0IMM4_e4U138N0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/travis-kelce-play-today-injury-114554338.html",
+          "title": "Will Travis Kelce play today? Injury news, update for Chiefs TE",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfQMJh8_a0geMKgNpj3T0U_iAOlk5dLqRKT-qAn8KEcCQqlfv56wJpOHM1JOw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUx1ufACzq5QhFuHsHezJIioH-UOuAB2mRg8a3uhtAhE3_g0IMM4_e4U138N0"
+        },
+        {
+          "url": "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/13/kansas-city-chiefs-travis-kelce-injury-final-update-nfl-week-10/92772383007/",
+          "title": "Will Travis Kelce play this week? Final injury update for Chiefs TE",
+          "publisher": "Chiefs Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCS_pSJ8t183cQ7so5PZeUPXoW5_mj4oGPRsSEYzxCmw80fIrIimTe_KEjqBc"
+        },
+        {
+          "url": "https://www.fantasypros.com/nfl/news/619861/travis-kelce-ankle-good-to-go-sunday.php",
+          "title": "Travis Kelce (ankle) good to go for Sunday",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1eoyUnCqilgZLCq366VsGyH5oW1JK0p1i-nUFeKXffhWo3uNxq6NfzCb2Nt4"
         }
       ]
     },
     {
-      "query": "the motley fool",
+      "query": "falcons game today",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T17:40:00Z",
+      "published_at": "2026-11-15T18:10:00Z",
       "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/15/how-these-6-natural-gas-stocks-make-money/",
-        "https://finance.yahoo.com/markets/stocks/articles/6-natural-gas-stocks-money-153300478.html",
-        "https://www.fool.com/investing/2026/11/15/1-reason-to-buy-williams-sonoma-stock/"
+        "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-shares-personal-news-084228979.html",
+        "https://www.imdb.com/news/ni66112359/?ref_=nmnw_art_perm",
+        "https://sports.ndtv.com/us/nfl/taylor-swift-drops-big-holiday-update-days-before-kansas-city-chiefs-atlanta-falcons-game-12326557"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9EdKn6roaPxYYVYQfUEWsnej4S_85JGW0giPhXUCxggk_mi1vz6i-D_sWSWo",
-      "image_credit": "The Motley Fool",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxgXxlL7QeQs_qcxCINCz5knm5vconMojV4FkAkMB8Od_r-Qht8F2vzuOwdvQ",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.fool.com/investing/2026/11/15/how-these-6-natural-gas-stocks-make-money/",
-          "title": "How These 6 Natural Gas Stocks Make Money",
-          "publisher": "The Motley Fool",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-shares-personal-news-084228979.html",
+          "title": "Taylor Swift Shares Personal News Before Chiefs-Falcons Game",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9EdKn6roaPxYYVYQfUEWsnej4S_85JGW0giPhXUCxggk_mi1vz6i-D_sWSWo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxgXxlL7QeQs_qcxCINCz5knm5vconMojV4FkAkMB8Od_r-Qht8F2vzuOwdvQ"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/6-natural-gas-stocks-money-153300478.html",
-          "title": "How These 6 Natural Gas Stocks Make Money",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.imdb.com/news/ni66112359/?ref_=nmnw_art_perm",
+          "title": "Is Taylor Swift Attending Today’s Chiefs Game? Latest November 15 Attendance Update",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxibI_OmIIEEDHZ14-31KoCYdPMN4tdzyLsh3I8OkyoU-F4RCDDIgd3HvqDRg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7BH2nDxcDjCM5eHrF6ofKQRGcatMZ2BY99UU9_uBEAPTRyKTasmI_MtqGMb4"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/15/1-reason-to-buy-williams-sonoma-stock/",
-          "title": "1 Reason to Buy Williams-Sonoma Stock",
-          "publisher": "The Motley Fool",
+          "url": "https://sports.ndtv.com/us/nfl/taylor-swift-drops-big-holiday-update-days-before-kansas-city-chiefs-atlanta-falcons-game-12326557",
+          "title": "Taylor Swift Drops Big Holiday Update Days Before Kansas City Chiefs-Atlanta Falcons Game",
+          "publisher": "NDTV Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWfEFV393_wa0JFzjSrMm2raCdWhb9ykrTKj_MC6FTIxYZgco3jKfZhiYbxZw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSppnn_q03NFkAvEXSBsChOCPxVZELwzg7Y-J85tHfQdTlQGgH0s6OempQ4HOE"
         }
       ]
     },
     {
-      "query": "robert kraft",
+      "query": "van ginkel",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T17:30:00Z",
+      "published_at": "2026-11-15T18:10:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/14/business/kraft-data-center-sutton/",
-        "https://www.cbsnews.com/boston/news/sutton-data-center-campus-kraft/",
-        "https://www.bostonherald.com/2026/11/13/massachusetts-ballot-initiative-to-restrict-data-center-proposals-organizes-for-2028-election/"
+        "https://sports.yahoo.com/articles/former-wisconsin-badger-best-chance-193001670.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSz55yvE9-FytqjysRLFfuWt4wzf32K7eAYgIHQfppkFtNN4xaIVjjMtqeUCg",
-      "image_credit": "The Boston Globe",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-IJZFo01ksL_XV7xxFARHEZt18u6mIX4vrLMsGlAD9lpCPVOfbUBX5Y75gwU",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.bostonglobe.com/2026/11/14/business/kraft-data-center-sutton/",
-          "title": "The Krafts face what could be their ugliest fight yet: building one of the country’s largest data centers in Sutton",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSz55yvE9-FytqjysRLFfuWt4wzf32K7eAYgIHQfppkFtNN4xaIVjjMtqeUCg"
-        },
-        {
-          "url": "https://www.cbsnews.com/boston/news/sutton-data-center-campus-kraft/",
-          "title": "900-megawatt data center campus proposed for central Massachusetts, backed by Kraft Group",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVx-ARBZSGZMVA7NIq90cA5CZkwmvh9XpOkvhZ8hG-0zG-ih-KxW2ibLBujrY"
-        },
-        {
-          "url": "https://www.bostonherald.com/2026/11/13/massachusetts-ballot-initiative-to-restrict-data-center-proposals-organizes-for-2028-election/",
-          "title": "Massachusetts ballot initiative to restrict data center proposals organizes for 2028 election",
-          "publisher": "Boston Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2Llh-aE67TJqQUPf2UCGb5Jzqgemv4r2JqK_TPbolZ_PNm18osODd_kuNRmU"
-        }
-      ]
-    },
-    {
-      "query": "jaguars vs titans prediction",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T17:30:00Z",
-      "related_news_urls": [
-        "https://www.jaguars.com/news/o-zone-big-one-on-broadway",
-        "https://sports.yahoo.com/articles/watch-jaguars-vs-titans-live-174000674.html",
-        "https://www.cbssports.com/prediction/news/jaguars-vs-titans-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-for-nfl-week-10/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4QzMVJsSULXD-9t2Hper84oqFkGPVR6TmaaYf46GgMvW2Zh231ZlZV69cZYU",
-      "image_credit": "Jacksonville Jaguars",
-      "news": [
-        {
-          "url": "https://www.jaguars.com/news/o-zone-big-one-on-broadway",
-          "title": "O-Zone: Big One on Broadway",
-          "publisher": "Jacksonville Jaguars",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4QzMVJsSULXD-9t2Hper84oqFkGPVR6TmaaYf46GgMvW2Zh231ZlZV69cZYU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-jaguars-vs-titans-live-174000674.html",
-          "title": "How to watch Jaguars vs Titans: Live stream NFL for free, TV channel",
+          "url": "https://sports.yahoo.com/articles/former-wisconsin-badger-best-chance-193001670.html",
+          "title": "Which Former Wisconsin Badger Has the Best Chance to Win Super Bowl LXI?",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxLzUkWPZBVTUCxBeTl8jPlcxjqjDcVEr4RT41-jOWkCTV6pV8GLkWWRT5vsQ"
-        },
-        {
-          "url": "https://www.cbssports.com/prediction/news/jaguars-vs-titans-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-for-nfl-week-10/",
-          "title": "Jaguars vs. Titans odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus for NFL Week 10",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6h8g1_9OlOfDsKVm2kwXjmj1Xc1MZ7t-DLuC0rLZ3NCgRS0LMUcNgVqM430"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-IJZFo01ksL_XV7xxFARHEZt18u6mIX4vrLMsGlAD9lpCPVOfbUBX5Y75gwU"
         }
       ]
     },
     {
-      "query": "mike vrabel affair",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T17:30:00Z",
+      "query": "chiefs vs falcons where to watch",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-15T18:00:00Z",
       "related_news_urls": [
-        "https://people.com/dianna-russini-on-sports-media-return-after-photo-scandal-exclusive-12241351",
-        "https://frontofficesports.com/article/dianna-russini-will-seek-credential-for-super-bowl-radio-row/",
-        "https://www.oregonlive.com/trending/2026/11/adam-schefter-reveals-how-he-views-dianna-russini-after-mike-vrabel-scandal.html"
+        "https://www.sportsline.com/nfl/game-forecast/NFL_20261115_KC@ATL/",
+        "https://sports.yahoo.com/articles/chiefs-final-injury-roundup-vs-170410265.html",
+        "https://www.foxsports.com/stories/nfl/how-to-watch-chiefs-vs-falcons-tv-channel-live-stream-time-nov-15-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8dScmoZciXy-ALQJSmURW2PdPxknxyL4o8gzH73_eILlT-wa9JmohbiwXfCM",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcpkbqVAsh8SZynUB21vfzRQ0yA_9dKOaf3-d7n2eVbJu6IC2KYEqCCi_J4rk",
+      "image_credit": "SportsLine",
       "news": [
         {
-          "url": "https://people.com/dianna-russini-on-sports-media-return-after-photo-scandal-exclusive-12241351",
-          "title": "Dianna Russini Details Sports Media Return 7 Months After Photo Scandal (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.sportsline.com/nfl/game-forecast/NFL_20261115_KC@ATL/",
+          "title": "Kansas City Chiefs vs. Atlanta Falcons Odds, Betting Lines, Expert picks, Game Projections, DFS Projections and Player Prop Projections - Sunday 11/15 1:00 PM ET",
+          "publisher": "SportsLine",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8dScmoZciXy-ALQJSmURW2PdPxknxyL4o8gzH73_eILlT-wa9JmohbiwXfCM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcpkbqVAsh8SZynUB21vfzRQ0yA_9dKOaf3-d7n2eVbJu6IC2KYEqCCi_J4rk"
         },
         {
-          "url": "https://frontofficesports.com/article/dianna-russini-will-seek-credential-for-super-bowl-radio-row/",
-          "title": "Dianna Russini Will Seek Credential for Super Bowl Radio Row",
-          "publisher": "Front Office Sports",
+          "url": "https://sports.yahoo.com/articles/chiefs-final-injury-roundup-vs-170410265.html",
+          "title": "Chiefs Final Injury Roundup vs. Falcons: Chris Jones Update, Patrick Mahomes Cleared, 4 Ruled Out",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXUZDfs2UHSKOPI8ZqOsVXdthGIYQQJgsKv1W6R3o8cCC-auu9kvmdaTEXbMY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEM1lOzxB08kiFd-ron0umwKlncg-FSe6MnydKsQ2868BIbjr1AjwwIhDVFY"
         },
         {
-          "url": "https://www.oregonlive.com/trending/2026/11/adam-schefter-reveals-how-he-views-dianna-russini-after-mike-vrabel-scandal.html",
-          "title": "Adam Schefter reveals how he views Dianna Russini after Mike Vrabel scandal",
-          "publisher": "OregonLive.com",
+          "url": "https://www.foxsports.com/stories/nfl/how-to-watch-chiefs-vs-falcons-tv-channel-live-stream-time-nov-15-2026",
+          "title": "How to Watch Chiefs vs. Falcons: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_VZ4xUkAfao7DMZYQOg-6e-KqnEA5RTaVvCUyWUGV8bivqTbSAG22kUXtW4c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmd7SswqKruJEzEmgAr58-HnF945vWhCaZVHiaKS_NZiRZ6wq3UiXoM03UUHw"
         }
       ]
     },
     {
-      "query": "dan campbell",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T17:20:00Z",
+      "query": "vikings vs packers where to watch",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T18:00:00Z",
       "related_news_urls": [
-        "https://www.freep.com/story/sports/nfl/lions/2026/11/13/detroit-lions-germany-game-dan-campbell/92757878007/",
-        "https://www.detroitnews.com/picture-gallery/sports/nfl/lions/2026/11/13/lions-hit-the-turf-at-the-fc-bayern-munich-practice-facility/92758613007/",
-        "https://www.mlive.com/lions/2026/11/overheard-on-lions-first-day-in-germany-looking-for-schnitzel-and-a-beer.html"
+        "https://www.espn.com/nfl/story/_/id/50484865/sources-vikings-want-keep-kirk-cousins-2027-season",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kirk-cousins-is-the-first-quarterback-with-20-td-passes-to-change-teams-midseason",
+        "https://www.foxsports.com/stories/nfl/2026-nfl-week-10-best-bets-expert-picks"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5pjy8qeqUzULwD1KbL5pnSmlK_n6XV4dPr50IuLuLDmvN7xwyNFOHf_uJ1cY",
-      "image_credit": "Detroit Free Press",
-      "news": [
-        {
-          "url": "https://www.freep.com/story/sports/nfl/lions/2026/11/13/detroit-lions-germany-game-dan-campbell/92757878007/",
-          "title": "Dan Campbell loving Germany, will be 'sick to our stomachs' if Lions lose",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5pjy8qeqUzULwD1KbL5pnSmlK_n6XV4dPr50IuLuLDmvN7xwyNFOHf_uJ1cY"
-        },
-        {
-          "url": "https://www.detroitnews.com/picture-gallery/sports/nfl/lions/2026/11/13/lions-hit-the-turf-at-the-fc-bayern-munich-practice-facility/92758613007/",
-          "title": "Lions' Dan Campbell meets the press, team hits the turf in Germany",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT44EyJ3_KlgKfI33gnTdbXG6Ux5s6y8a-NL2n4xtFIC--1WxJiBMnFvN2fa6I"
-        },
-        {
-          "url": "https://www.mlive.com/lions/2026/11/overheard-on-lions-first-day-in-germany-looking-for-schnitzel-and-a-beer.html",
-          "title": "Overheard on Lions’ first day in Germany: Looking for schnitzel and a beer",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvOXXiYnK0SibLWs0AAo0o-91C-qDFyx5QHWpmR9hof8opkTgoYfkPnGfOFvk"
-        }
-      ]
-    },
-    {
-      "query": "micah parsons",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T17:20:00Z",
-      "related_news_urls": [
-        "https://packerswire.usatoday.com/story/sports/nfl/packers/2026/11/15/packers-is-micah-parsons-playing-today-vs-vikings/92794494007/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/packers-rule-out-micah-parsons-for-week-10",
-        "https://www.fantasyguru.com/packers-micah-parsons-bull-rushing-in-practice-kraft-says-hes-looking-great"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmd2rn5JgiuICqmtBRhq5p_IId8O2xw0L4sTCsTCnFQArqs2iGfuKzINXFALE",
-      "image_credit": "Packers Wire",
-      "news": [
-        {
-          "url": "https://packerswire.usatoday.com/story/sports/nfl/packers/2026/11/15/packers-is-micah-parsons-playing-today-vs-vikings/92794494007/",
-          "title": "Is Micah Parsons playing today for the Packers?",
-          "publisher": "Packers Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmd2rn5JgiuICqmtBRhq5p_IId8O2xw0L4sTCsTCnFQArqs2iGfuKzINXFALE"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/packers-rule-out-micah-parsons-for-week-10",
-          "title": "Packers rule out Micah Parsons for Week 10",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQhetNebOs02jIx9UOyzXB6Ol7CTCmqQwt4DUP-em4RICLEIj7M09rLTyfTV4"
-        },
-        {
-          "url": "https://www.fantasyguru.com/packers-micah-parsons-bull-rushing-in-practice-kraft-says-hes-looking-great",
-          "title": "Packers | Micah Parsons bull rushing in practice, Kraft says he’s ‘looking great’",
-          "publisher": "Fantasy Guru",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqPbB5o6N63N-ZQ-eVUryVTarSRvrc0pmRABkoI3yu-ua-ENnqV-X0SR6oww"
-        }
-      ]
-    },
-    {
-      "query": "bills jets",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T17:20:00Z",
-      "related_news_urls": [
-        "https://www.idahostatejournal.com/sports/national/bills-jets-football/image_804622fd-838a-510d-957c-f824d0b93718.html",
-        "https://www.corsicanadailysun.com/sports/national_sports/bills-jets-football/image_babb2653-d237-5bdf-bd21-0d4ede75f6f1.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzbG0pwiwYnPNKRsK2P7kjSPpqibkd7hfjRZuKTSmdBunA5JtniZiEfagn1jw",
-      "image_credit": "Idaho State Journal",
-      "news": [
-        {
-          "url": "https://www.idahostatejournal.com/sports/national/bills-jets-football/image_804622fd-838a-510d-957c-f824d0b93718.html",
-          "title": "Bills Jets Football",
-          "publisher": "Idaho State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzbG0pwiwYnPNKRsK2P7kjSPpqibkd7hfjRZuKTSmdBunA5JtniZiEfagn1jw"
-        },
-        {
-          "url": "https://www.corsicanadailysun.com/sports/national_sports/bills-jets-football/image_babb2653-d237-5bdf-bd21-0d4ede75f6f1.html",
-          "title": "Bills Jets Football",
-          "publisher": "Corsicana Daily Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmuQJXHsMnUIvnKRdWB2dRK1bgxPkxlAXpXDsqZQxiaE_wIrLP7YPOKyFq_Q"
-        }
-      ]
-    },
-    {
-      "query": "pacers vs 76ers",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-15T17:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50484216/76ers-joel-embiid-vs-pacers-due-plantar-fascia-management",
-        "https://sixers.com/news/sixers-vs-pacers-game-preview-injury-report-and-how-to-watch-11-15-2026",
-        "https://sports.yahoo.com/articles/watch-76ers-vs-pacers-nba-170500777.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRT-WzSZ6fS3zoWALMYMAPi4c145v4RGepZQ79pdvng48NrhfrFR42R91aPSVs",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZhdGQX2yPLJsOuKysVdy9Hu6qHiofuGkRSwQ7V5zc1s1BGY1Qa96Tq1Xeik",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50484216/76ers-joel-embiid-vs-pacers-due-plantar-fascia-management",
-          "title": "76ers' Joel Embiid out vs. Pacers due to plantar fascia management",
+          "url": "https://www.espn.com/nfl/story/_/id/50484865/sources-vikings-want-keep-kirk-cousins-2027-season",
+          "title": "Sources: Vikings want to keep Kirk Cousins, talked to QB about staying in 2027",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRT-WzSZ6fS3zoWALMYMAPi4c145v4RGepZQ79pdvng48NrhfrFR42R91aPSVs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZhdGQX2yPLJsOuKysVdy9Hu6qHiofuGkRSwQ7V5zc1s1BGY1Qa96Tq1Xeik"
         },
         {
-          "url": "https://sixers.com/news/sixers-vs-pacers-game-preview-injury-report-and-how-to-watch-11-15-2026",
-          "title": "Sixers vs. Pacers: Game Preview, Injury Report and How to Watch 11/15/2026",
-          "publisher": "NBA.com",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kirk-cousins-is-the-first-quarterback-with-20-td-passes-to-change-teams-midseason",
+          "title": "Kirk Cousins is the first quarterback with 20 TD passes to change teams midseason",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLTsK9q6rwSSvQ0CLVAEx-x-bZA30gUFHy0CNgBKQaySeLKyznYUWRXsDV6TA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGTDxtne-27coTT5WL_fUEHc9w9yfVzpHVIOp1AWH-cr7ZTlYLuEJxobs9Sg4"
         },
         {
-          "url": "https://sports.yahoo.com/articles/watch-76ers-vs-pacers-nba-170500777.html",
-          "title": "How to watch 76ers vs Pacers: NBA, live stream, TV channel, start time",
+          "url": "https://www.foxsports.com/stories/nfl/2026-nfl-week-10-best-bets-expert-picks",
+          "title": "2026 NFL Week 10 Best Bets, Expert Picks: Back Vikings in Kirk Cousins’ Return",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS78PSOR0YvjOoz6o68HOKV6mPYmrU5gfD2YYxQdtWyd_3oDv-3UVwPysiUkho"
+        }
+      ]
+    },
+    {
+      "query": "louisville vs memphis",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T18:00:00Z",
+      "related_news_urls": [
+        "https://dailymemphian.com/article/68575/memphis-tigers-basketball-louisville-preview",
+        "https://247sports.com/college/louisville/article/memphis-two-leading-scorers-are-game-time-decisions-vs-louisville-292705867/",
+        "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/15/jayden-reid-luke-almodovar-injury-updates-memphis-basketball/92321256007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM3gv3Z01MjvpDjMXHD1voxc835KijmWZaP8H_R2m4_jQV-z-Eqq3glIvzC6g",
+      "image_credit": "Daily Memphian",
+      "news": [
+        {
+          "url": "https://dailymemphian.com/article/68575/memphis-tigers-basketball-louisville-preview",
+          "title": "Memphis vs. No. 10 Louisville: What to know for Tigers’ second home game",
+          "publisher": "Daily Memphian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM3gv3Z01MjvpDjMXHD1voxc835KijmWZaP8H_R2m4_jQV-z-Eqq3glIvzC6g"
+        },
+        {
+          "url": "https://247sports.com/college/louisville/article/memphis-two-leading-scorers-are-game-time-decisions-vs-louisville-292705867/",
+          "title": "Memphis' Two Leading Scorers Are Game-Time Decisions vs. Louisville",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzkTaTF9G7ScIkH7AK8HHCjtbIUtWjrBgF_gxKdXArgjVZ3J_j1tEfGtoCDdo"
+        },
+        {
+          "url": "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/15/jayden-reid-luke-almodovar-injury-updates-memphis-basketball/92321256007/",
+          "title": "Memphis basketball starters Jayden Reid, Luke Almodovar injury updates",
+          "publisher": "The Commercial Appeal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS29W8gi_qm7Fj4CoKEz4kT84j1ilH3AODlho2gKecP8CbEuEOHivZmKPfxJng"
+        }
+      ]
+    },
+    {
+      "query": "vanderbilt vs iowa",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T18:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/iowa-womens-basketball-vs-vanderbilt-164519041.html",
+        "https://www.blackheartgoldpants.com/womens-basketball/72474/womens-basketball-iowa-vs-vanderbilt-commodores-how-to-watch-game-thread",
+        "https://hawkeyesports.com/news/2026/11/13/wbb-notes-no-10-iowa-set-for-top-10-showdown-sunday-against-no-8-vanderbilt-on-fs1"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIs-R_DpAI97FPwVIqOfDhLsvJ1A9Q_mX5ZtlAdAqHUmDq5dnBkVo1I9ungXU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/iowa-womens-basketball-vs-vanderbilt-164519041.html",
+          "title": "Iowa women's basketball vs Vanderbilt score, updates, highlights",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJkf5TCOfb5p-_o2CYw-3ggE73Ly_fk7keXOugN94ZM7xMhFa7KNUhjQW7R3M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIs-R_DpAI97FPwVIqOfDhLsvJ1A9Q_mX5ZtlAdAqHUmDq5dnBkVo1I9ungXU"
+        },
+        {
+          "url": "https://www.blackheartgoldpants.com/womens-basketball/72474/womens-basketball-iowa-vs-vanderbilt-commodores-how-to-watch-game-thread",
+          "title": "Women’s Basketball: Iowa Vs. Vanderbilt Commodores: How to Watch, Game Thread",
+          "publisher": "Black Heart Gold Pants",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_k7J12Tv5g2faB8WTJ3D0BtOg15Ik0hbzT_oUELEbGeBbCAXvNxr_lC_ILUE"
+        },
+        {
+          "url": "https://hawkeyesports.com/news/2026/11/13/wbb-notes-no-10-iowa-set-for-top-10-showdown-sunday-against-no-8-vanderbilt-on-fs1",
+          "title": "WBB Notes: No. 10 Iowa Set for Top-10 Showdown Sunday Against No. 8 Vanderbilt on FS1",
+          "publisher": "Iowa Hawkeyes Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAdrCaBQaoBp0r2HbDm-XIYDdvepbdnTdTpwUAUdVOf4MyP93OoA2A98R82TI"
+        }
+      ]
+    },
+    {
+      "query": "boise state vs nebraska",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T18:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-basketball-boise-state-basketball-preview-sioux-falls-south-dakota-292785352/",
+        "https://www.on3.com/teams/nebraska-cornhuskers/news/nebraska-hoops-game-day-boise-state-2/",
+        "https://sports.yahoo.com/articles/boise-state-vs-nebraska-prediction-103057641.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuS0s2Qz_h26_ZMbVzcBos9inNJj9bcMVCHsL1jCQSp76Y7f6wgisKngj_4b8",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-basketball-boise-state-basketball-preview-sioux-falls-south-dakota-292785352/",
+          "title": "Starting Five: Nebraska Basketball vs. Boise State in Sioux Falls",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuS0s2Qz_h26_ZMbVzcBos9inNJj9bcMVCHsL1jCQSp76Y7f6wgisKngj_4b8"
+        },
+        {
+          "url": "https://www.on3.com/teams/nebraska-cornhuskers/news/nebraska-hoops-game-day-boise-state-2/",
+          "title": "Nebraska Hoops Game Day: Boise State",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTusS1bNR7WLEBwpVfQCBPrZDsEmjg8FuLvE2tFxCDBLfS1gmESf7jVmR3lIo8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/boise-state-vs-nebraska-prediction-103057641.html",
+          "title": "Boise State vs Nebraska Prediction, Pick, College Basketball Odds for Sunday, Nov. 15",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRcCENVRLDBVNgaKu9HXeYO5mj4a_JU_awF4m2uO7PpRFACJgvYhekvn5_dHs"
+        }
+      ]
+    },
+    {
+      "query": "saints game today",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T18:00:00Z",
+      "related_news_urls": [
+        "https://www.panthers.com/news/week-10-inactives-at-new-orleans-cornerback-will-lee-inactive-for-saints-games",
+        "https://www.cbssports.com/fantasy/football/news/panthers-jatavion-sanders-sidelined-for-week-10/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/adonai-mitchell-knee-will-play-in-week-10-vs-bills"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjiY0YxWwZa2EmgC3Cn6NdNZQazK4dK6YoXTeKQGOpaCbMvTsWTZyvqVwBbEA",
+      "image_credit": "Carolina Panthers",
+      "news": [
+        {
+          "url": "https://www.panthers.com/news/week-10-inactives-at-new-orleans-cornerback-will-lee-inactive-for-saints-games",
+          "title": "Week 10 Inactives at New Orleans: Cornerback Will Lee inactive for Saints games",
+          "publisher": "Carolina Panthers",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjiY0YxWwZa2EmgC3Cn6NdNZQazK4dK6YoXTeKQGOpaCbMvTsWTZyvqVwBbEA"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/panthers-jatavion-sanders-sidelined-for-week-10/",
+          "title": "Panthers' Ja'Tavion Sanders: Sidelined for Week 10",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/adonai-mitchell-knee-will-play-in-week-10-vs-bills",
+          "title": "Adonai Mitchell (knee) will play in Week 10 vs Bills",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMOYL5WG1IlrG7kyYH5gC3YadPT2YAfDU4pVFd2jsWhXq2SRE00X7Bh5IW6UM"
         }
       ]
     }
