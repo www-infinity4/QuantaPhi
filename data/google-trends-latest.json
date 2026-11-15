@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T02:01:32.016880Z",
+  "checked_at": "2026-11-15T02:30:39.825148Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nz vs ind",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-15T01:40:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-5th-odi-1539441/live-match-blog",
-        "https://www.cricbuzz.com/cricket-news/140900/nz-vs-ind-5th-odi-indias-misfiring-batting-seeks-strong-finish-in-mount-maunganui-cricbuzzcom",
-        "https://www.hindustantimes.com/cricket/ind-vs-nz-5th-odi-india-have-100-overs-to-win-series-build-confidence-101794660218979.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_tJc1ikQ4gvsJL92JovShhr69nRqVZNunx3lCNT1mo9W_Gg7Rdxg3PhpxC1U",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-5th-odi-1539441/live-match-blog",
-          "title": "NZ vs Ind, 5th ODI, Live Blog - NZ finally win a toss, decide to bowl in decider",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_tJc1ikQ4gvsJL92JovShhr69nRqVZNunx3lCNT1mo9W_Gg7Rdxg3PhpxC1U"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140900/nz-vs-ind-5th-odi-indias-misfiring-batting-seeks-strong-finish-in-mount-maunganui-cricbuzzcom",
-          "title": "NZ vs IND 5th ODI: India's misfiring batting seeks strong finish in Mount Maunganui",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqu3jMQlXt5TvOo3pKlic3QaZm5tdqf_CaTJii_inFFbJcA36EHdJhMDzNlNY"
-        },
-        {
-          "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-5th-odi-india-have-100-overs-to-win-series-build-confidence-101794660218979.html",
-          "title": "IND vs NZ, 5th ODI: India have 100 overs to win series, build confidence | Cricket",
-          "publisher": "Hindustan Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMf0C3VuTyCb5q81ey5gakV4UHyixJvQEuMZsILGOyQ0RFN79vyGyYfv0xJYg"
-        }
-      ]
-    },
-    {
-      "query": "cade cunningham",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T01:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50468039/cade-cunningham-ausar-thompson-power-pistons-wizards",
-        "https://www.nytimes.com/athletic/7777903/2026/11/12/cade-cunningham-stats-points-pistons-wizards-score-results/",
-        "https://sports.yahoo.com/nba/article/cade-cunningham-scores-career-high-52-points-in-pistons-144-140-win-in-2ot-over-wizards-045008480.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcoi6IdKr2HxWxEwoAO4xjuhGhFFWa9yD47ocY0aaGs_v3mnLKxr5cR-Gq7IM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50468039/cade-cunningham-ausar-thompson-power-pistons-wizards",
-          "title": "Cade Cunningham's historic night puts Pistons past Wizards in 2OT thriller",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcoi6IdKr2HxWxEwoAO4xjuhGhFFWa9yD47ocY0aaGs_v3mnLKxr5cR-Gq7IM"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7777903/2026/11/12/cade-cunningham-stats-points-pistons-wizards-score-results/",
-          "title": "Cade Cunningham makes NBA history with career night in Pistons’ 2OT win over Wizards - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF27MtC4vLHrkMxUBqVaIm1F2ua1Hl3QRfL5PvseYCOiRU-xBs23WUhq6vuBg"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/article/cade-cunningham-scores-career-high-52-points-in-pistons-144-140-win-in-2ot-over-wizards-045008480.html",
-          "title": "Cade Cunningham scores career-high 52 points in Pistons' 144-140 win in 2OT over Wizards",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLrz6fyiLXQUKQadl8qscVAewtEVfn1wBr5UH5aQkZjFoj4-6O9IpYrQRDGOk"
-        }
-      ]
-    },
-    {
-      "query": "zion williamson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T01:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/article/zion-williamson-tears-into-pelicans-after-unacceptable-loss-to-nets-go-look-yourself-in-the-mirror-135005487.html",
-        "https://www.hoopsrumors.com/2026/11/pelicans-notes-zion-mosley-queen-murray.html",
-        "https://www.nola.com/sports/pelicans/charles-barkley-pelicans-relocation-seattle/article_b58de74f-f589-472e-8ead-4eb413da687c.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5yjvNydLhgkiqGiS1nu4z9G5vzIg0oiCqrIPeJhAydo1ep0UpMXVCrrL5L4s",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/article/zion-williamson-tears-into-pelicans-after-unacceptable-loss-to-nets-go-look-yourself-in-the-mirror-135005487.html",
-          "title": "Zion Williamson tears into Pelicans after 'unacceptable' loss to Nets: 'Go look yourself in the mirror'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5yjvNydLhgkiqGiS1nu4z9G5vzIg0oiCqrIPeJhAydo1ep0UpMXVCrrL5L4s"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/pelicans-notes-zion-mosley-queen-murray.html",
-          "title": "Pelicans Notes: Zion, Mosley, Queen, Murray",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxN3VSMEYpkSM1jUI4v477JV4QidD6xv98dmDqZ6G2wJy-M2xH4HrFYDNio5E"
-        },
-        {
-          "url": "https://www.nola.com/sports/pelicans/charles-barkley-pelicans-relocation-seattle/article_b58de74f-f589-472e-8ead-4eb413da687c.html",
-          "title": "Charles Barkley says Pelicans should be moved to a new city after another embarrassing loss",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKJl7eLIL55rQrQplzKRLCQXwhqfrPRvuugSqRfJtYvHM7gRhNGRmafeZl6cM"
-        }
-      ]
-    },
-    {
-      "query": "btc",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T01:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/crypto/articles/bitcoin-just-crashed-toward-66-161047479.html",
-        "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
-        "https://www.fastcompany.com/91642070/bitcoin-price-why-btc-down-today-inflation-outflows-more"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwMfeqAEviEsow6wAKLfHpkNdQzalBYIxSLpFLrt8zIHAjLj-GxmpRDnig44U",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-just-crashed-toward-66-161047479.html",
-          "title": "Bitcoin Just Crashed Toward $66,000. History Says the Worst May Not Be Over",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwMfeqAEviEsow6wAKLfHpkNdQzalBYIxSLpFLrt8zIHAjLj-GxmpRDnig44U"
-        },
-        {
-          "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
-          "title": "Bitcoin price analysis: BTC continues to decline Saturday, entering 'deep value zone'",
-          "publisher": "CoinDesk",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6nzX97ktjBpUaDBd1pdh5iHGFYNdJBgoBfDvoVK0MzTb-nFvUKDDO6bO0PM"
-        },
-        {
-          "url": "https://www.fastcompany.com/91642070/bitcoin-price-why-btc-down-today-inflation-outflows-more",
-          "title": "Bitcoin is falling to fresh lows today: What’s causing the crypto decline?",
-          "publisher": "Fast Company",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSmWYozqRH0rq4Lj-chqzZvCPJgpBKIUayZA9TBS7m-drmoDoWE_dsNoNg_Uw"
-        }
-      ]
-    },
-    {
-      "query": "utah state vs san diego st",
+      "query": "wyoming vs utep",
       "approx_searches": "1000+",
-      "published_at": "2026-11-15T01:40:00Z",
+      "published_at": "2026-11-15T02:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920372",
-        "https://www.deseret.com/sports/2026/11/14/utah-state-scores-120-points-beats-uc-san-diego-by-38/",
-        "https://www.cbssports.com/college-basketball/gametracker/live/NCAAB_20261113_CALSD@UTAHST/"
+        "https://www.foxsports.com/stories/college-football/how-watch-wyoming-vs-utep-tv-channel-live-stream-time-nov-14-2026",
+        "https://www.wyomingnews.com/newsletters/intro/cowboys-football-faces-travel-delay-cowboys-hoops-set-for-road-test-in-denver/article_0e4b8a60-6309-4440-8e8c-ec42e931f8f3.html",
+        "https://7220sports.com/wyoming-utep-news-preview-latest-read/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDUEbEo0xFHb-eaE9HKyRQgb4ME4gKmoPmtu93ot23HNydgwMCn-w_8afhyVI",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9tguUk1_SlISLr_2aXcPnlM-wCzk5yDIAUMoJoKJ3c5Av7zziIhZ7sdXHLJE",
+      "image_credit": "FOX Sports",
       "news": [
         {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920372",
-          "title": "Utah State 120-82 UC San Diego (Nov 13, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.foxsports.com/stories/college-football/how-watch-wyoming-vs-utep-tv-channel-live-stream-time-nov-14-2026",
+          "title": "How to Watch Wyoming vs. UTEP: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDUEbEo0xFHb-eaE9HKyRQgb4ME4gKmoPmtu93ot23HNydgwMCn-w_8afhyVI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9tguUk1_SlISLr_2aXcPnlM-wCzk5yDIAUMoJoKJ3c5Av7zziIhZ7sdXHLJE"
         },
         {
-          "url": "https://www.deseret.com/sports/2026/11/14/utah-state-scores-120-points-beats-uc-san-diego-by-38/",
-          "title": "Utah State scores 120 points, beats UC San Diego by 38",
-          "publisher": "Deseret News",
+          "url": "https://www.wyomingnews.com/newsletters/intro/cowboys-football-faces-travel-delay-cowboys-hoops-set-for-road-test-in-denver/article_0e4b8a60-6309-4440-8e8c-ec42e931f8f3.html",
+          "title": "Cowboys football faces travel delay, Cowboys hoops set for road test in Denver",
+          "publisher": "WyomingNews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe6CAd1oR1kNWiz85as-qWDsVGnKeH3CfOhjIlSmklWVIbpGhVtwRsgKwbGCg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPuc7dxcmcKmAqXiY6-C7pkns-IOFzyBn7BPwToyNoR1Xc1O1cFg0e3a-4wvo"
         },
         {
-          "url": "https://www.cbssports.com/college-basketball/gametracker/live/NCAAB_20261113_CALSD@UTAHST/",
-          "title": "UC San Diego Tritons vs. Utah State Aggies Live Score and Stats - November 13, 2026 Gametracker",
+          "url": "https://7220sports.com/wyoming-utep-news-preview-latest-read/",
+          "title": "Gear Up For Game Day: UTEP Miners",
+          "publisher": "7220 Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8kNXw752_G-dj3Lc9b2EqbED-zcpdZzBknGGDkVEvcQGSiQe_uPIcoDYO-Fc"
+        }
+      ]
+    },
+    {
+      "query": "kirk herbstreit",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T02:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/pat-mcafee-kirk-herbstreit-apologize-picking-smu-over-wake-forest-college-gameday",
+        "https://sports.yahoo.com/articles/apologies-pour-espns-pat-mcafee-232431175.html",
+        "https://www.si.com/fannation/college/cfb-hq/news/kirk-herbstreit-pat-mcafee-issue-apology-after-college-gameday-wake-forest-smu"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmx6dYiPQAXBSEZO1cLK_xXt_2iWngsLh5XBGYsh956Mt-23VOQf3nM_FYVRA",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/pat-mcafee-kirk-herbstreit-apologize-picking-smu-over-wake-forest-college-gameday",
+          "title": "Pat McAfee and Kirk Herbstreit apologize for picking SMU over Wake Forest on College GameDay | OutKick",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmx6dYiPQAXBSEZO1cLK_xXt_2iWngsLh5XBGYsh956Mt-23VOQf3nM_FYVRA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/apologies-pour-espns-pat-mcafee-232431175.html",
+          "title": "Apologies Pour In From ESPN's Pat McAfee, Kirk Herbstreit and Scott Van Pelt After Major ACC Game Result",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWG0EElT4hmjCfub8x6UwjRzAsOHd6_t73Bz4HefldXTtQmVDo3Q8EdZOzzCw"
+        },
+        {
+          "url": "https://www.si.com/fannation/college/cfb-hq/news/kirk-herbstreit-pat-mcafee-issue-apology-after-college-gameday-wake-forest-smu",
+          "title": "Kirk Herbstreit, Pat McAfee Issue Apology After College GameDay",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MHM9kphhQDGcvOMbxhG2rCB_zA3l4Hr_LN2bN3jywSiVrHNI3GVb2kQnPXQ"
+        }
+      ]
+    },
+    {
+      "query": "islanders vs ducks",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T02:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/new-york-islanders-anaheim-ducks-game-preview-november-14-2026",
+        "https://www.lighthousehockey.com/islanders-news-headlines/45511/islanders-gameday-news-trip-finale",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/new-york-islanders-vs-anaheim-ducks-prediction-odds-2026-11-14/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/new-york-islanders-anaheim-ducks-game-preview-november-14-2026",
+          "title": "Islanders at Ducks projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://www.lighthousehockey.com/islanders-news-headlines/45511/islanders-gameday-news-trip-finale",
+          "title": "Islanders Gameday News: Trip finale",
+          "publisher": "Lighthouse Hockey",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl8rQDM7DOuo5dOkrK5p4Lb3YgLkG4u1b7alXX_aOGU6Z9JB8woyK7HTKriBo"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/new-york-islanders-vs-anaheim-ducks-prediction-odds-2026-11-14/",
+          "title": "New York Islanders vs Anaheim Ducks Prediction, Picks & Odds | 14 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ8PH3ERywjoX2Uy8dX245QdQiJMOBySiozehloCq3YbpBjHlFXRFCKRyquiM"
+        }
+      ]
+    },
+    {
+      "query": "flames vs kings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T02:10:00Z",
+      "related_news_urls": [
+        "https://lakingsinsider.com/?p=180912",
+        "https://www.nhl.com/flames/news/5-things-flames-kings-14-11-26",
+        "https://www.cbssports.com/nhl/news/kings-aim-to-snap-three-game-skid-against-flames/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBxJXlW2V3Tkw9pI3e47lyM3rXPkXpgNQs_G1iXUfhLHTL2_Tr1pLrP12pqv8",
+      "image_credit": "LA Kings Insider",
+      "news": [
+        {
+          "url": "https://lakingsinsider.com/?p=180912",
+          "title": "11/14 Preview - Panarin out for \"family reasons\", Turcotte checks in + 12/56/40 Line, Latest on Gustafsson, Kuemper 500 Ceremony",
+          "publisher": "LA Kings Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBxJXlW2V3Tkw9pI3e47lyM3rXPkXpgNQs_G1iXUfhLHTL2_Tr1pLrP12pqv8"
+        },
+        {
+          "url": "https://www.nhl.com/flames/news/5-things-flames-kings-14-11-26",
+          "title": "5 Things - Flames @ Kings | Calgary Flames",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2Q-7ggaL3Pdh0gIPiB72NiGE2W1HzRndFoyAffe8qwOYLtoAE4hB2-AzSe2o"
+        },
+        {
+          "url": "https://www.cbssports.com/nhl/news/kings-aim-to-snap-three-game-skid-against-flames/",
+          "title": "Kings aim to snap three-game skid against Flames",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfTqrMtdT2X0iriWDAWd4zLXULnNC9PSesHepiinVjMdZ06UFDWEoFYn3rG3k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWXMceRjZbPyaZrD-7cH3SiulVYjbKHMhXcL-YCbaBP7vta6LKbBy0y_k0jSM"
         }
       ]
     },
     {
-      "query": "ausar thompson",
+      "query": "john collins",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T01:40:00Z",
+      "published_at": "2026-11-15T02:10:00Z",
       "related_news_urls": [
-        "https://www.nba.com/watch/video/ausar-thompson-rises-up-for-the-dunk-20",
-        "https://pistonpowered.com/pistons-preview-star-version-ausar-thompson",
-        "https://www.fantasypros.com/nba/news/619662/ausar-thompson-racks-up-triple-double-win-over-wizards.php"
+        "https://www.cbssports.com/fantasy/basketball/news/pistons-john-collins-quiet-in-loss/",
+        "https://detroitjockcity.com/pistons-should-seriously-consider-trading-john-collins-upgrade-01m7d5ks1s8h",
+        "https://pistonpowered.com/john-collins-struggles-start-with-jalen-duren-detroit-pistons"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPFhG6svwWmNToCmvzk_WZkjaDAr_zxHPTvMxnILBFXmIa5cSFQf_DaKFyDog",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-KAjyIgyuwINUMNE0RuTlIPtMUiNkaLUWQX3Ldz7weidjbsCrGV7Gf7ejRbE",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.nba.com/watch/video/ausar-thompson-rises-up-for-the-dunk-20",
-          "title": "Ausar Thompson rises up for the dunk",
-          "publisher": "NBA.com",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/pistons-john-collins-quiet-in-loss/",
+          "title": "Pistons' John Collins: Quiet in loss",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPFhG6svwWmNToCmvzk_WZkjaDAr_zxHPTvMxnILBFXmIa5cSFQf_DaKFyDog"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-KAjyIgyuwINUMNE0RuTlIPtMUiNkaLUWQX3Ldz7weidjbsCrGV7Gf7ejRbE"
         },
         {
-          "url": "https://pistonpowered.com/pistons-preview-star-version-ausar-thompson",
-          "title": "Pistons get a preview of the All-Star version of Ausar Thompson",
+          "url": "https://detroitjockcity.com/pistons-should-seriously-consider-trading-john-collins-upgrade-01m7d5ks1s8h",
+          "title": "Pistons should seriously consider trading for a John Collins upgrade",
+          "publisher": "Detroit Jock City",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnjRnZyD_qwj7iyK5pflGGGP8yhLFzxzrDffSnk-EgJwicAruexE8JAVXMIM"
+        },
+        {
+          "url": "https://pistonpowered.com/john-collins-struggles-start-with-jalen-duren-detroit-pistons",
+          "title": "John Collins' struggles start with Jalen Duren",
           "publisher": "PistonPowered",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUdo8XciV8KSzSwSz03Yr5AA_yTlQfYxrDHLeX4mIATIR6RaLwx3gzZqzqO4k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIDcLAokWeaf4a9fgR93rRChFyPXkFnyvF0DQLtPaRvEVLLh52pvyLnSwTkSI"
+        }
+      ]
+    },
+    {
+      "query": "melissa mccarthy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T02:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/she-looks-great-melissa-mccarthy-060024873.html",
+        "https://www.bollywoodshaadis.com/articles/melissa-mccarthy-looks-unrecognizable-as-she-loses-43-kg-weight-86562",
+        "https://parade.com/news/melissa-mccarthy-sheer-red-carpet-look-weight-loss-transformation"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN1CRC-emHjY0RHADpkXuRlDV0ANmP5TIUGmxT-1Ca_d-h1bciB0bdQcNhZDI",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/she-looks-great-melissa-mccarthy-060024873.html",
+          "title": "'She Looks Great:' Melissa McCarthy Displays Her 95-Lb Weight Loss In A Satin Pantsuit On The Red Carpet",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN1CRC-emHjY0RHADpkXuRlDV0ANmP5TIUGmxT-1Ca_d-h1bciB0bdQcNhZDI"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/619662/ausar-thompson-racks-up-triple-double-win-over-wizards.php",
-          "title": "Ausar Thompson racks up triple-double in win over Wizards",
+          "url": "https://www.bollywoodshaadis.com/articles/melissa-mccarthy-looks-unrecognizable-as-she-loses-43-kg-weight-86562",
+          "title": "Melissa McCarthy Looks Unrecognizable As She Loses 43 Kgs After Facing Hate For Being Overweight",
+          "publisher": "BollywoodShaadis",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrbXZk09OLroPCd87aN127JyUYbt5bPpLm73e3LKKYfbKfJVMtr5A6YD6HoEQ"
+        },
+        {
+          "url": "https://parade.com/news/melissa-mccarthy-sheer-red-carpet-look-weight-loss-transformation",
+          "title": "Melissa McCarthy’s Sheer Red Carpet Look Highlights Her Weight Loss Transformation",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStDTH_ntWUQiG0Wbvfhtf8Qiv9tZ7aYLsRrCDvaXNYRltM78JmdaF8hcCbGkE"
+        }
+      ]
+    },
+    {
+      "query": "davion mitchell",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T02:00:00Z",
+      "related_news_urls": [
+        "https://www.sun-sentinel.com/2026/11/12/heat-find-time-is-on-their-side-when-it-comes-to-davion-mitchells-contributions/",
+        "https://sportsbook.fanduel.com/teams/nba/roster/davion-mitchell-over-2971",
+        "https://www.fantasypros.com/nba/news/619985/donovan-mitchell-leads-offense-fridays-loss-to-heat.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxyM2PvdfPDDshKF98v09nJfDE6JA51bdRClhVLsxFZ3w8V3p63RfKRmZ7T5Q",
+      "image_credit": "Sun Sentinel",
+      "news": [
+        {
+          "url": "https://www.sun-sentinel.com/2026/11/12/heat-find-time-is-on-their-side-when-it-comes-to-davion-mitchells-contributions/",
+          "title": "Heat find time is on their side with Mitchell; Thompson, Larsson questionable vs. Cavs",
+          "publisher": "Sun Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxyM2PvdfPDDshKF98v09nJfDE6JA51bdRClhVLsxFZ3w8V3p63RfKRmZ7T5Q"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/teams/nba/roster/davion-mitchell-over-2971",
+          "title": "SPORTSBOOK",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrcciXs_27AsOA3QaIWcr5hp9hmuuXGr86x5cWFbF8bpRBn5umMEjVZJeb9k"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/619985/donovan-mitchell-leads-offense-fridays-loss-to-heat.php",
+          "title": "Donovan Mitchell leads offense in Friday's loss to Heat",
           "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_BTsam54aRDcAxxfwdolW-xYg1awLh45on5Gk0vb2rXcr4NrM-vkAPEz2t0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm4EJl5XngpDAp00MJC_ma0RT6GvfTDU-sX2fPx5dgQviua7qfOC3Vv4KSp-I"
         }
       ]
     },
     {
-      "query": "clima para amanhã",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T01:40:00Z",
+      "query": "joe rogan",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T02:00:00Z",
       "related_news_urls": [
-        "https://novo2026.portaldoholanda.com.br/florianopolis/clima-para-amanha-em-florianopolis-manha-de-sol-da-lugar-a-chuva-ao-longo-da-tarde-e-da-noite",
-        "https://www.bra1.com.br/clima/id-699013/previsao_do_tempo_em_florianopolis__25_c_com_59__de_chance_de_chuva",
-        "https://www.deolhonailha.com.br/florianopolis/noticias/previsao-ondas-florianopolis-13-15-novembro-2026/"
+        "https://www.bbc.com/sport/mixed-martial-arts/articles/c6e3dw87pyjeo",
+        "https://www.espn.com/mma/story/_/id/50428840/amanda-nunes-kayla-harrison-ufc-rivals",
+        "https://www.mmafighting.com/ufc/520969/only-fighter-to-beat-kayla-harrison-says-amanda-nunes-finishes-her-very-easily-at-ufc-334"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw",
-      "image_credit": "Portal do Holanda",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLUisCk9tke9YE_S9aY4IwIyjvwdP2Fx4mON1UJ102BBtl2KDIcmG5r9Q8ds0",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://novo2026.portaldoholanda.com.br/florianopolis/clima-para-amanha-em-florianopolis-manha-de-sol-da-lugar-a-chuva-ao-longo-da-tarde-e-da-noite",
-          "title": "Clima para amanhã em Florianópolis: manhã de sol dá lugar a chuva ao longo da tarde e da noite",
-          "publisher": "Portal do Holanda",
+          "url": "https://www.bbc.com/sport/mixed-martial-arts/articles/c6e3dw87pyjeo",
+          "title": "UFC 334: Amanda Nunes out of retirement for new challenge",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLUisCk9tke9YE_S9aY4IwIyjvwdP2Fx4mON1UJ102BBtl2KDIcmG5r9Q8ds0"
         },
         {
-          "url": "https://www.bra1.com.br/clima/id-699013/previsao_do_tempo_em_florianopolis__25_c_com_59__de_chance_de_chuva",
-          "title": "Previsão do tempo em Florianópolis: 25°C com 59% de chance de chuva",
-          "publisher": "www.bra1.com.br",
+          "url": "https://www.espn.com/mma/story/_/id/50428840/amanda-nunes-kayla-harrison-ufc-rivals",
+          "title": "Inside the tension, suspicion and history behind Amanda Nunes vs. Kayla Harrison",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShyr46L9igC0xMcYBo3ImRO2sElPERoBTJed9_pXrn8tA9uRUhDbo3w1mLmEk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX5S7ZDqBr4DiK3IzhQqfEfxwEkoQN-BjvTYMVPApCPBqmJye-dI7jdfaKqg0"
         },
         {
-          "url": "https://www.deolhonailha.com.br/florianopolis/noticias/previsao-ondas-florianopolis-13-15-novembro-2026/",
-          "title": "Sexta de vento sul, domingo de ondas: a previsão em Florianópolis, 13 a 15 de novembro",
-          "publisher": "Deolhonailha",
+          "url": "https://www.mmafighting.com/ufc/520969/only-fighter-to-beat-kayla-harrison-says-amanda-nunes-finishes-her-very-easily-at-ufc-334",
+          "title": "Only fighter to beat Kayla Harrison says Amanda Nunes finishes her ‘very easily’ at UFC 334",
+          "publisher": "MMA Fighting",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdl0Abr_ZCUHLg4oudEC6o2p26tRC1mabvvQEFC2MKzJk4fgnHcdFdi9PIabI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1ze17L0Hpy3XV3O-honA8w61HWV7zWEv63tiwTQDpxKhSp_Wax5nIabk3MRE"
         }
       ]
     },
     {
-      "query": "lindsay lohan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T01:40:00Z",
+      "query": "chris pratt",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T02:00:00Z",
       "related_news_urls": [
-        "https://www.news24.com.au/lifestyle/celebrity-life/russell-brands-prison-joke-with-lindsay-lohan-resurfaces-as-social-media-claims-the-actress-looks-extremely-uncomfortable-sitting-next-to-the-comedian/news-story/6f0445a258dc06ee02ea51ca7096b41c",
-        "https://www.themirror.com/entertainment/lindsay-lohan-russell-brand-interview-2104320",
-        "https://www.thesun.co.uk/tvandshowbiz/41000247/russell-brand-jonathan-ross-rape-joke-resurfaces/"
+        "https://deadline.com/2026/11/chris-pratt-would-love-james-gunn-another-guardians-galaxy-1237224237/",
+        "https://www.imdb.com/news/ni66110498/?ref_=nmnw_art_perm",
+        "https://collider.com/chris-pratt-star-lord-return-james-gunn/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrE-qMc_ez-vuXq7KlG_Bn9y_4_0vdaZ8vTNDAmSezaYH9qz4wl3KFeZnR198",
-      "image_credit": "News24",
-      "news": [
-        {
-          "url": "https://www.news24.com.au/lifestyle/celebrity-life/russell-brands-prison-joke-with-lindsay-lohan-resurfaces-as-social-media-claims-the-actress-looks-extremely-uncomfortable-sitting-next-to-the-comedian/news-story/6f0445a258dc06ee02ea51ca7096b41c",
-          "title": "Russell Brand’s prison joke with Lindsay Lohan resurfaces",
-          "publisher": "News24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrE-qMc_ez-vuXq7KlG_Bn9y_4_0vdaZ8vTNDAmSezaYH9qz4wl3KFeZnR198"
-        },
-        {
-          "url": "https://www.themirror.com/entertainment/lindsay-lohan-russell-brand-interview-2104320",
-          "title": "Lindsay Lohan retreated into sofa as she squirmed next to Russell Brand",
-          "publisher": "The Mirror US",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNjfoqYQRBdfOS4bTTRiJpA5vczq-QTz2jtJz5Jz3tfTvSq7erSSqEG0fCPX0"
-        },
-        {
-          "url": "https://www.thesun.co.uk/tvandshowbiz/41000247/russell-brand-jonathan-ross-rape-joke-resurfaces/",
-          "title": "Moment Brand jokes with pal Jonathan Ross that he’s ‘looking at a 10 stretch’ - 13 years before fiend caged for rape",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXpEDMhC7z6H53NNDlWIJXtamBkzvescqTA2yYyNNU1vDTiyq0_Fjy990rTDc"
-        }
-      ]
-    },
-    {
-      "query": "bill maher",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T01:40:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/real-time-bill-maher-attributes-faa-issues-selma-blair-1237223674/",
-        "https://www.tvinsider.com/1303741/billl-maher-blames-selma-blair-faa-ground-stop-real-time/",
-        "https://indianexpress.com/article/entertainment/hollywood/bill-maher-jokes-about-selma-blair-flight-arrest-after-faa-outage-10962644/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPgCl72lYBJQqEaMTTHbRC01_0Nj0ZrcdpEAYiWJypM_pNd7XPIcivHxA5S48",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe5El35cfspHAXqMH0ePLAleZHF7_IBIVP3V8pgkUsGYW39FwZmfpuM7q-Lus",
       "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/real-time-bill-maher-attributes-faa-issues-selma-blair-1237223674/",
-          "title": "‘Real Time’: Bill Maher Jokingly Attributes FAA Issues To Selma Blair",
+          "url": "https://deadline.com/2026/11/chris-pratt-would-love-james-gunn-another-guardians-galaxy-1237224237/",
+          "title": "Chris Pratt “Would Love” If James Gunn Made Another ‘Guardians of the Galaxy’ After DC Exit",
           "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPgCl72lYBJQqEaMTTHbRC01_0Nj0ZrcdpEAYiWJypM_pNd7XPIcivHxA5S48"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe5El35cfspHAXqMH0ePLAleZHF7_IBIVP3V8pgkUsGYW39FwZmfpuM7q-Lus"
         },
         {
-          "url": "https://www.tvinsider.com/1303741/billl-maher-blames-selma-blair-faa-ground-stop-real-time/",
-          "title": "Bill Maher Blames Selma Blair for Nationwide FAA Ground Stop",
-          "publisher": "TV Insider",
+          "url": "https://www.imdb.com/news/ni66110498/?ref_=nmnw_art_perm",
+          "title": "Chris Pratt Is Open to a Star-Lord Reunion After James Gunn’s DC Studios Exit",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHAZuPEiPp4o-T49MwsMfRXsYlxlpsEL0uBa9YG-jPAUazmZ8kdnlBw-v09Bo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTifiakEhHiFdkuimnm5UWBA7xGxjiiiKwJ0yFhlfsq6ckfF-g84onZp2EOldc"
         },
         {
-          "url": "https://indianexpress.com/article/entertainment/hollywood/bill-maher-jokes-about-selma-blair-flight-arrest-after-faa-outage-10962644/",
-          "title": "‘It could be Selma Blair’: Bill Maher jokes about her flight arrest after FAA outage",
-          "publisher": "The Indian Express",
+          "url": "https://collider.com/chris-pratt-star-lord-return-james-gunn/",
+          "title": "Chris Pratt Officially Addresses Star-Lord Return Amid James Gunn's DC Departure",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvN4HrT3riF8F2zcjMnDUi9lJ5xuadEDFud2TVSxZRTfJlcLMmhZFUUnxMSbE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiAv0eN_rXIXH5uFIs4vW6JpNK4A0eU_Ys5oPjo3jdWpupyZO1CJBAh1QlCjA"
         }
       ]
     },
     {
-      "query": "endgame encore differences",
+      "query": "bahrain",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T01:40:00Z",
+      "published_at": "2026-11-15T02:00:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66110652/?ref_=nwc_art_perm",
-        "https://www.disneyplus.com/explore/articles/avengers-endgame-encore",
-        "https://abcnews.com/GMA/Culture/avengers-endgame-encore-coming-disney-ahead-doomsday-release/story?id=138080392"
+        "https://www.cnn.com/2026/11/13/middleeast/iran-targets-us-military-site-in-gulf-first-time-in-two-months-intl",
+        "https://www.reuters.com/world/middle-east/irans-guards-say-they-targeted-us-early-warning-radar-bahrain-2026-11-13/",
+        "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-reported-resul-serdar-iran-basij"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqmkJFBNkzwaG7qdklTzi6OuX00pFATd11nbz6Z-NVgpd2z8RFb5yhnsm784s",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9aWvUCYvjv7rXAivPDODxj50ZOPw7PWciHpqiukBhaFfotJLT2Ex_x08rcAM",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66110652/?ref_=nwc_art_perm",
-          "title": "Avengers Endgame: Encore Is Now Streaming on Disney+",
-          "publisher": "IMDb",
+          "url": "https://www.cnn.com/2026/11/13/middleeast/iran-targets-us-military-site-in-gulf-first-time-in-two-months-intl",
+          "title": "Iran targets US military site in Gulf for first time in two months as hopes for a deal fade",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqmkJFBNkzwaG7qdklTzi6OuX00pFATd11nbz6Z-NVgpd2z8RFb5yhnsm784s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9aWvUCYvjv7rXAivPDODxj50ZOPw7PWciHpqiukBhaFfotJLT2Ex_x08rcAM"
         },
         {
-          "url": "https://www.disneyplus.com/explore/articles/avengers-endgame-encore",
-          "title": "Avengers Endgame: Encore: Streaming Details, Story, Cast & What To Watch Next | Explore Disney+",
-          "publisher": "Disney Plus",
+          "url": "https://www.reuters.com/world/middle-east/irans-guards-say-they-targeted-us-early-warning-radar-bahrain-2026-11-13/",
+          "title": "US denies Iran's claim that it attacked early-warning radar in Bahrain",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjm6OEl_stk5uVsbn2picCEB9F7hPIGBoH3vkV2YxQ-jiPcq_cTuA7p_W73sM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScMc8_ovudXN9ufoR2jxhO5CK980Mmc13ag-KE9z3bh8hui9WfThybdNnHsXA"
         },
         {
-          "url": "https://abcnews.com/GMA/Culture/avengers-endgame-encore-coming-disney-ahead-doomsday-release/story?id=138080392",
-          "title": "'Avengers Endgame: Encore' comes to Disney+ ahead of 'Doomsday' release",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-reported-resul-serdar-iran-basij",
+          "title": "Iran threatens unlimited response over Strait of Hormuz after US attack",
+          "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcDZ-YnuKpx-GS5OwqO2EzIQ8xuJm4vemT2eiMCt1RuSBohbcV7LRc9hHqxGg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_6H7-nOV0MGwLtp-0uXwKhs6MdFCXTV4XH_x78ZcrykAxjM-5q_HTbESKOho"
         }
       ]
     }
