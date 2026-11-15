@@ -3,330 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T04:31:00.589937Z",
+  "checked_at": "2026-11-15T05:01:16.724351Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "erin andrews",
+      "query": "devon dampier",
       "approx_searches": "1000+",
-      "published_at": "2026-11-15T04:10:00Z",
+      "published_at": "2026-11-15T04:40:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/12/sports/tom-brady-patriots-fans/",
-        "https://sports.yahoo.com/articles/did-nothing-fans-columnist-says-144937705.html",
-        "https://www.foxsports.com/stories/nfl/tom-brady-signs-1-of-1-exclusive-topps-card-live-air-fox-broadcast"
+        "https://www.espn.com/college-football/story/_/id/50415830/utah-byu-rivalry-scene-playoff",
+        "https://www.nytimes.com/athletic/7762299/2026/11/07/utah-holy-war-win-morgan-scalley-kyle-whittingham/",
+        "https://sports.yahoo.com/video/did-byus-loss-to-utah-cost-the-cougars-a-playoff-spot-203600613.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSenDVuriBXkZPjDHe6LkfK_uSlXoSFo5ng2ZfqcGAaMpuhs_aNbDoefPX7fI4",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/12/sports/tom-brady-patriots-fans/",
-          "title": "It’s painfully obvious that Tom Brady no longer cares about Boston, New England, or Patriots fans",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSenDVuriBXkZPjDHe6LkfK_uSlXoSFo5ng2ZfqcGAaMpuhs_aNbDoefPX7fI4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/did-nothing-fans-columnist-says-144937705.html",
-          "title": "‘Did nothing for the fans’: Columnist says Tom Brady ‘no longer cares’ about Patriots",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnNYeNxZoSXMvGESPlFFZUt76K3dr9Frk_JV-hFlHV2XQnCfQAgDv5YFgNBsU"
-        },
-        {
-          "url": "https://www.foxsports.com/stories/nfl/tom-brady-signs-1-of-1-exclusive-topps-card-live-air-fox-broadcast",
-          "title": "Tom Brady Signs 1-of-1 Exclusive Topps Card Live On Air During Packers vs. Patriots",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQByxYNeC71H26GI_bgpkT-lsQgYOyZYhtWUawQwYjLrcodmBnexC938EDhPA"
-        }
-      ]
-    },
-    {
-      "query": "ed orgeron",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T04:10:00Z",
-      "related_news_urls": [
-        "https://www.wafb.com/2026/11/12/coach-o-survives-sepsis-after-innovative-diagnostic-test/",
-        "https://www.footballscoop.com/2026/11/05/ed-orgeron-health-update",
-        "https://bvmsports.com/2026/11/05/ed-orgeron-says-hospital-staff-saved-his-life-after-scare/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKJzC5Srhl75dY6-_Kkh1Jbr6JVWUuhFlSXobV9PUvpj2xN6JirmQVf8WOxZw",
-      "image_credit": "WAFB",
-      "news": [
-        {
-          "url": "https://www.wafb.com/2026/11/12/coach-o-survives-sepsis-after-innovative-diagnostic-test/",
-          "title": "Coach O survives sepsis after innovative diagnostic test",
-          "publisher": "WAFB",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKJzC5Srhl75dY6-_Kkh1Jbr6JVWUuhFlSXobV9PUvpj2xN6JirmQVf8WOxZw"
-        },
-        {
-          "url": "https://www.footballscoop.com/2026/11/05/ed-orgeron-health-update",
-          "title": "Ed Orgeron provides health update following hospital stay",
-          "publisher": "FootballScoop.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxdxTa7iHYYtq1JaOz00vY1e8IjWoT9gjmcfgmhSDDdVBFoa0lJH59qLu8iQU"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/05/ed-orgeron-says-hospital-staff-saved-his-life-after-scare/",
-          "title": "Ed Orgeron Says Hospital Staff Saved His Life After Scare",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIpyST-d8qfLlm2P81b9joD7ZSKN4t0woUBL5_y3p2uOAdeddjI1G1UWf0U_I"
-        }
-      ]
-    },
-    {
-      "query": "lsu coach",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T04:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7781788/2026/11/14/brian-kelly-maryland-football-interview-candidates/",
-        "https://www.al.com/sec/2026/11/brian-kelly-interviews-for-big-ten-coaching-job.html",
-        "https://www.baltimoresun.com/2026/11/14/brian-kelly-interviews-maryland-football-coach-opening/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoxXNf1dQ883b-huoaHXAepbI_Yo1dy2OWTyYlNeSXU_Eybd0EX7pSmWDPNEw",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7781788/2026/11/14/brian-kelly-maryland-football-interview-candidates/",
-          "title": "Maryland interviews Brian Kelly as search for Mike Locksley replacement continues: Sources",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoxXNf1dQ883b-huoaHXAepbI_Yo1dy2OWTyYlNeSXU_Eybd0EX7pSmWDPNEw"
-        },
-        {
-          "url": "https://www.al.com/sec/2026/11/brian-kelly-interviews-for-big-ten-coaching-job.html",
-          "title": "Brian Kelly interviews for Big Ten coaching job",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZl80ain_1hwsjrpd5i_REg2bv9f-TaphOFuvGSqDKED1R-Vcv4nQUSnTpx4k"
-        },
-        {
-          "url": "https://www.baltimoresun.com/2026/11/14/brian-kelly-interviews-maryland-football-coach-opening/",
-          "title": "Brian Kelly interviews for Maryland football coaching job: source",
-          "publisher": "Baltimore Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLjXHwUjK5_RuBMAng-yGFXZD1EupVnlxU7pVht_RORzX4THocY56B3uipjTU"
-        }
-      ]
-    },
-    {
-      "query": "jean silva",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T04:10:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "sean strickland",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-15T04:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mma/story/_/id/50471378/8-people-get-prison-nurmagomedov-dvalishvili-brawl",
-        "https://www.foxnews.com/outkick-sports/ufc-star-21-year-old-friend-reportedly-cleared-wrestle-raf-days-after-fending-off-hotel-lobby-ambush",
-        "https://sports.yahoo.com/mma/article/usman-nurmagomedovs-attack-on-merab-dvalishvili-should-never-be-good-for-business-but-we-all-know-better-181115322.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqFzJLdWl8yx6MXKL_VA88YU546nmg_VIL8X7LgRflcVLvNK3la2ElT8m_FA8",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9pF9ATOd9_A2EKyMX1WBFBVYdlsJH-Xt8O6lg-wvTOT_u2wRQTkumaKoAH_c",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/mma/story/_/id/50471378/8-people-get-prison-nurmagomedov-dvalishvili-brawl",
-          "title": "Six from Team Nurmagomedov, eight in all get prison time over Dvalishvili brawl",
+          "url": "https://www.espn.com/college-football/story/_/id/50415830/utah-byu-rivalry-scene-playoff",
+          "title": "Utah, BYU and a rivalry game that delivered in every way",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqFzJLdWl8yx6MXKL_VA88YU546nmg_VIL8X7LgRflcVLvNK3la2ElT8m_FA8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9pF9ATOd9_A2EKyMX1WBFBVYdlsJH-Xt8O6lg-wvTOT_u2wRQTkumaKoAH_c"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/ufc-star-21-year-old-friend-reportedly-cleared-wrestle-raf-days-after-fending-off-hotel-lobby-ambush",
-          "title": "UFC star and 21-year-old friend reportedly cleared to wrestle at RAF days after fending off hotel lobby ambush",
-          "publisher": "Fox News",
+          "url": "https://www.nytimes.com/athletic/7762299/2026/11/07/utah-holy-war-win-morgan-scalley-kyle-whittingham/",
+          "title": "After Holy War win, Utah is a near lock for the CFP. Their bet on Morgan Scalley has paid off - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcqdGnO7QmQvFuSGZIMCzDRe-BUNOMWVwSGVbcLjvp8eRof6jofvo2x09ghXU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaRcmAykM7rd_H30jYqcg5LLrWNsUNJo3kBxdXKA5pyFxwZipWXjdHDWFefFY"
         },
         {
-          "url": "https://sports.yahoo.com/mma/article/usman-nurmagomedovs-attack-on-merab-dvalishvili-should-never-be-good-for-business-but-we-all-know-better-181115322.html",
-          "title": "Usman Nurmagomedov's attack on Merab Dvalishvili should never be 'good for business,' but we all know better",
+          "url": "https://sports.yahoo.com/video/did-byus-loss-to-utah-cost-the-cougars-a-playoff-spot-203600613.html",
+          "title": "Did BYU's loss to Utah cost the Cougars a playoff spot?",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUJ5Urq4vYovsVoZwML8y0p8pgJSWyqkeLdcLbdHGRtmlT5gkvkQdULrEK1L8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKX32QqUJ6buqzLIpVcOAzreOCK1Gq6j-_pkMYhPEZqzXZo8Ac8mB9ihTA6bM"
         }
       ]
     },
     {
-      "query": "olascuaga",
+      "query": "yash thakur",
       "approx_searches": "200+",
-      "published_at": "2026-11-15T04:10:00Z",
+      "published_at": "2026-11-15T04:40:00Z",
       "related_news_urls": [
-        "https://www.sportingnews.com/ar/boxeo/news/donde-como-ver-vivo-gratis-yuberjen-martinez-olascuaga-tv-online/6703367dd7f51241dbb8124b",
-        "https://www.soho.co/relatos/articulo/yuberjen-martinez-a-un-golpe-de-la-inmortalidad-en-el-boxeo-mundial/202656/",
-        "https://as.com/us/masdeporte/anthony-olascuaga-vs-yuberjen-martinez-donde-ver-a-que-hora-pelean-y-en-que-canal-mirar-la-funcion-de-box-2026-f202611-n/"
+        "https://sports.yahoo.com/articles/zealand-finally-wins-toss-opts-020223689.html",
+        "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ind-vs-nz-after-sitting-out-four-games-mohammed-siraj-gets-his-chance-in-fifth-odi-yash-thakur-makes-debut/articleshow/135845486.cms",
+        "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREYDq7N8q9DA9uhZaOvdMoCJNX_GOVgYyeBgWp4GWq3OxqcVkZl8E3uTcztw8",
-      "image_credit": "Sporting News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6v-mUtn4KD_fzQTDmo9txXXX7w2e7v0Oy_nP7KNy50tSWwURGRXScUSqni4",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.sportingnews.com/ar/boxeo/news/donde-como-ver-vivo-gratis-yuberjen-martinez-olascuaga-tv-online/6703367dd7f51241dbb8124b",
-          "title": "Dónde y cómo ver en vivo y gratis Yuberjen Martínez vs. Anthony Olascuaga hoy: TV y streaming online de la pelea",
-          "publisher": "Sporting News",
+          "url": "https://sports.yahoo.com/articles/zealand-finally-wins-toss-opts-020223689.html",
+          "title": "New Zealand finally wins a toss and opts to bowl in the 5th ODI against India",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREYDq7N8q9DA9uhZaOvdMoCJNX_GOVgYyeBgWp4GWq3OxqcVkZl8E3uTcztw8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6v-mUtn4KD_fzQTDmo9txXXX7w2e7v0Oy_nP7KNy50tSWwURGRXScUSqni4"
         },
         {
-          "url": "https://www.soho.co/relatos/articulo/yuberjen-martinez-a-un-golpe-de-la-inmortalidad-en-el-boxeo-mundial/202656/",
-          "title": "Yuberjen Martínez, a un golpe de la inmortalidad en el boxeo mundial",
-          "publisher": "Soho",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ind-vs-nz-after-sitting-out-four-games-mohammed-siraj-gets-his-chance-in-fifth-odi-yash-thakur-makes-debut/articleshow/135845486.cms",
+          "title": "IND vs NZ: After sitting out four games, Mohammed Siraj gets his chance in fifth ODI; Yash Thakur makes d",
+          "publisher": "The Times of India",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUNk2J_nKVVFM6Qa1xGGJJ8m-jKCSP0ibSrTh1F9zIra1xDsmXMLtttu3AMx0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFt_Ey9TsljDd3nWedY2NeaKvHQo0cwHT1PfFxs8XIir_caIKBGCzt7O0g-kM"
         },
         {
-          "url": "https://as.com/us/masdeporte/anthony-olascuaga-vs-yuberjen-martinez-donde-ver-a-que-hora-pelean-y-en-que-canal-mirar-la-funcion-de-box-2026-f202611-n/",
-          "title": "Anthony Olascuaga vs Yuberjen Martinez dónde ver: a qué hora pelean y en qué canal mirar la función de box 202",
-          "publisher": "Diario AS",
+          "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
+          "title": "India vs New Zealand Live score, 5th ODI: Santner strikes twice in the same over, India slump to eight down",
+          "publisher": "Hindustan Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqrm12XhL7VSh3yeA98PNh7DZ1hIO45Er8Tuqjn1KbP3ZMEGjQIyT88by4Ba0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLxaX-3JfF2dkeif0JvJxue8RUh9jUXXrJi7jwsT4JT0xBoxR22UOuIlxeaqc"
         }
       ]
     },
     {
-      "query": "la mansion vip",
+      "query": "the body netflix cast",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T04:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
+        "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix",
+        "https://www.purewow.com/entertainment/the-body-netflix"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
+          "title": "‘The Body’ Talks Like ‘Mean Girls’ and Walks Like ‘The Crucible’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk"
+        },
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix",
+          "title": "The Body review – this sexy retro high school drama is like Cruel Intentions … with added Satanic rituals",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0J7IDDXHi9RkKqQf7C4XNMQHzLepy5n5QJL7PMGiP8IKutfXhWrw6v-yPaSs"
+        },
+        {
+          "url": "https://www.purewow.com/entertainment/the-body-netflix",
+          "title": "I'm Calling It: This Psychological Thriller Will Be Netflix's Next Big Hit",
+          "publisher": "PureWow",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQnUyWBEgCSDxDOrARwfE2YJaqqnPsU71dz4iZBk-_LR9hVY7AXGCL6O80IDE"
+        }
+      ]
+    },
+    {
+      "query": "peter thiel",
       "approx_searches": "1000+",
-      "published_at": "2026-11-15T04:00:00Z",
+      "published_at": "2026-11-15T04:30:00Z",
       "related_news_urls": [
-        "https://www.dallasnews.com/espanol/al-dia/espectaculos/article/jorge-duran-rod-contreras-la-mansion-vip-salida-22527831.php",
-        "https://www.infobae.com/mexico/2026/11/10/dani-flow-habla-de-la-multa-que-podria-enfrentar-tras-abandonar-la-mansion-vip-primero-estaba-mi-estado-mental/",
-        "https://www.milenio.com/espectaculos/television/hotspanish-advierte-multas-la-mansion-vip-2-por-abandondar-reality"
+        "https://finance.yahoo.com/markets/stocks/articles/17-billion-spacex-stock-left-145347985.html",
+        "https://www.marketbeat.com/instant-alerts/filing-11766-spacex-spcx-shares-sold-by-centerbook-partners-lp-2026-11-07/",
+        "https://247wallst.com/investing/2026/11/14/17-billion-of-spacex-stock-left-peter-thiels-fund-last-quarter/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEAnjJfYlx7_BVDW89wsote9Sveut6G1xabqUya6Y0BKnxIQ8i2O4GAuqM_dE",
-      "image_credit": "Dallas News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ6fnd2Hj7kgGhCTxqnL0P_ZSfErK0ar52RFxjrMY5bMsAtSACnSJZ0q5-YHM",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.dallasnews.com/espanol/al-dia/espectaculos/article/jorge-duran-rod-contreras-la-mansion-vip-salida-22527831.php",
-          "title": "Jorge Durán sale de 'La Mansión VIP 2' y se despide de Rod Contreras: video",
-          "publisher": "Dallas News",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/17-billion-spacex-stock-left-145347985.html",
+          "title": "$17 Billion of SpaceX Stock Left Peter Thiel’s Fund Last Quarter",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEAnjJfYlx7_BVDW89wsote9Sveut6G1xabqUya6Y0BKnxIQ8i2O4GAuqM_dE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ6fnd2Hj7kgGhCTxqnL0P_ZSfErK0ar52RFxjrMY5bMsAtSACnSJZ0q5-YHM"
         },
         {
-          "url": "https://www.infobae.com/mexico/2026/11/10/dani-flow-habla-de-la-multa-que-podria-enfrentar-tras-abandonar-la-mansion-vip-primero-estaba-mi-estado-mental/",
-          "title": "Dani Flow habla de la multa que podría enfrentar tras abandonar La Mansión VIP: “Primero estaba mi estado mental”",
-          "publisher": "Infobae",
+          "url": "https://www.marketbeat.com/instant-alerts/filing-11766-spacex-spcx-shares-sold-by-centerbook-partners-lp-2026-11-07/",
+          "title": "11,766 SpaceX $SPCX Shares Sold by CenterBook Partners LP",
+          "publisher": "MarketBeat",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfumY-1BEXnberBqKaEAtZ0hKtsH9xqQ38VtgUdSi3_VFSWsbf70eRxr5dV0Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu5ZvX-jF4R4OhrvqSj7A2o96aCSTYquViAFY9ta2YwycO-x-vNIUSKpN11Ik"
         },
         {
-          "url": "https://www.milenio.com/espectaculos/television/hotspanish-advierte-multas-la-mansion-vip-2-por-abandondar-reality",
-          "title": "Tras salidas de Dani Flow y Jorge Durán, HotSpanish EXPLOTA contra los participantes de La Mansión VIP 2 y adv",
-          "publisher": "MILENIO",
+          "url": "https://247wallst.com/investing/2026/11/14/17-billion-of-spacex-stock-left-peter-thiels-fund-last-quarter/",
+          "title": "$17 Billion of SpaceX Stock Left Peter Thiel’s Fund Last Quarter",
+          "publisher": "24/7 Wall St.",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrHVbN159DNI43vwa-CfiM49KgQXoRpwFq1jH7MGDJyukAd2m7qPVGwfhaLIs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9wZR6RnQ0kQDNIbEObU3ZR1ljkKqcsLKGIQuRvjahfIapg3w4TdKAcUPrktk"
         }
       ]
     },
     {
-      "query": "aeropuerto internacional de miami",
+      "query": "dario amodei",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T04:00:00Z",
+      "published_at": "2026-11-15T04:30:00Z",
       "related_news_urls": [
-        "https://www.univision.com/noticias/sucesos/reportan-colision-entre-aviones-de-ups-y-copa-airlines-en-el-aeropuerto-internacional-de-miami",
-        "https://www.minuto60.com/mundo/alerta-florida-choque-entre-aviones-ups-copa-airlines/18985",
-        "https://www.noticiasrcn.com/internacional/colision-en-el-aeropuerto-internacional-de-miami-entre-un-avion-de-copa-airlines-y-uno-de-ups-1082313"
+        "https://www.cnbc.com/2026/11/14/meet-the-seven-co-founders-of-anthropic.html",
+        "https://www.nytimes.com/2026/11/13/technology/anthropic-ipo-spending-plans.html",
+        "https://www.reuters.com/legal/transactional/anthropics-ipo-is-about-six-times-oversubscribed-bloomberg-news-reports-2026-11-12/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtxpkNFQi4_iaXJXUUNQI1czpV8tFCqdpyINDlkKWVSU9rB2iRwdibeTlziVM",
-      "image_credit": "Univision",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAq0h8ghOnbyg4e1D-smOHwrKtJrKLbpKACow8oTDUjnLS1ic3hVVa-_-rlSo",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.univision.com/noticias/sucesos/reportan-colision-entre-aviones-de-ups-y-copa-airlines-en-el-aeropuerto-internacional-de-miami",
-          "title": "Reportan colisión entre aviones de UPS y Copa Airlines en el Aeropuerto Internacional de Miami",
-          "publisher": "Univision",
+          "url": "https://www.cnbc.com/2026/11/14/meet-the-seven-co-founders-of-anthropic.html",
+          "title": "Meet the seven co-founders of Anthropic",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtxpkNFQi4_iaXJXUUNQI1czpV8tFCqdpyINDlkKWVSU9rB2iRwdibeTlziVM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAq0h8ghOnbyg4e1D-smOHwrKtJrKLbpKACow8oTDUjnLS1ic3hVVa-_-rlSo"
         },
         {
-          "url": "https://www.minuto60.com/mundo/alerta-florida-choque-entre-aviones-ups-copa-airlines/18985",
-          "title": "Alerta en Florida por fuerte choque entre dos aviones en el Aeropuerto Internacional de Miami",
-          "publisher": "Minuto60",
+          "url": "https://www.nytimes.com/2026/11/13/technology/anthropic-ipo-spending-plans.html",
+          "title": "Wall Street Braces for Anthropic’s Spending",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPNb11lUqwqaAGb5Du-SFFOYboNFuqHDCqIzFGDVB_oR4s70J0UKWe0nPS6HY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaCQi2FcthcFyycE8j2ZdeVPkz28ZQSvxIYL4xsjBU1AZn9TjxLwEmUKh7mlU"
         },
         {
-          "url": "https://www.noticiasrcn.com/internacional/colision-en-el-aeropuerto-internacional-de-miami-entre-un-avion-de-copa-airlines-y-uno-de-ups-1082313",
-          "title": "Colisión en el Aeropuerto Internacional de Miami entre dos aviones: esto se sabe",
-          "publisher": "Noticias RCN",
+          "url": "https://www.reuters.com/legal/transactional/anthropics-ipo-is-about-six-times-oversubscribed-bloomberg-news-reports-2026-11-12/",
+          "title": "Anthropic's IPO is about six times oversubscribed, Bloomberg News reports",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQOAN4Z6NeX0Ap194AgQwPojqRsrYSUtW9I0iu7SXIEP4Pg3Atp-NzzmwLli8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5BvZX-uT5QiRSV0T4rxGSpMxDgKeESZf7pRmlAdXlPe12TGnqwTGjEdDHAgo"
         }
       ]
     },
     {
-      "query": "ut",
+      "query": "sam altman",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T04:00:00Z",
+      "published_at": "2026-11-15T04:30:00Z",
       "related_news_urls": [
-        "https://www.wsj.com/opinion/free-expression/ut-austins-worthy-experiment-e120752e",
-        "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/14/tennessee-football-cfp-texas-am-george-macintyre-faizon-brandon/92618503007/",
-        "https://www.usatoday.com/story/sports/ncaaf/sec/2026/11/14/mike-elko-apology-texas-am-football-tennessee-loss-marcel-reed/92791158007/"
+        "https://robbreport.com/shelter/celebrity-homes/lists/sam-altman-property-portfolio-1238833448/",
+        "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
+        "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAfpz21dHsKkwtyIPiCNPNVDZ6p-8q1LxUKKXi-4x0x9pV4YUjSpLEsPtZS9I",
-      "image_credit": "WSJ",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxDjo0OB98YlKuHM28ft0YQD540wqAJ9JrEhzFj-Ik73bhQw-DegJJ37BzvSI",
+      "image_credit": "Robb Report",
       "news": [
         {
-          "url": "https://www.wsj.com/opinion/free-expression/ut-austins-worthy-experiment-e120752e",
-          "title": "Opinion | UT-Austin’s Worthy Experiment",
-          "publisher": "WSJ",
+          "url": "https://robbreport.com/shelter/celebrity-homes/lists/sam-altman-property-portfolio-1238833448/",
+          "title": "Inside Sam Altman’s $125 Million Property Portfolio",
+          "publisher": "Robb Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAfpz21dHsKkwtyIPiCNPNVDZ6p-8q1LxUKKXi-4x0x9pV4YUjSpLEsPtZS9I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxDjo0OB98YlKuHM28ft0YQD540wqAJ9JrEhzFj-Ik73bhQw-DegJJ37BzvSI"
         },
         {
-          "url": "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/14/tennessee-football-cfp-texas-am-george-macintyre-faizon-brandon/92618503007/",
-          "title": "Tennessee football overcomes late departure, slow start and injuries | Adams",
-          "publisher": "Knoxville News Sentinel",
+          "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
+          "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_vT2sPA-qNGpm2H_2rJ8MHMbr3Aa0ZfMyj_8qzErD2v37AExuYltPgWId864"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4suzE_rydIJZaHMpbpz32wGxWQwu9R6cuFxcxTaQi_BKNBckmsVGxlR8fsgQ"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/sec/2026/11/14/mike-elko-apology-texas-am-football-tennessee-loss-marcel-reed/92791158007/",
-          "title": "Mike Elko talked tough. Now Texas A&M is irrelevant and he’s begging for time",
-          "publisher": "USA Today",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+          "title": "NVIDIA Announces CEO Transition",
+          "publisher": "NVIDIA Newsroom",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRO27JhWEwUp6ufltAjAXScYQM1DAmSrkPRlJUvbSmY6lD3DWqhuWmwflNCwLQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qDUGyx7H7uiXEnq5EQILYq0dJjxyQRhS2zpsVdoBZCM1RxEiYeJ_NZ_PfHQ"
         }
       ]
     },
     {
-      "query": "uc davis football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T04:00:00Z",
+      "query": "texas football schedule",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-15T04:20:00Z",
       "related_news_urls": [
-        "https://www.swxlocalsports.com/spokane/idaho/idaho-vs-uc-davis-football-game-officially-set-for-5-p-m-kickoff-saturday-on/article_9090fc2d-74b4-4208-a578-af6996a1bc55.html",
-        "https://skylinesportsmt.com/vandals-weekly-thomas-ford-jr-charlie-vliem-tim-plough-jerek-wolcott-on-uc-davis-week/",
-        "https://ucdavisaggies.com/news/2026/11/13/football-uc-davis-set-for-final-regular-season-road-test.aspx"
+        "https://big12sports.com/news/2026/11/14/big-12-football-schedule-adjustments-for-saturday-november-14.aspx",
+        "https://www.nytimes.com/athletic/7780730/2026/11/13/arizona-state-ucf-faa-ground-stop-travel/",
+        "https://baylorbears.com/news/2026/11/13/football-kickoff-time-at-no-10-byu-moved-to-6-pm-ct"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kfDWRHOyacvKVmAZWH0mNrfVM8pmZLnnk4za0gi4n6irLqmJHPwGzCEet00",
-      "image_credit": "SWX Local Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQgC69nuXg6A9Vcq-MTX_7Lajh0XEeAllbYbHV70kkF8UD-vH7yjsGi2rbPw0",
+      "image_credit": "Big 12 Conference",
       "news": [
         {
-          "url": "https://www.swxlocalsports.com/spokane/idaho/idaho-vs-uc-davis-football-game-officially-set-for-5-p-m-kickoff-saturday-on/article_9090fc2d-74b4-4208-a578-af6996a1bc55.html",
-          "title": "Idaho vs. UC Davis football game officially set for 5 p.m. kickoff Saturday on SWX",
-          "publisher": "SWX Local Sports",
+          "url": "https://big12sports.com/news/2026/11/14/big-12-football-schedule-adjustments-for-saturday-november-14.aspx",
+          "title": "Big 12 Football Schedule Adjustments for Saturday, November 14",
+          "publisher": "Big 12 Conference",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kfDWRHOyacvKVmAZWH0mNrfVM8pmZLnnk4za0gi4n6irLqmJHPwGzCEet00"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQgC69nuXg6A9Vcq-MTX_7Lajh0XEeAllbYbHV70kkF8UD-vH7yjsGi2rbPw0"
         },
         {
-          "url": "https://skylinesportsmt.com/vandals-weekly-thomas-ford-jr-charlie-vliem-tim-plough-jerek-wolcott-on-uc-davis-week/",
-          "title": "Vandals Weekly: Thomas Ford Jr., Charlie Vliem, Tim Plough & Jerek Wolcott on UC Davis week",
-          "publisher": "Skyline Sports",
+          "url": "https://www.nytimes.com/athletic/7780730/2026/11/13/arizona-state-ucf-faa-ground-stop-travel/",
+          "title": "After FAA ground stop, Arizona State is flying 1,900 miles to play UCF on same day: ‘Let’s dance’",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-FR6QUAnSZzQHesa52q_meIZoB_r5IJJV4-Me1oqOMPeUuUDZTrCoe6vOQ14"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJwXhf7UQIVOS86F46TFiev2a4m3LU8pVLdTzkxQoVyMoDNrEaPokL6-Ec7N0"
         },
         {
-          "url": "https://ucdavisaggies.com/news/2026/11/13/football-uc-davis-set-for-final-regular-season-road-test.aspx",
-          "title": "UC Davis Set for Final Regular Season Road Test",
-          "publisher": "UC Davis Athletics",
+          "url": "https://baylorbears.com/news/2026/11/13/football-kickoff-time-at-no-10-byu-moved-to-6-pm-ct",
+          "title": "Kickoff Time at No. 10 BYU Moved to 6 p.m. CT",
+          "publisher": "BaylorBears.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhEQROl39tjhcYsMprIRuXJ8VBEd65WsopuqGIy164tn-Ju6wD1z12At86UY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2EgdsMPRHU3yJ72jBI7eBj2kk1CyKMcvFNS4xVrGD54wDurDl6S7pdqyDVaQ"
+        }
+      ]
+    },
+    {
+      "query": "julianna peña",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T04:20:00Z",
+      "related_news_urls": [
+        "https://www.f4wonline.com/news/ufc/former-ufc-champion-julianna-pena-loses-raf-debut/",
+        "https://www.yardbarker.com/mma/articles/julianna_pena_suffers_pin_loss_in_raf_wrestling_debut/s1_17349_44561019",
+        "https://www.mmafighting.com/latest-news/521108/raf-abu-dhabi-video-julianna-pena-falls-by-pin-in-raf-debut-to-diana-avsaragova"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR258HHILTSf0k-e9U-B_j_BatFyPAHa_0PoCRdpGXfJp0tJ-MV9-z1emYyZTU",
+      "image_credit": "F4W/WON",
+      "news": [
+        {
+          "url": "https://www.f4wonline.com/news/ufc/former-ufc-champion-julianna-pena-loses-raf-debut/",
+          "title": "Former UFC Champion loses in RAF debut",
+          "publisher": "F4W/WON",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR258HHILTSf0k-e9U-B_j_BatFyPAHa_0PoCRdpGXfJp0tJ-MV9-z1emYyZTU"
+        },
+        {
+          "url": "https://www.yardbarker.com/mma/articles/julianna_pena_suffers_pin_loss_in_raf_wrestling_debut/s1_17349_44561019",
+          "title": "Julianna Pena Suffers Pin Loss In RAF Wrestling Debut",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd5OMu2iY588Zq4-7JNMat91AE0VMUmzLKZ7HubDly9d9lGeKUeBbeLBADtqs"
+        },
+        {
+          "url": "https://www.mmafighting.com/latest-news/521108/raf-abu-dhabi-video-julianna-pena-falls-by-pin-in-raf-debut-to-diana-avsaragova",
+          "title": "RAF Abu Dhabi video: Julianna Pena falls by pin in RAF debut to Diana Avsaragova",
+          "publisher": "MMA Fighting",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE2fvKhPm3FmvSi-rMvMvEPAGx4Yc2nbrEWIjDjXFGHgmsf_QbauaOmFOhVSs"
+        }
+      ]
+    },
+    {
+      "query": "ut score",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-15T04:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-texas-vs-lsu-texas-tech-vs-oklahoma-state-utah-vs-arizona-and-more-021834400.html",
+        "https://www.cbssports.com/college-football/news/college-football-winners-losers-georgia-wake-forest-kentucky/",
+        "https://www.espn.com/college-football/story/_/id/50474063/week-11-live-highlights"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVEa0nDAs_fCemoe8kZzRvOaaFbNwfCQOFAYWE7TuHuyhNW09kHE8TRBhwIkE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-texas-vs-lsu-texas-tech-vs-oklahoma-state-utah-vs-arizona-and-more-021834400.html",
+          "title": "College football live updates, scores: Texas vs. LSU, Texas Tech vs. Oklahoma State, Utah vs. Arizona and more",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVEa0nDAs_fCemoe8kZzRvOaaFbNwfCQOFAYWE7TuHuyhNW09kHE8TRBhwIkE"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-winners-losers-georgia-wake-forest-kentucky/",
+          "title": "College football winners, losers: Georgia, Wake Forest on cruise control; Kentucky cratering",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNs5WiakJxqmn2JvRkqcQiG2VCBDrSjHU5PI228TBxYDbtunKQAj5biXbhcMU"
+        },
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50474063/week-11-live-highlights",
+          "title": "Watch best moments and top plays live from Week 11",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-5XArr0vXahQXL5vx-ugKDUNSiMXn7ETGkxcgYCs7IZQLXdhRBUdkbgjYMw8"
+        }
+      ]
+    },
+    {
+      "query": "university of texas football",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T04:20:00Z",
+      "related_news_urls": [
+        "https://www.statesman.com/sports/longhorns/football/article/texas-football-faa-ground-stop-faa-22529818.php",
+        "https://www.wfaa.com/article/travel/flights/longhorn-football-teams-travel-plans-faa-ground-stop/287-c93e252c-818b-4ab5-a15c-1d7646b14680",
+        "https://www.wafb.com/2026/11/14/tx-longhorns-still-hoping-br-flight/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGarwvj_2xqyMtq-DlrAvEAp5xdtsbw-39mPjSdLadCcaAjCD6pvHVdxew7OI",
+      "image_credit": "Austin American-Statesman",
+      "news": [
+        {
+          "url": "https://www.statesman.com/sports/longhorns/football/article/texas-football-faa-ground-stop-faa-22529818.php",
+          "title": "Texas football: Longhorns set to resume trip to LSU after FAA shutdown",
+          "publisher": "Austin American-Statesman",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGarwvj_2xqyMtq-DlrAvEAp5xdtsbw-39mPjSdLadCcaAjCD6pvHVdxew7OI"
+        },
+        {
+          "url": "https://www.wfaa.com/article/travel/flights/longhorn-football-teams-travel-plans-faa-ground-stop/287-c93e252c-818b-4ab5-a15c-1d7646b14680",
+          "title": "Longhorn football, other teams make final travel plans after FAA ground stop is lifted",
+          "publisher": "WFAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjlWavxbwc2EHuv5D_Z4ikBg92S2q5mvmjMDD4zi4BotZqEfVZjpq5Y1Pjd1A"
+        },
+        {
+          "url": "https://www.wafb.com/2026/11/14/tx-longhorns-still-hoping-br-flight/",
+          "title": "TX Longhorns still hoping for BR flight",
+          "publisher": "WAFB",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-37IEgbL02wYfIv6E0T42rDQA4OGvVN4f4pOf3TKDkyy3XkpN4Ju9To3uHoE"
         }
       ]
     }
