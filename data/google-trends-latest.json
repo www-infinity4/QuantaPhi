@@ -3,21 +3,308 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T16:31:14.767041Z",
+  "checked_at": "2026-11-15T17:01:19.866630Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "belarus vs albania",
+      "query": "deportivo - barcelona",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T16:40:00Z",
+      "related_news_urls": [
+        "https://www.sport.es/es/noticias/barca/chelsea-prepara-ofensiva-final-kounde-136465336",
+        "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251148/chelsea-vez-kounde.html",
+        "https://www.goal.com/es/noticias/por-orden-de-alonso-el-chelsea-se-prepara-para-hacerse-con-una-estrella-del-barcelona/blt0b829a8cb77d4528"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvzd5nmDs_bzQKzCfaDZcYGC6Kdi8wfNje1x7Kubp59-jpVPybrwPHeBHxM0k",
+      "image_credit": "SPORT",
+      "news": [
+        {
+          "url": "https://www.sport.es/es/noticias/barca/chelsea-prepara-ofensiva-final-kounde-136465336",
+          "title": "El Chelsea sigue interesado en Kounde y prepara una ofensiva para ficharlo en enero",
+          "publisher": "SPORT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvzd5nmDs_bzQKzCfaDZcYGC6Kdi8wfNje1x7Kubp59-jpVPybrwPHeBHxM0k"
+        },
+        {
+          "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251148/chelsea-vez-kounde.html",
+          "title": "El Chelsea, de nuevo a por Koundé",
+          "publisher": "Mundo Deportivo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSI07ujdyurCaktE3FAEoeDAxETWqcdDSYA1hqxDv4aLMspp4-wZQXMBBJg2Fw"
+        },
+        {
+          "url": "https://www.goal.com/es/noticias/por-orden-de-alonso-el-chelsea-se-prepara-para-hacerse-con-una-estrella-del-barcelona/blt0b829a8cb77d4528",
+          "title": "Por orden de Alonso: el Chelsea se prepara para hacerse con una estrella del Barcelona",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3oa-1es1QPnpSD0D35Sg5Gi5lGGycCoPgN-mr5bclqZpKAc5MepmKo8lEZLc"
+        }
+      ]
+    },
+    {
+      "query": "deportivo vs barcelona",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T16:40:00Z",
+      "related_news_urls": [
+        "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251135/gran-oportunidad-barca-femenino-alejarse-madrid.html",
+        "https://www.betfair.es/blog/futbol/futbol-espanol/liga-f/deportivo-de-a-coruna---fc-barcelona-alineaciones-horario-donde-ver-pronosticos-y-estadisticas-151126-1377.html",
+        "https://www.sport.es/es/noticias/barca/futbol-femenino/paredes-graham-barca-quiere-mantener-136444741"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLEyuHgiQuBsPfKphMqVnpjYVCkZJWIwqIHraCjooMoL46xAYGSUdZU6yVFg",
+      "image_credit": "Mundo Deportivo",
+      "news": [
+        {
+          "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251135/gran-oportunidad-barca-femenino-alejarse-madrid.html",
+          "title": "Gran oportunidad para el Barça femenino de alejarse del Madrid",
+          "publisher": "Mundo Deportivo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLEyuHgiQuBsPfKphMqVnpjYVCkZJWIwqIHraCjooMoL46xAYGSUdZU6yVFg"
+        },
+        {
+          "url": "https://www.betfair.es/blog/futbol/futbol-espanol/liga-f/deportivo-de-a-coruna---fc-barcelona-alineaciones-horario-donde-ver-pronosticos-y-estadisticas-151126-1377.html",
+          "title": "Deportivo de A Coruña - FC Barcelona: alineaciones, horario, dónde ver, pronósticos y estadísticas",
+          "publisher": "Betfair",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY4PTzc9f8XUhsfSaK3aDggv0Nm4fODXSxiwxLOhZV8IAg_6QxLusUanf3u0M"
+        },
+        {
+          "url": "https://www.sport.es/es/noticias/barca/futbol-femenino/paredes-graham-barca-quiere-mantener-136444741",
+          "title": "Sin Paredes ni Graham, el Barça quiere mantener el ritmo en Riazor tras el empate en Champions",
+          "publisher": "SPORT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBJ0HHtFWniRLmqnnBWJe-HIpmLhdJkc2sOA4G9RRD6mGYibz28HtCsHegI_I"
+        }
+      ]
+    },
+    {
+      "query": "vikings injury report",
       "approx_searches": "200+",
+      "published_at": "2026-11-15T16:40:00Z",
+      "related_news_urls": [
+        "https://www.packers.com/news/packers-vikings-week-10-inactives-nov-15-2026",
+        "https://sports.yahoo.com/articles/minnesota-vikings-green-bay-packers-163750847.html",
+        "https://www.vikings.com/news/packers-injury-report-week-10-2026-nfl-season"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB0etNuJ3I3zpsviSuzbS1WzHl_GwhaCLGtwyUf9sCY6lhM3-eOxH6oAMhowE",
+      "image_credit": "Green Bay Packers – packers.com",
+      "news": [
+        {
+          "url": "https://www.packers.com/news/packers-vikings-week-10-inactives-nov-15-2026",
+          "title": "S Xavier McKinney active for Green Bay | Packers-Vikings inactives",
+          "publisher": "Green Bay Packers – packers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB0etNuJ3I3zpsviSuzbS1WzHl_GwhaCLGtwyUf9sCY6lhM3-eOxH6oAMhowE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/minnesota-vikings-green-bay-packers-163750847.html",
+          "title": "Minnesota Vikings at Green Bay Packers: Inactive Lists for Both Teams",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnUJUN56tYrrP9jKdY62yGezLaEimxxrqhE-2YLnMKRtdkdwrXeu8XAvqjN98"
+        },
+        {
+          "url": "https://www.vikings.com/news/packers-injury-report-week-10-2026-nfl-season",
+          "title": "Final Vikings at Packers Injury Report for Week 10 of 2026",
+          "publisher": "Minnesota Vikings",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW31MXz5as76LSnMtCCYbNwWnKrOdsoG1DFHiFsLHgxK_quH6fGdTCxDJDLpM"
+        }
+      ]
+    },
+    {
+      "query": "barry sanders",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-15T16:30:00Z",
+      "related_news_urls": [
+        "https://www.detroitlions.com/video/highlight-goff-locates-gibbs-for-50-yard-catch-run",
+        "https://apnews.com/article/nfl-germany-munich-country-roads-sweet-caroline-f76d9ca8bbc0fe21bb20c7a81c509a0b",
+        "https://www.wmur.com/article/nfl-teams-with-german-mascots/74431766"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAJCjyN9Nu4xau4M0uvo2NICSD9VSvPrkmLC_vu1iUMlk3RjyxZou0hppw2k",
+      "image_credit": "Detroit Lions",
+      "news": [
+        {
+          "url": "https://www.detroitlions.com/video/highlight-goff-locates-gibbs-for-50-yard-catch-run",
+          "title": "HIGHLIGHT: Goff locates Gibbs for 50-yard catch & run",
+          "publisher": "Detroit Lions",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAJCjyN9Nu4xau4M0uvo2NICSD9VSvPrkmLC_vu1iUMlk3RjyxZou0hppw2k"
+        },
+        {
+          "url": "https://apnews.com/article/nfl-germany-munich-country-roads-sweet-caroline-f76d9ca8bbc0fe21bb20c7a81c509a0b",
+          "title": "From Oktoberfest to the NFL: How Munich crowd made ‘Country Roads’ a stadium ritual",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUpfIBs6X1dchkR-8J5ZhP3KTU5SDCFLy25alqnKvGcjNxj3NQkZ6zSLUI93c"
+        },
+        {
+          "url": "https://www.wmur.com/article/nfl-teams-with-german-mascots/74431766",
+          "title": "NFL teams with German mascots named Leo, Wolfgang and Fritz wooing fans in Munich",
+          "publisher": "WMUR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAu3iG0gC87ZaqPpESsu0dGY2U4h0dm4oeMBOdwyzs9YKMSK1TUEhN-jY4k4Y"
+        }
+      ]
+    },
+    {
+      "query": "bernie sanders social security expansion act",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T16:30:00Z",
+      "related_news_urls": [
+        "https://www.newsweek.com/bernie-sanders-proposes-2400-social-security-boost-in-new-leadership-role-12714000",
+        "https://www.al.com/news/2026/11/social-security-benefits-would-go-up-extra-200-a-month-in-bill-key-backer-says-is-top-priority.html",
+        "https://www.delawareonline.com/story/news/2026/11/13/social-security-benefit-cuts-2032-bernie-sanders-2400-increase-social-security-expansion-act/92758977007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY1vPI9v4ifPMHFpIpCQxAHoUrTTXqZdMH-f4tn7QVOdXQQhIQypE4SGlxq70",
+      "image_credit": "Newsweek",
+      "news": [
+        {
+          "url": "https://www.newsweek.com/bernie-sanders-proposes-2400-social-security-boost-in-new-leadership-role-12714000",
+          "title": "Bernie Sanders Proposes $2,400 Social Security Boost in New Leadership Role",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY1vPI9v4ifPMHFpIpCQxAHoUrTTXqZdMH-f4tn7QVOdXQQhIQypE4SGlxq70"
+        },
+        {
+          "url": "https://www.al.com/news/2026/11/social-security-benefits-would-go-up-extra-200-a-month-in-bill-key-backer-says-is-top-priority.html",
+          "title": "Social Security benefits would go up extra $200 a month in bill key backer says is ‘top priority’",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXzkdn05_zlfH2nMcmo55_o_KSynN0lxaM9Jq4Y0DP18iyX3NLuLp44mqAdFQ"
+        },
+        {
+          "url": "https://www.delawareonline.com/story/news/2026/11/13/social-security-benefit-cuts-2032-bernie-sanders-2400-increase-social-security-expansion-act/92758977007/",
+          "title": "Social Security benefit cuts: What Sanders’ $2,400 increase could mean for you",
+          "publisher": "Delawareonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVuoHP5ZTEnAWvxgbUciPDm_duEqDivmznl0FgIZaqYzxiUiim3KNh0IPJAU"
+        }
+      ]
+    },
+    {
+      "query": "españa vs inglaterra",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T16:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/euro/nota/_/id/17516819/espana-vs-inglaterra-alineaciones-nations-league",
+        "https://as.com/futbol/seleccion/espana-inglaterra-hoy-en-directo-ultima-hora-de-la-uefa-nations-league-en-vivo-f202611-d/",
+        "https://www.si.com/es-us/las-posibles-alineaciones-de-espana-e-inglaterra-para-la-ultima-jornada-de-la-fase-de-grupos-de-la-nations-league"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg57PRz6QnHmAU7f_ewjK1zbiI0W7Ys87JOhn-rrD39h5uRkXmVwUUdgNMbuc",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/euro/nota/_/id/17516819/espana-vs-inglaterra-alineaciones-nations-league",
+          "title": "España vs Inglaterra: posibles alineaciones y probabilidades",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg57PRz6QnHmAU7f_ewjK1zbiI0W7Ys87JOhn-rrD39h5uRkXmVwUUdgNMbuc"
+        },
+        {
+          "url": "https://as.com/futbol/seleccion/espana-inglaterra-hoy-en-directo-ultima-hora-de-la-uefa-nations-league-en-vivo-f202611-d/",
+          "title": "España - Inglaterra hoy, en directo: última hora de la UEFA Nations League en vivo",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqFECh7X5MWo0CetjvWCAGQ6w8xPeVec5ehHZc9o0Ar-lIfqiMaErEUo8nvfE"
+        },
+        {
+          "url": "https://www.si.com/es-us/las-posibles-alineaciones-de-espana-e-inglaterra-para-la-ultima-jornada-de-la-fase-de-grupos-de-la-nations-league",
+          "title": "Las posibles alineaciones de España e Inglaterra para la última jornada de la fase de grupos de la Nations League",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYKkU2QWEbWybibJsRkYVrP_7c3RiRyGvzBvDkc0UMm8vsh6gx_82ffQU7OLg"
+        }
+      ]
+    },
+    {
+      "query": "finland vs san marino",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T16:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cv702341je34t",
+        "https://www.thestatszone.com/finland-vs-san-marino-preview-prediction-2026-27-uefa-nations-league-league-c-239118",
+        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-finland-v-san-marino/blt28eae9425470b6b0"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cv702341je34t",
+          "title": "Finland vs San Marino: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.thestatszone.com/finland-vs-san-marino-preview-prediction-2026-27-uefa-nations-league-league-c-239118",
+          "title": "Finland vs San Marino Preview & Prediction | 2026-27 UEFA Nations League | League C",
+          "publisher": "The Stats Zone",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsj-OHcX_LXVqXH_-DnbNOcJcuTpTza9bXE6uN-N0oxkm4JzGMTMgCDIVKJ_0"
+        },
+        {
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-finland-v-san-marino/blt28eae9425470b6b0",
+          "title": "Finland vs San Marino: Where to watch, TV channel, live stream & kick-off time",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHn2buRsgL3X0KTmF5jupVcAnh6XngoCKhdELe-YCjeQK_kCtXlgubn4Bzec0"
+        }
+      ]
+    },
+    {
+      "query": "usc vs south carolina",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T16:20:00Z",
+      "related_news_urls": [
+        "https://gamecocksonline.com/news/2026/11/14/the-real-sc-to-be-decided-sunday-in-greenville/",
+        "https://247sports.com/college/south-carolina/article/gamecocks-women-basketball-dawn-staley-usc-juju-watkins-292639203/",
+        "https://www.cbssports.com/womens-college-basketball/news/staley-praises-juju-watkins-usc-and-south-carolina-clash/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuq5-jEo8nAtx8KsMApZVfLsUlnKueTrxtUR4U4JWjxae2YWK7ab5LmsfOqN4",
+      "image_credit": "University of South Carolina Athletics",
+      "news": [
+        {
+          "url": "https://gamecocksonline.com/news/2026/11/14/the-real-sc-to-be-decided-sunday-in-greenville/",
+          "title": "The Real SC to be Decided Sunday in Greenville",
+          "publisher": "University of South Carolina Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuq5-jEo8nAtx8KsMApZVfLsUlnKueTrxtUR4U4JWjxae2YWK7ab5LmsfOqN4"
+        },
+        {
+          "url": "https://247sports.com/college/south-carolina/article/gamecocks-women-basketball-dawn-staley-usc-juju-watkins-292639203/",
+          "title": "The Real SC: South Carolina, Southern California set for early season heavyweight showdown",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQho7usj-E80z-d6gsYE3qdM9kn1I3Wwx3o2cNSzWmIrPAH2ORja3wUC055VvY"
+        },
+        {
+          "url": "https://www.cbssports.com/womens-college-basketball/news/staley-praises-juju-watkins-usc-and-south-carolina-clash/",
+          "title": "'Our game needs her': Dawn Staley praises JuJu Watkins ahead of top-three clash between South Carolina and USC",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPNFsfhZJMBAT3fOFGpd0J8h5JlTBu4X6l-OM-hj4G7TsIQkqgChh2JVHR458"
+        }
+      ]
+    },
+    {
+      "query": "belarus vs albania",
+      "approx_searches": "1000+",
       "published_at": "2026-11-15T16:10:00Z",
       "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c9gkly1nzylyt",
         "https://footballwhispers.com/blog/belarus-vs-albania-prediction-15-11-2026/",
-        "https://www.mapleleaffoods.com/video/avr/video-albania-v-belaruse-in-diretta-online-gratistv-ntyc.html",
-        "https://www.bbc.com/sport/football/live/c9gkly1nzylyt"
+        "https://www.mapleleaffoods.com/video/abc/todayespn-way-to-belarus-v-albaniae-now-match-live-abc-017.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIackmudt5Seb7d67YLHvzy9qlAoy46pglaSTaLB5H4QF57ao4uC9NriDxrg4",
-      "image_credit": "Football Whispers",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsJUf1SzVKWQCKqxHxJrJI5ixMWr_ENoNth_aIen0C6C4ZVL09mP3CBPhUTao",
+      "image_credit": "BBC",
       "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c9gkly1nzylyt",
+          "title": "Belarus vs Albania: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsJUf1SzVKWQCKqxHxJrJI5ixMWr_ENoNth_aIen0C6C4ZVL09mP3CBPhUTao"
+        },
         {
           "url": "https://footballwhispers.com/blog/belarus-vs-albania-prediction-15-11-2026/",
           "title": "Belarus vs Albania – prediction, preview & betting tips – 15/11/2026",
@@ -26,333 +313,46 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIackmudt5Seb7d67YLHvzy9qlAoy46pglaSTaLB5H4QF57ao4uC9NriDxrg4"
         },
         {
-          "url": "https://www.mapleleaffoods.com/video/avr/video-albania-v-belaruse-in-diretta-online-gratistv-ntyc.html",
-          "title": "[!DIRETTA] Albania v. Belaruse In Diretta Streaming Tvs Gratis",
+          "url": "https://www.mapleleaffoods.com/video/abc/todayespn-way-to-belarus-v-albaniae-now-match-live-abc-017.html",
+          "title": "tODAY~[EsPN] Way to watch Belarus v. Albaniae 𝐋𝐈𝐯𝐄 𝐒𝐭𝐑𝐞𝐀𝐦 ＴｖＣｈａｎｎｅｌ 14. November. 2026",
           "publisher": "Maple Leaf Foods",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdBF3MZnHC75npA-LrZA8OSEZ1FXGG3gXJShm6U8EC4PW-BAU6pYH9FvkIYB4"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/c9gkly1nzylyt",
-          "title": "Belarus vs Albania: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsJUf1SzVKWQCKqxHxJrJI5ixMWr_ENoNth_aIen0C6C4ZVL09mP3CBPhUTao"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTViAuz74yecJjjjZ_96jnvxu0nQSSourWGeRNkYQNOdEM8OifAzVnEZUNJ-mk"
         }
       ]
     },
     {
-      "query": "ou vs ole miss",
-      "approx_searches": "2000+",
+      "query": "raiders vs seahawks",
+      "approx_searches": "1000+",
       "published_at": "2026-11-15T16:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50482206/oklahoma-ad-infuriated-sec-ole-miss-sunday-game",
-        "https://defector.com/faa-ground-stoppage-ole-miss-oklahoma-sunday-start-time",
-        "https://apnews.com/article/ap-top-25-delayed-d1988e6dad4f3ae4e660fe1ef8845f5b"
+        "https://www.raiders.com/news/how-to-watch-listen-to-and-livestream-raiders-vs-seahawks",
+        "https://sports.yahoo.com/articles/seahawks-vs-raiders-prediction-pick-144504885.html",
+        "https://www.seattletimes.com/sports/seahawks/what-to-know-as-seahawks-face-fernando-mendoza-raiders/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFjEI9KHTkdxMi7ydpiFEnU-k3e5Z68sbbTqF5ikboF6BFJk7J9TuY-bmU8uY",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsKI8W51bXQRTbxMyq2NSUbCNJq4ck7ZSiWPjVRs34avpYFIG4ju8542H0JAE",
+      "image_credit": "Raiders.com",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50482206/oklahoma-ad-infuriated-sec-ole-miss-sunday-game",
-          "title": "Oklahoma AD rips Ole Miss, SEC; Rebels defend travel effort",
-          "publisher": "ESPN",
+          "url": "https://www.raiders.com/news/how-to-watch-listen-to-and-livestream-raiders-vs-seahawks",
+          "title": "How to watch, listen to and livestream Raiders vs. Seahawks",
+          "publisher": "Raiders.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFjEI9KHTkdxMi7ydpiFEnU-k3e5Z68sbbTqF5ikboF6BFJk7J9TuY-bmU8uY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsKI8W51bXQRTbxMyq2NSUbCNJq4ck7ZSiWPjVRs34avpYFIG4ju8542H0JAE"
         },
         {
-          "url": "https://defector.com/faa-ground-stoppage-ole-miss-oklahoma-sunday-start-time",
-          "title": "Did Ole Miss Simply Lack The Grit To Get To Their Game On Time?",
-          "publisher": "Defector",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYykbXFnuLqJicOwF-P7bnN73t-OkjMswym4PwQZIKZfRWNFyQoLMbPtbxISo"
-        },
-        {
-          "url": "https://apnews.com/article/ap-top-25-delayed-d1988e6dad4f3ae4e660fe1ef8845f5b",
-          "title": "AP delays Top 25 football poll release by one day after flight issues scramble schedule",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTpaIngkHhbmeKD-mC797TqtMT3p5H0BaJEdBg61LjzwkOBgEW1DkxGC07r2U"
-        }
-      ]
-    },
-    {
-      "query": "tim hill",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T16:00:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/tim-hill-deal-with-yankees",
-        "https://www.mlbtraderumors.com/2026/11/yankees-re-sign-tim-hill-to-one-year-deal.html",
-        "https://bleacherreport.com/articles/25533603-new-yankees-rumors-tim-hills-contract-bullpen-top-priority-mlb-free-agency"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk_zp6qexJfZXBlWiWdKYJxkUiXrL2SFKmLJ-CMWEr8Uyrt1T-7kyTRZ3oqao",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/tim-hill-deal-with-yankees",
-          "title": "Hill agrees to 1-year deal to return to Yankees (source)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk_zp6qexJfZXBlWiWdKYJxkUiXrL2SFKmLJ-CMWEr8Uyrt1T-7kyTRZ3oqao"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/yankees-re-sign-tim-hill-to-one-year-deal.html",
-          "title": "Yankees Re-Sign Tim Hill To One-Year Deal",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4KwfuBkIhxRTgHWbuIzbkWS33DEZboK-YTvDHDUX247QMlksHtcm2jG0vnMA"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25533603-new-yankees-rumors-tim-hills-contract-bullpen-top-priority-mlb-free-agency",
-          "title": "New Yankees Rumors on Tim Hill's Contract as 'Bullpen is a Top Priority' in MLB Free Agency",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwUByEzbaa8OGwZImqEJh1s_62Tz8Am0V2pnR0gdFe86LuWTka_MLhWR6GwhA"
-        }
-      ]
-    },
-    {
-      "query": "is kirk cousins starting this week",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T16:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50484865/sources-vikings-want-keep-kirk-cousins-2027-season",
-        "https://sports.yahoo.com/nfl/live/vikings-packers-score-live-updates-inactives-highlights-stats-where-to-watch-week-10-kirk-cousins-trade-161023092.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-vikings-first-reached-out-to-raiders-about-kirk-cousins-on-monday-afternoon"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZhdGQX2yPLJsOuKysVdy9Hu6qHiofuGkRSwQ7V5zc1s1BGY1Qa96Tq1Xeik",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50484865/sources-vikings-want-keep-kirk-cousins-2027-season",
-          "title": "Sources: Vikings want to keep Kirk Cousins, talked to QB about staying in 2027",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZhdGQX2yPLJsOuKysVdy9Hu6qHiofuGkRSwQ7V5zc1s1BGY1Qa96Tq1Xeik"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/live/vikings-packers-score-live-updates-inactives-highlights-stats-where-to-watch-week-10-kirk-cousins-trade-161023092.html",
-          "title": "Vikings vs. Packers live updates, inactives, where to watch: Kirk Cousins returns to Minnesota in trade deadline stunner with Raiders",
+          "url": "https://sports.yahoo.com/articles/seahawks-vs-raiders-prediction-pick-144504885.html",
+          "title": "Seahawks vs Raiders Prediction, Pick, Odds for NFL Week 10",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmVCw1_Xo8fV5CC0wTYOVCVwuoRHcnOxlxlbe2h6qNwASA7RoOQTVNSMg9g9s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSanrf29zZIxqDKkyPmxBpzlYywnAO3uRDlRVDwrJGJFzhvfVDSca0pwZE3S5o"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-vikings-first-reached-out-to-raiders-about-kirk-cousins-on-monday-afternoon",
-          "title": "Report: Vikings first reached out to Raiders about Kirk Cousins on \"midday Monday\"",
-          "publisher": "NBC Sports",
+          "url": "https://www.seattletimes.com/sports/seahawks/what-to-know-as-seahawks-face-fernando-mendoza-raiders/",
+          "title": "What to know as Seahawks face Raiders, plus Bob Condotta's prediction",
+          "publisher": "The Seattle Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPhpPgibRNWvGafY0ttlBA5YxHe5_wjvqhONDIgL4pwNuFvF-3HN0kqX9EfY"
-        }
-      ]
-    },
-    {
-      "query": "kevin byard",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T16:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/patriots-kevin-byard-cleared-to-play-in-munich/",
-        "https://www.rotowire.com/football/headlines/kevin-byard-injury-draws-questionable-tag-for-week-10-647569",
-        "https://www.rotowire.com/football/headlines/kevin-byard-news-cleared-to-play-in-munich-647798"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/patriots-kevin-byard-cleared-to-play-in-munich/",
-          "title": "Patriots' Kevin Byard: Cleared to play in Munich",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
-        },
-        {
-          "url": "https://www.rotowire.com/football/headlines/kevin-byard-injury-draws-questionable-tag-for-week-10-647569",
-          "title": "Kevin Byard Injury: Draws questionable tag for Week 10",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6wGVPySHLp1Tm_hxnzVuP_ZBOer_FdqcN9DymJ1hAbvZWKVmamTjr13ntV_A"
-        },
-        {
-          "url": "https://www.rotowire.com/football/headlines/kevin-byard-news-cleared-to-play-in-munich-647798",
-          "title": "Kevin Byard News: Cleared to play in Munich",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6wGVPySHLp1Tm_hxnzVuP_ZBOer_FdqcN9DymJ1hAbvZWKVmamTjr13ntV_A"
-        }
-      ]
-    },
-    {
-      "query": "tax",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T15:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/ckvg2ezvpe08o",
-        "https://www.reuters.com/world/asia-pacific/top-scorer-south-korean-tax-exam-confesses-cheating-with-ai-2026-11-15/",
-        "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyZAB2lawKWjBC_NV0gJBL2RFlrkdeZXr2vd2z2cqOi5r0WE5rBVDoRw8FSM",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/ckvg2ezvpe08o",
-          "title": "South Korea's top scorer in tax accountancy exam admits cheating",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyZAB2lawKWjBC_NV0gJBL2RFlrkdeZXr2vd2z2cqOi5r0WE5rBVDoRw8FSM"
-        },
-        {
-          "url": "https://www.reuters.com/world/asia-pacific/top-scorer-south-korean-tax-exam-confesses-cheating-with-ai-2026-11-15/",
-          "title": "Top scorer on South Korean tax exam confesses to cheating with AI",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcKR9EDe-1NY-fj4yMP7iP1B0r0lr3C9Wh71QNG8axEOcpzGb7GcrBsbCoOE"
-        },
-        {
-          "url": "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam",
-          "title": "160 questions, only one wrong: top scorer in South Korea tax exam admits AI cheating",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdVWhVrngMY60ecRkbOhcwyp1RaQMdE5mRLomDVJVLZbvOtYH2_eJet8xE-Jo"
-        }
-      ]
-    },
-    {
-      "query": "roger mccreary",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T15:50:00Z",
-      "related_news_urls": [
-        "https://sidelionreport.com/roger-mccreary-s-struggles-in-certain-coverage-role-brings-easy-week-10-bullseye-01m7b1618vzc",
-        "https://sports.yahoo.com/articles/titans-turned-dremont-jones-roger-183000290.html",
-        "https://athlonsports.com/nfl/los-angeles-rams/rams-roger-mccreary-trade-regrade-one-year"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFFrINAjgv628ekBpoeZNjafh106SJ_2nwlrZm04AGJjT6JJX_KvckVxmSPVs",
-      "image_credit": "SideLion Report",
-      "news": [
-        {
-          "url": "https://sidelionreport.com/roger-mccreary-s-struggles-in-certain-coverage-role-brings-easy-week-10-bullseye-01m7b1618vzc",
-          "title": "Roger McCreary's struggles in certain coverage role brings easy Week 10 bullseye",
-          "publisher": "SideLion Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFFrINAjgv628ekBpoeZNjafh106SJ_2nwlrZm04AGJjT6JJX_KvckVxmSPVs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/titans-turned-dremont-jones-roger-183000290.html",
-          "title": "Titans Turned Dre'Mont Jones and Roger McCreary Into 2 Rookie Starters",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRJRX7A37mlzmX1pG9ob6jwWlHiw5Trc0wVY8X6-eHvzXmgiNo7TiWEp0tZGc"
-        },
-        {
-          "url": "https://athlonsports.com/nfl/los-angeles-rams/rams-roger-mccreary-trade-regrade-one-year",
-          "title": "Re-Grading the Rams’ 2025 Roger McCreary Trade One Year Later",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTncU0GP44UPA3wn--fsoXh8WasFTW_ZgkKtz0IGZyCLeANc1bmRhjN6OF_Aj4"
-        }
-      ]
-    },
-    {
-      "query": "patriots schedule",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T15:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/starting-with-patriots-lions-fox-has-three-windows-on-sunday",
-        "https://sports.yahoo.com/articles/seahawks-fan-chat-nfl-week-141500164.html",
-        "https://www.nfl.com/news/nfl-how-to-watch-week-10-nfl-games-schedule-munich-game-details-and-more"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEXIQZGw7kTpnPEV7kbOa0Lp1yQXlVJWBd3e_z9n8mYefB2aCI8SmbBDtCcZA",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/starting-with-patriots-lions-fox-has-three-windows-on-sunday",
-          "title": "Starting with Patriots-Lions, Fox has three windows on Sunday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEXIQZGw7kTpnPEV7kbOa0Lp1yQXlVJWBd3e_z9n8mYefB2aCI8SmbBDtCcZA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/seahawks-fan-chat-nfl-week-141500164.html",
-          "title": "Seahawks fan chat: NFL Week 10 Sunday early games, Steelers vs. Bengals live discussion",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAcEWZbQe3RO7KnKt5PjkYiNXUQ4KYg7qp9m47E7HkH5LajeEtS-dB1KvKn8"
-        },
-        {
-          "url": "https://www.nfl.com/news/nfl-how-to-watch-week-10-nfl-games-schedule-munich-game-details-and-more",
-          "title": "NFL+: How to watch Week 10 NFL games, schedule, Munich game details, and more",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjPCRU19y1aJuWqdruaMHYpLPw9Gx3EkwKBiTF2dxSRJ-IpH7fDQZyDDWyxbI"
-        }
-      ]
-    },
-    {
-      "query": "patriots record",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T15:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50454197/top-10-super-bowl-individual-defensive-performances",
-        "https://www.foxsports.com/watch/fmc-onmoalkcgrznbk30",
-        "https://www.nfl.com/videos/jared-goff-might-torch-the-pats-secondary-nfl-pro"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREMhMhNa-zvH0OV4Q2X1fwk2UE9Voa0FuzWvC08_xpKXWtDszuXjtr4wl2bBI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50454197/top-10-super-bowl-individual-defensive-performances",
-          "title": "Ranking the top 10 Super Bowl performances by a defender",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREMhMhNa-zvH0OV4Q2X1fwk2UE9Voa0FuzWvC08_xpKXWtDszuXjtr4wl2bBI"
-        },
-        {
-          "url": "https://www.foxsports.com/watch/fmc-onmoalkcgrznbk30",
-          "title": "Jared Goff WILL Have Big Game vs Patriots in Germany, Chiefs on Upset Alert vs Falcons in Week 10?",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRuIGR3VBQFZXDX6C7MZGfAcKgrIEk6isziIaEC6RIMFf5nq7tyhcYDaJ6qBI"
-        },
-        {
-          "url": "https://www.nfl.com/videos/jared-goff-might-torch-the-pats-secondary-nfl-pro",
-          "title": "Jared Goff might torch the Pats secondary | NFL Pro",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxNYverY6NDVYLL2LvXEBkp9bpy8CLkqSRdg4YEbmKPdTnEHUrt7ULFPlqDIE"
-        }
-      ]
-    },
-    {
-      "query": "jordan addison",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T15:50:00Z",
-      "related_news_urls": [
-        "https://www.vikings.com/news/jeshaun-jones-devin-culp-packers-week-10-elevate-roster",
-        "https://sports.yahoo.com/articles/vikings-wr-jordan-addison-playing-152739063.html",
-        "https://www.cbssports.com/fantasy/football/news/vikings-jordan-addison-may-be-game-time-call-sunday/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSLxnIgKZIaeO9mw32XubIlikLhBsr41I4-m-SX-FXudXL2tWdST9XGviJkwA",
-      "image_credit": "Minnesota Vikings",
-      "news": [
-        {
-          "url": "https://www.vikings.com/news/jeshaun-jones-devin-culp-packers-week-10-elevate-roster",
-          "title": "Vikings Elevate Jeshaun Jones & Devin Culp for Week 10 at Packers",
-          "publisher": "Minnesota Vikings",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSLxnIgKZIaeO9mw32XubIlikLhBsr41I4-m-SX-FXudXL2tWdST9XGviJkwA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/vikings-wr-jordan-addison-playing-152739063.html",
-          "title": "Is Vikings WR Jordan Addison playing with Kirk Cousins vs. Packers after eye-opening roster move?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfozhYplTvyWmEgk9z1WijUSPVl1qQfsAxbIi8FNzsH2IIjb6_6fZM0hJGXaA"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/vikings-jordan-addison-may-be-game-time-call-sunday/",
-          "title": "Vikings' Jordan Addison: May be game-time call Sunday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLUZbKf0jefdaJCDAXxiU4ODLkcZ9_kb8JxVUFZ0oGpKXF1GU1nfnk1NJurWU"
         }
       ]
     }
