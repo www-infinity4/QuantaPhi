@@ -36,6 +36,12 @@ test('requires one scoped repository and validated source before creating any jo
   assert.deepEqual(requests, []);
   await assert.rejects(startCompleteMe(project, request), /source/i);
   assert.deepEqual(requests, [{path: '/work/github/read', body: {action: 'read_repository', repository}}]);
+  for (const canonicalRepository of [undefined, 'www-infinity4/AnotherRepo']) {
+    await assert.rejects(startCompleteMe(project, async path => {
+      assert.equal(path, '/work/github/read');
+      return {ok: true, repository, canonicalRepository, headSha: sourceSha};
+    }), /canonical GitHub repository name/);
+  }
 });
 
 test('distinct Complete Me goals get separate stable project IDs, while retries reuse one',async()=>{
@@ -83,10 +89,17 @@ test('the existing owner intake saves one project and the signed runner resumes 
   const token = 'rb_' + 'b'.repeat(64);
   const ownerHash = 'c'.repeat(64);
   const durable = new Map();
+  let transactions = Promise.resolve();
   const storage = {
     get: async key => structuredClone(durable.get(key)),
     put: async (key, value) => durable.set(key, structuredClone(value)),
     delete: async key => durable.delete(key),
+    list: async ({prefix}) => new Map([...durable].filter(([key]) => key.startsWith(prefix))),
+    transaction(callback) {
+      const result = transactions.then(() => callback(storage));
+      transactions = result.catch(() => {});
+      return result;
+    },
   };
   let auth = true;
   let repositoryHead = sourceSha;
@@ -162,7 +175,7 @@ test('the existing owner intake saves one project and the signed runner resumes 
   assert.equal((await claim('43')).lease, null, 'the live lease survives the worker restart');
 
   durable.set(first.key, {...first, leaseUntil: 0});
-  durable.delete('repository-lease:' + repository);
+  durable.delete(first.lockKey ?? 'repository-lease:' + repository);
   fixtureReceipt(id, 'blocked', 'owner_approval_required');
   const blocked = completeMeProject((await browser('/work/tickets/list', {})).tickets[0]);
   assert.equal(blocked.jobs[0].approvalRequired, true);
@@ -173,7 +186,7 @@ test('the existing owner intake saves one project and the signed runner resumes 
   const retried = (await claim('45')).lease;
   assert.equal(retried.jobId, 'TASK-1');
   assert.notEqual(retried.leaseId, first.leaseId);
-  durable.delete('repository-lease:' + repository);
+  durable.delete(retried.lockKey ?? 'repository-lease:' + repository);
   fixtureReceipt(id, 'committed_unverified');
   assert.equal((await claim('46')).lease, null, 'a source-only receipt cannot release the dependent job');
   fixtureReceipt(id, 'merged_verified');

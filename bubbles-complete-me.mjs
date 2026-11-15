@@ -66,13 +66,17 @@ function projectJobs(p,id,sourceSha){
 }
 
 export async function startCompleteMe(project,request){
- const p=validateProject(project);
+ const target=validateProject(project);
  if(typeof request!=='function')throw Error('Authenticated owner request adapter required');
  // Separate owner-scoped READ is mandatory: model text and a guessed SHA
  // never grant permission to create an engineering ticket.
- const source=await request('/work/github/read',{action:'read_repository',repository:p.repository});
- if(source?.ok!==true||source.repository!==p.repository||!VERIFIED_SHA.test(source.headSha||''))
+ const source=await request('/work/github/read',{action:'read_repository',repository:target.repository});
+ if(source?.ok!==true||source.repository!==target.repository||!VERIFIED_SHA.test(source.headSha||''))
   throw Error('Source verification failed; no project ticket created');
+ const canonical=source.canonicalRepository;
+ if(typeof canonical!=='string'||!REPOSITORY.test(canonical)||canonical.toLowerCase()!==target.repository.toLowerCase())
+  throw Error('The Brain source reader did not verify the canonical GitHub repository name.');
+ const p={...target,repository:canonical};
  const id=await projectSubmissionId(p);
  const context={
   kind:'robot-directions',project_type:'complete-me-ai',
@@ -242,7 +246,8 @@ export async function openCompleteMe(container, text, {authorize, request: owner
     const list = element('ol');
     for (const job of project.jobs) {
       const item = element('li');
-      item.append(element('strong', job.title), element('p', job.latestRunnerStep || job.next));
+      item.append(element('strong', job.title), element('p', job.next));
+      if (job.phase === 'working' && job.latestRunnerStep) item.append(element('p', job.latestRunnerStep));
       if (job.blocker) item.append(element('p', job.blocker));
       if (job.runUrl) item.append(link('Runner receipt', job.runUrl));
       if (job.commitSha) item.append(link('Source commit', `https://github.com/${project.repository}/commit/${job.commitSha}`));

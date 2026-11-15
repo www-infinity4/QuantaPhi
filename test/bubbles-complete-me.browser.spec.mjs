@@ -44,7 +44,7 @@ test('the owner reviews the scope, starts one project, and sees its recorded dep
     if (route.request().method() === 'OPTIONS') return route.fulfill({status: 204, headers});
     if (url.pathname === '/work/github/read') {
       calls.push(url.pathname);
-      return route.fulfill({headers, json: {ok: true, repository, headSha: 'a'.repeat(40)}});
+      return route.fulfill({headers, json: {ok: true, repository, canonicalRepository: repository, headSha: 'a'.repeat(40)}});
     }
     if (url.pathname === '/work/tickets/create') {
       expect(route.request().headers().authorization).toBe(auth);
