@@ -3,12 +3,152 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T11:01:27.886806Z",
+  "checked_at": "2026-11-15T11:31:01.527721Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "espncricinfo",
+      "query": "uzbekistan",
       "approx_searches": "200+",
+      "published_at": "2026-11-15T11:10:00Z",
+      "related_news_urls": [
+        "https://eurasianet.org/china-carrying-out-charm-offensive-in-uzbekistan",
+        "https://ua.news/en/dovkolo-svitu/cgtn-vipustiv-blizko-70-materialiv-pro-zviazki-kitaiu-z-uzbekistanom-oilprice",
+        "https://dunyo.info/en/actual/reformy-novogo-uzbekistana-v-centre-vnimaniya-kitayskoy-obshchestvennosti"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr3ehdOp4SSWxDRcjPu8_LVNJaBY6MUj0INConnnCBM8vBFh0nVF1lGET00yU",
+      "image_credit": "Eurasianet",
+      "news": [
+        {
+          "url": "https://eurasianet.org/china-carrying-out-charm-offensive-in-uzbekistan",
+          "title": "China carrying out charm offensive in Uzbekistan",
+          "publisher": "Eurasianet",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr3ehdOp4SSWxDRcjPu8_LVNJaBY6MUj0INConnnCBM8vBFh0nVF1lGET00yU"
+        },
+        {
+          "url": "https://ua.news/en/dovkolo-svitu/cgtn-vipustiv-blizko-70-materialiv-pro-zviazki-kitaiu-z-uzbekistanom-oilprice",
+          "title": "CGTN released about 70 reports on China’s ties with Uzbekistan — OilPrice",
+          "publisher": "UA.NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7RhPkjJCsB9LOGyr9TsBSRqQCcMVDHINA6gy2l0ArtVdp_UbI-XPXn6Broug"
+        },
+        {
+          "url": "https://dunyo.info/en/actual/reformy-novogo-uzbekistana-v-centre-vnimaniya-kitayskoy-obshchestvennosti",
+          "title": "Reforms in New Uzbekistan in the spotlight of the Chinese public",
+          "publisher": "Dunyo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfULeDQaWvvs1lt7kJQa1THN6nVHk5zQOoTnV7QWmlGYSszM1hrCqderP4qoU"
+        }
+      ]
+    },
+    {
+      "query": "ron howard",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T11:10:00Z",
+      "related_news_urls": [
+        "https://people.com/ron-howard-reveals-makes-him-fall-in-love-wife-cheryl-over-and-over-after-51-years-marriage-exclusive-12250278",
+        "https://parade.com/celebrities/ron-howard-reveals-what-keeps-his-marriage-strong-after-51-years",
+        "https://www.aol.com/articles/ron-howard-calls-wife-cheryl-224146000.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYancsj4RhJSMUxmNsPTM5dYWvovTF1RFUIApvOP2RTZTkMbGsFtoy-wPlpvM",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/ron-howard-reveals-makes-him-fall-in-love-wife-cheryl-over-and-over-after-51-years-marriage-exclusive-12250278",
+          "title": "Ron Howard Says He Falls in Love with Wife Cheryl ‘Over and Over’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYancsj4RhJSMUxmNsPTM5dYWvovTF1RFUIApvOP2RTZTkMbGsFtoy-wPlpvM"
+        },
+        {
+          "url": "https://parade.com/celebrities/ron-howard-reveals-what-keeps-his-marriage-strong-after-51-years",
+          "title": "Ron Howard Reveals What Keeps His Marriage Strong After 51 Years",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBcMhoKF5KaN2pVkKiknocyl1e19jB5rf4cBMCVO_oKFawDOaAT_b0hhCKsaU"
+        },
+        {
+          "url": "https://www.aol.com/articles/ron-howard-calls-wife-cheryl-224146000.html",
+          "title": "Ron Howard Calls Wife Cheryl His Career’s ‘Secret Weapon’: ‘She’s Been So Influential’ (Exclusive)",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIzWpZ9pwivSmMrrvO5l7XGrqe3LrZ5qCVJqlzI7QTUB99PC2tCEonoa1MQ80"
+        }
+      ]
+    },
+    {
+      "query": "dallas weather",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T11:00:00Z",
+      "related_news_urls": [
+        "https://www.fox4news.com/weather/dallas-weather-cold-wet-weekend-north-texas-starts-late-saturday",
+        "https://www.dallasnews.com/news/weather/article/dallas-weather-storms-bring-2-inches-rain-weekend-22520987.php",
+        "https://www.cbsnews.com/texas/video/rain-thunderstorms-expected-across-north-texas-sunday/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT31axCSp4T3UL6id-n3qV3w1pWY9KnllWEkRJjIhpIVmuuzOaR8tMKFb5RgD8",
+      "image_credit": "FOX 4 News Dallas-Fort Worth",
+      "news": [
+        {
+          "url": "https://www.fox4news.com/weather/dallas-weather-cold-wet-weekend-north-texas-starts-late-saturday",
+          "title": "Dallas weather: Cold, wet weekend for North Texas starts late Saturday",
+          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT31axCSp4T3UL6id-n3qV3w1pWY9KnllWEkRJjIhpIVmuuzOaR8tMKFb5RgD8"
+        },
+        {
+          "url": "https://www.dallasnews.com/news/weather/article/dallas-weather-storms-bring-2-inches-rain-weekend-22520987.php",
+          "title": "Live radar: Here’s when rain arrives across D-FW this weekend",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5ahNYo6fj9K6fftYfbq1VGctgxyo020Da2lZm4tvIVCwYy3m93_2tNFPSpw0"
+        },
+        {
+          "url": "https://www.cbsnews.com/texas/video/rain-thunderstorms-expected-across-north-texas-sunday/",
+          "title": "Rain, thunderstorms expected across North Texas Sunday",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSePrEMLZTmFGTowFwrSPaAJZz7FAOJjnwfVSacvlbxhVmwwK2h4hfVp7-uZ5o"
+        }
+      ]
+    },
+    {
+      "query": "rory mcilroy",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T10:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/golf/story/_/id/50479782/mcilroy-chacarra-set-sunday-showdown-dubai",
+        "https://www.golfdigest.com/story/heres-prize-money-payout-for-each-golfer-at-2026-dp-world-tour-championship",
+        "https://www.skysports.com/golf/live-blog/13612212/dp-world-tour-championship-final-round-live-latest-scores-highlights-as-rory-mcilroy-chases-race-to-dubai-win"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50479782/mcilroy-chacarra-set-sunday-showdown-dubai",
+          "title": "Rory McIlroy set for showdown with Eugenio Chacarra for Race to Dubai title",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSVA33zXv16QGKRXCLLnTB2aie5tQ-6olhPwv85Rs-ovgRWXJH1PQ2EFQ-ys"
+        },
+        {
+          "url": "https://www.golfdigest.com/story/heres-prize-money-payout-for-each-golfer-at-2026-dp-world-tour-championship",
+          "title": "Here’s the prize money payout for each golfer at the 2026 DP World Tour Championship",
+          "publisher": "Golf Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ11Nm2YfgU-Vj6omjJ1VNzTVStOyDcYAMu8yWiiy61EyVUjTq358nFT5g2qtg"
+        },
+        {
+          "url": "https://www.skysports.com/golf/live-blog/13612212/dp-world-tour-championship-final-round-live-latest-scores-highlights-as-rory-mcilroy-chases-race-to-dubai-win",
+          "title": "DP World Tour Championship - final round LIVE! Latest scores, highlights as Rory McIlroy chases Race to Dubai win",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3PmdLkg-NlGQHVQjxEs5w6RJszhnRPMVzu6FKn2e9Q-TxuoY-RnO88jHjces"
+        }
+      ]
+    },
+    {
+      "query": "espncricinfo",
+      "approx_searches": "100+",
       "published_at": "2026-11-15T10:40:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/cricket/articles/c9ly4jm8djy7o",
@@ -147,8 +287,43 @@
       ]
     },
     {
-      "query": "robot",
+      "query": "jeffrey epstein",
       "approx_searches": "100+",
+      "published_at": "2026-11-15T10:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/15/magazine/epstein-victims-recruiting-trafficking.html",
+        "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
+        "https://www.bbc.com/news/articles/c6j9mlldgpgjo"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTswAGXa7uDOvhGhL6kTKIpXw_soGg1Z_vHQ6NWVC4D_MjCpHK_cXIScHQAZo8",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/15/magazine/epstein-victims-recruiting-trafficking.html",
+          "title": "She Was a Victim of Jeffrey Epstein. She Also Helped Him Find Other Girls.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTswAGXa7uDOvhGhL6kTKIpXw_soGg1Z_vHQ6NWVC4D_MjCpHK_cXIScHQAZo8"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
+          "title": "Meet Eileen Laubacher, the Navy Veteran Who Beat Lauren Boebert",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpnrE3ukGf16a45yNl80xUYGFisk-_GYoFMrwgaRe8muZfA4ygX0I5C8AxsQ"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/c6j9mlldgpgjo",
+          "title": "Lauren Boebert, once a MAGA star, loses her Colorado seat",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSngXs8ktx3BOboTYdaKoBflfV58Rn-bcQ68tEh0AF7GDJoPVibHCPbKhZ7FhM"
+        }
+      ]
+    },
+    {
+      "query": "robot",
+      "approx_searches": "200+",
       "published_at": "2026-11-15T10:00:00Z",
       "related_news_urls": [
         "https://www.foxnews.com/world/robot-dogs-mounted-rifles-deployed-anti-gang-stadium-operation-haiti",
@@ -178,181 +353,6 @@
           "publisher": "France 24",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgAAPbZz9CvVDDRMo3lv3_bbtMDld4bZXo3fw50jTGN2lOHACXHAwM6XWfMJY"
-        }
-      ]
-    },
-    {
-      "query": "india vs new zealand",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-15T09:50:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-5th-odi-1539441/match-report",
-        "https://www.cricbuzz.com/cricket-news/140916/bowlers-step-up-as-india-complete-3-1-series-win",
-        "https://www.foxsports.com/articles/soccer/sharma-and-kohli-struggle-again-as-india-reach-209-in-the-5th-odi-against-new-zealand"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXj4AdgLSahNgQXBL62mU9rWQ68-3VPI_unx-fB6418nGgrG-G3-NBEPrDrrQ",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-5th-odi-1539441/match-report",
-          "title": "Arshdeep and Co help India defend 209 for 3-1 series win",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXj4AdgLSahNgQXBL62mU9rWQ68-3VPI_unx-fB6418nGgrG-G3-NBEPrDrrQ"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140916/bowlers-step-up-as-india-complete-3-1-series-win",
-          "title": "India tour of New Zealand 2026: Bowlers step up as India complete 3-1 series win",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToQ9zHgOHGVCrbXAYQnoRcog4C5suFxPDdBw4aPONYy1xHgKKYtkNWEBRwakE"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/soccer/sharma-and-kohli-struggle-again-as-india-reach-209-in-the-5th-odi-against-new-zealand",
-          "title": "Sharma and Kohli struggle again as India reach 209 in the 5th ODI against New Zealand",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
-        }
-      ]
-    },
-    {
-      "query": "rick rubin",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T09:10:00Z",
-      "related_news_urls": [
-        "https://consequence.net/2026/11/red-hot-chili-peppers-rick-rubin-rock-roll-hall-of-fame-performance/",
-        "https://ultimateclassicrock.com/red-hot-chili-peppers-rick-rubin-rock-hall-of-fame/",
-        "https://rockcellarmagazine.com/red-hot-chili-peppers-wear-rick-rubin-costumes-rock-and-roll-hall-of-fame-induction-ceremony/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSq5oHIDjKqynE7wVFPHcQo-VurvcGBePl3fx1778nkL7fx4ez19KZ3j382dg",
-      "image_credit": "Consequence of Sound",
-      "news": [
-        {
-          "url": "https://consequence.net/2026/11/red-hot-chili-peppers-rick-rubin-rock-roll-hall-of-fame-performance/",
-          "title": "Red Hot Chili Peppers All Dress as Rick Rubin for Rock & Roll Hall of Fame Performance",
-          "publisher": "Consequence of Sound",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSq5oHIDjKqynE7wVFPHcQo-VurvcGBePl3fx1778nkL7fx4ez19KZ3j382dg"
-        },
-        {
-          "url": "https://ultimateclassicrock.com/red-hot-chili-peppers-rick-rubin-rock-hall-of-fame/",
-          "title": "Red Hot Chili Peppers, Dressed as Rick Rubin, Induct Rick Rubin Into the Hall of Fame",
-          "publisher": "Ultimate Classic Rock",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_Nt9VqP782q3M7EIP78QXM-3TQdkWcIpuK2yaSTnDuxCkA_7ERHD4Pr7ZIZU"
-        },
-        {
-          "url": "https://rockcellarmagazine.com/red-hot-chili-peppers-wear-rick-rubin-costumes-rock-and-roll-hall-of-fame-induction-ceremony/",
-          "title": "Red Hot Chili Peppers Wear Rick Rubin Costumes at Rock Hall of Fame Induction 2026",
-          "publisher": "Rock Cellar Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS63f7T_ypjGSB83lQ3XzXY9VUI1RvAi4yAe3l89Maxw_KPKYVOy2uXcAtsFho"
-        }
-      ]
-    },
-    {
-      "query": "powerball winning numbers nov 14 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T09:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/money/lottery/2026/11/14/powerball-winning-numbers-november-14-2026/92789626007/",
-        "https://www.yahoo.com/news/us/articles/powerball-numbers-tonight-nov-14-030016388.html",
-        "https://www.cincinnati.com/story/news/local/2026/11/14/ohio-lottery-results-saturday-november-14-2026/92792276007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63SkkJq7G3A0u-xkPuNKpXCFO5pZuhDNLCzfLTfuxic3dfdMqhjvGCfuelVk",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/money/lottery/2026/11/14/powerball-winning-numbers-november-14-2026/92789626007/",
-          "title": "Powerball numbers are in for Saturday’s $63M jackpot",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63SkkJq7G3A0u-xkPuNKpXCFO5pZuhDNLCzfLTfuxic3dfdMqhjvGCfuelVk"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/powerball-numbers-tonight-nov-14-030016388.html",
-          "title": "Powerball numbers tonight, Nov. 14? Powerball winning numbers last night",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ44TMtF1Dvb9_X7CrJIIZI-4kvNw8HIPKPTF7_F4TQLueqvITM6xnkKvyW4Yc"
-        },
-        {
-          "url": "https://www.cincinnati.com/story/news/local/2026/11/14/ohio-lottery-results-saturday-november-14-2026/92792276007/",
-          "title": "Ohio Lottery Powerball, Pick 3 Midday winning numbers for Nov. 14, 2026",
-          "publisher": "Cincinnati Enquirer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTusEOVUYPc9oSltPZuIBXlYPhIEk-GLt5J6pCwXl6eu-qx-7sZSWd_HJGhokc"
-        }
-      ]
-    },
-    {
-      "query": "donald trump iran war",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T09:10:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
-        "https://www.bbc.com/news/articles/cq5yny4nl2d3o",
-        "https://www.pbs.org/newshour/video/compass-points/2026/11/as-trump-shifts-iran-strategy-gulf-allies-pursue-diplomacy-with-tehran"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThsLPNYNmd1ZocWTdcx2dFknrLvp1t1rsFvRRYZ7L3HRQ18Ob-FnfzJSuevRI",
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
-          "title": "What's Trump's strategy now with Iran? To keep things as they are",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThsLPNYNmd1ZocWTdcx2dFknrLvp1t1rsFvRRYZ7L3HRQ18Ob-FnfzJSuevRI"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cq5yny4nl2d3o",
-          "title": "US-Iran war: Trump says more US attacks on Iran 'highly unlikely'",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdkuDipdGv_F6nj7ka8l0EntCA6xOaA5Ia5HfQUiCacSPac_BOYdpk3yJY9Rk"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/video/compass-points/2026/11/as-trump-shifts-iran-strategy-gulf-allies-pursue-diplomacy-with-tehran",
-          "title": "As Trump shifts Iran strategy, Gulf allies pursue diplomacy with Tehran - Compass Points",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDIbS3jtuxhoaf2gH1Rj7XDqT0WLrmH9SzH6Wx-NSdnQ0Whvn156myR1fIN8"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 pc release date",
-      "approx_searches": "200+",
-      "published_at": "2026-11-15T09:10:00Z",
-      "related_news_urls": [
-        "https://www.the-independent.com/extras/indybest/gadgets-tech/video-games-consoles/gta-6-pc-nintendo-switch-2-b3084736.html",
-        "https://finance.yahoo.com/video/two-ceo-zelnick-ai-wont-130209253.html",
-        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-pc-release-date"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqCw83O-T50Az-2GmPIYlCO33EtSSINyKJYkGR7siEMzQ2txirbkqmdc8LJ38",
-      "image_credit": "The Independent",
-      "news": [
-        {
-          "url": "https://www.the-independent.com/extras/indybest/gadgets-tech/video-games-consoles/gta-6-pc-nintendo-switch-2-b3084736.html",
-          "title": "Here’s when GTA 6 could come to PC and Nintendo Switch 2",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqCw83O-T50Az-2GmPIYlCO33EtSSINyKJYkGR7siEMzQ2txirbkqmdc8LJ38"
-        },
-        {
-          "url": "https://finance.yahoo.com/video/two-ceo-zelnick-ai-wont-130209253.html",
-          "title": "Take-Two CEO Zelnick: AI Wont Kill Gaming Jobs",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQa-K5X0HPCA2EDIMrOQac9nRERCVy_F0IZ5q5CIwLwmK5PrDdmC4eRXTdD4-A"
-        },
-        {
-          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-pc-release-date",
-          "title": "GTA 6 PC News - Tracking When It Will Release",
-          "publisher": "Mobalytics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6A1vm6VT7zMqssTwp-pwUPMDlwGaj5BVnJRFgs7oSaikTLEkFSdZJP-lreA"
         }
       ]
     }
