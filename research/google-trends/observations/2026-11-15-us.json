@@ -3,12 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-15T12:30:44.851103Z",
+  "checked_at": "2026-11-15T13:01:10.686990Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "week 10 fantasy rankings",
+      "query": "days of our lives",
       "approx_searches": "100+",
+      "published_at": "2026-11-15T12:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/days-lives-sneak-peak-xander-054400236.html",
+        "https://www.soapoperadigest.com/photos/first-look-photos-days-of-our-lives-spoiler-pics-for-the-week-of-november-16/",
+        "https://www.tvfanatic.com/days-of-our-lives-spoilers-for-the-week-of-11-16-26-hide-the-soaps-best-new-story-under-arrests-accusations-and-high-drama/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1TeJxo02ilpG-38IC8V0C7APHCXvepvLoq314f-6Els1JO1_QFW_UoohSdxM",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/days-lives-sneak-peak-xander-054400236.html",
+          "title": "Days of our Lives Sneak Peak: Xander Gets Arrested",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1TeJxo02ilpG-38IC8V0C7APHCXvepvLoq314f-6Els1JO1_QFW_UoohSdxM"
+        },
+        {
+          "url": "https://www.soapoperadigest.com/photos/first-look-photos-days-of-our-lives-spoiler-pics-for-the-week-of-november-16/",
+          "title": "First Look Photos: DAYS Spoiler Pics for the Week of November 16",
+          "publisher": "Soap Opera Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuijUfTwsaqgXTtTJxDowDbGzyp_VkcgXIQy5sjfi_Cq3fZbOaXheVmtEX99M"
+        },
+        {
+          "url": "https://www.tvfanatic.com/days-of-our-lives-spoilers-for-the-week-of-11-16-26-hide-the-soaps-best-new-story-under-arrests-accusations-and-high-drama/",
+          "title": "Days of Our Lives Spoilers for The Week of 11-16-26 Hide The Soap's Best New Story Under Arrests, Accusations, and High Drama",
+          "publisher": "TV Fanatic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh_9PwvatZpUUlLEMDiI4w7HUES37eoitWcP6gLC_dNYx8kAsBleB2vkMQODI"
+        }
+      ]
+    },
+    {
+      "query": "people magazine",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T12:40:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/avril-lavigne-baby-mother-4355bab392d24232d033238c90d77e34",
+        "https://abcnews.com/GMA/Culture/avril-lavigne-announces-birth-1st-child-daughter/story?id=138113798",
+        "https://pagesix.com/celebrity-news/avril-lavgine-relationship-history/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqQ7HLSiXiq_YXOF_PXfjWdiclgE3aVAbsZsHOcRiqdo73MfPva-KK0D9Nmp8",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/avril-lavigne-baby-mother-4355bab392d24232d033238c90d77e34",
+          "title": "A tiny hand, baby Vans and a new chapter for Avril Lavigne: Motherhood",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqQ7HLSiXiq_YXOF_PXfjWdiclgE3aVAbsZsHOcRiqdo73MfPva-KK0D9Nmp8"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/avril-lavigne-announces-birth-1st-child-daughter/story?id=138113798",
+          "title": "Avril Lavigne announces birth of 1st child, a daughter",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD1uzwq8N0Fq-BjluNK1gr_0MVJAAxUqtsPMyRZFFCW7S3OnFSk97bFZPvStg"
+        },
+        {
+          "url": "https://pagesix.com/celebrity-news/avril-lavgine-relationship-history/",
+          "title": "Avril Lavgine's relationship history: From Brody Jenner to Tyga",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzr3M9h7nT_keNOqF-c_SS34y60ylpg0Ko1xXOPV2E_Hx0OpPHIYZX7sF7nF4"
+        }
+      ]
+    },
+    {
+      "query": "guyana",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T12:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-12-2026/card/exxon-partners-to-invest-in-guyana-s-offshore-gas-feLgErlGBTar002y9lsO",
+        "https://corporate.exxonmobil.com/news/news-releases/2026/1112-exxonmobil-advances-next-phase-of-guyana-development-with-longtail",
+        "https://www.imarinenews.com/40798.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-12-2026/card/exxon-partners-to-invest-in-guyana-s-offshore-gas-feLgErlGBTar002y9lsO",
+          "title": "Exxon, Partners to Invest in Guyana’s Offshore Gas",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto"
+        },
+        {
+          "url": "https://corporate.exxonmobil.com/news/news-releases/2026/1112-exxonmobil-advances-next-phase-of-guyana-development-with-longtail",
+          "title": "ExxonMobil advances next phase of Guyana development with Longtail",
+          "publisher": "ExxonMobil",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSn9f9cEpn4Br8C95xFHWz4ybeVFguaoX0NXkHyOSXxEn2-lT-qHbJf6hNeylI"
+        },
+        {
+          "url": "https://www.imarinenews.com/40798.html",
+          "title": "Sixth Fast4Ward® Hull MPF6 Launched at Shanghai Waigaoqiao Shipbuilding",
+          "publisher": "iMarine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGKhq4hn0HJRvwdN3SzrYV3rjpJ71m-eq4bimEC0emwmsUaBVW9GW1YYYQveQ"
+        }
+      ]
+    },
+    {
+      "query": "atp finals 2026",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T12:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50473425/atp-finals-alcaraz-zverev-shelton-tiafoe-jodar-medvedev",
+        "https://www.atptour.com/en/news/zverev-nitto-atp-finals-2026-preview",
+        "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-draw"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiu4Aj5qFZeBUIP7Z2XeDJMPCeNsgHcs-iSA3cHMUmY7ZRFefuc12iG9wbMeg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50473425/atp-finals-alcaraz-zverev-shelton-tiafoe-jodar-medvedev",
+          "title": "ATP Finals preview: Can Alcaraz close out the year with a big win?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiu4Aj5qFZeBUIP7Z2XeDJMPCeNsgHcs-iSA3cHMUmY7ZRFefuc12iG9wbMeg"
+        },
+        {
+          "url": "https://www.atptour.com/en/news/zverev-nitto-atp-finals-2026-preview",
+          "title": "Zverev approaching Turin with 'joy' & playing down favourite talk",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3jIDoVhb2jqvLqMR8SZdSSeW60nPB-wYyf_kxS6rszJgX2bsTTGYlFqjruoI"
+        },
+        {
+          "url": "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-draw",
+          "title": "Zverev, Alcaraz learn Nitto ATP Finals draw fate",
+          "publisher": "Nitto ATP Finals",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWdra4Zdf0ZIAgvaj1bSy1iXffVjWoGA4DPwfMtXW5TIcB07v80eh9PXx2-Ps"
+        }
+      ]
+    },
+    {
+      "query": "nitto atp finals",
+      "approx_searches": "100+",
+      "published_at": "2026-11-15T12:30:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/zverev-jodar-shelton-fils-nitto-atp-finals-2026-day-1-preview",
+        "https://www.nytimes.com/athletic/live-blogs/zverev-vs-jodar-live-updates-atp-finals-2026-score-result/PxQJujhjalus/",
+        "https://www.sportinglife.com/tennis/news/tennis-betting-tips-sundays-atp-finals-preview-and-best-bets/235427"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJnNnLt9S35nyCqeDBXeam4e_AiUqlWvTUR0nF5cpTu02FSuFZ43vSGLqIvo",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/zverev-jodar-shelton-fils-nitto-atp-finals-2026-day-1-preview",
+          "title": "Zverev meets debutant Jodar, Shelton & Fils clash on Day 1 in Turin",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJnNnLt9S35nyCqeDBXeam4e_AiUqlWvTUR0nF5cpTu02FSuFZ43vSGLqIvo"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/zverev-vs-jodar-live-updates-atp-finals-2026-score-result/PxQJujhjalus/",
+          "title": "Zverev vs. Jodar live updates: ATP Finals 2026 latest including start time and predictions",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAjqMML1qp-5Y28_FzhlNPpOyu-EpgQHeYDnFO4A6H05uX6uCwC-M0sxQuW10"
+        },
+        {
+          "url": "https://www.sportinglife.com/tennis/news/tennis-betting-tips-sundays-atp-finals-preview-and-best-bets/235427",
+          "title": "Tennis betting tips: Sunday's ATP Finals preview and best bets",
+          "publisher": "Sporting Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOUWrK-Ryk4s7qlJamlic4uvJ9OTcgPbiHBEp73MNlHcvIWRSHd1N4J1Pai9g"
+        }
+      ]
+    },
+    {
+      "query": "police",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T12:20:00Z",
+      "related_news_urls": [
+        "https://abc7ny.com/post/officials-responding-police-involved-shooting-belt-parkway-brooklyn/20041109/",
+        "https://www.nytimes.com/2026/11/15/nyregion/new-york-police-shooting-brooklyn-van-driver.html",
+        "https://www.nydailynews.com/2026/11/14/nypd-belt-parkway-police-shooting-brooklyn/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf_ijgh6F2hKm5c1ihfrDutOWPAY8dgx3rvfZHhckQBYUz-xtl_4oA7YIL1mU",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/post/officials-responding-police-involved-shooting-belt-parkway-brooklyn/20041109/",
+          "title": "1 dead in police-involved shooting on Belt Parkway in Brooklyn",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf_ijgh6F2hKm5c1ihfrDutOWPAY8dgx3rvfZHhckQBYUz-xtl_4oA7YIL1mU"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/15/nyregion/new-york-police-shooting-brooklyn-van-driver.html",
+          "title": "Police Fatally Shoot Man in Brooklyn After Report of Possible Abduction",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkAPOwfoSB_wp2wRwEXl633-pBu4Ti9zmnZQG1d23G7SL4uq-AbIl9MPgNAms"
+        },
+        {
+          "url": "https://www.nydailynews.com/2026/11/14/nypd-belt-parkway-police-shooting-brooklyn/",
+          "title": "NYPD fatally shoots suspect in potential kidnapping on Belt Parkway in Brooklyn",
+          "publisher": "New York Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYr64g5nEh47F0Uy-RmzSzi-foBmmk9kjjGgUcnfHedQyUSVfsQ86RIRp7vAM"
+        }
+      ]
+    },
+    {
+      "query": "corey kiner",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T12:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/patriots-rb-could-strong-sneaky-114525546.html",
+        "https://www.nytimes.com/athletic/7771117/2026/11/10/fantasy-football-week-9-usage-market-share-report-waivers/",
+        "https://ninernoise.com/forgotten-rb-discarded-by-49ers-impressing-opportunity-with-patriots"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKeLWyDDIYUvW5OxItz_SiFJ-8s4S0hsYwEDEmkx9_N8JN79Hgg78bw970wFE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/patriots-rb-could-strong-sneaky-114525546.html",
+          "title": "Patriots RB could be strong, sneaky Week 10 start in fantasy football",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKeLWyDDIYUvW5OxItz_SiFJ-8s4S0hsYwEDEmkx9_N8JN79Hgg78bw970wFE"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7771117/2026/11/10/fantasy-football-week-9-usage-market-share-report-waivers/",
+          "title": "Fantasy football market share report: It’s Corey Kiner ‘or bust’ ahead of Week 10",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_lZ8wUGPWbbapR6dYxEQ_8wsbe9r0I7SBL_MdZaqlXAuf5vQPeu6alV4jw68"
+        },
+        {
+          "url": "https://ninernoise.com/forgotten-rb-discarded-by-49ers-impressing-opportunity-with-patriots",
+          "title": "Forgotten RB discarded by 49ers is impressing in his opportunity with Patriots",
+          "publisher": "Niner Noise",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrTFfx1JFJYgs2yCkit5O96B8p8KGfegxjA-TOxgvCx0Z5UIdMJ6Q1LPEYrHQ"
+        }
+      ]
+    },
+    {
+      "query": "howard lutnick",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T12:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+        "https://www.cnn.com/2026/11/15/politics/lutnick-jensen-alice-huang-trump-nvidia",
+        "https://www.economist.com/united-states/2026/11/13/the-jensen-huang-scandal-reaches-donald-trumps-cabinet"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDtrjZheUqxizbR67bPEjU9UIkwPxhRv4sERBSZc3kH9OlH1Z8q07DzpnnGhE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+          "title": "Lutnick Pushed to Weaken Chip Rules That Overlap With His Family Business",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDtrjZheUqxizbR67bPEjU9UIkwPxhRv4sERBSZc3kH9OlH1Z8q07DzpnnGhE"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/15/politics/lutnick-jensen-alice-huang-trump-nvidia",
+          "title": "Lutnick under fire: How Trump’s commerce secretary cultivated Nvidia’s CEO while chip controls slipped",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4uTobBMisEMs-1Bq-_Bh_u1P_rZqfc5jgDco9yCmVJyzrk6Ljc7zk2puJ9tQ"
+        },
+        {
+          "url": "https://www.economist.com/united-states/2026/11/13/the-jensen-huang-scandal-reaches-donald-trumps-cabinet",
+          "title": "The Jensen Huang scandal reaches Donald Trump’s cabinet",
+          "publisher": "The Economist",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEgA_1R3OOvNNwyZeHMAUvTa_xfBeCjcviewPjta0-Y79sF2z_lZOlTZMdi4E"
+        }
+      ]
+    },
+    {
+      "query": "week 10 fantasy rankings",
+      "approx_searches": "200+",
       "published_at": "2026-11-15T12:10:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/week-10-fantasy-rankings-patrick-113113700.html",
@@ -42,97 +322,8 @@
       ]
     },
     {
-      "query": "allison janney",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T12:10:00Z",
-      "related_news_urls": [
-        "https://faroutmagazine.co.uk/1994-allison-janney-performed-on-stage/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAZgBK9BeyteSYnInPZG5yUZHn5EpS0Xrg6GcBr5K-TKHjPli9356gEjev1Ko",
-      "image_credit": "Far Out Magazine",
-      "news": [
-        {
-          "url": "https://faroutmagazine.co.uk/1994-allison-janney-performed-on-stage/",
-          "title": "One night in 1994, the domino effect that launched Alison Janney’s career began",
-          "publisher": "Far Out Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAZgBK9BeyteSYnInPZG5yUZHn5EpS0Xrg6GcBr5K-TKHjPli9356gEjev1Ko"
-        }
-      ]
-    },
-    {
-      "query": "emily ratajkowski",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T12:10:00Z",
-      "related_news_urls": [
-        "https://www.hellomagazine.com/us/935030/sizzling-emily-ratajkowski-wore-two-naked-dresses-in-one-night/",
-        "https://deadline.com/2026/11/emily-ratajkowski-joins-still-we-met-mary-beth-barone-1237219464/",
-        "https://www.yahoo.com/entertainment/movies/articles/emily-ratajkowski-lena-dunham-reunite-200455052.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ28ccXUsBMty_IxrOpeNLdgCIeqcH8Iogkow3-QxdxcYJ9bsnQkn6-8Ko_0xk",
-      "image_credit": "HELLO!",
-      "news": [
-        {
-          "url": "https://www.hellomagazine.com/us/935030/sizzling-emily-ratajkowski-wore-two-naked-dresses-in-one-night/",
-          "title": "Sizzling Emily Ratajkowski wore two naked dresses in one night and everyone forgot",
-          "publisher": "HELLO!",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ28ccXUsBMty_IxrOpeNLdgCIeqcH8Iogkow3-QxdxcYJ9bsnQkn6-8Ko_0xk"
-        },
-        {
-          "url": "https://deadline.com/2026/11/emily-ratajkowski-joins-still-we-met-mary-beth-barone-1237219464/",
-          "title": "Emily Ratajkowski Joins Mary Beth Barone & Joe Alwyn In Rom-Com ‘Still We Met’",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRgu-BgqfjME12XyWbga66TQVE9QlhdUglIFNLWdYECcqR88TSfLqWjgOtNV4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/emily-ratajkowski-lena-dunham-reunite-200455052.html",
-          "title": "Emily Ratajkowski & Lena Dunham Reunite for New Movie With a Personal Story",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAtptkTkK13cehnhN3DYwKmjURZr36AzoGqFmTuC17wxELp7wrjC2TEN3NUaM"
-        }
-      ]
-    },
-    {
-      "query": "catalina fernández gómez",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T12:10:00Z",
-      "related_news_urls": [
-        "https://as.com/tikitakas/famosos/muere-catalina-fernandez-a-los-25-anos-f202611-n/",
-        "https://www.univision.com/famosos/muere-querida-actriz-colombiana-a-los-25-anos-documento-su-lucha-contra-agresiva-enfermedad-video",
-        "https://www.caracoltv.com/actualidad/que-tipo-de-cancer-padecio-cata-fernandez-actriz-e-influencer-que-murio-a-los-24-anos-ed45"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaUr76Eund_217pOEgqqhvpB0wGPgMJtpVU88jhDnbjMtce-zwPFIt6uLQk6U",
-      "image_credit": "Diario AS",
-      "news": [
-        {
-          "url": "https://as.com/tikitakas/famosos/muere-catalina-fernandez-a-los-25-anos-f202611-n/",
-          "title": "Muere Catalina Fernández a los 25 años",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaUr76Eund_217pOEgqqhvpB0wGPgMJtpVU88jhDnbjMtce-zwPFIt6uLQk6U"
-        },
-        {
-          "url": "https://www.univision.com/famosos/muere-querida-actriz-colombiana-a-los-25-anos-documento-su-lucha-contra-agresiva-enfermedad-video",
-          "title": "Muere querida actriz colombiana a los 25 años: documentó su lucha contra agresiva enfermedad",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-3ARXMdYsUSTJAxY83dTyXwJ9s50CdlkUaQILHFr9nzDkaXvjujr2ziom7gw"
-        },
-        {
-          "url": "https://www.caracoltv.com/actualidad/que-tipo-de-cancer-padecio-cata-fernandez-actriz-e-influencer-que-murio-a-los-24-anos-ed45",
-          "title": "Qué tipo de cáncer padeció Cata Fernández, actriz e influencer que murió a los 24 años",
-          "publisher": "Caracol TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4mCCBgKCRY5GsJ7AcEnxf-Ufp6LyKMNYp4QR7euJvu2SSYAaFc21pm38DsCs"
-        }
-      ]
-    },
-    {
       "query": "nfl week 10",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-15T12:10:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
@@ -162,181 +353,6 @@
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdp795rYhp7mCrexHZrgTd2QEtar7Sn0ZVLUZL_o5SoO0-i0Cq9kwr8NIHif8"
-        }
-      ]
-    },
-    {
-      "query": "dp world tour",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T12:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/golf/live/cwe85dg7g7lyt",
-        "https://www.wral.com/news/ap/753d2-mcilroy-overhauls-chacarra-to-win-season-long-race-to-dubai-title-for-record-tying-8th-time/",
-        "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7nHiWA83IhrVCOvvuLOEp67dWf4ZJ3u7QkpBBcQasE-3lIM6lZGfA9LFWSQk",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/golf/live/cwe85dg7g7lyt",
-          "title": "Rory McIlroy at DP World Tour Championship in Dubai trying to equal Colin Montgomerie's record",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7nHiWA83IhrVCOvvuLOEp67dWf4ZJ3u7QkpBBcQasE-3lIM6lZGfA9LFWSQk"
-        },
-        {
-          "url": "https://www.wral.com/news/ap/753d2-mcilroy-overhauls-chacarra-to-win-season-long-race-to-dubai-title-for-record-tying-8th-time/",
-          "title": "McIlroy overhauls Chacarra to win season-long Race to Dubai title for record-tying 8th time",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQl6NCHO1krfIuC_PxlGAW1O1FWzbzp8MVEkWBhK_tYLdiUU4pvU4Te93I5AA"
-        },
-        {
-          "url": "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool",
-          "title": "Here’s the prize money payout for the DP World Tour's 2026 Race to Dubai bonus pool",
-          "publisher": "Golf Digest",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2exYDwaMKwG87VL0yNg4XzAIv4s_uLzaE9_yLzb8DzqQmhFXmBpKSAUwzNyY"
-        }
-      ]
-    },
-    {
-      "query": "amon ra st brown",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T12:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
-        "https://www.detroitlions.com/news/notebook-st-brown-excited-to-play-in-germany-goff-hutchinson-sewell",
-        "https://www.nytimes.com/athletic/7779846/2026/11/13/lions-munich-amon-ra-st-brown-patriots/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqLgsQkjMhrba8o_2orzMzchGNcvdWCoPd95LTMw_gh7PfnfvJuzhDNALN1MQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
-          "title": "Untold stories of Detroit Lions WR Amon-Ra St. Brown's German upbringing",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqLgsQkjMhrba8o_2orzMzchGNcvdWCoPd95LTMw_gh7PfnfvJuzhDNALN1MQ"
-        },
-        {
-          "url": "https://www.detroitlions.com/news/notebook-st-brown-excited-to-play-in-germany-goff-hutchinson-sewell",
-          "title": "NOTEBOOK: Playing in Germany 'a dream come true' for St. Brown",
-          "publisher": "Detroit Lions",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ljlNM16NrtPP5FztgONqlddw5f2YR6p1SuJ8DZbZACpHI7xmMb8l4dKaiJI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7779846/2026/11/13/lions-munich-amon-ra-st-brown-patriots/",
-          "title": "Lions’ Amon-Ra St. Brown takes center stage in Munich in a special kind of homecoming",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaAIyCEh6tdJ64Yh3GAo9X6132KIi2x3gSkQ_9x_GsOQPIl4X7U95Wg_biPPA"
-        }
-      ]
-    },
-    {
-      "query": "alabama football sec tiebreakers",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T12:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/alabama/article/updated-scenarios-for-alabama-to-make-sec-championship-game-after-beating-vanderbilt-292762090/",
-        "https://sports.yahoo.com/articles/sec-standings-reveal-frontrunners-last-110500947.html",
-        "https://www.on3.com/teams/tennessee-volunteers/news/tennessee-football-sec-championship-game-tiebreaker-scenarios-standings/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA4o1ocsVAWFVklcfq4OhJVXKPD3dtdifkZk-yyVpGP09w3SNQb1FpcPjOro0",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/alabama/article/updated-scenarios-for-alabama-to-make-sec-championship-game-after-beating-vanderbilt-292762090/",
-          "title": "Updated scenarios for Alabama to make SEC championship game after beating Vanderbilt",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA4o1ocsVAWFVklcfq4OhJVXKPD3dtdifkZk-yyVpGP09w3SNQb1FpcPjOro0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/sec-standings-reveal-frontrunners-last-110500947.html",
-          "title": "SEC standings update reveal frontrunners for the last SEC title game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjbyFZt0J1yJ9JpGHrZFXSE1fRIL_rw8snZCIBpUmIgDyZBd_lmrc8KGbGHHY"
-        },
-        {
-          "url": "https://www.on3.com/teams/tennessee-volunteers/news/tennessee-football-sec-championship-game-tiebreaker-scenarios-standings/",
-          "title": "How Tennessee football can reach final SEC Championship Game in 2026",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvJ422GvsMDEixsR9x4u4sJQwmij3sRABZbj06--s5JPYofjv2YCuDWIgj-jM"
-        }
-      ]
-    },
-    {
-      "query": "ny islanders",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T12:00:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/new-york-islanders-anaheim-ducks-game-recap-november-14-2026",
-        "https://www.espn.com/video/clip/_/id/50487846/simon-holmstrom-hat-trick-propels-islanders-victory",
-        "https://sports.yahoo.com/articles/takeaways-ducks-6-2-loss-064731161.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXR7M7fPtG4CJZML5qWjkClY7RgboUVS0zMmMvuhhe2IX0LxJ-uUEVo-_LE6I",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/new-york-islanders-anaheim-ducks-game-recap-november-14-2026",
-          "title": "Holmstrom scores first career hat trick, Islanders cruise past Ducks",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXR7M7fPtG4CJZML5qWjkClY7RgboUVS0zMmMvuhhe2IX0LxJ-uUEVo-_LE6I"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50487846/simon-holmstrom-hat-trick-propels-islanders-victory",
-          "title": "Simon Holmstrom's hat trick propels Islanders to victory",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnfI0V_ugeHdKNEgbK5uGxQFUwaR-mEt2CKK9_cWnqPkaAO6QYtNWJkbezYEo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/takeaways-ducks-6-2-loss-064731161.html",
-          "title": "Takeaways from the Ducks 6-2 Loss to the Islanders",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJLQqbAI2HZgUCHDm_5xf7MDGQWAp1AgZsAZ0qIibyuhqCpVaF4906Q-SBng0"
-        }
-      ]
-    },
-    {
-      "query": "patriots injury report",
-      "approx_searches": "100+",
-      "published_at": "2026-11-15T11:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50462045/fantasy-football-injuries-nfl-week-10-inactive-active",
-        "https://sports.yahoo.com/fantasy/article/nfl-injury-tracker-week-10-latest-news-fantasy-implications-as-patriots-aj-brown-ankleknee-and-chiefs-kenneth-walker-iii-groin-questionable-deshaun-watson-to-start-for-browns-202543511.html",
-        "https://www.fantasypoints.com/nfl/articles/2026/hansens-hints-2026-nfl-week-10-fantasy-breakdown"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCgXo-YY-2aHTsIROaAn2jPc7jJz-zsaCccvDtYvbVvglFIxSRQSaw12wzp64",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50462045/fantasy-football-injuries-nfl-week-10-inactive-active",
-          "title": "Fantasy football Week 10 inactives: Who's in and who's out?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCgXo-YY-2aHTsIROaAn2jPc7jJz-zsaCccvDtYvbVvglFIxSRQSaw12wzp64"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/article/nfl-injury-tracker-week-10-latest-news-fantasy-implications-as-patriots-aj-brown-ankleknee-and-chiefs-kenneth-walker-iii-groin-questionable-deshaun-watson-to-start-for-browns-202543511.html",
-          "title": "NFL injury tracker Week 10: Latest news, fantasy implications as Patriots’ A.J. Brown (ankle/knee) progressing, 49ers’ Mike Evans (Achilles) 'getting real close,' Deshaun Watson to",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4xcjXMChE4N4DEG5XuKs6-3WkmjbqgvlZJNSQwW-sOhjQSHYtDXVDw3eIM5o"
-        },
-        {
-          "url": "https://www.fantasypoints.com/nfl/articles/2026/hansens-hints-2026-nfl-week-10-fantasy-breakdown",
-          "title": "Hansen's Hints: 2026 NFL Week 10 Fantasy Breakdown",
-          "publisher": "Fantasy Points",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdNKFPOKD88CkPFe1IzJBamp2K3SVLIKHbdfxXNSaw1LqDS6CsNpPtc3oRxQg"
         }
       ]
     }
