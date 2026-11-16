@@ -3,17 +3,192 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T18:31:20.751325Z",
+  "checked_at": "2026-11-16T19:01:20.043556Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "tara harding ford bronco purchase",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T18:40:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/woman-buys-ford-bronco-drives-27-hours-home-flights-grounded/",
+        "https://www.kfyrtv.com/2026/11/15/north-dakota-women-resort-buying-vehicle-get-home-after-faa-grounded-flights/",
+        "https://www.yahoo.com/news/videos/woman-buys-ford-bronco-drive-152619006.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW2H3xgKpzjcIlKGN02_zuVghr3t7OmjmObIPLZBzGnPbeSJbjJVRofw0A5Q8",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/woman-buys-ford-bronco-drives-27-hours-home-flights-grounded/",
+          "title": "North Dakota woman buys Ford Bronco, drives 27 hours home after flights grounded",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW2H3xgKpzjcIlKGN02_zuVghr3t7OmjmObIPLZBzGnPbeSJbjJVRofw0A5Q8"
+        },
+        {
+          "url": "https://www.kfyrtv.com/2026/11/15/north-dakota-women-resort-buying-vehicle-get-home-after-faa-grounded-flights/",
+          "title": "North Dakota women resort to buying a vehicle to get home after FAA grounded flights",
+          "publisher": "KFYR-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtEB7p9nnDPCzLsRdr-bFteqladVfr0BEzgq5EpL4m5TY8ZyptgH-ILjieDOs"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/woman-buys-ford-bronco-drive-152619006.html",
+          "title": "Woman buys Ford Bronco to drive home after ground stop",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjmOIJH36Jde7hliI_7ZtDKWtro1acBDu0FmDMmh8sUMKa1Si3MhzSTBAiMEM"
+        }
+      ]
+    },
+    {
+      "query": "uscis prior approval deference removal",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T18:30:00Z",
+      "related_news_urls": [
+        "https://timesofindia.indiatimes.com/technology/tech-news/us-government-is-proposing-one-sentence-change-in-uscis-rules-that-would-change-every-h-1b-visa-extension-form-with-thousands-losing-their-approval/articleshow/135886323.cms",
+        "https://www.rnlawgroup.com/dhs-proposes-to-end-deference-to-prior-approvals-on-h-1b-and-other-i-129-extensions/",
+        "https://www.newsbytesapp.com/news/world/us-proposes-new-review-rules-for-h-1b-and-other-visas/tldr"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS15cg7eA0tyAFeMXeixvfiN8FjYDtISAHdwiyKsVAxBoMp6Oef3VpUfqqRh-k",
+      "image_credit": "The Times of India",
+      "news": [
+        {
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/us-government-is-proposing-one-sentence-change-in-uscis-rules-that-would-change-every-h-1b-visa-extension-form-with-thousands-losing-their-approval/articleshow/135886323.cms",
+          "title": "US government is proposing one sentence change in USCIS rules that would change every H-1B visa extension",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS15cg7eA0tyAFeMXeixvfiN8FjYDtISAHdwiyKsVAxBoMp6Oef3VpUfqqRh-k"
+        },
+        {
+          "url": "https://www.rnlawgroup.com/dhs-proposes-to-end-deference-to-prior-approvals-on-h-1b-and-other-i-129-extensions/",
+          "title": "DHS Proposes to End Deference to Prior Approvals on H-1B and Other I-129 Extensions",
+          "publisher": "Reddy Neumann Brown PC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyNqhqD7Ay-K-phOjk4c1YrMRU9EMRNoWHyiMcCUBbDB46tVhb5J1tZVlQ3p4"
+        },
+        {
+          "url": "https://www.newsbytesapp.com/news/world/us-proposes-new-review-rules-for-h-1b-and-other-visas/tldr",
+          "title": "US proposes new review rules for H-1B and other visas",
+          "publisher": "NewsBytes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxj4q08KU1ESZJGMG-tIOJ381eiFCjWPDIhUhBdjRMHlcmPeq8crRb8ds4J9I"
+        }
+      ]
+    },
+    {
+      "query": "ncaa soccer tournament",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T18:30:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/soccer-men/article/2026-11-09/2026-di-mens-soccer-championship-selection-show-info-bracket-schedule",
+        "https://portlandpilots.com/news/2026/11/15/no-6-pilots-mens-soccer-to-host-selection-show-watch-party-monday-at-the-pilot-house.aspx",
+        "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-mens-soccer-ncaa-tournament-selection-host-site-portland-pilots-cal-bears-292851386/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQErlArtmDeDERqGWi6zn30n9fMTcUtraV07-Qn_c8GxSwlUlBKffvtiEBaUuQ",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/soccer-men/article/2026-11-09/2026-di-mens-soccer-championship-selection-show-info-bracket-schedule",
+          "title": "2026 DI men's soccer championship: Selection show info, bracket, schedule",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQErlArtmDeDERqGWi6zn30n9fMTcUtraV07-Qn_c8GxSwlUlBKffvtiEBaUuQ"
+        },
+        {
+          "url": "https://portlandpilots.com/news/2026/11/15/no-6-pilots-mens-soccer-to-host-selection-show-watch-party-monday-at-the-pilot-house.aspx",
+          "title": "No. 6 Pilots Men's Soccer to Host Selection Show Watch Party Monday at the Pilot House!",
+          "publisher": "University of Portland Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZOZBoC5jG9CJXN0EtD_6xRRh-gsDK9iw-8Tc88HCwQH4_WdjhDVb73kUAT80"
+        },
+        {
+          "url": "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-mens-soccer-ncaa-tournament-selection-host-site-portland-pilots-cal-bears-292851386/",
+          "title": "Gamecocks men's soccer earns bye, NCAA Tournament host site",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu6WeybCfPhPAwVsQ51TKY3Fs3GIISXX2dxPH9sv2hnwQNsjzCG4CtbYUH2so"
+        }
+      ]
+    },
+    {
+      "query": "john summit tour bus",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T18:30:00Z",
+      "related_news_urls": [
+        "https://www.wcjb.com/2026/11/16/musician-tour-bus-involved-deadly-crash-marion-county/",
+        "https://www.wesh.com/article/ocala-driver-killed-tour-bus-crash-marion-county/74442241",
+        "https://www.wftv.com/news/local/ocala-man-dies-after-car-crashes-into-tour-bus-marion-county/XTDQUWX2IZDFHOGVPYSG75HSXE/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsuoiU5KSy7KWgxOblFXV44F-7Zeyr0h_YRTknv8XnuXCqBqIBbTdvWWrHwSY",
+      "image_credit": "WCJB",
+      "news": [
+        {
+          "url": "https://www.wcjb.com/2026/11/16/musician-tour-bus-involved-deadly-crash-marion-county/",
+          "title": "Musician tour bus involved in deadly crash in Marion County",
+          "publisher": "WCJB",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsuoiU5KSy7KWgxOblFXV44F-7Zeyr0h_YRTknv8XnuXCqBqIBbTdvWWrHwSY"
+        },
+        {
+          "url": "https://www.wesh.com/article/ocala-driver-killed-tour-bus-crash-marion-county/74442241",
+          "title": "Driver killed after car slams into tour bus in Marion County, FHP says",
+          "publisher": "WESH",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_abJnzrJ8s0SWNeijr-c0gJLQVzecavyDWnG_UJ5GKwNkKmaBQcZVho4tQDQ"
+        },
+        {
+          "url": "https://www.wftv.com/news/local/ocala-man-dies-after-car-crashes-into-tour-bus-marion-county/XTDQUWX2IZDFHOGVPYSG75HSXE/",
+          "title": "Ocala man dies after car crashes into tour bus in Marion County",
+          "publisher": "WFTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4rEFN5knciEPcnrEySr4fhKuo1pbW0XzDLbEgTULAwn_QT89cWE3oLQ1eyZU"
+        }
+      ]
+    },
+    {
+      "query": "ap top 25 basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T18:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/womens-college-basketball/story/_/id/50502552/louisville-no-3-women-ap-poll-beating-uconn",
+        "https://sports.yahoo.com/womens-college-basketball/breaking-news/article/womens-basketball-ap-poll-south-carolina-solidifies-no-1-ranking-with-win-over-usc-as-uconn-stumbles-again-170547619.html",
+        "https://www.courier-journal.com/story/sports/college/basketball/2026/11/16/louisville-kentucky-womens-basketball-rankings-ap-top-25-coaches-poll-uofl-uk/92584867007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BVwZM6rJbxeHdbc4VzJgpSvtU93TjZdCkGSL2T5LKWhM63aZ_Bk-YBDJzeQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50502552/louisville-no-3-women-ap-poll-beating-uconn",
+          "title": "Louisville No. 3 in women's AP Top 25 after UConn win; South Carolina still tops",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BVwZM6rJbxeHdbc4VzJgpSvtU93TjZdCkGSL2T5LKWhM63aZ_Bk-YBDJzeQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/womens-college-basketball/breaking-news/article/womens-basketball-ap-poll-south-carolina-solidifies-no-1-ranking-with-win-over-usc-as-uconn-stumbles-again-170547619.html",
+          "title": "Women's basketball AP poll: South Carolina solidifies No. 1 ranking with win over USC as UConn stumbles again",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfTwDt2tJ1l47nUn-Oq174xdIVOTykqpT_aL2H3z9NOZTkTDEKOmO7rbWMhNs"
+        },
+        {
+          "url": "https://www.courier-journal.com/story/sports/college/basketball/2026/11/16/louisville-kentucky-womens-basketball-rankings-ap-top-25-coaches-poll-uofl-uk/92584867007/",
+          "title": "Where are Louisville, Kentucky in latest women's basketball rankings?",
+          "publisher": "The Courier-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvbfttheFHzAfjcYbgOCRl0yefdp0_7W42qG2M53n_js5l9RlY5NoRZ-53as"
+        }
+      ]
+    },
     {
       "query": "fema nationwide emergency test date",
       "approx_searches": "1000+",
       "published_at": "2026-11-16T18:00:00Z",
       "related_news_urls": [
         "https://www.hstoday.us/subject-matter-areas/emergency-preparedness/fema-and-fcc-schedule-2026-nationwide-test-of-the-emergency-alert-system-for-november-17/",
-        "https://www.houstonchronicle.com/news/houston-texas/trending/article/nationwide-emergency-alert-system-test-fema-fcc-22532221.php",
-        "https://www.nbcchicago.com/news/local/what-is-happening-on-nov-17-what-to-expect-as-fema-prepares-for-nationwide-test/4017342/"
+        "https://www.nbcdfw.com/news/local/nationwide-emergency-alert-test-coming-tuesday-but-it-wont-buzz-your-phone-heres-why/4106800/",
+        "https://www.newsobserver.com/news/local/article318100501.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbTEwJwmvg_nmRfqV-R2R723nhDPPBQ9RInq42z-UGDe6TsTJTSgsnINwEt0k",
       "image_credit": "Homeland Security Today",
@@ -26,81 +201,46 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbTEwJwmvg_nmRfqV-R2R723nhDPPBQ9RInq42z-UGDe6TsTJTSgsnINwEt0k"
         },
         {
-          "url": "https://www.houstonchronicle.com/news/houston-texas/trending/article/nationwide-emergency-alert-system-test-fema-fcc-22532221.php",
-          "title": "Nationwide emergency alert test planned this week. What Texans should know.",
-          "publisher": "Houston Chronicle",
+          "url": "https://www.nbcdfw.com/news/local/nationwide-emergency-alert-test-coming-tuesday-but-it-wont-buzz-your-phone-heres-why/4106800/",
+          "title": "Tuesday's nationwide emergency alert test won't buzz your phone. Here's why",
+          "publisher": "NBC 5 Dallas-Fort Worth",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9qvhkbnsej-XSFq_lqoawyMObCXtMe2KVdmw6uENaly7l0mLp_rQDa2gOpeU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSrhPtieoj9ws9zt6cTqIREPtnlZj1g94oEqy_Cl6A9C2O-5-S65mfIoO-wuc"
         },
         {
-          "url": "https://www.nbcchicago.com/news/local/what-is-happening-on-nov-17-what-to-expect-as-fema-prepares-for-nationwide-test/4017342/",
-          "title": "What is happening on Nov. 17? What to expect as FEMA prepares for nationwide test",
-          "publisher": "NBC 5 Chicago",
+          "url": "https://www.newsobserver.com/news/local/article318100501.html",
+          "title": "You may get an emergency test message on your devices soon. What to know in NC",
+          "publisher": "Raleigh News & Observer",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbi3WJ_JoVu6setyEKd1zTV-Z2wnIrHQCVfSC6awXYGNFOCldORwq7R9xhxRE"
-        }
-      ]
-    },
-    {
-      "query": "ap top 25 basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T18:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/womens-college-basketball/story/_/id/50502552/louisville-no-3-women-ap-poll-beating-uconn",
-        "https://www.courier-journal.com/story/sports/college/basketball/2026/11/16/louisville-kentucky-womens-basketball-rankings-ap-top-25-coaches-poll-uofl-uk/92584867007/",
-        "https://www.cbssports.com/womens-college-basketball/news/womens-college-basketball-power-rankings-south-carolina-michigan-usc-uconn/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW-gVU5lYBLH2D4T0CAQVm2OZoRjNSh4u-oRYNA3X6xzpITJbNMGubnxAAjgc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50502552/louisville-no-3-women-ap-poll-beating-uconn",
-          "title": "Louisville No. 3 in women's AP Top 25 after UConn win; South Carolina still tops",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW-gVU5lYBLH2D4T0CAQVm2OZoRjNSh4u-oRYNA3X6xzpITJbNMGubnxAAjgc"
-        },
-        {
-          "url": "https://www.courier-journal.com/story/sports/college/basketball/2026/11/16/louisville-kentucky-womens-basketball-rankings-ap-top-25-coaches-poll-uofl-uk/92584867007/",
-          "title": "Where are Louisville, Kentucky in latest women's basketball rankings?",
-          "publisher": "The Courier-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvbfttheFHzAfjcYbgOCRl0yefdp0_7W42qG2M53n_js5l9RlY5NoRZ-53as"
-        },
-        {
-          "url": "https://www.cbssports.com/womens-college-basketball/news/womens-college-basketball-power-rankings-south-carolina-michigan-usc-uconn/",
-          "title": "Women's college basketball Power Rankings: South Carolina holds top spot, UConn falls after loss to Michigan",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK-lqzNpLFYwXR8LFanpvwAlHvzWUdphBN8eKtkkVQIwZhV_PEOrp6Wj0vybM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKL1pc1YOv7O8wIc8b-gOUy2Mernk2-S5yU6ZAFE-BgDZgSD5NS8dMYF2DQHw"
         }
       ]
     },
     {
       "query": "college basketball rankings",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T18:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50493491/ap-mens-top-25-poll-reaction-2026-27-week-2",
-        "https://www.cbssports.com/college-basketball/news/college-basketball-rankings-ap-top-25-poll-michigan-state-duke-kentucky-lsu/",
+        "https://www.espn.com/mens-college-basketball/story/_/id/50503030/michigan-state-no-2-ap-men-poll-florida",
+        "https://sports.yahoo.com/articles/michigan-state-rises-no-2-182306533.html",
         "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtKGNN2WUF0oJd4alzMay8QUhpMb0M7XxNYw2sNug2YT0C7pn0PxgEAX0Zhs",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSal1SedW6uqeo37T2mLVqtoPY2Chdz5-AAZljhSCKEX2P95t0AadzQUGOx_c4",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50493491/ap-mens-top-25-poll-reaction-2026-27-week-2",
-          "title": "Breaking down the men's 2026-27 AP week 2 Top 25 basketball poll",
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50503030/michigan-state-no-2-ap-men-poll-florida",
+          "title": "Michigan State up to No. 2 in AP men's poll behind Florida",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtKGNN2WUF0oJd4alzMay8QUhpMb0M7XxNYw2sNug2YT0C7pn0PxgEAX0Zhs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSal1SedW6uqeo37T2mLVqtoPY2Chdz5-AAZljhSCKEX2P95t0AadzQUGOx_c4"
         },
         {
-          "url": "https://www.cbssports.com/college-basketball/news/college-basketball-rankings-ap-top-25-poll-michigan-state-duke-kentucky-lsu/",
-          "title": "College basketball rankings: Michigan State jumps in AP Top 25 after win vs. Duke; Kentucky drops out of poll",
-          "publisher": "CBS Sports",
+          "url": "https://sports.yahoo.com/articles/michigan-state-rises-no-2-182306533.html",
+          "title": "Michigan State Rises to No. 2 After Beating Duke",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIxKAhStNWN18a77Wuj4foU4UB_bnSqUGw0zNAcGO2gcuGlD2PBlS_Mn4tBTE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyWHBhvy_Pzwj3vxOJVTGWx8uEPRGt1zBQnId_QSZy8VbEua8oAG4RWZ9WbI8"
         },
         {
           "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after",
@@ -108,41 +248,6 @@
           "publisher": "NCAA.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxTlVSV8YXdJYx5w1tprDqJKbthwTJ7CgHRlmDNxVwXUVb98rS0lo22BJTT6k"
-        }
-      ]
-    },
-    {
-      "query": "chase",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-16T17:50:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/videos/ja-marr-chase-s-best-plays-from-231-yard-game-vs-steelers-week-10",
-        "https://sports.yahoo.com/articles/bengals-star-sends-clear-message-164915984.html",
-        "https://www.bengals.com/video/ja-marr-chase-top-plays-steelers-2026-week-10-sunday-night-football-highlights"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCYlxXrS-gIWHLCQ5WlIt8v1QHZP_8dOEtPaq1cfT8p5eD4571I51qzljqAec",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/videos/ja-marr-chase-s-best-plays-from-231-yard-game-vs-steelers-week-10",
-          "title": "Ja'Marr Chase's best plays from 231-yard game vs. Steelers | Week 10",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCYlxXrS-gIWHLCQ5WlIt8v1QHZP_8dOEtPaq1cfT8p5eD4571I51qzljqAec"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/bengals-star-sends-clear-message-164915984.html",
-          "title": "Bengals Star Sends Clear Message to Ja’Marr Chase, Tee Higgins After Steelers Win",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO6wMsamLtsXe3KoaW5tsjQGxZrP8iZwtjH82o0yyufMzHv2MLYxOH8DJp1No"
-        },
-        {
-          "url": "https://www.bengals.com/video/ja-marr-chase-top-plays-steelers-2026-week-10-sunday-night-football-highlights",
-          "title": "Ja'Marr Chase's Top Plays From White Bengal 2026 Against Steelers | 2026 HIGHLIGHTS",
-          "publisher": "Cincinnati Bengals",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbiFI2Y2MYu5psqgotgBcXU7yDdxcNiv6PlOEiHvxih9jVllzvcytlRDWyZ0E"
         }
       ]
     },
@@ -186,26 +291,26 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-16T17:40:00Z",
       "related_news_urls": [
-        "https://www.hollywoodreporter.com/music/music-news/john-summit-blasts-grammys-after-snub-1236756281/",
         "https://variety.com/2026/music/news/john-summit-calls-out-grammys-after-no-nominations-1236949004/",
+        "https://www.yahoo.com/entertainment/music/articles/dj-john-summit-slams-grammys-150012702.html",
         "https://www.billboard.com/music/awards/john-summit-never-submitting-grammys-again-dance-category-joke-1236382922/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV-j4D6QIgzMPVqFpAR7VkxSR1Fxn93kf9rsnvpb_ptBvnR-xzsS6PJzRYbE4",
-      "image_credit": "The Hollywood Reporter",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9c31GHpo9pPF1CVkUs_v3naaiASNn5Ugzb0kXPmrHs2GvGqBYIbbiNXxxI1Y",
+      "image_credit": "Variety",
       "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/music/music-news/john-summit-blasts-grammys-after-snub-1236756281/",
-          "title": "John Summit Blasts Grammys After Dance Snub: “It’s All a F***ing Joke”",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV-j4D6QIgzMPVqFpAR7VkxSR1Fxn93kf9rsnvpb_ptBvnR-xzsS6PJzRYbE4"
-        },
         {
           "url": "https://variety.com/2026/music/news/john-summit-calls-out-grammys-after-no-nominations-1236949004/",
           "title": "John Summit Calls Out the Grammys After Receiving No Nominations",
           "publisher": "Variety",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9c31GHpo9pPF1CVkUs_v3naaiASNn5Ugzb0kXPmrHs2GvGqBYIbbiNXxxI1Y"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/articles/dj-john-summit-slams-grammys-150012702.html",
+          "title": "DJ John Summit Slams the Grammys for Ignoring ‘Real Electronic Dance Music,’ Vows to Stop Submitting",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqML3Ikjq_vLF1PXLJ_4OJY8XPPS0u17lKqWSE0bb5Na2u4Uq6L8sNmgake4g"
         },
         {
           "url": "https://www.billboard.com/music/awards/john-summit-never-submitting-grammys-again-dance-category-joke-1236382922/",
@@ -218,16 +323,23 @@
     },
     {
       "query": "us employment based green card proposal",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-16T17:40:00Z",
       "related_news_urls": [
+        "https://www.washingtonpost.com/immigration/2026/11/16/trump-administration-proposes-restrictions-employer-sponsored-green-cards/",
         "https://news.bloomberglaw.com/daily-labor-report/dol-plan-overhauls-rules-to-sponsor-foreign-worker-green-cards",
-        "https://www.bloomberg.com/news/articles/2026-11-16/us-proposes-tighter-rules-for-employer-sponsored-green-cards",
         "https://www.fragomen.com/insights/united-states-dol-final-rule-on-prevailing-wages-now-under-omb-review.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmMhjnGh4HQbEf-1rP0g-MRfvqQYydm1CogGR0HF57X_q1I7-RQD0-FG4kBiU",
-      "image_credit": "Bloomberg Law News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMwBmwYxIVahYqglwDw_UpI_01teVVC13bKgLTpdqhFq4yOjANCtadYtHzXJY",
+      "image_credit": "The Washington Post",
       "news": [
+        {
+          "url": "https://www.washingtonpost.com/immigration/2026/11/16/trump-administration-proposes-restrictions-employer-sponsored-green-cards/",
+          "title": "Trump administration proposes restrictions for employer-sponsored green cards",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMwBmwYxIVahYqglwDw_UpI_01teVVC13bKgLTpdqhFq4yOjANCtadYtHzXJY"
+        },
         {
           "url": "https://news.bloomberglaw.com/daily-labor-report/dol-plan-overhauls-rules-to-sponsor-foreign-worker-green-cards",
           "title": "DOL Plans Overhaul of Rules to Sponsor Worker Green Cards (2)",
@@ -236,123 +348,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmMhjnGh4HQbEf-1rP0g-MRfvqQYydm1CogGR0HF57X_q1I7-RQD0-FG4kBiU"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-proposes-tighter-rules-for-employer-sponsored-green-cards",
-          "title": "US Proposes Tighter Rules for Employer-Sponsored Green Cards",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS04Y7lT8LN_kqs9mnWe90uiPFPocA-bnxwc9TgK-skYDRPlhuts8z-risO1mE"
-        },
-        {
           "url": "https://www.fragomen.com/insights/united-states-dol-final-rule-on-prevailing-wages-now-under-omb-review.html",
           "title": "United States: DOL Final Rule on Prevailing Wages Now Under OMB Review",
           "publisher": "Fragomen",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKk6FgVlr0BUpoPKzmsvhE2U85E9HkT464VmWAV98OOPIUmQdsnF0H6MY4yA"
-        }
-      ]
-    },
-    {
-      "query": "snl sister sketch",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T17:40:00Z",
-      "related_news_urls": [
-        "https://www.theatlantic.com/culture/2026/11/saturday-night-live-john-mulaney-baby-boomers-sister/689452/",
-        "https://www.today.com/popculture/john-mulaney-snl-sister-sketch-rcna609414",
-        "https://www.nbc.com/nbc-insider/snl-sister-sketch-caregivers-jane-wickline-john-mulaney"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSQ7y00LEs1h9IweL2qjjV-TjJ6Am2USQg4Q9MVyq814tHMwKes9KpUE2kWt4",
-      "image_credit": "The Atlantic",
-      "news": [
-        {
-          "url": "https://www.theatlantic.com/culture/2026/11/saturday-night-live-john-mulaney-baby-boomers-sister/689452/",
-          "title": "An Astute ‘SNL’ Sketch About Who Cares for Aging Parents",
-          "publisher": "The Atlantic",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSQ7y00LEs1h9IweL2qjjV-TjJ6Am2USQg4Q9MVyq814tHMwKes9KpUE2kWt4"
-        },
-        {
-          "url": "https://www.today.com/popculture/john-mulaney-snl-sister-sketch-rcna609414",
-          "title": "John Mulaney Sells You an Age-Old Parental Care System, ‘Sister,’ in ‘SNL’ Skit That’s Too Real",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBd1gkUcirHcp1laWkp1EfZ8qq1uGvxRY4Z0DhzP4mNXjxDpL3-zxoe_vCYmk"
-        },
-        {
-          "url": "https://www.nbc.com/nbc-insider/snl-sister-sketch-caregivers-jane-wickline-john-mulaney",
-          "title": "SNL's \"Sister\" Sketch Is Hitting Home for Family Caregivers Who Do Everything",
-          "publisher": "NBC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7kuq6W7X7NZcphuNp7nuLN6sUxqptbnN0wqYMk4TKmoNUSjjrzfp8Fj1FB-A"
-        }
-      ]
-    },
-    {
-      "query": "microsoft outlook global outage causes",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T17:30:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/US/outlook-outage-cause-microsoft-reason-teams-down/story?id=138174626",
-        "https://www.wsj.com/business/telecom/the-chaos-and-unexpected-joys-of-a-19-hour-global-email-outage-37b7170c",
-        "https://www.pcmag.com/news/microsoft-outage-explained-the-3-issues-behind-last-weeks-crash"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6LW3W0nIwxF1kI1MAeUrqaUcZyWdAi_TtdhiSZuIqo5D0a50-F4SL_Mau5nk",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/US/outlook-outage-cause-microsoft-reason-teams-down/story?id=138174626",
-          "title": "Microsoft identifies issues leading to global Outlook outage",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6LW3W0nIwxF1kI1MAeUrqaUcZyWdAi_TtdhiSZuIqo5D0a50-F4SL_Mau5nk"
-        },
-        {
-          "url": "https://www.wsj.com/business/telecom/the-chaos-and-unexpected-joys-of-a-19-hour-global-email-outage-37b7170c",
-          "title": "The Chaos and Unexpected Joys of a 19-Hour Global Email Outage",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvwwbi9ZdLPcvgEn7_pW59bcEoJyqLd4AxYPBohGdRmMi7_NYSUhwTwKHWwFU"
-        },
-        {
-          "url": "https://www.pcmag.com/news/microsoft-outage-explained-the-3-issues-behind-last-weeks-crash",
-          "title": "Microsoft Outage Explained: The 3 Issues Behind Last Week's Crash",
-          "publisher": "PCMag",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xcWFkG7ODY-s4uPUzBfcDvzirRTdzC2g0KZhLfTXbkXkTIAafVapkJaWDO8"
-        }
-      ]
-    },
-    {
-      "query": "lithuania vs liechtenstein",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T17:30:00Z",
-      "related_news_urls": [
-        "https://www.sportsmole.co.uk/football/nations-league/lithuania-vs-liechtenstein_game_262909.html",
-        "https://www.chronicleonline.com/sports/soccer/lithuania-liechtenstein-nations-league-soccer/image_cb8658ea-0e8e-5441-b702-5499118e8c21.html",
-        "https://www.squawka.com/en/news/previews/lithuania-vs-liechtenstein-predictions-betting-tips-16-11-26/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7rZvQTTsgnieb-7O6XUj6hFRj7P0n-tlFZ8ddc23hRik4X39p-QqilFMAcNU",
-      "image_credit": "Sports Mole",
-      "news": [
-        {
-          "url": "https://www.sportsmole.co.uk/football/nations-league/lithuania-vs-liechtenstein_game_262909.html",
-          "title": "Lithuania vs Liechtenstein - Nations League - November 16, 2026 - Match Guide, Data Analysis, Standings - Football",
-          "publisher": "Sports Mole",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7rZvQTTsgnieb-7O6XUj6hFRj7P0n-tlFZ8ddc23hRik4X39p-QqilFMAcNU"
-        },
-        {
-          "url": "https://www.chronicleonline.com/sports/soccer/lithuania-liechtenstein-nations-league-soccer/image_cb8658ea-0e8e-5441-b702-5499118e8c21.html",
-          "title": "Lithuania Liechtenstein Nations League Soccer",
-          "publisher": "chronicleonline.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5QNMrQhZRgND2Y-BoDTdtHXY-i9sKz4ecVkIjbsF0BTcFeTIyTAtmirDA1W4"
-        },
-        {
-          "url": "https://www.squawka.com/en/news/previews/lithuania-vs-liechtenstein-predictions-betting-tips-16-11-26/",
-          "title": "Lithuania vs Liechtenstein predictions and betting tips: Hosts to sign off with a comfortable home win",
-          "publisher": "Squawka",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQK0MH2ZZeuIJ7JIDeaCop-nW4SAHOtJd5bwllVCwf3Ogodkd6oz2ByNPDJvM"
         }
       ]
     }
