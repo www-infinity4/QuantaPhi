@@ -71,3 +71,19 @@ test('fails closed rather than generating false memories from an empty source',a
   await assert.rejects(exportIndexToVault({root:tmp,vault:tmp+'-vault'}),/No canonical tickets/);
  }finally{await rm(tmp,{recursive:true,force:true});await rm(tmp+'-vault',{recursive:true,force:true})}
 });
+
+test('exports all six supporting repositories and the upstream vault foundation',async()=>{
+ const tmp=await mkdtemp(path.join(os.tmpdir(),'qb-'));
+ try {
+  const root=path.join(tmp,'repo'),vault=path.join(tmp,'vault');
+  await mkdir(path.join(root,'work','unfinished'),{recursive:true});
+  await writeFile(path.join(root,'work','unfinished','INDEX.md'),sample);
+  await exportIndexToVault({root,vault});
+  const collection=await readFile(path.join(vault,'Sources','Obsidian-Collection.md'),'utf8');
+  for(const name of ['kepano/kepano-obsidian','obsidianmd/obsidian-skills','Ar9av/obsidian-wiki','groepl/Obsidian-Templates','MaggieAppleton/digital-gardeners','obsidianmd/jsoncanvas','obsidianmd/obsidian-releases']) {
+   assert.ok(collection.includes('https://github.com/'+name),'Missing upstream '+name);
+  }
+  assert.match(collection,/reference only, not proof of installation/i);
+  assert.match(await readFile(path.join(vault,'index.md'),'utf8'),/\[\[Sources\/Obsidian-Collection\]\]/);
+ }finally{await rm(tmp,{recursive:true,force:true})}
+});
