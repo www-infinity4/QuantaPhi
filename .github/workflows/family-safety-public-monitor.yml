@@ -1,0 +1,65 @@
+name: Bubbles Family Safety public advisories
+on:
+  pull_request:
+    paths:
+      - 'family-safety-*.mjs'
+      - 'family-safety-card.css'
+      - 'family-safety.html'
+      - 'assets/family-safety-watch.svg'
+      - 'bubbles-card-catalog.mjs'
+      - 'data/family-safety-watch.json'
+      - 'scripts/family-safety-public-monitor.py'
+      - 'test/family-safety-watch.test.mjs'
+      - 'test/test_family_safety_public_monitor.py'
+      - '.github/workflows/family-safety-public-monitor.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'family-safety-*.mjs'
+      - 'scripts/family-safety-public-monitor.py'
+      - '.github/workflows/family-safety-public-monitor.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+concurrency:
+  group: family-safety-watch-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node card and integration regression tests
+        run: |
+          node --test test/family-safety-watch.test.mjs
+          node --test test/bubbles-card-workspace.test.mjs
+      - name: Python public-source monitor unit tests
+        run: python3 -m unittest discover -s test -p 'test_family_safety_public_monitor.py'
+  publish-public-receipt:
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Check public pages without reading aircraft or private accounts
+        run: python3 scripts/family-safety-public-monitor.py
+      - name: Save dated public check receipt on main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/family-safety-watch.json
+          if git diff --cached --quiet; then
+            echo 'No public-check receipt changes'
+          else
+            git commit -m 'research: public family safety advisory check receipt [skip ci]'
+            git push origin HEAD:main
+          fi

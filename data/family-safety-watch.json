@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "monitor_kind": "official_civilian_safety_sources",
+  "last_run_utc": null,
+  "sources": [
+    {
+      "id": "us-qatar",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/qatar.html",
+      "status": "pending",
+      "last_checked_utc": null,
+      "last_success_utc": null,
+      "last_change_utc": null,
+      "content_sha256": null
+    },
+    {
+      "id": "us-israel",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/israel.html",
+      "status": "pending",
+      "last_checked_utc": null,
+      "last_success_utc": null,
+      "last_change_utc": null,
+      "content_sha256": null
+    },
+    {
+      "id": "uk-qatar",
+      "url": "https://www.gov.uk/foreign-travel-advice/qatar",
+      "status": "pending",
+      "last_checked_utc": null,
+      "last_success_utc": null,
+      "last_change_utc": null,
+      "content_sha256": null
+    },
+    {
+      "id": "uk-israel",
+      "url": "https://www.gov.uk/foreign-travel-advice/israel",
+      "status": "pending",
+      "last_checked_utc": null,
+      "last_success_utc": null,
+      "last_change_utc": null,
+      "content_sha256": null
+    }
+  ]
+}

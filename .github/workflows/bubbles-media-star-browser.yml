@@ -30,7 +30,7 @@ permissions:
   contents: read
 jobs:
   chromium_card_and_chat:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
@@ -60,6 +60,7 @@ jobs:
             sleep 1
           done
           node scripts/bubbles-media-star-browser-smoke.mjs
+          node scripts/family-safety-browser-smoke.mjs
           node scripts/bubbles-fresh-chat-browser-smoke.mjs
           node --test test/bubbles-action-driver.test.mjs
           node scripts/bubbles-components-browser.mjs
@@ -70,6 +71,8 @@ jobs:
           name: bubbles-media-star-browser-evidence
           path: |
             test-results/bubbles-media-star-browser.json
+            test-results/family-safety-browser.json
+            test-results/family-safety-mobile.png
             test-results/bubbles-fresh-chat-browser.json
             test-results/bubbles-components.json
             test-results/bubbles-component-tap.png
