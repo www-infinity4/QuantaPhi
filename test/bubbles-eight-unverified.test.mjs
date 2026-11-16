@@ -18,6 +18,13 @@ test('JSON and HTML draft-only replies pass syntax/structure, not GitHub writes'
  assert.equal(auditReply(probe('json'),{ok:true,output:'I deployed your JSON',receipt:receipt()}).state,'flagged');
 });
 
+test('accepts a fenced HTML draft for index authoring and rejects other languages',()=>{
+ const markup='<html><main><h1>Test Ground</h1><button>Go</button></main></html>';
+ const output=language=>'Here is a draft:\n```'+language+'\n'+markup+'\n```';
+ assert.equal(auditReply(probe('index'),{ok:true,output:output('html'),receipt:receipt()}).state,'passed');
+ assert.equal(auditReply(probe('index'),{ok:true,output:output('json'),receipt:receipt()}).state,'unverified');
+});
+
 test('questions about authorizing a commit are capability lookups, not commit reads',()=>{
  assert.equal(chooseTool(developer),'bubbles.capabilities');
  assert.equal(recommendCapabilities(developer)[0]?.id,'robot_brain.owner_work');

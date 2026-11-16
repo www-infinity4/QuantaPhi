@@ -20,7 +20,8 @@ function verifiedDraft(id,output){
  // never a prose claim, an unrelated language, or ambiguous multiple drafts.
  const fences=[...output.matchAll(/```([a-z]*)[ \t]*\r?\n([\s\S]*?)```/gi)];
  if(fences.length>1)return false;
- if(fences.length===1&&fences[0][1]&&fences[0][1].toLowerCase()!==id)return false;
+ const language=id==='index'?'html':id;
+ if(fences.length===1&&fences[0][1]&&fences[0][1].toLowerCase()!==language)return false;
  const text=(fences.length===1?fences[0][2]:output).trim();
  if(id==='json'){
   try{
