@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-16T23:03:57.951708Z",
+  "checked_at": "2026-11-16T23:33:09.557800Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
@@ -20,6 +20,18 @@
       "trend_checked_at": "2026-11-14T20:31:06.368122Z",
       "trend_published_at": "2026-11-14T19:50:00Z",
       "approx_searches": "500+"
+    },
+    {
+      "id": "V7f0cMdPdCQ",
+      "title": "Close enough to touch. Watch the",
+      "video_id": "V7f0cMdPdCQ",
+      "video_title": "Close enough to touch. Watch the new trailer for #RemainMovie - only in theaters February 5.",
+      "kind": "trailer",
+      "publisher": "Warner Bros. Pictures",
+      "published_at": "2026-11-16T23:00:05Z",
+      "source_url": "https://www.youtube.com/watch?v=V7f0cMdPdCQ",
+      "poster": "https://i.ytimg.com/vi/V7f0cMdPdCQ/hqdefault.jpg",
+      "google_trending": false
     },
     {
       "id": "stT41kosuqM",
