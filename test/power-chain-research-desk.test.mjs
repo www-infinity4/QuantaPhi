@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {runPowerChain} from '../design-lab/power-chain-core.mjs';
 import {RESEARCH_DESK_SEATS, reviewPowerChainResearch, compareResearchReadback} from '../design-lab/power-chain-research-desk.mjs';
 
 const plan={query:'solar battery storage research',lanes:['research','shop'],targets:['nasa.gov','homedepot.com'],execution:'public-web-index'};
@@ -39,6 +40,49 @@ test('failed and interrupted research cannot be reported complete',()=>{
  assert.ok(review.veto.reasons.includes('stopped'));
  assert.ok(review.veto.reasons.includes('partial_source_checks'));
  assert.ok(review.veto.reasons.includes('search_errors'));
+});
+
+test('results cannot be evidence for malformed or no-result target steps',()=>{
+ const invalidSteps=[
+  {status:'unrecognized',results:1},
+  {status:'empty',results:0},
+  {status:'stopped',results:0},
+  {status:'error',results:0},
+  {status:'matched',results:0},
+  {status:'matched',results:1.5}
+ ];
+ for(const invalid of invalidSteps){
+  const steps=[{...receipt.steps[0],...invalid},receipt.steps[1]];
+  const review=reviewPowerChainResearch(plan,{...receipt,steps});
+  assert.equal(review.status,'blocked',invalid.status+': '+invalid.results);
+  assert.deepEqual(review.sources.map(row=>row.target),['homedepot.com']);
+  assert.equal(review.rejectedSourceRows,1);
+  assert.ok(review.veto.reasons.includes('inconsistent_source_steps'));
+ }
+});
+
+test('a matched target must have the exact number of trusted distinct sources',()=>{
+ const cases=[
+  {...receipt,steps:[{...receipt.steps[0],results:2},receipt.steps[1]]},
+  {...receipt,found:3,results:[...receipt.results,source('nasa.gov','Additional reference','wind')]}
+ ];
+ for(const incomplete of cases){
+  const review=reviewPowerChainResearch(plan,incomplete);
+  assert.equal(review.status,'blocked');
+  assert.deepEqual(review.sources.map(row=>row.target),['homedepot.com']);
+  assert.ok(review.veto.reasons.includes('inconsistent_source_steps'));
+ }
+});
+
+test('review accepts the matched and empty steps emitted by the existing search runner',async()=>{
+ const fetcher=async url=>Response.json({results:new URL(url).searchParams.get('q').startsWith('site:nasa.gov ')
+  ?[source('nasa.gov','Original reference','solar')]
+  :[]});
+ const actual=await runPowerChain(plan,{fetcher,concurrency:1});
+ assert.deepEqual(actual.steps.map(step=>[step.status,step.results]),[['matched',1],['empty',0]]);
+ const review=reviewPowerChainResearch(plan,actual);
+ assert.equal(review.status,'research_discovery');
+ assert.deepEqual(review.sources.map(row=>row.target),['nasa.gov']);
 });
 
 test('zero results are surfaced honestly with a veto, not invented citations',()=>{
