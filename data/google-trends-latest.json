@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T16:31:25.622949Z",
+  "checked_at": "2026-11-16T17:01:25.319573Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "bradley whitford",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T16:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/diplomats-bradley-whitford-compares-big-151200580.html",
+        "https://www.imdb.com/news/ni66109663/?ref_=nwc_art_perm",
+        "https://www.washingtonpost.com/entertainment/theater/2026/11/11/two-new-musicals-new-york-stages-fall-flat/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShvim-t9qgo-iw49VvDupK4EHCjgfVGDSf8-r5clDR0EqFiw1wpWCstss4VHM",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/diplomats-bradley-whitford-compares-big-151200580.html",
+          "title": "The Diplomat's Bradley Whitford Compares His Big Season 4 Moment To A Classic Will Ferrell Movie",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShvim-t9qgo-iw49VvDupK4EHCjgfVGDSf8-r5clDR0EqFiw1wpWCstss4VHM"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66109663/?ref_=nwc_art_perm",
+          "title": "The Diplomat's Bradley Whitford Compares His Big Season 4 Moment To A Classic Will Ferrell Movie",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR30cSfU23uDNd0a4MZG14d1CGrRWZGXCUgAVKzS4RhMDehhAVyw9J8fb_45ug"
+        },
+        {
+          "url": "https://www.washingtonpost.com/entertainment/theater/2026/11/11/two-new-musicals-new-york-stages-fall-flat/",
+          "title": "‘A Few Good Men’ and ‘2:22’ crackle on New York stages, but two new musicals fizzle",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS68iJYMhJ3NGfVtXWVIxNBR6bAdlyMZ-k_h4cqDWGWnZ2qpi_YFv0pqq3d5IQ"
+        }
+      ]
+    },
+    {
+      "query": "2028 ford mustang cobra r",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T16:30:00Z",
+      "related_news_urls": [
+        "https://www.caranddriver.com/news/a74425789/2028-ford-mustang-cobra-future-cars/",
+        "https://fordauthority.com/2026/11/mustang-shelby-gt350-successor-coming-based-around-dark-horse-sc-exclusive/",
+        "https://fordauthority.com/2026/11/all-new-high-performance-ford-mustang-will-launch-in-2027/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzX8ZlQ-eaxjpWIhBZoAP9LcFNM4ECgM95j9GsAf9pQIfmWiKg7XXFKdT7hg0",
+      "image_credit": "Car and Driver",
+      "news": [
+        {
+          "url": "https://www.caranddriver.com/news/a74425789/2028-ford-mustang-cobra-future-cars/",
+          "title": "2028 Ford Mustang Cobra with a Race Car-Derived V-8 Is Worth Waiting For",
+          "publisher": "Car and Driver",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzX8ZlQ-eaxjpWIhBZoAP9LcFNM4ECgM95j9GsAf9pQIfmWiKg7XXFKdT7hg0"
+        },
+        {
+          "url": "https://fordauthority.com/2026/11/mustang-shelby-gt350-successor-coming-based-around-dark-horse-sc-exclusive/",
+          "title": "Mustang Shelby GT350 Successor Coming Based Around Dark Horse SC: Exclusive",
+          "publisher": "Ford Authority",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjHyEmmIEL_N5aSxIQJnOoCi54FDjAqNFrpbqkSMcdiqrfzID6bbV5UFlDkqc"
+        },
+        {
+          "url": "https://fordauthority.com/2026/11/all-new-high-performance-ford-mustang-will-launch-in-2027/",
+          "title": "Dealer Docs Say New High-Performance Ford Mustang To Launch In 2027",
+          "publisher": "Ford Authority",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzG2ZHwVNJf8TLv81oAxytNmHigCctpM9z5QhjrMSt4iiYYfpCE8Otjtr1t6Y"
+        }
+      ]
+    },
+    {
+      "query": "survivor",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T16:30:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/cbs-midseason-premiere-dates-ghosts-sheriff-country-survivor-1237223505/",
+        "https://ew.com/survivor-expanding-two-hour-episodes-season-52-premiere-date-12256455",
+        "https://www.hollywoodreporter.com/tv/tv-news/cbs-midseason-2027-tv-premiere-dates-1236756166/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToFFqarwDZAxysypzZ6OTYnK9fUF3FVfDs_l3bukndb3203gcTahiGzs3KaCk",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/cbs-midseason-premiere-dates-ghosts-sheriff-country-survivor-1237223505/",
+          "title": "CBS Midseason Premiere Dates: 'Cupertino' Moves, Survivor' Supersized",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToFFqarwDZAxysypzZ6OTYnK9fUF3FVfDs_l3bukndb3203gcTahiGzs3KaCk"
+        },
+        {
+          "url": "https://ew.com/survivor-expanding-two-hour-episodes-season-52-premiere-date-12256455",
+          "title": "‘Survivor’ announces season 52 premiere date and expansion to two-hour episodes",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSBlTtMSjXhPTdoRWOhaka73-XFpo8pG7KMstTSKKr6TYAaBZ-pdixpXtpfjM"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/cbs-midseason-2027-tv-premiere-dates-1236756166/",
+          "title": "‘Cupertino’ Moving, ‘Ghosts’ Doubling Up on CBS’ Midseason Schedule",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzzjQqQ9Vu3L08Eg7Po3tX2-TsRZWoSbYB6ModwENshNnp6LQKBKa9OryxXdM"
+        }
+      ]
+    },
+    {
+      "query": "the view",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T16:30:00Z",
+      "related_news_urls": [
+        "https://ca.style.yahoo.com/candace-cameron-bure-admits-view-193231236.html",
+        "https://www.the-independent.com/arts-entertainment/tv/news/candace-cameron-bure-the-view-politics-special-forces-b3084718.html",
+        "https://ew.com/candace-cameron-bure-returns-to-the-view-difficult-12250408"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR37lQSJMUhOPxHDIqJL97USOTkzkqUejBLz_meiWtu32vS6yMpOY1dwjuyJf0",
+      "image_credit": "Yahoo Lifestyle Canada",
+      "news": [
+        {
+          "url": "https://ca.style.yahoo.com/candace-cameron-bure-admits-view-193231236.html",
+          "title": "Candace Cameron Bure Admits ‘The View' Was ‘Difficult' as She Returns to Talk Show After 10 Years",
+          "publisher": "Yahoo Lifestyle Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR37lQSJMUhOPxHDIqJL97USOTkzkqUejBLz_meiWtu32vS6yMpOY1dwjuyJf0"
+        },
+        {
+          "url": "https://www.the-independent.com/arts-entertainment/tv/news/candace-cameron-bure-the-view-politics-special-forces-b3084718.html",
+          "title": "Candace Cameron Bure gives verdict on Special Forces co-star George Santos",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcZH5D2BUz4LgxebvBequ9tzkYqFIdtwIggMOHFEHGXGt0UEMhOnn0oiUMG2k"
+        },
+        {
+          "url": "https://ew.com/candace-cameron-bure-returns-to-the-view-difficult-12250408",
+          "title": "Ex-cohost Candace Cameron Bure returns to ‘The View,’ tells stars it was ‘difficult’ to do",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMTGZKbWAT6tEi9h2nwJjuBmoM4pT6kloXf1pkyirii5vhZ67Vpv8o6F-pLt4"
+        }
+      ]
+    },
+    {
+      "query": "black rifle coffee",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T16:30:00Z",
+      "related_news_urls": [
+        "https://www.fox7austin.com/news/black-rifle-coffee-closing-12-company-owned-locations-including-some-texas",
+        "https://sanantonio.culturemap.com/news/restaurants-bars/black-rifle-closing-live-oak/",
+        "https://www.yahoo.com/news/videos/san-antonio-news-1-500-230834697.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqtQ2ecHLsj0Mynbmqwoqi_r1IMKe2amFnkzsY9dJheWYKNF9XVM6CIvED3ZI",
+      "image_credit": "FOX 7 Austin",
+      "news": [
+        {
+          "url": "https://www.fox7austin.com/news/black-rifle-coffee-closing-12-company-owned-locations-including-some-texas",
+          "title": "Black Rifle Coffee closing 12 company-owned stores, including in Texas",
+          "publisher": "FOX 7 Austin",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqtQ2ecHLsj0Mynbmqwoqi_r1IMKe2amFnkzsY9dJheWYKNF9XVM6CIvED3ZI"
+        },
+        {
+          "url": "https://sanantonio.culturemap.com/news/restaurants-bars/black-rifle-closing-live-oak/",
+          "title": "Black Rifle Coffee sounds retreat with San Antonio-area closure",
+          "publisher": "CultureMap San Antonio",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMcMDXEFQQ3dbsnPXy9M9GkL4pxo2aXUnYvkpX95YViXpFvBCrYztGmwePISM"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/san-antonio-news-1-500-230834697.html",
+          "title": "San Antonio news: $1,500 checks, Black Rifle Coffee",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ZdBJp1C6oJLyDSEQXIDuGoqXk6r_ZIuaizcpzKHpmKeIQLYvuPVaGNQC60Y"
+        }
+      ]
+    },
+    {
+      "query": "iceland vs luxembourg",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T16:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c95y15vnr717t",
+        "https://www.besoccer.com/match/seleccion-islandia/seleccion-luxemburgo/202768230",
+        "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-stream-here-s-iceland-vs-luxembourg-live-i7iwh"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c95y15vnr717t",
+          "title": "Iceland vs Luxembourg: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.besoccer.com/match/seleccion-islandia/seleccion-luxemburgo/202768230",
+          "title": "Pre-match Iceland vs Luxembourg, UEFA Nations League Round 6",
+          "publisher": "BeSoccer Livescore",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPiTePG9wLOY6dN-xDkb5VJyYbgepTrxCmZAs6dmWFw3SmEQBi5Z3Je3zu4ow"
+        },
+        {
+          "url": "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-stream-here-s-iceland-vs-luxembourg-live-i7iwh",
+          "title": "[𝐒𝐓ream]hERE'S*!] Iceland vs Luxembourg 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ Football ＯＮ Ｔｖ Ｃｈａｎｎｅｌ",
+          "publisher": "Universitat de Barcelona",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX3krxHRyzSPYTZTUmiaUeWWWjwjHnK6vgF7jB_xC2cXjjPF47by3S92UjtEk"
+        }
+      ]
+    },
+    {
+      "query": "facial recognition system",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T16:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians",
+        "https://www.haaretz.com/gaza/2026-11-16/ty-article/report-idf-uploaded-3-5m-photos-to-amazon-for-palestinian-facial-recognition/000001a1-e442-d66c-a3f9-edc22b800000",
+        "https://www.jpost.com/israel-news/defense-news/article-915065"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHu0mEOXzfJ1nLwZAxo2BxBnDyIM4_rLrtLp2p7mvfgOgR4A-ZBEUmjGTR5NY",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians",
+          "title": "Revealed: Israel uploaded millions of photos to Amazon’s facial recognition platform to track Palestinians",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHu0mEOXzfJ1nLwZAxo2BxBnDyIM4_rLrtLp2p7mvfgOgR4A-ZBEUmjGTR5NY"
+        },
+        {
+          "url": "https://www.haaretz.com/gaza/2026-11-16/ty-article/report-idf-uploaded-3-5m-photos-to-amazon-for-palestinian-facial-recognition/000001a1-e442-d66c-a3f9-edc22b800000",
+          "title": "Report: IDF uploaded 3.5M photos to Amazon for Palestinian facial recognition",
+          "publisher": "Haaretz",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNaa5I7pdMe9uZZSrz3EpfTBUY-WQrCY6gYXchx9yJRREH9m4NPfRz-TVEMhg"
+        },
+        {
+          "url": "https://www.jpost.com/israel-news/defense-news/article-915065",
+          "title": "IDF uploaded 3.5 million Palestinian photos to Amazon servers for facial recognition, report claims",
+          "publisher": "The Jerusalem Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSjPKoV3PFQBQzLP48auhUCVNPzS4Qlrw7SjhHjc-0pw_eCTogG0xYPjE7YoU"
+        }
+      ]
+    },
     {
       "query": "aaron taylor johnson",
       "approx_searches": "1000+",
@@ -61,284 +306,13 @@
       ]
     },
     {
-      "query": "batman 2",
-      "approx_searches": "200+",
+      "query": "kristen stewart",
+      "approx_searches": "500+",
       "published_at": "2026-11-16T16:00:00Z",
-      "related_news_urls": [
-        "https://gizmodo.com/filming-on-the-batman-part-ii-extends-into-2027-2000840256",
-        "https://www.imdb.com/news/ni66111777/?ref_=nmnw_art_perm",
-        "https://movieweb.com/the-batman-part-2-filming-update/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-We0oH7Lqpr_F6yvRZRsX08DcwWPo_7IUks15sETxeJvKRX92WNYWxmxBooI",
-      "image_credit": "Gizmodo",
-      "news": [
-        {
-          "url": "https://gizmodo.com/filming-on-the-batman-part-ii-extends-into-2027-2000840256",
-          "title": "Filming on ‘The Batman Part II’ Extends Into 2027",
-          "publisher": "Gizmodo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-We0oH7Lqpr_F6yvRZRsX08DcwWPo_7IUks15sETxeJvKRX92WNYWxmxBooI"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66111777/?ref_=nmnw_art_perm",
-          "title": "The Batman 2's Filming Timeline Confirmed By Andy Serkis Amid Director Swap",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvg8SM77TX82DvfJI-fYavruzGdijs865oOh6MZMsgmb_fUUInZWGdwxXY70"
-        },
-        {
-          "url": "https://movieweb.com/the-batman-part-2-filming-update/",
-          "title": "Matt Reeves' Long-Awaited Batman Sequel Officially Gets Disappointing Filming Update",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeXWTR6sRiJgzgmUTgFX2C-BBVcyKL_aQ9I4Fw_d3_EuMaSnB7JnIU2FTufU0"
-        }
-      ]
-    },
-    {
-      "query": "rockstar games hacker arion kurtaj",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T15:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cq99exy89dngo",
-        "https://www.forbes.com/sites/paultassi/2026/11/16/caught-gta-6-leaker-pleads-guilty-to-extorting-rockstar-games/",
-        "https://www.yahoo.com/news/us/articles/gta-6-hacker-behind-original-150423830.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSELz8Az9RoXduCF6HdukNxJag9_tq0uG3W7zwcQuV912dCSP8MvSfrlqfDq2g",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cq99exy89dngo",
-          "title": "GTA 6 hacker pleads guilty after release from secure hospital",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSELz8Az9RoXduCF6HdukNxJag9_tq0uG3W7zwcQuV912dCSP8MvSfrlqfDq2g"
-        },
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/16/caught-gta-6-leaker-pleads-guilty-to-extorting-rockstar-games/",
-          "title": "Caught ‘GTA 6’ Leaker Pleads Guilty To Extorting Rockstar Games",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWk7rUerpmwZCKOlyiDvHZWtvXS8oysdzBzxDtpoa-5HCkdNdORcWackhJOiU"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/gta-6-hacker-behind-original-150423830.html",
-          "title": "GTA 6 hacker behind original 2022 leaks pleads guilty just days ahead of game’s launch",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNBV_8D1L7xD9ezRlo2mdktvQQa4ysIP6RTyDoz3e_R5kcseQxp44LSHlgemo"
-        }
-      ]
-    },
-    {
-      "query": "turkey",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T15:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/environment/live/2026/nov/16/cop31-climate-crisis-talks-turkey-latest-news-updates",
-        "https://www.reuters.com/sustainability/cop/first-draft-cop31-deal-signals-tough-negotiations-come-2026-11-16/",
-        "https://theconversation.com/universities-should-follow-communities-lead-on-climate-research-294848"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTS7rhxq4uC_K5McSI28MsohLBDB9AGQtRUavfxNOBpATFRLdHo4RRAxHitV0w",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/environment/live/2026/nov/16/cop31-climate-crisis-talks-turkey-latest-news-updates",
-          "title": "Cop31 live: draft climate deal calls for faster shift away from fossil fuels",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTS7rhxq4uC_K5McSI28MsohLBDB9AGQtRUavfxNOBpATFRLdHo4RRAxHitV0w"
-        },
-        {
-          "url": "https://www.reuters.com/sustainability/cop/first-draft-cop31-deal-signals-tough-negotiations-come-2026-11-16/",
-          "title": "First draft of COP31 deal signals tough negotiations to come",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStm3BOX1OAeJkXAHi8_1dh5Tx1OTxW_KEaOfiOUwvMLLSK4BhotfhBtbaMPWg"
-        },
-        {
-          "url": "https://theconversation.com/universities-should-follow-communities-lead-on-climate-research-294848",
-          "title": "Universities should follow communities’ lead on climate research",
-          "publisher": "The Conversation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJXlrNtLbhc-KPuyHqDAIt61kx-2xVAp4uU8NjtJSA9nLd3Mp6eW2lejeUWnE"
-        }
-      ]
-    },
-    {
-      "query": "callum turner",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-16T15:30:00Z",
-      "related_news_urls": [
-        "https://www.nydailynews.com/2026/11/15/callum-turner-james-bond/",
-        "https://www.cosmopolitan.com/uk/entertainment/a74440764/when-will-the-next-james-bond-movie-be-out/",
-        "https://brobible.com/culture/article/james-bond-casting-process/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa7eQz8Xo2rIGm-LD2QMUBuTlE8whjPyWBg7ZMBeo9H5cHzQ9DXdHagNB2o2Q",
-      "image_credit": "New York Daily News",
-      "news": [
-        {
-          "url": "https://www.nydailynews.com/2026/11/15/callum-turner-james-bond/",
-          "title": "RICHARD JOHNSON | Callum Turner closing in on James Bond gig: source",
-          "publisher": "New York Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa7eQz8Xo2rIGm-LD2QMUBuTlE8whjPyWBg7ZMBeo9H5cHzQ9DXdHagNB2o2Q"
-        },
-        {
-          "url": "https://www.cosmopolitan.com/uk/entertainment/a74440764/when-will-the-next-james-bond-movie-be-out/",
-          "title": "When will the next James Bond movie be out? What to know following Robert Pattinson announcement",
-          "publisher": "Cosmopolitan",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnv1mx5yUdun_fQsmoS66WrE2uAZKqHlFDOLULECudTq4MVYWfCczxrYYWwew"
-        },
-        {
-          "url": "https://brobible.com/culture/article/james-bond-casting-process/",
-          "title": "Grueling James Bond Casting Process Revealed; Private Jets, 'GoldenEye' Scripts, Red Ink, Secret Passes",
-          "publisher": "BroBible",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAcNx0dBl4tp83ymnRA5UKzDLatLLpNCTRTbbJeuA1Hl-y9NWILSehPNd1rGk"
-        }
-      ]
-    },
-    {
-      "query": "josh o'connor",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T15:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/articles/ive-watched-every-james-bond-114833763.html",
-        "https://www.dailymail.com/tvshowbiz/article-16282763/Josh-OConnor-WONT-James-Bond.html",
-        "https://www.dailyecho.co.uk/news/26733943.southampton-star-josh-oconnor-misses-becoming-007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiMk6aVZVjk7SLpN3RHirPKTZAknfXqKyzVNVej7YS4chzKukWz_JInqlihUo",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/articles/ive-watched-every-james-bond-114833763.html",
-          "title": "I've watched every James Bond film - and Josh O'Connor is the shake-up 007 needs",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiMk6aVZVjk7SLpN3RHirPKTZAknfXqKyzVNVej7YS4chzKukWz_JInqlihUo"
-        },
-        {
-          "url": "https://www.dailymail.com/tvshowbiz/article-16282763/Josh-OConnor-WONT-James-Bond.html",
-          "title": "Josh O'Connor WON'T be the next James Bond as actor 'turns down role' after previously insisting he would be 'taking some time out' in 2027",
-          "publisher": "Daily Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJKgeu68P6cZapSugQ-jGvip2YgA_aXLWXXYsyyarll7Mw3csYDGG_qNZqs2g"
-        },
-        {
-          "url": "https://www.dailyecho.co.uk/news/26733943.southampton-star-josh-oconnor-misses-becoming-007/",
-          "title": "Southampton-born actor misses out on James Bond role",
-          "publisher": "Daily Echo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-OroayYez_bJU5Zy3uRMJNgAvnwZ8o1jz567u6GddUZITDrOmPO8oRy9E46E"
-        }
-      ]
-    },
-    {
-      "query": "sean connery",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T15:30:00Z",
-      "related_news_urls": [
-        "https://dangerousminds.net/movies/sean-connery-quit-playing-james-bond-his-kid-brother-took-over-pic/",
-        "https://qz.com/james-bond-actors-ages-first-films",
-        "https://www.mensjournal.com/news/james-bond-actors-ages-first-007-movie"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJluZR6FkuBAiqEDqyXBPneFH5_RFpMcK9QifhrKmOqTJhI-JSjyVcDkgwmbs",
-      "image_credit": "Dangerous Minds",
-      "news": [
-        {
-          "url": "https://dangerousminds.net/movies/sean-connery-quit-playing-james-bond-his-kid-brother-took-over-pic/",
-          "title": "Sean Connery quit playing James Bond. His kid brother took over",
-          "publisher": "Dangerous Minds",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJluZR6FkuBAiqEDqyXBPneFH5_RFpMcK9QifhrKmOqTJhI-JSjyVcDkgwmbs"
-        },
-        {
-          "url": "https://qz.com/james-bond-actors-ages-first-films",
-          "title": "James Bond actors' ages in their first 007 films, in order",
-          "publisher": "qz.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAvJSqSgNaqrqELN94O4cPk9GZ1b6VqkU12v2JalKeJYFkuQz68N_0N_Wh380"
-        },
-        {
-          "url": "https://www.mensjournal.com/news/james-bond-actors-ages-first-007-movie",
-          "title": "How Old Every James Bond Actor Was in His First 007 Movie",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShihlmXsF2gF-6Ls09Vqp1rwRTlAvpWEuWQtMEarTDSOLYR9SBQpRpREhI5xM"
-        }
-      ]
-    },
-    {
-      "query": "idris elba",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T15:20:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/video/vi3874474521/",
-        "https://www.laineygossip.com/will-film-adaptation-of-children-of-blood-and-bone-live-forever-in-shadow-of-author-tomi-adeyemis-disapproval/",
-        "https://movieweb.com/children-of-blood-and-bone-new-trailer/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcMVujDHvbzBjitION6zKXBVagpvMrzD2rIcea7dr6IyW5LEW5qeDA6bmJ6wo",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/video/vi3874474521/",
-          "title": "▶️ Children of Blood and Bone - Trailer 2",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcMVujDHvbzBjitION6zKXBVagpvMrzD2rIcea7dr6IyW5LEW5qeDA6bmJ6wo"
-        },
-        {
-          "url": "https://www.laineygossip.com/will-film-adaptation-of-children-of-blood-and-bone-live-forever-in-shadow-of-author-tomi-adeyemis-disapproval/",
-          "title": "Will the film adaptation of Children of Blood and Bone live forever in the shadow of author Toni Adeyemi's disapproval?",
-          "publisher": "LaineyGossip",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHHLyLVutWZS7Yiu3ji5bbfPBn4gPx5NqQATGT6pMRCy5H9NZLD5lSt8oN_A8"
-        },
-        {
-          "url": "https://movieweb.com/children-of-blood-and-bone-new-trailer/",
-          "title": "\"Lord of the Rings Meets Black Panther\" in New Trailer for Idris Elba’s 2027 Fantasy Epic",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9-tKg8FCHvolOkGp_9rS8p5IzyoQjaPe5K5GMwlwTYXIMPktmjnq2SwrVrLw"
-        }
-      ]
-    },
-    {
-      "query": "henry cavill",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T15:20:00Z",
-      "related_news_urls": [
-        "https://www.gq-magazine.co.uk/article/henry-cavill-voltron-15-11-26",
-        "https://fandomwire.com/henry-cavill-voltron-pacific-rim-meets-godzilla/",
-        "https://www.imdb.com/es/news/ni66111100/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjh7Pk7MuAoHWodo9eCX5xuTcnqa9fAqdpQ6r9l3OIehEVPR6CANOFe-8QrDA",
-      "image_credit": "British GQ",
-      "news": [
-        {
-          "url": "https://www.gq-magazine.co.uk/article/henry-cavill-voltron-15-11-26",
-          "title": "Henry Cavill is about to take another geek franchise into outer space",
-          "publisher": "British GQ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjh7Pk7MuAoHWodo9eCX5xuTcnqa9fAqdpQ6r9l3OIehEVPR6CANOFe-8QrDA"
-        },
-        {
-          "url": "https://fandomwire.com/henry-cavill-voltron-pacific-rim-meets-godzilla/",
-          "title": "Henry Cavill’s Next Sci-Fi Masterpiece Is ‘Pacific Rim Meets Godzilla’",
-          "publisher": "FandomWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIyPkjSZneWcNuXJwjphYrTpvOeM40aO4g3uh5LvHLzVs0rVNWKPiWPwpOCAU"
-        },
-        {
-          "url": "https://www.imdb.com/es/news/ni66111100/?ref_=nwc_art_perm",
-          "title": "Why Henry Cavill Left The Witcher",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9YR4ZTQe2om8ylo_aHJVbQZ4XSC79sfcR-bI1D2Rw4CH1_0hHVYRtp-uwScQ"
-        }
-      ]
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
     }
   ]
 }
