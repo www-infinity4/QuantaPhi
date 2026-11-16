@@ -3,47 +3,152 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T04:01:35.479487Z",
+  "checked_at": "2026-11-16T04:38:55.817388Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "donald trump iran war",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T03:40:00Z",
+      "query": "the mighty nein season 2 release",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T04:20:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/13/us/politics/trump-iran-strategy.html",
-        "https://theweek.com/world-news/iran-will-trump-resume-the-war",
-        "https://www.reuters.com/world/middle-east/trump-tells-advisers-he-may-hold-off-iran-attacks-barring-new-provocations-2026-11-14/"
+        "https://www.yahoo.com/entertainment/tv/articles/prime-video-reveals-mighty-nein-223325495.html",
+        "https://www.imdb.com/news/ni66112983/?ref_=ttnw_art_perm",
+        "https://www.comingsoon.net/tv/news/2223495-the-mighty-nein-season-2-release-date-prime-video"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgW_IsXtXeyUvtUVdrlGMxPieNAS2aLFu6XzIZOxAArlKxBNOSCxwc9RjqeY",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZT4XSFC3_iPQ0GO60rgN65Rqzk0WcZygchH-NDqOy12_w9ZcMiMtOHB342sg",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-iran-strategy.html",
-          "title": "Trump Signals New Strategy on Iran: A Waiting Game",
-          "publisher": "The New York Times",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/prime-video-reveals-mighty-nein-223325495.html",
+          "title": "Prime Video Reveals ‘The Mighty Nein’ Season 2 Premiere Date & Details",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgW_IsXtXeyUvtUVdrlGMxPieNAS2aLFu6XzIZOxAArlKxBNOSCxwc9RjqeY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZT4XSFC3_iPQ0GO60rgN65Rqzk0WcZygchH-NDqOy12_w9ZcMiMtOHB342sg"
         },
         {
-          "url": "https://theweek.com/world-news/iran-will-trump-resume-the-war",
-          "title": "Iran: will Trump resume the war?",
-          "publisher": "The Week",
+          "url": "https://www.imdb.com/news/ni66112983/?ref_=ttnw_art_perm",
+          "title": "Critical Role’s The Mighty Nein Officially Returns With New Episodes In 4 Months",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRvhqkIvVUR9YXxsBoMPBVQV_w-Y_AJSzjBwt3T1gN5NlmfMuReAEAF7tA4RE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBoNM_Hr-3pQUsdw5_PbCCzJtQd93-WuTrUXQkKUDdgYUirpTe6-oNe-ss64"
         },
         {
-          "url": "https://www.reuters.com/world/middle-east/trump-tells-advisers-he-may-hold-off-iran-attacks-barring-new-provocations-2026-11-14/",
-          "title": "Trump tells advisers he may hold off on Iran attacks barring new provocations, sources say",
-          "publisher": "Reuters",
+          "url": "https://www.comingsoon.net/tv/news/2223495-the-mighty-nein-season-2-release-date-prime-video",
+          "title": "Vox Machina Sequel The Mighty Nein Sets Season 2 Release Date for Prime Video",
+          "publisher": "ComingSoon.net",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqZ-GCh8TtwloiREPlyoCTVfrA7i7pPcNF_9ytR-U-ALl5Z5I0S_ilT9pM9G0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ-Gy8SxDkNKeX94aJFWGYjdKxJZ80CGBJOdUytWCA5s7iJUt9H3AVwTNnWYY"
+        }
+      ]
+    },
+    {
+      "query": "mason rudolph",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T04:10:00Z",
+      "related_news_urls": [
+        "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/15/aaron-rodgers-replaced-mason-rudolph-steelers-bengals-sunday-night/92776592007/",
+        "https://heavy.com/sports/nfl/pittsburgh-steelers/aaron-rodgers-benched-mason-rudolph-nfl-news-bengals/",
+        "https://clutchpoints.com/nfl/pittsburgh-steelers/steelers-news-mike-tomlin-revisits-myles-garrett-mason-rudolph-incident-wild-remark"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxoqEMjdcHEpt9Pn9o1HBeGttvWMJKVJM_vPzuYf6E59uz0acFDCw6JrriXL0",
+      "image_credit": "Cincinnati Enquirer",
+      "news": [
+        {
+          "url": "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/15/aaron-rodgers-replaced-mason-rudolph-steelers-bengals-sunday-night/92776592007/",
+          "title": "Steelers' Aaron Rodgers replaced by Mason Rudolph vs Bengals on SNF",
+          "publisher": "Cincinnati Enquirer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxoqEMjdcHEpt9Pn9o1HBeGttvWMJKVJM_vPzuYf6E59uz0acFDCw6JrriXL0"
+        },
+        {
+          "url": "https://heavy.com/sports/nfl/pittsburgh-steelers/aaron-rodgers-benched-mason-rudolph-nfl-news-bengals/",
+          "title": "Steelers’ Mason Rudolph Replaces Aaron Rodgers in Embarrassing Bengals Game",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOdbBqPpRE7vzLYJ_Z83TRLiYYAjkS0xbrzv3k-R-XBdYzQqnhsQDk2Z0co9E"
+        },
+        {
+          "url": "https://clutchpoints.com/nfl/pittsburgh-steelers/steelers-news-mike-tomlin-revisits-myles-garrett-mason-rudolph-incident-wild-remark",
+          "title": "Mike Tomlin revisits Myles Garrett and Steelers’ Mason Rudolph incident with wild remark",
+          "publisher": "ClutchPoints",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLJOrKngi0MuXC5M_akUyN5aXt8CQkiFlStNbvEcrbzhDlVpW-_avNRl_4HT4"
+        }
+      ]
+    },
+    {
+      "query": "will howard",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T04:10:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
+        "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
+        "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
+          "title": "Steelers' Will Howard: Working as emergency QB again",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
+        },
+        {
+          "url": "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
+          "title": "Will Howard News: Working as emergency QB again",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrliZyu5jtxFBGRMsjVaPrA7q2L-gxaKS3_GmpxBRr5aI1PSkPtWg4O6jMznU"
+        },
+        {
+          "url": "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622",
+          "title": "Steelers inactives for Week 10 vs. Bengals",
+          "publisher": "Steelers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpggy2FqQpMp-1h9QIn4lIBlCrT-W6jmEVH-y9IcOtVIDq7gLi1YMkFR8pYvI"
+        }
+      ]
+    },
+    {
+      "query": "donald trump iran war",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T03:40:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
+        "https://www.timesofisrael.com/liveblog-november-16-2026/",
+        "https://www.aa.com.tr/en/americas/uss-theodore-roosevelt-to-join-2-us-aircraft-carriers-in-middle-east-within-next-day-report/4125964"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM-vsJxmB2zhrysHX1pBum9oKDlpCOP-ptRRRNWk4QgnT8ZY3fwBXfbJkfDpk",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
+          "title": "Iran war live: Third US carrier arrives, Iran warns it could strike first",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM-vsJxmB2zhrysHX1pBum9oKDlpCOP-ptRRRNWk4QgnT8ZY3fwBXfbJkfDpk"
+        },
+        {
+          "url": "https://www.timesofisrael.com/liveblog-november-16-2026/",
+          "title": "Third US aircraft carrier said to arrive in Mideast as Washington shores up troops",
+          "publisher": "The Times of Israel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4EZeuWxrJY2zVuue-zHWPN1zhvp8EbvuIg5qTFVXhsBwiSQFm6jpR1D_u11U"
+        },
+        {
+          "url": "https://www.aa.com.tr/en/americas/uss-theodore-roosevelt-to-join-2-us-aircraft-carriers-in-middle-east-within-next-day-report/4125964",
+          "title": "USS Theodore Roosevelt to join 2 US aircraft carriers in Middle East within next day: Report",
+          "publisher": "Anadolu Ajansı",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2_ozVIKm85Vm7mLg75S06PdcNE5DClzb57jDLe-rnWOWlDfK0SH5jMwUuGhc"
         }
       ]
     },
     {
       "query": "oklahoma city thunder vs sacramento kings match player stats",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-16T03:40:00Z",
       "related_news_urls": [
         "https://www.covers.com/sport/hockey/nhl/matchup/382613/picks",
@@ -73,6 +178,41 @@
           "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs"
+        }
+      ]
+    },
+    {
+      "query": "governors awards 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T03:30:00Z",
+      "related_news_urls": [
+        "https://www.vogue.com/slideshow/2026-governors-awards-red-carpet-best-looks",
+        "https://apnews.com/article/oscars-governors-awards-glenn-close-ridley-scott-0130441baef714d6730cddad29e35de5",
+        "https://deadline.com/gallery/governors-awards-photos-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWZhpmmAdiGDByHJaTwqhnwdfdk_thi9erNjRxHbkCMGTIZY0CEJHaAAtcoMs",
+      "image_credit": "Vogue",
+      "news": [
+        {
+          "url": "https://www.vogue.com/slideshow/2026-governors-awards-red-carpet-best-looks",
+          "title": "Governors Awards 2026: Fashion—All of the Best Looks From the Red Carpet",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWZhpmmAdiGDByHJaTwqhnwdfdk_thi9erNjRxHbkCMGTIZY0CEJHaAAtcoMs"
+        },
+        {
+          "url": "https://apnews.com/article/oscars-governors-awards-glenn-close-ridley-scott-0130441baef714d6730cddad29e35de5",
+          "title": "Glenn Close and Ridley Scott to get honorary Oscars at Governors Awards",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQbYSbhGNWRMs_7Ard5x2XZypD6U_wHaH4PRln_jJt6Mkotrt9161pnw-gcUs"
+        },
+        {
+          "url": "https://deadline.com/gallery/governors-awards-photos-2026/",
+          "title": "Governors Awards Red Carpet: Zendaya, Charlize Theron, Timothée Chalamet, Inde Navarrette & More",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjph7lNI6FuTYuAJcLufV2st5kFNvMgcmOMzyx-HuWKxx1j7yqvYcZ09tbq_I"
         }
       ]
     },
@@ -113,12 +253,38 @@
     },
     {
       "query": "kasparas jakučionis",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T03:10:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kasparas-jakucionis-scores-career-high-25-in-loss",
+        "https://www.rotowire.com/basketball/headlines/jock-landale-injury-wont-go-sunday-539323",
+        "https://www.cbssports.com/fantasy/basketball/news/hawks-jock-landale-downgraded-to-questionable-sunday/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4YdUtiPF5qKr_gQCw0_JIhF40a-Jxuiy4L7-_nCvlbrqWuDPuiqsN-qvdzVM",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kasparas-jakucionis-scores-career-high-25-in-loss",
+          "title": "Kasparas Jakučionis scores career-high 25 in loss",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4YdUtiPF5qKr_gQCw0_JIhF40a-Jxuiy4L7-_nCvlbrqWuDPuiqsN-qvdzVM"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/jock-landale-injury-wont-go-sunday-539323",
+          "title": "Jock Landale Injury: Won't go Sunday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbIdmKaOEBLnX7gQlnIj4pvGKxA1Si4Obi9K_pNsnWQRh5ezlF4RfghOvAjk8"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/hawks-jock-landale-downgraded-to-questionable-sunday/",
+          "title": "Hawks' Jock Landale: Downgraded to questionable Sunday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIk1AKzw5Ruvo5_uSI8aSkWblGoY2Jgmc2zcKgmsJMPU4poXQ2i6y2aUUGmjk"
+        }
+      ]
     },
     {
       "query": "tyler herro",
@@ -156,43 +322,8 @@
       ]
     },
     {
-      "query": "mike tomlin",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T03:00:00Z",
-      "related_news_urls": [
-        "https://www.profootballrumors.com/2026/11/mike-tomlin-expected-to-be-top-coaching-candidate-in-2027",
-        "https://elkodaily.com/sports/professional/nfl/article_df86cef5-e4f2-5915-9d29-c61010cec063.html",
-        "https://bleacherreport.com/articles/25532907-which-nfl-coordinators-should-be-nfls-next-top-head-coach-candidates"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIxGFoQ-e05wwtVExKN4enb_8PnejAbdRl9YKkFnz9MTzXOuxy7DtUEpp-V7o",
-      "image_credit": "NFL Rumors - ProFootballRumors.com",
-      "news": [
-        {
-          "url": "https://www.profootballrumors.com/2026/11/mike-tomlin-expected-to-be-top-coaching-candidate-in-2027",
-          "title": "Mike Tomlin Expected To Be Top Coaching Candidate In 2027",
-          "publisher": "NFL Rumors - ProFootballRumors.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIxGFoQ-e05wwtVExKN4enb_8PnejAbdRl9YKkFnz9MTzXOuxy7DtUEpp-V7o"
-        },
-        {
-          "url": "https://elkodaily.com/sports/professional/nfl/article_df86cef5-e4f2-5915-9d29-c61010cec063.html",
-          "title": "Mike Tomlin highlights 12 top coaching candidates for 2027 NFL offseason",
-          "publisher": "Elko Daily Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMpRb2OY_023p_OPGPT65zUzvntE6zTIpsI-KCDHv-AOyvva039guOjp_ah8"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25532907-which-nfl-coordinators-should-be-nfls-next-top-head-coach-candidates",
-          "title": "Which NFL Coordinators Should be NFL's Next Top Head Coach Candidates?",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8WB9sA8ZqobuzhAET_rlJ-KofHfULrKgvOie3zA4DtRRXclwWc1Oom0Jpg6U"
-        }
-      ]
-    },
-    {
       "query": "golden knights",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T03:00:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/fantasy/hockey/news/golden-knights-carter-hart-between-pipes-against-vancouver/",
@@ -222,111 +353,6 @@
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKa9CmF1FVRLUO9Mzrk09v-07N6Navpvvmp2a2z7ZYpviACoGdA0Kk_X1oEIk"
-        }
-      ]
-    },
-    {
-      "query": "liga mx femenil",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T02:50:00Z",
-      "related_news_urls": [
-        "https://www.mediotiempo.com/futbol/liga-mx-femenil/a-que-hora-juega-monterrey-vs-pachuca-horario-y-canal-cuartos-final-vuelta-liga-mx-femenil-2026",
-        "https://www.rayados.com/es/noticias/21677/rayadas-va-por-el-pase-a-la-semifinal",
-        "https://criteriohidalgo.com/la-copa/pachuca-femenil/adios-al-apertura-2026-asi-se-consumo-la-eliminacion-de-tuzas-en-el-bbva"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTojG501Bvhh2tN6ky-NKBrU17Hzr_c3FOn6L61psz3KKlx4X0ChDmAur7BU4A",
-      "image_credit": "Mediotiempo",
-      "news": [
-        {
-          "url": "https://www.mediotiempo.com/futbol/liga-mx-femenil/a-que-hora-juega-monterrey-vs-pachuca-horario-y-canal-cuartos-final-vuelta-liga-mx-femenil-2026",
-          "title": "Monterrey vs. Pachuca.EN VIVO Cuartos de Final Partido de Vuelta EN DIRECTO Liga MX Femenil 2026",
-          "publisher": "Mediotiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTojG501Bvhh2tN6ky-NKBrU17Hzr_c3FOn6L61psz3KKlx4X0ChDmAur7BU4A"
-        },
-        {
-          "url": "https://www.rayados.com/es/noticias/21677/rayadas-va-por-el-pase-a-la-semifinal",
-          "title": "¡RAYADAS VA POR EL PASE A LA SEMIFINAL!",
-          "publisher": "Rayados",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROAAcmgRTj-pEujKbTKeMHIx6MMnQc0a3_ipnJNByTdBp8HBESpAUmHdOqKcY"
-        },
-        {
-          "url": "https://criteriohidalgo.com/la-copa/pachuca-femenil/adios-al-apertura-2026-asi-se-consumo-la-eliminacion-de-tuzas-en-el-bbva",
-          "title": "¡Adiós al Apertura 2026! Así se consumó la eliminación de Tuzas en el BBVA",
-          "publisher": "Criterio Hidalgo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgyMKP6YdFvS8aBKJJfBy8KxaGqcqH0QgocgwyDDN-E57a-ZJcJ3FoOg9iRuE"
-        }
-      ]
-    },
-    {
-      "query": "vegas golden knights",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T02:50:00Z",
-      "related_news_urls": [
-        "https://global.espn.com/football/story/_/id/50471924/song-ui-young-gives-lions-one-moment-roar-paraguay-hand-singapore-lesson-levels",
-        "https://www.bbc.com/sport/football/live/cr0qkjj3e11xt",
-        "https://www.cochraneeagle.ca/classifieds/homes-rentals-and-real-estate/cochrane-open-houses/2175028"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6BVi8OqYPOfV1Up_9eF2D81gfbkdCTLG8tccPPfEC_EUiGk_xcje3tnlgxOI",
-      "image_credit": "ESPN Global",
-      "news": [
-        {
-          "url": "https://global.espn.com/football/story/_/id/50471924/song-ui-young-gives-lions-one-moment-roar-paraguay-hand-singapore-lesson-levels",
-          "title": "Song Ui-Young gives Lions one moment to roar as Paraguay hand Singapore lesson in levels",
-          "publisher": "ESPN Global",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6BVi8OqYPOfV1Up_9eF2D81gfbkdCTLG8tccPPfEC_EUiGk_xcje3tnlgxOI"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/cr0qkjj3e11xt",
-          "title": "Singapore vs Paraguay: Friendlies stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKslrteTvaj5lVdAHSjo5ctBYlIYykUkxKdNQx7xOhYQOY9ULLie9HYo-ZsYc"
-        },
-        {
-          "url": "https://www.cochraneeagle.ca/classifieds/homes-rentals-and-real-estate/cochrane-open-houses/2175028",
-          "title": "NHL**Calgary Flames vs Anaheim Ducks Live Free NHL On TV Coverage 2026",
-          "publisher": "Cochrane Eagle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJdwFeVP7MTk7JEKVeoudroUkHn2W9YMEG-aPw1BeGg8ZPuTCRiQyXXEJ9AGY"
-        }
-      ]
-    },
-    {
-      "query": "oregon state vs arizona",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T02:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50494734/game-highlights",
-        "https://gousfbulls.com/news/2026/11/15/womens-basketball-south-florida-dominates-fiu-in-69-35-victory",
-        "https://ripcityradio.iheart.com/content/2026-11-15-oregon-state-vs-arizona-tv-stream-nov-15/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNOeqEOT8QiDvgxbKpb7FSNZbq_truLgL0q3Q1OOfOOIaUXHagMANdPvmafH4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50494734/game-highlights",
-          "title": "Florida International Panthers vs. South Florida Bulls: Game Highlights",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNOeqEOT8QiDvgxbKpb7FSNZbq_truLgL0q3Q1OOfOOIaUXHagMANdPvmafH4"
-        },
-        {
-          "url": "https://gousfbulls.com/news/2026/11/15/womens-basketball-south-florida-dominates-fiu-in-69-35-victory",
-          "title": "South Florida women's basketball forces 25 turnovers in 69-35 win over FIU",
-          "publisher": "USF Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHbLSRQnvZqeix63TSicYqHGXc_ru4WjX17ZKXShv6TP_LBnCuP8oqZBjPBsQ"
-        },
-        {
-          "url": "https://ripcityradio.iheart.com/content/2026-11-15-oregon-state-vs-arizona-tv-stream-nov-15/",
-          "title": "Oregon State vs. Arizona TV & Stream – Nov. 15",
-          "publisher": "Rip City Radio 620 Portland",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwDZP4upvi-ITcAsH-k15xBEdontowE6kgYXqi5c-W0kL0FXQvz1aMPLTI09o"
         }
       ]
     }
