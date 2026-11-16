@@ -18,5 +18,17 @@ function applyPresentation(){
 applyPresentation();
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)applyPresentation()});
 // If the page remains open across midnight, change it during the same session.
-const clock=window.setInterval(applyPresentation,60_000);
-window.addEventListener('pagehide',()=>window.clearInterval(clock),{once:true});
+let clock=null;
+function startPresentationClock(){
+  applyPresentation();
+  if(clock!==null)return;
+  clock=window.setInterval(applyPresentation,60_000);
+}
+function stopPresentationClock(){
+  if(clock===null)return;
+  window.clearInterval(clock);
+  clock=null;
+}
+startPresentationClock();
+window.addEventListener('pagehide',stopPresentationClock);
+window.addEventListener('pageshow',startPresentationClock);
