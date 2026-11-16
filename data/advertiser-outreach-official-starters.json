@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "sourceCheckedOn": "2026-11-07",
+  "purpose": "Unsent outreach seed. All URLs were found on official provider or association websites; NOT a verified sponsor buyer list.",
+  "qualificationRules": "Use correct commercial team, verify source before send, no generated addresses, no mass mailing. Some entries sell their own ads or run affiliate programs.",
+  "records": [
+    {
+      "company": "Shop LC",
+      "sourceUrl": "https://www.shoplc.com/pages/press",
+      "route": "Brand/media partnerships; press form is not a booking",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "8MSolar",
+      "sourceUrl": "https://8msolar.com/contact/",
+      "route": "General sales; ask for marketing director",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Blue Star Ointment",
+      "sourceUrl": "https://bluestarointment.com/",
+      "route": "Official brand website, contact unknown",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Kenvue",
+      "sourceUrl": "https://www.kenvue.com/contact-us",
+      "route": "General/vendor contact; Neosporin category",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Heritage Auctions",
+      "sourceUrl": "https://www.ha.com/c/contact-us.zx?topicId=28",
+      "route": "General contact; request partnership routing",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "iCollector",
+      "sourceUrl": "https://www.icollector.com/contact.aspx",
+      "route": "Public contact form; request business development",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "PCGS",
+      "sourceUrl": "https://partner.pcgs.com/shopadpartner",
+      "route": "Its own advertising program; media collaboration only",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "NGC",
+      "sourceUrl": "https://www.ngccoin.com/contact/",
+      "route": "General verified contact",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Coin World",
+      "sourceUrl": "https://www.coinworld.com/contact-us/advertising",
+      "route": "Its own media sales; cross-promotion or benchmarking",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Numismatic News",
+      "sourceUrl": "https://www.numismaticnews.net/collecting-101/advertise",
+      "route": "Its own media sales; cross-promotion or benchmarking",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Numista",
+      "sourceUrl": "https://en.numista.com/advertising.php",
+      "route": "Its own publisher media kit; benchmark, not inferred sponsor",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "American Numismatic Association",
+      "sourceUrl": "https://www.money.org/advertising/",
+      "route": "Own ad sales; cross-promotion/benchmark",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Coin World Marketplace",
+      "sourceUrl": "https://www.coinworld.market/Marketplace/MediaKit",
+      "route": "Own ad sales; benchmarking",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "eBay",
+      "sourceUrl": "https://www.ebay.com/help/-/-/eBay_Partner_Network?id=4662",
+      "route": "Official affiliate program, commission not sponsorship",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Etsy",
+      "sourceUrl": "https://help.etsy.com/hc/en-us/articles/360000335987-The-Etsy-Affiliates-Program-and-Creator-Collective",
+      "route": "Official affiliate program, commissions subject to terms",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Amazon Associates",
+      "sourceUrl": "https://affiliate-program.amazon.com/",
+      "route": "Official affiliate program; third-party brand assets license",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Best Buy",
+      "sourceUrl": "https://www.bestbuy.com/site/misc/best-buy-affiliate-program/pcmcat198500050002.c?id=pcmcat198500050002",
+      "route": "Official affiliate program",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Best Buy Ads",
+      "sourceUrl": "https://www.bestbuyads.com/capabilities/ads",
+      "route": "Own retail-media ad sales; partnership discussion",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Walmart Connect",
+      "sourceUrl": "https://developer.walmart.com/advertising-partners",
+      "route": "Official retail-media partner program",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Target Roundel",
+      "sourceUrl": "https://corporate.target.com/press/fact-sheet/2023/10/roundel",
+      "route": "Program fact sheet; contact not verified",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Shopify",
+      "sourceUrl": "https://www.shopify.com/partners/find-a-partner",
+      "route": "Official integration partners directory",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Harley-Davidson",
+      "sourceUrl": "https://www.harley-davidson.com/us/en/customer-service/contact-us.html",
+      "route": "Corporate contact; press channel not for sales",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "McDonald's",
+      "sourceUrl": "https://www.mcdonalds.com/us/en-us/contact-us.html",
+      "route": "General contact; marketing route not verified",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "PepsiCo",
+      "sourceUrl": "https://www.pepsico.com/en/brands",
+      "route": "Official brand inquiry; media relations not for sales",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    },
+    {
+      "company": "Toy Association",
+      "sourceUrl": "https://www.toyassociation.org/toyfair/contact-us.aspx",
+      "route": "Official event sponsorship inquiry; different from paid QuantaPhi sponsorship",
+      "contactState": "not_contacted",
+      "paidSponsorVerified": false
+    }
+  ]
+}
