@@ -9,6 +9,10 @@ for(const [path,slug,route,title] of cases){
   const end=html.toLowerCase().indexOf('</head>');
   const head=start>=0&&end>start?html.slice(start,end):'';
   assert.ok(head,'head must exist');
+  const charset=head.match(/<meta\b\s+charset\s*=\s*['"]utf-8['"]\s*\/?>/i);
+  assert.ok(charset,path+' missing UTF-8 declaration');
+  const charsetEnd=start+charset.index+charset[0].length;
+  assert.ok(Buffer.byteLength(html.slice(0,charsetEnd),'utf8')<=1024,path+' UTF-8 declaration must finish within the first 1024 bytes');
   const img='https://quantaphi.org/assets/share/pages/'+slug+'.png?v=20261115';
   const canonical='https://quantaphi.org'+route;
   for(const marker of ['property="og:title"','property="og:description"','property="og:image"','name="twitter:card" content="summary_large_image"','name="twitter:image"','name="twitter:title"','name="twitter:description"','content="'+img+'"','href="'+canonical+'"'])assert.ok(head.includes(marker),path+' missing '+marker);
