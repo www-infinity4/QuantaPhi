@@ -3,97 +3,237 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T22:01:36.482588Z",
+  "checked_at": "2026-11-16T22:31:13.416989Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "car chase",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T21:40:00Z",
+      "query": "united airlines",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-16T22:10:00Z",
       "related_news_urls": [
-        "https://www.nbcwashington.com/news/local/1-shot-by-park-police-after-fleeing-in-prince-georges-county/4183596/",
-        "https://komonews.com/news/nation-world/prince-georges-county-maryland-md4-pennsylvania-avenue-spaulding-us-park-police-pgpd-road-closures-traffic-alert-police-chase-shooting-investigation-alternate-route-delays-maryland-crime-car",
-        "https://www.wusa9.com/article/news/police/us-park-police-pursuit-shooting-prince-georges-county/65-20764733-802c-4ff7-a16d-185fbe281b7b"
+        "https://www.wmur.com/article/united-airlines-experiencing-widespread-system-outage-just-days-after-nationwide-ground-stop/74444477",
+        "https://www.nbcchicago.com/news/local/united-flights-delayed-amid-widespread-systemwide-outage/4017556/",
+        "https://www.themirror.com/news/us-news/united-airlines-planes-cant-take-2112724"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7CRmuIwRbvHNFM-isuEsZUuCP4RgBc_LNFQg9Yp99GaPWwixwMo2_MJE7N5c",
-      "image_credit": "NBC4 Washington",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReqP6kFQ_E6YC81S7Qb5xWfraY1cNMovBAnaFGzS1yHx4CZHaq3g7Hx_sT2U4",
+      "image_credit": "WMUR",
       "news": [
         {
-          "url": "https://www.nbcwashington.com/news/local/1-shot-by-park-police-after-fleeing-in-prince-georges-county/4183596/",
-          "title": "Woman dead after Park Police officer shot her during chase into Prince George's",
-          "publisher": "NBC4 Washington",
+          "url": "https://www.wmur.com/article/united-airlines-experiencing-widespread-system-outage-just-days-after-nationwide-ground-stop/74444477",
+          "title": "United Airlines experiencing 'widespread system outage' just days after nationwide ground stop",
+          "publisher": "WMUR",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7CRmuIwRbvHNFM-isuEsZUuCP4RgBc_LNFQg9Yp99GaPWwixwMo2_MJE7N5c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReqP6kFQ_E6YC81S7Qb5xWfraY1cNMovBAnaFGzS1yHx4CZHaq3g7Hx_sT2U4"
         },
         {
-          "url": "https://komonews.com/news/nation-world/prince-georges-county-maryland-md4-pennsylvania-avenue-spaulding-us-park-police-pgpd-road-closures-traffic-alert-police-chase-shooting-investigation-alternate-route-delays-maryland-crime-car",
-          "title": "Woman dead after shot by US Park Police after chase of stolen vehicle",
-          "publisher": "KOMO",
+          "url": "https://www.nbcchicago.com/news/local/united-flights-delayed-amid-widespread-systemwide-outage/4017556/",
+          "title": "United flights delayed amid widespread systemwide outage",
+          "publisher": "NBC 5 Chicago",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSP14frFv-3AItGj-YcvTJpBWA25prshO8NKu__2pB-JZQ95GcnQeBXhTpQuE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlZIpKElrPk1UbacWRKIhUo5ORsrH5gZwkQo1NnVv0Qa5YCVn7WmBXuqpixRM"
         },
         {
-          "url": "https://www.wusa9.com/article/news/police/us-park-police-pursuit-shooting-prince-georges-county/65-20764733-802c-4ff7-a16d-185fbe281b7b",
-          "title": "US Park Police officer shoots person after pursuit in Prince George's Co.",
-          "publisher": "WUSA9",
+          "url": "https://www.themirror.com/news/us-news/united-airlines-planes-cant-take-2112724",
+          "title": "United Airlines planes can’t take off again due to system-wide computer outage",
+          "publisher": "The Mirror US",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGvTHA9duaWXlL5QqwdNi7mlTz32-qfXZBxM2pqwdsOMEKOX78_-g6qwOVV-o"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaApGdoZojzLABMmW4YkoXI20XOHFUKBJ8dV0MSaxyzlavN-C9qa9nseKRtqk"
         }
       ]
     },
     {
-      "query": "the motley fool",
+      "query": "greece national football team vs serbia national football team standings",
       "approx_searches": "500+",
-      "published_at": "2026-11-16T21:40:00Z",
+      "published_at": "2026-11-16T22:00:00Z",
       "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/16/3-financial-stocks-to-buy-and-hold-that-turned-100/",
-        "https://247wallst.com/investing/2026/11/16/2-safe-sp-500-financial-dividend-stocks-boomers-can-buy-and-hold-forever/",
-        "https://finance.yahoo.com/markets/stocks/articles/3-financial-stocks-buy-hold-192200717.html"
+        "https://www.bbc.com/sport/football/live/cwdd17q8y4lgt",
+        "https://sports.yahoo.com/articles/greece-vs-serbia-lineups-live-181500808.html",
+        "https://www.reutersconnect.com/item/uefa-nations-league-group-a2-greece-v-serbia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxS0g1QlQ"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8dYYmsxk8IEyqGezDAd0l9hmcwuuld1B7V2WVhhEunIf5bjZjjUSSbu8ICh0",
-      "image_credit": "The Motley Fool",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.fool.com/investing/2026/11/16/3-financial-stocks-to-buy-and-hold-that-turned-100/",
-          "title": "3 Financial Stocks to Buy and Hold That Turned $1,000 Into More Than $5,000 Over the Past Decade, Counting Dividends",
-          "publisher": "The Motley Fool",
+          "url": "https://www.bbc.com/sport/football/live/cwdd17q8y4lgt",
+          "title": "Greece vs Serbia: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8dYYmsxk8IEyqGezDAd0l9hmcwuuld1B7V2WVhhEunIf5bjZjjUSSbu8ICh0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
         },
         {
-          "url": "https://247wallst.com/investing/2026/11/16/2-safe-sp-500-financial-dividend-stocks-boomers-can-buy-and-hold-forever/",
-          "title": "2 Safe S&P 500 Financial Dividend Stocks Boomers Can Buy and Hold Forever",
-          "publisher": "24/7 Wall St.",
+          "url": "https://sports.yahoo.com/articles/greece-vs-serbia-lineups-live-181500808.html",
+          "title": "Greece vs. Serbia Lineups, Live Streaming, TV Channels: How & Where to Watch UEFA Nations League",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRT2YhOEwcfAwTGJ3xyfBDKnKOpRxkgZvSIWDvt56i9svePNmWUZg_2xQF-Hqs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcsB6lyqUH5RnuqzYF0KOF2cJP7WsEiZHNAlKN0clX6ToPJDQ09pe2iBB2474"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/3-financial-stocks-buy-hold-192200717.html",
-          "title": "3 Financial Stocks to Buy and Hold That Turned $1,000 Into More Than $5,000 Over the Past Decade, Counting Dividends",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.reutersconnect.com/item/uefa-nations-league-group-a2-greece-v-serbia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxS0g1QlQ",
+          "title": "Licensable picture: UEFA Nations League - Group A2 - Greece v Serbia",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwTRUWiUCP9ULA_AUbpl3HfN-Q2wtuwLRFoX9TPDSoYkS2MFcSZMwknmXr6pU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgL6KtDZxRiGMBD6RPMYVDn9890vqTQK440YQkrTqvL-0IEhMhy58ZdbpKoTs"
+        }
+      ]
+    },
+    {
+      "query": "virginia teen house party bodycam",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T22:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/us/virginia-parents-charged-house-party-hundreds-teens-fireworks-alleged-underage-drinking",
+        "https://www.cbsnews.com/detroit/video/parents-charged-after-party-for-teens-gets-out-of-control/",
+        "https://fcpdnews.org/2026/11/12/mclean-homeowners-charged-following-large-underage-drinking-party/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWY7tWzSEzETptffhSlrhwZDu7MiUxJ9Keazd9qXmGtLDKPolF9yHQOR7H4Cs",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/us/virginia-parents-charged-house-party-hundreds-teens-fireworks-alleged-underage-drinking",
+          "title": "Virginia parents charged after house party draws hundreds of teens, fireworks and alleged underage drinking",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWY7tWzSEzETptffhSlrhwZDu7MiUxJ9Keazd9qXmGtLDKPolF9yHQOR7H4Cs"
+        },
+        {
+          "url": "https://www.cbsnews.com/detroit/video/parents-charged-after-party-for-teens-gets-out-of-control/",
+          "title": "Parents charged after party for teens gets out of control",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefUzLJuB_KjW8WbPIFLZM6E8hC4doJDAotNHzNwudT8WtxSV7ZimNc-1GZ5I"
+        },
+        {
+          "url": "https://fcpdnews.org/2026/11/12/mclean-homeowners-charged-following-large-underage-drinking-party/",
+          "title": "McLean Homeowners Charged Following Large Underage Drinking Party",
+          "publisher": "Fairfax County Police Department News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-_U2Dyrp8qmYz82_YJXid8rvCi9_cuRhiiNYcq2XlxQdALnU-H5CLtQ1gigI"
+        }
+      ]
+    },
+    {
+      "query": "trump dhs foreign student rules overturned",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T21:50:00Z",
+      "related_news_urls": [
+        "https://www.fragomen.com/insights/united-states-federal-court-vacates-fixed-terms-of-admission-for-f-j-and-i-nonimmigrants.html",
+        "https://www.statnews.com/2026/11/16/judge-rejects-visa-limits-international-researchers-upholds-duration-of-status-policy/",
+        "https://www.lemonde.fr/en/international/article/2026/11/16/us-judge-strikes-down-new-visa-rules-for-foreign-students-and-journalists_6782437_4.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKk6FgVlr0BUpoPKzmsvhE2U85E9HkT464VmWAV98OOPIUmQdsnF0H6MY4yA",
+      "image_credit": "Fragomen",
+      "news": [
+        {
+          "url": "https://www.fragomen.com/insights/united-states-federal-court-vacates-fixed-terms-of-admission-for-f-j-and-i-nonimmigrants.html",
+          "title": "United States: Federal Court Vacates Fixed Terms of Admission for F, J, and I Nonimmigrants",
+          "publisher": "Fragomen",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKk6FgVlr0BUpoPKzmsvhE2U85E9HkT464VmWAV98OOPIUmQdsnF0H6MY4yA"
+        },
+        {
+          "url": "https://www.statnews.com/2026/11/16/judge-rejects-visa-limits-international-researchers-upholds-duration-of-status-policy/",
+          "title": "Federal judge issues final ruling blocking U.S. plan to limit visa length for grad students, postdocs",
+          "publisher": "STAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxNCaEnlBQe1BG9612_M87YZxthheoYVBAmt5ewu-Jtbh1gkKhdb4EbodM8mU"
+        },
+        {
+          "url": "https://www.lemonde.fr/en/international/article/2026/11/16/us-judge-strikes-down-new-visa-rules-for-foreign-students-and-journalists_6782437_4.html",
+          "title": "US judge strikes down new visa rules for foreign students and journalists",
+          "publisher": "Le Monde.fr",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhRaSqwtQeWZCWVJbu9xFgfUNH8rlKXvYW2rGgPv5JwKBrRIFotHhJfda84lc"
+        }
+      ]
+    },
+    {
+      "query": "germany national football team vs netherlands national football team standings",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-16T21:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmly7wxld228t",
+        "https://www.espn.com/soccer/report/_/gameId/401861185",
+        "https://www.aljazeera.com/sports/liveblog/2026/11/16/live-germany-vs-netherlands-uefa-nations-league"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmly7wxld228t",
+          "title": "Germany vs Netherlands: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://www.espn.com/soccer/report/_/gameId/401861185",
+          "title": "Germany 5-0 Netherlands (Nov 16, 2026) Game Analysis",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJBFfj2SnAZD2dJOaqO2_4binjOqfWJpVnrER3QL6UYcd9UvFmEYVK7j3nOZ8"
+        },
+        {
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/11/16/live-germany-vs-netherlands-uefa-nations-league",
+          "title": "Germany 5-0 Netherlands – UEFA Nations League as it happened",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPTxTS--sI2Z2EiSu78QEAZq38eJKMcb5WlgvG-fo8HX-igN1JCf0jU84-hR0"
+        }
+      ]
+    },
+    {
+      "query": "car chase",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T21:40:00Z",
+      "related_news_urls": [
+        "https://www.11alive.com/article/news/local/hwy-78-loganville-crash/85-1d79114f-e49c-4ff2-a9e7-b2b9f7be908f",
+        "https://www.cbsnews.com/atlanta/news/4-year-old-critically-injured-in-crash-during-police-chase-in-loganville/",
+        "https://www.fox5atlanta.com/news/fleeing-driver-caught-after-hwy-78-crash-leaves-4-year-old-critical"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr2UEmTtfgMBPzkUvZcKYWNuIfwUWeZgdr9ljvG_Oa7eVPipCzPPFABj_Nvds",
+      "image_credit": "11Alive.com",
+      "news": [
+        {
+          "url": "https://www.11alive.com/article/news/local/hwy-78-loganville-crash/85-1d79114f-e49c-4ff2-a9e7-b2b9f7be908f",
+          "title": "4-year-old critically injured, multiple others hurt after woman fleeing pursuit causes crash in Loganville",
+          "publisher": "11Alive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr2UEmTtfgMBPzkUvZcKYWNuIfwUWeZgdr9ljvG_Oa7eVPipCzPPFABj_Nvds"
+        },
+        {
+          "url": "https://www.cbsnews.com/atlanta/news/4-year-old-critically-injured-in-crash-during-police-chase-in-loganville/",
+          "title": "4-year-old critically injured in crash during police chase in Loganville",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1zbTjdNDXNj6y_0GoZ61VgUuHpEjoOdb4xbir1SrsofkMjBdbVdbNsfYRu94"
+        },
+        {
+          "url": "https://www.fox5atlanta.com/news/fleeing-driver-caught-after-hwy-78-crash-leaves-4-year-old-critical",
+          "title": "Fleeing driver caught after Hwy. 78 crash leaves 4-year-old critical",
+          "publisher": "FOX 5 Atlanta",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHadZfLGKEqUjGwikx7GP_vcTnB0zIWLfHV8T2U3k4kfVGXNZLW_-EvJhSC8w"
         }
       ]
     },
     {
       "query": "ed bastian",
-      "approx_searches": "200+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-16T21:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/15/us/router-network-faa-airline-ground-stop.html",
+        "https://www.cnn.com/2026/11/16/us/faa-ground-stop-thanksgiving-travel",
         "https://apnews.com/article/faa-ground-stop-air-traffic-control-023aa7d681da357310274f750da7ad4e",
         "https://www.wsj.com/business/airlines/the-defense-contractor-at-the-center-of-the-ground-stop-e20c4173"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7O6w5upc5uK1eU1f3NQ46cqwD70zd6B-i_lz_rwEA2Sdk0Vb4Q7ji90ejf00",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyOtI-Z6oVeqNl0xNFHFI7kncAAaP5H5gc_CD3sOAGYie-1MconDjX57fPCVc",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/15/us/router-network-faa-airline-ground-stop.html",
-          "title": "What to Know About the Cause of the FAA’s Nationwide Ground Stop",
-          "publisher": "The New York Times",
+          "url": "https://www.cnn.com/2026/11/16/us/faa-ground-stop-thanksgiving-travel",
+          "title": "With the busiest travel season ahead, how likely is it that another FAA ground stop happens?",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7O6w5upc5uK1eU1f3NQ46cqwD70zd6B-i_lz_rwEA2Sdk0Vb4Q7ji90ejf00"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyOtI-Z6oVeqNl0xNFHFI7kncAAaP5H5gc_CD3sOAGYie-1MconDjX57fPCVc"
         },
         {
           "url": "https://apnews.com/article/faa-ground-stop-air-traffic-control-023aa7d681da357310274f750da7ad4e",
@@ -112,13 +252,48 @@
       ]
     },
     {
+      "query": "the motley fool",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T21:40:00Z",
+      "related_news_urls": [
+        "https://www.fool.com/investing/2026/11/15/history-says-every-sp-500-bear-market-has-ended-th/",
+        "https://www.barrons.com/articles/retirement-accounts-invest-markets-9c043de5",
+        "https://www.aol.com/articles/invest-now-wait-until-2027-152400000.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4GD643N9OWU5af66rvv64Z87Uw_U4e9QbeIvyRE8X-nB9BDQhS4vVOghGySI",
+      "image_credit": "The Motley Fool",
+      "news": [
+        {
+          "url": "https://www.fool.com/investing/2026/11/15/history-says-every-sp-500-bear-market-has-ended-th/",
+          "title": "History Says Every S&P 500 Bear Market Has Ended the Same Way. Here's the Pattern.",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4GD643N9OWU5af66rvv64Z87Uw_U4e9QbeIvyRE8X-nB9BDQhS4vVOghGySI"
+        },
+        {
+          "url": "https://www.barrons.com/articles/retirement-accounts-invest-markets-9c043de5",
+          "title": "3 Moves Retirees Can Make in a Nervous Market",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLkZaT8BVk4ZnZrnlGf3EfsxnQOoVfR8lhTYLe4gukELgstJtTR6rhjv_-3Nw"
+        },
+        {
+          "url": "https://www.aol.com/articles/invest-now-wait-until-2027-152400000.html",
+          "title": "Should You Invest Now or Wait Until 2027? Here's What a Century of History Says.",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ76M5uVouB6yIi1opX57DG7fdkj3cFA6tfZgBwnfPFyFDprUpbKrS69AHX3e4"
+        }
+      ]
+    },
+    {
       "query": "malta vs gibraltar",
       "approx_searches": "1000+",
       "published_at": "2026-11-16T21:30:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cqrmgw1yj3dkt",
-        "https://www.squawka.com/en/news/previews/gibraltar-vs-malta-predictions-betting-tips-16-11-26/",
-        "https://sport.timesofmalta.com/2026/11/16/154239/"
+        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-gibraltar-v-malta/blt5218aafb14835b34",
+        "https://www.squawka.com/en/news/previews/gibraltar-vs-malta-predictions-betting-tips-16-11-26/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
       "image_credit": "BBC",
@@ -131,18 +306,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
         },
         {
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-gibraltar-v-malta/blt5218aafb14835b34",
+          "title": "Gibraltar vs Malta: TV channel, live stream and kick-off time for UEFA Nations League D fixture",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGoHR3r7p9mbWbnJctFOSKkdQV6Of5OQHs0fEBD4-TBQk0-EOb2dwSyTlL3XI"
+        },
+        {
           "url": "https://www.squawka.com/en/news/previews/gibraltar-vs-malta-predictions-betting-tips-16-11-26/",
           "title": "Gibraltar vs Malta predictions and betting tips: Hosts fancied to repeat their point against the favourites",
           "publisher": "Squawka",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOtqRNLpKOrovx50y-eERxmj0Ev1h3C45QGapOMOFaFaBT30gaCrHSL5uDdcw"
-        },
-        {
-          "url": "https://sport.timesofmalta.com/2026/11/16/154239/",
-          "title": "Malta coach De Leo eyes statement win in Gibraltar",
-          "publisher": "SportsDesk",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8BWfbkRMF9v-n0rU4nBKeEeKVs1ihWgG-z5iBfxgQ6cWJo2rmWMNgUr0LDsE"
         }
       ]
     },
@@ -152,8 +327,8 @@
       "published_at": "2026-11-16T21:20:00Z",
       "related_news_urls": [
         "https://www.ncaa.com/news/soccer-women/article/2026-11-09/2026-di-womens-soccer-championship-selection-show-info-bracket-schedule",
-        "https://dailyorange.com/2026/11/inside-the-numbers-behind-another-woeful-syracuse-womens-soccer-campaign/",
-        "https://athletics.hope.edu/news/2026/11/9/general-womens-soccer-st-louis-bound-mens-soccer-traveling-to-cleveland-for-ncaa-championships.aspx"
+        "https://www.usatoday.com/story/sports/college/soccer/2026/11/15/ncaa-womens-soccer-bracket-prediction-tournament-selection-show/92735798007/",
+        "https://dailyorange.com/2026/11/inside-the-numbers-behind-another-woeful-syracuse-womens-soccer-campaign/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSso824CQ3smggXuONgqUovw2C7eR5PXSlyeEeaSXMcl2cqWf_13su6Jf3CaOQ",
       "image_credit": "NCAA.com",
@@ -166,193 +341,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSso824CQ3smggXuONgqUovw2C7eR5PXSlyeEeaSXMcl2cqWf_13su6Jf3CaOQ"
         },
         {
+          "url": "https://www.usatoday.com/story/sports/college/soccer/2026/11/15/ncaa-womens-soccer-bracket-prediction-tournament-selection-show/92735798007/",
+          "title": "NCAA women's soccer bracket projections, final field prediction for selection show",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPw-W0398v2YRKopvFVsNbVPUI8SDza80r_Q2h7UEUsSe755sIXPBjG01jtBY"
+        },
+        {
           "url": "https://dailyorange.com/2026/11/inside-the-numbers-behind-another-woeful-syracuse-womens-soccer-campaign/",
           "title": "Inside the numbers behind another woeful Syracuse women’s soccer campaign",
           "publisher": "The Daily Orange",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaOZ2ztdfaP9uymflSetcXfBmJItC-jfPTMLwG2ReF2T6lCDlc-xTKLGq12xg"
-        },
-        {
-          "url": "https://athletics.hope.edu/news/2026/11/9/general-womens-soccer-st-louis-bound-mens-soccer-traveling-to-cleveland-for-ncaa-championships.aspx",
-          "title": "Women's Soccer St. Louis-Bound, Men's Soccer Traveling to Cleveland for NCAA Championships",
-          "publisher": "Hope College",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTboRUAF0SApk84sqelbSI6UTBX_CqithBQpgHWGy5Hmz0upRo29YIgVuPUhn4"
-        }
-      ]
-    },
-    {
-      "query": "spacex stocks",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T21:10:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/articles/why-spacex-stock-down-historic-starship-catch-ec692e2b",
-        "https://seekingalpha.com/article/4967990-spacex-math-says-69-percent-downside",
-        "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/11/63306262/spacex-stock-to-double-analyst-says-company-completed-the-missing-piece-of-the-reusability-puzzle"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFxjTg0OMoJDoQU9N5zqY02xTQZ0VdCyjOCZppS_GxY1ZAMdyAvFDb2_NQgtU",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/articles/why-spacex-stock-down-historic-starship-catch-ec692e2b",
-          "title": "Why SpaceX Stock Is Down After Its Historic Starship Catch",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFxjTg0OMoJDoQU9N5zqY02xTQZ0VdCyjOCZppS_GxY1ZAMdyAvFDb2_NQgtU"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4967990-spacex-math-says-69-percent-downside",
-          "title": "SpaceX: The Math Says 69% Downside (NASDAQ:SPCX)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sS9jTAp6kQzesyavUWewieWWELhfkzZT2dBvLLAQA_UMmsxK5zav4x5Y4g8"
-        },
-        {
-          "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/11/63306262/spacex-stock-to-double-analyst-says-company-completed-the-missing-piece-of-the-reusability-puzzle",
-          "title": "SpaceX Stock to Double? Analyst Says Company Completed ‘The Missing Piece of the Reusability Puzzle’",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUIvq9xXDupRQUICMQrASqNd--OyHUYlCEBazO0ZeCJTi6wkJAlf-l6r9isnk"
-        }
-      ]
-    },
-    {
-      "query": "katie holmes",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T21:10:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/katie-holmes-gwyneth-paltrow-black-jeans-amazon-november-2026-12252710",
-        "https://www.whowhatwear.com/fashion/celebrity-style/katie-holmes-white-jeans-leopard-print-shoes-outfit",
-        "https://www.harpersbazaar.com/uk/fashion/shopping/a74420391/katie-holmes-white-jeans/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCiuL61fLsby3Zt5ZKu89m70jBX-F46Lc9J89qSJcjihi6AD2NhlFjk0HK8S4",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/katie-holmes-gwyneth-paltrow-black-jeans-amazon-november-2026-12252710",
-          "title": "Katie Holmes and Gwyneth Paltrow Upgraded Their Blue Jeans for This Rich-Looking Denim Trend—From $32",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCiuL61fLsby3Zt5ZKu89m70jBX-F46Lc9J89qSJcjihi6AD2NhlFjk0HK8S4"
-        },
-        {
-          "url": "https://www.whowhatwear.com/fashion/celebrity-style/katie-holmes-white-jeans-leopard-print-shoes-outfit",
-          "title": "Katie Holmes Wore the Shoes That'll Make White Jeans Chic in 2027",
-          "publisher": "Who What Wear",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMkIkqdiSHZgklc9WLOOBBlAjQTx0xRyUrzRVnFuAtJIl3-YEl7KNk6jbiS0c"
-        },
-        {
-          "url": "https://www.harpersbazaar.com/uk/fashion/shopping/a74420391/katie-holmes-white-jeans/",
-          "title": "Katie Holmes' new 'white wash' jeans are winter's most expensive-looking denim trend: shop the best",
-          "publisher": "Harper's BAZAAR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIQbftIQCD6CHEF__IzwLg9JDzDIrID-v9vMPhZuGf8Ux3MaVRMuGWcHVsBOQ"
-        }
-      ]
-    },
-    {
-      "query": "clarence thomas first amendment warning",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T21:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/clarence-thomas-calls-foul-california-ruling-he-says-could-turn-citizens-government-mouthpieces",
-        "https://thehill.com/regulation/court-battles/6222413-supreme-court-california-medical-courses-bias-case-rejected/",
-        "https://www.newsweek.com/clarence-thomas-first-amendment-warning-court-rejects-case-12721358"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWZ_Lz7eTuyqD2kSS4TO7lxnEaAjJbHIwg4UBW8uRhJ8JBTYUgQqzg-OtdVQU",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/politics/clarence-thomas-calls-foul-california-ruling-he-says-could-turn-citizens-government-mouthpieces",
-          "title": "Clarence Thomas calls foul on California ruling he says could turn citizens into government mouthpieces",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWZ_Lz7eTuyqD2kSS4TO7lxnEaAjJbHIwg4UBW8uRhJ8JBTYUgQqzg-OtdVQU"
-        },
-        {
-          "url": "https://thehill.com/regulation/court-battles/6222413-supreme-court-california-medical-courses-bias-case-rejected/",
-          "title": "Supreme Court won’t review implicit bias mandate for California medical courses",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwoOI34XHSWD9mnCwKlM6z5U30Qt-Rc23ieF6o2vNJhXlE2pE980UeGzcVG0I"
-        },
-        {
-          "url": "https://www.newsweek.com/clarence-thomas-first-amendment-warning-court-rejects-case-12721358",
-          "title": "Clarence Thomas Issues First Amendment Warning After Court Rejects Case",
-          "publisher": "Newsweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1ZADv5Dt5ojBZ0Jcr7FwdQQo41SUvqWZtWsnXq98RHkyRB0Q7uXtCccsyCZc"
-        }
-      ]
-    },
-    {
-      "query": "bleeding green nation",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T21:00:00Z",
-      "related_news_urls": [
-        "https://www.giants.com/news/week-11-flex-scheduling-giants-vs-jaguars-moves-to-4-25-p-m-et-on-nov-22",
-        "https://sports.yahoo.com/articles/announcers-revealed-steelers-eagles-game-194826260.html",
-        "https://www.bleedinggreennation.com/philadelphia-eagles-odds/190414/eagles-vs-steelers-odds-week-11-opening-lines-point-spread-total"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnUrw5MmM4S2JdDl4SprIxi58tFSc47PVHczByh-bmGqtRZStwG4I39zny08I",
-      "image_credit": "Giants.com",
-      "news": [
-        {
-          "url": "https://www.giants.com/news/week-11-flex-scheduling-giants-vs-jaguars-moves-to-4-25-p-m-et-on-nov-22",
-          "title": "Week 11 Flex Scheduling: Giants vs. Jaguars moves to 4:25 p.m. ET on Nov. 22",
-          "publisher": "Giants.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnUrw5MmM4S2JdDl4SprIxi58tFSc47PVHczByh-bmGqtRZStwG4I39zny08I"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/announcers-revealed-steelers-eagles-game-194826260.html",
-          "title": "Announcers Revealed for Steelers-Eagles Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBBm08VxpJJuTdbtQ57XdWGTGvp15SelbVHpCl94NcTyHiLaGmKysIMg8I6cQ"
-        },
-        {
-          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-odds/190414/eagles-vs-steelers-odds-week-11-opening-lines-point-spread-total",
-          "title": "Eagles vs. Steelers odds: Opening lines for Week 11 matchup",
-          "publisher": "Bleeding Green Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR_-DH3j1v71nrlbw5n74ZITVxR8VDZUt7w6WaV5RqcROrIKiAnWsGqm3PWa0"
-        }
-      ]
-    },
-    {
-      "query": "drug recall",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T20:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcchicago.com/news/local/blood-pressure-medication-recall-metal-contamination-breckenridge-pharmaceutical-propranolol-hydrochloride-extended-release-capsules/4017424/",
-        "https://www.prnewswire.com/news-releases/breckenridge-pharmaceutical-inc-issues-voluntary-nationwide-consumer-level-recall-of-one-lot-of-propranolol-hydrochloride-extended-release-capsules-usp-60-mg-due-to-potential-metal-contamination-302940460.html",
-        "https://signalscv.com/2026/11/blood-pressure-medication-recalled-over-foreign-tablets/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvAC-GLjhU3kye-qhpoPJPbZ4lPa1yQcgmH_HxyGOBOjmqp0W1t5q30dcouOo",
-      "image_credit": "NBC 5 Chicago",
-      "news": [
-        {
-          "url": "https://www.nbcchicago.com/news/local/blood-pressure-medication-recall-metal-contamination-breckenridge-pharmaceutical-propranolol-hydrochloride-extended-release-capsules/4017424/",
-          "title": "Blood pressure medication recalled nationwide over possible metal contamination",
-          "publisher": "NBC 5 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvAC-GLjhU3kye-qhpoPJPbZ4lPa1yQcgmH_HxyGOBOjmqp0W1t5q30dcouOo"
-        },
-        {
-          "url": "https://www.prnewswire.com/news-releases/breckenridge-pharmaceutical-inc-issues-voluntary-nationwide-consumer-level-recall-of-one-lot-of-propranolol-hydrochloride-extended-release-capsules-usp-60-mg-due-to-potential-metal-contamination-302940460.html",
-          "title": "Breckenridge Pharmaceutical, Inc. Issues Voluntary Nationwide Consumer-Level Recall of One Lot of Propranolol Hydrochloride Extended-Release Capsules, USP, 60 mg, Due to Potential ",
-          "publisher": "PR Newswire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIf-zRgCtbRmw530MWuUbad2dwlNzFQUL_1YBY0499WXIdz69jvEv1Bn79e4c"
-        },
-        {
-          "url": "https://signalscv.com/2026/11/blood-pressure-medication-recalled-over-foreign-tablets/",
-          "title": "Blood pressure medication recalled over ‘foreign tablets’",
-          "publisher": "Santa Clarita Valley Signal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQt4f0bIcuF9SzM_U3yEDgml4slicpCwYAAmk36-06fRLtkP9AqeTOiEj6-mIY"
         }
       ]
     }
