@@ -3,340 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T06:01:45.426697Z",
+  "checked_at": "2026-11-16T06:52:45.057145Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "the body netflix cast",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T05:40:00Z",
+      "query": "black friday sales",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T06:30:00Z",
       "related_news_urls": [
-        "https://www.teenvogue.com/story/the-body-stars-kristina-bogic-sara-boustany-interview",
-        "https://www.imdb.com/name/nm10017808/mediaviewer/rm424077826/",
-        "https://gomag.com/article/the-body-stars-dish-on-electric-chemistry-between-their-characters/"
+        "https://www.al.com/shopping/2026/11/costcos-black-friday-sale-goes-live-this-week-get-a-45-shop-card-for-holiday-shopping-when-you-sign-up.html",
+        "https://www.zdnet.com/business/best-early-black-friday-membership-deals-2026-costco-sams-club-walmart-bjs/",
+        "https://www.foxnews.com/deals/costco-membership-deal"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQByYe1oviES1U3CZf6dC_ga_UP5wg3IqviRyOs26P9ZGgNvofZ5HEJ-x8ZYCM",
-      "image_credit": "Teen Vogue",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM8dcTTeGwXv0NY9LhtlMgiLmaYCS0XEEFPjm-inSjV_NMZWa2vAKUnH429qg",
+      "image_credit": "AL.com",
       "news": [
         {
-          "url": "https://www.teenvogue.com/story/the-body-stars-kristina-bogic-sara-boustany-interview",
-          "title": "In ‘The Body,’ Kristina Bogic and Sara Boustany Have Killer Chemistry as Anya and Elise",
-          "publisher": "Teen Vogue",
+          "url": "https://www.al.com/shopping/2026/11/costcos-black-friday-sale-goes-live-this-week-get-a-45-shop-card-for-holiday-shopping-when-you-sign-up.html",
+          "title": "Costco’s Black Friday sale goes live this week! Get a $45 Shop Card for holiday shopping when you sign up now",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQByYe1oviES1U3CZf6dC_ga_UP5wg3IqviRyOs26P9ZGgNvofZ5HEJ-x8ZYCM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM8dcTTeGwXv0NY9LhtlMgiLmaYCS0XEEFPjm-inSjV_NMZWa2vAKUnH429qg"
         },
         {
-          "url": "https://www.imdb.com/name/nm10017808/mediaviewer/rm424077826/",
-          "title": "Sara Boustany",
-          "publisher": "IMDb",
+          "url": "https://www.zdnet.com/business/best-early-black-friday-membership-deals-2026-costco-sams-club-walmart-bjs/",
+          "title": "Best early Black Friday membership deals: Costco, BJ’s and more",
+          "publisher": "ZDNET",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrSeIv9NNRMDk226BA_DHXw9R1EEtI0liPpWKMhSPy1R0k4OUb6KNy7AuUkfs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX2Z4Vb4hv9Lw2QZyIkvIaaVJgQt4fwkpE7-w_uZSjd8b9HH6JQgpe6H9sS_A"
         },
         {
-          "url": "https://gomag.com/article/the-body-stars-dish-on-electric-chemistry-between-their-characters/",
-          "title": "‘The Body’ Stars Dish on ‘Electric’ Chemistry Between Their Characters",
-          "publisher": "GO Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaO-Z1Err1vVAZ-cFetjw7boNYbO72WdXLswWivKXrQKvfOTJtyu7sFwU_lxU"
-        }
-      ]
-    },
-    {
-      "query": "lane kiffin lsu roster comments",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T05:20:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/lane-kiffin-blames-lsu-40-million-roster-loss-texas-better-rosters",
-        "https://www.espn.com/college-football/story/_/id/50462068/lane-kiffin-lsu-playoff-expectations",
-        "https://www.nola.com/sports/lsu/lsu-football-lane-kiffin-program-rebuild/article_08e2cb6e-7fc9-45b5-a5e4-9a4c656acb0d.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwAUZTCkNScclsuTYYT06u5zAY6OkqQh3i0l8WsFB4EJfKtz9KFY0dRX_RvkE",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/lane-kiffin-blames-lsu-40-million-roster-loss-texas-better-rosters",
-          "title": "Lane Kiffin blames LSU's $40+ million roster after loss to Texas: 'we'll have better rosters’",
+          "url": "https://www.foxnews.com/deals/costco-membership-deal",
+          "title": "Join Costco now and get a $45 gift card for holiday shopping",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwAUZTCkNScclsuTYYT06u5zAY6OkqQh3i0l8WsFB4EJfKtz9KFY0dRX_RvkE"
-        },
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50462068/lane-kiffin-lsu-playoff-expectations",
-          "title": "Can Lane Kiffin and LSU save their playoff hopes?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8DhfHUFuVLaK2GCM6E6lt-gcYwOJ09uls3GP1FQjdZsePkCu80vLUqlBzjGo"
-        },
-        {
-          "url": "https://www.nola.com/sports/lsu/lsu-football-lane-kiffin-program-rebuild/article_08e2cb6e-7fc9-45b5-a5e4-9a4c656acb0d.html",
-          "title": "Kiffin says he won’t complain about the LSU roster Brian Kelly left him. His assistants have.",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRa8oWGzkHnctmgjZEVqOEZr2FNyy-Srf0w3s-sxowB_W6QTpxZDYtEj5n9APE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq60KwYzHX2ZWi19wr0Gyxp1vo-mkGlWyzQ5Hl3u6kyT2JONvTGH2uZyexcgU"
         }
       ]
     },
     {
-      "query": "germany vs netherlands",
+      "query": "jlo",
       "approx_searches": "200+",
-      "published_at": "2026-11-16T05:20:00Z",
+      "published_at": "2026-11-16T06:20:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmly7wxld228t",
-        "https://www.aljazeera.com/sports/2026/11/15/germany-vs-netherlands-nations-league-preview-team-news-predictions",
-        "https://www.uefa.com/uefanationsleague/news/02ab-221287e5a66c-f9855de4b857-1000--uefa-nations-league-matchday-6-preview-germany-welcome-nethe/"
+        "https://www.usatoday.com/story/shopping/entertainment/celebrity/2026/11/15/oprahs-favorite-things-2026-mph-beauty-lip-gloss-jlo-dua-lipa/92764163007/",
+        "https://pagesix.com/2026/11/13/style/hailey-bieber-and-oprah-love-this-gorgeous-lip-gloss/",
+        "https://parade.com/entertainment/jennifer-lopezs-plunging-bodysuit-photos-have-fans-talking"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzLtR43l_gF9gnp8CPWJRu50aIuD4CfQg9XZpHhaPfYX7C8Uu8-oABv61P6dE",
+      "image_credit": "USA Today",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cmly7wxld228t",
-          "title": "Germany vs Netherlands: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.usatoday.com/story/shopping/entertainment/celebrity/2026/11/15/oprahs-favorite-things-2026-mph-beauty-lip-gloss-jlo-dua-lipa/92764163007/",
+          "title": "Here's why Oprah recommends Jennifer Lopez's $26 lip gloss",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzLtR43l_gF9gnp8CPWJRu50aIuD4CfQg9XZpHhaPfYX7C8Uu8-oABv61P6dE"
         },
         {
-          "url": "https://www.aljazeera.com/sports/2026/11/15/germany-vs-netherlands-nations-league-preview-team-news-predictions",
-          "title": "Germany vs Netherlands: Nations League – preview, team news, predictions",
-          "publisher": "Al Jazeera",
+          "url": "https://pagesix.com/2026/11/13/style/hailey-bieber-and-oprah-love-this-gorgeous-lip-gloss/",
+          "title": "Hailey Bieber, 29, and Oprah, 72, are both obsessed with this ‘gorgeous’ lip gloss",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjg_ThhoUqgkQfooLHnq33HT8RRa_viiO55cuCi0MZKmC5wPEPzj7gBKwkGt4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYkC3ux_gezWi40dyZIUZigNvyj--7W8TZBEiExAk1XAkGA3f4bvVYjxeliu8"
         },
         {
-          "url": "https://www.uefa.com/uefanationsleague/news/02ab-221287e5a66c-f9855de4b857-1000--uefa-nations-league-matchday-6-preview-germany-welcome-nethe/",
-          "title": "UEFA Nations League Matchday 6 preview: Germany welcome Netherlands, Greece host Serbia",
-          "publisher": "UEFA.com",
+          "url": "https://parade.com/entertainment/jennifer-lopezs-plunging-bodysuit-photos-have-fans-talking",
+          "title": "Jennifer Lopez’s Plunging Bodysuit Photos Have Fans Talking",
+          "publisher": "Parade Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2D4EFNk4n5nkJWhU7PATxRhCRCwyxaSHyzuF8ax1Wk8_hySmuIF99FGip-Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsG9v6mDfotf3UnpjqzCZ3YL2vxa_x90-iBY6rgkvi47g5aJcR6QJQDEwBBT4"
         }
       ]
     },
     {
-      "query": "xbox project helix console",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T04:40:00Z",
-      "related_news_urls": [
-        "https://www.windowscentral.com/gaming/xbox/microsoft-says-xbox-helix-is-a-console-not-a-pc-but-it-will-be-able-to-play-your-pc-games-helix-is-designed-to-be-a-console-that-can-also-play-games-from-your-pc",
-        "https://www.purexbox.com/news/2026/11/the-ultimate-gaming-machine-xbox-reveals-tons-of-new-project-helix-information",
-        "https://www.ign.com/articles/xbox-confirms-project-helix-is-a-console-capable-of-playing-games-from-your-pc"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJnunCaQOwyeU6oEMcHj70UlWgVnY-x710Tvw6yToOeFwBLg4e9DKH5C7FOPk",
-      "image_credit": "Windows Central",
-      "news": [
-        {
-          "url": "https://www.windowscentral.com/gaming/xbox/microsoft-says-xbox-helix-is-a-console-not-a-pc-but-it-will-be-able-to-play-your-pc-games-helix-is-designed-to-be-a-console-that-can-also-play-games-from-your-pc",
-          "title": "Microsoft says Xbox Helix is a console, not a PC — but it will be able to play your PC games: \"It is not a PC that can also play console games\"",
-          "publisher": "Windows Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJnunCaQOwyeU6oEMcHj70UlWgVnY-x710Tvw6yToOeFwBLg4e9DKH5C7FOPk"
-        },
-        {
-          "url": "https://www.purexbox.com/news/2026/11/the-ultimate-gaming-machine-xbox-reveals-tons-of-new-project-helix-information",
-          "title": "'The Ultimate Gaming Machine' - Xbox Reveals Tons Of New Project Helix Information",
-          "publisher": "Pure Xbox",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8yEM_4EypmHJV5RGrxUtV9hDfjCkBAEoWOTjS2etXwfCNwUDEPTI8NPmuRxY"
-        },
-        {
-          "url": "https://www.ign.com/articles/xbox-confirms-project-helix-is-a-console-capable-of-playing-games-from-your-pc",
-          "title": "Xbox Reveals New Project Helix Details, Calls It 'a Console Capable of Playing Games From Your PC'",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPkpYON0a6LBQwC2aBPVyZ3-kY6u3xyq3whZEzngSrAGtVD-Die_Tmner4sDM"
-        }
-      ]
-    },
-    {
-      "query": "60 minutes tonight kratom episode",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T04:30:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/parents-whose-sons-died-from-kratom-use-warn-about-substance-60-minutes/",
-        "https://www.wsj.com/health/wellness/how-one-man-escaped-from-an-over-the-counter-opioid-trap-87a5b984",
-        "https://www.foxnews.com/video/6408432464112"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1TYxaSaMT6aWZFT0DbwSR1q3vD66wHt-OcU1xtKv34Ap-nn5kA2inQG4FAEE",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/parents-whose-sons-died-from-kratom-use-warn-about-substance-60-minutes/",
-          "title": "Parents whose sons died from kratom use warn about the substance finding allies in Washington",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1TYxaSaMT6aWZFT0DbwSR1q3vD66wHt-OcU1xtKv34Ap-nn5kA2inQG4FAEE"
-        },
-        {
-          "url": "https://www.wsj.com/health/wellness/how-one-man-escaped-from-an-over-the-counter-opioid-trap-87a5b984",
-          "title": "How One Man Escaped From an Over-the-Counter Opioid Trap",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx3u7oxRm4rIERwEczcmrzoWsp23WAE7bsSipgtyoq5NtOvP3DahG0lEWtuq8"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6408432464112",
-          "title": "Kratom recovery advocate exposes the warning signs users shouldn't ignore",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlDFCwW7ZNlvWx6iXjbO_9oLaBidTJqREPMAmwO-Q7Y4eOI-xbsq5l9Xcpo4g"
-        }
-      ]
-    },
-    {
-      "query": "shai gilgeous-alexander",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T04:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap?gameId=401909993",
-        "https://sports.yahoo.com/articles/learned-kings-dreadful-home-streak-205215252.html",
-        "https://www.nba.com/watch/video/game-recap-thunder-125-kings-103-nov-15?plsrc=nba&collection=2026-27-game-recaps"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aLgdFZ8FhscguFk14ZYsjpMTKcsuqI4H5bUdyV1pWmaJROZldqny0xy3D3g",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap?gameId=401909993",
-          "title": "Thunder 125-103 Kings (Nov 15, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aLgdFZ8FhscguFk14ZYsjpMTKcsuqI4H5bUdyV1pWmaJROZldqny0xy3D3g"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/learned-kings-dreadful-home-streak-205215252.html",
-          "title": "What we learned as Kings' dreadful home streak continues in loss to Thunder",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaoev43pqTfZAyanII7B1JkVBkF3-k28yzu7Fb2w7fB-gK-pfq43NWoPoo97o"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/game-recap-thunder-125-kings-103-nov-15?plsrc=nba&collection=2026-27-game-recaps",
-          "title": "Game Recap: Thunder 125, Kings 103 (Nov. 15)",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMIiADWybPVGGK9DWqdAyUu0OI3m6Z8t6vcV8kKqM5qvmHG0EcqLhhq6ZjjCs"
-        }
-      ]
-    },
-    {
-      "query": "terry killens",
+      "query": "future",
       "approx_searches": "200+",
-      "published_at": "2026-11-16T04:20:00Z",
+      "published_at": "2026-11-16T06:20:00Z",
       "related_news_urls": [
-        "https://lufkindailynews.com/news_reuters/national/nfl-referee-terry-killens-during-a-game-between-the-los-angeles-chargers-and-new-orleans/image_80b8f4cf-f096-5fe4-9e23-d6ca0c6db237.html"
+        "https://www.nytimes.com/2026/11/15/opinion/nate-silver-democrats-midterms-president.html",
+        "https://www.natesilver.net/p/fighters-vs-uniters-and-the-big-blue",
+        "https://www.politico.com/news/2026/11/10/new-democratic-leaders-2028-elections-01157824"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_RsIcuO6aeGvB9L1-KiiYiRCGJf6mbdV3cCP0U0eOWw7jZZUVDjhdcMUfaI",
-      "image_credit": "The Lufkin Daily News",
-      "news": [
-        {
-          "url": "https://lufkindailynews.com/news_reuters/national/nfl-referee-terry-killens-during-a-game-between-the-los-angeles-chargers-and-new-orleans/image_80b8f4cf-f096-5fe4-9e23-d6ca0c6db237.html",
-          "title": "NFL referee Terry Killens during a game between the Los Angeles Chargers and New Orleans Saints on Aug. 20, 2023, at SoFi Stadium in Inglewood, California.",
-          "publisher": "The Lufkin Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_RsIcuO6aeGvB9L1-KiiYiRCGJf6mbdV3cCP0U0eOWw7jZZUVDjhdcMUfaI"
-        }
-      ]
-    },
-    {
-      "query": "the mighty nein season 2 release",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T04:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/prime-video-reveals-mighty-nein-223325495.html",
-        "https://www.imdb.com/news/ni66112983/?ref_=ttnw_art_perm",
-        "https://www.aol.com/articles/vox-machina-sequel-mighty-nein-041344000.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZT4XSFC3_iPQ0GO60rgN65Rqzk0WcZygchH-NDqOy12_w9ZcMiMtOHB342sg",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/prime-video-reveals-mighty-nein-223325495.html",
-          "title": "Prime Video Reveals ‘The Mighty Nein’ Season 2 Premiere Date & Details",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZT4XSFC3_iPQ0GO60rgN65Rqzk0WcZygchH-NDqOy12_w9ZcMiMtOHB342sg"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66112983/?ref_=ttnw_art_perm",
-          "title": "Critical Role’s The Mighty Nein Officially Returns With New Episodes In 4 Months",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBoNM_Hr-3pQUsdw5_PbCCzJtQd93-WuTrUXQkKUDdgYUirpTe6-oNe-ss64"
-        },
-        {
-          "url": "https://www.aol.com/articles/vox-machina-sequel-mighty-nein-041344000.html",
-          "title": "Vox Machina Sequel The Mighty Nein Sets Season 2 Release Date for Prime Video",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkyoFLVlk0GEhja5_vOWljvN1VzB8r-lntQhxKDNLcU0v9dIPSuAn0KJYDkrg"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 online release date",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T04:10:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
-        "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
-        "https://www.techpowerup.com/354616/gta-6s-playstation-store-data-hints-at-multiplayer-support"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
-          "title": "Another Update About The ‘GTA 6 Online’ Release Date",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68"
-        },
-        {
-          "url": "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
-          "title": "PSA: GTA 6 Does Not Have Online Multiplayer at Launch",
-          "publisher": "Push Square",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypL5G2pJbFHZlCFW_tZcnq6-SMbceTH44sP5Veo6_32nZYemNCVnofdtWRZg"
-        },
-        {
-          "url": "https://www.techpowerup.com/354616/gta-6s-playstation-store-data-hints-at-multiplayer-support",
-          "title": "GTA 6's PlayStation Store Data Hints at Multiplayer Support",
-          "publisher": "TechPowerUp",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubIIrHtxBYME34poqFpQRXK4tgjJ3reoUeI5pHrRy0QJ00KnwsoSTsWtIxE0"
-        }
-      ]
-    },
-    {
-      "query": "the body season 2",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T04:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
-        "https://www.forbes.com/sites/paultassi/2026/11/15/netflixs-best-new-show-deserves-its-98-rotten-tomatoes-audience-score/",
-        "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr_w8K4cnXohjyJtzJbr7Aold4_a7H1goYgNOnFRmbq0FVdKup1pnD4Oy37f0",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
-          "title": "‘The Body’ Talks Like ‘Mean Girls’ and Walks Like ‘The Crucible’",
+          "url": "https://www.nytimes.com/2026/11/15/opinion/nate-silver-democrats-midterms-president.html",
+          "title": "Opinion | Nate Silver’s Unscientific, Totally Subjective Breakdown of the Democrats’ Future Stars",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr_w8K4cnXohjyJtzJbr7Aold4_a7H1goYgNOnFRmbq0FVdKup1pnD4Oy37f0"
         },
         {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/15/netflixs-best-new-show-deserves-its-98-rotten-tomatoes-audience-score/",
-          "title": "Netflix’s Best New Show Deserves Its 98% Rotten Tomatoes Audience Score",
-          "publisher": "Forbes",
+          "url": "https://www.natesilver.net/p/fighters-vs-uniters-and-the-big-blue",
+          "title": "Fighters vs. uniters and the big blue future",
+          "publisher": "Silver Bulletin",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_6dX44l7QvdXETXLa31lCqdxbKltZXBljud0ReoQWLRsi49vHQEk9Eeo0K8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSjYb87u_C1H4irtS9RSBhpvv5Zg9FlV7idewsC-GXNFkR-_oqmNifbFH0sds"
         },
         {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix",
-          "title": "The Body review – this sexy retro high school drama is like Cruel Intentions … with added Satanic rituals",
-          "publisher": "The Guardian",
+          "url": "https://www.politico.com/news/2026/11/10/new-democratic-leaders-2028-elections-01157824",
+          "title": "A new set of Democratic power brokers just dropped before 2028",
+          "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0J7IDDXHi9RkKqQf7C4XNMQHzLepy5n5QJL7PMGiP8IKutfXhWrw6v-yPaSs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE_IaG4t6Yrx6jzqZvbUCPGtmjy3gUNXnhsYl3vrfmV7jc6IcTerol0uMFMyY"
+        }
+      ]
+    },
+    {
+      "query": "apec",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T06:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/15/travel/us-china-apec-trump-xi-shenzhen-hnk-intl",
+        "https://apnews.com/video/apec-host-city-shenzhen-offers-a-window-into-chinas-technological-ambitions-0798968d1ede49eb919e112006e454c1",
+        "https://www.wvnews.com/newsfeed/world/china-apec/image_63172d44-c1b5-5854-a980-cc697b8eb0e2.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzdSAEcNBH24LWdApzjsMLV9aUxFBSGWU2ouFjT3voSxZlXgnTPUpYqCDPZYI",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/15/travel/us-china-apec-trump-xi-shenzhen-hnk-intl",
+          "title": "China’s ‘miracle city’ that no US president has visited (yet)",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzdSAEcNBH24LWdApzjsMLV9aUxFBSGWU2ouFjT3voSxZlXgnTPUpYqCDPZYI"
+        },
+        {
+          "url": "https://apnews.com/video/apec-host-city-shenzhen-offers-a-window-into-chinas-technological-ambitions-0798968d1ede49eb919e112006e454c1",
+          "title": "APEC host city Shenzhen offers a window into China’s technological ambitions",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmmTgfqckWuEfbZiggqAVpx3HWQcketLewH-nkVeCGtf-dXhzfPOWSzbJRfs8"
+        },
+        {
+          "url": "https://www.wvnews.com/newsfeed/world/china-apec/image_63172d44-c1b5-5854-a980-cc697b8eb0e2.html",
+          "title": "China APEC",
+          "publisher": "WV News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0vUToiuEmplnpC4_wS1YLXwYKfv9K67EDK1_yXwobmxPntzDnbCbTm21vDTc"
+        }
+      ]
+    },
+    {
+      "query": "florence pugh",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T06:00:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/movies/movie-news/2026-governors-awards-glenn-close-ridley-scott-floyd-norman-1236749503/",
+        "https://www.vogue.com/slideshow/2026-governors-awards-red-carpet-best-looks",
+        "https://pagesix.com/2026/11/15/photos/2026-governors-awards-zendaya-florence-pugh-more/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWWhIZXQR8Y4xNfXcPNK3jS4G5NKa6iGZQT7arqXnBMKXz_IhpztwnE_3YwsM",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/2026-governors-awards-glenn-close-ridley-scott-floyd-norman-1236749503/",
+          "title": "Governors Awards: Glenn Close, Ridley Scott, Floyd Norman Honorary Oscars",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWWhIZXQR8Y4xNfXcPNK3jS4G5NKa6iGZQT7arqXnBMKXz_IhpztwnE_3YwsM"
+        },
+        {
+          "url": "https://www.vogue.com/slideshow/2026-governors-awards-red-carpet-best-looks",
+          "title": "Governors Awards 2026: Fashion—All of the Best Looks From the Red Carpet",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWZhpmmAdiGDByHJaTwqhnwdfdk_thi9erNjRxHbkCMGTIZY0CEJHaAAtcoMs"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/15/photos/2026-governors-awards-zendaya-florence-pugh-more/",
+          "title": "2026 Governors Awards: Zendaya, Florence Pugh, more",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFRDpBwWHx2V7m11w_YkARSiKFzVwZlspOuaAIFFieNNv7xEsLteU7lvSQobg"
+        }
+      ]
+    },
+    {
+      "query": "anthony mackie",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T06:00:00Z",
+      "related_news_urls": [
+        "https://www.empireonline.com/movies/news/avengers-doomsday-consequence-of-no-organised-team-exclusive/",
+        "https://www.yahoo.com/entertainment/movies/articles/avengers-doomsday-officially-reveals-captain-174036507.html",
+        "https://www.polygon.com/avengers-doomsday-marvel-confirms-new-team-lineup/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0XVp1Wf0kDlmx9DERIKB20DJ0Tc7AqwPDIewfvDVcbx1Up4afXzzgoJBkpmc",
+      "image_credit": "Empire",
+      "news": [
+        {
+          "url": "https://www.empireonline.com/movies/news/avengers-doomsday-consequence-of-no-organised-team-exclusive/",
+          "title": "Doomsday Explores The Consequence Of Years With ‘No Organised Avengers Team’, Says Kevin Feige",
+          "publisher": "Empire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0XVp1Wf0kDlmx9DERIKB20DJ0Tc7AqwPDIewfvDVcbx1Up4afXzzgoJBkpmc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/avengers-doomsday-officially-reveals-captain-174036507.html",
+          "title": "Avengers: Doomsday Officially Reveals Captain America’s Surprising MCU Team Roster",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpFH85wvgOWST5kxCCSgwgR3VXUw1DjzqMQTli_3z-E-RW6chSmxH6Kj_-pc"
+        },
+        {
+          "url": "https://www.polygon.com/avengers-doomsday-marvel-confirms-new-team-lineup/",
+          "title": "Marvel Officially Confirms New Avengers Team for Doomsday",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTxuyIoGnyk1cJxH5TRDzXyk0zfvr2ADf8_Bj6nuZCwc2wymS78Fe4SV7lNhQ"
+        }
+      ]
+    },
+    {
+      "query": "내일 날씨",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T06:00:00Z",
+      "related_news_urls": [
+        "https://www.koreadaily.com/article/20261115184146120",
+        "https://www.chosun.com/national/transport-environment/2026/11/16/5JODOPVOIZENJP6R2KA7CHAFQQ/",
+        "https://www.sedaily.com/article/20114573"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkBQDk-xMh7DUsdOmGrUOu_OgM4EYv6K5-nvs0fHdDwbaZtFXF0StPebVoJt0",
+      "image_credit": "미주중앙일보",
+      "news": [
+        {
+          "url": "https://www.koreadaily.com/article/20261115184146120",
+          "title": "수도권 미세먼지 ‘나쁨’…수능 전날부터 기온 뚝, 추위 주말까지",
+          "publisher": "미주중앙일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkBQDk-xMh7DUsdOmGrUOu_OgM4EYv6K5-nvs0fHdDwbaZtFXF0StPebVoJt0"
+        },
+        {
+          "url": "https://www.chosun.com/national/transport-environment/2026/11/16/5JODOPVOIZENJP6R2KA7CHAFQQ/",
+          "title": "내일 전국에 약한 가을비...수능일 영하권에 곳곳 비도",
+          "publisher": "조선일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwin2w9i7uyym2kCdWdbRlx4jZbWioQvoFmwYTdsIdJSEJoXbD0zwRBlLmXA"
+        },
+        {
+          "url": "https://www.sedaily.com/article/20114573",
+          "title": "[오늘의 날씨] 아침 최저 3도 ‘쌀쌀’…동해안 최대 30㎜ 비",
+          "publisher": "서울경제",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx_clJX71b4vboJ5aZ3dBgCXB77A1qtnvdWZjvQaiUZj-dA3w_xdEypBbUO9I"
+        }
+      ]
+    },
+    {
+      "query": "robb elementary school",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T06:00:00Z",
+      "related_news_urls": [
+        "https://www.ksat.com/news/local/2026/11/14/trial-for-former-uvalde-school-police-chief-in-robb-elementary-shooting-criminal-case-moves-to-corpus-christi/",
+        "https://news4sanantonio.com/news/local/pete-arredondos-trial-moved-to-nueces-county-set-for-february-2027",
+        "https://www.kens5.com/video/news/trial-against-former-uvalde-school-district-police-chief-to-be-held-in-corpus-christi/273-4c9051c6-fee0-4e2a-9ef7-34efd381c900"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaLgNhJt5C47iSwEIBhZRSvHEDOEgNyn-ghG-TIY6odvhP-ehOXzPG6pWm-1E",
+      "image_credit": "KSAT",
+      "news": [
+        {
+          "url": "https://www.ksat.com/news/local/2026/11/14/trial-for-former-uvalde-school-police-chief-in-robb-elementary-shooting-criminal-case-moves-to-corpus-christi/",
+          "title": "Trial for former Uvalde school police chief in Robb Elementary shooting criminal case moves to Corpus Christi",
+          "publisher": "KSAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaLgNhJt5C47iSwEIBhZRSvHEDOEgNyn-ghG-TIY6odvhP-ehOXzPG6pWm-1E"
+        },
+        {
+          "url": "https://news4sanantonio.com/news/local/pete-arredondos-trial-moved-to-nueces-county-set-for-february-2027",
+          "title": "Pete Arredondo’s trial moved to Nueces County, set for February 2027",
+          "publisher": "WOAI",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2woY88r0hsm6mqP_JaADRsNEtOoLQVKi_C_7h-txBL4DVMgnN8lUM4T8noS8"
+        },
+        {
+          "url": "https://www.kens5.com/video/news/trial-against-former-uvalde-school-district-police-chief-to-be-held-in-corpus-christi/273-4c9051c6-fee0-4e2a-9ef7-34efd381c900",
+          "title": "Trial against former Uvalde school district police chief to be held in Corpus Christi",
+          "publisher": "kens5.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrRHGE3v7se9HynjFk6LhHf5i7bFCBR9x8D5hWseDj-arxGmTell4H8uO5yTs"
+        }
+      ]
+    },
+    {
+      "query": "monica barbaro",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T06:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/monica-barbaro-stuns-daring-black-034426881.html",
+        "https://people.com/andrew-garfield-and-monica-barbaro-step-out-together-for-date-night-12252706",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/andrew-garfield-monica-barbaro-pose-140041269.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW7yFSlTs_u9BEgrGsloVTnZ-bYzCBfcb-L_XX09rikUy1OKR2YrIYwQvQ10",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/monica-barbaro-stuns-daring-black-034426881.html",
+          "title": "Monica Barbaro stuns in daring black dress with thigh-high split",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW7yFSlTs_u9BEgrGsloVTnZ-bYzCBfcb-L_XX09rikUy1OKR2YrIYwQvQ10"
+        },
+        {
+          "url": "https://people.com/andrew-garfield-and-monica-barbaro-step-out-together-for-date-night-12252706",
+          "title": "Andrew Garfield and Monica Barbaro Step Out Together for Star-Studded Date Night in Los Angeles",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGPXhKh3DAHHsQMaV2hl9FAxqC4elofoYWUkCvDynZLBHtr19J9YZE-BIpCPo"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/andrew-garfield-monica-barbaro-pose-140041269.html",
+          "title": "Andrew Garfield and Monica Barbaro Pose Separately on GQ Red Carpet, Then Leave Holding Hands",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQafjjc-gBdXIwB13jnHHk_KQUkBhGqmPUqpFr_nX5lrDzIZ5rYEDiglZSy6Rk"
+        }
+      ]
+    },
+    {
+      "query": "toluca - américa",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T05:50:00Z",
+      "related_news_urls": [
+        "https://www.tudn.com/futbol-femenino/liga-mx-femenil/toluca-vs-america-a-que-hora-y-donde-ver-partido-de-liguilla-de-la-liga-femenil",
+        "https://www.telemundo.com/deportes/futbol-estelar-liga-mx/chivas-ya-conoce-a-su-rival-asi-quedaron-las-semifinales-del-apertura-rcna609541",
+        "https://www.espn.com.mx/futbol/mexico/nota/_/id/17501990/liga-femenil-semifinales-apertura-2026-bracket-horarios"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9ersQSBu5_gJIxpIr9BibaMctwNK3v_UMvTmn1VlUncepOpolP9oz30lV6Q",
+      "image_credit": "TUDN",
+      "news": [
+        {
+          "url": "https://www.tudn.com/futbol-femenino/liga-mx-femenil/toluca-vs-america-a-que-hora-y-donde-ver-partido-de-liguilla-de-la-liga-femenil",
+          "title": "A qué hora y dónde ver Toluca vs. América de la Liguilla Liga Femenil",
+          "publisher": "TUDN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9ersQSBu5_gJIxpIr9BibaMctwNK3v_UMvTmn1VlUncepOpolP9oz30lV6Q"
+        },
+        {
+          "url": "https://www.telemundo.com/deportes/futbol-estelar-liga-mx/chivas-ya-conoce-a-su-rival-asi-quedaron-las-semifinales-del-apertura-rcna609541",
+          "title": "Chivas ya conoce a su rival: así quedaron las semifinales del Apertura 2026 de la Liga MX Femenil",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAR0Vttj8SNeWJQMf-Fntm5V-k10qxF_Xy2CVVmBG8sWD4Wk3XKQh6Qr_LkSA"
+        },
+        {
+          "url": "https://www.espn.com.mx/futbol/mexico/nota/_/id/17501990/liga-femenil-semifinales-apertura-2026-bracket-horarios",
+          "title": "Liga Femenil: ¿Cómo están las Semifinales al momento?",
+          "publisher": "ESPN México",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlEiRN316LzSOmalCPpdeNRkOj85Sj9vMcTY14xFyuLJVWm2Nfn_mkCBmk0ls"
         }
       ]
     }
