@@ -3,41 +3,111 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T05:30:53.349816Z",
+  "checked_at": "2026-11-16T06:01:45.426697Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "afc north standings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T04:40:00Z",
+      "query": "the body netflix cast",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T05:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50463347/2026-nfl-playoffs-chances-odds-tiers-32-teams-nfc-afc",
-        "https://www.chicagotribune.com/2026/11/15/chicago-bears-nfc-north-race/",
-        "https://www.nfl.com/videos/examining-nfc-playoff-picture-at-end-of-sunday-in-week-10-of-2026-nfl-gameday-final"
+        "https://www.teenvogue.com/story/the-body-stars-kristina-bogic-sara-boustany-interview",
+        "https://www.imdb.com/name/nm10017808/mediaviewer/rm424077826/",
+        "https://gomag.com/article/the-body-stars-dish-on-electric-chemistry-between-their-characters/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQUmRsxQ5gS2xob4sQ7OuoRJY7kitRPqJr_r5TX8fXu6wdvwY0jdYa8J-avc8",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQByYe1oviES1U3CZf6dC_ga_UP5wg3IqviRyOs26P9ZGgNvofZ5HEJ-x8ZYCM",
+      "image_credit": "Teen Vogue",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50463347/2026-nfl-playoffs-chances-odds-tiers-32-teams-nfc-afc",
-          "title": "NFL playoff chance tiers: Where all 32 teams fit in 2026 postseason picture",
+          "url": "https://www.teenvogue.com/story/the-body-stars-kristina-bogic-sara-boustany-interview",
+          "title": "In ‘The Body,’ Kristina Bogic and Sara Boustany Have Killer Chemistry as Anya and Elise",
+          "publisher": "Teen Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQByYe1oviES1U3CZf6dC_ga_UP5wg3IqviRyOs26P9ZGgNvofZ5HEJ-x8ZYCM"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm10017808/mediaviewer/rm424077826/",
+          "title": "Sara Boustany",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrSeIv9NNRMDk226BA_DHXw9R1EEtI0liPpWKMhSPy1R0k4OUb6KNy7AuUkfs"
+        },
+        {
+          "url": "https://gomag.com/article/the-body-stars-dish-on-electric-chemistry-between-their-characters/",
+          "title": "‘The Body’ Stars Dish on ‘Electric’ Chemistry Between Their Characters",
+          "publisher": "GO Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaO-Z1Err1vVAZ-cFetjw7boNYbO72WdXLswWivKXrQKvfOTJtyu7sFwU_lxU"
+        }
+      ]
+    },
+    {
+      "query": "lane kiffin lsu roster comments",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T05:20:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/lane-kiffin-blames-lsu-40-million-roster-loss-texas-better-rosters",
+        "https://www.espn.com/college-football/story/_/id/50462068/lane-kiffin-lsu-playoff-expectations",
+        "https://www.nola.com/sports/lsu/lsu-football-lane-kiffin-program-rebuild/article_08e2cb6e-7fc9-45b5-a5e4-9a4c656acb0d.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwAUZTCkNScclsuTYYT06u5zAY6OkqQh3i0l8WsFB4EJfKtz9KFY0dRX_RvkE",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/lane-kiffin-blames-lsu-40-million-roster-loss-texas-better-rosters",
+          "title": "Lane Kiffin blames LSU's $40+ million roster after loss to Texas: 'we'll have better rosters’",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwAUZTCkNScclsuTYYT06u5zAY6OkqQh3i0l8WsFB4EJfKtz9KFY0dRX_RvkE"
+        },
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50462068/lane-kiffin-lsu-playoff-expectations",
+          "title": "Can Lane Kiffin and LSU save their playoff hopes?",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQUmRsxQ5gS2xob4sQ7OuoRJY7kitRPqJr_r5TX8fXu6wdvwY0jdYa8J-avc8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8DhfHUFuVLaK2GCM6E6lt-gcYwOJ09uls3GP1FQjdZsePkCu80vLUqlBzjGo"
         },
         {
-          "url": "https://www.chicagotribune.com/2026/11/15/chicago-bears-nfc-north-race/",
-          "title": "Column: Sizing up the battle ahead in the NFC North, which could send all 4 teams to the playoffs",
-          "publisher": "Chicago Tribune",
+          "url": "https://www.nola.com/sports/lsu/lsu-football-lane-kiffin-program-rebuild/article_08e2cb6e-7fc9-45b5-a5e4-9a4c656acb0d.html",
+          "title": "Kiffin says he won’t complain about the LSU roster Brian Kelly left him. His assistants have.",
+          "publisher": "NOLA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsy5iF9ktMVPC1WiSAqDQGQx4fAIn-NOjr0nDucHPxmij9YQRnu6Dq9RM795c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRa8oWGzkHnctmgjZEVqOEZr2FNyy-Srf0w3s-sxowB_W6QTpxZDYtEj5n9APE"
+        }
+      ]
+    },
+    {
+      "query": "germany vs netherlands",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T05:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmly7wxld228t",
+        "https://www.aljazeera.com/sports/2026/11/15/germany-vs-netherlands-nations-league-preview-team-news-predictions",
+        "https://www.uefa.com/uefanationsleague/news/02ab-221287e5a66c-f9855de4b857-1000--uefa-nations-league-matchday-6-preview-germany-welcome-nethe/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmly7wxld228t",
+          "title": "Germany vs Netherlands: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://www.nfl.com/videos/examining-nfc-playoff-picture-at-end-of-sunday-in-week-10-of-2026-nfl-gameday-final",
-          "title": "Examining NFC playoff picture at end of Sunday in Week 10 of 2026 | 'NFL GameDay Final'",
-          "publisher": "NFL.com",
+          "url": "https://www.aljazeera.com/sports/2026/11/15/germany-vs-netherlands-nations-league-preview-team-news-predictions",
+          "title": "Germany vs Netherlands: Nations League – preview, team news, predictions",
+          "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxQCCi7qaci8ORaiufFduz_tPpB7MHHdJ3KzvOq-IMYF6JC11MPx3Mqe-KNJI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjg_ThhoUqgkQfooLHnq33HT8RRa_viiO55cuCi0MZKmC5wPEPzj7gBKwkGt4"
+        },
+        {
+          "url": "https://www.uefa.com/uefanationsleague/news/02ab-221287e5a66c-f9855de4b857-1000--uefa-nations-league-matchday-6-preview-germany-welcome-nethe/",
+          "title": "UEFA Nations League Matchday 6 preview: Germany welcome Netherlands, Greece host Serbia",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2D4EFNk4n5nkJWhU7PATxRhCRCwyxaSHyzuF8ax1Wk8_hySmuIF99FGip-Q"
         }
       ]
     },
@@ -112,37 +182,56 @@
       ]
     },
     {
-      "query": "ravens vs chargers",
+      "query": "shai gilgeous-alexander",
       "approx_searches": "2000+",
       "published_at": "2026-11-16T04:30:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/betting/news/chargers-ravens-prediction-odds-time-nfl-week-10-monday-night-football-picks/",
-        "https://sports.yahoo.com/articles/chargers-vs-ravens-player-props-030036407.html",
-        "https://www.cbsnews.com/baltimore/news/ravens-chargers-moves-onto-list-of-monday-night-matchups-that-lost-their-luster/"
+        "https://www.espn.com/nba/recap?gameId=401909993",
+        "https://sports.yahoo.com/articles/learned-kings-dreadful-home-streak-205215252.html",
+        "https://www.nba.com/watch/video/game-recap-thunder-125-kings-103-nov-15?plsrc=nba&collection=2026-27-game-recaps"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopA7IP4ZyBK5VjI2vLPcCRUF3zmL3T0GXgDy34G66rno4RgO3F0xyYvYLcLk",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aLgdFZ8FhscguFk14ZYsjpMTKcsuqI4H5bUdyV1pWmaJROZldqny0xy3D3g",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cbssports.com/betting/news/chargers-ravens-prediction-odds-time-nfl-week-10-monday-night-football-picks/",
-          "title": "Chargers vs. Ravens prediction, odds, time: NFL Week 10 'Monday Night Football' picks by proven model",
-          "publisher": "CBS Sports",
+          "url": "https://www.espn.com/nba/recap?gameId=401909993",
+          "title": "Thunder 125-103 Kings (Nov 15, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopA7IP4ZyBK5VjI2vLPcCRUF3zmL3T0GXgDy34G66rno4RgO3F0xyYvYLcLk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aLgdFZ8FhscguFk14ZYsjpMTKcsuqI4H5bUdyV1pWmaJROZldqny0xy3D3g"
         },
         {
-          "url": "https://sports.yahoo.com/articles/chargers-vs-ravens-player-props-030036407.html",
-          "title": "Chargers vs Ravens Player Props for Omarion Hampton, Zay Flowers, Oronde Gadsden",
+          "url": "https://sports.yahoo.com/articles/learned-kings-dreadful-home-streak-205215252.html",
+          "title": "What we learned as Kings' dreadful home streak continues in loss to Thunder",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXSJYCpH6miLQny6EbV0TCRhAUkYOyLM3-knHJxZwv-Q9B-nxktDEl5BGdwE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaoev43pqTfZAyanII7B1JkVBkF3-k28yzu7Fb2w7fB-gK-pfq43NWoPoo97o"
         },
         {
-          "url": "https://www.cbsnews.com/baltimore/news/ravens-chargers-moves-onto-list-of-monday-night-matchups-that-lost-their-luster/",
-          "title": "Ravens-Chargers moves onto list of Monday night matchups that lost their luster",
-          "publisher": "CBS News",
+          "url": "https://www.nba.com/watch/video/game-recap-thunder-125-kings-103-nov-15?plsrc=nba&collection=2026-27-game-recaps",
+          "title": "Game Recap: Thunder 125, Kings 103 (Nov. 15)",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYZkonXzMuo3QFK0tSrZg2_X43mxVz7enQlew-r_AOe8-waKqSK7NCNoCU094"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMIiADWybPVGGK9DWqdAyUu0OI3m6Z8t6vcV8kKqM5qvmHG0EcqLhhq6ZjjCs"
+        }
+      ]
+    },
+    {
+      "query": "terry killens",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T04:20:00Z",
+      "related_news_urls": [
+        "https://lufkindailynews.com/news_reuters/national/nfl-referee-terry-killens-during-a-game-between-the-los-angeles-chargers-and-new-orleans/image_80b8f4cf-f096-5fe4-9e23-d6ca0c6db237.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_RsIcuO6aeGvB9L1-KiiYiRCGJf6mbdV3cCP0U0eOWw7jZZUVDjhdcMUfaI",
+      "image_credit": "The Lufkin Daily News",
+      "news": [
+        {
+          "url": "https://lufkindailynews.com/news_reuters/national/nfl-referee-terry-killens-during-a-game-between-the-los-angeles-chargers-and-new-orleans/image_80b8f4cf-f096-5fe4-9e23-d6ca0c6db237.html",
+          "title": "NFL referee Terry Killens during a game between the Los Angeles Chargers and New Orleans Saints on Aug. 20, 2023, at SoFi Stadium in Inglewood, California.",
+          "publisher": "The Lufkin Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_RsIcuO6aeGvB9L1-KiiYiRCGJf6mbdV3cCP0U0eOWw7jZZUVDjhdcMUfaI"
         }
       ]
     },
@@ -182,8 +271,43 @@
       ]
     },
     {
+      "query": "gta 6 online release date",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T04:10:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
+        "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
+        "https://www.techpowerup.com/354616/gta-6s-playstation-store-data-hints-at-multiplayer-support"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
+          "title": "Another Update About The ‘GTA 6 Online’ Release Date",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68"
+        },
+        {
+          "url": "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
+          "title": "PSA: GTA 6 Does Not Have Online Multiplayer at Launch",
+          "publisher": "Push Square",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypL5G2pJbFHZlCFW_tZcnq6-SMbceTH44sP5Veo6_32nZYemNCVnofdtWRZg"
+        },
+        {
+          "url": "https://www.techpowerup.com/354616/gta-6s-playstation-store-data-hints-at-multiplayer-support",
+          "title": "GTA 6's PlayStation Store Data Hints at Multiplayer Support",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubIIrHtxBYME34poqFpQRXK4tgjJ3reoUeI5pHrRy0QJ00KnwsoSTsWtIxE0"
+        }
+      ]
+    },
+    {
       "query": "the body season 2",
-      "approx_searches": "1000+",
+      "approx_searches": "500+",
       "published_at": "2026-11-16T04:10:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
@@ -213,146 +337,6 @@
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0J7IDDXHi9RkKqQf7C4XNMQHzLepy5n5QJL7PMGiP8IKutfXhWrw6v-yPaSs"
-        }
-      ]
-    },
-    {
-      "query": "will howard",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T04:10:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
-        "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
-        "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
-          "title": "Steelers' Will Howard: Working as emergency QB again",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
-        },
-        {
-          "url": "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
-          "title": "Will Howard News: Working as emergency QB again",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrliZyu5jtxFBGRMsjVaPrA7q2L-gxaKS3_GmpxBRr5aI1PSkPtWg4O6jMznU"
-        },
-        {
-          "url": "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622",
-          "title": "Steelers inactives for Week 10 vs. Bengals",
-          "publisher": "Steelers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpggy2FqQpMp-1h9QIn4lIBlCrT-W6jmEVH-y9IcOtVIDq7gLi1YMkFR8pYvI"
-        }
-      ]
-    },
-    {
-      "query": "vgk",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T04:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50498126/shai-gilgeous-alexander-drills-triple-vs-sacramento-kings",
-        "https://www.espn.com/nhl/game/_/gameId/401892725",
-        "https://www.espn.com/mens-college-basketball/game/_/gameId/401909525/marquette-missouri"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVB3J2CQ8f1vv84-hnXf3AAGlTs2nZ4vUfTuSbKCN7zguFyNtA-7d-V49r54",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50498126/shai-gilgeous-alexander-drills-triple-vs-sacramento-kings",
-          "title": "Shai Gilgeous-Alexander drills triple vs. Sacramento Kings",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVB3J2CQ8f1vv84-hnXf3AAGlTs2nZ4vUfTuSbKCN7zguFyNtA-7d-V49r54"
-        },
-        {
-          "url": "https://www.espn.com/nhl/game/_/gameId/401892725",
-          "title": "Predators vs. Sharks (Nov 15, 2026) Live Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzvcFKGu0Y1SGA--dVFSkD3F9M7HPjc8tTtn9Yb-2CEcxA9oWcYKa8qxqghQ"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909525/marquette-missouri",
-          "title": "Missouri 69-64 Marquette (Nov 15, 2026) Final Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPNyuHG22VNBmJ6OLTUy5Sz9EvGOWtKZVzuhcTRohilC-m2JL_-8IVTQx32Sc"
-        }
-      ]
-    },
-    {
-      "query": "donald trump iran war",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T03:40:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
-        "https://www.timesofisrael.com/liveblog-november-16-2026/",
-        "https://www.aa.com.tr/en/americas/uss-theodore-roosevelt-to-join-2-us-aircraft-carriers-in-middle-east-within-next-day-report/4125964"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM-vsJxmB2zhrysHX1pBum9oKDlpCOP-ptRRRNWk4QgnT8ZY3fwBXfbJkfDpk",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
-          "title": "Iran war live: Third US carrier arrives, Iran warns it could strike first",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM-vsJxmB2zhrysHX1pBum9oKDlpCOP-ptRRRNWk4QgnT8ZY3fwBXfbJkfDpk"
-        },
-        {
-          "url": "https://www.timesofisrael.com/liveblog-november-16-2026/",
-          "title": "Third US aircraft carrier said to arrive in Mideast as Washington shores up troops",
-          "publisher": "The Times of Israel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4EZeuWxrJY2zVuue-zHWPN1zhvp8EbvuIg5qTFVXhsBwiSQFm6jpR1D_u11U"
-        },
-        {
-          "url": "https://www.aa.com.tr/en/americas/uss-theodore-roosevelt-to-join-2-us-aircraft-carriers-in-middle-east-within-next-day-report/4125964",
-          "title": "USS Theodore Roosevelt to join 2 US aircraft carriers in Middle East within next day: Report",
-          "publisher": "Anadolu Ajansı",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2_ozVIKm85Vm7mLg75S06PdcNE5DClzb57jDLe-rnWOWlDfK0SH5jMwUuGhc"
-        }
-      ]
-    },
-    {
-      "query": "oklahoma city thunder vs sacramento kings match player stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T03:40:00Z",
-      "related_news_urls": [
-        "https://www.covers.com/sport/hockey/nhl/matchup/382613/picks",
-        "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
-        "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6KUf5kM-eGqfvI9-lu-s2qIRHLzZLkCqUA62GQyL7RgqU-ta_HiTA-3r-vvw",
-      "image_credit": "Covers.com",
-      "news": [
-        {
-          "url": "https://www.covers.com/sport/hockey/nhl/matchup/382613/picks",
-          "title": "Capitals vs Lightning Picks, Prop Bets For November 17, 2026 - NHL Predictions",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6KUf5kM-eGqfvI9-lu-s2qIRHLzZLkCqUA62GQyL7RgqU-ta_HiTA-3r-vvw"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
-          "title": "Licensable picture: NCAA Mens Basketball 2026: Green Bay Vs St. Thomas NOV 08",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKQDQrKivrdmj3wD92p-mgS9xY11UHAvcnBZcvBL99sayVpd8CGB8NjiUUA5Y"
-        },
-        {
-          "url": "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252",
-          "title": "Saint Thomas Tommies play the Green Bay Phoenix in non-conference play",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs"
         }
       ]
     }
