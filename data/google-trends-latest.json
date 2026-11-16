@@ -3,356 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T15:01:41.219538Z",
+  "checked_at": "2026-11-16T15:38:04.128785Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "kazakhstan vs slovakia",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T14:40:00Z",
+      "query": "grand theft auto vi",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T15:20:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmrlgr1yxjl6t",
-        "https://sportsbook.fanduel.com/soccer/uefa-nations-league-c/kazakhstan-v-slovakia-36319235",
-        "https://onefootball.com/en/betting/predictions/kazakhstan-vs-slovakia-16-11-2026"
+        "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
+        "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
+        "https://www.audacy.com/wben/news/local/all-tech-eyes-on-grand-theft-auto-vi-release-thursday"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cmrlgr1yxjl6t",
-          "title": "Kazakhstan vs Slovakia: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
+          "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94"
         },
         {
-          "url": "https://sportsbook.fanduel.com/soccer/uefa-nations-league-c/kazakhstan-v-slovakia-36319235",
-          "title": "Kazakhstan v Slovakia Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
+          "title": "Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcX3HbDpCNM6y5ct8Zb36Q0dq2OK0epLORhVFBkEfStwDKfo7YWU5uyMKUhTk"
         },
         {
-          "url": "https://onefootball.com/en/betting/predictions/kazakhstan-vs-slovakia-16-11-2026",
-          "title": "Kazakhstan vs Slovakia - Prediction, where to watch, kick-off time and line-ups 16-11-2026",
-          "publisher": "OneFootball",
+          "url": "https://www.audacy.com/wben/news/local/all-tech-eyes-on-grand-theft-auto-vi-release-thursday",
+          "title": "All tech eyes on Grand Theft Auto VI release Thursday",
+          "publisher": "Audacy",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2XRGzYLjWgTQGloP_y1a6v72-zVV0rMsv8W03CwStKrsKm-PpFcb9lRlBqE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsoTvekEvrSluyPRJVNsNiK5jmchLVcBc9-pbU_44Ehi5uB_c5wBPaYZeKp0U"
         }
       ]
     },
     {
-      "query": "jaime ray newman",
+      "query": "idris elba",
       "approx_searches": "500+",
-      "published_at": "2026-11-16T14:30:00Z",
+      "published_at": "2026-11-16T15:20:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/brittany-snow-disco-dress-brought-193051079.html",
-        "https://pagesix.com/2026/11/13/photos/malin-akerman-blows-a-kiss-on-the-hunting-wives-season-2-red-carpet-and-more-star-snaps/",
-        "https://www.upi.com/News_Photos/view/upi/dcf49da7e6c39a8f47fe17f7defe4230/Alexandria-Deberry-attends-The-Hunting-Wives-premiere-in-LA/"
+        "https://www.imdb.com/video/vi3874474521/",
+        "https://www.laineygossip.com/will-film-adaptation-of-children-of-blood-and-bone-live-forever-in-shadow-of-author-tomi-adeyemis-disapproval/",
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/idris-elba-viola-davis-bring-162002349.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2T5kaYOGil4ol2Oie9vdZCSjOS4T3NxluqXQ8sRWuAtxL-MNFUPxV6qSRYnE",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcMVujDHvbzBjitION6zKXBVagpvMrzD2rIcea7dr6IyW5LEW5qeDA6bmJ6wo",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/brittany-snow-disco-dress-brought-193051079.html",
-          "title": "Brittany Snow’s Disco Dress Brought a Healthy Dose of Sparkle to ‘The Hunting Wives’ Season Two Premiere",
+          "url": "https://www.imdb.com/video/vi3874474521/",
+          "title": "▶️ Children of Blood and Bone - Trailer 2",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcMVujDHvbzBjitION6zKXBVagpvMrzD2rIcea7dr6IyW5LEW5qeDA6bmJ6wo"
+        },
+        {
+          "url": "https://www.laineygossip.com/will-film-adaptation-of-children-of-blood-and-bone-live-forever-in-shadow-of-author-tomi-adeyemis-disapproval/",
+          "title": "Will the film adaptation of Children of Blood and Bone live forever in the shadow of author Toni Adeyemi's disapproval?",
+          "publisher": "LaineyGossip",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHHLyLVutWZS7Yiu3ji5bbfPBn4gPx5NqQATGT6pMRCy5H9NZLD5lSt8oN_A8"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/idris-elba-viola-davis-bring-162002349.html",
+          "title": "Idris Elba & Viola Davis Bring Magic & Mayhem to Children of Blood and Bone Trailer",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2T5kaYOGil4ol2Oie9vdZCSjOS4T3NxluqXQ8sRWuAtxL-MNFUPxV6qSRYnE"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/13/photos/malin-akerman-blows-a-kiss-on-the-hunting-wives-season-2-red-carpet-and-more-star-snaps/",
-          "title": "Malin Akerman blows a kiss on the 'Hunting Wives' Season 2 red carpet and more star snaps",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxW3GNu8ddLUkvAQOWbJ1diI_xTMcVk7I0FE6Ca0Bgfb8BXUgtx32LjE9YwPk"
-        },
-        {
-          "url": "https://www.upi.com/News_Photos/view/upi/dcf49da7e6c39a8f47fe17f7defe4230/Alexandria-Deberry-attends-The-Hunting-Wives-premiere-in-LA/",
-          "title": "Photo: Alexandria Deberry attends 'The Hunting Wives' premiere in LA - LAP20261112732",
-          "publisher": "UPI.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpTAp0sjafADrFwC2B4bYpck1nt0mFex05qxbxnUjqhoUYgxtnz6T_BGxlJiM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRM3aiBjE1_Cm_zShsO4ORAwF0be-B1TfG9eDkNdKpLiilYM20GWUuiufloB2o"
         }
       ]
     },
     {
-      "query": "mark consuelos",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T14:30:00Z",
+      "query": "henry cavill",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T15:20:00Z",
       "related_news_urls": [
-        "https://www.fox13news.com/news/live-kelly-mark-morning-tapings-draw-crowds-clearwater-beach",
-        "https://www.tampabay.com/life-culture/arts/tv/2026/11/12/live-with-kelly-and-mark-deals-ripa-consuelos-florida/",
-        "https://www.yahoo.com/news/videos/live-kelly-mark-taping-clearwater-133902410.html"
+        "https://www.gq-magazine.co.uk/article/henry-cavill-voltron-15-11-26",
+        "https://fandomwire.com/henry-cavill-voltron-pacific-rim-meets-godzilla/",
+        "https://www.imdb.com/es/news/ni66111100/?ref_=nwc_art_perm"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-VXOy1J5lZnzEmI8PGfR1Hj0BrX9dSwErBtWFRl-7yxUmUeBU27JPWj4hrrI",
-      "image_credit": "FOX 13 Tampa Bay",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjh7Pk7MuAoHWodo9eCX5xuTcnqa9fAqdpQ6r9l3OIehEVPR6CANOFe-8QrDA",
+      "image_credit": "British GQ",
       "news": [
         {
-          "url": "https://www.fox13news.com/news/live-kelly-mark-morning-tapings-draw-crowds-clearwater-beach",
-          "title": "Live with Kelly and Mark: Morning tapings draw crowds to Clearwater Beach",
-          "publisher": "FOX 13 Tampa Bay",
+          "url": "https://www.gq-magazine.co.uk/article/henry-cavill-voltron-15-11-26",
+          "title": "Henry Cavill is about to take another geek franchise into outer space",
+          "publisher": "British GQ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-VXOy1J5lZnzEmI8PGfR1Hj0BrX9dSwErBtWFRl-7yxUmUeBU27JPWj4hrrI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjh7Pk7MuAoHWodo9eCX5xuTcnqa9fAqdpQ6r9l3OIehEVPR6CANOFe-8QrDA"
         },
         {
-          "url": "https://www.tampabay.com/life-culture/arts/tv/2026/11/12/live-with-kelly-and-mark-deals-ripa-consuelos-florida/",
-          "title": "What Kelly Ripa and Mark Consuelos look forward to visiting in Tampa Bay",
-          "publisher": "Tampa Bay Times",
+          "url": "https://fandomwire.com/henry-cavill-voltron-pacific-rim-meets-godzilla/",
+          "title": "Henry Cavill’s Next Sci-Fi Masterpiece Is ‘Pacific Rim Meets Godzilla’",
+          "publisher": "FandomWire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFtK__gQi9LcHo7GicBYBDOp9k2w_SGt4_Uxk6ouq2smKJVyqmhDTXHcC4pfI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIyPkjSZneWcNuXJwjphYrTpvOeM40aO4g3uh5LvHLzVs0rVNWKPiWPwpOCAU"
         },
         {
-          "url": "https://www.yahoo.com/news/videos/live-kelly-mark-taping-clearwater-133902410.html",
-          "title": "Live with Kelly and Mark taping in Clearwater",
-          "publisher": "Yahoo",
+          "url": "https://www.imdb.com/es/news/ni66111100/?ref_=nwc_art_perm",
+          "title": "Why Henry Cavill Left The Witcher",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv4I1fjpPOdB8nncs0qpGl001Xp_yzSpnQlklrpHQHsLpq8ehjZX_2xiPvwo4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9YR4ZTQe2om8ylo_aHJVbQZ4XSC79sfcR-bI1D2Rw4CH1_0hHVYRtp-uwScQ"
         }
       ]
     },
     {
-      "query": "renaissance",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T14:30:00Z",
+      "query": "theo james",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T15:20:00Z",
       "related_news_urls": [
-        "https://foxbaltimore.com/news/local/32k-stolen-by-maryland-renaissance-festival-concessions-employee-court-records-say",
-        "https://www.baltimoresun.com/2026/11/13/maryland-renaissance-festival-concessions-theft-charges/",
-        "https://finance.yahoo.com/markets/stocks/articles/renaissance-technologies-sold-99-7-122651675.html"
+        "https://greekcitytimes.com/2026/11/16/theo-james-reveals-his-dream-of-owning-a-home-in-greece/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRH2z2-S17zICyiYWAQOUVWfMJi6BUM5s1l1bxoo9orWJ6mpDH4bFoWTMUEe0",
-      "image_credit": "WBFF",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEFXXVSGczRsDHEsp9AGXvj3z4Es1qwbnjgwjKTFwxoo8G6TTgYkNrkXqU0_I",
+      "image_credit": "Greek City Times",
       "news": [
         {
-          "url": "https://foxbaltimore.com/news/local/32k-stolen-by-maryland-renaissance-festival-concessions-employee-court-records-say",
-          "title": "SUN: $32K stolen by Maryland Renaissance Festival concessions employee, court records say",
-          "publisher": "WBFF",
+          "url": "https://greekcitytimes.com/2026/11/16/theo-james-reveals-his-dream-of-owning-a-home-in-greece/",
+          "title": "Theo James Reveals His Dream of Owning a Home in Greece",
+          "publisher": "Greek City Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRH2z2-S17zICyiYWAQOUVWfMJi6BUM5s1l1bxoo9orWJ6mpDH4bFoWTMUEe0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEFXXVSGczRsDHEsp9AGXvj3z4Es1qwbnjgwjKTFwxoo8G6TTgYkNrkXqU0_I"
+        }
+      ]
+    },
+    {
+      "query": "pierce brosnan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T15:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/16/entertainment/video/entertainment-showbiz-hollywood-minute-thomas-crown-affair-roger-taylor-duran-duran-avatar-seven-havens",
+        "https://www.out.com/celebs/michael-b-jordan-movie-trailer",
+        "https://www.laineygossip.com/is-michael-b-jordan-trolling-us-with-new-trailer-for-the-thomas-crown-affair-that-is-giving-bond-vibes/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaYVoO-KqNIG6sKSBIhFTk3yrOvmlYDMTw_oVfOjaVmZmGCxwQGhfq4NVAOUk",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/16/entertainment/video/entertainment-showbiz-hollywood-minute-thomas-crown-affair-roger-taylor-duran-duran-avatar-seven-havens",
+          "title": "Hollywood Minute: Michael B. Jordan returns in ‘The Thomas Crown Affair’",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaYVoO-KqNIG6sKSBIhFTk3yrOvmlYDMTw_oVfOjaVmZmGCxwQGhfq4NVAOUk"
         },
         {
-          "url": "https://www.baltimoresun.com/2026/11/13/maryland-renaissance-festival-concessions-theft-charges/",
-          "title": "$32K stolen by Maryland Renaissance Festival concessions employee, court records say",
-          "publisher": "Baltimore Sun",
+          "url": "https://www.out.com/celebs/michael-b-jordan-movie-trailer",
+          "title": "Michael B. Jordan rocks tight boxer briefs in sexy new clip",
+          "publisher": "Out Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtKiKTB-Bgo-F3SdH_7i4WTNRniCfXU6Sn3N0OC10-RMpy1ylCqzCg4LTmzpc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-RRxS0fRxxCWY-pReg9wX4EXlcwhJIzOCuAHb761md8aPosIWgrlKUPF4kaQ"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/renaissance-technologies-sold-99-7-122651675.html",
-          "title": "Renaissance Technologies Sold 99.7% Of Its $1.42 Billion Nvidia Stake Before Jensen Huang’s Exit, While Building A $1.62 Billion Stake In Another Chip Stock",
+          "url": "https://www.laineygossip.com/is-michael-b-jordan-trolling-us-with-new-trailer-for-the-thomas-crown-affair-that-is-giving-bond-vibes/",
+          "title": "Is Michael B. Jordan trolling us with new trailer for The Thomas Crown Affair that is giving Bond vibes?",
+          "publisher": "LaineyGossip",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIWxPp7QxJkl_2hj7Ehv6PKXfK1lmA42uy4BC71AXFUQmcTQaarav6w2NFhtE"
+        }
+      ]
+    },
+    {
+      "query": "walmart stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T15:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/seeking-clues-walmart-wmt-q3-131504572.html",
+        "https://www.benzinga.com/trading-ideas/movers/26/11/63281214/whats-going-on-with-walmart-stock-monday-2",
+        "https://scanx.trade/stock-market-news/companies/walmart-q3fy26-results-revenue-seen-up-5-3-valuation-worries-linger/56307118"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThbSWsrlBeUrh1EaE9u-vDPMp7B0or5QtZik8oirVTnr8ZhUZMHUaTL3ObDY8",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/seeking-clues-walmart-wmt-q3-131504572.html",
+          "title": "Seeking Clues to Walmart (WMT) Q3 Earnings? A Peek Into Wall Street Projections for Key Metrics",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmcJCNt9cIk8TVgiZRGbfvIuFGbyILDaZIweBti8bxa-aXy4wWzgC70BVktwc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThbSWsrlBeUrh1EaE9u-vDPMp7B0or5QtZik8oirVTnr8ZhUZMHUaTL3ObDY8"
+        },
+        {
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63281214/whats-going-on-with-walmart-stock-monday-2",
+          "title": "What's Going On With Walmart Stock Monday?",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXJR-cDA7oIAWqaCVR1ev1Hfitq_NJxPte_9BWpRa6tFuQglFSTXcZ0HTC8mU"
+        },
+        {
+          "url": "https://scanx.trade/stock-market-news/companies/walmart-q3fy26-results-revenue-seen-up-5-3-valuation-worries-linger/56307118",
+          "title": "Walmart Q3FY26 Results: Revenue seen up 5.3% as valuation worries linger",
+          "publisher": "scanx.trade",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKbGuZGaIkWpgfWfNx0OcT8ZId560exBFrXcOwzLZEUBVEmttd107g1IxlO68"
         }
       ]
     },
     {
-      "query": "usa today ncaa football re-rank",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T14:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/sports/ncaaf/2026/11/16/college-football-re-rank-ncaa-1-138-ohio-state-week-11/92799749007/",
-        "https://www.cbssports.com/college-football/news/college-football-rankings-coaches-poll-top-25-week-12-2026/",
-        "https://sportsdata.usatoday.com/football/ncaaf/coaches-poll/2026/2026-11-15"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW48TeTNsz9WM6CPE2ZZSxyEHJ9N5n6AhK7JcQ3o17xrCJDjSVhaBM7DhamJw",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/16/college-football-re-rank-ncaa-1-138-ohio-state-week-11/92799749007/",
-          "title": "Ohio State rises, SEC dominates college football's NCAA Re-Rank 1-138 after Week 11",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW48TeTNsz9WM6CPE2ZZSxyEHJ9N5n6AhK7JcQ3o17xrCJDjSVhaBM7DhamJw"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/college-football-rankings-coaches-poll-top-25-week-12-2026/",
-          "title": "Coaches Poll top 25: Georgia tightens grip on No. 1, Wake Forest enters top 10 in college football rankings",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSagpDnqFl63-Um9c6NSe0W6U1UHv9Gv62VTJfxJpYeLF_toe8ZCcCoDSCDhPg"
-        },
-        {
-          "url": "https://sportsdata.usatoday.com/football/ncaaf/coaches-poll/2026/2026-11-15",
-          "title": "2026-27US LBM Coaches Poll",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh7kqDi5o8EKt1zDCcULpYl6gdRJjvDsB7OyExX3VChQkrPOqjvDVP7t6lxLs"
-        }
-      ]
-    },
-    {
-      "query": "somalia vs ghana",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T14:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cr62p3jyq2ewt",
-        "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/Ben-Asare-Benched-for-Ati-Zigi-to-Start-Likely-Black-Stars-XI-against-Somalia-2061480",
-        "https://en.africatopsports.com/2027-afcon-q-somalia-captain-abdullahi-abdulsamed-emphasises-hard-work-ahead-of-ghana-clash/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPOEK0kwGj3R8FmqWDRcTCeti13oBUsXlnlPjH7cZ3H2K9o1xEqwGED9oJHKk",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cr62p3jyq2ewt",
-          "title": "Somalia vs Ghana: Africa Cup of Nations Qualification stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPOEK0kwGj3R8FmqWDRcTCeti13oBUsXlnlPjH7cZ3H2K9o1xEqwGED9oJHKk"
-        },
-        {
-          "url": "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/Ben-Asare-Benched-for-Ati-Zigi-to-Start-Likely-Black-Stars-XI-against-Somalia-2061480",
-          "title": "Ben Asare Benched for Ati-Zigi to Start: Likely Black Stars XI against Somalia",
-          "publisher": "GhanaWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRepcDxbywf7DWdZy3IXFoNAyUZJbikY_Y_m4N4K87QNsaLCbz7J02ANiYqHro"
-        },
-        {
-          "url": "https://en.africatopsports.com/2027-afcon-q-somalia-captain-abdullahi-abdulsamed-emphasises-hard-work-ahead-of-ghana-clash/",
-          "title": "2027 AFCON Q: Somalia Captain Abdullahi AbdulSamed Emphasises Hard Work Ahead of Ghana Clash",
-          "publisher": "Africa Top Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtn9ICyQ1dsxOKNgLqSOYyGvOk-4rJazCoocOWpzCriB29IxDk9_eaXlMCM_w"
-        }
-      ]
-    },
-    {
-      "query": "jatavis sanders",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T14:20:00Z",
-      "related_news_urls": [
-        "https://www.al.com/alabamafootball/2026/11/nc-state-philip-rivers-hire-alabama-staffer-as-next-general-manager.html",
-        "https://gopack.com/news/2026/11/16/sanders-named-general-manager-for-wolfpack-football",
-        "https://247sports.com/college/north-carolina-state/article/jatavis-sanders-set-to-take-over-as-nc-state-football-general-manager-292684987/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStsQ-RZed8rCZZOpHXQSxGNZuya1y4ySvKuCwPwJ7S_Yu1mafmBcffybMmsLI",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/alabamafootball/2026/11/nc-state-philip-rivers-hire-alabama-staffer-as-next-general-manager.html",
-          "title": "NC State, Philip Rivers hire next general manager from Alabama front office",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStsQ-RZed8rCZZOpHXQSxGNZuya1y4ySvKuCwPwJ7S_Yu1mafmBcffybMmsLI"
-        },
-        {
-          "url": "https://gopack.com/news/2026/11/16/sanders-named-general-manager-for-wolfpack-football",
-          "title": "Sanders Named General Manager for Wolfpack Football",
-          "publisher": "NC State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbX0sh2Yn5Nb9xLTtZQSJrnobSC6HbV23y2dym6NffMDBR8weyNPx6ZT6x2eQ"
-        },
-        {
-          "url": "https://247sports.com/college/north-carolina-state/article/jatavis-sanders-set-to-take-over-as-nc-state-football-general-manager-292684987/",
-          "title": "Jatavis Sanders set to take over as NC State football general manager",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT82Umu5UrDkFk28UNHY9CrPy7VrWcn_3OwIbmpUpXETmbfK1t41GsgMVxPo6k"
-        }
-      ]
-    },
-    {
-      "query": "nicola coughlan",
+      "query": "nike stock",
       "approx_searches": "200+",
-      "published_at": "2026-11-16T14:20:00Z",
+      "published_at": "2026-11-16T15:20:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/nicola-coughlan-boycott-harry-potter-jk-rowlings-trans-1237224887/",
-        "https://www.hollywoodreporter.com/tv/tv-news/nicola-coughlan-harry-potter-jk-rowling-show-series-trans-1236756089/",
-        "https://www.gbnews.com/celebrity/duncan-bannatyne-nicola-coughlan-harry-potter-jk-rowling-trans"
+        "https://www.gurufocus.com/news/9201294/nke-reiterated-by-cantor-fitzgerald-maintains-price-target-at-38",
+        "https://www.marketscreener.com/news/nike-inc-bernstein-remains-its-buy-rating-ce785ed9de8efe22",
+        "https://www.quiverquant.com/news/New+Analyst+Forecast%3A+%24NKE+Given+%2438+Price+Target"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY9UpL6tpwnLKgbZyU_8cL_qnRapGsUI6bI_YBw7uS8GNoisaLiAQRaD00X3k",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFtagN1ArgIXTO4B_oLH3oxe9kQO3ROAzRhAuWnoDkO0GwCms9_8qPbegnZw",
+      "image_credit": "GuruFocus",
+      "news": [
+        {
+          "url": "https://www.gurufocus.com/news/9201294/nke-reiterated-by-cantor-fitzgerald-maintains-price-target-at-38",
+          "title": "NKE Reiterated by Cantor Fitzgerald -- Maintains Price Target at $38",
+          "publisher": "GuruFocus",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFtagN1ArgIXTO4B_oLH3oxe9kQO3ROAzRhAuWnoDkO0GwCms9_8qPbegnZw"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/nike-inc-bernstein-remains-its-buy-rating-ce785ed9de8efe22",
+          "title": "Nike, Inc. : Bernstein remains its Buy rating",
+          "publisher": "www.marketscreener.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNnMHK6Y3lDZiKqhNaS2yOdUtTPfcmqNc__6VOamBxHPpkcLDvHJrAgJUsFew"
+        },
+        {
+          "url": "https://www.quiverquant.com/news/New+Analyst+Forecast%3A+%24NKE+Given+%2438+Price+Target",
+          "title": "New Analyst Forecast: $NKE Given $38 Price Target",
+          "publisher": "Quiver Quantitative",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVxtHKzfbtYvO0BWQwmcYwL4hO9O_oL7c70oV7mPZc-TuDt7hvCtPVGDWA3vk"
+        }
+      ]
+    },
+    {
+      "query": "maura west",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T15:20:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1303718/general-hospital-ava-drew-wedding-brennan-maura-west/",
+        "https://www.imdb.com/de/news/ni66112242/?ref_=nwc_art_perm",
+        "https://www.imdb.com/news/ni66112242/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIKsQQumo_AuvONCKda-Flghv5OwdPjUitclewTok8WvPLusk3sz8EbMcwlWw",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1303718/general-hospital-ava-drew-wedding-brennan-maura-west/",
+          "title": "'General Hospital's Maura West Delivers a Tour de Force as Trina's Protector & Drew's Reluctant Bride",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIKsQQumo_AuvONCKda-Flghv5OwdPjUitclewTok8WvPLusk3sz8EbMcwlWw"
+        },
+        {
+          "url": "https://www.imdb.com/de/news/ni66112242/?ref_=nwc_art_perm",
+          "title": "Daytime TV Performer of the Week: ‘General Hospital’s Maura West Delivers a Tour de Force as Trina’s Protector & Drew’s Reluctant Bride",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnu5QE8QV2EKFxbmZSe3nCMirvy9sGfIXIBe7IBKlMK3rQ9NHEfEayR4prvK4"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66112242/?ref_=nwc_art_perm",
+          "title": "Daytime TV Performer of the Week: ‘General Hospital’s Maura West Delivers a Tour de Force as Trina’s Protector & Drew’s Reluctant Bride",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnu5QE8QV2EKFxbmZSe3nCMirvy9sGfIXIBe7IBKlMK3rQ9NHEfEayR4prvK4"
+        }
+      ]
+    },
+    {
+      "query": "lindsay clancy",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T15:10:00Z",
+      "related_news_urls": [
+        "https://turnto10.com/news/local/lindsay-clancy-returns-to-court-as-date-for-a-retrial-hangs-in-the-balance",
+        "https://www.boston.com/news/crime/2026/11/16/lindsay-clancy-hearing-nov-16-retrial-date/",
+        "https://www.cbsnews.com/boston/news/lindsay-clancy-hearing/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuPkr5P6rfl7vcHARXMQZ15uDW0nLD7RXTkzzgWxRQP6O5CtK8KDARtUN4PsE",
+      "image_credit": "WJAR",
+      "news": [
+        {
+          "url": "https://turnto10.com/news/local/lindsay-clancy-returns-to-court-as-date-for-a-retrial-hangs-in-the-balance",
+          "title": "Lindsay Clancy returns to court as date for a retrial hangs in the balance",
+          "publisher": "WJAR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuPkr5P6rfl7vcHARXMQZ15uDW0nLD7RXTkzzgWxRQP6O5CtK8KDARtUN4PsE"
+        },
+        {
+          "url": "https://www.boston.com/news/crime/2026/11/16/lindsay-clancy-hearing-nov-16-retrial-date/",
+          "title": "Livestream: Lindsay Clancy may get a new trial date in hearing on next steps",
+          "publisher": "Boston.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cx5tUY5A3DNZw4ZJDFvvknMSBBrK05UGiQTWJ-hM8LnqYNNbqrCT6OaIKP0"
+        },
+        {
+          "url": "https://www.cbsnews.com/boston/news/lindsay-clancy-hearing/",
+          "title": "Watch Live: Lindsay Clancy to be retried on first-degree murder charges",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlv0O3ok9UABIKmX_TkEM1kvDD8kB2yAGJ_yvowTh0hkR2Yi5_Ro0-A2IkhVQ"
+        }
+      ]
+    },
+    {
+      "query": "jack lowden",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T15:10:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/slow-horses-seasons-9-10-apple-tv-1237225018/",
+        "https://variety.com/2026/tv/global/slow-horses-more-seasons-jack-lowden-1236948628/",
+        "https://www.thetimes.com/culture/tv-radio/article/slow-horses-final-series-gary-oldman-59wthq5m6"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7REFIHhIfqv4_58dnh855M6WoB2JP2KmMTn_SiPe8ua7W3cQVF-q9O6Ksp3k",
       "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/nicola-coughlan-boycott-harry-potter-jk-rowlings-trans-1237224887/",
-          "title": "Nicola Coughlan Boycotting ‘Harry Potter’ Series Over J.K. Rowling’s Trans Views: “It’s Not For Me”",
+          "url": "https://deadline.com/2026/11/slow-horses-seasons-9-10-apple-tv-1237225018/",
+          "title": "‘Slow Horses’ Renewed For Seasons 9 & 10 At Apple TV",
           "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY9UpL6tpwnLKgbZyU_8cL_qnRapGsUI6bI_YBw7uS8GNoisaLiAQRaD00X3k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7REFIHhIfqv4_58dnh855M6WoB2JP2KmMTn_SiPe8ua7W3cQVF-q9O6Ksp3k"
         },
         {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/nicola-coughlan-harry-potter-jk-rowling-show-series-trans-1236756089/",
-          "title": "Nicola Coughlan “Will Not Be Watching” HBO’s ‘Harry Potter’: “And I Would Never Be in It”",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://variety.com/2026/tv/global/slow-horses-more-seasons-jack-lowden-1236948628/",
+          "title": "‘Slow Horses’ Renewed for Seasons 9 and 10, but Bond Candidate Jack Lowden’s Return Is Uncertain",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVFPHj2JSN_8qSdobOJS5ivLiGFU1DK1zUT-3FUFzbv5aTjgVjc2BV9KSGnvc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVgnZojlZ8ly3ayqwH8bob3DHjuxZk8rZb91WG1S0RBQC_lM4AEfIBQuFtw7c"
         },
         {
-          "url": "https://www.gbnews.com/celebrity/duncan-bannatyne-nicola-coughlan-harry-potter-jk-rowling-trans",
-          "title": "Duncan Bannatyne blasts Bridgerton star as she vows to boycott Harry Potter series over JK Rowling trans views",
-          "publisher": "GB News",
+          "url": "https://www.thetimes.com/culture/tv-radio/article/slow-horses-final-series-gary-oldman-59wthq5m6",
+          "title": "Slow Horses to get ‘another two series with Gary Oldman’",
+          "publisher": "The Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxZnXxng8wCQ2MK-DX4bP5KVePgIFWe6Q-N3SrAuVsd7_97t6PmZzsx3dgueg"
-        }
-      ]
-    },
-    {
-      "query": "prince harry news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T14:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/entertainment/prince-william-draws-hard-line-harry-meghan-royal-future-king-charles-leaves-door-open-experts",
-        "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-william-snubs-prince-harry-080931061.html",
-        "https://timesofindia.indiatimes.com/relationships/prince-harry-reaches-out-william-stays-away-whats-really-happening-between-the-brothers/articleshow/135724618.cms"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnLpgXUXUSc8o8Et2H86j8ixkgYPrAH2v_hGqTylg4lzAH3bSDRn6f7hnI6s",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/entertainment/prince-william-draws-hard-line-harry-meghan-royal-future-king-charles-leaves-door-open-experts",
-          "title": "Prince William draws hard line on Harry, Meghan’s royal future as King Charles leaves door open: experts",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnLpgXUXUSc8o8Et2H86j8ixkgYPrAH2v_hGqTylg4lzAH3bSDRn6f7hnI6s"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-william-snubs-prince-harry-080931061.html",
-          "title": "Prince William Snubs Prince Harry Out of His Coronation Ceremony — Expert",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv_fdjOIhiaK5qhdOSZC06lhaHZNWiAJPjlF3Oil-gaGXD353NVP8HEsqgh2M"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/relationships/prince-harry-reaches-out-william-stays-away-whats-really-happening-between-the-brothers/articleshow/135724618.cms",
-          "title": "Prince Harry reaches out, William stays away: What's really happening between the brothers?",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Nx4qDv1L4zNSzjA1muR3s4lBXAS8sFLHvKFesQOVhKTZatTHqIf3TnMVc0w"
-        }
-      ]
-    },
-    {
-      "query": "bond 26",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T14:00:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/13/new-james-bond-announced-007",
-        "https://puck.news/hollywood/2026/11/the-case-for-robert-pattinson-as-james-bond",
-        "https://www.gq.com/story/denis-villeneuve-men-of-the-year-screening-recap"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPKs_zjY_cxcDIuwL5Vdx6LwVM76rGWqtKxbmGMd1pfKTDsOO9NDJGzLp9Vj4",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/13/new-james-bond-announced-007",
-          "title": "‘It was a train wreck! I was terrified’: how the new James Bond will be announced – and what can go wrong",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPKs_zjY_cxcDIuwL5Vdx6LwVM76rGWqtKxbmGMd1pfKTDsOO9NDJGzLp9Vj4"
-        },
-        {
-          "url": "https://puck.news/hollywood/2026/11/the-case-for-robert-pattinson-as-james-bond",
-          "title": "The Case for Robert Pattinson as James Bond",
-          "publisher": "Puck",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJQbUxeJypL4Go0YCHL75RpiNekl52WxgZWQ5G8dAfM3cFK69vP63cC1GEQQ"
-        },
-        {
-          "url": "https://www.gq.com/story/denis-villeneuve-men-of-the-year-screening-recap",
-          "title": "Denis Villeneuve Talks Dune: Part Three and Rebooting James Bond: ‘We Cannot F*ck It Up.’",
-          "publisher": "GQ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlK9IzW53paXdeuWBQcbCyCNJrqmjhuA4fh3_bqkSHC2AfgiAmt4lh6q2kI20"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxHsW5loW3cgHuC4HUGJwJ8l-KSK-YxBbm8iEWTIf6jCZoWiIrrSj-R-GvZaQ"
         }
       ]
     }
