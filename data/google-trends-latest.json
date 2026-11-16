@@ -3,7 +3,7 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T09:40:13.542288Z",
+  "checked_at": "2026-11-16T10:01:31.816310Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
@@ -42,44 +42,9 @@
       ]
     },
     {
-      "query": "emma watson",
-      "approx_searches": "100+",
+      "query": "ban vs sa",
+      "approx_searches": "500+",
       "published_at": "2026-11-16T08:40:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/es/news/ni66110819/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/emma-watson-trips-striped-heels-143048610.html",
-        "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEO3AR1v3jNzI1j1scd1v4zTuif7m1ei2ukCAo-UTkCG5BkUACf6kFeAZ-riI",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/es/news/ni66110819/?ref_=nwc_art_perm",
-          "title": "Emma Watson Makes Rare Appearance at GQ Men of the Year Party in Chic Little Black Dress",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEO3AR1v3jNzI1j1scd1v4zTuif7m1ei2ukCAo-UTkCG5BkUACf6kFeAZ-riI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/emma-watson-trips-striped-heels-143048610.html",
-          "title": "Emma Watson Trips in Striped Heels Outside GQ Party, Laughs Off the Fall",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4UAxLsUpP6kxbRaYVEwj4PAeEEeHHG_SUnalH9L73L6QU7s_TyagdgFh_lWI"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
-          "title": "Emma Watson suffers brutal fall outside splashy celebrity party at LA hot spot Chateau Marmont",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "bangladesh vs south africa",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T08:30:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
         "https://www.cricinfo.com/story/sa-vs-ban-1st-test-kagiso-rabada-we-need-to-be-more-ruthless-1562805",
@@ -112,17 +77,59 @@
       ]
     },
     {
+      "query": "emma watson",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T08:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/es/news/ni66110819/?ref_=nwc_art_perm",
+        "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
+        "https://www.instyle.com/emma-watson-stuns-black-minidress-gq-party-12253178"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEO3AR1v3jNzI1j1scd1v4zTuif7m1ei2ukCAo-UTkCG5BkUACf6kFeAZ-riI",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/es/news/ni66110819/?ref_=nwc_art_perm",
+          "title": "Emma Watson Makes Rare Appearance at GQ Men of the Year Party in Chic Little Black Dress",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEO3AR1v3jNzI1j1scd1v4zTuif7m1ei2ukCAo-UTkCG5BkUACf6kFeAZ-riI"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
+          "title": "Emma Watson suffers brutal fall outside splashy celebrity party at LA hot spot Chateau Marmont",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.instyle.com/emma-watson-stuns-black-minidress-gq-party-12253178",
+          "title": "Emma Watson Wows in a Black Velvet Minidress and Striped Heels for Rare Outing",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDBO21WwBKrR3aM9i-yvrAy8wVTLvAk7P8KfMe6foxSnOGtrMFndVx2gkNKDY"
+        }
+      ]
+    },
+    {
       "query": "qwen4",
       "approx_searches": "100+",
       "published_at": "2026-11-16T08:10:00Z",
       "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
         "https://www.reuters.com/business/retail-consumer/alibaba-unveils-new-flagship-ai-model-with-safety-upgrades-2026-11-16/",
-        "https://finance.yahoo.com/technology/ai/articles/baba-stock-edges-lower-overnight-060258606.html",
-        "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals"
+        "https://www.scmp.com/tech/big-tech/article/3374540/alibaba-says-new-flagship-ai-model-cuts-task-costs-60-while-tightening-cyber-guardrails"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrIErRyhzIHuAK83_QwvHNew0u-fQHNRpWA2bh_58r60OXdoqKGIxVPccORzw",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXzyNE3ZtRw5IhadPXiwJhxdllhENQuvrvgvjMo4OsH8Jg4LefqYa0WrsDkzw",
+      "image_credit": "Bloomberg.com",
       "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
+          "title": "Alibaba Unveils New Flagship AI Model in Riposte to US Rivals",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXzyNE3ZtRw5IhadPXiwJhxdllhENQuvrvgvjMo4OsH8Jg4LefqYa0WrsDkzw"
+        },
         {
           "url": "https://www.reuters.com/business/retail-consumer/alibaba-unveils-new-flagship-ai-model-with-safety-upgrades-2026-11-16/",
           "title": "Alibaba unveils new flagship AI model with safety upgrades",
@@ -131,18 +138,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrIErRyhzIHuAK83_QwvHNew0u-fQHNRpWA2bh_58r60OXdoqKGIxVPccORzw"
         },
         {
-          "url": "https://finance.yahoo.com/technology/ai/articles/baba-stock-edges-lower-overnight-060258606.html",
-          "title": "BABA Stock Edges Lower Overnight: Alibaba Reportedly Launches Most-Advanced AI Model That Cuts Task Costs By 60%",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.scmp.com/tech/big-tech/article/3374540/alibaba-says-new-flagship-ai-model-cuts-task-costs-60-while-tightening-cyber-guardrails",
+          "title": "Alibaba launches Qwen4-Max model with strict cybersecurity guardrails",
+          "publisher": "South China Morning Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFmwgtB7nkU9K2WrYE_GZvV1UvxT3UHgxoD6HfgJ_mdEWvdiC96mBI0V8mT_4"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
-          "title": "Alibaba Unveils New Flagship AI Model in Riposte to US Rivals",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXzyNE3ZtRw5IhadPXiwJhxdllhENQuvrvgvjMo4OsH8Jg4LefqYa0WrsDkzw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxe0tBisTtRRefhzw8gQJ_kk1YNnxSS30i5qCJx140xmFcVeaL4yZnrsILYlU"
         }
       ]
     },
@@ -151,26 +151,26 @@
       "approx_searches": "200+",
       "published_at": "2026-11-16T08:00:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/penelope-cruz-bunker-interview-1237223831/",
         "https://www.vanityfair.com/story/penelope-cruz-bunker-screening-room",
+        "https://deadline.com/2026/11/penelope-cruz-bunker-interview-1237223831/",
         "https://en.vijesti.me/fun/interesting/836337/Penelope-Cruz-feared-that-one-scene-would-jeopardize-her-marriage"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbQB5PFobLn4m0ogVVWWluNeqxxr-ObtKI64QgPbqU52Oys-yLd31HiCU23rk",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNc1D3abk7BNbx9MvWKv7iYkIXY-6lYSMLzCQaJyUoJ_SooilwAm6gCLQX8Kc",
+      "image_credit": "Vanity Fair",
       "news": [
-        {
-          "url": "https://deadline.com/2026/11/penelope-cruz-bunker-interview-1237223831/",
-          "title": "Penélope Cruz Wary Of Marital Blowback Starring With Javier Bardem In ‘Bunker’",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbQB5PFobLn4m0ogVVWWluNeqxxr-ObtKI64QgPbqU52Oys-yLd31HiCU23rk"
-        },
         {
           "url": "https://www.vanityfair.com/story/penelope-cruz-bunker-screening-room",
           "title": "Penélope Cruz Says She and Husband Javier Bardem are “Very Careful” About Choosing When to Work Together",
           "publisher": "Vanity Fair",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNc1D3abk7BNbx9MvWKv7iYkIXY-6lYSMLzCQaJyUoJ_SooilwAm6gCLQX8Kc"
+        },
+        {
+          "url": "https://deadline.com/2026/11/penelope-cruz-bunker-interview-1237223831/",
+          "title": "Penélope Cruz Wary Of Marital Blowback Starring With Javier Bardem In ‘Bunker’",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbQB5PFobLn4m0ogVVWWluNeqxxr-ObtKI64QgPbqU52Oys-yLd31HiCU23rk"
         },
         {
           "url": "https://en.vijesti.me/fun/interesting/836337/Penelope-Cruz-feared-that-one-scene-would-jeopardize-her-marriage",
@@ -187,8 +187,8 @@
       "published_at": "2026-11-16T08:00:00Z",
       "related_news_urls": [
         "https://aviationjeta.com/indigo-marks-two-years-of-indigo-stretch-with-over-4000-daily-seats-across-its-growing/",
-        "https://inshorts.com/en/news/indigo-plane-takes-u-turn-after-failing-to-retract-landing-gear-in-pune--iaf-declares-emergency-1794739315628",
-        "https://timesofindia.indiatimes.com/city/pune/almost-90-minutes-after-take-off-guwahati-bound-indigo-aircraft-returns-to-pune-airport-after-landing-gear-fails-to-retract-passengers-and-crew-safe/articleshow/135864730.cms"
+        "https://www.ndtvprofit.com/business/exclusive-indian-airlines-expand-premium-seats-despite-capacity-cuts-indigo-leads-push-12311589",
+        "https://inshorts.com/en/news/indigo-plane-takes-u-turn-after-failing-to-retract-landing-gear-in-pune--iaf-declares-emergency-1794739315628"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5iZh4bG-WvG-TURRnz4LihU_N2o8qC0nqEJLnWM8IT5_dFXcDVqCnIuNaodo",
       "image_credit": "Aviation Jeta",
@@ -201,18 +201,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5iZh4bG-WvG-TURRnz4LihU_N2o8qC0nqEJLnWM8IT5_dFXcDVqCnIuNaodo"
         },
         {
+          "url": "https://www.ndtvprofit.com/business/exclusive-indian-airlines-expand-premium-seats-despite-capacity-cuts-indigo-leads-push-12311589",
+          "title": "Indian Airlines Expand Premium Seats Despite Capacity Cuts, IndiGo Leads Push | Profit Exclusive",
+          "publisher": "NDTV Profit",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4BXmCjiM8A8jsvrwV0G6krza6yN6emOgrFJIcE1cxQvlUTRwYMnNAubpD0e4"
+        },
+        {
           "url": "https://inshorts.com/en/news/indigo-plane-takes-u-turn-after-failing-to-retract-landing-gear-in-pune--iaf-declares-emergency-1794739315628",
           "title": "IndiGo plane takes U-turn after failing to retract landing gear in Pune, IAF declares emergency | The plane was carrying 192 passengers and crew | Inshorts",
           "publisher": "Inshorts",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIWPIvldQxGNQkckPika8DAuqXycbVU3PDncnB9_38FQ4VmJnVJC9xnZT2ki0"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/city/pune/almost-90-minutes-after-take-off-guwahati-bound-indigo-aircraft-returns-to-pune-airport-after-landing-gear-fails-to-retract-passengers-and-crew-safe/articleshow/135864730.cms",
-          "title": "Almost 90 minutes after take-off, Guwahati-bound IndiGo aircraft returns to Pune airport after landing ge",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQYwG_21Pb8-Dhol5O1r3RZy9SPj1v_yF1El63es2PJiEssDe6HQh80_Bs7C8"
         }
       ]
     },
@@ -253,7 +253,7 @@
     },
     {
       "query": "sharad kapoor",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-16T07:40:00Z",
       "related_news_urls": [
         "https://www.ndtv.com/entertainment/please-help-me-actor-sharad-kapoor-seeks-financial-support-from-film-fraternity-12329924",
@@ -323,12 +323,12 @@
     },
     {
       "query": "gta vi game",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T07:30:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
         "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
-        "https://www.forbes.com/sites/conormurray/2026/11/14/gta-vi-has-already-sold-1-billion-in-preorders-but-may-not-revive-console-sales-amid-ai-driven-price-hikes/"
+        "https://www.forbes.com/sites/antoniopequenoiv/2026/11/11/grand-theft-auto-vi-reaches-1-billion-in-sales-ahead-of-release-report-says/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94",
       "image_credit": "CNBC",
@@ -348,11 +348,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcX3HbDpCNM6y5ct8Zb36Q0dq2OK0epLORhVFBkEfStwDKfo7YWU5uyMKUhTk"
         },
         {
-          "url": "https://www.forbes.com/sites/conormurray/2026/11/14/gta-vi-has-already-sold-1-billion-in-preorders-but-may-not-revive-console-sales-amid-ai-driven-price-hikes/",
-          "title": "‘GTA VI’ Has Already Sold $1 Billion+ In Preorders—But May Not Revive Console Sales Amid AI-Driven Price Hikes",
+          "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/11/11/grand-theft-auto-vi-reaches-1-billion-in-sales-ahead-of-release-report-says/",
+          "title": "‘Grand Theft Auto VI’ Reaches $1 Billion In Sales Ahead Of Release, Report Says",
           "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCHzkZV1aJ0gbFMbBEReA1DTzf2CKGUfEIuyV01hxco6oRB0oeU4Y8NZJGbrM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3yyMoE0sjcz2HWmcpuD3enTuobJvMKIJjc7gpHRFQzmbsclNmIsG7dby5f9I"
         }
       ]
     }
