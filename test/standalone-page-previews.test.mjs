@@ -5,7 +5,9 @@ const cases=[["test-ground-ai/index.html","test-ground-ai","/test-ground-ai/","T
 for(const [path,slug,route,title] of cases){
  test('original crawler-visible social preview for '+route,()=>{
   const html=fs.readFileSync(path,'utf8');
-  const head=html.match(/<head\\b[^>]*>([\\s\\S]*?)<\\/head>/i)?.[1];
+  const start=html.toLowerCase().indexOf('<head');
+  const end=html.toLowerCase().indexOf('</head>');
+  const head=start>=0&&end>start?html.slice(start,end):'';
   assert.ok(head,'head must exist');
   const img='https://quantaphi.org/assets/share/pages/'+slug+'.png?v=20261115';
   const canonical='https://quantaphi.org'+route;

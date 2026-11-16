@@ -4,6 +4,7 @@ on:
     branches: [feat/standalone-share-previews-1196-20261115]
     paths:
       - 'assets/share/pages/**.svg'
+      - 'test/standalone-page-previews.test.mjs'
       - '.github/workflows/standalone-page-previews.yml'
   pull_request:
     paths:
