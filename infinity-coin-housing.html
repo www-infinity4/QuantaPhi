@@ -3,30 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#160e28">
+<meta name="theme-color" content="#f7f4f0">
 <title>Infinity Coin Housing · Oracle Octaves concept card</title>
+<link rel="stylesheet" href="./oracle-interface.css">
 <style>
-:root{color-scheme:dark;font:18px/1.55 system-ui,sans-serif;background:#110b1f;color:#f2e9ff}
-*{box-sizing:border-box}body{margin:0;min-width:280px;background:radial-gradient(ellipse at 50% 0,#51356b 0,#211230 34%,#100a1c 72%);min-height:100vh}
-main{max-width:780px;margin:auto;padding:16px 14px 50px}.card{position:relative;overflow:hidden;border:1px solid #ab8955;border-radius:23px;background:linear-gradient(150deg,#2b193e,#160f29 65%,#291d3f);box-shadow:0 12px 35px #0008;padding:clamp(16px,4vw,30px)}
-.eyebrow{color:#f2d18b;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;font-weight:800}
-h1{font-size:clamp(1.75rem,6vw,2.7rem);line-height:1.12;margin:.25rem 0 .65rem;letter-spacing:.02em}h2{font-size:1.18rem;color:#ffdf94;margin:1.2rem 0 .5rem}
-p{margin:.6rem 0;color:#ebdff8}.sub{color:#d8c8e9}.stage{display:flex;flex-wrap:wrap;gap:7px;margin:1rem 0}
-.stage span{border:1px solid #9e829e;background:#231837;border-radius:40px;padding:6px 10px;font-size:.78rem}.stage .active{border-color:#e9c572;color:#ffe5aa}
-figure{margin:18px 0;background:linear-gradient(145deg,#221d39,#100d20);border:1px solid #766182;border-radius:15px;padding:10px}
-svg{display:block;width:100%;height:auto;max-height:260px}figcaption{font-size:.78rem;color:#cfbfe1;padding:5px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.panel{background:#211734;border:1px solid #6b577b;border-radius:14px;padding:13px}label{font-size:.87rem;font-weight:700;display:block;margin-bottom:5px;color:#f2dfb3}
-input{font:inherit;min-height:48px;width:100%;padding:9px 11px;background:#f9f6ff;color:#21112b;border:0;border-radius:9px}
-button{min-height:49px;background:linear-gradient(#f9e0aa,#e7b45c);border:0;border-radius:12px;color:#24112b;font:inherit;font-weight:800;padding:10px 16px;cursor:pointer;width:100%;margin:13px 0 4px}
-button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #ffdb87;outline-offset:3px}
-.output{min-height:60px;background:#191229;border-left:3px solid #e3b865;border-radius:4px;padding:12px;margin:12px 0;white-space:pre-line}
-a{color:#f4d599;text-underline-offset:3px}.small{font-size:.85rem}.warn{border-top:1px solid #736079;margin-top:18px;padding-top:11px}
+:root{color-scheme:light;font:18px/1.55 system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--oracle-paper);color:var(--oracle-ink)}
+main{max-width:780px;margin:auto;padding:16px 14px 50px}
+.card{background:var(--oracle-surface);padding:clamp(16px,4vw,30px)}
+.eyebrow{color:#8e2b25;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;font-weight:800}
+h1{font-size:clamp(1.75rem,6vw,2.7rem);line-height:1.12;margin:.25rem 0 .65rem;letter-spacing:-.025em}
+h2{font-size:1.18rem;margin:1.2rem 0 .5rem}
+p{margin:.6rem 0}
+.sub,figcaption{color:var(--oracle-muted)}
+.stage{display:flex;flex-wrap:wrap;gap:7px;margin:1rem 0}
+.stage span{border:1px solid var(--oracle-line);background:var(--oracle-paper);border-radius:40px;padding:6px 10px;font-size:.82rem}
+.stage .active{border-color:#edbfb9;background:#fff0ef;color:#8e2b25}
+figure{margin:18px 0;background:linear-gradient(145deg,#fff,#f3eeea);border:1px solid var(--oracle-line);border-radius:15px;padding:10px}
+svg{display:block;width:100%;height:auto;max-height:260px}
+figcaption{font-size:.82rem;padding:5px}
+fieldset{min-width:0;margin:0;padding:0;border:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.panel{background:var(--oracle-paper);border:1px solid var(--oracle-line);border-radius:14px;padding:13px}
+label{font-size:.9rem;font-weight:700;display:block;margin-bottom:5px}
+input{font:inherit;min-height:48px;width:100%;padding:9px 11px}
+button{min-height:49px;background:var(--oracle-red);border:0;border-radius:999px;color:#fff;font:inherit;font-weight:800;padding:10px 16px;cursor:pointer;width:100%;margin:13px 0 4px}
+button:not(:disabled):hover{background:#8e2b25}
+button:disabled{background:var(--oracle-paper);color:var(--oracle-muted);cursor:default}
+input:focus-visible{outline:3px solid #236b83;outline-offset:3px}
+.output{min-height:60px;background:var(--oracle-paper);border-left:3px solid var(--oracle-red);border-radius:4px;padding:12px;margin:12px 0;white-space:pre-line}
+a{color:#8e2b25;text-underline-offset:3px}
+.small{font-size:.9rem}
+.warn{border-top:1px solid var(--oracle-line);margin-top:18px;padding-top:11px}
 @media(max-width:400px){.grid{grid-template-columns:1fr}.card{padding:14px}h1{font-size:1.75rem}}
 </style>
 </head>
-<body>
+<body class="oracle-quanta">
 <main>
-<article class="card" aria-labelledby="coin-title">
+<article class="card qzone" aria-labelledby="coin-title">
 <p class="eyebrow">Infinity 2026® · Oracle Octaves · Product Lab</p>
 <h1 id="coin-title">The Infinity Coin Housing</h1>
 <p class="sub">A brushed-aluminum, screw-down display housing with a transparent coin window, matte-black presentation cavity and a proposed future information display.</p>
@@ -58,16 +73,18 @@ a{color:#f4d599;text-underline-offset:3px}.small{font-size:.85rem}.warn{border-t
 </svg>
 <figcaption>Original engineering concept diagram, not CAD, a physical prototype, or evidence of available inventory.</figcaption>
 </figure>
-<h2>Size the concept around your actual coin</h2>
+<h2 id="measure-title">Size the concept around your actual coin</h2>
 <p class="small">Enter dimensions measured with calipers. Nothing is uploaded, purchased or stored.</p>
-<form id="dimension-form">
+<form id="dimension-form" autocomplete="off">
+<fieldset id="dimension-controls" aria-labelledby="measure-title" disabled>
 <div class="grid">
-<div class="panel"><label for="diameter">Measured coin diameter (mm)</label><input id="diameter" name="diameter" inputmode="decimal" type="number" min="5.01" max="100" step="0.01" placeholder="Measure first" required></div>
-<div class="panel"><label for="thickness">Measured coin thickness (mm)</label><input id="thickness" name="thickness" inputmode="decimal" type="number" min="0.01" max="20" step="0.01" placeholder="Measure first" required></div>
+<div class="panel"><label for="diameter">Measured coin diameter (mm)</label><input id="diameter" inputmode="decimal" type="number" min="5.01" max="100" step="0.01" placeholder="Measure first" required></div>
+<div class="panel"><label for="thickness">Measured coin thickness (mm)</label><input id="thickness" inputmode="decimal" type="number" min="0.01" max="20" step="0.01" placeholder="Measure first" required></div>
 </div>
 <button type="submit">Calculate provisional housing envelope</button>
+</fieldset>
 </form>
-<div id="calculation" class="output" role="status" aria-live="polite">No dimensions entered. CAD and manufacturing specifications remain pending.</div>
+<div id="calculation" class="output" role="status" aria-live="polite">The calculator needs JavaScript to load before you can enter dimensions. CAD and manufacturing specifications remain pending.</div>
 <h2>Proposed construction</h2>
 <p>6061-T6 machined aluminum exterior, satin-brushed finish, mechanically retained transparent window, matte-black inert liner and replaceable tamper-evident screw seals. The optional USB-C/NFC/display version needs a separate electronics and RF design.</p>
 <h2>Evidence and source controls</h2>
@@ -78,14 +95,19 @@ a{color:#f4d599;text-underline-offset:3px}.small{font-size:.85rem}.warn{border-t
 <script type="module">
 import { proposeHousingEnvelope } from './infinity-coin-housing-core.mjs';
 const form=document.getElementById('dimension-form');
+const controls=document.getElementById('dimension-controls');
+const diameter=document.getElementById('diameter');
+const thickness=document.getElementById('thickness');
 const status=document.getElementById('calculation');
 form.addEventListener('submit',event=>{
   event.preventDefault();
   try{
-    const plan=proposeHousingEnvelope(form.elements.diameter.value,form.elements.thickness.value);
+    const plan=proposeHousingEnvelope(diameter.value,thickness.value);
     status.textContent='Provisional cavity: '+plan.cavityDiameterMm+' mm diameter.\nProvisional outer envelope: '+plan.outerDiameterMm+' mm diameter × '+plan.outerThicknessMm+' mm thick.\nNot a CAD release. Prototype clearances, actual coin fit, window thickness, screw torque and tolerances are unverified.';
   }catch(error){status.textContent=error.message;}
 });
+status.textContent='No dimensions entered. CAD and manufacturing specifications remain pending.';
+controls.disabled=false;
 </script>
 </body>
 </html>
