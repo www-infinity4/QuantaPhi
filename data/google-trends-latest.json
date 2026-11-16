@@ -3,17 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T19:31:13.858100Z",
+  "checked_at": "2026-11-16T20:01:29.012643Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "cuba vs grenada",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T19:40:00Z",
+      "related_news_urls": [
+        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-cuba-v-grenada/blt23264358af0a6713",
+        "https://www.thestatszone.com/cuba-vs-grenada-preview-prediction-2026-27-concacaf-nations-league-239172"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8fvTOpZAENYGRFXBtv8xlcTxW6nVuOr5nS27GFikTyAAP0Z3SGSEBdJ5mjH8",
+      "image_credit": "Goal.com",
+      "news": [
+        {
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-cuba-v-grenada/blt23264358af0a6713",
+          "title": "Cuba vs Grenada live stream, TV channel and kick-off time | CONCACAF Nations League",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8fvTOpZAENYGRFXBtv8xlcTxW6nVuOr5nS27GFikTyAAP0Z3SGSEBdJ5mjH8"
+        },
+        {
+          "url": "https://www.thestatszone.com/cuba-vs-grenada-preview-prediction-2026-27-concacaf-nations-league-239172",
+          "title": "Cuba vs Grenada Preview & Prediction | 2026-27 CONCACAF Nations League",
+          "publisher": "The Stats Zone",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGEaCmLv44AVFJBXvZr09P94E5Paqjch_IBTrAGRfQ_ZWspIU8iQDRYHH235Q"
+        }
+      ]
+    },
+    {
+      "query": "bank cyber attack",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T19:30:00Z",
+      "related_news_urls": [
+        "https://www.eurasiareview.com/09112026-when-banks-say-an-attack-is-contained-what-has-actually-stopped-analysis/",
+        "https://hi-tech.ua/en/french-bank-drained-of-e100m-in-potential-ai-powered-heist/",
+        "https://www.infosecurity-magazine.com/news/crdit-mutuel-arka-targeted/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1JWwwxINpfYhj1XBHG0Q7EHnqZhK39IThN3nqMkrYaVutp0E3g5m0XFpw3AE",
+      "image_credit": "Eurasia Review",
+      "news": [
+        {
+          "url": "https://www.eurasiareview.com/09112026-when-banks-say-an-attack-is-contained-what-has-actually-stopped-analysis/",
+          "title": "When Banks Say An Attack Is Contained, What Has Actually Stopped? – Analysis",
+          "publisher": "Eurasia Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1JWwwxINpfYhj1XBHG0Q7EHnqZhK39IThN3nqMkrYaVutp0E3g5m0XFpw3AE"
+        },
+        {
+          "url": "https://hi-tech.ua/en/french-bank-drained-of-e100m-in-potential-ai-powered-heist/",
+          "title": "French Bank Drained of €100M in Potential AI-Powered Heist",
+          "publisher": "hi-Tech.ua",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhNUByxA7beQ-J2FzoGlIiWveh2FduCdWo1wgL2ZI9t1BGL2FA3Zk_AtIcDZ4"
+        },
+        {
+          "url": "https://www.infosecurity-magazine.com/news/crdit-mutuel-arka-targeted/",
+          "title": "Crédit Mutuel Arkéa Targeted in Reported $133m Heist",
+          "publisher": "Infosecurity Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1n8r02hOpZ_rQfk8jifLoaqiDWUMasX-c-0gqOw9jYiLj6_KtPtqnyHT_CRM"
+        }
+      ]
+    },
+    {
+      "query": "guyana vs puerto rico",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-16T19:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50502997/game-highlights",
+        "https://www.espn.com/mens-college-basketball/game/_/gameId/401909525/marquette-missouri",
+        "https://www.espn.com/college-football/boxscore/_/gameId/401860914"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTusPENYrMOxBPNciWHn65ETpmQ0GSYQ1ehAeatiPe3GJW92OyRJZp1XfEud4E",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50502997/game-highlights",
+          "title": "Le Moyne Dolphins vs. Miami Hurricanes: Game Highlights - ESPN Video",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTusPENYrMOxBPNciWHn65ETpmQ0GSYQ1ehAeatiPe3GJW92OyRJZp1XfEud4E"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909525/marquette-missouri",
+          "title": "Missouri 69-64 Marquette (Nov 15, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPNyuHG22VNBmJ6OLTUy5Sz9EvGOWtKZVzuhcTRohilC-m2JL_-8IVTQx32Sc"
+        },
+        {
+          "url": "https://www.espn.com/college-football/boxscore/_/gameId/401860914",
+          "title": "Boise State 46-41 Oregon State (Nov 14, 2026) Box Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0tfzgzyxJHA7mNZmjF39LyMd8fi_YGxSLYYiqrXuEiZEIv0MifWvXNR0JXwg"
+        }
+      ]
+    },
+    {
+      "query": "north macedonia vs slovenia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T19:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/crq5vd9nz3d2t",
+        "https://www.football.com/gh/news/tag/aljosa%2520matko",
+        "https://news.bet365.com/en-gb/article/football-north-macedonia-slovenia-prediction-and-tips/2026111512040120994"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/crq5vd9nz3d2t",
+          "title": "North Macedonia vs Slovenia: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.football.com/gh/news/tag/aljosa%2520matko",
+          "title": "aljosa%20matko",
+          "publisher": "Football.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8bsovFUKGyBchjKwpNimFX1JfhijebTw-RNfN580ZVjwDcTA-c06OUkJknvw"
+        },
+        {
+          "url": "https://news.bet365.com/en-gb/article/football-north-macedonia-slovenia-prediction-and-tips/2026111512040120994",
+          "title": "North Macedonia v Slovenia Prediction: 5/4 Slovenia to shut out hosts",
+          "publisher": "news.bet365.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpftplAKFxB2q-JE0Fd9PDP1aS9G8kr9pkSPtHWo_XQzBIUcfqlsYZmvK4w0M"
+        }
+      ]
+    },
+    {
+      "query": "noaa geomagnetic storm aurora forecast",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T19:20:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/jamiecartereurope/2026/11/16/northern-lights-alert-12-states-may-see-aurora-on-monday-night/",
+        "https://www.yahoo.com/news/weather-news/articles/northern-lights-forecast-where-aurora-181105428.html",
+        "https://starlust.org/aurora-alert-coronal-hole-cme-combination-could-trigger-northern-light-visibility-in-u-s-this-week/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZUbRdt5sh1pbpm9cq3ubT9-m8v0yMfKXjT5_zb55ZcLC0b4-mFkkXGJR-PEY",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/jamiecartereurope/2026/11/16/northern-lights-alert-12-states-may-see-aurora-on-monday-night/",
+          "title": "Northern Lights Alert: 12 States May See Aurora On Monday Night",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZUbRdt5sh1pbpm9cq3ubT9-m8v0yMfKXjT5_zb55ZcLC0b4-mFkkXGJR-PEY"
+        },
+        {
+          "url": "https://www.yahoo.com/news/weather-news/articles/northern-lights-forecast-where-aurora-181105428.html",
+          "title": "Northern Lights Forecast: Here’s Where The Aurora Could Be Visible This Week",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkXIHHXm8VTKTJOU9NvvuHBMeyI8_6nfzpLvudYYcJCdD6y8qWVNDVWb-nm3I"
+        },
+        {
+          "url": "https://starlust.org/aurora-alert-coronal-hole-cme-combination-could-trigger-northern-light-visibility-in-u-s-this-week/",
+          "title": "Aurora alert: Coronal hole-CME combination could trigger northern light visibility in U.S. this week",
+          "publisher": "Starlust.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZFHC5ggGVoq584nYeM2Qlgv4cf3AFRejdDZDyvO3mGoEwGBpWRG-hyLI6Zvk"
+        }
+      ]
+    },
+    {
+      "query": "mayci neeley",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T19:10:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66108600/?ref_=nwc_art_perm",
+        "https://www.yahoo.com/entertainment/tv/articles/secret-lives-oc-mccall-dapron-150000531.html",
+        "https://www.freep.com/videos/entertainment/tv/2026/11/12/mccall-dapron-bobbi-althoff-similarities-mormon-wives/92730661007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm7Mb2VaSNA8q-fzDRHpcd66c066IZLRCeDKViLYCumR4bJAtq8kzSAu_WKiY",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66108600/?ref_=nwc_art_perm",
+          "title": "All About ‘Mormon Wives: Oc’ Star McCall DaPron’s Husband & Family",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm7Mb2VaSNA8q-fzDRHpcd66c066IZLRCeDKViLYCumR4bJAtq8kzSAu_WKiY"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/secret-lives-oc-mccall-dapron-150000531.html",
+          "title": "‘Secret Lives: OC’s McCall DaPron Defends Texting Mayci Neeley In Wake of Major Cast Drama: “I Felt Really Alone”",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkPXzt0lo-DKXuTWn1abe4Y2VzAmkDpjRdpJyzyJK6JlU_WOV77cqwZBp4sOk"
+        },
+        {
+          "url": "https://www.freep.com/videos/entertainment/tv/2026/11/12/mccall-dapron-bobbi-althoff-similarities-mormon-wives/92730661007/",
+          "title": "How alike are McCall DaPron and her sister 'SLOMW' star Mayci Neeley?",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG-VmKsJWJWTJJY6tR2avUkTplhWoA0xAIYC2bTxc8M6gYZ0EJAndnYlNVQ04"
+        }
+      ]
+    },
     {
       "query": "warren buffett",
       "approx_searches": "500+",
       "published_at": "2026-11-16T19:10:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-        "https://www.post-gazette.com/business/pittsburgh-company-news/2026/11/16/warren-buffett-kindness-gifts/stories/202611160056",
-        "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/"
+        "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/",
+        "https://www.bloomberg.com/news/articles/2026-11-16/buffett-donates-9-million-berkshire-shares-to-family-foundations"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA",
       "image_credit": "CNBC",
@@ -26,18 +228,88 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA"
         },
         {
-          "url": "https://www.post-gazette.com/business/pittsburgh-company-news/2026/11/16/warren-buffett-kindness-gifts/stories/202611160056",
-          "title": "Warren Buffett says kindness 'compounds' as he gifts about $5.5 billion to his family's foundations",
-          "publisher": "Pittsburgh Post-Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2ThZRQOxI0zsXNTn0SzPaSoC71HOwlsHOrjOieKpbQ17G7RVJdHr6vMy2heg"
-        },
-        {
           "url": "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/",
           "title": "Warren Buffett Announces $5.5 Billion Thanksgiving Gift—Four Times Bigger Than Last Year",
           "publisher": "Forbes",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsYvVdYcQM7wl0_6auvMrJO1eTr0WAGBYG1Ix8cYLRNfM-zkeHs9xXdrh7iLU"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-16/buffett-donates-9-million-berkshire-shares-to-family-foundations",
+          "title": "Buffett Donates 9 Million Berkshire Shares to Family Foundations",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-qZ-vd0P37cNmKxlouX25MNS05237fJZFHXOe0vJSQT80Ptb3UXELiuL-ozo"
+        }
+      ]
+    },
+    {
+      "query": "harvard postdoc fellowship strike issues",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T19:10:00Z",
+      "related_news_urls": [
+        "https://www.thecrimson.com/article/2026/11/16/grunwald-harvard-punishing-postdocs-for-succeeding/",
+        "https://www.thecrimson.com/article/2026/11/16/grunwald-harvard-punishing-postdocs-for-succeeding/",
+        "https://www.bostonglobe.com/2026/11/10/metro/academics-workers-strike-harvard/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoctZbDRKZKjXGsTxJAqJhVJ39ykYZZwnppwprSFou7fqvYMEoSvHeQEzyXLA",
+      "image_credit": "The Harvard Crimson",
+      "news": [
+        {
+          "url": "https://www.thecrimson.com/article/2026/11/16/grunwald-harvard-punishing-postdocs-for-succeeding/",
+          "title": "Harvard Is Punishing Postdocs for Succeeding",
+          "publisher": "The Harvard Crimson",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoctZbDRKZKjXGsTxJAqJhVJ39ykYZZwnppwprSFou7fqvYMEoSvHeQEzyXLA"
+        },
+        {
+          "url": "https://www.thecrimson.com/article/2026/11/16/grunwald-harvard-punishing-postdocs-for-succeeding/",
+          "title": "Harvard Is Punishing Postdocs for Succeeding",
+          "publisher": "The Harvard Crimson",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoctZbDRKZKjXGsTxJAqJhVJ39ykYZZwnppwprSFou7fqvYMEoSvHeQEzyXLA"
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/10/metro/academics-workers-strike-harvard/",
+          "title": "‘We’re not asking for the moon’: Harvard strike grows as academic workers walk out",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSJRUieRhsJe4npDQI3z90at4TFizyz3_rBzEeWkyA_hR8HIBwOY3lqis0p7Y"
+        }
+      ]
+    },
+    {
+      "query": "ap poll football",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T19:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-football/news/college-football-power-rankings-texas-utah-week-12-2026/",
+        "https://apnews.com/live/top-25-college-football-poll-11-16-2026",
+        "https://247sports.com/college/georgia/article/georgia-football-coaches-poll-ranking-week-12-2026-292800755/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6pW546crkQGFJELakeWEsKO7PDG4rwWB91xC3JIYFGEq_GGF9WhujvxURSbE",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-power-rankings-texas-utah-week-12-2026/",
+          "title": "College Football Power Rankings: Texas rises after latest ranked win, undefeated Utah joins top four",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6pW546crkQGFJELakeWEsKO7PDG4rwWB91xC3JIYFGEq_GGF9WhujvxURSbE"
+        },
+        {
+          "url": "https://apnews.com/live/top-25-college-football-poll-11-16-2026",
+          "title": "AP Top 25 live updates: Wake Forest cracks the top 10, while LSU and three others fall out",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnO1aYnV6JEH7g9e_NBMRhIv8KwkwDaaPCprGcXPrMKxEdrFzB8F8dgU3Wt3M"
+        },
+        {
+          "url": "https://247sports.com/college/georgia/article/georgia-football-coaches-poll-ranking-week-12-2026-292800755/",
+          "title": "Georgia stays No. 1 in Coaches Poll, gains first-place votes after Missouri win",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0juo09-oaMfEJ7qiNAd_8NEJ3RY66lPo7by3a3d8Rj1o7Fhl5W70n71Wkzvg"
         }
       ]
     },
@@ -73,286 +345,6 @@
           "publisher": "Investing.com",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHdmYPiykL6yLByOczyJaJBZv7xju9VEIqw--Mo9cyJaIwsvr7VIJwD7P1nc"
-        }
-      ]
-    },
-    {
-      "query": "ap poll football",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T19:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50473507/2026-college-football-power-rankings-top-25-week-11",
-        "https://apnews.com/live/top-25-college-football-poll-11-16-2026",
-        "https://www.nytimes.com/athletic/7785832/2026/11/16/college-football-team-138-rankings-fbs/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBmVd5A2uSM-XXfQz6tRF9Ms9ZvOXBO2YkycoYSxLuNyQx6SwFa2Twt6_4hL0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50473507/2026-college-football-power-rankings-top-25-week-11",
-          "title": "Power Rankings: The top teams hold their positions in Week 11",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBmVd5A2uSM-XXfQz6tRF9Ms9ZvOXBO2YkycoYSxLuNyQx6SwFa2Twt6_4hL0"
-        },
-        {
-          "url": "https://apnews.com/live/top-25-college-football-poll-11-16-2026",
-          "title": "Live updates: The bottom half of the AP Top 25 may be in for a shakeup",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaBeM-TWuUKk5iKdJeBzJ92MqxS-n4_qmNVJ33hkxom2LrEDrsTpzgoaJtnoY"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7785832/2026/11/16/college-football-team-138-rankings-fbs/",
-          "title": "Re-ranking 138 college football teams after Week 11: Carnage in the back half of the top 25",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk26NoKbcnPf1b1UhVYspjZBLszMl4T7PhoeFZ0azcZJNPnmOT8lJWrCbgNPY"
-        }
-      ]
-    },
-    {
-      "query": "suiza - escocia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T19:00:00Z",
-      "related_news_urls": [
-        "https://www.sportytrader.es/pronosticos/suiza-escocia-387475/",
-        "https://www.lanacion.com.ar/deportes/futbol/suiza-vs-escocia-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid15112026/",
-        "https://www.mediotiempo.com/futbol/liga-de-las-naciones-de-la-uefa/a-que-hora-juega-suiza-vs-escocia-horario-y-donde-ver-partido-uefa-nations-league-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHeVU63PlgKa2nDdH8dEF-zAmq3mmHMkTfzYySTsoO0RnLe4w7ZY18uTXkW2E",
-      "image_credit": "SportyTrader",
-      "news": [
-        {
-          "url": "https://www.sportytrader.es/pronosticos/suiza-escocia-387475/",
-          "title": "Pronóstico Suiza - Escocia - Nations League",
-          "publisher": "SportyTrader",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHeVU63PlgKa2nDdH8dEF-zAmq3mmHMkTfzYySTsoO0RnLe4w7ZY18uTXkW2E"
-        },
-        {
-          "url": "https://www.lanacion.com.ar/deportes/futbol/suiza-vs-escocia-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid15112026/",
-          "title": "Suiza vs. Escocia, Liga de Naciones 2026: día, hora y cómo seguir online",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkV5CVuv-8HmdIDAc4NT0I1g24plxD06UG1N89RybloAbxpvN5zCrRDGynM4g"
-        },
-        {
-          "url": "https://www.mediotiempo.com/futbol/liga-de-las-naciones-de-la-uefa/a-que-hora-juega-suiza-vs-escocia-horario-y-donde-ver-partido-uefa-nations-league-2026",
-          "title": "¿A qué hora juega Suiza vs. Escocia? Dónde ver EN VIVO partido UEFA Nations League 2026",
-          "publisher": "Mediotiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY0FzUdwx_JYOe79lmCXSDYMsul3tuOSOLDPdBeqfXVeWDFR2uJlyUwh-a3-E"
-        }
-      ]
-    },
-    {
-      "query": "alemania - países bajos",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T18:50:00Z",
-      "related_news_urls": [
-        "https://www.si.com/es-us/a-que-hora-es-el-partido-alemania-vs-paises-bajos-y-como-verlo-en-tv-y-streaming-online-16-11-2026",
-        "https://as.com/futbol/internacional/final-entre-klopp-y-xavi-f202611-n/",
-        "https://onefootball.com/es/noticias/antes-del-50-duelo-una-intensa-historia-contra-paises-bajos-43783360"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmGqfy5gjGMQDl1P4Jzp67BKJ91bU_eUVZdUGCvGgqpNWnZsQWfAZ5wDS0dxI",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-alemania-vs-paises-bajos-y-como-verlo-en-tv-y-streaming-online-16-11-2026",
-          "title": "¿A qué hora es el partido Alemania vs Países Bajos y cómo verlo en TV y streaming online?",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmGqfy5gjGMQDl1P4Jzp67BKJ91bU_eUVZdUGCvGgqpNWnZsQWfAZ5wDS0dxI"
-        },
-        {
-          "url": "https://as.com/futbol/internacional/final-entre-klopp-y-xavi-f202611-n/",
-          "title": "Final entre Klopp y Xavi",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkPe889mISFrSDr0Jxf-knZORsqcPPCfA4e1j5PviBBU1lHb1EGz7znBah_20"
-        },
-        {
-          "url": "https://onefootball.com/es/noticias/antes-del-50-duelo-una-intensa-historia-contra-paises-bajos-43783360",
-          "title": "Antes del 50.º duelo: una intensa historia contra Países Bajos",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVz571TCRtlrdEmc1j8kYL0VN3ZYDwZMucN3-fHJCYKaxvXfkjrLU3-VrmUiM"
-        }
-      ]
-    },
-    {
-      "query": "switzerland vs scotland",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T18:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c3qj5l8ndvqwt",
-        "https://sports.yahoo.com/articles/nations-league-listen-build-scotland-181054335.html",
-        "https://www.theguardian.com/football/live/2026/nov/16/switzerland-v-scotland-germany-v-netherlands-and-more-nations-league-live"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c3qj5l8ndvqwt",
-          "title": "Switzerland vs Scotland: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/nations-league-listen-build-scotland-181054335.html",
-          "title": "Nations League: McBurnie & Hickey recalled as Scotland face much-changed Switzerland",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTFDijEfZAAYOECFCPK4vL4cWSMvmgG53zjMz4kmkIN0j9iEjO7KxiPQzFHRs"
-        },
-        {
-          "url": "https://www.theguardian.com/football/live/2026/nov/16/switzerland-v-scotland-germany-v-netherlands-and-more-nations-league-live",
-          "title": "Switzerland v Scotland, Germany v Netherlands, and more: Nations League – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdMtKmoPpH_QksVGOTcDnRf1i5564KiDtoZkTd4_qWZ688N7PVwj71oklIOno"
-        }
-      ]
-    },
-    {
-      "query": "greece vs serbia",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T18:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cwdd17q8y4lgt",
-        "https://sports.yahoo.com/articles/uefa-nations-league-dortmund-youngster-184300086.html",
-        "https://www.reutersconnect.com/item/uefa-nations-league-group-a2-greece-v-serbia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxRVpYOEg"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cwdd17q8y4lgt",
-          "title": "Greece vs Serbia: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/uefa-nations-league-dortmund-youngster-184300086.html",
-          "title": "UEFA Nations League: Dortmund youngster Karetsas starts against Serbia as Greece await Germany's result",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHPkzBk1wQQEzfn3dBzmaU7yo-tgRApRy_kX4350lxJYcdVsBZlIuaXhjCCHM"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/uefa-nations-league-group-a2-greece-v-serbia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxRVpYOEg",
-          "title": "Licensable picture: UEFA Nations League - Group A2 - Greece v Serbia",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYw51BwIFQd3bc0q1EtiZ7pPI2nsXjoedDKHae1XgKE5B4du0jPyUQko5hH0M"
-        }
-      ]
-    },
-    {
-      "query": "lord morrow dup",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T18:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cqvg27wpd3l0o",
-        "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/",
-        "https://www.rte.ie/news/ulster/2026/1116/1599415-dup-chariman-wife-daughter-death/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cqvg27wpd3l0o",
-          "title": "Tributes as wife and daughter of DUP chairman die hours apart",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg"
-        },
-        {
-          "url": "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/",
-          "title": "Wife and daughter of former Fermanagh MLA pass away",
-          "publisher": "The Fermanagh Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZtnNiX0OFI2rS8-qexZ3-DMtGwxYgqtbs7mpkFDv0U1GhCCUYFVt_InDhyS0"
-        },
-        {
-          "url": "https://www.rte.ie/news/ulster/2026/1116/1599415-dup-chariman-wife-daughter-death/",
-          "title": "DUP chairman's wife and daughter die hours apart",
-          "publisher": "RTE.ie",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzXYSno89ZfLYQbHwGALmbsv0eQofsTFylChiGuZSprgz2p0CYcPwSnBvjtGM"
-        }
-      ]
-    },
-    {
-      "query": "tara harding ford bronco purchase",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T18:40:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/woman-buys-ford-bronco-drives-27-hours-home-flights-grounded/",
-        "https://www.kfyrtv.com/2026/11/15/north-dakota-women-resort-buying-vehicle-get-home-after-faa-grounded-flights/",
-        "https://www.yahoo.com/news/videos/woman-buys-ford-bronco-drive-152619006.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW2H3xgKpzjcIlKGN02_zuVghr3t7OmjmObIPLZBzGnPbeSJbjJVRofw0A5Q8",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/woman-buys-ford-bronco-drives-27-hours-home-flights-grounded/",
-          "title": "North Dakota woman buys Ford Bronco, drives 27 hours home after flights grounded",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW2H3xgKpzjcIlKGN02_zuVghr3t7OmjmObIPLZBzGnPbeSJbjJVRofw0A5Q8"
-        },
-        {
-          "url": "https://www.kfyrtv.com/2026/11/15/north-dakota-women-resort-buying-vehicle-get-home-after-faa-grounded-flights/",
-          "title": "North Dakota women resort to buying a vehicle to get home after FAA grounded flights",
-          "publisher": "KFYR-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtEB7p9nnDPCzLsRdr-bFteqladVfr0BEzgq5EpL4m5TY8ZyptgH-ILjieDOs"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/woman-buys-ford-bronco-drive-152619006.html",
-          "title": "Woman buys Ford Bronco to drive home after ground stop",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjmOIJH36Jde7hliI_7ZtDKWtro1acBDu0FmDMmh8sUMKa1Si3MhzSTBAiMEM"
-        }
-      ]
-    },
-    {
-      "query": "uscis prior approval deference removal",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T18:30:00Z",
-      "related_news_urls": [
-        "https://timesofindia.indiatimes.com/technology/tech-news/us-government-is-proposing-one-sentence-change-in-uscis-rules-that-would-change-every-h-1b-visa-extension-form-with-thousands-losing-their-approval/articleshow/135886323.cms",
-        "https://www.rnlawgroup.com/dhs-proposes-to-end-deference-to-prior-approvals-on-h-1b-and-other-i-129-extensions/",
-        "https://www.newsbytesapp.com/news/world/us-proposes-new-review-rules-for-h-1b-and-other-visas/tldr"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS15cg7eA0tyAFeMXeixvfiN8FjYDtISAHdwiyKsVAxBoMp6Oef3VpUfqqRh-k",
-      "image_credit": "The Times of India",
-      "news": [
-        {
-          "url": "https://timesofindia.indiatimes.com/technology/tech-news/us-government-is-proposing-one-sentence-change-in-uscis-rules-that-would-change-every-h-1b-visa-extension-form-with-thousands-losing-their-approval/articleshow/135886323.cms",
-          "title": "US government is proposing one sentence change in USCIS rules that would change every H-1B visa extension",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS15cg7eA0tyAFeMXeixvfiN8FjYDtISAHdwiyKsVAxBoMp6Oef3VpUfqqRh-k"
-        },
-        {
-          "url": "https://www.rnlawgroup.com/dhs-proposes-to-end-deference-to-prior-approvals-on-h-1b-and-other-i-129-extensions/",
-          "title": "DHS Proposes to End Deference to Prior Approvals on H-1B and Other I-129 Extensions",
-          "publisher": "Reddy Neumann Brown PC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyNqhqD7Ay-K-phOjk4c1YrMRU9EMRNoWHyiMcCUBbDB46tVhb5J1tZVlQ3p4"
-        },
-        {
-          "url": "https://www.newsbytesapp.com/news/world/us-proposes-new-review-rules-for-h-1b-and-other-visas/tldr",
-          "title": "US proposes new review rules for H-1B and other visas",
-          "publisher": "NewsBytes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxj4q08KU1ESZJGMG-tIOJ381eiFCjWPDIhUhBdjRMHlcmPeq8crRb8ds4J9I"
         }
       ]
     }
