@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-16T20:32:54.393279Z",
+  "checked_at": "2026-11-16T21:03:56.783779Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
@@ -20,6 +20,18 @@
       "trend_checked_at": "2026-11-14T20:31:06.368122Z",
       "trend_published_at": "2026-11-14T19:50:00Z",
       "approx_searches": "500+"
+    },
+    {
+      "id": "stT41kosuqM",
+      "title": "Remain",
+      "video_id": "stT41kosuqM",
+      "video_title": "Remain Trailer #1 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-16T21:01:38Z",
+      "source_url": "https://www.youtube.com/watch?v=stT41kosuqM",
+      "poster": "https://i.ytimg.com/vi/stT41kosuqM/hqdefault.jpg",
+      "google_trending": false
     },
     {
       "id": "Fso81Ypg9T4",
