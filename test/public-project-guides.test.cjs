@@ -33,7 +33,8 @@ test('each public guide provides a complete prompt and the existing Bubbles embe
     const html = readFileSync(guide.path + '/index.html', 'utf8');
     const prompt = html.match(/<textarea[^>]*id="guide-prompt"[^>]*>([\s\S]+?)<\/textarea>/)?.[1] ?? '';
     assert.ok(html.includes('<title>' + guide.title + ' · QuantaPhi</title>'));
-    assert.ok(html.includes('href="https://quantaphi.org/' + guide.path + '"'));
+    assert.ok(html.includes('href="https://quantaphi.org/' + guide.path + '"') ||
+      html.includes('href="https://quantaphi.org/' + guide.path + '/"'), 'guide canonical URL must resolve to the public guide');
     assert.ok(html.includes('src="../bubbles-embed.js"'));
     assert.ok(html.includes('data-bubble-id="' + guide.bubbleId + '"'));
     assert.ok(html.includes('href="https://chatgpt.com/"'));

@@ -1,3 +1,32 @@
+---
+issue: 1196
+project: "QuantaPhi standalone public social previews"
+source_requests:
+  - https://github.com/www-infinity4/QuantaPhi/issues/1196
+state: review_pending
+dot: "🟡"
+progress_percent: unknown
+progress_basis: "16 source and raster page previews verified; full original issue includes additional dynamic Quick Cards, viewer QA, deployment and X crawler acceptance"
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: "ChatGPT staged source on owner-authorized branch; no coordinator lease"
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+repo: www-infinity4/QuantaPhi
+branch: feat/standalone-share-previews-1196-20261115
+head_sha: null
+pr: 1940
+tests:
+  - https://github.com/www-infinity4/QuantaPhi/actions/runs/43785227188
+merged: false
+deployed: false
+live_verified: false
+blocker: "Independent review, exact-head CI, merge and live X crawler QA pending"
+next_action: "Obtain independent review of PR #1940 and resolve required exact-head checks before a permitted merge"
+---
+
 # TICKET-1196 — Standalone QuantaPhi page social previews
 Canonical owner issue: https://github.com/www-infinity4/QuantaPhi/issues/1196
 Owner request: 2026-11-15 — inventory live standalone .org pages and replace missing/generic Twitter/X share previews.
