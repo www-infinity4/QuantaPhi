@@ -3,12 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T19:01:20.043556Z",
+  "checked_at": "2026-11-16T19:31:13.858100Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "tara harding ford bronco purchase",
+      "query": "warren buffett",
       "approx_searches": "500+",
+      "published_at": "2026-11-16T19:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
+        "https://www.post-gazette.com/business/pittsburgh-company-news/2026/11/16/warren-buffett-kindness-gifts/stories/202611160056",
+        "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
+          "title": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA"
+        },
+        {
+          "url": "https://www.post-gazette.com/business/pittsburgh-company-news/2026/11/16/warren-buffett-kindness-gifts/stories/202611160056",
+          "title": "Warren Buffett says kindness 'compounds' as he gifts about $5.5 billion to his family's foundations",
+          "publisher": "Pittsburgh Post-Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2ThZRQOxI0zsXNTn0SzPaSoC71HOwlsHOrjOieKpbQ17G7RVJdHr6vMy2heg"
+        },
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/",
+          "title": "Warren Buffett Announces $5.5 Billion Thanksgiving Gift—Four Times Bigger Than Last Year",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsYvVdYcQM7wl0_6auvMrJO1eTr0WAGBYG1Ix8cYLRNfM-zkeHs9xXdrh7iLU"
+        }
+      ]
+    },
+    {
+      "query": "spacex stock price",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T19:00:00Z",
+      "related_news_urls": [
+        "https://www.barrons.com/articles/why-spacex-stock-down-historic-starship-catch-ec692e2b",
+        "https://seekingalpha.com/article/4967990-spacex-math-says-69-percent-downside",
+        "https://www.investing.com/news/stock-market-news/democrats-midterm-sweep-not-bad-at-all-for-spacex-analyst-says-5027337"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFxjTg0OMoJDoQU9N5zqY02xTQZ0VdCyjOCZppS_GxY1ZAMdyAvFDb2_NQgtU",
+      "image_credit": "Barron's",
+      "news": [
+        {
+          "url": "https://www.barrons.com/articles/why-spacex-stock-down-historic-starship-catch-ec692e2b",
+          "title": "Why SpaceX Stock Is Down After Its Historic Starship Catch",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFxjTg0OMoJDoQU9N5zqY02xTQZ0VdCyjOCZppS_GxY1ZAMdyAvFDb2_NQgtU"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4967990-spacex-math-says-69-percent-downside",
+          "title": "SpaceX: The Math Says 69% Downside (NASDAQ:SPCX)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3S4Q0DFaIHoP1KRAvLK3NJVZr9H590cJLMMJariquhyZJPMQqeZOSyRehX_M"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/democrats-midterm-sweep-not-bad-at-all-for-spacex-analyst-says-5027337",
+          "title": "Democrats’ midterm sweep \"not bad at all\" for SpaceX, analyst says",
+          "publisher": "Investing.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHdmYPiykL6yLByOczyJaJBZv7xju9VEIqw--Mo9cyJaIwsvr7VIJwD7P1nc"
+        }
+      ]
+    },
+    {
+      "query": "ap poll football",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T19:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50473507/2026-college-football-power-rankings-top-25-week-11",
+        "https://apnews.com/live/top-25-college-football-poll-11-16-2026",
+        "https://www.nytimes.com/athletic/7785832/2026/11/16/college-football-team-138-rankings-fbs/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBmVd5A2uSM-XXfQz6tRF9Ms9ZvOXBO2YkycoYSxLuNyQx6SwFa2Twt6_4hL0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50473507/2026-college-football-power-rankings-top-25-week-11",
+          "title": "Power Rankings: The top teams hold their positions in Week 11",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBmVd5A2uSM-XXfQz6tRF9Ms9ZvOXBO2YkycoYSxLuNyQx6SwFa2Twt6_4hL0"
+        },
+        {
+          "url": "https://apnews.com/live/top-25-college-football-poll-11-16-2026",
+          "title": "Live updates: The bottom half of the AP Top 25 may be in for a shakeup",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaBeM-TWuUKk5iKdJeBzJ92MqxS-n4_qmNVJ33hkxom2LrEDrsTpzgoaJtnoY"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7785832/2026/11/16/college-football-team-138-rankings-fbs/",
+          "title": "Re-ranking 138 college football teams after Week 11: Carnage in the back half of the top 25",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk26NoKbcnPf1b1UhVYspjZBLszMl4T7PhoeFZ0azcZJNPnmOT8lJWrCbgNPY"
+        }
+      ]
+    },
+    {
+      "query": "suiza - escocia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T19:00:00Z",
+      "related_news_urls": [
+        "https://www.sportytrader.es/pronosticos/suiza-escocia-387475/",
+        "https://www.lanacion.com.ar/deportes/futbol/suiza-vs-escocia-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid15112026/",
+        "https://www.mediotiempo.com/futbol/liga-de-las-naciones-de-la-uefa/a-que-hora-juega-suiza-vs-escocia-horario-y-donde-ver-partido-uefa-nations-league-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHeVU63PlgKa2nDdH8dEF-zAmq3mmHMkTfzYySTsoO0RnLe4w7ZY18uTXkW2E",
+      "image_credit": "SportyTrader",
+      "news": [
+        {
+          "url": "https://www.sportytrader.es/pronosticos/suiza-escocia-387475/",
+          "title": "Pronóstico Suiza - Escocia - Nations League",
+          "publisher": "SportyTrader",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHeVU63PlgKa2nDdH8dEF-zAmq3mmHMkTfzYySTsoO0RnLe4w7ZY18uTXkW2E"
+        },
+        {
+          "url": "https://www.lanacion.com.ar/deportes/futbol/suiza-vs-escocia-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid15112026/",
+          "title": "Suiza vs. Escocia, Liga de Naciones 2026: día, hora y cómo seguir online",
+          "publisher": "La Nación",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkV5CVuv-8HmdIDAc4NT0I1g24plxD06UG1N89RybloAbxpvN5zCrRDGynM4g"
+        },
+        {
+          "url": "https://www.mediotiempo.com/futbol/liga-de-las-naciones-de-la-uefa/a-que-hora-juega-suiza-vs-escocia-horario-y-donde-ver-partido-uefa-nations-league-2026",
+          "title": "¿A qué hora juega Suiza vs. Escocia? Dónde ver EN VIVO partido UEFA Nations League 2026",
+          "publisher": "Mediotiempo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY0FzUdwx_JYOe79lmCXSDYMsul3tuOSOLDPdBeqfXVeWDFR2uJlyUwh-a3-E"
+        }
+      ]
+    },
+    {
+      "query": "alemania - países bajos",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T18:50:00Z",
+      "related_news_urls": [
+        "https://www.si.com/es-us/a-que-hora-es-el-partido-alemania-vs-paises-bajos-y-como-verlo-en-tv-y-streaming-online-16-11-2026",
+        "https://as.com/futbol/internacional/final-entre-klopp-y-xavi-f202611-n/",
+        "https://onefootball.com/es/noticias/antes-del-50-duelo-una-intensa-historia-contra-paises-bajos-43783360"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmGqfy5gjGMQDl1P4Jzp67BKJ91bU_eUVZdUGCvGgqpNWnZsQWfAZ5wDS0dxI",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-alemania-vs-paises-bajos-y-como-verlo-en-tv-y-streaming-online-16-11-2026",
+          "title": "¿A qué hora es el partido Alemania vs Países Bajos y cómo verlo en TV y streaming online?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmGqfy5gjGMQDl1P4Jzp67BKJ91bU_eUVZdUGCvGgqpNWnZsQWfAZ5wDS0dxI"
+        },
+        {
+          "url": "https://as.com/futbol/internacional/final-entre-klopp-y-xavi-f202611-n/",
+          "title": "Final entre Klopp y Xavi",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkPe889mISFrSDr0Jxf-knZORsqcPPCfA4e1j5PviBBU1lHb1EGz7znBah_20"
+        },
+        {
+          "url": "https://onefootball.com/es/noticias/antes-del-50-duelo-una-intensa-historia-contra-paises-bajos-43783360",
+          "title": "Antes del 50.º duelo: una intensa historia contra Países Bajos",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVz571TCRtlrdEmc1j8kYL0VN3ZYDwZMucN3-fHJCYKaxvXfkjrLU3-VrmUiM"
+        }
+      ]
+    },
+    {
+      "query": "switzerland vs scotland",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T18:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c3qj5l8ndvqwt",
+        "https://sports.yahoo.com/articles/nations-league-listen-build-scotland-181054335.html",
+        "https://www.theguardian.com/football/live/2026/nov/16/switzerland-v-scotland-germany-v-netherlands-and-more-nations-league-live"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c3qj5l8ndvqwt",
+          "title": "Switzerland vs Scotland: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nations-league-listen-build-scotland-181054335.html",
+          "title": "Nations League: McBurnie & Hickey recalled as Scotland face much-changed Switzerland",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTFDijEfZAAYOECFCPK4vL4cWSMvmgG53zjMz4kmkIN0j9iEjO7KxiPQzFHRs"
+        },
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/16/switzerland-v-scotland-germany-v-netherlands-and-more-nations-league-live",
+          "title": "Switzerland v Scotland, Germany v Netherlands, and more: Nations League – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdMtKmoPpH_QksVGOTcDnRf1i5564KiDtoZkTd4_qWZ688N7PVwj71oklIOno"
+        }
+      ]
+    },
+    {
+      "query": "greece vs serbia",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T18:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cwdd17q8y4lgt",
+        "https://sports.yahoo.com/articles/uefa-nations-league-dortmund-youngster-184300086.html",
+        "https://www.reutersconnect.com/item/uefa-nations-league-group-a2-greece-v-serbia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxRVpYOEg"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cwdd17q8y4lgt",
+          "title": "Greece vs Serbia: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/uefa-nations-league-dortmund-youngster-184300086.html",
+          "title": "UEFA Nations League: Dortmund youngster Karetsas starts against Serbia as Greece await Germany's result",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHPkzBk1wQQEzfn3dBzmaU7yo-tgRApRy_kX4350lxJYcdVsBZlIuaXhjCCHM"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/uefa-nations-league-group-a2-greece-v-serbia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxRVpYOEg",
+          "title": "Licensable picture: UEFA Nations League - Group A2 - Greece v Serbia",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYw51BwIFQd3bc0q1EtiZ7pPI2nsXjoedDKHae1XgKE5B4du0jPyUQko5hH0M"
+        }
+      ]
+    },
+    {
+      "query": "lord morrow dup",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T18:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cqvg27wpd3l0o",
+        "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/",
+        "https://www.rte.ie/news/ulster/2026/1116/1599415-dup-chariman-wife-daughter-death/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cqvg27wpd3l0o",
+          "title": "Tributes as wife and daughter of DUP chairman die hours apart",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg"
+        },
+        {
+          "url": "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/",
+          "title": "Wife and daughter of former Fermanagh MLA pass away",
+          "publisher": "The Fermanagh Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZtnNiX0OFI2rS8-qexZ3-DMtGwxYgqtbs7mpkFDv0U1GhCCUYFVt_InDhyS0"
+        },
+        {
+          "url": "https://www.rte.ie/news/ulster/2026/1116/1599415-dup-chariman-wife-daughter-death/",
+          "title": "DUP chairman's wife and daughter die hours apart",
+          "publisher": "RTE.ie",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzXYSno89ZfLYQbHwGALmbsv0eQofsTFylChiGuZSprgz2p0CYcPwSnBvjtGM"
+        }
+      ]
+    },
+    {
+      "query": "tara harding ford bronco purchase",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T18:40:00Z",
       "related_news_urls": [
         "https://www.cbsnews.com/news/woman-buys-ford-bronco-drives-27-hours-home-flights-grounded/",
@@ -73,286 +353,6 @@
           "publisher": "NewsBytes",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxj4q08KU1ESZJGMG-tIOJ381eiFCjWPDIhUhBdjRMHlcmPeq8crRb8ds4J9I"
-        }
-      ]
-    },
-    {
-      "query": "ncaa soccer tournament",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T18:30:00Z",
-      "related_news_urls": [
-        "https://www.ncaa.com/news/soccer-men/article/2026-11-09/2026-di-mens-soccer-championship-selection-show-info-bracket-schedule",
-        "https://portlandpilots.com/news/2026/11/15/no-6-pilots-mens-soccer-to-host-selection-show-watch-party-monday-at-the-pilot-house.aspx",
-        "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-mens-soccer-ncaa-tournament-selection-host-site-portland-pilots-cal-bears-292851386/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQErlArtmDeDERqGWi6zn30n9fMTcUtraV07-Qn_c8GxSwlUlBKffvtiEBaUuQ",
-      "image_credit": "NCAA.com",
-      "news": [
-        {
-          "url": "https://www.ncaa.com/news/soccer-men/article/2026-11-09/2026-di-mens-soccer-championship-selection-show-info-bracket-schedule",
-          "title": "2026 DI men's soccer championship: Selection show info, bracket, schedule",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQErlArtmDeDERqGWi6zn30n9fMTcUtraV07-Qn_c8GxSwlUlBKffvtiEBaUuQ"
-        },
-        {
-          "url": "https://portlandpilots.com/news/2026/11/15/no-6-pilots-mens-soccer-to-host-selection-show-watch-party-monday-at-the-pilot-house.aspx",
-          "title": "No. 6 Pilots Men's Soccer to Host Selection Show Watch Party Monday at the Pilot House!",
-          "publisher": "University of Portland Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZOZBoC5jG9CJXN0EtD_6xRRh-gsDK9iw-8Tc88HCwQH4_WdjhDVb73kUAT80"
-        },
-        {
-          "url": "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-mens-soccer-ncaa-tournament-selection-host-site-portland-pilots-cal-bears-292851386/",
-          "title": "Gamecocks men's soccer earns bye, NCAA Tournament host site",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu6WeybCfPhPAwVsQ51TKY3Fs3GIISXX2dxPH9sv2hnwQNsjzCG4CtbYUH2so"
-        }
-      ]
-    },
-    {
-      "query": "john summit tour bus",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T18:30:00Z",
-      "related_news_urls": [
-        "https://www.wcjb.com/2026/11/16/musician-tour-bus-involved-deadly-crash-marion-county/",
-        "https://www.wesh.com/article/ocala-driver-killed-tour-bus-crash-marion-county/74442241",
-        "https://www.wftv.com/news/local/ocala-man-dies-after-car-crashes-into-tour-bus-marion-county/XTDQUWX2IZDFHOGVPYSG75HSXE/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsuoiU5KSy7KWgxOblFXV44F-7Zeyr0h_YRTknv8XnuXCqBqIBbTdvWWrHwSY",
-      "image_credit": "WCJB",
-      "news": [
-        {
-          "url": "https://www.wcjb.com/2026/11/16/musician-tour-bus-involved-deadly-crash-marion-county/",
-          "title": "Musician tour bus involved in deadly crash in Marion County",
-          "publisher": "WCJB",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsuoiU5KSy7KWgxOblFXV44F-7Zeyr0h_YRTknv8XnuXCqBqIBbTdvWWrHwSY"
-        },
-        {
-          "url": "https://www.wesh.com/article/ocala-driver-killed-tour-bus-crash-marion-county/74442241",
-          "title": "Driver killed after car slams into tour bus in Marion County, FHP says",
-          "publisher": "WESH",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_abJnzrJ8s0SWNeijr-c0gJLQVzecavyDWnG_UJ5GKwNkKmaBQcZVho4tQDQ"
-        },
-        {
-          "url": "https://www.wftv.com/news/local/ocala-man-dies-after-car-crashes-into-tour-bus-marion-county/XTDQUWX2IZDFHOGVPYSG75HSXE/",
-          "title": "Ocala man dies after car crashes into tour bus in Marion County",
-          "publisher": "WFTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4rEFN5knciEPcnrEySr4fhKuo1pbW0XzDLbEgTULAwn_QT89cWE3oLQ1eyZU"
-        }
-      ]
-    },
-    {
-      "query": "ap top 25 basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T18:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/womens-college-basketball/story/_/id/50502552/louisville-no-3-women-ap-poll-beating-uconn",
-        "https://sports.yahoo.com/womens-college-basketball/breaking-news/article/womens-basketball-ap-poll-south-carolina-solidifies-no-1-ranking-with-win-over-usc-as-uconn-stumbles-again-170547619.html",
-        "https://www.courier-journal.com/story/sports/college/basketball/2026/11/16/louisville-kentucky-womens-basketball-rankings-ap-top-25-coaches-poll-uofl-uk/92584867007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BVwZM6rJbxeHdbc4VzJgpSvtU93TjZdCkGSL2T5LKWhM63aZ_Bk-YBDJzeQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50502552/louisville-no-3-women-ap-poll-beating-uconn",
-          "title": "Louisville No. 3 in women's AP Top 25 after UConn win; South Carolina still tops",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BVwZM6rJbxeHdbc4VzJgpSvtU93TjZdCkGSL2T5LKWhM63aZ_Bk-YBDJzeQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/womens-college-basketball/breaking-news/article/womens-basketball-ap-poll-south-carolina-solidifies-no-1-ranking-with-win-over-usc-as-uconn-stumbles-again-170547619.html",
-          "title": "Women's basketball AP poll: South Carolina solidifies No. 1 ranking with win over USC as UConn stumbles again",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfTwDt2tJ1l47nUn-Oq174xdIVOTykqpT_aL2H3z9NOZTkTDEKOmO7rbWMhNs"
-        },
-        {
-          "url": "https://www.courier-journal.com/story/sports/college/basketball/2026/11/16/louisville-kentucky-womens-basketball-rankings-ap-top-25-coaches-poll-uofl-uk/92584867007/",
-          "title": "Where are Louisville, Kentucky in latest women's basketball rankings?",
-          "publisher": "The Courier-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvbfttheFHzAfjcYbgOCRl0yefdp0_7W42qG2M53n_js5l9RlY5NoRZ-53as"
-        }
-      ]
-    },
-    {
-      "query": "fema nationwide emergency test date",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T18:00:00Z",
-      "related_news_urls": [
-        "https://www.hstoday.us/subject-matter-areas/emergency-preparedness/fema-and-fcc-schedule-2026-nationwide-test-of-the-emergency-alert-system-for-november-17/",
-        "https://www.nbcdfw.com/news/local/nationwide-emergency-alert-test-coming-tuesday-but-it-wont-buzz-your-phone-heres-why/4106800/",
-        "https://www.newsobserver.com/news/local/article318100501.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbTEwJwmvg_nmRfqV-R2R723nhDPPBQ9RInq42z-UGDe6TsTJTSgsnINwEt0k",
-      "image_credit": "Homeland Security Today",
-      "news": [
-        {
-          "url": "https://www.hstoday.us/subject-matter-areas/emergency-preparedness/fema-and-fcc-schedule-2026-nationwide-test-of-the-emergency-alert-system-for-november-17/",
-          "title": "FEMA and FCC Schedule 2026 Nationwide Test of the Emergency Alert System for November 17",
-          "publisher": "Homeland Security Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbTEwJwmvg_nmRfqV-R2R723nhDPPBQ9RInq42z-UGDe6TsTJTSgsnINwEt0k"
-        },
-        {
-          "url": "https://www.nbcdfw.com/news/local/nationwide-emergency-alert-test-coming-tuesday-but-it-wont-buzz-your-phone-heres-why/4106800/",
-          "title": "Tuesday's nationwide emergency alert test won't buzz your phone. Here's why",
-          "publisher": "NBC 5 Dallas-Fort Worth",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSrhPtieoj9ws9zt6cTqIREPtnlZj1g94oEqy_Cl6A9C2O-5-S65mfIoO-wuc"
-        },
-        {
-          "url": "https://www.newsobserver.com/news/local/article318100501.html",
-          "title": "You may get an emergency test message on your devices soon. What to know in NC",
-          "publisher": "Raleigh News & Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKL1pc1YOv7O8wIc8b-gOUy2Mernk2-S5yU6ZAFE-BgDZgSD5NS8dMYF2DQHw"
-        }
-      ]
-    },
-    {
-      "query": "college basketball rankings",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T18:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50503030/michigan-state-no-2-ap-men-poll-florida",
-        "https://sports.yahoo.com/articles/michigan-state-rises-no-2-182306533.html",
-        "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSal1SedW6uqeo37T2mLVqtoPY2Chdz5-AAZljhSCKEX2P95t0AadzQUGOx_c4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50503030/michigan-state-no-2-ap-men-poll-florida",
-          "title": "Michigan State up to No. 2 in AP men's poll behind Florida",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSal1SedW6uqeo37T2mLVqtoPY2Chdz5-AAZljhSCKEX2P95t0AadzQUGOx_c4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/michigan-state-rises-no-2-182306533.html",
-          "title": "Michigan State Rises to No. 2 After Beating Duke",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyWHBhvy_Pzwj3vxOJVTGWx8uEPRGt1zBQnId_QSZy8VbEua8oAG4RWZ9WbI8"
-        },
-        {
-          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after",
-          "title": "Florida reclaims top spot in Andy Katz's men's basketball Power 44 rankings after Week 2",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxTlVSV8YXdJYx5w1tprDqJKbthwTJ7CgHRlmDNxVwXUVb98rS0lo22BJTT6k"
-        }
-      ]
-    },
-    {
-      "query": "w9",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T17:50:00Z",
-      "related_news_urls": [
-        "https://programmetv.ouest-france.fr/divers/divertissement/tout-beau-tout-n9uf-m385855399/e56-premiere-partie-c450806231/",
-        "https://www.jeanmarcmorandini.com/article-657278-audiences-20h45-cyril-hanouna-poursuit-sa-course-en-tete-des-talk-shows-hier-soir-avec-un-beau-score-pour-un-vendredi-devant-quotidien-sur-tmc-qui-recevait-marion-van-renterghem.html",
-        "https://tv-programme.com/tout-beau-tout-n9uf-emission/replay/tout-beau-tout-n9uf-09-11-2026-partie-2-3-R6af35ce911f27"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ezinQKskB0PNol_zihIVD0K8Vvm8t9prYmpG--04G-z9dYAqYVhayqt5t4M",
-      "image_credit": "Programme TV Ouest-France",
-      "news": [
-        {
-          "url": "https://programmetv.ouest-france.fr/divers/divertissement/tout-beau-tout-n9uf-m385855399/e56-premiere-partie-c450806231/",
-          "title": "Tout beau, tout n9uf, Première partie E56 lundi 16 novembre 2026 sur W9 : résumé et diffusions",
-          "publisher": "Programme TV Ouest-France",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ezinQKskB0PNol_zihIVD0K8Vvm8t9prYmpG--04G-z9dYAqYVhayqt5t4M"
-        },
-        {
-          "url": "https://www.jeanmarcmorandini.com/article-657278-audiences-20h45-cyril-hanouna-poursuit-sa-course-en-tete-des-talk-shows-hier-soir-avec-un-beau-score-pour-un-vendredi-devant-quotidien-sur-tmc-qui-recevait-marion-van-renterghem.html",
-          "title": "Audiences 20h45 : Cyril Hanouna poursuit sa course en tête des talk-shows hier soir avec un beau score pou...",
-          "publisher": "Jean-Marc Morandini",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcqBEzZKhtKbObXc5SZQ0aHT4Y7li6BrRR5gPkRaJ_VA_VG1gWjINlwgb3GYY"
-        },
-        {
-          "url": "https://tv-programme.com/tout-beau-tout-n9uf-emission/replay/tout-beau-tout-n9uf-09-11-2026-partie-2-3-R6af35ce911f27",
-          "title": "Tout Beau, Tout N9uf : 09/11/2026 - Partie 2/3",
-          "publisher": "TV-Programme.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5oKthl_z1XmySBJLxTtKcVv97mvgaplGQJNU9St_yZvszPdHHgyUT5AKf14"
-        }
-      ]
-    },
-    {
-      "query": "john summit",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T17:40:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/music/news/john-summit-calls-out-grammys-after-no-nominations-1236949004/",
-        "https://www.yahoo.com/entertainment/music/articles/dj-john-summit-slams-grammys-150012702.html",
-        "https://www.billboard.com/music/awards/john-summit-never-submitting-grammys-again-dance-category-joke-1236382922/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9c31GHpo9pPF1CVkUs_v3naaiASNn5Ugzb0kXPmrHs2GvGqBYIbbiNXxxI1Y",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/music/news/john-summit-calls-out-grammys-after-no-nominations-1236949004/",
-          "title": "John Summit Calls Out the Grammys After Receiving No Nominations",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9c31GHpo9pPF1CVkUs_v3naaiASNn5Ugzb0kXPmrHs2GvGqBYIbbiNXxxI1Y"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/music/articles/dj-john-summit-slams-grammys-150012702.html",
-          "title": "DJ John Summit Slams the Grammys for Ignoring ‘Real Electronic Dance Music,’ Vows to Stop Submitting",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqML3Ikjq_vLF1PXLJ_4OJY8XPPS0u17lKqWSE0bb5Na2u4Uq6L8sNmgake4g"
-        },
-        {
-          "url": "https://www.billboard.com/music/awards/john-summit-never-submitting-grammys-again-dance-category-joke-1236382922/",
-          "title": "John Summit Says He’s ‘Never Submitting to the Grammys Again,’ Calls Dance Category Nominations ‘A F–king Joke’",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ276b7U3hTtnrnFxHLqy9AB56jwuSw7em_qTYd8WxnwTUeYIPHMK0JVuJh9RU"
-        }
-      ]
-    },
-    {
-      "query": "us employment based green card proposal",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T17:40:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/immigration/2026/11/16/trump-administration-proposes-restrictions-employer-sponsored-green-cards/",
-        "https://news.bloomberglaw.com/daily-labor-report/dol-plan-overhauls-rules-to-sponsor-foreign-worker-green-cards",
-        "https://www.fragomen.com/insights/united-states-dol-final-rule-on-prevailing-wages-now-under-omb-review.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMwBmwYxIVahYqglwDw_UpI_01teVVC13bKgLTpdqhFq4yOjANCtadYtHzXJY",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/immigration/2026/11/16/trump-administration-proposes-restrictions-employer-sponsored-green-cards/",
-          "title": "Trump administration proposes restrictions for employer-sponsored green cards",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMwBmwYxIVahYqglwDw_UpI_01teVVC13bKgLTpdqhFq4yOjANCtadYtHzXJY"
-        },
-        {
-          "url": "https://news.bloomberglaw.com/daily-labor-report/dol-plan-overhauls-rules-to-sponsor-foreign-worker-green-cards",
-          "title": "DOL Plans Overhaul of Rules to Sponsor Worker Green Cards (2)",
-          "publisher": "Bloomberg Law News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmMhjnGh4HQbEf-1rP0g-MRfvqQYydm1CogGR0HF57X_q1I7-RQD0-FG4kBiU"
-        },
-        {
-          "url": "https://www.fragomen.com/insights/united-states-dol-final-rule-on-prevailing-wages-now-under-omb-review.html",
-          "title": "United States: DOL Final Rule on Prevailing Wages Now Under OMB Review",
-          "publisher": "Fragomen",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKk6FgVlr0BUpoPKzmsvhE2U85E9HkT464VmWAV98OOPIUmQdsnF0H6MY4yA"
         }
       ]
     }
