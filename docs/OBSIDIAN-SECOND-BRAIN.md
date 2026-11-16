@@ -2,15 +2,23 @@
 
 **Scope:** source-tested pilot for [issue #1941](https://github.com/www-infinity4/QuantaPhi/issues/1941). This is a portable Markdown index of public QuantaPhi work tickets, **not** a replacement for the signed Moltnook runner, owner-scoped Oracle Synapse memory, Continuity Builder, or ChatGPT conversation history.
 
-## Recommended upstream repositories
+## All repositories from the X post: one foundation + six supporting
 
-- Vault foundation (MIT): https://github.com/kepano/kepano-obsidian
-- Obsidian agent skill formats (MIT): https://github.com/kepano/obsidian-skills
-- Optional persistent agent memory (MIT): https://github.com/eugeniughelbur/obsidian-second-brain
-- Optional knowledge wiki (MIT): https://github.com/Ar9av/obsidian-wiki
-- Open JSON Canvas format (MIT): https://github.com/obsidianmd/jsoncanvas
+Original post: https://x.com/danikkk_wqs/status/2122050763555774945
 
-Fork the first three independently only when a signed GitHub fork action is available. Keeping upstream projects separate makes provenance and updates clearer. The Obsidian desktop/mobile application is not itself open-source software to fork.
+| Role | Verified upstream | Existing account fork, verified 2026-11-15 CT | How to use |
+| --- | --- | --- | --- |
+| **Foundation** | [kepano/kepano-obsidian](https://github.com/kepano/kepano-obsidian) | [www-infinity4/kepano-obsidian](https://github.com/www-infinity4/kepano-obsidian) (fork verified) | Starter Markdown vault |
+| **1. Skills** | [obsidianmd/obsidian-skills](https://github.com/obsidianmd/obsidian-skills) (formerly linked under kepano) | [www-infinity4/obsidian-skills](https://github.com/www-infinity4/obsidian-skills) (fork verified) | Formats and skills for authorized agents |
+| **2. Wiki** | [Ar9av/obsidian-wiki](https://github.com/Ar9av/obsidian-wiki) | No matching owner fork verified | Evaluate source-backed note creation |
+| **3. Templates** | [groepl/Obsidian-Templates](https://github.com/groepl/Obsidian-Templates) | No matching owner fork verified | Use selected Zettelkasten templates; review plugin/content licenses |
+| **4. Gardens** | [MaggieAppleton/digital-gardeners](https://github.com/MaggieAppleton/digital-gardeners) | No matching owner fork verified | Study public knowledge gardens; reference library, not an agent runtime |
+| **5. Canvas** | [obsidianmd/jsoncanvas](https://github.com/obsidianmd/jsoncanvas) | No matching owner fork verified | Documented JSON Canvas format for diagrams |
+| **6. Plugin directory** | [obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases) | No matching owner fork verified | Official plugin/theme index, not itself a plugin to install |
+
+**Separate, optional project not counted in the six:** [eugeniughelbur/obsidian-second-brain](https://github.com/eugeniughelbur/obsidian-second-brain); [your fork](https://github.com/www-infinity4/obsidian-second-brain) exists. Its commands and memory architecture need compatibility and permissions review before execution. Your older [www-infinity4/Obsidian](https://github.com/www-infinity4/Obsidian) exists independently and is not a fork of the post's upstream projects.
+
+**Recommendation:** Use the already-forked foundation and skills in this first release. Evaluate the wiki and selected templates next. Link to the gardens, Canvas spec and plugin catalog without mass-forking or mixing their source trees; these are references, not missing runnable services. Existing forks do not imply code has been installed, integrated, executed or deployed.
 
 ## Use (no npm or API key)
 
