@@ -30,6 +30,6 @@ jobs:
           node scripts/obsidian-vault-export.mjs --root . --vault "$dir/SecondBrain" --hot-limit 12
           test -s "$dir/SecondBrain/hot.md"
           test -s "$dir/SecondBrain/index.md"
-          test -s "$dir/SecondBrain/Tickets/TICKET-1908.md"
-          grep -q 'unverified_source_pointer' "$dir/SecondBrain/Tickets/TICKET-1908.md"
+          test -s "$dir/SecondBrain/Tickets/TICKET-1941.md"
+          grep -q 'unverified_source_pointer' "$dir/SecondBrain/Tickets/TICKET-1941.md"
           grep -q 'Snapshot SHA-256' "$dir/SecondBrain/index.md"
