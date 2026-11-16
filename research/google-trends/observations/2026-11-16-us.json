@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T00:01:50.337100Z",
+  "checked_at": "2026-11-16T00:50:11.985736Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "oilers vs flyers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T23:40:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-15-2026",
-        "https://sports.yahoo.com/articles/flyers-game-23-lines-notes-183927523.html",
-        "https://www.espn.com/nhl/recap/_/gameId/401892692"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4V2y-uYehttJlM2bbtXZ0orEOpKoZRBqwoSiJiHXWZJo0oWbsyNUjWn9C13w",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-15-2026",
-          "title": "NHL On Tap: McDavid looks to push 21-game point streak with Oilers at Flyers",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4V2y-uYehttJlM2bbtXZ0orEOpKoZRBqwoSiJiHXWZJo0oWbsyNUjWn9C13w"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/flyers-game-23-lines-notes-183927523.html",
-          "title": "Flyers Game 23: Lines, Notes, & How to Watch vs. Oilers",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGFNl1khbIWb4V4c4Ng3mQaHA9J2nRoFDGL7lJZMjDNzFSyRlbCMfcCeIalGg"
-        },
-        {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892692",
-          "title": "Oilers 3-2 Flyers (Nov 11, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQVvzxczqPTBrRL0jC89EOPnwjF61QtQWQ7dpkOityR1zYH5f3q2sIG8AJQ1E"
-        }
-      ]
-    },
-    {
-      "query": "pat freiermuth",
+      "query": "mark carney",
       "approx_searches": "500+",
-      "published_at": "2026-11-15T23:40:00Z",
+      "published_at": "2026-11-16T00:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/bengals-surprise-steelers-injury-news-222045391.html",
-        "https://www.dkpittsburghsports.com/team/steelers/feed/topic/596272df-4b5c-4239-b49c-8da9fa1807aa",
-        "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-ex-penn-state-star-tight-end-pops-up-with-illness-before-bengals-game.html"
+        "https://globalnews.ca/news/12151744/canada-brazil-rainforest-protection-asean-summit/",
+        "https://www.cbc.ca/news/politics/canada-philippines-free-trade-agreement-talks-9.7422009",
+        "https://www.castanet.net/news/Poll/637856/Should-Prime-Minister-Mark-Carney-spend-so-much-time-travelling-the-world-focussing-on-trade-deals-"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSMeZqNtGFb25F_jqxE-mK3bevufPEYGXDI_lRNojR-U0o4Qsa11OmQI6zbsM",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhsx2zvEwDfCVJq4NTvaHXJeDBsRVykW4oomIdIv4tNQIb3AuXKxztkb5FbOQ",
+      "image_credit": "Global News",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/bengals-surprise-steelers-injury-news-222045391.html",
-          "title": "Bengals Get Surprise Steelers Injury News Ahead of Sunday Night Showdown",
-          "publisher": "Yahoo Sports",
+          "url": "https://globalnews.ca/news/12151744/canada-brazil-rainforest-protection-asean-summit/",
+          "title": "Canada, Brazil announce $540M for rainforest protection project",
+          "publisher": "Global News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSMeZqNtGFb25F_jqxE-mK3bevufPEYGXDI_lRNojR-U0o4Qsa11OmQI6zbsM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhsx2zvEwDfCVJq4NTvaHXJeDBsRVykW4oomIdIv4tNQIb3AuXKxztkb5FbOQ"
         },
         {
-          "url": "https://www.dkpittsburghsports.com/team/steelers/feed/topic/596272df-4b5c-4239-b49c-8da9fa1807aa",
-          "title": "The Steelers have added tight end Pat Freiermuth (illness) to the injury report and he is questionable for Sunday night's game against Cincinnati.",
-          "publisher": "DK Pittsburgh Sports",
+          "url": "https://www.cbc.ca/news/politics/canada-philippines-free-trade-agreement-talks-9.7422009",
+          "title": "Canada, Philippines wrap talks for free-trade agreement, expected to be signed in 2027",
+          "publisher": "CBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4MFMGw_K94v53MSlqghnG3lyRviLaD_Izmw2k-ojQRSM0_5itm5KGFuWqgVg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCSiMs8K_DD_g_If8rpu8lTVd7vaDxevsWV099EtXx8zccqi8YAad_dd_H6S4"
         },
         {
-          "url": "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-ex-penn-state-star-tight-end-pops-up-with-illness-before-bengals-game.html",
-          "title": "Pittsburgh Steelers, ex-Penn State star tight end pops up with illness before Bengals game",
-          "publisher": "PennLive.com",
+          "url": "https://www.castanet.net/news/Poll/637856/Should-Prime-Minister-Mark-Carney-spend-so-much-time-travelling-the-world-focussing-on-trade-deals-",
+          "title": "Should Prime Minister Mark Carney spend so much time travelling the world focussing on trade deals?",
+          "publisher": "Castanet",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKO0KfvA67Ka1UYiRosOCmuzjB8z07bzsmXixt2T4vnUuyP2o2rtgiBiug6_c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxgvP8glYOP55g_u5GWuIVjJ02FNSGu2mXuRVh_0hoGpaa3E4wQ7DNBte3WTk"
         }
       ]
     },
     {
-      "query": "christian mccaffrey injury",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T23:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/mccaffrey-to-have-a-full-workload-vs-the-raiders",
-        "https://www.si.com/betting/christian-mccaffrey-injury-update-betting-impact-for-49ers-vs-cowboys-in-nfl-week-10-2026",
-        "https://www.thefantasyfootballers.com/news/646508/christian-mccaffrey-full-workload-expected-sunday/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4s9Q5aFWz8mGa4jx1--OpBv_8A6jknxhyHH9jC5C2yhm1UIz7HhYSJmCz_JU",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/mccaffrey-to-have-a-full-workload-vs-the-raiders",
-          "title": "McCaffrey to have a full workload vs. the Raiders",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4s9Q5aFWz8mGa4jx1--OpBv_8A6jknxhyHH9jC5C2yhm1UIz7HhYSJmCz_JU"
-        },
-        {
-          "url": "https://www.si.com/betting/christian-mccaffrey-injury-update-betting-impact-for-49ers-vs-cowboys-in-nfl-week-10-2026",
-          "title": "Is Christian McCaffrey Playing Today? (Injury Update, Betting Impact for 49ers vs. Cowboys in NFL Week 10)",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrIXvLbssAjF4X2o7QFT_y0OQGDqdWhTzCjlEwe4qeuUC1dVaEAa8wS4Ho_Hs"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/646508/christian-mccaffrey-full-workload-expected-sunday/",
-          "title": "Christian McCaffrey Full workload expected Sunday",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeOzUjfVhzsp_sO7Rrasetglq87jn0rASLYCBMjb_7n0H-EjUeM_INZxyKBC4"
-        }
-      ]
-    },
-    {
-      "query": "malik mustapha",
+      "query": "embassy",
       "approx_searches": "200+",
-      "published_at": "2026-11-15T23:40:00Z",
+      "published_at": "2026-11-16T00:30:00Z",
       "related_news_urls": [
-        "https://www.si.com/nfl/49ers/onsi/49ers-6-players-poised-second-half-breakouts",
-        "https://sports.yahoo.com/articles/49ers-6-players-poised-second-140008654.html",
-        "https://www.dallascowboys.com/news/cowboys-49ers-how-to-watch-listen-stream-in-week-10"
+        "https://www.navy.mil/Press-Office/News-Stories/display-news/Article/4648157/uss-spruance-returns-to-san-diego-following-historic-12-month-combat-deployment/",
+        "https://www.foxnews.com/world/iran-vows-we-find-you-2-us-navy-officers-day-warship-returns-from-middle-east",
+        "https://www.twz.com/sea/destroyer-that-has-been-deployed-longer-than-any-since-wwii-returns-home"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTYw8699G0piAG3w_4ModgPk9_ioGqDrb_0Jwilb5Lx1mgMGlFVN0J42rAxLc",
-      "image_credit": "Sports Illustrated",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI9lTWEopZmXjjDFLf_aNm-8oHP8Ji9KlwHmySIZzSE0K1EmMOMOtinoxkouA",
+      "image_credit": "navy.mil",
       "news": [
         {
-          "url": "https://www.si.com/nfl/49ers/onsi/49ers-6-players-poised-second-half-breakouts",
-          "title": "49ers Have 6 Players Poised for Second-Half Breakouts",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.navy.mil/Press-Office/News-Stories/display-news/Article/4648157/uss-spruance-returns-to-san-diego-following-historic-12-month-combat-deployment/",
+          "title": "USS Spruance Returns to San Diego Following Historic 12-month Combat Deployment",
+          "publisher": "navy.mil",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTYw8699G0piAG3w_4ModgPk9_ioGqDrb_0Jwilb5Lx1mgMGlFVN0J42rAxLc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI9lTWEopZmXjjDFLf_aNm-8oHP8Ji9KlwHmySIZzSE0K1EmMOMOtinoxkouA"
         },
         {
-          "url": "https://sports.yahoo.com/articles/49ers-6-players-poised-second-140008654.html",
-          "title": "49ers Have 6 Players Poised for Second-Half Breakouts",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.foxnews.com/world/iran-vows-we-find-you-2-us-navy-officers-day-warship-returns-from-middle-east",
+          "title": "Iran vows ‘we will find you’ to 2 US Navy officers the day warship returns from Middle East",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDG2VI5HimK9VIKe6Pj3QSlyftfFie5EZrniyv_yng5D8c4P38jF3mIHVr9jk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJck5ubkuSyU6--tuvQyWWaeQpYtq4wgIOBhwrbhSmh4Ej_paMICZsaWD3F3U"
         },
         {
-          "url": "https://www.dallascowboys.com/news/cowboys-49ers-how-to-watch-listen-stream-in-week-10",
-          "title": "Cowboys-49ers: How to Watch, Listen, Stream in Week 10",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "url": "https://www.twz.com/sea/destroyer-that-has-been-deployed-longer-than-any-since-wwii-returns-home",
+          "title": "Destroyer That Has Been Deployed Longer Than Any Since WWII Returns Home",
+          "publisher": "TWZ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX2oeCuXfmGuFwToxmFzb5urBCjchPLxOhLWD_43CWGJZfj9VHVjHTsgLeiAo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwB5zKh9CaYaE4jDi0ljO6aynU_AAwiXyfTXzfSOtCDSAtgJUGMqTBWuoqAMU"
         }
       ]
     },
     {
-      "query": "miguel felix gallardo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-15T23:40:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/world/americas/miguel-angel-felix-gallardo-architect-of-mexicos-modern-drug-trade-has-died-at-80-4f50a23a",
-        "https://www.cnn.com/2026/11/15/americas/mexico-gallardo-dead-dea-intl-latam",
-        "https://www.reutersconnect.com/item/mexicos-guadalajara-cartel-founder-aged-80-dies-in-hospital/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMk1PT0FBTjVJRA"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjNb74KAYqoBzZlQnhjDhoupf69_-P0KC8AKAMNCeDfp9yCY4FGjXNOd4DbBY",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/world/americas/miguel-angel-felix-gallardo-architect-of-mexicos-modern-drug-trade-has-died-at-80-4f50a23a",
-          "title": "Miguel Ángel Félix Gallardo, Architect of Mexico’s Modern Drug Trade, Dies at 80",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjNb74KAYqoBzZlQnhjDhoupf69_-P0KC8AKAMNCeDfp9yCY4FGjXNOd4DbBY"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/15/americas/mexico-gallardo-dead-dea-intl-latam",
-          "title": "Notorious Mexican drug lord, who was convicted of killing US DEA agent, dies at 80",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyroWrB5E6H7SlAW8_oHYwBMABXtT2MElprzKbHt0qkz97wxwCwTWbrZ_y1TQ"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/mexicos-guadalajara-cartel-founder-aged-80-dies-in-hospital/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMk1PT0FBTjVJRA",
-          "title": "Licensable picture: Mexico's Guadalajara cartel founder, aged 80, dies in hospital",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSv0PVflxo3U10lwIHsr05HfxU8LslY8tSBG3nUNQ51ObGudYSmh6VYAgrrKwg"
-        }
-      ]
-    },
-    {
-      "query": "stewart cink",
+      "query": "joe strada",
       "approx_searches": "200+",
-      "published_at": "2026-11-15T23:40:00Z",
+      "published_at": "2026-11-16T00:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/stewart-cink-zach-johnson-chasing-210049608.html",
-        "https://golfweek.usatoday.com/story/sports/golf/champions/2026/11/15/pga-tour-champions-most-money-single-season-leaders/92798315007/",
-        "https://www.centraloregondaily.com/sports/stewart-cink-zach-johnson-each-chasing-most-money-earned-in-a-single-season-on-pga/article_6cea5be9-c087-5d73-a5d7-4eccf5a760f7.html"
+        "https://www.foxnews.com/politics/congress-incoming-wealthiest-member-vows-crack-down-politicians-getting-rich-office",
+        "https://mezha.net/eng/news/mezha-b0df0025e124c44d11b1a41f_congress-_expected_richest/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm_t8ApGOgaBuOwMTjq8gzHulL5EOi-GVOcMZ0t5xUF25nJf-iMI1QxfbLXZo",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/stewart-cink-zach-johnson-chasing-210049608.html",
-          "title": "Stewart Cink, Zach Johnson each chasing most money earned in a single-season on PGA Tour Champions",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm_t8ApGOgaBuOwMTjq8gzHulL5EOi-GVOcMZ0t5xUF25nJf-iMI1QxfbLXZo"
-        },
-        {
-          "url": "https://golfweek.usatoday.com/story/sports/golf/champions/2026/11/15/pga-tour-champions-most-money-single-season-leaders/92798315007/",
-          "title": "Stewart Cink, Zach Johnson each chasing most money earned in a single-season on PGA Tour Champions",
-          "publisher": "Golfweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq0dL_dJwTmPOrjQ-wNcUpCvvrqJQeZf01TsLxYfh2fdizRRa-GNojXQyJouo"
-        },
-        {
-          "url": "https://www.centraloregondaily.com/sports/stewart-cink-zach-johnson-each-chasing-most-money-earned-in-a-single-season-on-pga/article_6cea5be9-c087-5d73-a5d7-4eccf5a760f7.html",
-          "title": "Stewart Cink, Zach Johnson each chasing most money earned in a single season on PGA Tour Champions",
-          "publisher": "Central Oregon Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8k8VnpEPjk_D-Rrug_F9S9S6BBKRHNblN7FH5VXZ70lC2VNqvAENK9TB8a3s"
-        }
-      ]
-    },
-    {
-      "query": "ronnie rivers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-15T23:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
-        "https://sports.yahoo.com/fantasy/article/week-11-fantasy-football-early-waiver-wire-pickups-xavier-hutchinson-antonio-williams-among-top-options-214102008.html",
-        "https://www.nytimes.com/athletic/7771412/2026/11/15/nfl-week-10-fantasy-football-rankings-where-do-all-of-the-traded-players-rank/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJpK76YwjJt71qCyQhHLYQpHSrbN6gjul30xtg6zI1cgKPxC0S79me0xs55iw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
-          "title": "Fantasy football last-minute pickups: 12 players who can help in deeper leagues",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJpK76YwjJt71qCyQhHLYQpHSrbN6gjul30xtg6zI1cgKPxC0S79me0xs55iw"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/article/week-11-fantasy-football-early-waiver-wire-pickups-xavier-hutchinson-antonio-williams-among-top-options-214102008.html",
-          "title": "Week 11 Fantasy Football Early Waiver Wire Pickups: Xavier Hutchinson, Antonio Williams among top options",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6_rxzRhKJ_nRgtSPFoXEOpA9ZQ2O3WSCgusYWgAc2zQz9OPVaBjeNLdGTJI4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7771412/2026/11/15/nfl-week-10-fantasy-football-rankings-where-do-all-of-the-traded-players-rank/",
-          "title": "NFL Week 10 fantasy football rankings: Where do all of the traded players rank?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtUK0F4W5-ZCUm_ZhF1MPdLTPaRFigA4jViwOmU0LgUWgvDQe3DN32glkkkRQ"
-        }
-      ]
-    },
-    {
-      "query": "devin booker",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T23:30:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/watch/video/game-recap-suns-101-hornets-96-nov-12",
-        "https://arizonasports.com/nba/phoenix-suns/vinnys-view-devin-booker-saved-the-day-again",
-        "https://www.brightsideofthesun.com/suns-analysis/113613/devin-booker-57-million-clutch-scoring-hornets-28-footer-starting-lineup-struggles"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnHM3JUWLeZkujjg-oo51p7IZguD878fQKVzx-C2OLN8IDUavnnzgbTKCsZfw",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/watch/video/game-recap-suns-101-hornets-96-nov-12",
-          "title": "Game Recap: Suns 101, Hornets 96 (Nov. 12)",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnHM3JUWLeZkujjg-oo51p7IZguD878fQKVzx-C2OLN8IDUavnnzgbTKCsZfw"
-        },
-        {
-          "url": "https://arizonasports.com/nba/phoenix-suns/vinnys-view-devin-booker-saved-the-day-again",
-          "title": "Vinny’s View: Devin Booker saved the day, again",
-          "publisher": "Arizona Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwA87x1JtfmzVuuyk0pxpoin5uSGUHV3NKLLvk-iffjiATRaN9CCTltbB16w4"
-        },
-        {
-          "url": "https://www.brightsideofthesun.com/suns-analysis/113613/devin-booker-57-million-clutch-scoring-hornets-28-footer-starting-lineup-struggles",
-          "title": "Devin Booker’s clutch scoring carries Suns amid starting lineup woes",
-          "publisher": "Bright Side Of The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85JDmvq1_VYM_Skt-uED934eq7pfslOrTfT3BDdK5kS2nSHIkAOiimQe_m8Y"
-        }
-      ]
-    },
-    {
-      "query": "jerry jones",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-15T23:30:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/opinion/life-short-jerry-jones-makes-being-dallas-cowboys-fan-feel-endless",
-        "https://sports.yahoo.com/articles/jerry-needs-fire-himself-4x-183208012.html",
-        "https://mezha.net/eng/news/mezha-c71b5fed4d9cab3de9c2af1f_life_is_short/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkRpgrDt2l_fi2VkGb3AINoSwINQHKVxUsyQNny8IdbK7KzKieWPoy41cnKnA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQavscFtJU4rVtJ8wWBBdIdRLePUGN32Ovm6ZgJWsnU7fl_sy__vZedeUfWBo",
       "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.foxnews.com/opinion/life-short-jerry-jones-makes-being-dallas-cowboys-fan-feel-endless",
-          "title": "Life is short, but Jerry Jones makes being a Dallas Cowboys fan feel endless",
+          "url": "https://www.foxnews.com/politics/congress-incoming-wealthiest-member-vows-crack-down-politicians-getting-rich-office",
+          "title": "Congress' incoming wealthiest member vows to crack down on politicians getting rich in office",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkRpgrDt2l_fi2VkGb3AINoSwINQHKVxUsyQNny8IdbK7KzKieWPoy41cnKnA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQavscFtJU4rVtJ8wWBBdIdRLePUGN32Ovm6ZgJWsnU7fl_sy__vZedeUfWBo"
         },
         {
-          "url": "https://sports.yahoo.com/articles/jerry-needs-fire-himself-4x-183208012.html",
-          "title": "“Jerry Needs to Fire Himself”: 4x Pro Bowler Rips “Out of Touch” Jerry Jones With Brutal Advice",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyAJ11g345Lzkls2tToDl8U0pPqkFuOEkSReQ4oVC1JeHk240TgJBNVOqpHo"
-        },
-        {
-          "url": "https://mezha.net/eng/news/mezha-c71b5fed4d9cab3de9c2af1f_life_is_short/",
-          "title": "Life is short, but Jerry Jones makes being a Cowboys fan feel endless",
+          "url": "https://mezha.net/eng/news/mezha-b0df0025e124c44d11b1a41f_congress-_expected_richest/",
+          "title": "Congress' expected richest member plans to target politicians who get rich in office",
           "publisher": "Mezha.net",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR5m2NX8019ixY63ZZgbt3bIwNIYDj1Hvkdi9bw4GYXXe4qlBC33OeAUc-GoI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5JZj6Cv14zDnU1Dtfe2tx7WryPzGnMrIXUhd9oLyT0aFpTYUIEB371qfxoLI"
         }
       ]
     },
     {
-      "query": "brad pitt",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-15T23:30:00Z",
+      "query": "rachel kleinbach birthday cruise rescue",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T00:30:00Z",
       "related_news_urls": [
-        "https://www.the-independent.com/arts-entertainment/art/news/brad-pitt-angelina-jolie-vivienne-mental-health-b3084966.html",
-        "https://pagesix.com/2026/11/13/celebrity-news/angelina-jolie-brad-pitts-daughter-vivienne-reveals-hospitalization-for-eating-disorder-at-la-art-exhibit/",
-        "https://www.imdb.com/es/news/ni66110338/?ref_=nwc_art_perm"
+        "https://www.ktvb.com/article/news/nation-world/strangers-drive-mother-daughter-atlanta-florida-birthday-cruise-ground-stop/507-768ed592-2af7-48c6-8f73-40787d704056",
+        "https://www.11alive.com/article/life/heartwarming/strangers-help-mother-daughter-stranded-atlanta-airport-birthday-cruise/85-283ec884-7265-4877-a20b-5ccdaf544b0f",
+        "https://travel.yahoo.com/cruises/articles/not-cent-stranger-drives-overnight-225632722.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2oHRb8XnPVnT9R-rMFNIapsmHXPFBPbfKwQaBJgGoWtaG95DGFPxIhEl7Rs4",
-      "image_credit": "The Independent",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTWR8jztnelFARaWloap-P5EAM0mI_6kHua8wS1RO_WgH5K5wXtROpTpbU0Xo",
+      "image_credit": "KTVB",
       "news": [
         {
-          "url": "https://www.the-independent.com/arts-entertainment/art/news/brad-pitt-angelina-jolie-vivienne-mental-health-b3084966.html",
-          "title": "Brad Pitt and Angelina Jolie’s daughter Vivienne opens up about eating disorder: ‘I was very alone’",
-          "publisher": "The Independent",
+          "url": "https://www.ktvb.com/article/news/nation-world/strangers-drive-mother-daughter-atlanta-florida-birthday-cruise-ground-stop/507-768ed592-2af7-48c6-8f73-40787d704056",
+          "title": "Strangers help mother and daughter stranded by ground stop get to special birthday cruise",
+          "publisher": "KTVB",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2oHRb8XnPVnT9R-rMFNIapsmHXPFBPbfKwQaBJgGoWtaG95DGFPxIhEl7Rs4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTWR8jztnelFARaWloap-P5EAM0mI_6kHua8wS1RO_WgH5K5wXtROpTpbU0Xo"
         },
         {
-          "url": "https://pagesix.com/2026/11/13/celebrity-news/angelina-jolie-brad-pitts-daughter-vivienne-reveals-hospitalization-for-eating-disorder-at-la-art-exhibit/",
-          "title": "Angelina Jolie, Brad Pitt’s daughter Vivienne reveals hospitalization for eating disorder at LA art exhibit: ‘It wasn’t easy’",
-          "publisher": "Page Six",
+          "url": "https://www.11alive.com/article/life/heartwarming/strangers-help-mother-daughter-stranded-atlanta-airport-birthday-cruise/85-283ec884-7265-4877-a20b-5ccdaf544b0f",
+          "title": "Strangers help mother, daughter stranded at Atlanta airport make birthday cruise",
+          "publisher": "11Alive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7FlXB9lIJILrOJ65nv3pKxQMD5pr-lvgd18qESJSVNK_it9oxPbx37Lcmdh4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_b1ggQXurO8S-VpNMfA6-LFumuGGmRZIiq7RYxozL4YKvm76A_utOBveToHg"
         },
         {
-          "url": "https://www.imdb.com/es/news/ni66110338/?ref_=nwc_art_perm",
-          "title": "Angelina Jolie’s Daughter Vivienne Reveals She Was Hospitalized for Eating Disorder, Says She Was ‘Angry, Sick, & Very Alone’",
-          "publisher": "IMDb",
+          "url": "https://travel.yahoo.com/cruises/articles/not-cent-stranger-drives-overnight-225632722.html",
+          "title": "“Not a Cent”: Stranger Drives Overnight to Get Mother and Daughter to Carnival Cruise After FAA Grounding",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTMI_u62GtHDzqRD-xyDageqC3f1hdlSNc0J0CVTlGCa4m5GjenwtMz-qh498"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKYzt1Ym6QTKSAUguWnLYJS1aEBI1k7avZzCyLYQlDhwavO1nP4AB4HjZ9kJQ"
+        }
+      ]
+    },
+    {
+      "query": "john lynch",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T00:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/raiders-49ers-game-at-levis-stadium-resulted-in-11-arrests-and-45-ejections",
+        "https://www.foxnews.com/outkick-sports/49ers-executive-john-lynch-alarming-comment-rampant-fighting-raiders-fans",
+        "https://abc7news.com/post/san-francisco-49ers-las-vegas-raiders-fans-ejected-arrested-violent-fights-levis-stadium-santa-clara-police/20029103/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXM2gnAzsvbDMVDw1tnELFVkzj3h8Rhgc7CodlAHlHJhTvkJ5FH9OLyix72Z8",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/raiders-49ers-game-at-levis-stadium-resulted-in-11-arrests-and-45-ejections",
+          "title": "Raiders-49ers game at Levi’s Stadium resulted in 11 arrests and 45 ejections",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXM2gnAzsvbDMVDw1tnELFVkzj3h8Rhgc7CodlAHlHJhTvkJ5FH9OLyix72Z8"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/49ers-executive-john-lynch-alarming-comment-rampant-fighting-raiders-fans",
+          "title": "49ers executive John Lynch has alarming comment about rampant fighting with Raiders fans",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYNefTeOjbSYm-M2e6Jnkp5YfrcqJRqNQkxm9PW4idvDavw0TaAH97Ksrm_DA"
+        },
+        {
+          "url": "https://abc7news.com/post/san-francisco-49ers-las-vegas-raiders-fans-ejected-arrested-violent-fights-levis-stadium-santa-clara-police/20029103/",
+          "title": "San Francisco 49ers and Las Vegas Raiders fans ejected, arrested after violent fights at Levi's Stadium: Santa Clara police",
+          "publisher": "ABC7 Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC3q65PrUmY9RYOZCVbO1WfRqPFflv4H0i_lqoXYvH8mZradYnvlRot2KNwLE"
+        }
+      ]
+    },
+    {
+      "query": "flames vs ducks",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T00:20:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/calgary-flames-anaheim-ducks-game-preview-november-15-2026",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/calgary-flames-vs-anaheim-ducks-prediction-odds-2026-11-15/",
+        "https://www.nytimes.com/athletic/7784367/2026/11/15/flames-vs-ducks-stream-how-to-watch-nov-15/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/calgary-flames-anaheim-ducks-game-preview-november-15-2026",
+          "title": "Flames at Ducks projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/calgary-flames-vs-anaheim-ducks-prediction-odds-2026-11-15/",
+          "title": "Calgary Flames vs Anaheim Ducks Prediction, Picks & Odds | 15 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptRmJxCuTx8jPwORNOCmu0pvSL7nlI3tKoi06s100a3NkS7ULBmv0NDuddJ0"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7784367/2026/11/15/flames-vs-ducks-stream-how-to-watch-nov-15/",
+          "title": "How to watch Flames vs. Ducks: TV channel and streaming options for November 15",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR_zxGR4nddpwDesNvmC9Ti3Vr1k0P62onO0azEVR8vq8-mhyjCskcVKGmhNc"
+        }
+      ]
+    },
+    {
+      "query": "skip bayless",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T00:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ve-looked-list-skip-bayless-190000420.html",
+        "https://www.basketballnews.com/news/basketballnews-nba-active-news-demarcus-cousins-danny-green-send-warning-to-austin-reaves-over-los-angeles-lakers-future/",
+        "https://www.teamziller.com/luka-doncic-austin-reaves-lakers-scoring/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPNW56NZmXv71G3gLUxq4f2OWgTL12WAA6Mkh3NVYP3WnijwdO8rIaKU3zWoM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/ve-looked-list-skip-bayless-190000420.html",
+          "title": "‘I’ve looked at the list’: Skip Bayless has just made a bold claim about Lakers star Austin Reaves",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPNW56NZmXv71G3gLUxq4f2OWgTL12WAA6Mkh3NVYP3WnijwdO8rIaKU3zWoM"
+        },
+        {
+          "url": "https://www.basketballnews.com/news/basketballnews-nba-active-news-demarcus-cousins-danny-green-send-warning-to-austin-reaves-over-los-angeles-lakers-future/",
+          "title": "DeMarcus Cousins & Danny Green Send Warning to Austin Reaves Over Lakers Future",
+          "publisher": "BasketballNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3NZGb3dqk1lifoRhTX1r3fQ6r0w2XJX4qp-ccjZDgAszJvuEJ6QXCrvvj08I"
+        },
+        {
+          "url": "https://www.teamziller.com/luka-doncic-austin-reaves-lakers-scoring/",
+          "title": "Is Luka holding Austin Reaves back?",
+          "publisher": "Good Morning It's Basketball",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKgQl_q1px4Kyupwq5Zb735zQ4S-rxhKiOKgAcQRBsE3yca2O6ADOfIrVXt4g"
+        }
+      ]
+    },
+    {
+      "query": "ar-pine bluff vs usc",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T00:20:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/arkansas-pine-bluff-golden-lions-vs-usc-trojans-prediction-odds-2026-11-15/",
+        "https://www.nytimes.com/athletic/7784031/2026/11/15/uapb-vs-usc-stream-how-to-watch-nov-15/",
+        "https://www.accuscore.com/game/cmwh4c37yqui7pa01fd1yv18k"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/arkansas-pine-bluff-golden-lions-vs-usc-trojans-prediction-odds-2026-11-15/",
+          "title": "Arkansas-Pine Bluff vs USC Prediction, Picks & Odds | 15 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7784031/2026/11/15/uapb-vs-usc-stream-how-to-watch-nov-15/",
+          "title": "How to watch UAPB vs. USC men’s basketball: TV channel and streaming options for November 15",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2LfcvGk6_07VGYJBsFPHDJDB79PVFq8usCvuHZ7rO7KSbDX_GAZU2_Wjjsug"
+        },
+        {
+          "url": "https://www.accuscore.com/game/cmwh4c37yqui7pa01fd1yv18k",
+          "title": "Arkansas-Pine Bluff vs USC Prediction (Nov 15): USC 100% — Odds & Live Score",
+          "publisher": "AccuScore",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgZdb_jWD2outd2-JzpBihqYg4sDaJOyBaoLMhhotHHNe4Yna_xEzntFRoN7M"
+        }
+      ]
+    },
+    {
+      "query": "joyce dewitt",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T00:20:00Z",
+      "related_news_urls": [
+        "https://graziamagazine.com/us/articles/in-1977-john-ritter-and-joyce-dewitt-became-tvs-favorite-roommates-49-years-later-she-brought-threes-company-back-to-new-york-25497/",
+        "https://www.amny.com/entertainment/threes-company-aortic-health-joes-pub-event/",
+        "https://people.com/joyce-dewitt-says-comedy-was-not-an-intellectual-process-for-john-ritter-exclusive-12217985"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSCwbFxwakrwb6RHlulS0oD528ooVFaSHOGsYj0kQelB1F9qKPkfESwPasIBI",
+      "image_credit": "Grazia",
+      "news": [
+        {
+          "url": "https://graziamagazine.com/us/articles/in-1977-john-ritter-and-joyce-dewitt-became-tvs-favorite-roommates-49-years-later-she-brought-threes-company-back-to-new-york-25497/",
+          "title": "In 1977, John Ritter and Joyce DeWitt Became TV's Favorite Roommates. 49 Years Later, She Brought 'Three's Company' Back to New York",
+          "publisher": "Grazia",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSCwbFxwakrwb6RHlulS0oD528ooVFaSHOGsYj0kQelB1F9qKPkfESwPasIBI"
+        },
+        {
+          "url": "https://www.amny.com/entertainment/threes-company-aortic-health-joes-pub-event/",
+          "title": "‘Three’s Company’ knocks on the door for aortic health at Joe’s Pub event",
+          "publisher": "amNewYork",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDQkx5Pck5PDRlF3bFKkIWaqf9gIOc6QTF1j5wmeoB47bI7onKK09BbO35m4"
+        },
+        {
+          "url": "https://people.com/joyce-dewitt-says-comedy-was-not-an-intellectual-process-for-john-ritter-exclusive-12217985",
+          "title": "Joyce DeWitt Says Comedy Was ‘Not an Intellectual Process’ for John Ritter: ‘It Just Fell Out of Him’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ibpuemoM_z1igiNLb6E7ivVUFoD1eM1nQZkBEFtd-rbTs3YLddWZCHUPs5g"
+        }
+      ]
+    },
+    {
+      "query": "imari berry",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T00:20:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/louisville/article/louisville-womens-basketball-rolls-past-ball-state-volleyball-falls-at-no-5-smu-292627693/",
+        "https://gocards.com/news/2026/11/11/womens-basketball-no-7-cardinals-travel-to-ball-state",
+        "https://www.cbssports.com/watch/general/video/ncaaw-highlights-no-7-louisville-at-ball-state-1112"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOUO1dQUkln8WuRKWF0OPdA7R_RpYlxmCsJZ4jKptTEY2YiBqZJiSXUb5HAQ",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/louisville/article/louisville-womens-basketball-rolls-past-ball-state-volleyball-falls-at-no-5-smu-292627693/",
+          "title": "Louisville Women’s Basketball Rolls Past Ball State, Volleyball Falls at No. 5 SMU",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOUO1dQUkln8WuRKWF0OPdA7R_RpYlxmCsJZ4jKptTEY2YiBqZJiSXUb5HAQ"
+        },
+        {
+          "url": "https://gocards.com/news/2026/11/11/womens-basketball-no-7-cardinals-travel-to-ball-state",
+          "title": "No. 7 Cardinals Travel to Ball State",
+          "publisher": "gocards.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZLGWeFBltlNzRSeqMQkBtouJtEUUlBJGNbt5YWYfu_ke3KQxkAC_agzjSD9Q"
+        },
+        {
+          "url": "https://www.cbssports.com/watch/general/video/ncaaw-highlights-no-7-louisville-at-ball-state-1112",
+          "title": "NCAAW Highlights: No. 7 Louisville at Ball State (11/12) Stream of General Videos",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT13UKvOxfE0lNLJeKHUpsuJFJCDHAdwZzhzO6kSKpRc1nEnYQ9stGpqsndY4k"
         }
       ]
     }
