@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T08:42:34.579534Z",
+  "checked_at": "2026-11-16T09:01:39.557374Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "emma watson",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T08:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/es/news/ni66110819/?ref_=nwc_art_perm",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/emma-watson-trips-striped-heels-143048610.html",
+        "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEO3AR1v3jNzI1j1scd1v4zTuif7m1ei2ukCAo-UTkCG5BkUACf6kFeAZ-riI",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/es/news/ni66110819/?ref_=nwc_art_perm",
+          "title": "Emma Watson Makes Rare Appearance at GQ Men of the Year Party in Chic Little Black Dress",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEO3AR1v3jNzI1j1scd1v4zTuif7m1ei2ukCAo-UTkCG5BkUACf6kFeAZ-riI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/emma-watson-trips-striped-heels-143048610.html",
+          "title": "Emma Watson Trips in Striped Heels Outside GQ Party, Laughs Off the Fall",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4UAxLsUpP6kxbRaYVEwj4PAeEEeHHG_SUnalH9L73L6QU7s_TyagdgFh_lWI"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
+          "title": "Emma Watson suffers brutal fall outside splashy celebrity party at LA hot spot Chateau Marmont",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": null
+        }
+      ]
+    },
     {
       "query": "bangladesh vs south africa",
       "approx_searches": "2000+",
@@ -218,7 +253,7 @@
     },
     {
       "query": "colin farrell",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-16T07:40:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/film/2026/nov/16/emma-fogarty-colin-farrell-marathons-friendship-the-slightest-touch",
@@ -318,41 +353,6 @@
           "publisher": "La Tribuna (México)",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsL7OJOlhcESoZBkpWhObwYKDyFTb6hxHlzxYaLL-f8tswncWch5l1sPTuHfI"
-        }
-      ]
-    },
-    {
-      "query": "fitness",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T06:50:00Z",
-      "related_news_urls": [
-        "https://www.frontiersin.org/articles/10.3389/fpsyg.2026.1975784",
-        "https://guyanachronicle.com/2026/11/16/mom-grand-prix-promotes-fitness-health-awareness/",
-        "https://www.3wiresports.com/articles/2026/11/15/seb-coe-keeps-in-shape-by-running-on-the-treadmill-at-24-hour-fitness"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbDKRawRRBxGjN3KzSU19vSxHzImyqIg9sLun0gqBS4DD6mJSqB-El8f--06I",
-      "image_credit": "Frontiers",
-      "news": [
-        {
-          "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2026.1975784",
-          "title": "Experiences of pass-oriented fitness assessment and perceived barriers to regular physical activity among Chinese university students who did not meet fitness standards",
-          "publisher": "Frontiers",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbDKRawRRBxGjN3KzSU19vSxHzImyqIg9sLun0gqBS4DD6mJSqB-El8f--06I"
-        },
-        {
-          "url": "https://guyanachronicle.com/2026/11/16/mom-grand-prix-promotes-fitness-health-awareness/",
-          "title": "MoM Grand Prix promotes fitness, health awareness",
-          "publisher": "Guyana Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnfYW55vxVz4tnAolfgF_k0KUHSKendHL5cv-jcuxwUro8noQHVdWY8DjLalI"
-        },
-        {
-          "url": "https://www.3wiresports.com/articles/2026/11/15/seb-coe-keeps-in-shape-by-running-on-the-treadmill-at-24-hour-fitness",
-          "title": "Seb Coe keeps in shape by running on the treadmill ... at 24 Hour Fitness",
-          "publisher": "3 Wire Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAdltRT7GmoUyc-KCRsaNdJGi6QQf-br04JGoIi69h1j4JLGM2qsRG8c2KG7w"
         }
       ]
     }
