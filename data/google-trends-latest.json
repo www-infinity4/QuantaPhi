@@ -3,356 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T13:07:19.742433Z",
+  "checked_at": "2026-11-16T13:47:59.989757Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "dc studios leadership change gunn safran",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T12:50:00Z",
+      "query": "carlos alcaraz",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T13:30:00Z",
       "related_news_urls": [
-        "https://www.thewrap.com/creative-content/movies/dc-studios-why-james-gunn-peter-safran-fired-jeremy-latcham/",
-        "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
-        "https://www.bloomberg.com/opinion/articles/2026-11-12/skydance-can-t-afford-dc-s-cinematic-universe"
+        "https://espndeportes.espn.com/tenis/nota/_/id/17518539/atp-finals-2026-asi-esta-la-tabla-de-posiciones-del-round-robin-y-quienes-se-clasifican-a-semifinales",
+        "https://elpais.com/deportes/tenis/2026-11-16/carlos-alcaraz-frances-tiafoe-el-partido-de-las-atp-finals-en-vivo.html",
+        "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-alcaraz-reto-grandes-trofeos"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEIr2tvvIYgwTzbulJ_dgxAr6L1jt5ZGGzYrgVssLGlMY4wGRwfx5tGk8Ii04",
-      "image_credit": "TheWrap",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPlsZzBoI9pYsNJdTleX2tKcQY9-LjsHMpLrVpAm40I0XUDgXQgp9PZ0sgMA",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://www.thewrap.com/creative-content/movies/dc-studios-why-james-gunn-peter-safran-fired-jeremy-latcham/",
-          "title": "DC in Flux Again: Jeremy Latcham Takes Over James Gunn's Universe of Gods and Monsters | Analysis",
-          "publisher": "TheWrap",
+          "url": "https://espndeportes.espn.com/tenis/nota/_/id/17518539/atp-finals-2026-asi-esta-la-tabla-de-posiciones-del-round-robin-y-quienes-se-clasifican-a-semifinales",
+          "title": "ATP Finals 2026: así está la tabla de posiciones del Round Robin y quiénes se clasifican a semifinales",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEIr2tvvIYgwTzbulJ_dgxAr6L1jt5ZGGzYrgVssLGlMY4wGRwfx5tGk8Ii04"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPlsZzBoI9pYsNJdTleX2tKcQY9-LjsHMpLrVpAm40I0XUDgXQgp9PZ0sgMA"
         },
         {
-          "url": "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
-          "title": "DC Studios Shakeup: James Gunn & Peter Safran Out, Former Marvel Exec Jeremy Latcham In",
-          "publisher": "Deadline",
+          "url": "https://elpais.com/deportes/tenis/2026-11-16/carlos-alcaraz-frances-tiafoe-el-partido-de-las-atp-finals-en-vivo.html",
+          "title": "Carlos Alcaraz - Frances Tiafoe, el partido de las ATP Finals en vivo|Comienza el encuentro",
+          "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSzcpr9UcIHbbJP4UQYDE35qE5G568ZA5NTtOn4MDKeS03CjJCDbIVjqu7H8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDwxfwk6c0Du7XBr2r7bl9u0HFaAFkhFMzoeSf5mpQSQObWPQohVOLbjXycaQ"
         },
         {
-          "url": "https://www.bloomberg.com/opinion/articles/2026-11-12/skydance-can-t-afford-dc-s-cinematic-universe",
-          "title": "Skydance Can't Afford DC’s Cinematic Universe",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-alcaraz-reto-grandes-trofeos",
+          "title": "Alcaraz y el reto de las cinco grandes copas del tenis",
+          "publisher": "Nitto ATP Finals",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXG5L3ST02wG6v4nXxJNQWgRZ5X9k4BJ0EkMJDdhYXGGrzANEDFuNDDY4a0To"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3dEWGl11K4K6otkpdGatDsUrUyhpulk9zcaAp3fX1JD46HTcK7lMZtHWC5Ik"
         }
       ]
     },
     {
-      "query": "ethan hawke",
+      "query": "grammys 2026",
       "approx_searches": "200+",
-      "published_at": "2026-11-16T12:50:00Z",
+      "published_at": "2026-11-16T13:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/theater/stoppard-and-shakespeare-ethan-hawke-theater-for-a-new-audience.html",
-        "https://www.esquire.com/entertainment/tv/a74375701/tommy-lee-jones-the-lowdown-interview/",
-        "https://www.avclub.com/the-lowdown-recap-season-2-episode-6-leaving-and-coming-back"
+        "https://www.forbes.com/sites/hughmcintyre/2026/11/14/olivia-rodrigo-could-match-billie-eilishs-rare-grammy-feat/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTrcR-aiLhKB9jUQT3oGo7OFea0Vn6H3AXTQxt9my4DKL_-pIvSrSvlT4U2vk",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0TO6n99YbGskyME76sUw0LnKvmBTl2aDwBt46t7cpqgGuBrHVkDGpujBiB0",
+      "image_credit": "Forbes",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/16/theater/stoppard-and-shakespeare-ethan-hawke-theater-for-a-new-audience.html",
-          "title": "‘Tom Stoppard’s Shakespeare, A One-Night-Only Production",
-          "publisher": "The New York Times",
+          "url": "https://www.forbes.com/sites/hughmcintyre/2026/11/14/olivia-rodrigo-could-match-billie-eilishs-rare-grammy-feat/",
+          "title": "Olivia Rodrigo Could Match Billie Eilish’s Rare Grammy Feat",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTrcR-aiLhKB9jUQT3oGo7OFea0Vn6H3AXTQxt9my4DKL_-pIvSrSvlT4U2vk"
-        },
-        {
-          "url": "https://www.esquire.com/entertainment/tv/a74375701/tommy-lee-jones-the-lowdown-interview/",
-          "title": "Tommy Lee Jones Couldn’t Care Less About His Legacy",
-          "publisher": "Esquire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRppTLCyg8PNOfnD1Qv27r3YbQfPUHZC5tYX45KTf_0hNF8qZFaP_d5hND-I-Q"
-        },
-        {
-          "url": "https://www.avclub.com/the-lowdown-recap-season-2-episode-6-leaving-and-coming-back",
-          "title": "Lee finally reconnects with his dad on an emotional episode of The Lowdown",
-          "publisher": "A.V. Club",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6tdfbCZA7q7zOwIre8n0iG6F0Na9lAHDKdJrn8K5o8uLa125jST0GBER-rDs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0TO6n99YbGskyME76sUw0LnKvmBTl2aDwBt46t7cpqgGuBrHVkDGpujBiB0"
         }
       ]
     },
     {
-      "query": "tina simmons",
+      "query": "zimbabwe vs equatorial guinea",
       "approx_searches": "200+",
-      "published_at": "2026-11-16T12:50:00Z",
+      "published_at": "2026-11-16T13:30:00Z",
       "related_news_urls": [
-        "https://www.oxfordmail.co.uk/news/26731778.beloved-star-wars-batman-actress-dies-tributes-made/",
-        "https://www.thesun.co.uk/tvandshowbiz/41034465/hollywood-actress-dies-pals-tribute/",
-        "https://www.jedinews.com/film-music-tv/articles/tina-simmons-rebel-technician-in-return-of-the-jedi-has-died/"
+        "https://www.bbc.com/sport/football/live/cwzd69vng80jt",
+        "https://www.heraldonline.co.zw/warriors-in-do-or-die-2/",
+        "https://uk.sports.yahoo.com/news/reading-fcs-andy-rinomhota-helps-102126605.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-JFLOg5Ei_6mek2piEqoQwDF23eJj-1atJIJfYqYA8aSYNWR-ljihMhkxKMg",
-      "image_credit": "Oxford Mail",
-      "news": [
-        {
-          "url": "https://www.oxfordmail.co.uk/news/26731778.beloved-star-wars-batman-actress-dies-tributes-made/",
-          "title": "Beloved Star Wars and Batman actress dies as tributes pour in",
-          "publisher": "Oxford Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-JFLOg5Ei_6mek2piEqoQwDF23eJj-1atJIJfYqYA8aSYNWR-ljihMhkxKMg"
-        },
-        {
-          "url": "https://www.thesun.co.uk/tvandshowbiz/41034465/hollywood-actress-dies-pals-tribute/",
-          "title": "Star Wars, James Bond & Batman actress with dozens of Hollywood roles dies - as pals pay touching tribute",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpFnqaOvOdXZ1_fIkjUvlDxnfQBs3YhHZbSlc-VnNOdUXWkvU3cYwmDCSb9Gg"
-        },
-        {
-          "url": "https://www.jedinews.com/film-music-tv/articles/tina-simmons-rebel-technician-in-return-of-the-jedi-has-died/",
-          "title": "Tina Simmons, Rebel Technician in Return of the Jedi, Has Died",
-          "publisher": "Jedi News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUNFh9XGBME2YsbOgIfTabtMynOqOkXe8DAdICiedL4eama_0NLNo7WZM3DME"
-        }
-      ]
-    },
-    {
-      "query": "royal news",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T12:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/c5lyk0e3n1jxo",
-        "https://www.reuters.com/world/uk/uks-prince-william-princess-kate-arrive-mumbai-three-day-trip-2026-11-16/",
-        "https://people.com/kate-middleton-prince-william-arrive-india-first-joint-tour-4-years-12252916"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpcrdrXiKMw6lyGyfmfHyvygpkGojcBZFp4Zlq8ZiIMFJfkIGku6LhjxOQaDk",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/news/articles/c5lyk0e3n1jxo",
-          "title": "Prince and Princess of Wales in India ahead of meeting with Modi",
+          "url": "https://www.bbc.com/sport/football/live/cwzd69vng80jt",
+          "title": "Equatorial Guinea vs Zimbabwe: Africa Cup of Nations Qualification stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpcrdrXiKMw6lyGyfmfHyvygpkGojcBZFp4Zlq8ZiIMFJfkIGku6LhjxOQaDk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://www.reuters.com/world/uk/uks-prince-william-princess-kate-arrive-mumbai-three-day-trip-2026-11-16/",
-          "title": "UK's Prince William, Princess Kate begin India visit with street cricket",
+          "url": "https://www.heraldonline.co.zw/warriors-in-do-or-die-2/",
+          "title": "Warriors in do-or-die",
+          "publisher": "Herald.co.zw",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-bTBxBGkIzyL0-1LwFNDcXj-NklmOihcvD129Jnjp7Y6pBDKHDUwjr8a28eA"
+        },
+        {
+          "url": "https://uk.sports.yahoo.com/news/reading-fcs-andy-rinomhota-helps-102126605.html",
+          "title": "Reading FC's Andy Rinomhota helps keep Zimbabwe's AFCON hopes alive",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFwU0oIjj30IWY36vyS4FEGZB7uqIzRZcgkLgQVztdghHi5iIhg6hbWJYN4T0"
+        }
+      ]
+    },
+    {
+      "query": "what is the latest news on the strait of hormuz naval mine explosions?",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T13:30:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
+        "https://www.telegraph.co.uk/world-news/2026/11/15/iran-attacks-us-military-base-in-bahrain/",
+        "https://www.iranintl.com/en/liveblog/202611143682"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d6xwXxq7ws_uzRD6DmvOPdxYVDFlVQeLdf4wutbUPZysumY3anxpqc6CG60",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
+          "title": "Iran's navy says three tankers on fire after hitting mines in Hormuz",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzHU8T7aas522Ne8UPl3ekxV8nCx9MZuN76FijZL9kvROCKsmMBvMC-e-25Yw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d6xwXxq7ws_uzRD6DmvOPdxYVDFlVQeLdf4wutbUPZysumY3anxpqc6CG60"
         },
         {
-          "url": "https://people.com/kate-middleton-prince-william-arrive-india-first-joint-tour-4-years-12252916",
-          "title": "Kate Middleton and Prince William Arrive in India for First Joint Overseas Royal Tour in 4 Years",
-          "publisher": "People.com",
+          "url": "https://www.telegraph.co.uk/world-news/2026/11/15/iran-attacks-us-military-base-in-bahrain/",
+          "title": "Oil supertanker ‘sinks after hitting mine’ in Strait of Hormuz",
+          "publisher": "The Telegraph",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG6ErvGss8t7FLlKN5OtBPYiczmNBE-9u5pi-al83RBA9_qTSgyoDhwQMUSdA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbt8rax3MISsIqf48kb8hMNgPMBaMoz1XwkE4zJ-BibD_URowByNifMoDm37A"
+        },
+        {
+          "url": "https://www.iranintl.com/en/liveblog/202611143682",
+          "title": "Live - Iran says it has no disputes with neighbors as Hormuz tanker incidents continue",
+          "publisher": "Iran International",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUsu7PtBIQGqZVaE974S_NE5WGir0RX3mvtuGyp2MJp7Q59otphlB0jPzlwKw"
         }
       ]
     },
     {
-      "query": "gerard depardieu",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T12:40:00Z",
+      "query": "frances tiafoe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T13:20:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/movies/gerard-depardieu-apology-appeal-withdrawal.html",
-        "https://deadline.com/2026/11/gerard-depardieu-drops-appeal-sexual-assault-verdict-1237224924/",
-        "https://www.hollywoodreporter.com/movies/movie-news/gerard-depardieu-drops-appeal-in-sexual-assault-conviction-1236756092/"
+        "https://www.theguardian.com/sport/live/2026/nov/16/carlos-alcaraz-v-frances-tiafoe-atp-finals-tennis-group-stage-live",
+        "https://www.reutersconnect.com/item/atp-finals/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxMTAzNUo",
+        "https://tennisuptodate.com/atp/live-atp-finals-carlos-alcaraz-opens-account-in-turin-against-debutant-frances-tiafoe"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSO9jqAwG6IsjPONr4CjCY8RMgJOu4nX5VOlcAke46Jmk8E5KytgnLt9JYmeBQ",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjDK1npKEV6dK8iXy3Di7KodAmLPg69Yampos8toLRVAf4uZxuC-ok7Ns7H94",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/16/carlos-alcaraz-v-frances-tiafoe-atp-finals-tennis-group-stage-live",
+          "title": "Carlos Alcaraz v Frances Tiafoe: ATP Finals tennis group stage – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjDK1npKEV6dK8iXy3Di7KodAmLPg69Yampos8toLRVAf4uZxuC-ok7Ns7H94"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/atp-finals/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxMTAzNUo",
+          "title": "ATP Finals",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeonUa4b-VvzI-nCVVKHTMu95bIxIjEvVE_E-FUMuYtLj4bfyGfNY-_y1JyYE"
+        },
+        {
+          "url": "https://tennisuptodate.com/atp/live-atp-finals-carlos-alcaraz-opens-account-in-turin-against-debutant-frances-tiafoe",
+          "title": "LIVE ATP Finals | Carlos Alcaraz opens account in Turin against debutant Frances Tiafoe",
+          "publisher": "Tennisuptodate.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-xw19m_R5qh3EA1S1ht-GOxgMP037aFfGI7XNdi0M_pdwdOK-Kw9V-Z4gDJ0"
+        }
+      ]
+    },
+    {
+      "query": "gma deals and steals",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T13:20:00Z",
+      "related_news_urls": [
+        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-best-oprahs-favorite-things-138117550",
+        "https://shopping.yahoo.com/gift-ideas/article/oprahs-favorite-things-2026-holiday-guide-is-live--these-are-the-best-gifts-under-100-195208438.html",
+        "https://people.com/oprahs-favorite-things-2026-12187539"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoHiqEpFIKzzhhNrzLFkjx3xDcqhv5ebjBKjoib3T-GskzWIdWGcJau_sslk",
+      "image_credit": "Good Morning America",
+      "news": [
+        {
+          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-best-oprahs-favorite-things-138117550",
+          "title": "'GMA' Deals & Steals on Best of Oprah's Favorite Things",
+          "publisher": "Good Morning America",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoHiqEpFIKzzhhNrzLFkjx3xDcqhv5ebjBKjoib3T-GskzWIdWGcJau_sslk"
+        },
+        {
+          "url": "https://shopping.yahoo.com/gift-ideas/article/oprahs-favorite-things-2026-holiday-guide-is-live--these-are-the-best-gifts-under-100-195208438.html",
+          "title": "Oprah’s Favorite Things 2026 holiday guide is live — these are the best gifts under $100",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7TxGyURoqHevgvsRAIvWEY4rJIZt15Mo5MnBFsFW9m09r358HYtnhdWVbdTE"
+        },
+        {
+          "url": "https://people.com/oprahs-favorite-things-2026-12187539",
+          "title": "It’s Time: Oprah’s Favorite Things 2026 Has Arrived, and It’s Packed with Impressive Gift Ideas from $13",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxoZuMoy-h_b7zHlrOQsgc1CjeTGJt09gjqr3ez_oFjFyCOjtNkFBtcAw2eU"
+        }
+      ]
+    },
+    {
+      "query": "health",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T13:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/16/world/american-global-health-aid-isnt-dead-its-changing.html",
+        "https://www.kff.org/global-health-policy/the-advancing-global-health-annual-program-statement-agh-aps-mechanism-supplementing-the-america-first-mous/",
+        "https://www.benefitspro.com/2026/11/09/global-health-aid-cuts-threaten-us-employers-hub/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNzGDqAHtgIJ4FlIvmT5ZmF_yaTVKO2zubT932ycHyUjcLANAoEh5sNULToZM",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/16/movies/gerard-depardieu-apology-appeal-withdrawal.html",
-          "title": "Gérard Depardieu Withdraws Sexual Assault Appeal, Apologizing to Victims",
+          "url": "https://www.nytimes.com/2026/11/16/world/american-global-health-aid-isnt-dead-its-changing.html",
+          "title": "American Global Health Aid Isn’t Dead. It’s Changing.",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSO9jqAwG6IsjPONr4CjCY8RMgJOu4nX5VOlcAke46Jmk8E5KytgnLt9JYmeBQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNzGDqAHtgIJ4FlIvmT5ZmF_yaTVKO2zubT932ycHyUjcLANAoEh5sNULToZM"
         },
         {
-          "url": "https://deadline.com/2026/11/gerard-depardieu-drops-appeal-sexual-assault-verdict-1237224924/",
-          "title": "Gérard Depardieu Drops Appeal Against Sexual Assault Verdict & Acknowledges Guilt In Statement Titled ‘I Hear’",
-          "publisher": "Deadline",
+          "url": "https://www.kff.org/global-health-policy/the-advancing-global-health-annual-program-statement-agh-aps-mechanism-supplementing-the-america-first-mous/",
+          "title": "The Advancing Global Health Annual Program Statement (AGH/APS) Mechanism: Supplementing the America First MOUs",
+          "publisher": "KFF",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8yT7CGxddvoQbOaAODJZu27QuNx6wLcEngVKBXF1hzdfOZ1d02VVU0BK-SdA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwI5VsvILT1n-pA8dNGQmUyKTLSPa5dOD8p7ykop2XdFoUvN1lEBvyLeNtwHg"
         },
         {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/gerard-depardieu-drops-appeal-in-sexual-assault-conviction-1236756092/",
-          "title": "Gerard Depardieu Drops Appeal Against Sexual Assault Conviction, Admits Guilt",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.benefitspro.com/2026/11/09/global-health-aid-cuts-threaten-us-employers-hub/",
+          "title": "Global health aid cuts threaten U.S. employers: Hub",
+          "publisher": "BenefitsPRO",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsZbQLuTOMYgmB87T3lQWTr_gRq21z6ttZrtXXOaYD-TMa0HuFxD6svHOKiFA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ3z7FHpXPn6hXxEC2EP99nszYCaiIDDPJBrpcBJf8x9cgU9KAdSHUn3eQV-s"
         }
       ]
     },
     {
-      "query": "namibia vs cameroon",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T12:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cx05436lm54mt",
-        "https://www.vavel.com/en/data/cameroun/fixtures/",
-        "https://en.africatopsports.com/afcon-2027-q-namibia-coach-collin-benjamin-set-to-miss-clash-against-cameroon/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cx05436lm54mt",
-          "title": "Cameroon vs Namibia: Africa Cup of Nations Qualification stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.vavel.com/en/data/cameroun/fixtures/",
-          "title": "Cameroun fixtures 2027: next matches and kick-off times",
-          "publisher": "VAVEL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAz0HVkLdi5EadvOVb1a5k9wLbRa39jyehLPTXCUqUeDCd6-WatpZjQlZ-co4"
-        },
-        {
-          "url": "https://en.africatopsports.com/afcon-2027-q-namibia-coach-collin-benjamin-set-to-miss-clash-against-cameroon/",
-          "title": "AFCON 2027 (Q): Namibia coach Collin Benjamin set to miss clash against Cameroon",
-          "publisher": "Africa Top Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5026W_iGBGCJ_6_Vw-m4XZE_-tVYxE4EvOmVnq5Z3qVE5b5_EoARnCMRrQjs"
-        }
-      ]
-    },
-    {
-      "query": "ionq stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T12:30:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/article/4968458-ionq-im-losing-confidence-in-the-story-downgrade",
-        "https://stockstory.org/us/stocks/nasdaq/qubt/news/why-up-down/quantum-computing-rigetti-computing-terawulf-and-xanadu-quantum-technologies-shares-are-falling-what-you-need-to-know",
-        "https://finance.biggo.com/news/f27c9ca0-5962-46ed-8c08-e5c1ad9fd8d2"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiVVDG3e3r-yW2lAidNmfsYttH6dlmQ5xKg5rfRootEME7ECT1uPGtgc30X7w",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/article/4968458-ionq-im-losing-confidence-in-the-story-downgrade",
-          "title": "IonQ: I'm Losing Confidence In The Story (Rating Downgrade)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiVVDG3e3r-yW2lAidNmfsYttH6dlmQ5xKg5rfRootEME7ECT1uPGtgc30X7w"
-        },
-        {
-          "url": "https://stockstory.org/us/stocks/nasdaq/qubt/news/why-up-down/quantum-computing-rigetti-computing-terawulf-and-xanadu-quantum-technologies-shares-are-falling-what-you-need-to-know",
-          "title": "Quantum Computing, Rigetti Computing, TeraWulf, and Xanadu Quantum Technologies shares are falling, what you need to know",
-          "publisher": "StockStory",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPyqvx8XOXSVu_YMSYORI95CBcGeLNLhX-Sn20I--KewaI2hkXzlY8TXdsj1k"
-        },
-        {
-          "url": "https://finance.biggo.com/news/f27c9ca0-5962-46ed-8c08-e5c1ad9fd8d2",
-          "title": "Quantum Stocks Retreat as Hot CPI, Nvidia Shakeup and Mixed Earnings Hit Sector",
-          "publisher": "BigGo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUN1sJTJ8p9ioXHf28Zs9YjN1LxFTkpjs-SVkcq8LHxw8RQDEYX7C6BXUf20Q"
-        }
-      ]
-    },
-    {
-      "query": "willie geist",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T12:20:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/tv/tv-news/willie-geist-leaves-morning-joe-nbc-today-show-role-expanded-1236755775/",
-        "https://pagesix.com/2026/11/16/entertainment/today-star-willie-geist-announces-major-new-career-move/",
-        "https://www.latimes.com/entertainment-arts/business/story/2026-11-16/morning-joe-co-anchor-willie-geist-is-leaving-ms-now"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHvlERv8vVWesDDlfDMVrugjamecMDI3g5dj78eIL6qvXd2uU2hxd0kj8tBk",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/willie-geist-leaves-morning-joe-nbc-today-show-role-expanded-1236755775/",
-          "title": "Willie Geist to Exit MS NOW’s ‘Morning Joe’ for Expanded Role at NBC’s ‘Today’ Show",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHvlERv8vVWesDDlfDMVrugjamecMDI3g5dj78eIL6qvXd2uU2hxd0kj8tBk"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/16/entertainment/today-star-willie-geist-announces-major-new-career-move/",
-          "title": "‘Today’ star Willie Geist announces major new career move",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSIa8eHtvKP4oFXbT5NCPW1Rx5716tpmtFRMCmjfOjqNi_1j5pAmJnO46I70U"
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-16/morning-joe-co-anchor-willie-geist-is-leaving-ms-now",
-          "title": "‘Morning Joe’ co-anchor Willie Geist is leaving MS NOW",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWafQB7npLjbWjdMeOc3PLRndPomj23xdzOrhDkOE-B9sCGgsf-qf_7wKxJKY"
-        }
-      ]
-    },
-    {
-      "query": "arch manning postgame celebration viral video",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T12:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/texas-arch-manning-becomes-college-015235607.html",
-        "https://www.on3.com/news/arch-manning-came-through-against-lsu-but-how-far-can-he-take-texas/",
-        "https://www.hitc.com/no-way-ryan-clark-sounds-off-arch-mannings-chances-of-being-a-first-round-pick-despite-game-winning-play-vs-lsu/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFZX_5bKxu8XUXT5kzva7rhdJ23t-ImQyB0bKy-GEgA-sLYDPgdp4xuOjmwe8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/texas-arch-manning-becomes-college-015235607.html",
-          "title": "Texas' Arch Manning Becomes College Football's Laughingstock Over Viral Post Game Antics",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFZX_5bKxu8XUXT5kzva7rhdJ23t-ImQyB0bKy-GEgA-sLYDPgdp4xuOjmwe8"
-        },
-        {
-          "url": "https://www.on3.com/news/arch-manning-came-through-against-lsu-but-how-far-can-he-take-texas/",
-          "title": "Arch Manning came through against LSU, but how far can he take Texas?",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRycJzJvAEoFZHslmNSE00y3E6xB3JzIjBA11MDgomZPv0Mm963RSpCM65O6vI"
-        },
-        {
-          "url": "https://www.hitc.com/no-way-ryan-clark-sounds-off-arch-mannings-chances-of-being-a-first-round-pick-despite-game-winning-play-vs-lsu/",
-          "title": "‘No way’ - Ryan Clark sounds off Arch Manning’s chances of being a first-round pick despite game-winning play vs. LSU",
-          "publisher": "HITC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3dq_SE1K4PiYsduKG3oUjgBAbobLnr-OjY57yuWDVJre1fU-yZs2JKfGDwA"
-        }
-      ]
-    },
-    {
-      "query": "sudan vs senegal",
+      "query": "amy poehler",
       "approx_searches": "500+",
-      "published_at": "2026-11-16T12:20:00Z",
+      "published_at": "2026-11-16T13:10:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/crd93172z4vjt",
-        "https://www.cafonline.com/afcon2025/news/senegal-cote-divoire-cameroon-and-benin-strengthen-afcon-qualification-bids/",
-        "https://www.flashscore.com/news/last-of-my-issues-kwesi-appiah-not-afraid-of-sack-as-sudan-face-senegal/4nEguZH5/"
+        "https://ew.com/amy-poehler-reveals-she-served-oprah-winfrey-before-fame-12244218",
+        "https://people.com/amy-poehler-reveals-a-lister-she-waited-on-while-working-as-a-server-before-snl-12208323",
+        "https://www.thenews.com.pk/latest/1422990-amy-poehler-shares-shocking-story-about-improvising"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKFxKRF57IDI9dVqgyUbhKnQJM206JqV1SbNt1JwQdCZUBNJi5Olgb1YzxiKs",
+      "image_credit": "Entertainment Weekly",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/crd93172z4vjt",
-          "title": "Senegal vs Sudan: Africa Cup of Nations Qualification stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://ew.com/amy-poehler-reveals-she-served-oprah-winfrey-before-fame-12244218",
+          "title": "Amy Poehler reveals she once waited on Oprah Winfrey in Chicago: ‘I bet she doesn’t remember it’",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKFxKRF57IDI9dVqgyUbhKnQJM206JqV1SbNt1JwQdCZUBNJi5Olgb1YzxiKs"
         },
         {
-          "url": "https://www.cafonline.com/afcon2025/news/senegal-cote-divoire-cameroon-and-benin-strengthen-afcon-qualification-bids/",
-          "title": "Senegal, Côte d'Ivoire, Cameroon and Benin strengthen AFCON qualification bids",
-          "publisher": "CAFOnline.com",
+          "url": "https://people.com/amy-poehler-reveals-a-lister-she-waited-on-while-working-as-a-server-before-snl-12208323",
+          "title": "Amy Poehler Reveals the A-Lister She Waited on While Working as a Server Before Fame: ‘She Doesn’t Remember It’",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdfuwX1rVt53ris3TOb9310w1-dBzEbGb-wLfutCS0AFJDePzisGHorPihzw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLLXB9hMkVU_6IHBnvpZj4ENWzlwrwEP9OcKLK_MAF-MIBuMeHmP5-yrDdxic"
         },
         {
-          "url": "https://www.flashscore.com/news/last-of-my-issues-kwesi-appiah-not-afraid-of-sack-as-sudan-face-senegal/4nEguZH5/",
-          "title": "'Last of my issues': Kwesi Appiah not afraid of sack as Sudan face Senegal",
-          "publisher": "Flashscore.com",
+          "url": "https://www.thenews.com.pk/latest/1422990-amy-poehler-shares-shocking-story-about-improvising",
+          "title": "Amy Poehler shares shocking story about 'improvising'",
+          "publisher": "The News International",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj4aN9mPATWAJ7BwobZ4d2TB8qrUayFCakTvqCBduXHsxO1M2j6oMxO0n7FKc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCRIKvz07ZwOoQcYue7ea9tGotQIGlInthHSs3Fm8T73X0ShvGZEehK_NMku8"
+        }
+      ]
+    },
+    {
+      "query": "holmes documentary",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-16T13:10:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/entertainment/movies/2026/11/15/billy-evans-discusses-nathan-fielder-nude-scene-you-can-see-everything/",
+        "https://people.com/elizabeth-holmes-partner-billy-evans-speaks-out-for-the-first-time-since-you-can-see-everything-documentary-12252880",
+        "https://www.cbsnews.com/news/billy-evans-on-you-can-see-everything-elizabeth-holmes/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToQYS3NCTNgXQbFYzXxrz3wWAyY8t4QLIyJkvkce-epdjxrZhD0-bHALg01K8",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/entertainment/movies/2026/11/15/billy-evans-discusses-nathan-fielder-nude-scene-you-can-see-everything/",
+          "title": "Elizabeth Holmes’s partner says he hasn’t spoken to Nathan Fielder since seeing film",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToQYS3NCTNgXQbFYzXxrz3wWAyY8t4QLIyJkvkce-epdjxrZhD0-bHALg01K8"
+        },
+        {
+          "url": "https://people.com/elizabeth-holmes-partner-billy-evans-speaks-out-for-the-first-time-since-you-can-see-everything-documentary-12252880",
+          "title": "Elizabeth Holmes’ Partner Billy Evans Speaks Out About ‘You Can See Everything’ for First Time",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ58IToNE3LoHnyKDoJ_gYv_4JcFYYGzjJZwQCYLm1onSxGMW_GNeY-SfMrZoA"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/billy-evans-on-you-can-see-everything-elizabeth-holmes/",
+          "title": "Billy Evans, in first interview, tells his side of \"You Can See Everything,\" its portrayal of Elizabeth Holmes",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCpn_M5w7MFMB7t0KoqgB7McjFmYjKsaAqdfy8921VthdXKOzuSUqg3UMwcJI"
+        }
+      ]
+    },
+    {
+      "query": "prince harry, duke of sussex",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T13:00:00Z",
+      "related_news_urls": [
+        "https://www.news24.com.au/lifestyle/celebrity-life/prince-harrys-friend-reveals-how-the-duke-really-feels-about-king-charles-sandringham-christmas-snub/news-story/5933e16c14058627ef546bff8718aaf8",
+        "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-harry-meghan-reportedly-not-010017153.html",
+        "https://www.dailystar.co.uk/news/latest-news/harry-meghan-markle-snubbed-king-37878766"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8TLhnMXcO5JO4SRiJJvxE9V6xKyCMcuHenXLwyehfnqAqtpuh2GcgCa34MgU",
+      "image_credit": "News24",
+      "news": [
+        {
+          "url": "https://www.news24.com.au/lifestyle/celebrity-life/prince-harrys-friend-reveals-how-the-duke-really-feels-about-king-charles-sandringham-christmas-snub/news-story/5933e16c14058627ef546bff8718aaf8",
+          "title": "Harry’s friend reveals how he really feels about Sandringham Christmas snub",
+          "publisher": "News24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8TLhnMXcO5JO4SRiJJvxE9V6xKyCMcuHenXLwyehfnqAqtpuh2GcgCa34MgU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-harry-meghan-reportedly-not-010017153.html",
+          "title": "Prince Harry and Meghan Reportedly Not Invited to King Charles’ Birthday or Christmas Despite U.K. Return",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThZrqa_KKVUzZ184JMn6DF1gciXxOoLhEYD03_CGiMYLHP8FO0IJnBPCU2e30"
+        },
+        {
+          "url": "https://www.dailystar.co.uk/news/latest-news/harry-meghan-markle-snubbed-king-37878766",
+          "title": "Harry and Meghan Markle 'snubbed' from King Charles' 78th birthday celebrations",
+          "publisher": "Daily Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ21PS2ZebEgyza4M3nbilNFCSKVCnqTa9hky3oryGtX12vW1ZUwpD9hkcyjoE"
         }
       ]
     }
