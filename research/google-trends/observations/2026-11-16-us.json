@@ -3,20 +3,168 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T20:01:29.012643Z",
+  "checked_at": "2026-11-16T20:31:06.719012Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "daniil medvedev",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T20:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/live-blogs/medvedev-vs-cobolli-live-updates-atp-finals-2026-score-result/HiIrMbf2qtAu/",
+        "https://www.sportsbettingdime.com/news/tennis/medvedev-vs-cobolli-expert-picks-best-bets-turin/",
+        "https://www.oddschecker.com/us/picks-parlays/tennis/20261116-daniil-medvedev-vs-flavio-cobolli-prediction-betting-pick-latest-atp-finals-odds-on-monday-november-16th"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdZftXUAAb1a213OPtiJBLe3VOTl-qpGxdefIKp_Bcvrp-Olsui3-V_-9GGfE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/medvedev-vs-cobolli-live-updates-atp-finals-2026-score-result/HiIrMbf2qtAu/",
+          "title": "Medvedev vs. Cobolli live updates: ATP Finals 2026 latest with night session match underway",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdZftXUAAb1a213OPtiJBLe3VOTl-qpGxdefIKp_Bcvrp-Olsui3-V_-9GGfE"
+        },
+        {
+          "url": "https://www.sportsbettingdime.com/news/tennis/medvedev-vs-cobolli-expert-picks-best-bets-turin/",
+          "title": "Medvedev vs Cobolli Expert Picks & Best Bets for Turin (Nov 16)",
+          "publisher": "Sports Betting Dime",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSTt1aKwBRH7FfnRovSaOz0TiIw6noqrnStRV_7lDKZZoF5Z2zXAHWuFO8RUc"
+        },
+        {
+          "url": "https://www.oddschecker.com/us/picks-parlays/tennis/20261116-daniil-medvedev-vs-flavio-cobolli-prediction-betting-pick-latest-atp-finals-odds-on-monday-november-16th",
+          "title": "Daniil Medvedev vs. Flavio Cobolli Prediction, Betting Pick, Latest ATP Finals Odds on Monday, November 16th",
+          "publisher": "Oddschecker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPy5ec-3rig4GkBjQMg-fClLFZoaXVFDEDO0iYqoOglLW6aYRf_pTdPzouhYg"
+        }
+      ]
+    },
+    {
+      "query": "uefa nations league schedule",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T20:10:00Z",
+      "related_news_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02ab-22096ba64f4d-f179d6d05013-1000--nations-league-quarter-finals-who-is-through-who-can-joi/",
+        "https://www.espn.com/soccer/story/_/id/50472529/england-nations-league-permutations",
+        "https://www.nbcsports.com/soccer/news/how-does-uefa-nations-league-quarterfinal-draw-work-when-is-it-who-are-the-favorites-who-has-qualified"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRM6J8utLjeOlRcprpl0elovFS51JocDH-9VAouODKY4cRrWPjXMovpX6yXPw",
+      "image_credit": "UEFA.com",
+      "news": [
+        {
+          "url": "https://www.uefa.com/uefanationsleague/news/02ab-22096ba64f4d-f179d6d05013-1000--nations-league-quarter-finals-who-is-through-who-can-joi/",
+          "title": "Nations League quarter-finals: Who is through? Who can join them? What is the state of play in each League A group?",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRM6J8utLjeOlRcprpl0elovFS51JocDH-9VAouODKY4cRrWPjXMovpX6yXPw"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50472529/england-nations-league-permutations",
+          "title": "England Nations League permutations: What they need vs. Spain and why it matters",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStNv8uGfLF_DpY3Iko1kz2PeyFWPk3SnEUcFqB9XLkA18Fbe-t2pIdgpRAoPw"
+        },
+        {
+          "url": "https://www.nbcsports.com/soccer/news/how-does-uefa-nations-league-quarterfinal-draw-work-when-is-it-who-are-the-favorites-who-has-qualified",
+          "title": "How does UEFA Nations League quarterfinal draw work? When is it? Who are the favorites? Who has qualified?",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpz32eVNpOfifDNZBnB_A5m-G_KZ3iIp-BsfWvgvgH9a5pNFKIkl9Blq4dxug"
+        }
+      ]
+    },
+    {
+      "query": "brajan gruda",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T20:00:00Z",
+      "related_news_urls": [
+        "https://www.fussballtransfers.com/a5476309103540158436-klares-votum-gruda-einer-fuer-die-bayern",
+        "https://sportbild.bild.de/fussball/1-bundesliga/marcel-reif-adelt-star-klopp-star-nach-gala-gegen-serbien-6af854f5389d31d8c8a803b7",
+        "https://www.abendzeitung-muenchen.de/sport/fcbayern/bei-klopp-hat-er-die-nase-vor-karl-dieses-dfb-juwel-hat-der-fc-bayern-schon-laenger-im-blick-art-1173534"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH1qqMWagO_ProPHzsMYMVZgxu3nzWmVVz7qsp9LFDCE3dzunmVvQ3tiTeQkU",
+      "image_credit": "Fussball Transfers",
+      "news": [
+        {
+          "url": "https://www.fussballtransfers.com/a5476309103540158436-klares-votum-gruda-einer-fuer-die-bayern",
+          "title": "Klares Votum: Gruda einer für die Bayern",
+          "publisher": "Fussball Transfers",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH1qqMWagO_ProPHzsMYMVZgxu3nzWmVVz7qsp9LFDCE3dzunmVvQ3tiTeQkU"
+        },
+        {
+          "url": "https://sportbild.bild.de/fussball/1-bundesliga/marcel-reif-adelt-star-klopp-star-nach-gala-gegen-serbien-6af854f5389d31d8c8a803b7",
+          "title": "Marcel Reif adelt Star Klopp-Star nach Gala gegen Serbien",
+          "publisher": "Sport Bild",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSP4QMVx1jBvUsuj0J65ynsJl-UOq6xEPbuc1haL3wDsT2fheWRdDMbHa8OAc"
+        },
+        {
+          "url": "https://www.abendzeitung-muenchen.de/sport/fcbayern/bei-klopp-hat-er-die-nase-vor-karl-dieses-dfb-juwel-hat-der-fc-bayern-schon-laenger-im-blick-art-1173534",
+          "title": "Bei Klopp hat er die Nase vor Karl: Dieses DFB-Juwel hat der FC Bayern schon länger im Blick",
+          "publisher": "Abendzeitung München",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRMa0S0kItGGOSd4Vz5bQ4Pfw78APVicldHtferl1qG_pHv57T7NBlAjYYdJ0"
+        }
+      ]
+    },
+    {
+      "query": "aj brown patriots trade analysis",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T19:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/patriots-j-brown-draws-harsh-194637369.html",
+        "https://www.crossingbroad.com/news/eagles/safe-to-say-the-eagles-won-the-a-j-brown-trade/",
+        "https://www.si.com/onsi/fantasy/trade-analysis/fantasy-football-buy-sell-hold-debate-aj-brown-injury"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC3n8qB9cU8b3FcPdyel5GaHj6vWPQlZihl00xj50bGuRHmN04Nohx6JnWbvk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/patriots-j-brown-draws-harsh-194637369.html",
+          "title": "Patriots’ A.J. Brown Draws Harsh Verdict From Legendary Pass Catcher",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC3n8qB9cU8b3FcPdyel5GaHj6vWPQlZihl00xj50bGuRHmN04Nohx6JnWbvk"
+        },
+        {
+          "url": "https://www.crossingbroad.com/news/eagles/safe-to-say-the-eagles-won-the-a-j-brown-trade/",
+          "title": "Safe to Say the Eagles Won the A.J. Brown Trade",
+          "publisher": "Crossing Broad",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp04M5Wkzdz5I_3t_CQW_HCHUSvy-QFkth7O7qthjrqHB-P5gxVDVmfkSQvzs"
+        },
+        {
+          "url": "https://www.si.com/onsi/fantasy/trade-analysis/fantasy-football-buy-sell-hold-debate-aj-brown-injury",
+          "title": "Fantasy Football Buy, Sell or Hold Debate: Is It Time to Move On From A.J. Brown After Another Injury?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlhYW2JEVRp5wSdcNgmNZ-7FNN9OewWCGvnNYpfTXteeUjjk8RLnW2R3SWUas"
+        }
+      ]
+    },
+    {
       "query": "cuba vs grenada",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-16T19:40:00Z",
       "related_news_urls": [
+        "https://www.espn.com/soccer/match/_/gameId/401929707",
         "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-cuba-v-grenada/blt23264358af0a6713",
         "https://www.thestatszone.com/cuba-vs-grenada-preview-prediction-2026-27-concacaf-nations-league-239172"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8fvTOpZAENYGRFXBtv8xlcTxW6nVuOr5nS27GFikTyAAP0Z3SGSEBdJ5mjH8",
-      "image_credit": "Goal.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz40k4isKkDbOeyoddx8Gg9xsC6tqw6_FGbjzEsKE9J6LHBEop5fTyOwY-bC0",
+      "image_credit": "ESPN",
       "news": [
+        {
+          "url": "https://www.espn.com/soccer/match/_/gameId/401929707",
+          "title": "Cuba vs. Grenada (Nov 16, 2026) Live Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz40k4isKkDbOeyoddx8Gg9xsC6tqw6_FGbjzEsKE9J6LHBEop5fTyOwY-bC0"
+        },
         {
           "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-cuba-v-grenada/blt23264358af0a6713",
           "title": "Cuba vs Grenada live stream, TV channel and kick-off time | CONCACAF Nations League",
@@ -69,24 +217,52 @@
       ]
     },
     {
+      "query": "north macedonia vs slovenia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T19:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/crq5vd9nz3d2t",
+        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3Nwb3J0c2l2by5jb20vYm9zcy9uZXcvYS54bWwiLz48L2tycGFubz4=&id=video-slovenija-severna-makedonija-lie-stm-sl-media1031",
+        "https://www.football.com/gh/news/tag/aljosa%2520matko"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/crq5vd9nz3d2t",
+          "title": "North Macedonia vs Slovenia: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3Nwb3J0c2l2by5jb20vYm9zcy9uZXcvYS54bWwiLz48L2tycGFubz4=&id=video-slovenija-severna-makedonija-lie-stm-sl-media1031",
+          "title": "(+GLEJ>V ŽIVO!!) Slovenija nogomet danes v živo na spletu 16. november 2026",
+          "publisher": "日本取引所グループ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0CDxvzUd6YIN6mcI4XMaS8aomBw4JaBiFctmlfISF6dU2BcrSgFaOvsn3cDU"
+        },
+        {
+          "url": "https://www.football.com/gh/news/tag/aljosa%2520matko",
+          "title": "aljosa%20matko",
+          "publisher": "Football.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8bsovFUKGyBchjKwpNimFX1JfhijebTw-RNfN580ZVjwDcTA-c06OUkJknvw"
+        }
+      ]
+    },
+    {
       "query": "guyana vs puerto rico",
       "approx_searches": "10000+",
       "published_at": "2026-11-16T19:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50502997/game-highlights",
         "https://www.espn.com/mens-college-basketball/game/_/gameId/401909525/marquette-missouri",
-        "https://www.espn.com/college-football/boxscore/_/gameId/401860914"
+        "https://www.espn.com/college-football/boxscore/_/gameId/401860914",
+        "https://www.espn.com/mens-college-basketball/game?gameId=401909774"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTusPENYrMOxBPNciWHn65ETpmQ0GSYQ1ehAeatiPe3GJW92OyRJZp1XfEud4E",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPNyuHG22VNBmJ6OLTUy5Sz9EvGOWtKZVzuhcTRohilC-m2JL_-8IVTQx32Sc",
       "image_credit": "ESPN",
       "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50502997/game-highlights",
-          "title": "Le Moyne Dolphins vs. Miami Hurricanes: Game Highlights - ESPN Video",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTusPENYrMOxBPNciWHn65ETpmQ0GSYQ1ehAeatiPe3GJW92OyRJZp1XfEud4E"
-        },
         {
           "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909525/marquette-missouri",
           "title": "Missouri 69-64 Marquette (Nov 15, 2026) Final Score",
@@ -100,41 +276,13 @@
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0tfzgzyxJHA7mNZmjF39LyMd8fi_YGxSLYYiqrXuEiZEIv0MifWvXNR0JXwg"
-        }
-      ]
-    },
-    {
-      "query": "north macedonia vs slovenia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T19:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/crq5vd9nz3d2t",
-        "https://www.football.com/gh/news/tag/aljosa%2520matko",
-        "https://news.bet365.com/en-gb/article/football-north-macedonia-slovenia-prediction-and-tips/2026111512040120994"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/crq5vd9nz3d2t",
-          "title": "North Macedonia vs Slovenia: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://www.football.com/gh/news/tag/aljosa%2520matko",
-          "title": "aljosa%20matko",
-          "publisher": "Football.com",
+          "url": "https://www.espn.com/mens-college-basketball/game?gameId=401909774",
+          "title": "Niagara vs. Iowa State (Nov 15, 2026) Live Score",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8bsovFUKGyBchjKwpNimFX1JfhijebTw-RNfN580ZVjwDcTA-c06OUkJknvw"
-        },
-        {
-          "url": "https://news.bet365.com/en-gb/article/football-north-macedonia-slovenia-prediction-and-tips/2026111512040120994",
-          "title": "North Macedonia v Slovenia Prediction: 5/4 Slovenia to shut out hosts",
-          "publisher": "news.bet365.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpftplAKFxB2q-JE0Fd9PDP1aS9G8kr9pkSPtHWo_XQzBIUcfqlsYZmvK4w0M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhuI2QDWeXT4ULhneWFBctp3562kvu7TLN78gXaC6GfyZyGy5prJX2Ra4Kv_s"
         }
       ]
     },
@@ -174,135 +322,30 @@
       ]
     },
     {
-      "query": "mayci neeley",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T19:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66108600/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/tv/articles/secret-lives-oc-mccall-dapron-150000531.html",
-        "https://www.freep.com/videos/entertainment/tv/2026/11/12/mccall-dapron-bobbi-althoff-similarities-mormon-wives/92730661007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm7Mb2VaSNA8q-fzDRHpcd66c066IZLRCeDKViLYCumR4bJAtq8kzSAu_WKiY",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66108600/?ref_=nwc_art_perm",
-          "title": "All About ‘Mormon Wives: Oc’ Star McCall DaPron’s Husband & Family",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm7Mb2VaSNA8q-fzDRHpcd66c066IZLRCeDKViLYCumR4bJAtq8kzSAu_WKiY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/secret-lives-oc-mccall-dapron-150000531.html",
-          "title": "‘Secret Lives: OC’s McCall DaPron Defends Texting Mayci Neeley In Wake of Major Cast Drama: “I Felt Really Alone”",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkPXzt0lo-DKXuTWn1abe4Y2VzAmkDpjRdpJyzyJK6JlU_WOV77cqwZBp4sOk"
-        },
-        {
-          "url": "https://www.freep.com/videos/entertainment/tv/2026/11/12/mccall-dapron-bobbi-althoff-similarities-mormon-wives/92730661007/",
-          "title": "How alike are McCall DaPron and her sister 'SLOMW' star Mayci Neeley?",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG-VmKsJWJWTJJY6tR2avUkTplhWoA0xAIYC2bTxc8M6gYZ0EJAndnYlNVQ04"
-        }
-      ]
-    },
-    {
-      "query": "warren buffett",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T19:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-        "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/",
-        "https://www.bloomberg.com/news/articles/2026-11-16/buffett-donates-9-million-berkshire-shares-to-family-foundations"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-          "title": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA"
-        },
-        {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/",
-          "title": "Warren Buffett Announces $5.5 Billion Thanksgiving Gift—Four Times Bigger Than Last Year",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsYvVdYcQM7wl0_6auvMrJO1eTr0WAGBYG1Ix8cYLRNfM-zkeHs9xXdrh7iLU"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-16/buffett-donates-9-million-berkshire-shares-to-family-foundations",
-          "title": "Buffett Donates 9 Million Berkshire Shares to Family Foundations",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-qZ-vd0P37cNmKxlouX25MNS05237fJZFHXOe0vJSQT80Ptb3UXELiuL-ozo"
-        }
-      ]
-    },
-    {
-      "query": "harvard postdoc fellowship strike issues",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T19:10:00Z",
-      "related_news_urls": [
-        "https://www.thecrimson.com/article/2026/11/16/grunwald-harvard-punishing-postdocs-for-succeeding/",
-        "https://www.thecrimson.com/article/2026/11/16/grunwald-harvard-punishing-postdocs-for-succeeding/",
-        "https://www.bostonglobe.com/2026/11/10/metro/academics-workers-strike-harvard/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoctZbDRKZKjXGsTxJAqJhVJ39ykYZZwnppwprSFou7fqvYMEoSvHeQEzyXLA",
-      "image_credit": "The Harvard Crimson",
-      "news": [
-        {
-          "url": "https://www.thecrimson.com/article/2026/11/16/grunwald-harvard-punishing-postdocs-for-succeeding/",
-          "title": "Harvard Is Punishing Postdocs for Succeeding",
-          "publisher": "The Harvard Crimson",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoctZbDRKZKjXGsTxJAqJhVJ39ykYZZwnppwprSFou7fqvYMEoSvHeQEzyXLA"
-        },
-        {
-          "url": "https://www.thecrimson.com/article/2026/11/16/grunwald-harvard-punishing-postdocs-for-succeeding/",
-          "title": "Harvard Is Punishing Postdocs for Succeeding",
-          "publisher": "The Harvard Crimson",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoctZbDRKZKjXGsTxJAqJhVJ39ykYZZwnppwprSFou7fqvYMEoSvHeQEzyXLA"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/10/metro/academics-workers-strike-harvard/",
-          "title": "‘We’re not asking for the moon’: Harvard strike grows as academic workers walk out",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSJRUieRhsJe4npDQI3z90at4TFizyz3_rBzEeWkyA_hR8HIBwOY3lqis0p7Y"
-        }
-      ]
-    },
-    {
-      "query": "ap poll football",
+      "query": "ap top 25 football",
       "approx_searches": "2000+",
-      "published_at": "2026-11-16T19:00:00Z",
+      "published_at": "2026-11-16T19:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/college-football-power-rankings-texas-utah-week-12-2026/",
-        "https://apnews.com/live/top-25-college-football-poll-11-16-2026",
+        "https://www.espn.com/college-football/story/_/id/50473507/2026-college-football-power-rankings-top-25-week-11",
+        "https://www.nytimes.com/athletic/7783772/2026/11/16/ap-top-25-college-football-week-11/",
         "https://247sports.com/college/georgia/article/georgia-football-coaches-poll-ranking-week-12-2026-292800755/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6pW546crkQGFJELakeWEsKO7PDG4rwWB91xC3JIYFGEq_GGF9WhujvxURSbE",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVVjOaQ_WFLnNdUjkhi3Xd1oGRwz7KTBOl_FKLa7mr-KiP6qFt_RWkhEgqWw",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cbssports.com/college-football/news/college-football-power-rankings-texas-utah-week-12-2026/",
-          "title": "College Football Power Rankings: Texas rises after latest ranked win, undefeated Utah joins top four",
-          "publisher": "CBS Sports",
+          "url": "https://www.espn.com/college-football/story/_/id/50473507/2026-college-football-power-rankings-top-25-week-11",
+          "title": "Power Rankings: The top teams hold their positions in Week 11",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6pW546crkQGFJELakeWEsKO7PDG4rwWB91xC3JIYFGEq_GGF9WhujvxURSbE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVVjOaQ_WFLnNdUjkhi3Xd1oGRwz7KTBOl_FKLa7mr-KiP6qFt_RWkhEgqWw"
         },
         {
-          "url": "https://apnews.com/live/top-25-college-football-poll-11-16-2026",
-          "title": "AP Top 25 live updates: Wake Forest cracks the top 10, while LSU and three others fall out",
-          "publisher": "AP News",
+          "url": "https://www.nytimes.com/athletic/7783772/2026/11/16/ap-top-25-college-football-week-11/",
+          "title": "AP Top 25: Wake Forest reaches top 10 in delayed college football rankings as LSU falls out - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnO1aYnV6JEH7g9e_NBMRhIv8KwkwDaaPCprGcXPrMKxEdrFzB8F8dgU3Wt3M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRykhUZm97U2WcU76pxhuKP4NmNYa3NupBAHhTxHmZ-iagZrsuamMXJsHRwHHk"
         },
         {
           "url": "https://247sports.com/college/georgia/article/georgia-football-coaches-poll-ranking-week-12-2026-292800755/",
@@ -310,41 +353,6 @@
           "publisher": "247Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0juo09-oaMfEJ7qiNAd_8NEJ3RY66lPo7by3a3d8Rj1o7Fhl5W70n71Wkzvg"
-        }
-      ]
-    },
-    {
-      "query": "spacex stock price",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T19:00:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/articles/why-spacex-stock-down-historic-starship-catch-ec692e2b",
-        "https://seekingalpha.com/article/4967990-spacex-math-says-69-percent-downside",
-        "https://www.investing.com/news/stock-market-news/democrats-midterm-sweep-not-bad-at-all-for-spacex-analyst-says-5027337"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFxjTg0OMoJDoQU9N5zqY02xTQZ0VdCyjOCZppS_GxY1ZAMdyAvFDb2_NQgtU",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/articles/why-spacex-stock-down-historic-starship-catch-ec692e2b",
-          "title": "Why SpaceX Stock Is Down After Its Historic Starship Catch",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFxjTg0OMoJDoQU9N5zqY02xTQZ0VdCyjOCZppS_GxY1ZAMdyAvFDb2_NQgtU"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4967990-spacex-math-says-69-percent-downside",
-          "title": "SpaceX: The Math Says 69% Downside (NASDAQ:SPCX)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3S4Q0DFaIHoP1KRAvLK3NJVZr9H590cJLMMJariquhyZJPMQqeZOSyRehX_M"
-        },
-        {
-          "url": "https://www.investing.com/news/stock-market-news/democrats-midterm-sweep-not-bad-at-all-for-spacex-analyst-says-5027337",
-          "title": "Democrats’ midterm sweep \"not bad at all\" for SpaceX, analyst says",
-          "publisher": "Investing.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHdmYPiykL6yLByOczyJaJBZv7xju9VEIqw--Mo9cyJaIwsvr7VIJwD7P1nc"
         }
       ]
     }
