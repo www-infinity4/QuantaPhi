@@ -15,7 +15,18 @@ test('QuantaPhi mounts Bubbles beside Media Star and loads all versioned assets'
  assert.ok(html.includes('/phi-story-writer.css?'));
  assert.match(html,/id="bubblesAICard"/);
  assert.ok(html.indexOf('id="mediaStarCreator"')<html.indexOf('id="bubblesAICard"'));
- assert.ok(html.includes('href="#bubblesAICard"'));
+ assert.ok(html.includes('<nav class="qmenu" id="qmenu" hidden>'));
+ assert.ok(!html.includes('href="#bubblesAICard"'));
+});
+
+test('home keeps the working Bubbles orb while APK and Chrome download controls stay collapsed',()=>{
+ const code=source('bubbles-ai.js'),page=source('index.html');
+ assert.match(code,/const launcher=create\('button','ba-launcher'/);
+ assert.doesNotMatch(code,/if\(document\.body\?\.classList\?\.contains\?\.\('oracle-quanta'\)\)return/);
+ assert.match(page,/<details class="q-install-details"/);
+ assert.match(page,/href="\/bubbles-chrome\.html">Install Bubbles in Chrome<\/a>/);
+ assert.match(page,/href="\/downloads\/bubbles\.apk"/);
+ assert.match(page,/<section id="bubblesAICard"/);
 });
 
 test('image-to-story flow inspects real picture bytes; no filename-based story guessing',()=>{
@@ -41,7 +52,7 @@ test('Bubbles has real AI chat and opt-in browser speech rather than simulated r
  const code=source('bubbles-ai.js'),css=source('bubbles-ai.css');
  assert.doesNotThrow(()=>new vm.Script(code));
  assert.match(code,/\/v1\/chat/);
- assert.match(code,/await fetch\(AI/);
+ assert.match(code,/await bubblesFetch\(AI/);
  assert.match(code,/if\(!response\.ok\|\|json\.ok===false\)throw/);
  assert.match(code,/navigator\.mediaDevices\.getUserMedia/);
  assert.match(code,/module\.startContinuousVoice/);
@@ -81,7 +92,7 @@ test('existing StarCoin ledger and no-refresh artwork behavior are untouched by 
 });
 
 
-test('published Bubbles embed stays inside a checked-origin floating frame',()=>{
+test('published Bubbles embed hides iframe until visitor opens its host-page bubble',()=>{
  const code=source('bubbles-embed.js');
  const html=source('bubbles.html');
  const css=source('bubbles-ai.css');
@@ -90,19 +101,33 @@ test('published Bubbles embed stays inside a checked-origin floating frame',()=>
  assert.match(html,/bubbles-ai\.js\?v=/);
  assert.match(html,/body\.bubbles-embedded \.ba-launcher/);
  assert.match(css,/\.ba-panel/);
- const events=new Map();
- const child={};
- const iframe={style:{},dataset:{},contentWindow:child,addEventListener:(event,fn)=>events.set('iframe:'+event,fn),setAttribute(){}};
- let appended=null;
- let listener=null;
+ const events=new Map(),appended=[],posted=[];
+ function element(type){
+  const obj={type,style:{setProperty(prop,value){this[prop]=value}},dataset:{},children:[],
+   setAttribute(name,value){this[name]=value},addEventListener:(event,fn)=>events.set(type+':'+event,fn),
+   appendChild(child){this.children.push(child)}};
+  if(type==='iframe')obj.contentWindow={postMessage:(data,origin)=>posted.push({data,origin})};
+  return obj;
+ }
+ let iframe=null,orb=null,listener=null;
  const document={
   currentScript:{dataset:{bubbleRole:'singer',bubbleId:'my_page',bubbleName:'Choir helper',bubbleInstructions:'Original singing exercises'}},
-  createElement:type=>{assert.equal(type,'iframe');return iframe},
-  body:{appendChild:value=>{appended=value}}
+  createElement(type){const obj=element(type);if(type==='iframe')iframe=obj;if(type==='button')orb=obj;return obj},
+  body:{append(...items){appended.push(...items)}}
  };
  const window={addEventListener:(event,fn)=>{if(event==='message')listener=fn}};
  vm.runInNewContext(code,{document,window,URLSearchParams,Set});
- assert.equal(appended,iframe);
+ assert.deepEqual(appended,[orb], 'closed assistant only mounts its lightweight launcher');
+ assert.equal(iframe.src,undefined,'no network navigation occurs before click');
+ assert.equal(iframe.style.display,'none','closed messenger iframe must be invisible');
+ assert.equal(orb.style.display,'block');
+ assert.match(orb.style.cssText,/border-radius:50%!important/);
+ listener({origin:'https://evil.example',source:iframe.contentWindow,data:{type:'quantaphi:bubbles:size',open:true}});
+ assert.equal(iframe.style.display,'none','a foreign origin cannot open it');
+ listener({origin:'https://quantaphi.org',source:{},data:{type:'quantaphi:bubbles:size',open:true}});
+ assert.equal(iframe.style.display,'none','an unrelated frame cannot open it');
+ events.get('button:click')();
+ assert.deepEqual(appended,[orb,iframe],'user tap mounts actual iframe');
  const url=new URL(iframe.src);
  assert.equal(url.origin,'https://quantaphi.org');
  assert.equal(url.pathname,'/bubbles.html');
@@ -110,15 +135,17 @@ test('published Bubbles embed stays inside a checked-origin floating frame',()=>
  assert.equal(url.searchParams.get('id'),'my_page');
  assert.equal(url.searchParams.get('name'),'Choir helper');
  assert.equal(url.searchParams.get('instructions'),'Original singing exercises');
- assert.equal(iframe.style.width,undefined);
- listener({origin:'https://evil.example',source:child,data:{type:'quantaphi:bubbles:size',open:true}});
- assert.equal(iframe.style.width,undefined,'cross-origin frames may not expand');
- listener({origin:'https://quantaphi.org',source:{},data:{type:'quantaphi:bubbles:size',open:true}});
- assert.equal(iframe.style.width,undefined,'unrelated frames may not expand');
- listener({origin:'https://quantaphi.org',source:child,data:{type:'quantaphi:bubbles:size',open:true}});
- assert.match(iframe.style.width,/min\(425px/);
- listener({origin:'https://quantaphi.org',source:child,data:{type:'quantaphi:bubbles:size',open:false}});
- assert.equal(iframe.style.width,'70px');
+ assert.equal(iframe.style.display,'block');
+ assert.equal(orb.style.display,'none');
+ events.get('iframe:load')();
+ assert.equal(posted[0].origin,'https://quantaphi.org');
+ assert.equal(posted[0].data.type,'quantaphi:bubbles:open');
+ assert.equal(posted[0].data.id,'my_page');
+ listener({origin:'https://quantaphi.org',source:iframe.contentWindow,data:{type:'quantaphi:bubbles:size',open:false}});
+ assert.equal(iframe.style.display,'none');
+ assert.equal(orb.style.display,'block');
+ events.get('button:click')();
+ assert.deepEqual(appended,[orb,iframe],'reopen keeps the original document');
 });
 
 test('multiple Bubbles embeds isolate notes and never inherit owner authorization',()=>{
@@ -223,9 +250,9 @@ test('reply actions take notes and prepare work without sending unapproved robot
  const history=JSON.parse(values.get('quantaphi:bubbles:history:v1:work-cards'));
  assert.equal(history.length,2);
  assert.equal(history[0].role,'user');
- get('button','Clear this view').handlers.click();
- assert.equal(values.has('quantaphi:bubbles:history:v1:work-cards'),false);
- assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'clearing chat never destroys notes');
+ get('button','New card chat').handlers.click();
+ assert.ok(values.has('quantaphi:bubbles:history:v1:work-cards'),'starting a new conversation must not erase previously saved card chat');
+ assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'starting a new chat never destroys notes');
 });
 
 test('Vertigo Macro Zoom maps actual controls without fake permission or local notes resurrection',()=>{

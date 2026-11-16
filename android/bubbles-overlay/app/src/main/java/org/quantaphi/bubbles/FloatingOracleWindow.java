@@ -50,6 +50,7 @@ final class FloatingOracleWindow {
     private TextView status;
     private Button retryButton;
     private Button liveBack;
+    private Button recordToggle;
     private boolean livePage;
     private PermissionRequest livePermission;
     private AlertDialog livePermissionDialog;
@@ -59,6 +60,16 @@ final class FloatingOracleWindow {
     private long lastRobotStatusAt = 0L;
     private String lastCaptureSnapshot = "";
     private long lastPhonePollAt;
+    // The website is the only composer; this journal backs up its recent chat
+    // in Android app-private storage after trusted HTTPS origin verification.
+    private final NativeChatJournal historyJournal;
+    private final java.util.concurrent.ExecutorService historyWriter = java.util.concurrent.Executors.newSingleThreadExecutor();
+    private boolean historyRestored = false, historyPollRunning = false;
+    private boolean historyRecoveryBlocked = false;
+    private long lastHistoryPollAt = 0L;
+    private String lastHistorySnapshot = "";
+    private long lastSiteRevisionCheckAt = 0L;
+    private long lastChatGPTConsumerWakeAt = 0L;
     private boolean phoneCommandRunning;
     // Keep follow-ups in order while the web assistant is loading or busy.
     // One slot silently replaced the first instruction with the second.
@@ -83,6 +94,16 @@ final class FloatingOracleWindow {
     private final Runnable update = new Runnable() {
         @Override public void run() {
             if (root == null) return;
+            // Reflect only real service state, not stale "Saving" messages.
+            if (recordToggle != null) {
+                boolean recording = ScreenCaptureService.isRunning()
+                    && BrainNotes.prefs(service).getBoolean("capture_recording", false);
+                String label = recording ? "■ Stop" : "● Rec";
+                if (!label.contentEquals(recordToggle.getText())) recordToggle.setText(label);
+                recordToggle.setContentDescription(recording
+                    ? "Stop and save the screen recording"
+                    : "Start screen recording; requires Android screen sharing approval");
+            }
             if (livePage && trustedLive(website)) {
                 final int generation = loadGeneration;
                 website.evaluateJavascript("Boolean(window.BubblesLiveVoice && window.BubblesLiveVoice.inCall())", result -> {
@@ -98,6 +119,17 @@ final class FloatingOracleWindow {
                 deliverQueuedSpeech();
                 deliverQueuedText();
                 pollWebsiteReply();
+                backupRecentHistory(now);
+                checkSiteRevision();
+                // The floating voice service stays foregrounded after Hide.
+                // Android can throttle window timers in a hidden WebView, so
+                // wake only this existing, first-party, authenticated page.
+                // The website itself verifies owner identity and both unexpired
+                // five-day grants; the native app receives no queue credentials.
+                if (trustedChat(website) && now - lastChatGPTConsumerWakeAt >= 8000L) {
+                    lastChatGPTConsumerWakeAt = now;
+                    website.evaluateJavascript("window.dispatchEvent(new Event('bubbles:foreground-poll'))", null);
+                }
             }
             ui.postDelayed(this, 400);
         }
@@ -106,6 +138,7 @@ final class FloatingOracleWindow {
     FloatingOracleWindow(BubblesService service, WindowManager manager) {
         this.service = service;
         this.manager = manager;
+        this.historyJournal = new NativeChatJournal(service);
     }
     private int dp(float value) {
         return Math.round(value * service.getResources().getDisplayMetrics().density);
@@ -139,7 +172,20 @@ final class FloatingOracleWindow {
     }
     boolean show() {
         if (root != null) {
+            final boolean reopened = root.getVisibility() != View.VISIBLE;
             root.setVisibility(View.VISIBLE);
+            // Hiding via the Android X does not destroy the first-party WebView.
+            // On genuine reopen, begin a new visible conversation without
+            // clearing the owner archive or NativeChatJournal crash backup.
+            // Do not reset while the web bridge has an unfinished voice/typed turn.
+            if (reopened && websiteReady && trustedChat(website)
+                    && !dispatchInFlight && !typedDispatchInFlight
+                    && pendingSpeech.isEmpty() && pendingTyped.isEmpty()) {
+                website.evaluateJavascript(
+                    "Boolean(window.QuantaBubbles && window.QuantaBubbles.startFreshOnReopen && window.QuantaBubbles.startFreshOnReopen())",
+                    null);
+            }
+            checkSiteRevision();
             return true;
         }
         LinearLayout page = new LinearLayout(service);
@@ -153,28 +199,54 @@ final class FloatingOracleWindow {
         title.setSingleLine(true);
         title.setTypeface(null, Typeface.BOLD);
         header.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
-        liveBack = button("Live voice", false);
+        liveBack = button("Live", false);
         liveBack.setMinHeight(dp(44));
         liveBack.setContentDescription("Open GPT-Live owner setup");
         liveBack.setOnClickListener(v -> {
             if (website == null) return;
             if (livePage) {
                 stopLiveCall();
-                website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+                website.loadUrl(SITE_URL);
             } else website.loadUrl("https://quantaphi.org/bubbles-gpt-live.html?v=" + BuildConfig.VERSION_NAME);
         });
-        // Keep the normal chat header readable on a narrow Android screen.
-        // Live voice remains available only when the user opens voice options.
-        liveBack.setVisibility(View.GONE);
-        Button voiceOptions = button("Options", false);
-        voiceOptions.setContentDescription("Show or hide optional live voice control");
-        voiceOptions.setOnClickListener(v -> {
-            boolean showVoice = liveBack.getVisibility() != View.VISIBLE;
-            liveBack.setVisibility(showVoice ? View.VISIBLE : View.GONE);
-            voiceOptions.setText(showVoice ? "Less" : "Options");
-        });
-        header.addView(voiceOptions);
+        // Keep a single visible Live button in the chat header. Do not gate it
+        // behind Options/Less; microphone consent remains in the live page.
         header.addView(liveBack);
+        // This native button directly invokes Android's recording path.
+        // No model instruction, synthetic screen tap or hidden Options menu.
+        recordToggle = button("● Rec", false);
+        recordToggle.setMinHeight(dp(44));
+        recordToggle.setContentDescription("Start screen recording; requires Android screen sharing approval");
+        recordToggle.setOnClickListener(v -> {
+            boolean active = ScreenCaptureService.isRunning()
+                && BrainNotes.prefs(service).getBoolean("capture_active", false);
+            if (active) {
+                try {
+                    service.startService(new Intent(service, ScreenCaptureService.class)
+                        .setAction(ScreenCaptureService.STOP));
+                    if (status != null) status.setText("Stopping and saving screen recording…");
+                } catch (RuntimeException error) {
+                    if (status != null) status.setText("Could not stop screen recording.");
+                }
+                return;
+            }
+            if (ScreenCaptureService.isRunning()) {
+                if (status != null) status.setText("Screen capture is starting or saving. Check its status.");
+                return;
+            }
+            // The existing MainActivity consumes this only once and opens the
+            // real MediaProjection permission sheet before service startup.
+            Intent intent = new Intent(service, MainActivity.class)
+                .putExtra("voice_capture", "screen_video")
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            try {
+                service.startActivity(intent);
+                if (status != null) status.setText("Approve Android screen sharing to begin recording.");
+            } catch (RuntimeException error) {
+                if (status != null) status.setText("Android could not open screen recording approval.");
+            }
+        });
+        header.addView(recordToggle);
         Button close = button("✕ Hide", false);
         close.setMinWidth(dp(72));
         close.setMinHeight(dp(48));
@@ -195,13 +267,39 @@ final class FloatingOracleWindow {
             } else {
                 showWebsite(false);
                 status.setText("Connecting to QuantaPhi Bubbles… Your queued messages are retained.");
-                website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+                website.loadUrl(SITE_URL);
             }
         });
         page.addView(retryButton);
         // The website owns the only composer and conversation. Never substitute
         // a second local chat when loading, offline, or owner sync is unavailable.
         createWebsite(page);
+
+        // The APK needs one direct history control even before cloud owner
+        // pairing. The website remains the only source of conversation UI.
+        Button history = button("Chats / History", false);
+        history.setMinHeight(dp(44));
+        history.setContentDescription("Open saved Bubbles chat history");
+        history.setOnClickListener(v -> {
+            if (trustedChat(website) && websiteReady) {
+                website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.openHistory())", null);
+            } else if (status != null) {
+                status.setText("Bubbles history will open after the website chat reconnects.");
+            }
+        });
+        LinearLayout.LayoutParams historySize = new LinearLayout.LayoutParams(-2, dp(44));
+        historySize.gravity = Gravity.CENTER_HORIZONTAL;
+        page.addView(history, historySize);
+
+        // A simple bottom X hides this chat without closing the one native
+        // microphone service or removing the partly docked floating orb.
+        Button bottomClose = button("✕", false);
+        bottomClose.setMinHeight(dp(48));
+        bottomClose.setContentDescription("Hide Bubbles panel; keep floating orb and voice listening");
+        bottomClose.setOnClickListener(v -> hide());
+        LinearLayout.LayoutParams bottomCloseSize = new LinearLayout.LayoutParams(dp(64), dp(48));
+        bottomCloseSize.gravity = Gravity.CENTER_HORIZONTAL;
+        page.addView(bottomClose, bottomCloseSize);
 
         int width = Math.min(service.getResources().getDisplayMetrics().widthPixels - dp(24), dp(550));
         int height = Math.min((int)(service.getResources().getDisplayMetrics().heightPixels * .74f), dp(680));
@@ -302,6 +400,27 @@ final class FloatingOracleWindow {
                 @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                     if (!request.isForMainFrame()) return false;
                     Uri target = request.getUrl();
+                    // A real, user-tapped phone link on the first-party phone
+                    // page may open Android's dialer. Never use ACTION_CALL:
+                    // the owner must still confirm the number and tap Call.
+                    if ("tel".equals(target.getScheme())) {
+                        Uri current = Uri.parse(view.getUrl() == null ? "" : view.getUrl());
+                        String number = target.getSchemeSpecificPart();
+                        boolean trustedPage = "https".equals(current.getScheme())
+                            && SITE_HOST.equals(current.getHost())
+                            && ("/phone/".equals(current.getPath())
+                                || current.getPath().startsWith("/phone/"));
+                        if (trustedPage && request.hasGesture() && number != null
+                                && number.matches("\\+[1-9][0-9]{7,14}")) {
+                            try {
+                                service.startActivity(new Intent(Intent.ACTION_DIAL, target)
+                                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                            } catch (RuntimeException ignored) {
+                                // A missing dialer cannot be reported as a call.
+                            }
+                        }
+                        return true;
+                    }
                     if ("https".equals(target.getScheme()) && SITE_HOST.equals(target.getHost()))
                         return false;
                     // No intent:, file:, content: or javascript: navigation inside the overlay.
@@ -316,8 +435,12 @@ final class FloatingOracleWindow {
                     denyLivePermission();
                     service.releaseLiveMicrophone();
                     livePage = false;
-                    if (liveBack != null) { liveBack.setText("Live voice"); liveBack.setContentDescription("Open GPT-Live owner setup"); }
+                    if (liveBack != null) { liveBack.setText("Live"); liveBack.setContentDescription("Open GPT-Live owner setup"); }
                     loadGeneration++;
+                    historyRestored = false;
+                    historyRecoveryBlocked = false;
+                    historyPollRunning = false;
+                    lastHistorySnapshot = "";
                     dispatchInFlight = false;
                     typedDispatchInFlight = false;
                     showWebsite(false);
@@ -391,7 +514,7 @@ final class FloatingOracleWindow {
                 }
             });
             page.addView(website, new LinearLayout.LayoutParams(-1, 0, 1));
-            website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+            website.loadUrl(SITE_URL);
         } catch (RuntimeException error) {
             // Keep the failure visible; never open a different assistant.
             website = null;
@@ -427,14 +550,28 @@ final class FloatingOracleWindow {
                 view.evaluateJavascript("Boolean(window.BubblesLiveVoice && (window.BubblesLiveVoice.stop(), true))", result -> {
                     if (view != website || generation != loadGeneration) return;
                     if ("true".equals(result)) service.releaseLiveMicrophone();
-                    else view.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+                    else view.loadUrl(SITE_URL);
                 });
             } catch (RuntimeException error) {
                 // Navigation/destruction releases WebView media even when an
                 // older page has no lifecycle helper. Never resume Vosk here.
-                view.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+                view.loadUrl(SITE_URL);
             }
         } else service.releaseLiveMicrophone();
+    }
+    /** The APK uses the website's actual Bubbles script revision, never its
+     * own Android versionName. The website performs a no-store read and only
+     * reloads after its current turn has finished. */
+    private void checkSiteRevision() {
+        if (!websiteReady || !trustedChat(website) || !pendingSpeech.isEmpty()
+                || !pendingTyped.isEmpty() || dispatchInFlight || typedDispatchInFlight)
+            return;
+        long now = android.os.SystemClock.elapsedRealtime();
+        if (now - lastSiteRevisionCheckAt < 90000L) return;
+        lastSiteRevisionCheckAt = now;
+        website.evaluateJavascript("Boolean(window.QuantaBubbles"
+            + " && typeof window.QuantaBubbles.checkForSiteUpdate==='function'"
+            + " && (window.QuantaBubbles.checkForSiteUpdate(), true))", null);
     }
     private boolean trustedChat(WebView view) {
         if (view == null || view != website || root == null) return false;
@@ -474,6 +611,13 @@ final class FloatingOracleWindow {
         return true;
     }
 
+    /** The website reply may exist even when the phone has no usable TTS voice. */
+    void showSpeechFailure(String explanation) {
+        if (root == null || status == null) return;
+        status.setText("Voice unavailable · " + explanation);
+        status.setVisibility(View.VISIBLE);
+    }
+
     private void showWebsite(boolean ready) {
         websiteReady = ready && root != null && website != null;
         if (!websiteReady) { robotOwnerConnected = false; lastCaptureSnapshot = ""; phoneCommandRunning = false; }
@@ -484,6 +628,7 @@ final class FloatingOracleWindow {
             if (!websiteReady) status.setText("Connecting to QuantaPhi Bubbles… If it does not load, tap Retry.");
         }
         if (websiteReady) {
+            restoreRecentHistory();
             status.setText("● QuantaPhi Bubbles · full website brain, notes & chat");
             if (!pendingSpeech.isEmpty()) deliverQueuedSpeech();
             if (!pendingTyped.isEmpty()) deliverQueuedText();
@@ -491,6 +636,70 @@ final class FloatingOracleWindow {
             // website only coordinates an owner-scoped lease, never mutes it.
             claimMicrophone();
         }
+    }
+
+    /** Only the trusted first-party Bubbles page can supply or receive the
+     * recovery copy. No WebView JavascriptInterface or arbitrary iframe access. */
+    private void restoreRecentHistory() {
+        historyRestored = false;
+        historyRecoveryBlocked = false;
+        if (!trustedChat(website)) return;
+        final WebView view = website;
+        final int generation = loadGeneration;
+        final String old = historyJournal.read();
+        if (old.isEmpty()) { historyRestored = true; return; }
+        view.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.restoreNativeHistory("
+                + JSONObject.quote(old) + "))", result -> {
+            if (generation != loadGeneration || !trustedChat(view)) return;
+            historyRestored = true;
+            historyRecoveryBlocked = !"true".equals(result);
+            if (historyRecoveryBlocked) {
+                // Never overwrite a still-readable local backup after a web
+                // interface revision or transient DOM-storage error.
+                BrainNotes.prefs(service).edit().putString("history_recovery_state",
+                    "Native history retained; web conversation restore unavailable").apply();
+            } else {
+                BrainNotes.prefs(service).edit().putString("history_recovery_state",
+                    "Recent Android Bubbles conversation restored").apply();
+            }
+        });
+    }
+    private void backupRecentHistory(long now) {
+        if (!historyRestored || historyPollRunning || !trustedChat(website)
+                || now - lastHistoryPollAt < 5000L) return;
+        final WebView view = website;
+        final int generation = loadGeneration;
+        lastHistoryPollAt = now;
+        historyPollRunning = true;
+        view.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.nativeHistorySnapshot()",
+            raw -> {
+                historyPollRunning = false;
+                if (generation != loadGeneration || !trustedChat(view) || raw == null) return;
+                try {
+                    Object value = new JSONTokener(raw).nextValue();
+                    if (!(value instanceof String)) return;
+                    String snapshot = (String)value;
+                    if ("history-disabled".equals(snapshot)) {
+                        lastHistorySnapshot = "";
+                        historyRecoveryBlocked = false;
+                        historyWriter.execute(historyJournal::clear);
+                    } else if (historyRecoveryBlocked) {
+                        // Never replace the last good backup with an empty
+                        // or incomplete page after restoration has failed.
+                        return;
+                    } else if (!snapshot.equals(lastHistorySnapshot)
+                            && NativeChatJournal.valid(snapshot)) {
+                        lastHistorySnapshot = snapshot;
+                        historyWriter.execute(() -> {
+                            try { historyJournal.write(snapshot); }
+                            catch (Exception error) {
+                                BrainNotes.prefs(service).edit().putString("history_recovery_state",
+                                    "Android conversation backup failed: " + error.getClass().getSimpleName()).apply();
+                            }
+                        });
+                    }
+                } catch (Exception ignored) { /* Preserve last good history. */ }
+            });
     }
 
     private void deliverQueuedSpeech() {
@@ -594,6 +803,8 @@ final class FloatingOracleWindow {
             captureState.put("screenActive", prefs.getBoolean("capture_active", false));
             captureState.put("screenRecording", prefs.getBoolean("capture_recording", false));
             captureState.put("screenPaused", prefs.getBoolean("capture_paused", false));
+            // Current Android service status, never inferred from saved labels.
+            captureState.put("screenCaptureServiceRunning", ScreenCaptureService.isRunning());
             captureState.put("soundActive", prefs.getBoolean("audio_active", false));
             captureState.put("nativeRecorder", true);
             String readState = prefs.getString("screen_state", "");
@@ -627,6 +838,31 @@ final class FloatingOracleWindow {
                 status.setText("Could not open ChatGPT sign-in settings.");
             }
         });
+        // Only a verified first-party WebView can request the fixed local test.
+        // Android still presents an owner confirmation; a web command is not consent.
+        if (trustedChat(website)) {
+            website.evaluateJavascript(
+                "window.QuantaBubbles && window.QuantaBubbles.drainNativeTermuxProbe()", payload -> {
+                    if (!websiteReady || !trustedChat(website) || payload == null || "null".equals(payload)) return;
+                    try {
+                        Object decoded = new JSONTokener(payload).nextValue();
+                        if (!(decoded instanceof String) || ((String) decoded).isEmpty()) return;
+                        JSONObject request = new JSONObject((String) decoded);
+                        if (!"probe".equals(request.optString("action"))) return;
+                        Intent ownerDialog = new Intent(service, MainActivity.class)
+                            .putExtra("termux_python_probe", true)
+                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                        service.startActivity(ownerDialog);
+                    } catch (RuntimeException error) {
+                        status.setText("Could not show Android's Python test approval; no test ran.");
+                    } catch (Exception error) {
+                        status.setText("Android rejected the Python diagnostic request.");
+                    }
+                });
+            website.evaluateJavascript(
+                "window.QuantaBubbles && window.QuantaBubbles.syncNativeTermuxProbe("
+                    + TermuxProbe.receipt(service).toString() + ")", null);
+        }
         // First-party website composer does not possess Android MediaProjection.
         // Drain only declared local capture intents and run the SAME native command
         // parser used by microphone speech; Android consent is never bypassed.
@@ -735,6 +971,7 @@ final class FloatingOracleWindow {
         loadGeneration++;
         ui.removeCallbacks(update);
         gptWork.shutdownNow();
+        historyWriter.shutdown();
         websiteReady = false;
         pendingSpeech.clear();
         pendingTyped.clear();

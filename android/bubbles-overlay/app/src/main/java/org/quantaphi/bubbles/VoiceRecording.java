@@ -8,8 +8,13 @@ final class VoiceRecording {
     private RandomAccessFile output;
     private File file;
     private long bytes;
-    synchronized void start(File directory) throws Exception {
+    private boolean fiveMinuteLimit = true;
+    synchronized void start(File directory) throws Exception { start(directory, true); }
+    // Screen video shares this PCM stream until the user presses Stop.
+    // Standalone sound recordings retain their existing five-minute policy.
+    synchronized void start(File directory, boolean limitToFiveMinutes) throws Exception {
         if (output != null) throw new IllegalStateException("A recording is already active");
+        fiveMinuteLimit = limitToFiveMinutes;
         directory.mkdirs();
         file = File.createTempFile("audio-", ".wav", directory);
         output = new RandomAccessFile(file, "rw");
@@ -19,8 +24,9 @@ final class VoiceRecording {
     synchronized boolean active() { return output != null; }
     synchronized void append(short[] samples, int count) throws Exception {
         if (output == null) return;
-        // Five-minute bound; caller receives an error and finalizes the actual file.
-        if (bytes + count * 2L > 16000L * 2 * 300) throw new IllegalStateException("Five-minute recording limit reached");
+        // Limit standalone sound only; screen video has a separate free-space guard.
+        if (fiveMinuteLimit && bytes + count * 2L > 16000L * 2 * 300)
+            throw new IllegalStateException("Five-minute sound recording limit reached");
         byte[] data = new byte[count * 2];
         for (int i = 0; i < count; i++) {
             data[i * 2] = (byte) samples[i];

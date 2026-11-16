@@ -104,7 +104,10 @@ test('UI and Worker accept only a verified owner bulk request, and do not claim 
  assert.doesNotMatch(chat,/runAllButton/);
  assert.match(chat,/start_immediately:true/);
  assert.match(chat,/verifiedOwnerHeaders\(\)/);
- assert.doesNotMatch(chat,/BRAIN\+'\/work\/tickets\/approve-all'/);
+ assert.match(chat,/BRAIN\+'\/work\/tickets\/approve-all'/);
+ assert.match(chat,/verifiedOwnerHeaders\(\)/);
+ assert.match(chat,/resolveRoutineNow.addEventListener\('click'/);
+ assert.doesNotMatch(chat,/void resolveRoutineOwnerDecisions\(result.tickets\)/);
  assert.match(worker,/path==='\/work\/tickets\/approve-all'/);
  assert.match(worker,/if\(!await ownerAuthorized\(env,token\)\)/);
  assert.match(chat,/result.execution/);

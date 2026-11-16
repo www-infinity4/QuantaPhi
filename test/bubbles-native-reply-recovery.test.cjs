@@ -23,6 +23,16 @@ function drain(initial){
  const bridge=vm.runInNewContext('({'+method+'})',context);
  return {value:bridge.drainNativeReply(),context,bridge};
 }
+test('queued voice request is not a spoken completion',()=>{
+ const start=android.indexOf('if (oracleWindow != null && oracleWindow.sendSpoken(addressed, ambientContext))');
+ const end=android.indexOf('private void offerCaptureApproval',start);
+ assert.ok(start>=0&&end>start);
+ const route=android.slice(start,end);
+ assert.doesNotMatch(route,/speak\("On it\."\)/);
+ assert.match(route,/voice_dispatch_state/);
+ assert.match(route,/Bubbles chat is unavailable\. I did not run that request\./);
+ assert.match(source,/The assistant acknowledged the request but returned no result/);
+});
 test('the actual completed answer always wins over a simultaneous phase notice',()=>{
  const result=drain({nativeSpeechReply:'The repository was created.',nativePhaseNotice:'Thinking.',busy:false});
  assert.equal(result.value,'The repository was created.');
@@ -53,7 +63,9 @@ test('memory indexing cannot block network answers indefinitely',()=>{
  assert.match(source,/await Promise\.race\(\[/);
  assert.match(source,/longMemory\.context\(spoken\)/);
  assert.match(source,/memoryTimer=setTimeout\(\(\)=>resolve\(''\),1300\)/);
- assert.match(android,/if \(!typed\) speak\("On it\."\)/);
+ assert.doesNotMatch(android,/speak\("On it\."\)/);
+ assert.match(android,/Voice request queued locally; awaiting website result/);
+ assert.match(android,/if \(!typed\) speak\("Bubbles chat is unavailable\. I did not run that request\."\)/);
  assert.doesNotMatch(android,/speak\("Thinking\."\)/);
  assert.doesNotMatch(source,/nativePhaseNotice='Thinking\.'/);
 });

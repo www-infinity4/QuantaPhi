@@ -3,9 +3,11 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const page=readFileSync(new URL('../index.html', import.meta.url),'utf8');
 const edge=readFileSync(new URL('../workers/quantaphi-site/worker.js', import.meta.url),'utf8');
-test('home menu and immediately visible link navigate to direct Bubbles account connections',()=>{
+test('Bubbles account connections remain available in the collapsed menu, not promoted above public search',()=>{
+  assert.match(page, /<nav class="qmenu" id="qmenu" hidden>/);
   assert.match(page, /<a href="\/bubbles-accounts\.html">Connect accounts · Bubbles<\/a>/);
-  assert.match(page, /<a href="\/bubbles-accounts\.html"[^>]*>Bubbles Account Connections<\/a>/);
+  assert.doesNotMatch(page, /<section class="q-bubbles-entry"/);
+  assert.ok(page.indexOf('class="search" role="search"')<page.indexOf('id="qtraffic"'));
 });
 test('home no longer pins a stale page while downloadable APK script stays pinned',()=>{
   assert.ok(!edge.includes("['/index.html','/apk-downloads.js'].includes(route.sourcePath)"));

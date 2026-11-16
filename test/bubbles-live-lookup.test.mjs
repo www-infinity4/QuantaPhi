@@ -24,6 +24,25 @@ test('actual voice request, not persona history, selects the web and weather too
  assert.equal(weatherPlace('Tell me the weather today in Albia, Iowa'),'Albia, Iowa');
  assert.equal(lookupKind('Build a weather app'),null); // Engineering work is not a live weather lookup.
 });
+test('Android speech weather search uses Albia, Iowa rather than a stale phone location',async()=>{
+ const spoken=['Weather search Albia Iowa','Weather Albia Iowa',
+  'Search for Albia Iowa weather','Bubbles weather search Albia, Iowa'];
+ for(const utterance of spoken){
+  assert.equal(chooseTool(utterance),'weather.current',utterance);
+  assert.match(weatherPlace(utterance,{city:'Omaha',state:'Nebraska'}),/^Albia(?:,)? Iowa$/i);
+  const outcome=await currentWeather(utterance,{city:'Omaha',state:'Nebraska'},weatherFetch);
+  assert.equal(outcome.ok,true,utterance);
+  assert.match(outcome.location,/Albia, Iowa/);
+  assert.equal(outcome.temperatureF,63);
+ }
+});
+test('weather never substitutes a different-state city on geocoding ambiguity',async()=>{
+ const conflicting=async url=>Response.json(String(url).includes('geocoding-api')?
+  {results:[{name:'Albia',admin1:'Nebraska',country:'United States',latitude:39,longitude:-96}]}:mockForecast);
+ const result=await currentWeather('Weather search Albia Iowa',null,conflicting);
+ assert.equal(result.ok,false);
+ assert.match(result.output,/will not use weather for a different place/);
+});
 test('missing town asks once rather than inventing precise coordinates',async()=>{
  const r=await call({request:'How is the weather?'});
  const body=await r.json();
@@ -87,10 +106,16 @@ test('worker synthesizes grounded live search evidence but does not claim Google
 });
 test('same Android Bubbles conversation bypasses model-only chat for live lookup',()=>{
  const source=fs.readFileSync('bubbles-ai.js','utf8');
- assert.match(source,/nativeGPTAvailable&&!config.privateContext&&!liveLookup/);
+ const replyRoute=source.slice(source.indexOf('let response,json;'),source.indexOf("if(!response.ok||json.ok===false)"));
+ assert.match(replyRoute,/response=await bubblesFetch\(AI,/);
+ assert.match(replyRoute,/body:JSON.stringify\(lookupPayload\(\)\)/);
+ assert.doesNotMatch(replyRoute,/nativeChatGPT\(prompt\)/,'Android cannot bypass tool execution for text-only ChatGPT replies');
+ assert.match(source,/const priorWeatherAnswer=/);
+ assert.match(source,/const weatherContinuation=/);
  assert.match(source,/bubbles-weather-town/);
  assert.match(source,/do i need an umbrella/);
- assert.match(source,/sourceTool\?/);
+ assert.match(source,/status\.textContent=json\.answerStatus==='partial'/);
+ assert.doesNotMatch(source,/Bubbles model \+ verified tool:/);
  assert.match(source,/ba-search-sources/);
  assert.match(source,/body:JSON.stringify\(lookupPayload\(\)\)/);
 });
@@ -190,7 +215,7 @@ test('model-suggested tools never turn a repository repair or greeting into a re
  r=await call({request:'Hello Bubbles',mcp:true},env);
  data=await r.json();
  assert.equal(data.receipt.tool,'oracle.chat');
- assert.equal(selections,1);
+ assert.equal(selections,0,'greetings should avoid the redundant read-only AI selector');
  assert.equal(chats,2);
 });
 
@@ -215,5 +240,32 @@ test('shallow weather parser defers to grounded semantic selection for city name
   assert.equal(body.receipt.status,'complete');
   assert.match(body.output,/42 degrees Fahrenheit/);
   assert.equal(network,2);
+ }finally{globalThis.fetch=original}
+});
+
+test('implicit weather follow-up uses a previously verified town, never model-invented coordinates',async()=>{
+ const original=globalThis.fetch;
+ const calls=[];
+ globalThis.fetch=async url=>{
+  calls.push(String(url));
+  return Response.json(String(url).includes('geocoding-api')?
+   {results:[{name:'Albia',admin1:'Iowa',country:'United States',latitude:41.0267,longitude:-92.8053}]}:
+   {current:{temperature_2m:42,apparent_temperature:37,weather_code:2,wind_speed_10m:11,time:'2026-10-21T18:00'},
+    daily:{time:['2026-10-21','2026-10-22'],temperature_2m_max:[49,50],temperature_2m_min:[36,37],precipitation_probability_max:[15,20]},
+    timezone:'America/Chicago',timezone_abbreviation:'CDT'});
+ };
+ try{
+  let toolCalls=0;
+  const result=await call({request:'Should I wear a coat outside?',location:'Albia, Iowa',mcp:true},{AI:{run:async(_model,options)=>{
+   if(!options.tools)throw Error('A sourced weather tool result, not a standalone generated forecast, is required.');
+   toolCalls++;
+   return {choices:[{message:{tool_calls:[{function:{name:'weather_current',arguments:JSON.stringify({location:'Albia, Iowa'})}}]}}]};
+  }}});
+  const data=await result.json();
+  assert.equal(toolCalls,1);
+  assert.equal(data.receipt.tool,'weather.current');
+  assert.equal(data.receipt.status,'complete');
+  assert.match(data.output,/42 degrees Fahrenheit/);
+  assert.equal(calls.length,2);
  }finally{globalThis.fetch=original}
 });

@@ -247,6 +247,11 @@ export default {
     if (senderWallet.status !== "active") return json({ error: "wallet_disabled" }, 403);
     const wallet = senderWallet.wallet_id;
 
+    if(url.pathname==='/v1/projects'||url.pathname.startsWith('/v1/projects/')){
+      const {handleNativeProjects}=await import('./native-projects.mjs');
+      return handleNativeProjects(request,env.DB,String(identity.user_id),headers);
+    }
+
     if(url.pathname==="/v1/pages"&&request.method==="POST"){
       // Authorize through the same device identity and wallet as Quant research.
       // HTML is served only inside the separate sandboxed /page/ viewer.

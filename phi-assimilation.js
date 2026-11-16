@@ -161,16 +161,22 @@ function showPackages(list,packages,q){
  list.replaceChildren();
  for(const pack of packages){
   const li=document.createElement('li');li.className='qassim-package';
-  const heading=document.createElement('strong');heading.textContent=pack.title;
-  const text=document.createElement('p');text.textContent=pack.connection;
-  const related=document.createElement('small');related.textContent='Combines: '+[q,...pack.topics].join(' + ');
+  const header=document.createElement('div');header.className='qassim-head';
+  const heading=document.createElement('h4');heading.className='qassim-title';heading.textContent=pack.title;
+  const status=document.createElement('span');status.className='qassim-status';status.textContent=pack.status==='source-backed'?'Source linked':'Research path';
+  header.append(heading,status);
+  const text=document.createElement('p');text.className='qassim-description';text.textContent=pack.connection;
+  const related=document.createElement('p');related.className='qassim-topics';related.textContent='Connects: '+[q,...pack.topics].join(' + ');
+  const topic=pack.question||('How are '+q+' and '+pack.topics.join(', ')+' connected?');
+  const question=document.createElement('p');question.className='qassim-question';
+  question.textContent='Next research question: '+topic;
   const actions=document.createElement('div');actions.className='qassim-actions';
   const compare=document.createElement('button');compare.type='button';compare.textContent='Compare & compile';compare.dataset.assimilate=encodeURIComponent([pack.title,pack.connection,pack.question,'Compare '+q+' with '+pack.topics.join(', ')].filter(Boolean).join('. ').slice(0,650));actions.append(compare);
-  const explore=document.createElement('a');const topic=pack.question||('How are '+q+' and '+pack.topics.join(', ')+' connected?');
-  explore.href='/?q='+encodeURIComponent(topic.slice(0,250));explore.textContent='Explore new Quant';actions.append(explore);
+  const explore=document.createElement('a');
+  explore.href='/?q='+encodeURIComponent(topic.slice(0,250));explore.textContent='Explore this question';actions.append(explore);
   const build=document.createElement('a');build.href=quantBuildUrl(q,pack.topics,[pack.title,pack.connection,pack.question].join(' '));build.textContent='Build researched website';actions.append(build);
-  li.append(heading,text,related,actions);
-  if(pack.status==='source-backed'&&/^https:\/\//.test(pack.sourceUrl)){const source=document.createElement('a');source.href=pack.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';source.textContent='View research source';li.append(source)}
+  li.append(header,text,related,question,actions);
+  if(pack.status==='source-backed'&&/^https:\/\//.test(pack.sourceUrl)){const source=document.createElement('a');source.className='qassim-source';source.href=pack.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';source.textContent='View supporting source';li.append(source)}
   list.append(li);
  }
 }

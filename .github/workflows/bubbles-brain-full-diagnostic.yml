@@ -20,6 +20,9 @@ on:
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-*.test.*'
       - 'test/brain-*.test.*'
+      - 'scripts/brain-*.mjs'
+      - 'test/brain-stage-source-receipt.test.mjs'
+      - '.github/workflows/brain-writer.yml'
       - 'scripts/bubbles-live-smoke.mjs'
   push:
     branches: [main]
@@ -56,6 +59,9 @@ jobs:
           node --check bubbles-ai.js
           node --check bubbles-brain-actions.js
           node --check robot-brain-owner.js
+          node --check scripts/brain-writer.mjs
+          node --check scripts/brain-publish.mjs
+          node --check workers/infinity-brain-clock/owner-audit-draft.mjs
           node --test \
             test/bubbles-brain-bridge.test.cjs \
             test/bubbles-brain-actions.test.cjs \
@@ -63,22 +69,32 @@ jobs:
             test/bubbles-owner-immediate-dispatch.test.cjs \
             test/bubbles-bulk-approval.test.cjs \
             test/bubbles-owner-approval.test.cjs \
+            test/bubbles-fresh-chat-opening.test.mjs \
             test/bubbles-repository-targets.test.mjs \
             test/bubbles-smart-repository-routing.test.mjs \
             test/bubbles-technical-handoff.test.mjs \
             test/bubbles-direct-github.test.mjs \
+            test/bubbles-native-code-search.test.mjs \
             test/bubbles-tools.test.mjs \
             test/brain-assigned-job-scope.test.mjs \
             test/brain-color-core.test.mjs \
+            test/brain-role-handoffs.test.mjs \
             test/brain-clock.test.mjs \
+            test/bubbles-owner-history-draft.test.mjs \
+            test/bubbles-owner-clock.test.mjs \
             test/brain-merge-receipt.test.mjs \
             test/brain-queue-order.test.mjs \
             test/brain-ticket-selector.test.mjs \
+            test/brain-runner-candidate-page.test.mjs \
             test/brain-deferred-recovery.test.mjs \
             test/brain-cloudflare-token-broker.test.mjs \
             test/brain-clock-stage.test.mjs \
+            test/brain-stage-source-receipt.test.mjs \
             test/brain-clock-binding-parity.test.mjs \
             test/brain-pink-source-review.test.mjs \
+            test/brain-source-review-identity-guard.test.mjs \
+            test/brain-writer.test.mjs \
+            test/brain-publish-draft.test.mjs \
             test/brain-ticket-status.test.cjs \
             test/work-ticket-bubbles-timed-job-controls.test.cjs
 
@@ -161,7 +177,7 @@ jobs:
         run: node scripts/bubbles-live-smoke.mjs
       - name: Preserve observed statuses without inventing authenticated tool receipts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: bubbles-brain-public-diagnostic
           path: repository-receipts/bubbles-live-smoke.json

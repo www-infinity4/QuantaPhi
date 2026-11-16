@@ -13,7 +13,8 @@ test('Bubbles Coder sandbox checks out isolated Linux runtime with no write toke
  assert.match(yaml,/timeout --signal=TERM 180s python3 -I/);
  assert.match(yaml,/timeout --signal=TERM 180s bash --noprofile --norc/);
  assert.match(yaml,/^\s*if: always\(\)/m);
- assert.match(yaml,/actions\/upload-artifact@v4/);
+ // Require a supported upload-artifact major without pinning this safety test to v4.
+ assert.match(yaml,/actions\/upload-artifact@v(?:[4-9]|[1-9][0-9]+)\b/);
  assert.doesNotMatch(yaml,/permissions:\s*\n\s*contents: write/);
 });
 
@@ -23,6 +24,6 @@ test('Bubbles Coder direct dispatch is not a Robot Brain ticket',()=>{
  assert.match(site,/args\.workflow='bubbles-coder-sandbox\.yml'/);
  assert.match(site,/args\.action='dispatch_workflow'/);
  assert.match(site,/args\.action='list_workflow_runs'/);
- assert.match(site,/directGithubOperation\(args\)/);
- assert.match(site,/const args=\{action,repository,request,description:request,mode\}/);
+ assert.match(site,/directGithubOperation\(args,\{ownerRequest:request,imageEvidence:imageWorkEvidence\}\)/);
+ assert.match(site,/const args=\{action,repository,request:directWorkRequest,description:request,mode\}/);
 });

@@ -23,11 +23,13 @@ test('changing the voice reloads Bubbles TTS without reauthorizing microphone', 
   const main = read('MainActivity.java');
   assert.match(service, /ACTION_REFRESH_VOICE/);
   assert.match(service, /if \(connected\) \{\s*silenceReply\(\);\s*reloadSpeechEngine\(\)/);
-  assert.match(service, /if \(!savedName\.isEmpty\(\) && savedEngine\.equals\(tts\.getDefaultEngine\(\)\)\)/);
+  // An explicitly selected TTS engine takes precedence over Android's default.
+  assert.match(service, /if \(!savedName\.isEmpty\(\) && savedEngine\.equals\(selectedEngine == null \? tts\.getDefaultEngine\(\) : selectedEngine\)\)/);
   assert.match(service, /tts\.setVoice\(voice\)/);
   assert.match(service, /tts\.setLanguage\(Locale\.US\)/);
   assert.match(main, /BubblesVoicePicker\.show\(this, state::setText\)/);
-  assert.match(main, /com\.android\.settings\.TTS_SETTINGS/);
+  // MainActivity uses the installed-voice picker; it no longer requires an
+  // unrelated Android Settings activity merely to refresh the chosen voice.
 });
 
 test('voice samples are local and do not introduce a new voice provider network call', () => {

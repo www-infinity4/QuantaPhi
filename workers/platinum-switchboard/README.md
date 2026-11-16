@@ -56,3 +56,25 @@ to `/phone/index.html`. The web phone needs the edge route published in order
 to serve user-specific addresses.
 
 Run `node --test test/platinum-phone.test.cjs` with Node 20+.
+
+## Bubbles → Motorola carrier dialer handoff (October 22, 2026)
+
+The phone page includes a **Bubbles · prepare a phone call** panel. The owner
+enters the intended recipient's number and exact message, reviews the proposed
+AI introduction, then taps **Open my phone dialer**. Browser code generates
+only a bounded, validated `tel:+...` URI, never silently starts a call.
+In the native Bubbles WebView, only an observed user gesture from the
+first-party `/phone/` page can open Android `ACTION_DIAL`; Android must
+still receive a separate human tap to place the carrier call. No
+`CALL_PHONE` permission is requested, no contact list is scraped, and the
+message is not sent to the switchboard or Robot Brain. The private preview
+is not a recorded or delivered voicemail.
+
+**Not yet available:** letting Bubbles listen to the recipient and speak
+back through the existing cellular call, or place a fully autonomous PSTN call.
+Android `ACTION_DIAL` does not provide access to both sides of a cellular
+conversation. That requires a separate, authenticated bidirectional telephony
+provider or an eligible app-managed VoIP session, verified caller identity,
+explicit owner confirmation, opt-out/hang-up handling, abuse controls, and
+real handset/provider acceptance. Do not call this feature an AI phone agent
+until real two-way audio, live receipts and consent are verified.

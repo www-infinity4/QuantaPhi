@@ -4,6 +4,7 @@ const object=(properties={},required=Object.keys(properties))=>({type:'object',p
 const string=(maxLength,description)=>({type:'string',minLength:1,maxLength,description});
 const definitions=[
  ['read_repository','Read the selected repository default branch and immutable head SHA.',object(),'read'],
+ ['search_code','Search GitHub indexed code within the selected owner repository to find exact existing paths before read_file. Read only; index results can be incomplete.',object({query:string(160,'Keywords or filename to find in selected repository')}),'read'],
  ['read_file','Read a file at the inspected immutable head SHA. Missing files return exists:false.',object({path:string(240,'Repository-relative file path'),ref:{type:'string',pattern:'^[a-f0-9]{40}$',description:'Head SHA returned by read_repository'}}),'read'],
  ['list_runs','Read actual recent workflow runs, including status and conclusion.',object(),'read'],
  ['read_run','Read actual workflow run, job and step status at a discovered numeric run ID. CI success does not prove deployment or device behavior.',object({runId:{type:'integer',minimum:1,maximum:9007199254740991,description:'Exact run ID returned by list_runs'}}),'read'],

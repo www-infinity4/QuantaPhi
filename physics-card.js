@@ -41,7 +41,7 @@
     if (typeof document !== 'undefined') {
       const el = document.getElementById('buyer-count');
       if (el) {
-        el.textContent = `Verified buyers: ${getPhysicsCardBuyerCount()}`;
+        el.textContent = `Designs saved on this device: ${getPhysicsCardBuyerCount()}`;
       }
     }
   }

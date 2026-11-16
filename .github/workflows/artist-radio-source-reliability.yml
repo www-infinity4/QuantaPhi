@@ -1,0 +1,27 @@
+name: Artist radio source reliability
+on:
+  pull_request:
+    paths:
+      - 'steve-miller-book-of-dreams.js'
+      - 'classic-rock-official-card.mjs'
+      - 'index.html'
+      - 'test/artist-radio-source-reliability.test.mjs'
+      - 'test/steve-miller-book-of-dreams.test.mjs'
+      - 'test/artist-music-source-playback.test.mjs'
+      - 'test/infinity-radio-music-card-controls.test.mjs'
+      - '.github/workflows/artist-radio-source-reliability.yml'
+permissions:
+  contents: read
+jobs:
+  test-artist-radio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify artist radio source contracts
+        run: |
+          node --check steve-miller-book-of-dreams.js
+          node --test test/artist-radio-source-reliability.test.mjs test/steve-miller-book-of-dreams.test.mjs test/artist-music-source-playback.test.mjs test/infinity-radio-music-card-controls.test.mjs test/inline-rock-playback-regression.test.mjs test/classic-rock-official-card.test.mjs

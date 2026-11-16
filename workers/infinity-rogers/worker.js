@@ -1,3 +1,4 @@
+const COLLAB_PATH='/v1/ai/collaborate';
 const ALLOWED_ORIGINS = new Set([
   "https://www-infinity4.github.io",
   "https://oracle-card-studio.pages.dev",
@@ -28,7 +29,7 @@ function cors(request) {
   return ALLOWED_ORIGINS.has(origin)
     ? {
         "Access-Control-Allow-Origin": origin,
-        "Access-Control-Allow-Headers": "Content-Type, X-Request-ID, Idempotency-Key, X-Oracle-Contract, X-Infinity-User",
+        "Access-Control-Allow-Headers": "Authorization, Content-Type, X-Request-ID, Idempotency-Key, X-Oracle-Contract, X-Infinity-User",
         "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
         "Access-Control-Max-Age": "86400",
         Vary: "Origin",
@@ -882,6 +883,23 @@ export default {
 
     if (request.method === "POST") {
       if (!originAllowed(request)) return json(request, { ok: false, error: "origin_not_allowed" }, 403);
+      if(url.pathname==='/v1/ai/card/gemini'){
+         const {handleGeminiCard}=await import('./gemini-card.mjs');
+         const result=await handleGeminiCard(request,env);
+         return new Response(result.body,{status:result.status,headers:{...headers(request)}});
+       }
+       if(url.pathname === '/v1/claude/steward'){
+        const {handleSteward}=await import('./claude-steward.mjs');
+        const result=await handleSteward(request,env);
+        // Preserve the original Response status/body while adding first-party CORS.
+        for(const [key,value] of Object.entries(headers(request)))result.headers.set(key,value);
+        return result;
+      }
+      if(url.pathname===COLLAB_PATH){
+        const {handleCollaboration}=await import('./ai-collaboration.mjs');
+        const result=await handleCollaboration(request,env);
+        return new Response(result.body,{status:result.status,headers:{...headers(request)}});
+      }
       if (url.pathname === "/v1/research-source-excerpts") return runResearchSourceExcerpts(request);
       if (url.pathname === "/v1/image") return runImage(request, env);
       if (url.pathname === "/v1/comfy-image") return runComfyProxy(request, env);

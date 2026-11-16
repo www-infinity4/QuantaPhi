@@ -1,0 +1,33 @@
+name: RecordB Bubbles recorder card
+on:
+  pull_request:
+    paths:
+      - 'recordb-card.mjs'
+      - 'bubbles-ai.js'
+      - 'bubbles-brain-actions.js'
+      - 'workers/infinity-brain-clock/direct-github.mjs'
+      - 'test/recordb-*.test.*'
+      - 'test/bubbles-direct-github.test.mjs'
+      - '.github/workflows/recordb-chat.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'recordb-card.mjs'
+      - 'bubbles-ai.js'
+      - 'bubbles-brain-actions.js'
+      - 'workers/infinity-brain-clock/direct-github.mjs'
+      - 'test/recordb-*.test.*'
+      - 'test/bubbles-direct-github.test.mjs'
+      - '.github/workflows/recordb-chat.yml'
+permissions:
+  contents: read
+jobs:
+  recordb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check bubbles-ai.js && node --check recordb-card.mjs && node --check workers/infinity-brain-clock/direct-github.mjs
+      - run: node --test test/recordb-card.test.mjs test/recordb-integration.test.cjs test/bubbles-direct-github.test.mjs

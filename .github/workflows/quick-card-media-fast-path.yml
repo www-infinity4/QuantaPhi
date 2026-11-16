@@ -1,0 +1,32 @@
+name: Quick Card source media fast-path
+on:
+  pull_request:
+    paths:
+      - 'card-source-images.mjs'
+      - 'quick-card-spotlights.mjs'
+      - 'test/card-source-images.test.mjs'
+      - 'test/quick-card-spotlights.test.mjs'
+      - '.github/workflows/quick-card-media-fast-path.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'card-source-images.mjs'
+      - 'quick-card-spotlights.mjs'
+      - 'test/card-source-images.test.mjs'
+      - 'test/quick-card-spotlights.test.mjs'
+jobs:
+  media:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check source-image and spotlight module syntax
+        run: |
+          node --check card-source-images.mjs
+          node --check quick-card-spotlights.mjs
+      - name: Test parallel source-image fallback and bounded source-feed freshness
+        run: node --test test/card-source-images.test.mjs test/quick-card-spotlights.test.mjs

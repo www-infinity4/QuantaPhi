@@ -1,0 +1,61 @@
+name: Infinity Wireless planning intake contracts
+on:
+  pull_request:
+    paths:
+      - 'wireless/**'
+      - 'workers/infinity-wireless/**'
+      - 'workers/infinity-wireless-page/**'
+      - 'test/infinity-wireless.test.mjs'
+      - 'test/infinity-wireless-site.test.mjs'
+      - 'test/infinity-wireless-page.test.mjs'
+      - 'test/infinity-wireless.browser.spec.mjs'
+      - '.github/workflows/infinity-wireless-contracts.yml'
+  push:
+    branches: [main, 'feature/bubbles-wireless-card-20261102']
+    paths:
+      - 'wireless/**'
+      - 'workers/infinity-wireless/**'
+      - 'workers/infinity-wireless-page/**'
+      - 'test/infinity-wireless.test.mjs'
+      - 'test/infinity-wireless-site.test.mjs'
+      - 'test/infinity-wireless-page.test.mjs'
+      - 'test/infinity-wireless.browser.spec.mjs'
+      - '.github/workflows/infinity-wireless-contracts.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and fail-closed contract tests
+        run: |
+          node --check workers/infinity-wireless/worker.mjs
+          node --check wireless/order.mjs
+          node --test test/infinity-wireless.test.mjs
+          node --test test/infinity-wireless-site.test.mjs
+          node --test test/infinity-wireless-page.test.mjs
+      - name: Read back isolated Cloudflare staging health
+        run: |
+          node --input-type=module -e '
+            const response=await fetch("https://quantaphi-infinity-wireless-orders.marvaseater.workers.dev/api/wireless/health");
+            const body=await response.json();
+            if(response.status!==200||body.ok!==true||body.service!=="infinity-wireless-intake"||body.storage!=="connected"||body.serviceActive!==false){
+              console.error("Cloudflare staging intake not verified:",response.status,body);
+              process.exit(1);
+            }
+            console.log("Verified isolated D1-backed Worker health; no cellular service is active.");
+          '
+      - name: Install Chromium browser for mobile acceptance
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Chromium browser acceptance at 320 / 360 / 393 / 720
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 > /tmp/infinity-wireless-browser.log 2>&1 &
+          npx playwright test test/infinity-wireless.browser.spec.mjs --reporter=line --workers=1

@@ -37,7 +37,7 @@ export default {
   async fetch(request,env) {
     const url=new URL(request.url),origin=request.headers.get("Origin");
     if(request.method==="GET" && url.pathname==="/health")
-      return reply(200,{ok:true,configured:Boolean(env.OPENAI_API_KEY&&env.BUBBLES_LIVE_OWNER_TOKEN)},null);
+      return reply(200,{ok:true,configured:Boolean(env.OPENAI_API_KEY&&String(env.BUBBLES_LIVE_OWNER_TOKEN||'').length>=32)},origin);
     if(url.pathname!==path)return reply(404,{error:"Not found"},origin);
     if(origin!==ORIGIN)return reply(403,{error:"Origin denied"},origin);
     if(request.method==="OPTIONS")return new Response(null,{

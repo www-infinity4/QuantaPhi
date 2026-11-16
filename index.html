@@ -35,7 +35,9 @@
 <link rel="stylesheet" href="/radio-clubhouse.css?v=20261013-cards2">
 <link rel="stylesheet" href="/phi-image-builder.css?v=20261013-cards2">
 <link rel="stylesheet" href="/oracle-video-studio.css?v=20261013-studio1">
-<link rel="stylesheet" href="/phi-story-writer.css?v=20261014-history-ideas3"><link rel="stylesheet" href="/bubbles-ai.css?v=20261019-chat-repair1">
+<link rel="stylesheet" href="/pixie-card.css?v=20261023-card1">
+<link rel="stylesheet" href="/phi-story-writer.css?v=20261014-history-ideas3"><link rel="stylesheet" href="/bubbles-ai.css?v=20261101-activity-contrast2">
+<link rel="stylesheet" href="/bubbles-live-iteration-feed.css?v=20261106-inthread-iterations2">
 <link rel="stylesheet" href="/quanta-agent-iterations.css?v=20261010-work-portals1">
 <link rel="stylesheet" href="/phi-book-illustrations.css?v=20261008-book-image1-electric3">
 <link rel="stylesheet" href="/fred-spaces-radio.css?v=20261009-full-fred1">
@@ -97,13 +99,32 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 #result .qbranch-actions :is(button,a),#result .qregion-act,
 #result .qassim-actions :is(button,a){appearance:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid #bf9ce9;border-radius:999px;background:linear-gradient(145deg,#fefbff,#ecdfff);color:#542783;font:700 12px/1.3 inherit;text-decoration:none;padding:8px 12px;min-height:34px;box-shadow:0 0 8px #9c62e455;cursor:pointer}
 #result .qregion-act{margin:6px 0 0 5px}
-#result .qassim-package{list-style:none;margin:12px 0;padding:16px;border:1px solid #ae76ff;border-radius:19px;background:linear-gradient(125deg,#32115d,#22103e);box-shadow:inset 0 0 24px #7534b52a,0 0 15px #8e4cde50}
-#result .qassim-package strong{display:block;font-size:17px}
-#result .qassim-package p{margin:8px 0;line-height:1.5}
-#result .qassim-package small{display:block;color:#ddc9fc;line-height:1.5}
-#result .qassim-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
-#result .qassim-count{display:block;color:#d7c4ee;font-size:11px;line-height:1.5;margin-top:10px}
-#result .qzonePurple #qPurpleList{padding:0;list-style:none}
+/* Accessible Oracle Octaves research cards — no dark-on-dark inherited type. */
+#result .qzonePurple #qPurpleList{display:grid;gap:14px;padding:0;margin:16px 0 0;list-style:none;min-width:0}
+#result .qassim-package{list-style:none;margin:12px 0;padding:18px;min-width:0;box-sizing:border-box;border:1px solid #d8c7e6;border-left:5px solid #6a3292;border-radius:18px;background:linear-gradient(150deg,#fff,#fbf8ff);color:#342744;box-shadow:0 8px 22px #17052626}
+#result .qzonePurple #qPurpleList .qassim-package{margin:0;background:linear-gradient(150deg,#fff,#fbf8ff)!important;color:#342744!important;border-color:#d8c7e6!important;border-left-color:#6a3292!important}
+#result .qzonePurple .qassim-package :is(h4,strong,p,small),#result .qzonePurple .qassim-package{color:#342744!important;-webkit-text-fill-color:currentColor}
+#result .qassim-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px 12px}
+#result .qzonePurple .qassim-package .qassim-title{margin:0;flex:1 1 180px;font-size:19px;line-height:1.3;letter-spacing:0;font-weight:850;color:#2b1742!important;-webkit-text-fill-color:#2b1742}
+#result .qzonePurple .qassim-package .qassim-status{display:inline-flex;align-items:center;max-width:100%;padding:5px 9px;border-radius:999px;border:1px solid #d5bdea;background:#f0e6f8;color:#5b297f!important;-webkit-text-fill-color:#5b297f;font:800 12px/1.3 system-ui,sans-serif}
+#result .qzonePurple .qassim-package .qassim-description{margin:12px 0;color:#46364f!important;-webkit-text-fill-color:#46364f;font-size:16px;line-height:1.6;overflow-wrap:anywhere}
+#result .qzonePurple .qassim-package .qassim-topics{margin:12px 0 0;color:#584569!important;-webkit-text-fill-color:#584569;font-size:14px;line-height:1.55;overflow-wrap:anywhere}
+#result .qzonePurple .qassim-package .qassim-question{margin:14px 0 0;padding:12px 13px;border-radius:12px;border-left:3px solid #8550aa;background:#f4eef9;color:#342744!important;-webkit-text-fill-color:#342744;font-size:15px;line-height:1.5;overflow-wrap:anywhere}
+#result .qzonePurple .qassim-package .qassim-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}
+#result .qzonePurple .qassim-package .qassim-actions > :is(button,a){box-sizing:border-box;display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:50px;margin:0;padding:11px 14px;border:1px solid #b99bcf;border-radius:13px;background:#f5effa;color:#3d2360!important;-webkit-text-fill-color:#3d2360;text-decoration:none!important;text-align:center;font:800 15px/1.3 system-ui,sans-serif;white-space:normal;overflow-wrap:anywhere;box-shadow:none;cursor:pointer}
+#result .qzonePurple .qassim-package .qassim-actions > :first-child{background:#542779;color:#fff!important;-webkit-text-fill-color:#fff;border-color:#542779}
+#result .qzonePurple .qassim-package .qassim-actions > :last-child{grid-column:1/-1;background:#e9dbf7;border-color:#aa8bc6;color:#37204d!important;-webkit-text-fill-color:#37204d}
+#result .qzonePurple .qassim-package .qassim-actions > :is(button,a):focus-visible{outline:3px solid #2e92b9;outline-offset:3px}
+#result .qzonePurple .qassim-package .qassim-actions > :is(button,a):active{filter:brightness(.95)}
+#result .qzonePurple .qassim-package .qassim-source{display:inline-block;margin-top:14px;color:#4d267d!important;-webkit-text-fill-color:#4d267d;font-size:14px;font-weight:800;text-decoration:underline;overflow-wrap:anywhere}
+#result .qzonePurple .qassim-count{display:block;margin:15px 0;color:#eee5fc!important;-webkit-text-fill-color:#eee5fc;font-size:13px;line-height:1.55}
+@media(max-width:540px){
+ #result .qassim-package{padding:15px}
+ #result .qzonePurple .qassim-package .qassim-actions{grid-template-columns:minmax(0,1fr)}
+ #result .qzonePurple .qassim-package .qassim-actions > :last-child{grid-column:auto}
+ #result .qzonePurple .qassim-package .qassim-title{font-size:18px}
+}
+
 </style><style id="quantWalletStyle">
 .qwalletPanel{position:fixed;inset:0;z-index:9999;background:#f7f3fb;color:#21172b;padding:16px;overflow:auto}.qwalletHead{display:flex;align-items:center;justify-content:space-between;gap:12px}.qwalletHead h2{margin:0}.qwalletClose{border:0;border-radius:12px;padding:10px 14px;font-weight:900}.qwalletTabs{display:flex;gap:8px;margin:18px 0}.qwalletTabs button{flex:1;border:0;border-radius:14px;padding:12px;font-weight:900}.qwalletBox{background:#fff;border:1px solid #ddd2e8;border-radius:18px;padding:16px;margin-top:12px}.qwalletBox label{display:block;font-weight:800;margin:12px 0 5px}.qwalletBox input{box-sizing:border-box;width:100%;padding:12px;border:1px solid #b9a9c9;border-radius:12px;font-size:16px}.qwalletPrimary{width:100%;margin-top:14px;border:0;border-radius:14px;padding:13px;background:#5f259f;color:#fff;font-weight:900}.qwalletId{overflow-wrap:anywhere;font-family:monospace;background:#f3edf8;padding:12px;border-radius:12px}.qwalletMsg{margin-top:12px;font-weight:700}
 .book-shelf-link{margin:8px 0 16px}.book-shelf-link a{display:block;border-radius:999px;background:#fff4b8;border:1px solid #e7d17d;color:#382400;text-align:center;text-decoration:none;font-weight:900;padding:12px 14px}</style><script src="https://www-infinity4.github.io/C13b0/unified-token-count.js?v=20261002-stable3"></script><script src="asset-balances.js?v=20261004-authoritative1"></script><script src="cloud-wallet-client.js?v=20261011-account-selection1"></script><script src="music-quant-store.js?v=20261005-org-runtime1"></script><script src="music-quant-cloud.js?v=20261011-full-history1"></script><script>window.__quantaStarServerSettlement=true;</script><script src="wallet-runtime.js?v=20261010-masked-media-sync4" data-control-phi-wallet-only="true"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"992ccaa311754974becbcebf74de1b34"}'></script><script src="search-wallet-sync.js?v=20261005-pairedmint1"></script><script src="star-coin-cloud.js?v=20261010-reconcile-and-pay1"></script><script defer src="domain-health.js?v=20261004-org7"></script><style id="shoplcShirtStyle">
@@ -193,14 +214,22 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 @media(prefers-reduced-motion:reduce){.buttonPerson .bodyShoe{transition:none}}
 </style>
 <link rel="stylesheet" href="/phi-oracle-story-orange.css?v=20261009-orange-inline1">
-<link rel="stylesheet" href="/robot-directions.css?v=20261019-clear-jobs1">
+<link rel="stylesheet" href="/robot-directions.css?v=20261029-gpt-handoff1">
 <style>#quantaAgentIterations:not([data-owner-verified="1"]),#robotDirections:not([data-owner-verified="1"]){display:none!important}</style>
 <style>#quantaAgentIterations[hidden],#robotDirections[hidden]{display:none!important}</style>
-<link rel="stylesheet" href="/halloween-phi.css?v=20261013-cinema5">
-<link rel="stylesheet" href="/phi-channel-cards.css?v=20261015-inline1">
-<link rel="stylesheet" href="/oracle-card-deck.css?v=20261015-stage1">
+<link rel="stylesheet" href="/holiday-phi.css?v=20261102-holidays1">
+<link rel="stylesheet" href="/phi-channel-cards.css?v=20261103-recovery2">
+<link rel="stylesheet" href="/tv-501-expansion.css?v=20261103-q501tv1">
+<link rel="stylesheet" href="/government-501-affiliates.css?v=20261103-g501-1">
+<link rel="stylesheet" href="/oracle-card-deck.css?v=20261031-following-publisher1">
+<link rel="stylesheet" href="/developer-carousel.css?v=20261107-oracle-card2">
+<link rel="stylesheet" href="/developer-discovery.css?v=20261108-index-picker1">
+<link rel="stylesheet" href="/trending-movie-quick-cards.css?v=20261106-trend1">
+<link rel="stylesheet" href="/trending-apps-quick-cards.css?v=20261107-apps1">
+<link rel="stylesheet" href="/shop-phi-switchboard.css?v=20261105-hero-first1">
+<link rel="stylesheet" href="/google-trending-cards.css?v=20261102-mlb1">
 <link rel="stylesheet" href="/phi-project-cards.css?v=20261012-action1">
-<link rel="stylesheet" href="/shop-ad-phi.css?v=20261013-cards2">
+<link rel="stylesheet" href="/shop-ad-phi.css?v=20261028-recovery1">
 <style id="regular-search-repair">.search{flex-wrap:wrap}.search #q{flex:1 1 180px;min-width:0;font-size:16px;min-height:48px}.search #go{flex:0 0 auto;min-height:48px}.search>.public-card-count{flex-basis:100%;width:100%;margin:0}.web-search-item{padding:12px 0;border-bottom:1px solid #e6dfeb}.web-search-item a{color:#5f259f;font-weight:800;overflow-wrap:anywhere}.web-search-item p{line-height:1.5;color:#62596a}</style>
 <style id="quanta-menu-large-words">
 body.oracle-quanta #qmenu{box-sizing:border-box;min-width:min(340px,calc(100vw - 32px));max-width:calc(100vw - 32px);max-height:75dvh;overflow-x:hidden;overflow-y:auto;z-index:1000;padding:10px;border-radius:16px}
@@ -208,7 +237,7 @@ body.oracle-quanta #qmenu :is(a,button){display:flex;align-items:center;width:10
 body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-height:1.1}
 @media(min-width:700px){body.oracle-quanta #qmenu :is(a,button){font-size:19px!important}}
 </style>
-<link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1"><link rel="stylesheet" href="/bubbles-native-chat.css?v=20261015-readable29"><link rel="stylesheet" href="/bubbles-unified.css?v=20261020-chatfolders1"><link rel="stylesheet" href="/bubbles-mobile-access.css?v=20261020-android-scroll1">
+<link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1"><link rel="stylesheet" href="/bubbles-native-chat.css?v=20261015-readable29"><link rel="stylesheet" href="/bubbles-unified.css?v=20261105-owner-verified1"><link rel="stylesheet" href="/bubbles-mobile-access.css?v=20261020-android-scroll1">
   <link rel="stylesheet" href="/bubbles-octaves-chat.css?v=20261020-octaves-chat3">
 <style id="quanta-bubbles-entry-styles">
 .q-bubbles-entry{margin:6px 0 15px;padding:13px 15px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border:1px solid #d2bde5;border-radius:16px;background:#f7efff;color:#322041}
@@ -221,41 +250,299 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
 .q-bubbles-entry-actions a:focus-visible{outline:3px solid #2189cb;outline-offset:2px}
 @media(max-width:540px){.q-bubbles-entry-actions{width:100%}.q-bubbles-entry-actions a{flex:1 1 0}}
 </style>
+<link rel="stylesheet" href="/site-footer.css?v=20261022-privacy1"><style id="quanta-search-first-fix">
+/* Search is the homepage's primary control. Bubbles administration lives on its own page / APK. */
+body.oracle-quanta .search{position:sticky;top:0;z-index:40;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:stretch;margin:6px 0 12px;padding:10px 0;background:#f8f5f2;box-shadow:0 5px 12px #29201912}
+body.oracle-quanta .search #q{box-sizing:border-box;width:100%;min-width:0;min-height:56px;padding:13px 15px;border:2px solid #8a6b8c;border-radius:14px;background:#fff;color:#21162c;font:500 17px/1.4 system-ui,sans-serif}
+body.oracle-quanta .search #go{box-sizing:border-box;min-height:56px;padding:10px 21px;border:2px solid #8a2530;border-radius:14px;background:#a32b32;color:#fff;font:800 16px/1.3 system-ui,sans-serif;cursor:pointer}
+body.oracle-quanta .search #q:focus-visible,body.oracle-quanta .search #go:focus-visible{outline:3px solid #40a1ca;outline-offset:2px}
+body.oracle-quanta #robotBrainOwner,body.oracle-quanta #bubblesAICard,body.oracle-quanta .q-bubbles-entry{display:none!important}
+/* Only installer LINKS are tucked into the closed APK disclosure. Bubbles orb/voice remains active. */
+body.oracle-quanta .q-install-details{margin:6px 0 14px}
+body.oracle-quanta .q-install-details nav{display:flex;flex-direction:column;gap:6px;padding:14px 4px}
+body.oracle-quanta .q-install-details a{font-size:16px;min-height:44px;padding:9px 12px}
+
+body.oracle-quanta .qcp-builder-shortcut{display:none!important}
+@media(max-width:420px){body.oracle-quanta .search{gap:7px}body.oracle-quanta .search #q{font-size:16px;padding:10px}body.oracle-quanta .search #go{padding:10px 13px;font-size:15px}}
+</style><link rel="stylesheet" href="/walmart-card.css?v=20261024-pizza1"><link rel="stylesheet" href="/brand-product-cards.css?v=20261024-real-products1">
+<link rel="stylesheet" href="/denver-retail-quick-cards.css?v=20261101-retail1">
+<link rel="stylesheet" href="/home-mobile-cards-first.css?v=20261031-scroll-top2">
+<link rel="stylesheet" href="/oracle-card-spotlight.css?v=20261027-livespot1">
+<link rel="stylesheet" href="/quick-card-search.css?v=20261028-search1">
+
+<link rel="stylesheet" href="/live-tv-cards.css?v=20261102-player1">
 </head>
-<body class="oracle-surface oracle-quanta oracle-octaves-home"><main class="app">
+<body class="oracle-surface oracle-quanta oracle-octaves-home"><script>document.body.classList.add('oracle-card-deck-active');</script><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Open menu" aria-controls="qmenu" aria-expanded="false">☰</button><h1>Quantaφ</h1><button class="qnewSearch" id="qNewSearch" type="button" aria-label="Start a new search">＋ New Search</button>
-<button class="enroll-btn btn btn-primary" aria-label="Enroll">Enroll</button><div class="qbalances" aria-live="polite" data-control-phi-wallet-host><button class="qtoken" id="qinfinity" type="button" title="Infinity website tokens">Infinity: —</button><button class="qtoken" id="qtoken" type="button" title="Spendable Quants">Quants: —</button><button class="qstar" id="controlPhiWalletButton" type="button" aria-label="Open unified wallet" aria-expanded="false"><span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong data-control-phi-wallet-balance>0</strong><small data-control-phi-wallet-progress>0/10</small></button></div><nav class="qmenu" id="qmenu" hidden><button id="qshare" type="button">Share +0.1 ★</button><button id="qmenuWallet" type="button">Unified Wallet ⭐</button><a href="/about.html">About QuantaPhi</a><a href="/learn/">Learn</a><a href="/explore/">Explore AI Tools</a><a href="/platinum/index.html">Infinity Platinum · Browse / Collect / Create</a><a href="#phiStoryWriter">Story Writer</a><a href="#bubblesAICard">Bubbles AI card</a><a href="/bubbles.html">Bubbles page</a><a href="/test-ground-ai/">Test Ground AI</a><a href="/apps/index.html">Install all Chrome apps</a><a href="/bubbles-chrome.html">Install Bubbles Chrome app</a><a href="/bubbles-accounts.html">Connect accounts · Bubbles</a><a href="/resonance.html">Resonance Calculator</a><a href="https://www-infinity4.github.io/Infinity-Phi/">Infinity Phi</a><a href="https://www-infinity4.github.io/Omni-Phi/">Omni Phi</a><a href="https://www-infinity4.github.io/News-Phi/">News Phi</a><a href="https://www-infinity4.github.io/Alien-Radio/">Infinity Radio</a><a href="#result">Overview</a><button id="qHistoryBtn" type="button">Build History</button><button class="mediaNav" id="qImagesBtn" type="button">Images</button><button class="mediaNav" id="qVideoBtn" type="button">Video</button><button class="mediaNav" id="qSoundBtn" type="button">Sound</button><a href="#media">Media</a></nav></div><p class="sub">AI research and source-backed overviews · image and video tools · stories · Bubbles voice assistant</p><p style="margin:-10px 0 10px;font-size:14px"><a href="/about.html" style="color:#5f259f;text-underline-offset:3px">About QuantaPhi &amp; Quants</a> · <a href="/learn/" style="color:#5f259f">Learn</a> · <a href="/explore/" style="color:#5f259f">Explore AI Tools</a> · <a href="/bubbles.html" style="color:#5f259f;font-weight:900">Bubbles page</a> · <a href="/apps/index.html" style="color:#5f259f;font-weight:900">Install 15 Chrome apps</a> · <a href="/bubbles-chrome.html" style="color:#5f259f;font-weight:900">Install Bubbles Chrome app</a> · <a href="/platinum/index.html" style="color:#4a5263;font-weight:800">Infinity Platinum Browser ↗</a> · <a href="/bubbles-accounts.html" style="color:#5f259f;font-weight:800">Bubbles Account Connections</a> · <a href="/downloads/bubbles.apk" data-apk-download="bubbles">Download Bubbles APK <span data-apk-version="bubbles">— checking version</span></a> · <strong role="status" data-platinum-security-hold style="color:#a51c30">Infinity Platinum APK withdrawn pending security review — do not install the preview.</strong></p>
-<script src="/apk-downloads.js" defer></script>
-<section class="q-bubbles-entry" aria-label="Open Bubbles AI assistant">
-  <div class="q-bubbles-entry-copy"><strong>Bubbles AI</strong><span>Talk, research and work with your Robot Brain team</span></div>
-  <div class="q-bubbles-entry-actions">
-    <a class="q-bubbles-entry-primary" href="/bubbles.html">Open Bubbles →</a>
-    <a class="q-bubbles-entry-secondary" href="/bubbles-chrome.html">Install in Chrome</a>
-  </div>
-</section>
+<button class="enroll-btn btn btn-primary" aria-label="Enroll">Enroll</button><div class="qbalances" aria-live="polite" data-control-phi-wallet-host><button class="qtoken" id="qinfinity" type="button" title="Infinity website tokens">Infinity: —</button><button class="qtoken" id="qtoken" type="button" title="Spendable Quants">Quants: —</button><button class="qstar" id="controlPhiWalletButton" type="button" aria-label="Open unified wallet" aria-expanded="false"><span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong data-control-phi-wallet-balance>0</strong><small data-control-phi-wallet-progress>0/10</small></button></div><nav class="qmenu" id="qmenu" hidden><button id="qshare" type="button">Share +0.1 ★</button><button id="qmenuWallet" type="button">Unified Wallet ⭐</button><a href="/design-lab/index.html">Design Lab · Power Chain</a><a href="/about.html">About QuantaPhi</a><a href="/quanta-sources.html">Sources &amp; Cooperatives</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a><a href="/explore/">Explore AI Tools</a><a href="/trending-now.html">Trending tools</a><a href="/platinum/index.html">Infinity Platinum · Browse / Collect / Create</a><a href="#phiStoryWriter">Story Writer</a><a href="/bubbles.html">Bubbles page</a><a href="/downloads/bubbles.apk" data-apk-download="bubbles">Bubbles Android APK</a><a href="/test-ground-ai/">Test Ground AI</a><a href="/terriphi/">TerriPhi · Haunted Arcade</a><a href="/petriphi/">PetriPhi · Halloween Art Studio</a><a href="/apps/index.html">Install all Chrome apps</a><a href="/bubbles-chrome.html">Install Bubbles Chrome app</a><a href="/bubbles-accounts.html">Connect accounts · Bubbles</a><a href="/bubbles-identity-settings.html">Identity &amp; Documents · Bubbles</a><p role="status" data-platinum-security-hold style="font-size:13px;line-height:1.4;color:#682825;margin:8px 10px">Infinity Platinum APK withdrawn pending security review. Do not install the preview.</p><a href="/resonance.html">Resonance Calculator</a><a href="https://www-infinity4.github.io/Infinity-Phi/">Infinity Phi</a><a href="https://www-infinity4.github.io/Omni-Phi/">Omni Phi</a><a href="/newsroom/index.html">News Phi · Original Articles</a><a href="https://www-infinity4.github.io/News-Phi/">News Phi</a><a href="https://www-infinity4.github.io/Alien-Radio/">Infinity Radio</a><a href="#result">Overview</a><button id="qHistoryBtn" type="button">Build History</button><button class="mediaNav" id="qImagesBtn" type="button">Images</button><button class="mediaNav" id="qVideoBtn" type="button">Video</button><button class="mediaNav" id="qSoundBtn" type="button">Sound</button><a href="#media">Media</a></nav></div>
 <div class="search" role="search" aria-label="QuantaPhi search"><input id="q" type="search" enterkeyhint="search" aria-label="Search anything" autocomplete="off" placeholder="Search anything…"><button id="go" type="button">Search</button></div>
+<section aria-label="News Phi articles and latest headlines" style="margin:10px 0 14px;background:#fff;border:1px solid #d9e1e9;border-radius:14px;padding:15px 17px;color:#283849;line-height:1.55">
+ <p style="margin:0 0 4px;font-size:.75rem;letter-spacing:.08em;font-weight:800;color:#50677d">NEWS PHI · ORIGINAL REPORTING</p>
+ <p style="margin:0;font-size:1rem">Read the newest complete original reports, plus continuously updated source-backed news. Older editions are preserved in the archive. <a href="/newsroom/index.html" style="font-weight:800">Open News Phi's current newsroom →</a></p>
+</section>
+<details id="qtraffic" class="qtraffic-compact" aria-label="Cloudflare recorded website traffic; expand for counting details">
+<summary><span class="qtraffic-compact-label">Site traffic</span><span><strong id="qtrafficRequests" aria-live="polite">—</strong> requests</span><span><strong id="qtrafficViews" aria-live="polite">—</strong> views</span><span class="qtraffic-toggle" aria-hidden="true">Details</span></summary>
+<div class="qtraffic-expanded"><small id="qtrafficNote">Loading recorded Cloudflare traffic and verification details…</small>
+<button id="qtrafficRefresh" type="button" aria-label="Request a new Cloudflare traffic verification" style="display:block;margin-top:8px;border:1px solid #b5c9d3;border-radius:10px;background:#f4f9fc;color:#164965;padding:7px 12px;font-weight:700;cursor:pointer">Refresh Cloudflare traffic</button>
+<noscript>JavaScript is required to load verified Cloudflare traffic. These totals include bots and are not unique visitors.</noscript></div>
+</details><script src="/site-traffic.js?v=20261103-manual-cloudflare1" defer></script><script src="/apk-downloads.js" defer></script>
+<script src="/quick-infinity-radio.js?v=20261106-artist-audio-stop" defer></script>
+<p class="sub">Research anything · compare original sources · build and collect interactive QuantaPhi cards</p>
 <div class="qrefine" id="qrefineWrap" hidden><input id="qrefine" autocomplete="off" placeholder="Refine this entity…"><button id="qrefineBtn" type="button">Refine</button></div>
 <div id="status" role="status" aria-live="polite"></div>
+<section id="quickCardSearchResults" aria-label="Matching website Quick Cards" hidden></section>
+<section id="walmartShoppingCard" class="card" aria-label="Walmart shopping card" data-walmart-item="19668500198">
+ <header class="walmart-card-header"><a class="walmart-card-brand" href="https://www.walmart.com/" aria-label="Walmart"><img src="https://i5.walmartimages.com/dfw/63fd9f59-14e2/9d304ce6-96de-4331-b8ec-c5191226d378/v1/spark-icon.svg" alt="" width="34" height="34">Walmart</a><span class="walmart-card-label">Grocery<br>Frozen pizza</span></header>
+ <div class="walmart-card-photo"><img data-walmart-image src="https://i5.walmartimages.com/seo/bettergoods-Woodfired-Crust-Mediterranean-Pizza-5-7oz-Single-Serve-Frozen_318c1481-cc5b-40f8-989e-e2fc0be1099d.8963c93f9e485ce82e3b87c5ce4b5507.jpeg?odnHeight=573&amp;odnWidth=573&amp;odnBg=FFFFFF" alt="bettergoods Mediterranean Pizza — product photo from Walmart" width="573" height="573" fetchpriority="high"><p data-walmart-image-error hidden>Product photo unavailable. View the original item at Walmart below.</p></div>
+ <h2 data-walmart-title>bettergoods Woodfired Crust Mediterranean Pizza</h2>
+ <p class="walmart-card-size" data-walmart-size>Single serve · 5.7 oz · Frozen</p>
+ <p class="walmart-card-description" data-walmart-description>A single-serve Mediterranean pizza with a woodfired crust. Keep frozen and follow the package cooking instructions.</p>
+ <div class="walmart-card-offer"><strong class="walmart-card-price" data-walmart-price>$3.87</strong><span class="walmart-card-price-label">Listed at Walmart · USD</span></div>
+ <div class="walmart-card-actions"><a class="walmart-card-buy" data-walmart-buy href="https://www.walmart.com/ip/bettergoods-Woodfired-Crust-Mediterranean-Pizza-5-7oz-Single-Serve-Frozen/19668500198">Buy it now at Walmart →</a><button class="walmart-card-next" data-walmart-next type="button">Next Walmart item →</button></div>
+ <p class="walmart-card-position" data-walmart-position aria-live="polite">1 of 4 Walmart picks</p>
+ <p class="walmart-card-note">Price checked October 24, 2026. Your store, price and availability are confirmed at Walmart.</p>
+ <p class="walmart-card-note">Independent QuantaPhi product feature · Walmart photo and branding. No Walmart sponsorship claimed.</p>
+</section>
+<section id="pixieStoryCard" class="card" aria-labelledby="pixieCardHeading">
+  <p class="pixie-kicker">✧ STORYBOOK CORNER · PIXIE STORIES</p>
+  <div class="pixie-head"><span class="pixie-flower" aria-hidden="true">✿</span><div>
+    <h2 id="pixieCardHeading">Pixie Stories</h2><p style="margin:5px 0 0;color:#976184;font-weight:750;font-size:13px">A little magic in every page</p>
+  </div></div>
+  <p class="pixie-lead">Discover original story cards written with Story Writer AI. Everyone can read published stories; only Pixie’s verified writer can publish.</p>
+  <div class="pixie-actions">
+    <a href="/pixie/" aria-label="Open Pixie Stories public library">✿ Open Pixie Stories →</a>
+    <a href="/pixie/#pixie-chat" aria-label="Visit Pixie's questions and chatbot preview">✧ Ask Pixie</a>
+  </div>
+  <p class="pixie-note">The public preview is available. New story publishing, private passkey sign-in, and Bubbles conversation requests are not activated yet.</p>
+</section>
+<section id="quantaDirectoryCards" class="card" aria-label="Searchable public contacts, website directory and karaoke studio" style="background:#fff8f2;border:1px solid #e7c9bb;border-radius:18px;margin:16px 0;padding:clamp(16px,3vw,24px);color:#2d2223">
+ <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a12e32;font-weight:900">INFINITY 2026® · DISCOVER & CONNECT</p>
+ <h2 style="margin:7px 0;font-size:clamp(1.4rem,4vw,2.3rem)">Find a name. Find a website. Find your song.</h2>
+ <p style="max-width:720px;line-height:1.55;color:#65534d">Fast search-first cards: verified organization phone numbers, curated official websites, and a singing studio with private voice playback. Choose the experience that interests you.</p>
+ <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:12px;margin:17px 0">
+ <article style="background:#fff;border:1px solid #d7dee2;border-radius:16px;padding:18px;box-shadow:0 6px 18px #203b490e">
+  <p aria-hidden="true" style="font-size:32px;margin:0">▦</p><h3 style="margin:8px 0">Infinity Business Directory</h3>
+  <p>Search real Denver shops and restaurants, then expand through Cloudflare's 50-state city queue. Every listing identifies its source.</p>
+  <a href="/businesses/" style="display:inline-block;background:#365667;color:#fff;text-decoration:none;border-radius:11px;padding:11px 14px;font-weight:800">Search businesses ↗</a>
+ </article>
+ <article style="background:#fff;border:1px solid #ead6c9;border-radius:16px;padding:18px;box-shadow:0 6px 18px #48221a0e">
+  <p aria-hidden="true" style="font-size:32px;margin:0">☎</p><h3 style="margin:8px 0">Telephone directory</h3>
+  <p>Find official public organizations and published help lines, with original contact sources.</p>
+  <a class="inPageSite" data-site-url="/directory/?kind=organization" data-site-title="QuantaPhi public telephone directory" href="/directory/?kind=organization" style="display:inline-block;background:#a32d36;color:#fff;text-decoration:none;border-radius:11px;padding:11px 14px;font-weight:800">Search public contacts ↗</a>
+ </article>
+ <article style="background:#fff;border:1px solid #ead6c9;border-radius:16px;padding:18px;box-shadow:0 6px 18px #48221a0e">
+  <p aria-hidden="true" style="font-size:32px;margin:0">⌕</p><h3 style="margin:8px 0">Website directory</h3>
+  <p>Open useful, independently verified website destinations without a crowded portal.</p>
+  <a class="inPageSite" data-site-url="/directory/?kind=website" data-site-title="QuantaPhi website directory" href="/directory/?kind=website" style="display:inline-block;background:#a32d36;color:#fff;text-decoration:none;border-radius:11px;padding:11px 14px;font-weight:800">Explore websites ↗</a>
+ </article>
+ <article style="background:linear-gradient(140deg,#381e3e,#9c385a);color:#fff;border-radius:16px;padding:18px;box-shadow:0 6px 18px #48221a20">
+  <p aria-hidden="true" style="font-size:32px;margin:0">♫</p><h3 style="margin:8px 0">StarMaker song studio</h3>
+  <p>Search official song links, sing with permission, and play back your own take.</p>
+  <a class="inPageSite" data-site-url="/studio/" data-site-title="QuantaPhi singing studio" href="/studio/" style="display:inline-block;background:#fff;color:#83304d;text-decoration:none;border-radius:11px;padding:11px 14px;font-weight:800">Find a song & record ↗</a>
+ </article>
+ </div>
+ <p style="font-size:13px;color:#6e5a54">Public contact entries are source-verified. New business profiles require opt-in and moderation. Recorded audio stays local unless you download it.</p>
+</section>
+<section id="quantaDiscoveryFeed" class="qf-surface" hidden data-archived-feed="true" aria-label="QuantaPhi Public For You Following discovery feed">
+ <p role="status">Loading QuantaPhi discovery cards…</p>
+</section>
+<section id="premiumSourceCards" hidden data-oracle-widget-bank="true" aria-label="Collector, shopping, music and NASA source cards"></section>
+<section id="brandProductCards" hidden data-oracle-widget-bank="true" aria-label="Original retail-product quick cards"></section>
+<article id="coliseumZeusCard" class="iqc-card iac-card" data-source-ready="true" data-source-id="coliseum-zeus" data-source-name="Infinity Zeus 6.2">
+ <header class="iac-heading zc-heading">
+  <span class="iac-badge">∞ Infinity original</span><small>COLISEUM · BUILD</small>
+ </header>
+ <div class="iac-media zc-art" aria-hidden="true"><span>ϟ</span></div>
+ <div class="iac-content zc-main">
+  <span class="zc-kicker">INFINITY® · THE COLISEUM · FIRST ARENA</span>
+  <h2>ZEUS 6.2<br>GOD OF THUNDER</h2>
+  <p class="iac-intro"><strong>Build in the Coliseum.</strong> Enter an idea, challenge it constructively and branch into new projects with your team.</p>
+  <div class="iac-website-actions zc-links">
+   <a class="zc-cta" href="/coliseum/index.html#arena">Open Zeus builder →</a>
+   <a class="zc-cta-secondary" href="/coliseum/index.html#models">Explore editions →</a>
+  </div>
+  <a class="zc-discovery-shortcut" href="#zeusDiscoveryCarousel">↓ Watch Zeus &amp; creator tools</a>
+  <p class="iac-provenance zc-legal">Independent Infinity-built experience · Free Zeus prototype · No third-party AI model, public room or paid membership activated.</p>
+  <div id="coliseumZeusActions"></div>
+ </div>
+</article>
+<section id="identityShieldQuickCard" aria-label="Infinity Identity Shield public source research Quick Card"></section>
+<section id="bubblesIdentitySettingsCard" aria-label="Bubbles personal identity and documents settings"></section>
+<section id="disabilityHousingCard" class="card ha-launcher" aria-label="Home Access disability housing quick card"><p>Home Access · Housing help with SSI or SSDI income.</p><a href="/disability-housing.html">Start my housing intake →</a></section>
+<section id="infinityAcceptedCards" hidden data-oracle-widget-bank="true" aria-label="Infinity accepted brands"></section>
+<section id="verifiedBrandSportsCards" hidden data-oracle-widget-bank="true" aria-label="Verified brands, source-backed 2026 sports, health, civic, food, retail and travel cards"></section>
+<section id="siteQuickCards" class="card iqc-home-shelf" hidden data-oracle-widget-bank="true" aria-label="Completed source quick cards" style="background:#fff;border:1px solid #e1d3cb;border-radius:18px;padding:16px;margin:16px 0;color:#292222">
+  <p role="status" class="iqc-muted">Loading independent source cards…</p>
+</section>
+<section id="scienceQuickCards" class="card sqc-home-shelf" hidden data-archived-shelf="true" aria-label="Muse NASA James Webb science and technology quick cards" style="background:#fff;border:1px solid #e1d3cb;border-radius:18px;padding:16px;margin:16px 0;color:#292222">
+ <p role="status">Loading science and technology quick cards…</p>
+</section>
+<style id="sqc-home-css">
+.sqc-home-shelf .sqc-label{font-size:12px;letter-spacing:.08em;font-weight:850;color:#a12d2a;text-transform:uppercase}
+.sqc-home-shelf .sqc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(218px,1fr));gap:14px}
+.sqc-home-shelf .sqc-card{padding:16px;background:white;border:1px solid #e6d9ce;border-radius:16px;display:grid;gap:8px;align-content:start}
+.sqc-home-shelf .sqc-card h3,.sqc-home-shelf .sqc-card p{margin:0}
+.sqc-home-shelf .sqc-muted{color:#605650;font-size:14px}
+.sqc-home-shelf .sqc-button{display:inline-flex;align-items:center;justify-content:center;background:#aa302e;color:white;min-height:44px;padding:10px 12px;border-radius:12px;text-decoration:none;font-weight:750;margin:4px 0}
+.sqc-home-shelf a:focus-visible{outline:3px solid #ae6e32;outline-offset:3px}
+</style>
+<style id="iqc-home-css">
+.iqc-home-shelf .iqc-kind{font-size:11px;letter-spacing:.09em;color:#9a302a;font-weight:900;text-transform:uppercase}
+.iqc-home-shelf h2{font-size:1.45rem;margin:.3em 0}.iqc-home-shelf p{line-height:1.45}
+.iqc-home-shelf .iqc-muted{color:#655e5e;font-size:13px}.iqc-home-shelf .iqc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:10px}
+.iqc-home-shelf .iqc-card{border:1px solid #e9dcd5;border-radius:14px;padding:13px;background:#fffaf7;display:flex;flex-direction:column;gap:5px}
+.iqc-home-shelf .iqc-card h3{margin:0;font-size:1.13rem}.iqc-home-shelf .iqc-card p{margin:0}
+.iqc-home-shelf .iqc-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:10px}
+.iqc-home-shelf .iqc-actions a{display:inline-flex;align-items:center;min-height:44px;color:#99302c}
+.iqc-home-shelf .iqc-actions .iqc-primary{background:#af3434;color:#fff;border-radius:12px;text-decoration:none;padding:10px;font-weight:800;font-size:12px}
+.iqc-home-shelf a:focus-visible{outline:3px solid #c9823d;outline-offset:3px}
+</style>
+<section id="googleTrendNba" aria-label="Interactive trending NBA scoreboard"></section>
+<section id="googleTrendMlb" aria-label="Interactive MLB scores and match center"></section>
+<section id="googleTrendCulture" aria-label="Interactive trending entertainment research"></section>
+<p class="developer-jump"><a href="#developerCarousel">✦ Developer carousel · Build a Media Star, Quick Card or website</a></p>
 <section id="oracleCardDeck" class="oracle-card-deck" aria-label="Interactive Oracle widget viewer">
-  <div class="oracle-card-deck-head"><span class="oracle-card-deck-kicker">INFINITY 2026® · ORACLE INTERACTIVE</span><h2>Choose what happens next</h2>
-    <p>Watch a channel, read a true story, write one of your own, or work with Bubbles. Every card remains interactive.</p>
+
+  <div class="oracle-direction-tabs" role="tablist" aria-label="Choose card direction">
+    <button type="button" role="tab" data-oracle-feed="public" aria-selected="true">Public</button>
+    <button type="button" role="tab" data-oracle-feed="for-you" aria-selected="false">For You</button>
+    <button type="button" role="tab" data-oracle-feed="following" aria-selected="false">Following</button>
+  </div>
+  <section id="oracleFollowingFeed" class="oracle-following-feed" hidden aria-label="Listings and promotions from your followed publishers"></section>
+  <div class="oracle-family-jump" role="group" aria-label="Quickly open another type of card">
+    <button type="button" data-oracle-family="accepted">∞ Brands <span data-family-count>—</span></button>
+    <button type="button" data-oracle-family="website">↗ Websites &amp; sports <span data-family-count>—</span></button>
+    <button type="button" data-oracle-family="original">✦ Originals <span data-family-count>—</span></button>
   </div>
   <div class="oracle-card-deck-nav" role="group" aria-label="Flip interactive widgets">
-    <button id="oracleCardPrevious" type="button">◀ Previous</button>
+    <button id="oracleCardPrevious" type="button" aria-label="Previous card">‹</button>
     <strong id="oracleCardNow" aria-live="polite">Finding your next card…</strong>
-    <button id="oracleCardNext" type="button">Next most active ▶</button>
+    <button id="oracleCardFollow" type="button" aria-pressed="false" hidden>+ Follow</button>
+    <button id="oracleCardNext" type="button" aria-label="Next card">›</button>
+  </div>
+  <div class="oracle-direction-action">
+    <p id="oracleCardReason" role="status" aria-live="polite">Choosing another useful interactive card…</p>
+    <div class="oracle-essentials-jumps" role="group" aria-label="Open selected medicine cabinet Quick Cards">
+      <button type="button" data-oracle-spotlight="source-blue-star-ointment">Blue Star Ointment</button>
+      <button type="button" data-oracle-spotlight="source-neosporin-original-1oz">Neosporin Original</button>
+    </div>
   </div>
   <div class="oracle-card-deck-stage" id="oracleCardStage" aria-live="off"></div>
+  <details class="oracle-card-library"><summary id="oracleCardInventory">Choose a card</summary><label for="oracleCardChooser">Jump to an available card</label><select id="oracleCardChooser"><option value="">Choose a card…</option></select><p>Select any original interactive card or source experience.</p></details>
   <button id="oracleCardScroll" type="button" class="oracle-card-scroll" aria-expanded="false">↓ Scroll interactive cards / widgets</button>
   <p id="oracleCardStatus" class="oracle-card-deck-status" role="status" aria-live="polite"></p>
 </section>
+<section id="zeusDiscoveryCarousel" aria-labelledby="zeusDiscoveryHeading" aria-roledescription="carousel" class="zeus-discovery-carousel">
+ <div class="zdc-head">
+  <div>
+   <p class="zdc-eyebrow">INFINITY® · MODELS & CREATOR TOOLS</p>
+   <h2 id="zeusDiscoveryHeading">Zeus · Watch and choose an AI experience</h2>
+   <p>Scroll into a second, independent carousel. Watch Infinity editions and discover existing creator GPTs or plugins. Choose an experience to open its real destination.</p>
+  </div>
+ </div>
+ <div class="zdc-tabs" role="group" aria-label="Choose Zeus discovery collection">
+  <button type="button" data-zeus-tab="all" aria-pressed="true">All</button>
+  <button type="button" data-zeus-tab="infinity" aria-pressed="false">Infinity editions</button>
+  <button type="button" data-zeus-tab="creator" aria-pressed="false">Creator GPTs &amp; plugins</button>
+ </div>
+ <div class="zdc-controls" role="group" aria-label="Zeus carousel controls">
+  <button id="zeusDiscoverPrevious" type="button" aria-label="Previous Zeus discovery card">‹ Previous</button>
+  <p id="zeusDiscoverStatus" role="status" aria-live="polite">Loading Zeus discovery…</p>
+  <button id="zeusDiscoverNext" type="button" aria-label="Next Zeus discovery card">Next ›</button>
+  <button id="zeusDiscoverPlay" type="button" aria-pressed="false">Watch</button>
+  <button id="zeusDiscoverFullscreen" type="button">Fullscreen for screen cast</button>
+ </div>
+ <div id="zeusDiscoverStage" class="zdc-track" role="region" aria-label="Zeus and verified creator discovery slides" tabindex="0" aria-live="off"></div>
+ <p class="zdc-cast-note">To put this carousel on a TV, start Screen Cast or screen mirroring on your Android device, then use fullscreen here. Third-party GPTs and plugins open in their own provider app; no external accounts or AI replies are imported into this page.</p>
+ <span id="zeusDiscoverChoose" class="zdc-visually-hidden" aria-live="off" hidden></span>
+</section>
+<details class="q-install-details" aria-label="Android APK and Chrome app downloads"><summary>Apps, Android APK &amp; account connections</summary>
+<nav aria-label="Bubbles and app installers"><a href="/bubbles.html">Open Bubbles AI</a><a href="/downloads/bubbles.apk" data-apk-download="bubbles">Bubbles Android APK <span data-apk-version="bubbles"></span></a><a href="/bubbles-chrome.html">Install Bubbles in Chrome</a><a href="/bubbles-accounts.html">Bubbles account connections</a><a href="/apps/index.html">Other QuantaPhi apps</a></nav>
+</details>
 <section class="card" id="webSearchResults" aria-label="Web search results" aria-live="polite" hidden></section>
 <button id="refreshSearch" class="phi-control" aria-label="Refresh search results" onclick="window.location.reload();">Refresh</button>
 <section class="card" id="publicCardTrends" aria-label="Live activity and trending cards"></section>
-<section id="phiChannelCards" aria-label="StarQuest Omni TV Chiller ShopLC television cards"></section>
+<section id="phiChannelCards" aria-label="Infinity TV Guide with individual player cards"></section>
+<section id="tvQuantExpansion" aria-label="CNN CNBC NASA PBS and Quant ranked movies · video-only TV carousel"></section>
+<section id="trendingMovieCards" aria-label="Independent Google trending movie trailer cards in the Oracle carousel"></section>
+<section id="trendingAppCards" aria-label="Independent trending Android app cards including a Termux command pad"></section>
+<section id="infinityStarQuestCard" aria-label="StarQuest original video and selected show"></section>
+<section id="infinityOmniTvCard" aria-label="Omni TV remote and selected channel"></section>
+<section id="infinityChillerCard" aria-label="Chiller original video and scheduled selection"></section>
+<section id="infinityShopLcCard" aria-label="Shop LC live shopping channel"></section>
+<section id="liveFoxGameCard" aria-label="KYOU FOX 15.1 official news player"></section>
+<section id="liveFoxNewsCard" aria-label="LiveNOW from FOX inline live news"></section>
+<section id="infinityAdultContentCard" aria-label="Opt-in 21 plus content preferences"></section>
+<section id="steveMillerBookOfDreamsCard" aria-label="Steve Miller Book of Dreams inline album player"></section>
+<section id="classicRockOfficialMusicCard" aria-label="Classic Rock official artist music player and releases"></section>
+<section id="bruceBannerWeedmapsCard" data-personalization="disabled" aria-label="21 plus Bruce Banner ILLICIT Weedmaps source spotlight"></section>
+<section id="dispensary-livwell-colorado" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-livwell-central" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-native-roots-speer" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-native-roots-highlands" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-fired-sixth" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-fired-alameda" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-fired-cherry" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-lightshade-evans" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-lightshade-dayton" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-star-buds-lakeside" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-green-solution-wewatta" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-maikoh-broadway" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-the-dab-alameda" aria-label="21 plus independent dispensary listing"></section>
+<section id="dispensary-the-dispensary-breckenridge" aria-label="21 plus independent dispensary listing"></section>
+<section id="cannabisDirectoryCard" aria-label="21 plus national organic dispensary source directory Quick Card"></section>
+<div id="cannabisDirectoryCards" aria-label="Individual source-backed dispensary Quick Cards"></div>
+<section id="businessDirectoryCard" aria-label="National business directory Quick Card"></section>
+<section id="infinityWirelessCard" aria-label="Infinity Wireless · Bubbles network planning quick card">
+ <article class="iw-card" aria-labelledby="iw-card-title">
+  <style>
+   #infinityWirelessCard .iw-card{background:#f9fbfd;color:#233548;border:1px solid #c7d5df;border-radius:18px;padding:clamp(14px,4vw,23px);max-width:740px;margin:auto;font:400 17px/1.58 system-ui,-apple-system,sans-serif;letter-spacing:.012em}
+   #infinityWirelessCard .iw-cover{display:block;width:100%;height:auto;aspect-ratio:1200/520;object-fit:cover;border-radius:12px;background:#e1edf5}
+   #infinityWirelessCard h2{font-size:clamp(1.45rem,5vw,1.95rem);line-height:1.2;letter-spacing:.01em;color:#223d55;margin:13px 0}
+   #infinityWirelessCard p{margin:10px 0;color:#3d5368}
+   #infinityWirelessCard .iw-tag{font-size:.83rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#4d677e}
+   #infinityWirelessCard .iw-rows{display:grid;grid-template-columns:2fr 1fr;gap:10px}
+   #infinityWirelessCard label{display:block;font-weight:600;margin:12px 0 4px;color:#20374c}
+   #infinityWirelessCard input:not([type=checkbox]),#infinityWirelessCard select{font:inherit;display:block;width:100%;padding:11px 12px;border-radius:9px;border:1px solid #93aab9;background:#fff;color:#223548}
+   #infinityWirelessCard .iw-check{display:flex;align-items:flex-start;gap:9px;font-weight:450;line-height:1.45}
+   #infinityWirelessCard .iw-check input{margin-top:5px}
+   #infinityWirelessCard button{font:inherit;border-radius:9px;padding:12px 16px;cursor:pointer}
+   #infinityWirelessCard .iw-submit{width:100%;border:0;background:#185b94;color:#fff;font-weight:700}
+   #infinityWirelessCard .iw-secondary{border:1px solid #9db3c2;background:#fff;color:#205b87}
+   #infinityWirelessCard :is(button,input,select,a):focus-visible{outline:3px solid #e7a53c;outline-offset:3px}
+   #infinityWirelessCard #order-status[data-error=true]{color:#a12633}
+   #infinityWirelessCard #receipt:not([hidden]){padding:12px;border:1px solid #bfd3e2;border-radius:12px;background:#eef5fb}
+   #infinityWirelessCard .iw-fine{font-size:.85rem;color:#50677a}
+   @media(max-width:370px){#infinityWirelessCard .iw-rows{grid-template-columns:1fr}}
+  </style>
+  <img class="iw-cover" src="/wireless/switchboard.svg" alt="Illustrated Bubbles switchboard: request, coordination and authorized network review; conceptual, not live coverage" width="1200" height="520" decoding="async">
+  <p class="iw-tag">Infinity Wireless · Powered by Bubbles</p>
+  <h2 id="iw-card-title">The Air Is Our Network. Go Build It.</h2>
+  <p>Request an AI-supported wireless connection plan for your city. Bubbles records a traceable build request; authorized infrastructure review follows.</p>
+  <form id="order-form" aria-label="Issue an Infinity Wireless planning build order">
+   <div class="iw-rows">
+    <div><label for="iw-city">City, not street address</label><input id="iw-city" name="city" autocomplete="address-level2" required minlength="2" maxlength="60" placeholder="Example: Oskaloosa"></div>
+    <div><label for="iw-state">State</label><input id="iw-state" name="state" autocomplete="address-level1" required minlength="2" maxlength="2" pattern="[A-Za-z]{2}" placeholder="IA"></div>
+   </div>
+   <label for="iw-goal">Connection goal</label>
+   <select id="iw-goal" name="goal" required><option value="home">Home</option><option value="community">Community</option><option value="business">Business</option><option value="pilot">Engineering pilot</option></select>
+   <label for="iw-backhaul">Potential lawful Internet uplink</label>
+   <select id="iw-backhaul" name="backhaul" required><option value="unknown">Not identified</option><option value="fiber">Fiber</option><option value="fixed-wireless">Authorized fixed wireless</option><option value="carrier-partner">Carrier partnership</option></select>
+   <label class="iw-check" for="iw-planning"><input id="iw-planning" type="checkbox" name="acceptedPlanningOnly" required><span>This is a network-planning request, not live service or control of another provider's towers.</span></label>
+   <button id="build-order" class="iw-submit" type="submit">Issue Build Order</button>
+   <p id="order-status" role="status" aria-live="polite">Planning service not yet live. No request sent.</p>
+  </form>
+  <button id="refresh-order" class="iw-secondary" type="button" hidden>Check saved planning order</button>
+  <section id="receipt" aria-label="Verified planning receipt" aria-live="polite" hidden></section>
+  <p class="iw-fine">Coverage is not verified, and cellular service is not active. No street address, SIM credentials, or payment is requested. Planning requests expire after 30 days. <a href="/wireless/">More about Infinity Wireless</a> · <a href="/cellular/">Engineering checklist</a></p>
+ </article>
+</section>
 <section id="shopAdPhi" aria-label="Shop Phi and Ad Phi"></section>
+<section id="essentialsQuickCards" aria-label="Original medicine cabinet product Quick Cards" hidden></section>
 <section id="radioClubhouse" aria-label="Radio Clubhouse · new Antique Radio Forums discussions"></section>
 <section class="card" id="result" hidden><div id="field"></div><article id="overview"></article><button class="overviewShare" id="overviewShare" type="button">Share AI Overview +0.1 ★</button><div class="meter" id="meter"></div></section>
+<section id="infinityAffiliates" aria-label="Infinity Affiliates · match approved brands and request product affiliations"></section>
+<section id="government501Affiliates" aria-label="501 Affiliates · official government agency resource directory"></section>
 <section id="infiniteBook" aria-label="Reads & Realms — original stories organized by category"></section>
 <section id="infinityConcepts" aria-label="Infinity Concept Cards · bot-built physics experiments and original stories"></section>
 <section id="robotBrainOwner" aria-label="Robot Brain owner sign-in"></section>
@@ -336,11 +623,13 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
 </section>
 <section id="fredSpacesRadio" aria-label="Fred Spaces curated episode player; blank Media Star template available separately"></section>
 <section id="magooSpacesRadio" aria-label="Magoo PhD guest recordings and X Spaces catalog with no-repeat shuffle"></section>
+<section id="xTwitterCard" aria-label="X Twitter original Quick Card for the Infinity Oracle carousel"></section>
+<section id="xSpacesQuickCard" aria-label="X Spaces quick listening carousel and personal indexed space search"></section>
 <section id="followingSpacesRadio" aria-label="Media Star X Spaces radio built from followed accounts and indexed replay links"></section>
 <section id="mediaStarCreator" aria-label="Build and embed a blank Media Star with your own media and wallet"></section>
 <section id="bubblesAICard" aria-label="Bubbles AI card"></section>
  <section id="phiProjectActions" aria-label="Code Phi and Create Phi Oracle action cards"></section>
- <section id="halloweenPhi" aria-label="Terra Phi and Petra Phi cinema and image collections"></section>
+ <section id="holidayPhi" aria-label="Thanksgiving and Christmas images, videos and website builder"></section>
 <section class="media" id="media" hidden><h2>Media extensions</h2><div class="mediaGrid" id="mediaGrid"></div></section>
 <section class="buttonPerson" aria-label="QuantaPhi button body">
 <a class="mckeeCoinButton inPageSite" id="mckeeCoinButton" href="/mckee-coins/" data-site-url="/mckee-coins/" data-site-title="McKee Coins" aria-label="Open McKee Coins inside QuantaPhi"><span class="mckeeCoinIcon" aria-hidden="true">🪙</span><span class="mckeeCoinName">McKee<br>Coins</span><span class="mckeeCoinSub">Coin shop</span></a>
@@ -373,6 +662,24 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
  <iframe class="crusher-inline-frame" id="quantaCrusherFrame" title="Bitcoin Crusher original reels, research word bank, sourced articles and purple build cards" loading="lazy" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </section>
 
+<!-- One original in-page builder at a time; unlisted publication stays moderated. -->
+<section id="developerCarousel" class="developer-carousel" aria-label="Developer carousel for building into QuantaPhi" aria-roledescription="carousel" aria-labelledby="developerTitle">
+ <header class="developer-head">
+  <small>INFINITY® · CREATE ON QUANTAPHI</small>
+  <h2 id="developerTitle">Developer · Build into the site</h2>
+  <p>Build with original Quick Cards or explore real developer sources. Search profiles, buttons, carousels and more; review every proposed change before it reaches the public site.</p>
+ </header>
+ <div class="developer-controls" role="group" aria-label="Developer carousel navigation">
+  <button type="button" id="developerCardPrevious" aria-label="Previous developer card">‹</button>
+  <strong id="developerCardNow" aria-live="polite">Developer tools</strong>
+  <button type="button" id="developerCardNext" aria-label="Next developer card">›</button>
+ </div>
+ <div id="developerCardPicker" class="developer-card-picker" role="group" aria-label="Choose a developer tool"></div>
+ <div id="developerDiscoveryControls" class="developer-discovery-controls" aria-label="Discover more developer cards and propose safe site changes"></div>
+ <div id="developerCardStage" class="developer-card-stage" aria-live="off" aria-label="Current developer card"></div>
+ <p id="developerCardStatus" class="developer-card-status" role="status" aria-live="polite">Loading the original builders…</p>
+</section>
+
 <section class="sponsorBoard" id="sponsorBoard" aria-labelledby="sponsorTitle">
 <h2 id="sponsorTitle">Build a billboard button</h2>
 <p>Future body spots can be rented for <strong>1000 Star Coins</strong> for <strong>30 days</strong>. Design the button yourself, upload an image, or import a button file.</p>
@@ -396,6 +703,7 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
   <div class="siteViewerFoot">Some sites block in-page framing. If this viewer is blank, <a id="siteViewerExternal" href="/" target="_blank" rel="noopener noreferrer" style="color:#ffe38a;font-weight:900">open the original source</a>. Close to return to the same place in QuantaPhi.</div>
 </section>
 <section class="qwalletPanel" id="qhistoryPanel" hidden aria-label="Build history"><div class="qwalletHead"><h2>Build History</h2><button class="qwalletClose" id="qhistoryClose" type="button">Close</button></div><div id="qhistoryList"></div></section></main>
+<footer class="qp-site-footer" aria-label="QuantaPhi site information"><p>QuantaPhi · AI research, media and learning</p><nav aria-label="Legal and site links"><a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a></nav></footer>
 <script>
 (function(){
  const viewer=document.getElementById('siteViewer'),frame=document.getElementById('siteViewerFrame'),title=document.getElementById('siteViewerTitle'),close=document.getElementById('siteViewerClose');
@@ -408,6 +716,12 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
       /^[A-Za-z0-9._-]+$/.test(repo)?('https://quantaphi.org/'+({C13b0:'infinity-phi', 'Omni-Phi':'omni-phi',QuantaPhi:''}[repo]||repo)+'/'):''
     );
    let url;try{url=new URL(raw,location.href)}catch{return}
+   if(url.protocol!=='https:'&&url.protocol!=='http:')return;
+   if(url.origin!==location.origin){
+     // Third-party websites often forbid framing (X-Frame-Options/CSP).
+     // A blocked iframe is NOT an Infinity Viewer feature: go to the real site.
+     location.assign(url.href);return;
+   }
    title.textContent=link.dataset.siteTitle||link.textContent.trim()||url.hostname;
    const fallback=document.getElementById('siteViewerExternal');if(fallback)fallback.href=url.href;
    frame.src=url.href;
@@ -423,6 +737,14 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
  document.addEventListener('click',event=>{
    const link=event.target.closest?.('.inPageSite');
    if(!link)return;
+   // Do not intercept legitimate external links into an iframe that cannot
+   // display most provider sites. Let the browser/WebView own the navigation.
+   try{
+    const target=new URL(link.dataset.siteUrl||link.getAttribute('href')||'',location.href);
+    if((target.protocol==='https:'||target.protocol==='http:')&&target.origin!==location.origin){
+     link.href=target.href;link.target='_blank';link.rel='noopener noreferrer';return;
+    }
+   }catch{}
    event.preventDefault();
    openSite(link);
  },true);
@@ -991,6 +1313,7 @@ async function search(options={}){
  const run=++activeSearchRun;let refining=options.refine===true||options.restore===true;
  const isCurrent=()=>run===activeSearchRun;
  const q=$('#q').value.trim().slice(0,2000); if(!q)return;
+ window.dispatchEvent(new CustomEvent('quantaphi:query-start',{detail:{query:q,run}}));
  const regularResultsPromise=regularWebSearch(q,run);
  const selectedSubjects=q.includes(' + ')?q.split(' + ').map(x=>x.trim()).filter(Boolean).slice(0,8):[];
  $('#result').hidden=false;$('#overview').innerHTML='<section class="qzone qzoneRed"><h3>Scholastic Reader</h3><div>Preparing the AI overview…</div></section>';
@@ -1060,6 +1383,15 @@ async function search(options={}){
    const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
    const weighted=(sj.results||[]).map((x,i)=>{const text=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>text.includes(w)).length;const entityHits=entityWords.filter(w=>text.includes(w)).length;const coverage=required.length?hits/required.length:0;return {...x,_entityHits:entityHits,_weight:(coverage*100)+(hits*35)+(entityHits*100)+Math.max(0,20-i)};}).filter(x=>{if(technicalIntent){const txt=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>txt.includes(w)).length;return hits>=Math.min(3,required.length)}if(entityWords.length<2)return true;const title=String(x.title||'').toLowerCase(),body=String(x.content||x.description||'').toLowerCase();const phrase=entityWords.join(' ');return title.includes(phrase)||body.includes(phrase)||x._entityHits===entityWords.length}).sort((a,b)=>b._weight-a._weight);
    evidence=weighted.slice(0,8).map((x,i)=>({index:i,weight:Math.round(x._weight),title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,450)})).filter(x=>x.title||x.evidence);
+   // Source-backed preview appears immediately, without waiting for AI synthesis.
+   // It never creates extra Quants or changes credit/ledger rules.
+   if(isCurrent()&&evidence.length){
+     const preview=evidence.filter(x=>{try{const u=new URL(x.url);return /^https?:$/.test(u.protocol)}catch(_){return false}}).slice(0,4);
+     if(preview.length){
+       $('#overview').innerHTML='<section class="qzone qzoneRed"><h3>Source preview · AI overview building</h3><p>Live sources are ready. The full AI overview and data regions are still being prepared.</p><ul>'+preview.map(x=>'<li><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">'+esc(x.title||x.url)+'</a></li>').join('')+'</ul></section>';
+       $('#status').innerHTML='<small>Sources ready · preparing the AI overview…</small>';
+     }
+   }
    const instructionPrefix=[
  'You are the live GPT reasoning layer for QuantaPhi. Plan the explanation around this exact query: identify the entity, select the strongest supported facts, organize them into a coherent narrative, and write an original synthesis. Do not paste a source passage, concatenate snippets, or stretch a single document to reach a word count.',
  selectedSubjects.length>1?('MULTI-SUBJECT SEARCH: cover ALL these subjects by name: '+JSON.stringify(selectedSubjects)+'. Give a separate research section for every subject before comparing their supported connections and differences. Never collapse this request to one entity.'): '',
@@ -1685,24 +2017,93 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script src="media-repair.js?v=20261003-refine2"></script><script>window.PhiInfiniteBookFeedUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/feed';window.PhiInfiniteBookBanksUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/banks';</script><script defer src="/infinite-book-discovery.js?v=20261009-available-source1"></script>
 <script defer src="/phi-scholastic-data.js?v=20261011-context-compare1"></script>
 <script defer src="/phi-business-search.js?v=20261011-shopping-source1"></script>
-<script defer src="/phi-assimilation.js?v=20261011-relevance1"></script>
+<script defer src="/phi-assimilation.js?v=20261024-mobile-readable1"></script>
 <script defer src="/phi-story-share.js?v=20261011-full-story1"></script>
-<script defer src="/infinite-book.js?v=20261011-full-story1"></script>
-<script defer src="/infinity-concepts.js?v=20261019-physics-images1"></script>
-<script defer src="/quant-ai-personal.js?v=20261013-private1"></script>
+<script defer src="/infinite-book.js?v=20261021-fresh-request1"></script>
+<script defer src="/infinity-concepts.js?v=20261103-rotating2"></script>
+<script defer src="/quant-ai-personal.js?v=20261027-seller-live1"></script>
 <script defer src="/shop-phi-policy.js?v=20261012-seller1"></script>
- <script defer src="/shop-phi-seller.js?v=20261012-seller1"></script>
- <script defer src="/shop-ad-phi.js?v=20261013-ad-offer1"></script>
+ <script defer src="/shop-phi-seller.js?v=20261027-seller-live1"></script>
+ <script defer src="/shop-phi-publish.js?v=20261027-seller-live1"></script>
+<script defer src="/shop-ad-phi.js?v=20261028-recovery1"></script>
 <script defer src="/radio-clubhouse.js?v=20261013-infinityviewer3"></script>
  <script defer src="/phi-project-files.js?v=20261013-cinema1"></script>
  <script defer src="/phi-project-package.js?v=20261013-cinema1"></script>
  <script defer src="/phi-project-cards.js?v=20261012-action1"></script>
  <script defer src="/cinema-reel-core.js?v=20261013-cinema3"></script>
  <script defer src="/cinema-reel-editor.js?v=20261013-cinema4"></script>
- <script defer src="/halloween-phi.js?v=20261013-projectpicker15"></script>
-<script defer src="/phi-tv-programs.js?v=20261015-direct1"></script>
-<script defer src="/phi-channel-cards.js?v=20261015-credits1"></script>
-<script defer src="/oracle-card-deck.js?v=20261015-stage1"></script>
+ <script defer src="/holiday-phi.js?v=20261102-holidays1"></script>
+<script defer src="/phi-tv-programs.js?v=20261103-recovery2"></script>
+<script defer src="/phi-channel-cards.js?v=20261103-recovery2"></script>
+<script type="module" src="/tv-501-expansion.mjs?v=20261103-q501tv1"></script>
+<script type="module" src="/trending-movie-quick-cards.mjs?v=20261106-trend1"></script>
+<script type="module" src="/trending-apps-quick-cards.mjs?v=20261107-apps1"></script>
+<script type="module" src="/government-501-affiliates.mjs?v=20261103-g501-1"></script>
+<link rel="stylesheet" href="/fox-infinity-tv.css?v=20261102-player1">
+<script type="module" src="/fox-infinity-tv.mjs?v=20261102-player1"></script>
+
+<script defer src="/google-trending-cards.js?v=20261102-mlb1"></script>
+<link rel="stylesheet" href="/quanta-card-experience.css?v=20261106-gemini-oncard1">
+<link rel="stylesheet" href="/card-source-images.css?v=20261102-cardimages1">
+<link rel="stylesheet" href="/quick-card-brand-compact.css?v=20261101-compact1">
+<link rel="stylesheet" href="/quanta-official-viewer.css?v=20261027-siteviewer1">
+<link rel="stylesheet" href="/design-lab/quick-card.css?v=1">
+<link rel="stylesheet" href="/quanta-feed.css?v=20261024-directcards2">
+<!-- Legacy 100-card discovery feed retired from homepage; source remains in repository. -->
+<link rel="stylesheet" href="/premium-source-cards.css?v=20261101-denver-dining1">
+<link rel="stylesheet" href="/restaurant-directory.css?v=20261101-directory1">
+<link rel="stylesheet" href="/art-museum-quick-cards.css?v=20261025-gallery1">
+<link rel="stylesheet" href="/verified-brand-sports-cards.css?v=20261101-colorado1340">
+<script type="module" src="/premium-source-cards.mjs?v=20261101-moving-feed1"></script>
+<script type="module" src="/restaurant-directory.mjs?v=20261101-directory1"></script>
+<link rel="stylesheet" href="/attractions-directory.css?v=20261101-attractions1359">
+<script type="module" src="/attractions-directory.mjs?v=20261101-attractions1359"></script>
+<script type="module" src="/attractions-quant-ai.mjs?v=20261102-ak-quantai1"></script>
+<script type="module" src="/denver-retail-quick-cards.mjs?v=20261101-retail1"></script>
+<link rel="stylesheet" href="/mineral-destination-cards.css?v=20261101-1">
+<script type="module" src="/mineral-destination-cards.mjs?v=20261101-1"></script>
+<script type="module" src="/art-museum-quick-cards.mjs?v=20261025-gallery1"></script>
+<script type="module" src="/verified-brand-sports-cards.mjs?v=20261101-moving-feed1"></script>
+<script type="module" src="/source-quick-cards.mjs?v=20261106-gemini-oncard1"></script>
+<script type="module" src="/quick-card-search.mjs?v=20261029-housing1"></script>
+<link rel="stylesheet" href="/disability-housing.css?v=20261029-1">
+<link rel="stylesheet" href="/housing-help.css?v=20261029-1">
+<script type="module" src="/disability-housing-card.mjs?v=20261029-1"></script>
+<script type="module" src="/design-lab/quick-card.mjs?v=1"></script>
+<script type="module" src="/brand-product-cards.mjs?v=20261101-moving-feed1"></script>
+<link rel="stylesheet" href="/essentials-quick-cards.css?v=20261107-otc-live1">
+<script type="module" src="/essentials-quick-cards.mjs?v=20261107-otc-live1"></script>
+<script type="module" src="/science-quick-cards.mjs?v=20261023-science1"></script>
+<link rel="stylesheet" href="/infinity-affiliates-card.css?v=20261028-1">
+<script type="module" src="/infinity-affiliates-card.mjs?v=20261028-1"></script>
+<link rel="stylesheet" href="/infinity-accepted-cards.css?v=20261102-cardimages1">
+<script type="module" src="/infinity-accepted-cards.mjs?v=20261102-cardimages1"></script>
+<link rel="stylesheet" href="/coliseum/zeus-card.css?v=20261028-brand1">
+<link rel="stylesheet" href="/quick-card-modernize.css?v=20261101-first-pass1">
+<link rel="stylesheet" href="/zeus-discovery-carousel.css?v=20261101-first-pass1">
+<script type="module" src="/zeus-discovery-carousel.mjs?v=20261101-first-pass1"></script>
+<script type="module" src="/coliseum/zeus-quick-card.mjs?v=20261028-rc1"></script>
+<script type="module" src="/live-tv-cards.mjs?v=20261102-player1"></script>
+<script type="module" src="/identity-shield-card.mjs?v=20261106-research1"></script>
+<script defer src="/steve-miller-book-of-dreams.js?v=20261106-artist-radio3"></script>
+<script type="module" src="/wireless/order.mjs?v=20261103-intake1"></script>
+<script type="module" src="/classic-rock-official-card.mjs?v=20261106-artist-radio3"></script>
+<script type="module" src="/developer-carousel.mjs?v=20261108-index-picker1"></script>
+<script defer src="/oracle-card-deck.js?v=20261107-otc-live1"></script>
+<link rel="stylesheet" href="/restricted-ad-card.css?v=20261102-plan1">
+<script type="module" src="/restricted-ad-card.mjs?v=20261102-plan1"></script>
+<link rel="stylesheet" href="/bruce-banner-card.css?v=20261101-banner1">
+<script type="module" src="/bruce-banner-card.mjs?v=20261101-banner1"></script>
+<link rel="stylesheet" href="/restricted-dispensary-cards.css?v=20261108-co14-1">
+<script type="module" src="/restricted-dispensary-cards.mjs?v=20261108-co14-1"></script>
+<link rel="stylesheet" href="/cannabis-directory-card.css?v=20261101-national1">
+<link rel="stylesheet" href="/cannabis-directory-cards.css?v=20261101-cards2&hero=20261106">
+<script type="module" src="/cannabis-directory-card.mjs?v=20261101-national1&cards=2&hero=20261106"></script>
+<link rel="stylesheet" href="/business-directory-card.css?v=20261101-v1">
+<script type="module" src="/business-directory-card.mjs?v=20261101-v1"></script>
+<link rel="stylesheet" href="/quick-ads.css?v=20261028-game5b">
+<script type="module" src="/quick-ads.mjs?v=20261029-house2"></script>
+<script type="module" src="/shop-phi-switchboard.mjs?v=20261105-hero-first1&amp;housing=20261029-1"></script>
 <script defer src="/phi-image-language.js?v=20261011-natural-copy1"></script>
 <script defer src="/phi-visual-render.js?v=20261011-exact-type1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
@@ -1715,16 +2116,24 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script defer src="/phi-book-image-bridge.js?v=20261009-text-repair1"></script>
 <script defer src="/phi-story-writer.js?v=20261014-history-ideas3"></script>
 <script defer src="/bubbles-voice-gate.js?v=20261011-voice1"></script>
-<script defer src="/bubbles-brain-actions.js?v=20261019-chat-repair1"></script>
-  <script defer src="/bubbles-memory.js?v=20261014-memory2"></script>
-  <script defer src="/bubbles-ai.js?v=20261020-semantic3"></script>
+<script defer src="/bubbles-brain-actions.js?v=20261025-speech-guard1"></script>
+  <script defer src="/bubbles-memory.js?v=20261020-synapse1"></script>
+  <script defer src="/bubbles-ai.js?v=20261108-native-bubbles3"></script>
+<script type="module" src="/bubbles-live-iteration-feed.mjs?v=20261107-runner-steps2"></script>
 <script defer src="/fred-spaces-radio.js?v=20261011-targeted-fred2"></script>
 <script defer src="/magoo-spaces-radio.js?v=20261010-magoo2"></script>
+<link rel="stylesheet" href="/x-twitter-card.css?v=20261106-reply1">
+<script type="module" src="/x-twitter-card.mjs?v=20261106-post-reader2"></script>
+
+<script type="module" src="/x-spaces-quick-card.mjs?v=20261106-live-clip2"></script>
 <script defer src="/following-spaces-radio.js?v=20261011-single-person4"></script>
 <script defer src="/media-star-creator.js?v=20261015-credits1"></script><script defer src="/phi-page-ui.js?v=20261008-restore-book1"></script>
 <script defer src="/robot-brain-owner.js?v=20261014-shared-memory6"></script>
 <script defer src="/quanta-agent-iterations.js?v=20261013-interactive1"></script>
 <script defer src="/robot-directions.js?v=20261019-chat-repair1"></script>
-<script defer src="/robot-work-report.js?v=20261019-chat-repair1"></script>
-<style>#publicCardTrends{border:1px solid #d9c6ee}#publicCardTrends h2{font-size:19px}#publicCardTrends p,.public-card-count{font-size:12px;color:#665574;line-height:1.5}#publicCardTrends li{margin:12px 0}#publicCardTrends a{color:#5f259f;font-weight:800}.public-card-count{padding:8px 12px;border-radius:12px;background:#f4eff9}</style><script defer src="/public-card-trends.js?v=20261013-trends1"></script><link rel="stylesheet" href="/group-story.css?v=20261013-group1"><script defer src="/group-story.js?v=20261013-group1"></script></body></html>
+<script defer src="/robot-work-report.js?v=20261029-gpt-handoff1"></script>
+<style>#publicCardTrends{border:1px solid #d9c6ee}#publicCardTrends h2{font-size:19px}#publicCardTrends p,.public-card-count{font-size:12px;color:#665574;line-height:1.5}#publicCardTrends li{margin:12px 0}#publicCardTrends a{color:#5f259f;font-weight:800}.public-card-count{padding:8px 12px;border-radius:12px;background:#f4eff9}</style><script defer src="/public-card-trends.js?v=20261013-trends1"></script><link rel="stylesheet" href="/group-story.css?v=20261013-group1"><script defer src="/group-story.js?v=20261013-group1"></script><script type="module" src="/walmart-card.mjs?v=20261024-pizza1"></script>
+<link rel="stylesheet" href="/published-quick-card.css?v=2">
+<script type="module" src="/published-quick-cards-feed.js?v=2"></script>
+<link rel="stylesheet" href="/bubbles-identity-settings-card.css?v=20261101-is1">\n<script type="module" src="/bubbles-identity-settings-card.mjs?v=20261101-is1"></script>\n</body></html>
 

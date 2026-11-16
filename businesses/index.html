@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f9fa">
+<title>Infinity Business Directory · Denver to All 50 States</title>
+<meta name="description" content="Search independently curated storefronts, restaurants, markets and local businesses. Original sources, clear location and no fake paid listings.">
+<link rel="canonical" href="https://quantaphi.org/businesses/">
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#242c32;background:#f8f9fa;color-scheme:light}
+*{box-sizing:border-box}body{margin:0}main{max-width:1050px;margin:auto;padding:24px 14px 75px}
+nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:0 0 22px}
+a{color:#174f71}nav a{font-weight:750}
+header{border-bottom:1px solid #d9e1e4;padding-bottom:22px}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#506774}
+h1{font-size:clamp(2rem,7vw,3.6rem);letter-spacing:-.055em;line-height:1.08;margin:9px 0}
+.lead{font-size:17px;line-height:1.55;max-width:770px;color:#4f616a}
+#totals{padding:11px 0;color:#355466;font-weight:750}
+form{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;background:#fff;padding:16px;border:1px solid #d8e1e5;border-radius:18px;margin-top:18px}
+label{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:750}
+input,select,button{font:inherit;min-width:0;border:1px solid #c7d1d6;border-radius:10px;padding:12px;background:white;color:#273b46}
+button{cursor:pointer;font-weight:800;background:#e7eff2}.search{background:#254b60;color:white;border-color:#254b60}
+.controls{display:flex;gap:9px;align-items:center;justify-content:space-between;margin:15px 0 18px;flex-wrap:wrap}
+#status{color:#57676f;min-height:22px}#results{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:13px}
+.business{background:white;border:1px solid #dae2e5;border-radius:17px;min-width:0;padding:18px;box-shadow:0 3px 12px #263d490b}
+.category{font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.08em;color:#55717e}
+.business h2{font-size:20px;line-height:1.2;letter-spacing:-.025em;margin:8px 0}
+.address{line-height:1.5;color:#4a5960}.sources{font-size:12px;color:#69757b;line-height:1.5}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.actions a{display:inline-flex;align-items:center;min-height:39px;border:1px solid #cad6dc;background:#f5f8f9;color:#284d60;text-decoration:none;border-radius:10px;padding:8px 10px;font-size:13px;font-weight:750}
+.actions a:first-child{background:#2c4e60;color:white;border-color:#2c4e60}
+footer{border-top:1px solid #dbe2e6;margin-top:35px;padding-top:15px;color:#65747b;font-size:13px;line-height:1.7}
+#more{display:block;margin:20px auto;min-width:140px}
+[hidden]{display:none!important}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #2a83ae;outline-offset:3px}
+@media(max-width:620px){form{grid-template-columns:1fr}.business{padding:16px}}
+</style>
+</head><body><main>
+<nav><a href="/">← QuantaPhi home</a><a href="/directory/">Official contacts & websites</a></nav>
+<header>
+<p class="eyebrow">Infinity 2026® · Local places and products</p>
+<h1>Find a business, not a search-engine detour.</h1>
+<p class="lead">Begin in Denver, then explore major cities across the United States as real source records are added. Discover local stores, restaurants, markets and services with direct source links and location details.</p>
+<p id="totals" aria-live="polite">Checking Cloudflare business records…</p>
+</header>
+<form id="businessSearch" role="search">
+<label>Search names, services, products<input name="q" id="businessQuery" type="search" maxlength="80" placeholder="Candy, Mexican food, collectibles…" autocomplete="off"></label>
+<label>State<select name="state" id="businessState"><option value="">All states with records</option></select></label>
+<label>City<input name="city" id="businessCity" maxlength="80" placeholder="Denver" value="Denver" autocomplete="address-level2"></label>
+<label>Business type<select name="category" id="businessCategory"><option value="">All categories</option><option>Restaurant</option><option>Grocery</option><option>Candy</option><option>Market</option><option>Coins &amp; collectibles</option></select></label>
+<div style="display:flex;gap:9px;align-items:end"><button class="search" type="submit">Search businesses</button><button id="clear" type="button">Clear</button></div>
+</form>
+<div class="controls"><p id="status" role="status">Loading source-backed listings…</p><a href="/businesses/#about">How records are verified</a></div>
+<section id="results" aria-label="Business search results"></section>
+<button id="more" type="button" hidden>Load more businesses</button>
+<section id="about"><h2>Listings, cards and advertising are different</h2>
+<p>Public business facts can be listed without the owner buying advertising. Infinity cards may link to an original store or display appropriately licensed source images. Sponsored placements, claimed ownership, real inventory, and direct checkout require separate verification and authorization. A city in the expansion queue is not counted as populated.</p>
+<p>Source attribution appears in every record. The Cloudflare directory maintains import receipts and retains source identifiers to prevent duplicate cards. You can always follow the original source before shopping or visiting.</p>
+</section>
+<footer>Independent Infinity business discovery. No affiliation or endorsement is implied by a listing. Prices, hours and availability are set by each business. © Infinity 2026.</footer>
+</main><script type="module" src="/businesses/directory-app.mjs?v=20261101-directory1"></script></body></html>

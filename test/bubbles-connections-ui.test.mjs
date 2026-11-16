@@ -1,6 +1,280 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {AccountConnections,resolveConnectorWalletToken,connectionCodeMessage} from '../bubbles-connections.mjs';
+import {AccountConnections,mountConnections,resolveConnectorWalletToken,connectionCodeMessage,availableCloudflareLoginActions} from '../bubbles-connections.mjs';
+import {providerSignInErrorMessage} from '../bubbles-connections.mjs';
+
+test('Cloudflare exchange diagnostics preserve only standard error names and hide provider descriptions',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ for(const [status,providerError,expected] of [[401,'invalid_client','cloudflare_exchange_401_invalid_client'],
+   [400,'invalid_grant','cloudflare_exchange_400_invalid_grant'],[200,'invalid_scope','cloudflare_exchange_rejected_invalid_scope'],
+   [400,'private-code-token','cloudflare_exchange_400']]){
+  const adapter=cloudflareAdapter({clientId:'test-client',clientSecret:'server-only',
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},
+   async()=>Response.json({error:providerError,error_description:'private-code-token',access_token:'private-access'},{status}));
+  await assert.rejects(adapter.exchange({code:'one-use-code',verifier:'private-verifier',actions:['account.read']}),error=>{
+   assert.equal(error.message,expected);assert.ok(!error.message.includes('private'));return true;
+  });
+ }
+ const oversized=cloudflareAdapter({clientId:'test-client',clientSecret:'server-only',
+  redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},
+  async()=>new Response('x'.repeat(65537),{status:200}));
+ await assert.rejects(oversized.exchange({code:'code',verifier:'verifier',actions:['account.read']}),/provider_response_too_large/);
+});
+
+test('sign-in reports distinct safe client, grant and identity failures',()=>{
+ assert.match(providerSignInErrorMessage('cloudflare_exchange_401_invalid_client'),/client credentials/);
+ assert.match(providerSignInErrorMessage('cloudflare_exchange_400_invalid_grant'),/code or PKCE/);
+ assert.match(providerSignInErrorMessage('cloudflare_identity_403'),/User Details API/);
+ assert.match(providerSignInErrorMessage('connection_complete_receipt_store_type_unknown'),/Diagnostic: connection_complete_receipt_store_type_unknown/);
+ assert.doesNotMatch(providerSignInErrorMessage('cloudflare_exchange_400_private-code-token'),/private-code-token/);
+});
+
+test('client setup probe uses only a fictitious grant and never claims account verification',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ for(const [error,status] of [['invalid_grant','client_accepted'],['invalid_client','client_rejected']]){
+  const adapter=cloudflareAdapter({clientId:'test-client',clientSecret:'server-only',
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+    assert.equal(url,'https://dash.cloudflare.com/oauth2/token');
+    assert.match(options.body.get('code'),/^bubbles-setup-probe-/);
+    assert.equal(options.body.get('code_verifier').length,64);
+    return Response.json({error,error_description:'private-provider-description'},{status:400});
+   });
+  assert.deepEqual(await adapter.checkClient(),{status,reason:'cloudflare_exchange_400_'+error});
+ }
+});
+
+test('account page starts consent with the selected provider permissions',async t=>{
+ class Element {
+  constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.style={};this.classList={add(){}};}
+  append(...nodes){this.childNodes.push(...nodes);}
+  prepend(...nodes){this.childNodes.unshift(...nodes);}
+  replaceChildren(...nodes){this.childNodes=nodes;}
+  setAttribute(name,value){this[name]=value;}
+  removeAttribute(name){delete this[name];}
+  addEventListener(name,callback){this.listeners[name]=callback;}
+ }
+ const originals={document:globalThis.document,window:globalThis.window,sessionStorage:globalThis.sessionStorage,fetch:globalThis.fetch};
+ t.after(()=>Object.assign(globalThis,originals));
+ const document={createElement:tag=>new Element(tag),createTextNode:text=>({textContent:text}),addEventListener(){}};
+ const storage=new Map(),sessionStorage={getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
+ const popup={location:{},close(){}},calls=[];
+ let googleConfigured=false,fullCloudflareConfigured=false,navigation='',holdOldAccounts=false,finishOldRead,cloudflareRecoveryAvailable=false;
+ let holdCloudflareRecovery=true,releaseCloudflareRecovery;
+ let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',expiresAt:Date.now()+600000,grantedActions:['repository.read']}];
+ const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+ Object.assign(globalThis,{document,sessionStorage,window,fetch:async(url,options)=>{
+  const path=String(url).replace('/api/bubbles/connections','');
+  const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
+  if(path==='/catalog')return Response.json({ok:true,providers:[{id:'github',configured:true,actions:['repository.read']},
+   {id:'cloudflare',configured:true,fullProjectConfigured:fullCloudflareConfigured,
+    actions:fullCloudflareConfigured?['account.read','owner.full']:['account.read','projects.build','ledger.read']},
+   {id:'google',configured:googleConfigured,actions:['drive.read','gmail.read']}]});
+  if(path==='/accounts'){
+   const response=Response.json({ok:true,accounts:accountRecords});
+   if(holdOldAccounts&&!finishOldRead)return new Promise(resolve=>{finishOldRead=()=>resolve(response);});
+   return response;
+  }
+  if(path==='/handoff/cloudflare/resume'){
+   assert.deepEqual(body,{});
+   if(holdCloudflareRecovery)await new Promise(resolve=>releaseCloudflareRecovery=resolve);
+   if(!cloudflareRecoveryAvailable)return Response.json({ok:true,status:'missing'});
+   const account={id:'cf-autorecovered',provider:'cloudflare',label:'recovered@example.test',
+    status:'connected',expiresAt:Date.now()+600000,grantedActions:['account.read']};
+   accountRecords=[...accountRecords,account];
+   cloudflareRecoveryAvailable=false;
+   return Response.json({ok:true,status:'connected',account});
+  }
+  if(path==='/handoff/google/resume'){
+   assert.deepEqual(body,{});
+   await new Promise(setImmediate);
+   const account={id:'google-a',provider:'google',label:'google@example.test',status:'connected',
+    expiresAt:Date.now()+600000,grantedActions:['drive.read']};
+   accountRecords=[...accountRecords,account];
+   return Response.json({ok:true,status:'connected',account});
+  }
+  if(path==='/start'){
+   const authorizationUrl=body.provider==='google'?'https://accounts.google.com/o/oauth2/v2/auth':'https://dash.cloudflare.com/oauth2/auth';
+   return Response.json({ok:true,authorizationUrl:authorizationUrl+'?state='+'s'.repeat(43),expiresIn:300});
+  }
+  if(path==='/handoff/status')return Response.json({ok:true,status:'pending'});
+  assert.fail('Unexpected endpoint '+path);
+ }});
+ const container=new Element('main'),panel=mountConnections(container,{token:async()=>'sq_'+'a'.repeat(40)});
+ const descendants=node=>[node,...(node.childNodes||[]).flatMap(descendants)];
+ const initialLoad=panel.refresh();
+ for(let i=0;i<8&&!releaseCloudflareRecovery;i++)await new Promise(setImmediate);
+ assert.equal(typeof releaseCloudflareRecovery,'function','A recovery check was started');
+ assert.ok(descendants(container).some(node=>node.dataset?.provider==='cloudflare'),
+  'Cloudflare sign-in button must render and accept taps while legacy recovery is still pending');
+ holdCloudflareRecovery=false;
+ releaseCloudflareRecovery();
+ await initialLoad;
+
+ assert.equal(calls.filter(call=>call.path==='/handoff/cloudflare/resume').length,1,
+  'Account Connections should try recovering an already received Cloudflare grant even without return URL');
+ assert.equal(calls.some(call=>call.path==='/start'),false,
+  'Recovering existing Cloudflare authorization never starts a new sign-in');
+ assert.equal(descendants(container).some(node=>node.dataset?.provider==='github'),false,'Connected GitHub must not show a second sign-in button');
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('GitHub signed in ✓ as www-infinity4')));
+ const button=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
+ assert.equal(button.disabled,false);
+ assert.equal(button.textContent,'Sign in with Cloudflare');
+ const cloudflareCard=descendants(container).find(node=>node.childNodes?.includes(button));
+ assert.ok(cloudflareCard.childNodes.some(node=>node.role==='status'),
+  'Any failed Cloudflare authorization must display its reason next to the button');
+ assert.equal(descendants(container).some(node=>node.tag==='fieldset'&&!node.hidden),false);
+ await button.listeners.click();
+ assert.deepEqual(calls.find(call=>call.path==='/start').body,{provider:'cloudflare',actions:['account.read']});
+ assert.equal(new URL(popup.location.href).origin,'https://dash.cloudflare.com');
+ assert.equal(JSON.parse(storage.get('bubbles:oauth-pending:v1')).returnPath,'/bubbles-accounts.html');
+ panel.client.cancelConnect();
+ accountRecords=[...accountRecords,{id:'cf-a',provider:'cloudflare',label:'owner@example.test',status:'connected',expiresAt:Date.now()+600000,grantedActions:['account.read']}];
+ await panel.refresh();
+ assert.equal(descendants(container).some(node=>node.dataset?.provider==='cloudflare'),false,'Connected Cloudflare button must disappear');
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as owner@example.test')));
+ fullCloudflareConfigured=true;
+ await panel.refresh();
+ const cloudflareReview=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
+ assert.equal(cloudflareReview,undefined,'Signed-in Cloudflare must never show another login button');
+ const manage=descendants(container).find(node=>node.textContent==='Review project permissions');
+ assert.ok(manage,'Optional access review stays in account settings');
+ assert.ok(descendants(container).some(node=>node.tag==='details'&&node.childNodes.includes(manage)),
+  'Review action must stay collapsed in a settings disclosure');
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as owner@example.test')));
+ // An expired provider grant must not claim sign-in, even if the historical
+ // row still has a connected status until the service refreshes it.
+ accountRecords=accountRecords.map(row=>row.provider==='cloudflare'?{...row,expiresAt:Date.now()-10000}:row);
+ await panel.refresh();
+ assert.ok(descendants(container).some(node=>node.dataset?.provider==='cloudflare'));
+ assert.ok(descendants(container).some(node=>String(node.textContent).includes('reconnect required')));
+ const fullClientButton=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
+ assert.equal(fullCloudflareConfigured,true);
+ await fullClientButton.listeners.click();
+ assert.deepEqual(calls.filter(call=>call.path==='/start').at(-1).body,
+  {provider:'cloudflare',actions:['owner.full']},
+  'A fully configured Cloudflare client requests the full toolkit through the first sign-in button');
+ panel.client.cancelConnect();
+
+
+ googleConfigured=true;
+ window.location.assign=url=>{navigation=url;};
+ window.location.replace=url=>{navigation=url;};
+ await panel.refresh();
+ const googleButton=descendants(container).find(node=>node.dataset?.provider==='google');
+ const googleCard=descendants(container).find(node=>node.childNodes?.includes(googleButton));
+ const permissions=googleCard.childNodes.find(node=>node.tag==='fieldset');
+ assert.ok(permissions,'Google permissions must be in the same card as sign-in');
+ assert.ok(googleCard.childNodes.indexOf(permissions)<googleCard.childNodes.indexOf(googleButton));
+ const beforeClick=calls.length;
+ await googleButton.listeners.click();
+ assert.deepEqual(calls.slice(beforeClick).find(call=>call.path==='/start').body,{provider:'google',actions:['identity.read']},
+  'Basic Google login must not require Drive, Gmail, Calendar or Sheets');
+ panel.client.cancelConnect();
+ descendants(permissions).find(node=>node.value==='drive.read').checked=true;
+ await googleButton.listeners.click();
+ assert.deepEqual(calls.filter(call=>call.path==='/start').at(-1).body,{provider:'google',actions:['identity.read','drive.read']});
+ assert.equal(new URL(navigation).origin,'https://accounts.google.com');
+ panel.client.cancelConnect();
+
+ assert.equal(storage.has('bubbles:oauth-pending:v1'),false);
+ window.location.search='?return=google';
+ const returned=new Element('main');
+ holdOldAccounts=true;
+ const returningPanel=mountConnections(returned,{token:async()=>'sq_'+'a'.repeat(40)});
+ const staleLoad=returningPanel.refresh();
+ const googleSignedIn=()=>descendants(returned).some(node=>node.textContent==='Google signed in ✓ as google@example.test');
+ for(let i=0;i<8&&!googleSignedIn();i++)await new Promise(setImmediate);
+ assert.ok(googleSignedIn(),'A verified Google return must replace the sign-in button');
+ assert.equal(calls.filter(call=>call.path==='/handoff/google/resume').length,1);
+ finishOldRead();
+ await staleLoad;
+ assert.ok(googleSignedIn(),'An older account read must not replace the verified Google status');
+ for(let i=0;i<8&&navigation!=='/bubbles.html';i++)await new Promise(setImmediate);
+ assert.equal(navigation,'/bubbles.html','Verified lost-tab Google callback must return to Bubbles, not strand user in settings');
+ const connectAnotherGoogle=descendants(returned).find(node=>node.dataset?.provider==='google');
+ assert.equal(connectAnotherGoogle?.textContent,'Connect another Google account',
+  'A Google user can add a second account without disconnecting the first one');
+ const otherStartCount=calls.filter(call=>call.path==='/start').length;
+ await connectAnotherGoogle.listeners.click();
+ assert.equal(calls.filter(call=>call.path==='/start').length,otherStartCount+1);
+ assert.deepEqual(calls.filter(call=>call.path==='/start').at(-1).body,{provider:'google',actions:['identity.read']});
+ assert.ok(accountRecords.some(row=>row.provider==='google'&&row.label==='google@example.test'),
+  'The verified Google record must remain untouched while another signs in');
+ returningPanel.client.cancelConnect();
+ window.location.search='';
+ accountRecords=accountRecords.filter(row=>row.provider!=='cloudflare');
+ cloudflareRecoveryAvailable=true;
+ const beforeRecovery=calls.length;
+ const recoveredContainer=new Element('main'),recoveredPanel=mountConnections(recoveredContainer,{token:async()=>'sq_'+'a'.repeat(40)});
+ await recoveredPanel.refresh();
+ for(let i=0;i<20&&calls.slice(beforeRecovery).filter(call=>call.path==='/handoff/cloudflare/resume').length<1;i++)
+  await new Promise(setImmediate);
+ assert.equal(calls.slice(beforeRecovery).filter(call=>call.path==='/handoff/cloudflare/resume').length,1,
+  'Only one wallet-bound Cloudflare recovery attempt per Accounts page');
+ assert.equal(calls.slice(beforeRecovery).some(call=>call.path==='/start'),false);
+ for(let i=0;i<20&&!descendants(recoveredContainer).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as recovered@example.test'));i++)
+  await new Promise(setImmediate);
+ assert.ok(descendants(recoveredContainer).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as recovered@example.test')),
+  'Recovered Cloudflare connection replaces its old sign-in button');
+ assert.equal(descendants(recoveredContainer).some(node=>node.dataset?.provider==='cloudflare'),false);
+
+});
+
+test('Android Cloudflare sign-in navigates this tab directly and never opens about:blank',async()=>{
+ const state='m'.repeat(43),saved=new Map();let navigated='',popups=0;
+ const root={
+  location:{pathname:'/bubbles-accounts.html',assign(url){navigated=url;}},
+  sessionStorage:{getItem:key=>saved.get(key)||null,setItem:(key,value)=>saved.set(key,value),removeItem:key=>saved.delete(key)},
+  open(){popups++;throw Error('blank popup must not open');},
+  setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}
+ };
+ const client=new AccountConnections({token:()=> 'existing-device-session',root,request:async url=>{
+  if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+state,expiresIn:300});
+  if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:'pending'});
+  assert.fail('Unexpected connection endpoint '+url);
+ }});
+ await client.connect('cloudflare',['account.read'],()=>{});
+ assert.equal(popups,0);
+ assert.equal(JSON.parse(saved.get('bubbles:oauth-pending:v1')).flow,'same-window');
+ assert.equal(new URL(navigated).origin,'https://dash.cloudflare.com');
+ assert.equal(JSON.parse(saved.get('bubbles:oauth-pending:v1')).returnPath,'/bubbles-accounts.html');
+ assert.ok(!saved.get('bubbles:oauth-pending:v1').includes('existing-device-session'));
+ client.cancelConnect();
+});
+
+
+test('old blank-popup authorization does not strand Sign in on a fresh page',()=>{
+ const state='p'.repeat(43),data=new Map();
+ const storage={getItem:key=>data.get(key)||null,setItem:(key,v)=>data.set(key,v),removeItem:key=>data.delete(key)};
+ const root={sessionStorage:storage};
+ const old={provider:'cloudflare',state,returnPath:'/bubbles-accounts.html',expiresAt:Date.now()+120000};
+ storage.setItem('bubbles:oauth-pending:v1',JSON.stringify(old));
+ const client=new AccountConnections({token:()=> 'current-device',root});
+ assert.equal(client.readPendingHandoff(),null,'Legacy popup state must not block new login');
+ assert.equal(data.has('bubbles:oauth-pending:v1'),false);
+ storage.setItem('bubbles:oauth-pending:v1',JSON.stringify({...old,flow:'same-window'}));
+ assert.equal(client.readPendingHandoff()?.state,state,'Verified same-tab callback state must remain resumable');
+});
+
+test('failed Cloudflare code exchange reports a specific retry message before expiring',async()=>{
+ const state='r'.repeat(43),popup={location:{},close(){this.closed=true;}};
+ const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+ let completed;
+ const client=new AccountConnections({token:()=> 'device-session',root,request:async url=>{
+  if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+state,expiresIn:300});
+  if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:'received'});
+  if(url.endsWith('/handoff/finish'))return Response.json({ok:false,error:'connection_operation_failed'},{status:503});
+  assert.fail('Unexpected URL '+url);
+ }});
+ await client.connect('cloudflare',['account.read'],(error,account)=>{completed={error,account};});
+ for(let i=0;i<6&&!completed;i++)await new Promise(resolve=>setImmediate(resolve));
+ assert.ok(completed?.error);
+ assert.match(completed.error.message,/could not complete the account connection/i);
+ assert.doesNotMatch(completed.error.message,/expired/i);
+ assert.equal(client.pending,null);
+ assert.equal(popup.closed,true);
+});
+
 test('connector waits for device bridge and supports both wallet runtime exports',async()=>{
   let ready=false;const token='sq_'+'a'.repeat(40);
   assert.equal(await resolveConnectorWalletToken({QuantaCloudConnection:{ready:Promise.resolve().then(()=>ready=true),resolveDeviceToken:async()=>{assert.ok(ready);return token;}}}),token);
@@ -8,23 +282,101 @@ test('connector waits for device bridge and supports both wallet runtime exports
   await assert.rejects(resolveConnectorWalletToken({}),/verified_wallet_required/);
   await assert.rejects(resolveConnectorWalletToken({QuantaCloudConnection:{resolveDeviceToken:async()=>''},InfinityUnifiedWallet:class{token(){return token;}}}),/verified_wallet_required/);
 });
+test('connection check times out even when wallet readiness never settles',async()=>{
+ const client=new AccountConnections({token:()=>new Promise(()=>{}),request:()=>assert.fail('request must not run'),root:{},timeoutMs:15});
+ await assert.rejects(client.call('/gate/status'),/connection_timeout/);
+ assert.match(connectionCodeMessage(Error('connection_timeout')),/timed out/);
+});
+test('connection check aborts a hung fetch and bounds JSON body reads',async()=>{
+ let signal;
+ const stalled=new AccountConnections({token:()=> 'device-token',root:{},timeoutMs:15,request:async(_url,options)=>{
+  signal=options.signal;
+  return new Promise(()=>{});
+ }});
+ await assert.rejects(stalled.call('/gate/status'),/connection_timeout/);
+ assert.equal(signal.aborted,true);
+ const stalledBody=new AccountConnections({token:()=> 'device-token',root:{},timeoutMs:15,request:async(_url,options)=>{
+  signal=options.signal;
+  return {ok:true,json:()=>new Promise(()=>{})};
+ }});
+ await assert.rejects(stalledBody.call('/gate/status'),/connection_timeout/);
+ assert.equal(signal.aborted,true);
+});
+test('live gate transport bypasses the historical pinned module and aborts hung calls',async()=>{
+ const {AccountConnections:GateClient}=await import('../bubbles-connections-gate.mjs');
+ const client=new GateClient({token:()=>new Promise(()=>{}),root:{},timeoutMs:15,
+  request:()=>assert.fail('Unresolved wallet must not trigger network access')});
+ await assert.rejects(client.call('/gate/status'),/connection_timeout/);
+ let signal;
+ const stalled=new GateClient({token:async()=> 'device-token',root:{},timeoutMs:15,
+  request:async(_url,options)=>{signal=options.signal;return new Promise(()=>{})}});
+ await assert.rejects(stalled.call('/gate/status'),/connection_timeout/);
+ assert.equal(signal.aborted,true);
+});
 test('redeeming a pairing does not require an existing wallet in the destination browser',async()=>{
   const client=new AccountConnections({token:()=>assert.fail('destination has no wallet'),root:{},request:async(url,options)=>{assert.ok(!options.headers.Authorization);return Response.json({ok:true});}});
   assert.equal((await client.call('/pair/redeem',{code:'example'})).ok,true);
 });
-test('OAuth return checks exact popup, callback origin, provider and state before code exchange',async()=>{
+test('OAuth resumes after Android browser return without sharing a popup or code',async()=>{
   const listeners=new Map(),calls=[],popup={location:{},close(){this.closed=true;}};
-  const root={location:{origin:'https://quantaphi.org'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener:(key,value)=>listeners.set(key,value),removeEventListener:key=>listeners.delete(key)};
-  const request=async(url,options)=>{calls.push({url,options});return Response.json(url.endsWith('/start')?{ok:true,authorizationUrl:'https://accounts.google.com/o/oauth2/v2/auth?state=expected-state'}:{ok:true,account:{label:'connected'}});};
-  const client=new AccountConnections({token:()=> 'private-device-token',request,root});let completed=false;
-  await client.connect('google',['drive.read'],()=>completed=true);
-  const listener=listeners.get('message'),message={type:'bubbles:oauth-return',provider:'google',state:'expected-state',code:'authorization-code'};
-  for(const event of [{origin:'https://evil.test',source:popup,data:message},{origin:'https://quantaphi.org',source:{},data:message},{origin:'https://quantaphi.org',source:popup,data:{...message,state:'wrong'}}])await listener(event);
-  assert.equal(calls.length,1);assert.equal(completed,false);
-  await listener({origin:'https://quantaphi.org',source:popup,data:message});
-  assert.equal(calls.length,2);assert.equal(completed,true);assert.equal(popup.closed,true);
-  assert.ok(calls.every(c=>!c.url.includes('private-device-token')&&!c.options.body.includes('private-device-token')));
+  const state='a'.repeat(43);let serverStatus='pending';
+  const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},
+    addEventListener:(key,value)=>listeners.set(key,value),removeEventListener:key=>listeners.delete(key)};
+  const request=async(url,options)=>{
+    calls.push({url,options});
+    if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://accounts.google.com/o/oauth2/v2/auth?state='+state});
+    if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:serverStatus});
+    if(url.endsWith('/handoff/finish'))return Response.json({ok:true,status:'connected',account:{label:'verified'}});
+    throw Error('unexpected endpoint');
+  };
+  const client=new AccountConnections({token:()=> 'private-device-token',request,root});
+  let completed=null;
+  await client.connect('google',['drive.read'],(error,account)=>{completed={error,account};});
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(completed,null);
+  assert.match(popup.location.href,/accounts.google.com/);
+  serverStatus='received';
+  listeners.get('focus')();
+  await new Promise(resolve=>setImmediate(resolve));
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(completed.account.label,'verified');
+  assert.equal(completed.error,null);
+  assert.equal(popup.closed,true);
+  assert.ok(calls.some(c=>c.url.endsWith('/handoff/finish')));
+  assert.ok(calls.every(c=>!c.url.endsWith('/complete')&&!String(c.options.body).includes('authorization-code')));
 });
+test('closed OAuth popup waits for a late server handoff instead of falsely failing sign-in',async()=>{
+ const state='z'.repeat(43),listeners=new Map();
+ const popup={location:{},closed:false,close(){this.closed=true;}};
+ const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},
+  addEventListener:(key,handler)=>listeners.set(key,handler),
+  removeEventListener:key=>listeners.delete(key)};
+ let serverStatus='pending',completed=null,polls=0;
+ const client=new AccountConnections({token:()=> 'existing-wallet-session',root,request:async url=>{
+  if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+state,expiresIn:300});
+  if(url.endsWith('/handoff/status')){polls++;return Response.json({ok:true,status:serverStatus});}
+  if(url.endsWith('/handoff/finish'))return Response.json({ok:true,status:'connected',account:{id:'verified-cloudflare'}});
+  assert.fail('Unexpected connection endpoint '+url);
+ }});
+ await client.connect('cloudflare',['account.read'],(error,account)=>{completed={error,account};});
+ await new Promise(resolve=>setImmediate(resolve));
+ // Android Chrome may close the external window before the Durable Object
+ // has committed its callback. Focus is not a negative provider receipt.
+ popup.closed=true;
+ listeners.get('focus')();
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(completed,null,'Closed popup must not discard the pending wallet-bound handoff');
+ assert.ok(client.pending);
+ serverStatus='received';
+ listeners.get('focus')();
+ await new Promise(resolve=>setImmediate(resolve));
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(completed?.error,null);
+ assert.equal(completed?.account?.id,'verified-cloudflare');
+ assert.ok(polls>=2);
+ assert.equal(client.pending,null);
+});
+
 test('unsafe authorization URL closes the popup without navigating to it',async()=>{
   const popup={location:{},close(){this.closed=true;}},root={open:()=>popup};
   const client=new AccountConnections({token:()=> 'device-token',root,request:async()=>Response.json({ok:true,authorizationUrl:'https://evil.test/?state=state'})});
@@ -69,9 +421,9 @@ test('Cloudflare OAuth uses its real consent endpoint and verifies scopes before
    assert.equal(body.get('code_verifier'),'verifier-test');
    return Response.json({access_token:'private-access',refresh_token:'private-refresh',token_type:'Bearer',expires_in:3600,scope:scopes});
   }
-  if(url==='https://dash.cloudflare.com/oauth2/userinfo'){
+  if(url==='https://api.cloudflare.com/client/v4/user'){
    assert.equal(options.headers.Authorization,'Bearer private-access');
-   return Response.json({sub:'cloudflare-stable-user',email:'owner@example.test'});
+   return Response.json({success:true,result:{id:'a'.repeat(32),email:'owner@example.test'}});
   }
   throw Error('Unexpected Cloudflare endpoint');
  };
@@ -86,7 +438,7 @@ test('Cloudflare OAuth uses its real consent endpoint and verifies scopes before
  assert.doesNotMatch(url.href,/server-only-secret/);
  assert.throws(()=>adapter.authorization({state:'x',challenge:'y',actions:['wallet.mint']}),/unsupported_action/);
  const exchanged=await adapter.exchange({code:'code-test',verifier:'verifier-test',actions:['account.read','projects.build','ledger.read']});
- assert.equal(exchanged.subject,'cloudflare-stable-user');
+ assert.equal(exchanged.subject,'a'.repeat(32));
  assert.deepEqual(exchanged.grantedActions,['account.read','projects.build','ledger.read']);
  assert.equal(calls.length,2);
 });
@@ -100,7 +452,7 @@ test('Bubbles full project grant requests real provider scopes and requires ever
  let providerScopes=all;
  const adapter=cloudflareAdapter({clientId:'client-id',clientSecret:'server-side',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async url=>url.endsWith('/token')?
    Response.json({access_token:'test-token',refresh_token:'refresh',token_type:'Bearer',expires_in:3600,scope:providerScopes.join(' ')}):
-   Response.json({sub:'cloudflare-owner',email:'owner@example.test'}));
+   Response.json({success:true,result:{id:'b'.repeat(32),email:'owner@example.test'}}));
  const actions=['account.read','projects.build','ledger.read','projects.full'];
  const url=new URL(adapter.authorization({state:'state',challenge:'challenge',actions}));
  const requested=new Set(url.searchParams.get('scope').split(' '));
@@ -117,8 +469,197 @@ test('Cloudflare OAuth never mistakes limited consent for project management per
  const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
  const adapter=cloudflareAdapter({clientId:'cf-client',clientSecret:'secret',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url)=>{
   if(url.endsWith('/token'))return Response.json({access_token:'limited',refresh_token:'refresh',token_type:'bearer',expires_in:3600,scope:'user-details.read memberships.read'});
-  return Response.json({sub:'unique-cloudflare-user',email:'user@example.test'});
+  return Response.json({success:true,result:{id:'c'.repeat(32),email:'user@example.test'}});
  });
  const result=await adapter.exchange({code:'code',verifier:'verifier',actions:['account.read','projects.build']});
  assert.deepEqual(result.grantedActions,['account.read']);
+});
+
+test('full Cloudflare consent requests all 386 configured scopes once, without guessing from the catalog',async()=>{
+ const {cloudflareAdapter,cloudflareAvailableActions,cloudflareScopeInventory}=await import('../workers/bubbles-connections/providers.mjs');
+ const registered=['user-details.read','memberships.read',...Array.from({length:384},(_,i)=>'preview-scope-'+i+'.read')];
+ const manifest=registered.join(' ');
+ assert.equal(registered.length,386);
+ assert.ok(cloudflareAvailableActions(manifest).includes('owner.full'));
+ const inventory=cloudflareScopeInventory(manifest);
+ assert.equal(inventory.signInRequestScopeCount,386);
+ assert.equal(inventory.serverAllowlistCount,386);
+ assert.equal(inventory.clientRegistrationVerified,false);
+ const adapter=cloudflareAdapter({clientId:'registered-bubbles-client',clientSecret:'server-secret',allowedScopes:manifest,
+  redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'});
+ const url=new URL(adapter.authorization({state:'s'.repeat(43),challenge:'challenge',actions:['owner.full']}));
+ assert.equal(url.origin,'https://dash.cloudflare.com');
+ assert.equal(url.searchParams.get('client_id'),'registered-bubbles-client');
+ assert.deepEqual(url.searchParams.get('scope').split(' '),registered);
+ assert.equal(url.searchParams.get('code_challenge_method'),'S256');
+ assert.ok(!url.href.includes('server-secret'));
+ // The old six-scope binding must never announce 386 or offer owner.full.
+ const limited='user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read';
+ assert.ok(!cloudflareAvailableActions(limited).includes('owner.full'));
+ assert.equal(cloudflareScopeInventory(limited).signInRequestScopeCount,6);
+ assert.throws(()=>cloudflareAdapter({clientId:'client',clientSecret:'private',allowedScopes:limited,
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'})
+   .authorization({state:'s',challenge:'c',actions:['owner.full']}),/cloudflare_client_scopes_unavailable/);
+});
+
+test('Cloudflare Bubbles client restricts requests to scopes registered on its own OAuth app',async()=>{
+ const {cloudflareAdapter,cloudflareAvailableActions}=await import('../workers/bubbles-connections/providers.mjs');
+ const allowed='user-details.read memberships.read d1.read';
+ assert.deepEqual(cloudflareAvailableActions(allowed),['account.read','ledger.read']);
+ assert.deepEqual(cloudflareAvailableActions(''),[]);
+ const adapter=cloudflareAdapter({clientId:'bubble-app',clientSecret:'server-only',allowedScopes:allowed,
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'});
+ assert.throws(()=>adapter.authorization({state:'x',challenge:'y',actions:['projects.full']}),/cloudflare_client_scopes_unavailable/);
+ const url=new URL(adapter.authorization({state:'x',challenge:'y',actions:['account.read','ledger.read']}));
+ assert.equal(url.searchParams.get('scope'),'user-details.read memberships.read d1.read');
+ assert.ok(!url.href.includes('server-only'));
+});
+test('Cloudflare account discovery is verified with the users token and strips private API fields',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ const id='a'.repeat(32),calls=[];
+ const adapter=cloudflareAdapter({clientId:'app',clientSecret:'secret',allowedScopes:'user-details.read memberships.read',
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+     calls.push({url,authorization:options.headers.Authorization});
+     return Response.json({success:true,result:[{id,name:'Personal account',api_key:'SHOULD_NOT_LEAK'}],result_info:{total_pages:1}});
+   });
+ const result=await adapter.accounts({accessToken:'user-specific-token'});
+ assert.deepEqual(result,{accounts:[{id,name:'Personal account'}],truncated:false});
+ assert.equal(calls[0].authorization,'Bearer user-specific-token');
+ assert.equal(calls[0].url,'https://api.cloudflare.com/client/v4/accounts?page=1&per_page=50');
+ assert.ok(!JSON.stringify(result).includes('SHOULD_NOT_LEAK'));
+});
+
+test('separate Chrome context needs no BroadcastChannel or window.opener',async()=>{
+ const popup={location:{},close(){this.closed=true;}},calls=[];
+ const state='b'.repeat(43);
+ const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},
+   BroadcastChannel:class{constructor(){throw Error('should not create a channel');}},
+   addEventListener(){},removeEventListener(){}};
+ const client=new AccountConnections({root,token:()=> 'private-device-token',request:async(url)=>{
+   calls.push(url);
+   if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state='+state});
+   if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:'received'});
+   if(url.endsWith('/handoff/finish'))return Response.json({ok:true,status:'connected',account:{label:'github-owner'}});
+   throw Error('unexpected request');
+ }});
+ let completion=0;
+ await client.connect('github',['repository.read'],(error,account)=>{
+   assert.equal(error,null);assert.equal(account.label,'github-owner');completion++;
+ });
+ await new Promise(resolve=>setImmediate(resolve));
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(completion,1);
+ assert.equal(popup.closed,true);
+ assert.ok(calls.includes('/api/bubbles/connections/handoff/finish'));
+});
+
+test('Android popup-blocked viewer can resume after returning from external Chrome',async()=>{
+  const state='z'.repeat(43),data=new Map(),calls=[];let serverStatus='pending',navigated='';
+  const root={open:()=>null,location:{assign:url=>{navigated=url;}},sessionStorage:{
+    getItem:key=>data.get(key)||null,setItem:(key,value)=>data.set(key,value),removeItem:key=>data.delete(key)
+  },setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+  const request=async(url,options)=>{
+    calls.push({url,body:options.body});
+    if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state='+state,expiresIn:300});
+    if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:serverStatus});
+    if(url.endsWith('/handoff/finish'))return Response.json({ok:true,status:'connected',account:{label:'verified-github'}});
+    throw Error('unexpected route');
+  };
+  const first=new AccountConnections({token:()=> 'wallet-bound-session',root,request});
+  await first.connect('github',['repository.read'],()=>assert.fail('old viewer was navigated away'));
+  assert.match(navigated,/^https:\/\/github.com\/login\/oauth\/authorize/);
+  assert.ok(data.has('bubbles:oauth-pending:v1'));
+  assert.ok(!data.get('bubbles:oauth-pending:v1').includes('wallet-bound-session'));
+  assert.ok(!data.get('bubbles:oauth-pending:v1').includes('code'));
+  first.cleanup(); // Android destroys the original page on external navigation.
+  serverStatus='received';
+  const restored=new AccountConnections({token:()=> 'wallet-bound-session',root,request});
+  let outcome=null;
+  assert.equal(restored.resumePending((error,account)=>outcome={error,account}),true);
+  await new Promise(resolve=>setImmediate(resolve));
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(outcome.error,null);
+  assert.equal(outcome.account.label,'verified-github');
+  assert.equal(data.has('bubbles:oauth-pending:v1'),false);
+  assert.ok(calls.some(x=>x.url.endsWith('/handoff/finish')));
+});
+test('popup-blocked viewer refuses redirect when it cannot preserve authorization state',async()=>{
+  const root={open:()=>null,location:{assign:()=>assert.fail('must not navigate without session storage')}};
+  const client=new AccountConnections({token:()=> 'wallet',root,request:()=>assert.fail('must not start OAuth')});
+  await assert.rejects(client.connect('github',['repository.read'],()=>{}),/Open Account Connections in Chrome/);
+});
+
+test('Android return accepts a sealed connected receipt without repeating token exchange',async()=>{
+ const state='r'.repeat(43),popup={location:{},close(){this.closed=true;}},calls=[];
+ const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+ const client=new AccountConnections({root,token:()=> 'wallet-bound-session',request:async url=>{
+  calls.push(url);
+  if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state='+state});
+  if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:'connected',account:{label:'saved-github'}});
+  if(url.endsWith('/handoff/finish'))throw Error('must not exchange a second time');
+  throw Error('unexpected route');
+ }});
+ let completed=null;
+ await client.connect('github',['repository.read'],(error,account)=>{completed={error,account};});
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(completed.error,null);
+ assert.equal(completed.account.label,'saved-github');
+ assert.equal(popup.closed,true);
+ assert.equal(calls.filter(x=>x.endsWith('/handoff/finish')).length,0);
+});
+
+test('Cloudflare scope diagnostic reports only server-configured and requested scopes, never a fabricated 386',async()=>{
+ const {cloudflareScopeInventory}=await import('../workers/bubbles-connections/providers.mjs');
+ const limited=cloudflareScopeInventory('user-details.read memberships.read');
+ assert.deepEqual(limited,{serverAllowlistCount:2,signInRequestScopeCount:2,clientRegistrationVerified:false});
+ const full='user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read workers-routes.read workers-routes.write page.read workers-kv-storage.read workers-kv-storage.write workers-r2.read workers-r2.write queues.read queues.write ai.read ai.write browser-rendering.read browser-rendering.write containers.read containers.write workers-observability.read dns.read dns.write';
+ const inventory=cloudflareScopeInventory(full);
+ assert.equal(inventory.serverAllowlistCount,full.split(' ').length);
+ assert.equal(inventory.signInRequestScopeCount,inventory.serverAllowlistCount);
+ assert.equal(inventory.clientRegistrationVerified,false);
+ assert.equal(cloudflareScopeInventory('user-details.read, memberships.read').serverAllowlistCount,2);
+});
+
+test('Account Connections Cloudflare sign-in is usable without unregistered full-project scopes',()=>{
+ const provider={id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read']};
+ assert.deepEqual(availableCloudflareLoginActions(provider),['account.read']);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,actions:['account.read','ledger.read','projects.full']}),['account.read','ledger.read','projects.full']);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,configured:false}),[]);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,actions:[]}),[]);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,id:'github'}),[]);
+});
+
+test('Cloudflare OAuth rejects User Details responses with no verified user ID',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ const scopes='user-details.read memberships.read';
+ const adapter=cloudflareAdapter({clientId:'cf-client',clientSecret:'server-only',
+  redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback',
+  allowedScopes:scopes},async url=>url.endsWith('/oauth2/token')?
+   Response.json({access_token:'test',expires_in:3600,scope:scopes,token_type:'Bearer'}):
+   Response.json({success:true,result:{email:'owner@example.test'}}));
+ await assert.rejects(adapter.exchange({code:'code',verifier:'pkce',actions:['account.read']}),/provider_identity_invalid/);
+});
+
+test('Cloudflare OAuth code exchange never uses the unsupported Workers redirect:error mode',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ const calls=[];
+ const adapter=cloudflareAdapter({clientId:'test',clientSecret:'private',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+  calls.push(url);
+  assert.equal(options.redirect,'manual');
+  if(url.endsWith('/oauth2/token'))return Response.json({access_token:'access',refresh_token:'refresh',token_type:'Bearer',expires_in:3600,scope:'user-details.read memberships.read'});
+  return Response.json({success:true,result:{id:'e'.repeat(32),email:'test@example.test'}});
+ });
+ const connected=await adapter.exchange({code:'auth-code',verifier:'verifier',actions:['account.read']});
+ assert.equal(connected.subject,'e'.repeat(32));
+ assert.deepEqual(connected.grantedActions,['account.read']);
+ assert.equal(calls.length,2);
+});
+
+test('Google OAuth redirect status stays sanitized across Worker completion boundary',async()=>{
+ const {connectionFailureCode,safeConnectionFailure}=await import('../workers/bubbles-connections/completion.mjs');
+ const code=connectionFailureCode(Object.assign(Error('google_exchange_302'),{connectionStage:'exchange'}));
+ assert.equal(code,'google_exchange_302');
+ assert.equal(safeConnectionFailure(code),true);
+ assert.match(providerSignInErrorMessage(code,'google'),/unexpected redirect/);
+ assert.ok(!providerSignInErrorMessage(code,'google').includes('private-code'));
 });

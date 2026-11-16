@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "site": "quantaphi.org",
+  "source": "Cloudflare GraphQL httpRequests1dGroups",
+  "fetchedAt": "2026-10-24T05:55:25.001Z",
+  "period": {
+    "since": "2026-10-18",
+    "untilExclusive": "2026-10-25",
+    "timeZone": "UTC",
+    "todayPartial": true
+  },
+  "requests": 314545,
+  "pageViews": 138899,
+  "includesBots": true,
+  "uniqueVisitors": false,
+  "days": [
+    {
+      "date": "2026-10-18",
+      "requests": 74680,
+      "pageViews": 22363
+    },
+    {
+      "date": "2026-10-19",
+      "requests": 52670,
+      "pageViews": 22488
+    },
+    {
+      "date": "2026-10-20",
+      "requests": 44052,
+      "pageViews": 22393
+    },
+    {
+      "date": "2026-10-21",
+      "requests": 45961,
+      "pageViews": 22214
+    },
+    {
+      "date": "2026-10-22",
+      "requests": 37878,
+      "pageViews": 22038
+    },
+    {
+      "date": "2026-10-23",
+      "requests": 40013,
+      "pageViews": 21598
+    },
+    {
+      "date": "2026-10-24",
+      "requests": 19291,
+      "pageViews": 5805
+    }
+  ]
+}

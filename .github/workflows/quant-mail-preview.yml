@@ -1,0 +1,38 @@
+name: Quant Mail public preview regression
+on:
+  pull_request:
+    paths:
+      - 'quant-mail.html'
+      - 'bubbles-quant-mail-preview.js'
+      - 'bubbles.html'
+      - 'bubbles/index.html'
+      - 'bubbles-chrome.html'
+      - 'bubbles-accounts.html'
+      - 'index.html'
+      - 'test/quant-mail-preview.test.mjs'
+      - '.github/workflows/quant-mail-preview.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'quant-mail.html'
+      - 'bubbles-quant-mail-preview.js'
+      - 'bubbles.html'
+      - 'bubbles/index.html'
+      - 'bubbles-chrome.html'
+      - 'bubbles-accounts.html'
+      - 'index.html'
+      - 'test/quant-mail-preview.test.mjs'
+      - '.github/workflows/quant-mail-preview.yml'
+permissions:
+  contents: read
+jobs:
+  preview-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify safe public status, no credential entry, Bubbles chat and account links
+        run: node --test test/quant-mail-preview.test.mjs

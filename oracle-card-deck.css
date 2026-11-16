@@ -5,15 +5,82 @@
 .oracle-card-deck-head h2{font-size:clamp(23px,5vw,32px);margin:6px 0;line-height:1.16}
 .oracle-card-deck-head p{font-size:14px;line-height:1.5;margin:5px 0 12px}
 .oracle-card-deck-kicker{font-size:11px;letter-spacing:.12em;font-weight:900;color:#8c3858}
+.oracle-direction-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:10px 0 12px;border-bottom:1px solid #d8c9cc}
+.oracle-direction-tabs button{min-height:46px;padding:9px 5px;border:0;border-bottom:3px solid transparent;background:transparent;color:#594b53;font:800 14px/1.3 system-ui,sans-serif;cursor:pointer;touch-action:manipulation}
+.oracle-direction-tabs button.oracle-current,.oracle-direction-tabs button[aria-selected="true"]{border-bottom-color:#a72d2c;color:#952b2c}
+.oracle-direction-tabs button:focus-visible,.oracle-direction-action button:focus-visible{outline:3px solid #9952ba;outline-offset:2px}
+.oracle-direction-action{display:flex;gap:11px;align-items:center;flex-wrap:wrap;padding:6px 0 1px}
+.oracle-direction-action #oracleCardFollow{min-height:44px;min-width:105px;border:1px solid #c7a8a1;border-radius:12px;padding:8px 12px;background:#fff;color:#842d2e;font:800 13px system-ui,sans-serif;cursor:pointer}
+.oracle-direction-action #oracleCardFollow[aria-pressed="true"]{border-color:#a72d2c;background:#f9ece9}
+.oracle-direction-action #oracleCardReason{margin:0;flex:1 1 220px;font-size:13px;line-height:1.45;color:#514054}
+.oracle-direction-action button[hidden]{display:none!important}
 .oracle-card-deck-nav{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:7px;align-items:center}
 .oracle-card-deck-nav button,.oracle-card-scroll{min-height:47px;padding:8px 10px;border-radius:13px;background:#69309e;color:#fff;font-size:13px;line-height:1.2;touch-action:manipulation}
 .oracle-card-deck-nav strong{font-size:14px;text-align:center;line-height:1.3}
+.oracle-card-deck-feature{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+.oracle-card-deck-feature button,.oracle-card-deck-feature a{font:inherit;font-weight:800;font-size:13px;display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px}
+.oracle-card-deck-feature button{color:#fff;background:#a52b28;border:1px solid #a52b28;cursor:pointer}
+.oracle-card-deck-feature a{border:1px solid #baa39a;background:#fff;color:#7c231f;text-decoration:none}
 .oracle-card-deck-stage{margin:12px 0 9px;min-width:0;max-width:100%}
 .oracle-card-deck-stage:empty{display:none}
 .oracle-card-deck-stage>section{max-width:100%;margin:0!important}
 .oracle-card-deck-stage .ba-panel{z-index:9999}
 .oracle-card-scroll{display:block;width:100%;background:#a33042;font-weight:900;font-size:15px}
 .oracle-card-deck-status{font-size:12px;line-height:1.45;margin:8px 0 0;color:#604d6e}
-.oracle-card-deck-active:not(.oracle-shelf-open) main.app > :is(#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#result,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:none!important}
-.oracle-shelf-open main.app > :is(#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:block}
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app > :is(#coliseumZeusCard,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#result,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:none!important}
+.oracle-shelf-open main.app > :is(#coliseumZeusCard,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:block}
 @media(max-width:390px){.oracle-card-deck{padding:11px}.oracle-card-deck-nav{grid-template-columns:1fr 1fr}.oracle-card-deck-nav strong{grid-column:1/-1;grid-row:1}.oracle-card-deck-nav button{font-size:13px;min-height:48px}}
+
+/* Search and the working card lead the page; navigation stays quiet. */
+body.oracle-quanta #oracleCardDeck{padding:0;margin:8px 0 20px;border:0;border-radius:0;background:transparent;box-shadow:none;color:#302b29}
+body.oracle-quanta .search{position:relative;top:auto;background:transparent;box-shadow:none;border:0;padding:8px 0}
+body.oracle-quanta .search #q{border:1px solid #c9c3bd;border-radius:12px;box-shadow:none;background:#fff;color:#302b29}
+body.oracle-quanta .search #go{background:#fff;color:#3d3530;border:1px solid #c9c3bd;border-radius:12px;box-shadow:none;padding:10px 14px}
+body.oracle-quanta .search>.public-card-count,body.oracle-quanta .qcp-builder-shortcut{display:none!important}
+body.oracle-quanta #oracleCardDeck .oracle-direction-tabs{margin:0 0 8px}
+body.oracle-quanta #oracleCardDeck .oracle-direction-tabs button{border-radius:0;font-weight:600;font-size:14px}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav{grid-template-columns:44px minmax(0,1fr) 44px;gap:8px}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav button{min-height:44px;padding:0;background:#fff;color:#49413c;border:1px solid #d6cec8;border-radius:10px;box-shadow:none;font-size:27px}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav strong{font-size:14px;font-weight:600;grid-column:auto;grid-row:auto}
+body.oracle-quanta #oracleCardDeck .oracle-direction-action{justify-content:flex-end;padding:4px 0}
+body.oracle-quanta #oracleCardDeck #oracleCardFollow{min-width:0;min-height:44px;padding:7px 12px;border-color:#d6cec8;color:#49413c;font-weight:600}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-stage{margin:4px 0 9px}
+body.oracle-quanta #oracleCardDeck .oracle-card-scroll{background:transparent;color:#62574f;border:1px solid #ddd5ce;min-height:44px;font-size:13px;font-weight:500;box-shadow:none}
+/* Keep changing recommendation explanations accessible without crowding cards. */
+#oracleCardReason,#oracleCardStatus{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}
+
+/* One-tap navigation to original pages and website/sports cards, not just brands.
+ * Mobile-first full-width actions stay visible above the swipe deck. */
+.oracle-family-jump{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:8px 0 11px}
+.oracle-family-jump button{font:750 clamp(12px,2.2vw,14px)/1.3 system-ui,sans-serif;border-radius:12px;min-height:46px;
+ border:1px solid #cad8e5;background:#f6faff;color:#143e65;padding:9px 7px;cursor:pointer;white-space:normal}
+.oracle-family-jump button:hover{background:#e7f2fc;border-color:#65a4da}
+.oracle-family-jump button:focus-visible{outline:3px solid #f1af40;outline-offset:2px}
+.oracle-family-jump button:disabled{opacity:.45;cursor:not-allowed}
+.oracle-family-jump [data-family-count]{display:inline-block;min-width:25px;margin-left:3px;
+ border-radius:20px;background:#e0edf9;padding:3px 5px;color:#14416f;font-size:11px;font-variant-numeric:tabular-nums}
+@media(max-width:410px){.oracle-family-jump{gap:5px}.oracle-family-jump button{font-size:11px;padding:8px 3px;min-height:50px}}
+
+
+/* Following stream: actual original publisher items instead of name-only promotional tiles.
+ * Controls stay neutral and do not imply sponsorship or authentication. */
+.oracle-following-feed[hidden]{display:none!important}
+.oracle-following-feed{min-width:0;display:grid;gap:9px;margin:10px 0 17px;padding:8px 0;border-bottom:1px solid #e4e4e4}
+.oracle-following-feed .ofp-status{margin:0;color:#454545;font:650 13px/1.5 system-ui,sans-serif}
+.oracle-following-feed .ofp-note{font:450 11px/1.45 system-ui,sans-serif;color:#696969;margin:0}
+.oracle-following-feed .ofp-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:12px;min-width:0}
+.oracle-following-feed .ofp-item{display:grid;grid-template-rows:auto 1fr;background:#fff;border:1px solid #dfdfdf;border-radius:14px;overflow:hidden;min-width:0}
+.oracle-following-feed .ofp-photo{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.oracle-following-feed .ofp-info{display:grid;align-content:start;gap:7px;padding:13px;min-width:0}
+.oracle-following-feed .ofp-source{font:750 11px/1.4 system-ui,sans-serif;color:#565656;margin:0}
+.oracle-following-feed .ofp-title{font:750 18px/1.25 system-ui,sans-serif;color:#222;margin:0;overflow-wrap:anywhere}
+.oracle-following-feed .ofp-description{font:450 13px/1.45 system-ui,sans-serif;color:#494949;margin:0;overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.oracle-following-feed .ofp-price{font:800 15px/1.35 system-ui,sans-serif;color:#252525;margin:0}
+.oracle-following-feed .ofp-disclosure{font:450 10px/1.35 system-ui,sans-serif;color:#686868;margin:2px 0 0}
+.oracle-following-feed .ofp-actions{display:flex;flex-wrap:wrap;gap:7px}
+.oracle-following-feed .ofp-action,.oracle-following-feed .ofp-more{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;min-height:44px;padding:9px 11px;border:1px solid #cacaca;border-radius:11px;background:#fff;color:#252525!important;font:750 12px/1.35 system-ui,sans-serif;cursor:pointer}
+.oracle-following-feed .ofp-action:hover,.oracle-following-feed .ofp-more:hover{background:#f3f3f3}
+.oracle-following-feed .ofp-unavailable{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;min-height:48px;padding:8px 12px;border-bottom:1px solid #e1e1e1;background:#fff;color:#555;font:550 12px/1.4 system-ui,sans-serif}
+.oracle-following-feed .ofp-more[hidden]{display:none!important}
+.oracle-following-feed :is(a,button):focus-visible{outline:3px solid #333;outline-offset:2px}
+@media(max-width:600px){.oracle-following-feed .ofp-items{grid-template-columns:1fr}.oracle-following-feed .ofp-item{grid-template-columns:minmax(116px,42%) 1fr;grid-template-rows:auto}.oracle-following-feed .ofp-photo{height:100%;aspect-ratio:auto;min-height:145px;object-fit:cover}.oracle-following-feed .ofp-title{font-size:15px}.oracle-following-feed .ofp-info{padding:11px}.oracle-following-feed .ofp-actions{display:grid;grid-template-columns:1fr}.oracle-following-feed .ofp-action{width:100%}.oracle-following-feed .ofp-item.ofp-no-photo{grid-template-columns:1fr}}

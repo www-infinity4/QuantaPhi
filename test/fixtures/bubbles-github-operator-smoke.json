@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "scope": "synthetic-repository-operator-test",
+  "operations": [
+    "read",
+    "create_file",
+    "read_file",
+    "update_file"
+  ],
+  "verification": "created-read-updated",
+  "personalData": false
+}

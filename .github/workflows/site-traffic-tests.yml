@@ -1,0 +1,26 @@
+name: Site traffic safety checks
+on:
+  pull_request:
+    paths:
+      - 'site-traffic.js'
+      - 'data/site-traffic.json'
+      - 'workers/site-traffic/**'
+      - 'test/site-traffic.test.mjs'
+      - '.github/workflows/site-traffic-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  traffic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source and authenticated-query fallback
+        run: |
+          node --check site-traffic.js
+          node --check workers/site-traffic/worker.mjs
+          node --test test/site-traffic.test.mjs

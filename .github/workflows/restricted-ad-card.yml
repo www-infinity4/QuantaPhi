@@ -1,0 +1,32 @@
+name: Restricted advertising card safety
+on:
+  pull_request:
+    paths:
+      - 'restricted-ad-*'
+      - 'test/restricted-ad-policy.test.mjs'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - '.github/workflows/restricted-ad-card.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'restricted-ad-*'
+      - 'test/restricted-ad-policy.test.mjs'
+      - '.github/workflows/restricted-ad-card.yml'
+jobs:
+  fail-closed-card:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check source syntax
+        run: |
+          node --check restricted-ad-policy.mjs
+          node --check restricted-ad-card.mjs
+          node --check oracle-card-deck.js
+      - name: Verify age, consent, rights and regional filters
+        run: node --test test/restricted-ad-policy.test.mjs

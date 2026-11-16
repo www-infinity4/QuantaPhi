@@ -1,0 +1,31 @@
+name: Mining and mineral Quick Card verification
+on:
+  pull_request:
+    paths:
+      - 'mineral-destination-cards.mjs'
+      - 'mineral-destination-cards.css'
+      - 'test/mineral-destination-cards.test.mjs'
+      - 'index.html'
+      - '.github/workflows/mineral-destination-cards.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'mineral-destination-cards.mjs'
+      - 'mineral-destination-cards.css'
+      - 'test/mineral-destination-cards.test.mjs'
+      - 'index.html'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check mineral Quick Card JavaScript syntax
+        run: node --check mineral-destination-cards.mjs
+      - name: Test data, source integrity and Oracle integration
+        run: node --test test/mineral-destination-cards.test.mjs

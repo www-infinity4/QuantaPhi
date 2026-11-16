@@ -1,0 +1,70 @@
+/* Infinity Affiliates · authentic QuantaPhi card, responsive and keyboard accessible */
+.infinity-affiliates-card{--ia-blue:#15517a;--ia-red:#c33c43;--ia-ink:#223c50;--ia-muted:#526b7e;box-sizing:border-box;background:#fff;color:var(--ia-ink);border:1px solid #c9d9e5;border-radius:22px;overflow:hidden;box-shadow:0 14px 36px #142f4b23;min-width:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+.infinity-affiliates-card *{box-sizing:border-box}
+.infinity-affiliates-card .ia-hero{background:radial-gradient(ellipse at 78% 30%,#396f98,transparent 54%),linear-gradient(126deg,#081c30,#163d5e 66%,#102e4d);color:#fff;min-height:245px;padding:20px 22px 27px;position:relative;overflow:hidden}
+.infinity-affiliates-card .ia-hero:after{content:"";position:absolute;inset:8px;border:1px solid #ffffff22;border-radius:15px;pointer-events:none}
+.infinity-affiliates-card .ia-kicker{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:9px;font-size:10px;font-weight:900;letter-spacing:.15em;color:#c3dbe9}
+.infinity-affiliates-card .ia-kicker span:first-child{font-size:17px;font-weight:950;color:#fff;letter-spacing:-.04em}
+.infinity-affiliates-card .ia-hero-body{display:grid;grid-template-columns:36% minmax(0,1fr);align-items:center;gap:14px;margin-top:19px;position:relative;z-index:1}
+.infinity-affiliates-card .ia-big-mark{height:167px;display:flex;flex-direction:column;justify-content:center;align-items:center;border:1px solid #aac8d766;border-radius:19px;transform:perspective(500px) rotate(-7deg);background:linear-gradient(132deg,#d2e7ed,#659bbb 38%,#d9e5e7 60%,#5a90b1);box-shadow:9px 10px 0 #0718257a,inset 0 2px 3px #ffffffb3;color:#103451;font-size:clamp(79px,22vw,139px);line-height:.84;font-weight:950;text-shadow:0 2px #fff7}
+.infinity-affiliates-card .ia-big-mark span{font-size:10px;letter-spacing:.2em;text-shadow:none;margin-top:10px}
+.infinity-affiliates-card .ia-eyebrow{font-size:10px;letter-spacing:.17em;font-weight:900;color:#bce8fa}
+.infinity-affiliates-card h2{font-size:clamp(25px,6.6vw,45px);font-weight:950;line-height:1.04;letter-spacing:-.06em;margin:10px 0}
+.infinity-affiliates-card .ia-hero p{color:#d4e5f0;font-size:13px;line-height:1.55;margin:10px 0}
+.infinity-affiliates-card .ia-hero-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.infinity-affiliates-card .ia-hero-tags span{font-size:10px;padding:6px 8px;border-radius:999px;border:1px solid #b0d6eb80;color:#e4f7ff;font-weight:800;background:#ffffff13}
+.infinity-affiliates-card .ia-inner{padding:18px 20px 24px}
+.infinity-affiliates-card .ia-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:9px;margin:6px 0 13px}
+.infinity-affiliates-card .ia-heading h3{font-size:21px;line-height:1.2;letter-spacing:-.04em;color:#163f5b;margin:0 0 5px}
+.infinity-affiliates-card .ia-heading p{color:#556b7b;font-size:13px;line-height:1.45;margin:0}
+.infinity-affiliates-card .ia-step{flex:none;font-size:10px;color:#2c7199;border:1px solid #b6d2e3;padding:6px 7px;border-radius:7px;font-weight:900;letter-spacing:.04em;white-space:nowrap}
+.infinity-affiliates-card label{display:block;font-size:13px;line-height:1.3;color:#26455a;font-weight:800}
+.infinity-affiliates-card :is(input:not([type=checkbox]),textarea,select){display:block;width:100%;min-width:0;font-size:16px;line-height:1.4;background:#fff;color:#183247;border:1px solid #b3c8d6;border-radius:11px;padding:11px 12px;margin-top:6px;min-height:47px}
+.infinity-affiliates-card textarea{resize:vertical;min-height:110px}
+.infinity-affiliates-card input[type=checkbox]{appearance:auto;flex:0 0 auto;width:20px;height:20px;accent-color:#1b6388;margin:2px 0}
+.infinity-affiliates-card :is(a,button,input,textarea,select):focus-visible{outline:3px solid #0395c7;outline-offset:2px}
+.infinity-affiliates-card .ia-match{border-radius:16px;background:#f0f6fa;padding:14px;border:1px solid #d3e5ef;margin-bottom:14px}
+.infinity-affiliates-card .ia-match-result{font-size:12px;color:#526f81;margin-top:10px;line-height:1.45;font-weight:750}
+.infinity-affiliates-card .ia-match-result.ia-matched{color:#205d4f}
+.infinity-affiliates-card .ia-brand-line{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.infinity-affiliates-card .ia-brand-line span{font-size:11px;color:#6d8190}
+.infinity-affiliates-card .ia-brand-list{display:flex;gap:7px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;padding:10px 2px 13px;scrollbar-width:thin}
+.infinity-affiliates-card .ia-brand-button{flex:0 0 auto;max-width:200px;min-height:43px;padding:8px 12px;border:1px solid #c5d8e3;background:#fff;color:#255477;cursor:pointer;border-radius:10px;font:850 12px/1.3 system-ui,sans-serif;scroll-snap-align:start;white-space:normal}
+.infinity-affiliates-card .ia-brand-button[aria-pressed=true]{background:#e4f2f9;border-color:#15749d;box-shadow:inset 0 0 0 1px #15749d}
+.infinity-affiliates-card .ia-brand-foot{color:#74828b;font-size:11px;line-height:1.4;margin:0 0 16px}
+.infinity-affiliates-card .ia-preview{background:linear-gradient(115deg,#e8f1f7,#fff);border:1px solid #c6dfeb;border-radius:15px;padding:14px;display:flex;gap:13px;align-items:center;margin:7px 0 22px}
+.infinity-affiliates-card .ia-preview-mark{flex:0 0 76px;width:76px;height:76px;border-radius:13px;background:linear-gradient(135deg,#1b577d,#0f2a48);color:#fff;display:grid;place-items:center;font-size:57px;font-weight:900;line-height:1}
+.infinity-affiliates-card .ia-preview small{color:#28749c;font-size:9px;letter-spacing:.12em;font-weight:950}
+.infinity-affiliates-card .ia-preview h3{font-size:18px;line-height:1.19;margin:4px 0;color:#173d5c;letter-spacing:-.04em}
+.infinity-affiliates-card .ia-preview p{font-size:12px;color:#546c7a;line-height:1.45;margin:0 0 5px}
+.infinity-affiliates-card .ia-preview a{color:#175c87;font-size:12px;font-weight:800}
+.infinity-affiliates-card .ia-request-head{margin-top:9px}
+.infinity-affiliates-card #iaForm{background:#f8fafb;border:1px solid #dce7ed;border-radius:16px;padding:15px;display:grid;gap:14px}
+.infinity-affiliates-card .ia-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.infinity-affiliates-card .ia-consent{display:flex;gap:10px;align-items:flex-start;font-weight:500;background:#eaf3f8;padding:11px;border-radius:11px;font-size:12px;line-height:1.55}
+.infinity-affiliates-card .ia-form-actions{display:grid;grid-template-columns:1.55fr 1fr;gap:9px}
+.infinity-affiliates-card button{cursor:pointer}
+.infinity-affiliates-card .ia-prepare,.infinity-affiliates-card .ia-github{display:flex;align-items:center;justify-content:center;min-height:52px;text-align:center;font:900 14px/1.3 system-ui,sans-serif;border-radius:12px;background:#b52f38;color:#fff;text-decoration:none;border:1px solid #96343a;padding:11px}
+.infinity-affiliates-card .ia-secondary{min-height:46px;padding:9px 12px;border:1px solid #b1cddd;border-radius:11px;background:#fff;color:#1b557a;font:850 13px system-ui,sans-serif}
+.infinity-affiliates-card .ia-feedback{font-size:12px;color:#4b6678;margin:0;line-height:1.45}
+.infinity-affiliates-card .ia-prepared{padding:14px;border-radius:13px;border:1px solid #93c4d6;background:#ecf6fc;display:grid;gap:11px}
+.infinity-affiliates-card .ia-prepared[hidden]{display:none!important}
+.infinity-affiliates-card .ia-prepared strong{color:#184b6b}
+.infinity-affiliates-card .ia-prepared p{margin:0;color:#516979;font-size:12px;line-height:1.48}
+.infinity-affiliates-card .ia-foot-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:15px 0 4px}
+.infinity-affiliates-card .ia-foot-actions :is(button,a){display:flex;align-items:center;justify-content:center;min-height:45px;border-radius:10px;border:1px solid #c4d6e0;color:#255674;background:#fff;font:800 12px system-ui,sans-serif;text-decoration:none}
+.infinity-affiliates-card .ia-disclosure{font-size:10px;line-height:1.6;color:#617482;margin:16px 0 0}
+.infinity-affiliates-card .ia-empty{font-size:12px;padding:9px}
+@media(max-width:550px){
+ .infinity-affiliates-card .ia-hero{padding:16px 14px 19px;min-height:220px}
+ .infinity-affiliates-card .ia-hero-body{grid-template-columns:32% minmax(0,1fr);gap:10px}
+ .infinity-affiliates-card .ia-big-mark{height:133px;font-size:78px}
+ .infinity-affiliates-card .ia-big-mark span{font-size:7px}
+ .infinity-affiliates-card .ia-inner{padding:16px 12px 22px}
+ .infinity-affiliates-card .ia-heading h3{font-size:19px}
+ .infinity-affiliates-card .ia-step{font-size:9px}
+ .infinity-affiliates-card #iaForm{padding:12px}
+ .infinity-affiliates-card .ia-form-grid{grid-template-columns:1fr}
+ .infinity-affiliates-card .ia-form-actions{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){.infinity-affiliates-card *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

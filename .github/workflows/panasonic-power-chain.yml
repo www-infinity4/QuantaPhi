@@ -1,0 +1,33 @@
+name: Panasonic Power Chain Quick Card
+on:
+  pull_request:
+    paths:
+      - 'design-lab/panasonic*'
+      - 'design-lab/power-chain-core.mjs'
+      - 'test/panasonic-power-chain.test.mjs'
+      - '.github/workflows/panasonic-power-chain.yml'
+  push:
+    branches:
+      - 'feat/panasonic-power-chain-quick-card-20261031'
+    paths:
+      - 'design-lab/panasonic*'
+      - 'design-lab/power-chain-core.mjs'
+      - 'test/panasonic-power-chain.test.mjs'
+      - '.github/workflows/panasonic-power-chain.yml'
+permissions:
+  contents: read
+jobs:
+  source-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax
+        run: |
+          node --check design-lab/panasonic-card.mjs
+          node --check design-lab/panasonic-ui.mjs
+      - name: Panasonic source and card tests
+        run: node --test test/panasonic-power-chain.test.mjs

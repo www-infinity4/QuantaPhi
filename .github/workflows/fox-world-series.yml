@@ -1,0 +1,42 @@
+name: FOX Infinity TV World Series
+on:
+  push:
+    paths:
+      - 'world-series-score.mjs'
+      - 'world-series-updates.mjs'
+      - 'fox-infinity-tv.mjs'
+      - 'fox-infinity-tv.css'
+      - 'infinity-tv/fox.html'
+      - 'quick-ads.mjs'
+      - 'index.html'
+      - 'test/fox-world-series.test.mjs'
+      - '.github/workflows/fox-world-series.yml'
+  pull_request:
+    paths:
+      - 'world-series-score.mjs'
+      - 'world-series-updates.mjs'
+      - 'fox-infinity-tv.mjs'
+      - 'fox-infinity-tv.css'
+      - 'infinity-tv/fox.html'
+      - 'quick-ads.mjs'
+      - 'index.html'
+      - 'test/fox-world-series.test.mjs'
+      - '.github/workflows/fox-world-series.yml'
+permissions:
+  contents: read
+jobs:
+  fox-world-series:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: |
+          node --check world-series-score.mjs
+          node --check world-series-updates.mjs
+          node --check fox-infinity-tv.mjs
+          node --check quick-ads.mjs
+      - name: World Series and existing Quick Ads regressions
+        run: node --test test/fox-world-series.test.mjs test/quick-ads.test.mjs

@@ -34,7 +34,7 @@ test('Site is the single assistant for native-voice commands and typed chat', ()
   assert.match(site, /if\(!nativeOverlay\|\|busy\)return false/);
   assert.match(site, /nativeSpeechPending=fromVoice/);
   assert.match(site, /if\(fromVoice&&!nativeOverlay&&!await sharedVoice\(false\)\)/);
-  assert.match(site, /if\(nativeSpeechPending\)nativeSpeechReply=answer/);
+  assert.match(site, /if\(nativeSpeechPending\)nativeSpeechReply=(?:answer|response|finalAnswer)/);
   assert.match(site, /mic\.hidden=true/);
   assert.match(site, /speak\.hidden=true/);
   assert.match(site, /const headers=await verifiedOwnerHeaders\(\)/);

@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#edf0f4"><title>Infinity Platinum Phone | Web Address Calling</title>
 <meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
 <meta name="description" content="Your own web-address phone line, reached from Infinity Platinum. Internet calls without a traditional phone number.">
-<link rel="stylesheet" href="/phone/phone.css?v=20261015-offline1"></head>
+<link rel="stylesheet" href="/phone/phone.css?v=20261022-bubbles-phone1"></head>
 <body><main class="phone-shell">
 <header class="phone-top"><a href="/platinum/">← Infinity Platinum</a><span class="brand">Pt · INFINITY PLATINUM PHONE</span></header>
 <h1>Your website.<br><span>Your phone line.</span></h1>
@@ -62,6 +62,21 @@
 <div class="video-grid"><video id="remote-video" autoplay playsinline hidden></video><video id="local-video" autoplay playsinline muted hidden></video></div>
 <audio id="remote-audio" autoplay playsinline></audio>
 <div class="actions"><button type="button" id="unmute-play">Play incoming audio</button><button type="button" id="mute">Mute microphone</button><button type="button" id="hangup" class="danger">Hang up</button></div></section>
+<section class="panel" id="bubbles-call-draft" aria-labelledby="bubbles-call-title">
+<h2 id="bubbles-call-title">Bubbles · prepare a phone call</h2>
+<p>Prepare a message for a person you choose, then open your Android phone's normal dialer. No call is made until <strong>you</strong> confirm it in the dialer. Bubbles cannot yet hear or speak through an ordinary carrier call.</p>
+<form id="bubbles-call-form">
+<label for="bubbles-call-person">Who is this for?</label><input id="bubbles-call-person" maxlength="70" placeholder="My uncle" autocomplete="off">
+<label for="bubbles-call-number">Their phone number</label><input id="bubbles-call-number" type="tel" maxlength="35" autocomplete="off" placeholder="Enter the number you intend to call" required>
+<label for="bubbles-call-message">What should Bubbles tell them?</label>
+<textarea id="bubbles-call-message" rows="4" maxlength="1500" placeholder="Your approved message" required></textarea>
+<button type="submit" class="primary">Prepare call and review message</button>
+</form>
+<div id="bubbles-call-preview" hidden><p><strong>Proposed AI introduction — not spoken on a carrier call yet</strong></p><p id="bubbles-call-script"></p>
+<a id="bubbles-carrier-dial" class="primary" href="#" rel="noreferrer">Open my phone dialer</a>
+<p class="small">Use your normal calling service and read the approved message yourself for now. No contacts or message text are uploaded to Infinity Switchboard by this action. Bubbles cannot answer questions on that cellular audio channel until a verified two-way telephony bridge is connected.</p></div>
+<p id="bubbles-call-state" class="small" role="status" aria-live="polite">Not prepared. Choose a recipient and review the message first.</p>
+</section>
 <section class="panel"><h2>Your existing phone numbers</h2><p>Keep a private reminder of a number and the Platinum address it should eventually reach. This <strong>does not</strong> activate number forwarding, prove that you own the number, or change anyone's phone service.</p>
 <form id="legacy-form"><label for="legacy-number">Your existing number</label><input id="legacy-number" type="tel" placeholder="Your number" maxlength="24" autocomplete="off">
 <label for="legacy-alias">Point to Platinum web address</label><input id="legacy-alias" placeholder="mary" maxlength="26" autocomplete="off">
@@ -70,7 +85,7 @@
 <section class="panel"><h2>Don't lose your words</h2><p>Anything you type below is restored locally if you switch websites or return to Platinum. It is not sent to the switchboard or another user.</p>
 <label for="phone-draft">Your ideas / notes</label><textarea id="phone-draft" rows="6" maxlength="100000" placeholder="Write your ideas here…"></textarea><p id="draft-state" class="small">Stored on this device only.</p></section>
 <footer>Infinity 2026® · Infinity Platinum Phone · Internet calling preview · Requires existing internet access · Not an emergency telephone service</footer>
-</main><script src="/phone/quickdial.js?v=20261015-infinitysignal1"></script><script src="/phone/phone.js?v=20261015-infinitysignal1"></script>
+</main><script src="/phone/quickdial.js?v=20261015-infinitysignal1"></script><script src="/phone/call-handoff.js?v=20261022-dialer1"></script><script src="/phone/phone.js?v=20261022-dialer1"></script>
 <script>
 (function(){
  'use strict';

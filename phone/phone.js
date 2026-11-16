@@ -311,6 +311,34 @@ $('legacy-form').addEventListener('submit',e=>{
  try{localStorage.setItem(FORWARDS,JSON.stringify(plans.slice(0,20)));say('Private forwarding plan saved on this device. It is NOT live routing.');legacyRender()}
  catch{say('Cannot save number on this device.',true)}
 });
+// Ordinary carrier calls are handoffs, NOT switchboard call legs.
+// User reviews the exact destination and words before opening the dialer.
+function initBubblesCallDraft(){
+ const form=$('bubbles-call-form'),policy=window.InfinityPhoneHandoff;
+ if(!form||!policy)return;
+ const fields=['bubbles-call-person','bubbles-call-number','bubbles-call-message'];
+ const previewArea=$('bubbles-call-preview'),script=$('bubbles-call-script');
+ const state=$('bubbles-call-state'),link=$('bubbles-carrier-dial');
+ function invalidate(){
+  previewArea.hidden=true;
+  link.removeAttribute('href');
+  state.textContent='Message changed. Prepare and review again before opening the dialer.';
+ }
+ for(const id of fields)$(id).addEventListener('input',invalidate);
+ form.addEventListener('submit',event=>{
+  event.preventDefault();invalidate();
+  const number=policy.normalizedNumber($('bubbles-call-number').value);
+  const draft=policy.preview($('bubbles-call-person').value,$('bubbles-call-message').value);
+  if(!number){state.textContent='Enter a complete ordinary phone number. Emergency calls must use your normal phone app.';return;}
+  if(!draft){state.textContent='Enter the message to review before dialing.';return;}
+  // textContent prevents user-supplied message markup from executing.
+  script.textContent=draft;
+  link.setAttribute('href',number.uri);
+  previewArea.hidden=false;
+  state.textContent='Prepared for '+number.display+'. No call has been placed; tap Open my phone dialer, then confirm with Android.';
+ });
+}
+initBubblesCallDraft();
 const numberPath=location.pathname.match(/^\/phone\/n\/([1-9][0-9]{7,14})\/?$/);
 const path=location.pathname.match(/^\/phone\/([a-z0-9-]+)\/?$/);
 function renderQuickDial(){

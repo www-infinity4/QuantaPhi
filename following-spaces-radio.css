@@ -64,3 +64,34 @@
 .fsr-playback-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
 .fsr-playback-controls button{min-width:0;white-space:normal;font-size:12px}
 @media(max-width:420px){.fsr-embedded-player iframe{height:290px}.fsr-playback-controls{grid-template-columns:1fr}}
+
+
+/* 2026-11-05: keep X account and Following controls on screen at 320px.
+   These styles change layout only; never alter auth or existing records. */
+#followingSpacesRadio,#followingSpacesRadio *,
+#fredSpacesRadio .fsr-person-picker,#fredSpacesRadio .fsr-person-picker *{
+ box-sizing:border-box;
+}
+#followingSpacesRadio,#followingSpacesRadio .fsr-person-picker,
+#followingSpacesRadio .fsr-import,#followingSpacesRadio .fsr-radio-settings{
+ width:100%;max-width:100%;min-width:0;overflow-wrap:anywhere;
+}
+#followingSpacesRadio button,#followingSpacesRadio a,
+#followingSpacesRadio select,#followingSpacesRadio input,
+#followingSpacesRadio textarea{
+ max-width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;
+}
+#followingSpacesRadio .fsr-import button,
+#followingSpacesRadio .fsr-person-picker button{
+ display:inline-flex;align-items:center;justify-content:center;min-height:48px;
+ font-size:15px;line-height:1.4;letter-spacing:.008em;
+}
+#followingSpacesRadio .fsr-import summary,
+#followingSpacesRadio .fsr-person-picker summary{
+ font-size:16px;line-height:1.5;min-height:44px;overflow-wrap:anywhere;
+}
+@media(max-width:390px){
+ #followingSpacesRadio .fsr-import,
+ #followingSpacesRadio .fsr-person-picker{padding:10px}
+ #followingSpacesRadio button{width:100%;margin:4px 0}
+}

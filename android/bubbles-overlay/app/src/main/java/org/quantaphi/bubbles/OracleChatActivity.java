@@ -15,6 +15,7 @@ import org.json.JSONObject;
 public final class OracleChatActivity extends Activity {
     @Override public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        NavigationContrast.apply(this);
         // Notification and legacy entry points open the same retained website
         // window as the orb. No second native composer or transcript UI.
         if (BubblesService.isSessionRunning()) {

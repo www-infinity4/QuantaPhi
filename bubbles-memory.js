@@ -56,6 +56,42 @@
   }
   async function all(){const db=await dbPromise;return (await list(db))
    .filter(e=>(e.scope||'guest')===scope).sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id))}
+
+  // Owner-controlled historical export into the separately authenticated Brain
+  // archive. Stream an indexed page; never load an entire ZIP transcript into
+  // a low-RAM Android WebView, expose wallet tokens, or send private notes.
+  async function ownerUserBatch({afterAt=0,afterId='',limit=20}={}){
+   if(!enabled||!cloud||scope==='guest')throw Error('Verified wallet memory is required to share old owner messages with Robot Brain.');
+   if(!Number.isSafeInteger(afterAt)||afterAt<0||typeof afterId!=='string'||afterId.length>100)
+    throw Error('Invalid import cursor.');
+   const cap=Math.min(20,Math.max(1,Number.isInteger(limit)?limit:20));
+   const db=await dbPromise;if(!db)throw Error('Private conversation storage is unavailable.');
+   return new Promise((resolve,reject)=>{
+    const out=[];let completed=false;
+    try{
+     const tx=db.transaction('turns','readonly'),index=tx.objectStore('turns').index('byTime');
+     const range=global.IDBKeyRange?.lowerBound?.(afterAt);
+     const req=index.openCursor(range);
+     req.onerror=()=>{if(!completed){completed=true;reject(req.error||Error('Could not read conversation history.'))}};
+     req.onsuccess=()=>{
+      if(completed)return;
+      const cursor=req.result;
+      if(!cursor){completed=true;resolve(out);return;}
+      const item=cursor.value,at=item?.at,id=item?.id;
+      if((item.scope||'guest')===scope&&item.role==='user'&&
+       /^[A-Za-z0-9_-]{8,100}$/.test(id||'')&&
+       Number.isSafeInteger(at)&&at>0&&at<=Date.now()+60000&&
+       (at>afterAt||(at===afterAt&&id>afterId))&&
+       typeof item.text==='string'&&item.text.trim()){
+       out.push({id,role:'user',text:item.text.slice(0,6000),at});
+       if(out.length>=cap){completed=true;resolve(out);return;}
+      }
+      cursor.continue();
+     };
+     tx.onabort=()=>{if(!completed){completed=true;reject(Error('Private memory read interrupted.'))}};
+    }catch(e){if(!completed){completed=true;reject(e)}}
+   });
+  }
   async function recent(limit=30){return (await all()).slice(-limit)}
   async function search(q,limit=8){
    const db=await dbPromise;if(!db)return [];
@@ -74,17 +110,69 @@
   async function context(q){
    if(!enabled)return '';
    const last=await recent(12),related=await search(q,8),ids=new Set(last.map(e=>e.id));
-   const archived=related.filter(e=>!ids.has(e.id)).reverse();
-   const items=[...archived,...last];let result='';
-   for(const e of items){const line=e.role+': '+e.text.slice(0,900)+'\n';
-    if(result.length+line.length>7800)break;result+=line;}
-   return result;
+   let saved='';
+   // Saved notes remain evidence, never model instructions or permission.
+   if(cloud){
+    try{
+     for(const note of await recall(q,5)){
+      const line='Saved note ['+note.topic+', '+note.basis+', '+(note.repository||note.source)+
+       ', '+note.id+']: '+note.text.slice(0,420)+'\n';
+      if(saved.length+line.length<2300)saved+=line;
+     }
+    }catch{/* Local transcript retrieval still works offline. */}
+   }
+   // Reserve space for the newest turns before adding older search matches.
+   // Preserve chronological order in the prompt without letting an old, long
+   // excerpt push the latest owner correction out of the context window.
+   const recentLines=[];let recentSize=0;
+   for(const e of [...last].reverse()){
+    const line=e.role+': '+e.text.slice(0,900)+'\n';
+    if(recentSize+line.length>5000)continue;
+    recentLines.unshift(line);recentSize+=line.length;
+   }
+   let archived='';
+   for(const e of related){
+    if(ids.has(e.id))continue;
+    const line=e.role+': '+e.text.slice(0,900)+'\n';
+    if(saved.length+archived.length+recentSize+line.length>7800)continue;
+    archived+=line;
+   }
+   return saved+archived+recentLines.join('');
   }
   async function remoteFetch(path,options={}){
    const r=await fetch(API+path,{...options,headers:{'authorization':'Bearer '+token,'content-type':'application/json',...(options.headers||{})},cache:'no-store'});
    let j={};try{j=await r.json()}catch{}
    if(!r.ok||!j.ok)throw Error(j.error||('memory_http_'+r.status));
    return j;
+  }
+  // Explicit, authenticated semantic memory: the website and APK share the
+  // same wallet owner partition. Passive ambient speech is never promoted.
+  async function remember(text,{repository='',topic='',source='owner_note',sessionId='',messageId='',relatedTo=[]}={}){
+   if(!enabled||!cloud)throw Error('Connect and enable private Bubbles memory before saving a durable note.');
+   const note={id:uid(),text:String(text||''),at:Date.now(),repository,topic,source,sessionId,messageId,relatedTo};
+   const result=await remoteFetch('/v1/synapses',{method:'POST',body:JSON.stringify({notes:[note]})});
+   if(result.accepted!==1)throw Error('Memory was not confirmed saved.');
+   return result.routed[0];
+  }
+  async function browseSynapses(query='',{limit=8,topic='',offset=0}={}){
+   if(!enabled||!cloud)throw Error('Verified wallet memory is not connected.');
+   const allowed=['electronics_computing','ai_programming','physics_science','music_radio',
+    'stories_media','wallet_ledger','people_pets','general'];
+   if(topic&&!allowed.includes(topic))throw Error('Invalid memory topic.');
+   if(!Number.isSafeInteger(offset)||offset<0||offset>10000)throw Error('Invalid memory page.');
+   const params=new URLSearchParams({q:String(query||'').slice(0,200),
+    limit:String(Math.max(1,Math.min(20,Number(limit)||8))),offset:String(offset)});
+   if(topic)params.set('topic',topic);
+   return remoteFetch('/v1/synapses?'+params.toString());
+  }
+  async function recall(query,limit=8){
+   if(!enabled||!cloud)return [];
+   const result=await browseSynapses(query,{limit});
+   return result.memories||[];
+  }
+  async function forgetSynapse(id){
+   if(!enabled||!cloud)throw Error('Private memory must be connected to delete a saved note.');
+   return remoteFetch('/v1/synapses',{method:'DELETE',body:JSON.stringify({id})});
   }
   async function connect(){
    const connection=global.QuantaCloudConnection;
@@ -150,7 +238,8 @@
   }
   function setEnabled(value){enabled=value===true;if(!enabled){cloud=false;token='';clearInterval(clock)}}
   function onUpdate(handler){onChange=typeof handler==='function'?handler:()=>{}}
-  return {setEnabled,onUpdate,append,appendAll,recent,search,context,connect,sync,clear,
+  return {setEnabled,onUpdate,append,appendAll,recent,ownerUserBatch,search,context,remember,recall,browseSynapses,forgetSynapse,connect,sync,clear,
+    get profileScope(){return cloud&&scope!=='guest'?scope:null},
     get cloudConnected(){return cloud},get enabled(){return enabled}};
  }
  global.BubblesMemory=create();

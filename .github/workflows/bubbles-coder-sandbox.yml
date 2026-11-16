@@ -12,7 +12,7 @@ on:
         description: "Existing sandbox/ script for python or shell operation"
         required: false
         type: string
-        default: "sandbox/hello.py"
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -89,7 +89,7 @@ jobs:
           test -f sandbox-output.txt || printf 'No script output\n' > sandbox-output.txt
       - name: Keep short-lived logs available to owner tools
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: bubbles-coder-${{ github.run_id }}
           path: |

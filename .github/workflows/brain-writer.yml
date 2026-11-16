@@ -2,12 +2,14 @@ name: Infinity brain repository writer and cloud browser
 on:
   push:
     branches: [main]
-    paths: ['scripts/brain-*.mjs', 'workers/infinity-brain-clock/**', 'test/brain-writer.test.mjs', 'test/brain-preview.test.mjs', '.github/workflows/brain-writer.yml']
+    paths: ['scripts/brain-*.mjs', 'workers/infinity-brain-clock/**']
   workflow_dispatch:
   schedule:
     - cron: '*/5 * * * *'
 permissions:
   contents: write
+  pull-requests: write # Draft only; owner review and target CI remain separate gates.
+  actions: write # Only dispatch fixed read-only CI; never merge or deploy.
   id-token: write
 concurrency:
   group: infinity-brain-quantaphi-writer
@@ -34,7 +36,7 @@ jobs:
         run: node scripts/brain-writer.mjs
       - name: Save browser screenshots and repair evidence
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: brain-browser-and-repair-evidence
           path: brain-receipts/

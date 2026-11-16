@@ -75,3 +75,28 @@ test('cross-device chat only says synchronized after folder verification',()=>{
  assert.match(ui,/clean\.length;i\+=10/);
  assert.doesNotMatch(ui,/One-time pairing saved · history syncs automatically/);
 });
+
+test('backfill sends each retained message in a bounded batch and stops on owner switch',async()=>{
+ const source=readFileSync('bubbles-ai.js','utf8');
+ const start=source.indexOf('async function syncCloudFolder(id,items){');
+ const end=source.indexOf('async function refreshConversationFolders(){');
+ assert.ok(start>0&&end>start);
+ const implementation=source.slice(start,end);
+ const create=new Function('save',`
+  let ownerReady=true,keepChat=true,embedded=false;
+  let ownerHeaders={Authorization:'Bearer ownerA'};
+  const chatsMessage={textContent:''};
+  const conversationApi=(...args)=>save(...args);
+  ${implementation}
+  return {syncCloudFolder,changeOwner:()=>{ownerHeaders={Authorization:'Bearer ownerB'}}};
+ `);
+ const msgs=Array.from({length:23},(_,i)=>({id:'message'+i,role:'user',text:'test '+i,at:i+1}));
+ const batches=[];
+ const good=create(async(mode,id,extra)=>{assert.equal(mode,'sessions-save');batches.push(extra.messages.length);return {ok:true}});
+ assert.equal(await good.syncCloudFolder('chat_'+ 'a'.repeat(32),msgs),true);
+ assert.deepEqual(batches,[10,10,3]);
+ let switched=null,saves=0;
+ switched=create(async()=>{saves++;if(saves===1)switched.changeOwner();return {ok:true}});
+ assert.equal(await switched.syncCloudFolder('chat_'+ 'b'.repeat(32),msgs),false);
+ assert.equal(saves,1,'owner switch must block later batches');
+});

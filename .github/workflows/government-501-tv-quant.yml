@@ -1,0 +1,43 @@
+name: 501 Affiliates + Quant TV movie cards
+on:
+  pull_request:
+    paths:
+      - 'government-501-*'
+      - 'tv-quant-discovery.mjs'
+      - 'tv-501-expansion.mjs'
+      - 'test/government-501-tv-quant.test.mjs'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - 'bubbles-card-catalog.mjs'
+      - '.github/workflows/government-501-tv-quant.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'government-501-*'
+      - 'tv-quant-discovery.mjs'
+      - 'tv-501-expansion.mjs'
+      - 'test/government-501-tv-quant.test.mjs'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - 'bubbles-card-catalog.mjs'
+      - '.github/workflows/government-501-tv-quant.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Module syntax
+        run: |
+          node --check government-501-core.mjs
+          node --check government-501-affiliates.mjs
+          node --check tv-quant-discovery.mjs
+          node --check tv-501-expansion.mjs
+      - name: Test 501 directory and TV source + Quant privacy
+        run: node --test test/government-501-tv-quant.test.mjs
+      - name: Protect existing homepage player and affiliates contracts
+        run: node --test test/phi-channel-cards.test.cjs test/tv-clean-player-contract.test.mjs test/infinity-affiliates.test.mjs test/oracle-card-deck.test.cjs

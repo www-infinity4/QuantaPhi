@@ -1,0 +1,42 @@
+/* Incremental backward-compatible Quick Card baseline.
+ * Scope to the existing active Oracle stage; do not style live broadcast/video controls,
+ * third-party retailers' original action UI, or original source-specific media players.
+ */
+#oracleCardStage :is(.iac-card,.iqc-card){
+ color:#24313a;min-width:0;border-radius:18px;
+}
+#oracleCardStage :is(.iac-card,.iqc-card) :is(h2,h3,p){
+ overflow-wrap:anywhere;
+}
+#oracleCardStage :is(.iac-card,.iqc-card) .iac-heading{
+ font-size:clamp(.76rem,2.5vw,.9rem);letter-spacing:.02em;
+ padding-block:10px;line-height:1.3;min-width:0;
+}
+#oracleCardStage :is(.iac-card,.iqc-card) :is(.iac-intro,.iac-provenance){
+ line-height:1.5;
+}
+#oracleCardStage :is(.iac-card,.iqc-card) .iac-media img{
+ display:block;max-width:100%;height:100%;object-fit:contain;object-position:center;
+}
+#oracleCardStage :is(.iac-card,.iqc-card) .iac-content{
+ min-width:0;
+}
+#oracleCardStage :is(.iac-card,.iqc-card) .qca-toolbar :is(button,a){
+ background:#fff;color:#263b45;border:1px solid #d4dcdf;
+ border-radius:11px;min-height:44px;padding:9px 11px;
+ box-shadow:none;text-shadow:none;
+}
+#oracleCardStage :is(.iac-card,.iqc-card) .qca-toolbar :is(button,a):focus-visible{
+ outline:3px solid #4384a1;outline-offset:3px;
+}
+#oracleCardStage :is(.iac-card,.iqc-card) .qca-toolbar :is(button,a):disabled{
+ opacity:.6;cursor:not-allowed;
+}
+@media(max-width:390px){
+ #oracleCardStage :is(.iac-card,.iqc-card) .iac-heading{padding-inline:11px}
+ #oracleCardStage :is(.iac-card,.iqc-card) .qca-toolbar{gap:5px;flex-wrap:wrap}
+ #oracleCardStage :is(.iac-card,.iqc-card) .qca-toolbar :is(button,a){font-size:.8rem}
+}
+@media(prefers-reduced-motion:reduce){
+ #oracleCardStage :is(.iac-card,.iqc-card) .qca-toolbar :is(button,a){transition:none}
+}

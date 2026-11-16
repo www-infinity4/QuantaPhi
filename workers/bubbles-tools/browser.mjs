@@ -80,7 +80,7 @@ export async function browserTool(request, env) {
       // These are explicit deterministic actions, not unrestricted shell or JS.
       const result=await browserAction(env,{sessionId:body.sessionId,action,
        targetId,url,label,field,value,mode:body.mode});
-      return json(origin,{ok:Boolean(result.ok!==false),status:result.ok===false?'blocked':'verified',
+      return json(origin,{ok:Boolean(result.ok!==false),status:result.ok===false?'blocked':action==='click'?'dispatched':'verified',
         action,result:result.ok===false?result:{...result,text:typeof result.text==='string'?result.text.slice(0,8500):undefined}});
     }
     if(body.action==='tab'){

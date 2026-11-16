@@ -1,0 +1,114 @@
+{
+  "source": "Montana Department of Revenue — Licensed Dispensary Locations (October 2026)",
+  "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations",
+  "official_roster_as_of": "2026-10",
+  "inspected_at": "2026-11-02",
+  "scope": "Ten distinct adult-use business-location rows copied from official October 2026 table, Acton through Bainville. No street addresses published in this table; no verified driving directions, current license check, local permission or merchant authorization.",
+  "license_verified": false,
+  "address_confirmed": false,
+  "merchant_urls_verified": false,
+  "advertising_approved": false,
+  "media_rights": false,
+  "records": [
+    {
+      "id": "mt-dor:acton-essence",
+      "name": "406 ESSENCE OF SAFE ACCESS",
+      "licensee": "406 ESSENCE OF SAFE ACCESS INC",
+      "city": "Acton",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    },
+    {
+      "id": "mt-dor:anaconda-top-shelf",
+      "name": "ANACONDA",
+      "licensee": "TOP SHELF BOTANICALS",
+      "city": "Anaconda",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    },
+    {
+      "id": "mt-dor:anaconda-remedy",
+      "name": "REMEDY MEDICINALS LLC",
+      "licensee": "REMEDY MEDICINALS LLC",
+      "city": "Anaconda",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    },
+    {
+      "id": "mt-dor:arlee-starrbuds",
+      "name": "STARRBUDS - ARLEE",
+      "licensee": "STARRBUDS",
+      "city": "Arlee",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    },
+    {
+      "id": "mt-dor:arlee-top-shelf",
+      "name": "TSB MONTANA ARLEE",
+      "licensee": "TOP SHELF BOTANICALS",
+      "city": "Arlee",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    },
+    {
+      "id": "mt-dor:ashland-jnj",
+      "name": "ASHLAND",
+      "licensee": "J N J MANAGEMENT LLC",
+      "city": "Ashland",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    },
+    {
+      "id": "mt-dor:ashland-gvh",
+      "name": "GVH INC - ASHLAND",
+      "licensee": "GVH INC",
+      "city": "Ashland",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    },
+    {
+      "id": "mt-dor:ashland-ninepipe",
+      "name": "NINEPIPE ORGANICS",
+      "licensee": "NINEPIPE ORGANICS",
+      "city": "Ashland",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    },
+    {
+      "id": "mt-dor:bainville-bloom",
+      "name": "BLOOM",
+      "licensee": "ARMADILLO BUDS LLC",
+      "city": "Bainville",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    },
+    {
+      "id": "mt-dor:bainville-wildsky",
+      "name": "WILD SKY FARMS BAINVILLE",
+      "licensee": "MONTANA QUEENS LLP",
+      "city": "Bainville",
+      "state": "MT",
+      "sales_type": "Adult Use",
+      "street_address": "",
+      "source_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+    }
+  ]
+}

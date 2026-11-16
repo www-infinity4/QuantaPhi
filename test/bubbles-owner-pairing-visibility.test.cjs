@@ -12,7 +12,10 @@ test('Android has a single message field, no hidden pairing code button or extra
  assert.match(css,/html\.bubbles-native-overlay \.ba-panel \.ba-composer/);
 });
 test('64-digit owner codes bypass history, speech and AI even if invalid',()=>{
- const handler=js.slice(js.indexOf('async function consumeOwnerCodeFromChat('),js.indexOf('async function sendMessage(',js.indexOf('async function consumeOwnerCodeFromChat(')));
+ const start=js.indexOf('async function consumeOwnerCodeFromChat(');
+ const end=js.indexOf('\n}\n',start);
+ assert.ok(start>=0&&end>start,'Inspect the complete owner-code handler, without adjacent chat handlers');
+ const handler=js.slice(start,end+2);
  assert.match(handler,/window\.QuantaBrainOwner\?\.connectWithCode\?\.\(payload\)/);
  assert.match(handler,/input\.value=''/);
  assert.match(handler,/\^\[a-f0-9\]\{64\}\$/i);

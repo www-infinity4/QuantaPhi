@@ -1,20 +1,24 @@
-name: Halloween Phi card contracts
+name: Seasonal Phi card contracts
 on:
   pull_request:
     paths:
       - 'halloween-phi.*'
+      - 'holiday-phi.*'
       - 'terriphi/**'
       - 'petriphi/**'
       - 'test/halloween-phi-cards.test.cjs'
+      - 'test/holiday-phi.test.cjs'
       - 'index.html'
       - '.github/workflows/halloween-phi.yml'
   push:
     branches: [main]
     paths:
       - 'halloween-phi.*'
+      - 'holiday-phi.*'
       - 'terriphi/**'
       - 'petriphi/**'
       - 'test/halloween-phi-cards.test.cjs'
+      - 'test/holiday-phi.test.cjs'
       - '.github/workflows/halloween-phi.yml'
   workflow_dispatch:
 permissions:
@@ -30,6 +34,8 @@ jobs:
       - name: Check seasonal card JavaScript and curated JSON
         run: |
           node --check halloween-phi.js
+          node --check holiday-phi.js
           node -e "JSON.parse(require('node:fs').readFileSync('halloween-phi-content.json','utf8'))"
-      - name: Verify both working card contracts
-        run: node --test test/halloween-phi-cards.test.cjs
+          node -e "JSON.parse(require('node:fs').readFileSync('holiday-phi-content.json','utf8'))"
+      - name: Verify archived Halloween and active holiday card contracts
+        run: node --test test/halloween-phi-cards.test.cjs test/holiday-phi.test.cjs

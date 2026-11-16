@@ -1,0 +1,6 @@
+name = "quantaphi-infinity-wireless-page"
+main = "worker.mjs"
+compatibility_date = "2026-11-03"
+workers_dev = true
+# Deployment to quantaphi.org/wireless* is a separate guarded release.
+# Avoid changing the existing quantaphi-site Worker or its bindings.

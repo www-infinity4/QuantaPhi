@@ -3,6 +3,20 @@ on:
   pull_request:
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-dispatch-catalog.mjs'
+      - 'bubbles-work-evidence.mjs'
+      - 'test/bubbles-work-evidence.test.mjs'
+      - 'test/bubbles-dispatch-catalog.test.mjs'
+      - 'bubbles-project-discovery.mjs'
+      - 'bubbles-task-context.mjs'
+      - 'test/bubbles-project-discovery.test.mjs'
+      - 'bubbles-action-driver.mjs'
+      - 'test/bubbles-action-driver.test.mjs'
+      - 'test/bubbles-orb-semantic.test.mjs'
+      - 'workers/bubbles-tools/semantic-intent.mjs'
+      - 'bubbles-cloud-clock.mjs'
+      - 'test/bubbles-owner-clock.test.mjs'
+      - 'workers/infinity-brain-clock/owner-task-clock.mjs'
       - 'bubbles-cloud-wallet.js'
       - 'test/bubbles-cloud-wallet-history.test.cjs'
       - 'wallet-recovery.html'
@@ -16,6 +30,10 @@ on:
       - 'test/bubbles-runner-dispatch.test.mjs'
       - 'workers/infinity-brain-clock/runner-request.mjs'
       - 'test/bubbles-smart-repository-routing.test.mjs'
+      - 'test/bubbles-github-operator-regression.test.mjs'
+      - 'test/bubbles-tool-wiring.test.mjs'
+      - 'test/bubbles-chat-turn-recovery.test.cjs'
+      - 'test/bubbles-recordb-owner-command.test.cjs'
       - 'workers/infinity-brain-clock/repository-router.mjs'
       - 'workers/infinity-brain-clock/direct-github.mjs'
       - 'workers/infinity-brain-clock/worker.js'
@@ -24,11 +42,38 @@ on:
       - 'index.html'
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-unified.test.mjs'
+      - 'test/bubbles-website-work-first.test.mjs'
+      - 'bubbles-live-iteration-feed.mjs'
+      - 'bubbles-live-iteration-feed.css'
+      - 'test/bubbles-live-bits.test.mjs'
+      - 'test/bubbles-github-receipt-followup.test.mjs'
+      - 'test/bubbles-live-job-steps.test.mjs'
+      - 'test/bubbles-color-reasoning-receipts.test.mjs'
+      - 'workers/infinity-brain-clock/runner-progress.mjs'
+      - 'test/bubbles-auto-update-and-resume.test.mjs'
+      - 'bubbles-brain-job-steps.mjs'
+      - 'bubbles-chrome.html'
+      - 'bubbles/index.html'
+      - 'bubbles-iteration-bubbles.mjs'
       - '.github/workflows/bubbles-unified.yml'
   push:
     branches: [main]
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-dispatch-catalog.mjs'
+      - 'bubbles-work-evidence.mjs'
+      - 'test/bubbles-work-evidence.test.mjs'
+      - 'test/bubbles-dispatch-catalog.test.mjs'
+      - 'bubbles-project-discovery.mjs'
+      - 'bubbles-task-context.mjs'
+      - 'test/bubbles-project-discovery.test.mjs'
+      - 'bubbles-action-driver.mjs'
+      - 'test/bubbles-action-driver.test.mjs'
+      - 'test/bubbles-orb-semantic.test.mjs'
+      - 'workers/bubbles-tools/semantic-intent.mjs'
+      - 'bubbles-cloud-clock.mjs'
+      - 'test/bubbles-owner-clock.test.mjs'
+      - 'workers/infinity-brain-clock/owner-task-clock.mjs'
       - 'bubbles-card-*'
       - 'bubbles-brain-actions.js'
       - 'test/bubbles-card-workspace.test.mjs'
@@ -36,6 +81,8 @@ on:
       - 'test/bubbles-runner-dispatch.test.mjs'
       - 'workers/infinity-brain-clock/runner-request.mjs'
       - 'test/bubbles-smart-repository-routing.test.mjs'
+      - 'test/bubbles-github-operator-regression.test.mjs'
+      - 'test/bubbles-recordb-owner-command.test.cjs'
       - 'workers/infinity-brain-clock/repository-router.mjs'
       - 'workers/infinity-brain-clock/direct-github.mjs'
       - 'workers/infinity-brain-clock/worker.js'
@@ -44,6 +91,19 @@ on:
       - 'index.html'
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-unified.test.mjs'
+      - 'test/bubbles-website-work-first.test.mjs'
+      - 'bubbles-live-iteration-feed.mjs'
+      - 'bubbles-live-iteration-feed.css'
+      - 'test/bubbles-live-bits.test.mjs'
+      - 'test/bubbles-github-receipt-followup.test.mjs'
+      - 'test/bubbles-live-job-steps.test.mjs'
+      - 'test/bubbles-color-reasoning-receipts.test.mjs'
+      - 'workers/infinity-brain-clock/runner-progress.mjs'
+      - 'test/bubbles-auto-update-and-resume.test.mjs'
+      - 'bubbles-brain-job-steps.mjs'
+      - 'bubbles-chrome.html'
+      - 'bubbles/index.html'
+      - 'bubbles-iteration-bubbles.mjs'
       - '.github/workflows/bubbles-unified.yml'
 permissions:
   contents: read
@@ -57,11 +117,20 @@ jobs:
         with:
           node-version: '22'
       - run: node --check bubbles-ai.js
+      - run: node --check bubbles-dispatch-catalog.mjs
+      - run: node --test test/bubbles-dispatch-catalog.test.mjs test/bubbles-work-evidence.test.mjs test/bubbles-image-conversation.test.mjs
       - run: node --check bubbles-cloud-wallet.js
       - run: node --test test/bubbles-cloud-wallet-history.test.cjs test/bubbles-owner-wallet-recovery.test.cjs
-      - run: node --test test/bubbles-unified.test.mjs
+      - run: node --test test/bubbles-unified.test.mjs test/bubbles-iteration-bubbles.test.mjs test/bubbles-bit-session.test.mjs test/bubbles-live-bits.test.mjs test/bubbles-github-receipt-followup.test.mjs test/bubbles-live-job-steps.test.mjs test/bubbles-color-reasoning-receipts.test.mjs test/bubbles-auto-update-and-resume.test.mjs test/bubbles-tool-wiring.test.mjs test/bubbles-chat-turn-recovery.test.cjs test/bubbles-website-work-first.test.mjs
       - name: Verify in-chat cards and repository ticket targets
         run: |
           node --check bubbles-card-workspace.mjs
           node --check bubbles-card-host.mjs
-          node --test test/bubbles-card-workspace.test.mjs test/bubbles-repository-targets.test.mjs test/bubbles-smart-repository-routing.test.mjs test/bubbles-direct-github.test.mjs test/bubbles-technical-handoff.test.mjs test/bubbles-owner-tools-webview.test.cjs test/bubbles-runner-dispatch.test.mjs
+          node --check bubbles-cloud-clock.mjs
+          node --check workers/infinity-brain-clock/owner-task-clock.mjs
+          node --test test/bubbles-owner-clock.test.mjs
+          node --check bubbles-action-driver.mjs
+          node --check workers/bubbles-tools/semantic-intent.mjs
+          node --test test/bubbles-orb-semantic.test.mjs
+          node --test test/bubbles-action-driver.test.mjs
+          node --test test/bubbles-project-discovery.test.mjs test/bubbles-card-workspace.test.mjs test/bubbles-repository-targets.test.mjs test/bubbles-smart-repository-routing.test.mjs test/bubbles-github-operator-regression.test.mjs test/bubbles-recordb-owner-command.test.cjs test/bubbles-direct-github.test.mjs test/bubbles-technical-handoff.test.mjs test/bubbles-owner-tools-webview.test.cjs test/bubbles-runner-dispatch.test.mjs

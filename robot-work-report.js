@@ -9,13 +9,22 @@
  const make=(tag,label)=>{const e=document.createElement(tag);e.textContent=label;return e};
  const report=make('button','Explain progress'),top=make('button','Top 10 jobs'),blockedButton=make('button','Review blocked jobs');
  const previousBlocked=make('button','← Previous 10'),nextBlocked=make('button','Next 10 →');
+ const copyAll=make('button','Copy live jobs for ChatGPT');
+ const openGPT=make('a','Open ChatGPT to paste');
+ openGPT.href='https://chatgpt.com/';openGPT.target='_blank';openGPT.rel='noopener noreferrer';
+ copyAll.type='button';
+ const handoffStatus=make('small','Copy from a fresh owner-only Brain snapshot. Nothing is sent to ChatGPT automatically.');
+ handoffStatus.setAttribute('role','status');
+ const handoffBar=make('div','');handoffBar.className='robot-work-handoff';handoffBar.append(copyAll,openGPT,handoffStatus);
  for(const button of [report,top,blockedButton,previousBlocked,nextBlocked])button.type='button';
  previousBlocked.hidden=true;nextBlocked.hidden=true;
  bar.append(report,top,blockedButton,previousBlocked,nextBlocked);
  const stamp=make('small','Waiting for verified task records.');
  const prose=make('div','');prose.className='robot-work-prose';prose.setAttribute('aria-live','polite');
  const archive=make('details','');archive.append(make('summary','Earlier requests and job details'),bar);
- panel.append(stamp,prose,archive);
+ const history=make('details','');history.className='robot-work-history';
+ history.append(make('summary','Robot Brain work history · expand for live status'),stamp,prose,archive);
+ panel.append(handoffBar,history);
  const help=make('p','Ask once. Bubbles plans the work, assigns the bots, and follows their progress. New requests start automatically; no Run All step is needed.');
  panel.prepend(help);
  const spareJobs=root.querySelector('[data-refresh]'),spareGemini=root.querySelector('[data-gemini]');
@@ -189,6 +198,33 @@
   }catch(e){stamp.textContent='Last report could not be verified.';prose.replaceChildren(make('p',clean(e.message,130)+'. Previously saved jobs are not deleted.'))}
   finally{busy=false}
  }
+ // GPT handoff only after a deliberate owner click; this never dispatches or approves a job.
+ copyAll.addEventListener('click',async()=>{
+  if(copyAll.disabled)return;
+  copyAll.disabled=true;handoffStatus.textContent='Checking the current owner-only Brain records…';
+  try{
+   const owner=window.QuantaBrainOwner;
+   if(!owner)throw Error('Robot Brain owner session is unavailable');
+   const headers=await owner.ready;
+   if(!headers?.Authorization)throw Error('Owner session could not be verified');
+   const {getLiveHandoff}=await import('/robot-gpt-handoff.mjs?v=20261029-live1');
+   const result=await getLiveHandoff({headers,onProgress:message=>{handoffStatus.textContent=message}});
+   let copied=false;
+   try{await navigator.clipboard.writeText(result.text);copied=true;}catch{}
+   if(!copied){
+    const selection=make('textarea','');selection.value=result.text;selection.readOnly=true;
+    selection.setAttribute('aria-label','GPT repair handoff: select and copy');
+    selection.style.cssText='display:block;width:100%;min-height:120px';
+    handoffBar.append(selection);selection.focus();selection.select();
+    try{copied=document.execCommand('copy')}catch{}
+    if(copied)selection.remove();
+   }
+   handoffStatus.textContent=copied?
+    ('Copied '+result.included+' live ticket records for ChatGPT. '+(result.complete?'All paginated records loaded.':'Partial coverage — see warning in copied text.')+' Open ChatGPT and paste.'):
+    'Automatic copying was blocked; select the visible handoff text and copy it manually. Nothing was sent.';
+  }catch(error){handoffStatus.textContent='No old snapshot copied. Live handoff unavailable: '+clean(error.message,120);}
+  finally{copyAll.disabled=false}
+ });
  report.addEventListener('click',()=>pull('report',{gpt:true}));
  top.addEventListener('click',()=>pull('top'));
  blockedButton.addEventListener('click',()=>{blockedOffset=0;void pull('blocked');});

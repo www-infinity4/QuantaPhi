@@ -3,11 +3,11 @@
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
 const SERVICE='https://bubbles-cloud-browser.marvaseater.workers.dev/v1/browser';
 let panelInstance=null, agent=null;
-const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
+const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',chatgpt:'https://chatgpt.com/',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',copilot:'https://github.com/copilot/agents',quantaphi:'https://quantaphi.org/'};
 export function browserSpeechIntent(input){
  const utterance=String(input||'').trim().replace(/^(?:(?:hey|okay|please|bubbles)[,\s]+)+/i,'');
  const browser=/\b(?:cloud|remote|chrome)\s+browser\b|\bbrowser run\b|\bin (?:the )?browser\b/i.test(utterance);
- const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
+ const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|copilot|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
  if(!browser&&!namedOpen)return null;
  const show=/^(?:show|display|bring up|pull up|see|watch)\b/i.test(utterance)||namedOpen;
  const url=utterance.match(/https:\/\/[^\s"'<>]+/i)?.[0]||'';
@@ -27,7 +27,7 @@ export function browserSpeechIntent(input){
   return found?{action:'type',value:found[1],field:found[2],show}:null;
  }
  if(/\b(?:open|go to|visit|navigate|launch|load)\b/i.test(utterance)){
-  const name=Object.keys(destinations).find(k=>new RegExp('\\b'+k+'\\b','i').test(utterance));
+  const name=/\bchat\s?gpt\b/i.test(utterance)?'chatgpt':Object.keys(destinations).find(k=>new RegExp('\\b'+k+'\\b','i').test(utterance));
   const target=url||destinations[name]||'';
   return target?{action:'navigate',url:target,show}:null;
  }
@@ -64,7 +64,12 @@ export function mount({host,ownerHeaders,reveal=false}){
  address.style.cssText='width:100%;box-sizing:border-box;min-height:44px;padding:10px;margin-top:8px;border:1px solid #ada4be;border-radius:10px';
  const add=element('button','Open new tab');
  const cloudflare=element('button','Open Cloudflare');
- for(const button of [start,refresh,stop,add,cloudflare]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
+ // Owner signs in interactively; no provider credentials stored in Bubbles.
+ const chatgpt=element('button','ChatGPT · sign in');
+ const gemini=element('button','Gemini · sign in');
+ const claude=element('button','Claude · sign in');
+ const copilot=element('button','GitHub Copilot');
+ for(const button of [start,refresh,stop,add,cloudflare,chatgpt,gemini,claude,copilot]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
  wrap.append(controls,address);
  // Device-size inspection changes the remote Chrome viewport through CDP.
  // A web preview is not the native phone display; the APK's own screen sharing
@@ -93,6 +98,11 @@ export function mount({host,ownerHeaders,reveal=false}){
  // private D1 queue; only the signed Bubbles owner can approve this five-day grant.
  // A separate ChatGPT account/browser token is never placed in the HTML.
  const bridge=document.createElement('section');
+ // Hide private GPT controls from visitors; owner APIs also enforce authorization.
+ bridge.hidden=true;bridge.style.display='none';
+ void Promise.resolve().then(()=>ownerHeaders()).then(headers=>{
+  if(headers?.Authorization){bridge.hidden=false;bridge.style.display='';}
+ }).catch(()=>{});
  bridge.className='ba-chatgpt-browser-bridge';
  bridge.style.cssText='margin:10px 0;padding:12px;border:1px solid #9e89c4;border-radius:12px';
  const bridgeTitle=element('strong','ChatGPT ↔ Bubbles · Cloud Browser');
@@ -105,6 +115,10 @@ export function mount({host,ownerHeaders,reveal=false}){
  bridgeNote.style.cssText='font-size:12px;line-height:1.5';
  bridge.append(bridgeTitle,bridgeStatus,approveBridge,revokeBridge,bridgeNote);wrap.append(bridge);
  let chatgptApproved=false,bridgePolling=false;
+ const consumerState=(state,message)=>{
+  wrap.dataset.bridgeConsumer=state;bridgeStatus.textContent=message;
+  window.dispatchEvent(new CustomEvent('bubbles:bridge-state',{detail:{state,message}}));
+ };
  async function bridgeCall(endpoint,payload){
   const headers=await ownerHeaders();
   if(!headers?.Authorization)throw Error('Connect the verified Bubbles owner session first.');
@@ -116,6 +130,9 @@ export function mount({host,ownerHeaders,reveal=false}){
    const data=await res.json();
    if(!res.ok||!data.ok)throw Error(data.error||'bridge_operation_not_confirmed');
    return data;
+  }catch(error){
+   if(controller.signal.aborted)throw Error('bubbles_message_check_timed_out');
+   throw error;
   }finally{clearTimeout(timeout)}
  }
  async function bridgePermission(action){
@@ -160,7 +177,7 @@ export function mount({host,ownerHeaders,reveal=false}){
  frame.setAttribute('allow','clipboard-read; clipboard-write; fullscreen');
  frame.style.cssText='display:none;width:100%;height:min(68vh,520px);min-height:320px;border-radius:10px;border:1px solid #c5badd';
  wrap.append(frame);
- const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android permission; this cloud browser cannot see it yet. Google, Gemini and Claude each control their own authentication. Sessions are temporary; Stop ends the remote browser.');
+ const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android permission; this cloud browser cannot see it yet. Sign into ChatGPT and Gemini interactively using your chosen account (different Google emails are allowed). A login does not automatically authorize Bubbles to read private chat history or use another provider API. Sessions are temporary; Stop ends remote Chrome.');
  note.style.cssText='font-size:12px;line-height:1.5;margin:10px 0 0';wrap.append(note);
  // The approval is the FIRST visible item. Advanced Chrome controls remain
  // reachable by expanding one native <details> inside the chat's scroll owner.
@@ -189,7 +206,7 @@ export function mount({host,ownerHeaders,reveal=false}){
      return result;
    }finally{clearTimeout(timeout);}
  }
- const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,cloudflare,phonePreview,desktopPreview])b.disabled=value;};
+ const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,cloudflare,chatgpt,gemini,claude,copilot,phonePreview,desktopPreview])b.disabled=value;};
  const show=(result)=>{
    if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof,targetId:result.targetId||state?.targetId};
    if(result.url){
@@ -230,6 +247,14 @@ export function mount({host,ownerHeaders,reveal=false}){
   address.value=destinations.cloudflare;
   void action(state?'tab':'start',{url:destinations.cloudflare});
  });
+ for(const [button,url] of [[chatgpt,destinations.chatgpt],[gemini,destinations.gemini],[claude,destinations.claude],[copilot,destinations.copilot]]){
+  button.addEventListener('click',()=>{
+   address.value=url;
+   // Tabs share one Chrome profile; owner selects the desired provider account.
+   // Interactive login does not grant the agent private chat API access.
+   void action(state?'tab':'start',{url});
+  });
+ }
  add.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('tab',{url:address.value})});
  refresh.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('view')});
  stop.addEventListener('click',()=>{if(state)void action('stop');else status.textContent='No live Chrome session to stop.'});
@@ -268,23 +293,53 @@ export function mount({host,ownerHeaders,reveal=false}){
    show(started);
    return 'Cloud Chrome opened '+requested.url+'. The live session was confirmed.';
   }
+  const beforeClick=requested.action==='click'?await call('read').catch(()=>null):null;
   const result=await call(requested.action,requested);
   if(result.ok!==true||result.result?.ok===false)throw Error(result.result?.error||result.error||'browser_operation_unverified');
   if(requested.action==='navigate')return result.result?.navigationRequested?
    'Cloud Chrome requested navigation to '+requested.url+'. The loaded page has not yet been read.':
    'Chrome did not confirm navigation.';
-  if(requested.action==='read')return 'Cloud browser read: '+String(result.result?.title||'Untitled')+' · '+
-   String(result.result?.url||'')+'\n'+String(result.result?.text||'').slice(0,7000);
-  if(requested.action==='click')return 'Cloud browser clicked '+String(result.result?.label||requested.label)+'. The changed page has not yet been read.';
+  if(requested.action==='read'){
+   const controls=(Array.isArray(result.result?.controls)?result.result.controls:[]).filter(c=>c?.label).slice(0,18)
+    .map(c=>c.label+(c.context?' — '+c.context:'')+(c.disabled?' (disabled)':'')).join('; ');
+   return 'Cloud browser read: '+String(result.result?.title||'Untitled')+' · '+
+    String(result.result?.url||'')+'\n'+String(result.result?.text||'').slice(0,6400)+
+    (controls?'\nVisible controls: '+controls:'');
+  }
+  if(requested.action==='click'){
+   await new Promise(resolve=>setTimeout(resolve,350));
+   const checked=await call('read').catch(()=>null);
+   const before=beforeClick?.result,after=checked?.result;
+   const changed=Boolean(before&&after&&(before.url!==after.url||before.text!==after.text));
+   return 'Cloud browser sent a click to '+String(result.result?.label||requested.label)+'. '+
+    (changed?'I re-read the page and confirmed its text or location changed.':
+     'I have not confirmed a resulting page change or media playback.')+
+    (after?.title?' Current page: '+String(after.title).slice(0,120)+'.':'');
+  }
   if(requested.action==='type')return 'Cloud browser typed '+result.result.characters+' characters in '+String(result.result.field||'the field')+'. I did not submit the form.';
   return 'Browser action returned a verified server receipt.';
  }};
 
  async function pollChatGPT(){
-  if(bridgePolling||!chatgptApproved||document.hidden)return;
+  // Hiding the still-open owner chat does not revoke the five-day grant.
+  if(bridgePolling)return;
   bridgePolling=true;
   try{
+   // Initial mount can precede the APK's native wallet restoration. Re-read
+   // the saved grant with current owner authentication; never enable or renew it.
+   if(!chatgptApproved){
+    const saved=await bridgeCall('permission',{action:'status'});
+    if(saved.enabled!==true)return;
+    chatgptApproved=true;
+    bridgeStatus.textContent='ChatGPT bridge restored until '+new Date(saved.expiresAt).toLocaleString()+'.';
+   }
+   let chatReady=false;
+   window.dispatchEvent(new CustomEvent('bubbles:chatgpt-ready',{detail:{respond:value=>{chatReady=value===true;}}}));
+   if(!chatReady)await bridgeCall('heartbeat',{state:'busy'});
+   if(!chatReady){consumerState('waiting-for-chat','ChatGPT connection preserved. Waiting for Bubbles to finish its current response.');return;}
+   consumerState('checking','Checking the approved Bubbles message connection…');
    const data=await bridgeCall('process',state?{sessionId:state.sessionId,proof:state.proof}:{});
+   consumerState('ready',data.queue==='empty'?'Bubbles is ready for approved ChatGPT requests.':'Bubbles received an approved ChatGPT request.');
    if(data.view){show(data.view)}
    if(data.status==='needs_bubbles_reply'&&data.jobId){
     let reply;
@@ -309,14 +364,27 @@ export function mount({host,ownerHeaders,reveal=false}){
    const value=String(error.message||error);
    if(value==='chatgpt_five_day_approval_required'){
     chatgptApproved=false;bridgeStatus.textContent='ChatGPT five-day approval expired or was revoked.';
-   }else if(!/owner_authorization_required|browser_consent_required/.test(value)){
-    bridgeStatus.textContent='ChatGPT bridge check unavailable: '+value.slice(0,130);
-   }
+   }else if(/owner_authorization_required|verified Bubbles owner session|owner Unified Wallet|owner verification/i.test(value)){
+    consumerState('waiting-for-owner','The five-day connection is preserved. This page is waiting for its saved owner session to restore.');
+   }else if(value==='bubbles_message_check_timed_out'){
+    consumerState('retrying','Bubbles message check timed out. No message was confirmed; the ordinary chat remains available while the bridge retries.');
+   }else if(value==='browser_consent_required'){
+    consumerState('consent-unavailable','The existing browser approval is not active. No request was executed.');
+   }else consumerState('unavailable','Bubbles message check unavailable: '+value.slice(0,130));
   }finally{bridgePolling=false}
  }
  // The session and owner token remain in this first-party page. Cloudflare
  // D1 receives only a structured request/receipt, never browser credentials.
  setInterval(()=>void pollChatGPT(),8000);
- void bridgePermission('status');
+ window.addEventListener('focus',()=>void pollChatGPT());
+ window.addEventListener('pageshow',()=>void pollChatGPT());
+ window.addEventListener('bubbles:owner-ready',()=>void pollChatGPT());
+ // The user-started Android foreground service can nudge its existing, trusted
+ // first-party WebView when Android throttles hidden-page JavaScript timers.
+ // This requests an ordinary consent/owner-verified poll, never new authority.
+ window.addEventListener('bubbles:foreground-poll',()=>void pollChatGPT());
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)void pollChatGPT();});
+ void pollChatGPT();
+ void bridgePermission('status').catch(()=>{});
  return wrap;
 }

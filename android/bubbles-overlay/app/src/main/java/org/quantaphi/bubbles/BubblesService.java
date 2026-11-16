@@ -85,7 +85,7 @@ public final class BubblesService extends Service {
         if (service == null || !service.connected || service.muted || !service.captureRunning)
             throw new IllegalStateException("Bubbles voice must be listening before recording");
         service.screenAudioPaused = false;
-        service.screenAudio.start(new java.io.File(service.getFilesDir(), "captures"));
+        service.screenAudio.start(new java.io.File(service.getFilesDir(), "captures"), false);
         // Capture holds this session even if the voice service is destroyed/restarted.
         return service.screenAudio;
     }
@@ -142,6 +142,25 @@ public final class BubblesService extends Service {
         return true;
     }
 
+    /** Fixed diagnostic only; never treats an AI plan or ambient speech as permission
+     * to execute local Python. Android presents a real user-confirmation dialog.
+     */
+    private boolean handleTermuxProbe(String addressed, boolean typed) {
+        if (addressed == null || !addressed.trim().matches(
+                "(?i)^(?:bubbles[, ]+)?(?:please\\s+)?(?:(?:test|check|verify)(?:\\s+the)?\\s+(?:python(?:\\s+(?:in|with))?\\s+termux|python|termux(?:\\s+python)?)|(?:run|start|try)(?:\\s+a)?\\s+python\\s+(?:test|diagnostic)|(?:does\\s+python\\s+work|is\\s+python\\s+(?:working|ready))(?:\\s+in\\s+termux)?)[.!?]*$"))
+            return false;
+        Intent intent = new Intent(this, MainActivity.class)
+            .putExtra("termux_python_probe", true)
+            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        try {
+            startActivity(intent);
+            screenStatus("Python test requested. Android owner approval is required before Termux runs.", typed);
+        } catch (RuntimeException error) {
+            screenStatus("Android could not open the Python approval screen. No test ran.", typed);
+        }
+        return true;
+    }
+
     private final ExecutorService network = Executors.newSingleThreadExecutor();
     private WindowManager manager;
     private WindowManager.LayoutParams bubbleLayout;
@@ -155,8 +174,9 @@ public final class BubblesService extends Service {
         bubbleLayout.width = size;
         bubbleLayout.height = size;
         android.util.DisplayMetrics display = getResources().getDisplayMetrics();
-        bubbleLayout.x = Math.max(0, Math.min(display.widthPixels - size, bubbleLayout.x));
-        bubbleLayout.y = Math.max(0, Math.min(display.heightPixels - size, bubbleLayout.y));
+        boolean right = BrainNotes.prefs(this).getBoolean("orb_dock_right", true);
+        bubbleLayout.x = EdgeDockPolicy.edgeX(right, display.widthPixels, size);
+        bubbleLayout.y = EdgeDockPolicy.y(bubbleLayout.y, display.heightPixels, size);
         try { manager.updateViewLayout(orb, bubbleLayout); }
         catch (RuntimeException ignored) { /* Android may remove the overlay first. */ }
     }
@@ -249,6 +269,16 @@ public final class BubblesService extends Service {
      * The former image-only callback made the ChatGPT import button unusable.
      */
     boolean openFilePicker(android.webkit.ValueCallback<android.net.Uri[]> callback, boolean historyJson) {
+        // JSON/ZIP imports can exhaust memory on low-RAM phones during MP4 encoding.
+        // Keep the existing website history intact; retry after Stop & save.
+        if (historyJson && ScreenCaptureService.isRunning()) {
+            BrainNotes.prefs(this).edit().putString("last_error",
+                "Finish saving the current recording before importing history").apply();
+            Toast.makeText(this, "Stop and save the recording before importing history.",
+                Toast.LENGTH_LONG).show();
+            callback.onReceiveValue(null);
+            return true;
+        }
         if (!connected || imagePickerCallback != null) {
             callback.onReceiveValue(null); return true;
         }
@@ -278,10 +308,58 @@ public final class BubblesService extends Service {
     private void drainWebsiteSpeech() {
         if (!connected || muted || speaking || !ttsReady || tts == null) return;
         String next = pendingWebsiteSpeech.pollFirst();
-        if (next != null && !next.trim().isEmpty()) speak(next);
+        if (next != null && !next.trim().isEmpty()) {
+            currentWebsiteUtterance = next;
+            speak(next);
+        }
+    }
+    private void reportSpeechFailure(String explanation) {
+        BrainNotes.prefs(this).edit().putString("last_error", explanation).apply();
+        if (oracleWindow != null) oracleWindow.showSpeechFailure(explanation);
+        // Avoid a permanent dead TTS engine. The original response remains
+        // visible in website chat even if Android cannot play it.
+        long now = SystemClock.elapsedRealtime();
+        if (!connected || muted || ttsRecoveryScheduled) return;
+        // A failed reply remains queued until Android has a usable engine.
+        // Avoid a hot retry loop but always schedule the next recovery turn.
+        long delay = Math.max(1200L, 30000L - (now - lastTtsRecoveryAt));
+        lastTtsRecoveryAt = now + delay - 1200L;
+        ttsRecoveryScheduled = true;
+        if (NeuralSpeechEngine.preferredEngine(this) != null)
+            NeuralSpeechEngine.useAndroidDefault(this);
+        main.postDelayed(() -> {
+            ttsRecoveryScheduled = false;
+            if (connected && !muted) reloadSpeechEngine();
+        }, delay);
     }
     private PlaybackAwareness playbackAwareness;
     private AudioRecord microphone;
+    private volatile boolean microphoneSilencedByAndroid = false;
+    // Android can silence a lower-priority AudioRecord without throwing or
+    // closing it (for example when another recorder app takes priority).
+    // One callback observes priority handoffs; RecordB shares this PCM stream.
+    private final AudioManager.AudioRecordingCallback recordingCallback =
+        new AudioManager.AudioRecordingCallback() {
+            @Override public void onRecordingConfigChanged(java.util.List<android.media.AudioRecordingConfiguration> configs) {
+                if (Build.VERSION.SDK_INT < 29 || microphone == null || !captureRunning) return;
+                boolean found = false, silenced = false;
+                int session = microphone.getAudioSessionId();
+                for (android.media.AudioRecordingConfiguration config : configs) {
+                    if (config.getClientAudioSessionId() == session) {
+                        found = true;
+                        silenced = config.isClientSilenced();
+                        break;
+                    }
+                }
+                if (!found || silenced == microphoneSilencedByAndroid) return;
+                microphoneSilencedByAndroid = silenced;
+                if (silenced) {
+                    state("microphone_conflict", .06f);
+                    BrainNotes.prefs(BubblesService.this).edit().putString("last_error",
+                        "Android temporarily silenced Bubbles microphone while another recorder has priority").apply();
+                } else if (connected && !muted) state("listening", .12f);
+            }
+        };
     private android.media.audiofx.AcousticEchoCanceler echoCanceler;
     private Thread audioThread;
     private Model voiceModel;
@@ -293,6 +371,12 @@ public final class BubblesService extends Service {
     private boolean modelLoading = false;
     private boolean ttsReady = false;
     private TextToSpeech tts;
+    // One bounded engine recovery per 30 seconds; failures must not silently
+    // consume website responses or leave the foreground microphone stuck.
+    private long lastTtsRecoveryAt = -30000L;
+    private boolean ttsRecoveryScheduled = false;
+    private String currentWebsiteUtterance = "";
+    private String lastFailedWebsiteUtterance = "";
     // Ignore asynchronous initialization from a replaced speech engine.
     private long ttsEngineGeneration = 0L;
     private volatile boolean connected = false, muted = false, speaking = false;
@@ -353,6 +437,10 @@ public final class BubblesService extends Service {
         notificationManager.createNotificationChannel(new NotificationChannel(
                     CAPTURE_APPROVAL_CHANNEL, "Bubbles capture approvals", NotificationManager.IMPORTANCE_HIGH));
         playbackAwareness = new PlaybackAwareness(this, main);
+        if (Build.VERSION.SDK_INT >= 29) {
+            try { ((AudioManager)getSystemService(AUDIO_SERVICE)).registerAudioRecordingCallback(recordingCallback, main); }
+            catch (RuntimeException ignored) { /* Recognition still works without callback. */ }
+        }
         reloadSpeechEngine();
     }
 
@@ -378,9 +466,8 @@ public final class BubblesService extends Service {
                     reloadSpeechEngine();
                     return;
                 }
-                pendingWebsiteSpeech.clear(); // The text is still in website chat.
-                BrainNotes.prefs(this).edit().putString("last_error",
-                    "Android speech engine could not initialize; choose an installed voice").apply();
+                // Keep bounded queued replies while trying the system voice.
+                reportSpeechFailure("Android speech engine could not initialize; choose an installed voice");
                 if (connected && !muted) state("error", 0);
                 return;
             }
@@ -427,15 +514,18 @@ public final class BubblesService extends Service {
                     main.post(() -> {if(id != null && id.equals(activeUtteranceId)) state("speaking", 0.6f);});
                 }
                 @Override public void onDone(String id) { main.post(() -> finishSpeaking(id)); }
-                @Override public void onError(String id) { main.post(() -> finishSpeaking(id)); }
+                @Override public void onError(String id) {
+                    main.post(() -> {
+                        if (id != null && id.equals(activeUtteranceId))
+                            speechPlaybackFailed(id, "Android voice playback failed; the answer is still in Bubbles chat");
+                    });
+                }
             });
             ttsReady = true;
             main.post(this::drainWebsiteSpeech);
             } catch (RuntimeException error) {
                 ttsReady = false;
-                pendingWebsiteSpeech.clear();
-                BrainNotes.prefs(this).edit().putString("last_error",
-                    "Android speech setup failed: " + error.getClass().getSimpleName()).apply();
+                reportSpeechFailure("Android speech setup failed: " + error.getClass().getSimpleName());
                 if (connected && !muted) state("error", 0);
             }
         });
@@ -480,6 +570,9 @@ public final class BubblesService extends Service {
             return START_NOT_STICKY;
         }
         if (intent != null && ACTION_STOP.equals(intent.getAction())) {
+            // A deliberate Stop must prevent the next app launch from
+            // immediately restarting the microphone against the owner's wish.
+            BrainNotes.prefs(this).edit().putBoolean("orb_auto_resume", false).apply();
             stopSelf();
             return START_NOT_STICKY;
         }
@@ -529,7 +622,12 @@ public final class BubblesService extends Service {
                     WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
                     PixelFormat.TRANSLUCENT);
             bubbleLayout.gravity = Gravity.TOP | Gravity.LEFT;
-            bubbleLayout.x = 14; bubbleLayout.y = 240;
+            android.util.DisplayMetrics initialDisplay = getResources().getDisplayMetrics();
+            boolean dockRight = BrainNotes.prefs(this).getBoolean("orb_dock_right", true);
+            bubbleLayout.x = EdgeDockPolicy.edgeX(dockRight, initialDisplay.widthPixels, normalOrbSize);
+            bubbleLayout.y = EdgeDockPolicy.y(BrainNotes.prefs(this).getInt("orb_dock_y", 240),
+                    initialDisplay.heightPixels, normalOrbSize);
+            orb.setAlpha(.8f); // XRecorder-style discreet dock; tap restores full glow.
             manager.addView(orb, bubbleLayout);
             connected = true;
             syncRoomBubble();
@@ -634,6 +732,7 @@ public final class BubblesService extends Service {
             final AudioRecord input = microphone;
             final Recognizer decoder = new Recognizer(voiceModel, 16000f);
             input.startRecording();
+            microphoneSilencedByAndroid = false;
             captureRunning = true;
             if (pendingAudioRecording) beginAudioRecording();
             state("listening", .12f);
@@ -646,13 +745,22 @@ public final class BubblesService extends Service {
                     while (captureRunning && connected && !muted) {
                         int count = input.read(samples, 0, samples.length);
                         if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
+                        // Preserve the RecordB audio timeline even while
+                        // Android temporarily silences input. Never interpret
+                        // muted/zeroed PCM as an owner speech command.
                         try { if (!screenAudioPaused) screenAudio.append(samples, count); }
                         catch (Exception error) {
+                            // Send at most ONE stop request: the audio loop runs every 100 ms.
+                            // Flooding Android's main queue while the MP4 finalizes can freeze Bubbles.
+                            screenAudioPaused = true;
+                            BrainNotes.prefs(this).edit().putString("capture_stop_reason",
+                                "Shared microphone sound failed; saving available screen video.").apply();
                             main.post(() -> startService(new Intent(this, ScreenCaptureService.class)
                                 .setAction(ScreenCaptureService.STOP)));
                         }
                         try { recording.append(samples, count); }
                         catch (Exception error) { main.post(this::saveAudio); }
+                        if (microphoneSilencedByAndroid) continue;
                         double sum = 0;
                         for (int i = 0; i < count; i++) sum += (double) samples[i] * samples[i];
                         final float level = Math.min(1f, (float) Math.sqrt(sum / count) / 6000f);
@@ -793,6 +901,13 @@ public final class BubblesService extends Service {
 
     private void beginAudioRecording() {
         if (liveMicrophoneOwned) { pendingAudioRecording = false; return; }
+        // A second Record tap must not reset the active WAV or its transcript.
+        if (recording.active()) {
+            pendingAudioRecording = false;
+            BrainNotes.prefs(this).edit().putBoolean("audio_active", true)
+                .putString("audio_state", "Recording microphone sound").apply();
+            return;
+        }
         pendingAudioRecording = false;
         try {
             recording.start(new java.io.File(getFilesDir(), "captures"));
@@ -809,7 +924,12 @@ public final class BubblesService extends Service {
         final java.io.File completed;
         try {
             completed = recording.finish();
-            if (completed == null) return; // No sound bytes; do not report a fake save.
+            if (completed == null) {
+                // Stop before microphone startup (or with zero PCM) is not a save.
+                BrainNotes.prefs(this).edit()
+                    .putString("audio_state", "No microphone recording to save").apply();
+                return;
+            }
             final String transcript = recordedWords;
             BrainNotes.prefs(this).edit()
                 .putString("audio_path", completed.getAbsolutePath())
@@ -840,6 +960,7 @@ public final class BubblesService extends Service {
         main.removeCallbacks(deliverVoiceTurn);
         turnBuffer.clear();
         captureRunning = false;
+        microphoneSilencedByAndroid = false;
         if (screenAudio.active()) startService(new Intent(this, ScreenCaptureService.class)
             .setAction(ScreenCaptureService.STOP));
         saveAudio();
@@ -939,6 +1060,7 @@ public final class BubblesService extends Service {
     private void finishSpeaking(String id) {
         if (id == null || !id.equals(activeUtteranceId)) return;
         activeUtteranceId = "";
+        currentWebsiteUtterance = "";
         speaking = false;
         speechGeneration++;
         restoreExternalPlayback();
@@ -983,12 +1105,22 @@ public final class BubblesService extends Service {
 
     private void heard(String raw, boolean typed) {
         String text = raw == null ? "" : raw.replaceAll("\\s+", " ").trim();
-        if (text.isEmpty() || text.length() > 1800 || muted) return;
+        if (text.isEmpty() || text.length() > 1800 || (!typed && muted)) return;
         long now = SystemClock.elapsedRealtime();
         String alias=BrainNotes.prefs(this).getString("name","Brain");
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
+        // A tapped RecordB start is an intentional foreground interaction. Keep
+        // its short spoken follow-up window even with app/media sound playing.
+        // All longer-lived recording controls still require source gating.
+        if (typed) {
+            VoiceCaptureCommands.Command started = VoiceCaptureCommands.parse(text);
+            if (started != null && "screen_video".equals(started.action)) {
+                activeUntil = now + 30000L;
+                voiceFollowups = 0;
+            }
+        }
         // "Record Bubbles" is a deliberately addressed local capture command
         // even when the optional Room Notes mode requires a wake name.
         boolean suffixCapture = text.matches(
@@ -1010,8 +1142,12 @@ public final class BubblesService extends Service {
             activeUntil = now + 30000L;
             voiceFollowups = 0;
         }
+        boolean recentRecordBFollowup = !typed && now < activeUntil
+            && ScreenCaptureService.isRunning()
+            && BrainNotes.prefs(this).getBoolean("capture_active", false);
         if (!SpeechSourceGate.mayDispatch(typed,
-                playbackAwareness != null && playbackAwareness.mediaPlaying(), directed || suffixCapture)) {
+                playbackAwareness != null && playbackAwareness.mediaPlaying(),
+                directed || suffixCapture || recentRecordBFollowup)) {
             // Background phone audio is not authorization to speak or run jobs.
             BrainNotes.prefs(this).edit().putString("last_suppressed_source",
                     "Phone playback active; say Bubbles to address the assistant").apply();
@@ -1031,9 +1167,8 @@ public final class BubblesService extends Service {
             state("listening", .28f);
             return;
         }
-        // Do not send clearly pet-directed chatter to the conversation or
-        // accidentally turn it into a recording, search or owner job.
-        // This deliberately conservative hint cannot determine the speaker.
+        // A conservative local audience hint; not voice identification.
+        // Explicit Bubbles requests and typed messages always pass.
         if (SpeechAudienceGate.clearlyPetDirected(addressed, directed, typed)) {
             BrainNotes.prefs(this).edit().putString("last_suppressed_source",
                     "Likely pet-directed speech ignored locally").apply();
@@ -1045,6 +1180,7 @@ public final class BubblesService extends Service {
         if (!typed && addressed.length() < 3) return;
         BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
         if (directed && handleWorkflowRequest(addressed, false)) return;
+        if (directed && handleTermuxProbe(addressed, false)) return;
         if (SimNetworkCommands.matches(addressed)) {
             screenStatus(CellularInspector.capture(this), false);
             return;
@@ -1165,6 +1301,7 @@ public final class BubblesService extends Service {
         }
         // Opening an installed app is a local, explicit command; no cloud model
         // can silently add app permissions or click unrelated controls.
+        if (handleChatGPTAppRequest(addressed, typed)) return;
         String appLaunch = AppControlBridge.tryLaunch(this, addressed);
         if (appLaunch != null) {
             screenStatus(appLaunch, typed);
@@ -1202,15 +1339,19 @@ public final class BubblesService extends Service {
         // The separate bridge must have explicit permission and a topical match.
         String ambientContext = RoomContextFusion.forTurn(this, addressed);
         if (oracleWindow != null && oracleWindow.sendSpoken(addressed, ambientContext)) {
-            // Real work has been accepted by the local WebView queue. Give a
-            // short audible acknowledgement immediately, without claiming a
-            // search or tool finished before a verified result exists.
-            if (!typed) speak("On it.");
+            // Accepted by WebView != executed by a tool. Speaking "On it."
+            // for every utterance hid missing results and could feed the
+            // recognizer with our own synthetic response. The website's
+            // completed result or real failure is the only normal voice reply.
+            BrainNotes.prefs(this).edit().putString("voice_dispatch_state",
+                "Voice request queued locally; awaiting website result").apply();
             return;
         }
         BrainNotes.prefs(this).edit().putString("last_error",
-            "Bubbles website is unavailable or its queue is full. Open the floating chat and retry; no alternate AI was used.").apply();
-        Toast.makeText(this, "Open Bubbles chat to check the website connection.", Toast.LENGTH_LONG).show();
+            "Bubbles website is unavailable or its queue is full. No request was executed.")
+            .putString("voice_dispatch_state", "failed_before_dispatch").apply();
+        if (!typed) speak("Bubbles chat is unavailable. I did not run that request.");
+        else Toast.makeText(this, "Open Bubbles chat to check the website connection.", Toast.LENGTH_LONG).show();
     }
 
 
@@ -1238,6 +1379,21 @@ public final class BubblesService extends Service {
         BrainNotes.prefs(this).edit().putString("capture_state",
             camera ? "Camera recording requested · tap Bubbles capture notification"
                 : "Screen capture requested · tap notification and approve Android dialog").apply();
+        // A request from the visible floating Android WebView is a real user
+        // action. Try to show the Android permission activity immediately,
+        // instead of forcing another tap in the notification shade. The
+        // notification above remains a fallback if Android blocks the launch.
+        if (oracleWindow != null && Settings.canDrawOverlays(this)) {
+            try {
+                startActivity(intent);
+                BrainNotes.prefs(this).edit().putString("capture_state",
+                    "Opening Android consent · approve system dialog or tap Bubbles capture notification").apply();
+                return;
+            } catch (RuntimeException error) {
+                BrainNotes.prefs(this).edit().putString("last_error",
+                    "Cannot open screen permission directly; use Bubbles capture notification").apply();
+            }
+        }
         Toast.makeText(this, "Tap Bubbles capture notification to continue", Toast.LENGTH_LONG).show();
     }
 
@@ -1256,6 +1412,8 @@ public final class BubblesService extends Service {
         }
         if (panelCommand(text, true, SystemClock.elapsedRealtime())) return;
         if (handleWorkflowRequest(text, true)) return;
+        if (handleTermuxProbe(text, true)) return;
+        if (handleChatGPTAppRequest(text, true)) return;
         String localLaunch = AppControlBridge.tryLaunch(this, text);
         if (localLaunch != null) { screenStatus(localLaunch, true); return; }
         if (SimNetworkCommands.matches(text)) {
@@ -1280,6 +1438,66 @@ public final class BubblesService extends Service {
                 "Bubbles website is unavailable or its queue is full. No alternate AI was used.").apply();
         }
     }
+    /** Visible Android ChatGPT companion, deliberately not an archive API.
+     * Website/OAuth provider access does not grant private Android app data.
+     * Only direct owner voice or typed intent reaches these local actions.
+     */
+    private boolean handleChatGPTAppRequest(String speech, boolean typed) {
+        ChatGPTAppPolicy.Request command = ChatGPTAppPolicy.parse(speech);
+        if (command == null) return false;
+        if (command.kind == ChatGPTAppPolicy.Kind.OPEN) {
+            String opened = AppControlBridge.tryLaunch(this, "open ChatGPT");
+            screenStatus(opened == null
+                ? "ChatGPT could not be opened on this phone." : opened, typed);
+            return true;
+        }
+        if (command.kind == ChatGPTAppPolicy.Kind.ARCHIVE_UNAVAILABLE) {
+            screenStatus("I can read the currently visible ChatGPT screen, but Android does not give me "
+                + "the full private chat history. Import your official ChatGPT ZIP into Bubbles History "
+                + "to restore individual saved conversations.", typed);
+            return true;
+        }
+        if (!BrainLearningService.isConnected()) {
+            screenStatus("To read or control the visible ChatGPT app, enable Bubbles screen access "
+                + "in Android Accessibility settings. Nothing was read or tapped.", typed);
+            try { startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)); }
+            catch (RuntimeException ignored) { /* The owner may open Settings manually. */ }
+            return true;
+        }
+        if (!ChatGPTAppPolicy.PACKAGE.equals(BrainLearningService.workflowForegroundPackage())) {
+            screenStatus("Open the ChatGPT app first. Bubbles did not read or control another app.", typed);
+            return true;
+        }
+        if (command.kind == ChatGPTAppPolicy.Kind.TYPE) {
+            String result = BrainLearningService.workflowTypeInPackage(
+                command.field, command.value, ChatGPTAppPolicy.PACKAGE);
+            screenStatus("TYPE_VERIFIED".equals(result)
+                    ? "Text is in the selected ChatGPT field. It has not been sent."
+                    : "TYPE_UNVERIFIED".equals(result)
+                    ? "Text entry was requested, but I cannot verify it. Nothing was sent by Bubbles."
+                    : "ChatGPT text entry was blocked or the field could not be identified uniquely. "
+                        + "No send action was attempted.", typed);
+            return true;
+        }
+        if (command.kind == ChatGPTAppPolicy.Kind.TAP
+                || command.kind == ChatGPTAppPolicy.Kind.SCROLL) {
+            String receipt = BrainLearningService.performRequestedActionInPackage(
+                command.screenPhrase, ChatGPTAppPolicy.PACKAGE);
+            if (receipt == null) {
+                screenStatus("ChatGPT action was not recognized. No control was activated.", typed);
+                return true;
+            }
+            screenStatus(receipt, typed);
+            if (receipt.startsWith("Tap sent to ") || receipt.startsWith("Scroll ")) {
+                main.postDelayed(() -> inspectScreenRequest(speech, typed, receipt), 500L);
+            }
+            return true;
+        }
+        inspectScreenRequest(speech, typed, "");
+        return true;
+    }
+
     private void screenStatus(String response, boolean typed) {
         BrainNotes.prefs(this).edit().putString("last_reply", response)
             .putString("screen_state", response).apply();
@@ -1323,9 +1541,11 @@ public final class BubblesService extends Service {
     private void inspectScreenRequest(String question, boolean typed, String actionReceipt) {
         final boolean restorePanel = oracleWindow != null && oracleWindow.hideForScreenRead();
         // Give the compositor a frame to remove our own chat from the screenshot.
-        main.postDelayed(() -> BrainLearningService.inspectNow(question, () -> {
-            if (oracleWindow != null) oracleWindow.restoreAfterScreenRead(restorePanel);
-        }, observation -> main.post(() -> {
+        main.postDelayed(() -> {
+            Runnable captured = () -> {
+                if (oracleWindow != null) oracleWindow.restoreAfterScreenRead(restorePanel);
+            };
+            java.util.function.Consumer<String> observed = observation -> main.post(() -> {
             if (oracleWindow != null) oracleWindow.restoreAfterScreenRead(restorePanel);
             if (!connected || (!typed && muted)) return;
             if (observation.startsWith("SCREEN_")) {
@@ -1339,7 +1559,12 @@ public final class BubblesService extends Service {
                 : "Android action receipt: " + actionReceipt + "\nObservation after this action (a screen change is not proof of task completion):\n" + observation, typed)) return;
             BrainNotes.prefs(this).edit().putString("last_error",
                 "The Bubbles website could not accept this screen request. No alternate AI was used.").apply();
-        })), 160L);
+        });
+            if (ChatGPTAppPolicy.parse(question) != null)
+                BrainLearningService.inspectNowForPackage(question,
+                    ChatGPTAppPolicy.PACKAGE, captured, observed);
+            else BrainLearningService.inspectNow(question, captured, observed);
+        }, 160L);
     }
 
     private void askOracle(String userRequest) {
@@ -1452,6 +1677,21 @@ public final class BubblesService extends Service {
         drainWebsiteSpeech();
     }
 
+    private void speechPlaybackFailed(String id, String message) {
+        if (id == null || !id.equals(activeUtteranceId)) return;
+        String retry = currentWebsiteUtterance;
+        // One retry per failed website response, after a fresh Android TTS
+        // engine. Never retry the same error forever or lose later replies.
+        if (!retry.isEmpty() && !retry.equals(lastFailedWebsiteUtterance)
+                && pendingWebsiteSpeech.size() < 8) {
+            pendingWebsiteSpeech.addFirst(retry);
+            lastFailedWebsiteUtterance = retry;
+        }
+        ttsReady = false;
+        finishSpeaking(id);
+        reportSpeechFailure(message);
+    }
+
     private void speak(String response) {
         if (!connected || muted) return;
         if (tts == null || !ttsReady) {
@@ -1474,26 +1714,24 @@ public final class BubblesService extends Service {
         activeUtteranceId = utterance;
         main.postDelayed(() -> {
             if (speaking && generation == speechGeneration && utterance.equals(activeUtteranceId)) {
-                tts.stop();
-                finishSpeaking(utterance);
-                BrainNotes.prefs(this).edit().putString("last_error", "Speech playback timed out; listening resumed").apply();
+                if (tts != null) tts.stop();
+                speechPlaybackFailed(utterance,
+                    "Speech playback timed out; listening resumed; answer remains in chat");
             }
         }, 90000);
         state("speaking", .4f);
         try {
             int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, utterance);
             if (result == TextToSpeech.ERROR) {
-                finishSpeaking(utterance);
-                BrainNotes.prefs(this).edit().putString("last_error",
-                    "Android speech engine rejected playback; text is still in chat").apply();
+                speechPlaybackFailed(utterance,
+                    "Android speech engine rejected playback; text is still in chat");
                 state("error", 0);
             }
         } catch (RuntimeException error) {
             // Without this, the speaking flag blocks every later reply until
             // the 90-second watchdog, even though the engine threw immediately.
-            finishSpeaking(utterance);
-            BrainNotes.prefs(this).edit().putString("last_error",
-                "Android speech playback failed: " + error.getClass().getSimpleName()).apply();
+            speechPlaybackFailed(utterance,
+                "Android speech playback failed: " + error.getClass().getSimpleName());
             state("error", 0);
         }
     }
@@ -1513,6 +1751,10 @@ public final class BubblesService extends Service {
         pendingWebsiteSpeech.clear();
         connected=false;muted=true;resumeAfterLiveCall=false;
         if (playbackAwareness != null) { playbackAwareness.close(); playbackAwareness = null; }
+        if (Build.VERSION.SDK_INT >= 29) {
+            try { ((AudioManager)getSystemService(AUDIO_SERVICE)).unregisterAudioRecordingCallback(recordingCallback); }
+            catch (RuntimeException ignored) {}
+        }
         main.removeCallbacksAndMessages(null);
         stopRecognition();
         if (voiceModel != null && audioThread == null) {
@@ -1621,6 +1863,7 @@ public final class BubblesService extends Service {
         @Override public boolean onTouchEvent(MotionEvent e) {
             switch(e.getActionMasked()) {
                 case MotionEvent.ACTION_DOWN:
+                    setAlpha(1f);
                     downX=e.getRawX();downY=e.getRawY();downAt=SystemClock.elapsedRealtime();moved=false;
                     startX=bubbleLayout.x;startY=bubbleLayout.y;
                     return true;
@@ -1629,12 +1872,23 @@ public final class BubblesService extends Service {
                     if(Math.abs(dx)>8||Math.abs(dy)>8)moved=true;
                     if(moved && bubbleLayout!=null&&manager!=null) {
                         android.util.DisplayMetrics screen = getResources().getDisplayMetrics();
-                        bubbleLayout.x=Math.max(0,Math.min(screen.widthPixels-getWidth(),startX+Math.round(dx)));
-                        bubbleLayout.y=Math.max(0,Math.min(screen.heightPixels-getHeight(),startY+Math.round(dy)));
+                        bubbleLayout.x=EdgeDockPolicy.dragX(startX+Math.round(dx),screen.widthPixels,getWidth());
+                        bubbleLayout.y=EdgeDockPolicy.y(startY+Math.round(dy),screen.heightPixels,getHeight());
                         try{manager.updateViewLayout(this,bubbleLayout);}catch(Exception ignored){}
                     }
                     return true;
                 case MotionEvent.ACTION_UP:
+                    if(moved && bubbleLayout != null && manager != null) {
+                        android.util.DisplayMetrics screen = getResources().getDisplayMetrics();
+                        boolean right = EdgeDockPolicy.dockRight(bubbleLayout.x, screen.widthPixels, getWidth());
+                        bubbleLayout.x = EdgeDockPolicy.edgeX(right, screen.widthPixels, getWidth());
+                        bubbleLayout.y = EdgeDockPolicy.y(bubbleLayout.y, screen.heightPixels, getHeight());
+                        BrainNotes.prefs(BubblesService.this).edit()
+                                .putBoolean("orb_dock_right",right)
+                                .putInt("orb_dock_y", bubbleLayout.y).apply();
+                        try {manager.updateViewLayout(this, bubbleLayout);} catch (RuntimeException ignored) {}
+                    }
+                    setAlpha(.8f);
                     if(!moved) {
                         if(SystemClock.elapsedRealtime()-downAt>650) {
                             muteSession();

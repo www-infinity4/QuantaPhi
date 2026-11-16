@@ -1,0 +1,57 @@
+name: Refresh Infinity source spotlights
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/sync_card_spotlights.py', 'scripts/spotlight_sources.mjs', '.github/workflows/card-spotlights-sync.yml']
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: quantaphi-google-trends-sync
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate metadata parsing and export pinned source catalog
+        run: |
+          python3 -m unittest discover -s test -p 'test_card_spotlights_sync.py' -v
+          node scripts/spotlight_sources.mjs > "$RUNNER_TEMP/spotlight-sources.json"
+      - name: Read previous checked source previews
+        run: |
+          if git ls-remote --exit-code --heads origin trends-rss-data >/dev/null 2>&1; then
+            git fetch origin refs/heads/trends-rss-data
+            git show FETCH_HEAD:data/quick-card-spotlights-latest.json > "$RUNNER_TEMP/previous-spotlights.json" || printf '{"cards":{}}' > "$RUNNER_TEMP/previous-spotlights.json"
+          else
+            printf '{"cards":{}}' > "$RUNNER_TEMP/previous-spotlights.json"
+          fi
+      - name: Check public official pages for current product images and structured prices
+        run: python3 scripts/sync_card_spotlights.py --sources "$RUNNER_TEMP/spotlight-sources.json" --previous "$RUNNER_TEMP/previous-spotlights.json" --output "$RUNNER_TEMP/quick-card-spotlights-latest.json"
+      - name: Publish observations to the existing data branch
+        run: |
+          git config user.name "quanta-source-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin trends-rss-data >/dev/null 2>&1; then
+            git fetch origin refs/heads/trends-rss-data
+            git checkout -B trends-rss-data FETCH_HEAD
+          else
+            git checkout --orphan trends-rss-data
+            git rm -rf . >/dev/null || true
+          fi
+          mkdir -p data
+          cp "$RUNNER_TEMP/quick-card-spotlights-latest.json" data/quick-card-spotlights-latest.json
+          git add data/quick-card-spotlights-latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh attributed Infinity source spotlights"
+            if git ls-remote --exit-code --heads origin trends-rss-data >/dev/null 2>&1; then
+              git pull --rebase origin trends-rss-data
+            fi
+            git push origin HEAD:refs/heads/trends-rss-data
+          fi

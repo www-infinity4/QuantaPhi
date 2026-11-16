@@ -14,11 +14,23 @@ const catalog=[
  {repository:'other-owner/QuantaPhi',description:'Not owned'},
  {repository:'www-infinity4/Old-App',archived:true}
 ];
+test('follow-up card searches do not repeat a completed source-discovery attempt',()=>{
+ const ui=readFileSync('bubbles-ai.js','utf8');
+ assert.match(ui,/result\.requiresReview&&!result\.allTargets&&!repositorySelectionExplicit&&!repositorySourceSearch/);
+ assert.doesNotMatch(ui,/repositorySourceSearch\?\.key===request\.toLowerCase\(\)\.trim\(\)/);
+});
 test('Bubbles voice/APK requests route to the actual QuantaPhi source, not a made-up Bubbles repository',()=>{
  const r=selectRepositories('Repair Bubbles APK microphone and voice overlay',catalog);
  assert.deepEqual(r.selection,['www-infinity4/QuantaPhi']);
  assert.equal(r.confidence,'high');
  assert.equal(r.catalogSize,6);
+});
+test('ordinary site cards and repairs resolve to QuantaPhi without a repo question',()=>{
+ for(const request of ['Fix the Walmart card on the homepage','Build the Fox One quick card','Repair the ShopPhi post button','Improve our card carousel']){
+  const r=selectRepositories(request,catalog);
+  assert.deepEqual(r.selection,['www-infinity4/QuantaPhi'],request);
+  assert.equal(r.requiresReview,false,request);
+ }
 });
 test('named repositories outrank incidental project names',()=>{
  const r=selectRepositories('Fix www-infinity4/WidgetPhi card inside QuantaPhi',catalog);
@@ -68,7 +80,7 @@ test('Brain and floating Android shared Bubbles UI use authenticated catalog rou
  assert.match(brain,/github-owner-catalog-v1/);
  assert.match(brain,/ownerAuthorized\(env,token\)/);
  assert.match(ui,/action:'suggest_repositories'/);
- assert.match(ui,/if\(!repositorySelectionExplicit&&!activeCardEvidence\)await suggestRepositoryTargets\(request,false\)/);
+ assert.match(ui,/if\(!namedRecordBIssue&&!repositorySelectionExplicit&&!activeCardEvidence\)await suggestRepositoryTargets\(request,false\)/);
  assert.match(ui,/result\.requiresReview&&!repositorySelectionExplicit/);
  assert.match(ui,/repositoryFilter\.addEventListener\('input'/);
  assert.match(ui,/if\(!repositoryCatalogComplete&&!repositoryCatalogLoading\)void loadRepositoryCatalog\(\)/);

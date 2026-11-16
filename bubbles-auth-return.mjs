@@ -1,0 +1,61 @@
+// A callback result is a non-authoritative UI hint. Only the wallet-bound
+// server handoff can confirm an account. Never store state, code or token here.
+export const OAUTH_RETURN_NOTE='bubbles:oauth-return-note:v1';
+export function resumeAuthReturn(host=window) {
+ try {
+  const query=new URLSearchParams(host.location?.search||'');
+  const result=query.get('result');
+  const callbackProvider=String(host.location?.pathname||'').match(/\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/)?.[1]||null;
+  let saved=null;
+  try {saved=JSON.parse(host.sessionStorage?.getItem('bubbles:oauth-pending:v1')||'null');}catch{}
+  const provider=callbackProvider||saved?.provider||'cloudflare';
+  if(result==='received'||result==='failed'||result==='declined'){
+   // Only predefined, non-secret reason codes travel into the page session.
+   const reasons=['callback_missing_code','callback_state_invalid','callback_handoff_failed',
+    'invalid_scope','invalid_request','unauthorized_client','access_denied',
+    'server_error','temporarily_unavailable'];
+   const reason=reasons.includes(query.get('reason'))?query.get('reason'):null;
+   try {host.sessionStorage?.setItem(OAUTH_RETURN_NOTE,
+    JSON.stringify({provider,result,reason,at:Date.now()}));}catch{}
+  }
+  // A provider failure must remain visible. Never silently turn "denied" into
+  // a fresh login screen.
+  if(result==='failed'||result==='declined')return false;
+  if(result==='received'&&callbackProvider==='google'){
+   // Respect the saved destination only for a live, same-window Google flow.
+   // Without its browser state, use the wallet-bound account recovery page.
+   const returningToChat=saved?.provider==='google'&&saved?.flow==='same-window'&&
+    saved.returnPath==='/bubbles.html'&&/^[A-Za-z0-9_-]{43}$/.test(saved.state)&&
+    Number.isFinite(saved.expiresAt)&&saved.expiresAt>Date.now()&&
+    saved.expiresAt<=Date.now()+300000;
+   host.location.replace(returningToChat?'/bubbles.html':'/bubbles-accounts.html?return=google');
+   return true;
+  }
+  if(result==='received'&&callbackProvider==='cloudflare'){
+   // A separate Android tab can finish the sealed callback only after
+   // the original wallet and session are verified by the server.
+   const validSaved=saved?.provider==='cloudflare'&&saved?.flow==='same-window'&&
+    /^[A-Za-z0-9_-]{43}$/.test(saved.state)&&Number.isFinite(saved.expiresAt)&&
+    saved.expiresAt>Date.now()&&saved.expiresAt<=Date.now()+300000;
+   const destination=validSaved&&saved.returnPath==='/bubbles.html'?'/bubbles.html':
+    validSaved&&saved.returnPath==='/bubbles-accounts.html'?'/bubbles-accounts.html':
+    '/bubbles-accounts.html?return=cloudflare';
+   host.location.replace(destination);
+   return true;
+  }
+  const pending=saved;
+  if(!pending||!['github','cloudflare','google'].includes(pending.provider)||
+     !/^[A-Za-z0-9_-]{43}$/.test(pending.state)||!Number.isFinite(pending.expiresAt)||
+     pending.expiresAt<=Date.now()||pending.expiresAt>Date.now()+300000){
+   const message=host.document?.querySelector?.('.auth-return-card p');
+   if(message&&result==='received')
+    message.textContent='This browser no longer has the matching Bubbles sign-in session. Reopen Bubbles in the original Chrome tab or app to finish.';
+   return false;
+  }
+  if(callbackProvider&&callbackProvider!==pending.provider)return false;
+  const destination=pending.returnPath==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
+  host.location.replace(destination);
+  return true;
+ }catch{return false;}
+}
+if(typeof window!=='undefined')resumeAuthReturn();

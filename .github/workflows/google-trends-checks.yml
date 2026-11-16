@@ -1,0 +1,33 @@
+name: Google Trending Cards Source Checks
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/sync_google_trends.py'
+      - 'test/test_google_trends_sync.py'
+      - 'test/google-trending-cards.test.cjs'
+      - 'google-trending-cards.js'
+      - 'google-trending-cards.css'
+      - 'trending-now.html'
+      - 'index.html'
+      - '.github/workflows/google-trends-*.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Offline RSS parsing tests
+        run: python3 -m unittest discover -s test -p 'test_google_trends_sync.py' -v
+      - name: Google cards source tests
+        run: node --test test/google-trending-cards.test.cjs test/google-trending-catalog.test.mjs
+      - name: JavaScript syntax verification
+        run: node --check google-trending-cards.js

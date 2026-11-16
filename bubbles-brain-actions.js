@@ -16,13 +16,44 @@ const OWNER_REPOS={
  'hbo':'www-infinity4/HBO',
  'tv-database':'www-infinity4/TV-Database',
  'widgetphi':'www-infinity4/WidgetPhi',
- 'widget phi':'www-infinity4/WidgetPhi'
+ 'widget phi':'www-infinity4/WidgetPhi',
+ 'recordb':'www-infinity4/RecordB',
+ 'record b':'www-infinity4/RecordB'
 };
+// Canonical first-party chat/social repairs can be sent directly to an
+// authenticated Brain ticket without asking for an unrelated repository.
+// Intent detection never grants permissions: the server still verifies owner
+// identity, repository scope and actual runner/job receipts.
+function firstPartyRepairTarget(utterance){
+ const command=String(utterance||'').trim().slice(0,4001);
+ if(!command||command.length>4000)return null;
+ if(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don't|never|stop|how\b|why\b|what\b|when\b|where\b|explain\b|describe\b)/i.test(command))return null;
+ if(/\bwww-infinity4\/[\w.-]+\b/i.test(command))return null;
+ if(/\b(?:moltnook|widget\s*phi|widgetphi|record\s?b|tv-database|code\s*phi|omni\s*phi)\b/i.test(command))return null;
+ if(/\b(?:both|two|multiple|all)\b.{0,50}\b(?:repos?|repositories)\b/i.test(command))return null;
+ const firstParty=/\b(?:bubbles|twitter)\b|\bx[\s/-]+(?:quick\s*card|posting|feed|timeline|spaces)\b|\b(?:infinity|oracle)\s+carousel\b/i;
+ // QuantaPhi owns the artist music Quick Cards. A rock-player repair
+ // must not fall through to an unrelated generic INFINITY code runner.
+ const musicCard=/\b(?:rock\s+music\s+(?:player|buttons?|radio)|(?:steve\s+miller|pink\s+floyd|classic\s+rock|infinity\s+radio)\b.{0,80}\b(?:radio|player|buttons?|quick\s*card|playback|music))\b/i;
+ if(!firstParty.test(command)&&!musicCard.test(command))return null;
+ const verb='(?:fix|repair|finish|complete|restore|debug|update|upgrade|build|create|deploy|wire|connect|replace|correct|implement|integrate|hook\\s+up)';
+ const start=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)*'+verb+'\\b','i');
+ const directive=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)?(?:i\\s+(?:need|want)\\s+(?:you\\s+)?to|you\\s+(?:need|have)\\s+to|(?:can|could|would|will)\\s+you|we\\s+need\\s+to)\\s+'+verb+'\\b','i');
+ return start.test(command)||directive.test(command)?'www-infinity4/QuantaPhi':null;
+}
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
  if(!text||text.length>4000)return 'chat';
- const addressed=text.replace(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)+/i,'');
+ const addressed=text.replace(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)+/i,'').replace(/^[\s:;“”"'‘’]+/,'');
  if(/^(?:do\s+not|don['’]t|never|i\s+(?:do\s+not|don['’]t)\s+(?:want|need)|i\s+(?:want|need)\s+(?:you\s+)?not\s+to)\b/i.test(addressed))return 'chat';
+ // Explicit RecordB engineering instructions beat trailing words such as
+ // "report the results"; neither status queries nor "start recording" do.
+ const recordB= /\brecord\s?b\b/i.test(addressed);
+ const recordBProject=/\b(?:issue\s*#?\s*2|bots?|team|bubbles|recordings?|library|repo(?:sitory)?|app|files?)\b/i.test(addressed);
+ if(recordB&&recordBProject&&(
+   /^(?:build|fix|repair|finish|complete|implement|upgrade|hook|integrate|test|develop|work\s+on)\b/i.test(addressed)
+   || /\b(?:hook|connect|integrate|build|upgrade|sync|index|store|implement)\b/i.test(addressed)&&/\b(?:bubbles|recordings?|library|video|search|files?)\b/i.test(addressed)
+ ))return 'queue';
  // Read-only discovery, even across ALL of GitHub, must never create tickets
  // or demand an owner's repository selection. A separate read tool provides
  // real results; requested code modification still requires the write gate.
@@ -46,9 +77,9 @@ function classify(utterance){
  const dispatch=/\b(?:send|assign|instruct|dispatch|queue|start|launch|submit)\b.{0,100}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther|jobs?|tasks?)\b/i;
  const dispatchByName=/\b(?:tell|ask|have|give)\b.{0,70}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,90}\b(?:to\s+)?(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
  const dispatchReverse=/\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,80}\b(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
- const change=/\b(?:fix|repair|restore|debug|update|upgrade|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install)\b/i;
- const subject=/\b(?:quantaphi|quanta\s*phi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone|app|code\s*phi|omni\s*code|notification\s*cent(?:re|er)|infinity\s*phi|omni\s*phi|omni\s*tv|moltnook|widgetphi|widget\s*phi|channel-creatir|hbo|tv-database)\b/i;
- const imperative=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:fix|repair|restore|debug|update|upgrade|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install|start|queue|assign|dispatch|send|tell|ask|have|launch|search|scan|inspect|combine|pull together|edit)\b/i;
+ const change=/\b(?:fix|repair|restore|debug|update|upgrade|deploy|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install)\b/i;
+ const subject=/\b(?:cloudflare|workers?|deployments?|quantaphi|quanta\s*phi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone|app|code\s*phi|omni\s*code|notification\s*cent(?:re|er)|infinity\s*phi|omni\s*phi|omni\s*tv|moltnook|widgetphi|widget\s*phi|channel-creatir|hbo|tv-database)\b/i;
+ const imperative=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:fix|repair|restore|debug|update|upgrade|deploy|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install|start|queue|assign|dispatch|send|tell|ask|have|launch|search|scan|inspect|combine|pull together|edit)\b/i;
  const directive=/^(?:(?:bubbles)[\s,:]+)?(?:please\s+)?(?:i\s+(?:need|want)\s+(?:you\s+)?to|you\s+(?:need|have)\s+to|can\s+you|could\s+you|would\s+you|we\s+need\s+to)\b/i;
  const makeJob=/\b(?:make|create|add)\s+(?:(?:a|an|the|new)\s+)*(?:job|task)\b.{0,70}\b(?:in|for|to|on)\s+(?:(?:my|the)\s+)?(?:robot\s*brain|brain)\b/i;
  const makeDirective=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:make|create|add)\b/i;
@@ -87,6 +118,7 @@ function resolveRepairRequest(utterance, history=[]){
  if(!/^(?:(?:please|bubbles)[\s,:]+)*(?:fix|repair|correct|restore)\s+(?:it|that|this|these(?: things| problems| issues)?|those(?: things| problems| issues)?)[.!]*$/i.test(command))return '';
  const last=Array.isArray(history)?[...history].reverse().find(item=>item?.role==='user'&&typeof item.text==='string'):null;
  const context=String(last?.text||'').trim();
+ if(/^\[Images?: [^\n]+\] /.test(context)&&context.length<=3500)return 'Repair the website problems shown in the latest owner image message. Owner request: '+context.replace(/^\[Images?: [^\n]+\] /,'');
  if(context.length<12||context.length>3500||!(/\b(?:broken|fail|error|problem|issue|not working|doesn['’]t|cannot|can['’]t|won['’]t|missing)\b/i.test(context)||classify(context)==='queue'))return '';
  return 'Repair the problems in this owner message: '+context;
 }
@@ -184,6 +216,23 @@ function integrationBrief(input){
   'Do not report success for a discovered tool, proposed adapter or queued ticket. All are different states.'
  ].join('\n');
 }
+// A recording-library job needs its own privacy-safe implementation contract.
+// A queued job is not a verified upload, commit, or recording.
+function recordBWorkBrief(input,repository){
+ const request=String(input||'');
+ if(repository!=='www-infinity4/RecordB'||!/\b(?:record\s?b|recordings?|recorder|screen\s*capture|video\s*library)\b/i.test(request))return '';
+ return [
+  'RECORDB — Bubbles recording library implementation contract.',
+  'YELLOW: inspect the RecordB repo and existing QuantaPhi Android ScreenCaptureService, CapturePublisher, SharedScreenAudioMuxer, RecordB in-chat card, and Robot Brain job API. Pin inspected file revisions.',
+  'BLUE: preserve Android foreground MediaProjection approval, the existing native recorder, pause/resume, stop/finalize/save, verified state, and the local Movies/Bubbles originals. Keep explicit user recordings separate from ordinary Bubbles voice listening.',
+  'GREEN: build the recording library for owner-authorized saved files. Phone originals remain in Movies/Bubbles; desktop originals go to a user-selected folder. Display a real live recording state and permitted local video preview, not an invented cloud stream.',
+  'PRIVATE MEDIA: www-infinity4/RecordB is a PUBLIC source repo. Never commit user recordings, sound, screenshots, captions, transcripts, tokens, or personal data to it. To fulfill GitHub storage, first verify a private media repository and GitHub size limits; for larger video use owner-isolated private durable object storage such as R2, with GitHub containing only non-sensitive source/manifests.',
+  'INDEX: on authorized save, create idempotent recording manifests with filenames, hashes, duration, device source, timestamps, consent/sync status and searchable transcript, OCR and scene descriptions. Keep AI observations separate from the originals and provide timestamp-linked search playback.',
+  'TRANSFER: opt-in synchronization, verified owner authorization, resumable uploads, offline retry, access control, deletion/export tools and explicit privacy choices. Never upload or AI-process personal recordings silently.',
+  'TWO REPOS: RecordB owns reusable recorder/library source. QuantaPhi owns the Bubbles chat integration and native Android APK. Request separate authorized tickets and PRs for cross-repository changes instead of claiming one repo job altered the other.',
+  'PINK: test record/pause/resume/stop and playable MP4 on a physical Android device, large-file/low-space/offline failure paths, cross-device sync and accurate search results; report unavailable hardware or credentials honestly.'
+ ].join('\n');
+}
 function requestPlan(request,repository){
  const apk=/\bapk\b|android.*(?:package|builder)/i.test(String(request));
  return {version:1,kind:apk?'website-to-apk':'repository-work',repository,
@@ -208,17 +257,18 @@ function makeJobs(request,selectedRepository){
  if(!message)throw Error('request_required');
  const repository=selectedRepository||repositoryFor(message),title=message.slice(0,180);
  if(!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(repository))throw Error('explicit_owner_repository_required');
- const omniSkill=omniCodeBrief(message),siteSkill=sitePackageBrief(message,repository),bridgeSkill=integrationBrief(message),plan=requestPlan(message,repository);
+ const omniSkill=omniCodeBrief(message),siteSkill=sitePackageBrief(message,repository),bridgeSkill=integrationBrief(message),recordBSkill=recordBWorkBrief(message,repository),plan=requestPlan(message,repository);
  return [{
   id:'TASK-1',agent:'greenbeans',color:'green',team:['yellow-jacket','blueberry','greenbeans','purple-pearl'],
   repository,executor:'repository-engine',queue_priority:80,status:'queued',
-  title,instructions:message+'\n\nExecution plan (planned stages, not completed work):\n'+JSON.stringify(plan)+'\nResearch verified documentation and actual repository source first. Save a structured plan with dependencies before implementation. Independent source inspections may run concurrently; writes must keep the existing repository lease and review gates. Never ask the owner for routine file paths or reversible styling choices.'+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:'')+(bridgeSkill?'\n\nSource-to-chat integration contract:\n'+bridgeSkill:''),
+  title,instructions:message+'\n\nExecution plan (planned stages, not completed work):\n'+JSON.stringify(plan)+'\nResearch verified documentation and actual repository source first. Save a structured plan with dependencies before implementation. Independent source inspections may run concurrently; writes must keep the existing repository lease and review gates. Never ask the owner for routine file paths or reversible styling choices.'+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:'')+(bridgeSkill?'\n\nSource-to-chat integration contract:\n'+bridgeSkill:'')+(recordBSkill?'\n\nRecordB recording library work contract:\n'+recordBSkill:''),
   acceptance:['Inspect actual repository implementation and implement this owner request; never fabricate source changes.',
    'Run focused tests and record commit/PR evidence, noting missing credentials or services.',
    'Carry the tested repair through the authorized review, merge and deployment pipeline. Record the actual live result; stop and report blockers when authorization or checks are missing.',
    ...(omniSkill?['Consult pinned Omni Code source as read-only evidence. RED reconciles YELLOW and BLUE findings before GREEN edits anything.']:[]),
     ...(siteSkill?['Use Oracle Octaves as the verified design reference and pin relevant reusable owner-repository source before editing.','Produce an actual buildable package/preview in the selected target repository, run focused mobile/link checks, and return verifiable PR/CI/deployment receipts.','Resolve missing technical dependencies from verified sources or minimal original code; any fork must have confirmed upstream license and explicit authenticated owner-repository scope.']:[]),
-    ...(bridgeSkill?['Inspect the named original tool and record its actual source and interface contract before inventing an adapter.','If missing, build the minimum authorized source-to-Bubbles integration and run a real use-case test; retain owner permission checks.']:[])],
+    ...(bridgeSkill?['Inspect the named original tool and record its actual source and interface contract before inventing an adapter.','If missing, build the minimum authorized source-to-Bubbles integration and run a real use-case test; retain owner permission checks.']:[]),
+    ...(recordBSkill?['Never put private recordings or transcripts in the public RecordB source repo.','Use verified native recordings, implement owner-authenticated search, and report phone tests and deployment receipts or explicit blockers.']:[])],
   dependencies:[],design:'Oracle Octaves · Android first'
  },{
   id:'TASK-2',agent:'pink-panther',color:'pink',team:['pink-panther','purple-pearl'],
@@ -264,14 +314,21 @@ function describeTickets(tickets,limit=10){
 function ownerApprovalRequests(tickets){
  const found=[];
  for(const ticket of Array.isArray(tickets)?tickets:[]){
-  if(!ticket||!['blocked','ready','working'].includes(ticket.status))continue;
+  if(!ticket||!['blocked','ready','working'].includes(ticket.status)||
+     ticket.context?.kind!=='robot-directions')continue;
   for(const job of Array.isArray(ticket.context?.color_jobs)?ticket.context.color_jobs:[]){
-   const reason=String(job?.progress?.summary||'');
+   const reason=String(job?.progress?.summary||'').trim();
+   const task=String(job?.instructions||'').trim();
+   const title=String(ticket.title||'').trim();
+   // A vague runner flag is not an owner decision. Require an actual job.
    if(job?.status!=='blocked'||!/^IW-\d{8}-[0-9A-F-]{8}$/.test(String(ticket.id||''))||
-      !/^TASK-\d+$/.test(String(job.id||''))||!/owner_input_required/i.test(reason)||
+      !/^TASK-\d+$/.test(String(job.id||''))||!/^www-infinity4\/[\w.-]+$/.test(String(job.repository||''))||
+      title.length<8||task.length<12||reason.length<55||
+      !/owner_input_required/i.test(reason)||
       !/\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(reason)||
       /\b(?:password|credential|secret|wallet|payment|security permission|authorization bypass)\b/i.test(reason))continue;
-   found.push({ticketId:ticket.id,jobId:job.id,title:String(ticket.title||'Owner work request').slice(0,120),reason:reason.slice(0,1500)});
+   found.push({ticketId:ticket.id,jobId:job.id,title:title.slice(0,120),
+     task:task.slice(0,320),repository:job.repository,reason:reason.slice(0,1500)});
   }
  }
  return found.slice(0,10);
@@ -320,6 +377,12 @@ function nativeCaptureNotice(previous,current){
  return '';
 }
 function speechText(value){
+ // Tool-call JSON from a chat model is not evidence of a completed action.
+ // Never recite its parameters or function names through Android TTS.
+ const raw=String(value||'').trim();
+ if(/^[\[{]\s*(?:\{\s*)?["'](?:tool|tool_name|function|action|name|tool_calls)["']\s*:/i.test(raw)||
+    /["'](?:tool_calls|function_call)["']\s*:/.test(raw)&&/\b(?:arguments|parameters|action)\b/i.test(raw))
+  return 'The requested action has not been verified.';
  // Spoken narration is a different representation from the visible chat.
  // Never read formatting symbols, code fences, URLs or markdown syntax aloud.
  return String(value||'')
@@ -399,7 +462,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief};
+const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,firstPartyRepairTarget,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);

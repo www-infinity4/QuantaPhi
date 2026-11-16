@@ -1,0 +1,12 @@
+/* Shared, visible privacy navigation across QuantaPhi public pages. */
+.qp-site-footer{
+  box-sizing:border-box;width:100%;max-width:850px;margin:28px auto 0;
+  padding:20px 18px 32px;border-top:1px solid #d9cbe5;
+  color:#55485e;background:transparent;text-align:center;
+  font:14px/1.6 system-ui,-apple-system,Roboto,sans-serif;
+}
+.qp-site-footer p{margin:0 0 8px;color:inherit;font-size:14px;line-height:1.6}
+.qp-site-footer nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:7px 18px}
+.qp-site-footer a{display:inline-block!important;font:700 14px/1.5 system-ui,-apple-system,Roboto,sans-serif!important;color:#5f259f!important;text-decoration:underline;text-underline-offset:3px;padding:5px 3px}
+.qp-site-footer a:focus-visible{outline:3px solid #9d71cb;outline-offset:3px}
+@media(max-width:520px){.qp-site-footer{padding:18px 12px 26px}.qp-site-footer nav{gap:4px 14px}}

@@ -90,11 +90,30 @@ public final class BrainLearningService extends AccessibilityService {
         if (service == null) { frameCaptured.run(); callback.accept(ACCESS_OFF); return; }
         service.inspect(question, frameCaptured, callback);
     }
+    static void inspectNowForPackage(String question, String expectedPackage,
+            Runnable frameCaptured, Consumer<String> callback) {
+        BrainLearningService service = active.get();
+        if (service == null) { frameCaptured.run();callback.accept(ACCESS_OFF);return; }
+        service.inspect(question, frameCaptured, callback, expectedPackage);
+    }
     private void inspect(String question, Runnable frameCaptured, Consumer<String> callback) {
+        inspect(question, frameCaptured, callback, "");
+    }
+    private void inspect(String question, Runnable frameCaptured, Consumer<String> callback,
+            String expectedPackage) {
         // A WebView or our own Bubbles screen can have no exposed text tree.
         // Do not misdiagnose that as missing permission; still try the Android
         // Accessibility screenshot API already approved by the user.
         AccessibilityNodeInfo root = currentRoot();
+        if (expectedPackage != null && !expectedPackage.isEmpty()) {
+            String visibleApp = root == null ? "" : String.valueOf(root.getPackageName());
+            if (!expectedPackage.equals(visibleApp)) {
+                if (root != null) root.recycle();
+                frameCaptured.run();
+                callback.accept("SCREEN_APP_NOT_FOREGROUND");
+                return;
+            }
+        }
         final String textObservation;
         final String observedAt = java.time.Instant.now().toString();
         if (root == null) {
@@ -115,6 +134,15 @@ public final class BrainLearningService extends AccessibilityService {
         try {
             takeScreenshot(Display.DEFAULT_DISPLAY, getMainExecutor(), new TakeScreenshotCallback() {
                 @Override public void onSuccess(ScreenshotResult result) {
+                    // A user may switch apps between observing the tree and
+                    // receiving the screenshot. Never read another app's image.
+                    if (expectedPackage != null && !expectedPackage.isEmpty()
+                            && !expectedPackage.equals(workflowForegroundPackage())) {
+                        result.getHardwareBuffer().close();
+                        frameCaptured.run();
+                        callback.accept("SCREEN_APP_NOT_FOREGROUND");
+                        return;
+                    }
                     frameCaptured.run();
                     Bitmap copy = null;
                     HardwareBuffer buffer = result.getHardwareBuffer();
@@ -339,6 +367,9 @@ public final class BrainLearningService extends AccessibilityService {
 
     /** Deterministic, single, explicitly voiced/typed tap. Never tap risky controls. */
     static String performRequestedAction(String phrase) {
+        return performRequestedActionInPackage(phrase, "");
+    }
+    static String performRequestedActionInPackage(String phrase, String expectedPackage) {
         BrainLearningService service = active.get();
         if (service == null) return ACCESS_OFF;
         String direction = ScreenAwareness.scrollDirection(phrase);
@@ -347,6 +378,9 @@ public final class BrainLearningService extends AccessibilityService {
         AccessibilityNodeInfo root = service.currentRoot();
         if (root == null) return "I cannot access the foreground app. Close Bubbles' full panel and open the app.";
         try {
+            if (expectedPackage != null && !expectedPackage.isEmpty()
+                    && !expectedPackage.equals(String.valueOf(root.getPackageName())))
+                return "The requested app is not in the foreground. No tap or scroll was sent.";
             if (direction != null) {
                 AccessibilityNodeInfo scroll = service.findScrollable(root, 0);
                 if (scroll == null) return "No scrollable area is visible.";
@@ -455,6 +489,9 @@ public final class BrainLearningService extends AccessibilityService {
     }
 
     static String workflowType(String target, String value) {
+        return workflowTypeInPackage(target, value, "");
+    }
+    static String workflowTypeInPackage(String target, String value, String expectedPackage) {
         BrainLearningService service = active.get();
         if (service == null) return "ACCESS_OFF";
         if (ScreenAwareness.sensitive(target) || value == null || value.trim().isEmpty()
@@ -463,6 +500,9 @@ public final class BrainLearningService extends AccessibilityService {
         if (root == null) return "FIELD_NOT_FOUND";
         ArrayList<AccessibilityNodeInfo> matches = new ArrayList<>();
         try {
+            if (expectedPackage != null && !expectedPackage.isEmpty()
+                    && !expectedPackage.equals(String.valueOf(root.getPackageName())))
+                return "APP_NOT_FOREGROUND";
             service.workflowMatches(root, target, matches, true, 0);
             if (matches.isEmpty()) return "FIELD_NOT_FOUND";
             if (matches.size() != 1) return "FIELD_AMBIGUOUS";

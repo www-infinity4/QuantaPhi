@@ -9,6 +9,7 @@ on:
       - "workers/infinity-brain-clock/notification-settings.mjs"
       - "test/bubbles-conversation-memory.test.mjs"
       - "test/bubbles-memory.test.mjs"
+      - "test/bubbles-memory-context-budget.test.mjs"
       - ".github/workflows/bubbles-memory-check.yml"
   push:
     branches: [main]
@@ -20,6 +21,7 @@ on:
       - "workers/infinity-brain-clock/notification-settings.mjs"
       - "test/bubbles-conversation-memory.test.mjs"
       - "test/bubbles-memory.test.mjs"
+      - "test/bubbles-memory-context-budget.test.mjs"
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -36,4 +38,4 @@ jobs:
           node --check bubbles-ai.js
           node --check workers/bubbles-memory/worker.mjs
       - name: Verify wallet-scoped event retention, deletion and replay policy
-        run: node --test test/bubbles-memory.test.mjs test/bubbles-conversation-memory.test.mjs
+        run: node --test test/bubbles-memory.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-memory-context-budget.test.mjs

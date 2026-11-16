@@ -1,0 +1,34 @@
+name: World Series Quick Ads
+on:
+  push:
+    paths:
+      - 'quick-ads-core.mjs'
+      - 'quick-ads.mjs'
+      - 'quick-ads.css'
+      - 'index.html'
+      - 'test/quick-ads.test.mjs'
+      - '.github/workflows/world-series-quick-ads.yml'
+  pull_request:
+    paths:
+      - 'quick-ads-core.mjs'
+      - 'quick-ads.mjs'
+      - 'quick-ads.css'
+      - 'index.html'
+      - 'test/quick-ads.test.mjs'
+      - '.github/workflows/world-series-quick-ads.yml'
+permissions:
+  contents: read
+jobs:
+  quick-ads:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check ES module syntax
+        run: |
+          node --check quick-ads-core.mjs
+          node --check quick-ads.mjs
+      - name: Run Quick Ads unit and source-integration tests
+        run: node --test test/quick-ads.test.mjs

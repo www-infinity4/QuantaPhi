@@ -1,5 +1,8 @@
 import {browserTool} from '../bubbles-tools/browser.mjs';
 import {processChatGPTJob,completeChatGPTMessage} from './chatgpt-bridge.mjs';
+import {authenticateBridge,runnerMessage} from './runner-bridge.mjs';
+import {serverAssist} from './server-assist.mjs';
+import {signedBrowserCheck,browserCheckPage,CHECK_PATH} from './browser-check.mjs';
 export {BrowserConsentStore} from './consent.mjs';
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const respond=(origin,body,status=200)=>Response.json(body,{status,headers:{
@@ -18,12 +21,31 @@ async function owner(request,env){
 }
 const consentStore=env=>env.CONSENT.get(env.CONSENT.idFromName('single-verified-bubbles-owner-v1'));
 export default {
- async fetch(request,env){
+ async fetch(request,env,ctx){
   const path=new URL(request.url).pathname;
-  if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',
+  if(path===CHECK_PATH&&request.method==='GET')return browserCheckPage();
+  if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',serverConversation:'signed-server-v2',toolsBound:!!env.TOOLS,
    browserBound:!!env.BROWSER,ownerGate:!!env.BRAIN,consentBound:!!env.CONSENT,chatgptBridgeBound:!!env.BRIDGE_DB},
    {headers:{'Cache-Control':'no-store'}});
   const origin=request.headers.get('Origin')||'';
+  if(path==='/v1/browser/chatgpt/runner'){
+   const reply=(value,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'no-store'}});
+   if(origin||request.method!=='POST')return reply({ok:false,error:'server_runner_required'},403);
+   let claims;try{claims=await authenticateBridge(request)}catch{return reply({ok:false,error:'bridge_runner_not_verified'},401)}
+   if(!env.CONSENT||!env.BRIDGE_DB)return reply({ok:false,error:'chatgpt_bridge_bindings_missing'},503);
+   let body;try{const raw=await request.text();if(raw.length>4200)throw Error();body=JSON.parse(raw)}catch{return reply({ok:false,error:'invalid_bridge_request'},400)}
+   try{
+    const result=body.operation==='browser_check'
+     ?await signedBrowserCheck({claims,body,db:env.BRIDGE_DB,store:consentStore(env),env})
+     :['assist','result'].includes(body.operation)
+     ?await serverAssist({claims,body,db:env.BRIDGE_DB,store:consentStore(env),fetcher:(url,options)=>{
+       if(!env.TOOLS?.fetch)throw Error('bubbles_tools_binding_missing');
+       return env.TOOLS.fetch(url,options);
+      }})
+     :await runnerMessage({claims,body,db:env.BRIDGE_DB,store:consentStore(env)});
+    return reply(result,result.ok?200:result.status||403);
+   }catch{return reply({ok:false,error:'bridge_transport_unavailable'},503)}
+  }
   if(!origins.has(origin))return respond('https://quantaphi.org',{ok:false,error:'origin_not_allowed'},403);
   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{
    'Cache-Control':'no-store','Access-Control-Allow-Origin':origin,
@@ -36,6 +58,11 @@ export default {
    let body={};try{const raw=await request.text();if(raw.length>4200)throw Error('large');
     body=JSON.parse(raw||'{}')}catch{return respond(origin,{ok:false,error:'invalid_request'},400)}
    const store=consentStore(env);
+   if(path==='/v1/browser/chatgpt/heartbeat'){
+    if(Object.keys(body).some(key=>key!=='state'))return respond(origin,{ok:false,error:'invalid_consumer_state'},400);
+    const result=await store.consumerHeartbeat(body.state);
+    return respond(origin,result,result.ok?200:result.status||403);
+   }
    if(path==='/v1/browser/chatgpt/permission'){
     if(body.action==='status')return respond(origin,await store.chatgptStatus());
     if(body.action==='enable')return respond(origin,await store.enableChatGPT());
@@ -47,6 +74,8 @@ export default {
     // a ChatGPT grant never silently reactivates an expired browser grant.
     const browserConsent=await store.status();
     if(!browserConsent.enabled)return respond(origin,{ok:false,error:'browser_consent_required'},403);
+    const heartbeat=await store.consumerHeartbeat('ready');
+    if(!heartbeat.ok)return respond(origin,heartbeat,heartbeat.status||403);
     const result=await processChatGPTJob({db:env.BRIDGE_DB,store,request,env,body,browserTool});
     return respond(origin,result,result.ok?200:result.status||403);
    }

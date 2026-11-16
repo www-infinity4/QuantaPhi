@@ -10,17 +10,17 @@ const getJson=async(fetcher,url,options={})=>{
  return JSON.parse(body);
 };
 export function lookupKind(message){
- const s=trim(message,3000);
+ const s=trim(message,3000).replace(/^(?:(?:please|hey bubbles|bubbles)[,:]?\s+)*/i,'').replace(/^(?:can|could|would|will)\s+you\s+/i,'');
  if(/\b(?:build|create|code|implement|repair|fix|develop|design)\b.{0,70}\b(?:weather|forecast)\b.{0,35}\b(?:app|widget|page|site|api)\b/i.test(s))return null;
  if(/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it|what(?:'s| is) it like outside|conditions outside|do i need an umbrella)\b/i.test(s))return 'weather.current';
- if(/^\s*(?:google(?:\s+search|\s+it|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\b/i.test(s)
+ if(/^\s*(?:do\s+(?:a\s+)?(?:quick\s+)?search(?:\s+for)?|google(?:\s+search|\s+it|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\b/i.test(s)
    ||/\b(?:search\s+(?:the\s+)?web|search\s+google|look\s+up\s+online|find\s+(?:it\s+)?online|latest\s+(?:information|updates)|what(?:'s| is)\s+the\s+latest)\b/i.test(s))return 'web.search';
  return null;
 }
 export function searchTerms(utterance){
  return trim(utterance,1200)
-  .replace(/^\s*(?:please\s+|bubbles[,:]?\s+|could you\s+|can you\s+|i want you to\s+|tell me\s+)?/i,'')
-  .replace(/^(?:google(?:\s+search|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\s*/i,'')
+  .replace(/^\s*(?:(?:please|hey bubbles|bubbles)[,:]?\s+)*(?:(?:can|could|would|will) you\s+|i want you to\s+|tell me\s+)?/i,'')
+  .replace(/^(?:do\s+(?:a\s+)?(?:quick\s+)?search(?:\s+for)?|google(?:\s+search|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\s*/i,'')
   .replace(/^\s*(?:for|about)\s+/i,'').replace(/[?.\s]+$/,'').slice(0,350);
 }
 const googleRequested=s=>/\bgoogle\b/i.test(s)&&/\b(?:search|look\s+up|find|google\s+it)\b/i.test(s);
@@ -49,7 +49,17 @@ export async function webSearch(message,env={},fetcher=fetch){
   const url=broker+'?'+new URLSearchParams({q:query,format:'json',categories:'general',safesearch:'1',...(engineOnly?{engines:'google'}:{})});
   // Preserve the binding receiver; public same-zone Worker fetches cannot route here.
   const brokerFetch=typeof env.SEARCH?.fetch==='function'?(input,options)=>env.SEARCH.fetch(input,options):fetcher;
-  const data=await getJson(brokerFetch,url);
+  let data;
+  for(let attempt=0;attempt<2;attempt++){
+   try{data=await getJson(brokerFetch,url);break;}
+   catch(error){
+    // One retry for a temporary bound-service outage. Never retry 403/429,
+    // redirects, malformed data or an untrusted destination. Keep the same
+    // Cloudflare binding receiver and the exact source query.
+    if(attempt>0||!/^upstream_http_(?:502|503|504)$/.test(String(error?.message||'')))throw error;
+    await new Promise(resolve=>setTimeout(resolve,100));
+   }
+  }
   const raw=Array.isArray(data.results)?data.results:[];
   return raw.map(x=>({title:trim(x.title,220),url:safeUrl(x.url),snippet:trim(x.content||x.description,600),
    engine:trim(x.engine||((Array.isArray(x.engines)&&x.engines.includes('google'))?'google':'web'),45)}))
@@ -72,11 +82,69 @@ export function weatherPlace(message,location){
  if(zip)return zip[0];
  let match=s.match(/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b[\s\S]*?\b(?:in|for|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})/i);
  if(!match)match=s.match(/\b(?:in|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})\s+(?:weather|forecast)\b/i);
- const explicit=trim((match?.[1]||'').replace(/\b(?:right now|today|tomorrow|this evening|this afternoon|this morning|please|currently)\b.*$/i,''),110);
- if(explicit)return explicit;
+ // Vosk commonly produces "weather search Albia Iowa", "weather Albia Iowa"
+ // or "search for Albia Iowa weather" instead of "weather in Albia, Iowa".
+ // These are explicit towns, not permission to use a previously saved location.
+ if(!match)match=s.match(/\b(?:weather|forecast)(?:\s+(?:search|lookup|check|report|please)){0,2}\s+([a-z][a-z ,.'-]{2,100})(?:[?!]|$)/i);
+ if(!match)match=s.match(/\b(?:search|check|look up)\s+(?:for\s+)?([a-z][a-z ,.'-]{2,100})\s+(?:weather|forecast)\b/i);
+ const explicit=trim((match?.[1]||'')
+  .replace(/\b(?:right now|today|tomorrow|this evening|this afternoon|this morning|please|currently)\b.*$/i,'')
+  .replace(/\s+(?:weather|forecast)\s*$/i,'')
+  .replace(/[?.!,]+$/g,''),110);
+ const nonPlace=/^(?:weather|forecast|search|search for|lookup|check|report|now|here|outside|there|is|was|will|like|what|how|conditions|in|for|at|near)$/i;
+ if(explicit&&!nonPlace.test(explicit))return explicit;
  if(typeof location==='string'&&trim(location,100))return trim(location,100);
  if(location&&typeof location==='object'&&trim(location.city,80))return trim(location.city+' '+trim(location.state||location.region,60),110);
  return '';
+}
+
+// A comparison is an explicit set of places, never one invented combined city.
+// At most four verified Open-Meteo lookups, with the same bounds as single weather.
+// Normalize state tokens only for grouping expressly named locations;
+// never silently apply a state to an unrelated, unmentioned town.
+const US_STATES=new Set(('alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming|district of columbia|al|ak|az|ar|ca|co|ct|de|fl|ga|hi|id|il|in|ia|ks|ky|la|me|md|ma|mi|mn|ms|mo|mt|ne|nv|nh|nj|nm|ny|nc|nd|oh|ok|or|pa|ri|sc|sd|tn|tx|ut|vt|va|wa|wv|wi|wy|dc').split('|'));
+export function weatherLocations(message){
+ const q=trim(message,550);
+ const match=q.match(/\b(?:weather|forecast|temperatures?)\b[\s\S]*?\b(?:in|for|at|near)\s+(.+)$/i);
+ if(!match)return [];
+ // A follow-up sentence is not part of a place name. Leave abbreviations
+ // such as "St. Louis" alone while removing question and instruction clauses.
+ const phrase=match[1].split(/[?!]|(?:\.\s+)(?=(?:include|tell|show|give|cite|mention|explain|say|please|check)\b)/i)[0];
+ const raw=phrase.replace(/\s+(?:right now|today|tomorrow|currently|this evening|this morning)\b.*$/i,'')
+  .replace(/[\s.]+$/g,'').trim();
+ if(!raw)return [];
+ let parts=raw.split(/\s*;\s*/).map(s=>s.replace(/^and\s+/i,'').trim()).filter(Boolean);
+ if(parts.length===1){
+  const normalized=raw.replace(/\s*,?\s+and\s+/gi,', ');
+  const names=normalized.split(/\s*,\s*/).map(s=>s.trim()).filter(Boolean);
+  const isState=value=>US_STATES.has(String(value||'').toLowerCase());
+  // "Albia, Lovilia, and Ottumwa, Iowa" names one shared state.
+  // "Albia, Iowa, Omaha, Nebraska" names two explicit city/state pairs.
+  if(names.length>=3&&isState(names.at(-1))&&names.slice(0,-1).every(x=>!isState(x)))
+   parts=names.slice(0,-1).map(city=>city+', '+names.at(-1));
+  else if(names.length>=4&&names.length%2===0)
+   parts=Array.from({length:names.length/2},(_,i)=>names[2*i]+', '+names[2*i+1]);
+  else if(/\band\b/i.test(raw))
+   parts=raw.split(/\s*,?\s+and\s+/i).map(x=>x.trim()).filter(Boolean);
+ }
+ if(parts.length<2)return [];
+ const valid=parts.every(p=>/^[a-z][a-z .'-]*(?:,\s*[a-z][a-z .'-]*)?$/i.test(p)&&p.length<=110&&p.length>=3);
+ if(!valid)return [];
+ return [...new Set(parts.map(p=>p.replace(/\s+/g,' ')))];
+}
+
+export async function compareWeather(message,fetcher=fetch){
+ const locations=weatherLocations(message);
+ if(locations.length<2)return null;
+ if(locations.length>4)return {ok:false,needsLocation:true,output:'I can compare up to four named locations at a time. Please choose four or fewer.',locations:[]};
+ const observations=await Promise.all(locations.map(async location=>{
+  const result=await currentWeather(/\btomorrow\b/i.test(message)?'weather tomorrow':'weather now',location,fetcher);
+  return {requested:location,...result};
+ }));
+ const count=observations.filter(x=>x.ok).length;
+ return {ok:count===observations.length,partial:count>0&&count<observations.length,
+  locations:observations,provider:'Open-Meteo',
+  output:observations.map(x=>(x.ok?'✓ ':'Could not verify ')+x.requested+': '+x.output).join('\n\n')};
 }
 
 const descriptions={
@@ -117,6 +185,12 @@ export async function currentWeather(message,location=null,fetcher=fetch){
     +(lower.includes(state)&&state.length>=3?5:0)+(lower.includes(country)&&country.length>=3?2:0);};
   places.sort((a,b)=>score(b)-score(a));
   const target=places[0];
+  // Never silently answer for a different state when speech supplied one.
+  // "Albia Iowa" must not turn into another Albia in another state.
+  const stateName=[...US_STATES].filter(x=>x.length>=3&&
+   (lower.endsWith(', '+x)||lower.endsWith(' '+x))).sort((a,b)=>b.length-a.length)[0];
+  if(stateName&&trim(target.admin1,90).toLowerCase()!==stateName)
+   return {ok:false,needsLocation:true,output:'I could not verify '+place+' in '+stateName+'. Please repeat the town and state; I will not use weather for a different place.'};
   if(!Number.isFinite(target.latitude)||!Number.isFinite(target.longitude))throw Error('coordinates_missing');
   const url='https://api.open-meteo.com/v1/forecast?'+new URLSearchParams({
    latitude:String(target.latitude),longitude:String(target.longitude),

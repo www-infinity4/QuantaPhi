@@ -5,7 +5,7 @@ import {pathToFileURL} from 'node:url';
 
 export const TARGETS=[
   '/', '/explore/', '/bubbles.html', '/video-studio.html',
-  '/about.html', '/learn/', '/learn/ruthenium/', '/learn/atomic-number/'
+  '/about.html', '/privacy.html', '/learn/', '/learn/ruthenium/', '/learn/atomic-number/'
 ];
 const SITE='https://quantaphi.org';
 const meaningful=s=>String(s||'').trim().length>0;

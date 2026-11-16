@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-17T21:24:22.896Z",
+  "scope": "public-live-integration",
+  "ownerCredentialProvided": false,
+  "walletWrites": 0,
+  "verifiedBrainJobReceipts": 0,
+  "checks": [
+    {
+      "name": "worker_health",
+      "result": "pass",
+      "http": 200,
+      "chatAvailable": true,
+      "speechAvailable": true
+    },
+    {
+      "name": "foreign_origin_denied",
+      "result": "pass",
+      "http": 403
+    },
+    {
+      "name": "brain_owner_gate",
+      "result": "pass",
+      "http": 404,
+      "noCredential": true
+    },
+    {
+      "name": "bubbles_page_assets",
+      "result": "pass",
+      "http": 200
+    },
+    {
+      "name": "live_owner_adapter",
+      "result": "pass",
+      "http": 200,
+      "containsJobRouter": true
+    },
+    {
+      "name": "live_gpt_reply",
+      "result": "pass",
+      "http": 200,
+      "model": "@cf/openai/gpt-oss-120b",
+      "answerPreview": "Plan: Add a test in test/bubbles‑brain‑actions.test.cjs that invokes the owner‑only ticket adapter with a mock token and asserts receipt.ticketId is defined. Completed: The existing test suite ran successfully, confirmin",
+      "receiptStatus": "complete"
+    }
+  ],
+  "status": "pass"
+}

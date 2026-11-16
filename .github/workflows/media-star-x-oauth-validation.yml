@@ -1,0 +1,26 @@
+name: Media Star X OAuth and legal pages
+on:
+  pull_request:
+    paths:
+      - 'workers/media-star-following/**'
+      - 'test/media-star-following.test.cjs'
+      - 'following-spaces-radio.js'
+      - 'terms.html'
+      - 'privacy.html'
+      - '.github/workflows/media-star-x-oauth-validation.yml'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check Worker and card JavaScript syntax
+        run: |
+          node --check workers/media-star-following/worker.js
+          node --check following-spaces-radio.js
+      - name: Test Media Star and X OAuth
+        run: node --test test/media-star-following.test.cjs test/fred-catalog.test.cjs test/magoo-spaces.test.cjs

@@ -1,0 +1,16 @@
+#businessDirectoryCard.qbd-card{max-width:800px;margin:16px auto;padding:18px;background:#fff;color:#23272b;border:1px solid #d6dce1;border-radius:18px;font-family:system-ui,-apple-system,Roboto,sans-serif;line-height:1.45}
+.qbd-kicker{font-size:11px;font-weight:800;letter-spacing:.1em;color:#63717d}
+.qbd-title{font-size:21px!important;line-height:1.3;margin:5px 0!important}
+.qbd-intro,.qbd-status{font-size:14px;color:#4a545e;margin:8px 0 14px}
+.qbd-form{display:flex;gap:8px;flex-wrap:wrap}
+.qbd-form .qbd-input{min-width:0;flex:1 1 140px;padding:11px;font-size:14px;border-radius:11px;border:1px solid #bcc6cf;background:#fff;color:#222}
+.qbd-form .qbd-input:last-of-type{flex:3 1 230px}
+#businessDirectoryCard .qbd-button{border:1px solid #bcc6cf;border-radius:11px;padding:10px 13px;background:#fff;color:#29435b;font-size:14px;font-weight:700;min-height:42px;cursor:pointer}
+#businessDirectoryCard .qbd-button:disabled{opacity:.5}
+.qbd-listing{margin-top:14px;padding:12px;border:1px solid #e2e5e8;border-radius:14px}
+.qbd-listing[hidden],.qbd-nav[hidden],.qbd-image[hidden]{display:none!important}
+.qbd-image{width:100%;max-height:310px;aspect-ratio:16/10;object-fit:contain;background:#f4f5f6;border-radius:11px}
+.qbd-name{font-size:18px!important;margin:6px 0!important}.qbd-place,.qbd-source{font-size:13px;margin:6px 0;color:#48545f}
+.qbd-visit{font-weight:700;color:#1d547b}
+.qbd-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:10px}.qbd-count{font-size:12px;color:#536273}
+@media(max-width:460px){#businessDirectoryCard.qbd-card{padding:14px}}

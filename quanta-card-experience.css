@@ -1,0 +1,326 @@
+/* Oracle Octaves editorial identity: functional, readable, no emoji placeholder tiles. */
+.qcx-art{--qcx-a:#532f31;--qcx-b:#e8d2c4;position:relative;isolation:isolate;min-height:170px;border-radius:17px;overflow:hidden;padding:15px;color:#fff;background:linear-gradient(145deg,var(--qcx-a),#1f1923 90%);display:flex;flex-direction:column;justify-content:space-between;gap:12px;border:1px solid #ffffff2e}
+.qcx-art:before{content:"";position:absolute;inset:-90px -50px auto auto;width:245px;height:245px;border:1px solid #ffffff48;border-radius:50%;box-shadow:0 0 0 25px #ffffff10,0 0 0 54px #ffffff0b,0 0 0 83px #ffffff09;z-index:-1;transform:translate(12%,8%)}
+.qcx-art:after{content:"";position:absolute;inset:auto 0 0;height:45%;background:linear-gradient(0deg,#0006,transparent);pointer-events:none;z-index:-1}
+.qcx-art[data-theme="radio"]{--qcx-a:#6b4d35;background:linear-gradient(130deg,#543c30,#17151b)}
+.qcx-art[data-theme="news"]{--qcx-a:#882d2b;background:linear-gradient(130deg,#a63a34,#352126)}
+.qcx-art[data-theme="video"]{--qcx-a:#3a325f;background:linear-gradient(130deg,#5c3048,#221d36)}
+.qcx-art[data-theme="music"]{--qcx-a:#603b65;background:linear-gradient(125deg,#793c59,#292039)}
+.qcx-art[data-theme="social"]{--qcx-a:#305361;background:linear-gradient(125deg,#30566a,#181e31)}
+.qcx-art[data-theme="coin"]{--qcx-a:#806335;background:linear-gradient(125deg,#856b42,#312822)}
+.qcx-art[data-theme="market"]{--qcx-a:#4a5940;background:linear-gradient(125deg,#506a4e,#242629)}
+.qcx-art[data-theme="finance"]{--qcx-a:#285a53;background:linear-gradient(125deg,#265c55,#232b35)}
+.qcx-art[data-theme="research"]{--qcx-a:#5d3952;background:linear-gradient(125deg,#6a4858,#292438)}
+.qcx-art-kicker{font:750 10px/1.35 system-ui,sans-serif;letter-spacing:.14em;opacity:.92;text-wrap:balance}
+.qcx-art-mark{font:400 clamp(3.8rem,10vw,5.4rem)/.85 Georgia,'Times New Roman',serif;letter-spacing:-.075em;text-shadow:0 4px 24px #0002}
+.qcx-site-icon{position:absolute;right:15px;top:44px;width:64px;height:64px;object-fit:contain;background:#fff;border-radius:15px;border:1px solid #ffffffbc;padding:9px;box-shadow:0 4px 16px #0005;z-index:1}
+.qcx-art.qcx-small .qcx-site-icon{right:10px;top:30px;width:42px;height:42px;padding:5px;border-radius:10px}
+.qcx-art-name{font:700 clamp(14px,2.5vw,17px)/1.3 system-ui,sans-serif;max-width:94%;text-wrap:balance}
+.qcx-art.qcx-small{min-height:112px;padding:11px 12px;border-radius:12px;gap:7px}.qcx-small .qcx-art-kicker{font-size:8px;letter-spacing:.1em}
+.qcx-small .qcx-art-mark{font-size:2.4rem}.qcx-small .qcx-art-name{font-size:12px}
+.qcx-experience{display:grid;gap:13px;margin:12px 0 22px}
+.qcx-experience *{box-sizing:border-box}.qcx-eyebrow{font-size:11px!important;letter-spacing:.1em;text-transform:uppercase;font-weight:850;color:#a2342c}
+.qcx-tool{background:linear-gradient(145deg,#fffdfb,#f7f2ec);border:1px solid #e3d6c9;padding:clamp(14px,3vw,21px);border-radius:16px;display:grid;gap:11px}
+.qcx-tool h3{font-size:clamp(17px,3vw,21px)!important;line-height:1.25;margin:0;color:#302723}
+.qcx-tool p{margin:0;line-height:1.5}.qcx-note{color:#645951;font-size:13px}
+.qcx-search-form{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.qcx-input{font:inherit;min-width:0;flex:1 1 175px;padding:12px 13px;border:1px solid #ad9d92;border-radius:12px;background:white;color:#211c1a}
+textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
+.qcx-button{font:800 14px/1.3 system-ui,sans-serif;min-height:46px;border:0;border-radius:12px;padding:10px 15px;background:#a7352e;color:white!important;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.qcx-button:disabled{opacity:.55;cursor:not-allowed}.qcx-button:hover{filter:brightness(.91)}
+.qcx-link{color:#852d29;font:750 13px/1.4 system-ui,sans-serif;display:inline-flex;align-items:center;min-height:40px}
+.qcx-player{width:100%;min-height:15px}.qcx-video{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:11px;background:#14121b}
+.qcx-audio{max-width:100%;width:100%}.qcx-controls{display:flex;flex-wrap:wrap;gap:9px}
+.qcx-results,.qcx-wiki-results{display:grid;gap:11px}.qcx-result{display:flex;align-items:start;gap:13px;background:#fff;border:1px solid #e6dcd2;border-radius:12px;padding:12px}
+.qcx-result h4{margin:0 0 6px;font-size:16px}.qcx-result p{font-size:13px;color:#584e47;line-height:1.5}
+.qcx-thumb{width:90px;height:84px;object-fit:cover;border-radius:9px;flex-shrink:0}
+.qcx-math{display:flex;flex-direction:column;gap:9px}.qcx-total{font-size:1.3rem;font-weight:800;font-variant-numeric:tabular-nums}
+.qcx-check{display:flex;align-items:flex-start;gap:9px;font-size:14px;line-height:1.5;cursor:pointer}.qcx-check input{margin-top:4px;accent-color:#a9352e;min-width:18px;min-height:18px;flex:none}
+.qcx-experience :is(a,button,input,textarea):focus-visible{outline:3px solid #bf8036;outline-offset:3px}
+.qf-feature:has(.qcx-art){grid-template-columns:minmax(145px,30%) 1fr;align-items:start}
+.qf-tile:has(.qcx-small){grid-template-rows:auto auto auto 1fr auto}
+.qf-tile .qcx-small{width:100%}
+@media(max-width:560px){.qf-feature:has(.qcx-art){grid-template-columns:1fr}.qcx-art:not(.qcx-small){min-height:155px}.qcx-art-mark{font-size:4.2rem}.qcx-result{flex-direction:column}.qcx-thumb{width:100%;height:140px}.qcx-search-form .qcx-button{width:100%}}
+
+.qcx-trends{display:grid;grid-template-columns:1fr;gap:8px}
+.qcx-trend{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid #e6dbd1;border-radius:12px;padding:10px 12px}
+.qcx-trend>div{display:grid;gap:5px;min-width:0}.qcx-trend strong{font-size:14px;color:#2a2321;overflow-wrap:anywhere}
+.qcx-trend small{font-size:11px;color:#75665e}.qcx-trend .qcx-button{font-size:12px;min-height:40px}
+@media(max-width:420px){.qcx-trend{flex-wrap:wrap}.qcx-trend .qcx-button{width:100%}}
+
+/* The compact source tiles must keep their actual search/player controls visible. */
+.iqc-home-shelf .iqc-inline-tools{width:100%;min-width:0;margin-top:4px}
+.iqc-home-shelf .iqc-inline-tools .qcx-experience{margin:0}
+.iqc-home-shelf .iqc-inline-tools .qcx-tool{padding:12px;gap:8px}
+.iqc-home-shelf .iqc-inline-tools .qcx-tool h3{font-size:16px!important}
+.iqc-home-shelf .iqc-inline-tools .qcx-button{min-height:46px}
+.iqc-home-shelf .iqc-inline-tools .qcx-input{font-size:16px;min-width:0;width:100%}
+.iqc-home-shelf .iqc-inline-tools .qcx-player iframe{max-width:100%}
+.iqc-home-shelf .iqc-card{min-width:0}
+.qf-tile .qf-inline-tool{min-width:0;margin:0}
+.qf-tile .qf-inline-tool .qcx-tool{padding:11px;gap:7px}
+.qf-tile .qf-inline-tool .qcx-tool h3{font-size:15px!important}
+.qf-tile .qf-inline-tool .qcx-button{min-height:44px}
+
+/* Distinct original-brand experiences inside the ONE Oracle direction viewer. */
+#quantaDiscoveryFeed[hidden],#siteQuickCards[hidden],#scienceQuickCards[hidden]{display:none!important}
+.oracle-card-deck-stage>article.iqc-card{padding:12px;border-radius:17px;background:#fff;border:1px solid #e2dce0;display:grid;gap:11px;min-width:0}
+.oracle-card-deck-stage>article.iqc-card .iqc-kind{color:#9d4338;font:800 11px system-ui;letter-spacing:.09em;text-transform:uppercase}
+.oracle-card-deck-stage>article.iqc-card>h3{font-size:20px;line-height:1.2;color:#23232a;margin:0}
+.oracle-card-deck-stage>article.iqc-card .iqc-inline-tools{min-width:0}
+.oracle-card-deck-stage>article.iqc-card .qcx-experience{margin:0}
+.oracle-card-deck-stage>article.iqc-card .iqc-actions{display:flex;flex-wrap:wrap;margin:4px 0}
+.oracle-card-deck-stage>article.iqc-card .iqc-actions a{color:#8d2c25;font-weight:750;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.oracle-card-deck-stage>article.iqc-card .qcx-art.qcx-small{min-height:170px;padding:14px}
+.qcx-art[data-brand]{background:#fbfcff;color:#222;border:1px solid #e6e8ee;box-shadow:inset 0 0 0 1px #fff}
+.qcx-art[data-brand]:before,.qcx-art[data-brand]:after{display:none}
+.qcx-art[data-brand] .qcx-brand-hero{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;text-align:center;min-width:0;flex:1;padding:6px}
+.qcx-art[data-brand] .qcx-brand-icon{width:60px;height:60px;object-fit:contain}
+.qcx-art[data-brand] .qcx-brand-title{font-size:clamp(26px,6vw,40px);font-weight:800;letter-spacing:-.045em;line-height:1.1;overflow-wrap:anywhere}
+.qcx-art[data-brand] .qcx-brand-caption{font-size:12px;color:#656874;text-align:center;line-height:1.35}
+.qcx-art[data-brand="google"]{background:#fff;min-height:165px;justify-content:center;align-items:center;gap:4px}
+.qcx-google-wordmark{display:block;width:min(225px,80%);height:auto;object-fit:contain;max-height:84px}
+.qcx-google-backup{font:bold 45px system-ui;letter-spacing:-.08em;color:#4285f4}
+.qcx-art[data-brand="google"] .qcx-brand-caption{font-size:12px;color:#64666c}
+.qcx-art[data-brand="bing"]{background:linear-gradient(145deg,#eefaf9,#ffffff)}
+.qcx-art[data-brand="bing"] .qcx-brand-title{color:#008676}
+.qcx-art[data-brand="youtube"]{background:#fff7f7}
+.qcx-art[data-brand="youtube"] .qcx-brand-title{color:#e02221}
+.qcx-art[data-brand="facebook"]{background:#f2f6ff}
+.qcx-art[data-brand="facebook"] .qcx-brand-title{color:#0866ff}
+.qcx-art[data-brand="instagram"]{background:linear-gradient(120deg,#fff8fb,#f9f1ff)}
+.qcx-art[data-brand="instagram"] .qcx-brand-title{color:#af267b}
+.qcx-art[data-brand="reddit"]{background:#fff6ee}
+.qcx-art[data-brand="reddit"] .qcx-brand-title{color:#ed4400}
+.qcx-art[data-brand="x"],.qcx-art[data-brand="tiktok"]{background:#15181d;color:#fff}
+.qcx-art[data-brand="x"] .qcx-brand-title,.qcx-art[data-brand="tiktok"] .qcx-brand-title{color:#fff}
+.qcx-art[data-brand="x"] .qcx-brand-caption,.qcx-art[data-brand="tiktok"] .qcx-brand-caption{color:#bec5cb}
+.qcx-art[data-brand="whatsapp"]{background:#effbf4}
+.qcx-art[data-brand="whatsapp"] .qcx-brand-title{color:#13894d}
+.qcx-art[data-brand="cnn"]{background:#fff5f3}
+.qcx-art[data-brand="cnn"] .qcx-brand-title{color:#be1915}
+.qcx-art[data-brand="fox-news"]{background:#f3f7fe}
+.qcx-art[data-brand="fox-news"] .qcx-brand-title{color:#244779}
+.qcx-art[data-brand="chatgpt"]{background:#f3f7f6}
+.qcx-art[data-brand="chatgpt"] .qcx-brand-title{color:#256452}
+.qcx-art[data-brand="yahoo-news"]{background:#f7f2ff}
+.qcx-art[data-brand="yahoo-news"] .qcx-brand-title{color:#6329a4}
+.qcx-art[data-brand="starmaker"]{background:linear-gradient(145deg,#fff5fb,#f4f4ff)}
+.qcx-art[data-brand="starmaker"] .qcx-brand-title{color:#71349b}
+.qcx-native-search{display:flex;flex-wrap:nowrap;gap:8px;align-items:stretch}
+.qcx-native-search .qcx-input{border-radius:28px;box-shadow:0 2px 12px #27385214;border:1px solid #cbd0d8;padding:14px 17px;min-width:0}
+.qcx-native-search .qcx-button{border-radius:28px;min-width:94px}
+.qcx-art[data-brand="google"]+.iqc-kind{margin:0}
+@media(max-width:480px){.oracle-card-deck-stage>article.iqc-card{padding:10px}.qcx-native-search{flex-wrap:wrap}.qcx-native-search .qcx-input{width:100%;flex-basis:100%}.qcx-native-search .qcx-button{width:100%}}
+
+/* One readable card, with controls constrained to the actual phone viewport. */
+.oracle-card-deck-stage,.oracle-card-deck-stage>*{min-width:0;max-width:100%}
+.oracle-card-deck-stage .iqc-card,.oracle-card-deck-stage .qcx-tool{overflow-wrap:anywhere}
+.oracle-card-deck-stage .qcx-experience,.oracle-card-deck-stage .qcx-tool,.oracle-card-deck-stage .qcx-search-form{min-width:0;max-width:100%}
+.oracle-card-deck-stage .qcx-input{width:100%;max-width:100%}
+.oracle-card-deck-stage .qcx-tool{background:#fff;border:0;padding:8px 0}
+.oracle-card-deck-stage .qcx-tool>.qcx-eyebrow,.oracle-card-deck-stage .qcx-tool>h3{display:none}
+.q-install-details{margin:0 0 14px;border:1px solid #e3d8d0;border-radius:14px;background:#fff;padding:12px 15px;color:#554842}
+.q-install-details summary{cursor:pointer;font-size:14px;font-weight:750;min-height:28px;align-content:center}
+.q-install-details nav{display:grid;gap:7px;padding:12px 0}
+.q-install-details a{min-height:40px;display:flex;align-items:center;color:#8e302a;font-size:14px;overflow-wrap:anywhere}
+.q-install-details p{font-size:12px;line-height:1.5;color:#9b2433;margin:8px 0}
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app>#quantaDirectoryCards{display:none!important}
+.oracle-card-deck-stage .iqc-inline-tools>.qcx-eyebrow{display:none}
+
+
+/* Shared QuantaPhi card controls — visible on desktop and on the original single-card mobile viewer. */
+.qca-toolbar{width:100%;min-width:0;max-width:100%;box-sizing:border-box;display:grid;gap:10px;padding:12px;border:1px solid #e4d8cf;border-radius:16px;background:#fffdfb;color:#322724;font:inherit}
+.qca-controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.qca-button{appearance:none;display:inline-flex;justify-content:center;align-items:center;min-width:0;min-height:44px;border-radius:10px;border:1px solid #d8bcb6;background:#fff;color:#852d28;font:800 12px/1.25 system-ui,sans-serif;cursor:pointer;padding:8px 6px;text-align:center;overflow-wrap:anywhere}
+.qca-button[aria-pressed="true"]{background:#fff1d5;border-color:#b98724;color:#5f3800}
+.qca-button:focus-visible,.qca-search-input:focus-visible{outline:3px solid #c47936;outline-offset:2px}
+.qca-button:hover{background:#fff0ed}.qca-search{display:flex;gap:8px;min-width:0}
+.qca-search-input{flex:1;min-width:0;border-radius:10px;border:1px solid #baada5;padding:10px 12px;font-size:16px;color:#241e1c;background:white}
+.qca-search-submit{flex:none;min-width:110px;background:#a7352e;border-color:#a7352e;color:#fff}
+.qca-search-submit:hover{background:#872a25}
+.qca-status{font:500 12px/1.4 system-ui,sans-serif;color:#69594f;margin:0;min-height:1em}
+.qca-copy{width:100%;font-size:13px}
+.oracle-card-actions{width:100%;min-width:0;margin-top:12px}
+.qcx-x-embed{width:100%;min-height:155px;min-width:0;overflow:hidden}
+.qcx-x-embed .twitter-tweet,.qcx-x-embed iframe{max-width:100%!important;margin-inline:auto}
+.qcx-fox-one{background:radial-gradient(ellipse at 78% 3%,#b9d9f5 0,transparent 45%),linear-gradient(135deg,#06152d,#09366b)!important;color:white!important;min-height:200px!important;justify-content:center!important;align-items:center!important;text-align:center}
+.qcx-art[data-brand="fox-one"]:before,.qcx-art[data-brand="fox-one"]:after,.qcx-art[data-brand="fox-one-live-news"]:before,.qcx-art[data-brand="fox-one-live-news"]:after{display:none}
+.qcx-art[data-brand="fox-one-live-news"]{background:radial-gradient(ellipse at 78% 5%,#823546 0,transparent 43%),linear-gradient(125deg,#07172a,#17406b 72%,#5d162c)!important}
+.qcx-fox-one-kicker{font:900 12px/1.4 system-ui,sans-serif;letter-spacing:.2em;color:#c7e3ff}
+.qcx-fox-one-brand{font:950 clamp(2.9rem,10vw,4.3rem)/1.03 system-ui,sans-serif;letter-spacing:-.065em;text-shadow:0 3px 8px #0007}
+.qcx-fox-one .qcx-brand-caption{color:#e5f2ff!important;font-size:14px!important}
+@media(max-width:570px){.qca-controls{grid-template-columns:repeat(3,minmax(0,1fr))}.qca-search{flex-wrap:wrap}.qca-search-input,.qca-search-submit{width:100%;flex:1 1 100%}.qca-button{font-size:12px}.qcx-fox-one{min-height:165px!important}}
+
+.qcx-fox-one-logo{display:block;width:min(300px,88%);height:auto;max-height:120px;object-fit:contain;filter:invert(1);margin:12px auto 0}
+.qcx-fox-one-brand[hidden]{display:none!important}
+
+/* Provider actions use the same Oracle Octaves appearance as every Quick Card. */
+.qca-controls>a.qca-button{text-decoration:none;line-height:1.3}
+.qca-controls>.qca-signin{background:#a52c27;color:#fff;border-color:#a52c27;grid-column:span 2}
+.qca-controls>.qca-signin:hover{background:#80231f;color:#fff}
+.qca-controls>.qca-connect{background:#fff8f2;border-color:#c58c67}
+@media(max-width:570px){.qca-controls>.qca-signin{grid-column:span 2}}
+
+/* Genuine public-source result rows: compact, readable, no nested scroll panels. */
+.qcx-source-live:empty{display:none}
+.qcx-source-live{display:grid;gap:8px;min-width:0;max-width:100%}
+.qcx-source-status{margin:0;color:#66574d;font:650 12px/1.45 system-ui,sans-serif}
+.qcx-source-list{display:grid;gap:7px;min-width:0}
+.qcx-source-item{border:1px solid #e6d9cd;background:#fff;border-radius:12px;padding:10px 12px;display:grid;gap:3px;min-width:0}
+.qcx-source-item a{color:#852d29;font:800 14px/1.35 system-ui,sans-serif;overflow-wrap:anywhere;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+.qcx-source-item small{color:#526a50;font:650 11px/1.3 system-ui,sans-serif}
+.qcx-source-item p{font:450 12px/1.45 system-ui,sans-serif;color:#554943;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.qcx-source-item :focus-visible{outline:3px solid #ba672b;outline-offset:3px}
+@media(max-width:480px){.qcx-source-item{padding:9px 10px}.qcx-source-item a{font-size:13px}}
+
+/* AI consultation tools reuse the Oracle Octaves warm/white quick-card surface. */
+.iqc-ask-ai{margin:10px 0 0;padding:10px;background:#fff;border:1px solid #e4d8cf;border-radius:14px;color:#362b26}
+.iqc-ai-form{display:grid;gap:8px;margin:0}
+.iqc-ai-input{box-sizing:border-box;width:100%;max-width:100%;min-height:70px;resize:vertical;border:1px solid #c8b8ac;border-radius:12px;padding:10px;font:inherit;background:#fff;color:#2a2420}
+.iqc-ai-send{font:inherit;font-weight:750;background:#9f2626;color:#fff;border:0;border-radius:12px;min-height:44px;padding:10px 14px;cursor:pointer}
+.iqc-ai-send:disabled{opacity:.65;cursor:wait}
+.iqc-ai-receipt{margin:0;font-size:13px;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere;color:#544840}
+.iqc-ai-input:focus-visible,.iqc-ai-send:focus-visible{outline:3px solid #70469c;outline-offset:2px}
+
+/* Original-site reads remain inside their card, with accessible mobile controls. */
+.qca-website-reader{margin:10px 0;border:1px solid #cbd8e2;border-radius:14px;background:#fff;color:#22384b;padding:10px;min-width:0}
+.qca-website-reader summary{min-height:44px;display:list-item;cursor:pointer;font:700 14px/1.5 system-ui;padding:10px;box-sizing:border-box}
+.qca-website-reader .qca-controls{margin-top:8px}
+.qca-website-results{min-width:0;max-height:360px;overflow:auto;overscroll-behavior:contain;overflow-wrap:anywhere}
+.qca-website-result{border-top:1px solid #dde5eb;padding:12px 0;font:400 14px/1.55 system-ui}
+.qca-website-text{white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0;color:#243b50}
+.qca-website-receipt{display:block;margin:8px 0;color:#50667a;overflow-wrap:anywhere}
+.qca-website-reader :is(button,a):focus-visible{outline:3px solid #0070ba;outline-offset:2px}
+.qca-website-reader .qca-button{min-height:44px;white-space:normal}
+
+/* Shared Quick Card controls use neutral outlines, never rainbow action colors.
+ * Pressed state remains accessible by text, aria-pressed, and a light gray surface. */
+.qca-toolbar .qca-controls>.qca-button{box-sizing:border-box;min-height:48px;border:1px solid #c9c9c9!important;border-radius:12px;padding:10px 7px;background:#fff!important;color:#252525!important;box-shadow:none!important;font:800 13px/1.3 system-ui,sans-serif;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.qca-toolbar .qca-controls>.qca-button[aria-pressed="true"]{background:#eee!important;border-color:#858585!important;color:#171717!important}
+.qca-toolbar .qca-controls>.qca-button:hover{background:#f5f5f5!important;filter:none}
+.qca-toolbar .qca-controls>.qca-button:focus-visible{outline:3px solid #333;outline-offset:3px}
+@media(max-width:380px){.qca-toolbar .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Matching neutral search and browse buttons on the source-first card experience. */
+.oracle-card-deck-stage :is(.qcx-button,.qcs-open,.qcs-nav button){background:#fff!important;color:#252525!important;border:1px solid #c9c9c9!important;box-shadow:none!important}
+.oracle-card-deck-stage :is(.qcx-button,.qcs-open,.qcs-nav button):hover{background:#f5f5f5!important}
+
+/* The original player stays primary; additional video search stays collapsed. */
+.qcx-discover-details{box-sizing:border-box;margin:12px 0;border:1px solid #c4d9e5;border-radius:14px;background:#f4faff;min-width:0;color:#244760}
+.qcx-discover-details summary{box-sizing:border-box;cursor:pointer;display:list-item;min-height:48px;padding:13px 15px;font:800 14px/1.4 system-ui,sans-serif}
+.qcx-discover-details[open]{background:#fff}
+.qcx-discover-details>.qcx-tool{margin:0 10px 12px;padding:12px;border-radius:12px}
+.qcx-discover-details :is(button,input,summary):focus-visible{outline:3px solid #1485bc;outline-offset:2px}
+
+
+/* Verified-X-provider-only in-card draft. Neutral Infinity controls; X owns sign-in and publish. */
+.qca-x-composer{min-width:0;display:grid;gap:8px;padding:12px;border:1px solid #d4d6d9;border-radius:14px;background:#fff;color:#252525}
+.qca-x-heading{font:750 15px/1.3 system-ui,sans-serif;margin:0}
+.qca-x-note{font:500 12px/1.45 system-ui,sans-serif;color:#535a62;margin:0}
+.qca-x-label{display:grid;gap:6px;min-width:0;font:650 12px/1.4 system-ui,sans-serif;color:#343a40}
+.qca-x-text{box-sizing:border-box;width:100%;max-width:100%;min-height:88px;resize:vertical;padding:11px;border:1px solid #bcc2c8;border-radius:12px;background:white;color:#222;font:500 16px/1.45 system-ui,sans-serif}
+.qca-x-text:focus-visible,.qca-x-review:focus-visible{outline:3px solid #316ea6;outline-offset:2px}
+.qca-x-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;min-width:0}
+.qca-x-count{font:650 12px/1.4 system-ui,sans-serif;color:#4c535a}
+.qca-x-review{box-sizing:border-box;min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border:1px solid #a7adb3;border-radius:11px;background:#f5f5f5!important;color:#252525!important;font:750 13px/1.3 system-ui,sans-serif;text-decoration:none!important}
+.qca-x-review[aria-disabled="true"]{color:#6e7378!important;opacity:.65;pointer-events:none}
+@media(max-width:420px){.qca-x-footer{align-items:stretch}.qca-x-review{flex:1 1 100%}}
+
+
+/* Integra's real, public, source-linked X tour; compact neutral Infinity controls. */
+.qcx-integra-tour{box-sizing:border-box;display:grid;gap:10px;min-width:0;max-width:100%;padding:13px;border:1px solid #d3d5d7;border-radius:16px;background:#fff;color:#24272a}
+.qcx-integra-heading{font:800 clamp(16px,3.7vw,19px)/1.25 system-ui,sans-serif;margin:0}
+.qcx-integra-note,.qcx-integra-foot{color:#58616b;font:500 12px/1.5 system-ui,sans-serif;margin:0}
+.qcx-integra-choose,.qcx-integra-label{display:grid;gap:6px;min-width:0}
+.qcx-integra-label{font:700 12px/1.4 system-ui,sans-serif;color:#35404a}
+.qcx-integra-select{box-sizing:border-box;width:100%;min-width:0;min-height:46px;border:1px solid #b9c1c9;border-radius:12px;background:#fff;color:#21262d;padding:8px 11px;font:650 14px/1.3 system-ui,sans-serif}
+.qcx-integra-step{display:grid;gap:8px;min-width:0;padding:11px;border:1px solid #e1e4e7;border-radius:14px;background:#fafafa}
+.qcx-integra-position{font:750 11px/1.35 system-ui,sans-serif;color:#58636c;letter-spacing:.035em;margin:0}
+.qcx-integra-title{font:750 16px/1.3 system-ui,sans-serif;color:#252525;margin:0}
+.qcx-integra-body{font:450 13px/1.55 system-ui,sans-serif;color:#363b41;margin:0;overflow-wrap:anywhere}
+.qcx-integra-source{display:inline-flex;align-items:center;min-height:44px;width:fit-content;max-width:100%;font:700 13px/1.35 system-ui,sans-serif;color:#12527b!important;text-decoration:underline!important;overflow-wrap:anywhere}
+.qcx-integra-nav{display:flex;gap:8px}
+.qcx-integra-button{box-sizing:border-box;min-width:0;flex:1;min-height:44px;border:1px solid #c7c9cc!important;border-radius:11px;background:white!important;color:#242424!important;font:750 13px/1.3 system-ui,sans-serif;cursor:pointer}
+.qcx-integra-button:disabled{opacity:.52;cursor:default}
+.qcx-integra-select:focus-visible,.qcx-integra-button:focus-visible,.qcx-integra-source:focus-visible{outline:3px solid #4d809d;outline-offset:2px}
+.qcx-integra-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:420px){.qcx-integra-tour{padding:10px}.qcx-integra-step{padding:9px}}
+
+
+/* Integra user-owned automation selection: no unconnected buttons or paid browser calls. */
+.qcx-integra-business{box-sizing:border-box;width:100%;min-width:0;padding:11px 13px;border:1px solid #d2d5d9;border-radius:14px;background:#fff;color:#24282c}
+.qcx-integra-business>summary{min-height:44px;cursor:pointer;display:list-item;padding:10px 3px;font:750 14px/1.4 system-ui,sans-serif;color:#26292c}
+.qcx-integra-business-note,.qcx-integra-business-result p{font:450 13px/1.55 system-ui,sans-serif;color:#384148;overflow-wrap:anywhere;margin:8px 0}
+.qcx-integra-business-label{display:grid;gap:6px;margin:8px 0;font:700 12px/1.4 system-ui,sans-serif;color:#3d454c}
+.qcx-integra-business-select{box-sizing:border-box;min-height:46px;width:100%;min-width:0;padding:8px 10px;border:1px solid #adb5bd;border-radius:11px;background:#fff;color:#24282c;font:500 15px/1.3 system-ui,sans-serif}
+.qcx-integra-business-select:focus-visible,.qcx-integra-business>summary:focus-visible{outline:3px solid #27668c;outline-offset:2px}
+.qcx-integra-business-result{min-width:0;padding:10px;background:#fafafa;border:1px solid #e1e3e5;border-radius:10px}
+.qcx-integra-business-warning{font-weight:700!important;color:#4d5359!important}
+
+/* One source-verified seller carousel inside the existing eBay/vintage cards. */
+.qcm-panel{display:grid;gap:12px;padding:clamp(12px,3vw,20px);background:#fff;border:1px solid #dedbd7;border-radius:17px;min-width:0;max-width:100%;overflow:hidden;color:#24282d}
+.qcm-panel *{box-sizing:border-box;min-width:0}
+.qcm-panel h3{font:750 clamp(18px,3vw,22px)/1.25 system-ui,sans-serif!important;margin:0;color:#202a31!important}
+.qcm-intro,.qcm-status,.qcm-empty{font:400 13px/1.5 system-ui,sans-serif;color:#555f65;margin:0}
+.qcm-form{display:flex;flex-wrap:wrap;gap:8px}
+.qcm-query{flex:1 1 170px;width:100%;min-height:48px;padding:11px 13px;border:1px solid #8e979e;border-radius:10px;background:#fff;color:#1f2730;font:500 15px/1.3 system-ui,sans-serif}
+.qcm-search{min-height:48px;padding:10px 18px;background:#2566a4;border:1px solid #205789;border-radius:10px;color:white!important;font:750 14px/1.4 system-ui,sans-serif;cursor:pointer}
+.qcm-search:disabled{opacity:.65;cursor:wait}
+.qcm-filters{display:flex;flex-wrap:wrap;gap:6px}
+.qcm-filter,.qcm-step{min-height:44px;padding:9px 12px;background:#f6f7f8;color:#2a3540;border:1px solid #cfd4d8;border-radius:10px;cursor:pointer;font:700 13px/1.3 system-ui,sans-serif}
+.qcm-filter[aria-pressed="true"]{background:#e8edf0;color:#152f40;border-color:#6d879b}
+.qcm-filter:focus-visible,.qcm-step:focus-visible,.qcm-open:focus-visible,.qcm-source-link:focus-visible,.qcm-query:focus-visible,.qcm-search:focus-visible{outline:3px solid #d18d27;outline-offset:2px}
+.qcm-viewer{min-height:150px;min-width:0}
+.qcm-listing{padding:16px;display:grid;gap:10px;background:#fcfcfb;border:1px solid #d9dfe3;border-radius:14px;min-width:0;overflow-wrap:anywhere}
+.qcm-seller{font:800 12px/1.4 system-ui,sans-serif;color:#50606a;margin:0}
+.qcm-title{font:750 clamp(17px,3vw,21px)/1.35 system-ui,sans-serif!important;color:#1c2833!important;margin:0}
+.qcm-description{font:400 14px/1.5 system-ui,sans-serif;color:#39444b;margin:0;overflow-wrap:anywhere}
+.qcm-open{padding:11px 13px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;width:fit-content;max-width:100%;background:#f1f4f6;border:1px solid #c8d0d7;border-radius:10px;color:#1c4d75;font:750 13px/1.3 system-ui,sans-serif;text-decoration:none;overflow-wrap:anywhere}
+.qcm-fact{font:400 12px/1.5 system-ui,sans-serif;color:#5f6971}
+.qcm-nav{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.qcm-step:disabled{opacity:.45;cursor:default}
+.qcm-count{font:750 13px/1.3 system-ui,sans-serif;color:#37464e;text-align:center}
+.qcm-links{display:flex;flex-wrap:wrap;gap:6px}
+.qcm-source-link{font:700 12px/1.4 system-ui,sans-serif;color:#23547a;text-decoration:underline;padding:7px 3px;overflow-wrap:anywhere}
+@media(max-width:380px){.qcm-form .qcm-search{flex:1 1 100%}.qcm-filter{flex:1 0 auto}.qcm-step{padding:9px 11px}.qcm-panel{padding:12px}}
+
+.qcx-ebay-direct{min-width:0;max-width:100%;border:1px solid #d9dfe4;border-radius:12px;background:#fff;overflow:hidden}
+.qcx-ebay-direct>summary{list-style:revert;cursor:pointer;min-height:46px;display:list-item;margin:0 13px;padding:12px 4px;color:#273f50;font:750 13px/1.45 system-ui,sans-serif}
+.qcx-ebay-direct[open]{padding-bottom:10px}
+.qcx-ebay-direct .qcx-tool{margin:0 10px}
+
+
+/* Google-authenticated Gemini operates in the original Octaves source card. */
+.iqc-gemini{display:grid;gap:10px;min-width:0}
+.iqc-gemini-connect{min-height:44px;width:100%;border:1px solid #b9aba5;border-radius:12px;background:#f4f1ef;color:#302b2b;padding:10px 14px;font:700 15px/1.4 system-ui;cursor:pointer}
+.iqc-gemini-connect:disabled{opacity:.58}
+.iqc-gemini-account{min-height:44px;min-width:0;max-width:100%;width:100%;padding:10px;border:1px solid #c8b8ac;border-radius:10px;background:#fff;color:#29252b;font:inherit}
+.iqc-gemini .iqc-ai-send{min-height:44px;border:1px solid #a8a3a8;border-radius:12px;background:#ece9ec;color:#25232a;font:700 16px/1.45 system-ui}
+.iqc-gemini-transcript{max-height:280px;overflow:auto;display:grid;gap:8px;overflow-wrap:anywhere}
+.iqc-gemini-line{margin:0;padding:11px 12px;border-radius:12px;background:#f5f2f0;color:#29252b;white-space:pre-wrap;font:15px/1.55 system-ui}
+.iqc-gemini-connect:focus-visible,.iqc-gemini-account:focus-visible{outline:3px solid #70469c;outline-offset:2px}
+
+/* Native motorcycle model selector: existing Oracle Octaves card, no fake dealer widget. */
+.qcx-motorcycle-tool{display:grid;gap:10px;min-width:0}
+.qcx-motorcycle-tool h3{margin:0;font-size:19px;line-height:1.35}
+.qcx-motorcycle-select{width:100%;max-width:100%;min-height:48px;padding:10px 12px;font:600 16px/1.4 system-ui;border:1px solid #b8aeb7;border-radius:12px;background:#fff;color:#292631}
+.qcx-motorcycle-link{display:flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:10px 12px;border:1px solid #bcb3bd;border-radius:12px;background:#eeebed!important;color:#2e2932!important;text-decoration:none!important;font:750 16px/1.4 system-ui}
+.qcx-motorcycle-tool .qcx-link{min-height:44px;display:inline-flex;align-items:center;font-size:15px;line-height:1.4}
+.qcx-motorcycle-tool .qcx-note{margin:0;font-size:14px;line-height:1.5;color:#554e58}
+.qcx-motorcycle-select:focus-visible,.qcx-motorcycle-link:focus-visible{outline:3px solid #784da9;outline-offset:3px}
+
+/* PicoCELA: original network schematic; NOT a live market chart. */
+.qcx-art[data-brand="pcla-picocela"]{background:linear-gradient(140deg,#06152b,#0d4b64 68%,#081b30);color:#fff;border-color:#42e8f3;min-height:205px}
+.qcx-pcla-hero{position:relative;z-index:2;display:flex;flex-direction:column;gap:5px;width:100%}
+.qcx-pcla-ticker{font-size:11px;font-weight:850;letter-spacing:.12em;color:#79f1fa}
+.qcx-pcla-company{font-size:clamp(24px,6vw,36px);font-weight:850;text-shadow:0 0 15px #57dffb}
+.qcx-pcla-tech{font-weight:800;font-size:12px;color:#a4fcfc}.qcx-pcla-caption{font-size:12px;color:#e2f6f7;line-height:1.4}
+.qcx-pcla-mesh{height:84px;position:relative;margin:4px 0;background:linear-gradient(28deg,transparent 21%,#3ed8f980 22%,#3ed8f980 23%,transparent 24%,transparent 60%,#3ed8f980 61%,transparent 62%),linear-gradient(-26deg,transparent 22%,#3ed8f980 23%,#3ed8f980 24%,transparent 25%,transparent 64%,#3ed8f980 65%,transparent 66%)}
+.qcx-pcla-node{position:absolute;width:13px;height:13px;border-radius:50%;border:2px solid #e0ffff;background:#21bfea;box-shadow:0 0 14px #33d7ee}
+.qcx-pcla-node-1{left:4%;top:65%}.qcx-pcla-node-2{left:23%;top:10%}.qcx-pcla-node-3{left:41%;top:55%}
+.qcx-pcla-node-4{left:61%;top:12%}.qcx-pcla-node-5{left:77%;top:62%}.qcx-pcla-node-6{left:93%;top:10%}
+.qcx-pcla-infinity{position:absolute;left:46%;top:5%;font-size:36px;color:#caffffcc;text-shadow:0 0 12px #29d9e5}
+.qcx-pcla-points{margin:0;padding-left:22px;line-height:1.5}.qcx-pcla-points li{margin:7px 0}
+.qcx-pcla-links{display:flex;flex-wrap:wrap;gap:12px}.qcx-pcla-links .qcx-link{min-height:44px;display:inline-flex;align-items:center}
+.qcx-art.qcx-small[data-brand="pcla-picocela"] .qcx-pcla-company{font-size:25px}

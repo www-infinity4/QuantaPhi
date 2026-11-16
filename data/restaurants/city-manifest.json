@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source_name": "Overture Maps Places",
+  "source_url": "https://docs.overturemaps.org/getting-data/",
+  "release": "2026-10-21.0",
+  "notes": "Bounding boxes define discovery regions, not municipal legal boundaries. City labels indicate the selected discovery metro. No source rows or sponsorship are implied by a manifest entry.",
+  "cities": {
+    "denver-co": {
+      "city": "Denver",
+      "state": "CO",
+      "bbox": [
+        -105.12,
+        39.6,
+        -104.69,
+        39.92
+      ],
+      "min_records": 100,
+      "approved_snapshot": "data/restaurants/denver-co.json"
+    },
+    "colorado-springs-co": {
+      "city": "Colorado Springs",
+      "state": "CO",
+      "bbox": [
+        -104.98,
+        38.73,
+        -104.65,
+        38.95
+      ],
+      "min_records": 100,
+      "approved_snapshot": null
+    }
+  }
+}

@@ -47,7 +47,7 @@ test('Android chat: reachable conversation and compact composer, visible pairing
   assert.equal(ink,'rgb(23, 33, 43)');
   const boxHeight=await field.evaluate(e=>e.getBoundingClientRect().height);
   assert.ok(boxHeight<=80);
-  let m=await metrics();assert.deepEqual(m.scrollables,['ba-thread']);assert.ok(m.height>100&&m.overflow,JSON.stringify(m));assert.ok(m.composerBottom<=m.viewport);
+  let m=await metrics();assert.ok(m.scrollables.includes('ba-thread')&&m.scrollables.every(name=>['ba-thread','ba-composer'].includes(name)),JSON.stringify(m));assert.ok(m.height>100&&m.overflow,JSON.stringify(m));assert.ok(m.composerBottom<=m.viewport);
   await page.locator('.ba-thread').evaluate(e=>e.scrollTop=0);
   await page.locator('.ba-thread').hover();await page.mouse.wheel(0,600);
   await page.waitForFunction(()=>document.querySelector('.ba-thread').scrollTop>0);

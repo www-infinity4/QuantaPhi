@@ -1,0 +1,54 @@
+/* Oracle Octaves: one real movie/trailer per rotating Quick Card. */
+#trendingMovieCards{min-width:0}
+#trendingMovieCards>.mtc-refresh-status{
+ margin:10px 0;color:#62576d;font-size:13px;line-height:1.5;
+}
+.movie-trend-card{
+ box-sizing:border-box;max-width:100%;min-width:0;margin:14px 0;
+ display:flex;flex-direction:column;gap:10px;
+ padding:clamp(12px,3vw,20px);
+ background:linear-gradient(155deg,#fff 0%,#f9f4fd 76%,#fffaf1);
+ border:1px solid #d9c8e7;border-radius:20px;
+ color:#312541;box-shadow:0 8px 26px #50316316;
+}
+.movie-trend-card .mtc-heading{display:grid;gap:6px}
+.movie-trend-card .mtc-kicker{color:#70468a;font-size:11px;font-weight:800;letter-spacing:.09em}
+.movie-trend-card .mtc-title{margin:0;color:#382349;font-size:clamp(21px,4.5vw,28px);line-height:1.24;overflow-wrap:anywhere}
+.movie-trend-card .mtc-screen{
+ display:block;width:100%;aspect-ratio:16/9;
+ position:relative;overflow:hidden;padding:0;cursor:pointer;
+ background:#131321;border:1px solid #806699;border-radius:15px;
+ touch-action:manipulation;
+}
+.movie-trend-card .mtc-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.movie-trend-card .mtc-overlay{
+ position:absolute;inset:0;display:grid;place-content:center;gap:6px;
+ text-align:center;color:#fff;font-size:16px;font-weight:800;
+ background:linear-gradient(#08061525,#09091a80);text-shadow:0 1px 8px #000;
+}
+.movie-trend-card .mtc-play-symbol{
+ display:grid;place-items:center;width:62px;height:62px;margin:auto;
+ background:#fdf9ff;color:#51296f;border:2px solid #fff;border-radius:50%;
+ box-shadow:0 5px 20px #0008;font-size:28px;text-shadow:none;
+}
+.movie-trend-card .mtc-viewer{padding:7px;border-radius:15px;background:#0b0c17}
+.movie-trend-card .mtc-video-slot{width:100%;aspect-ratio:16/9;overflow:hidden;background:#000}
+.movie-trend-card .mtc-frame{display:block;width:100%;height:100%;aspect-ratio:16/9;border:0}
+.movie-trend-card .mtc-stop{
+ margin:8px 0 0 auto;display:block;padding:10px 16px;min-height:44px;
+ border:1px solid #d4c5e5;border-radius:10px;background:#fff;color:#4d2b65;
+ font-size:14px;font-weight:700;cursor:pointer;
+}
+.movie-trend-card .mtc-info{font-weight:700;font-size:15px;line-height:1.4;color:#382c43;margin:0}
+.movie-trend-card .mtc-proof,.movie-trend-card .mtc-status{
+ margin:0;font-size:13px;line-height:1.5;color:#554b5f;
+}
+.movie-trend-card :is(button,a):focus-visible{outline:3px solid #1c7897;outline-offset:3px}
+.movie-trend-card [hidden]{display:none!important}
+body.oracle-card-deck-active main.app > #trendingMovieCards{display:none!important}
+@media(max-width:430px){
+ .movie-trend-card{padding:12px;margin:12px 0;border-radius:16px}
+ .movie-trend-card .mtc-title{font-size:23px}
+ .movie-trend-card .mtc-info{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.movie-trend-card *{animation:none!important;transition:none!important}}

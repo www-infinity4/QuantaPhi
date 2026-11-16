@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuantaPhi Micro-Ad Lab · Bubble Gum Concept</title>
+<meta name="description" content="Original, independently produced short-ad storyboard prototype with clearly disclosed shopping links and no assumed brand sponsorship.">
+<style>
+:root{font-family:system-ui,-apple-system,Roboto,sans-serif;background:#f6f8fa;color:#242d35}
+*{box-sizing:border-box}body{margin:0}.wrap{max-width:680px;margin:auto;padding:16px 14px 50px}
+header{display:flex;justify-content:space-between;align-items:center;gap:10px}.brand{font-weight:900;font-size:22px;color:#23557c;text-decoration:none}
+header a:not(.brand){font-size:13px;color:#286084;padding:12px}
+h1{font-size:clamp(23px,6vw,34px);line-height:1.2;margin:24px 0 7px}
+.intro,.explain{font-size:14px;color:#53616d;line-height:1.6}
+#stage{position:relative;min-height:260px;height:min(65vw,370px);max-height:370px;overflow:hidden;border:1px solid #f3aec6;border-radius:24px;background:linear-gradient(135deg,#fdc7e1,#fef08a 55%,#bbf2fa);box-shadow:0 10px 24px #4a4e5720;display:grid;place-items:center;text-align:center}
+#stage::before,#stage::after{content:"";position:absolute;border-radius:50%;background:#fff8;border:3px solid #fff9}
+#stage::before{width:170px;height:170px;left:-50px;top:20px}#stage::after{width:140px;height:140px;right:-38px;bottom:-25px}
+.copy{z-index:1;position:relative;max-width:86%;color:#432550;text-shadow:0 2px #fff9}
+.eyebrow{display:inline-block;background:#fffadd;color:#56324f;border-radius:999px;border:1px solid #efb6d5;font-size:12px;font-weight:850;padding:7px 13px}
+.splash{font-weight:1000;letter-spacing:-.05em;font-size:clamp(36px,10vw,62px);line-height:1.05;margin:16px 0}
+.splash span{display:inline-block}
+.tagline{font-size:clamp(16px,4vw,21px);font-weight:800}
+#stage.playing .copy{animation:pop-in 1.2s ease-out 1 both}
+#stage.playing .splash span{animation:bubble 3.8s ease-out 1 both}
+@keyframes pop-in{0%{opacity:.25;transform:scale(.9)}38%{opacity:1;transform:scale(1.025)}100%{opacity:1;transform:scale(1)}}
+@keyframes bubble{0%{transform:scale(.8)}35%{transform:scale(1.07)}100%{transform:scale(1)}}
+.disclosure{margin:9px 0;color:#555d69;font:600 12px/1.5 system-ui,sans-serif}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}
+.actions a,.actions button{border:1px solid #a3b2bd;border-radius:12px;min-height:48px;background:white;color:#234e68;font:750 14px/1.3 system-ui,sans-serif;padding:12px 16px;text-decoration:none;cursor:pointer;flex:1 1 155px;text-align:center;display:grid;place-items:center}
+.actions .primary{background:#fff1b8;color:#4e2b38;border-color:#eab9bd}
+#stage[hidden]{display:none}
+a:focus-visible,button:focus-visible{outline:3px solid #1867a6;outline-offset:3px}
+footer{font-size:12px;line-height:1.55;color:#58646e;margin-top:30px;padding-top:15px;border-top:1px solid #dce2e6}
+@media(prefers-reduced-motion:reduce){#stage.playing .copy,#stage.playing .splash span{animation:none!important}}
+</style></head>
+<body><main class="wrap"><header><a class="brand" href="/">QuantaPhi®</a><a href="/quanta-sources.html">Source registry</a></header>
+<h1>Fast-lane micro-ad lab</h1>
+<p class="intro">A colorful four-second demonstration of a single, memorable product cue. An original QuantaPhi concept for a possible future Bubble Yum campaign—not a Hershey ad or a sponsorship.</p>
+<section id="stage" aria-label="Four-second colorful bubble gum advertising concept"><div class="copy">
+<span class="eyebrow">ORIGINAL CONCEPT · BUBBLE GUM</span>
+<p class="splash"><span>POP!</span></p>
+<p class="tagline">Big bubble energy.<br>Sweet, simple, memorable.</p>
+</div></section>
+<p class="disclosure">Independent creative concept. Not sponsored, endorsed or licensed by Hershey or BUBBLE YUM. No purchase is made on QuantaPhi.</p>
+<div class="actions">
+<button id="replay" type="button">Replay four-second spot</button>
+<button id="hideSpot" type="button">Hide animation</button>
+<a class="primary" href="https://www.hersheyland.com/bubbleyum" target="_blank" rel="noopener noreferrer">Explore official packs &amp; larger bags</a>
+</div>
+<p id="message" class="explain" role="status" aria-live="polite">This is a silent concept with original animation. No product prices, inventory or wholesale terms are implied.</p>
+<footer>Privacy and accessibility: no tracking script, audio autoplay, automatic purchase, external assets, or photosensitive strobing. Animation respects reduced-motion preferences and never blocks the shopping link. For real cooperative promotion, obtain a written brand/asset license and agreed merchant data before publishing a paid spot. <a href="https://github.com/www-infinity4/QuantaPhi/issues/1320">Micro-ad work ticket</a>.</footer>
+</main>
+<script>
+const stage=document.getElementById('stage'),msg=document.getElementById('message');
+const reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let endTimer=null;
+function replay(){
+ if(endTimer)clearTimeout(endTimer);
+ stage.hidden=false;stage.classList.remove('playing');
+ void stage.offsetWidth;
+ if(!reduced)stage.classList.add('playing');
+ msg.textContent=reduced?'Reduced-motion mode: the concept remains still; original shop link is available.':'Four-second concept replaying. Shop link stays available.';
+ endTimer=setTimeout(()=>{stage.classList.remove('playing');msg.textContent='Spot complete. The official product link remains available.';endTimer=null;},4000);
+}
+document.getElementById('replay').addEventListener('click',replay);
+document.getElementById('hideSpot').addEventListener('click',()=>{if(endTimer)clearTimeout(endTimer);endTimer=null;stage.classList.remove('playing');stage.hidden=true;msg.textContent='Animation hidden. The official shop link remains available.';});
+replay();
+</script></body></html>

@@ -1,0 +1,290 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {serverAssist,executeServerAssist,precedingSignedTurns,publicGithubSourceReceipt} from '../workers/bubbles-cloud-browser/server-assist.mjs';
+function setup(){
+ const rows=new Map(),tasks=[],calls=[];let enabled=true;
+ const db={prepare(sql){return {bind(...a){return {
+  async run(){
+   if(sql.startsWith('INSERT')){if(rows.has(a[0]))return {meta:{changes:0}};rows.set(a[0],{payload:a[1],status:'server_pending',expires_ms:a[4]});return {meta:{changes:1}};}
+   if(sql.includes("SET status='working'")){const row=rows.get(a[0]);if(row?.status!=='server_pending')return {meta:{changes:0}};row.status='working';return {meta:{changes:1}};}
+   const row=rows.get(a[3]);if(row){row.status=a[0];row.result=a[1];}return {meta:{changes:1}};
+  },async first(){return rows.get(a[0])||null;}
+ };}}}};
+ const store={chatgptStatus:async()=>({enabled}),status:async()=>({enabled}),enqueueServerAssist:async id=>{tasks.push(executeServerAssist({...args,id}));}};
+ const args={claims:{run_id:'123'},db,store,schedule:p=>tasks.push(p),now:1000,fetcher:async(url,options)=>{
+  calls.push({url,options});return Response.json({ok:true,output:'Verified weather answer',receipt:{tool:'weather.current',status:'complete'}});
+ }};
+ return {args,rows,tasks,calls,revoke(){enabled=false}};
+}
+test('browser observer shares only the same-run completed receipt with the conversational agent',async()=>{
+ const f=setup();f.rows.set('chatgpt_browser_123',{status:'complete',expires_ms:200000,result:JSON.stringify({ok:true,before:'Waiting for browser check.',after:'Bubbles clicked this control.',sessionId:'never-send',receipt:{tool:'browser.click_check',status:'complete',clickObserved:true,sessionClosed:true}})});
+ const context=await precedingSignedTurns({id:'chatgpt_assist_123_0',db:f.args.db,now:1000});
+ assert.match(context,/Verified same-run Bubbles browser receipt/);assert.match(context,/Bubbles clicked this control/);assert.doesNotMatch(context,/never-send|sessionId/);
+ assert.match(context,/"control":"Run browser check"/);assert.match(context,/"cleanupConfirmed":true/);assert.match(context,/does not indicate failed cleanup/);
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_456_0',db:f.args.db,now:1000}),'');
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_123_0',db:f.args.db,now:300000}),'');
+});
+test('server completes without an open browser and returns its own answer and receipt',async()=>{
+ const f=setup();const first=await serverAssist({...f.args,body:{operation:'assist',text:'Weather in Albia Iowa'}});
+ assert.equal(first.execution,'server');assert.equal(first.state,'complete');await Promise.all(f.tasks);
+ const result=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(result.state,'complete');assert.equal(result.result.output,'Verified weather answer');
+ assert.equal(result.result.receipt.tool,'weather.current');assert.equal(result.result.ownerToolsVerified,false);
+ assert.equal(f.calls[0].url,'https://bubbles-tools.marvaseater.workers.dev/v1/assist');
+ assert.equal(f.calls[0].options.headers.Authorization,undefined);
+ assert.equal(f.calls[0].options.redirect,'manual');
+});
+test('retries do not execute twice, replace a question or extend expiry',async()=>{
+ const f=setup(),body={operation:'assist',text:'hello'};
+ const one=await serverAssist({...f.args,body});const two=await serverAssist({...f.args,body,now:2000});
+ await Promise.all(f.tasks);assert.equal(f.calls.length,1);assert.equal(one.expiresAt,two.expiresAt);
+ assert.equal((await serverAssist({...f.args,body:{...body,text:'replacement'}})).status,409);
+});
+test('another signed run cannot read a reply and arbitrary selectors are rejected',async()=>{
+ const f=setup();await serverAssist({...f.args,body:{operation:'assist',text:'hello'}});await Promise.all(f.tasks);
+ assert.equal((await serverAssist({...f.args,claims:{run_id:'456'},body:{operation:'result'}})).state,'missing');
+ for(const body of [{operation:'result',jobId:'chatgpt_assist_123_0'},{operation:'assist',text:'hi',ownerToken:'x'},{operation:'assist',text:'hi',turn:10}])
+  assert.equal((await serverAssist({...f.args,body})).status,400);
+});
+test('revoked approval blocks submit, results and completion',async()=>{
+ const f=setup();let release;
+ f.args.fetcher=async()=>{await new Promise(r=>release=r);return Response.json({ok:true,output:'answer',receipt:{tool:'conversation'}});};
+ const pending=serverAssist({...f.args,body:{operation:'assist',text:'hello'}});
+ // Let the execution reach its remote request before revocation.
+ while(!release)await new Promise(r=>setImmediate(r));
+ f.revoke();release();await pending;await Promise.all(f.tasks);
+ assert.equal(f.rows.get('chatgpt_assist_123_0').status,'blocked');
+ assert.equal(JSON.parse(f.rows.get('chatgpt_assist_123_0').result).error,'consent_revoked');
+ for(const operation of ['assist','result'])assert.equal((await serverAssist({...f.args,body:{operation,text:'hello'}})).status,403);
+});
+test('failed or empty gateway responses cannot claim success; expiry is enforced',async()=>{
+ const f=setup();f.args.fetcher=async()=>Response.json({ok:true,output:'',receipt:{status:'complete'}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'hello'}});await Promise.all(f.tasks);
+ const result=await serverAssist({...f.args,body:{operation:'result'}});assert.equal(result.state,'blocked');
+ assert.equal((await serverAssist({...f.args,body:{operation:'result'},now:300000})).status,410);
+});
+test('production route uses the exact gateway service binding, not a public-network fetch',()=>{
+ const worker=fs.readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8');
+ const config=fs.readFileSync('workers/bubbles-cloud-browser/wrangler.toml','utf8');
+ assert.match(worker,/return env\.TOOLS\.fetch\(url,options\)/);
+ assert.match(worker,/bubbles_tools_binding_missing/);
+ assert.match(config,/binding = "TOOLS"\nservice = "bubbles-tools"/);
+});
+test('redirect responses are rejected without parsing or following a different host',async()=>{
+ const f=setup();f.args.fetcher=async()=>new Response('',{status:302,headers:{Location:'https://other.example'}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'hello'}});await Promise.all(f.tasks);
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'blocked');assert.equal(r.result.error,'gateway_http_302');assert.equal(r.result.gatewayStatus,302);
+});
+
+test('held signed request waits for a real response and stores it before returning',async()=>{
+ const f=setup();let release,finished=false;
+ f.args.fetcher=async()=>{await new Promise(r=>release=r);return Response.json({ok:true,output:'held response',receipt:{tool:'oracle.chat',status:'complete'}});};
+ const pending=serverAssist({...f.args,body:{operation:'assist',text:'hello'}}).then(r=>{finished=true;return r;});
+ while(!release)await new Promise(r=>setImmediate(r));
+ assert.equal(finished,false);release();const receipt=await pending;
+ assert.equal(receipt.state,'complete');assert.equal(finished,true);
+ const result=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(result.result.output,'held response');
+});
+
+test('signed Bubbles follow-up receives the real preceding weather answer, scoped to its run',async()=>{
+ const f=setup();
+ f.args.fetcher=async (url,options)=>{
+  f.calls.push({url,options});
+  const input=JSON.parse(options.body);
+  if(/Which of those two/.test(input.request))
+   return Response.json({ok:true,output:'Lovilia and Ottumwa are both 74 degrees right now.',receipt:{tool:'oracle.chat',status:'complete'}});
+  return Response.json({ok:true,output:'Lovilia, Iowa: 74 F; Ottumwa, Iowa: 74 F.',receipt:{tool:'weather.current',status:'complete'}});
+ };
+ const first=await serverAssist({...f.args,body:{operation:'assist',turn:0,text:'Weather in Lovilia, Iowa and Ottumwa, Iowa'}});
+ assert.equal(first.state,'complete');
+ const second=await serverAssist({...f.args,body:{operation:'assist',turn:1,text:'Which of those two towns is warmer?'}});
+ assert.equal(second.state,'complete');
+ const sent=JSON.parse(f.calls[1].options.body);
+ assert.equal(sent.request,'Which of those two towns is warmer?');
+ assert.match(sent.input,/Lovilia, Iowa: 74 F; Ottumwa, Iowa: 74 F/);
+ assert.match(sent.input,/Earlier question: Weather in Lovilia/);
+ assert.match(sent.input,/Current user question: Which of those two/);
+ assert.equal(JSON.parse(f.calls[0].options.body).input,'Weather in Lovilia, Iowa and Ottumwa, Iowa');
+ assert.equal(await precedingSignedTurns({...f.args,id:'chatgpt_assist_456_1'}),'');
+ assert.equal((await serverAssist({...f.args,body:{operation:'result',turn:1}})).result.output,
+  'Lovilia and Ottumwa are both 74 degrees right now.');
+});
+test('signed follow-up history excludes expired, failed, unrelated and untrusted runs',async()=>{
+ const f=setup();
+ await serverAssist({...f.args,body:{operation:'assist',turn:0,text:'private synthetic fixture'}}); 
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_456_1',db:f.args.db,now:1000}),'');
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:300000}),'');
+ f.rows.get('chatgpt_assist_123_0').status='blocked';
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:1000}),'');
+ const malformed=await precedingSignedTurns({id:'chatgpt_assist_abc_1',db:f.args.db,now:1000});
+ assert.equal(malformed,'');
+});
+
+test('signed chat distinguishes completed web search from incomplete answer',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'I found excerpts but could not finish a reliable explanation.',
+  answerStatus:'partial',analysisVerified:false,
+  receipt:{tool:'web.search',status:'complete'},
+  sources:[{title:'DARPA O-Circuit',url:'https://www.darpa.mil/research/programs/o-circuit'}]});
+ const started=await serverAssist({...f.args,body:{operation:'assist',text:'Explain DARPA O-Circuit'}});
+ assert.equal(started.state,'complete');
+ const result=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(result.state,'complete'); // transport completed
+ assert.equal(result.result.receipt.status,'complete'); // actual search completed
+ assert.equal(result.result.answerStatus,'partial'); // explanation did NOT finish
+ assert.equal(result.result.analysisVerified,false);
+ assert.equal(result.result.sources.length,1);
+ const context=await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:1000});
+ assert.equal(context,'','a partial answer must not masquerade as verified prior work');
+});
+
+test('signed transport keeps real GitHub README source and read proof for graders',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'Read README: Infinity Platinum APK withdrawn.',sourceUrl:'https://github.com/www-infinity4/QuantaPhi/blob/main/README.md',receipt:{tool:'github.read_file',status:'complete',sourceReadVerified:true,repositoryActionsVerified:false}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Read README'}});
+ await Promise.all(f.tasks);
+ const b=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(b.result.receipt.tool,'github.read_file');
+ assert.equal(b.result.receipt.sourceReadVerified,true);
+ assert.equal(b.result.sourceUrl,'https://github.com/www-infinity4/QuantaPhi/blob/main/README.md');
+ assert.deepEqual(b.result.sources,[{title:'Verified public GitHub file',url:b.result.sourceUrl}]);
+ assert.equal(b.result.ownerToolsVerified,false);
+ assert.equal(b.result.receipt.repositoryActionsVerified,false);
+});
+test('unverified, credential-bearing or foreign source URLs cannot cross signed boundary',()=>{
+ const base={receipt:{tool:'github.read_file',status:'complete',sourceReadVerified:true}};
+ const valid='https://github.com/www-infinity4/QuantaPhi/blob/main/README.md';
+ assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid}),valid);
+ for(const bad of [
+  'https://evil.example/exfil?key=abc',
+  'https://github.com/www-infinity4/QuantaPhi/blob/main/README.md?token=abc',
+  'https://github.com@evil.example/file',
+  'https://github.com/www-infinity4/QuantaPhi/blob/main/../secrets.txt',
+  'javascript:alert(1)'
+ ])assert.equal(publicGithubSourceReceipt({...base,sourceUrl:bad}),null,bad);
+ assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid,receipt:{tool:'oracle.chat',status:'complete',sourceReadVerified:true}}),null);
+ assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid,receipt:{tool:'github.read_file',status:'partial',sourceReadVerified:true}}),null);
+ assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid,receipt:{tool:'github.read_file',status:'complete',sourceReadVerified:false}}),null);
+});
+
+test('a duplicate signed server executor cannot cancel the in-flight GPT-to-Bubbles answer',async()=>{
+ const f=setup();let notifyStarted,release;
+ const started=new Promise(resolve=>{notifyStarted=resolve});
+ f.args.fetcher=async()=>{
+  notifyStarted();
+  await new Promise(resolve=>{release=resolve});
+  return Response.json({ok:true,output:'The verified answer arrived.',receipt:{tool:'oracle.chat',status:'complete'}});
+ };
+ const first=serverAssist({...f.args,body:{operation:'assist',text:'Check Bubbles reply transport'}}); 
+ await started;
+ const row=f.rows.get('chatgpt_assist_123_0');
+ assert.equal(row.status,'working');
+ // Two concurrent serverAssist calls can both observe server_pending before
+ // either claims the operation; a delayed second executor must never block the first.
+ await executeServerAssist({...f.args,id:'chatgpt_assist_123_0'});
+ assert.equal(row.status,'working','an already claimed request must not be changed to blocked');
+ release();
+ await first;
+ assert.equal(row.status,'complete');
+ assert.equal(JSON.parse(row.result).output,'The verified answer arrived.');
+ assert.equal((await serverAssist({...f.args,body:{operation:'result'}})).state,'complete');
+});
+
+
+test('signed multi-step weather retains actual step outcomes without leaking arguments or source text',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'Weather verified in two towns',answerStatus:'complete',
+  receipt:{tool:'agent.read_sequence',status:'complete',steps:[
+   {tool:'weather.current',status:'complete',arguments:{location:'Private home address',token:'secret'}},
+   {tool:'weather.current',status:'complete',output:'private weather discussion'},
+   {tool:'owner.delete_wallet',status:'complete',details:'must never propagate'}
+  ]}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Weather in two named towns'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete');
+ assert.deepEqual(r.result.receipt.steps,[{tool:'weather.current',status:'complete'},{tool:'weather.current',status:'complete'}]);
+ assert.doesNotMatch(JSON.stringify(r.result),/Private home address|secret|private weather discussion|owner\.delete_wallet/);
+});
+test('signed partial multi-step research retains failed step status instead of greenwashing it',async()=>{
+ const f=setup();f.args.fetcher=async()=>Response.json({ok:true,output:'Partial observed results',answerStatus:'partial',
+  receipt:{tool:'agent.read_sequence',status:'partial',steps:[
+   {tool:'github.read_repository',status:'failed'},{tool:'github.read_file',status:'complete'}]}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Read repo and README'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete','transport itself finished');
+ assert.equal(r.result.answerStatus,'partial');
+ assert.equal(r.result.receipt.status,'partial');
+ assert.deepEqual(r.result.receipt.steps,[{tool:'github.read_repository',status:'failed'},{tool:'github.read_file',status:'complete'}]);
+});
+
+
+test('signed GPT bridge does not count a failed live tool as a successful answer even though transport finished',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({
+  ok:true,output:'Search could not retrieve current results. No sources verified.',
+  answerStatus:'partial',receipt:{tool:'web.search',status:'failed'},
+  sources:[]
+ });
+ await serverAssist({...f.args,body:{operation:'assist',text:'Search the web for the latest news'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete','the request was transported and answered with a failure report');
+ assert.equal(r.result.ok,false,'a failed tool must not be credited as completed GPT work');
+ assert.equal(r.result.outcome,'tool_failed');
+ assert.equal(r.result.receipt.tool,'web.search');
+ assert.equal(r.result.receipt.status,'failed');
+ assert.match(r.result.output,/could not retrieve/);
+});
+
+test('signed GPT bridge preserves partial research but never marks partial answers as complete work',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({
+  ok:true,output:'Source excerpts obtained; a full explanation could not be verified.',
+  answerStatus:'partial',receipt:{tool:'web.search',status:'complete'},
+  sources:[{title:'Public research',url:'https://example.org/research'}]
+ });
+ await serverAssist({...f.args,body:{operation:'assist',text:'Research a public project'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete');
+ assert.equal(r.result.ok,false);
+ assert.equal(r.result.outcome,'answer_partial');
+ assert.equal(r.result.receipt.status,'complete','actual source lookup remains recorded');
+ assert.equal(r.result.answerStatus,'partial');
+ assert.equal(r.result.sources.length,1);
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:1000}),'','a failed/partial prior answer must not be reused as verified work');
+});
+
+test('signed tool completion requires a real complete receipt; observed success stays successful',async()=>{
+ for(const status of ['missing','needs_input','invalid_input','blocked','partial','unverified']){
+  const f=setup();
+  f.args.fetcher=async()=>Response.json({ok:true,output:'I can explain the limitation.',
+   answerStatus:'complete',receipt:{tool:'github.read_file',status:status==='missing'?undefined:status}});
+  await serverAssist({...f.args,body:{operation:'assist',text:'Read a public source'}});
+  const result=await serverAssist({...f.args,body:{operation:'result'}});
+  assert.equal(result.state,'complete');
+  assert.equal(result.result.ok,false,status);
+  assert.equal(result.result.outcome,'tool_'+(status==='missing'?'unverified':status),status);
+ }
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'Verified page read',
+  answerStatus:'complete',receipt:{tool:'web.read_page',status:'complete',sourceReadVerified:true}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Read the Bubbles public home page'}});
+ const done=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(done.state,'complete');
+ assert.equal(done.result.ok,true);
+ assert.equal(done.result.outcome,'complete');
+});
+
+test('signed GPT bridge explicitly rejects a model failure even after a successful tool receipt',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'The source succeeded, but no reliable answer could be generated.',
+  answerStatus:'failed',receipt:{tool:'web.read_page',status:'complete',sourceReadVerified:true}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Explain the page'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete');
+ assert.equal(r.result.ok,false);
+ assert.equal(r.result.outcome,'answer_failed');
+ assert.equal(r.result.receipt.status,'complete');
+});

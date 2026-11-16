@@ -33,7 +33,7 @@ test('HTML pages use PNG instead of unsupported SVG cards',()=>{
  assert.doesNotMatch(index,/property="og:image" content="[^"]*\.svg/);
  for(const kind of ['overview','media','page'])assert.match(index,new RegExp("kind:'"+kind+"'"));
 });
-test('shared search has independent server-side title, description and branded image',async()=>{
+test('shared search has independent server-side title and does not fake an image',async()=>{
  const u=new URL('https://quantaphi.org/q-share');
  u.searchParams.set('title','Ancient Roman technology');
  u.searchParams.set('text','Romans developed advanced engineering.');
@@ -43,20 +43,26 @@ test('shared search has independent server-side title, description and branded i
  assert.match(r.headers.get('content-type'),/text\/html/);
  const html=await r.text();
  assert.match(html,/<meta property="og:title" content="Ancient Roman technology">/);
- assert.match(html,/<meta name="twitter:card" content="summary_large_image">/);
- assert.match(html,/<meta name="twitter:image" content="https:\/\/quantaphi\.org\/preview\.png/);
+ assert.match(html,/<meta name="twitter:card" content="summary">/);
+ assert.doesNotMatch(html,/<meta name="twitter:image"/);
+ assert.doesNotMatch(html,/og:image/);
  assert.match(html,/Romans developed advanced engineering\./);
  assert.match(html,/Roman\+engineering/);
 });
-test('public raster image is offered; svg and data URLs fall back',async()=>{
+test('actual raster image is offered while SVG and data URLs do not pretend to be images',async()=>{
  for(const image of ['data:image/svg+xml;base64,YQ==','https://static.example.org/study.svg']){
   const u=new URL('https://quantaphi.org/q-share');u.searchParams.set('image',image);
   const html=await (await share(u.href)).text();
-  assert.match(html,/<meta name="twitter:image" content="https:\/\/quantaphi\.org\/preview\.png/);
+  assert.doesNotMatch(html,/<meta name="twitter:image"/);
  }
  const u=new URL('https://quantaphi.org/q-share');u.searchParams.set('image','https://upload.wikimedia.org/example.jpg');
  const html=await (await share(u.href)).text();
  assert.match(html,/<meta name="twitter:image" content="https:\/\/upload\.wikimedia\.org\/example\.jpg">/);
+ assert.match(html,/<meta name="twitter:card" content="summary_large_image">/);
+ const levis=new URL('https://quantaphi.org/q-share');
+ levis.searchParams.set('image','https://lsco.scene7.com/is/image/lsco/005013373-front-gstk?fmt=jpeg');
+ const levisHtml=await (await share(levis.href)).text();
+ assert.match(levisHtml,/lsco\.scene7\.com\/is\/image\/lsco\/005013373-front-gstk/);
 });
 test('HTML-escape the share title; never redirect viewers off-site',async()=>{
  const u=new URL('https://quantaphi.org/q-share');
@@ -68,6 +74,18 @@ test('HTML-escape the share title; never redirect viewers off-site',async()=>{
  assert.match(html,/&lt;img src=x/);
  assert.doesNotMatch(html,/location\.replace\("https:\/\/untrusted\.example/);
  assert.match(html,/location\.replace\("https:\/\/quantaphi\.org/);
+});
+test('retailer CDN preview images survive crawler metadata and the selected item stays in the QuantaPhi destination',async()=>{
+ for(const image of ['https://lscoglobal.scene7.com/is/image/lscoglobal/ITEM','https://img.guess.com/image/upload/f_auto,q_auto/v1/NA/Style/ITEM']){
+  const u=new URL('https://quantaphi.org/q-share');u.searchParams.set('image',image);u.searchParams.set('title','Current source product');
+  u.searchParams.set('dest','https://quantaphi.org/?card=levis-501-dark&spotlight=https%3A%2F%2Fwww.levi.com%2Fp%2F2');
+  const html=await (await share(u.href)).text();
+  assert.ok(html.includes('<meta property="og:image" content="'+image+'">'));assert.match(html,/spotlight=https%3A%2F%2Fwww\.levi\.com%2Fp%2F2/);
+ }
+ for(const image of ['https://img.guess.com.attacker.test/image/upload/ITEM','https://img.guess.com/account','https://img.guess.com/image/upload/x.svg','https://img.guess.com:444/image/upload/ITEM']){
+  const u=new URL('https://quantaphi.org/q-share');u.searchParams.set('image',image);
+  assert.doesNotMatch(await (await share(u.href)).text(),/<meta property="og:image"/);
+ }
 });
 test('HEAD shares return metadata headers without a body',async()=>{
  const r=await share('https://quantaphi.org/q-share?title=QuantaPhi',{method:'HEAD'});

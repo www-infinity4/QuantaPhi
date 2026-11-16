@@ -47,7 +47,7 @@ test('Bubbles can select a read-only MCP function using structured LLM tool call
  const env={AI:{run:async(model,options)=>{
   calls++;
   assert.equal(model,'@cf/openai/gpt-oss-120b');
-  if(calls===1){assert.equal(options.tools.length,4);return{choices:[{message:{tool_calls:[{type:'function',function:{name:'resonance_calculate',arguments:JSON.stringify({l:10,lUnit:'uH',c:22,cUnit:'pF'})}}]}}]};}
+  if(calls===1){assert.equal(options.tools.length,5);return{choices:[{message:{tool_calls:[{type:'function',function:{name:'resonance_calculate',arguments:JSON.stringify({l:10,lUnit:'uH',c:22,cUnit:'pF'})}}]}}]};}
   throw Error('Unexpected extra model call');
  }}};
  const req=new Request('https://bubbles-tools.marvaseater.workers.dev/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},body:JSON.stringify({request:'Bubbles use MCP tools to calculate 10 microhenries and 22 picofarads',mcp:true})});

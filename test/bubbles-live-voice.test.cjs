@@ -9,7 +9,7 @@ const brainSource=fs.readFileSync('bubbles-brain-actions.js','utf8');
 
 function harness(owner=false,speech=false){
  const clock={now:Date.now()};const FakeDate=class extends Date{static now(){return clock.now}};
- const utterances=[],memoryRequests=[],catalogCalls=[];let ownsVoice=true;const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
+ const utterances=[],memoryRequests=[],catalogCalls=[],intentRequests=[];let ownsVoice=true;const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
  const node=(tag)=>{
   const n={tag,className:'',classList:{add(){},remove(){},toggle(){}},dataset:{},style:{setProperty(){}},children:[],handlers:{},hidden:false,value:'',
    prepend(...items){this.children.unshift(...items)},before(){},append(...arr){this.children.push(...arr)},insertBefore(item,before){this.children.splice(this.children.indexOf(before),0,item)},
@@ -38,6 +38,10 @@ function harness(owner=false,speech=false){
    const body=JSON.parse(opts.body);if(body.mode==='notification-preferences')return {ok:true,json:async()=>({ok:true,preferences:{mode:body.preference}})};
    return {ok:true,json:async()=>({ok:true,owned:ownsVoice,saved:JSON.parse(opts.body).messages?.map(m=>m.id)||[],recent:[],related:[]})};
   }
+  if(url.endsWith('/v1/intent')){
+   intentRequests.push(JSON.parse(opts.body));
+   return {ok:true,json:async()=>({ok:true,decision:{kind:'none'},receipt:{executed:false}})};
+  }
   if(url.endsWith('/work/github')){
    const body=JSON.parse(opts.body);catalogCalls.push(body);
    if(body.action==='list_repositories')return {ok:true,json:async()=>({ok:true,complete:true,repositories:[{repository:'www-infinity4/QuantaPhi',archived:false}]})};
@@ -57,7 +61,7 @@ function harness(owner=false,speech=false){
  vm.runInNewContext(brainSource,context);
  vm.runInNewContext(appSource,context);
  const orb=nodes.find(n=>n.className==='ba-launcher');
- return {window,document,nodes,orb,requests,recognized,track,utterances,memoryRequests,catalogCalls,advance:ms=>{clock.now+=ms},setVoiceOwned:value=>{ownsVoice=value}};
+ return {window,document,nodes,orb,requests,recognized,track,utterances,memoryRequests,catalogCalls,intentRequests,advance:ms=>{clock.now+=ms},setVoiceOwned:value=>{ownsVoice=value}};
 }
 const flush=async()=>{for(let i=0;i<40;i++)await Promise.resolve()};
 const result=s=>Object.assign([{transcript:s}],{isFinal:true});
@@ -118,6 +122,8 @@ test('owner repair command creates and readies one real ticket with receipt',asy
  const h=harness(true);await flush();h.orb.handlers.click();await flush();
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the video generator')]});
  for(let attempt=0;attempt<100&&!h.requests.some(r=>r.url.endsWith('/work/tickets/create'));attempt++){await new Promise(resolve=>setTimeout(resolve,10));await flush();}
+ assert.equal(h.intentRequests.length,1,'bounded interpretation is a proposal, separate from execution');
+ assert.equal(h.intentRequests[0].request,'repair the video generator');
  assert.equal(h.requests.filter(r=>r.url.endsWith('/work/tickets/create')).length,1);assert.match(h.requests[0].url,/tickets\/create$/);assert.ok(!h.requests.some(r=>r.url.endsWith('/work/run-next')||r.url.endsWith('/work/tickets/update')));
  assert.equal(JSON.parse(h.requests[0].opts.body).context.approval,'explicit-user-command');
  assert.ok(h.catalogCalls.some(c=>c.action==='suggest_repositories'),'Owner voice task consulted the authenticated repository resolver');

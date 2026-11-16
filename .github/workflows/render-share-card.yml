@@ -1,0 +1,34 @@
+name: Render original X Money social share artwork
+on:
+  push:
+    paths:
+      - 'assets/share/x-money-card.svg'
+      - 'assets/share/infinity-affiliates-card.svg'
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Render OG image using native SVG rasterizer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq librsvg2-bin
+          rsvg-convert -w 1200 -h 630 assets/share/x-money-card.svg -o assets/share/x-money-card.png
+          file assets/share/x-money-card.png
+          rsvg-convert -w 1200 -h 630 assets/share/infinity-affiliates-card.svg -o assets/share/infinity-affiliates-card.png
+          file assets/share/infinity-affiliates-card.png
+          test $(stat -c%s assets/share/infinity-affiliates-card.png) -gt 2000
+          test $(stat -c%s assets/share/x-money-card.png) -gt 2000
+      - name: Commit only the generated image
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/share/x-money-card.png assets/share/infinity-affiliates-card.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Render X Money dedicated PNG sharing artwork"
+            git push
+          fi

@@ -13,14 +13,14 @@ test('recorded sound is exported into Music and has a visible stop/save control'
   assert.match(service, /notification\(\)/);
   assert.match(service, /mediaPublish\.execute/);
   assert.match(recorder, /writeBytes\("RIFF"\)/);
-  assert.match(service, /if \(completed == null\) return/); // Never report a phantom save.
+  assert.match(service, /if \(completed == null\) \{/); // Never report a phantom save.
 });
 
 test('screen capture is saved before foreground service shutdown', () => {
   const screen = source('ScreenCaptureService.java');
   assert.match(screen, /CapturePublisher\.publish\(this, completed, type\)/);
   assert.match(screen, /pendingPublications\+\+/);
-  assert.match(screen, /if \(!finished \|\| pendingPublications > 0\) return/);
+  assert.match(screen, /if \(!finished \|\| finalizingMedia \|\| pendingPublications > 0\) return/);
   assert.match(screen, /capture_active", false/);
   assert.match(screen, /stopIfPublished\(\)/);
 });
@@ -91,7 +91,7 @@ test('native-to-web recorder state is authoritative and the stop control is cont
   assert.match(site, /nativeCaptureRequests\.push\('stop recording'\)/);
   assert.match(site, /ownerToolConnected:/);
   assert.match(floating, /window\.QuantaBubbles\.ownerToolConnected/);
-  assert.match(site, /Owner mode connected · Robot Brain commands active/);
+  assert.match(site, /Signed in to Bubbles & Robot Brain · Wallet verified/);
   assert.doesNotMatch(floating, /performGlobalAction/);
 });
 
@@ -130,4 +130,24 @@ test('spoken record without qualifier selects screen + microphone, sound-only re
   assert.match(commands, /record sound\|record audio\|start audio recording/);
   const service = source('BubblesService.java');
   assert.match(service, /case "screen_video":[\s\S]*?offerCaptureApproval\(command\)/);
+});
+
+test('native WebView gets live capture-service evidence rather than trusting old Saving text',()=>{
+ const service=source('ScreenCaptureService.java'),overlay=source('FloatingOracleWindow.java');
+ assert.match(service,/static volatile boolean running/);
+ assert.match(service,/public void onCreate\(\)[\s\S]*?running = true/);
+ assert.match(service,/public void onDestroy\(\)[\s\S]*?running = false/);
+ assert.match(overlay,/screenCaptureServiceRunning/);
+ assert.match(overlay,/ScreenCaptureService\.isRunning\(\)/);
+});
+
+test('a second Record tap preserves the active recording and empty Stop is not a save', () => {
+  const service = source('BubblesService.java');
+  const start = service.slice(service.indexOf('private void beginAudioRecording()'), service.indexOf('private void saveAudio()'));
+  assert.match(start, /if \(recording\.active\(\)\) \{/);
+  assert.ok(start.indexOf('if (recording.active())') < start.indexOf('recording.start('));
+  assert.match(start, /putBoolean\("audio_active", true\)/);
+  const stop = service.slice(service.indexOf('private void saveAudio()'), service.indexOf('private void stopRecognition()'));
+  assert.match(stop, /if \(completed == null\) \{[\s\S]*?No microphone recording to save[\s\S]*?return;/);
+  assert.ok(stop.indexOf('if (completed == null)') < stop.indexOf('CapturePublisher.publish('));
 });

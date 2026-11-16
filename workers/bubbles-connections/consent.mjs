@@ -3,7 +3,7 @@ import {digest, randomToken} from './vault.mjs';
 import {PROVIDERS, authorizeConnection} from './authorization.mjs';
 
 async function completionStep(stage,operation){
- try{return await operation();}catch(error){if(error&&typeof error==='object')error.connectionStage=stage;throw error;}
+ try{return await operation();}catch(error){if(error&&typeof error==='object'&&!error.connectionStage)error.connectionStage=stage;throw error;}
 }
 // Storage must implement Durable Object transactional get/put/delete. This
 // service is called only after a host authenticates its user and session.
@@ -31,14 +31,167 @@ export class ConsentService {
       const limitKey = prefix+'consent-rate', limit = await tx.get(limitKey);
       const recent = limit && limit.until > this.now() ? limit : {count:0,until:this.now()+60000};
       if (recent.count >= 10) throw Error('too_many_requests');
-      const pending = await tx.list({prefix:prefix+'state:',limit:64});
-      for (const [pendingKey,value] of pending) if (value.expiresAt <= this.now()) await tx.delete(pendingKey);
+      for(const kind of ['state:','handoff-receipt:','google-return:','cloudflare-return:']){
+        const records=await tx.list({prefix:prefix+kind,limit:64});
+        for(const [recordKey,value] of records)if(value.expiresAt<=this.now())await tx.delete(recordKey);
+      }
       await tx.put(limitKey,{...recent,count:recent.count+1});
       const generation = await tx.get(prefix + 'generation:' + provider) || 0;
       const record = {userId, sessionHash, provider, verifier, actions:[...new Set(actions)], expiresAt:this.now()+300000, generation};
       await tx.put(key, {...await this.vault.seal(record,key),expiresAt:record.expiresAt});
     });
     return {provider, authorizationUrl, expiresIn:300};
+  }
+  // Cross-browser handoff is stored only in the wallet owner's Durable Object.
+  // No OAuth code is returned to a browser status poll.
+  async handoff({userId,provider,state,code,error}) {
+    const prefix=await this.namespace(userId);
+    if(!Object.hasOwn(PROVIDERS,provider)||typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state))
+      throw Error('callback_invalid');
+    if(code!==undefined&&(typeof code!=='string'||!code||code.length>4096))
+      throw Error('callback_invalid');
+    const key=prefix+'state:'+await digest(state),handoffKey=prefix+'handoff:'+await digest(state);
+    return completionStep('handoff_transaction',()=>this.storage.transaction(async tx=>{
+      const sealed=await completionStep('handoff_read',()=>tx.get(key));
+      if(!sealed)throw Error('state_invalid_or_used');
+      const pending=await completionStep('handoff_decrypt',()=>this.vault.open(sealed,key));
+      if(pending.provider!==provider||pending.userId!==userId||pending.expiresAt<=this.now())
+        throw Error('state_invalid_or_used');
+      const incoming={code:code||null,error:error?'provider_declined':null};
+      const existing=await completionStep('handoff_read',()=>tx.get(handoffKey));
+      if(existing){
+        // Chrome may repeat the exact callback after redirect/recovery.
+        // Accept only an identical, previously sealed payload; never replace
+        // a one-use authorization code with a different one.
+        const saved=await completionStep('handoff_decrypt',()=>this.vault.open(existing,handoffKey));
+        if(saved.code===incoming.code && saved.error===incoming.error)
+          return {received:true,duplicate:true};
+        throw Error('callback_already_received');
+      }
+      const encrypted=await completionStep('handoff_encrypt',()=>this.vault.seal(incoming,handoffKey));
+      await completionStep('handoff_store',()=>tx.put(handoffKey,{...encrypted,expiresAt:pending.expiresAt}));
+      if((provider==='google'||provider==='cloudflare')&&incoming.code){
+        // A different Android tab can recover the most recent received return
+        // only by proving the same wallet and session that started Google OAuth.
+        const recoveryKey=prefix+provider+'-return:'+pending.sessionHash;
+        const recovery=await completionStep('handoff_encrypt',()=>this.vault.seal({state},recoveryKey));
+        await completionStep('handoff_store',()=>tx.put(recoveryKey,{...recovery,expiresAt:pending.expiresAt}));
+      }
+      return {received:true};
+    }));
+  }
+  async resumeGoogleHandoff(identity) {
+    return this.resumeProviderHandoff(identity,'google');
+  }
+  async resumeCloudflareHandoff(identity) {
+    return this.resumeProviderHandoff(identity,'cloudflare');
+  }
+  async resumeProviderHandoff({userId,sessionId},provider) {
+    if(provider!=='google'&&provider!=='cloudflare')throw Error('provider_not_configured');
+    const key=await this.namespace(userId)+provider+'-return:'+await this.session(sessionId);
+    const saved=await completionStep('handoff_read',()=>this.storage.get(key));
+    if(!saved||saved.expiresAt<=this.now())return {status:'missing'};
+    const {state}=await completionStep('handoff_decrypt',()=>this.vault.open(saved,key));
+    return this.finishHandoff({userId,sessionId,provider,state});
+  }
+  async handoffStatus({userId,sessionId,provider,state}) {
+    const prefix=await this.namespace(userId),sessionHash=await this.session(sessionId);
+    if(!Object.hasOwn(PROVIDERS,provider)||typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state))
+      throw Error('callback_invalid');
+    const hash=await digest(state),key=prefix+'state:'+hash,handoffKey=prefix+'handoff:'+hash;
+    const receiptKey=prefix+'handoff-receipt:'+hash;
+    const sealedReceipt=await this.storage.get(receiptKey);
+    if(sealedReceipt){
+      const receipt=await this.vault.open(sealedReceipt,receiptKey);
+      if(receipt.userId!==userId||receipt.sessionHash!==sessionHash||receipt.provider!==provider)
+        throw Error('callback_session_mismatch');
+      if(receipt.expiresAt<=this.now())return {status:'expired'};
+      // A cached success must never outlive disconnect, token removal, or
+      // a replacement connection revision. It is recovery, not authority.
+      const current=await this.storage.get(prefix+'connection:'+receipt.account?.id);
+      if(current?.userId!==userId||current.provider!==provider||
+         current.status!=='connected'||!current.credentialRef||
+         current.revision!==receipt.connectionRevision||
+         current.expiresAt<=this.now()||
+         !(await this.storage.get(current.credentialRef)))return {status:'expired'};
+      return {status:'connected',account:receipt.account};
+    }
+    const sealed=await this.storage.get(key);
+    if(!sealed){
+      // The first finish request consumes the OAuth state before exchanging
+      // the provider code. During that network request, another poll must
+      // not report an expired sign-in. This marker is session-bound and
+      // contains no provider code or access token.
+      const inflight=await this.storage.get(prefix+'handoff-inflight:'+hash);
+      if(!inflight)return {status:'expired'};
+      if(inflight.userId!==userId||inflight.sessionHash!==sessionHash||inflight.provider!==provider)
+        throw Error('callback_session_mismatch');
+      return {status:inflight.expiresAt>this.now()?'pending':'expired'};
+    }
+    const pending=await this.vault.open(sealed,key);
+    if(pending.userId!==userId||pending.sessionHash!==sessionHash||pending.provider!==provider)
+      throw Error('callback_session_mismatch');
+    if(pending.expiresAt<=this.now())return {status:'expired'};
+    const arrival=await this.storage.get(handoffKey);
+    if(!arrival)return {status:'pending'};
+    const handoff=await this.vault.open(arrival,handoffKey);
+    if(handoff.error)return {status:'declined'};
+    return {status:'received'};
+  }
+  async finishHandoff(input) {
+    const {userId,sessionId,provider,state}=input;
+    const status=await completionStep('handoff_read',()=>this.handoffStatus(input));
+    if(status.status!=='received')return status;
+    const sessionHash=await this.session(sessionId);
+    const prefix=await this.namespace(userId);
+    const key=prefix+'handoff:'+await digest(state);
+    const encrypted=await completionStep('handoff_read',()=>this.storage.get(key));
+    if(!encrypted)return {status:'pending'};
+    const received=await completionStep('handoff_decrypt',()=>this.vault.open(encrypted,key));
+    if(!received.code)throw Error('callback_invalid');
+    const inflightKey=prefix+'handoff-inflight:'+await digest(state);
+    await completionStep('handoff_store',()=>this.storage.transaction(async tx=>{
+      const previous=await tx.get(inflightKey);
+      if(previous&&(previous.userId!==userId||previous.sessionHash!==sessionHash||previous.provider!==provider))
+        throw Error('callback_session_mismatch');
+      await tx.put(inflightKey,{userId,sessionHash,provider,expiresAt:this.now()+300000});
+    }));
+    // The storage contract exposes transactional delete, not a top-level
+    // delete method. Erase the sealed callback even if token exchange fails.
+    try {
+      const account=await this.complete({userId,sessionId,provider,state,code:received.code});
+      // A lost Android HTTP response must not force a second provider login.
+      // Persist a sealed, session-bound completion receipt before returning.
+      const receiptKey=prefix+'handoff-receipt:'+await digest(state);
+      const receipt={userId,sessionHash,provider,account,expiresAt:this.now()+300000};
+      await completionStep('receipt_store',()=>this.storage.transaction(async tx=>{
+        const current=await tx.get(prefix+'connection:'+account.id);
+        if(current?.userId!==userId||current.provider!==provider||
+           current.status!=='connected'||!current.credentialRef||
+           current.expiresAt<=this.now()||!(await tx.get(current.credentialRef)))
+          throw Error('connection_cancelled');
+        receipt.connectionRevision=current.revision;
+        const sealedReceipt=await completionStep('receipt_seal',()=>this.vault.seal(receipt,receiptKey));
+        await tx.put(receiptKey,{...sealedReceipt,expiresAt:receipt.expiresAt});
+        await tx.delete(inflightKey);
+      }));
+      return {status:'connected',account};
+    } catch(error) {
+      if(error?.message==='state_invalid_or_used') {
+        // Two authenticated polls may race to consume one callback. The
+        // winner alone exchanges the provider code; the loser should keep
+        // polling rather than surface a false sign-in failure.
+        const recovered=await this.handoffStatus(input);
+        if(recovered.status==='connected'||recovered.status==='pending')return recovered;
+        if(recovered.status==='expired')return {status:'pending'};
+      }
+      // An exchange or receipt failure is terminal for this consumed state.
+      // Only the racing loser keeps the marker while the winner completes.
+      await this.storage.transaction(async tx=>{await tx.delete(inflightKey);});
+      throw error;
+    } finally {
+      await this.storage.transaction(async tx=>{await tx.delete(key);});
+    }
   }
   async complete({userId, sessionId, provider, state, code}) {
     const prefix = await this.namespace(userId), sessionHash = await this.session(sessionId);
@@ -61,6 +214,7 @@ export class ConsentService {
     const id = await digest(provider + ':' + value.subject), connectionKey = prefix + 'connection:' + id;
     const credentialKey = prefix + 'credential:' + id;
     const connection = {id, userId, provider, providerSubject:value.subject, label:String(value.label || value.subject),
+      verifiedEmail:provider==='google'&&typeof value.verifiedEmail==='string'?value.verifiedEmail:null,
       credentialRef:credentialKey, status:'connected', expiresAt:this.now()+value.expiresIn*1000,
       grantedActions:value.grantedActions.filter(a => record.actions.includes(a)), revision:randomToken(), updatedAt:this.now()};
     const ciphertext = await completionStep('seal',()=>this.vault.seal({accessToken:value.accessToken, refreshToken:value.refreshToken || null}, credentialKey));
@@ -69,6 +223,33 @@ export class ConsentService {
       await tx.put(connectionKey, connection); await tx.put(credentialKey, ciphertext);
     }));
     return publicConnection(connection);
+  }
+  async cloudflareAccounts({userId,id}) {
+    return this.withCredential({userId,id,provider:'cloudflare',action:'account.read'},
+      async (accessToken)=>this.adapters.cloudflare.accounts({accessToken}));
+  }
+  async selectCloudflareAccount({userId,id,accountId}) {
+    if(typeof accountId!=='string'||!/^[a-f0-9]{32}$/.test(accountId))
+      throw Error('cloudflare_account_invalid');
+    // Never bind an arbitrary account supplied by chat or page JavaScript.
+    // Confirm membership directly against this wallet's Cloudflare token.
+    const listing=await this.cloudflareAccounts({userId,id});
+    const chosen=listing.accounts.find(account=>account.id===accountId);
+    if(!chosen)throw Error('cloudflare_account_not_authorized');
+    const prefix=await this.namespace(userId),key=prefix+'connection:'+id;
+    const existing=await this.storage.get(key);
+    if(existing?.userId!==userId||existing.provider!=='cloudflare'||existing.status!=='connected')
+      throw Error('connection_not_verified');
+    await this.storage.transaction(async tx=>{
+      const current=await tx.get(key);
+      if(current?.revision!==existing.revision||current.status!=='connected')
+        throw Error('connection_cancelled');
+      await tx.put(prefix+'cloudflare:selected:'+id,{
+        userId,connectionId:id,accountId:chosen.id,name:chosen.name,
+        connectionRevision:current.revision,selectedAt:this.now()});
+    });
+    return {account:{id:chosen.id,name:chosen.name},
+      storageReady:false,status:'account_selected_not_provisioned'};
   }
   async githubRepositories({userId,id,test=false}) {
     const prefix=await this.namespace(userId);
@@ -171,6 +352,7 @@ export class ConsentService {
       const credentials = record.credentialRef ? await tx.get(record.credentialRef) : null;
       await tx.put(prefix + 'generation:' + record.provider, (await tx.get(prefix + 'generation:' + record.provider) || 0)+1);
       if (record.credentialRef) await tx.delete(record.credentialRef);
+      if (record.provider==='cloudflare') await tx.delete(prefix+'cloudflare:selected:'+id);
       await tx.put(key, {...record, status:'disconnected', grantedActions:[], credentialRef:null, revision:randomToken(), updatedAt:this.now()});
       return {credentials, context:record.credentialRef, provider:record.provider};
     });
@@ -194,7 +376,7 @@ export class ConsentService {
   async gateStatus({userId}) {
     const accounts=await this.list({userId});
     for(const record of accounts){
-      if(!['github','cloudflare'].includes(record.provider)||
+      if(!['github','cloudflare','google'].includes(record.provider)||
           record.status!=='connected'||record.expiresAt>this.now()+30000)continue;
       try { await this.refresh({userId,id:record.id}); }
       catch { /* A failed refresh remains visibly unverified. */ }

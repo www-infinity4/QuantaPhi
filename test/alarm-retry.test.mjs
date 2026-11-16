@@ -55,7 +55,8 @@ test('global alarm dispatch lease throttles all repos, not just one ticket',asyn
  const retry=code.slice(code.indexOf('async retryPendingWork(){'),code.indexOf('async directGithub(body){'));
  assert.match(retry,/get\('alarm-global-next-at'\)/);
  assert.match(retry,/put\('alarm-global-next-at',now\+5\*60\*1000\)/);
- assert.ok(retry.indexOf("get('alarm-global-next-at')")<retry.indexOf('SELECT id,context_json'));
+ assert.ok(retry.indexOf("get('alarm-global-next-at')")<retry.indexOf('readRunnerQueue('));
+ assert.match(retry,/readRunnerQueue\(this\.env\.WORK_DB/);
  assert.ok(retry.indexOf("put('alarm-global-next-at'")<retry.indexOf('this.dispatchRunner()'));
 });
 

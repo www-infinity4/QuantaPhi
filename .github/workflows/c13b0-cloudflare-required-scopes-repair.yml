@@ -1,0 +1,22 @@
+name: C13b0 Cloudflare OAuth client required-scope repair
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/c13b0-cloudflare-optional-scopes.py'
+      - '.github/workflows/c13b0-cloudflare-required-scopes-repair.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-and-repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Keep 386 API scopes, require identity two, make toolkit optional
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: python3 scripts/c13b0-cloudflare-optional-scopes.py

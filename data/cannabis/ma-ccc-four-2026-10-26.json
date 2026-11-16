@@ -1,0 +1,68 @@
+{
+  "source": "Massachusetts Cannabis Control Commission",
+  "source_url": "https://masscannabiscontrol.com/resource/l_licenses_commence_ops.json",
+  "source_catalog_url": "https://masscannabiscontrol.com/open-data/data-catalog/",
+  "dataset_last_updated": "2026-10-26",
+  "checked_at": "2026-11-01",
+  "license_verified": false,
+  "advertising_approved": false,
+  "disclosure": "Four selected business-only records from a CCC self-reported public dataset; license and operation may change. No private tax IDs, contacts, paid ads, imagery or consumer data.",
+  "records": [
+    {
+      "license_number": "MR281268",
+      "name": "Cultivate Leicester",
+      "business_name": "Cultivate Leicester, Inc.",
+      "city": "Leicester",
+      "address": "1764 MAIN STREET, LEICESTER, MA 01524",
+      "expiration_date": "2027-04-10",
+      "license_type": "Marijuana Retailer",
+      "license_status": "Active",
+      "approved_license_stage": "FINAL LICENSE",
+      "commence_ops": "Yes",
+      "license_status_category": "Active",
+      "source_last_updated": "2026-10-26"
+    },
+    {
+      "license_number": "MR281346",
+      "name": "Alternative Therapies Group II",
+      "business_name": "Alternative Therapies Group II, Inc.",
+      "city": "Amesbury",
+      "address": "49 MACY STREET, AMESBURY, MA 01913",
+      "expiration_date": "2027-06-24",
+      "license_type": "Marijuana Retailer",
+      "license_status": "Active",
+      "approved_license_stage": "FINAL LICENSE",
+      "commence_ops": "Yes",
+      "license_status_category": "Active",
+      "source_last_updated": "2026-10-26"
+    },
+    {
+      "license_number": "MR281240",
+      "name": "CDXX MA TRANSCO - Northampton",
+      "business_name": "CDXX MA TRANSCO, LLC",
+      "city": "Northampton",
+      "address": "118 CONZ STREET, NORTHAMPTON, MA 01060",
+      "expiration_date": "2027-10-10",
+      "license_type": "Marijuana Retailer",
+      "license_status": "Active",
+      "approved_license_stage": "FINAL LICENSE",
+      "commence_ops": "Yes",
+      "license_status_category": "Active",
+      "source_last_updated": "2026-10-26"
+    },
+    {
+      "license_number": "MR281287",
+      "name": "CDXX MA TRANSCO - Brookline",
+      "business_name": "CDXX MA TRANSCO, LLC",
+      "city": "Brookline",
+      "address": "160 WASHINGTON STREET, BROOKLINE, MA 02445",
+      "expiration_date": "2027-10-10",
+      "license_type": "Marijuana Retailer",
+      "license_status": "Active",
+      "approved_license_stage": "FINAL LICENSE",
+      "commence_ops": "Yes",
+      "license_status_category": "Active",
+      "source_last_updated": "2026-10-26"
+    }
+  ]
+}

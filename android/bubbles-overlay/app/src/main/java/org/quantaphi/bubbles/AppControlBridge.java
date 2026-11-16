@@ -39,6 +39,14 @@ final class AppControlBridge {
         if ("chrome".equals(wanted) || "google chrome".equals(wanted)) {
             return open(context, context.getPackageManager().getLaunchIntentForPackage("com.android.chrome"), "Chrome");
         }
+        // Explicit native ChatGPT launch. Android opens the independent app;
+        // Bubbles has not read its private account or conversation history.
+        if ("chatgpt".equals(wanted) || "chat gpt".equals(wanted)
+                || "openai chatgpt".equals(wanted)) {
+            Intent intent = context.getPackageManager()
+                .getLaunchIntentForPackage(ChatGPTAppPolicy.PACKAGE);
+            return open(context, intent, "ChatGPT");
+        }
         // XRecorder is installed with a generic launcher label on some builds.
         if ("xrecorder".equals(wanted) || "x recorder".equals(wanted)) {
             Intent intent = context.getPackageManager()
@@ -70,6 +78,10 @@ final class AppControlBridge {
                 || "quantaphi bubbles in chrome".equals(wanted) || "quantaphi in chrome".equals(wanted))
             return context.getPackageManager().getLaunchIntentForPackage("com.android.chrome") == null
                 ? null : "com.android.chrome";
+        if ("chatgpt".equals(wanted) || "chat gpt".equals(wanted)
+                || "openai chatgpt".equals(wanted))
+            return context.getPackageManager().getLaunchIntentForPackage(ChatGPTAppPolicy.PACKAGE) == null
+                ? null : ChatGPTAppPolicy.PACKAGE;
         if ("xrecorder".equals(wanted) || "x recorder".equals(wanted))
             return context.getPackageManager().getLaunchIntentForPackage(XRecorderBridge.PACKAGE) == null
                 ? null : XRecorderBridge.PACKAGE;

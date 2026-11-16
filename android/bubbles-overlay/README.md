@@ -1,3 +1,35 @@
+## Bubbles website and Android parity — Preview 0.56.0 (October 22, 2026)
+
+The floating APK loads the actual `https://quantaphi.org/bubbles.html?nativeOverlay=1`.
+Both the main website and the APK now open `bubbles_shared_main_v1` by default
+instead of generating independent random first-visit threads. On separately
+verified owner sessions, the existing Brain conversation service synchronizes
+these messages; legacy and explicitly selected chat folders remain accessible.
+Guest conversations have no owner privileges. A browser does not transfer its
+login cookies or wallet token into the Android WebView.
+
+The APK checks the website's published `bubbles-ai.js?v=...` revision when it is
+open and idle. The site itself also checks periodically. A version change
+reloads the first-party website page only after an active conversation turn is
+finished; it never silently upgrades native Android recording permissions,
+forces microphone access, or replaces the Android application binary.
+The APK versionCode/versionName advance to 58 / 0.58.0 so the rebuilt
+Preview 5 package can be installed as an update under the same signing key.
+
+There is one assistant and one transcript: Android speech recognition forwards
+text to the *same website assistant* used by the typed composer. While Android
+owns the voice lane, the website does not start another microphone or read the
+response aloud. Android alone owns TTS playback and Android capture consent.
+Identical speech-voice timbre on Chrome and Android is not guaranteed because
+they use different installed speech engines.
+
+**Evidence limits:** source and CI prove the wiring, not the physical phone.
+On the Motorola, install the newly published Preview 5 APK, verify the existing
+wallet/owner session separately in its WebView, ask a question by voice, and
+confirm the answer appears in the main website's Bubbles shared chat. Then send
+a typed website message and confirm it appears in the APK. No APK installation,
+microphone consent, or owner pairing happens automatically from a GitHub merge.
+
 ## APK 38 feature build (upgrade-safe preview 0.40.0)
 
 The APK 38 work targets a single 58dp Bubbles orb, growing to 78dp only during
@@ -355,3 +387,44 @@ authorization and event-deduplication behavior, not real Motorola mic concurrenc
 
 ## XRecorder app control (October 18, 2026)
 Bubbles now routes spoken **record**, **record Bubbles**, **Bubbles, record**, and the floating X REC button to the installed XRecorder package (`videoeditor.videorecorder.screenrecorder`). A separately enabled Accessibility service identifies a uniquely labeled XRecorder Start/Stop control, presses it when explicitly requested, and waits for the opposite labeled control before reporting Recording/Stopped. If XRecorder does not expose a control, Android consent appears, or a label is ambiguous, Bubbles reports the handoff rather than pretending it completed. Voice **Bubbles, open [installed app name]** resolves Android's visible launchable app labels; subsequent explicit screen taps and scrolling use the existing owner-enabled Accessibility bridge. Android permission dialogs must be approved by the device owner. New native features need an APK built, signed and installed; changing GitHub alone does not update the phone.
+
+## Termux Python integration — original Bubbles Android Preview 0.55 (test phase)
+
+The original `android/bubbles-overlay` keeps its single Bubbles website chat,
+floating voice window, account/session flow, and separately permissioned screen
+tapping. It **does not** use the discarded Bubbles One interface.
+
+In installed Bubbles, say or type **"check Python"**, **"test Python in Termux"**,
+**"run Python test"**, or **"is Python working in Termux?"**. These natural
+requests initiate a *fixed diagnostic*, never arbitrary shell commands:
+Android shows a local owner approval, then requests the actual Termux
+`RUN_COMMAND` service with a return callback. The chat shows the exact
+observed state/exit receipt; sent/queued does not mean execution succeeded.
+Android voice says the result in plain English, not raw shell arguments.
+
+One-time prerequisites, which this APK cannot silently grant:
+- Install the real Termux app and Python within that Termux environment.
+  Termux must support returning a command result (version 0.109 or newer).
+- In Android's **Bubbles App Info > Permissions > Additional permissions**,
+  allow **Run commands in Termux environment** when requested.
+- In Termux's own `~/.termux/termux.properties`, set
+  `allow-external-apps=true`, a separate user-controlled Termux security
+  setting. The Bubbles APK cannot change it remotely.
+- Keep Termux and any signed Termux add-ons from one compatible distribution.
+
+The fixed test checks available storage (at least 16 MiB), Python's version,
+runs `2+2` inside a uniquely named private temporary directory, and
+removes its own test script, marker, and folder. Only old marker-verified
+probe directories are eligible for the bounded stale cleanup on a later
+owner-approved test. It rejects symlinked cache roots and preserves personal
+projects, Termux/Python installations, downloads, credentials, and other
+directories. It never uses a broad recursive shell delete or installs packages.
+
+**Limitations:** GitHub CI verifies Java/Android compilation and exercises
+the embedded shell script in isolated Linux fixtures. It cannot prove the
+real Motorola has Termux or Python installed, that its Android permission
+and Termux property are enabled, that a callback arrived, or that cleanup
+ran on that phone. A physical-phone test remains required before enabling
+general local jobs, unattended Python or privileged Robot Brain dispatch.
+Heavy work should remain cloud-side; Android accessibility and recording
+have their own independent consent requirements.

@@ -1,0 +1,20 @@
+name: Native QuantaPhi project storage
+on:
+  pull_request:
+    paths: ['workers/quanta-phi-ledger/**', 'test/native-projects.test.mjs', '.github/workflows/native-projects.yml']
+  push:
+    branches: [main]
+    paths: ['workers/quanta-phi-ledger/**', 'test/native-projects.test.mjs', '.github/workflows/native-projects.yml']
+permissions:
+  contents: read
+jobs:
+  native-project-contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --check workers/quanta-phi-ledger/worker.js
+      - run: node --check workers/quanta-phi-ledger/native-projects.mjs
+      - run: node --test test/native-projects.test.mjs test/search-commit.test.cjs test/wallet-assets.test.cjs

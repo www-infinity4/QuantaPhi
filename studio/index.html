@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sing & Record · StarMaker Song Discovery | QuantaPhi</title>
+<meta name="description" content="Discover official StarMaker songs, practice vocals and record your own voice locally in a private QuantaPhi mini studio.">
+<link rel="canonical" href="https://quantaphi.org/studio/"><meta name="theme-color" content="#a02a34">
+<style>
+:root{font:16px system-ui,-apple-system,Segoe UI,sans-serif;color:#2f2327;background:#f9f1ee;color-scheme:light}*{box-sizing:border-box}body{margin:0;padding:17px 12px 90px}a{color:#a12732}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #d99647;outline-offset:3px}
+main{max-width:1100px;margin:0 auto}.hero{background:radial-gradient(circle at 78% 27%,#fb93a480 0,transparent 44%),linear-gradient(125deg,#381c38,#a52c46);color:white;border-radius:25px;padding:clamp(19px,5vw,36px);box-shadow:0 12px 30px #381c3825;overflow:hidden}
+.hero a{color:#fff5e5}.kicker{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.14em;color:#ffcfb3}
+h1{font-size:clamp(2.1rem,7vw,4.3rem);letter-spacing:-.06em;line-height:1.04;margin:16px 0 9px}
+h2{font-size:clamp(1.4rem,4vw,2rem)}.hero p{max-width:650px;line-height:1.6}.small{color:#6c5b61;font-size:14px}.hero .small{color:#ffe0dc}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.button{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:13px;padding:13px 17px;min-height:46px;background:#a4323f;color:white!important;text-decoration:none;font:inherit;font-weight:800;cursor:pointer}
+.hero .button{background:white;color:#882735!important}.button.alt{background:#4e3745;color:white!important}.button:disabled{opacity:.45;cursor:not-allowed}
+section{margin:27px 0}.search{width:100%;min-height:52px;font:inherit;border-radius:14px;border:1px solid #c7b1b4;padding:12px;background:white}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:15px;margin:15px 0}
+.song{border:1px solid #e5d3d1;background:white;border-radius:19px;padding:16px;display:grid;gap:9px;min-width:0}
+.cover{aspect-ratio:2.2;border-radius:14px;background:radial-gradient(circle at 80% 35%,#f8a05f 0,transparent 30%),linear-gradient(125deg,#532754,#e28a92);color:white;display:flex;align-items:center;justify-content:center;font-size:54px;line-height:1;text-shadow:0 3px 8px #2a123855}
+.song h3{margin:0;font-size:1.17rem}.song p{margin:0}.song .buttons{margin-top:8px}
+.studio{background:white;border:1px solid #e2d0c8;border-radius:21px;padding:clamp(16px,4vw,27px);box-shadow:0 6px 25px #301a240d}
+audio{width:100%;min-height:42px}input[type=file]{width:100%;padding:12px 0}
+label{display:block;margin:13px 0 6px;font-weight:750}
+strong.status{color:#8c2732}.help{padding:13px 15px;border-left:4px solid #9d3040;background:#fcf4ee;border-radius:8px;line-height:1.5}
+#recordedPlayer{margin-top:12px}#recordedDownload[hidden],#recordedPlayer[hidden]{display:none}
+footer{margin-top:35px;border-top:1px solid #e3d2d0;padding:25px 0;font-size:14px;line-height:1.55}
+@media(max-width:650px){.grid{grid-template-columns:1fr}}
+</style></head><body><main>
+<header class="hero"><nav><a href="/">← QuantaPhi home</a> · <a href="/directory/">Directory</a></nav>
+<p class="kicker">INFINITY 2026® · song discovery & voice studio</p>
+<h1>Find your song.<br>Make it yours.</h1>
+<p>A search-first karaoke entry with individual official StarMaker song links—and a private voice-recording studio. Not the full StarMaker website squeezed into a card.</p>
+<div class="buttons"><a class="button" href="#browse">Find a song</a><a class="button" href="#studio">Record a take</a></div>
+<p class="small">Independent QuantaPhi tool. Not affiliated with or endorsed by StarMaker.</p>
+</header>
+<section id="browse"><h2>Choose a song to sing</h2>
+<label for="songQuery">Search artist or song title</label><input class="search" id="songQuery" type="search" maxlength="90" placeholder="Search today's curated songs…" autocomplete="off">
+<p id="songCount" class="small" aria-live="polite">Loading verified song links…</p>
+<div id="songResults" class="grid"><article class="song"><h3>Perfect · Ed Sheeran</h3><a href="https://www.starmakerstudios.com/en/song/ed-sheeran-perfect-lyrics/611752105016719259">Official StarMaker song ↗</a></article></div>
+<p class="help">This is a small set of verified public song links, not StarMaker's complete catalog. Open the <a href="https://www.starmakerstudios.com/en/songs" rel="noopener noreferrer">full official StarMaker songbook</a> to discover more. Licensed tracks, lyrics, covers and recordings remain with their rights holders.</p>
+</section>
+<section id="studio" class="studio"><h2>Record your own performance</h2>
+<p>Use the microphone after tapping Start. You can optionally choose an audio file <strong>you have permission to use</strong> as a backing track; the studio will attempt to mix it with your voice. Your take remains in this browser until you explicitly download it.</p>
+<label for="backingFile">Optional licensed or original backing track (from your device)</label><input type="file" id="backingFile" accept="audio/*">
+<audio id="backingPlayer" controls hidden></audio>
+<p class="small">Use headphones when recording with a backing track to avoid speaker feedback. Do not upload copyrighted backing tracks to QuantaPhi or redistribute a mixed recording without rights.</p>
+<div class="buttons">
+<button id="recordStart" class="button" type="button">● Start microphone recording</button>
+<button id="recordStop" class="button alt" type="button" disabled>■ Stop & produce take</button>
+</div>
+<p id="recordStatus" role="status" aria-live="polite">Ready. Microphone is OFF.</p>
+<audio id="recordedPlayer" controls hidden aria-label="Play back your recording"></audio>
+<p><a id="recordedDownload" class="button" download="quantaphi-voice-take.webm" hidden>Save your take to device</a></p>
+<p class="help">Recording requires a compatible secure browser and microphone permission. QuantaPhi does not access StarMaker's recording API, save the recording to R2 or generate automatic AI harmonies in this version. Check the downloaded file before closing the page.</p>
+</section>
+<footer>Original song links point to StarMaker. No lyrics, paid backing tracks or non-free Wikipedia album covers are copied. Decorative record-card artwork is original CSS, not the artist's album art. <a href="/directory/">Directory</a> · <a href="/">QuantaPhi home</a></footer>
+</main><script type="module" src="/studio/studio.mjs"></script></body></html>

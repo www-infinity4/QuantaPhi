@@ -12,7 +12,7 @@ test('Owner commands are parsed and client JavaScript compiles',()=>{
  assert.doesNotMatch(bubbles,/requestRunner\(result\.ticket\.id/);
  assert.match(bubbles,/\/work\/run-next/);
  assert.match(bubbles,/queued_for_runner/);
- assert.match(bubbles,/ownerMode\.textContent='Owner mode connected/);
+ assert.match(bubbles,/ownerMode\.textContent='Signed in to Bubbles & Robot Brain/);
 });
 test('Brain action dispatch is server-authorized and only enqueues a runner cycle',()=>{
  const gate=brain.indexOf("if(path==='/work/run-next'");
@@ -34,4 +34,85 @@ test('First-party site and studio both use new verified owner command assets',()
   assert.match(page,/bubbles-ai\.js\?v=2026\d{4}-[A-Za-z0-9-]+/);
   assert.match(page,/bubbles-ai\.css\?v=2026\d{4}-[A-Za-z0-9-]+/);
  }
+});
+
+test('An ordinary owner request to add a copy button uses a real code route',()=>{
+ const begin=bubbles.indexOf(' const namedWorkflow='),end=bubbles.indexOf(' // Owner-named RecordB',begin);
+ assert.ok(begin>0&&end>begin,'direct code request matcher exists');
+ const matches=new Function('request',bubbles.slice(begin,end)+'\nreturn codeTask;');
+ assert.equal(matches('Add copy button to owner approval'),true);
+ assert.equal(matches('Please add a copy button to Bubbles owner approval'),true);
+ assert.equal(matches('Tell me about copying paintings'),false);
+ assert.match(bubbles,/const sourceEdit=.*\(\?:add\|create\|make\|build\|generate\|insert\|attach\|fix/);
+ assert.match(bubbles,/await submitRepositoryWork\(engineeringRequest,'explicit-user-command'/);
+ assert.match(bubbles,/owner\[- \]approval/);
+ assert.match(bubbles,/const copy=create\('button','ba-owner-copy','Copy request'\)/);
+ assert.match(bubbles,/navigator\.clipboard\.writeText\(summary\)/);
+ assert.match(bubbles,/result\.textContent='Owner approval details copied\.'/);
+});
+test('Quant-AI selling preferences cannot hijack a normal owner chat',()=>{
+ const rule=bubbles.match(/const privateSellerRequest=(.*);/);
+ assert.ok(rule,'private seller-only request guard exists');
+ const isSeller=new Function('config','nativeOverlay','request','return '+rule[1]+';');
+ const enabled={privateContext:true};
+ assert.equal(isSeller(enabled,false,'Add copy button to owner approval'),false);
+ assert.equal(isSeller(enabled,false,'Fix Bubbles owner mode'),false);
+ assert.equal(isSeller(enabled,false,'Sell this old coin using my selling defaults'),true);
+ assert.equal(isSeller(enabled,true,'Sell this old coin'),false);
+ assert.match(bubbles,/if\(privateSellerRequest\)\{/);
+ assert.doesNotMatch(bubbles,/else if\(config\.privateContext&&!nativeOverlay\)/);
+});
+
+test('owner-gated neural task candidate recognizes conversational repairs, not ordinary chat',()=>{
+ const beginning=bubbles.indexOf(' const neuralWorkCandidate=');
+ const ending=bubbles.indexOf(' if(neuralWorkCandidate)',beginning);
+ assert.ok(beginning>0&&ending>beginning,'Bubbles has a bounded model-guided task admission guard');
+ const source=bubbles.slice(beginning,ending).replace(' const neuralWorkCandidate=', 'const neuralWorkCandidate=');
+ const evaluate=new Function('embedded','ownerReady','ownerGithubNonAction','requestsAgents','namedRecordBIssue','directCoding','request',
+  source+'\nreturn neuralWorkCandidate;');
+ const permit=(request,options={})=>evaluate(false,options.ownerReady!==false,false,false,false,false,request);
+ for(const request of [
+  'Get Bubbles weather search working properly',
+  'Bubbles, make Bubbles Python integration work',
+  'Please get QuantaPhi website functioning properly'
+ ])assert.equal(permit(request),true,request);
+ for(const request of [
+  'What is the weather in Albia Iowa?',
+  'Can you explain how Bubbles works?',
+  'Please do not make Bubbles run code',
+  'I was discussing how to get Bubbles working',
+  'Please get Bubbles weather search working'
+ ])if(request.startsWith('Please do not')||request.startsWith('What is')||request.startsWith('Can you')||request.startsWith('I was'))
+   assert.equal(permit(request),false,request);
+ assert.equal(permit('Get Bubbles weather search working properly',{ownerReady:false}),false);
+ assert.match(bubbles,/planned\.decision\?\.kind==='repository_work'/);
+ assert.match(bubbles,/planned\.receipt\?\.executed===false/);
+ assert.match(bubbles,/neuralCoding\|\|/);
+});
+
+test('ordinary repair sentences reach the intent model without a required prefix or product keyword',()=>{
+ const beginning=bubbles.indexOf(' const neuralWorkCandidate=');
+ const ending=bubbles.indexOf(' if(neuralWorkCandidate)',beginning);
+ const source=bubbles.slice(beginning,ending).replace(' const neuralWorkCandidate=', 'const neuralWorkCandidate=');
+ const evaluate=new Function('embedded','ownerReady','ownerGithubNonAction','requestsAgents','namedRecordBIssue','directCoding','request',source+'\nreturn neuralWorkCandidate;');
+ for(const request of [
+  'The radio cuts out at every song. Please sort that out.',
+  'I need the search fixed so results stay here.',
+  'The chat is not responding. Restore normal replies for me.',
+  'Could you get my radio reliable while I shop?'
+ ])assert.equal(evaluate(false,true,false,false,false,false,request),true,request);
+ assert.equal(evaluate(false,true,false,true,false,false,'Get Robot Brain working properly'),true);
+ assert.equal(evaluate(true,true,false,false,false,false,'Get my radio reliable'),false);
+ assert.equal(evaluate(false,false,false,false,false,false,'Get my radio reliable'),false);
+});
+
+test('a project named Robot Brain or Moltnook does not force the legacy bot queue',()=>{
+ const start=bubbles.indexOf(' const requestsAgents=');
+ const end=bubbles.indexOf('\n const codeTask=',start);
+ const evaluate=new Function('request',bubbles.slice(start,end)+'\nreturn requestsAgents;');
+ assert.equal(evaluate('Fix Robot Brain so chat can execute work'),false);
+ assert.equal(evaluate('Repair Moltnook repository source'),false);
+ assert.equal(evaluate('Use Robot Brain to repair the site'),true);
+ assert.equal(evaluate('Run all agents to repair the site'),true);
+ assert.equal(evaluate('Use the bot team to repair the site'),true);
 });

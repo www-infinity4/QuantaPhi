@@ -1,0 +1,64 @@
+name: Infinity Affiliates — request product or publisher review
+description: Nominate a product, register interest as a publisher, or propose a new brand. No affiliate approval is automatic.
+title: "[Infinity Affiliates] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before submitting:** Infinity Accepted is independent QuantaPhi owner curation; it is not an endorsement or an affiliate agreement. The request and any links entered here will be public. Never enter payment-card details, passwords, SSNs, passwords, or personal contact data.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Affiliation request
+      options:
+        - Request product affiliation
+        - Apply to promote an Infinity Accepted product
+        - Nominate a new brand
+    validations:
+      required: true
+  - type: input
+    id: brand
+    attributes:
+      label: Approved brand name or new brand nomination
+      placeholder: "Framework Computers"
+    validations:
+      required: true
+  - type: input
+    id: product
+    attributes:
+      label: Product/model
+      placeholder: "Model name and official variant"
+    validations:
+      required: true
+  - type: input
+    id: official
+    attributes:
+      label: HTTPS manufacturer product URL
+      placeholder: "https://manufacturer.example/products/model"
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Requester role
+      options:
+        - Publisher / prospective affiliate
+        - Seller
+        - Manufacturer representative
+        - Customer recommending a product
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Product evidence and proposal
+      description: Public information only. Include the exact product evidence and proposed promotion.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Submission acknowledgment
+      options:
+        - label: I understand this is a public request for review, not approval or a promise of commissions.
+          required: true

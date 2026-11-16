@@ -28,7 +28,10 @@ test('a large top-right X Hide remains outside the website and restores on wake'
  assert.match(panel,/close\.setMinWidth\(dp\(72\)\)/);
  assert.match(panel,/close\.setMinHeight\(dp\(48\)\)/);
  assert.match(panel,/close\.setOnClickListener\(v -> hide\(\)\)/);
- assert.match(panel,/if \(root != null\) \{\s*root\.setVisibility\(View\.VISIBLE\)/);
+ assert.match(panel,/if \(root != null\) \{[\s\S]*?root\.setVisibility\(View\.VISIBLE\)/);
+ assert.match(panel,/final boolean reopened = root\.getVisibility\(\) != View\.VISIBLE/);
+ assert.match(panel,/if \(reopened && websiteReady && trustedChat\(website\)/);
+ assert.match(panel,/startFreshOnReopen\(\)/);
  assert.match(panel,/header\.addView\(close\);\s*page\.addView\(header\)/);
 });
 
@@ -40,9 +43,24 @@ test('visible Start or resume control can restart a previously muted foreground 
  assert.match(service,/private void resumeSession\(\)/);
 });
 
-test('optional Live call control starts collapsed in narrow floating chat',()=>{
- assert.match(panel,/liveBack\.setVisibility\(View\.GONE\)/);
- assert.match(panel,/Button voiceOptions = button\("Options", false\)/);
- assert.match(panel,/voiceOptions\.setOnClickListener\(v -> \{/);
- assert.match(panel,/header\.addView\(voiceOptions\);\s*header\.addView\(liveBack\)/);
+test('native Record button is visible and requests one real Android approval',()=>{
+ assert.ok(panel.includes('recordToggle = button("● Rec", false);'));
+ assert.ok(panel.includes('header.addView(recordToggle);'));
+ assert.ok(panel.includes('.putExtra("voice_capture", "screen_video")'));
+ assert.ok(panel.includes('service.startActivity(intent);'));
+ assert.ok(panel.includes('ScreenCaptureService.isRunning()'));
+ assert.ok(panel.includes('.setAction(ScreenCaptureService.STOP)'));
+ assert.ok(panel.includes('Approve Android screen sharing to begin recording.'));
+ assert.ok(home.includes('startActivityForResult(projection.createScreenCaptureIntent(), SCREEN_REQUEST);'));
+ assert.ok(home.includes('startForegroundService(capture);'));
+ assert.ok(!panel.includes('performGlobalAction('));
 });
+
+test('Live call control is directly visible without Options/Less',()=>{
+ assert.ok(panel.includes('liveBack = button("Live", false);'));
+ assert.ok(panel.includes('header.addView(liveBack);'));
+ assert.doesNotMatch(panel,/Button voiceOptions = button/);
+ assert.doesNotMatch(panel,/liveBack[.]setVisibility[(]View[.]GONE[)]/);
+ assert.ok(panel.includes('liveBack.setText("Chat")'));
+});
+

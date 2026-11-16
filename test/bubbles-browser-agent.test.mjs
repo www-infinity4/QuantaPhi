@@ -8,6 +8,9 @@ test('Bubbles interprets ordinary browser requests without a button or memorized
  assert.deepEqual(browserSpeechIntent('open StarQuest in the cloud browser'),{action:'navigate',url:'https://quantaphi.org/starquest/',show:false});
  assert.deepEqual(browserSpeechIntent('open Cloudflare in the cloud browser'),{action:'navigate',url:'https://dash.cloudflare.com/',show:false});
  assert.deepEqual(browserSpeechIntent('open Gemini'),{action:'navigate',url:'https://gemini.google.com/',show:true});
+ assert.deepEqual(browserSpeechIntent('open ChatGPT'),{action:'navigate',url:'https://chatgpt.com/',show:true});
+ assert.deepEqual(browserSpeechIntent('open ChatGPT in the cloud browser'),{action:'navigate',url:'https://chatgpt.com/',show:false});
+ assert.deepEqual(browserSpeechIntent('open Chat GPT'),{action:'navigate',url:'https://chatgpt.com/',show:true});
  assert.deepEqual(browserSpeechIntent('open Cloudflare'),{action:'navigate',url:'https://dash.cloudflare.com/',show:true});
  assert.deepEqual(browserSpeechIntent('connect the cloud browser'),{action:'navigate',url:'https://quantaphi.org/bubbles.html',show:false});
  assert.deepEqual(browserSpeechIntent('start cloud browser'),{action:'navigate',url:'https://quantaphi.org/bubbles.html',show:false});
@@ -103,6 +106,6 @@ test('Browser automation never bypasses owner authentication or opens wallet and
 });
 test('website and Android chats dispatch named browser commands before model-only advice',()=>{
  const chat=fs.readFileSync('bubbles-ai.js','utf8');
- assert.match(chat,/\(\?:cloudflare\|gemini\|claude\|starquest\|bubbles/);
+ assert.match(chat,/\(\?:cloudflare\|chat\\s\?gpt\|gemini\|claude\|starquest\|bubbles/);
  assert.match(chat,/browserConversation\(spoken/);
 });

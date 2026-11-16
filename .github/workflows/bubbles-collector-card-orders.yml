@@ -1,0 +1,37 @@
+name: Bubbles collector card orders and navigation acceptance
+on:
+  pull_request:
+    paths:
+      - 'data/bubbles-collector-mall-dining-cards-20261024.json'
+      - 'docs/BUBBLES-COLLECTORS-MALL-DINING-20261024.md'
+      - 'docs/BUBBLES-QUICK-CARD-EXPANSION-20261024.md'
+      - 'bubbles.html'
+      - 'bubbles-x-connect.html'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/MainActivity.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/OracleChatActivity.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/NavigationContrast.java'
+      - 'android/bubbles-one/app/src/main/java/org/quantaphi/bubblesone/MainActivity.java'
+      - 'android/bubbles-one/app/src/main/java/org/quantaphi/bubblesone/NavigationContrast.java'
+      - 'test/bubbles-collector-card-order-and-nav.test.mjs'
+      - '.github/workflows/bubbles-collector-card-orders.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'data/bubbles-collector-mall-dining-cards-20261024.json'
+      - 'docs/BUBBLES-COLLECTORS-MALL-DINING-20261024.md'
+      - 'bubbles.html'
+      - 'bubbles-x-connect.html'
+      - 'test/bubbles-collector-card-order-and-nav.test.mjs'
+jobs:
+  source-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate complete owner work order and navigation contrast
+        run: node --test test/bubbles-collector-card-order-and-nav.test.mjs
+      - name: Check mobile Bubbles page source is published
+        run: |
+          curl --fail --show-error --silent --max-time 20 https://quantaphi.org/bubbles.html | grep -q 'Bubbles AI'

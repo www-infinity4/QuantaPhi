@@ -26,7 +26,7 @@ test('a normal refresh labels the home story Reads & Realms, never Asteroid', ()
   assert.match(css, /\.ib-asteroid-label\{display:none!important\}/);
   const show = code.split('function showHomeStory()')[1].split("window.addEventListener('quantaphi:new-search'")[0];
   assert.match(show, /placeHomeStory\(\)/);
-  assert.match(show, /nextStory\('',\{requireFresh:false\}\)/);
+  assert.match(show, /nextStory\('',\{requireFresh:true\}\)/);
 });
 
 test('Asteroid generation requires a genuine active search query', () => {
@@ -48,7 +48,7 @@ test('home renders an attributed source while GPT writes; searched Asteroids sti
   const next = code.split("async function nextStory(query = '', options = {})")[1]
     .split("window.addEventListener('quantaphi:search-start'")[0];
   assert.match(next, /requireFresh=options\.requireFresh!==false/);
-  assert.match(next, /const ready = searchMode \? null : pickUnique/);
+  assert.match(next, /const ready = searchMode \|\| requireFresh \? null : pickUnique/);
   assert.match(next, /sourcedCard/);
   assert.match(next, /Reading a verified archived story while Oracle researches/);
   assert.match(next, /eligibleNarrative/);

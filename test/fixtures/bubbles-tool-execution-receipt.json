@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "scope": "synthetic Bubbles create/read/update test",
+  "kind": "safe-test-file",
+  "createdBy": "owner approved GitHub tool execution",
+  "stage": "created-read-updated",
+  "privateData": false,
+  "verifiedOperations": [
+    "create",
+    "fetch",
+    "update"
+  ]
+}

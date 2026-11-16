@@ -1,0 +1,45 @@
+name: Bubbles modern Notes viewer and one-email passkey UI
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-ai.css'
+      - 'robot-brain-passkeys.mjs'
+      - 'bubbles.html'
+      - 'bubbles/index.html'
+      - 'bubbles-chrome.html'
+      - 'index.html'
+      - 'test/bubbles-2026-notes-viewer.test.mjs'
+      - '.github/workflows/bubbles-2026-notes-viewer.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-ai.css'
+      - 'robot-brain-passkeys.mjs'
+      - 'bubbles.html'
+      - 'bubbles/index.html'
+      - 'bubbles-chrome.html'
+      - 'index.html'
+      - 'test/bubbles-2026-notes-viewer.test.mjs'
+permissions:
+  contents: read
+jobs:
+  modern-notes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify syntax
+        run: |
+          node --check bubbles-ai.js
+          node --check robot-brain-passkeys.mjs
+          node --check test/bubbles-2026-notes-viewer.test.mjs
+      - name: Verify owner-only email action, viewer and privacy
+        run: |
+          node --test test/bubbles-2026-notes-viewer.test.mjs
+          node --test test/private-owner-passkey-entry.test.mjs
+          node --test test/quant-mail-preview.test.mjs

@@ -6,11 +6,18 @@ on:
       - 'workers/bubbles-connections/**'
       - 'bubbles-connections.mjs'
       - 'bubbles-signin-gate.mjs'
+      - 'bubbles-auth*'
+      - 'bubbles-accounts.html'
+      - 'bubbles.html'
+      - 'assets/auth-*.svg'
+      - 'test/bubbles-auth-return.test.mjs'
       - 'test/bubbles-signin-gate.test.mjs'
       - 'index.html'
       - 'workers/quantaphi-site/worker.js'
       - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
+      - 'test/bubbles-gmail-inbox.test.mjs'
+      - 'test/bubbles-wallet-email.test.mjs'
       - 'test/starcoin-github-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
   push:
@@ -19,11 +26,18 @@ on:
       - 'workers/bubbles-connections/**'
       - 'bubbles-connections.mjs'
       - 'bubbles-signin-gate.mjs'
+      - 'bubbles-auth*'
+      - 'bubbles-accounts.html'
+      - 'bubbles.html'
+      - 'assets/auth-*.svg'
+      - 'test/bubbles-auth-return.test.mjs'
       - 'test/bubbles-signin-gate.test.mjs'
       - 'index.html'
       - 'workers/quantaphi-site/worker.js'
       - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
+      - 'test/bubbles-gmail-inbox.test.mjs'
+      - 'test/bubbles-wallet-email.test.mjs'
       - 'test/starcoin-github-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
 
@@ -47,6 +61,9 @@ jobs:
             test/bubbles-connections-router.test.mjs \
             test/bubbles-connections-ui.test.mjs \
             test/bubbles-signin-gate.test.mjs \
+            test/bubbles-auth-return.test.mjs \
             test/bubbles-connector-pairing.test.mjs \
             test/bubbles-home-account-link.test.mjs \
+            test/bubbles-gmail-inbox.test.mjs \
+            test/bubbles-wallet-email.test.mjs \
             test/starcoin-github-backup.test.mjs

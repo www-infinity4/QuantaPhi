@@ -1,6 +1,11 @@
 // Only trusted server configuration supplies clients, secrets and callbacks.
+import {connectionFailureCode} from './completion.mjs';
+export {resolveCloudflareScopeConfig} from './scope-config.mjs';
+
 // Generated plugins cannot add arbitrary token endpoints to this registry.
 const GOOGLE_SCOPES = Object.freeze({
+  'identity.read':'openid',
+  'gmail.read':'https://www.googleapis.com/auth/gmail.readonly',
   'drive.read':'https://www.googleapis.com/auth/drive.readonly',
   'drive.write':'https://www.googleapis.com/auth/drive.file',
   'sheets.read':'https://www.googleapis.com/auth/spreadsheets.readonly',
@@ -33,14 +38,14 @@ export function googleAdapter(config, request = (...args)=>globalThis.fetch(...a
       if (!actions.length || actions.some(a => !Object.hasOwn(GOOGLE_SCOPES, a))) throw Error('unsupported_action');
       const url = new URL('https://accounts.google.com/o/oauth2/v2/auth');
       url.search = new URLSearchParams({client_id:config.clientId, redirect_uri:redirectUri, response_type:'code',
-        scope:['openid','email',...new Set(actions.map(a => GOOGLE_SCOPES[a]))].join(' '),
+        scope:[...new Set(['openid','email',...actions.map(a => GOOGLE_SCOPES[a])])].join(' '),
         state, code_challenge:challenge, code_challenge_method:'S256', access_type:'offline',
         prompt:'consent select_account', include_granted_scopes:'true'}).toString();
       return url.href;
     },
     async refresh({refreshToken, actions}) {
       const value = await jsonResponse(await request('https://oauth2.googleapis.com/token', {
-        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000),
+        method:'POST', redirect:'manual', signal:AbortSignal.timeout(15000),
         body:new URLSearchParams({client_id:config.clientId, client_secret:config.clientSecret,
           grant_type:'refresh_token', refresh_token:refreshToken})
       }), 'google_refresh');
@@ -49,24 +54,27 @@ export function googleAdapter(config, request = (...args)=>globalThis.fetch(...a
     },
     async revoke({refreshToken, accessToken}) {
       const response = await request('https://oauth2.googleapis.com/revoke', {
-        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000),
+        method:'POST', redirect:'manual', signal:AbortSignal.timeout(15000),
         body:new URLSearchParams({token:refreshToken || accessToken})
       });
       if (!response.ok) throw Error('google_revoke_failed');
     },
     async exchange({code, verifier, actions}) {
       const value = await jsonResponse(await request('https://oauth2.googleapis.com/token', {
-        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000),
+        method:'POST', redirect:'manual', signal:AbortSignal.timeout(15000),
         body:new URLSearchParams({client_id:config.clientId, client_secret:config.clientSecret, redirect_uri:redirectUri,
           grant_type:'authorization_code', code, code_verifier:verifier})
       }), 'google_exchange');
       const tokens = tokenFields(value);
       const identity = await jsonResponse(await request('https://openidconnect.googleapis.com/v1/userinfo', {
-        redirect:'error', signal:AbortSignal.timeout(15000), headers:{Authorization:'Bearer '+tokens.accessToken}
+        redirect:'manual', signal:AbortSignal.timeout(15000), headers:{Authorization:'Bearer '+tokens.accessToken}
       }), 'google_identity');
       if (typeof identity.sub !== 'string' || !identity.sub) throw Error('provider_identity_invalid');
       const scopes = new Set(String(value.scope || '').split(/\s+/));
       return {...tokens, subject:identity.sub,
+        verifiedEmail:identity.email_verified===true&&typeof identity.email==='string'&&
+          /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(identity.email)&&identity.email.length<=254
+          ?identity.email.toLowerCase():null,
         label:identity.email_verified === true ? String(identity.email || identity.sub) : identity.sub,
         grantedActions:actions.filter(a => scopes.has(GOOGLE_SCOPES[a]))};
     }
@@ -83,13 +91,13 @@ export function githubAdapter(config, request = githubRequest) {
       const repository='www-infinity4/QuantaPhi';
       if(!verified.repositories.some(r=>r.name===repository&&r.permissions.write))throw Error('repository_write_not_verified');
       const headers={Authorization:'Bearer '+accessToken,Accept:'application/vnd.github+json','Content-Type':'application/json','User-Agent':'Bubbles-User-Connections','X-GitHub-Api-Version':'2022-11-28'};
-      const call=async(path,body)=>jsonResponse(await request('https://api.github.com/repos/'+repository+path,{method:body?'POST':'GET',headers,redirect:'error',signal:AbortSignal.timeout(15000),...(body?{body:JSON.stringify(body)}:{})}),'github_test');
+      const call=async(path,body)=>jsonResponse(await request('https://api.github.com/repos/'+repository+path,{method:body?'POST':'GET',headers,redirect:'manual',signal:AbortSignal.timeout(15000),...(body?{body:JSON.stringify(body)}:{})}),'github_test');
       const repo=await call(''),base=await call('/git/ref/heads/'+encodeURIComponent(repo.default_branch));
       if(!/^[a-f0-9]{40}$/.test(base.object?.sha||''))throw Error('provider_response_invalid');
       const branch='bubbles-connection-test-'+crypto.randomUUID();
       await call('/git/refs',{ref:'refs/heads/'+branch,sha:base.object.sha});
       const content=btoa('# Bubbles GitHub connection test\n\nVerified an authenticated write from the Bubbles account connector.\nGenerated at '+new Date().toISOString()+'\n');
-      const response=await request('https://api.github.com/repos/'+repository+'/contents/test-receipt.md',{method:'PUT',headers,redirect:'error',signal:AbortSignal.timeout(15000),body:JSON.stringify({message:'Record Bubbles authenticated connection test',branch,content})});
+      const response=await request('https://api.github.com/repos/'+repository+'/contents/test-receipt.md',{method:'PUT',headers,redirect:'manual',signal:AbortSignal.timeout(15000),body:JSON.stringify({message:'Record Bubbles authenticated connection test',branch,content})});
       const receipt=await jsonResponse(response,'github_test');
       if(!/^[a-f0-9]{40}$/.test(receipt.commit?.sha||''))throw Error('provider_response_invalid');
       return {repository,branch,commit:receipt.commit.sha,url:'https://github.com/'+repository+'/commit/'+receipt.commit.sha,status:'commit_verified'};
@@ -102,7 +110,7 @@ export function githubAdapter(config, request = githubRequest) {
         'Content-Type':'application/json','User-Agent':'Bubbles-User-Connections',
         'X-GitHub-Api-Version':'2022-11-28'};
       const response=await request('https://api.github.com/user/repos',{
-        method:'POST',headers,redirect:'error',signal:AbortSignal.timeout(15000),
+        method:'POST',headers,redirect:'manual',signal:AbortSignal.timeout(15000),
         body:JSON.stringify({name:'infinity-starcoins-backup',private:true,auto_init:true,
           description:'Private StarCoin history mirror, verified against QuantaPhi Cloudflare D1',has_issues:false,has_wiki:false})
       });
@@ -120,7 +128,7 @@ export function githubAdapter(config, request = githubRequest) {
     },
     async repositories({accessToken}) {
       const headers={Authorization:'Bearer '+accessToken,Accept:'application/vnd.github+json','User-Agent':'Bubbles-User-Connections','X-GitHub-Api-Version':'2022-11-28'};
-      const read=async path=>jsonResponse(await request('https://api.github.com'+path,{headers,redirect:'error',signal:AbortSignal.timeout(15000)}),'github_repositories');
+      const read=async path=>jsonResponse(await request('https://api.github.com'+path,{headers,redirect:'manual',signal:AbortSignal.timeout(15000)}),'github_repositories');
       const catalog=await read('/user/installations?per_page=100');
       if(!Array.isArray(catalog.installations))throw Error('provider_response_invalid');
       const repositories=[];
@@ -146,7 +154,7 @@ export function githubAdapter(config, request = githubRequest) {
     },
     async refresh({refreshToken, actions}) {
       const value = await jsonResponse(await request('https://github.com/login/oauth/access_token', {
-        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000), headers:{Accept:'application/json','User-Agent':'Bubbles-User-Connections'},
+        method:'POST', redirect:'manual', signal:AbortSignal.timeout(15000), headers:{Accept:'application/json','User-Agent':'Bubbles-User-Connections'},
         body:new URLSearchParams({client_id:config.clientId, client_secret:config.clientSecret,
           grant_type:'refresh_token', refresh_token:refreshToken})
       }), 'github_refresh');
@@ -156,7 +164,7 @@ export function githubAdapter(config, request = githubRequest) {
     },
     async revoke({accessToken}) {
       const response = await request('https://api.github.com/applications/'+encodeURIComponent(config.clientId)+'/token', {
-        method:'DELETE', redirect:'error', signal:AbortSignal.timeout(15000),
+        method:'DELETE', redirect:'manual', signal:AbortSignal.timeout(15000),
         headers:{Authorization:'Basic '+btoa(config.clientId+':'+config.clientSecret),
           Accept:'application/vnd.github+json', 'Content-Type':'application/json', 'User-Agent':'Bubbles-User-Connections'},
         body:JSON.stringify({access_token:accessToken})
@@ -165,12 +173,12 @@ export function githubAdapter(config, request = githubRequest) {
     },
     async exchange({code, verifier}) {
       const value = await jsonResponse(await request('https://github.com/login/oauth/access_token', {
-        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000), headers:{Accept:'application/json','User-Agent':'Bubbles-User-Connections'},
+        method:'POST', redirect:'manual', signal:AbortSignal.timeout(15000), headers:{Accept:'application/json','User-Agent':'Bubbles-User-Connections'},
         body:new URLSearchParams({client_id:config.clientId, client_secret:config.clientSecret, redirect_uri:redirectUri, code, code_verifier:verifier})
       }), 'github_exchange');
       const tokens = tokenFields(value);
       const identity = await jsonResponse(await request('https://api.github.com/user', {
-        redirect:'error', signal:AbortSignal.timeout(15000),
+        redirect:'manual', signal:AbortSignal.timeout(15000),
         headers:{Authorization:'Bearer '+tokens.accessToken, Accept:'application/vnd.github+json', 'User-Agent':'Bubbles-User-Connections'}
       }), 'github_identity');
       if (!Number.isSafeInteger(identity.id) || identity.id <= 0) throw Error('provider_identity_invalid');
@@ -201,49 +209,164 @@ const CLOUDFLARE_SCOPES=Object.freeze({
     'dns.read','dns.write'
   ]
 });
-const cfScopes=actions=>[...new Set(actions.flatMap(a=>{
-  if(!Object.hasOwn(CLOUDFLARE_SCOPES,a))throw Error('unsupported_action');
-  return CLOUDFLARE_SCOPES[a];
-}))];
-const cfGranted=(actions,scope)=>actions.filter(a=>CLOUDFLARE_SCOPES[a]?.every(s=>scope.has(s)));
+const FULL_ACTION='owner.full';
+// A single request for the exact server-provisioned client scope inventory.
+// Do not infer authorization from the global Cloudflare scope catalog.
+const cfScopes=(actions,allowlist)=>{
+ const all=allowlist?Array.from(allowlist):[];
+ return [...new Set(actions.flatMap(action=>{
+  if(action===FULL_ACTION){
+   if(all.length<25||all.length>1000)throw Error('cloudflare_client_scopes_unavailable');
+   return all;
+  }
+  if(!Object.hasOwn(CLOUDFLARE_SCOPES,action))throw Error('unsupported_action');
+  return CLOUDFLARE_SCOPES[action];
+ }))];
+};
+// Cloudflare OAuth clients may request only scopes registered on THAT client.
+// The ChatGPT Cloudflare plugin's grant cannot be reused by Bubbles.
+// Set this allowlist from the Bubbles OAuth application's verified client
+// registration, not from a guessed global list of available API scopes.
+export function cloudflareAvailableActions(approvedScopes) {
+  const allowed=new Set(String(approvedScopes||'').split(/[\s,]+/).filter(Boolean));
+  const actions=Object.keys(CLOUDFLARE_SCOPES).filter(action=>
+    CLOUDFLARE_SCOPES[action].every(scope=>allowed.has(scope)));
+  if(allowed.size>=25&&allowed.size<=1000)actions.push(FULL_ACTION);
+  return actions;
+}
+export function cloudflareScopeInventory(allowedScopes){
+  const configured=new Set(String(allowedScopes||'').split(/[\s,]+/).filter(Boolean));
+  const available=cloudflareAvailableActions(allowedScopes);
+  const loginActions=available.includes(FULL_ACTION)?[FULL_ACTION]:
+    ['account.read','projects.build','ledger.read','projects.full']
+    .filter(action=>available.includes(action));
+  const requested=cfScopes(loginActions,configured);
+  return Object.freeze({
+    serverAllowlistCount:configured.size,
+    signInRequestScopeCount:requested.length,
+    // This is not a verified registration count: the OAuth management API may
+    // require a separate OAuth Client Read permission.
+    clientRegistrationVerified:false
+  });
+}
+const cfGranted=(actions,scope,allowlist)=>actions.filter(action=>
+ action===FULL_ACTION
+  ? allowlist?.size>=25&&Array.from(allowlist).every(s=>scope.has(s))
+  : CLOUDFLARE_SCOPES[action]?.every(s=>scope.has(s)));
 export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...args)){
   const redirectUri=callback(config);
+  const approvedScopes=config.allowedScopes===undefined?null:
+    new Set(String(config.allowedScopes||'').split(/[\s,]+/).filter(Boolean));
   const basic='Basic '+btoa(config.clientId+':'+config.clientSecret);
-  const form=fields=>({method:'POST',redirect:'error',signal:AbortSignal.timeout(15000),
+  const form=fields=>({method:'POST',redirect:'manual',signal:AbortSignal.timeout(15000),
     headers:{Authorization:basic,'Content-Type':'application/x-www-form-urlencoded',Accept:'application/json'},
     body:new URLSearchParams(fields)});
+  // Only reflect standardized OAuth errors, never provider descriptions,
+  // tokens, codes, or arbitrary response text. Both token paths use this.
+  const tokenResponse=async(response,stage)=>{
+    const reader=response.body?.getReader();
+    const chunks=[];let size=0;
+    if(!reader)throw Error('provider_response_invalid');
+    try {
+      while(true){
+        const {done,value}=await reader.read();if(done)break;
+        size+=value.byteLength;
+        if(size>65536){await reader.cancel();throw Error('provider_response_too_large');}
+        chunks.push(value);
+      }
+    } finally {reader.releaseLock();}
+    const bytes=new Uint8Array(size);let offset=0;
+    for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}
+    let value;try{value=JSON.parse(new TextDecoder().decode(bytes));}catch{
+      throw Error(response.ok?'provider_response_invalid':stage+'_'+response.status);
+    }
+    if(!value||typeof value!=='object'||Array.isArray(value))throw Error('provider_response_invalid');
+    const allowed=new Set(['invalid_client','invalid_grant','invalid_scope','invalid_request',
+      'unauthorized_client','unsupported_grant_type','server_error','temporarily_unavailable']);
+    if(!response.ok||value?.error){
+      const suffix=allowed.has(value?.error)?'_'+value.error:'';
+      throw Error(stage+'_'+(response.ok?'rejected':response.status)+suffix);
+    }
+    return value;
+  };
   const tokens=async fields=>tokenFields(await jsonResponse(
     await request('https://dash.cloudflare.com/oauth2/token',form(fields)),'cloudflare_exchange'));
   const withScope=(token,value,actions)=>{
     const scopes=new Set(String(value.scope||'').trim().split(/\s+/).filter(Boolean));
-    return {...token,grantedActions:cfGranted(actions,scopes)};
+    return {...token,grantedActions:cfGranted(actions,scopes,approvedScopes)};
   };
   return {
     id:'cloudflare',
+    async checkClient(){
+      // Cloudflare validates the existing confidential client while rejecting
+      // this deliberately fictitious grant. No person is signed in and no
+      // real state or user code is submitted to the provider.
+      try {
+        await tokenResponse(await request('https://dash.cloudflare.com/oauth2/token',
+          form({grant_type:'authorization_code',client_id:config.clientId,redirect_uri:redirectUri,
+            code:'bubbles-setup-probe-'+crypto.randomUUID(),
+            code_verifier:crypto.randomUUID().replaceAll('-','')+crypto.randomUUID().replaceAll('-','')})),
+          'cloudflare_exchange');
+        return {status:'unverified',reason:'unexpected_provider_response'};
+      } catch(error) {
+        const reason=connectionFailureCode(error);
+        return {status:/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_grant$/.test(reason)
+          ?'client_accepted':/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_client$/.test(reason)
+            ?'client_rejected':'unverified',reason};
+      }
+    },
+    async accounts({accessToken}){
+      // This endpoint uses only the connected user's encrypted token. No platform
+      // account token, user-supplied URL or arbitrary account identifier is used.
+      const accounts=[],seen=new Set();
+      for(let page=1;page<=5;page++){
+        const url='https://api.cloudflare.com/client/v4/accounts?page='+page+'&per_page=50';
+        const response=await request(url,{redirect:'manual',signal:AbortSignal.timeout(15000),
+          headers:{Authorization:'Bearer '+accessToken,Accept:'application/json'}});
+        const data=await jsonResponse(response,'cloudflare_accounts');
+        if(data.success!==true||!Array.isArray(data.result))throw Error('provider_response_invalid');
+        for(const a of data.result){
+          if(!/^[a-f0-9]{32}$/.test(a?.id||'')||seen.has(a.id))continue;
+          seen.add(a.id);
+          accounts.push({id:a.id,name:typeof a.name==='string'?a.name.slice(0,160):'Cloudflare account'});
+        }
+        if(!data.result_info||page>=data.result_info.total_pages)break;
+      }
+      return {accounts,truncated:accounts.length>=250};
+    },
     authorization({state,challenge,actions}){
       if(!actions.length)throw Error('unsupported_action');
+      const requested=cfScopes(actions,approvedScopes);
+      if(approvedScopes && requested.some(scope=>!approvedScopes.has(scope)))
+        throw Error('cloudflare_client_scopes_unavailable');
       const url=new URL('https://dash.cloudflare.com/oauth2/auth');
       url.search=new URLSearchParams({response_type:'code',client_id:config.clientId,
-        redirect_uri:redirectUri,state,scope:cfScopes(actions).join(' '),
+        redirect_uri:redirectUri,state,scope:requested.join(' '),
         code_challenge:challenge,code_challenge_method:'S256'}).toString();
       return url.href;
     },
     async exchange({code,verifier,actions}){
-      const raw=await jsonResponse(await request('https://dash.cloudflare.com/oauth2/token',
+      const raw=await tokenResponse(await request('https://dash.cloudflare.com/oauth2/token',
         form({grant_type:'authorization_code',client_id:config.clientId,
           redirect_uri:redirectUri,code,code_verifier:verifier})),'cloudflare_exchange');
       const token=tokenFields(raw);
-      const identity=await jsonResponse(await request('https://dash.cloudflare.com/oauth2/userinfo',
-        {redirect:'error',signal:AbortSignal.timeout(15000),
+      // The registered Bubbles OAuth client has 386 Cloudflare API scopes,
+      // including user-details.read, but no OIDC openid protocol scope.
+      // The OpenID /userinfo endpoint is therefore not a valid identity
+      // dependency for this client. Verify the OAuth bearer via Cloudflare's
+      // User Details API instead; never use the app-owner's platform token.
+      const identity=await jsonResponse(await request('https://api.cloudflare.com/client/v4/user',
+        {redirect:'manual',signal:AbortSignal.timeout(15000),
           headers:{Authorization:'Bearer '+token.accessToken,Accept:'application/json'}}),'cloudflare_identity');
-      if(typeof identity.sub!=='string'||!identity.sub||identity.sub.length>256)
+      if(identity?.success!==true||!/^[a-f0-9]{32}$/i.test(identity?.result?.id||''))
         throw Error('provider_identity_invalid');
-      return {...withScope(token,raw,actions),subject:identity.sub,
-        label:typeof identity.email==='string'&&identity.email.length<320?identity.email:'Cloudflare account'};
+      return {...withScope(token,raw,actions),subject:identity.result.id,
+        label:typeof identity.result.email==='string'&&identity.result.email.length<320?
+          identity.result.email:'Cloudflare account'};
     },
     async refresh({refreshToken,actions}){
       if(!refreshToken)throw Error('reconnect_required');
-      const raw=await jsonResponse(await request('https://dash.cloudflare.com/oauth2/token',
+      const raw=await tokenResponse(await request('https://dash.cloudflare.com/oauth2/token',
         form({grant_type:'refresh_token',client_id:config.clientId,refresh_token:refreshToken})),'cloudflare_refresh');
       const token=tokenFields(raw);
       return {...withScope(token,raw,actions),refreshToken:token.refreshToken||refreshToken};

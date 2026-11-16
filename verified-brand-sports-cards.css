@@ -1,0 +1,117 @@
+/* Distinct brand, civic, product and sports experiences. 2026 Oracle style:
+   readable, original-source identity, no fake photography or promotional copy. */
+.vbs-card{padding:0!important;overflow:hidden;isolation:isolate;border:1px solid #d7c7ba!important;background:#fff!important;color:#1c2028!important}
+.vbs-art{display:flex;align-items:center;justify-content:center;gap:12px;min-height:180px;background:radial-gradient(circle at 50% 36%,#fff 0%,#f4ebe5 82%);padding:20px 10px;border-bottom:1px solid #ece3dc}
+.vbs-identity{display:block;max-width:46%;height:auto;max-height:150px;min-width:90px;object-fit:contain;filter:drop-shadow(0 7px 12px #0001)}
+.vbs-secondary{max-width:38%}
+.vbs-vs{font:900 13px/1 system-ui;color:#535d69;letter-spacing:.07em}
+.vbs-category-nfl .vbs-art{background:linear-gradient(120deg,#093c31,#183c69)}
+.vbs-category-mlb .vbs-art{background:linear-gradient(120deg,#103761,#7a2430)}
+.vbs-category-nfl .vbs-vs,.vbs-category-mlb .vbs-vs{color:#fff}
+.vbs-kind-coupon .vbs-art{background:linear-gradient(145deg,#fff4d9,#fbf3ff)}
+.vbs-kind-health .vbs-art{background:linear-gradient(135deg,#eef7f6,#fafafa)}
+.vbs-kind-civic .vbs-art{background:linear-gradient(135deg,#eef1fa,#fff)}
+.vbs-kind-vehicle .vbs-art{background:linear-gradient(140deg,#e3eaef,#fcfbf8)}
+.vbs-kind-food .vbs-art{background:linear-gradient(135deg,#fff8ea,#fff3e3)}
+.vbs-kind-announcer .vbs-art{background:linear-gradient(145deg,#161822,#4a2139)}
+.vbs-info{padding:20px 16px 14px}
+.vbs-kicker{font-size:10px;font-weight:900;letter-spacing:.12em;color:#a13c2d!important;margin:0 0 6px}
+.vbs-title{font:800 clamp(23px,6vw,30px)/1.15 system-ui!important;letter-spacing:-.035em!important;margin:0 0 9px!important;color:#1e2025!important}
+.vbs-broadcaster{font-size:11px;font-weight:850;color:#233e5c;margin:6px 0}
+.vbs-description{font-size:15px;line-height:1.52;margin:9px 0;color:#38424a!important}
+.vbs-terms,.vbs-neutral,.vbs-health-note,.vbs-updates{font-size:12px;line-height:1.5;color:#5c6266;margin:8px 0}
+.vbs-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:17px 0}
+.vbs-source-action{display:flex;align-items:center;justify-content:center;min-height:52px;padding:8px 4px;text-align:center;text-decoration:none;background:#fff8f5;border:1px solid #c26d57;border-radius:12px;color:#813421!important;font:800 12px/1.2 system-ui}
+.vbs-category-nfl .vbs-source-action,.vbs-category-mlb .vbs-source-action{background:#f0f5fa;border-color:#aabacc;color:#1a3858!important}
+.vbs-source-action:hover,.vbs-source-action:focus-visible{background:#ffe6dc;outline:2px solid #8e3025;outline-offset:2px}
+.vbs-attribution{font-size:11px;line-height:1.5;color:#60676e!important;margin:12px 0 7px}
+.vbs-shared-actions .qca-toolbar{margin:9px 0 0}
+.vbs-announcer{background:#f9f5fa;border:1px solid #e4d4e7;border-radius:14px;padding:12px;margin:12px 0}
+.vbs-announcer-copy{font-size:14px;line-height:1.5;color:#302634}
+.vbs-announcer button{padding:10px 12px;min-height:44px;font-weight:850;background:#752c48;color:white;border-radius:10px;margin:6px 4px 4px 0}
+.vbs-announcer-status{font-size:12px;color:#5e515f}
+@media(max-width:410px){.vbs-info{padding:14px 12px}.vbs-art{min-height:156px}.vbs-identity{max-height:130px;min-width:76px}.vbs-topics{gap:5px}.vbs-source-action{font-size:11px;min-height:49px}}
+@media(prefers-reduced-motion:reduce){.vbs-card *, .vbs-card *::before,.vbs-card *::after{animation:none!important;transition:none!important}}
+
+.vbs-news-panel{padding:13px;margin:14px 0;background:#f6f9fc;border:1px solid #cbd8e5;border-radius:15px}
+.vbs-news-title{font-size:17px;color:#173d61!important;margin:0 0 9px}
+.vbs-news-status{color:#5c6370;font-size:12px;line-height:1.45}
+.vbs-news-item{border-top:1px solid #d5e0ea;margin-top:9px;padding-top:9px}
+.vbs-news-link{color:#16436e!important;font-size:14px;line-height:1.35;font-weight:850;text-decoration:underline}
+.vbs-news-preview{font-size:12px;line-height:1.45;color:#525a65}
+.vbs-news-date{color:#555e69;font-size:11px;display:block;margin-top:4px}
+.vbs-news-refresh{padding:10px 13px;min-height:44px;background:#193e61;border-radius:10px;color:#fff;margin-top:12px;font-size:13px;font-weight:800}
+
+.vbs-offer{padding:13px 14px;border-left:4px solid #b92d36;background:#fff3cf;border-radius:9px;color:#5b3018;font-size:14px;line-height:1.5;font-weight:800}
+.vbs-offer-expired{background:#f4f1ee;border-color:#8a8b8d;color:#666;font-weight:600}
+
+
+/* Photographic product heroes must fill the card, rather than magnifying an icon. */
+.vbs-card[data-source-id="gmc-denali-2026"] .vbs-art,
+.vbs-card[data-source-id="burger-king-chicken-2026"] .vbs-art{
+ padding:0;min-height:0;background:#f7f7f5;overflow:hidden;
+}
+.vbs-card[data-source-id="gmc-denali-2026"] .vbs-identity,
+.vbs-card[data-source-id="burger-king-chicken-2026"] .vbs-identity{
+ display:block;width:100%;max-width:none;min-width:0;height:clamp(210px,60vw,340px);
+ max-height:none;object-fit:cover;filter:none;
+}
+.vbs-card[data-source-id="burger-king-chicken-2026"] .vbs-identity{object-fit:contain;background:#fff}
+.vbs-archive-note{margin:10px 0;padding:11px 12px;border-left:4px solid #507798;
+ background:#edf5fa;border-radius:8px;font:700 13px/1.45 system-ui;color:#23445e}
+
+/* McDonald's Big Mac: actual corporate menu photography, not logo filler. */
+.vbs-card[data-source-id="mcdonalds-big-mac-deals"] .vbs-art{
+ padding:8px;min-height:245px;background:linear-gradient(145deg,#b2222d,#ffb900);
+}
+.vbs-card[data-source-id="mcdonalds-big-mac-deals"] .vbs-identity{
+ display:block;width:100%;max-width:none;min-width:0;height:clamp(220px,60vw,350px);
+ max-height:none;object-fit:contain;filter:drop-shadow(0 8px 12px #0002);
+}
+
+/* Product-forward Infinity card for the owner-requested Tide Quick Card.
+   Authentic source image; no fabricated prices, affiliate status or coupons. */
+.vbs-card[data-source-id="tide-original-liquid"] .vbs-art{
+ min-height:260px;padding:14px;background:linear-gradient(130deg,#fff7e8,#ffe2bd);
+}
+.vbs-card[data-source-id="tide-original-liquid"] .vbs-identity{
+ width:100%;max-width:300px;min-width:0;height:clamp(200px,55vw,320px);max-height:none;
+ object-fit:contain;filter:drop-shadow(0 10px 13px #8f4a221e);
+}
+@media(max-width:420px){
+ .vbs-card[data-source-id="tide-original-liquid"] .vbs-art{min-height:220px;padding:8px}
+}
+
+
+/* Colorado Mountain Adventures: photography-first original destination cards.
+   Neutral Infinity actions; verified Wikimedia Commons image licenses linked
+   in the card. No fake activity inventory or invented reservation slots. */
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-art{
+ padding:0;min-height:0;overflow:hidden;background:#e8eff3;
+}
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-identity{
+ width:100%;max-width:none;min-width:0;height:clamp(210px,58vw,360px);
+ max-height:none;object-fit:cover;object-position:center;filter:none;
+}
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-kicker{
+ color:#52677b!important;letter-spacing:.12em;
+}
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-source-action{
+ min-height:48px;background:#f7f9fb;border:1px solid #bac7d3;
+ color:#173c59!important;border-radius:11px;font-weight:750;
+}
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-source-action:hover,
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-source-action:focus-visible{
+ background:#e6f0f7;outline:2px solid #406889;outline-offset:2px;
+}
+.vbs-travel-meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.vbs-travel-meta span{display:inline-flex;padding:7px 10px;font-size:12px;line-height:1.35;font-weight:750;
+ background:#f0f5f7;border:1px solid #d7e1e8;border-radius:999px;color:#24475a}
+.vbs-travel-safety{font:500 13px/1.5 system-ui;margin:12px 0;color:#354b58;
+ border-left:3px solid #8da5b4;padding:9px 12px;background:#f8fafb}
+.vbs-photo-credit{font:500 11px/1.5 system-ui;color:#52606c;margin:13px 0 2px}
+.vbs-photo-link{font-weight:650;color:#245578!important;text-decoration:underline}
+.vbs-photo-fallback{display:flex;align-items:center;justify-content:center;padding:30px!important;min-height:180px!important}
+.vbs-photo-unavailable{margin:0;line-height:1.45;color:#415e73;font-size:13px;text-align:center}
+@media(max-width:410px){.vbs-kind-travel[data-source-id^="colorado-"] .vbs-topics{grid-template-columns:1fr 1fr}
+ .vbs-kind-travel[data-source-id^="colorado-"] .vbs-source-action:last-child{grid-column:1 / -1}}
