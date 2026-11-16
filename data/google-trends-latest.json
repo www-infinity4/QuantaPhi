@@ -3,9 +3,133 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T16:01:48.522055Z",
+  "checked_at": "2026-11-16T16:31:25.622949Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "aaron taylor johnson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T16:00:00Z",
+      "related_news_urls": [
+        "https://thedirect.com/article/marvel-studios-aaron-taylor-johnson-quicksilver-mcu-speedster"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFoOdLa4S3wi0k-vceBbzOww9YCFLFfFIlyYWmHOexjYsEP6L2xDx-wKLn1Tc",
+      "image_credit": "The Direct",
+      "news": [
+        {
+          "url": "https://thedirect.com/article/marvel-studios-aaron-taylor-johnson-quicksilver-mcu-speedster",
+          "title": "Marvel Studios Replaces Aaron Taylor-Johnson's Quicksilver as the MCU's Main Speedster",
+          "publisher": "The Direct",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFoOdLa4S3wi0k-vceBbzOww9YCFLFfFIlyYWmHOexjYsEP6L2xDx-wKLn1Tc"
+        }
+      ]
+    },
+    {
+      "query": "jacob elordi",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T16:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/jacob-elordi-doesn-t-want-110051558.html",
+        "https://www.mandatory.com/celebrities/1892611-jacob-elordi-annoyed-kendall-jenner-mom-the-kardashians-appearance",
+        "https://minutemirror.com.pk/kris-jenner-pushes-jacob-elordi-for-kardashians-cameo-660891/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsrwuvAl8CaVpQw7j1LHRVoCz2BP3y_ktMZB-Kc1wcxgpi8USTBdKSYsMOx2c",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jacob-elordi-doesn-t-want-110051558.html",
+          "title": "Jacob Elordi Doesn’t Want to Be on ‘The Kardashians’ But Kendall Jenner’s Momager Kris ‘Keeps Pushing’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsrwuvAl8CaVpQw7j1LHRVoCz2BP3y_ktMZB-Kc1wcxgpi8USTBdKSYsMOx2c"
+        },
+        {
+          "url": "https://www.mandatory.com/celebrities/1892611-jacob-elordi-annoyed-kendall-jenner-mom-the-kardashians-appearance",
+          "title": "Jacob Elordi Annoyed Being ‘Bossed Around’ by Kendall Jenner’s Mom — Source",
+          "publisher": "Crave Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_GUx84OciUFRspHTFENI9DLtq1T6xyjthDALpWu4K6LI8qmsbrpEr8y0a81Q"
+        },
+        {
+          "url": "https://minutemirror.com.pk/kris-jenner-pushes-jacob-elordi-for-kardashians-cameo-660891/",
+          "title": "Kris Jenner pushes Jacob Elordi for Kardashians cameo",
+          "publisher": "Minute Mirror",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSv7gEpqx5LabkxTj4HosHNBKcrZe3o7c2u45jP-nF4wd1cTYt3fl3iMaSVo"
+        }
+      ]
+    },
+    {
+      "query": "batman 2",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T16:00:00Z",
+      "related_news_urls": [
+        "https://gizmodo.com/filming-on-the-batman-part-ii-extends-into-2027-2000840256",
+        "https://www.imdb.com/news/ni66111777/?ref_=nmnw_art_perm",
+        "https://movieweb.com/the-batman-part-2-filming-update/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-We0oH7Lqpr_F6yvRZRsX08DcwWPo_7IUks15sETxeJvKRX92WNYWxmxBooI",
+      "image_credit": "Gizmodo",
+      "news": [
+        {
+          "url": "https://gizmodo.com/filming-on-the-batman-part-ii-extends-into-2027-2000840256",
+          "title": "Filming on ‘The Batman Part II’ Extends Into 2027",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-We0oH7Lqpr_F6yvRZRsX08DcwWPo_7IUks15sETxeJvKRX92WNYWxmxBooI"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66111777/?ref_=nmnw_art_perm",
+          "title": "The Batman 2's Filming Timeline Confirmed By Andy Serkis Amid Director Swap",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvg8SM77TX82DvfJI-fYavruzGdijs865oOh6MZMsgmb_fUUInZWGdwxXY70"
+        },
+        {
+          "url": "https://movieweb.com/the-batman-part-2-filming-update/",
+          "title": "Matt Reeves' Long-Awaited Batman Sequel Officially Gets Disappointing Filming Update",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeXWTR6sRiJgzgmUTgFX2C-BBVcyKL_aQ9I4Fw_d3_EuMaSnB7JnIU2FTufU0"
+        }
+      ]
+    },
+    {
+      "query": "rockstar games hacker arion kurtaj",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T15:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cq99exy89dngo",
+        "https://www.forbes.com/sites/paultassi/2026/11/16/caught-gta-6-leaker-pleads-guilty-to-extorting-rockstar-games/",
+        "https://www.yahoo.com/news/us/articles/gta-6-hacker-behind-original-150423830.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSELz8Az9RoXduCF6HdukNxJag9_tq0uG3W7zwcQuV912dCSP8MvSfrlqfDq2g",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cq99exy89dngo",
+          "title": "GTA 6 hacker pleads guilty after release from secure hospital",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSELz8Az9RoXduCF6HdukNxJag9_tq0uG3W7zwcQuV912dCSP8MvSfrlqfDq2g"
+        },
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/16/caught-gta-6-leaker-pleads-guilty-to-extorting-rockstar-games/",
+          "title": "Caught ‘GTA 6’ Leaker Pleads Guilty To Extorting Rockstar Games",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWk7rUerpmwZCKOlyiDvHZWtvXS8oysdzBzxDtpoa-5HCkdNdORcWackhJOiU"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/gta-6-hacker-behind-original-150423830.html",
+          "title": "GTA 6 hacker behind original 2022 leaks pleads guilty just days ahead of game’s launch",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNBV_8D1L7xD9ezRlo2mdktvQQa4ysIP6RTyDoz3e_R5kcseQxp44LSHlgemo"
+        }
+      ]
+    },
     {
       "query": "turkey",
       "approx_searches": "2000+",
@@ -42,72 +166,37 @@
       ]
     },
     {
-      "query": "casino royale",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T15:40:00Z",
-      "related_news_urls": [
-        "https://www.flickeringmyth.com/casino-royale-at-20-the-film-that-reinvented-james-bond/",
-        "https://www.yahoo.com/entertainment/movies/articles/daniel-craig-james-bond-films-110007650.html",
-        "https://www.mensjournal.com/entertainment/james-bond-origin-ian-fleming-first-book-history"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3ut9-zRwONQisw32E08W2Nf1G33IlkFZgh0xvMCjlZ0kSNYCxGYhpCmXinIA",
-      "image_credit": "Flickering Myth",
-      "news": [
-        {
-          "url": "https://www.flickeringmyth.com/casino-royale-at-20-the-film-that-reinvented-james-bond/",
-          "title": "Casino Royale at 20: The Film That Reinvented James Bond",
-          "publisher": "Flickering Myth",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3ut9-zRwONQisw32E08W2Nf1G33IlkFZgh0xvMCjlZ0kSNYCxGYhpCmXinIA"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/daniel-craig-james-bond-films-110007650.html",
-          "title": "Daniel Craig James Bond films never fulfilled 'Casino Royale' promise",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxsqij_mcLuxMfvkij1K_v8qE-Tix3pqD_LGBup2-0Lk_Y0rivHHWeHLfV3FI"
-        },
-        {
-          "url": "https://www.mensjournal.com/entertainment/james-bond-origin-ian-fleming-first-book-history",
-          "title": "Ian Fleming Published Just 4,728 Copies of ‘Casino Royale’ in 1953. James Bond Has Since Grossed Nearly $8 Billion",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw8AIByPAwQ9Uo2p2WuobqZiYt_6lvnQotRyweLwDAuOuCub2c6At47TaByzc"
-        }
-      ]
-    },
-    {
-      "query": "nicholas hoult",
-      "approx_searches": "2000+",
+      "query": "callum turner",
+      "approx_searches": "10000+",
       "published_at": "2026-11-16T15:30:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/11/arts/how-rob-bank-is-primer-making-an-enjoyable-heist-flick/",
-        "https://www.wsj.com/arts-culture/film/how-to-rob-a-bank-review-an-electric-contemporary-caper-5d0406b3",
-        "https://www.nytimes.com/2026/11/12/movies/how-to-rob-a-bank-review.html"
+        "https://www.nydailynews.com/2026/11/15/callum-turner-james-bond/",
+        "https://www.cosmopolitan.com/uk/entertainment/a74440764/when-will-the-next-james-bond-movie-be-out/",
+        "https://brobible.com/culture/article/james-bond-casting-process/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR7CiZGJXCt54YWug825mz2pv7rRFitjdP1OPRGUXa4ufsHTzxEcT4NpVNI78",
-      "image_credit": "The Boston Globe",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa7eQz8Xo2rIGm-LD2QMUBuTlE8whjPyWBg7ZMBeo9H5cHzQ9DXdHagNB2o2Q",
+      "image_credit": "New York Daily News",
       "news": [
         {
-          "url": "https://www.bostonglobe.com/2026/11/11/arts/how-rob-bank-is-primer-making-an-enjoyable-heist-flick/",
-          "title": "‘How to Rob a Bank’ gives a lesson on making an enjoyable heist flick",
-          "publisher": "The Boston Globe",
+          "url": "https://www.nydailynews.com/2026/11/15/callum-turner-james-bond/",
+          "title": "RICHARD JOHNSON | Callum Turner closing in on James Bond gig: source",
+          "publisher": "New York Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR7CiZGJXCt54YWug825mz2pv7rRFitjdP1OPRGUXa4ufsHTzxEcT4NpVNI78"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa7eQz8Xo2rIGm-LD2QMUBuTlE8whjPyWBg7ZMBeo9H5cHzQ9DXdHagNB2o2Q"
         },
         {
-          "url": "https://www.wsj.com/arts-culture/film/how-to-rob-a-bank-review-an-electric-contemporary-caper-5d0406b3",
-          "title": "‘How to Rob a Bank’ Review: An Electric Contemporary Caper",
-          "publisher": "WSJ",
+          "url": "https://www.cosmopolitan.com/uk/entertainment/a74440764/when-will-the-next-james-bond-movie-be-out/",
+          "title": "When will the next James Bond movie be out? What to know following Robert Pattinson announcement",
+          "publisher": "Cosmopolitan",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnmyZsuVfHvz9Ibnc6cVF1sQm80MAphSRuDNKA6ae-0zVQ_zjVNDpPZvH-FsE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnv1mx5yUdun_fQsmoS66WrE2uAZKqHlFDOLULECudTq4MVYWfCczxrYYWwew"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/12/movies/how-to-rob-a-bank-review.html",
-          "title": "‘How to Rob a Bank’ Review: Heist Humor Worthy of TikTok",
-          "publisher": "The New York Times",
+          "url": "https://brobible.com/culture/article/james-bond-casting-process/",
+          "title": "Grueling James Bond Casting Process Revealed; Private Jets, 'GoldenEye' Scripts, Red Ink, Secret Passes",
+          "publisher": "BroBible",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-b9DRnY9M6xr1sdlQgHcIB5HNgl3dyMk7Pgc_Tr3xfVKV_4g1Z35aeKVSISc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAcNx0dBl4tp83ymnRA5UKzDLatLLpNCTRTbbJeuA1Hl-y9NWILSehPNd1rGk"
         }
       ]
     },
@@ -151,13 +240,20 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-16T15:30:00Z",
       "related_news_urls": [
+        "https://dangerousminds.net/movies/sean-connery-quit-playing-james-bond-his-kid-brother-took-over-pic/",
         "https://qz.com/james-bond-actors-ages-first-films",
-        "https://www.mensjournal.com/news/james-bond-actors-ages-first-007-movie",
-        "https://people.com/vintage-photos-from-sean-connery-james-bond-sets-12249358"
+        "https://www.mensjournal.com/news/james-bond-actors-ages-first-007-movie"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAvJSqSgNaqrqELN94O4cPk9GZ1b6VqkU12v2JalKeJYFkuQz68N_0N_Wh380",
-      "image_credit": "qz.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJluZR6FkuBAiqEDqyXBPneFH5_RFpMcK9QifhrKmOqTJhI-JSjyVcDkgwmbs",
+      "image_credit": "Dangerous Minds",
       "news": [
+        {
+          "url": "https://dangerousminds.net/movies/sean-connery-quit-playing-james-bond-his-kid-brother-took-over-pic/",
+          "title": "Sean Connery quit playing James Bond. His kid brother took over",
+          "publisher": "Dangerous Minds",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJluZR6FkuBAiqEDqyXBPneFH5_RFpMcK9QifhrKmOqTJhI-JSjyVcDkgwmbs"
+        },
         {
           "url": "https://qz.com/james-bond-actors-ages-first-films",
           "title": "James Bond actors' ages in their first 007 films, in order",
@@ -171,13 +267,6 @@
           "publisher": "Men's Journal",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShihlmXsF2gF-6Ls09Vqp1rwRTlAvpWEuWQtMEarTDSOLYR9SBQpRpREhI5xM"
-        },
-        {
-          "url": "https://people.com/vintage-photos-from-sean-connery-james-bond-sets-12249358",
-          "title": "10 Vintage Photos from Sean Connery’s ‘James Bond’ Sets",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjIqHRRn9PZMH9KMHcmeS7kz3LdIOlJnwZqJOvhgHXmdhOErEzasXG2_jQnyg"
         }
       ]
     },
@@ -248,95 +337,6 @@
           "publisher": "IMDb",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9YR4ZTQe2om8ylo_aHJVbQZ4XSC79sfcR-bI1D2Rw4CH1_0hHVYRtp-uwScQ"
-        }
-      ]
-    },
-    {
-      "query": "theo james",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T15:20:00Z",
-      "related_news_urls": [
-        "https://greekcitytimes.com/2026/11/16/theo-james-reveals-his-dream-of-owning-a-home-in-greece/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEFXXVSGczRsDHEsp9AGXvj3z4Es1qwbnjgwjKTFwxoo8G6TTgYkNrkXqU0_I",
-      "image_credit": "Greek City Times",
-      "news": [
-        {
-          "url": "https://greekcitytimes.com/2026/11/16/theo-james-reveals-his-dream-of-owning-a-home-in-greece/",
-          "title": "Theo James Reveals His Dream of Owning a Home in Greece",
-          "publisher": "Greek City Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEFXXVSGczRsDHEsp9AGXvj3z4Es1qwbnjgwjKTFwxoo8G6TTgYkNrkXqU0_I"
-        }
-      ]
-    },
-    {
-      "query": "pierce brosnan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T15:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/16/entertainment/video/entertainment-showbiz-hollywood-minute-thomas-crown-affair-roger-taylor-duran-duran-avatar-seven-havens",
-        "https://www.out.com/celebs/michael-b-jordan-movie-trailer",
-        "https://www.laineygossip.com/is-michael-b-jordan-trolling-us-with-new-trailer-for-the-thomas-crown-affair-that-is-giving-bond-vibes/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaYVoO-KqNIG6sKSBIhFTk3yrOvmlYDMTw_oVfOjaVmZmGCxwQGhfq4NVAOUk",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/16/entertainment/video/entertainment-showbiz-hollywood-minute-thomas-crown-affair-roger-taylor-duran-duran-avatar-seven-havens",
-          "title": "Hollywood Minute: Michael B. Jordan returns in ‘The Thomas Crown Affair’",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaYVoO-KqNIG6sKSBIhFTk3yrOvmlYDMTw_oVfOjaVmZmGCxwQGhfq4NVAOUk"
-        },
-        {
-          "url": "https://www.out.com/celebs/michael-b-jordan-movie-trailer",
-          "title": "Michael B. Jordan rocks tight boxer briefs in sexy new clip",
-          "publisher": "Out Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-RRxS0fRxxCWY-pReg9wX4EXlcwhJIzOCuAHb761md8aPosIWgrlKUPF4kaQ"
-        },
-        {
-          "url": "https://www.laineygossip.com/is-michael-b-jordan-trolling-us-with-new-trailer-for-the-thomas-crown-affair-that-is-giving-bond-vibes/",
-          "title": "Is Michael B. Jordan trolling us with new trailer for The Thomas Crown Affair that is giving Bond vibes?",
-          "publisher": "LaineyGossip",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIWxPp7QxJkl_2hj7Ehv6PKXfK1lmA42uy4BC71AXFUQmcTQaarav6w2NFhtE"
-        }
-      ]
-    },
-    {
-      "query": "grand theft auto vi",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T15:20:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-        "https://www.audacy.com/wben/news/local/all-tech-eyes-on-grand-theft-auto-vi-release-thursday",
-        "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-          "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94"
-        },
-        {
-          "url": "https://www.audacy.com/wben/news/local/all-tech-eyes-on-grand-theft-auto-vi-release-thursday",
-          "title": "All tech eyes on Grand Theft Auto VI release Thursday",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsoTvekEvrSluyPRJVNsNiK5jmchLVcBc9-pbU_44Ehi5uB_c5wBPaYZeKp0U"
-        },
-        {
-          "url": "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
-          "title": "Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcX3HbDpCNM6y5ct8Zb36Q0dq2OK0epLORhVFBkEfStwDKfo7YWU5uyMKUhTk"
         }
       ]
     }
