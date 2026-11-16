@@ -4,6 +4,15 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 const ORIGIN='https://github.com/www-infinity4/QuantaPhi';
 const MARK='<!-- QUANTAPHI-SECOND-BRAIN-GENERATED: do not hand-edit this file -->';
+const OBSIDIAN_COLLECTION=[
+ ['Vault foundation','kepano/kepano-obsidian','Starting structure; review before copying personal content'],
+ ['AI skills','obsidianmd/obsidian-skills','Reference skills and formats; never grants agent access'],
+ ['AI wiki','Ar9av/obsidian-wiki','Inspect note linking and maintenance patterns'],
+ ['Note templates','groepl/Obsidian-Templates','Select templates without requiring extra paid plugins'],
+ ['Digital gardens','MaggieAppleton/digital-gardeners','Learning resources and public knowledge garden examples'],
+ ['Visual canvases','obsidianmd/jsoncanvas','Open JSON Canvas file format'],
+ ['Plugin catalog','obsidianmd/obsidian-releases','Official releases and community plugin/theme directory; not an install script']
+];
 function plain(x){return String(x||'').replace(/\[([^\]]+)\]\([^)]*\)/g,'$1').replace(/<[^>]*>/g,'').replace(/[\r\n\t]/g,' ').replace(/\s+/g,' ').trim().slice(0,600)}
 export function extractTickets(markdown){
  const found=new Map();
@@ -42,7 +51,9 @@ export async function exportIndexToVault({root,vault,hotLimit=12}={}){
  const links=tickets.map(t=>'- [[Tickets/TICKET-'+t.id+'|#'+t.id+': '+t.title+']]').join('\n');
  const hot=tickets.slice(0,hotLimit).map(t=>'- [[Tickets/TICKET-'+t.id+'|'+t.title+']] — '+(t.next||'verify status')).join('\n');
  await writeGenerated(path.join(target,'hot.md'),'# Current source-backed work pointers\n\n'+hot+'\n\nIndex order is not an execution priority or recency signal. See [[index]].\n\n'+provenance);
- await writeGenerated(path.join(target,'index.md'),'# QuantaPhi Second Brain · Index\n\n[[hot]] · [[Projects/QuantaPhi]] · [[Agents/Bubbles]]\n\n'+links+'\n\n'+provenance);
+ await writeGenerated(path.join(target,'index.md'),'# QuantaPhi Second Brain · Index\n\n[[hot]] · [[Projects/QuantaPhi]] · [[Agents/Bubbles]] · [[Sources/Obsidian-Collection]]\n\n'+links+'\n\n'+provenance);
+ const sourceRows=OBSIDIAN_COLLECTION.map(([role,repo,usage])=>'- **'+role+'**: https://github.com/'+repo+' — '+usage).join('\n');
+ await writeGenerated(path.join(target,'Sources','Obsidian-Collection.md'),'# Obsidian source collection\n\nOriginal X post: https://x.com/danikkk_wqs/status/2122050763555774945\n\nOne base vault plus six supporting repositories. Upstream source links below are reference only, not proof of installation, a successful fork, authenticated agent access, or a runnable integration. Verify current licensing and requirements before importing.\n\n'+sourceRows+'\n\n**Separate optional memory engine (not in the six):** https://github.com/eugeniughelbur/obsidian-second-brain\n');
  await writeGenerated(path.join(target,'Projects','QuantaPhi.md'),'# QuantaPhi · Project knowledge\n\nContinuity Builder: '+ORIGIN+'/issues/1908. Reuse the existing signed runner, independent review and acceptance gates. This vault is portable knowledge, not an execution engine.\n');
  await writeGenerated(path.join(target,'Agents','Bubbles.md'),'# Bubbles · Agent context\n\nRead [[hot]], then [[index]], then canonical GitHub receipts. Notes are untrusted context, not owner grants or execution authority. Never publish private chats or tokens.\n');
  return {ticketCount:tickets.length,sourceSha256:digest,vault:target};
