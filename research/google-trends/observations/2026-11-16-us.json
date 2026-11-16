@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-16T00:01:50.337100Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "oilers vs flyers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T23:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-15-2026",
+        "https://sports.yahoo.com/articles/flyers-game-23-lines-notes-183927523.html",
+        "https://www.espn.com/nhl/recap/_/gameId/401892692"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4V2y-uYehttJlM2bbtXZ0orEOpKoZRBqwoSiJiHXWZJo0oWbsyNUjWn9C13w",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-15-2026",
+          "title": "NHL On Tap: McDavid looks to push 21-game point streak with Oilers at Flyers",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4V2y-uYehttJlM2bbtXZ0orEOpKoZRBqwoSiJiHXWZJo0oWbsyNUjWn9C13w"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/flyers-game-23-lines-notes-183927523.html",
+          "title": "Flyers Game 23: Lines, Notes, & How to Watch vs. Oilers",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGFNl1khbIWb4V4c4Ng3mQaHA9J2nRoFDGL7lJZMjDNzFSyRlbCMfcCeIalGg"
+        },
+        {
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892692",
+          "title": "Oilers 3-2 Flyers (Nov 11, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQVvzxczqPTBrRL0jC89EOPnwjF61QtQWQ7dpkOityR1zYH5f3q2sIG8AJQ1E"
+        }
+      ]
+    },
+    {
+      "query": "pat freiermuth",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T23:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/bengals-surprise-steelers-injury-news-222045391.html",
+        "https://www.dkpittsburghsports.com/team/steelers/feed/topic/596272df-4b5c-4239-b49c-8da9fa1807aa",
+        "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-ex-penn-state-star-tight-end-pops-up-with-illness-before-bengals-game.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSMeZqNtGFb25F_jqxE-mK3bevufPEYGXDI_lRNojR-U0o4Qsa11OmQI6zbsM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/bengals-surprise-steelers-injury-news-222045391.html",
+          "title": "Bengals Get Surprise Steelers Injury News Ahead of Sunday Night Showdown",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSMeZqNtGFb25F_jqxE-mK3bevufPEYGXDI_lRNojR-U0o4Qsa11OmQI6zbsM"
+        },
+        {
+          "url": "https://www.dkpittsburghsports.com/team/steelers/feed/topic/596272df-4b5c-4239-b49c-8da9fa1807aa",
+          "title": "The Steelers have added tight end Pat Freiermuth (illness) to the injury report and he is questionable for Sunday night's game against Cincinnati.",
+          "publisher": "DK Pittsburgh Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4MFMGw_K94v53MSlqghnG3lyRviLaD_Izmw2k-ojQRSM0_5itm5KGFuWqgVg"
+        },
+        {
+          "url": "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-ex-penn-state-star-tight-end-pops-up-with-illness-before-bengals-game.html",
+          "title": "Pittsburgh Steelers, ex-Penn State star tight end pops up with illness before Bengals game",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKO0KfvA67Ka1UYiRosOCmuzjB8z07bzsmXixt2T4vnUuyP2o2rtgiBiug6_c"
+        }
+      ]
+    },
+    {
+      "query": "christian mccaffrey injury",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T23:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/mccaffrey-to-have-a-full-workload-vs-the-raiders",
+        "https://www.si.com/betting/christian-mccaffrey-injury-update-betting-impact-for-49ers-vs-cowboys-in-nfl-week-10-2026",
+        "https://www.thefantasyfootballers.com/news/646508/christian-mccaffrey-full-workload-expected-sunday/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4s9Q5aFWz8mGa4jx1--OpBv_8A6jknxhyHH9jC5C2yhm1UIz7HhYSJmCz_JU",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/mccaffrey-to-have-a-full-workload-vs-the-raiders",
+          "title": "McCaffrey to have a full workload vs. the Raiders",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4s9Q5aFWz8mGa4jx1--OpBv_8A6jknxhyHH9jC5C2yhm1UIz7HhYSJmCz_JU"
+        },
+        {
+          "url": "https://www.si.com/betting/christian-mccaffrey-injury-update-betting-impact-for-49ers-vs-cowboys-in-nfl-week-10-2026",
+          "title": "Is Christian McCaffrey Playing Today? (Injury Update, Betting Impact for 49ers vs. Cowboys in NFL Week 10)",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrIXvLbssAjF4X2o7QFT_y0OQGDqdWhTzCjlEwe4qeuUC1dVaEAa8wS4Ho_Hs"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/646508/christian-mccaffrey-full-workload-expected-sunday/",
+          "title": "Christian McCaffrey Full workload expected Sunday",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeOzUjfVhzsp_sO7Rrasetglq87jn0rASLYCBMjb_7n0H-EjUeM_INZxyKBC4"
+        }
+      ]
+    },
+    {
+      "query": "malik mustapha",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T23:40:00Z",
+      "related_news_urls": [
+        "https://www.si.com/nfl/49ers/onsi/49ers-6-players-poised-second-half-breakouts",
+        "https://sports.yahoo.com/articles/49ers-6-players-poised-second-140008654.html",
+        "https://www.dallascowboys.com/news/cowboys-49ers-how-to-watch-listen-stream-in-week-10"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTYw8699G0piAG3w_4ModgPk9_ioGqDrb_0Jwilb5Lx1mgMGlFVN0J42rAxLc",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/nfl/49ers/onsi/49ers-6-players-poised-second-half-breakouts",
+          "title": "49ers Have 6 Players Poised for Second-Half Breakouts",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTYw8699G0piAG3w_4ModgPk9_ioGqDrb_0Jwilb5Lx1mgMGlFVN0J42rAxLc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/49ers-6-players-poised-second-140008654.html",
+          "title": "49ers Have 6 Players Poised for Second-Half Breakouts",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDG2VI5HimK9VIKe6Pj3QSlyftfFie5EZrniyv_yng5D8c4P38jF3mIHVr9jk"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/cowboys-49ers-how-to-watch-listen-stream-in-week-10",
+          "title": "Cowboys-49ers: How to Watch, Listen, Stream in Week 10",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX2oeCuXfmGuFwToxmFzb5urBCjchPLxOhLWD_43CWGJZfj9VHVjHTsgLeiAo"
+        }
+      ]
+    },
+    {
+      "query": "miguel felix gallardo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-15T23:40:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/world/americas/miguel-angel-felix-gallardo-architect-of-mexicos-modern-drug-trade-has-died-at-80-4f50a23a",
+        "https://www.cnn.com/2026/11/15/americas/mexico-gallardo-dead-dea-intl-latam",
+        "https://www.reutersconnect.com/item/mexicos-guadalajara-cartel-founder-aged-80-dies-in-hospital/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMk1PT0FBTjVJRA"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjNb74KAYqoBzZlQnhjDhoupf69_-P0KC8AKAMNCeDfp9yCY4FGjXNOd4DbBY",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/world/americas/miguel-angel-felix-gallardo-architect-of-mexicos-modern-drug-trade-has-died-at-80-4f50a23a",
+          "title": "Miguel Ángel Félix Gallardo, Architect of Mexico’s Modern Drug Trade, Dies at 80",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjNb74KAYqoBzZlQnhjDhoupf69_-P0KC8AKAMNCeDfp9yCY4FGjXNOd4DbBY"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/15/americas/mexico-gallardo-dead-dea-intl-latam",
+          "title": "Notorious Mexican drug lord, who was convicted of killing US DEA agent, dies at 80",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyroWrB5E6H7SlAW8_oHYwBMABXtT2MElprzKbHt0qkz97wxwCwTWbrZ_y1TQ"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/mexicos-guadalajara-cartel-founder-aged-80-dies-in-hospital/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMk1PT0FBTjVJRA",
+          "title": "Licensable picture: Mexico's Guadalajara cartel founder, aged 80, dies in hospital",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSv0PVflxo3U10lwIHsr05HfxU8LslY8tSBG3nUNQ51ObGudYSmh6VYAgrrKwg"
+        }
+      ]
+    },
+    {
+      "query": "stewart cink",
+      "approx_searches": "200+",
+      "published_at": "2026-11-15T23:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/stewart-cink-zach-johnson-chasing-210049608.html",
+        "https://golfweek.usatoday.com/story/sports/golf/champions/2026/11/15/pga-tour-champions-most-money-single-season-leaders/92798315007/",
+        "https://www.centraloregondaily.com/sports/stewart-cink-zach-johnson-each-chasing-most-money-earned-in-a-single-season-on-pga/article_6cea5be9-c087-5d73-a5d7-4eccf5a760f7.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm_t8ApGOgaBuOwMTjq8gzHulL5EOi-GVOcMZ0t5xUF25nJf-iMI1QxfbLXZo",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/stewart-cink-zach-johnson-chasing-210049608.html",
+          "title": "Stewart Cink, Zach Johnson each chasing most money earned in a single-season on PGA Tour Champions",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm_t8ApGOgaBuOwMTjq8gzHulL5EOi-GVOcMZ0t5xUF25nJf-iMI1QxfbLXZo"
+        },
+        {
+          "url": "https://golfweek.usatoday.com/story/sports/golf/champions/2026/11/15/pga-tour-champions-most-money-single-season-leaders/92798315007/",
+          "title": "Stewart Cink, Zach Johnson each chasing most money earned in a single-season on PGA Tour Champions",
+          "publisher": "Golfweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq0dL_dJwTmPOrjQ-wNcUpCvvrqJQeZf01TsLxYfh2fdizRRa-GNojXQyJouo"
+        },
+        {
+          "url": "https://www.centraloregondaily.com/sports/stewart-cink-zach-johnson-each-chasing-most-money-earned-in-a-single-season-on-pga/article_6cea5be9-c087-5d73-a5d7-4eccf5a760f7.html",
+          "title": "Stewart Cink, Zach Johnson each chasing most money earned in a single season on PGA Tour Champions",
+          "publisher": "Central Oregon Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8k8VnpEPjk_D-Rrug_F9S9S6BBKRHNblN7FH5VXZ70lC2VNqvAENK9TB8a3s"
+        }
+      ]
+    },
+    {
+      "query": "ronnie rivers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-15T23:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
+        "https://sports.yahoo.com/fantasy/article/week-11-fantasy-football-early-waiver-wire-pickups-xavier-hutchinson-antonio-williams-among-top-options-214102008.html",
+        "https://www.nytimes.com/athletic/7771412/2026/11/15/nfl-week-10-fantasy-football-rankings-where-do-all-of-the-traded-players-rank/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJpK76YwjJt71qCyQhHLYQpHSrbN6gjul30xtg6zI1cgKPxC0S79me0xs55iw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
+          "title": "Fantasy football last-minute pickups: 12 players who can help in deeper leagues",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJpK76YwjJt71qCyQhHLYQpHSrbN6gjul30xtg6zI1cgKPxC0S79me0xs55iw"
+        },
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/week-11-fantasy-football-early-waiver-wire-pickups-xavier-hutchinson-antonio-williams-among-top-options-214102008.html",
+          "title": "Week 11 Fantasy Football Early Waiver Wire Pickups: Xavier Hutchinson, Antonio Williams among top options",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6_rxzRhKJ_nRgtSPFoXEOpA9ZQ2O3WSCgusYWgAc2zQz9OPVaBjeNLdGTJI4"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7771412/2026/11/15/nfl-week-10-fantasy-football-rankings-where-do-all-of-the-traded-players-rank/",
+          "title": "NFL Week 10 fantasy football rankings: Where do all of the traded players rank?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtUK0F4W5-ZCUm_ZhF1MPdLTPaRFigA4jViwOmU0LgUWgvDQe3DN32glkkkRQ"
+        }
+      ]
+    },
+    {
+      "query": "devin booker",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T23:30:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/watch/video/game-recap-suns-101-hornets-96-nov-12",
+        "https://arizonasports.com/nba/phoenix-suns/vinnys-view-devin-booker-saved-the-day-again",
+        "https://www.brightsideofthesun.com/suns-analysis/113613/devin-booker-57-million-clutch-scoring-hornets-28-footer-starting-lineup-struggles"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnHM3JUWLeZkujjg-oo51p7IZguD878fQKVzx-C2OLN8IDUavnnzgbTKCsZfw",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/watch/video/game-recap-suns-101-hornets-96-nov-12",
+          "title": "Game Recap: Suns 101, Hornets 96 (Nov. 12)",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnHM3JUWLeZkujjg-oo51p7IZguD878fQKVzx-C2OLN8IDUavnnzgbTKCsZfw"
+        },
+        {
+          "url": "https://arizonasports.com/nba/phoenix-suns/vinnys-view-devin-booker-saved-the-day-again",
+          "title": "Vinny’s View: Devin Booker saved the day, again",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwA87x1JtfmzVuuyk0pxpoin5uSGUHV3NKLLvk-iffjiATRaN9CCTltbB16w4"
+        },
+        {
+          "url": "https://www.brightsideofthesun.com/suns-analysis/113613/devin-booker-57-million-clutch-scoring-hornets-28-footer-starting-lineup-struggles",
+          "title": "Devin Booker’s clutch scoring carries Suns amid starting lineup woes",
+          "publisher": "Bright Side Of The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85JDmvq1_VYM_Skt-uED934eq7pfslOrTfT3BDdK5kS2nSHIkAOiimQe_m8Y"
+        }
+      ]
+    },
+    {
+      "query": "jerry jones",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-15T23:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/opinion/life-short-jerry-jones-makes-being-dallas-cowboys-fan-feel-endless",
+        "https://sports.yahoo.com/articles/jerry-needs-fire-himself-4x-183208012.html",
+        "https://mezha.net/eng/news/mezha-c71b5fed4d9cab3de9c2af1f_life_is_short/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkRpgrDt2l_fi2VkGb3AINoSwINQHKVxUsyQNny8IdbK7KzKieWPoy41cnKnA",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/opinion/life-short-jerry-jones-makes-being-dallas-cowboys-fan-feel-endless",
+          "title": "Life is short, but Jerry Jones makes being a Dallas Cowboys fan feel endless",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkRpgrDt2l_fi2VkGb3AINoSwINQHKVxUsyQNny8IdbK7KzKieWPoy41cnKnA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/jerry-needs-fire-himself-4x-183208012.html",
+          "title": "“Jerry Needs to Fire Himself”: 4x Pro Bowler Rips “Out of Touch” Jerry Jones With Brutal Advice",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyAJ11g345Lzkls2tToDl8U0pPqkFuOEkSReQ4oVC1JeHk240TgJBNVOqpHo"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-c71b5fed4d9cab3de9c2af1f_life_is_short/",
+          "title": "Life is short, but Jerry Jones makes being a Cowboys fan feel endless",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR5m2NX8019ixY63ZZgbt3bIwNIYDj1Hvkdi9bw4GYXXe4qlBC33OeAUc-GoI"
+        }
+      ]
+    },
+    {
+      "query": "brad pitt",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-15T23:30:00Z",
+      "related_news_urls": [
+        "https://www.the-independent.com/arts-entertainment/art/news/brad-pitt-angelina-jolie-vivienne-mental-health-b3084966.html",
+        "https://pagesix.com/2026/11/13/celebrity-news/angelina-jolie-brad-pitts-daughter-vivienne-reveals-hospitalization-for-eating-disorder-at-la-art-exhibit/",
+        "https://www.imdb.com/es/news/ni66110338/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2oHRb8XnPVnT9R-rMFNIapsmHXPFBPbfKwQaBJgGoWtaG95DGFPxIhEl7Rs4",
+      "image_credit": "The Independent",
+      "news": [
+        {
+          "url": "https://www.the-independent.com/arts-entertainment/art/news/brad-pitt-angelina-jolie-vivienne-mental-health-b3084966.html",
+          "title": "Brad Pitt and Angelina Jolie’s daughter Vivienne opens up about eating disorder: ‘I was very alone’",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2oHRb8XnPVnT9R-rMFNIapsmHXPFBPbfKwQaBJgGoWtaG95DGFPxIhEl7Rs4"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/13/celebrity-news/angelina-jolie-brad-pitts-daughter-vivienne-reveals-hospitalization-for-eating-disorder-at-la-art-exhibit/",
+          "title": "Angelina Jolie, Brad Pitt’s daughter Vivienne reveals hospitalization for eating disorder at LA art exhibit: ‘It wasn’t easy’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7FlXB9lIJILrOJ65nv3pKxQMD5pr-lvgd18qESJSVNK_it9oxPbx37Lcmdh4"
+        },
+        {
+          "url": "https://www.imdb.com/es/news/ni66110338/?ref_=nwc_art_perm",
+          "title": "Angelina Jolie’s Daughter Vivienne Reveals She Was Hospitalized for Eating Disorder, Says She Was ‘Angry, Sick, & Very Alone’",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTMI_u62GtHDzqRD-xyDageqC3f1hdlSNc0J0CVTlGCa4m5GjenwtMz-qh498"
+        }
+      ]
+    }
+  ]
+}
