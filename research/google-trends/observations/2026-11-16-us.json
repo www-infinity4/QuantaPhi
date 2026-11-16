@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T11:01:11.167544Z",
+  "checked_at": "2026-11-16T11:32:48.624097Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mike tomlin coaching rumors",
+      "query": "weather orlando",
       "approx_searches": "1000+",
-      "published_at": "2026-11-16T10:40:00Z",
+      "published_at": "2026-11-16T11:10:00Z",
       "related_news_urls": [
-        "https://triblive.com/sports/steelers-notebook-tomlin-greets-several-of-his-former-players-ahead-of-sunday-night-football-telecast/",
-        "https://www.profootballrumors.com/2026/11/mike-tomlin-expected-to-be-top-coaching-candidate-in-2027",
-        "https://www.post-gazette.com/sports/steelers/2026/11/14/mike-tomlin-television-career-nfl/stories/202611130046"
+        "https://www.winknews.com/weather/swfl-weather-shift-more-clouds-gusty-winds-and-showers-ahead/article_328e487e-d3df-4371-90e5-d9784c5e0424.html",
+        "https://www.news4jax.com/weather/2026/11/15/brrrr-its-cold-out-here-turn-that-heat-up/",
+        "https://www.wctv.tv/2026/11/15/frosty-start-morning-slow-warming-trend-ahead/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGPqt36NpGZNzcAg9t-Zyq3M30e6XssSiR4SjEMvR3J2MWRFztdtRZSEp_BHw",
-      "image_credit": "TribLIVE.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOxOYCv3JtiwnJEMbovOFIvhZ-cQrNzsVSOJnBGC0JbKycuviWEzol6DTclg",
+      "image_credit": "WINK News - Southwest Florida",
       "news": [
         {
-          "url": "https://triblive.com/sports/steelers-notebook-tomlin-greets-several-of-his-former-players-ahead-of-sunday-night-football-telecast/",
-          "title": "Steelers notebook: Mike Tomlin greets several of his former players ahead of ‘Sunday Night Football’ telecast",
-          "publisher": "TribLIVE.com",
+          "url": "https://www.winknews.com/weather/swfl-weather-shift-more-clouds-gusty-winds-and-showers-ahead/article_328e487e-d3df-4371-90e5-d9784c5e0424.html",
+          "title": "SWFL weather shift | More clouds, gusty winds and showers ahead",
+          "publisher": "WINK News - Southwest Florida",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGPqt36NpGZNzcAg9t-Zyq3M30e6XssSiR4SjEMvR3J2MWRFztdtRZSEp_BHw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOxOYCv3JtiwnJEMbovOFIvhZ-cQrNzsVSOJnBGC0JbKycuviWEzol6DTclg"
         },
         {
-          "url": "https://www.profootballrumors.com/2026/11/mike-tomlin-expected-to-be-top-coaching-candidate-in-2027",
-          "title": "Mike Tomlin Expected To Be Top Coaching Candidate In 2027",
-          "publisher": "ProFootballRumors.com",
+          "url": "https://www.news4jax.com/weather/2026/11/15/brrrr-its-cold-out-here-turn-that-heat-up/",
+          "title": "BRRRR it’s cold out here, turn that heat UP!",
+          "publisher": "News4JAX",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIxGFoQ-e05wwtVExKN4enb_8PnejAbdRl9YKkFnz9MTzXOuxy7DtUEpp-V7o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHDw5MsFiUSo09vsFVo8Xk5Ha9X-yT7TApe9eJwR7Pb-m2ibw1KfwJ_Z0VvVY"
         },
         {
-          "url": "https://www.post-gazette.com/sports/steelers/2026/11/14/mike-tomlin-television-career-nfl/stories/202611130046",
-          "title": "Tomlin on TV: Why some think Mike Tomlin can be ‘a star’ — if he stays off the NFL sidelines",
-          "publisher": "Pittsburgh Post-Gazette",
+          "url": "https://www.wctv.tv/2026/11/15/frosty-start-morning-slow-warming-trend-ahead/",
+          "title": "Frosty start to the morning, slow warming trend ahead for Tallahassee, the Big Bend and South Georgia 🥶",
+          "publisher": "WCTV",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGrgU69cQzUjoFZk1ixHeTGBmU0l5w24rJWTqQBTBMG8eYbtm6UEQHLfnRv2g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9NWiejHimQQg0Kx84nIGDclTpYBvNxvjYYPRXPG8hT9EBpE51nXZf-DrpvYY"
         }
       ]
     },
     {
-      "query": "elizabeth warren",
+      "query": "washington commanders nfc east standings",
       "approx_searches": "100+",
-      "published_at": "2026-11-16T10:40:00Z",
+      "published_at": "2026-11-16T11:10:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/politics/congress/us-attorney-warns-sen-elizabeth-warren-investigating-trump-associates-rcna609532",
-        "https://www.politico.com/news/2026/11/15/federal-prosecutor-elizabeth-warren-oversight-01166765",
-        "https://www.reuters.com/world/us-justice-department-warns-senator-warren-over-records-preservation-2026-11-16/"
+        "https://www.hogshaven.com/washington-commanders-discussion/455600/washington-commanders-nfc-east-cowboys-standings-nfl-week-10",
+        "https://www.cbssports.com/nfl/news/how-a-six-win-nfc-east-team-could-end-up-making-the-playoffs-commanders-giants/",
+        "https://commanderswire.usatoday.com/story/sports/nfl/commanders/2026/11/14/commanders-scott-turner-bold-nfc-east-prediction/92769595007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmM_ZaUueoHNdRVlyC0mi0KqVzWPFw-McB-2Q7620dhAz2VQzLUN3Q4GUdTj0",
-      "image_credit": "NBC News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQDA6QrTMROePlRcurwhq8ZpKxaH3M-UU4zAaAyG-SnX_eheMNaNTDM6NOwqo",
+      "image_credit": "Hogs Haven",
       "news": [
         {
-          "url": "https://www.nbcnews.com/politics/congress/us-attorney-warns-sen-elizabeth-warren-investigating-trump-associates-rcna609532",
-          "title": "U.S. attorney warns Sen. Elizabeth Warren against investigating Trump associates",
-          "publisher": "NBC News",
+          "url": "https://www.hogshaven.com/washington-commanders-discussion/455600/washington-commanders-nfc-east-cowboys-standings-nfl-week-10",
+          "title": "Where Washington Commanders stand in NFC East after Cowboys loss",
+          "publisher": "Hogs Haven",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmM_ZaUueoHNdRVlyC0mi0KqVzWPFw-McB-2Q7620dhAz2VQzLUN3Q4GUdTj0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQDA6QrTMROePlRcurwhq8ZpKxaH3M-UU4zAaAyG-SnX_eheMNaNTDM6NOwqo"
         },
         {
-          "url": "https://www.politico.com/news/2026/11/15/federal-prosecutor-elizabeth-warren-oversight-01166765",
-          "title": "Federal prosecutor takes aim at Elizabeth Warren’s oversight warnings",
-          "publisher": "Politico",
+          "url": "https://www.cbssports.com/nfl/news/how-a-six-win-nfc-east-team-could-end-up-making-the-playoffs-commanders-giants/",
+          "title": "NFL nightmare: How a six-win NFC East team could end up making the playoffs if Commanders beat the Giants",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ90PX8He9OIxJkMVc5zO4SlrpJ5v9lQtSawvC8sQopPva6vBcy8ReGtW4QXIw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsQkKlriNz7vkMxKch52L2_GEauD4Ixur-h72ZPP85pS_RH_BRn739sVX2pqQ"
         },
         {
-          "url": "https://www.reuters.com/world/us-justice-department-warns-senator-warren-over-records-preservation-2026-11-16/",
-          "title": "US DOJ warns Senator Warren about potential Trump-related probes",
-          "publisher": "Reuters",
+          "url": "https://commanderswire.usatoday.com/story/sports/nfl/commanders/2026/11/14/commanders-scott-turner-bold-nfc-east-prediction/92769595007/",
+          "title": "Former Commanders OC makes really bold NFC East prediction",
+          "publisher": "Commanders Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9csS176sJfO8SROjSTbs3bGRrvgXRojDeHWMXJffL4lpp_d72IEkTmUioYRc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkKkMsnrU86wY5S-Z2Hplxm8bMy6RekPfqSHDvXCmg4VtBJXPqAFsyKaCxJB4"
         }
       ]
     },
     {
-      "query": "bitcoin price usd",
+      "query": "shrinking",
       "approx_searches": "100+",
-      "published_at": "2026-11-16T10:20:00Z",
+      "published_at": "2026-11-16T11:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/crypto/article/bitcoins-four-year-cycle-is-about-to-turn-bullish--if-history-repeats-chart-of-the-day-141744431.html",
-        "https://tradersunion.com/news/market-voices/show/4255610-bitcoin-gold-market-cap-metric/",
-        "https://pluang.com/en/news-feed/bitcoin-penurunan-terakhir-pemulihan-siklus-hashdex-cio"
+        "https://decider.com/2026/11/15/shrinking-season-4-release-date-cast-info-when-does-season-4-of-shrinking-come-out/",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/everything-know-shrinking-season-4-153000604.html",
+        "https://collider.com/shrinking-season-4-cast-harrison-ford-jillian-bell-dyllon-burnside/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcQ_M4w1DTrgx6T29vGrXyAiF7XFYScd_rC2k4Yd_1wFxC3GrTIBZZ4BZSGp0",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuGsx2T8x38mdTuGkWGAvj4NOj1tXzlT80BZY2MxBTgPQJ50Qsgou7qijWG1E",
+      "image_credit": "Decider",
+      "news": [
+        {
+          "url": "https://decider.com/2026/11/15/shrinking-season-4-release-date-cast-info-when-does-season-4-of-shrinking-come-out/",
+          "title": "Everything to know about ‘Shrinking’ Season 4",
+          "publisher": "Decider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuGsx2T8x38mdTuGkWGAvj4NOj1tXzlT80BZY2MxBTgPQJ50Qsgou7qijWG1E"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/everything-know-shrinking-season-4-153000604.html",
+          "title": "Everything To Know About ‘Shrinking’ Season 4",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaFui6YqOJUHHzQss2kDk_YFXnUBstJ_hDJ2urNyL_ysTPDTJ41OkDV4DWlqU"
+        },
+        {
+          "url": "https://collider.com/shrinking-season-4-cast-harrison-ford-jillian-bell-dyllon-burnside/",
+          "title": "Harrison Ford’s Apple TV Series Officially Expands Season 4 Cast",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTG8mb9EqTbnttfthQIMssVYtkZtSJn77WKKViYa8JRRY7kNmbmbTLu1EkP3g"
+        }
+      ]
+    },
+    {
+      "query": "connections hints today",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T11:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/15/crosswords/connections-companion-1254.html",
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-16-2026",
+        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-16-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4iDLOdV6GVnJKRJxfcH7rKJeguYfuE1uy8WzjI9WMjKkTUHKWShmjZB-2CU",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/15/crosswords/connections-companion-1254.html",
+          "title": "NYT Connections Answers for November 16, 2026",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4iDLOdV6GVnJKRJxfcH7rKJeguYfuE1uy8WzjI9WMjKkTUHKWShmjZB-2CU"
+        },
+        {
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-16-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 16, 2026",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-16-2026",
+          "title": "Today's NYT Connections Hints (and Answer) for Monday, November 16, 2026",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDZH0VNqmezvO46I773iK8bs50yo22Qo_cDux8LYD8WoxknE9V2Qzc0YS5E_8"
+        }
+      ]
+    },
+    {
+      "query": "xrp price",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T11:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/crypto/articles/xrp-hits-lowest-price-since-184944357.html",
+        "https://www.benzinga.com/crypto/26/11/63273960/xrp-price-tests-key-support-as-etf-and-futures-pressure-builds-on-ripple-token",
+        "https://www.tradingview.com/news/tradingview:eb6d05fc98a17:0-key-facts-xrp-etfs-assets-fall-to-1-16b-0-75-marks-key-support/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdUJwyPsdmdPp78GoE_mE28YJcra85WbNEBUdlgsJ3O5LtPyd8sAYOjLl4g_c",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/crypto/article/bitcoins-four-year-cycle-is-about-to-turn-bullish--if-history-repeats-chart-of-the-day-141744431.html",
-          "title": "Bitcoin’s four-year cycle is about to turn bullish — if history repeats: Chart of the Day",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-hits-lowest-price-since-184944357.html",
+          "title": "XRP Hits Its Lowest Price Since 2024: Here’s What It Means for Holders",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcQ_M4w1DTrgx6T29vGrXyAiF7XFYScd_rC2k4Yd_1wFxC3GrTIBZZ4BZSGp0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdUJwyPsdmdPp78GoE_mE28YJcra85WbNEBUdlgsJ3O5LtPyd8sAYOjLl4g_c"
         },
         {
-          "url": "https://tradersunion.com/news/market-voices/show/4255610-bitcoin-gold-market-cap-metric/",
-          "title": "Gold market cap ratio reframes Bitcoin growth, Muneeb Ali notes",
-          "publisher": "Traders Union",
+          "url": "https://www.benzinga.com/crypto/26/11/63273960/xrp-price-tests-key-support-as-etf-and-futures-pressure-builds-on-ripple-token",
+          "title": "XRP Price Tests Key Support as ETF and Futures Pressure Builds on Ripple Token",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThvfzJy7kgaKyYPCOaJNXNAYLstFtCFkwiuEKGond8NQzolrWPPi4Go2dJbNI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhCpxef-IyDpN034Jukw-tSpxrMrHZOhaW06w671FemvtZ8pgxFOcEyG1NlGo"
         },
         {
-          "url": "https://pluang.com/en/news-feed/bitcoin-penurunan-terakhir-pemulihan-siklus-hashdex-cio",
-          "title": "Bitcoin's price cycle shifts as volatility drops and institutional use grows, says Hashdex's Samir Kerbage.",
-          "publisher": "Pluang",
+          "url": "https://www.tradingview.com/news/tradingview:eb6d05fc98a17:0-key-facts-xrp-etfs-assets-fall-to-1-16b-0-75-marks-key-support/",
+          "title": "Key facts: XRP ETFs’ Assets Fall to $1.16B; $0.75 Marks Key Support",
+          "publisher": "TradingView",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPEMQdWsAwDOX9fgrfuiTY4wAzWhmHSWPbpER1iGUSPP3JnRZ7QqR1LTRS-w"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaSEngeu5NOXILxVQy1lNzo2z46VUVSKEhtJj9W-OIbZM3JvUrC7gzD5pShMM"
         }
       ]
     },
     {
-      "query": "nasdaq composite record highs 2026",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T10:20:00Z",
+      "query": "r.j. decker",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T11:00:00Z",
       "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/15/stock-market-doing-something-only-6th-time-in-156-years-history-says-clear-what-next-for-stocks/",
-        "https://www.telegraph.co.uk/business/2026/11/10/this-epic-wall-street-boom-is-not-over-yet/",
-        "https://finance.yahoo.com/markets/stocks/articles/stocks-risen-every-midterm-since-163202066.html"
+        "https://www.imdb.com/news/ni66101969/?ref_=nmnw_art_perm",
+        "https://collider.com/rj-decker-season-3-abc-renewal-status/",
+        "https://screenrant.com/rj-decker-season-3-renewal-abc-uphill-battle/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2h0uIOaElU3L7wbwS_Td29xnLq47zbAYJUJ_2WX93QOIDq8OCGrjy3GxWdmM",
-      "image_credit": "The Motley Fool",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOPvDMw5nc5wKC8EtM5wabuFAzpI3qt3dWMedNyZdq1SUapBWkKGp0_Fuz_iE",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.fool.com/investing/2026/11/15/stock-market-doing-something-only-6th-time-in-156-years-history-says-clear-what-next-for-stocks/",
-          "title": "The Stock Market Is Doing Something for Only the 6th Time in 156 Years, and History Says It's Clear What Comes Next for Stocks",
-          "publisher": "The Motley Fool",
+          "url": "https://www.imdb.com/news/ni66101969/?ref_=nmnw_art_perm",
+          "title": "'High Potential' Officially Won't Return Until 2027",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2h0uIOaElU3L7wbwS_Td29xnLq47zbAYJUJ_2WX93QOIDq8OCGrjy3GxWdmM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOPvDMw5nc5wKC8EtM5wabuFAzpI3qt3dWMedNyZdq1SUapBWkKGp0_Fuz_iE"
         },
         {
-          "url": "https://www.telegraph.co.uk/business/2026/11/10/this-epic-wall-street-boom-is-not-over-yet/",
-          "title": "This epic Wall Street boom is not over yet",
+          "url": "https://collider.com/rj-decker-season-3-abc-renewal-status/",
+          "title": "ABC’s ‘High Potential’ Replacement Isn’t Officially Renewed for Season 3 Yet",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkomo4JtKM5Vpx9EDWorqfIHoHPRZxqalqM5TSez6UhNB0cBwoGqbmyXZVAEs"
+        },
+        {
+          "url": "https://screenrant.com/rj-decker-season-3-renewal-abc-uphill-battle/",
+          "title": "ABC's High Potential's Replacement Is Off To An Uphill Battle For Its 2027 Return",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTMyv3KFd9b4JfonRgGYBVNkhTKO6BREKH36NjBlQvkxHHnSTrOZFJh9oufyw"
+        }
+      ]
+    },
+    {
+      "query": "gen x",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T11:00:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/business/telecom/the-chaos-and-unexpected-joys-of-a-19-hour-global-email-outage-37b7170c",
+        "https://www.reuters.com/technology/microsoft-365-outlook-down-thousands-us-users-downdetector-shows-2026-11-12/",
+        "https://finance.yahoo.com/markets/article/microsoft-says-ai-didnt-break-outlook--its-own-network-upgrade-did-133858185.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvwwbi9ZdLPcvgEn7_pW59bcEoJyqLd4AxYPBohGdRmMi7_NYSUhwTwKHWwFU",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/business/telecom/the-chaos-and-unexpected-joys-of-a-19-hour-global-email-outage-37b7170c",
+          "title": "The Chaos and Unexpected Joys of a 19-Hour Global Email Outage",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvwwbi9ZdLPcvgEn7_pW59bcEoJyqLd4AxYPBohGdRmMi7_NYSUhwTwKHWwFU"
+        },
+        {
+          "url": "https://www.reuters.com/technology/microsoft-365-outlook-down-thousands-us-users-downdetector-shows-2026-11-12/",
+          "title": "Microsoft restores service to Outlook and Teams after global outage",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_LF639AlrFGRLKWqjvB19IZh4u7RYWK4I8shw2k2ReEG1BIJD416PGft_zc"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/article/microsoft-says-ai-didnt-break-outlook--its-own-network-upgrade-did-133858185.html",
+          "title": "The Microsoft outage didn’t lose your email — here’s what it does mean for you",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtfy4fzs5DdktQZafkuzTmWcRQxc2lYjYTzFxwfQqIhy5RAV_7VieeekEjgyA"
+        }
+      ]
+    },
+    {
+      "query": "truck accident lawyer",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T11:00:00Z",
+      "related_news_urls": [
+        "https://www.beverlylaw.org/accident-news/texas/del-valle/11-14-2026-del-valle-sh-130-18-wheeler-rollover-truck-accident-lawyer/",
+        "https://www.kvue.com/article/news/local/southbound-130-at-moore-road-closed-crash-involving-overturned-semi-truck-near-cota-friday-early/269-1a32e0b6-0473-4a47-9313-b128d5164579",
+        "https://www.yahoo.com/news/videos/18-wheeler-rolls-over-sh-163709946.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrSEHThQIcLp2AZGKpOrAFpa_AuSou4vxb921qzXwcFHLeDTewixrctuW95lo",
+      "image_credit": "Beverly Law",
+      "news": [
+        {
+          "url": "https://www.beverlylaw.org/accident-news/texas/del-valle/11-14-2026-del-valle-sh-130-18-wheeler-rollover-truck-accident-lawyer/",
+          "title": "Truck driver airlifted to hospital after 18-wheeler rollover on SH 130 in SE Travis County",
+          "publisher": "Beverly Law",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrSEHThQIcLp2AZGKpOrAFpa_AuSou4vxb921qzXwcFHLeDTewixrctuW95lo"
+        },
+        {
+          "url": "https://www.kvue.com/article/news/local/southbound-130-at-moore-road-closed-crash-involving-overturned-semi-truck-near-cota-friday-early/269-1a32e0b6-0473-4a47-9313-b128d5164579",
+          "title": "1 lane of southbound SH 130 at Moore Road reopens after collision involving overturned semitruck",
+          "publisher": "KVUE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPm6e4ZKWJP3KNY_1Q5YvKbGLvd5i_fImO_0TQqUrJhasmDnt5y3TQMNq1P4w"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/18-wheeler-rolls-over-sh-163709946.html",
+          "title": "18-wheeler rolls over on SH-130, driver taken to hospital by STAR Flight",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRky4sCSvzA-60Gg0W-CbY0aAGCrEsDa0KLviCDQD9iIhdQhk4RvpGGfISUPtw"
+        }
+      ]
+    },
+    {
+      "query": "jensen huang snl skit",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-16T10:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/15/arts/television/saturday-night-live-john-mulaney-phoebe-bridgers.html",
+        "https://www.washingtonpost.com/entertainment/tv/2026/11/15/snl-teaches-tech-billionaires-lessons-jensen-huang-affair/",
+        "https://mashable.com/entertainment/snl-cold-open-jensen-huang"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJz9BZjP1BB0bL-ZYAkq5NY_rfV53053QDB7fy3rf2Wi4ZF7Zcr6JJse8OyOE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/15/arts/television/saturday-night-live-john-mulaney-phoebe-bridgers.html",
+          "title": "‘S.N.L.’ Brings Back Bowen Yang as Jensen Huang",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJz9BZjP1BB0bL-ZYAkq5NY_rfV53053QDB7fy3rf2Wi4ZF7Zcr6JJse8OyOE"
+        },
+        {
+          "url": "https://www.washingtonpost.com/entertainment/tv/2026/11/15/snl-teaches-tech-billionaires-lessons-jensen-huang-affair/",
+          "title": "SNL teaches tech billionaires the lessons of the Jensen Huang affair",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNQv6ZA6Mry4fd-QRVbVbSNOglySEBEcY_7ulvt_-hRr1E2bHMTw0oZCINHDg"
+        },
+        {
+          "url": "https://mashable.com/entertainment/snl-cold-open-jensen-huang",
+          "title": "Bowen Yang plays ex-Nvidia CEO Jensen Huang in 'SNL' cold open",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFKqzCOyfzHQoy36MX1KM8L467G_ELWFmTedQ-Dr8qBe-wVC5y9MtqttNC-XI"
+        }
+      ]
+    },
+    {
+      "query": "fireworks",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T10:50:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/france-temporarily-bans-firework-mortars-amid-school-protests-2026-11-16/",
+        "https://www.telegraph.co.uk/world-news/2026/11/11/french-protesters-set-off-fireworks-classroom-school-revolt/",
+        "https://www.independent.co.uk/news/world/europe/france-fireworks-ban-protests-paris-b3085540.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmFsZFfm6pn8Jgyq51MgqtksKT_K0-fFHt4BlNBlf37GMsVffFgNvX_lE-Q_o",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/france-temporarily-bans-firework-mortars-amid-school-protests-2026-11-16/",
+          "title": "France temporarily bans firework mortars amid school protests",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmFsZFfm6pn8Jgyq51MgqtksKT_K0-fFHt4BlNBlf37GMsVffFgNvX_lE-Q_o"
+        },
+        {
+          "url": "https://www.telegraph.co.uk/world-news/2026/11/11/french-protesters-set-off-fireworks-classroom-school-revolt/",
+          "title": "French protesters set off fireworks in classroom as school revolt escalates",
           "publisher": "The Telegraph",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuqBQFkO2fDjbfa45ICLM_BbNMOxD9B_hZ7Z1F4wSM-xvSRFgzTlbidDfehj0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM2WqLJmwcdO3ExSTnUVz2a1tl2JDAJaU831Q7oHX3xgC1dGQCye6Ca0sUTV0"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-risen-every-midterm-since-163202066.html",
-          "title": "Stocks Have Risen a Year After Every Midterm Since 1950. Here’s What That Does and Doesn’t Tell You.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6wNd1Uq-a242dsMkuv54A62QxMoi-e4vRDfLjBc8Q0f4m361W7VVpLuVzoUg"
-        }
-      ]
-    },
-    {
-      "query": "pittsburgh steelers 2027 draft quarterback strategy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T10:10:00Z",
-      "related_news_urls": [
-        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/177862/steelers-take-quarterback-in-pff-mock-draft-darian-mensah",
-        "https://steelersdepot.com/2026/11/mike-mccarthy-teases-steelers-2027-quarterback-plan/",
-        "https://steelersnow.com/jpj-replacement-steelers-land-another-cb-in-mock-2027-nfl-draft/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_7OiUl2rpr78FGUUVcefCdrQ5Wh8ucuhJyFhwIT8etB6SssgxyQVG-bODglY",
-      "image_credit": "Behind the Steel Curtain",
-      "news": [
-        {
-          "url": "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/177862/steelers-take-quarterback-in-pff-mock-draft-darian-mensah",
-          "title": "Steelers take quarterback in PFF mock draft",
-          "publisher": "Behind the Steel Curtain",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_7OiUl2rpr78FGUUVcefCdrQ5Wh8ucuhJyFhwIT8etB6SssgxyQVG-bODglY"
-        },
-        {
-          "url": "https://steelersdepot.com/2026/11/mike-mccarthy-teases-steelers-2027-quarterback-plan/",
-          "title": "Mike McCarthy Teases Steelers’ 2027 Quarterback Plan",
-          "publisher": "Steelers Depot",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPNtOUMG-V5UF6zn-H0ZDQ_4T7x-BQR2wqVCaaCJfS4LhrcrXN18Y-Hri3574"
-        },
-        {
-          "url": "https://steelersnow.com/jpj-replacement-steelers-land-another-cb-in-mock-2027-nfl-draft/",
-          "title": "JPJ Replacement? Steelers Land Another CB in Mock 2027 NFL Draft",
-          "publisher": "Steelers Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaNZ3Q_9auIAM-gfEIA4xgl3HpXQJAhAsxYXj0r_rXWA2aztUt2KQ4HdeVrw0"
-        }
-      ]
-    },
-    {
-      "query": "nigeria",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T10:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cj93rggenq4xo",
-        "https://www.channelstv.com/2026/11/15/ndlea-arrests-american-basketball-player-with-34kg-cannabis-at-lagos-airport/",
-        "https://punchng.com/ndlea-intercepts-25kg-meth-hidden-in-breakfast-cereal-from-south-africa/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGr3mraGdQ4Z-miFpQE-k9cMMlX05RH_UmIxpaqnWJQm-0-L5a87T9l3HtFh0",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cj93rggenq4xo",
-          "title": "US basketball player Greene Da'monte Khiree arrested in Nigeria with cannabis haul",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGr3mraGdQ4Z-miFpQE-k9cMMlX05RH_UmIxpaqnWJQm-0-L5a87T9l3HtFh0"
-        },
-        {
-          "url": "https://www.channelstv.com/2026/11/15/ndlea-arrests-american-basketball-player-with-34kg-cannabis-at-lagos-airport/",
-          "title": "NDLEA Arrests American Basketball Player With 34kg Cannabis At Lagos Airport",
-          "publisher": "Channels Television",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqRRj62hf_-Rj3LSsatPq-RMJZjADl5CNxV-LAIsG1nf0csjn2mvGaooSkz2g"
-        },
-        {
-          "url": "https://punchng.com/ndlea-intercepts-25kg-meth-hidden-in-breakfast-cereal-from-south-africa/",
-          "title": "NDLEA intercepts 25kg meth hidden in breakfast cereal from South Africa",
-          "publisher": "Punch Newspapers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1t-KOPwyCQ87s18S_aIsszq3tUkVed_TuePMscsQHW4cC-s_YEWK8INpe6Rs"
-        }
-      ]
-    },
-    {
-      "query": "starbucks free holiday cup 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T10:10:00Z",
-      "related_news_urls": [
-        "https://about.starbucks.com/stories/2026/starbucks-red-cup-day-2026/",
-        "https://www.delish.com/food-news/a74430610/starbucks-red-cup-day-2026-free-cup-how-to-get/",
-        "https://parade.com/food/discontinued-starbucks-holiday-drinks"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbQy0PGmHuxJHwbJmNNidWgQfAQIiENXxu8OlvV1VQJ38wDNut2Bwt27rBEso",
-      "image_credit": "Starbucks",
-      "news": [
-        {
-          "url": "https://about.starbucks.com/stories/2026/starbucks-red-cup-day-2026/",
-          "title": "Starbucks Red Cup Day 2026: How to get your free reusable holiday cup on Nov. 17",
-          "publisher": "Starbucks",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbQy0PGmHuxJHwbJmNNidWgQfAQIiENXxu8OlvV1VQJ38wDNut2Bwt27rBEso"
-        },
-        {
-          "url": "https://www.delish.com/food-news/a74430610/starbucks-red-cup-day-2026-free-cup-how-to-get/",
-          "title": "Starbucks' Free Red Cup Giveaway Returns This Week—Here's How To Get One",
-          "publisher": "Delish",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrngib-F-kbInnWKwdeLiODFdXs2ru0FhDUFW0J7ZrD2ZojzXWPIQQRbxxk30"
-        },
-        {
-          "url": "https://parade.com/food/discontinued-starbucks-holiday-drinks",
-          "title": "How to Order the Discontinued Original Starbucks Holiday Menu Today",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSO3zKzrrXE6mCq7U8P6E-Z4BnLUcWlvMm92FMKd1cluUZbGdO6-7fa2SaQKII"
-        }
-      ]
-    },
-    {
-      "query": "rockstar games gta vi",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T10:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-        "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
-        "https://www.forbes.com/sites/antoniopequenoiv/2026/11/11/grand-theft-auto-vi-reaches-1-billion-in-sales-ahead-of-release-report-says/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-          "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94"
-        },
-        {
-          "url": "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
-          "title": "Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcX3HbDpCNM6y5ct8Zb36Q0dq2OK0epLORhVFBkEfStwDKfo7YWU5uyMKUhTk"
-        },
-        {
-          "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/11/11/grand-theft-auto-vi-reaches-1-billion-in-sales-ahead-of-release-report-says/",
-          "title": "‘Grand Theft Auto VI’ Reaches $1 Billion In Sales Ahead Of Release, Report Says",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3yyMoE0sjcz2HWmcpuD3enTuobJvMKIJjc7gpHRFQzmbsclNmIsG7dby5f9I"
-        }
-      ]
-    },
-    {
-      "query": "barometric pressure",
-      "approx_searches": "100+",
-      "published_at": "2026-11-16T10:00:00Z",
-      "related_news_urls": [
-        "https://health.yahoo.com/general/article/the-internet-is-blaming-headaches-joint-pain-and-more-on-the-weather-is-the-barometric-flu-real-022849756.html",
-        "https://www.news4jax.com/health/2026/11/13/can-cool-weather-trigger-joint-pain/",
-        "https://www.the-independent.com/life-style/health-and-families/joint-pain-relief-cold-weather-worse-winter-b3084324.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP84Wwfu4GgcE_CmbUqMOwGFVqiIEQ4a84VQ2m9n8mr1RbajcfQdyKT66q6fU",
-      "image_credit": "Yahoo Health",
-      "news": [
-        {
-          "url": "https://health.yahoo.com/general/article/the-internet-is-blaming-headaches-joint-pain-and-more-on-the-weather-is-the-barometric-flu-real-022849756.html",
-          "title": "The internet is blaming headaches, joint pain, and more on the weather. Is the 'barometric flu' real?",
-          "publisher": "Yahoo Health",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP84Wwfu4GgcE_CmbUqMOwGFVqiIEQ4a84VQ2m9n8mr1RbajcfQdyKT66q6fU"
-        },
-        {
-          "url": "https://www.news4jax.com/health/2026/11/13/can-cool-weather-trigger-joint-pain/",
-          "title": "Can cool weather trigger joint pain?",
-          "publisher": "News4JAX",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_xxRy3B_YnCvB0wcvgWYE--bpOjaScD-DcriEeEO6NepoDx5_RePJedtRXp4"
-        },
-        {
-          "url": "https://www.the-independent.com/life-style/health-and-families/joint-pain-relief-cold-weather-worse-winter-b3084324.html",
-          "title": "Why your joint pain gets worse in the winter – and how to manage it",
+          "url": "https://www.independent.co.uk/news/world/europe/france-fireworks-ban-protests-paris-b3085540.html",
+          "title": "Here’s why France has banned firework mortars",
           "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBpRmDetCzkrZggmMUq5pvAWHQZbms9u75juVAO0stjbIjspkwxQmBQJ5NaCA"
-        }
-      ]
-    },
-    {
-      "query": "zohran mamdani",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T09:50:00Z",
-      "related_news_urls": [
-        "https://www.politico.com/news/2026/11/13/usda-grocery-stores-mamdani-trump-01165628",
-        "https://abc7ny.com/post/mayor-mamdani-secures-snap-rule-delay-bodegas-nationwide/20038782/",
-        "https://www.amny.com/politics/mamdani-deal-trump-delay-snap-rules/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTsoHhaUv4PaNrMZR-WB3RmLeajVAVAFKVPLPtQmAVa-FeH6lDEFKnp0m2ZlI",
-      "image_credit": "Politico",
-      "news": [
-        {
-          "url": "https://www.politico.com/news/2026/11/13/usda-grocery-stores-mamdani-trump-01165628",
-          "title": "USDA delays grocery store rule after Mamdani appeal to Trump",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTsoHhaUv4PaNrMZR-WB3RmLeajVAVAFKVPLPtQmAVa-FeH6lDEFKnp0m2ZlI"
-        },
-        {
-          "url": "https://abc7ny.com/post/mayor-mamdani-secures-snap-rule-delay-bodegas-nationwide/20038782/",
-          "title": "Mayor Mamdani secures SNAP rule delay for bodegas nationwide",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
-        },
-        {
-          "url": "https://www.amny.com/politics/mamdani-deal-trump-delay-snap-rules/",
-          "title": "Mamdani strikes deal with Trump to delay new SNAP rule enforcement nationwide | amNewYork",
-          "publisher": "amNewYork",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpM0kjdPvpSs5Bo1ul71UYr9sO8IWjdWwXkJAe3JhhHrU34n4cSfere_EzvzY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwnO6jYCVx-DTniiXAwBzATS8nn8Nbwtm5UsmNvbgQKDfVahc7TMggCLBJutA"
         }
       ]
     }
