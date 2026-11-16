@@ -3,47 +3,187 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T17:01:25.319573Z",
+  "checked_at": "2026-11-16T17:31:09.540187Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "bradley whitford",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T16:30:00Z",
+      "query": "supreme court",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T17:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/diplomats-bradley-whitford-compares-big-151200580.html",
-        "https://www.imdb.com/news/ni66109663/?ref_=nwc_art_perm",
-        "https://www.washingtonpost.com/entertainment/theater/2026/11/11/two-new-musicals-new-york-stages-fall-flat/"
+        "https://www.nbcnews.com/politics/supreme-court/supreme-court-rejects-trump-academic-funding-cuts-dei-rcna608885",
+        "https://www.cnn.com/2026/11/16/politics/supreme-court-trump-grants",
+        "https://thehill.com/regulation/court-battles/6222654-scotus-declines-trump-dei-appeal/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShvim-t9qgo-iw49VvDupK4EHCjgfVGDSf8-r5clDR0EqFiw1wpWCstss4VHM",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi8ClxWoBiBIpWplWuQk4dJ83Pm2I1B5Punjv2KZqFAGHWnuWDExAuoc6guf8",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/diplomats-bradley-whitford-compares-big-151200580.html",
-          "title": "The Diplomat's Bradley Whitford Compares His Big Season 4 Moment To A Classic Will Ferrell Movie",
-          "publisher": "Yahoo",
+          "url": "https://www.nbcnews.com/politics/supreme-court/supreme-court-rejects-trump-academic-funding-cuts-dei-rcna608885",
+          "title": "Supreme Court rejects Trump over academic funding cuts related to DEI",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShvim-t9qgo-iw49VvDupK4EHCjgfVGDSf8-r5clDR0EqFiw1wpWCstss4VHM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi8ClxWoBiBIpWplWuQk4dJ83Pm2I1B5Punjv2KZqFAGHWnuWDExAuoc6guf8"
         },
         {
-          "url": "https://www.imdb.com/news/ni66109663/?ref_=nwc_art_perm",
-          "title": "The Diplomat's Bradley Whitford Compares His Big Season 4 Moment To A Classic Will Ferrell Movie",
+          "url": "https://www.cnn.com/2026/11/16/politics/supreme-court-trump-grants",
+          "title": "Supreme Court declines Trump push to cut research grants related to DEI",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg6qmGbN6Kxm0XxkX53PAgMbU2KDKTznwf6iUfKCQsG7YkQYWvUl_H9CgLG7Y"
+        },
+        {
+          "url": "https://thehill.com/regulation/court-battles/6222654-scotus-declines-trump-dei-appeal/",
+          "title": "Supreme Court declines Trump administration’s DEI research grant appeal",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRgDzELimzcfle5r_-0ykGGEstwOWhnadPOwGSe92oeWiepOOg2FzxzkcwBrU"
+        }
+      ]
+    },
+    {
+      "query": "gypsy rose",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T17:00:00Z",
+      "related_news_urls": [
+        "https://people.com/gypsy-rose-blanchard-breaks-down-in-tears-first-live-interview-after-ken-urker-death-12255784",
+        "https://www.today.com/health/news/ken-urker-cause-of-death-gypsy-rose-blanchard-boyfriend-drug-overdose-rcna601222",
+        "https://www.wdsu.com/article/gypsy-rose-partner-ken-urker-death-louisiana/74441077"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMhswnlagSFd6sDhQ6iEt8tGREIS0x02bnWCl_sqgj4oNAsr2W7MGzz1-rANs",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/gypsy-rose-blanchard-breaks-down-in-tears-first-live-interview-after-ken-urker-death-12255784",
+          "title": "Gypsy Rose Blanchard Breaks Down in Tears During First Live Interview After Partner Ken Urker’s Death",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMhswnlagSFd6sDhQ6iEt8tGREIS0x02bnWCl_sqgj4oNAsr2W7MGzz1-rANs"
+        },
+        {
+          "url": "https://www.today.com/health/news/ken-urker-cause-of-death-gypsy-rose-blanchard-boyfriend-drug-overdose-rcna601222",
+          "title": "Ken Urker’s Cause of Death Confirmed by Louisiana Coroner’s Office",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPqd6LtGVQwKTiRZnA5rO3gJROUwmClRxV4dpEhT5z8dS_BvBq3xrHhXx5j_k"
+        },
+        {
+          "url": "https://www.wdsu.com/article/gypsy-rose-partner-ken-urker-death-louisiana/74441077",
+          "title": "Cause of death released for Gypsy Rose Blanchard's partner, Ken Urker",
+          "publisher": "WDSU",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST0uUBJMThxl1PShFK1fBS6bOUkx6fFS_EVYmL_7chnX8RiX_fyiGtyTEdIYc"
+        }
+      ]
+    },
+    {
+      "query": "estonia vs bulgaria",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T17:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmwy04kvgw95t",
+        "https://easyodds.com/estonia-vs-bulgaria-betting-odds-tips-predictions-preview-16th-november-2026",
+        "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-match-thread-bulgaria-vs-estonia-live-streams-q0hyk"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmwy04kvgw95t",
+          "title": "Estonia vs Bulgaria: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://easyodds.com/estonia-vs-bulgaria-betting-odds-tips-predictions-preview-16th-november-2026",
+          "title": "Estonia vs Bulgaria Betting Odds, Tips, Predictions, Preview 16th November 2026",
+          "publisher": "Easyodds.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTauGwv3Alc-vAMxRfusjgWZKI-z_MywDpB9TWrwYhOH-HOj_mDQ4oJ3liGRG0"
+        },
+        {
+          "url": "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-match-thread-bulgaria-vs-estonia-live-streams-q0hyk",
+          "title": "【MATCH THREAD】 Bulgaria vs Estonia 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ Ｆｒｅｅ ＯＮ Ｔv Channel",
+          "publisher": "Universitat de Barcelona",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ2LAMINkPd64L5-DR894nPQRpcoujlI7X1Mh3Z5wLmWp3K6sjexOZizTwvvI"
+        }
+      ]
+    },
+    {
+      "query": "sam elliott",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T16:50:00Z",
+      "related_news_urls": [
+        "https://www.tvline.com/2315465/quote-of-the-day-sam-elliott-difficulty-of-aging/",
+        "https://www.imdb.com/news/ni66113501/?ref_=nwc_art_perm",
+        "https://www.thelist.com/2311290/katharine-ross-relationship-history-before-sam-elliott/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1f96rj-eKksthxd5nVBsDakTssAg_mNjNpERDQ4r8F-WUB850G7odjQnGyaQ",
+      "image_credit": "TVLine",
+      "news": [
+        {
+          "url": "https://www.tvline.com/2315465/quote-of-the-day-sam-elliott-difficulty-of-aging/",
+          "title": "Quote Of The Day By Sam Elliott: 'On Some Level, It's Very Difficult. On Another, It's A Gift That I'm Alive, Because My...'",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1f96rj-eKksthxd5nVBsDakTssAg_mNjNpERDQ4r8F-WUB850G7odjQnGyaQ"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66113501/?ref_=nwc_art_perm",
+          "title": "Quote Of The Day By Sam Elliott: 'On Some Level, It's Very Difficult. On Another, It's A Gift That I'm Alive, Because My...'",
           "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR30cSfU23uDNd0a4MZG14d1CGrRWZGXCUgAVKzS4RhMDehhAVyw9J8fb_45ug"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW1Z4sCzBM0-0UBgOf0uQhp7-n5N1eItDutC0sQMFyR4qirXSGyfOLNRAH2MA"
         },
         {
-          "url": "https://www.washingtonpost.com/entertainment/theater/2026/11/11/two-new-musicals-new-york-stages-fall-flat/",
-          "title": "‘A Few Good Men’ and ‘2:22’ crackle on New York stages, but two new musicals fizzle",
-          "publisher": "The Washington Post",
+          "url": "https://www.thelist.com/2311290/katharine-ross-relationship-history-before-sam-elliott/",
+          "title": "Katharine Ross Kissed A Lot Of Frogs Before Finding Prince Charming Sam Elliott",
+          "publisher": "The List",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS68iJYMhJ3NGfVtXWVIxNBR6bAdlyMZ-k_h4cqDWGWnZ2qpi_YFv0pqq3d5IQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcYPkrT3QWLxeO-ChtZQgpL199P3v6e2BEA1gQ4cFCwNCu3ZumHm9JMAGcnOQ"
+        }
+      ]
+    },
+    {
+      "query": "lord morrow",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T16:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cqvg27wpd3l0o",
+        "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/",
+        "https://www.newsletter.co.uk/news/people/road-racing-world-rocked-by-death-of-rachel-burrows-family-well-known-in-northern-ireland-motorcycle-competitions-9354677"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cqvg27wpd3l0o",
+          "title": "Tributes as wife and daughter of DUP chairman die hours apart",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg"
+        },
+        {
+          "url": "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/",
+          "title": "Wife and daughter of former Fermanagh MLA pass away",
+          "publisher": "The Fermanagh Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZtnNiX0OFI2rS8-qexZ3-DMtGwxYgqtbs7mpkFDv0U1GhCCUYFVt_InDhyS0"
+        },
+        {
+          "url": "https://www.newsletter.co.uk/news/people/road-racing-world-rocked-by-death-of-rachel-burrows-family-well-known-in-northern-ireland-motorcycle-competitions-9354677",
+          "title": "Road racing world rocked by death of Rachel Burrows: Family well-known in Northern Ireland motorcycle competitions",
+          "publisher": "Belfast News Letter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3nn8F0-qDZtxT-ADMIRM5bwgJoHcpBWsVHdslwA-e7ujNe_Zvjcaw7zHsfrY"
         }
       ]
     },
     {
       "query": "2028 ford mustang cobra r",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T16:30:00Z",
       "related_news_urls": [
         "https://www.caranddriver.com/news/a74425789/2028-ford-mustang-cobra-future-cars/",
@@ -77,24 +217,52 @@
       ]
     },
     {
+      "query": "bradley whitford",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T16:30:00Z",
+      "related_news_urls": [
+        "https://www.lifestyleasia.com/bk/entertainment/streaming/will-the-diplomat-season-5-happen-all-we-know-about-netflix-political-drama/",
+        "https://www.tvline.com/2310927/the-diplomat-bradley-whitford-season-4-moment-classic-will-ferrell-movie/",
+        "https://movieweb.com/the-diplomat-nielsen-ratings/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96Hgl_hMDzzkMBd5NO-m59l62oqJQnIponeUQCn__Ew2y8txxn5BQ9_Ui44U",
+      "image_credit": "Lifestyle Asia Hong Kong",
+      "news": [
+        {
+          "url": "https://www.lifestyleasia.com/bk/entertainment/streaming/will-the-diplomat-season-5-happen-all-we-know-about-netflix-political-drama/",
+          "title": "‘The Diplomat’ season 5: What we know so far about the Netflix series",
+          "publisher": "Lifestyle Asia Hong Kong",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96Hgl_hMDzzkMBd5NO-m59l62oqJQnIponeUQCn__Ew2y8txxn5BQ9_Ui44U"
+        },
+        {
+          "url": "https://www.tvline.com/2310927/the-diplomat-bradley-whitford-season-4-moment-classic-will-ferrell-movie/",
+          "title": "The Diplomat's Bradley Whitford Compares His Big Season 4 Moment To A Classic Will Ferrell Movie",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1DKfAogvTX9uAl_4OX8i2AE1hLBGxMK8eFFvXqaHi8a6wDkpfuui69DNwthU"
+        },
+        {
+          "url": "https://movieweb.com/the-diplomat-nielsen-ratings/",
+          "title": "Netflix's New Near-Perfect Series Hits 1 Billion Views as it Officially Takes Over Streaming",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVwrcAXg8ENi8T4nL_r2LjYN38DzMYPu09gRgEX4KIPo52J_dqHXkfERgJKos"
+        }
+      ]
+    },
+    {
       "query": "survivor",
       "approx_searches": "1000+",
       "published_at": "2026-11-16T16:30:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/cbs-midseason-premiere-dates-ghosts-sheriff-country-survivor-1237223505/",
         "https://ew.com/survivor-expanding-two-hour-episodes-season-52-premiere-date-12256455",
-        "https://www.hollywoodreporter.com/tv/tv-news/cbs-midseason-2027-tv-premiere-dates-1236756166/"
+        "https://variety.com/2026/tv/news/survivor-season-52-premiere-date-cbs-1236948922/",
+        "https://parade.com/tv/survivor-season-52-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToFFqarwDZAxysypzZ6OTYnK9fUF3FVfDs_l3bukndb3203gcTahiGzs3KaCk",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSBlTtMSjXhPTdoRWOhaka73-XFpo8pG7KMstTSKKr6TYAaBZ-pdixpXtpfjM",
+      "image_credit": "Entertainment Weekly",
       "news": [
-        {
-          "url": "https://deadline.com/2026/11/cbs-midseason-premiere-dates-ghosts-sheriff-country-survivor-1237223505/",
-          "title": "CBS Midseason Premiere Dates: 'Cupertino' Moves, Survivor' Supersized",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToFFqarwDZAxysypzZ6OTYnK9fUF3FVfDs_l3bukndb3203gcTahiGzs3KaCk"
-        },
         {
           "url": "https://ew.com/survivor-expanding-two-hour-episodes-season-52-premiere-date-12256455",
           "title": "‘Survivor’ announces season 52 premiere date and expansion to two-hour episodes",
@@ -103,17 +271,24 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSBlTtMSjXhPTdoRWOhaka73-XFpo8pG7KMstTSKKr6TYAaBZ-pdixpXtpfjM"
         },
         {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/cbs-midseason-2027-tv-premiere-dates-1236756166/",
-          "title": "‘Cupertino’ Moving, ‘Ghosts’ Doubling Up on CBS’ Midseason Schedule",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://variety.com/2026/tv/news/survivor-season-52-premiere-date-cbs-1236948922/",
+          "title": "‘Survivor’ Season 52 Premiere Date Set at CBS in Midseason Slate",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzzjQqQ9Vu3L08Eg7Po3tX2-TsRZWoSbYB6ModwENshNnp6LQKBKa9OryxXdM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm4AbpBdjgsD5ZuF7VOk_AVTrHBypn3F21aVaGZ08OPkYnSGHl8GvKcZR92tw"
+        },
+        {
+          "url": "https://parade.com/tv/survivor-season-52-2026",
+          "title": "‘Survivor 52′ Makes Franchise History With Huge Episode Shakeup",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0ptanjNk3nTbQN3oeyfLbftEp-lFzzpmsPbi1VQL68oeRyGJxoTiL2UAozJc"
         }
       ]
     },
     {
       "query": "the view",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T16:30:00Z",
       "related_news_urls": [
         "https://ca.style.yahoo.com/candace-cameron-bure-admits-view-193231236.html",
@@ -180,139 +355,6 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ZdBJp1C6oJLyDSEQXIDuGoqXk6r_ZIuaizcpzKHpmKeIQLYvuPVaGNQC60Y"
         }
       ]
-    },
-    {
-      "query": "iceland vs luxembourg",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T16:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c95y15vnr717t",
-        "https://www.besoccer.com/match/seleccion-islandia/seleccion-luxemburgo/202768230",
-        "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-stream-here-s-iceland-vs-luxembourg-live-i7iwh"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c95y15vnr717t",
-          "title": "Iceland vs Luxembourg: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.besoccer.com/match/seleccion-islandia/seleccion-luxemburgo/202768230",
-          "title": "Pre-match Iceland vs Luxembourg, UEFA Nations League Round 6",
-          "publisher": "BeSoccer Livescore",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPiTePG9wLOY6dN-xDkb5VJyYbgepTrxCmZAs6dmWFw3SmEQBi5Z3Je3zu4ow"
-        },
-        {
-          "url": "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-stream-here-s-iceland-vs-luxembourg-live-i7iwh",
-          "title": "[𝐒𝐓ream]hERE'S*!] Iceland vs Luxembourg 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ Football ＯＮ Ｔｖ Ｃｈａｎｎｅｌ",
-          "publisher": "Universitat de Barcelona",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX3krxHRyzSPYTZTUmiaUeWWWjwjHnK6vgF7jB_xC2cXjjPF47by3S92UjtEk"
-        }
-      ]
-    },
-    {
-      "query": "facial recognition system",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T16:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians",
-        "https://www.haaretz.com/gaza/2026-11-16/ty-article/report-idf-uploaded-3-5m-photos-to-amazon-for-palestinian-facial-recognition/000001a1-e442-d66c-a3f9-edc22b800000",
-        "https://www.jpost.com/israel-news/defense-news/article-915065"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHu0mEOXzfJ1nLwZAxo2BxBnDyIM4_rLrtLp2p7mvfgOgR4A-ZBEUmjGTR5NY",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians",
-          "title": "Revealed: Israel uploaded millions of photos to Amazon’s facial recognition platform to track Palestinians",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHu0mEOXzfJ1nLwZAxo2BxBnDyIM4_rLrtLp2p7mvfgOgR4A-ZBEUmjGTR5NY"
-        },
-        {
-          "url": "https://www.haaretz.com/gaza/2026-11-16/ty-article/report-idf-uploaded-3-5m-photos-to-amazon-for-palestinian-facial-recognition/000001a1-e442-d66c-a3f9-edc22b800000",
-          "title": "Report: IDF uploaded 3.5M photos to Amazon for Palestinian facial recognition",
-          "publisher": "Haaretz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNaa5I7pdMe9uZZSrz3EpfTBUY-WQrCY6gYXchx9yJRREH9m4NPfRz-TVEMhg"
-        },
-        {
-          "url": "https://www.jpost.com/israel-news/defense-news/article-915065",
-          "title": "IDF uploaded 3.5 million Palestinian photos to Amazon servers for facial recognition, report claims",
-          "publisher": "The Jerusalem Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSjPKoV3PFQBQzLP48auhUCVNPzS4Qlrw7SjhHjc-0pw_eCTogG0xYPjE7YoU"
-        }
-      ]
-    },
-    {
-      "query": "aaron taylor johnson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T16:00:00Z",
-      "related_news_urls": [
-        "https://thedirect.com/article/marvel-studios-aaron-taylor-johnson-quicksilver-mcu-speedster"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFoOdLa4S3wi0k-vceBbzOww9YCFLFfFIlyYWmHOexjYsEP6L2xDx-wKLn1Tc",
-      "image_credit": "The Direct",
-      "news": [
-        {
-          "url": "https://thedirect.com/article/marvel-studios-aaron-taylor-johnson-quicksilver-mcu-speedster",
-          "title": "Marvel Studios Replaces Aaron Taylor-Johnson's Quicksilver as the MCU's Main Speedster",
-          "publisher": "The Direct",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFoOdLa4S3wi0k-vceBbzOww9YCFLFfFIlyYWmHOexjYsEP6L2xDx-wKLn1Tc"
-        }
-      ]
-    },
-    {
-      "query": "jacob elordi",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T16:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/jacob-elordi-doesn-t-want-110051558.html",
-        "https://www.mandatory.com/celebrities/1892611-jacob-elordi-annoyed-kendall-jenner-mom-the-kardashians-appearance",
-        "https://minutemirror.com.pk/kris-jenner-pushes-jacob-elordi-for-kardashians-cameo-660891/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsrwuvAl8CaVpQw7j1LHRVoCz2BP3y_ktMZB-Kc1wcxgpi8USTBdKSYsMOx2c",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jacob-elordi-doesn-t-want-110051558.html",
-          "title": "Jacob Elordi Doesn’t Want to Be on ‘The Kardashians’ But Kendall Jenner’s Momager Kris ‘Keeps Pushing’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsrwuvAl8CaVpQw7j1LHRVoCz2BP3y_ktMZB-Kc1wcxgpi8USTBdKSYsMOx2c"
-        },
-        {
-          "url": "https://www.mandatory.com/celebrities/1892611-jacob-elordi-annoyed-kendall-jenner-mom-the-kardashians-appearance",
-          "title": "Jacob Elordi Annoyed Being ‘Bossed Around’ by Kendall Jenner’s Mom — Source",
-          "publisher": "Crave Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_GUx84OciUFRspHTFENI9DLtq1T6xyjthDALpWu4K6LI8qmsbrpEr8y0a81Q"
-        },
-        {
-          "url": "https://minutemirror.com.pk/kris-jenner-pushes-jacob-elordi-for-kardashians-cameo-660891/",
-          "title": "Kris Jenner pushes Jacob Elordi for Kardashians cameo",
-          "publisher": "Minute Mirror",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSv7gEpqx5LabkxTj4HosHNBKcrZe3o7c2u45jP-nF4wd1cTYt3fl3iMaSVo"
-        }
-      ]
-    },
-    {
-      "query": "kristen stewart",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T16:00:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
     }
   ]
 }
