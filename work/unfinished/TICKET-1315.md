@@ -5,9 +5,9 @@ source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1315
 state: implementing
 dot: "🔴"
-progress_percent: 18
+progress_percent: 20
 progress_basis: "Issue scoped, no independently accepted product, partner grant, payout or email send; Explainable in-app ranking, sponsor disclosure, consented metrics and zero unrelated wallet mutation"
-sessions_spent: 3
+sessions_spent: 4
 sessions_remaining_estimate: unknown
 agent: "ChatGPT issue scoping, no coordinator lease"
 lease_id: null
@@ -15,16 +15,26 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feat/otc-blue-star-neosporin-carousel-20261107
+branch: feat/advertiser-donations-performance-review-20261107
 head_sha: null
 pr: null
 tests: []
 merged: false
 deployed: false
 live_verified: false
-blocker: "External provider qualification and/or account-specific delegated permissions not yet verified"
-next_action: "Verify exact-head interactive card CI and responsive browser, then review/merge minimal OTC card PR and confirm live Oracle deep links"
+blocker: "Optional brand contribution/conditional $100 proposal has no signed commercial terms, verified merchant-order integration, processor authorization or approved pricing; source review only"
+next_action: "Verify advertiser partner source/390px CI at exact PR head, independent legal and billing review; no payment/merchant launch without explicit agreement"
 ---
+
+# TICKET-1315: QuantaPhi Quant feed/ads and privacy
+
+## November 7, 2026 · Nontransactional advertiser support pilot (session 4)
+- Owner requested optional brand donations (commercial voluntary contributions after receiving value) instead of boosting ordinary brand cards, with a separately opted-in **$100 / 30-day** small-business ad proposal tied to **$1,000 in verified QuantaPhi-attributed net sales**.
+- The owner's stated charge condition is **$100 if sales fall below $1,000**, which is a fee on underperformance, **not a guarantee of $1,000 sales**. It is written explicitly for review, not represented as a confirmed offer.
+- Branch: `feat/advertiser-donations-performance-review-20261107`. Pure validation/evidence module, inline request UI inside **existing Infinity Affiliates** card, mobile CSS, non-transactional public GitHub request link, 9 focused tests, 390px browser tests, policy doc and extended CI. No payment or wallet actions.
+- Source-level work is **staged only**; no CI/independent review/merge/production readback yet on this checkpoint. No first-party merchant receipts, campaign contracts, donation receipts or D1 settlement ledger claimed.
+- Estimated overall #1315 acceptance now 20%; this narrower design milestone is not acceptance of issue #1315. No owner-runner lease claimed; another contractor must independently review commercial terms and security before any live billing.
+- Next single action: inspect exact PR head CI for advertiser program and existing Infinity Affiliates browser behavior; repair failures on the same branch, then request independent review.
 
 # TICKET-1315: QuantaPhi Quant feed/ads and privacy
 
