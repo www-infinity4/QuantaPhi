@@ -3,41 +3,155 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T03:35:27.805262Z",
+  "checked_at": "2026-11-16T04:01:35.479487Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "donald trump iran war",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T03:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/13/us/politics/trump-iran-strategy.html",
+        "https://theweek.com/world-news/iran-will-trump-resume-the-war",
+        "https://www.reuters.com/world/middle-east/trump-tells-advisers-he-may-hold-off-iran-attacks-barring-new-provocations-2026-11-14/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgW_IsXtXeyUvtUVdrlGMxPieNAS2aLFu6XzIZOxAArlKxBNOSCxwc9RjqeY",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-iran-strategy.html",
+          "title": "Trump Signals New Strategy on Iran: A Waiting Game",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgW_IsXtXeyUvtUVdrlGMxPieNAS2aLFu6XzIZOxAArlKxBNOSCxwc9RjqeY"
+        },
+        {
+          "url": "https://theweek.com/world-news/iran-will-trump-resume-the-war",
+          "title": "Iran: will Trump resume the war?",
+          "publisher": "The Week",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRvhqkIvVUR9YXxsBoMPBVQV_w-Y_AJSzjBwt3T1gN5NlmfMuReAEAF7tA4RE"
+        },
+        {
+          "url": "https://www.reuters.com/world/middle-east/trump-tells-advisers-he-may-hold-off-iran-attacks-barring-new-provocations-2026-11-14/",
+          "title": "Trump tells advisers he may hold off on Iran attacks barring new provocations, sources say",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqZ-GCh8TtwloiREPlyoCTVfrA7i7pPcNF_9ytR-U-ALl5Z5I0S_ilT9pM9G0"
+        }
+      ]
+    },
+    {
+      "query": "oklahoma city thunder vs sacramento kings match player stats",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T03:40:00Z",
+      "related_news_urls": [
+        "https://www.covers.com/sport/hockey/nhl/matchup/382613/picks",
+        "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
+        "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6KUf5kM-eGqfvI9-lu-s2qIRHLzZLkCqUA62GQyL7RgqU-ta_HiTA-3r-vvw",
+      "image_credit": "Covers.com",
+      "news": [
+        {
+          "url": "https://www.covers.com/sport/hockey/nhl/matchup/382613/picks",
+          "title": "Capitals vs Lightning Picks, Prop Bets For November 17, 2026 - NHL Predictions",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6KUf5kM-eGqfvI9-lu-s2qIRHLzZLkCqUA62GQyL7RgqU-ta_HiTA-3r-vvw"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
+          "title": "Licensable picture: NCAA Mens Basketball 2026: Green Bay Vs St. Thomas NOV 08",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKQDQrKivrdmj3wD92p-mgS9xY11UHAvcnBZcvBL99sayVpd8CGB8NjiUUA5Y"
+        },
+        {
+          "url": "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252",
+          "title": "Saint Thomas Tommies play the Green Bay Phoenix in non-conference play",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 physical copy code flaw",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T03:20:00Z",
+      "related_news_urls": [
+        "https://www.pushsquare.com/news/2026/11/gta-6-ps5-codes-potentially-being-stolen-from-physical-copies-using-flashlight-trick",
+        "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
+        "https://www.gamespot.com/articles/physical-gta-6-copies-might-be-vulnerable-to-a-very-stupid-but-serious-trick/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSor697ZJnvltIgLWO_B1yrRS_dBv0fbWTXSgDilrH5Z5pU5HxCWi3a6rGT7v4",
+      "image_credit": "Push Square",
+      "news": [
+        {
+          "url": "https://www.pushsquare.com/news/2026/11/gta-6-ps5-codes-potentially-being-stolen-from-physical-copies-using-flashlight-trick",
+          "title": "GTA 6 PS5 Codes Potentially Being Stolen from Physical Copies Using Flashlight Trick",
+          "publisher": "Push Square",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSor697ZJnvltIgLWO_B1yrRS_dBv0fbWTXSgDilrH5Z5pU5HxCWi3a6rGT7v4"
+        },
+        {
+          "url": "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
+          "title": "GTA VI Map Leaks As Collector’s Box Sold Early",
+          "publisher": "RockstarINTEL",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I"
+        },
+        {
+          "url": "https://www.gamespot.com/articles/physical-gta-6-copies-might-be-vulnerable-to-a-very-stupid-but-serious-trick/",
+          "title": "\"Physical\" GTA 6 Copies Might Be Vulnerable To A Very Stupid But Serious Trick",
+          "publisher": "GameSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPwNvx3O69qILZdsW840xdVb0iR9dsqEzRChsighAz43h-bOUyCca4YT-OA18"
+        }
+      ]
+    },
+    {
+      "query": "kasparas jakučionis",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T03:10:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
     {
       "query": "tyler herro",
       "approx_searches": "1000+",
       "published_at": "2026-11-16T03:10:00Z",
       "related_news_urls": [
-        "https://roundtable.io/sports/nba/bucks/video/three-biggest-losers-from-bucks-embarrassing-nine-game-losing-streak",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/12/tyler-herro-this-is-the-most-ive-ever-lost-in-my-life/92738380007/",
-        "https://dairylandexpress.com/the-milwaukee-bucks-are-having-their-worst-start-in-franchise-history-so-what-comes-next-01m76wrsb6za"
+        "https://www.sun-sentinel.com/2026/11/14/winderman-often-overshadowed-with-heat-and-to-be-again-herro-deserves-embrace-upon-return/",
+        "https://sports.yahoo.com/articles/tyler-herro-returns-miami-night-171100292.html",
+        "https://sports.yahoo.com/articles/ira-winderman-often-overshadowed-heat-103000792.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwDDjzqW8akFohkqUP5JiQJs8W5GAi5QNf3dFGi6Mn28zeBi8OOrY39_kUdvU",
-      "image_credit": "roundtable.io",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXGcVwtOGjNg3dzFp1rJXTcfK9huhGSV2bKtGRhfvz3KEkmkBpdcbxms7X8vI",
+      "image_credit": "Sun Sentinel",
       "news": [
         {
-          "url": "https://roundtable.io/sports/nba/bucks/video/three-biggest-losers-from-bucks-embarrassing-nine-game-losing-streak",
-          "title": "Video - Three Biggest Losers From Bucks’ Embarrassing Nine-Game Losing Streak",
-          "publisher": "roundtable.io",
+          "url": "https://www.sun-sentinel.com/2026/11/14/winderman-often-overshadowed-with-heat-and-to-be-again-herro-deserves-embrace-upon-return/",
+          "title": "Winderman: Often overshadowed with Heat (and to be again), Herro deserves embrace upon return",
+          "publisher": "Sun Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwDDjzqW8akFohkqUP5JiQJs8W5GAi5QNf3dFGi6Mn28zeBi8OOrY39_kUdvU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXGcVwtOGjNg3dzFp1rJXTcfK9huhGSV2bKtGRhfvz3KEkmkBpdcbxms7X8vI"
         },
         {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/12/tyler-herro-this-is-the-most-ive-ever-lost-in-my-life/92738380007/",
-          "title": "Tyler Herro: 'This is the most I've ever lost in my life'",
-          "publisher": "HoopsHype",
+          "url": "https://sports.yahoo.com/articles/tyler-herro-returns-miami-night-171100292.html",
+          "title": "Tyler Herro Returns To Miami For Night Of Recognition",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUTugRRpKKPRPEViR5mvnXpO1rxgr7LPWaFOPpsa4lMeZgUsVVZfZ3r98t74k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk87DU9Htb2FLP25NJZ-LGIA8Py0u4VR1LjcaTr69OKM_NVz3oTWL3xCqX-Y0"
         },
         {
-          "url": "https://dairylandexpress.com/the-milwaukee-bucks-are-having-their-worst-start-in-franchise-history-so-what-comes-next-01m76wrsb6za",
-          "title": "The Milwaukee Bucks are having their worst start in franchise history... So what comes next?",
-          "publisher": "Dairyland Express",
+          "url": "https://sports.yahoo.com/articles/ira-winderman-often-overshadowed-heat-103000792.html",
+          "title": "Ira Winderman: Often overshadowed with Heat (and to be again), Herro deserves embrace upon return",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeTnjx7y-eI-L5YWL50YXi0XP4Tg6e62S_5gqJKRPJQoYnyJOndy3BtZrV238"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTu3thZhHpz6qbEEoFryYkLxxunK6kmXusweQWeKPQWpHrSWJ9JaxZMx6VEjok"
         }
       ]
     },
@@ -73,41 +187,6 @@
           "publisher": "Bleacher Report",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8WB9sA8ZqobuzhAET_rlJ-KofHfULrKgvOie3zA4DtRRXclwWc1Oom0Jpg6U"
-        }
-      ]
-    },
-    {
-      "query": "edmonton elks",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T03:00:00Z",
-      "related_news_urls": [
-        "https://nevadasportsnet.com/sports/wolf-pack-football/morning-download-nevada-alums-cody-fajardo-brendon-oleary-orange-headed-to-grey-cup",
-        "https://www.tsn.ca/cfl/video/2026/11/07/believing-in-one-another-pierce-cottoy-discuss-how-lions-turned-their-season-around/",
-        "https://www.cbc.ca/sports/football/cfl/the-buzzer-grey-cup-weekend-preview-nov-13-9.7421569"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlQ_bz8Nq2coSqFwIPl7YeFuHgOydBWdiAQlSVxyilFuDhLeBicEa2UNygriw",
-      "image_credit": "Nevada Sports Net",
-      "news": [
-        {
-          "url": "https://nevadasportsnet.com/sports/wolf-pack-football/morning-download-nevada-alums-cody-fajardo-brendon-oleary-orange-headed-to-grey-cup",
-          "title": "Morning Download: Nevada alums Cody Fajardo, Brendon O'Leary-Orange headed to Grey Cup",
-          "publisher": "Nevada Sports Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlQ_bz8Nq2coSqFwIPl7YeFuHgOydBWdiAQlSVxyilFuDhLeBicEa2UNygriw"
-        },
-        {
-          "url": "https://www.tsn.ca/cfl/video/2026/11/07/believing-in-one-another-pierce-cottoy-discuss-how-lions-turned-their-season-around/",
-          "title": "'Believing in one another': Pierce, Cottoy discuss how Lions turned their season around",
-          "publisher": "TSN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh1o16JyEKKLDrbYbA8o5X-2g59HZ8fmU8zrAc4bjZQDEhbzbTszaOPKuI63U"
-        },
-        {
-          "url": "https://www.cbc.ca/sports/football/cfl/the-buzzer-grey-cup-weekend-preview-nov-13-9.7421569",
-          "title": "Edmonton and Montreal battle for the last Grey Cup of this era",
-          "publisher": "CBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuwSe4A9OvEkdw1GRXKm17lDVtgaCb0av4cNfL5xp6HQ-FUabwy-t5nLzzU0"
         }
       ]
     },
@@ -153,7 +232,7 @@
       "related_news_urls": [
         "https://www.mediotiempo.com/futbol/liga-mx-femenil/a-que-hora-juega-monterrey-vs-pachuca-horario-y-canal-cuartos-final-vuelta-liga-mx-femenil-2026",
         "https://www.rayados.com/es/noticias/21677/rayadas-va-por-el-pase-a-la-semifinal",
-        "https://www.reforma.com/cumplen-las-rayadas-en-casa-y-ya-estan-en-semis/ar3315371?redirectcancha=1"
+        "https://criteriohidalgo.com/la-copa/pachuca-femenil/adios-al-apertura-2026-asi-se-consumo-la-eliminacion-de-tuzas-en-el-bbva"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTojG501Bvhh2tN6ky-NKBrU17Hzr_c3FOn6L61psz3KKlx4X0ChDmAur7BU4A",
       "image_credit": "Mediotiempo",
@@ -173,11 +252,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROAAcmgRTj-pEujKbTKeMHIx6MMnQc0a3_ipnJNByTdBp8HBESpAUmHdOqKcY"
         },
         {
-          "url": "https://www.reforma.com/cumplen-las-rayadas-en-casa-y-ya-estan-en-semis/ar3315371?redirectcancha=1",
-          "title": "Cumplen las Rayadas en casa y ya están en Semis",
-          "publisher": "Reforma",
+          "url": "https://criteriohidalgo.com/la-copa/pachuca-femenil/adios-al-apertura-2026-asi-se-consumo-la-eliminacion-de-tuzas-en-el-bbva",
+          "title": "¡Adiós al Apertura 2026! Así se consumó la eliminación de Tuzas en el BBVA",
+          "publisher": "Criterio Hidalgo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYFF_PY5ArmBXxEDhbK8DRJzfKMuKPByObpAcgQa5ho453rw2qAMwZ_me29_Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgyMKP6YdFvS8aBKJJfBy8KxaGqcqH0QgocgwyDDN-E57a-ZJcJ3FoOg9iRuE"
         }
       ]
     },
@@ -248,111 +327,6 @@
           "publisher": "Rip City Radio 620 Portland",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwDZP4upvi-ITcAsH-k15xBEdontowE6kgYXqi5c-W0kL0FXQvz1aMPLTI09o"
-        }
-      ]
-    },
-    {
-      "query": "mason mccormick",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T02:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/steelers-lg-mason-mccormick-carted-off-with-leg-in-air-cast-late-in-second-quarter",
-        "https://sports.yahoo.com/articles/steelers-guard-mason-mccormick-injured-024239844.html",
-        "https://www.si.com/nfl/steelers/onsi/pittsburgh-steelers-mason-mccormick-suffers-ankle-injury-against-bengals"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlagJdJZOEQPWkY3HxJ9JHX1BOSnwdAEO7WAMfQQEU1VPwbRVjgnprnJv2-tQ",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/steelers-lg-mason-mccormick-carted-off-with-leg-in-air-cast-late-in-second-quarter",
-          "title": "Steelers LG Mason McCormick carted off with leg in air cast late in second quarter",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlagJdJZOEQPWkY3HxJ9JHX1BOSnwdAEO7WAMfQQEU1VPwbRVjgnprnJv2-tQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/steelers-guard-mason-mccormick-injured-024239844.html",
-          "title": "Steelers guard Mason McCormick injured vs Bengals on Sunday night",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMrIAmmyP8TZUF5-I9vY9rtPJYXO6HhdTSSD_u3fC9ZlzMx_h-j2E4ryktkxk"
-        },
-        {
-          "url": "https://www.si.com/nfl/steelers/onsi/pittsburgh-steelers-mason-mccormick-suffers-ankle-injury-against-bengals",
-          "title": "Steelers' Mason McCormick Suffers Ankle Injury Against Bengals",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDirxerrgsr1uKZpyuE0tWTansG6zJB-iNFvEQaPBetGF2a7xjf_OXjcesmsg"
-        }
-      ]
-    },
-    {
-      "query": "the gilded age cast",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T02:40:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/meet-real-life-loves-the-gilded-age-cast-12253223",
-        "https://www.imdb.com/es/news/ni66101141/?ref_=nwc_art_perm",
-        "https://www.tvline.com/2317243/the-gilded-age-season-4-episode-3-explained-dennis-haysbert-dr-harris/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSznFLpHGxzw3ZCPPDS0PYqpwY12fhuiunYO1D1ycjhURJBRpqNu-mBMMVr5G0",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/meet-real-life-loves-the-gilded-age-cast-12253223",
-          "title": "Meet the Real-Life Loves of ‘The Gilded Age’ Cast (and the Two Actors Who Are Partners IRL)",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSznFLpHGxzw3ZCPPDS0PYqpwY12fhuiunYO1D1ycjhURJBRpqNu-mBMMVr5G0"
-        },
-        {
-          "url": "https://www.imdb.com/es/news/ni66101141/?ref_=nwc_art_perm",
-          "title": "‘The Gilded Age’ Cast Real-Life Relationships Revealed: Who’s Married, Divorced or Single?",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9n_VVvrpUQD5_KV4wyvZuGexYaEX4KIKeVIz_IBjbpPT3qag92WqKJlmXPwk"
-        },
-        {
-          "url": "https://www.tvline.com/2317243/the-gilded-age-season-4-episode-3-explained-dennis-haysbert-dr-harris/",
-          "title": "The Gilded Age Stars React To Forbidden Romances Forming In Season 4: 'It's A Dangerous Game'",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS06bUHBAYZuQ1dPSfzY2jgAiakwE8qR6Gtkxo1tYGgUQHc1GnKJm8OunYow18"
-        }
-      ]
-    },
-    {
-      "query": "ben skowronek",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T02:40:00Z",
-      "related_news_urls": [
-        "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-get-big-injury-update-on-hard-nosed-wide-receiver.html",
-        "https://sports.yahoo.com/articles/steelers-finally-back-one-3-130006947.html",
-        "https://www.cbssports.com/fantasy/football/news/steelers-ben-skowronek-past-calf-issue/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUw_k_wLJX0zEfatk1x5LfTSH61u1qUvEymjl3zUJFpcEVUoUbNfggDiduWDM",
-      "image_credit": "PennLive.com",
-      "news": [
-        {
-          "url": "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-get-big-injury-update-on-hard-nosed-wide-receiver.html",
-          "title": "Pittsburgh Steelers get big injury update on hard-nosed wide receiver",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUw_k_wLJX0zEfatk1x5LfTSH61u1qUvEymjl3zUJFpcEVUoUbNfggDiduWDM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/steelers-finally-back-one-3-130006947.html",
-          "title": "Steelers finally get back one of their 3 injured receivers in Week 10",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSN46eJrhwk4UbH1XzQy7jj1gDBUmH7eOliwsIrxMPQDAmro0ZwkNDGIT3qEA"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/steelers-ben-skowronek-past-calf-issue/",
-          "title": "Steelers' Ben Skowronek: Past calf issue",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-irHhjWYJgtR92JuShT7hMtFE05nvkZz7IVOT-9Dx8_4yjVQBY2HDazJ3Fjc"
         }
       ]
     }
