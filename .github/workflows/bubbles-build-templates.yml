@@ -1,0 +1,47 @@
+name: Bubbles reusable Build Library tests
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-project-discovery.mjs'
+      - 'bubbles-build-templates.mjs'
+      - 'bubbles-template-picker.mjs'
+      - 'test/bubbles-template-picker.test.mjs'
+      - 'bubbles.html'
+      - 'scripts/bubbles-build-template-plan.mjs'
+      - 'test/bubbles-build-templates.test.mjs'
+      - '.github/workflows/bubbles-build-templates.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-project-discovery.mjs'
+      - 'bubbles-build-templates.mjs'
+      - 'bubbles-template-picker.mjs'
+      - 'test/bubbles-template-picker.test.mjs'
+      - 'bubbles.html'
+      - 'scripts/bubbles-build-template-plan.mjs'
+      - 'test/bubbles-build-templates.test.mjs'
+permissions:
+  contents: read
+jobs:
+  source-plans:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check Bubbles source modules and offline planner
+        run: |
+          node --check bubbles-ai.js
+          node --check bubbles-project-discovery.mjs
+          node --check bubbles-build-templates.mjs
+          node --check bubbles-template-picker.mjs
+          node --check scripts/bubbles-build-template-plan.mjs
+      - name: Test template matching, receipts and Bubbles project discovery
+        run: |
+          node --test test/bubbles-build-templates.test.mjs test/bubbles-template-picker.test.mjs test/bubbles-project-discovery.test.mjs
