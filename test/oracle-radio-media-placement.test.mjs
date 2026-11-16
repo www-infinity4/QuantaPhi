@@ -26,7 +26,7 @@ test('Fred Media Star opens first in the public Oracle carousel without overridi
  const firstFred=deck.indexOf("['fredSpacesRadio','Media Star");
  const firstOther=deck.indexOf("['coliseumZeusCard'");
  assert.ok(firstFred>=0&&firstFred<firstOther,'Fred must be the first original card and chooser entry');
- const from=deck.indexOf('function chooseOpening(){'),until=deck.indexOf('\nfunction start(){',from);
+ const from=deck.indexOf('function chooseOpening(){');
  // Extract the real opening picker with fixed ready-card fixtures; no browser or network mocks.
  const opening=deck.slice(from,deck.indexOf('function start(){',from));
  const pick=new Function('eligible','selectedTab','selectedDepartment','openingCursor','familyApi','cardFamily','directionApi','feedState','liveCatalog','quantWeights',
@@ -37,7 +37,7 @@ test('Fred Media Star opens first in the public Oracle carousel without overridi
  assert.equal(selected('for-you','all'),'coliseumZeusCard','do not force Fred into personal feeds');
  assert.equal(selected('public','sports'),'coliseumZeusCard','do not override category selections');
  const start=deck.slice(deck.indexOf('function start(){'),deck.indexOf('\nstart();',deck.indexOf('function start(){')));
- assert.match(start,/const first=request&&available\\(request\\)\\?request:chooseOpening\\(\\)/,'explicit deep links still win');
- assert.match(fred,/play\\.href=active\\.source;play\\.target="_blank"/,'original X replay remains provider-hosted');
- assert.doesNotMatch(opening,/\\.click\\(|\\.play\\(/,'opening Fred must not autoplay or spend coins');
+ assert.ok(start.includes('const first=request&&available(request)?request:chooseOpening();'),'explicit deep links still win');
+ assert.ok(fred.includes('play.href=active.source;play.target="_blank";'),'original X replay remains provider-hosted');
+ assert.ok(!opening.includes('.click(')&&!opening.includes('.play('),'opening Fred must not autoplay or spend coins');
 });
