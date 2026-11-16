@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-16T03:23:47.548151Z",
+  "checked_at": "2026-11-16T04:22:35.043095Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -414,7 +414,7 @@
     },
     "hurley-surfwear": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.hurley.com/",
@@ -422,7 +422,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Clothing"
         },
         {
@@ -431,7 +431,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Clothing"
         },
         {
@@ -440,7 +440,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Clothing"
         },
         {
@@ -449,7 +449,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Clothing"
         },
         {
@@ -458,7 +458,7 @@
           "title": "Renzo Skate Crew Long Sleeve - BONE / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Clothing",
           "offer": null
         },
@@ -468,7 +468,7 @@
           "title": "Benson Flannel Shacket Long Sleeve - BLACK HEATHER / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Clothing",
           "offer": null
         },
@@ -478,7 +478,7 @@
           "title": "Hurley x Mikey DeTemple Woolsy Flannel Long Sleeve - Woodside / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Clothing",
           "offer": null
         },
@@ -501,7 +501,7 @@
     },
     "royal-caribbean-cruises": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.royalcaribbean.com/",
@@ -509,7 +509,7 @@
           "title": "Best Cruise, Vacation and Travel Deals | Royal Caribbean Official Site",
           "kind": "website",
           "description": "Book cruises and vacation deals on the official Royal Caribbean site. Sail to the Caribbean, Bahamas, Perfect Day CocoCay, Mexico, Alaska and Europe.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Travel"
         },
         {
@@ -518,7 +518,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Travel"
         },
         {
@@ -527,7 +527,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Travel"
         },
         {
@@ -536,14 +536,14 @@
           "title": "lg banner 640 480 1x",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Travel"
         }
       ]
     },
     "durable-channellock": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.channellock.com",
@@ -551,7 +551,7 @@
           "title": "CHANNELLOCK®: High-Quality Hand Tools - Channellock, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -560,7 +560,7 @@
           "title": "CHANNELLOCK® adjustable pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -569,7 +569,7 @@
           "title": "CHANNELLOCK® groove-joint pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -578,14 +578,14 @@
           "title": "CHANNELLOCK® locking pliers with blue and black handles and serrated jaws.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-wright-tool": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.wrighttool.com/",
@@ -593,7 +593,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -602,7 +602,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -611,7 +611,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -620,14 +620,14 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-estwing": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.estwing.com/",
@@ -635,7 +635,7 @@
           "title": "Home - Estwing",
           "kind": "website",
           "description": "ProfessionalOutdoorHome Who’s Behind Your Swing? When it’s an Estwing, every strike, every detail counts. https://vimeo.com/1091256749 Estwing 100 Years of a Genuine American Icon How a true American legend grew to become the hand tool of choice for generation",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -644,7 +644,7 @@
           "title": "Shop - Estwing",
           "kind": "website",
           "description": "Select CategorySure Strike— Specialty— Roofing Tools— Pry Tools— Nail HammersSpecialty— Welding & Tinner’s— Lineman’s— Drywall— Drilling & Engineer’s— Bricklayer— Ball PeenSafetyRoofing— Shingler’s Hatchet— Shingler’s Hammer— Rigger’s Axes— Carpenter’s Hatchet",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -653,7 +653,7 @@
           "title": "Titanium Hammer (Black) - Estwing",
           "kind": "website",
           "description": "Power meets precision in a lightweight design as this titanium hammer delivers the striking force of a heavier steel hammer without the added weight. Its magnetic nail starter makes setting nails quick and easy. The Shock Reduction Grip® offers the utmost in b",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -662,7 +662,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -671,7 +671,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_02_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -680,7 +680,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_03_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -689,7 +689,7 @@
           "title": "Timber Titan™ Splitting Tool (Blue) - Estwing",
           "kind": "website",
           "description": "Estwing’s Timber Titan™ Splitting Tool is the ultimate long-handle splitting tool, designed for fast, efficient, and precise wood splitting.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -698,7 +698,7 @@
           "title": "prod_outdoor_splitting_tools_E6-TT4_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
@@ -2017,7 +2017,7 @@
     },
     "colorado-rocky-mountain": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.nps.gov/romo/index.htm",
@@ -2025,7 +2025,7 @@
           "title": "Rocky Mountain National Park (U.S. National Park Service)",
           "kind": "website",
           "description": "Located in northern Colorado, visitors to Rocky Mountain National Park can explore over 415 square miles (265,807 acres) within the Southern Rocky Mountains. From montane meadows to subalpine forests and mountain peaks in the alpine tundra, there is something ",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2034,7 +2034,7 @@
           "title": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2043,7 +2043,7 @@
           "title": "A man is standing on a bridge and looking up at a waterfall",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2052,7 +2052,7 @@
           "title": "A pika has harvested a tundra thistle",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2061,7 +2061,7 @@
           "title": "Visitors are walking on the Tundra Communities trail in summer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2070,7 +2070,7 @@
           "title": "The NPS Arrowhead appears on blue with text \"Rocky Mountain National Park Timed Entry Reservations\"",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2079,7 +2079,7 @@
           "title": "Park Entrance Fees and Passes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2088,14 +2088,14 @@
           "title": "A park ranger is sharing a program inside Beaver Meadows Visitor Center",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Alpine hikes"
         }
       ]
     },
     "colorado-numbers-rafting": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.americanadventure.com/tour-category/the-numbers/",
@@ -2103,7 +2103,7 @@
           "title": "most-popular",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2112,7 +2112,7 @@
           "title": "Classic Colorado Whitewater",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2121,7 +2121,7 @@
           "title": "The Numbers Half Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2130,7 +2130,7 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2139,7 +2139,7 @@
           "title": "Numbers Half Day Rafting Adventure | American Adventure Expeditions",
           "kind": "website",
           "description": "Our classic half-day rafting adventure is great for experienced white water rafters looking for a challenging ride through The Numbers in Buena Vista, CO.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2148,7 +2148,7 @@
           "title": "Numbers Half Day Private Trip",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2157,7 +2157,7 @@
           "title": "The Numbers Raft + ATV",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2166,14 +2166,14 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Whitewater"
         }
       ]
     },
     "colorado-breckenridge-trails": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
@@ -2181,7 +2181,7 @@
           "title": "Easy Hiking Trails in Breckenridge",
           "kind": "website",
           "description": "Enjoying one of the many easy hikes near Breckenridge is a great way to spend a summer day in the outdoors. Find the hike right for you and your crew.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2190,7 +2190,7 @@
           "title": "Hiking in Breckenridge Without A Car",
           "kind": "website",
           "description": "You don’t need a car to hike some spectacular trails in Breckenridge. Free public transportation can make hiking in without a car simple and easy.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2199,14 +2199,14 @@
           "title": "Best Summer Hikes in Breckenridge",
           "kind": "website",
           "description": "When it comes to hiking, Breckenridge has it all — waterfalls, wildflowers, alpine lakes, and more. Check out our favorite summer hikes in Breckenridge!",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Easy hiking"
         }
       ]
     },
     "colorado-glenwood-hot-springs": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://hotspringspool.com/",
@@ -2214,7 +2214,7 @@
           "title": "Home Page",
           "kind": "website",
           "description": "Discover the ultimate Colorado destination with world famous hot springs pool, 107 room lodge and premier athletic club. Perfect for families & romantic getaways.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2223,7 +2223,7 @@
           "title": "Glenwood Hot Springs Resort Logo White Text",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2232,7 +2232,7 @@
           "title": "View from the Bridge of Glenwood Hot Springs Resort Pools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2241,7 +2241,7 @@
           "title": "Alpine Coaster at Glenwood Caverns near Glenwood Hot Springs Resort",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2250,7 +2250,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "Enjoy the benefits of the largest hot springs pool for the day or all year long at Glenwood Hot Springs Resort.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2259,7 +2259,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2268,7 +2268,7 @@
           "title": "Glenwood Hot Springs Resort Wins Seven 2026 Locals’ Choice Award",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2277,14 +2277,14 @@
           "title": "Hot Springs",
           "kind": "website",
           "description": "Soak in mineral-rich, heated water to refresh tired muscles, swim laps, or enjoy summer with cabana rentals and the Sopris Splash Zone. Experience it all at Glenwood Hot Springs.",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Relaxation"
         }
       ]
     },
     "colorado-ouray-ice-park": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://ourayicepark.com/",
@@ -2292,7 +2292,7 @@
           "title": "Climbing in the Ouray Ice Park",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2301,7 +2301,7 @@
           "title": "Ouray Ice Park Climbers and Members",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2310,7 +2310,7 @@
           "title": "Ice Park Tour and Conditions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2319,7 +2319,7 @@
           "title": "Guided Ice Climbing in Ouray",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2362,7 +2362,7 @@
     },
     "colorado-ice-lakes-basin": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T22:18:38.266526Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.fs.usda.gov/r02/sanjuan",
@@ -2370,7 +2370,7 @@
           "title": "San Juan National Forest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2379,7 +2379,7 @@
           "title": "A road is washed out by a river",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2388,7 +2388,7 @@
           "title": "Road Conditions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2397,7 +2397,7 @@
           "title": "South Mineral Campground",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T22:18:38.266526Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Colorado · High alpine"
         }
       ]
@@ -6945,7 +6945,7 @@
     },
     "durable-s-t-dupont": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.st-dupont.com/collections/customisable-lighters",
@@ -6953,7 +6953,7 @@
           "title": "Customisable lighters",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6962,7 +6962,7 @@
           "title": "Cohiba 60",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6971,7 +6971,7 @@
           "title": "85th Anniversary",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6980,7 +6980,7 @@
           "title": "Popote",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6989,7 +6989,7 @@
           "title": "Lacquered lighter",
           "kind": "product",
           "description": "S.T. Dupont and the Paris Opera unveil a new limited-edition collection: Phantom of the Paris Opera. In Paris, beneath the gilded splendour of the Palais Garnier, when the murmur of the audience fades and the curtain falls, another story begins; invisible, yet",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1765.00",
@@ -7004,7 +7004,7 @@
           "title": "Lacquered lighter",
           "kind": "product",
           "description": "S.T. Dupont and the Paris Opera unveil a new limited-edition collection: Phantom of the Paris Opera. In Paris, beneath the gilded splendour of the Palais Garnier, when the murmur of the audience fades and the curtain falls, another story begins; invisible, yet",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "345.00",
@@ -7019,7 +7019,7 @@
           "title": "Fountain pen large",
           "kind": "product",
           "description": "S.T. Dupont and the Paris Opera unveil a new limited-edition collection: Phantom of the Paris Opera. In Paris, beneath the gilded splendour of the Palais Garnier, when the murmur of the audience fades and the curtain falls, another story begins; invisible, yet",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1665.00",
@@ -7032,7 +7032,7 @@
     },
     "durable-duluth-pack": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://duluthpack.com/products/pack-2-duluth",
@@ -7040,7 +7040,7 @@
           "title": "#2 Original Canoe Pack - 59 L in tough 15-ounce canvas with rugged leather straps, designed for outdoor hiking and canoeing by Duluth Pack.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7049,7 +7049,7 @@
           "title": "#3 Monarch Pack - 54 L in durable olive canvas with rich brown leather straps, showcasing handcrafted rugged outdoor design by Duluth Pack for adventure use.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7058,7 +7058,7 @@
           "title": "#3 Original Pack - 72 L in tough green canvas with rugged leather straps, crafted by Duluth Pack for durable outdoor use and heritage-inspired adventure gear.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7067,34 +7067,8 @@
           "title": "#3-70 Utility Pack - 60 L in olive canvas with leather straps, designed for rugged outdoor use and durable everyday carry by Duluth Pack.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
-        },
-        {
-          "url": "https://duluthpack.com/products/new-duffel-sportsman",
-          "image": "https://duluthpack.com/cdn/shop/files/newsportsmansod_1024x1024.webp?v=1786740789",
-          "title": "NEW Sportsman's Duffel",
-          "kind": "product",
-          "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
-          "category": "Materials, Lifestyle & Furniture Engineering",
-          "offer": {
-            "price": "326.21",
-            "currency": "USD",
-            "evidence": "jsonld-offer",
-            "availability": "http://schema.org/InStock",
-            "valid_until": "2026-11-25T23:59:59+00:00"
-          }
-        },
-        {
-          "url": "https://duluthpack.com/products/new-duffel-sportsman",
-          "image": "https://cdn.shopify.com/s/files/1/0734/9544/5732/files/newsportsmansod.webp?v=1786740789",
-          "title": "NEW Sportsman's Duffel",
-          "kind": "product",
-          "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
-          "category": "Materials, Lifestyle & Furniture Engineering",
-          "offer": null
         },
         {
           "url": "https://duluthpack.com/products/pack-2-duluth",
@@ -7102,7 +7076,7 @@
           "title": "#2 Original Canoe Pack - 56 L",
           "kind": "product",
           "description": "One of the original designs created by Duluth Pack's founder, Camille Poirier. The #2 Original Pack by Duluth Pack has been time-tested for over a century. Constructed of our rugged canvas, the #2 Original Pack sports three guaranteed-for-life buckle strap clo",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "249.95",
@@ -7118,15 +7092,47 @@
           "title": "#2 Original Canoe Pack - 56 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
+        },
+        {
+          "url": "https://duluthpack.com/products/pack-3-monarch",
+          "image": "https://duluthpack.com/cdn/shop/files/S-315-OD_1024x1024.webp?v=1774902223",
+          "title": "#3 Monarch Pack - 54 L",
+          "kind": "product",
+          "description": "A traditional-style canoe pack that has been an essential for outdoor travels for generations. The craftsmanship of the #3 Monarch Pack by Duluth Pack is in its own class. The rugged design is built with hardcore use in mind. Built to be used, the #3 Monarch P",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
+          "category": "Materials, Lifestyle & Furniture Engineering",
+          "offer": {
+            "price": "524.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock",
+            "valid_until": "2026-11-25T23:59:59+00:00"
+          }
+        },
+        {
+          "url": "https://duluthpack.com/products/pack-3-duluth",
+          "image": "https://duluthpack.com/cdn/shop/files/S-303-OD_1024x1024.webp?v=1774897404",
+          "title": "#3 Original Canoe Pack - 72 L",
+          "kind": "product",
+          "description": "The #3 Original Duluth Pack has been the time-tested favorite for generations of wilderness travelers and explorers. The rugged durability of this pack allows one to carry the canoe while wearing the pack and is made to fit the confines of a canoe for when you",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
+          "category": "Materials, Lifestyle & Furniture Engineering",
+          "offer": {
+            "price": "274.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock",
+            "valid_until": "2026-11-25T23:59:59+00:00"
+          }
         }
       ]
     },
     "durable-swaine-adeney-brigg": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://us.swaine.london/",
@@ -7134,7 +7140,7 @@
           "title": "Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7143,7 +7149,7 @@
           "title": "6 Inch Fur Felt Top Hat - Swaine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7152,7 +7158,7 @@
           "title": "Acajou Mahogany Umbrella - Black - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7161,7 +7167,7 @@
           "title": "Adeney Fedora - Chestnut - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7170,7 +7176,7 @@
           "title": "Fur Felt 6 Inch Top Hat - 56",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "690.00",
@@ -7185,7 +7191,7 @@
           "title": "Mahogany Acajou Umbrella - Black",
           "kind": "product",
           "description": "Sourced from the tropical mahogany tree and shaped from a single solid piece, with deep browns and gentle red undertones.",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "2340.00",
@@ -7200,7 +7206,7 @@
           "title": "Adeney Fedora - Chestnut - 56cm",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "460.00",
@@ -7222,12 +7228,12 @@
     },
     "durable-herman-miller-aeron-eames-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": []
     },
     "durable-steelcase": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.steelcase.com/",
@@ -7235,7 +7241,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "The leading manufacturer of furniture for offices, hospitals, and classrooms. Our furniture is inspired by innovative research in workspace design.",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7244,7 +7250,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7253,7 +7259,7 @@
           "title": "Details That Distinguish​",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7262,7 +7268,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7271,7 +7277,7 @@
           "title": "Waverly Collection - Steelcase",
           "kind": "website",
           "description": "Waverly brings the comfort of home into hybrid collaboration. Designed with tiered seating and tech-agnostic tables, it creates inviting spaces where everyone feels included.",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7280,7 +7286,7 @@
           "title": "Waverly Lounge, center and outfield tables in soft green fabric and natural oak wood",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7289,7 +7295,7 @@
           "title": "Waverly Lounge, center and outfield tables in soft green fabric and natural oak wood",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7298,14 +7304,14 @@
           "title": "Waverly lounge, center and outfield table in green fabric and natural oak wood",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-usm-modular-furniture": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://us.usm.com",
@@ -7313,7 +7319,7 @@
           "title": "USM Modular Furniture",
           "kind": "website",
           "description": "Discover modular furniture solutions designed for elegance and functionality. Explore USM home and office solutions online.",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7322,7 +7328,7 @@
           "title": "Quick Ship All",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7331,7 +7337,7 @@
           "title": "Quick Ship All",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7340,7 +7346,7 @@
           "title": "USM Haller Modern Steel Nightstand (P) in Beige",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7349,7 +7355,7 @@
           "title": "USM Haller nightstand (P)",
           "kind": "product",
           "description": "This popular bedside table offers a 6\"H open shelf and a 13\"H drop down door on the bottom offers plenty of storage. The door locks with the twist of a coin. Available in 14 standard surface colors.",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1677.0",
@@ -7364,7 +7370,7 @@
           "title": "USM Haller nightstand (P2)",
           "kind": "product",
           "description": "The classic nightstand with a 6\"H drop down door that locks with the twist of a coin. Available in 14 standard surface colors.",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1545.0",
@@ -7379,7 +7385,7 @@
           "title": "USM Haller Nightstand (P1)",
           "kind": "product",
           "description": "A modern and adaptable nightstand or side table with two drop down doors that locks with the twist of a coin. Available in 6 Quick Ship colors.",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "2131.0",
@@ -7392,7 +7398,7 @@
     },
     "durable-vitsoe": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.vitsoe.com/us/606",
@@ -7400,7 +7406,7 @@
           "title": "Modular wall-mounted shelving system for book with off-white shelves, cabinets and drawers.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7409,7 +7415,7 @@
           "title": "Vitsœ 620 modular sofa in cinnamon leather upholstery with off-white shell and two 621 tables on both sides",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7418,7 +7424,7 @@
           "title": "Vitsœ 621 nesting tables in off-white used as a side table in the living room",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7427,14 +7433,14 @@
           "title": "Vitsœ planner and 606 Universal Shelving System behind.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-artek": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.artek.fi/en/",
@@ -7442,7 +7448,7 @@
           "title": "Artek - Artek",
           "kind": "website",
           "description": "Art & Technology since 1935",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7451,7 +7457,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "Find an overview of all Artek products",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7460,7 +7466,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7469,7 +7475,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7478,7 +7484,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7487,7 +7493,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "Find an overview of all Artek products",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7496,7 +7502,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7505,29 +7511,29 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-carl-hansen-son": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": []
     },
     "durable-knoll": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": []
     },
     "durable-fritz-hansen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": []
     },
     "durable-thonet": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.thonet.de/shop/de",
@@ -7535,7 +7541,7 @@
           "title": "Basecap Beige",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7545,7 +7551,7 @@
           "title": "Basecap Navy",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7555,7 +7561,7 @@
           "title": "Poster Overview 2025",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7565,7 +7571,7 @@
           "title": "S 64 V",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1457.75",
@@ -7580,7 +7586,7 @@
           "title": "214",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1011.50",
@@ -7595,7 +7601,7 @@
           "title": "209",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1374.45",
@@ -7610,7 +7616,7 @@
           "title": "S 35 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "3403.40",
@@ -7625,7 +7631,7 @@
           "title": "Set B 9",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "3070.20",
@@ -7638,7 +7644,7 @@
     },
     "durable-emeco": {
       "schema_version": 1,
-      "attempted_at": "2026-11-15T21:17:46.265174Z",
+      "attempted_at": "2026-11-16T04:22:35.043095Z",
       "items": [
         {
           "url": "https://www.emeco.net/products/chairs",
@@ -7646,7 +7652,7 @@
           "title": "Browse Emeco's product catalogue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7655,7 +7661,7 @@
           "title": "Studio image of Kito by Naoto Fukasawa close up of back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7664,7 +7670,7 @@
           "title": "ZaZa bench collection by Naoto Fukasawa",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7673,7 +7679,7 @@
           "title": "outdoor setting with navy lounge armchairs, tables and rocker on a patio",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-15T21:17:46.265174Z",
+          "checked_at": "2026-11-16T04:22:35.043095Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
