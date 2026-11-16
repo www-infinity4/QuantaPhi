@@ -20,3 +20,24 @@ test('compact Infinity Radio is still beside the search/traffic region',()=>{
  assert.match(player,/getElementById\('qtraffic'\)/);
  assert.match(player,/id = 'infinityRadioQuick'/);
 });
+
+test('Fred Media Star opens first in the public Oracle carousel without overriding chosen views',()=>{
+ const deck=read('oracle-card-deck.js'),fred=read('fred-spaces-radio.js');
+ const firstFred=deck.indexOf("['fredSpacesRadio','Media Star");
+ const firstOther=deck.indexOf("['coliseumZeusCard'");
+ assert.ok(firstFred>=0&&firstFred<firstOther,'Fred must be the first original card and chooser entry');
+ const from=deck.indexOf('function chooseOpening(){'),until=deck.indexOf('\nfunction start(){',from);
+ // Extract the real opening picker with fixed ready-card fixtures; no browser or network mocks.
+ const opening=deck.slice(from,deck.indexOf('function start(){',from));
+ const pick=new Function('eligible','selectedTab','selectedDepartment','openingCursor','familyApi','cardFamily','directionApi','feedState','liveCatalog','quantWeights',
+  opening+'\nreturn chooseOpening().id;');
+ const available=()=>[{id:'coliseumZeusCard',feedId:'zeus'}, {id:'fredSpacesRadio',feedId:'fred-spaces'}];
+ const selected=(tab,department)=>pick(available,tab,department,0,null,()=> 'original',null,null,()=>[],{});
+ assert.equal(selected('public','all'),'fredSpacesRadio','default public opening must feature the actual Fred player');
+ assert.equal(selected('for-you','all'),'coliseumZeusCard','do not force Fred into personal feeds');
+ assert.equal(selected('public','sports'),'coliseumZeusCard','do not override category selections');
+ const start=deck.slice(deck.indexOf('function start(){'),deck.indexOf('\nstart();',deck.indexOf('function start(){')));
+ assert.match(start,/const first=request&&available\\(request\\)\\?request:chooseOpening\\(\\)/,'explicit deep links still win');
+ assert.match(fred,/play\\.href=active\\.source;play\\.target="_blank"/,'original X replay remains provider-hosted');
+ assert.doesNotMatch(opening,/\\.click\\(|\\.play\\(/,'opening Fred must not autoplay or spend coins');
+});
