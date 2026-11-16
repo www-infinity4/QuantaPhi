@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T02:32:23.504847Z",
+  "checked_at": "2026-11-16T03:01:32.295410Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "trae young",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T02:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7778229/2026/11/13/trae-young-washington-wizards-2/",
-        "https://www.reutersconnect.com/item/nba-detroit-pistons-at-washington-wizards/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzNDg0OTU%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
-        "https://sports.yahoo.com/articles/washington-wizards-showed-double-overtime-141803067.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkcFjh95ixJjGm-DQgh-7kEcPbGG8WnKrg6YlEayvidLBqBuomJy0VSnOq1z0",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7778229/2026/11/13/trae-young-washington-wizards-2/",
-          "title": "Trae Young shows a bit of his old flair with a 37-point night: ‘It’s what I do’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkcFjh95ixJjGm-DQgh-7kEcPbGG8WnKrg6YlEayvidLBqBuomJy0VSnOq1z0"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/nba-detroit-pistons-at-washington-wizards/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzNDg0OTU%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
-          "title": "NBA: Detroit Pistons at Washington Wizards",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhp0llR_7HqbRWV7h38OFw-XB7f1jXswmfZXA88rMW29FTdQc8WpQ70tkz_jE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/washington-wizards-showed-double-overtime-141803067.html",
-          "title": "What Washington Wizards Showed in Double Overtime Loss vs Pistons",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_YKbMq0jbTtY6H1Z_5ju0fVwmyeWvOHQr0nYlPT7_LpRYqGNC8bRsBwqg9lo"
-        }
-      ]
-    },
-    {
-      "query": "whoopi goldberg",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T02:10:00Z",
-      "related_news_urls": [
-        "https://abc.com/video/23f01b75-1f43-4483-b492-a18d791c2377/playlist/PL551344809",
-        "https://www.upi.com/Entertainment_News/Photos/Whoopi-Goldberg-turns-71-20-images-of-the-award-winning-host-star/16034/",
-        "https://uk.news.yahoo.com/whoopi-goldberg-life-photos-young-110000168.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5NTddmaJ5-x7ur5GToD92OjZDDQxwREB11iz0PNukcHeQs5OdZrD8B0iHw0E",
-      "image_credit": "ABC Network",
-      "news": [
-        {
-          "url": "https://abc.com/video/23f01b75-1f43-4483-b492-a18d791c2377/playlist/PL551344809",
-          "title": "WATCH: Whoopi Goldberg celebrates her birthday with an Italian feast Video | The View",
-          "publisher": "ABC Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5NTddmaJ5-x7ur5GToD92OjZDDQxwREB11iz0PNukcHeQs5OdZrD8B0iHw0E"
-        },
-        {
-          "url": "https://www.upi.com/Entertainment_News/Photos/Whoopi-Goldberg-turns-71-20-images-of-the-award-winning-host-star/16034/",
-          "title": "In photos: Whoopi Goldberg turns 71: 20 images of the award-winning host, star - All Photos",
-          "publisher": "UPI.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrmDGS3HqigJ7X7zudWJKZzcJbjuglMCO9q8jSB_2UBDBw5PPjk7LZVC5o9R0"
-        },
-        {
-          "url": "https://uk.news.yahoo.com/whoopi-goldberg-life-photos-young-110000168.html",
-          "title": "Whoopi Goldberg’s Life in Photos, from Young Comedian to EGOT-Winning Legend, in Honor of Her 71st Birthday",
-          "publisher": "Yahoo News UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn7GfdLGSFL-5twkOWBg-uG4whbHA772y8OzcLsO4PoKeJ9RtTqUmZQNcAuIg"
-        }
-      ]
-    },
-    {
-      "query": "houston rockets vs washington wizards match player stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T02:10:00Z",
-      "related_news_urls": [
-        "https://www.bulletsforever.com/washington-wizards-gamethreads/74105/wizards-vs-rockets-discussion",
-        "https://www.thedreamshake.com/rockets-game-previews/42551/houston-rockets-vs-washington-wizards-game-preview",
-        "https://www.si.com/nba/rockets/onsi/sarr-status-for-wizards-to-help-stop-rockets-sengun-determined-preview-starters-injuries-how-to-watch-01m7gqdcgnzz"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY6uIe92yifru1afGnNde5_bZ6H-pMjtGiwz-noGuk8zYI4ILahMuf7FnB0BQ",
-      "image_credit": "Bullets Forever",
-      "news": [
-        {
-          "url": "https://www.bulletsforever.com/washington-wizards-gamethreads/74105/wizards-vs-rockets-discussion",
-          "title": "Wizards vs. Rockets Discussion",
-          "publisher": "Bullets Forever",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY6uIe92yifru1afGnNde5_bZ6H-pMjtGiwz-noGuk8zYI4ILahMuf7FnB0BQ"
-        },
-        {
-          "url": "https://www.thedreamshake.com/rockets-game-previews/42551/houston-rockets-vs-washington-wizards-game-preview",
-          "title": "Houston Rockets vs. Washington Wizards game preview",
-          "publisher": "The Dream Shake",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpQu9XR9jsrZdwK8puQN-jZ-a4R8GpWvSxUQMzp4LkcAIsL8sKU03V68ySSLw"
-        },
-        {
-          "url": "https://www.si.com/nba/rockets/onsi/sarr-status-for-wizards-to-help-stop-rockets-sengun-determined-preview-starters-injuries-how-to-watch-01m7gqdcgnzz",
-          "title": "Sarr status for Wizards to help stop Rockets' Sengun determined: Preview, Starters, Injuries, How to Watch",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRihf5i_zzW0u7wO5Pq_2uxbv8i9sWdY8OuNoZ2K0hSl3i8q7nW7pruWAVPOI0"
-        }
-      ]
-    },
-    {
-      "query": "dexter lawrence",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T02:00:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/2026-nfl-midseason-awards-joe-burrow-greg-rousseau-and-david-bailey-among-my-selections",
-        "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
-        "https://sports.yahoo.com/nfl/article/nfl-midseason-grades-2-teams-go-from-super-bowl-hopes-to-fs-while-overachieving-giants-browns-receive-high-praise-045511698.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZZ0kjZZB9FFZn_we7ovHq_3brk7RB69-d9SkpzeIeqK66gxS1u5oHETAWKE",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/2026-nfl-midseason-awards-joe-burrow-greg-rousseau-and-david-bailey-among-my-selections",
-          "title": "2026 NFL midseason awards: Joe Burrow, Greg Rousseau and David Bailey among my selections",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZZ0kjZZB9FFZn_we7ovHq_3brk7RB69-d9SkpzeIeqK66gxS1u5oHETAWKE"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
-          "title": "NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThwlgpCCdjBfs3_gnDCxyzp4BA3LZmL3Te3QTE_9xLUXRgETO_o23WJKS-ogA"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/article/nfl-midseason-grades-2-teams-go-from-super-bowl-hopes-to-fs-while-overachieving-giants-browns-receive-high-praise-045511698.html",
-          "title": "NFL midseason grades: 2 teams go from Super Bowl hopes to Fs, while overachieving Giants, Browns receive high praise",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbcDD4v5AWkR7b6p8UUo8rmV4uUgHoBBLfbo1e6ZYUEfPFLG29YhDNJxvv5-8"
-        }
-      ]
-    },
-    {
-      "query": "dj turner",
+      "query": "mason mccormick",
       "approx_searches": "2000+",
-      "published_at": "2026-11-16T02:00:00Z",
+      "published_at": "2026-11-16T02:40:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/bengals-dalton-risner-will-suit-up-sunday-night/",
-        "https://www.bengals.com/news/bengals-steelers-week-10-2026-injury-report",
-        "https://sports.yahoo.com/articles/bengals-week-10-inactives-235925283.html"
+        "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/15/mason-mccormick-injury-steelers-bengals-sunday-night/92777348007/",
+        "https://www.steelernation.com/2026/11/12/steelers-mason-mccormick-payback-controversial",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mason-mccormick-wasnt-fined-for-dumping-jared-verse-on-his-head"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUSil04HoyUlKnxBCn-puEHW9b6woax7JnzP7RcsnUNlFSqzaUDh-hW8vx63c",
+      "image_credit": "Cincinnati Enquirer",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/bengals-dalton-risner-will-suit-up-sunday-night/",
-          "title": "Bengals' Dalton Risner: Will suit up Sunday night",
-          "publisher": "CBS Sports",
+          "url": "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/15/mason-mccormick-injury-steelers-bengals-sunday-night/92777348007/",
+          "title": "Steelers guard Mason McCormick injured vs Bengals on Sunday night",
+          "publisher": "Cincinnati Enquirer",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUSil04HoyUlKnxBCn-puEHW9b6woax7JnzP7RcsnUNlFSqzaUDh-hW8vx63c"
         },
         {
-          "url": "https://www.bengals.com/news/bengals-steelers-week-10-2026-injury-report",
-          "title": "Week 10 Injury Report | Steelers vs Bengals",
-          "publisher": "Cincinnati Bengals",
+          "url": "https://www.steelernation.com/2026/11/12/steelers-mason-mccormick-payback-controversial",
+          "title": "Steelers' Mason McCormick Could Face Payback From Bengals Star After Controversial Block",
+          "publisher": "Steeler Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbU7R7Q0q9qENFO5UFF-iSK42_ttHd9bHcoQhRqRNm1YEABHYCojpUnxpCIv4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsOwcEH32IWC2Tsjh3pjnRebcp0zsXiSTErSFanvVHBjaedHO0-AZQFHHDWtQ"
         },
         {
-          "url": "https://sports.yahoo.com/articles/bengals-week-10-inactives-235925283.html",
-          "title": "Bengals Week 10 inactives",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mason-mccormick-wasnt-fined-for-dumping-jared-verse-on-his-head",
+          "title": "Mason McCormick wasn’t fined for dumping Jared Verse on his head",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLy58Oupn3sgSSQ5WisBwwiY4tatQ6Arw-pMJNQDTEIpKIwrdcS_hpkPPAD0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS94mlHU5g0WvBoBaBivlvTbFDSV2wvlBHU9yszWIeoJnjKpc3a8VBjya67IoI"
         }
       ]
     },
     {
-      "query": "nigel newkirk",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T02:00:00Z",
+      "query": "the gilded age cast",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T02:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/buckeyes-flip-4-star-rb-013335089.html",
-        "https://www.elevenwarriors.com/ohio-state-football-recruiting/2026/11/165475/ohio-state-adds-second-running-back-to-2027-class-flipping-four-star-nigel-newkirk-from-alabama",
-        "https://www.on3.com/rivals/news/prediction-ohio-state-to-flip-another-four-star-running-back-in-the-2027-cycle/"
+        "https://www.instyle.com/meet-real-life-loves-the-gilded-age-cast-12253223",
+        "https://www.elle.com/culture/movies-tv/a74349264/the-gilded-age-family-tree-explained/",
+        "https://www.imdb.com/es/news/ni66101141/?ref_=nwc_art_perm"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMHQTW_zktXI8JzdynITV8wIeEPWZ1n0seurKIwjkYhFlVrE8ZIoDbB4IgnEk",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSznFLpHGxzw3ZCPPDS0PYqpwY12fhuiunYO1D1ycjhURJBRpqNu-mBMMVr5G0",
+      "image_credit": "InStyle",
+      "news": [
+        {
+          "url": "https://www.instyle.com/meet-real-life-loves-the-gilded-age-cast-12253223",
+          "title": "Meet the Real-Life Loves of ‘The Gilded Age’ Cast (and the Two Actors Who Are Partners IRL)",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSznFLpHGxzw3ZCPPDS0PYqpwY12fhuiunYO1D1ycjhURJBRpqNu-mBMMVr5G0"
+        },
+        {
+          "url": "https://www.elle.com/culture/movies-tv/a74349264/the-gilded-age-family-tree-explained/",
+          "title": "'The Gilded Age' Family Tree: A Guide to the Scotts, van Rhijns, and Russells",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZO8rnOLV6t-6DeW47gnXPtgcQjzqSOnRMhqAL5xwNlD-597fmo7vMc7jSTLM"
+        },
+        {
+          "url": "https://www.imdb.com/es/news/ni66101141/?ref_=nwc_art_perm",
+          "title": "‘The Gilded Age’ Cast Real-Life Relationships Revealed: Who’s Married, Divorced or Single?",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9n_VVvrpUQD5_KV4wyvZuGexYaEX4KIKeVIz_IBjbpPT3qag92WqKJlmXPwk"
+        }
+      ]
+    },
+    {
+      "query": "carla jeffery",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T02:30:00Z",
+      "related_news_urls": [
+        "https://people.com/milo-manheim-and-meg-donnelly-honor-late-zombies-costar-carla-jeffery-with-their-kids-choice-awards-win-12257113",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/zombies-stars-milo-manheim-meg-013751236.html",
+        "https://www.imdb.com/news/ni66111856/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT13tK2WEqoigcjPrvlzMJh1lyer6JPFJ_Zhsd4YkhW1LDG9X9l2m3ROsWeHRU",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/milo-manheim-and-meg-donnelly-honor-late-zombies-costar-carla-jeffery-with-their-kids-choice-awards-win-12257113",
+          "title": "Milo Manheim and Meg Donnelly Honor Late Zombies Costar Carla Jeffery with Their Kids’ Choice Awards Win",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT13tK2WEqoigcjPrvlzMJh1lyer6JPFJ_Zhsd4YkhW1LDG9X9l2m3ROsWeHRU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/zombies-stars-milo-manheim-meg-013751236.html",
+          "title": "“Zombies” stars Milo Manheim and Meg Donnelly dedicate Kids’ Choice Awards win to late costar Carla Jeffery",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxwl5G7nNjIFULk_hESlLeviveULD6eZQjmQB-vWvj7EWdz4wjNIlWam4nm7E"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66111856/?ref_=nwc_art_perm",
+          "title": "Milo Manheim & Meg Donnelly Dedicate Kids’ Choice Awards 2026 Win to Late Co-Star Carla Jeffery",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVHZIIHiRV_4SvxN0ROeGTl-JQNV6b1GzsxM9ZYeo4C-UepkEj4k7Hj2w4Yfc"
+        }
+      ]
+    },
+    {
+      "query": "rachel kleinbach cruise birthday story",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T02:30:00Z",
+      "related_news_urls": [
+        "https://www.ktvb.com/article/news/nation-world/strangers-drive-mother-daughter-atlanta-florida-birthday-cruise-ground-stop/507-768ed592-2af7-48c6-8f73-40787d704056",
+        "https://www.11alive.com/article/life/heartwarming/strangers-help-mother-daughter-stranded-atlanta-airport-birthday-cruise/85-283ec884-7265-4877-a20b-5ccdaf544b0f",
+        "https://travel.yahoo.com/cruises/articles/not-cent-stranger-drives-overnight-225632722.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTWR8jztnelFARaWloap-P5EAM0mI_6kHua8wS1RO_WgH5K5wXtROpTpbU0Xo",
+      "image_credit": "KTVB",
+      "news": [
+        {
+          "url": "https://www.ktvb.com/article/news/nation-world/strangers-drive-mother-daughter-atlanta-florida-birthday-cruise-ground-stop/507-768ed592-2af7-48c6-8f73-40787d704056",
+          "title": "Strangers help mother and daughter stranded by ground stop get to special birthday cruise",
+          "publisher": "KTVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTWR8jztnelFARaWloap-P5EAM0mI_6kHua8wS1RO_WgH5K5wXtROpTpbU0Xo"
+        },
+        {
+          "url": "https://www.11alive.com/article/life/heartwarming/strangers-help-mother-daughter-stranded-atlanta-airport-birthday-cruise/85-283ec884-7265-4877-a20b-5ccdaf544b0f",
+          "title": "Strangers help mother, daughter stranded at Atlanta airport make birthday cruise",
+          "publisher": "11Alive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_b1ggQXurO8S-VpNMfA6-LFumuGGmRZIiq7RYxozL4YKvm76A_utOBveToHg"
+        },
+        {
+          "url": "https://travel.yahoo.com/cruises/articles/not-cent-stranger-drives-overnight-225632722.html",
+          "title": "“Not a Cent”: Stranger Drives Overnight to Get Mother and Daughter to Carnival Cruise After FAA Grounding",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKYzt1Ym6QTKSAUguWnLYJS1aEBI1k7avZzCyLYQlDhwavO1nP4AB4HjZ9kJQ"
+        }
+      ]
+    },
+    {
+      "query": "karen gillan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T02:30:00Z",
+      "related_news_urls": [
+        "https://www.cinemablend.com/movies/karen-gillan-one-question-jumanji-crop-top-shorts-cast-goodbye",
+        "https://www.syfy.com/syfy-wire/guardians-of-the-galaxy-star-karen-gillan-has-spoken-to-marvel-about-nebula-return",
+        "https://thedirect.com/article/guardians-of-the-galaxy-karen-gillan-nebula-mcu-marvel"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLFYx38IKVW0_p7SJJ7M8ekoud2bV-pkYjTmhy3gF_cO9lwQrcbFx3E-VFHwQ",
+      "image_credit": "Cinemablend",
+      "news": [
+        {
+          "url": "https://www.cinemablend.com/movies/karen-gillan-one-question-jumanji-crop-top-shorts-cast-goodbye",
+          "title": "Karen Gillan Has Just One Question About The Jumanji Crop Top And Shorts As The Cast Says Goodbye",
+          "publisher": "Cinemablend",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLFYx38IKVW0_p7SJJ7M8ekoud2bV-pkYjTmhy3gF_cO9lwQrcbFx3E-VFHwQ"
+        },
+        {
+          "url": "https://www.syfy.com/syfy-wire/guardians-of-the-galaxy-star-karen-gillan-has-spoken-to-marvel-about-nebula-return",
+          "title": "Could Nebula Return to Marvel? Guardian of the Galaxy’s Karen Gillan Teases What's Next",
+          "publisher": "SYFY",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpcHtWp0WJXXHbJL937RRQ1DspK9EQhvPPGjPNS9nHujoaeDRl3J0LOhRFEw"
+        },
+        {
+          "url": "https://thedirect.com/article/guardians-of-the-galaxy-karen-gillan-nebula-mcu-marvel",
+          "title": "Guardians of the Galaxy Star Karen Gillan on Her Future As Nebula In The MCU: 'I Have Definitely Spoken To Marvel'",
+          "publisher": "The Direct",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTHcWNAkO0BcnhsgKb3_ke6DA3hIXG3-yF0VO6of1-dW6CiJLXUE-n-8kALDQ"
+        }
+      ]
+    },
+    {
+      "query": "la mansion vip",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T02:20:00Z",
+      "related_news_urls": [
+        "https://www.infobae.com/mexico/2026/11/15/la-mansion-vip-votos-las-encuestas-que-revelarian-al-primer-eliminado-de-la-segunda-temporada/",
+        "https://www.tvnotas.com.mx/espectaculos-mexico/dona-alegria-o-bellakath-filtran-el-nombre-del-primer-eliminado-de-la-mansion-vip-2-la-tension-crece",
+        "https://heraldodemexico.com.mx/espectaculos/2026/11/15/asi-van-las-votaciones-de-la-mansion-vip-esta-es-la-encuesta-que-revelaria-al-primer-eliminado-2919582.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRa84tUOxZBBGQIlTR_PDjqAE3-QESezyCw29D7SpEEmYHkfDH1b6pY35jZ4A",
+      "image_credit": "Infobae",
+      "news": [
+        {
+          "url": "https://www.infobae.com/mexico/2026/11/15/la-mansion-vip-votos-las-encuestas-que-revelarian-al-primer-eliminado-de-la-segunda-temporada/",
+          "title": "La Mansión VIP votos: las encuestas que revelarían al primer eliminado de la segunda temporada",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRa84tUOxZBBGQIlTR_PDjqAE3-QESezyCw29D7SpEEmYHkfDH1b6pY35jZ4A"
+        },
+        {
+          "url": "https://www.tvnotas.com.mx/espectaculos-mexico/dona-alegria-o-bellakath-filtran-el-nombre-del-primer-eliminado-de-la-mansion-vip-2-la-tension-crece",
+          "title": "¿Doña Alegría o Bellakath? Filtran el nombre del primer eliminado de ‘La mansión VIP 2’. ¡La tensión crece!",
+          "publisher": "TVNotas",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZJLmZVatzQO47r7FCb-ogTmZXQhdaSIy2GwJHKJlSUL8gwSWjpa-G91q-UCs"
+        },
+        {
+          "url": "https://heraldodemexico.com.mx/espectaculos/2026/11/15/asi-van-las-votaciones-de-la-mansion-vip-esta-es-la-encuesta-que-revelaria-al-primer-eliminado-2919582.html",
+          "title": "Así van las votaciones de La Mansión VIP; esta es la encuesta que revelaría al primer eliminado",
+          "publisher": "El Heraldo de México",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYMerwGFQ7sfUoT_0NpE0Irur4U1PFwuR4kbmg9BV4maEeY0raUAxZpAe4N_M"
+        }
+      ]
+    },
+    {
+      "query": "aaron glenn",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T02:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/no-lies-detected-certain-qbs-233325501.html",
+        "https://www.syracuse.com/buffalo-bills/2026/11/if-that-was-josh-allen-jets-coach-furious-after-officials-controversial-no-call-vsbuffalo-bills.html",
+        "https://www.barstoolsports.com/blog/3581150/another-banner-day-for-the-jets-aaron-glenn-got-caught-on-a-mic-saying-that-a"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNuCj-GXRGwc4Z8ugbdXdf-kLA3masc1UqaFJBiHxgDakbVEMOmhB-qBB9N00",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/buckeyes-flip-4-star-rb-013335089.html",
-          "title": "Buckeyes flip 4-star RB Nigel Newkirk from Alabama: 'Ohio State is a special place'",
+          "url": "https://sports.yahoo.com/articles/no-lies-detected-certain-qbs-233325501.html",
+          "title": "‘No Lies Detected,’ ‘Certain QBs Get Special Treatment’ — NFL Fans React As Aaron Glenn Seems to Reference Josh Allen After Hit on Jets QB Geno Smith",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMHQTW_zktXI8JzdynITV8wIeEPWZ1n0seurKIwjkYhFlVrE8ZIoDbB4IgnEk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNuCj-GXRGwc4Z8ugbdXdf-kLA3masc1UqaFJBiHxgDakbVEMOmhB-qBB9N00"
         },
         {
-          "url": "https://www.elevenwarriors.com/ohio-state-football-recruiting/2026/11/165475/ohio-state-adds-second-running-back-to-2027-class-flipping-four-star-nigel-newkirk-from-alabama",
-          "title": "Ohio State Adds Second Running Back to 2027 Class, Flipping Four-Star Nigel Newkirk from Alabama",
-          "publisher": "Eleven Warriors",
+          "url": "https://www.syracuse.com/buffalo-bills/2026/11/if-that-was-josh-allen-jets-coach-furious-after-officials-controversial-no-call-vsbuffalo-bills.html",
+          "title": "‘If that was Josh Allen’: Jets coach furious after officials’ controversial no-call vs. Bills",
+          "publisher": "Syracuse.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRc22_Bsb7l7Il6AR0oLua2mR-WDJZRZ6O-EJk8Z_40ogY7LqTTB5meHg7fPjs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRApWpPbJqmPncymajR5y6fQgGixCAzaD0JbQCFvefLCYfAmlCXoH2UlvI-sB4"
         },
         {
-          "url": "https://www.on3.com/rivals/news/prediction-ohio-state-to-flip-another-four-star-running-back-in-the-2027-cycle/",
-          "title": "Prediction: Ohio State to flip another four-star running back in the 2027 cycle",
-          "publisher": "On3",
+          "url": "https://www.barstoolsports.com/blog/3581150/another-banner-day-for-the-jets-aaron-glenn-got-caught-on-a-mic-saying-that-a",
+          "title": "Another Banner Day For The Jets: Aaron Glenn Got Caught On A Mic Saying That It'd Be A Flag 'If It Was Josh Allen' After Geno Got Hit",
+          "publisher": "Barstool Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU74M5XupoXOp1VPorJFzoGfh10LXGeZGYn6vypwIBfr0kGRciZQM4hK6_4MU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgUGCOGqkRWJmBHlxZZq2M2tfVLXtD6sFT1X7SSmrdu1FsuKCHmZ3otXNp4pI"
         }
       ]
     },
     {
-      "query": "don willard",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T02:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50490305/four-nfl-refs-officiate-2-games-due-faa-ground-stop",
-        "https://apnews.com/article/colts-dolphins-bengals-steelers-referees-fe3ddab342cb66665b3e11e08e814079",
-        "https://sports.yahoo.com/nfl/breaking-news/article/don-willard-to-serve-as-the-head-referee-for-2-nfl-games-on-same-day-after-league-switches-up-assignments-232146013.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyi9N1fcccuaI_3sD2f6LpUm0nOp3rSqFN1t6aiE5J_Xp5uj6BWs0xNtizfzc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50490305/four-nfl-refs-officiate-2-games-due-faa-ground-stop",
-          "title": "Working double shifts: Four NFL refs to officiate 2 games due to FAA ground stop",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyi9N1fcccuaI_3sD2f6LpUm0nOp3rSqFN1t6aiE5J_Xp5uj6BWs0xNtizfzc"
-        },
-        {
-          "url": "https://apnews.com/article/colts-dolphins-bengals-steelers-referees-fe3ddab342cb66665b3e11e08e814079",
-          "title": "4 officials begin busy day by working Dolphins-Colts game before heading to Steelers-Bengals game",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShdsjSE0_ENiqCaA6Huzo7NGs7Czg24K8OaHe3DHh6WoKotiM46gRYZzQGfWk"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/breaking-news/article/don-willard-to-serve-as-the-head-referee-for-2-nfl-games-on-same-day-after-league-switches-up-assignments-232146013.html",
-          "title": "Don Willard to serve as the head referee for 2 NFL games on same day after league switches up assignments",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5B3SKbU-MfjlkQfzO8Gx8AE0k-Z5CjJ5xN0X4gStIDn5otqbz7jaUkZ7KSZU"
-        }
-      ]
-    },
-    {
-      "query": "clima para amanhã",
+      "query": "tari eason",
       "approx_searches": "500+",
-      "published_at": "2026-11-16T02:00:00Z",
+      "published_at": "2026-11-16T02:20:00Z",
       "related_news_urls": [
-        "https://www.bra1.com.br/clima/id-699051/previsao_do_tempo_em_boa_vista__32.8_c__parcialmente_nublado_e_65__de_chuva",
-        "https://novo2026.portaldoholanda.com.br/roraima/clima-para-amanha-em-boa-vista-domingo-chega-com-31c-e-pancadas-de-chuva-ao-longo-do-dia",
-        "https://regiaoemdestake.com.br/o-tempo-e-a-temperatura-domingo-de-tempestades-no-interior-e-calor-de-37c-em-boa-vista/"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/anthony-davis-scores-only-14-in-loss-to-rockets",
+        "https://sports.yahoo.com/articles/fern-ndez-reacts-poor-performance-002415235.html",
+        "https://nypost.com/2026/11/15/sports/michael-porter-jr-sits-for-personal-reasons-in-nets-loss/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLD7E1nSq1aS8GBNqGjh7okWfNoUx5k08NTphGmKFCTGDIHEV9uYG-uNZkRoU",
-      "image_credit": "www.bra1.com.br",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4VMvS9Fhc9ge8snCl8XISCL7Cc9pHa55qStDkbG_wvw5BfS2IQNr1Wl6NpG8",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.bra1.com.br/clima/id-699051/previsao_do_tempo_em_boa_vista__32.8_c__parcialmente_nublado_e_65__de_chuva",
-          "title": "Previsão do tempo em Boa Vista: 32.8°C, parcialmente nublado e 65% de chuva",
-          "publisher": "www.bra1.com.br",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/anthony-davis-scores-only-14-in-loss-to-rockets",
+          "title": "Anthony Davis scores only 14 in loss to Rockets",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLD7E1nSq1aS8GBNqGjh7okWfNoUx5k08NTphGmKFCTGDIHEV9uYG-uNZkRoU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4VMvS9Fhc9ge8snCl8XISCL7Cc9pHa55qStDkbG_wvw5BfS2IQNr1Wl6NpG8"
         },
         {
-          "url": "https://novo2026.portaldoholanda.com.br/roraima/clima-para-amanha-em-boa-vista-domingo-chega-com-31c-e-pancadas-de-chuva-ao-longo-do-dia",
-          "title": "Clima para amanhã em Boa Vista: domingo chega com 31°C e pancadas de chuva ao longo do dia",
-          "publisher": "Portal do Holanda",
+          "url": "https://sports.yahoo.com/articles/fern-ndez-reacts-poor-performance-002415235.html",
+          "title": "Fernández Reacts to Poor Performance in Nets’ Loss to Grizzlies",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ79rhXxi02dxeODM_UWRy-V6vcUTPkUdaXfgLtOP1a0YJZFbBjsBwOInITbCQ"
         },
         {
-          "url": "https://regiaoemdestake.com.br/o-tempo-e-a-temperatura-domingo-de-tempestades-no-interior-e-calor-de-37c-em-boa-vista/",
-          "title": "O TEMPO E A TEMPERATURA: domingo de tempestades no interior e calor de 37°C em Boa Vista",
-          "publisher": "Região em Destake",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCADt0bc8a813m0qnCwB2O2m1ATezoIEb0g-aIu6D4AFjsAuwjrzstWLf8NPU"
-        }
-      ]
-    },
-    {
-      "query": "dan hicks wife",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-16T01:50:00Z",
-      "related_news_urls": [
-        "https://www.golfchannel.com/news/news/dan-hicks-legendary-nbc-sports-and-golf-announcer-dies-at-age-64",
-        "https://nypost.com/2026/11/12/sports/dan-hicks-died-of-acute-illness-before-he-was-scheduled-to-call-notre-dame-game/",
-        "https://www.espn.com/espn/story/_/id/50462145/long-sports-broadcaster-dan-hicks-dies-age-64"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRdl5X2slvVuGTH8Q98WVAPAeognuP1Iil7wVHFQE1WPrlHF4zKcRyiz2GsDU",
-      "image_credit": "Golf Channel",
-      "news": [
-        {
-          "url": "https://www.golfchannel.com/news/news/dan-hicks-legendary-nbc-sports-and-golf-announcer-dies-at-age-64",
-          "title": "Dan Hicks, legendary NBC Sports and golf announcer, dies at age 64",
-          "publisher": "Golf Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRdl5X2slvVuGTH8Q98WVAPAeognuP1Iil7wVHFQE1WPrlHF4zKcRyiz2GsDU"
-        },
-        {
-          "url": "https://nypost.com/2026/11/12/sports/dan-hicks-died-of-acute-illness-before-he-was-scheduled-to-call-notre-dame-game/",
-          "title": "Dan Hicks died of ‘acute illness’ before he was scheduled to call Notre Dame game",
+          "url": "https://nypost.com/2026/11/15/sports/michael-porter-jr-sits-for-personal-reasons-in-nets-loss/",
+          "title": "Michael Porter Jr. sits for personal reasons — but he should be back soon",
           "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgKhBQfWH7_Y3MgGt7lvNBG_czxY-XsBLeBoG6Cx5x9OmjKsOeNBdpLbjmF4I"
-        },
-        {
-          "url": "https://www.espn.com/espn/story/_/id/50462145/long-sports-broadcaster-dan-hicks-dies-age-64",
-          "title": "Longtime sports broadcaster Dan Hicks dies at age 64",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwynxcghs9KJEsH4jeZWKAVrkbzWT18aOjNwB4ShSPCgN_QnQlAHdxQLVm7eo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv71T2wleGCKYWyjcxH0-ZTPZuFG2r6VwCsetm-hMsgpC_bGg4gCAz9K-XLNA"
         }
       ]
     },
     {
-      "query": "hawks",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T01:50:00Z",
+      "query": "adam devine",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T02:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/former-lakers-center-lands-nba-011723191.html",
-        "https://www.hoopsrumors.com/2026/11/hawks-to-waive-gilbert-sign-castro-to-two-way-deal.html",
-        "https://www.si.com/nba/hawks/onsi/report-hawks-waive-two-way-guard-keshon-gilbert-quickly-sign-former-laker-rafael-castro-01m7gmrk0h6c"
+        "https://uk.news.yahoo.com/adam-devine-reveals-worst-holiday-183000744.html",
+        "https://www.imdb.com/news/ni66102775/?ref_=nmnw_art_perm",
+        "https://www.yahoo.com/entertainment/movies/articles/chloe-fineman-cast-comedy-movie-184630922.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG3GTulARPmlrN7GyMIZmw8ozCPkhbfyitrBxWgiD2Jyg_K7BqUrHI7SKh4vo",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZP3sJr7eN5Z8AfIfwfSrGhQ45E65FMxCsQ3bzXkv9GK9QSE4ZJv2qIBONlP0",
+      "image_credit": "Yahoo News UK",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/former-lakers-center-lands-nba-011723191.html",
-          "title": "Former Lakers Center Lands New NBA Opportunity After Exit",
+          "url": "https://uk.news.yahoo.com/adam-devine-reveals-worst-holiday-183000744.html",
+          "title": "Adam DeVine Reveals His Worst Holiday Gift",
+          "publisher": "Yahoo News UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZP3sJr7eN5Z8AfIfwfSrGhQ45E65FMxCsQ3bzXkv9GK9QSE4ZJv2qIBONlP0"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66102775/?ref_=nmnw_art_perm",
+          "title": "Adam Devine & Chloe Fineman Set For Michael Diliberti Crime Comedy ‘Miami Pi’ – AFM",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjnK-FNzW7-fzbZda5Ktyx_h4_Z3flblFSC3PHQzDk1M9VGrWyaAwmsMGZZoI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/chloe-fineman-cast-comedy-movie-184630922.html",
+          "title": "Chloe Fineman Cast in New Comedy Movie That’s GTA VI Meets The Big Lebowski After SNL Exit",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjCVT9-PDuwyYqnReyh6JWzgi8boM5TtGkX2YskHDRiEZnm0SsQYCohOFOIhg"
+        }
+      ]
+    },
+    {
+      "query": "jamarr chase",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T02:20:00Z",
+      "related_news_urls": [
+        "https://triblive.com/sports/first-call-jamarr-chases-bland-take-on-steelers-bengals-rivalry-pens-must-be-sharp-vs-senators-on-hall-of-fame-night/",
+        "https://www.pennlive.com/steelers/2026/11/jamarr-chase-was-asked-about-the-steelers-rivalry-before-sunday-nights-game-his-honest-answer-is-turning-heads.html",
+        "https://sports.yahoo.com/video/why-jamarr-chase-tops-the-week-10-wr-rankings-213027375.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr9eZtsaZNU-lW6MqvozwLBwj0NJ8tIDPdaW9pSOUKR4Pv1wsqqN5JRnPpw9U",
+      "image_credit": "TribLIVE.com",
+      "news": [
+        {
+          "url": "https://triblive.com/sports/first-call-jamarr-chases-bland-take-on-steelers-bengals-rivalry-pens-must-be-sharp-vs-senators-on-hall-of-fame-night/",
+          "title": "First Call: Ja’Marr Chase’s bland take on Steelers-Bengals rivalry; Pens must be sharp vs. Senators on Hall of Fame night",
+          "publisher": "TribLIVE.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr9eZtsaZNU-lW6MqvozwLBwj0NJ8tIDPdaW9pSOUKR4Pv1wsqqN5JRnPpw9U"
+        },
+        {
+          "url": "https://www.pennlive.com/steelers/2026/11/jamarr-chase-was-asked-about-the-steelers-rivalry-before-sunday-nights-game-his-honest-answer-is-turning-heads.html",
+          "title": "Ja’Marr Chase was asked about the Steelers rivalry before Sunday night’s game — his honest answer is turning heads",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDBwpqNaF0AHbBwwdtKboBni1Sc6OdyRhH2TU5MSVEcFUW0Bdkndm9YCBupq8"
+        },
+        {
+          "url": "https://sports.yahoo.com/video/why-jamarr-chase-tops-the-week-10-wr-rankings-213027375.html",
+          "title": "Why Ja'Marr Chase tops the Week 10 WR rankings",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG3GTulARPmlrN7GyMIZmw8ozCPkhbfyitrBxWgiD2Jyg_K7BqUrHI7SKh4vo"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/hawks-to-waive-gilbert-sign-castro-to-two-way-deal.html",
-          "title": "Hawks To Waive Gilbert, Sign Castro To Two-Way Deal",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAHelaFgMi7O5ISc7SpeqAc39PGEgkypKq4P52Xh79x1jnpapdj6ABQssR-aA"
-        },
-        {
-          "url": "https://www.si.com/nba/hawks/onsi/report-hawks-waive-two-way-guard-keshon-gilbert-quickly-sign-former-laker-rafael-castro-01m7gmrk0h6c",
-          "title": "Report: Hawks Waive Two-Way Guard Keshon Gilbert, Quickly Sign Former Laker Rafael Castro",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVCaH1K5SX69xZZ7pQvQ5pjav3bzdzqzhWznpl_L29Hl3grFt1I8aMRNxdg70"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwOkyKgu8_nvloV1Tr1soqBz9Ac-mcXQFc0Me5nTzXNkjv9xSMYvypAUSpvMM"
         }
       ]
     }
