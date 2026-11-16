@@ -91,3 +91,15 @@ test('an X Space clip post can be requested in the card only through an official
  assert.ok(source.includes('widgets.createTweet'),'must use documented official post embedding, not X Spaces iframes');
  assert.ok(source.includes('https://platform.x.com/widgets.js'));
 });
+
+test('a Fred X post supplied by the owner is discoverable without claiming a verified live session',()=>{
+ const source=read('x-spaces-quick-card.mjs');
+ const lifecycle=read('x-spaces-lifecycle.mjs');
+ assert.match(source,/FRED_SHARED_POST/);
+ assert.match(source,/Open original X post/);
+ assert.match(source,/sharedPreview\.addEventListener/);
+ assert.match(source,/clipButton\.click\(\)/);
+ assert.match(lifecycle,/2119202415702605899/);
+ assert.match(lifecycle,/replayAvailable===true/);
+ assert.doesNotMatch(source,/fetch\([^)]*twitterapis\.com/);
+});

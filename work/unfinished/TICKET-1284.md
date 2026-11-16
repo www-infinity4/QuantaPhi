@@ -3,9 +3,9 @@ issue: 1284
 project: "X / Twitter Infinity Spaces Quick Card"
 state: implementing
 dot: "🟡"
-progress_percent: 35
+progress_percent: 38
 progress_basis: "Dedicated X Spaces Quick Card with local topic/host search, source-validated URLs, wallet-authorized Media Star reads, and static tests; 0 verified X-native audio embeds, no live Spaces API or OAuth."
-sessions_spent: 1
+sessions_spent: 2
 sessions_remaining_estimate: "unknown; live audio blocked by X provider capabilities"
 agent: "ChatGPT"
 lease_id: null
@@ -13,14 +13,14 @@ fence: null
 lease_expires_at: null
 task_session_id: null
 repo: www-infinity4/QuantaPhi
-branch: feat/stream-radio-x-spaces-20261104
-last_observed_utc: "2026-11-05"
-tests: "Static regression tests authored, pending GitHub CI and browser verification"
+branch: feat/x-spaces-post-lifecycle-1284-20261107
+last_observed_utc: "2026-11-07"
+tests: "Four local Node lifecycle tests passed from matching source; new GitHub exact-head CI and browser verification pending"
 merged: false
 deployed: false
 live_verified: false
-blocker: "X live Spaces APIs require plan+permission and existing X developer status does not prove usable API credentials; no verified general live Space audio iframe."
-next_action: "Inspect exact-head CI, verify new Spaces card appears on live QuantaPhi, test wallet-index and canonical X link controls without implying live audio playback."
+blocker: "Owner X post ID does not reveal direct Space ID; no verified free X lifecycle/replay metadata adapter or server-side Media Star import exists. Live audio iframe unsupported."
+next_action: "Run exact-head CI for source branch; verify original X post link and 360px UI; independently implement trusted post-to-Space ID + confirmed-ended replay handoff without paid trial or wallet mutation."
 ---
 
 # Issue #1284 — X Spaces Quick Card
@@ -53,3 +53,14 @@ This scoped work continues the user's requested Twitter/X Spaces card. Account X
 - Verify that actual official X Space embed/audio can legally play within QuantaPhi; failing this, honest official-player link remains.
 - Independent implementation of full user-authorized X OAuth/post/feed in #1284; only this Spaces slice is built here.
 - Separate exact-head CI, review, merge, deploy, independent readback and issue update.
+
+## November 7, 2026 · Owner-shared Fred post and verified lifecycle contract
+
+- **Canonical user source:** https://x.com/dotkrueger/status/2119202415702605899 (X post, not independently verified as live Space or tied to a specific Space ID).
+- **Continuity:** same #1284 issue, source branch `feat/x-spaces-post-lifecycle-1284-20261107`; existing Fred Media Star and payment PR #1820 left untouched. No coordinator lease or model execution claimed.
+- **New source:** `x-spaces-lifecycle.mjs` separates unverified, provider-confirmed live, and provider-confirmed ended; only exact matched post + fresh provenance are eligible. Confirmation of replay availability yields an **unpublished Media Star candidate**, never an automatic paid episode or credit.
+- **Visible card source patch:** `x-spaces-quick-card.mjs` now offers an original Fred X post link and owner-initiated official X post widget inside the existing Spaces card. Does not label post live/ended or claim unsupported X audio embed.
+- **TDD:** four dedicated Node lifecycle tests passed locally after initial missing-module test failure. Existing source regressions updated; CI workflow includes new Node tests. Exact-head GitHub CI and actual Android/browser verification remain unverified.
+- **Not yet built:** authenticated, permitted X post→Space ID resolution, reliable ended-state source, server-side import to Fred's original Media Star episode library, live promotion expiry, D1 persistence and provider playback proof. A search returning no live results or a blocked X link must **not** be treated as verified end or deletion.
+- **Cost boundary:** no trial, purchased research feed, auto-recharge, wallet debit, royalty or paid X API activation. Original Fred payment/receipt work in #1820 is independent.
+- **Next:** exact-head CI, independent review, metadata provider permissions and a narrow backend import route; test live→ended→archive on genuine provider receipts before deployment.

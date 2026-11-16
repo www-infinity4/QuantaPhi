@@ -5,6 +5,7 @@
  * X controls Spaces playback. This is not a paid X search or OAuth client.
  */
 import {readIndexedSpaces, readVerifiedLiveSpaces, validSpaceLink} from './quanta-feed-spaces.mjs';
+import {FRED_SHARED_POST} from './x-spaces-lifecycle.mjs';
 export {validSpaceLink};
 
 export function normalizeSpaceEntry(source) {
@@ -84,6 +85,23 @@ export function mountXSpacesQuickCard(root){
  const section=node('section','xqs-shell');
  append(section,node('h2','', '𝕏 Spaces · Quick Listen'),
   node('p','xqs-sub','Find your own indexed conversations, filter by topic, or paste a real X Space link. No invented rooms.'));
+ // Owner supplied a genuine X *post*, not a verified direct Space/recording URL.
+ // Leave it accessible without login; never call it live or archive it by inference.
+ const shared=node('article','xqs-card');
+ shared.dataset.sourcePostId=FRED_SHARED_POST.postId;
+ shared.setAttribute('aria-label','Fred Krueger shared X Space post · status unverified');
+ shared.append(node('h3','','Fred Krueger · shared Space post'),
+  node('p','xqs-note','Source link provided by the owner. Live status and replay availability have not been independently verified.'));
+ const sharedActions=node('div','xqs-bar');
+ const sharedOpen=node('a','xqs-a xqs-primary','▶ Open original X post');
+ sharedOpen.href=FRED_SHARED_POST.url;
+ sharedOpen.target='_blank';sharedOpen.rel='noopener noreferrer';
+ const sharedPreview=node('button','xqs-button','Show post in this card');
+ sharedPreview.type='button';
+ sharedActions.append(sharedOpen,sharedPreview);
+ shared.append(sharedActions);
+ const sharedNotice=node('p','xqs-note','When a verified X Space ID and lifecycle status become available, the live slot can be retired and a confirmed recording proposed for the original Media Star library. No audio or payment is assumed.');
+ shared.append(sharedNotice);
  const first=node('div','xqs-bar');
  const search=node('input','xqs-input');search.type='search';search.placeholder='Search topic or @host';
  search.setAttribute('aria-label','Search indexed X Spaces by topic or host');
@@ -110,7 +128,7 @@ export function mountXSpacesQuickCard(root){
  append(nav,prev,count,next);
  const note=node('p','xqs-note',
   'X controls live Spaces audio. A Space URL does not include an authorized live stream for QuantaPhi. This card shows genuine rooms and only enables local listening when an embeddable source is available.');
- append(section,first,second,clipRow,status,deck,nav,listening,note);
+ append(section,shared,first,second,clipRow,status,deck,nav,listening,note);
  root.replaceChildren(section);
  // Session-only links: do not expose followed-account data across visitors or record user browsing.
  let fromIndex=[],fromLive=[],sessionOnly=[],position=0,searchTerm='',pending=false;
@@ -140,6 +158,11 @@ export function mountXSpacesQuickCard(root){
   append(card,node('h3','',chosen.title),source,inline,playback,open);
   deck.append(card);
  }
+ // Use the existing official X post widget; never fabricate live audio or replay availability.
+ sharedPreview.addEventListener('click',()=>{
+  clipInput.value=FRED_SHARED_POST.url;
+  clipButton.click();
+ });
  clipButton.addEventListener('click',async()=>{
   const id=parseSpaceClipPostId(clipInput.value);
   if(!id){status.textContent='Paste an X post URL that shares a Space recording or audio clip.';return}
