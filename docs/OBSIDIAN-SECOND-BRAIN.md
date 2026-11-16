@@ -31,7 +31,7 @@ Open that output directory as an Obsidian vault. On Android use an Obsidian-acce
 
 Generated notes: hot.md, index.md, Projects/QuantaPhi.md, Agents/Bubbles.md and Tickets/TICKET-*.md. All ticket notes link to canonical GitHub issues, carry an unverified source-pointer label and a source-content SHA-256. They are NOT CI, approval, merge, or deployment receipts.
 
-The exporter refuses to create a vault inside the public Git checkout and will not overwrite human-edited notes. No real personal chat data or credentials should ever be committed to a public repo.
+The exporter resolves the output path before writing and requires a vault outside the source checkout. It checks that each generated note is intact before refreshing the vault. If a note was edited, or if a marker-only note from an older export differs from the current generated text, the exporter preserves it and stops. Use a new output folder to keep that vault alongside a fresh export. No real personal chat data or credentials should ever be committed to a public repo.
 
 ## Integration boundary and next work
 
