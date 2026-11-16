@@ -3,47 +3,327 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T14:07:45.890896Z",
+  "checked_at": "2026-11-16T14:43:37.184339Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "daniel radcliffe",
+      "query": "jaime ray newman",
       "approx_searches": "500+",
-      "published_at": "2026-11-16T13:50:00Z",
+      "published_at": "2026-11-16T14:30:00Z",
       "related_news_urls": [
-        "https://people.com/daniel-radcliffe-on-reuniting-with-jonathan-groff-for-new-movie-trust-the-man-exclusive-12253230",
-        "https://parade.com/celebrities/daniel-radcliffe-wants-reunite-dane-dehaan-kill-your-darlings-harry-potter",
-        "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/daniel-radcliffe-reveals-he-recommended-jonathan-groff-for-their-upcoming-film-trust-the-man/articleshow/135885405.cms"
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/brittany-snow-disco-dress-brought-193051079.html",
+        "https://pagesix.com/2026/11/13/photos/malin-akerman-blows-a-kiss-on-the-hunting-wives-season-2-red-carpet-and-more-star-snaps/",
+        "https://www.upi.com/News_Photos/view/upi/dcf49da7e6c39a8f47fe17f7defe4230/Alexandria-Deberry-attends-The-Hunting-Wives-premiere-in-LA/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj_ABz7QSUbPRBJR2n8VNlmvYL30kMF1U9A-1xHNMgvkZ656g9Z_Ux-BQIa88",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2T5kaYOGil4ol2Oie9vdZCSjOS4T3NxluqXQ8sRWuAtxL-MNFUPxV6qSRYnE",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://people.com/daniel-radcliffe-on-reuniting-with-jonathan-groff-for-new-movie-trust-the-man-exclusive-12253230",
-          "title": "Daniel Radcliffe on Reuniting with Jonathan Groff for New Movie ‘Trust the Man’ (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/brittany-snow-disco-dress-brought-193051079.html",
+          "title": "Brittany Snow’s Disco Dress Brought a Healthy Dose of Sparkle to ‘The Hunting Wives’ Season Two Premiere",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj_ABz7QSUbPRBJR2n8VNlmvYL30kMF1U9A-1xHNMgvkZ656g9Z_Ux-BQIa88"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2T5kaYOGil4ol2Oie9vdZCSjOS4T3NxluqXQ8sRWuAtxL-MNFUPxV6qSRYnE"
         },
         {
-          "url": "https://parade.com/celebrities/daniel-radcliffe-wants-reunite-dane-dehaan-kill-your-darlings-harry-potter",
-          "title": "Daniel Radcliffe Reveals the Former Co-star He’d Love to Reunite With — and It’s Not a ‘Harry Potter’ Star",
-          "publisher": "Parade Magazine",
+          "url": "https://pagesix.com/2026/11/13/photos/malin-akerman-blows-a-kiss-on-the-hunting-wives-season-2-red-carpet-and-more-star-snaps/",
+          "title": "Malin Akerman blows a kiss on the 'Hunting Wives' Season 2 red carpet and more star snaps",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW64aQiM3Cgb8kcdR7OKFetl3_hb9kKghSvnsVuTwPmSA4pdtCydtJ4l_9ijY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxW3GNu8ddLUkvAQOWbJ1diI_xTMcVk7I0FE6Ca0Bgfb8BXUgtx32LjE9YwPk"
         },
         {
-          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/daniel-radcliffe-reveals-he-recommended-jonathan-groff-for-their-upcoming-film-trust-the-man/articleshow/135885405.cms",
-          "title": "Daniel Radcliffe reveals he recommended Jonathan Groff for their upcoming film 'Trust The Man'",
+          "url": "https://www.upi.com/News_Photos/view/upi/dcf49da7e6c39a8f47fe17f7defe4230/Alexandria-Deberry-attends-The-Hunting-Wives-premiere-in-LA/",
+          "title": "Photo: Alexandria Deberry attends 'The Hunting Wives' premiere in LA - LAP20261112732",
+          "publisher": "UPI.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpTAp0sjafADrFwC2B4bYpck1nt0mFex05qxbxnUjqhoUYgxtnz6T_BGxlJiM"
+        }
+      ]
+    },
+    {
+      "query": "renaissance",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T14:30:00Z",
+      "related_news_urls": [
+        "https://foxbaltimore.com/news/local/32k-stolen-by-maryland-renaissance-festival-concessions-employee-court-records-say",
+        "https://www.baltimoresun.com/2026/11/13/maryland-renaissance-festival-concessions-theft-charges/",
+        "https://finance.yahoo.com/markets/stocks/articles/renaissance-technologies-sold-99-7-122651675.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRH2z2-S17zICyiYWAQOUVWfMJi6BUM5s1l1bxoo9orWJ6mpDH4bFoWTMUEe0",
+      "image_credit": "WBFF",
+      "news": [
+        {
+          "url": "https://foxbaltimore.com/news/local/32k-stolen-by-maryland-renaissance-festival-concessions-employee-court-records-say",
+          "title": "SUN: $32K stolen by Maryland Renaissance Festival concessions employee, court records say",
+          "publisher": "WBFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRH2z2-S17zICyiYWAQOUVWfMJi6BUM5s1l1bxoo9orWJ6mpDH4bFoWTMUEe0"
+        },
+        {
+          "url": "https://www.baltimoresun.com/2026/11/13/maryland-renaissance-festival-concessions-theft-charges/",
+          "title": "$32K stolen by Maryland Renaissance Festival concessions employee, court records say",
+          "publisher": "Baltimore Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtKiKTB-Bgo-F3SdH_7i4WTNRniCfXU6Sn3N0OC10-RMpy1ylCqzCg4LTmzpc"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/renaissance-technologies-sold-99-7-122651675.html",
+          "title": "Renaissance Technologies Sold 99.7% Of Its $1.42 Billion Nvidia Stake Before Jensen Huang’s Exit, While Building A $1.62 Billion Stake In Another Chip Stock",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmcJCNt9cIk8TVgiZRGbfvIuFGbyILDaZIweBti8bxa-aXy4wWzgC70BVktwc"
+        }
+      ]
+    },
+    {
+      "query": "nvidia earnings date",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T14:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html",
+        "https://www.ft.com/content/3ccb1761-a0cd-43ba-a3e7-e19d00950ae3?syn-25a6b1a6=1",
+        "https://finance.yahoo.com/markets/stocks/articles/nvidia-reports-earnings-nov-17-175002703.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Af1V8v8OTpKiJnb_sYTnVroAdvj24gD8aJYgF5wEwEZm8Q1dTA-F0DjlZ8Y",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html",
+          "title": "Nvidia's Colette Kress confronts key questions in first earnings report since Jensen Huang’s exit",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Af1V8v8OTpKiJnb_sYTnVroAdvj24gD8aJYgF5wEwEZm8Q1dTA-F0DjlZ8Y"
+        },
+        {
+          "url": "https://www.ft.com/content/3ccb1761-a0cd-43ba-a3e7-e19d00950ae3?syn-25a6b1a6=1",
+          "title": "Will Nvidia earnings steady the AI sell-off?",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDXr-lvPUtycloHGgaYk6_CDYvDrWzldXk4NkKjt2ugn_BPoSyIK--O1QN4-o"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-reports-earnings-nov-17-175002703.html",
+          "title": "Nvidia Reports Earnings on Nov. 17. Here's What Investors Should Be Watching.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHssiinHYi4eicl53feFIqF4VVTPA1hxd1e09ma5Yj3FLso_KdDIap4XHYxgU"
+        }
+      ]
+    },
+    {
+      "query": "usa today ncaa football re-rank",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T14:20:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/ncaaf/2026/11/16/college-football-re-rank-ncaa-1-138-ohio-state-week-11/92799749007/",
+        "https://www.cbssports.com/college-football/news/college-football-rankings-coaches-poll-top-25-week-12-2026/",
+        "https://sportsdata.usatoday.com/football/ncaaf/coaches-poll/2026/2026-11-15"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW48TeTNsz9WM6CPE2ZZSxyEHJ9N5n6AhK7JcQ3o17xrCJDjSVhaBM7DhamJw",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/16/college-football-re-rank-ncaa-1-138-ohio-state-week-11/92799749007/",
+          "title": "Ohio State rises, SEC dominates college football's NCAA Re-Rank 1-138 after Week 11",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW48TeTNsz9WM6CPE2ZZSxyEHJ9N5n6AhK7JcQ3o17xrCJDjSVhaBM7DhamJw"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-rankings-coaches-poll-top-25-week-12-2026/",
+          "title": "Coaches Poll top 25: Georgia tightens grip on No. 1, Wake Forest enters top 10 in college football rankings",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSagpDnqFl63-Um9c6NSe0W6U1UHv9Gv62VTJfxJpYeLF_toe8ZCcCoDSCDhPg"
+        },
+        {
+          "url": "https://sportsdata.usatoday.com/football/ncaaf/coaches-poll/2026/2026-11-15",
+          "title": "2026-27US LBM Coaches Poll",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK43PL-9K1EYz_MKT2jFgsBMvaSGy9rvAUMo8xhn63P_d9rAuUFuCHMCMJhxI"
+        }
+      ]
+    },
+    {
+      "query": "somalia vs ghana",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T14:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/pidgin/articles/cm205w1rerqvo",
+        "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/Ben-Asare-Benched-for-Ati-Zigi-to-Start-Likely-Black-Stars-XI-against-Somalia-2061480",
+        "https://www.cafonline.com/afcon2025/news/kyereh-back-after-four-years-kudus-and-jordan-ayew-return-as-ghana-seek-afcon-revival-against-somalia/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYKmrKwWHZAPd81Z6cUXj1oQw08O7smhtYbbl4vBzz5IsxM5QKjxqymtg_xYg",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/pidgin/articles/cm205w1rerqvo",
+          "title": "Ghana vs Somalia 2027 Afcon qualifiers preview: Jordan Ayew lead Black Stars attack against Ocean stars",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYKmrKwWHZAPd81Z6cUXj1oQw08O7smhtYbbl4vBzz5IsxM5QKjxqymtg_xYg"
+        },
+        {
+          "url": "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/Ben-Asare-Benched-for-Ati-Zigi-to-Start-Likely-Black-Stars-XI-against-Somalia-2061480",
+          "title": "Ben Asare Benched for Ati-Zigi to Start: Likely Black Stars XI against Somalia",
+          "publisher": "GhanaWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRepcDxbywf7DWdZy3IXFoNAyUZJbikY_Y_m4N4K87QNsaLCbz7J02ANiYqHro"
+        },
+        {
+          "url": "https://www.cafonline.com/afcon2025/news/kyereh-back-after-four-years-kudus-and-jordan-ayew-return-as-ghana-seek-afcon-revival-against-somalia/",
+          "title": "Kyereh back after four years, Kudus and Jordan Ayew return as Ghana seek AFCON revival against Somalia",
+          "publisher": "CAFOnline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY7SYVbB-Pg963ycNGSTI3izoZwKOqow-FZnRgURQpFifO05-7mT09YDd8VRg"
+        }
+      ]
+    },
+    {
+      "query": "jatavis sanders",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T14:20:00Z",
+      "related_news_urls": [
+        "https://www.al.com/alabamafootball/2026/11/nc-state-philip-rivers-hire-alabama-staffer-as-next-general-manager.html",
+        "https://gopack.com/news/2026/11/16/sanders-named-general-manager-for-wolfpack-football",
+        "https://247sports.com/college/north-carolina-state/article/jatavis-sanders-set-to-take-over-as-nc-state-football-general-manager-292684987/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStsQ-RZed8rCZZOpHXQSxGNZuya1y4ySvKuCwPwJ7S_Yu1mafmBcffybMmsLI",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/alabamafootball/2026/11/nc-state-philip-rivers-hire-alabama-staffer-as-next-general-manager.html",
+          "title": "NC State, Philip Rivers hire Alabama staffer as next general manager",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStsQ-RZed8rCZZOpHXQSxGNZuya1y4ySvKuCwPwJ7S_Yu1mafmBcffybMmsLI"
+        },
+        {
+          "url": "https://gopack.com/news/2026/11/16/sanders-named-general-manager-for-wolfpack-football",
+          "title": "Sanders Named General Manager for Wolfpack Football",
+          "publisher": "NC State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbX0sh2Yn5Nb9xLTtZQSJrnobSC6HbV23y2dym6NffMDBR8weyNPx6ZT6x2eQ"
+        },
+        {
+          "url": "https://247sports.com/college/north-carolina-state/article/jatavis-sanders-set-to-take-over-as-nc-state-football-general-manager-292684987/",
+          "title": "Jatavis Sanders set to take over as NC State football general manager",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT82Umu5UrDkFk28UNHY9CrPy7VrWcn_3OwIbmpUpXETmbfK1t41GsgMVxPo6k"
+        }
+      ]
+    },
+    {
+      "query": "nicola coughlan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T14:20:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/nicola-coughlan-boycott-harry-potter-jk-rowlings-trans-1237224887/",
+        "https://www.hollywoodreporter.com/tv/tv-news/nicola-coughlan-harry-potter-jk-rowling-show-series-trans-1236756089/",
+        "https://www.gbnews.com/celebrity/duncan-bannatyne-nicola-coughlan-harry-potter-jk-rowling-trans"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY9UpL6tpwnLKgbZyU_8cL_qnRapGsUI6bI_YBw7uS8GNoisaLiAQRaD00X3k",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/nicola-coughlan-boycott-harry-potter-jk-rowlings-trans-1237224887/",
+          "title": "Nicola Coughlan Boycotting ‘Harry Potter’ Series Over J.K. Rowling’s Trans Views: “It’s Not For Me”",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY9UpL6tpwnLKgbZyU_8cL_qnRapGsUI6bI_YBw7uS8GNoisaLiAQRaD00X3k"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/nicola-coughlan-harry-potter-jk-rowling-show-series-trans-1236756089/",
+          "title": "Nicola Coughlan “Will Not Be Watching” HBO’s ‘Harry Potter’: “And I Would Never Be in It”",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVFPHj2JSN_8qSdobOJS5ivLiGFU1DK1zUT-3FUFzbv5aTjgVjc2BV9KSGnvc"
+        },
+        {
+          "url": "https://www.gbnews.com/celebrity/duncan-bannatyne-nicola-coughlan-harry-potter-jk-rowling-trans",
+          "title": "Duncan Bannatyne blasts Bridgerton star as she vows to boycott Harry Potter series over JK Rowling trans views",
+          "publisher": "GB News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxZnXxng8wCQ2MK-DX4bP5KVePgIFWe6Q-N3SrAuVsd7_97t6PmZzsx3dgueg"
+        }
+      ]
+    },
+    {
+      "query": "prince harry news",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T14:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/entertainment/prince-william-draws-hard-line-harry-meghan-royal-future-king-charles-leaves-door-open-experts",
+        "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-william-snubs-prince-harry-080931061.html",
+        "https://timesofindia.indiatimes.com/relationships/prince-harry-reaches-out-william-stays-away-whats-really-happening-between-the-brothers/articleshow/135724618.cms"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnLpgXUXUSc8o8Et2H86j8ixkgYPrAH2v_hGqTylg4lzAH3bSDRn6f7hnI6s",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/entertainment/prince-william-draws-hard-line-harry-meghan-royal-future-king-charles-leaves-door-open-experts",
+          "title": "Prince William draws hard line on Harry, Meghan’s royal future as King Charles leaves door open: experts",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnLpgXUXUSc8o8Et2H86j8ixkgYPrAH2v_hGqTylg4lzAH3bSDRn6f7hnI6s"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-william-snubs-prince-harry-080931061.html",
+          "title": "Prince William Snubs Prince Harry Out of His Coronation Ceremony — Expert",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv_fdjOIhiaK5qhdOSZC06lhaHZNWiAJPjlF3Oil-gaGXD353NVP8HEsqgh2M"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/relationships/prince-harry-reaches-out-william-stays-away-whats-really-happening-between-the-brothers/articleshow/135724618.cms",
+          "title": "Prince Harry reaches out, William stays away: What's really happening between the brothers?",
           "publisher": "The Times of India",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReRpIS2diV6m7uMYNi88F2Vu5irg6TycexBAN-PQFVu5_BvCcU9axgxoWU-Pw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Nx4qDv1L4zNSzjA1muR3s4lBXAS8sFLHvKFesQOVhKTZatTHqIf3TnMVc0w"
+        }
+      ]
+    },
+    {
+      "query": "bond 26",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T14:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/film/2026/nov/13/new-james-bond-announced-007",
+        "https://puck.news/hollywood/2026/11/the-case-for-robert-pattinson-as-james-bond",
+        "https://www.gq.com/story/denis-villeneuve-men-of-the-year-screening-recap"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPKs_zjY_cxcDIuwL5Vdx6LwVM76rGWqtKxbmGMd1pfKTDsOO9NDJGzLp9Vj4",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/13/new-james-bond-announced-007",
+          "title": "‘It was a train wreck! I was terrified’: how the new James Bond will be announced – and what can go wrong",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPKs_zjY_cxcDIuwL5Vdx6LwVM76rGWqtKxbmGMd1pfKTDsOO9NDJGzLp9Vj4"
+        },
+        {
+          "url": "https://puck.news/hollywood/2026/11/the-case-for-robert-pattinson-as-james-bond",
+          "title": "The Case for Robert Pattinson as James Bond",
+          "publisher": "Puck",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJQbUxeJypL4Go0YCHL75RpiNekl52WxgZWQ5G8dAfM3cFK69vP63cC1GEQQ"
+        },
+        {
+          "url": "https://www.gq.com/story/denis-villeneuve-men-of-the-year-screening-recap",
+          "title": "Denis Villeneuve Talks Dune: Part Three and Rebooting James Bond: ‘We Cannot F*ck It Up.’",
+          "publisher": "GQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlK9IzW53paXdeuWBQcbCyCNJrqmjhuA4fh3_bqkSHC2AfgiAmt4lh6q2kI20"
         }
       ]
     },
     {
       "query": "pga tour",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-16T13:50:00Z",
       "related_news_urls": [
         "https://www.pgatour.com/article/news/latest/2026/11/15/meet-the-10-who-earned-2027-pga-tour-cards-via-dp-world-tour-race-to-dubai-patrick-reed-eugenio-chacarra",
@@ -73,286 +353,6 @@
           "publisher": "Golfweek",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk4H4cVL1odpjmdWkQ8j6j708CKYwS9Ov7eRsex_egE1X7hPGaA9afwVluhx8"
-        }
-      ]
-    },
-    {
-      "query": "beanie feldstein",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T13:50:00Z",
-      "related_news_urls": [
-        "https://www.vogue.com/article/i-want-what-they-have-beanie-feldstein-and-bonnie-chance-roberts",
-        "https://people.com/beanie-feldstein-says-welcoming-baby-girl-has-been-beyond-my-wildest-dreams-exclusive-12227660",
-        "https://www.instyle.com/beanie-feldstein-welcome-first-child-bonnie-chance-roberts-11975814"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcy40FikeytYKNSrn_5RpeJIYOKeG2KNaQTRrowSAYap1B9jfMEHtaDgTkCNc",
-      "image_credit": "Vogue",
-      "news": [
-        {
-          "url": "https://www.vogue.com/article/i-want-what-they-have-beanie-feldstein-and-bonnie-chance-roberts",
-          "title": "I Want What Adorable New Moms Beanie Feldstein and Bonnie-Chance Roberts Have",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcy40FikeytYKNSrn_5RpeJIYOKeG2KNaQTRrowSAYap1B9jfMEHtaDgTkCNc"
-        },
-        {
-          "url": "https://people.com/beanie-feldstein-says-welcoming-baby-girl-has-been-beyond-my-wildest-dreams-exclusive-12227660",
-          "title": "Beanie Feldstein Says Welcoming Her Baby Girl Has Been ‘Beyond My Wildest Dreams’ (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsrDLv3DrlRwCwwSW4J-V6NpAlPm-VCKRrx_3BLBklYxYH_PWx14C0lgul-68"
-        },
-        {
-          "url": "https://www.instyle.com/beanie-feldstein-welcome-first-child-bonnie-chance-roberts-11975814",
-          "title": "Beanie Feldstein and Wife Bonnie-Chance Roberts Secretly Welcomed Their First Child Together",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTR_xEUo8tuHDUJOmRyjTfWi9XZhBSGSRtr3uUTubpoqcF7zpHxjq5wooof9-s"
-        }
-      ]
-    },
-    {
-      "query": "bryan cranston",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T13:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/theater/bryan-cranston-all-my-sons-broadway.html",
-        "https://www.hollywoodreporter.com/lifestyle/arts/bryan-cranston-marianne-jean-baptiste-all-my-sons-broadway-1236756112/",
-        "https://people.com/bryan-cranston-and-marianne-jean-baptiste-bring-all-my-sons-to-broadway-12256184"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSon2b76LuvfzTLNmc0QprOskzCaW6N-ggLKE4bstbFIUgM9tflMCsz8JqCP9M",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/16/theater/bryan-cranston-all-my-sons-broadway.html",
-          "title": "Bryan Cranston to Star in ‘All My Sons’ on Broadway Next Spring",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSon2b76LuvfzTLNmc0QprOskzCaW6N-ggLKE4bstbFIUgM9tflMCsz8JqCP9M"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/lifestyle/arts/bryan-cranston-marianne-jean-baptiste-all-my-sons-broadway-1236756112/",
-          "title": "Bryan Cranston, Marianne Jean-Baptiste to Star in ‘All My Sons’ on Broadway",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyzfvN8mEVT1ywkUMjdrzxIsS7Ka3_9aiLJAy3isay7iMhmORHitDMFOITQR4"
-        },
-        {
-          "url": "https://people.com/bryan-cranston-and-marianne-jean-baptiste-bring-all-my-sons-to-broadway-12256184",
-          "title": "Bryan Cranston and Marianne Jean-Baptiste Bring ‘All My Sons’ to Broadway",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS4rVBEvAmYG6b6QPzW6mjotiAU7ZEodXYW9dY2u6p-16prOu5mXUdrC-HQrk"
-        }
-      ]
-    },
-    {
-      "query": "nitto atp finals",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T13:40:00Z",
-      "related_news_urls": [
-        "https://designwanted.com/market-news/skywalk-pininfarina/",
-        "https://www.espn.com/tennis/story/_/id/50490503/alexander-zverev-opens-atp-finals-win-rafael-jodar",
-        "https://www.theguardian.com/sport/live/2026/nov/15/atp-finals-tennis-alexander-zverev-v-rafael-jodar-and-more-live"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2JqUiqD6ox6HaO00lOLPhrQG7I32nABzfL-XlpNhvO6KEL8qKrhrw96i6rRE",
-      "image_credit": "DesignWanted",
-      "news": [
-        {
-          "url": "https://designwanted.com/market-news/skywalk-pininfarina/",
-          "title": "Skywalk: Pininfarina's walkway for the ATP Finals",
-          "publisher": "DesignWanted",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2JqUiqD6ox6HaO00lOLPhrQG7I32nABzfL-XlpNhvO6KEL8qKrhrw96i6rRE"
-        },
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50490503/alexander-zverev-opens-atp-finals-win-rafael-jodar",
-          "title": "Alexander Zverev starts ATP Finals with convincing win over Rafael Jodar",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8VF3TnOwQdFFKAjJ6GUL8Y5k_mO1DOL1qadK-ea9sJyYals6ZlHrnCnCM96A"
-        },
-        {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/15/atp-finals-tennis-alexander-zverev-v-rafael-jodar-and-more-live",
-          "title": "ATP Finals tennis: Alexander Zverev beats Rafael Jódar in straight sets – as it happened",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMZ1AWlyYPTAGpTQ7ayCDRglO000_hEzeUeAePg_kgyMgdq3srSrlpih3khnM"
-        }
-      ]
-    },
-    {
-      "query": "greg abel berkshire hathaway stock sales",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T13:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/warren-buffetts-successor-greg-abel-102602227.html",
-        "https://www.fool.com/investing/2026/11/13/warren-buffett-successor-greg-abel-35-berkshire-hathaway-359-billion-portfolio-invested-in-2-undeniable-winners/",
-        "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/berkshire-s-safe-haven-bid-masks-a-weaker-underwriting-quarter/70518467"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu3atId9uuesTvUyt_WxfFMVgQU-EW6Nw0gJoNln0mO10gslkeBPYWttTeDfw",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/warren-buffetts-successor-greg-abel-102602227.html",
-          "title": "Warren Buffett's Successor, Greg Abel, Just Dropped a $426 Million Bombshell on Wall Street",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu3atId9uuesTvUyt_WxfFMVgQU-EW6Nw0gJoNln0mO10gslkeBPYWttTeDfw"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/13/warren-buffett-successor-greg-abel-35-berkshire-hathaway-359-billion-portfolio-invested-in-2-undeniable-winners/",
-          "title": "Warren Buffett's Successor, Greg Abel, Has Over 35% of Berkshire Hathaway's $359 Billion Portfolio Invested in Just 2 Undeniable Winners",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQgJ_OKanO_DyRgOfGLtxZtB7BcLDCraaKuQr_9UYPM_OY9Xc0dIaE3jzMvXI"
-        },
-        {
-          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/berkshire-s-safe-haven-bid-masks-a-weaker-underwriting-quarter/70518467",
-          "title": "Berkshire's Safe-Haven Bid Masks a Weaker Underwriting Quarter",
-          "publisher": "ad-hoc-news.de",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcaEYpcBEw0PhZsTJoUN8kBcayQNcxXag9upZRC8LgtTh3ugPGBJ82Irs31UU"
-        }
-      ]
-    },
-    {
-      "query": "market",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T13:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
-        "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-stock-nvda-jensen-huang/",
-        "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM3MDSS8ec3Pe69TqM930udyAUzjnSePlIzVaarrPJ-jIEg_KQ3XjfdKXLEF0",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
-          "title": "Stock futures slide as Nvidia leads AI stocks lower: Live updates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM3MDSS8ec3Pe69TqM930udyAUzjnSePlIzVaarrPJ-jIEg_KQ3XjfdKXLEF0"
-        },
-        {
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-stock-nvda-jensen-huang/",
-          "title": "Stock Market Today: Tech Futures Sell Off; Nvidia Dives Amid Jensen Huang News (Live Coverage)",
-          "publisher": "Investor's Business Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbUmo7q4Zj6XhxGW3VExkhW2DY2BzaWwEiWKLKKi1pZ3l-6ASoc2S-qF5oT4c"
-        },
-        {
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
-          "title": "Stocks dip ahead of Nvidia earnings, Anthropic IPO",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvPUUjeAHM5HGXcvXovA2MdCcQemz1Ig5qpB42mO5dgKj5-VEOKaiz7eRH0Sc"
-        }
-      ]
-    },
-    {
-      "query": "carlos alcaraz",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T13:30:00Z",
-      "related_news_urls": [
-        "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-frances-tiafoe/2026/11/16/04_0414_20261116_2-directo.html",
-        "https://espndeportes.espn.com/tenis/nota/_/id/17518539/atp-finals-2026-asi-esta-la-tabla-de-posiciones-del-round-robin-y-quienes-se-clasifican-a-semifinales",
-        "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-alcaraz-reto-grandes-trofeos"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_nwAnKi9XryzZR4kgPr1byDkWSIqpRIi4Q7qfTxT83lJezlZALjyLQ8gF3kg",
-      "image_credit": "MARCA",
-      "news": [
-        {
-          "url": "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-frances-tiafoe/2026/11/16/04_0414_20261116_2-directo.html",
-          "title": "Carlos Alcaraz - Frances Tiafoe: en directo las Finales ATP | Última hora de ATP Finals en vivo hoy",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_nwAnKi9XryzZR4kgPr1byDkWSIqpRIi4Q7qfTxT83lJezlZALjyLQ8gF3kg"
-        },
-        {
-          "url": "https://espndeportes.espn.com/tenis/nota/_/id/17518539/atp-finals-2026-asi-esta-la-tabla-de-posiciones-del-round-robin-y-quienes-se-clasifican-a-semifinales",
-          "title": "ATP Finals 2026: así está la tabla de posiciones del Round Robin y quiénes se clasifican a semifinales",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPlsZzBoI9pYsNJdTleX2tKcQY9-LjsHMpLrVpAm40I0XUDgXQgp9PZ0sgMA"
-        },
-        {
-          "url": "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-alcaraz-reto-grandes-trofeos",
-          "title": "Alcaraz y el reto de las cinco grandes copas del tenis",
-          "publisher": "Nitto ATP Finals",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3dEWGl11K4K6otkpdGatDsUrUyhpulk9zcaAp3fX1JD46HTcK7lMZtHWC5Ik"
-        }
-      ]
-    },
-    {
-      "query": "zimbabwe vs equatorial guinea",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T13:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cwzd69vng80jt",
-        "https://www.heraldonline.co.zw/warriors-in-do-or-die-2/",
-        "https://uk.sports.yahoo.com/news/reading-fcs-andy-rinomhota-helps-102126605.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cwzd69vng80jt",
-          "title": "Equatorial Guinea vs Zimbabwe: Africa Cup of Nations Qualification stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.heraldonline.co.zw/warriors-in-do-or-die-2/",
-          "title": "Warriors in do-or-die",
-          "publisher": "Herald.co.zw",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-bTBxBGkIzyL0-1LwFNDcXj-NklmOihcvD129Jnjp7Y6pBDKHDUwjr8a28eA"
-        },
-        {
-          "url": "https://uk.sports.yahoo.com/news/reading-fcs-andy-rinomhota-helps-102126605.html",
-          "title": "Reading FC's Andy Rinomhota helps keep Zimbabwe's AFCON hopes alive",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFwU0oIjj30IWY36vyS4FEGZB7uqIzRZcgkLgQVztdghHi5iIhg6hbWJYN4T0"
-        }
-      ]
-    },
-    {
-      "query": "frances tiafoe",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T13:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/sport/live/2026/nov/16/carlos-alcaraz-v-frances-tiafoe-atp-finals-tennis-group-stage-live",
-        "https://www.reutersconnect.com/item/atp-finals/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxMTAzNUo",
-        "https://www.nytimes.com/athletic/live-blogs/alcaraz-vs-tiafoe-live-updates-atp-finals-2026-score-result/ePtyQTGPE5nx/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjDK1npKEV6dK8iXy3Di7KodAmLPg69Yampos8toLRVAf4uZxuC-ok7Ns7H94",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/16/carlos-alcaraz-v-frances-tiafoe-atp-finals-tennis-group-stage-live",
-          "title": "Carlos Alcaraz v Frances Tiafoe: ATP Finals tennis group stage – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjDK1npKEV6dK8iXy3Di7KodAmLPg69Yampos8toLRVAf4uZxuC-ok7Ns7H94"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/atp-finals/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxMTAzNUo",
-          "title": "ATP Finals",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeonUa4b-VvzI-nCVVKHTMu95bIxIjEvVE_E-FUMuYtLj4bfyGfNY-_y1JyYE"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/alcaraz-vs-tiafoe-live-updates-atp-finals-2026-score-result/ePtyQTGPE5nx/",
-          "title": "Carlos Alcaraz faces Frances Tiafoe on day two of 2026 ATP Finals: Live updates and latest score",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvFO4mhf-1HKmf8AXnwuRvKFerEIjlXWu2vk-sR7CEINPWLYu8jyTrFT-8sj0"
         }
       ]
     }
