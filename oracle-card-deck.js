@@ -13,6 +13,7 @@ let selectedDepartment='all',departmentApi=null;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
+ ['fredSpacesRadio','Media Star · Fred’s Spaces · Play show'],
  ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
@@ -43,7 +44,6 @@ const choices=[
  ['phiStoryWriter','Write a story'],
  ['phiMediaBuilder','Create images and video'],
  ['result','Explore research and Asteroid'],
- ['fredSpacesRadio','Listen to Media Star'],
  ['xTwitterCard','X · Twitter Quick Card'],
  ['xSpacesQuickCard','Explore X Spaces'],
  ['followingSpacesRadio','Explore radio shows'],
@@ -757,6 +757,10 @@ document.body.classList.add('oracle-card-deck-active');
 // categories have no privileged opening positions.
 function chooseOpening(){
  const ready=eligible();if(!ready.length)return null;
+ // Feature the original Fred player in the first Public carousel slot only.
+ // Explicit deep links (start()), visitor-hidden cards and chosen views still win.
+ const fred=ready.find(entry=>entry.id==='fredSpacesRadio');
+ if(selectedTab==='public'&&selectedDepartment==='all'&&fred)return fred;
  // Each visit starts with another family; 116 accepted brands no longer monopolize
  // the starting slot. Preserve direct-link spotlight selection in start().
  if(openingCursor===null){
