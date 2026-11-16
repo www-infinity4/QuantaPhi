@@ -90,3 +90,12 @@ test('Infinity-style spotlight is genuinely media-led with archive film artwork 
   assert.match(css,/prefers-reduced-motion/);
   assert.doesNotMatch(html,/sponsored.*sponsored|fake.*ad impression/i);
 });
+
+test('presentation clock resumes after back-forward cache restoration without duplicate intervals',()=>{
+  const source=file('gary/presentation-init.mjs');
+  assert.match(source,/addEventListener\('pageshow',startPresentationClock\)/);
+  assert.match(source,/addEventListener\('pagehide',stopPresentationClock\)/);
+  assert.match(source,/if\(clock===undefined\) clock=window\.setInterval/);
+  assert.match(source,/window\.clearInterval\(clock\);clock=undefined/);
+  assert.doesNotMatch(source,/pagehide'.*once:true/);
+});

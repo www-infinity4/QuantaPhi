@@ -18,5 +18,15 @@ function applyPresentation(){
 applyPresentation();
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)applyPresentation()});
 // If the page remains open across midnight, change it during the same session.
-const clock=window.setInterval(applyPresentation,60_000);
-window.addEventListener('pagehide',()=>window.clearInterval(clock),{once:true});
+let clock;
+function startPresentationClock(){
+  applyPresentation();
+  if(clock===undefined) clock=window.setInterval(applyPresentation,60_000);
+}
+function stopPresentationClock(){
+  if(clock!==undefined){window.clearInterval(clock);clock=undefined;}
+}
+startPresentationClock();
+// BFCache keeps the document alive after pagehide: restart on pageshow.
+window.addEventListener('pagehide',stopPresentationClock);
+window.addEventListener('pageshow',startPresentationClock);
