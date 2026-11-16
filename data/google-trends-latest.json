@@ -3,17 +3,192 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T17:31:09.540187Z",
+  "checked_at": "2026-11-16T18:01:39.651047Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "supreme court",
+      "query": "us employment based green card proposal",
       "approx_searches": "500+",
+      "published_at": "2026-11-16T17:40:00Z",
+      "related_news_urls": [
+        "https://news.bloomberglaw.com/daily-labor-report/dol-plan-overhauls-rules-to-sponsor-foreign-worker-green-cards",
+        "https://www.bloomberg.com/news/articles/2026-11-16/us-proposes-tighter-rules-for-employer-sponsored-green-cards",
+        "https://www.fragomen.com/insights/united-states-dol-final-rule-on-prevailing-wages-now-under-omb-review.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmMhjnGh4HQbEf-1rP0g-MRfvqQYydm1CogGR0HF57X_q1I7-RQD0-FG4kBiU",
+      "image_credit": "Bloomberg Law News",
+      "news": [
+        {
+          "url": "https://news.bloomberglaw.com/daily-labor-report/dol-plan-overhauls-rules-to-sponsor-foreign-worker-green-cards",
+          "title": "DOL Plans Overhaul of Rules to Sponsor Worker Green Cards (2)",
+          "publisher": "Bloomberg Law News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmMhjnGh4HQbEf-1rP0g-MRfvqQYydm1CogGR0HF57X_q1I7-RQD0-FG4kBiU"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-proposes-tighter-rules-for-employer-sponsored-green-cards",
+          "title": "US Proposes Tighter Rules for Employer-Sponsored Green Cards",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS04Y7lT8LN_kqs9mnWe90uiPFPocA-bnxwc9TgK-skYDRPlhuts8z-risO1mE"
+        },
+        {
+          "url": "https://www.fragomen.com/insights/united-states-dol-final-rule-on-prevailing-wages-now-under-omb-review.html",
+          "title": "United States: DOL Final Rule on Prevailing Wages Now Under OMB Review",
+          "publisher": "Fragomen",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKk6FgVlr0BUpoPKzmsvhE2U85E9HkT464VmWAV98OOPIUmQdsnF0H6MY4yA"
+        }
+      ]
+    },
+    {
+      "query": "chase down",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T17:30:00Z",
+      "related_news_urls": [
+        "https://gvwire.com/2026/11/16/chase-bank-goes-down-for-thousands-downdetector-reports/",
+        "https://www.mensjournal.com/news/chase-down-login-problems-downdetector-nov-16",
+        "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVwOE1QT6DiENo6JJfF4TwZqMduFUyO5R9fb5Rz06fvn6YZCYhKMLH-k9LXWk",
+      "image_credit": "GV Wire",
+      "news": [
+        {
+          "url": "https://gvwire.com/2026/11/16/chase-bank-goes-down-for-thousands-downdetector-reports/",
+          "title": "Chase Bank Goes Down for Thousands, Downdetector Reports",
+          "publisher": "GV Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVwOE1QT6DiENo6JJfF4TwZqMduFUyO5R9fb5Rz06fvn6YZCYhKMLH-k9LXWk"
+        },
+        {
+          "url": "https://www.mensjournal.com/news/chase-down-login-problems-downdetector-nov-16",
+          "title": "Chase Down? Thousands of Customers Report Login and Account Problems Monday, Downdetector Shows",
+          "publisher": "Men's Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuHT6jwFUWcqADqaHj3r7qnybufgZ1OediNhMdtPb0itdouXjMVQiSyk8R9Xs"
+        },
+        {
+          "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression",
+          "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvfGK6JpfRnRSRaEAQwyeP6Idnkn-q1M8hloQz56U6ArcUv_HmMs3rfLJz_cs"
+        }
+      ]
+    },
+    {
+      "query": "microsoft outlook global outage causes",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T17:30:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/US/outlook-outage-cause-microsoft-reason-teams-down/story?id=138174626",
+        "https://www.wsj.com/business/telecom/the-chaos-and-unexpected-joys-of-a-19-hour-global-email-outage-37b7170c",
+        "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6LW3W0nIwxF1kI1MAeUrqaUcZyWdAi_TtdhiSZuIqo5D0a50-F4SL_Mau5nk",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/US/outlook-outage-cause-microsoft-reason-teams-down/story?id=138174626",
+          "title": "Microsoft identifies issues leading to global Outlook outage",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6LW3W0nIwxF1kI1MAeUrqaUcZyWdAi_TtdhiSZuIqo5D0a50-F4SL_Mau5nk"
+        },
+        {
+          "url": "https://www.wsj.com/business/telecom/the-chaos-and-unexpected-joys-of-a-19-hour-global-email-outage-37b7170c",
+          "title": "The Chaos and Unexpected Joys of a 19-Hour Global Email Outage",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvwwbi9ZdLPcvgEn7_pW59bcEoJyqLd4AxYPBohGdRmMi7_NYSUhwTwKHWwFU"
+        },
+        {
+          "url": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
+          "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
+          "publisher": "SecurityWeek",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUYJP_x0qMLiPcpIJdqjHC0kb1w3LWrpp6NxbyCCG7IfCGcfV8EgPVRk-hrEM"
+        }
+      ]
+    },
+    {
+      "query": "lithuania vs liechtenstein",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T17:30:00Z",
+      "related_news_urls": [
+        "https://www.sportsmole.co.uk/football/nations-league/lithuania-vs-liechtenstein_game_262909.html",
+        "https://www.chronicleonline.com/sports/soccer/lithuania-liechtenstein-nations-league-soccer/image_d0672fc6-2d0e-56be-8d67-902e4bc7b38f.html",
+        "https://www.squawka.com/en/news/previews/lithuania-vs-liechtenstein-predictions-betting-tips-16-11-26/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7rZvQTTsgnieb-7O6XUj6hFRj7P0n-tlFZ8ddc23hRik4X39p-QqilFMAcNU",
+      "image_credit": "Sports Mole",
+      "news": [
+        {
+          "url": "https://www.sportsmole.co.uk/football/nations-league/lithuania-vs-liechtenstein_game_262909.html",
+          "title": "Lithuania vs Liechtenstein - Nations League - November 16, 2026 - Match Guide, Data Analysis, Standings - Football",
+          "publisher": "Sports Mole",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7rZvQTTsgnieb-7O6XUj6hFRj7P0n-tlFZ8ddc23hRik4X39p-QqilFMAcNU"
+        },
+        {
+          "url": "https://www.chronicleonline.com/sports/soccer/lithuania-liechtenstein-nations-league-soccer/image_d0672fc6-2d0e-56be-8d67-902e4bc7b38f.html",
+          "title": "Lithuania Liechtenstein Nations League Soccer",
+          "publisher": "chronicleonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiq4Z_whSxZsBER4pEj2p9oJYbg3eRHxF35-MeHqxE7U_OAQ4G07UdqdUPRvI"
+        },
+        {
+          "url": "https://www.squawka.com/en/news/previews/lithuania-vs-liechtenstein-predictions-betting-tips-16-11-26/",
+          "title": "Lithuania vs Liechtenstein predictions and betting tips: Hosts to sign off with a comfortable home win",
+          "publisher": "Squawka",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQK0MH2ZZeuIJ7JIDeaCop-nW4SAHOtJd5bwllVCwf3Ogodkd6oz2ByNPDJvM"
+        }
+      ]
+    },
+    {
+      "query": "brad gerstner",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T17:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/tech/the-campaign-to-bring-back-jensen-huang-as-nvidia-ceo-e91b0b2c",
+        "https://www.nytimes.com/2026/11/16/us/politics/trump-jensen-huang-nvidia.html",
+        "https://www.washingtonpost.com/technology/2026/11/16/probably-biggest-fear-elon-has-why-huangs-exit-looms-over-musk/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4FwPPDHn7_wS7gx9evJNRtnwFKs2ioPh7pL13rwQwlR4PVzaeDTfHajDAXfY",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/tech/the-campaign-to-bring-back-jensen-huang-as-nvidia-ceo-e91b0b2c",
+          "title": "The Campaign to Bring Back Jensen Huang as Nvidia CEO",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4FwPPDHn7_wS7gx9evJNRtnwFKs2ioPh7pL13rwQwlR4PVzaeDTfHajDAXfY"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/16/us/politics/trump-jensen-huang-nvidia.html",
+          "title": "Trump Says He’s Open to Reinstatement of Jensen Huang as Nvidia Chief",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQljLzQyCJuXt4Wa4tT77ZAoxaoR76bPxoMqVtFN2XlNFKaAzhotFR_zeDRyv0"
+        },
+        {
+          "url": "https://www.washingtonpost.com/technology/2026/11/16/probably-biggest-fear-elon-has-why-huangs-exit-looms-over-musk/",
+          "title": "Nearly a fifth of the S&P 500 is tied to three men with no clear successors",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9gJ6xxjiUOwmUCS0jbhkpol2LePTMIqMfaMM6cwZiaQbI1i4Tdgo4-hRGas"
+        }
+      ]
+    },
+    {
+      "query": "supreme court",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T17:10:00Z",
       "related_news_urls": [
         "https://www.nbcnews.com/politics/supreme-court/supreme-court-rejects-trump-academic-funding-cuts-dei-rcna608885",
         "https://www.cnn.com/2026/11/16/politics/supreme-court-trump-grants",
-        "https://thehill.com/regulation/court-battles/6222654-scotus-declines-trump-dei-appeal/"
+        "https://www.politico.com/news/2026/11/16/supreme-court-trump-university-california-research-grant-cuts-01167304"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi8ClxWoBiBIpWplWuQk4dJ83Pm2I1B5Punjv2KZqFAGHWnuWDExAuoc6guf8",
       "image_credit": "NBC News",
@@ -33,11 +208,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg6qmGbN6Kxm0XxkX53PAgMbU2KDKTznwf6iUfKCQsG7YkQYWvUl_H9CgLG7Y"
         },
         {
-          "url": "https://thehill.com/regulation/court-battles/6222654-scotus-declines-trump-dei-appeal/",
-          "title": "Supreme Court declines Trump administration’s DEI research grant appeal",
-          "publisher": "The Hill",
+          "url": "https://www.politico.com/news/2026/11/16/supreme-court-trump-university-california-research-grant-cuts-01167304",
+          "title": "Supreme Court rejects Trump bid to revive UC research grant cuts",
+          "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRgDzELimzcfle5r_-0ykGGEstwOWhnadPOwGSe92oeWiepOOg2FzxzkcwBrU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJBDvPzg8Ef4v5299_Peq49em-PkING-Fj11KdGVSk5CzgviZ7ZUsqFG5OSw8"
         }
       ]
     },
@@ -47,7 +222,7 @@
       "published_at": "2026-11-16T17:00:00Z",
       "related_news_urls": [
         "https://people.com/gypsy-rose-blanchard-breaks-down-in-tears-first-live-interview-after-ken-urker-death-12255784",
-        "https://www.today.com/health/news/ken-urker-cause-of-death-gypsy-rose-blanchard-boyfriend-drug-overdose-rcna601222",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/ken-urker-cause-death-released-153405112.html",
         "https://www.wdsu.com/article/gypsy-rose-partner-ken-urker-death-louisiana/74441077"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMhswnlagSFd6sDhQ6iEt8tGREIS0x02bnWCl_sqgj4oNAsr2W7MGzz1-rANs",
@@ -61,11 +236,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMhswnlagSFd6sDhQ6iEt8tGREIS0x02bnWCl_sqgj4oNAsr2W7MGzz1-rANs"
         },
         {
-          "url": "https://www.today.com/health/news/ken-urker-cause-of-death-gypsy-rose-blanchard-boyfriend-drug-overdose-rcna601222",
-          "title": "Ken Urker’s Cause of Death Confirmed by Louisiana Coroner’s Office",
-          "publisher": "TODAY.com",
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/ken-urker-cause-death-released-153405112.html",
+          "title": "Ken Urker cause of death released",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPqd6LtGVQwKTiRZnA5rO3gJROUwmClRxV4dpEhT5z8dS_BvBq3xrHhXx5j_k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqSMpjBDAnBVORTw5jDSZQjnxVcrKCHgVVA44MQeR5FG0IMzcN7Au-JzOXd4c"
         },
         {
           "url": "https://www.wdsu.com/article/gypsy-rose-partner-ken-urker-death-louisiana/74441077",
@@ -78,14 +253,14 @@
     },
     {
       "query": "estonia vs bulgaria",
-      "approx_searches": "500+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-16T17:00:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cmwy04kvgw95t",
         "https://easyodds.com/estonia-vs-bulgaria-betting-odds-tips-predictions-preview-16th-november-2026",
         "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-match-thread-bulgaria-vs-estonia-live-streams-q0hyk"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
       "image_credit": "BBC",
       "news": [
         {
@@ -93,7 +268,7 @@
           "title": "Estonia vs Bulgaria: UEFA Nations League stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
         },
         {
           "url": "https://easyodds.com/estonia-vs-bulgaria-betting-odds-tips-predictions-preview-16th-november-2026",
@@ -152,8 +327,8 @@
       "published_at": "2026-11-16T16:40:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/cqvg27wpd3l0o",
-        "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/",
-        "https://www.newsletter.co.uk/news/people/road-racing-world-rocked-by-death-of-rachel-burrows-family-well-known-in-northern-ireland-motorcycle-competitions-9354677"
+        "https://www.the-independent.com/news/uk/home-news/maurice-morrow-wife-daughter-rachel-burrows-b3085688.html",
+        "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg",
       "image_credit": "BBC",
@@ -166,193 +341,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg"
         },
         {
+          "url": "https://www.the-independent.com/news/uk/home-news/maurice-morrow-wife-daughter-rachel-burrows-b3085688.html",
+          "title": "Heartbreak as DUP chairman’s wife and daughter die just hours apart",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEdMux1I1hhq4jSMn1EhiSEtNLdWg4Z4Dz3j7AXGFmmIUpC_DdZBqwgTLwHHc"
+        },
+        {
           "url": "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/",
           "title": "Wife and daughter of former Fermanagh MLA pass away",
           "publisher": "The Fermanagh Herald",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZtnNiX0OFI2rS8-qexZ3-DMtGwxYgqtbs7mpkFDv0U1GhCCUYFVt_InDhyS0"
-        },
-        {
-          "url": "https://www.newsletter.co.uk/news/people/road-racing-world-rocked-by-death-of-rachel-burrows-family-well-known-in-northern-ireland-motorcycle-competitions-9354677",
-          "title": "Road racing world rocked by death of Rachel Burrows: Family well-known in Northern Ireland motorcycle competitions",
-          "publisher": "Belfast News Letter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3nn8F0-qDZtxT-ADMIRM5bwgJoHcpBWsVHdslwA-e7ujNe_Zvjcaw7zHsfrY"
-        }
-      ]
-    },
-    {
-      "query": "2028 ford mustang cobra r",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T16:30:00Z",
-      "related_news_urls": [
-        "https://www.caranddriver.com/news/a74425789/2028-ford-mustang-cobra-future-cars/",
-        "https://fordauthority.com/2026/11/mustang-shelby-gt350-successor-coming-based-around-dark-horse-sc-exclusive/",
-        "https://fordauthority.com/2026/11/all-new-high-performance-ford-mustang-will-launch-in-2027/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzX8ZlQ-eaxjpWIhBZoAP9LcFNM4ECgM95j9GsAf9pQIfmWiKg7XXFKdT7hg0",
-      "image_credit": "Car and Driver",
-      "news": [
-        {
-          "url": "https://www.caranddriver.com/news/a74425789/2028-ford-mustang-cobra-future-cars/",
-          "title": "2028 Ford Mustang Cobra with a Race Car-Derived V-8 Is Worth Waiting For",
-          "publisher": "Car and Driver",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzX8ZlQ-eaxjpWIhBZoAP9LcFNM4ECgM95j9GsAf9pQIfmWiKg7XXFKdT7hg0"
-        },
-        {
-          "url": "https://fordauthority.com/2026/11/mustang-shelby-gt350-successor-coming-based-around-dark-horse-sc-exclusive/",
-          "title": "Mustang Shelby GT350 Successor Coming Based Around Dark Horse SC: Exclusive",
-          "publisher": "Ford Authority",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjHyEmmIEL_N5aSxIQJnOoCi54FDjAqNFrpbqkSMcdiqrfzID6bbV5UFlDkqc"
-        },
-        {
-          "url": "https://fordauthority.com/2026/11/all-new-high-performance-ford-mustang-will-launch-in-2027/",
-          "title": "Dealer Docs Say New High-Performance Ford Mustang To Launch In 2027",
-          "publisher": "Ford Authority",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzG2ZHwVNJf8TLv81oAxytNmHigCctpM9z5QhjrMSt4iiYYfpCE8Otjtr1t6Y"
-        }
-      ]
-    },
-    {
-      "query": "bradley whitford",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T16:30:00Z",
-      "related_news_urls": [
-        "https://www.lifestyleasia.com/bk/entertainment/streaming/will-the-diplomat-season-5-happen-all-we-know-about-netflix-political-drama/",
-        "https://www.tvline.com/2310927/the-diplomat-bradley-whitford-season-4-moment-classic-will-ferrell-movie/",
-        "https://movieweb.com/the-diplomat-nielsen-ratings/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96Hgl_hMDzzkMBd5NO-m59l62oqJQnIponeUQCn__Ew2y8txxn5BQ9_Ui44U",
-      "image_credit": "Lifestyle Asia Hong Kong",
-      "news": [
-        {
-          "url": "https://www.lifestyleasia.com/bk/entertainment/streaming/will-the-diplomat-season-5-happen-all-we-know-about-netflix-political-drama/",
-          "title": "‘The Diplomat’ season 5: What we know so far about the Netflix series",
-          "publisher": "Lifestyle Asia Hong Kong",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96Hgl_hMDzzkMBd5NO-m59l62oqJQnIponeUQCn__Ew2y8txxn5BQ9_Ui44U"
-        },
-        {
-          "url": "https://www.tvline.com/2310927/the-diplomat-bradley-whitford-season-4-moment-classic-will-ferrell-movie/",
-          "title": "The Diplomat's Bradley Whitford Compares His Big Season 4 Moment To A Classic Will Ferrell Movie",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1DKfAogvTX9uAl_4OX8i2AE1hLBGxMK8eFFvXqaHi8a6wDkpfuui69DNwthU"
-        },
-        {
-          "url": "https://movieweb.com/the-diplomat-nielsen-ratings/",
-          "title": "Netflix's New Near-Perfect Series Hits 1 Billion Views as it Officially Takes Over Streaming",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVwrcAXg8ENi8T4nL_r2LjYN38DzMYPu09gRgEX4KIPo52J_dqHXkfERgJKos"
-        }
-      ]
-    },
-    {
-      "query": "survivor",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T16:30:00Z",
-      "related_news_urls": [
-        "https://ew.com/survivor-expanding-two-hour-episodes-season-52-premiere-date-12256455",
-        "https://variety.com/2026/tv/news/survivor-season-52-premiere-date-cbs-1236948922/",
-        "https://parade.com/tv/survivor-season-52-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSBlTtMSjXhPTdoRWOhaka73-XFpo8pG7KMstTSKKr6TYAaBZ-pdixpXtpfjM",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/survivor-expanding-two-hour-episodes-season-52-premiere-date-12256455",
-          "title": "‘Survivor’ announces season 52 premiere date and expansion to two-hour episodes",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSBlTtMSjXhPTdoRWOhaka73-XFpo8pG7KMstTSKKr6TYAaBZ-pdixpXtpfjM"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/survivor-season-52-premiere-date-cbs-1236948922/",
-          "title": "‘Survivor’ Season 52 Premiere Date Set at CBS in Midseason Slate",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm4AbpBdjgsD5ZuF7VOk_AVTrHBypn3F21aVaGZ08OPkYnSGHl8GvKcZR92tw"
-        },
-        {
-          "url": "https://parade.com/tv/survivor-season-52-2026",
-          "title": "‘Survivor 52′ Makes Franchise History With Huge Episode Shakeup",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0ptanjNk3nTbQN3oeyfLbftEp-lFzzpmsPbi1VQL68oeRyGJxoTiL2UAozJc"
-        }
-      ]
-    },
-    {
-      "query": "the view",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T16:30:00Z",
-      "related_news_urls": [
-        "https://ca.style.yahoo.com/candace-cameron-bure-admits-view-193231236.html",
-        "https://www.the-independent.com/arts-entertainment/tv/news/candace-cameron-bure-the-view-politics-special-forces-b3084718.html",
-        "https://ew.com/candace-cameron-bure-returns-to-the-view-difficult-12250408"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR37lQSJMUhOPxHDIqJL97USOTkzkqUejBLz_meiWtu32vS6yMpOY1dwjuyJf0",
-      "image_credit": "Yahoo Lifestyle Canada",
-      "news": [
-        {
-          "url": "https://ca.style.yahoo.com/candace-cameron-bure-admits-view-193231236.html",
-          "title": "Candace Cameron Bure Admits ‘The View' Was ‘Difficult' as She Returns to Talk Show After 10 Years",
-          "publisher": "Yahoo Lifestyle Canada",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR37lQSJMUhOPxHDIqJL97USOTkzkqUejBLz_meiWtu32vS6yMpOY1dwjuyJf0"
-        },
-        {
-          "url": "https://www.the-independent.com/arts-entertainment/tv/news/candace-cameron-bure-the-view-politics-special-forces-b3084718.html",
-          "title": "Candace Cameron Bure gives verdict on Special Forces co-star George Santos",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcZH5D2BUz4LgxebvBequ9tzkYqFIdtwIggMOHFEHGXGt0UEMhOnn0oiUMG2k"
-        },
-        {
-          "url": "https://ew.com/candace-cameron-bure-returns-to-the-view-difficult-12250408",
-          "title": "Ex-cohost Candace Cameron Bure returns to ‘The View,’ tells stars it was ‘difficult’ to do",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMTGZKbWAT6tEi9h2nwJjuBmoM4pT6kloXf1pkyirii5vhZ67Vpv8o6F-pLt4"
-        }
-      ]
-    },
-    {
-      "query": "black rifle coffee",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T16:30:00Z",
-      "related_news_urls": [
-        "https://www.fox7austin.com/news/black-rifle-coffee-closing-12-company-owned-locations-including-some-texas",
-        "https://sanantonio.culturemap.com/news/restaurants-bars/black-rifle-closing-live-oak/",
-        "https://www.yahoo.com/news/videos/san-antonio-news-1-500-230834697.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqtQ2ecHLsj0Mynbmqwoqi_r1IMKe2amFnkzsY9dJheWYKNF9XVM6CIvED3ZI",
-      "image_credit": "FOX 7 Austin",
-      "news": [
-        {
-          "url": "https://www.fox7austin.com/news/black-rifle-coffee-closing-12-company-owned-locations-including-some-texas",
-          "title": "Black Rifle Coffee closing 12 company-owned stores, including in Texas",
-          "publisher": "FOX 7 Austin",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqtQ2ecHLsj0Mynbmqwoqi_r1IMKe2amFnkzsY9dJheWYKNF9XVM6CIvED3ZI"
-        },
-        {
-          "url": "https://sanantonio.culturemap.com/news/restaurants-bars/black-rifle-closing-live-oak/",
-          "title": "Black Rifle Coffee sounds retreat with San Antonio-area closure",
-          "publisher": "CultureMap San Antonio",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMcMDXEFQQ3dbsnPXy9M9GkL4pxo2aXUnYvkpX95YViXpFvBCrYztGmwePISM"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/san-antonio-news-1-500-230834697.html",
-          "title": "San Antonio news: $1,500 checks, Black Rifle Coffee",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ZdBJp1C6oJLyDSEQXIDuGoqXk6r_ZIuaizcpzKHpmKeIQLYvuPVaGNQC60Y"
         }
       ]
     }
