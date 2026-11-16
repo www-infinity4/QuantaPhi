@@ -47,9 +47,11 @@ test('never overwrites a user-edited Obsidian note',async()=>{
   await writeFile(path.join(root,'work','unfinished','INDEX.md'),sample);
   await exportIndexToVault({root,vault});
   const own=path.join(vault,'Tickets','TICKET-1908.md');
-  await writeFile(own,'# My own thoughts\n', 'utf8');
-  await assert.rejects(exportIndexToVault({root,vault}),/Refusing to replace a non-generated note/);
-  assert.equal(await readFile(own,'utf8'),'# My own thoughts\n');
+  const generated=await readFile(own,'utf8');
+  const edited=generated+'\n## My own thoughts\n';
+  await writeFile(own,edited,'utf8');
+  await assert.rejects(exportIndexToVault({root,vault}),/Refusing to replace/);
+  assert.equal(await readFile(own,'utf8'),edited);
  }finally{await rm(tmp,{recursive:true,force:true})}
 });
 
@@ -85,5 +87,20 @@ test('exports all six supporting repositories and the upstream vault foundation'
   }
   assert.match(collection,/reference only, not proof of installation/i);
   assert.match(await readFile(path.join(vault,'index.md'),'utf8'),/\[\[Sources\/Obsidian-Collection\]\]/);
+ }finally{await rm(tmp,{recursive:true,force:true})}
+});
+
+test('refreshes an intact generated note when the public index changes',async()=>{
+ const tmp=await mkdtemp(path.join(os.tmpdir(),'qb-'));
+ try {
+  const root=path.join(tmp,'repo'),vault=path.join(tmp,'vault');
+  await mkdir(path.join(root,'work','unfinished'),{recursive:true});
+  const index=path.join(root,'work','unfinished','INDEX.md');
+  await writeFile(index,sample);
+  await exportIndexToVault({root,vault});
+  await writeFile(index,sample.replace('Source staged; not deployed','New public checkpoint'));
+  await exportIndexToVault({root,vault});
+  const note=await readFile(path.join(vault,'Tickets','TICKET-1908.md'),'utf8');
+  assert.match(note,/New public checkpoint/);
  }finally{await rm(tmp,{recursive:true,force:true})}
 });
