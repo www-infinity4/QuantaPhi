@@ -3,17 +3,227 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T21:01:21.339531Z",
+  "checked_at": "2026-11-16T21:31:37.798121Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "spacex stocks",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T21:10:00Z",
+      "related_news_urls": [
+        "https://www.barrons.com/articles/why-spacex-stock-down-historic-starship-catch-ec692e2b",
+        "https://seekingalpha.com/article/4967990-spacex-math-says-69-percent-downside",
+        "https://www.investing.com/news/stock-market-news/democrats-midterm-sweep-not-bad-at-all-for-spacex-analyst-says-5027337"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFxjTg0OMoJDoQU9N5zqY02xTQZ0VdCyjOCZppS_GxY1ZAMdyAvFDb2_NQgtU",
+      "image_credit": "Barron's",
+      "news": [
+        {
+          "url": "https://www.barrons.com/articles/why-spacex-stock-down-historic-starship-catch-ec692e2b",
+          "title": "Why SpaceX Stock Is Down After Its Historic Starship Catch",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFxjTg0OMoJDoQU9N5zqY02xTQZ0VdCyjOCZppS_GxY1ZAMdyAvFDb2_NQgtU"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4967990-spacex-math-says-69-percent-downside",
+          "title": "SpaceX: The Math Says 69% Downside (NASDAQ:SPCX)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sS9jTAp6kQzesyavUWewieWWELhfkzZT2dBvLLAQA_UMmsxK5zav4x5Y4g8"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/democrats-midterm-sweep-not-bad-at-all-for-spacex-analyst-says-5027337",
+          "title": "Democrats’ midterm sweep \"not bad at all\" for SpaceX, analyst says",
+          "publisher": "Investing.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHdmYPiykL6yLByOczyJaJBZv7xju9VEIqw--Mo9cyJaIwsvr7VIJwD7P1nc"
+        }
+      ]
+    },
+    {
+      "query": "katie holmes",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T21:10:00Z",
+      "related_news_urls": [
+        "https://www.whowhatwear.com/fashion/celebrity-style/katie-holmes-white-jeans-leopard-print-shoes-outfit",
+        "https://www.harpersbazaar.com/uk/fashion/shopping/a74420391/katie-holmes-white-jeans/",
+        "https://www.marieclaire.com/fashion/celebrity-style/katie-holmes-leopard-print-shoe-trend-jimmy-choo-zimmermann-winter-whites/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMkIkqdiSHZgklc9WLOOBBlAjQTx0xRyUrzRVnFuAtJIl3-YEl7KNk6jbiS0c",
+      "image_credit": "Who What Wear",
+      "news": [
+        {
+          "url": "https://www.whowhatwear.com/fashion/celebrity-style/katie-holmes-white-jeans-leopard-print-shoes-outfit",
+          "title": "Katie Holmes Wore the Shoes That'll Make White Jeans Chic in 2027",
+          "publisher": "Who What Wear",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMkIkqdiSHZgklc9WLOOBBlAjQTx0xRyUrzRVnFuAtJIl3-YEl7KNk6jbiS0c"
+        },
+        {
+          "url": "https://www.harpersbazaar.com/uk/fashion/shopping/a74420391/katie-holmes-white-jeans/",
+          "title": "Katie Holmes' new 'white wash' jeans are winter's most expensive-looking denim trend: shop the best",
+          "publisher": "Harper's BAZAAR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIQbftIQCD6CHEF__IzwLg9JDzDIrID-v9vMPhZuGf8Ux3MaVRMuGWcHVsBOQ"
+        },
+        {
+          "url": "https://www.marieclaire.com/fashion/celebrity-style/katie-holmes-leopard-print-shoe-trend-jimmy-choo-zimmermann-winter-whites/",
+          "title": "Katie Holmes Puts a \"Wild\" Twist on Winter Whites With the Season's Biggest Animal-Print Trend",
+          "publisher": "Marie Claire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz-2DQoYrQBg_0L1pz21OtARUj_BNlZ_7e08xYdstx1J4PC9bh5DBFHm3oSUQ"
+        }
+      ]
+    },
+    {
+      "query": "clarence thomas first amendment warning",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T21:00:00Z",
+      "related_news_urls": [
+        "https://thehill.com/regulation/court-battles/6222413-supreme-court-california-medical-courses-bias-case-rejected/",
+        "https://www.newsweek.com/clarence-thomas-first-amendment-warning-court-rejects-case-12721358",
+        "https://www.usatoday.com/story/news/politics/2026/11/16/supreme-court-doctor-implicit-bias-training-california/92028286007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwoOI34XHSWD9mnCwKlM6z5U30Qt-Rc23ieF6o2vNJhXlE2pE980UeGzcVG0I",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/regulation/court-battles/6222413-supreme-court-california-medical-courses-bias-case-rejected/",
+          "title": "Supreme Court won’t review implicit bias mandate for California medical courses",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwoOI34XHSWD9mnCwKlM6z5U30Qt-Rc23ieF6o2vNJhXlE2pE980UeGzcVG0I"
+        },
+        {
+          "url": "https://www.newsweek.com/clarence-thomas-first-amendment-warning-court-rejects-case-12721358",
+          "title": "Clarence Thomas Issues First Amendment Warning After Court Rejects Case",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1ZADv5Dt5ojBZ0Jcr7FwdQQo41SUvqWZtWsnXq98RHkyRB0Q7uXtCccsyCZc"
+        },
+        {
+          "url": "https://www.usatoday.com/story/news/politics/2026/11/16/supreme-court-doctor-implicit-bias-training-california/92028286007/",
+          "title": "Supreme Court won't weigh in on doctor bias training",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlRorKFw72riD3ub2LYYoWWrsJu2vlISdRwGmOb7R37iLxESX7KmhOMTcVx84"
+        }
+      ]
+    },
+    {
+      "query": "bleeding green nation",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T21:00:00Z",
+      "related_news_urls": [
+        "https://www.giants.com/news/week-11-flex-scheduling-giants-vs-jaguars-moves-to-4-25-p-m-et-on-nov-22",
+        "https://sports.yahoo.com/articles/announcers-revealed-steelers-eagles-game-194826260.html",
+        "https://www.bleedinggreennation.com/philadelphia-eagles-odds/190414/eagles-vs-steelers-odds-week-11-opening-lines-point-spread-total"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnUrw5MmM4S2JdDl4SprIxi58tFSc47PVHczByh-bmGqtRZStwG4I39zny08I",
+      "image_credit": "Giants.com",
+      "news": [
+        {
+          "url": "https://www.giants.com/news/week-11-flex-scheduling-giants-vs-jaguars-moves-to-4-25-p-m-et-on-nov-22",
+          "title": "Week 11 Flex Scheduling: Giants vs. Jaguars moves to 4:25 p.m. ET on Nov. 22",
+          "publisher": "Giants.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnUrw5MmM4S2JdDl4SprIxi58tFSc47PVHczByh-bmGqtRZStwG4I39zny08I"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/announcers-revealed-steelers-eagles-game-194826260.html",
+          "title": "Announcers Revealed for Steelers-Eagles Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBBm08VxpJJuTdbtQ57XdWGTGvp15SelbVHpCl94NcTyHiLaGmKysIMg8I6cQ"
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-odds/190414/eagles-vs-steelers-odds-week-11-opening-lines-point-spread-total",
+          "title": "Eagles vs. Steelers odds: Opening lines for Week 11 matchup",
+          "publisher": "Bleeding Green Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR_-DH3j1v71nrlbw5n74ZITVxR8VDZUt7w6WaV5RqcROrIKiAnWsGqm3PWa0"
+        }
+      ]
+    },
+    {
+      "query": "drug recall",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T20:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcchicago.com/news/local/blood-pressure-medication-recall-metal-contamination-breckenridge-pharmaceutical-propranolol-hydrochloride-extended-release-capsules/4017424/",
+        "https://www.prnewswire.com/news-releases/breckenridge-pharmaceutical-inc-issues-voluntary-nationwide-consumer-level-recall-of-one-lot-of-propranolol-hydrochloride-extended-release-capsules-usp-60-mg-due-to-potential-metal-contamination-302940460.html",
+        "https://signalscv.com/2026/11/blood-pressure-medication-recalled-over-foreign-tablets/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvAC-GLjhU3kye-qhpoPJPbZ4lPa1yQcgmH_HxyGOBOjmqp0W1t5q30dcouOo",
+      "image_credit": "NBC 5 Chicago",
+      "news": [
+        {
+          "url": "https://www.nbcchicago.com/news/local/blood-pressure-medication-recall-metal-contamination-breckenridge-pharmaceutical-propranolol-hydrochloride-extended-release-capsules/4017424/",
+          "title": "Blood pressure medication recalled nationwide over possible metal contamination",
+          "publisher": "NBC 5 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvAC-GLjhU3kye-qhpoPJPbZ4lPa1yQcgmH_HxyGOBOjmqp0W1t5q30dcouOo"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/breckenridge-pharmaceutical-inc-issues-voluntary-nationwide-consumer-level-recall-of-one-lot-of-propranolol-hydrochloride-extended-release-capsules-usp-60-mg-due-to-potential-metal-contamination-302940460.html",
+          "title": "Breckenridge Pharmaceutical, Inc. Issues Voluntary Nationwide Consumer-Level Recall of One Lot of Propranolol Hydrochloride Extended-Release Capsules, USP, 60 mg, Due to Potential ",
+          "publisher": "PR Newswire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIf-zRgCtbRmw530MWuUbad2dwlNzFQUL_1YBY0499WXIdz69jvEv1Bn79e4c"
+        },
+        {
+          "url": "https://signalscv.com/2026/11/blood-pressure-medication-recalled-over-foreign-tablets/",
+          "title": "Blood pressure medication recalled over ‘foreign tablets’",
+          "publisher": "Santa Clarita Valley Signal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQt4f0bIcuF9SzM_U3yEDgml4slicpCwYAAmk36-06fRLtkP9AqeTOiEj6-mIY"
+        }
+      ]
+    },
+    {
+      "query": "nvidia earnings",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-16T20:50:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-16-2026",
+        "https://www.9news.com/article/news/nation-world/more-drops-for-nvidia-and-other-ai-stocks-us-market-lower/507-5aced221-0d3c-4b08-b7dc-3a83bfbfeeee",
+        "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-16-2026",
+          "title": "Stock Market Today: Nasdaq Slides 1.5% as Nvidia Drama Continues to Unfold — Live Updates",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
+        },
+        {
+          "url": "https://www.9news.com/article/news/nation-world/more-drops-for-nvidia-and-other-ai-stocks-us-market-lower/507-5aced221-0d3c-4b08-b7dc-3a83bfbfeeee",
+          "title": "More drops for Nvidia and other AI stocks drag the US market lower, pulling the S&P 500 down 2%",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxrWAMqUbN-mPUC2vOLtwPXpLaIBrSx-uTrDcQfTc8ixXrKvu7D18kd1NI0T4"
+        },
+        {
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
+          "title": "Stocks fall ahead of Nvidia earnings and Anthropic IPO; oil drops",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCzYOSDZuLzOsIZF_4-S_n16lkyifhqZTp7m9RFQ6GQ57zTlBRFYQ4LZGoEZg"
+        }
+      ]
+    },
     {
       "query": "h-1b visa",
       "approx_searches": "500+",
       "published_at": "2026-11-16T20:40:00Z",
       "related_news_urls": [
         "https://www.businessinsider.com/kunal-bahl-india-h1b-rejection-startup-founder-snapdeal-titan-capital-2026-11",
-        "https://www.indiatoday.in/technology/news/story/indian-microsoft-employee-denied-h-1b-visa-company-tells-him-to-return-to-india-3040147-2026-11-16",
-        "https://timesofindia.indiatimes.com/world/us/microsoft-asked-him-to-go-back-to-india-after-his-h-1b-visa-was-rejected-kunal-bahl-returned-but-to-build-snapdeal-titan-capital/articleshow/135901699.cms"
+        "https://timesofindia.indiatimes.com/world/us/microsoft-asked-him-to-go-back-to-india-after-his-h-1b-visa-was-rejected-kunal-bahl-returned-but-to-build-snapdeal-titan-capital/articleshow/135901699.cms",
+        "https://www.indiatoday.in/technology/news/story/indian-microsoft-employee-denied-h-1b-visa-company-tells-him-to-return-to-india-3040147-2026-11-16"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcOa7bzh2RDwHyfwzXlhupQSrA9dZt8KKTkc2XGUfhUnzcqo2hwUtBXF18JsA",
       "image_credit": "Business Insider",
@@ -26,18 +236,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcOa7bzh2RDwHyfwzXlhupQSrA9dZt8KKTkc2XGUfhUnzcqo2hwUtBXF18JsA"
         },
         {
-          "url": "https://www.indiatoday.in/technology/news/story/indian-microsoft-employee-denied-h-1b-visa-company-tells-him-to-return-to-india-3040147-2026-11-16",
-          "title": "Microsoft told him to move back to India after H-1B denial. He built Snapdeal",
-          "publisher": "India Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUDrCw9CO5oJdMpLUm67FhDzyEJ3SUo2rEhIXGoRvKX2Jn9xrKn_9nlo4EWo"
-        },
-        {
           "url": "https://timesofindia.indiatimes.com/world/us/microsoft-asked-him-to-go-back-to-india-after-his-h-1b-visa-was-rejected-kunal-bahl-returned-but-to-build-snapdeal-titan-capital/articleshow/135901699.cms",
           "title": "Microsoft asked him to go back to India after his H-1B visa was rejected. Kunal Bahl returned, but to bu",
           "publisher": "The Times of India",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgxw9QRh98iDXxk2wJDbST786V4PTz5nagO8yl2UM5HdPbmrfbz5xmFCjLGJo"
+        },
+        {
+          "url": "https://www.indiatoday.in/technology/news/story/indian-microsoft-employee-denied-h-1b-visa-company-tells-him-to-return-to-india-3040147-2026-11-16",
+          "title": "Microsoft told him to move back to India after H-1B denial. He built Snapdeal",
+          "publisher": "India Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUDrCw9CO5oJdMpLUm67FhDzyEJ3SUo2rEhIXGoRvKX2Jn9xrKn_9nlo4EWo"
         }
       ]
     },
@@ -77,48 +287,13 @@
       ]
     },
     {
-      "query": "tornado warning santa cruz",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T20:30:00Z",
-      "related_news_urls": [
-        "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
-        "https://www.cbsnews.com/sanfrancisco/news/santa-cruz-county-tornado-warning-sfo-water-spouts/",
-        "https://www.ksbw.com/article/tornado-warning-issued-for-west-central-santa-cruz-county/74443716"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXtfnJov8n3vaeceHhmjs_W3MIOt8BfcL7RBUH-QgZxidA0Rn0P_236YI_C84",
-      "image_credit": "ABC7 Bay Area",
-      "news": [
-        {
-          "url": "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
-          "title": "Live storm updates: Tornado Warning issued for Santa Cruz Co., reports of waterspouts on SF Bay",
-          "publisher": "ABC7 Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXtfnJov8n3vaeceHhmjs_W3MIOt8BfcL7RBUH-QgZxidA0Rn0P_236YI_C84"
-        },
-        {
-          "url": "https://www.cbsnews.com/sanfrancisco/news/santa-cruz-county-tornado-warning-sfo-water-spouts/",
-          "title": "Part of Santa Cruz County under tornado warning as storms move through region",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFvIlhGamz-rEhmz40kTCSEGMoATBh7nNasleDTQQrUsUXhR9y5C43mdNJ_-U"
-        },
-        {
-          "url": "https://www.ksbw.com/article/tornado-warning-issued-for-west-central-santa-cruz-county/74443716",
-          "title": "Tornado warning issued for west central Santa Cruz County",
-          "publisher": "KSBW",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTReObnZPzihOQFfJg53q72_ebEVn5DsTzAiisB9E46tFXK4eq4-SOvFkCYbgQ"
-        }
-      ]
-    },
-    {
       "query": "j t realmuto",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T20:30:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/phillies-acquire-padres-backstop-jt-113000879.html",
         "https://www.mlbtraderumors.com/2026/11/phillies-brian-navarreto-agree-to-minor-league-deal.html",
-        "https://www.forbes.com/sites/peterchawaga/2026/11/16/phillies-acquire-padres-backstop-after-jt-realmuto-decision/"
+        "https://roundtable.io/sports/mlb/phillies/news/philadelphia-phillies-poach-veteran-catcher-from-nl-east-rival"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7QoEcqTHJjpxupY8ukPqscQd0yubiZWsxHJZnSbSSuoo8aJqGyySfHZYKDWA",
       "image_credit": "Yahoo Sports",
@@ -138,221 +313,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK9bFP2WNBOBA1v-KSQRafJQE_dmt3qplMNxGU3gDPeC8YrNWyIBAZY7u9kds"
         },
         {
-          "url": "https://www.forbes.com/sites/peterchawaga/2026/11/16/phillies-acquire-padres-backstop-after-jt-realmuto-decision/",
-          "title": "Phillies Acquire Padres Backstop After JT Realmuto Decision",
-          "publisher": "Forbes",
+          "url": "https://roundtable.io/sports/mlb/phillies/news/philadelphia-phillies-poach-veteran-catcher-from-nl-east-rival",
+          "title": "Philadelphia Phillies Poach Veteran Catcher From NL East Rival",
+          "publisher": "roundtable.io",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQStkRe0W16dd7IVnl5WshYGVFdGk-ghQQCg9Te5QVE1D2-y5UAkIcLvP-qGEM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlpgH11XYPCL65iKR3pmh4m58N6gn7-1eMnHFr0Up9xiD3Pw_z2kC6grhuXyA"
         }
       ]
     },
     {
-      "query": "nations league standings",
-      "approx_searches": "500+",
+      "query": "tornado warning santa cruz",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T20:30:00Z",
       "related_news_urls": [
-        "https://www.skysports.com/football/news/13612611/spain-2-3-england-talking-points-thomas-tuchel-learns-lessons-from-argentina-as-harry-kane-ben-white-and-lewis-hall-shine",
-        "https://www.theguardian.com/football/2026/nov/16/england-winning-nations-league-euro-2028-thomas-tuchel",
-        "https://www.nytimes.com/athletic/7786836/2026/11/16/thomas-tuchel-england-nations-league-euros/"
+        "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
+        "https://www.ktvu.com/news/santa-cruz-county-tornado-warning",
+        "https://www.cbsnews.com/sanfrancisco/news/santa-cruz-county-tornado-warning-sfo-water-spouts/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPiADmFcW8ws3aq9ODIYSuOJddWET6fEaiCzlw-1Rx8Jb0c5ulIonENnqq6CM",
-      "image_credit": "Sky Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKjvZySUPhlKlOQzGN0mVYg91I19f2rbbeCJT7N3HQzqEh2rHenuGxmFoocZQ",
+      "image_credit": "ABC7 Bay Area",
       "news": [
         {
-          "url": "https://www.skysports.com/football/news/13612611/spain-2-3-england-talking-points-thomas-tuchel-learns-lessons-from-argentina-as-harry-kane-ben-white-and-lewis-hall-shine",
-          "title": "Spain 2-3 England talking points: Thomas Tuchel learns lessons from Argentina as Harry Kane, Ben White and Lewis Hall shine",
-          "publisher": "Sky Sports",
+          "url": "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
+          "title": "Live storm updates: Tornado Warning issued for Santa Cruz Co., reports of waterspouts on SF Bay",
+          "publisher": "ABC7 Bay Area",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPiADmFcW8ws3aq9ODIYSuOJddWET6fEaiCzlw-1Rx8Jb0c5ulIonENnqq6CM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKjvZySUPhlKlOQzGN0mVYg91I19f2rbbeCJT7N3HQzqEh2rHenuGxmFoocZQ"
         },
         {
-          "url": "https://www.theguardian.com/football/2026/nov/16/england-winning-nations-league-euro-2028-thomas-tuchel",
-          "title": "‘We want to win it’: Tuchel says Nations League can set up England for Euro 2028 glory",
-          "publisher": "The Guardian",
+          "url": "https://www.ktvu.com/news/santa-cruz-county-tornado-warning",
+          "title": "Tornado warning in effect for parts of Santa Cruz County",
+          "publisher": "KTVU",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_5lnJ2aFhz-q9P8vCByReqRFPvRF1mcBC6qwIaNxRPCjyTymA0KS8LHSaGP8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_UOKUiqzqwJ7tpywRIzjnMYb8lI79BARSfolROLiSaRnR79UH7oYIv4Pv9fU"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7786836/2026/11/16/thomas-tuchel-england-nations-league-euros/",
-          "title": "Thomas Tuchel: England winning Nations League would be ‘best preparation’ for Euros",
-          "publisher": "The New York Times",
+          "url": "https://www.cbsnews.com/sanfrancisco/news/santa-cruz-county-tornado-warning-sfo-water-spouts/",
+          "title": "Part of Santa Cruz County under tornado warning as storms move through region",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRoo1VyS-tpjoH2lM2xhRH_YsEAg7iSKMVUZ7Lsj0Ap7NKEI3exXoD5Z-AAxY"
-        }
-      ]
-    },
-    {
-      "query": "joanna gaines",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T20:30:00Z",
-      "related_news_urls": [
-        "https://people.com/joanna-gaines-unveils-her-christmas-tree-for-those-who-like-to-celebrate-a-little-early-12258269",
-        "https://www.yahoo.com/lifestyle/articles/joanna-gaines-shares-her-chicken-140204896.html",
-        "https://www.realtor.com/news/reality-tv/joanna-gaines-holiday-decorating-getting-older/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdqMFuJBVzbxvdtc2tEQw1fUmRBmAxQN6XInZQJfoaJufeLtnWEJVl4NH0Hc",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/joanna-gaines-unveils-her-christmas-tree-for-those-who-like-to-celebrate-a-little-early-12258269",
-          "title": "Joanna Gaines Unveils Her Stunning Christmas Tree ‘a Little Early’ with the Help of Son Crew",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdqMFuJBVzbxvdtc2tEQw1fUmRBmAxQN6XInZQJfoaJufeLtnWEJVl4NH0Hc"
-        },
-        {
-          "url": "https://www.yahoo.com/lifestyle/articles/joanna-gaines-shares-her-chicken-140204896.html",
-          "title": "Joanna Gaines shares her go-to chicken pot pie recipe for the holidays",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0XpEr9nb5S7KXb3jam29eN0rX298J5w5qpVHrmQL0BDU7J6cxz8wMZxFs2-A"
-        },
-        {
-          "url": "https://www.realtor.com/news/reality-tv/joanna-gaines-holiday-decorating-getting-older/",
-          "title": "Joanna Gaines Reveals How Her Approach to Holiday Decorating Has Evolved as She's Gotten Older",
-          "publisher": "Realtor.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFa9kSaHhJWMuvZFcHrNUiqHBzDB27b9ypb1WVeIMmHgu5092CuaSBfZ2QIAQ"
-        }
-      ]
-    },
-    {
-      "query": "flood watch",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-16T20:20:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/weather/2026/11/16/double-digit-rainfall-risk-looms-florida-peninsula-days-after-nearby-flooding/",
-        "https://www.wesh.com/article/flooding-rain-volusia-florida-18-24-inches-possible/74442093",
-        "https://www.tampabay.com/news/environment/2026/11/15/florida-rain-bombs-flooding/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCabBrJiCUfFE9BjbRkEiDZ4r9zgpP62zbawK6YLNpwp6cLuMawj2Lh783WZE",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/weather/2026/11/16/double-digit-rainfall-risk-looms-florida-peninsula-days-after-nearby-flooding/",
-          "title": "Double-digit rainfall risk looms in Florida Peninsula, days after nearby flooding",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCabBrJiCUfFE9BjbRkEiDZ4r9zgpP62zbawK6YLNpwp6cLuMawj2Lh783WZE"
-        },
-        {
-          "url": "https://www.wesh.com/article/flooding-rain-volusia-florida-18-24-inches-possible/74442093",
-          "title": "Storm system could bring 18+ inches of rain, flooding to Central Florida this week, models show",
-          "publisher": "WESH",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsyHaQ57P4s8vHd2b9ZyNMvx4J4c2v1jAiD1ORO_og3dgT_Bq50aFimIaQ0_I"
-        },
-        {
-          "url": "https://www.tampabay.com/news/environment/2026/11/15/florida-rain-bombs-flooding/",
-          "title": "How much rain can Florida take? Recent ‘rain bombs’ offer troubling preview",
-          "publisher": "Tampa Bay Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf2xbfU3u8gC2YNyM3-Zw2Cn0nuOodujjMwbdu-mxe0qTD30MEOWjoB43x77U"
-        }
-      ]
-    },
-    {
-      "query": "crime boss",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T20:20:00Z",
-      "related_news_urls": [
-        "https://www.theatlantic.com/ideas/2026/11/trump-investigation-strategy/689427/",
-        "https://www.washingtonpost.com/world/2026/11/14/middle-east-monarchies-brace-trump-corruption-scrutiny/",
-        "https://www.axios.com/2026/11/06/democrats-trump-investigations-congress"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQmUEmtFNv_2NaTnlCm5OJsMdJQbRfZUpdHk4tNgUkvl38HtmsN3I3x7AcdZI",
-      "image_credit": "The Atlantic",
-      "news": [
-        {
-          "url": "https://www.theatlantic.com/ideas/2026/11/trump-investigation-strategy/689427/",
-          "title": "Investigate Trump Like a Mob Boss",
-          "publisher": "The Atlantic",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQmUEmtFNv_2NaTnlCm5OJsMdJQbRfZUpdHk4tNgUkvl38HtmsN3I3x7AcdZI"
-        },
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/14/middle-east-monarchies-brace-trump-corruption-scrutiny/",
-          "title": "Middle East monarchies brace for Trump corruption scrutiny after blue wave",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoH58oS2WLF9T5v3vVKDbV-kgQ_XLP-KjjliRsoSEjssauQxhZ4X1HDcgFXlE"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/06/democrats-trump-investigations-congress",
-          "title": "Dems plot a unified case against Trump",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaSom75qNxmig2RlKMv4tqaQ2t7QN2kPO0wvdRx_ZFz7guO-kg0g-bgc_3oTY"
-        }
-      ]
-    },
-    {
-      "query": "daniil medvedev",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T20:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/live-blogs/medvedev-vs-cobolli-live-updates-atp-finals-2026-score-result/HiIrMbf2qtAu/",
-        "https://www.oddschecker.com/us/picks-parlays/tennis/20261116-daniil-medvedev-vs-flavio-cobolli-prediction-betting-pick-latest-atp-finals-odds-on-monday-november-16th",
-        "https://www.sportsbettingdime.com/news/tennis/medvedev-vs-cobolli-expert-picks-best-bets-turin/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdZftXUAAb1a213OPtiJBLe3VOTl-qpGxdefIKp_Bcvrp-Olsui3-V_-9GGfE",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/medvedev-vs-cobolli-live-updates-atp-finals-2026-score-result/HiIrMbf2qtAu/",
-          "title": "Medvedev vs. Cobolli live updates: ATP Finals 2026 latest with night session match underway",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdZftXUAAb1a213OPtiJBLe3VOTl-qpGxdefIKp_Bcvrp-Olsui3-V_-9GGfE"
-        },
-        {
-          "url": "https://www.oddschecker.com/us/picks-parlays/tennis/20261116-daniil-medvedev-vs-flavio-cobolli-prediction-betting-pick-latest-atp-finals-odds-on-monday-november-16th",
-          "title": "Daniil Medvedev vs. Flavio Cobolli Prediction, Betting Pick, Latest ATP Finals Odds on Monday, November 16th",
-          "publisher": "Oddschecker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPy5ec-3rig4GkBjQMg-fClLFZoaXVFDEDO0iYqoOglLW6aYRf_pTdPzouhYg"
-        },
-        {
-          "url": "https://www.sportsbettingdime.com/news/tennis/medvedev-vs-cobolli-expert-picks-best-bets-turin/",
-          "title": "Medvedev vs Cobolli Expert Picks & Best Bets for Turin (Nov 16)",
-          "publisher": "Sports Betting Dime",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSTt1aKwBRH7FfnRovSaOz0TiIw6noqrnStRV_7lDKZZoF5Z2zXAHWuFO8RUc"
-        }
-      ]
-    },
-    {
-      "query": "uefa nations league schedule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T20:10:00Z",
-      "related_news_urls": [
-        "https://www.uefa.com/uefanationsleague/news/02ab-22096ba64f4d-f179d6d05013-1000--nations-league-quarter-finals-who-is-through-who-can-joi/",
-        "https://www.espn.com/soccer/story/_/id/50472529/england-nations-league-permutations",
-        "https://www.skysports.com/football/news/13611876/nations-league-2026-27-england-into-quarter-finals-but-who-will-they-play-in-last-eight-in-march"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRM6J8utLjeOlRcprpl0elovFS51JocDH-9VAouODKY4cRrWPjXMovpX6yXPw",
-      "image_credit": "UEFA.com",
-      "news": [
-        {
-          "url": "https://www.uefa.com/uefanationsleague/news/02ab-22096ba64f4d-f179d6d05013-1000--nations-league-quarter-finals-who-is-through-who-can-joi/",
-          "title": "Nations League quarter-finals: Who is through? Who can join them? What is the state of play in each League A group?",
-          "publisher": "UEFA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRM6J8utLjeOlRcprpl0elovFS51JocDH-9VAouODKY4cRrWPjXMovpX6yXPw"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50472529/england-nations-league-permutations",
-          "title": "England Nations League permutations: What they need vs. Spain and why it matters",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStNv8uGfLF_DpY3Iko1kz2PeyFWPk3SnEUcFqB9XLkA18Fbe-t2pIdgpRAoPw"
-        },
-        {
-          "url": "https://www.skysports.com/football/news/13611876/nations-league-2026-27-england-into-quarter-finals-but-who-will-they-play-in-last-eight-in-march",
-          "title": "Nations League 2026/27: England into quarter-finals but who will they play in last-eight in March?",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeenFBx8NspSMKkGvofKR6DmGS6_WX3ie5nLqYV_fik-u8jPmhaOkHvbreHUQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFvIlhGamz-rEhmz40kTCSEGMoATBh7nNasleDTQQrUsUXhR9y5C43mdNJ_-U"
         }
       ]
     }
