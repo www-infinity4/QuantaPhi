@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T07:42:59.402723Z",
+  "checked_at": "2026-11-16T08:05:51.726303Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "alexandra daddario",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T07:50:00Z",
+      "related_news_urls": [
+        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
+        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
+        "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI",
+      "image_credit": "ScreenRant",
+      "news": [
+        {
+          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
+          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is Alexandra Daddario's Action Fantasy Epic)",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI"
+        },
+        {
+          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
+          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is A $1.5 Billion Space Opera With Sequels On The Way)",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt85PJdHOblx2XaH282gk2437hKb9PTDJzrKkh0eS1S7N0uxM-iwm2rnlNiRc"
+        },
+        {
+          "url": "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/",
+          "title": "Taylor Kitsch, Alexandra Daddario, Christopher Walken Cast In 'Robber'",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvUWPLXwhkZWeeM90NlJZ0U6dtk8rYW9Vyv4sW4VYgIzyy2k8OaNg9Cx0_iXE"
+        }
+      ]
+    },
+    {
+      "query": "sharad kapoor",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T07:40:00Z",
+      "related_news_urls": [
+        "https://www.ndtv.com/entertainment/please-help-me-actor-sharad-kapoor-seeks-financial-support-from-film-fraternity-12329924",
+        "https://m.economictimes.com/magazines/panache/shah-rukh-khans-co-star-who-became-popular-as-antagonist-after-2000-hit-film-now-seen-begging-for-work-in-viral-video-money-is-not-the-issue-who-is-sharad-kapoor/articleshow/135850044.cms",
+        "https://www.mensxp.com/entertainment/celebrities/186814-salman-khan-sonu-sood-offer-financial-help-to-sharad-kapoor-hollywood-debut.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb7-6legWh30_r5GK2Dpt-Pq149EOg5_ELGIzdzQ1T6IshmC5El4xe7YI2wXI",
+      "image_credit": "NDTV",
+      "news": [
+        {
+          "url": "https://www.ndtv.com/entertainment/please-help-me-actor-sharad-kapoor-seeks-financial-support-from-film-fraternity-12329924",
+          "title": "After Years Of Being Bedridden, Actor Sharad Kapoor Urges Film Industry To Support Him",
+          "publisher": "NDTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb7-6legWh30_r5GK2Dpt-Pq149EOg5_ELGIzdzQ1T6IshmC5El4xe7YI2wXI"
+        },
+        {
+          "url": "https://m.economictimes.com/magazines/panache/shah-rukh-khans-co-star-who-became-popular-as-antagonist-after-2000-hit-film-now-seen-begging-for-work-in-viral-video-money-is-not-the-issue-who-is-sharad-kapoor/articleshow/135850044.cms",
+          "title": "Shah Rukh Khan’s co-star, who became popular as antagonist after 2000 hit film, now seen begging for work",
+          "publisher": "The Economic Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFGAooGbX5fl9AVhA-faK5egat9ZlFLpcfsguwI3ndXYCnoxF2xYkdDvF8MKk"
+        },
+        {
+          "url": "https://www.mensxp.com/entertainment/celebrities/186814-salman-khan-sonu-sood-offer-financial-help-to-sharad-kapoor-hollywood-debut.html",
+          "title": "Salman Khan, Sonu Sood Offer Financial Help to Sharad Kapoor; Josh Actor to Make Hollywood Debut Amid Crisis",
+          "publisher": "MensXP",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyHNGMnIYuk-17axk5MGwlGFFI1fbQRwcB_DnUxqQ5OqwcEgsL0TJfFNIrH9o"
+        }
+      ]
+    },
+    {
+      "query": "colin farrell",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T07:40:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/film/2026/nov/16/emma-fogarty-colin-farrell-marathons-friendship-the-slightest-touch",
+        "https://www.imdb.com/it/news/ni66113058/?ref_=nwc_art_perm",
+        "https://www.instyle.com/colin-farrell-opens-up-son-james-health-battle-angelman-syndrome-12251765"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQdaSE41hxoW64GcEaUF1kek2saULwyfAdGTk5MAZzQe0lQn_Kj7o_SS3j_ic",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/16/emma-fogarty-colin-farrell-marathons-friendship-the-slightest-touch",
+          "title": "‘I’m a smalltown girl with a terrible disability. He’s a Hollywood superstar. But we’ve been laughing since we met’: Emma Fogarty and Colin Farrell on their extraordinary story",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQdaSE41hxoW64GcEaUF1kek2saULwyfAdGTk5MAZzQe0lQn_Kj7o_SS3j_ic"
+        },
+        {
+          "url": "https://www.imdb.com/it/news/ni66113058/?ref_=nwc_art_perm",
+          "title": "‘I’m a smalltown girl with a terrible disability. He’s a Hollywood superstar. But we’ve been laughing since we met’: Emma Fogarty and Colin Farrell on their extraordinary story",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQepIv7D3Gp75Q6vZmhDoK3ycsYVkfD244hFsCl3RG08d--KtHnUtigsACle-c"
+        },
+        {
+          "url": "https://www.instyle.com/colin-farrell-opens-up-son-james-health-battle-angelman-syndrome-12251765",
+          "title": "Colin Farrell Admits Even He Doesn’t Know the “Depths or Nuance” of His 23-Year-Old Son’s Health Battle",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsd_5eHoEB6Hd18sd52Z56K7K_R8MTK-A967UpOmxZvtKVujVIkemQLaUhINU"
+        }
+      ]
+    },
+    {
+      "query": "gta vi game",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T07:30:00Z",
+      "related_news_urls": [
+        "https://insider-gaming.com/how-long-to-complete-gta/",
+        "https://en.gamegpu.com/news/igry/osnovnaya-syuzhetnaya-kampaniya-gta-6-na-ps5-zajmet-okolo-50-chasov-i-vklyuchit-100-missij",
+        "https://www.eurogamer.net/gta-6-achievements-trophies-55"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK4OHVX8MwzX5HORWMw9Jjl6no9kIriWadKDF3VGB6gB0pfiymzMd54hhLy6k",
+      "image_credit": "Insider Gaming",
+      "news": [
+        {
+          "url": "https://insider-gaming.com/how-long-to-complete-gta/",
+          "title": "How Long Will It Take to Complete GTA 6? Platinum Trophy & Mythic Achievement Time Explained",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK4OHVX8MwzX5HORWMw9Jjl6no9kIriWadKDF3VGB6gB0pfiymzMd54hhLy6k"
+        },
+        {
+          "url": "https://en.gamegpu.com/news/igry/osnovnaya-syuzhetnaya-kampaniya-gta-6-na-ps5-zajmet-okolo-50-chasov-i-vklyuchit-100-missij",
+          "title": "The main story campaign of GTA 6 on PS5 will take about 50 hours and include 100 missions.",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThMT3s9FuPixzxoswMmb1Uw-4B0WlCjSb_jA81EUxc5o6yBUVJk8BcDmwEAjk"
+        },
+        {
+          "url": "https://www.eurogamer.net/gta-6-achievements-trophies-55",
+          "title": "GTA 6 reportedly has 55 Achievements/Trophies, more than both GTA 5 and Red Dead Redemption 2 had at launch",
+          "publisher": "Eurogamer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRU4UhUPCw8PRpBPiGdu4Zc_ggjpgaBej00GYxYY3s-zn-gyTFSg0HKgkXuyyw"
+        }
+      ]
+    },
     {
       "query": "karely ruiz",
       "approx_searches": "200+",
@@ -147,41 +287,6 @@
       ]
     },
     {
-      "query": "jimmy fallon",
-      "approx_searches": "100+",
-      "published_at": "2026-11-16T06:40:00Z",
-      "related_news_urls": [
-        "https://latenighter.com/news/jimmy-fallon-sean-duffy-faa-jokes/",
-        "https://www.imdb.com/it/news/ni66112845/?ref_=nm_nwr_2",
-        "https://www.themirror.com/entertainment/jennifer-lopez-single-jimmy-fallon-2111418"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5DBgzrUxPJXWtdWvyK2mmznBPj2R0bD1E9DJ9849Fex7pJHX_jdC2ehAI6zg",
-      "image_credit": "LateNighter",
-      "news": [
-        {
-          "url": "https://latenighter.com/news/jimmy-fallon-sean-duffy-faa-jokes/",
-          "title": "Jimmy Fallon Gets a Sunday-Night Head Start on Sean Duffy Jokes",
-          "publisher": "LateNighter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5DBgzrUxPJXWtdWvyK2mmznBPj2R0bD1E9DJ9849Fex7pJHX_jdC2ehAI6zg"
-        },
-        {
-          "url": "https://www.imdb.com/it/news/ni66112845/?ref_=nm_nwr_2",
-          "title": "The Tonight Show Starring Jimmy Fallon: Kieran Culkin, Julia Garner",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4hIHHqOwLwmW9grOSPlu42_sEGTKCUE_cTfm-Nb98ZITPGaG28fZdiF5Qr_Q"
-        },
-        {
-          "url": "https://www.themirror.com/entertainment/jennifer-lopez-single-jimmy-fallon-2111418",
-          "title": "'Healthy' Jennifer Lopez says ‘I can do whatever I want’ after Ben Affleck split",
-          "publisher": "The Mirror US",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyi9X5Sf4MmZ9Mq-h_cvHvaWaGdnHw7entLem9_4pGXJfSrOWEydp1A2vW5f0"
-        }
-      ]
-    },
-    {
       "query": "black friday sales",
       "approx_searches": "100+",
       "published_at": "2026-11-16T06:30:00Z",
@@ -248,111 +353,6 @@
           "publisher": "The Independent",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5SMVVycg0AYAkptASfiByllIPMKPgS7lOt6IwyLPtQaSOD1rX64cIrTkSZmU"
-        }
-      ]
-    },
-    {
-      "query": "apec",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T06:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/15/travel/us-china-apec-trump-xi-shenzhen-hnk-intl",
-        "https://apnews.com/video/apec-host-city-shenzhen-offers-a-window-into-chinas-technological-ambitions-0798968d1ede49eb919e112006e454c1",
-        "https://www.wvnews.com/newsfeed/world/china-apec/image_63172d44-c1b5-5854-a980-cc697b8eb0e2.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzdSAEcNBH24LWdApzjsMLV9aUxFBSGWU2ouFjT3voSxZlXgnTPUpYqCDPZYI",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/15/travel/us-china-apec-trump-xi-shenzhen-hnk-intl",
-          "title": "China’s ‘miracle city’ that no US president has visited (yet)",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzdSAEcNBH24LWdApzjsMLV9aUxFBSGWU2ouFjT3voSxZlXgnTPUpYqCDPZYI"
-        },
-        {
-          "url": "https://apnews.com/video/apec-host-city-shenzhen-offers-a-window-into-chinas-technological-ambitions-0798968d1ede49eb919e112006e454c1",
-          "title": "APEC host city Shenzhen offers a window into China’s technological ambitions",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmmTgfqckWuEfbZiggqAVpx3HWQcketLewH-nkVeCGtf-dXhzfPOWSzbJRfs8"
-        },
-        {
-          "url": "https://www.wvnews.com/newsfeed/world/china-apec/image_63172d44-c1b5-5854-a980-cc697b8eb0e2.html",
-          "title": "China APEC",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0vUToiuEmplnpC4_wS1YLXwYKfv9K67EDK1_yXwobmxPntzDnbCbTm21vDTc"
-        }
-      ]
-    },
-    {
-      "query": "jlo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T06:20:00Z",
-      "related_news_urls": [
-        "https://www.themirror.com/entertainment/jennifer-lopez-single-jimmy-fallon-2111418",
-        "https://www.usatoday.com/story/shopping/entertainment/celebrity/2026/11/15/oprahs-favorite-things-2026-mph-beauty-lip-gloss-jlo-dua-lipa/92764163007/",
-        "https://pagesix.com/2026/11/13/style/hailey-bieber-and-oprah-love-this-gorgeous-lip-gloss/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyi9X5Sf4MmZ9Mq-h_cvHvaWaGdnHw7entLem9_4pGXJfSrOWEydp1A2vW5f0",
-      "image_credit": "The Mirror US",
-      "news": [
-        {
-          "url": "https://www.themirror.com/entertainment/jennifer-lopez-single-jimmy-fallon-2111418",
-          "title": "'Healthy' Jennifer Lopez says ‘I can do whatever I want’ after Ben Affleck split",
-          "publisher": "The Mirror US",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyi9X5Sf4MmZ9Mq-h_cvHvaWaGdnHw7entLem9_4pGXJfSrOWEydp1A2vW5f0"
-        },
-        {
-          "url": "https://www.usatoday.com/story/shopping/entertainment/celebrity/2026/11/15/oprahs-favorite-things-2026-mph-beauty-lip-gloss-jlo-dua-lipa/92764163007/",
-          "title": "Here's why Oprah recommends Jennifer Lopez's $26 lip gloss",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzLtR43l_gF9gnp8CPWJRu50aIuD4CfQg9XZpHhaPfYX7C8Uu8-oABv61P6dE"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/13/style/hailey-bieber-and-oprah-love-this-gorgeous-lip-gloss/",
-          "title": "Hailey Bieber, 29, and Oprah, 72, are both obsessed with this ‘gorgeous’ lip gloss",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYkC3ux_gezWi40dyZIUZigNvyj--7W8TZBEiExAk1XAkGA3f4bvVYjxeliu8"
-        }
-      ]
-    },
-    {
-      "query": "florence pugh",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T06:00:00Z",
-      "related_news_urls": [
-        "https://www.vogue.com/slideshow/2026-governors-awards-red-carpet-best-looks",
-        "https://www.hollywoodreporter.com/movies/movie-news/2026-governors-awards-glenn-close-ridley-scott-floyd-norman-1236749503/",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glenn-close-daughter-annie-starke-033700074.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWZhpmmAdiGDByHJaTwqhnwdfdk_thi9erNjRxHbkCMGTIZY0CEJHaAAtcoMs",
-      "image_credit": "Vogue",
-      "news": [
-        {
-          "url": "https://www.vogue.com/slideshow/2026-governors-awards-red-carpet-best-looks",
-          "title": "Governors Awards 2026: Fashion—All of the Best Looks From the Red Carpet",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWZhpmmAdiGDByHJaTwqhnwdfdk_thi9erNjRxHbkCMGTIZY0CEJHaAAtcoMs"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/2026-governors-awards-glenn-close-ridley-scott-floyd-norman-1236749503/",
-          "title": "Governors Awards: Glenn Close, Ridley Scott, Floyd Norman Honorary Oscars",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWWhIZXQR8Y4xNfXcPNK3jS4G5NKa6iGZQT7arqXnBMKXz_IhpztwnE_3YwsM"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glenn-close-daughter-annie-starke-033700074.html",
-          "title": "Glenn Close’s Daughter Annie Starke Wows in a Stunning Red Carpet Look as Her Mom Gets Major Honor",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1SmV32uL6mlu5TjI-7E_IF1OvJNgwo0gaL7hT4I1x6FwMtvYn-afd50aDjeo"
         }
       ]
     }
