@@ -3,12 +3,222 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T18:01:39.651047Z",
+  "checked_at": "2026-11-16T18:31:20.751325Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "us employment based green card proposal",
+      "query": "fema nationwide emergency test date",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T18:00:00Z",
+      "related_news_urls": [
+        "https://www.hstoday.us/subject-matter-areas/emergency-preparedness/fema-and-fcc-schedule-2026-nationwide-test-of-the-emergency-alert-system-for-november-17/",
+        "https://www.houstonchronicle.com/news/houston-texas/trending/article/nationwide-emergency-alert-system-test-fema-fcc-22532221.php",
+        "https://www.nbcchicago.com/news/local/what-is-happening-on-nov-17-what-to-expect-as-fema-prepares-for-nationwide-test/4017342/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbTEwJwmvg_nmRfqV-R2R723nhDPPBQ9RInq42z-UGDe6TsTJTSgsnINwEt0k",
+      "image_credit": "Homeland Security Today",
+      "news": [
+        {
+          "url": "https://www.hstoday.us/subject-matter-areas/emergency-preparedness/fema-and-fcc-schedule-2026-nationwide-test-of-the-emergency-alert-system-for-november-17/",
+          "title": "FEMA and FCC Schedule 2026 Nationwide Test of the Emergency Alert System for November 17",
+          "publisher": "Homeland Security Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbTEwJwmvg_nmRfqV-R2R723nhDPPBQ9RInq42z-UGDe6TsTJTSgsnINwEt0k"
+        },
+        {
+          "url": "https://www.houstonchronicle.com/news/houston-texas/trending/article/nationwide-emergency-alert-system-test-fema-fcc-22532221.php",
+          "title": "Nationwide emergency alert test planned this week. What Texans should know.",
+          "publisher": "Houston Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9qvhkbnsej-XSFq_lqoawyMObCXtMe2KVdmw6uENaly7l0mLp_rQDa2gOpeU"
+        },
+        {
+          "url": "https://www.nbcchicago.com/news/local/what-is-happening-on-nov-17-what-to-expect-as-fema-prepares-for-nationwide-test/4017342/",
+          "title": "What is happening on Nov. 17? What to expect as FEMA prepares for nationwide test",
+          "publisher": "NBC 5 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbi3WJ_JoVu6setyEKd1zTV-Z2wnIrHQCVfSC6awXYGNFOCldORwq7R9xhxRE"
+        }
+      ]
+    },
+    {
+      "query": "ap top 25 basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T18:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/womens-college-basketball/story/_/id/50502552/louisville-no-3-women-ap-poll-beating-uconn",
+        "https://www.courier-journal.com/story/sports/college/basketball/2026/11/16/louisville-kentucky-womens-basketball-rankings-ap-top-25-coaches-poll-uofl-uk/92584867007/",
+        "https://www.cbssports.com/womens-college-basketball/news/womens-college-basketball-power-rankings-south-carolina-michigan-usc-uconn/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW-gVU5lYBLH2D4T0CAQVm2OZoRjNSh4u-oRYNA3X6xzpITJbNMGubnxAAjgc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50502552/louisville-no-3-women-ap-poll-beating-uconn",
+          "title": "Louisville No. 3 in women's AP Top 25 after UConn win; South Carolina still tops",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW-gVU5lYBLH2D4T0CAQVm2OZoRjNSh4u-oRYNA3X6xzpITJbNMGubnxAAjgc"
+        },
+        {
+          "url": "https://www.courier-journal.com/story/sports/college/basketball/2026/11/16/louisville-kentucky-womens-basketball-rankings-ap-top-25-coaches-poll-uofl-uk/92584867007/",
+          "title": "Where are Louisville, Kentucky in latest women's basketball rankings?",
+          "publisher": "The Courier-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvbfttheFHzAfjcYbgOCRl0yefdp0_7W42qG2M53n_js5l9RlY5NoRZ-53as"
+        },
+        {
+          "url": "https://www.cbssports.com/womens-college-basketball/news/womens-college-basketball-power-rankings-south-carolina-michigan-usc-uconn/",
+          "title": "Women's college basketball Power Rankings: South Carolina holds top spot, UConn falls after loss to Michigan",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK-lqzNpLFYwXR8LFanpvwAlHvzWUdphBN8eKtkkVQIwZhV_PEOrp6Wj0vybM"
+        }
+      ]
+    },
+    {
+      "query": "college basketball rankings",
       "approx_searches": "500+",
+      "published_at": "2026-11-16T18:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50493491/ap-mens-top-25-poll-reaction-2026-27-week-2",
+        "https://www.cbssports.com/college-basketball/news/college-basketball-rankings-ap-top-25-poll-michigan-state-duke-kentucky-lsu/",
+        "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtKGNN2WUF0oJd4alzMay8QUhpMb0M7XxNYw2sNug2YT0C7pn0PxgEAX0Zhs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50493491/ap-mens-top-25-poll-reaction-2026-27-week-2",
+          "title": "Breaking down the men's 2026-27 AP week 2 Top 25 basketball poll",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtKGNN2WUF0oJd4alzMay8QUhpMb0M7XxNYw2sNug2YT0C7pn0PxgEAX0Zhs"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/college-basketball-rankings-ap-top-25-poll-michigan-state-duke-kentucky-lsu/",
+          "title": "College basketball rankings: Michigan State jumps in AP Top 25 after win vs. Duke; Kentucky drops out of poll",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIxKAhStNWN18a77Wuj4foU4UB_bnSqUGw0zNAcGO2gcuGlD2PBlS_Mn4tBTE"
+        },
+        {
+          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after",
+          "title": "Florida reclaims top spot in Andy Katz's men's basketball Power 44 rankings after Week 2",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxTlVSV8YXdJYx5w1tprDqJKbthwTJ7CgHRlmDNxVwXUVb98rS0lo22BJTT6k"
+        }
+      ]
+    },
+    {
+      "query": "chase",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-16T17:50:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/videos/ja-marr-chase-s-best-plays-from-231-yard-game-vs-steelers-week-10",
+        "https://sports.yahoo.com/articles/bengals-star-sends-clear-message-164915984.html",
+        "https://www.bengals.com/video/ja-marr-chase-top-plays-steelers-2026-week-10-sunday-night-football-highlights"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCYlxXrS-gIWHLCQ5WlIt8v1QHZP_8dOEtPaq1cfT8p5eD4571I51qzljqAec",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/videos/ja-marr-chase-s-best-plays-from-231-yard-game-vs-steelers-week-10",
+          "title": "Ja'Marr Chase's best plays from 231-yard game vs. Steelers | Week 10",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCYlxXrS-gIWHLCQ5WlIt8v1QHZP_8dOEtPaq1cfT8p5eD4571I51qzljqAec"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/bengals-star-sends-clear-message-164915984.html",
+          "title": "Bengals Star Sends Clear Message to Ja’Marr Chase, Tee Higgins After Steelers Win",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO6wMsamLtsXe3KoaW5tsjQGxZrP8iZwtjH82o0yyufMzHv2MLYxOH8DJp1No"
+        },
+        {
+          "url": "https://www.bengals.com/video/ja-marr-chase-top-plays-steelers-2026-week-10-sunday-night-football-highlights",
+          "title": "Ja'Marr Chase's Top Plays From White Bengal 2026 Against Steelers | 2026 HIGHLIGHTS",
+          "publisher": "Cincinnati Bengals",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbiFI2Y2MYu5psqgotgBcXU7yDdxcNiv6PlOEiHvxih9jVllzvcytlRDWyZ0E"
+        }
+      ]
+    },
+    {
+      "query": "w9",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T17:50:00Z",
+      "related_news_urls": [
+        "https://programmetv.ouest-france.fr/divers/divertissement/tout-beau-tout-n9uf-m385855399/e56-premiere-partie-c450806231/",
+        "https://www.jeanmarcmorandini.com/article-657278-audiences-20h45-cyril-hanouna-poursuit-sa-course-en-tete-des-talk-shows-hier-soir-avec-un-beau-score-pour-un-vendredi-devant-quotidien-sur-tmc-qui-recevait-marion-van-renterghem.html",
+        "https://tv-programme.com/tout-beau-tout-n9uf-emission/replay/tout-beau-tout-n9uf-09-11-2026-partie-2-3-R6af35ce911f27"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ezinQKskB0PNol_zihIVD0K8Vvm8t9prYmpG--04G-z9dYAqYVhayqt5t4M",
+      "image_credit": "Programme TV Ouest-France",
+      "news": [
+        {
+          "url": "https://programmetv.ouest-france.fr/divers/divertissement/tout-beau-tout-n9uf-m385855399/e56-premiere-partie-c450806231/",
+          "title": "Tout beau, tout n9uf, Première partie E56 lundi 16 novembre 2026 sur W9 : résumé et diffusions",
+          "publisher": "Programme TV Ouest-France",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ezinQKskB0PNol_zihIVD0K8Vvm8t9prYmpG--04G-z9dYAqYVhayqt5t4M"
+        },
+        {
+          "url": "https://www.jeanmarcmorandini.com/article-657278-audiences-20h45-cyril-hanouna-poursuit-sa-course-en-tete-des-talk-shows-hier-soir-avec-un-beau-score-pour-un-vendredi-devant-quotidien-sur-tmc-qui-recevait-marion-van-renterghem.html",
+          "title": "Audiences 20h45 : Cyril Hanouna poursuit sa course en tête des talk-shows hier soir avec un beau score pou...",
+          "publisher": "Jean-Marc Morandini",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcqBEzZKhtKbObXc5SZQ0aHT4Y7li6BrRR5gPkRaJ_VA_VG1gWjINlwgb3GYY"
+        },
+        {
+          "url": "https://tv-programme.com/tout-beau-tout-n9uf-emission/replay/tout-beau-tout-n9uf-09-11-2026-partie-2-3-R6af35ce911f27",
+          "title": "Tout Beau, Tout N9uf : 09/11/2026 - Partie 2/3",
+          "publisher": "TV-Programme.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5oKthl_z1XmySBJLxTtKcVv97mvgaplGQJNU9St_yZvszPdHHgyUT5AKf14"
+        }
+      ]
+    },
+    {
+      "query": "john summit",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T17:40:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/music/music-news/john-summit-blasts-grammys-after-snub-1236756281/",
+        "https://variety.com/2026/music/news/john-summit-calls-out-grammys-after-no-nominations-1236949004/",
+        "https://www.billboard.com/music/awards/john-summit-never-submitting-grammys-again-dance-category-joke-1236382922/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV-j4D6QIgzMPVqFpAR7VkxSR1Fxn93kf9rsnvpb_ptBvnR-xzsS6PJzRYbE4",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/music/music-news/john-summit-blasts-grammys-after-snub-1236756281/",
+          "title": "John Summit Blasts Grammys After Dance Snub: “It’s All a F***ing Joke”",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV-j4D6QIgzMPVqFpAR7VkxSR1Fxn93kf9rsnvpb_ptBvnR-xzsS6PJzRYbE4"
+        },
+        {
+          "url": "https://variety.com/2026/music/news/john-summit-calls-out-grammys-after-no-nominations-1236949004/",
+          "title": "John Summit Calls Out the Grammys After Receiving No Nominations",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9c31GHpo9pPF1CVkUs_v3naaiASNn5Ugzb0kXPmrHs2GvGqBYIbbiNXxxI1Y"
+        },
+        {
+          "url": "https://www.billboard.com/music/awards/john-summit-never-submitting-grammys-again-dance-category-joke-1236382922/",
+          "title": "John Summit Says He’s ‘Never Submitting to the Grammys Again,’ Calls Dance Category Nominations ‘A F–king Joke’",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ276b7U3hTtnrnFxHLqy9AB56jwuSw7em_qTYd8WxnwTUeYIPHMK0JVuJh9RU"
+        }
+      ]
+    },
+    {
+      "query": "us employment based green card proposal",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T17:40:00Z",
       "related_news_urls": [
         "https://news.bloomberglaw.com/daily-labor-report/dol-plan-overhauls-rules-to-sponsor-foreign-worker-green-cards",
@@ -28,7 +238,7 @@
         {
           "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-proposes-tighter-rules-for-employer-sponsored-green-cards",
           "title": "US Proposes Tighter Rules for Employer-Sponsored Green Cards",
-          "publisher": "Bloomberg",
+          "publisher": "Bloomberg.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS04Y7lT8LN_kqs9mnWe90uiPFPocA-bnxwc9TgK-skYDRPlhuts8z-risO1mE"
         },
@@ -42,37 +252,37 @@
       ]
     },
     {
-      "query": "chase down",
+      "query": "snl sister sketch",
       "approx_searches": "1000+",
-      "published_at": "2026-11-16T17:30:00Z",
+      "published_at": "2026-11-16T17:40:00Z",
       "related_news_urls": [
-        "https://gvwire.com/2026/11/16/chase-bank-goes-down-for-thousands-downdetector-reports/",
-        "https://www.mensjournal.com/news/chase-down-login-problems-downdetector-nov-16",
-        "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression"
+        "https://www.theatlantic.com/culture/2026/11/saturday-night-live-john-mulaney-baby-boomers-sister/689452/",
+        "https://www.today.com/popculture/john-mulaney-snl-sister-sketch-rcna609414",
+        "https://www.nbc.com/nbc-insider/snl-sister-sketch-caregivers-jane-wickline-john-mulaney"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVwOE1QT6DiENo6JJfF4TwZqMduFUyO5R9fb5Rz06fvn6YZCYhKMLH-k9LXWk",
-      "image_credit": "GV Wire",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSQ7y00LEs1h9IweL2qjjV-TjJ6Am2USQg4Q9MVyq814tHMwKes9KpUE2kWt4",
+      "image_credit": "The Atlantic",
       "news": [
         {
-          "url": "https://gvwire.com/2026/11/16/chase-bank-goes-down-for-thousands-downdetector-reports/",
-          "title": "Chase Bank Goes Down for Thousands, Downdetector Reports",
-          "publisher": "GV Wire",
+          "url": "https://www.theatlantic.com/culture/2026/11/saturday-night-live-john-mulaney-baby-boomers-sister/689452/",
+          "title": "An Astute ‘SNL’ Sketch About Who Cares for Aging Parents",
+          "publisher": "The Atlantic",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVwOE1QT6DiENo6JJfF4TwZqMduFUyO5R9fb5Rz06fvn6YZCYhKMLH-k9LXWk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSQ7y00LEs1h9IweL2qjjV-TjJ6Am2USQg4Q9MVyq814tHMwKes9KpUE2kWt4"
         },
         {
-          "url": "https://www.mensjournal.com/news/chase-down-login-problems-downdetector-nov-16",
-          "title": "Chase Down? Thousands of Customers Report Login and Account Problems Monday, Downdetector Shows",
-          "publisher": "Men's Journal",
+          "url": "https://www.today.com/popculture/john-mulaney-snl-sister-sketch-rcna609414",
+          "title": "John Mulaney Sells You an Age-Old Parental Care System, ‘Sister,’ in ‘SNL’ Skit That’s Too Real",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuHT6jwFUWcqADqaHj3r7qnybufgZ1OediNhMdtPb0itdouXjMVQiSyk8R9Xs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBd1gkUcirHcp1laWkp1EfZ8qq1uGvxRY4Z0DhzP4mNXjxDpL3-zxoe_vCYmk"
         },
         {
-          "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression",
-          "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
-          "publisher": "Al Jazeera",
+          "url": "https://www.nbc.com/nbc-insider/snl-sister-sketch-caregivers-jane-wickline-john-mulaney",
+          "title": "SNL's \"Sister\" Sketch Is Hitting Home for Family Caregivers Who Do Everything",
+          "publisher": "NBC TV",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvfGK6JpfRnRSRaEAQwyeP6Idnkn-q1M8hloQz56U6ArcUv_HmMs3rfLJz_cs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7kuq6W7X7NZcphuNp7nuLN6sUxqptbnN0wqYMk4TKmoNUSjjrzfp8Fj1FB-A"
         }
       ]
     },
@@ -83,7 +293,7 @@
       "related_news_urls": [
         "https://abcnews.com/US/outlook-outage-cause-microsoft-reason-teams-down/story?id=138174626",
         "https://www.wsj.com/business/telecom/the-chaos-and-unexpected-joys-of-a-19-hour-global-email-outage-37b7170c",
-        "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/"
+        "https://www.pcmag.com/news/microsoft-outage-explained-the-3-issues-behind-last-weeks-crash"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6LW3W0nIwxF1kI1MAeUrqaUcZyWdAi_TtdhiSZuIqo5D0a50-F4SL_Mau5nk",
       "image_credit": "ABC News - Breaking News, Latest News and Videos",
@@ -103,11 +313,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvwwbi9ZdLPcvgEn7_pW59bcEoJyqLd4AxYPBohGdRmMi7_NYSUhwTwKHWwFU"
         },
         {
-          "url": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
-          "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
-          "publisher": "SecurityWeek",
+          "url": "https://www.pcmag.com/news/microsoft-outage-explained-the-3-issues-behind-last-weeks-crash",
+          "title": "Microsoft Outage Explained: The 3 Issues Behind Last Week's Crash",
+          "publisher": "PCMag",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUYJP_x0qMLiPcpIJdqjHC0kb1w3LWrpp6NxbyCCG7IfCGcfV8EgPVRk-hrEM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xcWFkG7ODY-s4uPUzBfcDvzirRTdzC2g0KZhLfTXbkXkTIAafVapkJaWDO8"
         }
       ]
     },
@@ -117,7 +327,7 @@
       "published_at": "2026-11-16T17:30:00Z",
       "related_news_urls": [
         "https://www.sportsmole.co.uk/football/nations-league/lithuania-vs-liechtenstein_game_262909.html",
-        "https://www.chronicleonline.com/sports/soccer/lithuania-liechtenstein-nations-league-soccer/image_d0672fc6-2d0e-56be-8d67-902e4bc7b38f.html",
+        "https://www.chronicleonline.com/sports/soccer/lithuania-liechtenstein-nations-league-soccer/image_cb8658ea-0e8e-5441-b702-5499118e8c21.html",
         "https://www.squawka.com/en/news/previews/lithuania-vs-liechtenstein-predictions-betting-tips-16-11-26/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7rZvQTTsgnieb-7O6XUj6hFRj7P0n-tlFZ8ddc23hRik4X39p-QqilFMAcNU",
@@ -131,11 +341,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7rZvQTTsgnieb-7O6XUj6hFRj7P0n-tlFZ8ddc23hRik4X39p-QqilFMAcNU"
         },
         {
-          "url": "https://www.chronicleonline.com/sports/soccer/lithuania-liechtenstein-nations-league-soccer/image_d0672fc6-2d0e-56be-8d67-902e4bc7b38f.html",
+          "url": "https://www.chronicleonline.com/sports/soccer/lithuania-liechtenstein-nations-league-soccer/image_cb8658ea-0e8e-5441-b702-5499118e8c21.html",
           "title": "Lithuania Liechtenstein Nations League Soccer",
           "publisher": "chronicleonline.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiq4Z_whSxZsBER4pEj2p9oJYbg3eRHxF35-MeHqxE7U_OAQ4G07UdqdUPRvI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5QNMrQhZRgND2Y-BoDTdtHXY-i9sKz4ecVkIjbsF0BTcFeTIyTAtmirDA1W4"
         },
         {
           "url": "https://www.squawka.com/en/news/previews/lithuania-vs-liechtenstein-predictions-betting-tips-16-11-26/",
@@ -143,216 +353,6 @@
           "publisher": "Squawka",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQK0MH2ZZeuIJ7JIDeaCop-nW4SAHOtJd5bwllVCwf3Ogodkd6oz2ByNPDJvM"
-        }
-      ]
-    },
-    {
-      "query": "brad gerstner",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T17:20:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/tech/the-campaign-to-bring-back-jensen-huang-as-nvidia-ceo-e91b0b2c",
-        "https://www.nytimes.com/2026/11/16/us/politics/trump-jensen-huang-nvidia.html",
-        "https://www.washingtonpost.com/technology/2026/11/16/probably-biggest-fear-elon-has-why-huangs-exit-looms-over-musk/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4FwPPDHn7_wS7gx9evJNRtnwFKs2ioPh7pL13rwQwlR4PVzaeDTfHajDAXfY",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/tech/the-campaign-to-bring-back-jensen-huang-as-nvidia-ceo-e91b0b2c",
-          "title": "The Campaign to Bring Back Jensen Huang as Nvidia CEO",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4FwPPDHn7_wS7gx9evJNRtnwFKs2ioPh7pL13rwQwlR4PVzaeDTfHajDAXfY"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/16/us/politics/trump-jensen-huang-nvidia.html",
-          "title": "Trump Says He’s Open to Reinstatement of Jensen Huang as Nvidia Chief",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQljLzQyCJuXt4Wa4tT77ZAoxaoR76bPxoMqVtFN2XlNFKaAzhotFR_zeDRyv0"
-        },
-        {
-          "url": "https://www.washingtonpost.com/technology/2026/11/16/probably-biggest-fear-elon-has-why-huangs-exit-looms-over-musk/",
-          "title": "Nearly a fifth of the S&P 500 is tied to three men with no clear successors",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9gJ6xxjiUOwmUCS0jbhkpol2LePTMIqMfaMM6cwZiaQbI1i4Tdgo4-hRGas"
-        }
-      ]
-    },
-    {
-      "query": "supreme court",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T17:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/supreme-court/supreme-court-rejects-trump-academic-funding-cuts-dei-rcna608885",
-        "https://www.cnn.com/2026/11/16/politics/supreme-court-trump-grants",
-        "https://www.politico.com/news/2026/11/16/supreme-court-trump-university-california-research-grant-cuts-01167304"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi8ClxWoBiBIpWplWuQk4dJ83Pm2I1B5Punjv2KZqFAGHWnuWDExAuoc6guf8",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/supreme-court/supreme-court-rejects-trump-academic-funding-cuts-dei-rcna608885",
-          "title": "Supreme Court rejects Trump over academic funding cuts related to DEI",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi8ClxWoBiBIpWplWuQk4dJ83Pm2I1B5Punjv2KZqFAGHWnuWDExAuoc6guf8"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/16/politics/supreme-court-trump-grants",
-          "title": "Supreme Court declines Trump push to cut research grants related to DEI",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg6qmGbN6Kxm0XxkX53PAgMbU2KDKTznwf6iUfKCQsG7YkQYWvUl_H9CgLG7Y"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/16/supreme-court-trump-university-california-research-grant-cuts-01167304",
-          "title": "Supreme Court rejects Trump bid to revive UC research grant cuts",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJBDvPzg8Ef4v5299_Peq49em-PkING-Fj11KdGVSk5CzgviZ7ZUsqFG5OSw8"
-        }
-      ]
-    },
-    {
-      "query": "gypsy rose",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T17:00:00Z",
-      "related_news_urls": [
-        "https://people.com/gypsy-rose-blanchard-breaks-down-in-tears-first-live-interview-after-ken-urker-death-12255784",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/ken-urker-cause-death-released-153405112.html",
-        "https://www.wdsu.com/article/gypsy-rose-partner-ken-urker-death-louisiana/74441077"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMhswnlagSFd6sDhQ6iEt8tGREIS0x02bnWCl_sqgj4oNAsr2W7MGzz1-rANs",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/gypsy-rose-blanchard-breaks-down-in-tears-first-live-interview-after-ken-urker-death-12255784",
-          "title": "Gypsy Rose Blanchard Breaks Down in Tears During First Live Interview After Partner Ken Urker’s Death",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMhswnlagSFd6sDhQ6iEt8tGREIS0x02bnWCl_sqgj4oNAsr2W7MGzz1-rANs"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/ken-urker-cause-death-released-153405112.html",
-          "title": "Ken Urker cause of death released",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqSMpjBDAnBVORTw5jDSZQjnxVcrKCHgVVA44MQeR5FG0IMzcN7Au-JzOXd4c"
-        },
-        {
-          "url": "https://www.wdsu.com/article/gypsy-rose-partner-ken-urker-death-louisiana/74441077",
-          "title": "Cause of death released for Gypsy Rose Blanchard's partner, Ken Urker",
-          "publisher": "WDSU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST0uUBJMThxl1PShFK1fBS6bOUkx6fFS_EVYmL_7chnX8RiX_fyiGtyTEdIYc"
-        }
-      ]
-    },
-    {
-      "query": "estonia vs bulgaria",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T17:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmwy04kvgw95t",
-        "https://easyodds.com/estonia-vs-bulgaria-betting-odds-tips-predictions-preview-16th-november-2026",
-        "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-match-thread-bulgaria-vs-estonia-live-streams-q0hyk"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmwy04kvgw95t",
-          "title": "Estonia vs Bulgaria: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
-        },
-        {
-          "url": "https://easyodds.com/estonia-vs-bulgaria-betting-odds-tips-predictions-preview-16th-november-2026",
-          "title": "Estonia vs Bulgaria Betting Odds, Tips, Predictions, Preview 16th November 2026",
-          "publisher": "Easyodds.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTauGwv3Alc-vAMxRfusjgWZKI-z_MywDpB9TWrwYhOH-HOj_mDQ4oJ3liGRG0"
-        },
-        {
-          "url": "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-match-thread-bulgaria-vs-estonia-live-streams-q0hyk",
-          "title": "【MATCH THREAD】 Bulgaria vs Estonia 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ Ｆｒｅｅ ＯＮ Ｔv Channel",
-          "publisher": "Universitat de Barcelona",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ2LAMINkPd64L5-DR894nPQRpcoujlI7X1Mh3Z5wLmWp3K6sjexOZizTwvvI"
-        }
-      ]
-    },
-    {
-      "query": "sam elliott",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T16:50:00Z",
-      "related_news_urls": [
-        "https://www.tvline.com/2315465/quote-of-the-day-sam-elliott-difficulty-of-aging/",
-        "https://www.imdb.com/news/ni66113501/?ref_=nwc_art_perm",
-        "https://www.thelist.com/2311290/katharine-ross-relationship-history-before-sam-elliott/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1f96rj-eKksthxd5nVBsDakTssAg_mNjNpERDQ4r8F-WUB850G7odjQnGyaQ",
-      "image_credit": "TVLine",
-      "news": [
-        {
-          "url": "https://www.tvline.com/2315465/quote-of-the-day-sam-elliott-difficulty-of-aging/",
-          "title": "Quote Of The Day By Sam Elliott: 'On Some Level, It's Very Difficult. On Another, It's A Gift That I'm Alive, Because My...'",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1f96rj-eKksthxd5nVBsDakTssAg_mNjNpERDQ4r8F-WUB850G7odjQnGyaQ"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66113501/?ref_=nwc_art_perm",
-          "title": "Quote Of The Day By Sam Elliott: 'On Some Level, It's Very Difficult. On Another, It's A Gift That I'm Alive, Because My...'",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW1Z4sCzBM0-0UBgOf0uQhp7-n5N1eItDutC0sQMFyR4qirXSGyfOLNRAH2MA"
-        },
-        {
-          "url": "https://www.thelist.com/2311290/katharine-ross-relationship-history-before-sam-elliott/",
-          "title": "Katharine Ross Kissed A Lot Of Frogs Before Finding Prince Charming Sam Elliott",
-          "publisher": "The List",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcYPkrT3QWLxeO-ChtZQgpL199P3v6e2BEA1gQ4cFCwNCu3ZumHm9JMAGcnOQ"
-        }
-      ]
-    },
-    {
-      "query": "lord morrow",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T16:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cqvg27wpd3l0o",
-        "https://www.the-independent.com/news/uk/home-news/maurice-morrow-wife-daughter-rachel-burrows-b3085688.html",
-        "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cqvg27wpd3l0o",
-          "title": "Tributes as wife and daughter of DUP chairman die hours apart",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmSq_H6Vf0knuY1_ZD9KUpH8cCUnpnEAI8GXGbYYvnbmU2R-17473Ud22c6fg"
-        },
-        {
-          "url": "https://www.the-independent.com/news/uk/home-news/maurice-morrow-wife-daughter-rachel-burrows-b3085688.html",
-          "title": "Heartbreak as DUP chairman’s wife and daughter die just hours apart",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEdMux1I1hhq4jSMn1EhiSEtNLdWg4Z4Dz3j7AXGFmmIUpC_DdZBqwgTLwHHc"
-        },
-        {
-          "url": "https://fermanaghherald.com/2026/11/wife-and-daughter-of-former-fermanagh-mla-pass-away/",
-          "title": "Wife and daughter of former Fermanagh MLA pass away",
-          "publisher": "The Fermanagh Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZtnNiX0OFI2rS8-qexZ3-DMtGwxYgqtbs7mpkFDv0U1GhCCUYFVt_InDhyS0"
         }
       ]
     }
