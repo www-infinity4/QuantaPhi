@@ -34,6 +34,18 @@ test('a search permalink restores the matching card without relying on a paid lo
  await expect(page.locator('[data-quick-card-match="burger-king"]')).toBeVisible();expect(jobs).toBe(0);
 });
 
+test('Microsoft AI Bubbles Quick Card keeps its official fork and existing specialist at Android width',async({page})=>{
+ await prepare(page);
+ await page.setViewportSize({width:320,height:760});
+ await page.goto(base+'/source-quick-card.html?card=microsoft-ai-builder',{waitUntil:'domcontentloaded'});
+ const detail=page.locator('#sourceQuickCardDetail');
+ await expect(detail.getByRole('heading',{name:'Microsoft AI · Bubbles Builder',exact:true})).toBeVisible();
+ await expect(detail.getByRole('link',{name:'Visit original Microsoft AI · Bubbles Builder ↗'})).toHaveAttribute('href','https://github.com/microsoft/AI');
+ await expect(detail.getByRole('link',{name:'Your Microsoft AI fork'})).toHaveAttribute('href','https://github.com/www-infinity4/AI3');
+ await expect(detail.getByText(/An independent Bubbles specialist opens at the bottom right/)).toBeVisible();
+ await expect(page.locator('script[data-bubble-id="source-microsoft-ai-builder"]')).toHaveCount(1);
+});
+
 test('Android autocomplete fills on tap and leaves search submission under the visitor’s control', async ({page}) => {
  await prepare(page);
  await page.goto(base+'/', {waitUntil:'domcontentloaded'});
