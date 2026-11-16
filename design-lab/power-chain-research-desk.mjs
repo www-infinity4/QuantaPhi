@@ -13,6 +13,11 @@ export const RESEARCH_DESK_SEATS=Object.freeze([
 ]);
 const STOPPED_EXECUTION=Object.freeze({mode:'research_only',browserActionsExecuted:0,ordersPlaced:0,checkoutAuthorized:false,tradeAuthorized:false});
 const validCount=x=>Number.isSafeInteger(x)&&x>=0;
+const STEP_STATUSES=new Set(['matched','empty','error','stopped']);
+function validStep(step){
+ return STEP_STATUSES.has(step.status)&&validCount(step.results)&&
+  (step.status==='matched'?step.results>0:step.results===0);
+}
 
 /** Reviews an actual runPowerChain receipt, without promoting discovery to fact. */
 export function reviewPowerChainResearch(plan,receipt){
@@ -24,23 +29,40 @@ export function reviewPowerChainResearch(plan,receipt){
  if(!Array.isArray(receipt.steps)||!Array.isArray(receipt.results)||
     !validCount(receipt.checked)||!validCount(receipt.failed))throw new TypeError('Research receipt is incomplete');
  const allowed=new Set(plan.targets);
- const steps=new Set();
+ const steps=new Map();
+ const inconsistentTargets=new Set();
  for(const step of receipt.steps){
   if(!allowed.has(step?.target))throw new TypeError('Research step is outside the plan');
   if(steps.has(step.target))throw new TypeError('Duplicate target step');
-  steps.add(step.target);
+  if(!validStep(step))inconsistentTargets.add(step.target);
+  steps.set(step.target,step);
  }
  if(receipt.steps.length!==receipt.checked||receipt.checked>plan.targets.length)throw new TypeError('Research receipt counts are inconsistent');
- const sources=[];const seen=new Set();let rejected=0;
+ const candidates=[];
+ const seen=new Set();
+ const sourceCounts=new Map();
+ let rejected=0;
  for(const row of receipt.results){
-  const vetted=allowed.has(row?.target)&&steps.has(row.target)?safeChainResult(row.target,row):null;
+  const target=row?.target;
+  const step=steps.get(target);
+  if(step&&step.status!=='matched')inconsistentTargets.add(target);
+  const vetted=step?.status==='matched'&&!inconsistentTargets.has(target)?safeChainResult(target,row):null;
   if(!vetted||seen.has(vetted.url)){rejected++;continue;}
-  seen.add(vetted.url);sources.push(vetted);
+  seen.add(vetted.url);
+  candidates.push(vetted);
+  sourceCounts.set(target,(sourceCounts.get(target)||0)+1);
  }
+ for(const [target,step] of steps){
+  if(step.results!==(sourceCounts.get(target)||0))inconsistentTargets.add(target);
+ }
+ const sources=candidates.filter(row=>!inconsistentTargets.has(row.target));
+ rejected+=candidates.length-sources.length;
+ const errorSteps=receipt.steps.filter(step=>step.status==='error').length;
  const reasons=[];
- if(receipt.stopped)reasons.push('stopped');
+ if(receipt.stopped||receipt.steps.some(step=>step.status==='stopped'))reasons.push('stopped');
  if(receipt.checked<plan.targets.length)reasons.push('partial_source_checks');
- if(receipt.failed>0||receipt.steps.some(x=>x.status==='error'))reasons.push('search_errors');
+ if(receipt.failed>0||errorSteps>0)reasons.push('search_errors');
+ if(inconsistentTargets.size||receipt.failed!==errorSteps)reasons.push('inconsistent_source_steps');
  if(rejected)reasons.push('untrusted_source_rows');
  if(!sources.length)reasons.push('no_safe_source_links');
  const blocked=reasons.length>0;
