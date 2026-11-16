@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T09:01:39.557374Z",
+  "checked_at": "2026-11-16T09:40:13.542288Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "keira knightley netflix spy series",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T09:00:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66107866/?ref_=ttnw_art_perm",
+        "https://www.purewow.com/entertainment/netflix-black-doves-season-2",
+        "https://www.yahoo.com/entertainment/tv/articles/netflix-thriller-series-officially-no-155932599.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_y71MLnr80PbDDQjXiaiKjkTFLddm5RO1JJewcjrFSwppchIRjZafMpB0UV4",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66107866/?ref_=ttnw_art_perm",
+          "title": "‘Black Doves’ Season 3 Renewal Officially Addressed After Back-to-Back 10/10 Seasons",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_y71MLnr80PbDDQjXiaiKjkTFLddm5RO1JJewcjrFSwppchIRjZafMpB0UV4"
+        },
+        {
+          "url": "https://www.purewow.com/entertainment/netflix-black-doves-season-2",
+          "title": "Netflix’s #2 Show Is an Edge-of-Your-Seat Thriller—and Season 2 Is Even Better Than Season 1",
+          "publisher": "PureWow",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-OItXiXTo7QiLQVqEjqbpH_AVtHgfs_0h-lxg0Jg8DvsxFddm6-fns587yKs"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/netflix-thriller-series-officially-no-155932599.html",
+          "title": "Netflix Thriller Series Is Officially the No. 1 Show in the World One Week After New Season Drops",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSAbMSWdPBeo8oNkxLL5BHa2FktCXmwoqFGIYHfmC5Q9UuJSQwpwff8h3HpFQ"
+        }
+      ]
+    },
     {
       "query": "emma watson",
       "approx_searches": "100+",
@@ -43,7 +78,7 @@
     },
     {
       "query": "bangladesh vs south africa",
-      "approx_searches": "2000+",
+      "approx_searches": "200+",
       "published_at": "2026-11-16T08:30:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
@@ -81,20 +116,13 @@
       "approx_searches": "100+",
       "published_at": "2026-11-16T08:10:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
         "https://www.reuters.com/business/retail-consumer/alibaba-unveils-new-flagship-ai-model-with-safety-upgrades-2026-11-16/",
-        "https://finance.yahoo.com/technology/ai/articles/baba-stock-edges-lower-overnight-060258606.html"
+        "https://finance.yahoo.com/technology/ai/articles/baba-stock-edges-lower-overnight-060258606.html",
+        "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXzyNE3ZtRw5IhadPXiwJhxdllhENQuvrvgvjMo4OsH8Jg4LefqYa0WrsDkzw",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrIErRyhzIHuAK83_QwvHNew0u-fQHNRpWA2bh_58r60OXdoqKGIxVPccORzw",
+      "image_credit": "Reuters",
       "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
-          "title": "Alibaba Unveils New Flagship AI Model in Riposte to US Rivals",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXzyNE3ZtRw5IhadPXiwJhxdllhENQuvrvgvjMo4OsH8Jg4LefqYa0WrsDkzw"
-        },
         {
           "url": "https://www.reuters.com/business/retail-consumer/alibaba-unveils-new-flagship-ai-model-with-safety-upgrades-2026-11-16/",
           "title": "Alibaba unveils new flagship AI model with safety upgrades",
@@ -108,12 +136,19 @@
           "publisher": "Yahoo Finance",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFmwgtB7nkU9K2WrYE_GZvV1UvxT3UHgxoD6HfgJ_mdEWvdiC96mBI0V8mT_4"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
+          "title": "Alibaba Unveils New Flagship AI Model in Riposte to US Rivals",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXzyNE3ZtRw5IhadPXiwJhxdllhENQuvrvgvjMo4OsH8Jg4LefqYa0WrsDkzw"
         }
       ]
     },
     {
       "query": "penelope cruz javier bardem movie bunker",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-16T08:00:00Z",
       "related_news_urls": [
         "https://deadline.com/2026/11/penelope-cruz-bunker-interview-1237223831/",
@@ -222,8 +257,8 @@
       "published_at": "2026-11-16T07:40:00Z",
       "related_news_urls": [
         "https://www.ndtv.com/entertainment/please-help-me-actor-sharad-kapoor-seeks-financial-support-from-film-fraternity-12329924",
-        "https://m.economictimes.com/magazines/panache/shah-rukh-khans-co-star-who-became-popular-as-antagonist-after-2000-hit-film-now-seen-begging-for-work-in-viral-video-money-is-not-the-issue-who-is-sharad-kapoor/articleshow/135850044.cms",
-        "https://www.mensxp.com/entertainment/celebrities/186814-salman-khan-sonu-sood-offer-financial-help-to-sharad-kapoor-hollywood-debut.html"
+        "https://www.hindustantimes.com/entertainment/bollywood/sonu-sood-meets-josh-actor-sharad-kapoor-after-his-emotional-plea-for-work-checks-on-his-health-101794811248701.html",
+        "https://m.economictimes.com/magazines/panache/shah-rukh-khans-co-star-who-became-popular-as-antagonist-after-2000-hit-film-now-seen-begging-for-work-in-viral-video-money-is-not-the-issue-who-is-sharad-kapoor/articleshow/135850044.cms"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb7-6legWh30_r5GK2Dpt-Pq149EOg5_ELGIzdzQ1T6IshmC5El4xe7YI2wXI",
       "image_credit": "NDTV",
@@ -236,18 +271,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb7-6legWh30_r5GK2Dpt-Pq149EOg5_ELGIzdzQ1T6IshmC5El4xe7YI2wXI"
         },
         {
+          "url": "https://www.hindustantimes.com/entertainment/bollywood/sonu-sood-meets-josh-actor-sharad-kapoor-after-his-emotional-plea-for-work-checks-on-his-health-101794811248701.html",
+          "title": "Sonu Sood meets Josh actor Sharad Kapoor after his emotional plea for work, checks on his health | Bollywood",
+          "publisher": "Hindustan Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbj999qTej5d6OKUmPAF3G0-cwF3av2nCuGKFuweG39t6QqfNa47DZLEvccXI"
+        },
+        {
           "url": "https://m.economictimes.com/magazines/panache/shah-rukh-khans-co-star-who-became-popular-as-antagonist-after-2000-hit-film-now-seen-begging-for-work-in-viral-video-money-is-not-the-issue-who-is-sharad-kapoor/articleshow/135850044.cms",
           "title": "Shah Rukh Khan’s co-star, who became popular as antagonist after 2000 hit film, now seen begging for work",
           "publisher": "The Economic Times",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFGAooGbX5fl9AVhA-faK5egat9ZlFLpcfsguwI3ndXYCnoxF2xYkdDvF8MKk"
-        },
-        {
-          "url": "https://www.mensxp.com/entertainment/celebrities/186814-salman-khan-sonu-sood-offer-financial-help-to-sharad-kapoor-hollywood-debut.html",
-          "title": "Salman Khan, Sonu Sood Offer Financial Help to Sharad Kapoor; Josh Actor to Make Hollywood Debut Amid Crisis",
-          "publisher": "MensXP",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyHNGMnIYuk-17axk5MGwlGFFI1fbQRwcB_DnUxqQ5OqwcEgsL0TJfFNIrH9o"
         }
       ]
     },
@@ -288,7 +323,7 @@
     },
     {
       "query": "gta vi game",
-      "approx_searches": "1000+",
+      "approx_searches": "500+",
       "published_at": "2026-11-16T07:30:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
@@ -318,41 +353,6 @@
           "publisher": "Forbes",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCHzkZV1aJ0gbFMbBEReA1DTzf2CKGUfEIuyV01hxco6oRB0oeU4Y8NZJGbrM"
-        }
-      ]
-    },
-    {
-      "query": "karely ruiz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T07:10:00Z",
-      "related_news_urls": [
-        "https://www.razon.com.mx/entretenimiento/2026/11/15/que-pasa-entre-karely-ruiz-bellakath-y-odette-orlena/",
-        "https://www.tvnotas.com.mx/espectaculos-mexico/karely-abandona-la-mansion-vip-2-se-pelea-con-odette-orlena-y-exhiben-presunta-agresion-a-cukis",
-        "https://tribuna.com.mx/espectaculos/2026/11/14/video-karely-ruiz-se-pelea-con-odette-orlena-y-agrediria-a-cukis-seria-expulsada-de-la-mansion-vip_715591/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD-_V4tXYQx2vh0Fgil6wCdKcyvb32ucr70cF54coUpz5GKiKwKXrfsnR3iUo",
-      "image_credit": "La Razón de México",
-      "news": [
-        {
-          "url": "https://www.razon.com.mx/entretenimiento/2026/11/15/que-pasa-entre-karely-ruiz-bellakath-y-odette-orlena/",
-          "title": "¿Qué pasa entre Karely Ruiz, Bellakath y Odette Orlena en La Mansión VIP?",
-          "publisher": "La Razón de México",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD-_V4tXYQx2vh0Fgil6wCdKcyvb32ucr70cF54coUpz5GKiKwKXrfsnR3iUo"
-        },
-        {
-          "url": "https://www.tvnotas.com.mx/espectaculos-mexico/karely-abandona-la-mansion-vip-2-se-pelea-con-odette-orlena-y-exhiben-presunta-agresion-a-cukis",
-          "title": "¿Karely abandona ‘La mansión VIP 2’? Se pelea con Odette Orlena y exhiben presunta agresión a Cukis",
-          "publisher": "TVNotas",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqbIhLf2e1Dm9oQU5TiKJ144Gcdka7NSc-Www1sZ2_sWqQkkFTumTx1WCZCZ8"
-        },
-        {
-          "url": "https://tribuna.com.mx/espectaculos/2026/11/14/video-karely-ruiz-se-pelea-con-odette-orlena-y-agrediria-a-cukis-seria-expulsada-de-la-mansion-vip_715591/",
-          "title": "VIDEO: Karely Ruiz se pelea con Odette Orlena y agrediría a Cukis; sería expulsada de ‘La Mansión VIP’",
-          "publisher": "La Tribuna (México)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsL7OJOlhcESoZBkpWhObwYKDyFTb6hxHlzxYaLL-f8tswncWch5l1sPTuHfI"
         }
       ]
     }
