@@ -3,7 +3,7 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T05:01:31.473880Z",
+  "checked_at": "2026-11-16T05:30:53.349816Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
@@ -12,8 +12,8 @@
       "published_at": "2026-11-16T04:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50463347/2026-nfl-playoffs-chances-odds-tiers-32-teams-nfc-afc",
-        "https://bleacherreport.com/articles/25533810-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-week-10-snf",
-        "https://www.chicagotribune.com/2026/11/15/chicago-bears-nfc-north-race/"
+        "https://www.chicagotribune.com/2026/11/15/chicago-bears-nfc-north-race/",
+        "https://www.nfl.com/videos/examining-nfc-playoff-picture-at-end-of-sunday-in-week-10-of-2026-nfl-gameday-final"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQUmRsxQ5gS2xob4sQ7OuoRJY7kitRPqJr_r5TX8fXu6wdvwY0jdYa8J-avc8",
       "image_credit": "ESPN",
@@ -26,99 +26,99 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQUmRsxQ5gS2xob4sQ7OuoRJY7kitRPqJr_r5TX8fXu6wdvwY0jdYa8J-avc8"
         },
         {
-          "url": "https://bleacherreport.com/articles/25533810-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-week-10-snf",
-          "title": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings Before Week 10 SNF",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs4Cf92AiDaDblwUULZ5pKYHvr9aPfhDIDpQY9Vie6y7Cq-ejfgbhW8SjCLME"
-        },
-        {
           "url": "https://www.chicagotribune.com/2026/11/15/chicago-bears-nfc-north-race/",
           "title": "Column: Sizing up the battle ahead in the NFC North, which could send all 4 teams to the playoffs",
           "publisher": "Chicago Tribune",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsy5iF9ktMVPC1WiSAqDQGQx4fAIn-NOjr0nDucHPxmij9YQRnu6Dq9RM795c"
+        },
+        {
+          "url": "https://www.nfl.com/videos/examining-nfc-playoff-picture-at-end-of-sunday-in-week-10-of-2026-nfl-gameday-final",
+          "title": "Examining NFC playoff picture at end of Sunday in Week 10 of 2026 | 'NFL GameDay Final'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxQCCi7qaci8ORaiufFduz_tPpB7MHHdJ3KzvOq-IMYF6JC11MPx3Mqe-KNJI"
         }
       ]
     },
     {
-      "query": "shai gilgeous-alexander",
+      "query": "xbox project helix console",
       "approx_searches": "2000+",
-      "published_at": "2026-11-16T04:30:00Z",
+      "published_at": "2026-11-16T04:40:00Z",
       "related_news_urls": [
-        "https://www.wral.com/news/ap/402f3-gilgeous-alexander-scores-37-as-thunder-beat-kings-125-103-to-snap-3-game-losing-streak/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/shai-gilgeous-alexander-scores-37-points-vs-sac",
-        "https://tulsaworld.com/image_3f1a27c3-c897-4a18-958a-c19dbe4af913.html"
+        "https://www.windowscentral.com/gaming/xbox/microsoft-says-xbox-helix-is-a-console-not-a-pc-but-it-will-be-able-to-play-your-pc-games-helix-is-designed-to-be-a-console-that-can-also-play-games-from-your-pc",
+        "https://www.purexbox.com/news/2026/11/the-ultimate-gaming-machine-xbox-reveals-tons-of-new-project-helix-information",
+        "https://www.ign.com/articles/xbox-confirms-project-helix-is-a-console-capable-of-playing-games-from-your-pc"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGOgx4KhD8xxT368a9o6RO9IdYl0JI_uzpRsq3GmT0XEQSjf6kERj_Z-oXaOA",
-      "image_credit": "WRAL",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJnunCaQOwyeU6oEMcHj70UlWgVnY-x710Tvw6yToOeFwBLg4e9DKH5C7FOPk",
+      "image_credit": "Windows Central",
       "news": [
         {
-          "url": "https://www.wral.com/news/ap/402f3-gilgeous-alexander-scores-37-as-thunder-beat-kings-125-103-to-snap-3-game-losing-streak/",
-          "title": "Gilgeous-Alexander scores 37 as Thunder beat Kings 125-103 to snap 3-game losing streak",
-          "publisher": "WRAL",
+          "url": "https://www.windowscentral.com/gaming/xbox/microsoft-says-xbox-helix-is-a-console-not-a-pc-but-it-will-be-able-to-play-your-pc-games-helix-is-designed-to-be-a-console-that-can-also-play-games-from-your-pc",
+          "title": "Microsoft says Xbox Helix is a console, not a PC — but it will be able to play your PC games: \"It is not a PC that can also play console games\"",
+          "publisher": "Windows Central",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGOgx4KhD8xxT368a9o6RO9IdYl0JI_uzpRsq3GmT0XEQSjf6kERj_Z-oXaOA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJnunCaQOwyeU6oEMcHj70UlWgVnY-x710Tvw6yToOeFwBLg4e9DKH5C7FOPk"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/shai-gilgeous-alexander-scores-37-points-vs-sac",
-          "title": "Shai Gilgeous-Alexander scores 37 points vs. SAC",
-          "publisher": "NBC Sports",
+          "url": "https://www.purexbox.com/news/2026/11/the-ultimate-gaming-machine-xbox-reveals-tons-of-new-project-helix-information",
+          "title": "'The Ultimate Gaming Machine' - Xbox Reveals Tons Of New Project Helix Information",
+          "publisher": "Pure Xbox",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8yEM_4EypmHJV5RGrxUtV9hDfjCkBAEoWOTjS2etXwfCNwUDEPTI8NPmuRxY"
         },
         {
-          "url": "https://tulsaworld.com/image_3f1a27c3-c897-4a18-958a-c19dbe4af913.html",
-          "title": "BASKETBALL-NBA-SAC-OKC/",
-          "publisher": "Tulsa World",
+          "url": "https://www.ign.com/articles/xbox-confirms-project-helix-is-a-console-capable-of-playing-games-from-your-pc",
+          "title": "Xbox Reveals New Project Helix Details, Calls It 'a Console Capable of Playing Games From Your PC'",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUVYVe1AGTDT8hm0q2GpE8a028GLI40uBXynIHvmjU6a1u3Tf-38ymm-aUAkA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPkpYON0a6LBQwC2aBPVyZ3-kY6u3xyq3whZEzngSrAGtVD-Die_Tmner4sDM"
         }
       ]
     },
     {
-      "query": "sharks game",
-      "approx_searches": "2000+",
+      "query": "60 minutes tonight kratom episode",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T04:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/predators-look-keep-momentum-rolling-005449646.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-san-jose-sharks-prediction-odds-2026-11-15/",
-        "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026"
+        "https://www.cbsnews.com/news/parents-whose-sons-died-from-kratom-use-warn-about-substance-60-minutes/",
+        "https://www.wsj.com/health/wellness/how-one-man-escaped-from-an-over-the-counter-opioid-trap-87a5b984",
+        "https://www.foxnews.com/video/6408432464112"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4tDkW1_TNrhW_zZEUma_e4xzJzwmElr5hROO9iZWVQWodVlr5YEPNIfIAtzY",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1TYxaSaMT6aWZFT0DbwSR1q3vD66wHt-OcU1xtKv34Ap-nn5kA2inQG4FAEE",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/predators-look-keep-momentum-rolling-005449646.html",
-          "title": "Predators Look to Keep Momentum Rolling in San Jose",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.cbsnews.com/news/parents-whose-sons-died-from-kratom-use-warn-about-substance-60-minutes/",
+          "title": "Parents whose sons died from kratom use warn about the substance finding allies in Washington",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4tDkW1_TNrhW_zZEUma_e4xzJzwmElr5hROO9iZWVQWodVlr5YEPNIfIAtzY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1TYxaSaMT6aWZFT0DbwSR1q3vD66wHt-OcU1xtKv34Ap-nn5kA2inQG4FAEE"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-san-jose-sharks-prediction-odds-2026-11-15/",
-          "title": "Nashville Predators vs San Jose Sharks Prediction, Picks & Odds | 15 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.wsj.com/health/wellness/how-one-man-escaped-from-an-over-the-counter-opioid-trap-87a5b984",
+          "title": "How One Man Escaped From an Over-the-Counter Opioid Trap",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtMH1BxMYRoXFtf2405fLUZKSNq8_9HaBteLEBHwWqGbniETDbM1ULN7yhxc8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx3u7oxRm4rIERwEczcmrzoWsp23WAE7bsSipgtyoq5NtOvP3DahG0lEWtuq8"
         },
         {
-          "url": "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026",
-          "title": "Predators at Sharks projected lineups",
-          "publisher": "NHL.com",
+          "url": "https://www.foxnews.com/video/6408432464112",
+          "title": "Kratom recovery advocate exposes the warning signs users shouldn't ignore",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlDFCwW7ZNlvWx6iXjbO_9oLaBidTJqREPMAmwO-Q7Y4eOI-xbsq5l9Xcpo4g"
         }
       ]
     },
     {
       "query": "ravens vs chargers",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-16T04:30:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/betting/news/chargers-ravens-prediction-odds-time-nfl-week-10-monday-night-football-picks/",
         "https://sports.yahoo.com/articles/chargers-vs-ravens-player-props-030036407.html",
-        "https://www.oregonlive.com/betting/2026/11/experts-release-new-chargers-vs-ravens-predictions-for-monday-night-football-week-10.html"
+        "https://www.cbsnews.com/baltimore/news/ravens-chargers-moves-onto-list-of-monday-night-matchups-that-lost-their-luster/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopA7IP4ZyBK5VjI2vLPcCRUF3zmL3T0GXgDy34G66rno4RgO3F0xyYvYLcLk",
       "image_credit": "CBS Sports",
@@ -138,46 +138,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXSJYCpH6miLQny6EbV0TCRhAUkYOyLM3-knHJxZwv-Q9B-nxktDEl5BGdwE"
         },
         {
-          "url": "https://www.oregonlive.com/betting/2026/11/experts-release-new-chargers-vs-ravens-predictions-for-monday-night-football-week-10.html",
-          "title": "Experts release new Chargers vs. Ravens predictions for Monday Night Football Week 10",
-          "publisher": "OregonLive.com",
+          "url": "https://www.cbsnews.com/baltimore/news/ravens-chargers-moves-onto-list-of-monday-night-matchups-that-lost-their-luster/",
+          "title": "Ravens-Chargers moves onto list of Monday night matchups that lost their luster",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZX3gUw7arObAsWn8V3fXcyeIIplFImnBDqVq-dJcnWZJGM5d8Bpg4swcBQ3U"
-        }
-      ]
-    },
-    {
-      "query": "canucks",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T04:20:00Z",
-      "related_news_urls": [
-        "https://www.flohockey.tv/collections/6752010-continue-watching/video?playing=16411787",
-        "https://kesq.com/sports/local-sports-events/2026/11/15/firebirds-defeat-canucks-in-eight-round-shootout-2-1/",
-        "https://insidetherink.com/ahl-game-preview-abbotsford-canucks-at-coachella-valley-firebirds-with-projected-lines-11-15-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKvu93_x-_fBAOrFJ5XrkbIVNNSTYAkpUZqGGtgj4WsIr6EwYeiH_UYjxYnGQ",
-      "image_credit": "FloHockey",
-      "news": [
-        {
-          "url": "https://www.flohockey.tv/collections/6752010-continue-watching/video?playing=16411787",
-          "title": "Replay: Away - 2026 Abbotsford vs Coachella Valley | Nov 15 @ 2 PM",
-          "publisher": "FloHockey",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKvu93_x-_fBAOrFJ5XrkbIVNNSTYAkpUZqGGtgj4WsIr6EwYeiH_UYjxYnGQ"
-        },
-        {
-          "url": "https://kesq.com/sports/local-sports-events/2026/11/15/firebirds-defeat-canucks-in-eight-round-shootout-2-1/",
-          "title": "Firebirds defeat Canucks in eight-round shootout 2-1",
-          "publisher": "KESQ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWBNuOELBwjRu_SNVKYYYITfr8zIyjLts4_u8bftOB0kljbCUUppDeU0g5x4Y"
-        },
-        {
-          "url": "https://insidetherink.com/ahl-game-preview-abbotsford-canucks-at-coachella-valley-firebirds-with-projected-lines-11-15-2026/",
-          "title": "AHL Game Preview: Abbotsford Canucks at Coachella Valley Firebirds with Projected Lines 11/15/2026",
-          "publisher": "Inside The Rink",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl1_9htF94A5J-fqU50WorAKy_3Y7I-xBcZ4NkhUL4vHVYURYlbmnFV5Ogk4E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYZkonXzMuo3QFK0tSrZg2_X43mxVz7enQlew-r_AOe8-waKqSK7NCNoCU094"
         }
       ]
     },
@@ -217,72 +182,37 @@
       ]
     },
     {
-      "query": "mason rudolph",
-      "approx_searches": "2000+",
+      "query": "the body season 2",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T04:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/steelers-aaron-rodgers-replaced-mason-041753448.html",
-        "https://www.thefantasyfootballers.com/news/648112/aaron-rodgers-two-more-td-passes/",
-        "https://heavy.com/sports/nfl/pittsburgh-steelers/aaron-rodgers-benched-mason-rudolph-nfl-news-bengals/"
+        "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
+        "https://www.forbes.com/sites/paultassi/2026/11/15/netflixs-best-new-show-deserves-its-98-rotten-tomatoes-audience-score/",
+        "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_AbHybsOORFQYsJvRXGlutOHOPwuG-jqh0MvzM6jVFmVvdDCw8bATkt_Um1A",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/steelers-aaron-rodgers-replaced-mason-041753448.html",
-          "title": "Steelers' Aaron Rodgers replaced by Mason Rudolph vs Bengals on SNF",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
+          "title": "‘The Body’ Talks Like ‘Mean Girls’ and Walks Like ‘The Crucible’",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_AbHybsOORFQYsJvRXGlutOHOPwuG-jqh0MvzM6jVFmVvdDCw8bATkt_Um1A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk"
         },
         {
-          "url": "https://www.thefantasyfootballers.com/news/648112/aaron-rodgers-two-more-td-passes/",
-          "title": "Aaron Rodgers Two more TD passes",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdn3fyILcDosUS56wyMGH0kkAIWTrX6fUo6TXPF8cryI_ra0Wuw2bB4KIuqbA"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/pittsburgh-steelers/aaron-rodgers-benched-mason-rudolph-nfl-news-bengals/",
-          "title": "Steelers’ Mason Rudolph Replaces Aaron Rodgers in Embarrassing Bengals Game",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOdbBqPpRE7vzLYJ_Z83TRLiYYAjkS0xbrzv3k-R-XBdYzQqnhsQDk2Z0co9E"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 online release date",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T04:10:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
-        "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
-        "https://www.techpowerup.com/354616/gta-6s-playstation-store-data-hints-at-multiplayer-support"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
-          "title": "Another Update About The ‘GTA 6 Online’ Release Date",
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/15/netflixs-best-new-show-deserves-its-98-rotten-tomatoes-audience-score/",
+          "title": "Netflix’s Best New Show Deserves Its 98% Rotten Tomatoes Audience Score",
           "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_6dX44l7QvdXETXLa31lCqdxbKltZXBljud0ReoQWLRsi49vHQEk9Eeo0K8"
         },
         {
-          "url": "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
-          "title": "PSA: GTA 6 Does Not Have Online Multiplayer at Launch",
-          "publisher": "Push Square",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix",
+          "title": "The Body review – this sexy retro high school drama is like Cruel Intentions … with added Satanic rituals",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypL5G2pJbFHZlCFW_tZcnq6-SMbceTH44sP5Veo6_32nZYemNCVnofdtWRZg"
-        },
-        {
-          "url": "https://www.techpowerup.com/354616/gta-6s-playstation-store-data-hints-at-multiplayer-support",
-          "title": "GTA 6's PlayStation Store Data Hints at Multiplayer Support",
-          "publisher": "TechPowerUp",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubIIrHtxBYME34poqFpQRXK4tgjJ3reoUeI5pHrRy0QJ00KnwsoSTsWtIxE0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0J7IDDXHi9RkKqQf7C4XNMQHzLepy5n5QJL7PMGiP8IKutfXhWrw6v-yPaSs"
         }
       ]
     },
@@ -291,26 +221,26 @@
       "approx_searches": "200+",
       "published_at": "2026-11-16T04:10:00Z",
       "related_news_urls": [
-        "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
         "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
+        "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
         "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrliZyu5jtxFBGRMsjVaPrA7q2L-gxaKS3_GmpxBRr5aI1PSkPtWg4O6jMznU",
-      "image_credit": "RotoWire",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww",
+      "image_credit": "CBS Sports",
       "news": [
-        {
-          "url": "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
-          "title": "Will Howard News: Working as emergency QB again",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrliZyu5jtxFBGRMsjVaPrA7q2L-gxaKS3_GmpxBRr5aI1PSkPtWg4O6jMznU"
-        },
         {
           "url": "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
           "title": "Steelers' Will Howard: Working as emergency QB again",
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
+        },
+        {
+          "url": "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
+          "title": "Will Howard News: Working as emergency QB again",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrliZyu5jtxFBGRMsjVaPrA7q2L-gxaKS3_GmpxBRr5aI1PSkPtWg4O6jMznU"
         },
         {
           "url": "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622",
@@ -323,36 +253,106 @@
     },
     {
       "query": "vgk",
-      "approx_searches": "200+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-16T04:00:00Z",
       "related_news_urls": [
-        "https://sinbin.vegas/golden-knights-stock-up-stock-down-through-20-games/",
-        "https://vegashockeyknight.com/how-far-can-the-goaltending-take-the-vegas-golden-knights",
-        "https://www.reviewjournal.com/sports/goldenknights/as-golden-knights-search-for-offense-goalies-have-stepped-up-3910952/"
+        "https://www.espn.com/video/clip/_/id/50498126/shai-gilgeous-alexander-drills-triple-vs-sacramento-kings",
+        "https://www.espn.com/nhl/game/_/gameId/401892725",
+        "https://www.espn.com/mens-college-basketball/game/_/gameId/401909525/marquette-missouri"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQunwa64Ppy-qBKbV0qYUx7a4OdUhjgvxDT-j6EAujnsUqArUFcSLMpoU3LN3s",
-      "image_credit": "SinBin.vegas",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVB3J2CQ8f1vv84-hnXf3AAGlTs2nZ4vUfTuSbKCN7zguFyNtA-7d-V49r54",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sinbin.vegas/golden-knights-stock-up-stock-down-through-20-games/",
-          "title": "Golden Knights Stock Up, Stock Down: Through 20 Games",
-          "publisher": "SinBin.vegas",
+          "url": "https://www.espn.com/video/clip/_/id/50498126/shai-gilgeous-alexander-drills-triple-vs-sacramento-kings",
+          "title": "Shai Gilgeous-Alexander drills triple vs. Sacramento Kings",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQunwa64Ppy-qBKbV0qYUx7a4OdUhjgvxDT-j6EAujnsUqArUFcSLMpoU3LN3s"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVB3J2CQ8f1vv84-hnXf3AAGlTs2nZ4vUfTuSbKCN7zguFyNtA-7d-V49r54"
         },
         {
-          "url": "https://vegashockeyknight.com/how-far-can-the-goaltending-take-the-vegas-golden-knights",
-          "title": "How far can the goaltending take the Vegas Golden Knights?",
-          "publisher": "Vegas Hockey Knight",
+          "url": "https://www.espn.com/nhl/game/_/gameId/401892725",
+          "title": "Predators vs. Sharks (Nov 15, 2026) Live Score",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTioyQhFTGwPyMJY0OyQ64VTJKdVzHd-tP11S11q5BpbESCVyJn2h2-LOOh0C0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzvcFKGu0Y1SGA--dVFSkD3F9M7HPjc8tTtn9Yb-2CEcxA9oWcYKa8qxqghQ"
         },
         {
-          "url": "https://www.reviewjournal.com/sports/goldenknights/as-golden-knights-search-for-offense-goalies-have-stepped-up-3910952/",
-          "title": "As Golden Knights search for offense, goalies have stepped up",
-          "publisher": "Las Vegas Review-Journal",
+          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909525/marquette-missouri",
+          "title": "Missouri 69-64 Marquette (Nov 15, 2026) Final Score",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAcWcI9JNn1nGsfPM8iCN0nXMwyaMFGOjFub_jFFI5b5XFmtKKdSkeJa6Iq4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPNyuHG22VNBmJ6OLTUy5Sz9EvGOWtKZVzuhcTRohilC-m2JL_-8IVTQx32Sc"
+        }
+      ]
+    },
+    {
+      "query": "donald trump iran war",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T03:40:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
+        "https://www.timesofisrael.com/liveblog-november-16-2026/",
+        "https://www.aa.com.tr/en/americas/uss-theodore-roosevelt-to-join-2-us-aircraft-carriers-in-middle-east-within-next-day-report/4125964"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM-vsJxmB2zhrysHX1pBum9oKDlpCOP-ptRRRNWk4QgnT8ZY3fwBXfbJkfDpk",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
+          "title": "Iran war live: Third US carrier arrives, Iran warns it could strike first",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM-vsJxmB2zhrysHX1pBum9oKDlpCOP-ptRRRNWk4QgnT8ZY3fwBXfbJkfDpk"
+        },
+        {
+          "url": "https://www.timesofisrael.com/liveblog-november-16-2026/",
+          "title": "Third US aircraft carrier said to arrive in Mideast as Washington shores up troops",
+          "publisher": "The Times of Israel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4EZeuWxrJY2zVuue-zHWPN1zhvp8EbvuIg5qTFVXhsBwiSQFm6jpR1D_u11U"
+        },
+        {
+          "url": "https://www.aa.com.tr/en/americas/uss-theodore-roosevelt-to-join-2-us-aircraft-carriers-in-middle-east-within-next-day-report/4125964",
+          "title": "USS Theodore Roosevelt to join 2 US aircraft carriers in Middle East within next day: Report",
+          "publisher": "Anadolu Ajansı",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2_ozVIKm85Vm7mLg75S06PdcNE5DClzb57jDLe-rnWOWlDfK0SH5jMwUuGhc"
+        }
+      ]
+    },
+    {
+      "query": "oklahoma city thunder vs sacramento kings match player stats",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T03:40:00Z",
+      "related_news_urls": [
+        "https://www.covers.com/sport/hockey/nhl/matchup/382613/picks",
+        "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
+        "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6KUf5kM-eGqfvI9-lu-s2qIRHLzZLkCqUA62GQyL7RgqU-ta_HiTA-3r-vvw",
+      "image_credit": "Covers.com",
+      "news": [
+        {
+          "url": "https://www.covers.com/sport/hockey/nhl/matchup/382613/picks",
+          "title": "Capitals vs Lightning Picks, Prop Bets For November 17, 2026 - NHL Predictions",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6KUf5kM-eGqfvI9-lu-s2qIRHLzZLkCqUA62GQyL7RgqU-ta_HiTA-3r-vvw"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
+          "title": "Licensable picture: NCAA Mens Basketball 2026: Green Bay Vs St. Thomas NOV 08",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKQDQrKivrdmj3wD92p-mgS9xY11UHAvcnBZcvBL99sayVpd8CGB8NjiUUA5Y"
+        },
+        {
+          "url": "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252",
+          "title": "Saint Thomas Tommies play the Green Bay Phoenix in non-conference play",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs"
         }
       ]
     }
