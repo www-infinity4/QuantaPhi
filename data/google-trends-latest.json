@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T04:38:55.817388Z",
+  "checked_at": "2026-11-16T05:01:31.473880Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "afc north standings",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T04:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50463347/2026-nfl-playoffs-chances-odds-tiers-32-teams-nfc-afc",
+        "https://bleacherreport.com/articles/25533810-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-week-10-snf",
+        "https://www.chicagotribune.com/2026/11/15/chicago-bears-nfc-north-race/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQUmRsxQ5gS2xob4sQ7OuoRJY7kitRPqJr_r5TX8fXu6wdvwY0jdYa8J-avc8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50463347/2026-nfl-playoffs-chances-odds-tiers-32-teams-nfc-afc",
+          "title": "NFL playoff chance tiers: Where all 32 teams fit in 2026 postseason picture",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQUmRsxQ5gS2xob4sQ7OuoRJY7kitRPqJr_r5TX8fXu6wdvwY0jdYa8J-avc8"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25533810-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-week-10-snf",
+          "title": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings Before Week 10 SNF",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs4Cf92AiDaDblwUULZ5pKYHvr9aPfhDIDpQY9Vie6y7Cq-ejfgbhW8SjCLME"
+        },
+        {
+          "url": "https://www.chicagotribune.com/2026/11/15/chicago-bears-nfc-north-race/",
+          "title": "Column: Sizing up the battle ahead in the NFC North, which could send all 4 teams to the playoffs",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsy5iF9ktMVPC1WiSAqDQGQx4fAIn-NOjr0nDucHPxmij9YQRnu6Dq9RM795c"
+        }
+      ]
+    },
+    {
+      "query": "shai gilgeous-alexander",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T04:30:00Z",
+      "related_news_urls": [
+        "https://www.wral.com/news/ap/402f3-gilgeous-alexander-scores-37-as-thunder-beat-kings-125-103-to-snap-3-game-losing-streak/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/shai-gilgeous-alexander-scores-37-points-vs-sac",
+        "https://tulsaworld.com/image_3f1a27c3-c897-4a18-958a-c19dbe4af913.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGOgx4KhD8xxT368a9o6RO9IdYl0JI_uzpRsq3GmT0XEQSjf6kERj_Z-oXaOA",
+      "image_credit": "WRAL",
+      "news": [
+        {
+          "url": "https://www.wral.com/news/ap/402f3-gilgeous-alexander-scores-37-as-thunder-beat-kings-125-103-to-snap-3-game-losing-streak/",
+          "title": "Gilgeous-Alexander scores 37 as Thunder beat Kings 125-103 to snap 3-game losing streak",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGOgx4KhD8xxT368a9o6RO9IdYl0JI_uzpRsq3GmT0XEQSjf6kERj_Z-oXaOA"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/shai-gilgeous-alexander-scores-37-points-vs-sac",
+          "title": "Shai Gilgeous-Alexander scores 37 points vs. SAC",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ"
+        },
+        {
+          "url": "https://tulsaworld.com/image_3f1a27c3-c897-4a18-958a-c19dbe4af913.html",
+          "title": "BASKETBALL-NBA-SAC-OKC/",
+          "publisher": "Tulsa World",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUVYVe1AGTDT8hm0q2GpE8a028GLI40uBXynIHvmjU6a1u3Tf-38ymm-aUAkA"
+        }
+      ]
+    },
+    {
+      "query": "sharks game",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T04:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/predators-look-keep-momentum-rolling-005449646.html",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-san-jose-sharks-prediction-odds-2026-11-15/",
+        "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4tDkW1_TNrhW_zZEUma_e4xzJzwmElr5hROO9iZWVQWodVlr5YEPNIfIAtzY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/predators-look-keep-momentum-rolling-005449646.html",
+          "title": "Predators Look to Keep Momentum Rolling in San Jose",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4tDkW1_TNrhW_zZEUma_e4xzJzwmElr5hROO9iZWVQWodVlr5YEPNIfIAtzY"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-san-jose-sharks-prediction-odds-2026-11-15/",
+          "title": "Nashville Predators vs San Jose Sharks Prediction, Picks & Odds | 15 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtMH1BxMYRoXFtf2405fLUZKSNq8_9HaBteLEBHwWqGbniETDbM1ULN7yhxc8"
+        },
+        {
+          "url": "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026",
+          "title": "Predators at Sharks projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        }
+      ]
+    },
+    {
+      "query": "ravens vs chargers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T04:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/chargers-ravens-prediction-odds-time-nfl-week-10-monday-night-football-picks/",
+        "https://sports.yahoo.com/articles/chargers-vs-ravens-player-props-030036407.html",
+        "https://www.oregonlive.com/betting/2026/11/experts-release-new-chargers-vs-ravens-predictions-for-monday-night-football-week-10.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopA7IP4ZyBK5VjI2vLPcCRUF3zmL3T0GXgDy34G66rno4RgO3F0xyYvYLcLk",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/chargers-ravens-prediction-odds-time-nfl-week-10-monday-night-football-picks/",
+          "title": "Chargers vs. Ravens prediction, odds, time: NFL Week 10 'Monday Night Football' picks by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopA7IP4ZyBK5VjI2vLPcCRUF3zmL3T0GXgDy34G66rno4RgO3F0xyYvYLcLk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/chargers-vs-ravens-player-props-030036407.html",
+          "title": "Chargers vs Ravens Player Props for Omarion Hampton, Zay Flowers, Oronde Gadsden",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXSJYCpH6miLQny6EbV0TCRhAUkYOyLM3-knHJxZwv-Q9B-nxktDEl5BGdwE"
+        },
+        {
+          "url": "https://www.oregonlive.com/betting/2026/11/experts-release-new-chargers-vs-ravens-predictions-for-monday-night-football-week-10.html",
+          "title": "Experts release new Chargers vs. Ravens predictions for Monday Night Football Week 10",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZX3gUw7arObAsWn8V3fXcyeIIplFImnBDqVq-dJcnWZJGM5d8Bpg4swcBQ3U"
+        }
+      ]
+    },
+    {
+      "query": "canucks",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T04:20:00Z",
+      "related_news_urls": [
+        "https://www.flohockey.tv/collections/6752010-continue-watching/video?playing=16411787",
+        "https://kesq.com/sports/local-sports-events/2026/11/15/firebirds-defeat-canucks-in-eight-round-shootout-2-1/",
+        "https://insidetherink.com/ahl-game-preview-abbotsford-canucks-at-coachella-valley-firebirds-with-projected-lines-11-15-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKvu93_x-_fBAOrFJ5XrkbIVNNSTYAkpUZqGGtgj4WsIr6EwYeiH_UYjxYnGQ",
+      "image_credit": "FloHockey",
+      "news": [
+        {
+          "url": "https://www.flohockey.tv/collections/6752010-continue-watching/video?playing=16411787",
+          "title": "Replay: Away - 2026 Abbotsford vs Coachella Valley | Nov 15 @ 2 PM",
+          "publisher": "FloHockey",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKvu93_x-_fBAOrFJ5XrkbIVNNSTYAkpUZqGGtgj4WsIr6EwYeiH_UYjxYnGQ"
+        },
+        {
+          "url": "https://kesq.com/sports/local-sports-events/2026/11/15/firebirds-defeat-canucks-in-eight-round-shootout-2-1/",
+          "title": "Firebirds defeat Canucks in eight-round shootout 2-1",
+          "publisher": "KESQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWBNuOELBwjRu_SNVKYYYITfr8zIyjLts4_u8bftOB0kljbCUUppDeU0g5x4Y"
+        },
+        {
+          "url": "https://insidetherink.com/ahl-game-preview-abbotsford-canucks-at-coachella-valley-firebirds-with-projected-lines-11-15-2026/",
+          "title": "AHL Game Preview: Abbotsford Canucks at Coachella Valley Firebirds with Projected Lines 11/15/2026",
+          "publisher": "Inside The Rink",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl1_9htF94A5J-fqU50WorAKy_3Y7I-xBcZ4NkhUL4vHVYURYlbmnFV5Ogk4E"
+        }
+      ]
+    },
     {
       "query": "the mighty nein season 2 release",
       "approx_searches": "200+",
@@ -13,7 +188,7 @@
       "related_news_urls": [
         "https://www.yahoo.com/entertainment/tv/articles/prime-video-reveals-mighty-nein-223325495.html",
         "https://www.imdb.com/news/ni66112983/?ref_=ttnw_art_perm",
-        "https://www.comingsoon.net/tv/news/2223495-the-mighty-nein-season-2-release-date-prime-video"
+        "https://www.aol.com/articles/vox-machina-sequel-mighty-nein-041344000.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZT4XSFC3_iPQ0GO60rgN65Rqzk0WcZygchH-NDqOy12_w9ZcMiMtOHB342sg",
       "image_credit": "Yahoo",
@@ -33,11 +208,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBoNM_Hr-3pQUsdw5_PbCCzJtQd93-WuTrUXQkKUDdgYUirpTe6-oNe-ss64"
         },
         {
-          "url": "https://www.comingsoon.net/tv/news/2223495-the-mighty-nein-season-2-release-date-prime-video",
+          "url": "https://www.aol.com/articles/vox-machina-sequel-mighty-nein-041344000.html",
           "title": "Vox Machina Sequel The Mighty Nein Sets Season 2 Release Date for Prime Video",
-          "publisher": "ComingSoon.net",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ-Gy8SxDkNKeX94aJFWGYjdKxJZ80CGBJOdUytWCA5s7iJUt9H3AVwTNnWYY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkyoFLVlk0GEhja5_vOWljvN1VzB8r-lntQhxKDNLcU0v9dIPSuAn0KJYDkrg"
         }
       ]
     },
@@ -46,19 +221,26 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-16T04:10:00Z",
       "related_news_urls": [
-        "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/15/aaron-rodgers-replaced-mason-rudolph-steelers-bengals-sunday-night/92776592007/",
-        "https://heavy.com/sports/nfl/pittsburgh-steelers/aaron-rodgers-benched-mason-rudolph-nfl-news-bengals/",
-        "https://clutchpoints.com/nfl/pittsburgh-steelers/steelers-news-mike-tomlin-revisits-myles-garrett-mason-rudolph-incident-wild-remark"
+        "https://sports.yahoo.com/articles/steelers-aaron-rodgers-replaced-mason-041753448.html",
+        "https://www.thefantasyfootballers.com/news/648112/aaron-rodgers-two-more-td-passes/",
+        "https://heavy.com/sports/nfl/pittsburgh-steelers/aaron-rodgers-benched-mason-rudolph-nfl-news-bengals/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxoqEMjdcHEpt9Pn9o1HBeGttvWMJKVJM_vPzuYf6E59uz0acFDCw6JrriXL0",
-      "image_credit": "Cincinnati Enquirer",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_AbHybsOORFQYsJvRXGlutOHOPwuG-jqh0MvzM6jVFmVvdDCw8bATkt_Um1A",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/15/aaron-rodgers-replaced-mason-rudolph-steelers-bengals-sunday-night/92776592007/",
+          "url": "https://sports.yahoo.com/articles/steelers-aaron-rodgers-replaced-mason-041753448.html",
           "title": "Steelers' Aaron Rodgers replaced by Mason Rudolph vs Bengals on SNF",
-          "publisher": "Cincinnati Enquirer",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxoqEMjdcHEpt9Pn9o1HBeGttvWMJKVJM_vPzuYf6E59uz0acFDCw6JrriXL0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_AbHybsOORFQYsJvRXGlutOHOPwuG-jqh0MvzM6jVFmVvdDCw8bATkt_Um1A"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/648112/aaron-rodgers-two-more-td-passes/",
+          "title": "Aaron Rodgers Two more TD passes",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdn3fyILcDosUS56wyMGH0kkAIWTrX6fUo6TXPF8cryI_ra0Wuw2bB4KIuqbA"
         },
         {
           "url": "https://heavy.com/sports/nfl/pittsburgh-steelers/aaron-rodgers-benched-mason-rudolph-nfl-news-bengals/",
@@ -66,13 +248,41 @@
           "publisher": "Heavy.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOdbBqPpRE7vzLYJ_Z83TRLiYYAjkS0xbrzv3k-R-XBdYzQqnhsQDk2Z0co9E"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 online release date",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T04:10:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
+        "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
+        "https://www.techpowerup.com/354616/gta-6s-playstation-store-data-hints-at-multiplayer-support"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
+          "title": "Another Update About The ‘GTA 6 Online’ Release Date",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68"
         },
         {
-          "url": "https://clutchpoints.com/nfl/pittsburgh-steelers/steelers-news-mike-tomlin-revisits-myles-garrett-mason-rudolph-incident-wild-remark",
-          "title": "Mike Tomlin revisits Myles Garrett and Steelers’ Mason Rudolph incident with wild remark",
-          "publisher": "ClutchPoints",
+          "url": "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
+          "title": "PSA: GTA 6 Does Not Have Online Multiplayer at Launch",
+          "publisher": "Push Square",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLJOrKngi0MuXC5M_akUyN5aXt8CQkiFlStNbvEcrbzhDlVpW-_avNRl_4HT4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypL5G2pJbFHZlCFW_tZcnq6-SMbceTH44sP5Veo6_32nZYemNCVnofdtWRZg"
+        },
+        {
+          "url": "https://www.techpowerup.com/354616/gta-6s-playstation-store-data-hints-at-multiplayer-support",
+          "title": "GTA 6's PlayStation Store Data Hints at Multiplayer Support",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubIIrHtxBYME34poqFpQRXK4tgjJ3reoUeI5pHrRy0QJ00KnwsoSTsWtIxE0"
         }
       ]
     },
@@ -81,26 +291,26 @@
       "approx_searches": "200+",
       "published_at": "2026-11-16T04:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
         "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
+        "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
         "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrliZyu5jtxFBGRMsjVaPrA7q2L-gxaKS3_GmpxBRr5aI1PSkPtWg4O6jMznU",
+      "image_credit": "RotoWire",
       "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
-          "title": "Steelers' Will Howard: Working as emergency QB again",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
-        },
         {
           "url": "https://www.rotowire.com/football/headlines/will-howard-injury-working-as-emergency-qb-again-648019",
           "title": "Will Howard News: Working as emergency QB again",
           "publisher": "RotoWire",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrliZyu5jtxFBGRMsjVaPrA7q2L-gxaKS3_GmpxBRr5aI1PSkPtWg4O6jMznU"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/steelers-will-howard-working-as-emergency-qb-again/",
+          "title": "Steelers' Will Howard: Working as emergency QB again",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
         },
         {
           "url": "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622",
@@ -112,247 +322,37 @@
       ]
     },
     {
-      "query": "donald trump iran war",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T03:40:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
-        "https://www.timesofisrael.com/liveblog-november-16-2026/",
-        "https://www.aa.com.tr/en/americas/uss-theodore-roosevelt-to-join-2-us-aircraft-carriers-in-middle-east-within-next-day-report/4125964"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM-vsJxmB2zhrysHX1pBum9oKDlpCOP-ptRRRNWk4QgnT8ZY3fwBXfbJkfDpk",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
-          "title": "Iran war live: Third US carrier arrives, Iran warns it could strike first",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM-vsJxmB2zhrysHX1pBum9oKDlpCOP-ptRRRNWk4QgnT8ZY3fwBXfbJkfDpk"
-        },
-        {
-          "url": "https://www.timesofisrael.com/liveblog-november-16-2026/",
-          "title": "Third US aircraft carrier said to arrive in Mideast as Washington shores up troops",
-          "publisher": "The Times of Israel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4EZeuWxrJY2zVuue-zHWPN1zhvp8EbvuIg5qTFVXhsBwiSQFm6jpR1D_u11U"
-        },
-        {
-          "url": "https://www.aa.com.tr/en/americas/uss-theodore-roosevelt-to-join-2-us-aircraft-carriers-in-middle-east-within-next-day-report/4125964",
-          "title": "USS Theodore Roosevelt to join 2 US aircraft carriers in Middle East within next day: Report",
-          "publisher": "Anadolu Ajansı",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2_ozVIKm85Vm7mLg75S06PdcNE5DClzb57jDLe-rnWOWlDfK0SH5jMwUuGhc"
-        }
-      ]
-    },
-    {
-      "query": "oklahoma city thunder vs sacramento kings match player stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T03:40:00Z",
-      "related_news_urls": [
-        "https://www.covers.com/sport/hockey/nhl/matchup/382613/picks",
-        "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
-        "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6KUf5kM-eGqfvI9-lu-s2qIRHLzZLkCqUA62GQyL7RgqU-ta_HiTA-3r-vvw",
-      "image_credit": "Covers.com",
-      "news": [
-        {
-          "url": "https://www.covers.com/sport/hockey/nhl/matchup/382613/picks",
-          "title": "Capitals vs Lightning Picks, Prop Bets For November 17, 2026 - NHL Predictions",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6KUf5kM-eGqfvI9-lu-s2qIRHLzZLkCqUA62GQyL7RgqU-ta_HiTA-3r-vvw"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/ncaa-mens-basketball-2026-green-bay-vs-st-thomas-nov-08/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBOVjNESjk",
-          "title": "Licensable picture: NCAA Mens Basketball 2026: Green Bay Vs St. Thomas NOV 08",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKQDQrKivrdmj3wD92p-mgS9xY11UHAvcnBZcvBL99sayVpd8CGB8NjiUUA5Y"
-        },
-        {
-          "url": "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252",
-          "title": "Saint Thomas Tommies play the Green Bay Phoenix in non-conference play",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs"
-        }
-      ]
-    },
-    {
-      "query": "governors awards 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T03:30:00Z",
-      "related_news_urls": [
-        "https://www.vogue.com/slideshow/2026-governors-awards-red-carpet-best-looks",
-        "https://apnews.com/article/oscars-governors-awards-glenn-close-ridley-scott-0130441baef714d6730cddad29e35de5",
-        "https://deadline.com/gallery/governors-awards-photos-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWZhpmmAdiGDByHJaTwqhnwdfdk_thi9erNjRxHbkCMGTIZY0CEJHaAAtcoMs",
-      "image_credit": "Vogue",
-      "news": [
-        {
-          "url": "https://www.vogue.com/slideshow/2026-governors-awards-red-carpet-best-looks",
-          "title": "Governors Awards 2026: Fashion—All of the Best Looks From the Red Carpet",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWZhpmmAdiGDByHJaTwqhnwdfdk_thi9erNjRxHbkCMGTIZY0CEJHaAAtcoMs"
-        },
-        {
-          "url": "https://apnews.com/article/oscars-governors-awards-glenn-close-ridley-scott-0130441baef714d6730cddad29e35de5",
-          "title": "Glenn Close and Ridley Scott to get honorary Oscars at Governors Awards",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQbYSbhGNWRMs_7Ard5x2XZypD6U_wHaH4PRln_jJt6Mkotrt9161pnw-gcUs"
-        },
-        {
-          "url": "https://deadline.com/gallery/governors-awards-photos-2026/",
-          "title": "Governors Awards Red Carpet: Zendaya, Charlize Theron, Timothée Chalamet, Inde Navarrette & More",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjph7lNI6FuTYuAJcLufV2st5kFNvMgcmOMzyx-HuWKxx1j7yqvYcZ09tbq_I"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 physical copy code flaw",
+      "query": "vgk",
       "approx_searches": "200+",
-      "published_at": "2026-11-16T03:20:00Z",
+      "published_at": "2026-11-16T04:00:00Z",
       "related_news_urls": [
-        "https://www.pushsquare.com/news/2026/11/gta-6-ps5-codes-potentially-being-stolen-from-physical-copies-using-flashlight-trick",
-        "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
-        "https://www.gamespot.com/articles/physical-gta-6-copies-might-be-vulnerable-to-a-very-stupid-but-serious-trick/"
+        "https://sinbin.vegas/golden-knights-stock-up-stock-down-through-20-games/",
+        "https://vegashockeyknight.com/how-far-can-the-goaltending-take-the-vegas-golden-knights",
+        "https://www.reviewjournal.com/sports/goldenknights/as-golden-knights-search-for-offense-goalies-have-stepped-up-3910952/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSor697ZJnvltIgLWO_B1yrRS_dBv0fbWTXSgDilrH5Z5pU5HxCWi3a6rGT7v4",
-      "image_credit": "Push Square",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQunwa64Ppy-qBKbV0qYUx7a4OdUhjgvxDT-j6EAujnsUqArUFcSLMpoU3LN3s",
+      "image_credit": "SinBin.vegas",
       "news": [
         {
-          "url": "https://www.pushsquare.com/news/2026/11/gta-6-ps5-codes-potentially-being-stolen-from-physical-copies-using-flashlight-trick",
-          "title": "GTA 6 PS5 Codes Potentially Being Stolen from Physical Copies Using Flashlight Trick",
-          "publisher": "Push Square",
+          "url": "https://sinbin.vegas/golden-knights-stock-up-stock-down-through-20-games/",
+          "title": "Golden Knights Stock Up, Stock Down: Through 20 Games",
+          "publisher": "SinBin.vegas",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSor697ZJnvltIgLWO_B1yrRS_dBv0fbWTXSgDilrH5Z5pU5HxCWi3a6rGT7v4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQunwa64Ppy-qBKbV0qYUx7a4OdUhjgvxDT-j6EAujnsUqArUFcSLMpoU3LN3s"
         },
         {
-          "url": "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
-          "title": "GTA VI Map Leaks As Collector’s Box Sold Early",
-          "publisher": "RockstarINTEL",
+          "url": "https://vegashockeyknight.com/how-far-can-the-goaltending-take-the-vegas-golden-knights",
+          "title": "How far can the goaltending take the Vegas Golden Knights?",
+          "publisher": "Vegas Hockey Knight",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTioyQhFTGwPyMJY0OyQ64VTJKdVzHd-tP11S11q5BpbESCVyJn2h2-LOOh0C0"
         },
         {
-          "url": "https://www.gamespot.com/articles/physical-gta-6-copies-might-be-vulnerable-to-a-very-stupid-but-serious-trick/",
-          "title": "\"Physical\" GTA 6 Copies Might Be Vulnerable To A Very Stupid But Serious Trick",
-          "publisher": "GameSpot",
+          "url": "https://www.reviewjournal.com/sports/goldenknights/as-golden-knights-search-for-offense-goalies-have-stepped-up-3910952/",
+          "title": "As Golden Knights search for offense, goalies have stepped up",
+          "publisher": "Las Vegas Review-Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPwNvx3O69qILZdsW840xdVb0iR9dsqEzRChsighAz43h-bOUyCca4YT-OA18"
-        }
-      ]
-    },
-    {
-      "query": "kasparas jakučionis",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T03:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kasparas-jakucionis-scores-career-high-25-in-loss",
-        "https://www.rotowire.com/basketball/headlines/jock-landale-injury-wont-go-sunday-539323",
-        "https://www.cbssports.com/fantasy/basketball/news/hawks-jock-landale-downgraded-to-questionable-sunday/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4YdUtiPF5qKr_gQCw0_JIhF40a-Jxuiy4L7-_nCvlbrqWuDPuiqsN-qvdzVM",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kasparas-jakucionis-scores-career-high-25-in-loss",
-          "title": "Kasparas Jakučionis scores career-high 25 in loss",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4YdUtiPF5qKr_gQCw0_JIhF40a-Jxuiy4L7-_nCvlbrqWuDPuiqsN-qvdzVM"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/jock-landale-injury-wont-go-sunday-539323",
-          "title": "Jock Landale Injury: Won't go Sunday",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbIdmKaOEBLnX7gQlnIj4pvGKxA1Si4Obi9K_pNsnWQRh5ezlF4RfghOvAjk8"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/hawks-jock-landale-downgraded-to-questionable-sunday/",
-          "title": "Hawks' Jock Landale: Downgraded to questionable Sunday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIk1AKzw5Ruvo5_uSI8aSkWblGoY2Jgmc2zcKgmsJMPU4poXQ2i6y2aUUGmjk"
-        }
-      ]
-    },
-    {
-      "query": "tyler herro",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T03:10:00Z",
-      "related_news_urls": [
-        "https://www.sun-sentinel.com/2026/11/14/winderman-often-overshadowed-with-heat-and-to-be-again-herro-deserves-embrace-upon-return/",
-        "https://sports.yahoo.com/articles/tyler-herro-returns-miami-night-171100292.html",
-        "https://sports.yahoo.com/articles/ira-winderman-often-overshadowed-heat-103000792.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXGcVwtOGjNg3dzFp1rJXTcfK9huhGSV2bKtGRhfvz3KEkmkBpdcbxms7X8vI",
-      "image_credit": "Sun Sentinel",
-      "news": [
-        {
-          "url": "https://www.sun-sentinel.com/2026/11/14/winderman-often-overshadowed-with-heat-and-to-be-again-herro-deserves-embrace-upon-return/",
-          "title": "Winderman: Often overshadowed with Heat (and to be again), Herro deserves embrace upon return",
-          "publisher": "Sun Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXGcVwtOGjNg3dzFp1rJXTcfK9huhGSV2bKtGRhfvz3KEkmkBpdcbxms7X8vI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/tyler-herro-returns-miami-night-171100292.html",
-          "title": "Tyler Herro Returns To Miami For Night Of Recognition",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk87DU9Htb2FLP25NJZ-LGIA8Py0u4VR1LjcaTr69OKM_NVz3oTWL3xCqX-Y0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ira-winderman-often-overshadowed-heat-103000792.html",
-          "title": "Ira Winderman: Often overshadowed with Heat (and to be again), Herro deserves embrace upon return",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTu3thZhHpz6qbEEoFryYkLxxunK6kmXusweQWeKPQWpHrSWJ9JaxZMx6VEjok"
-        }
-      ]
-    },
-    {
-      "query": "golden knights",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T03:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/hockey/news/golden-knights-carter-hart-between-pipes-against-vancouver/",
-        "https://www.cbssports.com/fantasy/hockey/news/golden-knights-carter-hart-first-goalie-off-wednesday/",
-        "https://www.cbssports.com/fantasy/hockey/news/golden-knights-carter-hart-gets-little-work-wednesday/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcPGooAaShpdcyUb3pOhdThjQadoDBlGYOD78EaQQv6jSOb0I_PGDHUWgnbtA",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/hockey/news/golden-knights-carter-hart-between-pipes-against-vancouver/",
-          "title": "Golden Knights' Carter Hart: Between pipes against Vancouver",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcPGooAaShpdcyUb3pOhdThjQadoDBlGYOD78EaQQv6jSOb0I_PGDHUWgnbtA"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/hockey/news/golden-knights-carter-hart-first-goalie-off-wednesday/",
-          "title": "Golden Knights' Carter Hart: First goalie off Wednesday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtZMy_uspPzhLcvWJC5Cm2ubDEwcnSvgsUacibKG5adF1xXsvI6lxR4qvCSR0"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/hockey/news/golden-knights-carter-hart-gets-little-work-wednesday/",
-          "title": "Golden Knights' Carter Hart: Gets little work Wednesday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKa9CmF1FVRLUO9Mzrk09v-07N6Navpvvmp2a2z7ZYpviACoGdA0Kk_X1oEIk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAcWcI9JNn1nGsfPM8iCN0nXMwyaMFGOjFub_jFFI5b5XFmtKKdSkeJa6Iq4"
         }
       ]
     }
