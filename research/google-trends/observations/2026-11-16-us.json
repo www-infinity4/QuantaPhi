@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T14:43:37.184339Z",
+  "checked_at": "2026-11-16T15:01:41.219538Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "kazakhstan vs slovakia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T14:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmrlgr1yxjl6t",
+        "https://sportsbook.fanduel.com/soccer/uefa-nations-league-c/kazakhstan-v-slovakia-36319235",
+        "https://onefootball.com/en/betting/predictions/kazakhstan-vs-slovakia-16-11-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmrlgr1yxjl6t",
+          "title": "Kazakhstan vs Slovakia: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/soccer/uefa-nations-league-c/kazakhstan-v-slovakia-36319235",
+          "title": "Kazakhstan v Slovakia Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
+        },
+        {
+          "url": "https://onefootball.com/en/betting/predictions/kazakhstan-vs-slovakia-16-11-2026",
+          "title": "Kazakhstan vs Slovakia - Prediction, where to watch, kick-off time and line-ups 16-11-2026",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2XRGzYLjWgTQGloP_y1a6v72-zVV0rMsv8W03CwStKrsKm-PpFcb9lRlBqE"
+        }
+      ]
+    },
     {
       "query": "jaime ray newman",
       "approx_searches": "500+",
@@ -38,6 +73,41 @@
           "publisher": "UPI.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpTAp0sjafADrFwC2B4bYpck1nt0mFex05qxbxnUjqhoUYgxtnz6T_BGxlJiM"
+        }
+      ]
+    },
+    {
+      "query": "mark consuelos",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T14:30:00Z",
+      "related_news_urls": [
+        "https://www.fox13news.com/news/live-kelly-mark-morning-tapings-draw-crowds-clearwater-beach",
+        "https://www.tampabay.com/life-culture/arts/tv/2026/11/12/live-with-kelly-and-mark-deals-ripa-consuelos-florida/",
+        "https://www.yahoo.com/news/videos/live-kelly-mark-taping-clearwater-133902410.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-VXOy1J5lZnzEmI8PGfR1Hj0BrX9dSwErBtWFRl-7yxUmUeBU27JPWj4hrrI",
+      "image_credit": "FOX 13 Tampa Bay",
+      "news": [
+        {
+          "url": "https://www.fox13news.com/news/live-kelly-mark-morning-tapings-draw-crowds-clearwater-beach",
+          "title": "Live with Kelly and Mark: Morning tapings draw crowds to Clearwater Beach",
+          "publisher": "FOX 13 Tampa Bay",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-VXOy1J5lZnzEmI8PGfR1Hj0BrX9dSwErBtWFRl-7yxUmUeBU27JPWj4hrrI"
+        },
+        {
+          "url": "https://www.tampabay.com/life-culture/arts/tv/2026/11/12/live-with-kelly-and-mark-deals-ripa-consuelos-florida/",
+          "title": "What Kelly Ripa and Mark Consuelos look forward to visiting in Tampa Bay",
+          "publisher": "Tampa Bay Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFtK__gQi9LcHo7GicBYBDOp9k2w_SGt4_Uxk6ouq2smKJVyqmhDTXHcC4pfI"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/live-kelly-mark-taping-clearwater-133902410.html",
+          "title": "Live with Kelly and Mark taping in Clearwater",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv4I1fjpPOdB8nncs0qpGl001Xp_yzSpnQlklrpHQHsLpq8ehjZX_2xiPvwo4"
         }
       ]
     },
@@ -77,41 +147,6 @@
       ]
     },
     {
-      "query": "nvidia earnings date",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T14:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html",
-        "https://www.ft.com/content/3ccb1761-a0cd-43ba-a3e7-e19d00950ae3?syn-25a6b1a6=1",
-        "https://finance.yahoo.com/markets/stocks/articles/nvidia-reports-earnings-nov-17-175002703.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Af1V8v8OTpKiJnb_sYTnVroAdvj24gD8aJYgF5wEwEZm8Q1dTA-F0DjlZ8Y",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html",
-          "title": "Nvidia's Colette Kress confronts key questions in first earnings report since Jensen Huang’s exit",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Af1V8v8OTpKiJnb_sYTnVroAdvj24gD8aJYgF5wEwEZm8Q1dTA-F0DjlZ8Y"
-        },
-        {
-          "url": "https://www.ft.com/content/3ccb1761-a0cd-43ba-a3e7-e19d00950ae3?syn-25a6b1a6=1",
-          "title": "Will Nvidia earnings steady the AI sell-off?",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDXr-lvPUtycloHGgaYk6_CDYvDrWzldXk4NkKjt2ugn_BPoSyIK--O1QN4-o"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-reports-earnings-nov-17-175002703.html",
-          "title": "Nvidia Reports Earnings on Nov. 17. Here's What Investors Should Be Watching.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHssiinHYi4eicl53feFIqF4VVTPA1hxd1e09ma5Yj3FLso_KdDIap4XHYxgU"
-        }
-      ]
-    },
-    {
       "query": "usa today ncaa football re-rank",
       "approx_searches": "500+",
       "published_at": "2026-11-16T14:20:00Z",
@@ -142,7 +177,7 @@
           "title": "2026-27US LBM Coaches Poll",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK43PL-9K1EYz_MKT2jFgsBMvaSGy9rvAUMo8xhn63P_d9rAuUFuCHMCMJhxI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh7kqDi5o8EKt1zDCcULpYl6gdRJjvDsB7OyExX3VChQkrPOqjvDVP7t6lxLs"
         }
       ]
     },
@@ -151,19 +186,19 @@
       "approx_searches": "500+",
       "published_at": "2026-11-16T14:20:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/pidgin/articles/cm205w1rerqvo",
+        "https://www.bbc.com/sport/football/live/cr62p3jyq2ewt",
         "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/Ben-Asare-Benched-for-Ati-Zigi-to-Start-Likely-Black-Stars-XI-against-Somalia-2061480",
-        "https://www.cafonline.com/afcon2025/news/kyereh-back-after-four-years-kudus-and-jordan-ayew-return-as-ghana-seek-afcon-revival-against-somalia/"
+        "https://en.africatopsports.com/2027-afcon-q-somalia-captain-abdullahi-abdulsamed-emphasises-hard-work-ahead-of-ghana-clash/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYKmrKwWHZAPd81Z6cUXj1oQw08O7smhtYbbl4vBzz5IsxM5QKjxqymtg_xYg",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPOEK0kwGj3R8FmqWDRcTCeti13oBUsXlnlPjH7cZ3H2K9o1xEqwGED9oJHKk",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/pidgin/articles/cm205w1rerqvo",
-          "title": "Ghana vs Somalia 2027 Afcon qualifiers preview: Jordan Ayew lead Black Stars attack against Ocean stars",
+          "url": "https://www.bbc.com/sport/football/live/cr62p3jyq2ewt",
+          "title": "Somalia vs Ghana: Africa Cup of Nations Qualification stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYKmrKwWHZAPd81Z6cUXj1oQw08O7smhtYbbl4vBzz5IsxM5QKjxqymtg_xYg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPOEK0kwGj3R8FmqWDRcTCeti13oBUsXlnlPjH7cZ3H2K9o1xEqwGED9oJHKk"
         },
         {
           "url": "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/Ben-Asare-Benched-for-Ati-Zigi-to-Start-Likely-Black-Stars-XI-against-Somalia-2061480",
@@ -173,17 +208,17 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRepcDxbywf7DWdZy3IXFoNAyUZJbikY_Y_m4N4K87QNsaLCbz7J02ANiYqHro"
         },
         {
-          "url": "https://www.cafonline.com/afcon2025/news/kyereh-back-after-four-years-kudus-and-jordan-ayew-return-as-ghana-seek-afcon-revival-against-somalia/",
-          "title": "Kyereh back after four years, Kudus and Jordan Ayew return as Ghana seek AFCON revival against Somalia",
-          "publisher": "CAFOnline.com",
+          "url": "https://en.africatopsports.com/2027-afcon-q-somalia-captain-abdullahi-abdulsamed-emphasises-hard-work-ahead-of-ghana-clash/",
+          "title": "2027 AFCON Q: Somalia Captain Abdullahi AbdulSamed Emphasises Hard Work Ahead of Ghana Clash",
+          "publisher": "Africa Top Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY7SYVbB-Pg963ycNGSTI3izoZwKOqow-FZnRgURQpFifO05-7mT09YDd8VRg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtn9ICyQ1dsxOKNgLqSOYyGvOk-4rJazCoocOWpzCriB29IxDk9_eaXlMCM_w"
         }
       ]
     },
     {
       "query": "jatavis sanders",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-16T14:20:00Z",
       "related_news_urls": [
         "https://www.al.com/alabamafootball/2026/11/nc-state-philip-rivers-hire-alabama-staffer-as-next-general-manager.html",
@@ -195,7 +230,7 @@
       "news": [
         {
           "url": "https://www.al.com/alabamafootball/2026/11/nc-state-philip-rivers-hire-alabama-staffer-as-next-general-manager.html",
-          "title": "NC State, Philip Rivers hire Alabama staffer as next general manager",
+          "title": "NC State, Philip Rivers hire next general manager from Alabama front office",
           "publisher": "AL.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStsQ-RZed8rCZZOpHXQSxGNZuya1y4ySvKuCwPwJ7S_Yu1mafmBcffybMmsLI"
@@ -318,41 +353,6 @@
           "publisher": "GQ",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlK9IzW53paXdeuWBQcbCyCNJrqmjhuA4fh3_bqkSHC2AfgiAmt4lh6q2kI20"
-        }
-      ]
-    },
-    {
-      "query": "pga tour",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T13:50:00Z",
-      "related_news_urls": [
-        "https://www.pgatour.com/article/news/latest/2026/11/15/meet-the-10-who-earned-2027-pga-tour-cards-via-dp-world-tour-race-to-dubai-patrick-reed-eugenio-chacarra",
-        "https://www.golfchannel.com/dp-world-tour/news/meet-the-10-dp-world-tour-grads-including-eugenio-chacarra-patrick-reed-and-a-former-grocery-deliveryman",
-        "https://golfweek.usatoday.com/story/sports/golf/pga/2026/11/15/patrick-reed-earns-his-way-back-to-pga-tour-after-leaving-liv-golf/92797440007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCDivRbbf76ZGg4aUejzsTLJXldwJfg612d3HVRWYbY14_gpwfhCYR7UEEqxk",
-      "image_credit": "PGA Tour",
-      "news": [
-        {
-          "url": "https://www.pgatour.com/article/news/latest/2026/11/15/meet-the-10-who-earned-2027-pga-tour-cards-via-dp-world-tour-race-to-dubai-patrick-reed-eugenio-chacarra",
-          "title": "Meet the 10 players who earned 2027 PGA Tour cards through Race to Dubai",
-          "publisher": "PGA Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCDivRbbf76ZGg4aUejzsTLJXldwJfg612d3HVRWYbY14_gpwfhCYR7UEEqxk"
-        },
-        {
-          "url": "https://www.golfchannel.com/dp-world-tour/news/meet-the-10-dp-world-tour-grads-including-eugenio-chacarra-patrick-reed-and-a-former-grocery-deliveryman",
-          "title": "Meet the 10 DP World Tour grads, including Eugenio Chacarra, Patrick Reed and a former grocery deliveryman",
-          "publisher": "Golf Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkqkiwzzg2uazc8Fr2Ybb50s_9nWcBSjYIbltQOAx5ZA7fOneFtiTozxVRiLY"
-        },
-        {
-          "url": "https://golfweek.usatoday.com/story/sports/golf/pga/2026/11/15/patrick-reed-earns-his-way-back-to-pga-tour-after-leaving-liv-golf/92797440007/",
-          "title": "Patrick Reed earns PGA Tour card for 2027 four years after leaving for LIV Golf",
-          "publisher": "Golfweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk4H4cVL1odpjmdWkQ8j6j708CKYwS9Ov7eRsex_egE1X7hPGaA9afwVluhx8"
         }
       ]
     }
