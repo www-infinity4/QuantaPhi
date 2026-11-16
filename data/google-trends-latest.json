@@ -3,12 +3,327 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T01:03:40.358505Z",
+  "checked_at": "2026-11-16T01:31:36.856624Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "anthony davis",
+      "query": "predators vs sharks",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T01:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-san-jose-sharks-prediction-odds-2026-11-15/",
+        "https://www.ontheforecheck.com/game-day-thread-nashville-predators-at-san-jose-sharks/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026",
+          "title": "Predators at Sharks projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-san-jose-sharks-prediction-odds-2026-11-15/",
+          "title": "Nashville Predators vs San Jose Sharks Prediction, Picks & Odds | 15 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtMH1BxMYRoXFtf2405fLUZKSNq8_9HaBteLEBHwWqGbniETDbM1ULN7yhxc8"
+        },
+        {
+          "url": "https://www.ontheforecheck.com/game-day-thread-nashville-predators-at-san-jose-sharks/",
+          "title": "Game Day Thread – Nashville Predators at San Jose Sharks",
+          "publisher": "On the Forecheck",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIxDJmc4LnmTuC4s4yAZbmXeFbFU5E9ZHYwZAzIcnfPaOVkjsopI1AHXZpHw"
+        }
+      ]
+    },
+    {
+      "query": "canucks vs golden knights",
       "approx_searches": "1000+",
+      "published_at": "2026-11-16T01:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/lineup-notes-canucks-switch-lines-193027802.html",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/vancouver-canucks-vs-vegas-golden-knights-prediction-odds-2026-11-15/",
+        "https://canucksarmy.com/news/scenes-morning-skate-lekkerimaki-boeser-swap-lines-vancouver-canucks-start-road-trip-vegas-golden-knights"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyO_gxy9oeyKau56Kn5RZP57UzLExyutkL_9HS5aqUeh2pWSPBp36SrNT48zw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/lineup-notes-canucks-switch-lines-193027802.html",
+          "title": "Lineup Notes: Canucks Switch Up Lines Ahead Of Matchup With The Golden Knights",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyO_gxy9oeyKau56Kn5RZP57UzLExyutkL_9HS5aqUeh2pWSPBp36SrNT48zw"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/vancouver-canucks-vs-vegas-golden-knights-prediction-odds-2026-11-15/",
+          "title": "Vancouver Canucks vs Vegas Golden Knights Prediction, Picks & Odds | 15 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-FBPGZ88o6XTp9enIAsrsutM5E4b9zaN__44xn8Omej7KzF0UXS7yES7NwbA"
+        },
+        {
+          "url": "https://canucksarmy.com/news/scenes-morning-skate-lekkerimaki-boeser-swap-lines-vancouver-canucks-start-road-trip-vegas-golden-knights",
+          "title": "Scenes from morning skate: Lekkerimäki and Boeser swap lines as Canucks start road trip vs. Golden Knights",
+          "publisher": "Canucks Army",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO_5LItl4xHJ_CChWNQPbVaPGbU6TU6Pz5qmVijIAdVuQjy1LqDwsx5V003Qc"
+        }
+      ]
+    },
+    {
+      "query": "amen thompson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T01:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50434799/stephen-curry-kevin-durant-warriors-rockets",
+        "https://warriors.com/news/gameday-preview-20261111",
+        "https://www.goldenstateofmind.com/warriors-injury-report/24480999/warriors-rockets-injury-report-will-richard-brandon-williams"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJwNi8tZSGj9wNnhTFGl1iDcvwGeE6izioGgFEAU41ajl2MShfsQoOZ2jw2CA",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50434799/stephen-curry-kevin-durant-warriors-rockets",
+          "title": "The historic (and absurd) longevity of Steph Curry and Kevin Durant",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJwNi8tZSGj9wNnhTFGl1iDcvwGeE6izioGgFEAU41ajl2MShfsQoOZ2jw2CA"
+        },
+        {
+          "url": "https://warriors.com/news/gameday-preview-20261111",
+          "title": "Game Preview: Warriors at Rockets - 11/11/26",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPIfeu_oVFnu4G2YGalf-KM2IqfARW2H1Dh-hOFmU3LQKBdFQh18fvkmPH_Pc"
+        },
+        {
+          "url": "https://www.goldenstateofmind.com/warriors-injury-report/24480999/warriors-rockets-injury-report-will-richard-brandon-williams",
+          "title": "Warriors vs. Rockets injury report: Will Richard upgraded to probable",
+          "publisher": "Golden State Of Mind",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLEmocS1fSuMyzCVkBftU8AKrLeSQ9lGkE_SaPTpobGxXAmbJHetaZ_1HH3cg"
+        }
+      ]
+    },
+    {
+      "query": "knicks vs toronto raptors match player stats",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T01:10:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/game/sas-vs-uta-0022600239/box-score",
+        "https://www.startribune.com/minnesota-timberwolves-chicago-bulls-lamelo-ball-stats-anthony-edwards-injury-update-wolves-roster/601914485",
+        "https://dunkingwithwolves.com/4-timberwolves-players-who-are-stepping-up-the-most-without-anthony-edwards"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRp4BMfO9DzxGg3fPHDrxCnyEu2KpZbgG_iRR6Xv1G0HcBa6JlS1MQbAa7FPp4",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/game/sas-vs-uta-0022600239/box-score",
+          "title": "San Antonio Spurs vs Utah Jazz Nov 15, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRp4BMfO9DzxGg3fPHDrxCnyEu2KpZbgG_iRR6Xv1G0HcBa6JlS1MQbAa7FPp4"
+        },
+        {
+          "url": "https://www.startribune.com/minnesota-timberwolves-chicago-bulls-lamelo-ball-stats-anthony-edwards-injury-update-wolves-roster/601914485",
+          "title": "Wolves are winning without Anthony Edwards — and aren’t changing their identity",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbaQnIzY6yWIYjocwDn6tytcLVqOeTAHcedyTK7VNH0fSpUpSe59c-493d_Ww"
+        },
+        {
+          "url": "https://dunkingwithwolves.com/4-timberwolves-players-who-are-stepping-up-the-most-without-anthony-edwards",
+          "title": "4 Timberwolves players who are stepping up the most without Anthony Edwards",
+          "publisher": "Dunking with Wolves",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjAtAdfRl15rsBx1DH2GuntiCbwcnK8myIWU3Z0hReL1KGaiQqOoBcuXuOSqQ"
+        }
+      ]
+    },
+    {
+      "query": "thunder vs kings",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T01:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/thunder-vs-kings-live-updates-010033570.html",
+        "https://www.sportsgambler.com/betting-tips/basketball/oklahoma-city-thunder-vs-sacramento-kings-prediction-odds-6019797/",
+        "https://kingsherald.com/articles/kings-vs-thunder-winless-at-home-gracious-as-ever-hoping-to-dust-off-the-beam/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE16e0LbG4vQW7smOSak0G5RqPxDFLyrmQJYx5r2d_KjdJQTHb8Dg_j0O_pf4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/thunder-vs-kings-live-updates-010033570.html",
+          "title": "Thunder vs. Kings: Live updates, highlights for Sunday's game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE16e0LbG4vQW7smOSak0G5RqPxDFLyrmQJYx5r2d_KjdJQTHb8Dg_j0O_pf4"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/oklahoma-city-thunder-vs-sacramento-kings-prediction-odds-6019797/",
+          "title": "Oklahoma City Thunder vs Sacramento Kings Prediction, Picks & Odds | NBA Sunday",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHWdYI7MSRQXi0Lfm1_OpXdpl7D47EjQV3nIFeQQXB73mGYlBjsuDT7OtZppY"
+        },
+        {
+          "url": "https://kingsherald.com/articles/kings-vs-thunder-winless-at-home-gracious-as-ever-hoping-to-dust-off-the-beam/",
+          "title": "Kings vs. Thunder: Winless at Home, Gracious as Ever, Hoping to Dust Off the Beam",
+          "publisher": "The Kings Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0VfxLXUEqgwqtptxkmhdI7A4Vz-8jwPgGuW8pv4Xwq3TQAxRqExAKTWgP1G8"
+        }
+      ]
+    },
+    {
+      "query": "coastal carolina vs wisconsin",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T01:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/wisconsin-badgers-vs-coastal-carolina-005410094.html",
+        "https://www.sportsgambler.com/betting-tips/basketball/coastal-carolina-chanticleers-vs-wisconsin-badgers-prediction-odds-2026-11-15/",
+        "https://www.jsonline.com/story/sports/college/uw/2026/11/15/wisconsin-badgers-basketball-vs-coastal-carolina-score-live-game-updates-highlights-channel-recap--live/92768652007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqvY1aQ5BliE9I73LiZ2CiHRsTu4iR4OU4ObKv1y9mKAhbt59VDurNbD6NnCk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/wisconsin-badgers-vs-coastal-carolina-005410094.html",
+          "title": "Wisconsin Badgers vs. Coastal Carolina Chanticleers Game Thread: Time to continue the early momentum",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqvY1aQ5BliE9I73LiZ2CiHRsTu4iR4OU4ObKv1y9mKAhbt59VDurNbD6NnCk"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/coastal-carolina-chanticleers-vs-wisconsin-badgers-prediction-odds-2026-11-15/",
+          "title": "Coastal Carolina vs Wisconsin Prediction, Picks & Odds | 15 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuX7d07eLzkMq7BLOmlSi1AMJz9fh4Kdo5o3Yt3AwQy9ngTpW_Jxf0_v0yVQg"
+        },
+        {
+          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/15/wisconsin-badgers-basketball-vs-coastal-carolina-score-live-game-updates-highlights-channel-recap--live/92768652007/",
+          "title": "Wisconsin basketball vs Coastal Carolina score, live updates, highlights",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPck43c5c2ms0afWf6hC7BC4H_t3NUW1ds2Aw555MzEmK372F9X9dcZtZg4wE"
+        }
+      ]
+    },
+    {
+      "query": "jamal shead",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T01:00:00Z",
+      "related_news_urls": [
+        "https://www.thestar.com/sports/doug-smiths-sports-blog/raptors-mailbag-can-this-to-be-a-contender-with-immanuel-quickley-starting/article_04a241bd-8072-4835-ae32-0e0248adf6dc.html",
+        "https://raptorsrapture.com/raptors-are-overlooking-the-best-roles-for-immanuel-quickley-and-jamal-shead",
+        "https://www.si.com/nba/raptors/onsi/why-immanuel-quickley-should-remain-as-raptors-starting-point-guard-and-why-he-shouldnt"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRO2HWDXBtCQMSwCLm0yA8hPbpeBZKZ9uLWFX2mBViOad25rcM7OAPTaMbbcw",
+      "image_credit": "Toronto Star",
+      "news": [
+        {
+          "url": "https://www.thestar.com/sports/doug-smiths-sports-blog/raptors-mailbag-can-this-to-be-a-contender-with-immanuel-quickley-starting/article_04a241bd-8072-4835-ae32-0e0248adf6dc.html",
+          "title": "Doug Smith: Raptors mailbag: Can this team be a contender with Immanuel Quickley starting?",
+          "publisher": "Toronto Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRO2HWDXBtCQMSwCLm0yA8hPbpeBZKZ9uLWFX2mBViOad25rcM7OAPTaMbbcw"
+        },
+        {
+          "url": "https://raptorsrapture.com/raptors-are-overlooking-the-best-roles-for-immanuel-quickley-and-jamal-shead",
+          "title": "Raptors are overlooking the best roles for Immanuel Quickley and Jamal Shead",
+          "publisher": "Raptors Rapture",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW7Jz_CYX25wtgf3zBLtpaHciAJxN88kCsvweXuT7mCsVj5J6yU69Y2tlyLnI"
+        },
+        {
+          "url": "https://www.si.com/nba/raptors/onsi/why-immanuel-quickley-should-remain-as-raptors-starting-point-guard-and-why-he-shouldnt",
+          "title": "Why Immanuel Quickley Should Remain Raptors Starting PG (And Why He Shouldn't)",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvraKBeOfZkf6SaJvaoflRuopC-j5iyiYpEjks1G30LHHBvHAcC9oOyFVu11s"
+        }
+      ]
+    },
+    {
+      "query": "dutton ranch season 2",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T01:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/dutton-ranch-season-2-release-143000640.html",
+        "https://thedirect.com/article/dutton-ranch-season-2-paramount-plus-release-taylor-sheridan-series",
+        "https://decider.com/2026/11/08/dutton-ranch-season-2-release-date-info-when-does-second-season-dutton-ranch-come-out/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTzMVSly7qcAeixfhvD2RcybNbdmaWVZAFAdvooWADyZy_KH0b1DywwLqKbT8",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/dutton-ranch-season-2-release-143000640.html",
+          "title": "‘Dutton Ranch’ Season 2 Release Date Info: When Does ‘Dutton Ranch’ Return?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTzMVSly7qcAeixfhvD2RcybNbdmaWVZAFAdvooWADyZy_KH0b1DywwLqKbT8"
+        },
+        {
+          "url": "https://thedirect.com/article/dutton-ranch-season-2-paramount-plus-release-taylor-sheridan-series",
+          "title": "Report: Dutton Ranch Season 2 Is No Longer Expected To Release On Paramount+ Until After Taylor Sheridan's 2 Ongoing Series & Upcoming Season Premiere",
+          "publisher": "The Direct",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWxRpMpqu2qO6hr0eQ8tuyWbVtNSNsycFjv38KZ3ih515P8xUQCDIPwBHmfEw"
+        },
+        {
+          "url": "https://decider.com/2026/11/08/dutton-ranch-season-2-release-date-info-when-does-second-season-dutton-ranch-come-out/",
+          "title": "When does the second season of ‘Dutton Ranch’ come out? ‘Dutton Ranch’ Season 2 release date info",
+          "publisher": "Decider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmagId99bs1YpVtOSUkAuHXRXvqHkfVvxBuNdVhBBfGZT7zHdHSs0fei3z9bg"
+        }
+      ]
+    },
+    {
+      "query": "chargers vs ravens",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T01:00:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/baltimore/news/ravens-chargers-moves-onto-list-of-monday-night-matchups-that-lost-their-luster/",
+        "https://www.baltimoresun.com/2026/11/15/ravens-chargers-scouting-report-monday-night-football/",
+        "https://www.rotoballer.com/mnf-start-sit-chart-week-10-fantasy-football-matchups-for-monday-night-football-2026/1992010"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYZkonXzMuo3QFK0tSrZg2_X43mxVz7enQlew-r_AOe8-waKqSK7NCNoCU094",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/baltimore/news/ravens-chargers-moves-onto-list-of-monday-night-matchups-that-lost-their-luster/",
+          "title": "Ravens-Chargers moves onto list of Monday night matchups that lost their luster",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYZkonXzMuo3QFK0tSrZg2_X43mxVz7enQlew-r_AOe8-waKqSK7NCNoCU094"
+        },
+        {
+          "url": "https://www.baltimoresun.com/2026/11/15/ravens-chargers-scouting-report-monday-night-football/",
+          "title": "Ravens vs. Chargers scouting report: A chance to ‘reset’ vs. winless LA",
+          "publisher": "Baltimore Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx3T-yZxeHb6dfcpElcNGNNr2as_suuLqEEMOoL_43cXYSTiZUkna3ciPy1Oc"
+        },
+        {
+          "url": "https://www.rotoballer.com/mnf-start-sit-chart-week-10-fantasy-football-matchups-for-monday-night-football-2026/1992010",
+          "title": "MNF Start/Sit Chart - Week 10 Fantasy Football Matchups for Monday Night Football (2026)",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPzwGqp4H965-rx-IW6OhIIs54kbDkd1iSWWGnrs0JJtjs_mKdufFjiZfY2uw"
+        }
+      ]
+    },
+    {
+      "query": "anthony davis",
+      "approx_searches": "2000+",
       "published_at": "2026-11-16T00:50:00Z",
       "related_news_urls": [
         "https://www.on3.com/teams/kentucky-wildcats/news/bbnba-anthony-davis-is-finally-healthy-and-playing-like-it/",
@@ -38,321 +353,6 @@
           "publisher": "NBC Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4VMvS9Fhc9ge8snCl8XISCL7Cc9pHa55qStDkbG_wvw5BfS2IQNr1Wl6NpG8"
-        }
-      ]
-    },
-    {
-      "query": "jack nicklaus",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T00:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/2025-50-million-defamation-verdict-152211772.html",
-        "https://www.espn.com/espn/story/_/id/50462145/long-sports-broadcaster-dan-hicks-dies-age-64",
-        "https://sports.yahoo.com/college-football/article/nbc-pays-tribute-to-dan-hicks-before-coverage-of-notre-dame-vs-boston-college-broadcast-211537903.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2457ZSfd0E0pZqztDGJE9nF3r3hRpFKLYMNcWTdGbJuAXoEB_hSfUnX_iIvQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/2025-50-million-defamation-verdict-152211772.html",
-          "title": "In 2025, After $50 Million Defamation Verdict, Jack Nicklaus Buys Back His Namesake Company",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2457ZSfd0E0pZqztDGJE9nF3r3hRpFKLYMNcWTdGbJuAXoEB_hSfUnX_iIvQ"
-        },
-        {
-          "url": "https://www.espn.com/espn/story/_/id/50462145/long-sports-broadcaster-dan-hicks-dies-age-64",
-          "title": "Longtime sports broadcaster Dan Hicks dies at age 64",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwynxcghs9KJEsH4jeZWKAVrkbzWT18aOjNwB4ShSPCgN_QnQlAHdxQLVm7eo"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/article/nbc-pays-tribute-to-dan-hicks-before-coverage-of-notre-dame-vs-boston-college-broadcast-211537903.html",
-          "title": "NBC pays tribute to Dan Hicks before coverage of Notre Dame vs. Boston College broadcast",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZCdZn-fw9r9zSp0fwKk5iua24Z3FvfBK4iU-cCoS5LmiUrgFZr_grVTQo5kA"
-        }
-      ]
-    },
-    {
-      "query": "west coast high surf warning",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T00:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/14/weather/california-coast-waves-high-surf.html",
-        "https://ktla.com/news/california/video-shows-towering-waves-slamming-california-piers-as-dangerous-surf-threatens-flooding/",
-        "https://www.sfgate.com/bayarea/article/massive-surf-bay-area-22527180.php"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW4iotnab51IKnQV_SJnLnrxTu5Z04SSa4aOyFppnYbbDSsCVE2sNkjGwOS5U",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/14/weather/california-coast-waves-high-surf.html",
-          "title": "The Surf’s Way, Way Up as Huge Waves Pound the California Coast",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW4iotnab51IKnQV_SJnLnrxTu5Z04SSa4aOyFppnYbbDSsCVE2sNkjGwOS5U"
-        },
-        {
-          "url": "https://ktla.com/news/california/video-shows-towering-waves-slamming-california-piers-as-dangerous-surf-threatens-flooding/",
-          "title": "Video shows towering waves slamming California piers as dangerous surf threatens flooding",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSnETOJQuQgOK1-my2FL3a1FFZnCkFsO32eSX-mIBLzjnzseqzxnrH9TNeT5A"
-        },
-        {
-          "url": "https://www.sfgate.com/bayarea/article/massive-surf-bay-area-22527180.php",
-          "title": "'DO NOT GO TO THE BEACH': Weather service warns Bay Area waves could top 60 feet",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQJAbb6uSogcd1gxnS6BdqIebJN8k75deGdgLSSHHJnIWPXIwLSv0Gura9yUc"
-        }
-      ]
-    },
-    {
-      "query": "cincinnati weather",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T00:50:00Z",
-      "related_news_urls": [
-        "https://www.wlwt.com/article/wlwt-weather-chat-bot-personalized-forecasts-cincinnati/74400809",
-        "https://www.wjhl.com/wjhl-weather/forecast/gradual-warming-trend-throughout-next-several-days/",
-        "https://www.wcvb.com/article/video-chilly-weekend-gives-way-to-a-warmer-week-1794627028/74429071"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQHTHlCNcEXWR1CPyqBUXosnwyZw2RWW1CsCzuLhECRsMTbX4W1buhexkAAIs",
-      "image_credit": "WLWT",
-      "news": [
-        {
-          "url": "https://www.wlwt.com/article/wlwt-weather-chat-bot-personalized-forecasts-cincinnati/74400809",
-          "title": "WLWT Weather Chat provides personalized forecasts for Cincinnati",
-          "publisher": "WLWT",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQHTHlCNcEXWR1CPyqBUXosnwyZw2RWW1CsCzuLhECRsMTbX4W1buhexkAAIs"
-        },
-        {
-          "url": "https://www.wjhl.com/wjhl-weather/forecast/gradual-warming-trend-throughout-next-several-days/",
-          "title": "Gradual warming trend throughout next several days",
-          "publisher": "WJHL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNV-ktr3DIVYkccXugKyEW5AjqBfowim1uzkEQ6Xq0AH_UamTu6aFPopv3oDk"
-        },
-        {
-          "url": "https://www.wcvb.com/article/video-chilly-weekend-gives-way-to-a-warmer-week-1794627028/74429071",
-          "title": "Video: Chilly weekend gives way to a warmer week",
-          "publisher": "WCVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEz04ccm53ctM0hoGpgd8DslrrjVX6wzA4PNNs_QZTa7sPPz-cbNeASmOX5WI"
-        }
-      ]
-    },
-    {
-      "query": "ferris state football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T00:50:00Z",
-      "related_news_urls": [
-        "https://www.ncaa.com/news/football/article/2026-11-14/ferris-state-breaks-ncaa-dii-football-record-41st-consecutive-win",
-        "https://www.mlive.com/sports/2026/11/ferris-state-football-routs-roosevelt-to-set-d2-all-time-winning-streak-record.html",
-        "https://www.ferris.edu/news/archive/2026/ferris-state-football-looks-to-set-ncaa-dii-consecutive-wins-record-this-weekend.htm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpds3Z3NjfPJHyKLaGfcQJWCvqd4pPH03VAuh-6z_AbLMXHVXEK-sAXD5-peQ",
-      "image_credit": "NCAA.com",
-      "news": [
-        {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-14/ferris-state-breaks-ncaa-dii-football-record-41st-consecutive-win",
-          "title": "Ferris State breaks NCAA DII football record with 41st consecutive win",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpds3Z3NjfPJHyKLaGfcQJWCvqd4pPH03VAuh-6z_AbLMXHVXEK-sAXD5-peQ"
-        },
-        {
-          "url": "https://www.mlive.com/sports/2026/11/ferris-state-football-routs-roosevelt-to-set-d2-all-time-winning-streak-record.html",
-          "title": "Ferris State football routs Roosevelt to set D2 all-time winning streak record",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoTSKX1UajJdP-cdEFPOqMTUvZ9v2i8ElvILxak2wdu83ugeMlR6C9LmXDQPs"
-        },
-        {
-          "url": "https://www.ferris.edu/news/archive/2026/ferris-state-football-looks-to-set-ncaa-dii-consecutive-wins-record-this-weekend.htm",
-          "title": "Top-ranked Ferris State football team looks to set NCAA DII consecutive win record with special celebrations",
-          "publisher": "Ferris State University",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_PqAP_kyvmmrqHHS_0Z6U3eeuuGn64OrgPPttP8C0O6Ac0i9F3lhIoXYio0"
-        }
-      ]
-    },
-    {
-      "query": "project helix console",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T00:50:00Z",
-      "related_news_urls": [
-        "https://www.windowscentral.com/gaming/xbox/microsoft-says-xbox-helix-is-a-console-not-a-pc-but-it-will-be-able-to-play-your-pc-games-helix-is-designed-to-be-a-console-that-can-also-play-games-from-your-pc",
-        "https://www.purexbox.com/news/2026/11/the-ultimate-gaming-machine-xbox-reveals-tons-of-new-project-helix-information",
-        "https://insider-gaming.com/xbox-project-helix-neural-rendering/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJnunCaQOwyeU6oEMcHj70UlWgVnY-x710Tvw6yToOeFwBLg4e9DKH5C7FOPk",
-      "image_credit": "Windows Central",
-      "news": [
-        {
-          "url": "https://www.windowscentral.com/gaming/xbox/microsoft-says-xbox-helix-is-a-console-not-a-pc-but-it-will-be-able-to-play-your-pc-games-helix-is-designed-to-be-a-console-that-can-also-play-games-from-your-pc",
-          "title": "Microsoft says Xbox Helix is a console, not a PC — but it will be able to play your PC games: \"It is not a PC that can also play console games\"",
-          "publisher": "Windows Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJnunCaQOwyeU6oEMcHj70UlWgVnY-x710Tvw6yToOeFwBLg4e9DKH5C7FOPk"
-        },
-        {
-          "url": "https://www.purexbox.com/news/2026/11/the-ultimate-gaming-machine-xbox-reveals-tons-of-new-project-helix-information",
-          "title": "'The Ultimate Gaming Machine' - Xbox Reveals Tons Of New Project Helix Information",
-          "publisher": "Pure Xbox",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8yEM_4EypmHJV5RGrxUtV9hDfjCkBAEoWOTjS2etXwfCNwUDEPTI8NPmuRxY"
-        },
-        {
-          "url": "https://insider-gaming.com/xbox-project-helix-neural-rendering/",
-          "title": "Neural Rendering Could Help XBOX Project Helix’s Affordability",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKHkLgBpoDsKJw30qhS5t878iBGs28-BaCZ9UwF7UKKf0lXJ0NygPoKFyGZ68"
-        }
-      ]
-    },
-    {
-      "query": "oil tanker",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T00:50:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
-        "https://www.telegraph.co.uk/world-news/2026/11/15/iran-attacks-us-military-base-in-bahrain/",
-        "https://www.motherjones.com/environment/2026/11/trump-iran-war-environment-effects-oil-spills-persian-gulf-wildlife-birds-fish-wildlife-threat/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d6xwXxq7ws_uzRD6DmvOPdxYVDFlVQeLdf4wutbUPZysumY3anxpqc6CG60",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
-          "title": "Iran's navy says three tankers on fire after hitting mines in Hormuz",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d6xwXxq7ws_uzRD6DmvOPdxYVDFlVQeLdf4wutbUPZysumY3anxpqc6CG60"
-        },
-        {
-          "url": "https://www.telegraph.co.uk/world-news/2026/11/15/iran-attacks-us-military-base-in-bahrain/",
-          "title": "Oil supertanker ‘sinks after hitting mine’ in Strait of Hormuz",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbt8rax3MISsIqf48kb8hMNgPMBaMoz1XwkE4zJ-BibD_URowByNifMoDm37A"
-        },
-        {
-          "url": "https://www.motherjones.com/environment/2026/11/trump-iran-war-environment-effects-oil-spills-persian-gulf-wildlife-birds-fish-wildlife-threat/",
-          "title": "Trump’s War Poses a “Generational Threat” to Wildlife in the Persian Gulf",
-          "publisher": "Mother Jones",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTg7PPgGDcQC6NZNW8Cshx7TPX6nz-zxSBXAIjIpWdfy2ftvVgSvZOTOFVMjlI"
-        }
-      ]
-    },
-    {
-      "query": "steelers schedule",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T00:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sunday-night-football-deshon-elliott-inactive-after-suffering-pregame-knee-injury",
-        "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622",
-        "https://www.post-gazette.com/sports/steelers/2026/11/14/steelers-bengals-derrick-harmon/stories/202611140063"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB4B2z2W7F0CwGVXFLZPXCnjHeDr2E0kovJ7cy2Yw2tuvh6rJf7yntYa--8UQ",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sunday-night-football-deshon-elliott-inactive-after-suffering-pregame-knee-injury",
-          "title": "Sunday Night Football: DeShon Elliott inactive after suffering pregame knee injury",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB4B2z2W7F0CwGVXFLZPXCnjHeDr2E0kovJ7cy2Yw2tuvh6rJf7yntYa--8UQ"
-        },
-        {
-          "url": "https://www.steelers.com/news/steelers-inactives-for-week-10-vs-bengals-x2622",
-          "title": "Steelers inactives for Week 10 vs. Bengals",
-          "publisher": "Steelers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpggy2FqQpMp-1h9QIn4lIBlCrT-W6jmEVH-y9IcOtVIDq7gLi1YMkFR8pYvI"
-        },
-        {
-          "url": "https://www.post-gazette.com/sports/steelers/2026/11/14/steelers-bengals-derrick-harmon/stories/202611140063",
-          "title": "Steelers defensive tackle Derrick Harmon is likely to play against the Bengals",
-          "publisher": "Pittsburgh Post-Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-eiH0kHvcM-GmPKN9hGzMdWUtF9oSTVAlzNh-Repo9Z9hup42J2djMtrsR7Q"
-        }
-      ]
-    },
-    {
-      "query": "carmelo anthony",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T00:40:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/12/sports/celtics-jayson-tatum-jaylen-brown-nba-basketball/",
-        "https://www.theringer.com/2026/11/11/nba/paul-george-jaylen-brown-trade-celtics-sixers",
-        "https://www.boston.com/sports/boston-celtics/2026/11/13/jaylen-brown-jayson-tatum-report-teammates-relationship/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5sndp1YJQH0OyCcvyAjMa2CiJXS5rHQcqsEk9GnSQetFOzOYiKnV7Vb4MkEE",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/12/sports/celtics-jayson-tatum-jaylen-brown-nba-basketball/",
-          "title": "Why did things get so icy between Jayson Tatum and Jaylen Brown? I’ve covered their entire careers. Here’s my take.",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5sndp1YJQH0OyCcvyAjMa2CiJXS5rHQcqsEk9GnSQetFOzOYiKnV7Vb4MkEE"
-        },
-        {
-          "url": "https://www.theringer.com/2026/11/11/nba/paul-george-jaylen-brown-trade-celtics-sixers",
-          "title": "The Celtics Replaced a Superstar With Something Better",
-          "publisher": "The Ringer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZUNK-7OHb1a53ykVTreAuW39tQoR2OXkmLrhLq2FHVGWeoo3AG4VzC725GF0"
-        },
-        {
-          "url": "https://www.boston.com/sports/boston-celtics/2026/11/13/jaylen-brown-jayson-tatum-report-teammates-relationship/",
-          "title": "Inside the final days of Jaylen Brown and Jayson Tatum’s tenure as Celtics teammates",
-          "publisher": "Boston.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8ZE-GaCiIJWUDdpNO6Al9IOs4zQ4fpKURqOmMIPWfHTGdQsTmwLS6c5YveQ"
-        }
-      ]
-    },
-    {
-      "query": "donald trump x links redirected",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T00:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/15/business/political-and-corporate-x-posts-have-links-redirecting-to-vulgar-racist-or-random-websites",
-        "https://tech.yahoo.com/cybersecurity/articles/burger-king-mcdonald-trump-old-170502231.html",
-        "https://news.lavx.hu/article/hijacked-bitly-links-redirect-old-burger-king-mcdonald-s-and-trump-posts"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_F7Or3wZTdEoLATkrrNo6JraPJ67R1kfWbe2pb5538tFVFXGpw0SkPVFmCY4",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/15/business/political-and-corporate-x-posts-have-links-redirecting-to-vulgar-racist-or-random-websites",
-          "title": "Trump, McDonald’s and Burger King among targets of past X posts that contain redirected website links",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_F7Or3wZTdEoLATkrrNo6JraPJ67R1kfWbe2pb5538tFVFXGpw0SkPVFmCY4"
-        },
-        {
-          "url": "https://tech.yahoo.com/cybersecurity/articles/burger-king-mcdonald-trump-old-170502231.html",
-          "title": "Burger King, McDonald’s and Trump old X posts hijacked with offensive links",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6Jm7iB6vh9knnGm1vJiRe9f04_SujcNlkZmpQslG65LL-SljI1-aT0npifUI"
-        },
-        {
-          "url": "https://news.lavx.hu/article/hijacked-bitly-links-redirect-old-burger-king-mcdonald-s-and-trump-posts",
-          "title": "Hijacked Bitly Links Redirect Old Burger King, McDonald’s and Trump Posts",
-          "publisher": "news.lavx.hu",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0K6djgt3Mf3rQWa6e7fipoyP8PhQgK31PHA8mcFu-FEEKFe8xkZdWXPpbp4"
         }
       ]
     }
