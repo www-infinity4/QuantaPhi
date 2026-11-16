@@ -1,0 +1,35 @@
+name: Obsidian Second Brain source and vault regression
+on:
+  pull_request:
+    paths:
+      - 'scripts/obsidian-vault-export.mjs'
+      - 'test/obsidian-vault-export.test.mjs'
+      - 'work/unfinished/INDEX.md'
+      - 'work/unfinished/TICKET-1941.md'
+      - '.agents/skills/quanta-second-brain/SKILL.md'
+      - 'docs/OBSIDIAN-SECOND-BRAIN.md'
+      - '.github/workflows/obsidian-second-brain.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  second-brain-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify source and test module syntax
+        run: |
+          node --check scripts/obsidian-vault-export.mjs
+          node --check test/obsidian-vault-export.test.mjs
+      - name: Run Second Brain regressions and canonical ledger contracts
+        run: node --test test/obsidian-vault-export.test.mjs test/unfinished-ledger.test.mjs
+      - name: Smoke-test actual Obsidian vault export
+        run: |
+          dir="$(mktemp -d)"
+          node scripts/obsidian-vault-export.mjs --root . --vault "$dir/SecondBrain" --hot-limit 12
+          test -s "$dir/SecondBrain/hot.md"
+          test -s "$dir/SecondBrain/index.md"
+          test -s "$dir/SecondBrain/Tickets/TICKET-1908.md"
+          grep -q 'unverified_source_pointer' "$dir/SecondBrain/Tickets/TICKET-1908.md"
+          grep -q 'Snapshot SHA-256' "$dir/SecondBrain/index.md"
