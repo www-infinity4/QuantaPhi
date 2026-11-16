@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T10:32:40.768542Z",
+  "checked_at": "2026-11-16T11:01:11.167544Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "mike tomlin coaching rumors",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T10:40:00Z",
+      "related_news_urls": [
+        "https://triblive.com/sports/steelers-notebook-tomlin-greets-several-of-his-former-players-ahead-of-sunday-night-football-telecast/",
+        "https://www.profootballrumors.com/2026/11/mike-tomlin-expected-to-be-top-coaching-candidate-in-2027",
+        "https://www.post-gazette.com/sports/steelers/2026/11/14/mike-tomlin-television-career-nfl/stories/202611130046"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGPqt36NpGZNzcAg9t-Zyq3M30e6XssSiR4SjEMvR3J2MWRFztdtRZSEp_BHw",
+      "image_credit": "TribLIVE.com",
+      "news": [
+        {
+          "url": "https://triblive.com/sports/steelers-notebook-tomlin-greets-several-of-his-former-players-ahead-of-sunday-night-football-telecast/",
+          "title": "Steelers notebook: Mike Tomlin greets several of his former players ahead of ‘Sunday Night Football’ telecast",
+          "publisher": "TribLIVE.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGPqt36NpGZNzcAg9t-Zyq3M30e6XssSiR4SjEMvR3J2MWRFztdtRZSEp_BHw"
+        },
+        {
+          "url": "https://www.profootballrumors.com/2026/11/mike-tomlin-expected-to-be-top-coaching-candidate-in-2027",
+          "title": "Mike Tomlin Expected To Be Top Coaching Candidate In 2027",
+          "publisher": "ProFootballRumors.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIxGFoQ-e05wwtVExKN4enb_8PnejAbdRl9YKkFnz9MTzXOuxy7DtUEpp-V7o"
+        },
+        {
+          "url": "https://www.post-gazette.com/sports/steelers/2026/11/14/mike-tomlin-television-career-nfl/stories/202611130046",
+          "title": "Tomlin on TV: Why some think Mike Tomlin can be ‘a star’ — if he stays off the NFL sidelines",
+          "publisher": "Pittsburgh Post-Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGrgU69cQzUjoFZk1ixHeTGBmU0l5w24rJWTqQBTBMG8eYbtm6UEQHLfnRv2g"
+        }
+      ]
+    },
+    {
+      "query": "elizabeth warren",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T10:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/congress/us-attorney-warns-sen-elizabeth-warren-investigating-trump-associates-rcna609532",
+        "https://www.politico.com/news/2026/11/15/federal-prosecutor-elizabeth-warren-oversight-01166765",
+        "https://www.reuters.com/world/us-justice-department-warns-senator-warren-over-records-preservation-2026-11-16/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmM_ZaUueoHNdRVlyC0mi0KqVzWPFw-McB-2Q7620dhAz2VQzLUN3Q4GUdTj0",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/congress/us-attorney-warns-sen-elizabeth-warren-investigating-trump-associates-rcna609532",
+          "title": "U.S. attorney warns Sen. Elizabeth Warren against investigating Trump associates",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmM_ZaUueoHNdRVlyC0mi0KqVzWPFw-McB-2Q7620dhAz2VQzLUN3Q4GUdTj0"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/15/federal-prosecutor-elizabeth-warren-oversight-01166765",
+          "title": "Federal prosecutor takes aim at Elizabeth Warren’s oversight warnings",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ90PX8He9OIxJkMVc5zO4SlrpJ5v9lQtSawvC8sQopPva6vBcy8ReGtW4QXIw"
+        },
+        {
+          "url": "https://www.reuters.com/world/us-justice-department-warns-senator-warren-over-records-preservation-2026-11-16/",
+          "title": "US DOJ warns Senator Warren about potential Trump-related probes",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9csS176sJfO8SROjSTbs3bGRrvgXRojDeHWMXJffL4lpp_d72IEkTmUioYRc"
+        }
+      ]
+    },
+    {
+      "query": "bitcoin price usd",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T10:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/crypto/article/bitcoins-four-year-cycle-is-about-to-turn-bullish--if-history-repeats-chart-of-the-day-141744431.html",
+        "https://tradersunion.com/news/market-voices/show/4255610-bitcoin-gold-market-cap-metric/",
+        "https://pluang.com/en/news-feed/bitcoin-penurunan-terakhir-pemulihan-siklus-hashdex-cio"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcQ_M4w1DTrgx6T29vGrXyAiF7XFYScd_rC2k4Yd_1wFxC3GrTIBZZ4BZSGp0",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/crypto/article/bitcoins-four-year-cycle-is-about-to-turn-bullish--if-history-repeats-chart-of-the-day-141744431.html",
+          "title": "Bitcoin’s four-year cycle is about to turn bullish — if history repeats: Chart of the Day",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcQ_M4w1DTrgx6T29vGrXyAiF7XFYScd_rC2k4Yd_1wFxC3GrTIBZZ4BZSGp0"
+        },
+        {
+          "url": "https://tradersunion.com/news/market-voices/show/4255610-bitcoin-gold-market-cap-metric/",
+          "title": "Gold market cap ratio reframes Bitcoin growth, Muneeb Ali notes",
+          "publisher": "Traders Union",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThvfzJy7kgaKyYPCOaJNXNAYLstFtCFkwiuEKGond8NQzolrWPPi4Go2dJbNI"
+        },
+        {
+          "url": "https://pluang.com/en/news-feed/bitcoin-penurunan-terakhir-pemulihan-siklus-hashdex-cio",
+          "title": "Bitcoin's price cycle shifts as volatility drops and institutional use grows, says Hashdex's Samir Kerbage.",
+          "publisher": "Pluang",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPEMQdWsAwDOX9fgrfuiTY4wAzWhmHSWPbpER1iGUSPP3JnRZ7QqR1LTRS-w"
+        }
+      ]
+    },
+    {
+      "query": "nasdaq composite record highs 2026",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T10:20:00Z",
+      "related_news_urls": [
+        "https://www.fool.com/investing/2026/11/15/stock-market-doing-something-only-6th-time-in-156-years-history-says-clear-what-next-for-stocks/",
+        "https://www.telegraph.co.uk/business/2026/11/10/this-epic-wall-street-boom-is-not-over-yet/",
+        "https://finance.yahoo.com/markets/stocks/articles/stocks-risen-every-midterm-since-163202066.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2h0uIOaElU3L7wbwS_Td29xnLq47zbAYJUJ_2WX93QOIDq8OCGrjy3GxWdmM",
+      "image_credit": "The Motley Fool",
+      "news": [
+        {
+          "url": "https://www.fool.com/investing/2026/11/15/stock-market-doing-something-only-6th-time-in-156-years-history-says-clear-what-next-for-stocks/",
+          "title": "The Stock Market Is Doing Something for Only the 6th Time in 156 Years, and History Says It's Clear What Comes Next for Stocks",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2h0uIOaElU3L7wbwS_Td29xnLq47zbAYJUJ_2WX93QOIDq8OCGrjy3GxWdmM"
+        },
+        {
+          "url": "https://www.telegraph.co.uk/business/2026/11/10/this-epic-wall-street-boom-is-not-over-yet/",
+          "title": "This epic Wall Street boom is not over yet",
+          "publisher": "The Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuqBQFkO2fDjbfa45ICLM_BbNMOxD9B_hZ7Z1F4wSM-xvSRFgzTlbidDfehj0"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-risen-every-midterm-since-163202066.html",
+          "title": "Stocks Have Risen a Year After Every Midterm Since 1950. Here’s What That Does and Doesn’t Tell You.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6wNd1Uq-a242dsMkuv54A62QxMoi-e4vRDfLjBc8Q0f4m361W7VVpLuVzoUg"
+        }
+      ]
+    },
     {
       "query": "pittsburgh steelers 2027 draft quarterback strategy",
       "approx_searches": "200+",
@@ -78,7 +218,7 @@
     },
     {
       "query": "starbucks free holiday cup 2026",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-16T10:10:00Z",
       "related_news_urls": [
         "https://about.starbucks.com/stories/2026/starbucks-red-cup-day-2026/",
@@ -112,37 +252,72 @@
       ]
     },
     {
-      "query": "intel",
+      "query": "rockstar games gta vi",
       "approx_searches": "1000+",
-      "published_at": "2026-11-16T10:10:00Z",
+      "published_at": "2026-11-16T10:00:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/business/intel-sued-by-shareholders-following-29-stock-plunge-2026-11-15/",
-        "https://www.bbc.com/news/articles/cw62p42p288do",
-        "https://www.globenewswire.com/news-release/2026/11/14/3403029/0/en/intc-investor-alert-robbins-geller-rudman-dowd-llp-files-class-action-lawsuit-against-intel-corporation-and-announces-opportunity-for-investors-with-substantial-losses-to-lead-the-.html"
+        "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
+        "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
+        "https://www.forbes.com/sites/antoniopequenoiv/2026/11/11/grand-theft-auto-vi-reaches-1-billion-in-sales-ahead-of-release-report-says/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVcqKK55k1DXxLAHwVEnbRCPA9e_GhQjhx-yds_brrgw-06QUIFLco-hl-21k",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.reuters.com/business/intel-sued-by-shareholders-following-29-stock-plunge-2026-11-15/",
-          "title": "Intel sued by shareholders following 29% stock plunge",
-          "publisher": "Reuters",
+          "url": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
+          "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVcqKK55k1DXxLAHwVEnbRCPA9e_GhQjhx-yds_brrgw-06QUIFLco-hl-21k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94"
         },
         {
-          "url": "https://www.bbc.com/news/articles/cw62p42p288do",
-          "title": "Investors sue chip giant Intel after 29% stock plunge",
-          "publisher": "BBC",
+          "url": "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
+          "title": "Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAE16O041Qk7u3iRpeH_JWFjz6aAvkUYdxc2Tk95rcHJRO8yiqFV8lZkSKpDs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcX3HbDpCNM6y5ct8Zb36Q0dq2OK0epLORhVFBkEfStwDKfo7YWU5uyMKUhTk"
         },
         {
-          "url": "https://www.globenewswire.com/news-release/2026/11/14/3403029/0/en/intc-investor-alert-robbins-geller-rudman-dowd-llp-files-class-action-lawsuit-against-intel-corporation-and-announces-opportunity-for-investors-with-substantial-losses-to-lead-the-.html",
-          "title": "INTC INVESTOR ALERT: Robbins Geller Rudman & Dowd LLP Files",
-          "publisher": "GlobeNewswire",
+          "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/11/11/grand-theft-auto-vi-reaches-1-billion-in-sales-ahead-of-release-report-says/",
+          "title": "‘Grand Theft Auto VI’ Reaches $1 Billion In Sales Ahead Of Release, Report Says",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRl-ZQ3kpSogSRcfVU2Q5f3czKkka3eYbA6znfrdYNdEE6DFIxDD67GS6ntuw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3yyMoE0sjcz2HWmcpuD3enTuobJvMKIJjc7gpHRFQzmbsclNmIsG7dby5f9I"
+        }
+      ]
+    },
+    {
+      "query": "barometric pressure",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T10:00:00Z",
+      "related_news_urls": [
+        "https://health.yahoo.com/general/article/the-internet-is-blaming-headaches-joint-pain-and-more-on-the-weather-is-the-barometric-flu-real-022849756.html",
+        "https://www.news4jax.com/health/2026/11/13/can-cool-weather-trigger-joint-pain/",
+        "https://www.the-independent.com/life-style/health-and-families/joint-pain-relief-cold-weather-worse-winter-b3084324.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP84Wwfu4GgcE_CmbUqMOwGFVqiIEQ4a84VQ2m9n8mr1RbajcfQdyKT66q6fU",
+      "image_credit": "Yahoo Health",
+      "news": [
+        {
+          "url": "https://health.yahoo.com/general/article/the-internet-is-blaming-headaches-joint-pain-and-more-on-the-weather-is-the-barometric-flu-real-022849756.html",
+          "title": "The internet is blaming headaches, joint pain, and more on the weather. Is the 'barometric flu' real?",
+          "publisher": "Yahoo Health",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP84Wwfu4GgcE_CmbUqMOwGFVqiIEQ4a84VQ2m9n8mr1RbajcfQdyKT66q6fU"
+        },
+        {
+          "url": "https://www.news4jax.com/health/2026/11/13/can-cool-weather-trigger-joint-pain/",
+          "title": "Can cool weather trigger joint pain?",
+          "publisher": "News4JAX",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_xxRy3B_YnCvB0wcvgWYE--bpOjaScD-DcriEeEO6NepoDx5_RePJedtRXp4"
+        },
+        {
+          "url": "https://www.the-independent.com/life-style/health-and-families/joint-pain-relief-cold-weather-worse-winter-b3084324.html",
+          "title": "Why your joint pain gets worse in the winter – and how to manage it",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBpRmDetCzkrZggmMUq5pvAWHQZbms9u75juVAO0stjbIjspkwxQmBQJ5NaCA"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "amNewYork",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpM0kjdPvpSs5Bo1ul71UYr9sO8IWjdWwXkJAe3JhhHrU34n4cSfere_EzvzY"
-        }
-      ]
-    },
-    {
-      "query": "keira knightley netflix spy series",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T09:00:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66107866/?ref_=ttnw_art_perm",
-        "https://www.purewow.com/entertainment/netflix-black-doves-season-2",
-        "https://www.yahoo.com/entertainment/tv/articles/netflix-thriller-series-officially-no-155932599.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_y71MLnr80PbDDQjXiaiKjkTFLddm5RO1JJewcjrFSwppchIRjZafMpB0UV4",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66107866/?ref_=ttnw_art_perm",
-          "title": "‘Black Doves’ Season 3 Renewal Officially Addressed After Back-to-Back 10/10 Seasons",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_y71MLnr80PbDDQjXiaiKjkTFLddm5RO1JJewcjrFSwppchIRjZafMpB0UV4"
-        },
-        {
-          "url": "https://www.purewow.com/entertainment/netflix-black-doves-season-2",
-          "title": "Netflix’s #2 Show Is an Edge-of-Your-Seat Thriller—and Season 2 Is Even Better Than Season 1",
-          "publisher": "PureWow",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-OItXiXTo7QiLQVqEjqbpH_AVtHgfs_0h-lxg0Jg8DvsxFddm6-fns587yKs"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/netflix-thriller-series-officially-no-155932599.html",
-          "title": "Netflix Thriller Series Is Officially the No. 1 Show in the World One Week After New Season Drops",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSAbMSWdPBeo8oNkxLL5BHa2FktCXmwoqFGIYHfmC5Q9UuJSQwpwff8h3HpFQ"
-        }
-      ]
-    },
-    {
-      "query": "ban vs sa",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T08:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
-        "https://www.cricinfo.com/story/sa-vs-ban-1st-test-kagiso-rabada-we-need-to-be-more-ruthless-1562805",
-        "https://www.cricbuzz.com/cricket-news/140922/alarms-ring-for-bangladesh-then-south-africa-on-noisy-first-day-at-wanderers-cricbuzzcom"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG8S17SvnSjxok6LESFx9wlpodE-Owb4Oh516cG2-50sY8NNo_zYxV9Qwl7tY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
-          "title": "Hridoy ton as Bangladesh reaches 327-6 on 1st day of 1st cricket test vs South Africa, Rabada 5-51",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG8S17SvnSjxok6LESFx9wlpodE-Owb4Oh516cG2-50sY8NNo_zYxV9Qwl7tY"
-        },
-        {
-          "url": "https://www.cricinfo.com/story/sa-vs-ban-1st-test-kagiso-rabada-we-need-to-be-more-ruthless-1562805",
-          "title": "Rabada: 'We need to be more ruthless'",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmukFES4yCrQByBp4fachtNXsa8NqyjlBAv8YhhnpfP0AFdwvgMeRP0sLc9nw"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140922/alarms-ring-for-bangladesh-then-south-africa-on-noisy-first-day-at-wanderers-cricbuzzcom",
-          "title": "Alarms ring for Bangladesh, then South Africa on noisy first day at Wanderers",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoX4oFHUcnkBg7fzpxSc8_iYQd2J4-Q9Q3VUA_u0aqNx9tI4r40ZyXBcdDi3w"
-        }
-      ]
-    },
-    {
-      "query": "emma watson",
-      "approx_searches": "100+",
-      "published_at": "2026-11-16T08:40:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/es/news/ni66110819/?ref_=nwc_art_perm",
-        "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
-        "https://www.instyle.com/emma-watson-stuns-black-minidress-gq-party-12253178"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEO3AR1v3jNzI1j1scd1v4zTuif7m1ei2ukCAo-UTkCG5BkUACf6kFeAZ-riI",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/es/news/ni66110819/?ref_=nwc_art_perm",
-          "title": "Emma Watson Makes Rare Appearance at GQ Men of the Year Party in Chic Little Black Dress",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEO3AR1v3jNzI1j1scd1v4zTuif7m1ei2ukCAo-UTkCG5BkUACf6kFeAZ-riI"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
-          "title": "Emma Watson suffers brutal fall outside splashy celebrity party at LA hot spot Chateau Marmont",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.instyle.com/emma-watson-stuns-black-minidress-gq-party-12253178",
-          "title": "Emma Watson Wows in a Black Velvet Minidress and Striped Heels for Rare Outing",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDBO21WwBKrR3aM9i-yvrAy8wVTLvAk7P8KfMe6foxSnOGtrMFndVx2gkNKDY"
-        }
-      ]
-    },
-    {
-      "query": "qwen4",
-      "approx_searches": "100+",
-      "published_at": "2026-11-16T08:10:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
-        "https://www.reuters.com/business/retail-consumer/alibaba-unveils-new-flagship-ai-model-with-safety-upgrades-2026-11-16/",
-        "https://www.scmp.com/tech/big-tech/article/3374540/alibaba-says-new-flagship-ai-model-cuts-task-costs-60-while-tightening-cyber-guardrails"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXzyNE3ZtRw5IhadPXiwJhxdllhENQuvrvgvjMo4OsH8Jg4LefqYa0WrsDkzw",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
-          "title": "Alibaba Unveils New Flagship AI Model in Riposte to US Rivals",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXzyNE3ZtRw5IhadPXiwJhxdllhENQuvrvgvjMo4OsH8Jg4LefqYa0WrsDkzw"
-        },
-        {
-          "url": "https://www.reuters.com/business/retail-consumer/alibaba-unveils-new-flagship-ai-model-with-safety-upgrades-2026-11-16/",
-          "title": "Alibaba unveils new flagship AI model with safety upgrades",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrIErRyhzIHuAK83_QwvHNew0u-fQHNRpWA2bh_58r60OXdoqKGIxVPccORzw"
-        },
-        {
-          "url": "https://www.scmp.com/tech/big-tech/article/3374540/alibaba-says-new-flagship-ai-model-cuts-task-costs-60-while-tightening-cyber-guardrails",
-          "title": "Alibaba launches Qwen4-Max model with strict cybersecurity guardrails",
-          "publisher": "South China Morning Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxe0tBisTtRRefhzw8gQJ_kk1YNnxSS30i5qCJx140xmFcVeaL4yZnrsILYlU"
-        }
-      ]
-    },
-    {
-      "query": "penelope cruz javier bardem movie bunker",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T08:00:00Z",
-      "related_news_urls": [
-        "https://www.vanityfair.com/story/penelope-cruz-bunker-screening-room",
-        "https://deadline.com/2026/11/penelope-cruz-bunker-interview-1237223831/",
-        "https://en.vijesti.me/fun/interesting/836337/Penelope-Cruz-feared-that-one-scene-would-jeopardize-her-marriage"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNc1D3abk7BNbx9MvWKv7iYkIXY-6lYSMLzCQaJyUoJ_SooilwAm6gCLQX8Kc",
-      "image_credit": "Vanity Fair",
-      "news": [
-        {
-          "url": "https://www.vanityfair.com/story/penelope-cruz-bunker-screening-room",
-          "title": "Penélope Cruz Says She and Husband Javier Bardem are “Very Careful” About Choosing When to Work Together",
-          "publisher": "Vanity Fair",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNc1D3abk7BNbx9MvWKv7iYkIXY-6lYSMLzCQaJyUoJ_SooilwAm6gCLQX8Kc"
-        },
-        {
-          "url": "https://deadline.com/2026/11/penelope-cruz-bunker-interview-1237223831/",
-          "title": "Penélope Cruz Wary Of Marital Blowback Starring With Javier Bardem In ‘Bunker’",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbQB5PFobLn4m0ogVVWWluNeqxxr-ObtKI64QgPbqU52Oys-yLd31HiCU23rk"
-        },
-        {
-          "url": "https://en.vijesti.me/fun/interesting/836337/Penelope-Cruz-feared-that-one-scene-would-jeopardize-her-marriage",
-          "title": "Penelope Cruz feared a scene would jeopardize her marriage",
-          "publisher": "vijesti.me",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFy7SDnAsHdZdFvyua_prPnVuG9MzL1JFYIPbhnEoNR9be6EZLN6yjshR5Nyo"
         }
       ]
     }
