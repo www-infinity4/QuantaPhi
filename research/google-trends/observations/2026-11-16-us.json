@@ -3,21 +3,273 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T13:47:59.989757Z",
+  "checked_at": "2026-11-16T14:07:45.890896Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "daniel radcliffe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T13:50:00Z",
+      "related_news_urls": [
+        "https://people.com/daniel-radcliffe-on-reuniting-with-jonathan-groff-for-new-movie-trust-the-man-exclusive-12253230",
+        "https://parade.com/celebrities/daniel-radcliffe-wants-reunite-dane-dehaan-kill-your-darlings-harry-potter",
+        "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/daniel-radcliffe-reveals-he-recommended-jonathan-groff-for-their-upcoming-film-trust-the-man/articleshow/135885405.cms"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj_ABz7QSUbPRBJR2n8VNlmvYL30kMF1U9A-1xHNMgvkZ656g9Z_Ux-BQIa88",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/daniel-radcliffe-on-reuniting-with-jonathan-groff-for-new-movie-trust-the-man-exclusive-12253230",
+          "title": "Daniel Radcliffe on Reuniting with Jonathan Groff for New Movie ‘Trust the Man’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj_ABz7QSUbPRBJR2n8VNlmvYL30kMF1U9A-1xHNMgvkZ656g9Z_Ux-BQIa88"
+        },
+        {
+          "url": "https://parade.com/celebrities/daniel-radcliffe-wants-reunite-dane-dehaan-kill-your-darlings-harry-potter",
+          "title": "Daniel Radcliffe Reveals the Former Co-star He’d Love to Reunite With — and It’s Not a ‘Harry Potter’ Star",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW64aQiM3Cgb8kcdR7OKFetl3_hb9kKghSvnsVuTwPmSA4pdtCydtJ4l_9ijY"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/daniel-radcliffe-reveals-he-recommended-jonathan-groff-for-their-upcoming-film-trust-the-man/articleshow/135885405.cms",
+          "title": "Daniel Radcliffe reveals he recommended Jonathan Groff for their upcoming film 'Trust The Man'",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReRpIS2diV6m7uMYNi88F2Vu5irg6TycexBAN-PQFVu5_BvCcU9axgxoWU-Pw"
+        }
+      ]
+    },
+    {
+      "query": "pga tour",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T13:50:00Z",
+      "related_news_urls": [
+        "https://www.pgatour.com/article/news/latest/2026/11/15/meet-the-10-who-earned-2027-pga-tour-cards-via-dp-world-tour-race-to-dubai-patrick-reed-eugenio-chacarra",
+        "https://www.golfchannel.com/dp-world-tour/news/meet-the-10-dp-world-tour-grads-including-eugenio-chacarra-patrick-reed-and-a-former-grocery-deliveryman",
+        "https://golfweek.usatoday.com/story/sports/golf/pga/2026/11/15/patrick-reed-earns-his-way-back-to-pga-tour-after-leaving-liv-golf/92797440007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCDivRbbf76ZGg4aUejzsTLJXldwJfg612d3HVRWYbY14_gpwfhCYR7UEEqxk",
+      "image_credit": "PGA Tour",
+      "news": [
+        {
+          "url": "https://www.pgatour.com/article/news/latest/2026/11/15/meet-the-10-who-earned-2027-pga-tour-cards-via-dp-world-tour-race-to-dubai-patrick-reed-eugenio-chacarra",
+          "title": "Meet the 10 players who earned 2027 PGA Tour cards through Race to Dubai",
+          "publisher": "PGA Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCDivRbbf76ZGg4aUejzsTLJXldwJfg612d3HVRWYbY14_gpwfhCYR7UEEqxk"
+        },
+        {
+          "url": "https://www.golfchannel.com/dp-world-tour/news/meet-the-10-dp-world-tour-grads-including-eugenio-chacarra-patrick-reed-and-a-former-grocery-deliveryman",
+          "title": "Meet the 10 DP World Tour grads, including Eugenio Chacarra, Patrick Reed and a former grocery deliveryman",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkqkiwzzg2uazc8Fr2Ybb50s_9nWcBSjYIbltQOAx5ZA7fOneFtiTozxVRiLY"
+        },
+        {
+          "url": "https://golfweek.usatoday.com/story/sports/golf/pga/2026/11/15/patrick-reed-earns-his-way-back-to-pga-tour-after-leaving-liv-golf/92797440007/",
+          "title": "Patrick Reed earns PGA Tour card for 2027 four years after leaving for LIV Golf",
+          "publisher": "Golfweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk4H4cVL1odpjmdWkQ8j6j708CKYwS9Ov7eRsex_egE1X7hPGaA9afwVluhx8"
+        }
+      ]
+    },
+    {
+      "query": "beanie feldstein",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T13:50:00Z",
+      "related_news_urls": [
+        "https://www.vogue.com/article/i-want-what-they-have-beanie-feldstein-and-bonnie-chance-roberts",
+        "https://people.com/beanie-feldstein-says-welcoming-baby-girl-has-been-beyond-my-wildest-dreams-exclusive-12227660",
+        "https://www.instyle.com/beanie-feldstein-welcome-first-child-bonnie-chance-roberts-11975814"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcy40FikeytYKNSrn_5RpeJIYOKeG2KNaQTRrowSAYap1B9jfMEHtaDgTkCNc",
+      "image_credit": "Vogue",
+      "news": [
+        {
+          "url": "https://www.vogue.com/article/i-want-what-they-have-beanie-feldstein-and-bonnie-chance-roberts",
+          "title": "I Want What Adorable New Moms Beanie Feldstein and Bonnie-Chance Roberts Have",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcy40FikeytYKNSrn_5RpeJIYOKeG2KNaQTRrowSAYap1B9jfMEHtaDgTkCNc"
+        },
+        {
+          "url": "https://people.com/beanie-feldstein-says-welcoming-baby-girl-has-been-beyond-my-wildest-dreams-exclusive-12227660",
+          "title": "Beanie Feldstein Says Welcoming Her Baby Girl Has Been ‘Beyond My Wildest Dreams’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsrDLv3DrlRwCwwSW4J-V6NpAlPm-VCKRrx_3BLBklYxYH_PWx14C0lgul-68"
+        },
+        {
+          "url": "https://www.instyle.com/beanie-feldstein-welcome-first-child-bonnie-chance-roberts-11975814",
+          "title": "Beanie Feldstein and Wife Bonnie-Chance Roberts Secretly Welcomed Their First Child Together",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTR_xEUo8tuHDUJOmRyjTfWi9XZhBSGSRtr3uUTubpoqcF7zpHxjq5wooof9-s"
+        }
+      ]
+    },
+    {
+      "query": "bryan cranston",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T13:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/16/theater/bryan-cranston-all-my-sons-broadway.html",
+        "https://www.hollywoodreporter.com/lifestyle/arts/bryan-cranston-marianne-jean-baptiste-all-my-sons-broadway-1236756112/",
+        "https://people.com/bryan-cranston-and-marianne-jean-baptiste-bring-all-my-sons-to-broadway-12256184"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSon2b76LuvfzTLNmc0QprOskzCaW6N-ggLKE4bstbFIUgM9tflMCsz8JqCP9M",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/16/theater/bryan-cranston-all-my-sons-broadway.html",
+          "title": "Bryan Cranston to Star in ‘All My Sons’ on Broadway Next Spring",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSon2b76LuvfzTLNmc0QprOskzCaW6N-ggLKE4bstbFIUgM9tflMCsz8JqCP9M"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/lifestyle/arts/bryan-cranston-marianne-jean-baptiste-all-my-sons-broadway-1236756112/",
+          "title": "Bryan Cranston, Marianne Jean-Baptiste to Star in ‘All My Sons’ on Broadway",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyzfvN8mEVT1ywkUMjdrzxIsS7Ka3_9aiLJAy3isay7iMhmORHitDMFOITQR4"
+        },
+        {
+          "url": "https://people.com/bryan-cranston-and-marianne-jean-baptiste-bring-all-my-sons-to-broadway-12256184",
+          "title": "Bryan Cranston and Marianne Jean-Baptiste Bring ‘All My Sons’ to Broadway",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS4rVBEvAmYG6b6QPzW6mjotiAU7ZEodXYW9dY2u6p-16prOu5mXUdrC-HQrk"
+        }
+      ]
+    },
+    {
+      "query": "nitto atp finals",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T13:40:00Z",
+      "related_news_urls": [
+        "https://designwanted.com/market-news/skywalk-pininfarina/",
+        "https://www.espn.com/tennis/story/_/id/50490503/alexander-zverev-opens-atp-finals-win-rafael-jodar",
+        "https://www.theguardian.com/sport/live/2026/nov/15/atp-finals-tennis-alexander-zverev-v-rafael-jodar-and-more-live"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2JqUiqD6ox6HaO00lOLPhrQG7I32nABzfL-XlpNhvO6KEL8qKrhrw96i6rRE",
+      "image_credit": "DesignWanted",
+      "news": [
+        {
+          "url": "https://designwanted.com/market-news/skywalk-pininfarina/",
+          "title": "Skywalk: Pininfarina's walkway for the ATP Finals",
+          "publisher": "DesignWanted",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2JqUiqD6ox6HaO00lOLPhrQG7I32nABzfL-XlpNhvO6KEL8qKrhrw96i6rRE"
+        },
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50490503/alexander-zverev-opens-atp-finals-win-rafael-jodar",
+          "title": "Alexander Zverev starts ATP Finals with convincing win over Rafael Jodar",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8VF3TnOwQdFFKAjJ6GUL8Y5k_mO1DOL1qadK-ea9sJyYals6ZlHrnCnCM96A"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/15/atp-finals-tennis-alexander-zverev-v-rafael-jodar-and-more-live",
+          "title": "ATP Finals tennis: Alexander Zverev beats Rafael Jódar in straight sets – as it happened",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMZ1AWlyYPTAGpTQ7ayCDRglO000_hEzeUeAePg_kgyMgdq3srSrlpih3khnM"
+        }
+      ]
+    },
+    {
+      "query": "greg abel berkshire hathaway stock sales",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T13:40:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/warren-buffetts-successor-greg-abel-102602227.html",
+        "https://www.fool.com/investing/2026/11/13/warren-buffett-successor-greg-abel-35-berkshire-hathaway-359-billion-portfolio-invested-in-2-undeniable-winners/",
+        "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/berkshire-s-safe-haven-bid-masks-a-weaker-underwriting-quarter/70518467"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu3atId9uuesTvUyt_WxfFMVgQU-EW6Nw0gJoNln0mO10gslkeBPYWttTeDfw",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/warren-buffetts-successor-greg-abel-102602227.html",
+          "title": "Warren Buffett's Successor, Greg Abel, Just Dropped a $426 Million Bombshell on Wall Street",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu3atId9uuesTvUyt_WxfFMVgQU-EW6Nw0gJoNln0mO10gslkeBPYWttTeDfw"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/13/warren-buffett-successor-greg-abel-35-berkshire-hathaway-359-billion-portfolio-invested-in-2-undeniable-winners/",
+          "title": "Warren Buffett's Successor, Greg Abel, Has Over 35% of Berkshire Hathaway's $359 Billion Portfolio Invested in Just 2 Undeniable Winners",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQgJ_OKanO_DyRgOfGLtxZtB7BcLDCraaKuQr_9UYPM_OY9Xc0dIaE3jzMvXI"
+        },
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/berkshire-s-safe-haven-bid-masks-a-weaker-underwriting-quarter/70518467",
+          "title": "Berkshire's Safe-Haven Bid Masks a Weaker Underwriting Quarter",
+          "publisher": "ad-hoc-news.de",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcaEYpcBEw0PhZsTJoUN8kBcayQNcxXag9upZRC8LgtTh3ugPGBJ82Irs31UU"
+        }
+      ]
+    },
+    {
+      "query": "market",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T13:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+        "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-stock-nvda-jensen-huang/",
+        "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM3MDSS8ec3Pe69TqM930udyAUzjnSePlIzVaarrPJ-jIEg_KQ3XjfdKXLEF0",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+          "title": "Stock futures slide as Nvidia leads AI stocks lower: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM3MDSS8ec3Pe69TqM930udyAUzjnSePlIzVaarrPJ-jIEg_KQ3XjfdKXLEF0"
+        },
+        {
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-stock-nvda-jensen-huang/",
+          "title": "Stock Market Today: Tech Futures Sell Off; Nvidia Dives Amid Jensen Huang News (Live Coverage)",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbUmo7q4Zj6XhxGW3VExkhW2DY2BzaWwEiWKLKKi1pZ3l-6ASoc2S-qF5oT4c"
+        },
+        {
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
+          "title": "Stocks dip ahead of Nvidia earnings, Anthropic IPO",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvPUUjeAHM5HGXcvXovA2MdCcQemz1Ig5qpB42mO5dgKj5-VEOKaiz7eRH0Sc"
+        }
+      ]
+    },
     {
       "query": "carlos alcaraz",
       "approx_searches": "2000+",
       "published_at": "2026-11-16T13:30:00Z",
       "related_news_urls": [
+        "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-frances-tiafoe/2026/11/16/04_0414_20261116_2-directo.html",
         "https://espndeportes.espn.com/tenis/nota/_/id/17518539/atp-finals-2026-asi-esta-la-tabla-de-posiciones-del-round-robin-y-quienes-se-clasifican-a-semifinales",
-        "https://elpais.com/deportes/tenis/2026-11-16/carlos-alcaraz-frances-tiafoe-el-partido-de-las-atp-finals-en-vivo.html",
         "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-alcaraz-reto-grandes-trofeos"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPlsZzBoI9pYsNJdTleX2tKcQY9-LjsHMpLrVpAm40I0XUDgXQgp9PZ0sgMA",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_nwAnKi9XryzZR4kgPr1byDkWSIqpRIi4Q7qfTxT83lJezlZALjyLQ8gF3kg",
+      "image_credit": "MARCA",
       "news": [
+        {
+          "url": "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-frances-tiafoe/2026/11/16/04_0414_20261116_2-directo.html",
+          "title": "Carlos Alcaraz - Frances Tiafoe: en directo las Finales ATP | Última hora de ATP Finals en vivo hoy",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_nwAnKi9XryzZR4kgPr1byDkWSIqpRIi4Q7qfTxT83lJezlZALjyLQ8gF3kg"
+        },
         {
           "url": "https://espndeportes.espn.com/tenis/nota/_/id/17518539/atp-finals-2026-asi-esta-la-tabla-de-posiciones-del-round-robin-y-quienes-se-clasifican-a-semifinales",
           "title": "ATP Finals 2026: así está la tabla de posiciones del Round Robin y quiénes se clasifican a semifinales",
@@ -26,37 +278,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPlsZzBoI9pYsNJdTleX2tKcQY9-LjsHMpLrVpAm40I0XUDgXQgp9PZ0sgMA"
         },
         {
-          "url": "https://elpais.com/deportes/tenis/2026-11-16/carlos-alcaraz-frances-tiafoe-el-partido-de-las-atp-finals-en-vivo.html",
-          "title": "Carlos Alcaraz - Frances Tiafoe, el partido de las ATP Finals en vivo|Comienza el encuentro",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDwxfwk6c0Du7XBr2r7bl9u0HFaAFkhFMzoeSf5mpQSQObWPQohVOLbjXycaQ"
-        },
-        {
           "url": "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-alcaraz-reto-grandes-trofeos",
           "title": "Alcaraz y el reto de las cinco grandes copas del tenis",
           "publisher": "Nitto ATP Finals",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3dEWGl11K4K6otkpdGatDsUrUyhpulk9zcaAp3fX1JD46HTcK7lMZtHWC5Ik"
-        }
-      ]
-    },
-    {
-      "query": "grammys 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T13:30:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/hughmcintyre/2026/11/14/olivia-rodrigo-could-match-billie-eilishs-rare-grammy-feat/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0TO6n99YbGskyME76sUw0LnKvmBTl2aDwBt46t7cpqgGuBrHVkDGpujBiB0",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/hughmcintyre/2026/11/14/olivia-rodrigo-could-match-billie-eilishs-rare-grammy-feat/",
-          "title": "Olivia Rodrigo Could Match Billie Eilish’s Rare Grammy Feat",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0TO6n99YbGskyME76sUw0LnKvmBTl2aDwBt46t7cpqgGuBrHVkDGpujBiB0"
         }
       ]
     },
@@ -96,48 +322,13 @@
       ]
     },
     {
-      "query": "what is the latest news on the strait of hormuz naval mine explosions?",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T13:30:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
-        "https://www.telegraph.co.uk/world-news/2026/11/15/iran-attacks-us-military-base-in-bahrain/",
-        "https://www.iranintl.com/en/liveblog/202611143682"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d6xwXxq7ws_uzRD6DmvOPdxYVDFlVQeLdf4wutbUPZysumY3anxpqc6CG60",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
-          "title": "Iran's navy says three tankers on fire after hitting mines in Hormuz",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d6xwXxq7ws_uzRD6DmvOPdxYVDFlVQeLdf4wutbUPZysumY3anxpqc6CG60"
-        },
-        {
-          "url": "https://www.telegraph.co.uk/world-news/2026/11/15/iran-attacks-us-military-base-in-bahrain/",
-          "title": "Oil supertanker ‘sinks after hitting mine’ in Strait of Hormuz",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbt8rax3MISsIqf48kb8hMNgPMBaMoz1XwkE4zJ-BibD_URowByNifMoDm37A"
-        },
-        {
-          "url": "https://www.iranintl.com/en/liveblog/202611143682",
-          "title": "Live - Iran says it has no disputes with neighbors as Hormuz tanker incidents continue",
-          "publisher": "Iran International",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUsu7PtBIQGqZVaE974S_NE5WGir0RX3mvtuGyp2MJp7Q59otphlB0jPzlwKw"
-        }
-      ]
-    },
-    {
       "query": "frances tiafoe",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T13:20:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/sport/live/2026/nov/16/carlos-alcaraz-v-frances-tiafoe-atp-finals-tennis-group-stage-live",
         "https://www.reutersconnect.com/item/atp-finals/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxMTAzNUo",
-        "https://tennisuptodate.com/atp/live-atp-finals-carlos-alcaraz-opens-account-in-turin-against-debutant-frances-tiafoe"
+        "https://www.nytimes.com/athletic/live-blogs/alcaraz-vs-tiafoe-live-updates-atp-finals-2026-score-result/ePtyQTGPE5nx/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjDK1npKEV6dK8iXy3Di7KodAmLPg69Yampos8toLRVAf4uZxuC-ok7Ns7H94",
       "image_credit": "The Guardian",
@@ -157,186 +348,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeonUa4b-VvzI-nCVVKHTMu95bIxIjEvVE_E-FUMuYtLj4bfyGfNY-_y1JyYE"
         },
         {
-          "url": "https://tennisuptodate.com/atp/live-atp-finals-carlos-alcaraz-opens-account-in-turin-against-debutant-frances-tiafoe",
-          "title": "LIVE ATP Finals | Carlos Alcaraz opens account in Turin against debutant Frances Tiafoe",
-          "publisher": "Tennisuptodate.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-xw19m_R5qh3EA1S1ht-GOxgMP037aFfGI7XNdi0M_pdwdOK-Kw9V-Z4gDJ0"
-        }
-      ]
-    },
-    {
-      "query": "gma deals and steals",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T13:20:00Z",
-      "related_news_urls": [
-        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-best-oprahs-favorite-things-138117550",
-        "https://shopping.yahoo.com/gift-ideas/article/oprahs-favorite-things-2026-holiday-guide-is-live--these-are-the-best-gifts-under-100-195208438.html",
-        "https://people.com/oprahs-favorite-things-2026-12187539"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoHiqEpFIKzzhhNrzLFkjx3xDcqhv5ebjBKjoib3T-GskzWIdWGcJau_sslk",
-      "image_credit": "Good Morning America",
-      "news": [
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-best-oprahs-favorite-things-138117550",
-          "title": "'GMA' Deals & Steals on Best of Oprah's Favorite Things",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoHiqEpFIKzzhhNrzLFkjx3xDcqhv5ebjBKjoib3T-GskzWIdWGcJau_sslk"
-        },
-        {
-          "url": "https://shopping.yahoo.com/gift-ideas/article/oprahs-favorite-things-2026-holiday-guide-is-live--these-are-the-best-gifts-under-100-195208438.html",
-          "title": "Oprah’s Favorite Things 2026 holiday guide is live — these are the best gifts under $100",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7TxGyURoqHevgvsRAIvWEY4rJIZt15Mo5MnBFsFW9m09r358HYtnhdWVbdTE"
-        },
-        {
-          "url": "https://people.com/oprahs-favorite-things-2026-12187539",
-          "title": "It’s Time: Oprah’s Favorite Things 2026 Has Arrived, and It’s Packed with Impressive Gift Ideas from $13",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxoZuMoy-h_b7zHlrOQsgc1CjeTGJt09gjqr3ez_oFjFyCOjtNkFBtcAw2eU"
-        }
-      ]
-    },
-    {
-      "query": "health",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T13:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/world/american-global-health-aid-isnt-dead-its-changing.html",
-        "https://www.kff.org/global-health-policy/the-advancing-global-health-annual-program-statement-agh-aps-mechanism-supplementing-the-america-first-mous/",
-        "https://www.benefitspro.com/2026/11/09/global-health-aid-cuts-threaten-us-employers-hub/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNzGDqAHtgIJ4FlIvmT5ZmF_yaTVKO2zubT932ycHyUjcLANAoEh5sNULToZM",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/16/world/american-global-health-aid-isnt-dead-its-changing.html",
-          "title": "American Global Health Aid Isn’t Dead. It’s Changing.",
+          "url": "https://www.nytimes.com/athletic/live-blogs/alcaraz-vs-tiafoe-live-updates-atp-finals-2026-score-result/ePtyQTGPE5nx/",
+          "title": "Carlos Alcaraz faces Frances Tiafoe on day two of 2026 ATP Finals: Live updates and latest score",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNzGDqAHtgIJ4FlIvmT5ZmF_yaTVKO2zubT932ycHyUjcLANAoEh5sNULToZM"
-        },
-        {
-          "url": "https://www.kff.org/global-health-policy/the-advancing-global-health-annual-program-statement-agh-aps-mechanism-supplementing-the-america-first-mous/",
-          "title": "The Advancing Global Health Annual Program Statement (AGH/APS) Mechanism: Supplementing the America First MOUs",
-          "publisher": "KFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwI5VsvILT1n-pA8dNGQmUyKTLSPa5dOD8p7ykop2XdFoUvN1lEBvyLeNtwHg"
-        },
-        {
-          "url": "https://www.benefitspro.com/2026/11/09/global-health-aid-cuts-threaten-us-employers-hub/",
-          "title": "Global health aid cuts threaten U.S. employers: Hub",
-          "publisher": "BenefitsPRO",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ3z7FHpXPn6hXxEC2EP99nszYCaiIDDPJBrpcBJf8x9cgU9KAdSHUn3eQV-s"
-        }
-      ]
-    },
-    {
-      "query": "amy poehler",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T13:10:00Z",
-      "related_news_urls": [
-        "https://ew.com/amy-poehler-reveals-she-served-oprah-winfrey-before-fame-12244218",
-        "https://people.com/amy-poehler-reveals-a-lister-she-waited-on-while-working-as-a-server-before-snl-12208323",
-        "https://www.thenews.com.pk/latest/1422990-amy-poehler-shares-shocking-story-about-improvising"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKFxKRF57IDI9dVqgyUbhKnQJM206JqV1SbNt1JwQdCZUBNJi5Olgb1YzxiKs",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/amy-poehler-reveals-she-served-oprah-winfrey-before-fame-12244218",
-          "title": "Amy Poehler reveals she once waited on Oprah Winfrey in Chicago: ‘I bet she doesn’t remember it’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKFxKRF57IDI9dVqgyUbhKnQJM206JqV1SbNt1JwQdCZUBNJi5Olgb1YzxiKs"
-        },
-        {
-          "url": "https://people.com/amy-poehler-reveals-a-lister-she-waited-on-while-working-as-a-server-before-snl-12208323",
-          "title": "Amy Poehler Reveals the A-Lister She Waited on While Working as a Server Before Fame: ‘She Doesn’t Remember It’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLLXB9hMkVU_6IHBnvpZj4ENWzlwrwEP9OcKLK_MAF-MIBuMeHmP5-yrDdxic"
-        },
-        {
-          "url": "https://www.thenews.com.pk/latest/1422990-amy-poehler-shares-shocking-story-about-improvising",
-          "title": "Amy Poehler shares shocking story about 'improvising'",
-          "publisher": "The News International",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCRIKvz07ZwOoQcYue7ea9tGotQIGlInthHSs3Fm8T73X0ShvGZEehK_NMku8"
-        }
-      ]
-    },
-    {
-      "query": "holmes documentary",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-16T13:10:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/entertainment/movies/2026/11/15/billy-evans-discusses-nathan-fielder-nude-scene-you-can-see-everything/",
-        "https://people.com/elizabeth-holmes-partner-billy-evans-speaks-out-for-the-first-time-since-you-can-see-everything-documentary-12252880",
-        "https://www.cbsnews.com/news/billy-evans-on-you-can-see-everything-elizabeth-holmes/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToQYS3NCTNgXQbFYzXxrz3wWAyY8t4QLIyJkvkce-epdjxrZhD0-bHALg01K8",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/entertainment/movies/2026/11/15/billy-evans-discusses-nathan-fielder-nude-scene-you-can-see-everything/",
-          "title": "Elizabeth Holmes’s partner says he hasn’t spoken to Nathan Fielder since seeing film",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToQYS3NCTNgXQbFYzXxrz3wWAyY8t4QLIyJkvkce-epdjxrZhD0-bHALg01K8"
-        },
-        {
-          "url": "https://people.com/elizabeth-holmes-partner-billy-evans-speaks-out-for-the-first-time-since-you-can-see-everything-documentary-12252880",
-          "title": "Elizabeth Holmes’ Partner Billy Evans Speaks Out About ‘You Can See Everything’ for First Time",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ58IToNE3LoHnyKDoJ_gYv_4JcFYYGzjJZwQCYLm1onSxGMW_GNeY-SfMrZoA"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/billy-evans-on-you-can-see-everything-elizabeth-holmes/",
-          "title": "Billy Evans, in first interview, tells his side of \"You Can See Everything,\" its portrayal of Elizabeth Holmes",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCpn_M5w7MFMB7t0KoqgB7McjFmYjKsaAqdfy8921VthdXKOzuSUqg3UMwcJI"
-        }
-      ]
-    },
-    {
-      "query": "prince harry, duke of sussex",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T13:00:00Z",
-      "related_news_urls": [
-        "https://www.news24.com.au/lifestyle/celebrity-life/prince-harrys-friend-reveals-how-the-duke-really-feels-about-king-charles-sandringham-christmas-snub/news-story/5933e16c14058627ef546bff8718aaf8",
-        "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-harry-meghan-reportedly-not-010017153.html",
-        "https://www.dailystar.co.uk/news/latest-news/harry-meghan-markle-snubbed-king-37878766"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8TLhnMXcO5JO4SRiJJvxE9V6xKyCMcuHenXLwyehfnqAqtpuh2GcgCa34MgU",
-      "image_credit": "News24",
-      "news": [
-        {
-          "url": "https://www.news24.com.au/lifestyle/celebrity-life/prince-harrys-friend-reveals-how-the-duke-really-feels-about-king-charles-sandringham-christmas-snub/news-story/5933e16c14058627ef546bff8718aaf8",
-          "title": "Harry’s friend reveals how he really feels about Sandringham Christmas snub",
-          "publisher": "News24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8TLhnMXcO5JO4SRiJJvxE9V6xKyCMcuHenXLwyehfnqAqtpuh2GcgCa34MgU"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-harry-meghan-reportedly-not-010017153.html",
-          "title": "Prince Harry and Meghan Reportedly Not Invited to King Charles’ Birthday or Christmas Despite U.K. Return",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThZrqa_KKVUzZ184JMn6DF1gciXxOoLhEYD03_CGiMYLHP8FO0IJnBPCU2e30"
-        },
-        {
-          "url": "https://www.dailystar.co.uk/news/latest-news/harry-meghan-markle-snubbed-king-37878766",
-          "title": "Harry and Meghan Markle 'snubbed' from King Charles' 78th birthday celebrations",
-          "publisher": "Daily Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ21PS2ZebEgyza4M3nbilNFCSKVCnqTa9hky3oryGtX12vW1ZUwpD9hkcyjoE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvFO4mhf-1HKmf8AXnwuRvKFerEIjlXWu2vk-sR7CEINPWLYu8jyTrFT-8sj0"
         }
       ]
     }
