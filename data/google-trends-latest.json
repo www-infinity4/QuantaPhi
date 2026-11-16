@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T21:31:37.798121Z",
+  "checked_at": "2026-11-16T22:01:36.482588Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "car chase",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T21:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcwashington.com/news/local/1-shot-by-park-police-after-fleeing-in-prince-georges-county/4183596/",
+        "https://komonews.com/news/nation-world/prince-georges-county-maryland-md4-pennsylvania-avenue-spaulding-us-park-police-pgpd-road-closures-traffic-alert-police-chase-shooting-investigation-alternate-route-delays-maryland-crime-car",
+        "https://www.wusa9.com/article/news/police/us-park-police-pursuit-shooting-prince-georges-county/65-20764733-802c-4ff7-a16d-185fbe281b7b"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7CRmuIwRbvHNFM-isuEsZUuCP4RgBc_LNFQg9Yp99GaPWwixwMo2_MJE7N5c",
+      "image_credit": "NBC4 Washington",
+      "news": [
+        {
+          "url": "https://www.nbcwashington.com/news/local/1-shot-by-park-police-after-fleeing-in-prince-georges-county/4183596/",
+          "title": "Woman dead after Park Police officer shot her during chase into Prince George's",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7CRmuIwRbvHNFM-isuEsZUuCP4RgBc_LNFQg9Yp99GaPWwixwMo2_MJE7N5c"
+        },
+        {
+          "url": "https://komonews.com/news/nation-world/prince-georges-county-maryland-md4-pennsylvania-avenue-spaulding-us-park-police-pgpd-road-closures-traffic-alert-police-chase-shooting-investigation-alternate-route-delays-maryland-crime-car",
+          "title": "Woman dead after shot by US Park Police after chase of stolen vehicle",
+          "publisher": "KOMO",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSP14frFv-3AItGj-YcvTJpBWA25prshO8NKu__2pB-JZQ95GcnQeBXhTpQuE"
+        },
+        {
+          "url": "https://www.wusa9.com/article/news/police/us-park-police-pursuit-shooting-prince-georges-county/65-20764733-802c-4ff7-a16d-185fbe281b7b",
+          "title": "US Park Police officer shoots person after pursuit in Prince George's Co.",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGvTHA9duaWXlL5QqwdNi7mlTz32-qfXZBxM2pqwdsOMEKOX78_-g6qwOVV-o"
+        }
+      ]
+    },
+    {
+      "query": "the motley fool",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T21:40:00Z",
+      "related_news_urls": [
+        "https://www.fool.com/investing/2026/11/16/3-financial-stocks-to-buy-and-hold-that-turned-100/",
+        "https://247wallst.com/investing/2026/11/16/2-safe-sp-500-financial-dividend-stocks-boomers-can-buy-and-hold-forever/",
+        "https://finance.yahoo.com/markets/stocks/articles/3-financial-stocks-buy-hold-192200717.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8dYYmsxk8IEyqGezDAd0l9hmcwuuld1B7V2WVhhEunIf5bjZjjUSSbu8ICh0",
+      "image_credit": "The Motley Fool",
+      "news": [
+        {
+          "url": "https://www.fool.com/investing/2026/11/16/3-financial-stocks-to-buy-and-hold-that-turned-100/",
+          "title": "3 Financial Stocks to Buy and Hold That Turned $1,000 Into More Than $5,000 Over the Past Decade, Counting Dividends",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8dYYmsxk8IEyqGezDAd0l9hmcwuuld1B7V2WVhhEunIf5bjZjjUSSbu8ICh0"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/11/16/2-safe-sp-500-financial-dividend-stocks-boomers-can-buy-and-hold-forever/",
+          "title": "2 Safe S&P 500 Financial Dividend Stocks Boomers Can Buy and Hold Forever",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRT2YhOEwcfAwTGJ3xyfBDKnKOpRxkgZvSIWDvt56i9svePNmWUZg_2xQF-Hqs"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/3-financial-stocks-buy-hold-192200717.html",
+          "title": "3 Financial Stocks to Buy and Hold That Turned $1,000 Into More Than $5,000 Over the Past Decade, Counting Dividends",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwTRUWiUCP9ULA_AUbpl3HfN-Q2wtuwLRFoX9TPDSoYkS2MFcSZMwknmXr6pU"
+        }
+      ]
+    },
+    {
+      "query": "ed bastian",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T21:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/15/us/router-network-faa-airline-ground-stop.html",
+        "https://apnews.com/article/faa-ground-stop-air-traffic-control-023aa7d681da357310274f750da7ad4e",
+        "https://www.wsj.com/business/airlines/the-defense-contractor-at-the-center-of-the-ground-stop-e20c4173"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7O6w5upc5uK1eU1f3NQ46cqwD70zd6B-i_lz_rwEA2Sdk0Vb4Q7ji90ejf00",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/15/us/router-network-faa-airline-ground-stop.html",
+          "title": "What to Know About the Cause of the FAA’s Nationwide Ground Stop",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7O6w5upc5uK1eU1f3NQ46cqwD70zd6B-i_lz_rwEA2Sdk0Vb4Q7ji90ejf00"
+        },
+        {
+          "url": "https://apnews.com/article/faa-ground-stop-air-traffic-control-023aa7d681da357310274f750da7ad4e",
+          "title": "Scrutiny of FAA intensifies after communications meltdown leads to nationwide grounding",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXHq1MnXD10r2KYkDU5LObvhkHtZM2K2-bv9pMd7nZHtCQczqAOYu4fR8AJ48"
+        },
+        {
+          "url": "https://www.wsj.com/business/airlines/the-defense-contractor-at-the-center-of-the-ground-stop-e20c4173",
+          "title": "L3Harris: The Defense Contractor at the Center of the Ground Stop",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCkI2ExWtaNlfvSUjMpsstpk4fDywyZcyRwsI6-njzg-Vhjy3mxmDHVgQfE6w"
+        }
+      ]
+    },
+    {
+      "query": "malta vs gibraltar",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T21:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cqrmgw1yj3dkt",
+        "https://www.squawka.com/en/news/previews/gibraltar-vs-malta-predictions-betting-tips-16-11-26/",
+        "https://sport.timesofmalta.com/2026/11/16/154239/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cqrmgw1yj3dkt",
+          "title": "Gibraltar vs Malta: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://www.squawka.com/en/news/previews/gibraltar-vs-malta-predictions-betting-tips-16-11-26/",
+          "title": "Gibraltar vs Malta predictions and betting tips: Hosts fancied to repeat their point against the favourites",
+          "publisher": "Squawka",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOtqRNLpKOrovx50y-eERxmj0Ev1h3C45QGapOMOFaFaBT30gaCrHSL5uDdcw"
+        },
+        {
+          "url": "https://sport.timesofmalta.com/2026/11/16/154239/",
+          "title": "Malta coach De Leo eyes statement win in Gibraltar",
+          "publisher": "SportsDesk",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8BWfbkRMF9v-n0rU4nBKeEeKVs1ihWgG-z5iBfxgQ6cWJo2rmWMNgUr0LDsE"
+        }
+      ]
+    },
+    {
+      "query": "ncaa women's soccer tournament 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T21:20:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/soccer-women/article/2026-11-09/2026-di-womens-soccer-championship-selection-show-info-bracket-schedule",
+        "https://dailyorange.com/2026/11/inside-the-numbers-behind-another-woeful-syracuse-womens-soccer-campaign/",
+        "https://athletics.hope.edu/news/2026/11/9/general-womens-soccer-st-louis-bound-mens-soccer-traveling-to-cleveland-for-ncaa-championships.aspx"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSso824CQ3smggXuONgqUovw2C7eR5PXSlyeEeaSXMcl2cqWf_13su6Jf3CaOQ",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/soccer-women/article/2026-11-09/2026-di-womens-soccer-championship-selection-show-info-bracket-schedule",
+          "title": "2026 DI women's soccer championship: Selection show info, bracket, schedule",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSso824CQ3smggXuONgqUovw2C7eR5PXSlyeEeaSXMcl2cqWf_13su6Jf3CaOQ"
+        },
+        {
+          "url": "https://dailyorange.com/2026/11/inside-the-numbers-behind-another-woeful-syracuse-womens-soccer-campaign/",
+          "title": "Inside the numbers behind another woeful Syracuse women’s soccer campaign",
+          "publisher": "The Daily Orange",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaOZ2ztdfaP9uymflSetcXfBmJItC-jfPTMLwG2ReF2T6lCDlc-xTKLGq12xg"
+        },
+        {
+          "url": "https://athletics.hope.edu/news/2026/11/9/general-womens-soccer-st-louis-bound-mens-soccer-traveling-to-cleveland-for-ncaa-championships.aspx",
+          "title": "Women's Soccer St. Louis-Bound, Men's Soccer Traveling to Cleveland for NCAA Championships",
+          "publisher": "Hope College",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTboRUAF0SApk84sqelbSI6UTBX_CqithBQpgHWGy5Hmz0upRo29YIgVuPUhn4"
+        }
+      ]
+    },
     {
       "query": "spacex stocks",
       "approx_searches": "2000+",
@@ -13,7 +188,7 @@
       "related_news_urls": [
         "https://www.barrons.com/articles/why-spacex-stock-down-historic-starship-catch-ec692e2b",
         "https://seekingalpha.com/article/4967990-spacex-math-says-69-percent-downside",
-        "https://www.investing.com/news/stock-market-news/democrats-midterm-sweep-not-bad-at-all-for-spacex-analyst-says-5027337"
+        "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/11/63306262/spacex-stock-to-double-analyst-says-company-completed-the-missing-piece-of-the-reusability-puzzle"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFxjTg0OMoJDoQU9N5zqY02xTQZ0VdCyjOCZppS_GxY1ZAMdyAvFDb2_NQgtU",
       "image_credit": "Barron's",
@@ -33,11 +208,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sS9jTAp6kQzesyavUWewieWWELhfkzZT2dBvLLAQA_UMmsxK5zav4x5Y4g8"
         },
         {
-          "url": "https://www.investing.com/news/stock-market-news/democrats-midterm-sweep-not-bad-at-all-for-spacex-analyst-says-5027337",
-          "title": "Democrats’ midterm sweep \"not bad at all\" for SpaceX, analyst says",
-          "publisher": "Investing.com",
+          "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/11/63306262/spacex-stock-to-double-analyst-says-company-completed-the-missing-piece-of-the-reusability-puzzle",
+          "title": "SpaceX Stock to Double? Analyst Says Company Completed ‘The Missing Piece of the Reusability Puzzle’",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHdmYPiykL6yLByOczyJaJBZv7xju9VEIqw--Mo9cyJaIwsvr7VIJwD7P1nc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUIvq9xXDupRQUICMQrASqNd--OyHUYlCEBazO0ZeCJTi6wkJAlf-l6r9isnk"
         }
       ]
     },
@@ -46,13 +221,20 @@
       "approx_searches": "200+",
       "published_at": "2026-11-16T21:10:00Z",
       "related_news_urls": [
+        "https://www.instyle.com/katie-holmes-gwyneth-paltrow-black-jeans-amazon-november-2026-12252710",
         "https://www.whowhatwear.com/fashion/celebrity-style/katie-holmes-white-jeans-leopard-print-shoes-outfit",
-        "https://www.harpersbazaar.com/uk/fashion/shopping/a74420391/katie-holmes-white-jeans/",
-        "https://www.marieclaire.com/fashion/celebrity-style/katie-holmes-leopard-print-shoe-trend-jimmy-choo-zimmermann-winter-whites/"
+        "https://www.harpersbazaar.com/uk/fashion/shopping/a74420391/katie-holmes-white-jeans/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMkIkqdiSHZgklc9WLOOBBlAjQTx0xRyUrzRVnFuAtJIl3-YEl7KNk6jbiS0c",
-      "image_credit": "Who What Wear",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCiuL61fLsby3Zt5ZKu89m70jBX-F46Lc9J89qSJcjihi6AD2NhlFjk0HK8S4",
+      "image_credit": "InStyle",
       "news": [
+        {
+          "url": "https://www.instyle.com/katie-holmes-gwyneth-paltrow-black-jeans-amazon-november-2026-12252710",
+          "title": "Katie Holmes and Gwyneth Paltrow Upgraded Their Blue Jeans for This Rich-Looking Denim Trend—From $32",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCiuL61fLsby3Zt5ZKu89m70jBX-F46Lc9J89qSJcjihi6AD2NhlFjk0HK8S4"
+        },
         {
           "url": "https://www.whowhatwear.com/fashion/celebrity-style/katie-holmes-white-jeans-leopard-print-shoes-outfit",
           "title": "Katie Holmes Wore the Shoes That'll Make White Jeans Chic in 2027",
@@ -66,13 +248,6 @@
           "publisher": "Harper's BAZAAR",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIQbftIQCD6CHEF__IzwLg9JDzDIrID-v9vMPhZuGf8Ux3MaVRMuGWcHVsBOQ"
-        },
-        {
-          "url": "https://www.marieclaire.com/fashion/celebrity-style/katie-holmes-leopard-print-shoe-trend-jimmy-choo-zimmermann-winter-whites/",
-          "title": "Katie Holmes Puts a \"Wild\" Twist on Winter Whites With the Season's Biggest Animal-Print Trend",
-          "publisher": "Marie Claire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz-2DQoYrQBg_0L1pz21OtARUj_BNlZ_7e08xYdstx1J4PC9bh5DBFHm3oSUQ"
         }
       ]
     },
@@ -81,13 +256,20 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-16T21:00:00Z",
       "related_news_urls": [
+        "https://www.foxnews.com/politics/clarence-thomas-calls-foul-california-ruling-he-says-could-turn-citizens-government-mouthpieces",
         "https://thehill.com/regulation/court-battles/6222413-supreme-court-california-medical-courses-bias-case-rejected/",
-        "https://www.newsweek.com/clarence-thomas-first-amendment-warning-court-rejects-case-12721358",
-        "https://www.usatoday.com/story/news/politics/2026/11/16/supreme-court-doctor-implicit-bias-training-california/92028286007/"
+        "https://www.newsweek.com/clarence-thomas-first-amendment-warning-court-rejects-case-12721358"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwoOI34XHSWD9mnCwKlM6z5U30Qt-Rc23ieF6o2vNJhXlE2pE980UeGzcVG0I",
-      "image_credit": "The Hill",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWZ_Lz7eTuyqD2kSS4TO7lxnEaAjJbHIwg4UBW8uRhJ8JBTYUgQqzg-OtdVQU",
+      "image_credit": "Fox News",
       "news": [
+        {
+          "url": "https://www.foxnews.com/politics/clarence-thomas-calls-foul-california-ruling-he-says-could-turn-citizens-government-mouthpieces",
+          "title": "Clarence Thomas calls foul on California ruling he says could turn citizens into government mouthpieces",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWZ_Lz7eTuyqD2kSS4TO7lxnEaAjJbHIwg4UBW8uRhJ8JBTYUgQqzg-OtdVQU"
+        },
         {
           "url": "https://thehill.com/regulation/court-battles/6222413-supreme-court-california-medical-courses-bias-case-rejected/",
           "title": "Supreme Court won’t review implicit bias mandate for California medical courses",
@@ -101,13 +283,6 @@
           "publisher": "Newsweek",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1ZADv5Dt5ojBZ0Jcr7FwdQQo41SUvqWZtWsnXq98RHkyRB0Q7uXtCccsyCZc"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/politics/2026/11/16/supreme-court-doctor-implicit-bias-training-california/92028286007/",
-          "title": "Supreme Court won't weigh in on doctor bias training",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlRorKFw72riD3ub2LYYoWWrsJu2vlISdRwGmOb7R37iLxESX7KmhOMTcVx84"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "Santa Clarita Valley Signal",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQt4f0bIcuF9SzM_U3yEDgml4slicpCwYAAmk36-06fRLtkP9AqeTOiEj6-mIY"
-        }
-      ]
-    },
-    {
-      "query": "nvidia earnings",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-16T20:50:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-16-2026",
-        "https://www.9news.com/article/news/nation-world/more-drops-for-nvidia-and-other-ai-stocks-us-market-lower/507-5aced221-0d3c-4b08-b7dc-3a83bfbfeeee",
-        "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-16-2026",
-          "title": "Stock Market Today: Nasdaq Slides 1.5% as Nvidia Drama Continues to Unfold — Live Updates",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
-        },
-        {
-          "url": "https://www.9news.com/article/news/nation-world/more-drops-for-nvidia-and-other-ai-stocks-us-market-lower/507-5aced221-0d3c-4b08-b7dc-3a83bfbfeeee",
-          "title": "More drops for Nvidia and other AI stocks drag the US market lower, pulling the S&P 500 down 2%",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxrWAMqUbN-mPUC2vOLtwPXpLaIBrSx-uTrDcQfTc8ixXrKvu7D18kd1NI0T4"
-        },
-        {
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
-          "title": "Stocks fall ahead of Nvidia earnings and Anthropic IPO; oil drops",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCzYOSDZuLzOsIZF_4-S_n16lkyifhqZTp7m9RFQ6GQ57zTlBRFYQ4LZGoEZg"
-        }
-      ]
-    },
-    {
-      "query": "h-1b visa",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T20:40:00Z",
-      "related_news_urls": [
-        "https://www.businessinsider.com/kunal-bahl-india-h1b-rejection-startup-founder-snapdeal-titan-capital-2026-11",
-        "https://timesofindia.indiatimes.com/world/us/microsoft-asked-him-to-go-back-to-india-after-his-h-1b-visa-was-rejected-kunal-bahl-returned-but-to-build-snapdeal-titan-capital/articleshow/135901699.cms",
-        "https://www.indiatoday.in/technology/news/story/indian-microsoft-employee-denied-h-1b-visa-company-tells-him-to-return-to-india-3040147-2026-11-16"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcOa7bzh2RDwHyfwzXlhupQSrA9dZt8KKTkc2XGUfhUnzcqo2hwUtBXF18JsA",
-      "image_credit": "Business Insider",
-      "news": [
-        {
-          "url": "https://www.businessinsider.com/kunal-bahl-india-h1b-rejection-startup-founder-snapdeal-titan-capital-2026-11",
-          "title": "I went back to India when my H-1B was rejected. Now I have 2 public companies and am a judge on 'Shark Tank India'.",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcOa7bzh2RDwHyfwzXlhupQSrA9dZt8KKTkc2XGUfhUnzcqo2hwUtBXF18JsA"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/world/us/microsoft-asked-him-to-go-back-to-india-after-his-h-1b-visa-was-rejected-kunal-bahl-returned-but-to-build-snapdeal-titan-capital/articleshow/135901699.cms",
-          "title": "Microsoft asked him to go back to India after his H-1B visa was rejected. Kunal Bahl returned, but to bu",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgxw9QRh98iDXxk2wJDbST786V4PTz5nagO8yl2UM5HdPbmrfbz5xmFCjLGJo"
-        },
-        {
-          "url": "https://www.indiatoday.in/technology/news/story/indian-microsoft-employee-denied-h-1b-visa-company-tells-him-to-return-to-india-3040147-2026-11-16",
-          "title": "Microsoft told him to move back to India after H-1B denial. He built Snapdeal",
-          "publisher": "India Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUDrCw9CO5oJdMpLUm67FhDzyEJ3SUo2rEhIXGoRvKX2Jn9xrKn_9nlo4EWo"
-        }
-      ]
-    },
-    {
-      "query": "clavicular",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T20:40:00Z",
-      "related_news_urls": [
-        "https://www.complex.com/pop-culture/a/jadegomez510/clavicular-lily-snyder-shaved-head-acne",
-        "https://www.themirror.com/entertainment/celebrity-news/clavicular-girlfriend-shaves-her-head-2111389",
-        "https://dailycollegian.com/2026/11/satire-clavicular-tours-the-pentagon/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEGbTh86ReSSBjl5HTorQxlDelWWX5q1JTqdGGzqymUBYcOQ4xTNmperBvCqY",
-      "image_credit": "Complex",
-      "news": [
-        {
-          "url": "https://www.complex.com/pop-culture/a/jadegomez510/clavicular-lily-snyder-shaved-head-acne",
-          "title": "Clavicular Admits Girlfriend Shaving Head to Prevent Giving Him Acne Was ‘Amazing Bait’",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEGbTh86ReSSBjl5HTorQxlDelWWX5q1JTqdGGzqymUBYcOQ4xTNmperBvCqY"
-        },
-        {
-          "url": "https://www.themirror.com/entertainment/celebrity-news/clavicular-girlfriend-shaves-her-head-2111389",
-          "title": "Clavicular slammed as his girlfriend shaves her head to stop him breaking out in acne",
-          "publisher": "The Mirror US",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ZuRGOBOWP2IQAfziC3e9aR7QfzqB1YrQ6lN3IEyBvPR-YK26fNoqRONjGx8"
-        },
-        {
-          "url": "https://dailycollegian.com/2026/11/satire-clavicular-tours-the-pentagon/",
-          "title": "Satire: Clavicular tours the Pentagon",
-          "publisher": "Massachusetts Daily Collegian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd4Mc9_krYyFE00GQ4wGVHBLjTpItd7fO0UAZh8-k0ZQ3kiqDXQKEUS9nl21g"
-        }
-      ]
-    },
-    {
-      "query": "j t realmuto",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T20:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/phillies-acquire-padres-backstop-jt-113000879.html",
-        "https://www.mlbtraderumors.com/2026/11/phillies-brian-navarreto-agree-to-minor-league-deal.html",
-        "https://roundtable.io/sports/mlb/phillies/news/philadelphia-phillies-poach-veteran-catcher-from-nl-east-rival"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7QoEcqTHJjpxupY8ukPqscQd0yubiZWsxHJZnSbSSuoo8aJqGyySfHZYKDWA",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/phillies-acquire-padres-backstop-jt-113000879.html",
-          "title": "Phillies Acquire Padres Backstop After JT Realmuto Decision",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7QoEcqTHJjpxupY8ukPqscQd0yubiZWsxHJZnSbSSuoo8aJqGyySfHZYKDWA"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/phillies-brian-navarreto-agree-to-minor-league-deal.html",
-          "title": "Phillies, Brian Navarreto Agree To Minor League Deal",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK9bFP2WNBOBA1v-KSQRafJQE_dmt3qplMNxGU3gDPeC8YrNWyIBAZY7u9kds"
-        },
-        {
-          "url": "https://roundtable.io/sports/mlb/phillies/news/philadelphia-phillies-poach-veteran-catcher-from-nl-east-rival",
-          "title": "Philadelphia Phillies Poach Veteran Catcher From NL East Rival",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlpgH11XYPCL65iKR3pmh4m58N6gn7-1eMnHFr0Up9xiD3Pw_z2kC6grhuXyA"
-        }
-      ]
-    },
-    {
-      "query": "tornado warning santa cruz",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T20:30:00Z",
-      "related_news_urls": [
-        "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
-        "https://www.ktvu.com/news/santa-cruz-county-tornado-warning",
-        "https://www.cbsnews.com/sanfrancisco/news/santa-cruz-county-tornado-warning-sfo-water-spouts/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKjvZySUPhlKlOQzGN0mVYg91I19f2rbbeCJT7N3HQzqEh2rHenuGxmFoocZQ",
-      "image_credit": "ABC7 Bay Area",
-      "news": [
-        {
-          "url": "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
-          "title": "Live storm updates: Tornado Warning issued for Santa Cruz Co., reports of waterspouts on SF Bay",
-          "publisher": "ABC7 Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKjvZySUPhlKlOQzGN0mVYg91I19f2rbbeCJT7N3HQzqEh2rHenuGxmFoocZQ"
-        },
-        {
-          "url": "https://www.ktvu.com/news/santa-cruz-county-tornado-warning",
-          "title": "Tornado warning in effect for parts of Santa Cruz County",
-          "publisher": "KTVU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_UOKUiqzqwJ7tpywRIzjnMYb8lI79BARSfolROLiSaRnR79UH7oYIv4Pv9fU"
-        },
-        {
-          "url": "https://www.cbsnews.com/sanfrancisco/news/santa-cruz-county-tornado-warning-sfo-water-spouts/",
-          "title": "Part of Santa Cruz County under tornado warning as storms move through region",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFvIlhGamz-rEhmz40kTCSEGMoATBh7nNasleDTQQrUsUXhR9y5C43mdNJ_-U"
         }
       ]
     }
