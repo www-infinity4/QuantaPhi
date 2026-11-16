@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T01:31:36.856624Z",
+  "checked_at": "2026-11-16T02:01:36.396074Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "predators vs sharks",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T01:10:00Z",
+      "query": "ja'marr chase",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T01:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-san-jose-sharks-prediction-odds-2026-11-15/",
-        "https://www.ontheforecheck.com/game-day-thread-nashville-predators-at-san-jose-sharks/"
+        "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/15/collinsworth-missed-holding-penalty-jamarr-chase-bengals-steelers/92801699007/",
+        "https://www.espn.com/espn/betting/story/_/id/50446201/nfl-week-10-odds-betting-picks-steelers-bengals-preview",
+        "https://www.cincinnati.com/picture-gallery/sports/nfl/bengals/2026/11/15/see-photos-from-bengals-vs-steelers-on-sunday-night-football/92802119007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFH2jp1mbJGWwFCfNafn_oija9rkofdgO4cks5IP8rP1DOhXF3uiWoCaIbY8I",
+      "image_credit": "Cincinnati Enquirer",
       "news": [
         {
-          "url": "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026",
-          "title": "Predators at Sharks projected lineups",
-          "publisher": "NHL.com",
+          "url": "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/15/collinsworth-missed-holding-penalty-jamarr-chase-bengals-steelers/92801699007/",
+          "title": "Collinsworth says officials missed end-zone holding of Ja'Marr Chase",
+          "publisher": "Cincinnati Enquirer",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFH2jp1mbJGWwFCfNafn_oija9rkofdgO4cks5IP8rP1DOhXF3uiWoCaIbY8I"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-san-jose-sharks-prediction-odds-2026-11-15/",
-          "title": "Nashville Predators vs San Jose Sharks Prediction, Picks & Odds | 15 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtMH1BxMYRoXFtf2405fLUZKSNq8_9HaBteLEBHwWqGbniETDbM1ULN7yhxc8"
-        },
-        {
-          "url": "https://www.ontheforecheck.com/game-day-thread-nashville-predators-at-san-jose-sharks/",
-          "title": "Game Day Thread – Nashville Predators at San Jose Sharks",
-          "publisher": "On the Forecheck",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIxDJmc4LnmTuC4s4yAZbmXeFbFU5E9ZHYwZAzIcnfPaOVkjsopI1AHXZpHw"
-        }
-      ]
-    },
-    {
-      "query": "canucks vs golden knights",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T01:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/lineup-notes-canucks-switch-lines-193027802.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/vancouver-canucks-vs-vegas-golden-knights-prediction-odds-2026-11-15/",
-        "https://canucksarmy.com/news/scenes-morning-skate-lekkerimaki-boeser-swap-lines-vancouver-canucks-start-road-trip-vegas-golden-knights"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyO_gxy9oeyKau56Kn5RZP57UzLExyutkL_9HS5aqUeh2pWSPBp36SrNT48zw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/lineup-notes-canucks-switch-lines-193027802.html",
-          "title": "Lineup Notes: Canucks Switch Up Lines Ahead Of Matchup With The Golden Knights",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyO_gxy9oeyKau56Kn5RZP57UzLExyutkL_9HS5aqUeh2pWSPBp36SrNT48zw"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/vancouver-canucks-vs-vegas-golden-knights-prediction-odds-2026-11-15/",
-          "title": "Vancouver Canucks vs Vegas Golden Knights Prediction, Picks & Odds | 15 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-FBPGZ88o6XTp9enIAsrsutM5E4b9zaN__44xn8Omej7KzF0UXS7yES7NwbA"
-        },
-        {
-          "url": "https://canucksarmy.com/news/scenes-morning-skate-lekkerimaki-boeser-swap-lines-vancouver-canucks-start-road-trip-vegas-golden-knights",
-          "title": "Scenes from morning skate: Lekkerimäki and Boeser swap lines as Canucks start road trip vs. Golden Knights",
-          "publisher": "Canucks Army",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO_5LItl4xHJ_CChWNQPbVaPGbU6TU6Pz5qmVijIAdVuQjy1LqDwsx5V003Qc"
-        }
-      ]
-    },
-    {
-      "query": "amen thompson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T01:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50434799/stephen-curry-kevin-durant-warriors-rockets",
-        "https://warriors.com/news/gameday-preview-20261111",
-        "https://www.goldenstateofmind.com/warriors-injury-report/24480999/warriors-rockets-injury-report-will-richard-brandon-williams"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJwNi8tZSGj9wNnhTFGl1iDcvwGeE6izioGgFEAU41ajl2MShfsQoOZ2jw2CA",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50434799/stephen-curry-kevin-durant-warriors-rockets",
-          "title": "The historic (and absurd) longevity of Steph Curry and Kevin Durant",
+          "url": "https://www.espn.com/espn/betting/story/_/id/50446201/nfl-week-10-odds-betting-picks-steelers-bengals-preview",
+          "title": "Steelers-Bengals odds, analysis, betting tips and recommended props",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJwNi8tZSGj9wNnhTFGl1iDcvwGeE6izioGgFEAU41ajl2MShfsQoOZ2jw2CA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThXx7hz9OdMFd1a6EIBYpX1emQ1XmCl8eOt_w3iqAU-v_ONv5etSfYjZM3KZ0"
         },
         {
-          "url": "https://warriors.com/news/gameday-preview-20261111",
-          "title": "Game Preview: Warriors at Rockets - 11/11/26",
-          "publisher": "NBA.com",
+          "url": "https://www.cincinnati.com/picture-gallery/sports/nfl/bengals/2026/11/15/see-photos-from-bengals-vs-steelers-on-sunday-night-football/92802119007/",
+          "title": "The Bengals take on the Steelers with a white out Sunday evening",
+          "publisher": "Cincinnati Enquirer",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPIfeu_oVFnu4G2YGalf-KM2IqfARW2H1Dh-hOFmU3LQKBdFQh18fvkmPH_Pc"
-        },
-        {
-          "url": "https://www.goldenstateofmind.com/warriors-injury-report/24480999/warriors-rockets-injury-report-will-richard-brandon-williams",
-          "title": "Warriors vs. Rockets injury report: Will Richard upgraded to probable",
-          "publisher": "Golden State Of Mind",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLEmocS1fSuMyzCVkBftU8AKrLeSQ9lGkE_SaPTpobGxXAmbJHetaZ_1HH3cg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0193nnTrEyVZgJIxAGvOIZGSKQ-YaUiQKbj7ShCVMA99z3It8AP4hWWOeM8A"
         }
       ]
     },
     {
-      "query": "knicks vs toronto raptors match player stats",
+      "query": "kurt russell",
       "approx_searches": "1000+",
-      "published_at": "2026-11-16T01:10:00Z",
+      "published_at": "2026-11-16T01:40:00Z",
       "related_news_urls": [
-        "https://www.nba.com/game/sas-vs-uta-0022600239/box-score",
-        "https://www.startribune.com/minnesota-timberwolves-chicago-bulls-lamelo-ball-stats-anthony-edwards-injury-update-wolves-roster/601914485",
-        "https://dunkingwithwolves.com/4-timberwolves-players-who-are-stepping-up-the-most-without-anthony-edwards"
+        "https://deadline.com/lists/new-christmas-movies-2026-streaming/",
+        "https://www.yahoo.com/entertainment/movies/articles/5-best-christmas-movies-netflix-061500882.html",
+        "https://www.cnn.com/2026/11/11/entertainment/video/entertainment-showbiz-hollywood-november-christmas-holiday-movies-roku-channel-hulu-hallmark-theaters-ebenezer"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRp4BMfO9DzxGg3fPHDrxCnyEu2KpZbgG_iRR6Xv1G0HcBa6JlS1MQbAa7FPp4",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_6n7QXPWUwPDoYNej-CzMlwbAlwhF5Zdx1NPsLoI4OWj75SDcN35zNKiHsrk",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://www.nba.com/game/sas-vs-uta-0022600239/box-score",
-          "title": "San Antonio Spurs vs Utah Jazz Nov 15, 2026 Box Scores",
-          "publisher": "NBA.com",
+          "url": "https://deadline.com/lists/new-christmas-movies-2026-streaming/",
+          "title": "New Christmas Movies Coming Out In 2026 On Netflix, Prime Video",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRp4BMfO9DzxGg3fPHDrxCnyEu2KpZbgG_iRR6Xv1G0HcBa6JlS1MQbAa7FPp4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_6n7QXPWUwPDoYNej-CzMlwbAlwhF5Zdx1NPsLoI4OWj75SDcN35zNKiHsrk"
         },
         {
-          "url": "https://www.startribune.com/minnesota-timberwolves-chicago-bulls-lamelo-ball-stats-anthony-edwards-injury-update-wolves-roster/601914485",
-          "title": "Wolves are winning without Anthony Edwards — and aren’t changing their identity",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbaQnIzY6yWIYjocwDn6tytcLVqOeTAHcedyTK7VNH0fSpUpSe59c-493d_Ww"
-        },
-        {
-          "url": "https://dunkingwithwolves.com/4-timberwolves-players-who-are-stepping-up-the-most-without-anthony-edwards",
-          "title": "4 Timberwolves players who are stepping up the most without Anthony Edwards",
-          "publisher": "Dunking with Wolves",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjAtAdfRl15rsBx1DH2GuntiCbwcnK8myIWU3Z0hReL1KGaiQqOoBcuXuOSqQ"
-        }
-      ]
-    },
-    {
-      "query": "thunder vs kings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T01:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/thunder-vs-kings-live-updates-010033570.html",
-        "https://www.sportsgambler.com/betting-tips/basketball/oklahoma-city-thunder-vs-sacramento-kings-prediction-odds-6019797/",
-        "https://kingsherald.com/articles/kings-vs-thunder-winless-at-home-gracious-as-ever-hoping-to-dust-off-the-beam/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE16e0LbG4vQW7smOSak0G5RqPxDFLyrmQJYx5r2d_KjdJQTHb8Dg_j0O_pf4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/thunder-vs-kings-live-updates-010033570.html",
-          "title": "Thunder vs. Kings: Live updates, highlights for Sunday's game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE16e0LbG4vQW7smOSak0G5RqPxDFLyrmQJYx5r2d_KjdJQTHb8Dg_j0O_pf4"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/oklahoma-city-thunder-vs-sacramento-kings-prediction-odds-6019797/",
-          "title": "Oklahoma City Thunder vs Sacramento Kings Prediction, Picks & Odds | NBA Sunday",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHWdYI7MSRQXi0Lfm1_OpXdpl7D47EjQV3nIFeQQXB73mGYlBjsuDT7OtZppY"
-        },
-        {
-          "url": "https://kingsherald.com/articles/kings-vs-thunder-winless-at-home-gracious-as-ever-hoping-to-dust-off-the-beam/",
-          "title": "Kings vs. Thunder: Winless at Home, Gracious as Ever, Hoping to Dust Off the Beam",
-          "publisher": "The Kings Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0VfxLXUEqgwqtptxkmhdI7A4Vz-8jwPgGuW8pv4Xwq3TQAxRqExAKTWgP1G8"
-        }
-      ]
-    },
-    {
-      "query": "coastal carolina vs wisconsin",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T01:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/wisconsin-badgers-vs-coastal-carolina-005410094.html",
-        "https://www.sportsgambler.com/betting-tips/basketball/coastal-carolina-chanticleers-vs-wisconsin-badgers-prediction-odds-2026-11-15/",
-        "https://www.jsonline.com/story/sports/college/uw/2026/11/15/wisconsin-badgers-basketball-vs-coastal-carolina-score-live-game-updates-highlights-channel-recap--live/92768652007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqvY1aQ5BliE9I73LiZ2CiHRsTu4iR4OU4ObKv1y9mKAhbt59VDurNbD6NnCk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/wisconsin-badgers-vs-coastal-carolina-005410094.html",
-          "title": "Wisconsin Badgers vs. Coastal Carolina Chanticleers Game Thread: Time to continue the early momentum",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqvY1aQ5BliE9I73LiZ2CiHRsTu4iR4OU4ObKv1y9mKAhbt59VDurNbD6NnCk"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/coastal-carolina-chanticleers-vs-wisconsin-badgers-prediction-odds-2026-11-15/",
-          "title": "Coastal Carolina vs Wisconsin Prediction, Picks & Odds | 15 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuX7d07eLzkMq7BLOmlSi1AMJz9fh4Kdo5o3Yt3AwQy9ngTpW_Jxf0_v0yVQg"
-        },
-        {
-          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/15/wisconsin-badgers-basketball-vs-coastal-carolina-score-live-game-updates-highlights-channel-recap--live/92768652007/",
-          "title": "Wisconsin basketball vs Coastal Carolina score, live updates, highlights",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPck43c5c2ms0afWf6hC7BC4H_t3NUW1ds2Aw555MzEmK372F9X9dcZtZg4wE"
-        }
-      ]
-    },
-    {
-      "query": "jamal shead",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T01:00:00Z",
-      "related_news_urls": [
-        "https://www.thestar.com/sports/doug-smiths-sports-blog/raptors-mailbag-can-this-to-be-a-contender-with-immanuel-quickley-starting/article_04a241bd-8072-4835-ae32-0e0248adf6dc.html",
-        "https://raptorsrapture.com/raptors-are-overlooking-the-best-roles-for-immanuel-quickley-and-jamal-shead",
-        "https://www.si.com/nba/raptors/onsi/why-immanuel-quickley-should-remain-as-raptors-starting-point-guard-and-why-he-shouldnt"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRO2HWDXBtCQMSwCLm0yA8hPbpeBZKZ9uLWFX2mBViOad25rcM7OAPTaMbbcw",
-      "image_credit": "Toronto Star",
-      "news": [
-        {
-          "url": "https://www.thestar.com/sports/doug-smiths-sports-blog/raptors-mailbag-can-this-to-be-a-contender-with-immanuel-quickley-starting/article_04a241bd-8072-4835-ae32-0e0248adf6dc.html",
-          "title": "Doug Smith: Raptors mailbag: Can this team be a contender with Immanuel Quickley starting?",
-          "publisher": "Toronto Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRO2HWDXBtCQMSwCLm0yA8hPbpeBZKZ9uLWFX2mBViOad25rcM7OAPTaMbbcw"
-        },
-        {
-          "url": "https://raptorsrapture.com/raptors-are-overlooking-the-best-roles-for-immanuel-quickley-and-jamal-shead",
-          "title": "Raptors are overlooking the best roles for Immanuel Quickley and Jamal Shead",
-          "publisher": "Raptors Rapture",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW7Jz_CYX25wtgf3zBLtpaHciAJxN88kCsvweXuT7mCsVj5J6yU69Y2tlyLnI"
-        },
-        {
-          "url": "https://www.si.com/nba/raptors/onsi/why-immanuel-quickley-should-remain-as-raptors-starting-point-guard-and-why-he-shouldnt",
-          "title": "Why Immanuel Quickley Should Remain Raptors Starting PG (And Why He Shouldn't)",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvraKBeOfZkf6SaJvaoflRuopC-j5iyiYpEjks1G30LHHBvHAcC9oOyFVu11s"
-        }
-      ]
-    },
-    {
-      "query": "dutton ranch season 2",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T01:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/dutton-ranch-season-2-release-143000640.html",
-        "https://thedirect.com/article/dutton-ranch-season-2-paramount-plus-release-taylor-sheridan-series",
-        "https://decider.com/2026/11/08/dutton-ranch-season-2-release-date-info-when-does-second-season-dutton-ranch-come-out/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTzMVSly7qcAeixfhvD2RcybNbdmaWVZAFAdvooWADyZy_KH0b1DywwLqKbT8",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/dutton-ranch-season-2-release-143000640.html",
-          "title": "‘Dutton Ranch’ Season 2 Release Date Info: When Does ‘Dutton Ranch’ Return?",
+          "url": "https://www.yahoo.com/entertainment/movies/articles/5-best-christmas-movies-netflix-061500882.html",
+          "title": "5 best Christmas movies on Netflix to get you in the festive spirit",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTzMVSly7qcAeixfhvD2RcybNbdmaWVZAFAdvooWADyZy_KH0b1DywwLqKbT8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMs0Qm3izE7f-Kr6OSmwNb9y6a-PprF4TE6HqmgjqqCiTYZDNFOVFuQVZthLU"
         },
         {
-          "url": "https://thedirect.com/article/dutton-ranch-season-2-paramount-plus-release-taylor-sheridan-series",
-          "title": "Report: Dutton Ranch Season 2 Is No Longer Expected To Release On Paramount+ Until After Taylor Sheridan's 2 Ongoing Series & Upcoming Season Premiere",
-          "publisher": "The Direct",
+          "url": "https://www.cnn.com/2026/11/11/entertainment/video/entertainment-showbiz-hollywood-november-christmas-holiday-movies-roku-channel-hulu-hallmark-theaters-ebenezer",
+          "title": "It’s Christmas in November at the movies",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWxRpMpqu2qO6hr0eQ8tuyWbVtNSNsycFjv38KZ3ih515P8xUQCDIPwBHmfEw"
-        },
-        {
-          "url": "https://decider.com/2026/11/08/dutton-ranch-season-2-release-date-info-when-does-second-season-dutton-ranch-come-out/",
-          "title": "When does the second season of ‘Dutton Ranch’ come out? ‘Dutton Ranch’ Season 2 release date info",
-          "publisher": "Decider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmagId99bs1YpVtOSUkAuHXRXvqHkfVvxBuNdVhBBfGZT7zHdHSs0fei3z9bg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrpFxyNMEIsYL5N_Gifo_hzgI38BNqC2cCzFEk0V6iKBEtGDFkPuoIUFKz8TA"
         }
       ]
     },
     {
-      "query": "chargers vs ravens",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T01:00:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/baltimore/news/ravens-chargers-moves-onto-list-of-monday-night-matchups-that-lost-their-luster/",
-        "https://www.baltimoresun.com/2026/11/15/ravens-chargers-scouting-report-monday-night-football/",
-        "https://www.rotoballer.com/mnf-start-sit-chart-week-10-fantasy-football-matchups-for-monday-night-football-2026/1992010"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYZkonXzMuo3QFK0tSrZg2_X43mxVz7enQlew-r_AOe8-waKqSK7NCNoCU094",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/baltimore/news/ravens-chargers-moves-onto-list-of-monday-night-matchups-that-lost-their-luster/",
-          "title": "Ravens-Chargers moves onto list of Monday night matchups that lost their luster",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYZkonXzMuo3QFK0tSrZg2_X43mxVz7enQlew-r_AOe8-waKqSK7NCNoCU094"
-        },
-        {
-          "url": "https://www.baltimoresun.com/2026/11/15/ravens-chargers-scouting-report-monday-night-football/",
-          "title": "Ravens vs. Chargers scouting report: A chance to ‘reset’ vs. winless LA",
-          "publisher": "Baltimore Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx3T-yZxeHb6dfcpElcNGNNr2as_suuLqEEMOoL_43cXYSTiZUkna3ciPy1Oc"
-        },
-        {
-          "url": "https://www.rotoballer.com/mnf-start-sit-chart-week-10-fantasy-football-matchups-for-monday-night-football-2026/1992010",
-          "title": "MNF Start/Sit Chart - Week 10 Fantasy Football Matchups for Monday Night Football (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPzwGqp4H965-rx-IW6OhIIs54kbDkd1iSWWGnrs0JJtjs_mKdufFjiZfY2uw"
-        }
-      ]
-    },
-    {
-      "query": "anthony davis",
+      "query": "chris pratt",
       "approx_searches": "2000+",
-      "published_at": "2026-11-16T00:50:00Z",
+      "published_at": "2026-11-16T01:40:00Z",
       "related_news_urls": [
-        "https://www.on3.com/teams/kentucky-wildcats/news/bbnba-anthony-davis-is-finally-healthy-and-playing-like-it/",
-        "https://www.espn.com/video/clip/_/id/50465951/anthony-davis-takes-flight-alley-oop-slam",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/anthony-davis-turns-in-30-15-double-double-vs-det"
+        "https://variety.com/2026/film/news/chris-pratt-james-gunn-guardians-of-the-galaxy-4-dc-exit-1236947808/",
+        "https://www.imdb.com/news/ni66110498/?ref_=nmnw_art_perm",
+        "https://collider.com/chris-pratt-star-lord-return-james-gunn/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPTWYOD9DGNTr33KfRP0PlzcV3mNbpvy-5FzGcV5r4razQYDjQvDtaP2rIplM",
-      "image_credit": "On3",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RxfRRHj12rSSUUpjm_q2fvKFu7ctEjhoKtfNxzO8dPgFKIbf518QHzGKjgc",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://www.on3.com/teams/kentucky-wildcats/news/bbnba-anthony-davis-is-finally-healthy-and-playing-like-it/",
-          "title": "BBNBA: Anthony Davis is finally healthy and playing like it",
-          "publisher": "On3",
+          "url": "https://variety.com/2026/film/news/chris-pratt-james-gunn-guardians-of-the-galaxy-4-dc-exit-1236947808/",
+          "title": "Chris Pratt Says He ‘Would Love’ James Gunn to Direct a Fourth ‘Guardians of the Galaxy’ Film After DC Exit",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPTWYOD9DGNTr33KfRP0PlzcV3mNbpvy-5FzGcV5r4razQYDjQvDtaP2rIplM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RxfRRHj12rSSUUpjm_q2fvKFu7ctEjhoKtfNxzO8dPgFKIbf518QHzGKjgc"
         },
         {
-          "url": "https://www.espn.com/video/clip/_/id/50465951/anthony-davis-takes-flight-alley-oop-slam",
-          "title": "Anthony Davis takes flight for alley-oop slam",
-          "publisher": "ESPN",
+          "url": "https://www.imdb.com/news/ni66110498/?ref_=nmnw_art_perm",
+          "title": "Chris Pratt Is Open to a Star-Lord Reunion After James Gunn’s DC Studios Exit",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlwVQRSQvbQVORVfYI5TSrndew8L_okEi865tQpEMuCrKgPWpvPHeMF7Ck5Jk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTifiakEhHiFdkuimnm5UWBA7xGxjiiiKwJ0yFhlfsq6ckfF-g84onZp2EOldc"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/anthony-davis-turns-in-30-15-double-double-vs-det",
-          "title": "Anthony Davis turns in 30/15 double-double vs. DET",
-          "publisher": "NBC Sports",
+          "url": "https://collider.com/chris-pratt-star-lord-return-james-gunn/",
+          "title": "Chris Pratt Officially Addresses Star-Lord Return Amid James Gunn's DC Departure",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4VMvS9Fhc9ge8snCl8XISCL7Cc9pHa55qStDkbG_wvw5BfS2IQNr1Wl6NpG8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiAv0eN_rXIXH5uFIs4vW6JpNK4A0eU_Ys5oPjo3jdWpupyZO1CJBAh1QlCjA"
+        }
+      ]
+    },
+    {
+      "query": "goldie hawn",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T01:40:00Z",
+      "related_news_urls": [
+        "https://www.townandcountrymag.com/society/tradition/a74051959/goldie-hawn-mind-up-interview-2026/",
+        "https://parade.com/celebrities/goldie-hawn-what-makes-her-happy-exclusive",
+        "https://timesofindia.indiatimes.com/world/us/in-2003-goldie-hawn-started-a-programme-to-help-children-manage-stress-and-understand-emotions-23-years-later-mindup-reports-reaching-more-than-7-million-children-across-48-countries-through-brain-based-lessons/articleshow/135601345.cms"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi1GQGLnYfens1N65VbUOkMtws_MONnlBLZG_lUJuaJoFoihLWxwLrO44cRQg",
+      "image_credit": "Town & Country Magazine",
+      "news": [
+        {
+          "url": "https://www.townandcountrymag.com/society/tradition/a74051959/goldie-hawn-mind-up-interview-2026/",
+          "title": "Goldie Hawn Has Always Been Ahead of the Curve",
+          "publisher": "Town & Country Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi1GQGLnYfens1N65VbUOkMtws_MONnlBLZG_lUJuaJoFoihLWxwLrO44cRQg"
+        },
+        {
+          "url": "https://parade.com/celebrities/goldie-hawn-what-makes-her-happy-exclusive",
+          "title": "Goldie Hawn Reveals What Makes Her Happiest Now (Exclusive)",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDm7e0YSn8QQ_JPXwL5k29LTtgcuRIDn4RVrU0IBvxAQXAJTUZGFJjC2WVRHU"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/world/us/in-2003-goldie-hawn-started-a-programme-to-help-children-manage-stress-and-understand-emotions-23-years-later-mindup-reports-reaching-more-than-7-million-children-across-48-countries-through-brain-based-lessons/articleshow/135601345.cms",
+          "title": "In 2003, Goldie Hawn started a programme to help children manage stress and understand emotions; 23 years",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwJhS61hmYdzlq5LjN821yZMrcDYpm6AFNEF9nQswSQbWqFDtSwhHVNFZbCyg"
+        }
+      ]
+    },
+    {
+      "query": "south fulton police fugitive search",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T01:40:00Z",
+      "related_news_urls": [
+        "https://www.wsbtv.com/news/local/police-need-help-locating-fugitive-att-offering-up-10k-information-leading-his-arrest/7GP6NKYOZREENAKYRNJZMP7QHQ/",
+        "https://hoodline.com/2026/11/south-fulton-police-offer-10k-to-find-man-tied-to-cell-tower-equipment-theft/",
+        "https://www.yahoo.com/news/articles/10k-reward-offered-man-linked-160747281.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrRc0gSY3pT3qO2yiEOFVFfPVehLApUbEDSDHVmARj9_M_W-6_dbyJAIN3gjQ",
+      "image_credit": "WSB-TV",
+      "news": [
+        {
+          "url": "https://www.wsbtv.com/news/local/police-need-help-locating-fugitive-att-offering-up-10k-information-leading-his-arrest/7GP6NKYOZREENAKYRNJZMP7QHQ/",
+          "title": "Police need help locating fugitive; AT&T offering up to $10k for information leading to his arrest",
+          "publisher": "WSB-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrRc0gSY3pT3qO2yiEOFVFfPVehLApUbEDSDHVmARj9_M_W-6_dbyJAIN3gjQ"
+        },
+        {
+          "url": "https://hoodline.com/2026/11/south-fulton-police-offer-10k-to-find-man-tied-to-cell-tower-equipment-theft/",
+          "title": "South Fulton Police Seek Brandon Chambers in Cell Tower Theft",
+          "publisher": "Hoodline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTM7b2Z9BKiGs4UA3om9yyr3OQOLoUJX0Ms6SEhpbKb9ERBd40UamHRtd1lh4c"
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/10k-reward-offered-man-linked-160747281.html",
+          "title": "$10K reward offered for man linked to cell tower equipment theft",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSP8i0M9Y83dfvGTMib4iHlcPOiNX8o4kTlz10oDxWHD7pv0bTL7N2yFtc0XaU"
+        }
+      ]
+    },
+    {
+      "query": "robert pattinson twilight",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T01:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66102458/?ref_=ttnw_art_perm",
+        "https://vogueadria.com/novi-twilight-netflix/",
+        "https://www.cbr.com/twilight-netflix-reboot-bella-edward/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh4Y3rw0ypsVKvFl1dG2lbC5TkJ_RNoPhnjiUejeGF14k1_pEGk6sK20BOPig",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66102458/?ref_=ttnw_art_perm",
+          "title": "Netflix’s Twilight Reboot Officially Replaces Robert Pattinson and Kristen Stewart",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh4Y3rw0ypsVKvFl1dG2lbC5TkJ_RNoPhnjiUejeGF14k1_pEGk6sK20BOPig"
+        },
+        {
+          "url": "https://vogueadria.com/novi-twilight-netflix/",
+          "title": "News we didn’t see coming: The new Twilight officially gets a new Edward and Bella",
+          "publisher": "Vogue Adria",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTyIjfl6xrD1p9MXlgWBiL8YILHZtFnWmkCudu4TMAv_gfpLBwAfUPy515I3k"
+        },
+        {
+          "url": "https://www.cbr.com/twilight-netflix-reboot-bella-edward/",
+          "title": "Netflix's Twilight Reboot Recasts Bella Swan and Edward Cullen",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMZBWLEl_b9c3nMn4iBVh8YJFfg_eFlbM9V1AnlpIH8Ji6tS6hvT612BOdLLQ"
+        }
+      ]
+    },
+    {
+      "query": "prison",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T01:30:00Z",
+      "related_news_urls": [
+        "https://people.com/russell-brand-wife-laura-gallacher-speaks-out-after-his-rape-conviction-prison-sentence-12256499",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/russell-brands-wife-breaks-her-011251306.html",
+        "https://www.nbcnews.com/pop-culture/pop-culture-news/russell-brand-says-not-guilty-statement-prison-read-wife-rcna609472"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuYRaPGZIJNMlKt4sfw_ueBccPTvHSrnc8JaJTRAUkVka7Yhhwe6ePKK-Ovo8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/russell-brand-wife-laura-gallacher-speaks-out-after-his-rape-conviction-prison-sentence-12256499",
+          "title": "Russell Brand’s Wife Laura Speaks Out After His Rape Conviction and Prison Sentence: ‘It’s Painful’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuYRaPGZIJNMlKt4sfw_ueBccPTvHSrnc8JaJTRAUkVka7Yhhwe6ePKK-Ovo8"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/russell-brands-wife-breaks-her-011251306.html",
+          "title": "Russell Brand's wife breaks her silence, reveals his message from prison",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvXHwj46JmH30UKZiaR48fuEudJlCBkR1MGuQ51m0bFjy2oYYPmDRJB_Kkhw"
+        },
+        {
+          "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/russell-brand-says-not-guilty-statement-prison-read-wife-rcna609472",
+          "title": "Russell Brand says ‘I am not guilty’ in statement from prison read by his wife",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIWFBE1Av5ox7Jm1OzlA7V_5Ho11sTgqCfIAUybAnXC07pqFRFSddNSRfiTR4"
+        }
+      ]
+    },
+    {
+      "query": "jj watt",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-16T01:30:00Z",
+      "related_news_urls": [
+        "https://www.ajc.com/sports/2026/11/chiefs-falcons-george-karlaftis-jawaan-taylor/",
+        "https://sports.yahoo.com/articles/entire-coaching-staff-needs-dismissed-234018560.html",
+        "https://sportsnaut.com/uncategorized/j-j-watt-exposes-atlanta-falcons-jawaan-taylor-on-live-tv"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOAzKwKdDoBZRflYcjioXVvcCsBCVNi6cq8BOsRdbMHdlg_0OX5gGV1rFGQZw",
+      "image_credit": "The Atlanta Journal-Constitution",
+      "news": [
+        {
+          "url": "https://www.ajc.com/sports/2026/11/chiefs-falcons-george-karlaftis-jawaan-taylor/",
+          "title": "Chiefs defender confirms Falcons play-call tell involving Jawaan Taylor",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOAzKwKdDoBZRflYcjioXVvcCsBCVNi6cq8BOsRdbMHdlg_0OX5gGV1rFGQZw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/entire-coaching-staff-needs-dismissed-234018560.html",
+          "title": "‘Entire Coaching Staff Needs To Be Dismissed,’ ‘This Team Is So Embarrassing’ — NFL Fans React to J.J. Watt Exposing Falcons Player for ‘Tipping Plays’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgYP89dAHql_g1IxgJJa0yafFD0zZtIPc7AsUV4SDTm93tRbjaMcB0kf4dwZQ"
+        },
+        {
+          "url": "https://sportsnaut.com/uncategorized/j-j-watt-exposes-atlanta-falcons-jawaan-taylor-on-live-tv",
+          "title": "J.J. Watt Exposes Atlanta Falcons’ Jawaan Taylor on Live TV",
+          "publisher": "Sportsnaut",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYecfPltktQ5jyZ_lVY6gc-vMR5yEIrJl0jmHIENr3xmY1EeaYirWfRbB_emY"
+        }
+      ]
+    },
+    {
+      "query": "asante samuel",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-16T01:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsportsboston.com/nfl/new-england-patriots/stock-watch-lions-week-10-loss-munich-germany/813956/",
+        "https://www.masslive.com/patriots/2026/11/how-christian-gonzalez-fared-in-high-profile-matchup-with-lions-star-amon-ra-st-brown.html",
+        "https://sports.yahoo.com/articles/mike-vrabel-hit-line-2-180014301.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEzU4nFE2lKEhO56h6ChC04Oj9hBqULgkEUghn14fO2OGA8STRojSkZ9JcvVQ",
+      "image_credit": "NBC Sports Boston",
+      "news": [
+        {
+          "url": "https://www.nbcsportsboston.com/nfl/new-england-patriots/stock-watch-lions-week-10-loss-munich-germany/813956/",
+          "title": "Stock Watch: Pats' stock crashing across the board after embarrassment in Munich",
+          "publisher": "NBC Sports Boston",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEzU4nFE2lKEhO56h6ChC04Oj9hBqULgkEUghn14fO2OGA8STRojSkZ9JcvVQ"
+        },
+        {
+          "url": "https://www.masslive.com/patriots/2026/11/how-christian-gonzalez-fared-in-high-profile-matchup-with-lions-star-amon-ra-st-brown.html",
+          "title": "How Christian Gonzalez fared in high-profile matchup with Lions star Amon-Ra St. Brown",
+          "publisher": "MassLive",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGIgFcl1VgB1LbnYhcraZs0M-oMnV4rvGUgK2lvyeIS5MKmv_vPXQiLsjJzjc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/mike-vrabel-hit-line-2-180014301.html",
+          "title": "‘Mike Vrabel Hit My Line’ — 2-Time Super Bowl Champion Sends Message to Patriots HC After Christian Gonzalez’s Mistake vs. Lions",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXPuYExbsOY0y3wrOAPfSP9_896qPv6AQ0QcVDAjEPy101c27hgbmwlcOKB_g"
+        }
+      ]
+    },
+    {
+      "query": "pitt volleyball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T01:30:00Z",
+      "related_news_urls": [
+        "https://pittsburghpanthers.com/news/2026/11/15/follow-live-pitt-volleyball-vs-louisville",
+        "https://triblive.com/sports/steelers-pitt-volleyball-to-share-prime-time-with-overlapping-sunday-games/",
+        "https://247sports.com/college/pittsburgh/article/pitt-volleyball-louisville-rivalry-292787237/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk225ikYLKV1gMGfRV0nLhDzbCn4I3mDzn8WS8p_Y0CutuSDIzg3vQdOHchp8",
+      "image_credit": "PittsburghPanthers.com",
+      "news": [
+        {
+          "url": "https://pittsburghpanthers.com/news/2026/11/15/follow-live-pitt-volleyball-vs-louisville",
+          "title": "Follow Live: Pitt Volleyball vs. Louisville",
+          "publisher": "PittsburghPanthers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk225ikYLKV1gMGfRV0nLhDzbCn4I3mDzn8WS8p_Y0CutuSDIzg3vQdOHchp8"
+        },
+        {
+          "url": "https://triblive.com/sports/steelers-pitt-volleyball-to-share-prime-time-with-overlapping-sunday-games/",
+          "title": "Steelers, Pitt volleyball to share prime time with overlapping Sunday games",
+          "publisher": "TribLIVE.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjho3ShGQqAMG269sgE-LW2kGy7yv28iMk7RkRpd2P1t14fZ0I2q_EIJiHMRo"
+        },
+        {
+          "url": "https://247sports.com/college/pittsburgh/article/pitt-volleyball-louisville-rivalry-292787237/",
+          "title": "Pitt-Louisville volleyball rivalry embraced by team's newcomers",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR17aOJY38X_MzWHNR6TpkQ7_Y9FfQgZExHCblMj50kGHBv7smVvH7QVZuEcX4"
         }
       ]
     }
