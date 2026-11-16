@@ -12,6 +12,7 @@
  transition:opacity .3s ease,transform .3s ease;pointer-events:none}
 .qad-toast.qad-visible{transform:translate(-50%,0);opacity:1;pointer-events:auto}
 .qad-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:var(--qad-tone);color:white;font:bold 25px system-ui}
+.qad-image{display:block;object-fit:contain;object-position:center;background:#f5f6f8;padding:2px;border:1px solid #d8dde3}
 .qad-heading{display:flex;min-width:0;flex-direction:column;gap:2px}
 .qad-kicker{color:var(--qad-tone);font-size:9px;letter-spacing:.09em;font-weight:850}
 .qad-heading strong{font-size:15px;color:#112b41;overflow-wrap:anywhere}

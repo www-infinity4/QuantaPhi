@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {GAME_START,CAMPAIGN_START,GAME_END,HOUSE_START,QUICK_ADS,HOUSE_ADS,quickAdCampaign,restoreQuickAdState,quickAdPacingAllows,inGameWindow,isOfficialUrl,gameLiveStatus,eligibleQuickAds,chooseQuickAd} from '../quick-ads-core.mjs';
+import {GAME_START,CAMPAIGN_START,GAME_END,HOUSE_START,QUICK_ADS,HOUSE_ADS,quickAdCampaign,restoreQuickAdState,quickAdPacingAllows,inGameWindow,isOfficialUrl,gameLiveStatus,eligibleQuickAds,chooseQuickAd,reviewedCatalogAds} from '../quick-ads-core.mjs';
 import {GAME_PK} from '../world-series-score.mjs';
 const source=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 test('Game 5 Quick Ads start early and expire tonight in Chicago',()=>{
@@ -109,7 +109,7 @@ test('replacement ad rotates through every unseen website before recycling',()=>
   recent.unshift(ad.id);if(recent.length>4)recent.pop();
  }
  assert.equal(used.size,QUICK_ADS.length);
- assert.ok(chooseQuickAd({category:'Sports'},counts,recent,GAME_START));
+ assert.equal(chooseQuickAd({category:'Sports'},counts,recent,GAME_START),null,'exhaustion must stop advertising rather than recycling');
 });
 test('official scoreboard status gates live, scheduled and final states',()=>{
  const fixture=status=>({dates:[{games:[{gamePk:GAME_PK,seriesDescription:'World Series',status}]}]});
@@ -126,9 +126,9 @@ test('official scoreboard status gates live, scheduled and final states',()=>{
 test('homepage loads the independent notification module after carousel, keeping original cards',()=>{
  const html=source('index.html'),ui=source('quick-ads.mjs'),css=source('quick-ads.css');
  assert.match(html,/oracle-card-deck\.js\?v=/);
- assert.match(html,/quick-ads\.mjs\?v=20261029-house2/);
- assert.match(html,/quick-ads\.css\?v=20261028-game5b/);
- assert.ok(html.indexOf('quick-ads.mjs?v=20261029-house2')>html.indexOf('oracle-card-deck.js?v='));
+ assert.match(html,/quick-ads\.mjs\?v=20261106-norepeat1/);
+ assert.match(html,/quick-ads\.css\?v=20261106-norepeat1/);
+ assert.ok(html.indexOf('quick-ads.mjs?v=20261106-norepeat1')>html.indexOf('oracle-card-deck.js?v='));
  assert.match(ui,/quantaphi:switchboard-change/);
  assert.match(ui,/\['scheduled','live','house'\]\.includes\(status\)/);
  assert.match(ui,/Dismiss Quick Ads for 10 minutes/);
@@ -140,4 +140,32 @@ test('no retired World Series advertising copy or outdated game links remain in 
   assert.doesNotMatch(a.name+' '+a.tagline,/world series|game 5|brewers vs rays/i);
   if(a.id==='mlb')assert.equal(a.href,'https://www.mlb.com/scores');
  }
+});
+
+// No-repeat requests are permanent per browser history, not a four-item short-term window.
+test('house ads never restart after every creative is recorded',()=>{
+ const counts=Object.fromEntries(HOUSE_ADS.map(a=>[a.id,1]));
+ assert.equal(chooseQuickAd({category:'shopping'},counts,[],HOUSE_START),null);
+ assert.equal(chooseQuickAd({category:'shopping'},counts,['infinity-accepted-house'],HOUSE_START),null);
+ const ui=source('quick-ads.mjs');
+ assert.match(ui,/localStorage/,'seen history must survive page refresh and browser restarts');
+});
+
+test('new approved D1 content appears once after the original house ads are exhausted',()=>{
+ const row={creative_id:'licensed-fixture',equivalence_key:'product-campaign-a',campaign_id:'launch',
+  kind:'editorial',review_state:'approved',image_rights:'owned',
+  destination_url:'https://example.org/real-source',source_url:'https://example.org/real-source',
+  image_url:'https://example.org/approved-photo.jpg',name:'Source-backed product',
+  tagline:'Discover original catalog evidence',category:'shopping',tone:'#174679'};
+ const ad=reviewedCatalogAds([row])[0];
+ assert.ok(ad);
+ assert.equal(ad.id,'catalog:licensed-fixture');
+ const seen=Object.fromEntries(HOUSE_ADS.map(a=>[a.id,1]));
+ assert.equal(chooseQuickAd({category:'shopping'},seen,[],HOUSE_START,[row]).id,ad.id);
+ seen[ad.equivalenceKey]=1;
+ assert.equal(chooseQuickAd({category:'shopping'},seen,[],HOUSE_START,[row]),null,
+  'same campaign-equivalent creative must not be re-skinned to replay');
+ assert.deepEqual(reviewedCatalogAds([{...row,kind:'sponsored'}]),[],
+  'sponsorship without source evidence is not publishable');
+ assert.deepEqual(reviewedCatalogAds([{...row,image_rights:'unverified'}]),[]);
 });
