@@ -11,8 +11,8 @@ export function summarizeGate(payload){
   const live=verifiedAccounts.find(account=>account?.provider===id&&
    account.status==='connected'&&Number.isFinite(account.expiresAt)&&
    account.expiresAt>Date.now()+30000);
-  // A fresh wallet-bound /accounts record overrides a stale gate/config snapshot.
-  // This proves account sign-in only; project permissions remain separately gated.
+  // Fresh wallet-verified /accounts evidence overrides stale /gate/status configuration.
+  // Account sign-in never implies permissionsApproved or full runner readiness.
   const configured=record?.configured===true||!!live;
   const connected=configured&&(record?.connected===true||!!live);
   const approved=connected&&record?.permissionsApproved===true;
@@ -211,6 +211,19 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     return render({...data,walletVerified:session?.walletVerified===true,
      accountsVerified:Array.isArray(accountRecords),accountRecords:accountRecords||[]});
    } catch(error) {
+    // A dropped status request is not an OAuth revocation. Keep the last
+    // server-verified account cards hidden, but remove their live green
+    // status until the next successful authenticated read.
+    if(latest&&(latest.providers.github.connected||latest.providers.cloudflare.connected)){
+     gate.dataset.ready='false';
+     gate.hidden=latest.walletVerified||latest.signedIn||(prefix==='chat'&&gate.dataset.ownerVerified==='true');
+     if(connectionSummary){
+      connectionSummary.textContent='Account check temporarily unavailable · Previously verified connections are not yet rechecked.';
+      connectionSummary.hidden=false;
+     }
+     setStatus('Account status temporarily unavailable. Retry the check; Bubbles chat remains available. A new Cloudflare sign-in is not required by this error.');
+     return null;
+    }
     latest=null;gate.hidden=prefix==='chat'&&gate.dataset.ownerVerified==='true';gate.dataset.ready='false';
     if(connectionSummary){connectionSummary.textContent='Account status unavailable · Open Account Connections to retry';connectionSummary.hidden=false;}
     if(walletIdentity){walletIdentity.hidden=true;walletIdentity.textContent='';}

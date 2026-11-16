@@ -1,3 +1,7 @@
+## Required GPT Builder execution instructions
+
+Before any Bubbles, Moltnook, coupon wallet, Quick Card, or Continuity Builder job, read [docs/BUBBLES-GPT-BUILDER-ROUTING.md](docs/BUBBLES-GPT-BUILDER-ROUTING.md) and the owner’s existing issue/PR. This is an actual work order, not permission to stop after a reader report. Route by need: full-context Red reads unknowns; Orange decides real ambiguities; Blue imports only validated data; Green writes/test/repairs; Pink independently checks; GPT Purple arbitrates; Black verifies release evidence. Known scoped repairs begin with Green. Use the existing signed owner executor and same work ticket, not a newly invented agent token or a duplicate issue. Apply established owner preferences without repeatedly asking. Record actual commit, tests, PR, merge, deployment, and Android receipts separately.
+
 # Bubbles connection
 
 For Bubbles conversational testing, read `docs/BUBBLES-GPT-CONNECTION.md` first.

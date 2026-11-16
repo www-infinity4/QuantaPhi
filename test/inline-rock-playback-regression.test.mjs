@@ -3,21 +3,18 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const get=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 
-test('Steve Miller and Classic Rock do not mount redundant players',()=>{
- const steve=get('steve-miller-book-of-dreams.js');
- const rock=get('classic-rock-official-card.mjs');
- const radio=get('quick-infinity-radio.js');
- assert.match(steve,/InfinityRadioQuick/);
- assert.match(rock,/InfinityRadioQuick/);
- assert.match(radio,/document\.createElement\('audio'\)/);
- assert.doesNotMatch(steve,/new yt\.Player|createElement\('audio'\)/);
- assert.doesNotMatch(rock,/new yt\.Player|createElement\('audio'\)/);
-});
-test('radio stays active on Oracle card navigation, and artist selections remain truthful',()=>{
- for(const file of ['steve-miller-book-of-dreams.js','classic-rock-official-card.mjs']){
-  assert.doesNotMatch(get(file),/oracle:card-deactivated/);
-  assert.match(get(file),/Infinity Radio/);
+test('Steve Miller and Classic Rock mount real, provider-owned artist players on click',()=>{
+ for(const path of ['steve-miller-book-of-dreams.js','classic-rock-official-card.mjs']){
+  const source=get(path);
+  assert.ok(source.includes("iframe"),path);
+  assert.ok(source.includes('www.youtube.com/embed/'),path);
+  assert.ok(source.includes('quantaphi:artist-radio-start'),path);
+  assert.ok(!source.includes('window.InfinityRadioQuick.toggle()'),path);
  }
- assert.match(get('classic-rock-official-card.mjs'),/not recordings by the selected band/);
- assert.match(get('steve-miller-book-of-dreams.js'),/this Steve Miller album is not in that catalog/);
+});
+test('the existing Infinity Radio is a distinct source and stops when an artist starts',()=>{
+ const radio=get('quick-infinity-radio.js');
+ assert.ok(radio.includes("window.InfinityRadioQuick = Object.freeze"));
+ assert.ok(radio.includes("window.addEventListener('quantaphi:artist-radio-start'"));
+ assert.ok(radio.includes("audio.pause()"));
 });

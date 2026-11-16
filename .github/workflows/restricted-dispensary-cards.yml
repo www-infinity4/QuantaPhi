@@ -1,4 +1,4 @@
-name: Twelve dispensary source card acceptance
+name: Denver dispensary source card acceptance
 on:
   pull_request:
     paths:

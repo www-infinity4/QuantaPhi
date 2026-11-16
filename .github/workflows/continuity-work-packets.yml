@@ -3,13 +3,17 @@ on:
   pull_request:
     paths:
       - 'continuity/work-packets.mjs'
+      - 'continuity/packet-runner-adapter.mjs'
       - 'test/continuity-work-packets.test.mjs'
+      - 'test/continuity-packet-runner-adapter.test.mjs'
       - 'docs/CONTINUITY-ACTION-PACKETS.md'
       - '.github/workflows/continuity-work-packets.yml'
   push:
     paths:
       - 'continuity/work-packets.mjs'
+      - 'continuity/packet-runner-adapter.mjs'
       - 'test/continuity-work-packets.test.mjs'
+      - 'test/continuity-packet-runner-adapter.test.mjs'
       - 'docs/CONTINUITY-ACTION-PACKETS.md'
       - '.github/workflows/continuity-work-packets.yml'
   workflow_dispatch:
@@ -24,4 +28,6 @@ jobs:
       - name: Check pure packet selector and deterministic blocked rotation
         run: |
           node --check continuity/work-packets.mjs
+          node --check continuity/packet-runner-adapter.mjs
           node --test test/continuity-work-packets.test.mjs
+          node --test test/continuity-packet-runner-adapter.test.mjs

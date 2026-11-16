@@ -78,12 +78,14 @@ jobs:
             test/bubbles-tools.test.mjs \
             test/brain-assigned-job-scope.test.mjs \
             test/brain-color-core.test.mjs \
+            test/brain-role-handoffs.test.mjs \
             test/brain-clock.test.mjs \
             test/bubbles-owner-history-draft.test.mjs \
             test/bubbles-owner-clock.test.mjs \
             test/brain-merge-receipt.test.mjs \
             test/brain-queue-order.test.mjs \
             test/brain-ticket-selector.test.mjs \
+            test/brain-runner-candidate-page.test.mjs \
             test/brain-deferred-recovery.test.mjs \
             test/brain-cloudflare-token-broker.test.mjs \
             test/brain-clock-stage.test.mjs \

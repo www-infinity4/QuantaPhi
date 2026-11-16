@@ -12,14 +12,14 @@ console.log('Original-card spotlight, flip and accessible shelf contracts passed
 assert.match(deck,/watcher\.observe\(entry\.node/);
 assert.match(deck,/if\(available\(entry\)\)/);
 
-assert.match(deck,/\['cardoneCapitalOffer','10X Westshore/);
-assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
+assert.doesNotMatch(deck,/\['cardoneCapitalOffer','10X Westshore/);
+assert.doesNotMatch(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
 assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested/);
 assert.doesNotMatch(html,/class="oracle-card-deck-feature"/);
 assert.match(html,/<script defer src="\/oracle-card-deck\.js\?v=20\d{6}-[a-z0-9-]+"><\/script>/);
-assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
-assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
+assert.doesNotMatch(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
+assert.doesNotMatch(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
 
 for(const id of ['googleTrendNba','googleTrendMlb','googleTrendCulture']){
  assert.ok(deck.includes(id),'All live trending cards should rotate');

@@ -30,7 +30,8 @@ export function cardProvider(card){
  const verified=asHttps(card?.official)||asHttps(card?.website)||asHttps(card?.url);
  const copilot=verified?.hostname==='github.com'&&/^\/copilot(?:\/|$)/.test(verified.pathname);
  const descriptor=verified&&(copilot?PROVIDERS.find(p=>p.id==='copilot'):
-  PROVIDERS.find(p=>p.hosts.some(root=>matches(verified.hostname.toLowerCase(),root))));
+  PROVIDERS.filter(p=>p.hosts.some(root=>matches(verified.hostname.toLowerCase(),root)))
+    .sort((a,b)=>Math.max(...b.hosts.map(h=>h.length))-Math.max(...a.hosts.map(h=>h.length)))[0]);
  if(!descriptor)return null;
  return Object.freeze({
   id:descriptor.id,name:descriptor.name,origin:verified.origin,

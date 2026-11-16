@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {PREMIUM_CARDS,sourceURL,normalizeResults} from '../premium-source-cards.mjs';
+import {PREMIUM_CARDS,sourceURL,normalizeResults,attachArticleImages} from '../premium-source-cards.mjs';
 test('every added collector/source card has a unique fixed official HTTPS destination',()=>{
  assert.equal(PREMIUM_CARDS.filter(x=>!x.id.startsWith('denver-')).length,17);
  assert.equal(PREMIUM_CARDS.filter(x=>x.id.startsWith('denver-')).length,8);
@@ -22,4 +22,32 @@ test('NASA records retain actual source ID, credits, dates and images',()=>{
  const card=PREMIUM_CARDS.find(x=>x.id==='nasa-library');
  const rows=normalizeResults({collection:{items:[{data:[{title:'Carina',nasa_id:'PIA123',secondary_creator:'NASA / ESA',description:'Actual caption',date_created:'2022-07-12'}],links:[{rel:'preview',href:'https://images-assets.nasa.gov/image/PIA123/PIA123~thumb.jpg'}]}]}},card);
  assert.equal(rows[0].url,'https://images.nasa.gov/details/PIA123');assert.equal(rows[0].credit,'NASA / ESA');assert.equal(rows[0].date,'2022-07-12');
+});
+
+test('Coin World opens on numismatic news rather than only a Morgan-dollar search',()=>{
+ const card=PREMIUM_CARDS.find(x=>x.id==='coinworld');
+ assert.match(card.query,/news/i);
+});
+test('Coin World source results preserve genuine story pictures from image_url',()=>{
+ const card=PREMIUM_CARDS.find(x=>x.id==='coinworld');
+ const rows=normalizeResults({results:[
+  {title:'Coin World original headline',url:'https://www.coinworld.com/news/us-coins/real-story',image_url:'https://assets.coinworld.com/news/real-story.jpg',description:'Original article excerpt',publishedDate:'2026-11-07'},
+  {title:'Unrelated site',url:'https://coinworld.com.attacker.test/news/fake',image_url:'https://attacker.test/coin.jpg'}
+ ]},card);
+ assert.equal(rows.length,1);
+ assert.equal(rows[0].image,'https://assets.coinworld.com/news/real-story.jpg');
+ assert.equal(rows[0].date,'2026-11-07');
+ assert.equal(rows[0].description,'Original article excerpt');
+});
+
+test('Coin World images attach only to matching publisher stories despite tracking parameters',()=>{
+ const stories=[
+  {url:'https://www.coinworld.com/news/us-coins/real-story?utm_source=search',title:'Real story',image:null},
+  {url:'https://www.coinworld.com/news/us-coins/different-story',title:'Different story',image:null}
+ ];
+ const verifiedImage=[{url:'https://www.coinworld.com/news/us-coins/real-story',image:'https://assets.coinworld.com/news/real-story.jpg'}];
+ const merged=attachArticleImages(stories,verifiedImage);
+ assert.equal(merged[0].image,'https://assets.coinworld.com/news/real-story.jpg');
+ assert.equal(merged[1].image,null,'Do not attribute a photo to the wrong news story');
+ assert.equal(stories[0].image,null,'Do not mutate publisher search records');
 });

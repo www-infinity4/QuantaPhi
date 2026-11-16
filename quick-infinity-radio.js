@@ -272,4 +272,13 @@
     playbackRequested=false; ++generation; audio.pause(); setPlaying(false);
     status.textContent='Paused for another live radio station.';
   });
+  // Artist Quick Cards play provider-owned media. Never mix Infinity's catalog
+  // beneath a visible Steve Miller or Pink Floyd YouTube player.
+  if (typeof window !== 'undefined' && typeof window.addEventListener === 'function')
+  window.addEventListener('quantaphi:artist-radio-start', () => {
+    if (!playbackRequested) return;
+    playbackRequested=false; ++generation; audio.pause(); setPlaying(false);
+    status.textContent='Paused for artist music player.';
+    emitRadioState();
+  });
 })();

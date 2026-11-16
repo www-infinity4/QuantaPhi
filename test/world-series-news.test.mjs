@@ -47,13 +47,6 @@ test('archived World Series reporter is no longer loaded in cards or scheduled d
  assert.match(workflow,/workflow_dispatch/);
  assert.match(code,/last checked /);
 });
-test('Cardone existing source-backed property is collectable/shareable and retains Bubbles research specialist',()=>{
- const page=read('cardone-capital.html');
- assert.match(page,/id="cardoneQuickActions"/);
- assert.match(page,/mountCardActions\(host/);
- assert.match(page,/10X Westshore South/);
- assert.match(page,/src="\/bubbles-embed\.js\?v=/);
- assert.match(page,/cardonecapital\.com\/disclosures/);
- assert.match(page,/image remains hosted by the original publisher/i);
- assert.doesNotMatch(page,/cardNumber|sk_live_/);
+test('the retired Cardone research page no longer ships',()=>{
+ assert.doesNotMatch(read('sitemap.xml'),/cardone-capital/i);
 });

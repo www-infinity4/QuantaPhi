@@ -12,7 +12,7 @@ export const PREMIUM_CARDS=Object.freeze([
  provider('christies',"Christie’s",'Auctions','https://www.christies.com/','photographs auction',['Photography','Jewellery','Music memorabilia'],'#712f38'),
  provider('morrison-hotel-gallery','Morrison Hotel Gallery','Music photography','https://morrisonhotelgallery.com/','Pink Floyd',['Pink Floyd','The Rolling Stones','Jazz photography'],'#292727'),
  provider('rolling-stone','Rolling Stone','Music','https://www.rollingstone.com/','music',['Pink Floyd','Tool','Music news'],'#a62831'),
- provider('coinworld','Coin World','Coin news','https://www.coinworld.com/','Morgan dollars',['Morgan dollars','U.S. coins','Auction news'],'#334a58'),
+ provider('coinworld','Coin World','Coin news','https://www.coinworld.com/','coin news',['Latest coin news','Morgan dollars','Auction news'],'#334a58'),
  provider('coinage','COINage','Coin news','https://www.coinagemag.com/','silver dollars',['Silver dollars','Coin collecting','Rare coins'],'#716044'),
  provider('shoplc-premium','Shop LC · Premium','Shopping','https://www.shoplc.com/collections/chairmans-collection','platinum diamond jewelry',['Platinum','Diamond rings','Tanzanite'],'#3e304a'),
  provider('sonic','SONIC','Restaurants','https://pages-a.sonicdrivein.com/deals/','deals',['Deals','Rewards','Menu'],'#a12c39'),
@@ -35,7 +35,25 @@ export function sourceURL(value,host){try{const u=new URL(value);if(u.protocol!=
 export function normalizeResults(data,card){
  if(card.id==='nasa-library')return (data?.collection?.items||[]).map(x=>{const d=x.data?.[0]||{};return {title:d.title,url:'https://images.nasa.gov/details/'+encodeURIComponent(d.nasa_id||''),image:x.links?.find(l=>l.rel==='preview')?.href,description:d.description,credit:d.secondary_creator||d.photographer||d.center||'NASA',date:d.date_created}}).filter(x=>x.title&&sourceURL(x.image));
  const host=new URL(card.official).hostname.replace(/^www\./,'').replace(/^coins\./,'');
- return (Array.isArray(data?.results)?data.results:[]).filter(x=>sourceURL(x.url,host)).map(x=>({title:String(x.title||''),url:x.url,image:sourceURL(x.img_src||x.thumbnail_src||x.thumbnail||''),description:String(x.content||x.description||''),credit:new URL(x.url).hostname,date:x.publishedDate||''})).filter(x=>x.title).slice(0,8);
+ return (Array.isArray(data?.results)?data.results:[]).filter(x=>sourceURL(x.url,host)).map(x=>({title:String(x.title||''),url:x.url,image:sourceURL(x.img_src||x.thumbnail_src||x.thumbnail||x.image_url||x.image||x.og_image||''),description:String(x.content||x.description||''),credit:new URL(x.url).hostname,date:x.publishedDate||''})).filter(x=>x.title).slice(0,8);
+}
+// The image index and story search can return the same publisher page with
+// different campaign parameters. Match only the publisher article URL, never
+// by headline similarity; an unrelated photograph must not appear on a story.
+function articleKey(value){
+ const safe=sourceURL(value);if(!safe)return '';
+ const url=new URL(safe);url.hash='';
+ for(const key of [...url.searchParams.keys()])
+  if(/^(?:utm_.*|fbclid|gclid)$/i.test(key))url.searchParams.delete(key);
+ return url.origin+url.pathname.replace(/\/+$/,'')+url.search;
+}
+export function attachArticleImages(rows,art){
+ const byArticle=new Map();
+ for(const item of art){
+  const key=articleKey(item.url);
+  if(key&&sourceURL(item.image)&&!byArticle.has(key))byArticle.set(key,item.image);
+ }
+ return rows.map(row=>({...row,image:row.image||byArticle.get(articleKey(row.url))||null}));
 }
 const cache=new Map();
 async function lookup(card,query){
@@ -47,7 +65,7 @@ async function lookup(card,query){
  let rows=normalizeResults(await response.json(),card);
  // Use the broker's attributed image previews when available; never invent art.
  if(card.id!=='nasa-library'){
-  try{const pictures=new URL(url);pictures.searchParams.set('categories','images');const r=await fetch(pictures,{credentials:'omit',signal:AbortSignal.timeout(7000)});if(r.ok){const art=normalizeResults(await r.json(),card).filter(x=>x.image);const urls=new Set(rows.map(x=>x.url));rows=rows.map(row=>({...row,image:art.find(x=>x.url===row.url)?.image||row.image}));for(const row of art)if(!urls.has(row.url)){rows.push(row);urls.add(row.url)}if(art.length&&!rows[0]?.image)rows=[art[0],...rows.filter(x=>x.url!==art[0].url)];}}catch{}
+  try{const pictures=new URL(url);pictures.searchParams.set('categories','images');const r=await fetch(pictures,{credentials:'omit',signal:AbortSignal.timeout(7000)});if(r.ok){const art=normalizeResults(await r.json(),card).filter(x=>x.image);const urls=new Set(rows.map(x=>articleKey(x.url)));rows=attachArticleImages(rows,art);for(const row of art){const key=articleKey(row.url);if(!urls.has(key)){rows.push(row);urls.add(key)}}if(art.length&&!rows[0]?.image)rows=[art[0],...rows.filter(x=>articleKey(x.url)!==articleKey(art[0].url))];}}catch{}
  }
  const result={time:Date.now(),rows:rows.slice(0,12)};cache.set(key,result);return result;
 }

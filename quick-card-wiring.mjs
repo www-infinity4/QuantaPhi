@@ -13,6 +13,10 @@ export function safeSourceUrl(raw){
  }catch{return null}
 }
 const makeRow=(key,name,route,mode,proof)=>({key,name,route,mode,proof});
+export function getControls() {
+  return ['star','collect','share','build','search'];
+}
+
 export function identifyWiring(raw){
  const url=safeSourceUrl(raw);
  if(!url) return null;

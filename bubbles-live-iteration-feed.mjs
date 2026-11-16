@@ -60,7 +60,7 @@ export function advanceLiveBits(previous,event){
   return entry;
  };
  if(event.type==='turn_started'){
-  s.contextReady=false;s.running=true;
+  s.contextReady=false;s.running=true;s.turnStart=s.sequence+1;
   add('Checking saved context for this request','running');return s;
  }
  if(event.type==='memory'){
@@ -70,7 +70,7 @@ export function advanceLiveBits(previous,event){
  }
  if(event.type==='turn_finished'){
   s.running=false;
-  const pendingTool=s.entries.some(entry=>entry.state==='running'&&entry.tool);
+  const pendingTool=s.entries.some(entry=>entry.number>=s.turnStart&&entry.state==='running'&&entry.tool);
   s.live=event.failed===true?'Reply failed · review the chat status':
    pendingTool?'GitHub · waiting for saved execution receipt · '+s.sequence+' observed iterations':
    'Reply ready · '+s.sequence+' observed iterations';
@@ -85,13 +85,24 @@ export function advanceLiveBits(previous,event){
   if(!['queued','ready','working','blocked','committed_unverified','merged_verified','deployed_verified','complete','completed','superseded'].includes(status))return s;
   const agent=clean(event.agent,40),stage=clean(event.stage,100);
   const summary=clean(event.summary,180);
-  // Only show exact HTTPS GitHub run URLs from the validated owner ticket.
+  const ticketId=clean(event.ticketId,30);
+  const runnerJob=clean(event.runnerJob,48);
+  // Links come from the verified owner ticket.
   const evidence=typeof event.runUrl==='string'&&
-    /^https:\/\/github\.com\/www-infinity4\/[A-Za-z0-9_.-]+\/actions\/runs\/[0-9]+$/.test(event.runUrl)
+    /^https:\/\/github\.com\/www-infinity4\/[A-Za-z0-9_.-]+\/(?:actions\/runs|pull)\/[0-9]+$/.test(event.runUrl)
     ?event.runUrl:'';
+  if(runnerJob&&(event.runnerPhase||status!=='working'))for(const entry of s.entries){
+   if(entry.ticketId===ticketId&&entry.runnerJob===runnerJob&&entry.state==='running')entry.state='observed';
+  }
+  if(typeof event.runnerPhase==='string'&&event.runnerPhase){
+   const state=event.runnerPhase==='attempt_failed'?'failed':
+    event.runnerPhase.endsWith('_started')&&status==='working'?'running':'observed';
+   add(stage,state,{ticketId,runnerJob,resource:repo,detail:summary,tool:'robot_brain.job',url:evidence});
+   return s;
+  }
   const label=status==='blocked'?'blocked':status==='working'?'working reported (result pending)':status==='deployed_verified'?'deployment recorded':status==='merged_verified'?'merge recorded':status==='committed_unverified'?'commit awaiting verification':status==='ready'||status==='queued'?'waiting for runner':status==='superseded'?'superseded':'result recorded';
   add('GitHub · '+(agent||'Brain')+' · '+label,status==='blocked'?'failed':status==='working'?'running':'observed',{
-   resource:repo,criteria:stage,detail:summary||'Stage recorded in the owner Brain ledger; result evidence remains separate.',
+   ticketId,runnerJob,resource:repo,criteria:stage,detail:summary||'Stage recorded in the owner Brain ledger; result evidence remains separate.',
    tool:'robot_brain.job',receiptTail:'',url:evidence
   });
   return s;
@@ -100,11 +111,12 @@ export function advanceLiveBits(previous,event){
   const repo=clean(event.repository,95),state=clean(event.status,35);
   if(!/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/.test(repo)||!['queued','ready','working','blocked','committed_unverified','merged_verified','deployed_verified','complete','completed'].includes(state))return s;
   const phrase=state==='queued'||state==='ready'?'runner queued':state==='working'?'runner working':state==='blocked'?'runner blocked':state==='deployed_verified'?'deployment verified by Brain':state==='merged_verified'?'merge verified; deployment pending':'result awaiting independent verification';
-  // The ticket is polled every 15 seconds. Identical state is one iteration.
-  const signature=repo+'|'+state;
-  if(s.lastJobStatus===signature)return s;
+  // Identical owner snapshots never create or redraw a progress row.
+  const ticketId=clean(event.ticketId,30);
+  const signature=ticketId+'|'+repo+'|'+state;
+  if(s.lastJobStatus===signature)return previous;
   s.lastJobStatus=signature;
-  add('GitHub · '+phrase,state==='blocked'?'failed':state==='working'?'running':'observed',{resource:repo,detail:'This reports job state; it does not mint a Bubble Bit or independently verify a deployment.'});
+  add('GitHub · '+phrase,state==='blocked'?'failed':state==='working'?'running':'observed',{ticketId,resource:repo,detail:'This reports job state; it does not mint a Bubble Bit or independently verify a deployment.'});
   return s;
  }
  if(!['tool_started','tool_progress','tool_receipt'].includes(event.type))return s;
@@ -149,28 +161,33 @@ export function mountLiveView(doc=typeof document!=='undefined'?document:null){
  small.setAttribute('role','status');small.setAttribute('aria-live','polite');
  status.after(small);
  let current=null;
+ const jobViews=new Map();
  const begin=()=>{
   current=null;
   small.textContent='Bubbles · checking the request; no GitHub result confirmed yet.';
  };
- const reset=()=>{current=null;small.textContent='';};
- const show=state=>{
-  if(!current){
+ const reset=()=>{current=null;jobViews.clear();small.textContent='';};
+ const show=(state,ticketId='')=>{
+  let view=ticketId?jobViews.get(ticketId):current;
+  if(!view){
    const wrapper=doc.createElement('section');
    wrapper.className='ba-line ba-line-ai ba-live-bit-feed';
    wrapper.setAttribute('aria-label','Bubbles iterations for this chat message');
    const heading=doc.createElement('strong');
    heading.className='ba-chat-iteration-title';
-   heading.textContent='Bubbles · working through your request';
+   heading.textContent=ticketId?'Repository work in this chat':'Bubbles · working through your request';
    const record=doc.createElement('ol');record.className='ba-live-bit-record';
    const footer=doc.createElement('small');footer.className='ba-chat-iteration-footer';
    wrapper.append(heading,record,footer);
    conversation.append(wrapper);
-   current={wrapper,record,footer};
+   view={wrapper,record,footer};
+   if(ticketId)jobViews.set(ticketId,view);
+   else current=view;
   }
-  const {record,footer}=current;
+  const {record,footer}=view;
   record.replaceChildren();
-  for(const entry of state.entries){
+  const entries=state.entries.filter(entry=>ticketId?entry.ticketId===ticketId:!entry.ticketId&&entry.number>=state.turnStart);
+  for(const entry of entries){
    const li=doc.createElement('li');li.className='ba-live-bit-entry';
    const heading=doc.createElement('strong');
    heading.textContent='Iteration '+entry.number+' · '+entry.headline+' · '+entry.state;
@@ -181,14 +198,15 @@ export function mountLiveView(doc=typeof document!=='undefined'?document:null){
     const valueLine=doc.createElement('small');valueLine.textContent=label+': '+value;li.append(valueLine);
    }
    if(entry.url){
-    const link=doc.createElement('a');link.textContent='Verified GitHub run';
+    const link=doc.createElement('a');link.textContent=entry.url.includes('/pull/')?'GitHub pull request':'Verified GitHub run';
     link.href=entry.url;link.target='_blank';link.rel='noopener noreferrer';li.append(link);
    }
    record.append(li);
   }
+  footer.hidden=Boolean(ticketId);
   footer.textContent=state.credits+' Bubble Bits confirmed · '+Math.max(0,state.candidates-state.credits)+
    ' receipt candidates pending; no unverified wallet credit.';
-  small.textContent=state.live;
+  if(!ticketId||!state.running)small.textContent=state.live;
  };
  return {begin,reset,show};
 }
@@ -200,9 +218,13 @@ if(typeof window!=='undefined'&&typeof document!=='undefined'&&!window.__Bubbles
   const kind=event?.detail?.type;
   if(kind==='turn_started'){turnVisible=false;mount();render?.begin();}
   if(kind==='session_changed'){turnVisible=false;mount();render?.reset();}
-  state=advanceLiveBits(state,event.detail);
+  const next=advanceLiveBits(state,event.detail);
+  if(next===state)return;
+  state=next;
   mount();
-  if(turnVisible)render?.show(state);
+  const ticketId=['job','job_step'].includes(kind)?event.detail.ticketId:'';
+  if(ticketId)render?.show(state,ticketId);
+  else if(turnVisible)render?.show(state);
  });
  // The user message is appended by the actual Bubbles chat before starting
  // this assistant iteration sequence. Old history replay never emits this.

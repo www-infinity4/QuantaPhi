@@ -4,19 +4,39 @@
  * No cross-site frames of x.com/i/spaces; generic Space URLs have no verified supported iframe playback.
  * X controls Spaces playback. This is not a paid X search or OAuth client.
  */
-import {readIndexedSpaces, validSpaceLink} from './quanta-feed-spaces.mjs';
+import {readIndexedSpaces, readVerifiedLiveSpaces, validSpaceLink} from './quanta-feed-spaces.mjs';
 export {validSpaceLink};
 
 export function normalizeSpaceEntry(source) {
   if (!source || !validSpaceLink(source.url)) return null;
   const input = new URL(source.url);
   const url = 'https://x.com' + input.pathname.replace(/\/$/, '');
-  const handle = String(source.host || source.handle || '').replace(/^@/,'').trim();
+  const handle = String(source.host || source.handle || source.creatorHandle || '').replace(/^@/,'').trim();
   const host = /^[A-Za-z0-9_]{1,15}$/.test(handle) ? handle : 'unknown';
   const title = String(source.title || 'Original X Space').trim().slice(0,170) || 'Original X Space';
-  return {url,title,host,state: source.status === 'replay marked verified'
+  return {url,title,host,state: source.source === 'x_api_live' && source.status === 'verified live at fetch time' ? 'LIVE · X API verified when fetched' : source.status === 'replay marked verified'
     ? 'replay source-marked; audio not tested'
     : 'playback unverified'};
+}
+export function parseSpaceClipPostId(value){
+ try{
+  const u=new URL(String(value||'').trim());
+  if(u.protocol!=='https:'||!['x.com','www.x.com','twitter.com','www.twitter.com'].includes(u.hostname)||u.username||u.password)return null;
+  const found=u.pathname.match(/^\/[A-Za-z0-9_]{1,15}\/status\/([0-9]{1,22})\/?$/);
+  return found?found[1]:null;
+ }catch{return null}
+}
+let xWidgetsReady=null;
+function loadOfficialXWidgets(){
+ if(window.twttr?.widgets?.createTweet)return Promise.resolve(window.twttr.widgets);
+ if(!xWidgetsReady)xWidgetsReady=new Promise((resolve,reject)=>{
+  const script=document.createElement('script');
+  script.src='https://platform.x.com/widgets.js';script.async=true;
+  script.onload=()=>window.twttr?.widgets?.createTweet?resolve(window.twttr.widgets):reject(Error('X official embed unavailable'));
+  script.onerror=()=>reject(Error('X official embed blocked'));
+  document.head.append(script);
+ }).catch(error=>{xWidgetsReady=null;throw error});
+ return xWidgetsReady;
 }
 export function filterSpaceEntries(entries, search='') {
   const term=String(search||'').trim().toLocaleLowerCase().replace(/^@/,'');
@@ -49,6 +69,8 @@ function style(){
   '#xSpacesQuickCard .xqs-card h3{font-size:18px;line-height:1.3;color:#233744;margin:0}',
   '#xSpacesQuickCard .xqs-card p{margin:0;color:#576a74;font-size:14px}',
   '#xSpacesQuickCard .xqs-card .xqs-a{align-self:flex-start}',
+  '#xSpacesQuickCard .xqs-button:disabled{opacity:.63;cursor:not-allowed}',
+  '#xSpacesQuickCard .xqs-embed{min-height:48px;max-width:100%;overflow:hidden}',
   '#xSpacesQuickCard .xqs-nav{display:flex;gap:9px;align-items:center;justify-content:space-between}',
   '#xSpacesQuickCard .xqs-counter{font-size:13px;line-height:1.4;color:#53616c;min-width:65px;text-align:center}',
   '#xSpacesQuickCard :is(button,a,input):focus-visible{outline:3px solid #8c52b7;outline-offset:3px}',
@@ -66,28 +88,35 @@ export function mountXSpacesQuickCard(root){
  const search=node('input','xqs-input');search.type='search';search.placeholder='Search topic or @host';
  search.setAttribute('aria-label','Search indexed X Spaces by topic or host');
  const load=node('button','xqs-button','Load my indexed Spaces');load.type='button';
- append(first,search,load);
+ const live=node('button','xqs-button xqs-primary','Find live Spaces');live.type='button';
+ append(first,search,live,load);
  const second=node('div','xqs-bar');
  const urlInput=node('input','xqs-input');urlInput.type='url';urlInput.placeholder='Paste https://x.com/i/spaces/…';
  urlInput.setAttribute('aria-label','X Space URL to add to this session');
  const addButton=node('button','xqs-button','Add this Space');addButton.type='button';
  append(second,urlInput,addButton);
- const status=node('p','xqs-status','Ready · select Load my indexed Spaces or add a source link.');
+ const clipRow=node('div','xqs-bar');
+ const clipInput=node('input','xqs-input');clipInput.type='url';clipInput.placeholder='X post linking to a recording or Space clip';
+ clipInput.setAttribute('aria-label','X post URL containing a Space recording or audio clip');
+ const clipButton=node('button','xqs-button xqs-primary','Listen here to shared X clip');clipButton.type='button';
+ append(clipRow,clipInput,clipButton);
+ const status=node('p','xqs-status','Ready · select Find live Spaces, load your indexed library or paste a genuine source link.');
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const deck=node('div','xqs-deck');
+ const listening=node('div','xqs-embed');listening.setAttribute('aria-live','polite');
  const nav=node('div','xqs-nav');
  const prev=node('button','xqs-button','Space back'),count=node('span','xqs-counter','0 of 0'),next=node('button','xqs-button','Space forward');
  prev.type=next.type='button';
  append(nav,prev,count,next);
  const note=node('p','xqs-note',
-  'X controls Spaces playback. Live audio and recordings cannot be assumed embeddable from a Space link. The official X player opens only when you press Listen; it may require X sign-in. This card never claims playback on QuantaPhi.');
- append(section,first,second,status,deck,nav,note);
+  'X controls live Spaces audio. A Space URL does not include an authorized live stream for QuantaPhi. This card shows genuine rooms and only enables local listening when an embeddable source is available.');
+ append(section,first,second,clipRow,status,deck,nav,listening,note);
  root.replaceChildren(section);
  // Session-only links: do not expose followed-account data across visitors or record user browsing.
- let fromIndex=[],sessionOnly=[],position=0,searchTerm='',pending=false;
+ let fromIndex=[],fromLive=[],sessionOnly=[],position=0,searchTerm='',pending=false;
  const distinct=()=>{
   const map=new Map();
-  for(const item of [...sessionOnly,...fromIndex]) if(!map.has(item.url))map.set(item.url,item);
+  for(const item of [...fromLive,...sessionOnly,...fromIndex]) if(!map.has(item.url))map.set(item.url,item);
   return filterSpaceEntries([...map.values()],searchTerm);
  };
  function redraw(){
@@ -102,12 +131,32 @@ export function mountXSpacesQuickCard(root){
   }
   const chosen=list[position],card=node('article','xqs-card');
   const source=node('p','', '@'+chosen.host+' · '+chosen.state);
+  const inline=node('button','xqs-button','Listen here');inline.type='button';inline.disabled=true;
+  inline.title='Playback on this site is not available without an official embeddable audio source.';
+  const playback=node('p','xqs-note','Playback on this site is not available for this Space: X has not provided a supported embeddable live audio source.');
   const open=node('a','xqs-a xqs-primary','▶ Listen in official X player');
   open.href=chosen.url;open.target='_blank';open.rel='noopener noreferrer';
   open.setAttribute('aria-label','Open the official X Space player for '+chosen.title);
-  append(card,node('h3','',chosen.title),source,open);
+  append(card,node('h3','',chosen.title),source,inline,playback,open);
   deck.append(card);
  }
+ clipButton.addEventListener('click',async()=>{
+  const id=parseSpaceClipPostId(clipInput.value);
+  if(!id){status.textContent='Paste an X post URL that shares a Space recording or audio clip.';return}
+  clipButton.disabled=true;
+  listening.replaceChildren(node('p','xqs-note','Loading the official X post widget inside this card…'));
+  status.textContent='An embedded X post can play only audio that its publisher makes available.';
+  try{
+   const widgets=await loadOfficialXWidgets();
+   listening.replaceChildren();
+   const result=await widgets.createTweet(id,listening,{conversation:'none',theme:'light',align:'center'});
+   if(!result)throw Error('X did not return an embeddable post');
+   status.textContent='Official X post embedded here. If the publisher included audio, play it inside this card; not all X posts or Spaces include playable audio.';
+  }catch(e){
+   listening.replaceChildren(node('p','xqs-note','X did not provide an embeddable recording. Playback on this site is not available for this post.'));
+   status.textContent='The official post embed could not load ('+String(e?.message||e)+'). No audio was faked.';
+  }finally{clipButton.disabled=false}
+ });
  search.addEventListener('input',()=>{searchTerm=search.value;position=0;redraw()});
  prev.addEventListener('click',()=>{if(position>0)position--;redraw()});
  next.addEventListener('click',()=>{if(position<distinct().length-1)position++;redraw()});
@@ -119,6 +168,27 @@ export function mountXSpacesQuickCard(root){
   position=0;search.value='';searchTerm='';urlInput.value='';
   status.textContent='Source link added for this session. Its live status and playable audio are unverified.';
   redraw();
+ });
+ live.addEventListener('click',async()=>{
+  if(pending)return;
+  pending=true;live.disabled=true;status.textContent='Checking live Spaces reported by X…';
+  fromLive=[];redraw();
+  try{
+   const token=await window.QuantaCloudConnection?.resolveDeviceToken?.();
+   const q=search.value.trim()||'technology';
+   const result=await readVerifiedLiveSpaces({token,topic:q});
+   fromLive=result.spaces.map(normalizeSpaceEntry).filter(Boolean);
+   searchTerm='';position=0;
+   status.textContent=fromLive.length
+    ?fromLive.length+' live X Spaces verified at the last refresh. Audio remains controlled by X.'
+    :'No live X Spaces confirmed for that topic. Change the topic or try your indexed library.';
+  }catch(e){
+   fromLive=[];
+   const message=String(e?.message||e);
+   status.textContent=message==='wallet_not_connected'?'Connect your QuantaPhi wallet to look up live X Spaces.':
+    message==='invalid_space_topic'?'Use a simple 2–60 character topic.':
+    'Live X search unavailable ('+message+'). No unverified rooms displayed.';
+  }finally{pending=false;live.disabled=false;redraw()}
  });
  load.addEventListener('click',async()=>{
   if(pending)return;

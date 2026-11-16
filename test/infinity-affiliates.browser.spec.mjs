@@ -33,13 +33,15 @@ test('wrong-domain product cannot request affiliation for approved brand',async(
  await expect(root.locator('#iaPrepared')).toBeHidden();
  await expect(root.locator('#iaFeedback')).toContainText(/must belong to the selected official brand domain/i);
 });
-test('original Oracle carousel accepts a deep link and preserves brand list and controls',async({page})=>{
+test('shared Oracle brand deep link now opens the real brand builder in Developer carousel',async({page})=>{
  await page.goto(base+'/?card=infinityAffiliates',{waitUntil:'domcontentloaded'});
- const stage=page.locator('#oracleCardStage');
+ const stage=page.locator('#developerCardStage');
  await expect(stage.locator('#infinityAffiliates')).toBeVisible({timeout:20000});
+ await expect(page.locator('#developerCardNow')).toHaveText('Infinity Brands');
  await expect(stage.locator('#iaBrandSearch')).toBeVisible();
  await stage.locator('#iaBrandSearch').fill('Framework');
  await expect(stage.locator('.ia-brand-button',{hasText:'Framework Computers'})).toBeVisible();
- await expect(page.locator('#oracleCardNext')).toBeVisible();
- await expect(page.locator('#oracleCardFollow')).toBeVisible();
+ await expect(page.locator('#developerCardNext')).toBeVisible();
+ await expect(page.locator('#developerCardPrevious')).toBeVisible();
+ await expect(page.locator('#oracleCardStage #infinityAffiliates')).toHaveCount(0);
 });

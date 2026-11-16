@@ -1,7 +1,7 @@
 // Observed first-party views are hints, never write authority or source proof.
 const KEY='bubbles:observed-project-views:v1';
 const clean=s=>String(s||'').replace(/[\x00-\x1f]/g,' ').trim().slice(0,160);
-const stop=new Set('a an the my our your this that it here page card cards repo repository repositories github fix repair update add ads advertisement advertisements search find fill populate build create implement fetch dataset data api from for with and to in on of is was just please want need i you can could should he she bubbles work working code source file files all more next previous current fill stop stopped where when every time product full make get use using improve improve expand complete gather proper properly real actual move put place relocate carousel rotation into'.split(' '));
+const stop=new Set('a an the my our your this that these those it them here page card cards repo repository repositories github fix repair update add ads advertisement advertisements search find fill populate build create implement fetch dataset data api from for with and to in on of is was just please want need i you can could should he she bubbles work working thing things two both code source file files all more next previous current fill stop stopped where when every time product full make get use using improve improve expand complete gather proper properly real actual move put place relocate carousel rotation into'.split(' '));
 export function discoveryTerms(request){return [...new Set(String(request||'').slice(0,2500).toLowerCase().match(/[a-z][a-z0-9-]{2,}/g)||[])].filter(w=>!stop.has(w)).slice(0,4);}
 export function recordProjectView(view,storage=globalThis.localStorage,now=Date.now()){
  try{
@@ -38,12 +38,21 @@ export function namedCardFor(request){
 // user repeat a repository name. This lookup never authorizes a write.
 export function sourceQueryFor(request,history=[]){
  const q=String(request||'').trim();
- if(discoveryTerms(q).length||!/\b(?:it|that|this|card|one|thing)\b/i.test(q))return q;
+ // An owner saying "fix those two things" can refer to two defects in their
+ // immediately preceding message. This is ONLY source-discovery context:
+ // no permission to write, infer account access, or reopen resolved work.
+ const plural=/^(?:(?:please|bubbles)[,\s:]+)*(?:fix|repair|finish|complete|work on|continue with)\s+(?:(?:those|these|the)\s+)?(?:two\s+|both\s+)?(?:things|issues|problems|repairs|bugs|tasks)[.!]*$/i.test(q);
+ if(!plural&&(discoveryTerms(q).length||!/\b(?:it|that|this|these|those|card|one|thing)\b/i.test(q)))return q;
  // Only the latest owner's utterance is relevant. An older card name
  // must not be revived after the owner corrected or closed that repair.
  const last=(Array.isArray(history)?[...history].reverse():[]).find(row=>row?.role==='user'&&typeof row.text==='string');
  if(!last)return q;
  if(hasResolvedWorkNotice(last.text))return q;
+ if(plural){
+  const earlier=last.text.trim().slice(0,650);
+  return /\b(?:broken|failed?|error|problems?|issues?|missing|won't|cannot|can't|doesn't|not working|disconnected|needs? repair)\b/i.test(earlier)
+   ?q+' '+earlier:q;
+ }
  const card=namedCardFor(last.text);
  return card?q+' '+card.title:q;
 }
@@ -75,10 +84,26 @@ export async function discoverProject({request,catalog,views=[],invoke}){
  if(!terms.length&&views.length)terms=discoveryTerms(views[0].title).slice(0,1);
  if(!terms.length)return null;
  // Read the owner's indexed repository *contents*, not just repository names.
- const result=await invoke({action:'search_github_code',scope:'owner',mode:'read',query:terms.join(' ')});
- if(!result.ok||result.status!=='code_search_results')return null;
+ // A combined multi-feature query may miss both defects if each lives in a
+ // different file. Fall back to bounded individual term searches.
+ // This is owner-scoped READ evidence, never write authorization.
+ const focused=terms.filter(t=>!['bubbles','quantaphi','github'].includes(t));
+ const queries=[...new Set([terms.join(' '),...(terms.length>1?(focused.length?focused:terms):[])])].slice(0,5);
+ const found=new Map();
+ for(const query of queries){
+  let result;
+  try{result=await invoke({action:'search_github_code',scope:'owner',mode:'read',query});}
+  catch{continue;}
+  if(!result?.ok||result.status!=='code_search_results')continue;
+  for(const hit of result.results||[]){
+   if(!allowed.has(hit.repository)||typeof hit.path!=='string')continue;
+   const key=hit.repository+'|'+hit.path;
+   if(!found.has(key))found.set(key,hit);
+  }
+ }
+ if(!found.size)return null;
  const expected=namedCardFor(request);
- const matches=(result.results||[]).filter(x=>allowed.has(x.repository)&&
+ const matches=[...found.values()].filter(x=>allowed.has(x.repository)&&
   !/(?:^|\/)(?:tests?|docs?|work-tickets|\.github)(?:\/|$)/i.test(x.path||'')&&
   /\.(?:m?js|cjs|tsx?|jsx|html|css|json)$/i.test(x.path||''))
   .map(x=>rankSource(x,terms,expected)).filter(Boolean)
