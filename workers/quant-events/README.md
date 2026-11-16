@@ -1,6 +1,6 @@
 # QuantaPhi · Cloudflare D1 event ingestion, 100k+ DAU profile
 
-**Status:** [PR #1884](https://github.com/www-infinity4/QuantaPhi/pull/1884) **merged into `main`** at `df93c0c9ddf1fba370b613e04586ca32918404a7`. The isolated Cloudflare staging D1 and Queues passed a **synthetic HTTP pull → consent-gated D1 write/readback, revoked-event rejection, and canary cleanup**. No actual repository Worker queue consumer has been deployed; the production site Worker has no event bridge binding or analytics enable flag. No user analytics, Wallet mutation, live consent collection, production performance claim, or billing-scale load test is established. Read [`SCALING-100K-DAU.md`](./SCALING-100K-DAU.md) for scaling decisions, read-only Cloudflare schema observations, budget/privacy gates, and BI options.
+**Status:** [PR #1884](https://github.com/www-infinity4/QuantaPhi/pull/1884) **merged into `main`** at `df93c0c9ddf1fba370b613e04586ca32918404a7`. The isolated Cloudflare staging D1 and Queues passed a **synthetic HTTP pull → consent-gated D1 write/readback, revoked-event rejection, and canary cleanup**. The actual merged staging Worker Queue consumer is now deployed, and a synthetic Queue → Worker → D1 canary passed. The production site Worker has no event bridge binding or analytics enable flag. No user analytics, Wallet mutation, live consent collection, production performance claim, or billing-scale load test is established. Read [`SCALING-100K-DAU.md`](./SCALING-100K-DAU.md) for scaling decisions, read-only Cloudflare schema observations, budget/privacy gates, and BI options.
 
 ## Package contents
 
@@ -11,6 +11,7 @@
 | `src/ingest.ts` | Trusted signed-identity ingress, Queue producer/consumer, transactional consent guards |
 | `src/wallet-bridge.mjs` | Wallet-verified private service-bound bridge; no browser signing secrets |
 | `src/consent-control.mjs` | Explicit Wallet-authenticated grant, revoke and status service |
+| `src/privacy-data.mjs` | Authenticated bounded data export and atomic erasure with revoked-consent marker |
 | `wrangler.queue.example.jsonc` | Example Queue/D1 binding layout; not deployed |
 | `wrangler.bridge.example.jsonc` | Example Wallet/consent/ingestion service bindings; not deployed |
 | `tests/bridge-ingest-integration.test.mjs` | Synthetic end-to-end Wallet, consent, signature, Queue test |
@@ -19,6 +20,7 @@
 | `tests/identity-security.test.mjs` | HMAC identity and geo-consent security boundaries |
 | `tests/ingest-smoke.test.mjs` | D1/SQLite ingestion, deduplication and batching |
 | `tests/privacy-page.test.mjs` | Disabled opt-in UI and account page contracts |
+| `tests/privacy-data.test.mjs` | Wallet-scoped export, authorization, atomic erasure and queued replay protection |
 | `tests/queue-consent.test.mjs` | Consent-gated D1 consumer, revocation replay and staging lock |
 | `tests/site-route.test.mjs` | Fail-closed site Worker routes |
 | `tests/staging-deploy-gate.test.mjs` | Private Worker staging configuration and release-gated CI contract |
@@ -210,3 +212,14 @@ HTTP pull test consumer must be retired before attaching the Worker consumer:
 Cloudflare supports only one consumer type per queue. Release acceptance still
 requires real push Queue → Worker `queue` handler → staging D1 readback, revoke
 and cleanup. This does not activate customer profiling or merge any accounts.
+
+
+## November 9 · Owner data export and erasure (review only)
+
+GET `/api/quant-events/data` returns at most **100 rows per response**, scoped to the verified Wallet user's HMAC pseudonym, ordered by timestamp and ID with a `nextCursor` for pagination. Raw Wallet IDs and other users' events never enter the response. The Android page downloads JSON pages; it refuses to label an incomplete export as complete.
+
+Confirmed POST `/api/quant-events/data` with `{"action":"erase","confirm":"DELETE_MY_ANALYTICS"}` performs a single atomic D1 batch: write/update a minimal *revoked consent* marker, delete that account's events, and delete its analytics user row. It verifies D1 receipts and the zero-event/zero-user readback before claiming success. The revocation marker blocks delayed Queue replays and is not an active opt-in.
+
+This does not modify Wallet identities, coins, payments, or Google Analytics/AdSense. No automatic retention period is claimed. `EVENT_DATA_MANAGEMENT_ENABLED` defaults OFF independently in the site and private bridge, and this branch does not deploy those services.
+
+**Unfinished:** Independent privacy/security review, historical data retention policy and tombstone duration, real signed-in Android/browser acceptance, and permissioned bridge deployment. Staging Queue Worker remains isolated and production collection OFF.

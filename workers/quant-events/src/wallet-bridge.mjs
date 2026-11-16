@@ -4,6 +4,7 @@
  */
 import {walletIdentity} from '../../bubbles-connections/router.mjs';
 import {handleEventConsent} from './consent-control.mjs';
+import {handleEventData} from './privacy-data.mjs';
 
 const ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 const EVENT_TYPES = new Set([
@@ -169,7 +170,8 @@ export async function handleWalletEventIngress(request,env) {
 
 // Separately deployable Worker entrypoint: the site uses a private service binding.
 export default {fetch(request,env) {
-  return new URL(request.url).pathname==='/api/quant-events/consent'
-    ? handleEventConsent(request,env)
-    : handleWalletEventIngress(request,env);
+  const pathname=new URL(request.url).pathname;
+  if(pathname==='/api/quant-events/consent')return handleEventConsent(request,env);
+  if(pathname==='/api/quant-events/data')return handleEventData(request,env);
+  return handleWalletEventIngress(request,env);
 }};
