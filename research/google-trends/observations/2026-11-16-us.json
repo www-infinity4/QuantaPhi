@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T10:01:31.816310Z",
+  "checked_at": "2026-11-16T10:32:40.768542Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "pittsburgh steelers 2027 draft quarterback strategy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T10:10:00Z",
+      "related_news_urls": [
+        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/177862/steelers-take-quarterback-in-pff-mock-draft-darian-mensah",
+        "https://steelersdepot.com/2026/11/mike-mccarthy-teases-steelers-2027-quarterback-plan/",
+        "https://steelersnow.com/jpj-replacement-steelers-land-another-cb-in-mock-2027-nfl-draft/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_7OiUl2rpr78FGUUVcefCdrQ5Wh8ucuhJyFhwIT8etB6SssgxyQVG-bODglY",
+      "image_credit": "Behind the Steel Curtain",
+      "news": [
+        {
+          "url": "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/177862/steelers-take-quarterback-in-pff-mock-draft-darian-mensah",
+          "title": "Steelers take quarterback in PFF mock draft",
+          "publisher": "Behind the Steel Curtain",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_7OiUl2rpr78FGUUVcefCdrQ5Wh8ucuhJyFhwIT8etB6SssgxyQVG-bODglY"
+        },
+        {
+          "url": "https://steelersdepot.com/2026/11/mike-mccarthy-teases-steelers-2027-quarterback-plan/",
+          "title": "Mike McCarthy Teases Steelers’ 2027 Quarterback Plan",
+          "publisher": "Steelers Depot",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPNtOUMG-V5UF6zn-H0ZDQ_4T7x-BQR2wqVCaaCJfS4LhrcrXN18Y-Hri3574"
+        },
+        {
+          "url": "https://steelersnow.com/jpj-replacement-steelers-land-another-cb-in-mock-2027-nfl-draft/",
+          "title": "JPJ Replacement? Steelers Land Another CB in Mock 2027 NFL Draft",
+          "publisher": "Steelers Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaNZ3Q_9auIAM-gfEIA4xgl3HpXQJAhAsxYXj0r_rXWA2aztUt2KQ4HdeVrw0"
+        }
+      ]
+    },
+    {
+      "query": "nigeria",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T10:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cj93rggenq4xo",
+        "https://www.channelstv.com/2026/11/15/ndlea-arrests-american-basketball-player-with-34kg-cannabis-at-lagos-airport/",
+        "https://punchng.com/ndlea-intercepts-25kg-meth-hidden-in-breakfast-cereal-from-south-africa/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGr3mraGdQ4Z-miFpQE-k9cMMlX05RH_UmIxpaqnWJQm-0-L5a87T9l3HtFh0",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cj93rggenq4xo",
+          "title": "US basketball player Greene Da'monte Khiree arrested in Nigeria with cannabis haul",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGr3mraGdQ4Z-miFpQE-k9cMMlX05RH_UmIxpaqnWJQm-0-L5a87T9l3HtFh0"
+        },
+        {
+          "url": "https://www.channelstv.com/2026/11/15/ndlea-arrests-american-basketball-player-with-34kg-cannabis-at-lagos-airport/",
+          "title": "NDLEA Arrests American Basketball Player With 34kg Cannabis At Lagos Airport",
+          "publisher": "Channels Television",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqRRj62hf_-Rj3LSsatPq-RMJZjADl5CNxV-LAIsG1nf0csjn2mvGaooSkz2g"
+        },
+        {
+          "url": "https://punchng.com/ndlea-intercepts-25kg-meth-hidden-in-breakfast-cereal-from-south-africa/",
+          "title": "NDLEA intercepts 25kg meth hidden in breakfast cereal from South Africa",
+          "publisher": "Punch Newspapers",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1t-KOPwyCQ87s18S_aIsszq3tUkVed_TuePMscsQHW4cC-s_YEWK8INpe6Rs"
+        }
+      ]
+    },
+    {
+      "query": "starbucks free holiday cup 2026",
+      "approx_searches": "100+",
+      "published_at": "2026-11-16T10:10:00Z",
+      "related_news_urls": [
+        "https://about.starbucks.com/stories/2026/starbucks-red-cup-day-2026/",
+        "https://www.delish.com/food-news/a74430610/starbucks-red-cup-day-2026-free-cup-how-to-get/",
+        "https://parade.com/food/discontinued-starbucks-holiday-drinks"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbQy0PGmHuxJHwbJmNNidWgQfAQIiENXxu8OlvV1VQJ38wDNut2Bwt27rBEso",
+      "image_credit": "Starbucks",
+      "news": [
+        {
+          "url": "https://about.starbucks.com/stories/2026/starbucks-red-cup-day-2026/",
+          "title": "Starbucks Red Cup Day 2026: How to get your free reusable holiday cup on Nov. 17",
+          "publisher": "Starbucks",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbQy0PGmHuxJHwbJmNNidWgQfAQIiENXxu8OlvV1VQJ38wDNut2Bwt27rBEso"
+        },
+        {
+          "url": "https://www.delish.com/food-news/a74430610/starbucks-red-cup-day-2026-free-cup-how-to-get/",
+          "title": "Starbucks' Free Red Cup Giveaway Returns This Week—Here's How To Get One",
+          "publisher": "Delish",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrngib-F-kbInnWKwdeLiODFdXs2ru0FhDUFW0J7ZrD2ZojzXWPIQQRbxxk30"
+        },
+        {
+          "url": "https://parade.com/food/discontinued-starbucks-holiday-drinks",
+          "title": "How to Order the Discontinued Original Starbucks Holiday Menu Today",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSO3zKzrrXE6mCq7U8P6E-Z4BnLUcWlvMm92FMKd1cluUZbGdO6-7fa2SaQKII"
+        }
+      ]
+    },
+    {
+      "query": "intel",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T10:10:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/business/intel-sued-by-shareholders-following-29-stock-plunge-2026-11-15/",
+        "https://www.bbc.com/news/articles/cw62p42p288do",
+        "https://www.globenewswire.com/news-release/2026/11/14/3403029/0/en/intc-investor-alert-robbins-geller-rudman-dowd-llp-files-class-action-lawsuit-against-intel-corporation-and-announces-opportunity-for-investors-with-substantial-losses-to-lead-the-.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVcqKK55k1DXxLAHwVEnbRCPA9e_GhQjhx-yds_brrgw-06QUIFLco-hl-21k",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/business/intel-sued-by-shareholders-following-29-stock-plunge-2026-11-15/",
+          "title": "Intel sued by shareholders following 29% stock plunge",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVcqKK55k1DXxLAHwVEnbRCPA9e_GhQjhx-yds_brrgw-06QUIFLco-hl-21k"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cw62p42p288do",
+          "title": "Investors sue chip giant Intel after 29% stock plunge",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAE16O041Qk7u3iRpeH_JWFjz6aAvkUYdxc2Tk95rcHJRO8yiqFV8lZkSKpDs"
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/14/3403029/0/en/intc-investor-alert-robbins-geller-rudman-dowd-llp-files-class-action-lawsuit-against-intel-corporation-and-announces-opportunity-for-investors-with-substantial-losses-to-lead-the-.html",
+          "title": "INTC INVESTOR ALERT: Robbins Geller Rudman & Dowd LLP Files",
+          "publisher": "GlobeNewswire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRl-ZQ3kpSogSRcfVU2Q5f3czKkka3eYbA6znfrdYNdEE6DFIxDD67GS6ntuw"
+        }
+      ]
+    },
+    {
+      "query": "zohran mamdani",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T09:50:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/news/2026/11/13/usda-grocery-stores-mamdani-trump-01165628",
+        "https://abc7ny.com/post/mayor-mamdani-secures-snap-rule-delay-bodegas-nationwide/20038782/",
+        "https://www.amny.com/politics/mamdani-deal-trump-delay-snap-rules/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTsoHhaUv4PaNrMZR-WB3RmLeajVAVAFKVPLPtQmAVa-FeH6lDEFKnp0m2ZlI",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/news/2026/11/13/usda-grocery-stores-mamdani-trump-01165628",
+          "title": "USDA delays grocery store rule after Mamdani appeal to Trump",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTsoHhaUv4PaNrMZR-WB3RmLeajVAVAFKVPLPtQmAVa-FeH6lDEFKnp0m2ZlI"
+        },
+        {
+          "url": "https://abc7ny.com/post/mayor-mamdani-secures-snap-rule-delay-bodegas-nationwide/20038782/",
+          "title": "Mayor Mamdani secures SNAP rule delay for bodegas nationwide",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
+        },
+        {
+          "url": "https://www.amny.com/politics/mamdani-deal-trump-delay-snap-rules/",
+          "title": "Mamdani strikes deal with Trump to delay new SNAP rule enforcement nationwide | amNewYork",
+          "publisher": "amNewYork",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpM0kjdPvpSs5Bo1ul71UYr9sO8IWjdWwXkJAe3JhhHrU34n4cSfere_EzvzY"
+        }
+      ]
+    },
     {
       "query": "keira knightley netflix spy series",
       "approx_searches": "200+",
@@ -50,7 +225,7 @@
         "https://www.cricinfo.com/story/sa-vs-ban-1st-test-kagiso-rabada-we-need-to-be-more-ruthless-1562805",
         "https://www.cricbuzz.com/cricket-news/140922/alarms-ring-for-bangladesh-then-south-africa-on-noisy-first-day-at-wanderers-cricbuzzcom"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6v-mUtn4KD_fzQTDmo9txXXX7w2e7v0Oy_nP7KNy50tSWwURGRXScUSqni4",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG8S17SvnSjxok6LESFx9wlpodE-Owb4Oh516cG2-50sY8NNo_zYxV9Qwl7tY",
       "image_credit": "Yahoo Sports",
       "news": [
         {
@@ -58,7 +233,7 @@
           "title": "Hridoy ton as Bangladesh reaches 327-6 on 1st day of 1st cricket test vs South Africa, Rabada 5-51",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6v-mUtn4KD_fzQTDmo9txXXX7w2e7v0Oy_nP7KNy50tSWwURGRXScUSqni4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG8S17SvnSjxok6LESFx9wlpodE-Owb4Oh516cG2-50sY8NNo_zYxV9Qwl7tY"
         },
         {
           "url": "https://www.cricinfo.com/story/sa-vs-ban-1st-test-kagiso-rabada-we-need-to-be-more-ruthless-1562805",
@@ -178,181 +353,6 @@
           "publisher": "vijesti.me",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFy7SDnAsHdZdFvyua_prPnVuG9MzL1JFYIPbhnEoNR9be6EZLN6yjshR5Nyo"
-        }
-      ]
-    },
-    {
-      "query": "indigo",
-      "approx_searches": "100+",
-      "published_at": "2026-11-16T08:00:00Z",
-      "related_news_urls": [
-        "https://aviationjeta.com/indigo-marks-two-years-of-indigo-stretch-with-over-4000-daily-seats-across-its-growing/",
-        "https://www.ndtvprofit.com/business/exclusive-indian-airlines-expand-premium-seats-despite-capacity-cuts-indigo-leads-push-12311589",
-        "https://inshorts.com/en/news/indigo-plane-takes-u-turn-after-failing-to-retract-landing-gear-in-pune--iaf-declares-emergency-1794739315628"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5iZh4bG-WvG-TURRnz4LihU_N2o8qC0nqEJLnWM8IT5_dFXcDVqCnIuNaodo",
-      "image_credit": "Aviation Jeta",
-      "news": [
-        {
-          "url": "https://aviationjeta.com/indigo-marks-two-years-of-indigo-stretch-with-over-4000-daily-seats-across-its-growing/",
-          "title": "IndiGo Marks Two Years of IndiGo Stretch with Over 4,000 Daily Seats Across its Growing",
-          "publisher": "Aviation Jeta",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5iZh4bG-WvG-TURRnz4LihU_N2o8qC0nqEJLnWM8IT5_dFXcDVqCnIuNaodo"
-        },
-        {
-          "url": "https://www.ndtvprofit.com/business/exclusive-indian-airlines-expand-premium-seats-despite-capacity-cuts-indigo-leads-push-12311589",
-          "title": "Indian Airlines Expand Premium Seats Despite Capacity Cuts, IndiGo Leads Push | Profit Exclusive",
-          "publisher": "NDTV Profit",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4BXmCjiM8A8jsvrwV0G6krza6yN6emOgrFJIcE1cxQvlUTRwYMnNAubpD0e4"
-        },
-        {
-          "url": "https://inshorts.com/en/news/indigo-plane-takes-u-turn-after-failing-to-retract-landing-gear-in-pune--iaf-declares-emergency-1794739315628",
-          "title": "IndiGo plane takes U-turn after failing to retract landing gear in Pune, IAF declares emergency | The plane was carrying 192 passengers and crew | Inshorts",
-          "publisher": "Inshorts",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIWPIvldQxGNQkckPika8DAuqXycbVU3PDncnB9_38FQ4VmJnVJC9xnZT2ki0"
-        }
-      ]
-    },
-    {
-      "query": "alexandra daddario",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T07:50:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
-        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
-        "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
-          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is Alexandra Daddario's Action Fantasy Epic)",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI"
-        },
-        {
-          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
-          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is A $1.5 Billion Space Opera With Sequels On The Way)",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt85PJdHOblx2XaH282gk2437hKb9PTDJzrKkh0eS1S7N0uxM-iwm2rnlNiRc"
-        },
-        {
-          "url": "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/",
-          "title": "Taylor Kitsch, Alexandra Daddario, Christopher Walken Cast In 'Robber'",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvUWPLXwhkZWeeM90NlJZ0U6dtk8rYW9Vyv4sW4VYgIzyy2k8OaNg9Cx0_iXE"
-        }
-      ]
-    },
-    {
-      "query": "sharad kapoor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T07:40:00Z",
-      "related_news_urls": [
-        "https://www.ndtv.com/entertainment/please-help-me-actor-sharad-kapoor-seeks-financial-support-from-film-fraternity-12329924",
-        "https://www.hindustantimes.com/entertainment/bollywood/sonu-sood-meets-josh-actor-sharad-kapoor-after-his-emotional-plea-for-work-checks-on-his-health-101794811248701.html",
-        "https://m.economictimes.com/magazines/panache/shah-rukh-khans-co-star-who-became-popular-as-antagonist-after-2000-hit-film-now-seen-begging-for-work-in-viral-video-money-is-not-the-issue-who-is-sharad-kapoor/articleshow/135850044.cms"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb7-6legWh30_r5GK2Dpt-Pq149EOg5_ELGIzdzQ1T6IshmC5El4xe7YI2wXI",
-      "image_credit": "NDTV",
-      "news": [
-        {
-          "url": "https://www.ndtv.com/entertainment/please-help-me-actor-sharad-kapoor-seeks-financial-support-from-film-fraternity-12329924",
-          "title": "After Years Of Being Bedridden, Actor Sharad Kapoor Urges Film Industry To Support Him",
-          "publisher": "NDTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb7-6legWh30_r5GK2Dpt-Pq149EOg5_ELGIzdzQ1T6IshmC5El4xe7YI2wXI"
-        },
-        {
-          "url": "https://www.hindustantimes.com/entertainment/bollywood/sonu-sood-meets-josh-actor-sharad-kapoor-after-his-emotional-plea-for-work-checks-on-his-health-101794811248701.html",
-          "title": "Sonu Sood meets Josh actor Sharad Kapoor after his emotional plea for work, checks on his health | Bollywood",
-          "publisher": "Hindustan Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbj999qTej5d6OKUmPAF3G0-cwF3av2nCuGKFuweG39t6QqfNa47DZLEvccXI"
-        },
-        {
-          "url": "https://m.economictimes.com/magazines/panache/shah-rukh-khans-co-star-who-became-popular-as-antagonist-after-2000-hit-film-now-seen-begging-for-work-in-viral-video-money-is-not-the-issue-who-is-sharad-kapoor/articleshow/135850044.cms",
-          "title": "Shah Rukh Khan’s co-star, who became popular as antagonist after 2000 hit film, now seen begging for work",
-          "publisher": "The Economic Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFGAooGbX5fl9AVhA-faK5egat9ZlFLpcfsguwI3ndXYCnoxF2xYkdDvF8MKk"
-        }
-      ]
-    },
-    {
-      "query": "colin farrell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T07:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/16/emma-fogarty-colin-farrell-marathons-friendship-the-slightest-touch",
-        "https://www.imdb.com/it/news/ni66113058/?ref_=nwc_art_perm",
-        "https://www.instyle.com/colin-farrell-opens-up-son-james-health-battle-angelman-syndrome-12251765"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQdaSE41hxoW64GcEaUF1kek2saULwyfAdGTk5MAZzQe0lQn_Kj7o_SS3j_ic",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/16/emma-fogarty-colin-farrell-marathons-friendship-the-slightest-touch",
-          "title": "‘I’m a smalltown girl with a terrible disability. He’s a Hollywood superstar. But we’ve been laughing since we met’: Emma Fogarty and Colin Farrell on their extraordinary story",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQdaSE41hxoW64GcEaUF1kek2saULwyfAdGTk5MAZzQe0lQn_Kj7o_SS3j_ic"
-        },
-        {
-          "url": "https://www.imdb.com/it/news/ni66113058/?ref_=nwc_art_perm",
-          "title": "‘I’m a smalltown girl with a terrible disability. He’s a Hollywood superstar. But we’ve been laughing since we met’: Emma Fogarty and Colin Farrell on their extraordinary story",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQepIv7D3Gp75Q6vZmhDoK3ycsYVkfD244hFsCl3RG08d--KtHnUtigsACle-c"
-        },
-        {
-          "url": "https://www.instyle.com/colin-farrell-opens-up-son-james-health-battle-angelman-syndrome-12251765",
-          "title": "Colin Farrell Admits Even He Doesn’t Know the “Depths or Nuance” of His 23-Year-Old Son’s Health Battle",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsd_5eHoEB6Hd18sd52Z56K7K_R8MTK-A967UpOmxZvtKVujVIkemQLaUhINU"
-        }
-      ]
-    },
-    {
-      "query": "gta vi game",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T07:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-        "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
-        "https://www.forbes.com/sites/antoniopequenoiv/2026/11/11/grand-theft-auto-vi-reaches-1-billion-in-sales-ahead-of-release-report-says/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-          "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94"
-        },
-        {
-          "url": "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
-          "title": "Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcX3HbDpCNM6y5ct8Zb36Q0dq2OK0epLORhVFBkEfStwDKfo7YWU5uyMKUhTk"
-        },
-        {
-          "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/11/11/grand-theft-auto-vi-reaches-1-billion-in-sales-ahead-of-release-report-says/",
-          "title": "‘Grand Theft Auto VI’ Reaches $1 Billion In Sales Ahead Of Release, Report Says",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3yyMoE0sjcz2HWmcpuD3enTuobJvMKIJjc7gpHRFQzmbsclNmIsG7dby5f9I"
         }
       ]
     }
