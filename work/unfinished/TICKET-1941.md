@@ -27,7 +27,7 @@ independent_review: "pending"
 merged: false
 deployed: false
 live_verified: false
-blocker: "3 recent forks verified (kepano-obsidian, obsidian-skills, obsidian-second-brain); remaining 4 of original 7 sources have no matching owner fork. GitHub connector exposes no fork action. Independent review, private authenticated sync, Android acceptance still missing."
+blocker: "3 recent forks verified (kepano-obsidian, obsidian-skills, obsidian-second-brain); only 2 are among the post's original 7 (vault foundation and skills); the other 5 original sources have no matching owner fork. GitHub connector exposes no fork action. Independent review, private authenticated sync, Android acceptance still missing."
 next_action: "Verify post-repair exact-head GitHub CI and obtain independent review on PR #1942"
 ---
 
