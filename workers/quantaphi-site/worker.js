@@ -100,6 +100,10 @@ const routeFor = incoming => {
  // Shared Oracle interface now belongs to QuantaPhi's tested main stylesheet.
  if (path === '/QuantaPhi' || path === '/QuantaPhi/' || path === '/QuantaPhi/index.html') return { redirect: '/' + incoming.search };
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
+ for (const guide of ['/continuitybuilder', '/avatarai']) {
+  const sourcePath = guide + '/index.html';
+  if (path === guide || path === guide + '/' || path === sourcePath) return { repo: 'QuantaPhi', sourcePath, publicPath: guide };
+ }
  for (const section of ['directory','studio','pixie','bubbles-agent-workshop']) {
   if(path==='/'+section)return {redirect:'/'+section+'/'+incoming.search};
   if(path.startsWith('/'+section+'/'))return {repo:'QuantaPhi',sourcePath:path.endsWith('/')?path+'index.html':path,publicPath:path};
