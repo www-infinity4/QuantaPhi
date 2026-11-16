@@ -3,54 +3,264 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-16T12:41:15.746305Z",
+  "checked_at": "2026-11-16T13:07:19.742433Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "maggie haberman",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T12:20:00Z",
+      "query": "dc studios leadership change gunn safran",
+      "approx_searches": "500+",
+      "published_at": "2026-11-16T12:50:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/video/us/politics/100000011272223/whats-behind-the-trump-huang-relationship.html",
-        "https://www.facebook.com/nytimes/videos/whats-behind-the-trump-huang-relationship/1618205950105351/",
-        "https://www.afr.com/markets/equity-markets/trump-says-huang-probably-has-excuse-for-affair-nextdc-under-siege-anz-boss-s-gamble-will-change-banking-20261109-p61cl6"
+        "https://www.thewrap.com/creative-content/movies/dc-studios-why-james-gunn-peter-safran-fired-jeremy-latcham/",
+        "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
+        "https://www.bloomberg.com/opinion/articles/2026-11-12/skydance-can-t-afford-dc-s-cinematic-universe"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYt-EdMhArr3LqwYnRZOmsty4bsjisSpIBXBo81cgRscEQrkdFyFkH2G3esMs",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEIr2tvvIYgwTzbulJ_dgxAr6L1jt5ZGGzYrgVssLGlMY4wGRwfx5tGk8Ii04",
+      "image_credit": "TheWrap",
+      "news": [
+        {
+          "url": "https://www.thewrap.com/creative-content/movies/dc-studios-why-james-gunn-peter-safran-fired-jeremy-latcham/",
+          "title": "DC in Flux Again: Jeremy Latcham Takes Over James Gunn's Universe of Gods and Monsters | Analysis",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEIr2tvvIYgwTzbulJ_dgxAr6L1jt5ZGGzYrgVssLGlMY4wGRwfx5tGk8Ii04"
+        },
+        {
+          "url": "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
+          "title": "DC Studios Shakeup: James Gunn & Peter Safran Out, Former Marvel Exec Jeremy Latcham In",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSzcpr9UcIHbbJP4UQYDE35qE5G568ZA5NTtOn4MDKeS03CjJCDbIVjqu7H8"
+        },
+        {
+          "url": "https://www.bloomberg.com/opinion/articles/2026-11-12/skydance-can-t-afford-dc-s-cinematic-universe",
+          "title": "Skydance Can't Afford DC’s Cinematic Universe",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXG5L3ST02wG6v4nXxJNQWgRZ5X9k4BJ0EkMJDdhYXGGrzANEDFuNDDY4a0To"
+        }
+      ]
+    },
+    {
+      "query": "ethan hawke",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T12:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/16/theater/stoppard-and-shakespeare-ethan-hawke-theater-for-a-new-audience.html",
+        "https://www.esquire.com/entertainment/tv/a74375701/tommy-lee-jones-the-lowdown-interview/",
+        "https://www.avclub.com/the-lowdown-recap-season-2-episode-6-leaving-and-coming-back"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTrcR-aiLhKB9jUQT3oGo7OFea0Vn6H3AXTQxt9my4DKL_-pIvSrSvlT4U2vk",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/video/us/politics/100000011272223/whats-behind-the-trump-huang-relationship.html",
-          "title": "Video: What’s Behind the Trump-Huang Relationship?",
+          "url": "https://www.nytimes.com/2026/11/16/theater/stoppard-and-shakespeare-ethan-hawke-theater-for-a-new-audience.html",
+          "title": "‘Tom Stoppard’s Shakespeare, A One-Night-Only Production",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYt-EdMhArr3LqwYnRZOmsty4bsjisSpIBXBo81cgRscEQrkdFyFkH2G3esMs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTrcR-aiLhKB9jUQT3oGo7OFea0Vn6H3AXTQxt9my4DKL_-pIvSrSvlT4U2vk"
         },
         {
-          "url": "https://www.facebook.com/nytimes/videos/whats-behind-the-trump-huang-relationship/1618205950105351/",
-          "title": "The New York Times. . President Trump’s show of support for Jensen Huang as he was under fire was a noteworthy moment in a relationship that barely existed two years ago. Our White",
-          "publisher": "Facebook",
+          "url": "https://www.esquire.com/entertainment/tv/a74375701/tommy-lee-jones-the-lowdown-interview/",
+          "title": "Tommy Lee Jones Couldn’t Care Less About His Legacy",
+          "publisher": "Esquire",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRppTLCyg8PNOfnD1Qv27r3YbQfPUHZC5tYX45KTf_0hNF8qZFaP_d5hND-I-Q"
         },
         {
-          "url": "https://www.afr.com/markets/equity-markets/trump-says-huang-probably-has-excuse-for-affair-nextdc-under-siege-anz-boss-s-gamble-will-change-banking-20261109-p61cl6",
-          "title": "Trump says Huang ‘probably has excuse’ for affair; NextDC under siege; ANZ boss’s gamble will change banking",
-          "publisher": "AFR",
+          "url": "https://www.avclub.com/the-lowdown-recap-season-2-episode-6-leaving-and-coming-back",
+          "title": "Lee finally reconnects with his dad on an emotional episode of The Lowdown",
+          "publisher": "A.V. Club",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsvxbzRuFR-Fr_jE0_eG9EzviJNAu9zJz9TbiU0opKMCfRBt0mZjA4lqEzP0U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6tdfbCZA7q7zOwIre8n0iG6F0Na9lAHDKdJrn8K5o8uLa125jST0GBER-rDs"
+        }
+      ]
+    },
+    {
+      "query": "tina simmons",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T12:50:00Z",
+      "related_news_urls": [
+        "https://www.oxfordmail.co.uk/news/26731778.beloved-star-wars-batman-actress-dies-tributes-made/",
+        "https://www.thesun.co.uk/tvandshowbiz/41034465/hollywood-actress-dies-pals-tribute/",
+        "https://www.jedinews.com/film-music-tv/articles/tina-simmons-rebel-technician-in-return-of-the-jedi-has-died/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-JFLOg5Ei_6mek2piEqoQwDF23eJj-1atJIJfYqYA8aSYNWR-ljihMhkxKMg",
+      "image_credit": "Oxford Mail",
+      "news": [
+        {
+          "url": "https://www.oxfordmail.co.uk/news/26731778.beloved-star-wars-batman-actress-dies-tributes-made/",
+          "title": "Beloved Star Wars and Batman actress dies as tributes pour in",
+          "publisher": "Oxford Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-JFLOg5Ei_6mek2piEqoQwDF23eJj-1atJIJfYqYA8aSYNWR-ljihMhkxKMg"
+        },
+        {
+          "url": "https://www.thesun.co.uk/tvandshowbiz/41034465/hollywood-actress-dies-pals-tribute/",
+          "title": "Star Wars, James Bond & Batman actress with dozens of Hollywood roles dies - as pals pay touching tribute",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpFnqaOvOdXZ1_fIkjUvlDxnfQBs3YhHZbSlc-VnNOdUXWkvU3cYwmDCSb9Gg"
+        },
+        {
+          "url": "https://www.jedinews.com/film-music-tv/articles/tina-simmons-rebel-technician-in-return-of-the-jedi-has-died/",
+          "title": "Tina Simmons, Rebel Technician in Return of the Jedi, Has Died",
+          "publisher": "Jedi News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUNFh9XGBME2YsbOgIfTabtMynOqOkXe8DAdICiedL4eama_0NLNo7WZM3DME"
+        }
+      ]
+    },
+    {
+      "query": "royal news",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T12:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/c5lyk0e3n1jxo",
+        "https://www.reuters.com/world/uk/uks-prince-william-princess-kate-arrive-mumbai-three-day-trip-2026-11-16/",
+        "https://people.com/kate-middleton-prince-william-arrive-india-first-joint-tour-4-years-12252916"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpcrdrXiKMw6lyGyfmfHyvygpkGojcBZFp4Zlq8ZiIMFJfkIGku6LhjxOQaDk",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/c5lyk0e3n1jxo",
+          "title": "Prince and Princess of Wales in India ahead of meeting with Modi",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpcrdrXiKMw6lyGyfmfHyvygpkGojcBZFp4Zlq8ZiIMFJfkIGku6LhjxOQaDk"
+        },
+        {
+          "url": "https://www.reuters.com/world/uk/uks-prince-william-princess-kate-arrive-mumbai-three-day-trip-2026-11-16/",
+          "title": "UK's Prince William, Princess Kate begin India visit with street cricket",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzHU8T7aas522Ne8UPl3ekxV8nCx9MZuN76FijZL9kvROCKsmMBvMC-e-25Yw"
+        },
+        {
+          "url": "https://people.com/kate-middleton-prince-william-arrive-india-first-joint-tour-4-years-12252916",
+          "title": "Kate Middleton and Prince William Arrive in India for First Joint Overseas Royal Tour in 4 Years",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG6ErvGss8t7FLlKN5OtBPYiczmNBE-9u5pi-al83RBA9_qTSgyoDhwQMUSdA"
+        }
+      ]
+    },
+    {
+      "query": "gerard depardieu",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T12:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/16/movies/gerard-depardieu-apology-appeal-withdrawal.html",
+        "https://deadline.com/2026/11/gerard-depardieu-drops-appeal-sexual-assault-verdict-1237224924/",
+        "https://www.hollywoodreporter.com/movies/movie-news/gerard-depardieu-drops-appeal-in-sexual-assault-conviction-1236756092/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSO9jqAwG6IsjPONr4CjCY8RMgJOu4nX5VOlcAke46Jmk8E5KytgnLt9JYmeBQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/16/movies/gerard-depardieu-apology-appeal-withdrawal.html",
+          "title": "Gérard Depardieu Withdraws Sexual Assault Appeal, Apologizing to Victims",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSO9jqAwG6IsjPONr4CjCY8RMgJOu4nX5VOlcAke46Jmk8E5KytgnLt9JYmeBQ"
+        },
+        {
+          "url": "https://deadline.com/2026/11/gerard-depardieu-drops-appeal-sexual-assault-verdict-1237224924/",
+          "title": "Gérard Depardieu Drops Appeal Against Sexual Assault Verdict & Acknowledges Guilt In Statement Titled ‘I Hear’",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8yT7CGxddvoQbOaAODJZu27QuNx6wLcEngVKBXF1hzdfOZ1d02VVU0BK-SdA"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/gerard-depardieu-drops-appeal-in-sexual-assault-conviction-1236756092/",
+          "title": "Gerard Depardieu Drops Appeal Against Sexual Assault Conviction, Admits Guilt",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsZbQLuTOMYgmB87T3lQWTr_gRq21z6ttZrtXXOaYD-TMa0HuFxD6svHOKiFA"
+        }
+      ]
+    },
+    {
+      "query": "namibia vs cameroon",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-16T12:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cx05436lm54mt",
+        "https://www.vavel.com/en/data/cameroun/fixtures/",
+        "https://en.africatopsports.com/afcon-2027-q-namibia-coach-collin-benjamin-set-to-miss-clash-against-cameroon/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cx05436lm54mt",
+          "title": "Cameroon vs Namibia: Africa Cup of Nations Qualification stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.vavel.com/en/data/cameroun/fixtures/",
+          "title": "Cameroun fixtures 2027: next matches and kick-off times",
+          "publisher": "VAVEL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAz0HVkLdi5EadvOVb1a5k9wLbRa39jyehLPTXCUqUeDCd6-WatpZjQlZ-co4"
+        },
+        {
+          "url": "https://en.africatopsports.com/afcon-2027-q-namibia-coach-collin-benjamin-set-to-miss-clash-against-cameroon/",
+          "title": "AFCON 2027 (Q): Namibia coach Collin Benjamin set to miss clash against Cameroon",
+          "publisher": "Africa Top Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5026W_iGBGCJ_6_Vw-m4XZE_-tVYxE4EvOmVnq5Z3qVE5b5_EoARnCMRrQjs"
+        }
+      ]
+    },
+    {
+      "query": "ionq stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-16T12:30:00Z",
+      "related_news_urls": [
+        "https://seekingalpha.com/article/4968458-ionq-im-losing-confidence-in-the-story-downgrade",
+        "https://stockstory.org/us/stocks/nasdaq/qubt/news/why-up-down/quantum-computing-rigetti-computing-terawulf-and-xanadu-quantum-technologies-shares-are-falling-what-you-need-to-know",
+        "https://finance.biggo.com/news/f27c9ca0-5962-46ed-8c08-e5c1ad9fd8d2"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiVVDG3e3r-yW2lAidNmfsYttH6dlmQ5xKg5rfRootEME7ECT1uPGtgc30X7w",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/article/4968458-ionq-im-losing-confidence-in-the-story-downgrade",
+          "title": "IonQ: I'm Losing Confidence In The Story (Rating Downgrade)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiVVDG3e3r-yW2lAidNmfsYttH6dlmQ5xKg5rfRootEME7ECT1uPGtgc30X7w"
+        },
+        {
+          "url": "https://stockstory.org/us/stocks/nasdaq/qubt/news/why-up-down/quantum-computing-rigetti-computing-terawulf-and-xanadu-quantum-technologies-shares-are-falling-what-you-need-to-know",
+          "title": "Quantum Computing, Rigetti Computing, TeraWulf, and Xanadu Quantum Technologies shares are falling, what you need to know",
+          "publisher": "StockStory",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPyqvx8XOXSVu_YMSYORI95CBcGeLNLhX-Sn20I--KewaI2hkXzlY8TXdsj1k"
+        },
+        {
+          "url": "https://finance.biggo.com/news/f27c9ca0-5962-46ed-8c08-e5c1ad9fd8d2",
+          "title": "Quantum Stocks Retreat as Hot CPI, Nvidia Shakeup and Mixed Earnings Hit Sector",
+          "publisher": "BigGo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUN1sJTJ8p9ioXHf28Zs9YjN1LxFTkpjs-SVkcq8LHxw8RQDEYX7C6BXUf20Q"
         }
       ]
     },
     {
       "query": "willie geist",
-      "approx_searches": "200+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-16T12:20:00Z",
       "related_news_urls": [
         "https://www.hollywoodreporter.com/tv/tv-news/willie-geist-leaves-morning-joe-nbc-today-show-role-expanded-1236755775/",
-        "https://www.latimes.com/entertainment-arts/business/story/2026-11-16/morning-joe-co-anchor-willie-geist-is-leaving-ms-now",
-        "https://variety.com/2026/tv/news/willie-geist-exit-morning-joe-today-1236948203/"
+        "https://pagesix.com/2026/11/16/entertainment/today-star-willie-geist-announces-major-new-career-move/",
+        "https://www.latimes.com/entertainment-arts/business/story/2026-11-16/morning-joe-co-anchor-willie-geist-is-leaving-ms-now"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_KyITnKZzruqlEbZKQ7g8rHLVgcpcmm3mQCAbv_GVaAMuFQf6nRq3O_vdfEA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHvlERv8vVWesDDlfDMVrugjamecMDI3g5dj78eIL6qvXd2uU2hxd0kj8tBk",
       "image_credit": "The Hollywood Reporter",
       "news": [
         {
@@ -58,7 +268,14 @@
           "title": "Willie Geist to Exit MS NOW’s ‘Morning Joe’ for Expanded Role at NBC’s ‘Today’ Show",
           "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_KyITnKZzruqlEbZKQ7g8rHLVgcpcmm3mQCAbv_GVaAMuFQf6nRq3O_vdfEA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHvlERv8vVWesDDlfDMVrugjamecMDI3g5dj78eIL6qvXd2uU2hxd0kj8tBk"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/16/entertainment/today-star-willie-geist-announces-major-new-career-move/",
+          "title": "‘Today’ star Willie Geist announces major new career move",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSIa8eHtvKP4oFXbT5NCPW1Rx5716tpmtFRMCmjfOjqNi_1j5pAmJnO46I70U"
         },
         {
           "url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-16/morning-joe-co-anchor-willie-geist-is-leaving-ms-now",
@@ -66,19 +283,12 @@
           "publisher": "Los Angeles Times",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWafQB7npLjbWjdMeOc3PLRndPomj23xdzOrhDkOE-B9sCGgsf-qf_7wKxJKY"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/willie-geist-exit-morning-joe-today-1236948203/",
-          "title": "Willie Geist Will Exit MS NOW’s ‘Morning Joe’ After Nearly 20 Years for Expanded Role at NBC’s ‘Today’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPOIAZRkVUKclPdUT4MliPE-3oJZXf_sQwQFyIkYB23SsQNKVKoS7joY1btUM"
         }
       ]
     },
     {
       "query": "arch manning postgame celebration viral video",
-      "approx_searches": "200+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-16T12:20:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/texas-arch-manning-becomes-college-015235607.html",
@@ -113,7 +323,7 @@
     },
     {
       "query": "sudan vs senegal",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-16T12:20:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/crd93172z4vjt",
@@ -143,216 +353,6 @@
           "publisher": "Flashscore.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj4aN9mPATWAJ7BwobZ4d2TB8qrUayFCakTvqCBduXHsxO1M2j6oMxO0n7FKc"
-        }
-      ]
-    },
-    {
-      "query": "the body netflix petition",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-16T12:20:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66109843/?ref_=ttnw_art_perm",
-        "https://www.vogue.com/article/40-thoughts-i-had-about-episode-1-of-the-body",
-        "https://www.forbes.com/sites/paultassi/2026/11/15/netflixs-best-new-show-deserves-its-98-rotten-tomatoes-audience-score/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKTKDok_GiyLmD3JL8u6KablvS1Zwg7Vo_wy9UgZ6Kag2vIDQFCVSYaiE2Jwg",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66109843/?ref_=ttnw_art_perm",
-          "title": "84,000 Signed Petition for Netflix to Cancel ‘The Body,’ Yet It’s Surging Up Charts After 100% Rotten Tomatoes Debut",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKTKDok_GiyLmD3JL8u6KablvS1Zwg7Vo_wy9UgZ6Kag2vIDQFCVSYaiE2Jwg"
-        },
-        {
-          "url": "https://www.vogue.com/article/40-thoughts-i-had-about-episode-1-of-the-body",
-          "title": "40 Thoughts I Had About Episode 1 of ‘The Body’",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpZiB8d1JbkfHoXCQlZFKaFCaFZrX0KL7BNy3G2pnEKhqRE2MHnCRSHv965bY"
-        },
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/15/netflixs-best-new-show-deserves-its-98-rotten-tomatoes-audience-score/",
-          "title": "Netflix’s Best New Show Deserves Its 98% Rotten Tomatoes Audience Score",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_6dX44l7QvdXETXLa31lCqdxbKltZXBljud0ReoQWLRsi49vHQEk9Eeo0K8"
-        }
-      ]
-    },
-    {
-      "query": "when is anthropic ipo",
-      "approx_searches": "100+",
-      "published_at": "2026-11-16T12:20:00Z",
-      "related_news_urls": [
-        "https://www.economist.com/business/2026/11/15/anthropics-giant-ipo-puts-the-heat-on-openai",
-        "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
-        "https://apnews.com/article/anthropic-ipo-public-benefit-corp-a2a04c9bcf681c1b46b13607171c83b4"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSMJIAVkOOAP-h-lF6uyg4XoTcLXiG11Xd1hOebC3Vbxx7uNpo_8DyjDn4nlw",
-      "image_credit": "The Economist",
-      "news": [
-        {
-          "url": "https://www.economist.com/business/2026/11/15/anthropics-giant-ipo-puts-the-heat-on-openai",
-          "title": "Anthropic’s giant IPO puts the heat on OpenAI",
-          "publisher": "The Economist",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSMJIAVkOOAP-h-lF6uyg4XoTcLXiG11Xd1hOebC3Vbxx7uNpo_8DyjDn4nlw"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
-          "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsJcEXySJpxWktckZZYh2Yt7WeCcoHCAmtl3pEtLKpLwZKgzvwDjFF2_lieWU"
-        },
-        {
-          "url": "https://apnews.com/article/anthropic-ipo-public-benefit-corp-a2a04c9bcf681c1b46b13607171c83b4",
-          "title": "Anthropic promises to pursue humanity’s benefit. Its IPO filing gives it wiggle room",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxJK3_A5tyz_YtV6nS0T6RR-EmabB7TT7CA3nPuvKDLST1Nvz9LuiDhR4N0gw"
-        }
-      ]
-    },
-    {
-      "query": "police",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T12:10:00Z",
-      "related_news_urls": [
-        "https://abc7chicago.com/post/big-run-golf-club-lockport-thanks-chicago-police-recovering-stolen-carts/20043959/",
-        "https://www.fox32chicago.com/news/lockport-golf-clubs-blunt-response-theft-10-carts-goes-viral",
-        "https://hoodline.com/2026/11/lockport-golf-club-hit-again-as-thieves-swipe-10-carts-owners-fire-back-on-facebook/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPq6k2MeV-0TOpyCqG0FiPBS5QGVxT9o1xZQiALb0gu_eqENH1inTkPP3n09o",
-      "image_credit": "ABC7 Chicago",
-      "news": [
-        {
-          "url": "https://abc7chicago.com/post/big-run-golf-club-lockport-thanks-chicago-police-recovering-stolen-carts/20043959/",
-          "title": "at Big Run Golf Club in Lockport thanks Chicago police for recovering stolen golf carts",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPq6k2MeV-0TOpyCqG0FiPBS5QGVxT9o1xZQiALb0gu_eqENH1inTkPP3n09o"
-        },
-        {
-          "url": "https://www.fox32chicago.com/news/lockport-golf-clubs-blunt-response-theft-10-carts-goes-viral",
-          "title": "Lockport golf club's blunt response to theft of 10 carts goes viral",
-          "publisher": "FOX 32 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKEDFf8G0nyhsxJxYlyefh_XanP1VjpuPU4Z479a2Is9fSZadBFXQBQHtNQFQ"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/lockport-golf-club-hit-again-as-thieves-swipe-10-carts-owners-fire-back-on-facebook/",
-          "title": "Lockport Golf Club Hit by Second Cart Theft in Months",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxPbzAECs37p-m7LWMtAF9YYCK3KOsCY9q3GDnk0AMuwj0sY8Vhcyfi_lYImU"
-        }
-      ]
-    },
-    {
-      "query": "katy perry new short haircut",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-16T12:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/es/news/ni66111958/?ref_=nwc_art_perm",
-        "https://www.instyle.com/katy-perry-debuts-hair-baby2baby-gala-justin-trudeau-12256038",
-        "https://www.usatoday.com/story/entertainment/music/2026/11/15/katy-perry-justin-trudeau-red-carpet-baby2baby/92802394007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCo9SlwBsJJgzKoVqthsH8vUI_s9svI_3gqTrjzytYS2Y_bntuZQ_NezxHQQs",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/es/news/ni66111958/?ref_=nwc_art_perm",
-          "title": "Katy Perry & Justin Trudeau Couple Up at Baby2Baby Gala 2026, Her Sister Also Attends!",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCo9SlwBsJJgzKoVqthsH8vUI_s9svI_3gqTrjzytYS2Y_bntuZQ_NezxHQQs"
-        },
-        {
-          "url": "https://www.instyle.com/katy-perry-debuts-hair-baby2baby-gala-justin-trudeau-12256038",
-          "title": "Katy Perry Debuts Her Shortest Hair in Two Years for a Rare Red Carpet Date Night With Justin Trudeau",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQp3kDtAkcv238VSltN51HP9yGaEFyRTR_Oi1k_fvCjGXs1AQv5jm1fucEtnE"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/15/katy-perry-justin-trudeau-red-carpet-baby2baby/92802394007/",
-          "title": "Katy Perry debuts dramatic bob during Justin Trudeau date night",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYy7vAC8-P3U9GCgH16v6U9N8b-y0NCpSo0HfYR0qwWKTQwKtgz4Xi62jN2qI"
-        }
-      ]
-    },
-    {
-      "query": "sec football standings title contenders",
-      "approx_searches": "100+",
-      "published_at": "2026-11-16T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7785903/2026/11/16/sec-football-rankings-week-11-georgia-tennessee-texas/",
-        "https://www.al.com/sports/2026/11/alcoms-sec-football-power-rankings-for-week-12-of-2026-have-bus-will-or-maybe-wont-travel.html",
-        "https://www.miamiherald.com/sports/article318097883.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFjoF7CrulYto4YjKmg8EhbVI4V0zEHQUrZpYz5JmHaSgTpF2Ck43p7AM_ZSo",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7785903/2026/11/16/sec-football-rankings-week-11-georgia-tennessee-texas/",
-          "title": "If you’re an SEC team, there’s a good chance you’re 6-4. Conference vibes after Week 11",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFjoF7CrulYto4YjKmg8EhbVI4V0zEHQUrZpYz5JmHaSgTpF2Ck43p7AM_ZSo"
-        },
-        {
-          "url": "https://www.al.com/sports/2026/11/alcoms-sec-football-power-rankings-for-week-12-of-2026-have-bus-will-or-maybe-wont-travel.html",
-          "title": "AL.com’s SEC Football Power Rankings for Week 12 of 2026 season: Have bus, will (or maybe won’t) travel",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TxX3_OCO0ZdLjXnvI_QU6IHKivTCJU8frHZoYe94E0oS6yS5O-b20OxR8zc"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/article318097883.html",
-          "title": "SEC Power Rankings: Texas, Florida rising following Week 11 results",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6ik782DoJSfbiiiHaeKrRN8P0wGnvBAKinQRied6MDEScMFtZq1P0BO3oW5c"
-        }
-      ]
-    },
-    {
-      "query": "stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-16T12:00:00Z",
-      "related_news_urls": [
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-investors-nvidia-results-anthropic-ipo",
-        "https://finance.yahoo.com/markets/stocks/articles/nvidia-earnings-anthropic-ipo-federal-112739467.html",
-        "https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVZUKlcmjnmTFQ1YZBmKHF39IPopP2AMJtpcFgIrNr1GLtwG2kgCxzzolNyTo",
-      "image_credit": "MarketWatch",
-      "news": [
-        {
-          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-investors-nvidia-results-anthropic-ipo",
-          "title": "Stock Market Today: Dow, S&P 500 and Nasdaq are set to fall as investors await Nvidia results and Anthropic's IPO this week: live updates",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVZUKlcmjnmTFQ1YZBmKHF39IPopP2AMJtpcFgIrNr1GLtwG2kgCxzzolNyTo"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-earnings-anthropic-ipo-federal-112739467.html",
-          "title": "Nvidia Earnings, Anthropic IPO and Federal Reserve Outlook Among Five Key Market Events This Week",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQV7GlGXaPjhVoODIc-BaAakD-dfv7HFydIXSduDp-KQw1T_3cFyPUL5PosTY"
-        },
-        {
-          "url": "https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7",
-          "title": "Stocks decline on tech sell-off as concerns over the Nvidia fallout persist",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRur9a1M0REXP2xn8wD0nkIhCXKUc4X3PgS7dLpOUcaeKaSjdJe10djL3CDZ2g"
         }
       ]
     }
