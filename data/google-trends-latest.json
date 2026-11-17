@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T02:01:23.258930Z",
+  "checked_at": "2026-11-17T02:31:15.738271Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "what happened to dan hicks",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T01:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/world-lost-good-man-chris-002006904.html",
-        "https://www.golfchannel.com/news/news/dan-hicks-legendary-nbc-sports-and-golf-announcer-dies-at-age-64",
-        "https://www.nytimes.com/athletic/7776708/2026/11/12/dan-hicks-olympics-broadcaster-michael-phelps-lindsey-vonn/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKoTFffBJYBOr_klJOqWVRRrR3-uJr7V0ahTa9jaUEnKPKL0HFN61qBFL-9rc",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/world-lost-good-man-chris-002006904.html",
-          "title": "“The World Lost A Good Man” – Chris Evert Heartbroken Over Death of Longtime NBC Sports Announcer Dan Hicks",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKoTFffBJYBOr_klJOqWVRRrR3-uJr7V0ahTa9jaUEnKPKL0HFN61qBFL-9rc"
-        },
-        {
-          "url": "https://www.golfchannel.com/news/news/dan-hicks-legendary-nbc-sports-and-golf-announcer-dies-at-age-64",
-          "title": "Dan Hicks, legendary NBC Sports and golf announcer, dies at age 64",
-          "publisher": "Golf Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRdl5X2slvVuGTH8Q98WVAPAeognuP1Iil7wVHFQE1WPrlHF4zKcRyiz2GsDU"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7776708/2026/11/12/dan-hicks-olympics-broadcaster-michael-phelps-lindsey-vonn/",
-          "title": "Dan Hicks, our host for so much Olympic greatness, always met the golden moment",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtRCZ4Qsda5lS3UXzB_6BWbH1WXQGZ1B_nEB3cs-hOcG0pYZVvpRpJy8H3IUg"
-        }
-      ]
-    },
-    {
-      "query": "ryan conwell",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T01:40:00Z",
-      "related_news_urls": [
-        "https://www.sun-sentinel.com/2026/11/14/ask-ira-could-ryan-conwell-leave-miami-heat-with-a-sense-of-closure/",
-        "https://sports.yahoo.com/articles/rookie-ryan-conwell-jr-changing-163700010.html",
-        "https://allucanheat.com/ryan-conwell-is-proving-to-be-erik-spoelstra-s-next-hidden-heat-gem"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRExOp7xBsMxK_AD9yn17h3sOBUH0wVRkxpQjNKilu6cW3EHGsDlr1tNdWH2Wc",
-      "image_credit": "Sun Sentinel",
-      "news": [
-        {
-          "url": "https://www.sun-sentinel.com/2026/11/14/ask-ira-could-ryan-conwell-leave-miami-heat-with-a-sense-of-closure/",
-          "title": "ASK IRA: Could Ryan Conwell leave Miami Heat with a sense of closure?",
-          "publisher": "Sun Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRExOp7xBsMxK_AD9yn17h3sOBUH0wVRkxpQjNKilu6cW3EHGsDlr1tNdWH2Wc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/rookie-ryan-conwell-jr-changing-163700010.html",
-          "title": "How The Rookie Ryan Conwell Jr. Is Changing the Miami Heat",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRBy9W53E6eOPU_3GlHuyJIUkMzlHe2xsqzGZsO4yYYdJoPilpvz7uYZ0IMJs"
-        },
-        {
-          "url": "https://allucanheat.com/ryan-conwell-is-proving-to-be-erik-spoelstra-s-next-hidden-heat-gem",
-          "title": "Ryan Conwell is proving to be Erik Spoelstra’s next hidden Heat gem",
-          "publisher": "All U Can Heat",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOEjbWVq-bIFfxJOcLdKu37pJsdLpQT1_AY00aG6gKI_XDsxtZti9DSunpd84"
-        }
-      ]
-    },
-    {
-      "query": "cameron boozer",
+      "query": "baltimore",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T01:40:00Z",
+      "published_at": "2026-11-17T02:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/putting-cameron-boozers-hot-start-183001078.html",
-        "https://www.sportsnet.ca/nba/video/how-grizzlies-jerome-boozer-have-impacted-teams-strong-start-to-season/",
-        "https://heavy.com/sports/nba/memphis-grizzlies/cam-boozer-etches-name-in-history/"
+        "https://www.wbaltv.com/article/park-heights-beaufort-avenue-shooting-baltimore/74443864",
+        "https://foxbaltimore.com/news/local/police-investigation-central-park-heights-neighborhood-baltimore-maryland",
+        "https://www.wbal.com/baltimore-police-responding-to-shooting-with-multiple-victims-in-central-park-heights"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-k31kOSev6Xl71V9C9HiYi5gs7MdsxYJ3ZD78SYZG8-Ov_MySggHak4Mm_fM",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ85XUwaQ-nmMYGujdViN6pNo4p8SWMWVJDpDnskQxTOoORn0CspwcqyXOw1FI",
+      "image_credit": "WBAL-TV",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/putting-cameron-boozers-hot-start-183001078.html",
-          "title": "Putting Cameron Boozer's Hot Start for Grizzlies in Perspective",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.wbaltv.com/article/park-heights-beaufort-avenue-shooting-baltimore/74443864",
+          "title": "Quadruple shooting reported in Park Heights",
+          "publisher": "WBAL-TV",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-k31kOSev6Xl71V9C9HiYi5gs7MdsxYJ3ZD78SYZG8-Ov_MySggHak4Mm_fM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ85XUwaQ-nmMYGujdViN6pNo4p8SWMWVJDpDnskQxTOoORn0CspwcqyXOw1FI"
         },
         {
-          "url": "https://www.sportsnet.ca/nba/video/how-grizzlies-jerome-boozer-have-impacted-teams-strong-start-to-season/",
-          "title": "How Grizzlies’ Jerome, Boozer have impacted team’s strong start to season",
-          "publisher": "Sportsnet.ca",
+          "url": "https://foxbaltimore.com/news/local/police-investigation-central-park-heights-neighborhood-baltimore-maryland",
+          "title": "Four people shot in Central Park Heights neighborhood in Baltimore",
+          "publisher": "WBFF",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFeHvz_EvWP_nBcb4sLHHapu6m1M7lJthOFPoPs1LIQ_Fq-567RpSpcOX-p60"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrqyHIeFlOIqIyClEPPA3HLWk0WyuKDUp6yL7dHEdPBsSgzOvoxAh316FG6F8"
         },
         {
-          "url": "https://heavy.com/sports/nba/memphis-grizzlies/cam-boozer-etches-name-in-history/",
-          "title": "Cam Boozer’s Latest Feat Puts Him Alongside LeBron James",
-          "publisher": "Heavy.com",
+          "url": "https://www.wbal.com/baltimore-police-responding-to-shooting-with-multiple-victims-in-central-park-heights",
+          "title": "Baltimore police investigate quadruple shooting in Central Park Heights",
+          "publisher": "WBAL News Radio",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSphEeFAjz2DddsURi8nqX_xHFn4QEcUWvc36yKUrX6ZEwL6hI_pPvz5hqJMGQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSntDKbuoDqN4jr7n_IwaeomG2fo4ppG27hcRu8amsoU3dwm_Y20xvSsNNfBY"
         }
       ]
     },
     {
-      "query": "clima para amanhã",
+      "query": "sacramento republic fc vs new mexico united",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T01:40:00Z",
+      "published_at": "2026-11-17T02:10:00Z",
       "related_news_urls": [
-        "https://rede98.com.br/noticias/bh-regiao/semana-comeca-com-chuva-e-tempo-fresco-mas-termina-com-calor-de-ate-31c-em-bh/",
-        "https://www.agrolink.com.br/agrotempo/noticia/minas-gerais-e-espirito-santo-concentram-a-chuva-do-sudeste-no-sabado--14-11-_521049.html",
-        "https://novo2026.portaldoholanda.com.br/belo-horizonte/clima-para-amanha-em-belo-horizonte-dia-de-chuva-forte-e-trovoadas"
+        "https://www.abc10.com/article/news/local/sacramento/sacramento-republic-fcs-western-conference-final-postponed-to-monday/103-87d9e96c-a210-42e2-82a3-534e2926cc7c",
+        "https://www.sacbee.com/news/local/transportation/article318090813.html",
+        "https://www.newmexicoutd.com/news/2026/11/15/usl-announces-the-postponement-of-the-western-conference-final/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSubXKkViCe0J_aDc9wDUfqN7dPUPhUqRCcmNhUj0JAh9Bj2TizXdZoFw3pPV4",
-      "image_credit": "Rede 98",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpCa89bVGpTWRC35vWSaXpwjyhyyKcV7V6B1HrqWhLTSRaaJSfSrLoOmqofYY",
+      "image_credit": "ABC10",
       "news": [
         {
-          "url": "https://rede98.com.br/noticias/bh-regiao/semana-comeca-com-chuva-e-tempo-fresco-mas-termina-com-calor-de-ate-31c-em-bh/",
-          "title": "Semana começa com chuva e tempo fresco, mas termina com calor de até 31°C em BH",
-          "publisher": "Rede 98",
+          "url": "https://www.abc10.com/article/news/local/sacramento/sacramento-republic-fcs-western-conference-final-postponed-to-monday/103-87d9e96c-a210-42e2-82a3-534e2926cc7c",
+          "title": "Sacramento Republic FC's Western Conference Final postponed to Monday",
+          "publisher": "ABC10",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSubXKkViCe0J_aDc9wDUfqN7dPUPhUqRCcmNhUj0JAh9Bj2TizXdZoFw3pPV4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpCa89bVGpTWRC35vWSaXpwjyhyyKcV7V6B1HrqWhLTSRaaJSfSrLoOmqofYY"
         },
         {
-          "url": "https://www.agrolink.com.br/agrotempo/noticia/minas-gerais-e-espirito-santo-concentram-a-chuva-do-sudeste-no-sabado--14-11-_521049.html",
-          "title": "Minas Gerais e Espírito Santo concentram a chuva do Sudeste no sábado (14/11)",
-          "publisher": "Agrolink",
+          "url": "https://www.sacbee.com/news/local/transportation/article318090813.html",
+          "title": "Sacramento airport disruptions continue; Republic FC playoff game rescheduled",
+          "publisher": "Sacramento Bee",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ1sPnLvr-RIzo_XI23e13ZCxOOC9dw6Bpy0Fz77uB038aYagzzObfebA8N0E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOLijB8XFRFjRHL-M56d_tyufwSwWp1QNmnrKPnnwmTxT55-3S8gbxvGVPT8"
         },
         {
-          "url": "https://novo2026.portaldoholanda.com.br/belo-horizonte/clima-para-amanha-em-belo-horizonte-dia-de-chuva-forte-e-trovoadas",
-          "title": "Clima para amanhã em Belo Horizonte: dia de chuva forte e trovoadas",
-          "publisher": "Portal do Holanda",
+          "url": "https://www.newmexicoutd.com/news/2026/11/15/usl-announces-the-postponement-of-the-western-conference-final/",
+          "title": "USL Announces the Postponement of the Western Conference Final",
+          "publisher": "New Mexico United",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaqbjwkOfUB3z4DoNFbgyP9UFdYKcKkslDd7bdEmjIjZxk0OFOKTyuP0sQ0DY"
         }
       ]
     },
     {
-      "query": "canucks vs mammoth",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T01:40:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/utah/news/utah-hosts-vancouver-to-start-the-week-game-preview-11-16-26",
-        "https://canucksarmy.com/news/vancouver-canucks-game-day-tolopilo-likely-starter-road-trip-contnues-utah-mammoth",
-        "https://www.nytimes.com/athletic/7787490/2026/11/16/canucks-vs-mammoth-stream-how-to-watch-nov-16/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk9n62UIDkcSwVhbWC_SD2twMXKqg5NL-HKXtRVr8h7pxX9ZcKe6hB3aP2Lk4",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/utah/news/utah-hosts-vancouver-to-start-the-week-game-preview-11-16-26",
-          "title": "Utah Hosts Vancouver to Start the Week",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk9n62UIDkcSwVhbWC_SD2twMXKqg5NL-HKXtRVr8h7pxX9ZcKe6hB3aP2Lk4"
-        },
-        {
-          "url": "https://canucksarmy.com/news/vancouver-canucks-game-day-tolopilo-likely-starter-road-trip-contnues-utah-mammoth",
-          "title": "Canucks Game Day: Tolopilo likely starter as road trip contnues to Utah",
-          "publisher": "Canucks Army",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHGEAo_W_o7rGbyNVzLzGe7QLbR3exlAXY9Ieecw8C4q2OXFY4x60nxWBL75c"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7787490/2026/11/16/canucks-vs-mammoth-stream-how-to-watch-nov-16/",
-          "title": "How to watch Canucks vs. Mammoth: TV channel and streaming options for November 16",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNmY90RDeQ7s15fkY7YgE1Mzy8pDPN61DKG1OF2X2f5XLUbpz9E0GxzREBFBc"
-        }
-      ]
-    },
-    {
-      "query": "new hunger games movie",
+      "query": "fire country",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T01:40:00Z",
+      "published_at": "2026-11-17T02:10:00Z",
       "related_news_urls": [
-        "https://deadline.com/gallery/the-hunger-games-sunrise-on-the-reaping-nyc-premiere-red-carpet-photos-lionsgate/",
-        "https://gizmodo.com/hunger-games-author-explains-why-haymitch-didnt-tell-katniss-and-peeta-about-his-rebellion-2000839943",
-        "https://www.yahoo.com/entertainment/videos/elizabeth-banks-slays-hunger-games-002954196.html"
+        "https://www.imdb.com/de/news/ni66113687/?ref_=nwc_art_perm",
+        "https://screenrant.com/fire-sheriff-country-2026-hiatus-november-20-2026/",
+        "https://www.tvinsider.com/1303851/fire-country-season-5-finale-date/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzW-PIF0VLFjYcLvj8j4MGCeL3oDi2TrEQQK_Ou3UpGnTDfiivyHsFQj4osgQ",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVYTDt32yf7M45wffsEd-2YI6VDfWyg5uWIgraKfXFH0N522LRC47WEtUkkxM",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://deadline.com/gallery/the-hunger-games-sunrise-on-the-reaping-nyc-premiere-red-carpet-photos-lionsgate/",
-          "title": "‘The Hunger Games: Sunrise On The Reaping’ NYC Premiere Red Carpet Photos",
-          "publisher": "Deadline",
+          "url": "https://www.imdb.com/de/news/ni66113687/?ref_=nwc_art_perm",
+          "title": "CBS Sets ‘Fire Country’ Season 5 Finale Date",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzW-PIF0VLFjYcLvj8j4MGCeL3oDi2TrEQQK_Ou3UpGnTDfiivyHsFQj4osgQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVYTDt32yf7M45wffsEd-2YI6VDfWyg5uWIgraKfXFH0N522LRC47WEtUkkxM"
         },
         {
-          "url": "https://gizmodo.com/hunger-games-author-explains-why-haymitch-didnt-tell-katniss-and-peeta-about-his-rebellion-2000839943",
-          "title": "‘Hunger Games’ Author Explains Why Haymitch Didn’t Tell Katniss and Peeta About His Rebellion",
-          "publisher": "Gizmodo",
+          "url": "https://screenrant.com/fire-sheriff-country-2026-hiatus-november-20-2026/",
+          "title": "CBS Officially Announces Important 2026 Fire & Sheriff Country Change",
+          "publisher": "ScreenRant",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dweYzgPsZk5XIID00IF_2iP4MbZ6yooUdrsmsGDrXA68y0gTRDcy2K3XKxc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQ27R-z4ixUvtD6ZmejBL_6Mj5y25Ckkkn_RRZ_mXY1JdMAK1u_zjVh8fIG9E"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/videos/elizabeth-banks-slays-hunger-games-002954196.html",
-          "title": "Elizabeth Banks slays on 'The Hunger Games' NYC carpet",
+          "url": "https://www.tvinsider.com/1303851/fire-country-season-5-finale-date/",
+          "title": "CBS Sets ‘Fire Country’ Season 5 Finale Date",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCvRFgxyEwgVxGrzdg9ytMFfZxRtazatYdIsy_Bxvdti0za-DPNmxpTmzjaTg"
+        }
+      ]
+    },
+    {
+      "query": "elizabeth banks",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T02:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/elizabeth-banks-revisits-effie-trinket-012447284.html",
+        "https://www.apple.com/tv-pr/news/2026/11/apple-tv-unveils-first-look-at-shes-fine-new-comedy-starring-and-executive-produced-by-emmy-award-nominee-elizabeth-banks-created-by-emmy-award-nominee-liz-heldens-and-matt-ward-premiering-globally-wednesday-january-27/",
+        "https://deadline.com/2026/11/shes-fine-release-date-apple-tv-elizabeth-banks-1237221546/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtdcQiK1ajl4A_FkRYEr7Eb1MVUFDI4-IPMopUp7Cr2wMQPEf-pX6ToGkh1Pk",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/elizabeth-banks-revisits-effie-trinket-012447284.html",
+          "title": "Elizabeth Banks Revisits Effie Trinket at ‘The Hunger Games’ Premiere",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ00xqtV8qsuIEMajhbieQ7CFr-i_6mB90nhyN5r5swGDt1_01TR5TfrD4o63A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtdcQiK1ajl4A_FkRYEr7Eb1MVUFDI4-IPMopUp7Cr2wMQPEf-pX6ToGkh1Pk"
+        },
+        {
+          "url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-unveils-first-look-at-shes-fine-new-comedy-starring-and-executive-produced-by-emmy-award-nominee-elizabeth-banks-created-by-emmy-award-nominee-liz-heldens-and-matt-ward-premiering-globally-wednesday-january-27/",
+          "title": "Apple TV unveils first look at “She’s Fine,” new comedy starring and executive produced by Elizabeth Banks",
+          "publisher": "Apple",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIYvIoZpH-YlgyNFAjaaqhJ0qAM1U0sTNO7BvdJiDNkIirw2nVaUFXKKoIkhc"
+        },
+        {
+          "url": "https://deadline.com/2026/11/shes-fine-release-date-apple-tv-elizabeth-banks-1237221546/",
+          "title": "Elizabeth Banks Comedy Series ‘She’s Fine’ Gets January Release Date At Apple TV — See First Look",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR54cxnUFTy36IrofOsRY1X7Jd1cqPq8P4t2w9OQaHHcbzu4gs6hbwFT1aPxis"
         }
       ]
     },
     {
-      "query": "superbowl 2027",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T01:40:00Z",
-      "related_news_urls": [
-        "https://www.hitc.com/almost-unfair-skip-bayless-prediction-for-super-bowl-2027-favourites-is-aging-like-milk/",
-        "https://espnpressroom.com/feature/espn-leaders-spotlight-momentum-streaming-progress-and-super-bowl-preparations-at-employee-town-hall/",
-        "https://pixidia.com/en/super-bowl-lxi-2027-los-angeles-travel-guide/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnxfVYR7hKfRJ0a1-XzcoUk_5sSvKtwhLoasyLcs5r2htkxsPuh02bgYQYWR4",
-      "image_credit": "HITC",
-      "news": [
-        {
-          "url": "https://www.hitc.com/almost-unfair-skip-bayless-prediction-for-super-bowl-2027-favourites-is-aging-like-milk/",
-          "title": "‘Almost unfair’ – Skip Bayless’ prediction for Super Bowl 2027 favourites is aging like milk",
-          "publisher": "HITC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnxfVYR7hKfRJ0a1-XzcoUk_5sSvKtwhLoasyLcs5r2htkxsPuh02bgYQYWR4"
-        },
-        {
-          "url": "https://espnpressroom.com/feature/espn-leaders-spotlight-momentum-streaming-progress-and-super-bowl-preparations-at-employee-town-hall/",
-          "title": "ESPN leaders spotlight momentum, streaming progress and Super Bowl preparations at Employee Town Hall",
-          "publisher": "ESPN Press Room",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCNttSDEHwZhnumSujkQYoNLg4xNfgSXpV86tUocOl9y7C0_t4Q4kCxJqQFOE"
-        },
-        {
-          "url": "https://pixidia.com/en/super-bowl-lxi-2027-los-angeles-travel-guide/",
-          "title": "Super Bowl LXI 2027 in LA: Date, Stay and Where to Watch",
-          "publisher": "Pixidia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTONN1Oh1w1msq6SF14xzUFjIfc3w-nmMcad0kZx_kl2i_JGcAc9xQkQxugD60"
-        }
-      ]
-    },
-    {
-      "query": "goga bitadze",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T01:40:00Z",
-      "related_news_urls": [
-        "https://www.orlandosentinel.com/2026/11/16/orlando-magic-boston-celtics-franz-wagner-goga-bitadze-nikola-vucevic-nba-sean-sweeney/",
-        "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-november-14-2026",
-        "https://www.espn.com/nhl/recap/_/gameId/401892714"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3NJiyiFopdM--YQYbLjysDWxDJUsvYZN5XqZr-oI_nm0cfeFZogXCmLQ48Eg",
-      "image_credit": "Orlando Sentinel",
-      "news": [
-        {
-          "url": "https://www.orlandosentinel.com/2026/11/16/orlando-magic-boston-celtics-franz-wagner-goga-bitadze-nikola-vucevic-nba-sean-sweeney/",
-          "title": "Magic see success with Bitadze, Vucevic duo on floor; Wagner nominated for weekly award",
-          "publisher": "Orlando Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3NJiyiFopdM--YQYbLjysDWxDJUsvYZN5XqZr-oI_nm0cfeFZogXCmLQ48Eg"
-        },
-        {
-          "url": "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-november-14-2026",
-          "title": "Hellebuyck makes 43 saves, Devils push past Capitals to stay hot",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl7Qjbgxi5e3gLiSIbUvGnYpb5reYU9Ye4-45VJ8f-03TsfhYLLENO_c3mXFI"
-        },
-        {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892714",
-          "title": "Devils 7-4 Capitals (Nov 14, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWK0Iz4bMxgnswOeiyyiHLZvG4rlPuif_ciL7gZsxcLPIMLBi69rCrKnlsVxw"
-        }
-      ]
-    },
-    {
-      "query": "cillian murphy",
+      "query": "criminal investigation",
       "approx_searches": "200+",
-      "published_at": "2026-11-17T01:40:00Z",
+      "published_at": "2026-11-17T02:10:00Z",
       "related_news_urls": [
-        "https://www.thewrap.com/creative-content/movies/danny-boyle-28-years-later-cillian-murphy-update/",
-        "https://www.darkhorizons.com/boyle-needs-money-for-28-years-later-3/",
-        "https://www.cbr.com/28-years-later-director-gives-major-update-one-big-problem/"
+        "https://www.newsday.com/long-island/crime/gorilla-stone-bloods-major-narcotics-trafficking-long-island-shamiek-porter-btnxy5ch",
+        "https://longisland.news12.com/2026/11/16/14-charged-in-alleged-drug-trafficking-operation-spanning-nassau-and-suffolk-counties/6Uta0j2ANChpi5p4kuUidb",
+        "https://www.yahoo.com/news/us/articles/li-cops-bust-14-gorilla-202307809.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzdc1xKXTaz2zxu6XWy0BOMnvSjHgY-LWwe_7VgBODX2x0XHcz1CH3qDXoPU",
-      "image_credit": "TheWrap",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMV99_2lD2DsFlgQuSUShZojTR9oHIlV0AWh2jWZC_oHa01kwNwb4Rg4y3ZI",
+      "image_credit": "Newsday",
       "news": [
         {
-          "url": "https://www.thewrap.com/creative-content/movies/danny-boyle-28-years-later-cillian-murphy-update/",
-          "title": "Danny Boyle Says Next ‘28 Years Later' Movie Is Written for Cillian Murphy, but 'We've Got to Raise the Money'",
-          "publisher": "TheWrap",
+          "url": "https://www.newsday.com/long-island/crime/gorilla-stone-bloods-major-narcotics-trafficking-long-island-shamiek-porter-btnxy5ch",
+          "title": "14 people, including alleged gang members, charged with major narcotics trafficking on Long Island, in Queens",
+          "publisher": "Newsday",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzdc1xKXTaz2zxu6XWy0BOMnvSjHgY-LWwe_7VgBODX2x0XHcz1CH3qDXoPU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMV99_2lD2DsFlgQuSUShZojTR9oHIlV0AWh2jWZC_oHa01kwNwb4Rg4y3ZI"
         },
         {
-          "url": "https://www.darkhorizons.com/boyle-needs-money-for-28-years-later-3/",
-          "title": "Boyle Needs Money For \"28 Years Later 3\"",
-          "publisher": "Dark Horizons",
+          "url": "https://longisland.news12.com/2026/11/16/14-charged-in-alleged-drug-trafficking-operation-spanning-nassau-and-suffolk-counties/6Uta0j2ANChpi5p4kuUidb",
+          "title": "14 Charged In Alleged Drug Trafficking Operation Spanning Nassau And Suffolk Counties",
+          "publisher": "News12 | Long Island",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZuNed26zlI7UbNvjxeHsGTqYexjIU-Rzg9-jnodNIWBdTxvHCb5DZ4x5uhd0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_eoAABtJlyTNCgVoGN14LdHht8xsxzE8Aov7S8jNlFnRKcye0aI-HIld_Uis"
         },
         {
-          "url": "https://www.cbr.com/28-years-later-director-gives-major-update-one-big-problem/",
-          "title": "28 Years Later Director Confirms Part 3 Script Is Finished, but There's 1 Big Problem",
-          "publisher": "Comic Book Resources",
+          "url": "https://www.yahoo.com/news/us/articles/li-cops-bust-14-gorilla-202307809.html",
+          "title": "LI cops bust 14 in Gorilla Stone Blood drug ring — but bail laws could let 6 of them walk: DA",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqz8CnwsW7N1eosgTKvQTUXA43-9WV8P_C6CD1vwGQUqUDk5Jlr0jFcSlgmrw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVO2h0MaSaNbhWfugbCQNmk7_hR83WnB8HM-f04SFihpAOcpHe2BQfBAXb3sc"
         }
       ]
     },
     {
-      "query": "cenac jr",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T01:40:00Z",
+      "query": "pedro pascal",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T02:00:00Z",
       "related_news_urls": [
-        "https://www.bostonherald.com/2026/11/16/jayson-tatum-sees-star-potential-in-celtics-first-round-rookie/",
-        "https://www.masslive.com/celtics/2026/11/plan-for-celtics-1st-round-pick-becoming-clear-for-rookie-season.html",
-        "https://chowderandchampions.com/celtics-fans-excited-about-chris-cenac-jrs-potential"
+        "https://www.vanityfair.com/story/pedro-pascal-tony-gilroy-behemoth-screening-room",
+        "https://deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503/",
+        "https://newsroom.spotify.com/2026-11-13/behemoth-soundtrack-pedro-pascal-tony-gilroy/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMbkzXSomzM6UMN-o4TLY-DAIsg9hNTquGz0x2QPCWcSa9oTOM_DL-3A7ySkk",
-      "image_credit": "Boston Herald",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKb4igsLWaiMHBQVJUIcZiF5xwCuWKV5EPsJh8Mafo1kiX6XxYZv6NG-OLVag",
+      "image_credit": "Vanity Fair",
       "news": [
         {
-          "url": "https://www.bostonherald.com/2026/11/16/jayson-tatum-sees-star-potential-in-celtics-first-round-rookie/",
-          "title": "Jayson Tatum sees star potential in Celtics’ first-round rookie",
-          "publisher": "Boston Herald",
+          "url": "https://www.vanityfair.com/story/pedro-pascal-tony-gilroy-behemoth-screening-room",
+          "title": "As Hollywood Battles AI, Pedro Pascal Says Making Behemoth! Filled Him with “a Tremendous Amount of Hope”",
+          "publisher": "Vanity Fair",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMbkzXSomzM6UMN-o4TLY-DAIsg9hNTquGz0x2QPCWcSa9oTOM_DL-3A7ySkk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKb4igsLWaiMHBQVJUIcZiF5xwCuWKV5EPsJh8Mafo1kiX6XxYZv6NG-OLVag"
         },
         {
-          "url": "https://www.masslive.com/celtics/2026/11/plan-for-celtics-1st-round-pick-becoming-clear-for-rookie-season.html",
-          "title": "Plan for Celtics’ 1st-round pick becoming clear for rookie season",
-          "publisher": "MassLive.com",
+          "url": "https://deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503/",
+          "title": "‘Behemoth!’s Humanity Gave Pedro Pascal “Tremendous Amount Of Hope” Amid AI Boom, Tony Gilroy Wants To “Blow Up AI Centers… At The Voting Box”",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-4EYcW5uPdzsohBkBPsm9g_OBKo65LRLZeGtrbsAlPXDfXHE1xdVU5Nzfg3E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwGy1nHuMbqvqoJNFdSfIEBCJvXSAVFBv29sqRQOfS3j7oBx2qg6pABB1UnQA"
         },
         {
-          "url": "https://chowderandchampions.com/celtics-fans-excited-about-chris-cenac-jrs-potential",
-          "title": "Celtics fans should be excited about Chris Cenac Jr.'s potential",
-          "publisher": "Chowder and Champions",
+          "url": "https://newsroom.spotify.com/2026-11-13/behemoth-soundtrack-pedro-pascal-tony-gilroy/",
+          "title": "Pedro Pascal and Tony Gilroy on the Music From ‘Behemoth!’",
+          "publisher": "Spotify",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_mAQDOEKI-jr_MUJQbB6_xoBqKQa0_lGyiqzIAHZmUND80477cmydGMgHLbg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAZGWMbRFHJZHYiROqC2MDSnEcJTAKrJIkja9oi0Ltcvywo8dlkPFfkcPS-hA"
+        }
+      ]
+    },
+    {
+      "query": "jacksonville vs georgia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T02:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/georgia/article/georgia-bulldogs-basketball-tries-to-keep-momentum-going-against-jacksonville-dolphins-mike-white-kanon-catchings-blue-cain-292837059/",
+        "https://sports.yahoo.com/articles/georgia-vs-jacksonville-live-updates-210046317.html",
+        "https://www.dawgnation.com/basketball/mens-basketball/georgia-basketball-locked-jacksonville-after-marquee-unc-win/UAH4JONQPFAGVJIDNO7WUPJ3PQ/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbwoXNGkXf9tUQMzJT6TSAcZOwNtPVbej9miCufc2QbUSmYv_RCYd0gHH47uM",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/georgia/article/georgia-bulldogs-basketball-tries-to-keep-momentum-going-against-jacksonville-dolphins-mike-white-kanon-catchings-blue-cain-292837059/",
+          "title": "Georgia basketball tries to keep momentum going against Jacksonville",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbwoXNGkXf9tUQMzJT6TSAcZOwNtPVbej9miCufc2QbUSmYv_RCYd0gHH47uM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/georgia-vs-jacksonville-live-updates-210046317.html",
+          "title": "Georgia vs. Jacksonville live updates: Follow as Bulldogs take on Dolphins",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSd85JNhlFtsecl0Ia2PkVBi0NTrF73otFtzpSgmihqctJq1NZQa2juwhVry2M"
+        },
+        {
+          "url": "https://www.dawgnation.com/basketball/mens-basketball/georgia-basketball-locked-jacksonville-after-marquee-unc-win/UAH4JONQPFAGVJIDNO7WUPJ3PQ/",
+          "title": "Georgia basketball ‘locked in’ for Jacksonville after marquee UNC win",
+          "publisher": "DawgNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl4upNayzZrWJIG-aXm3mlySG0MV_MP_uqBf_lYd6gUBWCZUrOdBPUovDfx9k"
+        }
+      ]
+    },
+    {
+      "query": "golden state warriors vs new orleans pelicans match player stats",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T02:00:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/game/dal-vs-bos-0022600240/box-score",
+        "https://www.startribune.com/minnesota-timberwolves-chicago-bulls-lamelo-ball-stats-anthony-edwards-injury-update-wolves-roster/601914485",
+        "https://www.si.com/nba/timberwolves/onsi/anthony-edwards-still-finding-ways-help-timberwolves-despite-injury-01m7b4nb9zhg"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxBPGCvfYUQN-1xuIkpURVfZqsxUZLhiZeqrebLYTboLkk7qhNixbDBZY8nn8",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/game/dal-vs-bos-0022600240/box-score",
+          "title": "Dallas Mavericks vs Boston Celtics Nov 15, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxBPGCvfYUQN-1xuIkpURVfZqsxUZLhiZeqrebLYTboLkk7qhNixbDBZY8nn8"
+        },
+        {
+          "url": "https://www.startribune.com/minnesota-timberwolves-chicago-bulls-lamelo-ball-stats-anthony-edwards-injury-update-wolves-roster/601914485",
+          "title": "Wolves are winning without Anthony Edwards — and aren’t changing their identity",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbaQnIzY6yWIYjocwDn6tytcLVqOeTAHcedyTK7VNH0fSpUpSe59c-493d_Ww"
+        },
+        {
+          "url": "https://www.si.com/nba/timberwolves/onsi/anthony-edwards-still-finding-ways-help-timberwolves-despite-injury-01m7b4nb9zhg",
+          "title": "Anthony Edwards Is Still Finding Ways to Help Timberwolves Despite Injury",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMnyK5DvzZmaOrUijYmTV4nOScHdQLzFvur4ke70mvLJL8Ese19QCo01uhkew"
+        }
+      ]
+    },
+    {
+      "query": "rashod bateman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T02:00:00Z",
+      "related_news_urls": [
+        "https://russellstreetreport.com/2026/11/12/injury-report/injury-report-ravens-vs-chargers-thursday/",
+        "https://www.rotoballer.com/player-news/rashod-bateman-is-risky-starting-option-for-week-10/1994173",
+        "https://ravenswire.usatoday.com/story/sports/nfl/ravens/2026/11/12/ravens-injury-report-thursday-kyle-hamilton-nate-wiggins-chargers/92749964007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrRItc2fdxeJK2SH_RS_rfcsad00VZtKG6RSnM-9CSgwBPtZe7NFVWVcCS5Y",
+      "image_credit": "Russell Street Report",
+      "news": [
+        {
+          "url": "https://russellstreetreport.com/2026/11/12/injury-report/injury-report-ravens-vs-chargers-thursday/",
+          "title": "Baltimore Ravens: Injury Report - Ravens vs. Chargers (Thursday)",
+          "publisher": "Russell Street Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrRItc2fdxeJK2SH_RS_rfcsad00VZtKG6RSnM-9CSgwBPtZe7NFVWVcCS5Y"
+        },
+        {
+          "url": "https://www.rotoballer.com/player-news/rashod-bateman-is-risky-starting-option-for-week-10/1994173",
+          "title": "Rashod Bateman Week 10 Outlook for Fantasy Football (2026)",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNNTx9HNMKDYY-AokTKSB4xZfxO8hW_tx3u9gsW-tCECVjje0KEcqLHdZ4to4"
+        },
+        {
+          "url": "https://ravenswire.usatoday.com/story/sports/nfl/ravens/2026/11/12/ravens-injury-report-thursday-kyle-hamilton-nate-wiggins-chargers/92749964007/",
+          "title": "Ravens injury report: Hamilton, Wiggins return; Bateman was limited Thursday",
+          "publisher": "Ravens Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIQWM0hjc6k22DD_-cTFmx6GOzgcOF5hJ-hhDmhF_ImrJcxOm-HjBRnXMy9IE"
+        }
+      ]
+    },
+    {
+      "query": "is john boyd leaving fbi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T02:00:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1303609/fbi-season-9-episode-7-sneak-peek-john-boyd-shantel-vansanten/",
+        "https://www.tvline.com/2318527/fbi-season-9-episode-7-john-boyd-shantel-vansanten-interview/",
+        "https://www.justjared.com/2026/11/16/is-nina-chase-leaving-fbi-shantel-vansanten-season-9-update/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQymUFwaLJ3kn6YMUlojVZp-9sXXIQMVYhbmew8s5JVQvXklLFD3iH6VRPabzg",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1303609/fbi-season-9-episode-7-sneak-peek-john-boyd-shantel-vansanten/",
+          "title": "'FBI' Preview: Nina's Last Case in NY, Plus John Boyd & Shantel VanSanten Talk Scolina's 'New Chapter'",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQymUFwaLJ3kn6YMUlojVZp-9sXXIQMVYhbmew8s5JVQvXklLFD3iH6VRPabzg"
+        },
+        {
+          "url": "https://www.tvline.com/2318527/fbi-season-9-episode-7-john-boyd-shantel-vansanten-interview/",
+          "title": "FBI Season 9, Episode 7 Interview: John Boyd And Shantel VanSanten",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4P8RxtZKZG-mZMtg1cfi62sjSI1vD-TxusgCH3MEjf8naqs5rgPeEZfHFF_Y"
+        },
+        {
+          "url": "https://www.justjared.com/2026/11/16/is-nina-chase-leaving-fbi-shantel-vansanten-season-9-update/",
+          "title": "Is Nina Chase Leaving 'FBI'? Shantel VanSanten Addresses Character's Major Change in Season 9",
+          "publisher": "Just Jared",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSujC6bGDe6dQ4kzJZf9YVStEOri_fEwYH58l1fCgFzrfdjoncpsug3e7eckwg"
         }
       ]
     }
