@@ -20,9 +20,10 @@ function isAdult(e){
 }
 function read(){return {skipped:readStore(SKIP)==='1',nonAdultSince:count(),browsingThisVisit};}
 function canAutoShow(e){
- if(!isAdult(e))return true;
- if(read().skipped)return false;
- return isPreference(e)?count()>=12:browsingThisVisit&&count()>=10;
+ // Browsing a 21+ section is not a grant for subsequent Public/For You
+ // recommendations. Restricted cards are accessed only through the
+ // visitor's explicit current 21+ navigation, not implicit rotation.
+ return !isAdult(e);
 }
 function noteShown(e){
  if(!e)return;
