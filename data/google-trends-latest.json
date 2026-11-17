@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T03:01:00.232314Z",
+  "checked_at": "2026-11-17T03:31:17.008143Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "josh cuevas",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T02:40:00Z",
+      "query": "the odyssey",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T03:10:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-november-14-2026",
-        "https://www.washingtonpost.com/sports/2026/11/14/caps-fall-7-4-rematch-with-new-jersey-devils/",
-        "https://www.espn.com/nhl/recap/_/gameId/401892714"
+        "https://www.vanityfair.com/story/zendaya-tom-holland-the-odyssey-anxiety",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/zendaya-stuns-dress-project-runway-171913912.html",
+        "https://www.instyle.com/zendaya-bridal-white-gown-tom-holland-rare-outing-12255800"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl7Qjbgxi5e3gLiSIbUvGnYpb5reYU9Ye4-45VJ8f-03TsfhYLLENO_c3mXFI",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2oGiUhGTGW0hrRDYWBRBE0m-nvJqGa5GJpvEhgAywq-1-LZ59PeSkDtGfHf8",
+      "image_credit": "Vanity Fair",
       "news": [
         {
-          "url": "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-november-14-2026",
-          "title": "Hellebuyck makes 43 saves, Devils push past Capitals to stay hot",
-          "publisher": "NHL.com",
+          "url": "https://www.vanityfair.com/story/zendaya-tom-holland-the-odyssey-anxiety",
+          "title": "Zendaya “Felt Overwhelmed” on the Set of The Odyssey. Luckily, Tom Holland Came to Support Her",
+          "publisher": "Vanity Fair",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl7Qjbgxi5e3gLiSIbUvGnYpb5reYU9Ye4-45VJ8f-03TsfhYLLENO_c3mXFI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2oGiUhGTGW0hrRDYWBRBE0m-nvJqGa5GJpvEhgAywq-1-LZ59PeSkDtGfHf8"
         },
         {
-          "url": "https://www.washingtonpost.com/sports/2026/11/14/caps-fall-7-4-rematch-with-new-jersey-devils/",
-          "title": "New lines, same result: Capitals fall to Devils",
-          "publisher": "The Washington Post",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/zendaya-stuns-dress-project-runway-171913912.html",
+          "title": "Zendaya stuns in dress by 'Project Runway' contestant at 'Odyssey' event",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXO-82Rf5tFtDA3AJSAsSQyedwH9xswtOwQO0Jh7646IVaFdF9-4ApJ8X8qXY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXwGaq7ZCFdnWY2ZrCF0JcSIJvqaHtzxfKcqGbjUT8lnRHugZv5-hw6OIcbfE"
         },
         {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892714",
-          "title": "Devils 7-4 Capitals (Nov 14, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.instyle.com/zendaya-bridal-white-gown-tom-holland-rare-outing-12255800",
+          "title": "Zendaya Wears a Bridal White Gown While Cozying Up With Tom Holland on a Rare Public Outing",
+          "publisher": "InStyle",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWK0Iz4bMxgnswOeiyyiHLZvG4rlPuif_ciL7gZsxcLPIMLBi69rCrKnlsVxw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY2XB89NN2jCDFZo9FmLzvhcm7UTlSbmO_OLw9jlfbXbytZU-q91ZKcuKFbTY"
         }
       ]
     },
     {
-      "query": "franz wagner",
+      "query": "dean wade",
       "approx_searches": "1000+",
-      "published_at": "2026-11-17T02:40:00Z",
+      "published_at": "2026-11-17T03:10:00Z",
       "related_news_urls": [
-        "https://www.nba.com/watch/video/game-recap-magic-107-bucks-99-nov-13",
-        "https://www.jsonline.com/story/sports/nba/bucks/2026/11/13/milwaukee-bucks-vs-orlando-magic-losing-streak-injury-report-starters-odds/92749146007/",
-        "https://www.brewhoop.com/bucks-analysis/81420/milwaukee-vs-orlando-magic-player-grades-stats-jaime-jaquez-jr-tyler-herro"
+        "https://www.cbssports.com/fantasy/basketball/news/76ers-dean-wade-running-with-starters-monday/",
+        "https://www.rotowire.com/basketball/headlines/dean-wade-news-reverting-back-to-bench-sunday-539243",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/dean-wade-to-start-in-place-of-lebron-james"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7Qq5a9Nwihakq1PjR55w1nHP6TZa50O74x_-5h5Jr6mzQ9sa5yKFxMSR5UoI",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjCWAIQrh2IAlmoO6Z8RvI0ANJwaWXEAilAy_Q7jjU-ubAgkt0vtFpP-cU7U",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.nba.com/watch/video/game-recap-magic-107-bucks-99-nov-13",
-          "title": "Game Recap: Magic 107, Bucks 99 (Nov. 13)",
-          "publisher": "NBA.com",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/76ers-dean-wade-running-with-starters-monday/",
+          "title": "76ers' Dean Wade: Running with starters Monday",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7Qq5a9Nwihakq1PjR55w1nHP6TZa50O74x_-5h5Jr6mzQ9sa5yKFxMSR5UoI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjCWAIQrh2IAlmoO6Z8RvI0ANJwaWXEAilAy_Q7jjU-ubAgkt0vtFpP-cU7U"
         },
         {
-          "url": "https://www.jsonline.com/story/sports/nba/bucks/2026/11/13/milwaukee-bucks-vs-orlando-magic-losing-streak-injury-report-starters-odds/92749146007/",
-          "title": "Milwaukee Bucks lose ninth in a row, fall to Magic 107-99",
-          "publisher": "Milwaukee Journal Sentinel",
+          "url": "https://www.rotowire.com/basketball/headlines/dean-wade-news-reverting-back-to-bench-sunday-539243",
+          "title": "Dean Wade News: Reverting back to bench Sunday",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdghbaFI80-cHT65endNpAvTLC9beeza9SsJ6Mf1rFH4uSsG_o-Off8dIrZH0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbAjJLwEWGY6xZTRQBSzt4TluSb8AmlwXaV1A-NdPJEAB4bYual6B5jPWTp4"
         },
         {
-          "url": "https://www.brewhoop.com/bucks-analysis/81420/milwaukee-vs-orlando-magic-player-grades-stats-jaime-jaquez-jr-tyler-herro",
-          "title": "Bucks vs. Magic Player Grades: Bigs peform, team forgets how to make free throws",
-          "publisher": "Brew Hoop",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/dean-wade-to-start-in-place-of-lebron-james",
+          "title": "Dean Wade to start in place of LeBron James",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRruI36sgGiaKSxcATi4agfcYq1TYgU0OX2nfUbj2YXOZ2JMWWhmy-zPmfLxO8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPR1nYOa7rxjpjProgCYh9I2VGxmNxl0rdHJ2AP6gUodYJBz6j8DAsGvcw8Dg"
         }
       ]
     },
     {
-      "query": "anthony black",
+      "query": "phil collins health",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T02:40:00Z",
+      "published_at": "2026-11-17T03:10:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25532919-new-nba-trade-rumors-magics-anthony-black-after-contract-extension-talks-fizzled-out",
-        "https://basketball.realgm.com/wiretap/288128/Rival-Executives-Monitoring-Anthony-Blacks-Potential-Availability",
-        "https://sports.yahoo.com/articles/yet-team-league-sources-knowledge-093644338.html"
+        "https://globalnews.ca/news/12153147/phil-collins-health-update-rock-and-roll-hall-of-fame-induction/",
+        "https://abcnews.com/GMA/Culture/phil-collins-hopes-make-new-music-perform-despite/story?id=138162830",
+        "https://www.billboard.com/music/awards/lily-collins-phil-collins-rock-hall-induction-tribute-1236382837/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1LPGCHDqbAlbRIuIuAxmgteIaumEGxd31SrCBnL-nf494dwMa37WH1oc07U",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHR7zSBkbgHjEOHdTqaAzpSOTXweOR1P_Ed4nA2BBvN_2kVQVs1aq2862kr4",
+      "image_credit": "Global News",
       "news": [
         {
-          "url": "https://bleacherreport.com/articles/25532919-new-nba-trade-rumors-magics-anthony-black-after-contract-extension-talks-fizzled-out",
-          "title": "New NBA Trade Rumors on Magic's Anthony Black After Contract Extension Talks Fizzled Out",
-          "publisher": "Bleacher Report",
+          "url": "https://globalnews.ca/news/12153147/phil-collins-health-update-rock-and-roll-hall-of-fame-induction/",
+          "title": "Phil Collins shares health update at Rock & Roll Hall of Fame induction",
+          "publisher": "Global News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1LPGCHDqbAlbRIuIuAxmgteIaumEGxd31SrCBnL-nf494dwMa37WH1oc07U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHR7zSBkbgHjEOHdTqaAzpSOTXweOR1P_Ed4nA2BBvN_2kVQVs1aq2862kr4"
         },
         {
-          "url": "https://basketball.realgm.com/wiretap/288128/Rival-Executives-Monitoring-Anthony-Blacks-Potential-Availability",
-          "title": "Rival Executives Monitoring Anthony Black's Potential Availability",
-          "publisher": "RealGM",
+          "url": "https://abcnews.com/GMA/Culture/phil-collins-hopes-make-new-music-perform-despite/story?id=138162830",
+          "title": "Phil Collins says he hopes to make new music, perform again despite health challenges",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi9tZoqKjj7gTa6xmT94Zmzv4gR1gomEPP6_-xmW-CbHXNbKFMorEGwC8JYLM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRio0bD5Fo78yFWtV3nhJBuKL4SajyiRT0meNFHuOEsXSJ-K0erxKfa09LXCjE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/yet-team-league-sources-knowledge-093644338.html",
-          "title": "Yet team and league sources with knowledge of the …",
+          "url": "https://www.billboard.com/music/awards/lily-collins-phil-collins-rock-hall-induction-tribute-1236382837/",
+          "title": "Lily Collins Pays Tribute to Phil Collins After Rock Hall Induction",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkgaO6Vq9WznfHGVYBRb55G_nsWoPetp37fOlk08MxaRAsytcZ5bbnzujrbAc"
+        }
+      ]
+    },
+    {
+      "query": "rwanda immigration",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cw987343352go",
+        "https://www.nbcnews.com/world/europe/5-european-countries-aim-send-rejected-asylum-seekers-center-rwanda-rcna609731",
+        "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj0PzRxah5Noalawjh79EyYqAFKgkiuRUZLAB3RCHJ37z-qoASEuJDM3JGy8g",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cw987343352go",
+          "title": "Five EU countries announce migrant deportation centre in Rwanda",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj0PzRxah5Noalawjh79EyYqAFKgkiuRUZLAB3RCHJ37z-qoASEuJDM3JGy8g"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/europe/5-european-countries-aim-send-rejected-asylum-seekers-center-rwanda-rcna609731",
+          "title": "5 European countries aim to send rejected asylum seekers to center in Rwanda",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRYPofPf9_ekFRWsbf3QlxkTyloHnG0I2i3INxaZJCkbBZwKSNqR7wsZbnai8"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html",
+          "title": "Five European Countries Plan to Deport Migrants to Rwanda",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4X613rr9P66wsgBpucVrryVBrWm5Vvi7BQvmcTtsJ57vWJXXAbgAABr0fPU"
+        }
+      ]
+    },
+    {
+      "query": "elle fanning",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/elle-fanning-takes-her-hunger-024628341.html",
+        "https://www.wmagazine.com/fashion/elle-fanning-hunger-games-press-tour-fashion",
+        "https://www.aol.com/articles/elle-fanning-channels-effie-trinket-090917000.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX3jH9W89Zko7yQRbD8wXEF5IRlid7xq3UUjZOx3_TKFHD87ceOWAXE1pF4jY",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/elle-fanning-takes-her-hunger-024628341.html",
+          "title": "Elle Fanning Takes Her ‘Hunger Games’ Fashion to New Level in New York",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX3jH9W89Zko7yQRbD8wXEF5IRlid7xq3UUjZOx3_TKFHD87ceOWAXE1pF4jY"
+        },
+        {
+          "url": "https://www.wmagazine.com/fashion/elle-fanning-hunger-games-press-tour-fashion",
+          "title": "All of Elle Fanning’s Elaborate Looks For The Hunger Games: Sunrise on the Reaping Press Tour",
+          "publisher": "W Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8s8EZ5ffYQV8eY2xFSLgm1JYFnX2zIw3gsnmlFEApOFvJAlCXhXOEP2PNeZ0"
+        },
+        {
+          "url": "https://www.aol.com/articles/elle-fanning-channels-effie-trinket-090917000.html",
+          "title": "Elle Fanning Channels Effie Trinket in Thom Browne Skirt With Sheer Twist",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfKbMhTfyMCAD5Et94Sa0SKXLQRC6HiW2pXl5qi76uy2pyFBeh_r8ViuEZpvM"
+        }
+      ]
+    },
+    {
+      "query": "jamie dornan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:10:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1438044/jamie-dornan-anthony-mackie-detail-fatherhood-kids-opinions-on-hollywood",
+        "https://www.heraldonline.com/entertainment/article318070572.html",
+        "https://people.com/jamie-dornan-and-anthony-mackie-share-what-their-kids-think-about-their-movies-12253241"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHZly3hAkzeP4cEKHCfCeNiW2e7lbo-Y0XNvrVi9sCvrIgCzN37Ihq87jFj00",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1438044/jamie-dornan-anthony-mackie-detail-fatherhood-kids-opinions-on-hollywood",
+          "title": "Jamie Dornan and Anthony Mackie Share Hilarious Lesson From Fatherhood",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHZly3hAkzeP4cEKHCfCeNiW2e7lbo-Y0XNvrVi9sCvrIgCzN37Ihq87jFj00"
+        },
+        {
+          "url": "https://www.heraldonline.com/entertainment/article318070572.html",
+          "title": "Anthony Mackie and Jamie Dornan spill their 'Costar Confessions' | Exclusive",
+          "publisher": "Rock Hill Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdgWffoDtwlqfOahQRZr__MVmk1XN8VL5_Ys0IH_2oqyCxWhneHW8GmHJwFi8"
+        },
+        {
+          "url": "https://people.com/jamie-dornan-and-anthony-mackie-share-what-their-kids-think-about-their-movies-12253241",
+          "title": "Jamie Dornan and Anthony Mackie Share What Their Kids Think About Their Movies",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXOvTYNg1bd8FZVzxc99jzJPbU9QScJ1cWzyY_MvAJDijXlhSKb-pxp0ccXZ8"
+        }
+      ]
+    },
+    {
+      "query": "beckham black",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/duke/article/nations-no1-prospect-will-visit-duke-for-the-game-against-illinois--292802552/",
+        "https://www.on3.com/rivals/news/unc-arkansas-florida-more-pg1-beckham-black-details-recruitment-and-schedules-another-visit/",
+        "https://sports.yahoo.com/articles/duke-basketball-recruiting-2-big-144606939.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW9IajO9k69CFJifya2dDj5mF4cL6Ge7YUuDxtfyGgLF1moywGM4DVXHTCKNI",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/duke/article/nations-no1-prospect-will-visit-duke-for-the-game-against-illinois--292802552/",
+          "title": "Nations' No.1 prospect will visit Duke for the game against Illinois",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW9IajO9k69CFJifya2dDj5mF4cL6Ge7YUuDxtfyGgLF1moywGM4DVXHTCKNI"
+        },
+        {
+          "url": "https://www.on3.com/rivals/news/unc-arkansas-florida-more-pg1-beckham-black-details-recruitment-and-schedules-another-visit/",
+          "title": "UNC, Arkansas, Florida & more: PG1 Beckham Black details recruitment and schedules another visit",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPj-YxEqZTFA0H1AztPyRhAxg48y1X5ruZWqMKlrgWTrW6gt3v4HTSce2QU5Y"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/duke-basketball-recruiting-2-big-144606939.html",
+          "title": "Duke Basketball Recruiting: 2 Big Moves With Intriguing 2027 Prospects",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMGvLUySb8YCDF0BnlarfsMmF0jTc49L0R11_lW34d2oAiCPgMtkDlbopoH8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAjWgtCgrwDI1Tgdjx8tcrkl3jT6hAiLNX1-TBUy0QESEl6094V_gTVgZkDPA"
         }
       ]
     },
     {
-      "query": "michael porter jr.",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T02:40:00Z",
+      "query": "remi wolf",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/nets-michael-porter-jr-returning-042220766.html",
-        "https://www.rotowire.com/basketball/headlines/jerami-grant-news-available-against-washington-539299",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/no-we-want-to-give-him-his-privacy-everything-its/92793841007/"
+        "https://www.kcci.com/article/hinterland-music-festival-2027-lineup-slayyyter-phoebe-bridgers-billy-strings-haywire/74404979",
+        "https://relix.com/news/detail/billy-strings-phoebe-bridgers-and-slayyyter-to-appear-at-hinterland",
+        "https://www.theprp.com/2026/11/12/news/haywire-to-perform-in-a-cornfield-at-2027-hinterland-festival-in-iowa/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkYRHlc9C1q6_B0ceFwlIm4hLnTKpUb1qNZ6PCXddCluE7ce5yQt-3xyD82p8",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRff9o-9xnmUNbBCl_uj_FHvCKZVHadLoTBelj2Q2N03xo-l1VrqyL7C-3lCO8",
+      "image_credit": "KCCI",
+      "news": [
+        {
+          "url": "https://www.kcci.com/article/hinterland-music-festival-2027-lineup-slayyyter-phoebe-bridgers-billy-strings-haywire/74404979",
+          "title": "Hinterland announces 2027 lineup, featuring Slayyyter, Phoebe Bridgers, Billy Strings and more",
+          "publisher": "KCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRff9o-9xnmUNbBCl_uj_FHvCKZVHadLoTBelj2Q2N03xo-l1VrqyL7C-3lCO8"
+        },
+        {
+          "url": "https://relix.com/news/detail/billy-strings-phoebe-bridgers-and-slayyyter-to-appear-at-hinterland",
+          "title": "Hinterland Music Festival 2027: Violet Grohl Among Acts",
+          "publisher": "Relix",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrLhtsCAiCiHuLyM37OSduB1kFHCT76IV8AHpV2oMmQj3TkZKOQm4X0gQSKoY"
+        },
+        {
+          "url": "https://www.theprp.com/2026/11/12/news/haywire-to-perform-in-a-cornfield-at-2027-hinterland-festival-in-iowa/",
+          "title": "Haywire To Perform In A Cornfield At 2027 'Hinterland' Festival In Iowa",
+          "publisher": "Theprp.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-6Utv-HDAwtXbnTlu5HuMjlEIuWlvabTKF-asFySfFhCqhiwdM33KkPz5wlo"
+        }
+      ]
+    },
+    {
+      "query": "roquan smith",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T03:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/baltimore-ravens-face-growing-playoff-005720273.html",
+        "https://www.baltimoresun.com/2026/11/15/ravens-crossroads-leaders-step-up-commentary-josh-tolentino/",
+        "https://www.baltimoreravens.com/news/ravens-first-half-stats-2026-season-lamar-jackson-zay-flowers-defense"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0V-CKdcCTAg_hQxbo8eVEylhxYZ9nM_YrHZBi92nBJwal_hO9uGzuuekDqIc",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/nets-michael-porter-jr-returning-042220766.html",
-          "title": "Nets’ Michael Porter Jr. returning vs. 76ers after missing Grizzlies loss for personal reasons",
+          "url": "https://sports.yahoo.com/articles/baltimore-ravens-face-growing-playoff-005720273.html",
+          "title": "Baltimore Ravens Face Growing Playoff Pressure Ahead of Must-Win Monday Night Football",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkYRHlc9C1q6_B0ceFwlIm4hLnTKpUb1qNZ6PCXddCluE7ce5yQt-3xyD82p8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0V-CKdcCTAg_hQxbo8eVEylhxYZ9nM_YrHZBi92nBJwal_hO9uGzuuekDqIc"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/jerami-grant-news-available-against-washington-539299",
-          "title": "Jerami Grant News: Available against Washington",
-          "publisher": "RotoWire",
+          "url": "https://www.baltimoresun.com/2026/11/15/ravens-crossroads-leaders-step-up-commentary-josh-tolentino/",
+          "title": "Josh Tolentino: Ravens are at a crossroads. Are leaders ready? | COMMENTARY",
+          "publisher": "Baltimore Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN4zlYLQ4Xm3RbuYjQyJUCBSh8Prl1pHb9Oin5vjDVAJRZdUnaUSkydcLqb4Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBaPDYokdqo1wg6pyY_KfwfKkyw88kM4e-XtGkhzhINxNeRj5b1xvZb3Agsg"
         },
         {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/no-we-want-to-give-him-his-privacy-everything-its/92793841007/",
-          "title": "“No, we want to give him his privacy. Everything, it’s …",
-          "publisher": "HoopsHype",
+          "url": "https://www.baltimoreravens.com/news/ravens-first-half-stats-2026-season-lamar-jackson-zay-flowers-defense",
+          "title": "The Stats That Defined the First Half of the Ravens’ 2026 Season",
+          "publisher": "Baltimore Ravens",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ56220Q3zdwSJEkoS0Jnl5TkeLzZInmOxwdo5176M4fDrfvM9Rwhai4Lvgk9g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqV99KXaHrg3oWJKH7QIlR9IhE3_V3olb20MouxFW_GyoHhuxFNngnT0pED3w"
         }
       ]
     },
     {
-      "query": "desmond bane",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T02:30:00Z",
-      "related_news_urls": [
-        "https://www.rotowire.com/basketball/headlines/desmond-bane-news-leads-magic-to-victory-539500",
-        "https://www.fantasypros.com/nba/news/619984/desmond-bane-fills-stat-sheet-friday-against-bucks.php",
-        "https://bvmsports.com/2026/11/11/bane-for-three-%F0%9F%92%A5/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBM-37sExHGJZpnMK5oKiJitK1FnL5H_wNqge7UYklUXo3se9yV1Kfl8eiGb0",
-      "image_credit": "RotoWire",
-      "news": [
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/desmond-bane-news-leads-magic-to-victory-539500",
-          "title": "Desmond Bane News: Leads Magic to victory",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBM-37sExHGJZpnMK5oKiJitK1FnL5H_wNqge7UYklUXo3se9yV1Kfl8eiGb0"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/619984/desmond-bane-fills-stat-sheet-friday-against-bucks.php",
-          "title": "Desmond Bane fills stat sheet Friday against Bucks",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz0tgATe7Ft6veiCtk40SJ9EzngtQyIhBwYWzcAL39zJmbl-aX400cVUWc1GI"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/11/bane-for-three-%F0%9F%92%A5/",
-          "title": "BANE FOR THREE 💥",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQrOxxzntD0jApWVodsj9BG2p5CF97ecq4QtuimX2h4Sv16f-YZpMz8SWp4pY"
-        }
-      ]
-    },
-    {
-      "query": "go fund me",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T02:30:00Z",
-      "related_news_urls": [
-        "https://people.com/bug-hall-says-gofundme-support-helped-his-family-start-building-dream-home-exclusive-12259292",
-        "https://www.imdb.com/news/ni66111874/?ref_=ttnw_art_perm",
-        "https://www.yahoo.com/entertainment/celebrity/articles/little-rascals-star-bug-hall-063803579.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsxFjs6OHqv31ns934dC8L79iTKwP5ojRaaupbMVuhATVQ5Y7yA_wu7_ojTGU",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/bug-hall-says-gofundme-support-helped-his-family-start-building-dream-home-exclusive-12259292",
-          "title": "Little Rascals’ Bug Hall Said He Had $10 Before GoFundMe (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsxFjs6OHqv31ns934dC8L79iTKwP5ojRaaupbMVuhATVQ5Y7yA_wu7_ojTGU"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66111874/?ref_=ttnw_art_perm",
-          "title": "‘Little Rascals’ Star Brandon Hall Sets Up GoFundMe To Pay For Care Of His 6th Child After Multiple Arrests",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3hoVusLttIDxeSgYe8CHNTCtLQKV7xjAwE5fgdqHAidhFSsj3uzyg32UZ9A"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/little-rascals-star-bug-hall-063803579.html",
-          "title": "'Little Rascals' Star Bug Hall Raises $15K After Taking 'Vow of Poverty'",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo_HAzoO8TzJhpLO5guAGee8BcMraa7Q-yxW45ttr5DouhybYUoIhj6-X9M6E"
-        }
-      ]
-    },
-    {
-      "query": "maureen remigio",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T02:30:00Z",
-      "related_news_urls": [
-        "https://www.kansascity.com/news/local/article318104049.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-it-looks-like-josh-downs-patrick-mahomes-have-a-little-connection-going",
-        "https://sports.yahoo.com/articles/espn-jeremy-fowler-reveals-more-233130364.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4wp4upBSNd1dK8K4rYRWYT2xOYItUQ5cvQYmqt5z3NCQTrf-gFX8c1K099mY",
-      "image_credit": "Kansas City Star",
-      "news": [
-        {
-          "url": "https://www.kansascity.com/news/local/article318104049.html",
-          "title": "Popular NFL wife describes chaotic 24 hours after Chiefs cut her husband from team",
-          "publisher": "Kansas City Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4wp4upBSNd1dK8K4rYRWYT2xOYItUQ5cvQYmqt5z3NCQTrf-gFX8c1K099mY"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-it-looks-like-josh-downs-patrick-mahomes-have-a-little-connection-going",
-          "title": "Andy Reid: It looks like Josh Downs, Patrick Mahomes have a little connection going",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQguWS-039lFheDHg5O0D8HfYWbui7LaJXhySxwIMXYKXSEt2kSemjT7UTUaxs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/espn-jeremy-fowler-reveals-more-233130364.html",
-          "title": "ESPN’s Jeremy Fowler Reveals More Details on Kansas City Chiefs’ Trade Deadline Moves",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmxIo1Ad27tTb4SuHc8rfuyhLsCvr4muwyqclbHeXOcibWslmiC96Y5TDWOBw"
-        }
-      ]
-    },
-    {
-      "query": "dan schulman",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T02:30:00Z",
-      "related_news_urls": [
-        "https://fortune.com/2026/11/11/verizon-ceo-dan-schulman-turnaround-strategy-layoffs-customer-growth-ai/",
-        "https://simplywall.st/stocks/us/telecom/nyse-vz/verizon-communications/news/verizon-communications-vz-is-cutting-13000-jobs-under-dan-sc",
-        "https://www.phonearena.com/news/verizon-dan-schulman-q3-2026_id184741"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfQe3ZLQzrvSvAQM5qaG55GMV015TK8eq7-lMNlthBY3A2jS6I-3h0ld_tWf8",
-      "image_credit": "Fortune",
-      "news": [
-        {
-          "url": "https://fortune.com/2026/11/11/verizon-ceo-dan-schulman-turnaround-strategy-layoffs-customer-growth-ai/",
-          "title": "Inside Dan Schulman’s war on the old Verizon",
-          "publisher": "Fortune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfQe3ZLQzrvSvAQM5qaG55GMV015TK8eq7-lMNlthBY3A2jS6I-3h0ld_tWf8"
-        },
-        {
-          "url": "https://simplywall.st/stocks/us/telecom/nyse-vz/verizon-communications/news/verizon-communications-vz-is-cutting-13000-jobs-under-dan-sc",
-          "title": "Verizon Communications (VZ) Is Cutting 13,000 Jobs Under Dan Schulman",
-          "publisher": "Simply Wall St",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_EMRbcNwbTwwepWn2G-3XEEyPu9Xj2AK59LisCNdxvlOkmD2GVV6d0NPU7o"
-        },
-        {
-          "url": "https://www.phonearena.com/news/verizon-dan-schulman-q3-2026_id184741",
-          "title": "Verizon decodes a shifting customer psyche",
-          "publisher": "PhoneArena",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoRgNkKdGd9pmNlSESQcVb8X0o6x6bM4vM6FQXH-ZRaUhpoVvG5Ld22PNnaFM"
-        }
-      ]
-    },
-    {
-      "query": "bam adebayo",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T02:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/bam-adebayo-hip-questionable-to-return-monday",
-        "https://www.si.com/nba/heat/onsi/bam-adebayo-leaves-game-against-houston-rockets-with-injury-01m7kky8k85k",
-        "https://www.espn.co.uk/video/clip/_/id/50476742/bam-adebayo-gets-hoop-harm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/bam-adebayo-hip-questionable-to-return-monday",
-          "title": "Bam Adebayo (hip) questionable to return Monday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE"
-        },
-        {
-          "url": "https://www.si.com/nba/heat/onsi/bam-adebayo-leaves-game-against-houston-rockets-with-injury-01m7kky8k85k",
-          "title": "Bam Adebayo leaves game against Houston Rockets with injury",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1d6v9CtEc0BuU0OGzsdyjgxiLm8eBBDYXPTN9WDmWF4z41QwE6MMMWaxeWfs"
-        },
-        {
-          "url": "https://www.espn.co.uk/video/clip/_/id/50476742/bam-adebayo-gets-hoop-harm",
-          "title": "Bam Adebayo gets the hoop and the harm",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYvW_iOwG3mBV3BuSls9h3oQmGC1K4xTJCkj-xijgp9I_kkVDaaqqmh_9Wpg"
-        }
-      ]
-    },
-    {
-      "query": "madison huang",
+      "query": "the good daughter cast",
       "approx_searches": "1000+",
-      "published_at": "2026-11-17T02:20:00Z",
+      "published_at": "2026-11-17T03:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html",
-        "https://www.inc.com/victoria-salves/jensen-huang-children-work-at-nvidia-1-obtstacle-keep-from-becoming-ceo/91436758",
-        "https://fortune.com/2026/11/09/what-is-nvidia-ceo-succession-plan-jensen-huang-son-in-law-nico-caprez/"
+        "https://www.latimes.com/entertainment-arts/tv/story/2026-11-16/the-good-daughter-rose-byrne-meghann-fahy-karin-slaughter",
+        "https://www.theguardian.com/the-good-daughter/2026/nov/12/why-secrets-and-mysteries-keep-us-hooked-on-thrillers",
+        "https://www.hollywoodreporter.com/tv/tv-reviews/the-good-daughter-review-rose-byrne-meghann-fahy-peacock-1236750733/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcH2ar4aAfgJ5dBxsX8KOFAYC6JeUvcwhjVzAK9BYvdGWPxDEuCBXsmfuZMm8",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSisIpO3euYtpENvjWpus4ZU8HZTKpXRLjCjBjI3yTqLv3eB2bswsyNv8vxK8",
+      "image_credit": "Los Angeles Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html",
-          "title": "Madison Huang, Jensen Huang’s Daughter, Became a Powerful Force at Nvidia",
-          "publisher": "The New York Times",
+          "url": "https://www.latimes.com/entertainment-arts/tv/story/2026-11-16/the-good-daughter-rose-byrne-meghann-fahy-karin-slaughter",
+          "title": "In 'The Good Daughter,' Rose Byrne and Meghann Fahy play sisters confronting trauma and secrets",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcH2ar4aAfgJ5dBxsX8KOFAYC6JeUvcwhjVzAK9BYvdGWPxDEuCBXsmfuZMm8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSisIpO3euYtpENvjWpus4ZU8HZTKpXRLjCjBjI3yTqLv3eB2bswsyNv8vxK8"
         },
         {
-          "url": "https://www.inc.com/victoria-salves/jensen-huang-children-work-at-nvidia-1-obtstacle-keep-from-becoming-ceo/91436758",
-          "title": "Jensen Huang's Children Work at Nvidia. An Expert Says 1 Obstacle Could Keep Either From Becoming CEO",
-          "publisher": "Inc.com",
+          "url": "https://www.theguardian.com/the-good-daughter/2026/nov/12/why-secrets-and-mysteries-keep-us-hooked-on-thrillers",
+          "title": "‘The mind loves a mystery’: why our own secrets keep us coming back to thrillers",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxILTSTukIJQTvmpk4HWfIRJiSyRGC7kkolE7jyLW2dxvvwy9FzXgWJHrX-ys"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuQlwe60vDCuK9EblE_zb6He9vo8z-AH2XEFEUH26jjTpJXGNA9MBfusHFYJU"
         },
         {
-          "url": "https://fortune.com/2026/11/09/what-is-nvidia-ceo-succession-plan-jensen-huang-son-in-law-nico-caprez/",
-          "title": "Meet Nico Caprez, Jensen Huang's son-in-law and 'consigliere' who could replace him as Nvidia's CEO",
-          "publisher": "Fortune",
+          "url": "https://www.hollywoodreporter.com/tv/tv-reviews/the-good-daughter-review-rose-byrne-meghann-fahy-peacock-1236750733/",
+          "title": "'The Good Daughter' Review: Rose Byrne & Meghann Fahy in Peacock Drama",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS3Bz8Rnaf0juEly6GhoZ4_fp6IFhadBu0OKfQS-M2Azizp9kJJTQlZWkpW1g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnFTxaLLkLWuWt4jc-zqkzuk5OAhmSVfdhjzQD6iMYZdCIxTF_JOoo_ai1f8"
         }
       ]
     }
