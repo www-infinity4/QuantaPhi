@@ -98,19 +98,29 @@ function classify(utterance){
  if(change.test(text)&&subject.test(text)&&(imperative.test(text)||directive.test(text)))return 'queue';
  return 'chat';
 }
-// Continue an OWNER'S last explicit work command, not an assistant suggestion.
- // No older browsing context or model-authored instruction can create a job.
+// Continue the latest OWNER work command across a contiguous chain of '*' or
+// 'continue' turns. A new unrelated user message breaks the chain; assistant
+// suggestions never authorize work, and the Brain retains its owner/write gate.
+function isOwnerContinuation(input){
+ const text=String(input||'').trim().toLowerCase();
+ return /^(?:(?:please|bubbles)[\\s,:]+)?(?:\\*|continue(?: (?:engineering|please|building|working|the build|that|where you left off))?|keep (?:going|building|working)(?: on (?:it|that))?|go ahead|go on|carry on|proceed|yes[, ]*(?:do it|go ahead|continue)|finish (?:it|that|the build)|pick up (?:the work|where you left off))\\s*[.!*]*$/.test(text);
+}
 function resolveFollowupRequest(utterance, history=[]){
- const latest=String(utterance||'').trim().toLowerCase();
- if(!/^(?:\*|continue(?: (?:building|working|the build|that|where you left off))?|keep (?:going|building|working)(?: on (?:it|that))?|go ahead|go on|carry on|proceed|yes[, ]*(?:do it|go ahead|continue)|finish (?:it|that|the build)|pick up (?:the work|where you left off))\s*[.!*]*$/.test(latest))return '';
- if(!Array.isArray(history))return '';
- // Only the *most recent* user command is eligible. Earlier, unrelated requests
- // cannot be revived by a one-word "continue" after an intervening topic.
- const last=[...history].reverse().find(item=>item?.role==='user'&&typeof item.text==='string');
- if(!last)return '';
- const previous=last.text.trim().slice(0,4000);
- if(previous.length<12||classify(previous)!=='queue')return '';
- return previous;
+ if(!isOwnerContinuation(utterance)||!Array.isArray(history))return '';
+ let priorContinuations=0;
+ for(let i=history.length-1;i>=0;i--){
+  const item=history[i];
+  if(item?.role!=='user'||typeof item.text!=='string')continue;
+  const previous=item.text.trim().slice(0,4000);
+  if(isOwnerContinuation(previous)){
+   if(++priorContinuations>200)return '';
+   continue;
+  }
+  // Stop at the first different user topic, even if earlier messages contain
+  // commands or an assistant claimed a task was completed.
+  return previous.length>=12&&classify(previous)==='queue'?previous:'';
+ }
+ return '';
 }
 // Resolve a deictic repair command only against the owner's latest message.
 function resolveRepairRequest(utterance, history=[]){
