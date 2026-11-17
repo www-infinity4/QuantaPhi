@@ -18,20 +18,20 @@ test('skipping the 21+ category persists and prevents any automatic adult card',
  p.noteSkipped();
  assert.equal(p.canAutoShow(pref),false);
 });
-test('deliberate 21+ acknowledgement is a browsing preference, not age or ad verification',()=>{
+test('21+ acknowledgement is never permission for ordinary-feed adult promotion',()=>{
  const {p}=policy();
  p.acknowledgeBrowse();
  for(let i=0;i<9;i++)p.noteShown(ordinary);
  assert.equal(p.canAutoShow(adult),false);
  p.noteShown(ordinary);
- assert.equal(p.canAutoShow(adult),true);
+ assert.equal(p.canAutoShow(adult),false);
  p.noteShown(adult);
  assert.equal(p.canAutoShow(adult),false);
  assert.equal(p.read().ageVerified,undefined);
 });
-test('without opt-in a neutral preference card appears sparingly, never actual adult products',()=>{
+test('without explicit browsing neither an adult preference nor a cannabis card auto-rotates',()=>{
  const {p}=policy();for(let i=0;i<12;i++)p.noteShown(ordinary);
- assert.equal(p.canAutoShow(pref),true);
+ assert.equal(p.canAutoShow(pref),false);
  assert.equal(p.canAutoShow(adult),false);
 });
 test('approved six-image card plays all six once before starting next verified card',()=>{
@@ -92,4 +92,17 @@ test('medicine and tobacco context cannot request ordinary sponsored companions'
  assert.equal(normalizeCandidate({id:'basic',title:'Carrot seeds',category:'Gardening',type:'published-card',status:'approved',url:'https://example.org/carrot',images:['https://example.org/a.jpg','https://example.org/b.jpg']}).images.length,2);
  assert.equal(contextFor({title:'Miami Vice vacation',category:'Movies'}).id,'travel');
  assert.equal(contextFor({title:'Debug syntax error',category:'Developer'}).id,'developer');
+});
+
+test('even an explicit visit to the adult area does not silently retarget Public discovery',()=>{
+ const {p}=policy();
+ p.acknowledgeBrowse();
+ assert.equal(p.read().browsingThisVisit,true);
+ for(let i=0;i<35;i++)p.noteShown(ordinary);
+ assert.equal(p.canAutoShow(adult),false,'adult directory should require explicit active navigation');
+ assert.equal(p.canAutoShow({id:'adult-premium-offer',title:'Cannabis sale',category:'Cannabis'}),false);
+ assert.equal(p.canAutoShow({id:'adult-content-card',title:'Adult video',category:'21+'}),false);
+ assert.equal(p.canAutoShow(ordinary),true,'ordinary recommendations still work');
+ p.noteSkipped();
+ assert.equal(p.canAutoShow(adult),false);
 });
