@@ -3,348 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T23:01:11.856308Z",
+  "checked_at": "2026-11-17T23:30:52.976780Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "uruguay vs dominican republic",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T22:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c6jd75xzkn21t",
-        "https://www.transfermarkt.us/online-betting/picks/uruguay-vs-dominican-republic-picks-17-11-2026/",
-        "https://www.telecomasia.net/sports-betting/tips/football/uruguay-vs-dominican-republic-match-prediction-17-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcI35tE94oxZ4fAkusefTkkCEgVO0leRjBnSKCkHzFP5jNXRUrKdq4vJGU764",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c6jd75xzkn21t",
-          "title": "Uruguay vs Dominican Republic: Friendlies stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcI35tE94oxZ4fAkusefTkkCEgVO0leRjBnSKCkHzFP5jNXRUrKdq4vJGU764"
-        },
-        {
-          "url": "https://www.transfermarkt.us/online-betting/picks/uruguay-vs-dominican-republic-picks-17-11-2026/",
-          "title": "Uruguay - Dominican Republic prediction & picks 17.11.2026",
-          "publisher": "www.transfermarkt.us",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSU4N7yNUNPLgI1tHfCEb5XV4Rpfjf3t4g1rXACR9oHH0eAhdVUgkoQdB00lu4"
-        },
-        {
-          "url": "https://www.telecomasia.net/sports-betting/tips/football/uruguay-vs-dominican-republic-match-prediction-17-november-2026/",
-          "title": "Uruguay vs Dominican Republic Prediction: After the victory over Argentina",
-          "publisher": "Telecom Asia Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_AYm06aXyLFKRZ8lOryrs4mWxydXkKMt3aL6F8yXuPMfQG8F-A31reypiBug"
-        }
-      ]
-    },
-    {
-      "query": "qeshm",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T22:30:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz",
-        "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/",
-        "https://www.cnn.com/2026/11/17/politics/us-iran-self-defense-strikes"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUlq-apUXMWozbhhGjj1CqYR8yxBee0PUaNQ_rD76DsJPcaQHlkzJGls9bujg",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz",
-          "title": "Iran war live: US hits Qeshm Island, Houthis claim attack on Saudi pipeline",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUlq-apUXMWozbhhGjj1CqYR8yxBee0PUaNQ_rD76DsJPcaQHlkzJGls9bujg"
-        },
-        {
-          "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/",
-          "title": "Live Updates: U.S. launches strikes on Iran's Qeshm Island in Strait of Hormuz",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-STxq57HurKe4II9YozWYwOjdEPCrNJ6q9f6sChrWWi4aZyx8xhlcUyajHWI"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/17/politics/us-iran-self-defense-strikes",
-          "title": "US carries out ‘self-defense’ strikes on Iranian missile launch site",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGg8K_anfBfFdXgezuISl0oUXrUyQCo4vPB59ogUA46g7y-_510a4fJfhbp50"
-        }
-      ]
-    },
-    {
-      "query": "kuwait",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T22:30:00Z",
-      "related_news_urls": [
-        "https://www.arabnews.com/middle-east/kuwait-under-hostile-drone-attacks-says-army-3012614",
-        "https://breakingthenews.net/Article/Kuwait's-air-defense-responds-to-'hostile'-drone-attacks/67585399",
-        "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-air-defences-countering-hostile-drone-attacks-army-says"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFcdsSj9GDy_ybDftxn1X2R25EolxoJzl9jk_vHYo9wnJg2wCeTVyIYcTD078",
-      "image_credit": "Arab News",
-      "news": [
-        {
-          "url": "https://www.arabnews.com/middle-east/kuwait-under-hostile-drone-attacks-says-army-3012614",
-          "title": "Kuwait under hostile drone attacks, says army",
-          "publisher": "Arab News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFcdsSj9GDy_ybDftxn1X2R25EolxoJzl9jk_vHYo9wnJg2wCeTVyIYcTD078"
-        },
-        {
-          "url": "https://breakingthenews.net/Article/Kuwait's-air-defense-responds-to-'hostile'-drone-attacks/67585399",
-          "title": "Kuwait's air defense responds to 'hostile' drone attacks",
-          "publisher": "Breakingthenews.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP8J-UrLTTpAxwC6BJBK2wCoo2AUjOlLadvxKxosmuZAoaAHeKOBURpskOjn4"
-        },
-        {
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-air-defences-countering-hostile-drone-attacks-army-says",
-          "title": "Kuwait air defences countering hostile drone attacks, army says",
-          "publisher": "Middle East Eye",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtUPuDkiUJlU5Lo-kl4-a4bWbC2yd3JjQlBZLjIzeIQZsdykN5WjcJvzKeUy0"
-        }
-      ]
-    },
-    {
-      "query": "dow jones industrial average",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T22:20:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html",
-        "https://thehill.com/newsletters/business-economy/6226585-stocks-dip-but-nvidia-reports-strong-earnings/",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-q3-financial-results-retail-sales-import-prices"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmVwZW80xyCrBRtocSUjuqEElyCwddP_5qHLb1yu3mT1rHAsc6X4_p_LPOZ1A",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html",
-          "title": "Dow drops more than 800 points, S&P 500 posts lowest close since July",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmVwZW80xyCrBRtocSUjuqEElyCwddP_5qHLb1yu3mT1rHAsc6X4_p_LPOZ1A"
-        },
-        {
-          "url": "https://thehill.com/newsletters/business-economy/6226585-stocks-dip-but-nvidia-reports-strong-earnings/",
-          "title": "Stocks dip, but Nvidia reports strong earnings",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5bWZnd_V5DviZi7Wu2hOSzPjFV68EtQtWGz0wdeJooW4WCuxGNCIm8ZSy6KI"
-        },
-        {
-          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-q3-financial-results-retail-sales-import-prices",
-          "title": "Stock Market News, Nov. 17, 2026: Dow ends down 850 points, S&P 500 and Nasdaq also plunge as tech names come under further pressure ahead of Nvidia’s earnings",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWpLtxMpAOsv0qLkH0I5gMgfPPTQc-7isCGzxPEfgvB-kDUWjV02wL3LG_-bc"
-        }
-      ]
-    },
-    {
-      "query": "aircraft",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T22:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/17/politics/irish-national-charges-destroying-us-military-plane-ireland",
-        "https://www.justice.gov/usao-sdny/pr/irish-national-indicted-destroying-60-million-us-military-c-130h-aircraft-shannon",
-        "https://apnews.com/article/us-military-ireland-plane-destroyed-c130-2604e884805eabccacf30104fcf74e40"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQooyPxmlqcgGejoBD_yDWF9RF8yMBCJ2A8fKdNfN-W6rLqS8KgOB9KcL8zK7c",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/17/politics/irish-national-charges-destroying-us-military-plane-ireland",
-          "title": "Man accessed US military plane at Ireland airport and destroyed it, DOJ says",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQooyPxmlqcgGejoBD_yDWF9RF8yMBCJ2A8fKdNfN-W6rLqS8KgOB9KcL8zK7c"
-        },
-        {
-          "url": "https://www.justice.gov/usao-sdny/pr/irish-national-indicted-destroying-60-million-us-military-c-130h-aircraft-shannon",
-          "title": "Irish National Indicted For Destroying $60 Million U.S. Military C-130H Aircraft At Shannon Airport, Ireland",
-          "publisher": "Department of Justice (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdbAFMcX5v5XQG0QvcCx_8H_P_t4tsPmfzAJBy-dBvB9vZRTRypS5ktQY4yIA"
-        },
-        {
-          "url": "https://apnews.com/article/us-military-ireland-plane-destroyed-c130-2604e884805eabccacf30104fcf74e40",
-          "title": "A man destroyed a $60 million US military plane at an Irish airport, prosecutors say",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXea4b9eLs2cDM33DeDm18Vf7GctcCmyLe4NszZnWoaBxS47e226eQ2ST-XC4"
-        }
-      ]
-    },
-    {
-      "query": "anne hathaway",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T22:20:00Z",
-      "related_news_urls": [
-        "https://www.tmz.com/2026/11/17/anne-hathaway-seen-with-new-baby/",
-        "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/anne-hathaway-welcomes-third-child-1236730455/",
-        "https://pagesix.com/2026/11/17/parents/anne-hathaway-gives-birth-to-baby-no-3-with-husband-adam-shulman/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXE9sefMd1uADjiVJtFaC5lfNVG1YUmj77kZMKi5LMmEARsAzm1Ox9nUlgjGY",
-      "image_credit": "TMZ",
-      "news": [
-        {
-          "url": "https://www.tmz.com/2026/11/17/anne-hathaway-seen-with-new-baby/",
-          "title": "Anne Hathaway Welcomes New Baby, Spotted With Newborn in NYC",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXE9sefMd1uADjiVJtFaC5lfNVG1YUmj77kZMKi5LMmEARsAzm1Ox9nUlgjGY"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/anne-hathaway-welcomes-third-child-1236730455/",
-          "title": "Anne Hathaway Welcomes Third Child With Husband Adam Shulman",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr9RAEWigm-4uz6PfFCEnWD68AuZe9q4Qk0sDnYJZeM7grdA_MDEwbqmtjP6I"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/17/parents/anne-hathaway-gives-birth-to-baby-no-3-with-husband-adam-shulman/",
-          "title": "Anne Hathaway gives birth to baby No. 3 with husband Adam Shulman",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIXpMx-pI1PuAuIWYPhVlqs5BQzJ5XvAQVMxV1DOv7838_I_G5o2eJphKNZfE"
-        }
-      ]
-    },
-    {
-      "query": "league of legends",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T22:20:00Z",
-      "related_news_urls": [
-        "https://www.sportsvideo.org/2026/11/16/riot-games-continues-to-blaze-the-remote-production-trail-with-league-of-legends-worlds-grand-final-at-barclays-center/",
-        "https://www.riotgames.com/en/news/worlds-watch-parties-2026",
-        "https://www.globaltimes.cn/page/202611/1374347.shtml"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVjBKdR95xtkYAxC466pb7W3lrkbH3xM-7lxakCQj3IJ6AFWXpppWmEs7qB5I",
-      "image_credit": "Sports Video Group",
-      "news": [
-        {
-          "url": "https://www.sportsvideo.org/2026/11/16/riot-games-continues-to-blaze-the-remote-production-trail-with-league-of-legends-worlds-grand-final-at-barclays-center/",
-          "title": "League of Legends World Championship Grand Final: Riot Games Continues To Blaze the Remote-Production Trail at Barclays Center",
-          "publisher": "Sports Video Group",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVjBKdR95xtkYAxC466pb7W3lrkbH3xM-7lxakCQj3IJ6AFWXpppWmEs7qB5I"
-        },
-        {
-          "url": "https://www.riotgames.com/en/news/worlds-watch-parties-2026",
-          "title": "Find a Worlds 2026 Watch Party Near You",
-          "publisher": "Riot Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHHVhLjDeY8d0Gwd-POEtIn0VbQwOs2XD6_Ykx72LR7XBLtL4SsMSOw_ExyBY"
-        },
-        {
-          "url": "https://www.globaltimes.cn/page/202611/1374347.shtml",
-          "title": "Once again, China’s youth are ‘stepping up to the plate’!: Global Times editorial",
-          "publisher": "Global Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwR132Z9-_QyTAAzvxe1AwYX1tKANipSUFvqp7UJlA6OqFCgQxOEjhi1OExhg"
-        }
-      ]
-    },
-    {
-      "query": "argentina - costa rica",
+      "query": "usa vs haiti",
       "approx_searches": "10000+",
-      "published_at": "2026-11-17T22:10:00Z",
+      "published_at": "2026-11-17T23:10:00Z",
       "related_news_urls": [
-        "https://www.si.com/soccer/argentina-vs-costa-rica-preview-predictions-lineups-11-17-26",
-        "https://www.usatoday.com/story/sports/soccer/2026/11/17/argentina-costa-rica-live-watch-highlights-score-lineups--live/92829041007/",
-        "https://onefootball.com/en/betting/predictions/argentina-vs-costa-rica-17-11-2026"
+        "https://www.espn.com/soccer/story/_/id/50490960/pochettino-farewell-usmnt-haiti-live-updates",
+        "https://www.ussoccer.com/stories/2026/11/usmnt/starting-xi-lineup-notes-vs-haiti-cincinnati-ohio-nations-league-2",
+        "https://www.nytimes.com/athletic/live-blogs/usmnt-vs-haiti-live-updates-pochettino-concacaf-nations-league-score-result/c0pAetezjNYi/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVFO8UiN7HzztkZ693uDh4-she5OyxHtMX37DPufyibNra2_CfMjT-ZcvM3PE",
-      "image_credit": "Sports Illustrated",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzbmpIRYfDUHNZNhqPllIjokxce1G7Be5XA7RcPGvnw8y0OXnlg5QmnfEGOM",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.si.com/soccer/argentina-vs-costa-rica-preview-predictions-lineups-11-17-26",
-          "title": "Argentina vs. Costa Rica: Preview, Predictions and Lineups",
+          "url": "https://www.espn.com/soccer/story/_/id/50490960/pochettino-farewell-usmnt-haiti-live-updates",
+          "title": "Live updates: Mauricio Pochettino bids farewell as USMNT take on Haiti",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzbmpIRYfDUHNZNhqPllIjokxce1G7Be5XA7RcPGvnw8y0OXnlg5QmnfEGOM"
+        },
+        {
+          "url": "https://www.ussoccer.com/stories/2026/11/usmnt/starting-xi-lineup-notes-vs-haiti-cincinnati-ohio-nations-league-2",
+          "title": "Starting XI & Lineup Notes: USMNT vs. Haiti | Concacaf Nations League Quarterfinals",
+          "publisher": "US Soccer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqup3oywGlaIrDHWuEhTnHN7EVrQi8qM9HJfD9yEQDORcGyXYPmrx_fpZ7TRA"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/usmnt-vs-haiti-live-updates-pochettino-concacaf-nations-league-score-result/c0pAetezjNYi/",
+          "title": "USMNT vs. Haiti live updates: Pochettino leads USA in farewell match in Concacaf Nations League",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOdAUiUPJynbnBxf9ZPNdAwo8Dkd-iUR8v9JjHK6FS9999ke6BkhEc7g7Fo6Y"
+        }
+      ]
+    },
+    {
+      "query": "estados unidos - haití",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T23:10:00Z",
+      "related_news_urls": [
+        "https://es.concacaf.com/competitions/nations-league/news/estados-unidos-vs-haiti-y-mexico-vs-jamaica-cierran-los-cuartos-de-final-de-la-liga-de-naciones",
+        "https://www.telemundo.com/deportes/puesta-a-punto/video/pochettino-sobre-su-legado-en-estados-unidos-dejamos-la-base-la-tierra-fertil-para-dar-frutos-tmvo13245212",
+        "https://www.si.com/es-us/a-que-hora-es-el-estados-unidos-vs-haiti-y-como-verlo-por-tv-y-streaming-online-17-11-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTW3LMbLl3p0GE9YWeJr_8QuRJaomDFZ-BMKZWbGoEMnvojqokn1OK0Db9_thA",
+      "image_credit": "Concacaf | Official Website",
+      "news": [
+        {
+          "url": "https://es.concacaf.com/competitions/nations-league/news/estados-unidos-vs-haiti-y-mexico-vs-jamaica-cierran-los-cuartos-de-final-de-la-liga-de-naciones",
+          "title": "Estados Unidos vs. Haití y México vs. Jamaica cierran los Cuartos de Final de la Liga de Naciones",
+          "publisher": "Concacaf | Official Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTW3LMbLl3p0GE9YWeJr_8QuRJaomDFZ-BMKZWbGoEMnvojqokn1OK0Db9_thA"
+        },
+        {
+          "url": "https://www.telemundo.com/deportes/puesta-a-punto/video/pochettino-sobre-su-legado-en-estados-unidos-dejamos-la-base-la-tierra-fertil-para-dar-frutos-tmvo13245212",
+          "title": "Pochettino sobre su legado en Estados Unidos: “Dejamos la base; la tierra fértil para dar frutos”",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmRkyWe54JHjca1y06xExWLa1jFZ5Gh2b5fjvO-Slui_P23wMzFl2Rd8oLbtU"
+        },
+        {
+          "url": "https://www.si.com/es-us/a-que-hora-es-el-estados-unidos-vs-haiti-y-como-verlo-por-tv-y-streaming-online-17-11-2026",
+          "title": "¿A qué hora es el Estados Unidos vs Haití y cómo verlo por TV y streaming online?",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVFO8UiN7HzztkZ693uDh4-she5OyxHtMX37DPufyibNra2_CfMjT-ZcvM3PE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyiDo5IQC0eUw908K-5sXc_-QdM9h16d-zVTyr43S2a7bmIVBGaghQda3uVsI"
+        }
+      ]
+    },
+    {
+      "query": "kings vs bruins",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T23:10:00Z",
+      "related_news_urls": [
+        "https://lakingsinsider.com/2026/11/17/11-17-preview-gustafsson-expected-to-return-power-play-entries-setup-overtime-history/",
+        "https://www.nhl.com/news/los-angeles-kings-boston-bruins-game-preview-november-17-2026",
+        "https://sports.yahoo.com/articles/kings-vs-bruins-game-preview-204432260.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSX_DnnQizbWOHOvevfY_xxuJJCC7WQQBGN5vCLRQE_3d6oN8aYHpc6qEKUQo",
+      "image_credit": "LA Kings Insider",
+      "news": [
+        {
+          "url": "https://lakingsinsider.com/2026/11/17/11-17-preview-gustafsson-expected-to-return-power-play-entries-setup-overtime-history/",
+          "title": "11/17 Preview - Gustafsson Expected To Return + Power Play Entries, Setup, Overtime History",
+          "publisher": "LA Kings Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSX_DnnQizbWOHOvevfY_xxuJJCC7WQQBGN5vCLRQE_3d6oN8aYHpc6qEKUQo"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/soccer/2026/11/17/argentina-costa-rica-live-watch-highlights-score-lineups--live/92829041007/",
-          "title": "Argentina vs Costa Rica LIVE score updates, highlights, lineups and how to watch",
+          "url": "https://www.nhl.com/news/los-angeles-kings-boston-bruins-game-preview-november-17-2026",
+          "title": "Kings at Bruins projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/kings-vs-bruins-game-preview-204432260.html",
+          "title": "Kings Vs Bruins Game Preview: Kings Trying to Avoid 5th Straight Loss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFyx-bKqoZ10BhgYueqoLzjpAZGJAg6LWxLOMcLP4HGhuxF_M9Ifs98VGB9C4"
+        }
+      ]
+    },
+    {
+      "query": "sabres vs flyers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-philadelphia-flyers-lineup",
+        "https://buffalonews.com/sports/professional/nhl/sabres/article_8a1efaa3-9065-430d-836c-284fbca2cd5e.html",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/buffalo-sabres-vs-philadelphia-flyers-prediction-odds-2026-11-17/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXJPYTuCX7LbJyicO1UceqZE_mk704v_DHDg1qp4y3NcuDQds1QGB7rqkU2n0",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-philadelphia-flyers-lineup",
+          "title": "Sabres at Flyers | How to watch, lineup notes, and storylines",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXJPYTuCX7LbJyicO1UceqZE_mk704v_DHDg1qp4y3NcuDQds1QGB7rqkU2n0"
+        },
+        {
+          "url": "https://buffalonews.com/sports/professional/nhl/sabres/article_8a1efaa3-9065-430d-836c-284fbca2cd5e.html",
+          "title": "‘It’s finding our confidence’: Sabres look to snap four-loss stretch at Philadelphia",
+          "publisher": "Buffalo News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTskSoO2yRWoDYxWJHaMfZVxqjI5Va3fBTFMFuH0eDdK37aioblsz6LRnMbXBY"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/buffalo-sabres-vs-philadelphia-flyers-prediction-odds-2026-11-17/",
+          "title": "Buffalo Sabres vs Philadelphia Flyers Prediction, Picks & Odds | 17 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbO5tBlrGPoWmZh1-aUANfUsU9u2DhMs45ADEcZH6yC1I6bdSxVOtYv45s44E"
+        }
+      ]
+    },
+    {
+      "query": "oilers vs panthers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T23:10:00Z",
+      "related_news_urls": [
+        "https://www.litterboxcats.com/florida-panthers-vs-edmonton-oilers-gameday-23-2026-27-nhl-schedule/",
+        "https://www.nhl.com/news/edmonton-oilers-florida-panthers-game-preview-november-17-2026",
+        "https://www.nytimes.com/athletic/7789675/2026/11/17/oilers-vs-panthers-stream-how-to-watch-nov-17/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtQui9NRpvTfYKMTyFzwLRZklYGu6jX74A7kbRr1VO8FDe6dt_kVXahEkzZeM",
+      "image_credit": "Litter Box Cats",
+      "news": [
+        {
+          "url": "https://www.litterboxcats.com/florida-panthers-vs-edmonton-oilers-gameday-23-2026-27-nhl-schedule/",
+          "title": "Gameday 23: Florida Panthers vs Edmonton Oilers",
+          "publisher": "Litter Box Cats",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtQui9NRpvTfYKMTyFzwLRZklYGu6jX74A7kbRr1VO8FDe6dt_kVXahEkzZeM"
+        },
+        {
+          "url": "https://www.nhl.com/news/edmonton-oilers-florida-panthers-game-preview-november-17-2026",
+          "title": "Oilers at Panthers projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7789675/2026/11/17/oilers-vs-panthers-stream-how-to-watch-nov-17/",
+          "title": "How to watch Oilers vs. Panthers: TV channel and streaming options for November 17",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCtCh2c044gLqWf9KKdx_ZSZ4mvswERuXt6yFt7Zij7DiVOKBQS680vNUONM"
+        }
+      ]
+    },
+    {
+      "query": "blue jackets vs islanders",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T23:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ny-islanders-could-without-trio-172357736.html",
+        "https://www.nhl.com/islanders/news/isles-day-to-day-ritchie-skates-in-non-contact-jersey",
+        "https://www.prohockeyrumors.com/2026/11/injury-notes-stanley-kaskimaki-fabbro.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdA_9PzCKadZsVWcsifeplRACqdo-f1_1DZhRCNgImhv_2VCSPATjxR4Qeoqs",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/ny-islanders-could-without-trio-172357736.html",
+          "title": "NY Islanders Could Be Without Trio of Players Against Blue Jackets",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdA_9PzCKadZsVWcsifeplRACqdo-f1_1DZhRCNgImhv_2VCSPATjxR4Qeoqs"
+        },
+        {
+          "url": "https://www.nhl.com/islanders/news/isles-day-to-day-ritchie-skates-in-non-contact-jersey",
+          "title": "Isles Day-to-Day: Ritchie Skates In Non-Contact Jersey",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiZ7G3CLYxlkWXrCP8UCwY6ReIxFvUJZrS860PfcIk4hawt0175O-kQfyBUT0"
+        },
+        {
+          "url": "https://www.prohockeyrumors.com/2026/11/injury-notes-stanley-kaskimaki-fabbro.html",
+          "title": "Injury Notes: Stanley, Kaskimaki, Fabbro",
+          "publisher": "Pro Hockey Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB8v7AbZFA-Q-B9YPgnOnZjgNAEtFMzBFcOlyW_SID_taz0coQNDIYhOIN7jk"
+        }
+      ]
+    },
+    {
+      "query": "sheriff",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T23:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/us/california-sheriffs-deputy-special-officer-put-leave-after-5-second-conversation-ice-agents",
+        "https://laist.com/news/oc-sheriffs-deputy-special-officer-placed-on-leave-video-shows-them-talking-with-ice-agents",
+        "https://www.cbsnews.com/losangeles/news/orange-county-jail-employees-placed-on-leave-after-ice-arrest/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4yMPpjgzKUIS73i2d_ojA1oEoZrSnKkvHKSdUCW050iYWYd2tVkpdjyoVImY",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/us/california-sheriffs-deputy-special-officer-put-leave-after-5-second-conversation-ice-agents",
+          "title": "California sheriff's deputy, special officer put on leave after 5-second conversation with ICE agents",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4yMPpjgzKUIS73i2d_ojA1oEoZrSnKkvHKSdUCW050iYWYd2tVkpdjyoVImY"
+        },
+        {
+          "url": "https://laist.com/news/oc-sheriffs-deputy-special-officer-placed-on-leave-video-shows-them-talking-with-ice-agents",
+          "title": "OC Sheriff's deputy and special officer placed on leave. Video shows them talking with ICE agents",
+          "publisher": "LAist",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrJHY9YUf6BVUBIACF0nw7KXONUzkQGBVgIGmK-f1KGaujPwChpIGt-JWzX6Q"
+        },
+        {
+          "url": "https://www.cbsnews.com/losangeles/news/orange-county-jail-employees-placed-on-leave-after-ice-arrest/",
+          "title": "Orange County Jail employees placed on leave after ICE arrest",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQeutGVp7H9lQhBtFWpjd4V5U6Vh5FNqQSNssumjealxXPNtOYhnLfolcwq8"
+        }
+      ]
+    },
+    {
+      "query": "miami oh vs kent state",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T23:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/kent-state-college-football-vs-220036376.html",
+        "https://www.cbssports.com/betting/news/miami-ohio-kent-state-prediction-odds-time-week-12-tuesday-maction-picks-best-bets/",
+        "https://www.sportsgambler.com/betting-tips/ncaaf/miami-ohio-redhawks-vs-kent-state-golden-flashes-prediction-odds-2026-11-17/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibQG721JkcraudrcRLsEgN6qtRGa_6QDz3LC0jYbxlhQY7ie589WFyxUdz1k",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/kent-state-college-football-vs-220036376.html",
+          "title": "Kent State college football vs. Miami live updates, highlights",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibQG721JkcraudrcRLsEgN6qtRGa_6QDz3LC0jYbxlhQY7ie589WFyxUdz1k"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/miami-ohio-kent-state-prediction-odds-time-week-12-tuesday-maction-picks-best-bets/",
+          "title": "Miami (Ohio) vs. Kent State prediction, odds, time: Week 12 Tuesday MACtion picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerXWLKucfhT6UXRY4-EO257aXqBvuXvUDBvDXPtU2aXz77fte1rrCQ4sRvHM"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/miami-ohio-redhawks-vs-kent-state-golden-flashes-prediction-odds-2026-11-17/",
+          "title": "Miami (OH) vs Kent State Prediction, Picks & Odds | 17 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1rjYJpq457WXcAJmKZrYak2zbOnXpj23-XfKvbqIbhcS71FbXtryMAv2u4QY"
+        }
+      ]
+    },
+    {
+      "query": "ball state vs ohio",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T23:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/ball-state-vs-ohio-prediction-picks-odds-start-time-college-football-betting-preview-nov-17-maction/",
+        "https://sports.yahoo.com/articles/watch-ball-state-vs-ohio-230000250.html",
+        "https://www.usatoday.com/sports/ncaaf/event/2026/2975030/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=2"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRumIw6IGMsMFuJDNG8zpOKHOrd0d5eUCZ3VWOLdVENS_pq14F9ddSSA3A8dAY",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/ball-state-vs-ohio-prediction-picks-odds-start-time-college-football-betting-preview-nov-17-maction/",
+          "title": "Ball State vs. Ohio prediction, picks, odds, start time: College football betting preview for Nov. 17 MACtion",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRumIw6IGMsMFuJDNG8zpOKHOrd0d5eUCZ3VWOLdVENS_pq14F9ddSSA3A8dAY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-ball-state-vs-ohio-230000250.html",
+          "title": "How to watch Ball State vs Ohio: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_zFQuYjccDTUAfEIQxP6eNwut97hEV2z_dvUHOXFSQ1GJ0JbADOxjQJozfeI"
+        },
+        {
+          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2975030/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=2",
+          "title": "Ball State Cardinals at Ohio Bobcats - NCAAF Game Summary - Nov 17, 2026",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpXZghipDcoFIhh8rjRyS9s7Vr80iE9q6Ix9epjtOcqdhQcTLqYUno3KV2vS4"
-        },
-        {
-          "url": "https://onefootball.com/en/betting/predictions/argentina-vs-costa-rica-17-11-2026",
-          "title": "Argentina vs Costa Rica - Prediction, where to watch, kick-off time and line-ups 17-11-2026",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyC1eV0CCsSENJo-hv7LTWmCUmz0ZLHWGau6gMhU9-EWnBlW9OoFr3BzUfxTI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhR5qD_yQ9kw08zApR3wFlhpC120X4UhC6sLZEupfkA0C6kkaT1_fMxwGePmA"
         }
       ]
     },
     {
-      "query": "chile vs colombia",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-17T22:10:00Z",
+      "query": "harlan coben",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T23:00:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17526251/probable-formacion-de-chile-para-enfrentar-a-colombia",
-        "https://colombia.as.com/futbol/posible-alineacion-de-colombia-para-enfrentar-a-chile-en-santiago-f202611-n/",
-        "https://www.eltiempo.com/deportes/futbol-internacional/la-seleccion-colombia-cierra-el-ano-contra-chile-otra-prueba-para-ajustar-tuercas-hora-y-tv-3601519"
+        "https://www.netflix.com/tudum/articles/the-innocent-harlan-coben-series",
+        "https://www.yahoo.com/entertainment/tv/articles/harlan-coben-innocent-everything-know-212856878.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPI4mzKBeBVWVmGPrk_X5dSuWLo2NeMwhc6j_xPkdzd4gXjAZ3bLAM7TBJr8g",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotWqXWiVdQoXL8WLng50gIiOdWsjhmNYr5Ov4-AWtvyAN-sDot05d3KRH9B4",
+      "image_credit": "Netflix",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17526251/probable-formacion-de-chile-para-enfrentar-a-colombia",
-          "title": "¡Atención, chilenos! La probable formación para enfrentar a Colombia",
-          "publisher": "ESPN Deportes",
+          "url": "https://www.netflix.com/tudum/articles/the-innocent-harlan-coben-series",
+          "title": "Harlan Coben’s The Innocent Is Getting a New Limited Series Adaptation",
+          "publisher": "Netflix",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPI4mzKBeBVWVmGPrk_X5dSuWLo2NeMwhc6j_xPkdzd4gXjAZ3bLAM7TBJr8g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotWqXWiVdQoXL8WLng50gIiOdWsjhmNYr5Ov4-AWtvyAN-sDot05d3KRH9B4"
         },
         {
-          "url": "https://colombia.as.com/futbol/posible-alineacion-de-colombia-para-enfrentar-a-chile-en-santiago-f202611-n/",
-          "title": "Posible alineación de Colombia para enfrentar a Chile en Santiago",
-          "publisher": "AS Colombia",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/harlan-coben-innocent-everything-know-212856878.html",
+          "title": "Harlan Coben’s ‘The Innocent’: Everything to Know Netflix’s Next Adaptation",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMttwH27SKlW-ncZRr5aFtn4JQwRnmZg1bBulOC8WdNIRbPXcQaaTBT3ncU6M"
-        },
-        {
-          "url": "https://www.eltiempo.com/deportes/futbol-internacional/la-seleccion-colombia-cierra-el-ano-contra-chile-otra-prueba-para-ajustar-tuercas-hora-y-tv-3601519",
-          "title": "La Selección Colombia cierra el año contra Chile: otra prueba para ajustar tuercas | Hora y TV",
-          "publisher": "El Tiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvarhhSYlp-xj__iRgFd6X39ZJ0RRdF_bJiBaQcZ5-dLgO-U05zWTkn0RywA"
-        }
-      ]
-    },
-    {
-      "query": "chile - colombia",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T22:10:00Z",
-      "related_news_urls": [
-        "https://www.yardbarker.com/soccer/articles/chile_vs_colombia_lineups_preview/s1_17615_44577684",
-        "https://www.beinsports.com/en-us/soccer/friendlies/articles/lorenzo-hails-colombias-fight-in-intense-friendly-win-over-chile-2026-11-14?Ah=EU"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7Aty18pT4-sPI89L2w9bvt675_5abrr16bYiOXIMdAdrtxvlRGerocfy41dE",
-      "image_credit": "Yardbarker",
-      "news": [
-        {
-          "url": "https://www.yardbarker.com/soccer/articles/chile_vs_colombia_lineups_preview/s1_17615_44577684",
-          "title": "Chile vs. Colombia Lineups, Preview",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7Aty18pT4-sPI89L2w9bvt675_5abrr16bYiOXIMdAdrtxvlRGerocfy41dE"
-        },
-        {
-          "url": "https://www.beinsports.com/en-us/soccer/friendlies/articles/lorenzo-hails-colombias-fight-in-intense-friendly-win-over-chile-2026-11-14?Ah=EU",
-          "title": "Lorenzo hails Colombia's fight in 'intense' friendly win over Chile",
-          "publisher": "beIN SPORTS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVsVkN-LknIsjeBemkstqFAh0EYOohxu0phZvUr5xVd1KrqyZpyqE5qaJOyuk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOGrcocyE02WU6IGoGwW9kzD4J0cAPbbo_-7PEdeGHmp5wcFgqIZ5jI6J92_k"
         }
       ]
     }
