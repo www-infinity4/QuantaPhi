@@ -3,27 +3,213 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T14:31:12.527663Z",
+  "checked_at": "2026-11-17T15:01:46.262460Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "turkey",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T14:40:00Z",
+      "related_news_urls": [
+        "https://www.ft.com/content/1350f0c8-deb3-4388-8b8a-cf6a1a93c0d4?syn-25a6b1a6=1",
+        "https://www.reuters.com/business/energy/china-signs-preliminary-deal-invest-15-bln-solar-wind-power-plants-turkey-2026-11-12/",
+        "https://www.elpasotimes.com/press-release/story/228560/news-lounge-comes-to-turkiye-fostering-dialogue-across-borders/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6No6xQAQ63RosiUECzKK0WAiajXH9QTLF6KSRvhz8OV2tBtaQx3RIxE4N1LU",
+      "image_credit": "Financial Times",
+      "news": [
+        {
+          "url": "https://www.ft.com/content/1350f0c8-deb3-4388-8b8a-cf6a1a93c0d4?syn-25a6b1a6=1",
+          "title": "Giant sinkholes tear through Turkey’s parched farmland",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6No6xQAQ63RosiUECzKK0WAiajXH9QTLF6KSRvhz8OV2tBtaQx3RIxE4N1LU"
+        },
+        {
+          "url": "https://www.reuters.com/business/energy/china-signs-preliminary-deal-invest-15-bln-solar-wind-power-plants-turkey-2026-11-12/",
+          "title": "China signs preliminary deal to invest $15 bln in solar and wind power plants in Turkey, minister says",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPb37s1h-lG0roby5svmWAxZpN_KB160t7Gmi-NQ0y4QpJBEBHsqJT_XbmXU4"
+        },
+        {
+          "url": "https://www.elpasotimes.com/press-release/story/228560/news-lounge-comes-to-turkiye-fostering-dialogue-across-borders/",
+          "title": "News Lounge Comes to Türkiye, Fostering Dialogue Across Borders",
+          "publisher": "El Paso Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5Kl9-H76jRqRAIOeAkQvpogQBuZM26FLEkIuYGP_wFNFmbXvyd9fjLYzp1Zw"
+        }
+      ]
+    },
+    {
+      "query": "unh stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T14:40:00Z",
+      "related_news_urls": [
+        "https://www.tokenpost.com/news/investing/58938",
+        "https://journalarta.com/en/2026/11/17/unitedhealth-unh-stock-rises-1-12-up-3-6-in-five-sessions/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTd2m2vfbeCcBCkKv3N5xfAh-kbTHxpPf_8fKpBGSf0NLU3LTwqDy2qbFxWD5s",
+      "image_credit": "www.tokenpost.com",
+      "news": [
+        {
+          "url": "https://www.tokenpost.com/news/investing/58938",
+          "title": "UNH Shares Closed at $412.02 on Nov. 16; After-Hours Price Was $410.66",
+          "publisher": "www.tokenpost.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTd2m2vfbeCcBCkKv3N5xfAh-kbTHxpPf_8fKpBGSf0NLU3LTwqDy2qbFxWD5s"
+        },
+        {
+          "url": "https://journalarta.com/en/2026/11/17/unitedhealth-unh-stock-rises-1-12-up-3-6-in-five-sessions/",
+          "title": "UnitedHealth (UNH) Stock: $412.02, Up 1.12% Nov 16",
+          "publisher": "JournalArta",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlDYUwIpg50xIgLS_FxWHd7wyOMScr2EK-_JtJTiCu-vtAaBo-MXlaBOQCoqs"
+        }
+      ]
+    },
+    {
+      "query": "hero world challenge",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T14:30:00Z",
+      "related_news_urls": [
+        "https://www.golfchannel.com/pga-tour/news/tiger-woods-returning-to-competition-at-hero-world-challenge",
+        "https://www.golfdigest.com/story/tiger-woods-return-2026-hero-world-challenge",
+        "https://people.com/tiger-woods-feeling-better-plans-golf-comeback-after-rollover-crash-and-rehab-12248909"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKGQvUYHCnhydJrKxqJhkDwmLKqYzB7qldLNpCHOnMsY4m1iqNpOhgB3EvMco",
+      "image_credit": "Golf Channel",
+      "news": [
+        {
+          "url": "https://www.golfchannel.com/pga-tour/news/tiger-woods-returning-to-competition-at-hero-world-challenge",
+          "title": "Tiger Woods returning to competition at Hero World Challenge",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKGQvUYHCnhydJrKxqJhkDwmLKqYzB7qldLNpCHOnMsY4m1iqNpOhgB3EvMco"
+        },
+        {
+          "url": "https://www.golfdigest.com/story/tiger-woods-return-2026-hero-world-challenge",
+          "title": "Tiger Woods to make return to competitive golf",
+          "publisher": "Golf Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3HiBGPnj_Q2GnimOg37vZCn6Bs4BIbsxNwNyeEWjv1jXJvGU4BLUfeo5w-Vo"
+        },
+        {
+          "url": "https://people.com/tiger-woods-feeling-better-plans-golf-comeback-after-rollover-crash-and-rehab-12248909",
+          "title": "Tiger Woods Says He’s ‘Training Quite a Bit’ as He Readies for Golf Comeback After Rollover Crash and Rehab",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGFoXi_Z3Hc6e3_Uy3ZKF06OeSVNgdzbkijCb42-JxCnZoe1RshRzBMlflrUk"
+        }
+      ]
+    },
+    {
+      "query": "melanie lynskey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T14:30:00Z",
+      "related_news_urls": [
+        "https://parade.com/entertainment/who-is-melanie-lynskey-married-to-inside-her-heartwarming-romance-with-jason-ritter"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl1P8kwMco8JvIaAa0aupdlAnfihLm5HXJPvjyO5g7lMcooR5MwdfNkCoUG5w",
+      "image_credit": "Parade Magazine",
+      "news": [
+        {
+          "url": "https://parade.com/entertainment/who-is-melanie-lynskey-married-to-inside-her-heartwarming-romance-with-jason-ritter",
+          "title": "Who Is Melanie Lynskey Married To? Inside Her Heartwarming Romance with Jason Ritter",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl1P8kwMco8JvIaAa0aupdlAnfihLm5HXJPvjyO5g7lMcooR5MwdfNkCoUG5w"
+        }
+      ]
+    },
+    {
+      "query": "xbox black friday sale 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T14:30:00Z",
+      "related_news_urls": [
+        "https://news.xbox.com/en-us/2026/11/16/xbox-black-friday-sale-2026/",
+        "https://www.purexbox.com/news/2026/11/xbox-announces-black-friday-sale-2026-reveals-nine-included-games",
+        "https://25yearslatersite.com/gaming/news/xbox-black-friday-sale-2026-leaks-early-with-3-519-listed-items/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcLmXwMa9Byi02RdByLab7I5FwSr5QIl6CluoRuyEvEKq-KrufjmFpe7i_YM",
+      "image_credit": "XBOX Wire",
+      "news": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/16/xbox-black-friday-sale-2026/",
+          "title": "XBOX Black Friday Sale Starts November 19 with Our Biggest Sale of the Year on Games, Accessories and More!",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcLmXwMa9Byi02RdByLab7I5FwSr5QIl6CluoRuyEvEKq-KrufjmFpe7i_YM"
+        },
+        {
+          "url": "https://www.purexbox.com/news/2026/11/xbox-announces-black-friday-sale-2026-reveals-nine-included-games",
+          "title": "Xbox Announces Black Friday Sale 2026, Reveals Nine Included Games",
+          "publisher": "Pure Xbox",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsksG8il-rwmB7N18mTaKWgfi2QyQRbcntFHYNzpQ3jMnmrNHNqNEusmJGF_Q"
+        },
+        {
+          "url": "https://25yearslatersite.com/gaming/news/xbox-black-friday-sale-2026-leaks-early-with-3-519-listed-items/",
+          "title": "Xbox Black Friday Sale 2026 Leak: 3,519 Items, Nov 19 Start",
+          "publisher": "25YearsLaterSite.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSjy7ct7qWFBu3vl6yM1j2M5CqLDkW-iZHHmhpwUHO1xnNcs7e4XKnSd5VHVY"
+        }
+      ]
+    },
+    {
+      "query": "nike stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T14:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/17/nike-investor-day-elliott-hill.html",
+        "https://finance.yahoo.com/markets/stocks/articles/nikes-turnaround-taking-longer-expected-202500494.html",
+        "https://www.reuters.com/business/retail-consumer/nike-face-doubts-about-cost-cuts-first-investor-gathering-years-2026-11-16/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOvTbX3HiIrgSx_GOUclu09o36H1-Fs6kLWQWuXnk6eM0Y9mRC1rcXliGSdDg",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/17/nike-investor-day-elliott-hill.html",
+          "title": "Nike hosts first investor day in 9 years as it tries to rightsize its business",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOvTbX3HiIrgSx_GOUclu09o36H1-Fs6kLWQWuXnk6eM0Y9mRC1rcXliGSdDg"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nikes-turnaround-taking-longer-expected-202500494.html",
+          "title": "Nike's Turnaround Is Taking Longer Than Expected. These 3 Stocks May Be Better Buys.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpXNYFPycJcSeI4Fz87KTzSgHraiRwpBipGcULBVnEZ7IekHfdp_eEwvUxeiI"
+        },
+        {
+          "url": "https://www.reuters.com/business/retail-consumer/nike-face-doubts-about-cost-cuts-first-investor-gathering-years-2026-11-16/",
+          "title": "Nike must defend strategy at first investor gathering in years",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCK3aAZSZHjZzceGCVsjOGubDM6kU4ikTOBwulzBYICGgArq7BaOmPjpKwrFQ"
+        }
+      ]
+    },
     {
       "query": "when is anthropic ipo",
       "approx_searches": "1000+",
       "published_at": "2026-11-17T14:10:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/17/anthropic-ipo-ai-venture-capital.html",
+        "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
         "https://www.wsj.com/finance/investing/the-investors-set-to-win-big-in-anthropics-ipo-a2fc795c",
         "https://www.bloomberg.com/opinion/articles/2026-11-17/anthropic-s-compute-strategy-exposes-its-biggest-ipo-vulnerability"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjZGLOevPZgoeUl74iX-vEen_YJ70Cnin5BLYBewfWCU2kjq6A4WUYnoRgW6Q",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWmF8kspClJlnBU-VXNRQ4rBTDaFxK2IIjgk2KPyDbeR1X_ymlyiIw3J65GNk",
       "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-ai-venture-capital.html",
-          "title": "Anthropic IPO: For hundreds of billions of dollars flowing into AI startups, a big debut is a must",
+          "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
+          "title": "Anthropic likely to price IPO above the current range of $70 to $78, sources tell CNBC",
           "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjZGLOevPZgoeUl74iX-vEen_YJ70Cnin5BLYBewfWCU2kjq6A4WUYnoRgW6Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWmF8kspClJlnBU-VXNRQ4rBTDaFxK2IIjgk2KPyDbeR1X_ymlyiIw3J65GNk"
         },
         {
           "url": "https://www.wsj.com/finance/investing/the-investors-set-to-win-big-in-anthropics-ipo-a2fc795c",
@@ -47,8 +233,8 @@
       "published_at": "2026-11-17T14:00:00Z",
       "related_news_urls": [
         "https://www.washingtonpost.com/dc-md-va/2026/11/13/spanberger-reverse-decision-participate-trumps-school-vouchers/",
-        "https://www.foxnews.com/video/6408494140112",
-        "https://jewishinsider.com/2026/11/gov-spanberger-reverses-decision-to-opt-virginia-into-federal-education-tax-credit/"
+        "https://jewishinsider.com/2026/11/gov-spanberger-reverses-decision-to-opt-virginia-into-federal-education-tax-credit/",
+        "https://virginiamercury.com/2026/11/16/spanberger-reverses-virginia-plan-to-participate-in-trumps-school-vouchers-more-headlines/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhWvopCwVOq2nTkm-U8chmUV4yg0FFMSAxz2ujF0JBqXsdI9qI8Dbn2-xR8_E",
       "image_credit": "The Washington Post",
@@ -61,18 +247,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhWvopCwVOq2nTkm-U8chmUV4yg0FFMSAxz2ujF0JBqXsdI9qI8Dbn2-xR8_E"
         },
         {
-          "url": "https://www.foxnews.com/video/6408494140112",
-          "title": "Erika Donalds slams Virginia Dem governor for reversing school voucher plan",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReIEQxx3fl3ip2JsLACxPKxRvceYI2v-nbptXycjXjNEKNZcduoFf7SO38noY"
-        },
-        {
           "url": "https://jewishinsider.com/2026/11/gov-spanberger-reverses-decision-to-opt-virginia-into-federal-education-tax-credit/",
           "title": "Gov. Spanberger reverses Youngkin's decision to opt Virginia into federal education tax credit",
           "publisher": "Jewish Insider",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQojkGQQAjKbcURetGjquHXeA6PtppwFGfUktBxqMObPCdiaNskLXMR2N3m-Yw"
+        },
+        {
+          "url": "https://virginiamercury.com/2026/11/16/spanberger-reverses-virginia-plan-to-participate-in-trumps-school-vouchers-more-headlines/",
+          "title": "Spanberger reverses Virginia plan to participate in Trump’s school vouchers, more headlines",
+          "publisher": "Virginia Mercury",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBDJcd772pqA8YV4xykanqz28V0Y5yDe_Gu-PU0ER-nzFEOsS_BLpIRtkw5-U"
         }
       ]
     },
@@ -112,50 +298,15 @@
       ]
     },
     {
-      "query": "malin akerman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T13:50:00Z",
-      "related_news_urls": [
-        "https://www.today.com/video/brittany-snow-malin-akerman-dish-on-hunting-wives-s2-273640005666",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/brittany-snow-disco-dress-brought-193051079.html",
-        "https://pagesix.com/2026/11/13/photos/malin-akerman-blows-a-kiss-on-the-hunting-wives-season-2-red-carpet-and-more-star-snaps/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWTpuL2IoaaDQw4Qo3iSp896zkoOG0D4RqTOE-cajP7c6YI4FoX7aNmjSPFd0",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/video/brittany-snow-malin-akerman-dish-on-hunting-wives-s2-273640005666",
-          "title": "Stars of ‘The Hunting Wives’ Talk Explosive New Season",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWTpuL2IoaaDQw4Qo3iSp896zkoOG0D4RqTOE-cajP7c6YI4FoX7aNmjSPFd0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/brittany-snow-disco-dress-brought-193051079.html",
-          "title": "Brittany Snow’s Disco Dress Brought a Healthy Dose of Sparkle to ‘The Hunting Wives’ Season Two Premiere",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2T5kaYOGil4ol2Oie9vdZCSjOS4T3NxluqXQ8sRWuAtxL-MNFUPxV6qSRYnE"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/13/photos/malin-akerman-blows-a-kiss-on-the-hunting-wives-season-2-red-carpet-and-more-star-snaps/",
-          "title": "Malin Akerman blows a kiss on the 'Hunting Wives' Season 2 red carpet and more star snaps",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxW3GNu8ddLUkvAQOWbJ1diI_xTMcVk7I0FE6Ca0Bgfb8BXUgtx32LjE9YwPk"
-        }
-      ]
-    },
-    {
       "query": "india vs pakistan",
       "approx_searches": "200+",
       "published_at": "2026-11-17T13:50:00Z",
       "related_news_urls": [
         "https://www.aljazeera.com/sports/liveblog/2026/11/17/india-vs-pakistan-live-saff-championship-final",
         "https://www.espn.com/espn/story/_/id/50502393/satwik-chirag-action-hong-kong-open-india-vs-pakistan-saff-championship-football-final-indian-sports-live-november-17",
-        "https://www.dawn.com/news/2044966"
+        "https://www.olympics.com/en/news/saff-championship-2026-football-final-india-vs-pakistan-live-streaming"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIFn2Twb1fCvNW2vSFof0l3gQJj2iosksQmckC8j9JnI2q3mJXMcCmH_Q5kRs",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnhDP6jO84ezAJvro0jlytNoq8yEZjETu3gUdrTv4KTxsxu8jMjokFPE2aL0U",
       "image_credit": "Al Jazeera",
       "news": [
         {
@@ -163,7 +314,7 @@
           "title": "India vs Pakistan LIVE: SAFF Championship final",
           "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIFn2Twb1fCvNW2vSFof0l3gQJj2iosksQmckC8j9JnI2q3mJXMcCmH_Q5kRs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnhDP6jO84ezAJvro0jlytNoq8yEZjETu3gUdrTv4KTxsxu8jMjokFPE2aL0U"
         },
         {
           "url": "https://www.espn.com/espn/story/_/id/50502393/satwik-chirag-action-hong-kong-open-india-vs-pakistan-saff-championship-football-final-indian-sports-live-november-17",
@@ -173,186 +324,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpai-FErPAz6cZX4j6iV1sc6jKC5OP9iGglOx_-zEw1xmBUBc1BjyxwvfixXQ"
         },
         {
-          "url": "https://www.dawn.com/news/2044966",
-          "title": "We know how to hurt India, says Pakistan coach Solano ahead of SAFF Championship final",
-          "publisher": "Dawn",
+          "url": "https://www.olympics.com/en/news/saff-championship-2026-football-final-india-vs-pakistan-live-streaming",
+          "title": "India vs Pakistan football, SAFF Championship 2026 final: Know IND vs PAK match time and where to watch live",
+          "publisher": "Olympics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnhZcqBZi3KBkccXGc2_tZk9YDSqUxxZB7GzhZketgAZTs84DjAqCuAp7RiFc"
-        }
-      ]
-    },
-    {
-      "query": "jodar",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T13:50:00Z",
-      "related_news_urls": [
-        "https://elpais.com/deportes/tenis/2026-11-17/arthur-fils-rafa-jodar-en-directo-el-partido-de-las-atp-finals-en-vivo.html",
-        "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-dia-3-previa-jodar-fils-zverev-shelton",
-        "https://www.elmundo.es/deportes/tenis/2026/11/16/6afb4683e9cf4af30d8b459e.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjJJKzCJXFzvW1a2F4wOGgOZ2wd83KV2Cln_22_wGRf-K9pL87VBYQyIYOQJw",
-      "image_credit": "EL PAÍS",
-      "news": [
-        {
-          "url": "https://elpais.com/deportes/tenis/2026-11-17/arthur-fils-rafa-jodar-en-directo-el-partido-de-las-atp-finals-en-vivo.html",
-          "title": "Arthur Fils-Rafa Jódar en directo, el partido de las ATP Finals en vivo",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjJJKzCJXFzvW1a2F4wOGgOZ2wd83KV2Cln_22_wGRf-K9pL87VBYQyIYOQJw"
-        },
-        {
-          "url": "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-dia-3-previa-jodar-fils-zverev-shelton",
-          "title": "Jódar busca seguir con opciones en Turín; Zverev y Shelton juegan por el liderato",
-          "publisher": "Nitto ATP Finals",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvOc-Gw8P9d4N9I-aK6dfX9S4jWWctzPYHuW1izsFUX2kXLS6v0lB0xacWXYk"
-        },
-        {
-          "url": "https://www.elmundo.es/deportes/tenis/2026/11/16/6afb4683e9cf4af30d8b459e.html",
-          "title": "Jódar se juega su supervivencia en las ATP Finals ante su víctima favorita",
-          "publisher": "El Mundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_i_4jF55T1AqSshOEDdhYdTlo8DIyMQA-VcChH1G3DOkXdv_0AE87XMuIW3Q"
-        }
-      ]
-    },
-    {
-      "query": "juez federal de los estados unidos",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T13:50:00Z",
-      "related_news_urls": [
-        "https://www.univision.com/noticias/inmigracion/juez-federal-anula-norma-que-limitaba-la-estadia-de-estudiantes-e-investigadores-extranjeros",
-        "https://www.eltiempo.com/mundo/eeuu-y-canada/juez-de-ee-uu-tumba-polemica-medida-de-donald-trump-que-restringia-visas-de-estudiantes-y-periodistas-estas-eran-las-condiciones-3601518",
-        "https://www.reforma.com/anulan-limites-de-trump-a-prensa-y-estudiantes-extranjeros/ar3315694"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_skpyFsU1jwqrrf01eciaez8_-UO7esXUB_AYJdGqTMGGxqt8TTh47VkPld4",
-      "image_credit": "Univision",
-      "news": [
-        {
-          "url": "https://www.univision.com/noticias/inmigracion/juez-federal-anula-norma-que-limitaba-la-estadia-de-estudiantes-e-investigadores-extranjeros",
-          "title": "Juez federal anula norma que limitaba la estadía de estudiantes e investigadores extranjeros",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_skpyFsU1jwqrrf01eciaez8_-UO7esXUB_AYJdGqTMGGxqt8TTh47VkPld4"
-        },
-        {
-          "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/juez-de-ee-uu-tumba-polemica-medida-de-donald-trump-que-restringia-visas-de-estudiantes-y-periodistas-estas-eran-las-condiciones-3601518",
-          "title": "Juez de EE. UU. tumba polémica medida de Donald Trump que restringía visas de estudiantes y periodistas: estas eran las condiciones",
-          "publisher": "El Tiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpOB5krTx6e0DFG9zwfJYAFDCi26eobfGAnJ_Q8yKtZzHKc71QGERmIOdOTes"
-        },
-        {
-          "url": "https://www.reforma.com/anulan-limites-de-trump-a-prensa-y-estudiantes-extranjeros/ar3315694",
-          "title": "Anulan límites de Trump a prensa y estudiantes extranjeros",
-          "publisher": "Reforma",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN-XbvKlTiUj0GY_yrJpSeMYtCvfCWDXMRev0wZ3qx-4i-WeYPd30fNxNQmyk"
-        }
-      ]
-    },
-    {
-      "query": "mcdonalds home alone meal",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T13:40:00Z",
-      "related_news_urls": [
-        "https://www.allrecipes.com/mcdonalds-home-alone-meal-12258400",
-        "https://people.com/macaulay-culkin-stars-in-mcdonalds-ad-for-home-alone-themed-meal-12258509",
-        "https://www.usatoday.com/story/food/dining/fast-food/2026/11/17/mcdonalds-home-alone-meal/92814012007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvkFcjNM7Johz1MwJLVjPhNmCThwu7rinit9TeRSbw-x6Z1bbvaDMR5ASO7Lg",
-      "image_credit": "Allrecipes",
-      "news": [
-        {
-          "url": "https://www.allrecipes.com/mcdonalds-home-alone-meal-12258400",
-          "title": "McDonald’s Is Releasing an All-New Holiday Meal for a Limited Time",
-          "publisher": "Allrecipes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvkFcjNM7Johz1MwJLVjPhNmCThwu7rinit9TeRSbw-x6Z1bbvaDMR5ASO7Lg"
-        },
-        {
-          "url": "https://people.com/macaulay-culkin-stars-in-mcdonalds-ad-for-home-alone-themed-meal-12258509",
-          "title": "Macaulay Culkin Reprises His Role as Kevin for the Launch of McDonald’s Home Alone Meal",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS_Z7D20PC7395L5or9G5U4OuqwM_AbLU8myWHSSgCSA_veGhZhQ-6Xr-pUBY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/food/dining/fast-food/2026/11/17/mcdonalds-home-alone-meal/92814012007/",
-          "title": "McDonald's 'Home Alone Meal' includes collectible socks, special menu items",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtJ5x8YEiLys1ydublzL9zB8I8hrW7lwnPOUnWfm_UufLGjzidfdFzhEioOcA"
-        }
-      ]
-    },
-    {
-      "query": "ohio powerball winners nov 16",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T13:30:00Z",
-      "related_news_urls": [
-        "https://www.wkyc.com/article/news/lottery/winning-powerball-numbers-76-million-jackpot-monday-november-16-results-ohio-lottery-winners/95-327e6d75-77e7-4cca-b891-4dfe907d0ddd",
-        "https://fox8.com/news/luck-strikes-in-ohio-with-multiple-powerball-winners/",
-        "https://www.khou.com/article/news/lottery/texas-powerball-winners-saturday-november-14/285-9b5a259c-a25d-42c7-ac27-6fe4598134de"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwz_Xouo5N-RjpdlCPz4j78KKTwsy2ce2lp4T41gqxDD7-BgvlkeM6CkxXhp4",
-      "image_credit": "WKYC",
-      "news": [
-        {
-          "url": "https://www.wkyc.com/article/news/lottery/winning-powerball-numbers-76-million-jackpot-monday-november-16-results-ohio-lottery-winners/95-327e6d75-77e7-4cca-b891-4dfe907d0ddd",
-          "title": "Winning Powerball numbers for the $76 million jackpot on Monday, Nov. 16, 2026: See all the prizes hit in Ohio",
-          "publisher": "WKYC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwz_Xouo5N-RjpdlCPz4j78KKTwsy2ce2lp4T41gqxDD7-BgvlkeM6CkxXhp4"
-        },
-        {
-          "url": "https://fox8.com/news/luck-strikes-in-ohio-with-multiple-powerball-winners/",
-          "title": "Luck strikes in Ohio with multiple Powerball winners",
-          "publisher": "FOX 8 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuCR5wcVArtUFJK13yR1WMa9nquj6MfcSm9V1l9fhALYSdPOX6mHF7SxbAvb8"
-        },
-        {
-          "url": "https://www.khou.com/article/news/lottery/texas-powerball-winners-saturday-november-14/285-9b5a259c-a25d-42c7-ac27-6fe4598134de",
-          "title": "Powerball in Texas: Here's what was won across the state in Saturday's drawing",
-          "publisher": "KHOU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFEeOsV18z-1J-ZCnPoWEkXsK-B7HERtU2ocWiU5CxkXLDFugLyhNMxkejYY"
-        }
-      ]
-    },
-    {
-      "query": "rob lowe",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T13:30:00Z",
-      "related_news_urls": [
-        "https://www.thefp.com/p/what-is-rob-lowe-thinking",
-        "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
-        "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYvFKAfiUv3HElGdMd8ECwqVFo-x3otnCDe6VazIMGXUtejy7WwX9FPplQqAU",
-      "image_credit": "The Free Press",
-      "news": [
-        {
-          "url": "https://www.thefp.com/p/what-is-rob-lowe-thinking",
-          "title": "What Is Rob Lowe Thinking?",
-          "publisher": "The Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYvFKAfiUv3HElGdMd8ECwqVFo-x3otnCDe6VazIMGXUtejy7WwX9FPplQqAU"
-        },
-        {
-          "url": "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
-          "title": "Ben Shapiro’s Screenwriting Debut Is Here. It’s … a Movie, All Right.",
-          "publisher": "Slate",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCVTW8UnpAcJPmDzc23Vb4BtyvcRL4gbgfYpsEkAehilr7uOBrOZ5XOIGf488"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
-          "title": "'Confession' Review: Rob Lowe, James Franco in Ben Shapiro-Penned Film",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuY2yAv6K5zMhFUSA5wM5WHxby9FhrtXubws4fqaP_BHPqMBqshuFU4xZUBiE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST0P0tNi7WDE-__EL0Xls6kaNVu5CFngFRVPLlAwR_KG3b0Dt-HXObDaubkaU"
         }
       ]
     }
