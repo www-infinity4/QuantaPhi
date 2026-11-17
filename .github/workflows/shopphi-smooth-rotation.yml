@@ -1,0 +1,27 @@
+name: ShopPhi gentle ad rotation
+on:
+  pull_request:
+    paths:
+      - shop-phi-switchboard.mjs
+      - shop-phi-switchboard.css
+      - test/shopphi-smooth-rotation.test.mjs
+      - .github/workflows/shopphi-smooth-rotation.yml
+  push:
+    branches: [main]
+    paths:
+      - shop-phi-switchboard.mjs
+      - shop-phi-switchboard.css
+      - test/shopphi-smooth-rotation.test.mjs
+permissions:
+  contents: read
+jobs:
+  shopphi-smooth-rotation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Targeted ShopPhi smooth rotation regression
+        run: node --test test/shopphi-smooth-rotation.test.mjs
