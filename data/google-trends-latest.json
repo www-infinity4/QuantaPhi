@@ -3,41 +3,321 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T19:31:15.292962Z",
+  "checked_at": "2026-11-17T20:01:23.106400Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "hayden panettiere",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:10:00Z",
+      "query": "paris hilton",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T19:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/hayden-panettiere-mom-speaks-again-134108638.html",
-        "https://www.rollingstone.com/culture/culture-news/hayden-panettiere-mother-vogel-brian-hickerson-claims-1235659706/",
-        "https://www.usatoday.com/story/entertainment/movies/2026/11/17/hayden-panettiere-death-mom-funeral-brian-hickerson/92823601007/"
+        "https://nypost.com/2026/11/16/us-news/paris-hilton-makes-dc-return-to-fight-against-deepfake-porn-with-aoc-demanding-justice-for-survivors/",
+        "https://endsexualexploitation.org/articles/congress-should-give-deepfake-pornography-survivors-a-path-to-justice-by-passing-defiance-act/",
+        "https://www.cosmopolitan.com/style-beauty/fashion/a74444439/paris-hilton-old-navy-exclusive-jingle-jammies/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtzS3N2lsZWA0aAs9jbEJPAI-fzcEL52eqWHVX_HOfkBYB-kMXSOU53k0tY2M",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4LW6ZCNnO0z5CY14M0JjlUn4xnpIeS-xSw1fth-xwoxM5P8Shjw_I6K13B0",
+      "image_credit": "New York Post",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/hayden-panettiere-mom-speaks-again-134108638.html",
-          "title": "Hayden Panettiere’s mom speaks out again in new interview, blames actress’ ex Brian Hickerson for their estrangement",
+          "url": "https://nypost.com/2026/11/16/us-news/paris-hilton-makes-dc-return-to-fight-against-deepfake-porn-with-aoc-demanding-justice-for-survivors/",
+          "title": "Paris Hilton makes DC return to fight against deepfake porn with AOC, demanding ‘justice’ for survivors",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4LW6ZCNnO0z5CY14M0JjlUn4xnpIeS-xSw1fth-xwoxM5P8Shjw_I6K13B0"
+        },
+        {
+          "url": "https://endsexualexploitation.org/articles/congress-should-give-deepfake-pornography-survivors-a-path-to-justice-by-passing-defiance-act/",
+          "title": "Congress Should Give Deepfake Pornography Survivors a Path to Justice by Passing DEFIANCE Act",
+          "publisher": "NCOSE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIoSfR_3vvVAtzXEivYRXP9PtARlz9VZSIW0Yz0AfV8X8PiqjKpbPcyY3kzP8"
+        },
+        {
+          "url": "https://www.cosmopolitan.com/style-beauty/fashion/a74444439/paris-hilton-old-navy-exclusive-jingle-jammies/",
+          "title": "Paris Hilton Just Made Old Navy Jingle Jammies So Chic With an Exclusive Pink Set—Shop It Here",
+          "publisher": "Cosmopolitan",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVfL-x7ZL77sGxYWabCYIinaWGE7XHJkf4kj50Hlakys6U2ez69ian2LkxySQ"
+        }
+      ]
+    },
+    {
+      "query": "pentagon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/business/aerospace-defense/pentagon-fails-ninth-straight-audit-despite-progress-organizing-finances-2026-11-16/",
+        "https://www.war.gov/News/Releases/Release/Article/4649444/new-dow-audit-progress-marks-breakthrough-toward-a-department-wide-clean-opinion/",
+        "https://thehill.com/policy/defense/6224597-pentagon-fails-ninth-audit/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRn7oTVaBa9aiuQTrdaPf1sduV-wfb06U5sJYdHkEvtlzs5hHTSA7yS_Z7fA44",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/business/aerospace-defense/pentagon-fails-ninth-straight-audit-despite-progress-organizing-finances-2026-11-16/",
+          "title": "Pentagon fails ninth straight audit despite progress in organizing finances",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRn7oTVaBa9aiuQTrdaPf1sduV-wfb06U5sJYdHkEvtlzs5hHTSA7yS_Z7fA44"
+        },
+        {
+          "url": "https://www.war.gov/News/Releases/Release/Article/4649444/new-dow-audit-progress-marks-breakthrough-toward-a-department-wide-clean-opinion/",
+          "title": "New DoW Audit Progress Marks Breakthrough Toward a Department-Wide Clean Opinion",
+          "publisher": "U.S. Department of War (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQMCxZt0NGP-sIryGOWQzyD4Iy2unhyLr1sQVqDQ4JbETP2zwAgSg6D6SCv08"
+        },
+        {
+          "url": "https://thehill.com/policy/defense/6224597-pentagon-fails-ninth-audit/",
+          "title": "Pentagon fails ninth financial audit in a row",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EA07ggUjI03kxqG-EMFJ41WbGg3YCUHh8PWaXve5bwTFPWOf4CrZtCG6wdg"
+        }
+      ]
+    },
+    {
+      "query": "players era 8",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50505898/players-era-8-matchups-analysis",
+        "https://www.ncaa.com/news/basketball-men/article/2026-11-17/2026-players-era-8-bracket-schedule-scores",
+        "https://www.si.com/college/auburn/basketball/how-to-watch-auburn-basketball-s-players-era-8-tournament-tv-schedule"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4LWNGn4o00jAPjCSa1uusLeJHttyRqpWec-EOQW9scDj62w_SNg1AznTaZTg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50505898/players-era-8-matchups-analysis",
+          "title": "How the teams match up in the first round of the Players Era 8",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4LWNGn4o00jAPjCSa1uusLeJHttyRqpWec-EOQW9scDj62w_SNg1AznTaZTg"
+        },
+        {
+          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-17/2026-players-era-8-bracket-schedule-scores",
+          "title": "2026 Players Era 8: Bracket, schedule, scores",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzX6kT5Y2MBjvIYTjV_R6G8Yzc1b--634l3rob17aHMopO0fro0zDUCaFHB6s"
+        },
+        {
+          "url": "https://www.si.com/college/auburn/basketball/how-to-watch-auburn-basketball-s-players-era-8-tournament-tv-schedule",
+          "title": "How to Watch Auburn Basketball's Players Era 8 Tournament, TV, Schedule",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0vLM5zhSfVL3_V_WS8r73s8NFrLO3hIKOcuUIUU___62hShSEe71TUII1lHY"
+        }
+      ]
+    },
+    {
+      "query": "alexis bledel",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:30:00Z",
+      "related_news_urls": [
+        "https://ew.com/new-gilmore-girls-doc-claims-alexis-bledel-didnt-want-to-be-there-as-she-struggled-to-adjust-12259703",
+        "https://www.yahoo.com/entertainment/tv/articles/gilmore-girls-alum-exposed-show-180845417.html",
+        "https://decider.com/2026/11/17/gilmore-girls-documentary-alexis-bledel-struggled-long-filming-hours/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe9MNckd082UkC54mOROgQwnamsFi5ARhonOxIOqJ1RejadA95HCnXtYkn6Pw",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/new-gilmore-girls-doc-claims-alexis-bledel-didnt-want-to-be-there-as-she-struggled-to-adjust-12259703",
+          "title": "‘Gilmore Girls’ doc claims Alexis Bledel ‘didn’t want to be there’ after being cast as a teen",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe9MNckd082UkC54mOROgQwnamsFi5ARhonOxIOqJ1RejadA95HCnXtYkn6Pw"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/gilmore-girls-alum-exposed-show-180845417.html",
+          "title": "Gilmore Girls Alum Exposed Show’s Toxic Work Culture ‘Grueling’ Alexis Bledel",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtzS3N2lsZWA0aAs9jbEJPAI-fzcEL52eqWHVX_HOfkBYB-kMXSOU53k0tY2M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSW-GwaOGF9uFqzCQ8tcPp16OxTXQMTa2yMPISqo-JrUokm220E56PjwKIym98"
         },
         {
-          "url": "https://www.rollingstone.com/culture/culture-news/hayden-panettiere-mother-vogel-brian-hickerson-claims-1235659706/",
-          "title": "Hayden Panettiere’s Mother Blames Brian Hickerson For Star’s Death",
-          "publisher": "Rolling Stone",
+          "url": "https://decider.com/2026/11/17/gilmore-girls-documentary-alexis-bledel-struggled-long-filming-hours/",
+          "title": "‘Gilmore Girls’ star Alexis Bledel struggled with ‘grueling’ filming hours: ‘She didn’t want to be there’",
+          "publisher": "Decider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRwxD4al4CPbRuYgllqwm11gwHw-14NChZdrNMeyfGZswEZ1WFOxwrM6w7pvc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUuD52AMVhRnghzsbeDaX9dt-kSKOQdHSOrvfX7UHOQhYWMxKKibtC8oTtPYM"
+        }
+      ]
+    },
+    {
+      "query": "bosnia y herzegovina - rumania",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:30:00Z",
+      "related_news_urls": [
+        "https://www.sportytrader.es/pronosticos/bosnia-y-herzegovina-rumania-387099/",
+        "https://www.sofascore.com/es/news/bosnia-vs-rumania-previa-de-la-uefa-nations-league",
+        "https://bolavip.com/pe/futbol-internacional/alineaciones-de-bosnia-y-herzegovina-y-rumania-por-la-liga-de-naciones-formaciones-probables"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkys4reoP9ElwRf9bDR4ul5Cijq7lwohsQ8N5ud1SQQPHs4geXmCalQNS1zso",
+      "image_credit": "SportyTrader",
+      "news": [
+        {
+          "url": "https://www.sportytrader.es/pronosticos/bosnia-y-herzegovina-rumania-387099/",
+          "title": "Pronóstico Bosnia Y Herzegovina - Rumania - Nations League",
+          "publisher": "SportyTrader",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkys4reoP9ElwRf9bDR4ul5Cijq7lwohsQ8N5ud1SQQPHs4geXmCalQNS1zso"
         },
         {
-          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/17/hayden-panettiere-death-mom-funeral-brian-hickerson/92823601007/",
-          "title": "Hayden Panettiere's mom blames star's ex, Brian Hickerson, for her death",
-          "publisher": "USA Today",
+          "url": "https://www.sofascore.com/es/news/bosnia-vs-rumania-previa-de-la-uefa-nations-league",
+          "title": "Bosnia vs Rumanía: previa de la UEFA Nations League",
+          "publisher": "Sofascore",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiiMsXzQiu0HuBbDRlnIidtP9jYiHYDwPHx4DWBDWMDV4P2IG60SlMk7rWrxE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0zaceiadvok89KbFeyYbIbQJOF1MLfzVXMuUi61fumsQM1Vgj-wBz0qA6plY"
+        },
+        {
+          "url": "https://bolavip.com/pe/futbol-internacional/alineaciones-de-bosnia-y-herzegovina-y-rumania-por-la-liga-de-naciones-formaciones-probables",
+          "title": "Alineaciones de Bosnia y Herzegovina y Rumania por la Liga de Naciones: formaciones confirmadas",
+          "publisher": "Bolavip Perú",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7hj4jwXETDYYvrOKKJJ_J4in2Zr4COch-HM7T7aXoxqX58kfld1WVzWUQRyc"
+        }
+      ]
+    },
+    {
+      "query": "polonia - suecia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:30:00Z",
+      "related_news_urls": [
+        "https://www.sportytrader.es/pronosticos/polonia-suecia-387152/",
+        "https://www.mundodeportivo.com/futbol/uefa-nations-league/20261117/1004250461/ucrania-georgia-directo-nations-league.html",
+        "https://www.goal.com/es/noticias/polonia-vs-suecia-en-directo-hoy-donde-ver-el-partido-por-television-y-en-streaming/bltba967f0e79a4c80f"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxGBrziat1609fChHckqCoy-tqHxSwM-5ZiILQMHFxyrGDbsnfvR1ZlSIHs8Y",
+      "image_credit": "SportyTrader",
+      "news": [
+        {
+          "url": "https://www.sportytrader.es/pronosticos/polonia-suecia-387152/",
+          "title": "Pronóstico Polonia - Suecia - Nations League",
+          "publisher": "SportyTrader",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxGBrziat1609fChHckqCoy-tqHxSwM-5ZiILQMHFxyrGDbsnfvR1ZlSIHs8Y"
+        },
+        {
+          "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20261117/1004250461/ucrania-georgia-directo-nations-league.html",
+          "title": "Ucrania - Georgia, en directo | Nations League",
+          "publisher": "Mundo Deportivo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLczKlePVyyoFdk95CtLnIQxQHRuHc8pw9_vq7MmhFG91_o1AoVqzUa7gYZv0"
+        },
+        {
+          "url": "https://www.goal.com/es/noticias/polonia-vs-suecia-en-directo-hoy-donde-ver-el-partido-por-television-y-en-streaming/bltba967f0e79a4c80f",
+          "title": "Polonia vs Suecia, en directo hoy: ¿Dónde ver el partido por televisión y en streaming?",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_zweKYsYR7Bz97Jil3iS7o6SFavW3pJUEflMVaSlVgYc2CXvdhp5Fxe6nY-I"
+        }
+      ]
+    },
+    {
+      "query": "jj gabriel",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50512542/jj-gabriel-man-united-real-madrid",
+        "https://www.skysports.com/football/news/13613361/jj-gabriel-transfer-news-manchester-united-teenager-announces-departure-from-club-amid-real-madrid-agreement",
+        "https://sports.yahoo.com/articles/real-madrid-finalise-signing-manchester-190700282.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBJ-jcwM-31mOKTbNt4s_teht1nX4BaYL_fOzLxJVBvm8jDJSzoHC0k66woM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50512542/jj-gabriel-man-united-real-madrid",
+          "title": "JJ Gabriel confirms Man United exit as Real Madrid transfer nears",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBJ-jcwM-31mOKTbNt4s_teht1nX4BaYL_fOzLxJVBvm8jDJSzoHC0k66woM"
+        },
+        {
+          "url": "https://www.skysports.com/football/news/13613361/jj-gabriel-transfer-news-manchester-united-teenager-announces-departure-from-club-amid-real-madrid-agreement",
+          "title": "JJ Gabriel transfer news: Manchester United teenager announces departure from club amid Real Madrid agreement",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN5N5rskwvwWCuBiOBnDAQC85yHuK3eMP0TMRDwRiUcF2JFFc6QeixmwA_Qqw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/real-madrid-finalise-signing-manchester-190700282.html",
+          "title": "Real Madrid to finalise signing of Manchester United academy prodigy JJ Gabriel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLDd9DKk51PRK7IIJCXM5FKldJOSyBRHKw3vjPErF1aHsHxefQgUEsOuxJbkY"
+        }
+      ]
+    },
+    {
+      "query": "players era tournament",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:30:00Z",
+      "related_news_urls": [
+        "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
+        "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
+        "https://www.cleveland.com/tv/2026/11/where-to-watch-notre-dame-vs-florida-basketball-for-free-today.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU",
+      "image_credit": "Florida Gators",
+      "news": [
+        {
+          "url": "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
+          "title": "Players Era 8: No. 1 Florida vs Notre Dame (Tuesday, 4:30 pm)",
+          "publisher": "Florida Gators",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
+          "title": "Florida vs. Notre Dame prediction, odds: 2026 Players Era 8 picks for Tuesday, Nov. 17 by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN3iRc166heYtuBI1p2_lhDYllmtlNUll6r7hbRaGx8GUbTlnvwgNt4U0N9lQ"
+        },
+        {
+          "url": "https://www.cleveland.com/tv/2026/11/where-to-watch-notre-dame-vs-florida-basketball-for-free-today.html",
+          "title": "Where to watch Notre Dame vs Florida basketball for free today",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTstFkXF8xmuoj9PdW_YLMRtzCppY4iPfCGZH5jBdMa4n2vVk4A6NCjKDf0FSk"
+        }
+      ]
+    },
+    {
+      "query": "niger vs morocco",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:20:00Z",
+      "related_news_urls": [
+        "https://barlamantoday.com/2026/11/17/morocco-meets-niger-again-in-rabat-with-2027-afcon-qualification-in-sight/",
+        "https://www.thenationalnews.com/sport/football/2026/11/17/achraf-hakimi-hailed-as-best-right-back-in-history-as-he-hits-new-highs-for-psg-and-morocco/",
+        "https://sportnewsafrica.com/en/news/atlas-lions-barometer-hakimi-and-yassine-in-form/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVIafZR3_6soAj3wLwMtDiQYJeBhI-E9KgNU9wSJ9F1NGiJLeBLYOVj3Pz5RE",
+      "image_credit": "Barlaman Today",
+      "news": [
+        {
+          "url": "https://barlamantoday.com/2026/11/17/morocco-meets-niger-again-in-rabat-with-2027-afcon-qualification-in-sight/",
+          "title": "Morocco Meets Niger Again in Rabat With 2027 AFCON Qualification in Sight",
+          "publisher": "Barlaman Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVIafZR3_6soAj3wLwMtDiQYJeBhI-E9KgNU9wSJ9F1NGiJLeBLYOVj3Pz5RE"
+        },
+        {
+          "url": "https://www.thenationalnews.com/sport/football/2026/11/17/achraf-hakimi-hailed-as-best-right-back-in-history-as-he-hits-new-highs-for-psg-and-morocco/",
+          "title": "Achraf Hakimi hailed as 'best right-back in history' as he hits new highs for PSG and Morocco",
+          "publisher": "www.thenationalnews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR0cHO7fZ0M3CQk-tokQCWtbQ7hAod9qCWo6rJsifio18VZFrwZ1I_KENILLg"
+        },
+        {
+          "url": "https://sportnewsafrica.com/en/news/atlas-lions-barometer-hakimi-and-yassine-in-form/",
+          "title": "Atlas Lions barometer: Hakimi and Yassine in form · SNA",
+          "publisher": "Sport News Africa",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGVI1R-rRUHqywQIZP3IBpt2pCqYX92Y9jxK_1cLAM9RN8T050CSdaFU_H9sU"
         }
       ]
     },
@@ -73,286 +353,6 @@
           "publisher": "Seehafer News",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT91VbNsp25ZMawO_l2JGhC4oUghmoNf8kheuU1DMXus27RoygEdriYaaN18T4"
-        }
-      ]
-    },
-    {
-      "query": "live tv",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/roku-quietly-adds-five-more-164349470.html",
-        "https://www.pocket-lint.com/roku-channel-just-added-8-more-free-live-tv-channels/",
-        "https://cordcuttersnews.com/roku-adds-8-new-free-live-channels-on-roku-tvs-roku-players/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwkVDKrjQkbA_gHAcu30aLMfcEn38ULB_4qPsFB5428RAyOEBn8ZjxD3jRPFs",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/roku-quietly-adds-five-more-164349470.html",
-          "title": "Roku Quietly Adds Five More Free Channels",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwkVDKrjQkbA_gHAcu30aLMfcEn38ULB_4qPsFB5428RAyOEBn8ZjxD3jRPFs"
-        },
-        {
-          "url": "https://www.pocket-lint.com/roku-channel-just-added-8-more-free-live-tv-channels/",
-          "title": "The Roku Channel just added 8 more free live TV channels",
-          "publisher": "Pocket-lint",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeNyopTlFRSXxFYLJUMhaJVANjkmlyfDVrWOGEKWT4wBp7nPMZGxu7yDqZACg"
-        },
-        {
-          "url": "https://cordcuttersnews.com/roku-adds-8-new-free-live-channels-on-roku-tvs-roku-players/",
-          "title": "Roku Adds 8 New Free Live Channels on Roku TVs & Roku Players",
-          "publisher": "| Cord Cutters News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsOLRsiBvkfcQJknarMYie6jdD8XG7Nmr7SfmN-mW69wvDqxofE0bIAzPpw2s"
-        }
-      ]
-    },
-    {
-      "query": "hungary vs northern ireland",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cwq6e479rygjt",
-        "https://www.colerainenow.co.uk/sport/uefa-nations-league-9356171",
-        "https://www.irishnews.com/sport/soccer/hopefully-well-have-a-stronger-referee-tomorrow-night-ni-boss-michael-oneill-asking-for-fair-play-in-hungary-N7GRPMN7FJC5PNEY7JROMDW5FU/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSesYpoWSIcu6QMTp_wbEaR-K5jP0lG1chNpSG2k3Ze0XVY46XXpdpwbeyDd28",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cwq6e479rygjt",
-          "title": "Nations League: Northern Ireland face Hungary in final group game - watch from 19:15 GMT",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSesYpoWSIcu6QMTp_wbEaR-K5jP0lG1chNpSG2k3Ze0XVY46XXpdpwbeyDd28"
-        },
-        {
-          "url": "https://www.colerainenow.co.uk/sport/uefa-nations-league-9356171",
-          "title": "Northern Ireland can win group if they avoid defeat in Hungarian capital",
-          "publisher": "www.colerainenow.co.uk",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHsmiZTkbNA3MMrP5qBniwXpFZnU_XPk9WJxof4vSpAJTytMIOhNhuxjVVos8"
-        },
-        {
-          "url": "https://www.irishnews.com/sport/soccer/hopefully-well-have-a-stronger-referee-tomorrow-night-ni-boss-michael-oneill-asking-for-fair-play-in-hungary-N7GRPMN7FJC5PNEY7JROMDW5FU/",
-          "title": "‘Hopefully we’ll have a stronger referee tomorrow night’: NI boss Michael O’Neill asking for ‘fair play’ in Hungary",
-          "publisher": "The Irish News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7A_QaLvEro-FX-60qI7yyBBiESbaUxxzcxNMWf6iUCBm4s0DOWqoxQadPdv0"
-        }
-      ]
-    },
-    {
-      "query": "rutgers vs houston",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T19:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/rutgers/article/rutgers-vs-houston-preview-how-to-watch-tv-radio-live-thread-292849365/",
-        "https://www.onthebanks.com/rutgers-mens-basketball/58325/rutgers-mens-basketball-heads-west-for-2026-players-era-festival",
-        "https://www.cbssports.com/betting/news/houston-rutgers-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVtDhPC30Cm1PB9l8ZCVcQGEgT1d6mh7NUFvAlk4qcC7vhZa2JRy2mGS4mkAI",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/rutgers/article/rutgers-vs-houston-preview-how-to-watch-tv-radio-live-thread-292849365/",
-          "title": "Rutgers vs Houston Preview: How to watch, TV, radio, live thread",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVtDhPC30Cm1PB9l8ZCVcQGEgT1d6mh7NUFvAlk4qcC7vhZa2JRy2mGS4mkAI"
-        },
-        {
-          "url": "https://www.onthebanks.com/rutgers-mens-basketball/58325/rutgers-mens-basketball-heads-west-for-2026-players-era-festival",
-          "title": "Rutgers Men’s Basketball Heads West For 2026 Players Era Festival",
-          "publisher": "On the Banks",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWoZA3sHjHPuD36dS8xuHIhh2DX8ONiPlATSsgYoF1v-ARnNDTDLZ_ua5VygQ"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/houston-rutgers-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
-          "title": "Houston vs. Rutgers prediction, odds: 2026 Players Era 8 picks for Tuesday, Nov. 17 by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAI9IJKbJw4Yew2Kq-cmxcsmhdEh8wcgH4hOV1jVrSn1ZwuHQ1T77qZUWAmjI"
-        }
-      ]
-    },
-    {
-      "query": "browns raiders",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-17T19:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-nfls-week-12-flex-decision-is-looming",
-        "https://sports.yahoo.com/articles/nfl-bumps-struggling-patriots-chargers-185021151.html",
-        "https://www.clevelandbrowns.com/news/browns-vs-raiders-flexed-into-sunday-night-football-in-week-12"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlp-nHw5gVpc7LZNAwmtnYyqzJzVkNVrA8G-OG3lr4j-M70sab8CPGHXSqb6k",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-nfls-week-12-flex-decision-is-looming",
-          "title": "The NFL’s Week 12 flex decision is looming",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlp-nHw5gVpc7LZNAwmtnYyqzJzVkNVrA8G-OG3lr4j-M70sab8CPGHXSqb6k"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/nfl-bumps-struggling-patriots-chargers-185021151.html",
-          "title": "NFL bumps struggling Patriots, Chargers out of 'Week 12' SNF slot",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStEFdBW1tQJHOqFmH2hNFXdzAK5zljjS-_ZQLyLN6xRKEnzNVLVD1boIvS8sU"
-        },
-        {
-          "url": "https://www.clevelandbrowns.com/news/browns-vs-raiders-flexed-into-sunday-night-football-in-week-12",
-          "title": "Browns vs. Raiders flexed into Sunday Night Football in Week 12",
-          "publisher": "Cleveland Browns",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzfGDI9losrgmVU5W1YenGA7VRiyEIowN-XwcDpze5t5G6Y22ExRxZQGJK2L0"
-        }
-      ]
-    },
-    {
-      "query": "ireland vs kosovo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmy974v0edx8t",
-        "https://www.rte.ie/sport/soccer/2026/1116/1599361-republic-of-ireland-v-kosovo-all-you-need-to-know/",
-        "https://www.independent.ie/sport/soccer/international-soccer/daniel-mcdonnell-ireland-need-conviction-rather-than-chaos-against-kosovo-to-finish-year-of-missed-opportunities-on-a-high/a/164633729.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVq9CoBoLfmJ9ZXYqQ1_KWWrZBmv9g3uS7XszWRmTLkDqaOeRNJGk2KFcf5D0",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmy974v0edx8t",
-          "title": "Republic of Ireland vs Kosovo: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVq9CoBoLfmJ9ZXYqQ1_KWWrZBmv9g3uS7XszWRmTLkDqaOeRNJGk2KFcf5D0"
-        },
-        {
-          "url": "https://www.rte.ie/sport/soccer/2026/1116/1599361-republic-of-ireland-v-kosovo-all-you-need-to-know/",
-          "title": "Republic of Ireland v Kosovo: All you need to know",
-          "publisher": "RTE.ie",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvIyoMaxHvVM8BnC-A3P9guQLZ0B3uVenUfB9CSmYoCw5ZPhr717wTQqccj0U"
-        },
-        {
-          "url": "https://www.independent.ie/sport/soccer/international-soccer/daniel-mcdonnell-ireland-need-conviction-rather-than-chaos-against-kosovo-to-finish-year-of-missed-opportunities-on-a-high/a/164633729.html",
-          "title": "Ireland v Kosovo preview: Ireland need conviction rather than chaos to finish year of missed opportunities on a high",
-          "publisher": "Irish Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuewVJjcoH_z08hJqE711PTaNE62tzK5EACv_U2x6Qg_0M2QLijkILczfTH0g"
-        }
-      ]
-    },
-    {
-      "query": "wales vs portugal",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-17T18:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/ckvg29vler1no",
-        "https://www.theguardian.com/football/live/2026/nov/17/wales-v-portugal-nations-league-football-live-score-updates",
-        "https://www.espn.com/soccer/story/_/id/50503039/craig-bellamy-cristiano-ronaldo"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOETFHFM_P46TXSbjsT3_HKZ0bccN8i6kkxLjerrXIkCjvA2QiGQyFvcCDb3s",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/articles/ckvg29vler1no",
-          "title": "Wales v Portugal: Portugal without Cristiano Ronaldo face a post-Gareth Bale Wales",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOETFHFM_P46TXSbjsT3_HKZ0bccN8i6kkxLjerrXIkCjvA2QiGQyFvcCDb3s"
-        },
-        {
-          "url": "https://www.theguardian.com/football/live/2026/nov/17/wales-v-portugal-nations-league-football-live-score-updates",
-          "title": "Wales v Portugal: Nations League football – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQS3EwF2lYVyudlYtN9cYeXn6IbTwNSPcx1X5JFWDO08XB3Xx0UmRpUd0qVtU"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50503039/craig-bellamy-cristiano-ronaldo",
-          "title": "Wales boss Craig Bellamy urges fans to 'just celebrate' Cristiano Ronaldo after Portugal exit",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRKslvvQFls-jBdVe99vl_qfWbrQFLArRFSRTks-LTO5QnPDOJfEcbaKRgvI"
-        }
-      ]
-    },
-    {
-      "query": "dinamarca - noruega",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T18:50:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/nota/_/id/17506096/dinamarca-vs-noruega-nations-league-equipo-fecha-hora-y-tv-en-vivo",
-        "https://www.mundodeportivo.com/futbol/atletico-madrid/20261117/1004251984/duelo-colchonero-plaza-cuartos-nations-league.html",
-        "https://es-us.noticias.yahoo.com/deportes/m%C3%A1quina-goles-brian-riemer-avisa-080731403.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfynIVYh2GrxgPAORkO_BqhTN5hJ0oUx5l0Aamtjibj8Lf2zrBlgGdySomy64",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/nota/_/id/17506096/dinamarca-vs-noruega-nations-league-equipo-fecha-hora-y-tv-en-vivo",
-          "title": "Cuándo juegan Dinamarca vs. Noruega por la Nations League: equipo, fecha, hora y TV en vivo",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfynIVYh2GrxgPAORkO_BqhTN5hJ0oUx5l0Aamtjibj8Lf2zrBlgGdySomy64"
-        },
-        {
-          "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20261117/1004251984/duelo-colchonero-plaza-cuartos-nations-league.html",
-          "title": "Duelo colchonero por una plaza en los cuartos de la Nations League",
-          "publisher": "Mundo Deportivo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5M1VvkYwpOinZlclb6PnxiltBevg6ppv-J8rVQonwyPvyxzqaVtpbFMg4cbg"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/m%C3%A1quina-goles-brian-riemer-avisa-080731403.html",
-          "title": "«Tenemos nuestra propia máquina de hacer goles»: Brian Riemer avisa a Erling Haaland y Noruega antes del duelo de Dinamarca en la Liga de Naciones",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXDBpldV3NRh8srX2t5g3sYhIHXxJAJo88o4LxOFtCQmJRVvq3Cfbf3-iRsHM"
-        }
-      ]
-    },
-    {
-      "query": "bosnia and herzegovina vs romania",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T18:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/ckd71xvg3e8nt",
-        "https://www.sportsgambler.com/betting-tips/football/bosnia-herzegovina-vs-romania-prediction-lineups-odds-2026-11-17/",
-        "https://sarajevotimes.com/barbarez-we-want-to-conclude-the-year-with-a-victory-against-romania/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/ckd71xvg3e8nt",
-          "title": "Bosnia-Herzegovina vs Romania: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/football/bosnia-herzegovina-vs-romania-prediction-lineups-odds-2026-11-17/",
-          "title": "Bosnia-Herzegovina vs Romania Prediction, Betting Tips, Lineups & Odds | 17 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQje20FYWgbystDKwJ3TcIgX51lsXA0JV-JOYo_oEHYt5EWSlAuPjiko61oHyY"
-        },
-        {
-          "url": "https://sarajevotimes.com/barbarez-we-want-to-conclude-the-year-with-a-victory-against-romania/",
-          "title": "Barbarez: We want to conclude the Year with a Victory against Romania",
-          "publisher": "Sarajevo Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShSlErV63f9m3yDtdfcbWkO0b9Jfiwp1mi6GLq5dbILU-wH69xYTe847rFmFU"
         }
       ]
     }
