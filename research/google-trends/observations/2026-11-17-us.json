@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T02:31:15.738271Z",
+  "checked_at": "2026-11-17T03:01:00.232314Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "baltimore",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T02:10:00Z",
+      "query": "josh cuevas",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-17T02:40:00Z",
       "related_news_urls": [
-        "https://www.wbaltv.com/article/park-heights-beaufort-avenue-shooting-baltimore/74443864",
-        "https://foxbaltimore.com/news/local/police-investigation-central-park-heights-neighborhood-baltimore-maryland",
-        "https://www.wbal.com/baltimore-police-responding-to-shooting-with-multiple-victims-in-central-park-heights"
+        "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-november-14-2026",
+        "https://www.washingtonpost.com/sports/2026/11/14/caps-fall-7-4-rematch-with-new-jersey-devils/",
+        "https://www.espn.com/nhl/recap/_/gameId/401892714"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ85XUwaQ-nmMYGujdViN6pNo4p8SWMWVJDpDnskQxTOoORn0CspwcqyXOw1FI",
-      "image_credit": "WBAL-TV",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl7Qjbgxi5e3gLiSIbUvGnYpb5reYU9Ye4-45VJ8f-03TsfhYLLENO_c3mXFI",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.wbaltv.com/article/park-heights-beaufort-avenue-shooting-baltimore/74443864",
-          "title": "Quadruple shooting reported in Park Heights",
-          "publisher": "WBAL-TV",
+          "url": "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-november-14-2026",
+          "title": "Hellebuyck makes 43 saves, Devils push past Capitals to stay hot",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ85XUwaQ-nmMYGujdViN6pNo4p8SWMWVJDpDnskQxTOoORn0CspwcqyXOw1FI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl7Qjbgxi5e3gLiSIbUvGnYpb5reYU9Ye4-45VJ8f-03TsfhYLLENO_c3mXFI"
         },
         {
-          "url": "https://foxbaltimore.com/news/local/police-investigation-central-park-heights-neighborhood-baltimore-maryland",
-          "title": "Four people shot in Central Park Heights neighborhood in Baltimore",
-          "publisher": "WBFF",
+          "url": "https://www.washingtonpost.com/sports/2026/11/14/caps-fall-7-4-rematch-with-new-jersey-devils/",
+          "title": "New lines, same result: Capitals fall to Devils",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrqyHIeFlOIqIyClEPPA3HLWk0WyuKDUp6yL7dHEdPBsSgzOvoxAh316FG6F8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXO-82Rf5tFtDA3AJSAsSQyedwH9xswtOwQO0Jh7646IVaFdF9-4ApJ8X8qXY"
         },
         {
-          "url": "https://www.wbal.com/baltimore-police-responding-to-shooting-with-multiple-victims-in-central-park-heights",
-          "title": "Baltimore police investigate quadruple shooting in Central Park Heights",
-          "publisher": "WBAL News Radio",
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892714",
+          "title": "Devils 7-4 Capitals (Nov 14, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSntDKbuoDqN4jr7n_IwaeomG2fo4ppG27hcRu8amsoU3dwm_Y20xvSsNNfBY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWK0Iz4bMxgnswOeiyyiHLZvG4rlPuif_ciL7gZsxcLPIMLBi69rCrKnlsVxw"
         }
       ]
     },
     {
-      "query": "sacramento republic fc vs new mexico united",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T02:10:00Z",
-      "related_news_urls": [
-        "https://www.abc10.com/article/news/local/sacramento/sacramento-republic-fcs-western-conference-final-postponed-to-monday/103-87d9e96c-a210-42e2-82a3-534e2926cc7c",
-        "https://www.sacbee.com/news/local/transportation/article318090813.html",
-        "https://www.newmexicoutd.com/news/2026/11/15/usl-announces-the-postponement-of-the-western-conference-final/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpCa89bVGpTWRC35vWSaXpwjyhyyKcV7V6B1HrqWhLTSRaaJSfSrLoOmqofYY",
-      "image_credit": "ABC10",
-      "news": [
-        {
-          "url": "https://www.abc10.com/article/news/local/sacramento/sacramento-republic-fcs-western-conference-final-postponed-to-monday/103-87d9e96c-a210-42e2-82a3-534e2926cc7c",
-          "title": "Sacramento Republic FC's Western Conference Final postponed to Monday",
-          "publisher": "ABC10",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpCa89bVGpTWRC35vWSaXpwjyhyyKcV7V6B1HrqWhLTSRaaJSfSrLoOmqofYY"
-        },
-        {
-          "url": "https://www.sacbee.com/news/local/transportation/article318090813.html",
-          "title": "Sacramento airport disruptions continue; Republic FC playoff game rescheduled",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOLijB8XFRFjRHL-M56d_tyufwSwWp1QNmnrKPnnwmTxT55-3S8gbxvGVPT8"
-        },
-        {
-          "url": "https://www.newmexicoutd.com/news/2026/11/15/usl-announces-the-postponement-of-the-western-conference-final/",
-          "title": "USL Announces the Postponement of the Western Conference Final",
-          "publisher": "New Mexico United",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaqbjwkOfUB3z4DoNFbgyP9UFdYKcKkslDd7bdEmjIjZxk0OFOKTyuP0sQ0DY"
-        }
-      ]
-    },
-    {
-      "query": "fire country",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T02:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/de/news/ni66113687/?ref_=nwc_art_perm",
-        "https://screenrant.com/fire-sheriff-country-2026-hiatus-november-20-2026/",
-        "https://www.tvinsider.com/1303851/fire-country-season-5-finale-date/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVYTDt32yf7M45wffsEd-2YI6VDfWyg5uWIgraKfXFH0N522LRC47WEtUkkxM",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/de/news/ni66113687/?ref_=nwc_art_perm",
-          "title": "CBS Sets ‘Fire Country’ Season 5 Finale Date",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVYTDt32yf7M45wffsEd-2YI6VDfWyg5uWIgraKfXFH0N522LRC47WEtUkkxM"
-        },
-        {
-          "url": "https://screenrant.com/fire-sheriff-country-2026-hiatus-november-20-2026/",
-          "title": "CBS Officially Announces Important 2026 Fire & Sheriff Country Change",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQ27R-z4ixUvtD6ZmejBL_6Mj5y25Ckkkn_RRZ_mXY1JdMAK1u_zjVh8fIG9E"
-        },
-        {
-          "url": "https://www.tvinsider.com/1303851/fire-country-season-5-finale-date/",
-          "title": "CBS Sets ‘Fire Country’ Season 5 Finale Date",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCvRFgxyEwgVxGrzdg9ytMFfZxRtazatYdIsy_Bxvdti0za-DPNmxpTmzjaTg"
-        }
-      ]
-    },
-    {
-      "query": "elizabeth banks",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T02:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/elizabeth-banks-revisits-effie-trinket-012447284.html",
-        "https://www.apple.com/tv-pr/news/2026/11/apple-tv-unveils-first-look-at-shes-fine-new-comedy-starring-and-executive-produced-by-emmy-award-nominee-elizabeth-banks-created-by-emmy-award-nominee-liz-heldens-and-matt-ward-premiering-globally-wednesday-january-27/",
-        "https://deadline.com/2026/11/shes-fine-release-date-apple-tv-elizabeth-banks-1237221546/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtdcQiK1ajl4A_FkRYEr7Eb1MVUFDI4-IPMopUp7Cr2wMQPEf-pX6ToGkh1Pk",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/elizabeth-banks-revisits-effie-trinket-012447284.html",
-          "title": "Elizabeth Banks Revisits Effie Trinket at ‘The Hunger Games’ Premiere",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtdcQiK1ajl4A_FkRYEr7Eb1MVUFDI4-IPMopUp7Cr2wMQPEf-pX6ToGkh1Pk"
-        },
-        {
-          "url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-unveils-first-look-at-shes-fine-new-comedy-starring-and-executive-produced-by-emmy-award-nominee-elizabeth-banks-created-by-emmy-award-nominee-liz-heldens-and-matt-ward-premiering-globally-wednesday-january-27/",
-          "title": "Apple TV unveils first look at “She’s Fine,” new comedy starring and executive produced by Elizabeth Banks",
-          "publisher": "Apple",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIYvIoZpH-YlgyNFAjaaqhJ0qAM1U0sTNO7BvdJiDNkIirw2nVaUFXKKoIkhc"
-        },
-        {
-          "url": "https://deadline.com/2026/11/shes-fine-release-date-apple-tv-elizabeth-banks-1237221546/",
-          "title": "Elizabeth Banks Comedy Series ‘She’s Fine’ Gets January Release Date At Apple TV — See First Look",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR54cxnUFTy36IrofOsRY1X7Jd1cqPq8P4t2w9OQaHHcbzu4gs6hbwFT1aPxis"
-        }
-      ]
-    },
-    {
-      "query": "criminal investigation",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T02:10:00Z",
-      "related_news_urls": [
-        "https://www.newsday.com/long-island/crime/gorilla-stone-bloods-major-narcotics-trafficking-long-island-shamiek-porter-btnxy5ch",
-        "https://longisland.news12.com/2026/11/16/14-charged-in-alleged-drug-trafficking-operation-spanning-nassau-and-suffolk-counties/6Uta0j2ANChpi5p4kuUidb",
-        "https://www.yahoo.com/news/us/articles/li-cops-bust-14-gorilla-202307809.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMV99_2lD2DsFlgQuSUShZojTR9oHIlV0AWh2jWZC_oHa01kwNwb4Rg4y3ZI",
-      "image_credit": "Newsday",
-      "news": [
-        {
-          "url": "https://www.newsday.com/long-island/crime/gorilla-stone-bloods-major-narcotics-trafficking-long-island-shamiek-porter-btnxy5ch",
-          "title": "14 people, including alleged gang members, charged with major narcotics trafficking on Long Island, in Queens",
-          "publisher": "Newsday",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMV99_2lD2DsFlgQuSUShZojTR9oHIlV0AWh2jWZC_oHa01kwNwb4Rg4y3ZI"
-        },
-        {
-          "url": "https://longisland.news12.com/2026/11/16/14-charged-in-alleged-drug-trafficking-operation-spanning-nassau-and-suffolk-counties/6Uta0j2ANChpi5p4kuUidb",
-          "title": "14 Charged In Alleged Drug Trafficking Operation Spanning Nassau And Suffolk Counties",
-          "publisher": "News12 | Long Island",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_eoAABtJlyTNCgVoGN14LdHht8xsxzE8Aov7S8jNlFnRKcye0aI-HIld_Uis"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/li-cops-bust-14-gorilla-202307809.html",
-          "title": "LI cops bust 14 in Gorilla Stone Blood drug ring — but bail laws could let 6 of them walk: DA",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVO2h0MaSaNbhWfugbCQNmk7_hR83WnB8HM-f04SFihpAOcpHe2BQfBAXb3sc"
-        }
-      ]
-    },
-    {
-      "query": "pedro pascal",
+      "query": "franz wagner",
       "approx_searches": "1000+",
-      "published_at": "2026-11-17T02:00:00Z",
+      "published_at": "2026-11-17T02:40:00Z",
       "related_news_urls": [
-        "https://www.vanityfair.com/story/pedro-pascal-tony-gilroy-behemoth-screening-room",
-        "https://deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503/",
-        "https://newsroom.spotify.com/2026-11-13/behemoth-soundtrack-pedro-pascal-tony-gilroy/"
+        "https://www.nba.com/watch/video/game-recap-magic-107-bucks-99-nov-13",
+        "https://www.jsonline.com/story/sports/nba/bucks/2026/11/13/milwaukee-bucks-vs-orlando-magic-losing-streak-injury-report-starters-odds/92749146007/",
+        "https://www.brewhoop.com/bucks-analysis/81420/milwaukee-vs-orlando-magic-player-grades-stats-jaime-jaquez-jr-tyler-herro"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKb4igsLWaiMHBQVJUIcZiF5xwCuWKV5EPsJh8Mafo1kiX6XxYZv6NG-OLVag",
-      "image_credit": "Vanity Fair",
-      "news": [
-        {
-          "url": "https://www.vanityfair.com/story/pedro-pascal-tony-gilroy-behemoth-screening-room",
-          "title": "As Hollywood Battles AI, Pedro Pascal Says Making Behemoth! Filled Him with “a Tremendous Amount of Hope”",
-          "publisher": "Vanity Fair",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKb4igsLWaiMHBQVJUIcZiF5xwCuWKV5EPsJh8Mafo1kiX6XxYZv6NG-OLVag"
-        },
-        {
-          "url": "https://deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503/",
-          "title": "‘Behemoth!’s Humanity Gave Pedro Pascal “Tremendous Amount Of Hope” Amid AI Boom, Tony Gilroy Wants To “Blow Up AI Centers… At The Voting Box”",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwGy1nHuMbqvqoJNFdSfIEBCJvXSAVFBv29sqRQOfS3j7oBx2qg6pABB1UnQA"
-        },
-        {
-          "url": "https://newsroom.spotify.com/2026-11-13/behemoth-soundtrack-pedro-pascal-tony-gilroy/",
-          "title": "Pedro Pascal and Tony Gilroy on the Music From ‘Behemoth!’",
-          "publisher": "Spotify",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAZGWMbRFHJZHYiROqC2MDSnEcJTAKrJIkja9oi0Ltcvywo8dlkPFfkcPS-hA"
-        }
-      ]
-    },
-    {
-      "query": "jacksonville vs georgia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T02:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/georgia/article/georgia-bulldogs-basketball-tries-to-keep-momentum-going-against-jacksonville-dolphins-mike-white-kanon-catchings-blue-cain-292837059/",
-        "https://sports.yahoo.com/articles/georgia-vs-jacksonville-live-updates-210046317.html",
-        "https://www.dawgnation.com/basketball/mens-basketball/georgia-basketball-locked-jacksonville-after-marquee-unc-win/UAH4JONQPFAGVJIDNO7WUPJ3PQ/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbwoXNGkXf9tUQMzJT6TSAcZOwNtPVbej9miCufc2QbUSmYv_RCYd0gHH47uM",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/georgia/article/georgia-bulldogs-basketball-tries-to-keep-momentum-going-against-jacksonville-dolphins-mike-white-kanon-catchings-blue-cain-292837059/",
-          "title": "Georgia basketball tries to keep momentum going against Jacksonville",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbwoXNGkXf9tUQMzJT6TSAcZOwNtPVbej9miCufc2QbUSmYv_RCYd0gHH47uM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/georgia-vs-jacksonville-live-updates-210046317.html",
-          "title": "Georgia vs. Jacksonville live updates: Follow as Bulldogs take on Dolphins",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSd85JNhlFtsecl0Ia2PkVBi0NTrF73otFtzpSgmihqctJq1NZQa2juwhVry2M"
-        },
-        {
-          "url": "https://www.dawgnation.com/basketball/mens-basketball/georgia-basketball-locked-jacksonville-after-marquee-unc-win/UAH4JONQPFAGVJIDNO7WUPJ3PQ/",
-          "title": "Georgia basketball ‘locked in’ for Jacksonville after marquee UNC win",
-          "publisher": "DawgNation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl4upNayzZrWJIG-aXm3mlySG0MV_MP_uqBf_lYd6gUBWCZUrOdBPUovDfx9k"
-        }
-      ]
-    },
-    {
-      "query": "golden state warriors vs new orleans pelicans match player stats",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T02:00:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/game/dal-vs-bos-0022600240/box-score",
-        "https://www.startribune.com/minnesota-timberwolves-chicago-bulls-lamelo-ball-stats-anthony-edwards-injury-update-wolves-roster/601914485",
-        "https://www.si.com/nba/timberwolves/onsi/anthony-edwards-still-finding-ways-help-timberwolves-despite-injury-01m7b4nb9zhg"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxBPGCvfYUQN-1xuIkpURVfZqsxUZLhiZeqrebLYTboLkk7qhNixbDBZY8nn8",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7Qq5a9Nwihakq1PjR55w1nHP6TZa50O74x_-5h5Jr6mzQ9sa5yKFxMSR5UoI",
       "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://www.nba.com/game/dal-vs-bos-0022600240/box-score",
-          "title": "Dallas Mavericks vs Boston Celtics Nov 15, 2026 Box Scores",
+          "url": "https://www.nba.com/watch/video/game-recap-magic-107-bucks-99-nov-13",
+          "title": "Game Recap: Magic 107, Bucks 99 (Nov. 13)",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxBPGCvfYUQN-1xuIkpURVfZqsxUZLhiZeqrebLYTboLkk7qhNixbDBZY8nn8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7Qq5a9Nwihakq1PjR55w1nHP6TZa50O74x_-5h5Jr6mzQ9sa5yKFxMSR5UoI"
         },
         {
-          "url": "https://www.startribune.com/minnesota-timberwolves-chicago-bulls-lamelo-ball-stats-anthony-edwards-injury-update-wolves-roster/601914485",
-          "title": "Wolves are winning without Anthony Edwards — and aren’t changing their identity",
-          "publisher": "Star Tribune",
+          "url": "https://www.jsonline.com/story/sports/nba/bucks/2026/11/13/milwaukee-bucks-vs-orlando-magic-losing-streak-injury-report-starters-odds/92749146007/",
+          "title": "Milwaukee Bucks lose ninth in a row, fall to Magic 107-99",
+          "publisher": "Milwaukee Journal Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbaQnIzY6yWIYjocwDn6tytcLVqOeTAHcedyTK7VNH0fSpUpSe59c-493d_Ww"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdghbaFI80-cHT65endNpAvTLC9beeza9SsJ6Mf1rFH4uSsG_o-Off8dIrZH0"
         },
         {
-          "url": "https://www.si.com/nba/timberwolves/onsi/anthony-edwards-still-finding-ways-help-timberwolves-despite-injury-01m7b4nb9zhg",
-          "title": "Anthony Edwards Is Still Finding Ways to Help Timberwolves Despite Injury",
+          "url": "https://www.brewhoop.com/bucks-analysis/81420/milwaukee-vs-orlando-magic-player-grades-stats-jaime-jaquez-jr-tyler-herro",
+          "title": "Bucks vs. Magic Player Grades: Bigs peform, team forgets how to make free throws",
+          "publisher": "Brew Hoop",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRruI36sgGiaKSxcATi4agfcYq1TYgU0OX2nfUbj2YXOZ2JMWWhmy-zPmfLxO8"
+        }
+      ]
+    },
+    {
+      "query": "anthony black",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T02:40:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25532919-new-nba-trade-rumors-magics-anthony-black-after-contract-extension-talks-fizzled-out",
+        "https://basketball.realgm.com/wiretap/288128/Rival-Executives-Monitoring-Anthony-Blacks-Potential-Availability",
+        "https://sports.yahoo.com/articles/yet-team-league-sources-knowledge-093644338.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1LPGCHDqbAlbRIuIuAxmgteIaumEGxd31SrCBnL-nf494dwMa37WH1oc07U",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25532919-new-nba-trade-rumors-magics-anthony-black-after-contract-extension-talks-fizzled-out",
+          "title": "New NBA Trade Rumors on Magic's Anthony Black After Contract Extension Talks Fizzled Out",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1LPGCHDqbAlbRIuIuAxmgteIaumEGxd31SrCBnL-nf494dwMa37WH1oc07U"
+        },
+        {
+          "url": "https://basketball.realgm.com/wiretap/288128/Rival-Executives-Monitoring-Anthony-Blacks-Potential-Availability",
+          "title": "Rival Executives Monitoring Anthony Black's Potential Availability",
+          "publisher": "RealGM",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi9tZoqKjj7gTa6xmT94Zmzv4gR1gomEPP6_-xmW-CbHXNbKFMorEGwC8JYLM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/yet-team-league-sources-knowledge-093644338.html",
+          "title": "Yet team and league sources with knowledge of the …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMGvLUySb8YCDF0BnlarfsMmF0jTc49L0R11_lW34d2oAiCPgMtkDlbopoH8"
+        }
+      ]
+    },
+    {
+      "query": "michael porter jr.",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T02:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nets-michael-porter-jr-returning-042220766.html",
+        "https://www.rotowire.com/basketball/headlines/jerami-grant-news-available-against-washington-539299",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/no-we-want-to-give-him-his-privacy-everything-its/92793841007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkYRHlc9C1q6_B0ceFwlIm4hLnTKpUb1qNZ6PCXddCluE7ce5yQt-3xyD82p8",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nets-michael-porter-jr-returning-042220766.html",
+          "title": "Nets’ Michael Porter Jr. returning vs. 76ers after missing Grizzlies loss for personal reasons",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkYRHlc9C1q6_B0ceFwlIm4hLnTKpUb1qNZ6PCXddCluE7ce5yQt-3xyD82p8"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/jerami-grant-news-available-against-washington-539299",
+          "title": "Jerami Grant News: Available against Washington",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN4zlYLQ4Xm3RbuYjQyJUCBSh8Prl1pHb9Oin5vjDVAJRZdUnaUSkydcLqb4Q"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/no-we-want-to-give-him-his-privacy-everything-its/92793841007/",
+          "title": "“No, we want to give him his privacy. Everything, it’s …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ56220Q3zdwSJEkoS0Jnl5TkeLzZInmOxwdo5176M4fDrfvM9Rwhai4Lvgk9g"
+        }
+      ]
+    },
+    {
+      "query": "desmond bane",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T02:30:00Z",
+      "related_news_urls": [
+        "https://www.rotowire.com/basketball/headlines/desmond-bane-news-leads-magic-to-victory-539500",
+        "https://www.fantasypros.com/nba/news/619984/desmond-bane-fills-stat-sheet-friday-against-bucks.php",
+        "https://bvmsports.com/2026/11/11/bane-for-three-%F0%9F%92%A5/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBM-37sExHGJZpnMK5oKiJitK1FnL5H_wNqge7UYklUXo3se9yV1Kfl8eiGb0",
+      "image_credit": "RotoWire",
+      "news": [
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/desmond-bane-news-leads-magic-to-victory-539500",
+          "title": "Desmond Bane News: Leads Magic to victory",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBM-37sExHGJZpnMK5oKiJitK1FnL5H_wNqge7UYklUXo3se9yV1Kfl8eiGb0"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/619984/desmond-bane-fills-stat-sheet-friday-against-bucks.php",
+          "title": "Desmond Bane fills stat sheet Friday against Bucks",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz0tgATe7Ft6veiCtk40SJ9EzngtQyIhBwYWzcAL39zJmbl-aX400cVUWc1GI"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/11/bane-for-three-%F0%9F%92%A5/",
+          "title": "BANE FOR THREE 💥",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQrOxxzntD0jApWVodsj9BG2p5CF97ecq4QtuimX2h4Sv16f-YZpMz8SWp4pY"
+        }
+      ]
+    },
+    {
+      "query": "go fund me",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T02:30:00Z",
+      "related_news_urls": [
+        "https://people.com/bug-hall-says-gofundme-support-helped-his-family-start-building-dream-home-exclusive-12259292",
+        "https://www.imdb.com/news/ni66111874/?ref_=ttnw_art_perm",
+        "https://www.yahoo.com/entertainment/celebrity/articles/little-rascals-star-bug-hall-063803579.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsxFjs6OHqv31ns934dC8L79iTKwP5ojRaaupbMVuhATVQ5Y7yA_wu7_ojTGU",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/bug-hall-says-gofundme-support-helped-his-family-start-building-dream-home-exclusive-12259292",
+          "title": "Little Rascals’ Bug Hall Said He Had $10 Before GoFundMe (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsxFjs6OHqv31ns934dC8L79iTKwP5ojRaaupbMVuhATVQ5Y7yA_wu7_ojTGU"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66111874/?ref_=ttnw_art_perm",
+          "title": "‘Little Rascals’ Star Brandon Hall Sets Up GoFundMe To Pay For Care Of His 6th Child After Multiple Arrests",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3hoVusLttIDxeSgYe8CHNTCtLQKV7xjAwE5fgdqHAidhFSsj3uzyg32UZ9A"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/little-rascals-star-bug-hall-063803579.html",
+          "title": "'Little Rascals' Star Bug Hall Raises $15K After Taking 'Vow of Poverty'",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo_HAzoO8TzJhpLO5guAGee8BcMraa7Q-yxW45ttr5DouhybYUoIhj6-X9M6E"
+        }
+      ]
+    },
+    {
+      "query": "maureen remigio",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T02:30:00Z",
+      "related_news_urls": [
+        "https://www.kansascity.com/news/local/article318104049.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-it-looks-like-josh-downs-patrick-mahomes-have-a-little-connection-going",
+        "https://sports.yahoo.com/articles/espn-jeremy-fowler-reveals-more-233130364.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4wp4upBSNd1dK8K4rYRWYT2xOYItUQ5cvQYmqt5z3NCQTrf-gFX8c1K099mY",
+      "image_credit": "Kansas City Star",
+      "news": [
+        {
+          "url": "https://www.kansascity.com/news/local/article318104049.html",
+          "title": "Popular NFL wife describes chaotic 24 hours after Chiefs cut her husband from team",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4wp4upBSNd1dK8K4rYRWYT2xOYItUQ5cvQYmqt5z3NCQTrf-gFX8c1K099mY"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-it-looks-like-josh-downs-patrick-mahomes-have-a-little-connection-going",
+          "title": "Andy Reid: It looks like Josh Downs, Patrick Mahomes have a little connection going",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQguWS-039lFheDHg5O0D8HfYWbui7LaJXhySxwIMXYKXSEt2kSemjT7UTUaxs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/espn-jeremy-fowler-reveals-more-233130364.html",
+          "title": "ESPN’s Jeremy Fowler Reveals More Details on Kansas City Chiefs’ Trade Deadline Moves",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmxIo1Ad27tTb4SuHc8rfuyhLsCvr4muwyqclbHeXOcibWslmiC96Y5TDWOBw"
+        }
+      ]
+    },
+    {
+      "query": "dan schulman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T02:30:00Z",
+      "related_news_urls": [
+        "https://fortune.com/2026/11/11/verizon-ceo-dan-schulman-turnaround-strategy-layoffs-customer-growth-ai/",
+        "https://simplywall.st/stocks/us/telecom/nyse-vz/verizon-communications/news/verizon-communications-vz-is-cutting-13000-jobs-under-dan-sc",
+        "https://www.phonearena.com/news/verizon-dan-schulman-q3-2026_id184741"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfQe3ZLQzrvSvAQM5qaG55GMV015TK8eq7-lMNlthBY3A2jS6I-3h0ld_tWf8",
+      "image_credit": "Fortune",
+      "news": [
+        {
+          "url": "https://fortune.com/2026/11/11/verizon-ceo-dan-schulman-turnaround-strategy-layoffs-customer-growth-ai/",
+          "title": "Inside Dan Schulman’s war on the old Verizon",
+          "publisher": "Fortune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfQe3ZLQzrvSvAQM5qaG55GMV015TK8eq7-lMNlthBY3A2jS6I-3h0ld_tWf8"
+        },
+        {
+          "url": "https://simplywall.st/stocks/us/telecom/nyse-vz/verizon-communications/news/verizon-communications-vz-is-cutting-13000-jobs-under-dan-sc",
+          "title": "Verizon Communications (VZ) Is Cutting 13,000 Jobs Under Dan Schulman",
+          "publisher": "Simply Wall St",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_EMRbcNwbTwwepWn2G-3XEEyPu9Xj2AK59LisCNdxvlOkmD2GVV6d0NPU7o"
+        },
+        {
+          "url": "https://www.phonearena.com/news/verizon-dan-schulman-q3-2026_id184741",
+          "title": "Verizon decodes a shifting customer psyche",
+          "publisher": "PhoneArena",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoRgNkKdGd9pmNlSESQcVb8X0o6x6bM4vM6FQXH-ZRaUhpoVvG5Ld22PNnaFM"
+        }
+      ]
+    },
+    {
+      "query": "bam adebayo",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T02:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/bam-adebayo-hip-questionable-to-return-monday",
+        "https://www.si.com/nba/heat/onsi/bam-adebayo-leaves-game-against-houston-rockets-with-injury-01m7kky8k85k",
+        "https://www.espn.co.uk/video/clip/_/id/50476742/bam-adebayo-gets-hoop-harm"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/bam-adebayo-hip-questionable-to-return-monday",
+          "title": "Bam Adebayo (hip) questionable to return Monday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE"
+        },
+        {
+          "url": "https://www.si.com/nba/heat/onsi/bam-adebayo-leaves-game-against-houston-rockets-with-injury-01m7kky8k85k",
+          "title": "Bam Adebayo leaves game against Houston Rockets with injury",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMnyK5DvzZmaOrUijYmTV4nOScHdQLzFvur4ke70mvLJL8Ese19QCo01uhkew"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1d6v9CtEc0BuU0OGzsdyjgxiLm8eBBDYXPTN9WDmWF4z41QwE6MMMWaxeWfs"
+        },
+        {
+          "url": "https://www.espn.co.uk/video/clip/_/id/50476742/bam-adebayo-gets-hoop-harm",
+          "title": "Bam Adebayo gets the hoop and the harm",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYvW_iOwG3mBV3BuSls9h3oQmGC1K4xTJCkj-xijgp9I_kkVDaaqqmh_9Wpg"
         }
       ]
     },
     {
-      "query": "rashod bateman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T02:00:00Z",
+      "query": "madison huang",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T02:20:00Z",
       "related_news_urls": [
-        "https://russellstreetreport.com/2026/11/12/injury-report/injury-report-ravens-vs-chargers-thursday/",
-        "https://www.rotoballer.com/player-news/rashod-bateman-is-risky-starting-option-for-week-10/1994173",
-        "https://ravenswire.usatoday.com/story/sports/nfl/ravens/2026/11/12/ravens-injury-report-thursday-kyle-hamilton-nate-wiggins-chargers/92749964007/"
+        "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html",
+        "https://www.inc.com/victoria-salves/jensen-huang-children-work-at-nvidia-1-obtstacle-keep-from-becoming-ceo/91436758",
+        "https://fortune.com/2026/11/09/what-is-nvidia-ceo-succession-plan-jensen-huang-son-in-law-nico-caprez/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrRItc2fdxeJK2SH_RS_rfcsad00VZtKG6RSnM-9CSgwBPtZe7NFVWVcCS5Y",
-      "image_credit": "Russell Street Report",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcH2ar4aAfgJ5dBxsX8KOFAYC6JeUvcwhjVzAK9BYvdGWPxDEuCBXsmfuZMm8",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://russellstreetreport.com/2026/11/12/injury-report/injury-report-ravens-vs-chargers-thursday/",
-          "title": "Baltimore Ravens: Injury Report - Ravens vs. Chargers (Thursday)",
-          "publisher": "Russell Street Report",
+          "url": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html",
+          "title": "Madison Huang, Jensen Huang’s Daughter, Became a Powerful Force at Nvidia",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrRItc2fdxeJK2SH_RS_rfcsad00VZtKG6RSnM-9CSgwBPtZe7NFVWVcCS5Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcH2ar4aAfgJ5dBxsX8KOFAYC6JeUvcwhjVzAK9BYvdGWPxDEuCBXsmfuZMm8"
         },
         {
-          "url": "https://www.rotoballer.com/player-news/rashod-bateman-is-risky-starting-option-for-week-10/1994173",
-          "title": "Rashod Bateman Week 10 Outlook for Fantasy Football (2026)",
-          "publisher": "RotoBaller",
+          "url": "https://www.inc.com/victoria-salves/jensen-huang-children-work-at-nvidia-1-obtstacle-keep-from-becoming-ceo/91436758",
+          "title": "Jensen Huang's Children Work at Nvidia. An Expert Says 1 Obstacle Could Keep Either From Becoming CEO",
+          "publisher": "Inc.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNNTx9HNMKDYY-AokTKSB4xZfxO8hW_tx3u9gsW-tCECVjje0KEcqLHdZ4to4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxILTSTukIJQTvmpk4HWfIRJiSyRGC7kkolE7jyLW2dxvvwy9FzXgWJHrX-ys"
         },
         {
-          "url": "https://ravenswire.usatoday.com/story/sports/nfl/ravens/2026/11/12/ravens-injury-report-thursday-kyle-hamilton-nate-wiggins-chargers/92749964007/",
-          "title": "Ravens injury report: Hamilton, Wiggins return; Bateman was limited Thursday",
-          "publisher": "Ravens Wire",
+          "url": "https://fortune.com/2026/11/09/what-is-nvidia-ceo-succession-plan-jensen-huang-son-in-law-nico-caprez/",
+          "title": "Meet Nico Caprez, Jensen Huang's son-in-law and 'consigliere' who could replace him as Nvidia's CEO",
+          "publisher": "Fortune",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIQWM0hjc6k22DD_-cTFmx6GOzgcOF5hJ-hhDmhF_ImrJcxOm-HjBRnXMy9IE"
-        }
-      ]
-    },
-    {
-      "query": "is john boyd leaving fbi",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T02:00:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1303609/fbi-season-9-episode-7-sneak-peek-john-boyd-shantel-vansanten/",
-        "https://www.tvline.com/2318527/fbi-season-9-episode-7-john-boyd-shantel-vansanten-interview/",
-        "https://www.justjared.com/2026/11/16/is-nina-chase-leaving-fbi-shantel-vansanten-season-9-update/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQymUFwaLJ3kn6YMUlojVZp-9sXXIQMVYhbmew8s5JVQvXklLFD3iH6VRPabzg",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1303609/fbi-season-9-episode-7-sneak-peek-john-boyd-shantel-vansanten/",
-          "title": "'FBI' Preview: Nina's Last Case in NY, Plus John Boyd & Shantel VanSanten Talk Scolina's 'New Chapter'",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQymUFwaLJ3kn6YMUlojVZp-9sXXIQMVYhbmew8s5JVQvXklLFD3iH6VRPabzg"
-        },
-        {
-          "url": "https://www.tvline.com/2318527/fbi-season-9-episode-7-john-boyd-shantel-vansanten-interview/",
-          "title": "FBI Season 9, Episode 7 Interview: John Boyd And Shantel VanSanten",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4P8RxtZKZG-mZMtg1cfi62sjSI1vD-TxusgCH3MEjf8naqs5rgPeEZfHFF_Y"
-        },
-        {
-          "url": "https://www.justjared.com/2026/11/16/is-nina-chase-leaving-fbi-shantel-vansanten-season-9-update/",
-          "title": "Is Nina Chase Leaving 'FBI'? Shantel VanSanten Addresses Character's Major Change in Season 9",
-          "publisher": "Just Jared",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSujC6bGDe6dQ4kzJZf9YVStEOri_fEwYH58l1fCgFzrfdjoncpsug3e7eckwg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS3Bz8Rnaf0juEly6GhoZ4_fp6IFhadBu0OKfQS-M2Azizp9kJJTQlZWkpW1g"
         }
       ]
     }
