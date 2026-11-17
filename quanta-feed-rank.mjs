@@ -68,7 +68,18 @@ export function feedScore(card,state){
 export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
  const following=new Set(state.following||[]), interests=new Set(state.interests||[]);
- const eligible=card=>!['sponsored','public-service'].includes(card.type)||placementPolicy(card).eligible;
+ // Restricted discovery requires a CURRENT, explicit on-site topic query.
+ // A past visit, Follow, Quant weight or neutral 21+ label is insufficient.
+ const cannabisIntent=/\b(cannabis|marijuana|dispensar(?:y|ies)|thc)\b/.test(q);
+ const adultContentIntent=/\b(porn(?:ography)?|adult content|adult store)\b/.test(q);
+ const restrictedMatchesIntent=card=>{
+  if(departmentFor(card)!=='adult')return true;
+  const topic=[card.id,card.name,card.category,card.feature,card.study].join(' ').toLowerCase();
+  const cannabis=/cannabis|dispensar|marijuana|thc|weedmaps|bruce.?banner/.test(topic);
+  return cannabis?cannabisIntent:adultContentIntent;
+ };
+ const eligible=card=>restrictedMatchesIntent(card)&&
+  (!['sponsored','public-service'].includes(card.type)||placementPolicy(card).eligible);
  const filtered=cards.filter(c=>eligible(c)&&!(state.hidden||[]).includes(c.id)&&
   (tab!=='following'||following.has(c.id))&&
   (tab!=='for-you'||following.has(c.id)||interests.has(departmentFor(c)))&&
