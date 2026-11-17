@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T21:30:48.861349Z",
+  "checked_at": "2026-11-17T22:01:37.208183Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "david bednar",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T21:10:00Z",
+      "query": "uefa nations league",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-17T21:40:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/mlb/news/mlb-qualifying-offer-deadline-morejon-arozarena-bednar-bauers-suzuki-lowe-jeffers-rogers/",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-17/david-bednar-takes-qualifying-offer-from-yankees",
-        "https://www.nydailynews.com/2026/11/17/closer-david-bednar-accepts-record-setting-qualifying-offer-from-yankees-sources/"
+        "https://www.bbc.com/sport/football/live/cwq6e479rygjt",
+        "https://www.reutersconnect.com/item/uefa-nations-league-group-b2-hungary-v-northern-ireland/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkgxS0lPT0g",
+        "https://www.newsletter.co.uk/sport/football/northern-ireland/northern-ireland-legend-to-lead-nations-league-clash-in-michael-oneills-absence-9355432"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS537VEilGrAL33T2UKxtHKm1egE2oGLPOo0_IAY_5Pk2ZDg02d_hkraq831Zw",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/mlb/news/mlb-qualifying-offer-deadline-morejon-arozarena-bednar-bauers-suzuki-lowe-jeffers-rogers/",
-          "title": "Yankees' David Bednar, Twins' Ryan Jeffers accept qualifying offer, six others reject $23.15 million QO",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS537VEilGrAL33T2UKxtHKm1egE2oGLPOo0_IAY_5Pk2ZDg02d_hkraq831Zw"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-17/david-bednar-takes-qualifying-offer-from-yankees",
-          "title": "David Bednar takes qualifying offer from Yankees",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3kUUdEZK8b7qJ6BFAW5iAcg55C-1O6SuyNKqSLMfJ2470RX7ZggI_H-JDVao"
-        },
-        {
-          "url": "https://www.nydailynews.com/2026/11/17/closer-david-bednar-accepts-record-setting-qualifying-offer-from-yankees-sources/",
-          "title": "Closer David Bednar accepts record-setting qualifying offer from Yankees: sources",
-          "publisher": "New York Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtpMSFJGLZCdY9sP-W2XDo7gz1Ec3QE6JU04oJg4WaaLBG4tOUWYUyrBhAXyw"
-        }
-      ]
-    },
-    {
-      "query": "abel nunez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T21:00:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/espanol/deportes/articulo/2026-11-16/muere-futbolista-causa-de-un-pelotazo-en-liga-juvenil-de-argentina",
-        "https://elpais.com/argentina/2026-11-17/jugador-de-futbol-juvenil-muere-en-argentina-tras-recibir-un-pelotazo-durante-un-partido.html",
-        "https://www.clarin.com/deportes/pelota-pego-cara-cayo-desplomado-desgarradores-detalles-muerte-futbolista-juvenil-abel-nunez_0_QWLlq653S3.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyRTkwRV50FInAcbLjXwMRkSoJjOQ3NJ9VSZ0aWYYqgXfoIpAmI5O3bOCbbc",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/espanol/deportes/articulo/2026-11-16/muere-futbolista-causa-de-un-pelotazo-en-liga-juvenil-de-argentina",
-          "title": "Muere futbolista a causa de un pelotazo en liga juvenil de Argentina",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyRTkwRV50FInAcbLjXwMRkSoJjOQ3NJ9VSZ0aWYYqgXfoIpAmI5O3bOCbbc"
-        },
-        {
-          "url": "https://elpais.com/argentina/2026-11-17/jugador-de-futbol-juvenil-muere-en-argentina-tras-recibir-un-pelotazo-durante-un-partido.html",
-          "title": "Un jugador de fútbol juvenil muere en Argentina tras recibir un pelotazo durante un partido",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0jPAzxkGCgwYOjHTk68fFgUNbKTJRRJm2HSBvrJYwTFxJOcKROcaZkaCHTc0"
-        },
-        {
-          "url": "https://www.clarin.com/deportes/pelota-pego-cara-cayo-desplomado-desgarradores-detalles-muerte-futbolista-juvenil-abel-nunez_0_QWLlq653S3.html",
-          "title": "\"La pelota le pegó en la cara y cayó desplomado\": los desgarradores detalles de la muerte del futbolista juvenil Abel Núñez",
-          "publisher": "Clarin.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-3yGyVtQwVV6XpNSKRziOCLkJ9rYp3zqprv0yGyjABMItqrpuNqhlcSGfq0Q"
-        }
-      ]
-    },
-    {
-      "query": "fbi cyber attack warning",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T20:50:00Z",
-      "related_news_urls": [
-        "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
-        "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
-        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA",
-      "image_credit": "Google Cloud",
-      "news": [
-        {
-          "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
-          "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
-          "publisher": "Google Cloud",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA"
-        },
-        {
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
-          "title": "Security for the agentic era, powered by Microsoft Perception",
-          "publisher": "Microsoft",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVbW8p4jRkic8Vj733J8KxzfM6Bo1-Ou0W8A7BeMNoTo458g8xA5Uxw2bOYjA"
-        },
-        {
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
-          "title": "Outpace automated cyber threats with security built for nonstop defense.",
-          "publisher": "blog.google",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIA5u5teLtBD_ZMT0TLZpWFSUfJhrAO5RA6eAH2K83t6b9plj3fyL6yyYyo5Y"
-        }
-      ]
-    },
-    {
-      "query": "portugal fc",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T20:40:00Z",
-      "related_news_urls": [
-        "https://www.abola.pt/noticias/fc-porto-gabriel-mec-da-passo-em-frente-a-quatro-dias-do-paredes-2026111612471276515",
-        "https://www.record.pt/futebol/futebol-nacional/liga-betclic/fc-porto/detalhe/fc-porto-prepara-taca-de-portugal-com-uma-boa-noticia",
-        "https://sapo.pt/artigo/novidades-sobre-mec-e-varios-bes-em-mais-um-treino-do-fc-porto-6afb0fe1dc9ea92269d48d8a"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGINd6dlkRusj1gUGO5pH9Il9bZSf2IDu-dPuqrEMaxx_Uod_JLOGewhqhdlc",
-      "image_credit": "A Bola",
-      "news": [
-        {
-          "url": "https://www.abola.pt/noticias/fc-porto-gabriel-mec-da-passo-em-frente-a-quatro-dias-do-paredes-2026111612471276515",
-          "title": "FC Porto: Gabriel Mec dá passo em frente a quatro dias do Paredes",
-          "publisher": "A Bola",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGINd6dlkRusj1gUGO5pH9Il9bZSf2IDu-dPuqrEMaxx_Uod_JLOGewhqhdlc"
-        },
-        {
-          "url": "https://www.record.pt/futebol/futebol-nacional/liga-betclic/fc-porto/detalhe/fc-porto-prepara-taca-de-portugal-com-uma-boa-noticia",
-          "title": "FC Porto prepara Taça de Portugal com uma boa notícia",
-          "publisher": "Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrbHTNvneiBr_KPN0LyRydjRfHAMg0hkCPKY_IuQpyy72CWPUtgTtzPW2f66g"
-        },
-        {
-          "url": "https://sapo.pt/artigo/novidades-sobre-mec-e-varios-bes-em-mais-um-treino-do-fc-porto-6afb0fe1dc9ea92269d48d8a",
-          "title": "Novidades sobre Mec e vários bês em mais um treino do FC Porto",
-          "publisher": "SAPO",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSll7FAgzge0ivdjNSErJRT95j9vscZeMPeHpaHsgQzTB-I9bDTlhvkH2SzJxg"
-        }
-      ]
-    },
-    {
-      "query": "notre dame basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T20:40:00Z",
-      "related_news_urls": [
-        "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
-        "https://sports.yahoo.com/articles/watch-notre-dame-vs-florida-203000108.html",
-        "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU",
-      "image_credit": "Florida Gators",
-      "news": [
-        {
-          "url": "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
-          "title": "Players Era 8: No. 1 Florida vs Notre Dame (Tuesday, 4:30 pm)",
-          "publisher": "Florida Gators",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-notre-dame-vs-florida-203000108.html",
-          "title": "How to watch Notre Dame vs Florida: Live stream NCAA College Basketball, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEtfp296nqpn8iycIuTnSxt2uHn8bfdUp6LHfg85avKmaE-B6AHv3Q5uj-OI"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
-          "title": "Florida vs. Notre Dame prediction, odds: 2026 Players Era 8 picks for Tuesday, Nov. 17 by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN3iRc166heYtuBI1p2_lhDYllmtlNUll6r7hbRaGx8GUbTlnvwgNt4U0N9lQ"
-        }
-      ]
-    },
-    {
-      "query": "vinod khosla",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T20:40:00Z",
-      "related_news_urls": [
-        "https://www.businessinsider.com/khosla-doubles-down-on-coframe-to-build-a-living-internet-2026-11",
-        "https://www.contentgrip.com/coframe-ai-websites-funding/",
-        "https://www.briefia.fr/en/article/coframe-raises-25m-to-personalize-websites-with-ai"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRPnTtc3GqsXflSVeFAuCnr-qzoJgRlBWcS9YXDiIrstPily8y8TtSeMefM2o",
-      "image_credit": "Business Insider",
-      "news": [
-        {
-          "url": "https://www.businessinsider.com/khosla-doubles-down-on-coframe-to-build-a-living-internet-2026-11",
-          "title": "Vinod Khosla Is Betting AI Will Kill the Static Website",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRPnTtc3GqsXflSVeFAuCnr-qzoJgRlBWcS9YXDiIrstPily8y8TtSeMefM2o"
-        },
-        {
-          "url": "https://www.contentgrip.com/coframe-ai-websites-funding/",
-          "title": "Coframe gets $25M for automated website testing",
-          "publisher": "ContentGrip",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu_3oZE4o7oJRcKu7BJcupYu201D4wUmoV_3l7cjWiFgLZ4p_vJwONdyjyfSg"
-        },
-        {
-          "url": "https://www.briefia.fr/en/article/coframe-raises-25m-to-personalize-websites-with-ai",
-          "title": "Coframe Raises $25M to Personalize Websites with AI",
-          "publisher": "Brief IA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgK_VxJ5UqIrYtw1Du7DIaGR6MpwNHBQbZ1QSadTmiwV9uTPe8in_HK44F__8"
-        }
-      ]
-    },
-    {
-      "query": "portugal vs norway",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T20:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/crvg2d87xe38t",
-        "https://www.theguardian.com/football/live/2026/nov/17/wales-v-portugal-nations-league-football-live-score-updates",
-        "https://www.espn.com/soccer/story/_/id/50503039/craig-bellamy-cristiano-ronaldo"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyMillnm5GVUP2hUdcsOVRZeP9atS_nqrSRAu9L9DAoDI1tgu5YX39DXab834",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYApZARUp2mS55Ze2AKBdicPPbYSRZkvrV7lfCTSnN4Urb8NUtPYMm9the5pQ",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/crvg2d87xe38t",
-          "title": "Wales vs Portugal: Uefa Nations League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cwq6e479rygjt",
+          "title": "Watch: Nations League - NI draw with Hungary to seal top-tier promotion",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyMillnm5GVUP2hUdcsOVRZeP9atS_nqrSRAu9L9DAoDI1tgu5YX39DXab834"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYApZARUp2mS55Ze2AKBdicPPbYSRZkvrV7lfCTSnN4Urb8NUtPYMm9the5pQ"
         },
         {
-          "url": "https://www.theguardian.com/football/live/2026/nov/17/wales-v-portugal-nations-league-football-live-score-updates",
-          "title": "(17) Wales v Portugal: Nations League football – live",
-          "publisher": "The Guardian",
+          "url": "https://www.reutersconnect.com/item/uefa-nations-league-group-b2-hungary-v-northern-ireland/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkgxS0lPT0g",
+          "title": "Licensable picture: UEFA Nations League - Group B2 - Hungary v Northern Ireland",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd_dMdWd1he3aUH3ce1NZvea0MtQYgnylZemzq-7owK5dVSmH6eH8hj4Q4Nfg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgn4VoDSzKDKCmm0Cmx5r-Rmn-f5FA8qCfOF1FIvvC-XJU0JMcET6IYtPhmNc"
         },
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50503039/craig-bellamy-cristiano-ronaldo",
-          "title": "Wales boss Craig Bellamy urges fans to 'just celebrate' Cristiano Ronaldo after Portugal exit",
-          "publisher": "ESPN",
+          "url": "https://www.newsletter.co.uk/sport/football/northern-ireland/northern-ireland-legend-to-lead-nations-league-clash-in-michael-oneills-absence-9355432",
+          "title": "Northern Ireland legend to lead Nations League clash in Michael O'Neill's absence",
+          "publisher": "Belfast News Letter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRKslvvQFls-jBdVe99vl_qfWbrQFLArRFSRTks-LTO5QnPDOJfEcbaKRgvI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVw9GfjixH6j-w7je-kj4fNxEJd4sQZbD6vuONhkV0rq4UfITohMqftJhO1pQ"
         }
       ]
     },
     {
-      "query": "rasmus højlund",
+      "query": "nvda stock price",
       "approx_searches": "2000+",
-      "published_at": "2026-11-17T20:40:00Z",
+      "published_at": "2026-11-17T21:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/devils/news/live-updates-2026020318",
-        "https://www.espn.com/nhl/recap/_/gameId/401892714",
-        "https://www.washingtonpost.com/sports/2026/11/14/caps-fall-7-4-rematch-with-new-jersey-devils/"
+        "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-fell-below-170-093702027.html",
+        "https://www.moomoo.com/community/feed/nov-check-in-19-117631786287110",
+        "https://www.globalbankingandfinance.com/tesla-tsla-falls-2026-11-16/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYzkm09G0lmT7OFbP78_CDVjIpvSX0S7lddr8lIDZjl3IZv4d992FUvR9jnaY",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHssiinHYi4eicl53feFIqF4VVTPA1hxd1e09ma5Yj3FLso_KdDIap4XHYxgU",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.nhl.com/devils/news/live-updates-2026020318",
-          "title": "QUICK RECAP: Devils 7, Capitals 4",
-          "publisher": "NHL.com",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-fell-below-170-093702027.html",
+          "title": "Nvidia Stock Fell Below $170. Here’s Why It Could Be a Screaming Buy.",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYzkm09G0lmT7OFbP78_CDVjIpvSX0S7lddr8lIDZjl3IZv4d992FUvR9jnaY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHssiinHYi4eicl53feFIqF4VVTPA1hxd1e09ma5Yj3FLso_KdDIap4XHYxgU"
         },
         {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892714",
-          "title": "Devils 7-4 Capitals (Nov 14, 2026) Game Recap",
+          "url": "https://www.moomoo.com/community/feed/nov-check-in-19-117631786287110",
+          "title": "NOV check in #19",
+          "publisher": "Moomoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3qcRJBFBh3bPHYX4D00ekIavaX_Cr3waZSPgOYzyFDDZTgscMSw2rCxRIP08"
+        },
+        {
+          "url": "https://www.globalbankingandfinance.com/tesla-tsla-falls-2026-11-16/",
+          "title": "Tesla falls 2.69% in Monday's session",
+          "publisher": "Global Banking & Finance Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRei4Q4RkMkOCt4FsT9uVWfVjN6gEI4pdkTmedN4JXQADO_1ZR6eOVmd10_dZw"
+        }
+      ]
+    },
+    {
+      "query": "erling haaland",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T21:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50490251/erling-haaland-man-city-premier-league-sanctions",
+        "https://www.si.com/soccer/furious-erling-haaland-warning-norway-manager",
+        "https://talksport.com/football/4711565/simon-jordan-erling-haaland-man-city/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3TAnmLhVqst-7fC2ajIE2wbe9U_Ewv-158KHz6mSxZwdvV9Dnk4YQAymnAtI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50490251/erling-haaland-man-city-premier-league-sanctions",
+          "title": "Haaland 'incredibly happy' at Man City, not thinking about possible sanctions",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWK0Iz4bMxgnswOeiyyiHLZvG4rlPuif_ciL7gZsxcLPIMLBi69rCrKnlsVxw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3TAnmLhVqst-7fC2ajIE2wbe9U_Ewv-158KHz6mSxZwdvV9Dnk4YQAymnAtI"
         },
         {
-          "url": "https://www.washingtonpost.com/sports/2026/11/14/caps-fall-7-4-rematch-with-new-jersey-devils/",
-          "title": "New lines, same result: Capitals fall to Devils",
-          "publisher": "The Washington Post",
+          "url": "https://www.si.com/soccer/furious-erling-haaland-warning-norway-manager",
+          "title": "‘Absolute Madness’—Furious Erling Haaland Warning Fired by Norway Manager",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXO-82Rf5tFtDA3AJSAsSQyedwH9xswtOwQO0Jh7646IVaFdF9-4ApJ8X8qXY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEM68M6Ygujoflf6Jl4nMh-KgAfjrDr1cjJIBT7E73wSSVWP3zt1Ktvyc2eKM"
+        },
+        {
+          "url": "https://talksport.com/football/4711565/simon-jordan-erling-haaland-man-city/",
+          "title": "Simon Jordan: Erling Haaland question was worthless, we all know he's leaving if Man City appeal fails",
+          "publisher": "talkSPORT",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQejE1XanBom52Q2fhbjcO3LGhOfx7HIAhW0DBABXMcd10soLw5BkcOzYNOyqY"
         }
       ]
     },
     {
-      "query": "bill fritz",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T20:30:00Z",
+      "query": "java4shell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T21:40:00Z",
       "related_news_urls": [
-        "https://bismarcktribune.com/obituaries/article_6745ba55-0554-55b3-a2ae-7eb60e60ac65.html",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-200448370.html",
-        "https://bismarcktribune.com/obituaries/article_c8ad3d81-a910-523e-b1f3-25024b953da6.html"
+        "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+        "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html",
+        "https://news.jkn.co.kr/editions/english/post/1102729"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyXajINNTJfFrWv8wPx74-MxXWeEaxMFV6kJxF2MNfcTQh5faCyUEni2rUnl0",
-      "image_credit": "The Bismarck Tribune",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnr7zI_zMv5Xh4VYoat-OWON-cDJTfD6WLU-oMjomLs7xFef_HnTZw3OWahGg",
+      "image_credit": "The Hacker News",
       "news": [
         {
-          "url": "https://bismarcktribune.com/obituaries/article_6745ba55-0554-55b3-a2ae-7eb60e60ac65.html",
-          "title": "Nora Mary Sperle",
-          "publisher": "The Bismarck Tribune",
+          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+          "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+          "publisher": "The Hacker News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyXajINNTJfFrWv8wPx74-MxXWeEaxMFV6kJxF2MNfcTQh5faCyUEni2rUnl0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnr7zI_zMv5Xh4VYoat-OWON-cDJTfD6WLU-oMjomLs7xFef_HnTZw3OWahGg"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-200448370.html",
-          "title": "'American Pickers' star Frank Fritz's multimillion-dollar estate fight heads to trial",
-          "publisher": "Yahoo",
+          "url": "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html",
+          "title": "A.I. Helps Find Major Security Bug in Java, a Software Platform Vital to the Internet",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsGEww2ojwm-ndommS4inFwaLkyUtbqSDZ15MaYCiCTE8vNqFhNeoXSA6uTss"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbKZADXkaquTI0GlemNoO0VmuBbKBYAa4t2JMry7OQwp91ib0JZrwH7U2qPQ"
         },
         {
-          "url": "https://bismarcktribune.com/obituaries/article_c8ad3d81-a910-523e-b1f3-25024b953da6.html",
-          "title": "Angela “Angie” Ann Johnson",
-          "publisher": "The Bismarck Tribune",
+          "url": "https://news.jkn.co.kr/editions/english/post/1102729",
+          "title": "Critical Java vulnerability discovered; NIS issues urgent inspection advisory to public institutions",
+          "publisher": "재경일보",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQP5-rmMM7IpWFvWYx8zz7dZM78gTLlZbuYhf5s7mHkNMGFRrcsHcIsFpZdw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-RHQbDNidXWUtB_PGYl_gqLs6PRYAxschklmqfGrohLtbUE94gvia2XG1Tl8"
         }
       ]
     },
     {
-      "query": "xbox game pass",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T20:30:00Z",
+      "query": "jubilación",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T21:30:00Z",
       "related_news_urls": [
-        "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/",
-        "https://www.purexbox.com/news/2026/11/microsoft-announces-nine-games-coming-to-xbox-game-pass-november-18-december-1",
-        "https://www.vice.com/en/article/day-one-xbox-game-pass-games-list/"
+        "https://www.infobae.com/estados-unidos/2026/11/17/el-irs-anuncia-nuevos-ajustes-tributarios-para-2027-cuanto-podran-deducir-los-contribuyentes-y-que-creditos-aumentaran/",
+        "https://www.directoriocubano.info/estados-unidos/credito-hijos-minnesota-2025/",
+        "https://www.tikr.com/es/blog/bernie-sanders-nearly-half-of-older-workers-have-no-retirement-savings-from-60-to-63-you-can-save-37250-per-year-in-a-401k-starting-in-2027"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKFje6v_eOXJh_wi2H6obT8Du_nhlIwfjNvDnxEclLetfMvUxPYQIX1993uRA",
-      "image_credit": "XBOX Wire",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmCwHhGcFwaQd_1KPW-NrOiKGXDeU8HfY3tcEV80dxf28zquu9BruenKJokiI",
+      "image_credit": "Infobae",
       "news": [
         {
-          "url": "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/",
-          "title": "Coming to XBOX Game Pass: Hela: of Mice & Magic, The Outlast Trials, Sniper Ghost Warrior Contracts 2, and More",
-          "publisher": "XBOX Wire",
+          "url": "https://www.infobae.com/estados-unidos/2026/11/17/el-irs-anuncia-nuevos-ajustes-tributarios-para-2027-cuanto-podran-deducir-los-contribuyentes-y-que-creditos-aumentaran/",
+          "title": "El IRS anuncia nuevos ajustes tributarios para 2027: cuánto podrán deducir los contribuyentes y qué créditos aumentarán",
+          "publisher": "Infobae",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKFje6v_eOXJh_wi2H6obT8Du_nhlIwfjNvDnxEclLetfMvUxPYQIX1993uRA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmCwHhGcFwaQd_1KPW-NrOiKGXDeU8HfY3tcEV80dxf28zquu9BruenKJokiI"
         },
         {
-          "url": "https://www.purexbox.com/news/2026/11/microsoft-announces-nine-games-coming-to-xbox-game-pass-november-18-december-1",
-          "title": "Microsoft Announces Nine Games Coming To Xbox Game Pass (November 18 - December 1)",
-          "publisher": "Pure Xbox",
+          "url": "https://www.directoriocubano.info/estados-unidos/credito-hijos-minnesota-2025/",
+          "title": "Crédito por hijos en Estados Unidos: hasta 1750 dólares por menor en 2025",
+          "publisher": "Directorio Cubano",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4DN1QqOJc5HL_spOAAUUdTfvf8IulXxDtRpYW7DV8A1AM7BkUNckAs0OspRs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStgRnG4-7tW9TOAcknyrGjZf451kfwJYVwJ7vcw8jzwf12Y84RsUREQnBv5Mg"
         },
         {
-          "url": "https://www.vice.com/en/article/day-one-xbox-game-pass-games-list/",
-          "title": "All Upcoming Day One Xbox Game Pass Games – Full List",
-          "publisher": "VICE",
+          "url": "https://www.tikr.com/es/blog/bernie-sanders-nearly-half-of-older-workers-have-no-retirement-savings-from-60-to-63-you-can-save-37250-per-year-in-a-401k-starting-in-2027",
+          "title": "Bernie Sanders: “Nearly Half of Older Workers Have No Retirement Savings.” From 60 to 63, You Can Save $37,250 per Year in a 401(k) Starting in 2027",
+          "publisher": "TIKR.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElcM8dOkAqVp51Latak7Q8cdqvuhsqB84tCag6A_fsXbFZKvl1F3R36vEvHo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3SP4GfjaZOYCEqaVKa4INX9ZOMXGPEIatUKUYgd7MR54xnCGek-9smLv89Mk"
+        }
+      ]
+    },
+    {
+      "query": "ecuador vs bolivia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T21:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17524819/hernan-galindez-previo-ecuador-vs-bolivia-se-vieron-cosas-buenas",
+        "https://www.eluniverso.com/deportes/futbol/como-ver-gratis-el-partido-amistoso-de-ecuador-y-bolivia-por-la-fecha-fifa-nota/",
+        "https://www.extra.ec/noticia/deportes/gallardo-sintio-carino-guayaquil-asi-recibio-ciudad-muneco-168183.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR98N0jcavhU0ZAUxVmD_0AyMZAoxFQqZAyAAwRPhAVkpzyEOefeEFRKENRsOw",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17524819/hernan-galindez-previo-ecuador-vs-bolivia-se-vieron-cosas-buenas",
+          "title": "Hernán Galíndez, previo al duelo vs. Bolivia: \"El otro día se vieron cosas muy buenas\"",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR98N0jcavhU0ZAUxVmD_0AyMZAoxFQqZAyAAwRPhAVkpzyEOefeEFRKENRsOw"
+        },
+        {
+          "url": "https://www.eluniverso.com/deportes/futbol/como-ver-gratis-el-partido-amistoso-de-ecuador-y-bolivia-por-la-fecha-fifa-nota/",
+          "title": "Cómo ver gratis el partido amistoso de Ecuador y Bolivia por la fecha FIFA",
+          "publisher": "El Universo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhqVxltoIw38C9mPuY9y7QPLrdwJ6YQFyxN-MDfXcJS1FxY-W9-h1dL1X44fI"
+        },
+        {
+          "url": "https://www.extra.ec/noticia/deportes/gallardo-sintio-carino-guayaquil-asi-recibio-ciudad-muneco-168183.html",
+          "title": "Gallardo sintió el cariño de Guayaquil: así recibió la ciudad al Muñeco",
+          "publisher": "Diario Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWacr6kNt5IZVq9fxgIRaZa6jQfXdpETgaYqN4qblBP7de7zMfyelGuD3oBno"
+        }
+      ]
+    },
+    {
+      "query": "camille herron",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T21:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/sports/olympics/running-pay-bills-only-fans-ultramarathon-camille-herron-sports-rcna607090",
+        "https://www.modernghana.com/videonews/nbc/2/755509",
+        "https://www.rnz.co.nz/news/sport/2481759/athlete-side-of-onlyfans-helps-fund-beach-volleyball-olivia-macdonald-star-s-career"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSy0o59FskPTNarlbCISsCo1XvnO3FMjn03rfEfFabqfnboMr6UaXOpUnJMuJw",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/sports/olympics/running-pay-bills-only-fans-ultramarathon-camille-herron-sports-rcna607090",
+          "title": "Running used to pay this pro athlete’s bills. Now, it’s OnlyFans.",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSy0o59FskPTNarlbCISsCo1XvnO3FMjn03rfEfFabqfnboMr6UaXOpUnJMuJw"
+        },
+        {
+          "url": "https://www.modernghana.com/videonews/nbc/2/755509",
+          "title": "These female athletes are embracing OnlyFans",
+          "publisher": "Modern Ghana",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ8tEl9c31MHYJT7oINtV520X7rVesAvMo5Wolakp-fdej4LtKC1Ca04Czaks"
+        },
+        {
+          "url": "https://www.rnz.co.nz/news/sport/2481759/athlete-side-of-onlyfans-helps-fund-beach-volleyball-olivia-macdonald-star-s-career",
+          "title": "'Athlete side' of OnlyFans helps fund beach volleyball Olivia MacDonald star's career",
+          "publisher": "RNZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFtYhuvhOgWlm19Mk3bux8_N5haWJLCDz8mz_Xeym6dJZYhhHrE0chD7C9A3c"
+        }
+      ]
+    },
+    {
+      "query": "politics",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T21:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
+        "https://www.pbs.org/newshour/world/trump-arrives-in-philippines-to-kick-off-asia-trip-with-economic-deals-and-talks-with-allies",
+        "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnMkD9akFnSrFo33ioEPd45LaQm_zCSm9aFcIiSRO42mbBoLUPPrSf-B7HB-0",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
+          "title": "Trump Will Miss Most of the ASEAN Summit",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnMkD9akFnSrFo33ioEPd45LaQm_zCSm9aFcIiSRO42mbBoLUPPrSf-B7HB-0"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/world/trump-arrives-in-philippines-to-kick-off-asia-trip-with-economic-deals-and-talks-with-allies",
+          "title": "Trump arrives in Philippines to kick off Asia trip with economic deals and talks with allies",
+          "publisher": "PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS3-y2tOIniHmVQvS5qkMHYHA4_7i8JKvwV4-Sr-sgCxzuWoHdNkSAWE4BELA"
+        },
+        {
+          "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
+          "title": "Trump Asia trip live updates: Trump and Quad leaders gather in Manila",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq8EyhCXt2Ax-MzRnDh_XcKJsPHJrPAD-Ia4mJfk9kVJ81JjRp87rZg4VZuyE"
+        }
+      ]
+    },
+    {
+      "query": "ryan jeffers",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T21:20:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/ryan-jeffers-accepts-twins-qualifying-offer",
+        "https://sports.yahoo.com/articles/ryan-jeffers-reportedly-accepts-twins-212409986.html",
+        "https://www.startribune.com/minnesota-twins-roster-salary-2027-ryan-jeffers-contract-qualifying-offer-mlb-free-agency-news/601921231"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk-6BI6dAbZFZe-F8s22hIqcShXdpMYS0qCGM4YJSwwFARq8GTDPgY6DNtp5w",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/ryan-jeffers-accepts-twins-qualifying-offer",
+          "title": "Top free-agent catcher accepts qualifying offer to remain with Twins",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk-6BI6dAbZFZe-F8s22hIqcShXdpMYS0qCGM4YJSwwFARq8GTDPgY6DNtp5w"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ryan-jeffers-reportedly-accepts-twins-212409986.html",
+          "title": "Ryan Jeffers reportedly accepts Twins' $23 million qualifying offer",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHg9LttnvSgqcmb8sG2595k63pLKIiTbgq8lrqc93JMGaldfgQsRKMvQgRW3Y"
+        },
+        {
+          "url": "https://www.startribune.com/minnesota-twins-roster-salary-2027-ryan-jeffers-contract-qualifying-offer-mlb-free-agency-news/601921231",
+          "title": "Ryan Jeffers accepts $23.15 million qualifying offer, will return to Twins in 2027",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHyb9IpofoP4oqICUgSj9VRyz6SrzSxllGq8NjH670KtYp5KojCvMRInTwYSI"
+        }
+      ]
+    },
+    {
+      "query": "wandale robinson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T21:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/mlb/breaking-news/article/titans-place-wr-wandale-robinson-on-ir-due-to-ankle-injury-sign-xavier-restrepo-to-active-roster-212922575.html",
+        "https://sports.yahoo.com/articles/tennessee-titans-wr-wandale-robinson-212445496.html",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-17/ravens-release-harrison-mevis"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-a3sGvFbP220dLsai6Oea8SJQocmV2HedAJUc11q7VPqKkkybwExtiFtq1Z4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/mlb/breaking-news/article/titans-place-wr-wandale-robinson-on-ir-due-to-ankle-injury-sign-xavier-restrepo-to-active-roster-212922575.html",
+          "title": "Titans place WR Wan'Dale Robinson on IR due to ankle injury, sign Xavier Restrepo to active roster",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-a3sGvFbP220dLsai6Oea8SJQocmV2HedAJUc11q7VPqKkkybwExtiFtq1Z4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/tennessee-titans-wr-wandale-robinson-212445496.html",
+          "title": "Tennessee Titans WR Wan'Dale Robinson placed on injured reserve",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfro-ENmbhnMZg1VSYXch0OQFRkD7NKAiT45p_CK6-vURf7-IAw_cjeuUURKo"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-17/ravens-release-harrison-mevis",
+          "title": "Ravens release Harrison Mevis",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUCdh3m7198iv6MjXFn1tAw0pA-m8IBhTuiCCyC_upJVDdq1s3sNtrhXT6pg"
         }
       ]
     }
