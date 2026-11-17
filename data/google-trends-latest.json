@@ -3,330 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T11:01:30.544777Z",
+  "checked_at": "2026-11-17T11:31:30.572683Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "friendlies",
+      "query": "ms dhoni",
       "approx_searches": "100+",
-      "published_at": "2026-11-17T10:40:00Z",
+      "published_at": "2026-11-17T11:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50509468/brazil-romario-carlo-ancelotti-sacking",
-        "https://www.theguardian.com/football/2026/nov/14/brazil-argentina-japan-uruguay-wales-norway-portugal-denmark",
-        "https://www.reuters.com/sports/soccer/japans-sakamoto-secures-last-gasp-3-2-friendly-win-over-brazil-2026-11-14/"
+        "https://www.cricinfo.com/live-blog/ipl-2027-retention-csk-announce-mentor-singh-dhoni-1562922",
+        "https://www.reuters.com/world/india/ipl-career-over-dhoni-unveiled-chennai-team-mentor-2026-11-17/",
+        "https://sports.yahoo.com/articles/ipl-2027-rumours-csk-fans-062900902.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0kmLYBsfr534KLpdSyrNjrO7rEPfGFB31FdP5TsV5jlM32Zn5edfwefa3zco",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfa6WBoZXNImRZwCg6IQbE-8XeSAVoGINGyArrqwkcR25cwjN1pnTEW19HBXI",
+      "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50509468/brazil-romario-carlo-ancelotti-sacking",
-          "title": "Brazil legend Romário calls for Carlo Ancelotti sacking",
-          "publisher": "ESPN",
+          "url": "https://www.cricinfo.com/live-blog/ipl-2027-retention-csk-announce-mentor-singh-dhoni-1562922",
+          "title": "IPL 2027 retention - CSK announce 'Mentor' Singh Dhoni",
+          "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0kmLYBsfr534KLpdSyrNjrO7rEPfGFB31FdP5TsV5jlM32Zn5edfwefa3zco"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfa6WBoZXNImRZwCg6IQbE-8XeSAVoGINGyArrqwkcR25cwjN1pnTEW19HBXI"
         },
         {
-          "url": "https://www.theguardian.com/football/2026/nov/14/brazil-argentina-japan-uruguay-wales-norway-portugal-denmark",
-          "title": "Raphinha sees red as Brazil stunned by Japan while Argentina’s post-Messi era starts with defeat",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNin7g-3dhtmiaUT1UnDxj_AgfwCT0dwbiI2nZjwAWtETTTIF_PqvDnYn9-qs"
-        },
-        {
-          "url": "https://www.reuters.com/sports/soccer/japans-sakamoto-secures-last-gasp-3-2-friendly-win-over-brazil-2026-11-14/",
-          "title": "Japan's Sakamoto secures last-gasp 3-2 friendly win over Brazil",
+          "url": "https://www.reuters.com/world/india/ipl-career-over-dhoni-unveiled-chennai-team-mentor-2026-11-17/",
+          "title": "IPL career over, Dhoni unveiled as Chennai team mentor",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPaaMJabBojtnrcIK6Hjnar_SbPTYY3teY9TbqAFwuefHb2H_mPcYN01U-z5E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkeCjS1Il0nlETUrevxnl3f5j-o3dgnUUhsD6ourOLIkZGK8g4WlwfetjvLbI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ipl-2027-rumours-csk-fans-062900902.html",
+          "title": "IPL 2027 rumours: CSK fans believe MS Dhoni may have retired, won't be retained for auction",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf44kxylj_ceoyqTPzFT_ZBFHnSorNAK4_DyXWAGiqr2HskvfTyQJkyggq670"
         }
       ]
     },
     {
-      "query": "school delays",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T10:40:00Z",
-      "related_news_urls": [
-        "https://missouriindependent.com/2026/11/16/missouri-school-funding-task-force-delays-recommendations-as-budget-cuts-loom/",
-        "https://www.memphisdemocrat.com/2026/11/12/consolidation-debate-raises-questions-for-rural-schools/",
-        "https://www.lincolncountyjournal.com/2026/11/16/news/h1-funding-decreases-placing-financial-strain-on-schools-h1/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3UT0k9S4kruvqwzAWTU2Fe0zMxxSCrEmsY2Pa6_4ze-jerx77fXUUq0xqbVE",
-      "image_credit": "Missouri Independent",
-      "news": [
-        {
-          "url": "https://missouriindependent.com/2026/11/16/missouri-school-funding-task-force-delays-recommendations-as-budget-cuts-loom/",
-          "title": "Missouri school funding task force delays recommendations as budget cuts loom",
-          "publisher": "Missouri Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3UT0k9S4kruvqwzAWTU2Fe0zMxxSCrEmsY2Pa6_4ze-jerx77fXUUq0xqbVE"
-        },
-        {
-          "url": "https://www.memphisdemocrat.com/2026/11/12/consolidation-debate-raises-questions-for-rural-schools/",
-          "title": "Consolidation Debate Raises Questions For Rural Schools",
-          "publisher": "Memphis Democrat",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReUUsJyR4g4PtswnuY-qmPuxqqdeBJA67UWj3VHe7uIjGloDiT2Jpm4n1P6To"
-        },
-        {
-          "url": "https://www.lincolncountyjournal.com/2026/11/16/news/h1-funding-decreases-placing-financial-strain-on-schools-h1/",
-          "title": "Funding decreases placing financial strain on schools",
-          "publisher": "Lincoln County Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIDKRCmh0-ghRjWgX7AeQJwg2JkDAlrqc7_SjGnba8GQYFcalf9ed0SBL0_ss"
-        }
-      ]
-    },
-    {
-      "query": "haiti",
+      "query": "r.j. decker",
       "approx_searches": "100+",
-      "published_at": "2026-11-17T10:40:00Z",
+      "published_at": "2026-11-17T11:10:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/world/americas/martine-moise-widow-haitis-slain-president-registers-presidential-candidate-2026-11-16/",
-        "https://apnews.com/article/haiti-elections-presidential-candidates-gang-violence-7fab49c6993714b99f496d0241d4180e",
-        "https://www.bbc.com/news/articles/cmwy83432q1jo"
+        "https://www.imdb.com/news/ni66111315/?ref_=nwc_art_perm",
+        "https://collider.com/rj-decker-season-3-abc-renewal-status/",
+        "https://www.tvinsider.com/1303443/high-potential-morgan-karadec-platonic-romantic-season-3-fans-debate/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVAJMrnMFpRMOSkixbTTitjBbaooOC8nsU8dAnadEeR5M15rnedvoma1vl3mo",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8rB8AbxlpYra_ssvf97cz2lVIKi2oOS6tsqxxkjzmri8ry6iOW4d1fTgSEQ",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.reuters.com/world/americas/martine-moise-widow-haitis-slain-president-registers-presidential-candidate-2026-11-16/",
-          "title": "Widow of Haiti's slain leader Moise to contest presidential election",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVAJMrnMFpRMOSkixbTTitjBbaooOC8nsU8dAnadEeR5M15rnedvoma1vl3mo"
-        },
-        {
-          "url": "https://apnews.com/article/haiti-elections-presidential-candidates-gang-violence-7fab49c6993714b99f496d0241d4180e",
-          "title": "Haiti revs up for elections as enrollment closes for presidential and parliamentary candidates",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEptG48ug6iMwli-6ukcUTf6BP2vwQHRm4XuWd5RDc-I9Zn4l4Z32YdBN0IAM"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cmwy83432q1jo",
-          "title": "Martine Moise, wife of assassinated ex-Haitian leader, registers for presidential election",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTG_xQEOVi_X9JILKd8N3BYbSA9envH_l4pF5KvuuXNcEoo4ZpCCxD5FEwgwM"
-        }
-      ]
-    },
-    {
-      "query": "mets",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T10:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans",
-        "https://www.nytimes.com/athletic/7775083/2026/11/12/tarik-skubal-scott-boras-history-in-motion/",
-        "https://bleacherreport.com/articles/25533667-new-tarik-skubal-rumors-historic-contract-price-threat-dodgers-rivals-mlb-free-agency"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4k_TsL7nzfWH6UscKfSwGSeFul869g5SCnfN3rDQhlyWeuA-NJzivsTFJ1T8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans",
-          "title": "Every MLB team's chance of signing Skubal -- and their backup plans",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4k_TsL7nzfWH6UscKfSwGSeFul869g5SCnfN3rDQhlyWeuA-NJzivsTFJ1T8"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7775083/2026/11/12/tarik-skubal-scott-boras-history-in-motion/",
-          "title": "The November of Tarik Skubal and Scott Boras is here. A decision years ago set it all in motion",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxBM1T89pT2aot0Wq2NNmHjWq3jhsCQB7tB6uIIpSi1O6u14pTkCVqGgkhEpY"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25533667-new-tarik-skubal-rumors-historic-contract-price-threat-dodgers-rivals-mlb-free-agency",
-          "title": "New Tarik Skubal Rumors on Historic Contract Price & Threat from Dodgers' Rivals in MLB Free Agency",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSns3jsLaG4ED4RiLR7VMZeT_bMWj9a3w99byHrLWNFt2lbGTMVGtqxYAPmpoA"
-        }
-      ]
-    },
-    {
-      "query": "ncis",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T10:30:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-08/-ncis-new-york-part-of-10b-franchise-is-fall-s-most-watched-new-show",
-        "https://www.thehypemagazine.com/2026/11/16/ncis-new-york-sells-135-international-markets/",
-        "https://www.imdb.com/news/ni66114757/?ref_=int_nwr_3"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLlsgLN7YNM2-esH5eUO4_MA4-jHOG9NlxU30AxoEA6Z0iIAbqmtrJ0NMdNBo",
-      "image_credit": "Bloomberg",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-08/-ncis-new-york-part-of-10b-franchise-is-fall-s-most-watched-new-show",
-          "title": "The $10 Billion TV Franchise That Nobody Talks About",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLlsgLN7YNM2-esH5eUO4_MA4-jHOG9NlxU30AxoEA6Z0iIAbqmtrJ0NMdNBo"
-        },
-        {
-          "url": "https://www.thehypemagazine.com/2026/11/16/ncis-new-york-sells-135-international-markets/",
-          "title": "NCIS New York Sells Across 135 International Markets",
-          "publisher": "The Hype Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_-TL8UOWGbPTiiNXCW5eAWFHEPjp8DOY2s2_oRcfrYwi3InPp51H_I0-EuS4"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66114757/?ref_=int_nwr_3",
-          "title": "NCIS: New York Makes A Massive Breakthrough As Series Reaches Major Milestone",
+          "url": "https://www.imdb.com/news/ni66111315/?ref_=nwc_art_perm",
+          "title": "High Potential Season 3: Everything We Know So Far",
           "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwoq528ic6opU-58OYX7ksf1iDSUWN7kJO2j71NYWX5oOFmpg6FRIk40Bu2HE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8rB8AbxlpYra_ssvf97cz2lVIKi2oOS6tsqxxkjzmri8ry6iOW4d1fTgSEQ"
+        },
+        {
+          "url": "https://collider.com/rj-decker-season-3-abc-renewal-status/",
+          "title": "ABC’s ‘High Potential’ Replacement Isn’t Officially Renewed for Season 3 Yet",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkomo4JtKM5Vpx9EDWorqfIHoHPRZxqalqM5TSez6UhNB0cBwoGqbmyXZVAEs"
+        },
+        {
+          "url": "https://www.tvinsider.com/1303443/high-potential-morgan-karadec-platonic-romantic-season-3-fans-debate/",
+          "title": "‘High Potential’ Fans Debate Whether Morgan & Karadec Should Get Together",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGJkKIQfGDcc62WZ8edmcxtyVNpQs3jMNOmfMkp9nIXAc0lAYkyHqptqtXj58"
         }
       ]
     },
     {
-      "query": "bahrain intercepts iranian drones",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T10:30:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz",
-        "https://apnews.com/article/iran-trump-israel-bahrain-attacks-582e0b5d51be06f0ed630fac24f39b72",
-        "https://www.cnn.com/2026/11/15/middleeast/iran-bahrain-attacks-trump-intl"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShdNAfffaQashKC1FlWVmmedq1zBMPVCyfToJXIlZqNazgKXtBmlsMdW2b9D8",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz",
-          "title": "Iran war live: Bahrain targeted by drones; Qatar in talks with Iranians",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShdNAfffaQashKC1FlWVmmedq1zBMPVCyfToJXIlZqNazgKXtBmlsMdW2b9D8"
-        },
-        {
-          "url": "https://apnews.com/article/iran-trump-israel-bahrain-attacks-582e0b5d51be06f0ed630fac24f39b72",
-          "title": "A 2-month lull ends with Iran’s third strike on US targets in Bahrain",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXHT_mNA8t0GYRESH1JlLVBx8eC-QgAs8B3BkeeJhX8vxH3MR87q8LLOvvEd0"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/15/middleeast/iran-bahrain-attacks-trump-intl",
-          "title": "Iran raises stakes with new drone attacks as Trump signals a waiting game",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMcujZ3f4jsI8dHb9YdlJ48AyHIPDxyj2ZGB45zvh_sSI3EekTq69NNGWwlUE"
-        }
-      ]
-    },
-    {
-      "query": "alabama crimson tide football",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T10:20:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/alabama/article/game-balls-bama247-selects-top-performers-from-alabamas-21-6-win-on-the-road-at-vanderbilt-292850532/",
-        "https://www.espn.com/college-football/recap/_/gameId/401856889",
-        "https://www.cbssports.com/college-football/news/college-football-grades-results-week-11-2026-notre-dame-alabama/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrOQxLEEimlgiLzH4AuWezZ7O2sY9Mqi2khRSg5kh1IMlN6XVWXBHjcgei4TI",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/alabama/article/game-balls-bama247-selects-top-performers-from-alabamas-21-6-win-on-the-road-at-vanderbilt-292850532/",
-          "title": "Game Balls: Bama247 selects top performers from Alabama's 21-6 win on the road at Vanderbilt",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrOQxLEEimlgiLzH4AuWezZ7O2sY9Mqi2khRSg5kh1IMlN6XVWXBHjcgei4TI"
-        },
-        {
-          "url": "https://www.espn.com/college-football/recap/_/gameId/401856889",
-          "title": "Alabama 21-6 Vanderbilt (Nov 14, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZS7mhGaSjO8rjvheBB029WJNOg6JXt80O3VCNtXjsNtdn5WrNiDZ3gJGYtzM"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/college-football-grades-results-week-11-2026-notre-dame-alabama/",
-          "title": "College football grades: Notre Dame earns 'A' mark for beatdown, Alabama gets 'C+' on Week 11 report card",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17_rtkhPPXd6lWJsFqBi7iFLs9aXm03BVFdnrh5KVTaFScG20XtyIvuenXTc"
-        }
-      ]
-    },
-    {
-      "query": "market",
+      "query": "nyt connections hints today",
       "approx_searches": "10000+",
-      "published_at": "2026-11-17T10:10:00Z",
+      "published_at": "2026-11-17T11:10:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html",
-        "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html",
-        "https://www.cnn.com/2026/11/16/business/stocks-nvidia-ai-anthropic"
+        "https://www.nytimes.com/2026/11/16/crosswords/connections-companion-1255.html",
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-15-2026",
+        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-17-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvaftCHyHrfr9GK6a7HINpqtn0Kl1gxGVCxuYuddPE9BXsjJizlFUfZAQRK88",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-hr5uEQdpp6AE1n_KDBGuVv_3m7n7AmF6Y4MzUz7kLHnrxHrvAqVutOoPqHo",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html",
-          "title": "Stock futures fall after Nvidia pressures tech to start the week: Live updates",
-          "publisher": "CNBC",
+          "url": "https://www.nytimes.com/2026/11/16/crosswords/connections-companion-1255.html",
+          "title": "NYT Connections Answers for November 17, 2026",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvaftCHyHrfr9GK6a7HINpqtn0Kl1gxGVCxuYuddPE9BXsjJizlFUfZAQRK88"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-hr5uEQdpp6AE1n_KDBGuVv_3m7n7AmF6Y4MzUz7kLHnrxHrvAqVutOoPqHo"
         },
         {
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html",
-          "title": "Stock market today: Dow, S&P 500 futures slip, and Nasdaq futures slip in countdown to Nvidia earnings",
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-15-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 15, 2026",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-17-2026",
+          "title": "Today's NYT Connections Hints (and Answer) for Sunday, November 17, 2026",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLbdxD7-TqPrFNKYbrlyQvEpjxIszLuCk-iy90goH2taYz8Aopub1ArxTgoGA"
+        }
+      ]
+    },
+    {
+      "query": "andrew scott",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T11:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/culture/article/20261111-the-moving-inside-story-of-how-ian-charleson-played-hamlet-on-stage-while-dying-of-aids",
+        "https://www.vanityfair.com/story/andrew-scott-elsinore-billie-piper-screening-room",
+        "https://www.vogue.com/article/andrew-scott-ian-charleson-elsinore-interview"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AIVH90dCvFgKlOooIQP4Kq9XOw4K-_AcO9bYgogDANRbnSjYmZq5T4lZ62c",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/culture/article/20261111-the-moving-inside-story-of-how-ian-charleson-played-hamlet-on-stage-while-dying-of-aids",
+          "title": "'A hell of a thing to take on': The moving inside story of how Ian Charleson played Hamlet on stage while dying of Aids",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AIVH90dCvFgKlOooIQP4Kq9XOw4K-_AcO9bYgogDANRbnSjYmZq5T4lZ62c"
+        },
+        {
+          "url": "https://www.vanityfair.com/story/andrew-scott-elsinore-billie-piper-screening-room",
+          "title": "Andrew Scott On What Makes Elsinore “So Moving”",
+          "publisher": "Vanity Fair",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0WOOSlQIPxDuas8-mbj5CsbqJO5DV5oJaIqUIu5On0oYV3itQiMkSZ0HG6Q8"
+        },
+        {
+          "url": "https://www.vogue.com/article/andrew-scott-ian-charleson-elsinore-interview",
+          "title": "Andrew Scott on the Real-Life Story Behind His Heartbreaking Performance in ‘Elsinore’",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStBa7UDTWy_xaMVEe59C2zQNj1oxPeUwUYU9c3VTpiLc_5_3gufUmTljW7iRQ"
+        }
+      ]
+    },
+    {
+      "query": "brasil",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T11:00:00Z",
+      "related_news_urls": [
+        "https://g1.globo.com/jornal-nacional/noticia/2026/11/16/sob-a-alegacao-de-risco-de-a-tecnologia-ser-desviada-para-a-china-eua-restringem-acesso-do-brasil-a-chips-avancados-de-ia.ghtml",
+        "https://noticias.uol.com.br/colunas/mariana-sanches/2026/11/16/restricao-a-chips-dos-eua-gera-custo-politico-e-risco-de-sancoes-ao-brasil.htm",
+        "https://www.cnnbrasil.com.br/economia/money/macroeconomia/eua-vao-restringir-acesso-da-china-a-chips-de-ia-medida-inclui-brasil/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLkRHyTIIhGgcqnzos0zPnczfK3Q4IWbcOh6cAq8a7JSVxB5HAKbiVQtkyGKY",
+      "image_credit": "G1",
+      "news": [
+        {
+          "url": "https://g1.globo.com/jornal-nacional/noticia/2026/11/16/sob-a-alegacao-de-risco-de-a-tecnologia-ser-desviada-para-a-china-eua-restringem-acesso-do-brasil-a-chips-avancados-de-ia.ghtml",
+          "title": "Sob a alegação de risco de a tecnologia ser desviada para a China, EUA restringem acesso do Brasil a chips avançados de IA",
+          "publisher": "G1",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLkRHyTIIhGgcqnzos0zPnczfK3Q4IWbcOh6cAq8a7JSVxB5HAKbiVQtkyGKY"
+        },
+        {
+          "url": "https://noticias.uol.com.br/colunas/mariana-sanches/2026/11/16/restricao-a-chips-dos-eua-gera-custo-politico-e-risco-de-sancoes-ao-brasil.htm",
+          "title": "Mariana Sanches: Restrição a chips dos EUA gera custo político e risco de sanções ao Brasil",
+          "publisher": "UOL Notícias",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmp0VPBIdvEDitzK9yOUR9RBSwnizvVBZymSbE4nZJEZzj11Hb03zcO54vH7k"
+        },
+        {
+          "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/eua-vao-restringir-acesso-da-china-a-chips-de-ia-medida-inclui-brasil/",
+          "title": "EUA vão restringir acesso da China a chips de IA; medida inclui Brasil",
+          "publisher": "CNN Brasil",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMYxohcI4pq_3jISlR3kgf9FcehGpQRlwSkhQx4LG0ilzzkCUsTODEzGzu9Eg"
+        }
+      ]
+    },
+    {
+      "query": "ethereum price",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T11:00:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-16-2026/card/three-reasons-behind-bitcoin-s-selloff-this-month-1qzg2ANrWXBDc0k5HBY0",
+        "https://www.investors.com/news/bitcoin-price-unravels-bitcoin-liquidations-etf-flows-anthropic-ipo-spacex-crypto-stocks/",
+        "https://finance.yahoo.com/markets/crypto/articles/tom-lee-blames-nvidia-anthropic-203603583.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-16-2026/card/three-reasons-behind-bitcoin-s-selloff-this-month-1qzg2ANrWXBDc0k5HBY0",
+          "title": "Three Reasons Behind Bitcoin’s Selloff This Month",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
+        },
+        {
+          "url": "https://www.investors.com/news/bitcoin-price-unravels-bitcoin-liquidations-etf-flows-anthropic-ipo-spacex-crypto-stocks/",
+          "title": "Bitcoin Tumbles Ahead Of Anthropic IPO. Is It Paralleling Its SpaceX Sell Off?",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFCT_l40_-iGEREl6pZa7R6wzj9W67q2VxunKDsRkQ-GrepxuaiZNT6aIUo1s"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/crypto/articles/tom-lee-blames-nvidia-anthropic-203603583.html",
+          "title": "Tom Lee Blames Nvidia and Anthropic IPO for Ethereum Plunge as Bitmine Buys the Dip",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkWwOM7So8Gq8uqG7TMYWAwUv1lzzILAqs8h83bnBnUkcvrF3IQF8eHeKWXao"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/16/business/stocks-nvidia-ai-anthropic",
-          "title": "Stocks slide to kick off major week for Wall Street",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCzT8ubMf5MrXsmou43AJm8XHKOQyK3wkHhcKm0V-jhgsLvPymttdu2YkymHs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8"
         }
       ]
     },
     {
-      "query": "singapura x brasil",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T09:50:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "singapour – brésil",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T09:50:00Z",
+      "query": "doomsday trailer",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T11:00:00Z",
       "related_news_urls": [
-        "https://www.ouest-france.fr/sport/football/equipe-argentine/singapour-angola-pourquoi-certains-pays-damerique-du-sud-jouent-ils-contre-des-nations-si-mal-classees-en-amical-3e65ec54-de80-11f1-a62b-776e3051b0df",
-        "https://www.vietnam.vn/fr/singapore-tinh-chuyen-dim-brazil-vao-khung-hoang",
-        "https://africafootunited.com/singapour-bresil-les-compositions-officielles-devoilees/"
+        "https://www.imdb.com/news/ni66112066/?ref_=int_nwr_3",
+        "https://www.empireonline.com/movies/news/avengers-doomsday-covers-revealed/",
+        "https://www.chosun.com/english/kpop-culture-en/2026/11/16/QJJLGU3UGZCE7DSJR36FDFO2DQ/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ6EKK_-ZRKqQesMj_qRg5kXVjaX6RTjqXj8FcXAsg4UgqbSi52fNrab5dKFE",
-      "image_credit": "Ouest-France",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxXOylsE44wQ4qGm_-kIhhBGtxu_D3GHE5gYYEkhdi1z7WPCWb8YJC3pDV-LA",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.ouest-france.fr/sport/football/equipe-argentine/singapour-angola-pourquoi-certains-pays-damerique-du-sud-jouent-ils-contre-des-nations-si-mal-classees-en-amical-3e65ec54-de80-11f1-a62b-776e3051b0df",
-          "title": "Singapour, Angola… Pourquoi certains pays d’Amérique du Sud jouent-ils contre des nations si mal classées en amical ?",
-          "publisher": "Ouest-France",
+          "url": "https://www.imdb.com/news/ni66112066/?ref_=int_nwr_3",
+          "title": "Update: Avengers: Doomsday Trailer Release Date Revealed As Anthony Mackie Pushes For Captain America 5",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ6EKK_-ZRKqQesMj_qRg5kXVjaX6RTjqXj8FcXAsg4UgqbSi52fNrab5dKFE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxXOylsE44wQ4qGm_-kIhhBGtxu_D3GHE5gYYEkhdi1z7WPCWb8YJC3pDV-LA"
         },
         {
-          "url": "https://www.vietnam.vn/fr/singapore-tinh-chuyen-dim-brazil-vao-khung-hoang",
-          "title": "Singapour prévoit de plonger le Brésil dans la crise.",
-          "publisher": "Vietnam.vn",
+          "url": "https://www.empireonline.com/movies/news/avengers-doomsday-covers-revealed/",
+          "title": "Empire's World-Exclusive Avengers: Doomsday covers are here – and there are four to collect",
+          "publisher": "Empire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1lUooEjp4v-M0fKk0vmJfOO2NkJgxx-0TJt85xeN3BHeVsiUvNHe-S2FzTPM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJOScLuswm6L09nOczuvSL7MCTZYGYbk5fxItu4rTxhWYQ98JmcFPxzxb91ys"
         },
         {
-          "url": "https://africafootunited.com/singapour-bresil-les-compositions-officielles-devoilees/",
-          "title": "Singapour-Brésil : les compositions officielles dévoilées",
-          "publisher": "AfricaFootUnited",
+          "url": "https://www.chosun.com/english/kpop-culture-en/2026/11/16/QJJLGU3UGZCE7DSJR36FDFO2DQ/",
+          "title": "Avengers, X-Men, Fantastic Four Battle Doctor Doom in 'Doomsday'",
+          "publisher": "조선일보",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRunzQUYifUzsPbAKfq2c3A46DHYZWIAZcUTQbgSJZ9dNQaNQT7I9lwo1ooQ4Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQk4piyxUVAHjfy7iJ9L4eYLYW67eJ_xxeyqoNt_PhjeMcJVw2wzIiSpAzMSM"
+        }
+      ]
+    },
+    {
+      "query": "boston red sox",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T11:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/yankees-lose-free-agent-pitcher-201719182.html",
+        "https://www.mlbtraderumors.com/2026/11/red-sox-michael-arias-agree-to-minor-league-deal.html",
+        "https://www.sportingnews.com/us/mlb/boston-red-sox/news/red-sox-sign-yankees-pitching-prospect-latest-roster-move/8139d5db891d0cd996016eca"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxJH57BKeUJCVy2UoLWPcm-TLrZ92sRT0jMlPZxhWMTL66amvUCdfaN8r0gHk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/yankees-lose-free-agent-pitcher-201719182.html",
+          "title": "Yankees lose free agent pitcher to rival Red Sox",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxJH57BKeUJCVy2UoLWPcm-TLrZ92sRT0jMlPZxhWMTL66amvUCdfaN8r0gHk"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/red-sox-michael-arias-agree-to-minor-league-deal.html",
+          "title": "Red Sox, Michael Arias Agree To Minor League Deal",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2PeZBzQzPjeHevmEd4bw_ofzMthfnvGaX36_a2dvb1EwKlOI07YxIPQFMHvA"
+        },
+        {
+          "url": "https://www.sportingnews.com/us/mlb/boston-red-sox/news/red-sox-sign-yankees-pitching-prospect-latest-roster-move/8139d5db891d0cd996016eca",
+          "title": "Red Sox sign former Yankees pitching prospect in latest roster move",
+          "publisher": "Sporting News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKt9-mmHiZyI3V4vxhw7z1OKMb1oRBZGJ_u9jIj1vLFM6PwJBDtruH6NdgtI4"
+        }
+      ]
+    },
+    {
+      "query": "boxeo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T10:50:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/boxeo/nota/_/id/17524267/jorge-linares-ice-confirma-gilberto-mendoza",
+        "https://www.univision.com/noticias/inmigracion/autoridades-migratorias-de-eeuu-detienen-al-exboxeador-jorge-linares-en-el-paso",
+        "https://www.france24.com/es/minuto-a-minuto/20261117-excampe%C3%B3n-mundial-de-boxeo-venezolano-es-detenido-por-inmigraci%C3%B3n-de-eeuu"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXOxhPkUskruTqB7hQFWZ2k-MTI8SVGRKJqUbCOtaA31ruZGpbh8D4lHWwYs",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/boxeo/nota/_/id/17524267/jorge-linares-ice-confirma-gilberto-mendoza",
+          "title": "Jorge Linares, bajo custodia de ICE, confirma Gilberto Mendoza",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXOxhPkUskruTqB7hQFWZ2k-MTI8SVGRKJqUbCOtaA31ruZGpbh8D4lHWwYs"
+        },
+        {
+          "url": "https://www.univision.com/noticias/inmigracion/autoridades-migratorias-de-eeuu-detienen-al-exboxeador-jorge-linares-en-el-paso",
+          "title": "Autoridades migratorias de EEUU detienen al exboxeador Jorge Linares en El Paso",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPgIFd_ImcbJ9WuJ7HOCk-y7blaflCh6shXH73wnjRtMhB8v1Qosa75mpni9k"
+        },
+        {
+          "url": "https://www.france24.com/es/minuto-a-minuto/20261117-excampe%C3%B3n-mundial-de-boxeo-venezolano-es-detenido-por-inmigraci%C3%B3n-de-eeuu",
+          "title": "Excampeón mundial de boxeo venezolano es detenido por inmigración de EEUU",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSBxN1kY9EUwgSXrkRzBjz0L-2J9fzLPF64RRD3UuIlYpHBpBeHggd5H82uas"
+        }
+      ]
+    },
+    {
+      "query": "nsa",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T10:50:00Z",
+      "related_news_urls": [
+        "https://www.war.gov/News/News-Stories/Article/Article/4649563/nsa-warns-about-potential-malware-hijacking-cac-enabled-computers/",
+        "https://ca.news.yahoo.com/china-biggest-threat-us-security-160106011.html",
+        "https://www.news5cleveland.com/news/local-news/china-is-the-biggest-threat-to-us-security-nsa-deputy-director-says-in-news-5-cleveland-interview"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR95a_oJcGlzmKIBq_Id7LzNkUbkt0eOCDfojUOlWoZHN6x1zcsssO5cqi55tk",
+      "image_credit": "U.S. Department of War (.gov)",
+      "news": [
+        {
+          "url": "https://www.war.gov/News/News-Stories/Article/Article/4649563/nsa-warns-about-potential-malware-hijacking-cac-enabled-computers/",
+          "title": "NSA Warns About Potential Malware Hijacking CAC-Enabled Computers",
+          "publisher": "U.S. Department of War (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR95a_oJcGlzmKIBq_Id7LzNkUbkt0eOCDfojUOlWoZHN6x1zcsssO5cqi55tk"
+        },
+        {
+          "url": "https://ca.news.yahoo.com/china-biggest-threat-us-security-160106011.html",
+          "title": "China is the biggest threat to US security, NSA deputy director tells News 5",
+          "publisher": "Yahoo News Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47cGHs4C_uxl2F49zk63IjONXUEDPeYt3k-47SqJK1VaK6udc77BWJRKONmU"
+        },
+        {
+          "url": "https://www.news5cleveland.com/news/local-news/china-is-the-biggest-threat-to-us-security-nsa-deputy-director-says-in-news-5-cleveland-interview",
+          "title": "China is the biggest threat to US security, NSA deputy director tells News 5",
+          "publisher": "News 5 Cleveland WEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQagXrAp5IOjT0oI2iewr_IKKgGnus4Zd1PywCLz75NPuipuFymGuNlwkY6Rsc"
         }
       ]
     }
