@@ -3,12 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T13:01:26.700785Z",
+  "checked_at": "2026-11-17T13:31:02.269332Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ethiopia vs mozambique",
+      "query": "cyber attacks",
       "approx_searches": "200+",
+      "published_at": "2026-11-17T13:10:00Z",
+      "related_news_urls": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
+        "https://www.upi.com/Top_News/World-News/2026/11/17/Google-artificial-intelligence-cyberattack/6381794893989/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA",
+      "image_credit": "Google Cloud",
+      "news": [
+        {
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+          "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+          "publisher": "Google Cloud",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
+          "title": "The era of autonomous attacks has arrived.",
+          "publisher": "blog.google",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiublQ9Y4VBPR2O9vWESkNe_aHyYueCv2PeexKRuTbBvzUmHir69PIXxeDyeo"
+        },
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2026/11/17/Google-artificial-intelligence-cyberattack/6381794893989/",
+          "title": "In a first, Google detects AI-automated cyberattack",
+          "publisher": "upi",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH19jM8JWTnL4jZYENMlP5S99xRVyGlS9TE81RvcDAINypqzzjQhTerdRgZSk"
+        }
+      ]
+    },
+    {
+      "query": "japan vs paraguay",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T13:10:00Z",
+      "related_news_urls": [
+        "https://www.vssports.com.py/versus/2026/11/17/paraguay-tiene-equipo-confirmado-para-su-ultimo-baile-del-ano",
+        "https://www.ole.com.ar/futbol-internacional/america/gustavo-alfaro-paraguay-japon-fecha-fifa-amistoso_0_pyEifCTwzA.html",
+        "https://rcc.com.py/deporte/solo-doce-sobreviven-en-la-albirroja/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAD3nBydC-fpNaHpfg61x6g-WiQIFtzBb_ktfMV2eKIXHT_bhm1QNN4W5OclM",
+      "image_credit": "VS Sports",
+      "news": [
+        {
+          "url": "https://www.vssports.com.py/versus/2026/11/17/paraguay-tiene-equipo-confirmado-para-su-ultimo-baile-del-ano",
+          "title": "Paraguay tiene equipo confirmado para su último baile del año",
+          "publisher": "VS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAD3nBydC-fpNaHpfg61x6g-WiQIFtzBb_ktfMV2eKIXHT_bhm1QNN4W5OclM"
+        },
+        {
+          "url": "https://www.ole.com.ar/futbol-internacional/america/gustavo-alfaro-paraguay-japon-fecha-fifa-amistoso_0_pyEifCTwzA.html",
+          "title": "El elogio top de Gustavo Alfaro para Japón: \"Está entre las diez mejores selecciones del mundo\"",
+          "publisher": "Olé",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrYp7zk-TxHJEz-NhuzLC2qCeGvh4ufm72rG4ZbLjVZIjGGV_DsSiJ-gZosIE"
+        },
+        {
+          "url": "https://rcc.com.py/deporte/solo-doce-sobreviven-en-la-albirroja/",
+          "title": "Solo doce sobreviven en la Albirroja",
+          "publisher": "Red Chaqueña de Comunicaciones",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJMfWMEmIHOZJr63i8qmt4_ZI-cO9qFnT792l9BCsxdsA8nHaa5djhT5GlZSc"
+        }
+      ]
+    },
+    {
+      "query": "africa cup of nations qualification",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T13:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cm93rpezkq4gt",
+        "https://www.cafonline.com/afcon2025/news/senegal-cote-divoire-cameroon-and-benin-strengthen-afcon-qualification-bids/",
+        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vdHJhdmlzLWF1c3Rpbi5naXRodWIuaW8vZW5tL2VudS54bWwiLz48L2tycGFubz4=&id=video-watch-senegal-vs-sudan-match-lie-bosdzne"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_W6TslCw2T7LIYt3FfCG_SlkBWW3aNX-IufQtCU3goOJcPIWgZ7FYLPovB60",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cm93rpezkq4gt",
+          "title": "Sudan vs Senegal: Africa Cup of Nations Qualification stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_W6TslCw2T7LIYt3FfCG_SlkBWW3aNX-IufQtCU3goOJcPIWgZ7FYLPovB60"
+        },
+        {
+          "url": "https://www.cafonline.com/afcon2025/news/senegal-cote-divoire-cameroon-and-benin-strengthen-afcon-qualification-bids/",
+          "title": "Senegal, Côte d'Ivoire, Cameroon and Benin strengthen AFCON qualification bids",
+          "publisher": "CAFOnline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdfuwX1rVt53ris3TOb9310w1-dBzEbGb-wLfutCS0AFJDePzisGHorPihzw"
+        },
+        {
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vdHJhdmlzLWF1c3Rpbi5naXRodWIuaW8vZW5tL2VudS54bWwiLz48L2tycGFubz4=&id=video-watch-senegal-vs-sudan-match-lie-bosdzne",
+          "title": "!$+[WATCHLIVE]ESPN@] Watch Senegal vs Sudan 𝐋𝐈𝐕𝐄 𝚝𝚘𝚍𝚊𝚢 ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 16 november 2026",
+          "publisher": "日本取引所グループ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2cXB0sxIQRv4qeO1fc8kb9r_Iiac34nC352_ex-zbdbx-QBpKnxgcWFpdtuo"
+        }
+      ]
+    },
+    {
+      "query": "so you are horse",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T13:10:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/dead-racehorse-so-you-are-found-dumpster-melbourne-cup/",
+        "https://people.com/thoroughbred-racehorse-found-dead-in-dumpster-2-weeks-after-competing-melbourne-cup-12260002",
+        "https://www.bbc.com/news/articles/ck1ewl2zjqgzo"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpQ1Sp2U5mcS1LRjd74n5GTIYXkSvpOxLSk21UUi2DiCBg6v_M2I-kESPNiB0",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/dead-racehorse-so-you-are-found-dumpster-melbourne-cup/",
+          "title": "Dead racehorse found in dumpster days after running in prestigious race: \"Distressing and completely unacceptable\"",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpQ1Sp2U5mcS1LRjd74n5GTIYXkSvpOxLSk21UUi2DiCBg6v_M2I-kESPNiB0"
+        },
+        {
+          "url": "https://people.com/thoroughbred-racehorse-found-dead-in-dumpster-2-weeks-after-competing-melbourne-cup-12260002",
+          "title": "Thoroughbred Racehorse Found Dead in Dumpster 2 Weeks After Running in Major Championship",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsMk8Yb9jgrEcIeXZeKwjfQt7v1I1Oks7J7kCSNxYLJSaNULkzOQ4V8uR2Llo"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/ck1ewl2zjqgzo",
+          "title": "So You Are: Body of Melbourne Cup horse found dumped in Sydney skip",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTaRhid-_5sky94cEQEb0atfepwJlYp8cL88tbhK2Uf2wajPCeHmKcioGYveo"
+        }
+      ]
+    },
+    {
+      "query": "rafael jodar",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T13:00:00Z",
+      "related_news_urls": [
+        "https://www.readingeagle.com/2026/11/15/zverev-abre-las-finales-atp-con-una-victoria-convincente-sobre-jodar/",
+        "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-results",
+        "https://www.france24.com/es/minuto-a-minuto/20261115-zverev-es-demasiado-fuerte-para-un-j%C3%B3dar-debutante-en-el-masters"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlEpnCAycQ3e4CaeByGlOpPopNv-_cFFuTUFpJnDNdW-pLyyNnoGswSf0AmU",
+      "image_credit": "Reading Eagle",
+      "news": [
+        {
+          "url": "https://www.readingeagle.com/2026/11/15/zverev-abre-las-finales-atp-con-una-victoria-convincente-sobre-jodar/",
+          "title": "Zverev abre las Finales ATP con una victoria convincente sobre Jodar",
+          "publisher": "Reading Eagle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlEpnCAycQ3e4CaeByGlOpPopNv-_cFFuTUFpJnDNdW-pLyyNnoGswSf0AmU"
+        },
+        {
+          "url": "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-results",
+          "title": "¿Cuáles fueron los resultados de las Nitto ATP Finals?",
+          "publisher": "Nitto ATP Finals",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSlkVLen6f6twXKM69RZQyxUXSNRfsE1N1PDHcr6lBgGvnYlbMeZvimmkCzk"
+        },
+        {
+          "url": "https://www.france24.com/es/minuto-a-minuto/20261115-zverev-es-demasiado-fuerte-para-un-j%C3%B3dar-debutante-en-el-masters",
+          "title": "Zverev es demasiado fuerte para un Jódar debutante en el Masters",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMQYxFg3rQLpKHD7SEOg8cZ-G_2Eq-_4XFFmIUCe_ha1Ori6ASu8MsEMSFVbk"
+        }
+      ]
+    },
+    {
+      "query": "arthur fils",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T13:00:00Z",
+      "related_news_urls": [
+        "https://www.france24.com/fr/info-en-continu/20261115-masters-atp-pour-ses-grands-d%C3%A9buts-fils-fait-trembler-shelton-mais-perd",
+        "https://www.lequipe.fr/Tennis/Article/Demarrage-a-toute-allure-puis-victime-du-service-de-bombardier-de-ben-shelton-arthur-fils-a-vecu-une-premiere-amere-aux-finales-atp/1743934",
+        "https://www.eurosport.fr/tennis/atp-finals-1/2026/atp-finals-2026-presque-aussi-fort-que-le-six-kings-slam-lincroyable-jackpot-du-masters_sto23355618/story.shtml"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh1J4wxxX7dcmPTGLZEE8_OjSTVg1otoGszJ7RvZZekyogdrNjsbUWcLq39nU",
+      "image_credit": "France 24",
+      "news": [
+        {
+          "url": "https://www.france24.com/fr/info-en-continu/20261115-masters-atp-pour-ses-grands-d%C3%A9buts-fils-fait-trembler-shelton-mais-perd",
+          "title": "Masters ATP: pour ses grands débuts, Fils fait trembler Shelton mais perd",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh1J4wxxX7dcmPTGLZEE8_OjSTVg1otoGszJ7RvZZekyogdrNjsbUWcLq39nU"
+        },
+        {
+          "url": "https://www.lequipe.fr/Tennis/Article/Demarrage-a-toute-allure-puis-victime-du-service-de-bombardier-de-ben-shelton-arthur-fils-a-vecu-une-premiere-amere-aux-finales-atp/1743934",
+          "title": "Victime du punch et du service de bombardier de Ben Shelton, Arthur Fils a vécu une première amère aux Finales ATP",
+          "publisher": "L'Équipe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSazeiBAEqPYUSVu0V9qiI8Byv9mo-KAsEH-HMyUXll8vc1ElpOIVj3b3XWN1s"
+        },
+        {
+          "url": "https://www.eurosport.fr/tennis/atp-finals-1/2026/atp-finals-2026-presque-aussi-fort-que-le-six-kings-slam-lincroyable-jackpot-du-masters_sto23355618/story.shtml",
+          "title": "ATP Finals 2026 | Presque aussi fort que le \"Six Kings Slam\" : l'incroyable jackpot du Masters",
+          "publisher": "Eurosport",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRR27nWYw1EEY3vcQy0U-8Z01lMJrF12wz4GBGINzzqy3nEsGmx6esIO4CSs24"
+        }
+      ]
+    },
+    {
+      "query": "law & order",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T13:00:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66109120/?ref_=nmnw_art_perm",
+        "https://collider.com/law-and-order-svu-break-hiatus-after-600th-episode/",
+        "https://variety.com/2026/tv/news/svu-mariska-hargitay-benson-stabler-reunion-1236945584/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzz9YrkR-_0AbzU8KX8zllsBNxSkls_WxpNVUI9Onnj73t36D3fBMlwP56jNc",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66109120/?ref_=nmnw_art_perm",
+          "title": "‘Law & Order: Special Victims Unit’ Season 28 Episode 6 Recap and Ending Explained: Why Stabler Says Goodbye to Benson",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzz9YrkR-_0AbzU8KX8zllsBNxSkls_WxpNVUI9Onnj73t36D3fBMlwP56jNc"
+        },
+        {
+          "url": "https://collider.com/law-and-order-svu-break-hiatus-after-600th-episode/",
+          "title": "'SVU' Officially Goes on Break After Its 600th Episode",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYLj5gztxBFaFs4TTOrzm21bgn5BUdkaVU2B4l8RYmzN1weD7lKWxkzoJ2oNA"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/svu-mariska-hargitay-benson-stabler-reunion-1236945584/",
+          "title": "‘SVU’ Star Mariska Hargitay Breaks Down Benson and Stabler’s Complicated Reunion and Her Final Choice: ‘There Are So Many Feelings’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfnc1qd3id-C-m3il5OBPXPvylkFSps-rxubrKaXDap6buBtK-zRzHTCNl6qk"
+        }
+      ]
+    },
+    {
+      "query": "morgan wallen presale",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T12:50:00Z",
+      "related_news_urls": [
+        "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
+        "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
+        "https://www.audacy.com/us101country/contests/win-morgan-wallen-tickets"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4G44OXFDuyuyc6Bvp7I1V4As-bR18QVIB6ElnjSGEMawiFSx3khrBrAgLC-I",
+      "image_credit": "Buffalo Bills",
+      "news": [
+        {
+          "url": "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
+          "title": "Morgan Wallen’s Last Time I Checked Tour is coming to Buffalo on July 23 and 24, 2027",
+          "publisher": "Buffalo Bills",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4G44OXFDuyuyc6Bvp7I1V4As-bR18QVIB6ElnjSGEMawiFSx3khrBrAgLC-I"
+        },
+        {
+          "url": "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
+          "title": "Morgan Wallen",
+          "publisher": "Nissan Stadium",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmXeLbwrthD3Ou0-4VCDpGZ8LXliY-U5pItDdGrqeOZb5semVdRnKAYW77SA8"
+        },
+        {
+          "url": "https://www.audacy.com/us101country/contests/win-morgan-wallen-tickets",
+          "title": "Win Morgan Wallen Tickets!",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAsnKCS1TceZVluyCSGv8GbY1VdCtbRpq6FFy0STaT63Ri0mpMGBdrCnonj4Q"
+        }
+      ]
+    },
+    {
+      "query": "ethiopia vs mozambique",
+      "approx_searches": "500+",
       "published_at": "2026-11-17T12:40:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cqkgjmm21y03t",
@@ -43,12 +323,12 @@
     },
     {
       "query": "bryson dechambeau",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-17T12:40:00Z",
       "related_news_urls": [
         "https://www.telegraph.co.uk/golf/2026/11/17/bryson-dechambeau-joins-dp-world-tour-to-end-golf-exile/",
         "https://www.espn.com/golf/story/_/id/50510068/bryson-dechambeau-join-european-tour-2027-liv-demise",
-        "https://www.golfdigest.com/story/bryson-dechambeau-dp-world-tour-2027-membership"
+        "https://www.skysports.com/golf/news/13613165/bryson-dechambeau-former-major-champion-takes-dp-world-tour-membership-for-2027-season-after-liv-golfs-collapse"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2acSFc7N6ruCS5XAcyAPppTXJQJ8Z1jZyS4KnsiyxzTJtgVRt4D9V3HFoCUE",
       "image_credit": "The Telegraph",
@@ -68,291 +348,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrPzp7TAW80p4gcjd-qOvI4nBKxjBg712ax2BcX8dS1h_5CFhS0QXOZ1MqHRI"
         },
         {
-          "url": "https://www.golfdigest.com/story/bryson-dechambeau-dp-world-tour-2027-membership",
-          "title": "Bryson DeChambeau submits DP World Tour application just before deadline, joining tour in 2027",
-          "publisher": "Golf Digest",
+          "url": "https://www.skysports.com/golf/news/13613165/bryson-dechambeau-former-major-champion-takes-dp-world-tour-membership-for-2027-season-after-liv-golfs-collapse",
+          "title": "Bryson DeChambeau has taken DP World Tour membership for the 2027 season",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY1pWS0EbmM9B6Mfo03iJ9vSPLtnD_hF57IiWVwk-cNXrNo4LsZMlng_Ixi50"
-        }
-      ]
-    },
-    {
-      "query": "tornado warning san francisco bay area",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-17T12:30:00Z",
-      "related_news_urls": [
-        "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
-        "https://www.kron4.com/weather/video-waterspout-spotted-over-sf-bay/",
-        "https://www.nbcbayarea.com/news/local/tornado-warning-water-spout-bay-area-storm/4176982/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHiqk_8Z-_bOri6dqJ_y_ETDWQ_LD2bDleAL2kxM-pG8AEabNOnrz49yPXIq4",
-      "image_credit": "ABC7 Bay Area",
-      "news": [
-        {
-          "url": "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
-          "title": "Live storm updates: Waterspouts spotted over San Francisco Bay amid severe weather",
-          "publisher": "ABC7 Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHiqk_8Z-_bOri6dqJ_y_ETDWQ_LD2bDleAL2kxM-pG8AEabNOnrz49yPXIq4"
-        },
-        {
-          "url": "https://www.kron4.com/weather/video-waterspout-spotted-over-sf-bay/",
-          "title": "Video: Waterspout spotted over SF Bay",
-          "publisher": "KRON4",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jv_q8CsqwTiHEuvWdtpg5Fhcp8e7D5gD0SIrkol6tCtUIhy_I2yu2gF4ycs"
-        },
-        {
-          "url": "https://www.nbcbayarea.com/news/local/tornado-warning-water-spout-bay-area-storm/4176982/",
-          "title": "Bay Area storm: Santa Cruz County tornado warning, twin waterspouts spotted in SF",
-          "publisher": "NBC Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDMFJnRnVP6dCowx-1HImL-3W1Ax16h8hn10t2UqvrKXezbYUVkgfDVYGzahM"
-        }
-      ]
-    },
-    {
-      "query": "sls stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T12:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/deals/eli-lilly-to-buy-calytrix-bio-for-up-to-1-5-billion-591745e4",
-        "https://finance.yahoo.com/markets/stocks/articles/sls-stock-jumps-hours-retail-015411970.html",
-        "https://www.bizjournals.com/boston/news/2026/11/16/lilly-buys-calytrix-bio.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQai4Xd4FSDcrut7LX1u9Gv1GAhjAeUJynOjlSdaUzX37vBq7uAZ7AvTbgmuLo",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/deals/eli-lilly-to-buy-calytrix-bio-for-up-to-1-5-billion-591745e4",
-          "title": "Eli Lilly to Buy Calytrix Bio for Up to $1.5 Billion",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQai4Xd4FSDcrut7LX1u9Gv1GAhjAeUJynOjlSdaUzX37vBq7uAZ7AvTbgmuLo"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sls-stock-jumps-hours-retail-015411970.html",
-          "title": "SLS Stock Jumps After-Hours: Retail Eyes Lilly’s Cancer Deal for Valuation Clues — 2 Big Investors Grab Shares",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJX-Ocwu8JrPnKzzbkQ5FMdno17jOOaOs4OfrUIAys8y0K2U3teLlIIOBkTXE"
-        },
-        {
-          "url": "https://www.bizjournals.com/boston/news/2026/11/16/lilly-buys-calytrix-bio.html",
-          "title": "Lilly’s new $1.5B acquisition is a preclinical Massachusetts biotech",
-          "publisher": "The Business Journals",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQioiDdpy4_tH0ohiuqSunteJe_LbzZfKxRZU6PFLG2Q0Y4MmwoR79Nj4c2ks4"
-        }
-      ]
-    },
-    {
-      "query": "china vs bahrain",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T12:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cwx2em8jnye3t",
-        "https://www.gdnonline.com/Details/1413064",
-        "https://www.foxsports.com/soccer/friendlies-men-china-pr-vs-bahrain-nov-17-2026-game-boxscore-1109902"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cwx2em8jnye3t",
-          "title": "China vs Bahrain: Friendlies stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
-        },
-        {
-          "url": "https://www.gdnonline.com/Details/1413064",
-          "title": "Football: Bahrain ‘ready’ for China test",
-          "publisher": "Gulf Daily News (Bahrain)",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3UEdUb1O5DviEDXhGfDMSNfnMaqWWaX1VNpKSfPNuk4Cei9rZ9Gqb2wLn2zM"
-        },
-        {
-          "url": "https://www.foxsports.com/soccer/friendlies-men-china-pr-vs-bahrain-nov-17-2026-game-boxscore-1109902",
-          "title": "China PR vs. Bahrain - Live Score - November 17, 2026",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdyn5VpqdP46hw4h_MlPfPRstLW2DsuGEsXWaIsFWVqsRj-dtlxQLGUFL05qQ"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 delay",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T12:30:00Z",
-      "related_news_urls": [
-        "https://tech4gamers.com/teacher-cancels-exams-assignments-students-enjoy-gta-6/",
-        "https://says.com/my/tech/gaming/spanish-professor-delays-exam-clears-homework-gta-6-launch-week",
-        "https://unboxholics.com/en/news/gaming/139040-i-was-your-age-when-gta-v-came-out-professors-email-goes-viral"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaKV9xvAC6Vw4mFmWGhnWUsdMz98A3YbWQZwlF4t7gwKxfEvjIpk9Gp1BEs4",
-      "image_credit": "Tech4Gamers",
-      "news": [
-        {
-          "url": "https://tech4gamers.com/teacher-cancels-exams-assignments-students-enjoy-gta-6/",
-          "title": "Teacher Cancels Exams And Assignments To Let Students Enjoy GTA 6 At Launch",
-          "publisher": "Tech4Gamers",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaKV9xvAC6Vw4mFmWGhnWUsdMz98A3YbWQZwlF4t7gwKxfEvjIpk9Gp1BEs4"
-        },
-        {
-          "url": "https://says.com/my/tech/gaming/spanish-professor-delays-exam-clears-homework-gta-6-launch-week",
-          "title": "Professor Clears Homework & Delays Exam For ‘GTA 6’ Launch Week",
-          "publisher": "SAYS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9huQTJSYqXGyK0-lWNwQsU7RRwgIzCseUXUr9gdgjhpdMHRwSBLLmavg6xBw"
-        },
-        {
-          "url": "https://unboxholics.com/en/news/gaming/139040-i-was-your-age-when-gta-v-came-out-professors-email-goes-viral",
-          "title": "\"I Was Your Age When GTA V Came Out\" – Professor's Email Goes Viral",
-          "publisher": "Unboxholics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR35IZUYpXxhXQwucXLUAW38poqWl1Zki8z-kT4mMjymDy1XqJNiJnLUHUlZeI"
-        }
-      ]
-    },
-    {
-      "query": "connections today",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T12:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/crosswords/connections-companion-1255.html",
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-17-2026",
-        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-17-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-hr5uEQdpp6AE1n_KDBGuVv_3m7n7AmF6Y4MzUz7kLHnrxHrvAqVutOoPqHo",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/16/crosswords/connections-companion-1255.html",
-          "title": "NYT Connections Answers for November 17, 2026",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-hr5uEQdpp6AE1n_KDBGuVv_3m7n7AmF6Y4MzUz7kLHnrxHrvAqVutOoPqHo"
-        },
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-17-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 17, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-17-2026",
-          "title": "Today's NYT Connections Hints (and Answer) for Sunday, November 17, 2026",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLbdxD7-TqPrFNKYbrlyQvEpjxIszLuCk-iy90goH2taYz8Aopub1ArxTgoGA"
-        }
-      ]
-    },
-    {
-      "query": "its going down strands",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T12:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/crosswords/strands-sidekick-989.html",
-        "https://mashable.com/entertainment/strands-nyt-hint-november-17-2026",
-        "https://www.pcguide.com/news/todays-nyt-strands-answers-clues-and-hints-on-november-17-puzzle-989/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcfMNFhgYomc3yQh3w2ojXdFgUCC3r4Cq4OSdAxhscnyOb4ZRiD48Kl6KFI6w",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/16/crosswords/strands-sidekick-989.html",
-          "title": "NYT Strands Hints for November 17, 2026",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcfMNFhgYomc3yQh3w2ojXdFgUCC3r4Cq4OSdAxhscnyOb4ZRiD48Kl6KFI6w"
-        },
-        {
-          "url": "https://mashable.com/entertainment/strands-nyt-hint-november-17-2026",
-          "title": "NYT Strands hints, answers for November 17, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGK32AE_lFv9Jr7NgeWtZcBtcoELPFjrXo8vtiuh4WXse0qcFcrctr0pabtRg"
-        },
-        {
-          "url": "https://www.pcguide.com/news/todays-nyt-strands-answers-clues-and-hints-on-november-17-puzzle-989/",
-          "title": "Today’s NYT Strands answers, clues, and hints on November 17 (puzzle #989)",
-          "publisher": "PC Guide",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xLR9EKGIgNwiuIJRtIJJgZdp83ZzzMePStydpu4GG5YdxPMAwUP_M68LygU"
-        }
-      ]
-    },
-    {
-      "query": "home depot stock",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T12:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/options/articles/implied-volatility-surging-home-depot-125400244.html",
-        "https://www.zacks.com/stock/news/3030086/implied-volatility-surging-for-home-depot-stock-options",
-        "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUppAlp6QM9geffP3RiUzILN1OMsphYRg-wcXceRsHzAMvbgqfirp4sST2pFw",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/options/articles/implied-volatility-surging-home-depot-125400244.html",
-          "title": "Implied Volatility Surging for Home Depot Stock Options",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUppAlp6QM9geffP3RiUzILN1OMsphYRg-wcXceRsHzAMvbgqfirp4sST2pFw"
-        },
-        {
-          "url": "https://www.zacks.com/stock/news/3030086/implied-volatility-surging-for-home-depot-stock-options",
-          "title": "Implied Volatility Surging for Home Depot Stock Options",
-          "publisher": "Zacks Investment Research",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_BRg310z82n7HzXBULE5q3AOiFktUm34Y98qOHfZCLkpYbRLaGVCvKW1Mamk"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html",
-          "title": "Home Depot names Richard McPhail as new CEO, beats earnings expectations",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg4yKPizXyFwVNmqllAAtmtUEqOZHZiBK3EgLU9i8oAHNY6hlWv5fwedHYcO0"
-        }
-      ]
-    },
-    {
-      "query": "amistosos",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T12:30:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17522786/la-formacion-de-argentina-vs-costa-rica",
-        "https://www.tycsports.com/seleccion-argentina/la-formacion-de-la-seleccion-argentina-vs-costa-rica-op-id771686.html",
-        "https://www.clarin.com/deportes/vacio-dejo-messi-ve-tribunas-seleccion-enfrentara-costa-rica-vez-publico-necesidad-mejorar-imagen_0_g9g5Hr8dfv.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4nahZLuIC_h50bhIwOl2lDRLWWyzhl2CtDXhjUuUrKriCtILAKrKaqbCqs8",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17522786/la-formacion-de-argentina-vs-costa-rica",
-          "title": "El probable equipo de Argentina para enfrentar a Costa Rica en Córdoba",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4nahZLuIC_h50bhIwOl2lDRLWWyzhl2CtDXhjUuUrKriCtILAKrKaqbCqs8"
-        },
-        {
-          "url": "https://www.tycsports.com/seleccion-argentina/la-formacion-de-la-seleccion-argentina-vs-costa-rica-op-id771686.html",
-          "title": "La formación de la Selección Argentina contra Costa Rica, por un amistoso",
-          "publisher": "TyC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSlKav6ldf5-RcWAM2xLIZ-pEsjKPtfO7n-n9N8kqdAHAk9hANzvKxHhLhSfU"
-        },
-        {
-          "url": "https://www.clarin.com/deportes/vacio-dejo-messi-ve-tribunas-seleccion-enfrentara-costa-rica-vez-publico-necesidad-mejorar-imagen_0_g9g5Hr8dfv.html",
-          "title": "El vacío que dejó Messi se ve en las tribunas: la Selección enfrentará a Costa Rica otra vez con poco público y con la necesidad de mejorar su imagen",
-          "publisher": "Clarin.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTibENsqHpLl_iJHOXIQzYX-slKFUjBEoAWLgCx_8Sv9L84yrwc4L-9I1V6p88"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8n7x7yuy2oS6pQpbv8X2jJMw4ZOCudB3UIehTrUF5jxeM7VNHhc-O8m76qRk"
         }
       ]
     }
