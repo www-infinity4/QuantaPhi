@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T11:31:30.572683Z",
+  "checked_at": "2026-11-17T12:01:24.396465Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ms dhoni",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T11:10:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/live-blog/ipl-2027-retention-csk-announce-mentor-singh-dhoni-1562922",
-        "https://www.reuters.com/world/india/ipl-career-over-dhoni-unveiled-chennai-team-mentor-2026-11-17/",
-        "https://sports.yahoo.com/articles/ipl-2027-rumours-csk-fans-062900902.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfa6WBoZXNImRZwCg6IQbE-8XeSAVoGINGyArrqwkcR25cwjN1pnTEW19HBXI",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/live-blog/ipl-2027-retention-csk-announce-mentor-singh-dhoni-1562922",
-          "title": "IPL 2027 retention - CSK announce 'Mentor' Singh Dhoni",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfa6WBoZXNImRZwCg6IQbE-8XeSAVoGINGyArrqwkcR25cwjN1pnTEW19HBXI"
-        },
-        {
-          "url": "https://www.reuters.com/world/india/ipl-career-over-dhoni-unveiled-chennai-team-mentor-2026-11-17/",
-          "title": "IPL career over, Dhoni unveiled as Chennai team mentor",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkeCjS1Il0nlETUrevxnl3f5j-o3dgnUUhsD6ourOLIkZGK8g4WlwfetjvLbI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ipl-2027-rumours-csk-fans-062900902.html",
-          "title": "IPL 2027 rumours: CSK fans believe MS Dhoni may have retired, won't be retained for auction",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf44kxylj_ceoyqTPzFT_ZBFHnSorNAK4_DyXWAGiqr2HskvfTyQJkyggq670"
-        }
-      ]
-    },
-    {
-      "query": "r.j. decker",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T11:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66111315/?ref_=nwc_art_perm",
-        "https://collider.com/rj-decker-season-3-abc-renewal-status/",
-        "https://www.tvinsider.com/1303443/high-potential-morgan-karadec-platonic-romantic-season-3-fans-debate/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8rB8AbxlpYra_ssvf97cz2lVIKi2oOS6tsqxxkjzmri8ry6iOW4d1fTgSEQ",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66111315/?ref_=nwc_art_perm",
-          "title": "High Potential Season 3: Everything We Know So Far",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8rB8AbxlpYra_ssvf97cz2lVIKi2oOS6tsqxxkjzmri8ry6iOW4d1fTgSEQ"
-        },
-        {
-          "url": "https://collider.com/rj-decker-season-3-abc-renewal-status/",
-          "title": "ABC’s ‘High Potential’ Replacement Isn’t Officially Renewed for Season 3 Yet",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkomo4JtKM5Vpx9EDWorqfIHoHPRZxqalqM5TSez6UhNB0cBwoGqbmyXZVAEs"
-        },
-        {
-          "url": "https://www.tvinsider.com/1303443/high-potential-morgan-karadec-platonic-romantic-season-3-fans-debate/",
-          "title": "‘High Potential’ Fans Debate Whether Morgan & Karadec Should Get Together",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGJkKIQfGDcc62WZ8edmcxtyVNpQs3jMNOmfMkp9nIXAc0lAYkyHqptqtXj58"
-        }
-      ]
-    },
-    {
-      "query": "nyt connections hints today",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-17T11:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/crosswords/connections-companion-1255.html",
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-15-2026",
-        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-17-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-hr5uEQdpp6AE1n_KDBGuVv_3m7n7AmF6Y4MzUz7kLHnrxHrvAqVutOoPqHo",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/16/crosswords/connections-companion-1255.html",
-          "title": "NYT Connections Answers for November 17, 2026",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-hr5uEQdpp6AE1n_KDBGuVv_3m7n7AmF6Y4MzUz7kLHnrxHrvAqVutOoPqHo"
-        },
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-15-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 15, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-17-2026",
-          "title": "Today's NYT Connections Hints (and Answer) for Sunday, November 17, 2026",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLbdxD7-TqPrFNKYbrlyQvEpjxIszLuCk-iy90goH2taYz8Aopub1ArxTgoGA"
-        }
-      ]
-    },
-    {
-      "query": "andrew scott",
+      "query": "kelsey mitchell",
       "approx_searches": "200+",
-      "published_at": "2026-11-17T11:00:00Z",
+      "published_at": "2026-11-17T11:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/culture/article/20261111-the-moving-inside-story-of-how-ian-charleson-played-hamlet-on-stage-while-dying-of-aids",
-        "https://www.vanityfair.com/story/andrew-scott-elsinore-billie-piper-screening-room",
-        "https://www.vogue.com/article/andrew-scott-ian-charleson-elsinore-interview"
+        "https://sports.yahoo.com/articles/no-one-believing-kelsey-mitchell-150051144.html",
+        "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/11/16/indiana-fever-kelsey-mitchell-sends-cryptic-instagram-message-wnba-free-agency/92814423007/",
+        "https://www.si.com/wnba/fever/re-sign-or-let-walk-fever-need-to-avoid-ugly-negotiations-with-kelsey-mitchell-01m7jg9cdeky"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AIVH90dCvFgKlOooIQP4Kq9XOw4K-_AcO9bYgogDANRbnSjYmZq5T4lZ62c",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/culture/article/20261111-the-moving-inside-story-of-how-ian-charleson-played-hamlet-on-stage-while-dying-of-aids",
-          "title": "'A hell of a thing to take on': The moving inside story of how Ian Charleson played Hamlet on stage while dying of Aids",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AIVH90dCvFgKlOooIQP4Kq9XOw4K-_AcO9bYgogDANRbnSjYmZq5T4lZ62c"
-        },
-        {
-          "url": "https://www.vanityfair.com/story/andrew-scott-elsinore-billie-piper-screening-room",
-          "title": "Andrew Scott On What Makes Elsinore “So Moving”",
-          "publisher": "Vanity Fair",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0WOOSlQIPxDuas8-mbj5CsbqJO5DV5oJaIqUIu5On0oYV3itQiMkSZ0HG6Q8"
-        },
-        {
-          "url": "https://www.vogue.com/article/andrew-scott-ian-charleson-elsinore-interview",
-          "title": "Andrew Scott on the Real-Life Story Behind His Heartbreaking Performance in ‘Elsinore’",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStBa7UDTWy_xaMVEe59C2zQNj1oxPeUwUYU9c3VTpiLc_5_3gufUmTljW7iRQ"
-        }
-      ]
-    },
-    {
-      "query": "brasil",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T11:00:00Z",
-      "related_news_urls": [
-        "https://g1.globo.com/jornal-nacional/noticia/2026/11/16/sob-a-alegacao-de-risco-de-a-tecnologia-ser-desviada-para-a-china-eua-restringem-acesso-do-brasil-a-chips-avancados-de-ia.ghtml",
-        "https://noticias.uol.com.br/colunas/mariana-sanches/2026/11/16/restricao-a-chips-dos-eua-gera-custo-politico-e-risco-de-sancoes-ao-brasil.htm",
-        "https://www.cnnbrasil.com.br/economia/money/macroeconomia/eua-vao-restringir-acesso-da-china-a-chips-de-ia-medida-inclui-brasil/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLkRHyTIIhGgcqnzos0zPnczfK3Q4IWbcOh6cAq8a7JSVxB5HAKbiVQtkyGKY",
-      "image_credit": "G1",
-      "news": [
-        {
-          "url": "https://g1.globo.com/jornal-nacional/noticia/2026/11/16/sob-a-alegacao-de-risco-de-a-tecnologia-ser-desviada-para-a-china-eua-restringem-acesso-do-brasil-a-chips-avancados-de-ia.ghtml",
-          "title": "Sob a alegação de risco de a tecnologia ser desviada para a China, EUA restringem acesso do Brasil a chips avançados de IA",
-          "publisher": "G1",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLkRHyTIIhGgcqnzos0zPnczfK3Q4IWbcOh6cAq8a7JSVxB5HAKbiVQtkyGKY"
-        },
-        {
-          "url": "https://noticias.uol.com.br/colunas/mariana-sanches/2026/11/16/restricao-a-chips-dos-eua-gera-custo-politico-e-risco-de-sancoes-ao-brasil.htm",
-          "title": "Mariana Sanches: Restrição a chips dos EUA gera custo político e risco de sanções ao Brasil",
-          "publisher": "UOL Notícias",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmp0VPBIdvEDitzK9yOUR9RBSwnizvVBZymSbE4nZJEZzj11Hb03zcO54vH7k"
-        },
-        {
-          "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/eua-vao-restringir-acesso-da-china-a-chips-de-ia-medida-inclui-brasil/",
-          "title": "EUA vão restringir acesso da China a chips de IA; medida inclui Brasil",
-          "publisher": "CNN Brasil",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMYxohcI4pq_3jISlR3kgf9FcehGpQRlwSkhQx4LG0ilzzkCUsTODEzGzu9Eg"
-        }
-      ]
-    },
-    {
-      "query": "ethereum price",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T11:00:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-16-2026/card/three-reasons-behind-bitcoin-s-selloff-this-month-1qzg2ANrWXBDc0k5HBY0",
-        "https://www.investors.com/news/bitcoin-price-unravels-bitcoin-liquidations-etf-flows-anthropic-ipo-spacex-crypto-stocks/",
-        "https://finance.yahoo.com/markets/crypto/articles/tom-lee-blames-nvidia-anthropic-203603583.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-16-2026/card/three-reasons-behind-bitcoin-s-selloff-this-month-1qzg2ANrWXBDc0k5HBY0",
-          "title": "Three Reasons Behind Bitcoin’s Selloff This Month",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
-        },
-        {
-          "url": "https://www.investors.com/news/bitcoin-price-unravels-bitcoin-liquidations-etf-flows-anthropic-ipo-spacex-crypto-stocks/",
-          "title": "Bitcoin Tumbles Ahead Of Anthropic IPO. Is It Paralleling Its SpaceX Sell Off?",
-          "publisher": "Investor's Business Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFCT_l40_-iGEREl6pZa7R6wzj9W67q2VxunKDsRkQ-GrepxuaiZNT6aIUo1s"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/crypto/articles/tom-lee-blames-nvidia-anthropic-203603583.html",
-          "title": "Tom Lee Blames Nvidia and Anthropic IPO for Ethereum Plunge as Bitmine Buys the Dip",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8"
-        }
-      ]
-    },
-    {
-      "query": "doomsday trailer",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T11:00:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66112066/?ref_=int_nwr_3",
-        "https://www.empireonline.com/movies/news/avengers-doomsday-covers-revealed/",
-        "https://www.chosun.com/english/kpop-culture-en/2026/11/16/QJJLGU3UGZCE7DSJR36FDFO2DQ/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxXOylsE44wQ4qGm_-kIhhBGtxu_D3GHE5gYYEkhdi1z7WPCWb8YJC3pDV-LA",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66112066/?ref_=int_nwr_3",
-          "title": "Update: Avengers: Doomsday Trailer Release Date Revealed As Anthony Mackie Pushes For Captain America 5",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxXOylsE44wQ4qGm_-kIhhBGtxu_D3GHE5gYYEkhdi1z7WPCWb8YJC3pDV-LA"
-        },
-        {
-          "url": "https://www.empireonline.com/movies/news/avengers-doomsday-covers-revealed/",
-          "title": "Empire's World-Exclusive Avengers: Doomsday covers are here – and there are four to collect",
-          "publisher": "Empire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJOScLuswm6L09nOczuvSL7MCTZYGYbk5fxItu4rTxhWYQ98JmcFPxzxb91ys"
-        },
-        {
-          "url": "https://www.chosun.com/english/kpop-culture-en/2026/11/16/QJJLGU3UGZCE7DSJR36FDFO2DQ/",
-          "title": "Avengers, X-Men, Fantastic Four Battle Doctor Doom in 'Doomsday'",
-          "publisher": "조선일보",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQk4piyxUVAHjfy7iJ9L4eYLYW67eJ_xxeyqoNt_PhjeMcJVw2wzIiSpAzMSM"
-        }
-      ]
-    },
-    {
-      "query": "boston red sox",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T11:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/yankees-lose-free-agent-pitcher-201719182.html",
-        "https://www.mlbtraderumors.com/2026/11/red-sox-michael-arias-agree-to-minor-league-deal.html",
-        "https://www.sportingnews.com/us/mlb/boston-red-sox/news/red-sox-sign-yankees-pitching-prospect-latest-roster-move/8139d5db891d0cd996016eca"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxJH57BKeUJCVy2UoLWPcm-TLrZ92sRT0jMlPZxhWMTL66amvUCdfaN8r0gHk",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy--BYW8fXFM11uL3Jt6KRS13JayzAlJapPIUWmWxVZI7TLY1aOGNG9re8VEQ",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/yankees-lose-free-agent-pitcher-201719182.html",
-          "title": "Yankees lose free agent pitcher to rival Red Sox",
+          "url": "https://sports.yahoo.com/articles/no-one-believing-kelsey-mitchell-150051144.html",
+          "title": "‘No one believing’ – Kelsey Mitchell’s emotional admission prompts responses from Caitlin Clark, Aliyah Boston",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxJH57BKeUJCVy2UoLWPcm-TLrZ92sRT0jMlPZxhWMTL66amvUCdfaN8r0gHk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy--BYW8fXFM11uL3Jt6KRS13JayzAlJapPIUWmWxVZI7TLY1aOGNG9re8VEQ"
         },
         {
-          "url": "https://www.mlbtraderumors.com/2026/11/red-sox-michael-arias-agree-to-minor-league-deal.html",
-          "title": "Red Sox, Michael Arias Agree To Minor League Deal",
-          "publisher": "MLB Trade Rumors",
+          "url": "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/11/16/indiana-fever-kelsey-mitchell-sends-cryptic-instagram-message-wnba-free-agency/92814423007/",
+          "title": "Kelsey Mitchell's Instagram message leaves Indiana Fever fans confused about future",
+          "publisher": "IndyStar",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2PeZBzQzPjeHevmEd4bw_ofzMthfnvGaX36_a2dvb1EwKlOI07YxIPQFMHvA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRljHGDF_h7iInDRt4jatW2BY2nMRSf1PmWYTkKiM6hhxpgqYX7gz78sX080lA"
         },
         {
-          "url": "https://www.sportingnews.com/us/mlb/boston-red-sox/news/red-sox-sign-yankees-pitching-prospect-latest-roster-move/8139d5db891d0cd996016eca",
-          "title": "Red Sox sign former Yankees pitching prospect in latest roster move",
-          "publisher": "Sporting News",
+          "url": "https://www.si.com/wnba/fever/re-sign-or-let-walk-fever-need-to-avoid-ugly-negotiations-with-kelsey-mitchell-01m7jg9cdeky",
+          "title": "Re-Sign or Let Walk: Fever Need to Avoid Ugly Negotiations With Kelsey Mitchell",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKt9-mmHiZyI3V4vxhw7z1OKMb1oRBZGJ_u9jIj1vLFM6PwJBDtruH6NdgtI4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXieg89YBkh6ky5Dta8dr4rNI5DUNDSGGBX6kl4jLaY-nx5uMXTfZw4ZLG2aQ"
         }
       ]
     },
     {
-      "query": "boxeo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T10:50:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/boxeo/nota/_/id/17524267/jorge-linares-ice-confirma-gilberto-mendoza",
-        "https://www.univision.com/noticias/inmigracion/autoridades-migratorias-de-eeuu-detienen-al-exboxeador-jorge-linares-en-el-paso",
-        "https://www.france24.com/es/minuto-a-minuto/20261117-excampe%C3%B3n-mundial-de-boxeo-venezolano-es-detenido-por-inmigraci%C3%B3n-de-eeuu"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXOxhPkUskruTqB7hQFWZ2k-MTI8SVGRKJqUbCOtaA31ruZGpbh8D4lHWwYs",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/boxeo/nota/_/id/17524267/jorge-linares-ice-confirma-gilberto-mendoza",
-          "title": "Jorge Linares, bajo custodia de ICE, confirma Gilberto Mendoza",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXOxhPkUskruTqB7hQFWZ2k-MTI8SVGRKJqUbCOtaA31ruZGpbh8D4lHWwYs"
-        },
-        {
-          "url": "https://www.univision.com/noticias/inmigracion/autoridades-migratorias-de-eeuu-detienen-al-exboxeador-jorge-linares-en-el-paso",
-          "title": "Autoridades migratorias de EEUU detienen al exboxeador Jorge Linares en El Paso",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPgIFd_ImcbJ9WuJ7HOCk-y7blaflCh6shXH73wnjRtMhB8v1Qosa75mpni9k"
-        },
-        {
-          "url": "https://www.france24.com/es/minuto-a-minuto/20261117-excampe%C3%B3n-mundial-de-boxeo-venezolano-es-detenido-por-inmigraci%C3%B3n-de-eeuu",
-          "title": "Excampeón mundial de boxeo venezolano es detenido por inmigración de EEUU",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSBxN1kY9EUwgSXrkRzBjz0L-2J9fzLPF64RRD3UuIlYpHBpBeHggd5H82uas"
-        }
-      ]
-    },
-    {
-      "query": "nsa",
+      "query": "cra",
       "approx_searches": "100+",
-      "published_at": "2026-11-17T10:50:00Z",
+      "published_at": "2026-11-17T11:40:00Z",
       "related_news_urls": [
-        "https://www.war.gov/News/News-Stories/Article/Article/4649563/nsa-warns-about-potential-malware-hijacking-cac-enabled-computers/",
-        "https://ca.news.yahoo.com/china-biggest-threat-us-security-160106011.html",
-        "https://www.news5cleveland.com/news/local-news/china-is-the-biggest-threat-to-us-security-nsa-deputy-director-says-in-news-5-cleveland-interview"
+        "https://www.jdsupra.com/legalnews/fdic-releases-cra-performance-8857704/",
+        "https://www.jdsupra.com/legalnews/occ-releases-cra-performance-9027506/",
+        "https://www.jdsupra.com/legalnews/agencies-release-2025-cra-small-1140271/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR95a_oJcGlzmKIBq_Id7LzNkUbkt0eOCDfojUOlWoZHN6x1zcsssO5cqi55tk",
-      "image_credit": "U.S. Department of War (.gov)",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWAcs2xvZW1qKx59b5sDGFAMmtBKsh-OKo1rSKkzBYGQ_NWfjYdqe6gSbQP3Y",
+      "image_credit": "JD Supra",
       "news": [
         {
-          "url": "https://www.war.gov/News/News-Stories/Article/Article/4649563/nsa-warns-about-potential-malware-hijacking-cac-enabled-computers/",
-          "title": "NSA Warns About Potential Malware Hijacking CAC-Enabled Computers",
-          "publisher": "U.S. Department of War (.gov)",
+          "url": "https://www.jdsupra.com/legalnews/fdic-releases-cra-performance-8857704/",
+          "title": "FDIC releases CRA performance evaluations for August 2026",
+          "publisher": "JD Supra",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR95a_oJcGlzmKIBq_Id7LzNkUbkt0eOCDfojUOlWoZHN6x1zcsssO5cqi55tk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWAcs2xvZW1qKx59b5sDGFAMmtBKsh-OKo1rSKkzBYGQ_NWfjYdqe6gSbQP3Y"
         },
         {
-          "url": "https://ca.news.yahoo.com/china-biggest-threat-us-security-160106011.html",
-          "title": "China is the biggest threat to US security, NSA deputy director tells News 5",
-          "publisher": "Yahoo News Canada",
+          "url": "https://www.jdsupra.com/legalnews/occ-releases-cra-performance-9027506/",
+          "title": "OCC releases CRA performance evaluations for October 2026",
+          "publisher": "JD Supra",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47cGHs4C_uxl2F49zk63IjONXUEDPeYt3k-47SqJK1VaK6udc77BWJRKONmU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWAcs2xvZW1qKx59b5sDGFAMmtBKsh-OKo1rSKkzBYGQ_NWfjYdqe6gSbQP3Y"
         },
         {
-          "url": "https://www.news5cleveland.com/news/local-news/china-is-the-biggest-threat-to-us-security-nsa-deputy-director-says-in-news-5-cleveland-interview",
-          "title": "China is the biggest threat to US security, NSA deputy director tells News 5",
-          "publisher": "News 5 Cleveland WEWS",
+          "url": "https://www.jdsupra.com/legalnews/agencies-release-2025-cra-small-1140271/",
+          "title": "Agencies release 2025 CRA small business, small farm, and community development lending data",
+          "publisher": "JD Supra",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQagXrAp5IOjT0oI2iewr_IKKgGnus4Zd1PywCLz75NPuipuFymGuNlwkY6Rsc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWAcs2xvZW1qKx59b5sDGFAMmtBKsh-OKo1rSKkzBYGQ_NWfjYdqe6gSbQP3Y"
+        }
+      ]
+    },
+    {
+      "query": "the further mis-adventures of cliff booth",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T11:40:00Z",
+      "related_news_urls": [
+        "https://people.com/brad-pitt-and-ines-de-ramon-hold-hands-enjoy-date-night-the-further-mis-adventures-of-cliff-booth-premiere-12260007",
+        "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
+        "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJpsXsch_VJ30ul0Vq-uR3F7c68nF95A6RdljmLj_Rn0jMWIls3E-ljz_HAqE",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/brad-pitt-and-ines-de-ramon-hold-hands-enjoy-date-night-the-further-mis-adventures-of-cliff-booth-premiere-12260007",
+          "title": "Brad Pitt and Ines de Ramon Attend ‘The Further Mis-Adventures of Cliff Booth’ Premiere",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJpsXsch_VJ30ul0Vq-uR3F7c68nF95A6RdljmLj_Rn0jMWIls3E-ljz_HAqE"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
+          "title": "David Fincher’s ‘The Further Mis-Adventures of Cliff Booth’: First Reactions",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrPSe1zePMuuRrMktG7WOvkEH27_PJwxW9-EC-HHoMH5jCf2ZQf9BO4SBn30w"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
+          "title": "'Cliff Booth' First Reactions: Brad Pitt, Fincher and Tarantino Excite",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
+        }
+      ]
+    },
+    {
+      "query": "jeremy davies minnesota wild trade",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T11:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/wild/news/minnesota-wild-acquires-defenseman-jeremy-davies-from-vegas-golden-knights-111626",
+        "https://www.dailyfaceoff.com/news/vegas-golden-knights-minnesota-wild-trade-joint-nhl-ahl-deal-jeremy-davies-gerry-mayhew-iowa-henderson-silver-knights",
+        "https://www.prohockeyrumors.com/2026/11/golden-knights-wild-swap-jeremy-davies-gerald-mayhew.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh-GbWqIgwaNbbMyYlcZoeW6ZUDtldJve5_tUeZJAYO3mbzFtVNyvRhJmUvGw",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/wild/news/minnesota-wild-acquires-defenseman-jeremy-davies-from-vegas-golden-knights-111626",
+          "title": "Minnesota Wild Acquires Defenseman Jeremy Davies from Vegas Golden Knights",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh-GbWqIgwaNbbMyYlcZoeW6ZUDtldJve5_tUeZJAYO3mbzFtVNyvRhJmUvGw"
+        },
+        {
+          "url": "https://www.dailyfaceoff.com/news/vegas-golden-knights-minnesota-wild-trade-joint-nhl-ahl-deal-jeremy-davies-gerry-mayhew-iowa-henderson-silver-knights",
+          "title": "Golden Knights, Wild swap players in joint NHL-AHL deal",
+          "publisher": "Daily Faceoff",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiFY4Fwytc5peTAaKZqw9v-Jgngx1aBd4VGGjNZoCRa_FteQBlvV44rQEdR1Q"
+        },
+        {
+          "url": "https://www.prohockeyrumors.com/2026/11/golden-knights-wild-swap-jeremy-davies-gerald-mayhew.html",
+          "title": "Golden Knights, Wild Swap Jeremy Davies, Gerald Mayhew",
+          "publisher": "Pro Hockey Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOWhtiG2dsLQs1bWyUWsGtdFIjkm3hFkwqVcokQ0Rdr7TO-h6usy9BfBFmW6Y"
+        }
+      ]
+    },
+    {
+      "query": "hd stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T11:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/news/home-depot-announces-third-quarter-110000708.html",
+        "https://www.barchart.com/story/news/8860961/ahead-of-home-depot-earnings-here-s-what-barchart-data-says-comes-next-for-hd-stock",
+        "https://finimize.com/content/home-depot-and-lowes-face-a-still-slow-housing-fix"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxw3Feax21uGPuqWhn_3hnLE46FGCpA6c5f7OmDlzYSphP7gV3YQb6iu2pWpg",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/news/home-depot-announces-third-quarter-110000708.html",
+          "title": "The Home Depot Announces Third Quarter Fiscal 2026 Results; Updates Fiscal 2026 Guidance",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxw3Feax21uGPuqWhn_3hnLE46FGCpA6c5f7OmDlzYSphP7gV3YQb6iu2pWpg"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8860961/ahead-of-home-depot-earnings-here-s-what-barchart-data-says-comes-next-for-hd-stock",
+          "title": "Ahead of Home Depot Earnings, Here's What Barchart Data Says Comes Next for HD Stock",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DxkdiUk9xiuV_sOpGGNENL_YDMwKdDCc8kIrTO5JVVGNtrOQ-i3mpNEVS3E"
+        },
+        {
+          "url": "https://finimize.com/content/home-depot-and-lowes-face-a-still-slow-housing-fix",
+          "title": "Home Depot And Lowe’s Face A Still-Slow Housing Fix",
+          "publisher": "Finimize",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQolNyjwIynZCKBHAqEsEWq7vsvoXB8U-cGLlxVt9WuxFWArd6tqM8M5WzbSiA"
+        }
+      ]
+    },
+    {
+      "query": "dancing with the stars semi-finals",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T11:30:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/monicamercuri/2026/11/15/dancing-with-the-stars-semifinals-dances-revealed-as-six-couples-battle-for-finale-spots/",
+        "https://www.covers.com/entertainment/dancing-with-the-stars-semifinal-elimination-odds",
+        "https://www.mjsbigblog.com/dancing-with-the-stars-2026-semi-final-night-song-choices-and-dance-styles.htm"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-P2h9WpiKOX-mNNCN67D6wSpm8h66hshQFyNDlSIC9qavpqSFMYnY2ClCis",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/monicamercuri/2026/11/15/dancing-with-the-stars-semifinals-dances-revealed-as-six-couples-battle-for-finale-spots/",
+          "title": "‘Dancing With The Stars’ Semifinals Dances Revealed As Six Couples Battle For Finale Spots",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-P2h9WpiKOX-mNNCN67D6wSpm8h66hshQFyNDlSIC9qavpqSFMYnY2ClCis"
+        },
+        {
+          "url": "https://www.covers.com/entertainment/dancing-with-the-stars-semifinal-elimination-odds",
+          "title": "DWTS Semifinal Elimination Odds: Maura Higgins & 'None' Tied",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRPmj3LmVPr-r6c2DPctwRPPS_XoDCNm4L19lz8DpIuho0wv4dmzXYa0QdSAg"
+        },
+        {
+          "url": "https://www.mjsbigblog.com/dancing-with-the-stars-2026-semi-final-night-song-choices-and-dance-styles.htm",
+          "title": "Dancing with the Stars 2026 Semi-Final Night Song Choices and Dance Styles",
+          "publisher": "Mjsbigblog",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwFmg3399w-95b5xPP4MsSsT6TW3J4PIG6GfkRbdUjC7aGOcRDm2JiLHemDUs"
+        }
+      ]
+    },
+    {
+      "query": "harry potter hbo show character posters",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T11:30:00Z",
+      "related_news_urls": [
+        "https://www.thewrap.com/creative-content/tv-shows/harry-potter-hbo-series-banquet-scene-first-look-trolled-david-ellison/",
+        "https://people.com/john-lithgow-dumbledore-hbo-harry-potter-series-clip-12258167",
+        "https://www.yahoo.com/entertainment/tv/articles/harry-potter-doubles-down-divisive-232004667.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2lhvQQRGjUn8obfEYZ6wxfTm5zqf5PbH_sN2pvkkj3wEF63JO1rPadxxSFws",
+      "image_credit": "TheWrap",
+      "news": [
+        {
+          "url": "https://www.thewrap.com/creative-content/tv-shows/harry-potter-hbo-series-banquet-scene-first-look-trolled-david-ellison/",
+          "title": "‘Harry Potter’ HBO Series Drops Hogwarts Banquet First Look, Gets Trolled for ‘Not Hitting the Mark’",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2lhvQQRGjUn8obfEYZ6wxfTm5zqf5PbH_sN2pvkkj3wEF63JO1rPadxxSFws"
+        },
+        {
+          "url": "https://people.com/john-lithgow-dumbledore-hbo-harry-potter-series-clip-12258167",
+          "title": "John Lithgow’s Dumbledore Is ‘Totally Off His Rocker’ in the First Clip from HBO’s New Harry Potter Series",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS_BgpsUpiHEf-l2EQks_j4I1x9WUxux_57s97P6pYjAfuvAN-vsPVVjstFYA"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/harry-potter-doubles-down-divisive-232004667.html",
+          "title": "Harry Potter Doubles Down on Divisive TV Show Posters After Fans Complained About Last Batch",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsdrrz5aiIqwr5XtEfXedHWlPYLcQXr9uWyFPp6hPgsYrZgGVmso4MI59muXI"
+        }
+      ]
+    },
+    {
+      "query": "phoenix weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T11:30:00Z",
+      "related_news_urls": [
+        "https://www.fox10phoenix.com/weather/arizona-weather-forecast-111626",
+        "https://www.azfamily.com/2026/11/16/scattered-rain-thunderstorms-tuesday-morning-phoenix-area/",
+        "https://www.abc15.com/weather/most-accurate-forecast-one-more-warm-day-in-arizona-before-a-cold-front-brings-rain-and-wind-on-tuesday"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDdwDzPCd5MedQqX8oae2eQEylI9ipCjgzIeKnkasqO9kJ-PdMBwkYgUAwOT8",
+      "image_credit": "FOX 10 Phoenix",
+      "news": [
+        {
+          "url": "https://www.fox10phoenix.com/weather/arizona-weather-forecast-111626",
+          "title": "Arizona weather forecast: Rain, strong winds and high-country snow expected Tuesday",
+          "publisher": "FOX 10 Phoenix",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDdwDzPCd5MedQqX8oae2eQEylI9ipCjgzIeKnkasqO9kJ-PdMBwkYgUAwOT8"
+        },
+        {
+          "url": "https://www.azfamily.com/2026/11/16/scattered-rain-thunderstorms-tuesday-morning-phoenix-area/",
+          "title": "Scattered rain and thunderstorms for Tuesday morning in the Phoenix area",
+          "publisher": "AZ Family",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl76uJ12nZWC0Hd57iU1alnrODAzcyCMfOHAM1jN7ZZRLUbNSyVWXmCtrrx74"
+        },
+        {
+          "url": "https://www.abc15.com/weather/most-accurate-forecast-one-more-warm-day-in-arizona-before-a-cold-front-brings-rain-and-wind-on-tuesday",
+          "title": "MOST ACCURATE FORECAST: Storm on the way bringing wind, rain and a big cool-down to Arizona",
+          "publisher": "ABC15 Arizona",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7ZVbOVSKsQj2Bi-GySg5D1JUZlPAkdH79FFjj3TRZKUD3iA3VaLExi4VTQQ"
+        }
+      ]
+    },
+    {
+      "query": "amazon black friday deals",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T11:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-16",
+        "https://www.foodandwine.com/amazon-black-friday-early-deals-november-2026-12258617",
+        "https://www.nbcnews.com/select/shopping/best-early-black-friday-deals-rcna609512"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbi2c2gsNFSy5RPBvsMnXqOtn3yWoool6lOSDe34NVegbiXD_ct7kLOiKo9gY",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-16",
+          "title": "Don’t wait for Black Friday. Our deals expert found 64 discounts worth shopping early",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbi2c2gsNFSy5RPBvsMnXqOtn3yWoool6lOSDe34NVegbiXD_ct7kLOiKo9gY"
+        },
+        {
+          "url": "https://www.foodandwine.com/amazon-black-friday-early-deals-november-2026-12258617",
+          "title": "Amazon’s Best Early Black Friday Deals Secretly Start Now — Up to 70% Off Breville, Yeti, OXO, and More",
+          "publisher": "Food & Wine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT14ZjicEu1xFhvFw-5lLcvlpfOGkNBCfpxOoJrYVpBTE1cHlSY4jpUZd504N4"
+        },
+        {
+          "url": "https://www.nbcnews.com/select/shopping/best-early-black-friday-deals-rcna609512",
+          "title": "Early Black Friday deals are here from Amazon, Home Depot, Ulta and more: I found the best ones up to 70% off",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwR8_mXYIi3b-hUDFgzxyidbYgJY29PkTLHMKapB51MyLiIcX7PZM3jxJXbsU"
+        }
+      ]
+    },
+    {
+      "query": "deportation",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T11:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html",
+        "https://www.aljazeera.com/news/2026/11/17/why-are-five-eu-countries-reviving-plans-to-deport-migrants-to-rwanda",
+        "https://www.bbc.com/news/articles/cw987343352go"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4X613rr9P66wsgBpucVrryVBrWm5Vvi7BQvmcTtsJ57vWJXXAbgAABr0fPU",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html",
+          "title": "Five European Countries Plan to Deport Migrants to Rwanda",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4X613rr9P66wsgBpucVrryVBrWm5Vvi7BQvmcTtsJ57vWJXXAbgAABr0fPU"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/17/why-are-five-eu-countries-reviving-plans-to-deport-migrants-to-rwanda",
+          "title": "Why are five EU countries reviving plans to deport migrants to Rwanda?",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQoNtAb4cYcB4wpnFSaaFuIWte-Jy9V0X5gyPmIxe_hvf7GlYtPuI94Js0pRw"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cw987343352go",
+          "title": "Five EU countries announce migrant deportation centre in Rwanda",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj0PzRxah5Noalawjh79EyYqAFKgkiuRUZLAB3RCHJ37z-qoASEuJDM3JGy8g"
         }
       ]
     }
