@@ -1167,6 +1167,14 @@ public final class BubblesService extends Service {
             state("listening", .28f);
             return;
         }
+        // A conservative local audience hint; not voice identification.
+        // Explicit Bubbles requests and typed messages always pass.
+        if (SpeechAudienceGate.clearlyPetDirected(addressed, directed, typed)) {
+            BrainNotes.prefs(this).edit().putString("last_suppressed_source",
+                    "Likely pet-directed speech ignored locally").apply();
+            state("listening", .04f);
+            return;
+        }
         // The microphone runs only after explicit Android permission and a
         // visible foreground session. Real gated speech needs no wake word.
         if (!typed && addressed.length() < 3) return;

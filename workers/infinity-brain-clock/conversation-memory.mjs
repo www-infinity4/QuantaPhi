@@ -1,4 +1,5 @@
 import {notificationSettings} from './notification-settings.mjs';
+import {oracleSynapse} from './oracle-synapse-memory.mjs';
 import {auditOwnerConversation} from './conversation-work-audit.mjs';
 import {sweepOwnerWorkHistory} from './conversation-work-sweep.mjs';
 import {readbackOwnerWorkReceipt} from './work-receipt-readback.mjs';
@@ -41,6 +42,7 @@ export async function conversationMemory(db,owner,body){
  if(body.mode==='work-audit-sweep')return sweepOwnerWorkHistory(db,owner,body);
  if(body.mode==='work-audit-source-check')return readbackOwnerWorkReceipt(owner,body);
  if(body.mode==='work-audit-reconcile')return reconcileOwnerBacklog(db,owner,body);
+ if(typeof body.mode==='string'&&body.mode.startsWith('synapse-'))return oracleSynapse(db,owner,body);
  if(['notification-preferences','notification-claim'].includes(body.mode))return notificationSettings(db,owner,body);
  if(['voice-claim','voice-renew','voice-status','voice-release'].includes(body.mode)){
   if(!/^[a-zA-Z0-9_-]{8,100}$/.test(body.client||''))throw Error('voice_client_invalid');
@@ -98,7 +100,7 @@ export async function conversationMemory(db,owner,body){
   const statements=[];
   for(const m of messages){
    statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_messages(owner,id,role,text,at) VALUES (?,?,?,?,?)').bind(owner,m.id,m.role,m.text,m.at));
-   const target=m.sessionId||(!sessionId?null:'legacy-history');
+   const target=m.sessionId||sessionId;
    if(target){
     // The owner is derived from verified Brain credentials, never client input.
     statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_sessions(owner,session_id,title,created,updated) VALUES (?,?,?,?,?)').bind(owner,target,'New conversation',m.at,m.at));
