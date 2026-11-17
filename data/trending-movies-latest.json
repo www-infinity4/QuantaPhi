@@ -2,9 +2,25 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-17T11:33:01.134122Z",
+  "checked_at": "2026-11-17T12:06:16.939331Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "o9WWeKSbtAo",
+      "title": "The Further Mis-Adventures of Cliff Booth",
+      "video_id": "o9WWeKSbtAo",
+      "video_title": "The Further Mis-Adventures of Cliff Booth Trailer #2 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-06T14:23:57Z",
+      "source_url": "https://www.youtube.com/watch?v=o9WWeKSbtAo",
+      "poster": "https://i.ytimg.com/vi/o9WWeKSbtAo/hqdefault.jpg",
+      "google_trending": true,
+      "trend_query": "the further mis-adventures of cliff booth",
+      "trend_checked_at": "2026-11-17T12:01:24.396465Z",
+      "trend_published_at": "2026-11-17T11:40:00Z",
+      "approx_searches": "200+"
+    },
     {
       "id": "qoo1GTEXD1Y",
       "title": "Godzilla Minus Zero",
@@ -163,18 +179,6 @@
       "published_at": "2026-11-10T14:53:01Z",
       "source_url": "https://www.youtube.com/watch?v=IXxf8PaLKXY",
       "poster": "https://i.ytimg.com/vi/IXxf8PaLKXY/hqdefault.jpg",
-      "google_trending": false
-    },
-    {
-      "id": "o9WWeKSbtAo",
-      "title": "The Further Mis-Adventures of Cliff Booth",
-      "video_id": "o9WWeKSbtAo",
-      "video_title": "The Further Mis-Adventures of Cliff Booth Trailer #2 (2026)",
-      "kind": "trailer",
-      "publisher": "Rotten Tomatoes Trailers",
-      "published_at": "2026-11-06T14:23:57Z",
-      "source_url": "https://www.youtube.com/watch?v=o9WWeKSbtAo",
-      "poster": "https://i.ytimg.com/vi/o9WWeKSbtAo/hqdefault.jpg",
       "google_trending": false
     },
     {
