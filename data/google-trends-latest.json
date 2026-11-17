@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T12:33:22.968522Z",
+  "checked_at": "2026-11-17T13:01:26.700785Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "tanzania vs nigeria",
+      "query": "ethiopia vs mozambique",
       "approx_searches": "200+",
-      "published_at": "2026-11-17T12:20:00Z",
+      "published_at": "2026-11-17T12:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/espn/story/_/id/50508864/tanzania-vs-nigeria-tolu-arokodare-zanzibar-afcon-qualifiers",
-        "https://www.sports247.ng/put-all-the-pressure-on-me-i-dont-care-eric-chelle-defends-super-eagles-selection-sends-strong-warning-to-players-ahead-of-tanzania-return-leg/",
-        "https://guardian.ng/sport/2027-africa-cup-of-nations-qualifier-chelle-on-trial-as-super-eagles-fight-for-survival-in-zanzibar/"
+        "https://www.bbc.com/sport/football/live/cqkgjmm21y03t",
+        "https://www.sportsgambler.com/betting-tips/football/ethiopia-vs-mozambique-prediction-2026-11-17/",
+        "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-ethiopia-vs-mozambique-live-on-bein-sports-2026-11-16"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv3wK9kZFEjqspZ3egiCvd9j5W-gaG9txRFT6WhyenP70xZzFO2CoeyDbvrUc",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.espn.com/espn/story/_/id/50508864/tanzania-vs-nigeria-tolu-arokodare-zanzibar-afcon-qualifiers",
-          "title": "Tanzania vs Nigeria - Will Arokodare get his chance to start in Zanzibar?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv3wK9kZFEjqspZ3egiCvd9j5W-gaG9txRFT6WhyenP70xZzFO2CoeyDbvrUc"
-        },
-        {
-          "url": "https://www.sports247.ng/put-all-the-pressure-on-me-i-dont-care-eric-chelle-defends-super-eagles-selection-sends-strong-warning-to-players-ahead-of-tanzania-return-leg/",
-          "title": "‘Put All the Pressure on Me, I Don’t Care!’ — Eric Chelle Defends Super Eagles Selection, Sends Strong Warning to Players Ahead of Tanzania Return Leg",
-          "publisher": "Sports247 Nigeria",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUxAj3VTyf-orgFxuV6L5Oru_hsE7PxXmfyHF_Vhk-gmRXd8Huuz0VtKc4lPk"
-        },
-        {
-          "url": "https://guardian.ng/sport/2027-africa-cup-of-nations-qualifier-chelle-on-trial-as-super-eagles-fight-for-survival-in-zanzibar/",
-          "title": "2027 Africa Cup of Nations Qualifier: Chelle on trial as Super Eagles fight for survival in Zanzibar",
-          "publisher": "The Guardian Nigeria News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1jwbL0HLc_pKPH2fHcpwUZHXyo-FDWITjiAreFl5x_a7wlmk171JpfGvcebI"
-        }
-      ]
-    },
-    {
-      "query": "christian bale",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T12:20:00Z",
-      "related_news_urls": [
-        "https://www.slashfilm.com/2311062/christian-bale-western-drama-hostiles-flop-worth-revisiting/",
-        "https://www.imdb.com/news/ni66112458/?ref_=nmnw_art_perm",
-        "https://copyrightlately.com/michael-mann-heat-copyright-termination/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtF2z69Ya-41lgP3xFbBj2hH-WOXm6DeHAywqAFJ42zLZF2nbFPRPQrxQ4JjM",
-      "image_credit": "SlashFilm",
-      "news": [
-        {
-          "url": "https://www.slashfilm.com/2311062/christian-bale-western-drama-hostiles-flop-worth-revisiting/",
-          "title": "This Christian Bale Western Drama Flopped In Theaters But Is Worth Revisiting",
-          "publisher": "SlashFilm",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtF2z69Ya-41lgP3xFbBj2hH-WOXm6DeHAywqAFJ42zLZF2nbFPRPQrxQ4JjM"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66112458/?ref_=nmnw_art_perm",
-          "title": "This Christian Bale Western Drama Flopped In Theaters But Is Worth Revisiting",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUhWuTt8w1XXycmsPhSvpm4wsemruzK8xVmLfl9P7CxKfIJvPIg8s8n9fn5FE"
-        },
-        {
-          "url": "https://copyrightlately.com/michael-mann-heat-copyright-termination/",
-          "title": "Michael Mann’s ‘Heat’ Copyright Fight Turns on a Deal With Himself",
-          "publisher": "Copyright Lately",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyYX0krDNRJhm2U8thMfkNFTVoXPQC8TigUWIMbwJYu48iw-uXKKjYKxGmM-4"
-        }
-      ]
-    },
-    {
-      "query": "fiona the hippo",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T12:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/16/fiona-hippo-eats-hat-cincinnati",
-        "https://fox8.com/news/cincinnati-zoo-says-fiona-the-hippo-is-undergoing-care-after-eating-a-hat-that-got-into-enclosure/",
-        "https://www.fox19.com/2026/11/16/cincinnati-zoo-monitoring-fiona-after-she-ingested-hat-tossed-by-visitor/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQ5THoEmecvnAjStxfFq8FHvH7uU33TKUWYvDQdKMfT1y7CEFSg7RjqIvrE0w",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/16/fiona-hippo-eats-hat-cincinnati",
-          "title": "Fiona the hippo under veterinary care after eating hat at Cincinnati zoo",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQ5THoEmecvnAjStxfFq8FHvH7uU33TKUWYvDQdKMfT1y7CEFSg7RjqIvrE0w"
-        },
-        {
-          "url": "https://fox8.com/news/cincinnati-zoo-says-fiona-the-hippo-is-undergoing-care-after-eating-a-hat-that-got-into-enclosure/",
-          "title": "Cincinnati Zoo says Fiona the hippo is undergoing care after eating a hat that got into enclosure",
-          "publisher": "FOX 8 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4lXt3KOw6CpQvLdLSIyJJ7BRdzPcbxyLqUjDd5ACMtbb53rj4PIPimB9rvhk"
-        },
-        {
-          "url": "https://www.fox19.com/2026/11/16/cincinnati-zoo-monitoring-fiona-after-she-ingested-hat-tossed-by-visitor/",
-          "title": "Cincinnati Zoo monitoring Fiona after she ingested a hat ‘tossed’ by visitor",
-          "publisher": "FOX19 | Cincinnati",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEeYoEXToTkMt9ap8c9ExrHLtgGbNnSW3q3OllfwzS1NElg7TDpXC6wRtuajE"
-        }
-      ]
-    },
-    {
-      "query": "lluvia",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T12:10:00Z",
-      "related_news_urls": [
-        "https://www.lanuevacomuna.com/nota/67011/martes-con-lluvia-en-necochea-y-quequen-maxima-de-20-deg-c-y-alta-probabilidad-de-precipitaciones/",
-        "https://diarionecochea.com/2026/11/16/como-estara-el-clima-este-lunes-en-necochea-y-quequen-161/",
-        "https://www.lanacion.com.ar/clima/buenos-aires/necochea/clima-en-necochea-hoy-cual-es-el-pronostico-del-tiempo-para-el-17-de-noviembre-de-2026-nid16112026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQINWH2SJTbwdFUNxKLbCnLsUtKQ6ah4yjuqFgN2TacG-EIvWYd05Zuz_8PdCs",
-      "image_credit": "La Nueva Comuna",
-      "news": [
-        {
-          "url": "https://www.lanuevacomuna.com/nota/67011/martes-con-lluvia-en-necochea-y-quequen-maxima-de-20-deg-c-y-alta-probabilidad-de-precipitaciones/",
-          "title": "Martes con lluvia en Necochea y Quequén: máxima de 20°C y alta probabilidad de precipitaciones",
-          "publisher": "La Nueva Comuna",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQINWH2SJTbwdFUNxKLbCnLsUtKQ6ah4yjuqFgN2TacG-EIvWYd05Zuz_8PdCs"
-        },
-        {
-          "url": "https://diarionecochea.com/2026/11/16/como-estara-el-clima-este-lunes-en-necochea-y-quequen-161/",
-          "title": "Cómo estará el clima este lunes en Necochea y Quequén",
-          "publisher": "Diario Necochea",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw_1flY5OR8BdBOqo8XpFVzsbWjC-XEILt9hVtE50tqI0pTyNKs_n3aokWRzQ"
-        },
-        {
-          "url": "https://www.lanacion.com.ar/clima/buenos-aires/necochea/clima-en-necochea-hoy-cual-es-el-pronostico-del-tiempo-para-el-17-de-noviembre-de-2026-nid16112026/",
-          "title": "Clima en Necochea hoy: cuál es el pronóstico del tiempo para el 17 de noviembre de 2026",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5segWGvt475mQB_sm7PfyokcUkOuzmo3MBHN4d3kTVC6o1k9rz7k_X4H3q4M"
-        }
-      ]
-    },
-    {
-      "query": "week 11 waiver wire",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/2026-nfl-fantasy-football-waiver-wire-week-11-wr-keenan-allen-rb-seth-mcgowan-among-top-targets",
-        "https://sports.yahoo.com/articles/fantasy-football-week-11-waiver-113000341.html",
-        "https://www.nytimes.com/athletic/7786872/2026/11/16/fantasy-football-week-10-recap-waivers-speed-run/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj5p7Xh3whHTQBZX6NXrQw0okhhj06ENrI_nPcUk7l9-8MaB4t8tsZes16KqQ",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/2026-nfl-fantasy-football-waiver-wire-week-11-wr-keenan-allen-rb-seth-mcgowan-among-top-targets",
-          "title": "2026 NFL fantasy football waiver wire, Week 11: WR Keenan Allen, RB Seth McGowan among top targets",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj5p7Xh3whHTQBZX6NXrQw0okhhj06ENrI_nPcUk7l9-8MaB4t8tsZes16KqQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/fantasy-football-week-11-waiver-113000341.html",
-          "title": "Fantasy Football Week 11 Waiver Wire: 5 Best Pickups",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAu2TVotOzGQ-NS1XxrwVM3V9i0NUO3fGmcyyf6V2F3uliWzWXgyEAnX6INrQ"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7786872/2026/11/16/fantasy-football-week-10-recap-waivers-speed-run/",
-          "title": "Fantasy football Week 10 recap, early waivers speed run: Ditch A.J. Brown",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRk847PGWYijyfZdUkdxs-Z8h8xKIshQEJsUifDnmr6i0wDRvLH0XokSeuXdE"
-        }
-      ]
-    },
-    {
-      "query": "united states men's national soccer team",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T12:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50504817/poch-pep-advice-usmnt-job",
-        "https://www.theguardian.com/football/2026/nov/16/mauricio-pochettino-pep-guardiola-usmnt-manchester-united",
-        "https://www.bbc.com/sport/football/articles/crgj36e6ee5yo"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtmkREwcOI1_h7oRnK6jnkINcz8IfbQ5b6ahUjqD9BXjgz-07S5BqWZZoenh4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50504817/poch-pep-advice-usmnt-job",
-          "title": "Poch offers Pep advice on USMNT job, calls it 'perfect moment to arrive'",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtmkREwcOI1_h7oRnK6jnkINcz8IfbQ5b6ahUjqD9BXjgz-07S5BqWZZoenh4"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/16/mauricio-pochettino-pep-guardiola-usmnt-manchester-united",
-          "title": "Pochettino: I’d tell Guardiola to ‘take it’ if he’s offered US coaching job",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJDl6d8Yh0gWeHXPrrAsvVtqAsguDgGp6oCS59p1wDtMbQDkMqK6gtHkwn0Lk"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/articles/crgj36e6ee5yo",
-          "title": "Mauricio Pochettino would tell Pep Guardiola to take US job",
+          "url": "https://www.bbc.com/sport/football/live/cqkgjmm21y03t",
+          "title": "Mozambique vs Ethiopia: Africa Cup of Nations Qualification stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQVpbHneEYijqXEQairiBPbbQaXjQoLUgYrok7d_A_el-MgWwE4zd1QxdbS9s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/football/ethiopia-vs-mozambique-prediction-2026-11-17/",
+          "title": "Ethiopia vs Mozambique Prediction, Betting Tips & Odds | 17 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTI1g8lEzX_nIP_7apB5qbK48lurOorB4mGQ65R3J7odUcHGBTHygew_Ra3IeE"
+        },
+        {
+          "url": "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-ethiopia-vs-mozambique-live-on-bein-sports-2026-11-16",
+          "title": "Ethiopia vs Mozambique LIVE on beIN SPORTS | AFCON 2027",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaCWNK0jY_Xd5wZj2G0di3vCevE8nRK3LSpMlK-zSYgUuXGIm2GdPZ-HapMrE"
         }
       ]
     },
     {
-      "query": "marvel studios future genre shift",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T12:10:00Z",
+      "query": "bryson dechambeau",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T12:40:00Z",
       "related_news_urls": [
-        "https://www.empireonline.com/movies/news/avengers-secret-wars-whole-other-genre-doomsday-kevin-feige-exclusive/",
-        "https://www.yahoo.com/entertainment/movies/articles/avengers-secret-wars-whole-other-170139068.html",
-        "https://www.imdb.com/news/ni66114011/?ref_=ttnw_art_perm"
+        "https://www.telegraph.co.uk/golf/2026/11/17/bryson-dechambeau-joins-dp-world-tour-to-end-golf-exile/",
+        "https://www.espn.com/golf/story/_/id/50510068/bryson-dechambeau-join-european-tour-2027-liv-demise",
+        "https://www.golfdigest.com/story/bryson-dechambeau-dp-world-tour-2027-membership"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6KLrU0QKYCjn74pi1X1NgK_qBhoapBXGUlmh2lBxVYDg4Fb8dGNQ-SBb9H9c",
-      "image_credit": "Empire",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2acSFc7N6ruCS5XAcyAPppTXJQJ8Z1jZyS4KnsiyxzTJtgVRt4D9V3HFoCUE",
+      "image_credit": "The Telegraph",
       "news": [
         {
-          "url": "https://www.empireonline.com/movies/news/avengers-secret-wars-whole-other-genre-doomsday-kevin-feige-exclusive/",
-          "title": "Avengers: Secret Wars Is ‘A Whole Other Genre Of Story’ To Doomsday, Teases Kevin Feige",
-          "publisher": "Empire",
+          "url": "https://www.telegraph.co.uk/golf/2026/11/17/bryson-dechambeau-joins-dp-world-tour-to-end-golf-exile/",
+          "title": "Bryson DeChambeau joins DP World Tour to end golf exile",
+          "publisher": "The Telegraph",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6KLrU0QKYCjn74pi1X1NgK_qBhoapBXGUlmh2lBxVYDg4Fb8dGNQ-SBb9H9c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2acSFc7N6ruCS5XAcyAPppTXJQJ8Z1jZyS4KnsiyxzTJtgVRt4D9V3HFoCUE"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/avengers-secret-wars-whole-other-170139068.html",
-          "title": "Avengers: Secret Wars is a \"whole other genre\" of superhero movie and a \"really unique story\"",
-          "publisher": "Yahoo",
+          "url": "https://www.espn.com/golf/story/_/id/50510068/bryson-dechambeau-join-european-tour-2027-liv-demise",
+          "title": "Bryson DeChambeau to join European tour in 2027 after demise of LIV Golf",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReLjpNEtulryvdxIxawf5Q6MMl7wpd8cjt-Adm-yooe-GAn6I9lScGmuTzaJU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrPzp7TAW80p4gcjd-qOvI4nBKxjBg712ax2BcX8dS1h_5CFhS0QXOZ1MqHRI"
         },
         {
-          "url": "https://www.imdb.com/news/ni66114011/?ref_=ttnw_art_perm",
-          "title": "Avengers: Secret Wars Gets Game-Changing Kevin Feige Update 1 Month Before Doomsday",
-          "publisher": "IMDb",
+          "url": "https://www.golfdigest.com/story/bryson-dechambeau-dp-world-tour-2027-membership",
+          "title": "Bryson DeChambeau submits DP World Tour application just before deadline, joining tour in 2027",
+          "publisher": "Golf Digest",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBSZOySluvsJlgZjPbUvZbhU2_D_Lj9aR2vh2ofHVt0MVptrvc7uYjGReiBs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY1pWS0EbmM9B6Mfo03iJ9vSPLtnD_hF57IiWVwk-cNXrNo4LsZMlng_Ixi50"
         }
       ]
     },
     {
-      "query": "jaromir jagr",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T12:10:00Z",
+      "query": "tornado warning san francisco bay area",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-17T12:30:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/jaromir-jagr-hoping-for-farewell-hockey-game-next-summer",
-        "https://www.nytimes.com/athletic/7787046/2026/11/16/jaromir-jagr-retirement-hall-of-fame/",
-        "https://www.dailyfaceoff.com/news/nhl-hall-of-fame-jaromir-jagr-retire-after-2026-27-season"
+        "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
+        "https://www.kron4.com/weather/video-waterspout-spotted-over-sf-bay/",
+        "https://www.nbcbayarea.com/news/local/tornado-warning-water-spout-bay-area-storm/4176982/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWv31Q-J-p6vq366-Kec4V-Ccnxa0lcbb7IrOCIGoUgqNjevqH3Tm_1GI46qo",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHiqk_8Z-_bOri6dqJ_y_ETDWQ_LD2bDleAL2kxM-pG8AEabNOnrz49yPXIq4",
+      "image_credit": "ABC7 Bay Area",
       "news": [
         {
-          "url": "https://www.nhl.com/news/jaromir-jagr-hoping-for-farewell-hockey-game-next-summer",
-          "title": "Jagr hopes to host farewell hockey game next summer",
-          "publisher": "NHL.com",
+          "url": "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
+          "title": "Live storm updates: Waterspouts spotted over San Francisco Bay amid severe weather",
+          "publisher": "ABC7 Bay Area",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWv31Q-J-p6vq366-Kec4V-Ccnxa0lcbb7IrOCIGoUgqNjevqH3Tm_1GI46qo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHiqk_8Z-_bOri6dqJ_y_ETDWQ_LD2bDleAL2kxM-pG8AEabNOnrz49yPXIq4"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7787046/2026/11/16/jaromir-jagr-retirement-hall-of-fame/",
-          "title": "Jaromir Jagr, 54, ready to end hockey playing career: ‘I’ve squeezed every last drop out of it’ - The Athletic",
+          "url": "https://www.kron4.com/weather/video-waterspout-spotted-over-sf-bay/",
+          "title": "Video: Waterspout spotted over SF Bay",
+          "publisher": "KRON4",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jv_q8CsqwTiHEuvWdtpg5Fhcp8e7D5gD0SIrkol6tCtUIhy_I2yu2gF4ycs"
+        },
+        {
+          "url": "https://www.nbcbayarea.com/news/local/tornado-warning-water-spout-bay-area-storm/4176982/",
+          "title": "Bay Area storm: Santa Cruz County tornado warning, twin waterspouts spotted in SF",
+          "publisher": "NBC Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDMFJnRnVP6dCowx-1HImL-3W1Ax16h8hn10t2UqvrKXezbYUVkgfDVYGzahM"
+        }
+      ]
+    },
+    {
+      "query": "sls stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T12:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/business/deals/eli-lilly-to-buy-calytrix-bio-for-up-to-1-5-billion-591745e4",
+        "https://finance.yahoo.com/markets/stocks/articles/sls-stock-jumps-hours-retail-015411970.html",
+        "https://www.bizjournals.com/boston/news/2026/11/16/lilly-buys-calytrix-bio.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQai4Xd4FSDcrut7LX1u9Gv1GAhjAeUJynOjlSdaUzX37vBq7uAZ7AvTbgmuLo",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/business/deals/eli-lilly-to-buy-calytrix-bio-for-up-to-1-5-billion-591745e4",
+          "title": "Eli Lilly to Buy Calytrix Bio for Up to $1.5 Billion",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQai4Xd4FSDcrut7LX1u9Gv1GAhjAeUJynOjlSdaUzX37vBq7uAZ7AvTbgmuLo"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sls-stock-jumps-hours-retail-015411970.html",
+          "title": "SLS Stock Jumps After-Hours: Retail Eyes Lilly’s Cancer Deal for Valuation Clues — 2 Big Investors Grab Shares",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJX-Ocwu8JrPnKzzbkQ5FMdno17jOOaOs4OfrUIAys8y0K2U3teLlIIOBkTXE"
+        },
+        {
+          "url": "https://www.bizjournals.com/boston/news/2026/11/16/lilly-buys-calytrix-bio.html",
+          "title": "Lilly’s new $1.5B acquisition is a preclinical Massachusetts biotech",
+          "publisher": "The Business Journals",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQioiDdpy4_tH0ohiuqSunteJe_LbzZfKxRZU6PFLG2Q0Y4MmwoR79Nj4c2ks4"
+        }
+      ]
+    },
+    {
+      "query": "china vs bahrain",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T12:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cwx2em8jnye3t",
+        "https://www.gdnonline.com/Details/1413064",
+        "https://www.foxsports.com/soccer/friendlies-men-china-pr-vs-bahrain-nov-17-2026-game-boxscore-1109902"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cwx2em8jnye3t",
+          "title": "China vs Bahrain: Friendlies stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://www.gdnonline.com/Details/1413064",
+          "title": "Football: Bahrain ‘ready’ for China test",
+          "publisher": "Gulf Daily News (Bahrain)",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3UEdUb1O5DviEDXhGfDMSNfnMaqWWaX1VNpKSfPNuk4Cei9rZ9Gqb2wLn2zM"
+        },
+        {
+          "url": "https://www.foxsports.com/soccer/friendlies-men-china-pr-vs-bahrain-nov-17-2026-game-boxscore-1109902",
+          "title": "China PR vs. Bahrain - Live Score - November 17, 2026",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdyn5VpqdP46hw4h_MlPfPRstLW2DsuGEsXWaIsFWVqsRj-dtlxQLGUFL05qQ"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 delay",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T12:30:00Z",
+      "related_news_urls": [
+        "https://tech4gamers.com/teacher-cancels-exams-assignments-students-enjoy-gta-6/",
+        "https://says.com/my/tech/gaming/spanish-professor-delays-exam-clears-homework-gta-6-launch-week",
+        "https://unboxholics.com/en/news/gaming/139040-i-was-your-age-when-gta-v-came-out-professors-email-goes-viral"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaKV9xvAC6Vw4mFmWGhnWUsdMz98A3YbWQZwlF4t7gwKxfEvjIpk9Gp1BEs4",
+      "image_credit": "Tech4Gamers",
+      "news": [
+        {
+          "url": "https://tech4gamers.com/teacher-cancels-exams-assignments-students-enjoy-gta-6/",
+          "title": "Teacher Cancels Exams And Assignments To Let Students Enjoy GTA 6 At Launch",
+          "publisher": "Tech4Gamers",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaKV9xvAC6Vw4mFmWGhnWUsdMz98A3YbWQZwlF4t7gwKxfEvjIpk9Gp1BEs4"
+        },
+        {
+          "url": "https://says.com/my/tech/gaming/spanish-professor-delays-exam-clears-homework-gta-6-launch-week",
+          "title": "Professor Clears Homework & Delays Exam For ‘GTA 6’ Launch Week",
+          "publisher": "SAYS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9huQTJSYqXGyK0-lWNwQsU7RRwgIzCseUXUr9gdgjhpdMHRwSBLLmavg6xBw"
+        },
+        {
+          "url": "https://unboxholics.com/en/news/gaming/139040-i-was-your-age-when-gta-v-came-out-professors-email-goes-viral",
+          "title": "\"I Was Your Age When GTA V Came Out\" – Professor's Email Goes Viral",
+          "publisher": "Unboxholics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR35IZUYpXxhXQwucXLUAW38poqWl1Zki8z-kT4mMjymDy1XqJNiJnLUHUlZeI"
+        }
+      ]
+    },
+    {
+      "query": "connections today",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-17T12:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/16/crosswords/connections-companion-1255.html",
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-17-2026",
+        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-17-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-hr5uEQdpp6AE1n_KDBGuVv_3m7n7AmF6Y4MzUz7kLHnrxHrvAqVutOoPqHo",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/16/crosswords/connections-companion-1255.html",
+          "title": "NYT Connections Answers for November 17, 2026",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRVfjqGfF_Rx4vfcd4GP0OO-Ewfcf7oZfANVC0z9qr0ggmcGaY2vMK08f13dc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-hr5uEQdpp6AE1n_KDBGuVv_3m7n7AmF6Y4MzUz7kLHnrxHrvAqVutOoPqHo"
         },
         {
-          "url": "https://www.dailyfaceoff.com/news/nhl-hall-of-fame-jaromir-jagr-retire-after-2026-27-season",
-          "title": "Report: Jaromir Jagr ready to retire at 54",
-          "publisher": "Daily Faceoff",
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-17-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 17, 2026",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUXs8e6PyGmmMM8Wm8peur6mxl_M21YTCZWH5hEujKZk7iCsycCAel1icJGgM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-17-2026",
+          "title": "Today's NYT Connections Hints (and Answer) for Sunday, November 17, 2026",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLbdxD7-TqPrFNKYbrlyQvEpjxIszLuCk-iy90goH2taYz8Aopub1ArxTgoGA"
         }
       ]
     },
     {
-      "query": "globo",
+      "query": "its going down strands",
       "approx_searches": "100+",
-      "published_at": "2026-11-17T12:10:00Z",
+      "published_at": "2026-11-17T12:30:00Z",
       "related_news_urls": [
-        "https://natelinha.uol.com.br/colunas/joao-paulo-dell-santo/2026/11/17/globo-retoma-novelas-das-10-de-olho-nos-saudosistas----250516.php",
-        "https://noticiasdatv.uol.com.br/noticia/celebridades/clara-moneke-reage-apos-simaria-dar-em-cima-de-seu-namorado-ao-vivo-na-globo-159519",
-        "https://www.cnnbrasil.com.br/pop/celebridades/simaria-da-cantada-em-ator-de-quem-ama-cuida-estou-na-pista/"
+        "https://www.nytimes.com/2026/11/16/crosswords/strands-sidekick-989.html",
+        "https://mashable.com/entertainment/strands-nyt-hint-november-17-2026",
+        "https://www.pcguide.com/news/todays-nyt-strands-answers-clues-and-hints-on-november-17-puzzle-989/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdaUk89HrKj0eAy0Pe-uZgGRn9kA3ro-2SwtJkflwqJ1Vq5F86UHAPsFVbPRo",
-      "image_credit": "NaTelinha",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcfMNFhgYomc3yQh3w2ojXdFgUCC3r4Cq4OSdAxhscnyOb4ZRiD48Kl6KFI6w",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://natelinha.uol.com.br/colunas/joao-paulo-dell-santo/2026/11/17/globo-retoma-novelas-das-10-de-olho-nos-saudosistas----250516.php",
-          "title": "Globo retoma \"novelas das 10\" de olho nos saudosistas",
-          "publisher": "NaTelinha",
+          "url": "https://www.nytimes.com/2026/11/16/crosswords/strands-sidekick-989.html",
+          "title": "NYT Strands Hints for November 17, 2026",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdaUk89HrKj0eAy0Pe-uZgGRn9kA3ro-2SwtJkflwqJ1Vq5F86UHAPsFVbPRo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcfMNFhgYomc3yQh3w2ojXdFgUCC3r4Cq4OSdAxhscnyOb4ZRiD48Kl6KFI6w"
         },
         {
-          "url": "https://noticiasdatv.uol.com.br/noticia/celebridades/clara-moneke-reage-apos-simaria-dar-em-cima-de-seu-namorado-ao-vivo-na-globo-159519",
-          "title": "Clara Moneke reage após Simaria dar em cima de seu namorado ao vivo na Globo",
-          "publisher": "Notícias da TV",
+          "url": "https://mashable.com/entertainment/strands-nyt-hint-november-17-2026",
+          "title": "NYT Strands hints, answers for November 17, 2026",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY034zX569L0nxH-4zlAN0qi04MGuG7mw8cGBrGCv78rOK5ZAZebVCsw2w4o4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGK32AE_lFv9Jr7NgeWtZcBtcoELPFjrXo8vtiuh4WXse0qcFcrctr0pabtRg"
         },
         {
-          "url": "https://www.cnnbrasil.com.br/pop/celebridades/simaria-da-cantada-em-ator-de-quem-ama-cuida-estou-na-pista/",
-          "title": "Simaria dá cantada em ator de “Quem Ama Cuida”: “Estou na pista\"",
-          "publisher": "CNN Brasil",
+          "url": "https://www.pcguide.com/news/todays-nyt-strands-answers-clues-and-hints-on-november-17-puzzle-989/",
+          "title": "Today’s NYT Strands answers, clues, and hints on November 17 (puzzle #989)",
+          "publisher": "PC Guide",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbrg6Bzuczpr5b-sAWHudn9TkXc3XEmCvrGKXvOFg9LcBokZPX5zRcpohbw-M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xLR9EKGIgNwiuIJRtIJJgZdp83ZzzMePStydpu4GG5YdxPMAwUP_M68LygU"
         }
       ]
     },
     {
-      "query": "salmonella",
+      "query": "home depot stock",
       "approx_searches": "100+",
-      "published_at": "2026-11-17T12:10:00Z",
+      "published_at": "2026-11-17T12:30:00Z",
       "related_news_urls": [
-        "https://www.cidrap.umn.edu/e-coli/cdc-declares-its-probe-outbreak-e-coli-salmonella-illnesses-tied-alfalfa-sprouts-over",
-        "https://foodpoisoningbulletin.com/2026/francisco-family-foods-alfalfa-sprouts-recalled-for-e-coli-and-salmonella/",
-        "https://www.foodsafetynews.com/2026/11/more-sprouting-seeds-recalled-because-of-possible-contamination-with-e-coli-and-salmonella/"
+        "https://finance.yahoo.com/markets/options/articles/implied-volatility-surging-home-depot-125400244.html",
+        "https://www.zacks.com/stock/news/3030086/implied-volatility-surging-for-home-depot-stock-options",
+        "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD3mSvElXVNyNjqNhuZ_SYE_UyPuLlNhqvs6UXHhkwZWjwykDcFOZkh2Pz1ZU",
-      "image_credit": "CIDRAP",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUppAlp6QM9geffP3RiUzILN1OMsphYRg-wcXceRsHzAMvbgqfirp4sST2pFw",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.cidrap.umn.edu/e-coli/cdc-declares-its-probe-outbreak-e-coli-salmonella-illnesses-tied-alfalfa-sprouts-over",
-          "title": "CDC declares its probe into outbreak of E coli, Salmonella illnesses tied to alfalfa sprouts over",
-          "publisher": "CIDRAP",
+          "url": "https://finance.yahoo.com/markets/options/articles/implied-volatility-surging-home-depot-125400244.html",
+          "title": "Implied Volatility Surging for Home Depot Stock Options",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD3mSvElXVNyNjqNhuZ_SYE_UyPuLlNhqvs6UXHhkwZWjwykDcFOZkh2Pz1ZU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUppAlp6QM9geffP3RiUzILN1OMsphYRg-wcXceRsHzAMvbgqfirp4sST2pFw"
         },
         {
-          "url": "https://foodpoisoningbulletin.com/2026/francisco-family-foods-alfalfa-sprouts-recalled-for-e-coli-and-salmonella/",
-          "title": "Francisco Family Foods Alfalfa Sprouts Recalled For E. coli and Salmonella",
-          "publisher": "Food Poisoning Bulletin",
+          "url": "https://www.zacks.com/stock/news/3030086/implied-volatility-surging-for-home-depot-stock-options",
+          "title": "Implied Volatility Surging for Home Depot Stock Options",
+          "publisher": "Zacks Investment Research",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCU6t4o6uGLxjSW82_Kw4kEDCYgH16OeUXpmkYGdouKHvh0HTZmwrk73uD_-M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_BRg310z82n7HzXBULE5q3AOiFktUm34Y98qOHfZCLkpYbRLaGVCvKW1Mamk"
         },
         {
-          "url": "https://www.foodsafetynews.com/2026/11/more-sprouting-seeds-recalled-because-of-possible-contamination-with-e-coli-and-salmonella/",
-          "title": "More sprouting seeds recalled because of possible contamination with E. coli and Salmonella",
-          "publisher": "Food Safety News",
+          "url": "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html",
+          "title": "Home Depot names Richard McPhail as new CEO, beats earnings expectations",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQuJVFvQXFO7nJDnslYZOIN4y7qHWQBtI6HjEC8UO1O56ZysBtcfuPrLqXhek"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg4yKPizXyFwVNmqllAAtmtUEqOZHZiBK3EgLU9i8oAHNY6hlWv5fwedHYcO0"
+        }
+      ]
+    },
+    {
+      "query": "amistosos",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T12:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17522786/la-formacion-de-argentina-vs-costa-rica",
+        "https://www.tycsports.com/seleccion-argentina/la-formacion-de-la-seleccion-argentina-vs-costa-rica-op-id771686.html",
+        "https://www.clarin.com/deportes/vacio-dejo-messi-ve-tribunas-seleccion-enfrentara-costa-rica-vez-publico-necesidad-mejorar-imagen_0_g9g5Hr8dfv.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4nahZLuIC_h50bhIwOl2lDRLWWyzhl2CtDXhjUuUrKriCtILAKrKaqbCqs8",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17522786/la-formacion-de-argentina-vs-costa-rica",
+          "title": "El probable equipo de Argentina para enfrentar a Costa Rica en Córdoba",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4nahZLuIC_h50bhIwOl2lDRLWWyzhl2CtDXhjUuUrKriCtILAKrKaqbCqs8"
+        },
+        {
+          "url": "https://www.tycsports.com/seleccion-argentina/la-formacion-de-la-seleccion-argentina-vs-costa-rica-op-id771686.html",
+          "title": "La formación de la Selección Argentina contra Costa Rica, por un amistoso",
+          "publisher": "TyC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSlKav6ldf5-RcWAM2xLIZ-pEsjKPtfO7n-n9N8kqdAHAk9hANzvKxHhLhSfU"
+        },
+        {
+          "url": "https://www.clarin.com/deportes/vacio-dejo-messi-ve-tribunas-seleccion-enfrentara-costa-rica-vez-publico-necesidad-mejorar-imagen_0_g9g5Hr8dfv.html",
+          "title": "El vacío que dejó Messi se ve en las tribunas: la Selección enfrentará a Costa Rica otra vez con poco público y con la necesidad de mejorar su imagen",
+          "publisher": "Clarin.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTibENsqHpLl_iJHOXIQzYX-slKFUjBEoAWLgCx_8Sv9L84yrwc4L-9I1V6p88"
         }
       ]
     }
