@@ -3,356 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T20:01:23.106400Z",
+  "checked_at": "2026-11-17T20:31:31.119308Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "charles bronson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T20:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cqjd7n7p09j5o",
+        "https://www.lbc.co.uk/article/charles-bronson-again-refused-release-5HjdmSy_2/",
+        "https://www.telegraph.co.uk/news/2026/11/17/charles-bronson-refused-release-after-ninth-parole-hearing/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjsmphHNJwHE14EJh88T0By83m__n1Bwd-keWKmHzsReyWQK6Rbybtuk8o1Bc",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cqjd7n7p09j5o",
+          "title": "Luton-born Charles Bronson denied parole for ninth time",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjsmphHNJwHE14EJh88T0By83m__n1Bwd-keWKmHzsReyWQK6Rbybtuk8o1Bc"
+        },
+        {
+          "url": "https://www.lbc.co.uk/article/charles-bronson-again-refused-release-5HjdmSy_2/",
+          "title": "Charles Bronson, one of UK’s longest-serving inmates, again refused release",
+          "publisher": "LBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaq6S9yhHZ7YqPD4k8FNF1yxms3kPe6yTtc4ng0HLjJwYLm9-vFIiwgUrTb0o"
+        },
+        {
+          "url": "https://www.telegraph.co.uk/news/2026/11/17/charles-bronson-refused-release-after-ninth-parole-hearing/",
+          "title": "Charles Bronson refused release after ninth parole hearing",
+          "publisher": "The Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FnOWXtQZJZ6uDxzOv0QBykyA5pMbxXviskqJbPMRng6H4XhfKSvrMqd75Xo"
+        }
+      ]
+    },
+    {
+      "query": "chip gaines",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T20:10:00Z",
+      "related_news_urls": [
+        "https://people.com/joanna-gaines-rare-photo-sons-golfing-12260318",
+        "https://www.imdb.com/fr/news/ni66114209/?ref_=nwc_art_perm",
+        "https://www.yahoo.com/entertainment/celebrity/articles/joanna-gaines-fans-brand-husband-210821809.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCdlmqJIjzHDb30wu1lV660ENnQqzjffikamLf5M9J8vztyEI_iI2dIPfszRk",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/joanna-gaines-rare-photo-sons-golfing-12260318",
+          "title": "Joanna Gaines Shares Rare Photo of Son Crew Bonding with His Older Brother on the Golf Course",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCdlmqJIjzHDb30wu1lV660ENnQqzjffikamLf5M9J8vztyEI_iI2dIPfszRk"
+        },
+        {
+          "url": "https://www.imdb.com/fr/news/ni66114209/?ref_=nwc_art_perm",
+          "title": "Joanna & Chip Gaines Celebrate Special Occasion Ahead of New Show",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRthHCxEdrtVHbifDohKjP57VY2S4Dr7HZIPruyXQM-KZMkeRWCDjimep7rUP0"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/joanna-gaines-fans-brand-husband-210821809.html",
+          "title": "Joanna Gaines' fans brand husband Chip a 'hunk' over unseen photos",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAxkYss_s3cWfH-R5eYL9z-8C1H6G0DLlyLVEicbPVo_zSxucp0Bz84weJIkg"
+        }
+      ]
+    },
+    {
+      "query": "christopher laneve",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T20:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/17/us/hegseth-christopher-laneve-army-chief-of-staff.html",
+        "https://www.washingtonpost.com/national-security/2026/11/17/trump-nominates-gen-chris-laneve-army-chief-staff/",
+        "https://abcnews.com/Politics/trump-nominates-laneve-top-army-officer/story?id=138219615"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSScLFCNy9epg_E0aRDTAAlqEUc2vrfcWTpuXZDACsuJFdYwOCshz1m2z0GSbE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/17/us/hegseth-christopher-laneve-army-chief-of-staff.html",
+          "title": "Hegseth Nominates His Former Aide to Lead the Army",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSScLFCNy9epg_E0aRDTAAlqEUc2vrfcWTpuXZDACsuJFdYwOCshz1m2z0GSbE"
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2026/11/17/trump-nominates-gen-chris-laneve-army-chief-staff/",
+          "title": "Trump nominates new top Army general, setting stage for confirmation fight",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFXgbo7DyXAqVPV4Sgzf5Kd2864kNMip5n6LZdPl3CMvuWYLHPWAV8h1wxoxI"
+        },
+        {
+          "url": "https://abcnews.com/Politics/trump-nominates-laneve-top-army-officer/story?id=138219615",
+          "title": "Trump nominates LaNeve as top Army officer",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN5pQ-sv-Hfjo-BWG3nxJcx6E2X2OU0Zy6MYbSYoRD4gFcRhMk6r22CxCcveE"
+        }
+      ]
+    },
+    {
+      "query": "alexander zverev",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T20:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/t2zHtLNMIMTO/",
+        "https://www.espn.com/tennis/story/_/id/50490503/alexander-zverev-opens-atp-finals-win-rafael-jodar",
+        "https://sports.yahoo.com/articles/alexander-zverev-ben-shelton-said-120000517.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeHT0h2e1EHUQD9TRKE1vJUQyeypwFN58hGxsV8iRBKbNIab8xhnCi-ckW0TM",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/t2zHtLNMIMTO/",
+          "title": "ATP Finals 2026 live updates: Latest as Zverev takes first set against USA's Shelton on day three - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeHT0h2e1EHUQD9TRKE1vJUQyeypwFN58hGxsV8iRBKbNIab8xhnCi-ckW0TM"
+        },
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50490503/alexander-zverev-opens-atp-finals-win-rafael-jodar",
+          "title": "Alexander Zverev starts ATP Finals with convincing win over Rafael Jodar",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8VF3TnOwQdFFKAjJ6GUL8Y5k_mO1DOL1qadK-ea9sJyYals6ZlHrnCnCM96A"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/alexander-zverev-ben-shelton-said-120000517.html",
+          "title": "Alexander Zverev and Ben Shelton said to have an advantage over everyone else at the ATP Finals",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVhZgBf-bSNn5WWn7aXC0Yd4gOO-IAnBMH2yiDQ1vPi948tiX-9lOMZ9oCxFI"
+        }
+      ]
+    },
+    {
+      "query": "portugal",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T20:00:00Z",
+      "related_news_urls": [
+        "https://www.rtp.pt/noticias/pais/mais-de-meia-centena-de-tendas-amanhecem-no-rossio_n1776719"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc1w6-WkbWkqksUiSjW9nMTkn6vVoHY5yMPWb0iN610y89mUHMjkUjcqCFB7w",
+      "image_credit": "RTP",
+      "news": [
+        {
+          "url": "https://www.rtp.pt/noticias/pais/mais-de-meia-centena-de-tendas-amanhecem-no-rossio_n1776719",
+          "title": "Mais de meia centena de tendas amanhecem no Rossio",
+          "publisher": "RTP",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc1w6-WkbWkqksUiSjW9nMTkn6vVoHY5yMPWb0iN610y89mUHMjkUjcqCFB7w"
+        }
+      ]
+    },
+    {
+      "query": "uefa nations league schedule",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T20:00:00Z",
+      "related_news_urls": [
+        "https://www.uefa.com/uefanationsleague/news/02ab-22096ba64f4d-f179d6d05013-1000--nations-league-quarter-finals-who-is-through-who-can-joi/",
+        "https://www.espn.com/soccer/story/_/id/50472529/england-nations-league-permutations",
+        "https://www.usatoday.com/story/sports/soccer/europe/2026/11/17/uefa-nations-league-bracket-schedule-standings/92819671007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbZqsTKNQl64HSR_Db_gheL3z7AMJBfnfcc6S9eoBLiDH7glwmPaJS_1xMXw",
+      "image_credit": "UEFA.com",
+      "news": [
+        {
+          "url": "https://www.uefa.com/uefanationsleague/news/02ab-22096ba64f4d-f179d6d05013-1000--nations-league-quarter-finals-who-is-through-who-can-joi/",
+          "title": "Nations League quarter-finals: Who is through? Who can join them? What is the state of play in each League A group?",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbZqsTKNQl64HSR_Db_gheL3z7AMJBfnfcc6S9eoBLiDH7glwmPaJS_1xMXw"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50472529/england-nations-league-permutations",
+          "title": "England Nations League permutations: What they need vs. Spain and why it matters",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStNv8uGfLF_DpY3Iko1kz2PeyFWPk3SnEUcFqB9XLkA18Fbe-t2pIdgpRAoPw"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/soccer/europe/2026/11/17/uefa-nations-league-bracket-schedule-standings/92819671007/",
+          "title": "UEFA Nations League LIVE: Who's in quarterfinals? Bracket, standings, schedule",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX-HkzOPHaQdIQI0GC4nR8dZDIUxDgUwm034Owbf2Ezl6wJMDjdYNw3Jmn4VA"
+        }
+      ]
+    },
+    {
+      "query": "iran attack us",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T20:00:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/",
+        "https://www.npr.org/2026/11/17/nx-s1-6044255/us-iran-war-latest-bahrain",
+        "https://www.nbcnews.com/world/iran/iran-strikes-us-targets-bahrain-rcna609764"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_I8VwuQbd-q_T1JyjALc7huRA_ejXRCA8MBjFZVkbYCG6EGCz54LvIFTncdE",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/",
+          "title": "Live Updates: Iran claims new attack on U.S. radar system in Bahrain and says tanker hit near Strait of Hormuz",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_I8VwuQbd-q_T1JyjALc7huRA_ejXRCA8MBjFZVkbYCG6EGCz54LvIFTncdE"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/17/nx-s1-6044255/us-iran-war-latest-bahrain",
+          "title": "Iran launches third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0DpbAPokGc3gx0GcwQRpz-d4AiXJ5lsgeRsN5v5qk83SowUb5IjY_86DVafA"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/iran/iran-strikes-us-targets-bahrain-rcna609764",
+          "title": "A 2-month lull ends with Iran’s third strike on U.S. targets in Bahrain",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIQv_EUC7__1MzROiRN9I8NRNAt6YZcWoB7BezrvdX0xy_ZwnHaUu61h8Ps5Q"
+        }
+      ]
+    },
+    {
+      "query": "flash flood watch",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T19:50:00Z",
+      "related_news_urls": [
+        "https://www.mercurynews.com/2026/11/17/wednesday-and-thursday-flash-flood-watch-issued-by-the-nws/",
+        "https://www.forth.news/lists/lacofire/Ch1W5ui5aaUDh8i9mwUx9",
+        "https://www.sanluisobispo.com/news/weather-news/article318068472.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMAXZ9bdP2pwWcYYcjwQA1XaIyQUNPMlIHjrvEo7dLRa9w19FiCv0Kfiq4UGw",
+      "image_credit": "The Mercury News",
+      "news": [
+        {
+          "url": "https://www.mercurynews.com/2026/11/17/wednesday-and-thursday-flash-flood-watch-issued-by-the-nws/",
+          "title": "Wednesday and Thursday flash flood watch issued by the NWS",
+          "publisher": "The Mercury News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMAXZ9bdP2pwWcYYcjwQA1XaIyQUNPMlIHjrvEo7dLRa9w19FiCv0Kfiq4UGw"
+        },
+        {
+          "url": "https://www.forth.news/lists/lacofire/Ch1W5ui5aaUDh8i9mwUx9",
+          "title": "With rain impacting #LACounty today and through next week, please follow these important safety tips. Stay safe, look out for your neighbors, and avoid flooded roads! RESOURCES: ☔️",
+          "publisher": "Forth.News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3l5blAJOPciR099xvTtYRAs5p1MAIVNDECuuYKQvMj6xtcDeMvBBz8PFVnDc"
+        },
+        {
+          "url": "https://www.sanluisobispo.com/news/weather-news/article318068472.html",
+          "title": "UPDATE: The coastal flood advisory is canceled",
+          "publisher": "San Luis Obispo Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkPRzKKDBqtRyjzm9Y5x5pbw9PvIG5fJ4Tw9zozerg3O-Ue_xtDbh9WVjyoOY"
+        }
+      ]
+    },
     {
       "query": "paris hilton",
       "approx_searches": "1000+",
       "published_at": "2026-11-17T19:40:00Z",
       "related_news_urls": [
-        "https://nypost.com/2026/11/16/us-news/paris-hilton-makes-dc-return-to-fight-against-deepfake-porn-with-aoc-demanding-justice-for-survivors/",
-        "https://endsexualexploitation.org/articles/congress-should-give-deepfake-pornography-survivors-a-path-to-justice-by-passing-defiance-act/",
-        "https://www.cosmopolitan.com/style-beauty/fashion/a74444439/paris-hilton-old-navy-exclusive-jingle-jammies/"
+        "https://www.cosmopolitan.com/style-beauty/fashion/a74444439/paris-hilton-old-navy-exclusive-jingle-jammies/",
+        "https://www.hercampus.com/school/youngstown/jingle-jammies-launch/",
+        "https://www.ttgmedia.com/travel-industry-news/its-paris-hilton-giving-history-lesson-girly-pop-tours-go-after-agents-solo"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4LW6ZCNnO0z5CY14M0JjlUn4xnpIeS-xSw1fth-xwoxM5P8Shjw_I6K13B0",
-      "image_credit": "New York Post",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVfL-x7ZL77sGxYWabCYIinaWGE7XHJkf4kj50Hlakys6U2ez69ian2LkxySQ",
+      "image_credit": "Cosmopolitan",
       "news": [
-        {
-          "url": "https://nypost.com/2026/11/16/us-news/paris-hilton-makes-dc-return-to-fight-against-deepfake-porn-with-aoc-demanding-justice-for-survivors/",
-          "title": "Paris Hilton makes DC return to fight against deepfake porn with AOC, demanding ‘justice’ for survivors",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4LW6ZCNnO0z5CY14M0JjlUn4xnpIeS-xSw1fth-xwoxM5P8Shjw_I6K13B0"
-        },
-        {
-          "url": "https://endsexualexploitation.org/articles/congress-should-give-deepfake-pornography-survivors-a-path-to-justice-by-passing-defiance-act/",
-          "title": "Congress Should Give Deepfake Pornography Survivors a Path to Justice by Passing DEFIANCE Act",
-          "publisher": "NCOSE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIoSfR_3vvVAtzXEivYRXP9PtARlz9VZSIW0Yz0AfV8X8PiqjKpbPcyY3kzP8"
-        },
         {
           "url": "https://www.cosmopolitan.com/style-beauty/fashion/a74444439/paris-hilton-old-navy-exclusive-jingle-jammies/",
           "title": "Paris Hilton Just Made Old Navy Jingle Jammies So Chic With an Exclusive Pink Set—Shop It Here",
           "publisher": "Cosmopolitan",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVfL-x7ZL77sGxYWabCYIinaWGE7XHJkf4kj50Hlakys6U2ez69ian2LkxySQ"
+        },
+        {
+          "url": "https://www.hercampus.com/school/youngstown/jingle-jammies-launch/",
+          "title": "Jingle Jammies Launch",
+          "publisher": "Her Campus",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDw3UD5DMZ12xtHHxrocr08W7sZYMzzKpPHmtqfDoD3KQxPuIrVtwHb88xvbE"
+        },
+        {
+          "url": "https://www.ttgmedia.com/travel-industry-news/its-paris-hilton-giving-history-lesson-girly-pop-tours-go-after-agents-solo",
+          "title": "'It's like Paris Hilton giving a history lesson': Girly Pop Tours to go after agents' solo and LGBTQ+ travellers with 'scandalous' walking tours",
+          "publisher": "TTG Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9RFyRYMtwKIaRXNORR1NOuwy-2GyK6PR-4X1BBFsb-bqVwHXltviEc-1RYlI"
         }
       ]
     },
     {
-      "query": "pentagon",
+      "query": "seguridad",
       "approx_searches": "500+",
       "published_at": "2026-11-17T19:40:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/business/aerospace-defense/pentagon-fails-ninth-straight-audit-despite-progress-organizing-finances-2026-11-16/",
-        "https://www.war.gov/News/Releases/Release/Article/4649444/new-dow-audit-progress-marks-breakthrough-toward-a-department-wide-clean-opinion/",
-        "https://thehill.com/policy/defense/6224597-pentagon-fails-ninth-audit/"
+        "https://cnnespanol.cnn.com/2026/11/17/eeuu/red-comunicaciones-seguridad-nacional-caida-trax",
+        "https://apnews.com/article/nsa-eeuu-red-eb464b0dbd36514fb54e4386a38420b3",
+        "https://elpais.com/us/2026-11-17/nueva-caida-en-las-infraestructuras-de-ee-uu-ahora-la-red-de-comunicacion-interna-de-los-servicios-secretos.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRn7oTVaBa9aiuQTrdaPf1sduV-wfb06U5sJYdHkEvtlzs5hHTSA7yS_Z7fA44",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQREcU_SSR0_MoF0ujdjaC1fQHdGWBehvxV-gekP22ECx6AB0XDQMRXqhzM2YE",
+      "image_credit": "CNN en Español",
       "news": [
         {
-          "url": "https://www.reuters.com/business/aerospace-defense/pentagon-fails-ninth-straight-audit-despite-progress-organizing-finances-2026-11-16/",
-          "title": "Pentagon fails ninth straight audit despite progress in organizing finances",
-          "publisher": "Reuters",
+          "url": "https://cnnespanol.cnn.com/2026/11/17/eeuu/red-comunicaciones-seguridad-nacional-caida-trax",
+          "title": "Exclusiva CNN: la red de comunicaciones de seguridad de EE.UU., altamente clasificada, sufre una caída, según fuentes",
+          "publisher": "CNN en Español",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRn7oTVaBa9aiuQTrdaPf1sduV-wfb06U5sJYdHkEvtlzs5hHTSA7yS_Z7fA44"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQREcU_SSR0_MoF0ujdjaC1fQHdGWBehvxV-gekP22ECx6AB0XDQMRXqhzM2YE"
         },
         {
-          "url": "https://www.war.gov/News/Releases/Release/Article/4649444/new-dow-audit-progress-marks-breakthrough-toward-a-department-wide-clean-opinion/",
-          "title": "New DoW Audit Progress Marks Breakthrough Toward a Department-Wide Clean Opinion",
-          "publisher": "U.S. Department of War (.gov)",
+          "url": "https://apnews.com/article/nsa-eeuu-red-eb464b0dbd36514fb54e4386a38420b3",
+          "title": "Se cae red clasificada de comunicaciones de la Agencia de Seguridad de EEUU",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQMCxZt0NGP-sIryGOWQzyD4Iy2unhyLr1sQVqDQ4JbETP2zwAgSg6D6SCv08"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXR99IRZzJdo6ArXrIpz58m5Wkh_ul0eJln1h1QxsrGfnuH5dn0JBEV-qcK7E"
         },
         {
-          "url": "https://thehill.com/policy/defense/6224597-pentagon-fails-ninth-audit/",
-          "title": "Pentagon fails ninth financial audit in a row",
-          "publisher": "The Hill",
+          "url": "https://elpais.com/us/2026-11-17/nueva-caida-en-las-infraestructuras-de-ee-uu-ahora-la-red-de-comunicacion-interna-de-los-servicios-secretos.html",
+          "title": "Nueva caída en las infraestructuras de EE UU: ahora, la red de comunicación interna de los servicios secretos",
+          "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EA07ggUjI03kxqG-EMFJ41WbGg3YCUHh8PWaXve5bwTFPWOf4CrZtCG6wdg"
-        }
-      ]
-    },
-    {
-      "query": "players era 8",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50505898/players-era-8-matchups-analysis",
-        "https://www.ncaa.com/news/basketball-men/article/2026-11-17/2026-players-era-8-bracket-schedule-scores",
-        "https://www.si.com/college/auburn/basketball/how-to-watch-auburn-basketball-s-players-era-8-tournament-tv-schedule"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4LWNGn4o00jAPjCSa1uusLeJHttyRqpWec-EOQW9scDj62w_SNg1AznTaZTg",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50505898/players-era-8-matchups-analysis",
-          "title": "How the teams match up in the first round of the Players Era 8",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4LWNGn4o00jAPjCSa1uusLeJHttyRqpWec-EOQW9scDj62w_SNg1AznTaZTg"
-        },
-        {
-          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-17/2026-players-era-8-bracket-schedule-scores",
-          "title": "2026 Players Era 8: Bracket, schedule, scores",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzX6kT5Y2MBjvIYTjV_R6G8Yzc1b--634l3rob17aHMopO0fro0zDUCaFHB6s"
-        },
-        {
-          "url": "https://www.si.com/college/auburn/basketball/how-to-watch-auburn-basketball-s-players-era-8-tournament-tv-schedule",
-          "title": "How to Watch Auburn Basketball's Players Era 8 Tournament, TV, Schedule",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0vLM5zhSfVL3_V_WS8r73s8NFrLO3hIKOcuUIUU___62hShSEe71TUII1lHY"
-        }
-      ]
-    },
-    {
-      "query": "alexis bledel",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:30:00Z",
-      "related_news_urls": [
-        "https://ew.com/new-gilmore-girls-doc-claims-alexis-bledel-didnt-want-to-be-there-as-she-struggled-to-adjust-12259703",
-        "https://www.yahoo.com/entertainment/tv/articles/gilmore-girls-alum-exposed-show-180845417.html",
-        "https://decider.com/2026/11/17/gilmore-girls-documentary-alexis-bledel-struggled-long-filming-hours/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe9MNckd082UkC54mOROgQwnamsFi5ARhonOxIOqJ1RejadA95HCnXtYkn6Pw",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/new-gilmore-girls-doc-claims-alexis-bledel-didnt-want-to-be-there-as-she-struggled-to-adjust-12259703",
-          "title": "‘Gilmore Girls’ doc claims Alexis Bledel ‘didn’t want to be there’ after being cast as a teen",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe9MNckd082UkC54mOROgQwnamsFi5ARhonOxIOqJ1RejadA95HCnXtYkn6Pw"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/gilmore-girls-alum-exposed-show-180845417.html",
-          "title": "Gilmore Girls Alum Exposed Show’s Toxic Work Culture ‘Grueling’ Alexis Bledel",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSW-GwaOGF9uFqzCQ8tcPp16OxTXQMTa2yMPISqo-JrUokm220E56PjwKIym98"
-        },
-        {
-          "url": "https://decider.com/2026/11/17/gilmore-girls-documentary-alexis-bledel-struggled-long-filming-hours/",
-          "title": "‘Gilmore Girls’ star Alexis Bledel struggled with ‘grueling’ filming hours: ‘She didn’t want to be there’",
-          "publisher": "Decider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUuD52AMVhRnghzsbeDaX9dt-kSKOQdHSOrvfX7UHOQhYWMxKKibtC8oTtPYM"
-        }
-      ]
-    },
-    {
-      "query": "bosnia y herzegovina - rumania",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:30:00Z",
-      "related_news_urls": [
-        "https://www.sportytrader.es/pronosticos/bosnia-y-herzegovina-rumania-387099/",
-        "https://www.sofascore.com/es/news/bosnia-vs-rumania-previa-de-la-uefa-nations-league",
-        "https://bolavip.com/pe/futbol-internacional/alineaciones-de-bosnia-y-herzegovina-y-rumania-por-la-liga-de-naciones-formaciones-probables"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkys4reoP9ElwRf9bDR4ul5Cijq7lwohsQ8N5ud1SQQPHs4geXmCalQNS1zso",
-      "image_credit": "SportyTrader",
-      "news": [
-        {
-          "url": "https://www.sportytrader.es/pronosticos/bosnia-y-herzegovina-rumania-387099/",
-          "title": "Pronóstico Bosnia Y Herzegovina - Rumania - Nations League",
-          "publisher": "SportyTrader",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkys4reoP9ElwRf9bDR4ul5Cijq7lwohsQ8N5ud1SQQPHs4geXmCalQNS1zso"
-        },
-        {
-          "url": "https://www.sofascore.com/es/news/bosnia-vs-rumania-previa-de-la-uefa-nations-league",
-          "title": "Bosnia vs Rumanía: previa de la UEFA Nations League",
-          "publisher": "Sofascore",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0zaceiadvok89KbFeyYbIbQJOF1MLfzVXMuUi61fumsQM1Vgj-wBz0qA6plY"
-        },
-        {
-          "url": "https://bolavip.com/pe/futbol-internacional/alineaciones-de-bosnia-y-herzegovina-y-rumania-por-la-liga-de-naciones-formaciones-probables",
-          "title": "Alineaciones de Bosnia y Herzegovina y Rumania por la Liga de Naciones: formaciones confirmadas",
-          "publisher": "Bolavip Perú",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7hj4jwXETDYYvrOKKJJ_J4in2Zr4COch-HM7T7aXoxqX58kfld1WVzWUQRyc"
-        }
-      ]
-    },
-    {
-      "query": "polonia - suecia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:30:00Z",
-      "related_news_urls": [
-        "https://www.sportytrader.es/pronosticos/polonia-suecia-387152/",
-        "https://www.mundodeportivo.com/futbol/uefa-nations-league/20261117/1004250461/ucrania-georgia-directo-nations-league.html",
-        "https://www.goal.com/es/noticias/polonia-vs-suecia-en-directo-hoy-donde-ver-el-partido-por-television-y-en-streaming/bltba967f0e79a4c80f"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxGBrziat1609fChHckqCoy-tqHxSwM-5ZiILQMHFxyrGDbsnfvR1ZlSIHs8Y",
-      "image_credit": "SportyTrader",
-      "news": [
-        {
-          "url": "https://www.sportytrader.es/pronosticos/polonia-suecia-387152/",
-          "title": "Pronóstico Polonia - Suecia - Nations League",
-          "publisher": "SportyTrader",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxGBrziat1609fChHckqCoy-tqHxSwM-5ZiILQMHFxyrGDbsnfvR1ZlSIHs8Y"
-        },
-        {
-          "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20261117/1004250461/ucrania-georgia-directo-nations-league.html",
-          "title": "Ucrania - Georgia, en directo | Nations League",
-          "publisher": "Mundo Deportivo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLczKlePVyyoFdk95CtLnIQxQHRuHc8pw9_vq7MmhFG91_o1AoVqzUa7gYZv0"
-        },
-        {
-          "url": "https://www.goal.com/es/noticias/polonia-vs-suecia-en-directo-hoy-donde-ver-el-partido-por-television-y-en-streaming/bltba967f0e79a4c80f",
-          "title": "Polonia vs Suecia, en directo hoy: ¿Dónde ver el partido por televisión y en streaming?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_zweKYsYR7Bz97Jil3iS7o6SFavW3pJUEflMVaSlVgYc2CXvdhp5Fxe6nY-I"
-        }
-      ]
-    },
-    {
-      "query": "jj gabriel",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50512542/jj-gabriel-man-united-real-madrid",
-        "https://www.skysports.com/football/news/13613361/jj-gabriel-transfer-news-manchester-united-teenager-announces-departure-from-club-amid-real-madrid-agreement",
-        "https://sports.yahoo.com/articles/real-madrid-finalise-signing-manchester-190700282.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBJ-jcwM-31mOKTbNt4s_teht1nX4BaYL_fOzLxJVBvm8jDJSzoHC0k66woM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50512542/jj-gabriel-man-united-real-madrid",
-          "title": "JJ Gabriel confirms Man United exit as Real Madrid transfer nears",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBJ-jcwM-31mOKTbNt4s_teht1nX4BaYL_fOzLxJVBvm8jDJSzoHC0k66woM"
-        },
-        {
-          "url": "https://www.skysports.com/football/news/13613361/jj-gabriel-transfer-news-manchester-united-teenager-announces-departure-from-club-amid-real-madrid-agreement",
-          "title": "JJ Gabriel transfer news: Manchester United teenager announces departure from club amid Real Madrid agreement",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN5N5rskwvwWCuBiOBnDAQC85yHuK3eMP0TMRDwRiUcF2JFFc6QeixmwA_Qqw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/real-madrid-finalise-signing-manchester-190700282.html",
-          "title": "Real Madrid to finalise signing of Manchester United academy prodigy JJ Gabriel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLDd9DKk51PRK7IIJCXM5FKldJOSyBRHKw3vjPErF1aHsHxefQgUEsOuxJbkY"
-        }
-      ]
-    },
-    {
-      "query": "players era tournament",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:30:00Z",
-      "related_news_urls": [
-        "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
-        "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
-        "https://www.cleveland.com/tv/2026/11/where-to-watch-notre-dame-vs-florida-basketball-for-free-today.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU",
-      "image_credit": "Florida Gators",
-      "news": [
-        {
-          "url": "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
-          "title": "Players Era 8: No. 1 Florida vs Notre Dame (Tuesday, 4:30 pm)",
-          "publisher": "Florida Gators",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
-          "title": "Florida vs. Notre Dame prediction, odds: 2026 Players Era 8 picks for Tuesday, Nov. 17 by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN3iRc166heYtuBI1p2_lhDYllmtlNUll6r7hbRaGx8GUbTlnvwgNt4U0N9lQ"
-        },
-        {
-          "url": "https://www.cleveland.com/tv/2026/11/where-to-watch-notre-dame-vs-florida-basketball-for-free-today.html",
-          "title": "Where to watch Notre Dame vs Florida basketball for free today",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTstFkXF8xmuoj9PdW_YLMRtzCppY4iPfCGZH5jBdMa4n2vVk4A6NCjKDf0FSk"
-        }
-      ]
-    },
-    {
-      "query": "niger vs morocco",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:20:00Z",
-      "related_news_urls": [
-        "https://barlamantoday.com/2026/11/17/morocco-meets-niger-again-in-rabat-with-2027-afcon-qualification-in-sight/",
-        "https://www.thenationalnews.com/sport/football/2026/11/17/achraf-hakimi-hailed-as-best-right-back-in-history-as-he-hits-new-highs-for-psg-and-morocco/",
-        "https://sportnewsafrica.com/en/news/atlas-lions-barometer-hakimi-and-yassine-in-form/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVIafZR3_6soAj3wLwMtDiQYJeBhI-E9KgNU9wSJ9F1NGiJLeBLYOVj3Pz5RE",
-      "image_credit": "Barlaman Today",
-      "news": [
-        {
-          "url": "https://barlamantoday.com/2026/11/17/morocco-meets-niger-again-in-rabat-with-2027-afcon-qualification-in-sight/",
-          "title": "Morocco Meets Niger Again in Rabat With 2027 AFCON Qualification in Sight",
-          "publisher": "Barlaman Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVIafZR3_6soAj3wLwMtDiQYJeBhI-E9KgNU9wSJ9F1NGiJLeBLYOVj3Pz5RE"
-        },
-        {
-          "url": "https://www.thenationalnews.com/sport/football/2026/11/17/achraf-hakimi-hailed-as-best-right-back-in-history-as-he-hits-new-highs-for-psg-and-morocco/",
-          "title": "Achraf Hakimi hailed as 'best right-back in history' as he hits new highs for PSG and Morocco",
-          "publisher": "www.thenationalnews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR0cHO7fZ0M3CQk-tokQCWtbQ7hAod9qCWo6rJsifio18VZFrwZ1I_KENILLg"
-        },
-        {
-          "url": "https://sportnewsafrica.com/en/news/atlas-lions-barometer-hakimi-and-yassine-in-form/",
-          "title": "Atlas Lions barometer: Hakimi and Yassine in form · SNA",
-          "publisher": "Sport News Africa",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGVI1R-rRUHqywQIZP3IBpt2pCqYX92Y9jxK_1cLAM9RN8T050CSdaFU_H9sU"
-        }
-      ]
-    },
-    {
-      "query": "live radio",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T19:10:00Z",
-      "related_news_urls": [
-        "https://www.wwlp.com/news/local-news/hampden-county/22news-infocus-host-patrick-berry-stars-in-its-a-wonderful-life-the-live-radio-play/",
-        "https://www.broadwayworld.com/people/galleryphoto.php?photoid=2668017",
-        "https://www.seehafernews.com/2026/11/15/third-avenue-playworks-brings-its-a-wonderful-life-to-the-stage-in-december/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_HuDx6iVeoYZRNjf2I1bRRe4Af8ZBQBj9d2IiC_-XEVNZlol3_e5soQsMbeE",
-      "image_credit": "WWLP",
-      "news": [
-        {
-          "url": "https://www.wwlp.com/news/local-news/hampden-county/22news-infocus-host-patrick-berry-stars-in-its-a-wonderful-life-the-live-radio-play/",
-          "title": "22News InFocus Host Patrick Berry stars in It’s a Wonderful Life: The Live Radio Play",
-          "publisher": "WWLP",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_HuDx6iVeoYZRNjf2I1bRRe4Af8ZBQBj9d2IiC_-XEVNZlol3_e5soQsMbeE"
-        },
-        {
-          "url": "https://www.broadwayworld.com/people/galleryphoto.php?photoid=2668017",
-          "title": "It's a Wonderful Life Preview Photo (November 9, 2026)",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsdMwyGkmEqR0gQvhcci4pDndo9AcAFxDdlh-Piun37heSf3z5BYUxPyWV9AU"
-        },
-        {
-          "url": "https://www.seehafernews.com/2026/11/15/third-avenue-playworks-brings-its-a-wonderful-life-to-the-stage-in-december/",
-          "title": "Third Avenue PlayWorks Brings ‘It’s a Wonderful Life’ to the Stage in December",
-          "publisher": "Seehafer News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT91VbNsp25ZMawO_l2JGhC4oUghmoNf8kheuU1DMXus27RoygEdriYaaN18T4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaa9YzSwmd-rURCXPMnhRh7zy7RG7H22KJ7BMlmpsX2rkLly8etVQ_rlcFb8E"
         }
       ]
     }
