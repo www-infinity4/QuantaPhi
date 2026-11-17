@@ -3,9 +3,324 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T04:31:21.120353Z",
+  "checked_at": "2026-11-17T05:01:27.520724Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "nfl mock draft 2027",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T04:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/nfl/draft/news/2027-nfl-mock-draft-six-quarterbacks-jeremiah-smith-week-11/",
+        "https://sports.yahoo.com/nfl/breaking-news/article/2027-nfl-draft-order-winless-chargers-hold-no-1-spot-as-titans-dolphins-loom-in-week-10-043747046.html",
+        "https://bleacherreport.com/articles/25533794-updated-2027-nfl-draft-order-after-week-10-results-who-could-dolphins-titans-take"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRph0Q4BBvFlER8XV7h6JLdrYJMarjnv2Mfh-ibfwHdZS_X9TvsMZipGyU1mpQ",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-mock-draft-six-quarterbacks-jeremiah-smith-week-11/",
+          "title": "2027 NFL mock draft: Six quarterbacks go in the first round but none overcome Jeremiah Smith",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRph0Q4BBvFlER8XV7h6JLdrYJMarjnv2Mfh-ibfwHdZS_X9TvsMZipGyU1mpQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/breaking-news/article/2027-nfl-draft-order-winless-chargers-hold-no-1-spot-as-titans-dolphins-loom-in-week-10-043747046.html",
+          "title": "2027 NFL Draft order: Winless Chargers hold No. 1 spot as Titans, Dolphins loom in Week 10",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8b7s-H3LXXyRCzKnDG3_ENmPz-87YqH9Aycs69FLunm0DVB0_Y5RU2Aks_kQ"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25533794-updated-2027-nfl-draft-order-after-week-10-results-who-could-dolphins-titans-take",
+          "title": "Updated 2027 NFL Draft Order After Week 10 Results, Who Could Dolphins & Titans Take?",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8qtoATOGiq9QF2ShtM7DjGhnKSx8h0bBYMiMAsN6ip2HtsG1VBanpwyt6lDA"
+        }
+      ]
+    },
+    {
+      "query": "jellyfish ufo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T04:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/video/6408345209112",
+        "https://www.newsnationnow.com/space/ufo/alaska-jellyfish-ufo-ross-coulthart/",
+        "https://www.eastidahonews.com/2026/11/you-have-to-see-this-high-altitude-balloon-or-tentacled-ufo-viral-video-shows-strange-floating-object-in-sky/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnVC787JrP0LHC-ZnXTdMBimVrgWNYr_DjmctvEjPYcaOMMLDPhvZ9jziXvf4",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/video/6408345209112",
+          "title": "SEE IT: Mysterious 'jellyfish' object floats near US military base as UFO expert offers theory",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnVC787JrP0LHC-ZnXTdMBimVrgWNYr_DjmctvEjPYcaOMMLDPhvZ9jziXvf4"
+        },
+        {
+          "url": "https://www.newsnationnow.com/space/ufo/alaska-jellyfish-ufo-ross-coulthart/",
+          "title": "Ross Coulthart wants closer look at Alaska ‘jellyfish’ UFO before final verdict",
+          "publisher": "NewsNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBh91mVSWBdAAIH0MILRzNCpPM0FVmnhndjhXV_NyhwKuFHXyKQ0VPD_3EzY0"
+        },
+        {
+          "url": "https://www.eastidahonews.com/2026/11/you-have-to-see-this-high-altitude-balloon-or-tentacled-ufo-viral-video-shows-strange-floating-object-in-sky/",
+          "title": "You have to see this! High-altitude balloon or 'tentacled UFO?' Viral video shows strange floating object in sky",
+          "publisher": "East Idaho News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSClyAiAujPDLUYBZjMfvwaQ9dL0S0pJm3bMtBiKhBSqh6fD2D9ACMf-Lk5LXw"
+        }
+      ]
+    },
+    {
+      "query": "the body season 2",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T04:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
+        "https://www.imdb.com/news/ni66109843/?ref_=ttnw_art_perm",
+        "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
+          "title": "‘The Body’ Talks Like ‘Mean Girls’ and Walks Like ‘The Crucible’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66109843/?ref_=ttnw_art_perm",
+          "title": "84,000 Signed Petition for Netflix to Cancel ‘The Body,’ Yet It’s Surging Up Charts After 100% Rotten Tomatoes Debut",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKTKDok_GiyLmD3JL8u6KablvS1Zwg7Vo_wy9UgZ6Kag2vIDQFCVSYaiE2Jwg"
+        },
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix",
+          "title": "The Body review – this sexy retro high school drama is like Cruel Intentions … with added Satanic rituals",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0J7IDDXHi9RkKqQf7C4XNMQHzLepy5n5QJL7PMGiP8IKutfXhWrw6v-yPaSs"
+        }
+      ]
+    },
+    {
+      "query": "dr xbox",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T04:30:00Z",
+      "related_news_urls": [
+        "https://news.xbox.com/en-us/2026/11/16/dr-xbox-its-time-to-take-the-day-off-and-play-xbox/",
+        "https://variety.com/2026/gaming/news/gta-6-day-off-note-xbox-dj-khaled-1236949034/",
+        "https://www.ign.com/articles/xbox-offers-doctors-note-for-not-gta-6"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoAwgH5I7QRd910Kxh2xhHBAFjfF9ZCIk8IWfrcKLgQSlml8CkvUIKK_H0JNk",
+      "image_credit": "XBOX Wire",
+      "news": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/16/dr-xbox-its-time-to-take-the-day-off-and-play-xbox/",
+          "title": "A Message From Dr. XBOX: It’s Time to Take the Day Off and Play XBOX",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoAwgH5I7QRd910Kxh2xhHBAFjfF9ZCIk8IWfrcKLgQSlml8CkvUIKK_H0JNk"
+        },
+        {
+          "url": "https://variety.com/2026/gaming/news/gta-6-day-off-note-xbox-dj-khaled-1236949034/",
+          "title": "Need the Day Off to Play ‘GTA 6’? Xbox and DJ Khaled’s ‘Dr. Xbox’ Have a PTO Excuse Note for You",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_bByj1bYtATN1hVwFxc3ElY0IN--h6k8NfSfKkhy4bnSnjrkhKUStL-m6f_o"
+        },
+        {
+          "url": "https://www.ign.com/articles/xbox-offers-doctors-note-for-not-gta-6",
+          "title": "Xbox Dances Around Mentioning GTA 6 With its Jokey DJ Khaled-Fronted Doctor's Note",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWz2ozxmm1aN-deZm3GApQCqTKM7qDWRCBBefIenrLDNyPc-sB0R5YCnwCeA8"
+        }
+      ]
+    },
+    {
+      "query": "titans schedule",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T04:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/robert-saleh-weve-put-more-on-cam-wards-plate-and-hes-proving-he-can-handle-it",
+        "https://www.tennesseetitans.com/news/hot-topics-from-titans-hc-robert-saleh-s-zoom-call-on-monday-x6105",
+        "https://www.espn.com/nfl/story/_/id/50502385/titans-getting-more-adding-more-qb-cam-ward-plate"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYuy-53xduKxqJuKyy2BK1ktUVao9gBNB6XDsW2vidaXISNa-6wkJpTVeI0Rs",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/robert-saleh-weve-put-more-on-cam-wards-plate-and-hes-proving-he-can-handle-it",
+          "title": "Robert Saleh: We’ve put more on Cam Ward’s plate and he’s proving he can handle it",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYuy-53xduKxqJuKyy2BK1ktUVao9gBNB6XDsW2vidaXISNa-6wkJpTVeI0Rs"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/hot-topics-from-titans-hc-robert-saleh-s-zoom-call-on-monday-x6105",
+          "title": "Hot Topics From Titans HC Robert Saleh's Zoom Call on Monday",
+          "publisher": "Tennessee Titans",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA0YW7GNLIOV5fC9DxhosBh9SCm2OVrlTXG4XEaliXqJ0kpLxOBDdYmkAIsBw"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50502385/titans-getting-more-adding-more-qb-cam-ward-plate",
+          "title": "Titans getting more after adding more to QB Cam Ward's plate",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyCx8Y-X1iJCNHQwV8KWqnNsJi1ZQbDPn7b6ydbxfRvpz2QH2InmDgVE2vFo8"
+        }
+      ]
+    },
+    {
+      "query": "nfl draft order",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T04:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/breaking-news/article/2027-nfl-draft-order-titans-take-over-no-1-spot-after-chargers-grab-first-win-of-season-in-week-10-042533879.html",
+        "https://www.cbssports.com/watch/nfl/video/jeremiah-smiths-potential-fit-with-the-chargers",
+        "https://www.sbnation.com/nfl/1136360/draft-order-chargers-ravens"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEOOJeWkhL_xAH_b8C00pvpY8GSzePYsRukJjowv8um0szEPk7qOJRzl8MrkA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/breaking-news/article/2027-nfl-draft-order-titans-take-over-no-1-spot-after-chargers-grab-first-win-of-season-in-week-10-042533879.html",
+          "title": "2027 NFL Draft order: Titans take over No. 1 spot after Chargers grab first win of season in Week 10",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEOOJeWkhL_xAH_b8C00pvpY8GSzePYsRukJjowv8um0szEPk7qOJRzl8MrkA"
+        },
+        {
+          "url": "https://www.cbssports.com/watch/nfl/video/jeremiah-smiths-potential-fit-with-the-chargers",
+          "title": "Jeremiah Smith's Potential Fit With the Chargers Stream of National Football League",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXuknmpunM3sDb5o2zOy8ocOCctEIsgd6sBPq4U_O0uCbqFP5yz0ILG2ZP4CU"
+        },
+        {
+          "url": "https://www.sbnation.com/nfl/1136360/draft-order-chargers-ravens",
+          "title": "NFL draft order: Chargers-Ravens could reshape first round",
+          "publisher": "SB Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoDW0qIcG8B3GyTPmhxNUbRzA18kK4t9nUb5DBETLkWUprwQk5Slv0zWIFwP4"
+        }
+      ]
+    },
+    {
+      "query": "coeur d'alene",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T04:20:00Z",
+      "related_news_urls": [
+        "https://www.krem.com/article/news/local/idaho/coeur-dalene-police-evacuating-residents-unexploded-bomb/293-7b5bc00f-defb-4fa8-a734-85d5842c1397",
+        "https://news.cgtn.com/news/2026-11-17/news-1S8KHAnuSic/p.html",
+        "https://cdapress.com/news/2026/nov/15/highland-coeur-dalene-football/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm8Coe6mCoMMBjStJ9NIqPGBiw6JpxLmL5hLMjZschSoSzlaxpAdyy0FQkOrA",
+      "image_credit": "KREM",
+      "news": [
+        {
+          "url": "https://www.krem.com/article/news/local/idaho/coeur-dalene-police-evacuating-residents-unexploded-bomb/293-7b5bc00f-defb-4fa8-a734-85d5842c1397",
+          "title": "Coeur d'Alene Police evacuating residents due to unexploded bomb",
+          "publisher": "KREM",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm8Coe6mCoMMBjStJ9NIqPGBiw6JpxLmL5hLMjZschSoSzlaxpAdyy0FQkOrA"
+        },
+        {
+          "url": "https://news.cgtn.com/news/2026-11-17/news-1S8KHAnuSic/p.html",
+          "title": "Kootenai County Sheriff's Office in Idaho says they found an unexploded bomb in the area of Belmont and Appaloosa. Coeur d'Alene Police are evacuating residents in the area. - repo",
+          "publisher": "CGTN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEW9cqooCKF50dExrEmkW2cP9qdtv5wA7GFDr43vsR0K9bs2jg4Rc4zD_cYfI"
+        },
+        {
+          "url": "https://cdapress.com/news/2026/nov/15/highland-coeur-dalene-football/",
+          "title": "Heartbreaker for Vikings — Highland stuns Coeur d'Alene in overtime, advances to state 6A title game",
+          "publisher": "Coeur d'Alene Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsZP_wj5GGnFOtFODyDxmcGR_3QEBxNbmphESKhqfQyUdgYah4qc0nIw-WW4Y"
+        }
+      ]
+    },
+    {
+      "query": "take two stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T04:20:00Z",
+      "related_news_urls": [
+        "https://www.benzinga.com/markets/equities/26/11/63277432/analysts-boost-take-two-interactive-stock-forecasts-ahead-of-grand-theft-auto-vi-debut",
+        "https://seekingalpha.com/article/4968687-sell-the-gta-vi-hype-take-twos-moat-is-shrinking",
+        "https://www.tradingview.com/news/benzinga:8ff720171094b:0-take-two-shares-rise-monday-what-s-going-on/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbvSe4D-bpn7gZ3QOHophbMJeK42Lka-q7NOOArtxy8ISeOn4pDdFW7iUouIM",
+      "image_credit": "Benzinga",
+      "news": [
+        {
+          "url": "https://www.benzinga.com/markets/equities/26/11/63277432/analysts-boost-take-two-interactive-stock-forecasts-ahead-of-grand-theft-auto-vi-debut",
+          "title": "Analysts Boost Take-Two Interactive Stock Forecasts Ahead of Grand Theft Auto VI Debut",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbvSe4D-bpn7gZ3QOHophbMJeK42Lka-q7NOOArtxy8ISeOn4pDdFW7iUouIM"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4968687-sell-the-gta-vi-hype-take-twos-moat-is-shrinking",
+          "title": "Sell The GTA VI Hype - Take-Two’s Moat Is Shrinking (NASDAQ:TTWO)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSnHSmQ5Ffo2iC4lMlmZK2o30XxMWzi6ytT6bxtXil29DfWjHaI6_W8IWGS0"
+        },
+        {
+          "url": "https://www.tradingview.com/news/benzinga:8ff720171094b:0-take-two-shares-rise-monday-what-s-going-on/",
+          "title": "Take-Two Shares Rise Monday: What's Going On?",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        }
+      ]
+    },
+    {
+      "query": "cyberattack",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T04:10:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/16/nx-s1-6042920/california-sues-openai-hugging-face-hacking-incident",
+        "https://www.yahoo.com/news/politics/articles/california-sues-openai-alleging-endangered-184249420.html",
+        "https://www.theguardian.com/technology/2026/nov/16/california-openai-rogue-agent-hacking-lawsuit"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs7W1id-EO5p1AfXCw5ULP63fgx-JPTIMAfrjJ-CoFY_PqCdM1tNFuaosVAs8",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/16/nx-s1-6042920/california-sues-openai-hugging-face-hacking-incident",
+          "title": "California sues OpenAI over hacking risks",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs7W1id-EO5p1AfXCw5ULP63fgx-JPTIMAfrjJ-CoFY_PqCdM1tNFuaosVAs8"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/california-sues-openai-alleging-endangered-184249420.html",
+          "title": "California sues OpenAI, alleges it endangered the public by building AI without safeguards",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PBUYGfojFLWZkj-XiFanod08oQxDiZHaF-y_t7ctVKophI75kmp5DyVA2Mg"
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2026/nov/16/california-openai-rogue-agent-hacking-lawsuit",
+          "title": "California sues OpenAI over safety concerns after rogue agent hacking",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSceTjVEYqI5W5oozh_S8VMqG3fwzH2Mam21K1ByjBh9OGfgPALbqiaErizc8k"
+        }
+      ]
+    },
     {
       "query": "texas southern basketball",
       "approx_searches": "200+",
@@ -38,321 +353,6 @@
           "publisher": "sports.betmgm.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShGdHzXCZ7E8DHLoIab31fy0PgkQL28PmMh2tPzfbueHOev_Q43raptFl2Zpo"
-        }
-      ]
-    },
-    {
-      "query": "pak vs sl",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T04:00:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/match-preview",
-        "https://www.dawn.com/news/2044953",
-        "https://sports.yahoo.com/articles/ex-captain-silva-leads-sri-073042966.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLo7E8kZAxicD3yVkmFju0Trj7GeHvx3KX0nRrCIqB0QBsCNy_K29UFKaKVJo",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/match-preview",
-          "title": "Pakistan, Sri Lanka primed for more experimentation in Rawalpindi",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLo7E8kZAxicD3yVkmFju0Trj7GeHvx3KX0nRrCIqB0QBsCNy_K29UFKaKVJo"
-        },
-        {
-          "url": "https://www.dawn.com/news/2044953",
-          "title": "Shaun Tait, Kusal Mendis want extra push for Pakistan-Sri Lanka series result",
-          "publisher": "Dawn",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS878q0DU_XoFfYPFeCMEJy5Wx6YHBp4CSZimdzIm4oMOF-BiNS0u5bKAC6W9I"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ex-captain-silva-leads-sri-073042966.html",
-          "title": "Centurions De Silva and Mendis flay inexperienced Pakistan attack to boost Sri Lanka in 1st test",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRowqHAEmXK1qUNZf4YI5vyu160IiATnAKaH2CL4kNnGIEE3dG2PKWNUi8JPEM"
-        }
-      ]
-    },
-    {
-      "query": "greta thunberg",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T04:00:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/environment/2026/nov/12/greta-thunberg-cop31-climate-summit",
-        "https://www.latintimes.com/greta-thunberg-returns-cop31-fossil-fuel-lobbyists-601245",
-        "https://www.wvnews.com/newsfeed/world/climate-cop31-turkey/image_e3001a22-59fe-595e-912b-074cea080938.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiwNU9hx3TG3Xup6K1P88f3NR828dcDn1MUwQdLrFEBgq18LHVzHOThwL4lZ4",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/environment/2026/nov/12/greta-thunberg-cop31-climate-summit",
-          "title": "The planet ‘is being killed’, Greta Thunberg tells Cop31 climate summit",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiwNU9hx3TG3Xup6K1P88f3NR828dcDn1MUwQdLrFEBgq18LHVzHOThwL4lZ4"
-        },
-        {
-          "url": "https://www.latintimes.com/greta-thunberg-returns-cop31-fossil-fuel-lobbyists-601245",
-          "title": "Greta Thunberg returns to COP after four years, calling the climate talks \"hypocrisy\" dominated by fossil fuel interests",
-          "publisher": "Latin Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQtl11fnJFLCLpEECRUlBO6X2KqYuw686oAEGhy1cSfCrHf2E-8hb0tbE-SQQ"
-        },
-        {
-          "url": "https://www.wvnews.com/newsfeed/world/climate-cop31-turkey/image_e3001a22-59fe-595e-912b-074cea080938.html",
-          "title": "Climate COP31 Turkey",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6bJzCPgeMsja9StHL4WmF2HkUHsgCo6stJwBuEo5GTokSQkMBU-05Cms6Qts"
-        }
-      ]
-    },
-    {
-      "query": "chris moore",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T04:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/ravens-elevate-13-touchdown-wide-005232307.html",
-        "https://www.cbssports.com/fantasy/football/news/ravens-nick-vannett-elevated-to-53-man-roster/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-elevate-wr-chris-moore-te-nick-vannett-sign-ot-chuma-edoga"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa97qma4bFmDfrTj9je24dLpQLUcDR3sX6H2hH6quCcqpeLn9hv0ay7PGL9dk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/ravens-elevate-13-touchdown-wide-005232307.html",
-          "title": "Ravens Elevate 13-Touchdown Wide Receiver Before Jacoby Brissett Debut",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa97qma4bFmDfrTj9je24dLpQLUcDR3sX6H2hH6quCcqpeLn9hv0ay7PGL9dk"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/ravens-nick-vannett-elevated-to-53-man-roster/",
-          "title": "Ravens' Nick Vannett: Elevated to 53-man roster",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-elevate-wr-chris-moore-te-nick-vannett-sign-ot-chuma-edoga",
-          "title": "Ravens elevate WR Chris Moore, TE Nick Vannett; sign OT Chuma Edoga",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ueZiCQmxWjydSzuBxTsS6nxD9HUjwT91TRWbHy1nwvSAfzYSBZM1qsCbGII"
-        }
-      ]
-    },
-    {
-      "query": "malware",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T03:50:00Z",
-      "related_news_urls": [
-        "https://gizmodo.com/sprawling-malware-attack-reportedly-affects-zoom-cnn-fox-news-peacock-and-170-others-2000840831",
-        "https://www.infostealers.com/article/poisoned-scripts-on-bbc-zoom-and-other-major-websites-linked-to-iphone-exploit-loaders/",
-        "https://app.dealroom.co/news/note/hackers-used-an-optimizely-flaw-to-plant-crypto-stealing-card-skimming-malware-on-178-major-websites-including-zoom-cnn-and-hsbc"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2PXm8aSAzkGFBaa2RWqKTTSza-q3MtdWS-0C1ISHZfIE5gGG2H0V3KaTi8fU",
-      "image_credit": "Gizmodo",
-      "news": [
-        {
-          "url": "https://gizmodo.com/sprawling-malware-attack-reportedly-affects-zoom-cnn-fox-news-peacock-and-170-others-2000840831",
-          "title": "Sprawling Malware Attack Reportedly Affects Zoom and Other Major Brands",
-          "publisher": "Gizmodo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2PXm8aSAzkGFBaa2RWqKTTSza-q3MtdWS-0C1ISHZfIE5gGG2H0V3KaTi8fU"
-        },
-        {
-          "url": "https://www.infostealers.com/article/poisoned-scripts-on-bbc-zoom-and-other-major-websites-linked-to-iphone-exploit-loaders/",
-          "title": "Poisoned Scripts on BBC, Zoom and Other Major Websites Linked to iPhone Exploit Loaders",
-          "publisher": "InfoStealers",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvvobMtexOLGsaJpn3UWvtXaitEv0pWJHFsZS5ya8qEVwNpT2cHMX-1oyszs"
-        },
-        {
-          "url": "https://app.dealroom.co/news/note/hackers-used-an-optimizely-flaw-to-plant-crypto-stealing-card-skimming-malware-on-178-major-websites-including-zoom-cnn-and-hsbc",
-          "title": "Hackers used an Optimizely flaw to plant crypto-stealing, card-skimming malware on 178 major websites including Zoom, CNN and HSBC",
-          "publisher": "Dealroom",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQFrufj_Xeequ4qcd0kJVYnjHzasIiZZhj7nnV7r825KPjToJPUJ9EGAg9Npg"
-        }
-      ]
-    },
-    {
-      "query": "demar derozan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:50:00Z",
-      "related_news_urls": [
-        "https://basketnews.com/news-259514-demar-derozan-takes-back-historic-nba-spot-from-stephen-curry.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/demar-derozan-passed-stephen-curry-26806-and-moved/92793843007/",
-        "https://sports.yahoo.com/articles/steph-curry-passes-demar-derozan-100532515.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxxmvjoTgZm3D_t3N_m-zzhBEQwzsdZZbHOjqW1_gRLCZVg0OtprK2CwxQfUc",
-      "image_credit": "BasketNews.com",
-      "news": [
-        {
-          "url": "https://basketnews.com/news-259514-demar-derozan-takes-back-historic-nba-spot-from-stephen-curry.html",
-          "title": "DeMar DeRozan takes back historic NBA spot from Stephen Curry",
-          "publisher": "BasketNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxxmvjoTgZm3D_t3N_m-zzhBEQwzsdZZbHOjqW1_gRLCZVg0OtprK2CwxQfUc"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/demar-derozan-passed-stephen-curry-26806-and-moved/92793843007/",
-          "title": "DeMar DeRozan passed Stephen Curry (26,806) and moved …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxLtoRmFCWfm_wtbyNI4YDInmfah2bLKOvLqOQdfsY-ou2kSk2VIeqtsnzdCM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/steph-curry-passes-demar-derozan-100532515.html",
-          "title": "Steph Curry passes DeMar DeRozan on the alltime …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5FDzz52THqfpiuVjE8DS-7n0cgxEDiaAWQy8JY1L63g1kNs01v8S6OrdugCs"
-        }
-      ]
-    },
-    {
-      "query": "john christopher depp",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:50:00Z",
-      "related_news_urls": [
-        "https://editorial.rottentomatoes.com/article/weekend-box-office-ebenezer-week-1/",
-        "https://www.nbcnews.com/pop-culture/pop-culture-news/johnny-depp-film-ebenezer-first-no-1-opening-8-years-rcna609436",
-        "https://www.nytimes.com/2026/11/12/movies/ebenezer-review-johnny-depp.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLABGwdg4u5eB9D9UheaTLXao53rur40RKotqNosvC21ZatnvVAbJmjCKdGAU",
-      "image_credit": "Rotten Tomatoes",
-      "news": [
-        {
-          "url": "https://editorial.rottentomatoes.com/article/weekend-box-office-ebenezer-week-1/",
-          "title": "Weekend Box Office: Ebenezer Wins a Sleepy Weekend",
-          "publisher": "Rotten Tomatoes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLABGwdg4u5eB9D9UheaTLXao53rur40RKotqNosvC21ZatnvVAbJmjCKdGAU"
-        },
-        {
-          "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/johnny-depp-film-ebenezer-first-no-1-opening-8-years-rcna609436",
-          "title": "Johnny Depp film ‘Ebenezer’ gets actor first No. 1 opening in 8 years",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX4l7V_w4XhAalc6qY9uFtMTR30dKpC-S5DWFY3jVNl4JsVDnS-k1FKEtwE3U"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/12/movies/ebenezer-review-johnny-depp.html",
-          "title": "‘Ebenezer’ Review: Holiday Humbug",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpI_UAq-Wy3d-7xPm-REV-10YG3U0lV3r_q2TJbE630Z02konZIFmQaxd7hIQ"
-        }
-      ]
-    },
-    {
-      "query": "travel warning",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:50:00Z",
-      "related_news_urls": [
-        "https://bg.usembassy.gov/security-alert-u-s-embassy-in-bulgaria-november-16-2026/",
-        "https://www.9news.com/article/news/nation-world/americans-security-alert-europe-travel-state-department-warning/507-ece1ecfd-f1eb-4527-a08c-41fa9eee5f26",
-        "https://www.yahoo.com/news/us/articles/us-urges-citizens-extra-cautious-224826240.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkAh8lpzELDU_DyWAEGaMzBiYphMZMJCa-Tvjxgg2y-3tHG03Goh9XgygqDQM",
-      "image_credit": "U.S. Embassy in Bulgaria (.gov)",
-      "news": [
-        {
-          "url": "https://bg.usembassy.gov/security-alert-u-s-embassy-in-bulgaria-november-16-2026/",
-          "title": "Security Alert: U.S. Embassy in Bulgaria, November 16, 2026",
-          "publisher": "U.S. Embassy in Bulgaria (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkAh8lpzELDU_DyWAEGaMzBiYphMZMJCa-Tvjxgg2y-3tHG03Goh9XgygqDQM"
-        },
-        {
-          "url": "https://www.9news.com/article/news/nation-world/americans-security-alert-europe-travel-state-department-warning/507-ece1ecfd-f1eb-4527-a08c-41fa9eee5f26",
-          "title": "State Department warns Americans in Europe to 'remain vigilant' during holidays",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE4lnMzCBsisn3_rT0m91HJ6nuEUX5caHKOdTm28GD33zY982gpb1S90EUGj8"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/us-urges-citizens-extra-cautious-224826240.html",
-          "title": "US urges citizens to be extra cautious in Europe during holidays",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsa6bsIWFApR1BileTd-wVOGbHs7KdhiLv3dNbj6wb_aG33Kyc7WJWRzGHGiA"
-        }
-      ]
-    },
-    {
-      "query": "pax silica",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:40:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-15/us-allies-agree-to-guard-ai-supply-chains-from-china-ft-says",
-        "https://www.theguardian.com/australia-news/2026/nov/16/albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
-        "https://www.abc.net.au/news/2026-11-17/australia-signs-us-led-ai-supply-chain-agreement/107392252"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0_4R2hdOoakwM8WichSXMoD8kTp4JH-Hb8VwmuhW4aKvdCQBJc9nDvYvX9LQ",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-15/us-allies-agree-to-guard-ai-supply-chains-from-china-ft-says",
-          "title": "US, Allies Agree to Guard AI Supply Chains From China, FT Says",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0_4R2hdOoakwM8WichSXMoD8kTp4JH-Hb8VwmuhW4aKvdCQBJc9nDvYvX9LQ"
-        },
-        {
-          "url": "https://www.theguardian.com/australia-news/2026/nov/16/albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
-          "title": "Albanese signs on to Trump’s AI supply chain pact before leaders’ meeting at Quad summit",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrKy6VjLifiWtTZjtpF7uD8DGrX3c3MVnQQy1ih4vstlreP0eHwRnIsM5ZV-w"
-        },
-        {
-          "url": "https://www.abc.net.au/news/2026-11-17/australia-signs-us-led-ai-supply-chain-agreement/107392252",
-          "title": "Australia backs Trump's AI alliance as US takes on China",
-          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChAOky1VyHCSCAOhsUgYALeCXDtDIvTQzObqZnXEwSpqT1nG9F_dxaML47Aw"
-        }
-      ]
-    },
-    {
-      "query": "portland state basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:40:00Z",
-      "related_news_urls": [
-        "https://www.bleachernation.com/how-to-watch/2026/11/16/saint-marys-ca-vs-portland-state-free-live-stream-tv-channel-how-to-watch/",
-        "https://smcgaels.com/watch?Archive=8270&type=Archive",
-        "https://www.wagertalk.com/news/college-basketball/portland-state-vs-saint-marys-predictions-picks-and-odds-november-16-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkibIE07NkqPwTJu0LefMKjGjeGM65wlF1pxZk6xKWUg8pR-I-_Gcob197gnY",
-      "image_credit": "Bleacher Nation",
-      "news": [
-        {
-          "url": "https://www.bleachernation.com/how-to-watch/2026/11/16/saint-marys-ca-vs-portland-state-free-live-stream-tv-channel-how-to-watch/",
-          "title": "Saint Mary’s (CA) vs. Portland State: Free Live Stream, TV Channel, How to Watch",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkibIE07NkqPwTJu0LefMKjGjeGM65wlF1pxZk6xKWUg8pR-I-_Gcob197gnY"
-        },
-        {
-          "url": "https://smcgaels.com/watch?Archive=8270&type=Archive",
-          "title": "MBB | Saint Mary's vs. UIC Highlights, 11-13-26 - Gaels All-Access - Powered by SIDEARM Showcase",
-          "publisher": "smcgaels.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgRuRdjNN_xwSnV4t-tlTPvkGlh2TZu4Dc10fvZwXWygTnLAd-Bfx2taAFoIs"
-        },
-        {
-          "url": "https://www.wagertalk.com/news/college-basketball/portland-state-vs-saint-marys-predictions-picks-and-odds-november-16-2026/",
-          "title": "Portland State vs Saint Mary’s Predictions, Picks and Odds | November 16, 2026",
-          "publisher": "WagerTalk",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQw_922uWTnAOZbtmziK0aCFtrLnhiymvJRD1EnSbcsw35cZXoNIqMLwCztKwI"
         }
       ]
     }
