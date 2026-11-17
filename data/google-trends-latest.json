@@ -3,279 +3,209 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T01:31:00.406195Z",
+  "checked_at": "2026-11-17T02:01:23.258930Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "justin herbert",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T01:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50462293/los-angeles-chargers-offensive-struggles-herbert-mcdaniel-hampton",
-        "https://bleacherreport.com/articles/25534123-justin-herbert-not-instinctive-football-player-says-nfl-exec-amid-chargers-losing-streak",
-        "https://www.foxnews.com/outkick-betting/justin-herbert-11-interceptions-eight-games-highlight-chargers-disastrous-0-win-season"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnVAYsEEYGlK8QzFPajq6o_Wt75J67tfxZGZzLBjqqQ6dPnMS0oXeDxyctTvY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50462293/los-angeles-chargers-offensive-struggles-herbert-mcdaniel-hampton",
-          "title": "Five reasons why Chargers' offense, Justin Herbert have struggled in 2026 season",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnVAYsEEYGlK8QzFPajq6o_Wt75J67tfxZGZzLBjqqQ6dPnMS0oXeDxyctTvY"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25534123-justin-herbert-not-instinctive-football-player-says-nfl-exec-amid-chargers-losing-streak",
-          "title": "Justin Herbert is 'Not An Instinctive Football Player,' Says NFL Exec amid Chargers' Losing Streak",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkQucwZoyUReFT81Gr1CoFBM-S5PlhjGfODIVrkjYaLSNKZHnq2TOCsv9PB9Q"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-betting/justin-herbert-11-interceptions-eight-games-highlight-chargers-disastrous-0-win-season",
-          "title": "Justin Herbert's 11 interceptions in eight games highlight the Chargers' disastrous 0-win season",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJlb1SsZXUImtLCcGeyIyWIZvmLGD-7E0BrXnnJivlAqKPx6OPn3U51Va5j5w"
-        }
-      ]
-    },
-    {
-      "query": "liga de naciones concacaf",
+      "query": "what happened to dan hicks",
       "approx_searches": "1000+",
-      "published_at": "2026-11-17T01:10:00Z",
+      "published_at": "2026-11-17T01:40:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/selecciones/nota/_/id/17518854/mexico-rafa-marquez-cual-es-situacion-perder-jamaica",
-        "https://www.si.com/es-us/los-5-errores-mas-graves-que-esta-cometiendo-rafa-marquez-como-dt-de-la-seleccion-mexicana",
-        "https://www.tudn.com/futbol/concacaf-nations-league/seleccion-mexicana-llega-monterrey-buscar-remontada-jamaica"
+        "https://sports.yahoo.com/articles/world-lost-good-man-chris-002006904.html",
+        "https://www.golfchannel.com/news/news/dan-hicks-legendary-nbc-sports-and-golf-announcer-dies-at-age-64",
+        "https://www.nytimes.com/athletic/7776708/2026/11/12/dan-hicks-olympics-broadcaster-michael-phelps-lindsey-vonn/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTrZANAUvWZqTV4bjFRwKAbPdZZu8Q-SYaDWknLxFdnxBYb06bz8-4Qglhyto",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKoTFffBJYBOr_klJOqWVRRrR3-uJr7V0ahTa9jaUEnKPKL0HFN61qBFL-9rc",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/selecciones/nota/_/id/17518854/mexico-rafa-marquez-cual-es-situacion-perder-jamaica",
-          "title": "¿Cuál es la situación de Rafa Márquez tras perder con Jamaica?",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTrZANAUvWZqTV4bjFRwKAbPdZZu8Q-SYaDWknLxFdnxBYb06bz8-4Qglhyto"
-        },
-        {
-          "url": "https://www.si.com/es-us/los-5-errores-mas-graves-que-esta-cometiendo-rafa-marquez-como-dt-de-la-seleccion-mexicana",
-          "title": "Los 5 errores más graves que está cometiendo Rafa Márquez como DT de la selección mexicana",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnecVEm0n7PFmu7JwHEJKBT8hP9KWWLa6jE59dA7g6ewa67WL_-Yb6ITGaM3w"
-        },
-        {
-          "url": "https://www.tudn.com/futbol/concacaf-nations-league/seleccion-mexicana-llega-monterrey-buscar-remontada-jamaica",
-          "title": "El Tri llega a Monterrey donde buscará la remontada",
-          "publisher": "TUDN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjuMBUZyXP4zVzlgbkcJGlvMToTUH4U_q2Rt-UwDW0DgCqvPcA1saK2eY0HVA"
-        }
-      ]
-    },
-    {
-      "query": "john harbaugh",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T01:10:00Z",
-      "related_news_urls": [
-        "https://www.bigblueview.com/new-york-giants-analysis/180210/5-players-the-ny-giants-need-to-step-up-to-make-the-playoffs",
-        "https://www.bleedinggreennation.com/post/PPnC0uGFMOex",
-        "https://sports.yahoo.com/articles/giants-final-8-games-ranked-204334033.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTEtcna0Dx6T_CplBW8xf4RsVPNvBEKiX3p-41JSLXqk_104x8MAQhhq-sZ54",
-      "image_credit": "Big Blue View",
-      "news": [
-        {
-          "url": "https://www.bigblueview.com/new-york-giants-analysis/180210/5-players-the-ny-giants-need-to-step-up-to-make-the-playoffs",
-          "title": "5 players the NY Giants need to step up to make the playoffs",
-          "publisher": "Big Blue View",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTEtcna0Dx6T_CplBW8xf4RsVPNvBEKiX3p-41JSLXqk_104x8MAQhhq-sZ54"
-        },
-        {
-          "url": "https://www.bleedinggreennation.com/post/PPnC0uGFMOex",
-          "title": "The NFC East is begging us to get back in the race",
-          "publisher": "Bleeding Green Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzkQZ0uI9g7Ep1KqpJKq4wg0E-VvClFkP6A3zcqzHcvkY2UMz72vFymWs6DJg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/giants-final-8-games-ranked-204334033.html",
-          "title": "The Giants' Final 8 Games, Ranked From Most Winnable to Toughest",
+          "url": "https://sports.yahoo.com/articles/world-lost-good-man-chris-002006904.html",
+          "title": "“The World Lost A Good Man” – Chris Evert Heartbroken Over Death of Longtime NBC Sports Announcer Dan Hicks",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOTpFHRRGNPpZugympE9RJSHENOIUtBiLx5AKcYVzwZYfEuK1KuW765UpxLsM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKoTFffBJYBOr_klJOqWVRRrR3-uJr7V0ahTa9jaUEnKPKL0HFN61qBFL-9rc"
+        },
+        {
+          "url": "https://www.golfchannel.com/news/news/dan-hicks-legendary-nbc-sports-and-golf-announcer-dies-at-age-64",
+          "title": "Dan Hicks, legendary NBC Sports and golf announcer, dies at age 64",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRdl5X2slvVuGTH8Q98WVAPAeognuP1Iil7wVHFQE1WPrlHF4zKcRyiz2GsDU"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7776708/2026/11/12/dan-hicks-olympics-broadcaster-michael-phelps-lindsey-vonn/",
+          "title": "Dan Hicks, our host for so much Olympic greatness, always met the golden moment",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtRCZ4Qsda5lS3UXzB_6BWbH1WXQGZ1B_nEB3cs-hOcG0pYZVvpRpJy8H3IUg"
         }
       ]
     },
     {
-      "query": "justin herbert girlfriend",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T01:10:00Z",
+      "query": "ryan conwell",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T01:40:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/es/news/ni66114501/?ref_=nwc_art_perm",
-        "https://www.mensjournal.com/news/justin-herbert-girlfriend-madison-beer-fan-chargers-ravens",
-        "https://www.tvinsider.com/swooon/1312927/justin-herbert-wife-madison-beer-relationship-details/"
+        "https://www.sun-sentinel.com/2026/11/14/ask-ira-could-ryan-conwell-leave-miami-heat-with-a-sense-of-closure/",
+        "https://sports.yahoo.com/articles/rookie-ryan-conwell-jr-changing-163700010.html",
+        "https://allucanheat.com/ryan-conwell-is-proving-to-be-erik-spoelstra-s-next-hidden-heat-gem"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_qMm4UDEe1fnRIeNEJQwONOQFzCI1QWQHidqnasBpHSSb9DEBabEFpgZVxgY",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRExOp7xBsMxK_AD9yn17h3sOBUH0wVRkxpQjNKilu6cW3EHGsDlr1tNdWH2Wc",
+      "image_credit": "Sun Sentinel",
       "news": [
         {
-          "url": "https://www.imdb.com/es/news/ni66114501/?ref_=nwc_art_perm",
-          "title": "All About L.A. Chargers Qb Justin Herbert’s Romance With Madison Beer",
-          "publisher": "IMDb",
+          "url": "https://www.sun-sentinel.com/2026/11/14/ask-ira-could-ryan-conwell-leave-miami-heat-with-a-sense-of-closure/",
+          "title": "ASK IRA: Could Ryan Conwell leave Miami Heat with a sense of closure?",
+          "publisher": "Sun Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_qMm4UDEe1fnRIeNEJQwONOQFzCI1QWQHidqnasBpHSSb9DEBabEFpgZVxgY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRExOp7xBsMxK_AD9yn17h3sOBUH0wVRkxpQjNKilu6cW3EHGsDlr1tNdWH2Wc"
         },
         {
-          "url": "https://www.mensjournal.com/news/justin-herbert-girlfriend-madison-beer-fan-chargers-ravens",
-          "title": "Justin Herbert Girlfriend: Madison Beer Was Heckled by Fan",
-          "publisher": "Men's Journal",
+          "url": "https://sports.yahoo.com/articles/rookie-ryan-conwell-jr-changing-163700010.html",
+          "title": "How The Rookie Ryan Conwell Jr. Is Changing the Miami Heat",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEy79Clcht6LSzbnB0UhRIvW75Z0VjNP1CpZ_GG4GJIHvWbbGscPVNc8QiUEs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRBy9W53E6eOPU_3GlHuyJIUkMzlHe2xsqzGZsO4yYYdJoPilpvz7uYZ0IMJs"
         },
         {
-          "url": "https://www.tvinsider.com/swooon/1312927/justin-herbert-wife-madison-beer-relationship-details/",
-          "title": "All About Justin Herbert & Madison Beer's Romance",
-          "publisher": "TV Insider",
+          "url": "https://allucanheat.com/ryan-conwell-is-proving-to-be-erik-spoelstra-s-next-hidden-heat-gem",
+          "title": "Ryan Conwell is proving to be Erik Spoelstra’s next hidden Heat gem",
+          "publisher": "All U Can Heat",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTuIASyRJM0YHr8eFjzsjyrakZlguOhUSfRBQ4GHhtDDwX3AeaZBwbKM79I5U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOEjbWVq-bIFfxJOcLdKu37pJsdLpQT1_AY00aG6gKI_XDsxtZti9DSunpd84"
         }
       ]
     },
     {
-      "query": "john f kennedy jr",
+      "query": "cameron boozer",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T01:10:00Z",
+      "published_at": "2026-11-17T01:40:00Z",
       "related_news_urls": [
-        "https://www.sfchronicle.com/bayarea/article/sonoma-archive-jfk-grave-jackie-o-romance-22507490.php",
-        "https://www.hellomagazine.com/us/934680/jacqueline-kennedy-dating-history-after-jfk/",
-        "https://airmail.news/issues/2026-11-14/plot-twist"
+        "https://sports.yahoo.com/articles/putting-cameron-boozers-hot-start-183001078.html",
+        "https://www.sportsnet.ca/nba/video/how-grizzlies-jerome-boozer-have-impacted-teams-strong-start-to-season/",
+        "https://heavy.com/sports/nba/memphis-grizzlies/cam-boozer-etches-name-in-history/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWzEGvSDjigbEUWYi2LrwCqPwOCW5HDnVjPqMyGGBbT4hE8B38uWDt6tWAh7M",
-      "image_credit": "San Francisco Chronicle",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-k31kOSev6Xl71V9C9HiYi5gs7MdsxYJ3ZD78SYZG8-Ov_MySggHak4Mm_fM",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.sfchronicle.com/bayarea/article/sonoma-archive-jfk-grave-jackie-o-romance-22507490.php",
-          "title": "A hidden Bay Area archive honors the man who designed JFK’s grave — and had a romance with Jackie O",
-          "publisher": "San Francisco Chronicle",
+          "url": "https://sports.yahoo.com/articles/putting-cameron-boozers-hot-start-183001078.html",
+          "title": "Putting Cameron Boozer's Hot Start for Grizzlies in Perspective",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWzEGvSDjigbEUWYi2LrwCqPwOCW5HDnVjPqMyGGBbT4hE8B38uWDt6tWAh7M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-k31kOSev6Xl71V9C9HiYi5gs7MdsxYJ3ZD78SYZG8-Ov_MySggHak4Mm_fM"
         },
         {
-          "url": "https://www.hellomagazine.com/us/934680/jacqueline-kennedy-dating-history-after-jfk/",
-          "title": "Inside Jacqueline Kennedy's love life after JFK — from a secret romance to the marriage she called a 'mistake'",
-          "publisher": "HELLO!",
+          "url": "https://www.sportsnet.ca/nba/video/how-grizzlies-jerome-boozer-have-impacted-teams-strong-start-to-season/",
+          "title": "How Grizzlies’ Jerome, Boozer have impacted team’s strong start to season",
+          "publisher": "Sportsnet.ca",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1lNCxmrvlAnUhdXxWygQ-AGNWbalcCpjf0bR9mAl8N_O2OSVaqV33S0iJf1Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFeHvz_EvWP_nBcb4sLHHapu6m1M7lJthOFPoPs1LIQ_Fq-567RpSpcOX-p60"
         },
         {
-          "url": "https://airmail.news/issues/2026-11-14/plot-twist",
-          "title": "He Designed J.F.K’.s Grave, Then Romanced His Widow",
-          "publisher": "Air Mail",
+          "url": "https://heavy.com/sports/nba/memphis-grizzlies/cam-boozer-etches-name-in-history/",
+          "title": "Cam Boozer’s Latest Feat Puts Him Alongside LeBron James",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVMxId6R9-9M1KAi8KXqSMrueQb7_wJkvwWgl-93nFIDBAo5EexcZImo1VCaU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSphEeFAjz2DddsURi8nqX_xHFn4QEcUWvc36yKUrX6ZEwL6hI_pPvz5hqJMGQ"
         }
       ]
     },
     {
-      "query": "ilia malinin",
+      "query": "clima para amanhã",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T01:10:00Z",
+      "published_at": "2026-11-17T01:40:00Z",
       "related_news_urls": [
-        "https://usfigureskating.org/news/2026/11/15/national-team-figure-skating-malinin-wins-fourth-title-two-us-pairs-on-podium-at-skate-america.aspx",
-        "https://www.everettpost.com/local-news/ilia-malinin-thrills-everett-skating-crowd-with-first-place-performance/",
-        "https://www.nbcsports.com/olympics/news/ilia-malinin-skate-america-2026-figure-skating-grand-prix"
+        "https://rede98.com.br/noticias/bh-regiao/semana-comeca-com-chuva-e-tempo-fresco-mas-termina-com-calor-de-ate-31c-em-bh/",
+        "https://www.agrolink.com.br/agrotempo/noticia/minas-gerais-e-espirito-santo-concentram-a-chuva-do-sudeste-no-sabado--14-11-_521049.html",
+        "https://novo2026.portaldoholanda.com.br/belo-horizonte/clima-para-amanha-em-belo-horizonte-dia-de-chuva-forte-e-trovoadas"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnoBzIfylmzGtjmaQT6AA_obs69W79E1LzA1EZw2RVNhhLcKdv-AJtZh3pALg",
-      "image_credit": "U.S. Figure Skating",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSubXKkViCe0J_aDc9wDUfqN7dPUPhUqRCcmNhUj0JAh9Bj2TizXdZoFw3pPV4",
+      "image_credit": "Rede 98",
       "news": [
         {
-          "url": "https://usfigureskating.org/news/2026/11/15/national-team-figure-skating-malinin-wins-fourth-title-two-us-pairs-on-podium-at-skate-america.aspx",
-          "title": "Malinin Wins Fourth Title, Two U.S. Pairs on Podium at Skate America",
-          "publisher": "U.S. Figure Skating",
+          "url": "https://rede98.com.br/noticias/bh-regiao/semana-comeca-com-chuva-e-tempo-fresco-mas-termina-com-calor-de-ate-31c-em-bh/",
+          "title": "Semana começa com chuva e tempo fresco, mas termina com calor de até 31°C em BH",
+          "publisher": "Rede 98",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnoBzIfylmzGtjmaQT6AA_obs69W79E1LzA1EZw2RVNhhLcKdv-AJtZh3pALg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSubXKkViCe0J_aDc9wDUfqN7dPUPhUqRCcmNhUj0JAh9Bj2TizXdZoFw3pPV4"
         },
         {
-          "url": "https://www.everettpost.com/local-news/ilia-malinin-thrills-everett-skating-crowd-with-first-place-performance/",
-          "title": "Ilia Malinin thrills Everett skating crowd with first place performance",
-          "publisher": "Everett Post",
+          "url": "https://www.agrolink.com.br/agrotempo/noticia/minas-gerais-e-espirito-santo-concentram-a-chuva-do-sudeste-no-sabado--14-11-_521049.html",
+          "title": "Minas Gerais e Espírito Santo concentram a chuva do Sudeste no sábado (14/11)",
+          "publisher": "Agrolink",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsjCbDGZtTek2E7KBzwWOLNufxOkfblv03SlgH9B4093jBxpvG01PF-e6bEUk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ1sPnLvr-RIzo_XI23e13ZCxOOC9dw6Bpy0Fz77uB038aYagzzObfebA8N0E"
         },
         {
-          "url": "https://www.nbcsports.com/olympics/news/ilia-malinin-skate-america-2026-figure-skating-grand-prix",
-          "title": "Ilia Malinin wins Saatva Skate America for a fourth time to start post-Olympic season",
-          "publisher": "NBC Sports",
+          "url": "https://novo2026.portaldoholanda.com.br/belo-horizonte/clima-para-amanha-em-belo-horizonte-dia-de-chuva-forte-e-trovoadas",
+          "title": "Clima para amanhã em Belo Horizonte: dia de chuva forte e trovoadas",
+          "publisher": "Portal do Holanda",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpws9K5wyPvMiUGrNR9J7wLzXiSh-8cWbVDUqdrAywvDmQSYN1OypRJVH7-h4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw"
         }
       ]
     },
     {
-      "query": "troy vs lsu",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T01:10:00Z",
+      "query": "canucks vs mammoth",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T01:40:00Z",
       "related_news_urls": [
-        "https://lsusports.net/news/2026/11/15/lsu-set-to-host-troy-trojans-monday-night-at-7-pm-ct",
-        "https://www.vavel.com/en-us/ncaa/college-basketball/2026/11/16/1279470-lsu-vs-troy-live-tigers-and-trojans-score-updates-womens-college-basketball.html",
-        "https://troytrojans.com/news/2026/11/15/basketball-w-womens-hoops-travels-to-baton-rouge-for-clash-with-ninth-ranked-lsu"
+        "https://www.nhl.com/utah/news/utah-hosts-vancouver-to-start-the-week-game-preview-11-16-26",
+        "https://canucksarmy.com/news/vancouver-canucks-game-day-tolopilo-likely-starter-road-trip-contnues-utah-mammoth",
+        "https://www.nytimes.com/athletic/7787490/2026/11/16/canucks-vs-mammoth-stream-how-to-watch-nov-16/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxfKYzMhtGT4IlGBsuhTGzi2OACb0lJfyRvXZvlmmnULHW-ooO_SJKXp60JCE",
-      "image_credit": "LSUsports.net",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk9n62UIDkcSwVhbWC_SD2twMXKqg5NL-HKXtRVr8h7pxX9ZcKe6hB3aP2Lk4",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://lsusports.net/news/2026/11/15/lsu-set-to-host-troy-trojans-monday-night-at-7-pm-ct",
-          "title": "LSU Set To Host Troy Monday Night at 7 p.m. CT",
-          "publisher": "LSUsports.net",
+          "url": "https://www.nhl.com/utah/news/utah-hosts-vancouver-to-start-the-week-game-preview-11-16-26",
+          "title": "Utah Hosts Vancouver to Start the Week",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxfKYzMhtGT4IlGBsuhTGzi2OACb0lJfyRvXZvlmmnULHW-ooO_SJKXp60JCE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk9n62UIDkcSwVhbWC_SD2twMXKqg5NL-HKXtRVr8h7pxX9ZcKe6hB3aP2Lk4"
         },
         {
-          "url": "https://www.vavel.com/en-us/ncaa/college-basketball/2026/11/16/1279470-lsu-vs-troy-live-tigers-and-trojans-score-updates-womens-college-basketball.html",
-          "title": "LSU vs Troy LIVE, Tigers and Trojans Score Updates in Women's College Basketball (23-15)",
-          "publisher": "VAVEL.com",
+          "url": "https://canucksarmy.com/news/vancouver-canucks-game-day-tolopilo-likely-starter-road-trip-contnues-utah-mammoth",
+          "title": "Canucks Game Day: Tolopilo likely starter as road trip contnues to Utah",
+          "publisher": "Canucks Army",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyeOx_Y7J-XxCRii5ZmzReeLY0a71325te3V95lBHbMAFhxCrVA8owB3j2qAI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHGEAo_W_o7rGbyNVzLzGe7QLbR3exlAXY9Ieecw8C4q2OXFY4x60nxWBL75c"
         },
         {
-          "url": "https://troytrojans.com/news/2026/11/15/basketball-w-womens-hoops-travels-to-baton-rouge-for-clash-with-ninth-ranked-lsu",
-          "title": "Women's Hoops Travels to Baton Rouge for Clash With Ninth-Ranked LSU",
-          "publisher": "Troy University Athletics",
+          "url": "https://www.nytimes.com/athletic/7787490/2026/11/16/canucks-vs-mammoth-stream-how-to-watch-nov-16/",
+          "title": "How to watch Canucks vs. Mammoth: TV channel and streaming options for November 16",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLpXR3UfLmVIPsYkmAKEU4S7EktkXG-NslM1Q4pP8Au5eZtsJr2bKlyT1fwKA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNmY90RDeQ7s15fkY7YgE1Mzy8pDPN61DKG1OF2X2f5XLUbpz9E0GxzREBFBc"
         }
       ]
     },
     {
-      "query": "woody harrelson",
+      "query": "new hunger games movie",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T01:10:00Z",
+      "published_at": "2026-11-17T01:40:00Z",
       "related_news_urls": [
-        "https://www.admiddleeast.com/story/where-does-woody-harrelson-live",
         "https://deadline.com/gallery/the-hunger-games-sunrise-on-the-reaping-nyc-premiere-red-carpet-photos-lionsgate/",
+        "https://gizmodo.com/hunger-games-author-explains-why-haymitch-didnt-tell-katniss-and-peeta-about-his-rebellion-2000839943",
         "https://www.yahoo.com/entertainment/videos/elizabeth-banks-slays-hunger-games-002954196.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRehV_7GeyzGc9Q6ZHV3MbLmUEkcWsFAnitKcYvoL5rAqJ_A8H-OX_KWlpAwek",
-      "image_credit": "AD Middle East",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzW-PIF0VLFjYcLvj8j4MGCeL3oDi2TrEQQK_Ou3UpGnTDfiivyHsFQj4osgQ",
+      "image_credit": "Deadline",
       "news": [
-        {
-          "url": "https://www.admiddleeast.com/story/where-does-woody-harrelson-live",
-          "title": "Where Does Woody Harrelson Live? A Look at the Brothers Star’s Homes",
-          "publisher": "AD Middle East",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRehV_7GeyzGc9Q6ZHV3MbLmUEkcWsFAnitKcYvoL5rAqJ_A8H-OX_KWlpAwek"
-        },
         {
           "url": "https://deadline.com/gallery/the-hunger-games-sunrise-on-the-reaping-nyc-premiere-red-carpet-photos-lionsgate/",
           "title": "‘The Hunger Games: Sunrise On The Reaping’ NYC Premiere Red Carpet Photos",
           "publisher": "Deadline",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzW-PIF0VLFjYcLvj8j4MGCeL3oDi2TrEQQK_Ou3UpGnTDfiivyHsFQj4osgQ"
+        },
+        {
+          "url": "https://gizmodo.com/hunger-games-author-explains-why-haymitch-didnt-tell-katniss-and-peeta-about-his-rebellion-2000839943",
+          "title": "‘Hunger Games’ Author Explains Why Haymitch Didn’t Tell Katniss and Peeta About His Rebellion",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dweYzgPsZk5XIID00IF_2iP4MbZ6yooUdrsmsGDrXA68y0gTRDcy2K3XKxc"
         },
         {
           "url": "https://www.yahoo.com/entertainment/videos/elizabeth-banks-slays-hunger-games-002954196.html",
@@ -287,72 +217,142 @@
       ]
     },
     {
-      "query": "josh hutcherson",
+      "query": "superbowl 2027",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T01:10:00Z",
+      "published_at": "2026-11-17T01:40:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/film/news/jennifer-lawrence-hunger-games-sunrise-on-the-reaping-premiere-1236949116/",
-        "https://www.vogue.com/article/last-looks-jennifer-lawerence",
-        "https://graziamagazine.com/us/articles/in-2012-they-became-katniss-and-peeta-14-years-later-jennifer-lawrence-says-reuniting-with-josh-hutcherson-was-so-beautiful-25497/"
+        "https://www.hitc.com/almost-unfair-skip-bayless-prediction-for-super-bowl-2027-favourites-is-aging-like-milk/",
+        "https://espnpressroom.com/feature/espn-leaders-spotlight-momentum-streaming-progress-and-super-bowl-preparations-at-employee-town-hall/",
+        "https://pixidia.com/en/super-bowl-lxi-2027-los-angeles-travel-guide/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_2GxcIVo1kDJuChkwkPx21mzHOmuUGwqQDXFq9ogaEczNQh-BxcbcgQROt0c",
-      "image_credit": "Variety",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnxfVYR7hKfRJ0a1-XzcoUk_5sSvKtwhLoasyLcs5r2htkxsPuh02bgYQYWR4",
+      "image_credit": "HITC",
       "news": [
         {
-          "url": "https://variety.com/2026/film/news/jennifer-lawrence-hunger-games-sunrise-on-the-reaping-premiere-1236949116/",
-          "title": "Jennifer Lawrence Stuns as 'Hunger Games Sunrise on the Reaping' Premiere",
-          "publisher": "Variety",
+          "url": "https://www.hitc.com/almost-unfair-skip-bayless-prediction-for-super-bowl-2027-favourites-is-aging-like-milk/",
+          "title": "‘Almost unfair’ – Skip Bayless’ prediction for Super Bowl 2027 favourites is aging like milk",
+          "publisher": "HITC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_2GxcIVo1kDJuChkwkPx21mzHOmuUGwqQDXFq9ogaEczNQh-BxcbcgQROt0c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnxfVYR7hKfRJ0a1-XzcoUk_5sSvKtwhLoasyLcs5r2htkxsPuh02bgYQYWR4"
         },
         {
-          "url": "https://www.vogue.com/article/last-looks-jennifer-lawerence",
-          "title": "Jennifer Lawrence Gets Her Flowers at the New York Premiere of ‘The Hunger Games: Sunrise on the Reaping’",
-          "publisher": "Vogue",
+          "url": "https://espnpressroom.com/feature/espn-leaders-spotlight-momentum-streaming-progress-and-super-bowl-preparations-at-employee-town-hall/",
+          "title": "ESPN leaders spotlight momentum, streaming progress and Super Bowl preparations at Employee Town Hall",
+          "publisher": "ESPN Press Room",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUuf_l4SgpZkeF0enTAUd3xxFw95zCsbwkGn7SrCNxFJgevMxcmugsZYGE5fM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCNttSDEHwZhnumSujkQYoNLg4xNfgSXpV86tUocOl9y7C0_t4Q4kCxJqQFOE"
         },
         {
-          "url": "https://graziamagazine.com/us/articles/in-2012-they-became-katniss-and-peeta-14-years-later-jennifer-lawrence-says-reuniting-with-josh-hutcherson-was-so-beautiful-25497/",
-          "title": "In 2012, They Became Katniss and Peeta. 14 Years Later, Jennifer Lawrence Says Reuniting With Josh Hutcherson Was 'So Beautiful'",
-          "publisher": "Grazia",
+          "url": "https://pixidia.com/en/super-bowl-lxi-2027-los-angeles-travel-guide/",
+          "title": "Super Bowl LXI 2027 in LA: Date, Stay and Where to Watch",
+          "publisher": "Pixidia",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRri6g-TNcytzXk1Kol_r9Yr60I5ByYQ45reKCDJ3ZUb-ZLidlbuVzmoKeJlvQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTONN1Oh1w1msq6SF14xzUFjIfc3w-nmMcad0kZx_kl2i_JGcAc9xQkQxugD60"
         }
       ]
     },
     {
-      "query": "canada vs",
+      "query": "goga bitadze",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T01:10:00Z",
+      "published_at": "2026-11-17T01:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50502622/bayern-munich-alphonso-davies-hamstring-injury-canada",
-        "https://www.concacaf.com/competitions/nations-league/news/canada-hosts-guatemala-with-nations-league-finals-ticket-on-the-line",
-        "https://www.sportsnet.ca/soccer/article/scan-reveals-lower-body-muscle-strain-for-canadian-soccer-captain-davies/"
+        "https://www.orlandosentinel.com/2026/11/16/orlando-magic-boston-celtics-franz-wagner-goga-bitadze-nikola-vucevic-nba-sean-sweeney/",
+        "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-november-14-2026",
+        "https://www.espn.com/nhl/recap/_/gameId/401892714"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMm9ErRNDhqWYXBTOJMswNLJC061JLsrslF0-dLpz4lNln0_HQs8m4LvHPjV8",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3NJiyiFopdM--YQYbLjysDWxDJUsvYZN5XqZr-oI_nm0cfeFZogXCmLQ48Eg",
+      "image_credit": "Orlando Sentinel",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50502622/bayern-munich-alphonso-davies-hamstring-injury-canada",
-          "title": "Bayern Munich confirm Alphonso Davies hamstring injury after Canada win",
+          "url": "https://www.orlandosentinel.com/2026/11/16/orlando-magic-boston-celtics-franz-wagner-goga-bitadze-nikola-vucevic-nba-sean-sweeney/",
+          "title": "Magic see success with Bitadze, Vucevic duo on floor; Wagner nominated for weekly award",
+          "publisher": "Orlando Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3NJiyiFopdM--YQYbLjysDWxDJUsvYZN5XqZr-oI_nm0cfeFZogXCmLQ48Eg"
+        },
+        {
+          "url": "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-november-14-2026",
+          "title": "Hellebuyck makes 43 saves, Devils push past Capitals to stay hot",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl7Qjbgxi5e3gLiSIbUvGnYpb5reYU9Ye4-45VJ8f-03TsfhYLLENO_c3mXFI"
+        },
+        {
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892714",
+          "title": "Devils 7-4 Capitals (Nov 14, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMm9ErRNDhqWYXBTOJMswNLJC061JLsrslF0-dLpz4lNln0_HQs8m4LvHPjV8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWK0Iz4bMxgnswOeiyyiHLZvG4rlPuif_ciL7gZsxcLPIMLBi69rCrKnlsVxw"
+        }
+      ]
+    },
+    {
+      "query": "cillian murphy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T01:40:00Z",
+      "related_news_urls": [
+        "https://www.thewrap.com/creative-content/movies/danny-boyle-28-years-later-cillian-murphy-update/",
+        "https://www.darkhorizons.com/boyle-needs-money-for-28-years-later-3/",
+        "https://www.cbr.com/28-years-later-director-gives-major-update-one-big-problem/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzdc1xKXTaz2zxu6XWy0BOMnvSjHgY-LWwe_7VgBODX2x0XHcz1CH3qDXoPU",
+      "image_credit": "TheWrap",
+      "news": [
+        {
+          "url": "https://www.thewrap.com/creative-content/movies/danny-boyle-28-years-later-cillian-murphy-update/",
+          "title": "Danny Boyle Says Next ‘28 Years Later' Movie Is Written for Cillian Murphy, but 'We've Got to Raise the Money'",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzdc1xKXTaz2zxu6XWy0BOMnvSjHgY-LWwe_7VgBODX2x0XHcz1CH3qDXoPU"
         },
         {
-          "url": "https://www.concacaf.com/competitions/nations-league/news/canada-hosts-guatemala-with-nations-league-finals-ticket-on-the-line",
-          "title": "Canada hosts Guatemala with Nations League Finals ticket on the line",
-          "publisher": "Concacaf | Official Website",
+          "url": "https://www.darkhorizons.com/boyle-needs-money-for-28-years-later-3/",
+          "title": "Boyle Needs Money For \"28 Years Later 3\"",
+          "publisher": "Dark Horizons",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTg9GYPdOLwaJnIqfh-oibHaHTS1Cd9SCQdskQcY0WREn7Jb6Mu8KUu9KRzMPE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZuNed26zlI7UbNvjxeHsGTqYexjIU-Rzg9-jnodNIWBdTxvHCb5DZ4x5uhd0"
         },
         {
-          "url": "https://www.sportsnet.ca/soccer/article/scan-reveals-lower-body-muscle-strain-for-canadian-soccer-captain-davies/",
-          "title": "Scan reveals lower-body muscle strain for Canadian soccer captain Davies",
-          "publisher": "Sportsnet.ca",
+          "url": "https://www.cbr.com/28-years-later-director-gives-major-update-one-big-problem/",
+          "title": "28 Years Later Director Confirms Part 3 Script Is Finished, but There's 1 Big Problem",
+          "publisher": "Comic Book Resources",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUD9le0oExy8psD2SlUP-YV_b2lq_I33hD3VyCtVKIA7Dv9Hdp9rw_BGR9wpg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqz8CnwsW7N1eosgTKvQTUXA43-9WV8P_C6CD1vwGQUqUDk5Jlr0jFcSlgmrw"
+        }
+      ]
+    },
+    {
+      "query": "cenac jr",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T01:40:00Z",
+      "related_news_urls": [
+        "https://www.bostonherald.com/2026/11/16/jayson-tatum-sees-star-potential-in-celtics-first-round-rookie/",
+        "https://www.masslive.com/celtics/2026/11/plan-for-celtics-1st-round-pick-becoming-clear-for-rookie-season.html",
+        "https://chowderandchampions.com/celtics-fans-excited-about-chris-cenac-jrs-potential"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMbkzXSomzM6UMN-o4TLY-DAIsg9hNTquGz0x2QPCWcSa9oTOM_DL-3A7ySkk",
+      "image_credit": "Boston Herald",
+      "news": [
+        {
+          "url": "https://www.bostonherald.com/2026/11/16/jayson-tatum-sees-star-potential-in-celtics-first-round-rookie/",
+          "title": "Jayson Tatum sees star potential in Celtics’ first-round rookie",
+          "publisher": "Boston Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMbkzXSomzM6UMN-o4TLY-DAIsg9hNTquGz0x2QPCWcSa9oTOM_DL-3A7ySkk"
+        },
+        {
+          "url": "https://www.masslive.com/celtics/2026/11/plan-for-celtics-1st-round-pick-becoming-clear-for-rookie-season.html",
+          "title": "Plan for Celtics’ 1st-round pick becoming clear for rookie season",
+          "publisher": "MassLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-4EYcW5uPdzsohBkBPsm9g_OBKo65LRLZeGtrbsAlPXDfXHE1xdVU5Nzfg3E"
+        },
+        {
+          "url": "https://chowderandchampions.com/celtics-fans-excited-about-chris-cenac-jrs-potential",
+          "title": "Celtics fans should be excited about Chris Cenac Jr.'s potential",
+          "publisher": "Chowder and Champions",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_mAQDOEKI-jr_MUJQbB6_xoBqKQa0_lGyiqzIAHZmUND80477cmydGMgHLbg"
         }
       ]
     }
