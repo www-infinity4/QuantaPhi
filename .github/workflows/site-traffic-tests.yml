@@ -2,6 +2,7 @@ name: Site traffic safety checks
 on:
   pull_request:
     paths:
+      - 'index.html'
       - 'site-traffic.js'
       - 'data/site-traffic.json'
       - 'workers/site-traffic/**'

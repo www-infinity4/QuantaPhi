@@ -1,0 +1,78 @@
+name: QuantaPhi original standalone page social previews
+on:
+  push:
+    branches: [feat/standalone-share-previews-1196-20261115]
+    paths:
+      - 'assets/share/pages/**.svg'
+      - 'test/standalone-page-previews.test.mjs'
+      - '.github/workflows/standalone-page-previews.yml'
+  pull_request:
+    paths:
+      - 'assets/share/pages/**'
+      - 'test/standalone-page-previews.test.mjs'
+      - '.github/workflows/standalone-page-previews.yml'
+      - 'test-ground-ai/index.html'
+      - 'avatarai/index.html'
+      - 'continuitybuilder/index.html'
+      - 'design-lab/index.html'
+      - 'pixie/index.html'
+      - 'bubbles-agent-workshop/index.html'
+      - 'project-workspace/index.html'
+      - 'apps/index.html'
+      - 'resonance.html'
+      - 'quick-card-builder.html'
+      - 'gary/index.html'
+      - 'studio/index.html'
+      - 'terriphi/index.html'
+      - 'petriphi/index.html'
+      - 'wireless/index.html'
+      - 'short-ad-lab.html'
+permissions:
+  contents: read
+jobs:
+  render-png:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install SVG renderer
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq librsvg2-bin
+      - name: Render original social artwork to 1200x630 PNG
+        run: |
+          set -eu
+          for svg in assets/share/pages/*.svg; do
+            png="${svg%.svg}.png"
+            rsvg-convert -w 1200 -h 630 "$svg" -o "$png"
+            test "$(stat -c%s "$png")" -gt 2000
+            file "$png"
+          done
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test metadata and raster assets
+        run: node --test test/standalone-page-previews.test.mjs
+      - name: Commit only rasterized page previews on feature branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/share/pages/*.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Render original standalone page social preview PNGs"
+            git push origin HEAD:feat/standalone-share-previews-1196-20261115
+          fi
+  verify-branch-head:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test full page preview metadata and PNG assets
+        run: node --test test/standalone-page-previews.test.mjs

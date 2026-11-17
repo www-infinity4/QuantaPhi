@@ -379,3 +379,13 @@ test('manual refresh failure reports stale ledger with no fake success',async()=
  assert.equal(body.requests,2310);
  assert.notEqual(body.fetchedAt,now.toISOString());
 });
+
+
+test('homepage relies on the active quantaphi.org Cloudflare Web Analytics auto-install, not a foreign manual beacon',()=>{
+ const homepage=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ // Cloudflare account inspection 2026-11-17: quantaphi.org RUM auto_install=true.
+ // The GitHub Pages beacon belongs to a DIFFERENT Cloudflare Web Analytics site.
+ assert.doesNotMatch(homepage,/<script\b[^>]*\bsrc=["']https:\/\/static\.cloudflareinsights\.com\/beacon\.min\.js/i,
+  'manual beacon must not override or duplicate quantaphi.org Cloudflare auto-install');
+ assert.match(homepage,/G-JXQKLVZQT1/,'preserve existing GA4 measurement');
+});
