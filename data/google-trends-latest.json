@@ -3,47 +3,109 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T00:45:01.997070Z",
+  "checked_at": "2026-11-17T01:01:19.764909Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "tulsa basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T00:30:00Z",
+      "query": "butch jones",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T00:40:00Z",
       "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-odds-2026-11-16/",
-        "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-11-16-2026-college-basketball-picks-best-bets-odds.html",
-        "https://www.sportsgamblingpodcast.com/2026/11/16/college-basketball-preview-picks-and-best-bets-for-november-16-2/"
+        "https://www.on3.com/news/arkansas-state-fires-head-coach-butch-jones-after-six-seasons/",
+        "https://www.rockytopinsider.com/2026/11/16/former-tennessee-football-head-coach-butch-jones-fired-in-sixth-year-leading-new-school-arkansas-state/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo",
-      "image_credit": "Sportsgambler",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyJrYIPHXYm7pp2gZ47J2eU_dja4VmyvWbVi9WmtzO06BBbHi8PDKgL8INSWg",
+      "image_credit": "On3",
       "news": [
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-odds-2026-11-16/",
-          "title": "Western Kentucky vs Tulsa Prediction, Picks & Odds | 16 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.on3.com/news/arkansas-state-fires-head-coach-butch-jones-after-six-seasons/",
+          "title": "Arkansas State fires head coach Butch Jones after six seasons",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyJrYIPHXYm7pp2gZ47J2eU_dja4VmyvWbVi9WmtzO06BBbHi8PDKgL8INSWg"
         },
         {
-          "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-11-16-2026-college-basketball-picks-best-bets-odds.html",
-          "title": "Western Kentucky Hilltoppers vs Tulsa Golden Hurricane Prediction, 11/16/2026 College Basketball Picks, Best Bets & Odds",
-          "publisher": "Doc's Sports",
+          "url": "https://www.rockytopinsider.com/2026/11/16/former-tennessee-football-head-coach-butch-jones-fired-in-sixth-year-leading-new-school-arkansas-state/",
+          "title": "Former Tennessee Football Head Coach Butch Jones Fired in Sixth Year Leading New School",
+          "publisher": "Rocky Top Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5qFmhq1KSV21lVdCQaSLEgBia49HfSBfIwIh4gb4_vhIYkR7mapQWgnVVQAw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzr1FgzmYbsa2UsAbb11O4Milkbf1Bja2Fe32cbt8UuFsyawqRWCbxnrSXbJ8"
+        }
+      ]
+    },
+    {
+      "query": "james comer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T00:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/politics/james-comer-launches-bid-kentucky-governor",
+        "https://www.wlky.com/article/james-comer-running-kentucky-governor-2027/74445575",
+        "https://www.courier-journal.com/story/news/politics/elections/2026/11/16/james-comer-running-for-kentucky-governor-2027/92632295007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTkbTVWbzVeaahuVeSgGtO5pySYyMIvlbDMVAE1EPaedkI9arZIgIiF8ziXLo",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/politics/james-comer-launches-bid-kentucky-governor",
+          "title": "James Comer launches bid for Ketucky governor",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTkbTVWbzVeaahuVeSgGtO5pySYyMIvlbDMVAE1EPaedkI9arZIgIiF8ziXLo"
         },
         {
-          "url": "https://www.sportsgamblingpodcast.com/2026/11/16/college-basketball-preview-picks-and-best-bets-for-november-16-2/",
-          "title": "College Basketball Preview, Picks, and Best Bets for November 16",
-          "publisher": "Sports Gambling Podcast",
+          "url": "https://www.wlky.com/article/james-comer-running-kentucky-governor-2027/74445575",
+          "title": "James Comer files to run for Kentucky governor in 2027",
+          "publisher": "WLKY",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOFEzd-WvpVgd93ieK1zBokvExNePrrZthUac6ZFs_d5EzBIBKz0P8h2QnwZc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiBymhkgPtC1IGwUDoLn9BHmJOdt6yjgb7ptKXVJU4d1NjME4EaOhKUCaDHqE"
+        },
+        {
+          "url": "https://www.courier-journal.com/story/news/politics/elections/2026/11/16/james-comer-running-for-kentucky-governor-2027/92632295007/",
+          "title": "Republican Rep. James Comer entering 2027 Kentucky governor's race",
+          "publisher": "The Courier-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8mf0nXfxCcPz7kMdGJUZimTklx94wZmadEmEtBzBM71mr1MSJDIK-3yyynmg"
+        }
+      ]
+    },
+    {
+      "query": "estafa",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T00:40:00Z",
+      "related_news_urls": [
+        "https://www.neoteo.com/es/la-ertzaintza-alerto-de-una-posible-estafa-de-whatsapp-sin-clic",
+        "https://www.navarra.es/es/-/noticia/guia-practica-de-la-policia-foral-para-prevenir-y-actuar-ante-el-secuestro-o-suplantacion-de-la-cuenta-de-whatsapp-parte-1",
+        "https://alternativacaribe.info/2026/11/14/policia-nacional-alerta-sobre-estafas-digitales-y-robo-de-cuentas-de-whatsapp/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWWoTYsWirJLbkwkcRrce9ycEcDfAin_UPqqidKPDEU436o41QH77iSJi6onA",
+      "image_credit": "NeoTeo",
+      "news": [
+        {
+          "url": "https://www.neoteo.com/es/la-ertzaintza-alerto-de-una-posible-estafa-de-whatsapp-sin-clic",
+          "title": "WhatsApp sin clic: alerta por una posible estafa",
+          "publisher": "NeoTeo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWWoTYsWirJLbkwkcRrce9ycEcDfAin_UPqqidKPDEU436o41QH77iSJi6onA"
+        },
+        {
+          "url": "https://www.navarra.es/es/-/noticia/guia-practica-de-la-policia-foral-para-prevenir-y-actuar-ante-el-secuestro-o-suplantacion-de-la-cuenta-de-whatsapp-parte-1",
+          "title": "Guía práctica de la Policía Foral para prevenir y actuar ante el secuestro o suplantación de la cuenta de WhatsApp - PARTE 1",
+          "publisher": "navarra.es",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSElvjskAunD4Yt1aRgBTU3blcvGOYZmO730OtLrnQTjZvvKObeNN-6d7Ifs0I"
+        },
+        {
+          "url": "https://alternativacaribe.info/2026/11/14/policia-nacional-alerta-sobre-estafas-digitales-y-robo-de-cuentas-de-whatsapp/",
+          "title": "Policía Nacional alerta sobre estafas digitales y robo de cuentas de Whatsapp",
+          "publisher": "Alternativa Caribe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRid7xgeAREqAa0GckRmhjm_tfgoGkY2II_YfmxYRQm-a2Mdc9DiPBhFEO5mNw"
         }
       ]
     },
     {
       "query": "jakobi lane",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-17T00:30:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/video/is-it-over-for-jakobi-lane-in-fantasy-this-season-231223699.html",
@@ -77,37 +139,37 @@
       ]
     },
     {
-      "query": "sam heughan",
+      "query": "tulsa basketball",
       "approx_searches": "200+",
       "published_at": "2026-11-17T00:30:00Z",
       "related_news_urls": [
-        "https://www.tvinsider.com/swooon/1312764/outlander-sam-heughan-girlfriend-stephanie-bullock-bafta-scotland-awards/",
-        "https://www.bafta.org/stories/outstanding-contribution-to-television-outlander/",
-        "https://parade.com/news/outlander-sam-heughan-bafta-award-most-powerful-chapter-in-his-life"
+        "https://www.sportsgambler.com/betting-tips/basketball/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-odds-2026-11-16/",
+        "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-11-16-2026-college-basketball-picks-best-bets-odds.html",
+        "https://www.sportsgamblingpodcast.com/2026/11/16/college-basketball-preview-picks-and-best-bets-for-november-16-2/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFJXMjxLRq1OxDUMldk5yyni-p_YVdLObC7yviIIfERe-Qkt9Z1gMB2u5LtVI",
-      "image_credit": "TV Insider",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://www.tvinsider.com/swooon/1312764/outlander-sam-heughan-girlfriend-stephanie-bullock-bafta-scotland-awards/",
-          "title": "'Outlander's Sam Heughan & His Girlfriend Make Red Carpet Debut",
-          "publisher": "TV Insider",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-odds-2026-11-16/",
+          "title": "Western Kentucky vs Tulsa Prediction, Picks & Odds | 16 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFJXMjxLRq1OxDUMldk5yyni-p_YVdLObC7yviIIfERe-Qkt9Z1gMB2u5LtVI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
         },
         {
-          "url": "https://www.bafta.org/stories/outstanding-contribution-to-television-outlander/",
-          "title": "Outstanding Contribution to Television: Outlander",
-          "publisher": "Bafta",
+          "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-11-16-2026-college-basketball-picks-best-bets-odds.html",
+          "title": "Western Kentucky Hilltoppers vs Tulsa Golden Hurricane Prediction, 11/16/2026 College Basketball Picks, Best Bets & Odds",
+          "publisher": "Doc's Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyptlGRz78vqTklzHqHferCN5RiRNjbDu2lIxoGPy8qg-vYRfyPRoYt3aOdUs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5qFmhq1KSV21lVdCQaSLEgBia49HfSBfIwIh4gb4_vhIYkR7mapQWgnVVQAw"
         },
         {
-          "url": "https://parade.com/news/outlander-sam-heughan-bafta-award-most-powerful-chapter-in-his-life",
-          "title": "'One of the Most Powerful Chapters of My Life': Tearful Sam Heughan Bids Farewell to ‘Outlander’ in Emotional BAFTA Scotland Speech",
-          "publisher": "Parade Magazine",
+          "url": "https://www.sportsgamblingpodcast.com/2026/11/16/college-basketball-preview-picks-and-best-bets-for-november-16-2/",
+          "title": "College Basketball Preview, Picks, and Best Bets for November 16",
+          "publisher": "Sports Gambling Podcast",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSckAOu6MvCPKXRUZdUQh-vyOFYHqxivP4-ANv7m-RqsiCbofWS5hQpyr_KZkk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOFEzd-WvpVgd93ieK1zBokvExNePrrZthUac6ZFs_d5EzBIBKz0P8h2QnwZc"
         }
       ]
     },
@@ -147,13 +209,48 @@
       ]
     },
     {
+      "query": "sam heughan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T00:30:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/swooon/1312764/outlander-sam-heughan-girlfriend-stephanie-bullock-bafta-scotland-awards/",
+        "https://www.bafta.org/stories/outstanding-contribution-to-television-outlander/",
+        "https://parade.com/news/outlander-sam-heughan-bafta-award-most-powerful-chapter-in-his-life"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFJXMjxLRq1OxDUMldk5yyni-p_YVdLObC7yviIIfERe-Qkt9Z1gMB2u5LtVI",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/swooon/1312764/outlander-sam-heughan-girlfriend-stephanie-bullock-bafta-scotland-awards/",
+          "title": "'Outlander's Sam Heughan & His Girlfriend Make Red Carpet Debut",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFJXMjxLRq1OxDUMldk5yyni-p_YVdLObC7yviIIfERe-Qkt9Z1gMB2u5LtVI"
+        },
+        {
+          "url": "https://www.bafta.org/stories/outstanding-contribution-to-television-outlander/",
+          "title": "Outstanding Contribution to Television: Outlander",
+          "publisher": "Bafta",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyptlGRz78vqTklzHqHferCN5RiRNjbDu2lIxoGPy8qg-vYRfyPRoYt3aOdUs"
+        },
+        {
+          "url": "https://parade.com/news/outlander-sam-heughan-bafta-award-most-powerful-chapter-in-his-life",
+          "title": "'One of the Most Powerful Chapters of My Life': Tearful Sam Heughan Bids Farewell to ‘Outlander’ in Emotional BAFTA Scotland Speech",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSckAOu6MvCPKXRUZdUQh-vyOFYHqxivP4-ANv7m-RqsiCbofWS5hQpyr_KZkk"
+        }
+      ]
+    },
+    {
       "query": "heidi gardner",
       "approx_searches": "1000+",
       "published_at": "2026-11-17T00:20:00Z",
       "related_news_urls": [
         "https://www.tmz.com/2026/11/16/ray-tintori-dead/",
-        "https://parade.com/news/ray-tintori-boyfriend-snl-alum-heidi-gardner-dead-at-43",
-        "https://www.themirror.com/entertainment/breaking-snl-heidi-gardner-boyfriend-2112790"
+        "https://pagesix.com/2026/11/16/entertainment/snl-alum-heidi-gardners-boyfriend-dead-at-43/",
+        "https://parade.com/news/ray-tintori-boyfriend-snl-alum-heidi-gardner-dead-at-43"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmpaqaQ2krB1XpivdPzBBBA58yUFf5EFiXHIfYar3kVeABo88zzu2h1soRWAs",
       "image_credit": "TMZ",
@@ -166,18 +263,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmpaqaQ2krB1XpivdPzBBBA58yUFf5EFiXHIfYar3kVeABo88zzu2h1soRWAs"
         },
         {
+          "url": "https://pagesix.com/2026/11/16/entertainment/snl-alum-heidi-gardners-boyfriend-dead-at-43/",
+          "title": "‘SNL’ alum Heidi Gardner’s director boyfriend dead at 43",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzgnYQboH5Y14MWgZkMZnEoMzUS07jf2raq8t9tvWd8umInft8Ry-m9gl2f9Q"
+        },
+        {
           "url": "https://parade.com/news/ray-tintori-boyfriend-snl-alum-heidi-gardner-dead-at-43",
           "title": "Ray Tintori, Boyfriend of ‘SNL’ Alum Heidi Gardner, Dead at 43",
           "publisher": "Parade Magazine",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYbVRspJ_GqbxkNDzkrjfcu2AVITMkBkZrK2Djq6GFfx-iqj1J688N5toO96g"
-        },
-        {
-          "url": "https://www.themirror.com/entertainment/breaking-snl-heidi-gardner-boyfriend-2112790",
-          "title": "SNL alum Heidi Gardner's boyfriend, 43, dies as cause of death still under investigation",
-          "publisher": "The Mirror US",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4hd9baMlhaVysWlDXd35UtUogFT1cJooXK1QmmBU_38-Df3MdmZruRyp1YA4"
         }
       ]
     },
@@ -248,111 +345,6 @@
           "publisher": "EssentiallySports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToDdoNn6RCDHl56ktxQG9Fp6znH9R74bsqyRQzl4g74gCF7M-z_GU_0U3f8H8"
-        }
-      ]
-    },
-    {
-      "query": "warriors vs pelicans",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-17T00:10:00Z",
-      "related_news_urls": [
-        "https://warriors.com/news/gameday-preview-20261116",
-        "https://sports.yahoo.com/articles/warriors-vs-pelicans-injury-report-204935734.html",
-        "https://www.espn.com/nba/recap/_/gameId/401909959"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGKXTLVCcIMUNsHgd8D3Exy6TPFyvfwjVLtBSCMzvK_lqn6B4yoE0fpFEtLlw",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://warriors.com/news/gameday-preview-20261116",
-          "title": "Game Preview: Warriors at New Orleans Pelicans - 11/16/26",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGKXTLVCcIMUNsHgd8D3Exy6TPFyvfwjVLtBSCMzvK_lqn6B4yoE0fpFEtLlw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/warriors-vs-pelicans-injury-report-204935734.html",
-          "title": "Warriors vs Pelicans Injury Report Rules Out Several Starters",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFYSHS04YzMjXIcpu07MRwwih1r_5seJzUutOZ8tKyE4Qu6tziHGuezbVJ_7Y"
-        },
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909959",
-          "title": "Warriors 138-87 Pelicans (Nov 9, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTm3RXj1VkXioYzFV5tePoBUv1SXEcc7b_Zj8IgUiXLFB67wXIb_Q36otZBMzw"
-        }
-      ]
-    },
-    {
-      "query": "canadá - guatemala",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T00:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/guatemala/nota/_/id/17522440/luis-fernando-tena-confianza-guatemala-juego-de-vuelta-canada",
-        "https://www.prensalibre.com/deportes/futbol-nacional/canada-vs-guatemala-fecha-hora-y-donde-ver-el-partido-de-vuelta-de-la-liga-de-naciones-breaking/",
-        "https://www.facebook.com/MilenioDiario/posts/-ya-casicheca-a-qu%C3%A9-hora-y-en-c%C3%B3mo-ver-el-canad%C3%A1-vs-guatemala-de-la-nations-leag/1684165853740879/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1RO-y1LN55fn5WW4-f3OCZP_5vkXWyl54ikz3e_8BJQ5_TJuvpkke6G2y1lI",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/guatemala/nota/_/id/17522440/luis-fernando-tena-confianza-guatemala-juego-de-vuelta-canada",
-          "title": "Luis Fernando Tena: \"Tenemos confianza y creemos en nuestras fuerzas\"",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1RO-y1LN55fn5WW4-f3OCZP_5vkXWyl54ikz3e_8BJQ5_TJuvpkke6G2y1lI"
-        },
-        {
-          "url": "https://www.prensalibre.com/deportes/futbol-nacional/canada-vs-guatemala-fecha-hora-y-donde-ver-el-partido-de-vuelta-de-la-liga-de-naciones-breaking/",
-          "title": "Canadá vs. Guatemala: fecha, hora y dónde ver el partido de vuelta de la Liga de Naciones",
-          "publisher": "Prensa Libre",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIXTsIl6VbnbM7SxlwziWAAMLJu0Q03kH3q7WEKDf9v2lMIJ2wTl-GKBRZUyg"
-        },
-        {
-          "url": "https://www.facebook.com/MilenioDiario/posts/-ya-casicheca-a-qu%C3%A9-hora-y-en-c%C3%B3mo-ver-el-canad%C3%A1-vs-guatemala-de-la-nations-leag/1684165853740879/",
-          "title": "⚽ ¡Ya casi! Checa a qué HORA y en CÓMO VER el Canadá vs Guatemala de la Nations League 🇨🇦🆚🇬🇹",
-          "publisher": "Facebook",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYh9H_Xrwqq-TziuiHBoD25SFWn81ymdEWsc1Ii3H4Ka8GY8ROyeBCT8Ij5EA"
-        }
-      ]
-    },
-    {
-      "query": "celtics schedule",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T00:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50496245/celtics-set-franchise-mark-42-9-lead-mavericks-one-quarter",
-        "https://www.nbcsportsboston.com/news/boston-sports/live-updates-boston-sports-lions-mike-vrabel/814062/",
-        "https://www.boston.com/sports/boston-celtics/2026/11/15/jayson-tatum-celtics-stifle-mavericks-in-dominant-performance-9-takeaways/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxRDPKsPe7SwnuIYqg6POeYADsNQDToCmILbelWJqxX9LsjVrmEm--APeZ4OQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50496245/celtics-set-franchise-mark-42-9-lead-mavericks-one-quarter",
-          "title": "Celtics set franchise mark with 42-9 lead over Mavericks after one quarter",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxRDPKsPe7SwnuIYqg6POeYADsNQDToCmILbelWJqxX9LsjVrmEm--APeZ4OQ"
-        },
-        {
-          "url": "https://www.nbcsportsboston.com/news/boston-sports/live-updates-boston-sports-lions-mike-vrabel/814062/",
-          "title": "Drake Maye reportedly will miss ‘extended time'; Celtics blow out Dallas | All-Access Daily",
-          "publisher": "NBC Sports Boston",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJAMs6pRUcheoFxJ5vcalZkI0bx_8O0E5-XQOTQP9CRWejfeKaP4ZpxUhxXIY"
-        },
-        {
-          "url": "https://www.boston.com/sports/boston-celtics/2026/11/15/jayson-tatum-celtics-stifle-mavericks-in-dominant-performance-9-takeaways/",
-          "title": "Jayson Tatum, Celtics stifle Mavericks in dominant performance: 9 takeaways",
-          "publisher": "Boston.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfYBcXpUbsj9SCBalszy-AYoyTwN0TAn7RGnZBgaPAb5seBXmnRJ8_720dTzA"
         }
       ]
     }
