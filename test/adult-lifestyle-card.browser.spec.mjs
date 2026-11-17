@@ -3,7 +3,10 @@ const base='http://127.0.0.1:8799';
 test.use({viewport:{width:360,height:800}});
 test('21+ lifestyle Quick Card gates publisher links and rotates multi-source kits inside one card',async({page})=>{
  await page.goto(base+'/?card=infinityAdultContentCard',{waitUntil:'domcontentloaded'});
- const card=page.locator('#oracleCardStage #infinityAdultContentCard');
+ const lane=page.locator('#ioc-adult');
+ await expect(lane.getByRole('button',{name:'I am 21+ · View carousel'})).toBeVisible({timeout:20000});
+ await lane.getByRole('button',{name:'I am 21+ · View carousel'}).click();
+ const card=lane.locator('.ioc-stage #infinityAdultContentCard');
  await expect(card).toBeVisible({timeout:20000});
  const publisher=card.locator('.rac-publisher');
  await expect(publisher).toBeHidden();
@@ -29,7 +32,10 @@ test('21+ lifestyle Quick Card gates publisher links and rotates multi-source ki
 
 test('Android kit budget and source checklist work locally and vanish after the 21+ shelf closes',async({page})=>{
  await page.goto(base+'/?card=infinityAdultContentCard',{waitUntil:'domcontentloaded'});
- const card=page.locator('#oracleCardStage #infinityAdultContentCard');
+ const lane=page.locator('#ioc-adult');
+ await expect(lane.getByRole('button',{name:'I am 21+ · View carousel'})).toBeVisible({timeout:20000});
+ await lane.getByRole('button',{name:'I am 21+ · View carousel'}).click();
+ const card=lane.locator('.ioc-stage #infinityAdultContentCard');
  await expect(card).toBeVisible({timeout:20000});
  const plan=card.locator('.rac-plan');
  await expect(plan).toBeHidden();

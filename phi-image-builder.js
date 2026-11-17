@@ -53,7 +53,7 @@ function input(kind,title,subtitle){
 function layout(){
  host.classList.add('oracle-image-studio');
  const form=make('div','pi-composer pi-panel');
- form.append(make('span','pi-eyebrow','ORACLE · BLUE IMAGE GENERATOR'),make('h2','','Create your image'),make('p','pi-sub','Describe what you want in ordinary words. Oracle automatically prints requested titles and slogans accurately, then grades the image. Fix image corrects the result without moving or reuploading it.'));
+ form.append(make('span','pi-eyebrow','INFINITY® · ORACLE OCTAVES · IMAGE PRINTER'),make('h2','','Image Printer'),make('p','pi-sub','Tell Oracle what you want to see, then print an original image. Optional formats and photo references are available when you need them.'));
  const format=section('1 · Choose a format');const label=make('label','pi-label','Build Type');label.htmlFor='pi-build-type';
  const chooser=make('select','pi-build-type');chooser.id='pi-build-type';chooser.setAttribute('aria-label','Build Type');
  for(const entry of modes){const option=make('option','',entry.label);option.value=entry.label;chooser.append(option)}
@@ -64,14 +64,14 @@ function layout(){
  }
  references.append(uploads);form.append(references);
  const brief=section('3 · Describe the artwork');const promptLabel=make('label','pi-label','Image instructions');promptLabel.htmlFor='pi-prompt';
- const prompt=make('textarea');prompt.id='pi-prompt';prompt.placeholder='Subject, composition, colors, style, and anything to preserve.';brief.append(promptLabel,prompt);
+ const prompt=make('textarea');prompt.id='pi-prompt';prompt.rows=4;prompt.placeholder='Tell Oracle what you want to see…';brief.append(promptLabel,prompt);
  const contextBar=make('div','pi-context-line');const contextText=make('span','pi-context-label','');contextText.id='pi-context-label';const clearContext=make('button','pi-context-clear','Clear context');clearContext.type='button';clearContext.dataset.piAction='clear-context';clearContext.hidden=true;contextBar.append(contextText,clearContext);
  const tips=make('div','pi-smart-suggestions');tips.id='pi-smart-suggestions';tips.setAttribute('aria-label','Suggested artwork formats');brief.append(contextBar,tips);form.append(brief);
  const optional=make('details','pi-exact-optional');optional.append(make('summary','','Optional: change automatic wording'));
  const textLabel=make('label','pi-label','Wording preference');textLabel.htmlFor='pi-text-mode';
  const policy=make('select','pi-exact-input');policy.id='pi-text-mode';for(const [value,label] of [['auto','Automatic from my description'],['exact','Override the exact words'],['off','No words on the image']]){const o=make('option','',label);o.value=value;policy.append(o)}
  const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Write the words exactly as you want them';exact.setAttribute('aria-label','Exact words on image');optional.append(textLabel,policy,exact);form.append(optional,make('p','pi-notice',''));
- const go=make('button','pi-primary','Create image');go.type='button';go.dataset.piAction='build';form.append(go);
+ const go=make('button','pi-primary','Print image');go.type='button';go.dataset.piAction='build';form.append(go);
  const progress=make('div','pi-progress pi-panel');progress.append(make('span','pi-eyebrow','ORACLE · CREATING'),make('h2','','Creating your image'),make('p','pi-sub','Your description and references are kept while the image is built.'));
  const steps=make('div','pi-steps');names.forEach((name,i)=>{const row=make('div','pi-step');row.dataset.piStep=i;row.dataset.state='waiting';row.append(make('span','',name),make('small','','Waiting'));steps.append(row)});progress.append(steps,make('p','pi-notice',''));
  for(const [key,label] of [['retry-render','Retry image render'],['back','Back to description']]){const button=make('button','pi-mode',label);button.type='button';button.dataset.piAction=key;button.hidden=key==='retry-render';progress.append(button)}
@@ -87,6 +87,12 @@ function layout(){
   const button=make('button',wide?'pi-wide':'',label);button.type='button';button.dataset.piAction=key;actions.append(button);
  }
  done.append(actions);
+ // Keep the existing generator and renderer: simplify the front, do not replace its working adapters.
+ const advanced=make('details','pi-advanced');
+ advanced.append(make('summary','','Optional: image format, reference photos and exact wording'));
+ form.insertBefore(brief,format);
+ advanced.append(format,references,tips,optional);
+ form.insertBefore(advanced,go);
  host.replaceChildren(form,progress,done);letteringMode();refreshSuggestions();
  host.querySelectorAll('.pi-notice').forEach(el=>{el.setAttribute('role','status');el.setAttribute('aria-live','polite')});
 }

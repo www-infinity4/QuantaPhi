@@ -17,7 +17,7 @@ const MAX_SOURCE_BYTES=10*1024*1024;
 function ui(){
  root.innerHTML='';
  const form=make('section','sw-card sw-create');
- form.append(make('div','sw-eyebrow','ORACLE OCTAVES · CREATIVE STUDIO'),make('h2','','Story Writer'),make('p','sw-copy','Give GPT an opening idea, keywords, or a whole scene. Write an original story and automatically illustrate it.'));
+ form.append(make('div','sw-eyebrow','INFINITY® · ORACLE OCTAVES · STORY STUDIO'),make('h2','','Story Writer'),make('p','sw-copy','One idea starts an original story with a generated illustration. Add optional genre, keywords and photo references only when needed.'));
  const idea=make('textarea','sw-field');idea.id='sw-idea';idea.rows=4;idea.maxLength=3000;idea.placeholder='Example: An old lighthouse begins sending signals from a century in the future…';idea.setAttribute('aria-label','Story opening or description');
  const keys=make('input','sw-field');keys.id='sw-keys';keys.maxLength=500;keys.placeholder='Keywords: fog, time, secrets, ocean';keys.setAttribute('aria-label','Story keywords');
  const options=make('div','sw-options');
@@ -84,7 +84,11 @@ function ui(){
  const viewStories=make('button','sw-view-stories','View Stories');viewStories.type='button';viewStories.id='sw-view-stories';
  viewStories.setAttribute('aria-controls','sw-saved-library');viewStories.setAttribute('aria-expanded','false');
  const notice=make('p','sw-notice','');notice.id='sw-notice';notice.setAttribute('role','status');
- form.append(make('label','sw-label','Describe your story'),idea,personalRow,make('label','sw-label','Keywords (optional)'),keys,make('label','sw-label','Picture to write about (optional)'),upload,photo,photoNote,options,go,viewStories,notice);
+ const advanced=make('details','sw-advanced');
+ advanced.append(make('summary','','Optional: genre, keywords, picture and personal ideas'),
+  personalRow,make('label','sw-label','Keywords (optional)'),keys,
+  make('label','sw-label','Picture to write about (optional)'),upload,photo,photoNote,options);
+ form.append(make('label','sw-label','Tell Oracle your story idea'),idea,go,advanced,viewStories,notice);
  const section=make('section','sw-card sw-output');section.id='sw-output';section.hidden=true;
  const header=make('div','sw-result-head');header.append(make('span','sw-eyebrow','YOUR ORIGINAL STORY'),make('h3','sw-title',''));
  const sourceArt=make('img','sw-art sw-original-photo');sourceArt.id='sw-original-photo';sourceArt.alt='Original picture submitted by the storyteller';sourceArt.hidden=true;

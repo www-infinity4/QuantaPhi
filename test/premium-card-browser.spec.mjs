@@ -18,17 +18,18 @@ test('available-card chooser exposes original tools plus all 17 actual source se
  await expect(stage.getByText('Unrelated publisher')).toHaveCount(0);
  await page.locator('.oracle-card-library summary').click();
  const options=await page.locator('#oracleCardChooser option').allTextContents();
- expect(options.length).toBeGreaterThan(25);expect(options.some(x=>x.includes('Write a story'))).toBeTruthy();expect(options.some(x=>x.includes('NASA Image Library'))).toBeTruthy();
- await page.locator('#oracleCardChooser').selectOption('phiStoryWriter');
- await expect(stage.locator('#sw-idea')).toBeVisible();await stage.locator('#sw-idea').fill('Preserve this story draft');
- await expect(stage.locator('.oracle-original-cover')).toBeVisible();
+ expect(options.length).toBeGreaterThan(25);expect(options.some(x=>x.includes('NASA Image Library'))).toBeTruthy();
+ await expect(page.locator('#oracleCardChooser option[value="phiStoryWriter"]')).toHaveCount(0);
+ const creative=page.locator('#ioc-creative');
+ await creative.getByRole('button',{name:'Next Oracle Creator Studio card'}).click();
+ await expect(creative.locator('#sw-idea')).toBeVisible();await creative.locator('#sw-idea').fill('Preserve this story draft');
  await page.locator('#oracleCardChooser').selectOption('source-pcgs');
  await stage.getByRole('button',{name:'Next item ›'}).click();await expect(stage.getByText('1891-CC Morgan Dollar',{exact:true})).toBeVisible();
  await stage.getByRole('button',{name:'☆ Star',exact:true}).click();
  await stage.getByRole('button',{name:'+ Collect',exact:true}).click();
  await expect(stage.getByRole('button',{name:'✓ Collected',exact:true})).toBeVisible();
- await page.locator('#oracleCardChooser').selectOption('phiStoryWriter');await expect(stage.locator('#sw-idea')).toHaveValue('Preserve this story draft');
- expect(await stage.evaluate(el=>el.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
+ await expect(creative.locator('#sw-idea')).toHaveValue('Preserve this story draft');
+ expect(await creative.locator('.ioc-stage').evaluate(el=>el.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
 });
 test('Following keeps only opted-in sources and shelf mode reveals restored cards',async({page})=>{
  await fixtures(page);await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
@@ -49,8 +50,9 @@ test('unavailable sources are explicit and do not fabricate an item',async({page
 
 test('a shared original-tool link waits for its actual controls before spotlighting',async({page})=>{
  await fixtures(page);await page.goto(base+'/?card=phiStoryWriter',{waitUntil:'domcontentloaded'});
- await expect(page.locator('#oracleCardStage #sw-idea')).toBeVisible();
- await expect(page.locator('#oracleCardStage .oracle-original-cover h2')).toHaveText('Story Writer');
+ await expect(page.locator('#ioc-creative #sw-idea')).toBeVisible({timeout:20000});
+ await expect(page.locator('#ioc-creative #phiStoryWriter h2').first()).toHaveText('Story Writer');
+ await expect(page.locator('#oracleCardStage #sw-idea')).toHaveCount(0);
 });
 
 
