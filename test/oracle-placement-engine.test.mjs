@@ -91,3 +91,16 @@ test('AdPhi image reuse must not claim licensed rights without current source re
  ])assert.equal(freshBrokerCreative({...asset,...invalid},{now}),null,
   'creative with missing rights evidence must not enter publisher preview');
 });
+
+test('restricted topics never leak into ordinary feeds after a Follow or past visit',()=>{
+ const regular=card('useful-tool','Hardware');
+ const restricted=card('cannabis-destination','Cannabis', {name:'Cannabis destination'});
+ const followed=cleanFeedState({following:['cannabis-destination']});
+ const cards=[restricted,regular];
+ assert.deepEqual(feedCandidates(cards,'public',followed).map(c=>c.id),['useful-tool']);
+ assert.deepEqual(feedCandidates(cards,'following',followed).map(c=>c.id),[]);
+ assert.deepEqual(feedCandidates(cards,'for-you',followed).map(c=>c.id),[]);
+ assert.deepEqual(feedCandidates(cards,'public',followed,'cannabis').map(c=>c.id),['cannabis-destination']);
+ // A general 21+ navigation label is not an explicit cannabis search.
+ assert.deepEqual(feedCandidates(cards,'public',followed,'21+').map(c=>c.id),[]);
+});
