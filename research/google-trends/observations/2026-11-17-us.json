@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T19:01:23.291964Z",
+  "checked_at": "2026-11-17T19:31:15.292962Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "liberia vs cabo verde",
+      "query": "hayden panettiere",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T18:40:00Z",
+      "published_at": "2026-11-17T19:10:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cm3vqgg7xwk7t",
-        "https://www.coinbase.com/en-pt/predictions/event/KXAFCON1HBTTS-26NOV17BOTUGA",
-        "https://www.liberianobserver.com/sports/lone-star-suffer-4-2-defeat-to-cabo-verde/article_af32e7a4-7bb1-4d4b-a4c2-4792a434b323.html"
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/hayden-panettiere-mom-speaks-again-134108638.html",
+        "https://www.rollingstone.com/culture/culture-news/hayden-panettiere-mother-vogel-brian-hickerson-claims-1235659706/",
+        "https://www.usatoday.com/story/entertainment/movies/2026/11/17/hayden-panettiere-death-mom-funeral-brian-hickerson/92823601007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtzS3N2lsZWA0aAs9jbEJPAI-fzcEL52eqWHVX_HOfkBYB-kMXSOU53k0tY2M",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/hayden-panettiere-mom-speaks-again-134108638.html",
+          "title": "Hayden Panettiere’s mom speaks out again in new interview, blames actress’ ex Brian Hickerson for their estrangement",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtzS3N2lsZWA0aAs9jbEJPAI-fzcEL52eqWHVX_HOfkBYB-kMXSOU53k0tY2M"
+        },
+        {
+          "url": "https://www.rollingstone.com/culture/culture-news/hayden-panettiere-mother-vogel-brian-hickerson-claims-1235659706/",
+          "title": "Hayden Panettiere’s Mother Blames Brian Hickerson For Star’s Death",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRwxD4al4CPbRuYgllqwm11gwHw-14NChZdrNMeyfGZswEZ1WFOxwrM6w7pvc"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/17/hayden-panettiere-death-mom-funeral-brian-hickerson/92823601007/",
+          "title": "Hayden Panettiere's mom blames star's ex, Brian Hickerson, for her death",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiiMsXzQiu0HuBbDRlnIidtP9jYiHYDwPHx4DWBDWMDV4P2IG60SlMk7rWrxE"
+        }
+      ]
+    },
+    {
+      "query": "live radio",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:10:00Z",
+      "related_news_urls": [
+        "https://www.wwlp.com/news/local-news/hampden-county/22news-infocus-host-patrick-berry-stars-in-its-a-wonderful-life-the-live-radio-play/",
+        "https://www.broadwayworld.com/people/galleryphoto.php?photoid=2668017",
+        "https://www.seehafernews.com/2026/11/15/third-avenue-playworks-brings-its-a-wonderful-life-to-the-stage-in-december/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_HuDx6iVeoYZRNjf2I1bRRe4Af8ZBQBj9d2IiC_-XEVNZlol3_e5soQsMbeE",
+      "image_credit": "WWLP",
+      "news": [
+        {
+          "url": "https://www.wwlp.com/news/local-news/hampden-county/22news-infocus-host-patrick-berry-stars-in-its-a-wonderful-life-the-live-radio-play/",
+          "title": "22News InFocus Host Patrick Berry stars in It’s a Wonderful Life: The Live Radio Play",
+          "publisher": "WWLP",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_HuDx6iVeoYZRNjf2I1bRRe4Af8ZBQBj9d2IiC_-XEVNZlol3_e5soQsMbeE"
+        },
+        {
+          "url": "https://www.broadwayworld.com/people/galleryphoto.php?photoid=2668017",
+          "title": "It's a Wonderful Life Preview Photo (November 9, 2026)",
+          "publisher": "BroadwayWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsdMwyGkmEqR0gQvhcci4pDndo9AcAFxDdlh-Piun37heSf3z5BYUxPyWV9AU"
+        },
+        {
+          "url": "https://www.seehafernews.com/2026/11/15/third-avenue-playworks-brings-its-a-wonderful-life-to-the-stage-in-december/",
+          "title": "Third Avenue PlayWorks Brings ‘It’s a Wonderful Life’ to the Stage in December",
+          "publisher": "Seehafer News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT91VbNsp25ZMawO_l2JGhC4oUghmoNf8kheuU1DMXus27RoygEdriYaaN18T4"
+        }
+      ]
+    },
+    {
+      "query": "live tv",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/roku-quietly-adds-five-more-164349470.html",
+        "https://www.pocket-lint.com/roku-channel-just-added-8-more-free-live-tv-channels/",
+        "https://cordcuttersnews.com/roku-adds-8-new-free-live-channels-on-roku-tvs-roku-players/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwkVDKrjQkbA_gHAcu30aLMfcEn38ULB_4qPsFB5428RAyOEBn8ZjxD3jRPFs",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/roku-quietly-adds-five-more-164349470.html",
+          "title": "Roku Quietly Adds Five More Free Channels",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwkVDKrjQkbA_gHAcu30aLMfcEn38ULB_4qPsFB5428RAyOEBn8ZjxD3jRPFs"
+        },
+        {
+          "url": "https://www.pocket-lint.com/roku-channel-just-added-8-more-free-live-tv-channels/",
+          "title": "The Roku Channel just added 8 more free live TV channels",
+          "publisher": "Pocket-lint",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeNyopTlFRSXxFYLJUMhaJVANjkmlyfDVrWOGEKWT4wBp7nPMZGxu7yDqZACg"
+        },
+        {
+          "url": "https://cordcuttersnews.com/roku-adds-8-new-free-live-channels-on-roku-tvs-roku-players/",
+          "title": "Roku Adds 8 New Free Live Channels on Roku TVs & Roku Players",
+          "publisher": "| Cord Cutters News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsOLRsiBvkfcQJknarMYie6jdD8XG7Nmr7SfmN-mW69wvDqxofE0bIAzPpw2s"
+        }
+      ]
+    },
+    {
+      "query": "hungary vs northern ireland",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cwq6e479rygjt",
+        "https://www.colerainenow.co.uk/sport/uefa-nations-league-9356171",
+        "https://www.irishnews.com/sport/soccer/hopefully-well-have-a-stronger-referee-tomorrow-night-ni-boss-michael-oneill-asking-for-fair-play-in-hungary-N7GRPMN7FJC5PNEY7JROMDW5FU/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSesYpoWSIcu6QMTp_wbEaR-K5jP0lG1chNpSG2k3Ze0XVY46XXpdpwbeyDd28",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cm3vqgg7xwk7t",
-          "title": "Cape Verde vs Liberia: Africa Cup of Nations Qualification stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cwq6e479rygjt",
+          "title": "Nations League: Northern Ireland face Hungary in final group game - watch from 19:15 GMT",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSesYpoWSIcu6QMTp_wbEaR-K5jP0lG1chNpSG2k3Ze0XVY46XXpdpwbeyDd28"
         },
         {
-          "url": "https://www.coinbase.com/en-pt/predictions/event/KXAFCON1HBTTS-26NOV17BOTUGA",
-          "title": "Botswana vs Uganda: First Half BTTS",
-          "publisher": "Coinbase",
+          "url": "https://www.colerainenow.co.uk/sport/uefa-nations-league-9356171",
+          "title": "Northern Ireland can win group if they avoid defeat in Hungarian capital",
+          "publisher": "www.colerainenow.co.uk",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHsmiZTkbNA3MMrP5qBniwXpFZnU_XPk9WJxof4vSpAJTytMIOhNhuxjVVos8"
         },
         {
-          "url": "https://www.liberianobserver.com/sports/lone-star-suffer-4-2-defeat-to-cabo-verde/article_af32e7a4-7bb1-4d4b-a4c2-4792a434b323.html",
-          "title": "Lone Star Suffer 4-2 Defeat to Cabo Verde",
-          "publisher": "liberianobserver.com",
+          "url": "https://www.irishnews.com/sport/soccer/hopefully-well-have-a-stronger-referee-tomorrow-night-ni-boss-michael-oneill-asking-for-fair-play-in-hungary-N7GRPMN7FJC5PNEY7JROMDW5FU/",
+          "title": "‘Hopefully we’ll have a stronger referee tomorrow night’: NI boss Michael O’Neill asking for ‘fair play’ in Hungary",
+          "publisher": "The Irish News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZxECRWp4t__F-_nFT06TYZhemofPhfk2vN2sd7-H5UlOaR3X_2LreSYXYxEQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7A_QaLvEro-FX-60qI7yyBBiESbaUxxzcxNMWf6iUCBm4s0DOWqoxQadPdv0"
         }
       ]
     },
     {
-      "query": "equinor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T18:40:00Z",
+      "query": "rutgers vs houston",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T19:00:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/technology/equinor-detects-ongoing-cyberattack-output-unaffected-2026-11-17/",
-        "https://www.marketscreener.com/news/equinor-detects-cyberattack-against-some-it-systems-ce785edcdd8cf223",
-        "https://www.globalbankingandfinance.com/equinor-detects-cyberattack-against-systems/"
+        "https://247sports.com/college/rutgers/article/rutgers-vs-houston-preview-how-to-watch-tv-radio-live-thread-292849365/",
+        "https://www.onthebanks.com/rutgers-mens-basketball/58325/rutgers-mens-basketball-heads-west-for-2026-players-era-festival",
+        "https://www.cbssports.com/betting/news/houston-rutgers-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyBGRcMfQNBXqdy2HjIQA0CrbLfxgDGJjzcMQdXC0AQgMe2h8PFfVg0drI5U",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVtDhPC30Cm1PB9l8ZCVcQGEgT1d6mh7NUFvAlk4qcC7vhZa2JRy2mGS4mkAI",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.reuters.com/technology/equinor-detects-ongoing-cyberattack-output-unaffected-2026-11-17/",
-          "title": "Equinor detects ongoing cyberattack, output unaffected",
-          "publisher": "Reuters",
+          "url": "https://247sports.com/college/rutgers/article/rutgers-vs-houston-preview-how-to-watch-tv-radio-live-thread-292849365/",
+          "title": "Rutgers vs Houston Preview: How to watch, TV, radio, live thread",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyBGRcMfQNBXqdy2HjIQA0CrbLfxgDGJjzcMQdXC0AQgMe2h8PFfVg0drI5U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVtDhPC30Cm1PB9l8ZCVcQGEgT1d6mh7NUFvAlk4qcC7vhZa2JRy2mGS4mkAI"
         },
         {
-          "url": "https://www.marketscreener.com/news/equinor-detects-cyberattack-against-some-it-systems-ce785edcdd8cf223",
-          "title": "Equinor detects cyberattack against some IT systems",
-          "publisher": "marketscreener.com",
+          "url": "https://www.onthebanks.com/rutgers-mens-basketball/58325/rutgers-mens-basketball-heads-west-for-2026-players-era-festival",
+          "title": "Rutgers Men’s Basketball Heads West For 2026 Players Era Festival",
+          "publisher": "On the Banks",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6lL8DmqBkMJrjLGsipx9WrRD7r7uSRfeQlqWJuqfCK0GW9RODMJ-lgwF_hAQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWoZA3sHjHPuD36dS8xuHIhh2DX8ONiPlATSsgYoF1v-ARnNDTDLZ_ua5VygQ"
         },
         {
-          "url": "https://www.globalbankingandfinance.com/equinor-detects-cyberattack-against-systems/",
-          "title": "Equinor Reports Cyberattack on IT Systems, No Data Theft Detected",
-          "publisher": "Global Banking & Finance Review",
+          "url": "https://www.cbssports.com/betting/news/houston-rutgers-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
+          "title": "Houston vs. Rutgers prediction, odds: 2026 Players Era 8 picks for Tuesday, Nov. 17 by proven model",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7_id1GAow2ptVgXQ0xeSrePTQZASFqQtlxSsw7Abka0jxsSCocMso9meBYk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAI9IJKbJw4Yew2Kq-cmxcsmhdEh8wcgH4hOV1jVrSn1ZwuHQ1T77qZUWAmjI"
         }
       ]
     },
     {
-      "query": "tech outages",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T18:40:00Z",
+      "query": "browns raiders",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-17T19:00:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/17/politics/vance-mullin-infrastructure-crisis-fears-intl-hnk",
-        "https://www.the-independent.com/news/world/americas/us-politics/vance-supplies-food-water-tech-outages-b3086279.html",
-        "https://nypost.com/2026/11/17/us-news/jd-vance-says-americans-have-to-be-prepared-for-crises-but-no-need-to-stock-up-on-supplies/"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-nfls-week-12-flex-decision-is-looming",
+        "https://sports.yahoo.com/articles/nfl-bumps-struggling-patriots-chargers-185021151.html",
+        "https://www.clevelandbrowns.com/news/browns-vs-raiders-flexed-into-sunday-night-football-in-week-12"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRj3pTnfi05rR_L28EBUqZl6dJurTZstLykPBCN_5xBquLIRXfzWRsZPIy2MOA",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlp-nHw5gVpc7LZNAwmtnYyqzJzVkNVrA8G-OG3lr4j-M70sab8CPGHXSqb6k",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/17/politics/vance-mullin-infrastructure-crisis-fears-intl-hnk",
-          "title": "Trump administration dismisses crisis fears after string of disruptive tech outages",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRj3pTnfi05rR_L28EBUqZl6dJurTZstLykPBCN_5xBquLIRXfzWRsZPIy2MOA"
-        },
-        {
-          "url": "https://www.the-independent.com/news/world/americas/us-politics/vance-supplies-food-water-tech-outages-b3086279.html",
-          "title": "Vance insists ‘no need to stock up on food and water or build a bunker’ after tech outages",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdQDJrRQVmrYnj3qS42e3Um_JwFO6VmDEUC_7eOFhyGURo9rsw2841qzm0cfk"
-        },
-        {
-          "url": "https://nypost.com/2026/11/17/us-news/jd-vance-says-americans-have-to-be-prepared-for-crises-but-no-need-to-stock-up-on-supplies/",
-          "title": "JD Vance insists no need to panic-buy emergency supplies — but still ‘be prepared for everything’",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_nzghCsKpsiGFPwsYW4nQe-bAX9maA-gsy06AN_IkxUMCmthjavN75782WnQ"
-        }
-      ]
-    },
-    {
-      "query": "rwanda vs mali",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T18:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/ckgel338dyezt",
-        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-mali-v-rwanda-emjeusnvxrbv",
-        "https://www.newtimes.co.rw/article/40493/sports/football/we-are-mentally-prepared-says-constantine-ahead-of-mali-clash"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/ckgel338dyezt",
-          "title": "Mali vs Rwanda: Africa Cup of Nations Qualification stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-mali-v-rwanda-emjeusnvxrbv",
-          "title": "[#LIVESTREAm]+! Mali v Rwanda LIVE Score Updates in Football Match - Nov. 13, 2026",
-          "publisher": "日本取引所グループ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiAjaSnUkaQMOynjmSOOXMaFaDlqfET3VgCIT8Hzn_c84cYPvfBlH_9pWEZN0"
-        },
-        {
-          "url": "https://www.newtimes.co.rw/article/40493/sports/football/we-are-mentally-prepared-says-constantine-ahead-of-mali-clash",
-          "title": "'We are mentally prepared,' says Constantine ahead of Mali clash| The New Times",
-          "publisher": "The New Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-ZSeyUOYv5KZb8x2VG4XSHfmPRbO_WbZz4VfpSG_G890n0u3Qu3ViPPNhB_w"
-        }
-      ]
-    },
-    {
-      "query": "pennsylvania lottery",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T18:30:00Z",
-      "related_news_urls": [
-        "https://www.pennlive.com/lottery/2026/11/winning-pa-lottery-numbers-for-nov-16-2026.html",
-        "https://www.pennlive.com/lottery/2026/11/check-your-tickets-winning-pa-lottery-numbers-for-nov-9-2026.html",
-        "https://www.phillyburbs.com/story/news/local/2026/11/14/pennsylvania-lottery-results-saturday-november-14-2026/92792264007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbzVb2GPUP1peKhA54r-3e1hgBDzllAtwubc8dVGkhu7pj3xkB3Woy4AsRDAA",
-      "image_credit": "PennLive.com",
-      "news": [
-        {
-          "url": "https://www.pennlive.com/lottery/2026/11/winning-pa-lottery-numbers-for-nov-16-2026.html",
-          "title": "Winning Pa. Lottery numbers for Nov. 16, 2026",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbzVb2GPUP1peKhA54r-3e1hgBDzllAtwubc8dVGkhu7pj3xkB3Woy4AsRDAA"
-        },
-        {
-          "url": "https://www.pennlive.com/lottery/2026/11/check-your-tickets-winning-pa-lottery-numbers-for-nov-9-2026.html",
-          "title": "Check your tickets: Winning Pa. lottery numbers for Nov. 9, 2026",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzXTTwfseaxb8sru58ecC5yzU0409IHKwPCEsf-14Kn2Lc5wDoV9SHhzQKpg4"
-        },
-        {
-          "url": "https://www.phillyburbs.com/story/news/local/2026/11/14/pennsylvania-lottery-results-saturday-november-14-2026/92792264007/",
-          "title": "Pennsylvania Lottery Powerball, Pick 2 Day results for Nov. 14, 2026",
-          "publisher": "PhillyBurbs",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPNUhYS236xO1OCCeS1R-EAESUCIa9fklmP7UaOPR87lZBcpZQDk6Mf7ueIiw"
-        }
-      ]
-    },
-    {
-      "query": "rj godfrey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T18:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/arizonas-rj-godfrey-reportedly-eligible-to-play-vs-uconn-after-judge-grants-injunction-182521598.html",
-        "https://tucson.com/sports/arizonawildcats/basketball/article_fa3ab32d-4d91-40f4-86f2-d905e9d19f5a.html",
-        "https://www.kvoa.com/news/top-stories/college-basketball-player-takes-eligibility-fight-to-arizona-court/article_c680a679-caaf-497b-b30e-9f71c2f28fcc.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDSZq5s5pnMO73nuKPOgZSrssZhl373-fLDUWQGpQerQJ_-7RqgzaTNU3Mxkw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/arizonas-rj-godfrey-reportedly-eligible-to-play-vs-uconn-after-judge-grants-injunction-182521598.html",
-          "title": "Arizona's RJ Godfrey reportedly eligible to play vs. UConn after judge grants injunction",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDSZq5s5pnMO73nuKPOgZSrssZhl373-fLDUWQGpQerQJ_-7RqgzaTNU3Mxkw"
-        },
-        {
-          "url": "https://tucson.com/sports/arizonawildcats/basketball/article_fa3ab32d-4d91-40f4-86f2-d905e9d19f5a.html",
-          "title": "Arizona's RJ Godfrey prepares for another legal swing in Pima County Superior Court",
-          "publisher": "Arizona Daily Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDvs0hVl3ibhwoM8jjUBkdJ1o-gMaETchYGyeuhnM6aF7GzCi-6q__lzDXOI"
-        },
-        {
-          "url": "https://www.kvoa.com/news/top-stories/college-basketball-player-takes-eligibility-fight-to-arizona-court/article_c680a679-caaf-497b-b30e-9f71c2f28fcc.html",
-          "title": "College basketball player takes eligibility fight to Arizona court",
-          "publisher": "KVOA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtosahTIbAWVYTJrB9VfxAuemhsT_MNTS955yB1tRvWtJzyL36UAhlDDnAfb0"
-        }
-      ]
-    },
-    {
-      "query": "dallas cowboys football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T18:20:00Z",
-      "related_news_urls": [
-        "https://www.dallascowboys.com/news/brian-schottenheimer-cowboys-taking-a-deep-dive-looking-at-everything-on-defense",
-        "https://sports.yahoo.com/articles/kyle-shanahan-49ers-defensive-effort-153000689.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/stephen-jones-were-playing-unacceptable-football-our-fans-deserve-better"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPqzSRoA-OLndtV8Q3s94wo9hK87ld4LUlQhjAXT6jxRme-b-AaJSo754G69o",
-      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-      "news": [
-        {
-          "url": "https://www.dallascowboys.com/news/brian-schottenheimer-cowboys-taking-a-deep-dive-looking-at-everything-on-defense",
-          "title": "Brian Schottenheimer, Cowboys 'taking a deep dive, looking at everything' on defense",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPqzSRoA-OLndtV8Q3s94wo9hK87ld4LUlQhjAXT6jxRme-b-AaJSo754G69o"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/kyle-shanahan-49ers-defensive-effort-153000689.html",
-          "title": "Kyle Shanahan on 49ers’ defensive effort in Dallas: ‘The tape tells a different story’",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsGR33qYVE4JG6nlq5GWmo7trP2bOqboHqi_qgXsrUYf4Gjxk8pT3ABOelMIw"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/stephen-jones-were-playing-unacceptable-football-our-fans-deserve-better",
-          "title": "Stephen Jones: We’re playing “unacceptable” football, our fans deserve better",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-nfls-week-12-flex-decision-is-looming",
+          "title": "The NFL’s Week 12 flex decision is looming",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCdNSysWmYDiti0lR9QcxXQYwnlh4qtVU8p7YSrfNvt1WoNMeM5xCj0Bbqylk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlp-nHw5gVpc7LZNAwmtnYyqzJzVkNVrA8G-OG3lr4j-M70sab8CPGHXSqb6k"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nfl-bumps-struggling-patriots-chargers-185021151.html",
+          "title": "NFL bumps struggling Patriots, Chargers out of 'Week 12' SNF slot",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStEFdBW1tQJHOqFmH2hNFXdzAK5zljjS-_ZQLyLN6xRKEnzNVLVD1boIvS8sU"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-vs-raiders-flexed-into-sunday-night-football-in-week-12",
+          "title": "Browns vs. Raiders flexed into Sunday Night Football in Week 12",
+          "publisher": "Cleveland Browns",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzfGDI9losrgmVU5W1YenGA7VRiyEIowN-XwcDpze5t5G6Y22ExRxZQGJK2L0"
         }
       ]
     },
     {
-      "query": "when we were young 2027",
+      "query": "ireland vs kosovo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T19:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmy974v0edx8t",
+        "https://www.rte.ie/sport/soccer/2026/1116/1599361-republic-of-ireland-v-kosovo-all-you-need-to-know/",
+        "https://www.independent.ie/sport/soccer/international-soccer/daniel-mcdonnell-ireland-need-conviction-rather-than-chaos-against-kosovo-to-finish-year-of-missed-opportunities-on-a-high/a/164633729.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVq9CoBoLfmJ9ZXYqQ1_KWWrZBmv9g3uS7XszWRmTLkDqaOeRNJGk2KFcf5D0",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmy974v0edx8t",
+          "title": "Republic of Ireland vs Kosovo: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVq9CoBoLfmJ9ZXYqQ1_KWWrZBmv9g3uS7XszWRmTLkDqaOeRNJGk2KFcf5D0"
+        },
+        {
+          "url": "https://www.rte.ie/sport/soccer/2026/1116/1599361-republic-of-ireland-v-kosovo-all-you-need-to-know/",
+          "title": "Republic of Ireland v Kosovo: All you need to know",
+          "publisher": "RTE.ie",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvIyoMaxHvVM8BnC-A3P9guQLZ0B3uVenUfB9CSmYoCw5ZPhr717wTQqccj0U"
+        },
+        {
+          "url": "https://www.independent.ie/sport/soccer/international-soccer/daniel-mcdonnell-ireland-need-conviction-rather-than-chaos-against-kosovo-to-finish-year-of-missed-opportunities-on-a-high/a/164633729.html",
+          "title": "Ireland v Kosovo preview: Ireland need conviction rather than chaos to finish year of missed opportunities on a high",
+          "publisher": "Irish Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuewVJjcoH_z08hJqE711PTaNE62tzK5EACv_U2x6Qg_0M2QLijkILczfTH0g"
+        }
+      ]
+    },
+    {
+      "query": "wales vs portugal",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-17T18:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/articles/ckvg29vler1no",
+        "https://www.theguardian.com/football/live/2026/nov/17/wales-v-portugal-nations-league-football-live-score-updates",
+        "https://www.espn.com/soccer/story/_/id/50503039/craig-bellamy-cristiano-ronaldo"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOETFHFM_P46TXSbjsT3_HKZ0bccN8i6kkxLjerrXIkCjvA2QiGQyFvcCDb3s",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/articles/ckvg29vler1no",
+          "title": "Wales v Portugal: Portugal without Cristiano Ronaldo face a post-Gareth Bale Wales",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOETFHFM_P46TXSbjsT3_HKZ0bccN8i6kkxLjerrXIkCjvA2QiGQyFvcCDb3s"
+        },
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/17/wales-v-portugal-nations-league-football-live-score-updates",
+          "title": "Wales v Portugal: Nations League football – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQS3EwF2lYVyudlYtN9cYeXn6IbTwNSPcx1X5JFWDO08XB3Xx0UmRpUd0qVtU"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50503039/craig-bellamy-cristiano-ronaldo",
+          "title": "Wales boss Craig Bellamy urges fans to 'just celebrate' Cristiano Ronaldo after Portugal exit",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRKslvvQFls-jBdVe99vl_qfWbrQFLArRFSRTks-LTO5QnPDOJfEcbaKRgvI"
+        }
+      ]
+    },
+    {
+      "query": "dinamarca - noruega",
       "approx_searches": "2000+",
-      "published_at": "2026-11-17T18:10:00Z",
+      "published_at": "2026-11-17T18:50:00Z",
       "related_news_urls": [
-        "https://news3lv.com/news/local/when-we-were-young-2027-return-las-vegas-blink-182-pierce-the-veil-music-festival",
-        "https://www.9news.com/article/entertainment/music/when-we-were-young-festival-2027-lineup/73-83b1663e-e75a-42bb-bafb-33901cd07f34",
-        "https://substreammagazine.com/2026/11/when-we-were-young-fest-is-back-2027/"
+        "https://espndeportes.espn.com/futbol/nota/_/id/17506096/dinamarca-vs-noruega-nations-league-equipo-fecha-hora-y-tv-en-vivo",
+        "https://www.mundodeportivo.com/futbol/atletico-madrid/20261117/1004251984/duelo-colchonero-plaza-cuartos-nations-league.html",
+        "https://es-us.noticias.yahoo.com/deportes/m%C3%A1quina-goles-brian-riemer-avisa-080731403.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvwaZNX1P-KZ39AgNezCJgrqE12QJQzmwLqTBFPd0sqvqpkczHVqW8AVDOLNc",
-      "image_credit": "KSNV",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfynIVYh2GrxgPAORkO_BqhTN5hJ0oUx5l0Aamtjibj8Lf2zrBlgGdySomy64",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://news3lv.com/news/local/when-we-were-young-2027-return-las-vegas-blink-182-pierce-the-veil-music-festival",
-          "title": "When We Were Young 2027 returning to Las Vegas with more than 50 acts",
-          "publisher": "KSNV",
+          "url": "https://espndeportes.espn.com/futbol/nota/_/id/17506096/dinamarca-vs-noruega-nations-league-equipo-fecha-hora-y-tv-en-vivo",
+          "title": "Cuándo juegan Dinamarca vs. Noruega por la Nations League: equipo, fecha, hora y TV en vivo",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvwaZNX1P-KZ39AgNezCJgrqE12QJQzmwLqTBFPd0sqvqpkczHVqW8AVDOLNc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfynIVYh2GrxgPAORkO_BqhTN5hJ0oUx5l0Aamtjibj8Lf2zrBlgGdySomy64"
         },
         {
-          "url": "https://www.9news.com/article/entertainment/music/when-we-were-young-festival-2027-lineup/73-83b1663e-e75a-42bb-bafb-33901cd07f34",
-          "title": "When We Were Young Festival announces 2027 lineup",
-          "publisher": "9News",
+          "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20261117/1004251984/duelo-colchonero-plaza-cuartos-nations-league.html",
+          "title": "Duelo colchonero por una plaza en los cuartos de la Nations League",
+          "publisher": "Mundo Deportivo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8BL9t7S-xqMq6xzssQgiKkdhlplYkc0hjqqq8CsUedfcEg56ua3QRIDJJs0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5M1VvkYwpOinZlclb6PnxiltBevg6ppv-J8rVQonwyPvyxzqaVtpbFMg4cbg"
         },
         {
-          "url": "https://substreammagazine.com/2026/11/when-we-were-young-fest-is-back-2027/",
-          "title": "When We Were Young Fest is Back and Better Than Ever: Blink-182 and Pierce the Veil to Headline",
-          "publisher": "Substream Magazine",
+          "url": "https://es-us.noticias.yahoo.com/deportes/m%C3%A1quina-goles-brian-riemer-avisa-080731403.html",
+          "title": "«Tenemos nuestra propia máquina de hacer goles»: Brian Riemer avisa a Erling Haaland y Noruega antes del duelo de Dinamarca en la Liga de Naciones",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZSC5bunGcPIzZI0QyZpnNRLkd9E0gmzLpRrsz8DlIgjGiuilWHhjSHKrQGSI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXDBpldV3NRh8srX2t5g3sYhIHXxJAJo88o4LxOFtCQmJRVvq3Cfbf3-iRsHM"
         }
       ]
     },
     {
-      "query": "gpt 6.2",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T18:10:00Z",
+      "query": "bosnia and herzegovina vs romania",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T18:50:00Z",
       "related_news_urls": [
-        "https://openai.com/index/astra-law-6-2/",
-        "https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release",
-        "https://qz.com/openai-gpt-6-2-astra-release-scrapped-version-111726"
+        "https://www.bbc.com/sport/football/live/ckd71xvg3e8nt",
+        "https://www.sportsgambler.com/betting-tips/football/bosnia-herzegovina-vs-romania-prediction-lineups-odds-2026-11-17/",
+        "https://sarajevotimes.com/barbarez-we-want-to-conclude-the-year-with-a-victory-against-romania/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRz4D12OHikPdD1X1qxu40FsgX-0xT_WNJtNOSf6po6DshifxbQ2bvIwqVGw7g",
-      "image_credit": "OpenAI",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://openai.com/index/astra-law-6-2/",
-          "title": "Astra for Law leads in legal intelligence",
-          "publisher": "OpenAI",
+          "url": "https://www.bbc.com/sport/football/live/ckd71xvg3e8nt",
+          "title": "Bosnia-Herzegovina vs Romania: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRz4D12OHikPdD1X1qxu40FsgX-0xT_WNJtNOSf6po6DshifxbQ2bvIwqVGw7g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release",
-          "title": "OpenAI Unveils New Astra AI Model After Scrapping Prior Release",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.sportsgambler.com/betting-tips/football/bosnia-herzegovina-vs-romania-prediction-lineups-odds-2026-11-17/",
+          "title": "Bosnia-Herzegovina vs Romania Prediction, Betting Tips, Lineups & Odds | 17 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX9_8H68EjFlEeryuvVaS_P_IX0x2LnfcCPY69D0RVJf4BnT7a4L5aImj-IB0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQje20FYWgbystDKwJ3TcIgX51lsXA0JV-JOYo_oEHYt5EWSlAuPjiko61oHyY"
         },
         {
-          "url": "https://qz.com/openai-gpt-6-2-astra-release-scrapped-version-111726",
-          "title": "OpenAI is unveiling GPT-6.2 Astra after scrapping a prior AI model",
-          "publisher": "Quartz",
+          "url": "https://sarajevotimes.com/barbarez-we-want-to-conclude-the-year-with-a-victory-against-romania/",
+          "title": "Barbarez: We want to conclude the Year with a Victory against Romania",
+          "publisher": "Sarajevo Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ6jkEeSA3LuHUwf7z6-fqM0Sh2ll3fMBYLvPg058tjtvN2AyR5dQh47rv-LQ"
-        }
-      ]
-    },
-    {
-      "query": "playstation plus games",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T17:50:00Z",
-      "related_news_urls": [
-        "https://www.gamingbible.com/news/platform/playstation/playstation-plus-december-free-game-update-035399-20261117",
-        "https://www.playstationlifestyle.net/2026/11/16/games-leaving-ps-plus-extra-premium-december-2026",
-        "https://www.pushsquare.com/news/2026/11/3-ps-plus-extra-game-removals-for-december-2026-confirmed"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLmgBXVQ17JVnQ9p9BVDxk8YHUzHn2BcDNT84r0XkQvtHpJKPYxodXqB9Io6g",
-      "image_credit": "GAMINGbible",
-      "news": [
-        {
-          "url": "https://www.gamingbible.com/news/platform/playstation/playstation-plus-december-free-game-update-035399-20261117",
-          "title": "PlayStation Plus issues December free game update, last chance to play 100-hour RPG",
-          "publisher": "GAMINGbible",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLmgBXVQ17JVnQ9p9BVDxk8YHUzHn2BcDNT84r0XkQvtHpJKPYxodXqB9Io6g"
-        },
-        {
-          "url": "https://www.playstationlifestyle.net/2026/11/16/games-leaving-ps-plus-extra-premium-december-2026",
-          "title": "Games Leaving PlayStation Plus in December 2026 Confirmed",
-          "publisher": "PlayStation LifeStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0WTsBe06ZGRiIKkjyR67ykY0bJH8PG9JlVoiXRgZBh_s-fmcPlHoBQYGv4C4"
-        },
-        {
-          "url": "https://www.pushsquare.com/news/2026/11/3-ps-plus-extra-game-removals-for-december-2026-confirmed",
-          "title": "3 PS Plus Extra Game Removals for December 2026 Confirmed",
-          "publisher": "Push Square",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5R0jBG9H9QXlEmFa1yIoxF6DHx15Fcjip9QE3alij66_INVm56lBh0j0db2E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShSlErV63f9m3yDtdfcbWkO0b9Jfiwp1mi6GLq5dbILU-wH69xYTe847rFmFU"
         }
       ]
     }
