@@ -3,12 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T18:01:45.782374Z",
+  "checked_at": "2026-11-17T18:31:19.873302Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "gpt 6.2",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T18:10:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release",
+        "https://www.theverge.com/tech/1035483/openai-releases-its-updated-gpt-6-2-astra-model",
+        "https://thedefiant.io/frontier/ai/gpt-6-2-models-rise-on-ai-index-but-coding-scores-stall"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX9_8H68EjFlEeryuvVaS_P_IX0x2LnfcCPY69D0RVJf4BnT7a4L5aImj-IB0",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release",
+          "title": "OpenAI Unveils New Astra AI Model After Scrapping Prior Release",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX9_8H68EjFlEeryuvVaS_P_IX0x2LnfcCPY69D0RVJf4BnT7a4L5aImj-IB0"
+        },
+        {
+          "url": "https://www.theverge.com/tech/1035483/openai-releases-its-updated-gpt-6-2-astra-model",
+          "title": "OpenAI releases its updated GPT-6.2 Astra model.",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZHcWb_Npw_TRPWPoFahy38uHc4ht4t2cBcyDcJXHSIkCVes2BydoVSFQ9rvc"
+        },
+        {
+          "url": "https://thedefiant.io/frontier/ai/gpt-6-2-models-rise-on-ai-index-but-coding-scores-stall",
+          "title": "GPT-6.2 Models Rise on AI Index, but Coding Scores Stall",
+          "publisher": "The Defiant",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSty7J2p6F5G77b-847dQ3JCylxyZNHSA3mSh0s2AusW4NaV8YqFo3Wb-eeMeQ"
+        }
+      ]
+    },
+    {
+      "query": "playstation plus games",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T17:50:00Z",
+      "related_news_urls": [
+        "https://www.gamingbible.com/news/platform/playstation/playstation-plus-december-free-game-update-035399-20261117",
+        "https://www.playstationlifestyle.net/2026/11/16/games-leaving-ps-plus-extra-premium-december-2026",
+        "https://www.pushsquare.com/news/2026/11/3-ps-plus-extra-game-removals-for-december-2026-confirmed"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLmgBXVQ17JVnQ9p9BVDxk8YHUzHn2BcDNT84r0XkQvtHpJKPYxodXqB9Io6g",
+      "image_credit": "GAMINGbible",
+      "news": [
+        {
+          "url": "https://www.gamingbible.com/news/platform/playstation/playstation-plus-december-free-game-update-035399-20261117",
+          "title": "PlayStation Plus issues December free game update, last chance to play 100-hour RPG",
+          "publisher": "GAMINGbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLmgBXVQ17JVnQ9p9BVDxk8YHUzHn2BcDNT84r0XkQvtHpJKPYxodXqB9Io6g"
+        },
+        {
+          "url": "https://www.playstationlifestyle.net/2026/11/16/games-leaving-ps-plus-extra-premium-december-2026",
+          "title": "Games Leaving PlayStation Plus in December 2026 Confirmed",
+          "publisher": "PlayStation LifeStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0WTsBe06ZGRiIKkjyR67ykY0bJH8PG9JlVoiXRgZBh_s-fmcPlHoBQYGv4C4"
+        },
+        {
+          "url": "https://www.pushsquare.com/news/2026/11/3-ps-plus-extra-game-removals-for-december-2026-confirmed",
+          "title": "3 PS Plus Extra Game Removals for December 2026 Confirmed",
+          "publisher": "Push Square",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5R0jBG9H9QXlEmFa1yIoxF6DHx15Fcjip9QE3alij66_INVm56lBh0j0db2E"
+        }
+      ]
+    },
+    {
+      "query": "flight 5342",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T17:40:00Z",
+      "related_news_urls": [
+        "https://thehill.com/policy/transportation/6225379-watch-live-duffy-faa-overhaul-presser-dca-crash/",
+        "https://komonews.com/news/nation-world/dc-midair-crash-families-urge-congress-to-pass-aviation-safety-legislation-ted-cruz-jennifer-homendy-american-airlines",
+        "https://www.fox5dc.com/news/flight-5342-families-urge-congress-pass-aviation-safety-reforms-before-end-year"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVg9xp4PUkBGY5HgTY3oxYjgt2JeCiKx1MN3X7-eroPsRBM2J1m2OPc3iARMc",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/policy/transportation/6225379-watch-live-duffy-faa-overhaul-presser-dca-crash/",
+          "title": "Watch live: Duffy gives remarks amid scrutiny over FAA shortfalls",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVg9xp4PUkBGY5HgTY3oxYjgt2JeCiKx1MN3X7-eroPsRBM2J1m2OPc3iARMc"
+        },
+        {
+          "url": "https://komonews.com/news/nation-world/dc-midair-crash-families-urge-congress-to-pass-aviation-safety-legislation-ted-cruz-jennifer-homendy-american-airlines",
+          "title": "DC midair crash families urge Congress to pass aviation safety legislation",
+          "publisher": "KOMO",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT54zfpkPTRqqDcWfF2m7Sgqmq7OWnJskVwWdoeiEFHfnYp954dHS30pCveyKk"
+        },
+        {
+          "url": "https://www.fox5dc.com/news/flight-5342-families-urge-congress-pass-aviation-safety-reforms-before-end-year",
+          "title": "Flight 5342 families urge Congress to pass aviation safety reforms before end of year",
+          "publisher": "FOX 5 DC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtwRRQOTKxdySfzB9ySRn-x4jQ7YqraBfzWTiQ7a8YM0Px50NfaUK28xbycW8"
+        }
+      ]
+    },
+    {
       "query": "yemen",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-17T17:30:00Z",
       "related_news_urls": [
         "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
@@ -105,16 +210,23 @@
     },
     {
       "query": "apple outage",
-      "approx_searches": "2000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-17T17:20:00Z",
       "related_news_urls": [
+        "https://www.usatoday.com/story/tech/2026/11/17/apple-services-outage/92827849007/",
         "https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/",
-        "https://news.az/news/apple-users-report-app-store-disruptions",
-        "https://www.theapplepost.com/2026/11/12/74215/apple-reports-app-store-connect-issues-affecting-developers/"
+        "https://nypost.com/2026/11/17/business/apple-services-down-as-apple-pay-app-store-and-apple-support-experience-outages/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkARWYMHiCosv5kcV5D32pWuk3fp9DCms14hg9Thd_zL6ATYSxh3Gcyk8DsIg",
-      "image_credit": "9to5Mac",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm1tlavAo54nGR37f2Ff6WrEibdAQEL7MV7WtE1pP0WXGFMz8X9iHo3uLuXr0",
+      "image_credit": "USA Today",
       "news": [
+        {
+          "url": "https://www.usatoday.com/story/tech/2026/11/17/apple-services-outage/92827849007/",
+          "title": "Is Apple down? Thousands report problems accessing services",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm1tlavAo54nGR37f2Ff6WrEibdAQEL7MV7WtE1pP0WXGFMz8X9iHo3uLuXr0"
+        },
         {
           "url": "https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/",
           "title": "iCloud, App Store, and other Apple services hit by ongoing outage",
@@ -123,18 +235,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkARWYMHiCosv5kcV5D32pWuk3fp9DCms14hg9Thd_zL6ATYSxh3Gcyk8DsIg"
         },
         {
-          "url": "https://news.az/news/apple-users-report-app-store-disruptions",
-          "title": "Apple users report App Store disruptions",
-          "publisher": "Latest news from Azerbaijan",
+          "url": "https://nypost.com/2026/11/17/business/apple-services-down-as-apple-pay-app-store-and-apple-support-experience-outages/",
+          "title": "Apple services down, as Apple Pay, App Store and Apple Support experience outages",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxjp12PoncnCfylEYKM_tdETrg_8fZqBpi6hVb5M685Nc1cYR4ejv2CK5rRbY"
-        },
-        {
-          "url": "https://www.theapplepost.com/2026/11/12/74215/apple-reports-app-store-connect-issues-affecting-developers/",
-          "title": "Apple reports App Store Connect issues affecting developers",
-          "publisher": "The Apple Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKkFdIGGgIIKQZIwu-9bUGunYSgiINnVYiHRGsla5s1UYzNikZK9ndp8UPkq8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsvH1xC-5XlfJNAlbYU0mpNPVGRbKS1YGoKo3e2WpGuomewiBibPSTY3Xnko4"
         }
       ]
     },
@@ -144,8 +249,8 @@
       "published_at": "2026-11-17T17:20:00Z",
       "related_news_urls": [
         "https://www.wsj.com/business/autos/general-motors-seeks-outside-ceo-contenders-to-succeed-mary-barra-e8177c4a",
-        "https://www.marketscreener.com/news/gm-taps-executive-search-firm-to-find-possible-successor-to-ceo-mary-barra-wsj-reports-ce785edcdd8bf423",
-        "https://www.investing.com/news/stock-market-news/general-motors-initiates-succession-planning-for-historic-ceo-mary-barra-5033644"
+        "https://www.freep.com/story/money/cars/general-motors/2026/11/17/gm-mary-barra-replacement-search/92827530007/",
+        "https://www.detroitnews.com/story/business/autos/general-motors/2026/11/17/gm-taps-search-firm-to-find-possible-successor-to-barra-wsj-reports/92828016007/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1f6Mu_UxMPE5l6NtHnnT6RWNoAAHxeYeVVYiN_GTS7hs-K5R0y07ZjVh1zA",
       "image_credit": "WSJ",
@@ -158,18 +263,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1f6Mu_UxMPE5l6NtHnnT6RWNoAAHxeYeVVYiN_GTS7hs-K5R0y07ZjVh1zA"
         },
         {
-          "url": "https://www.marketscreener.com/news/gm-taps-executive-search-firm-to-find-possible-successor-to-ceo-mary-barra-wsj-reports-ce785edcdd8bf423",
-          "title": "GM taps executive search firm to find possible successor to CEO Mary Barra, WSJ reports",
-          "publisher": "www.marketscreener.com",
+          "url": "https://www.freep.com/story/money/cars/general-motors/2026/11/17/gm-mary-barra-replacement-search/92827530007/",
+          "title": "GM reportedly searches for potential successor to CEO Mary Barra",
+          "publisher": "Detroit Free Press",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6lL8DmqBkMJrjLGsipx9WrRD7r7uSRfeQlqWJuqfCK0GW9RODMJ-lgwF_hAQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMX7z2T18PGxn8mMwdc-8Czd-OXrPjNF-30W_sw4dQQFfWLl7VQ0jOdFgvrcA"
         },
         {
-          "url": "https://www.investing.com/news/stock-market-news/general-motors-initiates-succession-planning-for-historic-ceo-mary-barra-5033644",
-          "title": "General Motors initiates succession planning for historic CEO Mary Barra",
-          "publisher": "Investing.com",
+          "url": "https://www.detroitnews.com/story/business/autos/general-motors/2026/11/17/gm-taps-search-firm-to-find-possible-successor-to-barra-wsj-reports/92828016007/",
+          "title": "GM taps search firm to find possible Barra successor, report says",
+          "publisher": "The Detroit News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSFTQ5yXg-Tn2XHhdPoYRZyc8Ad11iLm-u5c_a1lrCDm3xz_4Z6Q0g-lEIAhY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuI72pbKmprWcZZz7JmjnKGAq2rCk_fBXH2kIONsUcwPWTJ-b_lN3rdVNbOJM"
         }
       ]
     },
@@ -178,19 +283,19 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-17T17:10:00Z",
       "related_news_urls": [
-        "https://cfl.ca/article/elks-top-alouettes-to-capture-113th-grey-cup",
+        "https://globalnews.ca/news/12152194/2026-grey-cup-winner/",
         "https://nevadasportsnet.com/news/reporters/defying-critics-yet-again-cody-fajardo-wins-third-grey-cup-title-earning-second-mvp",
         "https://www.tsn.ca/cfl/article/107-million-unique-viewers-tune-into-113th-grey-cup-viewership-up-44-per-cent/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsB4ujygPDTlLOvbOMTKgDx2YoLC0uxv5DSBnHLlMTe-LjTOZPDIy4y9lBZ0U",
-      "image_credit": "CFL",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlBkEMTBgc3nXYw9rxxP6nJr0_LOz0EVk87ezyyxlCDn39vnsOmmFKFAffLW0",
+      "image_credit": "Global News",
       "news": [
         {
-          "url": "https://cfl.ca/article/elks-top-alouettes-to-capture-113th-grey-cup",
-          "title": "Elks top Alouettes to capture 113th Grey Cup",
-          "publisher": "CFL",
+          "url": "https://globalnews.ca/news/12152194/2026-grey-cup-winner/",
+          "title": "Edmonton Elks win the Grey Cup, defeat Montreal Alouettes by 37-30",
+          "publisher": "Global News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsB4ujygPDTlLOvbOMTKgDx2YoLC0uxv5DSBnHLlMTe-LjTOZPDIy4y9lBZ0U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlBkEMTBgc3nXYw9rxxP6nJr0_LOz0EVk87ezyyxlCDn39vnsOmmFKFAffLW0"
         },
         {
           "url": "https://nevadasportsnet.com/news/reporters/defying-critics-yet-again-cody-fajardo-wins-third-grey-cup-title-earning-second-mvp",
@@ -210,12 +315,12 @@
     },
     {
       "query": "manni l perez",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-17T17:00:00Z",
       "related_news_urls": [
         "https://theconversation.com/lucia-caminos-is-the-first-latina-grand-theft-auto-lead-these-video-game-characters-paved-the-way-290289",
         "https://www.theverge.com/games/1035602/gta-vis-voice-actor-for-lucia-was-revealed-by-the-game-awards",
-        "https://www.ign.com/articles/grand-theft-auto-6-lucia-actress-finally-revealed-and-yes-its-who-you-probably-suspected"
+        "https://www.redbull.com/int-en/gta-6-characters-cast"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBrf4yTGQirVtujHRSV9TYoVesz63WtyOh4TysPuYuMSUkiqOXmC_txqCuEm0",
       "image_credit": "The Conversation",
@@ -235,90 +340,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIvkOo_QoZPqWeAwJ36Fnu7UZ0H29-K059LSvFfNwO2Ex80CO1aErIWW57dWI"
         },
         {
-          "url": "https://www.ign.com/articles/grand-theft-auto-6-lucia-actress-finally-revealed-and-yes-its-who-you-probably-suspected",
-          "title": "Grand Theft Auto 6 Lucia Actress Finally Revealed — And Yes, It's Who You Probably Suspected",
-          "publisher": "IGN",
+          "url": "https://www.redbull.com/int-en/gta-6-characters-cast",
+          "title": "Who's who in GTA 6? Meet the characters of Vice City",
+          "publisher": "Red Bull",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtYBmW4c8lLywUYg2CK3QFa-_f6EZ-yfUvIQZVeb5SnueHEGJw8zw5oKQu6mQ"
-        }
-      ]
-    },
-    {
-      "query": "tropical storm nolo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T17:00:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "murray state basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T17:00:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/murray-state-racers-vs-hofstra-pride-prediction-odds-2026-11-17/",
-        "https://www.actionnetwork.com/news/college-basketball-predictions-today-5-best-college-basketball-picks-today-ncaab-predictions-for-november-17",
-        "https://www.basketunderreview.com/tuesday-watchlist-november-17-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/murray-state-racers-vs-hofstra-pride-prediction-odds-2026-11-17/",
-          "title": "Murray State vs Hofstra Prediction, Picks & Odds | 17 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
-        },
-        {
-          "url": "https://www.actionnetwork.com/news/college-basketball-predictions-today-5-best-college-basketball-picks-today-ncaab-predictions-for-november-17",
-          "title": "College Basketball Predictions Today: 5 Best Picks for Nov. 17",
-          "publisher": "Action Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwOKf_fsmjuBvKXa-xMJpiTiWB-6fP5Vw4eF3oEfjChHhxvsQKeB3fcwiz-w8"
-        },
-        {
-          "url": "https://www.basketunderreview.com/tuesday-watchlist-november-17-2026/",
-          "title": "Tuesday Watchlist: November 17, 2026",
-          "publisher": "Basket Under Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn5qFUvtEwfimN5pm7wnh7-5yD7XuweyVA6oglGpJTkRXEkNW4IYdISyFTIpw"
-        }
-      ]
-    },
-    {
-      "query": "game awards",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-17T16:50:00Z",
-      "related_news_urls": [
-        "https://www.polygon.com/the-game-awards-2026-nominees-announcement-date/",
-        "https://press.disneyplus.com/news/the-game-awards",
-        "https://stupiddope.com/2026/11/gta-vi-will-be-nominated-for-game-of-the-year-before-anyone-can-read-a-review/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSn5dqaWMZD2e_7gDJwim6BL_7t9gyPIbOyQOlx_yXKkPdzlvLlUNO_ALfg4",
-      "image_credit": "Polygon.com",
-      "news": [
-        {
-          "url": "https://www.polygon.com/the-game-awards-2026-nominees-announcement-date/",
-          "title": "The Game Awards 2026 Nominees Reveal: Here's How to Watch",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSn5dqaWMZD2e_7gDJwim6BL_7t9gyPIbOyQOlx_yXKkPdzlvLlUNO_ALfg4"
-        },
-        {
-          "url": "https://press.disneyplus.com/news/the-game-awards",
-          "title": "Disney+ to Stream The Game Awards 2026 Live on December 10",
-          "publisher": "Disney+ Press Center",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuGcJOWM55l-H1mJC0PAdg-cvMaVh9JUoU20RuibrP6dlG3_7mYXf9La7-C48"
-        },
-        {
-          "url": "https://stupiddope.com/2026/11/gta-vi-will-be-nominated-for-game-of-the-year-before-anyone-can-read-a-review/",
-          "title": "Will GTA VI Win Game of the Year 2026? Nominations, Reviews and the November 17 Reveal",
-          "publisher": "stupidDOPE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6GNLAmKBa9m8ZmapdM6ERUDAJmGF7WkucG1o5nlUbNQ08ZLmo5E5X5dJR_7A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGN0uxQBcx383QNb9H5vu7pBTjxharPefdQofKSoLyPFQIgX7_-PXhCDR2Yh4"
         }
       ]
     }
