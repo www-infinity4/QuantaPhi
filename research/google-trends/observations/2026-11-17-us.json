@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T08:31:19.919025Z",
+  "checked_at": "2026-11-17T09:01:42.571592Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "sam claflin",
+      "query": "hailey bieber",
       "approx_searches": "100+",
-      "published_at": "2026-11-17T08:10:00Z",
+      "published_at": "2026-11-17T08:40:00Z",
       "related_news_urls": [
-        "https://frockflicks.com/mcm-sam-claflin/",
-        "https://www.martincid.com/people/sam-claflin/",
-        "https://www.yahoo.com/entertainment/articles/ebenezer-ending-sam-claflin-meant-230600468.html"
+        "https://hypebae.com/2026/11/rhode-hailey-bieber-birthday-navy-capsule-collection-windbreaker-where-to-buy",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailey-bieber-drops-navy-blue-171523787.html",
+        "https://www.standard.co.uk/shopping/esbest/fashion/hailey-bieber-rhode-clothing-b1305101.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyFf8rxiI4dcbb8F9pwOzPHfvuWmHNgqMOBx7_2chh15VSb2c3Avyu65r_cwA",
-      "image_credit": "Frock Flicks",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeIwu9UnFNkQOYIA_hz3GBgPUZS710JoMkyifb9YMN9P-FzL4cJogNI_se0i0",
+      "image_credit": "Hypebae",
       "news": [
         {
-          "url": "https://frockflicks.com/mcm-sam-claflin/",
-          "title": "MCM: Sam Claflin",
-          "publisher": "Frock Flicks",
+          "url": "https://hypebae.com/2026/11/rhode-hailey-bieber-birthday-navy-capsule-collection-windbreaker-where-to-buy",
+          "title": "Rhode Is Celebrating Hailey Bieber's Birthday With Its First Piece of Clothing",
+          "publisher": "Hypebae",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyFf8rxiI4dcbb8F9pwOzPHfvuWmHNgqMOBx7_2chh15VSb2c3Avyu65r_cwA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeIwu9UnFNkQOYIA_hz3GBgPUZS710JoMkyifb9YMN9P-FzL4cJogNI_se0i0"
         },
         {
-          "url": "https://www.martincid.com/people/sam-claflin/",
-          "title": "Sam Claflin, the actor who traded the heartthrob roles for damaged men",
-          "publisher": "Martin Cid Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyDPnfVfD-_JQkzGTkoiewNmHrLjSF_B_l8w4KnlnhyoYqtHVbJCy9aA3uaJo"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/articles/ebenezer-ending-sam-claflin-meant-230600468.html",
-          "title": "Ebenezer Ending: Sam Claflin On What It Meant To Have Johnny Depp’s Ebenezer Say ‘Merry Christmas’",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailey-bieber-drops-navy-blue-171523787.html",
+          "title": "Hailey Bieber drops navy blue Rhode collection for 30th birthday",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0wGfw5HF3Xi10t5JvmtLY6Gyh2KXLf3FStUxf56WN6yQxBKusJxKPeheeduY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFHfH-UyQPwkrF6e_exL_EKg-nRih-mA0uOn9wqelljuUyhAUK1-TtoDo-9gE"
+        },
+        {
+          "url": "https://www.standard.co.uk/shopping/esbest/fashion/hailey-bieber-rhode-clothing-b1305101.html",
+          "title": "Hailey Bieber takes Rhode beyond beauty with its first fashion launch",
+          "publisher": "London Evening Standard",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaPnXkS9JOfPofoTIaTwdRd5lrgXdAMWRbOQhJzDaI8Bi6Mp9DuWZ82zwtaSw"
+        }
+      ]
+    },
+    {
+      "query": "bangladesh vs south africa",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T08:40:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/sa-vs-ban-1st-test-litton-das-i-always-see-crisis-situations-as-opportunities-1562885",
+        "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
+        "https://www.cricbuzz.com/cricket-news/140922/alarms-ring-for-bangladesh-then-south-africa-on-noisy-first-day-at-wanderers-cricbuzzcom"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUg-oKPyrTuyRCl4DUoN8u0IWkxxGVItKWxZK0lxw_B5rldJ5EkBAeX96b7j8",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/sa-vs-ban-1st-test-litton-das-i-always-see-crisis-situations-as-opportunities-1562885",
+          "title": "Litton: 'I always see crisis situations as opportunities'",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUg-oKPyrTuyRCl4DUoN8u0IWkxxGVItKWxZK0lxw_B5rldJ5EkBAeX96b7j8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/bangladesh-wins-toss-opts-bat-082837655.html",
+          "title": "Hridoy ton as Bangladesh reaches 327-6 on 1st day of 1st cricket test vs South Africa, Rabada 5-51",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG8S17SvnSjxok6LESFx9wlpodE-Owb4Oh516cG2-50sY8NNo_zYxV9Qwl7tY"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140922/alarms-ring-for-bangladesh-then-south-africa-on-noisy-first-day-at-wanderers-cricbuzzcom",
+          "title": "Alarms ring for Bangladesh, then South Africa on noisy first day at Wanderers",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoX4oFHUcnkBg7fzpxSc8_iYQd2J4-Q9Q3VUA_u0aqNx9tI4r40ZyXBcdDi3w"
+        }
+      ]
+    },
+    {
+      "query": "owala coca-cola",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T08:30:00Z",
+      "related_news_urls": [
+        "https://www.allrecipes.com/owala-x-coca-cola-collab-2026-12258789",
+        "https://www.goodhousekeeping.com/what-to-buy/kitchen-products/a74442856/owala-diet-coke-collaboration/",
+        "https://www.nj.com/shopping-deals/2026/11/owala-and-coca-colas-new-amazon-exclusive-tumblers-are-made-for-soda-lovers.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6LEdL_6CIFW1g_Ek6SBqysp3lbX1-xjMRLh5GlI8Nz-OSBukZxHB8M00_bB4",
+      "image_credit": "Allrecipes",
+      "news": [
+        {
+          "url": "https://www.allrecipes.com/owala-x-coca-cola-collab-2026-12258789",
+          "title": "Coca-Cola Just Dropped a Brand-New Line—and We Want Everything",
+          "publisher": "Allrecipes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6LEdL_6CIFW1g_Ek6SBqysp3lbX1-xjMRLh5GlI8Nz-OSBukZxHB8M00_bB4"
+        },
+        {
+          "url": "https://www.goodhousekeeping.com/what-to-buy/kitchen-products/a74442856/owala-diet-coke-collaboration/",
+          "title": "Owala Just Brought Back Its Viral ‘Diet Coke’ Collection—And We Know It's Going to Sell Out Again",
+          "publisher": "Good Housekeeping",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzhVaelHewc82ISHsOfIqt-xtZg8RlkdR9x9pH-gmiVBzo9EznAsDqgVmrml8"
+        },
+        {
+          "url": "https://www.nj.com/shopping-deals/2026/11/owala-and-coca-colas-new-amazon-exclusive-tumblers-are-made-for-soda-lovers.html",
+          "title": "Owala and Coca-Cola’s new Amazon-exclusive tumblers are made for soda lovers",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHvqYLzt9QFNbdpGGQHDuWQQ8GfPthZAoidSywPi18-U7vCHkFGywxLTxAg1U"
+        }
+      ]
+    },
+    {
+      "query": "government jobs",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T08:20:00Z",
+      "related_news_urls": [
+        "https://www.govexec.com/technology/2026/11/federal-tech-fellows-expedited-path-permanent-jobs-new-bill/417257/",
+        "https://www.meritalk.com/articles/experts-urge-faster-hiring-and-stronger-support-for-government-tech-talent/",
+        "https://www.quiverquant.com/news/Representative+James+R.+Walkinshaw+introduces+H.R.+10960%3A+Keep+Federal+Tech+Talent+Act"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWP3zUNUAAPKT1FG8TwoIyMCteq-TS12IbODpPOJEkRsWF-YNOv9H7JFBZ1Os",
+      "image_credit": "Government Executive",
+      "news": [
+        {
+          "url": "https://www.govexec.com/technology/2026/11/federal-tech-fellows-expedited-path-permanent-jobs-new-bill/417257/",
+          "title": "Federal tech fellows would get an expedited path to permanent jobs under a new bill",
+          "publisher": "Government Executive",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWP3zUNUAAPKT1FG8TwoIyMCteq-TS12IbODpPOJEkRsWF-YNOv9H7JFBZ1Os"
+        },
+        {
+          "url": "https://www.meritalk.com/articles/experts-urge-faster-hiring-and-stronger-support-for-government-tech-talent/",
+          "title": "Experts Urge Faster Hiring and Stronger Support for Government Tech Talent",
+          "publisher": "MeriTalk",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCir_f92LDZCKI9Nvi5BxEZWpN3Gads3xxKrfMcHcBQmUk2E-CKC2hgJx5SOo"
+        },
+        {
+          "url": "https://www.quiverquant.com/news/Representative+James+R.+Walkinshaw+introduces+H.R.+10960%3A+Keep+Federal+Tech+Talent+Act",
+          "title": "Representative James R. Walkinshaw introduces H.R. 10960: Keep Federal Tech Talent Act",
+          "publisher": "Quiver Quantitative",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtQytFjV0vNH2LzoOOeCAenbnYP-PK300lrIcsf88RgQQlJrgJtA7ZWtX2W14"
         }
       ]
     },
@@ -73,6 +178,41 @@
           "publisher": "EURweb",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrToVPgrtxcC3KDUlA71MeHsAmKPldS49lQFOktZjAbI1P9AYVf76xFxdbsnA"
+        }
+      ]
+    },
+    {
+      "query": "sam claflin",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T08:10:00Z",
+      "related_news_urls": [
+        "https://frockflicks.com/mcm-sam-claflin/",
+        "https://www.yahoo.com/entertainment/articles/ebenezer-ending-sam-claflin-meant-230600468.html",
+        "https://www.cinemablend.com/movies/nothing-prepared-sam-claflin-seeing-johnny-depp-ebenezer-nothing"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyFf8rxiI4dcbb8F9pwOzPHfvuWmHNgqMOBx7_2chh15VSb2c3Avyu65r_cwA",
+      "image_credit": "Frock Flicks",
+      "news": [
+        {
+          "url": "https://frockflicks.com/mcm-sam-claflin/",
+          "title": "MCM: Sam Claflin",
+          "publisher": "Frock Flicks",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyFf8rxiI4dcbb8F9pwOzPHfvuWmHNgqMOBx7_2chh15VSb2c3Avyu65r_cwA"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/ebenezer-ending-sam-claflin-meant-230600468.html",
+          "title": "Ebenezer Ending: Sam Claflin On What It Meant To Have Johnny Depp’s Ebenezer Say ‘Merry Christmas’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0wGfw5HF3Xi10t5JvmtLY6Gyh2KXLf3FStUxf56WN6yQxBKusJxKPeheeduY"
+        },
+        {
+          "url": "https://www.cinemablend.com/movies/nothing-prepared-sam-claflin-seeing-johnny-depp-ebenezer-nothing",
+          "title": "Nothing Prepared Sam Claflin For Seeing What Johnny Depp Would Look Like In Ebenezer, NOTHING",
+          "publisher": "Cinemablend",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSK690vS-2kP9geXXh-tMGhOF_Ct0jmzzm4MBHf2YOFyL7dSALbo2_oodkWMqo"
         }
       ]
     },
@@ -151,26 +291,26 @@
       "approx_searches": "100+",
       "published_at": "2026-11-17T08:00:00Z",
       "related_news_urls": [
-        "https://www.tcpalm.com/videos/news/local/indian-river-county/2026/11/13/drone-footage-shows-indian-river-mall-amc-theater-after-closure-nov-2026/92764168007/",
         "https://www.the-sun.com/money/17313556/amc-theaters-closing-down-mall-florida/",
+        "https://www.tcpalm.com/videos/news/local/indian-river-county/2026/11/13/drone-footage-shows-indian-river-mall-amc-theater-after-closure-nov-2026/92764168007/",
         "https://www.sebastiandaily.com/business/amc-closes-indian-river-24-at-vero-beach-mall-after-nov-8-96700/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1bRR-W13l-4YPLT88m21vuCcuY3LlgDS2kwQb-hTAFTLCD0r6dfwEokQr4U4",
-      "image_credit": "Treasure Coast News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN311U2rPs7fH7ZNPKrIvjKCK_igXNn4J7nh_6hJvmSzY5igubrAFGQNbU8E4",
+      "image_credit": "The Sun",
       "news": [
-        {
-          "url": "https://www.tcpalm.com/videos/news/local/indian-river-county/2026/11/13/drone-footage-shows-indian-river-mall-amc-theater-after-closure-nov-2026/92764168007/",
-          "title": "Drone footage shows Indian River Mall AMC theater after closure",
-          "publisher": "Treasure Coast News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1bRR-W13l-4YPLT88m21vuCcuY3LlgDS2kwQb-hTAFTLCD0r6dfwEokQr4U4"
-        },
         {
           "url": "https://www.the-sun.com/money/17313556/amc-theaters-closing-down-mall-florida/",
           "title": "AMC Theater location shuts all 14 screens after 30 years - demolition already underway for new outdoor mall",
           "publisher": "The Sun",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN311U2rPs7fH7ZNPKrIvjKCK_igXNn4J7nh_6hJvmSzY5igubrAFGQNbU8E4"
+        },
+        {
+          "url": "https://www.tcpalm.com/videos/news/local/indian-river-county/2026/11/13/drone-footage-shows-indian-river-mall-amc-theater-after-closure-nov-2026/92764168007/",
+          "title": "Drone footage shows Indian River Mall AMC theater after closure",
+          "publisher": "Treasure Coast News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1bRR-W13l-4YPLT88m21vuCcuY3LlgDS2kwQb-hTAFTLCD0r6dfwEokQr4U4"
         },
         {
           "url": "https://www.sebastiandaily.com/business/amc-closes-indian-river-24-at-vero-beach-mall-after-nov-8-96700/",
@@ -213,146 +353,6 @@
           "publisher": "NBC News",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwR8_mXYIi3b-hUDFgzxyidbYgJY29PkTLHMKapB51MyLiIcX7PZM3jxJXbsU"
-        }
-      ]
-    },
-    {
-      "query": "tahiti",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T07:20:00Z",
-      "related_news_urls": [
-        "https://la1ere.franceinfo.fr/polynesie/epidemie-de-grippe-le-service-de-reanimation-en-polynesie-francaise-sature-face-a-l-arrivee-d-un-virus-precoce-1757355.html",
-        "https://www.tntvnews.pf/polynesie/sante/grippe-lepidemie-sintensifie-les-cas-de-varicelle-egalement-en-hausse-a-tahiti/",
-        "https://www.radio1.pf/deja-155-cas-de-grippe-55-hospitalisations-et-3-morts/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRWlQ2lQBTNaVitVLfWAqyu12x9tpI1bl0tIKBVIC_x81x7jDI2urAvPTuvM4",
-      "image_credit": "Outre-mer La 1ère",
-      "news": [
-        {
-          "url": "https://la1ere.franceinfo.fr/polynesie/epidemie-de-grippe-le-service-de-reanimation-en-polynesie-francaise-sature-face-a-l-arrivee-d-un-virus-precoce-1757355.html",
-          "title": "Épidémie de grippe : le service de réanimation en Polynésie française sature face à l'arrivée précoce du virus d'un virus précoce",
-          "publisher": "Outre-mer La 1ère",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRWlQ2lQBTNaVitVLfWAqyu12x9tpI1bl0tIKBVIC_x81x7jDI2urAvPTuvM4"
-        },
-        {
-          "url": "https://www.tntvnews.pf/polynesie/sante/grippe-lepidemie-sintensifie-les-cas-de-varicelle-egalement-en-hausse-a-tahiti/",
-          "title": "Grippe : l’épidémie s’intensifie, les cas de varicelle également en hausse à Tahiti",
-          "publisher": "TNTV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIILqk7UYRt_sygetItgf2gHeUB0gB2N3FqnUs8ca6pgy6OnGpirJr0UgYQ48"
-        },
-        {
-          "url": "https://www.radio1.pf/deja-155-cas-de-grippe-55-hospitalisations-et-3-morts/",
-          "title": "Déjà 155 cas de grippe, 55 hospitalisations et 3 morts",
-          "publisher": "Radio1 Tahiti",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJfhtVR4L3ive1j_hm7l8IAkQKoyr5iQ44CwU7cyL0vByvq9nl5yhACf9C_yM"
-        }
-      ]
-    },
-    {
-      "query": "los angeles weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T07:10:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-11-16/socals-first-atmospheric-river-storm-of-season-arrives-this-week",
-        "https://ktla.com/news/california/atmospheric-river-takes-aim-southern-california-heavy-rain-coastal-flooding-and-mountain-snow/",
-        "https://www.yahoo.com/news/weather-news/articles/california-faces-6-storms-black-015525927.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbAVGigiRECFQxZdaej4lNfgzB3Rwq5AdLUac09tEYI0I9HGx5hAOhEW8D0QY",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-16/socals-first-atmospheric-river-storm-of-season-arrives-this-week",
-          "title": "SoCal’s first atmospheric river storm of the season arrives this week: Here’s what it will bring",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbAVGigiRECFQxZdaej4lNfgzB3Rwq5AdLUac09tEYI0I9HGx5hAOhEW8D0QY"
-        },
-        {
-          "url": "https://ktla.com/news/california/atmospheric-river-takes-aim-southern-california-heavy-rain-coastal-flooding-and-mountain-snow/",
-          "title": "Atmospheric river takes aim at Southern California with heavy rain, coastal flooding and mountain snow",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX0O64jkf9UJmMJC3RP70wfAzXOv5GHBeV7-ETpxDwcfzg-vyoOMeQCRE-I0Y"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/california-faces-6-storms-black-015525927.html",
-          "title": "California faces 6 storms before Black Friday. The third could be the strongest",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRosAgC-fA_BPdDl9_H8pg0yguh1Rr8t9CPWiDfD9tlEq5MHa5_xotHlyhmBkE"
-        }
-      ]
-    },
-    {
-      "query": "fox news politics",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T07:00:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/opinions/2026/11/16/abdul-el-sayeds-victory-is-a-blow-to-the-politics-of-islamophobia",
-        "https://www.nybooks.com/online/2026/11/09/the-blue-wave-ii/",
-        "https://www.foxnews.com/opinion/americas-first-muslim-senator-exposes-political-blind-spot"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5v27ZEDBSuaasZjvqmT7Cc5muYSr9r1XJE62YKfdnvwJQvnEu_zonhhCCcd4",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/opinions/2026/11/16/abdul-el-sayeds-victory-is-a-blow-to-the-politics-of-islamophobia",
-          "title": "Abdul El-Sayed’s victory is a blow to the politics of Islamophobia",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5v27ZEDBSuaasZjvqmT7Cc5muYSr9r1XJE62YKfdnvwJQvnEu_zonhhCCcd4"
-        },
-        {
-          "url": "https://www.nybooks.com/online/2026/11/09/the-blue-wave-ii/",
-          "title": "The Blue Wave—II | Rozina Ali, Olivia Paschal, Lily Geismer",
-          "publisher": "The New York Review of Books",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG64Nlp0VH9WjxyJQrw2vH9YRGq44T-agISKfhHxdU-UZhXxsJ28yocxU2IWs"
-        },
-        {
-          "url": "https://www.foxnews.com/opinion/americas-first-muslim-senator-exposes-political-blind-spot",
-          "title": "America's first Muslim senator exposes a political blind spot",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtsLi-Ipv2pENqAIP3QBv6KY7vIv3f_OzIzarck0pf5f8HosX0BcLExs_d76k"
-        }
-      ]
-    },
-    {
-      "query": "axios",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T06:40:00Z",
-      "related_news_urls": [
-        "https://www.axios.com/2026/11/17/jim-jordan-house-gop-rules",
-        "https://www.politico.com/live-updates/2026/11/13/congress/house-gop-debates-disclipline-01164854",
-        "https://www.dispatch.com/story/opinion/columns/guest/2026/11/11/jim-jordan-sherrod-brown-ohio-senate-chuck-schumer/92707490007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK-x_YAfRN-fncDERe5pj5ce6FFC7z1xbiufIVcGUGLy8K9m83hKmteQq1eqE",
-      "image_credit": "Axios",
-      "news": [
-        {
-          "url": "https://www.axios.com/2026/11/17/jim-jordan-house-gop-rules",
-          "title": "Jordan inherits House GOP fight over punishing rebels",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK-x_YAfRN-fncDERe5pj5ce6FFC7z1xbiufIVcGUGLy8K9m83hKmteQq1eqE"
-        },
-        {
-          "url": "https://www.politico.com/live-updates/2026/11/13/congress/house-gop-debates-disclipline-01164854",
-          "title": "House Republicans push for new rules targeting maverick holdouts",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5VE2I6QQCU9Ld987sUWfNrNKa6ZbPVhUdB6yZPAdLyzBZOJwrlCj5IehaOoM"
-        },
-        {
-          "url": "https://www.dispatch.com/story/opinion/columns/guest/2026/11/11/jim-jordan-sherrod-brown-ohio-senate-chuck-schumer/92707490007/",
-          "title": "Jim Jordan has lesson for Sherrod Brown and other Democrats | Opinion",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1grnbz1AdUK_cb6Vt5k89NPxRj5XQWPkowNy97GgEA65-FgP_NPBVEblEx5U"
         }
       ]
     }
