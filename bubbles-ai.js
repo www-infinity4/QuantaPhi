@@ -1188,12 +1188,14 @@ const linkStatus=create('p','ba-muted','Connect this Bubbles session and show a 
 linkStatus.setAttribute('role','status');
 linkBubbles.hidden=embedded;linkStatus.hidden=embedded;
 const cloudDelete=create('button','ba-control','Erase wallet-synced Bubbles memory');cloudDelete.type='button';cloudDelete.hidden=!cloudChat;
+const backupAdvanced=create('details','ba-owner-help');
+backupAdvanced.append(create('summary','','Advanced backup controls'),cloudDelete);
 const clearChat=create('button','ba-control','Clear this view');clearChat.type='button';
 const importLabel=create('label','ba-privacy-label','Import ChatGPT or Gemini history (choose exported JSON)');
 const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
 importGPT.setAttribute('aria-label','Import ChatGPT conversations.json or Gemini Apps MyActivity.json from Google Takeout');
 const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Choose each ChatGPT conversations.json or Google Takeout Gemini Apps MyActivity.json file. Bubbles indexes only the records actually present in that export.');
-privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
+privacy.append(privacyLabel,cloudLabel,clearChat,backupAdvanced,importLabel,importGPT,importStatus);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
@@ -1399,7 +1401,16 @@ pairingCode.addEventListener('click',()=>pairingCode.select());
   catch{pairingCode.select();status.textContent='Select and copy the code manually.'}
  });
  pairingCard.append(pairingInstructions,pairingCode,pairingCopy);
- panel.append(header,...(chatGate?[chatConnectionSummary,chatGate]:[]),status,ownerMode,createOwnerCode,ownerCodeHelp,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
+panel.append(header,status,ownerMode,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
+if(!embedded){
+ const accounts=create('details','ba-owner-help');
+ const manageAccounts=create('a','ba-link','Account Connections');manageAccounts.href='/bubbles-accounts.html';
+ accounts.append(create('summary','','Accounts'),chatConnectionSummary,chatGate,manageAccounts);
+ accounts.addEventListener('toggle',()=>{if(accounts.open)void checkPanelGate();});
+ const pairing=create('details','ba-owner-help');
+ pairing.append(create('summary','','Pair a device'),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus);
+ tools.append(accounts,pairing);
+}
 if(nativeOverlay){
  // Owner pairing uses the same chat composer, never a separate paste form.
  ownerMode.textContent='Robot Brain not linked';
@@ -1422,8 +1433,7 @@ if(nativeOverlay){
  // One scrolling surface owns messages, pairing output and expanded options.
  // The composer and its visible feedback remain reachable at every scroll position.
  panel.insertBefore(chatScroll,header);
- chatScroll.append(ownerMode,linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus,recorderStatus,recorderStop,pairingCard,conversation,tools);
- if(chatGate)chatScroll.insertBefore(chatGate,ownerMode);
+ chatScroll.append(ownerMode,recorderStatus,recorderStop,pairingCard,conversation,tools);
  // Keep options accessible above long transcripts, within the same scroll surface.
  chatScroll.insertBefore(tools,conversation);
  composer.prepend(status);
@@ -1438,10 +1448,7 @@ if(nativeOverlay){
 if(!nativeOverlay&&!embedded){
  // Website and APK share one message/options scroll owner and a reachable composer.
  panel.insertBefore(chatScroll,conversation);
- chatScroll.append(ownerMode,linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,tools);
- // A full GitHub/Cloudflare sign-in card outside the thread can consume the
- // entire phone viewport and clip the permanent five-day approval control.
- if(chatGate)chatScroll.insertBefore(chatGate,ownerMode);
+ chatScroll.append(ownerMode,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,tools);
  composer.insertBefore(status,input);
 }
 if(embedded){
@@ -1466,14 +1473,7 @@ if(nativeOverlay&&!embedded){
   if(recordBLatestCapture)recordBController.update(recordBLatestCapture);
  }).catch(error=>{status.textContent='RecordB recorder controls unavailable: '+String(error.message||error).slice(0,120)});
 }
-// Pairing and owner recovery belong in ONE collapsible Options area, not in
-// the transcript or above a working, already connected conversation.
-// Moving the original controls preserves the existing verified handlers.
-if(!embedded){
- tools.append(create('h3','ba-section-heading','Connections & pairing'),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus);
-}
-// One big, visible button above the chat transcript on Android and mobile web.
-// It calls the real owner-authenticated five-day grant, not a fake UI toggle.
+// Settings keeps the existing owner-authenticated five-day grant.
 if(!embedded){
  const quick=create('section','ba-chatgpt-quick');
  quick.setAttribute('aria-label','ChatGPT Cloud Browser access');
@@ -1508,33 +1508,17 @@ if(!embedded){
   }finally{quickButton.disabled=false}
  };
  quickButton.addEventListener('click',()=>void grantBridge());
- const topButton=document.getElementById('bubblesChatGPTTopAccess');
  const revealVerifiedOwnerGPT=()=>{
   // An event or query flag is NOT a verified owner session. The backend
   // independently enforces owner credentials and active consent on POST.
   void verifiedOwnerHeaders().then(headers=>{
    if(!headers?.Authorization)return;
    quick.hidden=false;quick.style.display='';
-   const top=topButton?.closest?.('.bubbles-chatgpt-entry');
-   if(top){top.hidden=false;top.style.display='';}
   }).catch(()=>{});
  };
  window.addEventListener('bubbles:owner-ready',revealVerifiedOwnerGPT);
  if(window.QuantaBrainOwner?.ready)void window.QuantaBrainOwner.ready.then(headers=>{
   if(headers?.Authorization)revealVerifiedOwnerGPT();
- });
- if(topButton){
-  topButton.addEventListener('click',()=>{
-   toggle(true);
-   // The account-approval button must not pop the Android keyboard.
-   input.blur();
-   // The original page button uses the real authenticated grant directly.
-   void grantBridge();
-  });
- }
- // The landing-page button uses this same real operation.
- document.addEventListener('bubbles:chatgpt-approve',()=>{
-  toggle(true);void grantBridge();
  });
  // Mount once on first-party Bubbles so a previously approved bridge polls
  // even when the owner has not opened advanced browser controls.
@@ -2228,10 +2212,12 @@ cloudToggle.addEventListener('change',async()=>{
 clearChat.textContent=embedded?'New card chat':'Start new chat';
 clearChat.addEventListener('click',()=>void startConversation());
 cloudDelete.addEventListener('click',async()=>{
- if(!cloudChat||!confirm('Erase the extra Bubbles transcript stored under your verified wallet? This will not erase the separate Robot Brain job records.'))return;
+ if(!cloudChat||cloudDelete.disabled||window.prompt('Type ERASE BACKUP to erase your optional Bubbles transcript backup.')!=='ERASE BACKUP')return;
+ cloudDelete.disabled=true;
  try{await longMemory.clear({cloudToo:true});cloudChat=false;cloudToggle.checked=false;cloudDelete.hidden=true;
   save(CLOUD_MEMORY_KEY,false);memoryHint.textContent='Optional wallet-scoped transcript erased. Owner Brain archive is unchanged.'}
  catch(error){memoryHint.textContent='Could not erase wallet archive: '+String(error.message||error)}
+ finally{cloudDelete.disabled=false;}
 });
 let panelWasOpened=false;
 function toggle(open){
@@ -2244,7 +2230,6 @@ function toggle(open){
  panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
  if(embedded)window.parent.postMessage({type:'quantaphi:bubbles:size',open:showing},'*');
  if(showing){
-  if(chatGate)void checkPanelGate();
   if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. '+(embedded?'Use my name before speaking, or type below.':'Speak naturally or type below.')+' Say stop listening to mute.','ai',true);greeted=true}
   if(!nativeOverlay && window.innerWidth>600)input.focus();
  }
@@ -4093,7 +4078,7 @@ tools.append(ownerDecisionDrawer);
 // 2026 button viewer. Keep the existing Notes/settings controls and all their
 // event listeners: move DOM nodes, never replace them or recreate wallet state.
 // The single existing Email setup link stays in the chat Notes bar.
-const toolsViewerButton=create('button','ba-control ba-tools-viewer-launch','Open Notes & tools');
+const toolsViewerButton=create('button','ba-control ba-tools-viewer-launch','Open Settings');
 toolsViewerButton.type='button';
 toolsViewerButton.setAttribute('aria-haspopup','dialog');
 toolsViewerButton.setAttribute('aria-expanded','false');
@@ -4101,12 +4086,12 @@ const toolsViewer=create('section','ba-tools-viewer');
 toolsViewer.hidden=true;
 toolsViewer.setAttribute('role','dialog');
 toolsViewer.setAttribute('aria-modal','true');
-toolsViewer.setAttribute('aria-label','Bubbles notes and tools viewer');
+toolsViewer.setAttribute('aria-label','Bubbles Settings');
 toolsViewer.setAttribute('tabindex','-1');
 const viewerHeader=create('header','ba-tools-viewer-header');
-const viewerTitle=create('h2','','Notes & tools');
-const viewerClose=create('button','ba-tools-viewer-close','×');
-viewerClose.type='button';viewerClose.setAttribute('aria-label','Close Notes and tools viewer');
+const viewerTitle=create('h2','','Settings');
+const viewerClose=create('button','ba-control ba-tools-viewer-close','Back to chat');
+viewerClose.type='button';
 viewerHeader.append(viewerTitle,viewerClose);
 const viewerContent=create('div','ba-tools-viewer-content');
 // All existing Notes, Infinity, Omni, Quant Search, settings, checkboxes,
@@ -4502,8 +4487,8 @@ const siteScript=[...(document.querySelectorAll?.('script[src]')||[])].find(el=>
  {try{return new URL(el.src,location.href).pathname==='/bubbles-ai.js'}catch{return false}});
 const siteRevision=siteScript?new URL(siteScript.src,location.href).searchParams.get('v')||'':'';
 let siteVersionChecking=false,lastSiteVersionCheck=0;
-async function checkForSiteUpdate(){
- if(embedded||siteVersionChecking||Date.now()-lastSiteVersionCheck<25000)return false;
+async function checkForSiteUpdate({manual=false}={}){
+ if(embedded||siteVersionChecking||(!manual&&Date.now()-lastSiteVersionCheck<25000))return false;
  siteVersionChecking=true;lastSiteVersionCheck=Date.now();
  try{
   const target=new URL('/bubbles.html',location.origin);
@@ -4528,6 +4513,7 @@ async function checkForSiteUpdate(){
   // With History disabled, existing turns exist only in memory. A silent
   // update must not destroy them, even if the composer itself is empty.
   if(!keepChat&&messages.length)return false;
+  if(manual&&!window.confirm('Reload Bubbles to apply the verified website update?'))return false;
   if(keepChat&&!saveThread())return false;
   // Without the one-use resume marker, the next page opens a different chat.
   // Browser privacy settings can reject sessionStorage writes: fail closed.

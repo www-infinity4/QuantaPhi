@@ -11,7 +11,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/bubbles-pwa-oOo.svg">
   <link rel="apple-touch-icon" href="/assets/bubbles-pwa-192.png">
   <meta name="theme-color" content="#5f259f">
-  <link rel="stylesheet" href="/bubbles-ai.css?v=20261101-activity-contrast2">
+  <link rel="stylesheet" href="/bubbles-ai.css?v=20261114-settings2">
 <link rel="stylesheet" href="/bubbles-live-iteration-feed.css?v=20261106-inthread-iterations2">
   <style>
     html{min-height:100%;background:#f7f4f0}
@@ -50,10 +50,10 @@
   <script defer src="/bubbles-voice-gate.js?v=20261012-brain2"></script>
   <script defer src="/bubbles-brain-actions.js?v=20261025-speech-guard1"></script>
   <script defer src="/bubbles-memory.js?v=20261020-synapse1"></script>
-  <script defer src="/bubbles-ai.js?v=20261108-native-bubbles3"></script>
+  <script defer src="/bubbles-ai.js?v=20261114-settings2"></script>
 <script type="module" src="/bubbles-live-iteration-feed.mjs?v=20261107-runner-steps2"></script>
   <script defer src="/bubbles-owner-diagnostic.js?v=20261026-owner-health2"></script>
-  <script defer src="/bubbles-pwa.js?v=20261019-chrome1"></script>
+  <script defer src="/bubbles-pwa.js?v=20261114-settings2"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1">
 <link rel="stylesheet" href="/bubbles-native-chat.css?v=20261015-readable29">
   <link rel="stylesheet" href="/bubbles-unified.css?v=20261105-owner-verified1">  <link rel="stylesheet" href="/bubbles-product.css?v=20261019-product1">
@@ -78,11 +78,6 @@
         </details>
       </div>
     </nav>
-
-    <section class="bubbles-chatgpt-entry" aria-label="ChatGPT access to Bubbles">
-      <button type="button" id="bubblesChatGPTTopAccess">Allow ChatGPT to use Bubbles · 5 days</button>
-      <p>One owner-approved connection for ChatGPT and Bubbles Cloud Browser. You can revoke it in Bubbles.</p>
-    </section>
 
     <section class="bubbles-intro" aria-labelledby="bubbles-title">
       <div class="bubbles-art" role="img" aria-label="Bubbles character with iridescent spheres, shown as an original concept illustration"></div>
@@ -117,6 +112,8 @@
       <div><h2 id="bubbles-install-title">Install Bubbles in Chrome</h2><p>Add Bubbles to your home screen. Chrome will offer installation where supported; otherwise use its three-dot menu.</p></div>
       <button id="bubblesInstallChrome" type="button">Install Bubbles in Chrome</button>
       <p id="bubblesInstallStatus" role="status" aria-live="polite">Open this page in Chrome. Tap Install, or use ⋮ → Install app / Add to Home screen.</p>
+      <button id="bubblesCheckUpdate" type="button">Check for updates</button>
+      <p id="bubblesUpdateStatus" role="status" aria-live="polite"></p>
       <a class="bubbles-install-link" href="/bubbles.html">← Main Bubbles page</a>
     </section>
     <details class="bubbles-development">

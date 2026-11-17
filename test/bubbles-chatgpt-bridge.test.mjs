@@ -90,22 +90,19 @@ test('UI has a distinct five-day ChatGPT control; browser worker enforces owner 
  assert.doesNotMatch(ui,/localStorage\.setItem\(.*Authorization/);
 });
 
-test('Android chat exposes approval above scroll while browser content stays inside it',()=>{
+test('Android keeps the optional owner grant in Settings and the browser in the chat scroll area',()=>{
  const ai=fs.readFileSync('bubbles-ai.js','utf8');
  const browser=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
  const css=fs.readFileSync('bubbles-mobile-access.css','utf8');
  for(const pageName of ['bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const page=fs.readFileSync(pageName,'utf8');
-  assert.match(page,/id="bubblesChatGPTTopAccess"/);
-  assert.ok(page.indexOf('id="bubblesChatGPTTopAccess"')<page.indexOf('class="bubbles-intro"'),
-   pageName+' must show the owner approval before the big intro artwork');
+  assert.doesNotMatch(page,/id="bubblesChatGPTTopAccess"/);
   assert.match(page,/bubbles-mobile-access.css/);
  }
  assert.ok(ai.includes('chatScroll.prepend(browserHome)'), 'Cloud Browser must mount inside the chat scroll area');
  assert.ok(ai.includes('tools.append(quick)'), 'the private owner grant remains accessible in Options without blocking chat');
- assert.ok(ai.includes('if(chatGate)chatScroll.insertBefore(chatGate,ownerMode)'),
-  'both web and Android account sign-in gates must scroll instead of clipping the approval');
- assert.ok(ai.includes('input.blur();'), 'opening approval must not force the Android keyboard');
+ assert.ok(ai.includes("accounts.append(create('summary','','Accounts'),chatConnectionSummary,chatGate,manageAccounts)"));
+ assert.ok(ai.includes("const toolsViewerButton=create('button','ba-control ba-tools-viewer-launch','Open Settings')"));
  assert.ok(ai.includes('module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders})'));
  assert.ok(!ai.includes('module.mount({host:panel,ownerHeaders:verifiedOwnerHeaders})'));
  assert.match(browser,/wrap.append\(bridge,advanced\)/);

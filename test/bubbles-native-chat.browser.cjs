@@ -36,6 +36,13 @@ test('Android chat: reachable conversation and compact composer, visible pairing
   });
   await page.goto(`http://127.0.0.1:${server.address().port}/bubbles.html?nativeOverlay=1`);
   await page.waitForFunction(()=>window.QuantaBubbles?.isNativeOverlay);
+  // A new WebView starts a fresh chat. Reopen the migrated transcript before
+  // testing scrolling with real conversation overflow.
+  const firstSavedTurn=page.locator('.ba-message').filter({hasText:/^Message 0 Readable conversation/});
+  assert.equal(await firstSavedTurn.count(),0);
+  await page.getByText('Chats',{exact:true}).click();
+  await page.getByRole('button',{name:/^Earlier Bubbles history/}).click();
+  await firstSavedTurn.waitFor({state:'attached'});
   const field=page.getByRole('textbox',{name:'Message Bubbles',exact:true});
   const send=page.getByRole('button',{name:'Send',exact:true});
   const metrics=()=>page.evaluate(()=>{

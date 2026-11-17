@@ -8,15 +8,20 @@ const chat = fs.readFileSync('bubbles-ai.js','utf8');
 const browser = fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
 const worker = fs.readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8');
 
-test('public Bubbles entry and chat handoff buttons stay hidden until verified owner',()=>{
- assert.match(page,/class="bubbles-chatgpt-entry"[^>]*hidden style="display:none"/);
- assert.match(page,/\.bubbles-chatgpt-entry\[hidden\]/);
+test('the Settings ChatGPT grant stays hidden until owner authentication',()=>{
+ assert.doesNotMatch(page,/class="bubbles-chatgpt-entry"|id="bubblesChatGPTTopAccess"/);
+ assert.ok(chat.includes('tools.append(quick)'));
+ assert.ok(chat.includes('viewerContent.append(child)'));
  assert.ok(chat.includes("quick.hidden=true;quick.style.display='none';"));
  assert.ok(chat.includes("window.addEventListener('bubbles:owner-ready',revealVerifiedOwnerGPT)"));
  assert.ok(chat.includes('if(headers?.Authorization)revealVerifiedOwnerGPT();'));
- assert.ok(chat.includes("top.hidden=false;top.style.display='';"));
  assert.ok(chat.includes("void verifiedOwnerHeaders().then(headers=>{"));
- assert.ok(chat.includes("if(!headers?.Authorization)return;"));
+ assert.match(chat,/if\(!headers\?\.Authorization\)return;\s*quick\.hidden=false/);
+});
+
+test('the existing pairing controls stay under one Settings section',()=>{
+ assert.match(chat,/pairing\.append\(create\('summary','','Pair a device'\),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus\)/);
+ assert.doesNotMatch(chat,/tools\.append\([^\n]*\blinkBubbles\b/);
 });
 
 test('cloud-browser GPT grant stays hidden while owner is unverified',()=>{

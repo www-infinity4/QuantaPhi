@@ -72,13 +72,14 @@ test('APK loads the current live website, not an HTML build pinned to the APK ve
 });
 
 
-async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null,saveFails=false,historyDisabled=false,activeMessages=0,markerFails=false,speaking=false,voiceStarting=false,voiceEnabled=false,nativeRecordingActive=false}={}){
+async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null,saveFails=false,historyDisabled=false,activeMessages=0,markerFails=false,speaking=false,voiceStarting=false,voiceEnabled=false,nativeRecordingActive=false,manual=false,confirm=true}={}){
  const begin=site.indexOf('let siteVersionChecking=false,lastSiteVersionCheck=0;');
  const end=site.indexOf('window.QuantaBubbles={',begin);
  assert.ok(begin>0&&end>begin,'actual first-party updater is present');
  const input={value:draft},noteText={value:noteDraft},workText={value:workDraft},events=[];
  const scope=vm.createContext({
   embedded:false,Date:{now:()=>60000},URL,siteRevision:'previous',
+  window:{confirm:()=>{events.push('confirmation');return confirm;}},
   location:{origin:'https://quantaphi.org',reload:()=>events.push('reload')},
   bubblesFetch:async()=>{
    if(lateDraft!==null)input.value=lateDraft;
@@ -96,7 +97,7 @@ async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',pho
   UPDATE_RELOAD_THREAD:'site-update-reload'
  });
  vm.runInContext(site.slice(begin,end),scope);
- const result=await vm.runInContext('checkForSiteUpdate()',scope);
+ const result=await vm.runInContext('checkForSiteUpdate({manual:'+manual+'})',scope);
  return {result,events};
 }
 
@@ -116,6 +117,14 @@ test('revision updater never reloads over unsent Android composer text or photos
   assert.equal(result,false,'reload must defer while the user has unsent content');
   assert.deepEqual(events,[],'no reload or update marker may be written');
  }
+});
+test('manual Chrome updates confirm before saving and leave an unsent draft in place',async()=>{
+ const cancelled=await simulateSiteRevisionCheck({manual:true,confirm:false});
+ assert.deepEqual(cancelled,{result:false,events:['confirmation']});
+ const typed=await simulateSiteRevisionCheck({manual:true,lateDraft:'still typing'});
+ assert.deepEqual(typed,{result:false,events:[]});
+ const approved=await simulateSiteRevisionCheck({manual:true});
+ assert.deepEqual(approved,{result:true,events:['confirmation','saved','marker:site-update-reload:1','reload']});
 });
 
 test('revision updater still reloads safely once composer and photos are empty',async()=>{

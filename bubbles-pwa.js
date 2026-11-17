@@ -9,6 +9,8 @@
     new URLSearchParams(location.search).get('embed') === '1';
   if (nativeApp) {
     installButton.hidden = true;
+    const updateButton=document.querySelector('#bubblesCheckUpdate');
+    if(updateButton)updateButton.hidden=true;
     status.textContent = 'Open this page in Chrome to install the web app.';
     return;
   }
@@ -68,5 +70,22 @@
   window.addEventListener('appinstalled', () => {
     installButton.hidden = true;
     status.textContent = 'Bubbles is installed in Chrome.';
+  });
+  const updateButton=document.querySelector('#bubblesCheckUpdate');
+  const updateStatus=document.querySelector('#bubblesUpdateStatus');
+  if(!updateButton||!updateStatus)return;
+  updateButton.addEventListener('click',async()=>{
+    updateButton.disabled=true;
+    updateStatus.textContent='Checking for a Bubbles update…';
+    try{
+      const registration=await navigator.serviceWorker?.getRegistration('/');
+      await registration?.update();
+      const reloaded=await window.QuantaBubbles?.checkForSiteUpdate({manual:true});
+      if(!reloaded)updateStatus.textContent='No update applied. Updates wait while a draft or recording is open.';
+    }catch{
+      updateStatus.textContent='Could not verify the Bubbles update. Try again.';
+    }finally{
+      updateButton.disabled=false;
+    }
   });
 })();

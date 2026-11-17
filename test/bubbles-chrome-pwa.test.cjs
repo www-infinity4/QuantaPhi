@@ -25,6 +25,25 @@ test('Chrome app uses existing QuantaPhi origin with stable app identity', () =>
   assert.match(installer,/window\.matchMedia\('\(display-mode: standalone\)'\)/);
 });
 
+test('Chrome update checks use the existing draft-safe revision updater', async () => {
+ const vm=require('node:vm');
+ const callbacks=new Map(),updates=[];
+ const install={addEventListener(){}};
+ const update={addEventListener(event,handler){callbacks.set(event,handler);}};
+ const message={};
+ const elements={'#bubblesInstallChrome':install,'#bubblesInstallStatus':{},
+  '#bubblesCheckUpdate':update,'#bubblesUpdateStatus':message};
+ const navigator={userAgent:'Chrome',serviceWorker:{getRegistration:async()=>({update:async()=>updates.push('worker')})}};
+ const window={navigator,matchMedia:()=>({matches:true}),addEventListener(){},
+  QuantaBubbles:{checkForSiteUpdate:async options=>{updates.push(JSON.stringify(options));return false;}}};
+ vm.runInNewContext(installer,{navigator,window,location:{search:''},URLSearchParams,document:{querySelector:s=>elements[s]}});
+ assert.equal(typeof callbacks.get('click'),'function');
+ await callbacks.get('click')();
+ assert.deepEqual(updates,['worker','{"manual":true}']);
+ assert.match(message.textContent,/No update applied/);
+ assert.equal(update.disabled,false);
+});
+
 test('both Android Chrome icon sizes exist as genuine PNGs and decompress', () => {
  for(const n of [192,512]) {
   const buf=fs.readFileSync('assets/bubbles-pwa-'+n+'.png');

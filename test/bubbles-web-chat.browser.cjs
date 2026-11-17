@@ -52,7 +52,7 @@ test('website chat scrolls without hiding composer and pairing requests bypass A
  }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}
 });
 
-test('real inline chat sign-in settles at phone and desktop widths without granting provider access',async t=>{
+test('Settings sign-in settles at phone and desktop widths without granting provider access',async t=>{
  const server=http.createServer((req,res)=>{
   const path=new URL(req.url,'http://localhost').pathname;
   if(!/^\/[a-zA-Z0-9.-]+$/.test(path)||!fs.existsSync('.'+path)){res.writeHead(404);return res.end();}
@@ -62,7 +62,7 @@ test('real inline chat sign-in settles at phone and desktop widths without grant
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
  const browser=await chromium.launch({headless:true});
  try{
-  for(const [width,walletVerified] of [[360,false],[1280,false],[360,true]]){
+  for(const [width,walletVerified] of [[320,false],[360,false],[393,false],[720,false],[360,true]]){
    await t.test(width+'px '+(walletVerified?'verified wallet':'missing wallet'),async()=>{
     const page=await browser.newPage({viewport:{width,height:760},isMobile:width===360,hasTouch:width===360});
     let oauthStarts=0;
@@ -82,6 +82,21 @@ test('real inline chat sign-in settles at phone and desktop widths without grant
      await page.waitForFunction(()=>window.QuantaBubbles);
      await page.locator('.ba-launcher').click();
      const gate=page.locator('#chatBubblesSigninGate');
+     assert.equal(await gate.isVisible(),false,'ordinary chat has no inline account setup');
+     assert.equal(await page.locator('#bubblesChatGPTTopAccess').count(),0);
+     const field=page.getByRole('textbox',{name:'Message Bubbles',exact:true});
+     await field.fill('An unsent draft');
+     const options=page.locator('.ba-tools');
+     if(!await options.evaluate(node=>node.open))await options.locator(':scope > summary').click();
+     await page.getByRole('button',{name:'Open Settings',exact:true}).click();
+     const settings=page.getByRole('dialog',{name:'Bubbles Settings'});
+     await settings.waitFor();
+     const pairing=settings.getByText('Pair a device',{exact:true}).locator('..');
+     assert.equal(await pairing.locator('.ba-link-bubbles').count(),1);
+     assert.equal(await settings.locator('.ba-link-bubbles').count(),1);
+     await page.evaluate(()=>window.dispatchEvent(new Event('bubbles:owner-ready')));
+     assert.equal(await settings.locator('.ba-chatgpt-quick').isVisible(),false);
+     await settings.getByText('Accounts', {exact:true}).click();
      if(walletVerified){
       await gate.waitFor({state:'hidden'});
       assert.equal(await gate.getAttribute('data-ready'),'false');
@@ -99,7 +114,14 @@ test('real inline chat sign-in settles at phone and desktop widths without grant
       assert.equal(await page.locator('#chatBubblesCancelSignIn').isVisible(),false);
      }
      assert.equal(oauthStarts,0,'Status checks cannot authorize a provider');
-     assert.equal(await page.getByRole('textbox',{name:'Message Bubbles',exact:true}).isVisible(),true);
+     const back=settings.getByRole('button',{name:'Back to chat'});
+     assert.ok((await back.boundingBox()).height>=44);
+     assert.equal(await settings.evaluate(view=>view.scrollWidth<=view.clientWidth),true);
+     await back.click();
+     assert.equal(await settings.isVisible(),false);
+     assert.equal(await field.isVisible(),true);
+     assert.equal(await field.inputValue(),'An unsent draft');
+     assert.equal(await page.getByRole('button',{name:'Send',exact:true}).isVisible(),true);
      assert.deepEqual(errors,[]);
     }finally{await page.close();}
    });

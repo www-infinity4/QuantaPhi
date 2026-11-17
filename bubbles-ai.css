@@ -373,8 +373,8 @@
 }
 .ba-tools-viewer-header h2{margin:0;color:#15527b;font:850 clamp(19px,5vw,25px)/1.2 system-ui,sans-serif}
 .ba-tools-viewer-close{
- width:48px;height:48px;flex:0 0 48px;border:1px solid #c4d7e2;border-radius:14px;
- background:#f4f8fa;color:#173c55;font:700 30px/1 system-ui;cursor:pointer
+ min-height:44px;padding:8px 12px;flex:none;border:1px solid #c4d7e2;border-radius:14px;
+ background:#f4f8fa;color:#173c55;font:700 16px/1.2 system-ui;cursor:pointer
 }
 .ba-tools-viewer-content{
  flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;
@@ -421,6 +421,7 @@
 .ba-tools-viewer-content details,.ba-tools-viewer-content .ba-privacy,.ba-tools-viewer-content .ba-notes,.ba-tools-viewer-content .ba-tool-rail{
  padding:12px;border:1px solid #d7e2ea;border-radius:14px;background:#fff
 }
+.ba-tools-viewer-content .ba-owner-help>summary{box-sizing:border-box;min-height:44px;padding-block:10px}
 .ba-tools-viewer-content .ba-notes{max-height:45dvh;overflow-y:auto}
 body.ba-viewer-active{overflow:hidden}
 @media(max-width:440px){
