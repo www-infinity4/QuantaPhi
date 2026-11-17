@@ -3,28 +3,266 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T22:30:59.962021Z",
+  "checked_at": "2026-11-17T23:01:11.856308Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "argentina - costa rica",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T22:10:00Z",
+      "query": "uruguay vs dominican republic",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T22:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-argentina-vs-costa-rica-153215766.html",
-        "https://www.si.com/soccer/argentina-vs-costa-rica-preview-predictions-lineups-11-17-26",
-        "https://www.usatoday.com/story/sports/soccer/2026/11/17/argentina-costa-rica-prediction-where-to-watch-friendly/92807960007/"
+        "https://www.bbc.com/sport/football/live/c6jd75xzkn21t",
+        "https://www.transfermarkt.us/online-betting/picks/uruguay-vs-dominican-republic-picks-17-11-2026/",
+        "https://www.telecomasia.net/sports-betting/tips/football/uruguay-vs-dominican-republic-match-prediction-17-november-2026/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJAP-A2RrPu6e1ZEJgjQuNZv0vtitFJ0QQooeSU13UqGEZ8sgokS0PJU68QY",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcI35tE94oxZ4fAkusefTkkCEgVO0leRjBnSKCkHzFP5jNXRUrKdq4vJGU764",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-argentina-vs-costa-rica-153215766.html",
-          "title": "How to watch Argentina vs Costa Rica live: Stream, TV, team news, prediction",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.bbc.com/sport/football/live/c6jd75xzkn21t",
+          "title": "Uruguay vs Dominican Republic: Friendlies stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJAP-A2RrPu6e1ZEJgjQuNZv0vtitFJ0QQooeSU13UqGEZ8sgokS0PJU68QY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcI35tE94oxZ4fAkusefTkkCEgVO0leRjBnSKCkHzFP5jNXRUrKdq4vJGU764"
         },
+        {
+          "url": "https://www.transfermarkt.us/online-betting/picks/uruguay-vs-dominican-republic-picks-17-11-2026/",
+          "title": "Uruguay - Dominican Republic prediction & picks 17.11.2026",
+          "publisher": "www.transfermarkt.us",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSU4N7yNUNPLgI1tHfCEb5XV4Rpfjf3t4g1rXACR9oHH0eAhdVUgkoQdB00lu4"
+        },
+        {
+          "url": "https://www.telecomasia.net/sports-betting/tips/football/uruguay-vs-dominican-republic-match-prediction-17-november-2026/",
+          "title": "Uruguay vs Dominican Republic Prediction: After the victory over Argentina",
+          "publisher": "Telecom Asia Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_AYm06aXyLFKRZ8lOryrs4mWxydXkKMt3aL6F8yXuPMfQG8F-A31reypiBug"
+        }
+      ]
+    },
+    {
+      "query": "qeshm",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T22:30:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz",
+        "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/",
+        "https://www.cnn.com/2026/11/17/politics/us-iran-self-defense-strikes"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUlq-apUXMWozbhhGjj1CqYR8yxBee0PUaNQ_rD76DsJPcaQHlkzJGls9bujg",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz",
+          "title": "Iran war live: US hits Qeshm Island, Houthis claim attack on Saudi pipeline",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUlq-apUXMWozbhhGjj1CqYR8yxBee0PUaNQ_rD76DsJPcaQHlkzJGls9bujg"
+        },
+        {
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/",
+          "title": "Live Updates: U.S. launches strikes on Iran's Qeshm Island in Strait of Hormuz",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-STxq57HurKe4II9YozWYwOjdEPCrNJ6q9f6sChrWWi4aZyx8xhlcUyajHWI"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/17/politics/us-iran-self-defense-strikes",
+          "title": "US carries out ‘self-defense’ strikes on Iranian missile launch site",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGg8K_anfBfFdXgezuISl0oUXrUyQCo4vPB59ogUA46g7y-_510a4fJfhbp50"
+        }
+      ]
+    },
+    {
+      "query": "kuwait",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T22:30:00Z",
+      "related_news_urls": [
+        "https://www.arabnews.com/middle-east/kuwait-under-hostile-drone-attacks-says-army-3012614",
+        "https://breakingthenews.net/Article/Kuwait's-air-defense-responds-to-'hostile'-drone-attacks/67585399",
+        "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-air-defences-countering-hostile-drone-attacks-army-says"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFcdsSj9GDy_ybDftxn1X2R25EolxoJzl9jk_vHYo9wnJg2wCeTVyIYcTD078",
+      "image_credit": "Arab News",
+      "news": [
+        {
+          "url": "https://www.arabnews.com/middle-east/kuwait-under-hostile-drone-attacks-says-army-3012614",
+          "title": "Kuwait under hostile drone attacks, says army",
+          "publisher": "Arab News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFcdsSj9GDy_ybDftxn1X2R25EolxoJzl9jk_vHYo9wnJg2wCeTVyIYcTD078"
+        },
+        {
+          "url": "https://breakingthenews.net/Article/Kuwait's-air-defense-responds-to-'hostile'-drone-attacks/67585399",
+          "title": "Kuwait's air defense responds to 'hostile' drone attacks",
+          "publisher": "Breakingthenews.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP8J-UrLTTpAxwC6BJBK2wCoo2AUjOlLadvxKxosmuZAoaAHeKOBURpskOjn4"
+        },
+        {
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-air-defences-countering-hostile-drone-attacks-army-says",
+          "title": "Kuwait air defences countering hostile drone attacks, army says",
+          "publisher": "Middle East Eye",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtUPuDkiUJlU5Lo-kl4-a4bWbC2yd3JjQlBZLjIzeIQZsdykN5WjcJvzKeUy0"
+        }
+      ]
+    },
+    {
+      "query": "dow jones industrial average",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-17T22:20:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html",
+        "https://thehill.com/newsletters/business-economy/6226585-stocks-dip-but-nvidia-reports-strong-earnings/",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-q3-financial-results-retail-sales-import-prices"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmVwZW80xyCrBRtocSUjuqEElyCwddP_5qHLb1yu3mT1rHAsc6X4_p_LPOZ1A",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html",
+          "title": "Dow drops more than 800 points, S&P 500 posts lowest close since July",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmVwZW80xyCrBRtocSUjuqEElyCwddP_5qHLb1yu3mT1rHAsc6X4_p_LPOZ1A"
+        },
+        {
+          "url": "https://thehill.com/newsletters/business-economy/6226585-stocks-dip-but-nvidia-reports-strong-earnings/",
+          "title": "Stocks dip, but Nvidia reports strong earnings",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5bWZnd_V5DviZi7Wu2hOSzPjFV68EtQtWGz0wdeJooW4WCuxGNCIm8ZSy6KI"
+        },
+        {
+          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-q3-financial-results-retail-sales-import-prices",
+          "title": "Stock Market News, Nov. 17, 2026: Dow ends down 850 points, S&P 500 and Nasdaq also plunge as tech names come under further pressure ahead of Nvidia’s earnings",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWpLtxMpAOsv0qLkH0I5gMgfPPTQc-7isCGzxPEfgvB-kDUWjV02wL3LG_-bc"
+        }
+      ]
+    },
+    {
+      "query": "aircraft",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T22:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/17/politics/irish-national-charges-destroying-us-military-plane-ireland",
+        "https://www.justice.gov/usao-sdny/pr/irish-national-indicted-destroying-60-million-us-military-c-130h-aircraft-shannon",
+        "https://apnews.com/article/us-military-ireland-plane-destroyed-c130-2604e884805eabccacf30104fcf74e40"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQooyPxmlqcgGejoBD_yDWF9RF8yMBCJ2A8fKdNfN-W6rLqS8KgOB9KcL8zK7c",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/17/politics/irish-national-charges-destroying-us-military-plane-ireland",
+          "title": "Man accessed US military plane at Ireland airport and destroyed it, DOJ says",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQooyPxmlqcgGejoBD_yDWF9RF8yMBCJ2A8fKdNfN-W6rLqS8KgOB9KcL8zK7c"
+        },
+        {
+          "url": "https://www.justice.gov/usao-sdny/pr/irish-national-indicted-destroying-60-million-us-military-c-130h-aircraft-shannon",
+          "title": "Irish National Indicted For Destroying $60 Million U.S. Military C-130H Aircraft At Shannon Airport, Ireland",
+          "publisher": "Department of Justice (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdbAFMcX5v5XQG0QvcCx_8H_P_t4tsPmfzAJBy-dBvB9vZRTRypS5ktQY4yIA"
+        },
+        {
+          "url": "https://apnews.com/article/us-military-ireland-plane-destroyed-c130-2604e884805eabccacf30104fcf74e40",
+          "title": "A man destroyed a $60 million US military plane at an Irish airport, prosecutors say",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXea4b9eLs2cDM33DeDm18Vf7GctcCmyLe4NszZnWoaBxS47e226eQ2ST-XC4"
+        }
+      ]
+    },
+    {
+      "query": "anne hathaway",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T22:20:00Z",
+      "related_news_urls": [
+        "https://www.tmz.com/2026/11/17/anne-hathaway-seen-with-new-baby/",
+        "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/anne-hathaway-welcomes-third-child-1236730455/",
+        "https://pagesix.com/2026/11/17/parents/anne-hathaway-gives-birth-to-baby-no-3-with-husband-adam-shulman/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXE9sefMd1uADjiVJtFaC5lfNVG1YUmj77kZMKi5LMmEARsAzm1Ox9nUlgjGY",
+      "image_credit": "TMZ",
+      "news": [
+        {
+          "url": "https://www.tmz.com/2026/11/17/anne-hathaway-seen-with-new-baby/",
+          "title": "Anne Hathaway Welcomes New Baby, Spotted With Newborn in NYC",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXE9sefMd1uADjiVJtFaC5lfNVG1YUmj77kZMKi5LMmEARsAzm1Ox9nUlgjGY"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/anne-hathaway-welcomes-third-child-1236730455/",
+          "title": "Anne Hathaway Welcomes Third Child With Husband Adam Shulman",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr9RAEWigm-4uz6PfFCEnWD68AuZe9q4Qk0sDnYJZeM7grdA_MDEwbqmtjP6I"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/17/parents/anne-hathaway-gives-birth-to-baby-no-3-with-husband-adam-shulman/",
+          "title": "Anne Hathaway gives birth to baby No. 3 with husband Adam Shulman",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIXpMx-pI1PuAuIWYPhVlqs5BQzJ5XvAQVMxV1DOv7838_I_G5o2eJphKNZfE"
+        }
+      ]
+    },
+    {
+      "query": "league of legends",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T22:20:00Z",
+      "related_news_urls": [
+        "https://www.sportsvideo.org/2026/11/16/riot-games-continues-to-blaze-the-remote-production-trail-with-league-of-legends-worlds-grand-final-at-barclays-center/",
+        "https://www.riotgames.com/en/news/worlds-watch-parties-2026",
+        "https://www.globaltimes.cn/page/202611/1374347.shtml"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVjBKdR95xtkYAxC466pb7W3lrkbH3xM-7lxakCQj3IJ6AFWXpppWmEs7qB5I",
+      "image_credit": "Sports Video Group",
+      "news": [
+        {
+          "url": "https://www.sportsvideo.org/2026/11/16/riot-games-continues-to-blaze-the-remote-production-trail-with-league-of-legends-worlds-grand-final-at-barclays-center/",
+          "title": "League of Legends World Championship Grand Final: Riot Games Continues To Blaze the Remote-Production Trail at Barclays Center",
+          "publisher": "Sports Video Group",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVjBKdR95xtkYAxC466pb7W3lrkbH3xM-7lxakCQj3IJ6AFWXpppWmEs7qB5I"
+        },
+        {
+          "url": "https://www.riotgames.com/en/news/worlds-watch-parties-2026",
+          "title": "Find a Worlds 2026 Watch Party Near You",
+          "publisher": "Riot Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHHVhLjDeY8d0Gwd-POEtIn0VbQwOs2XD6_Ykx72LR7XBLtL4SsMSOw_ExyBY"
+        },
+        {
+          "url": "https://www.globaltimes.cn/page/202611/1374347.shtml",
+          "title": "Once again, China’s youth are ‘stepping up to the plate’!: Global Times editorial",
+          "publisher": "Global Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwR132Z9-_QyTAAzvxe1AwYX1tKANipSUFvqp7UJlA6OqFCgQxOEjhi1OExhg"
+        }
+      ]
+    },
+    {
+      "query": "argentina - costa rica",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-17T22:10:00Z",
+      "related_news_urls": [
+        "https://www.si.com/soccer/argentina-vs-costa-rica-preview-predictions-lineups-11-17-26",
+        "https://www.usatoday.com/story/sports/soccer/2026/11/17/argentina-costa-rica-live-watch-highlights-score-lineups--live/92829041007/",
+        "https://onefootball.com/en/betting/predictions/argentina-vs-costa-rica-17-11-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVFO8UiN7HzztkZ693uDh4-she5OyxHtMX37DPufyibNra2_CfMjT-ZcvM3PE",
+      "image_credit": "Sports Illustrated",
+      "news": [
         {
           "url": "https://www.si.com/soccer/argentina-vs-costa-rica-preview-predictions-lineups-11-17-26",
           "title": "Argentina vs. Costa Rica: Preview, Predictions and Lineups",
@@ -33,17 +271,24 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVFO8UiN7HzztkZ693uDh4-she5OyxHtMX37DPufyibNra2_CfMjT-ZcvM3PE"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/soccer/2026/11/17/argentina-costa-rica-prediction-where-to-watch-friendly/92807960007/",
-          "title": "Argentina vs. Costa Rica friendly prediction, start time, how to watch",
+          "url": "https://www.usatoday.com/story/sports/soccer/2026/11/17/argentina-costa-rica-live-watch-highlights-score-lineups--live/92829041007/",
+          "title": "Argentina vs Costa Rica LIVE score updates, highlights, lineups and how to watch",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThZ7esKUdEgFAOvOlXNmexI4x7foXY7jCX-e-WfxoWKpggoqrr5u2n04EsUL8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpXZghipDcoFIhh8rjRyS9s7Vr80iE9q6Ix9epjtOcqdhQcTLqYUno3KV2vS4"
+        },
+        {
+          "url": "https://onefootball.com/en/betting/predictions/argentina-vs-costa-rica-17-11-2026",
+          "title": "Argentina vs Costa Rica - Prediction, where to watch, kick-off time and line-ups 17-11-2026",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyC1eV0CCsSENJo-hv7LTWmCUmz0ZLHWGau6gMhU9-EWnBlW9OoFr3BzUfxTI"
         }
       ]
     },
     {
       "query": "chile vs colombia",
-      "approx_searches": "1000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-17T22:10:00Z",
       "related_news_urls": [
         "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17526251/probable-formacion-de-chile-para-enfrentar-a-colombia",
@@ -77,282 +322,29 @@
       ]
     },
     {
-      "query": "eastern mi vs wmu",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T22:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-eastern-michigan-vs-western-220000977.html",
-        "https://www.cbssports.com/betting/news/eastern-michigan-western-michigan-prediction-odds-week-12-tuesday-maction-picks-best-bets/",
-        "https://www.usatoday.com/sports/ncaaf/event/2026/2975031/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=1"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVsObquYcsITN--IHWsceWsUHc1ncJ6bz50eBygQs_J58DJxsWg1fkHqWMlhI",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/watch-eastern-michigan-vs-western-220000977.html",
-          "title": "How to watch Eastern Michigan vs Western Michigan: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVsObquYcsITN--IHWsceWsUHc1ncJ6bz50eBygQs_J58DJxsWg1fkHqWMlhI"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/eastern-michigan-western-michigan-prediction-odds-week-12-tuesday-maction-picks-best-bets/",
-          "title": "Eastern Michigan vs. Western Michigan prediction, odds: Week 12 Tuesday MACtion picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTO7ON1yBwxJMZGJu_ZR8WIu-RR8qoLxsD7bgqrB_74nm8cCx-Lx2OD8qEUakE"
-        },
-        {
-          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2975031/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=1",
-          "title": "Eastern Michigan Eagles at Western Michigan Broncos - NCAAF Game Summary - Nov 17, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzqESltnY3eHCrgLn5uuHRIj9Ep7MQ_V8wMuaKOh_gLGJlE_WPhR0W3ZJjNfM"
-        }
-      ]
-    },
-    {
       "query": "chile - colombia",
-      "approx_searches": "500+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-17T22:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/duran-injury-fears-eased-colombia-071408197.html",
-        "https://sports.yahoo.com/articles/camilo-duran-both-legs-cramped-104000920.html",
-        "https://www.beinsports.com/en-us/soccer/friendlies/articles/lorenzo-hails-colombias-fight-in-intense-friendly-win-over-chile-2026-11-14"
+        "https://www.yardbarker.com/soccer/articles/chile_vs_colombia_lineups_preview/s1_17615_44577684",
+        "https://www.beinsports.com/en-us/soccer/friendlies/articles/lorenzo-hails-colombias-fight-in-intense-friendly-win-over-chile-2026-11-14?Ah=EU"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTFDijEfZAAYOECFCPK4vL4cWSMvmgG53zjMz4kmkIN0j9iEjO7KxiPQzFHRs",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7Aty18pT4-sPI89L2w9bvt675_5abrr16bYiOXIMdAdrtxvlRGerocfy41dE",
+      "image_credit": "Yardbarker",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/duran-injury-fears-eased-colombia-071408197.html",
-          "title": "Duran injury fears eased by Colombia boss",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.yardbarker.com/soccer/articles/chile_vs_colombia_lineups_preview/s1_17615_44577684",
+          "title": "Chile vs. Colombia Lineups, Preview",
+          "publisher": "Yardbarker",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTFDijEfZAAYOECFCPK4vL4cWSMvmgG53zjMz4kmkIN0j9iEjO7KxiPQzFHRs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7Aty18pT4-sPI89L2w9bvt675_5abrr16bYiOXIMdAdrtxvlRGerocfy41dE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/camilo-duran-both-legs-cramped-104000920.html",
-          "title": "Camilo Duran – “Both his legs cramped, but he’s fine,” Colombia boss eases Celtic concerns",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLJ_nBiAPh1_2wY28GCKAn8Q1iti9lhmaZGniusvYfRk-5t3u96FTxhQhfaqI"
-        },
-        {
-          "url": "https://www.beinsports.com/en-us/soccer/friendlies/articles/lorenzo-hails-colombias-fight-in-intense-friendly-win-over-chile-2026-11-14",
+          "url": "https://www.beinsports.com/en-us/soccer/friendlies/articles/lorenzo-hails-colombias-fight-in-intense-friendly-win-over-chile-2026-11-14?Ah=EU",
           "title": "Lorenzo hails Colombia's fight in 'intense' friendly win over Chile",
           "publisher": "beIN SPORTS",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVsVkN-LknIsjeBemkstqFAh0EYOohxu0phZvUr5xVd1KrqyZpyqE5qaJOyuk"
-        }
-      ]
-    },
-    {
-      "query": "oklahoma city thunder",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T22:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7789522/2026/11/17/blake-griffin-thunder-stadium-fans-taxpayers/",
-        "https://sports.yahoo.com/articles/despite-acknowledging-super-exciting-192055572.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/17/they-know-that-the-alternative-is-to-lose-the-team/92830171007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm8PGjfdOOXXtZug_cKGHFdu5Hv0Wy87HKWS7ZlFTInlQIQYq3yW1uwSiyteU",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7789522/2026/11/17/blake-griffin-thunder-stadium-fans-taxpayers/",
-          "title": "Oklahoma native Blake Griffin says taxpayers had little choice on $900 million Thunder arena",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm8PGjfdOOXXtZug_cKGHFdu5Hv0Wy87HKWS7ZlFTInlQIQYq3yW1uwSiyteU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/despite-acknowledging-super-exciting-192055572.html",
-          "title": "Despite acknowledging how “super exciting” it was for …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0rtNlbBL5Bl3JC9Y4N_dnvABhQuEQ06u01zvpa9ZI_8UKcy1_3MJjZdI5PEU"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/17/they-know-that-the-alternative-is-to-lose-the-team/92830171007/",
-          "title": "“They know that the alternative is to lose the team …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXWkEr_zhiPynTaz9RYJkvQep33jTCVdMReaCqwW-LSjX_D-t1xkS8GfSIVA"
-        }
-      ]
-    },
-    {
-      "query": "harvey jones nvidia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T22:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-succession-board-lessons.html",
-        "https://finance.yahoo.com/technology/article/nvidia-board-needs-some-heavyweights-ex-medtronic-ceo-bill-george-says-191935557.html",
-        "https://www.thetimes.com/business/companies-markets/article/ai-boom-nvidia-jensen-huang-tech-stocks-plunge-7wl33h5gd"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3ro-1KCVLPdqBFWkeeeEamDL64_xcuV67fGNtzgF0AuVUNN7vlLiqc_ir6AI",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-succession-board-lessons.html",
-          "title": "Jensen Huang's Nvidia exit exposes succession and governance risks for companies and boards",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3ro-1KCVLPdqBFWkeeeEamDL64_xcuV67fGNtzgF0AuVUNN7vlLiqc_ir6AI"
-        },
-        {
-          "url": "https://finance.yahoo.com/technology/article/nvidia-board-needs-some-heavyweights-ex-medtronic-ceo-bill-george-says-191935557.html",
-          "title": "Nvidia board needs 'some heavyweights,' ex-Medtronic CEO Bill George says",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbEOmdzu89gKASxUY3yDN4PGULqX7m7vPtCWBkMVNN1BPYA3kBxNbU7A4ARRs"
-        },
-        {
-          "url": "https://www.thetimes.com/business/companies-markets/article/ai-boom-nvidia-jensen-huang-tech-stocks-plunge-7wl33h5gd",
-          "title": "Nvidia will not consider return of Jensen Huang as boss",
-          "publisher": "The Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuGHdr9jKrYL8EOtHPYg3OWQko-wWOfVWZQ6tSGXkL19jLnQ-VheidQc0Vuzc"
-        }
-      ]
-    },
-    {
-      "query": "notre dame vs florida",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T21:50:00Z",
-      "related_news_urls": [
-        "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
-        "https://sports.yahoo.com/articles/watch-notre-dame-vs-florida-203000108.html",
-        "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU",
-      "image_credit": "Florida Gators",
-      "news": [
-        {
-          "url": "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
-          "title": "Players Era 8: No. 1 Florida vs Notre Dame (Tuesday, 4:30 pm)",
-          "publisher": "Florida Gators",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-notre-dame-vs-florida-203000108.html",
-          "title": "How to watch Notre Dame vs Florida: Live stream NCAA College Basketball, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEtfp296nqpn8iycIuTnSxt2uHn8bfdUp6LHfg85avKmaE-B6AHv3Q5uj-OI"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
-          "title": "Florida vs. Notre Dame prediction, odds: 2026 Players Era 8 picks for Tuesday, Nov. 17 by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN3iRc166heYtuBI1p2_lhDYllmtlNUll6r7hbRaGx8GUbTlnvwgNt4U0N9lQ"
-        }
-      ]
-    },
-    {
-      "query": "java4shell",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T21:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html",
-        "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-        "https://news.jkn.co.kr/editions/english/post/1102729"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbKZADXkaquTI0GlemNoO0VmuBbKBYAa4t2JMry7OQwp91ib0JZrwH7U2qPQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html",
-          "title": "A.I. Helps Find Major Security Bug in Java, a Software Platform Vital to the Internet",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbKZADXkaquTI0GlemNoO0VmuBbKBYAa4t2JMry7OQwp91ib0JZrwH7U2qPQ"
-        },
-        {
-          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-          "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
-          "publisher": "The Hacker News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnr7zI_zMv5Xh4VYoat-OWON-cDJTfD6WLU-oMjomLs7xFef_HnTZw3OWahGg"
-        },
-        {
-          "url": "https://news.jkn.co.kr/editions/english/post/1102729",
-          "title": "Critical Java vulnerability discovered; NIS issues urgent inspection advisory to public institutions",
-          "publisher": "재경일보",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-RHQbDNidXWUtB_PGYl_gqLs6PRYAxschklmqfGrohLtbUE94gvia2XG1Tl8"
-        }
-      ]
-    },
-    {
-      "query": "aaoi stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T21:40:00Z",
-      "related_news_urls": [
-        "https://www.investing.com/news/stock-market-news/applied-optoelectronics-falls-8-on-550-million-stock-offering-plan-5034098",
-        "https://www.benzinga.com/trading-ideas/movers/26/11/63373359/applied-optoelectronics-stock-tumbles-after-hours-heres-why",
-        "https://www.streetinsider.com/Corporate+News/Applied+Optoelectronics+launches+%24550M+at-the-market+stock+offering/27363732.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThlbaJbqmqbU6OIu7pr-cIceZxRBQT8RYQrK5eQpxS9mV1Rf8c2kIUYWFsg-w",
-      "image_credit": "Investing.com",
-      "news": [
-        {
-          "url": "https://www.investing.com/news/stock-market-news/applied-optoelectronics-falls-8-on-550-million-stock-offering-plan-5034098",
-          "title": "Applied Optoelectronics falls 8% on $550 million stock offering plan",
-          "publisher": "Investing.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThlbaJbqmqbU6OIu7pr-cIceZxRBQT8RYQrK5eQpxS9mV1Rf8c2kIUYWFsg-w"
-        },
-        {
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63373359/applied-optoelectronics-stock-tumbles-after-hours-heres-why",
-          "title": "Applied Optoelectronics Stock Tumbles After Hours: Here's Why",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLAub0gvUsz7xrxdCnQqlBjQutdRYEdIYYG8VGW9qOllvsHfdfQuH2BS7LyR0"
-        },
-        {
-          "url": "https://www.streetinsider.com/Corporate+News/Applied+Optoelectronics+launches+%24550M+at-the-market+stock+offering/27363732.html",
-          "title": "Applied Optoelectronics launches $550M at-the-market stock offering",
-          "publisher": "StreetInsider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLm6FBBi1rKr5Lvc6FgxEFH08Pi-zUd7xm74EXsQ2rnDAa88PO74eEqGmpMqs"
-        }
-      ]
-    },
-    {
-      "query": "jubilación",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T21:30:00Z",
-      "related_news_urls": [
-        "https://www.infobae.com/estados-unidos/2026/11/17/el-irs-anuncia-nuevos-ajustes-tributarios-para-2027-cuanto-podran-deducir-los-contribuyentes-y-que-creditos-aumentaran/",
-        "https://www.directoriocubano.info/estados-unidos/credito-hijos-minnesota-2025/",
-        "https://www.tikr.com/es/blog/bernie-sanders-nearly-half-of-older-workers-have-no-retirement-savings-from-60-to-63-you-can-save-37250-per-year-in-a-401k-starting-in-2027"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmCwHhGcFwaQd_1KPW-NrOiKGXDeU8HfY3tcEV80dxf28zquu9BruenKJokiI",
-      "image_credit": "Infobae",
-      "news": [
-        {
-          "url": "https://www.infobae.com/estados-unidos/2026/11/17/el-irs-anuncia-nuevos-ajustes-tributarios-para-2027-cuanto-podran-deducir-los-contribuyentes-y-que-creditos-aumentaran/",
-          "title": "El IRS anuncia nuevos ajustes tributarios para 2027: cuánto podrán deducir los contribuyentes y qué créditos aumentarán",
-          "publisher": "Infobae",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmCwHhGcFwaQd_1KPW-NrOiKGXDeU8HfY3tcEV80dxf28zquu9BruenKJokiI"
-        },
-        {
-          "url": "https://www.directoriocubano.info/estados-unidos/credito-hijos-minnesota-2025/",
-          "title": "Crédito por hijos en Estados Unidos: hasta 1750 dólares por menor en 2025",
-          "publisher": "Directorio Cubano",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStgRnG4-7tW9TOAcknyrGjZf451kfwJYVwJ7vcw8jzwf12Y84RsUREQnBv5Mg"
-        },
-        {
-          "url": "https://www.tikr.com/es/blog/bernie-sanders-nearly-half-of-older-workers-have-no-retirement-savings-from-60-to-63-you-can-save-37250-per-year-in-a-401k-starting-in-2027",
-          "title": "Bernie Sanders: “Nearly Half of Older Workers Have No Retirement Savings.” From 60 to 63, You Can Save $37,250 per Year in a 401(k) Starting in 2027",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3SP4GfjaZOYCEqaVKa4INX9ZOMXGPEIatUKUYgd7MR54xnCGek-9smLv89Mk"
         }
       ]
     }
