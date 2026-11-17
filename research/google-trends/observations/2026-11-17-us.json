@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T03:31:17.008143Z",
+  "checked_at": "2026-11-17T04:01:39.580470Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "pax silica",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/16/business/trump-paxsilica-philippines-ai.html",
+        "https://www.cbsnews.com/news/protests-philippines-trump-visit-ai-hub/",
+        "https://www.hrw.org/news/2026/11/16/philippines-us-tech-hub-to-displace-hundreds"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdHNbhNbpGi1JqMsBppMZ8kkU_o8TyfSGlh1G15hLtvcyNa2tykq3Se2Beiec",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/16/business/trump-paxsilica-philippines-ai.html",
+          "title": "Trump’s Plan for A.I. Supremacy Fuels Resistance in the Philippines",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdHNbhNbpGi1JqMsBppMZ8kkU_o8TyfSGlh1G15hLtvcyNa2tykq3Se2Beiec"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/protests-philippines-trump-visit-ai-hub/",
+          "title": "Protests against planned AI hub in Philippines flare ahead of Trump's visit",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD0O4fDCs7MmkUPycjWAZ2FDiaJ-IXGGS_MJjvCLBSXpSNFwn9bM_eoqD_EDk"
+        },
+        {
+          "url": "https://www.hrw.org/news/2026/11/16/philippines-us-tech-hub-to-displace-hundreds",
+          "title": "Philippines: US Tech Hub to Displace Hundreds",
+          "publisher": "Human Rights Watch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkwn4qCIWp2nZ-8GXtMUOvawcGwDd313nUHyscUCD5OhLKvq3UcjvEaav1tYA"
+        }
+      ]
+    },
+    {
+      "query": "phil collins",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-17T03:30:00Z",
+      "related_news_urls": [
+        "https://globalnews.ca/news/12153147/phil-collins-health-update-rock-and-roll-hall-of-fame-induction/",
+        "https://abcnews.com/GMA/Culture/phil-collins-hopes-make-new-music-perform-despite/story?id=138162830",
+        "https://www.billboard.com/music/awards/lily-collins-phil-collins-rock-hall-induction-tribute-1236382837/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHR7zSBkbgHjEOHdTqaAzpSOTXweOR1P_Ed4nA2BBvN_2kVQVs1aq2862kr4",
+      "image_credit": "Global News",
+      "news": [
+        {
+          "url": "https://globalnews.ca/news/12153147/phil-collins-health-update-rock-and-roll-hall-of-fame-induction/",
+          "title": "Phil Collins shares health update at Rock & Roll Hall of Fame induction",
+          "publisher": "Global News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHR7zSBkbgHjEOHdTqaAzpSOTXweOR1P_Ed4nA2BBvN_2kVQVs1aq2862kr4"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/phil-collins-hopes-make-new-music-perform-despite/story?id=138162830",
+          "title": "Phil Collins says he hopes to make new music, perform again despite health challenges",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRio0bD5Fo78yFWtV3nhJBuKL4SajyiRT0meNFHuOEsXSJ-K0erxKfa09LXCjE"
+        },
+        {
+          "url": "https://www.billboard.com/music/awards/lily-collins-phil-collins-rock-hall-induction-tribute-1236382837/",
+          "title": "Lily Collins Pays Tribute to Phil Collins After Rock Hall Induction",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkgaO6Vq9WznfHGVYBRb55G_nsWoPetp37fOlk08MxaRAsytcZ5bbnzujrbAc"
+        }
+      ]
+    },
+    {
+      "query": "connections hint november 16",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-17T03:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/15/crosswords/connections-companion-1254.html",
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-15-2026",
+        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-16-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4iDLOdV6GVnJKRJxfcH7rKJeguYfuE1uy8WzjI9WMjKkTUHKWShmjZB-2CU",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/15/crosswords/connections-companion-1254.html",
+          "title": "NYT Connections Answers for November 16, 2026",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4iDLOdV6GVnJKRJxfcH7rKJeguYfuE1uy8WzjI9WMjKkTUHKWShmjZB-2CU"
+        },
+        {
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-15-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 15, 2026",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-16-2026",
+          "title": "Today's NYT Connections Hints (and Answer) for Monday, November 16, 2026",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDZH0VNqmezvO46I773iK8bs50yo22Qo_cDux8LYD8WoxknE9V2Qzc0YS5E_8"
+        }
+      ]
+    },
+    {
+      "query": "brian hallisay",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:30:00Z",
+      "related_news_urls": [
+        "https://people.com/jennifer-love-hewitt-reveals-secret-to-13-years-of-marriage-with-brian-hallisay-exclusive-12259096",
+        "https://www.eonline.com/news/1438167/jennifer-love-hewitt-husband-brian-hallisays-marriage-advice-is-a-choice",
+        "https://people.com/jennifer-love-hewitt-is-loving-her-blonde-hair-transformation-exclusive-12258298"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcLBeofKxgyiNCTS4RpiAajvseqJbMUZRETwfbstevE-6WRSChei_4XV7ztfI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/jennifer-love-hewitt-reveals-secret-to-13-years-of-marriage-with-brian-hallisay-exclusive-12259096",
+          "title": "Jennifer Love Hewitt Reveals the Secret to 13 Years of Marriage with Husband Brian Hallisay (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcLBeofKxgyiNCTS4RpiAajvseqJbMUZRETwfbstevE-6WRSChei_4XV7ztfI"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438167/jennifer-love-hewitt-husband-brian-hallisays-marriage-advice-is-a-choice",
+          "title": "Jennifer Love Hewitt Explains Why 13-Year Marriage With Brian Hallisay Is a “Choice Every Day”",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLa5qQg8WK83xmIL_4DRfxU4h5bueQRGhsx96O7fgFDrQr5P6PqErf4TFLlls"
+        },
+        {
+          "url": "https://people.com/jennifer-love-hewitt-is-loving-her-blonde-hair-transformation-exclusive-12258298",
+          "title": "Jennifer Love Hewitt Is ‘Loving’ Her Hair Transformation: ‘I’m Living My Best Blonde Life’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcOnOnFg3PYqsh9QBInn2jCg1Phpbf49YW6Mn_h3afplmMqvZ2g68tWL0T-uM"
+        }
+      ]
+    },
+    {
+      "query": "long beach st vs ucla",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T03:20:00Z",
+      "related_news_urls": [
+        "https://uclabruins.com/news/2026/11/14/no-9-mens-basketball-to-host-long-beach-state-cal-state-fullerton",
+        "https://www.foxsports.com/watch/fmc-i3kwa5etkaf57xxu",
+        "https://247sports.com/college/ucla/article/ucla-mens-basketball-long-beach-state-preview-292803156/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3RJ3isa1vJW17nDsnqkMJFwQtuAQCqxQuTkoe2hQTLlA6GEqXQu6U6rY2za0",
+      "image_credit": "UCLA Bruins",
+      "news": [
+        {
+          "url": "https://uclabruins.com/news/2026/11/14/no-9-mens-basketball-to-host-long-beach-state-cal-state-fullerton",
+          "title": "No. 9 Men's Basketball to Host Long Beach State, Cal State Fullerton",
+          "publisher": "UCLA Bruins",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3RJ3isa1vJW17nDsnqkMJFwQtuAQCqxQuTkoe2hQTLlA6GEqXQu6U6rY2za0"
+        },
+        {
+          "url": "https://www.foxsports.com/watch/fmc-i3kwa5etkaf57xxu",
+          "title": "Nikola Kusturica finishes tough and-one layup, extending UCLA's lead over Long Beach State",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOSMEuBxYJfmnHFNbNTOSdq4xJIq61DVoxVE5rmapMCX3ijamYay3VQuk-KqI"
+        },
+        {
+          "url": "https://247sports.com/college/ucla/article/ucla-mens-basketball-long-beach-state-preview-292803156/",
+          "title": "UCLA Men's Basketball: Long Beach State Preview",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTo2Caonz9pJPRnOHFrFaU4iuqKrP59ZG47TcySrar0lbKOxqiA56ND6bKb7r4"
+        }
+      ]
+    },
+    {
+      "query": "madden movie",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T03:20:00Z",
+      "related_news_urls": [
+        "https://www.indiewire.com/features/commentary/david-o-russell-madden-biopic-amazon-burying-nicolas-cage-film-1235224213/",
+        "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
+        "https://www.yahoo.com/entertainment/movies/articles/nicolas-cage-football-biopic-more-163000311.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrTD0m-l71G58APTi3u20tomdzKAdzL1EOaFT7S8YR0DKzTSI-9RR8uQ0Oo3o",
+      "image_credit": "IndieWire",
+      "news": [
+        {
+          "url": "https://www.indiewire.com/features/commentary/david-o-russell-madden-biopic-amazon-burying-nicolas-cage-film-1235224213/",
+          "title": "David O. Russell’s ‘Madden’ Biopic Is Out Next Week — Does Anybody Know or Care?",
+          "publisher": "IndieWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrTD0m-l71G58APTi3u20tomdzKAdzL1EOaFT7S8YR0DKzTSI-9RR8uQ0Oo3o"
+        },
+        {
+          "url": "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
+          "title": "Nicolas Cage transformed ‘from within’ for ‘Madden,’ co-star Kathryn Hahn says",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQKoNtzzIqjf8mHlS-PmTm3FsMGu82uVVFtbjHgYTdoelTEHdD9MUavOPcd8"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/nicolas-cage-football-biopic-more-163000311.html",
+          "title": "Nicolas Cage’s Football Biopic & More Prime Video Releases This Week",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE8L03xaJYmBYyqmWzg54izV1gsq7a0HCp-6cQx7ZDQHr7FOULgvPh5Lqf5cs"
+        }
+      ]
+    },
+    {
+      "query": "grand canyon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T03:20:00Z",
+      "related_news_urls": [
+        "https://www.12news.com/article/news/local/arizona/no-survivors-after-aircraft-crashes-near-north-rim-of-grand-canyon-arizona/75-5920421c-b688-4052-8982-dfe161ad2064",
+        "https://ktar.com/arizona-news/3-dead-airplane-down-north-rim-grand-canyon",
+        "https://www.abc15.com/news/local-news/aircraft-located-after-three-killed-in-grand-canyon-plane-crash"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHA_LpIxRHLdP2QJNbHkiR8rvPO7lfkP6nQg-Pv_s2Hu1dNmkKl9onI7iZejA",
+      "image_credit": "12News",
+      "news": [
+        {
+          "url": "https://www.12news.com/article/news/local/arizona/no-survivors-after-aircraft-crashes-near-north-rim-of-grand-canyon-arizona/75-5920421c-b688-4052-8982-dfe161ad2064",
+          "title": "No survivors after aircraft goes down near North Rim of Grand Canyon",
+          "publisher": "12News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHA_LpIxRHLdP2QJNbHkiR8rvPO7lfkP6nQg-Pv_s2Hu1dNmkKl9onI7iZejA"
+        },
+        {
+          "url": "https://ktar.com/arizona-news/3-dead-airplane-down-north-rim-grand-canyon",
+          "title": "3 dead after airplane goes down near north rim of Grand Canyon",
+          "publisher": "KTAR News 92.3 FM",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUiNVmD3dP82fM8zxshXUqB82-FhwmDxMjN2B4K5TH1zprnodJ_5ol5ZmHar0"
+        },
+        {
+          "url": "https://www.abc15.com/news/local-news/aircraft-located-after-three-killed-in-grand-canyon-plane-crash",
+          "title": "Aircraft located after three killed in Grand Canyon plane crash",
+          "publisher": "ABC15 Arizona",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi2Vp0kF2ZIeokGJ2or9skNmr6CZMOUuSvRCjGDoeXNOXOXuV4tudzwI5pUX0"
+        }
+      ]
+    },
+    {
+      "query": "optimizely",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:20:00Z",
+      "related_news_urls": [
+        "https://gizmodo.com/sprawling-malware-attack-reportedly-affects-zoom-cnn-fox-news-peacock-and-170-others-2000840831",
+        "https://www.infostealers.com/article/poisoned-scripts-on-bbc-zoom-and-other-major-websites-linked-to-iphone-exploit-loaders/",
+        "https://finance.biggo.com/news/4315ccb1-bf22-4b5b-b36a-aed4f665b31e"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2PXm8aSAzkGFBaa2RWqKTTSza-q3MtdWS-0C1ISHZfIE5gGG2H0V3KaTi8fU",
+      "image_credit": "Gizmodo",
+      "news": [
+        {
+          "url": "https://gizmodo.com/sprawling-malware-attack-reportedly-affects-zoom-cnn-fox-news-peacock-and-170-others-2000840831",
+          "title": "Sprawling Malware Attack Reportedly Affects Zoom and Other Major Brands",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2PXm8aSAzkGFBaa2RWqKTTSza-q3MtdWS-0C1ISHZfIE5gGG2H0V3KaTi8fU"
+        },
+        {
+          "url": "https://www.infostealers.com/article/poisoned-scripts-on-bbc-zoom-and-other-major-websites-linked-to-iphone-exploit-loaders/",
+          "title": "Poisoned Scripts on BBC, Zoom and Other Major Websites Linked to iPhone Exploit Loaders",
+          "publisher": "InfoStealers",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvvobMtexOLGsaJpn3UWvtXaitEv0pWJHFsZS5ya8qEVwNpT2cHMX-1oyszs"
+        },
+        {
+          "url": "https://finance.biggo.com/news/4315ccb1-bf22-4b5b-b36a-aed4f665b31e",
+          "title": "Optimizely Platform Hit by Large-Scale Malicious Script Injection; 178 Brand Websites Affected, Crypto Wallets Lose $7,000",
+          "publisher": "BigGo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2oBknHhYHpnYt5y262417fkAYZoljEWO3FWONkUnN6tNt5Vyo5WgDo8h2WVY"
+        }
+      ]
+    },
     {
       "query": "the odyssey",
       "approx_searches": "2000+",
@@ -73,286 +353,6 @@
           "publisher": "NBC Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPR1nYOa7rxjpjProgCYh9I2VGxmNxl0rdHJ2AP6gUodYJBz6j8DAsGvcw8Dg"
-        }
-      ]
-    },
-    {
-      "query": "phil collins health",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T03:10:00Z",
-      "related_news_urls": [
-        "https://globalnews.ca/news/12153147/phil-collins-health-update-rock-and-roll-hall-of-fame-induction/",
-        "https://abcnews.com/GMA/Culture/phil-collins-hopes-make-new-music-perform-despite/story?id=138162830",
-        "https://www.billboard.com/music/awards/lily-collins-phil-collins-rock-hall-induction-tribute-1236382837/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHR7zSBkbgHjEOHdTqaAzpSOTXweOR1P_Ed4nA2BBvN_2kVQVs1aq2862kr4",
-      "image_credit": "Global News",
-      "news": [
-        {
-          "url": "https://globalnews.ca/news/12153147/phil-collins-health-update-rock-and-roll-hall-of-fame-induction/",
-          "title": "Phil Collins shares health update at Rock & Roll Hall of Fame induction",
-          "publisher": "Global News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHR7zSBkbgHjEOHdTqaAzpSOTXweOR1P_Ed4nA2BBvN_2kVQVs1aq2862kr4"
-        },
-        {
-          "url": "https://abcnews.com/GMA/Culture/phil-collins-hopes-make-new-music-perform-despite/story?id=138162830",
-          "title": "Phil Collins says he hopes to make new music, perform again despite health challenges",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRio0bD5Fo78yFWtV3nhJBuKL4SajyiRT0meNFHuOEsXSJ-K0erxKfa09LXCjE"
-        },
-        {
-          "url": "https://www.billboard.com/music/awards/lily-collins-phil-collins-rock-hall-induction-tribute-1236382837/",
-          "title": "Lily Collins Pays Tribute to Phil Collins After Rock Hall Induction",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkgaO6Vq9WznfHGVYBRb55G_nsWoPetp37fOlk08MxaRAsytcZ5bbnzujrbAc"
-        }
-      ]
-    },
-    {
-      "query": "rwanda immigration",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cw987343352go",
-        "https://www.nbcnews.com/world/europe/5-european-countries-aim-send-rejected-asylum-seekers-center-rwanda-rcna609731",
-        "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj0PzRxah5Noalawjh79EyYqAFKgkiuRUZLAB3RCHJ37z-qoASEuJDM3JGy8g",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cw987343352go",
-          "title": "Five EU countries announce migrant deportation centre in Rwanda",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj0PzRxah5Noalawjh79EyYqAFKgkiuRUZLAB3RCHJ37z-qoASEuJDM3JGy8g"
-        },
-        {
-          "url": "https://www.nbcnews.com/world/europe/5-european-countries-aim-send-rejected-asylum-seekers-center-rwanda-rcna609731",
-          "title": "5 European countries aim to send rejected asylum seekers to center in Rwanda",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRYPofPf9_ekFRWsbf3QlxkTyloHnG0I2i3INxaZJCkbBZwKSNqR7wsZbnai8"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html",
-          "title": "Five European Countries Plan to Deport Migrants to Rwanda",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4X613rr9P66wsgBpucVrryVBrWm5Vvi7BQvmcTtsJ57vWJXXAbgAABr0fPU"
-        }
-      ]
-    },
-    {
-      "query": "elle fanning",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/elle-fanning-takes-her-hunger-024628341.html",
-        "https://www.wmagazine.com/fashion/elle-fanning-hunger-games-press-tour-fashion",
-        "https://www.aol.com/articles/elle-fanning-channels-effie-trinket-090917000.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX3jH9W89Zko7yQRbD8wXEF5IRlid7xq3UUjZOx3_TKFHD87ceOWAXE1pF4jY",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/elle-fanning-takes-her-hunger-024628341.html",
-          "title": "Elle Fanning Takes Her ‘Hunger Games’ Fashion to New Level in New York",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX3jH9W89Zko7yQRbD8wXEF5IRlid7xq3UUjZOx3_TKFHD87ceOWAXE1pF4jY"
-        },
-        {
-          "url": "https://www.wmagazine.com/fashion/elle-fanning-hunger-games-press-tour-fashion",
-          "title": "All of Elle Fanning’s Elaborate Looks For The Hunger Games: Sunrise on the Reaping Press Tour",
-          "publisher": "W Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8s8EZ5ffYQV8eY2xFSLgm1JYFnX2zIw3gsnmlFEApOFvJAlCXhXOEP2PNeZ0"
-        },
-        {
-          "url": "https://www.aol.com/articles/elle-fanning-channels-effie-trinket-090917000.html",
-          "title": "Elle Fanning Channels Effie Trinket in Thom Browne Skirt With Sheer Twist",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfKbMhTfyMCAD5Et94Sa0SKXLQRC6HiW2pXl5qi76uy2pyFBeh_r8ViuEZpvM"
-        }
-      ]
-    },
-    {
-      "query": "jamie dornan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:10:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1438044/jamie-dornan-anthony-mackie-detail-fatherhood-kids-opinions-on-hollywood",
-        "https://www.heraldonline.com/entertainment/article318070572.html",
-        "https://people.com/jamie-dornan-and-anthony-mackie-share-what-their-kids-think-about-their-movies-12253241"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHZly3hAkzeP4cEKHCfCeNiW2e7lbo-Y0XNvrVi9sCvrIgCzN37Ihq87jFj00",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1438044/jamie-dornan-anthony-mackie-detail-fatherhood-kids-opinions-on-hollywood",
-          "title": "Jamie Dornan and Anthony Mackie Share Hilarious Lesson From Fatherhood",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHZly3hAkzeP4cEKHCfCeNiW2e7lbo-Y0XNvrVi9sCvrIgCzN37Ihq87jFj00"
-        },
-        {
-          "url": "https://www.heraldonline.com/entertainment/article318070572.html",
-          "title": "Anthony Mackie and Jamie Dornan spill their 'Costar Confessions' | Exclusive",
-          "publisher": "Rock Hill Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdgWffoDtwlqfOahQRZr__MVmk1XN8VL5_Ys0IH_2oqyCxWhneHW8GmHJwFi8"
-        },
-        {
-          "url": "https://people.com/jamie-dornan-and-anthony-mackie-share-what-their-kids-think-about-their-movies-12253241",
-          "title": "Jamie Dornan and Anthony Mackie Share What Their Kids Think About Their Movies",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXOvTYNg1bd8FZVzxc99jzJPbU9QScJ1cWzyY_MvAJDijXlhSKb-pxp0ccXZ8"
-        }
-      ]
-    },
-    {
-      "query": "beckham black",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/duke/article/nations-no1-prospect-will-visit-duke-for-the-game-against-illinois--292802552/",
-        "https://www.on3.com/rivals/news/unc-arkansas-florida-more-pg1-beckham-black-details-recruitment-and-schedules-another-visit/",
-        "https://sports.yahoo.com/articles/duke-basketball-recruiting-2-big-144606939.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW9IajO9k69CFJifya2dDj5mF4cL6Ge7YUuDxtfyGgLF1moywGM4DVXHTCKNI",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/duke/article/nations-no1-prospect-will-visit-duke-for-the-game-against-illinois--292802552/",
-          "title": "Nations' No.1 prospect will visit Duke for the game against Illinois",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW9IajO9k69CFJifya2dDj5mF4cL6Ge7YUuDxtfyGgLF1moywGM4DVXHTCKNI"
-        },
-        {
-          "url": "https://www.on3.com/rivals/news/unc-arkansas-florida-more-pg1-beckham-black-details-recruitment-and-schedules-another-visit/",
-          "title": "UNC, Arkansas, Florida & more: PG1 Beckham Black details recruitment and schedules another visit",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPj-YxEqZTFA0H1AztPyRhAxg48y1X5ruZWqMKlrgWTrW6gt3v4HTSce2QU5Y"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/duke-basketball-recruiting-2-big-144606939.html",
-          "title": "Duke Basketball Recruiting: 2 Big Moves With Intriguing 2027 Prospects",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAjWgtCgrwDI1Tgdjx8tcrkl3jT6hAiLNX1-TBUy0QESEl6094V_gTVgZkDPA"
-        }
-      ]
-    },
-    {
-      "query": "remi wolf",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:10:00Z",
-      "related_news_urls": [
-        "https://www.kcci.com/article/hinterland-music-festival-2027-lineup-slayyyter-phoebe-bridgers-billy-strings-haywire/74404979",
-        "https://relix.com/news/detail/billy-strings-phoebe-bridgers-and-slayyyter-to-appear-at-hinterland",
-        "https://www.theprp.com/2026/11/12/news/haywire-to-perform-in-a-cornfield-at-2027-hinterland-festival-in-iowa/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRff9o-9xnmUNbBCl_uj_FHvCKZVHadLoTBelj2Q2N03xo-l1VrqyL7C-3lCO8",
-      "image_credit": "KCCI",
-      "news": [
-        {
-          "url": "https://www.kcci.com/article/hinterland-music-festival-2027-lineup-slayyyter-phoebe-bridgers-billy-strings-haywire/74404979",
-          "title": "Hinterland announces 2027 lineup, featuring Slayyyter, Phoebe Bridgers, Billy Strings and more",
-          "publisher": "KCCI",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRff9o-9xnmUNbBCl_uj_FHvCKZVHadLoTBelj2Q2N03xo-l1VrqyL7C-3lCO8"
-        },
-        {
-          "url": "https://relix.com/news/detail/billy-strings-phoebe-bridgers-and-slayyyter-to-appear-at-hinterland",
-          "title": "Hinterland Music Festival 2027: Violet Grohl Among Acts",
-          "publisher": "Relix",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrLhtsCAiCiHuLyM37OSduB1kFHCT76IV8AHpV2oMmQj3TkZKOQm4X0gQSKoY"
-        },
-        {
-          "url": "https://www.theprp.com/2026/11/12/news/haywire-to-perform-in-a-cornfield-at-2027-hinterland-festival-in-iowa/",
-          "title": "Haywire To Perform In A Cornfield At 2027 'Hinterland' Festival In Iowa",
-          "publisher": "Theprp.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-6Utv-HDAwtXbnTlu5HuMjlEIuWlvabTKF-asFySfFhCqhiwdM33KkPz5wlo"
-        }
-      ]
-    },
-    {
-      "query": "roquan smith",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T03:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/baltimore-ravens-face-growing-playoff-005720273.html",
-        "https://www.baltimoresun.com/2026/11/15/ravens-crossroads-leaders-step-up-commentary-josh-tolentino/",
-        "https://www.baltimoreravens.com/news/ravens-first-half-stats-2026-season-lamar-jackson-zay-flowers-defense"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0V-CKdcCTAg_hQxbo8eVEylhxYZ9nM_YrHZBi92nBJwal_hO9uGzuuekDqIc",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/baltimore-ravens-face-growing-playoff-005720273.html",
-          "title": "Baltimore Ravens Face Growing Playoff Pressure Ahead of Must-Win Monday Night Football",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0V-CKdcCTAg_hQxbo8eVEylhxYZ9nM_YrHZBi92nBJwal_hO9uGzuuekDqIc"
-        },
-        {
-          "url": "https://www.baltimoresun.com/2026/11/15/ravens-crossroads-leaders-step-up-commentary-josh-tolentino/",
-          "title": "Josh Tolentino: Ravens are at a crossroads. Are leaders ready? | COMMENTARY",
-          "publisher": "Baltimore Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBaPDYokdqo1wg6pyY_KfwfKkyw88kM4e-XtGkhzhINxNeRj5b1xvZb3Agsg"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/ravens-first-half-stats-2026-season-lamar-jackson-zay-flowers-defense",
-          "title": "The Stats That Defined the First Half of the Ravens’ 2026 Season",
-          "publisher": "Baltimore Ravens",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqV99KXaHrg3oWJKH7QIlR9IhE3_V3olb20MouxFW_GyoHhuxFNngnT0pED3w"
-        }
-      ]
-    },
-    {
-      "query": "the good daughter cast",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T03:00:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/tv/story/2026-11-16/the-good-daughter-rose-byrne-meghann-fahy-karin-slaughter",
-        "https://www.theguardian.com/the-good-daughter/2026/nov/12/why-secrets-and-mysteries-keep-us-hooked-on-thrillers",
-        "https://www.hollywoodreporter.com/tv/tv-reviews/the-good-daughter-review-rose-byrne-meghann-fahy-peacock-1236750733/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSisIpO3euYtpENvjWpus4ZU8HZTKpXRLjCjBjI3yTqLv3eB2bswsyNv8vxK8",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/tv/story/2026-11-16/the-good-daughter-rose-byrne-meghann-fahy-karin-slaughter",
-          "title": "In 'The Good Daughter,' Rose Byrne and Meghann Fahy play sisters confronting trauma and secrets",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSisIpO3euYtpENvjWpus4ZU8HZTKpXRLjCjBjI3yTqLv3eB2bswsyNv8vxK8"
-        },
-        {
-          "url": "https://www.theguardian.com/the-good-daughter/2026/nov/12/why-secrets-and-mysteries-keep-us-hooked-on-thrillers",
-          "title": "‘The mind loves a mystery’: why our own secrets keep us coming back to thrillers",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuQlwe60vDCuK9EblE_zb6He9vo8z-AH2XEFEUH26jjTpJXGNA9MBfusHFYJU"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-reviews/the-good-daughter-review-rose-byrne-meghann-fahy-peacock-1236750733/",
-          "title": "'The Good Daughter' Review: Rose Byrne & Meghann Fahy in Peacock Drama",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnFTxaLLkLWuWt4jc-zqkzuk5OAhmSVfdhjzQD6iMYZdCIxTF_JOoo_ai1f8"
         }
       ]
     }
