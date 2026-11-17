@@ -3,17 +3,157 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T09:31:32.938204Z",
+  "checked_at": "2026-11-17T10:01:31.547670Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "zimbabwe vs afghanistan",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T09:40:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-2nd-test-1555124/match-report",
+        "https://www.cricketworld.com/afghanistan-vs-zimbabwe-2nd-test-day-5-live-streaming-scores-and-match-updates/114381.htm",
+        "https://www.arabnews.com/cricket/afghanistan-debutant-maroofkhil-misses-equalling-record-but-rattles-zimbabwe-3011911"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR35yiDHSDjawHAtPL5ie-_YGJUmIG2NNDwANnweaUunXNa6E6Pz_wtEwVmVdo",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-2nd-test-1555124/match-report",
+          "title": "Muzarabani, Cremer lead Zimbabwe's push for victory",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR35yiDHSDjawHAtPL5ie-_YGJUmIG2NNDwANnweaUunXNa6E6Pz_wtEwVmVdo"
+        },
+        {
+          "url": "https://www.cricketworld.com/afghanistan-vs-zimbabwe-2nd-test-day-5-live-streaming-scores-and-match-updates/114381.htm",
+          "title": "Afghanistan vs Zimbabwe 2nd Test Day 5 live streaming, scores and match updates",
+          "publisher": "Cricket World",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgrUdtG43H10Eq4r1W8BMx4uL4cjys_qfc-noNauxgqRoANc8-iAy8XR1ZANE"
+        },
+        {
+          "url": "https://www.arabnews.com/cricket/afghanistan-debutant-maroofkhil-misses-equalling-record-but-rattles-zimbabwe-3011911",
+          "title": "Afghanistan debutant Maroofkhil misses equalling record but rattles Zimbabwe",
+          "publisher": "Arab News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_zDHJSpthXRrf7AqoITdSjWqZSj887UtCxPUHToxV1bIrDrEaGI0REd3G3-c"
+        }
+      ]
+    },
+    {
+      "query": "gas prices",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T09:20:00Z",
+      "related_news_urls": [
+        "https://www.wbur.org/news/2026/11/16/thanksgiving-driving-best-worst-traffic",
+        "https://thehill.com/policy/transportation/6223078-airfare-gas-prices-thanksgiving-holiday-travel-predictions/",
+        "https://www.wbaltv.com/article/maryland-thanksgiving-travel-forecast-aaa-worst-traffic-times/74441236"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8k2pWRAxO6mP1Q1FnW-q4XUx-eh7FxXnwHifJQQWjC4Pt21KEhrOiztAp_sE",
+      "image_credit": "WBUR",
+      "news": [
+        {
+          "url": "https://www.wbur.org/news/2026/11/16/thanksgiving-driving-best-worst-traffic",
+          "title": "The best and worst times to drive to your Thanksgiving plans this year, according to AAA",
+          "publisher": "WBUR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8k2pWRAxO6mP1Q1FnW-q4XUx-eh7FxXnwHifJQQWjC4Pt21KEhrOiztAp_sE"
+        },
+        {
+          "url": "https://thehill.com/policy/transportation/6223078-airfare-gas-prices-thanksgiving-holiday-travel-predictions/",
+          "title": "Airfare, gas prices expected to impact Thanksgiving travel: AAA",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWTqnq2G7Dk3BPEmuUlSHQfDexFeR4iD2PrhOnJrm1UOHSOwjCeB_9HpfY_8Y"
+        },
+        {
+          "url": "https://www.wbaltv.com/article/maryland-thanksgiving-travel-forecast-aaa-worst-traffic-times/74441236",
+          "title": "Maryland Thanksgiving travel forecast: Worst traffic times predicted",
+          "publisher": "WBAL-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAnvmO9dqa5U-c89wUXFbyNiDbdr80CxFuITDG43ZAmPQwLpcViC6JjmDTtQ"
+        }
+      ]
+    },
+    {
+      "query": "movie times",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T09:20:00Z",
+      "related_news_urls": [
+        "https://newsroom.chipotle.com/2026-11-16-CHIPOTLE-DEBUTS-THE-SNEAK-IT-IN-HOODIE-DESIGNED-TO-DISCREETLY-BRING-BURRITOS-TO-THE-MOVIES",
+        "https://ktla.com/food/chipotle-is-helping-people-sneak-food-into-movie-theaters-heres-how/",
+        "https://www.foxbusiness.com/fox-news-food-drink/chipotle-launches-sneak-in-hoodies-hidden-pouch-keep-your-burrito-warm"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rFYw3q2FleECAPVLqaFAVqabugYyrOamke1A1LWAdEObONFZFY1FrIIBf3U",
+      "image_credit": "Chipotle",
+      "news": [
+        {
+          "url": "https://newsroom.chipotle.com/2026-11-16-CHIPOTLE-DEBUTS-THE-SNEAK-IT-IN-HOODIE-DESIGNED-TO-DISCREETLY-BRING-BURRITOS-TO-THE-MOVIES",
+          "title": "CHIPOTLE DEBUTS THE \"SNEAK IT IN\" HOODIE DESIGNED TO DISCREETLY BRING BURRITOS TO THE MOVIES",
+          "publisher": "Chipotle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rFYw3q2FleECAPVLqaFAVqabugYyrOamke1A1LWAdEObONFZFY1FrIIBf3U"
+        },
+        {
+          "url": "https://ktla.com/food/chipotle-is-helping-people-sneak-food-into-movie-theaters-heres-how/",
+          "title": "Chipotle is helping people sneak food into movie theaters. Here’s how",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8Us2kEHy90d79l0ciuVCAnN_eMD_D0tGDlxS0BeO6jlO-h-2sczBCJUUMTA0"
+        },
+        {
+          "url": "https://www.foxbusiness.com/fox-news-food-drink/chipotle-launches-sneak-in-hoodies-hidden-pouch-keep-your-burrito-warm",
+          "title": "Chipotle launches ‘Sneak It In’ hoodies with hidden pouch to keep your burrito warm",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzJpK-xEsLDqdT5FO04o20SiblhUgg8SCI6LsSrQRuplh_1R38z5dXcFPm73g"
+        }
+      ]
+    },
+    {
+      "query": "arresto",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T09:20:00Z",
+      "related_news_urls": [
+        "https://www.corriere.it/cronache/26_novembre_16/de-gennaro-indagato-per-il-caso-borsellino-i-giudici-cercano-l-agenda-rossa-05a800de-d964-4b83-b525-e4d7ccdd3xlk.shtml",
+        "https://www.ansa.it/sito/notizie/cronaca/2026/11/16/la-strage-di-via-damelio-gianni-de-gennaro-indagato-per-depistaggio_f194921d-4c33-4bf6-99bc-f4bae25314ce.html",
+        "https://www.editorialedomani.it/idee/commenti/stragi-mafia-inchiesta-caltanissetta-de-luca-de-gennaro-ijb4e73q"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHJpY0NgP45RFeMmiD2Qd2qQqa3VmqwLyVwckXLkKC2FMqaVwgWMnDDCYYZoE",
+      "image_credit": "Corriere della Sera",
+      "news": [
+        {
+          "url": "https://www.corriere.it/cronache/26_novembre_16/de-gennaro-indagato-per-il-caso-borsellino-i-giudici-cercano-l-agenda-rossa-05a800de-d964-4b83-b525-e4d7ccdd3xlk.shtml",
+          "title": "«De Gennaro va arrestato, ha depistato le indagini sulla strage di via D'Amelio»: la richiesta choc per l'ex capo della polizia indagato per depistaggio, poi il no del Gip",
+          "publisher": "Corriere della Sera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHJpY0NgP45RFeMmiD2Qd2qQqa3VmqwLyVwckXLkKC2FMqaVwgWMnDDCYYZoE"
+        },
+        {
+          "url": "https://www.ansa.it/sito/notizie/cronaca/2026/11/16/la-strage-di-via-damelio-gianni-de-gennaro-indagato-per-depistaggio_f194921d-4c33-4bf6-99bc-f4bae25314ce.html",
+          "title": "Chiesto l'arresto dell'ex capo della Polizia De Gennaro, il gip dice no",
+          "publisher": "ANSA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMHmzLNk0NzXnJcqgxNHLmwtMNi5mHVygAs8Dg55YrMxBwNhaO4b1sR-UppKE"
+        },
+        {
+          "url": "https://www.editorialedomani.it/idee/commenti/stragi-mafia-inchiesta-caltanissetta-de-luca-de-gennaro-ijb4e73q",
+          "title": "Indagini pericolose, chi vuole riscrivere la storia delle stragi",
+          "publisher": "Domani",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7nlQLPGBuZmr_7yj64OXJx1PXDpPC3FQhZ1wxfhjiIWGe5YIT0TpHA5nserQ"
+        }
+      ]
+    },
+    {
       "query": "singapore vs brazil",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-17T09:10:00Z",
       "related_news_urls": [
         "https://www.goal.com/en/news/real-madrid-vinicius-brazil-endrick-estevao/blt1a3300a4d2ada184",
-        "https://www.si.com/soccer/how-to-watch-singapore-vs-brazil-tv-live-stream-11-17-26",
-        "https://www.straitstimes.com/sport/football/lions-man-for-big-moments-shawal-anuar-eyeing-dream-come-true-run-out-against-brazil"
+        "https://www.straitstimes.com/sport/football/lions-man-for-big-moments-shawal-anuar-eyeing-dream-come-true-run-out-against-brazil",
+        "https://www.reutersconnect.com/item/mizuho-blue-challenge-singapore-v-brazil/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkgwUjZDR0c"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBh_V-6hbqztOlgh4qGcTK_IWsjubkFdsRZMYHdKA1_-nTJAfeUkEWqPPDAu8",
       "image_credit": "Goal.com",
@@ -26,18 +166,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBh_V-6hbqztOlgh4qGcTK_IWsjubkFdsRZMYHdKA1_-nTJAfeUkEWqPPDAu8"
         },
         {
-          "url": "https://www.si.com/soccer/how-to-watch-singapore-vs-brazil-tv-live-stream-11-17-26",
-          "title": "How to Watch Singapore vs. Brazil on TV, Live Stream",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNlrxBrm9VAtY5NtrIJxD2RrmhcaLTAgry-9L_-q5zYlL0FJOKCdqZTGkCxo0"
-        },
-        {
           "url": "https://www.straitstimes.com/sport/football/lions-man-for-big-moments-shawal-anuar-eyeing-dream-come-true-run-out-against-brazil",
           "title": "Lions’ man for big moments Shawal Anuar eyeing ‘dream come true’ run-out against Brazil",
           "publisher": "The Straits Times",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThNnwJdAHkcFWckX5k0OW1KA1jvQV0JgXJ8wDDNo4WJLfQKI9FGyuwaPi3TUQ"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/mizuho-blue-challenge-singapore-v-brazil/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkgwUjZDR0c",
+          "title": "Licensable picture: Mizuho Blue Challenge - Singapore v Brazil",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZnE3oqL3ln_eAW9n7qpoTYeAtI1WwMV9Ogkzglx0SPvv5UshgLIvearwBhXU"
         }
       ]
     },
@@ -47,8 +187,8 @@
       "published_at": "2026-11-17T09:10:00Z",
       "related_news_urls": [
         "https://www.sanook.com/news/9912243/",
-        "https://www.thairath.co.th/news/local/2973036",
-        "https://thaitv5hd.com/content/204018/%E0%B8%A2%E0%B9%89%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%87-%E0%B8%9E%E0%B8%B5%E0%B8%97-%E0%B8%9E%E0%B8%B5%E0%B8%A3%E0%B8%B0-%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B1%E0%B8%9A%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%9A-Peacemaker-%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2-20-%E0%B8%9B%E0%B8%B5"
+        "https://www.matichon.co.th/entertainment/news_5979299",
+        "https://today.line.me/th/v3/article/rmpDj1Y"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTpLZiw3MsFiX1GNu3-f-Rc4XBpoVKvatN2VbJCpQ1vtPJGZ9GlVCEsxuoyIc",
       "image_credit": "Sanook",
@@ -61,18 +201,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTpLZiw3MsFiX1GNu3-f-Rc4XBpoVKvatN2VbJCpQ1vtPJGZ9GlVCEsxuoyIc"
         },
         {
-          "url": "https://www.thairath.co.th/news/local/2973036",
-          "title": "ช็อกวงการ “พีธ พีระ” นักร้องหนุ่มชื่อดัง เสียชีวิตที่ รพ.ปากเกร็ด 2",
-          "publisher": "thairath.co.th",
+          "url": "https://www.matichon.co.th/entertainment/news_5979299",
+          "title": "บอย เศร้า สูญเสีย พีธ พีระ ขอบคุณทุกอย่างที่มีให้กันตลอด 27 ปี ขอให้เพื่อนเดินทางปลอดภัย",
+          "publisher": "Matichon Online",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA1keYKdiQlGJ7Qb-Zim3KcwANd4DXw1jB2o0b1rzMSyQtggjYgt1MGTOaJhw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj-9ulw3H6AIt4VKhG_Hc2kNBpfMdbS1B5DNnjaJfdM0JSGZZvc9Dqp2h33_4"
         },
         {
-          "url": "https://thaitv5hd.com/content/204018/%E0%B8%A2%E0%B9%89%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%87-%E0%B8%9E%E0%B8%B5%E0%B8%97-%E0%B8%9E%E0%B8%B5%E0%B8%A3%E0%B8%B0-%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B1%E0%B8%9A%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%9A-Peacemaker-%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2-20-%E0%B8%9B%E0%B8%B5",
-          "title": "ย้อนเส้นทาง “พีท พีระ” ก่อนกลับมารวมตัวกับ Peacemaker ในรอบกว่า 20 ปี",
-          "publisher": "ททบ. 5",
+          "url": "https://today.line.me/th/v3/article/rmpDj1Y",
+          "title": "ช็อกวงการเพลง! “พีท พีระ” เสียชีวิตในบ้านพัก ค่ายต้นสังกัดยืนยันข่าวเศร้าเป็นเรื่องจริง",
+          "publisher": "LINE TODAY",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdGtOLgEjlJjl0rkBwM4LVh5WmnqbBn4e4GIuxFuv0NC2Wb-KHqYIppt0BPho"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7CsUofAwmi4h_LuCuiNC1z29gI-Vd-tTgVSaHqqFzgwDOGX2Mor7yRis4VJ0"
         }
       ]
     },
@@ -82,8 +222,8 @@
       "published_at": "2026-11-17T09:10:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/16/us/politics/trump-china-ai-chip-policy.html",
-        "https://www.cnn.com/2026/11/16/politics/howard-lutnick-trump-administration-nvidia",
-        "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates"
+        "https://www.washingtonpost.com/technology/2026/11/16/fight-between-bessent-lutnick-over-nvidia-chips-heats-up/",
+        "https://www.cnn.com/2026/11/16/politics/howard-lutnick-trump-administration-nvidia"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYYz2IXs6EpiFmf72pbldQ_ooAlKrMc6C0sEsKvs1rx5UQlYSUddR7xPrvPPs",
       "image_credit": "The New York Times",
@@ -96,53 +236,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYYz2IXs6EpiFmf72pbldQ_ooAlKrMc6C0sEsKvs1rx5UQlYSUddR7xPrvPPs"
         },
         {
+          "url": "https://www.washingtonpost.com/technology/2026/11/16/fight-between-bessent-lutnick-over-nvidia-chips-heats-up/",
+          "title": "Trump sees ‘both sides’ as Nvidia scandal fuels feud between top aides",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQloa3mXfELGzfV20xRaAupAJW4JTmPTU8Gvy0g-sPg9I5eWDVe-4EnBHDmzYA"
+        },
+        {
           "url": "https://www.cnn.com/2026/11/16/politics/howard-lutnick-trump-administration-nvidia",
           "title": "Howard Lutnick is one big problem for the Trump administration",
           "publisher": "CNN",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaklcLzak8WfQ7sXvr4FbSBoq2nu7ilNwOVTWX-wu6ebSKKtBR3eXCer6PtZw"
-        },
-        {
-          "url": "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates",
-          "title": "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – as it happened",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgtlkF_hC6k_mIfpR08FyuKCGR5S74uwHgJBgfvuFiQrHNvkrZXZXl6kD6rug"
-        }
-      ]
-    },
-    {
-      "query": "pluto tv",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T08:50:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/two-and-a-half-men-free-streaming-pluto-tv-1236947325/",
-        "https://screenrant.com/two-and-a-half-men-charlie-sheen-pluto-streaming/",
-        "https://eurweb.com/pluto-tv-jamie-foxx-martin-wayans-two-and-a-half-men/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynC5UasefSNprcGC3c3Id7PnuoreFvrbDUAve8nkgYNfXajtIAK5fwwtNvUs",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/two-and-a-half-men-free-streaming-pluto-tv-1236947325/",
-          "title": "‘Two and a Half Men’ Hitting Free Streaming for the First Time via Deal With Pluto TV (EXCLUSIVE)",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynC5UasefSNprcGC3c3Id7PnuoreFvrbDUAve8nkgYNfXajtIAK5fwwtNvUs"
-        },
-        {
-          "url": "https://screenrant.com/two-and-a-half-men-charlie-sheen-pluto-streaming/",
-          "title": "Charlie Sheen’s Two & A Half Men Is Officially Beginning A New Era",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJUwyvwSSQ7M3b859PEu7bJXofwYxp44nuKzUj5Cbd95OSAZ19Mc3Axy-jk9c"
-        },
-        {
-          "url": "https://eurweb.com/pluto-tv-jamie-foxx-martin-wayans-two-and-a-half-men/",
-          "title": "Pluto TV Adds ‘The Jamie Foxx Show,’ ‘Martin’ and ‘Two and a Half Men’ to Free Lineup",
-          "publisher": "EURweb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrToVPgrtxcC3KDUlA71MeHsAmKPldS49lQFOktZjAbI1P9AYVf76xFxdbsnA"
         }
       ]
     },
@@ -182,6 +287,41 @@
       ]
     },
     {
+      "query": "pluto tv",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T08:50:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/two-and-a-half-men-free-streaming-pluto-tv-1236947325/",
+        "https://screenrant.com/two-and-a-half-men-charlie-sheen-pluto-streaming/",
+        "https://eurweb.com/pluto-tv-jamie-foxx-martin-wayans-two-and-a-half-men/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynC5UasefSNprcGC3c3Id7PnuoreFvrbDUAve8nkgYNfXajtIAK5fwwtNvUs",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/two-and-a-half-men-free-streaming-pluto-tv-1236947325/",
+          "title": "‘Two and a Half Men’ Hitting Free Streaming for the First Time via Deal With Pluto TV (EXCLUSIVE)",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynC5UasefSNprcGC3c3Id7PnuoreFvrbDUAve8nkgYNfXajtIAK5fwwtNvUs"
+        },
+        {
+          "url": "https://screenrant.com/two-and-a-half-men-charlie-sheen-pluto-streaming/",
+          "title": "Charlie Sheen’s Two & A Half Men Is Officially Beginning A New Era",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJUwyvwSSQ7M3b859PEu7bJXofwYxp44nuKzUj5Cbd95OSAZ19Mc3Axy-jk9c"
+        },
+        {
+          "url": "https://eurweb.com/pluto-tv-jamie-foxx-martin-wayans-two-and-a-half-men/",
+          "title": "Pluto TV Adds ‘The Jamie Foxx Show,’ ‘Martin’ and ‘Two and a Half Men’ to Free Lineup",
+          "publisher": "EURweb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrToVPgrtxcC3KDUlA71MeHsAmKPldS49lQFOktZjAbI1P9AYVf76xFxdbsnA"
+        }
+      ]
+    },
+    {
       "query": "power",
       "approx_searches": "100+",
       "published_at": "2026-11-17T08:50:00Z",
@@ -213,146 +353,6 @@
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLPRrTy1aUTikoSCliVRrxpZP5j1dN2juO5O268cqGKfAP0P7lHGsieq_iMPI"
-        }
-      ]
-    },
-    {
-      "query": "foster v state farm lawsuit",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T08:40:00Z",
-      "related_news_urls": [
-        "https://kfor.com/news/local/state-farm-gets-sanctioned-judge-orders-company-executives-to-testify-at-upcoming-trial/",
-        "https://www.yahoo.com/news/videos/state-farm-gets-sanctioned-cleveland-233849837.html",
-        "https://kfor.com/news/the-breakdown/cleveland-county-judge-sanctions-state-farm/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi4Vpev-DTzSHnTDndK9X4K9t8_qg5LpqKVmCJx0XtoxsEoxt5lfbTevvUJAA",
-      "image_credit": "KFOR",
-      "news": [
-        {
-          "url": "https://kfor.com/news/local/state-farm-gets-sanctioned-judge-orders-company-executives-to-testify-at-upcoming-trial/",
-          "title": "State Farm gets sanctioned, judge orders company executives to testify at upcoming trial",
-          "publisher": "KFOR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi4Vpev-DTzSHnTDndK9X4K9t8_qg5LpqKVmCJx0XtoxsEoxt5lfbTevvUJAA"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/state-farm-gets-sanctioned-cleveland-233849837.html",
-          "title": "State Farm gets sanctioned by Cleveland County Judge",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6lSBnpqAi75fouPGS64taewdtI8jDOBdhoO3BBLKBdggwyo5tAyGnpkIhTaQ"
-        },
-        {
-          "url": "https://kfor.com/news/the-breakdown/cleveland-county-judge-sanctions-state-farm/",
-          "title": "Cleveland County judge sanctions State Farm",
-          "publisher": "KFOR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7MjzrEXZQycKCTrguP7zKt-Xjx-do5dJsGIx9ylgtIPGV_Bms_Hri_furPxw"
-        }
-      ]
-    },
-    {
-      "query": "bangladesh vs south africa",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T08:40:00Z",
-      "related_news_urls": [
-        "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
-        "https://www.cricinfo.com/story/sa-vs-ban-marques-ackerman-and-litton-das-find-ways-to-make-their-hundreds-special-1562884",
-        "https://www.idahostatejournal.com/sports/national/south-africa-bangladesh-cricket/image_eb90475d-5309-5152-8923-c9c4ad7fe9da.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMNwZgCaUCTgmYqPPjv3xBMreNpcLTRxrNP3JqjBeRMuigiv4gQGL3_zEI0CU",
-      "image_credit": "Cricbuzz",
-      "news": [
-        {
-          "url": "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
-          "title": "RSA vs BAN, 1st Test, Bangladesh tour of South Africa, 2026 - Live Stream",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMNwZgCaUCTgmYqPPjv3xBMreNpcLTRxrNP3JqjBeRMuigiv4gQGL3_zEI0CU"
-        },
-        {
-          "url": "https://www.cricinfo.com/story/sa-vs-ban-marques-ackerman-and-litton-das-find-ways-to-make-their-hundreds-special-1562884",
-          "title": "One for dad, one for daughter: Ackerman and Litton find ways to make their hundreds special",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXeDJ662iTx16Ccx0b1sm4_4w47BJROj3wGquI3oA-Nx7h60Gb5AiiSjBT5lw"
-        },
-        {
-          "url": "https://www.idahostatejournal.com/sports/national/south-africa-bangladesh-cricket/image_eb90475d-5309-5152-8923-c9c4ad7fe9da.html",
-          "title": "South Africa Bangladesh Cricket",
-          "publisher": "Idaho State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5sn0_SUYpQS2YDUoozoQ-xoOgKOYwJlGI54YoOSKbJXrlWbFUNiXdeymC2k4"
-        }
-      ]
-    },
-    {
-      "query": "hailey bieber",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T08:40:00Z",
-      "related_news_urls": [
-        "https://hypebae.com/2026/11/rhode-hailey-bieber-birthday-navy-capsule-collection-windbreaker-where-to-buy",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailey-bieber-drops-navy-blue-171523787.html",
-        "https://www.standard.co.uk/shopping/esbest/fashion/hailey-bieber-rhode-clothing-b1305101.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeIwu9UnFNkQOYIA_hz3GBgPUZS710JoMkyifb9YMN9P-FzL4cJogNI_se0i0",
-      "image_credit": "Hypebae",
-      "news": [
-        {
-          "url": "https://hypebae.com/2026/11/rhode-hailey-bieber-birthday-navy-capsule-collection-windbreaker-where-to-buy",
-          "title": "Rhode Is Celebrating Hailey Bieber's Birthday With Its First Piece of Clothing",
-          "publisher": "Hypebae",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeIwu9UnFNkQOYIA_hz3GBgPUZS710JoMkyifb9YMN9P-FzL4cJogNI_se0i0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailey-bieber-drops-navy-blue-171523787.html",
-          "title": "Hailey Bieber drops navy blue Rhode collection for 30th birthday",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFHfH-UyQPwkrF6e_exL_EKg-nRih-mA0uOn9wqelljuUyhAUK1-TtoDo-9gE"
-        },
-        {
-          "url": "https://www.standard.co.uk/shopping/esbest/fashion/hailey-bieber-rhode-clothing-b1305101.html",
-          "title": "Hailey Bieber takes Rhode beyond beauty with its first fashion launch",
-          "publisher": "London Evening Standard",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaPnXkS9JOfPofoTIaTwdRd5lrgXdAMWRbOQhJzDaI8Bi6Mp9DuWZ82zwtaSw"
-        }
-      ]
-    },
-    {
-      "query": "owala coca-cola",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T08:30:00Z",
-      "related_news_urls": [
-        "https://www.allrecipes.com/owala-x-coca-cola-collab-2026-12258789",
-        "https://www.goodhousekeeping.com/what-to-buy/kitchen-products/a74442856/owala-diet-coke-collaboration/",
-        "https://www.nj.com/shopping-deals/2026/11/owala-and-coca-colas-new-amazon-exclusive-tumblers-are-made-for-soda-lovers.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6LEdL_6CIFW1g_Ek6SBqysp3lbX1-xjMRLh5GlI8Nz-OSBukZxHB8M00_bB4",
-      "image_credit": "Allrecipes",
-      "news": [
-        {
-          "url": "https://www.allrecipes.com/owala-x-coca-cola-collab-2026-12258789",
-          "title": "Coca-Cola Just Dropped a Brand-New Line—and We Want Everything",
-          "publisher": "Allrecipes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6LEdL_6CIFW1g_Ek6SBqysp3lbX1-xjMRLh5GlI8Nz-OSBukZxHB8M00_bB4"
-        },
-        {
-          "url": "https://www.goodhousekeeping.com/what-to-buy/kitchen-products/a74442856/owala-diet-coke-collaboration/",
-          "title": "Owala Just Brought Back Its Viral ‘Diet Coke’ Collection—And We Know It's Going to Sell Out Again",
-          "publisher": "Good Housekeeping",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzhVaelHewc82ISHsOfIqt-xtZg8RlkdR9x9pH-gmiVBzo9EznAsDqgVmrml8"
-        },
-        {
-          "url": "https://www.nj.com/shopping-deals/2026/11/owala-and-coca-colas-new-amazon-exclusive-tumblers-are-made-for-soda-lovers.html",
-          "title": "Owala and Coca-Cola’s new Amazon-exclusive tumblers are made for soda lovers",
-          "publisher": "NJ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHvqYLzt9QFNbdpGGQHDuWQQ8GfPthZAoidSywPi18-U7vCHkFGywxLTxAg1U"
         }
       ]
     }
