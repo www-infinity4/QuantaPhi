@@ -1,0 +1,45 @@
+name: Oracle 21+ preference, swipe and ad stories
+on:
+  pull_request:
+    paths:
+      - index.html
+      - oracle-age-preference.js
+      - oracle-card-deck.js
+      - restricted-ad-card.mjs
+      - shop-phi-switchboard.mjs
+      - shopphi-story-core.mjs
+      - shopphi-story-player.mjs
+      - shopphi-story-player.css
+      - test/oracle-story-sequencer.test.mjs
+      - .github/workflows/oracle-story-sequencer.yml
+  push:
+    branches: [main]
+    paths:
+      - oracle-age-preference.js
+      - oracle-card-deck.js
+      - shopphi-story-core.mjs
+      - shopphi-story-player.mjs
+      - test/oracle-story-sequencer.test.mjs
+permissions:
+  contents: read
+jobs:
+  review-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse new JavaScript and current Oracle modules
+        run: |
+          node --check oracle-age-preference.js
+          node --check oracle-card-deck.js
+          node --check restricted-ad-card.mjs
+          node --check shopphi-story-core.mjs
+          node --check shopphi-story-player.mjs
+          node --check shop-phi-switchboard.mjs
+      - name: Run regression tests
+        run: node --test test/oracle-story-sequencer.test.mjs tests/shop-phi-switchboard.test.mjs test/adult-lifestyle-catalog.test.mjs
