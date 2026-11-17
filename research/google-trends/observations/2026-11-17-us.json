@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T21:01:27.927058Z",
+  "checked_at": "2026-11-17T21:30:48.861349Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "david bednar",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T21:10:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/mlb/news/mlb-qualifying-offer-deadline-morejon-arozarena-bednar-bauers-suzuki-lowe-jeffers-rogers/",
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-17/david-bednar-takes-qualifying-offer-from-yankees",
+        "https://www.nydailynews.com/2026/11/17/closer-david-bednar-accepts-record-setting-qualifying-offer-from-yankees-sources/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS537VEilGrAL33T2UKxtHKm1egE2oGLPOo0_IAY_5Pk2ZDg02d_hkraq831Zw",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/mlb/news/mlb-qualifying-offer-deadline-morejon-arozarena-bednar-bauers-suzuki-lowe-jeffers-rogers/",
+          "title": "Yankees' David Bednar, Twins' Ryan Jeffers accept qualifying offer, six others reject $23.15 million QO",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS537VEilGrAL33T2UKxtHKm1egE2oGLPOo0_IAY_5Pk2ZDg02d_hkraq831Zw"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-17/david-bednar-takes-qualifying-offer-from-yankees",
+          "title": "David Bednar takes qualifying offer from Yankees",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3kUUdEZK8b7qJ6BFAW5iAcg55C-1O6SuyNKqSLMfJ2470RX7ZggI_H-JDVao"
+        },
+        {
+          "url": "https://www.nydailynews.com/2026/11/17/closer-david-bednar-accepts-record-setting-qualifying-offer-from-yankees-sources/",
+          "title": "Closer David Bednar accepts record-setting qualifying offer from Yankees: sources",
+          "publisher": "New York Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtpMSFJGLZCdY9sP-W2XDo7gz1Ec3QE6JU04oJg4WaaLBG4tOUWYUyrBhAXyw"
+        }
+      ]
+    },
+    {
+      "query": "abel nunez",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T21:00:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/espanol/deportes/articulo/2026-11-16/muere-futbolista-causa-de-un-pelotazo-en-liga-juvenil-de-argentina",
+        "https://elpais.com/argentina/2026-11-17/jugador-de-futbol-juvenil-muere-en-argentina-tras-recibir-un-pelotazo-durante-un-partido.html",
+        "https://www.clarin.com/deportes/pelota-pego-cara-cayo-desplomado-desgarradores-detalles-muerte-futbolista-juvenil-abel-nunez_0_QWLlq653S3.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyRTkwRV50FInAcbLjXwMRkSoJjOQ3NJ9VSZ0aWYYqgXfoIpAmI5O3bOCbbc",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/espanol/deportes/articulo/2026-11-16/muere-futbolista-causa-de-un-pelotazo-en-liga-juvenil-de-argentina",
+          "title": "Muere futbolista a causa de un pelotazo en liga juvenil de Argentina",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyRTkwRV50FInAcbLjXwMRkSoJjOQ3NJ9VSZ0aWYYqgXfoIpAmI5O3bOCbbc"
+        },
+        {
+          "url": "https://elpais.com/argentina/2026-11-17/jugador-de-futbol-juvenil-muere-en-argentina-tras-recibir-un-pelotazo-durante-un-partido.html",
+          "title": "Un jugador de fútbol juvenil muere en Argentina tras recibir un pelotazo durante un partido",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0jPAzxkGCgwYOjHTk68fFgUNbKTJRRJm2HSBvrJYwTFxJOcKROcaZkaCHTc0"
+        },
+        {
+          "url": "https://www.clarin.com/deportes/pelota-pego-cara-cayo-desplomado-desgarradores-detalles-muerte-futbolista-juvenil-abel-nunez_0_QWLlq653S3.html",
+          "title": "\"La pelota le pegó en la cara y cayó desplomado\": los desgarradores detalles de la muerte del futbolista juvenil Abel Núñez",
+          "publisher": "Clarin.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-3yGyVtQwVV6XpNSKRziOCLkJ9rYp3zqprv0yGyjABMItqrpuNqhlcSGfq0Q"
+        }
+      ]
+    },
+    {
+      "query": "fbi cyber attack warning",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T20:50:00Z",
+      "related_news_urls": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+        "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA",
+      "image_credit": "Google Cloud",
+      "news": [
+        {
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+          "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+          "publisher": "Google Cloud",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+          "title": "Security for the agentic era, powered by Microsoft Perception",
+          "publisher": "Microsoft",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVbW8p4jRkic8Vj733J8KxzfM6Bo1-Ou0W8A7BeMNoTo458g8xA5Uxw2bOYjA"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
+          "title": "Outpace automated cyber threats with security built for nonstop defense.",
+          "publisher": "blog.google",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIA5u5teLtBD_ZMT0TLZpWFSUfJhrAO5RA6eAH2K83t6b9plj3fyL6yyYyo5Y"
+        }
+      ]
+    },
     {
       "query": "portugal fc",
       "approx_searches": "1000+",
@@ -42,37 +147,142 @@
       ]
     },
     {
-      "query": "rasmus højlund",
+      "query": "notre dame basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T20:40:00Z",
+      "related_news_urls": [
+        "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
+        "https://sports.yahoo.com/articles/watch-notre-dame-vs-florida-203000108.html",
+        "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU",
+      "image_credit": "Florida Gators",
+      "news": [
+        {
+          "url": "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
+          "title": "Players Era 8: No. 1 Florida vs Notre Dame (Tuesday, 4:30 pm)",
+          "publisher": "Florida Gators",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-notre-dame-vs-florida-203000108.html",
+          "title": "How to watch Notre Dame vs Florida: Live stream NCAA College Basketball, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEtfp296nqpn8iycIuTnSxt2uHn8bfdUp6LHfg85avKmaE-B6AHv3Q5uj-OI"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
+          "title": "Florida vs. Notre Dame prediction, odds: 2026 Players Era 8 picks for Tuesday, Nov. 17 by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN3iRc166heYtuBI1p2_lhDYllmtlNUll6r7hbRaGx8GUbTlnvwgNt4U0N9lQ"
+        }
+      ]
+    },
+    {
+      "query": "vinod khosla",
       "approx_searches": "500+",
       "published_at": "2026-11-17T20:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50503146/jorge-jesus-controversy-ronaldo-mom-portugal-tribute",
-        "https://www.nytimes.com/athletic/7778928/2026/11/15/portugal-cristiano-ronaldo-defeat/",
-        "https://www.bbc.com/sport/football/articles/ck87984g3x1po"
+        "https://www.businessinsider.com/khosla-doubles-down-on-coframe-to-build-a-living-internet-2026-11",
+        "https://www.contentgrip.com/coframe-ai-websites-funding/",
+        "https://www.briefia.fr/en/article/coframe-raises-25m-to-personalize-websites-with-ai"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjm7dT29lFETu9ni6SZaxWHGYasxEbPrYCLuOv9jgTmIG-Ndo92JxCU9dvKOY",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRPnTtc3GqsXflSVeFAuCnr-qzoJgRlBWcS9YXDiIrstPily8y8TtSeMefM2o",
+      "image_credit": "Business Insider",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50503146/jorge-jesus-controversy-ronaldo-mom-portugal-tribute",
-          "title": "Jorge Jesus under fire as Ronaldo's mom blasts Portugal over tribute",
-          "publisher": "ESPN",
+          "url": "https://www.businessinsider.com/khosla-doubles-down-on-coframe-to-build-a-living-internet-2026-11",
+          "title": "Vinod Khosla Is Betting AI Will Kill the Static Website",
+          "publisher": "Business Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjm7dT29lFETu9ni6SZaxWHGYasxEbPrYCLuOv9jgTmIG-Ndo92JxCU9dvKOY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRPnTtc3GqsXflSVeFAuCnr-qzoJgRlBWcS9YXDiIrstPily8y8TtSeMefM2o"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7778928/2026/11/15/portugal-cristiano-ronaldo-defeat/",
-          "title": "How Portugal’s send-off for Cristiano Ronaldo turned into a horror show - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.contentgrip.com/coframe-ai-websites-funding/",
+          "title": "Coframe gets $25M for automated website testing",
+          "publisher": "ContentGrip",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXqpSuiFYioS6H5fPFmdC2hfgy8MbRHezgNsjMps6uYbwIde8qh5BE6ZqnQ9Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu_3oZE4o7oJRcKu7BJcupYu201D4wUmoV_3l7cjWiFgLZ4p_vJwONdyjyfSg"
         },
         {
-          "url": "https://www.bbc.com/sport/football/articles/ck87984g3x1po",
-          "title": "Portugal boss responds to criticism from Ronaldo's mum",
+          "url": "https://www.briefia.fr/en/article/coframe-raises-25m-to-personalize-websites-with-ai",
+          "title": "Coframe Raises $25M to Personalize Websites with AI",
+          "publisher": "Brief IA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgK_VxJ5UqIrYtw1Du7DIaGR6MpwNHBQbZ1QSadTmiwV9uTPe8in_HK44F__8"
+        }
+      ]
+    },
+    {
+      "query": "portugal vs norway",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T20:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/crvg2d87xe38t",
+        "https://www.theguardian.com/football/live/2026/nov/17/wales-v-portugal-nations-league-football-live-score-updates",
+        "https://www.espn.com/soccer/story/_/id/50503039/craig-bellamy-cristiano-ronaldo"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyMillnm5GVUP2hUdcsOVRZeP9atS_nqrSRAu9L9DAoDI1tgu5YX39DXab834",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/crvg2d87xe38t",
+          "title": "Wales vs Portugal: Uefa Nations League stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJzP8VBW_sRYyxD-O_AK4zQsy7SIecaIp4VPHG4H1byGpuJWcFwCPmGRat1w"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyMillnm5GVUP2hUdcsOVRZeP9atS_nqrSRAu9L9DAoDI1tgu5YX39DXab834"
+        },
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/17/wales-v-portugal-nations-league-football-live-score-updates",
+          "title": "(17) Wales v Portugal: Nations League football – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd_dMdWd1he3aUH3ce1NZvea0MtQYgnylZemzq-7owK5dVSmH6eH8hj4Q4Nfg"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50503039/craig-bellamy-cristiano-ronaldo",
+          "title": "Wales boss Craig Bellamy urges fans to 'just celebrate' Cristiano Ronaldo after Portugal exit",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRKslvvQFls-jBdVe99vl_qfWbrQFLArRFSRTks-LTO5QnPDOJfEcbaKRgvI"
+        }
+      ]
+    },
+    {
+      "query": "rasmus højlund",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T20:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/devils/news/live-updates-2026020318",
+        "https://www.espn.com/nhl/recap/_/gameId/401892714",
+        "https://www.washingtonpost.com/sports/2026/11/14/caps-fall-7-4-rematch-with-new-jersey-devils/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYzkm09G0lmT7OFbP78_CDVjIpvSX0S7lddr8lIDZjl3IZv4d992FUvR9jnaY",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/devils/news/live-updates-2026020318",
+          "title": "QUICK RECAP: Devils 7, Capitals 4",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYzkm09G0lmT7OFbP78_CDVjIpvSX0S7lddr8lIDZjl3IZv4d992FUvR9jnaY"
+        },
+        {
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892714",
+          "title": "Devils 7-4 Capitals (Nov 14, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWK0Iz4bMxgnswOeiyyiHLZvG4rlPuif_ciL7gZsxcLPIMLBi69rCrKnlsVxw"
+        },
+        {
+          "url": "https://www.washingtonpost.com/sports/2026/11/14/caps-fall-7-4-rematch-with-new-jersey-devils/",
+          "title": "New lines, same result: Capitals fall to Devils",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXO-82Rf5tFtDA3AJSAsSQyedwH9xswtOwQO0Jh7646IVaFdF9-4ApJ8X8qXY"
         }
       ]
     },
@@ -112,78 +322,8 @@
       ]
     },
     {
-      "query": "u.s. soccer",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T20:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50504817/poch-pep-advice-usmnt-job",
-        "https://www.si.com/soccer/usmnt-legend-best-alternative-pep-guardiola",
-        "https://www.bbc.com/sport/football/articles/crgj36e6ee5yo"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtmkREwcOI1_h7oRnK6jnkINcz8IfbQ5b6ahUjqD9BXjgz-07S5BqWZZoenh4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50504817/poch-pep-advice-usmnt-job",
-          "title": "Poch offers Pep advice on USMNT job, calls it 'perfect moment to arrive'",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtmkREwcOI1_h7oRnK6jnkINcz8IfbQ5b6ahUjqD9BXjgz-07S5BqWZZoenh4"
-        },
-        {
-          "url": "https://www.si.com/soccer/usmnt-legend-best-alternative-pep-guardiola",
-          "title": "‘Brilliant Football Mind’—USMNT Legend Pitches Best Alternative to Pep Guardiola",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ90ciuBgUDEPb5NY9m1r_C18cbUGpUOSs41TyDM2SxQm9Qy2qMwQMZP6mB3Bg"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/articles/crgj36e6ee5yo",
-          "title": "Pochettino says he would tell Guardiola to take USA job",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQVpbHneEYijqXEQairiBPbbQaXjQoLUgYrok7d_A_el-MgWwE4zd1QxdbS9s"
-        }
-      ]
-    },
-    {
-      "query": "argentina vs costa rica",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T20:30:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17522786/la-formacion-de-argentina-vs-costa-rica",
-        "https://www.clarin.com/deportes/vacio-dejo-messi-ve-tribunas-seleccion-enfrentara-costa-rica-vez-publico-necesidad-mejorar-imagen_0_g9g5Hr8dfv.html",
-        "https://es-us.noticias.yahoo.com/deportes/canal-pasan-argentina-vs-costa-173602541.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4nahZLuIC_h50bhIwOl2lDRLWWyzhl2CtDXhjUuUrKriCtILAKrKaqbCqs8",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17522786/la-formacion-de-argentina-vs-costa-rica",
-          "title": "El probable equipo de Argentina para enfrentar a Costa Rica en Córdoba",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4nahZLuIC_h50bhIwOl2lDRLWWyzhl2CtDXhjUuUrKriCtILAKrKaqbCqs8"
-        },
-        {
-          "url": "https://www.clarin.com/deportes/vacio-dejo-messi-ve-tribunas-seleccion-enfrentara-costa-rica-vez-publico-necesidad-mejorar-imagen_0_g9g5Hr8dfv.html",
-          "title": "El vacío que dejó Messi se ve en las tribunas: la Selección enfrentará a Costa Rica otra vez con poco público y con la necesidad de mejorar su imagen",
-          "publisher": "Clarin.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTibENsqHpLl_iJHOXIQzYX-slKFUjBEoAWLgCx_8Sv9L84yrwc4L-9I1V6p88"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/canal-pasan-argentina-vs-costa-173602541.html",
-          "title": "En qué canal pasan Argentina vs. Costa Rica, por un amistoso hoy",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuPysf5HUZxoovBKRsJnBq_BszuYsaJakhIPiQnXcRAkIgS2Q4Anj2x0ueRw0"
-        }
-      ]
-    },
-    {
       "query": "xbox game pass",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-17T20:30:00Z",
       "related_news_urls": [
         "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/",
@@ -213,146 +353,6 @@
           "publisher": "VICE",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElcM8dOkAqVp51Latak7Q8cdqvuhsqB84tCag6A_fsXbFZKvl1F3R36vEvHo"
-        }
-      ]
-    },
-    {
-      "query": "taylor sheridan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T20:20:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-culture/yellowstone-creator-taylor-sheridan-no-apologies-spending-big-money-hit-tv-shows",
-        "https://finance.yahoo.com/markets/article/yellowstone-creator-taylor-sheridan-on-why-he-signed-a-big-deal-with-nbcuniversal-after-years-with-paramount-200930676.html",
-        "https://www.countrythangdaily.com/taylor-sheridan-was-330-million-short-when-the-6666-ranch-came-up-and-now-he-admits-theres-no-playbook/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRiorQFmvthma53GDpUA2oAUalIIVfMsC25mt2nJG6NBhhxppx5O-pe9TMlc",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-culture/yellowstone-creator-taylor-sheridan-no-apologies-spending-big-money-hit-tv-shows",
-          "title": "Yellowstone creator Taylor Sheridan has no apologies for spending big money on his hit TV shows",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRiorQFmvthma53GDpUA2oAUalIIVfMsC25mt2nJG6NBhhxppx5O-pe9TMlc"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/article/yellowstone-creator-taylor-sheridan-on-why-he-signed-a-big-deal-with-nbcuniversal-after-years-with-paramount-200930676.html",
-          "title": "'Yellowstone' creator Taylor Sheridan on why he signed a big deal with NBCUniversal after years with Paramount",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1F5Sp5n3JAm8wuQ40NLqTdqEaICVXDO7Ol53YWatwVfdg9dy_ggKVDHm1tO4"
-        },
-        {
-          "url": "https://www.countrythangdaily.com/taylor-sheridan-was-330-million-short-when-the-6666-ranch-came-up-and-now-he-admits-theres-no-playbook/",
-          "title": "Taylor Sheridan Was \"$330 Million Short\" When the Historic 6666 Ranch Came Up",
-          "publisher": "Country Thang Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgPJW4kUSCFNXrkVGde2vQDOYwmkBXawTpxqz5aC_3rqx05EAha1ueeaC5X-I"
-        }
-      ]
-    },
-    {
-      "query": "austria vs israel",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T20:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c6y974v0evnpt",
-        "https://easyodds.com/israel-vs-austria-betting-odds-tips-predictions-preview-17th-november-2026",
-        "https://www.squawka.com/en/news/israel-vs-austria-bet-builder-tips-tonight-17-11-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c6y974v0evnpt",
-          "title": "Israel vs Austria: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
-        },
-        {
-          "url": "https://easyodds.com/israel-vs-austria-betting-odds-tips-predictions-preview-17th-november-2026",
-          "title": "Israel vs Austria Betting Odds, Tips, Predictions, Preview 17th November 2026",
-          "publisher": "Easyodds.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3cqgGjg90xGXqpvSzcBn7Z-2pJCgAiUexn-eOtXv_ei70kSUQ4RzkS8O-a8k"
-        },
-        {
-          "url": "https://www.squawka.com/en/news/israel-vs-austria-bet-builder-tips-tonight-17-11-2026/",
-          "title": "Israel vs Austria Bet Builder Tips Tonight (7.45pm KO): our 5/1 three-leg pick",
-          "publisher": "Squawka",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCo-kGYAmMS6bGjXWfBg44413tiqspUQWPHO21ux29uYy3aJalokReaWuecSM"
-        }
-      ]
-    },
-    {
-      "query": "charles bronson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T20:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cqjd7n7p09j5o",
-        "https://www.lbc.co.uk/article/charles-bronson-again-refused-release-5HjdmSy_2/",
-        "https://news.sky.com/story/charles-bronson-refused-parole-for-ninth-time-13613277"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjsmphHNJwHE14EJh88T0By83m__n1Bwd-keWKmHzsReyWQK6Rbybtuk8o1Bc",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cqjd7n7p09j5o",
-          "title": "Luton-born Charles Bronson denied parole for ninth time",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjsmphHNJwHE14EJh88T0By83m__n1Bwd-keWKmHzsReyWQK6Rbybtuk8o1Bc"
-        },
-        {
-          "url": "https://www.lbc.co.uk/article/charles-bronson-again-refused-release-5HjdmSy_2/",
-          "title": "Charles Bronson, one of UK’s longest-serving inmates, again refused release",
-          "publisher": "LBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaq6S9yhHZ7YqPD4k8FNF1yxms3kPe6yTtc4ng0HLjJwYLm9-vFIiwgUrTb0o"
-        },
-        {
-          "url": "https://news.sky.com/story/charles-bronson-refused-parole-for-ninth-time-13613277",
-          "title": "Charles Bronson refused parole for ninth time",
-          "publisher": "Sky News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFBUOJ3eO7JERfSAe-GwwJtihqEWJhhFROSyXyv4qzvAG7zY7LmFgRNsK5S1g"
-        }
-      ]
-    },
-    {
-      "query": "christopher laneve",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T20:10:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/national-security/2026/11/17/trump-nominates-gen-chris-laneve-army-chief-staff/",
-        "https://www.nytimes.com/2026/11/17/us/hegseth-christopher-laneve-army-chief-of-staff.html",
-        "https://abcnews.com/Politics/trump-nominates-laneve-top-army-officer/story?id=138219615"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFXgbo7DyXAqVPV4Sgzf5Kd2864kNMip5n6LZdPl3CMvuWYLHPWAV8h1wxoxI",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/national-security/2026/11/17/trump-nominates-gen-chris-laneve-army-chief-staff/",
-          "title": "Trump nominates new top Army general, setting stage for confirmation fight",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFXgbo7DyXAqVPV4Sgzf5Kd2864kNMip5n6LZdPl3CMvuWYLHPWAV8h1wxoxI"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/17/us/hegseth-christopher-laneve-army-chief-of-staff.html",
-          "title": "Hegseth Nominates His Former Aide to Lead the Army",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSScLFCNy9epg_E0aRDTAAlqEUc2vrfcWTpuXZDACsuJFdYwOCshz1m2z0GSbE"
-        },
-        {
-          "url": "https://abcnews.com/Politics/trump-nominates-laneve-top-army-officer/story?id=138219615",
-          "title": "Trump nominates LaNeve as top Army officer",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN5pQ-sv-Hfjo-BWG3nxJcx6E2X2OU0Zy6MYbSYoRD4gFcRhMk6r22CxCcveE"
         }
       ]
     }
