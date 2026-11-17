@@ -3,17 +3,201 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T17:01:32.352515Z",
+  "checked_at": "2026-11-17T17:31:30.784898Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "honduras vs",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T17:10:00Z",
+      "related_news_urls": [
+        "https://cfl.ca/article/elks-top-alouettes-to-capture-113th-grey-cup",
+        "https://nevadasportsnet.com/news/reporters/defying-critics-yet-again-cody-fajardo-wins-third-grey-cup-title-earning-second-mvp",
+        "https://www.tsn.ca/cfl/article/107-million-unique-viewers-tune-into-113th-grey-cup-viewership-up-44-per-cent/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsB4ujygPDTlLOvbOMTKgDx2YoLC0uxv5DSBnHLlMTe-LjTOZPDIy4y9lBZ0U",
+      "image_credit": "CFL",
+      "news": [
+        {
+          "url": "https://cfl.ca/article/elks-top-alouettes-to-capture-113th-grey-cup",
+          "title": "Elks top Alouettes to capture 113th Grey Cup",
+          "publisher": "CFL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsB4ujygPDTlLOvbOMTKgDx2YoLC0uxv5DSBnHLlMTe-LjTOZPDIy4y9lBZ0U"
+        },
+        {
+          "url": "https://nevadasportsnet.com/news/reporters/defying-critics-yet-again-cody-fajardo-wins-third-grey-cup-title-earning-second-mvp",
+          "title": "Defying critics yet again, Cody Fajardo wins third Grey Cup title, earning second MVP",
+          "publisher": "Nevada Sports Net",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3DokhTHgG9TotWQXPVuxwH0o74Nunnv0YKojDQrq68ly6EEwB6HeShOYnqUs"
+        },
+        {
+          "url": "https://www.tsn.ca/cfl/article/107-million-unique-viewers-tune-into-113th-grey-cup-viewership-up-44-per-cent/",
+          "title": "10.7 million unique viewers tune into 113th Grey Cup, streaming viewership up 44 per cent",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx5vxJ7iFchckXSOpGHJ2zgtJdKOwTSaoE88x02COGzxItGpu0cR7ePvbbF48"
+        }
+      ]
+    },
+    {
+      "query": "tropical storm nolo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T17:00:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "murray state basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T17:00:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/murray-state-racers-vs-hofstra-pride-prediction-odds-2026-11-17/",
+        "https://www.actionnetwork.com/news/college-basketball-predictions-today-5-best-college-basketball-picks-today-ncaab-predictions-for-november-17",
+        "https://www.basketunderreview.com/tuesday-watchlist-november-17-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/murray-state-racers-vs-hofstra-pride-prediction-odds-2026-11-17/",
+          "title": "Murray State vs Hofstra Prediction, Picks & Odds | 17 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
+        },
+        {
+          "url": "https://www.actionnetwork.com/news/college-basketball-predictions-today-5-best-college-basketball-picks-today-ncaab-predictions-for-november-17",
+          "title": "College Basketball Predictions Today: 5 Best Picks for Nov. 17",
+          "publisher": "Action Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwOKf_fsmjuBvKXa-xMJpiTiWB-6fP5Vw4eF3oEfjChHhxvsQKeB3fcwiz-w8"
+        },
+        {
+          "url": "https://www.basketunderreview.com/tuesday-watchlist-november-17-2026/",
+          "title": "Tuesday Watchlist: November 17, 2026",
+          "publisher": "Basket Under Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn5qFUvtEwfimN5pm7wnh7-5yD7XuweyVA6oglGpJTkRXEkNW4IYdISyFTIpw"
+        }
+      ]
+    },
+    {
+      "query": "game awards",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-17T16:50:00Z",
+      "related_news_urls": [
+        "https://www.polygon.com/the-game-awards-2026-nominees-announcement-date/",
+        "https://variety.com/2026/awards/news/game-awards-nominees-special-ps5-livestream-winners-1236946910/",
+        "https://press.disneyplus.com/news/the-game-awards"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSn5dqaWMZD2e_7gDJwim6BL_7t9gyPIbOyQOlx_yXKkPdzlvLlUNO_ALfg4",
+      "image_credit": "Polygon.com",
+      "news": [
+        {
+          "url": "https://www.polygon.com/the-game-awards-2026-nominees-announcement-date/",
+          "title": "The Game Awards 2026 Nominees Reveal: Here's How to Watch",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSn5dqaWMZD2e_7gDJwim6BL_7t9gyPIbOyQOlx_yXKkPdzlvLlUNO_ALfg4"
+        },
+        {
+          "url": "https://variety.com/2026/awards/news/game-awards-nominees-special-ps5-livestream-winners-1236946910/",
+          "title": "The Game Awards to Reveal 2026 Nominees Next Week Ahead of ‘GTA 6’ Debut, PlayStation 5 Joins Livestreamers for December Show (EXCLUSIVE)",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpETX41j1wdcBH_JxCLrjP7MzaArY1bitEGsXhJKz7sUIrLCiA75bGMPvm-so"
+        },
+        {
+          "url": "https://press.disneyplus.com/news/the-game-awards",
+          "title": "Disney+ to Stream The Game Awards 2026 Live on December 10",
+          "publisher": "Disney+ Press Center",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuGcJOWM55l-H1mJC0PAdg-cvMaVh9JUoU20RuibrP6dlG3_7mYXf9La7-C48"
+        }
+      ]
+    },
+    {
+      "query": "found",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-17T16:50:00Z",
+      "related_news_urls": [
+        "https://6abc.com/post/remains-found-new-jerseys-pine-barrens-identified-missing-woman-danielle-lopez/20046705/",
+        "https://www.nj.com/burlington/2026/11/the-terror-is-gone-an-nj-moms-emotional-words-after-her-missing-daughters-remains-were-identified.html",
+        "https://www.inquirer.com/crime/daniel-lopez-missing-pine-barrens-remains-found-20261116.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsRhQk8cQqxEb5MrTFrLyaX_WFGHOlp0HamI8Ag7QrExdtMff6eoW1lBr2D6k",
+      "image_credit": "6abc Philadelphia",
+      "news": [
+        {
+          "url": "https://6abc.com/post/remains-found-new-jerseys-pine-barrens-identified-missing-woman-danielle-lopez/20046705/",
+          "title": "Danielle Lopez dental records confirmation: Remains found in New Jersey's Pine Barrens identified as missing woman",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsRhQk8cQqxEb5MrTFrLyaX_WFGHOlp0HamI8Ag7QrExdtMff6eoW1lBr2D6k"
+        },
+        {
+          "url": "https://www.nj.com/burlington/2026/11/the-terror-is-gone-an-nj-moms-emotional-words-after-her-missing-daughters-remains-were-identified.html",
+          "title": "‘The terror is gone’: An N.J. mom’s emotional words after her missing daughter’s remains were identified",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSM2gyMvx9gRq-2gJwFbICcTy_lhnwR7G8JJs7J26K2qx33B4aBBy1b4JjwZ6Y"
+        },
+        {
+          "url": "https://www.inquirer.com/crime/daniel-lopez-missing-pine-barrens-remains-found-20261116.html",
+          "title": "Remains of missing woman found in South Jersey",
+          "publisher": "Inquirer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr7UKSv1z89BrF6vCDZlRdvPrZAMJAZUd-O_4Nx0ZmVrSVaSofv2pyL2MkC_E"
+        }
+      ]
+    },
+    {
+      "query": "artex",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T16:50:00Z",
+      "related_news_urls": [
+        "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
+        "https://blog.barracuda.com/2026/11/11/anatomy-of-a-machine-speed-intrusion",
+        "https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkKlUHm4-eUefmVWvZ0yA04Vd7zjW5hgTfG3p_1TlrQx7Ina6QdZqFieAEwJE",
+      "image_credit": "Amazon Web Services (AWS)",
+      "news": [
+        {
+          "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
+          "title": "Amazon Threat Intelligence observes threat actors running cybercrime campaigns with ARTEX AI agents",
+          "publisher": "Amazon Web Services (AWS)",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkKlUHm4-eUefmVWvZ0yA04Vd7zjW5hgTfG3p_1TlrQx7Ina6QdZqFieAEwJE"
+        },
+        {
+          "url": "https://blog.barracuda.com/2026/11/11/anatomy-of-a-machine-speed-intrusion",
+          "title": "Forty-four hours: Anatomy of a machine-speed intrusion",
+          "publisher": "Barracuda Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVjB7s_O-JVdNxwxJL8b5d7fTFklMRMiE1QcvbhA6zc-riR279YyLwZBKWZ-w"
+        },
+        {
+          "url": "https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/",
+          "title": "ARTEX Unmasked | The Rise of AI-Powered ARTEX in Cybercrime & Espionage",
+          "publisher": "SentinelOne",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY96S6tsP3fWMA63K8STSXHoz3ExXoH40jD5V5xtLhVe-v6SqIgY7akMPaDQ"
+        }
+      ]
+    },
+    {
       "query": "libya vs tunisia",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-17T16:40:00Z",
       "related_news_urls": [
         "https://www.sportsgambler.com/betting-tips/football/libya-vs-tunisia-prediction-2026-11-17/",
-        "https://www.bbc.com/sport/football/live/cwx28ee4ygnlt",
-        "https://libyaobserver.ly/sports/beninese-referee-appointed-officiate-libyas-africa-cup-nations-qualifier-against-tunisia"
+        "https://panafricafootball.com/article/tunisia-libya-afcon-qualifier-wounded-team-26",
+        "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-libya-vs-tunisia-live-on-bein-sports-2026-11-16"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_KwX075IEWoCXiOZ14u1krLHG6w5Vl4YSwJ-T40GoNZu5Xd_ZtEG23RVcUo",
       "image_credit": "Sportsgambler",
@@ -26,29 +210,29 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_KwX075IEWoCXiOZ14u1krLHG6w5Vl4YSwJ-T40GoNZu5Xd_ZtEG23RVcUo"
         },
         {
-          "url": "https://www.bbc.com/sport/football/live/cwx28ee4ygnlt",
-          "title": "Tunisia vs Libya: Africa Cup of Nations Qualification stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://panafricafootball.com/article/tunisia-libya-afcon-qualifier-wounded-team-26",
+          "title": "Tunisia: Libya coach Youssef Dabo describes \"wounded\" opponent",
+          "publisher": "Pan Africa Football",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfczYRLJVRbwk22lLnv_nJdZOIqFErYPYH8W0pouZ83J3du-AiJyC0jqtvFnE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlypO3rymdAwsoy5xLwRpyM_rqEto4K9fMFe5i2-dF3UxtKSDVysyvpcSgJgs"
         },
         {
-          "url": "https://libyaobserver.ly/sports/beninese-referee-appointed-officiate-libyas-africa-cup-nations-qualifier-against-tunisia",
-          "title": "Beninese referee appointed to officiate Libya’s Africa Cup of Nations qualifier against Tunisia",
-          "publisher": "The Libya Observer",
+          "url": "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-libya-vs-tunisia-live-on-bein-sports-2026-11-16",
+          "title": "Libya vs Tunisia: Can the Eagles Respond?",
+          "publisher": "beIN SPORTS",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpu-Vwd6kj_ulO9u5i-sc3BO9FhCrV_V0QuuOCbZw05n_pYbcXKQssQtTNmDQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJk9dDNvomjrlG8_Uzt-0v3KJbxa3XLiRB8V42St7rUdVkTC5Ag0mQY7ukmmg"
         }
       ]
     },
     {
       "query": "measles",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-17T16:30:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/17/well/us-measles-elimination-status.html",
-        "https://www.vox.com/health/510836/us-measles-cases-deaths-elimination-status",
-        "https://www.washingtonpost.com/ripple/2026/11/16/an-epidemiologist-explains-what-it-will-take-regain-measles-elimination-status/"
+        "https://www.theguardian.com/us-news/2026/nov/17/us-measles-outbreak-elimination-status",
+        "https://www.vox.com/health/510836/us-measles-cases-deaths-elimination-status"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHAbi1zevB3Uz-k0QgVYg8oLx5Ef06Nkn1YqZdkxgSulAWA2E0dZCGv3SHSOM",
       "image_credit": "The New York Times",
@@ -61,18 +245,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHAbi1zevB3Uz-k0QgVYg8oLx5Ef06Nkn1YqZdkxgSulAWA2E0dZCGv3SHSOM"
         },
         {
+          "url": "https://www.theguardian.com/us-news/2026/nov/17/us-measles-outbreak-elimination-status",
+          "title": "US loses measles elimination status amid worst outbreak since 1991",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi19gpRsI0rIKeuuRoiEpnoeMzpYdKEYqscvAnmdxaGQnaN_-aXJUAabY8pFI"
+        },
+        {
           "url": "https://www.vox.com/health/510836/us-measles-cases-deaths-elimination-status",
           "title": "The US has officially lost control of measles",
           "publisher": "Vox",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzeRbpczgfNGqcm2KOzxkLO4nwMePqCs6bc0e87x2-2jxEL887uOtJc6kYoOg"
-        },
-        {
-          "url": "https://www.washingtonpost.com/ripple/2026/11/16/an-epidemiologist-explains-what-it-will-take-regain-measles-elimination-status/",
-          "title": "An epidemiologist explains what it will take to regain measles elimination status",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwdKkfg72MIbmA3mLgIbC4sRiTK-9ffoWDy8Yq_42I42GSDAYp-4AvzItsJaM"
         }
       ]
     },
@@ -109,216 +293,6 @@
           "publisher": "New Haven Register",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4niSXKVwJ6JI01-xq2VHX9p-XqptSc0Yh13OmsqF-HzJwAwUN-KyUszDz3w4"
-        }
-      ]
-    },
-    {
-      "query": "charles schwab down",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T16:10:00Z",
-      "related_news_urls": [
-        "https://www.businessinsider.com/charles-scwab-website-outage-reports-2026-11",
-        "https://www.marketscreener.com/news/charles-schwab-s-user-reports-showing-outage-according-to-downdetector-ce785edcda8ff32d",
-        "https://finance.yahoo.com/markets/stocks/articles/13-trillion-asset-manager-charles-161323526.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3dtljbHsPLBg_g2GThQktzhhNn_xKrTKyToUumI0SfKSZLPaTyj0qwa4h0U8",
-      "image_credit": "Business Insider",
-      "news": [
-        {
-          "url": "https://www.businessinsider.com/charles-scwab-website-outage-reports-2026-11",
-          "title": "Charles Schwab Website Goes Down As Users Report Issues",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3dtljbHsPLBg_g2GThQktzhhNn_xKrTKyToUumI0SfKSZLPaTyj0qwa4h0U8"
-        },
-        {
-          "url": "https://www.marketscreener.com/news/charles-schwab-s-user-reports-showing-outage-according-to-downdetector-ce785edcda8ff32d",
-          "title": "Charles Schwab's User Reports Showing Outage, According to Downdetector",
-          "publisher": "marketscreener.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbwcWLWmcA6ZnkGy8vPVKuW9Kz7ruNA9-R1lisKo6B5YGDPIkD6r_943PW6GU"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/13-trillion-asset-manager-charles-161323526.html",
-          "title": "$13 Trillion Asset Manager Charles Schwab Suffering an “Internal Server Error” – Here Is What We Know So Far",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6APEgj1IQ1WmW9cC-3H7RM_eWicU2W0VpFlbaP2Dkvr3FuRZOtkpUX8TFslc"
-        }
-      ]
-    },
-    {
-      "query": "dustin may",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T16:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50511537/source-white-sox-dustin-reach-3-year-525m-contract",
-        "https://sports.yahoo.com/articles/brewers-lose-world-series-champion-163641960.html",
-        "https://www.usatoday.com/story/sports/mlb/2026/11/17/dustin-may-contract-white-sox/92826140007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVaGgQ4HNTi5eah9nfn9Z_H0fKF4FhmvK-y-xpXrwgg2K2WFAXKLuIN_UWQ4Y",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50511537/source-white-sox-dustin-reach-3-year-525m-contract",
-          "title": "Source - White Sox, Dustin May reach 3-year, $52.5M contract",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVaGgQ4HNTi5eah9nfn9Z_H0fKF4FhmvK-y-xpXrwgg2K2WFAXKLuIN_UWQ4Y"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/brewers-lose-world-series-champion-163641960.html",
-          "title": "Brewers lose World Series champion pitcher to White Sox in free agency",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6NJAT8AypbLS6YIw5C2-semWza8QR_eZZo6FfPWzjBsUG6oJ8qqSTDY01PFE"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/mlb/2026/11/17/dustin-may-contract-white-sox/92826140007/",
-          "title": "Dustin May agrees to $52 million deal with White Sox as Brewers get raided again",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPWvOptsZu56lh9vG2WmrMHcz37N3NE8JlpXMuj-Mpk-sb6_jchESXoWiUEjk"
-        }
-      ]
-    },
-    {
-      "query": "gavin baker",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T16:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
-        "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a",
-        "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKkXF5V7GfgkQHrKgX2P1h-f6vEAnOMkBXib-bxJRlBvQJVR30iUDOzuvtb0M",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
-          "title": "Former Nvidia CEO Jensen Huang says he’s open to returning in first statement since resignation",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKkXF5V7GfgkQHrKgX2P1h-f6vEAnOMkBXib-bxJRlBvQJVR30iUDOzuvtb0M"
-        },
-        {
-          "url": "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a",
-          "title": "Alice Huang’s Husband Built a Data-Center Empire Backed by the Chinese State",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3BQPelbXdqSzJ52zAtSbW4uylbEbzU-deTzNOAj1HOHMasc5gvvcICDsmJsY"
-        },
-        {
-          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
-          "title": "NVIDIA Announces CEO Transition",
-          "publisher": "NVIDIA Newsroom",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qDUGyx7H7uiXEnq5EQILYq0dJjxyQRhS2zpsVdoBZCM1RxEiYeJ_NZ_PfHQ"
-        }
-      ]
-    },
-    {
-      "query": "nasa",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T16:00:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/chicago/video/nasas-voyager-1-is-about-to-reach-new-distance-record-of-1-light-day-in-interstellar-space/",
-        "https://www.npr.org/2026/11/15/nx-s1-6041716/a-long-long-ways-from-home-voyager-1-is-now-farther-than-anything-man-has-sent-into-space",
-        "https://www.reuters.com/science/nasas-voyager-1-probe-poised-achieve-mega-distance-milestone-2026-11-14/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzQVzKu08aMSNQEAqMUCEJOIe1EQU23HDtci2ulBxw2pXgjzX29vgYzsa-K8c",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/chicago/video/nasas-voyager-1-is-about-to-reach-new-distance-record-of-1-light-day-in-interstellar-space/",
-          "title": "NASA's Voyager 1 is about to reach new distance record of 1 light-day in interstellar space",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzQVzKu08aMSNQEAqMUCEJOIe1EQU23HDtci2ulBxw2pXgjzX29vgYzsa-K8c"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/15/nx-s1-6041716/a-long-long-ways-from-home-voyager-1-is-now-farther-than-anything-man-has-sent-into-space",
-          "title": "Far from home. Voyager 1 is now farther than anything man has sent into space",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkRsYH8SmpDhu6uSElicBmlQaRP-S-S7iXRG8V4z0-gcqSD_3-A6UhJNFkjGY"
-        },
-        {
-          "url": "https://www.reuters.com/science/nasas-voyager-1-probe-poised-achieve-mega-distance-milestone-2026-11-14/",
-          "title": "NASA's Voyager 1 probe poised to achieve mega-distance milestone",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBEnklQud5RRpNPlEZxDXcbKpAs_mponjqI6Ahy_N65w9zelh1n-y7jj9BW58"
-        }
-      ]
-    },
-    {
-      "query": "now stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T16:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/servicenow-stock-now-historic-sell-213800295.html",
-        "https://finance.biggo.com/news/13a0bb1d-efb2-444f-9357-8e83815b055e",
-        "https://blockchain.news/news/20261117-price-prediction-now-oversold-but-still-trapped-under-broken"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVnTb-XYYOIIZ1GrcaNNfzfTACZWdpT34EDTFI7YXdRGeJdyPmUHmasE2wfiU",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/servicenow-stock-now-historic-sell-213800295.html",
-          "title": "ServiceNow Stock’s (NOW) Historic Sell-Off May Have Gone Too Far",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVnTb-XYYOIIZ1GrcaNNfzfTACZWdpT34EDTFI7YXdRGeJdyPmUHmasE2wfiU"
-        },
-        {
-          "url": "https://finance.biggo.com/news/13a0bb1d-efb2-444f-9357-8e83815b055e",
-          "title": "ServiceNow's Record Plunge Leaves Shares at 21x 2027 Earnings as AI Bookings Swell",
-          "publisher": "BigGo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1UOIgSjU-xRdSUO95kzHDTcqE_KKLVjXzgs8zvKsNyMasDifj8-G1xEnkeI"
-        },
-        {
-          "url": "https://blockchain.news/news/20261117-price-prediction-now-oversold-but-still-trapped-under-broken",
-          "title": "ServiceNow (NOW) Stock Price Prediction: Oversold but still trapped under broken trend lines",
-          "publisher": "blockchain.news",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuJRLN6M7DuOfT_r9HinmDhqiagMN_-54Cn27XwcklNyjWan72YQznyT5aoSQ"
-        }
-      ]
-    },
-    {
-      "query": "gambia vs côte d'ivoire",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T15:50:00Z",
-      "related_news_urls": [
-        "https://vacunasaep.org/sites/all/libraries/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fhub.aratntx.store%2Fsxhter&idfiles=149925151w865",
-        "https://www.coinbase.com/en-mx/predictions/event/KXAFCON1HSPREAD-26NOV17LBRCPV",
-        "https://uk.sports.yahoo.com/news/yalcouye-scores-again-while-minteh-225118951.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTE-oFDOPrN01yJrV0z3ElVHnoivFlzxJIVEB4EjP3oPqFAekxQ_bqB3OTupw",
-      "image_credit": "Comité Asesor de Vacunas de la AEP",
-      "news": [
-        {
-          "url": "https://vacunasaep.org/sites/all/libraries/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fhub.aratntx.store%2Fsxhter&idfiles=149925151w865",
-          "title": "@!!LIVESTREAM!TODAY!) Gambia vs. Côte d'Ivoire l̇i̇v̇ė ̇ṡṫṙėȧṁṡ ̇ḟṙėė",
-          "publisher": "Comité Asesor de Vacunas de la AEP",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTE-oFDOPrN01yJrV0z3ElVHnoivFlzxJIVEB4EjP3oPqFAekxQ_bqB3OTupw"
-        },
-        {
-          "url": "https://www.coinbase.com/en-mx/predictions/event/KXAFCON1HSPREAD-26NOV17LBRCPV",
-          "title": "Liberia vs Cape Verde: First Half Spread",
-          "publisher": "Coinbase",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
-        },
-        {
-          "url": "https://uk.sports.yahoo.com/news/yalcouye-scores-again-while-minteh-225118951.html",
-          "title": "Yalcouye scores again while Minteh returns to international action",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzCDIRibX5rqJPBQHWXm6F78nqr1W9QP4c4_XWOs814N5V0niVH4BU9FqKjBw"
         }
       ]
     }
