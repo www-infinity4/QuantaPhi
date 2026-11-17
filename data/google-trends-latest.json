@@ -3,21 +3,308 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T18:31:19.873302Z",
+  "checked_at": "2026-11-17T19:01:23.291964Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "gpt 6.2",
-      "approx_searches": "200+",
+      "query": "liberia vs cabo verde",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T18:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cm3vqgg7xwk7t",
+        "https://www.coinbase.com/en-pt/predictions/event/KXAFCON1HBTTS-26NOV17BOTUGA",
+        "https://www.liberianobserver.com/sports/lone-star-suffer-4-2-defeat-to-cabo-verde/article_af32e7a4-7bb1-4d4b-a4c2-4792a434b323.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cm3vqgg7xwk7t",
+          "title": "Cape Verde vs Liberia: Africa Cup of Nations Qualification stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.coinbase.com/en-pt/predictions/event/KXAFCON1HBTTS-26NOV17BOTUGA",
+          "title": "Botswana vs Uganda: First Half BTTS",
+          "publisher": "Coinbase",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
+        },
+        {
+          "url": "https://www.liberianobserver.com/sports/lone-star-suffer-4-2-defeat-to-cabo-verde/article_af32e7a4-7bb1-4d4b-a4c2-4792a434b323.html",
+          "title": "Lone Star Suffer 4-2 Defeat to Cabo Verde",
+          "publisher": "liberianobserver.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZxECRWp4t__F-_nFT06TYZhemofPhfk2vN2sd7-H5UlOaR3X_2LreSYXYxEQ"
+        }
+      ]
+    },
+    {
+      "query": "equinor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T18:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/technology/equinor-detects-ongoing-cyberattack-output-unaffected-2026-11-17/",
+        "https://www.marketscreener.com/news/equinor-detects-cyberattack-against-some-it-systems-ce785edcdd8cf223",
+        "https://www.globalbankingandfinance.com/equinor-detects-cyberattack-against-systems/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyBGRcMfQNBXqdy2HjIQA0CrbLfxgDGJjzcMQdXC0AQgMe2h8PFfVg0drI5U",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/technology/equinor-detects-ongoing-cyberattack-output-unaffected-2026-11-17/",
+          "title": "Equinor detects ongoing cyberattack, output unaffected",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyBGRcMfQNBXqdy2HjIQA0CrbLfxgDGJjzcMQdXC0AQgMe2h8PFfVg0drI5U"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/equinor-detects-cyberattack-against-some-it-systems-ce785edcdd8cf223",
+          "title": "Equinor detects cyberattack against some IT systems",
+          "publisher": "marketscreener.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6lL8DmqBkMJrjLGsipx9WrRD7r7uSRfeQlqWJuqfCK0GW9RODMJ-lgwF_hAQ"
+        },
+        {
+          "url": "https://www.globalbankingandfinance.com/equinor-detects-cyberattack-against-systems/",
+          "title": "Equinor Reports Cyberattack on IT Systems, No Data Theft Detected",
+          "publisher": "Global Banking & Finance Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7_id1GAow2ptVgXQ0xeSrePTQZASFqQtlxSsw7Abka0jxsSCocMso9meBYk"
+        }
+      ]
+    },
+    {
+      "query": "tech outages",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T18:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/17/politics/vance-mullin-infrastructure-crisis-fears-intl-hnk",
+        "https://www.the-independent.com/news/world/americas/us-politics/vance-supplies-food-water-tech-outages-b3086279.html",
+        "https://nypost.com/2026/11/17/us-news/jd-vance-says-americans-have-to-be-prepared-for-crises-but-no-need-to-stock-up-on-supplies/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRj3pTnfi05rR_L28EBUqZl6dJurTZstLykPBCN_5xBquLIRXfzWRsZPIy2MOA",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/17/politics/vance-mullin-infrastructure-crisis-fears-intl-hnk",
+          "title": "Trump administration dismisses crisis fears after string of disruptive tech outages",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRj3pTnfi05rR_L28EBUqZl6dJurTZstLykPBCN_5xBquLIRXfzWRsZPIy2MOA"
+        },
+        {
+          "url": "https://www.the-independent.com/news/world/americas/us-politics/vance-supplies-food-water-tech-outages-b3086279.html",
+          "title": "Vance insists ‘no need to stock up on food and water or build a bunker’ after tech outages",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdQDJrRQVmrYnj3qS42e3Um_JwFO6VmDEUC_7eOFhyGURo9rsw2841qzm0cfk"
+        },
+        {
+          "url": "https://nypost.com/2026/11/17/us-news/jd-vance-says-americans-have-to-be-prepared-for-crises-but-no-need-to-stock-up-on-supplies/",
+          "title": "JD Vance insists no need to panic-buy emergency supplies — but still ‘be prepared for everything’",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_nzghCsKpsiGFPwsYW4nQe-bAX9maA-gsy06AN_IkxUMCmthjavN75782WnQ"
+        }
+      ]
+    },
+    {
+      "query": "rwanda vs mali",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T18:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/ckgel338dyezt",
+        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-mali-v-rwanda-emjeusnvxrbv",
+        "https://www.newtimes.co.rw/article/40493/sports/football/we-are-mentally-prepared-says-constantine-ahead-of-mali-clash"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/ckgel338dyezt",
+          "title": "Mali vs Rwanda: Africa Cup of Nations Qualification stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-mali-v-rwanda-emjeusnvxrbv",
+          "title": "[#LIVESTREAm]+! Mali v Rwanda LIVE Score Updates in Football Match - Nov. 13, 2026",
+          "publisher": "日本取引所グループ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiAjaSnUkaQMOynjmSOOXMaFaDlqfET3VgCIT8Hzn_c84cYPvfBlH_9pWEZN0"
+        },
+        {
+          "url": "https://www.newtimes.co.rw/article/40493/sports/football/we-are-mentally-prepared-says-constantine-ahead-of-mali-clash",
+          "title": "'We are mentally prepared,' says Constantine ahead of Mali clash| The New Times",
+          "publisher": "The New Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-ZSeyUOYv5KZb8x2VG4XSHfmPRbO_WbZz4VfpSG_G890n0u3Qu3ViPPNhB_w"
+        }
+      ]
+    },
+    {
+      "query": "pennsylvania lottery",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T18:30:00Z",
+      "related_news_urls": [
+        "https://www.pennlive.com/lottery/2026/11/winning-pa-lottery-numbers-for-nov-16-2026.html",
+        "https://www.pennlive.com/lottery/2026/11/check-your-tickets-winning-pa-lottery-numbers-for-nov-9-2026.html",
+        "https://www.phillyburbs.com/story/news/local/2026/11/14/pennsylvania-lottery-results-saturday-november-14-2026/92792264007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbzVb2GPUP1peKhA54r-3e1hgBDzllAtwubc8dVGkhu7pj3xkB3Woy4AsRDAA",
+      "image_credit": "PennLive.com",
+      "news": [
+        {
+          "url": "https://www.pennlive.com/lottery/2026/11/winning-pa-lottery-numbers-for-nov-16-2026.html",
+          "title": "Winning Pa. Lottery numbers for Nov. 16, 2026",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbzVb2GPUP1peKhA54r-3e1hgBDzllAtwubc8dVGkhu7pj3xkB3Woy4AsRDAA"
+        },
+        {
+          "url": "https://www.pennlive.com/lottery/2026/11/check-your-tickets-winning-pa-lottery-numbers-for-nov-9-2026.html",
+          "title": "Check your tickets: Winning Pa. lottery numbers for Nov. 9, 2026",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzXTTwfseaxb8sru58ecC5yzU0409IHKwPCEsf-14Kn2Lc5wDoV9SHhzQKpg4"
+        },
+        {
+          "url": "https://www.phillyburbs.com/story/news/local/2026/11/14/pennsylvania-lottery-results-saturday-november-14-2026/92792264007/",
+          "title": "Pennsylvania Lottery Powerball, Pick 2 Day results for Nov. 14, 2026",
+          "publisher": "PhillyBurbs",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPNUhYS236xO1OCCeS1R-EAESUCIa9fklmP7UaOPR87lZBcpZQDk6Mf7ueIiw"
+        }
+      ]
+    },
+    {
+      "query": "rj godfrey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T18:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/arizonas-rj-godfrey-reportedly-eligible-to-play-vs-uconn-after-judge-grants-injunction-182521598.html",
+        "https://tucson.com/sports/arizonawildcats/basketball/article_fa3ab32d-4d91-40f4-86f2-d905e9d19f5a.html",
+        "https://www.kvoa.com/news/top-stories/college-basketball-player-takes-eligibility-fight-to-arizona-court/article_c680a679-caaf-497b-b30e-9f71c2f28fcc.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDSZq5s5pnMO73nuKPOgZSrssZhl373-fLDUWQGpQerQJ_-7RqgzaTNU3Mxkw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/arizonas-rj-godfrey-reportedly-eligible-to-play-vs-uconn-after-judge-grants-injunction-182521598.html",
+          "title": "Arizona's RJ Godfrey reportedly eligible to play vs. UConn after judge grants injunction",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDSZq5s5pnMO73nuKPOgZSrssZhl373-fLDUWQGpQerQJ_-7RqgzaTNU3Mxkw"
+        },
+        {
+          "url": "https://tucson.com/sports/arizonawildcats/basketball/article_fa3ab32d-4d91-40f4-86f2-d905e9d19f5a.html",
+          "title": "Arizona's RJ Godfrey prepares for another legal swing in Pima County Superior Court",
+          "publisher": "Arizona Daily Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDvs0hVl3ibhwoM8jjUBkdJ1o-gMaETchYGyeuhnM6aF7GzCi-6q__lzDXOI"
+        },
+        {
+          "url": "https://www.kvoa.com/news/top-stories/college-basketball-player-takes-eligibility-fight-to-arizona-court/article_c680a679-caaf-497b-b30e-9f71c2f28fcc.html",
+          "title": "College basketball player takes eligibility fight to Arizona court",
+          "publisher": "KVOA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtosahTIbAWVYTJrB9VfxAuemhsT_MNTS955yB1tRvWtJzyL36UAhlDDnAfb0"
+        }
+      ]
+    },
+    {
+      "query": "dallas cowboys football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T18:20:00Z",
+      "related_news_urls": [
+        "https://www.dallascowboys.com/news/brian-schottenheimer-cowboys-taking-a-deep-dive-looking-at-everything-on-defense",
+        "https://sports.yahoo.com/articles/kyle-shanahan-49ers-defensive-effort-153000689.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/stephen-jones-were-playing-unacceptable-football-our-fans-deserve-better"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPqzSRoA-OLndtV8Q3s94wo9hK87ld4LUlQhjAXT6jxRme-b-AaJSo754G69o",
+      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "news": [
+        {
+          "url": "https://www.dallascowboys.com/news/brian-schottenheimer-cowboys-taking-a-deep-dive-looking-at-everything-on-defense",
+          "title": "Brian Schottenheimer, Cowboys 'taking a deep dive, looking at everything' on defense",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPqzSRoA-OLndtV8Q3s94wo9hK87ld4LUlQhjAXT6jxRme-b-AaJSo754G69o"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/kyle-shanahan-49ers-defensive-effort-153000689.html",
+          "title": "Kyle Shanahan on 49ers’ defensive effort in Dallas: ‘The tape tells a different story’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsGR33qYVE4JG6nlq5GWmo7trP2bOqboHqi_qgXsrUYf4Gjxk8pT3ABOelMIw"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/stephen-jones-were-playing-unacceptable-football-our-fans-deserve-better",
+          "title": "Stephen Jones: We’re playing “unacceptable” football, our fans deserve better",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCdNSysWmYDiti0lR9QcxXQYwnlh4qtVU8p7YSrfNvt1WoNMeM5xCj0Bbqylk"
+        }
+      ]
+    },
+    {
+      "query": "when we were young 2027",
+      "approx_searches": "2000+",
       "published_at": "2026-11-17T18:10:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release",
-        "https://www.theverge.com/tech/1035483/openai-releases-its-updated-gpt-6-2-astra-model",
-        "https://thedefiant.io/frontier/ai/gpt-6-2-models-rise-on-ai-index-but-coding-scores-stall"
+        "https://news3lv.com/news/local/when-we-were-young-2027-return-las-vegas-blink-182-pierce-the-veil-music-festival",
+        "https://www.9news.com/article/entertainment/music/when-we-were-young-festival-2027-lineup/73-83b1663e-e75a-42bb-bafb-33901cd07f34",
+        "https://substreammagazine.com/2026/11/when-we-were-young-fest-is-back-2027/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX9_8H68EjFlEeryuvVaS_P_IX0x2LnfcCPY69D0RVJf4BnT7a4L5aImj-IB0",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvwaZNX1P-KZ39AgNezCJgrqE12QJQzmwLqTBFPd0sqvqpkczHVqW8AVDOLNc",
+      "image_credit": "KSNV",
       "news": [
+        {
+          "url": "https://news3lv.com/news/local/when-we-were-young-2027-return-las-vegas-blink-182-pierce-the-veil-music-festival",
+          "title": "When We Were Young 2027 returning to Las Vegas with more than 50 acts",
+          "publisher": "KSNV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvwaZNX1P-KZ39AgNezCJgrqE12QJQzmwLqTBFPd0sqvqpkczHVqW8AVDOLNc"
+        },
+        {
+          "url": "https://www.9news.com/article/entertainment/music/when-we-were-young-festival-2027-lineup/73-83b1663e-e75a-42bb-bafb-33901cd07f34",
+          "title": "When We Were Young Festival announces 2027 lineup",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8BL9t7S-xqMq6xzssQgiKkdhlplYkc0hjqqq8CsUedfcEg56ua3QRIDJJs0"
+        },
+        {
+          "url": "https://substreammagazine.com/2026/11/when-we-were-young-fest-is-back-2027/",
+          "title": "When We Were Young Fest is Back and Better Than Ever: Blink-182 and Pierce the Veil to Headline",
+          "publisher": "Substream Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZSC5bunGcPIzZI0QyZpnNRLkd9E0gmzLpRrsz8DlIgjGiuilWHhjSHKrQGSI"
+        }
+      ]
+    },
+    {
+      "query": "gpt 6.2",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T18:10:00Z",
+      "related_news_urls": [
+        "https://openai.com/index/astra-law-6-2/",
+        "https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release",
+        "https://qz.com/openai-gpt-6-2-astra-release-scrapped-version-111726"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRz4D12OHikPdD1X1qxu40FsgX-0xT_WNJtNOSf6po6DshifxbQ2bvIwqVGw7g",
+      "image_credit": "OpenAI",
+      "news": [
+        {
+          "url": "https://openai.com/index/astra-law-6-2/",
+          "title": "Astra for Law leads in legal intelligence",
+          "publisher": "OpenAI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRz4D12OHikPdD1X1qxu40FsgX-0xT_WNJtNOSf6po6DshifxbQ2bvIwqVGw7g"
+        },
         {
           "url": "https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release",
           "title": "OpenAI Unveils New Astra AI Model After Scrapping Prior Release",
@@ -26,18 +313,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX9_8H68EjFlEeryuvVaS_P_IX0x2LnfcCPY69D0RVJf4BnT7a4L5aImj-IB0"
         },
         {
-          "url": "https://www.theverge.com/tech/1035483/openai-releases-its-updated-gpt-6-2-astra-model",
-          "title": "OpenAI releases its updated GPT-6.2 Astra model.",
-          "publisher": "The Verge",
+          "url": "https://qz.com/openai-gpt-6-2-astra-release-scrapped-version-111726",
+          "title": "OpenAI is unveiling GPT-6.2 Astra after scrapping a prior AI model",
+          "publisher": "Quartz",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZHcWb_Npw_TRPWPoFahy38uHc4ht4t2cBcyDcJXHSIkCVes2BydoVSFQ9rvc"
-        },
-        {
-          "url": "https://thedefiant.io/frontier/ai/gpt-6-2-models-rise-on-ai-index-but-coding-scores-stall",
-          "title": "GPT-6.2 Models Rise on AI Index, but Coding Scores Stall",
-          "publisher": "The Defiant",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSty7J2p6F5G77b-847dQ3JCylxyZNHSA3mSh0s2AusW4NaV8YqFo3Wb-eeMeQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ6jkEeSA3LuHUwf7z6-fqM0Sh2ll3fMBYLvPg058tjtvN2AyR5dQh47rv-LQ"
         }
       ]
     },
@@ -73,278 +353,6 @@
           "publisher": "Push Square",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5R0jBG9H9QXlEmFa1yIoxF6DHx15Fcjip9QE3alij66_INVm56lBh0j0db2E"
-        }
-      ]
-    },
-    {
-      "query": "flight 5342",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T17:40:00Z",
-      "related_news_urls": [
-        "https://thehill.com/policy/transportation/6225379-watch-live-duffy-faa-overhaul-presser-dca-crash/",
-        "https://komonews.com/news/nation-world/dc-midair-crash-families-urge-congress-to-pass-aviation-safety-legislation-ted-cruz-jennifer-homendy-american-airlines",
-        "https://www.fox5dc.com/news/flight-5342-families-urge-congress-pass-aviation-safety-reforms-before-end-year"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVg9xp4PUkBGY5HgTY3oxYjgt2JeCiKx1MN3X7-eroPsRBM2J1m2OPc3iARMc",
-      "image_credit": "The Hill",
-      "news": [
-        {
-          "url": "https://thehill.com/policy/transportation/6225379-watch-live-duffy-faa-overhaul-presser-dca-crash/",
-          "title": "Watch live: Duffy gives remarks amid scrutiny over FAA shortfalls",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVg9xp4PUkBGY5HgTY3oxYjgt2JeCiKx1MN3X7-eroPsRBM2J1m2OPc3iARMc"
-        },
-        {
-          "url": "https://komonews.com/news/nation-world/dc-midair-crash-families-urge-congress-to-pass-aviation-safety-legislation-ted-cruz-jennifer-homendy-american-airlines",
-          "title": "DC midair crash families urge Congress to pass aviation safety legislation",
-          "publisher": "KOMO",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT54zfpkPTRqqDcWfF2m7Sgqmq7OWnJskVwWdoeiEFHfnYp954dHS30pCveyKk"
-        },
-        {
-          "url": "https://www.fox5dc.com/news/flight-5342-families-urge-congress-pass-aviation-safety-reforms-before-end-year",
-          "title": "Flight 5342 families urge Congress to pass aviation safety reforms before end of year",
-          "publisher": "FOX 5 DC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtwRRQOTKxdySfzB9ySRn-x4jQ7YqraBfzWTiQ7a8YM0Px50NfaUK28xbycW8"
-        }
-      ]
-    },
-    {
-      "query": "yemen",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T17:30:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
-        "https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html",
-        "https://www.reuters.com/world/middle-east/yemen-government-forces-withdraw-area-near-bab-el-mandeb-strait-houthis-control-2026-11-15/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVRc7PsytXjUjiwD_e-81ZE6Z_VaUhA3kgCFE1IFGQTL_hdNpWSTcVWKBfM",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
-          "title": "Updates: Yemen’s Houthis edge closer to Aden; Iran, Pakistan hold talks",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVRc7PsytXjUjiwD_e-81ZE6Z_VaUhA3kgCFE1IFGQTL_hdNpWSTcVWKBfM"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html",
-          "title": "Saudi-Backed Forces Retreat in Yemen, Leaving Key Strait in Houthi Control",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY78IfeH9YWDHru_JycGFTAVjkrLaaSynnCxvuLCP6MCDOjVFyVrs__NLLnJk"
-        },
-        {
-          "url": "https://www.reuters.com/world/middle-east/yemen-government-forces-withdraw-area-near-bab-el-mandeb-strait-houthis-control-2026-11-15/",
-          "title": "Yemeni government force retreats from strait in major setback in war against Houthis",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu04BsPh8x_w3J2g5bHsn9POPcYWPkndtjFRdZB_rV4xWhMqo7iWveVttekzk"
-        }
-      ]
-    },
-    {
-      "query": "earthshot prize",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T17:30:00Z",
-      "related_news_urls": [
-        "https://people.com/kate-middleton-showstopping-moment-earthshot-prize-awards-in-india-first-time-4-years-alongside-prince-william-12258764",
-        "https://www.bbc.com/news/articles/cqlykve012d1o",
-        "https://apnews.com/photo-gallery/prince-william-princess-catherine-visit-india-photos-8772f1862dae47e4b91ca1402c8a5aab"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz0_lPHE_zTSXEniJ5OZMCKHx5RAGa4f4cH5iW30QUWqfXoIqiJNtkUZ1jOOI",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/kate-middleton-showstopping-moment-earthshot-prize-awards-in-india-first-time-4-years-alongside-prince-william-12258764",
-          "title": "Kate Middleton Makes Showstopping Entrance in Dramatic Red Gown at Earthshot Awards After 4-Year Absence",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz0_lPHE_zTSXEniJ5OZMCKHx5RAGa4f4cH5iW30QUWqfXoIqiJNtkUZ1jOOI"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cqlykve012d1o",
-          "title": "William and Kate celebrate Earthshot Prize winners in Mumbai",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2VEm3Dxvz1DfzjKfWLIigvNOCqrruM42T_VgpIjfNgNeEpe4C21-RLYEjd_Y"
-        },
-        {
-          "url": "https://apnews.com/photo-gallery/prince-william-princess-catherine-visit-india-photos-8772f1862dae47e4b91ca1402c8a5aab",
-          "title": "Prince William and Princess Catherine visit India, in photos",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSItlJW5ksiTMzo388exfZ6q9ZlQcaunppwpS5dUYMOIcUfDR0j8_omWMSQHqM"
-        }
-      ]
-    },
-    {
-      "query": "banana ball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T17:30:00Z",
-      "related_news_urls": [
-        "https://purduesports.com/news/2026/11/16/viola-selected-in-first-round-of-banana-ball-draft",
-        "https://bvmsports.com/2026/11/16/viola-selected-in-first-round-of-banana-ball-draft/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwrqfQCiYkXSzjGr-to8gq9pOUzyBsUdtxcTHIGDkfnZocjDSf2ebXirkKFI",
-      "image_credit": "Purdue Boilermakers",
-      "news": [
-        {
-          "url": "https://purduesports.com/news/2026/11/16/viola-selected-in-first-round-of-banana-ball-draft",
-          "title": "Viola Selected in First Round of Banana Ball Draft",
-          "publisher": "Purdue Boilermakers",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwrqfQCiYkXSzjGr-to8gq9pOUzyBsUdtxcTHIGDkfnZocjDSf2ebXirkKFI"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/16/viola-selected-in-first-round-of-banana-ball-draft/",
-          "title": "Viola Selected in First Round of Banana Ball Draft",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0lqwMPwQnpiwHPPEmCRkhNqI0J_zt1VPfO0Ewr3PXdj9QwOSTUZM2RuYHK24"
-        }
-      ]
-    },
-    {
-      "query": "apple outage",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-17T17:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/tech/2026/11/17/apple-services-outage/92827849007/",
-        "https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/",
-        "https://nypost.com/2026/11/17/business/apple-services-down-as-apple-pay-app-store-and-apple-support-experience-outages/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm1tlavAo54nGR37f2Ff6WrEibdAQEL7MV7WtE1pP0WXGFMz8X9iHo3uLuXr0",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/tech/2026/11/17/apple-services-outage/92827849007/",
-          "title": "Is Apple down? Thousands report problems accessing services",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm1tlavAo54nGR37f2Ff6WrEibdAQEL7MV7WtE1pP0WXGFMz8X9iHo3uLuXr0"
-        },
-        {
-          "url": "https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/",
-          "title": "iCloud, App Store, and other Apple services hit by ongoing outage",
-          "publisher": "9to5Mac",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkARWYMHiCosv5kcV5D32pWuk3fp9DCms14hg9Thd_zL6ATYSxh3Gcyk8DsIg"
-        },
-        {
-          "url": "https://nypost.com/2026/11/17/business/apple-services-down-as-apple-pay-app-store-and-apple-support-experience-outages/",
-          "title": "Apple services down, as Apple Pay, App Store and Apple Support experience outages",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsvH1xC-5XlfJNAlbYU0mpNPVGRbKS1YGoKo3e2WpGuomewiBibPSTY3Xnko4"
-        }
-      ]
-    },
-    {
-      "query": "mary barra",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T17:20:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/autos/general-motors-seeks-outside-ceo-contenders-to-succeed-mary-barra-e8177c4a",
-        "https://www.freep.com/story/money/cars/general-motors/2026/11/17/gm-mary-barra-replacement-search/92827530007/",
-        "https://www.detroitnews.com/story/business/autos/general-motors/2026/11/17/gm-taps-search-firm-to-find-possible-successor-to-barra-wsj-reports/92828016007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1f6Mu_UxMPE5l6NtHnnT6RWNoAAHxeYeVVYiN_GTS7hs-K5R0y07ZjVh1zA",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/autos/general-motors-seeks-outside-ceo-contenders-to-succeed-mary-barra-e8177c4a",
-          "title": "Exclusive | General Motors Seeks Outside CEO Contenders to Succeed Mary Barra",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1f6Mu_UxMPE5l6NtHnnT6RWNoAAHxeYeVVYiN_GTS7hs-K5R0y07ZjVh1zA"
-        },
-        {
-          "url": "https://www.freep.com/story/money/cars/general-motors/2026/11/17/gm-mary-barra-replacement-search/92827530007/",
-          "title": "GM reportedly searches for potential successor to CEO Mary Barra",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMX7z2T18PGxn8mMwdc-8Czd-OXrPjNF-30W_sw4dQQFfWLl7VQ0jOdFgvrcA"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/business/autos/general-motors/2026/11/17/gm-taps-search-firm-to-find-possible-successor-to-barra-wsj-reports/92828016007/",
-          "title": "GM taps search firm to find possible Barra successor, report says",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuI72pbKmprWcZZz7JmjnKGAq2rCk_fBXH2kIONsUcwPWTJ-b_lN3rdVNbOJM"
-        }
-      ]
-    },
-    {
-      "query": "honduras vs",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T17:10:00Z",
-      "related_news_urls": [
-        "https://globalnews.ca/news/12152194/2026-grey-cup-winner/",
-        "https://nevadasportsnet.com/news/reporters/defying-critics-yet-again-cody-fajardo-wins-third-grey-cup-title-earning-second-mvp",
-        "https://www.tsn.ca/cfl/article/107-million-unique-viewers-tune-into-113th-grey-cup-viewership-up-44-per-cent/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlBkEMTBgc3nXYw9rxxP6nJr0_LOz0EVk87ezyyxlCDn39vnsOmmFKFAffLW0",
-      "image_credit": "Global News",
-      "news": [
-        {
-          "url": "https://globalnews.ca/news/12152194/2026-grey-cup-winner/",
-          "title": "Edmonton Elks win the Grey Cup, defeat Montreal Alouettes by 37-30",
-          "publisher": "Global News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlBkEMTBgc3nXYw9rxxP6nJr0_LOz0EVk87ezyyxlCDn39vnsOmmFKFAffLW0"
-        },
-        {
-          "url": "https://nevadasportsnet.com/news/reporters/defying-critics-yet-again-cody-fajardo-wins-third-grey-cup-title-earning-second-mvp",
-          "title": "Defying critics yet again, Cody Fajardo wins third Grey Cup title, earning second MVP",
-          "publisher": "Nevada Sports Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3DokhTHgG9TotWQXPVuxwH0o74Nunnv0YKojDQrq68ly6EEwB6HeShOYnqUs"
-        },
-        {
-          "url": "https://www.tsn.ca/cfl/article/107-million-unique-viewers-tune-into-113th-grey-cup-viewership-up-44-per-cent/",
-          "title": "10.7 million unique viewers tune into 113th Grey Cup, streaming viewership up 44 per cent",
-          "publisher": "TSN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx5vxJ7iFchckXSOpGHJ2zgtJdKOwTSaoE88x02COGzxItGpu0cR7ePvbbF48"
-        }
-      ]
-    },
-    {
-      "query": "manni l perez",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T17:00:00Z",
-      "related_news_urls": [
-        "https://theconversation.com/lucia-caminos-is-the-first-latina-grand-theft-auto-lead-these-video-game-characters-paved-the-way-290289",
-        "https://www.theverge.com/games/1035602/gta-vis-voice-actor-for-lucia-was-revealed-by-the-game-awards",
-        "https://www.redbull.com/int-en/gta-6-characters-cast"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBrf4yTGQirVtujHRSV9TYoVesz63WtyOh4TysPuYuMSUkiqOXmC_txqCuEm0",
-      "image_credit": "The Conversation",
-      "news": [
-        {
-          "url": "https://theconversation.com/lucia-caminos-is-the-first-latina-grand-theft-auto-lead-these-video-game-characters-paved-the-way-290289",
-          "title": "Lucía Caminos is the first Latina ‘Grand Theft Auto’ lead – these video game characters paved the way",
-          "publisher": "The Conversation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBrf4yTGQirVtujHRSV9TYoVesz63WtyOh4TysPuYuMSUkiqOXmC_txqCuEm0"
-        },
-        {
-          "url": "https://www.theverge.com/games/1035602/gta-vis-voice-actor-for-lucia-was-revealed-by-the-game-awards",
-          "title": "GTA VI’s voice actor for Lucia was revealed by… The Game Awards.",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIvkOo_QoZPqWeAwJ36Fnu7UZ0H29-K059LSvFfNwO2Ex80CO1aErIWW57dWI"
-        },
-        {
-          "url": "https://www.redbull.com/int-en/gta-6-characters-cast",
-          "title": "Who's who in GTA 6? Meet the characters of Vice City",
-          "publisher": "Red Bull",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGN0uxQBcx383QNb9H5vu7pBTjxharPefdQofKSoLyPFQIgX7_-PXhCDR2Yh4"
         }
       ]
     }
