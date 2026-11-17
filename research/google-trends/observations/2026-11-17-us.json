@@ -3,12 +3,179 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T17:31:30.784898Z",
+  "checked_at": "2026-11-17T18:01:45.782374Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "honduras vs",
+      "query": "yemen",
       "approx_searches": "500+",
+      "published_at": "2026-11-17T17:30:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
+        "https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html",
+        "https://www.reuters.com/world/middle-east/yemen-government-forces-withdraw-area-near-bab-el-mandeb-strait-houthis-control-2026-11-15/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVRc7PsytXjUjiwD_e-81ZE6Z_VaUhA3kgCFE1IFGQTL_hdNpWSTcVWKBfM",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
+          "title": "Updates: Yemen’s Houthis edge closer to Aden; Iran, Pakistan hold talks",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVRc7PsytXjUjiwD_e-81ZE6Z_VaUhA3kgCFE1IFGQTL_hdNpWSTcVWKBfM"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html",
+          "title": "Saudi-Backed Forces Retreat in Yemen, Leaving Key Strait in Houthi Control",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY78IfeH9YWDHru_JycGFTAVjkrLaaSynnCxvuLCP6MCDOjVFyVrs__NLLnJk"
+        },
+        {
+          "url": "https://www.reuters.com/world/middle-east/yemen-government-forces-withdraw-area-near-bab-el-mandeb-strait-houthis-control-2026-11-15/",
+          "title": "Yemeni government force retreats from strait in major setback in war against Houthis",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu04BsPh8x_w3J2g5bHsn9POPcYWPkndtjFRdZB_rV4xWhMqo7iWveVttekzk"
+        }
+      ]
+    },
+    {
+      "query": "earthshot prize",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T17:30:00Z",
+      "related_news_urls": [
+        "https://people.com/kate-middleton-showstopping-moment-earthshot-prize-awards-in-india-first-time-4-years-alongside-prince-william-12258764",
+        "https://www.bbc.com/news/articles/cqlykve012d1o",
+        "https://apnews.com/photo-gallery/prince-william-princess-catherine-visit-india-photos-8772f1862dae47e4b91ca1402c8a5aab"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz0_lPHE_zTSXEniJ5OZMCKHx5RAGa4f4cH5iW30QUWqfXoIqiJNtkUZ1jOOI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/kate-middleton-showstopping-moment-earthshot-prize-awards-in-india-first-time-4-years-alongside-prince-william-12258764",
+          "title": "Kate Middleton Makes Showstopping Entrance in Dramatic Red Gown at Earthshot Awards After 4-Year Absence",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz0_lPHE_zTSXEniJ5OZMCKHx5RAGa4f4cH5iW30QUWqfXoIqiJNtkUZ1jOOI"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cqlykve012d1o",
+          "title": "William and Kate celebrate Earthshot Prize winners in Mumbai",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2VEm3Dxvz1DfzjKfWLIigvNOCqrruM42T_VgpIjfNgNeEpe4C21-RLYEjd_Y"
+        },
+        {
+          "url": "https://apnews.com/photo-gallery/prince-william-princess-catherine-visit-india-photos-8772f1862dae47e4b91ca1402c8a5aab",
+          "title": "Prince William and Princess Catherine visit India, in photos",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSItlJW5ksiTMzo388exfZ6q9ZlQcaunppwpS5dUYMOIcUfDR0j8_omWMSQHqM"
+        }
+      ]
+    },
+    {
+      "query": "banana ball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T17:30:00Z",
+      "related_news_urls": [
+        "https://purduesports.com/news/2026/11/16/viola-selected-in-first-round-of-banana-ball-draft",
+        "https://bvmsports.com/2026/11/16/viola-selected-in-first-round-of-banana-ball-draft/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwrqfQCiYkXSzjGr-to8gq9pOUzyBsUdtxcTHIGDkfnZocjDSf2ebXirkKFI",
+      "image_credit": "Purdue Boilermakers",
+      "news": [
+        {
+          "url": "https://purduesports.com/news/2026/11/16/viola-selected-in-first-round-of-banana-ball-draft",
+          "title": "Viola Selected in First Round of Banana Ball Draft",
+          "publisher": "Purdue Boilermakers",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwrqfQCiYkXSzjGr-to8gq9pOUzyBsUdtxcTHIGDkfnZocjDSf2ebXirkKFI"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/16/viola-selected-in-first-round-of-banana-ball-draft/",
+          "title": "Viola Selected in First Round of Banana Ball Draft",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0lqwMPwQnpiwHPPEmCRkhNqI0J_zt1VPfO0Ewr3PXdj9QwOSTUZM2RuYHK24"
+        }
+      ]
+    },
+    {
+      "query": "apple outage",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T17:20:00Z",
+      "related_news_urls": [
+        "https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/",
+        "https://news.az/news/apple-users-report-app-store-disruptions",
+        "https://www.theapplepost.com/2026/11/12/74215/apple-reports-app-store-connect-issues-affecting-developers/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkARWYMHiCosv5kcV5D32pWuk3fp9DCms14hg9Thd_zL6ATYSxh3Gcyk8DsIg",
+      "image_credit": "9to5Mac",
+      "news": [
+        {
+          "url": "https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/",
+          "title": "iCloud, App Store, and other Apple services hit by ongoing outage",
+          "publisher": "9to5Mac",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkARWYMHiCosv5kcV5D32pWuk3fp9DCms14hg9Thd_zL6ATYSxh3Gcyk8DsIg"
+        },
+        {
+          "url": "https://news.az/news/apple-users-report-app-store-disruptions",
+          "title": "Apple users report App Store disruptions",
+          "publisher": "Latest news from Azerbaijan",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxjp12PoncnCfylEYKM_tdETrg_8fZqBpi6hVb5M685Nc1cYR4ejv2CK5rRbY"
+        },
+        {
+          "url": "https://www.theapplepost.com/2026/11/12/74215/apple-reports-app-store-connect-issues-affecting-developers/",
+          "title": "Apple reports App Store Connect issues affecting developers",
+          "publisher": "The Apple Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKkFdIGGgIIKQZIwu-9bUGunYSgiINnVYiHRGsla5s1UYzNikZK9ndp8UPkq8"
+        }
+      ]
+    },
+    {
+      "query": "mary barra",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T17:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/business/autos/general-motors-seeks-outside-ceo-contenders-to-succeed-mary-barra-e8177c4a",
+        "https://www.marketscreener.com/news/gm-taps-executive-search-firm-to-find-possible-successor-to-ceo-mary-barra-wsj-reports-ce785edcdd8bf423",
+        "https://www.investing.com/news/stock-market-news/general-motors-initiates-succession-planning-for-historic-ceo-mary-barra-5033644"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1f6Mu_UxMPE5l6NtHnnT6RWNoAAHxeYeVVYiN_GTS7hs-K5R0y07ZjVh1zA",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/business/autos/general-motors-seeks-outside-ceo-contenders-to-succeed-mary-barra-e8177c4a",
+          "title": "Exclusive | General Motors Seeks Outside CEO Contenders to Succeed Mary Barra",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1f6Mu_UxMPE5l6NtHnnT6RWNoAAHxeYeVVYiN_GTS7hs-K5R0y07ZjVh1zA"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/gm-taps-executive-search-firm-to-find-possible-successor-to-ceo-mary-barra-wsj-reports-ce785edcdd8bf423",
+          "title": "GM taps executive search firm to find possible successor to CEO Mary Barra, WSJ reports",
+          "publisher": "www.marketscreener.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6lL8DmqBkMJrjLGsipx9WrRD7r7uSRfeQlqWJuqfCK0GW9RODMJ-lgwF_hAQ"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/general-motors-initiates-succession-planning-for-historic-ceo-mary-barra-5033644",
+          "title": "General Motors initiates succession planning for historic CEO Mary Barra",
+          "publisher": "Investing.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSFTQ5yXg-Tn2XHhdPoYRZyc8Ad11iLm-u5c_a1lrCDm3xz_4Z6Q0g-lEIAhY"
+        }
+      ]
+    },
+    {
+      "query": "honduras vs",
+      "approx_searches": "1000+",
       "published_at": "2026-11-17T17:10:00Z",
       "related_news_urls": [
         "https://cfl.ca/article/elks-top-alouettes-to-capture-113th-grey-cup",
@@ -42,8 +209,43 @@
       ]
     },
     {
+      "query": "manni l perez",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T17:00:00Z",
+      "related_news_urls": [
+        "https://theconversation.com/lucia-caminos-is-the-first-latina-grand-theft-auto-lead-these-video-game-characters-paved-the-way-290289",
+        "https://www.theverge.com/games/1035602/gta-vis-voice-actor-for-lucia-was-revealed-by-the-game-awards",
+        "https://www.ign.com/articles/grand-theft-auto-6-lucia-actress-finally-revealed-and-yes-its-who-you-probably-suspected"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBrf4yTGQirVtujHRSV9TYoVesz63WtyOh4TysPuYuMSUkiqOXmC_txqCuEm0",
+      "image_credit": "The Conversation",
+      "news": [
+        {
+          "url": "https://theconversation.com/lucia-caminos-is-the-first-latina-grand-theft-auto-lead-these-video-game-characters-paved-the-way-290289",
+          "title": "Lucía Caminos is the first Latina ‘Grand Theft Auto’ lead – these video game characters paved the way",
+          "publisher": "The Conversation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBrf4yTGQirVtujHRSV9TYoVesz63WtyOh4TysPuYuMSUkiqOXmC_txqCuEm0"
+        },
+        {
+          "url": "https://www.theverge.com/games/1035602/gta-vis-voice-actor-for-lucia-was-revealed-by-the-game-awards",
+          "title": "GTA VI’s voice actor for Lucia was revealed by… The Game Awards.",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIvkOo_QoZPqWeAwJ36Fnu7UZ0H29-K059LSvFfNwO2Ex80CO1aErIWW57dWI"
+        },
+        {
+          "url": "https://www.ign.com/articles/grand-theft-auto-6-lucia-actress-finally-revealed-and-yes-its-who-you-probably-suspected",
+          "title": "Grand Theft Auto 6 Lucia Actress Finally Revealed — And Yes, It's Who You Probably Suspected",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtYBmW4c8lLywUYg2CK3QFa-_f6EZ-yfUvIQZVeb5SnueHEGJw8zw5oKQu6mQ"
+        }
+      ]
+    },
+    {
       "query": "tropical storm nolo",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-17T17:00:00Z",
       "related_news_urls": [],
       "image_url": null,
@@ -52,7 +254,7 @@
     },
     {
       "query": "murray state basketball",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-17T17:00:00Z",
       "related_news_urls": [
         "https://www.sportsgambler.com/betting-tips/basketball/murray-state-racers-vs-hofstra-pride-prediction-odds-2026-11-17/",
@@ -87,12 +289,12 @@
     },
     {
       "query": "game awards",
-      "approx_searches": "10000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-17T16:50:00Z",
       "related_news_urls": [
         "https://www.polygon.com/the-game-awards-2026-nominees-announcement-date/",
-        "https://variety.com/2026/awards/news/game-awards-nominees-special-ps5-livestream-winners-1236946910/",
-        "https://press.disneyplus.com/news/the-game-awards"
+        "https://press.disneyplus.com/news/the-game-awards",
+        "https://stupiddope.com/2026/11/gta-vi-will-be-nominated-for-game-of-the-year-before-anyone-can-read-a-review/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSn5dqaWMZD2e_7gDJwim6BL_7t9gyPIbOyQOlx_yXKkPdzlvLlUNO_ALfg4",
       "image_credit": "Polygon.com",
@@ -105,194 +307,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSn5dqaWMZD2e_7gDJwim6BL_7t9gyPIbOyQOlx_yXKkPdzlvLlUNO_ALfg4"
         },
         {
-          "url": "https://variety.com/2026/awards/news/game-awards-nominees-special-ps5-livestream-winners-1236946910/",
-          "title": "The Game Awards to Reveal 2026 Nominees Next Week Ahead of ‘GTA 6’ Debut, PlayStation 5 Joins Livestreamers for December Show (EXCLUSIVE)",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpETX41j1wdcBH_JxCLrjP7MzaArY1bitEGsXhJKz7sUIrLCiA75bGMPvm-so"
-        },
-        {
           "url": "https://press.disneyplus.com/news/the-game-awards",
           "title": "Disney+ to Stream The Game Awards 2026 Live on December 10",
           "publisher": "Disney+ Press Center",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuGcJOWM55l-H1mJC0PAdg-cvMaVh9JUoU20RuibrP6dlG3_7mYXf9La7-C48"
-        }
-      ]
-    },
-    {
-      "query": "found",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T16:50:00Z",
-      "related_news_urls": [
-        "https://6abc.com/post/remains-found-new-jerseys-pine-barrens-identified-missing-woman-danielle-lopez/20046705/",
-        "https://www.nj.com/burlington/2026/11/the-terror-is-gone-an-nj-moms-emotional-words-after-her-missing-daughters-remains-were-identified.html",
-        "https://www.inquirer.com/crime/daniel-lopez-missing-pine-barrens-remains-found-20261116.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsRhQk8cQqxEb5MrTFrLyaX_WFGHOlp0HamI8Ag7QrExdtMff6eoW1lBr2D6k",
-      "image_credit": "6abc Philadelphia",
-      "news": [
-        {
-          "url": "https://6abc.com/post/remains-found-new-jerseys-pine-barrens-identified-missing-woman-danielle-lopez/20046705/",
-          "title": "Danielle Lopez dental records confirmation: Remains found in New Jersey's Pine Barrens identified as missing woman",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsRhQk8cQqxEb5MrTFrLyaX_WFGHOlp0HamI8Ag7QrExdtMff6eoW1lBr2D6k"
         },
         {
-          "url": "https://www.nj.com/burlington/2026/11/the-terror-is-gone-an-nj-moms-emotional-words-after-her-missing-daughters-remains-were-identified.html",
-          "title": "‘The terror is gone’: An N.J. mom’s emotional words after her missing daughter’s remains were identified",
-          "publisher": "NJ.com",
+          "url": "https://stupiddope.com/2026/11/gta-vi-will-be-nominated-for-game-of-the-year-before-anyone-can-read-a-review/",
+          "title": "Will GTA VI Win Game of the Year 2026? Nominations, Reviews and the November 17 Reveal",
+          "publisher": "stupidDOPE",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSM2gyMvx9gRq-2gJwFbICcTy_lhnwR7G8JJs7J26K2qx33B4aBBy1b4JjwZ6Y"
-        },
-        {
-          "url": "https://www.inquirer.com/crime/daniel-lopez-missing-pine-barrens-remains-found-20261116.html",
-          "title": "Remains of missing woman found in South Jersey",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr7UKSv1z89BrF6vCDZlRdvPrZAMJAZUd-O_4Nx0ZmVrSVaSofv2pyL2MkC_E"
-        }
-      ]
-    },
-    {
-      "query": "artex",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T16:50:00Z",
-      "related_news_urls": [
-        "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
-        "https://blog.barracuda.com/2026/11/11/anatomy-of-a-machine-speed-intrusion",
-        "https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkKlUHm4-eUefmVWvZ0yA04Vd7zjW5hgTfG3p_1TlrQx7Ina6QdZqFieAEwJE",
-      "image_credit": "Amazon Web Services (AWS)",
-      "news": [
-        {
-          "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
-          "title": "Amazon Threat Intelligence observes threat actors running cybercrime campaigns with ARTEX AI agents",
-          "publisher": "Amazon Web Services (AWS)",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkKlUHm4-eUefmVWvZ0yA04Vd7zjW5hgTfG3p_1TlrQx7Ina6QdZqFieAEwJE"
-        },
-        {
-          "url": "https://blog.barracuda.com/2026/11/11/anatomy-of-a-machine-speed-intrusion",
-          "title": "Forty-four hours: Anatomy of a machine-speed intrusion",
-          "publisher": "Barracuda Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVjB7s_O-JVdNxwxJL8b5d7fTFklMRMiE1QcvbhA6zc-riR279YyLwZBKWZ-w"
-        },
-        {
-          "url": "https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/",
-          "title": "ARTEX Unmasked | The Rise of AI-Powered ARTEX in Cybercrime & Espionage",
-          "publisher": "SentinelOne",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY96S6tsP3fWMA63K8STSXHoz3ExXoH40jD5V5xtLhVe-v6SqIgY7akMPaDQ"
-        }
-      ]
-    },
-    {
-      "query": "libya vs tunisia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T16:40:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/football/libya-vs-tunisia-prediction-2026-11-17/",
-        "https://panafricafootball.com/article/tunisia-libya-afcon-qualifier-wounded-team-26",
-        "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-libya-vs-tunisia-live-on-bein-sports-2026-11-16"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_KwX075IEWoCXiOZ14u1krLHG6w5Vl4YSwJ-T40GoNZu5Xd_ZtEG23RVcUo",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/football/libya-vs-tunisia-prediction-2026-11-17/",
-          "title": "Libya vs Tunisia Prediction, Betting Tips & Odds | 17 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_KwX075IEWoCXiOZ14u1krLHG6w5Vl4YSwJ-T40GoNZu5Xd_ZtEG23RVcUo"
-        },
-        {
-          "url": "https://panafricafootball.com/article/tunisia-libya-afcon-qualifier-wounded-team-26",
-          "title": "Tunisia: Libya coach Youssef Dabo describes \"wounded\" opponent",
-          "publisher": "Pan Africa Football",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlypO3rymdAwsoy5xLwRpyM_rqEto4K9fMFe5i2-dF3UxtKSDVysyvpcSgJgs"
-        },
-        {
-          "url": "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-libya-vs-tunisia-live-on-bein-sports-2026-11-16",
-          "title": "Libya vs Tunisia: Can the Eagles Respond?",
-          "publisher": "beIN SPORTS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJk9dDNvomjrlG8_Uzt-0v3KJbxa3XLiRB8V42St7rUdVkTC5Ag0mQY7ukmmg"
-        }
-      ]
-    },
-    {
-      "query": "measles",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T16:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/17/well/us-measles-elimination-status.html",
-        "https://www.theguardian.com/us-news/2026/nov/17/us-measles-outbreak-elimination-status",
-        "https://www.vox.com/health/510836/us-measles-cases-deaths-elimination-status"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHAbi1zevB3Uz-k0QgVYg8oLx5Ef06Nkn1YqZdkxgSulAWA2E0dZCGv3SHSOM",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/17/well/us-measles-elimination-status.html",
-          "title": "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHAbi1zevB3Uz-k0QgVYg8oLx5Ef06Nkn1YqZdkxgSulAWA2E0dZCGv3SHSOM"
-        },
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/17/us-measles-outbreak-elimination-status",
-          "title": "US loses measles elimination status amid worst outbreak since 1991",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi19gpRsI0rIKeuuRoiEpnoeMzpYdKEYqscvAnmdxaGQnaN_-aXJUAabY8pFI"
-        },
-        {
-          "url": "https://www.vox.com/health/510836/us-measles-cases-deaths-elimination-status",
-          "title": "The US has officially lost control of measles",
-          "publisher": "Vox",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzeRbpczgfNGqcm2KOzxkLO4nwMePqCs6bc0e87x2-2jxEL887uOtJc6kYoOg"
-        }
-      ]
-    },
-    {
-      "query": "hung cao",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T16:20:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "glastonbury high school",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T16:10:00Z",
-      "related_news_urls": [
-        "https://www.wfsb.com/2026/11/17/officers-investigating-incident-glastonbury-high-school/",
-        "https://www.nhregister.com/journalinquirer/article/glastonbury-high-school-lockdown-streets-closed-22535436.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8GpDIyWlE55ZbGkyIEqVa7RRt_bJJihxSBwbDFOvi5nA5HrPHStGkoYWwrQQ",
-      "image_credit": "WFSB",
-      "news": [
-        {
-          "url": "https://www.wfsb.com/2026/11/17/officers-investigating-incident-glastonbury-high-school/",
-          "title": "Officers investigating incident at Glastonbury High School",
-          "publisher": "WFSB",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8GpDIyWlE55ZbGkyIEqVa7RRt_bJJihxSBwbDFOvi5nA5HrPHStGkoYWwrQQ"
-        },
-        {
-          "url": "https://www.nhregister.com/journalinquirer/article/glastonbury-high-school-lockdown-streets-closed-22535436.php",
-          "title": "Glastonbury High School locked down, nearby streets closed due to 'suspicious call'",
-          "publisher": "New Haven Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4niSXKVwJ6JI01-xq2VHX9p-XqptSc0Yh13OmsqF-HzJwAwUN-KyUszDz3w4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6GNLAmKBa9m8ZmapdM6ERUDAJmGF7WkucG1o5nlUbNQ08ZLmo5E5X5dJR_7A"
         }
       ]
     }
