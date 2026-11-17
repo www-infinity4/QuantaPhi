@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T06:36:52.522058Z",
+  "checked_at": "2026-11-17T07:01:11.160634Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "san diego",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T06:40:00Z",
+      "related_news_urls": [
+        "https://www.cbs8.com/article/news/local/flock-cameras-alpr-votes-san-diego-county/509-6b349113-9860-4b10-930f-68008ca13fa5",
+        "https://www.nbcsandiego.com/news/local/san-diego-city-council-votes-end-flock-contract-turn-off-alpr-cameras/4102682/",
+        "https://voiceofsandiego.org/2026/11/16/trumps-tijuana-river-solution-is-already-underfunded/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRx21hUXgrrV7Ys3Tt5UH49w8RSo8gj1Xlxp2VMV1NB6zqLNWIBCaPgT1XR4GA",
+      "image_credit": "cbs8.com",
+      "news": [
+        {
+          "url": "https://www.cbs8.com/article/news/local/flock-cameras-alpr-votes-san-diego-county/509-6b349113-9860-4b10-930f-68008ca13fa5",
+          "title": "San Diego City Council votes to remove controversial license plate reader cameras",
+          "publisher": "cbs8.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRx21hUXgrrV7Ys3Tt5UH49w8RSo8gj1Xlxp2VMV1NB6zqLNWIBCaPgT1XR4GA"
+        },
+        {
+          "url": "https://www.nbcsandiego.com/news/local/san-diego-city-council-votes-end-flock-contract-turn-off-alpr-cameras/4102682/",
+          "title": "San Diego City Council votes to end Flock contract, turn off ALPR cameras",
+          "publisher": "NBC 7 San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmSwnTLRQVg5bpOJ6JTIv4rFekcjVKhonGSCg0ZD29DaD_xs_wL8FEwR9iL4"
+        },
+        {
+          "url": "https://voiceofsandiego.org/2026/11/16/trumps-tijuana-river-solution-is-already-underfunded/",
+          "title": "Gloria Won’t Veto Flock Contract Cancellation",
+          "publisher": "Voice of San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyXgeIvcp3hB0UIix7L8nO7tYdhWu1PBLuh2tsTZ5XcFkgGWdW30Zgzjfg2uQ"
+        }
+      ]
+    },
     {
       "query": "apec",
       "approx_searches": "200+",
@@ -13,7 +48,7 @@
       "related_news_urls": [
         "https://www.reuters.com/world/asia-pacific/chinese-us-business-leaders-attend-apec-summit-shenzhen-2026-11-16/",
         "https://www.fmprc.gov.cn/eng/xw/fyrbt/lxjzh/202611/t20261113_12059012.html",
-        "https://www.wvnews.com/newsfeed/world/china-apec/image_e9883f6f-b4c8-59f2-b051-ee5af7ccd003.html"
+        "https://www.chronicleonline.com/news/world/china-apec/image_dffd6ff1-00db-5785-b380-14dcc8d1131b.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0mkKoHuxdPltVUEhBb2lBOEeYCtg1hp0Ku0X89qlEkT6V-RbevChpwUwF6Uw",
       "image_credit": "Reuters",
@@ -33,11 +68,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO79xJVZaFOogig-OJKFk7slrCf4b0693xFJY_GUhf4r2Er6d9IoE7hx8mX1U"
         },
         {
-          "url": "https://www.wvnews.com/newsfeed/world/china-apec/image_e9883f6f-b4c8-59f2-b051-ee5af7ccd003.html",
+          "url": "https://www.chronicleonline.com/news/world/china-apec/image_dffd6ff1-00db-5785-b380-14dcc8d1131b.html",
           "title": "China APEC",
-          "publisher": "WV News",
+          "publisher": "chronicleonline.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_Eu4RwgMlDebjd_8StXgBHs4TZ_j_DpbOvVlA2S-rT8f8ykQ7UMAhmS3-S9g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdBdCtSh1zzXayit58EJFdc76iiW74-91u01TLL_KwGJpMEpiN42c_qNuEKjQ"
+        }
+      ]
+    },
+    {
+      "query": "john kiriakou",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T06:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a",
+        "https://www.cnn.com/2026/11/17/politics/trump-nvidia-jensen-huang-china",
+        "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3BQPelbXdqSzJ52zAtSbW4uylbEbzU-deTzNOAj1HOHMasc5gvvcICDsmJsY",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a",
+          "title": "Alice Huang’s Husband Built a Data-Center Empire Backed by the Chinese State",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3BQPelbXdqSzJ52zAtSbW4uylbEbzU-deTzNOAj1HOHMasc5gvvcICDsmJsY"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/17/politics/trump-nvidia-jensen-huang-china",
+          "title": "The critical new geopolitical truth that explains Trump’s defense of ex-Nvidia chief",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjWJJ7iYQht88tgn4iDAJ9EdORTjbqsQk8ZwQlt93_aKYNVCFuzlhvKgnq7zE"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+          "title": "NVIDIA Announces CEO Transition",
+          "publisher": "NVIDIA Newsroom",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qDUGyx7H7uiXEnq5EQILYq0dJjxyQRhS2zpsVdoBZCM1RxEiYeJ_NZ_PfHQ"
         }
       ]
     },
@@ -81,19 +151,19 @@
       "approx_searches": "200+",
       "published_at": "2026-11-17T06:00:00Z",
       "related_news_urls": [
-        "https://www.nba.com/news/starting-5-november-15-2026",
+        "https://sports.yahoo.com/articles/slam-door-three-times-ex-162652000.html",
         "https://www.espn.com/nba/recap/_/gameId/401909982",
-        "https://apnews.com/article/heat-giannis-antetokounmpo-assist-hike-7c28d37a1fc70232e94852d21a9381bb"
+        "https://www.sun-sentinel.com/2026/11/14/windermans-view-giannis-gave-heat-reason-to-believe-now-with-another-payoff-vs-pistons/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIYj2N17TM6wJhGuDRbxGFkWYLAzoQGURlIon7m6GxVQOcZEzIVFkoPmNzXuw",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhOwDvdlf5FXwGkAwIFjm3zxMUUrOtOdxpXOhkXT1S2KIcGgel2E8T3SKb3XI",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.nba.com/news/starting-5-november-15-2026",
-          "title": "Starting 5: Heat roll, Sixers rise, KD vs. AJ",
-          "publisher": "NBA.com",
+          "url": "https://sports.yahoo.com/articles/slam-door-three-times-ex-162652000.html",
+          "title": "“Slam the Door Three Times”: Ex-Laker Recalls Furious Magic Johnson Kicking His Locker After Larry Bird Taunt",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIYj2N17TM6wJhGuDRbxGFkWYLAzoQGURlIon7m6GxVQOcZEzIVFkoPmNzXuw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhOwDvdlf5FXwGkAwIFjm3zxMUUrOtOdxpXOhkXT1S2KIcGgel2E8T3SKb3XI"
         },
         {
           "url": "https://www.espn.com/nba/recap/_/gameId/401909982",
@@ -103,46 +173,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8_mKkYQ6VMiuPTod_mboyxUrNzYoGl88HKDPyGBkkXupGQw5M_eNPWW1-pg"
         },
         {
-          "url": "https://apnews.com/article/heat-giannis-antetokounmpo-assist-hike-7c28d37a1fc70232e94852d21a9381bb",
-          "title": "Hut! Hut! Hike! Giannis Antetokounmpo goes into football mode for a between-the-legs assist",
-          "publisher": "AP News",
+          "url": "https://www.sun-sentinel.com/2026/11/14/windermans-view-giannis-gave-heat-reason-to-believe-now-with-another-payoff-vs-pistons/",
+          "title": "Winderman’s view: Giannis gave Heat reason to believe, now with another payoff vs. Pistons",
+          "publisher": "Sun Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZMcGpTGe8GBlMbiv7lK3ORtg6JybnpO71FDlJBDug14eRfA0DwxAsHjGrJ3w"
-        }
-      ]
-    },
-    {
-      "query": "ines de ramon",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T06:00:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
-        "https://deadline.com/gallery/the-further-mis-adventures-of-cliff-booth-red-carpet-photos-netflix/",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/brad-pitt-girlfriend-ines-ramon-041916562.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrPSe1zePMuuRrMktG7WOvkEH27_PJwxW9-EC-HHoMH5jCf2ZQf9BO4SBn30w",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
-          "title": "David Fincher’s ‘The Further Mis-Adventures of Cliff Booth’: First Reactions",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrPSe1zePMuuRrMktG7WOvkEH27_PJwxW9-EC-HHoMH5jCf2ZQf9BO4SBn30w"
-        },
-        {
-          "url": "https://deadline.com/gallery/the-further-mis-adventures-of-cliff-booth-red-carpet-photos-netflix/",
-          "title": "'The Further Mis-Adventures Of Cliff Booth' Premiere Red Carpet Photos: Brad Pitt & More",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw4QGuSgGOSj16K0gKT2MIrnruxYAYATP9_FMUgDKTKtiZ5Lm-VFA8yFRwas"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/brad-pitt-girlfriend-ines-ramon-041916562.html",
-          "title": "Brad Pitt and girlfriend Ines de Ramon hit red carpet for premiere of ‘The Further Mis-Adventures of Cliff Booth’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOvaKex47nUD4k3CRiBZHz038irOM3oXuZ6jx0WA13mhgVklGeY4A73zY5Tww"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9v0mAJ3YDp0-7OaltfmKtnELl_paKfO0G1ijdORwY1p30bgpayEZZDErnjPg"
         }
       ]
     },
@@ -182,37 +217,37 @@
       ]
     },
     {
-      "query": "aldo de nigris",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T05:40:00Z",
+      "query": "elizabeth debicki",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T05:50:00Z",
       "related_news_urls": [
-        "https://www.infobae.com/mexico/2026/11/17/deiby-ruiz-entra-a-la-mansion-vip-2-quien-es-el-influencer-colombiano-que-se-suma-al-reality-de-hotspanish/",
-        "https://www.facebook.com/MilenioDiario/posts/-para-que-no-te-pierdas-de-nada-as%C3%AD-puedes-unirte-al-canal-de-whatsapp-de-la-man/1674603544697110/",
-        "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/"
+        "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
+        "https://deadline.com/gallery/the-further-mis-adventures-of-cliff-booth-red-carpet-photos-netflix/",
+        "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRljlwR9Qy2oOGratQQJVEGw58dUiZWoxI5uxLN0HKVTZQZkp_7jHwtkr3vABA",
-      "image_credit": "Infobae",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrPSe1zePMuuRrMktG7WOvkEH27_PJwxW9-EC-HHoMH5jCf2ZQf9BO4SBn30w",
+      "image_credit": "The Hollywood Reporter",
       "news": [
         {
-          "url": "https://www.infobae.com/mexico/2026/11/17/deiby-ruiz-entra-a-la-mansion-vip-2-quien-es-el-influencer-colombiano-que-se-suma-al-reality-de-hotspanish/",
-          "title": "Deiby Ruiz entra a La Mansión VIP 2: quién es el influencer colombiano que se suma al reality de HotSpanish",
-          "publisher": "Infobae",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
+          "title": "David Fincher’s ‘The Further Mis-Adventures of Cliff Booth’: First Reactions",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRljlwR9Qy2oOGratQQJVEGw58dUiZWoxI5uxLN0HKVTZQZkp_7jHwtkr3vABA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrPSe1zePMuuRrMktG7WOvkEH27_PJwxW9-EC-HHoMH5jCf2ZQf9BO4SBn30w"
         },
         {
-          "url": "https://www.facebook.com/MilenioDiario/posts/-para-que-no-te-pierdas-de-nada-as%C3%AD-puedes-unirte-al-canal-de-whatsapp-de-la-man/1674603544697110/",
-          "title": "📲 ¡Para que no te pierdas de nada! Así puedes unirte al canal de WhatsApp de La Mansión VIP https://mile.io/4CaD87t",
-          "publisher": "Facebook",
+          "url": "https://deadline.com/gallery/the-further-mis-adventures-of-cliff-booth-red-carpet-photos-netflix/",
+          "title": "'The Further Mis-Adventures Of Cliff Booth' Premiere Red Carpet Photos: Brad Pitt & More",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjILQRniaECtd70Whn5RJlGUTqHUUfwH_2u6D7OedRcEgwyoVdnQ7cmbYak0E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw4QGuSgGOSj16K0gKT2MIrnruxYAYATP9_FMUgDKTKtiZ5Lm-VFA8yFRwas"
         },
         {
-          "url": "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/",
-          "title": "¿Dónde ver 'La Mansión VIP' y quiénes son sus participantes?Karely Ruiz lanza inesperada revelación",
-          "publisher": "The Arizona Republic",
+          "url": "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
+          "title": "'Cliff Booth' First Reactions: Brad Pitt, Fincher and Tarantino Excite",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3y4qGni8rO4WzEhlkidKxI6HJ8Fsvvw5K9j4GSaYUDH01wWapXOWTQVDypVI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
         }
       ]
     },
@@ -244,8 +279,43 @@
       ]
     },
     {
-      "query": "august holmgren",
+      "query": "them",
       "approx_searches": "500+",
+      "published_at": "2026-11-17T05:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/politics/democrats-plot-massive-spending-spree-after-midterm-rout-trump-could-help-them-pull-off",
+        "https://www.nbcnews.com/politics/2026-election/democrats-promised-reverse-cuts-medicaid-food-stamps-trump-stands-way-rcna608411",
+        "https://www.theguardian.com/business/2026/nov/11/democrats-election-medicaid-costs"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGofIRa27XCMTxK2vgHn1doCqrqtn1ldGizO2BvcR3ETuYpC-YqSltHkMJt0s",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/politics/democrats-plot-massive-spending-spree-after-midterm-rout-trump-could-help-them-pull-off",
+          "title": "Democrats plot massive spending spree after midterm rout — and Trump could help them pull it off",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGofIRa27XCMTxK2vgHn1doCqrqtn1ldGizO2BvcR3ETuYpC-YqSltHkMJt0s"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/2026-election/democrats-promised-reverse-cuts-medicaid-food-stamps-trump-stands-way-rcna608411",
+          "title": "Democrats promised to reverse cuts to Medicaid and food stamps. Trump stands in their way.",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0fn6jqd4kdHpznkAmlLISrowplf2aVZcu6UdTdPV_UOpimfCd-IiZTgI5lng"
+        },
+        {
+          "url": "https://www.theguardian.com/business/2026/nov/11/democrats-election-medicaid-costs",
+          "title": "Democrats’ US election sweep brings the price of their promised social contract into focus",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKtXP0NUJHdR-rdLpAwQZLW-Cq50s_kaYe8w59Cnmlg5XBFMGjJwYhAKAXQ5M"
+        }
+      ]
+    },
+    {
+      "query": "august holmgren",
+      "approx_searches": "200+",
       "published_at": "2026-11-17T05:40:00Z",
       "related_news_urls": [
         "https://robinhood.com/us/en/prediction-markets/tennis/events/3aad038e-7138-40b0-ab13-71d2a25d41cf/",
@@ -275,76 +345,6 @@
           "publisher": "Robinhood",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxU1Y9Njx_1PenFR39nWuZx2Yn9rWwB-fq3hImchxm_DSIbaou8IfDgYOdCBk"
-        }
-      ]
-    },
-    {
-      "query": "ps4",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T05:30:00Z",
-      "related_news_urls": [
-        "https://www.tomshardware.com/video-games/playstation/jailbroken-ps4-runs-9-billion-parameter-ai-model-at-up-to-43-tokens-per-second-open-source-garlic-llm-bypasses-drivers-to-talk-directly-to-the-2013-era-gpu",
-        "https://mezha.net/eng/news/mezha-792376a5325a8ec36698853c_garlic_llm_runs/",
-        "https://www.tweaktown.com/news/114709/jailbroken-ps4-runs-a-9-billion-parameter-ai-model-at-up-to-43-tokens-per-second/index.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc86T4qz-7g0BIxGWqYML5MB3YuitcI0W11EKytR3NwEd8AbjaiwxfrXSL7Y4",
-      "image_credit": "Tom's Hardware",
-      "news": [
-        {
-          "url": "https://www.tomshardware.com/video-games/playstation/jailbroken-ps4-runs-9-billion-parameter-ai-model-at-up-to-43-tokens-per-second-open-source-garlic-llm-bypasses-drivers-to-talk-directly-to-the-2013-era-gpu",
-          "title": "Jailbroken PS4 runs 9-billion-parameter AI model at up to 43 tokens per second — open-source Garlic LLM bypasses drivers to talk directly to the 2013-era GPU",
-          "publisher": "Tom's Hardware",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc86T4qz-7g0BIxGWqYML5MB3YuitcI0W11EKytR3NwEd8AbjaiwxfrXSL7Y4"
-        },
-        {
-          "url": "https://mezha.net/eng/news/mezha-792376a5325a8ec36698853c_garlic_llm_runs/",
-          "title": "Garlic LLM runs Qwen3.5-9B offline on jailbroken PS4, reaching 43 tokens per second in code",
-          "publisher": "Mezha.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQndEDF740-CNBmW02pqlbVN2vYU-jfNbbQPDO9rDiwhpYmhPx0csKJPJULa2A"
-        },
-        {
-          "url": "https://www.tweaktown.com/news/114709/jailbroken-ps4-runs-a-9-billion-parameter-ai-model-at-up-to-43-tokens-per-second/index.html",
-          "title": "Jailbroken PS4 runs a 9-billion-parameter AI model at up to 43 tokens per second",
-          "publisher": "TweakTown",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzGn9lUf7WneSiMqI1R86a5LhGATvP6BbwI5S0tKGnTHponpjT6PdupGt5KfA"
-        }
-      ]
-    },
-    {
-      "query": "nick saban college football commentary",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T05:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/major-college-football-problem-full-display-weekend-nick-saban-warned-us-att-lily-returns",
-        "https://www.nytimes.com/athletic/7785066/2026/11/16/lsu-lane-kiffin-clemson-michigan-college-football-disappointments/",
-        "https://www.al.com/alabamafootball/2026/11/the-consistent-inconsistency-thats-rocked-college-football-a-new-day-and-age.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTv4k-EdjtJaV8_bTpfhALwqx4xlbz3_KS234dIfyqjLm4QIo2W9KmG1AqfL8",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/major-college-football-problem-full-display-weekend-nick-saban-warned-us-att-lily-returns",
-          "title": "A major college football problem was on full display this weekend, Nick Saban warned us & AT&T Lily returns!",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTv4k-EdjtJaV8_bTpfhALwqx4xlbz3_KS234dIfyqjLm4QIo2W9KmG1AqfL8"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7785066/2026/11/16/lsu-lane-kiffin-clemson-michigan-college-football-disappointments/",
-          "title": "Lane Kiffin’s LSU? Clemson? Michigan? Who’s got it the worst? Message Board Monday",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK02EfMetayEWMBctrkt9Yl4Hrq5dtSEclWUbvYwnEEbIvCbGSEY8YEkgY9bs"
-        },
-        {
-          "url": "https://www.al.com/alabamafootball/2026/11/the-consistent-inconsistency-thats-rocked-college-football-a-new-day-and-age.html",
-          "title": "The consistent inconsistency that’s rocked college football: ‘A new day and age’",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNOzZUCb5o5b36xUKIAE2P55NPFcdl2YlT6IrNEcRjTC37YYYURsa-LvDV3lU"
         }
       ]
     }
