@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T00:01:55.418304Z",
+  "checked_at": "2026-11-17T00:45:01.997070Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "rockets vs heat",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T23:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/houston-rockets-amen-thompson-injury-222813199.html",
-        "https://www.cbssports.com/betting/news/rockets-vs-heat-nba-picks-a-four-game-win-streak-will-end-in-giannis-antetokounmpo-vs-kevin-durant-showdown/",
-        "https://www.thedreamshake.com/rockets-game-previews/42573/houston-rockets-vs-miami-heat-game-preview"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjTIVINBXtZXN7IXk2kehjP9lIEDLC7_ZOcFA-ewkgphuMM5l_IFIsC09cccA",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/houston-rockets-amen-thompson-injury-222813199.html",
-          "title": "Houston Rockets Get Amen Thompson Injury Update",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjTIVINBXtZXN7IXk2kehjP9lIEDLC7_ZOcFA-ewkgphuMM5l_IFIsC09cccA"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/rockets-vs-heat-nba-picks-a-four-game-win-streak-will-end-in-giannis-antetokounmpo-vs-kevin-durant-showdown/",
-          "title": "Rockets vs. Heat NBA picks: A four-game win streak will end in Giannis Antetokounmpo vs. Kevin Durant showdown",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQglbfkBH_3Wlk3fe0FqG-nmr9-060gIZVQwSeCnFnoLATlQJIZLln6taHaSBI"
-        },
-        {
-          "url": "https://www.thedreamshake.com/rockets-game-previews/42573/houston-rockets-vs-miami-heat-game-preview",
-          "title": "Houston Rockets vs. Miami Heat game preview",
-          "publisher": "The Dream Shake",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScutnKdyxCpOFSEcMlmBFfVkt7Pj4xPtLt6DSKBq3KtGetFi0SIjve8QvLdK8"
-        }
-      ]
-    },
-    {
-      "query": "canadiens vs rangers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T23:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50491639/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-        "https://www.nhl.com/news/montreal-canadiens-new-york-rangers-game-preview-november-16-2026",
-        "https://montrealgazette.com/sports/hockey/montreal-canadiens/faq-how-to-watch-mondays-canadiens-rangers-game-on-sportsnet/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Ov-U2j1xZLs3dSgtNs6zXNoF2b96Dg63ZnIsULRn55JMzLSAg7uuLf6HfMM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50491639/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-          "title": "NHL Tonight: Who wins Canadiens-Rangers, Canucks-Mammoth?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Ov-U2j1xZLs3dSgtNs6zXNoF2b96Dg63ZnIsULRn55JMzLSAg7uuLf6HfMM"
-        },
-        {
-          "url": "https://www.nhl.com/news/montreal-canadiens-new-york-rangers-game-preview-november-16-2026",
-          "title": "Canadiens at Rangers projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://montrealgazette.com/sports/hockey/montreal-canadiens/faq-how-to-watch-mondays-canadiens-rangers-game-on-sportsnet/",
-          "title": "FAQ: How to watch Monday’s Canadiens-Rangers game on Sportsnet+",
-          "publisher": "Montreal Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmCVr4uS-w-sH_RZ3OAbnS4O5EE4dWL_9gahs70Q0zR8YqnZwqQNgy4eSNYPc"
-        }
-      ]
-    },
-    {
-      "query": "pope leo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T23:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/videos/ckpdwn23j5j8o",
-        "https://abc7.com/story/home-older-residents-eagerly-awaits-pope-leo-xivs-return-peruvian-port-city/20044167/",
-        "https://www.cnn.com/2026/11/16/americas/pope-leo-south-america-papacy-intl-latam"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsi-xe7X-Rrdi-CNOYjjiETXABCmkOu-hLt8mbX872JIajFhh2g-nme3xENOE",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/videos/ckpdwn23j5j8o",
-          "title": "Pope Leo XIV hit by flying rosary while waving to crowds in Peru",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsi-xe7X-Rrdi-CNOYjjiETXABCmkOu-hLt8mbX872JIajFhh2g-nme3xENOE"
-        },
-        {
-          "url": "https://abc7.com/story/home-older-residents-eagerly-awaits-pope-leo-xivs-return-peruvian-port-city/20044167/",
-          "title": "Pope Leo struck in face by apparent rosary in Peru as he wraps up marathon South American trip",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrrhnQ4I9BVoKmgX_tPw_gtH4YdIvc8z_fde8DtGAlP0fLlgFemeRQI4l4gfI"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/16/americas/pope-leo-south-america-papacy-intl-latam",
-          "title": "Pope Leo’s return to Latin America reveals the missionary message of his papacy",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUcrnqdF1kbDSfaF_7utJqeuLkW6me3oatHTnS4yA0QV4i3DM_a8Tfb0OdiLQ"
-        }
-      ]
-    },
-    {
-      "query": "landman season 3 release date",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T23:40:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66111200/?ref_=nmnw_art_perm",
-        "https://people.com/landman-season-3-films-at-taylor-sheridan-s-600-acre-ranch-in-texas-previously-seen-in-yellowstone-12244934",
-        "https://www.foxnews.com/outkick-culture/landman-season-3-shoots-familiar-yellowstone-filming-locations-owned-taylor-sheridan"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStG3w17vRYkdYa0Va-S0uvBcAd0I6bDZGlYEexuJligVoBxSI5qtJHfWC8u2o",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66111200/?ref_=nmnw_art_perm",
-          "title": "Taylor Sheridan’s ‘Landman’ Season 3 Officially Confirms Major Update Following Delays",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStG3w17vRYkdYa0Va-S0uvBcAd0I6bDZGlYEexuJligVoBxSI5qtJHfWC8u2o"
-        },
-        {
-          "url": "https://people.com/landman-season-3-films-at-taylor-sheridan-s-600-acre-ranch-in-texas-previously-seen-in-yellowstone-12244934",
-          "title": "‘Landman’ Season 3 Films at Taylor Sheridan’s 600-Acre Bosque Ranch in Texas Also Used in ‘Yellowstone’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY8W9hf1Yl91d9C1YntwVyvc08uYl96Cm3nRBksCzkiJLs3z4iV2A02Kaadho"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-culture/landman-season-3-shoots-familiar-yellowstone-filming-locations-owned-taylor-sheridan",
-          "title": "'Landman' season 3 shoots at familiar 'Yellowstone' filming locations owned by Taylor Sheridan",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEzvCiKK3gQedPUWWHAWb2EZQrSucRYGp8XVhWoYUCmNK8iU3CnScqxoO3sUg"
-        }
-      ]
-    },
-    {
-      "query": "76ers vs nets",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T23:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50503255/lebron-james-ruled-vs-nets-due-lower-back-management",
-        "https://bleacherreport.com/articles/25532769-lebron-james-injury-update-latest-76ers-stars-status-vs-nets",
-        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-nets-nba-lebron-james-jaylen-brown-joel-embiid-tyrese-maxey-live-updates/767200/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSroUQnUHjiGTUvcUL3rR8QXtEG9xCc0OIIHsN5yw0Z4NyIws1ouZWdWSKx_l4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50503255/lebron-james-ruled-vs-nets-due-lower-back-management",
-          "title": "76ers star LeBron James ruled out vs. Nets due to lower back management",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSroUQnUHjiGTUvcUL3rR8QXtEG9xCc0OIIHsN5yw0Z4NyIws1ouZWdWSKx_l4"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25532769-lebron-james-injury-update-latest-76ers-stars-status-vs-nets",
-          "title": "LeBron James Injury Update, Latest on 76ers Star's Status vs. Nets",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH7iJtqmhBNZ24CfC6czsizUQSv4hiOfsqZgNjEK_Jb5JT_LcR72a7F_x3PEY"
-        },
-        {
-          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-nets-nba-lebron-james-jaylen-brown-joel-embiid-tyrese-maxey-live-updates/767200/",
-          "title": "Live updates: Sixers look to keep momentum rolling against struggling Nets",
-          "publisher": "NBC Sports Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRdRXBGlNNAxREGHAc-irfCZm97yWMiB5grQL2K2-m8GlkJD1qnh0bKGjH82M"
-        }
-      ]
-    },
-    {
-      "query": "prairie view vs ohio state",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T23:30:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-hosts-prairie-view-am-panthers-292831770/",
-        "https://www.dispatch.com/story/sports/college/basketball/2026/11/16/ohio-state-basketball-hosts-prairie-view-am-live-updates-highlights--live/92806798007/",
-        "https://sports.yahoo.com/articles/ohio-state-vs-prairie-view-212021048.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_u3xgDs4BhpLpZlvZiHj3WLsUi-PCBGr5DsfIXPsYQleoh45sJ39aaJdU9ss",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-hosts-prairie-view-am-panthers-292831770/",
-          "title": "What To Watch: Ohio State gets back into action vs. Prairie View A&M",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_u3xgDs4BhpLpZlvZiHj3WLsUi-PCBGr5DsfIXPsYQleoh45sJ39aaJdU9ss"
-        },
-        {
-          "url": "https://www.dispatch.com/story/sports/college/basketball/2026/11/16/ohio-state-basketball-hosts-prairie-view-am-live-updates-highlights--live/92806798007/",
-          "title": "Ohio State men's basketball tips vs Prairie View A&M: Live updates, highlights",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQg8-1h_1L3N3hObjBNsKylKbrjYYoIYGj-m0Z-4d4_Lek0MwrlG78DRrLwqpI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ohio-state-vs-prairie-view-212021048.html",
-          "title": "Ohio State vs. Prairie View A&M: How to watch, stream the game Monday",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRt6HeY6QML2mtFRhTpZ9zoS70mh3mGJI13yAXp_8CAKv43eW_j756rugtuphI"
-        }
-      ]
-    },
-    {
-      "query": "david blay jr packers released",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-16T23:30:00Z",
-      "related_news_urls": [
-        "https://www.packers.com/news/packers-announce-roster-move-nov-16-2026",
-        "https://www.detroitlions.com/news/sheila-hamp-on-lions-presence-in-munich-our-fans-are-the-best",
-        "https://www.mlive.com/lions/2026/11/detroit-lions-brought-the-full-home-game-experience-to-munichs-allianz-arena.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJm5pRnjLMZOKMDNXkBryMgisP5BLreAwVTrtmGhBfaKrYIildmYqGD2b00hw",
-      "image_credit": "Green Bay Packers – packers.com",
-      "news": [
-        {
-          "url": "https://www.packers.com/news/packers-announce-roster-move-nov-16-2026",
-          "title": "Packers announce roster move | Nov. 16, 2026",
-          "publisher": "Green Bay Packers – packers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJm5pRnjLMZOKMDNXkBryMgisP5BLreAwVTrtmGhBfaKrYIildmYqGD2b00hw"
-        },
-        {
-          "url": "https://www.detroitlions.com/news/sheila-hamp-on-lions-presence-in-munich-our-fans-are-the-best",
-          "title": "Principal Owner & Chair Sheila Hamp on Lions' presence in Munich: 'Our fans are the best'",
-          "publisher": "Detroit Lions",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScoFkL8meWflMaUpDsP11xEM9fgIvLuwgonFOA93S-EvfW2yCvzVlimXqLBqA"
-        },
-        {
-          "url": "https://www.mlive.com/lions/2026/11/detroit-lions-brought-the-full-home-game-experience-to-munichs-allianz-arena.html",
-          "title": "Detroit Lions brought the full home-game experience to Munich’s Allianz Arena",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuJYnVV5Awmwe93tUs-gWp881pW-FS6XF9Kd7CLMAI95bRJZKPATqQ-NZidu0"
-        }
-      ]
-    },
-    {
-      "query": "keaton mitchell",
+      "query": "tulsa basketball",
       "approx_searches": "200+",
-      "published_at": "2026-11-16T23:30:00Z",
+      "published_at": "2026-11-17T00:30:00Z",
       "related_news_urls": [
-        "https://www.rotoballer.com/player-news/keaton-mitchell-a-fantasy-fade-for-mnf/1994205",
-        "https://www.fantasypros.com/nfl/news/618843/keaton-mitchell-totals-66-yards-loss-sunday.php",
-        "https://www.cbssports.com/fantasy/football/news/chargers-keaton-mitchell-cleared-to-face-former-team/"
+        "https://www.sportsgambler.com/betting-tips/basketball/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-odds-2026-11-16/",
+        "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-11-16-2026-college-basketball-picks-best-bets-odds.html",
+        "https://www.sportsgamblingpodcast.com/2026/11/16/college-basketball-preview-picks-and-best-bets-for-november-16-2/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYBeXiUP1T3WR9BTW69oVN3EMb3GJyC5xiag4i5TjMBcurNshP7jf3lkiTkas",
-      "image_credit": "RotoBaller",
-      "news": [
-        {
-          "url": "https://www.rotoballer.com/player-news/keaton-mitchell-a-fantasy-fade-for-mnf/1994205",
-          "title": "Keaton Mitchell Week 10 Outlook for Fantasy Football (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYBeXiUP1T3WR9BTW69oVN3EMb3GJyC5xiag4i5TjMBcurNshP7jf3lkiTkas"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/news/618843/keaton-mitchell-totals-66-yards-loss-sunday.php",
-          "title": "Keaton Mitchell totals 66 yards in loss Sunday",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsBoeROfKeW4Yk7iUoX4uG0Zug_JFxzp94HtrEPsHSpTVutf4ApPrtrBMEtbI"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/chargers-keaton-mitchell-cleared-to-face-former-team/",
-          "title": "Chargers' Keaton Mitchell: Cleared to face former team",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
-        }
-      ]
-    },
-    {
-      "query": "brian poindexter",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-16T23:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/13/us/politics/house-democrats-poindexter-investigation.html",
-        "https://www.washingtonpost.com/politics/2026/11/13/newly-elected-house-democrat-under-investigation-sexual-harassment/",
-        "https://www.politico.com/news/2026/11/13/brian-poindexter-harassment-probe-01165697"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiUg2Z1gd3wpe6ROMfCICK0GvqWXBNzPvuAw_Uy5T7EZGnFsVJU3nbc-Ah1Fg",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/13/us/politics/house-democrats-poindexter-investigation.html",
-          "title": "House Democrats Open Inquiry After Incoming Lawmaker Accused of Sexual Harassment",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiUg2Z1gd3wpe6ROMfCICK0GvqWXBNzPvuAw_Uy5T7EZGnFsVJU3nbc-Ah1Fg"
-        },
-        {
-          "url": "https://www.washingtonpost.com/politics/2026/11/13/newly-elected-house-democrat-under-investigation-sexual-harassment/",
-          "title": "Newly elected House Democrat under investigation for alleged sexual harassment",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFOWcpAtsTJNcBYX4YXFyZq0S11VBee4A9TOqGN5ExzbXSuaOfsH0Cpy4oc7U"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/13/brian-poindexter-harassment-probe-01165697",
-          "title": "Brian Poindexter, incoming House Democrat, is under investigation for sexual harassment",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWhDgilNFFtK47Ckf3bDumUifHFyVxwkYafu9N5hZ6cxxLR02uaqnIHV5_tF0"
-        }
-      ]
-    },
-    {
-      "query": "iona basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-16T23:20:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/iona-gaels-vs-umbc-retrievers-prediction-odds-2026-11-16/",
-        "https://www.covers.com/sport/basketball/ncaab/matchup/390015/picks",
-        "https://umbcretrievers.com/story.aspx?filename=mens-basketball-returns-home-against-iona-for-america-east-metro-challenge-on-monday-evening&file_date=11/15/2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCH3rnA9A8cYyr7m4Eazv4gsqo0Wug2AX1YCslySQTpg4rAXxbmvNRpefj9lc",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo",
       "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/iona-gaels-vs-umbc-retrievers-prediction-odds-2026-11-16/",
-          "title": "Iona vs UMBC Prediction, Picks & Odds | 16 Nov 2026",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-odds-2026-11-16/",
+          "title": "Western Kentucky vs Tulsa Prediction, Picks & Odds | 16 Nov 2026",
           "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCH3rnA9A8cYyr7m4Eazv4gsqo0Wug2AX1YCslySQTpg4rAXxbmvNRpefj9lc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
         },
         {
-          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/390015/picks",
-          "title": "Iona Gaels vs UMBC Retrievers Picks, Prop Bets For November 16, 2026 - NCAAB Predictions",
-          "publisher": "Covers.com",
+          "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/western-kentucky-hilltoppers-vs-tulsa-golden-hurricane-prediction-11-16-2026-college-basketball-picks-best-bets-odds.html",
+          "title": "Western Kentucky Hilltoppers vs Tulsa Golden Hurricane Prediction, 11/16/2026 College Basketball Picks, Best Bets & Odds",
+          "publisher": "Doc's Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFrA1kRKCTy5Fbuj4Rxj3dD7sljL548BcIwG8R9CWH3W9z6S_mAoWEfF6Ry9U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5qFmhq1KSV21lVdCQaSLEgBia49HfSBfIwIh4gb4_vhIYkR7mapQWgnVVQAw"
         },
         {
-          "url": "https://umbcretrievers.com/story.aspx?filename=mens-basketball-returns-home-against-iona-for-america-east-metro-challenge-on-monday-evening&file_date=11/15/2026",
-          "title": "Men's Basketball Returns Home Against Iona for America East/Metro Challenge on Monday Evening",
-          "publisher": "UMBC Retrievers",
+          "url": "https://www.sportsgamblingpodcast.com/2026/11/16/college-basketball-preview-picks-and-best-bets-for-november-16-2/",
+          "title": "College Basketball Preview, Picks, and Best Bets for November 16",
+          "publisher": "Sports Gambling Podcast",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6FphBXWeyd_pTsyR4oUVkGctD3QuEtZ4LAi3V48APGgKAXCugYpEjeIPMHww"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOFEzd-WvpVgd93ieK1zBokvExNePrrZthUac6ZFs_d5EzBIBKz0P8h2QnwZc"
+        }
+      ]
+    },
+    {
+      "query": "jakobi lane",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T00:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/video/is-it-over-for-jakobi-lane-in-fantasy-this-season-231223699.html",
+        "https://www.rotoballer.com/player-news/jakobi-lane-more-intriguing-with-new-qb-in-town/1995806",
+        "https://sports.yahoo.com/articles/fantasy-football-10-players-target-235522197.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYpk7-1Fa6vUKcPGO-_SVCOqjd-bAzmcQEO5ZrlLvd3BaQbw2pAA0oJZcAavg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/video/is-it-over-for-jakobi-lane-in-fantasy-this-season-231223699.html",
+          "title": "Is it over for Ja'Kobi Lane in fantasy this season?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYpk7-1Fa6vUKcPGO-_SVCOqjd-bAzmcQEO5ZrlLvd3BaQbw2pAA0oJZcAavg"
+        },
+        {
+          "url": "https://www.rotoballer.com/player-news/jakobi-lane-more-intriguing-with-new-qb-in-town/1995806",
+          "title": "Ja'Kobi Lane: Must-Add Waiver Wire Pickup for Week 11 Fantasy Football? - NFL News",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6Rk1UQ2Ai7qvd1AqMztv-YryWwI0o2eBl76d9i_OqkQDR-gx8ycn1uux-xE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/fantasy-football-10-players-target-235522197.html",
+          "title": "Fantasy Football: 10 players to target on the waiver wire in Week 11",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7nqAGbYvn5AL9rwMAabWSI56FiorrdU0BeY06bON0f87jwZNtJmJWf-N2ogY"
+        }
+      ]
+    },
+    {
+      "query": "sam heughan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T00:30:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/swooon/1312764/outlander-sam-heughan-girlfriend-stephanie-bullock-bafta-scotland-awards/",
+        "https://www.bafta.org/stories/outstanding-contribution-to-television-outlander/",
+        "https://parade.com/news/outlander-sam-heughan-bafta-award-most-powerful-chapter-in-his-life"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFJXMjxLRq1OxDUMldk5yyni-p_YVdLObC7yviIIfERe-Qkt9Z1gMB2u5LtVI",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/swooon/1312764/outlander-sam-heughan-girlfriend-stephanie-bullock-bafta-scotland-awards/",
+          "title": "'Outlander's Sam Heughan & His Girlfriend Make Red Carpet Debut",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFJXMjxLRq1OxDUMldk5yyni-p_YVdLObC7yviIIfERe-Qkt9Z1gMB2u5LtVI"
+        },
+        {
+          "url": "https://www.bafta.org/stories/outstanding-contribution-to-television-outlander/",
+          "title": "Outstanding Contribution to Television: Outlander",
+          "publisher": "Bafta",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyptlGRz78vqTklzHqHferCN5RiRNjbDu2lIxoGPy8qg-vYRfyPRoYt3aOdUs"
+        },
+        {
+          "url": "https://parade.com/news/outlander-sam-heughan-bafta-award-most-powerful-chapter-in-his-life",
+          "title": "'One of the Most Powerful Chapters of My Life': Tearful Sam Heughan Bids Farewell to ‘Outlander’ in Emotional BAFTA Scotland Speech",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSckAOu6MvCPKXRUZdUQh-vyOFYHqxivP4-ANv7m-RqsiCbofWS5hQpyr_KZkk"
+        }
+      ]
+    },
+    {
+      "query": "richmond vs virginia tech",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T00:30:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/virginia-tech/article/five-things-to-watch-virginia-tech-richmond-mens-basketball-preview-26-292845143/",
+        "https://www.sportsgambler.com/betting-tips/basketball/richmond-spiders-vs-virginia-tech-hokies-prediction-odds-2026-11-16/",
+        "https://www.si.com/college/virginiatech/basketball/virginia-tech-mbb-vs-richmond-scores-and-analysis-01m7kbzckwph"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPVm6TUjGVxFjMrPwY1cllQ_O4rohgr4iSgBwjI-G-QARBpao-mnxQHGzR90o",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/virginia-tech/article/five-things-to-watch-virginia-tech-richmond-mens-basketball-preview-26-292845143/",
+          "title": "Five Things To Watch: Virginia Tech hosts Richmond",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPVm6TUjGVxFjMrPwY1cllQ_O4rohgr4iSgBwjI-G-QARBpao-mnxQHGzR90o"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/richmond-spiders-vs-virginia-tech-hokies-prediction-odds-2026-11-16/",
+          "title": "Richmond vs Virginia Tech Prediction, Picks & Odds | 16 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
+        },
+        {
+          "url": "https://www.si.com/college/virginiatech/basketball/virginia-tech-mbb-vs-richmond-scores-and-analysis-01m7kbzckwph",
+          "title": "Virginia Tech MBB vs. Richmond: Scores and Analysis",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqnfZcAwQelIjlG40MX8sH-Znc_Xc8qzfXm-vRIrdGvp2joOcLpf_UpFZroUE"
+        }
+      ]
+    },
+    {
+      "query": "heidi gardner",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T00:20:00Z",
+      "related_news_urls": [
+        "https://www.tmz.com/2026/11/16/ray-tintori-dead/",
+        "https://parade.com/news/ray-tintori-boyfriend-snl-alum-heidi-gardner-dead-at-43",
+        "https://www.themirror.com/entertainment/breaking-snl-heidi-gardner-boyfriend-2112790"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmpaqaQ2krB1XpivdPzBBBA58yUFf5EFiXHIfYar3kVeABo88zzu2h1soRWAs",
+      "image_credit": "TMZ",
+      "news": [
+        {
+          "url": "https://www.tmz.com/2026/11/16/ray-tintori-dead/",
+          "title": "'SNL' Alum Heidi Gardner's Boyfriend Dead at 43",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmpaqaQ2krB1XpivdPzBBBA58yUFf5EFiXHIfYar3kVeABo88zzu2h1soRWAs"
+        },
+        {
+          "url": "https://parade.com/news/ray-tintori-boyfriend-snl-alum-heidi-gardner-dead-at-43",
+          "title": "Ray Tintori, Boyfriend of ‘SNL’ Alum Heidi Gardner, Dead at 43",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYbVRspJ_GqbxkNDzkrjfcu2AVITMkBkZrK2Djq6GFfx-iqj1J688N5toO96g"
+        },
+        {
+          "url": "https://www.themirror.com/entertainment/breaking-snl-heidi-gardner-boyfriend-2112790",
+          "title": "SNL alum Heidi Gardner's boyfriend, 43, dies as cause of death still under investigation",
+          "publisher": "The Mirror US",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4hd9baMlhaVysWlDXd35UtUogFT1cJooXK1QmmBU_38-Df3MdmZruRyp1YA4"
+        }
+      ]
+    },
+    {
+      "query": "pep guardiola",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T00:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50464388/usmnt-coaching-candidates-replace-mauricio-pochettino",
+        "https://bleacherreport.com/articles/25533702-pep-guardiolas-stance-usmnt-job-after-mauricio-pochettino-exit-reportedly-revealed",
+        "https://www.foxsports.com/stories/soccer/usmnt-pep-guardiola-mauricio-pochettino-manchester-united"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwyC2o9I7Nfw5UwD9WkByEq4MgY-mfkHZoOmQeRd07L8vIa6slo6SnBO5KhTY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50464388/usmnt-coaching-candidates-replace-mauricio-pochettino",
+          "title": "Who should be the USMNT's coaching candidates to succeed Mauricio Pochettino?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwyC2o9I7Nfw5UwD9WkByEq4MgY-mfkHZoOmQeRd07L8vIa6slo6SnBO5KhTY"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25533702-pep-guardiolas-stance-usmnt-job-after-mauricio-pochettino-exit-reportedly-revealed",
+          "title": "Pep Guardiola's Stance on USMNT Job After Mauricio Pochettino Exit Reportedly Revealed",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBfx3bJuvC9SlctPaM6Aq25h2g9zpMhtIEcYHOdOl5zrGjlNXx7gz1g3Mccb0"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/soccer/usmnt-pep-guardiola-mauricio-pochettino-manchester-united",
+          "title": "U.S. Soccer's Pursuit Of Pep Guardiola Reportedly Hits A Snag",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqqOci8en7OhfXIFW3NmTqOe4IjgoUSNjO-PryM7O9W1AiTqvMBBZaQgNKlMo"
+        }
+      ]
+    },
+    {
+      "query": "simone biles colts game outfit",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T00:20:00Z",
+      "related_news_urls": [
+        "https://people.com/simone-biles-revives-her-touchdown-shots-tradition-during-colts-victory-12258625",
+        "https://www.reutersconnect.com/item/simone-biles-left-speaks-with-kalen-jackson-indianapolis-colts-owner-and-chief-brand-officer-on-the-sideline-sunday-nov-8/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzMTE2MTg",
+        "https://www.essentiallysports.com/olympic-news-gymnastics-jonathan-owens-wins-fans-hearts-with-special-pit-stop-for-simone-biles-before-nfl-game-kickoff/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRF9_f1ZmBDqm06qlpeB9UXtzQcaZWFjLfScgKQiyslnt3qpW9Q_0NzK7Lbt4w",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/simone-biles-revives-her-touchdown-shots-tradition-during-colts-victory-12258625",
+          "title": "Simone Biles Revives Her ‘Touchdown Shots’ Tradition During Colts’ Victory",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRF9_f1ZmBDqm06qlpeB9UXtzQcaZWFjLfScgKQiyslnt3qpW9Q_0NzK7Lbt4w"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/simone-biles-left-speaks-with-kalen-jackson-indianapolis-colts-owner-and-chief-brand-officer-on-the-sideline-sunday-nov-8/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzMTE2MTg",
+          "title": "Licensable picture: Simone Biles (left) speaks with Kalen Jackson, Indianapolis Colts owner and chief brand officer, on the sideline Sunday, Nov. 8",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJO23Nk-qaATEDABeGr7uJkUYYeOQ3FARFegVXkaf8q58LcTIkXexD9BUmh8E"
+        },
+        {
+          "url": "https://www.essentiallysports.com/olympic-news-gymnastics-jonathan-owens-wins-fans-hearts-with-special-pit-stop-for-simone-biles-before-nfl-game-kickoff/",
+          "title": "Jonathan Owens Wins Fans’ Hearts With Special Pit Stop for Simone Biles Before NFL Game Kickoff",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToDdoNn6RCDHl56ktxQG9Fp6znH9R74bsqyRQzl4g74gCF7M-z_GU_0U3f8H8"
+        }
+      ]
+    },
+    {
+      "query": "warriors vs pelicans",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-17T00:10:00Z",
+      "related_news_urls": [
+        "https://warriors.com/news/gameday-preview-20261116",
+        "https://sports.yahoo.com/articles/warriors-vs-pelicans-injury-report-204935734.html",
+        "https://www.espn.com/nba/recap/_/gameId/401909959"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGKXTLVCcIMUNsHgd8D3Exy6TPFyvfwjVLtBSCMzvK_lqn6B4yoE0fpFEtLlw",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://warriors.com/news/gameday-preview-20261116",
+          "title": "Game Preview: Warriors at New Orleans Pelicans - 11/16/26",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGKXTLVCcIMUNsHgd8D3Exy6TPFyvfwjVLtBSCMzvK_lqn6B4yoE0fpFEtLlw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/warriors-vs-pelicans-injury-report-204935734.html",
+          "title": "Warriors vs Pelicans Injury Report Rules Out Several Starters",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFYSHS04YzMjXIcpu07MRwwih1r_5seJzUutOZ8tKyE4Qu6tziHGuezbVJ_7Y"
+        },
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909959",
+          "title": "Warriors 138-87 Pelicans (Nov 9, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTm3RXj1VkXioYzFV5tePoBUv1SXEcc7b_Zj8IgUiXLFB67wXIb_Q36otZBMzw"
+        }
+      ]
+    },
+    {
+      "query": "canadá - guatemala",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-17T00:10:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/guatemala/nota/_/id/17522440/luis-fernando-tena-confianza-guatemala-juego-de-vuelta-canada",
+        "https://www.prensalibre.com/deportes/futbol-nacional/canada-vs-guatemala-fecha-hora-y-donde-ver-el-partido-de-vuelta-de-la-liga-de-naciones-breaking/",
+        "https://www.facebook.com/MilenioDiario/posts/-ya-casicheca-a-qu%C3%A9-hora-y-en-c%C3%B3mo-ver-el-canad%C3%A1-vs-guatemala-de-la-nations-leag/1684165853740879/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1RO-y1LN55fn5WW4-f3OCZP_5vkXWyl54ikz3e_8BJQ5_TJuvpkke6G2y1lI",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/guatemala/nota/_/id/17522440/luis-fernando-tena-confianza-guatemala-juego-de-vuelta-canada",
+          "title": "Luis Fernando Tena: \"Tenemos confianza y creemos en nuestras fuerzas\"",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1RO-y1LN55fn5WW4-f3OCZP_5vkXWyl54ikz3e_8BJQ5_TJuvpkke6G2y1lI"
+        },
+        {
+          "url": "https://www.prensalibre.com/deportes/futbol-nacional/canada-vs-guatemala-fecha-hora-y-donde-ver-el-partido-de-vuelta-de-la-liga-de-naciones-breaking/",
+          "title": "Canadá vs. Guatemala: fecha, hora y dónde ver el partido de vuelta de la Liga de Naciones",
+          "publisher": "Prensa Libre",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIXTsIl6VbnbM7SxlwziWAAMLJu0Q03kH3q7WEKDf9v2lMIJ2wTl-GKBRZUyg"
+        },
+        {
+          "url": "https://www.facebook.com/MilenioDiario/posts/-ya-casicheca-a-qu%C3%A9-hora-y-en-c%C3%B3mo-ver-el-canad%C3%A1-vs-guatemala-de-la-nations-leag/1684165853740879/",
+          "title": "⚽ ¡Ya casi! Checa a qué HORA y en CÓMO VER el Canadá vs Guatemala de la Nations League 🇨🇦🆚🇬🇹",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYh9H_Xrwqq-TziuiHBoD25SFWn81ymdEWsc1Ii3H4Ka8GY8ROyeBCT8Ij5EA"
+        }
+      ]
+    },
+    {
+      "query": "celtics schedule",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T00:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50496245/celtics-set-franchise-mark-42-9-lead-mavericks-one-quarter",
+        "https://www.nbcsportsboston.com/news/boston-sports/live-updates-boston-sports-lions-mike-vrabel/814062/",
+        "https://www.boston.com/sports/boston-celtics/2026/11/15/jayson-tatum-celtics-stifle-mavericks-in-dominant-performance-9-takeaways/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxRDPKsPe7SwnuIYqg6POeYADsNQDToCmILbelWJqxX9LsjVrmEm--APeZ4OQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50496245/celtics-set-franchise-mark-42-9-lead-mavericks-one-quarter",
+          "title": "Celtics set franchise mark with 42-9 lead over Mavericks after one quarter",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxRDPKsPe7SwnuIYqg6POeYADsNQDToCmILbelWJqxX9LsjVrmEm--APeZ4OQ"
+        },
+        {
+          "url": "https://www.nbcsportsboston.com/news/boston-sports/live-updates-boston-sports-lions-mike-vrabel/814062/",
+          "title": "Drake Maye reportedly will miss ‘extended time'; Celtics blow out Dallas | All-Access Daily",
+          "publisher": "NBC Sports Boston",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJAMs6pRUcheoFxJ5vcalZkI0bx_8O0E5-XQOTQP9CRWejfeKaP4ZpxUhxXIY"
+        },
+        {
+          "url": "https://www.boston.com/sports/boston-celtics/2026/11/15/jayson-tatum-celtics-stifle-mavericks-in-dominant-performance-9-takeaways/",
+          "title": "Jayson Tatum, Celtics stifle Mavericks in dominant performance: 9 takeaways",
+          "publisher": "Boston.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfYBcXpUbsj9SCBalszy-AYoyTwN0TAn7RGnZBgaPAb5seBXmnRJ8_720dTzA"
         }
       ]
     }
