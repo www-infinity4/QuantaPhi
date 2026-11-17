@@ -3,133 +3,266 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T22:01:37.208183Z",
+  "checked_at": "2026-11-17T22:30:59.962021Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "uefa nations league",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T21:40:00Z",
+      "query": "argentina - costa rica",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T22:10:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cwq6e479rygjt",
-        "https://www.reutersconnect.com/item/uefa-nations-league-group-b2-hungary-v-northern-ireland/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkgxS0lPT0g",
-        "https://www.newsletter.co.uk/sport/football/northern-ireland/northern-ireland-legend-to-lead-nations-league-clash-in-michael-oneills-absence-9355432"
+        "https://sports.yahoo.com/articles/watch-argentina-vs-costa-rica-153215766.html",
+        "https://www.si.com/soccer/argentina-vs-costa-rica-preview-predictions-lineups-11-17-26",
+        "https://www.usatoday.com/story/sports/soccer/2026/11/17/argentina-costa-rica-prediction-where-to-watch-friendly/92807960007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYApZARUp2mS55Ze2AKBdicPPbYSRZkvrV7lfCTSnN4Urb8NUtPYMm9the5pQ",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJAP-A2RrPu6e1ZEJgjQuNZv0vtitFJ0QQooeSU13UqGEZ8sgokS0PJU68QY",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cwq6e479rygjt",
-          "title": "Watch: Nations League - NI draw with Hungary to seal top-tier promotion",
-          "publisher": "BBC",
+          "url": "https://sports.yahoo.com/articles/watch-argentina-vs-costa-rica-153215766.html",
+          "title": "How to watch Argentina vs Costa Rica live: Stream, TV, team news, prediction",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYApZARUp2mS55Ze2AKBdicPPbYSRZkvrV7lfCTSnN4Urb8NUtPYMm9the5pQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJAP-A2RrPu6e1ZEJgjQuNZv0vtitFJ0QQooeSU13UqGEZ8sgokS0PJU68QY"
         },
         {
-          "url": "https://www.reutersconnect.com/item/uefa-nations-league-group-b2-hungary-v-northern-ireland/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkgxS0lPT0g",
-          "title": "Licensable picture: UEFA Nations League - Group B2 - Hungary v Northern Ireland",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgn4VoDSzKDKCmm0Cmx5r-Rmn-f5FA8qCfOF1FIvvC-XJU0JMcET6IYtPhmNc"
-        },
-        {
-          "url": "https://www.newsletter.co.uk/sport/football/northern-ireland/northern-ireland-legend-to-lead-nations-league-clash-in-michael-oneills-absence-9355432",
-          "title": "Northern Ireland legend to lead Nations League clash in Michael O'Neill's absence",
-          "publisher": "Belfast News Letter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVw9GfjixH6j-w7je-kj4fNxEJd4sQZbD6vuONhkV0rq4UfITohMqftJhO1pQ"
-        }
-      ]
-    },
-    {
-      "query": "nvda stock price",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T21:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-fell-below-170-093702027.html",
-        "https://www.moomoo.com/community/feed/nov-check-in-19-117631786287110",
-        "https://www.globalbankingandfinance.com/tesla-tsla-falls-2026-11-16/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHssiinHYi4eicl53feFIqF4VVTPA1hxd1e09ma5Yj3FLso_KdDIap4XHYxgU",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-fell-below-170-093702027.html",
-          "title": "Nvidia Stock Fell Below $170. Here’s Why It Could Be a Screaming Buy.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHssiinHYi4eicl53feFIqF4VVTPA1hxd1e09ma5Yj3FLso_KdDIap4XHYxgU"
-        },
-        {
-          "url": "https://www.moomoo.com/community/feed/nov-check-in-19-117631786287110",
-          "title": "NOV check in #19",
-          "publisher": "Moomoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3qcRJBFBh3bPHYX4D00ekIavaX_Cr3waZSPgOYzyFDDZTgscMSw2rCxRIP08"
-        },
-        {
-          "url": "https://www.globalbankingandfinance.com/tesla-tsla-falls-2026-11-16/",
-          "title": "Tesla falls 2.69% in Monday's session",
-          "publisher": "Global Banking & Finance Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRei4Q4RkMkOCt4FsT9uVWfVjN6gEI4pdkTmedN4JXQADO_1ZR6eOVmd10_dZw"
-        }
-      ]
-    },
-    {
-      "query": "erling haaland",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T21:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50490251/erling-haaland-man-city-premier-league-sanctions",
-        "https://www.si.com/soccer/furious-erling-haaland-warning-norway-manager",
-        "https://talksport.com/football/4711565/simon-jordan-erling-haaland-man-city/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3TAnmLhVqst-7fC2ajIE2wbe9U_Ewv-158KHz6mSxZwdvV9Dnk4YQAymnAtI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50490251/erling-haaland-man-city-premier-league-sanctions",
-          "title": "Haaland 'incredibly happy' at Man City, not thinking about possible sanctions",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3TAnmLhVqst-7fC2ajIE2wbe9U_Ewv-158KHz6mSxZwdvV9Dnk4YQAymnAtI"
-        },
-        {
-          "url": "https://www.si.com/soccer/furious-erling-haaland-warning-norway-manager",
-          "title": "‘Absolute Madness’—Furious Erling Haaland Warning Fired by Norway Manager",
+          "url": "https://www.si.com/soccer/argentina-vs-costa-rica-preview-predictions-lineups-11-17-26",
+          "title": "Argentina vs. Costa Rica: Preview, Predictions and Lineups",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEM68M6Ygujoflf6Jl4nMh-KgAfjrDr1cjJIBT7E73wSSVWP3zt1Ktvyc2eKM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVFO8UiN7HzztkZ693uDh4-she5OyxHtMX37DPufyibNra2_CfMjT-ZcvM3PE"
         },
         {
-          "url": "https://talksport.com/football/4711565/simon-jordan-erling-haaland-man-city/",
-          "title": "Simon Jordan: Erling Haaland question was worthless, we all know he's leaving if Man City appeal fails",
-          "publisher": "talkSPORT",
+          "url": "https://www.usatoday.com/story/sports/soccer/2026/11/17/argentina-costa-rica-prediction-where-to-watch-friendly/92807960007/",
+          "title": "Argentina vs. Costa Rica friendly prediction, start time, how to watch",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQejE1XanBom52Q2fhbjcO3LGhOfx7HIAhW0DBABXMcd10soLw5BkcOzYNOyqY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThZ7esKUdEgFAOvOlXNmexI4x7foXY7jCX-e-WfxoWKpggoqrr5u2n04EsUL8"
+        }
+      ]
+    },
+    {
+      "query": "chile vs colombia",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T22:10:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17526251/probable-formacion-de-chile-para-enfrentar-a-colombia",
+        "https://colombia.as.com/futbol/posible-alineacion-de-colombia-para-enfrentar-a-chile-en-santiago-f202611-n/",
+        "https://www.eltiempo.com/deportes/futbol-internacional/la-seleccion-colombia-cierra-el-ano-contra-chile-otra-prueba-para-ajustar-tuercas-hora-y-tv-3601519"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPI4mzKBeBVWVmGPrk_X5dSuWLo2NeMwhc6j_xPkdzd4gXjAZ3bLAM7TBJr8g",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17526251/probable-formacion-de-chile-para-enfrentar-a-colombia",
+          "title": "¡Atención, chilenos! La probable formación para enfrentar a Colombia",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPI4mzKBeBVWVmGPrk_X5dSuWLo2NeMwhc6j_xPkdzd4gXjAZ3bLAM7TBJr8g"
+        },
+        {
+          "url": "https://colombia.as.com/futbol/posible-alineacion-de-colombia-para-enfrentar-a-chile-en-santiago-f202611-n/",
+          "title": "Posible alineación de Colombia para enfrentar a Chile en Santiago",
+          "publisher": "AS Colombia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMttwH27SKlW-ncZRr5aFtn4JQwRnmZg1bBulOC8WdNIRbPXcQaaTBT3ncU6M"
+        },
+        {
+          "url": "https://www.eltiempo.com/deportes/futbol-internacional/la-seleccion-colombia-cierra-el-ano-contra-chile-otra-prueba-para-ajustar-tuercas-hora-y-tv-3601519",
+          "title": "La Selección Colombia cierra el año contra Chile: otra prueba para ajustar tuercas | Hora y TV",
+          "publisher": "El Tiempo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvarhhSYlp-xj__iRgFd6X39ZJ0RRdF_bJiBaQcZ5-dLgO-U05zWTkn0RywA"
+        }
+      ]
+    },
+    {
+      "query": "eastern mi vs wmu",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T22:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/watch-eastern-michigan-vs-western-220000977.html",
+        "https://www.cbssports.com/betting/news/eastern-michigan-western-michigan-prediction-odds-week-12-tuesday-maction-picks-best-bets/",
+        "https://www.usatoday.com/sports/ncaaf/event/2026/2975031/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=1"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVsObquYcsITN--IHWsceWsUHc1ncJ6bz50eBygQs_J58DJxsWg1fkHqWMlhI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/watch-eastern-michigan-vs-western-220000977.html",
+          "title": "How to watch Eastern Michigan vs Western Michigan: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVsObquYcsITN--IHWsceWsUHc1ncJ6bz50eBygQs_J58DJxsWg1fkHqWMlhI"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/eastern-michigan-western-michigan-prediction-odds-week-12-tuesday-maction-picks-best-bets/",
+          "title": "Eastern Michigan vs. Western Michigan prediction, odds: Week 12 Tuesday MACtion picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTO7ON1yBwxJMZGJu_ZR8WIu-RR8qoLxsD7bgqrB_74nm8cCx-Lx2OD8qEUakE"
+        },
+        {
+          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2975031/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=1",
+          "title": "Eastern Michigan Eagles at Western Michigan Broncos - NCAAF Game Summary - Nov 17, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzqESltnY3eHCrgLn5uuHRIj9Ep7MQ_V8wMuaKOh_gLGJlE_WPhR0W3ZJjNfM"
+        }
+      ]
+    },
+    {
+      "query": "chile - colombia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T22:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/duran-injury-fears-eased-colombia-071408197.html",
+        "https://sports.yahoo.com/articles/camilo-duran-both-legs-cramped-104000920.html",
+        "https://www.beinsports.com/en-us/soccer/friendlies/articles/lorenzo-hails-colombias-fight-in-intense-friendly-win-over-chile-2026-11-14"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTFDijEfZAAYOECFCPK4vL4cWSMvmgG53zjMz4kmkIN0j9iEjO7KxiPQzFHRs",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/duran-injury-fears-eased-colombia-071408197.html",
+          "title": "Duran injury fears eased by Colombia boss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTFDijEfZAAYOECFCPK4vL4cWSMvmgG53zjMz4kmkIN0j9iEjO7KxiPQzFHRs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/camilo-duran-both-legs-cramped-104000920.html",
+          "title": "Camilo Duran – “Both his legs cramped, but he’s fine,” Colombia boss eases Celtic concerns",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLJ_nBiAPh1_2wY28GCKAn8Q1iti9lhmaZGniusvYfRk-5t3u96FTxhQhfaqI"
+        },
+        {
+          "url": "https://www.beinsports.com/en-us/soccer/friendlies/articles/lorenzo-hails-colombias-fight-in-intense-friendly-win-over-chile-2026-11-14",
+          "title": "Lorenzo hails Colombia's fight in 'intense' friendly win over Chile",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVsVkN-LknIsjeBemkstqFAh0EYOohxu0phZvUr5xVd1KrqyZpyqE5qaJOyuk"
+        }
+      ]
+    },
+    {
+      "query": "oklahoma city thunder",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T22:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7789522/2026/11/17/blake-griffin-thunder-stadium-fans-taxpayers/",
+        "https://sports.yahoo.com/articles/despite-acknowledging-super-exciting-192055572.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/17/they-know-that-the-alternative-is-to-lose-the-team/92830171007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm8PGjfdOOXXtZug_cKGHFdu5Hv0Wy87HKWS7ZlFTInlQIQYq3yW1uwSiyteU",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7789522/2026/11/17/blake-griffin-thunder-stadium-fans-taxpayers/",
+          "title": "Oklahoma native Blake Griffin says taxpayers had little choice on $900 million Thunder arena",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm8PGjfdOOXXtZug_cKGHFdu5Hv0Wy87HKWS7ZlFTInlQIQYq3yW1uwSiyteU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/despite-acknowledging-super-exciting-192055572.html",
+          "title": "Despite acknowledging how “super exciting” it was for …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0rtNlbBL5Bl3JC9Y4N_dnvABhQuEQ06u01zvpa9ZI_8UKcy1_3MJjZdI5PEU"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/17/they-know-that-the-alternative-is-to-lose-the-team/92830171007/",
+          "title": "“They know that the alternative is to lose the team …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXWkEr_zhiPynTaz9RYJkvQep33jTCVdMReaCqwW-LSjX_D-t1xkS8GfSIVA"
+        }
+      ]
+    },
+    {
+      "query": "harvey jones nvidia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T22:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-succession-board-lessons.html",
+        "https://finance.yahoo.com/technology/article/nvidia-board-needs-some-heavyweights-ex-medtronic-ceo-bill-george-says-191935557.html",
+        "https://www.thetimes.com/business/companies-markets/article/ai-boom-nvidia-jensen-huang-tech-stocks-plunge-7wl33h5gd"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3ro-1KCVLPdqBFWkeeeEamDL64_xcuV67fGNtzgF0AuVUNN7vlLiqc_ir6AI",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-succession-board-lessons.html",
+          "title": "Jensen Huang's Nvidia exit exposes succession and governance risks for companies and boards",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3ro-1KCVLPdqBFWkeeeEamDL64_xcuV67fGNtzgF0AuVUNN7vlLiqc_ir6AI"
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/article/nvidia-board-needs-some-heavyweights-ex-medtronic-ceo-bill-george-says-191935557.html",
+          "title": "Nvidia board needs 'some heavyweights,' ex-Medtronic CEO Bill George says",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbEOmdzu89gKASxUY3yDN4PGULqX7m7vPtCWBkMVNN1BPYA3kBxNbU7A4ARRs"
+        },
+        {
+          "url": "https://www.thetimes.com/business/companies-markets/article/ai-boom-nvidia-jensen-huang-tech-stocks-plunge-7wl33h5gd",
+          "title": "Nvidia will not consider return of Jensen Huang as boss",
+          "publisher": "The Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuGHdr9jKrYL8EOtHPYg3OWQko-wWOfVWZQ6tSGXkL19jLnQ-VheidQc0Vuzc"
+        }
+      ]
+    },
+    {
+      "query": "notre dame vs florida",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-17T21:50:00Z",
+      "related_news_urls": [
+        "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
+        "https://sports.yahoo.com/articles/watch-notre-dame-vs-florida-203000108.html",
+        "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU",
+      "image_credit": "Florida Gators",
+      "news": [
+        {
+          "url": "https://floridagators.com/news/2026/11/16/mens-basketball-players-era-stuff-florida-vs-notre-dame-nov-17-2026",
+          "title": "Players Era 8: No. 1 Florida vs Notre Dame (Tuesday, 4:30 pm)",
+          "publisher": "Florida Gators",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_V7I-H08dZ_Kw1vQpw0RXJJ7d6owrikYDUUlLdGkN4bKH_K7U2zDvBmHQXU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-notre-dame-vs-florida-203000108.html",
+          "title": "How to watch Notre Dame vs Florida: Live stream NCAA College Basketball, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEtfp296nqpn8iycIuTnSxt2uHn8bfdUp6LHfg85avKmaE-B6AHv3Q5uj-OI"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/florida-notre-dame-prediction-odds-2026-players-era-8-picks-best-bets-tuesday-november-17/",
+          "title": "Florida vs. Notre Dame prediction, odds: 2026 Players Era 8 picks for Tuesday, Nov. 17 by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN3iRc166heYtuBI1p2_lhDYllmtlNUll6r7hbRaGx8GUbTlnvwgNt4U0N9lQ"
         }
       ]
     },
     {
       "query": "java4shell",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-17T21:40:00Z",
       "related_news_urls": [
-        "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
         "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html",
+        "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
         "https://news.jkn.co.kr/editions/english/post/1102729"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnr7zI_zMv5Xh4VYoat-OWON-cDJTfD6WLU-oMjomLs7xFef_HnTZw3OWahGg",
-      "image_credit": "The Hacker News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbKZADXkaquTI0GlemNoO0VmuBbKBYAa4t2JMry7OQwp91ib0JZrwH7U2qPQ",
+      "image_credit": "The New York Times",
       "news": [
-        {
-          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-          "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
-          "publisher": "The Hacker News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnr7zI_zMv5Xh4VYoat-OWON-cDJTfD6WLU-oMjomLs7xFef_HnTZw3OWahGg"
-        },
         {
           "url": "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html",
           "title": "A.I. Helps Find Major Security Bug in Java, a Software Platform Vital to the Internet",
@@ -138,11 +271,53 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbKZADXkaquTI0GlemNoO0VmuBbKBYAa4t2JMry7OQwp91ib0JZrwH7U2qPQ"
         },
         {
+          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+          "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+          "publisher": "The Hacker News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnr7zI_zMv5Xh4VYoat-OWON-cDJTfD6WLU-oMjomLs7xFef_HnTZw3OWahGg"
+        },
+        {
           "url": "https://news.jkn.co.kr/editions/english/post/1102729",
           "title": "Critical Java vulnerability discovered; NIS issues urgent inspection advisory to public institutions",
           "publisher": "재경일보",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-RHQbDNidXWUtB_PGYl_gqLs6PRYAxschklmqfGrohLtbUE94gvia2XG1Tl8"
+        }
+      ]
+    },
+    {
+      "query": "aaoi stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T21:40:00Z",
+      "related_news_urls": [
+        "https://www.investing.com/news/stock-market-news/applied-optoelectronics-falls-8-on-550-million-stock-offering-plan-5034098",
+        "https://www.benzinga.com/trading-ideas/movers/26/11/63373359/applied-optoelectronics-stock-tumbles-after-hours-heres-why",
+        "https://www.streetinsider.com/Corporate+News/Applied+Optoelectronics+launches+%24550M+at-the-market+stock+offering/27363732.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThlbaJbqmqbU6OIu7pr-cIceZxRBQT8RYQrK5eQpxS9mV1Rf8c2kIUYWFsg-w",
+      "image_credit": "Investing.com",
+      "news": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/applied-optoelectronics-falls-8-on-550-million-stock-offering-plan-5034098",
+          "title": "Applied Optoelectronics falls 8% on $550 million stock offering plan",
+          "publisher": "Investing.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThlbaJbqmqbU6OIu7pr-cIceZxRBQT8RYQrK5eQpxS9mV1Rf8c2kIUYWFsg-w"
+        },
+        {
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63373359/applied-optoelectronics-stock-tumbles-after-hours-heres-why",
+          "title": "Applied Optoelectronics Stock Tumbles After Hours: Here's Why",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLAub0gvUsz7xrxdCnQqlBjQutdRYEdIYYG8VGW9qOllvsHfdfQuH2BS7LyR0"
+        },
+        {
+          "url": "https://www.streetinsider.com/Corporate+News/Applied+Optoelectronics+launches+%24550M+at-the-market+stock+offering/27363732.html",
+          "title": "Applied Optoelectronics launches $550M at-the-market stock offering",
+          "publisher": "StreetInsider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLm6FBBi1rKr5Lvc6FgxEFH08Pi-zUd7xm74EXsQ2rnDAa88PO74eEqGmpMqs"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "TIKR.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3SP4GfjaZOYCEqaVKa4INX9ZOMXGPEIatUKUYgd7MR54xnCGek-9smLv89Mk"
-        }
-      ]
-    },
-    {
-      "query": "ecuador vs bolivia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T21:30:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17524819/hernan-galindez-previo-ecuador-vs-bolivia-se-vieron-cosas-buenas",
-        "https://www.eluniverso.com/deportes/futbol/como-ver-gratis-el-partido-amistoso-de-ecuador-y-bolivia-por-la-fecha-fifa-nota/",
-        "https://www.extra.ec/noticia/deportes/gallardo-sintio-carino-guayaquil-asi-recibio-ciudad-muneco-168183.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR98N0jcavhU0ZAUxVmD_0AyMZAoxFQqZAyAAwRPhAVkpzyEOefeEFRKENRsOw",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17524819/hernan-galindez-previo-ecuador-vs-bolivia-se-vieron-cosas-buenas",
-          "title": "Hernán Galíndez, previo al duelo vs. Bolivia: \"El otro día se vieron cosas muy buenas\"",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR98N0jcavhU0ZAUxVmD_0AyMZAoxFQqZAyAAwRPhAVkpzyEOefeEFRKENRsOw"
-        },
-        {
-          "url": "https://www.eluniverso.com/deportes/futbol/como-ver-gratis-el-partido-amistoso-de-ecuador-y-bolivia-por-la-fecha-fifa-nota/",
-          "title": "Cómo ver gratis el partido amistoso de Ecuador y Bolivia por la fecha FIFA",
-          "publisher": "El Universo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhqVxltoIw38C9mPuY9y7QPLrdwJ6YQFyxN-MDfXcJS1FxY-W9-h1dL1X44fI"
-        },
-        {
-          "url": "https://www.extra.ec/noticia/deportes/gallardo-sintio-carino-guayaquil-asi-recibio-ciudad-muneco-168183.html",
-          "title": "Gallardo sintió el cariño de Guayaquil: así recibió la ciudad al Muñeco",
-          "publisher": "Diario Extra",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWacr6kNt5IZVq9fxgIRaZa6jQfXdpETgaYqN4qblBP7de7zMfyelGuD3oBno"
-        }
-      ]
-    },
-    {
-      "query": "camille herron",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T21:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/sports/olympics/running-pay-bills-only-fans-ultramarathon-camille-herron-sports-rcna607090",
-        "https://www.modernghana.com/videonews/nbc/2/755509",
-        "https://www.rnz.co.nz/news/sport/2481759/athlete-side-of-onlyfans-helps-fund-beach-volleyball-olivia-macdonald-star-s-career"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSy0o59FskPTNarlbCISsCo1XvnO3FMjn03rfEfFabqfnboMr6UaXOpUnJMuJw",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/sports/olympics/running-pay-bills-only-fans-ultramarathon-camille-herron-sports-rcna607090",
-          "title": "Running used to pay this pro athlete’s bills. Now, it’s OnlyFans.",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSy0o59FskPTNarlbCISsCo1XvnO3FMjn03rfEfFabqfnboMr6UaXOpUnJMuJw"
-        },
-        {
-          "url": "https://www.modernghana.com/videonews/nbc/2/755509",
-          "title": "These female athletes are embracing OnlyFans",
-          "publisher": "Modern Ghana",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ8tEl9c31MHYJT7oINtV520X7rVesAvMo5Wolakp-fdej4LtKC1Ca04Czaks"
-        },
-        {
-          "url": "https://www.rnz.co.nz/news/sport/2481759/athlete-side-of-onlyfans-helps-fund-beach-volleyball-olivia-macdonald-star-s-career",
-          "title": "'Athlete side' of OnlyFans helps fund beach volleyball Olivia MacDonald star's career",
-          "publisher": "RNZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFtYhuvhOgWlm19Mk3bux8_N5haWJLCDz8mz_Xeym6dJZYhhHrE0chD7C9A3c"
-        }
-      ]
-    },
-    {
-      "query": "politics",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T21:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-        "https://www.pbs.org/newshour/world/trump-arrives-in-philippines-to-kick-off-asia-trip-with-economic-deals-and-talks-with-allies",
-        "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnMkD9akFnSrFo33ioEPd45LaQm_zCSm9aFcIiSRO42mbBoLUPPrSf-B7HB-0",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-          "title": "Trump Will Miss Most of the ASEAN Summit",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnMkD9akFnSrFo33ioEPd45LaQm_zCSm9aFcIiSRO42mbBoLUPPrSf-B7HB-0"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/world/trump-arrives-in-philippines-to-kick-off-asia-trip-with-economic-deals-and-talks-with-allies",
-          "title": "Trump arrives in Philippines to kick off Asia trip with economic deals and talks with allies",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS3-y2tOIniHmVQvS5qkMHYHA4_7i8JKvwV4-Sr-sgCxzuWoHdNkSAWE4BELA"
-        },
-        {
-          "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
-          "title": "Trump Asia trip live updates: Trump and Quad leaders gather in Manila",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq8EyhCXt2Ax-MzRnDh_XcKJsPHJrPAD-Ia4mJfk9kVJ81JjRp87rZg4VZuyE"
-        }
-      ]
-    },
-    {
-      "query": "ryan jeffers",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T21:20:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/ryan-jeffers-accepts-twins-qualifying-offer",
-        "https://sports.yahoo.com/articles/ryan-jeffers-reportedly-accepts-twins-212409986.html",
-        "https://www.startribune.com/minnesota-twins-roster-salary-2027-ryan-jeffers-contract-qualifying-offer-mlb-free-agency-news/601921231"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk-6BI6dAbZFZe-F8s22hIqcShXdpMYS0qCGM4YJSwwFARq8GTDPgY6DNtp5w",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/ryan-jeffers-accepts-twins-qualifying-offer",
-          "title": "Top free-agent catcher accepts qualifying offer to remain with Twins",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk-6BI6dAbZFZe-F8s22hIqcShXdpMYS0qCGM4YJSwwFARq8GTDPgY6DNtp5w"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ryan-jeffers-reportedly-accepts-twins-212409986.html",
-          "title": "Ryan Jeffers reportedly accepts Twins' $23 million qualifying offer",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHg9LttnvSgqcmb8sG2595k63pLKIiTbgq8lrqc93JMGaldfgQsRKMvQgRW3Y"
-        },
-        {
-          "url": "https://www.startribune.com/minnesota-twins-roster-salary-2027-ryan-jeffers-contract-qualifying-offer-mlb-free-agency-news/601921231",
-          "title": "Ryan Jeffers accepts $23.15 million qualifying offer, will return to Twins in 2027",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHyb9IpofoP4oqICUgSj9VRyz6SrzSxllGq8NjH670KtYp5KojCvMRInTwYSI"
-        }
-      ]
-    },
-    {
-      "query": "wandale robinson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T21:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/mlb/breaking-news/article/titans-place-wr-wandale-robinson-on-ir-due-to-ankle-injury-sign-xavier-restrepo-to-active-roster-212922575.html",
-        "https://sports.yahoo.com/articles/tennessee-titans-wr-wandale-robinson-212445496.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-17/ravens-release-harrison-mevis"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-a3sGvFbP220dLsai6Oea8SJQocmV2HedAJUc11q7VPqKkkybwExtiFtq1Z4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/mlb/breaking-news/article/titans-place-wr-wandale-robinson-on-ir-due-to-ankle-injury-sign-xavier-restrepo-to-active-roster-212922575.html",
-          "title": "Titans place WR Wan'Dale Robinson on IR due to ankle injury, sign Xavier Restrepo to active roster",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-a3sGvFbP220dLsai6Oea8SJQocmV2HedAJUc11q7VPqKkkybwExtiFtq1Z4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/tennessee-titans-wr-wandale-robinson-212445496.html",
-          "title": "Tennessee Titans WR Wan'Dale Robinson placed on injured reserve",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfro-ENmbhnMZg1VSYXch0OQFRkD7NKAiT45p_CK6-vURf7-IAw_cjeuUURKo"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-17/ravens-release-harrison-mevis",
-          "title": "Ravens release Harrison Mevis",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUCdh3m7198iv6MjXFn1tAw0pA-m8IBhTuiCCyC_upJVDdq1s3sNtrhXT6pg"
         }
       ]
     }
