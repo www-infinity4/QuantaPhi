@@ -3,12 +3,187 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T15:31:28.826390Z",
+  "checked_at": "2026-11-17T16:01:28.064381Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jetblue turbulence fort lauderdale airport",
+      "query": "wow forever patch notes",
       "approx_searches": "500+",
+      "published_at": "2026-11-17T15:40:00Z",
+      "related_news_urls": [
+        "https://tech.yahoo.com/gaming/articles/wow-forevers-continued-wrestle-dungeons-115112318.html",
+        "https://massivelyop.com/2026/11/16/world-of-warcraft-forever-tries-to-shut-down-dungeon-boosting-but-riles-up-the-playerbase-in-the-process/",
+        "https://www.ign.com/articles/wow-forever-has-a-weekly-quest-that-can-reward-up-to-100-gold-and-players-dont-love-it"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4EIy-PqRM2SS3vvbd2hKP3A1CHrTAG9S2snaP0mIjwbazxCkBbaCfN-p7pts",
+      "image_credit": "Yahoo Tech",
+      "news": [
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/wow-forevers-continued-wrestle-dungeons-115112318.html",
+          "title": "WoW: Forever's continued to wrestle with dungeons, as Blizzard admits it briefly 'missed the mark' on hotfixes over the weekend",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4EIy-PqRM2SS3vvbd2hKP3A1CHrTAG9S2snaP0mIjwbazxCkBbaCfN-p7pts"
+        },
+        {
+          "url": "https://massivelyop.com/2026/11/16/world-of-warcraft-forever-tries-to-shut-down-dungeon-boosting-but-riles-up-the-playerbase-in-the-process/",
+          "title": "World of Warcraft Forever tries to shut down dungeon boosting but riles up the playerbase in the process",
+          "publisher": "Massively Overpowered",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcVrB0p7sxIklq2Fzr2BTKTnnS5tWkE8WfcGWM1-rOjaV6WysC5__Gl6xwMQo"
+        },
+        {
+          "url": "https://www.ign.com/articles/wow-forever-has-a-weekly-quest-that-can-reward-up-to-100-gold-and-players-dont-love-it",
+          "title": "WoW Forever Has a Weekly Quest That Can Reward Up to 100 Gold, and Players Don't Love It",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUUGYM_3rgsHryY3oa1gnoCo3Aiykj0asWZ-ZQpxpj6LsjuBdy3V-H_QvaNYs"
+        }
+      ]
+    },
+    {
+      "query": "togo vs algeria",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T15:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c620r0842054t",
+        "https://www.yardbarker.com/soccer/articles/the_secret_behind_the_exclusion_did_luca_zidane_pay_the_price_for_his_fathers_stance_on_the_thorny_issue/s1_17790_44545811",
+        "https://www.moroccoworldnews.com/2026/11/346651/togo-football-chief-accuses-algeria-of-neglecting-team-at-airport/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c620r0842054t",
+          "title": "Algeria vs Togo: Africa Cup of Nations Qualification stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.yardbarker.com/soccer/articles/the_secret_behind_the_exclusion_did_luca_zidane_pay_the_price_for_his_fathers_stance_on_the_thorny_issue/s1_17790_44545811",
+          "title": "The secret behind the exclusion: did Luca Zidane pay the price for his father's stance on the thorny issue?",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUtyFbT8JBitXNBHATHLRsWiNU_TfyVSMmVuMe5pjaZX4XJfFteOoXYMqV5Z0"
+        },
+        {
+          "url": "https://www.moroccoworldnews.com/2026/11/346651/togo-football-chief-accuses-algeria-of-neglecting-team-at-airport/",
+          "title": "Togo Football Chief Accuses Algeria of Neglecting Team at Airport",
+          "publisher": "Morocco World News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMMrtcIUMPHXAtC1b6osdaAdU6wdaYpkDhhauOuzWgzYos1WupFCwFWcFL0oA"
+        }
+      ]
+    },
+    {
+      "query": "kenya vs south africa",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T15:30:00Z",
+      "related_news_urls": [
+        "https://africa.espn.com/espn/story/_/id/50499451/kenya-bafana-kick-how-watch-afcon-qualifier",
+        "https://nation.africa/kenya/sports/football/kenya-vs-south-africa-afcon-clash-live-on-ntv-5673304",
+        "https://www.mozzartsport.co.ke/football/news/mccarthy-vs-mosimane-and-five-other-showdowns-to-watch-in-harambee-stars-clash-against-south-africa/70748"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQfwIg4nDSCXDVn7TEdEPynBemKEDvIil-EbOXTBkSBns-3vWfEWPbIcNGfj0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://africa.espn.com/espn/story/_/id/50499451/kenya-bafana-kick-how-watch-afcon-qualifier",
+          "title": "Kenya v South Africa - Kick off time, how to watch Bafana in second AFCON qualifier",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQfwIg4nDSCXDVn7TEdEPynBemKEDvIil-EbOXTBkSBns-3vWfEWPbIcNGfj0"
+        },
+        {
+          "url": "https://nation.africa/kenya/sports/football/kenya-vs-south-africa-afcon-clash-live-on-ntv-5673304",
+          "title": "Kenya vs South Africa Afcon clash live on NTV",
+          "publisher": "Daily Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsg_CBJ9mrmCTJbUJAIue4J7SMiPLYDtOCyoYl85zWZMj3edQ6QqJvK9dz3Bk"
+        },
+        {
+          "url": "https://www.mozzartsport.co.ke/football/news/mccarthy-vs-mosimane-and-five-other-showdowns-to-watch-in-harambee-stars-clash-against-south-africa/70748",
+          "title": "McCarthy vs Mosimane and five other showdowns to watch in Harambee Stars clash against South Africa",
+          "publisher": "Mozzart Sport Kenya",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwbVTV4HIJk0BSE5IFg_00KZd2b2s7CCanVOPeiF2mPsw1YfipQltFdh24zG4"
+        }
+      ]
+    },
+    {
+      "query": "crm stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T15:30:00Z",
+      "related_news_urls": [
+        "https://www.streetinsider.com/Investing/Salesforce+shares+drop+on+AI+concerns+and+spending+caution/27361597.html",
+        "https://www.investing.com/news/stock-market-news/crm-support-and-resistance-levels-as-stock-hits-oversold-territory-93CH-5033460",
+        "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-duke-energy-202144563.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLm6FBBi1rKr5Lvc6FgxEFH08Pi-zUd7xm74EXsQ2rnDAa88PO74eEqGmpMqs",
+      "image_credit": "StreetInsider",
+      "news": [
+        {
+          "url": "https://www.streetinsider.com/Investing/Salesforce+shares+drop+on+AI+concerns+and+spending+caution/27361597.html",
+          "title": "Salesforce shares drop on AI concerns and spending caution",
+          "publisher": "StreetInsider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLm6FBBi1rKr5Lvc6FgxEFH08Pi-zUd7xm74EXsQ2rnDAa88PO74eEqGmpMqs"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/crm-support-and-resistance-levels-as-stock-hits-oversold-territory-93CH-5033460",
+          "title": "CRM support and resistance levels as stock hits oversold territory",
+          "publisher": "Investing.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX396KH1JpQEFzHVkk7uWKoALeVVBy-HV_W7oqdpUQ_enxRjL9W-ANGBplb3U"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-duke-energy-202144563.html",
+          "title": "Investors Heavily Search Duke Energy Corporation (DUK): Here is What You Need to Know",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZojWnIaAzJ_zqF1fwaQvnD3F42v9xug8lkS9NFmFx1_OeojYVBappZtmB_pg"
+        }
+      ]
+    },
+    {
+      "query": "sierra leone vs dr congo",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T15:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c5rmg233m8wkt",
+        "https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-2027-qualifiers-dr-congo-extend-perfect-run-as-guinea-bissau-and-zimbabwe-held-to-draws/",
+        "https://panafricafootball.com/article/gomes-da-rosa-afcon-qualification"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdXl9NJArkxzHrAE4t12cOT6R-Swj_mh6Q_Kfc1oS7oZEHob_Vfs_E_Uxf7Y0",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c5rmg233m8wkt",
+          "title": "Sierra Leone vs Congo DR: Africa Cup of Nations Qualification stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdXl9NJArkxzHrAE4t12cOT6R-Swj_mh6Q_Kfc1oS7oZEHob_Vfs_E_Uxf7Y0"
+        },
+        {
+          "url": "https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-2027-qualifiers-dr-congo-extend-perfect-run-as-guinea-bissau-and-zimbabwe-held-to-draws/",
+          "title": "TotalEnergies CAF AFCON 2027 Qualifiers: DR Congo extend perfect run as Guinea-Bissau and Zimbabwe held to draws",
+          "publisher": "CAFOnline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzGbGIgM7XGvCFk95nRK62D2xQ-b_klj6-QOSSGXz-f1jC9P_fIL4PE2PCA3c"
+        },
+        {
+          "url": "https://panafricafootball.com/article/gomes-da-rosa-afcon-qualification",
+          "title": "AFCON 2027: Gomes Da Rosa gives up on qualification chances",
+          "publisher": "Pan Africa Football",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_kC43_ssUoNJPPP4oVJ-2UfajW_yJkuSD8xGx-qC_V9iOLP0tYZ4wNUq2BeA"
+        }
+      ]
+    },
+    {
+      "query": "jetblue turbulence fort lauderdale airport",
+      "approx_searches": "2000+",
       "published_at": "2026-11-17T15:10:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/17/us/jetblue-turbulence-flight-fort-lauderdale",
@@ -42,8 +217,43 @@
       ]
     },
     {
+      "query": "mansfield university",
+      "approx_searches": "500+",
+      "published_at": "2026-11-17T15:00:00Z",
+      "related_news_urls": [
+        "https://www.lockhaven.com/news/urgent-information/2026/11/mansfield-university-to-close/",
+        "https://www.inquirer.com/education/mansfield-university-close-passhe-state-system-20261117.html",
+        "https://www.northcentralpa.com/education/commonwealth-universitys-mansfield-campus-set-to-close/article_f0d9236e-a5cc-4d16-92c8-2fc27b508da2.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2IUsbiUfQdyr1M9PX6EDjaAxnh9F_Adk3Xh1ylCaIWni_1MUZk57X93mxvu0",
+      "image_credit": "Lock Haven Express",
+      "news": [
+        {
+          "url": "https://www.lockhaven.com/news/urgent-information/2026/11/mansfield-university-to-close/",
+          "title": "Mansfield University to close",
+          "publisher": "Lock Haven Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2IUsbiUfQdyr1M9PX6EDjaAxnh9F_Adk3Xh1ylCaIWni_1MUZk57X93mxvu0"
+        },
+        {
+          "url": "https://www.inquirer.com/education/mansfield-university-close-passhe-state-system-20261117.html",
+          "title": "PASSHE plans to shut down Mansfield University campus in 2028",
+          "publisher": "Inquirer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPheSnJvpcfiMx7LVw9idop53aob6vfsy753wJXziJiZtJ9TNm7enddNQcIn0"
+        },
+        {
+          "url": "https://www.northcentralpa.com/education/commonwealth-universitys-mansfield-campus-set-to-close/article_f0d9236e-a5cc-4d16-92c8-2fc27b508da2.html",
+          "title": "Commonwealth University's Mansfield campus set to close",
+          "publisher": "NorthcentralPA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTJ3tp2PuMEh5zAmE4G9-slGXc5WgdE6SsXbjMwPHi2cZTWYgwUbOSMJxlswk"
+        }
+      ]
+    },
+    {
       "query": "turkey",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-17T14:40:00Z",
       "related_news_urls": [
         "https://www.ft.com/content/1350f0c8-deb3-4388-8b8a-cf6a1a93c0d4?syn-25a6b1a6=1",
@@ -70,7 +280,7 @@
         {
           "url": "https://www.veblen-institute.org/Webinar-Where-does-Europe-stand-in-a-world-of-power-politics-An-update-on-the.html",
           "title": "Webinar : Where does Europe stand in a world of power politics ? An update on the ongoing European negotiations on Made in Europe",
-          "publisher": "www.veblen-institute.org",
+          "publisher": "veblen-institute.org",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2QSREC0a6A8D0sMHZ_eotyM0r2X3hFKfJJnbRvjOJ9ZFvFsh05RSkOsqNvLU"
         }
@@ -78,7 +288,7 @@
     },
     {
       "query": "granblue fantasy relink leaving ps plus",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-17T14:40:00Z",
       "related_news_urls": [
         "https://www.playstationlifestyle.net/2026/11/16/games-leaving-ps-plus-extra-premium-december-2026",
@@ -116,13 +326,20 @@
       "approx_searches": "500+",
       "published_at": "2026-11-17T14:40:00Z",
       "related_news_urls": [
+        "https://www.quiverquant.com/news/Why+UnitedHealth+Group+%28UNH%29+Stock+Is+Down+Today",
         "https://www.tradingkey.com/news/market-movers/262309213-market-movers-unh-20261117",
-        "https://www.investing.com/news/stock-market-news/why-is-unitedhealth-stock-sliding-today-93CH-5033395",
-        "https://www.gurufocus.com/news/9205170/unitedhealth-unh-shares-dip-premarket-amid-new-federal-healthcare-fraud-regulations"
+        "https://www.investing.com/news/stock-market-news/why-is-unitedhealth-stock-sliding-today-93CH-5033395"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8jVCMmZpDLEufv0nAnNsv1kh_E9T-_EcTKsmRwRONHZ7EqNdZUPo6y10n6U",
-      "image_credit": "TradingKey",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrC5n_DY_x_0KoAnbpDdJmCzDY_JwShbnIMlKPsaPmoHPsYaaiLiYM-BCd75k",
+      "image_credit": "Quiver Quantitative",
       "news": [
+        {
+          "url": "https://www.quiverquant.com/news/Why+UnitedHealth+Group+%28UNH%29+Stock+Is+Down+Today",
+          "title": "Why UnitedHealth Group (UNH) Stock Is Down Today",
+          "publisher": "Quiver Quantitative",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrC5n_DY_x_0KoAnbpDdJmCzDY_JwShbnIMlKPsaPmoHPsYaaiLiYM-BCd75k"
+        },
         {
           "url": "https://www.tradingkey.com/news/market-movers/262309213-market-movers-unh-20261117",
           "title": "Unitedhealth Group Inc Stock (UNH) Opened Down by 4.78% on Nov 17: What Investors Need To Know",
@@ -136,207 +353,6 @@
           "publisher": "Investing.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLWjkN1jaPEH4rvzzN-WMJqt_91Rf_8AQ4sXlqNSywGY2AWMlJxDAzpRlTuJQ"
-        },
-        {
-          "url": "https://www.gurufocus.com/news/9205170/unitedhealth-unh-shares-dip-premarket-amid-new-federal-healthcare-fraud-regulations",
-          "title": "UnitedHealth (UNH) Shares Dip Premarket Amid New Federal Healthc",
-          "publisher": "GuruFocus",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPFoa6sjdtMaFTiVaK1LvqsiX6z8nhq_9Od-Dh_dzQdPt7BIyn-j1jVTXSboQ"
-        }
-      ]
-    },
-    {
-      "query": "hero world challenge",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T14:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/golf/story/_/id/50511075/tiger-woods-return-next-month-hero-world-challenge",
-        "https://www.nytimes.com/athletic/7788310/2026/11/17/tiger-woods-return-golf-hero-world-challenge/",
-        "https://sports.yahoo.com/articles/tiger-woods-confirms-playing-return-144444137.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmiqcSyOkb6YLSxKfLuq5cahGIvn1T64MwW7tH4Mhxsjmr092nPcKs8ebZOYk",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/golf/story/_/id/50511075/tiger-woods-return-next-month-hero-world-challenge",
-          "title": "Tiger Woods to return for next month's Hero World Challenge",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmiqcSyOkb6YLSxKfLuq5cahGIvn1T64MwW7tH4Mhxsjmr092nPcKs8ebZOYk"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7788310/2026/11/17/tiger-woods-return-golf-hero-world-challenge/",
-          "title": "Tiger Woods to return to competitive golf next month for Hero World Challenge",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYjEATEsTFX-gPFoj5x9zwHuFu316vfaoodIO4Jcqux54WK6JU2qbYJnBA01U"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/tiger-woods-confirms-playing-return-144444137.html",
-          "title": "Tiger Woods confirms playing return on PGA Tour",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2FIBHhtIWnSauLbMwKt61nQkzjy0zRTiBUOHLGqasKbtaZ-Syt6uDr8cvoc"
-        }
-      ]
-    },
-    {
-      "query": "xbox black friday sale 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T14:30:00Z",
-      "related_news_urls": [
-        "https://news.xbox.com/en-us/2026/11/16/xbox-black-friday-sale-2026/",
-        "https://www.purexbox.com/news/2026/11/xbox-announces-black-friday-sale-2026-reveals-nine-included-games",
-        "https://25yearslatersite.com/gaming/news/xbox-black-friday-sale-2026-leaks-early-with-3-519-listed-items/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcLmXwMa9Byi02RdByLab7I5FwSr5QIl6CluoRuyEvEKq-KrufjmFpe7i_YM",
-      "image_credit": "XBOX Wire",
-      "news": [
-        {
-          "url": "https://news.xbox.com/en-us/2026/11/16/xbox-black-friday-sale-2026/",
-          "title": "XBOX Black Friday Sale Starts November 19 with Our Biggest Sale of the Year on Games, Accessories and More!",
-          "publisher": "XBOX Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcLmXwMa9Byi02RdByLab7I5FwSr5QIl6CluoRuyEvEKq-KrufjmFpe7i_YM"
-        },
-        {
-          "url": "https://www.purexbox.com/news/2026/11/xbox-announces-black-friday-sale-2026-reveals-nine-included-games",
-          "title": "Xbox Announces Black Friday Sale 2026, Reveals Nine Included Games",
-          "publisher": "Pure Xbox",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsksG8il-rwmB7N18mTaKWgfi2QyQRbcntFHYNzpQ3jMnmrNHNqNEusmJGF_Q"
-        },
-        {
-          "url": "https://25yearslatersite.com/gaming/news/xbox-black-friday-sale-2026-leaks-early-with-3-519-listed-items/",
-          "title": "Xbox Black Friday Sale 2026 Leak: 3,519 Items, Nov 19 Start",
-          "publisher": "25YearsLaterSite.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSjy7ct7qWFBu3vl6yM1j2M5CqLDkW-iZHHmhpwUHO1xnNcs7e4XKnSd5VHVY"
-        }
-      ]
-    },
-    {
-      "query": "nike stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T14:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/17/nike-investor-day-elliott-hill.html",
-        "https://www.wsj.com/business/retail/nike-expects-performance-athleticwear-to-drive-long-term-growth-fdf517a5",
-        "https://www.bloomberg.com/news/articles/2026-11-17/nike-vows-return-to-growth-by-2029-driven-by-performance-sports"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOvTbX3HiIrgSx_GOUclu09o36H1-Fs6kLWQWuXnk6eM0Y9mRC1rcXliGSdDg",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/17/nike-investor-day-elliott-hill.html",
-          "title": "Nike hosts first investor day in 9 years as it tries to rightsize its business",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOvTbX3HiIrgSx_GOUclu09o36H1-Fs6kLWQWuXnk6eM0Y9mRC1rcXliGSdDg"
-        },
-        {
-          "url": "https://www.wsj.com/business/retail/nike-expects-performance-athleticwear-to-drive-long-term-growth-fdf517a5",
-          "title": "Nike Expects Performance Athleticwear to Drive Long-Term Growth",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHWAuvWpbcXeilPUrRnBY6f8Ooi9O3eCLMjaES-8q96XAe1eJt8Eo6vAdYU3U"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-17/nike-vows-return-to-growth-by-2029-driven-by-performance-sports",
-          "title": "Nike Vows Return to Growth by 2029 Driven by Performance Sports",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8DXgewT21zjb_aW8eRBiojNMcGFj69GlToayDrxuxsI-1F5T1LJ8_61anHyU"
-        }
-      ]
-    },
-    {
-      "query": "melanie lynskey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T14:30:00Z",
-      "related_news_urls": [
-        "https://parade.com/entertainment/who-is-melanie-lynskey-married-to-inside-her-heartwarming-romance-with-jason-ritter"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl1P8kwMco8JvIaAa0aupdlAnfihLm5HXJPvjyO5g7lMcooR5MwdfNkCoUG5w",
-      "image_credit": "Parade Magazine",
-      "news": [
-        {
-          "url": "https://parade.com/entertainment/who-is-melanie-lynskey-married-to-inside-her-heartwarming-romance-with-jason-ritter",
-          "title": "Who Is Melanie Lynskey Married To? Inside Her Heartwarming Romance with Jason Ritter",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl1P8kwMco8JvIaAa0aupdlAnfihLm5HXJPvjyO5g7lMcooR5MwdfNkCoUG5w"
-        }
-      ]
-    },
-    {
-      "query": "when is anthropic ipo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T14:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
-        "https://www.wsj.com/finance/investing/the-investors-set-to-win-big-in-anthropics-ipo-a2fc795c",
-        "https://www.bloomberg.com/news/articles/2026-11-16/anthropic-faces-a-longer-wait-than-spacex-to-join-stock-indexes"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWmF8kspClJlnBU-VXNRQ4rBTDaFxK2IIjgk2KPyDbeR1X_ymlyiIw3J65GNk",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
-          "title": "Anthropic likely to price IPO above the current range of $70 to $78, sources tell CNBC",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWmF8kspClJlnBU-VXNRQ4rBTDaFxK2IIjgk2KPyDbeR1X_ymlyiIw3J65GNk"
-        },
-        {
-          "url": "https://www.wsj.com/finance/investing/the-investors-set-to-win-big-in-anthropics-ipo-a2fc795c",
-          "title": "The Investors Set to Win Big in Anthropic’s IPO",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5h8cmnz4ewbkXq9FRAdA1vnwA_bEyVCQzaVT9sjfaB_k8gGcMvxhaW0jDFy4"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-16/anthropic-faces-a-longer-wait-than-spacex-to-join-stock-indexes",
-          "title": "Anthropic Faces a Longer Wait Than SpaceX to Join Stock Indexes",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1cgUYo20Jb7EVKvDsYcDBorYFP8lw9Oj_o4MEki3QWl2Wl2KnT1nUb2yVGCo"
-        }
-      ]
-    },
-    {
-      "query": "kerby joseph",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T14:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-plan-for-kerby-joseph-to-play-this-week",
-        "https://www.prideofdetroit.com/detroit-lions-news/181507/detroit-lions-plan-activate-play-kerby-joseph-buccaneers",
-        "https://www.nfl.com/videos/rapoport-recaps-injury-news-from-patriots-lions-matchup-in-munich-gmfb"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8-E6PzF89Zn3EL4MQ0PJQHOhN1buEgLRjjITd4-GHqggaDQZd6K3NLHn9Ss0",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-plan-for-kerby-joseph-to-play-this-week",
-          "title": "Lions plan for Kerby Joseph to play this week",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8-E6PzF89Zn3EL4MQ0PJQHOhN1buEgLRjjITd4-GHqggaDQZd6K3NLHn9Ss0"
-        },
-        {
-          "url": "https://www.prideofdetroit.com/detroit-lions-news/181507/detroit-lions-plan-activate-play-kerby-joseph-buccaneers",
-          "title": "Detroit Lions plan to activate, play Kerby Joseph this week vs. Buccaneers",
-          "publisher": "Pride Of Detroit",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlU1eVN0OkAMdtJFbpZmqyMNlEzgn_pEIkRbwKEgieWaKbhjUZFmIqFj-6vho"
-        },
-        {
-          "url": "https://www.nfl.com/videos/rapoport-recaps-injury-news-from-patriots-lions-matchup-in-munich-gmfb",
-          "title": "Rapoport recaps injury news from Patriots-Lions matchup in Munich | 'GMFB'",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiCutcUty49Yo_9pKTLfXNEuVSgx0xiiRgdd06Q9IP6Eu5lqr8yN-zAy05fYw"
         }
       ]
     }
