@@ -3,262 +3,157 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T04:01:39.580470Z",
+  "checked_at": "2026-11-17T04:31:21.120353Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "pax silica",
+      "query": "texas southern basketball",
       "approx_searches": "200+",
-      "published_at": "2026-11-17T03:40:00Z",
+      "published_at": "2026-11-17T04:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/business/trump-paxsilica-philippines-ai.html",
-        "https://www.cbsnews.com/news/protests-philippines-trump-visit-ai-hub/",
-        "https://www.hrw.org/news/2026/11/16/philippines-us-tech-hub-to-displace-hundreds"
+        "https://ucsdguardian.org/2026/11/16/game-of-the-week-mens-basketball-vs-texas-southern/",
+        "https://ucsdtritons.com/news/2026/11/15/mens-basketball-uc-san-diego-welcomes-tigers-on-military-appreciation-night.aspx",
+        "https://sports.betmgm.com/en/blog/ncaab/texas-southern-uc-san-diego-prediction-odds-picks-nov-16-college-basketball-jaa/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdHNbhNbpGi1JqMsBppMZ8kkU_o8TyfSGlh1G15hLtvcyNa2tykq3Se2Beiec",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuiwdqN19T46s7XX5aAsBRk6za8zrd2eajpCrQ20mGDsyEVcR7g1rgm6f107I",
+      "image_credit": "The UCSD Guardian",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/16/business/trump-paxsilica-philippines-ai.html",
-          "title": "Trump’s Plan for A.I. Supremacy Fuels Resistance in the Philippines",
-          "publisher": "The New York Times",
+          "url": "https://ucsdguardian.org/2026/11/16/game-of-the-week-mens-basketball-vs-texas-southern/",
+          "title": "Game of the Week: Men’s basketball vs Texas Southern",
+          "publisher": "The UCSD Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdHNbhNbpGi1JqMsBppMZ8kkU_o8TyfSGlh1G15hLtvcyNa2tykq3Se2Beiec"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuiwdqN19T46s7XX5aAsBRk6za8zrd2eajpCrQ20mGDsyEVcR7g1rgm6f107I"
         },
         {
-          "url": "https://www.cbsnews.com/news/protests-philippines-trump-visit-ai-hub/",
-          "title": "Protests against planned AI hub in Philippines flare ahead of Trump's visit",
-          "publisher": "CBS News",
+          "url": "https://ucsdtritons.com/news/2026/11/15/mens-basketball-uc-san-diego-welcomes-tigers-on-military-appreciation-night.aspx",
+          "title": "UC San Diego Welcomes Tigers on Military Appreciation Night",
+          "publisher": "UC San Diego Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD0O4fDCs7MmkUPycjWAZ2FDiaJ-IXGGS_MJjvCLBSXpSNFwn9bM_eoqD_EDk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5rnLHb1wBMCD16NdkiM3fhMz5x1zWNf9kyz2j4JrLj07mntUzV2weNgpRjJ4"
         },
         {
-          "url": "https://www.hrw.org/news/2026/11/16/philippines-us-tech-hub-to-displace-hundreds",
-          "title": "Philippines: US Tech Hub to Displace Hundreds",
-          "publisher": "Human Rights Watch",
+          "url": "https://sports.betmgm.com/en/blog/ncaab/texas-southern-uc-san-diego-prediction-odds-picks-nov-16-college-basketball-jaa/",
+          "title": "Texas Southern vs UC San Diego Prediction, Odds & Best Bets Today – NCAAB, Nov. 16",
+          "publisher": "sports.betmgm.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkwn4qCIWp2nZ-8GXtMUOvawcGwDd313nUHyscUCD5OhLKvq3UcjvEaav1tYA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShGdHzXCZ7E8DHLoIab31fy0PgkQL28PmMh2tPzfbueHOev_Q43raptFl2Zpo"
         }
       ]
     },
     {
-      "query": "phil collins",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T03:30:00Z",
+      "query": "pak vs sl",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T04:00:00Z",
       "related_news_urls": [
-        "https://globalnews.ca/news/12153147/phil-collins-health-update-rock-and-roll-hall-of-fame-induction/",
-        "https://abcnews.com/GMA/Culture/phil-collins-hopes-make-new-music-perform-despite/story?id=138162830",
-        "https://www.billboard.com/music/awards/lily-collins-phil-collins-rock-hall-induction-tribute-1236382837/"
+        "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/match-preview",
+        "https://www.dawn.com/news/2044953",
+        "https://sports.yahoo.com/articles/ex-captain-silva-leads-sri-073042966.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHR7zSBkbgHjEOHdTqaAzpSOTXweOR1P_Ed4nA2BBvN_2kVQVs1aq2862kr4",
-      "image_credit": "Global News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLo7E8kZAxicD3yVkmFju0Trj7GeHvx3KX0nRrCIqB0QBsCNy_K29UFKaKVJo",
+      "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://globalnews.ca/news/12153147/phil-collins-health-update-rock-and-roll-hall-of-fame-induction/",
-          "title": "Phil Collins shares health update at Rock & Roll Hall of Fame induction",
-          "publisher": "Global News",
+          "url": "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/match-preview",
+          "title": "Pakistan, Sri Lanka primed for more experimentation in Rawalpindi",
+          "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHR7zSBkbgHjEOHdTqaAzpSOTXweOR1P_Ed4nA2BBvN_2kVQVs1aq2862kr4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLo7E8kZAxicD3yVkmFju0Trj7GeHvx3KX0nRrCIqB0QBsCNy_K29UFKaKVJo"
         },
         {
-          "url": "https://abcnews.com/GMA/Culture/phil-collins-hopes-make-new-music-perform-despite/story?id=138162830",
-          "title": "Phil Collins says he hopes to make new music, perform again despite health challenges",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://www.dawn.com/news/2044953",
+          "title": "Shaun Tait, Kusal Mendis want extra push for Pakistan-Sri Lanka series result",
+          "publisher": "Dawn",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRio0bD5Fo78yFWtV3nhJBuKL4SajyiRT0meNFHuOEsXSJ-K0erxKfa09LXCjE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS878q0DU_XoFfYPFeCMEJy5Wx6YHBp4CSZimdzIm4oMOF-BiNS0u5bKAC6W9I"
         },
         {
-          "url": "https://www.billboard.com/music/awards/lily-collins-phil-collins-rock-hall-induction-tribute-1236382837/",
-          "title": "Lily Collins Pays Tribute to Phil Collins After Rock Hall Induction",
-          "publisher": "Billboard",
+          "url": "https://sports.yahoo.com/articles/ex-captain-silva-leads-sri-073042966.html",
+          "title": "Centurions De Silva and Mendis flay inexperienced Pakistan attack to boost Sri Lanka in 1st test",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkgaO6Vq9WznfHGVYBRb55G_nsWoPetp37fOlk08MxaRAsytcZ5bbnzujrbAc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRowqHAEmXK1qUNZf4YI5vyu160IiATnAKaH2CL4kNnGIEE3dG2PKWNUi8JPEM"
         }
       ]
     },
     {
-      "query": "connections hint november 16",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-17T03:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/15/crosswords/connections-companion-1254.html",
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-15-2026",
-        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-16-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4iDLOdV6GVnJKRJxfcH7rKJeguYfuE1uy8WzjI9WMjKkTUHKWShmjZB-2CU",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/15/crosswords/connections-companion-1254.html",
-          "title": "NYT Connections Answers for November 16, 2026",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4iDLOdV6GVnJKRJxfcH7rKJeguYfuE1uy8WzjI9WMjKkTUHKWShmjZB-2CU"
-        },
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-15-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 15, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-16-2026",
-          "title": "Today's NYT Connections Hints (and Answer) for Monday, November 16, 2026",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDZH0VNqmezvO46I773iK8bs50yo22Qo_cDux8LYD8WoxknE9V2Qzc0YS5E_8"
-        }
-      ]
-    },
-    {
-      "query": "brian hallisay",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T03:30:00Z",
-      "related_news_urls": [
-        "https://people.com/jennifer-love-hewitt-reveals-secret-to-13-years-of-marriage-with-brian-hallisay-exclusive-12259096",
-        "https://www.eonline.com/news/1438167/jennifer-love-hewitt-husband-brian-hallisays-marriage-advice-is-a-choice",
-        "https://people.com/jennifer-love-hewitt-is-loving-her-blonde-hair-transformation-exclusive-12258298"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcLBeofKxgyiNCTS4RpiAajvseqJbMUZRETwfbstevE-6WRSChei_4XV7ztfI",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/jennifer-love-hewitt-reveals-secret-to-13-years-of-marriage-with-brian-hallisay-exclusive-12259096",
-          "title": "Jennifer Love Hewitt Reveals the Secret to 13 Years of Marriage with Husband Brian Hallisay (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcLBeofKxgyiNCTS4RpiAajvseqJbMUZRETwfbstevE-6WRSChei_4XV7ztfI"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438167/jennifer-love-hewitt-husband-brian-hallisays-marriage-advice-is-a-choice",
-          "title": "Jennifer Love Hewitt Explains Why 13-Year Marriage With Brian Hallisay Is a “Choice Every Day”",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLa5qQg8WK83xmIL_4DRfxU4h5bueQRGhsx96O7fgFDrQr5P6PqErf4TFLlls"
-        },
-        {
-          "url": "https://people.com/jennifer-love-hewitt-is-loving-her-blonde-hair-transformation-exclusive-12258298",
-          "title": "Jennifer Love Hewitt Is ‘Loving’ Her Hair Transformation: ‘I’m Living My Best Blonde Life’ (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcOnOnFg3PYqsh9QBInn2jCg1Phpbf49YW6Mn_h3afplmMqvZ2g68tWL0T-uM"
-        }
-      ]
-    },
-    {
-      "query": "long beach st vs ucla",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T03:20:00Z",
-      "related_news_urls": [
-        "https://uclabruins.com/news/2026/11/14/no-9-mens-basketball-to-host-long-beach-state-cal-state-fullerton",
-        "https://www.foxsports.com/watch/fmc-i3kwa5etkaf57xxu",
-        "https://247sports.com/college/ucla/article/ucla-mens-basketball-long-beach-state-preview-292803156/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3RJ3isa1vJW17nDsnqkMJFwQtuAQCqxQuTkoe2hQTLlA6GEqXQu6U6rY2za0",
-      "image_credit": "UCLA Bruins",
-      "news": [
-        {
-          "url": "https://uclabruins.com/news/2026/11/14/no-9-mens-basketball-to-host-long-beach-state-cal-state-fullerton",
-          "title": "No. 9 Men's Basketball to Host Long Beach State, Cal State Fullerton",
-          "publisher": "UCLA Bruins",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3RJ3isa1vJW17nDsnqkMJFwQtuAQCqxQuTkoe2hQTLlA6GEqXQu6U6rY2za0"
-        },
-        {
-          "url": "https://www.foxsports.com/watch/fmc-i3kwa5etkaf57xxu",
-          "title": "Nikola Kusturica finishes tough and-one layup, extending UCLA's lead over Long Beach State",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOSMEuBxYJfmnHFNbNTOSdq4xJIq61DVoxVE5rmapMCX3ijamYay3VQuk-KqI"
-        },
-        {
-          "url": "https://247sports.com/college/ucla/article/ucla-mens-basketball-long-beach-state-preview-292803156/",
-          "title": "UCLA Men's Basketball: Long Beach State Preview",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTo2Caonz9pJPRnOHFrFaU4iuqKrP59ZG47TcySrar0lbKOxqiA56ND6bKb7r4"
-        }
-      ]
-    },
-    {
-      "query": "madden movie",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T03:20:00Z",
-      "related_news_urls": [
-        "https://www.indiewire.com/features/commentary/david-o-russell-madden-biopic-amazon-burying-nicolas-cage-film-1235224213/",
-        "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
-        "https://www.yahoo.com/entertainment/movies/articles/nicolas-cage-football-biopic-more-163000311.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrTD0m-l71G58APTi3u20tomdzKAdzL1EOaFT7S8YR0DKzTSI-9RR8uQ0Oo3o",
-      "image_credit": "IndieWire",
-      "news": [
-        {
-          "url": "https://www.indiewire.com/features/commentary/david-o-russell-madden-biopic-amazon-burying-nicolas-cage-film-1235224213/",
-          "title": "David O. Russell’s ‘Madden’ Biopic Is Out Next Week — Does Anybody Know or Care?",
-          "publisher": "IndieWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrTD0m-l71G58APTi3u20tomdzKAdzL1EOaFT7S8YR0DKzTSI-9RR8uQ0Oo3o"
-        },
-        {
-          "url": "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
-          "title": "Nicolas Cage transformed ‘from within’ for ‘Madden,’ co-star Kathryn Hahn says",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQKoNtzzIqjf8mHlS-PmTm3FsMGu82uVVFtbjHgYTdoelTEHdD9MUavOPcd8"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/nicolas-cage-football-biopic-more-163000311.html",
-          "title": "Nicolas Cage’s Football Biopic & More Prime Video Releases This Week",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE8L03xaJYmBYyqmWzg54izV1gsq7a0HCp-6cQx7ZDQHr7FOULgvPh5Lqf5cs"
-        }
-      ]
-    },
-    {
-      "query": "grand canyon",
+      "query": "greta thunberg",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T03:20:00Z",
+      "published_at": "2026-11-17T04:00:00Z",
       "related_news_urls": [
-        "https://www.12news.com/article/news/local/arizona/no-survivors-after-aircraft-crashes-near-north-rim-of-grand-canyon-arizona/75-5920421c-b688-4052-8982-dfe161ad2064",
-        "https://ktar.com/arizona-news/3-dead-airplane-down-north-rim-grand-canyon",
-        "https://www.abc15.com/news/local-news/aircraft-located-after-three-killed-in-grand-canyon-plane-crash"
+        "https://www.theguardian.com/environment/2026/nov/12/greta-thunberg-cop31-climate-summit",
+        "https://www.latintimes.com/greta-thunberg-returns-cop31-fossil-fuel-lobbyists-601245",
+        "https://www.wvnews.com/newsfeed/world/climate-cop31-turkey/image_e3001a22-59fe-595e-912b-074cea080938.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHA_LpIxRHLdP2QJNbHkiR8rvPO7lfkP6nQg-Pv_s2Hu1dNmkKl9onI7iZejA",
-      "image_credit": "12News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiwNU9hx3TG3Xup6K1P88f3NR828dcDn1MUwQdLrFEBgq18LHVzHOThwL4lZ4",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.12news.com/article/news/local/arizona/no-survivors-after-aircraft-crashes-near-north-rim-of-grand-canyon-arizona/75-5920421c-b688-4052-8982-dfe161ad2064",
-          "title": "No survivors after aircraft goes down near North Rim of Grand Canyon",
-          "publisher": "12News",
+          "url": "https://www.theguardian.com/environment/2026/nov/12/greta-thunberg-cop31-climate-summit",
+          "title": "The planet ‘is being killed’, Greta Thunberg tells Cop31 climate summit",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHA_LpIxRHLdP2QJNbHkiR8rvPO7lfkP6nQg-Pv_s2Hu1dNmkKl9onI7iZejA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiwNU9hx3TG3Xup6K1P88f3NR828dcDn1MUwQdLrFEBgq18LHVzHOThwL4lZ4"
         },
         {
-          "url": "https://ktar.com/arizona-news/3-dead-airplane-down-north-rim-grand-canyon",
-          "title": "3 dead after airplane goes down near north rim of Grand Canyon",
-          "publisher": "KTAR News 92.3 FM",
+          "url": "https://www.latintimes.com/greta-thunberg-returns-cop31-fossil-fuel-lobbyists-601245",
+          "title": "Greta Thunberg returns to COP after four years, calling the climate talks \"hypocrisy\" dominated by fossil fuel interests",
+          "publisher": "Latin Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUiNVmD3dP82fM8zxshXUqB82-FhwmDxMjN2B4K5TH1zprnodJ_5ol5ZmHar0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQtl11fnJFLCLpEECRUlBO6X2KqYuw686oAEGhy1cSfCrHf2E-8hb0tbE-SQQ"
         },
         {
-          "url": "https://www.abc15.com/news/local-news/aircraft-located-after-three-killed-in-grand-canyon-plane-crash",
-          "title": "Aircraft located after three killed in Grand Canyon plane crash",
-          "publisher": "ABC15 Arizona",
+          "url": "https://www.wvnews.com/newsfeed/world/climate-cop31-turkey/image_e3001a22-59fe-595e-912b-074cea080938.html",
+          "title": "Climate COP31 Turkey",
+          "publisher": "WV News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi2Vp0kF2ZIeokGJ2or9skNmr6CZMOUuSvRCjGDoeXNOXOXuV4tudzwI5pUX0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6bJzCPgeMsja9StHL4WmF2HkUHsgCo6stJwBuEo5GTokSQkMBU-05Cms6Qts"
         }
       ]
     },
     {
-      "query": "optimizely",
+      "query": "chris moore",
       "approx_searches": "200+",
-      "published_at": "2026-11-17T03:20:00Z",
+      "published_at": "2026-11-17T04:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ravens-elevate-13-touchdown-wide-005232307.html",
+        "https://www.cbssports.com/fantasy/football/news/ravens-nick-vannett-elevated-to-53-man-roster/",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-elevate-wr-chris-moore-te-nick-vannett-sign-ot-chuma-edoga"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa97qma4bFmDfrTj9je24dLpQLUcDR3sX6H2hH6quCcqpeLn9hv0ay7PGL9dk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/ravens-elevate-13-touchdown-wide-005232307.html",
+          "title": "Ravens Elevate 13-Touchdown Wide Receiver Before Jacoby Brissett Debut",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa97qma4bFmDfrTj9je24dLpQLUcDR3sX6H2hH6quCcqpeLn9hv0ay7PGL9dk"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/ravens-nick-vannett-elevated-to-53-man-roster/",
+          "title": "Ravens' Nick Vannett: Elevated to 53-man roster",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEMmC83Ojka-ZluMY_3tsvVdu7dqvzYlKJBoqUqC0yiWqdvOImMSYJXZ4eww"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-elevate-wr-chris-moore-te-nick-vannett-sign-ot-chuma-edoga",
+          "title": "Ravens elevate WR Chris Moore, TE Nick Vannett; sign OT Chuma Edoga",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ueZiCQmxWjydSzuBxTsS6nxD9HUjwT91TRWbHy1nwvSAfzYSBZM1qsCbGII"
+        }
+      ]
+    },
+    {
+      "query": "malware",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-17T03:50:00Z",
       "related_news_urls": [
         "https://gizmodo.com/sprawling-malware-attack-reportedly-affects-zoom-cnn-fox-news-peacock-and-170-others-2000840831",
         "https://www.infostealers.com/article/poisoned-scripts-on-bbc-zoom-and-other-major-websites-linked-to-iphone-exploit-loaders/",
-        "https://finance.biggo.com/news/4315ccb1-bf22-4b5b-b36a-aed4f665b31e"
+        "https://app.dealroom.co/news/note/hackers-used-an-optimizely-flaw-to-plant-crypto-stealing-card-skimming-malware-on-178-major-websites-including-zoom-cnn-and-hsbc"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2PXm8aSAzkGFBaa2RWqKTTSza-q3MtdWS-0C1ISHZfIE5gGG2H0V3KaTi8fU",
       "image_credit": "Gizmodo",
@@ -278,81 +173,186 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvvobMtexOLGsaJpn3UWvtXaitEv0pWJHFsZS5ya8qEVwNpT2cHMX-1oyszs"
         },
         {
-          "url": "https://finance.biggo.com/news/4315ccb1-bf22-4b5b-b36a-aed4f665b31e",
-          "title": "Optimizely Platform Hit by Large-Scale Malicious Script Injection; 178 Brand Websites Affected, Crypto Wallets Lose $7,000",
-          "publisher": "BigGo Finance",
+          "url": "https://app.dealroom.co/news/note/hackers-used-an-optimizely-flaw-to-plant-crypto-stealing-card-skimming-malware-on-178-major-websites-including-zoom-cnn-and-hsbc",
+          "title": "Hackers used an Optimizely flaw to plant crypto-stealing, card-skimming malware on 178 major websites including Zoom, CNN and HSBC",
+          "publisher": "Dealroom",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2oBknHhYHpnYt5y262417fkAYZoljEWO3FWONkUnN6tNt5Vyo5WgDo8h2WVY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQFrufj_Xeequ4qcd0kJVYnjHzasIiZZhj7nnV7r825KPjToJPUJ9EGAg9Npg"
         }
       ]
     },
     {
-      "query": "the odyssey",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T03:10:00Z",
+      "query": "demar derozan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:50:00Z",
       "related_news_urls": [
-        "https://www.vanityfair.com/story/zendaya-tom-holland-the-odyssey-anxiety",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/zendaya-stuns-dress-project-runway-171913912.html",
-        "https://www.instyle.com/zendaya-bridal-white-gown-tom-holland-rare-outing-12255800"
+        "https://basketnews.com/news-259514-demar-derozan-takes-back-historic-nba-spot-from-stephen-curry.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/demar-derozan-passed-stephen-curry-26806-and-moved/92793843007/",
+        "https://sports.yahoo.com/articles/steph-curry-passes-demar-derozan-100532515.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2oGiUhGTGW0hrRDYWBRBE0m-nvJqGa5GJpvEhgAywq-1-LZ59PeSkDtGfHf8",
-      "image_credit": "Vanity Fair",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxxmvjoTgZm3D_t3N_m-zzhBEQwzsdZZbHOjqW1_gRLCZVg0OtprK2CwxQfUc",
+      "image_credit": "BasketNews.com",
       "news": [
         {
-          "url": "https://www.vanityfair.com/story/zendaya-tom-holland-the-odyssey-anxiety",
-          "title": "Zendaya “Felt Overwhelmed” on the Set of The Odyssey. Luckily, Tom Holland Came to Support Her",
-          "publisher": "Vanity Fair",
+          "url": "https://basketnews.com/news-259514-demar-derozan-takes-back-historic-nba-spot-from-stephen-curry.html",
+          "title": "DeMar DeRozan takes back historic NBA spot from Stephen Curry",
+          "publisher": "BasketNews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2oGiUhGTGW0hrRDYWBRBE0m-nvJqGa5GJpvEhgAywq-1-LZ59PeSkDtGfHf8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxxmvjoTgZm3D_t3N_m-zzhBEQwzsdZZbHOjqW1_gRLCZVg0OtprK2CwxQfUc"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/zendaya-stuns-dress-project-runway-171913912.html",
-          "title": "Zendaya stuns in dress by 'Project Runway' contestant at 'Odyssey' event",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/demar-derozan-passed-stephen-curry-26806-and-moved/92793843007/",
+          "title": "DeMar DeRozan passed Stephen Curry (26,806) and moved …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxLtoRmFCWfm_wtbyNI4YDInmfah2bLKOvLqOQdfsY-ou2kSk2VIeqtsnzdCM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/steph-curry-passes-demar-derozan-100532515.html",
+          "title": "Steph Curry passes DeMar DeRozan on the alltime …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5FDzz52THqfpiuVjE8DS-7n0cgxEDiaAWQy8JY1L63g1kNs01v8S6OrdugCs"
+        }
+      ]
+    },
+    {
+      "query": "john christopher depp",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:50:00Z",
+      "related_news_urls": [
+        "https://editorial.rottentomatoes.com/article/weekend-box-office-ebenezer-week-1/",
+        "https://www.nbcnews.com/pop-culture/pop-culture-news/johnny-depp-film-ebenezer-first-no-1-opening-8-years-rcna609436",
+        "https://www.nytimes.com/2026/11/12/movies/ebenezer-review-johnny-depp.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLABGwdg4u5eB9D9UheaTLXao53rur40RKotqNosvC21ZatnvVAbJmjCKdGAU",
+      "image_credit": "Rotten Tomatoes",
+      "news": [
+        {
+          "url": "https://editorial.rottentomatoes.com/article/weekend-box-office-ebenezer-week-1/",
+          "title": "Weekend Box Office: Ebenezer Wins a Sleepy Weekend",
+          "publisher": "Rotten Tomatoes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLABGwdg4u5eB9D9UheaTLXao53rur40RKotqNosvC21ZatnvVAbJmjCKdGAU"
+        },
+        {
+          "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/johnny-depp-film-ebenezer-first-no-1-opening-8-years-rcna609436",
+          "title": "Johnny Depp film ‘Ebenezer’ gets actor first No. 1 opening in 8 years",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX4l7V_w4XhAalc6qY9uFtMTR30dKpC-S5DWFY3jVNl4JsVDnS-k1FKEtwE3U"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/12/movies/ebenezer-review-johnny-depp.html",
+          "title": "‘Ebenezer’ Review: Holiday Humbug",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpI_UAq-Wy3d-7xPm-REV-10YG3U0lV3r_q2TJbE630Z02konZIFmQaxd7hIQ"
+        }
+      ]
+    },
+    {
+      "query": "travel warning",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:50:00Z",
+      "related_news_urls": [
+        "https://bg.usembassy.gov/security-alert-u-s-embassy-in-bulgaria-november-16-2026/",
+        "https://www.9news.com/article/news/nation-world/americans-security-alert-europe-travel-state-department-warning/507-ece1ecfd-f1eb-4527-a08c-41fa9eee5f26",
+        "https://www.yahoo.com/news/us/articles/us-urges-citizens-extra-cautious-224826240.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkAh8lpzELDU_DyWAEGaMzBiYphMZMJCa-Tvjxgg2y-3tHG03Goh9XgygqDQM",
+      "image_credit": "U.S. Embassy in Bulgaria (.gov)",
+      "news": [
+        {
+          "url": "https://bg.usembassy.gov/security-alert-u-s-embassy-in-bulgaria-november-16-2026/",
+          "title": "Security Alert: U.S. Embassy in Bulgaria, November 16, 2026",
+          "publisher": "U.S. Embassy in Bulgaria (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkAh8lpzELDU_DyWAEGaMzBiYphMZMJCa-Tvjxgg2y-3tHG03Goh9XgygqDQM"
+        },
+        {
+          "url": "https://www.9news.com/article/news/nation-world/americans-security-alert-europe-travel-state-department-warning/507-ece1ecfd-f1eb-4527-a08c-41fa9eee5f26",
+          "title": "State Department warns Americans in Europe to 'remain vigilant' during holidays",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE4lnMzCBsisn3_rT0m91HJ6nuEUX5caHKOdTm28GD33zY982gpb1S90EUGj8"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/us-urges-citizens-extra-cautious-224826240.html",
+          "title": "US urges citizens to be extra cautious in Europe during holidays",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXwGaq7ZCFdnWY2ZrCF0JcSIJvqaHtzxfKcqGbjUT8lnRHugZv5-hw6OIcbfE"
-        },
-        {
-          "url": "https://www.instyle.com/zendaya-bridal-white-gown-tom-holland-rare-outing-12255800",
-          "title": "Zendaya Wears a Bridal White Gown While Cozying Up With Tom Holland on a Rare Public Outing",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY2XB89NN2jCDFZo9FmLzvhcm7UTlSbmO_OLw9jlfbXbytZU-q91ZKcuKFbTY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsa6bsIWFApR1BileTd-wVOGbHs7KdhiLv3dNbj6wb_aG33Kyc7WJWRzGHGiA"
         }
       ]
     },
     {
-      "query": "dean wade",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T03:10:00Z",
+      "query": "pax silica",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:40:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/76ers-dean-wade-running-with-starters-monday/",
-        "https://www.rotowire.com/basketball/headlines/dean-wade-news-reverting-back-to-bench-sunday-539243",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/dean-wade-to-start-in-place-of-lebron-james"
+        "https://www.bloomberg.com/news/articles/2026-11-15/us-allies-agree-to-guard-ai-supply-chains-from-china-ft-says",
+        "https://www.theguardian.com/australia-news/2026/nov/16/albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
+        "https://www.abc.net.au/news/2026-11-17/australia-signs-us-led-ai-supply-chain-agreement/107392252"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjCWAIQrh2IAlmoO6Z8RvI0ANJwaWXEAilAy_Q7jjU-ubAgkt0vtFpP-cU7U",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0_4R2hdOoakwM8WichSXMoD8kTp4JH-Hb8VwmuhW4aKvdCQBJc9nDvYvX9LQ",
+      "image_credit": "Bloomberg.com",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/76ers-dean-wade-running-with-starters-monday/",
-          "title": "76ers' Dean Wade: Running with starters Monday",
-          "publisher": "CBS Sports",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-15/us-allies-agree-to-guard-ai-supply-chains-from-china-ft-says",
+          "title": "US, Allies Agree to Guard AI Supply Chains From China, FT Says",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjCWAIQrh2IAlmoO6Z8RvI0ANJwaWXEAilAy_Q7jjU-ubAgkt0vtFpP-cU7U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0_4R2hdOoakwM8WichSXMoD8kTp4JH-Hb8VwmuhW4aKvdCQBJc9nDvYvX9LQ"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/dean-wade-news-reverting-back-to-bench-sunday-539243",
-          "title": "Dean Wade News: Reverting back to bench Sunday",
-          "publisher": "RotoWire",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/16/albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
+          "title": "Albanese signs on to Trump’s AI supply chain pact before leaders’ meeting at Quad summit",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbAjJLwEWGY6xZTRQBSzt4TluSb8AmlwXaV1A-NdPJEAB4bYual6B5jPWTp4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrKy6VjLifiWtTZjtpF7uD8DGrX3c3MVnQQy1ih4vstlreP0eHwRnIsM5ZV-w"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/dean-wade-to-start-in-place-of-lebron-james",
-          "title": "Dean Wade to start in place of LeBron James",
-          "publisher": "NBC Sports",
+          "url": "https://www.abc.net.au/news/2026-11-17/australia-signs-us-led-ai-supply-chain-agreement/107392252",
+          "title": "Australia backs Trump's AI alliance as US takes on China",
+          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPR1nYOa7rxjpjProgCYh9I2VGxmNxl0rdHJ2AP6gUodYJBz6j8DAsGvcw8Dg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChAOky1VyHCSCAOhsUgYALeCXDtDIvTQzObqZnXEwSpqT1nG9F_dxaML47Aw"
+        }
+      ]
+    },
+    {
+      "query": "portland state basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T03:40:00Z",
+      "related_news_urls": [
+        "https://www.bleachernation.com/how-to-watch/2026/11/16/saint-marys-ca-vs-portland-state-free-live-stream-tv-channel-how-to-watch/",
+        "https://smcgaels.com/watch?Archive=8270&type=Archive",
+        "https://www.wagertalk.com/news/college-basketball/portland-state-vs-saint-marys-predictions-picks-and-odds-november-16-2026/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkibIE07NkqPwTJu0LefMKjGjeGM65wlF1pxZk6xKWUg8pR-I-_Gcob197gnY",
+      "image_credit": "Bleacher Nation",
+      "news": [
+        {
+          "url": "https://www.bleachernation.com/how-to-watch/2026/11/16/saint-marys-ca-vs-portland-state-free-live-stream-tv-channel-how-to-watch/",
+          "title": "Saint Mary’s (CA) vs. Portland State: Free Live Stream, TV Channel, How to Watch",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkibIE07NkqPwTJu0LefMKjGjeGM65wlF1pxZk6xKWUg8pR-I-_Gcob197gnY"
+        },
+        {
+          "url": "https://smcgaels.com/watch?Archive=8270&type=Archive",
+          "title": "MBB | Saint Mary's vs. UIC Highlights, 11-13-26 - Gaels All-Access - Powered by SIDEARM Showcase",
+          "publisher": "smcgaels.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgRuRdjNN_xwSnV4t-tlTPvkGlh2TZu4Dc10fvZwXWygTnLAd-Bfx2taAFoIs"
+        },
+        {
+          "url": "https://www.wagertalk.com/news/college-basketball/portland-state-vs-saint-marys-predictions-picks-and-odds-november-16-2026/",
+          "title": "Portland State vs Saint Mary’s Predictions, Picks and Odds | November 16, 2026",
+          "publisher": "WagerTalk",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQw_922uWTnAOZbtmziK0aCFtrLnhiymvJRD1EnSbcsw35cZXoNIqMLwCztKwI"
         }
       ]
     }
