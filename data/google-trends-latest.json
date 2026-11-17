@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T07:30:44.368234Z",
+  "checked_at": "2026-11-17T08:01:18.948605Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "tahiti",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T07:20:00Z",
+      "related_news_urls": [
+        "https://la1ere.franceinfo.fr/polynesie/epidemie-de-grippe-le-service-de-reanimation-en-polynesie-francaise-sature-face-a-l-arrivee-d-un-virus-precoce-1757355.html",
+        "https://www.tntvnews.pf/polynesie/sante/grippe-lepidemie-sintensifie-les-cas-de-varicelle-egalement-en-hausse-a-tahiti/",
+        "https://www.radio1.pf/deja-155-cas-de-grippe-55-hospitalisations-et-3-morts/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRWlQ2lQBTNaVitVLfWAqyu12x9tpI1bl0tIKBVIC_x81x7jDI2urAvPTuvM4",
+      "image_credit": "Outre-mer La 1ère",
+      "news": [
+        {
+          "url": "https://la1ere.franceinfo.fr/polynesie/epidemie-de-grippe-le-service-de-reanimation-en-polynesie-francaise-sature-face-a-l-arrivee-d-un-virus-precoce-1757355.html",
+          "title": "Épidémie de grippe : le service de réanimation en Polynésie française sature face à l'arrivée précoce du virus d'un virus précoce",
+          "publisher": "Outre-mer La 1ère",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRWlQ2lQBTNaVitVLfWAqyu12x9tpI1bl0tIKBVIC_x81x7jDI2urAvPTuvM4"
+        },
+        {
+          "url": "https://www.tntvnews.pf/polynesie/sante/grippe-lepidemie-sintensifie-les-cas-de-varicelle-egalement-en-hausse-a-tahiti/",
+          "title": "Grippe : l’épidémie s’intensifie, les cas de varicelle également en hausse à Tahiti",
+          "publisher": "TNTV News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIILqk7UYRt_sygetItgf2gHeUB0gB2N3FqnUs8ca6pgy6OnGpirJr0UgYQ48"
+        },
+        {
+          "url": "https://www.radio1.pf/deja-155-cas-de-grippe-55-hospitalisations-et-3-morts/",
+          "title": "Déjà 155 cas de grippe, 55 hospitalisations et 3 morts",
+          "publisher": "Radio1 Tahiti",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJfhtVR4L3ive1j_hm7l8IAkQKoyr5iQ44CwU7cyL0vByvq9nl5yhACf9C_yM"
+        }
+      ]
+    },
     {
       "query": "los angeles weather",
       "approx_searches": "100+",
@@ -13,7 +48,7 @@
       "related_news_urls": [
         "https://www.latimes.com/california/story/2026-11-16/socals-first-atmospheric-river-storm-of-season-arrives-this-week",
         "https://ktla.com/news/california/atmospheric-river-takes-aim-southern-california-heavy-rain-coastal-flooding-and-mountain-snow/",
-        "https://www.yahoo.com/news/weather-news/articles/california-faces-6-storms-black-015525927.html"
+        "https://www.foxla.com/news/rain-la-weather-high-surf-storm-november-16"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbAVGigiRECFQxZdaej4lNfgzB3Rwq5AdLUac09tEYI0I9HGx5hAOhEW8D0QY",
       "image_credit": "Los Angeles Times",
@@ -33,11 +68,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_wY8KJptHq6zhLeYVimcGGEccwx_mPWgiKK152419LE_g3o9UANQ4wBT-IP8"
         },
         {
-          "url": "https://www.yahoo.com/news/weather-news/articles/california-faces-6-storms-black-015525927.html",
-          "title": "California faces 6 storms before Black Friday. The third could be the strongest",
-          "publisher": "Yahoo",
+          "url": "https://www.foxla.com/news/rain-la-weather-high-surf-storm-november-16",
+          "title": "Wet weather and dangerous surf continue in SoCal ahead of potential midweek storm",
+          "publisher": "FOX 11 Los Angeles",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRosAgC-fA_BPdDl9_H8pg0yguh1Rr8t9CPWiDfD9tlEq5MHa5_xotHlyhmBkE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4pT2N8Nle4ddfZ_RNQl0ImJf02Gf7u61zhDy-50roeGLh3-_z-0huT11tqzE"
         }
       ]
     },
@@ -78,7 +113,7 @@
     },
     {
       "query": "axios",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-17T06:40:00Z",
       "related_news_urls": [
         "https://www.axios.com/2026/11/17/jim-jordan-house-gop-rules",
@@ -116,39 +151,39 @@
       "approx_searches": "100+",
       "published_at": "2026-11-17T06:40:00Z",
       "related_news_urls": [
-        "https://www.cbs8.com/article/news/local/flock-cameras-alpr-votes-san-diego-county/509-6b349113-9860-4b10-930f-68008ca13fa5",
-        "https://voiceofsandiego.org/2026/11/16/trumps-tijuana-river-solution-is-already-underfunded/",
-        "https://www.nbcsandiego.com/news/local/san-diego-city-council-votes-end-flock-contract-turn-off-alpr-cameras/4102682/"
+        "https://www.nbcsandiego.com/news/local/san-diego-unified-unveils-e-bike-safety-policy-board/4103005/",
+        "https://www.cbs8.com/article/news/education/san-diego-unified-to-approve-districtwide-e-bike-rules-as-injuries-climb/509-a9feb4fb-64fa-4ec3-85e5-e7456969de4c",
+        "https://coronadotimes.com/news/2026/11/16/coronado-schools-unveil-new-requirements-for-e-bikes/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRx21hUXgrrV7Ys3Tt5UH49w8RSo8gj1Xlxp2VMV1NB6zqLNWIBCaPgT1XR4GA",
-      "image_credit": "cbs8.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTik9Gn1oRHWoWrdCubVeIQSIk8bCqn5bvg1yFb5XoQi9kyl_RKXm7JXx0Zsew",
+      "image_credit": "NBC 7 San Diego",
       "news": [
         {
-          "url": "https://www.cbs8.com/article/news/local/flock-cameras-alpr-votes-san-diego-county/509-6b349113-9860-4b10-930f-68008ca13fa5",
-          "title": "San Diego City Council votes to remove controversial license plate reader cameras",
-          "publisher": "cbs8.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRx21hUXgrrV7Ys3Tt5UH49w8RSo8gj1Xlxp2VMV1NB6zqLNWIBCaPgT1XR4GA"
-        },
-        {
-          "url": "https://voiceofsandiego.org/2026/11/16/trumps-tijuana-river-solution-is-already-underfunded/",
-          "title": "Gloria Won’t Veto Flock Contract Cancellation",
-          "publisher": "Voice of San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyXgeIvcp3hB0UIix7L8nO7tYdhWu1PBLuh2tsTZ5XcFkgGWdW30Zgzjfg2uQ"
-        },
-        {
-          "url": "https://www.nbcsandiego.com/news/local/san-diego-city-council-votes-end-flock-contract-turn-off-alpr-cameras/4102682/",
-          "title": "San Diego City Council votes to end Flock contract, turn off ALPR cameras",
+          "url": "https://www.nbcsandiego.com/news/local/san-diego-unified-unveils-e-bike-safety-policy-board/4103005/",
+          "title": "San Diego Unified unveils e-bike safety policy, board to vote Tuesday",
           "publisher": "NBC 7 San Diego",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmSwnTLRQVg5bpOJ6JTIv4rFekcjVKhonGSCg0ZD29DaD_xs_wL8FEwR9iL4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTik9Gn1oRHWoWrdCubVeIQSIk8bCqn5bvg1yFb5XoQi9kyl_RKXm7JXx0Zsew"
+        },
+        {
+          "url": "https://www.cbs8.com/article/news/education/san-diego-unified-to-approve-districtwide-e-bike-rules-as-injuries-climb/509-a9feb4fb-64fa-4ec3-85e5-e7456969de4c",
+          "title": "San Diego Unified set to approve districtwide e-bike rules as injuries climb",
+          "publisher": "cbs8.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJCyGB9i39UD8H11htYlJvofQ0tl0UlTipR6gnauARVxEzyC2P2eBt1BrMYP4"
+        },
+        {
+          "url": "https://coronadotimes.com/news/2026/11/16/coronado-schools-unveil-new-requirements-for-e-bikes/",
+          "title": "Coronado schools unveil new requirements for e-bikes",
+          "publisher": "Coronado Times Newspaper",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4pX59dH2HoKV3xkqEsil-ubAhtDLKtG5-Mz2sxoQgT2stefBKCQQILom276Y"
         }
       ]
     },
     {
       "query": "apec",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-17T06:20:00Z",
       "related_news_urls": [
         "https://www.reuters.com/world/asia-pacific/chinese-us-business-leaders-attend-apec-summit-shenzhen-2026-11-16/",
@@ -218,7 +253,7 @@
     },
     {
       "query": "tahiti vs cook islands soccer",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-17T06:10:00Z",
       "related_news_urls": [
         "https://www.coinbase.com/en-nl/predictions/event/KXINTLFRIENDLY1HTOTAL-26NOV14TAHCOK",
@@ -252,13 +287,48 @@
       ]
     },
     {
+      "query": "gta 6 ultimate edition",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-17T06:10:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/16/media/grand-theft-auto-gta-vi-entertainment-media",
+        "https://www.audacy.com/wben/news/local/all-tech-eyes-on-grand-theft-auto-vi-release-thursday",
+        "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR394Gn9Ai07UTaW_NkhqxTkH1I8pLpV85DPKtFsJVwguaqco1KvgifeRLWpR0",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/16/media/grand-theft-auto-gta-vi-entertainment-media",
+          "title": "The biggest entertainment event of the year isn’t a movie — it’s ‘Grand Theft Auto VI’",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR394Gn9Ai07UTaW_NkhqxTkH1I8pLpV85DPKtFsJVwguaqco1KvgifeRLWpR0"
+        },
+        {
+          "url": "https://www.audacy.com/wben/news/local/all-tech-eyes-on-grand-theft-auto-vi-release-thursday",
+          "title": "All tech eyes on Grand Theft Auto VI release Thursday",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsoTvekEvrSluyPRJVNsNiK5jmchLVcBc9-pbU_44Ehi5uB_c5wBPaYZeKp0U"
+        },
+        {
+          "url": "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
+          "title": "Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcX3HbDpCNM6y5ct8Zb36Q0dq2OK0epLORhVFBkEfStwDKfo7YWU5uyMKUhTk"
+        }
+      ]
+    },
+    {
       "query": "magic johnson",
       "approx_searches": "200+",
       "published_at": "2026-11-17T06:00:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/slam-door-three-times-ex-162652000.html",
         "https://www.espn.com/nba/recap/_/gameId/401909982",
-        "https://www.sun-sentinel.com/2026/11/14/windermans-view-giannis-gave-heat-reason-to-believe-now-with-another-payoff-vs-pistons/"
+        "https://www.nba.com/news/starting-5-november-15-2026"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhOwDvdlf5FXwGkAwIFjm3zxMUUrOtOdxpXOhkXT1S2KIcGgel2E8T3SKb3XI",
       "image_credit": "Yahoo Sports",
@@ -278,81 +348,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8_mKkYQ6VMiuPTod_mboyxUrNzYoGl88HKDPyGBkkXupGQw5M_eNPWW1-pg"
         },
         {
-          "url": "https://www.sun-sentinel.com/2026/11/14/windermans-view-giannis-gave-heat-reason-to-believe-now-with-another-payoff-vs-pistons/",
-          "title": "Winderman’s view: Giannis gave Heat reason to believe, now with another payoff vs. Pistons",
-          "publisher": "Sun Sentinel",
+          "url": "https://www.nba.com/news/starting-5-november-15-2026",
+          "title": "Starting 5: Heat roll, Sixers rise, KD vs. AJ",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9v0mAJ3YDp0-7OaltfmKtnELl_paKfO0G1ijdORwY1p30bgpayEZZDErnjPg"
-        }
-      ]
-    },
-    {
-      "query": "ines de ramon",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T06:00:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
-        "https://deadline.com/gallery/the-further-mis-adventures-of-cliff-booth-red-carpet-photos-netflix/",
-        "https://www.awardsdaily.com/2026/11/15/cliff-booth-meets-the-academy/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
-          "title": "‘Cliff Booth’ First Reactions: Brad Pitt’s Sequel Is an ‘Absolute Triumph’ and a ‘Wildly Entertaining’ ‘Love Letter’ to Hollywood",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
-        },
-        {
-          "url": "https://deadline.com/gallery/the-further-mis-adventures-of-cliff-booth-red-carpet-photos-netflix/",
-          "title": "'The Further Mis-Adventures Of Cliff Booth' Premiere Red Carpet Photos: Brad Pitt & More",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw4QGuSgGOSj16K0gKT2MIrnruxYAYATP9_FMUgDKTKtiZ5Lm-VFA8yFRwas"
-        },
-        {
-          "url": "https://www.awardsdaily.com/2026/11/15/cliff-booth-meets-the-academy/",
-          "title": "Cliff Booth Meets the Academy",
-          "publisher": "Awards Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMiL82A3M5YKjjYptq_xIQhcBwFhYEu9WmrujcmT6tImXv58H8b64N2VvsQCI"
-        }
-      ]
-    },
-    {
-      "query": "las vegas weather",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T05:50:00Z",
-      "related_news_urls": [
-        "https://www.reviewjournal.com/local/weather/showers-arriving-soon-in-las-vegas-more-coming-later-this-week-3915329/",
-        "https://www.ktnv.com/weather/rain-and-wind-return-to-southern-nevada",
-        "https://www.havasunews.com/news/possible-showers-could-follow-weekend-winds/article_9548b770-4211-4330-ae6f-e0a4eeb05e32.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8YB5DFq4tZhrF7Pbdd9YW7u9PfB0nXGW5FBnBG1hirRYamvhtLJmKCg82rK0",
-      "image_credit": "Las Vegas Review-Journal",
-      "news": [
-        {
-          "url": "https://www.reviewjournal.com/local/weather/showers-arriving-soon-in-las-vegas-more-coming-later-this-week-3915329/",
-          "title": "Showers arriving soon in Las Vegas. More coming later this week",
-          "publisher": "Las Vegas Review-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8YB5DFq4tZhrF7Pbdd9YW7u9PfB0nXGW5FBnBG1hirRYamvhtLJmKCg82rK0"
-        },
-        {
-          "url": "https://www.ktnv.com/weather/rain-and-wind-return-to-southern-nevada",
-          "title": "Rain and Wind Return to Southern Nevada",
-          "publisher": "KTNV Las Vegas",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo7TE5_JplboI95oSHCyh4CbLldo6ZfL2mZY6Fs0Ahe4NcEPw-r8hDDLnromY"
-        },
-        {
-          "url": "https://www.havasunews.com/news/possible-showers-could-follow-weekend-winds/article_9548b770-4211-4330-ae6f-e0a4eeb05e32.html",
-          "title": "Possible showers could follow weekend winds",
-          "publisher": "Havasu News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTquJxX7tCin4RNY3wQ3ukHk787BLNvLEq4ZU-DrGa5iZc8MXg5KVQjCvwgR10"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIYj2N17TM6wJhGuDRbxGFkWYLAzoQGURlIon7m6GxVQOcZEzIVFkoPmNzXuw"
         }
       ]
     }
