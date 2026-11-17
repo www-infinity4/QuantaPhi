@@ -1,0 +1,27 @@
+name: QuantaPhi visible-card novelty
+on:
+  pull_request:
+    paths:
+      - quanta-feed.mjs
+      - quanta-feed-exposure.mjs
+      - test/quanta-feed-visible-impressions.test.mjs
+      - .github/workflows/quanta-feed-visible-impressions.yml
+  push:
+    branches: [main]
+    paths:
+      - quanta-feed.mjs
+      - quanta-feed-exposure.mjs
+      - test/quanta-feed-visible-impressions.test.mjs
+permissions:
+  contents: read
+jobs:
+  visible-card-novelty:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test first-card impression and novelty policy
+        run: node --test test/quanta-feed-visible-impressions.test.mjs test/quanta-card-feed.test.mjs
