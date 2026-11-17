@@ -103,7 +103,7 @@ function classify(utterance){
 // suggestions never authorize work, and the Brain retains its owner/write gate.
 function isOwnerContinuation(input){
  const text=String(input||'').trim().toLowerCase();
- return /^(?:(?:please|bubbles)[\\s,:]+)?(?:\\*|continue(?: (?:engineering|please|building|working|the build|that|where you left off))?|keep (?:going|building|working)(?: on (?:it|that))?|go ahead|go on|carry on|proceed|yes[, ]*(?:do it|go ahead|continue)|finish (?:it|that|the build)|pick up (?:the work|where you left off))\\s*[.!*]*$/.test(text);
+ return /^(?:(?:please|bubbles)[\s,:]+)?(?:\*|continue(?: (?:engineering|please|building|working|the build|that|where you left off))?|keep (?:going|building|working)(?: on (?:it|that))?|go ahead|go on|carry on|proceed|yes[, ]*(?:do it|go ahead|continue)|finish (?:it|that|the build)|pick up (?:the work|where you left off))\s*[.!*]*$/.test(text);
 }
 function resolveFollowupRequest(utterance, history=[]){
  if(!isOwnerContinuation(utterance)||!Array.isArray(history))return '';
