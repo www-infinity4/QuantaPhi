@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T07:01:11.160634Z",
+  "checked_at": "2026-11-17T07:30:44.368234Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "los angeles weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T07:10:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/california/story/2026-11-16/socals-first-atmospheric-river-storm-of-season-arrives-this-week",
+        "https://ktla.com/news/california/atmospheric-river-takes-aim-southern-california-heavy-rain-coastal-flooding-and-mountain-snow/",
+        "https://www.yahoo.com/news/weather-news/articles/california-faces-6-storms-black-015525927.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbAVGigiRECFQxZdaej4lNfgzB3Rwq5AdLUac09tEYI0I9HGx5hAOhEW8D0QY",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-16/socals-first-atmospheric-river-storm-of-season-arrives-this-week",
+          "title": "SoCal’s first atmospheric river storm of the season arrives this week: Here’s what it will bring",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbAVGigiRECFQxZdaej4lNfgzB3Rwq5AdLUac09tEYI0I9HGx5hAOhEW8D0QY"
+        },
+        {
+          "url": "https://ktla.com/news/california/atmospheric-river-takes-aim-southern-california-heavy-rain-coastal-flooding-and-mountain-snow/",
+          "title": "Atmospheric river takes aim at Southern California with heavy rain, coastal flooding and mountain snow",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_wY8KJptHq6zhLeYVimcGGEccwx_mPWgiKK152419LE_g3o9UANQ4wBT-IP8"
+        },
+        {
+          "url": "https://www.yahoo.com/news/weather-news/articles/california-faces-6-storms-black-015525927.html",
+          "title": "California faces 6 storms before Black Friday. The third could be the strongest",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRosAgC-fA_BPdDl9_H8pg0yguh1Rr8t9CPWiDfD9tlEq5MHa5_xotHlyhmBkE"
+        }
+      ]
+    },
+    {
+      "query": "fox news politics",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T07:00:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/16/politics/buttigieg-trump-faa-groundstop",
+        "https://www.nytimes.com/2026/11/13/us/ground-stop-flights-democrats-denver.html",
+        "https://thehill.com/policy/transportation/6223723-buttigieg-trump-faa-groundstop/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJ8q1fpfPe2r4FLZo90zTel1y0vn5qYvWlAE_-aRQkthg9G6VdqmHY9ZRxpx4",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/16/politics/buttigieg-trump-faa-groundstop",
+          "title": "Pete Buttigieg fires back at Trump blaming him for FAA ground stop",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJ8q1fpfPe2r4FLZo90zTel1y0vn5qYvWlAE_-aRQkthg9G6VdqmHY9ZRxpx4"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/13/us/ground-stop-flights-democrats-denver.html",
+          "title": "Even High-Flying Democrats Found Themselves Grounded in the Mile High City",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmdh47mLEhg4LlQqCv1w_XDAxKNV-LIIUqsajk8XyqVc2WP02dAMeanvSTZwk"
+        },
+        {
+          "url": "https://thehill.com/policy/transportation/6223723-buttigieg-trump-faa-groundstop/",
+          "title": "Buttigieg fires back at Trump over FAA outage blame",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmt6Eg3BxcvNFWkOpAfdcvinC2FYfGXgwjQRu-tqRwP50-o0UD6M_o3Kc-xYg"
+        }
+      ]
+    },
+    {
+      "query": "axios",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T06:40:00Z",
+      "related_news_urls": [
+        "https://www.axios.com/2026/11/17/jim-jordan-house-gop-rules",
+        "https://www.politico.com/live-updates/2026/11/13/congress/house-gop-debates-disclipline-01164854",
+        "https://www.dispatch.com/story/opinion/columns/guest/2026/11/11/jim-jordan-sherrod-brown-ohio-senate-chuck-schumer/92707490007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK-x_YAfRN-fncDERe5pj5ce6FFC7z1xbiufIVcGUGLy8K9m83hKmteQq1eqE",
+      "image_credit": "Axios",
+      "news": [
+        {
+          "url": "https://www.axios.com/2026/11/17/jim-jordan-house-gop-rules",
+          "title": "Jordan inherits House GOP fight over punishing rebels",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK-x_YAfRN-fncDERe5pj5ce6FFC7z1xbiufIVcGUGLy8K9m83hKmteQq1eqE"
+        },
+        {
+          "url": "https://www.politico.com/live-updates/2026/11/13/congress/house-gop-debates-disclipline-01164854",
+          "title": "House Republicans push for new rules targeting maverick holdouts",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5VE2I6QQCU9Ld987sUWfNrNKa6ZbPVhUdB6yZPAdLyzBZOJwrlCj5IehaOoM"
+        },
+        {
+          "url": "https://www.dispatch.com/story/opinion/columns/guest/2026/11/11/jim-jordan-sherrod-brown-ohio-senate-chuck-schumer/92707490007/",
+          "title": "Jim Jordan has lesson for Sherrod Brown and other Democrats | Opinion",
+          "publisher": "The Columbus Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1grnbz1AdUK_cb6Vt5k89NPxRj5XQWPkowNy97GgEA65-FgP_NPBVEblEx5U"
+        }
+      ]
+    },
     {
       "query": "san diego",
       "approx_searches": "100+",
       "published_at": "2026-11-17T06:40:00Z",
       "related_news_urls": [
         "https://www.cbs8.com/article/news/local/flock-cameras-alpr-votes-san-diego-county/509-6b349113-9860-4b10-930f-68008ca13fa5",
-        "https://www.nbcsandiego.com/news/local/san-diego-city-council-votes-end-flock-contract-turn-off-alpr-cameras/4102682/",
-        "https://voiceofsandiego.org/2026/11/16/trumps-tijuana-river-solution-is-already-underfunded/"
+        "https://voiceofsandiego.org/2026/11/16/trumps-tijuana-river-solution-is-already-underfunded/",
+        "https://www.nbcsandiego.com/news/local/san-diego-city-council-votes-end-flock-contract-turn-off-alpr-cameras/4102682/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRx21hUXgrrV7Ys3Tt5UH49w8RSo8gj1Xlxp2VMV1NB6zqLNWIBCaPgT1XR4GA",
       "image_credit": "cbs8.com",
@@ -26,18 +131,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRx21hUXgrrV7Ys3Tt5UH49w8RSo8gj1Xlxp2VMV1NB6zqLNWIBCaPgT1XR4GA"
         },
         {
-          "url": "https://www.nbcsandiego.com/news/local/san-diego-city-council-votes-end-flock-contract-turn-off-alpr-cameras/4102682/",
-          "title": "San Diego City Council votes to end Flock contract, turn off ALPR cameras",
-          "publisher": "NBC 7 San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmSwnTLRQVg5bpOJ6JTIv4rFekcjVKhonGSCg0ZD29DaD_xs_wL8FEwR9iL4"
-        },
-        {
           "url": "https://voiceofsandiego.org/2026/11/16/trumps-tijuana-river-solution-is-already-underfunded/",
           "title": "Gloria Won’t Veto Flock Contract Cancellation",
           "publisher": "Voice of San Diego",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyXgeIvcp3hB0UIix7L8nO7tYdhWu1PBLuh2tsTZ5XcFkgGWdW30Zgzjfg2uQ"
+        },
+        {
+          "url": "https://www.nbcsandiego.com/news/local/san-diego-city-council-votes-end-flock-contract-turn-off-alpr-cameras/4102682/",
+          "title": "San Diego City Council votes to end Flock contract, turn off ALPR cameras",
+          "publisher": "NBC 7 San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmSwnTLRQVg5bpOJ6JTIv4rFekcjVKhonGSCg0ZD29DaD_xs_wL8FEwR9iL4"
         }
       ]
     },
@@ -48,7 +153,7 @@
       "related_news_urls": [
         "https://www.reuters.com/world/asia-pacific/chinese-us-business-leaders-attend-apec-summit-shenzhen-2026-11-16/",
         "https://www.fmprc.gov.cn/eng/xw/fyrbt/lxjzh/202611/t20261113_12059012.html",
-        "https://www.chronicleonline.com/news/world/china-apec/image_dffd6ff1-00db-5785-b380-14dcc8d1131b.html"
+        "https://www.wvnews.com/newsfeed/world/china-apec/image_e9883f6f-b4c8-59f2-b051-ee5af7ccd003.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0mkKoHuxdPltVUEhBb2lBOEeYCtg1hp0Ku0X89qlEkT6V-RbevChpwUwF6Uw",
       "image_credit": "Reuters",
@@ -68,11 +173,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO79xJVZaFOogig-OJKFk7slrCf4b0693xFJY_GUhf4r2Er6d9IoE7hx8mX1U"
         },
         {
-          "url": "https://www.chronicleonline.com/news/world/china-apec/image_dffd6ff1-00db-5785-b380-14dcc8d1131b.html",
+          "url": "https://www.wvnews.com/newsfeed/world/china-apec/image_e9883f6f-b4c8-59f2-b051-ee5af7ccd003.html",
           "title": "China APEC",
-          "publisher": "chronicleonline.com",
+          "publisher": "WV News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdBdCtSh1zzXayit58EJFdc76iiW74-91u01TLL_KwGJpMEpiN42c_qNuEKjQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_Eu4RwgMlDebjd_8StXgBHs4TZ_j_DpbOvVlA2S-rT8f8ykQ7UMAhmS3-S9g"
         }
       ]
     },
@@ -182,58 +287,23 @@
       ]
     },
     {
-      "query": "las vegas weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T05:50:00Z",
+      "query": "ines de ramon",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T06:00:00Z",
       "related_news_urls": [
-        "https://www.reviewjournal.com/videos/chance-of-rain-for-the-las-vegas-valley/",
-        "https://www.ktnv.com/weather/justins-forecast-chance-of-showers-and-thunder-tonight-windy-tomorrow",
-        "https://hoodline.com/2026/11/sin-city-soaker-las-vegas-thunderstorms-roll-in-tonight-before-windy-tuesday/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5kihAJ85eu4f9GRp01puvNTdR2kXLJ4IQEbOG4Q5GQH31vq_vFZVeWt3KQaM",
-      "image_credit": "Las Vegas Review-Journal",
-      "news": [
-        {
-          "url": "https://www.reviewjournal.com/videos/chance-of-rain-for-the-las-vegas-valley/",
-          "title": "Chance of rain for the Las Vegas Valley",
-          "publisher": "Las Vegas Review-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5kihAJ85eu4f9GRp01puvNTdR2kXLJ4IQEbOG4Q5GQH31vq_vFZVeWt3KQaM"
-        },
-        {
-          "url": "https://www.ktnv.com/weather/justins-forecast-chance-of-showers-and-thunder-tonight-windy-tomorrow",
-          "title": "Justin's Forecast: Chance of Showers and Thunder Tonight, Windy Tomorrow",
-          "publisher": "KTNV Las Vegas",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0qddOrFgbEPcMeiTepTKhkczvD55zPZrXKdMjR2mc8TfPAF6IuG03zeONaCU"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/sin-city-soaker-las-vegas-thunderstorms-roll-in-tonight-before-windy-tuesday/",
-          "title": "Las Vegas Weather Rain Thunderstorms And Gusty Winds Monday Night",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRolLfgxtuvb6IGJ05GgSBPGrS0qaP4XI-ajEE6K6mVrbpTGsyaGdC5uY69JzA"
-        }
-      ]
-    },
-    {
-      "query": "elizabeth debicki",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T05:50:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
+        "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
         "https://deadline.com/gallery/the-further-mis-adventures-of-cliff-booth-red-carpet-photos-netflix/",
-        "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/"
+        "https://www.awardsdaily.com/2026/11/15/cliff-booth-meets-the-academy/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrPSe1zePMuuRrMktG7WOvkEH27_PJwxW9-EC-HHoMH5jCf2ZQf9BO4SBn30w",
-      "image_credit": "The Hollywood Reporter",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
-          "title": "David Fincher’s ‘The Further Mis-Adventures of Cliff Booth’: First Reactions",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
+          "title": "‘Cliff Booth’ First Reactions: Brad Pitt’s Sequel Is an ‘Absolute Triumph’ and a ‘Wildly Entertaining’ ‘Love Letter’ to Hollywood",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrPSe1zePMuuRrMktG7WOvkEH27_PJwxW9-EC-HHoMH5jCf2ZQf9BO4SBn30w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
         },
         {
           "url": "https://deadline.com/gallery/the-further-mis-adventures-of-cliff-booth-red-carpet-photos-netflix/",
@@ -243,108 +313,46 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw4QGuSgGOSj16K0gKT2MIrnruxYAYATP9_FMUgDKTKtiZ5Lm-VFA8yFRwas"
         },
         {
-          "url": "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
-          "title": "'Cliff Booth' First Reactions: Brad Pitt, Fincher and Tarantino Excite",
-          "publisher": "Variety",
+          "url": "https://www.awardsdaily.com/2026/11/15/cliff-booth-meets-the-academy/",
+          "title": "Cliff Booth Meets the Academy",
+          "publisher": "Awards Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMiL82A3M5YKjjYptq_xIQhcBwFhYEu9WmrujcmT6tImXv58H8b64N2VvsQCI"
         }
       ]
     },
     {
-      "query": "nintendo zelda ocarina",
+      "query": "las vegas weather",
       "approx_searches": "500+",
-      "published_at": "2026-11-17T05:40:00Z",
+      "published_at": "2026-11-17T05:50:00Z",
       "related_news_urls": [
-        "https://rpgamer.com/review/the-legend-of-zelda-ocarina-of-time-remake-review/",
-        "https://www.nintendolife.com/news/2026/11/zelda-ocarina-of-time-remake-crowned-2026s-best-selling-physical-video-game-in-the-us"
+        "https://www.reviewjournal.com/local/weather/showers-arriving-soon-in-las-vegas-more-coming-later-this-week-3915329/",
+        "https://www.ktnv.com/weather/rain-and-wind-return-to-southern-nevada",
+        "https://www.havasunews.com/news/possible-showers-could-follow-weekend-winds/article_9548b770-4211-4330-ae6f-e0a4eeb05e32.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzPFI32XMzOgx3_MGbPjb8wJjzMT7l_kusab7h-3UcJkDlOq34fbK5dMdn6V0",
-      "image_credit": "Nintendo World Report",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8YB5DFq4tZhrF7Pbdd9YW7u9PfB0nXGW5FBnBG1hirRYamvhtLJmKCg82rK0",
+      "image_credit": "Las Vegas Review-Journal",
       "news": [
         {
-          "url": "https://rpgamer.com/review/the-legend-of-zelda-ocarina-of-time-remake-review/",
-          "title": "The Legend of Zelda: Ocarina of Time Remake Review",
-          "publisher": "RPGamer",
+          "url": "https://www.reviewjournal.com/local/weather/showers-arriving-soon-in-las-vegas-more-coming-later-this-week-3915329/",
+          "title": "Showers arriving soon in Las Vegas. More coming later this week",
+          "publisher": "Las Vegas Review-Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReSDi7WTI3odK8fXDMembwOzynyidu4p3GTcmqm-bHTpofnPWZh-Dj9DWGwuQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8YB5DFq4tZhrF7Pbdd9YW7u9PfB0nXGW5FBnBG1hirRYamvhtLJmKCg82rK0"
         },
         {
-          "url": "https://www.nintendolife.com/news/2026/11/zelda-ocarina-of-time-remake-crowned-2026s-best-selling-physical-video-game-in-the-us",
-          "title": "Zelda: Ocarina Of Time Remake Crowned 2026's \"Best-Selling Physical Video Game In The US\"",
-          "publisher": "Nintendo Life",
+          "url": "https://www.ktnv.com/weather/rain-and-wind-return-to-southern-nevada",
+          "title": "Rain and Wind Return to Southern Nevada",
+          "publisher": "KTNV Las Vegas",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6fUm0a3XwIIfX32QmihDzbIU7UcGeUXQhlUJFl2cDqXXFUCKS301igFlU_l8"
-        }
-      ]
-    },
-    {
-      "query": "them",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T05:40:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/democrats-plot-massive-spending-spree-after-midterm-rout-trump-could-help-them-pull-off",
-        "https://www.nbcnews.com/politics/2026-election/democrats-promised-reverse-cuts-medicaid-food-stamps-trump-stands-way-rcna608411",
-        "https://www.theguardian.com/business/2026/nov/11/democrats-election-medicaid-costs"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGofIRa27XCMTxK2vgHn1doCqrqtn1ldGizO2BvcR3ETuYpC-YqSltHkMJt0s",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/politics/democrats-plot-massive-spending-spree-after-midterm-rout-trump-could-help-them-pull-off",
-          "title": "Democrats plot massive spending spree after midterm rout — and Trump could help them pull it off",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGofIRa27XCMTxK2vgHn1doCqrqtn1ldGizO2BvcR3ETuYpC-YqSltHkMJt0s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo7TE5_JplboI95oSHCyh4CbLldo6ZfL2mZY6Fs0Ahe4NcEPw-r8hDDLnromY"
         },
         {
-          "url": "https://www.nbcnews.com/politics/2026-election/democrats-promised-reverse-cuts-medicaid-food-stamps-trump-stands-way-rcna608411",
-          "title": "Democrats promised to reverse cuts to Medicaid and food stamps. Trump stands in their way.",
-          "publisher": "NBC News",
+          "url": "https://www.havasunews.com/news/possible-showers-could-follow-weekend-winds/article_9548b770-4211-4330-ae6f-e0a4eeb05e32.html",
+          "title": "Possible showers could follow weekend winds",
+          "publisher": "Havasu News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0fn6jqd4kdHpznkAmlLISrowplf2aVZcu6UdTdPV_UOpimfCd-IiZTgI5lng"
-        },
-        {
-          "url": "https://www.theguardian.com/business/2026/nov/11/democrats-election-medicaid-costs",
-          "title": "Democrats’ US election sweep brings the price of their promised social contract into focus",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKtXP0NUJHdR-rdLpAwQZLW-Cq50s_kaYe8w59Cnmlg5XBFMGjJwYhAKAXQ5M"
-        }
-      ]
-    },
-    {
-      "query": "august holmgren",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T05:40:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/3aad038e-7138-40b0-ab13-71d2a25d41cf/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/4b2ad313-28d9-4593-be14-0fb6dbec1988/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/385e9582-8897-4606-a31a-5c4a5ab4df7b/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsTLtBjjjXNZfInGOYpNrsJnu3PPVyP305r1RMhh8WJk3mZSCKT32HbD9-C08",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/3aad038e-7138-40b0-ab13-71d2a25d41cf/",
-          "title": "November 17, 2026: Jordan Lee vs Hunter Heck Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsTLtBjjjXNZfInGOYpNrsJnu3PPVyP305r1RMhh8WJk3mZSCKT32HbD9-C08"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/4b2ad313-28d9-4593-be14-0fb6dbec1988/",
-          "title": "November 16, 2026: Moez Echargui vs Cezar Cretu Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRld9Ws3a_qLKPeDtz6N38pOfyDxU2XawRCze43DbOY9DhWG08CBD7pcyZdr4"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/385e9582-8897-4606-a31a-5c4a5ab4df7b/",
-          "title": "November 16, 2026: Francisco Llanes vs Carlos Sanchez Jover Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxU1Y9Njx_1PenFR39nWuZx2Yn9rWwB-fq3hImchxm_DSIbaou8IfDgYOdCBk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTquJxX7tCin4RNY3wQ3ukHk787BLNvLEq4ZU-DrGa5iZc8MXg5KVQjCvwgR10"
         }
       ]
     }
