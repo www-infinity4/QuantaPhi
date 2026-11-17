@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-17T12:01:24.396465Z",
+  "checked_at": "2026-11-17T12:33:22.968522Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "kelsey mitchell",
+      "query": "tanzania vs nigeria",
       "approx_searches": "200+",
-      "published_at": "2026-11-17T11:40:00Z",
+      "published_at": "2026-11-17T12:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/no-one-believing-kelsey-mitchell-150051144.html",
-        "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/11/16/indiana-fever-kelsey-mitchell-sends-cryptic-instagram-message-wnba-free-agency/92814423007/",
-        "https://www.si.com/wnba/fever/re-sign-or-let-walk-fever-need-to-avoid-ugly-negotiations-with-kelsey-mitchell-01m7jg9cdeky"
+        "https://www.espn.com/espn/story/_/id/50508864/tanzania-vs-nigeria-tolu-arokodare-zanzibar-afcon-qualifiers",
+        "https://www.sports247.ng/put-all-the-pressure-on-me-i-dont-care-eric-chelle-defends-super-eagles-selection-sends-strong-warning-to-players-ahead-of-tanzania-return-leg/",
+        "https://guardian.ng/sport/2027-africa-cup-of-nations-qualifier-chelle-on-trial-as-super-eagles-fight-for-survival-in-zanzibar/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy--BYW8fXFM11uL3Jt6KRS13JayzAlJapPIUWmWxVZI7TLY1aOGNG9re8VEQ",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv3wK9kZFEjqspZ3egiCvd9j5W-gaG9txRFT6WhyenP70xZzFO2CoeyDbvrUc",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/no-one-believing-kelsey-mitchell-150051144.html",
-          "title": "‘No one believing’ – Kelsey Mitchell’s emotional admission prompts responses from Caitlin Clark, Aliyah Boston",
+          "url": "https://www.espn.com/espn/story/_/id/50508864/tanzania-vs-nigeria-tolu-arokodare-zanzibar-afcon-qualifiers",
+          "title": "Tanzania vs Nigeria - Will Arokodare get his chance to start in Zanzibar?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv3wK9kZFEjqspZ3egiCvd9j5W-gaG9txRFT6WhyenP70xZzFO2CoeyDbvrUc"
+        },
+        {
+          "url": "https://www.sports247.ng/put-all-the-pressure-on-me-i-dont-care-eric-chelle-defends-super-eagles-selection-sends-strong-warning-to-players-ahead-of-tanzania-return-leg/",
+          "title": "‘Put All the Pressure on Me, I Don’t Care!’ — Eric Chelle Defends Super Eagles Selection, Sends Strong Warning to Players Ahead of Tanzania Return Leg",
+          "publisher": "Sports247 Nigeria",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUxAj3VTyf-orgFxuV6L5Oru_hsE7PxXmfyHF_Vhk-gmRXd8Huuz0VtKc4lPk"
+        },
+        {
+          "url": "https://guardian.ng/sport/2027-africa-cup-of-nations-qualifier-chelle-on-trial-as-super-eagles-fight-for-survival-in-zanzibar/",
+          "title": "2027 Africa Cup of Nations Qualifier: Chelle on trial as Super Eagles fight for survival in Zanzibar",
+          "publisher": "The Guardian Nigeria News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1jwbL0HLc_pKPH2fHcpwUZHXyo-FDWITjiAreFl5x_a7wlmk171JpfGvcebI"
+        }
+      ]
+    },
+    {
+      "query": "christian bale",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T12:20:00Z",
+      "related_news_urls": [
+        "https://www.slashfilm.com/2311062/christian-bale-western-drama-hostiles-flop-worth-revisiting/",
+        "https://www.imdb.com/news/ni66112458/?ref_=nmnw_art_perm",
+        "https://copyrightlately.com/michael-mann-heat-copyright-termination/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtF2z69Ya-41lgP3xFbBj2hH-WOXm6DeHAywqAFJ42zLZF2nbFPRPQrxQ4JjM",
+      "image_credit": "SlashFilm",
+      "news": [
+        {
+          "url": "https://www.slashfilm.com/2311062/christian-bale-western-drama-hostiles-flop-worth-revisiting/",
+          "title": "This Christian Bale Western Drama Flopped In Theaters But Is Worth Revisiting",
+          "publisher": "SlashFilm",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtF2z69Ya-41lgP3xFbBj2hH-WOXm6DeHAywqAFJ42zLZF2nbFPRPQrxQ4JjM"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66112458/?ref_=nmnw_art_perm",
+          "title": "This Christian Bale Western Drama Flopped In Theaters But Is Worth Revisiting",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUhWuTt8w1XXycmsPhSvpm4wsemruzK8xVmLfl9P7CxKfIJvPIg8s8n9fn5FE"
+        },
+        {
+          "url": "https://copyrightlately.com/michael-mann-heat-copyright-termination/",
+          "title": "Michael Mann’s ‘Heat’ Copyright Fight Turns on a Deal With Himself",
+          "publisher": "Copyright Lately",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyYX0krDNRJhm2U8thMfkNFTVoXPQC8TigUWIMbwJYu48iw-uXKKjYKxGmM-4"
+        }
+      ]
+    },
+    {
+      "query": "fiona the hippo",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T12:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/16/fiona-hippo-eats-hat-cincinnati",
+        "https://fox8.com/news/cincinnati-zoo-says-fiona-the-hippo-is-undergoing-care-after-eating-a-hat-that-got-into-enclosure/",
+        "https://www.fox19.com/2026/11/16/cincinnati-zoo-monitoring-fiona-after-she-ingested-hat-tossed-by-visitor/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQ5THoEmecvnAjStxfFq8FHvH7uU33TKUWYvDQdKMfT1y7CEFSg7RjqIvrE0w",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/16/fiona-hippo-eats-hat-cincinnati",
+          "title": "Fiona the hippo under veterinary care after eating hat at Cincinnati zoo",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQ5THoEmecvnAjStxfFq8FHvH7uU33TKUWYvDQdKMfT1y7CEFSg7RjqIvrE0w"
+        },
+        {
+          "url": "https://fox8.com/news/cincinnati-zoo-says-fiona-the-hippo-is-undergoing-care-after-eating-a-hat-that-got-into-enclosure/",
+          "title": "Cincinnati Zoo says Fiona the hippo is undergoing care after eating a hat that got into enclosure",
+          "publisher": "FOX 8 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4lXt3KOw6CpQvLdLSIyJJ7BRdzPcbxyLqUjDd5ACMtbb53rj4PIPimB9rvhk"
+        },
+        {
+          "url": "https://www.fox19.com/2026/11/16/cincinnati-zoo-monitoring-fiona-after-she-ingested-hat-tossed-by-visitor/",
+          "title": "Cincinnati Zoo monitoring Fiona after she ingested a hat ‘tossed’ by visitor",
+          "publisher": "FOX19 | Cincinnati",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEeYoEXToTkMt9ap8c9ExrHLtgGbNnSW3q3OllfwzS1NElg7TDpXC6wRtuajE"
+        }
+      ]
+    },
+    {
+      "query": "lluvia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T12:10:00Z",
+      "related_news_urls": [
+        "https://www.lanuevacomuna.com/nota/67011/martes-con-lluvia-en-necochea-y-quequen-maxima-de-20-deg-c-y-alta-probabilidad-de-precipitaciones/",
+        "https://diarionecochea.com/2026/11/16/como-estara-el-clima-este-lunes-en-necochea-y-quequen-161/",
+        "https://www.lanacion.com.ar/clima/buenos-aires/necochea/clima-en-necochea-hoy-cual-es-el-pronostico-del-tiempo-para-el-17-de-noviembre-de-2026-nid16112026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQINWH2SJTbwdFUNxKLbCnLsUtKQ6ah4yjuqFgN2TacG-EIvWYd05Zuz_8PdCs",
+      "image_credit": "La Nueva Comuna",
+      "news": [
+        {
+          "url": "https://www.lanuevacomuna.com/nota/67011/martes-con-lluvia-en-necochea-y-quequen-maxima-de-20-deg-c-y-alta-probabilidad-de-precipitaciones/",
+          "title": "Martes con lluvia en Necochea y Quequén: máxima de 20°C y alta probabilidad de precipitaciones",
+          "publisher": "La Nueva Comuna",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQINWH2SJTbwdFUNxKLbCnLsUtKQ6ah4yjuqFgN2TacG-EIvWYd05Zuz_8PdCs"
+        },
+        {
+          "url": "https://diarionecochea.com/2026/11/16/como-estara-el-clima-este-lunes-en-necochea-y-quequen-161/",
+          "title": "Cómo estará el clima este lunes en Necochea y Quequén",
+          "publisher": "Diario Necochea",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw_1flY5OR8BdBOqo8XpFVzsbWjC-XEILt9hVtE50tqI0pTyNKs_n3aokWRzQ"
+        },
+        {
+          "url": "https://www.lanacion.com.ar/clima/buenos-aires/necochea/clima-en-necochea-hoy-cual-es-el-pronostico-del-tiempo-para-el-17-de-noviembre-de-2026-nid16112026/",
+          "title": "Clima en Necochea hoy: cuál es el pronóstico del tiempo para el 17 de noviembre de 2026",
+          "publisher": "La Nación",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5segWGvt475mQB_sm7PfyokcUkOuzmo3MBHN4d3kTVC6o1k9rz7k_X4H3q4M"
+        }
+      ]
+    },
+    {
+      "query": "week 11 waiver wire",
+      "approx_searches": "200+",
+      "published_at": "2026-11-17T12:10:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/2026-nfl-fantasy-football-waiver-wire-week-11-wr-keenan-allen-rb-seth-mcgowan-among-top-targets",
+        "https://sports.yahoo.com/articles/fantasy-football-week-11-waiver-113000341.html",
+        "https://www.nytimes.com/athletic/7786872/2026/11/16/fantasy-football-week-10-recap-waivers-speed-run/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj5p7Xh3whHTQBZX6NXrQw0okhhj06ENrI_nPcUk7l9-8MaB4t8tsZes16KqQ",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/2026-nfl-fantasy-football-waiver-wire-week-11-wr-keenan-allen-rb-seth-mcgowan-among-top-targets",
+          "title": "2026 NFL fantasy football waiver wire, Week 11: WR Keenan Allen, RB Seth McGowan among top targets",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj5p7Xh3whHTQBZX6NXrQw0okhhj06ENrI_nPcUk7l9-8MaB4t8tsZes16KqQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/fantasy-football-week-11-waiver-113000341.html",
+          "title": "Fantasy Football Week 11 Waiver Wire: 5 Best Pickups",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy--BYW8fXFM11uL3Jt6KRS13JayzAlJapPIUWmWxVZI7TLY1aOGNG9re8VEQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAu2TVotOzGQ-NS1XxrwVM3V9i0NUO3fGmcyyf6V2F3uliWzWXgyEAnX6INrQ"
         },
         {
-          "url": "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/11/16/indiana-fever-kelsey-mitchell-sends-cryptic-instagram-message-wnba-free-agency/92814423007/",
-          "title": "Kelsey Mitchell's Instagram message leaves Indiana Fever fans confused about future",
-          "publisher": "IndyStar",
+          "url": "https://www.nytimes.com/athletic/7786872/2026/11/16/fantasy-football-week-10-recap-waivers-speed-run/",
+          "title": "Fantasy football Week 10 recap, early waivers speed run: Ditch A.J. Brown",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRljHGDF_h7iInDRt4jatW2BY2nMRSf1PmWYTkKiM6hhxpgqYX7gz78sX080lA"
-        },
-        {
-          "url": "https://www.si.com/wnba/fever/re-sign-or-let-walk-fever-need-to-avoid-ugly-negotiations-with-kelsey-mitchell-01m7jg9cdeky",
-          "title": "Re-Sign or Let Walk: Fever Need to Avoid Ugly Negotiations With Kelsey Mitchell",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXieg89YBkh6ky5Dta8dr4rNI5DUNDSGGBX6kl4jLaY-nx5uMXTfZw4ZLG2aQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRk847PGWYijyfZdUkdxs-Z8h8xKIshQEJsUifDnmr6i0wDRvLH0XokSeuXdE"
         }
       ]
     },
     {
-      "query": "cra",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T11:40:00Z",
+      "query": "united states men's national soccer team",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-17T12:10:00Z",
       "related_news_urls": [
-        "https://www.jdsupra.com/legalnews/fdic-releases-cra-performance-8857704/",
-        "https://www.jdsupra.com/legalnews/occ-releases-cra-performance-9027506/",
-        "https://www.jdsupra.com/legalnews/agencies-release-2025-cra-small-1140271/"
+        "https://www.espn.com/soccer/story/_/id/50504817/poch-pep-advice-usmnt-job",
+        "https://www.theguardian.com/football/2026/nov/16/mauricio-pochettino-pep-guardiola-usmnt-manchester-united",
+        "https://www.bbc.com/sport/football/articles/crgj36e6ee5yo"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWAcs2xvZW1qKx59b5sDGFAMmtBKsh-OKo1rSKkzBYGQ_NWfjYdqe6gSbQP3Y",
-      "image_credit": "JD Supra",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtmkREwcOI1_h7oRnK6jnkINcz8IfbQ5b6ahUjqD9BXjgz-07S5BqWZZoenh4",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.jdsupra.com/legalnews/fdic-releases-cra-performance-8857704/",
-          "title": "FDIC releases CRA performance evaluations for August 2026",
-          "publisher": "JD Supra",
+          "url": "https://www.espn.com/soccer/story/_/id/50504817/poch-pep-advice-usmnt-job",
+          "title": "Poch offers Pep advice on USMNT job, calls it 'perfect moment to arrive'",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWAcs2xvZW1qKx59b5sDGFAMmtBKsh-OKo1rSKkzBYGQ_NWfjYdqe6gSbQP3Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtmkREwcOI1_h7oRnK6jnkINcz8IfbQ5b6ahUjqD9BXjgz-07S5BqWZZoenh4"
         },
         {
-          "url": "https://www.jdsupra.com/legalnews/occ-releases-cra-performance-9027506/",
-          "title": "OCC releases CRA performance evaluations for October 2026",
-          "publisher": "JD Supra",
+          "url": "https://www.theguardian.com/football/2026/nov/16/mauricio-pochettino-pep-guardiola-usmnt-manchester-united",
+          "title": "Pochettino: I’d tell Guardiola to ‘take it’ if he’s offered US coaching job",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWAcs2xvZW1qKx59b5sDGFAMmtBKsh-OKo1rSKkzBYGQ_NWfjYdqe6gSbQP3Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJDl6d8Yh0gWeHXPrrAsvVtqAsguDgGp6oCS59p1wDtMbQDkMqK6gtHkwn0Lk"
         },
         {
-          "url": "https://www.jdsupra.com/legalnews/agencies-release-2025-cra-small-1140271/",
-          "title": "Agencies release 2025 CRA small business, small farm, and community development lending data",
-          "publisher": "JD Supra",
+          "url": "https://www.bbc.com/sport/football/articles/crgj36e6ee5yo",
+          "title": "Mauricio Pochettino would tell Pep Guardiola to take US job",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWAcs2xvZW1qKx59b5sDGFAMmtBKsh-OKo1rSKkzBYGQ_NWfjYdqe6gSbQP3Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQVpbHneEYijqXEQairiBPbbQaXjQoLUgYrok7d_A_el-MgWwE4zd1QxdbS9s"
         }
       ]
     },
     {
-      "query": "the further mis-adventures of cliff booth",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T11:40:00Z",
+      "query": "marvel studios future genre shift",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T12:10:00Z",
       "related_news_urls": [
-        "https://people.com/brad-pitt-and-ines-de-ramon-hold-hands-enjoy-date-night-the-further-mis-adventures-of-cliff-booth-premiere-12260007",
-        "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
-        "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/"
+        "https://www.empireonline.com/movies/news/avengers-secret-wars-whole-other-genre-doomsday-kevin-feige-exclusive/",
+        "https://www.yahoo.com/entertainment/movies/articles/avengers-secret-wars-whole-other-170139068.html",
+        "https://www.imdb.com/news/ni66114011/?ref_=ttnw_art_perm"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJpsXsch_VJ30ul0Vq-uR3F7c68nF95A6RdljmLj_Rn0jMWIls3E-ljz_HAqE",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6KLrU0QKYCjn74pi1X1NgK_qBhoapBXGUlmh2lBxVYDg4Fb8dGNQ-SBb9H9c",
+      "image_credit": "Empire",
       "news": [
         {
-          "url": "https://people.com/brad-pitt-and-ines-de-ramon-hold-hands-enjoy-date-night-the-further-mis-adventures-of-cliff-booth-premiere-12260007",
-          "title": "Brad Pitt and Ines de Ramon Attend ‘The Further Mis-Adventures of Cliff Booth’ Premiere",
-          "publisher": "People.com",
+          "url": "https://www.empireonline.com/movies/news/avengers-secret-wars-whole-other-genre-doomsday-kevin-feige-exclusive/",
+          "title": "Avengers: Secret Wars Is ‘A Whole Other Genre Of Story’ To Doomsday, Teases Kevin Feige",
+          "publisher": "Empire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJpsXsch_VJ30ul0Vq-uR3F7c68nF95A6RdljmLj_Rn0jMWIls3E-ljz_HAqE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6KLrU0QKYCjn74pi1X1NgK_qBhoapBXGUlmh2lBxVYDg4Fb8dGNQ-SBb9H9c"
         },
         {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/david-fincher-brad-pitt-cliff-booth-first-reactions-1236755981/",
-          "title": "David Fincher’s ‘The Further Mis-Adventures of Cliff Booth’: First Reactions",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.yahoo.com/entertainment/movies/articles/avengers-secret-wars-whole-other-170139068.html",
+          "title": "Avengers: Secret Wars is a \"whole other genre\" of superhero movie and a \"really unique story\"",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrPSe1zePMuuRrMktG7WOvkEH27_PJwxW9-EC-HHoMH5jCf2ZQf9BO4SBn30w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReLjpNEtulryvdxIxawf5Q6MMl7wpd8cjt-Adm-yooe-GAn6I9lScGmuTzaJU"
         },
         {
-          "url": "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
-          "title": "'Cliff Booth' First Reactions: Brad Pitt, Fincher and Tarantino Excite",
-          "publisher": "Variety",
+          "url": "https://www.imdb.com/news/ni66114011/?ref_=ttnw_art_perm",
+          "title": "Avengers: Secret Wars Gets Game-Changing Kevin Feige Update 1 Month Before Doomsday",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBSZOySluvsJlgZjPbUvZbhU2_D_Lj9aR2vh2ofHVt0MVptrvc7uYjGReiBs"
         }
       ]
     },
     {
-      "query": "jeremy davies minnesota wild trade",
+      "query": "jaromir jagr",
       "approx_searches": "100+",
-      "published_at": "2026-11-17T11:40:00Z",
+      "published_at": "2026-11-17T12:10:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/wild/news/minnesota-wild-acquires-defenseman-jeremy-davies-from-vegas-golden-knights-111626",
-        "https://www.dailyfaceoff.com/news/vegas-golden-knights-minnesota-wild-trade-joint-nhl-ahl-deal-jeremy-davies-gerry-mayhew-iowa-henderson-silver-knights",
-        "https://www.prohockeyrumors.com/2026/11/golden-knights-wild-swap-jeremy-davies-gerald-mayhew.html"
+        "https://www.nhl.com/news/jaromir-jagr-hoping-for-farewell-hockey-game-next-summer",
+        "https://www.nytimes.com/athletic/7787046/2026/11/16/jaromir-jagr-retirement-hall-of-fame/",
+        "https://www.dailyfaceoff.com/news/nhl-hall-of-fame-jaromir-jagr-retire-after-2026-27-season"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh-GbWqIgwaNbbMyYlcZoeW6ZUDtldJve5_tUeZJAYO3mbzFtVNyvRhJmUvGw",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWv31Q-J-p6vq366-Kec4V-Ccnxa0lcbb7IrOCIGoUgqNjevqH3Tm_1GI46qo",
       "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nhl.com/wild/news/minnesota-wild-acquires-defenseman-jeremy-davies-from-vegas-golden-knights-111626",
-          "title": "Minnesota Wild Acquires Defenseman Jeremy Davies from Vegas Golden Knights",
+          "url": "https://www.nhl.com/news/jaromir-jagr-hoping-for-farewell-hockey-game-next-summer",
+          "title": "Jagr hopes to host farewell hockey game next summer",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh-GbWqIgwaNbbMyYlcZoeW6ZUDtldJve5_tUeZJAYO3mbzFtVNyvRhJmUvGw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWv31Q-J-p6vq366-Kec4V-Ccnxa0lcbb7IrOCIGoUgqNjevqH3Tm_1GI46qo"
         },
         {
-          "url": "https://www.dailyfaceoff.com/news/vegas-golden-knights-minnesota-wild-trade-joint-nhl-ahl-deal-jeremy-davies-gerry-mayhew-iowa-henderson-silver-knights",
-          "title": "Golden Knights, Wild swap players in joint NHL-AHL deal",
-          "publisher": "Daily Faceoff",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiFY4Fwytc5peTAaKZqw9v-Jgngx1aBd4VGGjNZoCRa_FteQBlvV44rQEdR1Q"
-        },
-        {
-          "url": "https://www.prohockeyrumors.com/2026/11/golden-knights-wild-swap-jeremy-davies-gerald-mayhew.html",
-          "title": "Golden Knights, Wild Swap Jeremy Davies, Gerald Mayhew",
-          "publisher": "Pro Hockey Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOWhtiG2dsLQs1bWyUWsGtdFIjkm3hFkwqVcokQ0Rdr7TO-h6usy9BfBFmW6Y"
-        }
-      ]
-    },
-    {
-      "query": "hd stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T11:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/news/home-depot-announces-third-quarter-110000708.html",
-        "https://www.barchart.com/story/news/8860961/ahead-of-home-depot-earnings-here-s-what-barchart-data-says-comes-next-for-hd-stock",
-        "https://finimize.com/content/home-depot-and-lowes-face-a-still-slow-housing-fix"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxw3Feax21uGPuqWhn_3hnLE46FGCpA6c5f7OmDlzYSphP7gV3YQb6iu2pWpg",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/news/home-depot-announces-third-quarter-110000708.html",
-          "title": "The Home Depot Announces Third Quarter Fiscal 2026 Results; Updates Fiscal 2026 Guidance",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxw3Feax21uGPuqWhn_3hnLE46FGCpA6c5f7OmDlzYSphP7gV3YQb6iu2pWpg"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8860961/ahead-of-home-depot-earnings-here-s-what-barchart-data-says-comes-next-for-hd-stock",
-          "title": "Ahead of Home Depot Earnings, Here's What Barchart Data Says Comes Next for HD Stock",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DxkdiUk9xiuV_sOpGGNENL_YDMwKdDCc8kIrTO5JVVGNtrOQ-i3mpNEVS3E"
-        },
-        {
-          "url": "https://finimize.com/content/home-depot-and-lowes-face-a-still-slow-housing-fix",
-          "title": "Home Depot And Lowe’s Face A Still-Slow Housing Fix",
-          "publisher": "Finimize",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQolNyjwIynZCKBHAqEsEWq7vsvoXB8U-cGLlxVt9WuxFWArd6tqM8M5WzbSiA"
-        }
-      ]
-    },
-    {
-      "query": "dancing with the stars semi-finals",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T11:30:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/monicamercuri/2026/11/15/dancing-with-the-stars-semifinals-dances-revealed-as-six-couples-battle-for-finale-spots/",
-        "https://www.covers.com/entertainment/dancing-with-the-stars-semifinal-elimination-odds",
-        "https://www.mjsbigblog.com/dancing-with-the-stars-2026-semi-final-night-song-choices-and-dance-styles.htm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-P2h9WpiKOX-mNNCN67D6wSpm8h66hshQFyNDlSIC9qavpqSFMYnY2ClCis",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/monicamercuri/2026/11/15/dancing-with-the-stars-semifinals-dances-revealed-as-six-couples-battle-for-finale-spots/",
-          "title": "‘Dancing With The Stars’ Semifinals Dances Revealed As Six Couples Battle For Finale Spots",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-P2h9WpiKOX-mNNCN67D6wSpm8h66hshQFyNDlSIC9qavpqSFMYnY2ClCis"
-        },
-        {
-          "url": "https://www.covers.com/entertainment/dancing-with-the-stars-semifinal-elimination-odds",
-          "title": "DWTS Semifinal Elimination Odds: Maura Higgins & 'None' Tied",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRPmj3LmVPr-r6c2DPctwRPPS_XoDCNm4L19lz8DpIuho0wv4dmzXYa0QdSAg"
-        },
-        {
-          "url": "https://www.mjsbigblog.com/dancing-with-the-stars-2026-semi-final-night-song-choices-and-dance-styles.htm",
-          "title": "Dancing with the Stars 2026 Semi-Final Night Song Choices and Dance Styles",
-          "publisher": "Mjsbigblog",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwFmg3399w-95b5xPP4MsSsT6TW3J4PIG6GfkRbdUjC7aGOcRDm2JiLHemDUs"
-        }
-      ]
-    },
-    {
-      "query": "harry potter hbo show character posters",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T11:30:00Z",
-      "related_news_urls": [
-        "https://www.thewrap.com/creative-content/tv-shows/harry-potter-hbo-series-banquet-scene-first-look-trolled-david-ellison/",
-        "https://people.com/john-lithgow-dumbledore-hbo-harry-potter-series-clip-12258167",
-        "https://www.yahoo.com/entertainment/tv/articles/harry-potter-doubles-down-divisive-232004667.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2lhvQQRGjUn8obfEYZ6wxfTm5zqf5PbH_sN2pvkkj3wEF63JO1rPadxxSFws",
-      "image_credit": "TheWrap",
-      "news": [
-        {
-          "url": "https://www.thewrap.com/creative-content/tv-shows/harry-potter-hbo-series-banquet-scene-first-look-trolled-david-ellison/",
-          "title": "‘Harry Potter’ HBO Series Drops Hogwarts Banquet First Look, Gets Trolled for ‘Not Hitting the Mark’",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2lhvQQRGjUn8obfEYZ6wxfTm5zqf5PbH_sN2pvkkj3wEF63JO1rPadxxSFws"
-        },
-        {
-          "url": "https://people.com/john-lithgow-dumbledore-hbo-harry-potter-series-clip-12258167",
-          "title": "John Lithgow’s Dumbledore Is ‘Totally Off His Rocker’ in the First Clip from HBO’s New Harry Potter Series",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS_BgpsUpiHEf-l2EQks_j4I1x9WUxux_57s97P6pYjAfuvAN-vsPVVjstFYA"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/harry-potter-doubles-down-divisive-232004667.html",
-          "title": "Harry Potter Doubles Down on Divisive TV Show Posters After Fans Complained About Last Batch",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsdrrz5aiIqwr5XtEfXedHWlPYLcQXr9uWyFPp6hPgsYrZgGVmso4MI59muXI"
-        }
-      ]
-    },
-    {
-      "query": "phoenix weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-17T11:30:00Z",
-      "related_news_urls": [
-        "https://www.fox10phoenix.com/weather/arizona-weather-forecast-111626",
-        "https://www.azfamily.com/2026/11/16/scattered-rain-thunderstorms-tuesday-morning-phoenix-area/",
-        "https://www.abc15.com/weather/most-accurate-forecast-one-more-warm-day-in-arizona-before-a-cold-front-brings-rain-and-wind-on-tuesday"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDdwDzPCd5MedQqX8oae2eQEylI9ipCjgzIeKnkasqO9kJ-PdMBwkYgUAwOT8",
-      "image_credit": "FOX 10 Phoenix",
-      "news": [
-        {
-          "url": "https://www.fox10phoenix.com/weather/arizona-weather-forecast-111626",
-          "title": "Arizona weather forecast: Rain, strong winds and high-country snow expected Tuesday",
-          "publisher": "FOX 10 Phoenix",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDdwDzPCd5MedQqX8oae2eQEylI9ipCjgzIeKnkasqO9kJ-PdMBwkYgUAwOT8"
-        },
-        {
-          "url": "https://www.azfamily.com/2026/11/16/scattered-rain-thunderstorms-tuesday-morning-phoenix-area/",
-          "title": "Scattered rain and thunderstorms for Tuesday morning in the Phoenix area",
-          "publisher": "AZ Family",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl76uJ12nZWC0Hd57iU1alnrODAzcyCMfOHAM1jN7ZZRLUbNSyVWXmCtrrx74"
-        },
-        {
-          "url": "https://www.abc15.com/weather/most-accurate-forecast-one-more-warm-day-in-arizona-before-a-cold-front-brings-rain-and-wind-on-tuesday",
-          "title": "MOST ACCURATE FORECAST: Storm on the way bringing wind, rain and a big cool-down to Arizona",
-          "publisher": "ABC15 Arizona",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7ZVbOVSKsQj2Bi-GySg5D1JUZlPAkdH79FFjj3TRZKUD3iA3VaLExi4VTQQ"
-        }
-      ]
-    },
-    {
-      "query": "amazon black friday deals",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T11:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-16",
-        "https://www.foodandwine.com/amazon-black-friday-early-deals-november-2026-12258617",
-        "https://www.nbcnews.com/select/shopping/best-early-black-friday-deals-rcna609512"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbi2c2gsNFSy5RPBvsMnXqOtn3yWoool6lOSDe34NVegbiXD_ct7kLOiKo9gY",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-16",
-          "title": "Don’t wait for Black Friday. Our deals expert found 64 discounts worth shopping early",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbi2c2gsNFSy5RPBvsMnXqOtn3yWoool6lOSDe34NVegbiXD_ct7kLOiKo9gY"
-        },
-        {
-          "url": "https://www.foodandwine.com/amazon-black-friday-early-deals-november-2026-12258617",
-          "title": "Amazon’s Best Early Black Friday Deals Secretly Start Now — Up to 70% Off Breville, Yeti, OXO, and More",
-          "publisher": "Food & Wine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT14ZjicEu1xFhvFw-5lLcvlpfOGkNBCfpxOoJrYVpBTE1cHlSY4jpUZd504N4"
-        },
-        {
-          "url": "https://www.nbcnews.com/select/shopping/best-early-black-friday-deals-rcna609512",
-          "title": "Early Black Friday deals are here from Amazon, Home Depot, Ulta and more: I found the best ones up to 70% off",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwR8_mXYIi3b-hUDFgzxyidbYgJY29PkTLHMKapB51MyLiIcX7PZM3jxJXbsU"
-        }
-      ]
-    },
-    {
-      "query": "deportation",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T11:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html",
-        "https://www.aljazeera.com/news/2026/11/17/why-are-five-eu-countries-reviving-plans-to-deport-migrants-to-rwanda",
-        "https://www.bbc.com/news/articles/cw987343352go"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4X613rr9P66wsgBpucVrryVBrWm5Vvi7BQvmcTtsJ57vWJXXAbgAABr0fPU",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/16/world/europe/deport-rwanda-asylum-migration.html",
-          "title": "Five European Countries Plan to Deport Migrants to Rwanda",
+          "url": "https://www.nytimes.com/athletic/7787046/2026/11/16/jaromir-jagr-retirement-hall-of-fame/",
+          "title": "Jaromir Jagr, 54, ready to end hockey playing career: ‘I’ve squeezed every last drop out of it’ - The Athletic",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4X613rr9P66wsgBpucVrryVBrWm5Vvi7BQvmcTtsJ57vWJXXAbgAABr0fPU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRVfjqGfF_Rx4vfcd4GP0OO-Ewfcf7oZfANVC0z9qr0ggmcGaY2vMK08f13dc"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/11/17/why-are-five-eu-countries-reviving-plans-to-deport-migrants-to-rwanda",
-          "title": "Why are five EU countries reviving plans to deport migrants to Rwanda?",
-          "publisher": "Al Jazeera",
+          "url": "https://www.dailyfaceoff.com/news/nhl-hall-of-fame-jaromir-jagr-retire-after-2026-27-season",
+          "title": "Report: Jaromir Jagr ready to retire at 54",
+          "publisher": "Daily Faceoff",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQoNtAb4cYcB4wpnFSaaFuIWte-Jy9V0X5gyPmIxe_hvf7GlYtPuI94Js0pRw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUXs8e6PyGmmMM8Wm8peur6mxl_M21YTCZWH5hEujKZk7iCsycCAel1icJGgM"
+        }
+      ]
+    },
+    {
+      "query": "globo",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T12:10:00Z",
+      "related_news_urls": [
+        "https://natelinha.uol.com.br/colunas/joao-paulo-dell-santo/2026/11/17/globo-retoma-novelas-das-10-de-olho-nos-saudosistas----250516.php",
+        "https://noticiasdatv.uol.com.br/noticia/celebridades/clara-moneke-reage-apos-simaria-dar-em-cima-de-seu-namorado-ao-vivo-na-globo-159519",
+        "https://www.cnnbrasil.com.br/pop/celebridades/simaria-da-cantada-em-ator-de-quem-ama-cuida-estou-na-pista/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdaUk89HrKj0eAy0Pe-uZgGRn9kA3ro-2SwtJkflwqJ1Vq5F86UHAPsFVbPRo",
+      "image_credit": "NaTelinha",
+      "news": [
+        {
+          "url": "https://natelinha.uol.com.br/colunas/joao-paulo-dell-santo/2026/11/17/globo-retoma-novelas-das-10-de-olho-nos-saudosistas----250516.php",
+          "title": "Globo retoma \"novelas das 10\" de olho nos saudosistas",
+          "publisher": "NaTelinha",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdaUk89HrKj0eAy0Pe-uZgGRn9kA3ro-2SwtJkflwqJ1Vq5F86UHAPsFVbPRo"
         },
         {
-          "url": "https://www.bbc.com/news/articles/cw987343352go",
-          "title": "Five EU countries announce migrant deportation centre in Rwanda",
-          "publisher": "BBC",
+          "url": "https://noticiasdatv.uol.com.br/noticia/celebridades/clara-moneke-reage-apos-simaria-dar-em-cima-de-seu-namorado-ao-vivo-na-globo-159519",
+          "title": "Clara Moneke reage após Simaria dar em cima de seu namorado ao vivo na Globo",
+          "publisher": "Notícias da TV",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj0PzRxah5Noalawjh79EyYqAFKgkiuRUZLAB3RCHJ37z-qoASEuJDM3JGy8g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY034zX569L0nxH-4zlAN0qi04MGuG7mw8cGBrGCv78rOK5ZAZebVCsw2w4o4"
+        },
+        {
+          "url": "https://www.cnnbrasil.com.br/pop/celebridades/simaria-da-cantada-em-ator-de-quem-ama-cuida-estou-na-pista/",
+          "title": "Simaria dá cantada em ator de “Quem Ama Cuida”: “Estou na pista\"",
+          "publisher": "CNN Brasil",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbrg6Bzuczpr5b-sAWHudn9TkXc3XEmCvrGKXvOFg9LcBokZPX5zRcpohbw-M"
+        }
+      ]
+    },
+    {
+      "query": "salmonella",
+      "approx_searches": "100+",
+      "published_at": "2026-11-17T12:10:00Z",
+      "related_news_urls": [
+        "https://www.cidrap.umn.edu/e-coli/cdc-declares-its-probe-outbreak-e-coli-salmonella-illnesses-tied-alfalfa-sprouts-over",
+        "https://foodpoisoningbulletin.com/2026/francisco-family-foods-alfalfa-sprouts-recalled-for-e-coli-and-salmonella/",
+        "https://www.foodsafetynews.com/2026/11/more-sprouting-seeds-recalled-because-of-possible-contamination-with-e-coli-and-salmonella/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD3mSvElXVNyNjqNhuZ_SYE_UyPuLlNhqvs6UXHhkwZWjwykDcFOZkh2Pz1ZU",
+      "image_credit": "CIDRAP",
+      "news": [
+        {
+          "url": "https://www.cidrap.umn.edu/e-coli/cdc-declares-its-probe-outbreak-e-coli-salmonella-illnesses-tied-alfalfa-sprouts-over",
+          "title": "CDC declares its probe into outbreak of E coli, Salmonella illnesses tied to alfalfa sprouts over",
+          "publisher": "CIDRAP",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD3mSvElXVNyNjqNhuZ_SYE_UyPuLlNhqvs6UXHhkwZWjwykDcFOZkh2Pz1ZU"
+        },
+        {
+          "url": "https://foodpoisoningbulletin.com/2026/francisco-family-foods-alfalfa-sprouts-recalled-for-e-coli-and-salmonella/",
+          "title": "Francisco Family Foods Alfalfa Sprouts Recalled For E. coli and Salmonella",
+          "publisher": "Food Poisoning Bulletin",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCU6t4o6uGLxjSW82_Kw4kEDCYgH16OeUXpmkYGdouKHvh0HTZmwrk73uD_-M"
+        },
+        {
+          "url": "https://www.foodsafetynews.com/2026/11/more-sprouting-seeds-recalled-because-of-possible-contamination-with-e-coli-and-salmonella/",
+          "title": "More sprouting seeds recalled because of possible contamination with E. coli and Salmonella",
+          "publisher": "Food Safety News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQuJVFvQXFO7nJDnslYZOIN4y7qHWQBtI6HjEC8UO1O56ZysBtcfuPrLqXhek"
         }
       ]
     }
