@@ -42,7 +42,7 @@ test('featured and detail views do not display duplicate Follow on top of toolba
  assert.doesNotMatch(src,/actions\.append\(followButton\(card,renderDetailAgain\)\)/);
  assert.match(src,/mountCardTools\(tools,selected\)/);
  assert.match(deck,/\{showFollow:false\}/);
- assert.match(deck,/follow\.hidden=!active\|\|active\.id\.startsWith\('source-'\)/);
+ assert.match(deck,/follow\.hidden=!active;/,'Oracle Follow remains visible on source-backed publisher cards');
  assert.match(actions,/if\(options\.showFollow!==false\)/);
 });
 test('source publisher Follow stays visible when a result has separate item actions',()=>{
