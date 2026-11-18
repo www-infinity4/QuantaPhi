@@ -227,6 +227,8 @@ jobs:
  if(action==='read_repository'){
   const repo=await api(''),ref=await api('/git/ref/heads/'+encodeURIComponent(repo.default_branch));
   const base={ok:true,repository,defaultBranch:repo.default_branch,headSha:ref.object.sha};
+  if(typeof repo.full_name==='string'&&REPO.test(repo.full_name)&&repo.full_name.toLowerCase()===repository.toLowerCase())
+   base.canonicalRepository=repo.full_name;
   if(body.includeRoot!==true)return base;
   // Owner-authorized read-only tree inspection. This is an exact GitHub API
   // result, not a guessed root listing, README or private token disclosure.
