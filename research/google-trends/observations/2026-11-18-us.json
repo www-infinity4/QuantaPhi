@@ -3,41 +3,321 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T07:01:37.334801Z",
+  "checked_at": "2026-11-18T07:31:07.181251Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "grimes lakers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T06:40:00Z",
+      "query": "gas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T07:10:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/sports/nba/lakers/2026/11/18/quentin-grimes-points-lakers-hornets/92839567007/",
-        "https://uk.sports.yahoo.com/news/quentin-grimes-scores-45-points-063626996.html",
-        "https://www.silverscreenandroll.com/lakers-game-previews/129005/lakers-vs-hornets-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-austin-reaves"
+        "https://ktla.com/news/local-news/massive-geyser-of-rotting-trash-prompts-emergency-health-order-in-l-a-county/",
+        "https://abc7.com/post/crews-respond-chemical-release-chiquita-canyon-landfill-castaic/20046298/",
+        "https://www.foxla.com/news/chiquita-canyon-landfill-geyser-eruption-sends-up-black-smoke-prompts-air-quality-advisory"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9L_5M106prBUl58FjGe1zmKYsUUo4Q1pDrP5Tsvsy5F8g2PoxZCW37wmjA9Q",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIlR95d_j0tzTG0FwQVtZEtrAVxtJEz_envfGn61fT-TNnpNfkxsJnRe9HC9k",
+      "image_credit": "KTLA",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/sports/nba/lakers/2026/11/18/quentin-grimes-points-lakers-hornets/92839567007/",
-          "title": "Quentin Grimes scores 42 points to spark Lakers comeback vs. Hornets",
+          "url": "https://ktla.com/news/local-news/massive-geyser-of-rotting-trash-prompts-emergency-health-order-in-l-a-county/",
+          "title": "Massive geyser of rotting trash prompts emergency health order in L.A. County",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIlR95d_j0tzTG0FwQVtZEtrAVxtJEz_envfGn61fT-TNnpNfkxsJnRe9HC9k"
+        },
+        {
+          "url": "https://abc7.com/post/crews-respond-chemical-release-chiquita-canyon-landfill-castaic/20046298/",
+          "title": "Landfill geyser erupts at Chiquita Canyon in Castaic, prompts evacuation advisory",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvcSe6LTEs97-TxyLISryQL6CdYEIB_8xGm6kxxspFIsHNMmMNGnw_-xq4RM"
+        },
+        {
+          "url": "https://www.foxla.com/news/chiquita-canyon-landfill-geyser-eruption-sends-up-black-smoke-prompts-air-quality-advisory",
+          "title": "Chiquita Canyon Landfill methane eruption prompts LA County probe, relocation aid",
+          "publisher": "FOX 11 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE4_RhorLaOzFM2a6PXI41oKOH649rvTZ1d-bqHDRvdRgWWU6EK5Th-z1cjhM"
+        }
+      ]
+    },
+    {
+      "query": "flash flooding florida",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T07:10:00Z",
+      "related_news_urls": [
+        "https://www.wesh.com/article/flooding-rain-volusia-florida-18-24-inches-possible/74442093",
+        "https://www.foxweather.com/weather-news/week-rain-nasty-winds-douse-florida-flood-threat",
+        "https://www.nbcmiami.com/weather/stories-weather/flood-watch-broward-miami-dade-isolated-spots-could-see-10-inches-rain/3889108/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNJWZBtoiz56ZBIGnvrTwzNPW_1cTs7epBWTdvcgZPbjhR9psd5XqqxHru0Rc",
+      "image_credit": "WESH",
+      "news": [
+        {
+          "url": "https://www.wesh.com/article/flooding-rain-volusia-florida-18-24-inches-possible/74442093",
+          "title": "Storm system could bring 12+ inches of rain, flooding to Central Florida this week, models show",
+          "publisher": "WESH",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNJWZBtoiz56ZBIGnvrTwzNPW_1cTs7epBWTdvcgZPbjhR9psd5XqqxHru0Rc"
+        },
+        {
+          "url": "https://www.foxweather.com/weather-news/week-rain-nasty-winds-douse-florida-flood-threat",
+          "title": "Rounds of rain fuel weeklong flood threat along Florida Atlantic Coast ahead of possible move into Atlantic",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8UeXQfmV3NFmJi7QHAwYsBao1u50sQNr0G31XGBmESjHkS0ivGmx9WMqlrU8"
+        },
+        {
+          "url": "https://www.nbcmiami.com/weather/stories-weather/flood-watch-broward-miami-dade-isolated-spots-could-see-10-inches-rain/3889108/",
+          "title": "RADAR: Heavy rain prompts several flood warnings, estimated 8-10″ fall in Broward County",
+          "publisher": "NBC 6 South Florida",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0MAgZ_mYvNq33fhUuOQ9p5aieyjL2XTTf2iPE4uRVAoZ0D7CtNRnJD9N0wZU"
+        }
+      ]
+    },
+    {
+      "query": "medicare part b premium 2027",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T07:10:00Z",
+      "related_news_urls": [
+        "https://money.com/medicare-part-b-adjustment-2027-social-security/",
+        "https://www.barrons.com/articles/medicare-premium-10e60d21",
+        "https://www.newsnationnow.com/business/your-money/medicare-part-b-premiums-2027/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXOlm8eKjx8BLqIV_yqVVfUpfchcyPzxgrEjzo3MskbgsukJKMwPMQX1x5z8Y",
+      "image_credit": "money.com",
+      "news": [
+        {
+          "url": "https://money.com/medicare-part-b-adjustment-2027-social-security/",
+          "title": "Medicare Part B Adjustment for 2027: Here's How Much the New Premiums Will Eat Into Social Security Checks",
+          "publisher": "money.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXOlm8eKjx8BLqIV_yqVVfUpfchcyPzxgrEjzo3MskbgsukJKMwPMQX1x5z8Y"
+        },
+        {
+          "url": "https://www.barrons.com/articles/medicare-premium-10e60d21",
+          "title": "The Medicare Part B Premium for 2027 Is Here",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCvRiFJaacWoqTgJEbVs7ZipBTHL_7llnrHPcpVEPe6vq-soHjTis0F3A65vI"
+        },
+        {
+          "url": "https://www.newsnationnow.com/business/your-money/medicare-part-b-premiums-2027/",
+          "title": "Here’s how much Medicare Part B premiums are rising in 2027",
+          "publisher": "NewsNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCXAwQ-B2jxn_qsl0fWGxgNrLqGvgj3BQhK0CfHp6Ck6vroqJiTxkCHoTwekE"
+        }
+      ]
+    },
+    {
+      "query": "how long is gta 6 story mode",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T07:10:00Z",
+      "related_news_urls": [
+        "https://insider-gaming.com/how-long-to-complete-gta/",
+        "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6",
+        "https://tech.yahoo.com/gaming/articles/gta-6-game-length-mission-164415947.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK4OHVX8MwzX5HORWMw9Jjl6no9kIriWadKDF3VGB6gB0pfiymzMd54hhLy6k",
+      "image_credit": "Insider Gaming",
+      "news": [
+        {
+          "url": "https://insider-gaming.com/how-long-to-complete-gta/",
+          "title": "How Long Will It Take to Complete GTA 6? Platinum Trophy & Mythic Achievement Time Explained",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK4OHVX8MwzX5HORWMw9Jjl6no9kIriWadKDF3VGB6gB0pfiymzMd54hhLy6k"
+        },
+        {
+          "url": "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6",
+          "title": "How long it takes to play GTA 6: Playthrough and achievements",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYwZAw5JkiJkkTPtjD09NtC9S4iKG9I8Q0UvM1PrW5NPGnutiuTUsaKd3K8lA"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/gta-6-game-length-mission-164415947.html",
+          "title": "‘GTA 6’ Game Length and Mission Count Officially Revealed",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14PgKgcGTH68TYDEu8hUkGmlHb6CXSdjS_Sm5YoduD49QKjNuStaL0gFgtN4"
+        }
+      ]
+    },
+    {
+      "query": "matisse thybulle",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T07:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/matters-more-matisse-thybulle-lakers-014253647.html",
+        "https://www.usatoday.com/story/sports/nba/rumors/2026/11/17/matisse-thybulle-on-lakers-streak-wins-right-now-are-great-but-wins-in-the-postseason-are-better/92832130007/",
+        "https://fadeawayworld.net/nba/los-angeles-lakers/matisse-thybulle-reflects-on-lakers-8-game-win-streak-and-what-it-means-for-their-title-chances"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ73hRLbbeTHQtAfaQOcXnp9oLnKA1kf-KEgJ0o0wKmXpiQVV6IgOmw9rSmSKI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/matters-more-matisse-thybulle-lakers-014253647.html",
+          "title": "What matters more to Matisse Thybulle than Lakers’ 8-game win streak",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ73hRLbbeTHQtAfaQOcXnp9oLnKA1kf-KEgJ0o0wKmXpiQVV6IgOmw9rSmSKI"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nba/rumors/2026/11/17/matisse-thybulle-on-lakers-streak-wins-right-now-are-great-but-wins-in-the-postseason-are-better/92832130007/",
+          "title": "Matisse Thybulle on Lakers' streak: 'Wins right now are great, but wins in the postseason are better'",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9L_5M106prBUl58FjGe1zmKYsUUo4Q1pDrP5Tsvsy5F8g2PoxZCW37wmjA9Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR6Ps7sZ34S2YRLC_o20xzucVgIwY_GkfE3PvqlA-1K_pjyAYPDmhTJHwWjDo"
         },
         {
-          "url": "https://uk.sports.yahoo.com/news/quentin-grimes-scores-45-points-063626996.html",
-          "title": "Quentin Grimes scores 45 points to spark Lakers comeback, force OT vs. Hornets",
-          "publisher": "Yahoo",
+          "url": "https://fadeawayworld.net/nba/los-angeles-lakers/matisse-thybulle-reflects-on-lakers-8-game-win-streak-and-what-it-means-for-their-title-chances",
+          "title": "Matisse Thybulle Reflects On Lakers' 8-Game Win Streak And What It Means For Their Title Chances",
+          "publisher": "Fadeaway World",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzpWO2g5KRrl_1YaJYGn160LPqbD35VRui446FuK0fqwL2zXr0IRBm4D-NKUU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxw1YiYgTxpPUS5pqVk2GgHE1BpJLRGA2eK-Ivq4eu58IRl1KblC1BWEryehw"
+        }
+      ]
+    },
+    {
+      "query": "grimes nba",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T07:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/fantasy/basketball/story/_/id/50511865/fantasy-basketball-tips-nba-betting-picks-today",
+        "https://www.fanduel.com/research/nba-picks-today-predictions-best-bets-tuesday-nov-17",
+        "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-scottie-barnes-luka-doncic-jazz-vs-clippers"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgWJLdmrBhK7qA2uC61qnE91mLTjnF1BYtCCF4DVshs9Y0x7k4Su6JOpZ3bQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50511865/fantasy-basketball-tips-nba-betting-picks-today",
+          "title": "Fantasy basketball adds and NBA bets: Ride with Doncic and Grimes on Tuesday",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgWJLdmrBhK7qA2uC61qnE91mLTjnF1BYtCCF4DVshs9Y0x7k4Su6JOpZ3bQ"
         },
         {
-          "url": "https://www.silverscreenandroll.com/lakers-game-previews/129005/lakers-vs-hornets-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-austin-reaves",
-          "title": "Lakers vs. Hornets Preview: The winning continues",
+          "url": "https://www.fanduel.com/research/nba-picks-today-predictions-best-bets-tuesday-nov-17",
+          "title": "NBA Picks Today: 3 NBA Predictions and Best Bets for Tuesday, Nov. 17",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjFpo2DzDW8oZnDhsJozB6mP5n2_8Kz_oojqqLZmN4KGx_po3bNwQRqH0lsI0"
+        },
+        {
+          "url": "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-scottie-barnes-luka-doncic-jazz-vs-clippers",
+          "title": "Peter’s Points: NBA Best Bets Today (Predictions, Prop Bets for Scottie Barnes, Luka Doncic, Jazz vs. Clippers)",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTICuyx_QzP-i-GNLJcEx6aBWo1kZjgWjTGsc9_CitTOlVes5od58SN_qtNyE4"
+        }
+      ]
+    },
+    {
+      "query": "adou thiero",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T07:00:00Z",
+      "related_news_urls": [
+        "https://www.silverscreenandroll.com/lakers-news/129070/lakers-news-adou-thiero",
+        "https://www.cbssports.com/fantasy/basketball/news/lakers-adou-thiero-back-from-knee-injury/",
+        "https://lakeshowlife.com/adou-thiero-defensive-flashes-keep-validating-lakers-commitment-development"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNycvXU9cS9WpnGjenj9UvlmLRUtVtzuRfbDHNF7irruzQG66O1y3M1SKiuAA",
+      "image_credit": "Silver Screen and Roll",
+      "news": [
+        {
+          "url": "https://www.silverscreenandroll.com/lakers-news/129070/lakers-news-adou-thiero",
+          "title": "Lakers expect to have to manage Adou Thiero’s minutes all season",
           "publisher": "Silver Screen and Roll",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMDtbXD7xffr_oWPkPJnzcq_d_grhrBOxgaPrA7F1bI2P8RDu_w3EfXHGuxDA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNycvXU9cS9WpnGjenj9UvlmLRUtVtzuRfbDHNF7irruzQG66O1y3M1SKiuAA"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-adou-thiero-back-from-knee-injury/",
+          "title": "Lakers' Adou Thiero: Back from knee injury",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-wMNeq09NoAXB6xq35X-_BLYEX-suh0w3vzrmE-64DHe5K_1a9Yxispbfaks"
+        },
+        {
+          "url": "https://lakeshowlife.com/adou-thiero-defensive-flashes-keep-validating-lakers-commitment-development",
+          "title": "Adou Thiero's defensive flashes keep validating Lakers' commitment to his development",
+          "publisher": "Lake Show Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlArqC85NWuH8Th-0TWhklrj-Pym5mj-XNRtkgWEWYZlx_bhbS15wrxCF248g"
+        }
+      ]
+    },
+    {
+      "query": "christian anderson jr.",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T07:00:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/hornets/news/thrust-into-nba-whirlwind-game-is-quickly-slowing-down-for-christian-anderson-jr",
+        "https://atthehive.com/charlotte-hornets-show-signs-of-life/",
+        "https://www.fantasypros.com/nba/news/620535/christian-anderson-jr-leads-bench-loss-to-clippers.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSDN5CpYBhe0btH6fO0gQRZs86qvLENEjRsdImmBMHAQE6-MhuQyA3Cf55RxE",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/hornets/news/thrust-into-nba-whirlwind-game-is-quickly-slowing-down-for-christian-anderson-jr",
+          "title": "Thrust Into NBA Whirlwind, Game Is Quickly Slowing Down For Christian Anderson Jr.",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSDN5CpYBhe0btH6fO0gQRZs86qvLENEjRsdImmBMHAQE6-MhuQyA3Cf55RxE"
+        },
+        {
+          "url": "https://atthehive.com/charlotte-hornets-show-signs-of-life/",
+          "title": "Hornets Show Signs of Life",
+          "publisher": "At The Hive",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzi5iUaUSc4YMFQCp2DFr3tFKg2i1EVx4Rhhp_H5OEyfKEef16m5ahwjeXEvo"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/620535/christian-anderson-jr-leads-bench-loss-to-clippers.php",
+          "title": "Christian Anderson Jr. leads bench in loss to Clippers",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaf83emM60ALSayeGOxU0AuDQJqwCilf8mr_vz-nXoLWuLTAPwhZ2mA0KoDCU"
+        }
+      ]
+    },
+    {
+      "query": "mega millions drawing november 17",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T06:50:00Z",
+      "related_news_urls": [
+        "https://www.wkyc.com/article/news/lottery/northeast-ohio-mega-millions-player-100k-prize-see-where-winning-ticket-was-sold-check-lucky-numbers-nov-13-ohio-lottery-results/95-98bbc9fd-8457-40c9-9b96-b90429f2679f",
+        "https://www.forbes.com/sites/siladityaray/2026/11/18/mega-millions-jackpot-rises-to-629-million-heres-what-the-winner-could-take-home/",
+        "https://www.yahoo.com/news/us/articles/mega-millions-numbers-lucky-winner-050350603.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I",
+      "image_credit": "WKYC",
+      "news": [
+        {
+          "url": "https://www.wkyc.com/article/news/lottery/northeast-ohio-mega-millions-player-100k-prize-see-where-winning-ticket-was-sold-check-lucky-numbers-nov-13-ohio-lottery-results/95-98bbc9fd-8457-40c9-9b96-b90429f2679f",
+          "title": "Northeast Ohio Mega Millions player hits $100K prize: See where the winning ticket was sold, check the lucky numbers for Nov. 13",
+          "publisher": "WKYC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I"
+        },
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/18/mega-millions-jackpot-rises-to-629-million-heres-what-the-winner-could-take-home/",
+          "title": "Mega Millions Jackpot Rises To $629 Million—Here’s What The Winner Could Take Home",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvxuBeRhGv7c8vcnNzrUU4YyWJvcGiRqq7NH5nwJOD8VsFQBktUlhmtEQaIa8"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/mega-millions-numbers-lucky-winner-050350603.html",
+          "title": "Mega Millions numbers: Are you the lucky winner of Tuesday’s $600 million jackpot?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3pGGIwgHxOKThr1Sedk5E_9pOxT_d5qX8-xuZPCcbKOBhW8wPkFOYJy-8AdI"
         }
       ]
     },
@@ -47,8 +327,8 @@
       "published_at": "2026-11-18T06:40:00Z",
       "related_news_urls": [
         "https://elmanana.com.mx/escena/2026/11/17/karely-ruiz-cachetea-a-paolita-suarez-en-la-mansion-vip-2-video-184570.html",
-        "https://www.poresto.com/entretenimiento/television/2026/11/17/karely-ruiz-criticada-cachetear-paola-suarez-mansion-vip.html",
-        "https://superchannel12.com/espectaculos/bellakath-y-karely-ruiz-protagonizan-pelea-a-golpes-en-la-mansion-vip-710488"
+        "https://superchannel12.com/espectaculos/bellakath-y-karely-ruiz-protagonizan-pelea-a-golpes-en-la-mansion-vip-710488",
+        "https://www.poresto.com/entretenimiento/television/2026/11/17/karely-ruiz-criticada-cachetear-paola-suarez-mansion-vip.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyHD8sqRn41yGmU3K6ZoMTJScQT2bW1TvT7EHGeQHptgJEpWE3_KrdYM1hxFU",
       "image_credit": "El Mañana de Nuevo Laredo",
@@ -61,298 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyHD8sqRn41yGmU3K6ZoMTJScQT2bW1TvT7EHGeQHptgJEpWE3_KrdYM1hxFU"
         },
         {
-          "url": "https://www.poresto.com/entretenimiento/television/2026/11/17/karely-ruiz-criticada-cachetear-paola-suarez-mansion-vip.html",
-          "title": "Karely Ruiz es criticada tras cachetear a Paola Suárez en ‘La Mansión VIP’",
-          "publisher": "Por Esto!",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk3RD2Z5KLvuJCWG91RHVoVPXNcpAdnMyuR1G5jpSEQkRmT45IGGbfp2ZpJDE"
-        },
-        {
           "url": "https://superchannel12.com/espectaculos/bellakath-y-karely-ruiz-protagonizan-pelea-a-golpes-en-la-mansion-vip-710488",
           "title": "Bellakath y Karely Ruiz protagonizan pelea a golpes en La Mansión VIP",
           "publisher": "Super Channel 12",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUsI4wpNqz61mpRxIwGa1QeFEKoIinQiMEm5G49BcR3-NPCFn7euv_4sWaD3E"
-        }
-      ]
-    },
-    {
-      "query": "ziaire williams",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T06:20:00Z",
-      "related_news_urls": [
-        "https://lakeshowlife.com/lakers-face-tough-long-term-decision-between-ziaire-williams-matisse-thybulle",
-        "https://lakeshowlife.com/ziaire-williams-already-shaping-lakers-2027-offseason-plans",
-        "https://lakeshowlife.com/los-angeles-lakers-ziaire-williams-quickly-becoming-fourth-most-important-laker"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_dwCbRzqcHvJ70_fAi6EiHt-XWfwFhDe6mHc8TX5CkjTqIzRU3P_T-knT14",
-      "image_credit": "Lake Show Life",
-      "news": [
-        {
-          "url": "https://lakeshowlife.com/lakers-face-tough-long-term-decision-between-ziaire-williams-matisse-thybulle",
-          "title": "Lakers face tough long-term decision between Ziaire Williams, Matisse Thybulle",
-          "publisher": "Lake Show Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_dwCbRzqcHvJ70_fAi6EiHt-XWfwFhDe6mHc8TX5CkjTqIzRU3P_T-knT14"
         },
         {
-          "url": "https://lakeshowlife.com/ziaire-williams-already-shaping-lakers-2027-offseason-plans",
-          "title": "Ziaire Williams is already shaping the Lakers' 2027 offseason plans",
-          "publisher": "Lake Show Life",
+          "url": "https://www.poresto.com/entretenimiento/television/2026/11/17/karely-ruiz-criticada-cachetear-paola-suarez-mansion-vip.html",
+          "title": "Karely Ruiz es criticada tras cachetear a Paola Suárez en ‘La Mansión VIP’",
+          "publisher": "Por Esto!",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7YxUJuq6hytyBXAh1kSdiKt89erirqV1JvOLnwQTFBCCgUxGJTQL7prEQWkM"
-        },
-        {
-          "url": "https://lakeshowlife.com/los-angeles-lakers-ziaire-williams-quickly-becoming-fourth-most-important-laker",
-          "title": "Ziaire Williams is quickly becoming the fourth most important Laker",
-          "publisher": "Lake Show Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeRdohovMIKx13MoyGEjntJYLkTdZyLBw0DJRoB4n0eVlqr7tBGA3xPBe2QtE"
-        }
-      ]
-    },
-    {
-      "query": "jake laravia",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T06:20:00Z",
-      "related_news_urls": [
-        "https://www.silverscreenandroll.com/lakers-analysis/129044/jake-laravia-lakers-analysis-starting-lineup-stats",
-        "https://sports.yahoo.com/articles/lakers-matisse-thybulle-makes-eye-025744831.html",
-        "https://lakersnation.com/lakers-news-jj-redick-explains-why-he-likes-jake-laravia-in-starting-lineup/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxeByJffsh-W_BcCm7IJ9kyU_ZlbdxqayHzLYDfogxDNJQEyRYMjGfyp0pFyM",
-      "image_credit": "Silver Screen and Roll",
-      "news": [
-        {
-          "url": "https://www.silverscreenandroll.com/lakers-analysis/129044/jake-laravia-lakers-analysis-starting-lineup-stats",
-          "title": "Jake LaRavia is the glue to the Lakers’ starting lineup",
-          "publisher": "Silver Screen and Roll",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxeByJffsh-W_BcCm7IJ9kyU_ZlbdxqayHzLYDfogxDNJQEyRYMjGfyp0pFyM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/lakers-matisse-thybulle-makes-eye-025744831.html",
-          "title": "Lakers’ Matisse Thybulle makes eye-opening claim on Jake LaRavia’s overlooked quality",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRJNEleLXtFyKlAwGeRFgAhbWKCtOcr5YG8SZHIylK9i9FmmkU6hQwpaU1_5A"
-        },
-        {
-          "url": "https://lakersnation.com/lakers-news-jj-redick-explains-why-he-likes-jake-laravia-in-starting-lineup/",
-          "title": "Lakers News: JJ Redick Explains Why He Likes Jake LaRavia In Starting Lineup",
-          "publisher": "Lakers Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjPSIeilQJo_XB7V3YRm71CuT0QJ1S9xUwX_vhYSRnVcAK0cIoPuWvEEgBgBo"
-        }
-      ]
-    },
-    {
-      "query": "katt williams",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T06:20:00Z",
-      "related_news_urls": [
-        "https://www.complex.com/pop-culture/a/will-lavin/katt-williams-steve-harvey-beef-cedric-entertainer",
-        "https://www.theroot.com/katt-williams-explains-where-he-stands-with-kevin-hart-2000135501",
-        "https://eurweb.com/katt-williams-steve-harvey/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXIFHwlLxrHQkIygrCF-ZEtvVw9fR6YEoUd1y9ziYfEl5G1Hf7AhkroNyCWBI",
-      "image_credit": "Complex",
-      "news": [
-        {
-          "url": "https://www.complex.com/pop-culture/a/will-lavin/katt-williams-steve-harvey-beef-cedric-entertainer",
-          "title": "Katt Williams on His Comedy Beefs: 'If I See Steve Harvey I'm Going Straight for His Knees'",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXIFHwlLxrHQkIygrCF-ZEtvVw9fR6YEoUd1y9ziYfEl5G1Hf7AhkroNyCWBI"
-        },
-        {
-          "url": "https://www.theroot.com/katt-williams-explains-where-he-stands-with-kevin-hart-2000135501",
-          "title": "Katt Williams Explains Where He Stands With Kevin Hart Now, Drops More Tea in Ice Cube Interview",
-          "publisher": "The Root",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZLaahsFsBb2Pj87Ggq8HD5EZqLlk_7dJVGWP4eb2osVrBl0ricdJn3XtqaQ"
-        },
-        {
-          "url": "https://eurweb.com/katt-williams-steve-harvey/",
-          "title": "Katt Williams Still Wants Smoke with Steve Harvey, Reveals Kevin Hart Apology | WATCH",
-          "publisher": "EURweb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgwE-dfqP1tTzAmekka99_cN_zI1dtLsVABBi2jMT_n1qbotCOSchgYjQqyK0"
-        }
-      ]
-    },
-    {
-      "query": "spectrum outage",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-18T06:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/18/politics/tech-outages-trump-response",
-        "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
-        "https://www.axios.com/2026/11/17/tech-outages-ai-fears-internet-breaking"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzSkRJS2o3rH9El2m-XigUfpzSxlDmJt04Ael5tvDbp0ziUmLOo78uskUJDSg",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/18/politics/tech-outages-trump-response",
-          "title": "What should really scare Americans amid blitz of tech outages",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzSkRJS2o3rH9El2m-XigUfpzSxlDmJt04Ael5tvDbp0ziUmLOo78uskUJDSg"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
-          "title": "Widespread outages hit banks, air travel, the NSA and Apple, disrupting seemingly everything",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1VNwZORwg01k3PDHmiWoZ7_wrRGUNg6qCgzKDP-iOcAr-IIw27t5fucg0CZw"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/17/tech-outages-ai-fears-internet-breaking",
-          "title": "Why the internet suddenly broke all at once",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSo8ZhNRrQQkMseOaxzeSFB0TCWlS-l0ql85vbl3nEeCu-zCZt9yCvgT421MAo"
-        }
-      ]
-    },
-    {
-      "query": "collin sexton",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T06:10:00Z",
-      "related_news_urls": [
-        "https://www.theringer.com/2026/11/16/nba/luka-doncic-mvp-stats-points-los-angeles-lakers",
-        "https://sports.yahoo.com/articles/lakers-collin-sexton-perfect-response-220944033.html",
-        "https://slamonline.com/nba/luka-doncic-is-entering-ridiculous-territory/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWxIgxh7YUw9GSM7oJ-LuWm0vvOhhZj5oVFTBNpKQKpJSe7Zax9etJDqJR7Bc",
-      "image_credit": "The Ringer",
-      "news": [
-        {
-          "url": "https://www.theringer.com/2026/11/16/nba/luka-doncic-mvp-stats-points-los-angeles-lakers",
-          "title": "Apex Luka Is Even More Ridiculous Than We Could’ve Imagined",
-          "publisher": "The Ringer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWxIgxh7YUw9GSM7oJ-LuWm0vvOhhZj5oVFTBNpKQKpJSe7Zax9etJDqJR7Bc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/lakers-collin-sexton-perfect-response-220944033.html",
-          "title": "Lakers' Collin Sexton Has Perfect Response to Luka Doncic's MVP Chants",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPj7W-x1LuV0u0Av8lct4uzTp07s03gfTBYjQ_SFv-Z2hH3WpdcpaVwajmUBU"
-        },
-        {
-          "url": "https://slamonline.com/nba/luka-doncic-is-entering-ridiculous-territory/",
-          "title": "Luka Doncic Is Entering Ridiculous Territory",
-          "publisher": "SLAM Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7eK-cChh8Yf3hJIGqUg6ckL4qzaAYbAkfILhvqhL1rODQz0clJLZIxXtOKIg"
-        }
-      ]
-    },
-    {
-      "query": "cameron carr",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T06:10:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/lakers-cameron-carr-omitted-from-injury-report/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kyrie-irving-knee-downgraded-to-out-sunday",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/giannis-antetokounmpo-wirst-probable-saturday"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0Ap1INc7hTZupWD2BKkqXfpsxC7jYVkCV4Oyo_F77eLY3tt6Us72_KNctetM",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-cameron-carr-omitted-from-injury-report/",
-          "title": "Lakers' Cameron Carr: Omitted from injury report",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0Ap1INc7hTZupWD2BKkqXfpsxC7jYVkCV4Oyo_F77eLY3tt6Us72_KNctetM"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kyrie-irving-knee-downgraded-to-out-sunday",
-          "title": "Kyrie Irving (knee) downgraded to out Sunday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_1WAY8NWYt7Cqw0fdza_-qPxCIdhawEuCPQUnMNSfu9TubvwYFym_Tvs-1xA"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/giannis-antetokounmpo-wirst-probable-saturday",
-          "title": "Giannis Antetokounmpo (wirst) probable Saturday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ47YmOC-9SmgjMsECSfTdI3ZsGMvW6wHB7qWDarn0oicDj4Prm-jgLvnpCBvk"
-        }
-      ]
-    },
-    {
-      "query": "시애틀",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T06:10:00Z",
-      "related_news_urls": [
-        "https://www.seattlen.com/bbs/board.php?bo_table=hot&wr_id=70177",
-        "https://www.creditnews.kr/news/articleView.html?idxno=32676",
-        "https://www.worldkorean.net/news/articleView.html?idxno=58247"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQqo71BZgjk8lzgV897NUUxOfiab1xAG96tg9GNF840bD-xXRuH-ls7U5XOXM",
-      "image_credit": "SeattleN",
-      "news": [
-        {
-          "url": "https://www.seattlen.com/bbs/board.php?bo_table=hot&wr_id=70177",
-          "title": "시애틀 경찰에 ‘로봇개’ 등장…폭발물 처리 현장에 투입 > 시애틀 뉴스/핫이슈",
-          "publisher": "SeattleN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQqo71BZgjk8lzgV897NUUxOfiab1xAG96tg9GNF840bD-xXRuH-ls7U5XOXM"
-        },
-        {
-          "url": "https://www.creditnews.kr/news/articleView.html?idxno=32676",
-          "title": "美 시애틀 경찰, 5억원 폭발물처리 로봇개 '스팟' 투입",
-          "publisher": "한국신용신문",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHJbyTYMbfNUqQ6KMm32D-s6tnit39tiCxI3hRd3lEvKc4dRxVHWpie7bOMcE"
-        },
-        {
-          "url": "https://www.worldkorean.net/news/articleView.html?idxno=58247",
-          "title": "주시애틀총영사관, ‘AI와 에너지’ 주제로 포럼 개최",
-          "publisher": "월드코리안뉴스",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiewGo0sd_gUtdvR0n60hz4L1QfxRbRW-fTnFXLtt5ivQZQ1k65Jb9R3vOKRA"
-        }
-      ]
-    },
-    {
-      "query": "san jose weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T06:10:00Z",
-      "related_news_urls": [
-        "https://hoodline.com/2026/11/san-jose-gets-brief-break-before-midweek-storm-slam-monster-surf-at-mavericks/",
-        "https://hoodline.com/2026/11/san-jose-scores-one-sunny-day-before-midweek-storms-slam-south-bay/",
-        "https://hoodline.com/2026/11/sunny-san-jose-sizzles-to-79-before-friday-storm-drenches-bay-shoreline/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfgnFuEL6kwpfmC6T3XqMsdW4Db1B-a7Yz5yPIgMH8aTYGOjPymJKhmNG1XVs",
-      "image_credit": "Hoodline",
-      "news": [
-        {
-          "url": "https://hoodline.com/2026/11/san-jose-gets-brief-break-before-midweek-storm-slam-monster-surf-at-mavericks/",
-          "title": "San Jose Weather Forecast Rain Fog And Midweek Storms",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfgnFuEL6kwpfmC6T3XqMsdW4Db1B-a7Yz5yPIgMH8aTYGOjPymJKhmNG1XVs"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/san-jose-scores-one-sunny-day-before-midweek-storms-slam-south-bay/",
-          "title": "San Jose Weather: Midweek Storms Bring Rain And Thunderstorms",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREe2uvNLJyacKg4Q7Tv6DVcoz4EpKyhOAIGqYjKU2ZggqX81cRwk8kw_UnMGY"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/sunny-san-jose-sizzles-to-79-before-friday-storm-drenches-bay-shoreline/",
-          "title": "San Jose Weather Forecast Warm Tuesday Before Friday Rain",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR74gcLtvmBDiILsE7411IiRvSKFv7p4eTCSy7gpFDwMnUFIJMwRNq-jxmoxHg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk3RD2Z5KLvuJCWG91RHVoVPXNcpAdnMyuR1G5jpSEQkRmT45IGGbfp2ZpJDE"
         }
       ]
     }
