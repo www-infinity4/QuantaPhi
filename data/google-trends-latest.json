@@ -3,17 +3,192 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T09:01:28.052304Z",
+  "checked_at": "2026-11-18T09:31:30.159229Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "los angeles",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T09:10:00Z",
+      "related_news_urls": [
+        "https://abc7.com/post/nithya-raman-promised-big-changes-los-angeles-heres-how-mayor-elect-says-shell-do/20049415/",
+        "https://www.latimes.com/california/story/2026-11-10/latino-political-establishment-karen-bass",
+        "https://www.thecentersquare.com/california/article_26546e2d-43ff-493b-9bd1-5fbe4a06c365.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjCegjZNFgF2huOucMa1IObji3MeD9jhgMP7x82fHRDaTvtaXDDkYh_0556SQ",
+      "image_credit": "ABC7 Los Angeles",
+      "news": [
+        {
+          "url": "https://abc7.com/post/nithya-raman-promised-big-changes-los-angeles-heres-how-mayor-elect-says-shell-do/20049415/",
+          "title": "Nithya Raman promised big changes to Los Angeles. Here's how the mayor-elect says she'll do it",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjCegjZNFgF2huOucMa1IObji3MeD9jhgMP7x82fHRDaTvtaXDDkYh_0556SQ"
+        },
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-10/latino-political-establishment-karen-bass",
+          "title": "Commentary: Raman's victory was a resounding rebuke to L.A.'s Latino political establishment",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxpXHWlivugAixogmLnQDmRvbSPRpUIta54jOIGIxwRaWb_YeJ4UcCAHVFUI"
+        },
+        {
+          "url": "https://www.thecentersquare.com/california/article_26546e2d-43ff-493b-9bd1-5fbe4a06c365.html",
+          "title": "Mayor-elect Raman faces scrutiny from the left and the right",
+          "publisher": "The Center Square",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSru3wSvLdX9KzSWgkVviXyrMnINhj1mFT-De2UeitGHmtk9sLNfz2eM93SIy8"
+        }
+      ]
+    },
+    {
+      "query": "腾讯财报",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T09:00:00Z",
+      "related_news_urls": [
+        "https://m.sohu.com/a/1103250737_121157270?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "https://www.stheadline.com/zh-hans/stock-market/3638551/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E6%94%B6%E5%85%A52073%E4%BA%BF%E9%80%8A%E9%A2%84%E6%9C%9F-%E7%BB%8F%E8%B0%83%E6%95%B4%E5%88%A9%E6%B6%A6%E8%B7%8C6-%E7%8E%B0%E9%87%91%E6%B5%81%E8%B4%9F%E6%95%B0%E6%89%A9%E8%87%B3691%E4%BA%BF",
+        "https://longbridge.com/zh-CN/lives/354028"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNSdRdXFjPw3pTIWQUUHLjJaTTCQ2-ystGfI6aD_u4tTI-b31ZTzadydUyitY",
+      "image_credit": "Sohu",
+      "news": [
+        {
+          "url": "https://m.sohu.com/a/1103250737_121157270?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "腾讯控股Q3营收2073.4亿元，Hy4已达中国顶尖大模型水平",
+          "publisher": "Sohu",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNSdRdXFjPw3pTIWQUUHLjJaTTCQ2-ystGfI6aD_u4tTI-b31ZTzadydUyitY"
+        },
+        {
+          "url": "https://www.stheadline.com/zh-hans/stock-market/3638551/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E6%94%B6%E5%85%A52073%E4%BA%BF%E9%80%8A%E9%A2%84%E6%9C%9F-%E7%BB%8F%E8%B0%83%E6%95%B4%E5%88%A9%E6%B6%A6%E8%B7%8C6-%E7%8E%B0%E9%87%91%E6%B5%81%E8%B4%9F%E6%95%B0%E6%89%A9%E8%87%B3691%E4%BA%BF",
+          "title": "腾讯第三季收入2073亿逊预期 经调整利润跌6% 现金流负数扩至691亿",
+          "publisher": "星島頭條",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQa_hBTs6lc-h2d-LIFZ0pZ6vHBDxEUNVWSHuh2RXFAo9hTeEy04UipTBhSDM"
+        },
+        {
+          "url": "https://longbridge.com/zh-CN/lives/354028",
+          "title": "小鹏汽车-W (09868.HK，XPEV.US) 2026 年第三季度业绩电话会｜长桥证券",
+          "publisher": "Longbridge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLyBHpBgUU7lG8d-36z2UC5tM0b5ztt-88sqxNvF0SQtz6Gzo7i7f1u0hA1UU"
+        }
+      ]
+    },
+    {
+      "query": "car accident attorney",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T09:00:00Z",
+      "related_news_urls": [
+        "https://azbigmedia.com/business/law/5-car-accident-law-firms-in-onondaga-county-to-compare-before-hiring/",
+        "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-brooklyn/",
+        "https://www.khou.com/video/entertainment/television/programs/great-day-houston/sponsored-shariff-injury-lawyers-share-what-to-do-immediately-after-a-car-accident/285-1dac553c-2ebc-470f-a35a-a584b6dcac97"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStrfbXqVbtdbBJY72frlVCG6TaCG07W_-qsS4AImZHZL4UZtm1hv9aTSYcLpU",
+      "image_credit": "AZ Big Media",
+      "news": [
+        {
+          "url": "https://azbigmedia.com/business/law/5-car-accident-law-firms-in-onondaga-county-to-compare-before-hiring/",
+          "title": "5 car accident law firms in Onondaga County to compare before hiring",
+          "publisher": "AZ Big Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStrfbXqVbtdbBJY72frlVCG6TaCG07W_-qsS4AImZHZL4UZtm1hv9aTSYcLpU"
+        },
+        {
+          "url": "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-brooklyn/",
+          "title": "Brooklyn Crash Victims: Compare Local Injury Firms Before You Sign",
+          "publisher": "Lawyer Monthly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfWbyAjA5TPJ_2jJhz_fDQrU_MJe6IMC0rcN4svi-Ibz4EBLgHF8LiCzqhlyE"
+        },
+        {
+          "url": "https://www.khou.com/video/entertainment/television/programs/great-day-houston/sponsored-shariff-injury-lawyers-share-what-to-do-immediately-after-a-car-accident/285-1dac553c-2ebc-470f-a35a-a584b6dcac97",
+          "title": "Sponsored: Shariff Injury Lawyers share what to do immediately after a car accident",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRtr6VQZJ-3FF9Kajp-h3XBFVlgQVQL0Ni5CIJ09n4yYML3tr6uklyUWHX_1g"
+        }
+      ]
+    },
+    {
+      "query": "ban vs sa",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T08:50:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/sa-vs-ban-ryan-rickelton-lays-out-south-africa-s-plan-bat-long-get-a-lead-put-ball-in-their-court-1563004",
+        "https://www.cricbuzz.com/cricket-news/140950/riders-of-the-storm-will-control-wanderers-test-cricbuzzcom",
+        "https://sports.ndtv.com/cricket/south-africa-vs-bangladesh-live-score-1st-test-day-2-live-updates-sa-vs-ban-live-streaming-12332265"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQznPEfYUxyb0jH8RbTxuP3F_8yQejNOnTa9Euu3La06G-mp5zqDjxTkHEOlE",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/sa-vs-ban-ryan-rickelton-lays-out-south-africa-s-plan-bat-long-get-a-lead-put-ball-in-their-court-1563004",
+          "title": "Rickelton lays out South Africa's plan: 'Bat long, get a lead, put ball in their court'",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQznPEfYUxyb0jH8RbTxuP3F_8yQejNOnTa9Euu3La06G-mp5zqDjxTkHEOlE"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140950/riders-of-the-storm-will-control-wanderers-test-cricbuzzcom",
+          "title": "Riders of the storm will control Wanderers Test",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrNC5Stse8wtO_ZdIGVZK6L5A5UaEHlteQeMuhxuwLYAxPdifflUuCIO8yrhk"
+        },
+        {
+          "url": "https://sports.ndtv.com/cricket/south-africa-vs-bangladesh-live-score-1st-test-day-2-live-updates-sa-vs-ban-live-streaming-12332265",
+          "title": "South Africa vs Bangladesh 1st Test Day 2 Highlights",
+          "publisher": "NDTV Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdD8vDEXNLUGMvkbhrXt2hQI6ZQ8F_TBQdFATRUs2xhAbqTTBJ8sxE1OxUe7A"
+        }
+      ]
+    },
+    {
+      "query": "imelda marcos",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T08:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
+        "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
+        "https://www.reuters.com/world/china/trump-meet-marcos-manila-before-china-talks-2026-11-17/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnMkD9akFnSrFo33ioEPd45LaQm_zCSm9aFcIiSRO42mbBoLUPPrSf-B7HB-0",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
+          "title": "Trump Will Miss Most of the ASEAN Summit",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnMkD9akFnSrFo33ioEPd45LaQm_zCSm9aFcIiSRO42mbBoLUPPrSf-B7HB-0"
+        },
+        {
+          "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
+          "title": "Trump Asia trip live updates: Trump joins Philippine president for bilateral meeting",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0X9asJNwXOTYJ5xE7luvrGhdwYlVhWPiGO2rJK6Byy8egGz33MAM06EXFB3Q"
+        },
+        {
+          "url": "https://www.reuters.com/world/china/trump-meet-marcos-manila-before-china-talks-2026-11-17/",
+          "title": "Trump lauds defence alliance with Philippines ahead of China talks",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqs3dDx4iqq-l-UA4wmyFSkfwXpfcZz9XpnuWJHCE4By3HjDpSQSj9d9fCzLo"
+        }
+      ]
+    },
     {
       "query": "glastonbury",
       "approx_searches": "500+",
       "published_at": "2026-11-18T08:30:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/crwy4w381nlpo",
-        "https://www.theguardian.com/music/2026/nov/18/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century",
-        "https://www.rollingstone.com/music/music-news/harry-styles-billie-eilish-cher-glastonbury-lineup-2027-1235660230/"
+        "https://www.glastonburyfestivals.co.uk/news/glastonbury-2027-line-up-so-far/",
+        "https://www.theguardian.com/music/2026/nov/18/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgDxGwHzS8JZ8zbFf1Qnz3YiRokhffHUeD-UZcX-KjBuQK4OUNaYjvvwh0Z4c",
       "image_credit": "BBC",
@@ -26,18 +201,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgDxGwHzS8JZ8zbFf1Qnz3YiRokhffHUeD-UZcX-KjBuQK4OUNaYjvvwh0Z4c"
         },
         {
+          "url": "https://www.glastonburyfestivals.co.uk/news/glastonbury-2027-line-up-so-far/",
+          "title": "Glastonbury 2027 line-up so far",
+          "publisher": "Glastonbury Festivals",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTHfBzqh4o-FTGBJxCmsrex96Zdt7DMfA3r-hjfp9J-41c1zb2-8FDU2MxrkY"
+        },
+        {
           "url": "https://www.theguardian.com/music/2026/nov/18/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century",
           "title": "Sam Fender, Harry Styles and Billie Eilish to be youngest Glastonbury headliners of 21st century",
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_GWPzqhN9ipl6CcFnI5Zp-fxygwkhbLyRoAElLb4WAI-fVExHTSQD1EcwvxQ"
-        },
-        {
-          "url": "https://www.rollingstone.com/music/music-news/harry-styles-billie-eilish-cher-glastonbury-lineup-2027-1235660230/",
-          "title": "Harry Styles, Billie Eilish, Cher to Headline Glastonbury 2027",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1T0mekM1uMouTC8rf_4iYF9DHmS7UjpG0of4-Tsk6bm5P9y7eEJnvge8I33E"
         }
       ]
     },
@@ -46,26 +221,26 @@
       "approx_searches": "500+",
       "published_at": "2026-11-18T08:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nfl/article/madden-is-a-comedy-disguised-as-a-biopic-the-jokes-on-us-171247702.html",
         "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/",
+        "https://www.yahoo.com/entertainment/movies/articles/meet-cast-madden-movie-amazon-090001874.html",
         "https://www.forbes.com/sites/timlammers/2026/11/17/madden-rotten-tomatoes-reviews-sack-nicolas-cages-john-madden-biopic/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhVV9m8My1-dKZH40HGmIZ-idc7gaXwuOnVqe8WKtOg_-M66LBm9PicWZkP_0",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrcWfjrKpYCgQnUzWnEILQ5gYBrdD5Pm52ZkYWSY-hyMzX1ASDpYmu3uSA2jI",
+      "image_credit": "The Hollywood Reporter",
       "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/article/madden-is-a-comedy-disguised-as-a-biopic-the-jokes-on-us-171247702.html",
-          "title": "'Madden' is a comedy disguised as a biopic. The joke's on us",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhVV9m8My1-dKZH40HGmIZ-idc7gaXwuOnVqe8WKtOg_-M66LBm9PicWZkP_0"
-        },
         {
           "url": "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/",
           "title": "'Madden' Review: Nicolas Cage and Christian Bale in Football Biopic",
           "publisher": "The Hollywood Reporter",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrcWfjrKpYCgQnUzWnEILQ5gYBrdD5Pm52ZkYWSY-hyMzX1ASDpYmu3uSA2jI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/meet-cast-madden-movie-amazon-090001874.html",
+          "title": "Meet the cast of ‘Madden’ movie on Amazon, from Nicolas Cage to Shane Gillis",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5PUMfqpcmBo_swW5LwjUzAYOCSK6LhBXqX4_kz98dI_wgp7HOYh7YtvP67aQ"
         },
         {
           "url": "https://www.forbes.com/sites/timlammers/2026/11/17/madden-rotten-tomatoes-reviews-sack-nicolas-cages-john-madden-biopic/",
@@ -83,7 +258,7 @@
       "related_news_urls": [
         "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
         "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/ball-by-ball-commentary",
-        "https://www.newsbytesapp.com/news/sports/dane-paterson-shines-on-test-comeback/story"
+        "https://www.couriernews.com/sports/south-africa-bangladesh-cricket/image_89784b59-90a4-513e-8715-93c445d88cb5.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdSFWqVg6Bqs2dzxRniFHDL_zltcxE7Kju2ZJg9ZuIwmSsv42BepiusNoQP0",
       "image_credit": "Cricbuzz",
@@ -103,11 +278,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyfFrQpuRMUUEOAzDcjCVOpNDJLpMpxd7Jl71Wx_Ds73SjIF2eGtIm33ch-uE"
         },
         {
-          "url": "https://www.newsbytesapp.com/news/sports/dane-paterson-shines-on-test-comeback/story",
-          "title": "SA's Dane Paterson celebrates Test comeback with four-wicket haul: Stats",
-          "publisher": "NewsBytes",
+          "url": "https://www.couriernews.com/sports/south-africa-bangladesh-cricket/image_89784b59-90a4-513e-8715-93c445d88cb5.html",
+          "title": "South Africa Bangladesh Cricket",
+          "publisher": "couriernews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHQQfw7loGCgiIdgrVb8lRCTtOLk2vzZd5pjVU-1FWSjAaRakRGhuyjdjsJ-M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNK0FTMvTB3py70yEsMj8IBh-Yw6rUcOHrA5dZxQoCSQNGt5oWwfIMu9paQRc"
         }
       ]
     },
@@ -147,212 +322,37 @@
       ]
     },
     {
-      "query": "chris evans",
+      "query": "week 11 defense rankings",
       "approx_searches": "100+",
-      "published_at": "2026-11-18T08:10:00Z",
+      "published_at": "2026-11-18T08:20:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/articles/chris-evans-offer-clears-answer-213533534.html",
-        "https://www.imdb.com/news/ni66115940/?ref_=int_nwr_1",
-        "https://www.comingsoon.net/movies/news/2225639-avengers-doomsday-chris-evans-steve-rogers-changed-endgame"
+        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50506789/nfl-fantasy-football-rankings-2026-dst-defense",
+        "https://sports.yahoo.com/fantasy/article/week-11-fantasy-football-dst-rankings-top-defenses-from-justin-boone-181246198.html",
+        "https://www.nbcsports.com/fantasy/football/news/2026-fantasy-football-week-11-defense-dst-rankings-and-streamers"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-YgA5gdEb2PWgxZjupX7bSwOqugXQrcVQtjj32Tqs9F710e9XThfijelWb90",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRS6iDH1VsqyHFWYukoUZMraDhBvT4Zz82a5VhaX90CNO2xUv80kicufIWxkI",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/articles/chris-evans-offer-clears-answer-213533534.html",
-          "title": "Chris Evans Offer Clears Answer to if He’s Playing Captain America in Avengers: Doomsday",
-          "publisher": "Yahoo",
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50506789/nfl-fantasy-football-rankings-2026-dst-defense",
+          "title": "Fantasy football rankings for Week 11: D/ST",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-YgA5gdEb2PWgxZjupX7bSwOqugXQrcVQtjj32Tqs9F710e9XThfijelWb90"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRS6iDH1VsqyHFWYukoUZMraDhBvT4Zz82a5VhaX90CNO2xUv80kicufIWxkI"
         },
         {
-          "url": "https://www.imdb.com/news/ni66115940/?ref_=int_nwr_1",
-          "title": "Avengers: Doomsday Star Chris Evans On The Steve Rogers Pitches He Rejected And His Doctor Doom Rematch",
-          "publisher": "IMDb",
+          "url": "https://sports.yahoo.com/fantasy/article/week-11-fantasy-football-dst-rankings-top-defenses-from-justin-boone-181246198.html",
+          "title": "Week 11 Fantasy Football D/ST Rankings: Top defenses from Justin Boone",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDVZbUtykmc4gR63vG-TK9I9rTGnJB7KFOiOpPoWj8LmelbS_7IWfEym37kCA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCsLOpxdz9HSRMD3lK0GKPTB3Iz9IkRrIr3XMGklhlWOLW9VnEc-DEaynqZiQ"
         },
         {
-          "url": "https://www.comingsoon.net/movies/news/2225639-avengers-doomsday-chris-evans-steve-rogers-changed-endgame",
-          "title": "Avengers: Doomsday’s Chris Evans Reveals How Steve Rogers Has Changed Since Endgame",
-          "publisher": "ComingSoon.net",
+          "url": "https://www.nbcsports.com/fantasy/football/news/2026-fantasy-football-week-11-defense-dst-rankings-and-streamers",
+          "title": "2026 Fantasy Football Week 11 Defense (DST) Rankings and Streamers",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAlbeKnpx37WlpbBWQ551VLjeWFE-b3XckUlaHXZVT6HZ-O6V5zE4qGCBIntw"
-        }
-      ]
-    },
-    {
-      "query": "new zealand breakers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T08:00:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/new-zealand-breakers-vs-south-east-melbourne-phoenix-prediction-odds-2026-11-18/",
-        "https://www.basketball.com.au/news/supercoach-nbl-pods-ultimate-round-10-guide",
-        "https://www.beforeyoubet.com.au/nbl27-round-10-predictions-tips"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/new-zealand-breakers-vs-south-east-melbourne-phoenix-prediction-odds-2026-11-18/",
-          "title": "New Zealand Breakers vs South East Melbourne Phoenix Prediction, Betting Tips & Odds | 17 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
-        },
-        {
-          "url": "https://www.basketball.com.au/news/supercoach-nbl-pods-ultimate-round-10-guide",
-          "title": "SuperCoach NBL PODs: Ultimate Round 10 Guide",
-          "publisher": "Basketball.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0fL-EkLyeqUuCTk8I66aLJTFKJhvZljBt69YMB0YC9h0-UOcCM_pZo8JfCeE"
-        },
-        {
-          "url": "https://www.beforeyoubet.com.au/nbl27-round-10-predictions-tips",
-          "title": "NBL27 Round 10 Predictions & Tips",
-          "publisher": "Before You Bet",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7HNfsdO7_wqEh1YoZC1LVA3lOy7GtD_Ok7m9ZM0EKghmIbNF_5XcDdxbTrpY"
-        }
-      ]
-    },
-    {
-      "query": "ign",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T08:00:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/17/the-hunger-games-sunrise-on-the-reaping-review-surreally-awful-prequel-to-the-katniss-everdeen-era",
-        "https://editorial.rottentomatoes.com/article/the-hunger-games-sunrise-on-the-reaping-first-reviews/",
-        "https://www.nytimes.com/2026/11/17/movies/the-hunger-games-sunrise-on-the-reaping-review.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkVjGYwcIl5kYAfimN8ITtqvYWcyZrXPzol27Xh7EgHCWplso4j3YyYrXdg3g",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/17/the-hunger-games-sunrise-on-the-reaping-review-surreally-awful-prequel-to-the-katniss-everdeen-era",
-          "title": "The Hunger Games: Sunrise on the Reaping review – surreally awful prequel to the Katniss Everdeen era",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkVjGYwcIl5kYAfimN8ITtqvYWcyZrXPzol27Xh7EgHCWplso4j3YyYrXdg3g"
-        },
-        {
-          "url": "https://editorial.rottentomatoes.com/article/the-hunger-games-sunrise-on-the-reaping-first-reviews/",
-          "title": "The Hunger Games: Sunrise on the Reaping First Reviews: A Familiar but Thrilling Return to Form",
-          "publisher": "Rotten Tomatoes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsMvecUHzK32_Vfot4kE3oky0Ii3C_iH2Tkuso8F0tcPboQX6H0Qqyrq-FED4"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/17/movies/the-hunger-games-sunrise-on-the-reaping-review.html",
-          "title": "‘The Hunger Games: Sunrise on the Reaping’ Review: Another Tribute",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd2n6UTK7-56SXyngxv0N3jeu7JLCANu0DK5oR8KqJLJCjqm70MOK7lyotOv0"
-        }
-      ]
-    },
-    {
-      "query": "red flag (fire weather) warning",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T07:50:00Z",
-      "related_news_urls": [
-        "https://kdvr.com/weather/weather-forecast/denver-weather-high-wind-mountain-snow-moving-in/",
-        "https://www.cbsnews.com/colorado/video/fire-restrictions-in-place-as-high-winds-move-into-colorado/",
-        "https://www.9news.com/video/weather/forecast/denver-front-range-colorado-weather-forecast/73-5b3210b5-1788-4d80-8065-5f0464258afa"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHs9z7YIKCeYyGRiOrPmVpwvr-ap2Ctj87QYCtlagSUMvvvms_RU8o8sDFas",
-      "image_credit": "KDVR",
-      "news": [
-        {
-          "url": "https://kdvr.com/weather/weather-forecast/denver-weather-high-wind-mountain-snow-moving-in/",
-          "title": "Denver weather: High wind, mountain snow moving in",
-          "publisher": "KDVR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHs9z7YIKCeYyGRiOrPmVpwvr-ap2Ctj87QYCtlagSUMvvvms_RU8o8sDFas"
-        },
-        {
-          "url": "https://www.cbsnews.com/colorado/video/fire-restrictions-in-place-as-high-winds-move-into-colorado/",
-          "title": "Fire restrictions in place as high winds move into Colorado",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGlxCWNRo8iiY2uKzvSIXVkTwvCMY8rtY6WjoeVcLL_jfSgpinMtw0mSO-1MY"
-        },
-        {
-          "url": "https://www.9news.com/video/weather/forecast/denver-front-range-colorado-weather-forecast/73-5b3210b5-1788-4d80-8065-5f0464258afa",
-          "title": "Latest forecast | Denver Fire Weather Watch Wednesday ahead of mountain storm and snow",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3eZgQhDogX0zDbaxEqGz7lux8g5QKYRzWhPk81lv4MAZTNe6AdoJvp-tn23U"
-        }
-      ]
-    },
-    {
-      "query": "ps5 black friday deals",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T07:50:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/best-early-black-friday-playstation-live-deals-2026",
-        "https://consequence.net/2026/11/best-black-friday-ps5-game-deals-2026/",
-        "https://www.polygon.com/black-friday-2026-amazon-gaming-deals-when-ps5-ps5-xbox-nintendo-switch/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfrNgKSOFEziVcJb8bCetU674eiptDIbCaoo8hR6N4Pw2r1-NupTMTP1skzw",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/best-early-black-friday-playstation-live-deals-2026",
-          "title": "The best early Black Friday PlayStation deals: PS5 games, cheap controllers, and more",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfrNgKSOFEziVcJb8bCetU674eiptDIbCaoo8hR6N4Pw2r1-NupTMTP1skzw"
-        },
-        {
-          "url": "https://consequence.net/2026/11/best-black-friday-ps5-game-deals-2026/",
-          "title": "Skipping GTA 6? Save Up to 59% on Other Top PS5 Games for Black Friday",
-          "publisher": "Consequence of Sound",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRDndf883A9m0fdezBYGEAg2cMlw13diiV6eAEkOTaG2uJiaU4mcGyDY4ZB90"
-        },
-        {
-          "url": "https://www.polygon.com/black-friday-2026-amazon-gaming-deals-when-ps5-ps5-xbox-nintendo-switch/",
-          "title": "Amazon Officially Reveals Early Black Friday Gaming Deals",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8f6UE6gAmzVDwp5pSk3sWSbcwef9yPNh3bub_sBzh8Emn1nS-bW342w9414"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 new screenshots",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T07:40:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/gta-6-weather-images",
-        "https://tech.yahoo.com/gaming/articles/rockstar-confident-gta-6s-weather-220448101.html",
-        "https://80.lv/articles/the-weather-channel-has-shared-new-screenshots-of-gta-6-s-dynamic-weather"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfSj5PJgYTTO2gKBGVC4CAkqtSBXpOzlv3jpRVAstyhif4hbUpt8-A_WaYv00",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/gta-6-weather-images",
-          "title": "What's the weather forecast for 'GTA 6'? The Weather Channel has a preview.",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfSj5PJgYTTO2gKBGVC4CAkqtSBXpOzlv3jpRVAstyhif4hbUpt8-A_WaYv00"
-        },
-        {
-          "url": "https://tech.yahoo.com/gaming/articles/rockstar-confident-gta-6s-weather-220448101.html",
-          "title": "Rockstar is so confident in GTA 6's weather it has The Weather Channel itself sharing screenshots",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeJp4amkG-TKWGTVBV_fhdp0SDeKRr_46WMu9S00ajIQY90IkpNJTsKsDlB2c"
-        },
-        {
-          "url": "https://80.lv/articles/the-weather-channel-has-shared-new-screenshots-of-gta-6-s-dynamic-weather",
-          "title": "The Weather Channel Has Shared New Screenshots of GTA 6's Dynamic Weather",
-          "publisher": "80 Level",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpJI-8EPyADmuIGvcr7nGAt7PCb0dI5ACF8wULIqsb9YJeaBGPiQh5lFf_kN0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhxKGn2y9B_oNmqdaR_sbYRnm4iPXDmT15VgWLqf83jFBRK0SP2Mv1PEuyjrI"
         }
       ]
     }
