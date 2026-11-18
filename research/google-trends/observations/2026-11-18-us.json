@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T23:01:23.625046Z",
+  "checked_at": "2026-11-18T23:31:26.472036Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "the oak ridge boys",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T22:30:00Z",
+      "query": "bucks vs heat",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T23:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/14/obituaries/richard-sterban-dead.html",
-        "https://fox17.com/news/local/oak-ridge-boys-member-dies-in-tennessee-after-cancer-battle",
-        "https://www.cbsnews.com/video/passage-in-memoriam-111526/"
+        "https://www.cbssports.com/nba/news/regrading-giannis-antetokounmpo-trade-heat-bucks/",
+        "https://sports.yahoo.com/articles/watch-bucks-vs-heat-live-230000585.html",
+        "https://www.nytimes.com/athletic/7788626/2026/11/17/giannis-antetokounmpo-bucks-heat-trade-nba/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdfRT0qh48g9Lzl2eW9kZcFudwuUQuW0J_GhCtMLJjZvYCxz6YaHfu1r2_tH0",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2Qxh-RBCEqFdBnnvAs9BN1BXSt2TBWKAMH1pr_2lkD0ur6uuWpFYiMX5NUlw",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/nba/news/regrading-giannis-antetokounmpo-trade-heat-bucks/",
+          "title": "Re-grading the Giannis Antetokounmpo trade: Why the Heat and Bucks both look much worse now",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2Qxh-RBCEqFdBnnvAs9BN1BXSt2TBWKAMH1pr_2lkD0ur6uuWpFYiMX5NUlw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-bucks-vs-heat-live-230000585.html",
+          "title": "How to watch Bucks vs Heat: Live stream NBA, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIlSfE4kex0Dq39xmuy87wVtzRHSW3eYd0hqW-DZws5_QTIQ9I1BaMj8iCXTk"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7788626/2026/11/17/giannis-antetokounmpo-bucks-heat-trade-nba/",
+          "title": "Giannis Antetokounmpo calls Heat-Bucks ‘just basketball,’ ‘just another game’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBVAlAH3lTWgvJBtVTmZFGhQLz2a8irRrDwPL-P9zqPhjvM6OaApCDM21AE6g"
+        }
+      ]
+    },
+    {
+      "query": "rockets vs pacers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T23:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/november-18th-injury-report-houston-205854810.html",
+        "https://www.thedreamshake.com/rockets-game-previews/42600/houston-rockets-vs-indiana-pacers-game-preview",
+        "https://www.si.com/nba/pacers/onsi/pacers-seek-to-extend-home-streak-vs-durant-s-rockets-preview-starters-injuries-how-to-watch-01m7r2f83tev"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgJ0mf6MHgkO0ucyK-ZBhA6Xz3iKXiEckdldys16dIZqUJNa6qhN8-_7wmVho",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/november-18th-injury-report-houston-205854810.html",
+          "title": "November 18th Injury Report for Houston Rockets vs. Indiana Pacers",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgJ0mf6MHgkO0ucyK-ZBhA6Xz3iKXiEckdldys16dIZqUJNa6qhN8-_7wmVho"
+        },
+        {
+          "url": "https://www.thedreamshake.com/rockets-game-previews/42600/houston-rockets-vs-indiana-pacers-game-preview",
+          "title": "Houston Rockets vs. Indiana Pacers game preview",
+          "publisher": "The Dream Shake",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGeBfmSAwhciXeGT5J8_o6mp7JwhyFCLcqISH9tz7JQ4WGq-Z3MYgVsCTztoA"
+        },
+        {
+          "url": "https://www.si.com/nba/pacers/onsi/pacers-seek-to-extend-home-streak-vs-durant-s-rockets-preview-starters-injuries-how-to-watch-01m7r2f83tev",
+          "title": "Pacers seek to extend home streak vs. Durant's Rockets: Preview, Starters, Injuries, How to Watch",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd5_zloOj1BRiL73Cf6qLxBqqzHWgB-ShjfdK53unKeqxdGbhU3HuvY8WZ1Zc"
+        }
+      ]
+    },
+    {
+      "query": "76ers vs magic",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T23:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/franz-wagner-magic-biggest-statement-185057625.html",
+        "https://sixers.com/news/sixers-at-magic-game-preview-injury-report-and-how-to-watch-11-18-2026",
+        "https://www.libertyballers.com/76ers-game-previews/102197/sixers-head-to-orlando-for-showdown-with-franz-wagner-and-the-magic"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJvhR0lOMFC07g9IZmll-9z31RpskdttGHG8BAAoVd6THyHOCgFrSCA-qVcA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/franz-wagner-magic-biggest-statement-185057625.html",
+          "title": "How Franz Wagner, Magic Can Make Biggest Statement Against LeBron James, 76ers",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJvhR0lOMFC07g9IZmll-9z31RpskdttGHG8BAAoVd6THyHOCgFrSCA-qVcA"
+        },
+        {
+          "url": "https://sixers.com/news/sixers-at-magic-game-preview-injury-report-and-how-to-watch-11-18-2026",
+          "title": "Philadelphia 76ers Visit Orlando Magic Wednesday Night",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9tiPtuBzrQGxa196Z1EQFPPKfaHYVgiQl51pTPyEgWoyDbyy_baOiXa3qqV0"
+        },
+        {
+          "url": "https://www.libertyballers.com/76ers-game-previews/102197/sixers-head-to-orlando-for-showdown-with-franz-wagner-and-the-magic",
+          "title": "Sixers head to Orlando for showdown with Franz Wagner and the Magic",
+          "publisher": "Liberty Ballers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgB_ZVt0XHr2rmBx9MxVUgC5F5Ul-Vcs5oA6SX0-49U3fhOFCnSpHU_sarMqQ"
+        }
+      ]
+    },
+    {
+      "query": "grizzlies vs cavaliers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T23:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/grizzlies-vs-cavaliers-preview-3-212249801.html",
+        "https://www.cleveland.com/cavs/2026/11/cavs-vs-grizzlies-preview-odds-injury-report-tv.html",
+        "https://www.commercialappeal.com/story/sports/nba/grizzlies/2026/11/18/memphis-grizzlies-cavs-score-updates-cam-boozer-james-harden-highlights--live/92845514007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzI-UzQ96FnK20pBIHxTgHNtWJpPXGpfCp4lVl0z_UC8H-1aBwd__p5lI_w5Q",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/grizzlies-vs-cavaliers-preview-3-212249801.html",
+          "title": "Grizzlies vs. Cavaliers Preview: 3 Things To Watch In Bid For Record Road Win",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzI-UzQ96FnK20pBIHxTgHNtWJpPXGpfCp4lVl0z_UC8H-1aBwd__p5lI_w5Q"
+        },
+        {
+          "url": "https://www.cleveland.com/cavs/2026/11/cavs-vs-grizzlies-preview-odds-injury-report-tv.html",
+          "title": "Cavs vs. Grizzlies: preview, odds, injury report, TV",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMrng8273jeYTCzFpRH4K-Sb4SGNrhFxZGZKeUrC7o3dpCh35uZwSIRyK0s5w"
+        },
+        {
+          "url": "https://www.commercialappeal.com/story/sports/nba/grizzlies/2026/11/18/memphis-grizzlies-cavs-score-updates-cam-boozer-james-harden-highlights--live/92845514007/",
+          "title": "Grizzlies vs Cavs score updates, Cam Boozer, James Harden highlights",
+          "publisher": "The Commercial Appeal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRsirYpsQgyS1w3SScbMat1fvq_HGQtIFbyJB6F2Xsozzy7TkvJBHjO-0SEk8"
+        }
+      ]
+    },
+    {
+      "query": "hakeem jeffries",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T23:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
+        "https://www.cbsnews.com/chicago/video/house-dems-nominate-hakeem-jeffries-for-speaker-putting-him-on-track-to-be-the-first-black-speaker/",
+        "https://www.nbcnews.com/politics/politics-news/hakeem-jeffries-defectors-reveal-limits-power-politics-desk-rcna610100"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/14/obituaries/richard-sterban-dead.html",
-          "title": "Richard Sterban, the Bass Singer for the Oak Ridge Boys, Dies at 83",
+          "url": "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
+          "title": "Democrats Nominate Jeffries as Speaker, Making History",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdfRT0qh48g9Lzl2eW9kZcFudwuUQuW0J_GhCtMLJjZvYCxz6YaHfu1r2_tH0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI"
         },
         {
-          "url": "https://fox17.com/news/local/oak-ridge-boys-member-dies-in-tennessee-after-cancer-battle",
-          "title": "Oak Ridge Boys member dies in Tennessee after cancer battle",
-          "publisher": "WZTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS1PjFAvnAhR8vzpNMSVLOHf-1JobyiryhRwC-ow0KSwC0nT89unVe4P2VogQ"
-        },
-        {
-          "url": "https://www.cbsnews.com/video/passage-in-memoriam-111526/",
-          "title": "Passage: In memoriam",
+          "url": "https://www.cbsnews.com/chicago/video/house-dems-nominate-hakeem-jeffries-for-speaker-putting-him-on-track-to-be-the-first-black-speaker/",
+          "title": "House Dems nominate Hakeem Jeffries for speaker, putting him on track to be the first Black speaker",
           "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrUdNBnRMdtWRUDPUeiUeh6dWqeTSVgmv8QeBsqQI-EkQQZDsh-P7LY9gy_JI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsbZZOhGWbk5JYozuknJNtk3cJaEQkpvlKG5Z2DiLgZBrfrSgCaRf2Cs4sZmc"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/politics-news/hakeem-jeffries-defectors-reveal-limits-power-politics-desk-rcna610100",
+          "title": "Hakeem Jeffries’ progressive defectors reveal the limits of their power: From the Politics Desk",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjHwnW0dPcfL3h5QIxyi-AYWaKGZE4TMQ_IFGjctWCUhrUHy5rki-zO8OGGc"
         }
       ]
     },
     {
-      "query": "chendall weaver",
+      "query": "kyle isbel",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T22:30:00Z",
+      "published_at": "2026-11-18T23:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/houston-guard-chendall-weaver-could-203001815.html",
-        "https://www.houstonchronicle.com/sports/college/cougars/article/chendall-weaver-eligibility-fifth-year-22537743.php"
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-18/sonny-gray-signs-two-year-deal-with-twins",
+        "https://www.royalsreview.com/kansas-city-royals-news/108270/kyle-isbel-designated-for-assignment",
+        "https://www.mlbtraderumors.com/2026/11/royals-designate-kyle-isbel-for-assignment.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkujCZ7O2qWKu-QbbNwfXTquTEQ1gr9m6Rh0oGHEvcRMRR_LfeKBPHnh9xUs",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_jKBR4f9g368A7Ipo7vfz0dfVMVT04EgjoFNDP0otPiVM0q4XcjPIC1BlySo",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/houston-guard-chendall-weaver-could-203001815.html",
-          "title": "Houston Guard Chendall Weaver Could Play an Important Role in Las Vegas",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-18/sonny-gray-signs-two-year-deal-with-twins",
+          "title": "Sonny Gray signs two-year deal with Twins",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkujCZ7O2qWKu-QbbNwfXTquTEQ1gr9m6Rh0oGHEvcRMRR_LfeKBPHnh9xUs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_jKBR4f9g368A7Ipo7vfz0dfVMVT04EgjoFNDP0otPiVM0q4XcjPIC1BlySo"
         },
         {
-          "url": "https://www.houstonchronicle.com/sports/college/cougars/article/chendall-weaver-eligibility-fifth-year-22537743.php",
-          "title": "UH guard Chendall Weaver has hearing to see if he can keep playing for Cougars",
-          "publisher": "Houston Chronicle",
+          "url": "https://www.royalsreview.com/kansas-city-royals-news/108270/kyle-isbel-designated-for-assignment",
+          "title": "Kyle Isbel designated for assignment",
+          "publisher": "Royals Review",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbRTMAI6E4pl_kbo0uqSTUSnsC6V6OL0VbeKXA0gg5Y4l_EZbFCUdtuerbeBU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj9jxCzjQCwqgBjqoJuDAhvedNQObpN_R0NFJ7Oq3WkUUa1Ba7TD9hOo3R4yY"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/royals-designate-kyle-isbel-for-assignment.html",
+          "title": "Royals Designate Kyle Isbel For Assignment",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOrlA--bwJxX3hzIQvJ_tjQshU_9Czh1AtWlwiw72AifiBVphrRNDpjgTDSVU"
         }
       ]
     },
     {
-      "query": "dow jones industrial average",
+      "query": "grand theft auto: san andreas",
       "approx_searches": "5000+",
-      "published_at": "2026-11-18T22:20:00Z",
+      "published_at": "2026-11-18T22:50:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/17/stock-market-today-live-updates.html",
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-18-2026",
-        "https://www.bloomberg.com/news/articles/2026-11-17/stock-market-today-dow-s-p-live-updates"
+        "https://kotaku.com/wow-gta-6-has-some-incredible-animations-2000756295",
+        "https://www.ign.com/articles/a-gta-6-location-was-teased-by-rockstar-all-the-way-back-in-2021-and-whats-inside-was-worth-the-wait",
+        "https://www.gamespot.com/articles/gta-6-has-a-hilarious-riff-on-easter-eggs/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_vCmWPB9szSUFkXF_5GKwHF5Yg-kNDsyQGz5Q5vFv5XMxOvefPc0g45V74I",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj_PhzM6sc0Guizy8-nHBoydFMv2McqbXw_3G5qpwi4cJf2OV0e92W7iKm22Y",
+      "image_credit": "Kotaku",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/17/stock-market-today-live-updates.html",
-          "title": "Dow drops more than 500 points; S&P 500 falls for fifth day as Nvidia sells off: Live updates",
-          "publisher": "CNBC",
+          "url": "https://kotaku.com/wow-gta-6-has-some-incredible-animations-2000756295",
+          "title": "Wow, GTA 6 Has Some Incredible Animations",
+          "publisher": "Kotaku",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_vCmWPB9szSUFkXF_5GKwHF5Yg-kNDsyQGz5Q5vFv5XMxOvefPc0g45V74I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj_PhzM6sc0Guizy8-nHBoydFMv2McqbXw_3G5qpwi4cJf2OV0e92W7iKm22Y"
         },
         {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-18-2026",
-          "title": "Stock Market Today: Dow Falls as Nvidia Earnings Fail to Soothe Investors' Nerves",
-          "publisher": "WSJ",
+          "url": "https://www.ign.com/articles/a-gta-6-location-was-teased-by-rockstar-all-the-way-back-in-2021-and-whats-inside-was-worth-the-wait",
+          "title": "Five-Year-Old GTA 6 Theory Has Been Officially Confirmed, With a Hilarious Twist",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyjMTKpb0c1HQFcZvT8SyCc--KV-PXeKjIXiGwmSxuT6A4td1POlKXvargBHE"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-17/stock-market-today-dow-s-p-live-updates",
-          "title": "Stocks Fall as Nvidia’s Earnings Rally Sputters: Markets Wrap",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.gamespot.com/articles/gta-6-has-a-hilarious-riff-on-easter-eggs/",
+          "title": "GTA 6 Has A Hilarious Riff On Easter Eggs",
+          "publisher": "GameSpot",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_u_R0OHAx_N6TUuugc3CHRi5qBRNirwYYQv1XyHG1GVT9QgCJYt50R0cu2E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxibwTd6Ia-gD9zmi_ypD1FrNARbk8wamQUdhESLlSIAiZqhmHATZ-Eyv0u2U"
         }
       ]
     },
     {
-      "query": "heshimu evans",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T22:20:00Z",
+      "query": "flamengo vs athletico-pr",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T22:50:00Z",
       "related_news_urls": [
-        "https://www.wkyt.com/2026/11/18/former-kentucky-wildcat-basketball-star-arrested-assault/",
-        "https://www.kentucky.com/news/local/crime/article318133153.html",
-        "https://www.lex18.com/news/covering-kentucky/in-your-community/lexington-metro/former-university-of-kentucky-basketball-star-arrested-for-domestic-violence"
+        "https://www.sportsmole.co.uk/football/flamengo/preview/flamengo-vs-athletico-pr-prediction-team-news-lineups_609284.html",
+        "https://cwibc.co.id/en/flamengo-athletico-title-race",
+        "https://suaragarut.id/en/flamengo-athletico-maracana-brasileirao"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo1tnvco8v2YEuwBX-S2UKxQUKrOedUF8kMk8_ln18citqgvmrGZhP6ywmCIg",
-      "image_credit": "WKYT",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE--LJUxR16v7SHI-EnNYweSqdVqtWJygo3NKNplNX8pbYvrD6EFk8oru-xVU",
+      "image_credit": "Sports Mole",
       "news": [
         {
-          "url": "https://www.wkyt.com/2026/11/18/former-kentucky-wildcat-basketball-star-arrested-assault/",
-          "title": "Former Kentucky Wildcat Basketball star arrested for Assault",
-          "publisher": "WKYT",
+          "url": "https://www.sportsmole.co.uk/football/flamengo/preview/flamengo-vs-athletico-pr-prediction-team-news-lineups_609284.html",
+          "title": "Preview: Flamengo vs Athletico Paranaense - prediction, team news, lineups",
+          "publisher": "Sports Mole",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo1tnvco8v2YEuwBX-S2UKxQUKrOedUF8kMk8_ln18citqgvmrGZhP6ywmCIg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE--LJUxR16v7SHI-EnNYweSqdVqtWJygo3NKNplNX8pbYvrD6EFk8oru-xVU"
         },
         {
-          "url": "https://www.kentucky.com/news/local/crime/article318133153.html",
-          "title": "Former Kentucky Wildcats basketball player charged with domestic violence",
-          "publisher": "Lexington Herald Leader",
+          "url": "https://cwibc.co.id/en/flamengo-athletico-title-race",
+          "title": "Flamengo Host Athletico Paranaense in Brazilian Title Race",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsnQSFoQGMb7l3hU1jY4Yl3y8VPTgPLNixGWVEdMbv3xVMIZSy12WnvdMA5HU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcj7LlJxnCCUGHBvMSEYLRhUzvYjdxatXetqMZDIh6KdXuy9bcr55fbAIygTA"
         },
         {
-          "url": "https://www.lex18.com/news/covering-kentucky/in-your-community/lexington-metro/former-university-of-kentucky-basketball-star-arrested-for-domestic-violence",
-          "title": "Former University of Kentucky basketball star arrested for domestic violence",
-          "publisher": "LEX 18 News",
+          "url": "https://suaragarut.id/en/flamengo-athletico-maracana-brasileirao",
+          "title": "Flamengo Field Full Strength Against Athletico PR at Maracana",
+          "publisher": "SuaraGarut.ID",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCePtOe23ry5zBWGLmaAoL2qH7ZgcIFtR5xMXlkaMRI0cIwh9hz_Z6aTPAhc0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIbl-rN7EErkjVQ-W7glUdFhK77AyjyJ1Xabc1KvySy-EcMpmX5EFxW5sj3kQ"
         }
       ]
     },
     {
-      "query": "dadeschools",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-18T22:10:00Z",
+      "query": "cruzeiro vs palmeiras",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T22:50:00Z",
       "related_news_urls": [
-        "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
-        "https://www.local10.com/weather/2026/11/18/miami-dade-public-schools-to-close-thursday-taking-this-on-a-day-by-day-basis/",
-        "https://www.miamiherald.com/news/local/education/article318145212.html"
+        "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/18-11-2026/cruzeiro-palmeiras.ghtml",
+        "https://www.otempo.com.br/sports/cruzeiro/2026/11/18/cruzeiro-fecha-parceria-com-a-unilever-e-lanca-produtos-personalizados-para-a-torcida",
+        "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-mineiro/cruzeiro/cruzeiro-e-patrocinador-lancam-linha-de-produtos-personalizados-e-pedro-lourenco-reage/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk",
-      "image_credit": "NBC 6 South Florida",
-      "news": [
-        {
-          "url": "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
-          "title": "Live updates: Broward and Miami-Dade public schools to remain closed Thursday due to flooding",
-          "publisher": "NBC 6 South Florida",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk"
-        },
-        {
-          "url": "https://www.local10.com/weather/2026/11/18/miami-dade-public-schools-to-close-thursday-taking-this-on-a-day-by-day-basis/",
-          "title": "Miami-Dade public schools to close Thursday: ‘Taking this on a day-by-day basis’",
-          "publisher": "WPLG Local 10",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtu_au3R5Sx833HOQ5XlzV9qY_2GlMt91_GUj_JnHQk2kukSrCGvsDrM3BrxE"
-        },
-        {
-          "url": "https://www.miamiherald.com/news/local/education/article318145212.html",
-          "title": "Miami-Dade schools to close Thursday after more than 24 hours of heavy rain",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYE4tux0oowYGp8wMey5x5yi8SxNyWAywipAhuaPRRHMT6Jm8E3RZDPE4eB0"
-        }
-      ]
-    },
-    {
-      "query": "coritiba vs santos",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T22:10:00Z",
-      "related_news_urls": [
-        "https://ge.globo.com/pr/futebol/brasileirao-serie-a/noticia/2026/11/18/coritiba-x-santos-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://www.bemparana.com.br/noticias/parana/neymar-causa-euforia-em-curitiba-antes-de-jogo-contra-o-coritiba/",
-        "https://esportes.r7.com/futebol/campeonato-brasileiro-serie-a/conteudo-digital/pre-e-pos-jogo/video/cuca-reforca-comprometimento-do-peixao-antes-de-enfrentar-o-coritiba-nao-demos-folga-18112026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNxExrbJ6Gm8RYrLd-th0eYjGnyk_neEth5N2AC2fH8V02zWQBBpZYpBq-iyE",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS4CQktHlhugZtAEt8-FAV4NgVo6PsbEMTcYomXbIyHtpD51LwgP2ClRGD2NQ",
       "image_credit": "ge",
       "news": [
         {
-          "url": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/noticia/2026/11/18/coritiba-x-santos-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-          "title": "Coritiba x Santos: onde assistir ao vivo, horário e escalações",
+          "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/18-11-2026/cruzeiro-palmeiras.ghtml",
+          "title": "Ao vivo: Cruzeiro x Palmeiras | Rodada 35 | Campeonato Brasileiro",
           "publisher": "ge",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNxExrbJ6Gm8RYrLd-th0eYjGnyk_neEth5N2AC2fH8V02zWQBBpZYpBq-iyE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS4CQktHlhugZtAEt8-FAV4NgVo6PsbEMTcYomXbIyHtpD51LwgP2ClRGD2NQ"
         },
         {
-          "url": "https://www.bemparana.com.br/noticias/parana/neymar-causa-euforia-em-curitiba-antes-de-jogo-contra-o-coritiba/",
-          "title": "Neymar causa euforia em hotel antes de jogo contra o Coritiba",
-          "publisher": "Bem Paraná",
+          "url": "https://www.otempo.com.br/sports/cruzeiro/2026/11/18/cruzeiro-fecha-parceria-com-a-unilever-e-lanca-produtos-personalizados-para-a-torcida",
+          "title": "Cruzeiro fecha parceria com a Unilever e lança produtos personalizados para a torcida",
+          "publisher": "O Tempo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHs1y249iukpmH8r-6K-LxjXVt7ATTmgRAD1M67umXMy3vAwnIfuN2lG4QMxo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFvlcujsOMFckUw9XYilAMxrez646b5Qcqb0TiQP39PfizeTJXON_IvbCNn3M"
         },
         {
-          "url": "https://esportes.r7.com/futebol/campeonato-brasileiro-serie-a/conteudo-digital/pre-e-pos-jogo/video/cuca-reforca-comprometimento-do-peixao-antes-de-enfrentar-o-coritiba-nao-demos-folga-18112026/",
-          "title": "Cuca reforça comprometimento do Peixão antes de enfrentar o Coritiba: ‘Não demos folga!’",
-          "publisher": "R7 Esportes",
+          "url": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-mineiro/cruzeiro/cruzeiro-e-patrocinador-lancam-linha-de-produtos-personalizados-e-pedro-lourenco-reage/",
+          "title": "Cruzeiro e patrocinador lançam linha de produtos personalizados, e Pedro Lourenço reage",
+          "publisher": "Rádio Itatiaia",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwvLjGkesgSVG1xCKVU4mmP5bdbC-LwLmFzmMwY4gFQXJ0Rj5t3j81xkyj-E0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdXOcS3zI6aZzlfxvk0BZurOoXbIu90i6AZb806BWVB2Dz-HaUXEhPDtJsc1U"
         }
       ]
     },
     {
-      "query": "anheuser-busch",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T22:00:00Z",
-      "related_news_urls": [
-        "https://www.thespiritsbusiness.com/2026/11/ab-inbev-pours-1-5m-into-cutwater-production/",
-        "https://www.fdiforum.net/mag/production/anheuser-busch-invests-1-5m-in-cutwaters-san-diego-production-facility/",
-        "https://parade.com/food/cutwater-announces-1-5-million-investment-as-it-expands-its-popular-canned-cocktail-lineup"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9WukHppnCtyVZpQIXG3ApFS3OMO8UmBTYfkBdVRoqEwWwBBlqVSBnTlw1EOE",
-      "image_credit": "The Spirits Business",
-      "news": [
-        {
-          "url": "https://www.thespiritsbusiness.com/2026/11/ab-inbev-pours-1-5m-into-cutwater-production/",
-          "title": "AB InBev pours $1.5m into Cutwater production",
-          "publisher": "The Spirits Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9WukHppnCtyVZpQIXG3ApFS3OMO8UmBTYfkBdVRoqEwWwBBlqVSBnTlw1EOE"
-        },
-        {
-          "url": "https://www.fdiforum.net/mag/production/anheuser-busch-invests-1-5m-in-cutwaters-san-diego-production-facility/",
-          "title": "Anheuser-Busch invests $1.5m in Cutwater’s San Diego production facility",
-          "publisher": "Food and Drink International",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqgrpIZh8ypzBPcR4LDMcifY1s21zonXX-iweEcweJtGZ-7bKdzw5bYLwXYKQ"
-        },
-        {
-          "url": "https://parade.com/food/cutwater-announces-1-5-million-investment-as-it-expands-its-popular-canned-cocktail-lineup",
-          "title": "Cutwater Announces $1.5 Million Investment as It Expands Its Popular Canned Cocktail Lineup",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJpbrzN5t40ZVCXi9AUYPNzjYIOynymc9BJcWjzE0gnD8HptGl0JC_SjNrecg"
-        }
-      ]
-    },
-    {
-      "query": "jason michael",
+      "query": "cruzeiro x palmeiras",
       "approx_searches": "1000+",
-      "published_at": "2026-11-18T22:00:00Z",
+      "published_at": "2026-11-18T22:50:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50524698/nc-state-names-nfl-assistant-michael-oc-rivers",
-        "https://247sports.com/college/north-carolina-state/article/jason-michael-hired-as-nc-state-offensive-coordinator-under-philip-rivers-292948702/",
-        "https://bleacherreport.com/articles/25535056-philip-rivers-hires-former-nfl-assistant-coach-nc-state-offensive-coordinator"
+        "https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/11/18/cruzeiro-x-palmeiras-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://portalimpactto.com.br/noticia/19284/bh-tera-mudancas-no-transito-e-transporte-para-cruzeiro-x-palmeiras-no-mineirao",
+        "https://www.infomoney.com.br/esportes/cruzeiro-palmeiras-brasileirao-onde-assistir/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_b6H8r_M337HLbYfhZjgS73NYepuvNlpQRBoFUjR48Bh1iLhXYJNINRAC96g",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSggyFcJffWitYqQXNgzuNnJEa-sOP9FUXPlY8gJyTtQyblpe5YqLDvsufes",
+      "image_credit": "ge",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50524698/nc-state-names-nfl-assistant-michael-oc-rivers",
-          "title": "NC State names NFL assistant Jason Michael as OC under Philip Rivers",
-          "publisher": "ESPN",
+          "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/11/18/cruzeiro-x-palmeiras-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Cruzeiro x Palmeiras: onde assistir ao vivo, horário e escalações",
+          "publisher": "ge",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_b6H8r_M337HLbYfhZjgS73NYepuvNlpQRBoFUjR48Bh1iLhXYJNINRAC96g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSggyFcJffWitYqQXNgzuNnJEa-sOP9FUXPlY8gJyTtQyblpe5YqLDvsufes"
         },
         {
-          "url": "https://247sports.com/college/north-carolina-state/article/jason-michael-hired-as-nc-state-offensive-coordinator-under-philip-rivers-292948702/",
-          "title": "Jason Michael hired as NC State offensive coordinator under Philip Rivers",
-          "publisher": "247Sports",
+          "url": "https://portalimpactto.com.br/noticia/19284/bh-tera-mudancas-no-transito-e-transporte-para-cruzeiro-x-palmeiras-no-mineirao",
+          "title": "BH terá mudanças no trânsito e transporte para Cruzeiro x Palmeiras no Mineirão",
+          "publisher": "Impactto News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSngB29dgUykBN2qVkrPi_LS67GZUTjJ2GO4AN1jHxsZIsPKAR_jisMUmA6xZ0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1kcDJqkG8amXOcQvbuxSZ26uFUxP56wiHIRTDB-IP5qqs5prb2aPi4hF7wi8"
         },
         {
-          "url": "https://bleacherreport.com/articles/25535056-philip-rivers-hires-former-nfl-assistant-coach-nc-state-offensive-coordinator",
-          "title": "Philip Rivers Hires Former NFL Assistant Coach as NC State Offensive Coordinator",
-          "publisher": "Bleacher Report",
+          "url": "https://www.infomoney.com.br/esportes/cruzeiro-palmeiras-brasileirao-onde-assistir/",
+          "title": "Brasileirão 2026: Onde assistir à Cruzeiro x Palmeiras?",
+          "publisher": "InfoMoney",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdYB1BOj1XNe0mZJgISg7Q5XzGXm2cva-D44IFoPNIT7W4DqDQvtmLUdeIGo"
-        }
-      ]
-    },
-    {
-      "query": "pokebeach",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T22:00:00Z",
-      "related_news_urls": [
-        "https://www.pokebeach.com/2026/11/gold-silver-tcg-products-to-release-alongside-pokemon-ex%E2%98%85-series",
-        "https://www.cbr.com/pokemon-entei-raikou-suicune-return-new-releases-2027/",
-        "https://godisageek.com/2026/11/pokemon-day-2027-collection/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgwDaTVYJ_-0PV2xMfwzDSrbdrKKEE_mqPTqZFt-5JfYx3XLWCIt-AOE8RPV8",
-      "image_credit": "PokeBeach",
-      "news": [
-        {
-          "url": "https://www.pokebeach.com/2026/11/gold-silver-tcg-products-to-release-alongside-pokemon-ex%E2%98%85-series",
-          "title": "Gold & Silver TCG Products to Release Alongside Pokemon ex★ Series!",
-          "publisher": "PokeBeach",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgwDaTVYJ_-0PV2xMfwzDSrbdrKKEE_mqPTqZFt-5JfYx3XLWCIt-AOE8RPV8"
-        },
-        {
-          "url": "https://www.cbr.com/pokemon-entei-raikou-suicune-return-new-releases-2027/",
-          "title": "Pokémon Brings Back Entei, Raikou & Suicune With 3 New Releases in 2027",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDNDwXGpu-3OnDdbvZigwImBtm1Mc4pVIOtgOKhkARL1O1bbLCR7Q5ncRSkrg"
-        },
-        {
-          "url": "https://godisageek.com/2026/11/pokemon-day-2027-collection/",
-          "title": "Pokémon Day 2027 Collection Launches January 29 for $14.99",
-          "publisher": "GodisaGeek.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_95dzxNrQvgLx0V-w1-DHtymVQJQtag-ZseaB1tlqWRSiThL-qjJ91dhbJxQ"
-        }
-      ]
-    },
-    {
-      "query": "mike wise",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T22:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/longtime-espn-personality-author-sports-220508034.html",
-        "https://mocoshow.com/2026/11/18/longtime-washington-post-sportswriter-mike-wise-dies-at-62/",
-        "https://thespun.com/sports-media/mike-wise-dies-cause-of-death-62"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKWUVrrz6lsyU_ku2nLxK-Py1sLjjOmlAL9dUD0Fy-DWsn8O4yvy33Cn5kcx8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/longtime-espn-personality-author-sports-220508034.html",
-          "title": "Longtime ESPN personality, author, sports reporter dies suddenly at 62",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKWUVrrz6lsyU_ku2nLxK-Py1sLjjOmlAL9dUD0Fy-DWsn8O4yvy33Cn5kcx8"
-        },
-        {
-          "url": "https://mocoshow.com/2026/11/18/longtime-washington-post-sportswriter-mike-wise-dies-at-62/",
-          "title": "Longtime Washington Post Sportswriter Mike Wise Dies at 62",
-          "publisher": "The MoCo Show -",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOXBnx0wBEizHk3n9t3fuQOChbSG6-xIrN2YkrvXKHjy8a6FZMXEQwOduXg6A"
-        },
-        {
-          "url": "https://thespun.com/sports-media/mike-wise-dies-cause-of-death-62",
-          "title": "Fans Crushed As Former ESPN Reporter Dies Suddenly at 62",
-          "publisher": "The Spun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT766lG5Ydc1_wf2T8NzIfpovYDKgmNEPX2UoFat_YIQMh3idRlM-Rj78dqS2k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEVmMTEeKtegrG5MG2ennKqjJcETyq3oHeRJ2amtyYZGyqsazSxno_cD52Ow"
         }
       ]
     }
