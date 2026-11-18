@@ -80,7 +80,8 @@ export async function verifyPinkTestProvenance(changedPaths,testPaths,readPinned
  const sources=[...paths].filter(path=>!TEST.test(path));
  if(!sources.length)return false;
  for(const test of testPaths){
-  if(paths.has(test))continue;
+  // A test changed in the PR is not automatically a relevant test.
+  // Verify source linkage from its exact pinned commit in every case.
   const text=await readPinnedTest(test);
   if(!referencesChangedSource(text,test,sources))return false;
  }
