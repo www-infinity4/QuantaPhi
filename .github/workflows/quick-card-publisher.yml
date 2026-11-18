@@ -4,6 +4,7 @@ on:
     paths:
       - 'workers/quick-card-publisher/**'
       - 'test/quick-card-publisher.test.mjs'
+      - 'test/published-card-feed-batching.test.mjs'
       - 'published-quick-card*'
       - 'quick-card-builder*'
       - 'quick-card-share.js'
@@ -60,4 +61,4 @@ jobs:
           curl --fail --show-error --silent --max-time 20 https://quantaphi.org/published-quick-card.js | grep -q 'paintCard'
           curl --fail --show-error --silent --max-time 20 https://quantaphi.org/published-quick-card.css | grep -q 'qcp-card'
       - name: Execute publisher tests
-        run: node --test test/quick-card-publisher.test.mjs test/quick-card-share.test.mjs test/quick-card-preview.test.mjs
+        run: node --test test/quick-card-publisher.test.mjs test/quick-card-share.test.mjs test/quick-card-preview.test.mjs test/published-card-feed-batching.test.mjs

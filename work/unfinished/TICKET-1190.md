@@ -7,18 +7,18 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "First source scroll repair merged in #1300; top-reachability regression patched in #1304; remaining ANR, artwork, overlays and device criteria unverified"
-sessions_spent: 3
+sessions_spent: 4
 sessions_remaining_estimate: unknown
 agent: "ChatGPT scoped mobile section repair"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: 2026-11-01T01:35:00Z
+last_observed_at_utc: 2026-11-03T20:22:34Z
 repo: www-infinity4/QuantaPhi
-branch: fix/android-top-header-snap-20261031
-head_sha: 391b0268723e5356be13f4ccfe8eb84cf9b1932f
-pr: 1304
+branch: fix/published-creator-card-batch-1190-20261103
+head_sha: 6718c466d906ecda2418959b13432b0a3d7d0b33
+pr: 1635
 tests:
   - "test/android-scroll-sections.test.mjs — passed in exact-head interactive-card CI run 41256872271"
   - "test/android-scroll-sections.browser.spec.mjs — 3/3 browser cases passed in 69/69 Playwright suite, run 41256872271"
@@ -28,7 +28,7 @@ merged: false
 deployed: false
 live_verified: false
 blocker: "PR #1304 exact-head CI/review and Android live readback pending; separate Chrome/System UI ANR remains untraced"
-next_action: "Verify PR #1304 exact-head Node/browser checks and independent review; expected-head merge if gates pass, then verify live mobile top access."
+next_action: "Verify PR #1635 exact-head publisher CI, obtain independent approval, then check Android layout/performance before any merge/publish."
 ---
 
 ## Canonical GitHub issue
@@ -62,3 +62,13 @@ Four owner-provided Android screen recordings dated October 31 show a heavily sc
 - Created scoped follow-up [PR #1304](https://github.com/www-infinity4/QuantaPhi/pull/1304) after confirming previous PR #1300 merged. Added source and 390px mobile-browser regression *before* CSS modification; the source contract was red against the original CSS.
 - Changed only the Android homepage CSS to make `.qtop` the first resting snap position and remove standalone search snap; kept the deck/arrow navigation, shelves, reduced-motion and fine-pointer rules untouched. Updated CSS query version. Source fix commit `fff8601e20d9d924cc8845b0a98e170a0a4903fd`, asset version commit `391b0268723e5356be13f4ccfe8eb84cf9b1932f`.
 - Automated PR CI was running at last inspection. This is **not** a claim of browser pass, merge, production release or real Android verification; source-level regression check succeeded after patch. Await exact-head CI + review before merge; perform production and device acceptance separately. No wallet/auth/API changes.
+
+## Session 4 · November 3, 2026 UTC — creator-card DOM batching
+- Reused canonical issue [#1190](https://github.com/www-infinity4/QuantaPhi/issues/1190) after reading AGENTS.md, unfinished README/INDEX and this ticket. No coordinator lease was claimed or assumed.
+- Source PR [#1635](https://github.com/www-infinity4/QuantaPhi/pull/1635), feature branch `fix/published-creator-card-batch-1190-20261103`.
+- **Test-first proof:** before changing source, local Node 22 test `test/published-card-feed-batching.test.mjs` failed: three approved cards made **three** live DOM appends, not one. After repair four focused tests passed and `node --check published-quick-cards-feed.js` passed locally.
+- Code uses one `DocumentFragment`, one live insert, no duplicate slug mounts, and isolate a malformed card while preserving approved-only visibility and original card actions; test registered in publisher GitHub Actions workflow. Source commit `703d95066db5fe9bc6a17d602d0eee0a683827fd`; workflow commit `6718c466d906ecda2418959b13432b0a3d7d0b33`.
+- **Scope limit:** DOM mutation reduction is proved by a focused test, not a measured Android speedup or an ANR root-cause fix. No new or modified cards/Cloudflare D1 records, wallet settlement, production deploy, or APK change.
+- **Still pending:** exact final-head CI, independent review, owner Android 320/360/393/430px visual/ANR observations, merge and production source readback. Existing #1190 top-reachability and source-media acceptance remain separate.
+- State: `source_tested` (local only), dot 🟡; overall issue progress remains unknown because device/performance acceptance is incomplete. Sessions documented: 4; remaining estimate unknown.
+- **Next action:** inspect exact-head #1635 GitHub CI and reviewer findings, repair any regressions on branch, then pursue device acceptance without bypassing security gates.
