@@ -90,3 +90,40 @@ test('Infinity-style spotlight is genuinely media-led with archive film artwork 
   assert.match(css,/prefers-reduced-motion/);
   assert.doesNotMatch(html,/sponsored.*sponsored|fake.*ad impression/i);
 });
+
+test('BFCache restore rearms exactly one clock and applies the midnight Octaves switch', async()=>{
+  const {runInNewContext}=await import('node:vm');
+  const source=file('gary/presentation-init.mjs').replace(/^import .*;\s*/m,'');
+  let now='2026-11-05T23:59:00-06:00', nextTimer=0, cleared=[];
+  const timers=new Map(), listeners=new Map(), hero={removed:false,remove(){this.removed=true}};
+  const html={dataset:{}}, description={content:''};
+  const document={
+    documentElement:html,title:'',hidden:false,
+    querySelector(selector){return selector==='#gary-birthday-hero'?hero:selector==='meta[name="description"]'?description:null;},
+    addEventListener(name,fn){listeners.set('document:'+name,fn);}
+  };
+  const window={
+    setInterval(fn,ms){assert.equal(ms,60000);const id=++nextTimer;timers.set(id,fn);return id;},
+    clearInterval(id){cleared.push(id);timers.delete(id);},
+    addEventListener(name,fn){listeners.set(name,fn);}
+  };
+  class FakeDate {constructor(){return new Date(now);}}
+  runInNewContext(source,{window,document,Date:FakeDate,familyPresentationAt});
+  assert.equal(timers.size,1);
+  assert.equal(html.dataset.familyMode,'birthday');
+  listeners.get('pagehide')();
+  assert.equal(timers.size,0);
+  now='2026-11-06T00:01:00-06:00';
+  listeners.get('pageshow')({persisted:true});
+  assert.equal(html.dataset.familyMode,'octaves');
+  assert.equal(hero.removed,true);
+  assert.match(document.title,/Gary & Family/);
+  assert.equal(timers.size,1);
+  listeners.get('pageshow')({persisted:false});
+  assert.equal(timers.size,1,'repeat pageshow must not duplicate timers');
+  listeners.get('pagehide')();
+  assert.equal(timers.size,0);
+  listeners.get('pageshow')({persisted:true});
+  assert.equal(timers.size,1,'subsequent BFCache cycles must also rearm');
+  assert.equal(cleared.length,2);
+});

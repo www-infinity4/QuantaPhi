@@ -22,3 +22,15 @@ test('request acknowledgements distinguish launch request, unavailable runner an
  assert.match(unavailable,/has not confirmed a launch/);assert.match(unavailable,/retry automatically/);
  const duplicate=tools.executionMessage({},true,'working');assert.match(duplicate,/without creating duplicate work/);
 });
+
+
+test('regression: blocked engineering dispatch reports the actual safe admission reason',()=>{
+ const waiting=tools.executionMessage({status:'job_not_dispatchable',reason:'dependency_pending'});
+ assert.match(waiting,/dependenc/i);
+ assert.doesNotMatch(waiting,/runner has been requested|building now|completed/i);
+ const adapter=tools.executionMessage({status:'job_not_dispatchable',reason:'no_matching_runner_adapter'});
+ assert.match(adapter,/adapter/i);
+ const security=tools.executionMessage({status:'job_not_dispatchable',reason:'owner_decision_required'});
+ assert.match(security,/owner/i);
+ assert.doesNotMatch(security,/automatically (?:approve|bypass)/i);
+});

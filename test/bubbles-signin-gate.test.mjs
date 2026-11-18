@@ -5,7 +5,7 @@ import {summarizeGate,mountBubblesSigninGate} from '../bubbles-signin-gate.mjs';
 import {cloudflareAdapter} from '../workers/bubbles-connections/providers.mjs';
 
 test('both real authorizations must be server-confirmed before gate says ready',()=>{
- const valid={ready:true,providers:{
+ const valid={ok:true,walletVerified:true,ready:true,providers:{
   github:{configured:true,connected:true,permissionsApproved:true,label:'gh-account'},
   cloudflare:{configured:true,connected:true,permissionsApproved:true,label:'cf-account',missingActions:[]}
  }};
@@ -16,7 +16,7 @@ test('both real authorizations must be server-confirmed before gate says ready',
  assert.equal(result.state,'ready');
 });
 test('browser content cannot turn a disconnected or unconfigured provider into a valid connection',()=>{
- const misconfigured={ready:true,providers:{
+ const misconfigured={ok:true,walletVerified:true,ready:true,providers:{
   github:{configured:false,connected:true,permissionsApproved:true,label:'unverified'},
   cloudflare:{configured:true,connected:true,permissionsApproved:false,missingActions:['projects.build']}
  }};
@@ -112,7 +112,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
  t.after(()=>{globalThis.fetch=original;});
  return {controller:mountBubblesSigninGate({root,host,prefix:chat?'chat':''}),get:root.getElementById,calls,popups};
 }
-const partialGate=()=>({ready:false,providers:{
+const partialGate=()=>({ok:true,walletVerified:true,ready:false,providers:{
  github:{configured:true,connected:true,permissionsApproved:true},
  cloudflare:{configured:true,connected:false,permissionsApproved:false,scopeSetupRequired:true,
   authorizationActions:['account.read','projects.build','ledger.read']}
@@ -413,4 +413,34 @@ test('transient status failure does not falsely sign out a previously verified C
  assert.equal(ui.calls.some(x=>x.path==='/start'),false,'do not restart OAuth on a failed status check');
  await ui.controller.refresh(); // healthy readback restores server-confirmed state
  assert.match(ui.get('bubblesConnectionSummary').textContent,/✅ Cloudflare signed in/);
+});
+
+test('server-confirmed Cloudflare connection overrides an outdated disconnected gate record',()=>{
+ const expiresAt=Date.now()+60*60*1000;
+ const payload={ok:true,walletVerified:true,accountsVerified:true,ready:false,
+  accountRecords:[{provider:'cloudflare',status:'connected',expiresAt,label:'Cloudflare account'}],
+  providers:{github:{configured:true,connected:true,permissionsApproved:true},
+   cloudflare:{configured:false,connected:false,permissionsApproved:false,scopeSetupRequired:true}}
+ };
+ const summary=summarizeGate(payload);
+ assert.equal(summary.providers.cloudflare.configured,true,'Verified account is evidence of an existing connection');
+ assert.equal(summary.providers.cloudflare.connected,true);
+ assert.equal(summary.providers.cloudflare.label,'Cloudflare account');
+ assert.equal(summary.providers.cloudflare.approved,false,'Sign-in never implies project permissions');
+ assert.equal(summary.signedIn,true);
+ assert.equal(summary.ready,false);
+});
+
+test('unverified wallet payload never grants a GitHub or Cloudflare connected badge',()=>{
+ const untrusted={ok:false,walletVerified:false,ready:true,providers:{
+  github:{configured:true,connected:true,permissionsApproved:true},
+  cloudflare:{configured:true,connected:true,permissionsApproved:true}
+ }};
+ const gate=summarizeGate(untrusted);
+ assert.equal(gate.walletVerified,false);
+ assert.equal(gate.providers.github.connected,false);
+ assert.equal(gate.providers.cloudflare.connected,false);
+ assert.equal(gate.providers.github.approved,false);
+ assert.equal(gate.providers.cloudflare.approved,false);
+ assert.equal(gate.ready,false);
 });

@@ -77,6 +77,7 @@ export const cards=Object.freeze([
  app('fox-one-video','FOX One Original Advertisement','/source-quick-card.html?card=fox-one','QuantaPhi',['fox one','foxone','fox one ad','fox one advertisement']),
  app('fox-one-live-news','FOX One · Live News Video','/source-quick-card.html?card=fox-one-live-news','QuantaPhi',['fox one news','fox news live promo','fox one live news','fox live news ad']),
  app('starmaker-studio','StarMaker Song Studio','/studio/','QuantaPhi',['starmaker','karaoke','song directory','sing','record voice','music studio']),
+ app('nuance-discovery','Nuance Discovery','/#nuanceDiscoveryCard','QuantaPhi',['cart 004','nuances','infinity os','cart 003 computers','nuance quick card','nuance discovery']),
  app('quick-card-wiring','Quick Card Wiring Study','/quick-card-wiring.html','QuantaPhi',['c13b0 quick card','wiring template','site schematic','website mirror study','quick card study']),
  app('integra-validator','Integra · Quick Card Validation','/integra-validation.html','QuantaPhi',['integra','validate quick card','source audit','card security check','integra ai']),
  app('quantaphi','QuantaPhi','/','QuantaPhi',['quantaphi home','quantaphi website','quantaphi page']),

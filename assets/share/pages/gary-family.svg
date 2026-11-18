@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Gary &amp; Family | Infinity Living Room share artwork</title><desc id="desc">Original QuantaPhi visual preview for /gary/. Decorative graphic, project title and description.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#263047"/><stop offset=".65" stop-color="#5a6179"/><stop offset="1" stop-color="#263047"/></linearGradient><radialGradient id="light"><stop stop-color="#ffd69c" stop-opacity=".55"/><stop offset="1" stop-color="#ffd69c" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="630" fill="url(#bg)"/><circle cx="1030" cy="260" r="320" fill="url(#light)"/>
+<path d="M0 506q272-115 538-52t662-38" fill="none" stroke="#ffd69c" stroke-opacity=".24" stroke-width="4"/><path d="M0 528q342-89 635 17t565-42" fill="none" stroke="#fff" stroke-opacity=".13" stroke-width="2"/>
+<rect x="29" y="27" width="1142" height="576" rx="34" fill="none" stroke="#fff" stroke-opacity=".26" stroke-width="3"/>
+<path d="M76 131H698" stroke="#ffd69c" stroke-width="5" stroke-linecap="round"/>
+<text x="79" y="112" fill="#ffd69c" font-size="28" letter-spacing="3" font-family="DejaVu Sans,Arial,sans-serif" font-weight="800">QUANTAPHI · ENTERTAINMENT</text>
+<text x="76" y="265" fill="#fff" font-size="66" font-family="DejaVu Sans,Arial,sans-serif" font-weight="900">GARY &amp; FAMILY</text>
+<text x="76" y="359" fill="#fff" font-size="66" font-family="DejaVu Sans,Arial,sans-serif" font-weight="900">LIVING ROOM</text>
+<text x="78" y="425" fill="#dce6f6" font-size="29" font-family="DejaVu Sans,Arial,sans-serif" font-weight="650">WESTERNS · RADIO · WEATHER</text>
+<rect x="76" y="483" width="410" height="55" rx="14" fill="#fff" fill-opacity=".14" stroke="#ffd69c" stroke-opacity=".6" stroke-width="2"/>
+<text x="100" y="519" fill="#fff" font-size="23" font-family="DejaVu Sans,Arial,sans-serif" font-weight="750">OPEN ON QUANTAPHI.ORG</text>
+<circle cx="951" cy="315" r="199" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".12" stroke-width="3"/>
+<rect x="775" y="192" width="343" height="250" rx="28" fill="#fff" fill-opacity=".16" stroke="#fff" stroke-width="8"/><path d="M885 186l-57-62M1013 186l57-62M882 464v25M1011 464v25" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M907 268l103 50-103 50z" fill="#fff" fill-opacity=".8"/>
+<text x="75" y="580" fill="#e4eafa" opacity=".75" font-size="19" font-family="DejaVu Sans,Arial,sans-serif">INFINITY 2026®  ·  ORIGINAL QUANTAPHI PAGE</text>
+</svg>

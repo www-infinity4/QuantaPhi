@@ -1,0 +1,25 @@
+name: Public project guides
+
+on:
+  pull_request:
+    paths:
+      - 'continuitybuilder/**'
+      - 'avatarai/**'
+      - 'assets/project-guides.*'
+      - 'assets/share/continuity-builder-emblem.webp'
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/public-project-guides.test.cjs'
+      - '.github/workflows/public-project-guides.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  guide-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test test/public-project-guides.test.cjs

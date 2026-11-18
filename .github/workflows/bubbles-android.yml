@@ -50,7 +50,9 @@ permissions:
   contents: read
 jobs:
   android:
-    runs-on: ubuntu-latest
+    # Playwright 1.51.1 Chromium binaries do not support the ubuntu-26.04-latest image.
+    # Pin the supported hosted image for the mobile browser gate.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v6

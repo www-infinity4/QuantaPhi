@@ -11,7 +11,9 @@ const {BrainClock}=await import('data:text/javascript;base64,'+Buffer.from(sourc
 
 test('real Brain direct execution persists a pending Bit, retries settlement without rerunning GitHub, and recovers after response loss',async()=>{
  const data=new Map([['bot-work-recipient',{userId:'customer_123'}]]),tasks=[];
- const storage={get:async k=>structuredClone(data.get(k)),put:async(k,v)=>data.set(k,structuredClone(v)),delete:async k=>data.delete(k)};
+ const storage={get:async k=>structuredClone(data.get(k)),put:async(k,v)=>data.set(k,structuredClone(v)),delete:async k=>data.delete(k),
+  list:async({prefix})=>new Map([...data].filter(([key])=>key.startsWith(prefix))),
+  transaction:async callback=>callback(storage)};
  let githubCalls=0,walletCalls=0,online=false;
  const env={BUBBLE_BITS_ENABLED:'1',WRITER_OWNER_HASH:'a'.repeat(64),GITHUB_TOKEN:'synthetic-github-fixture',BOT_WORK_SECRET:'synthetic-service-fixture',
   BOT_WALLET:{async fetch(url,init){walletCalls++;if(!online)throw Error('offline');const input=JSON.parse(init.body);return Response.json({ok:true,asset:'BUBBLE_BIT',amount:1,receiptId:input.receiptId,creditId:input.receiptId});}}};
