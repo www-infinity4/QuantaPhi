@@ -3,27 +3,97 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T12:33:11.432550Z",
+  "checked_at": "2026-11-18T13:01:18.637051Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "carrie ann inaba dwts comfort",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T12:30:00Z",
+      "related_news_urls": [
+        "https://ew.com/carrie-ann-inaba-leaves-dwts-judges-table-to-comfort-contestant-12261819",
+        "https://thetab.com/realityshrine/2026/11/17/connor-woods-net-worth-as-the-podcaster-and-comedian-gets-paid-thousands-for-dwts/",
+        "https://www.the-sun.com/tv/17320101/dwts-carrie-ann-inaba-hug-connor-wood/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-8lPAC77hAuRyYNBlBcsDG30CqZPr4bsfypda5xIyerAnhtxKRWL_CdIWsI",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/carrie-ann-inaba-leaves-dwts-judges-table-to-comfort-contestant-12261819",
+          "title": "Carrie Ann Inaba leaves ‘DWTS’ judges table to comfort contestant: ‘You’re doing so great’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-8lPAC77hAuRyYNBlBcsDG30CqZPr4bsfypda5xIyerAnhtxKRWL_CdIWsI"
+        },
+        {
+          "url": "https://thetab.com/realityshrine/2026/11/17/connor-woods-net-worth-as-the-podcaster-and-comedian-gets-paid-thousands-for-dwts/",
+          "title": "Connor Wood’s net worth, as the podcaster and comedian gets paid thousands for DWTS",
+          "publisher": "The Tab",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0dwa6yZG31h4QHSgYz31CTA2MbC--aplVS-8QWHaQxzV98LHAap8KizO-WNs"
+        },
+        {
+          "url": "https://www.the-sun.com/tv/17320101/dwts-carrie-ann-inaba-hug-connor-wood/",
+          "title": "DWTS judge Carrie Ann Inaba JUMPS out of her seat and runs to the ballroom floor after Connor Wood’s dance",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpNifeF0X_GOGNS9iwmv9vMFQrZ5e1WCciMUdF4sdTWXCcwtQEDntRb7Hc5gk"
+        }
+      ]
+    },
+    {
+      "query": "jason eck",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T12:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/names-linked-fsus-coaching-job-225044091.html",
+        "https://www.sportsbettingdime.com/news/college-football/updated-florida-state-next-head-coach-odds-jimbo-fisher-glenn-schumann/",
+        "https://www.yardbarker.com/college_football/articles/why_wake_forests_jake_dickert_is_not_a_candidate_for_florida_state_job/s1_13132_44542233"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEpUAagjxh7OrfOZsGEwIEcP0Wd5iNdSVy5nXHTfZTScOH3d0xG4OmFwx0ek",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/names-linked-fsus-coaching-job-225044091.html",
+          "title": "How the Names Linked to FSU's Coaching Job Performed This Weekend",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEpUAagjxh7OrfOZsGEwIEcP0Wd5iNdSVy5nXHTfZTScOH3d0xG4OmFwx0ek"
+        },
+        {
+          "url": "https://www.sportsbettingdime.com/news/college-football/updated-florida-state-next-head-coach-odds-jimbo-fisher-glenn-schumann/",
+          "title": "Updated Florida State Next Head Coach Odds: Schumann Leads, Fisher Passes Diaz",
+          "publisher": "Sports Betting Dime",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2ctM6eiyEGXflfo0gyebIfhI8eeD86ddOjTDS_lJN5F3eN7bw8ZrbPvcyaaM"
+        },
+        {
+          "url": "https://www.yardbarker.com/college_football/articles/why_wake_forests_jake_dickert_is_not_a_candidate_for_florida_state_job/s1_13132_44542233",
+          "title": "Why Wake Forest's Jake Dickert is not a candidate for Florida State job",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPdnreTjxvml9oiQCj5zj2LZDz_8EQWOc1Li1h9LEGweRTO0TSccjCLUYfbQ"
+        }
+      ]
+    },
     {
       "query": "gta 6 cheat codes",
       "approx_searches": "200+",
       "published_at": "2026-11-18T12:20:00Z",
       "related_news_urls": [
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/",
+        "https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/",
         "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-cheat-codes",
-        "https://beebom.com/do-cheats-disable-trophies-in-gta-6/"
+        "https://fandomwire.com/gta-6-cheat-codes-ps5-xbox-series-x-s-full-list/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyCG5rPi-FC3hYOaFhjui0jik7Yp-n5hLB-QfTXzTh_7nmR4Foqsu6LalIS9M",
-      "image_credit": "PC Gamer",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmE_QIibwLyjMC9arz2u-8-fzv7g9TMDnm6QzBoMnVd7Bc0MtftYq-Jd2Wdyc",
+      "image_credit": "Insider Gaming",
       "news": [
         {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/",
-          "title": "Here's every cheat in GTA 6 to get infinite money, weapons, and vehicles",
-          "publisher": "PC Gamer",
+          "url": "https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/",
+          "title": "All GTA 6 Cheats—Best Grand Theft Auto 6 Cheat Codes",
+          "publisher": "Insider Gaming",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyCG5rPi-FC3hYOaFhjui0jik7Yp-n5hLB-QfTXzTh_7nmR4Foqsu6LalIS9M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmE_QIibwLyjMC9arz2u-8-fzv7g9TMDnm6QzBoMnVd7Bc0MtftYq-Jd2Wdyc"
         },
         {
           "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-cheat-codes",
@@ -33,11 +103,46 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSRuWCfGDDN2Y3u5y3zHPrDx_DC60UKe6hY5K0vlxNDjQfrncE4AJzQQyrtpU"
         },
         {
-          "url": "https://beebom.com/do-cheats-disable-trophies-in-gta-6/",
-          "title": "Do GTA 6 Cheats Disable Trophies and Achievements? Answered",
-          "publisher": "Beebom",
+          "url": "https://fandomwire.com/gta-6-cheat-codes-ps5-xbox-series-x-s-full-list/",
+          "title": "GTA 6: Full List of All Cheat Codes for PS5 and Xbox Series X/S",
+          "publisher": "FandomWire",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMnhl0VViN3pWiHp7PhHRc5-KnXfrwx7T1EHnpbcEXW_SB5PyOsbEpDUAhZrA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFohcOlW8RWFzcHG5d9n-0RgkLj_WgkQG5r5pvKeCg3jWrjPsT3LNyo3oGRqU"
+        }
+      ]
+    },
+    {
+      "query": "gta6 map",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T12:20:00Z",
+      "related_news_urls": [
+        "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
+        "https://futurefive.com.au/story/should-we-be-excited-about-the-size-of-grand-theft-auto-vi-s-world-map",
+        "https://www.cntraveller.com/article/gta-6-leonida-keys-florida-location-grand-theft-auto-vi"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I",
+      "image_credit": "RockstarINTEL",
+      "news": [
+        {
+          "url": "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
+          "title": "GTA VI Map Leaks As Collector’s Box Sold Early",
+          "publisher": "RockstarINTEL",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I"
+        },
+        {
+          "url": "https://futurefive.com.au/story/should-we-be-excited-about-the-size-of-grand-theft-auto-vi-s-world-map",
+          "title": "Should we be excited about the size of Grand Theft Auto VI's world map?",
+          "publisher": "FutureFive Australia",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzVMO8NKuRLXIJApv8u6JkSHDehRJuc0-rCNCzQKAaB--BlagmCQpW1tnM1lk"
+        },
+        {
+          "url": "https://www.cntraveller.com/article/gta-6-leonida-keys-florida-location-grand-theft-auto-vi",
+          "title": "The ultimate travel guide to Grand Theft Auto VI : where to find the real Leonida Keys in Florida",
+          "publisher": "CN Traveller",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3LkSxcL01BSAnKbc-JlbY9eFuI2vEl5HmWbOthlWxvzvjUxCJVrriRGSHQYc"
         }
       ]
     },
@@ -46,26 +151,26 @@
       "approx_searches": "200+",
       "published_at": "2026-11-18T12:20:00Z",
       "related_news_urls": [
-        "https://www.foxbusiness.com/economy/blood-pressure-drug-recalled-nationwide-over-possible-metal-contamination",
         "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/blood-pressure-medication-recalled-nationwide-november-2026/92823483007/",
+        "https://www.foxbusiness.com/economy/blood-pressure-drug-recalled-nationwide-over-possible-metal-contamination",
         "https://www.nxsmediawire.com/news/blood-pressure-medication-recalled-over-potential-contamination-with-metal-laceration-risk/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTsoDc-ey_Oae4KuYkFFlMCBrRoyQct8pzLr5SZs57v7EZOScTZPloqD3wYU",
-      "image_credit": "Fox Business",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn7_XEWZS3KS6uFW49U_9UBQoNKZlnbDHVyY2dPrM_o-4xWbBwAZILRn6TcQU",
+      "image_credit": "USA Today",
       "news": [
-        {
-          "url": "https://www.foxbusiness.com/economy/blood-pressure-drug-recalled-nationwide-over-possible-metal-contamination",
-          "title": "Blood pressure drug recalled nationwide over possible metal contamination",
-          "publisher": "Fox Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTsoDc-ey_Oae4KuYkFFlMCBrRoyQct8pzLr5SZs57v7EZOScTZPloqD3wYU"
-        },
         {
           "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/blood-pressure-medication-recalled-nationwide-november-2026/92823483007/",
           "title": "Blood pressure medication recalled nationwide. See affected drug",
           "publisher": "USA Today",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn7_XEWZS3KS6uFW49U_9UBQoNKZlnbDHVyY2dPrM_o-4xWbBwAZILRn6TcQU"
+        },
+        {
+          "url": "https://www.foxbusiness.com/economy/blood-pressure-drug-recalled-nationwide-over-possible-metal-contamination",
+          "title": "Blood pressure drug recalled nationwide over possible metal contamination",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTsoDc-ey_Oae4KuYkFFlMCBrRoyQct8pzLr5SZs57v7EZOScTZPloqD3wYU"
         },
         {
           "url": "https://www.nxsmediawire.com/news/blood-pressure-medication-recalled-over-potential-contamination-with-metal-laceration-risk/",
@@ -83,7 +188,7 @@
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/17/world/asia/prince-william-climate-prize-india-rickshaw.html",
         "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-william-kate-middleton-hand-095631325.html",
-        "https://www.bbc.com/news/videos/c6x2ev29v87no"
+        "https://www.marieclaire.com/celebrity/royals/princess-kate-earthshot-prize-mumbai-gown/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6UuvDre_l5prFw7m-3PoKh6aiQ3h-zE3Xmc3wuyz-eorXyocMUPdMFxbuUt4",
       "image_credit": "The New York Times",
@@ -103,11 +208,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2G5rD5EZJT_sNSxqH5kCj1YhvmTxRIlJeh1nFfdfmar5KFRKm7Ha2mgRjG9Y"
         },
         {
-          "url": "https://www.bbc.com/news/videos/c6x2ev29v87no",
-          "title": "William and Kate on Earthshot Prize green carpet in Mumbai",
-          "publisher": "BBC",
+          "url": "https://www.marieclaire.com/celebrity/royals/princess-kate-earthshot-prize-mumbai-gown/",
+          "title": "Princess Kate Delivers Bollywood Glam on the Earthshot Prize Green Carpet",
+          "publisher": "Marie Claire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRQPuNZwJmBMRaWWk7DK9-b8x23XqRkAjwO9mtpBS0w12uWhoKxeo14EjxY1Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGKx0FkiNnKXRPj-aD6PE-xv6rfMjukq1TBrdkOzLem_qrL70n5MZiAIoB9Nk"
         }
       ]
     },
@@ -143,19 +248,19 @@
       "approx_searches": "100+",
       "published_at": "2026-11-18T12:10:00Z",
       "related_news_urls": [
-        "https://www.providencejournal.com/picture-gallery/news/education/2026/11/18/see-civil-rights-icon-ruby-bridges-pay-east-providence-a-visit/92831029007/",
+        "https://www.smdailyjournal.com/news/local/san-mateo-county-schools-mark-ruby-bridges-walk-to-school-day/article_e3c497e4-d6e2-4dd9-b8b5-94a686558128.html",
         "https://www.kwoc.com/localnews/2026/11/17/reejvu0lik8x08w10yg5s9y2zag9n4",
         "https://www.heraldtribune.com/story/opinion/columns/guest/2026/11/16/sarasota-ruby-bridges-midterm/92796227007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8HvCI91RbEIkHNtSjpM0GdwCYuw65-gF965oZ0K0YIRBhwVIHtW2vX2SZLN0",
-      "image_credit": "The Providence Journal",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmGEsql_7Am5JtsUqSFkTvoZDSZqEXO73Yrj_GOUEcgXs7THz7_T6QB4dZbBg",
+      "image_credit": "San Mateo Daily Journal",
       "news": [
         {
-          "url": "https://www.providencejournal.com/picture-gallery/news/education/2026/11/18/see-civil-rights-icon-ruby-bridges-pay-east-providence-a-visit/92831029007/",
-          "title": "See civil rights icon Ruby Bridges pay East Providence a visit",
-          "publisher": "The Providence Journal",
+          "url": "https://www.smdailyjournal.com/news/local/san-mateo-county-schools-mark-ruby-bridges-walk-to-school-day/article_e3c497e4-d6e2-4dd9-b8b5-94a686558128.html",
+          "title": "San Mateo County schools mark Ruby Bridges Walk to School Day",
+          "publisher": "San Mateo Daily Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8HvCI91RbEIkHNtSjpM0GdwCYuw65-gF965oZ0K0YIRBhwVIHtW2vX2SZLN0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmGEsql_7Am5JtsUqSFkTvoZDSZqEXO73Yrj_GOUEcgXs7THz7_T6QB4dZbBg"
         },
         {
           "url": "https://www.kwoc.com/localnews/2026/11/17/reejvu0lik8x08w10yg5s9y2zag9n4",
@@ -210,7 +315,7 @@
     },
     {
       "query": "celebrini",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-18T12:00:00Z",
       "related_news_urls": [
         "https://www.espn.com/nhl/recap/_/gameId/401892725",
@@ -240,111 +345,6 @@
           "publisher": "NBC Sports Bay Area & California",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeKv-QCj0ansfHr_HZd4EPqly5WahsBXiu3cNJBETAomz6NwX1UoJ9RsvJ5qQ"
-        }
-      ]
-    },
-    {
-      "query": "awa people",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T12:00:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/americas/rare-images-isolated-indigenous-group-brazil-highlight-threats-2026-11-17/",
-        "https://nypost.com/2026/11/18/world-news/brazils-isolated-awa-tribe-pleads-for-help-in-troubling-sign-during-rare-contact-with-workers-in-amazon-rainforest/",
-        "https://www.theguardian.com/world/2026/nov/17/brazil-amazon-isolated-indigenous-people"
-      ],
-      "image_url": null,
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/americas/rare-images-isolated-indigenous-group-brazil-highlight-threats-2026-11-17/",
-          "title": "Rare images of isolated Indigenous group in Brazil highlight threats",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://nypost.com/2026/11/18/world-news/brazils-isolated-awa-tribe-pleads-for-help-in-troubling-sign-during-rare-contact-with-workers-in-amazon-rainforest/",
-          "title": "‘World’s most endangered tribe’ makes rare contact with Brazilian workers looking help in ‘troubling’ sign",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.theguardian.com/world/2026/nov/17/brazil-amazon-isolated-indigenous-people",
-          "title": "Isolated Brazilian tribe emerges amid alarm over threats to group’s way of life",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "tgt stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T11:50:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html",
-        "https://www.axios.com/local/twin-cities/2026/11/18/target-comeback-appears-to-be-for-real",
-        "https://finance.yahoo.com/markets/stocks/article/target-earnings-squash-estimates-as-inflation-weary-shoppers-see-great-deals-113326641.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWctD1IZDf9UMdsspKM-geEBns-UIclEz5sS_5IJ3wCfKIzhhFxmu73aGS5-c",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html",
-          "title": "Target posts best sales growth in five years, raises guidance",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWctD1IZDf9UMdsspKM-geEBns-UIclEz5sS_5IJ3wCfKIzhhFxmu73aGS5-c"
-        },
-        {
-          "url": "https://www.axios.com/local/twin-cities/2026/11/18/target-comeback-appears-to-be-for-real",
-          "title": "Target posts its strongest earnings in five years",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQxn-9UT_Y9PVEcvo9AXxNpZkUVeEiqyq8Cd8XS9BeY9ab5gQ-UNH7UInlHJ0"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/article/target-earnings-squash-estimates-as-inflation-weary-shoppers-see-great-deals-113326641.html",
-          "title": "Target earnings squash estimates as inflation-weary shoppers see great deals",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTyKZrcuSAH9rWk1ohpJIbvsxABiQwthp9oaS6p7Qisomr1RBgi4ZF_oTJBMc"
-        }
-      ]
-    },
-    {
-      "query": "hayley williams outbreak festival 2027",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T11:50:00Z",
-      "related_news_urls": [
-        "https://pitchfork.com/story/hayley-williams-outbreak-fest-2027-lineup/",
-        "https://stereogum.com/2518350/outbreak-festival-announces-2027-lineup-curated-by-hayley-williams/news",
-        "https://www.vice.com/en/article/paramores-hayley-williams-makes-unexpected-move-into-hardcore-recruits-90s-alternative-legends/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhAGbVx9VvTgY0Dpc6nlLz3owJbNeQQwPULeelTF_IPRs3B4nLpfdj0rZLVmQ",
-      "image_credit": "Pitchfork",
-      "news": [
-        {
-          "url": "https://pitchfork.com/story/hayley-williams-outbreak-fest-2027-lineup/",
-          "title": "Hayley Williams-Curated Outbreak Fest Features Dinosaur Jr., Blood Orange",
-          "publisher": "Pitchfork",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhAGbVx9VvTgY0Dpc6nlLz3owJbNeQQwPULeelTF_IPRs3B4nLpfdj0rZLVmQ"
-        },
-        {
-          "url": "https://stereogum.com/2518350/outbreak-festival-announces-2027-lineup-curated-by-hayley-williams/news",
-          "title": "Outbreak Festival Announces 2027 Lineup Curated By Hayley Williams",
-          "publisher": "Stereogum",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1bg9dFwZJHm_HTl5Cxkxi5OlFTGDTCrUpVboz8kS76-zZVMxKd_q5loOIl9o"
-        },
-        {
-          "url": "https://www.vice.com/en/article/paramores-hayley-williams-makes-unexpected-move-into-hardcore-recruits-90s-alternative-legends/",
-          "title": "Paramore's Hayley Williams Makes Unexpected Move Into Hardcore, Recruits '90s Alternative Legends",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqqeUDcU12HaLPjD9Z0SBWEt3YXWwPfqP3JZDmu18mET3hmM-JgKFil_5SWgM"
         }
       ]
     }
