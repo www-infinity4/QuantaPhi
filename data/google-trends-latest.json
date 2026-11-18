@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T18:01:20.282902Z",
+  "checked_at": "2026-11-18T18:31:25.132134Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "hakeem jeffries speaker",
+      "query": "ak dear",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T18:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/alabama/article/sophomore-running-back-ak-dear-292898366/",
+        "https://www.rotoballer.com/player-news/ak-dear-no-longer-on-alabama-roster/1997269",
+        "https://www.si.com/college/alabama/football/alabama-running-back-no-longer-with-team"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD3vdkiQ9BNYP3KgZiiEIGxoNZiDDUeAA736QCaIIAAreMRO9YmHRZcz2USTI",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/alabama/article/sophomore-running-back-ak-dear-292898366/",
+          "title": "Sophomore running back AK Dear no longer with Alabama football program, Kalen DeBoer says",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD3vdkiQ9BNYP3KgZiiEIGxoNZiDDUeAA736QCaIIAAreMRO9YmHRZcz2USTI"
+        },
+        {
+          "url": "https://www.rotoballer.com/player-news/ak-dear-no-longer-on-alabama-roster/1997269",
+          "title": "AK Dear No Longer on Alabama Roster - College Football News | Fantasy CFB",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_EOhVM4jO3q1h6qvxdVMP43Dgbd_SOT4409pLQR6pUHe3GcpOoUHEs0JS9po"
+        },
+        {
+          "url": "https://www.si.com/college/alabama/football/alabama-running-back-no-longer-with-team",
+          "title": "Alabama Running Back No Longer With Team",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmn7kkwFwjwdniZPkKVWWmSFT25hTV7YIuZGLuRp3VZHh8wo5RVga3ALt1l3k"
+        }
+      ]
+    },
+    {
+      "query": "susan smith",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T18:00:00Z",
+      "related_news_urls": [
+        "https://people.com/susan-smith-ex-husband-barely-remember-murdered-sons-exclusive-12262478",
+        "https://www.foxnews.com/us/susan-smith-ex-husband-wants-prison-until-dies-after-killing-sons-alleged-bid-win-lover",
+        "https://edition.cnn.com/2026/11/15/us/susan-smith-murder-parole-hearing"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4kIFN9ny6MlrUTsaSoFjNUXohlKnRBCGUgD585iitVBlEnJKjqmfcxwArIy4",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/susan-smith-ex-husband-barely-remember-murdered-sons-exclusive-12262478",
+          "title": "Susan Smith’s Ex-Husband Says He Can Barely Remember Their Murdered Sons, as She Seeks Parole (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4kIFN9ny6MlrUTsaSoFjNUXohlKnRBCGUgD585iitVBlEnJKjqmfcxwArIy4"
+        },
+        {
+          "url": "https://www.foxnews.com/us/susan-smith-ex-husband-wants-prison-until-dies-after-killing-sons-alleged-bid-win-lover",
+          "title": "Susan Smith's ex-husband wants her ‘in prison until she dies’ after killing sons in alleged bid to win lover",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR31dXyutgjvMK8NCk1X7G6nvimVUjAc19L7hu41GTJ8deqG2W6q1bFraPONjw"
+        },
+        {
+          "url": "https://edition.cnn.com/2026/11/15/us/susan-smith-murder-parole-hearing",
+          "title": "He learned on TV that his wife Susan Smith drowned their two young sons in 1994. He wants her in prison forever",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQojbEuOBaX2QzJ50Qbjp9dy89LnfIFMGxnT1AzZTv7hBMA81PPkF-eN0uNkTI"
+        }
+      ]
+    },
+    {
+      "query": "biscuit recall",
       "approx_searches": "2000+",
+      "published_at": "2026-11-18T17:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/breakfast-items-biscuits-recall-health-alert/92830906007/",
+        "https://www.mycentraljersey.com/story/news/2026/11/18/breakfast-food-recall-listeria-risk/92841680007/",
+        "https://news4sanantonio.com/news/local/biscuit-and-sausage-gravy-recalled-for-possible-listeria-contamination-san-antonio-food-safety-guenther"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/breakfast-items-biscuits-recall-health-alert/92830906007/",
+          "title": "Do not eat these breakfast items, says USDA health alert",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI"
+        },
+        {
+          "url": "https://www.mycentraljersey.com/story/news/2026/11/18/breakfast-food-recall-listeria-risk/92841680007/",
+          "title": "Breakfast foods recalled over listeria risk. What to know",
+          "publisher": "Central New Jersey News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI"
+        },
+        {
+          "url": "https://news4sanantonio.com/news/local/biscuit-and-sausage-gravy-recalled-for-possible-listeria-contamination-san-antonio-food-safety-guenther",
+          "title": "Biscuit and sausage gravy recalled for possible listeria contamination",
+          "publisher": "WOAI",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYN_MIDWSE-2uOzxBD3WocK4EW4yo2ko9jP-aBialh87g4p-NRhy6ZxIjE1Xc"
+        }
+      ]
+    },
+    {
+      "query": "hakeem jeffries speaker",
+      "approx_searches": "5000+",
       "published_at": "2026-11-18T17:20:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
-        "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
-        "https://apnews.com/article/hakeem-jeffries-house-leadership-speaker-democrats-260433358f776473f29151992569f81d"
+        "https://apnews.com/article/hakeem-jeffries-house-leadership-speaker-democrats-260433358f776473f29151992569f81d",
+        "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI",
       "image_credit": "The New York Times",
@@ -26,24 +131,24 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
-          "title": "Jeffries wins Democratic House speaker race, on track to make history in January",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpwqCN9SsFOMZEGF1L73dkgOPhHAWfP5qgn30u7g8KkJgEXtMKMhO6IDbkFO8"
-        },
-        {
           "url": "https://apnews.com/article/hakeem-jeffries-house-leadership-speaker-democrats-260433358f776473f29151992569f81d",
           "title": "Hakeem Jeffries could become the first Black House speaker after Democratic nomination",
           "publisher": "AP News",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAGc-He2sNE9vCrotT_htHDLyA7v7IlDNH1PfO9Vnt0VowErwYvc2VgRMfpZc"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
+          "title": "Jeffries wins Democratic House speaker race, on track to make history in January",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfS_imvE3ZKCIEu1NkQeOgRuY-AYL4tiVy-aEyLJQpRmnFuo6HbmUqPOeZzck"
         }
       ]
     },
     {
       "query": "katherine clark",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T17:10:00Z",
       "related_news_urls": [
         "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
@@ -113,57 +218,64 @@
     },
     {
       "query": "real madrid vs inter",
-      "approx_searches": "1000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-18T17:00:00Z",
       "related_news_urls": [
-        "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/",
-        "https://www.reutersconnect.com/item/uefa-womens-champions-league-real-madrid-v-inter-milan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkxQ1NBWUs",
-        "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing"
+        "https://www.espn.com/video/clip/_/id/50522539/alaina-dadzie-1-bucket",
+        "https://www.espn.com/soccer/team-stats/_/gameId/401916981/league/uefa.wchampions",
+        "https://www.espn.com/soccer/team-stats/_/gameId/401916982/league/uefa.wchampions"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ",
-      "image_credit": "UEFA.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcabyaY7yTx5TH3KuB46bl_LqcRc3CKsR3t98RJ7cyM5jPk2dC-6Cg-9rl30",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/",
-          "title": "Women's Champions League Matchday 5 preview: Chelsea vs Paris SG, Real Madrid vs Inter, Arsenal vs OL Lyonnes, Benfica vs Roma",
-          "publisher": "UEFA.com",
+          "url": "https://www.espn.com/video/clip/_/id/50522539/alaina-dadzie-1-bucket",
+          "title": "Alaina Dadzie with the and-1 bucket",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcabyaY7yTx5TH3KuB46bl_LqcRc3CKsR3t98RJ7cyM5jPk2dC-6Cg-9rl30"
         },
         {
-          "url": "https://www.reutersconnect.com/item/uefa-womens-champions-league-real-madrid-v-inter-milan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkxQ1NBWUs",
-          "title": "Licensable picture: UEFA Women's Champions League - Real Madrid v Inter Milan",
-          "publisher": "Reuters Connect",
+          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401916981/league/uefa.wchampions",
+          "title": "Real Madrid vs. Inter Milan (Nov 18, 2026) Team Stats",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-nai2xe44SCQ1IfoYXhPpUi6AUChSXo09tbEOqdO6oynGlgtIluLYnFP6VE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsjoXh42Lv4QPlT2pCBTepnQARisY3Xd_6V1Hra4JP5kiEhucJ-97-y7N7S4s"
         },
         {
-          "url": "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing",
-          "title": "UWCL Round 5 preview: giants on the move, tight races brewing",
-          "publisher": "Sofascore",
+          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401916982/league/uefa.wchampions",
+          "title": "BK Häcken vs. Man City (Nov 18, 2026) Team Stats",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7eX8qGm5Pyxy3gkTDa_JYTw2EsA6EHhc1fywCX34GpJSghRmGTYBLm0u4t4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQp3Cl2gC40WECmRK5OLtrYn2B6WQcSendi6de9ZE_8nwLe_nZQ_ZC_UIZLmWw"
         }
       ]
     },
     {
       "query": "the comeback king",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T17:00:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/film/news/comeback-king-trailer-glen-powell-judd-apatow-1236712505/",
-        "https://www.yahoo.com/entertainment/movies/articles/glen-powell-country-music-movie-170450216.html",
-        "https://www.rollingstone.com/tv-movies/tv-movie-news/glen-powell-judd-apatow-comeback-king-interview-photos-1235657507/"
+        "https://deadline.com/2026/11/the-comeback-king-trailer-glen-powell-judd-apatow-1237228094/",
+        "https://www.esquire.com/entertainment/tv/a74465481/glen-powell-the-comeback-king-trailer/",
+        "https://www.yahoo.com/entertainment/movies/articles/glen-powell-country-music-movie-170450216.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxybo26ephCI1U8sBO8Y0hbOrbNDCg3RVRxjc2WRxCgT4TjeObvSAmRCxJJsc",
-      "image_credit": "Variety",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTO5wEGbCRD9X0vPLr4wRKh35hZvDxSKNDjlDkLQPUZZiyafngAideAHfsXeI",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://variety.com/2026/film/news/comeback-king-trailer-glen-powell-judd-apatow-1236712505/",
-          "title": "‘The Comeback King’ Trailer: Glen Powell Is a Washed-Up Country Star in Judd Apatow’s New Comedy",
-          "publisher": "Variety",
+          "url": "https://deadline.com/2026/11/the-comeback-king-trailer-glen-powell-judd-apatow-1237228094/",
+          "title": "‘The Comeback King’ Trailer: Glen Powell Goes Country In New Judd Apatow Comedy",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxybo26ephCI1U8sBO8Y0hbOrbNDCg3RVRxjc2WRxCgT4TjeObvSAmRCxJJsc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTO5wEGbCRD9X0vPLr4wRKh35hZvDxSKNDjlDkLQPUZZiyafngAideAHfsXeI"
+        },
+        {
+          "url": "https://www.esquire.com/entertainment/tv/a74465481/glen-powell-the-comeback-king-trailer/",
+          "title": "Glen Powell Tussles with Country Music Superstars in ‘The Comeback King’ Trailer",
+          "publisher": "Esquire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBfB5_QJxwXLqSxOO540yP2-bafVxdO9VCi5fReISD3EPH7qh1m59mi09KS7M"
         },
         {
           "url": "https://www.yahoo.com/entertainment/movies/articles/glen-powell-country-music-movie-170450216.html",
@@ -171,19 +283,12 @@
           "publisher": "Yahoo",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjBrbBnP2UGeI9tEbLTNtSocprLWNbGGds_c7W8Z4NpXYYbsAE9ScclIivg8A"
-        },
-        {
-          "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/glen-powell-judd-apatow-comeback-king-interview-photos-1235657507/",
-          "title": "Country Music's Biggest Stars Came Together to Break Glen Powell's Balls in 'The Comeback King'",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKUoA9kJ6DdoQmpm1PV0gFuTRzp3J7yLcDSnZlxZ1anh8Gyx7ZP_Vo4AlvuLE"
         }
       ]
     },
     {
       "query": "baylor basketball",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T17:00:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/betting/news/baylor-jackson-state-prediction-odds-time-2026-college-basketball-picks-wednesday-november-18/",
@@ -248,111 +353,6 @@
           "publisher": "The Washington Post",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5nc6MyaJaVvNj44VkrdUuy42s5Ld5dLsWwrROHREidKxGITk_etb0MYlnDqw"
-        }
-      ]
-    },
-    {
-      "query": "real madrid - inter de milán",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T16:50:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/video/clip/_/id/17530039/jornada-decisiva-para-real-madrid-en-la-uefa-womens-champion-league",
-        "https://www.mundodeportivo.com/futbol/real-madrid/20261117/1004252168/silvia-cristobal-llevamos-toda-semana-pensando-partido.html",
-        "https://www.relevo.com/futbol/champions-league-femenina/champions-femenina-jornada-5-real-madrid-inter-barca-servette.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSekto7P5rfVbTcMGPZScv-_vxV2EmaHHgBJ_jroNnsiCtr82XtjrCMT5u8CDY",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/video/clip/_/id/17530039/jornada-decisiva-para-real-madrid-en-la-uefa-womens-champion-league",
-          "title": "Jornada decisiva para Real Madrid en la UEFA Women's Champion League",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSekto7P5rfVbTcMGPZScv-_vxV2EmaHHgBJ_jroNnsiCtr82XtjrCMT5u8CDY"
-        },
-        {
-          "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261117/1004252168/silvia-cristobal-llevamos-toda-semana-pensando-partido.html",
-          "title": "Silvia Cristóbal: \"Llevamos toda la semana pensando en este partido\"",
-          "publisher": "Mundo Deportivo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR30sy1CnivHNdbuvo8rhIHR-f8vt0PbGZYIH7H7s15QpS-Ujqv9mQ-uKekNZ8"
-        },
-        {
-          "url": "https://www.relevo.com/futbol/champions-league-femenina/champions-femenina-jornada-5-real-madrid-inter-barca-servette.html",
-          "title": "Real Madrid-Inter y Barça-Servette: la Champions femenina entra en su quinta jornada",
-          "publisher": "Relevo Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXxrC48g65hSJK4XYftAwyqWuGeU0C72W52GaZKVQFxbMOSBMF2zwAZyutDO8"
-        }
-      ]
-    },
-    {
-      "query": "chipotle hoodie",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T16:40:00Z",
-      "related_news_urls": [
-        "https://ir.chipotle.com/2026-11-16-CHIPOTLE-DEBUTS-THE-SNEAK-IT-IN-HOODIE-DESIGNED-TO-DISCREETLY-BRING-BURRITOS-TO-THE-MOVIES",
-        "https://ktla.com/food/chipotle-is-helping-people-sneak-food-into-movie-theaters-heres-how/",
-        "https://people.com/chipotle-is-helping-fans-discreetly-sneak-burritos-into-movie-theaters-12262469"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rFYw3q2FleECAPVLqaFAVqabugYyrOamke1A1LWAdEObONFZFY1FrIIBf3U",
-      "image_credit": "Chipotle",
-      "news": [
-        {
-          "url": "https://ir.chipotle.com/2026-11-16-CHIPOTLE-DEBUTS-THE-SNEAK-IT-IN-HOODIE-DESIGNED-TO-DISCREETLY-BRING-BURRITOS-TO-THE-MOVIES",
-          "title": "CHIPOTLE DEBUTS THE \"SNEAK IT IN\" HOODIE DESIGNED TO DISCREETLY BRING BURRITOS TO THE MOVIES",
-          "publisher": "Chipotle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rFYw3q2FleECAPVLqaFAVqabugYyrOamke1A1LWAdEObONFZFY1FrIIBf3U"
-        },
-        {
-          "url": "https://ktla.com/food/chipotle-is-helping-people-sneak-food-into-movie-theaters-heres-how/",
-          "title": "Chipotle is helping people sneak food into movie theaters. Here’s how",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8Us2kEHy90d79l0ciuVCAnN_eMD_D0tGDlxS0BeO6jlO-h-2sczBCJUUMTA0"
-        },
-        {
-          "url": "https://people.com/chipotle-is-helping-fans-discreetly-sneak-burritos-into-movie-theaters-12262469",
-          "title": "Chipotle Just Made It Easier to ‘Discreetly’ Sneak Burritos into Movie Theaters",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi_3YZQyeEgQIf4eEBuJRdVkTUWO_NhUOXUqVk3rkpjH8qrvZtNgC16KV16vI"
-        }
-      ]
-    },
-    {
-      "query": "new york city marathon",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T16:40:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
-        "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
-        "https://cowboystatedaily.com/2026/11/15/rare-condition-turns-routine-gym-workout-into-life-threatening-event-for-teen/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcI8bcNXo4DJ3mzxTWGTfyNx1l3wJbSqO4amtA6KyICdLQ2ZlYxl4k5qUTTA",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
-          "title": "Father of Rachel Apa, NYC Marathon runner who died, calls her death \"unfathomable\"",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcI8bcNXo4DJ3mzxTWGTfyNx1l3wJbSqO4amtA6KyICdLQ2ZlYxl4k5qUTTA"
-        },
-        {
-          "url": "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
-          "title": "Dad of N.Y.C. Marathon Runner Who Died at 24 Recalls Her Heartbreaking Final Texts",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUXijBOPCt-xPh5grgwCsJ7mpA63_MGhBKJkvSRod3KtbVC59hj5JbopGeJc"
-        },
-        {
-          "url": "https://cowboystatedaily.com/2026/11/15/rare-condition-turns-routine-gym-workout-into-life-threatening-event-for-teen/",
-          "title": "Rare Condition That Killed New York Marathoner Threatened Life Of Montana Teen",
-          "publisher": "Cowboy State Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6J9IPsV_Q71Di2eLd4GOeP2QPX3ZEd5taprAbj05cYUfEDTTmbjHsZwFVy8U"
         }
       ]
     }
