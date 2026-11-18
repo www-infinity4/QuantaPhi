@@ -6,6 +6,7 @@ on:
       - 'iowa-live-radio-cards.js'
       - 'test/oracle-radio-media-placement.test.mjs'
       - 'oracle-card-deck.js'
+      - 'oracle-aware-write.mjs'
       - 'oracle-card-deck.css'
       - 'oracle-age-preference.js'
       - 'restricted-ad-card.mjs'
@@ -54,6 +55,7 @@ jobs:
       - name: Parse real Oracle, ad and builder scripts
         run: |
           node --check oracle-card-deck.js
+          node --check oracle-aware-write.mjs
           node --check restricted-ad-card.mjs
           node --check quanta-context-placement.mjs
           node --check quanta-feed-rank.mjs
