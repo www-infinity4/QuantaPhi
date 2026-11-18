@@ -42,10 +42,10 @@ export function toBubblesWorkUrl(draft,baseUrl){
 }
 export function mountAwareWriter({host,stage,doc=document,win=window}={}){
  if(!host||!stage||host.querySelector?.('#oracleAwareWriter'))return null;
- const panel=doc.createElement('section');
+ const panel=doc.createElement('details');
  panel.id='oracleAwareWriter';panel.className='oracle-aware-writer';
  panel.setAttribute('aria-label','Program or repair the selected Oracle card with Bubbles');
- const title=doc.createElement('strong');title.textContent='Aware Carousel · Write and repair';
+ const title=doc.createElement('summary');title.textContent='✎ Program / repair this card';
  const explanation=doc.createElement('p');
  explanation.textContent='Inspect this card, prepare a programming request, and open the existing Bubbles owner-work editor. No code is changed or job submitted by viewing an ad.';
  const action=doc.createElement('select');action.setAttribute('aria-label','Programming action');
