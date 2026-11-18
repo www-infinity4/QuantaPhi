@@ -3,262 +3,17 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T00:01:46.354920Z",
+  "checked_at": "2026-11-18T00:45:33.960574Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "maple leafs vs blackhawks",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T23:40:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/blackhawks/news/preview-blackhawks-continue-homestand-against-maple-leafs",
-        "https://abc7chicago.com/post/chicago-blackhawks-game-tonight-toronto-maple-leafs-united-center-marks-centennial-celebration-nhl-team/20049169/",
-        "https://sports.yahoo.com/articles/maple-leafs-seek-scoring-spark-230053467.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9fcHlKj5_HXs7vqHNN9Oz2CCKlvW_VEKvcsBI83MfRW27XEEG5u01kyeA-dI",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/blackhawks/news/preview-blackhawks-continue-homestand-against-maple-leafs",
-          "title": "PREVIEW: Blackhawks Continue Homestand Against Maple Leafs",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9fcHlKj5_HXs7vqHNN9Oz2CCKlvW_VEKvcsBI83MfRW27XEEG5u01kyeA-dI"
-        },
-        {
-          "url": "https://abc7chicago.com/post/chicago-blackhawks-game-tonight-toronto-maple-leafs-united-center-marks-centennial-celebration-nhl-team/20049169/",
-          "title": "Chicago Blackhawks game tonight vs. Toronto Maple Leafs at United Center marks centennial celebration for NHL team",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX_wEXxC1fWvNOqVpcGAgXx9jlqhWQkgFlz5W29xwccGIZjKfXa9lpNMNzZkI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/maple-leafs-seek-scoring-spark-230053467.html",
-          "title": "Maple Leafs Seek Scoring Spark Against Struggling Blackhawks Tonight",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjTMTtno2SYY9t4h9-Ov4cQACJwGxZSW6uKdkKWx13LiaCPgvvQRGnk-xTzI"
-        }
-      ]
-    },
-    {
-      "query": "capitals vs lightning",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T23:40:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/lightning/news/nuts-bolts-caps-coming-back-to-town",
-        "https://sports.yahoo.com/articles/capitals-vs-lightning-prediction-picks-155739877.html",
-        "https://www.nytimes.com/athletic/7789684/2026/11/17/capitals-vs-lightning-stream-how-to-watch-nov-17/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo5N8gKg0qr1W4hDntjZ-0awilAa3WmMuwMMRf72kUYKxSHv_bERgFqS0PqjE",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/lightning/news/nuts-bolts-caps-coming-back-to-town",
-          "title": "Nuts & Bolts: Caps coming back to town | Tampa Bay Lightning",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo5N8gKg0qr1W4hDntjZ-0awilAa3WmMuwMMRf72kUYKxSHv_bERgFqS0PqjE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/capitals-vs-lightning-prediction-picks-155739877.html",
-          "title": "Capitals vs Lightning Prediction, Picks, NHL Odds for Tuesday, November 17",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI3l0IpPcIX_KNZ60Lqh8IJuj4dEerHC6jveYe_j3cjSQN8A1vHLgxCjuxeLA"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7789684/2026/11/17/capitals-vs-lightning-stream-how-to-watch-nov-17/",
-          "title": "How to watch Capitals vs. Lightning: TV channel and streaming options for November 17",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFyQ_u1wa3tyD0vf6snpzGxRttDPfMPFPq7d20_NsiuPDlFFEmHD92GEO5sT4"
-        }
-      ]
-    },
-    {
-      "query": "waymo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T23:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/17/us/california-waymo-ban-freeways",
-        "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
-        "https://www.nytimes.com/2026/11/17/us/waymo-ban-california-freeway.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUqHi65fOgnH2xuVmHAXGgaP_xdhwO_hhXPi3IhrCEBYt9wh2pEoqqKzLkLH8",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/17/us/california-waymo-ban-freeways",
-          "title": "Waymo pauses freeway operations of its self-driving cars after California ban",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUqHi65fOgnH2xuVmHAXGgaP_xdhwO_hhXPi3IhrCEBYt9wh2pEoqqKzLkLH8"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
-          "title": "Waymo robotaxis banned from California freeways",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCV2uFILYgn9vcl8m9hkIvj-1hcnHgrGWlMJqUu2qOIPuwTrBOuHLsXHYt7C4"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/17/us/waymo-ban-california-freeway.html",
-          "title": "Waymo Pulls Its Driverless Taxis From All U.S. Highways Temporarily",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2heI-5QHxBqD8OFR60Tg71sjrqnIvYzUeTli8QzD60NZGPl4v4R0vxvacsT0"
-        }
-      ]
-    },
-    {
-      "query": "army basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-17T23:40:00Z",
-      "related_news_urls": [
-        "https://goredfoxes.com/news/2026/11/16/mens-basketball-mens-basketball-heads-to-army.aspx",
-        "https://www.bdtonline.com/sports/national_sports/army-black-knights-take-on-the-marist-red-foxes-for-out-of-conference-game/article_ba5d1ebd-517b-5573-9b5e-f098058f445b.html",
-        "https://www.actionnetwork.com/ncaab-game/marist-army-score-odds-november-17-2026/297529"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoxNbEWlctmkT2Tld-PHAaZmFiXsMjJQDck1S2ywEyUAdC1OZtG7CIEWt9UPU",
-      "image_credit": "Marist University Athletics",
-      "news": [
-        {
-          "url": "https://goredfoxes.com/news/2026/11/16/mens-basketball-mens-basketball-heads-to-army.aspx",
-          "title": "Men’s Basketball Heads to Army",
-          "publisher": "Marist University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoxNbEWlctmkT2Tld-PHAaZmFiXsMjJQDck1S2ywEyUAdC1OZtG7CIEWt9UPU"
-        },
-        {
-          "url": "https://www.bdtonline.com/sports/national_sports/army-black-knights-take-on-the-marist-red-foxes-for-out-of-conference-game/article_ba5d1ebd-517b-5573-9b5e-f098058f445b.html",
-          "title": "Army Black Knights take on the Marist Red Foxes for out-of-conference game",
-          "publisher": "Bluefield Daily Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8_SEDXmSB6SixxLSLmjeaTZouryvvI7Nr4xbJXMS8YRucw0ORsr2M4kgRnGI"
-        },
-        {
-          "url": "https://www.actionnetwork.com/ncaab-game/marist-army-score-odds-november-17-2026/297529",
-          "title": "Marist vs. Army Odds & Betting Predictions November 17, 2026",
-          "publisher": "Action Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ4jaNiz_58QYF0T5L5CXQxtWNLk-E8MJWwNYjuWUgfCFe9oFZSZgkz_yB30s"
-        }
-      ]
-    },
-    {
-      "query": "orange county sheriff's department",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T23:30:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/us/california-sheriffs-deputy-special-officer-put-leave-after-5-second-conversation-ice-agents",
-        "https://laist.com/news/oc-sheriffs-deputy-special-officer-placed-on-leave-video-shows-them-talking-with-ice-agents",
-        "https://www.cbsnews.com/losangeles/news/orange-county-jail-employees-placed-on-leave-after-ice-arrest/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4yMPpjgzKUIS73i2d_ojA1oEoZrSnKkvHKSdUCW050iYWYd2tVkpdjyoVImY",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/us/california-sheriffs-deputy-special-officer-put-leave-after-5-second-conversation-ice-agents",
-          "title": "California sheriff's deputy, special officer put on leave after 5-second conversation with ICE agents",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4yMPpjgzKUIS73i2d_ojA1oEoZrSnKkvHKSdUCW050iYWYd2tVkpdjyoVImY"
-        },
-        {
-          "url": "https://laist.com/news/oc-sheriffs-deputy-special-officer-placed-on-leave-video-shows-them-talking-with-ice-agents",
-          "title": "OC Sheriff's deputy and special officer placed on leave. Video shows them talking with ICE agents",
-          "publisher": "LAist",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrJHY9YUf6BVUBIACF0nw7KXONUzkQGBVgIGmK-f1KGaujPwChpIGt-JWzX6Q"
-        },
-        {
-          "url": "https://www.cbsnews.com/losangeles/news/orange-county-jail-employees-placed-on-leave-after-ice-arrest/",
-          "title": "Orange County Jail employees placed on leave after ICE arrest",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQeutGVp7H9lQhBtFWpjd4V5U6Vh5FNqQSNssumjealxXPNtOYhnLfolcwq8"
-        }
-      ]
-    },
-    {
-      "query": "iu basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-17T23:30:00Z",
-      "related_news_urls": [
-        "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-indiana-bad-boy-mower-series-new-york/",
-        "https://www.insidethehall.com/2026/11/17/game-5-iu-basketball-vs-arkansas-preview/",
-        "https://sports.yahoo.com/articles/game-chat-indiana-hoosiers-men-233000012.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFv9b05KyaKw9Rn2i9kHP_k2kC9dsuEHe4o-jxAEhHaWFNXhRnfrMkrHmjhno",
-      "image_credit": "Arkansas Razorbacks",
-      "news": [
-        {
-          "url": "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-indiana-bad-boy-mower-series-new-york/",
-          "title": "MBB Preview: Arkansas vs Indiana @ Bad Boy Mower Series – New York",
-          "publisher": "Arkansas Razorbacks",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFv9b05KyaKw9Rn2i9kHP_k2kC9dsuEHe4o-jxAEhHaWFNXhRnfrMkrHmjhno"
-        },
-        {
-          "url": "https://www.insidethehall.com/2026/11/17/game-5-iu-basketball-vs-arkansas-preview/",
-          "title": "Game 5: IU basketball vs. Arkansas preview",
-          "publisher": "Inside the Hall",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVv6BxtugKkQefaHL4aBPHx8r-QEueMCLYUGlqADDW1Lw_pXiOpvbtOCx_rE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/game-chat-indiana-hoosiers-men-233000012.html",
-          "title": "Game Chat: Indiana Hoosiers men’s basketball vs Arkansas",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS12LamGBNtKNgWea6_ja58usuXkQIFsMHWU-cZpTEcQW9eA3zyLZPm64ucENs"
-        }
-      ]
-    },
-    {
-      "query": "lipscomb vs purdue",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-17T23:30:00Z",
-      "related_news_urls": [
-        "https://purduesports.com/news/2026/11/16/boilermakers-aim-for-3rd-straight-win-tuesday-vs-lipscomb",
-        "https://www.indystar.com/story/sports/college/purdue/2026/11/17/purdue-basketball-starting-lineup-vs-lipscomb-antione-west-jr-over-luke-ertel-jacob-webber-injury/92834156007/",
-        "https://sports.yahoo.com/articles/purdue-men-basketball-watch-purdue-223000401.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mh3gIO-4UOCkGQBX9cmZyJlbZEPJysq36pcF_sYhwsGg0z6E7l8-MKzcjQo",
-      "image_credit": "Purdue Boilermakers",
-      "news": [
-        {
-          "url": "https://purduesports.com/news/2026/11/16/boilermakers-aim-for-3rd-straight-win-tuesday-vs-lipscomb",
-          "title": "Boilermakers Aim For 3rd Straight Win Tuesday vs. Lipscomb",
-          "publisher": "Purdue Boilermakers",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mh3gIO-4UOCkGQBX9cmZyJlbZEPJysq36pcF_sYhwsGg0z6E7l8-MKzcjQo"
-        },
-        {
-          "url": "https://www.indystar.com/story/sports/college/purdue/2026/11/17/purdue-basketball-starting-lineup-vs-lipscomb-antione-west-jr-over-luke-ertel-jacob-webber-injury/92834156007/",
-          "title": "Purdue sharpshooter available, starting lineup change for game vs Lipscomb",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3KS_1bymNxSKZJySg34cvsf0v2vPmX_6Gu2m-XI42MbqcjJEkDc9Fkkpfwg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/purdue-men-basketball-watch-purdue-223000401.html",
-          "title": "Purdue Men’s Basketball: How to Watch Purdue (2-2) vs. Lipscomb (3-2) & Fan Discussion",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0saCv6jZxupIctquZVk170L-gk5p9_WD1MwNW_di-P4yqFZ9p1i0yioU3PlA"
-        }
-      ]
-    },
-    {
-      "query": "seleccion mexicana",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-17T23:30:00Z",
+      "query": "mexico vs",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T00:30:00Z",
       "related_news_urls": [
         "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17526031/seleccion-mexicana-rafa-marquez-jamaica-futuro-continuidad",
-        "https://www.azcentral.com/story/deportes/futbol/2026/11/17/mexico-vs-jamaica-nations-league-cup-cuartos-hora-canal-donde-ver/92819330007/",
-        "https://www.record.com.mx/historia/el-regreso-de-rodrigo-huescas-y-los-cambios-que-contempla-rafa-marquez-para-remontar-ante-jamaica-2026111717583674141"
+        "https://www.univision.com/noticias/mexico-vs-jamaica-a-que-hora-y-donde-ver-en-vivo-la-vuelta-de-los-cuartos-de-final-de-concacaf-nations-league-video",
+        "https://www.azcentral.com/story/deportes/futbol/2026/11/17/mexico-vs-jamaica-nations-league-cup-cuartos-hora-canal-donde-ver/92819330007/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwd3udzetGjxKQFpZuTV4slnIu4PjVbYOUQr8Oz4HhLi62B4WicBeln1ti6E",
       "image_credit": "ESPN Deportes",
@@ -271,88 +26,333 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwd3udzetGjxKQFpZuTV4slnIu4PjVbYOUQr8Oz4HhLi62B4WicBeln1ti6E"
         },
         {
+          "url": "https://www.univision.com/noticias/mexico-vs-jamaica-a-que-hora-y-donde-ver-en-vivo-la-vuelta-de-los-cuartos-de-final-de-concacaf-nations-league-video",
+          "title": "México vs. Jamaica hoy: ¿A qué hora y dónde ver en vivo la vuelta de los cuartos de final de Concacaf Nations League 2026?",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrvMv5-GNUWV1DRDdgH2xT4-OLoUQKfMsJCvCOtyE-0QFhHnSk2ocdWdtD7KI"
+        },
+        {
           "url": "https://www.azcentral.com/story/deportes/futbol/2026/11/17/mexico-vs-jamaica-nations-league-cup-cuartos-hora-canal-donde-ver/92819330007/",
           "title": "¿Cuándo juegan México vs Jamaica? Entérate hora y dónde ver",
           "publisher": "The Arizona Republic",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStsHBfYyHD8V4NkaioXxawD0RtQzT2ftuxJk03bT9Hq3JfC_wvgtDU1qAh5j4"
-        },
-        {
-          "url": "https://www.record.com.mx/historia/el-regreso-de-rodrigo-huescas-y-los-cambios-que-contempla-rafa-marquez-para-remontar-ante-jamaica-2026111717583674141",
-          "title": "El regreso de Rodrigo Huescas y los cambios que contempla Rafa Márquez para remontar ante Jamaica",
-          "publisher": "Récord",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuU9Gw19qE2G-sll77_dZjPhOxE19VTx3n3L748_dBUssB7tYGE5oIhN9P8cE"
         }
       ]
     },
     {
-      "query": "dirty bomb threat",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-17T23:30:00Z",
+      "query": "christian pulisic",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T00:30:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/16/politics/us-intelligence-iran-dirty-bomb",
-        "https://www.wusa9.com/article/news/nation-world/what-is-dirty-bomb-iran-capable-of-this-type-of-attack-dc/65-7b5e01af-1fd0-45a1-9099-a93b72b0f833",
-        "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html"
+        "https://www.espn.com/soccer/story/_/id/50504141/manchester-united-mauricio-pochettino-jim-ratcliffe-glazers-transfers",
+        "https://www.nytimes.com/athletic/7785810/2026/11/16/mauricio-pochettino-america-usmnt-us-soccer/",
+        "https://www.foxnews.com/outkick-sports/former-usmnt-coach-says-american-sports-reward-losers-leaves-manchester-united"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_tc8LL3ZQjmjQ3kUbNoWDFz9cLr_daCKJtL7NTSTXvXqHOoo7Sggo1OVuhqg",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE5JO_ojNdROMKe07O895nQQqj-B-oAovrb0mVfklvpWVJq2rOIrzglEH4Xws",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/16/politics/us-intelligence-iran-dirty-bomb",
-          "title": "Exclusive: US intel indicates Iran developing plans to potentially detonate a dirty bomb in Washington, sources say",
-          "publisher": "CNN",
+          "url": "https://www.espn.com/soccer/story/_/id/50504141/manchester-united-mauricio-pochettino-jim-ratcliffe-glazers-transfers",
+          "title": "Mauricio Pochettino can't fix Man United on his own, the owners have to do their jobs",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_tc8LL3ZQjmjQ3kUbNoWDFz9cLr_daCKJtL7NTSTXvXqHOoo7Sggo1OVuhqg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE5JO_ojNdROMKe07O895nQQqj-B-oAovrb0mVfklvpWVJq2rOIrzglEH4Xws"
         },
         {
-          "url": "https://www.wusa9.com/article/news/nation-world/what-is-dirty-bomb-iran-capable-of-this-type-of-attack-dc/65-7b5e01af-1fd0-45a1-9099-a93b72b0f833",
-          "title": "What is a 'dirty bomb' and is Iran capable of this type of attack in DC?",
-          "publisher": "WUSA9",
+          "url": "https://www.nytimes.com/athletic/7785810/2026/11/16/mauricio-pochettino-america-usmnt-us-soccer/",
+          "title": "What Pochettino liked about U.S.’s soccer quirks, what he didn’t, and what he leaves behind - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2cjM_XvVXZ1K4X81hwUbPsLkHklz-txJ43Sg6YkhgY-DX61x4gKKUpdSa9MM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvdpCcwgRrNz5cleh129H7ybNuCRv1831QHApaS0MElhh3kmph0NPN1aCDF9E"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
-          "title": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyMntLvzLvzNRMGZYmkCyRaWLhHglhL1yYlK9ZnXongO3ryui2U8RJ0c2k1c"
-        }
-      ]
-    },
-    {
-      "query": "tennessee basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-17T23:30:00Z",
-      "related_news_urls": [
-        "https://utsports.com/news/2026/11/16/mens-basketball-hoops-central-14-14-tennessee-vs-2-3-michigan-state",
-        "https://www.lansingstatejournal.com/story/sports/columnists/graham-couch/2026/11/17/msu-basketball-at-tennessee-prediction-preview-analysis-how-to-watch-betting-line/92794315007/",
-        "https://www.foxnews.com/outkick/spartans-look-exploit-tennessee-thin-frontcourt-road-college-basketball-battle"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj2QKampBBt-2lMgYEFRKpcCakzV9gTBJtQEmKAZFzW-_rd5PY_lcfThApKtI",
-      "image_credit": "University of Tennessee Athletics",
-      "news": [
-        {
-          "url": "https://utsports.com/news/2026/11/16/mens-basketball-hoops-central-14-14-tennessee-vs-2-3-michigan-state",
-          "title": "HOOPS CENTRAL: #14/14 Tennessee vs. #2/3 Michigan State",
-          "publisher": "University of Tennessee Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj2QKampBBt-2lMgYEFRKpcCakzV9gTBJtQEmKAZFzW-_rd5PY_lcfThApKtI"
-        },
-        {
-          "url": "https://www.lansingstatejournal.com/story/sports/columnists/graham-couch/2026/11/17/msu-basketball-at-tennessee-prediction-preview-analysis-how-to-watch-betting-line/92794315007/",
-          "title": "Michigan State basketball at Tennessee Tipoff: Matchup analysis and a prediction",
-          "publisher": "Lansing State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR75kT6Jk4th9NSRSj2LYx0SWOxlM0UBVLJcS0aVSSBXZ7j9DBHhbokMzzn77U"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick/spartans-look-exploit-tennessee-thin-frontcourt-road-college-basketball-battle",
-          "title": "Spartans look to exploit Tennessee's thin frontcourt in a road college basketball battle",
+          "url": "https://www.foxnews.com/outkick-sports/former-usmnt-coach-says-american-sports-reward-losers-leaves-manchester-united",
+          "title": "Former USMNT coach says 'American sports reward losers' as he leaves for Manchester United",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSM4o5NYT4gcoGA2Kanf6loK5piyCEJDQSfU_vEYbEsttKBEK1A1kN3DmzEjpQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDT_aQWhfTbuj0MoffeshYFQM5RL9BU2zd7Mddk-6eb2lMDECzp5N5u97Fx9M"
+        }
+      ]
+    },
+    {
+      "query": "morgan freeman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T00:30:00Z",
+      "related_news_urls": [
+        "https://wreg.com/news/local/morgan-freeman-blues-project-with-deep-memphis-roots-earns-grammy-nomination/",
+        "https://bluesrockreview.com/2026/11/2027-blues-grammy-nominations-announced.html",
+        "https://rockandbluesmuse.com/2026/11/16/liled-the-blues-imperials-slideways-receives-grammy-award-nomination/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yfMpv0A_om_bejAlx28bx1G2sNWCOoUOZg91ERCkq3Ildt7T31KrQZOFihw",
+      "image_credit": "WREG.com",
+      "news": [
+        {
+          "url": "https://wreg.com/news/local/morgan-freeman-blues-project-with-deep-memphis-roots-earns-grammy-nomination/",
+          "title": "Morgan Freeman blues project with deep Memphis roots earns Grammy nomination",
+          "publisher": "WREG.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yfMpv0A_om_bejAlx28bx1G2sNWCOoUOZg91ERCkq3Ildt7T31KrQZOFihw"
+        },
+        {
+          "url": "https://bluesrockreview.com/2026/11/2027-blues-grammy-nominations-announced.html",
+          "title": "2027 Blues Grammy nominations announced",
+          "publisher": "Blues Rock Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZt4sb3vqXUDEiiajlCjRHF3f70vcB2EfNeW2v1aIHUbR09-JPN97Ye5v4YF0"
+        },
+        {
+          "url": "https://rockandbluesmuse.com/2026/11/16/liled-the-blues-imperials-slideways-receives-grammy-award-nomination/",
+          "title": "Lil’Ed & The Blues Imperials’ Slideways Receives Grammy Award Nomination",
+          "publisher": "Rock & Blues Muse",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReJ68XyvCz9o4h-l1xlj3dADB-8AQBdqlVJGYRkcicY2ceAW58RhbJ3pdnDak"
+        }
+      ]
+    },
+    {
+      "query": "ncaa basketball rankings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T00:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50493491/ap-mens-top-25-poll-reaction-2026-27-week-2",
+        "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after",
+        "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtKGNN2WUF0oJd4alzMay8QUhpMb0M7XxNYw2sNug2YT0C7pn0PxgEAX0Zhs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50493491/ap-mens-top-25-poll-reaction-2026-27-week-2",
+          "title": "Breaking down the 2026-27 AP Top 25 men's basketball poll for Week 2",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtKGNN2WUF0oJd4alzMay8QUhpMb0M7XxNYw2sNug2YT0C7pn0PxgEAX0Zhs"
+        },
+        {
+          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after",
+          "title": "Florida reclaims top spot in Andy Katz's men's basketball Power 44 rankings after Week 2",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxTlVSV8YXdJYx5w1tprDqJKbthwTJ7CgHRlmDNxVwXUVb98rS0lo22BJTT6k"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/",
+          "title": "AP Top 25: Michigan State rises to No. 2, LSU replaces Kentucky in college basketball rankings",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWv6OvUUjjVcJgdIIPMp2FCccTnSitOrE6prsQ47SdiRniCmpZRJgYk-ORjlA"
+        }
+      ]
+    },
+    {
+      "query": "mark carney",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T00:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/world/canada-and-china-draw-closer-with-expanded-trade-pact-b4566a38",
+        "https://www.bloomberg.com/news/newsletters/2026-11-17/canada-edges-a-bit-closer-to-china-as-carney-and-xi-strike-another-deal",
+        "https://www.nytimes.com/2026/11/16/world/canada/carney-china-xi-trump-putin-trade.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6PM98uylW8diqSm2bS_vnkv3od5fctLWde_EM2H6YGt4NT33DAL3CWStrIjw",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/world/canada-and-china-draw-closer-with-expanded-trade-pact-b4566a38",
+          "title": "Canada and China Draw Closer with Expanded Trade Pact",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6PM98uylW8diqSm2bS_vnkv3od5fctLWde_EM2H6YGt4NT33DAL3CWStrIjw"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/newsletters/2026-11-17/canada-edges-a-bit-closer-to-china-as-carney-and-xi-strike-another-deal",
+          "title": "Carney Edges Closer to China as He Strikes Another Deal With Xi",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnc7Ok_1DpjunKY5iYIEJZN_fEXrth8_GEnV6TDNBukiKryPdrvQFA6-jtvng"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/16/world/canada/carney-china-xi-trump-putin-trade.html",
+          "title": "Canada’s Leader, Once a Curiosity at Asia Summits, Is Now a Star",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStQv4yspFBx4RP2fa3fwYf8ryNFf8JtDNClodczl2HjNWeOdnSs2RI6V2qf-0"
+        }
+      ]
+    },
+    {
+      "query": "mt st mary's vs nebraska",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T00:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nebraska-women-basketball-vs-mount-235003384.html",
+        "https://www.si.com/college/nebraska/basketball/how-to-watch-no-25-nebraska-women-s-basketball-vs-mount-st-mary-s-with-preview-breakdown-stream-2026",
+        "https://huskers.com/news/2026/11/16/huskers-back-home-to-meet-the-mount"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQhrOFUGHwJgYOpLW_3a_nidt-_g3kOvXIRCEyAWDdasa-jV6V1juzcxBtoQk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nebraska-women-basketball-vs-mount-235003384.html",
+          "title": "Nebraska Women’s Basketball vs Mount St. Mary’s Preview and Live Discussion",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQhrOFUGHwJgYOpLW_3a_nidt-_g3kOvXIRCEyAWDdasa-jV6V1juzcxBtoQk"
+        },
+        {
+          "url": "https://www.si.com/college/nebraska/basketball/how-to-watch-no-25-nebraska-women-s-basketball-vs-mount-st-mary-s-with-preview-breakdown-stream-2026",
+          "title": "How to Watch No. 25 Nebraska Women’s Basketball vs. Mount St. Mary’s with Preview, Breakdown, Stream",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhHH8sjiRGDkyGer5OUMP9ZDLIM0vIxXZbmUicypwTlUsga6nVBBQSmC2zjtA"
+        },
+        {
+          "url": "https://huskers.com/news/2026/11/16/huskers-back-home-to-meet-the-mount",
+          "title": "Huskers Back Home to Meet the Mount - University of Nebraska - Official Athletics Website",
+          "publisher": "huskers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMntaWEWOfnsoglXA5Z-YBxq2HQb_cooCK7BctvCRXu32IpQHJJE_tgI8_j30"
+        }
+      ]
+    },
+    {
+      "query": "reimbursement",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T00:20:00Z",
+      "related_news_urls": [
+        "https://www.tradingview.com/news/urn:summary_document_transcript:quartr.com:4668737:0-tlx-bipass-data-and-pixclara-reimbursement-milestones-set-up-key-2027-growth-catalysts/",
+        "https://www.morningstar.com/company-reports/1510660-telix-pharmaceuticals-corporate-actionvote-in-favor-of-share-issues-to-acquire-itm",
+        "https://telixpharma.com/news-views/telix-to-participate-in-ubs-global-biopharma-conference/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY",
+      "image_credit": "TradingView",
+      "news": [
+        {
+          "url": "https://www.tradingview.com/news/urn:summary_document_transcript:quartr.com:4668737:0-tlx-bipass-data-and-pixclara-reimbursement-milestones-set-up-key-2027-growth-catalysts/",
+          "title": "TLX: BiPASS data and Pixclara reimbursement milestones set up key 2027 growth catalysts",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        },
+        {
+          "url": "https://www.morningstar.com/company-reports/1510660-telix-pharmaceuticals-corporate-actionvote-in-favor-of-share-issues-to-acquire-itm",
+          "title": "Telix Pharmaceuticals: Corporate Action—Vote in Favor of Share Issues to Acquire ITM",
+          "publisher": "Morningstar",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA7OHRYksaZ-P0_oBZcTQeJyuuSl_F3Xw8-oxfccKYJPtgeOgSzxFI_TcfR7I"
+        },
+        {
+          "url": "https://telixpharma.com/news-views/telix-to-participate-in-ubs-global-biopharma-conference/",
+          "title": "Telix to Participate in UBS Global Biopharma Conference",
+          "publisher": "Telix Pharmaceuticals Limited",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtFBI2Isb8D8QRUVTU9akBvvbxfDORDpCsuT91WCb3ltGZyCmuuC4sI__uOjA"
+        }
+      ]
+    },
+    {
+      "query": "is deni avdija playing tonight",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T00:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50508081/shannon-carries-wolves-edwards-ball-struggling-show-depth",
+        "https://www.oregonlive.com/blazers/2026/11/trail-blazers-all-star-listed-as-questionable-vs-timberwolves.html",
+        "https://www.blazersedge.com/gameday-coverage/118557/portland-trail-blazers-minnesota-timberwolves-nba-preview-injury-report-tv-time-damian-lillard-terrence-shannon-lamelo-ball"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdfKTNaMmoN47kB_9nYwGpsINMuBtS5pSDPCXh1MRWRcbgv3kc5BLTaLJOLkY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50508081/shannon-carries-wolves-edwards-ball-struggling-show-depth",
+          "title": "Shannon carries Wolves with Edwards out, Ball struggling in show of versatility",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdfKTNaMmoN47kB_9nYwGpsINMuBtS5pSDPCXh1MRWRcbgv3kc5BLTaLJOLkY"
+        },
+        {
+          "url": "https://www.oregonlive.com/blazers/2026/11/trail-blazers-all-star-listed-as-questionable-vs-timberwolves.html",
+          "title": "Trail Blazers All-Star listed as questionable vs. Timberwolves",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMf6F1i9Pq9mHhuyJrzyOh_3UyBTGajBq7BND2XWszxIhbcF6-f7a9UWCixfc"
+        },
+        {
+          "url": "https://www.blazersedge.com/gameday-coverage/118557/portland-trail-blazers-minnesota-timberwolves-nba-preview-injury-report-tv-time-damian-lillard-terrence-shannon-lamelo-ball",
+          "title": "Blazers vs Timberwolves Part 2 Preview",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAYAvLLu3eVzoD0KJp-H2YtJ3WBivh-dyQSE0rhKjm7_T7nGlPz-kWjwpCXNU"
+        }
+      ]
+    },
+    {
+      "query": "ludwig",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T00:20:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1304003/ludwig-season-finale-dancing-with-the-stars-semifinals-ncis-origins-phony/",
+        "https://www.imdb.com/news/ni66115211/?ref_=nwc_art_perm",
+        "https://www.desmoinesregister.com/press-release/story/154850/dunlap-bennett-ludwig-and-founding-partner-thomas-dunlap-win-outstanding-achievement-in-ai-technology/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_du3IvhBnLWw0JZp-TVhAMiu53Wp2hp8jsUBXN5XsTF5VdjbYHQn1cXAWRU0",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1304003/ludwig-season-finale-dancing-with-the-stars-semifinals-ncis-origins-phony/",
+          "title": "‘Ludwig’ Finale, ‘Dancing’ Semifinals, Lala Land on ‘NCIS: Origins,’ Unmasking a ‘Phony’",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_du3IvhBnLWw0JZp-TVhAMiu53Wp2hp8jsUBXN5XsTF5VdjbYHQn1cXAWRU0"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66115211/?ref_=nwc_art_perm",
+          "title": "‘Ludwig’ Finale, ‘Dancing’ Semifinals, Lala Land on ‘NCIS: Origins,’ Unmasking a ‘Phony’",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvnhSh-lCDwm5zwwNZiCheEC1TZhlfPb7Rol_t9ToMC-YwpEL18Kuh9Wqxqvo"
+        },
+        {
+          "url": "https://www.desmoinesregister.com/press-release/story/154850/dunlap-bennett-ludwig-and-founding-partner-thomas-dunlap-win-outstanding-achievement-in-ai-technology/",
+          "title": "Dunlap Bennett & Ludwig and Founding Partner Thomas Dunlap Win Outstanding Achievement in AI & Technology",
+          "publisher": "The Des Moines Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ohIK2PYpF5yUskaOPRBfS7GalDBUWEFYgO7EDdz7vc5eokNyVlNYB08SVK0"
+        }
+      ]
+    },
+    {
+      "query": "tyler boucher",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T00:20:00Z",
+      "related_news_urls": [
+        "https://www.sportsnet.ca/nhl/article/senators-call-up-first-rounder-tyler-boucher-from-ahl/",
+        "https://www.nhl.com/senators/news/the-view-from-the-proudest-seats-in-the-house",
+        "https://www.prohockeyrumors.com/2026/11/senators-recall-tyler-boucher.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2aaiUIeNTC3408ylu208wj-VTH2KP3rmFoSHj5_9_bJsWIo73G7tO2nJ8vRg",
+      "image_credit": "Sportsnet.ca",
+      "news": [
+        {
+          "url": "https://www.sportsnet.ca/nhl/article/senators-call-up-first-rounder-tyler-boucher-from-ahl/",
+          "title": "Senators call up first-rounder Tyler Boucher from AHL",
+          "publisher": "Sportsnet.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2aaiUIeNTC3408ylu208wj-VTH2KP3rmFoSHj5_9_bJsWIo73G7tO2nJ8vRg"
+        },
+        {
+          "url": "https://www.nhl.com/senators/news/the-view-from-the-proudest-seats-in-the-house",
+          "title": "The view from the proudest seats in the house",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUzx6sE6zxEYvTOUvXM1yQt6F8M-vbA53m8YUoQb7C0sFrZ1kjPrTGCQ5gDNM"
+        },
+        {
+          "url": "https://www.prohockeyrumors.com/2026/11/senators-recall-tyler-boucher.html",
+          "title": "Senators Recall Tyler Boucher",
+          "publisher": "Pro Hockey Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXVK3WaPduGT2ShxebxnagJXXN1JCyz5T2-UghuTtGh8wDma8iBn15od8EBHY"
         }
       ]
     }
