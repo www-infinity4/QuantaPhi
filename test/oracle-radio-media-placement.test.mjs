@@ -41,3 +41,13 @@ test('Fred Media Star opens first in the public Oracle carousel without overridi
  assert.ok(fred.includes('play.href=active.source;play.target="_blank";'),'original X replay remains provider-hosted');
  assert.ok(!opening.includes('.click(')&&!opening.includes('.play('),'opening Fred must not autoplay or spend coins');
 });
+
+test('post-merge Oracle carousel keeps Avatar AI and private Nuance Discovery on the same homepage',()=>{
+ const html=read('index.html');
+ assert.match(html,/id="oracleCardDepartment"/,'Oracle department chooser is present');
+ assert.match(html,/oracle-age-preference\.js/,'21+ browsing gate is preserved');
+ assert.match(html,/id="iowaRadioMedia"/,'media radio remains in the new placement');
+ assert.match(html,/id="nuanceDiscoveryCard"/,'owner Nuance card is not deleted');
+ assert.match(html,/nuance-discovery-card\.mjs/,'owner Nuance script remains wired');
+ assert.match(html,/avatar-ai-card\.css/,'public Avatar prompt card remains styled');
+});
