@@ -1,0 +1,21 @@
+name: Science Lab source cards and GRB protocol
+on:
+  pull_request:
+    paths:
+      - 'research-lab/**'
+      - 'test/research-lab-grb.test.mjs'
+      - '.github/workflows/research-lab-grb.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-privacy:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Source-backed research and privacy regressions
+        run: node --test test/research-lab-grb.test.mjs
