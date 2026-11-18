@@ -3,34 +3,314 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T04:31:12.178565Z",
+  "checked_at": "2026-11-18T05:01:34.227849Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "montana state vs gonzaga",
+      "query": "brandon miller",
       "approx_searches": "1000+",
-      "published_at": "2026-11-18T04:10:00Z",
+      "published_at": "2026-11-18T04:40:00Z",
       "related_news_urls": [
-        "https://www.spokesman.com/stories/2026/nov/16/gonzaga-team-looking-to-turn-page-from-lsu-loss-ho/",
-        "https://www.swxlocalsports.com/spokane/gonzaga/mens-basketball/game-preview-no-22-gonzaga-vs-montana-state-zags-return-to-the-kennel-to-host/article_99675c35-df33-421a-88f4-1afc38ff8daa.html",
-        "https://sports.yahoo.com/articles/watch-gonzaga-vs-montana-state-195922422.html"
+        "https://sports.yahoo.com/articles/hornets-panic-meter-charlotte-worried-190005105.html",
+        "https://www.rotoballer.com/player-news/brandon-miller-off-the-injury-report-for-sunday/1994158",
+        "https://therookiewire.usatoday.com/story/sports/nba/rookie/2026/11/15/hornets-forward-brandon-miller-groin-upgraded-to-active-vs-clippers/92793774007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDI0of_nXt2PtlMYyMg--PTgEgzwXggxs7_iOAr_PtKd0_Tz8eOkP2lkeGviA",
-      "image_credit": "The Spokesman-Review",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3nhzbcUwa0l2WnLvx7KHBAXq1u-6P8gSfkA5fhrkbo6PlUvPDGsWRp8Ol18",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.spokesman.com/stories/2026/nov/16/gonzaga-team-looking-to-turn-page-from-lsu-loss-ho/",
-          "title": "Gonzaga team looking to turn page from LSU loss hosts Big Sky favorite Montana State",
-          "publisher": "The Spokesman-Review",
+          "url": "https://sports.yahoo.com/articles/hornets-panic-meter-charlotte-worried-190005105.html",
+          "title": "Hornets Panic Meter: Should Charlotte Be Worried About Brandon Miller?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDI0of_nXt2PtlMYyMg--PTgEgzwXggxs7_iOAr_PtKd0_Tz8eOkP2lkeGviA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3nhzbcUwa0l2WnLvx7KHBAXq1u-6P8gSfkA5fhrkbo6PlUvPDGsWRp8Ol18"
         },
+        {
+          "url": "https://www.rotoballer.com/player-news/brandon-miller-off-the-injury-report-for-sunday/1994158",
+          "title": "Brandon Miller Off the Injury Report for Sunday - NBA News | Fantasy Basketball",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7uv9K6eCGxpL1j2jh90Zux3kLqj2p20jP96f1Mdh85syLifkN8qGvslf-lKI"
+        },
+        {
+          "url": "https://therookiewire.usatoday.com/story/sports/nba/rookie/2026/11/15/hornets-forward-brandon-miller-groin-upgraded-to-active-vs-clippers/92793774007/",
+          "title": "Brandon Miller (groin) upgraded to active Sunday vs. Clippers",
+          "publisher": "Rookie Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSamqYsBzJrhbdYU_VXF1FkF4CdanKh0h7y-pFkYF_wSNgjOU4u4fy3_b3HCVQ"
+        }
+      ]
+    },
+    {
+      "query": "moussa diabaté",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T04:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/moussa-diabat-cha-technical-foul-000857625.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/16/moussa-diabates-cha-technical-foul-at-613-in-the/92818542007/",
+        "https://www.espn.com/nba/story/_/id/50507278/heat-star-bam-adebayo-exits-win-early-hip-tightness"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXCFvc7konN0hi9MCt8EqDLt9UM81yffKNktL0hEjC1QHuHzaabjtWl3EJqPc",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/moussa-diabat-cha-technical-foul-000857625.html",
+          "title": "Moussa Diabaté’s (CHA) technical foul at 6:13 in the …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXCFvc7konN0hi9MCt8EqDLt9UM81yffKNktL0hEjC1QHuHzaabjtWl3EJqPc"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/16/moussa-diabates-cha-technical-foul-at-613-in-the/92818542007/",
+          "title": "Moussa Diabaté’s (CHA) technical foul at 6:13 in the …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTq0nErO129LNXBtEvMfKFlulf-sJ_Fqu3dR2HpDOqBCLcQ-O5feEsUcygPb84"
+        },
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50507278/heat-star-bam-adebayo-exits-win-early-hip-tightness",
+          "title": "Heat pull Bam Adebayo (hip) early in win, don't expect long-term issue",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUw0jOWdGtSYv-V1VD9RRv5wqVgMc6D8F9FNrCQOd3fzJb7qgxtHJkX1ek3cY"
+        }
+      ]
+    },
+    {
+      "query": "naz reid",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T04:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/nba/news/naz-reid-trade-rumors-landing-spots-hornets-warriors-raptors-cavaliers-pistons/",
+        "https://bleacherreport.com/articles/25534121-lakers-must-pursue-naz-reid-trade-give-luka-chance-championship-amid-latest-nba-rumors",
+        "https://pistonpowered.com/detroit-pistons-could-get-second-chance-naz-reid"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRnWvpPU-GqYfYkMIkuUQgJQECW35WRmWSb4sb2JZN3SWywygWhh1CSidlYWg",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/nba/news/naz-reid-trade-rumors-landing-spots-hornets-warriors-raptors-cavaliers-pistons/",
+          "title": "Naz Reid landing spots: Four NBA contenders that make sense if Hornets look to move sharp-shooting big man",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRnWvpPU-GqYfYkMIkuUQgJQECW35WRmWSb4sb2JZN3SWywygWhh1CSidlYWg"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25534121-lakers-must-pursue-naz-reid-trade-give-luka-chance-championship-amid-latest-nba-rumors",
+          "title": "Lakers Must Pursue Naz Reid Trade To Give Luka Chance at Championship amid Latest NBA Rumors",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9Y-CLtYMnoBYFZ9ShgX6PvlQY5OxvI0dKRPCcHvV3FbnHvgDfRAkly5FDi98"
+        },
+        {
+          "url": "https://pistonpowered.com/detroit-pistons-could-get-second-chance-naz-reid",
+          "title": "Pistons could get a second chance at Naz Reid, but it won't be cheap",
+          "publisher": "PistonPowered",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBrJ0OecQa6kPJ5cEirCsjVXsIC2dMfda0LKBNwdiWgSS0xU5-Kr82KP9Nqyc"
+        }
+      ]
+    },
+    {
+      "query": "mega millions numbers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T04:30:00Z",
+      "related_news_urls": [
+        "https://www.wkyc.com/article/news/lottery/northeast-ohio-mega-millions-player-100k-prize-see-where-winning-ticket-was-sold-check-lucky-numbers-nov-13-ohio-lottery-results/95-98bbc9fd-8457-40c9-9b96-b90429f2679f",
+        "https://www.freep.com/story/news/lottery/2026/11/17/mega-millions-winning-numbers-tuesday-november-17-2026-results/92533741007/",
+        "https://www.cleveland.com/lottery/2026/11/mega-millions-numbers-for-tuesday-nov-17-2026-jackpot-600-million.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I",
+      "image_credit": "WKYC",
+      "news": [
+        {
+          "url": "https://www.wkyc.com/article/news/lottery/northeast-ohio-mega-millions-player-100k-prize-see-where-winning-ticket-was-sold-check-lucky-numbers-nov-13-ohio-lottery-results/95-98bbc9fd-8457-40c9-9b96-b90429f2679f",
+          "title": "Northeast Ohio Mega Millions player hits $100K prize: See where the winning ticket was sold, check the lucky numbers for Nov. 13",
+          "publisher": "WKYC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I"
+        },
+        {
+          "url": "https://www.freep.com/story/news/lottery/2026/11/17/mega-millions-winning-numbers-tuesday-november-17-2026-results/92533741007/",
+          "title": "Mega Millions winning numbers for Tuesday, Nov. 17, 2026",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXHqMIOjFDaagXhUNbfGpgzWHntDfsk9dH1zQxwV76ivmqrwYHmUERhUglC1I"
+        },
+        {
+          "url": "https://www.cleveland.com/lottery/2026/11/mega-millions-numbers-for-tuesday-nov-17-2026-jackpot-600-million.html",
+          "title": "Mega Millions numbers for Tuesday, Nov. 17, 2026; jackpot $600 million",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl3O2wgOW-a1EM3Vu86NJrbGkCZOATMpM2Ym2mq36WiCGOQukVdLjr7Che46c"
+        }
+      ]
+    },
+    {
+      "query": "tyran stokes",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T04:30:00Z",
+      "related_news_urls": [
+        "https://throughthephog.com/tyran-stokes-injury-update-kansas-star-heads-locker-room-scare-vs-unlv",
+        "https://www.cbssports.com/college-basketball/news/freshman-of-the-week-tyran-stokes-kansas-ranking-freshman/",
+        "https://big12sports.com/news/2026/11/16/kansas-sweeps-monster-energy-big-12-mens-basketball-weekly-awards.aspx"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg2EjbgLczqgK_eBvtTppBurmmQis_VPd2I66FNB8h9aJxlEbPzzryD01XR00",
+      "image_credit": "Through the Phog",
+      "news": [
+        {
+          "url": "https://throughthephog.com/tyran-stokes-injury-update-kansas-star-heads-locker-room-scare-vs-unlv",
+          "title": "Tyran Stokes injury update: Kansas star heads to locker room in a scare vs. UNLV",
+          "publisher": "Through the Phog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg2EjbgLczqgK_eBvtTppBurmmQis_VPd2I66FNB8h9aJxlEbPzzryD01XR00"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/freshman-of-the-week-tyran-stokes-kansas-ranking-freshman/",
+          "title": "Ranking college basketball's top newcomers: Kansas' Tyran Stokes earns Freshman of the Week honors",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9Jh4DiqxyfsdezKcDKN0uPZ6hd4NzasSc80bfs2hwMiAmJkKF2aJXPv9sGGY"
+        },
+        {
+          "url": "https://big12sports.com/news/2026/11/16/kansas-sweeps-monster-energy-big-12-mens-basketball-weekly-awards.aspx",
+          "title": "Kansas Sweeps Monster Energy Big 12 Men’s Basketball Weekly Awards",
+          "publisher": "Big 12 Conference",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCy7pQNOJfya9OAkPq7HvV2Fpxtt2fYQaIh8GNPIKoqhAe6wNVUYR8ZgfmXKs"
+        }
+      ]
+    },
+    {
+      "query": "grant williams",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T04:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50507278/heat-star-bam-adebayo-exits-win-early-hip-tightness",
+        "https://sports.yahoo.com/nba/breaking-news/article/bam-adebayo-leaves-win-over-rockets-early-with-hip-injury-heat-dont-expect-long-term-issue-055335775.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/cha-starts-white-miller-williams-reid-diabate"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUw0jOWdGtSYv-V1VD9RRv5wqVgMc6D8F9FNrCQOd3fzJb7qgxtHJkX1ek3cY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50507278/heat-star-bam-adebayo-exits-win-early-hip-tightness",
+          "title": "Heat pull Bam Adebayo (hip) early in win, don't expect long-term issue",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUw0jOWdGtSYv-V1VD9RRv5wqVgMc6D8F9FNrCQOd3fzJb7qgxtHJkX1ek3cY"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/bam-adebayo-leaves-win-over-rockets-early-with-hip-injury-heat-dont-expect-long-term-issue-055335775.html",
+          "title": "Bam Adebayo leaves win over Rockets early with hip injury, Heat don't expect long-term issue",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkv2M8TT6oKvE8Qtqfz-n_SEc6U1M050BlJChGelckGWcteyRWOfBLuVNftW0"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/cha-starts-white-miller-williams-reid-diabate",
+          "title": "CHA starts White, Miller, Williams, Reid, Diabaté",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrRW5FyfO1YLRpSfQ9IyQiR8cudyI1ccs7ZhxMh1u0KiCA2e8NqSTmzEliw8E"
+        }
+      ]
+    },
+    {
+      "query": "kenpom",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T04:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/florida-still-reigns-supreme-espns-184104669.html",
+        "https://cbbreview.com/2026/11/09/sec-basketball-power-rankings-week-1/",
+        "https://roundtable.io/sports/ncaa/florida/video/florida-gators-basketball-off-to-another-impressive-statistical-start-in-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQm6s36gZhvI4c0Cs9mf3w4cWGTqEBRva1G1p3ps7CudJtYk8ubRhXIPuj6er4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/florida-still-reigns-supreme-espns-184104669.html",
+          "title": "Florida still reigns supreme in ESPN's latest bracketology update",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQm6s36gZhvI4c0Cs9mf3w4cWGTqEBRva1G1p3ps7CudJtYk8ubRhXIPuj6er4"
+        },
+        {
+          "url": "https://cbbreview.com/2026/11/09/sec-basketball-power-rankings-week-1/",
+          "title": "2026-27 SEC Basketball Power Rankings: Week 1",
+          "publisher": "CBB Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4WH_Dz6WEEKwa9OYPfaZ9HdteJF8na0lKl0APouyUdXUI-9EnT6I1w3Npagw"
+        },
+        {
+          "url": "https://roundtable.io/sports/ncaa/florida/video/florida-gators-basketball-off-to-another-impressive-statistical-start-in-2026",
+          "title": "Video - Florida Gators Basketball Off to Another Impressive Statistical Start in 2026",
+          "publisher": "roundtable.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTATE16HY1BR0wqF6djje6tB8OP41RANmYtbr812eCKT7Mxtm9YSUWbFVO0IVM"
+        }
+      ]
+    },
+    {
+      "query": "derrick jones jr",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T04:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909987",
+        "https://atthehive.com/charlotte-hornets-vs-los-angeles-clippers-game-13-recap-and-analysis/",
+        "https://www.nba.com/clippers/videos/darius-garland-27-pts-6-reb-7-ast-vs-charlotte-hornets-11-15-26"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGRu4rKLUSOEY7s93IhIEvIDhUFdhBxcfRBnzoIK1kY2rrmjnqA-B51XISawE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909987",
+          "title": "Clippers 113-105 Hornets (Nov 15, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGRu4rKLUSOEY7s93IhIEvIDhUFdhBxcfRBnzoIK1kY2rrmjnqA-B51XISawE"
+        },
+        {
+          "url": "https://atthehive.com/charlotte-hornets-vs-los-angeles-clippers-game-13-recap-and-analysis/",
+          "title": "Brandon Miller struggles, Clippers get hot as Hornets lose again",
+          "publisher": "At The Hive",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpC8eTwjCLYWUOIP71T4lIjDdx2Qa3Wk-MiTcdWDRkh8zAXdbsvQ4rpVOeG8I"
+        },
+        {
+          "url": "https://www.nba.com/clippers/videos/darius-garland-27-pts-6-reb-7-ast-vs-charlotte-hornets-11-15-26",
+          "title": "Darius Garland 27 Pts, 6 Reb, 7 Ast vs. Charlotte Hornets (11.15.26)",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4kZNrTahIXIuM5R9CIHRF4zjoQZbAYrPW8RMdQ4EGY9E7LDzXf9nxuqzwzQ4"
+        }
+      ]
+    },
+    {
+      "query": "montana state vs gonzaga",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T04:10:00Z",
+      "related_news_urls": [
+        "https://www.swxlocalsports.com/spokane/gonzaga/mens-basketball/game-preview-no-22-gonzaga-vs-montana-state-zags-return-to-the-kennel-to-host/article_99675c35-df33-421a-88f4-1afc38ff8daa.html",
+        "https://www.spokesman.com/stories/2026/nov/16/gonzaga-team-looking-to-turn-page-from-lsu-loss-ho/",
+        "https://sports.yahoo.com/articles/watch-gonzaga-vs-montana-state-195922422.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO8qDapcU4ga1XSOTo2DpY-mY6j0QD9fhEEtc0ac9H2dqzxQpkId0IQ0BslIE",
+      "image_credit": "SWX Local Sports",
+      "news": [
         {
           "url": "https://www.swxlocalsports.com/spokane/gonzaga/mens-basketball/game-preview-no-22-gonzaga-vs-montana-state-zags-return-to-the-kennel-to-host/article_99675c35-df33-421a-88f4-1afc38ff8daa.html",
           "title": "Game Preview | No. 22 Gonzaga vs. Montana State | Zags return to the Kennel to host Bobcats",
           "publisher": "SWX Local Sports",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO8qDapcU4ga1XSOTo2DpY-mY6j0QD9fhEEtc0ac9H2dqzxQpkId0IQ0BslIE"
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/16/gonzaga-team-looking-to-turn-page-from-lsu-loss-ho/",
+          "title": "Gonzaga team looking to turn page from LSU loss hosts Big Sky favorite Montana State",
+          "publisher": "The Spokesman-Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDI0of_nXt2PtlMYyMg--PTgEgzwXggxs7_iOAr_PtKd0_Tz8eOkP2lkeGviA"
         },
         {
           "url": "https://sports.yahoo.com/articles/watch-gonzaga-vs-montana-state-195922422.html",
@@ -43,7 +323,7 @@
     },
     {
       "query": "lakers schedule",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-18T04:10:00Z",
       "related_news_urls": [
         "https://www.espn.com/nba/story/_/id/50502518/first-month-lakers-knicks-spurs-celtics",
@@ -73,286 +353,6 @@
           "publisher": "Bleacher Report",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXyl_IhVwYmZR9H6ZnU0P_sLyEvC4-167v_hRjPQxFMG1YylCzJiw7vVeAaWo"
-        }
-      ]
-    },
-    {
-      "query": "darryn peterson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T04:10:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/nba-fantasy-week-5-fantasy-rookie-power-rankings",
-        "https://www.cbssports.com/nba/news/nba-rookie-rankings-yaxel-lendeborg-darryn-peterson-nov-17/",
-        "https://bleacherreport.com/articles/25531744-early-report-card-grades-every-nba-teams-rookie-class"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjgtEllJ-dN5nItvg1iAHS3pRoFlVt2ToAkh15TivMJYM4cot3XPXwdpToCEQ",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/nba-fantasy-week-5-fantasy-rookie-power-rankings",
-          "title": "NBA Fantasy: Week 5 fantasy rookie power rankings",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjgtEllJ-dN5nItvg1iAHS3pRoFlVt2ToAkh15TivMJYM4cot3XPXwdpToCEQ"
-        },
-        {
-          "url": "https://www.cbssports.com/nba/news/nba-rookie-rankings-yaxel-lendeborg-darryn-peterson-nov-17/",
-          "title": "NBA Rookie Rankings: Yaxel Lendeborg debuts at No. 1, Darryn Peterson making up ground in tight race",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUqI_tJalRg_VXImk-469RLD7BYkL6H-MYbZV-zMuO_fTY_CxbKWH_Q6HYyhc"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25531744-early-report-card-grades-every-nba-teams-rookie-class",
-          "title": "Early Report Card Grades for Every NBA Team's Rookie Class",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8bNuQRMFXwGU0X29JvY1vPvH0uxGe7AXT6cdpWp_FDgwoDzrE08dL3kXKso"
-        }
-      ]
-    },
-    {
-      "query": "what is a dirty bomb mean",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T04:10:00Z",
-      "related_news_urls": [
-        "https://edition.cnn.com/2026/11/16/politics/us-intelligence-iran-dirty-bomb",
-        "https://www.timesofisrael.com/liveblog_entry/rubio-says-no-imminent-threat-to-washington-after-report-on-potential-iran-dirty-bomb-plot/",
-        "https://www.nbcwashington.com/news/local/what-is-a-dirty-bomb-and-what-would-happen-in-dc-in-a-nightmare-scenario/4184604/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_tc8LL3ZQjmjQ3kUbNoWDFz9cLr_daCKJtL7NTSTXvXqHOoo7Sggo1OVuhqg",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://edition.cnn.com/2026/11/16/politics/us-intelligence-iran-dirty-bomb",
-          "title": "Exclusive: US intel indicates Iran developing plans to potentially detonate a dirty bomb in Washington, sources say",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_tc8LL3ZQjmjQ3kUbNoWDFz9cLr_daCKJtL7NTSTXvXqHOoo7Sggo1OVuhqg"
-        },
-        {
-          "url": "https://www.timesofisrael.com/liveblog_entry/rubio-says-no-imminent-threat-to-washington-after-report-on-potential-iran-dirty-bomb-plot/",
-          "title": "Rubio says no imminent threat to Washington after report on potential Iran ‘dirty bomb’ plot",
-          "publisher": "The Times of Israel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjek7mNUIr3nj7aqJ-AvuMfN68jOCRPhPdPmfiCuM8RS_1evwG1NvviJOKWqY"
-        },
-        {
-          "url": "https://www.nbcwashington.com/news/local/what-is-a-dirty-bomb-and-what-would-happen-in-dc-in-a-nightmare-scenario/4184604/",
-          "title": "What is a dirty bomb and what would happen in DC in a ‘nightmare scenario'?",
-          "publisher": "NBC4 Washington",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTa3jSpJViBNHCMQBZ2PdihIjfFr8bnoRFrttfz_P7uj4cbnXvWsIj4ldRjzto"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 screenshots",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T04:10:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/gta-6-weather-images",
-        "https://tech.yahoo.com/gaming/articles/rockstar-confident-gta-6s-weather-220448101.html",
-        "https://80.lv/articles/the-weather-channel-has-shared-new-screenshots-of-gta-6-s-dynamic-weather"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfSj5PJgYTTO2gKBGVC4CAkqtSBXpOzlv3jpRVAstyhif4hbUpt8-A_WaYv00",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/gta-6-weather-images",
-          "title": "What's the weather forecast for 'GTA 6'? The Weather Channel has a preview.",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfSj5PJgYTTO2gKBGVC4CAkqtSBXpOzlv3jpRVAstyhif4hbUpt8-A_WaYv00"
-        },
-        {
-          "url": "https://tech.yahoo.com/gaming/articles/rockstar-confident-gta-6s-weather-220448101.html",
-          "title": "Rockstar is so confident in GTA 6's weather it has The Weather Channel itself sharing screenshots",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeJp4amkG-TKWGTVBV_fhdp0SDeKRr_46WMu9S00ajIQY90IkpNJTsKsDlB2c"
-        },
-        {
-          "url": "https://80.lv/articles/the-weather-channel-has-shared-new-screenshots-of-gta-6-s-dynamic-weather",
-          "title": "The Weather Channel Has Shared New Screenshots of GTA 6's Dynamic Weather",
-          "publisher": "80 Level",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpJI-8EPyADmuIGvcr7nGAt7PCb0dI5ACF8wULIqsb9YJeaBGPiQh5lFf_kN0"
-        }
-      ]
-    },
-    {
-      "query": "winter storm warning",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T04:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/17/weather/california-storms-sf-waves.html",
-        "https://weather.com/2026/11/17/forecast/regional/storms-50-foot-waves-mountain-snow-heavy-rain-west",
-        "https://www.usatoday.com/story/news/weather/2026/11/17/california-forecast-atmospheric-river-rain-and-snow/92824937007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSx_BOVv-oN5eyJIbnKbUaXitsnc5xIImciY3KE5WB_QRfb4V82FNpJ8Oy49Bc",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/17/weather/california-storms-sf-waves.html",
-          "title": "Another Storm Is Bearing Down on California",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSx_BOVv-oN5eyJIbnKbUaXitsnc5xIImciY3KE5WB_QRfb4V82FNpJ8Oy49Bc"
-        },
-        {
-          "url": "https://weather.com/2026/11/17/forecast/regional/storms-50-foot-waves-mountain-snow-heavy-rain-west",
-          "title": "Storms to batter West with mountain snow, rain, waves, wind",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHjindjf3Ib9HCM012tCnyYbieXur8cZKaQtgZB79eYjwuNIIXOJPYF5ow1sY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/weather/2026/11/17/california-forecast-atmospheric-river-rain-and-snow/92824937007/",
-          "title": "Powerful storm heads for West Coast. Rain, snow are just the beginning",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOxT6jZmyOLtCPZ4whVuAiyLUTCoHaPd6-yJnWrNrVIBG9hB--l4DYAoy4T84"
-        }
-      ]
-    },
-    {
-      "query": "hornets",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T04:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/grayson-allen-concussion-out-tuesday-vs-lakers",
-        "https://www.wltx.com/video/sports/locked-on/lo-charlotte/hornets-show/west-coast-road-trip-breakdown-hornets-injury-update-good-game-or-good-sign/535-5f342242-46e3-4613-ad51-ae39d1258a26",
-        "https://uk.sports.yahoo.com/news/hornets-added-grayson-allen-concussion-040855127.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkMfcPOT3PlCR6BIe-yVp0wrHKv5twOSIJqaIMr_AD8MOo28ixnaeo932vOE",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/grayson-allen-concussion-out-tuesday-vs-lakers",
-          "title": "Grayson Allen (concussion) out Tuesday vs. Lakers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkMfcPOT3PlCR6BIe-yVp0wrHKv5twOSIJqaIMr_AD8MOo28ixnaeo932vOE"
-        },
-        {
-          "url": "https://www.wltx.com/video/sports/locked-on/lo-charlotte/hornets-show/west-coast-road-trip-breakdown-hornets-injury-update-good-game-or-good-sign/535-5f342242-46e3-4613-ad51-ae39d1258a26",
-          "title": "West Coast Road Trip BREAKDOWN | Hornets' INJURY Update | Good Game or Good Sign?",
-          "publisher": "WLTX",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkWSo-zkbNG8--8x4TfgVpAzqU9NKLxJA1x2HTSYQmNwyll0NY2WMqq9VdjqI"
-        },
-        {
-          "url": "https://uk.sports.yahoo.com/news/hornets-added-grayson-allen-concussion-040855127.html",
-          "title": "@hornets have added Grayson Allen (Concussion-like …",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOldWrZzWiciJ1Ws8Rty5jy-wJHOF1Y9uyCSHuahRwXeIQ1Tz5AErQLI4Di6c"
-        }
-      ]
-    },
-    {
-      "query": "gonzaga basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T04:00:00Z",
-      "related_news_urls": [
-        "https://gostanford.com/news/2026/11/15/gritty-win-over-gonzaga",
-        "https://sports.yahoo.com/articles/college-basketball-roundup-stanford-women-030119960.html",
-        "https://sportssd.iheart.com/content/2026-11-15-gonzaga-vs-stanford-womens-basketball-predictions-nov-15/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTOHJb6KFkNS0RG-En9TCDxF99_RUNDpRWej_Q0ieoW2S5QeX_osdTGA9H0Kk",
-      "image_credit": "Stanford Cardinal",
-      "news": [
-        {
-          "url": "https://gostanford.com/news/2026/11/15/gritty-win-over-gonzaga",
-          "title": "Gritty Win Over Gonzaga",
-          "publisher": "Stanford Cardinal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTOHJb6KFkNS0RG-En9TCDxF99_RUNDpRWej_Q0ieoW2S5QeX_osdTGA9H0Kk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/college-basketball-roundup-stanford-women-030119960.html",
-          "title": "College basketball roundup: Stanford women erase 10-point deficit, then hold off Gonzaga",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQskpce-MMVykvK5-rtRZAQGdyaKqCWsRUsI76tYzFkdmgcp_xhTXFMKmmz4Co"
-        },
-        {
-          "url": "https://sportssd.iheart.com/content/2026-11-15-gonzaga-vs-stanford-womens-basketball-predictions-nov-15/",
-          "title": "Gonzaga vs. Stanford Women's Basketball Predictions - Nov. 15",
-          "publisher": "San Diego Sports 760",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzCCwCuxIH0eeZdbA0AiDQxz-Qo1a8LtAxPpcLgBQNhtdY4_CNRBnrAhqeII"
-        }
-      ]
-    },
-    {
-      "query": "keyonte george",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T04:00:00Z",
-      "related_news_urls": [
-        "https://www.slcdunk.com/utah-jazz-game-coverage/70789/new-details-on-keyonte-georges-injury",
-        "https://www.si.com/nba/jazz/onsi/utah-jazz-s-keyonte-george-dealing-with-hidden-injury-concerns",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/devin-vassell-groin-questionable-monday-vs-phx"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBz68U-HSp0qYwuHfpo5DnzDBhpcufXIBpp2xyR9UXghLszTdVeR5LqROfsTE",
-      "image_credit": "SLC Dunk",
-      "news": [
-        {
-          "url": "https://www.slcdunk.com/utah-jazz-game-coverage/70789/new-details-on-keyonte-georges-injury",
-          "title": "New details on Keyonte George’s injury",
-          "publisher": "SLC Dunk",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBz68U-HSp0qYwuHfpo5DnzDBhpcufXIBpp2xyR9UXghLszTdVeR5LqROfsTE"
-        },
-        {
-          "url": "https://www.si.com/nba/jazz/onsi/utah-jazz-s-keyonte-george-dealing-with-hidden-injury-concerns",
-          "title": "Utah Jazz's Keyonte George Dealing With Hidden Injury Concerns",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZajCdR8U99covDD6GChHjOPnRwlgthsiWlj0hjfQ8NMhoanxV4upUshqP92Q"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/devin-vassell-groin-questionable-monday-vs-phx",
-          "title": "Devin Vassell (groin) questionable Monday vs. PHX",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT26aqdnVsyGDL6PlH2fg4y7gRIjnT-TfOcYMavH0_jrmtNFFx-ilj7Bp42Vj4"
-        }
-      ]
-    },
-    {
-      "query": "lisa murkowski",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T04:00:00Z",
-      "related_news_urls": [
-        "https://alaskapublic.org/news/2026-11-17/6-things-murkowski-said-on-talk-of-alaska",
-        "https://thehill.com/homenews/senate/6226959-murkowski-midterm-rebuke-trump/",
-        "https://www.nomenugget.com/news/senator-lisa-murkowski-visits-nome-talks-election-projects-and-priorities"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj2sshmgbpYyBoc04WlFEBli6wQA-Xidq6Rw2-AptyjTWkQa2_4OiFOv6GvXg",
-      "image_credit": "Alaska Public Media",
-      "news": [
-        {
-          "url": "https://alaskapublic.org/news/2026-11-17/6-things-murkowski-said-on-talk-of-alaska",
-          "title": "6 things Murkowski said on ‘Talk of Alaska’",
-          "publisher": "Alaska Public Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj2sshmgbpYyBoc04WlFEBli6wQA-Xidq6Rw2-AptyjTWkQa2_4OiFOv6GvXg"
-        },
-        {
-          "url": "https://thehill.com/homenews/senate/6226959-murkowski-midterm-rebuke-trump/",
-          "title": "Murkowski calls midterms ‘a direct pushback to President Trump’",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxo2EXJCaPu1SVFjdwIUVGJusBInc3AfBYz8EVtVl32oOTqFSu_BfQzCa2at0"
-        },
-        {
-          "url": "https://www.nomenugget.com/news/senator-lisa-murkowski-visits-nome-talks-election-projects-and-priorities",
-          "title": "Senator Lisa Murkowski visits Nome, talks election, projects and priorities",
-          "publisher": "The Nome Nugget",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq4Jch8AYl0_mVXNr-HOs03OR41UIwUQ7dopsTbDPTD_9fWns2IMABbZa8Lmw"
         }
       ]
     }
