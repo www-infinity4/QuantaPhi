@@ -14,7 +14,7 @@ export function summarizeGate(payload){
   // Fresh wallet-verified /accounts evidence overrides stale /gate/status configuration.
   // Account sign-in never implies permissionsApproved or full runner readiness.
   const configured=record?.configured===true||!!live;
-  const connected=configured&&(record?.connected===true||!!live);
+  const connected=summary.walletVerified&&configured&&(record?.connected===true||!!live);
   const approved=connected&&record?.permissionsApproved===true;
   // Request every capability registered for this application. A missing project
   // capability must not prevent account sign-in or imply that access was granted.
