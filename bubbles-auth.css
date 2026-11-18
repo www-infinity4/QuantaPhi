@@ -98,3 +98,19 @@ body.oracle-octaves-page .bubbles-wallet-recovery{
  text-decoration:underline;
 }
 body.oracle-octaves-page .bubbles-wallet-recovery[hidden]{display:none!important}
+
+/* Verification Center uses the original Oracle paper palette, not a new login theme. */
+.bubbles-auth-page .ba-verification-center { margin: 20px 0; padding: 18px; border: 1px solid var(--auth-line); border-radius: 14px; background: #faf8f5; }
+.bubbles-auth-page .ba-verification-list { display: grid; gap: 12px; }
+.bubbles-auth-page .ba-verification-row { min-width: 0; padding: 14px; border: 1px solid var(--auth-line); border-left: 4px solid #988b81; border-radius: 10px; background: white; overflow-wrap: anywhere; }
+.bubbles-auth-page .ba-verification-row[data-status="connected"] { border-left-color: #2b6950; }
+.bubbles-auth-page .ba-verification-row[data-status="expired"],
+.bubbles-auth-page .ba-verification-row[data-status="blocked"] { border-left-color: #ac5d2d; }
+.bubbles-auth-page .ba-verification-row h3 { margin: 0 0 8px; font-size: 17px; line-height: 1.35; }
+.bubbles-auth-page .ba-verification-row p { margin: 6px 0; line-height: 1.55; font-size: 15px; }
+.bubbles-auth-page .ba-verification-row .ba-control { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 12px; font-weight: 650; }
+@media (max-width: 480px) {
+ .bubbles-auth-page .ba-verification-center { padding: 12px; }
+ .bubbles-auth-page .ba-verification-row { padding: 12px; }
+ .bubbles-auth-page .ba-verification-row .ba-control { width: 100%; justify-content: center; }
+}
