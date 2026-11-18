@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T14:31:18.055702Z",
+  "checked_at": "2026-11-18T15:01:17.684932Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "mike pettine",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T14:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50511280/cowboys-discussing-new-role-dc-parker-jones-says",
+        "https://www.bloggingtheboys.com/dallas-cowboys-news/227106/jerry-jones-christian-parkers-role-brian-schottenheimer",
+        "https://sports.yahoo.com/nfl/breaking-news/article/jerry-jones-says-cowboys-are-discussing-defensive-coordinator-christian-parkers-role-after-brian-schottenheimer-declines-to-support-him-160031342.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxYUaRkrShsJvMK6IjEl6ovjK4cVLsBRI6rWRqlh7Izjk3D0LXynBH67A7Cdo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50511280/cowboys-discussing-new-role-dc-parker-jones-says",
+          "title": "Cowboys discussing new role for DC Parker, Jones says",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxYUaRkrShsJvMK6IjEl6ovjK4cVLsBRI6rWRqlh7Izjk3D0LXynBH67A7Cdo"
+        },
+        {
+          "url": "https://www.bloggingtheboys.com/dallas-cowboys-news/227106/jerry-jones-christian-parkers-role-brian-schottenheimer",
+          "title": "Cowboys news: Jerry Jones discusses Christian Parker’s role for the rest of 2026",
+          "publisher": "Blogging The Boys",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShJBNkyPbCCdE1iQLD-k5d49WORdQiCkurnFoGXIwOs4i-3_SWASaN12hx2pY"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/breaking-news/article/jerry-jones-says-cowboys-are-discussing-defensive-coordinator-christian-parkers-role-after-brian-schottenheimer-declines-to-support-him-160031342.html",
+          "title": "Jerry Jones says Cowboys are discussing defensive coordinator Christian Parker's role after Brian Schottenheimer declines to support him",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR3odFd8q2_jOiBptk27bxzC8OX80AAZx_Vvf4lR1F8VvxmOUQGtlkwRHVdiU"
+        }
+      ]
+    },
+    {
+      "query": "lance bass",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T14:30:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/17/celebrity-news/lance-bass-shares-the-sweet-holiday-traditions-he-shares-with-his-children/",
+        "https://www.usmagazine.com/celebrity-moms/news/lance-bass-reveals-what-kids-think-of-nsync-christmas-album/",
+        "https://katu.com/news/entertainment/lance-bass-twins-inherited-his-christmas-decorating-passion-definitely-in-the-genes?teaserSource=databricks"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUHEV0ZYN3-Ko9qdIZndoDmlfW24jM8SFyXafv6Tqoz6s1ABIR-u71PMJZdxI",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/17/celebrity-news/lance-bass-shares-the-sweet-holiday-traditions-he-shares-with-his-children/",
+          "title": "Exclusive | Lance Bass shares the sweet holiday traditions he shares with his children",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUHEV0ZYN3-Ko9qdIZndoDmlfW24jM8SFyXafv6Tqoz6s1ABIR-u71PMJZdxI"
+        },
+        {
+          "url": "https://www.usmagazine.com/celebrity-moms/news/lance-bass-reveals-what-kids-think-of-nsync-christmas-album/",
+          "title": "Lance Bass Reveals What His 5-Year-Old Twins Really Think of ‘NSync’s Christmas Album",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAXy8DYzmNGXIYysK9jqvo0hBoPpwzX-SxU2O4EvV4AXc5AyZimyhUbIj4PZg"
+        },
+        {
+          "url": "https://katu.com/news/entertainment/lance-bass-twins-inherited-his-christmas-decorating-passion-definitely-in-the-genes?teaserSource=databricks",
+          "title": "Lance Bass' twins inherited his Christmas decorating passion: 'Definitely in the genes'",
+          "publisher": "KATU",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW1XDDuzHejSo0Pti-VESEQwvx3BbI3T9vqkBhD3tcP_HNvVYqyhC5SqyS_ZM"
+        }
+      ]
+    },
+    {
+      "query": "wendi mclendon-covey",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T14:30:00Z",
+      "related_news_urls": [
+        "https://www.tampabay.com/life-culture/arts/tv/2026/11/17/kelly-ripa-mark-consuelos-clearwater-beach/",
+        "https://people.com/mark-consuelos-honors-late-dad-after-visit-to-florida-childhood-home-exclusive-12261552",
+        "https://www.fox13news.com/news/live-kelly-mark-morning-tapings-draw-crowds-clearwater-beach"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIg4bGQwuGVFIuXrvu0ss_hFYf0Z0Vuqlb3XNEZ2srZ-e6D_XyBvhwm5MRS7o",
+      "image_credit": "Tampa Bay Times",
+      "news": [
+        {
+          "url": "https://www.tampabay.com/life-culture/arts/tv/2026/11/17/kelly-ripa-mark-consuelos-clearwater-beach/",
+          "title": "Scenes from ‘Live with Kelly and Mark’ taping on Clearwater Beach",
+          "publisher": "Tampa Bay Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIg4bGQwuGVFIuXrvu0ss_hFYf0Z0Vuqlb3XNEZ2srZ-e6D_XyBvhwm5MRS7o"
+        },
+        {
+          "url": "https://people.com/mark-consuelos-honors-late-dad-after-visit-to-florida-childhood-home-exclusive-12261552",
+          "title": "Mark Consuelos Honors Late Dad After Visit to Florida Childhood Home (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUdQo7DIwn3VfMb65M9NkmAd9ZW8q4Nk5-CGvY5RDW09RV7fS74qVjO82fcLE"
+        },
+        {
+          "url": "https://www.fox13news.com/news/live-kelly-mark-morning-tapings-draw-crowds-clearwater-beach",
+          "title": "Live with Kelly and Mark: Morning tapings draw crowds to Clearwater Beach",
+          "publisher": "FOX 13 Tampa Bay",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeiZFLuxx3XZkcEWfmPYOadlv0J_KbEI_0iItYZLiKKBXqmOaJeRcDxoiXF58"
+        }
+      ]
+    },
     {
       "query": "turkey",
       "approx_searches": "2000+",
@@ -13,7 +118,7 @@
       "related_news_urls": [
         "https://www.reuters.com/business/energy/iraq-resumes-crude-oil-pumping-export-purposes-via-pipeline-turkey-oil-minister-2026-11-17/",
         "https://www.arabnews.com/middle-east/iraq-resumes-oil-exports-through-turkish-pipeline-after-12-year-break-3012601",
-        "https://english.globalarabnetwork.com/2026/11/13/iraq-transports-up-to-150000-barrels-of-oil-daily-via-syria/"
+        "https://www.thearabweekly.com/iraq-exports-oil-overland-syrian-route-revival-after-hormuz-disruption"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqsbBAMqeKVn1Z9SBl1meUy4ariZA1EHBwjWcUqFBtDFPPFs7sfOagEdx2n3s",
       "image_credit": "Reuters",
@@ -33,46 +138,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Og3LLMyzm-nejdkWfXNoQybDNA1uS-CCErXLuJwSuRSrsYAdYx7jGhH4NTE"
         },
         {
-          "url": "https://english.globalarabnetwork.com/2026/11/13/iraq-transports-up-to-150000-barrels-of-oil-daily-via-syria/",
-          "title": "Iraq Transports Up to 150,000 Barrels of Oil Daily via Syria",
-          "publisher": "Global Arab Network",
+          "url": "https://www.thearabweekly.com/iraq-exports-oil-overland-syrian-route-revival-after-hormuz-disruption",
+          "title": "Iraq exports oil in overland Syrian route revival after Hormuz disruption",
+          "publisher": "The Arab Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThMgtazZvSSTpqNOVHNWkZOecoDuW0pw5nMJpn8q0JqmKXi9LSSyMhBT78bKw"
-        }
-      ]
-    },
-    {
-      "query": "brett cooper",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T14:00:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/politics/2026/11/18/trump-was-once-celebrated-by-people-distancing-themselves-his-politics/",
-        "https://www.ft.com/content/676d1291-3007-4a32-9332-abf803d0f581?syn-25a6b1a6=1",
-        "https://newrepublic.com/article/218024/christ-king-trump-conference-maga-manosphere-breaking-apart"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJjlWWsmdfL-E3ijOIGREKKW6skuOZUpz7hLvGHKvEfV3MiqCvdtqT6cnOcXU",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/politics/2026/11/18/trump-was-once-celebrated-by-people-distancing-themselves-his-politics/",
-          "title": "Analysis | Trump was once celebrated by people distancing themselves from his politics",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJjlWWsmdfL-E3ijOIGREKKW6skuOZUpz7hLvGHKvEfV3MiqCvdtqT6cnOcXU"
-        },
-        {
-          "url": "https://www.ft.com/content/676d1291-3007-4a32-9332-abf803d0f581?syn-25a6b1a6=1",
-          "title": "‘There was a lot of gaslighting’: why America’s podcast stars ditched Donald Trump",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR5ibaZWvJuqSFuykXWHfALGfSnCdrgnq002EfGFvknRaMZPfB-l3v-2X__ng"
-        },
-        {
-          "url": "https://newrepublic.com/article/218024/christ-king-trump-conference-maga-manosphere-breaking-apart",
-          "title": "The MAGA Manosphere Is Breaking Apart",
-          "publisher": "The New Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZHbabeZDwZbyD01BEc5P3EpL24ypHRfVJNHcBwyj5p6SQ_iXRTwSzhsbTLSo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhQkh-qbGYmLPPbRbvwBcZgnEtWc-AK8_K4cTCnzyA4LjR3CdbORAHkSAerb4"
         }
       ]
     },
@@ -116,19 +186,19 @@
       "approx_searches": "500+",
       "published_at": "2026-11-18T13:50:00Z",
       "related_news_urls": [
-        "https://www.atptour.com/en/unlocked/articles/medvedev-sliding-tour-moment-november-2026",
+        "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
         "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live",
-        "https://www.atptour.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november"
+        "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0zOt0Fl3fTGuv_NRSrps8mUWw6Nf_jU_iBfJ9DpfYrt__3S8BKHGoMZ_Gs70",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIHmdxVUPsUoxXZ338-EKVovG6ZdPKsqoQE_04r8Q_q8KdPtLABCY45-oHI90",
       "image_credit": "ATP Tour",
       "news": [
         {
-          "url": "https://www.atptour.com/en/unlocked/articles/medvedev-sliding-tour-moment-november-2026",
-          "title": "Medvedev on his pivotal 2019 streak: When ‘super steady’ became super speed!",
+          "url": "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
+          "title": "Alcaraz eases past Medvedev, moves to brink of Turin SFs",
           "publisher": "ATP Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0zOt0Fl3fTGuv_NRSrps8mUWw6Nf_jU_iBfJ9DpfYrt__3S8BKHGoMZ_Gs70"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIHmdxVUPsUoxXZ338-EKVovG6ZdPKsqoQE_04r8Q_q8KdPtLABCY45-oHI90"
         },
         {
           "url": "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live",
@@ -138,52 +208,52 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRnr5RgofcaL6yn7dxXcUtj6k_HUYQdEzO4KwlG2H5a7MUtKNR3zZaKsu0as8"
         },
         {
-          "url": "https://www.atptour.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november",
-          "title": "What are the Nitto ATP Finals semi-final qualification scenarios?",
-          "publisher": "ATP Tour",
+          "url": "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november",
+          "title": "Nitto ATP Finals 2026 SF Qualification Scenarios 16 November | Nitto ATP Finals | Tennis",
+          "publisher": "Nitto ATP Finals",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5Wm32fgXm9tlYGR8NxSOWRWfrZrQRGXY6sAakmttmpjwEdIjv8z8N7Y-kIdU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLuV9YZssD8GFROW-oOH40LhxaIGHRFE-s3HbIkkQuf67mD8zQBb9O1NfhePc"
         }
       ]
     },
     {
       "query": "carlos alcaraz",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-18T13:30:00Z",
       "related_news_urls": [
-        "https://as.com/meristation/libros/sergio-ramos-y-carlos-alcaraz-entran-en-el-guinness-de-los-records-con-dos-marcas-para-la-historia-f202611-n/",
-        "https://www.eurosport.es/tenis/atp-finals-1/2026/carlos-alcaraz-entrenamiento-promesa-tenis-mundial-brasileni-guto-miguel-quien-es-hoy_sto23356170/story.shtml",
-        "https://holanews.com/alcaraz-entrena-con-la-promesa-brasilena-guto-miguel/"
+        "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-daniil-medvedev/2026/11/18/04_0414_20261118_6-directo.html",
+        "https://www.elmundo.es/deportes/tenis/2026/11/18/6afdb525e4d4d800778b4584.html",
+        "https://www.laopiniondemurcia.es/deportes/2026/11/18/carlos-alcaraz-medvedev-finales-atp-136526612.html"
       ],
-      "image_url": null,
-      "image_credit": "Diario AS",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxLuD-SxUAnx5ogqaBxFJ6NQLYJAYmoesO--G3ERpcNhN9AmqO6vnKaVk8p-U",
+      "image_credit": "MARCA",
       "news": [
         {
-          "url": "https://as.com/meristation/libros/sergio-ramos-y-carlos-alcaraz-entran-en-el-guinness-de-los-records-con-dos-marcas-para-la-historia-f202611-n/",
-          "title": "Sergio Ramos y Carlos Alcaraz entran en el Guinness de los Récords con dos marcas para la historia",
-          "publisher": "Diario AS",
+          "url": "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-daniil-medvedev/2026/11/18/04_0414_20261118_6-directo.html",
+          "title": "Carlos Alcaraz - Daniil Medvedev en directo | Última hora de las ATP Finals, en vivo",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxLuD-SxUAnx5ogqaBxFJ6NQLYJAYmoesO--G3ERpcNhN9AmqO6vnKaVk8p-U"
         },
         {
-          "url": "https://www.eurosport.es/tenis/atp-finals-1/2026/carlos-alcaraz-entrenamiento-promesa-tenis-mundial-brasileni-guto-miguel-quien-es-hoy_sto23356170/story.shtml",
-          "title": "Alcaraz pule a la próxima gran promesa del tenis mundial: ¿Quién es Guto Miguel?",
-          "publisher": "Eurosport",
+          "url": "https://www.elmundo.es/deportes/tenis/2026/11/18/6afdb525e4d4d800778b4584.html",
+          "title": "Alcaraz maravilla de nuevo ante Medvedev y asusta con un tirón",
+          "publisher": "El Mundo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE63UjLGMXH-HObT6koooibYDEqaz49HOh7K1quQY9AHghEaVfupsjOsskL1s"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXjNn9Cd-EfgYXTlaBAcQ0HtRBu24OUgIr9et7JiHOILDYotWAOPMYosRqCY"
         },
         {
-          "url": "https://holanews.com/alcaraz-entrena-con-la-promesa-brasilena-guto-miguel/",
-          "title": "Alcaraz entrena con la promesa brasileña Guto Miguel",
-          "publisher": "HolaNews",
+          "url": "https://www.laopiniondemurcia.es/deportes/2026/11/18/carlos-alcaraz-medvedev-finales-atp-136526612.html",
+          "title": "Carlos Alcaraz-Medvedev, en las Finales ATP: cuándo se juega, a qué hora y dónde verlo",
+          "publisher": "La Opinión de Murcia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJb_3ZTAVPWSh7lfHgJMg-6rl6--dxy1R3bAeHdW3WuI_ERyD34Ls9K49NYnk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXcgnvE2qKn5GtW1VHHp_YZOpGrja7lzg2HFl8wv9npEoxHbNUnArs-06vMO4"
         }
       ]
     },
     {
       "query": "emma grede",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T13:30:00Z",
       "related_news_urls": [
         "https://www.jesus.cam.ac.uk/articles/careers-luxury-and-art-building-brand",
@@ -217,142 +287,72 @@
       ]
     },
     {
+      "query": "take two interactive stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T13:20:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/iainmartin/2026/11/18/the-big-score-grand-theft-auto-vi-could-be-a-huge-pay-day-for-rockstars-founders/",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-18-2026/card/rave-reviews-for-grand-theft-auto-vi-lift-take-two-interactive-stock-b5IsI1rP0uIKg2UXA4Tr",
+        "https://finance.yahoo.com/markets/stocks/articles/why-did-two-stock-fall-144048564.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_oHavbTECLlyZVVIlpDT5YsY5fwH4G1paSYEYvKIevv4JXODJjTsknt0IXk",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/iainmartin/2026/11/18/the-big-score-grand-theft-auto-vi-could-be-a-huge-pay-day-for-rockstars-founders/",
+          "title": "How Much Grand Theft Auto VI Will Make For Rockstar’s Founders",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_oHavbTECLlyZVVIlpDT5YsY5fwH4G1paSYEYvKIevv4JXODJjTsknt0IXk"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-18-2026/card/rave-reviews-for-grand-theft-auto-vi-lift-take-two-interactive-stock-b5IsI1rP0uIKg2UXA4Tr",
+          "title": "Rave Reviews for Grand Theft Auto VI’ Lift Take-Two Interactive Stock",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4q96k3lX_p4bcbjUkazN-5HNi4_AOzeSHCWZ3gFQkEofbc0Y1xth_er_E4k0"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-did-two-stock-fall-144048564.html",
+          "title": "Why Did Take-Two Stock Fall 6% Before GTA VI?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoZnrN71jEXGJdL4AxKEBoNdCctksD-tp-YDyjwUjFmpHSXBO4w3D9GUSDI0"
+        }
+      ]
+    },
+    {
       "query": "anthropic ipo",
       "approx_searches": "10000+",
       "published_at": "2026-11-18T13:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html",
-        "https://www.cnbc.com/video/2026/11/18/anthropic-ipo-retail-investors.html",
-        "https://www.newyorker.com/news/the-lede/anthropic-and-the-monetization-of-paradise"
+        "https://finance.yahoo.com/markets/article/bill-gurley-says-giving-away-ai-is-googles-no-1-move-against-anthropic-133314859.html",
+        "https://www.cnbc.com/2026/11/18/anthropic-ipo-stock-ai.html",
+        "https://www.bloomberg.com/news/articles/2026-11-18/anthropic-approaches-final-ipo-hurdle-after-tech-stocks-churn"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmBuq8M7_uCVnoA86HkHJlPg2clRAHtUUQHk_V6m0su8D8SFgORgH0EegGEI",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLwrXnUgFeBmcuujHHWEgcmwOolxHLFzw-zOlINBoVrWB4rR2Jcsnz8LbAlYY",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html",
-          "title": "Opinion | The Anthropic I.P.O. Will Change the Future of A.I.",
-          "publisher": "The New York Times",
+          "url": "https://finance.yahoo.com/markets/article/bill-gurley-says-giving-away-ai-is-googles-no-1-move-against-anthropic-133314859.html",
+          "title": "Bill Gurley says giving away AI is Google's 'No. 1' move against Anthropic",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmBuq8M7_uCVnoA86HkHJlPg2clRAHtUUQHk_V6m0su8D8SFgORgH0EegGEI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLwrXnUgFeBmcuujHHWEgcmwOolxHLFzw-zOlINBoVrWB4rR2Jcsnz8LbAlYY"
         },
         {
-          "url": "https://www.cnbc.com/video/2026/11/18/anthropic-ipo-retail-investors.html",
-          "title": "Anthropic's $1.4 trillion IPO has retail investors divided over whether to buy or wait",
+          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-stock-ai.html",
+          "title": "How to get Anthropic stock — without buying the IPO",
           "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_1ufOzJxYOmKN8R31kee5KKCzN8ElHh0wtROV_-93Fym082xqByBIHgppTVw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeWnlQBliBNoLU4g27JT6mZhhfHZYvYo9FcTMYfzmuFZj9S_UgrJx6lderYFM"
         },
         {
-          "url": "https://www.newyorker.com/news/the-lede/anthropic-and-the-monetization-of-paradise",
-          "title": "Anthropic and the Monetization of Paradise",
-          "publisher": "The New Yorker",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-18/anthropic-approaches-final-ipo-hurdle-after-tech-stocks-churn",
+          "title": "Anthropic Approaches Final IPO Hurdle After Tech Stocks Churn",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPVfYDqOJvjOdjVmRsWWvx3pOZQF7oiY_d4IYSdtxqbfZ7tW4Uii-Clytsvs0"
-        }
-      ]
-    },
-    {
-      "query": "glenn close",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T13:00:00Z",
-      "related_news_urls": [
-        "https://www.elle.com/culture/celebrities/a74427141/zendaya-photos-governors-awards-2026/",
-        "https://www.theguardian.com/film/2026/nov/16/governers-awards-honorary-oscars",
-        "https://people.com/ridley-scott-dedicates-his-first-oscar-to-late-brother-tony-scott-12258267"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQJ-wHw1YoFr7vQr-6-3PkermWvdwCRcNhU_VCYjuV0hN0ZTZLk3syXNz9PUU",
-      "image_credit": "ELLE",
-      "news": [
-        {
-          "url": "https://www.elle.com/culture/celebrities/a74427141/zendaya-photos-governors-awards-2026/",
-          "title": "Zendaya Channels ‘Dune’ in a Glittering Sculptural Gown at the 2026 Governors Awards",
-          "publisher": "ELLE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQJ-wHw1YoFr7vQr-6-3PkermWvdwCRcNhU_VCYjuV0hN0ZTZLk3syXNz9PUU"
-        },
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/16/governers-awards-honorary-oscars",
-          "title": "Glenn Close cries! John Malkovich weeps! But it’s Nathan Fielder everyone wants to talk to at the honorary Oscars",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMYSzor6gCCNOx1avJIlqLhno_klyuwdisl0ngcN0TQTMi0FN2droCQ7JE1Dc"
-        },
-        {
-          "url": "https://people.com/ridley-scott-dedicates-his-first-oscar-to-late-brother-tony-scott-12258267",
-          "title": "Ridley Scott Dedicates His First Oscar to Late Brother, Top Gun Director Tony Scott, in Emotional Speech",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXKLOaqwXnJgSsKwJPBcVUyHk6yS6tj0WOGTxdliu-kTRc5LnRCEKoT6GJTw8"
-        }
-      ]
-    },
-    {
-      "query": "toxic hall of shame",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T12:50:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/18/health/2026-toxic-hall-of-shame-wellness",
-        "https://www.einpresswire.com/article/957486071/nearly-half-of-major-retailers-evaluated-are-backsliding-on-efforts-to-protect-health-from-toxic-chemicals-plastics",
-        "https://news.jkn.co.kr/editions/english/post/1105632"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMONzaJJfI692PEXne5npr7z1VD2H__M0X04Z2uI7vE8tGoWL3jMPRqE-IU1Q",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/18/health/2026-toxic-hall-of-shame-wellness",
-          "title": "‘Hall of Shame’ singles out major retailers before Black Friday",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMONzaJJfI692PEXne5npr7z1VD2H__M0X04Z2uI7vE8tGoWL3jMPRqE-IU1Q"
-        },
-        {
-          "url": "https://www.einpresswire.com/article/957486071/nearly-half-of-major-retailers-evaluated-are-backsliding-on-efforts-to-protect-health-from-toxic-chemicals-plastics",
-          "title": "Nearly half of major retailers evaluated are backsliding on efforts to protect health from toxic chemicals & plastics",
-          "publisher": "EIN Presswire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQGLkDYmmuAnjfVQhsSFX7gwpkH5K8sY9-Jvd0sy1zTMbJU21CpkddP3pq2po"
-        },
-        {
-          "url": "https://news.jkn.co.kr/editions/english/post/1105632",
-          "title": "Toxic-Free Future Report Assigns Failing Grades to 16 Major North American Retailers : Global : JKN",
-          "publisher": "재경일보",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl2ukMIS5LSRBikoGeZHv-zTIs6b14qKZxkt78XESXuX5WFMZKRVjNW2BdzOQ"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 radio stations",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T12:50:00Z",
-      "related_news_urls": [
-        "https://www.cultr.com/news/tuning-in-to-leonida-every-radio-station-in-gta-vi-gta-6/",
-        "https://www.gamespot.com/articles/how-to-listen-to-music-and-podcasts-on-your-phone-in-gta-6/",
-        "https://beebom.com/how-to-get-headphones-and-earbuds-in-gta-6/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe7DdQJ6UIJHAbCrooP1quD7B4IihJKCSwXFCXQSjBhZe2hKukKZSETVPIdVk",
-      "image_credit": "CULTR",
-      "news": [
-        {
-          "url": "https://www.cultr.com/news/tuning-in-to-leonida-every-radio-station-in-gta-vi-gta-6/",
-          "title": "Tuning In to Leonida: Every Radio Station in GTA VI (GTA 6)",
-          "publisher": "CULTR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe7DdQJ6UIJHAbCrooP1quD7B4IihJKCSwXFCXQSjBhZe2hKukKZSETVPIdVk"
-        },
-        {
-          "url": "https://www.gamespot.com/articles/how-to-listen-to-music-and-podcasts-on-your-phone-in-gta-6/",
-          "title": "How To Listen To Music And Podcasts On Your Phone In GTA 6",
-          "publisher": "GameSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwWNIqLguA7IpRNyAUHLbTAywK70ECuYOKZMj6A43pIKDXkFiRlrF4y1X5nwk"
-        },
-        {
-          "url": "https://beebom.com/how-to-get-headphones-and-earbuds-in-gta-6/",
-          "title": "How to Get Headphones and Earbuds in GTA 6",
-          "publisher": "Beebom",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSP28VojkN6VonprnPkQl8qWAniUlcd2_JqL23U0oHTX5LenZeVWzdzLA07vrY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLooB_lC04ZBLypKbr8YvKiQHXO3og8_JG3V8dPm2lpB2FM3FIy_1XD801KUs"
         }
       ]
     }
