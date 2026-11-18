@@ -3,17 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T22:31:03.975918Z",
+  "checked_at": "2026-11-18T23:01:23.625046Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "coritiba vs santos",
+      "query": "the oak ridge boys",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T22:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/14/obituaries/richard-sterban-dead.html",
+        "https://fox17.com/news/local/oak-ridge-boys-member-dies-in-tennessee-after-cancer-battle",
+        "https://www.cbsnews.com/video/passage-in-memoriam-111526/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdfRT0qh48g9Lzl2eW9kZcFudwuUQuW0J_GhCtMLJjZvYCxz6YaHfu1r2_tH0",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/14/obituaries/richard-sterban-dead.html",
+          "title": "Richard Sterban, the Bass Singer for the Oak Ridge Boys, Dies at 83",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdfRT0qh48g9Lzl2eW9kZcFudwuUQuW0J_GhCtMLJjZvYCxz6YaHfu1r2_tH0"
+        },
+        {
+          "url": "https://fox17.com/news/local/oak-ridge-boys-member-dies-in-tennessee-after-cancer-battle",
+          "title": "Oak Ridge Boys member dies in Tennessee after cancer battle",
+          "publisher": "WZTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS1PjFAvnAhR8vzpNMSVLOHf-1JobyiryhRwC-ow0KSwC0nT89unVe4P2VogQ"
+        },
+        {
+          "url": "https://www.cbsnews.com/video/passage-in-memoriam-111526/",
+          "title": "Passage: In memoriam",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrUdNBnRMdtWRUDPUeiUeh6dWqeTSVgmv8QeBsqQI-EkQQZDsh-P7LY9gy_JI"
+        }
+      ]
+    },
+    {
+      "query": "chendall weaver",
       "approx_searches": "500+",
+      "published_at": "2026-11-18T22:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/houston-guard-chendall-weaver-could-203001815.html",
+        "https://www.houstonchronicle.com/sports/college/cougars/article/chendall-weaver-eligibility-fifth-year-22537743.php"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkujCZ7O2qWKu-QbbNwfXTquTEQ1gr9m6Rh0oGHEvcRMRR_LfeKBPHnh9xUs",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/houston-guard-chendall-weaver-could-203001815.html",
+          "title": "Houston Guard Chendall Weaver Could Play an Important Role in Las Vegas",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkujCZ7O2qWKu-QbbNwfXTquTEQ1gr9m6Rh0oGHEvcRMRR_LfeKBPHnh9xUs"
+        },
+        {
+          "url": "https://www.houstonchronicle.com/sports/college/cougars/article/chendall-weaver-eligibility-fifth-year-22537743.php",
+          "title": "UH guard Chendall Weaver has hearing to see if he can keep playing for Cougars",
+          "publisher": "Houston Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbRTMAI6E4pl_kbo0uqSTUSnsC6V6OL0VbeKXA0gg5Y4l_EZbFCUdtuerbeBU"
+        }
+      ]
+    },
+    {
+      "query": "dow jones industrial average",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T22:20:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/17/stock-market-today-live-updates.html",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-18-2026",
+        "https://www.bloomberg.com/news/articles/2026-11-17/stock-market-today-dow-s-p-live-updates"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_vCmWPB9szSUFkXF_5GKwHF5Yg-kNDsyQGz5Q5vFv5XMxOvefPc0g45V74I",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/17/stock-market-today-live-updates.html",
+          "title": "Dow drops more than 500 points; S&P 500 falls for fifth day as Nvidia sells off: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_vCmWPB9szSUFkXF_5GKwHF5Yg-kNDsyQGz5Q5vFv5XMxOvefPc0g45V74I"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-18-2026",
+          "title": "Stock Market Today: Dow Falls as Nvidia Earnings Fail to Soothe Investors' Nerves",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-17/stock-market-today-dow-s-p-live-updates",
+          "title": "Stocks Fall as Nvidia’s Earnings Rally Sputters: Markets Wrap",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_u_R0OHAx_N6TUuugc3CHRi5qBRNirwYYQv1XyHG1GVT9QgCJYt50R0cu2E"
+        }
+      ]
+    },
+    {
+      "query": "heshimu evans",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T22:20:00Z",
+      "related_news_urls": [
+        "https://www.wkyt.com/2026/11/18/former-kentucky-wildcat-basketball-star-arrested-assault/",
+        "https://www.kentucky.com/news/local/crime/article318133153.html",
+        "https://www.lex18.com/news/covering-kentucky/in-your-community/lexington-metro/former-university-of-kentucky-basketball-star-arrested-for-domestic-violence"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo1tnvco8v2YEuwBX-S2UKxQUKrOedUF8kMk8_ln18citqgvmrGZhP6ywmCIg",
+      "image_credit": "WKYT",
+      "news": [
+        {
+          "url": "https://www.wkyt.com/2026/11/18/former-kentucky-wildcat-basketball-star-arrested-assault/",
+          "title": "Former Kentucky Wildcat Basketball star arrested for Assault",
+          "publisher": "WKYT",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo1tnvco8v2YEuwBX-S2UKxQUKrOedUF8kMk8_ln18citqgvmrGZhP6ywmCIg"
+        },
+        {
+          "url": "https://www.kentucky.com/news/local/crime/article318133153.html",
+          "title": "Former Kentucky Wildcats basketball player charged with domestic violence",
+          "publisher": "Lexington Herald Leader",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsnQSFoQGMb7l3hU1jY4Yl3y8VPTgPLNixGWVEdMbv3xVMIZSy12WnvdMA5HU"
+        },
+        {
+          "url": "https://www.lex18.com/news/covering-kentucky/in-your-community/lexington-metro/former-university-of-kentucky-basketball-star-arrested-for-domestic-violence",
+          "title": "Former University of Kentucky basketball star arrested for domestic violence",
+          "publisher": "LEX 18 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCePtOe23ry5zBWGLmaAoL2qH7ZgcIFtR5xMXlkaMRI0cIwh9hz_Z6aTPAhc0"
+        }
+      ]
+    },
+    {
+      "query": "dadeschools",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T22:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
+        "https://www.local10.com/weather/2026/11/18/miami-dade-public-schools-to-close-thursday-taking-this-on-a-day-by-day-basis/",
+        "https://www.miamiherald.com/news/local/education/article318145212.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk",
+      "image_credit": "NBC 6 South Florida",
+      "news": [
+        {
+          "url": "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
+          "title": "Live updates: Broward and Miami-Dade public schools to remain closed Thursday due to flooding",
+          "publisher": "NBC 6 South Florida",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk"
+        },
+        {
+          "url": "https://www.local10.com/weather/2026/11/18/miami-dade-public-schools-to-close-thursday-taking-this-on-a-day-by-day-basis/",
+          "title": "Miami-Dade public schools to close Thursday: ‘Taking this on a day-by-day basis’",
+          "publisher": "WPLG Local 10",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtu_au3R5Sx833HOQ5XlzV9qY_2GlMt91_GUj_JnHQk2kukSrCGvsDrM3BrxE"
+        },
+        {
+          "url": "https://www.miamiherald.com/news/local/education/article318145212.html",
+          "title": "Miami-Dade schools to close Thursday after more than 24 hours of heavy rain",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYE4tux0oowYGp8wMey5x5yi8SxNyWAywipAhuaPRRHMT6Jm8E3RZDPE4eB0"
+        }
+      ]
+    },
+    {
+      "query": "coritiba vs santos",
+      "approx_searches": "2000+",
       "published_at": "2026-11-18T22:10:00Z",
       "related_news_urls": [
         "https://ge.globo.com/pr/futebol/brasileirao-serie-a/noticia/2026/11/18/coritiba-x-santos-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
         "https://www.bemparana.com.br/noticias/parana/neymar-causa-euforia-em-curitiba-antes-de-jogo-contra-o-coritiba/",
-        "https://tmc.com.br/esporte/sem-vencer-tres-jogos-santos-ainda-sonha-libertadores/"
+        "https://esportes.r7.com/futebol/campeonato-brasileiro-serie-a/conteudo-digital/pre-e-pos-jogo/video/cuca-reforca-comprometimento-do-peixao-antes-de-enfrentar-o-coritiba-nao-demos-folga-18112026/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNxExrbJ6Gm8RYrLd-th0eYjGnyk_neEth5N2AC2fH8V02zWQBBpZYpBq-iyE",
       "image_credit": "ge",
@@ -33,11 +200,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHs1y249iukpmH8r-6K-LxjXVt7ATTmgRAD1M67umXMy3vAwnIfuN2lG4QMxo"
         },
         {
-          "url": "https://tmc.com.br/esporte/sem-vencer-tres-jogos-santos-ainda-sonha-libertadores/",
-          "title": "Sem vencer há três jogos, Santos ainda sonha com a Libertadores",
-          "publisher": "tmc.com.br",
+          "url": "https://esportes.r7.com/futebol/campeonato-brasileiro-serie-a/conteudo-digital/pre-e-pos-jogo/video/cuca-reforca-comprometimento-do-peixao-antes-de-enfrentar-o-coritiba-nao-demos-folga-18112026/",
+          "title": "Cuca reforça comprometimento do Peixão antes de enfrentar o Coritiba: ‘Não demos folga!’",
+          "publisher": "R7 Esportes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW4eNPqtBBXFB9YoS7_SZtVHn7yZ0-6pX5vm6gYM-2rVl5VHE3Cw26s0yIlhE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwvLjGkesgSVG1xCKVU4mmP5bdbC-LwLmFzmMwY4gFQXJ0Rj5t3j81xkyj-E0"
         }
       ]
     },
@@ -78,49 +245,49 @@
     },
     {
       "query": "jason michael",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T22:00:00Z",
       "related_news_urls": [
-        "https://www.footballscoop.com/2026/11/18/nc-state-names-longtime-nfl-assistant-jason-michael-as-offensive-coordinator-under-philip-rivers",
-        "https://sports.yahoo.com/articles/former-eagles-coach-jason-michael-210859255.html",
-        "https://insidepacksports.com/s/19766/release-nc-state-names-jason-michael-offensive-coordinator"
+        "https://www.espn.com/college-football/story/_/id/50524698/nc-state-names-nfl-assistant-michael-oc-rivers",
+        "https://247sports.com/college/north-carolina-state/article/jason-michael-hired-as-nc-state-offensive-coordinator-under-philip-rivers-292948702/",
+        "https://bleacherreport.com/articles/25535056-philip-rivers-hires-former-nfl-assistant-coach-nc-state-offensive-coordinator"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqqTlCKTPaM8mBFksLoh-ZFjRHUCkg91vXM7NP9NqKpeH2_enSIT-Qkz4siRM",
-      "image_credit": "FootballScoop.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_b6H8r_M337HLbYfhZjgS73NYepuvNlpQRBoFUjR48Bh1iLhXYJNINRAC96g",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.footballscoop.com/2026/11/18/nc-state-names-longtime-nfl-assistant-jason-michael-as-offensive-coordinator-under-philip-rivers",
-          "title": "NC State names longtime NFL assistant Jason Michael as offensive coordinator under Philip Rivers",
-          "publisher": "FootballScoop.com",
+          "url": "https://www.espn.com/college-football/story/_/id/50524698/nc-state-names-nfl-assistant-michael-oc-rivers",
+          "title": "NC State names NFL assistant Jason Michael as OC under Philip Rivers",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqqTlCKTPaM8mBFksLoh-ZFjRHUCkg91vXM7NP9NqKpeH2_enSIT-Qkz4siRM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_b6H8r_M337HLbYfhZjgS73NYepuvNlpQRBoFUjR48Bh1iLhXYJNINRAC96g"
         },
         {
-          "url": "https://sports.yahoo.com/articles/former-eagles-coach-jason-michael-210859255.html",
-          "title": "Former Eagles coach Jason Michael linked to NC State coordinator job",
-          "publisher": "Yahoo Sports",
+          "url": "https://247sports.com/college/north-carolina-state/article/jason-michael-hired-as-nc-state-offensive-coordinator-under-philip-rivers-292948702/",
+          "title": "Jason Michael hired as NC State offensive coordinator under Philip Rivers",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQqaBaE336U2tSWV_vJ6HdwaUsCmMld_fTynzrUfb2U47HEX9mCsWqQEUO5H4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSngB29dgUykBN2qVkrPi_LS67GZUTjJ2GO4AN1jHxsZIsPKAR_jisMUmA6xZ0"
         },
         {
-          "url": "https://insidepacksports.com/s/19766/release-nc-state-names-jason-michael-offensive-coordinator",
-          "title": "RELEASE: NC State Names Jason Michael Offensive Coordinator",
-          "publisher": "Inside Pack Sports",
+          "url": "https://bleacherreport.com/articles/25535056-philip-rivers-hires-former-nfl-assistant-coach-nc-state-offensive-coordinator",
+          "title": "Philip Rivers Hires Former NFL Assistant Coach as NC State Offensive Coordinator",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS7y_aYKQtHWtjhOGxEQ9CnlwBSsesAz1plPm3WEZbPZ6KaZCIqHdZ5t8nufg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdYB1BOj1XNe0mZJgISg7Q5XzGXm2cva-D44IFoPNIT7W4DqDQvtmLUdeIGo"
         }
       ]
     },
     {
       "query": "pokebeach",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T22:00:00Z",
       "related_news_urls": [
         "https://www.pokebeach.com/2026/11/gold-silver-tcg-products-to-release-alongside-pokemon-ex%E2%98%85-series",
         "https://www.cbr.com/pokemon-entei-raikou-suicune-return-new-releases-2027/",
         "https://godisageek.com/2026/11/pokemon-day-2027-collection/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5Hmwm7Et19sALCoEYjCqWYwZ-1COjSLOgWz2h5f7md8hnIVs2P6qt7H8uGcc",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgwDaTVYJ_-0PV2xMfwzDSrbdrKKEE_mqPTqZFt-5JfYx3XLWCIt-AOE8RPV8",
       "image_credit": "PokeBeach",
       "news": [
         {
@@ -128,7 +295,7 @@
           "title": "Gold & Silver TCG Products to Release Alongside Pokemon ex★ Series!",
           "publisher": "PokeBeach",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5Hmwm7Et19sALCoEYjCqWYwZ-1COjSLOgWz2h5f7md8hnIVs2P6qt7H8uGcc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgwDaTVYJ_-0PV2xMfwzDSrbdrKKEE_mqPTqZFt-5JfYx3XLWCIt-AOE8RPV8"
         },
         {
           "url": "https://www.cbr.com/pokemon-entei-raikou-suicune-return-new-releases-2027/",
@@ -147,212 +314,37 @@
       ]
     },
     {
-      "query": "can you game share gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T21:50:00Z",
+      "query": "mike wise",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T22:00:00Z",
       "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-ps5-game-sharing/",
-        "https://www.independent.co.uk/extras/indybest/gadgets-tech/video-games-consoles/game-sharing-gta-6-xbox-ps5-b3087019.html",
-        "https://beebom.com/gta-6-gameshare-on-ps5/"
+        "https://sports.yahoo.com/articles/longtime-espn-personality-author-sports-220508034.html",
+        "https://mocoshow.com/2026/11/18/longtime-washington-post-sportswriter-mike-wise-dies-at-62/",
+        "https://thespun.com/sports-media/mike-wise-dies-cause-of-death-62"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNdKdSd1hg-r8TZufdaGWworqzex0_OYu2xBbpc5xEQBxiO1o1MfSkaTULFjQ",
-      "image_credit": "VICE",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKWUVrrz6lsyU_ku2nLxK-Py1sLjjOmlAL9dUD0Fy-DWsn8O4yvy33Cn5kcx8",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.vice.com/en/article/gta-6-ps5-game-sharing/",
-          "title": "Can You Game Share GTA 6 on PS5? PlayStation Has an Answer",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNdKdSd1hg-r8TZufdaGWworqzex0_OYu2xBbpc5xEQBxiO1o1MfSkaTULFjQ"
-        },
-        {
-          "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/video-games-consoles/game-sharing-gta-6-xbox-ps5-b3087019.html",
-          "title": "This simple trick lets you share GTA 6 with a friend on Xbox or PS5",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTh8dBU2vU4vkZ6-iN3dWJOZlpi1lkXhCb9t7XQtLJ2zzog4gA89iXXYs7Ryj8"
-        },
-        {
-          "url": "https://beebom.com/gta-6-gameshare-on-ps5/",
-          "title": "Can You Gameshare GTA 6 on PS5? Answered",
-          "publisher": "Beebom",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW6R0R3OAVAwr9H40iO_imc2rb9E489WCdPsNvHqV95m_UjHzq86gBKA9DPtQ"
-        }
-      ]
-    },
-    {
-      "query": "nz vs ind",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-18T21:40:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/live-match-blog",
-        "https://sports.yahoo.com/articles/bumrah-back-india-wins-toss-220146900.html",
-        "https://www.cricbuzz.com/cricket-news/140965/akash-deep-the-making-of-a-second-innings"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwMAC_EfqzAExmSj8Az-ZdyaWHLG9R17ZEDSx35USFJiwmpihCoAZfEaPWgBo",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/live-match-blog",
-          "title": "NZ vs Ind, 1st Test, Live Blog - Bumrah gets Latham in the first over",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwMAC_EfqzAExmSj8Az-ZdyaWHLG9R17ZEDSx35USFJiwmpihCoAZfEaPWgBo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/bumrah-back-india-wins-toss-220146900.html",
-          "title": "Bumrah is back: India wins the toss and bowls in the 1st test against New Zealand",
+          "url": "https://sports.yahoo.com/articles/longtime-espn-personality-author-sports-220508034.html",
+          "title": "Longtime ESPN personality, author, sports reporter dies suddenly at 62",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRst7BxA_fMZaZFPnktvpGpGvqP_GWFh1TYqtrEivH5edcQHGltXhU0_cyP8tg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKWUVrrz6lsyU_ku2nLxK-Py1sLjjOmlAL9dUD0Fy-DWsn8O4yvy33Cn5kcx8"
         },
         {
-          "url": "https://www.cricbuzz.com/cricket-news/140965/akash-deep-the-making-of-a-second-innings",
-          "title": "Akash Deep: The making of a second innings",
-          "publisher": "Cricbuzz",
+          "url": "https://mocoshow.com/2026/11/18/longtime-washington-post-sportswriter-mike-wise-dies-at-62/",
+          "title": "Longtime Washington Post Sportswriter Mike Wise Dies at 62",
+          "publisher": "The MoCo Show -",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_u62y3ekY5RAlrdJicrfHUmslQK6-LrIlrj-nd4zkAvLyDjCCnJ3EDr_m2Jk"
-        }
-      ]
-    },
-    {
-      "query": "florida basketball",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-18T21:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
-        "https://www.espn.com/soccer/team-stats/_/gameId/401916979/league/uefa.wchampions",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401906851"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8usoSp041bXEUQZ2jxIojkczYy038RKK2b3yrp_Ltv0XHXVsPqe-a_6gw7vQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
-          "title": "Kansas 102-77 UNLV (Nov 17, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8usoSp041bXEUQZ2jxIojkczYy038RKK2b3yrp_Ltv0XHXVsPqe-a_6gw7vQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOXBnx0wBEizHk3n9t3fuQOChbSG6-xIrN2YkrvXKHjy8a6FZMXEQwOduXg6A"
         },
         {
-          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401916979/league/uefa.wchampions",
-          "title": "Juventus vs. OH Leuven (Nov 18, 2026) Team Stats",
-          "publisher": "ESPN",
+          "url": "https://thespun.com/sports-media/mike-wise-dies-cause-of-death-62",
+          "title": "Fans Crushed As Former ESPN Reporter Dies Suddenly at 62",
+          "publisher": "The Spun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThMdhn2bsr3QIBLw2eHq7bmU9Sa7N0MozPsvKDozZN0uXJKQrKIooyF99J7w0"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401906851",
-          "title": "Tennessee 61-46 Michigan State (Nov 17, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtduy_3jxbXJVSqYNd5AIKBunPV_6cnn-2V04xx5kGjfo5I_mlJyinGpqpBB0"
-        }
-      ]
-    },
-    {
-      "query": "bo french",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T21:40:00Z",
-      "related_news_urls": [
-        "https://www.politico.com/news/2026/11/18/bo-french-texas-country-club-membership-01173063",
-        "https://www.alternet.org/karl-rove-2678446322/",
-        "https://www.rawstory.com/bo-french-2678446814/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA0Kp7fiBI7kOtBFxsFdAtZeaf1goWlkpX2BQJOP6geyQft8vNsKPapou-WGQ",
-      "image_credit": "Politico",
-      "news": [
-        {
-          "url": "https://www.politico.com/news/2026/11/18/bo-french-texas-country-club-membership-01173063",
-          "title": "Bo French loses Texas country club membership",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA0Kp7fiBI7kOtBFxsFdAtZeaf1goWlkpX2BQJOP6geyQft8vNsKPapou-WGQ"
-        },
-        {
-          "url": "https://www.alternet.org/karl-rove-2678446322/",
-          "title": "MAGA election loser suffers another humiliation",
-          "publisher": "Alternet",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxDF4t9SNbCSTPQ58wf-z0YKl6DFBy557fjkgVHJurqSLezcK75hDpZshLoE"
-        },
-        {
-          "url": "https://www.rawstory.com/bo-french-2678446814/",
-          "title": "Ridicule as far-right Republican ejected from elite country club over his 'reputation'",
-          "publisher": "Raw Story",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbdIFlCMNnjwAsYovtCnNbl1qEl9o4aZcr8Pd6MKI7Ol1DbumizbxkQX1dsG4"
-        }
-      ]
-    },
-    {
-      "query": "cma awards 2026 where to watch",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T21:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/article/2026-cma-awards-how-to-watch-taylor-swifts-performance-live-start-time-nominees-and-more-112500231.html",
-        "https://www.usatoday.com/story/entertainment/music/2026/11/18/is-taylor-swift-country-debate-cma-performance/92834891007/",
-        "https://variety.com/2026/tv/news/taylor-swift-cma-return-disney-sell-commericals-1236951795/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFLI3l0hDALn6LSt-PTwGKlEYQJJJmej-TU8ORpYt9mXLi9s_Pl9QMG4pdnCw",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/article/2026-cma-awards-how-to-watch-taylor-swifts-performance-live-start-time-nominees-and-more-112500231.html",
-          "title": "2026 CMA Awards: How to watch Taylor Swift's performance live, start time, nominees and more",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFLI3l0hDALn6LSt-PTwGKlEYQJJJmej-TU8ORpYt9mXLi9s_Pl9QMG4pdnCw"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/18/is-taylor-swift-country-debate-cma-performance/92834891007/",
-          "title": "Taylor Swift's CMA return after 13 years sparks debate",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc8hNilQ9Ggkml0VNRdEyO36-qPZd5RXQNmQ0dOXd4L9lAMaj7aRA7-tOoldU"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/taylor-swift-cma-return-disney-sell-commericals-1236951795/",
-          "title": "Taylor Swift’s CMA Return Helped Disney Sell More Ads",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-A3O3EGk3IGAt1gEZpmfKbsxvn3cPC2AoyefetT0mAvQQ9sBo8yciYxbvSp4"
-        }
-      ]
-    },
-    {
-      "query": "clavicular",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T21:40:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/18/metro/clavicular-indicted-on-rape-charges-braden-e-peters/",
-        "https://www.boston25news.com/news/local/social-media-influencer-clavicular-indicted-rape-charges-stemming-2025-cape-cod-incident/L5PPILU3TBDNDBJKERRK5UHCS4/",
-        "https://www.yahoo.com/news/us/articles/looksmaxxing-influencer-clavicular-indicted-chatham-213847993.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9kbknlxrwFGWGXmMX3V2pD2LZJoWkEiEVOmhJ-hVd2qAYGn2D8UXVFw9lhSw",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/18/metro/clavicular-indicted-on-rape-charges-braden-e-peters/",
-          "title": "‘Looksmaxxer’ known as Clavicular indicted on two rape charges stemming from 2025 incident on Cape Cod",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9kbknlxrwFGWGXmMX3V2pD2LZJoWkEiEVOmhJ-hVd2qAYGn2D8UXVFw9lhSw"
-        },
-        {
-          "url": "https://www.boston25news.com/news/local/social-media-influencer-clavicular-indicted-rape-charges-stemming-2025-cape-cod-incident/L5PPILU3TBDNDBJKERRK5UHCS4/",
-          "title": "Social media influencer ‘Clavicular’ indicted on rape charges stemming from 2025 Cape Cod incident",
-          "publisher": "Boston 25 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZiJAW9tjM0Qo7hCNjizW62w-qI990wM4YMAXu6m9UVj09rKGIQV9k5wLeIUo"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/looksmaxxing-influencer-clavicular-indicted-chatham-213847993.html",
-          "title": "Looksmaxxing influencer ‘Clavicular’ indicted in Chatham rape case",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3fz8FrF2fTAgHF7SeUqfNTDC_lcUPXf8VKMe0jMub9tDecMxsOxiucCzYfBU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT766lG5Ydc1_wf2T8NzIfpovYDKgmNEPX2UoFat_YIQMh3idRlM-Rj78dqS2k"
         }
       ]
     }
