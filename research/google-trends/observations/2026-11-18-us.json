@@ -3,52 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T16:31:14.002929Z",
+  "checked_at": "2026-11-18T17:01:29.811881Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "seattle mariners",
+      "query": "new york city marathon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T16:40:00Z",
+      "related_news_urls": [
+        "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
+        "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
+        "https://www.yahoo.com/news/videos/rachel-apas-family-theyre-processing-151252189.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUXijBOPCt-xPh5grgwCsJ7mpA63_MGhBKJkvSRod3KtbVC59hj5JbopGeJc",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
+          "title": "Dad of N.Y.C. Marathon Runner Who Died at 24 Recalls Her Heartbreaking Final Texts",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUXijBOPCt-xPh5grgwCsJ7mpA63_MGhBKJkvSRod3KtbVC59hj5JbopGeJc"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
+          "title": "Father of Rachel Apa, NYC Marathon runner who died, calls her death \"unfathomable\"",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcI8bcNXo4DJ3mzxTWGTfyNx1l3wJbSqO4amtA6KyICdLQ2ZlYxl4k5qUTTA"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/rachel-apas-family-theyre-processing-151252189.html",
+          "title": "Rachel Apa's family on how they're processing her \"unfathomable\" death and honoring her legacy",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHixOKBsD9tP_FfSlTyrN7bIktz3MuCQUUVXFfHceDAeykKQswslxi9fVpeQ"
+        }
+      ]
+    },
+    {
+      "query": "tarik skubal",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T16:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50521652/sources-mets-final-teams-bidding-tarik-skubal",
+        "https://www.cbssports.com/mlb/news/mlb-rumors-tarik-skubal-dodgers-blue-jays-padres-suzuki-arozarena-phillies-red-sox-rays/",
+        "https://sports.yahoo.com/articles/tarik-skubal-bidding-war-reportedly-142929136.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqNu0VhG_C_Fk9EL8nKAWqISUz5v0OP9k5BmOBoX-VPX0eZBY3Z1BDmFuiIY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50521652/sources-mets-final-teams-bidding-tarik-skubal",
+          "title": "Sources: Mets favorite to sign Tarik Skubal as teams ramp up pursuit of FA ace",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqNu0VhG_C_Fk9EL8nKAWqISUz5v0OP9k5BmOBoX-VPX0eZBY3Z1BDmFuiIY"
+        },
+        {
+          "url": "https://www.cbssports.com/mlb/news/mlb-rumors-tarik-skubal-dodgers-blue-jays-padres-suzuki-arozarena-phillies-red-sox-rays/",
+          "title": "MLB rumors: Tarik Skubal hosts more meetings, Padres eyeing top FA hitter, plus Red Sox, Phillies, Rays, more",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS537VEilGrAL33T2UKxtHKm1egE2oGLPOo0_IAY_5Pk2ZDg02d_hkraq831Zw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/tarik-skubal-bidding-war-reportedly-142929136.html",
+          "title": "Tarik Skubal’s bidding war reportedly down to 2 teams",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX2G-hLWiQu2wlpikfb0D4hd-ZAqKUl1VCRbK44UpoieOdign5pmNr6x6rBMw"
+        }
+      ]
+    },
+    {
+      "query": "rashid bashir",
       "approx_searches": "200+",
       "published_at": "2026-11-18T16:10:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/mlb-qualifying-offer-deadline-reaction-2026",
-        "https://www.lookoutlanding.com/seattle-mariners-news/151078/mariners-news-randy-arozarena-bryce-conley-and-dustin-may",
-        "https://sports.yahoo.com/mlb/breaking-news/article/mlb-qualifying-offers-randy-arozarena-rejects-offer-david-bednar-stays-with-yankees-210851903.html"
+        "https://news.wisc.edu/rashid-bashir-named-chancellor-of-uwmadison/",
+        "https://captimes.com/news/education/students-raise-concerns-over-finalist-for-uw-madisons-next-chancellor/article_07a4a14e-62b5-457b-b379-a2d43379cc28.html",
+        "https://www.jsonline.com/story/news/education/2026/11/18/rashid-bashir-dean-at-illinois-appointed-new-uw-madison-chancellor/92830200007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWu3POtUL2uWTcrWK4pZNTU6vkjxtIktJr4Lr3_BKXd6FwouyqZbXVCFstPLc",
-      "image_credit": "MLB.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJUxpC3mp3xf4x81YcLklFjY3N6t6uu411e-tVy6WaiLExJVHBt0Vt1nPco0",
+      "image_credit": "UW–Madison News",
       "news": [
         {
-          "url": "https://www.mlb.com/news/mlb-qualifying-offer-deadline-reaction-2026",
-          "title": "What effect will qualifying offer decisions have on market?",
-          "publisher": "MLB.com",
+          "url": "https://news.wisc.edu/rashid-bashir-named-chancellor-of-uwmadison/",
+          "title": "Rashid Bashir named chancellor of UW–Madison",
+          "publisher": "UW–Madison News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWu3POtUL2uWTcrWK4pZNTU6vkjxtIktJr4Lr3_BKXd6FwouyqZbXVCFstPLc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJUxpC3mp3xf4x81YcLklFjY3N6t6uu411e-tVy6WaiLExJVHBt0Vt1nPco0"
         },
         {
-          "url": "https://www.lookoutlanding.com/seattle-mariners-news/151078/mariners-news-randy-arozarena-bryce-conley-and-dustin-may",
-          "title": "Mariners News: Randy Arozarena, Bryce Conley, and Dustin May",
-          "publisher": "Lookout Landing",
+          "url": "https://captimes.com/news/education/students-raise-concerns-over-finalist-for-uw-madisons-next-chancellor/article_07a4a14e-62b5-457b-b379-a2d43379cc28.html",
+          "title": "Students raise concerns over finalist for UW-Madison's next chancellor",
+          "publisher": "The Cap Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8dlSDEVaaORgBis4d7uU6s687JTXiXkfQYjwsMqsqm9rYktHpjWvt_oTsF-c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsRXC41K8BHZpVjP0DSFZXPPEM0gDrELPdMxXkVe0kUjZtX2bYHIMlX4YNGwo"
         },
         {
-          "url": "https://sports.yahoo.com/mlb/breaking-news/article/mlb-qualifying-offers-randy-arozarena-rejects-offer-david-bednar-stays-with-yankees-210851903.html",
-          "title": "MLB qualifying offers: Randy Arozarena rejects offer, David Bednar stays with Yankees",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.jsonline.com/story/news/education/2026/11/18/rashid-bashir-dean-at-illinois-appointed-new-uw-madison-chancellor/92830200007/",
+          "title": "UW regents select Rashid Bashir from Illinois as Madison chancellor",
+          "publisher": "Milwaukee Journal Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVS4UfWFkIGnfmwqwHWiLf31ZdE155pTId3quIEnS2y54LUritEWCWK71IFlI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn5t8lUAzv7eo7KpYWcqgVtPbNZCRDT63GQ84Z_MUDdkUni2suc3lBwCv16cs"
         }
       ]
     },
     {
       "query": "maikel garcia",
-      "approx_searches": "10000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-18T16:00:00Z",
       "related_news_urls": [
         "https://www.espn.com/mlb/story/_/id/50521866/sources-royals-trade-maikel-garcia-mariners-miller",
-        "https://www.cbssports.com/mlb/news/maikel-garcia-trade-grades-mariners-royals/",
-        "https://www.mlbtraderumors.com/2026/11/mariners-to-acquire-maikel-garcia.html"
+        "https://www.mlb.com/news/maikel-garcia-traded-from-royals-to-mariners",
+        "https://www.cbssports.com/mlb/news/maikel-garcia-trade-grades-mariners-royals/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdBehRjaClo4E8ZcfwxavMtvwuA1uED9zM4FFhC6zV79LtXzIIY6zLhvo-ZOQ",
       "image_credit": "ESPN",
@@ -61,18 +131,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdBehRjaClo4E8ZcfwxavMtvwuA1uED9zM4FFhC6zV79LtXzIIY6zLhvo-ZOQ"
         },
         {
+          "url": "https://www.mlb.com/news/maikel-garcia-traded-from-royals-to-mariners",
+          "title": "KC trading All-Star 3B Garcia to Seattle for RHP Miller in 6-player swap (source)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWydZ4Lnj4aCJNOeGRpjYnlfh2jmttuExq01sBX8KVawC6SFqLTljxl2iT2T4"
+        },
+        {
           "url": "https://www.cbssports.com/mlb/news/maikel-garcia-trade-grades-mariners-royals/",
           "title": "Maikel Garcia trade: Mariners land Gold Glove infielder from Royals in six-player deal, per report",
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS537VEilGrAL33T2UKxtHKm1egE2oGLPOo0_IAY_5Pk2ZDg02d_hkraq831Zw"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/mariners-to-acquire-maikel-garcia.html",
-          "title": "Mariners To Acquire Maikel Garcia",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhLW9wvb7tA1i4I6QJ4SXdyw8iNyaQw69oH1q3DWI3jLORjsrGDq7fx2caEIE"
         }
       ]
     },
@@ -90,14 +160,14 @@
       "news": [
         {
           "url": "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
-          "title": "Democrats Nominate Jeffries as Speaker, Making History",
+          "title": "Democrats Nominate Hakeem Jeffries for Speaker of the House, Making History",
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI"
         },
         {
           "url": "https://www.cnn.com/2026/11/18/politics/hakeem-jeffries-house-democrats-leadership-elections",
-          "title": "Hakeem Jeffries wins House speaker nomination despite far-left threats",
+          "title": "Hakeem Jeffries overwhelmingly wins House speaker nomination despite threats from ultra-progressives",
           "publisher": "CNN",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi16S1MCd0kM6qFDxbDOpDdrOBrF2p7xbM3-sviis90ZCo2yLGh-R_a1iLUIo"
@@ -147,48 +217,13 @@
       ]
     },
     {
-      "query": "donald trump xi jinping",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T15:40:00Z",
-      "related_news_urls": [
-        "https://www.economist.com/international/2026/11/17/the-incredible-shrinking-legacy-of-donald-j-trump",
-        "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-        "https://www.foxnews.com/politics/chinas-xi-surprises-trump-tarmac-reciprocating-gesture-shown-months-ago"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiekoqLLQ5_q3c5UHX24-bnJudzE3IfqLL_XlgiXPJo9PolXG7GPGzTBqWdf4",
-      "image_credit": "The Economist",
-      "news": [
-        {
-          "url": "https://www.economist.com/international/2026/11/17/the-incredible-shrinking-legacy-of-donald-j-trump",
-          "title": "The incredible shrinking legacy of Donald J Trump",
-          "publisher": "The Economist",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiekoqLLQ5_q3c5UHX24-bnJudzE3IfqLL_XlgiXPJo9PolXG7GPGzTBqWdf4"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-          "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR74ghbcQeul-0BobGtU0qbGSYAT93x_iGoAz9V-hVzFfq7aP92iHsNcQw6keE"
-        },
-        {
-          "url": "https://www.foxnews.com/politics/chinas-xi-surprises-trump-tarmac-reciprocating-gesture-shown-months-ago",
-          "title": "China's Xi surprises Trump at tarmac, reciprocating gesture shown months ago",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUaD4N84BkHP8T_dB7fZXnoewPfG0u0zdzXX-LMYidgj7HNen8asG2UAnNxtA"
-        }
-      ]
-    },
-    {
       "query": "new jason movie",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-18T15:30:00Z",
       "related_news_urls": [
         "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
-        "https://bloody-disgusting.com/movie/3976124/jason-13th-official-movie-will-release-in-theaters-august-13-2027-from-cineverse/",
-        "https://theplaylist.net/new-friday-the-13th-film-titled-jason-full-cast-announced-20261118/"
+        "https://www.forbes.com/sites/timlammers/2026/11/18/new-friday-the-13th-movie-jason-announces-cast-and-release-date-as-filming-wraps/",
+        "https://bloody-disgusting.com/movie/3976124/jason-13th-official-movie-will-release-in-theaters-august-13-2027-from-cineverse/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0",
       "image_credit": "Deadline",
@@ -201,53 +236,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0"
         },
         {
+          "url": "https://www.forbes.com/sites/timlammers/2026/11/18/new-friday-the-13th-movie-jason-announces-cast-and-release-date-as-filming-wraps/",
+          "title": "New ‘Friday The 13th’ Movie ‘Jason’ Announces Cast And Release Date As Filming Wraps",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNRUCtQAcipbP4-aY5Zj_7Pe_Jc0ZdOHMW1b37DEDaZU-X4_MR0fH0qhpSxU"
+        },
+        {
           "url": "https://bloody-disgusting.com/movie/3976124/jason-13th-official-movie-will-release-in-theaters-august-13-2027-from-cineverse/",
           "title": "‘JASON’ – 13th Official Movie Will Release in Theaters August 13, 2027 from Cineverse",
           "publisher": "Bloody Disgusting",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgGykrdU2PktIV5ked1xD3etzvodM3l-l_FJItQtHxdrZrCJtjHBMOv4b-yiU"
-        },
-        {
-          "url": "https://theplaylist.net/new-friday-the-13th-film-titled-jason-full-cast-announced-20261118/",
-          "title": "New 'Friday The 13th' Film Titled 'Jason' Coming In August 2027 Has Wrapped Filming & Full Cast Announced",
-          "publisher": "The Playlist",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSenZin8eIwRgMiOON5KOfIIL7lI15EnCJh20mK2gIpE4g6CjTybyNLc-x1R18"
-        }
-      ]
-    },
-    {
-      "query": "florida weather flooding",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T15:30:00Z",
-      "related_news_urls": [
-        "https://www.wesh.com/article/central-florida-flood-watch-heavy-rain-orlando-weather/74463066",
-        "https://www.foxweather.com/live-news/live-updates-relentless-storms-bring-heavy-rain-intense-flooding-to-florida-s-atlantic-coast",
-        "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTErTFw-HeexgzC2dRcqajf67rleE_qYLjLoynmGFmjTHrOjXpBE-NZ9GKyqrg",
-      "image_credit": "WESH",
-      "news": [
-        {
-          "url": "https://www.wesh.com/article/central-florida-flood-watch-heavy-rain-orlando-weather/74463066",
-          "title": "Flood threat grows across Central Florida as additional inches of rain move in",
-          "publisher": "WESH",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTErTFw-HeexgzC2dRcqajf67rleE_qYLjLoynmGFmjTHrOjXpBE-NZ9GKyqrg"
-        },
-        {
-          "url": "https://www.foxweather.com/live-news/live-updates-relentless-storms-bring-heavy-rain-intense-flooding-to-florida-s-atlantic-coast",
-          "title": "Live updates: Relentless storms bring heavy rain, intense flooding to Florida's Atlantic Coast",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoeYMjb_einyaMth-_5CeQOP0oi1IqgDYCESCowUCFed5QgdCPUfhlskHszy0"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
-          "title": "Severe flooding hits parts of coastal Florida from over a foot of rain … and a lot more is incoming",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8"
         }
       ]
     },
@@ -258,7 +258,7 @@
       "related_news_urls": [
         "https://www.foxcarolina.com/2026/11/18/spartanburg-water-issues-systemwide-boil-water-advisory/",
         "https://www.wyff4.com/article/spartanburg-boil-water-advisory-systemwide/74464896",
-        "https://www.yahoo.com/news/articles/spartanburg-water-issues-systemwide-boil-144208145.html"
+        "https://www.goupstate.com/story/news/environment/2026/11/18/spartanburg-water-boil-water-advisory-what-customers-need-to-know/92843961007/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEwd-e-xZNnvm-oPPdn8w9IOr67zMFiJhC6KbPoUTp2Y6YSbmu8nwhJl7ameE",
       "image_credit": "FOX Carolina News",
@@ -278,17 +278,52 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpLoQc30p-x1rbNaLUgx7Gj78XdprQWzNf8QD3lzj0gwkZcjzblLvV2v3LBq0"
         },
         {
-          "url": "https://www.yahoo.com/news/articles/spartanburg-water-issues-systemwide-boil-144208145.html",
+          "url": "https://www.goupstate.com/story/news/environment/2026/11/18/spartanburg-water-boil-water-advisory-what-customers-need-to-know/92843961007/",
           "title": "Spartanburg Water issues systemwide boil water advisory",
-          "publisher": "Yahoo",
+          "publisher": "GoUpstate",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5nO8qOhZc6s0z7-nutCVBxxPhFtbta1xuswM-gR2QVYkNrOfV82Mn1PK3LuU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ3qR_56qr_VI4-7HzmaNA8oqqqjPH0JHH_br3J0qrKpsiLWZ9w18uIyRme4E"
+        }
+      ]
+    },
+    {
+      "query": "florida weather flooding",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-18T15:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
+        "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
+        "https://www.foxweather.com/live-news/live-updates-relentless-storms-bring-heavy-rain-intense-flooding-to-florida-s-atlantic-coast"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
+          "title": "Severe flooding hits parts of coastal Florida from over a foot of rain … and a lot more is incoming",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8"
+        },
+        {
+          "url": "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
+          "title": "Live updates: Rain and flooding ground flights, close schools in South Florida",
+          "publisher": "NBC 6 South Florida",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk"
+        },
+        {
+          "url": "https://www.foxweather.com/live-news/live-updates-relentless-storms-bring-heavy-rain-intense-flooding-to-florida-s-atlantic-coast",
+          "title": "Live updates: Relentless storms bring heavy rain, intense flooding to Florida's Atlantic Coast",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoeYMjb_einyaMth-_5CeQOP0oi1IqgDYCESCowUCFed5QgdCPUfhlskHszy0"
         }
       ]
     },
     {
       "query": "seatgeek",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-18T15:20:00Z",
       "related_news_urls": [
         "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
@@ -318,41 +353,6 @@
           "publisher": "attstadium.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJIVuYkxS-Jwor6aGFnVzEbqbOrd0392w8qOle2Ed2rHarVvvYfW-z1OGQnS8"
-        }
-      ]
-    },
-    {
-      "query": "cameron mathison",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T15:20:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1303942/general-hospital-drew-ava-wedding-cameron-mathison-interview/",
-        "https://www.yahoo.com/entertainment/tv/articles/general-hospital-preview-valentin-makes-120223932.html",
-        "https://www.soapoperadigest.com/content/general-hospital-spoilers-video-were-taking-them-out-today/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1Ew2xHKhzHexLQAsUaLfiRdChU2fnhmaBEHnVuSVYrrM8DRCAzK9CcliEg_4",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1303942/general-hospital-drew-ava-wedding-cameron-mathison-interview/",
-          "title": "'General Hospital's Cameron Mathison on Drew and Ava's Wedding & Sonny Trouble",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1Ew2xHKhzHexLQAsUaLfiRdChU2fnhmaBEHnVuSVYrrM8DRCAzK9CcliEg_4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/general-hospital-preview-valentin-makes-120223932.html",
-          "title": "General Hospital Preview: Valentin Makes Hudson a Dangerous Offer",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP8lFO5O9Bvq-ZQqGZ9s4irFLUboMnim1-IiYBwz2QP40N5j2HBHUZLLNrg8o"
-        },
-        {
-          "url": "https://www.soapoperadigest.com/content/general-hospital-spoilers-video-were-taking-them-out-today/",
-          "title": "GH Spoilers Video: 'We're Taking Them Out — Today!'",
-          "publisher": "Soap Opera Digest",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqnk21cSmcnvD0YSOYExNXRcFH2K-YuFMJLM-oXh-h8OgF1vSk_CSWCbMWnFI"
         }
       ]
     }
