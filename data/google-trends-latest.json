@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T11:30:59.216850Z",
+  "checked_at": "2026-11-18T12:01:25.603832Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "alex tanguay",
+      "query": "atlanta braves",
       "approx_searches": "200+",
-      "published_at": "2026-11-18T11:10:00Z",
+      "published_at": "2026-11-18T11:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/red-wings-coach-takes-leave-021547636.html",
-        "https://sports.yahoo.com/articles/report-red-wings-assistant-alex-202000335.html"
+        "https://www.vivaelbirdos.com/st-louis-cardinals-news/77006/st-louis-cardinals-jordan-walker-alec-burleson-denied-silver-slugger-awards",
+        "https://www.batterypower.com/atlanta-braves-news/142407/matt-olson-wins-2026-silver-slugger-award",
+        "https://sports.yahoo.com/articles/matt-olson-personal-news-emerge-022436654.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvYp1NfcESO388y7d0oLhldKbx54NzDpLgJzgU7XOlC2Mh4Ez52LW4TLb0MFo",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWmH34rbNCnY4CufNtdmblHCV9_OZ1MiuXHPypoVjSmVwKdX0t7ohauCPcQY",
+      "image_credit": "Viva El Birdos",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/red-wings-coach-takes-leave-021547636.html",
-          "title": "Red Wings Coach Takes Leave of Absence",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.vivaelbirdos.com/st-louis-cardinals-news/77006/st-louis-cardinals-jordan-walker-alec-burleson-denied-silver-slugger-awards",
+          "title": "St. Louis Cardinals Jordan Walker, Alec Burleson Denied Silver Slugger Awards",
+          "publisher": "Viva El Birdos",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvYp1NfcESO388y7d0oLhldKbx54NzDpLgJzgU7XOlC2Mh4Ez52LW4TLb0MFo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWmH34rbNCnY4CufNtdmblHCV9_OZ1MiuXHPypoVjSmVwKdX0t7ohauCPcQY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/report-red-wings-assistant-alex-202000335.html",
-          "title": "Report: Red Wings Assistant Alex Tanguay on Personal Leave",
+          "url": "https://www.batterypower.com/atlanta-braves-news/142407/matt-olson-wins-2026-silver-slugger-award",
+          "title": "Matt Olson wins 2026 Silver Slugger Award",
+          "publisher": "Battery Power",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTejaL15FswU7Rd-u3mVUgZdpA6NXv4lGNRIcsKnkuNoDoA8k0JPX1eI5aBj4Q"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/matt-olson-personal-news-emerge-022436654.html",
+          "title": "Matt Olson Has Personal News Emerge During MLB Offseason",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4oUxqpwnmuz7yQkmpAxl2TlJ3-JEh8eAzG5JK2K9GEDsP-dptzq9rl6Rb-zI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPSpfpeE1WdyXOjlrsWrruNFDG3e3kSGNLo2tpaWb0sI31HqCZVOYU7KvZVHo"
         }
       ]
     },
     {
-      "query": "jared padalecki",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T11:10:00Z",
+      "query": "météo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T11:40:00Z",
       "related_news_urls": [
-        "https://www.whowhatwear.com/fashion/celebrity/leighton-meester-guarding-stars-interview-2026",
-        "https://collider.com/jared-padalecki-netflix-guarding-stars-christmas-movie/",
-        "https://calgaryherald.com/entertainment/movies/guarding-stars-netflixs-alberta-shot-christmas-romance-to-stream-nov-18"
+        "https://meteofrance.com/actualites/meteo-defile-de-perturbations-cette-semaine",
+        "https://www.lemonde.fr/planete/article/2026/11/18/pluie-et-inondations-le-pas-de-calais-et-la-somme-places-en-vigilance-orange_6813028_3245.html",
+        "https://www.ici.fr/hauts-de-france/nord-59/lille/des-trains-ter-retardes-ou-supprimes-entre-lille-douai-et-valenciennes-ce-mercredi-matin-9602794"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9sTo48D6cigehkgGzSFfLzhMHt1FYJvThXOcKqZhri9KiN_PzdghaO8NxLLQ",
-      "image_credit": "Who What Wear",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv4ISS179o5IZwxoMfPo4_vcka2PxG_j7il3zXullnaxs0mOHQI4bMfxJWBZ4",
+      "image_credit": "METEO France",
       "news": [
         {
-          "url": "https://www.whowhatwear.com/fashion/celebrity/leighton-meester-guarding-stars-interview-2026",
-          "title": "Leighton Meester Can't Resist a Good Holiday Classic—That's Why She's Starring in One",
-          "publisher": "Who What Wear",
+          "url": "https://meteofrance.com/actualites/meteo-defile-de-perturbations-cette-semaine",
+          "title": "Météo : défilé de perturbations cette semaine",
+          "publisher": "METEO France",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9sTo48D6cigehkgGzSFfLzhMHt1FYJvThXOcKqZhri9KiN_PzdghaO8NxLLQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv4ISS179o5IZwxoMfPo4_vcka2PxG_j7il3zXullnaxs0mOHQI4bMfxJWBZ4"
         },
         {
-          "url": "https://collider.com/jared-padalecki-netflix-guarding-stars-christmas-movie/",
-          "title": "‘Supernatural’ Star Officially Lands in Netflix’s Next Mega Hit",
-          "publisher": "Collider",
+          "url": "https://www.lemonde.fr/planete/article/2026/11/18/pluie-et-inondations-le-pas-de-calais-et-la-somme-places-en-vigilance-orange_6813028_3245.html",
+          "title": "Pluie et inondations : le Pas-de-Calais et la Somme placés en vigilance orange",
+          "publisher": "Le Monde.fr",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkj0u4X10fm1JcTJtgDYvSOD45B4hyR_So-UH6PrlIU9sBgquu9shCq2xusr0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_TDRS5ufBgoU1HLK6BNt-xp_7xKL6sQqDW8rENIPnNcF_tUYfvniMhT3MW0s"
         },
         {
-          "url": "https://calgaryherald.com/entertainment/movies/guarding-stars-netflixs-alberta-shot-christmas-romance-to-stream-nov-18",
-          "title": "Calgary area stands in for New York and Montana – in the same new movie!",
-          "publisher": "Calgary Herald",
+          "url": "https://www.ici.fr/hauts-de-france/nord-59/lille/des-trains-ter-retardes-ou-supprimes-entre-lille-douai-et-valenciennes-ce-mercredi-matin-9602794",
+          "title": "Des trains TER retardés ou supprimés entre Lille, Douai et Valenciennes ce mercredi matin",
+          "publisher": "ici.fr",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3tXNd78ZuWcVsNZQ2pfo-AoAFXA0A2WiQZEOrtjdVzV892-7LYMuaiXfDOdc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvEuXxomXemWeP8tDCBOyKIsx1P0222juCj-ojHyW5ag3QdL1YaAXIHZj20iM"
         }
       ]
     },
     {
-      "query": "xi jinping",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T11:10:00Z",
+      "query": "cameron bancroft",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T11:40:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/17/politics/live-news/trump-visit-china-philippines",
-        "https://www.nytimes.com/2026/11/18/world/asia/xi-trump-china-arrival.html",
-        "https://www.bbc.com/news/live/cw99e0n0lpnnt"
+        "https://www.bbc.com/sport/cricket/articles/cmqlqdevgl9ro",
+        "https://www.cricinfo.com/story/cameron-bancroft-s-account-of-what-happened-during-sandpapergate-in-south-africa-in-2018-1563064",
+        "https://www.politico.com/news/2026/11/17/cricket-australias-sandpapergate-forum-has-a-problem-it-isnt-chasing-the-truth-01172131"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOLRul2kwsOCDf-W--G6y6rdi1wbckyDiB5_OYnh9NQypLeiTtzRPFLsC5fac",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSimH6NRQ2pGAjBkfX9eL-RZcTbIeYm8sfwxffqLuUlSpWHg1zJNclNzfh9L6Q",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/17/politics/live-news/trump-visit-china-philippines",
-          "title": "APEC summit latest: Xi breaks precedent by meeting Trump on arrival in China",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOLRul2kwsOCDf-W--G6y6rdi1wbckyDiB5_OYnh9NQypLeiTtzRPFLsC5fac"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/18/world/asia/xi-trump-china-arrival.html",
-          "title": "In a Rare Move, Xi Greets Trump as He Lands in China",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxUKircuNM0nVtQ-tYSoqpEpWrQlY2m_2WfSAQj2GWrY31rTWsf6rs35UzYEM"
-        },
-        {
-          "url": "https://www.bbc.com/news/live/cw99e0n0lpnnt",
-          "title": "China's Xi JInping greets Donald Trump at airport in rare move ahead of trilateral talks with Putin",
+          "url": "https://www.bbc.com/sport/cricket/articles/cmqlqdevgl9ro",
+          "title": "Australia sandpaper: Cameron Bancroft claims whole team knew of plot in South Africa",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn8FnLG3YtNHqZieHxcPeKGMYFCp9RqHy8fT3ycJLoXYoZ62ixV24KgmUm0VM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSimH6NRQ2pGAjBkfX9eL-RZcTbIeYm8sfwxffqLuUlSpWHg1zJNclNzfh9L6Q"
+        },
+        {
+          "url": "https://www.cricinfo.com/story/cameron-bancroft-s-account-of-what-happened-during-sandpapergate-in-south-africa-in-2018-1563064",
+          "title": "'It was not just the three of us ... it was the whole team'",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-taOh5IMNlnY2tfpXRSA1HHqjgjahQqq7RpKjz52S3C1F8c2rg_C_tTvKNWY"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/17/cricket-australias-sandpapergate-forum-has-a-problem-it-isnt-chasing-the-truth-01172131",
+          "title": "Cricket Australia’s 'Sandpapergate' forum has a problem: It isn’t chasing the truth",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDZ6v1phhUBFxktcP7IUP_INenOHGsPnJz6Wv-YTDH296m5sAWRUxtqFKLrgU"
         }
       ]
     },
     {
-      "query": "ny lottery",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T11:10:00Z",
+      "query": "irán",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T11:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/lifestyle/articles/ny-lottery-win-4-5-040032250.html",
-        "https://www.wgrz.com/article/news/lottery/2-top-prize-winning-take-5-tickets-new-york-lottery-sold-in-western-new-york/71-b1f6f2a6-e32c-424d-b4dd-83dbfe2df563",
-        "https://www.yahoo.com/lifestyle/articles/15-players-share-york-lottery-053356706.html"
+        "https://cnnespanol.cnn.com/2026/11/16/eeuu/inteligencia-iran-plan-bomba-sucia-washington-trax",
+        "https://noticias.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously",
+        "https://www.telemundo.com/noticias/edicion-noticias-telemundo/estados-unidos/video/un-alto-funcionario-dice-que-es-poco-probable-que-iran-ataque-a-ee-uu-con-una-bomba-sucia-tmvo13245566"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl7T_v48-Ktm-iD114oDpvprEPOYRxRttBl9IaCpX1z8tY7jybmMDPVWxnjZ0",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ77tFGmzEO2PHHzvzSmsMyfwIEe58KQDUbML8cHaT6F3lGwzKNRbOs-s8fyQ",
+      "image_credit": "CNN en Español",
       "news": [
         {
-          "url": "https://www.yahoo.com/lifestyle/articles/ny-lottery-win-4-5-040032250.html",
-          "title": "NY Lottery Win 4, Take 5, Numbers winning numbers for Sunday, Nov. 15",
-          "publisher": "Yahoo",
+          "url": "https://cnnespanol.cnn.com/2026/11/16/eeuu/inteligencia-iran-plan-bomba-sucia-washington-trax",
+          "title": "Exclusiva: inteligencia de EE.UU. indica que Irán podría considerar el uso de una bomba sucia en Washington, según fuentes",
+          "publisher": "CNN en Español",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl7T_v48-Ktm-iD114oDpvprEPOYRxRttBl9IaCpX1z8tY7jybmMDPVWxnjZ0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ77tFGmzEO2PHHzvzSmsMyfwIEe58KQDUbML8cHaT6F3lGwzKNRbOs-s8fyQ"
         },
         {
-          "url": "https://www.wgrz.com/article/news/lottery/2-top-prize-winning-take-5-tickets-new-york-lottery-sold-in-western-new-york/71-b1f6f2a6-e32c-424d-b4dd-83dbfe2df563",
-          "title": "Two top-prize winning TAKE 5 tickets sold in Western New York",
-          "publisher": "WGRZ",
+          "url": "https://noticias.foxnews.com/politics/trump-warns-iran-reported-plot-against-admin-officials-take-very-seriously",
+          "title": "Trump advierte a Irán sobre el supuesto complot contra funcionarios del Gobierno: «Nos lo tomamos muy en serio»",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_HJisNG3mI0N0qovBNuQWsOlQLYwaoOQwzIYbLFeJb9DeZru7fYRdyoaHtvQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWlcUclLGRrKBg6lBJUyxtbQKYUTfEex0Kv51Z5vECpIrixoAtQCtzYqHNDmk"
         },
         {
-          "url": "https://www.yahoo.com/lifestyle/articles/15-players-share-york-lottery-053356706.html",
-          "title": "15 Players Share New York Lottery Jackpot After Winning with Consecutive Numbers",
-          "publisher": "Yahoo",
+          "url": "https://www.telemundo.com/noticias/edicion-noticias-telemundo/estados-unidos/video/un-alto-funcionario-dice-que-es-poco-probable-que-iran-ataque-a-ee-uu-con-una-bomba-sucia-tmvo13245566",
+          "title": "Un alto funcionario dice que es \"poco probable\" que Irán ataque a EE.UU. con una 'bomba sucia'",
+          "publisher": "Telemundo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSglrFABEYBiyTRDo13zc8difVPadNoM5HZuzx3_qEsWEAv1v5OpbFsQOPLX14"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSml1Gpv-yl_0kxuFblUjCmqa-5hoxmVX7zoc5JRnKSia5lmwKcMochWtTbXj8"
         }
       ]
     },
     {
-      "query": "black friday deals 2026",
+      "query": "king of the court draftkings",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T11:40:00Z",
+      "related_news_urls": [
+        "https://www.dimers.com/nba/news/draftkings-king-of-the-court-picks-for-1-million-jackpot-on-tuesday-november-17",
+        "https://www.rotoballer.com/nba-prop-bet-picks-draftkings-king-of-the-court-11-17-26/1995742",
+        "https://dknetwork.draftkings.com/2026/11/17/draftkings-king-of-the-court-best-bets-for-tuesday-11-17-26/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYvfRzhL1c9p13N7KgIwD1Vg9x_0GG5ELJWJIrZ49vHi6e0lQSrpC6l_Fzngk",
+      "image_credit": "Dimers",
+      "news": [
+        {
+          "url": "https://www.dimers.com/nba/news/draftkings-king-of-the-court-picks-for-1-million-jackpot-on-tuesday-november-17",
+          "title": "DraftKings “King of the Court” picks for $1 Million Jackpot on Tuesday, November 17",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYvfRzhL1c9p13N7KgIwD1Vg9x_0GG5ELJWJIrZ49vHi6e0lQSrpC6l_Fzngk"
+        },
+        {
+          "url": "https://www.rotoballer.com/nba-prop-bet-picks-draftkings-king-of-the-court-11-17-26/1995742",
+          "title": "NBA Prop Bet Picks: DraftKings King of the Court (11/17/26)",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOmjF726LmTJFpIKgim7o_VuN9UHSsdIGinFCLwIzuKNR8vsgDnMO_nJsKniA"
+        },
+        {
+          "url": "https://dknetwork.draftkings.com/2026/11/17/draftkings-king-of-the-court-best-bets-for-tuesday-11-17-26/",
+          "title": "DraftKings King of the Court Best Bets for Tuesday 11/17/26",
+          "publisher": "DraftKings Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9OH-Ua0LK35yIEdak7juY0OGTRKAv3dcPj6RO8RHlp7sAOA4Y4umyOC10QFg"
+        }
+      ]
+    },
+    {
+      "query": "dabo swinney",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T11:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50512833/defiant-dabo-swinney-says-clemson-gonna-win-bunch-more",
+        "https://sports.yahoo.com/articles/hasn-t-won-anything-consequence-105533913.html",
+        "https://www.theclemsoninsider.com/2026/11/17/was-swinney-auditioning-for-another-job/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKvEQ0EA9CYpKtaMIpDPVnTAzUiQAf1pAi29z22u7e-U0jQXVOaWpRNXppGiE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50512833/defiant-dabo-swinney-says-clemson-gonna-win-bunch-more",
+          "title": "Defiant Dabo Swinney says Clemson's 'gonna win a bunch more'",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKvEQ0EA9CYpKtaMIpDPVnTAzUiQAf1pAi29z22u7e-U0jQXVOaWpRNXppGiE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/hasn-t-won-anything-consequence-105533913.html",
+          "title": "“He Hasn’t Won Anything of Consequence in So Long”: Fans Don’t Believe Dabo Swinney as He Makes National Championship Admission Amid Clemson Criticism",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQT_CFZOKf7IWx1gioBzPJF2Xd33sKV0VihkCcD0QQX5z6dwR-cBar8l7Ek9vY"
+        },
+        {
+          "url": "https://www.theclemsoninsider.com/2026/11/17/was-swinney-auditioning-for-another-job/",
+          "title": "Was Swinney Auditioning for Another Job?",
+          "publisher": "The Clemson Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNeXybv7ubxTxrJcTBu6Xbwpce01gzBasRkltYJBuHthXxVd_z9jrGHLlaZsY"
+        }
+      ]
+    },
+    {
+      "query": "juan mata",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T11:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50519330/juan-mata-retires-spain-world-cup-man-united",
+        "https://www.nytimes.com/athletic/7791699/2026/11/18/juan-mata-retires-man-united-chelsea-spain/",
+        "https://www.bbc.com/sport/football/articles/c8p3vwe1rrzqo"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVH_1TMXMUZQmYqt7r8_V3NQnRRd26e2dolt0kuWedD6BALX5-9JIoEMq56ss",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50519330/juan-mata-retires-spain-world-cup-man-united",
+          "title": "Juan Mata announces retirement aged 38 after glittering career",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVH_1TMXMUZQmYqt7r8_V3NQnRRd26e2dolt0kuWedD6BALX5-9JIoEMq56ss"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7791699/2026/11/18/juan-mata-retires-man-united-chelsea-spain/",
+          "title": "Juan Mata announces retirement: ‘Football will never leave my life’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQduG9kSSSKmPFgAvQ1vYgE0yvkm7Aof1npI1ivRmpw43fuQ4OL4UoJ-JhNsbM"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/articles/c8p3vwe1rrzqo",
+          "title": "Former Spain midfielder Mata retires aged 38",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmVO7utw0epdp7S1D6wgCHe9IXoVBf9yTD1OlQJCYDTsEWy2U4__xRry9_BA"
+        }
+      ]
+    },
+    {
+      "query": "brandon tyner us military transfer",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T11:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/18/us-soldier-military-custody-spy-russia.html",
+        "https://www.bbc.com/news/articles/c6x284ez38vdo",
+        "https://www.nytimes.com/2026/11/12/world/europe/army-britain-arrest-spy-russia.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIWOZYp3se_ZYSQlkQ8_4vajbYObVIm-EceyPI6f51hpmWZPDMx4TsME3Ub40",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/18/us-soldier-military-custody-spy-russia.html",
+          "title": "U.S. soldier taken into military custody over suspected spying for Russia",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIWOZYp3se_ZYSQlkQ8_4vajbYObVIm-EceyPI6f51hpmWZPDMx4TsME3Ub40"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/c6x284ez38vdo",
+          "title": "American soldier arrested in UK taken into US military custody",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5OiAzkVtL7iY5VtHgpnfJWbeciynZ48CGZGG6I0k5NMtxIMeX_FXRiRoN_FQ"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/12/world/europe/army-britain-arrest-spy-russia.html",
+          "title": "Army Officer Accused of Trying to Spy for Russia Is Afghan War Veteran",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFUVRt4r0gzZSmc5UfQy3HOXYCJ7EGPP6qRcqEolNq6zgTnkfMZ3vVVjfiUMQ"
+        }
+      ]
+    },
+    {
+      "query": "strands hint",
       "approx_searches": "1000+",
-      "published_at": "2026-11-18T11:00:00Z",
+      "published_at": "2026-11-18T11:20:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-16",
-        "https://www.nbcnews.com/select/shopping/best-early-black-friday-deals-2026-rcna609512",
-        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-kate-spade-dyson-ring-and-more-are-on-major-sale-for-the-2026-shopping-event-175729108.html"
+        "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-17-989/",
+        "https://www.aol.com/articles/nyt-strands-puzzle-november-18-054500000.html",
+        "https://www.technobezz.com/news/nyt-strands-sports-edition-29-hints-and-answers"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbi2c2gsNFSy5RPBvsMnXqOtn3yWoool6lOSDe34NVegbiXD_ct7kLOiKo9gY",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-JCWL-geJx4ZmEuJSL2MbatsaViOuWBrYsFoL_UcSGxPWQxX7f99YbDZYeQ",
+      "image_credit": "CNET",
       "news": [
         {
-          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-16",
-          "title": "Don’t wait for Black Friday. Our deals expert found 63 discounts worth shopping early",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbi2c2gsNFSy5RPBvsMnXqOtn3yWoool6lOSDe34NVegbiXD_ct7kLOiKo9gY"
-        },
-        {
-          "url": "https://www.nbcnews.com/select/shopping/best-early-black-friday-deals-2026-rcna609512",
-          "title": "It’s not too early to shop Black Friday deals — I’m tracking the best ones live up to 70% off",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGO8azihFSIG61XqB2wXGEBr8kbFdm8GWIYhFs0l5E6oAfpc66XMCxKEPDvMI"
-        },
-        {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-kate-spade-dyson-ring-and-more-are-on-major-sale-for-the-2026-shopping-event-175729108.html",
-          "title": "Early Black Friday deals live now: Ugg, Kate Spade, Dyson, Ring and more are on major sale for the 2026 shopping event",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2yOs_TkF2T33QMzKM_9PJtNjgOnXzXL4Rx0_0FY0UWm_QDoRZoN_8WvPR6wA"
-        }
-      ]
-    },
-    {
-      "query": "ga lottery",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T11:00:00Z",
-      "related_news_urls": [
-        "https://www.11alive.com/article/news/lottery/georgia-lottery-winnings-5-million-scratch-ticket-cumming-100k-a-year-for-life-camden-county/85-788a00f9-e5f7-47f2-8df1-0fbe17d58ef1",
-        "https://www.fox5atlanta.com/news/buford-resident-wins-2-million-georgia-lottery-scratcher",
-        "https://www.wrdw.com/2026/11/17/augusta-store-sells-10000-winning-scratcher-lottery-ticket/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGslBijj5Pp-mZGwUgDS8GyEI8z26No9EjZRHm9JHi7sTNO7ThRqBxOtNbdAQ",
-      "image_credit": "11Alive.com",
-      "news": [
-        {
-          "url": "https://www.11alive.com/article/news/lottery/georgia-lottery-winnings-5-million-scratch-ticket-cumming-100k-a-year-for-life-camden-county/85-788a00f9-e5f7-47f2-8df1-0fbe17d58ef1",
-          "title": "Georgia Lottery player wins $5 million off scratch ticket in Cumming; another in Camden County wins $100K a year for life",
-          "publisher": "11Alive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGslBijj5Pp-mZGwUgDS8GyEI8z26No9EjZRHm9JHi7sTNO7ThRqBxOtNbdAQ"
-        },
-        {
-          "url": "https://www.fox5atlanta.com/news/buford-resident-wins-2-million-georgia-lottery-scratcher",
-          "title": "Buford resident wins $2 million on Georgia Lottery scratcher",
-          "publisher": "FOX 5 Atlanta",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv41sh4rgd2SzBBcPxjticSpvQu35Krh8BHiI_rw-9Ex-CstzdzB9UhnNXdCw"
-        },
-        {
-          "url": "https://www.wrdw.com/2026/11/17/augusta-store-sells-10000-winning-scratcher-lottery-ticket/",
-          "title": "Augusta store sells $10,000 winning scratcher lottery ticket",
-          "publisher": "WRDW",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvTEnr-Ezf_AXhVGEN839_lSlNqXZUHaum2QW_o_iNzfaCltSt7GHdRpTvUq4"
-        }
-      ]
-    },
-    {
-      "query": "mariska hargitay",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T11:00:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/tv/list/nbc-100th-anniversary-best-tv-shows",
-        "https://variety.com/2026/tv/news/nbc-100th-anniversary-party-1236950781/",
-        "https://www.nbcuniversal.com/article/nbc-announces-first-wave-stars-set-appear-nbc100-live-celebration"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEFcJP5lT0ABhns7sXnhn0CV7bICI17o6ZmpgtUl70iESFR2fBg-_CMHEU8hc",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/tv/list/nbc-100th-anniversary-best-tv-shows",
-          "title": "52 best NBC shows that define the pioneering network at 100",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEFcJP5lT0ABhns7sXnhn0CV7bICI17o6ZmpgtUl70iESFR2fBg-_CMHEU8hc"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/nbc-100th-anniversary-party-1236950781/",
-          "title": "NBC Celebrates 100th Anniversary With Amy Poehler, Jimmy Fallon and More Stars at Rainbow Room Soirée",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0MHAvoWU6aJNR5E7R7Jyo0RHdSxZ0jRMvhuORo0wyAfFscAAg-B-K8MTL5bU"
-        },
-        {
-          "url": "https://www.nbcuniversal.com/article/nbc-announces-first-wave-stars-set-appear-nbc100-live-celebration",
-          "title": "NBC Announces First Wave of Stars Set to Appear on ‘NBC100: The Live Celebration’",
-          "publisher": "nbcuniversal media",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2RJJ_fq9BjfA9aGRzt-w1odj4QLhSTxrUz0MEvu9Q1Ty6cvz4OWYUERCKpGQ"
-        }
-      ]
-    },
-    {
-      "query": "play store",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T11:00:00Z",
-      "related_news_urls": [
-        "https://finance.biggo.com/news/66c8ac56-9aad-4563-9d3a-5775c9c0ddfd",
-        "https://ascii.jp/en/elem/000/004/452/4452487/",
-        "https://blog.google/products-and-platforms/platforms/google-play/best-of-play-awards-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHJ3yh06PCxEM6OK_w6l32zirA596-dHAS1Aq4GSOMgWZxsGkZO4ulAK7Nt6o",
-      "image_credit": "BigGo Finance",
-      "news": [
-        {
-          "url": "https://finance.biggo.com/news/66c8ac56-9aad-4563-9d3a-5775c9c0ddfd",
-          "title": "Japan's Mercari Android app disappears from Google Play Store, cannot be reinstalled",
-          "publisher": "BigGo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHJ3yh06PCxEM6OK_w6l32zirA596-dHAS1Aq4GSOMgWZxsGkZO4ulAK7Nt6o"
-        },
-        {
-          "url": "https://ascii.jp/en/elem/000/004/452/4452487/",
-          "title": "Mercari Vanishes from Google Play: Cause Unknown, Recovery Undetermined",
-          "publisher": "ASCII.jp",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwSmIPvBkEwa0DKaSuQ3wFbdiTFi-J-Ec1Q20HgBsLnPiWbuuSZKvSOZ5Tes0"
-        },
-        {
-          "url": "https://blog.google/products-and-platforms/platforms/google-play/best-of-play-awards-2026/",
-          "title": "Google Play unveils the best apps, games, and books of 2026",
-          "publisher": "blog.google",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXeUEEv8puyeSnIwxuSebIuCUXTZgp4HM5VMitJWBy9vkLqZ1685VHMZqjGQ"
-        }
-      ]
-    },
-    {
-      "query": "noaa weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T11:00:00Z",
-      "related_news_urls": [
-        "https://www.thefai.org/posts/recommendations-for-noaa-s-science-advisory-board-on-weather-modification-and-social-science",
-        "https://www.sweethomenews.com/noaa-outlook-points-to-warmer-oregon-winter/",
-        "https://weather.com/2026/11/18/holiday/thanksgiving/thanksgiving-getaway-weekend-weather-outlook-west-central-us"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSssF8FIAsfHX3YYAg0UsT73g5ytryw0eAsMk3bVoGAeHCSWQF_h2mI8OdhM7k",
-      "image_credit": "The Foundation for American Innovation",
-      "news": [
-        {
-          "url": "https://www.thefai.org/posts/recommendations-for-noaa-s-science-advisory-board-on-weather-modification-and-social-science",
-          "title": "Recommendations for NOAA’s Science Advisory Board on Weather Modification and Social Science",
-          "publisher": "The Foundation for American Innovation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSssF8FIAsfHX3YYAg0UsT73g5ytryw0eAsMk3bVoGAeHCSWQF_h2mI8OdhM7k"
-        },
-        {
-          "url": "https://www.sweethomenews.com/noaa-outlook-points-to-warmer-oregon-winter/",
-          "title": "NOAA outlook points to warmer Oregon winter, with rain and snow still in the forecast",
-          "publisher": "The New Era | Sweet Home, OR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX07n9ZsivzBkwLfDHkvdo5YIA_0f-_aKniNVh0fmt6_5gpuAxk0pEaSdaIgY"
-        },
-        {
-          "url": "https://weather.com/2026/11/18/holiday/thanksgiving/thanksgiving-getaway-weekend-weather-outlook-west-central-us",
-          "title": "Thanksgiving travel forecast 2026: early weather outlook",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRoSlsyl87e9CXowQ9GVZnhICXNQZe9QwIXwXhpdg92zyZguY4WgOpQ-KzxZ90"
-        }
-      ]
-    },
-    {
-      "query": "nyt connections hints",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T10:50:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-17-2026",
-        "https://www.forbes.com/sites/krisholt/2026/11/17/nyt-connections-hint-today-answer-wednesday-november-18-1256/",
-        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-18-1256/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-17-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 17, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://www.forbes.com/sites/krisholt/2026/11/17/nyt-connections-hint-today-answer-wednesday-november-18-1256/",
-          "title": "NYT ‘Connections’ Hints And Answers For Wednesday, November 18",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOXjrndVKJ-opemVVFRtPuLaidOb6fu3d1RQC13QgvUqtTijxy7u1KdhMCnM"
-        },
-        {
-          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-18-1256/",
-          "title": "Today’s NYT Connections Hints and Answers for Wednesday, Nov. 18, #1256",
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-17-989/",
+          "title": "Today’s NYT Strands Hints, Spangram and Answers for Tuesday, Nov. 17, #989",
           "publisher": "CNET",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-JCWL-geJx4ZmEuJSL2MbatsaViOuWBrYsFoL_UcSGxPWQxX7f99YbDZYeQ"
+        },
+        {
+          "url": "https://www.aol.com/articles/nyt-strands-puzzle-november-18-054500000.html",
+          "title": "NYT Strands Puzzle for November 18: Hints, Spangram, and Answers Revealed!",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzVPYlhmpBP0-Jmey8FHs5nqeq0lO4R1tvohoKaqMMR8-itxv5HwAb42xRwQo"
+        },
+        {
+          "url": "https://www.technobezz.com/news/nyt-strands-sports-edition-29-hints-and-answers",
+          "title": "NYT Strands Sports Edition Hints & Answers for Wednesday, November 18, 2026 (Puzzle #29)",
+          "publisher": "Technobezz",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwb-fAE6FXFYb7mG_RfWxEwRW14PrSyX2-CCtL5OPB28_F7LQkMwk4TKXHK2k"
+        }
+      ]
+    },
+    {
+      "query": "brittany mahomes",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T11:20:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/patrick-mahomes-announces-fourth-baby-gender-chiefs-fans-love-super-bowl-omen",
+        "https://www.yahoo.com/entertainment/celebrity/articles/chiefs-news-mahomes-family-reveals-110000013.html",
+        "https://people.com/patrick-and-brittany-mahomes-reveal-the-sex-of-baby-no-4-12261760"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM6T3iRG03IJ71j1JtTngBxrIk8l8OHytutB9hd2ahB8o9VjeGddOpA_iZx7k",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/patrick-mahomes-announces-fourth-baby-gender-chiefs-fans-love-super-bowl-omen",
+          "title": "Patrick & Brittany Mahomes announce fourth baby's gender, and Chiefs fans will love the Super Bowl omen",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM6T3iRG03IJ71j1JtTngBxrIk8l8OHytutB9hd2ahB8o9VjeGddOpA_iZx7k"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/chiefs-news-mahomes-family-reveals-110000013.html",
+          "title": "Chiefs News: The Mahomes family reveals gender of fourth child",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG6PXVeJbOYOp0CiLeOu9dvCkUcZPCvX_hMOv2fSZFz8M_SXrOKgEiImRkXPQ"
+        },
+        {
+          "url": "https://people.com/patrick-and-brittany-mahomes-reveal-the-sex-of-baby-no-4-12261760",
+          "title": "Patrick and Brittany Mahomes Are Expecting a Boy! See Their Gender Reveal",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiNfZaVUWyrGMw3DA0Jry__GGv39NlEBERfXjaaNWJzJs8FQK2McfX1Fmc46k"
         }
       ]
     }
