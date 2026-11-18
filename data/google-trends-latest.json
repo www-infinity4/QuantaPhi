@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T21:01:27.876431Z",
+  "checked_at": "2026-11-18T21:30:53.497909Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "marlon humphrey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T21:10:00Z",
+      "related_news_urls": [
+        "https://www.wbaltv.com/article/marlon-humphrey-podcast-baltimore-criminals-comments/74468759",
+        "https://www.baltimoresun.com/2026/11/18/ravens-marlon-humphrey-baltimore-criminals/",
+        "https://www.yardbarker.com/nfl/articles/espns_hot_mic_captured_angry_ravens_fans_f_bomb_rant_about_marlon_humphrey_on_live_tv/s1_17759_44575952"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRO2SjafBV2k47Mn_WvVYFRzn7554T_BjoPNELW_oM1B7ziQmZiksuxkjoHHmI",
+      "image_credit": "WBAL-TV",
+      "news": [
+        {
+          "url": "https://www.wbaltv.com/article/marlon-humphrey-podcast-baltimore-criminals-comments/74468759",
+          "title": "Baltimore Ravens' Marlon Humphrey under fire for podcast comments",
+          "publisher": "WBAL-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRO2SjafBV2k47Mn_WvVYFRzn7554T_BjoPNELW_oM1B7ziQmZiksuxkjoHHmI"
+        },
+        {
+          "url": "https://www.baltimoresun.com/2026/11/18/ravens-marlon-humphrey-baltimore-criminals/",
+          "title": "Ravens’ Marlon Humphrey says Baltimore is ‘best at making criminals’ on podcast",
+          "publisher": "Baltimore Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4ivPz4x5RupUIb5OKRreWnXVfK306gS7LO-B6G6M6kWMDRQZ_oMwn3-6SvJU"
+        },
+        {
+          "url": "https://www.yardbarker.com/nfl/articles/espns_hot_mic_captured_angry_ravens_fans_f_bomb_rant_about_marlon_humphrey_on_live_tv/s1_17759_44575952",
+          "title": "ESPN’s Hot Mic Captured Angry Ravens Fan’s F-Bomb Rant About Marlon Humphrey On Live TV",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqPjrdfo62KNJL5WHNk-gixuQN8pum3dPPgBQD4M4lMROdjANiprrDNW7OH8"
+        }
+      ]
+    },
+    {
+      "query": "panw stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T21:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/video/2026/11/18/wave-of-tech-outages-sets-stage-for-palo-alto-networks-earnings.html",
+        "https://www.barrons.com/articles/cybersecurity-software-stocks-palo-alto-eaaa4906",
+        "https://www.benzinga.com/trading-ideas/movers/26/11/63397526/palo-alto-stock-rises-ahead-of-earnings-what-you-should-know"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDY6K8EQuzfbZLH0SJkYvsWpCCiYD0Mfc2FF9i_6_sDz9iVAAaBntenUWoMAY",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/video/2026/11/18/wave-of-tech-outages-sets-stage-for-palo-alto-networks-earnings.html",
+          "title": "Wave of tech outages sets stage for Palo Alto Networks earnings",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDY6K8EQuzfbZLH0SJkYvsWpCCiYD0Mfc2FF9i_6_sDz9iVAAaBntenUWoMAY"
+        },
+        {
+          "url": "https://www.barrons.com/articles/cybersecurity-software-stocks-palo-alto-eaaa4906",
+          "title": "AI Risks Lift Cyber Stocks as Software Looks to Shrug Off Slump",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmYD3D-WatOF4UZZ6ianNjbXtAWz_EFApa8GZNlkeo3p_WYnQnvUEYJ_wETDE"
+        },
+        {
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63397526/palo-alto-stock-rises-ahead-of-earnings-what-you-should-know",
+          "title": "Palo Alto Stock Rises Ahead of Earnings: What You Should Know",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk3-FERwlVExU6uSwNIqzFPsV8_luD8DcpqUOq5MIzUonaI4bTTHPX9oT7qQQ"
+        }
+      ]
+    },
+    {
+      "query": "gemini neon",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T21:00:00Z",
+      "related_news_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        "https://developers.googleblog.com/gemini-hydrogen-for-robotics/",
+        "https://www.searchenginejournal.com/google-gemini-4-hydrogen-default-ai-mode/597096/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiwyltczoY9eSJinbkCv6IQlnM3F91fZaVyXoLQI10A4eAKbxIGAXO58B_WmE",
+      "image_credit": "blog.google",
+      "news": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "title": "Introducing Gemini 4 Hydrogen for Agentic Workflows",
+          "publisher": "blog.google",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiwyltczoY9eSJinbkCv6IQlnM3F91fZaVyXoLQI10A4eAKbxIGAXO58B_WmE"
+        },
+        {
+          "url": "https://developers.googleblog.com/gemini-hydrogen-for-robotics/",
+          "title": "Gemini 4 Hydrogen: a faster model for general purpose robotics",
+          "publisher": "Google for Developers Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-n8DElaDHT0Xff6idM4IlypgtituZPbZCCiXmAWVVdqjcHXvYIdNp3udspi4"
+        },
+        {
+          "url": "https://www.searchenginejournal.com/google-gemini-4-hydrogen-default-ai-mode/597096/",
+          "title": "Google Makes Gemini 4 Hydrogen The Default Model In AI Mode",
+          "publisher": "Search Engine Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjSzJcZyG1VJFWevHBP-VFdPrERpWmvm26_oPj-xyG2pZ-Mhl8JMOl4YOUyDg"
+        }
+      ]
+    },
+    {
+      "query": "houston basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T20:50:00Z",
+      "related_news_urls": [
+        "https://www.sportsline.com/insiders/houston-vs-florida-odds-proven-model-reveals-2026-players-era-8-college-basketball-tournament-semifinal-picks/",
+        "https://www.gainesville.com/story/sports/college/basketball/2026/11/18/how-to-watch-florida-basketball-vs-houston-tv-channel-stream/92768402007/",
+        "https://www.cbssports.com/prediction/news/florida-vs-houston-odds-picks-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWYGsXkU0pXRxe-7CZ8-so7BVHJDekCZ3SA0DKrghHRfNYe_rxLXnncA_j6nQ",
+      "image_credit": "SportsLine",
+      "news": [
+        {
+          "url": "https://www.sportsline.com/insiders/houston-vs-florida-odds-proven-model-reveals-2026-players-era-8-college-basketball-tournament-semifinal-picks/",
+          "title": "Houston vs. Florida odds: Proven model reveals 2026 Players Era 8 college basketball tournament semifinal picks",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWYGsXkU0pXRxe-7CZ8-so7BVHJDekCZ3SA0DKrghHRfNYe_rxLXnncA_j6nQ"
+        },
+        {
+          "url": "https://www.gainesville.com/story/sports/college/basketball/2026/11/18/how-to-watch-florida-basketball-vs-houston-tv-channel-stream/92768402007/",
+          "title": "How to watch Florida basketball vs Houston | TV channel, streaming",
+          "publisher": "Gainesville Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREOcraBxOiTxvtSv_k86TDjQ64WU-aHioPoYkaBEjKB8oihgSeX9bkdWGnbUs"
+        },
+        {
+          "url": "https://www.cbssports.com/prediction/news/florida-vs-houston-odds-picks-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
+          "title": "Florida vs. Houston odds, picks, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5P-JdXqDGw48J2wekzoHm_7b7SA2O1z5CzTeU1JjmSc7ID_kbBlWEKBmV1_A"
+        }
+      ]
+    },
+    {
+      "query": "milo ventimiglia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T20:40:00Z",
+      "related_news_urls": [
+        "https://decider.com/2026/11/18/jared-padalecki-gilmore-girls-documentary-milo-ventimiglia-dean-jess/",
+        "https://parade.com/tv/gilmore-girls-star-jared-padalecki-breaks-down-as-he-reveals-how-onscreen-rival-milo-ventimiglia-supported-him-25-years-ago",
+        "https://demokratis.co.id/en/padalecki-ventimiglia-gilmore-friendship"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHGL6czZVucDJy_AhBMElFqx2-AAysjYmiOjOnU9NwEpv8bJxJT3hhDWTUxo",
+      "image_credit": "Decider",
+      "news": [
+        {
+          "url": "https://decider.com/2026/11/18/jared-padalecki-gilmore-girls-documentary-milo-ventimiglia-dean-jess/",
+          "title": "Jared Padalecki reveals how he really felt when Milo Ventimiglia joined ‘Gilmore Girls’",
+          "publisher": "Decider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHGL6czZVucDJy_AhBMElFqx2-AAysjYmiOjOnU9NwEpv8bJxJT3hhDWTUxo"
+        },
+        {
+          "url": "https://parade.com/tv/gilmore-girls-star-jared-padalecki-breaks-down-as-he-reveals-how-onscreen-rival-milo-ventimiglia-supported-him-25-years-ago",
+          "title": "‘Gilmore Girls’ Star Jared Padalecki Breaks Down as He Reveals How Onscreen Rival Milo Ventimiglia Supported Him 25 Years Ago",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqJek36wGxngjEFCTkPdvWbQDTcz2b3JTO_669ZfuajCgkQCIO6TAru6EBvNw"
+        },
+        {
+          "url": "https://demokratis.co.id/en/padalecki-ventimiglia-gilmore-friendship",
+          "title": "Jared Padalecki Recalls Milo Ventimiglia Support on Gilmore Girls",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxvKM7Y8q_X7EXBZvDFe1QV09mTW2aElmwJECPHNizXU1ylopIgEskR_4fsts"
+        }
+      ]
+    },
+    {
+      "query": "notre dame vs rutgers",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T20:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/game/_/gameId/401920513",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401906851"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhuI2QDWeXT4ULhneWFBctp3562kvu7TLN78gXaC6GfyZyGy5prJX2Ra4Kv_s",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920513",
+          "title": "Rutgers vs. Notre Dame (Nov 18, 2026) Live Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhuI2QDWeXT4ULhneWFBctp3562kvu7TLN78gXaC6GfyZyGy5prJX2Ra4Kv_s"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
+          "title": "Kansas 102-77 UNLV (Nov 17, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8usoSp041bXEUQZ2jxIojkczYy038RKK2b3yrp_Ltv0XHXVsPqe-a_6gw7vQ"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401906851",
+          "title": "Tennessee 61-46 Michigan State (Nov 17, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtduy_3jxbXJVSqYNd5AIKBunPV_6cnn-2V04xx5kGjfo5I_mlJyinGpqpBB0"
+        }
+      ]
+    },
     {
       "query": "hacker",
       "approx_searches": "500+",
@@ -42,65 +252,30 @@
       ]
     },
     {
-      "query": "milo ventimiglia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T20:40:00Z",
-      "related_news_urls": [
-        "https://ew.com/jared-padalecki-cries-over-milo-ventimiglia-gilmore-girls-doc-12259853",
-        "https://www.yahoo.com/entertainment/tv/articles/jared-padalecki-shares-emotional-story-163556335.html",
-        "https://decider.com/2026/11/18/jared-padalecki-gilmore-girls-documentary-milo-ventimiglia-dean-jess/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9lsxiPi1E2_FHVhlUV744Z1uvitdvNEd_zHPKevSukHA2paN2dJAJQ13IimM",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/jared-padalecki-cries-over-milo-ventimiglia-gilmore-girls-doc-12259853",
-          "title": "Jared Padalecki cries over Milo Ventimiglia in new ‘Gilmore Girls’ doc",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9lsxiPi1E2_FHVhlUV744Z1uvitdvNEd_zHPKevSukHA2paN2dJAJQ13IimM"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/jared-padalecki-shares-emotional-story-163556335.html",
-          "title": "Jared Padalecki Shares Emotional Story of Support from Rival Milo Ventimiglia on 'Gilmore Girls'",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1xGw3SrZo0BqPLo6tu1dI9TFvJPYvaQ5CPV1dHq-tg0hCmunU557C32fQRsk"
-        },
-        {
-          "url": "https://decider.com/2026/11/18/jared-padalecki-gilmore-girls-documentary-milo-ventimiglia-dean-jess/",
-          "title": "Jared Padalecki reveals how he really felt when Milo Ventimiglia joined ‘Gilmore Girls’",
-          "publisher": "Decider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHGL6czZVucDJy_AhBMElFqx2-AAysjYmiOjOnU9NwEpv8bJxJT3hhDWTUxo"
-        }
-      ]
-    },
-    {
       "query": "sonny gray",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-18T20:30:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/video/sonny-gray-signs-two-year-deal-with-twins",
-        "https://www.nytimes.com/athletic/7740198/2026/11/18/sonny-gray-signs-with-twins/",
+        "https://www.mlb.com/news/sonny-gray-free-agent-contract-twins",
+        "https://www.espn.com/mlb/story/_/id/50523817/twins-sign-veteran-right-hander-sonny-gray-two-year-deal",
         "https://www.mlbtraderumors.com/2026/11/twins-sign-sonny-gray.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3XDs9G8jhkGVpQR7lebnPdsi6WHzBMY1l1lj5GSPsQlWfDSok1KFNmFZXJKw",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1QtPhndbbJBbmePQsrvvZ0vt9sgBbURYhtN5hso39kz0ngRBp-nMvQ3tR8G0",
       "image_credit": "MLB.com",
       "news": [
         {
-          "url": "https://www.mlb.com/video/sonny-gray-signs-two-year-deal-with-twins",
-          "title": "Sonny Gray signs two-year deal with Twins",
+          "url": "https://www.mlb.com/news/sonny-gray-free-agent-contract-twins",
+          "title": "Sonny Gray reunites with Twins on 2-year deal",
           "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3XDs9G8jhkGVpQR7lebnPdsi6WHzBMY1l1lj5GSPsQlWfDSok1KFNmFZXJKw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1QtPhndbbJBbmePQsrvvZ0vt9sgBbURYhtN5hso39kz0ngRBp-nMvQ3tR8G0"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7740198/2026/11/18/sonny-gray-signs-with-twins/",
-          "title": "Twins sign Sonny Gray to two-year deal, bringing veteran starter back to Minnesota",
-          "publisher": "The New York Times",
+          "url": "https://www.espn.com/mlb/story/_/id/50523817/twins-sign-veteran-right-hander-sonny-gray-two-year-deal",
+          "title": "Twins reunite with veteran right-hander Sonny Gray on two-year deal",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc2TS_i4WBMM_eL4IJ-fnUDTVWpjRNXjXQP4Hu3xx8T7uBEaHRDAOo_L1n6zs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS15hMtvJiboQqCNbM-yWoWGdwKZ0Jr-aqNbmNnZ27rvy4SIj78GiFwhNyS2HM"
         },
         {
           "url": "https://www.mlbtraderumors.com/2026/11/twins-sign-sonny-gray.html",
@@ -118,7 +293,7 @@
       "related_news_urls": [
         "https://cvillerightnow.com/news/208802-acps-closed-through-thanksgiving-break/",
         "https://www.cbs19news.com/news/acps-announcing-early-holiday-closure-due-to-compliance-issues/article_45c7eec1-e951-443c-85fa-8e5e2c1a54d0.html",
-        "https://www.29news.com/2026/11/12/we-want-feedback-albemarle-county-school-board-members-hold-another-town-hall-parents-continue-seek-answers/"
+        "https://cwibc.co.id/en/albemarle-schools-background-checks"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPOxIJ-UuXteGGJnJ0cgiS71hwEGcw6Si7qhyQINl_7Dg24YHSNWXLrzORBes",
       "image_credit": "Cville Right Now",
@@ -138,46 +313,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Lgf-0PkcyZLpB4q1LAKaUD6OOVPC-0kdmiP62k5QYqfDWMpv34a3hEFWRoc"
         },
         {
-          "url": "https://www.29news.com/2026/11/12/we-want-feedback-albemarle-county-school-board-members-hold-another-town-hall-parents-continue-seek-answers/",
-          "title": "“We want feedback”: Albemarle County School Board members hold another town hall as parents continue to seek answers",
-          "publisher": "WVIR",
+          "url": "https://cwibc.co.id/en/albemarle-schools-background-checks",
+          "title": "Albemarle Schools Close After 500 Background Checks Miss Review",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQf3dR4wNPJrFxE1uRC_pK0qWnayI18Q2x29yLVzVYnL2nbDLqM3iNEh2a5RwU"
-        }
-      ]
-    },
-    {
-      "query": "anheuser busch",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T20:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/food/beverages/beer-wine-spirits/2026/11/18/anheuser-busch-closed-newark-nj/92842972007/",
-        "https://www.thespiritsbusiness.com/2026/11/ab-inbev-pours-1-5m-into-cutwater-production/",
-        "https://www.fooddive.com/news/anheuser-busch-invests-cutwater-plant-expansion/874944/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdyRSK-acSf8dJxeJfNi0615Waql2FfbCCcVO6O2QL5h7kWHgzONv-7aKKK54",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/food/beverages/beer-wine-spirits/2026/11/18/anheuser-busch-closed-newark-nj/92842972007/",
-          "title": "Anheuser-Busch closure marks end to 'beer capital of the world'",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdyRSK-acSf8dJxeJfNi0615Waql2FfbCCcVO6O2QL5h7kWHgzONv-7aKKK54"
-        },
-        {
-          "url": "https://www.thespiritsbusiness.com/2026/11/ab-inbev-pours-1-5m-into-cutwater-production/",
-          "title": "AB InBev pours $1.5m into Cutwater production",
-          "publisher": "The Spirits Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9WukHppnCtyVZpQIXG3ApFS3OMO8UmBTYfkBdVRoqEwWwBBlqVSBnTlw1EOE"
-        },
-        {
-          "url": "https://www.fooddive.com/news/anheuser-busch-invests-cutwater-plant-expansion/874944/",
-          "title": "Anheuser-Busch invests in flagship Cutwater plant to boost production",
-          "publisher": "Food Dive",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_Dx7f98efcbvpOEldf3K_ySTahz6JnoJhSWqjpMzTUF1M-ZVad6FDqVadK24"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGBGn-L9et3you-NQQ6UHwVxAN5Zjn6NEAjz7311lYVqp1T6aCWse4oFoVELE"
         }
       ]
     },
@@ -186,173 +326,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-18T20:20:00Z",
       "related_news_urls": [
-        "https://www.lanacion.com.ar/economia/la-incertidumbre-ya-contagio-al-mercado-cambiario-y-hay-senales-de-menos-oferta-de-dolares-nid18112026/",
-        "https://www.elnuevoherald.com/noticias/estados-unidos/article318101048.html",
-        "https://eleconomista.com.ar/economia/baja-tension-bonos-alivia-gobierno-mantener-ancla-dolar-n99603"
+        "https://www.clarin.com/economia/vuelve-brecha-cambiaria-diferencia-dolar-oficial-financiero-maximo-ano_0_5FEk4nr6ee.html",
+        "https://www.lagaceta.com.ar/nota/1163127/economia/dolar-volvio-subir-blue-marco-record-contado-liquidacion-supero-1700.html",
+        "https://www.cronista.com/finanzas-mercados/se-dispara-el-dolar-y-el-blue-lidera-la-suba-ahora-es-negocio-comprar-oficial-y-revenderlo-en-el-paralelo/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_dNbYYnAic966Tfgt_wNQZ2JIXIL0GOk2nf1aZJCl7xa7-cvX1OnrjiFQWak",
-      "image_credit": "La Nación",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRb6482mIi8EmqB4emnNvsdX9DOXPD_-GiL8URYPMSHeGmkv6jjAg9Q6YtlXc",
+      "image_credit": "Clarin.com",
       "news": [
         {
-          "url": "https://www.lanacion.com.ar/economia/la-incertidumbre-ya-contagio-al-mercado-cambiario-y-hay-senales-de-menos-oferta-de-dolares-nid18112026/",
-          "title": "La incertidumbre empieza a contagiar al mercado cambiario y hay señales de menos oferta de dólares",
-          "publisher": "La Nación",
+          "url": "https://www.clarin.com/economia/vuelve-brecha-cambiaria-diferencia-dolar-oficial-financiero-maximo-ano_0_5FEk4nr6ee.html",
+          "title": "¿Vuelve la brecha cambiaria? La diferencia entre el dólar oficial y el financiero está en su máximo en un año",
+          "publisher": "Clarin.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_dNbYYnAic966Tfgt_wNQZ2JIXIL0GOk2nf1aZJCl7xa7-cvX1OnrjiFQWak"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRb6482mIi8EmqB4emnNvsdX9DOXPD_-GiL8URYPMSHeGmkv6jjAg9Q6YtlXc"
         },
         {
-          "url": "https://www.elnuevoherald.com/noticias/estados-unidos/article318101048.html",
-          "title": "Mercado cambiario argentino opera en leve baja",
-          "publisher": "El Nuevo Herald",
+          "url": "https://www.lagaceta.com.ar/nota/1163127/economia/dolar-volvio-subir-blue-marco-record-contado-liquidacion-supero-1700.html",
+          "title": "El dólar volvió a subir: el blue marcó un récord y el contado con liquidación superó los $1.700",
+          "publisher": "La Gaceta",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGi_FsC1DkxMzubRiR9BiPGiI0Fvg0itcD6ZjXjyZS1aFVBpMz7subGcWc4Mo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTy_ElkONvcpIIkMB8RQXhFnyOHNAbWX_lv8WPdFB8D9MHAAVGiHneXRfvnrA"
         },
         {
-          "url": "https://eleconomista.com.ar/economia/baja-tension-bonos-alivia-gobierno-mantener-ancla-dolar-n99603",
-          "title": "Baja la tensión con los bonos y alivia al Gobierno para mantener el ancla con el dólar",
-          "publisher": "El Economista - Últimas noticias económicas y financieras",
+          "url": "https://www.cronista.com/finanzas-mercados/se-dispara-el-dolar-y-el-blue-lidera-la-suba-ahora-es-negocio-comprar-oficial-y-revenderlo-en-el-paralelo/",
+          "title": "Se dispara el dólar y el blue lidera la suba: ahora es negocio comprar oficial y revenderlo en el paralelo",
+          "publisher": "El Cronista",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw8Zmv1-tTrm2fQyX--GR0nWqvgIgzJGK3xmJS3ViE_hJ7-nqpLw4IckPVIGc"
-        }
-      ]
-    },
-    {
-      "query": "star wars",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T20:10:00Z",
-      "related_news_urls": [
-        "https://disneyexperiences.com/anzellans-imagineering-rd-robotic-characters/",
-        "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
-        "https://www.hollywoodreporter.com/business/digital/new-star-wars-robots-disney-amazon-ai-anzellans-1236757851/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTfDfynHEN1i0FFR936fTCWBV9_E95nDS4Hq7ZDciVoEjnUkSqUVf9b6r7kw",
-      "image_credit": "Disney Experiences",
-      "news": [
-        {
-          "url": "https://disneyexperiences.com/anzellans-imagineering-rd-robotic-characters/",
-          "title": "Meet the Anzellans: Inside Imagineering R&D’s Newest Robotic Characters",
-          "publisher": "Disney Experiences",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTfDfynHEN1i0FFR936fTCWBV9_E95nDS4Hq7ZDciVoEjnUkSqUVf9b6r7kw"
-        },
-        {
-          "url": "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
-          "title": "Disney’s new Star Wars animatronics interact with guests using AI",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6kmoBLYRpFGVj_IutbEy63MuDNMIXYA6i9aGjYACouKOx_RlN1byZZUVhmQg"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/business/digital/new-star-wars-robots-disney-amazon-ai-anzellans-1236757851/",
-          "title": "Disney and AWS Team Up to Create AI-Powered ‘Star Wars’ Robots",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRcfdsg00v3idrtbKFk3K1GCyQYysRxOgAYUGs4oxghrPf0yyLpXSQ0HYz-5g"
-        }
-      ]
-    },
-    {
-      "query": "chicago cubs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T20:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/seiya-suzuki-6-mlb-free-110621207.html",
-        "https://www.si.com/mlb/bluejays/onsi/3-free-agents-rejected-qualifying-offer-today-that-blue-jays-should-pursue",
-        "https://www.nytimes.com/athletic/7787592/2026/11/17/seiya-suzuki-qualifying-offer-cubs-mlb-free-agency/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8BNrPslYwIEe6a3biMWYFqHpQKQPJyZSsWJSrZJNXvYuVIO11AVqboqgwmek",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/seiya-suzuki-6-mlb-free-110621207.html",
-          "title": "MLB qualifying offer deadline LIVE: Morejon and Lowe decline $23 million, others must decide",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8BNrPslYwIEe6a3biMWYFqHpQKQPJyZSsWJSrZJNXvYuVIO11AVqboqgwmek"
-        },
-        {
-          "url": "https://www.si.com/mlb/bluejays/onsi/3-free-agents-rejected-qualifying-offer-today-that-blue-jays-should-pursue",
-          "title": "3 Free Agents Rejected Qualifying Offer Today That Blue Jays Should Pursue",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBtzsHhk4_XaqdHmVbh1tXu29UslmKEN9Cm0AcpNwT9kY3hlLl99XDO2fmFpo"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7787592/2026/11/17/seiya-suzuki-qualifying-offer-cubs-mlb-free-agency/",
-          "title": "Seiya Suzuki, a key cog in Cubs’ lineup, declines Chicago’s qualifying offer",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzDozNF_0TTSB6iPlcufq_qwKyyn6I8j7UUG282XODcnaeL3g6xg9qsAFOQF8"
-        }
-      ]
-    },
-    {
-      "query": "flavio cobolli",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T20:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/report/_/gameId/401861185",
-        "https://www.reuters.com/sports/soccer/wirtz-scores-twice-germany-thrash-dutch-5-0-win-nations-league-group-2026-11-16/",
-        "https://www.theguardian.com/football/2026/nov/17/jurgen-klopp-germany-project-football-daily-newsletter"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1nxv00X_7fS82VSAtZ_v84VaNGgVN4m4NnxpzSq9u8b__h-gFvpNJBaUBgtQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/report/_/gameId/401861185",
-          "title": "Germany 5-0 Netherlands (Nov 16, 2026) Game Analysis",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1nxv00X_7fS82VSAtZ_v84VaNGgVN4m4NnxpzSq9u8b__h-gFvpNJBaUBgtQ"
-        },
-        {
-          "url": "https://www.reuters.com/sports/soccer/wirtz-scores-twice-germany-thrash-dutch-5-0-win-nations-league-group-2026-11-16/",
-          "title": "Wirtz scores twice as Germany thrash Dutch 5-0 to win Nations League group",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgg21pvanLTVCZrixTocnLgTKXid3Mbf8tJCm8By9FhXdL79tFPFd_Sc_l1ko"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/17/jurgen-klopp-germany-project-football-daily-newsletter",
-          "title": "Football Daily | Jürgen Klopp hard-launches his Germany rebuilding project in style",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShZqzXyrUHFIVJnrShaup9nfGRx5jeVto9XLpogadhVzcCkeXR5aTZWSyurec"
-        }
-      ]
-    },
-    {
-      "query": "baaja",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T20:00:00Z",
-      "related_news_urls": [
-        "https://truthout.org/articles/21-dem-senators-join-gop-to-move-forward-bill-to-speed-up-data-center-permits/",
-        "https://thehill.com/policy/energy-environment/6227652-baaja-bipartisan-permitting-reform-bill-vote/",
-        "https://thenevadaindependent.com/article/nevada-senators-split-on-sweeping-energy-legislation-in-first-major-action-since-midterm-elections"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvRsjwe963miMDeeiaLHNjjhOx9o8VMnlMl1i0etogZS4suYECb18mRdgDV_E",
-      "image_credit": "Truthout",
-      "news": [
-        {
-          "url": "https://truthout.org/articles/21-dem-senators-join-gop-to-move-forward-bill-to-speed-up-data-center-permits/",
-          "title": "21 Dem Senators Join GOP to Move Forward Bill to Speed Up Data Center Permits",
-          "publisher": "Truthout",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvRsjwe963miMDeeiaLHNjjhOx9o8VMnlMl1i0etogZS4suYECb18mRdgDV_E"
-        },
-        {
-          "url": "https://thehill.com/policy/energy-environment/6227652-baaja-bipartisan-permitting-reform-bill-vote/",
-          "title": "Senate further advances bipartisan permitting reform bill",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwuCbx68U8WCj41PdR4Cxt8vOycbOsNcXHxGpf4sNhicksK1Ia99r-0OVzmSI"
-        },
-        {
-          "url": "https://thenevadaindependent.com/article/nevada-senators-split-on-sweeping-energy-legislation-in-first-major-action-since-midterm-elections",
-          "title": "Nevada senators split on sweeping energy legislation in first major action since midterm elections",
-          "publisher": "The Nevada Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfG-MqIsIbJM9b3h70sNvAv54o91vqupf_CiSojcdUtckyKVlgxPw6fOzo_PQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdbLyY9Umj_sEAem2voc6TlInyIOFfEp1ulFUE4HR-pvmxy4wRrUDTmb4TgV4"
         }
       ]
     }
