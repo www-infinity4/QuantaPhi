@@ -3,17 +3,87 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T06:37:04.282406Z",
+  "checked_at": "2026-11-18T07:01:37.334801Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "grimes lakers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T06:40:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/nba/lakers/2026/11/18/quentin-grimes-points-lakers-hornets/92839567007/",
+        "https://uk.sports.yahoo.com/news/quentin-grimes-scores-45-points-063626996.html",
+        "https://www.silverscreenandroll.com/lakers-game-previews/129005/lakers-vs-hornets-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-austin-reaves"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9L_5M106prBUl58FjGe1zmKYsUUo4Q1pDrP5Tsvsy5F8g2PoxZCW37wmjA9Q",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/nba/lakers/2026/11/18/quentin-grimes-points-lakers-hornets/92839567007/",
+          "title": "Quentin Grimes scores 42 points to spark Lakers comeback vs. Hornets",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9L_5M106prBUl58FjGe1zmKYsUUo4Q1pDrP5Tsvsy5F8g2PoxZCW37wmjA9Q"
+        },
+        {
+          "url": "https://uk.sports.yahoo.com/news/quentin-grimes-scores-45-points-063626996.html",
+          "title": "Quentin Grimes scores 45 points to spark Lakers comeback, force OT vs. Hornets",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzpWO2g5KRrl_1YaJYGn160LPqbD35VRui446FuK0fqwL2zXr0IRBm4D-NKUU"
+        },
+        {
+          "url": "https://www.silverscreenandroll.com/lakers-game-previews/129005/lakers-vs-hornets-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-austin-reaves",
+          "title": "Lakers vs. Hornets Preview: The winning continues",
+          "publisher": "Silver Screen and Roll",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMDtbXD7xffr_oWPkPJnzcq_d_grhrBOxgaPrA7F1bI2P8RDu_w3EfXHGuxDA"
+        }
+      ]
+    },
+    {
+      "query": "karely ruiz",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T06:40:00Z",
+      "related_news_urls": [
+        "https://elmanana.com.mx/escena/2026/11/17/karely-ruiz-cachetea-a-paolita-suarez-en-la-mansion-vip-2-video-184570.html",
+        "https://www.poresto.com/entretenimiento/television/2026/11/17/karely-ruiz-criticada-cachetear-paola-suarez-mansion-vip.html",
+        "https://superchannel12.com/espectaculos/bellakath-y-karely-ruiz-protagonizan-pelea-a-golpes-en-la-mansion-vip-710488"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyHD8sqRn41yGmU3K6ZoMTJScQT2bW1TvT7EHGeQHptgJEpWE3_KrdYM1hxFU",
+      "image_credit": "El Mañana de Nuevo Laredo",
+      "news": [
+        {
+          "url": "https://elmanana.com.mx/escena/2026/11/17/karely-ruiz-cachetea-a-paolita-suarez-en-la-mansion-vip-2-video-184570.html",
+          "title": "Karely Ruiz cachetea a Paolita Suárez en La Mansión VIP 2 | VIDEO",
+          "publisher": "El Mañana de Nuevo Laredo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyHD8sqRn41yGmU3K6ZoMTJScQT2bW1TvT7EHGeQHptgJEpWE3_KrdYM1hxFU"
+        },
+        {
+          "url": "https://www.poresto.com/entretenimiento/television/2026/11/17/karely-ruiz-criticada-cachetear-paola-suarez-mansion-vip.html",
+          "title": "Karely Ruiz es criticada tras cachetear a Paola Suárez en ‘La Mansión VIP’",
+          "publisher": "Por Esto!",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk3RD2Z5KLvuJCWG91RHVoVPXNcpAdnMyuR1G5jpSEQkRmT45IGGbfp2ZpJDE"
+        },
+        {
+          "url": "https://superchannel12.com/espectaculos/bellakath-y-karely-ruiz-protagonizan-pelea-a-golpes-en-la-mansion-vip-710488",
+          "title": "Bellakath y Karely Ruiz protagonizan pelea a golpes en La Mansión VIP",
+          "publisher": "Super Channel 12",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUsI4wpNqz61mpRxIwGa1QeFEKoIinQiMEm5G49BcR3-NPCFn7euv_4sWaD3E"
+        }
+      ]
+    },
     {
       "query": "ziaire williams",
       "approx_searches": "500+",
       "published_at": "2026-11-18T06:20:00Z",
       "related_news_urls": [
         "https://lakeshowlife.com/lakers-face-tough-long-term-decision-between-ziaire-williams-matisse-thybulle",
-        "https://www.silverscreenandroll.com/lakers-analysis/129044/jake-laravia-lakers-analysis-starting-lineup-stats",
-        "https://sports.yahoo.com/articles/lakers-matisse-thybulle-makes-eye-025744831.html"
+        "https://lakeshowlife.com/ziaire-williams-already-shaping-lakers-2027-offseason-plans",
+        "https://lakeshowlife.com/los-angeles-lakers-ziaire-williams-quickly-becoming-fourth-most-important-laker"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_dwCbRzqcHvJ70_fAi6EiHt-XWfwFhDe6mHc8TX5CkjTqIzRU3P_T-knT14",
       "image_credit": "Lake Show Life",
@@ -26,24 +96,24 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_dwCbRzqcHvJ70_fAi6EiHt-XWfwFhDe6mHc8TX5CkjTqIzRU3P_T-knT14"
         },
         {
-          "url": "https://www.silverscreenandroll.com/lakers-analysis/129044/jake-laravia-lakers-analysis-starting-lineup-stats",
-          "title": "Jake LaRavia is the glue to the Lakers’ starting lineup",
-          "publisher": "Silver Screen and Roll",
+          "url": "https://lakeshowlife.com/ziaire-williams-already-shaping-lakers-2027-offseason-plans",
+          "title": "Ziaire Williams is already shaping the Lakers' 2027 offseason plans",
+          "publisher": "Lake Show Life",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxeByJffsh-W_BcCm7IJ9kyU_ZlbdxqayHzLYDfogxDNJQEyRYMjGfyp0pFyM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7YxUJuq6hytyBXAh1kSdiKt89erirqV1JvOLnwQTFBCCgUxGJTQL7prEQWkM"
         },
         {
-          "url": "https://sports.yahoo.com/articles/lakers-matisse-thybulle-makes-eye-025744831.html",
-          "title": "Lakers’ Matisse Thybulle makes eye-opening claim on Jake LaRavia’s overlooked quality",
-          "publisher": "Yahoo Sports",
+          "url": "https://lakeshowlife.com/los-angeles-lakers-ziaire-williams-quickly-becoming-fourth-most-important-laker",
+          "title": "Ziaire Williams is quickly becoming the fourth most important Laker",
+          "publisher": "Lake Show Life",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRJNEleLXtFyKlAwGeRFgAhbWKCtOcr5YG8SZHIylK9i9FmmkU6hQwpaU1_5A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeRdohovMIKx13MoyGEjntJYLkTdZyLBw0DJRoB4n0eVlqr7tBGA3xPBe2QtE"
         }
       ]
     },
     {
       "query": "jake laravia",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T06:20:00Z",
       "related_news_urls": [
         "https://www.silverscreenandroll.com/lakers-analysis/129044/jake-laravia-lakers-analysis-starting-lineup-stats",
@@ -117,8 +187,8 @@
       "published_at": "2026-11-18T06:10:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/18/politics/tech-outages-trump-response",
-        "https://www.cbsnews.com/detroit/video/michiganders-react-to-recent-widespread-tech-outages/",
-        "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html"
+        "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
+        "https://www.axios.com/2026/11/17/tech-outages-ai-fears-internet-breaking"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzSkRJS2o3rH9El2m-XigUfpzSxlDmJt04Ael5tvDbp0ziUmLOo78uskUJDSg",
       "image_credit": "CNN",
@@ -131,18 +201,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzSkRJS2o3rH9El2m-XigUfpzSxlDmJt04Ael5tvDbp0ziUmLOo78uskUJDSg"
         },
         {
-          "url": "https://www.cbsnews.com/detroit/video/michiganders-react-to-recent-widespread-tech-outages/",
-          "title": "Michiganders react to recent widespread tech outages",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZIBuLm0_RAvDpCYpvkDjTO1Uvmj4Mg9V7DUv_GHDfoAQkh9aFfnd8X02R6A"
-        },
-        {
           "url": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
           "title": "Widespread outages hit banks, air travel, the NSA and Apple, disrupting seemingly everything",
           "publisher": "CNBC",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1VNwZORwg01k3PDHmiWoZ7_wrRGUNg6qCgzKDP-iOcAr-IIw27t5fucg0CZw"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/17/tech-outages-ai-fears-internet-breaking",
+          "title": "Why the internet suddenly broke all at once",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSo8ZhNRrQQkMseOaxzeSFB0TCWlS-l0ql85vbl3nEeCu-zCZt9yCvgT421MAo"
         }
       ]
     },
@@ -186,20 +256,13 @@
       "approx_searches": "200+",
       "published_at": "2026-11-18T06:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/lakers-trade-pitch-lands-tyler-040249511.html",
         "https://www.cbssports.com/fantasy/basketball/news/lakers-cameron-carr-omitted-from-injury-report/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kyrie-irving-knee-downgraded-to-out-sunday"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kyrie-irving-knee-downgraded-to-out-sunday",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/giannis-antetokounmpo-wirst-probable-saturday"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjjoYTLqVl6p-YeZQNGot8QVvB7Ue06HJ_pRHqczWOEY7VVI-awjDJtWusmm0",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0Ap1INc7hTZupWD2BKkqXfpsxC7jYVkCV4Oyo_F77eLY3tt6Us72_KNctetM",
+      "image_credit": "CBS Sports",
       "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/lakers-trade-pitch-lands-tyler-040249511.html",
-          "title": "Lakers Trade Pitch Lands Tyler Herro for Cam Carr-Led 4-Player Package",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjjoYTLqVl6p-YeZQNGot8QVvB7Ue06HJ_pRHqczWOEY7VVI-awjDJtWusmm0"
-        },
         {
           "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-cameron-carr-omitted-from-injury-report/",
           "title": "Lakers' Cameron Carr: Omitted from injury report",
@@ -213,6 +276,13 @@
           "publisher": "NBC Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_1WAY8NWYt7Cqw0fdza_-qPxCIdhawEuCPQUnMNSfu9TubvwYFym_Tvs-1xA"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/giannis-antetokounmpo-wirst-probable-saturday",
+          "title": "Giannis Antetokounmpo (wirst) probable Saturday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ47YmOC-9SmgjMsECSfTdI3ZsGMvW6wHB7qWDarn0oicDj4Prm-jgLvnpCBvk"
         }
       ]
     },
@@ -221,33 +291,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-18T06:10:00Z",
       "related_news_urls": [
-        "https://www.worldkorean.net/news/articleView.html?idxno=58247",
-        "https://www.etoday.co.kr/news/view/2649362",
-        "https://www.mt.co.kr/industry/2026/11/16/2026111305034664153"
+        "https://www.seattlen.com/bbs/board.php?bo_table=hot&wr_id=70177",
+        "https://www.creditnews.kr/news/articleView.html?idxno=32676",
+        "https://www.worldkorean.net/news/articleView.html?idxno=58247"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiewGo0sd_gUtdvR0n60hz4L1QfxRbRW-fTnFXLtt5ivQZQ1k65Jb9R3vOKRA",
-      "image_credit": "월드코리안뉴스",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQqo71BZgjk8lzgV897NUUxOfiab1xAG96tg9GNF840bD-xXRuH-ls7U5XOXM",
+      "image_credit": "SeattleN",
       "news": [
+        {
+          "url": "https://www.seattlen.com/bbs/board.php?bo_table=hot&wr_id=70177",
+          "title": "시애틀 경찰에 ‘로봇개’ 등장…폭발물 처리 현장에 투입 > 시애틀 뉴스/핫이슈",
+          "publisher": "SeattleN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQqo71BZgjk8lzgV897NUUxOfiab1xAG96tg9GNF840bD-xXRuH-ls7U5XOXM"
+        },
+        {
+          "url": "https://www.creditnews.kr/news/articleView.html?idxno=32676",
+          "title": "美 시애틀 경찰, 5억원 폭발물처리 로봇개 '스팟' 투입",
+          "publisher": "한국신용신문",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHJbyTYMbfNUqQ6KMm32D-s6tnit39tiCxI3hRd3lEvKc4dRxVHWpie7bOMcE"
+        },
         {
           "url": "https://www.worldkorean.net/news/articleView.html?idxno=58247",
           "title": "주시애틀총영사관, ‘AI와 에너지’ 주제로 포럼 개최",
           "publisher": "월드코리안뉴스",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiewGo0sd_gUtdvR0n60hz4L1QfxRbRW-fTnFXLtt5ivQZQ1k65Jb9R3vOKRA"
-        },
-        {
-          "url": "https://www.etoday.co.kr/news/view/2649362",
-          "title": "용인 반도체 클러스터, 초기 전력망 구축 착착…팹 증설 맞춰 공급 앞당긴다[대한민국 전기국가 2035⑥]",
-          "publisher": "이투데이",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI3OtMIyy9HwXTeu8s6_irLcImeYqQAEeQQmgq-eLXn6fssnU2xFznHHiXmtA"
-        },
-        {
-          "url": "https://www.mt.co.kr/industry/2026/11/16/2026111305034664153",
-          "title": "우리 집 배터리·전기차가 AI 전력난을 덜어준다고? - 머니투데이",
-          "publisher": "머니투데이",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdwX9KcUwBMaggjcnxVgb_lfMjozElALO2G3E3TBAfHZ6JzbTw7AEAQP0cfjE"
         }
       ]
     },
@@ -283,76 +353,6 @@
           "publisher": "Hoodline",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR74gcLtvmBDiILsE7411IiRvSKFv7p4eTCSy7gpFDwMnUFIJMwRNq-jxmoxHg"
-        }
-      ]
-    },
-    {
-      "query": "aldo de nigris",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T06:00:00Z",
-      "related_news_urls": [
-        "https://www.infobae.com/mexico/2026/11/18/hotspanish-regana-a-dona-alegria-por-comentarios-racistas-a-deiby-ruiz-en-la-mansion-vip-este-es-su-castigo/",
-        "https://ovaciones.com/reflector/general/la-mansion-vip-2-por-que-dona-alegria-fue-senalada-de-racista/1015604",
-        "https://heraldodemexico.com.mx/espectaculos/2026/11/17/yetus-desmiente-a-dona-alegria-y-defiende-a-poncho-de-nigris-se-hace-la-victima-2920402.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNGkmTvUvenY8w3vqf3DpyAwgCiyfEGsy_oinuupo1_HS82XlOEsUGzTUYMPI",
-      "image_credit": "Infobae",
-      "news": [
-        {
-          "url": "https://www.infobae.com/mexico/2026/11/18/hotspanish-regana-a-dona-alegria-por-comentarios-racistas-a-deiby-ruiz-en-la-mansion-vip-este-es-su-castigo/",
-          "title": "HotSpanish regaña a Doña Alegría por comentarios racistas a Deiby Ruiz en La Mansión VIP: este es su castigo",
-          "publisher": "Infobae",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNGkmTvUvenY8w3vqf3DpyAwgCiyfEGsy_oinuupo1_HS82XlOEsUGzTUYMPI"
-        },
-        {
-          "url": "https://ovaciones.com/reflector/general/la-mansion-vip-2-por-que-dona-alegria-fue-senalada-de-racista/1015604",
-          "title": "La Mansión VIP 2 señala a Doña Alegría de racista; Poncho de Nigris reacciona",
-          "publisher": "Ovaciones",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmvtK3i9Phdr9xOCEhRRDGznOjwtRJEuS1Szvn9IkeHMn1zNTAUvErzInSqf8"
-        },
-        {
-          "url": "https://heraldodemexico.com.mx/espectaculos/2026/11/17/yetus-desmiente-a-dona-alegria-y-defiende-a-poncho-de-nigris-se-hace-la-victima-2920402.html",
-          "title": "Yetus desmiente a Doña Alegría y defiende a Poncho de Nigris: \"Se hace la víctima\"",
-          "publisher": "El Heraldo de México",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLzjgdg_QeAtpW_7FfWJt243OIs2Yg44ymx2_7ODnWoW9IAcWGAf1DFsRVJ38"
-        }
-      ]
-    },
-    {
-      "query": "blake griffin",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T05:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7789522/2026/11/17/blake-griffin-thunder-stadium-fans-taxpayers/",
-        "https://www.basketballnews.com/news/basketballnews-nba-active-news-my-parents-were-teachers-blake-griffin-rips-oklahoma-city-thunders-eight-fifty-million-taxpayer-funded-arena-deal/",
-        "https://sports.yahoo.com/articles/blake-griffin-says-oklahoma-city-102417323.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm8PGjfdOOXXtZug_cKGHFdu5Hv0Wy87HKWS7ZlFTInlQIQYq3yW1uwSiyteU",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7789522/2026/11/17/blake-griffin-thunder-stadium-fans-taxpayers/",
-          "title": "Oklahoma native Blake Griffin says taxpayers had little choice on $900 million Thunder arena",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm8PGjfdOOXXtZug_cKGHFdu5Hv0Wy87HKWS7ZlFTInlQIQYq3yW1uwSiyteU"
-        },
-        {
-          "url": "https://www.basketballnews.com/news/basketballnews-nba-active-news-my-parents-were-teachers-blake-griffin-rips-oklahoma-city-thunders-eight-fifty-million-taxpayer-funded-arena-deal/",
-          "title": "“My Parents Were Teachers”: Blake Griffin Rips Thunder’s $850 Million Taxpayer-Funded Arena Deal",
-          "publisher": "BasketballNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQctQ-edm-cVcSGBM_bcxPnqYgQ883dgbedFcTfuFGkD9aQIN0xdPoaRQ69j4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/blake-griffin-says-oklahoma-city-102417323.html",
-          "title": "Blake Griffin says Oklahoma City citizens are forced to chip in $850m to Thunder’s $900m arena",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMdSY3cwSZ2JOXucH6_PoobtfxJcX7wwIef1yPRefPG4BjjbdQhqsAJjUYXqQ"
         }
       ]
     }
