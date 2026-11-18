@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T10:31:14.431795Z",
+  "checked_at": "2026-11-18T11:01:21.075433Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nyt connections answers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T10:10:00Z",
+      "query": "price of gold today",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T10:30:00Z",
       "related_news_urls": [
-        "https://mashable.com/entertainment/nyt-connections-hint-answer-today-november-17-2026",
-        "https://www.forbes.com/sites/krisholt/2026/11/17/nyt-connections-hint-today-answer-wednesday-november-18-1256/",
-        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-18-1256/"
+        "https://www.reuters.com/world/india/gold-hovers-near-over-one-year-low-firm-dollar-fed-hike-bets-weigh-2026-11-17/",
+        "https://www.bloomberg.com/news/articles/2026-11-17/gold-steadies-near-14-month-low-as-rate-hike-pressure-mounts",
+        "https://www.kitco.com/opinion/2026-11-16/precious-metals-break-new-52-week-lows-us-dollar-reaches-new-19-month-high"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
-      "image_credit": "Mashable",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQG3Qotx1g8iuMDAbI9vbmiVMGdIAELLTXM8QYhJks_pHRdeBtA_b_HxoOCG4Q",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://mashable.com/entertainment/nyt-connections-hint-answer-today-november-17-2026",
-          "title": "NYT Connections hints and answers for November 17, Tips to solve 'Connections' #1255.",
-          "publisher": "Mashable",
+          "url": "https://www.reuters.com/world/india/gold-hovers-near-over-one-year-low-firm-dollar-fed-hike-bets-weigh-2026-11-17/",
+          "title": "Gold struggles to rebound from one-year low as US dollar, yields advance",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQG3Qotx1g8iuMDAbI9vbmiVMGdIAELLTXM8QYhJks_pHRdeBtA_b_HxoOCG4Q"
         },
         {
-          "url": "https://www.forbes.com/sites/krisholt/2026/11/17/nyt-connections-hint-today-answer-wednesday-november-18-1256/",
-          "title": "NYT ‘Connections’ Hints And Answers For Wednesday, November 18",
-          "publisher": "Forbes",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-17/gold-steadies-near-14-month-low-as-rate-hike-pressure-mounts",
+          "title": "Gold Steadies Near 14-Month Low as Rate-Hike Pressure Mounts",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOXjrndVKJ-opemVVFRtPuLaidOb6fu3d1RQC13QgvUqtTijxy7u1KdhMCnM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdzO49gV_bC-jdOToDrAa0qtHdcdwKI3cSszCbsUwqpGEJToXwtnyOhIm_QZ8"
         },
         {
-          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-18-1256/",
-          "title": "Today’s NYT Connections Hints and Answers for Wednesday, Nov. 18, #1256",
+          "url": "https://www.kitco.com/opinion/2026-11-16/precious-metals-break-new-52-week-lows-us-dollar-reaches-new-19-month-high",
+          "title": "Precious metals break to new 52-week lows as us dollar reaches new 19-month high",
+          "publisher": "Kitco",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCWPPB7ABxx0x29ddND9AU7RIJZL-yB1p5Tn1LjnI0nMLUQ_LWAbh5Tbsombk"
+        }
+      ]
+    },
+    {
+      "query": "strands hint today",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T10:20:00Z",
+      "related_news_urls": [
+        "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-17-989/",
+        "https://www.aol.com/articles/nyt-strands-puzzle-november-18-054500000.html",
+        "https://www.technobezz.com/news/nyt-strands-sports-edition-29-hints-and-answers"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-JCWL-geJx4ZmEuJSL2MbatsaViOuWBrYsFoL_UcSGxPWQxX7f99YbDZYeQ",
+      "image_credit": "CNET",
+      "news": [
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-17-989/",
+          "title": "Today’s NYT Strands Hints, Spangram and Answers for Tuesday, Nov. 17, #989",
           "publisher": "CNET",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-JCWL-geJx4ZmEuJSL2MbatsaViOuWBrYsFoL_UcSGxPWQxX7f99YbDZYeQ"
+        },
+        {
+          "url": "https://www.aol.com/articles/nyt-strands-puzzle-november-18-054500000.html",
+          "title": "NYT Strands Puzzle for November 18: Hints, Spangram, and Answers Revealed!",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzVPYlhmpBP0-Jmey8FHs5nqeq0lO4R1tvohoKaqMMR8-itxv5HwAb42xRwQo"
+        },
+        {
+          "url": "https://www.technobezz.com/news/nyt-strands-sports-edition-29-hints-and-answers",
+          "title": "NYT Strands Sports Edition Hints & Answers for Wednesday, November 18, 2026 (Puzzle #29)",
+          "publisher": "Technobezz",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwb-fAE6FXFYb7mG_RfWxEwRW14PrSyX2-CCtL5OPB28_F7LQkMwk4TKXHK2k"
+        }
+      ]
+    },
+    {
+      "query": "new york lottery",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T10:20:00Z",
+      "related_news_urls": [
+        "https://www.wgrz.com/article/news/lottery/2-top-prize-winning-take-5-tickets-new-york-lottery-sold-in-western-new-york/71-b1f6f2a6-e32c-424d-b4dd-83dbfe2df563",
+        "https://www.yahoo.com/lifestyle/articles/15-players-share-york-lottery-053356706.html",
+        "https://www.the-leader.com/story/news/local/2026/11/16/take-5-top-prize-winning-lottery-ticket-sold-in-watkins-glen-at-tops/92808140007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_HJisNG3mI0N0qovBNuQWsOlQLYwaoOQwzIYbLFeJb9DeZru7fYRdyoaHtvQ",
+      "image_credit": "WGRZ",
+      "news": [
+        {
+          "url": "https://www.wgrz.com/article/news/lottery/2-top-prize-winning-take-5-tickets-new-york-lottery-sold-in-western-new-york/71-b1f6f2a6-e32c-424d-b4dd-83dbfe2df563",
+          "title": "Two top-prize winning TAKE 5 tickets sold in Western New York",
+          "publisher": "WGRZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_HJisNG3mI0N0qovBNuQWsOlQLYwaoOQwzIYbLFeJb9DeZru7fYRdyoaHtvQ"
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/articles/15-players-share-york-lottery-053356706.html",
+          "title": "15 Players Share New York Lottery Jackpot After Winning with Consecutive Numbers",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSglrFABEYBiyTRDo13zc8difVPadNoM5HZuzx3_qEsWEAv1v5OpbFsQOPLX14"
+        },
+        {
+          "url": "https://www.the-leader.com/story/news/local/2026/11/16/take-5-top-prize-winning-lottery-ticket-sold-in-watkins-glen-at-tops/92808140007/",
+          "title": "TAKE 5 top-prize ticket sold in Watkins Glen. Here's where, how much",
+          "publisher": "Corning Leader",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUZRqg5O4VF3fL_KyQjcg1BJRshqGi3ItQyK7m6DPpwW6oAnEPJWWH153L6dg"
+        }
+      ]
+    },
+    {
+      "query": "paige spiranac",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T10:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/paige-spiranac-leaves-field-little-imagination-asking-nfl-fans-tough-question",
+        "https://sports.yahoo.com/articles/paige-spiranac-sends-nfl-fans-194348332.html",
+        "https://www.the-sun.com/sport/17320707/paige-spiranac-instagram-golf-news/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcQl65o44RxTu1twq2pzKoLkrj2X2rDSY2xIj1XFdVl7dFGgW5pbI-tAqd5jg",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/paige-spiranac-leaves-field-little-imagination-asking-nfl-fans-tough-question",
+          "title": "Paige Spiranac leaves it all on the field, and little to the imagination, while asking NFL fans tough question",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcQl65o44RxTu1twq2pzKoLkrj2X2rDSY2xIj1XFdVl7dFGgW5pbI-tAqd5jg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/paige-spiranac-sends-nfl-fans-194348332.html",
+          "title": "Paige Spiranac Sends NFL Fans Into Frenzy With Game Day Outfit Photo",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkdslb9WTmt5pY43l_hsrBjkLpwDrvZ18Wk-P73UMWiMZ42AJnBcZVvNHqMuc"
+        },
+        {
+          "url": "https://www.the-sun.com/sport/17320707/paige-spiranac-instagram-golf-news/",
+          "title": "World's sexiest golf influencer Paige Spiranac shows off major underboob in steamy social media clip",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoFP7z4eytVqK9LgJiOcW8xiVU68zLcrltAbhsg4XN2Q8N5SrfevkQHeSeb8Y"
         }
       ]
     },
@@ -46,78 +151,113 @@
       "approx_searches": "200+",
       "published_at": "2026-11-18T10:00:00Z",
       "related_news_urls": [
-        "https://cnnespanol.cnn.com/2026/11/17/mundo/live-news/ultima-hora-viaje-trump-asia-trax",
-        "https://www.democracynow.org/es/2026/11/17/titulares",
-        "https://www.latimes.com/espanol/internacional/articulo/2026-11-17/trump-llega-filipinas-para-iniciar-una-gira-por-asia-con-acuerdos-y-conversaciones-con-aliados"
+        "https://www.latimes.com/espanol/internacional/articulo/2026-11-17/iran-hace-un-tercer-ataque-blancos-de-eeuu-en-barein-tras-dos-meses-de-calma",
+        "https://cnnespanol.cnn.com/2026/11/17/mundo/eeuu-ataques-de-autodefensa-sitio-misiles-irani-trax",
+        "https://www.democracynow.org/es/2026/11/17/titulares/iran_attacks_us_radar_station_in_bahrain_says_it_captured_us_drone"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJM2FQR0KZJm108ek_zUk0GpPBX5YzsRudu4G7Uj9Dzs6OLmB2S6ECGnjWS9U",
-      "image_credit": "CNN en Español",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnUiOf3nbCeAwum3nKeQDRIKxvIwQ2fapJOfchdYWdqAsBjYmS8UUc9__5v28",
+      "image_credit": "Los Angeles Times",
       "news": [
         {
-          "url": "https://cnnespanol.cnn.com/2026/11/17/mundo/live-news/ultima-hora-viaje-trump-asia-trax",
-          "title": "Última hora del viaje de Trump a Asia, antes de las históricas conversaciones con Xi y Putin, en vivo",
-          "publisher": "CNN en Español",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJM2FQR0KZJm108ek_zUk0GpPBX5YzsRudu4G7Uj9Dzs6OLmB2S6ECGnjWS9U"
-        },
-        {
-          "url": "https://www.democracynow.org/es/2026/11/17/titulares",
-          "title": "Titulares de 17 de noviembre de 2026",
-          "publisher": "Democracy Now!",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCpfZx0dzTapyTEyOz9AmU4s_-0j4jVK_IfKfkYmlHA7dJnD-CvJGyHL2uTqA"
-        },
-        {
-          "url": "https://www.latimes.com/espanol/internacional/articulo/2026-11-17/trump-llega-filipinas-para-iniciar-una-gira-por-asia-con-acuerdos-y-conversaciones-con-aliados",
-          "title": "Trump llega a Filipinas para iniciar una gira por Asia con acuerdos y conversaciones con aliados",
+          "url": "https://www.latimes.com/espanol/internacional/articulo/2026-11-17/iran-hace-un-tercer-ataque-blancos-de-eeuu-en-barein-tras-dos-meses-de-calma",
+          "title": "Irán hace un tercer ataque a blancos de EEUU en Baréin tras dos meses de calma",
           "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv_I3mcbxzreRlZ0LMAUC4FVd9AHE1zLLAdX8x6CzU3EgKP5UeRY9C8bqQh9M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnUiOf3nbCeAwum3nKeQDRIKxvIwQ2fapJOfchdYWdqAsBjYmS8UUc9__5v28"
+        },
+        {
+          "url": "https://cnnespanol.cnn.com/2026/11/17/mundo/eeuu-ataques-de-autodefensa-sitio-misiles-irani-trax",
+          "title": "EE.UU. lleva a cabo ataques de “autodefensa” contra un sitio de lanzamiento de misiles iraní",
+          "publisher": "CNN en Español",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQir4r8GeHKXUMUY4dJr9FSm1p7LY1Dj9zcBbrvVLNSMR3izWWFM-hslumE36s"
+        },
+        {
+          "url": "https://www.democracynow.org/es/2026/11/17/titulares/iran_attacks_us_radar_station_in_bahrain_says_it_captured_us_drone",
+          "title": "Irán ataca una estación de radar estadounidense en Baréin y afirma haber capturado un dron estadounidense",
+          "publisher": "Democracy Now!",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO1PuiDYbVl_WmmTOHZwi_K77ztXYLVHQd5qnqeX4-ZV436AMIEAu_AxBi_vk"
+        }
+      ]
+    },
+    {
+      "query": "nayib bukele",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T10:00:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/americas/thousands-march-support-bukeles-haiti-mission-analysts-warn-escalation-2026-11-17/",
+        "https://www.aljazeera.com/news/2026/11/17/haitians-protest-in-support-of-el-salvadors-anti-gang-troop-deployment",
+        "https://www.cfr.org/articles/el-salvadors-troops-are-fighting-haitis-gangs-who-is-protecting-civilians"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT90bWZx5CcSQ_3--H2ja1_ta6Vywep7ytKAqKMmbQtvAP_JB29HIduizfGrnE",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/americas/thousands-march-support-bukeles-haiti-mission-analysts-warn-escalation-2026-11-17/",
+          "title": "Thousands march in support of Bukele's Haiti mission as analysts warn of escalation",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT90bWZx5CcSQ_3--H2ja1_ta6Vywep7ytKAqKMmbQtvAP_JB29HIduizfGrnE"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/17/haitians-protest-in-support-of-el-salvadors-anti-gang-troop-deployment",
+          "title": "Haitians protest in support of El Salvador’s anti-gang troop deployment",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvKl8hmerS-J_V3XN8_EOuVxuQwYy2bVkk_DuV0nemKwqgYSFAI6NU_4nu60"
+        },
+        {
+          "url": "https://www.cfr.org/articles/el-salvadors-troops-are-fighting-haitis-gangs-who-is-protecting-civilians",
+          "title": "El Salvador’s Troops Are Fighting Haiti’s Gangs. Who Is Protecting Civilians?",
+          "publisher": "Council on Foreign Relations",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRV8b5BYRCNKYZl3-5FtedXd4ZWUYlJv3lGSdo8E5W8BBS_FhqYXoVvFBbKmnU"
         }
       ]
     },
     {
       "query": "retirement",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T09:20:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/15/social-security-tax-changes-midterm-election.html",
-        "https://www.usatoday.com/story/money/personal-finance/retirement/social-security/2026/11/17/investment-tax-social-security/92810465007/",
-        "https://www.newsweek.com/social-security-benefits-proposal-bill-cassidy-donald-trump-12728925"
+        "https://www.foxbusiness.com/personal-finance/treasury-irs-401k-auto-enrollment-retirement-savings-rules",
+        "https://www.reuters.com/business/us-treasury-issues-rules-automatic-retirement-plan-enrollment-years-after-law-2026-11-17/",
+        "https://www.accountingtoday.com/news/irs-finalizes-rules-for-401k-automatic-enrollment"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpVfOJ2bpXFPHNffh8yh5e4VVo4mwRO3naFQ118Cbei0zuSc-tSczG-B2ve38",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqD3fVQO0RIvvPY33dnnGrFuxLQZ6kAlSQXt7dRpCDsje44y6HZYWvrp_j9GQ",
+      "image_credit": "Fox Business",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/15/social-security-tax-changes-midterm-election.html",
-          "title": "Social Security and the blue wave: What could happen to payroll taxes and senior tax breaks",
-          "publisher": "CNBC",
+          "url": "https://www.foxbusiness.com/personal-finance/treasury-irs-401k-auto-enrollment-retirement-savings-rules",
+          "title": "Treasury finalizes 401(k) auto-enrollment rules that could boost retirement savings",
+          "publisher": "Fox Business",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpVfOJ2bpXFPHNffh8yh5e4VVo4mwRO3naFQ118Cbei0zuSc-tSczG-B2ve38"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqD3fVQO0RIvvPY33dnnGrFuxLQZ6kAlSQXt7dRpCDsje44y6HZYWvrp_j9GQ"
         },
         {
-          "url": "https://www.usatoday.com/story/money/personal-finance/retirement/social-security/2026/11/17/investment-tax-social-security/92810465007/",
-          "title": "The new tax plan that could stop Social Security cuts",
-          "publisher": "USA Today",
+          "url": "https://www.reuters.com/business/us-treasury-issues-rules-automatic-retirement-plan-enrollment-years-after-law-2026-11-17/",
+          "title": "US Treasury issues rules for automatic retirement plan enrollment years after law passed",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeLPWj_U1UnSA_w3278eqVcKKeowpzoePFfrKihisLjLNR4at3rcnLzFB2aDk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ68Kirm7YCMvZsX2LoaKq4kxQDgp22PKrg2ZT_aPyTK30zM0XNw6L7J7RuQpc"
         },
         {
-          "url": "https://www.newsweek.com/social-security-benefits-proposal-bill-cassidy-donald-trump-12728925",
-          "title": "What Trump-Backed $1.5T Plan Could Mean for Social Security Recipients",
-          "publisher": "Newsweek",
+          "url": "https://www.accountingtoday.com/news/irs-finalizes-rules-for-401k-automatic-enrollment",
+          "title": "IRS finalizes rules for 401(k), 403(b) automatic enrollment",
+          "publisher": "Accounting Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlTes9O-wqIKyR8k8kCY9gJhanXC0hvl_vfNMLYZIyV5AT3CnmkTWzhS5GfJg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5H2Nj-CC_phSYFS-5gwYNGPurbKgV8rDcFrXZ7PvGESFLSoqplwUFF0DNwQI"
         }
       ]
     },
     {
       "query": "coinbase",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-18T09:20:00Z",
       "related_news_urls": [
         "https://www.coinbase.com/blog/consumer-protection-tuesday-how-we-leveraged-ai-to-stop-a-popular-tesla-scam",
-        "https://cryptonews.net/news/security/33770451/",
+        "https://www.tradingview.com/news/tradingview:d821ea70fa7cc:0-key-facts-coinbase-reports-3-4b-loans-25-fees-blocks-4-7m-scam/",
         "https://www.digitaltoday.co.kr/en/view/127572/coinbase-blocks-elon-musk-deepfake-crypto-scam-transfer"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNWAFY0cvwxLLolB4iUD4-QmgmJpMaoPvsSeK2gzdXAni9V2uBmJnqB-gpY-U",
@@ -131,11 +271,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNWAFY0cvwxLLolB4iUD4-QmgmJpMaoPvsSeK2gzdXAni9V2uBmJnqB-gpY-U"
         },
         {
-          "url": "https://cryptonews.net/news/security/33770451/",
-          "title": "Million-Dollar Scam with Fake Elon Musk Broadcast: Coinbase Blocks $4.7 Million Transfer",
-          "publisher": "Cryptonews.net",
+          "url": "https://www.tradingview.com/news/tradingview:d821ea70fa7cc:0-key-facts-coinbase-reports-3-4b-loans-25-fees-blocks-4-7m-scam/",
+          "title": "Key facts: Coinbase Reports $3.4B Loans; 25% Fees; Blocks $4.7M Scam",
+          "publisher": "TradingView",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyl4lax1iO7nx19IvPwBdT61qdFoaGfur-KXz-HI8D7QyVHaRpeeQuSZu8cZ8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
         },
         {
           "url": "https://www.digitaltoday.co.kr/en/view/127572/coinbase-blocks-elon-musk-deepfake-crypto-scam-transfer",
@@ -152,8 +292,8 @@
       "published_at": "2026-11-18T09:20:00Z",
       "related_news_urls": [
         "https://www.reuters.com/world/how-india-became-rice-powerhouse-why-its-becoming-problem-2026-11-18/",
-        "https://www.drishtiias.com/current-affairs-news-analysis-editorials/news-analysis/17-11-2026",
-        "https://iref.net/rice-news/kerala-shortage-japan-fields-India-exports"
+        "https://www.thehindu.com/news/national/rebalancing-indias-rice-economy-exports-virtual-water-emissions-and-the-groundwater-challenge/article71704600.ece",
+        "https://www.drishtiias.com/current-affairs-news-analysis-editorials/news-analysis/17-11-2026"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR07Scln8CDYcIJljTRJ6zJ5x_SC5xXf01woJJQ8lT9I-5TxmxwTp6ePkZlM4",
       "image_credit": "Reuters",
@@ -166,193 +306,53 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR07Scln8CDYcIJljTRJ6zJ5x_SC5xXf01woJJQ8lT9I-5TxmxwTp6ePkZlM4"
         },
         {
+          "url": "https://www.thehindu.com/news/national/rebalancing-indias-rice-economy-exports-virtual-water-emissions-and-the-groundwater-challenge/article71704600.ece",
+          "title": "Rebalancing India’s Rice economy: exports, virtual water, emissions and the groundwater challenge",
+          "publisher": "The Hindu",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKpC62foyQnE78lmMxBzkBCmSMoxrMQQL6UKXbmCCLtLk7MmsOW3CpmNYCtkU"
+        },
+        {
           "url": "https://www.drishtiias.com/current-affairs-news-analysis-editorials/news-analysis/17-11-2026",
           "title": "News Analysis 17 November 2026 | Latest News & Current Affairs",
           "publisher": "Drishti IAS",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVYhohYVgVz3fSzfjtXHbOb-wBzWarIB8xY5__rA9Qzc-viU5EVXDzFRmu1dg"
-        },
-        {
-          "url": "https://iref.net/rice-news/kerala-shortage-japan-fields-India-exports",
-          "title": "Top rice news: Kerala Shortage, Japan Floods & India's Rice Export",
-          "publisher": "Indian Rice Exporters Federation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTo2aByH5d0XawbqeQnYTl0jvNXW_ro_rle4F4NevIirQUX30LH_SnzZbyJhaE"
         }
       ]
     },
     {
       "query": "nice",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-18T09:10:00Z",
       "related_news_urls": [
-        "https://www.petitesaffiches.fr/actualites,069/droit,044/trafic-de-stupefiants-66-kilos-de,47733.html",
-        "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/nice/uber-shit-a-nice-71-kilos-de-cannabis-saisis-sept-personnes-deferees-devant-la-justice-3451524.html",
-        "https://www.nicematin.com/societe/justice/huit-interpellations-70-kg-de-cannabis-saisis-50-000-euros-en-liquide-vaste-operation-de-police-avec-le-raid-contre-un-reseau-ubershit-a-nice-10762920"
+        "https://tribuca.net/orientation-alternance-parcoursup-le-programme-du-salon-de-letudiant-de-nice/",
+        "https://www.petitesaffiches.fr/actualites,069/economie,045/ibt-de-retour-a-nice-pour-sa-4e,47730.html",
+        "https://tribuca.net/lindustrie-souffre-et-les-sous-traitants-sont-les-premiers-penalises/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0oKQz0nUWCvU7jty-u05jJiuRUITi38f-WuFb08djJzMLXaF2pZM3lLVvyuw",
-      "image_credit": "Petites Affiches",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNIm7J0nhHuMJOEzQ6D916oiKMXSqvbLbH8LMHSI0Y5rvn_5XAYLYc-kN4jzU",
+      "image_credit": "Tribuca.net",
       "news": [
         {
-          "url": "https://www.petitesaffiches.fr/actualites,069/droit,044/trafic-de-stupefiants-66-kilos-de,47733.html",
-          "title": "Droit - Trafic de stupéfiants : 66 kilos de cannabis et 50 000 euros saisis, sept personnes déférées à Nice",
+          "url": "https://tribuca.net/orientation-alternance-parcoursup-le-programme-du-salon-de-letudiant-de-nice/",
+          "title": "Orientation, alternance, Parcoursup : le programme du Salon de l'Étudiant de Nice",
+          "publisher": "Tribuca.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNIm7J0nhHuMJOEzQ6D916oiKMXSqvbLbH8LMHSI0Y5rvn_5XAYLYc-kN4jzU"
+        },
+        {
+          "url": "https://www.petitesaffiches.fr/actualites,069/economie,045/ibt-de-retour-a-nice-pour-sa-4e,47730.html",
+          "title": "Economie - IBT de retour à Nice pour sa 4e édition",
           "publisher": "Petites Affiches",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0oKQz0nUWCvU7jty-u05jJiuRUITi38f-WuFb08djJzMLXaF2pZM3lLVvyuw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbnBwBC9uTdDafTn20VD2meguzNC7VjQAQqQFzXNcOQi0BNeVjP6lcfM3-ms"
         },
         {
-          "url": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/nice/uber-shit-a-nice-71-kilos-de-cannabis-saisis-sept-personnes-deferees-devant-la-justice-3451524.html",
-          "title": "\"Uber shit\" à Nice : 71 kilos de cannabis saisis, sept personnes déférées devant la justice",
-          "publisher": "France 3 Régions",
+          "url": "https://tribuca.net/lindustrie-souffre-et-les-sous-traitants-sont-les-premiers-penalises/",
+          "title": "\"L'industrie souffre, et les sous-traitants sont les premiers pénalisés\"",
+          "publisher": "Tribuca.net",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtOBzz4hmVS7R6d38QpNOf-jqnxJvzPorzsNNut3LDe8QUfDHZ16LI2wTnX3o"
-        },
-        {
-          "url": "https://www.nicematin.com/societe/justice/huit-interpellations-70-kg-de-cannabis-saisis-50-000-euros-en-liquide-vaste-operation-de-police-avec-le-raid-contre-un-reseau-ubershit-a-nice-10762920",
-          "title": "Huit interpellations, 70 kg de cannabis saisis, 50.000 euros en liquide... Vaste opération de police avec le RAID contre un réseau « Ubershit » à Nice",
-          "publisher": "Nice-Matin",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVS_4P436ayCeUtjnSi-nukmAyY0dPaosYaa5CHJnYJPHkS0C1GXLJsh8uYoM"
-        }
-      ]
-    },
-    {
-      "query": "los angeles",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T09:10:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/wallis-annenberg-wildlife-crossing-los-angeles-california-af2a0788528d85d6624c5b78b0fe427c",
-        "https://www.earth.com/animals/mountain-lions-like-p-22-are-set-to-get-a-bridge-over-10-lanes-of-the-101-freeway-near-los-angeles-on-dec-2/",
-        "https://www.yahoo.com/news/us/articles/bridge-isnt-cars-saving-lives-201500448.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7DNbjPQTWKGD-KPMTGAKS_9CRl5ixN5Vjwdh3kxks0-aEG3D3oanxCSiMId4",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/wallis-annenberg-wildlife-crossing-los-angeles-california-af2a0788528d85d6624c5b78b0fe427c",
-          "title": "Over a freeway near Los Angeles, animals can roam safely thanks to world's largest wildlife crossing",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7DNbjPQTWKGD-KPMTGAKS_9CRl5ixN5Vjwdh3kxks0-aEG3D3oanxCSiMId4"
-        },
-        {
-          "url": "https://www.earth.com/animals/mountain-lions-like-p-22-are-set-to-get-a-bridge-over-10-lanes-of-the-101-freeway-near-los-angeles-on-dec-2/",
-          "title": "Mountain lions and other animals are set to get their own massive land bridge that crosses over 10 lanes of the 101 Freeway near Los Angeles",
-          "publisher": "Earth.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJ8hHitnHEEhrZiHuWWq5WU106jyPV6DZwwFI6IObNJ8bTT-neNH0MojI6KmQ"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/bridge-isnt-cars-saving-lives-201500448.html",
-          "title": "This Bridge Isn't For Cars, But It's Saving The Lives Of Drivers & Wildlife Alike",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkrEi3xz8nrN3GGe48OkHCAhgNS-d5GHaLBuulYeEbraEaoI5k8xwrfufewFs"
-        }
-      ]
-    },
-    {
-      "query": "腾讯财报",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T09:00:00Z",
-      "related_news_urls": [
-        "https://cn.wsj.com/articles/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%BA%A6%E5%88%A9%E6%B6%A6%E4%BB%85%E5%A2%9E%E9%95%BF0-8-e9f878f2",
-        "https://m.sohu.com/a/1103276661_121439537?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-        "https://hk.on.cc/hk/bkn/cnt/finance/20261118/bkn-20261118163310082-1118_00842_001_cn.html?refer=hn2"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRcCBYqcZ7gwKK8ClZBVsB138LQJw02Zt7O3iVjqy_L7RLzReQmMzywgKA7OA",
-      "image_credit": "华尔街日报中文网",
-      "news": [
-        {
-          "url": "https://cn.wsj.com/articles/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%BA%A6%E5%88%A9%E6%B6%A6%E4%BB%85%E5%A2%9E%E9%95%BF0-8-e9f878f2",
-          "title": "腾讯第三季度利润仅增长0.8%",
-          "publisher": "华尔街日报中文网",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRcCBYqcZ7gwKK8ClZBVsB138LQJw02Zt7O3iVjqy_L7RLzReQmMzywgKA7OA"
-        },
-        {
-          "url": "https://m.sohu.com/a/1103276661_121439537?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "title": "腾讯AI投入加速转化：AI进展显著、主业稳健增长，云收入同比大增35%",
-          "publisher": "Sohu",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOLJJZB--ztZfN3aCrzwltSQ_T9dbJWokvbo3sntdIbrEYxD8-n6_yYLqVFQs"
-        },
-        {
-          "url": "https://hk.on.cc/hk/bkn/cnt/finance/20261118/bkn-20261118163310082-1118_00842_001_cn.html?refer=hn2",
-          "title": "腾讯上季经调整少赚5.7% 资本开支大增负现金流691亿人币｜即时新闻｜产经｜on.cc东网",
-          "publisher": "on.cc東網",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzm_mniZVE5Ckz-vnmFkaghs087fZJYGPAy80EIDTDQGUcrF7gCeLdL9ysT9c"
-        }
-      ]
-    },
-    {
-      "query": "truck accident lawyer",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T09:00:00Z",
-      "related_news_urls": [
-        "https://natlawreview.com/press-releases/best-personal-injury-lawyer-los-angeles-agemian-law-group-ranked-1-2026",
-        "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-sacramento/",
-        "https://www.clarionledger.com/press-release/story/225215/agemian-law-group-named-the-top-personal-injury-law-firm-in-los-angeles-for-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH82cS4qlqW-uGctzod-Uwfu7YzmUMavPRHwWlkktyQq2ZFlHzrWEB_Ls_xO8",
-      "image_credit": "The National Law Review",
-      "news": [
-        {
-          "url": "https://natlawreview.com/press-releases/best-personal-injury-lawyer-los-angeles-agemian-law-group-ranked-1-2026",
-          "title": "Best Personal Injury Lawyer in Los Angeles: Agemian Law Group Ranked #1 for 2026",
-          "publisher": "The National Law Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH82cS4qlqW-uGctzod-Uwfu7YzmUMavPRHwWlkktyQq2ZFlHzrWEB_Ls_xO8"
-        },
-        {
-          "url": "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-sacramento/",
-          "title": "Best Car Accident Lawyers in Sacramento for 2026",
-          "publisher": "Lawyer Monthly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSfLJzvRCxCpu-QnHJ6vdWg-8Y44pK84RiBLn8-x6PQ3uA5jnAPc1mMTFyCB8"
-        },
-        {
-          "url": "https://www.clarionledger.com/press-release/story/225215/agemian-law-group-named-the-top-personal-injury-law-firm-in-los-angeles-for-2026/",
-          "title": "Agemian Law Group Named the Top Personal Injury Law Firm in Los Angeles for 2026",
-          "publisher": "The Clarion-Ledger",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR39ZNjVDth91UnYPdozNo04ypwV4Q_NORozz-pZ814VwIdep5te0z7uMhBzvE"
-        }
-      ]
-    },
-    {
-      "query": "car accident attorney",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T09:00:00Z",
-      "related_news_urls": [
-        "https://azbigmedia.com/business/law/5-car-accident-law-firms-in-onondaga-county-to-compare-before-hiring/",
-        "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-brooklyn/",
-        "https://www.theautochannel.com/news/2026/11/12/1737840-motorcycle-accident-lawyers-raleigh-nc-4-firms-riders-can-compare.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStrfbXqVbtdbBJY72frlVCG6TaCG07W_-qsS4AImZHZL4UZtm1hv9aTSYcLpU",
-      "image_credit": "AZ Big Media",
-      "news": [
-        {
-          "url": "https://azbigmedia.com/business/law/5-car-accident-law-firms-in-onondaga-county-to-compare-before-hiring/",
-          "title": "5 car accident law firms in Onondaga County to compare before hiring",
-          "publisher": "AZ Big Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStrfbXqVbtdbBJY72frlVCG6TaCG07W_-qsS4AImZHZL4UZtm1hv9aTSYcLpU"
-        },
-        {
-          "url": "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-brooklyn/",
-          "title": "Brooklyn Crash Victims: Compare Local Injury Firms Before You Sign",
-          "publisher": "Lawyer Monthly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfWbyAjA5TPJ_2jJhz_fDQrU_MJe6IMC0rcN4svi-Ibz4EBLgHF8LiCzqhlyE"
-        },
-        {
-          "url": "https://www.theautochannel.com/news/2026/11/12/1737840-motorcycle-accident-lawyers-raleigh-nc-4-firms-riders-can-compare.html",
-          "title": "Motorcycle Accident Lawyers in Raleigh, NC: 4 Firms Riders Can Compare in 2027",
-          "publisher": "The Auto Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV2_C1OqHpk7hyyyq0dc4ER0IUQKVe6OJYuaquP2VKTCymNkxJC6RTxXaZFcQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9cKtSI3DtR5aPKsMbMtB-Ch32hpDqZSKPjhH6CbFMjvngPGvVCJTG2xPulpc"
         }
       ]
     }
