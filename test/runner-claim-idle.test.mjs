@@ -42,10 +42,10 @@ test('real Brain claim loop annotates every typed post-admission skip',async()=>
  const {readFileSync}=await import('node:fs');
  const code=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
  assert.match(code,/noteRunnerSkip\(claimBlockedBy,'source_repair_active'\)/);
- assert.match(code,/noteRunnerSkip\(claimBlockedBy,'dependency_pending'\)/);
+ assert.match(code,/eligibility.reason==='dependency_pending'.*noteRunnerDependencyStatuses\(dependencyStates,jobs,effectiveDependencies\)/);
  assert.match(code,/noteRunnerSkip\(claimBlockedBy,'repository_lease_active'\)/);
  assert.match(code,/noteRunnerSkip\(claimBlockedBy,eligibility.reason\)/);
- assert.match(code,/claimBlockedBy,scanLimited:/);
+ assert.match(code,/claimBlockedBy,dependencyStates,scanLimited:/);
 });
 
 test('signaled pending dependencies show bounded statuses, not ticket identities or private prose',()=>{

@@ -2250,6 +2250,25 @@ function toggle(open){
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
+// Same-page handoff from the owner-selected Oracle card. Not a command or send.
+window.addEventListener('quantaphi:bubbles:card-context',event=>{
+ if(embedded)return;
+ const detail=event.detail;
+ if(!detail||detail.version!==1||
+    typeof detail.sourceCardId!=='string'||!(/^[a-zA-Z0-9][a-zA-Z0-9:_-]{1,109}$/).test(detail.sourceCardId)||
+    typeof detail.draft!=='string'||detail.draft.length>900)return;
+ if(input.value.trim()){
+  detail.blocked='unsent';
+  toggle(true);
+  status.textContent='An unsent Bubbles message is already present. Send or clear it before importing this card.';
+  return;
+ }
+ input.value=detail.draft;
+ detail.handled=true;
+ toggle(true);
+ status.textContent='Card context prepared. Review and press Send. No provider action was executed.';
+ input.focus();
+});
 // A host-page orb opens this iframe only on explicit visitor interaction.
 // No owner job, microphone or permission is activated by this display signal.
 if(embedded)window.addEventListener('message',event=>{
@@ -2432,6 +2451,26 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let failedTurn=false;
  try{
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
+ if(/^complete me ai(?:$|\s*[-–—:])/i.test(spoken)){
+  if(embedded){status.textContent='Open Bubbles on QuantaPhi to use Complete Me AI.';return;}
+  if(pendingImage||pendingImages.length){status.textContent='Complete Me AI uses a text brief. Your attachment is still in the composer.';return;}
+  const thread=activeThread;
+  try{
+   const {openCompleteMe}=await import('/bubbles-complete-me.mjs');
+   await openCompleteMe(conversation,spoken,{authorize:verifiedOwnerHeaders,scopeActive:()=>thread===activeThread,
+    initialRepository:repositorySelectionExplicit&&repositorySelection.size===1?[...repositorySelection][0]:'',
+    request:async(path,data,authorization)=>{
+     const response=await bubblesFetch(BRAIN+path,{method:'POST',cache:'no-store',
+      headers:{Authorization:authorization,'Content-Type':'application/json'},body:JSON.stringify(data)},30000);
+     const result=await response.json();
+     if(response.status===401||response.status===403)return {ok:false,error:'owner_authorization_required'};
+     return response.ok?result:{ok:false,error:result?.error};
+    }});
+   clearSentComposer();
+   status.textContent='Complete Me AI is open.';
+  }catch(error){status.textContent=String(error.message||'Complete Me AI could not open.').slice(0,150);}
+  return;
+ }
  // A deliberate Claude choice applies to the main Bubbles composer and skips
  // unrelated Oracle/tool routing. No text or attachments may be silently lost.
  if(!embedded&&modelChoice.value==='claude'){

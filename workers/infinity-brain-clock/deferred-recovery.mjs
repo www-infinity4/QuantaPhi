@@ -21,6 +21,8 @@ function statusText(job){
 export function sourceRecoveryEligibility(job,{now=Date.now()}={}){
  if(job?.status!=='blocked'||!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(job.repository||''))
   return {eligible:false,reason:'not_a_blocked_owner_repository_job'};
+ if(job.progress?.publicationPending===true||job.progress?.blocker==='publication_reconciliation_required')
+  return {eligible:false,reason:'existing_execution_receipt_requires_verification'};
  const message=statusText(job);
  if(DANGER.test(message))return {eligible:false,reason:'owner_or_security_decision'};
  if(!TECHNICAL.test(message))return {eligible:false,reason:'no_discoverable_technical_question'};

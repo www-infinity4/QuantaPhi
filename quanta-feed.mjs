@@ -1,4 +1,5 @@
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
+import {suggestFeedSearch} from './quanta-feed-search-assist.mjs';
 import {INFINITY_ACCEPTED_BRANDS} from './infinity-accepted-catalog.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
@@ -7,7 +8,9 @@ import {mountSpaceSource} from './quanta-feed-spaces.mjs';
 import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
-import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,commitFollowing,saveNavigationProgress} from './quanta-feed-rank.mjs';
+import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,saveNavigationProgress,commitFeedPreference} from './quanta-feed-rank.mjs';
+import {INTEREST_DEPARTMENTS} from './quanta-context-placement.mjs';
+import {registerVisibleCard} from './quanta-feed-exposure.mjs';
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
  id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
@@ -33,17 +36,16 @@ export const ALL_FEED_CARDS=Object.freeze([...new Map([...fromAccepted,...fromSo
 export const feedCard=id=>ALL_FEED_CARDS.find(c=>c.id===id)||null;
 const create=(tag,cl,text)=>{const node=document.createElement(tag);if(cl)node.className=cl;if(text!==undefined)node.textContent=text;return node;};
 const safeRead=()=>{try{return cleanFeedState(JSON.parse(localStorage.getItem(FEED_STORAGE_KEY)||'{}'));}catch{return cleanFeedState({});}};
-let state=safeRead(),tab='public',current='',query='',showCount=16,lastReason='',storageMessage='';
+let state=safeRead(),tab='public',current='',query='',showCount=16,lastReason='',lastVisibleCardId='';
 // Quant signals are derived in memory from the authenticated user’s existing ledger.
 // They are NEVER written to anonymous localStorage.
 let quantScores={},quantConnected=false,quantAttempted=false;
 const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores});
-function persist(){
- try{
-  const saved=saveNavigationProgress(localStorage,state);
-  if(!saved.ok){storageMessage='Could not save or confirm feed progress on this device.';return false}
-  state=saved.state;storageMessage='';return true;
- }catch{storageMessage='Could not save or confirm feed progress on this device.';return false}
+const persist=()=>{const saved=saveNavigationProgress(localStorage,state);if(saved.ok)state=saved.state;return saved.ok;};
+function saveChoice(kind,id=''){
+ const saved=commitFeedPreference(localStorage,kind,id);
+ if(!saved.ok){state=safeRead();document.getElementById('quantaFeedStatus')?.replaceChildren('Could not save this preference on this device.');return false}
+ state=saved.state;return true;
 }
 const shareChange=()=>window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'public-feed'}}));
 function choose(card){
@@ -71,10 +73,18 @@ function followButton(card,refresh){
  const b=create('button','qf-follow'+(followed?' qf-saved':''),followed?'✓ Following':'+ Follow');
  b.type='button';b.setAttribute('aria-label',(followed?'Remove ':'Add ')+card.name+(followed?' from':' to')+' Following');
  b.setAttribute('aria-pressed',String(followed));b.addEventListener('click',()=>{
-  let saved;try{saved=commitFollowing(localStorage,card.id)}catch{}
-  if(!saved?.ok){storageMessage='Could not save or confirm Follow on this device.';state=safeRead();refresh();return}
-  state=saved.state;storageMessage='';refresh();shareChange();
+  if(!saveChoice('follow',card.id))return;refresh();shareChange();
  });return b;
+}
+function hideButton(card,refresh){
+ const btn=create('button','qf-button qf-not-for-me','Not for me');btn.type='button';
+ btn.setAttribute('aria-label','Hide '+card.name+' from my discovery feeds');
+ btn.addEventListener('click',()=>{
+  if(!saveChoice('hide',card.id))return;
+  if(current===card.id)current='';
+  refresh();shareChange();
+ });
+ return btn;
 }
 function makeTile(card,refresh){
  const tile=create('article','qf-tile');tile.dataset.cardId=card.id;
@@ -89,6 +99,7 @@ function makeTile(card,refresh){
   const openBtn=create('button','qf-button','Open card');openBtn.type='button';openBtn.addEventListener('click',()=>open(card));buttons.append(openBtn);
  }
  if(card.origin!=='source')buttons.append(followButton(card,refresh));
+ buttons.append(hideButton(card,refresh));
  tile.append(art,topic,title,desc);
  if(card.origin==='source'){
   const inline=create('div','qf-inline-tool');mountCardTools(inline,card);tile.append(inline);
@@ -105,21 +116,70 @@ function renderHome(){
  host.append(heading);
  const search=create('input','qf-search');search.type='search';search.placeholder='Search QuantaPhi cards, radios, coins, science…';
  search.autocomplete='off';search.value=query;search.setAttribute('aria-label','Search QuantaPhi cards');
- search.addEventListener('input',()=>{query=search.value.slice(0,120);showCount=16;current='';renderResults(false);});
- host.append(search);
+ const suggestions=create('div','qf-search-suggestions');
+ suggestions.id='quantaFeedSearchSuggestions';suggestions.hidden=true;
+ suggestions.setAttribute('role','region');suggestions.setAttribute('aria-label','Source-backed search suggestions');
+ search.setAttribute('aria-controls',suggestions.id);search.setAttribute('aria-expanded','false');
+ const closeSuggestions=()=>{suggestions.hidden=true;search.setAttribute('aria-expanded','false');};
+ const showSuggestions=()=>{
+  const matches=suggestFeedSearch(ALL_FEED_CARDS,search.value);
+  suggestions.replaceChildren();
+  for(const suggestion of matches){
+   const item=create('div','qf-suggestion');
+   const fill=create('button','qf-suggestion-fill',suggestion.label+' · '+suggestion.category);
+   fill.type='button';fill.addEventListener('click',()=>{
+    query=suggestion.label;search.value=query;showCount=16;current='';
+    renderResults(false);search.focus();closeSuggestions();
+   });
+   const source=create('a','qf-suggestion-source','Original source');
+   source.href=suggestion.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';
+   item.append(fill,source);suggestions.append(item);
+  }
+  suggestions.hidden=matches.length===0;
+  search.setAttribute('aria-expanded',String(matches.length>0));
+ };
+ search.addEventListener('input',()=>{query=search.value.slice(0,120);showCount=16;current='';renderResults(false);showSuggestions();});
+ search.addEventListener('focus',showSuggestions);
+ search.addEventListener('keydown',event=>{if(event.key==='Escape')closeSuggestions();});
+ host.append(search,suggestions);
  const tabs=create('div','qf-tabs');tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label','QuantaPhi feed');
  for(const name of FEED_TABS){
   const b=create('button','qf-tab'+(tab===name?' qf-active':''),name==='for-you'?'For You':name==='following'?'Following':'Public');
   b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(tab===name));
   b.addEventListener('click',()=>{tab=name;current='';lastReason='';showCount=16;renderHome();});tabs.append(b);
  }host.append(tabs);
+ // For You begins with visitor-chosen departments and real Following, never
+ // inferred gender, health conditions, or raw assistant/chat searches.
+ if(tab==='for-you'){
+  const chooser=create('section','qf-interest-chooser');
+  chooser.setAttribute('aria-label','Choose your For You categories');
+  chooser.append(create('h3','','Choose what For You should show'),
+   create('p','qf-muted','Choose topics or Follow a card. Public stays wider and keeps discovering new, relevant sources.'));
+  const chips=create('div','qf-interest-chips');chips.setAttribute('role','group');chips.setAttribute('aria-label','For You interests');
+  for(const d of INTEREST_DEPARTMENTS){
+   const selected=(state.interests||[]).includes(d.id);
+   const chip=create('button','qf-interest-chip'+(selected?' qf-interest-active':''),(selected?'✓ ':'+ ')+d.label);
+   chip.type='button';chip.setAttribute('aria-pressed',String(selected));
+   chip.addEventListener('click',()=>{
+    if(!saveChoice('interest',d.id))return;shareChange();renderHome();
+   });
+   chips.append(chip);
+  }
+  chooser.append(chips);
+  if(state.hidden?.length){
+   const reset=create('button','qf-interest-chip','Restore '+state.hidden.length+' hidden card(s)');
+   reset.type='button';reset.addEventListener('click',()=>{
+    if(!saveChoice('restore'))return;renderHome();shareChange();
+   });chooser.append(reset);
+  }
+  host.append(chooser);
+ }
  const status=create('p','qf-muted');status.id='quantaFeedStatus';status.setAttribute('role','status');host.append(status);
  const feature=create('div','qf-feature');feature.id='quantaFeedFeature';host.append(feature);
  const controls=create('div','qf-controls');
  const next=create('button','qf-button','Next unseen card →');next.type='button';
  next.addEventListener('click',()=>{
   const prior=current;
-  if(prior)state=markViewed(state,prior);
   const pick=nextFeedDirection(ALL_FEED_CARDS,tab,ranking(),prior,query);
   current=pick.card?.id||'';
   lastReason=pick.card?'Next card: '+pick.card.name:'';
@@ -129,16 +189,21 @@ function renderHome(){
  const grid=create('div','qf-grid');grid.id='quantaFeedGrid';host.append(grid);
  const more=create('button','qf-more','Show more cards');more.type='button';
  more.addEventListener('click',()=>{showCount+=16;renderResults(false);});host.append(more);
- const privacy=create('p','qf-muted qf-note','For You uses signed-in Quant search interests when available and otherwise this browser’s card interactions. Following is saved on this device for now; cross-device wallet sync is not yet enabled. No banking or brokerage credentials are read or saved by this feed.');
+ const privacy=create('p','qf-muted qf-note','For You displays only chosen departments and followed cards. Your first-party card interactions and optional authenticated Quant interests affect order within those choices. Following is saved on this device; cross-device wallet sync is not yet enabled. No private medical records, raw prompts, banking data or inferred gender are used for ad targeting.');
  host.append(privacy);
  function renderResults(nextCard){
   const ranked=feedCandidates(ALL_FEED_CARDS,tab,ranking(),query);
-  if(!ranked.length){feature.replaceChildren(create('p','qf-empty',tab==='following'?'No followed cards yet. Open Public and tap + Follow.':'No matches. Try another search.'));grid.replaceChildren();more.hidden=true;next.disabled=true;status.textContent='No matching cards';return;}
+  if(!ranked.length){feature.replaceChildren(create('p','qf-empty',tab==='following'?'No followed cards yet. Open Public and tap + Follow.':tab==='for-you'?'Choose a For You category above or Follow some cards in Public.':'No matches. Try another search.'));grid.replaceChildren();more.hidden=true;next.disabled=true;status.textContent='No matching cards';return;}
   if(!current||!ranked.some(c=>c.id===current)){
    const pick=nextFeedCard(ALL_FEED_CARDS,tab,ranking(),current,query);
    current=pick?.id||ranked[0].id;
   }
   const selected=ranked.find(c=>c.id===current)||ranked[0];
+  // Only count a genuinely visible new feature card once. The same DOM
+  // render, new query keystroke, or hidden tab is not a new impression.
+  const exposure=registerVisibleCard(safeRead(),selected,{lastId:lastVisibleCardId,visible:!document.hidden});
+  lastVisibleCardId=exposure.lastId;
+  if(exposure.recorded){state=exposure.state;persist();}
   const visual=createCardArtwork(selected);
   const info=create('div','qf-feature-copy');
   info.append(create('p','qf-topic',selected.category),create('h3','',selected.name),
@@ -150,6 +215,7 @@ function renderHome(){
    const openBtn=create('button','qf-button','Open interactive card');openBtn.type='button';
    openBtn.addEventListener('click',()=>open(selected));buttons.append(openBtn);
   }
+  buttons.append(hideButton(selected,refresh));
   if(selected.origin!=='source'||!['google','bing'].includes(selected.id)){
    const original=create('a','qf-link','Original source ↗');original.href=selected.url;original.target='_blank';original.rel='noopener noreferrer';buttons.append(original);
   }
@@ -159,9 +225,9 @@ function renderHome(){
   feature.replaceChildren(visual,info);
   grid.replaceChildren();
   for(const c of ranked.slice(0,showCount))grid.append(makeTile(c,refresh));
-  status.textContent=storageMessage|| (tab==='following'?ranked.length+' followed cards':tab==='for-you'?
-    ranked.length+' suggested cards · '+(quantConnected?'your signed-in Quant interests + card activity':'your card interactions on this device'):
-    ranked.length+' public cards · unseen first when using Next');
+  status.textContent=tab==='following'?ranked.length+' followed cards':tab==='for-you'?
+    ranked.length+' selected cards · chosen topics + Following'+(quantConnected?' · Quant order within choices':''):
+    ranked.length+' public cards · unseen first when using Next';
   more.hidden=ranked.length<=showCount;next.disabled=ranked.length===1;
  }
  renderResults(false);
@@ -216,6 +282,9 @@ if(typeof document!=='undefined'){
   if(event.detail?.origin==='public-feed')return;
   state=safeRead();
   if(document.getElementById('quantaDiscoveryFeed'))renderHome();
+ });
+ document.addEventListener('visibilitychange',()=>{
+  if(!document.hidden&&document.getElementById('quantaDiscoveryFeed'))renderHome();
  });
  const mount=()=>{renderHome();renderDetail();};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();

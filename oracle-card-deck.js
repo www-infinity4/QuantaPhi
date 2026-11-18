@@ -5,9 +5,22 @@
 'use strict';
 const host=document.getElementById('oracleCardDeck'),stage=document.getElementById('oracleCardStage');
 if(!host||!stage)return;
+// Source-backed observations prepare bounded owner work; never auto-write from ad content.
+void import('/oracle-aware-write.mjs?v=20261117-owner-write1')
+ .then(({mountAwareWriter})=>mountAwareWriter({host,stage}))
+ .catch(error=>console.warn('Oracle aware-writing editor unavailable',error));
+const agePolicy=window.QuantaAgePreferences;
+void import('/oracle-bubbles-context.mjs?v=20261117-card-context1')
+ .then(({mountCardConversationButton})=>mountCardConversationButton({host,stage}))
+ .catch(error=>console.warn('Oracle Bubbles card-context handoff unavailable',error));
+const categoryPicker=document.getElementById('oracleCardDepartment');
+const saveCategory=document.getElementById('oracleSaveDepartment');
+const hideCard=document.getElementById('oracleCardHide');
+let selectedDepartment='all',departmentApi=null;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
+ ['fredSpacesRadio','Media Star · Fred’s Spaces · Play show'],
  ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
@@ -38,7 +51,6 @@ const choices=[
  ['phiStoryWriter','Write a story'],
  ['phiMediaBuilder','Create images and video'],
  ['result','Explore research and Asteroid'],
- ['fredSpacesRadio','Listen to Media Star'],
  ['xTwitterCard','X · Twitter Quick Card'],
  ['xSpacesQuickCard','Explore X Spaces'],
  ['followingSpacesRadio','Explore radio shows'],
@@ -168,7 +180,7 @@ const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
 let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
 const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
-let feedState=null,proposed=null,followingPublisherFeed=null,storageError='';
+let feedState=null,proposed=null,followingPublisherFeed=null;
 const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
 let viewerTouched=false,selectionVersion=0;
@@ -311,15 +323,46 @@ registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){
  if(!directionApi||!feedState)return false;
- let saved;try{saved=directionApi.saveNavigationProgress(localStorage,feedState)}catch{}
- if(!saved?.ok){storageError='Could not save or confirm feed progress on this device.';feedState=readDirections();return false}
- feedState=saved.state;storageError='';return true;
+ const saved=directionApi.saveNavigationProgress(localStorage,feedState);
+ if(!saved.ok){feedState=readDirections();return false}
+ feedState=saved.state;return true;
 }
-function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
-function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
- cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
+function commitOraclePreference(kind,id=''){
+ if(!directionApi)return false;
+ const saved=directionApi.commitFeedPreference(localStorage,kind,id);
+ if(!saved.ok){feedState=readDirections();status.textContent='Could not save or confirm this preference on your device.';return false}
+ feedState=saved.state;return true;
+}
+function adultAllowed(entry){
+ if(selectedDepartment==='adult')return agePolicy?.isPreference(entry)||
+  Boolean(agePolicy?.read().browsingThisVisit&&agePolicy?.isAdult(entry));
+ return agePolicy?agePolicy.canAutoShow(entry):!/21\+|adult|dispensary|cannabis/i.test(entry.category);
+}
+function eligible(){
+ const cards=entries.filter(available).filter(adultAllowed).filter(e=>!(feedState?.hidden||[]).includes(e.feedId)).filter(e=>
+  selectedDepartment==='all'||Boolean(departmentApi?.matchesDepartment(e,selectedDepartment)));
+ if(selectedTab==='following')return cards.filter(e=>(feedState?.following||[]).includes(e.feedId));
+ if(selectedTab==='for-you')return cards.filter(e=>{
+  if(nonProfiling(e))return false;
+  const mine=(feedState?.following||[]).includes(e.feedId);
+  const category=departmentApi?.departmentFor(e);
+  return mine||Boolean(category&&(feedState?.interests||[]).includes(category));
+ });
+ return cards;
+}
+function liveCatalog(){return eligible().filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,
+ feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function updateTabs(){
  updateInventory();
+ if(hideCard)hideCard.hidden=!active||!directionApi||Boolean(agePolicy?.isPreference(active));
+ if(saveCategory&&categoryPicker){
+  const valid=departmentApi?.INTEREST_DEPARTMENTS.some(d=>d.id===selectedDepartment);
+  saveCategory.hidden=!valid;
+  const selected=(feedState?.interests||[]).includes(selectedDepartment);
+  saveCategory.textContent=selected?'✓ In For You':'+ Add to For You';
+  saveCategory.setAttribute('aria-pressed',String(selected));
+ }
+
   for(const button of host.querySelectorAll('[data-oracle-family]')){
   const count=eligible().filter(e=>cardFamily(e)===button.dataset.oracleFamily).length;
   button.disabled=count===0;
@@ -375,7 +418,7 @@ function predict(){
  proposed=null;
  if(expanded)return;
  const possible=eligible();
- if(!possible.length){next.disabled=true;reason.textContent='Your Following view is empty. Return to Public and add a card with + Follow.';return;}
+ if(!possible.length){next.disabled=true;reason.textContent=selectedTab==='for-you'?'Choose a department and tap Add to For You, or Follow a card in Public.':selectedTab==='following'?'Following is empty. Follow a card from Public first.':'No ready cards in this category. Choose another carousel.';return;}
  if(directionApi&&feedState){
   const present=liveCatalog();
   const context={...feedState,catalog:present,quantScores:quantWeights};
@@ -426,9 +469,12 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
  if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
  updateTabs();
- if(selectedTab==='following'&&!eligible().some(e=>e===active)){
-  returnActive();const first=eligible()[0];if(first)show(first,false);else{
-   now.textContent='No followed interactive cards';status.textContent='Use Public and tap + Follow on any live card.';
+ if(!eligible().includes(active)){
+  returnActive();const first=eligible()[0];if(first)show(first,false);
+  else{
+   now.textContent=selectedTab==='for-you'?'Choose your For You interests':selectedTab==='following'?'No followed interactive cards':'No cards in this category';
+   status.textContent=selectedTab==='for-you'?'Use Add to For You on a selected category or Follow an original card.':
+    selectedTab==='following'?'Use Public and tap + Follow on any live card.':'Select a different category to discover original cards.';
   }
  }
  if(selectedTab==='for-you')void connectQuant({select:true,revision});
@@ -436,10 +482,7 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
 }));
 follow?.addEventListener('click',()=>{
  if(!directionApi||!active)return;
- let saved;try{saved=directionApi.commitFollowing(localStorage,active.feedId)}catch{}
- if(!saved?.ok){storageError='Could not save or confirm Follow on this device.';feedState=readDirections();updateTabs();predict();status.textContent=storageError;return}
- feedState=saved.state;storageError='';
- follow.textContent=saved.followed?'✓ Following':'+ Follow';
+ if(!commitOraclePreference('follow',active.feedId)){updateTabs();predict();return;}
  if(selectedTab==='following'&&!feedState.following.includes(active.feedId)){
   returnActive();const first=eligible()[0];if(first)show(first,false);
   else {now.textContent='No followed interactive cards';status.textContent='Choose Public and follow a card to fill this view.';}
@@ -463,13 +506,45 @@ void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountF
  });
  followingPublisherFeed?.sync({tab:selectedTab});
 }).catch(()=>{const target=document.getElementById('oracleFollowingFeed');if(target)target.hidden=true;});
-Promise.all([import('/quanta-feed-rank.mjs?v=20261109-follow-safe1'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261111-follow-readback1'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1'),
  import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
  directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
  if(selectedTab==='for-you')void connectQuant();
  predict();
 }).catch(()=>{reason.textContent='Card directions are not available; original interactive cards are still usable.'});
+// This selector filters one original Oracle carousel; nothing is cloned,
+ // and current players are deactivated with the existing returnActive path.
+ categoryPicker?.addEventListener('change',()=>{
+  viewerTouched=true;selectionVersion++;
+  selectedDepartment=categoryPicker.value||'all';visited.length=0;
+  if(active&&!eligible().includes(active))returnActive();
+  if(!active){const first=eligible()[0];if(first)show(first,false);
+   else{now.textContent='No cards in this category';status.textContent='Choose a different carousel or save this department to For You.';}}
+  updateTabs();predict();
+ });
+ hideCard?.addEventListener('click',()=>{
+  if(!active||!directionApi)return;
+  const hiddenId=active.feedId;
+  if(!commitOraclePreference('hide',hiddenId)){updateTabs();predict();return;}
+  returnActive();const next=eligible()[0];if(next)show(next,false);
+  else{now.textContent='All cards in this category hidden or unavailable';
+    status.textContent='Change the category or restore hidden cards in your For You settings.';}
+  updateTabs();predict();
+  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
+ });
+ saveCategory?.addEventListener('click',()=>{
+  if(!directionApi||!departmentApi?.INTEREST_DEPARTMENTS.some(d=>d.id===selectedDepartment))return;
+  if(!commitOraclePreference('interest',selectedDepartment)){updateTabs();predict();return;}
+  updateTabs();
+  if(selectedTab==='for-you'&&!eligible().includes(active)){returnActive();const first=eligible()[0];if(first)show(first,false);}
+  predict();
+  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
+ });
+ void import('/quanta-context-placement.mjs?v=20261110-1').then(api=>{
+  departmentApi=api;updateTabs();if(active&&!eligible().includes(active))returnActive();
+  if(!active){const first=eligible()[0];if(first)show(first,false);}predict();
+ }).catch(()=>{status.textContent='Category selection is unavailable; your original cards remain accessible.';});
 function available(entry){
  if(!entry?.node?.isConnected)return false;
  if(entry.node.hidden)return false;
@@ -513,6 +588,7 @@ function show(entry,remember=true,automatic=false){
  const marker=document.createComment('Oracle card original location: '+entry.id);
  entry.node.parentNode.insertBefore(marker,entry.node);entry.marker=marker;
  presentOriginal(entry);primeCardImage(entry,true);stage.append(entry.node);active=entry;
+ agePolicy?.noteShown(entry);
  stage.dataset.switchboardId=entry.feedId;
  stage.dataset.switchboardTitle=entry.title;
  stage.dataset.switchboardCategory=entry.category;
@@ -547,13 +623,15 @@ function show(entry,remember=true,automatic=false){
   seenByTab[selectedTab].add(entry.feedId);
  }
  now.textContent=entry.title;updateTabs();predict();
- status.textContent=(storageError?storageError+' ':'')+'Live interactive card · '+entry.title+
+ status.textContent='Live interactive card · '+entry.title+
   '. '+(nonProfiling(entry)?'Private browsing: no view or interaction history recorded.':selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
     selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.')+
   ' · '+eligible().length+' ready cards in this direction.';
 }
 function advance(direction){
  viewerTouched=true;selectionVersion++;
+ // Leaving an adult card with Next is a visitor skip, not inferred consent.
+ if(direction>0&&active&&agePolicy?.isAdult(active)&&!agePolicy.read().browsingThisVisit){agePolicy.noteSkipped();}
  const list=eligible();
  if(!list.length){status.textContent=selectedTab==='following'?'Follow a card in Public first.':'The original interactive cards are still initializing.';return}
  if(direction<0){
@@ -616,8 +694,42 @@ window.addEventListener('quantaphi:select-source-card',event=>{
  if(!eligible().includes(entry)){selectedTab='public';updateTabs();}
  show(entry);
 });
-next.addEventListener('click',()=>advance(1));
-prev.addEventListener('click',()=>advance(-1));
+// Changing a tall live widget may cause Chromium scroll anchoring or proximity
+// snap to move the viewport. Keep the user's previous screen position instead.
+function moveCardWithoutViewportJump(direction){
+ const startY=window.scrollY;
+ advance(direction);
+ const revision=selectionVersion;
+ const restore=()=>{
+  if(revision!==selectionVersion||document.hidden||!host.isConnected)return;
+  if(Math.abs(window.scrollY-startY)>6)window.scrollTo({top:startY,left:window.scrollX,behavior:'instant'});
+ };
+ restore();
+ requestAnimationFrame(restore);
+ requestAnimationFrame(()=>requestAnimationFrame(restore));
+}
+next.addEventListener('click',()=>moveCardWithoutViewportJump(1));
+prev.addEventListener('click',()=>moveCardWithoutViewportJump(-1));
+// Swipe the original card surface only. Never intercept interactive controls,
+// nested editors, players or ordinary vertical scrolling on Android.
+let oracleGesture=null;
+stage.addEventListener('pointerdown',event=>{
+ if(event.pointerType==='mouse'||event.target.closest('button,a,input,textarea,select,video,audio,iframe,[contenteditable],[role="button"],[data-no-swipe]'))return;
+ oracleGesture={id:event.pointerId,x:event.clientX,y:event.clientY};
+},{passive:true});
+stage.addEventListener('pointerup',event=>{
+ const g=oracleGesture;oracleGesture=null;
+ if(!g||event.pointerId!==g.id)return;
+ const dx=event.clientX-g.x,dy=event.clientY-g.y;
+ if(Math.abs(dx)<75||Math.abs(dx)<Math.abs(dy)*1.5)return;
+ moveCardWithoutViewportJump(dx<0?1:-1);
+},{passive:true});
+stage.addEventListener('pointercancel',()=>{oracleGesture=null});
+window.addEventListener('quantaphi:age-preference',event=>{
+ if(event.detail?.action==='browse')agePolicy?.acknowledgeBrowse();
+ if(event.detail?.action==='skip')agePolicy?.noteSkipped();
+ updateTabs();predict();
+});
 scroll.addEventListener('click',()=>{
  expanded=!expanded;
  document.body.classList.toggle('oracle-shelf-open',expanded);
@@ -652,6 +764,10 @@ document.body.classList.add('oracle-card-deck-active');
 // categories have no privileged opening positions.
 function chooseOpening(){
  const ready=eligible();if(!ready.length)return null;
+ // Feature the original Fred player in the first Public carousel slot only.
+ // Explicit deep links (start()), visitor-hidden cards and chosen views still win.
+ const fred=ready.find(entry=>entry.id==='fredSpacesRadio');
+ if(selectedTab==='public'&&selectedDepartment==='all'&&fred)return fred;
  // Each visit starts with another family; 116 accepted brands no longer monopolize
  // the starting slot. Preserve direct-link spotlight selection in start().
  if(openingCursor===null){

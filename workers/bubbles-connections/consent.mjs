@@ -451,5 +451,7 @@ export class ConsentService {
 }
 export function publicConnection(record) {
   return {id:record.id, provider:record.provider, label:record.label, status:record.status,
-    grantedActions:[...record.grantedActions], expiresAt:record.expiresAt};
+    grantedActions:[...record.grantedActions], expiresAt:record.expiresAt,
+    // Record modification is not a live provider probe or permission receipt.
+    updatedAt:Number.isFinite(record.updatedAt)?record.updatedAt:null};
 }

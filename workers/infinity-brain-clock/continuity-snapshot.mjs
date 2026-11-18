@@ -18,6 +18,9 @@ export function classifyContinuityJob(job,now=Date.now()){
  const progress=job?.progress&&typeof job.progress==='object'?job.progress:{};
  const blocker=summary(progress.blocker),runUrl=RUN.test(progress.runUrl||'')?progress.runUrl:null;
  const commitSha=SHA.test(progress.commitSha||'')?progress.commitSha:null;
+ const latestRunnerStep=runUrl&&Array.isArray(progress.runnerSteps)?
+  summary(progress.runnerSteps.findLast(step=>step?.runUrl===runUrl&&
+   (step.runAttempt||1)===(progress.runAttempt||1))?.label):'';
  const recorded=progress.testsPassed===true&&progress.browserPassed===true&&
   progress.deployedFilesMatched===true&&Boolean(runUrl&&commitSha);
  const approvalNeeded=REQUIRES_REVIEW.test(blocker+' '+summary(progress.summary));
@@ -30,11 +33,16 @@ export function classifyContinuityJob(job,now=Date.now()){
   phase='awaiting_deployment_proof';next='Verify merge, production deployment and acceptance behavior';
  }else if(status==='working'){
   const started=Date.parse(lastAttempt||'');
-  phase=Number.isFinite(started)&&now-started>20*60000?'stale_working':'working';
+  const deadline=progress.leaseExpiresAt;
+  const stale=runUrl&&Number.isSafeInteger(deadline)&&deadline>0?
+   deadline<=now:Number.isFinite(started)&&now-started>20*60000;
+  phase=stale?'stale_working':'working';
   next=phase==='stale_working'?'Reconcile active runner lease and latest receipt before retry':'Read runner progress and receipts';
  }else if(status==='blocked'){
   phase=approvalNeeded?'owner_decision_required':'blocked_recoverable';
-  next=approvalNeeded?'Respect existing owner/security authorization; show the exact blocker':'Inspect blocker and resume through existing signed runner';
+  next=approvalNeeded?'Resolve the existing owner or security decision':
+   blocker==='publication_reconciliation_required'?'Check the existing GitHub branch and pull request before retrying':
+   'Inspect blocker and resume through existing signed runner';
  }else if(status==='ready'||status==='queued'){
   phase='ready_to_dispatch';next='Use existing authenticated Brain runner';
  }else if(status==='failed'){
@@ -48,7 +56,7 @@ export function classifyContinuityJob(job,now=Date.now()){
  if(DONE.has(status)&&progress.deployedFilesMatched!==true)required.push('deployment_readback');
  if(DONE.has(status)&&!runUrl)required.push('workflow_run');
  if(DONE.has(status)&&!commitSha)required.push('commit');
- return {status,phase,next,blocker:blocker||null,approvalRequired:approvalNeeded,runUrl,
+ return {status,phase,next,blocker:blocker||null,approvalRequired:approvalNeeded,runUrl,latestRunnerStep,
   commitSha,lastAttempt,missingEvidence:required,deliveryEvidenceRecorded:DONE.has(status)&&recorded,
   verifiedDelivery:false}; // Projection of stored fields is not an independent verification.
 }
