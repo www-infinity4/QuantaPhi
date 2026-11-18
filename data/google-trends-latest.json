@@ -3,41 +3,181 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T09:31:30.159229Z",
+  "checked_at": "2026-11-18T10:01:27.271333Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "retirement",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T09:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/economy/article/havent-saved-enough-for-retirement-wealthy-people-havent-either-192922069.html",
+        "https://www.apollo.com/wealth/insights-news/insights/daily-spark/the-us-retirement-savings-crisis",
+        "https://financebuzz.com/americans-falling-behind-retirement-savings"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6sY_1OnWZBWkZMVZ6Y1hTYugXlvt_-5EOICMZ5VTbYaDIE96b_8TKc2CJPZQ",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/economy/article/havent-saved-enough-for-retirement-wealthy-people-havent-either-192922069.html",
+          "title": "Haven't saved enough for retirement? Wealthy people haven't either.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6sY_1OnWZBWkZMVZ6Y1hTYugXlvt_-5EOICMZ5VTbYaDIE96b_8TKc2CJPZQ"
+        },
+        {
+          "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/the-us-retirement-savings-crisis",
+          "title": "The US Retirement Savings Crisis",
+          "publisher": "Apollo Global Management",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKaXTR3dggG2Xb6BTqcfnGhG4JGof-A0AIe7rx7Jf9SD--kUx2CJHbzqQvLyQ"
+        },
+        {
+          "url": "https://financebuzz.com/americans-falling-behind-retirement-savings",
+          "title": "Goldman Sachs Just Released Alarming New Data About Americans' Retirement Plans",
+          "publisher": "FinanceBuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQI0Az3gYF5ZPGmdwUvpBW_2T4C7IV7e_d92JnrfQKk-uJ9NcznRhE92YmlqI0"
+        }
+      ]
+    },
+    {
+      "query": "coinbase",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T09:20:00Z",
+      "related_news_urls": [
+        "https://cryptonews.net/news/security/33770451/",
+        "https://www.coinbase.com/blog/consumer-protection-tuesday-how-we-leveraged-ai-to-stop-a-popular-tesla-scam",
+        "https://www.digitaltoday.co.kr/en/view/127572/coinbase-blocks-elon-musk-deepfake-crypto-scam-transfer"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyl4lax1iO7nx19IvPwBdT61qdFoaGfur-KXz-HI8D7QyVHaRpeeQuSZu8cZ8",
+      "image_credit": "Cryptonews.net",
+      "news": [
+        {
+          "url": "https://cryptonews.net/news/security/33770451/",
+          "title": "Million-Dollar Scam with Fake Elon Musk Broadcast: Coinbase Blocks $4.7 Million Transfer",
+          "publisher": "Cryptonews.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyl4lax1iO7nx19IvPwBdT61qdFoaGfur-KXz-HI8D7QyVHaRpeeQuSZu8cZ8"
+        },
+        {
+          "url": "https://www.coinbase.com/blog/consumer-protection-tuesday-how-we-leveraged-ai-to-stop-a-popular-tesla-scam",
+          "title": "Consumer Protection Tuesday: How we leveraged AI to stop a popular Tesla Scam",
+          "publisher": "Coinbase",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNWAFY0cvwxLLolB4iUD4-QmgmJpMaoPvsSeK2gzdXAni9V2uBmJnqB-gpY-U"
+        },
+        {
+          "url": "https://www.digitaltoday.co.kr/en/view/127572/coinbase-blocks-elon-musk-deepfake-crypto-scam-transfer",
+          "title": "\"Send crypto and get double\" - Elon Musk deepfake scam warning",
+          "publisher": "디지털투데이",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQalnIT3aHC4UCIYPhkeYbdW_cREGAwqXDG7p8weldIV56Q0W6mX95pSRi7UJ8"
+        }
+      ]
+    },
+    {
+      "query": "india",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T09:20:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/2026/11/18/india-uk-ties-outride-modis-decolonisation-rhetoric",
+        "https://www.wfmz.com/news/ap/ap-world/india-uk-royals/image_e95b3c36-5402-5b04-aaac-f7189b483226.html",
+        "https://www.prestigeonline.com/in/people/most-memorable-british-royal-family-member-india-trips/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPwFq-FV57Wx8p3-520O3Do8G09rUymb9E2YROeECdE_OhFN2wm-3zxwBtstk",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/18/india-uk-ties-outride-modis-decolonisation-rhetoric",
+          "title": "India-UK ties outride Modi’s ‘decolonisation’ rhetoric",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPwFq-FV57Wx8p3-520O3Do8G09rUymb9E2YROeECdE_OhFN2wm-3zxwBtstk"
+        },
+        {
+          "url": "https://www.wfmz.com/news/ap/ap-world/india-uk-royals/image_e95b3c36-5402-5b04-aaac-f7189b483226.html",
+          "title": "India UK Royals",
+          "publisher": "WFMZ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8lnAJKBFbGlY3NhL1-YDzYf7Po_Bm3LVeluG6aXy92Anpa8KUsGlxiPAphJQ"
+        },
+        {
+          "url": "https://www.prestigeonline.com/in/people/most-memorable-british-royal-family-member-india-trips/",
+          "title": "A look at the British Royal Family’s most memorable visits to India",
+          "publisher": "Prestige Online - Singapore",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL0ArDbU0MmDkUIkohBAYu_FV4OBaRBZdzLEUhlaxx0clfKY-aHEGiB2iXvlE"
+        }
+      ]
+    },
+    {
+      "query": "nice",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T09:10:00Z",
+      "related_news_urls": [
+        "https://www.petitesaffiches.fr/actualites,069/economie,045/ibt-de-retour-a-nice-pour-sa-4e,47730.html",
+        "https://tribuca.net/lindustrie-souffre-et-les-sous-traitants-sont-les-premiers-penalises/",
+        "https://www.lessentiel.fr/nice/entreprises/2026-11-17/un-salon-pour-booster-la-dynamique-economique-du-territoire-32123"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbnBwBC9uTdDafTn20VD2meguzNC7VjQAQqQFzXNcOQi0BNeVjP6lcfM3-ms",
+      "image_credit": "Petites Affiches",
+      "news": [
+        {
+          "url": "https://www.petitesaffiches.fr/actualites,069/economie,045/ibt-de-retour-a-nice-pour-sa-4e,47730.html",
+          "title": "Economie - IBT de retour à Nice pour sa 4e édition",
+          "publisher": "Petites Affiches",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbnBwBC9uTdDafTn20VD2meguzNC7VjQAQqQFzXNcOQi0BNeVjP6lcfM3-ms"
+        },
+        {
+          "url": "https://tribuca.net/lindustrie-souffre-et-les-sous-traitants-sont-les-premiers-penalises/",
+          "title": "\"L'industrie souffre, et les sous-traitants sont les premiers pénalisés\"",
+          "publisher": "Tribuca.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9cKtSI3DtR5aPKsMbMtB-Ch32hpDqZSKPjhH6CbFMjvngPGvVCJTG2xPulpc"
+        },
+        {
+          "url": "https://www.lessentiel.fr/nice/entreprises/2026-11-17/un-salon-pour-booster-la-dynamique-economique-du-territoire-32123",
+          "title": "Un salon pour booster la dynamique économique du territoire",
+          "publisher": "l'Essentiel media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK-llBo8P6G-CR48rOg-hnyn49aGzSbp1WkekcC0BtQ7yJlXV00LydXxAJm1Y"
+        }
+      ]
+    },
     {
       "query": "los angeles",
       "approx_searches": "100+",
       "published_at": "2026-11-18T09:10:00Z",
       "related_news_urls": [
-        "https://abc7.com/post/nithya-raman-promised-big-changes-los-angeles-heres-how-mayor-elect-says-shell-do/20049415/",
-        "https://www.latimes.com/california/story/2026-11-10/latino-political-establishment-karen-bass",
-        "https://www.thecentersquare.com/california/article_26546e2d-43ff-493b-9bd1-5fbe4a06c365.html"
+        "https://ktla.com/news/california/worlds-largest-wildlife-crossing-just-a-beginning/",
+        "https://www.earth.com/animals/mountain-lions-like-p-22-are-set-to-get-a-bridge-over-10-lanes-of-the-101-freeway-near-los-angeles-on-dec-2/",
+        "https://www.yahoo.com/news/us/articles/bridge-isnt-cars-saving-lives-201500448.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjCegjZNFgF2huOucMa1IObji3MeD9jhgMP7x82fHRDaTvtaXDDkYh_0556SQ",
-      "image_credit": "ABC7 Los Angeles",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ407_H_CAH8QMOpc2eU7E1hKbyow_wb5pQ74-WjM0YsMqw8ZWgjImVkivI8U",
+      "image_credit": "KTLA",
       "news": [
         {
-          "url": "https://abc7.com/post/nithya-raman-promised-big-changes-los-angeles-heres-how-mayor-elect-says-shell-do/20049415/",
-          "title": "Nithya Raman promised big changes to Los Angeles. Here's how the mayor-elect says she'll do it",
-          "publisher": "ABC7 Los Angeles",
+          "url": "https://ktla.com/news/california/worlds-largest-wildlife-crossing-just-a-beginning/",
+          "title": "World’s largest wildlife crossing just ‘a beginning’",
+          "publisher": "KTLA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjCegjZNFgF2huOucMa1IObji3MeD9jhgMP7x82fHRDaTvtaXDDkYh_0556SQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ407_H_CAH8QMOpc2eU7E1hKbyow_wb5pQ74-WjM0YsMqw8ZWgjImVkivI8U"
         },
         {
-          "url": "https://www.latimes.com/california/story/2026-11-10/latino-political-establishment-karen-bass",
-          "title": "Commentary: Raman's victory was a resounding rebuke to L.A.'s Latino political establishment",
-          "publisher": "Los Angeles Times",
+          "url": "https://www.earth.com/animals/mountain-lions-like-p-22-are-set-to-get-a-bridge-over-10-lanes-of-the-101-freeway-near-los-angeles-on-dec-2/",
+          "title": "Mountain lions and other animals are set to get their own massive land bridge that crosses over 10 lanes of the 101 Freeway near Los Angeles",
+          "publisher": "Earth.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxpXHWlivugAixogmLnQDmRvbSPRpUIta54jOIGIxwRaWb_YeJ4UcCAHVFUI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJ8hHitnHEEhrZiHuWWq5WU106jyPV6DZwwFI6IObNJ8bTT-neNH0MojI6KmQ"
         },
         {
-          "url": "https://www.thecentersquare.com/california/article_26546e2d-43ff-493b-9bd1-5fbe4a06c365.html",
-          "title": "Mayor-elect Raman faces scrutiny from the left and the right",
-          "publisher": "The Center Square",
+          "url": "https://www.yahoo.com/news/us/articles/bridge-isnt-cars-saving-lives-201500448.html",
+          "title": "This Bridge Isn't For Cars, But It's Saving The Lives Of Drivers & Wildlife Alike",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSru3wSvLdX9KzSWgkVviXyrMnINhj1mFT-De2UeitGHmtk9sLNfz2eM93SIy8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkrEi3xz8nrN3GGe48OkHCAhgNS-d5GHaLBuulYeEbraEaoI5k8xwrfufewFs"
         }
       ]
     },
@@ -46,19 +186,19 @@
       "approx_searches": "200+",
       "published_at": "2026-11-18T09:00:00Z",
       "related_news_urls": [
-        "https://m.sohu.com/a/1103250737_121157270?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "https://tech.ifeng.com/c/8y9idubOyvZ",
         "https://www.stheadline.com/zh-hans/stock-market/3638551/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E6%94%B6%E5%85%A52073%E4%BA%BF%E9%80%8A%E9%A2%84%E6%9C%9F-%E7%BB%8F%E8%B0%83%E6%95%B4%E5%88%A9%E6%B6%A6%E8%B7%8C6-%E7%8E%B0%E9%87%91%E6%B5%81%E8%B4%9F%E6%95%B0%E6%89%A9%E8%87%B3691%E4%BA%BF",
         "https://longbridge.com/zh-CN/lives/354028"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNSdRdXFjPw3pTIWQUUHLjJaTTCQ2-ystGfI6aD_u4tTI-b31ZTzadydUyitY",
-      "image_credit": "Sohu",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3j9PWFzM_58_D8sOS8gHepgCTR30UVK1zakCvgtx6799mXwsGWlGt3mUaGgQ",
+      "image_credit": "凤凰网科技",
       "news": [
         {
-          "url": "https://m.sohu.com/a/1103250737_121157270?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "title": "腾讯控股Q3营收2073.4亿元，Hy4已达中国顶尖大模型水平",
-          "publisher": "Sohu",
+          "url": "https://tech.ifeng.com/c/8y9idubOyvZ",
+          "title": "腾讯控股2026财年前三季度归母净利润1777.27亿元，同比增长7%",
+          "publisher": "凤凰网科技",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNSdRdXFjPw3pTIWQUUHLjJaTTCQ2-ystGfI6aD_u4tTI-b31ZTzadydUyitY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3j9PWFzM_58_D8sOS8gHepgCTR30UVK1zakCvgtx6799mXwsGWlGt3mUaGgQ"
         },
         {
           "url": "https://www.stheadline.com/zh-hans/stock-market/3638551/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E6%94%B6%E5%85%A52073%E4%BA%BF%E9%80%8A%E9%A2%84%E6%9C%9F-%E7%BB%8F%E8%B0%83%E6%95%B4%E5%88%A9%E6%B6%A6%E8%B7%8C6-%E7%8E%B0%E9%87%91%E6%B5%81%E8%B4%9F%E6%95%B0%E6%89%A9%E8%87%B3691%E4%BA%BF",
@@ -73,6 +213,41 @@
           "publisher": "Longbridge",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLyBHpBgUU7lG8d-36z2UC5tM0b5ztt-88sqxNvF0SQtz6Gzo7i7f1u0hA1UU"
+        }
+      ]
+    },
+    {
+      "query": "truck accident lawyer",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T09:00:00Z",
+      "related_news_urls": [
+        "https://natlawreview.com/press-releases/best-personal-injury-lawyer-los-angeles-agemian-law-group-ranked-1-2026",
+        "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-sacramento/",
+        "https://www.clarionledger.com/press-release/story/225215/agemian-law-group-named-the-top-personal-injury-law-firm-in-los-angeles-for-2026/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH82cS4qlqW-uGctzod-Uwfu7YzmUMavPRHwWlkktyQq2ZFlHzrWEB_Ls_xO8",
+      "image_credit": "The National Law Review",
+      "news": [
+        {
+          "url": "https://natlawreview.com/press-releases/best-personal-injury-lawyer-los-angeles-agemian-law-group-ranked-1-2026",
+          "title": "Best Personal Injury Lawyer in Los Angeles: Agemian Law Group Ranked #1 for 2026",
+          "publisher": "The National Law Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH82cS4qlqW-uGctzod-Uwfu7YzmUMavPRHwWlkktyQq2ZFlHzrWEB_Ls_xO8"
+        },
+        {
+          "url": "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-sacramento/",
+          "title": "Best Car Accident Lawyers in Sacramento for 2026",
+          "publisher": "Lawyer Monthly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSfLJzvRCxCpu-QnHJ6vdWg-8Y44pK84RiBLn8-x6PQ3uA5jnAPc1mMTFyCB8"
+        },
+        {
+          "url": "https://www.clarionledger.com/press-release/story/225215/agemian-law-group-named-the-top-personal-injury-law-firm-in-los-angeles-for-2026/",
+          "title": "Agemian Law Group Named the Top Personal Injury Law Firm in Los Angeles for 2026",
+          "publisher": "The Clarion-Ledger",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR39ZNjVDth91UnYPdozNo04ypwV4Q_NORozz-pZ814VwIdep5te0z7uMhBzvE"
         }
       ]
     },
@@ -113,36 +288,36 @@
     },
     {
       "query": "ban vs sa",
-      "approx_searches": "200+",
+      "approx_searches": "100+",
       "published_at": "2026-11-18T08:50:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/story/sa-vs-ban-ryan-rickelton-lays-out-south-africa-s-plan-bat-long-get-a-lead-put-ball-in-their-court-1563004",
-        "https://www.cricbuzz.com/cricket-news/140950/riders-of-the-storm-will-control-wanderers-test-cricbuzzcom",
-        "https://sports.ndtv.com/cricket/south-africa-vs-bangladesh-live-score-1st-test-day-2-live-updates-sa-vs-ban-live-streaming-12332265"
+        "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
+        "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/ball-by-ball-commentary",
+        "https://www.couriernews.com/sports/south-africa-bangladesh-cricket/image_89784b59-90a4-513e-8715-93c445d88cb5.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQznPEfYUxyb0jH8RbTxuP3F_8yQejNOnTa9Euu3La06G-mp5zqDjxTkHEOlE",
-      "image_credit": "Cricinfo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdSFWqVg6Bqs2dzxRniFHDL_zltcxE7Kju2ZJg9ZuIwmSsv42BepiusNoQP0",
+      "image_credit": "Cricbuzz",
       "news": [
         {
-          "url": "https://www.cricinfo.com/story/sa-vs-ban-ryan-rickelton-lays-out-south-africa-s-plan-bat-long-get-a-lead-put-ball-in-their-court-1563004",
-          "title": "Rickelton lays out South Africa's plan: 'Bat long, get a lead, put ball in their court'",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQznPEfYUxyb0jH8RbTxuP3F_8yQejNOnTa9Euu3La06G-mp5zqDjxTkHEOlE"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140950/riders-of-the-storm-will-control-wanderers-test-cricbuzzcom",
-          "title": "Riders of the storm will control Wanderers Test",
+          "url": "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
+          "title": "RSA vs BAN, 1st Test, Bangladesh tour of South Africa, 2026 - Live Stream",
           "publisher": "Cricbuzz",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrNC5Stse8wtO_ZdIGVZK6L5A5UaEHlteQeMuhxuwLYAxPdifflUuCIO8yrhk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdSFWqVg6Bqs2dzxRniFHDL_zltcxE7Kju2ZJg9ZuIwmSsv42BepiusNoQP0"
         },
         {
-          "url": "https://sports.ndtv.com/cricket/south-africa-vs-bangladesh-live-score-1st-test-day-2-live-updates-sa-vs-ban-live-streaming-12332265",
-          "title": "South Africa vs Bangladesh 1st Test Day 2 Highlights",
-          "publisher": "NDTV Sports",
+          "url": "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - SA vs BAN, 1st Test",
+          "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdD8vDEXNLUGMvkbhrXt2hQI6ZQ8F_TBQdFATRUs2xhAbqTTBJ8sxE1OxUe7A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyfFrQpuRMUUEOAzDcjCVOpNDJLpMpxd7Jl71Wx_Ds73SjIF2eGtIm33ch-uE"
+        },
+        {
+          "url": "https://www.couriernews.com/sports/south-africa-bangladesh-cricket/image_89784b59-90a4-513e-8715-93c445d88cb5.html",
+          "title": "South Africa Bangladesh Cricket",
+          "publisher": "couriernews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNK0FTMvTB3py70yEsMj8IBh-Yw6rUcOHrA5dZxQoCSQNGt5oWwfIMu9paQRc"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "Reuters",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqs3dDx4iqq-l-UA4wmyFSkfwXpfcZz9XpnuWJHCE4By3HjDpSQSj9d9fCzLo"
-        }
-      ]
-    },
-    {
-      "query": "glastonbury",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T08:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/crwy4w381nlpo",
-        "https://www.glastonburyfestivals.co.uk/news/glastonbury-2027-line-up-so-far/",
-        "https://www.theguardian.com/music/2026/nov/18/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgDxGwHzS8JZ8zbFf1Qnz3YiRokhffHUeD-UZcX-KjBuQK4OUNaYjvvwh0Z4c",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/crwy4w381nlpo",
-          "title": "Harry Styles, Sam Fender and Billie Eilish to headline Glastonbury 2027",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgDxGwHzS8JZ8zbFf1Qnz3YiRokhffHUeD-UZcX-KjBuQK4OUNaYjvvwh0Z4c"
-        },
-        {
-          "url": "https://www.glastonburyfestivals.co.uk/news/glastonbury-2027-line-up-so-far/",
-          "title": "Glastonbury 2027 line-up so far",
-          "publisher": "Glastonbury Festivals",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTHfBzqh4o-FTGBJxCmsrex96Zdt7DMfA3r-hjfp9J-41c1zb2-8FDU2MxrkY"
-        },
-        {
-          "url": "https://www.theguardian.com/music/2026/nov/18/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century",
-          "title": "Sam Fender, Harry Styles and Billie Eilish to be youngest Glastonbury headliners of 21st century",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_GWPzqhN9ipl6CcFnI5Zp-fxygwkhbLyRoAElLb4WAI-fVExHTSQD1EcwvxQ"
-        }
-      ]
-    },
-    {
-      "query": "john madden",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T08:30:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/",
-        "https://www.yahoo.com/entertainment/movies/articles/meet-cast-madden-movie-amazon-090001874.html",
-        "https://www.forbes.com/sites/timlammers/2026/11/17/madden-rotten-tomatoes-reviews-sack-nicolas-cages-john-madden-biopic/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrcWfjrKpYCgQnUzWnEILQ5gYBrdD5Pm52ZkYWSY-hyMzX1ASDpYmu3uSA2jI",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/",
-          "title": "'Madden' Review: Nicolas Cage and Christian Bale in Football Biopic",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrcWfjrKpYCgQnUzWnEILQ5gYBrdD5Pm52ZkYWSY-hyMzX1ASDpYmu3uSA2jI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/meet-cast-madden-movie-amazon-090001874.html",
-          "title": "Meet the cast of ‘Madden’ movie on Amazon, from Nicolas Cage to Shane Gillis",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5PUMfqpcmBo_swW5LwjUzAYOCSK6LhBXqX4_kz98dI_wgp7HOYh7YtvP67aQ"
-        },
-        {
-          "url": "https://www.forbes.com/sites/timlammers/2026/11/17/madden-rotten-tomatoes-reviews-sack-nicolas-cages-john-madden-biopic/",
-          "title": "‘Madden’ Rotten Tomatoes Critics Sack Nicolas Cage’s John Madden Biopic",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaRo-Suhz2uWVfL-wraJgBiNbhKdDzfzeAeA25Nt_wgT1jafq_GpXzyhKtgQU"
-        }
-      ]
-    },
-    {
-      "query": "bangladesh vs south africa",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T08:30:00Z",
-      "related_news_urls": [
-        "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
-        "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/ball-by-ball-commentary",
-        "https://www.couriernews.com/sports/south-africa-bangladesh-cricket/image_89784b59-90a4-513e-8715-93c445d88cb5.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdSFWqVg6Bqs2dzxRniFHDL_zltcxE7Kju2ZJg9ZuIwmSsv42BepiusNoQP0",
-      "image_credit": "Cricbuzz",
-      "news": [
-        {
-          "url": "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
-          "title": "RSA vs BAN, 1st Test, Bangladesh tour of South Africa, 2026 - Live Stream",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdSFWqVg6Bqs2dzxRniFHDL_zltcxE7Kju2ZJg9ZuIwmSsv42BepiusNoQP0"
-        },
-        {
-          "url": "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - SA vs BAN, 1st Test",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyfFrQpuRMUUEOAzDcjCVOpNDJLpMpxd7Jl71Wx_Ds73SjIF2eGtIm33ch-uE"
-        },
-        {
-          "url": "https://www.couriernews.com/sports/south-africa-bangladesh-cricket/image_89784b59-90a4-513e-8715-93c445d88cb5.html",
-          "title": "South Africa Bangladesh Cricket",
-          "publisher": "couriernews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNK0FTMvTB3py70yEsMj8IBh-Yw6rUcOHrA5dZxQoCSQNGt5oWwfIMu9paQRc"
-        }
-      ]
-    },
-    {
-      "query": "david montgomery",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T08:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/texans-estimate-david-montgomery-as-a-full-participant-but-woody-marks-doesnt-practice",
-        "https://sports.yahoo.com/articles/texans-david-montgomery-gives-encouraging-003121054.html",
-        "https://www.fantasypros.com/nfl/news/620779/david-montgomery-groin-trending-right-direction.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS88c98jyPsC3vETYRMkDEfjXNkP90BOxnhOLFjM-snHMuJfFRkuCM9trckCxw",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/texans-estimate-david-montgomery-as-a-full-participant-but-woody-marks-doesnt-practice",
-          "title": "Texans estimate David Montgomery as a full participant, but Woody Marks doesn’t practice",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS88c98jyPsC3vETYRMkDEfjXNkP90BOxnhOLFjM-snHMuJfFRkuCM9trckCxw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/texans-david-montgomery-gives-encouraging-003121054.html",
-          "title": "Texans’ David Montgomery gives encouraging injury update for Colts game on TNF",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2sXdFq4GQmLgiNUsku_nV_aF91qOS7MM_uUnkCt33oH5H__782B8hNnEdkrM"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/news/620779/david-montgomery-groin-trending-right-direction.php",
-          "title": "David Montgomery (groin) trending in right direction",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBIufvG-COPJhesRm7MAP6MZWeSeD2pK8ieoDLkYDt4OyAGKLOOvDotML2zVA"
-        }
-      ]
-    },
-    {
-      "query": "week 11 defense rankings",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T08:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50506789/nfl-fantasy-football-rankings-2026-dst-defense",
-        "https://sports.yahoo.com/fantasy/article/week-11-fantasy-football-dst-rankings-top-defenses-from-justin-boone-181246198.html",
-        "https://www.nbcsports.com/fantasy/football/news/2026-fantasy-football-week-11-defense-dst-rankings-and-streamers"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRS6iDH1VsqyHFWYukoUZMraDhBvT4Zz82a5VhaX90CNO2xUv80kicufIWxkI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50506789/nfl-fantasy-football-rankings-2026-dst-defense",
-          "title": "Fantasy football rankings for Week 11: D/ST",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRS6iDH1VsqyHFWYukoUZMraDhBvT4Zz82a5VhaX90CNO2xUv80kicufIWxkI"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/article/week-11-fantasy-football-dst-rankings-top-defenses-from-justin-boone-181246198.html",
-          "title": "Week 11 Fantasy Football D/ST Rankings: Top defenses from Justin Boone",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCsLOpxdz9HSRMD3lK0GKPTB3Iz9IkRrIr3XMGklhlWOLW9VnEc-DEaynqZiQ"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/news/2026-fantasy-football-week-11-defense-dst-rankings-and-streamers",
-          "title": "2026 Fantasy Football Week 11 Defense (DST) Rankings and Streamers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhxKGn2y9B_oNmqdaR_sbYRnm4iPXDmT15VgWLqf83jFBRK0SP2Mv1PEuyjrI"
         }
       ]
     }
