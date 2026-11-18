@@ -3,47 +3,187 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T13:31:19.099702Z",
+  "checked_at": "2026-11-18T14:01:25.395189Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "glenn close",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T13:00:00Z",
+      "query": "carlos alcaraz",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T13:30:00Z",
       "related_news_urls": [
-        "https://www.elle.com/culture/celebrities/a74427141/zendaya-photos-governors-awards-2026/",
-        "https://www.theguardian.com/film/2026/nov/16/governers-awards-honorary-oscars",
-        "https://people.com/ridley-scott-dedicates-his-first-oscar-to-late-brother-tony-scott-12258267"
+        "https://as.com/meristation/libros/sergio-ramos-y-carlos-alcaraz-entran-en-el-guinness-de-los-records-con-dos-marcas-para-la-historia-f202611-n/",
+        "https://www.eurosport.es/tenis/atp-finals-1/2026/carlos-alcaraz-entrenamiento-promesa-tenis-mundial-brasileni-guto-miguel-quien-es-hoy_sto23356170/story.shtml",
+        "https://www.laopiniondemalaga.es/deportes/2026/11/18/atp-finals-directo-carlos-alcaraz-136575776.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQJ-wHw1YoFr7vQr-6-3PkermWvdwCRcNhU_VCYjuV0hN0ZTZLk3syXNz9PUU",
-      "image_credit": "ELLE",
+      "image_url": null,
+      "image_credit": "Diario AS",
       "news": [
         {
-          "url": "https://www.elle.com/culture/celebrities/a74427141/zendaya-photos-governors-awards-2026/",
-          "title": "Zendaya Channels ‘Dune’ in a Glittering Sculptural Gown at the 2026 Governors Awards",
-          "publisher": "ELLE",
+          "url": "https://as.com/meristation/libros/sergio-ramos-y-carlos-alcaraz-entran-en-el-guinness-de-los-records-con-dos-marcas-para-la-historia-f202611-n/",
+          "title": "Sergio Ramos y Carlos Alcaraz entran en el Guinness de los Récords con dos marcas para la historia",
+          "publisher": "Diario AS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQJ-wHw1YoFr7vQr-6-3PkermWvdwCRcNhU_VCYjuV0hN0ZTZLk3syXNz9PUU"
+          "image_url": null
         },
         {
-          "url": "https://www.theguardian.com/film/2026/nov/16/governers-awards-honorary-oscars",
-          "title": "Glenn Close cries! John Malkovich weeps! But it’s Nathan Fielder everyone wants to talk to at the honorary Oscars",
-          "publisher": "The Guardian",
+          "url": "https://www.eurosport.es/tenis/atp-finals-1/2026/carlos-alcaraz-entrenamiento-promesa-tenis-mundial-brasileni-guto-miguel-quien-es-hoy_sto23356170/story.shtml",
+          "title": "Alcaraz pule a la próxima gran promesa del tenis mundial: ¿Quién es Guto Miguel?",
+          "publisher": "Eurosport",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMYSzor6gCCNOx1avJIlqLhno_klyuwdisl0ngcN0TQTMi0FN2droCQ7JE1Dc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE63UjLGMXH-HObT6koooibYDEqaz49HOh7K1quQY9AHghEaVfupsjOsskL1s"
         },
         {
-          "url": "https://people.com/ridley-scott-dedicates-his-first-oscar-to-late-brother-tony-scott-12258267",
-          "title": "Ridley Scott Dedicates His First Oscar to Late Brother, Top Gun Director Tony Scott, in Emotional Speech",
-          "publisher": "People.com",
+          "url": "https://www.laopiniondemalaga.es/deportes/2026/11/18/atp-finals-directo-carlos-alcaraz-136575776.html",
+          "title": "ATP Finals, en directo: Carlos Alcaraz - Daniil Medvedev",
+          "publisher": "La Opinión de Málaga",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXKLOaqwXnJgSsKwJPBcVUyHk6yS6tj0WOGTxdliu-kTRc5LnRCEKoT6GJTw8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPYjvgv6nbkzWIzdr4-tJgbcnNybE8v2fCSbqZJiJb5U2Sn4xih_o_T35bKBg"
+        }
+      ]
+    },
+    {
+      "query": "emma grede",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T13:30:00Z",
+      "related_news_urls": [
+        "https://www.jesus.cam.ac.uk/articles/careers-luxury-and-art-building-brand",
+        "https://wwd.com/footwear-news/shoe-trends/amina-muaddi-emma-grede-podcast-shoe-brand-1239421323/",
+        "https://www.businesstoday.in/jobs/story/bt-big-story-behind-the-glamour-how-to-build-a-career-in-luxury-566569-2026-11-10"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLLYk8v3xS_bpbucBSmjS6QmdOKJXb8WEe4GCr3V0i5-4Zpv--3VkCKUGHL2M",
+      "image_credit": "Jesus College, Cambridge",
+      "news": [
+        {
+          "url": "https://www.jesus.cam.ac.uk/articles/careers-luxury-and-art-building-brand",
+          "title": "Careers in luxury and the art of building a brand",
+          "publisher": "Jesus College, Cambridge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLLYk8v3xS_bpbucBSmjS6QmdOKJXb8WEe4GCr3V0i5-4Zpv--3VkCKUGHL2M"
+        },
+        {
+          "url": "https://wwd.com/footwear-news/shoe-trends/amina-muaddi-emma-grede-podcast-shoe-brand-1239421323/",
+          "title": "Amina Muaddi Talks to Emma Grede About Her Label, Being Her Own Boss",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYfPHp4Gaj8hulkw6iDz1Zs_Pwk8DDE-qeC3vJnLQTaTZ7GHKwJPEJw0A56I"
+        },
+        {
+          "url": "https://www.businesstoday.in/jobs/story/bt-big-story-behind-the-glamour-how-to-build-a-career-in-luxury-566569-2026-11-10",
+          "title": "BT BIG STORY | Behind the glamour: How to build a career in luxury",
+          "publisher": "Business Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxrd4iTFbWnBxrG4FAiBeqACnRDYDMcm3oP5r7ueVT4W-9oOwtzDVKQ2zXoSM"
+        }
+      ]
+    },
+    {
+      "query": "glenn close",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T13:00:00Z",
+      "related_news_urls": [
+        "https://www.huffpost.com/entry/glenn-close-cult-honorary-oscar-speech_n_6afb7ea2e4b04eba4d469d66",
+        "https://www.thedailybeast.com/glenn-close-shares-dark-details-of-childhood-in-restrictive-cult",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/glenn-close-opens-painful-cult-195631686.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSDVybm-2x9ADbP130xwxTZLenLmaBDgD6tR8toZNhxdZXEzfmP04KwFMBG_8",
+      "image_credit": "HuffPost",
+      "news": [
+        {
+          "url": "https://www.huffpost.com/entry/glenn-close-cult-honorary-oscar-speech_n_6afb7ea2e4b04eba4d469d66",
+          "title": "Glenn Close Recalls Growing Up In A ‘Restrictive Cult’ During Emotional Honorary Oscar Speech",
+          "publisher": "HuffPost",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSDVybm-2x9ADbP130xwxTZLenLmaBDgD6tR8toZNhxdZXEzfmP04KwFMBG_8"
+        },
+        {
+          "url": "https://www.thedailybeast.com/glenn-close-shares-dark-details-of-childhood-in-restrictive-cult",
+          "title": "Legendary Actress Shares Dark Secrets of ‘Restrictive Cult’",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0FxTNBspw6LCNIc2ls9iYoCRKsDuYkBRaAL18pO2JyHwVaVYotr1L7h1S-vs"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/glenn-close-opens-painful-cult-195631686.html",
+          "title": "Glenn Close Opens Up About Painful Cult Upbringing: ‘I Was Always on the Outside Looking In’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx7ABTCDv4d8sKsqk_B4mWF56BkVpYDK_N-k3ILc5DZaQriczHycRFTZ-q2K8"
+        }
+      ]
+    },
+    {
+      "query": "anthropic ipo",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T13:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html",
+        "https://www.cnbc.com/video/2026/11/18/anthropic-set-to-price-ipo-today-heres-what-to-expect.html",
+        "https://finance.yahoo.com/markets/stocks/article/theres-no-difference-between-buying-anthropics-ipo-and-amazons-ipo-kevin-oleary-190707549.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmBuq8M7_uCVnoA86HkHJlPg2clRAHtUUQHk_V6m0su8D8SFgORgH0EegGEI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html",
+          "title": "Opinion | The Anthropic I.P.O. Will Change the Future of A.I.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmBuq8M7_uCVnoA86HkHJlPg2clRAHtUUQHk_V6m0su8D8SFgORgH0EegGEI"
+        },
+        {
+          "url": "https://www.cnbc.com/video/2026/11/18/anthropic-set-to-price-ipo-today-heres-what-to-expect.html",
+          "title": "Anthropic set to price IPO today: Here's what to expect",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROmaUqcmXx82zm7oVW-54DfaGMM3nwfdU2TiqlrqxWIy4RYr5ytVTwy6Tye8o"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/article/theres-no-difference-between-buying-anthropics-ipo-and-amazons-ipo-kevin-oleary-190707549.html",
+          "title": "There's 'no difference' between buying Anthropic's IPO and Amazon's IPO: Kevin O'Leary",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHw_TDRCIYSPsCYGUcfDV2D_KC0UxnKyP9slhDP5Ir-TOHw-inqUg0yODY6GM"
+        }
+      ]
+    },
+    {
+      "query": "flood warning",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T12:50:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
+        "https://www.wesh.com/article/central-florida-flood-watch-heavy-rain-orlando-weather/74463066",
+        "https://weather.com/2026/11/18/news/weather/florida-flood-forecast-dry-season"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
+          "title": "Severe flooding hits parts of coastal Florida from over a foot of rain … and a lot more is incoming",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8"
+        },
+        {
+          "url": "https://www.wesh.com/article/central-florida-flood-watch-heavy-rain-orlando-weather/74463066",
+          "title": "Flood threat grows across Central Florida as additional inches of rain move in",
+          "publisher": "WESH",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyFjs49oi_7_kp4blYzqr8g-1Xk1TDaLrRTx_5118IexCw0yiFKisyf1OG1VQ"
+        },
+        {
+          "url": "https://weather.com/2026/11/18/news/weather/florida-flood-forecast-dry-season",
+          "title": "Why parts of Florida are flooding during the dry season",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xYUBxdnCnl2ZeAJ8Om0QkQCxhsqARSzi04cX_jbe_oVR6BQtnhnDWE2rQyw"
         }
       ]
     },
     {
       "query": "toxic hall of shame",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-18T12:50:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/18/health/2026-toxic-hall-of-shame-wellness",
@@ -104,7 +244,7 @@
         },
         {
           "url": "https://mashable.com/life/gta-6-every-artist-track",
-          "title": "The full 'GTA 6' soundtrack reportedly leaked: See every artist and track",
+          "title": "The full 'GTA 6' soundtrack reportedly leaked: See all artists and tracks",
           "publisher": "Mashable",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQP58gHEK1UeRdmsoviDSGcLLq3gMZ-4n1gnTk2i-xOM4IhJd2eIYZNT48n5zA"
@@ -112,8 +252,43 @@
       ]
     },
     {
+      "query": "can you play gta 6 right now",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T12:40:00Z",
+      "related_news_urls": [
+        "https://mashable.com/entertainment/gta-6-xbox-series-s-how-it-runs",
+        "https://www.purexbox.com/features/10-features-that-surprised-me-while-playing-gta-6-on-xbox-series-x",
+        "https://metro.co.uk/2026/11/17/games-inbox-will-gta-6-tech-problems-launch-29797346/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgoZt7yJfg9CSyo1WrsCt0IuaYgzNKHCaFcn06ugoLbTEGPaWKCKdlg5Cweig",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/entertainment/gta-6-xbox-series-s-how-it-runs",
+          "title": "'GTA 6' on Xbox Series S: How well it actually runs",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgoZt7yJfg9CSyo1WrsCt0IuaYgzNKHCaFcn06ugoLbTEGPaWKCKdlg5Cweig"
+        },
+        {
+          "url": "https://www.purexbox.com/features/10-features-that-surprised-me-while-playing-gta-6-on-xbox-series-x",
+          "title": "10 Features That Surprised Me While Playing GTA 6 On Xbox Series X",
+          "publisher": "Pure Xbox",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8Wnw5moeOIhDfL_L1W1qiRP-Gh9uHAYY7EmWbrXQDBvTN0eND_mffQpc17M"
+        },
+        {
+          "url": "https://metro.co.uk/2026/11/17/games-inbox-will-gta-6-tech-problems-launch-29797346/",
+          "title": "Games Inbox: Will GTA 6 have tech problems at launch?",
+          "publisher": "Metro.co.uk",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpcm8kixbtL1ylTU5su4j96SoKKl1sAqQid-wci2zOiWkeQVGEVa1Lfj93n9o"
+        }
+      ]
+    },
+    {
       "query": "carrie ann inaba dwts comfort",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-18T12:30:00Z",
       "related_news_urls": [
         "https://ew.com/carrie-ann-inaba-leaves-dwts-judges-table-to-comfort-contestant-12261819",
@@ -148,7 +323,7 @@
     },
     {
       "query": "jason eck",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-18T12:30:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/names-linked-fsus-coaching-job-225044091.html",
@@ -178,173 +353,6 @@
           "publisher": "Yardbarker",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPdnreTjxvml9oiQCj5zj2LZDz_8EQWOc1Li1h9LEGweRTO0TSccjCLUYfbQ"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 cheat codes",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T12:20:00Z",
-      "related_news_urls": [
-        "https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/",
-        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-cheat-codes",
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmE_QIibwLyjMC9arz2u-8-fzv7g9TMDnm6QzBoMnVd7Bc0MtftYq-Jd2Wdyc",
-      "image_credit": "Insider Gaming",
-      "news": [
-        {
-          "url": "https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/",
-          "title": "All GTA 6 Cheats—Best Grand Theft Auto 6 Cheat Codes",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmE_QIibwLyjMC9arz2u-8-fzv7g9TMDnm6QzBoMnVd7Bc0MtftYq-Jd2Wdyc"
-        },
-        {
-          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-cheat-codes",
-          "title": "Complete List of GTA 6 Cheats - Working GTA 6 Codes, Cheats and More.",
-          "publisher": "Mobalytics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSRuWCfGDDN2Y3u5y3zHPrDx_DC60UKe6hY5K0vlxNDjQfrncE4AJzQQyrtpU"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/",
-          "title": "Here's every cheat in GTA 6 to get infinite money, weapons, and vehicles",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyCG5rPi-FC3hYOaFhjui0jik7Yp-n5hLB-QfTXzTh_7nmR4Foqsu6LalIS9M"
-        }
-      ]
-    },
-    {
-      "query": "gta6 map",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T12:20:00Z",
-      "related_news_urls": [
-        "https://kotaku.com/gta-6s-map-contains-areas-that-could-be-used-in-the-future-says-rockstar-2000756338",
-        "https://futurefive.com.au/story/should-we-be-excited-about-the-size-of-grand-theft-auto-vi-s-world-map",
-        "https://www.cntraveller.com/article/gta-6-leonida-keys-florida-location-grand-theft-auto-vi"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjNgdF98lSTwJyJiRzK_jOpUU_Pm8OthZ5Bokf06NjtOvU7Ft6HT4QeVSHgQ",
-      "image_credit": "Kotaku",
-      "news": [
-        {
-          "url": "https://kotaku.com/gta-6s-map-contains-areas-that-could-be-used-in-the-future-says-rockstar-2000756338",
-          "title": "GTA 6′ s Map Contains Areas That Could Be Used In The ‘Future,’ Says Rockstar",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjNgdF98lSTwJyJiRzK_jOpUU_Pm8OthZ5Bokf06NjtOvU7Ft6HT4QeVSHgQ"
-        },
-        {
-          "url": "https://futurefive.com.au/story/should-we-be-excited-about-the-size-of-grand-theft-auto-vi-s-world-map",
-          "title": "Should we be excited about the size of Grand Theft Auto VI's world map?",
-          "publisher": "FutureFive Australia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzVMO8NKuRLXIJApv8u6JkSHDehRJuc0-rCNCzQKAaB--BlagmCQpW1tnM1lk"
-        },
-        {
-          "url": "https://www.cntraveller.com/article/gta-6-leonida-keys-florida-location-grand-theft-auto-vi",
-          "title": "The ultimate travel guide to Grand Theft Auto VI : where to find the real Leonida Keys in Florida",
-          "publisher": "CN Traveller",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3LkSxcL01BSAnKbc-JlbY9eFuI2vEl5HmWbOthlWxvzvjUxCJVrriRGSHQYc"
-        }
-      ]
-    },
-    {
-      "query": "product recall",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T12:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/blood-pressure-medication-recalled-nationwide-november-2026/92823483007/",
-        "https://www.foxbusiness.com/economy/blood-pressure-drug-recalled-nationwide-over-possible-metal-contamination",
-        "https://www.nxsmediawire.com/news/blood-pressure-medication-recalled-over-potential-contamination-with-metal-laceration-risk/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn7_XEWZS3KS6uFW49U_9UBQoNKZlnbDHVyY2dPrM_o-4xWbBwAZILRn6TcQU",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/blood-pressure-medication-recalled-nationwide-november-2026/92823483007/",
-          "title": "Blood pressure medication recalled nationwide. See affected drug",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn7_XEWZS3KS6uFW49U_9UBQoNKZlnbDHVyY2dPrM_o-4xWbBwAZILRn6TcQU"
-        },
-        {
-          "url": "https://www.foxbusiness.com/economy/blood-pressure-drug-recalled-nationwide-over-possible-metal-contamination",
-          "title": "Blood pressure drug recalled nationwide over possible metal contamination",
-          "publisher": "Fox Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTsoDc-ey_Oae4KuYkFFlMCBrRoyQct8pzLr5SZs57v7EZOScTZPloqD3wYU"
-        },
-        {
-          "url": "https://www.nxsmediawire.com/news/blood-pressure-medication-recalled-over-potential-contamination-with-metal-laceration-risk/",
-          "title": "Blood-pressure medication recalled over potential contamination with metal, laceration risk",
-          "publisher": "https://www.nxsmediawire.com/",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNMThh0U0Lnq1f-6bZJBe13OF94Wti7De3tSTG9BF0ai3xVmZMdqX_3DUInvI"
-        }
-      ]
-    },
-    {
-      "query": "ruby bridges",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T12:10:00Z",
-      "related_news_urls": [
-        "https://www.smdailyjournal.com/news/local/san-mateo-county-schools-mark-ruby-bridges-walk-to-school-day/article_e3c497e4-d6e2-4dd9-b8b5-94a686558128.html",
-        "https://www.kwoc.com/localnews/2026/11/17/reejvu0lik8x08w10yg5s9y2zag9n4",
-        "https://www.heraldtribune.com/story/opinion/columns/guest/2026/11/16/sarasota-ruby-bridges-midterm/92796227007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmGEsql_7Am5JtsUqSFkTvoZDSZqEXO73Yrj_GOUEcgXs7THz7_T6QB4dZbBg",
-      "image_credit": "San Mateo Daily Journal",
-      "news": [
-        {
-          "url": "https://www.smdailyjournal.com/news/local/san-mateo-county-schools-mark-ruby-bridges-walk-to-school-day/article_e3c497e4-d6e2-4dd9-b8b5-94a686558128.html",
-          "title": "San Mateo County schools mark Ruby Bridges Walk to School Day",
-          "publisher": "San Mateo Daily Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmGEsql_7Am5JtsUqSFkTvoZDSZqEXO73Yrj_GOUEcgXs7THz7_T6QB4dZbBg"
-        },
-        {
-          "url": "https://www.kwoc.com/localnews/2026/11/17/reejvu0lik8x08w10yg5s9y2zag9n4",
-          "title": "Wednesday, November 18, 2026 — Today's Talk",
-          "publisher": "Today's Talk - KWOC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsY33lXeFjbd3l7CoAjqXfuV68R6R3AbNeVWlM3jfflJDmNqcixeGdOq877f0"
-        },
-        {
-          "url": "https://www.heraldtribune.com/story/opinion/columns/guest/2026/11/16/sarasota-ruby-bridges-midterm/92796227007/",
-          "title": "A visitor gave Sarasota a lesson we must not forget | Opinion",
-          "publisher": "Sarasota Herald-Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeT2cUk5oIfFKjZRGHfvPYADAM_HLba-JljBapww93GA3id1eTuscuuTDgDgY"
-        }
-      ]
-    },
-    {
-      "query": "bobby moynihan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T12:10:00Z",
-      "related_news_urls": [
-        "https://www.vulture.com/article/bobby-moynihan-kids-family-movies-tv.html",
-        "https://deadline.com/2026/11/bobby-moynihan-aristotle-athari-taran-killam-on-display-podcast-1237216844/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRchkRs_HsjzNzjgNYtb7kkdTuu2JcJwOrC-u0oooaThBstdwmdbM1BFESaiDE",
-      "image_credit": "Vulture",
-      "news": [
-        {
-          "url": "https://www.vulture.com/article/bobby-moynihan-kids-family-movies-tv.html",
-          "title": "What Bobby Moynihan Watches (and Listens to) With His Daughters",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRchkRs_HsjzNzjgNYtb7kkdTuu2JcJwOrC-u0oooaThBstdwmdbM1BFESaiDE"
-        },
-        {
-          "url": "https://deadline.com/2026/11/bobby-moynihan-aristotle-athari-taran-killam-on-display-podcast-1237216844/",
-          "title": "‘SNL’ Alums Bobby Moynihan, Aristotle Athari & Taran Killam Team On Collectibles Podcast ‘On Display’ – Watch The First Episode",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMZH6aGtYDgMM3Mq6HXzEBkAJYnvkUQ254OWGNn0Ia3cin4eFWGGtXeclcUOc"
         }
       ]
     }
