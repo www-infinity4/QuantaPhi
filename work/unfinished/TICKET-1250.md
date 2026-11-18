@@ -115,3 +115,33 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 - **Exact-head CI:** At `8df065cb2cc5d8c458db2dff7ba9c17278929253`, **12/12 associated GitHub Actions workflows SUCCESS** (checked ~18:59 UTC). [Bubbles account run 41231882667](https://github.com/www-infinity4/QuantaPhi/actions/runs/41231882667), job 124627622924, logged **159/159 Node subtests PASS**, including the new full-page veto test.
 - **Coordinator evidence:** existing WORK_DB D1 cycle 5978243 complete at 2026-10-31T18:55:14.032Z, source b4955351, eight logical tracks, authenticated ChatGPT consumer runners 0, owner presence unknown, Work lease unclaimed. No browser, X account, wallet, Cloudflare config or provider session modified.
 - **Release state:** 🟡 `source_tested / ci_passed / review_pending`; progress_percent unknown, sessions_spent **8 documented**, remaining estimate unknown; lease_id/fence/task_session_id null. PR #1272 remains OPEN and not merged/deployed/live-accepted. Independent exact-head security review, two-wallet OAuth/Android acceptance and authorized Cloudflare readback are still external gates. **Next one action:** obtain genuine independent exact-head review of #1272, address findings, then follow the protected release sequence.
+
+
+## 2026-11-04 · GIT currency code-line provenance, bounded source session
+
+- Owner request: GitHub CLI users collect 1 GIT candidate per added programming line, preserve intent/language/file/commit provenance, assign AI-provider or human builder by independently verified task/identity, and require Quant AI to reject mass junk lines; eventual wallet holdings and authorized business trades are separate release phases.
+- **Branch:** `feat/gitcoin-verified-line-receipts-20261104`. This session adds `gitcoin/line-receipts.mjs`, `verification.mjs`, `gh-gitcoin.mjs`, local `gh gitcoin` alias installer, proposed isolated D1 schema, usage/security documentation, tests and a read-only CI workflow.
+- **Source checks in isolated local fixture:** `node --test test/gitcoin-*.test.mjs` **11/11 passed**; `node --check gitcoin/gh-gitcoin.mjs` passed; proposed SQL loaded into memory SQLite successfully. This does **not** establish all-repo CI, deployed wallet credits or live provider attribution.
+- **Progress:** 🟡 source_tested; estimated 35% of scoped first-to-production GIT line provenance pilot. 1 current session; 2–5 additional sessions estimated, subject to implementation complexity. Human/agent wallet transfer and economic release acceptance are separate future milestones.
+- **Security:** no token minting, no D1 migration, no provider payment, no existing wallet mutation, no automatic transfer or bypass of Gitpro/Copilot holds. These components prepare candidate records and a fail-closed server verification interface; the actual signed GitHub+Quant AI+wallet adapter remains to be built.
+- **Lease:** no external coordinator lease claimed; lease_id/fence/task_session_id null. No owner browser or existing security review controlled by this session.
+- **Next single action:** obtain exact-head PR CI and independent security review for this branch, then implement signed server-side Quant AI verification and authenticated idempotent D1 settlement on a reviewed service branch.
+
+
+## 2026-11-05 UTC · authenticated GIT settlement source continuation
+
+- Continued existing GIT PR #1675 rather than creating another coin collector. Added server-only settlement after independent immutable diff/default-branch/CI/Quant AI checks, with required attribution evidence and exactly 1 GIT per verified line. Human and signed provider/operator recipients remain distinct.
+- Transactional isolated D1 statements, immutable awards, recipient-conflict guards, historical repository/path/content dedupe, prior-pilot fingerprint backfill, and readback. Replay and delete/re-add do not remint the same source. Bound each call to 200 verified lines; no silent partial truncation.
+- Local tests: 14/14 GIT tests passed, including full settlement and readback against real SQLite, duplicate retries, historical re-add, recipient conflict and failed verification before any write. Exact-head GitHub CI remains to be recorded on the PR.
+- YELLOW / source_tested / review_pending; overall progress and remaining sessions unknown. One additional documented source session. No coordinator lease claimed; lease_id/fence/task_session_id null. No deployment, database mutation, live GIT issue, transfer, cash payout, provider adoption, or bypass of Gitpal/Copilot holds.
+- Next action: independent exact-head review and CI, then implement the production authenticated GitHub/Quant AI adapters and reviewed wallet runtime route before attempting a live credit.
+
+
+## 2026-11-05 UTC · owner correction: all Bubbles-generated GIT belongs to the executor
+
+- Owner explicitly corrected the prior recipient description: Kris collects the GIT generated through Bubbles for every user. Customers cannot collect their own GIT through Bubbles. Customer Bubble Bits remain separate. This correction supersedes earlier Bubbles/provider recipient wording in this ticket.
+- Reused #1675/#1250 and preserved concurrent HTML collector work. Added authenticated execution-channel checks, signed customer-job authorization and a server-only singleton verified owner/executor binding. Bubbles refuses customer-recipient receipts, changed owner bindings, missing configuration and builder-label/channel spoofing.
+- `settleGitClaim` supplies its own database-backed owner resolver, not a caller-selected resolver. D1 claims retain customer/channel/binding/policy separately; the SQL award guard rejects customer GIT even if an internal result is forged. No public owner-registration or wallet-redirect endpoint was added.
+- Tests first: four new owner-routing tests failed against the prior source. Green verification: 20/20 GIT tests pass locally, including a real SQLite two-customer run paying 4 total GIT only to the fixture executor wallet, replay protection and SQL rollback of forged customer credit. Fixtures are not production payments.
+- State YELLOW/source_tested/review_pending; overall completion and remaining sessions unknown. One additional documented source session; no coordinator lease, lease_id/fence/task_session_id null. No live migration, actual owner-wallet provisioning, existing-balance change, payout, merge or deployment is claimed.
+- Next action: exact-head CI and independent review, then reviewed setup from the existing verified executor identity and live acceptance demonstrating customers receive zero Bubbles-generated GIT.
