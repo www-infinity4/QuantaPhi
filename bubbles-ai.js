@@ -2258,8 +2258,9 @@ window.addEventListener('quantaphi:bubbles:card-context',event=>{
     typeof detail.sourceCardId!=='string'||!(/^[a-zA-Z0-9][a-zA-Z0-9:_-]{1,109}$/).test(detail.sourceCardId)||
     typeof detail.draft!=='string'||detail.draft.length>900)return;
  if(input.value.trim()){
+  detail.blocked='unsent';
   toggle(true);
-  status.textContent='An unsent Bubbles message is already present. Send or save it before importing this card.';
+  status.textContent='An unsent Bubbles message is already present. Send or clear it before importing this card.';
   return;
  }
  input.value=detail.draft;

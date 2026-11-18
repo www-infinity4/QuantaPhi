@@ -132,3 +132,7 @@ GitHub issue created during the owner-request scoping session; checkpoint staged
 - **Boundary:** a displayed card label is not a provider-integrated X feed, purchase, TV cast or phone automation receipt. User must explicitly press Send; existing owner action/credential gates remain unchanged. No new data publication or provider account connection.
 - **Dependencies:** PR #1065 Bubbles APK card overlay, PR #629 local inference, PR #1836 first-party public card handoff, and actual official provider adapters are separate incomplete requirements. Cellular access without operator authorization is not in scope; offline Bluetooth/Wi-Fi Direct should use device permissions and platform APIs.
 - **Job:** continue #1315 / PR #1902, no duplicate ticket or coordinator lease claimed. Review exact-head diff, CI, independent approval, browser/Android then release verification before marking accepted.
+
+### November 17 follow-up · preserve unsent composer on card-context request
+- Test-first: 4th focused regression initially failed because retry status helper was absent; after the correction 4/4 focused Node tests passed locally and parser check passed. Bubbles keeps an existing unsent message intact and tells the user to retry; no queued message or secret is overwritten.
+- Exact-head CI, independent review, production and Android still unverified for this follow-up commit.

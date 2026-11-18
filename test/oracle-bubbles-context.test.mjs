@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {createCardConversationDraft} from '../oracle-bubbles-context.mjs';
+import {createCardConversationDraft,contextHandoffStatus} from '../oracle-bubbles-context.mjs';
 
 test('selected Oracle card becomes a bounded review-only chat draft',()=>{
  const v=createCardConversationDraft({id:'source-google',title:'Google Search',category:'Search'});
@@ -34,4 +34,11 @@ test('current Oracle and Bubbles chat share only explicitly selected, user-revie
  assert.match(bubbles,/detail\.handled=true/);
  assert.match(bubbles,/input\.value\.trim\(\)/);
  assert.doesNotMatch(bubbles,/sendMessage\(detail\.draft/);
+});
+
+test('unsent text remains intact and reports a retryable card-context handoff',()=>{
+ assert.match(contextHandoffStatus({blocked:'unsent'}),/unsent Bubbles message/i);
+ assert.doesNotMatch(contextHandoffStatus({blocked:'unsent'}),/not available/i);
+ assert.match(contextHandoffStatus({handled:true}),/Review the message/);
+ assert.match(contextHandoffStatus({handled:false}),/not available/i);
 });

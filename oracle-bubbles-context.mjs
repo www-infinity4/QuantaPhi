@@ -19,6 +19,10 @@ export function createCardConversationDraft({id,title,category=''}={}){
  ].join('\n');
  return {sourceCardId:id,draft};
 }
+export function contextHandoffStatus(detail){
+ if(detail?.blocked==='unsent')return 'There is an unsent Bubbles message. Send or clear that message, then tap Ask Bubbles again.';
+ return detail?.handled?'Card context prepared inside Bubbles. Review the message and tap Send. No action was taken.':'Bubbles was not available to receive this card context. Open the Bubbles chat first.';
+}
 export function mountCardConversationButton({host,stage,doc=document,win=window}={}){
  if(!host||!stage||host.querySelector?.('#oracleBubblesCardContext'))return null;
  const button=doc.createElement('button');button.id='oracleBubblesCardContext';
@@ -37,7 +41,7 @@ export function mountCardConversationButton({host,stage,doc=document,win=window}
   if(!context){status.textContent='Choose an active Quick Card before asking Bubbles.';return;}
   const detail={version:1,...context,handled:false};
   win.dispatchEvent(new CustomEvent('quantaphi:bubbles:card-context',{detail}));
-  status.textContent=detail.handled?'Card context prepared inside Bubbles. Review the message and tap Send. No action was taken.':'Bubbles was not available to receive this card context. Open the Bubbles chat first.';
+  status.textContent=contextHandoffStatus(detail);
  });
  return {button,status};
 }
