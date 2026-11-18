@@ -30,7 +30,9 @@ permissions:
   contents: read
 jobs:
   chromium_card_and_chat:
-    runs-on: ubuntu-latest
+    # Playwright 1.56.1 cannot install Chromium dependencies on ubuntu26.04.
+    # Pin the tested LTS image rather than hiding browser failures.
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
