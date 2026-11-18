@@ -40,3 +40,12 @@ test('public homepage suggestions also include published original-site Quick Car
  assert.match(ui,/Object\.values\(TINYFISH_CARDS\)/);
  assert.match(ui,/suggestFeedSearch\(HOME_SEARCH_CARDS,search\.value/);
 });
+
+test('automation search remains compatible with merged Oracle and Avatar homepage cards',()=>{
+ const page=load('index.html');
+ assert.match(page,/id="oracleCardDepartment"/,'preserve the Oracle category picker');
+ assert.match(page,/id="iowaRadioMedia"/,'preserve the radio media shelf');
+ assert.match(page,/id="nuanceDiscoveryCard"/,'preserve private Nuance Discovery');
+ assert.match(page,/avatar-ai-card\.css/,'preserve the public Avatar card styling');
+ assert.match(page,/quanta-home-search-assist\.mjs/,'retain automation search assistant');
+});
