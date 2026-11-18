@@ -8,6 +8,7 @@ dot: "🔴"
 progress_percent: 25
 progress_basis: "3 of 7 bounded milestones staged: source review, pages authored, test plan authored; exact-head CI, independent review, merge, live and Android verification outstanding"
 sessions_spent: 1
+agent: "ChatGPT source-builder; no active coordinator lease"
 sessions_remaining_estimate: unknown
 lease_id: null
 lease_expires_at: null
