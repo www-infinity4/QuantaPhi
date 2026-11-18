@@ -33,10 +33,16 @@ test('Follow Neosporin then Blue Star in the same existing Following tab',async(
  await page.goto(base+'/?card=neosporin-original-1oz',{waitUntil:'domcontentloaded'});
  const deck=page.locator('#oracleCardDeck'),stage=deck.locator('#oracleCardStage');
  await expect(stage).toHaveAttribute('data-switchboard-id','neosporin-original-1oz',{timeout:20000});
- await deck.locator('#oracleCardFollow').click();
+ const follow=stage.locator('.qec-card .qec-actions .qca-toolbar [data-action="follow"]');
+ await expect(deck.locator('#oracleCardFollow')).toBeHidden();
+ await expect(follow).toHaveCount(1);
+ await expect(follow).toBeVisible();
+ await follow.click();
  await deck.getByRole('button',{name:'Blue Star Ointment'}).click();
  await expect(stage).toHaveAttribute('data-switchboard-id','blue-star-ointment');
- await deck.locator('#oracleCardFollow').click();
+ await expect(follow).toHaveCount(1);
+ await expect(follow).toBeVisible();
+ await follow.click();
  await deck.getByRole('tab',{name:'Following'}).click();
  await expect(deck.locator('#oracleCardChooser option[value="source-blue-star-ointment"]')).toHaveCount(1);
  await expect(deck.locator('#oracleCardChooser option[value="source-neosporin-original-1oz"]')).toHaveCount(1);

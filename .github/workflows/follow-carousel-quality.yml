@@ -1,0 +1,29 @@
+name: Follow, carousel & Image Studio regression
+on:
+  pull_request:
+    paths:
+      - 'quanta-feed-rank.mjs'
+      - 'quanta-feed.mjs'
+      - 'quanta-card-actions.mjs'
+      - 'oracle-card-deck.js'
+      - 'phi-image-builder.js'
+      - 'phi-image-builder.css'
+      - 'test/follow-carousel-quality.test.mjs'
+      - '.github/workflows/follow-carousel-quality.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test test/follow-carousel-quality.test.mjs test/quanta-card-feed.test.mjs test/phi-image-quality.test.cjs
+      - run: node --check quanta-feed.mjs
+      - run: node --check oracle-card-deck.js
+      - run: node --check phi-image-builder.js

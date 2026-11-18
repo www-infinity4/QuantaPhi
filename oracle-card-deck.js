@@ -372,7 +372,7 @@ function updateTabs(){
  followingPublisherFeed?.sync({tab:selectedTab});
  if(follow){
   const saved=Boolean(active&&feedState?.following.includes(active.feedId));
-  follow.hidden=!active;
+  follow.hidden=!active||active.id.startsWith('source-');
   follow.textContent=saved?'✓ Following':'+ Follow';
   follow.setAttribute('aria-pressed',String(saved));
  }
