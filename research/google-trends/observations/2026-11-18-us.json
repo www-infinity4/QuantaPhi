@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T15:31:08.810572Z",
+  "checked_at": "2026-11-18T16:01:22.342770Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "new jason movie",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T15:30:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
+        "https://bloody-disgusting.com/movie/3976124/jason-13th-official-movie-will-release-in-theaters-august-13-2027-from-cineverse/",
+        "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
+          "title": "New ‘Friday The 13th’ Movie Unveils Cast, Title & Release Date",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0"
+        },
+        {
+          "url": "https://bloody-disgusting.com/movie/3976124/jason-13th-official-movie-will-release-in-theaters-august-13-2027-from-cineverse/",
+          "title": "‘JASON’ – 13th Official Movie Will Release in Theaters August 13, 2027 from Cineverse",
+          "publisher": "Bloody Disgusting",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgGykrdU2PktIV5ked1xD3etzvodM3l-l_FJItQtHxdrZrCJtjHBMOv4b-yiU"
+        },
+        {
+          "url": "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/",
+          "title": "Producer Robbie Barsamian Talks New ‘Friday the 13th’ Entry and Getting Jason Back on the Big Screen | Exclusive",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPecFtUC48kmyQBJNg-GQa6dunaBWsG-6Rf2ED-2XI7M3IYpyit1lI8H2fH6M"
+        }
+      ]
+    },
+    {
+      "query": "florida weather flooding",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T15:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
+        "https://weather.com/2026/11/18/news/weather/florida-flood-forecast-dry-season",
+        "https://www.wesh.com/article/central-florida-possible-flooding-county-by-county-look/74455857"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
+          "title": "Severe flooding hits parts of coastal Florida from over a foot of rain … and a lot more is incoming",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8"
+        },
+        {
+          "url": "https://weather.com/2026/11/18/news/weather/florida-flood-forecast-dry-season",
+          "title": "Why parts of Florida are flooding during the dry season",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xYUBxdnCnl2ZeAJ8Om0QkQCxhsqARSzi04cX_jbe_oVR6BQtnhnDWE2rQyw"
+        },
+        {
+          "url": "https://www.wesh.com/article/central-florida-possible-flooding-county-by-county-look/74455857",
+          "title": "County-by-county look at what to expect as Central Florida braces for more flooding",
+          "publisher": "WESH",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTErTFw-HeexgzC2dRcqajf67rleE_qYLjLoynmGFmjTHrOjXpBE-NZ9GKyqrg"
+        }
+      ]
+    },
+    {
+      "query": "spartanburg water",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T15:30:00Z",
+      "related_news_urls": [
+        "https://www.foxcarolina.com/2026/11/18/spartanburg-water-issues-systemwide-boil-water-advisory/",
+        "https://www.wyff4.com/article/spartanburg-boil-water-advisory-systemwide/74464896",
+        "https://www.postandcourier.com/spartanburg/news/spartanburg-sc-boil-water-advisory-pressure-loss/article_07c34734-c34f-463a-8d18-e5820f7c43c6.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEwd-e-xZNnvm-oPPdn8w9IOr67zMFiJhC6KbPoUTp2Y6YSbmu8nwhJl7ameE",
+      "image_credit": "FOX Carolina News",
+      "news": [
+        {
+          "url": "https://www.foxcarolina.com/2026/11/18/spartanburg-water-issues-systemwide-boil-water-advisory/",
+          "title": "Spartanburg Water issues systemwide boil water advisory",
+          "publisher": "FOX Carolina News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEwd-e-xZNnvm-oPPdn8w9IOr67zMFiJhC6KbPoUTp2Y6YSbmu8nwhJl7ameE"
+        },
+        {
+          "url": "https://www.wyff4.com/article/spartanburg-boil-water-advisory-systemwide/74464896",
+          "title": "Spartanburg Water issues systemwide boil water advisory",
+          "publisher": "WYFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpLoQc30p-x1rbNaLUgx7Gj78XdprQWzNf8QD3lzj0gwkZcjzblLvV2v3LBq0"
+        },
+        {
+          "url": "https://www.postandcourier.com/spartanburg/news/spartanburg-sc-boil-water-advisory-pressure-loss/article_07c34734-c34f-463a-8d18-e5820f7c43c6.html",
+          "title": "Spartanburg Water issues boil water notice for entire system, except Landrum",
+          "publisher": "Post and Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0dL_-KyhAvkD_PUtPsmkFgw9n3kwJf8nOURTUm5mo4EQItFRne4oPCXsCcyw"
+        }
+      ]
+    },
+    {
+      "query": "seatgeek",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T15:20:00Z",
+      "related_news_urls": [
+        "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
+        "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
+        "https://attstadium.com/events/morgan-wallen-aug-13-2027/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmXeLbwrthD3Ou0-4VCDpGZ8LXliY-U5pItDdGrqeOZb5semVdRnKAYW77SA8",
+      "image_credit": "Nissan Stadium",
+      "news": [
+        {
+          "url": "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
+          "title": "Morgan Wallen",
+          "publisher": "Nissan Stadium",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmXeLbwrthD3Ou0-4VCDpGZ8LXliY-U5pItDdGrqeOZb5semVdRnKAYW77SA8"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
+          "title": "Morgan Wallen’s Last Time I Checked Tour is coming to Buffalo on July 23 and 24, 2027",
+          "publisher": "Buffalo Bills",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4G44OXFDuyuyc6Bvp7I1V4As-bR18QVIB6ElnjSGEMawiFSx3khrBrAgLC-I"
+        },
+        {
+          "url": "https://attstadium.com/events/morgan-wallen-aug-13-2027/",
+          "title": "Morgan Wallen: Last Time I Checked Tour 2027",
+          "publisher": "attstadium.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJIVuYkxS-Jwor6aGFnVzEbqbOrd0392w8qOle2Ed2rHarVvvYfW-z1OGQnS8"
+        }
+      ]
+    },
+    {
+      "query": "cameron mathison",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T15:20:00Z",
+      "related_news_urls": [
+        "https://www.al.com/life/2026/11/general-hospital-star-reflects-cancer-diagnosis-i-was-doing-these-extreme-things.html",
+        "https://www.foxnews.com/entertainment/general-hospital-star-cameron-mathison-red-flags-drove-him-demand-answers-cancer-diagnosis",
+        "https://pagesix.com/2026/11/17/celebrity-news/cameron-mathison-reflects-on-red-flag-that-led-to-kidney-cancer-diagnosis/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTx6Prvy9x4tvxLqcqLP0JP8SVptINt-t1faBW33rJpJcniGStGG2XksxXCdvs",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/life/2026/11/general-hospital-star-reflects-cancer-diagnosis-i-was-doing-these-extreme-things.html",
+          "title": "‘General Hospital’ star reflects cancer diagnosis: ‘I was doing these extreme things’",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTx6Prvy9x4tvxLqcqLP0JP8SVptINt-t1faBW33rJpJcniGStGG2XksxXCdvs"
+        },
+        {
+          "url": "https://www.foxnews.com/entertainment/general-hospital-star-cameron-mathison-red-flags-drove-him-demand-answers-cancer-diagnosis",
+          "title": "'General Hospital' star Cameron Mathison says ‘red flags’ drove him to demand answers before cancer diagnosis",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSznV3O9eSUnbwNstiLu5fPasMwWrfqLJN3poVqabseHSPsdoGuCHUXsWlzSEY"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/17/celebrity-news/cameron-mathison-reflects-on-red-flag-that-led-to-kidney-cancer-diagnosis/",
+          "title": "‘General Hospital’ star Cameron Mathison reflects on ‘red flag’ that led to kidney cancer diagnosis",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ59zknAFgW2QElv8V8qDzcZx8dlCOeWEnRW3TbiRqgBdqOH22XcJBtV-LR0BA"
+        }
+      ]
+    },
+    {
+      "query": "urban meyer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T15:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/maryland/article/insidemdsports-exclusive-urban-meyer-emerging-in-marylands-football-coaching-search-292929495/",
+        "https://sports.yahoo.com/articles/urban-meyer-seriously-considering-maryland-151505185.html",
+        "https://www.miamiherald.com/sports/college/article318137694.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwXe3iq9Xgh8owtuyFERyx0i_-QK7eUIJ4JZ-owPbAjFXtnygvxJdWAREhogM",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/maryland/article/insidemdsports-exclusive-urban-meyer-emerging-in-marylands-football-coaching-search-292929495/",
+          "title": "InsideMDSports Exclusive: Urban Meyer emerging in Maryland's football coaching search",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwXe3iq9Xgh8owtuyFERyx0i_-QK7eUIJ4JZ-owPbAjFXtnygvxJdWAREhogM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/urban-meyer-seriously-considering-maryland-151505185.html",
+          "title": "Urban Meyer ‘seriously considering’ Maryland head coaching job, per report",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvni7ZGJWTD8Exbr2Zl1Z5VU6anmvlBqRJSFzhiHryFaHdV0B1q3tfZoF0wp0"
+        },
+        {
+          "url": "https://www.miamiherald.com/sports/college/article318137694.html",
+          "title": "Report: Urban Meyer linked to Maryland vacancy",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxwKkFqaEmTIahBRZbVLj2R4EIdV5yUsm3r5PLzWzV-Oy5hyD4UMQt8nmJVk"
+        }
+      ]
+    },
+    {
+      "query": "unh stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T15:10:00Z",
+      "related_news_urls": [
+        "https://www.trefis.com/stock/unh/articles/626290/why-is-unitedhealth-stock-falling/2026-11-18",
+        "https://finance.yahoo.com/healthcare/articles/safe-health-care-etf-just-164729571.html",
+        "https://www.zacks.com/commentary/3031459/unitedhealth-unh-vs-humana-hum-buy-the-dip"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzqwAKAMhNtUemI17SMOCqugLnHWFBtTFGI3vdKiT9E7VBedWWa7v6V-Leedc",
+      "image_credit": "Trefis",
+      "news": [
+        {
+          "url": "https://www.trefis.com/stock/unh/articles/626290/why-is-unitedhealth-stock-falling/2026-11-18",
+          "title": "Why Is UnitedHealth Stock Falling?",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzqwAKAMhNtUemI17SMOCqugLnHWFBtTFGI3vdKiT9E7VBedWWa7v6V-Leedc"
+        },
+        {
+          "url": "https://finance.yahoo.com/healthcare/articles/safe-health-care-etf-just-164729571.html",
+          "title": "Your “Safe” Health Care ETF Just Got Hit by UnitedHealth Again",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOOkw5IuOibD75QPsPAv2WERGiD3-iOg-wTLfsAUrDiBVfrlDdwYwoTOTx3Wc"
+        },
+        {
+          "url": "https://www.zacks.com/commentary/3031459/unitedhealth-unh-vs-humana-hum-buy-the-dip",
+          "title": "UnitedHealth (UNH) vs. Humana (HUM): Buy the Dip?",
+          "publisher": "Zacks Investment Research",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbQoY_BdkcM_7XWo0lUXmqcc5phnOPwqsWruUgg6EoSgDgPrZk7mLoXLYZxWc"
+        }
+      ]
+    },
     {
       "query": "ticket master",
       "approx_searches": "500+",
@@ -38,76 +283,6 @@
           "publisher": "Detroit Free Press",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWJ1Nqb1-MfKkZ2ZNEnHdrAxtoGJwajwT-4FW76daJ9wqkwUukDNefOu36pn0"
-        }
-      ]
-    },
-    {
-      "query": "urban meyer",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T15:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/maryland/article/insidemdsports-exclusive-urban-meyer-emerging-in-marylands-football-coaching-search-292929495/",
-        "https://www.on3.com/news/report-urban-meyer-seriously-considering-maryland-head-coaching-job/",
-        "https://sports.yahoo.com/college-football/article/is-there-a-reason-to-feel-bad-for-lane-kiffin-in-year-1-at-lsu-212741459.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAiKv7bnI1ogRHfbFzexLiUq45m14zQV1H_8WqfAoHCEzoa5hgwG8mUJEe18M",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/maryland/article/insidemdsports-exclusive-urban-meyer-emerging-in-marylands-football-coaching-search-292929495/",
-          "title": "InsideMDSports Exclusive: Urban Meyer emerging in Maryland's football coaching search",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAiKv7bnI1ogRHfbFzexLiUq45m14zQV1H_8WqfAoHCEzoa5hgwG8mUJEe18M"
-        },
-        {
-          "url": "https://www.on3.com/news/report-urban-meyer-seriously-considering-maryland-head-coaching-job/",
-          "title": "Report: Urban Meyer 'seriously considering' Maryland head coaching job",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSu3ZhsG4eUodCDElPqEP_oeNSZTY0ZiGtVpsu-up02qLUgZxIOqiJpuCs4eY0"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/article/is-there-a-reason-to-feel-bad-for-lane-kiffin-in-year-1-at-lsu-212741459.html",
-          "title": "Is there a reason to feel bad for Lane Kiffin in Year 1 at LSU?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR359QxdmQBHkon2Vjee96U042l4vTF_-vVpynEwgwGK1ypp83Tqujw9wsGi8w"
-        }
-      ]
-    },
-    {
-      "query": "unh stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T15:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/healthcare/articles/safe-health-care-etf-just-164729571.html",
-        "https://www.zacks.com/commentary/3031459/unitedhealth-unh-vs-humana-hum-buy-the-dip",
-        "https://www.benzinga.com/trading-ideas/movers/26/11/63348762/unitedhealth-stock-drops-4-whats-going-on"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOOkw5IuOibD75QPsPAv2WERGiD3-iOg-wTLfsAUrDiBVfrlDdwYwoTOTx3Wc",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/healthcare/articles/safe-health-care-etf-just-164729571.html",
-          "title": "Your “Safe” Health Care ETF Just Got Hit by UnitedHealth Again",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOOkw5IuOibD75QPsPAv2WERGiD3-iOg-wTLfsAUrDiBVfrlDdwYwoTOTx3Wc"
-        },
-        {
-          "url": "https://www.zacks.com/commentary/3031459/unitedhealth-unh-vs-humana-hum-buy-the-dip",
-          "title": "UnitedHealth (UNH) vs. Humana (HUM): Buy the Dip?",
-          "publisher": "Zacks Investment Research",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbQoY_BdkcM_7XWo0lUXmqcc5phnOPwqsWruUgg6EoSgDgPrZk7mLoXLYZxWc"
-        },
-        {
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63348762/unitedhealth-stock-drops-4-whats-going-on",
-          "title": "UnitedHealth Stock Drops 4%: What’s Going On?",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDC-XZyw1kFwifObwuZTGpdcN_7_PYjxzmdOpKi1eOqG4wcmq6moat4bj-08A"
         }
       ]
     },
@@ -153,7 +328,7 @@
       "related_news_urls": [
         "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
         "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live",
-        "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november"
+        "https://www.espn.com/tennis/story/_/id/50521030/alcaraz-cruises-medvedev-atp-finals-leg-issue"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIHmdxVUPsUoxXZ338-EKVovG6ZdPKsqoQE_04r8Q_q8KdPtLABCY45-oHI90",
       "image_credit": "ATP Tour",
@@ -173,186 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQkpSY0qD_ROAd5DI4D6jeuT3KgPCHgnE7yAI4PCxvDYcFhY8u5CYRBQhAkJA"
         },
         {
-          "url": "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november",
-          "title": "Nitto ATP Finals 2026 SF Qualification Scenarios 16 November | Nitto ATP Finals | Tennis",
-          "publisher": "Nitto ATP Finals",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLuV9YZssD8GFROW-oOH40LhxaIGHRFE-s3HbIkkQuf67mD8zQBb9O1NfhePc"
-        }
-      ]
-    },
-    {
-      "query": "morgan wallen presale",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T14:50:00Z",
-      "related_news_urls": [
-        "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
-        "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
-        "https://attstadium.com/events/morgan-wallen-aug-13-2027/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmXeLbwrthD3Ou0-4VCDpGZ8LXliY-U5pItDdGrqeOZb5semVdRnKAYW77SA8",
-      "image_credit": "Nissan Stadium",
-      "news": [
-        {
-          "url": "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
-          "title": "Morgan Wallen",
-          "publisher": "Nissan Stadium",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmXeLbwrthD3Ou0-4VCDpGZ8LXliY-U5pItDdGrqeOZb5semVdRnKAYW77SA8"
-        },
-        {
-          "url": "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
-          "title": "Morgan Wallen’s Last Time I Checked Tour is coming to Buffalo on July 23 and 24, 2027",
-          "publisher": "Buffalo Bills",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4G44OXFDuyuyc6Bvp7I1V4As-bR18QVIB6ElnjSGEMawiFSx3khrBrAgLC-I"
-        },
-        {
-          "url": "https://attstadium.com/events/morgan-wallen-aug-13-2027/",
-          "title": "Morgan Wallen: Last Time I Checked Tour 2027",
-          "publisher": "attstadium.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJIVuYkxS-Jwor6aGFnVzEbqbOrd0392w8qOle2Ed2rHarVvvYfW-z1OGQnS8"
-        }
-      ]
-    },
-    {
-      "query": "jason derulo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T14:50:00Z",
-      "related_news_urls": [
-        "https://thepeninsulaqatar.com/article/17/11/2026/jason-derulo-to-headline-sunday-night-at-formula-1-qatar-airways-qatar-grand-prix-2026",
-        "https://tbreak.com/jason-derulo-qatar-grand-prix-lusail-live/",
-        "https://speedwaydigest.com/index.php/news/racing-news/895461-jason-derulo-to-headline-entertainment-lineup-at-qatar-grand-prix-weekend/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpdKi_aIYQSv5uZoMwPzvc_0GYmsHaV-p1FTwkcEGsi9lA9azy4JrBRaqeoz8",
-      "image_credit": "The Peninsula Qatar",
-      "news": [
-        {
-          "url": "https://thepeninsulaqatar.com/article/17/11/2026/jason-derulo-to-headline-sunday-night-at-formula-1-qatar-airways-qatar-grand-prix-2026",
-          "title": "Jason Derulo to headline Sunday night at Formula 1 Qatar Airways Qatar Grand Prix 2026",
-          "publisher": "The Peninsula Qatar",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpdKi_aIYQSv5uZoMwPzvc_0GYmsHaV-p1FTwkcEGsi9lA9azy4JrBRaqeoz8"
-        },
-        {
-          "url": "https://tbreak.com/jason-derulo-qatar-grand-prix-lusail-live/",
-          "title": "Jason Derulo to headline Qatar Grand Prix Sunday",
-          "publisher": "Tbreak UAE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQliYjHtHUOCkQ9H9lqQQlzqp15yohZCB16brhxUIZgSdByNG8ZSe_f2o3E24c"
-        },
-        {
-          "url": "https://speedwaydigest.com/index.php/news/racing-news/895461-jason-derulo-to-headline-entertainment-lineup-at-qatar-grand-prix-weekend/",
-          "title": "Jason Derulo to Headline Entertainment Lineup at Qatar Grand Prix Weekend",
-          "publisher": "Speedway Digest",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3q1shknQMUl_5umg-zEYkSZL53ymu2t1v1m0IwPIo4vWPsjSTmkNcJjWI6l4"
-        }
-      ]
-    },
-    {
-      "query": "schuyler white",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T14:50:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
-        "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/",
-        "https://bloody-disgusting.com/movie/3975590/jason-voorhees-returning-to-theaters-with-13th-feature-film-directed-by-steve-miner/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
-          "title": "New ‘Friday The 13th’ Movie Unveils Cast, Title & Release Date",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0"
-        },
-        {
-          "url": "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/",
-          "title": "Producer Robbie Barsamian Talks New ‘Friday the 13th’ Entry and Getting Jason Back on the Big Screen | Exclusive",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPecFtUC48kmyQBJNg-GQa6dunaBWsG-6Rf2ED-2XI7M3IYpyit1lI8H2fH6M"
-        },
-        {
-          "url": "https://bloody-disgusting.com/movie/3975590/jason-voorhees-returning-to-theaters-with-13th-feature-film-directed-by-steve-miner/",
-          "title": "Jason Voorhees Returning to Theaters With 13th Feature Film Directed by Steve Miner",
-          "publisher": "Bloody Disgusting",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYr4MkluY27gxZfTmBwcMJRfsgsHoYV7kA0JQkkWIJX-iJh7-xLe0VwNyRLGo"
-        }
-      ]
-    },
-    {
-      "query": "mike pettine",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T14:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys",
-        "https://www.nytimes.com/athletic/7791975/2026/11/18/christian-parker-dallas-cowboys-dc-play-calling/",
-        "https://www.dallascowboys.com/news/jerry-jones-cowboys-talking-about-adjustment-to-christian-parker-s-role"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuei03ZhiCg75AJupOYy08ySGiSeFpMIb4SZ4FuP0dHNPUrjKcrgscMiy_V78",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys",
-          "title": "Sources: Mike Pettine to take over defensive playcalling from Parker for Cowboys",
+          "url": "https://www.espn.com/tennis/story/_/id/50521030/alcaraz-cruises-medvedev-atp-finals-leg-issue",
+          "title": "Alcaraz cruises past Medvedev at ATP Finals despite leg issue",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuei03ZhiCg75AJupOYy08ySGiSeFpMIb4SZ4FuP0dHNPUrjKcrgscMiy_V78"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7791975/2026/11/18/christian-parker-dallas-cowboys-dc-play-calling/",
-          "title": "Christian Parker, Cowboys’ defensive coordinator, stripped of play-calling duties: Sources",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1V-xjtl323zoeFwErt1rrFWvpyyhqMqQpEwR8zK81Stitvt-M3RnJ6lQQ_OM"
-        },
-        {
-          "url": "https://www.dallascowboys.com/news/jerry-jones-cowboys-talking-about-adjustment-to-christian-parker-s-role",
-          "title": "Jerry Jones: Cowboys 'talking about' adjustment to Christian Parker's role",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK109PbkRRxt8MXGY16SJ4GV5zdamKh0sGmpzpQ6mcTcBbtYGyOjlW0b333Fw"
-        }
-      ]
-    },
-    {
-      "query": "maine rooster statue lawsuit",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T14:40:00Z",
-      "related_news_urls": [
-        "https://www.newscentermaine.com/article/news/local/ogunquit-family-sues-town-over-rooster-statues-citing-first-amendment-rights-maine/97-c3a4cee9-eff4-4616-9d8c-4fba25afaaf8",
-        "https://www.seacoastonline.com/story/news/local/york-star/2026/11/17/omelette-factory-owners-roosters-lawsuit-ogunquit-maine/92816385007/",
-        "https://ij.org/press-release/maine-family-sues-town-after-officials-declare-that-autistic-daughters-lawn-decorations-are-illegal-advertising-signs/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZsIbRvra_bbe7d4YTtLUmg_a2Bw-ESuuquqeZAxdx51azDCVIsVf0cGV9rdg",
-      "image_credit": "newscentermaine.com",
-      "news": [
-        {
-          "url": "https://www.newscentermaine.com/article/news/local/ogunquit-family-sues-town-over-rooster-statues-citing-first-amendment-rights-maine/97-c3a4cee9-eff4-4616-9d8c-4fba25afaaf8",
-          "title": "Ogunquit family sues town over rooster statues, citing First Amendment rights",
-          "publisher": "newscentermaine.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZsIbRvra_bbe7d4YTtLUmg_a2Bw-ESuuquqeZAxdx51azDCVIsVf0cGV9rdg"
-        },
-        {
-          "url": "https://www.seacoastonline.com/story/news/local/york-star/2026/11/17/omelette-factory-owners-roosters-lawsuit-ogunquit-maine/92816385007/",
-          "title": "Omelette Factory owners file federal lawsuit against Ogunquit over roosters",
-          "publisher": "Seacoastonline.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjRH-7MTizehW0ql06TydEeivwdnUv8V7FiR8qRoEXJzTMOBZGeNqjTvFiLy4"
-        },
-        {
-          "url": "https://ij.org/press-release/maine-family-sues-town-after-officials-declare-that-autistic-daughters-lawn-decorations-are-illegal-advertising-signs/",
-          "title": "Maine Family Sues Town After Officials Declare That Autistic Daughter’s Lawn Decorations Are Illegal “Advertising Signs”",
-          "publisher": "The Institute for Justice",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxmx08nIpfvHmSN1-skKp6oK76pLzz44PRM3eFghZ6j4gIVYqABGPf46qRZ3M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeI0Crctjs4nxSrlmyToBdZeOsXatAaR3-jvF820WFd_19oxZmXgkMq47Yn2o"
         }
       ]
     }
