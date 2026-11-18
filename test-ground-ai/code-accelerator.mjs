@@ -13,18 +13,20 @@ const PATH=/^(?:[a-zA-Z0-9_.-]+\/)*[a-zA-Z0-9_.-]+\.(?:mjs|js|cjs|jsx|ts|tsx|css
 const PRIVATE=/(?:^|\/)(?:private|secrets?|credentials?|\.env|node_modules)(?:\/|\.|$)/i;
 const integer=v=>Number.isSafeInteger(v)&&v>=0&&v<=1_000_000;
 const keys=(value,allowed)=>Object.keys(value).every(key=>allowed.includes(key));
-const goodCI=s=>s.sourceVerified===true&&s.type==='ci_failure'&&
+const record=s=>s!==null&&typeof s==='object'&&!Array.isArray(s);
+const outcomeSignature=s=>typeof s==='string'&&(ID.test(s)||(s.startsWith('card:')&&ID.test(s.slice(5))));
+const goodCI=s=>record(s)&&s.sourceVerified===true&&s.type==='ci_failure'&&
  keys(s,['type','signature','path','count','receipt','sourceVerified'])&&
  ID.test(s.signature||'')&&typeof s.path==='string'&&PATH.test(s.path)&&!PRIVATE.test(s.path)&&
  integer(s.count)&&s.count>0&&SRC.test(s.receipt||'');
-const goodCard=s=>s.sourceVerified===true&&s.type==='card_aggregate'&&
+const goodCard=s=>record(s)&&s.sourceVerified===true&&s.type==='card_aggregate'&&
  keys(s,['type','id','views','clicks','receipt','sourceVerified'])&&
  ID.test(s.id||'')&&integer(s.views)&&integer(s.clicks)&&s.clicks<=s.views&&D1.test(s.receipt||'');
-const goodOutcome=s=>s&&typeof s==='object'&&!Array.isArray(s)&&
+const goodOutcome=s=>record(s)&&
  keys(s,['signature','outcome','run','receipt','sourceVerified'])&&
- s.sourceVerified===true&&ID.test(s.signature||'')&&
- ['passed','failed'].includes(s.outcome)&&/^[0-9]{6,24}$/.test(String(s.run||''))&&
- SRC.exec(String(s.receipt||''))?.[1]===String(s.run);
+ s.sourceVerified===true&&outcomeSignature(s.signature)&&
+ ['passed','failed'].includes(s.outcome)&&typeof s.run==='string'&&/^[1-9][0-9]{5,23}$/.test(s.run)&&
+ SRC.exec(String(s.receipt||''))?.[1]===s.run;
 export function learnRepairOutcome(prior,outcome){
  const old=Array.isArray(prior)?prior.filter(goodOutcome).slice(-200):[];
  if(!goodOutcome(outcome))return old;
@@ -44,8 +46,11 @@ export function rankRepairCandidates({signals=[],outcomes=[]}={}){
   }else if(goodCard(s)){
    const key='card:'+s.id,prior=rows.get(key);
    const next=prior||{key,type:'card_engagement',target:s.id,views:0,clicks:0,receipts:new Set()};
-   next.views=Math.min(1_000_000,next.views+s.views);
-   next.clicks=Math.min(1_000_000,next.clicks+s.clicks);
+   // At most 300 verified signals of <=1m each: totals stay well within
+   // Number.MAX_SAFE_INTEGER. Never clamp numerator/denominator separately;
+   // that invents an engagement rate and misranks actual publisher exposure.
+   next.views+=s.views;
+   next.clicks+=s.clicks;
    next.receipts.add(s.receipt);rows.set(key,next);
   }
  }
