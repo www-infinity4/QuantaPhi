@@ -51,3 +51,39 @@ test('same error fingerprint is aggregated; histories cannot be used to mint rew
  assert.equal(results[0].productionVerified,false);
  assert.equal(results[0].walletRewards,0);
 });
+
+test('card engagement repair history accepts only canonical card:id signatures',()=>{
+ const observation={signature:'card:card-a',outcome:'passed',run:'42549289173',
+  receipt:'https://github.com/www-infinity4/QuantaPhi/actions/runs/42549289173',sourceVerified:true};
+ const accepted=learnRepairOutcome([],observation);
+ assert.equal(accepted.length,1);
+ const results=rankRepairCandidates({signals:[card('card-a',250,0)],outcomes:accepted});
+ assert.equal(results[0].history.passed,1);
+ assert.equal(results[0].suggestedPlaybook,'inspect_previous_successful_test');
+ assert.equal(learnRepairOutcome([],{...observation,signature:'other:card-a'}).length,0);
+});
+
+test('numeric run IDs cannot replay or masquerade as canonical string CI receipts',()=>{
+ const record={signature:'searxng_empty',outcome:'passed',run:'42549289173',
+  receipt:'https://github.com/www-infinity4/QuantaPhi/actions/runs/42549289173',sourceVerified:true};
+ const old=learnRepairOutcome([],record);
+ const replay=learnRepairOutcome(old,{...record,run:42549289173});
+ assert.deepEqual(replay,old);
+ const ranked=rankRepairCandidates({signals:[ci('searxng_empty')],outcomes:[record,{...record,run:42549289173}]});
+ assert.equal(ranked[0].history.observations,1);
+});
+
+test('malformed null telemetry and non-object entries are ignored safely',()=>{
+ const valid=ci('searxng_empty',2);
+ const got=rankRepairCandidates({signals:[null,undefined,42,'bad',[],valid,card('card-a',180,0)]});
+ assert.equal(got.length,2);
+ assert.equal(got[0].key,'ci:searxng_empty');
+ assert.equal(got[0].count,2);
+});
+
+test('large click-through aggregates preserve a genuine weighted percentage',()=>{
+ const v=rankRepairCandidates({signals:[card('big-card',1_000_000,6000),card('big-card',1_000_000,6000)]});
+ assert.equal(v.length,1,'combined 0.6% must not be falsely reclassified as >=1%');
+ assert.equal(v[0].views,2_000_000);
+ assert.equal(v[0].clicks,12_000);
+});
