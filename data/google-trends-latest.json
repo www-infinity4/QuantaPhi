@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T02:01:18.631352Z",
+  "checked_at": "2026-11-18T02:31:10.344795Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "julianne hough",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T01:40:00Z",
+      "query": "flames vs sharks",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T02:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/julianne-hough-turns-heads-pink-002520953.html",
-        "https://www.thebiglead.com/julianne-hough-sheer-black-minidress-dwts-35-semifinals/",
-        "https://www.the-sun.com/tv/17320052/dwts-fans-julianne-hough-nude-bodysuit-skirt-sexy-disney/"
+        "https://www.nhl.com/canadiens/video/media-op-st-louis-6408510638112",
+        "https://www.nhl.com/canucks/video/van-at-uta-recap-6408483161112",
+        "https://www.nhl.com/flames/multimedia/galleries/flames-sharks-17-11-26"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_PqEee_fAebZqC0ZMnkmzkUPHDKQVIYRxDNOLUZ8MP8p43b6VXEO3dxBP5TU",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTafybNjEf0edodq7bNd8iXookIXj9id99UAT7ATrHH8waqvE_qFMMf427c0ns",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/canadiens/video/media-op-st-louis-6408510638112",
+          "title": "Media op: St-Louis",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTafybNjEf0edodq7bNd8iXookIXj9id99UAT7ATrHH8waqvE_qFMMf427c0ns"
+        },
+        {
+          "url": "https://www.nhl.com/canucks/video/van-at-uta-recap-6408483161112",
+          "title": "VAN at UTA | Recap",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw5hfMuIWapewNO6tKoikH1bdnpIa-2SYvGUZnOJVzyJ9ClmuPwbU1xw5-8do"
+        },
+        {
+          "url": "https://www.nhl.com/flames/multimedia/galleries/flames-sharks-17-11-26",
+          "title": "Flames @ Sharks 17.11.26",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-EgC0IhuI8CGBWG8cKWXg7KEOU6uoP4LJKhif4wR1xsFKf9h31z_DEso4f-c"
+        }
+      ]
+    },
+    {
+      "query": "college basketball scores",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T02:10:00Z",
+      "related_news_urls": [
+        "https://www.oskaloosa.com/sports/agate/womens-college-basketball-scores/article_18a9ee02-9d48-5b08-afeb-d1f9b748eb24.html",
+        "https://www.bdtonline.com/sports/national_sports/womens-college-basketball-scores/article_9af0aa22-61b6-5cd0-9d35-2615100afe0e.html",
+        "https://www.bdtonline.com/sports/national_sports/womens-college-basketball-scores/article_26f059dd-8888-5dbf-be86-a774cb074124.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxD8iQsxbS39mZq4klK4BKszdoVWxMw4K6K_rCDJ723bWlryGxqdWZDaBLzE",
+      "image_credit": "Oskaloosa Herald",
+      "news": [
+        {
+          "url": "https://www.oskaloosa.com/sports/agate/womens-college-basketball-scores/article_18a9ee02-9d48-5b08-afeb-d1f9b748eb24.html",
+          "title": "Women's College Basketball Scores",
+          "publisher": "Oskaloosa Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxD8iQsxbS39mZq4klK4BKszdoVWxMw4K6K_rCDJ723bWlryGxqdWZDaBLzE"
+        },
+        {
+          "url": "https://www.bdtonline.com/sports/national_sports/womens-college-basketball-scores/article_9af0aa22-61b6-5cd0-9d35-2615100afe0e.html",
+          "title": "Women's College Basketball Scores",
+          "publisher": "Bluefield Daily Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8_SEDXmSB6SixxLSLmjeaTZouryvvI7Nr4xbJXMS8YRucw0ORsr2M4kgRnGI"
+        },
+        {
+          "url": "https://www.bdtonline.com/sports/national_sports/womens-college-basketball-scores/article_26f059dd-8888-5dbf-be86-a774cb074124.html",
+          "title": "Women's College Basketball Scores",
+          "publisher": "Bluefield Daily Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8_SEDXmSB6SixxLSLmjeaTZouryvvI7Nr4xbJXMS8YRucw0ORsr2M4kgRnGI"
+        }
+      ]
+    },
+    {
+      "query": "mike pence",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T02:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/meet-the-press/video/mike-pence-if-gop-doesn-t-return-to-traditional-values-it-won-t-matter-who-we-nominate-in-2028-273551429689",
+        "https://thehill.com/homenews/administration/6221381-pence-vance-midterm-losses/",
+        "https://www.foxnews.com/politics/pence-delivers-scathing-rebuke-vances-iran-war-assessment-blames-trump-policies-gop-losses"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKbBXtDpjE1NYIF3mk0f5gscvI6p1efqa-haybQgHhbUudi8vEWbNFCIyQApk",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/meet-the-press/video/mike-pence-if-gop-doesn-t-return-to-traditional-values-it-won-t-matter-who-we-nominate-in-2028-273551429689",
+          "title": "Mike Pence: If GOP doesn’t return to traditional values, ‘it won’t matter who we nominate in 2028’",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKbBXtDpjE1NYIF3mk0f5gscvI6p1efqa-haybQgHhbUudi8vEWbNFCIyQApk"
+        },
+        {
+          "url": "https://thehill.com/homenews/administration/6221381-pence-vance-midterm-losses/",
+          "title": "Pence calls Vance ‘wrong’ on Iran war, GOP midterm losses",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_yOLVyiKWFapMmI0S3IK2Gfr-bhmaP5HCywlCOPnnHM-Ln6R9RoAv3Bc5qJw"
+        },
+        {
+          "url": "https://www.foxnews.com/politics/pence-delivers-scathing-rebuke-vances-iran-war-assessment-blames-trump-policies-gop-losses",
+          "title": "Pence delivers scathing rebuke of Vance's Iran war assessment, blames Trump policies for GOP losses",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4J8nlqZreJMXVs782NyKl4DuhWO0tMWfJxtw1VpAGDNXOmnkqkMaJ-NbC4MA"
+        }
+      ]
+    },
+    {
+      "query": "miss universe 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T02:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/articles/miss-universe-2026-hosts-confirmed-230831089.html",
+        "https://www.hola.com/us/celebrities/20261113934981/miss-universe-2026-latinas/",
+        "https://metro.style/fashion/2026/11/9/miss-universe-2026-strongest-and-most-stylish-candidates-1400"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6r2_Is1WXEqSDVCDOxqefsTO4N_gbfw79HiOLvLkTJ4CYFZYKg7y4EVZCgME",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/julianne-hough-turns-heads-pink-002520953.html",
-          "title": "Julianne Hough turns heads in pink Valentino dress for DWTS 35 semifinals",
+          "url": "https://www.yahoo.com/entertainment/articles/miss-universe-2026-hosts-confirmed-230831089.html",
+          "title": "Miss Universe 2026 hosts confirmed: Meet the star-studded lineup",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_PqEee_fAebZqC0ZMnkmzkUPHDKQVIYRxDNOLUZ8MP8p43b6VXEO3dxBP5TU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6r2_Is1WXEqSDVCDOxqefsTO4N_gbfw79HiOLvLkTJ4CYFZYKg7y4EVZCgME"
         },
         {
-          "url": "https://www.thebiglead.com/julianne-hough-sheer-black-minidress-dwts-35-semifinals/",
-          "title": "Julianne Hough shows off pre-‘DWTS 35’ semifinals glam with co-host Alfonso Ribeiro",
-          "publisher": "The Big Lead",
+          "url": "https://www.hola.com/us/celebrities/20261113934981/miss-universe-2026-latinas/",
+          "title": "Miss Universe 2026: The Latinas vying for the crown",
+          "publisher": "HOLA",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDmCjTseFagiGJnAGEjcVUqXZrEdL5iGqFyPTcyKW5mqrYxEofaF218RBTjFM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGxaQ-XgeOMBGKbFf43ea07uB72k-NlwiFll2SF15oio4nFarf-ldl-JQ0TpI"
         },
         {
-          "url": "https://www.the-sun.com/tv/17320052/dwts-fans-julianne-hough-nude-bodysuit-skirt-sexy-disney/",
-          "title": "DWTS fans brand Julianne Hough’s nude bodysuit and totally see-through skirt ‘too sexy for Disney’",
-          "publisher": "www.the-sun.com",
+          "url": "https://metro.style/fashion/2026/11/9/miss-universe-2026-strongest-and-most-stylish-candidates-1400",
+          "title": "The Miss Universe 2026 Favorites: Strongest Contenders and Most Stylish Queens",
+          "publisher": "Metro.Style",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ0t9_KPGsYruqI2yjgUlV9Um7lroSuSFkp1JDoIe92Z1xGd11xQnh7Rv91hI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYdGmGe-0NFglVkRgQqLTnpbmhWNzkpZ3w8UqfcGcvOvb89sCph0_nT7egRp8"
         }
       ]
     },
     {
-      "query": "rudy gobert",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T01:40:00Z",
+      "query": "connor mcdavid",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T02:10:00Z",
       "related_news_urls": [
-        "https://bringmethesports.com/chris-finch-bluntly-calls-out-rudy-gobert-after-wolves-loss-to-bulls",
-        "https://sports.yahoo.com/articles/dwyane-wade-hits-back-rudy-163809703.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/17/he-has-had-four-games-this-season-that-he-has-not/92835088007/"
+        "https://www.espn.com/nhl/story/_/id/50502384/nhl-2026-27-connor-mcdavid-scoring-200-points-stats-record-wayne-gretzky",
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-17-2026",
+        "https://www.sportsnet.ca/nhl/article/oilers-mcdavid-ties-gretzkys-record-for-fewest-games-to-record-40-assists/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYIs6gF71nRcWGZFPDdBbO25qXv65TH5NohONArvY83RLjfh_5syQSQ1dPGA",
-      "image_credit": "Bring Me the Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRMMZ8YONAfIxtfA59Q3jhWTuqh666tX5nnezeHVCA0BYrIAi_y91k5yUXPNw",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://bringmethesports.com/chris-finch-bluntly-calls-out-rudy-gobert-after-wolves-loss-to-bulls",
-          "title": "Chris Finch bluntly calls out Rudy Gobert after Wolves’ loss to Bulls",
-          "publisher": "Bring Me the Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYIs6gF71nRcWGZFPDdBbO25qXv65TH5NohONArvY83RLjfh_5syQSQ1dPGA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/dwyane-wade-hits-back-rudy-163809703.html",
-          "title": "Dwyane Wade hits back at Rudy Gobert critics for having unreasonable expectations of Timberwolves star",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9V89LqE8ZOzTMik7NNM61kKLt0kcjjypxnaeWajBjIGgG0J3VITCuMDDqm9A"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/17/he-has-had-four-games-this-season-that-he-has-not/92835088007/",
-          "title": "“He has had four games this season that he has not …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR85C8VPCTeNTRa585f5TytfIOpdkO022aLRF791kVXY3Pwa4fLhr6r1-1ufbU"
-        }
-      ]
-    },
-    {
-      "query": "wake forest basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T01:40:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/17/frank-fritz-american-pickers-estate-battle-settlement/92826662007/",
-        "https://missoulian.com/news/local/business/article_5dd5ed47-aefb-46fe-b05e-f58c3cfe409f.html",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-230052550.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCqPkLLfV-U9XBYj5Q-c9OeMIGkib2uWqTNeRxXGBJD589hNb65TXZ2ZEFjMI",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/17/frank-fritz-american-pickers-estate-battle-settlement/92826662007/",
-          "title": "'American Pickers' star Frank Fritz estate suit ends in last-minute settlement",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCqPkLLfV-U9XBYj5Q-c9OeMIGkib2uWqTNeRxXGBJD589hNb65TXZ2ZEFjMI"
-        },
-        {
-          "url": "https://missoulian.com/news/local/business/article_5dd5ed47-aefb-46fe-b05e-f58c3cfe409f.html",
-          "title": "Mechanical failure ruins in-demand Missoula rink's outdoor ice, costs $30K",
-          "publisher": "The Missoulian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNbybb3pz3QyP6fd61C9cjHtEBPMu7E7-AkqLIilY2_E2yT3Z_u9wugqSvpVk"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-230052550.html",
-          "title": "‘American Pickers’ Star Frank Fritz’s $6M Estate Heads to Jury Trial as Father Battles Friends Named in Will",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3YZEzOc4UvWZrrXPi9itE6DyuvJzRiLKoAdpaS2qd_qFTrZNKUDNFze6jKSE"
-        }
-      ]
-    },
-    {
-      "query": "alfonso ribeiro",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T01:40:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/fr/news/ni66115869/?ref_=nwc_art_perm",
-        "https://www.tvinsider.com/swooon/1313145/alfonso-ribeiro-wife-angela-kids-family-divorce/",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/julianne-hough-turns-heads-pink-002520953.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU5o1ny5HMSyA26Vsqy9UgernM4RzEH2ZQ23Qn3wj5wmkfYAhdLEZe18SR73k",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/fr/news/ni66115869/?ref_=nwc_art_perm",
-          "title": "All About ‘DWTS’ Host Alfonso Ribeiro’s Wife & Family",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU5o1ny5HMSyA26Vsqy9UgernM4RzEH2ZQ23Qn3wj5wmkfYAhdLEZe18SR73k"
-        },
-        {
-          "url": "https://www.tvinsider.com/swooon/1313145/alfonso-ribeiro-wife-angela-kids-family-divorce/",
-          "title": "Alfonso Ribeiro's Wife Angela: Their Relationship, Children, His Divorce, and More",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtBMmiXEBvcCtTT5fW1XVS3_-5sbjOpwaMr0BXOygyEpe2RHCxRMXQMnftkjI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/julianne-hough-turns-heads-pink-002520953.html",
-          "title": "Julianne Hough turns heads in pink Valentino dress for DWTS 35 semifinals",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_PqEee_fAebZqC0ZMnkmzkUPHDKQVIYRxDNOLUZ8MP8p43b6VXEO3dxBP5TU"
-        }
-      ]
-    },
-    {
-      "query": "mark zuckerberg",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T01:40:00Z",
-      "related_news_urls": [
-        "https://cryptonews.com/news/mark-zuckerbergs-meta-ai-predicts-wild-aster-crypto-rally/",
-        "https://www.forbes.com/sites/fionariley/2026/11/17/meta-shareholder-sues-zuckerberg-other-company-leaders-for-allegedly-presenting-misleading-information-on-social-media-safety-for-kids/",
-        "https://www.dailyjournal.com/article/396341-meta-directors-accused-of-concealing-platform-harms-to-protect-user-growth"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2qo__SwtrRezIN_5zupSnTD7AqEQYfHJVx80e4omEpfQ_OfFVRoEoXvnwgVE",
-      "image_credit": "Cryptonews",
-      "news": [
-        {
-          "url": "https://cryptonews.com/news/mark-zuckerbergs-meta-ai-predicts-wild-aster-crypto-rally/",
-          "title": "Mark Zuckerberg’s Meta AI Predicts an Unbelievable ASTER Crypto Rally",
-          "publisher": "Cryptonews",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2qo__SwtrRezIN_5zupSnTD7AqEQYfHJVx80e4omEpfQ_OfFVRoEoXvnwgVE"
-        },
-        {
-          "url": "https://www.forbes.com/sites/fionariley/2026/11/17/meta-shareholder-sues-zuckerberg-other-company-leaders-for-allegedly-presenting-misleading-information-on-social-media-safety-for-kids/",
-          "title": "Meta Shareholder Sues Zuckerberg, Other Company Leaders For Allegedly Presenting Misleading Information On Social Media Safety For Kids",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQsGZm4Ax5-S-E31ZSXnoq_e9dcyvUwjRqCNS5r6OEKGk91ms5phIC5LuJUJs"
-        },
-        {
-          "url": "https://www.dailyjournal.com/article/396341-meta-directors-accused-of-concealing-platform-harms-to-protect-user-growth",
-          "title": "Meta directors accused of concealing platform harms to protect user growth",
-          "publisher": "Daily Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLo20AFV4Nrkh77d3DFfxWTAiuXvIPZUR1HpFJ1nEZyHUaUxYiTF3yeSvNJz8"
-        }
-      ]
-    },
-    {
-      "query": "rumer willis",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T01:40:00Z",
-      "related_news_urls": [
-        "https://wwd.com/pop-culture/celebrity-news/gallery/2026-baby2baby-gala-red-carpet-style-photos-1239416697/",
-        "https://www.vanityfair.com/story/demi-moore-tallulah-willis-baby2baby",
-        "https://www.marieclaire.com/fashion/celebrity-style/cardi-b-tamara-ralph-couture-feathery-fluffy-hat/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-wz-In8-yKViliprOdXjhMTRRLAz0m0q13cJ_ZueseptgT0C9iw0OtVMsmII",
-      "image_credit": "WWD",
-      "news": [
-        {
-          "url": "https://wwd.com/pop-culture/celebrity-news/gallery/2026-baby2baby-gala-red-carpet-style-photos-1239416697/",
-          "title": "Demi Moore, Cardi B and More Stars Arrive at the 2026 Baby2Baby Gala",
-          "publisher": "WWD",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-wz-In8-yKViliprOdXjhMTRRLAz0m0q13cJ_ZueseptgT0C9iw0OtVMsmII"
-        },
-        {
-          "url": "https://www.vanityfair.com/story/demi-moore-tallulah-willis-baby2baby",
-          "title": "Tallulah Willis: I Stayed Out Past My Bedtime to Celebrate My Mom at the Baby2Baby Gala",
-          "publisher": "Vanity Fair",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdFcCFMfgrZ6dZAhmS7-FnbmP-lKq3vKoif6f9PrAYYiSl3UvZPEUjaKp40Ho"
-        },
-        {
-          "url": "https://www.marieclaire.com/fashion/celebrity-style/cardi-b-tamara-ralph-couture-feathery-fluffy-hat/",
-          "title": "Cardi B Steals the Show in a Fluffy, Feathery Hat and a Corseted Halter Gown at the 2026 Baby2Baby Gala",
-          "publisher": "Marie Claire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSviaCDNQYxjac6tA8Ty4Tn1gdTIJMqZxfLTI_orqzzyWC2tZinbnN9GXh_Zcg"
-        }
-      ]
-    },
-    {
-      "query": "cayden boozer",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T01:30:00Z",
-      "related_news_urls": [
-        "https://siuecougars.com/news/2026/11/13/a-letter-from-mens-basketball-head-coach-brian-barone-ahead-of-the-duke-game.aspx",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909565",
-        "https://247sports.com/college/duke/article/duke-takeaways-williams-offensive-roles-and-illinois-next-292672491/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgauJiCAUNtYKrFbgehYJM_ZGk8hwXXgrVYvLzIvMpDqtyR8Kyobh0fV7ZX1k",
-      "image_credit": "SIUE Cougars Official Athletic Site",
-      "news": [
-        {
-          "url": "https://siuecougars.com/news/2026/11/13/a-letter-from-mens-basketball-head-coach-brian-barone-ahead-of-the-duke-game.aspx",
-          "title": "A Letter from Men's Basketball Head Coach Brian Barone Ahead of the Duke Game",
-          "publisher": "SIUE Cougars Official Athletic Site",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgauJiCAUNtYKrFbgehYJM_ZGk8hwXXgrVYvLzIvMpDqtyR8Kyobh0fV7ZX1k"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909565",
-          "title": "Duke 90-47 SIU Edwardsville (Nov 13, 2026) Game Recap",
+          "url": "https://www.espn.com/nhl/story/_/id/50502384/nhl-2026-27-connor-mcdavid-scoring-200-points-stats-record-wayne-gretzky",
+          "title": "The Connor McDavid Scoring Tracker: Can the Oilers' superstar break 200 points?",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6p9Ydi22Sg4l5vRSNcDmPMzdHESrDFLzp2ByBu3MGOlNCgmGCNXukSb3W2-s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRMMZ8YONAfIxtfA59Q3jhWTuqh666tX5nnezeHVCA0BYrIAi_y91k5yUXPNw"
         },
         {
-          "url": "https://247sports.com/college/duke/article/duke-takeaways-williams-offensive-roles-and-illinois-next-292672491/",
-          "title": "Duke takeaways: Williams, offensive roles and Illinois next",
-          "publisher": "247Sports",
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-17-2026",
+          "title": "NHL On Tap: McDavid on 22-game run for streaking Oilers",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfir9pzq0AFtwc8kG53WitaRA9SzHAho63KhEbyYEeRj3nllfi-oDE2CT_btc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOZTdcDXmJaEYQxS7m2jWYDw6HcefbG4xI8lIqz7YoiuPH_o4TXduOHH5zYA0"
+        },
+        {
+          "url": "https://www.sportsnet.ca/nhl/article/oilers-mcdavid-ties-gretzkys-record-for-fewest-games-to-record-40-assists/",
+          "title": "Oilers' McDavid ties Gretzky's record for fewest games to record 40 assists",
+          "publisher": "Sportsnet.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShHdmelY3USQqZyArrB7SQURTxktAvnNhP6pU49dVijEKuGc3dmstwIXi8CRU"
         }
       ]
     },
     {
-      "query": "john collins",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T01:30:00Z",
-      "related_news_urls": [
-        "https://pistonpowered.com/john-collins-poor-finishing-just-big-problem-shooting",
-        "https://www.rotowire.com/basketball/headlines/john-collins-news-quiet-in-loss-538315",
-        "https://detroitjockcity.com/pistons-should-seriously-consider-trading-john-collins-upgrade-01m7d5ks1s8h"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr9DjUe1CGmVBp67jQkevmak8_XSRs65YMIWhxnaIgqj8voZHw5Iz4dYGXD4Q",
-      "image_credit": "PistonPowered",
-      "news": [
-        {
-          "url": "https://pistonpowered.com/john-collins-poor-finishing-just-big-problem-shooting",
-          "title": "John Collins' poor finishing is just as big of a problem as his shooting",
-          "publisher": "PistonPowered",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr9DjUe1CGmVBp67jQkevmak8_XSRs65YMIWhxnaIgqj8voZHw5Iz4dYGXD4Q"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/john-collins-news-quiet-in-loss-538315",
-          "title": "John Collins News: Quiet in loss",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRGZ2xFpSs8gin9AaF0R8sg4LTX8sK3VNo9_PTH_8Wsu7lrJzHa_JiGT3MeZk"
-        },
-        {
-          "url": "https://detroitjockcity.com/pistons-should-seriously-consider-trading-john-collins-upgrade-01m7d5ks1s8h",
-          "title": "Pistons should seriously consider trading for a John Collins upgrade",
-          "publisher": "Detroit Jock City",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnjRnZyD_qwj7iyK5pflGGGP8yhLFzxzrDffSnk-EgJwicAruexE8JAVXMIM"
-        }
-      ]
-    },
-    {
-      "query": "maura higgins",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T01:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/maura-higgins-dropping-dancing-stars-135839250.html",
-        "https://www.the-sun.com/tv/17311905/dwts-maura-higgins-rib-injury-quit-show-semifinals/",
-        "https://www.thesun.co.uk/video/41054691/dwts-maura-higgins-suffers-fresh-injury-setback-before-semifinals/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEqoUPv_tjQzWKAYPJX2cfLAkelH_KMYSV91gZMoXGf8QoBvuzl7LasMKRuk",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/maura-higgins-dropping-dancing-stars-135839250.html",
-          "title": "Is Maura Higgins Dropping Out of ‘Dancing With the Stars’? Doctors Have Allegedly Recommended She Quit",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEqoUPv_tjQzWKAYPJX2cfLAkelH_KMYSV91gZMoXGf8QoBvuzl7LasMKRuk"
-        },
-        {
-          "url": "https://www.the-sun.com/tv/17311905/dwts-maura-higgins-rib-injury-quit-show-semifinals/",
-          "title": "DWTS’ Maura Higgins injures her rib AGAIN and has to cancel another rehearsal days before live semifinals",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSN3ljlF8dfXbNw1n6KQ6nTYFJET8vdiLoVz5grOEj_lehTIXNIcGcZSSZ-A14"
-        },
-        {
-          "url": "https://www.thesun.co.uk/video/41054691/dwts-maura-higgins-suffers-fresh-injury-setback-before-semifinals/",
-          "title": "DWTS’ Maura Higgins suffers fresh injury setback before semifinals",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8Hj7nZufAGKD1-a433AIgC8sgMJWUo9gc0ccIsn9Ge8LtAvx8MLVW7U-mXV8"
-        }
-      ]
-    },
-    {
-      "query": "cavan sullivan",
+      "query": "stars vs golden knights",
       "approx_searches": "1000+",
-      "published_at": "2026-11-18T01:20:00Z",
+      "published_at": "2026-11-18T02:00:00Z",
       "related_news_urls": [
-        "https://www.philadelphiaunion.com/news/official-playoffs-watch-parties-set-for-this-weekend",
-        "https://www.mlssoccer.com/playoffs/2026/news/new-england-revolution-vs-philadelphia-union-5-biggest-storylines-for-round-one-series",
-        "https://sports.yahoo.com/articles/england-revolution-vs-philadelphia-union-150900989.html"
+        "https://www.bbc.com/sport/football/live/cr0qkjj3e11xt",
+        "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2175414",
+        "https://baseline.sg/news/lee-challenges-lions-to-compete-for-90-minutes-against-brazil/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ZSPKCpTeAtWF8moqNXAE1tDedXJQrjRpdvjVH8xgrMbBd6qDCkSD7H_SlIg",
-      "image_credit": "Philadelphia Union",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKslrteTvaj5lVdAHSjo5ctBYlIYykUkxKdNQx7xOhYQOY9ULLie9HYo-ZsYc",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.philadelphiaunion.com/news/official-playoffs-watch-parties-set-for-this-weekend",
-          "title": "Official Playoffs Watch Parties Set for this weekend",
-          "publisher": "Philadelphia Union",
+          "url": "https://www.bbc.com/sport/football/live/cr0qkjj3e11xt",
+          "title": "Singapore vs Paraguay: Friendlies stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ZSPKCpTeAtWF8moqNXAE1tDedXJQrjRpdvjVH8xgrMbBd6qDCkSD7H_SlIg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKslrteTvaj5lVdAHSjo5ctBYlIYykUkxKdNQx7xOhYQOY9ULLie9HYo-ZsYc"
         },
         {
-          "url": "https://www.mlssoccer.com/playoffs/2026/news/new-england-revolution-vs-philadelphia-union-5-biggest-storylines-for-round-one-series",
-          "title": "New England Revolution vs. Philadelphia Union: 5 biggest storylines for Round One series",
-          "publisher": "MLSsoccer.com",
+          "url": "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2175414",
+          "title": "*[Free] * Dallas Stars vs Vegas Golden Knights Live 𝐒𝐭𝐫𝐞𝐚𝐦𝐬 NHL",
+          "publisher": "Powell River Peak",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSQVE4D3An_HzHhO-Aq680JxLXpHsSuue1ShYniMVfB1Xqo4GhFmBrFMw4Qbk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUFxveGwaBEzBLDtzlwl5Dw_M-eaxytguqbKjzRqMZmmLBRXLEqSG0Uf-sNQE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/england-revolution-vs-philadelphia-union-150900989.html",
-          "title": "New England Revolution vs. Philadelphia Union: How to watch, stream Round One Game 1",
-          "publisher": "Yahoo Sports",
+          "url": "https://baseline.sg/news/lee-challenges-lions-to-compete-for-90-minutes-against-brazil/",
+          "title": "Lee challenges Lions to compete for 90 minutes against Brazil",
+          "publisher": "baseline.sg",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7j8TmPpXo90T0bMrlp-Lh9yxKFznsCLupACNBK7cqmaaJ1Sn-Wh4GrbtWvSc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJ-bF8aCFVLj1M9oi-1Jwr5jY26eLoDvXiH1WfrdbUDYymDKRh5q7qO_zu64o"
+        }
+      ]
+    },
+    {
+      "query": "cbb",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T02:00:00Z",
+      "related_news_urls": [
+        "https://www.al.com/betting/2026/11/novig-promo-code-alcom-get-a-50-bonus-for-maction-football-cbb-and-nba-games-nov-17.html",
+        "https://www.saturdaydownsouth.com/news/betting/novig-promo-code-rad50-deposit-10-get-50-bonus-for-nba-nhl-ncaab-trades-nov-17/",
+        "https://wtop.com/news/2026/11/novig-promo-code-wtop-get-50-in-trade-credits-for-chargers-ravens/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwtj6Hh0REzoVKJR5FEWMabYSrHNsEA_hpyJINatxi5RxC4Fo3ihFMXv8aFic",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/betting/2026/11/novig-promo-code-alcom-get-a-50-bonus-for-maction-football-cbb-and-nba-games-nov-17.html",
+          "title": "Novig Promo Code ALCOM: Get a $50 bonus for MACtion football, CBB and NBA games (Nov. 17)",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwtj6Hh0REzoVKJR5FEWMabYSrHNsEA_hpyJINatxi5RxC4Fo3ihFMXv8aFic"
+        },
+        {
+          "url": "https://www.saturdaydownsouth.com/news/betting/novig-promo-code-rad50-deposit-10-get-50-bonus-for-nba-nhl-ncaab-trades-nov-17/",
+          "title": "Novig Promo Code RAD50: Deposit $10, Get $50 Bonus for NBA, NHL, NCAAB Trades (Nov. 17)",
+          "publisher": "Saturday Down South",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxgAL5KuvAZYFbq5a-ytZRYuiyU9UvZw_3hijilTxC3zy7iSZo5RM9-WfitY"
+        },
+        {
+          "url": "https://wtop.com/news/2026/11/novig-promo-code-wtop-get-50-in-trade-credits-for-chargers-ravens/",
+          "title": "Novig Promo Code WTOP: Get $50 in Trade Credits For Chargers-Ravens – WTOP News",
+          "publisher": "WTOP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-_kSVjK8dPEUx3kp7GNTOhE_1VErvDjig1y4NxhjylPN9G2zFVXNi5lc5lc8"
+        }
+      ]
+    },
+    {
+      "query": "portillos",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T02:00:00Z",
+      "related_news_urls": [
+        "https://www.khou.com/article/life/food/houston-portillos-closed-katy-willowbrook-richmond/285-d4f54259-8006-4183-b0ca-778dfb5e99b3",
+        "https://www.wfaa.com/article/money/business/portillos-closing-mansfield-fort-worth-texas/287-ecc6239c-1b44-453b-acb4-83e5afe207fe",
+        "https://houston.culturemap.com/news/restaurants-bars/portillos-closures-katy-richmond-willowbrook/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp7RovctMUVZjn90EZZHIBcBQoufZEMiFs_spgslkkybjTW9Pd1efuksNdVz0",
+      "image_credit": "KHOU",
+      "news": [
+        {
+          "url": "https://www.khou.com/article/life/food/houston-portillos-closed-katy-willowbrook-richmond/285-d4f54259-8006-4183-b0ca-778dfb5e99b3",
+          "title": "Portillo's has closed these three locations in the Houston area",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp7RovctMUVZjn90EZZHIBcBQoufZEMiFs_spgslkkybjTW9Pd1efuksNdVz0"
+        },
+        {
+          "url": "https://www.wfaa.com/article/money/business/portillos-closing-mansfield-fort-worth-texas/287-ecc6239c-1b44-453b-acb4-83e5afe207fe",
+          "title": "Portillo's is closing locations in North Texas",
+          "publisher": "WFAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRC0XUDs7DxhiKJi1dE5e2YS49KksbXVT32uOgYoFKdbqhP-KftIkhVbEvIg6s"
+        },
+        {
+          "url": "https://houston.culturemap.com/news/restaurants-bars/portillos-closures-katy-richmond-willowbrook/",
+          "title": "Chicago hot dog king Portillo's closes 3 Houston-area restaurants",
+          "publisher": "CultureMap Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVsi4uefh1YjI6OqB80wtt63Cl71c_3ROrjnEJsqkBKKyMg_7ZK41r_GdIqxQ"
+        }
+      ]
+    },
+    {
+      "query": "ja'kobe walter",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T01:50:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/watch/video/immanuel-quickley-from-deep-7",
+        "https://raptorsrapture.com/immanuel-quickley-and-ja-kobe-walter-must-deliver-as-the-raptors-chase-knicks-payback",
+        "https://www.espn.com/video/clip/_/id/50465943/immanuel-quickley-somehow-gets-1-fall"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3gsHk7cyc1kbxQ_twkUhRDEmYPOG3DJdeCAZ3U_z0rJqbxoD699e0f2VBMg",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/watch/video/immanuel-quickley-from-deep-7",
+          "title": "Immanuel Quickley from deep!",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3gsHk7cyc1kbxQ_twkUhRDEmYPOG3DJdeCAZ3U_z0rJqbxoD699e0f2VBMg"
+        },
+        {
+          "url": "https://raptorsrapture.com/immanuel-quickley-and-ja-kobe-walter-must-deliver-as-the-raptors-chase-knicks-payback",
+          "title": "Immanuel Quickley and Ja’Kobe Walter must deliver as the Raptors chase Knicks payback",
+          "publisher": "Raptors Rapture",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSjBDmkst2eHgKc8sIojRYtKfJH5K1BdHrDbOXdKS5dETN-Pxe9buE7oOapug"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50465943/immanuel-quickley-somehow-gets-1-fall",
+          "title": "Immanuel Quickley somehow gets the and-1 to fall",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1qrbyi88gwD7Zhy5KG0jzk21SbK4JHyz-hKwn03CRJTP-OGDGPPKzqmJ2Z9s"
+        }
+      ]
+    },
+    {
+      "query": "ayo dosunmu",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T01:50:00Z",
+      "related_news_urls": [
+        "https://slamonline.com/nba/timberwolves-back-on-track-despite-anthony-edwards-absence/",
+        "https://www.nba.com/news/ayo-dosunmu-lift-wolves-sans-anthony-edwards",
+        "https://bringmethesports.com/timberwolves-insider-gives-encouraging-early-anthony-edwards-injury-update"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz2zgkGeNASE7OclrGVHk3bi984z9c1fiWPwvboVBGCtulRSTHBdWWYfMuuUU",
+      "image_credit": "SLAM Online",
+      "news": [
+        {
+          "url": "https://slamonline.com/nba/timberwolves-back-on-track-despite-anthony-edwards-absence/",
+          "title": "Timberwolves Back on Track Despite Anthony Edwards’ Absence",
+          "publisher": "SLAM Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz2zgkGeNASE7OclrGVHk3bi984z9c1fiWPwvboVBGCtulRSTHBdWWYfMuuUU"
+        },
+        {
+          "url": "https://www.nba.com/news/ayo-dosunmu-lift-wolves-sans-anthony-edwards",
+          "title": "Ayo Dosunmu is helping keep the Timberwolves on track while Anthony Edwards recovers",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2uYN9KseH5Eq3a0-7mGXwCfKKi5jiXscVppC4MtSDdoQ20vvTvoJ-WX7jbWo"
+        },
+        {
+          "url": "https://bringmethesports.com/timberwolves-insider-gives-encouraging-early-anthony-edwards-injury-update",
+          "title": "Timberwolves insider gives encouraging early Anthony Edwards injury update",
+          "publisher": "Bring Me the Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5pOu97f1__wIikiFonD9wfGluv9MHREYI0shxmjhodVF3jBXcecn-y40GPQ"
         }
       ]
     }
