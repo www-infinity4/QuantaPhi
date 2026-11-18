@@ -51,7 +51,7 @@ test('personal context Bubble Bits display server-confirmed credits without brow
 });
 
 test('all Bubbles website entrypoints request the repaired scripts instead of stale cached versions',()=>{
- const revision='20261108-native-bubbles3';
+ const revision='20261111-zeus-terminal1';
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   assert.match(source(path),new RegExp('/bubbles-ai\\.js\\?v='+revision));
  }

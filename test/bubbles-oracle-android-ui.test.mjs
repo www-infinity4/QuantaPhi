@@ -21,7 +21,7 @@ test('Android chat scroll and composer remain distinct, readable surfaces',()=>{
  assert.match(css,/--bco-violet: #5f2c91/);
  assert.ok(app.includes('chatScroll.prepend(browserHome)'), 'real browser inside scroll owner');
  assert.ok(app.includes('tools.append(quick)'), 'owner approval remains reachable in Options without obstructing chat');
- assert.ok(app.includes('if(!nativeOverlay && window.innerWidth>600)input.focus()'), 'no automatic Android keyboard');
+ assert.match(app,/if\(!embedded\s*&&\s*!nativeOverlay\s*&&\s*window\.innerWidth>600\)input\.focus\(\)/, 'embedded Zeus cannot steal focus; narrow Android viewports do not auto-open a keyboard');
  assert.ok(!app.includes('panel.style.height=(viewport?viewport.height:window.innerHeight)'), 'one viewport sizing handler');
  assert.match(app,/quickButton\.dataset\.connected='true'/);
  assert.match(css,/Preserve Bubbles' original blue animated orb/);
