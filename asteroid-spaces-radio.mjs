@@ -1,7 +1,7 @@
 /* ASTEROID RADIO · Media Star host card. Read-only public curated D1, static verified-source fallback.
  * Provider controls all playback. An indexed link never proves working audio.
  */
-import {normalizeAsteroidCatalog,chooseNextAsteroid} from './asteroid-spaces-model.mjs';
+import {chooseNextAsteroid,readAsteroidCatalog} from './asteroid-spaces-model.mjs';
 const root=document.getElementById('asteroidSpacesRadio');
 if(root){
  const endpoint='https://media-star-following-spaces.marvaseater.workers.dev/v1/curated/asteroid';
@@ -78,28 +78,13 @@ if(root){
  reload.addEventListener('click',()=>void refresh());
  async function refresh(){
   state.loading=true;state.notice='';render();
-  let items=[],label='';
-  try{
-   const response=await fetch(endpoint,{cache:'no-store'});
-   if(!response.ok)throw Error('catalog unavailable');
-   const body=await response.json();
-   if(!body||!Array.isArray(body.episodes))throw Error('invalid catalog');
-   items=normalizeAsteroidCatalog(body.episodes);
-   if(items.length)label='Media Star public D1 index';
-  }catch{}
-  if(!items.length){
-   try{
-    const response=await fetch(index,{cache:'no-store'});
-    if(!response.ok)throw Error('source index unavailable');
-    const body=await response.json();
-    if(body.handle!=='A5T3R0lD'||!Array.isArray(body.episodes))throw Error('invalid fallback');
-    items=normalizeAsteroidCatalog(body.episodes);
-    if(items.length)label='source-backed fallback';
-   }catch{}
-  }
-  state.episodes=items;state.source=label||'no catalog available';
-  state.currentId=items.some(x=>x.id===state.currentId)?state.currentId:(items[0]?.id||null);
-  state.notice=!items.length?'No verified catalog rows returned. No recordings invented.':label==='source-backed fallback'?'Public database not available yet; showing the verified source file.':'Indexed source links loaded; playback has not been verified.';
+  const result=await readAsteroidCatalog(fetch,endpoint,index);
+  state.episodes=result.episodes;state.source=result.source;
+  state.currentId=result.episodes.some(x=>x.id===state.currentId)?state.currentId:(result.episodes[0]?.id||null);
+  state.notice=result.unavailable?'Catalog temporarily unavailable; no recordings invented.':
+   !result.episodes.length?'No approved ASTEROID RADIO recordings are in the public database.':
+   result.source==='source-backed fallback'?'Public database not available yet; showing the verified source file.':
+   'Indexed source links loaded; playback has not been verified.';
   state.loading=false;render();
  }
  render();void refresh();
