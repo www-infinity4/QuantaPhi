@@ -18,6 +18,7 @@ export const cards=Object.freeze([
  app('reader-sports','Sports Almanac','/?card=infinityReaderSports','QuantaPhi',['sports history','sports stories']),
  app('reader-cosmic','Beyond the Signal','/?card=infinityReaderCosmic','QuantaPhi',['science fiction stories','space mysteries']),
  local('image-builder','Image Generator','phiImageBuilder',['phi-visual-render.js','phi-generation-references.js','phi-image-builder.js'],['phi-image-builder.css'],['image builder','image studio']),
+app('google-quick-card','Google QuantaPhi Quick Card','/source-quick-card.html?card=google','QuantaPhi',['google','google quick','google quick card']),
  local('video-builder','Video Builder','phiVideoBuilder',['phi-video-builder.js'],[],['video studio']),
  local('fred-spaces','Fred Spaces','fredSpacesRadio',['fred-spaces-radio.js'],['fred-spaces-radio.css'],['fred radio','fred krueger','fred space','freds spaces','freds space']),
  local('magoo-spaces','Magoo Spaces','magooSpacesRadio',['magoo-spaces-radio.js'],['magoo-spaces-radio.css'],['magoo phd']),
