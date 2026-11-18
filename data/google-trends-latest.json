@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T02:31:10.344795Z",
+  "checked_at": "2026-11-18T03:01:22.615084Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "flames vs sharks",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T02:10:00Z",
+      "query": "scottie barnes",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T02:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/canadiens/video/media-op-st-louis-6408510638112",
-        "https://www.nhl.com/canucks/video/van-at-uta-recap-6408483161112",
-        "https://www.nhl.com/flames/multimedia/galleries/flames-sharks-17-11-26"
+        "https://sports.yahoo.com/articles/raptors-vs-knicks-injury-report-235546582.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/deni-avdija-foot-downgraded-to-out-tuesday",
+        "https://www.rotowire.com/basketball/headlines/scottie-barnes-injury-late-addition-to-injury-report-539587"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTafybNjEf0edodq7bNd8iXookIXj9id99UAT7ATrHH8waqvE_qFMMf427c0ns",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCg4rv7YXqOMhheqhWcUWUpXMtwikSmiKKsOF0E_E0sWi1PE3rnY7rI8ZMxq4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/raptors-vs-knicks-injury-report-235546582.html",
+          "title": "Raptors vs. Knicks Injury Report: Barnes Available, Leonard Making Progress",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCg4rv7YXqOMhheqhWcUWUpXMtwikSmiKKsOF0E_E0sWi1PE3rnY7rI8ZMxq4"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/deni-avdija-foot-downgraded-to-out-tuesday",
+          "title": "Deni Avdija (foot) downgraded to out Tuesday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbDdgcXk5doyi9hJjdD2oatRGegBzkGC9KQczBMi340XFAuPXFe4JqE9hQwYc"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/scottie-barnes-injury-late-addition-to-injury-report-539587",
+          "title": "Scottie Barnes Injury: Late addition to injury report",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcrmiobvrXCqxSaXLLgqRqKtL0fBG3F9oqV9SNYfcEpi2Dla1YKf8WmWHuVGg"
+        }
+      ]
+    },
+    {
+      "query": "aus vs eng",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T02:40:00Z",
+      "related_news_urls": [
+        "https://www.houstonchronicle.com/sports/article/australia-wins-the-toss-and-chooses-to-bowl-22531491.php",
+        "https://www.michigansthumb.com/sports/article/australia-wins-the-toss-and-chooses-to-bowl-22531491.php"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCc75enkGWwUqZrE_7i1Q8L9zXNmm5BxH2py4VB1sWlwwOz6FbbfcK9tTXV1Q",
+      "image_credit": "Houston Chronicle",
+      "news": [
+        {
+          "url": "https://www.houstonchronicle.com/sports/article/australia-wins-the-toss-and-chooses-to-bowl-22531491.php",
+          "title": "Tom Banton’s 121 powers England to 355-6 in the second ODI against Australia",
+          "publisher": "Houston Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCc75enkGWwUqZrE_7i1Q8L9zXNmm5BxH2py4VB1sWlwwOz6FbbfcK9tTXV1Q"
+        },
+        {
+          "url": "https://www.michigansthumb.com/sports/article/australia-wins-the-toss-and-chooses-to-bowl-22531491.php",
+          "title": "England beats Australia by 135 runs to level the ODI cricket series 1-1",
+          "publisher": "Huron Daily Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8k7qbO67K4l2FVBsuW-GxLyIYa_ol3NvNZoz2Gf3am-rZqqvvAS-R7jz4kns"
+        }
+      ]
+    },
+    {
+      "query": "cutter gauthier",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T02:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/ducks/video/ana-stl-gauthier-scores-goal-against-jordan-binnington-6408526689112",
+        "https://www.nytimes.com/athletic/7780402/2026/11/14/ducks-cutter-gauthier-goals-nhl-history/",
+        "https://www.espn.com/nhl/recap/_/gameId/401892723"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSp4Nynla9jW15B6o-_IzF6nxM98YRVSLoTMcKzNIlVq0m1DwfEpeKDAAC8Ct4",
       "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nhl.com/canadiens/video/media-op-st-louis-6408510638112",
-          "title": "Media op: St-Louis",
+          "url": "https://www.nhl.com/ducks/video/ana-stl-gauthier-scores-goal-against-jordan-binnington-6408526689112",
+          "title": "Gauthier Extends Scoring Streak",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTafybNjEf0edodq7bNd8iXookIXj9id99UAT7ATrHH8waqvE_qFMMf427c0ns"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSp4Nynla9jW15B6o-_IzF6nxM98YRVSLoTMcKzNIlVq0m1DwfEpeKDAAC8Ct4"
         },
         {
-          "url": "https://www.nhl.com/canucks/video/van-at-uta-recap-6408483161112",
-          "title": "VAN at UTA | Recap",
-          "publisher": "NHL.com",
+          "url": "https://www.nytimes.com/athletic/7780402/2026/11/14/ducks-cutter-gauthier-goals-nhl-history/",
+          "title": "Cutter Gauthier’s goal scoring puts him in rarified air: ‘I want to be one of those guys’",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw5hfMuIWapewNO6tKoikH1bdnpIa-2SYvGUZnOJVzyJ9ClmuPwbU1xw5-8do"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmlKSeUxG5wGcywoyVBowcCxGK__7Ecv8f83JNU-OwP5P03JWZugO80Bvo9ug"
         },
         {
-          "url": "https://www.nhl.com/flames/multimedia/galleries/flames-sharks-17-11-26",
-          "title": "Flames @ Sharks 17.11.26",
-          "publisher": "NHL.com",
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892723",
+          "title": "Ducks 6-1 Flames (Nov 15, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-EgC0IhuI8CGBWG8cKWXg7KEOU6uoP4LJKhif4wR1xsFKf9h31z_DEso4f-c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcZXU1i9jNRV3isGs9ctqtw3MfSHWtS9EkSMPf0iq4iUS54iyDQlvEr34wPVA"
         }
       ]
     },
     {
-      "query": "college basketball scores",
+      "query": "kawhi leonard",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T02:10:00Z",
+      "published_at": "2026-11-18T02:40:00Z",
       "related_news_urls": [
-        "https://www.oskaloosa.com/sports/agate/womens-college-basketball-scores/article_18a9ee02-9d48-5b08-afeb-d1f9b748eb24.html",
-        "https://www.bdtonline.com/sports/national_sports/womens-college-basketball-scores/article_9af0aa22-61b6-5cd0-9d35-2615100afe0e.html",
-        "https://www.bdtonline.com/sports/national_sports/womens-college-basketball-scores/article_26f059dd-8888-5dbf-be86-a774cb074124.html"
+        "https://www.espn.com/nba/story/_/id/50514496/raptors-kawhi-leonard-progressing-another-week",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/kawhi-knee-progressing-with-strength-work",
+        "https://sports.yahoo.com/articles/kawhi-leonard-absence-continues-raptors-013225057.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxD8iQsxbS39mZq4klK4BKszdoVWxMw4K6K_rCDJ723bWlryGxqdWZDaBLzE",
-      "image_credit": "Oskaloosa Herald",
-      "news": [
-        {
-          "url": "https://www.oskaloosa.com/sports/agate/womens-college-basketball-scores/article_18a9ee02-9d48-5b08-afeb-d1f9b748eb24.html",
-          "title": "Women's College Basketball Scores",
-          "publisher": "Oskaloosa Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxD8iQsxbS39mZq4klK4BKszdoVWxMw4K6K_rCDJ723bWlryGxqdWZDaBLzE"
-        },
-        {
-          "url": "https://www.bdtonline.com/sports/national_sports/womens-college-basketball-scores/article_9af0aa22-61b6-5cd0-9d35-2615100afe0e.html",
-          "title": "Women's College Basketball Scores",
-          "publisher": "Bluefield Daily Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8_SEDXmSB6SixxLSLmjeaTZouryvvI7Nr4xbJXMS8YRucw0ORsr2M4kgRnGI"
-        },
-        {
-          "url": "https://www.bdtonline.com/sports/national_sports/womens-college-basketball-scores/article_26f059dd-8888-5dbf-be86-a774cb074124.html",
-          "title": "Women's College Basketball Scores",
-          "publisher": "Bluefield Daily Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8_SEDXmSB6SixxLSLmjeaTZouryvvI7Nr4xbJXMS8YRucw0ORsr2M4kgRnGI"
-        }
-      ]
-    },
-    {
-      "query": "mike pence",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T02:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/meet-the-press/video/mike-pence-if-gop-doesn-t-return-to-traditional-values-it-won-t-matter-who-we-nominate-in-2028-273551429689",
-        "https://thehill.com/homenews/administration/6221381-pence-vance-midterm-losses/",
-        "https://www.foxnews.com/politics/pence-delivers-scathing-rebuke-vances-iran-war-assessment-blames-trump-policies-gop-losses"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKbBXtDpjE1NYIF3mk0f5gscvI6p1efqa-haybQgHhbUudi8vEWbNFCIyQApk",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/meet-the-press/video/mike-pence-if-gop-doesn-t-return-to-traditional-values-it-won-t-matter-who-we-nominate-in-2028-273551429689",
-          "title": "Mike Pence: If GOP doesn’t return to traditional values, ‘it won’t matter who we nominate in 2028’",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKbBXtDpjE1NYIF3mk0f5gscvI6p1efqa-haybQgHhbUudi8vEWbNFCIyQApk"
-        },
-        {
-          "url": "https://thehill.com/homenews/administration/6221381-pence-vance-midterm-losses/",
-          "title": "Pence calls Vance ‘wrong’ on Iran war, GOP midterm losses",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_yOLVyiKWFapMmI0S3IK2Gfr-bhmaP5HCywlCOPnnHM-Ln6R9RoAv3Bc5qJw"
-        },
-        {
-          "url": "https://www.foxnews.com/politics/pence-delivers-scathing-rebuke-vances-iran-war-assessment-blames-trump-policies-gop-losses",
-          "title": "Pence delivers scathing rebuke of Vance's Iran war assessment, blames Trump policies for GOP losses",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4J8nlqZreJMXVs782NyKl4DuhWO0tMWfJxtw1VpAGDNXOmnkqkMaJ-NbC4MA"
-        }
-      ]
-    },
-    {
-      "query": "miss universe 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T02:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/articles/miss-universe-2026-hosts-confirmed-230831089.html",
-        "https://www.hola.com/us/celebrities/20261113934981/miss-universe-2026-latinas/",
-        "https://metro.style/fashion/2026/11/9/miss-universe-2026-strongest-and-most-stylish-candidates-1400"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6r2_Is1WXEqSDVCDOxqefsTO4N_gbfw79HiOLvLkTJ4CYFZYKg7y4EVZCgME",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/articles/miss-universe-2026-hosts-confirmed-230831089.html",
-          "title": "Miss Universe 2026 hosts confirmed: Meet the star-studded lineup",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6r2_Is1WXEqSDVCDOxqefsTO4N_gbfw79HiOLvLkTJ4CYFZYKg7y4EVZCgME"
-        },
-        {
-          "url": "https://www.hola.com/us/celebrities/20261113934981/miss-universe-2026-latinas/",
-          "title": "Miss Universe 2026: The Latinas vying for the crown",
-          "publisher": "HOLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGxaQ-XgeOMBGKbFf43ea07uB72k-NlwiFll2SF15oio4nFarf-ldl-JQ0TpI"
-        },
-        {
-          "url": "https://metro.style/fashion/2026/11/9/miss-universe-2026-strongest-and-most-stylish-candidates-1400",
-          "title": "The Miss Universe 2026 Favorites: Strongest Contenders and Most Stylish Queens",
-          "publisher": "Metro.Style",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYdGmGe-0NFglVkRgQqLTnpbmhWNzkpZ3w8UqfcGcvOvb89sCph0_nT7egRp8"
-        }
-      ]
-    },
-    {
-      "query": "connor mcdavid",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T02:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50502384/nhl-2026-27-connor-mcdavid-scoring-200-points-stats-record-wayne-gretzky",
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-17-2026",
-        "https://www.sportsnet.ca/nhl/article/oilers-mcdavid-ties-gretzkys-record-for-fewest-games-to-record-40-assists/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRMMZ8YONAfIxtfA59Q3jhWTuqh666tX5nnezeHVCA0BYrIAi_y91k5yUXPNw",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8q892NPgAgVE68q0mr8Tv_dVxgqxbucyprN-w4-VBEPiR_fF1BsWUhjTHeYg",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nhl/story/_/id/50502384/nhl-2026-27-connor-mcdavid-scoring-200-points-stats-record-wayne-gretzky",
-          "title": "The Connor McDavid Scoring Tracker: Can the Oilers' superstar break 200 points?",
+          "url": "https://www.espn.com/nba/story/_/id/50514496/raptors-kawhi-leonard-progressing-another-week",
+          "title": "Raptors say Kawhi Leonard progressing but out at least another week",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRMMZ8YONAfIxtfA59Q3jhWTuqh666tX5nnezeHVCA0BYrIAi_y91k5yUXPNw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8q892NPgAgVE68q0mr8Tv_dVxgqxbucyprN-w4-VBEPiR_fF1BsWUhjTHeYg"
         },
         {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-17-2026",
-          "title": "NHL On Tap: McDavid on 22-game run for streaking Oilers",
-          "publisher": "NHL.com",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/kawhi-knee-progressing-with-strength-work",
+          "title": "Kawhi (knee) progressing with strength work",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOZTdcDXmJaEYQxS7m2jWYDw6HcefbG4xI8lIqz7YoiuPH_o4TXduOHH5zYA0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjtBDOKB5pN2xH9GBe2CP8Dd5KamcxED70cM5gEEYwbujIG2P_briDZk9V568"
         },
         {
-          "url": "https://www.sportsnet.ca/nhl/article/oilers-mcdavid-ties-gretzkys-record-for-fewest-games-to-record-40-assists/",
-          "title": "Oilers' McDavid ties Gretzky's record for fewest games to record 40 assists",
-          "publisher": "Sportsnet.ca",
+          "url": "https://sports.yahoo.com/articles/kawhi-leonard-absence-continues-raptors-013225057.html",
+          "title": "Kawhi Leonard’s Absence Continues As Raptors Give New Status Update",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShHdmelY3USQqZyArrB7SQURTxktAvnNhP6pU49dVijEKuGc3dmstwIXi8CRU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM4JjdeN8Nz0TUQOZu5v17xFRotoDdiI4QvNNcjr_i5ZagdaxkSTaz2YFlLlo"
         }
       ]
     },
     {
-      "query": "stars vs golden knights",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T02:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cr0qkjj3e11xt",
-        "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2175414",
-        "https://baseline.sg/news/lee-challenges-lions-to-compete-for-90-minutes-against-brazil/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKslrteTvaj5lVdAHSjo5ctBYlIYykUkxKdNQx7xOhYQOY9ULLie9HYo-ZsYc",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cr0qkjj3e11xt",
-          "title": "Singapore vs Paraguay: Friendlies stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKslrteTvaj5lVdAHSjo5ctBYlIYykUkxKdNQx7xOhYQOY9ULLie9HYo-ZsYc"
-        },
-        {
-          "url": "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2175414",
-          "title": "*[Free] * Dallas Stars vs Vegas Golden Knights Live 𝐒𝐭𝐫𝐞𝐚𝐦𝐬 NHL",
-          "publisher": "Powell River Peak",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUFxveGwaBEzBLDtzlwl5Dw_M-eaxytguqbKjzRqMZmmLBRXLEqSG0Uf-sNQE"
-        },
-        {
-          "url": "https://baseline.sg/news/lee-challenges-lions-to-compete-for-90-minutes-against-brazil/",
-          "title": "Lee challenges Lions to compete for 90 minutes against Brazil",
-          "publisher": "baseline.sg",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJ-bF8aCFVLj1M9oi-1Jwr5jY26eLoDvXiH1WfrdbUDYymDKRh5q7qO_zu64o"
-        }
-      ]
-    },
-    {
-      "query": "cbb",
+      "query": "stephen curry injury",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T02:00:00Z",
+      "published_at": "2026-11-18T02:40:00Z",
       "related_news_urls": [
-        "https://www.al.com/betting/2026/11/novig-promo-code-alcom-get-a-50-bonus-for-maction-football-cbb-and-nba-games-nov-17.html",
-        "https://www.saturdaydownsouth.com/news/betting/novig-promo-code-rad50-deposit-10-get-50-bonus-for-nba-nhl-ncaab-trades-nov-17/",
-        "https://wtop.com/news/2026/11/novig-promo-code-wtop-get-50-in-trade-credits-for-chargers-ravens/"
+        "https://warriors.com/news/stephen-curry-injury-update-11-12-26",
+        "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steve-kerr-lineup-draymond-green/1980899/",
+        "https://www.nbcsports.com/fantasy/basketball/news/week-5-look-ahead-stephen-curry-and-caleb-wilson-go-do-and-toss-jeremiah-fears-the-keys"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwtj6Hh0REzoVKJR5FEWMabYSrHNsEA_hpyJINatxi5RxC4Fo3ihFMXv8aFic",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/betting/2026/11/novig-promo-code-alcom-get-a-50-bonus-for-maction-football-cbb-and-nba-games-nov-17.html",
-          "title": "Novig Promo Code ALCOM: Get a $50 bonus for MACtion football, CBB and NBA games (Nov. 17)",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwtj6Hh0REzoVKJR5FEWMabYSrHNsEA_hpyJINatxi5RxC4Fo3ihFMXv8aFic"
-        },
-        {
-          "url": "https://www.saturdaydownsouth.com/news/betting/novig-promo-code-rad50-deposit-10-get-50-bonus-for-nba-nhl-ncaab-trades-nov-17/",
-          "title": "Novig Promo Code RAD50: Deposit $10, Get $50 Bonus for NBA, NHL, NCAAB Trades (Nov. 17)",
-          "publisher": "Saturday Down South",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxgAL5KuvAZYFbq5a-ytZRYuiyU9UvZw_3hijilTxC3zy7iSZo5RM9-WfitY"
-        },
-        {
-          "url": "https://wtop.com/news/2026/11/novig-promo-code-wtop-get-50-in-trade-credits-for-chargers-ravens/",
-          "title": "Novig Promo Code WTOP: Get $50 in Trade Credits For Chargers-Ravens – WTOP News",
-          "publisher": "WTOP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-_kSVjK8dPEUx3kp7GNTOhE_1VErvDjig1y4NxhjylPN9G2zFVXNi5lc5lc8"
-        }
-      ]
-    },
-    {
-      "query": "portillos",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T02:00:00Z",
-      "related_news_urls": [
-        "https://www.khou.com/article/life/food/houston-portillos-closed-katy-willowbrook-richmond/285-d4f54259-8006-4183-b0ca-778dfb5e99b3",
-        "https://www.wfaa.com/article/money/business/portillos-closing-mansfield-fort-worth-texas/287-ecc6239c-1b44-453b-acb4-83e5afe207fe",
-        "https://houston.culturemap.com/news/restaurants-bars/portillos-closures-katy-richmond-willowbrook/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp7RovctMUVZjn90EZZHIBcBQoufZEMiFs_spgslkkybjTW9Pd1efuksNdVz0",
-      "image_credit": "KHOU",
-      "news": [
-        {
-          "url": "https://www.khou.com/article/life/food/houston-portillos-closed-katy-willowbrook-richmond/285-d4f54259-8006-4183-b0ca-778dfb5e99b3",
-          "title": "Portillo's has closed these three locations in the Houston area",
-          "publisher": "KHOU",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp7RovctMUVZjn90EZZHIBcBQoufZEMiFs_spgslkkybjTW9Pd1efuksNdVz0"
-        },
-        {
-          "url": "https://www.wfaa.com/article/money/business/portillos-closing-mansfield-fort-worth-texas/287-ecc6239c-1b44-453b-acb4-83e5afe207fe",
-          "title": "Portillo's is closing locations in North Texas",
-          "publisher": "WFAA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRC0XUDs7DxhiKJi1dE5e2YS49KksbXVT32uOgYoFKdbqhP-KftIkhVbEvIg6s"
-        },
-        {
-          "url": "https://houston.culturemap.com/news/restaurants-bars/portillos-closures-katy-richmond-willowbrook/",
-          "title": "Chicago hot dog king Portillo's closes 3 Houston-area restaurants",
-          "publisher": "CultureMap Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVsi4uefh1YjI6OqB80wtt63Cl71c_3ROrjnEJsqkBKKyMg_7ZK41r_GdIqxQ"
-        }
-      ]
-    },
-    {
-      "query": "ja'kobe walter",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T01:50:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/watch/video/immanuel-quickley-from-deep-7",
-        "https://raptorsrapture.com/immanuel-quickley-and-ja-kobe-walter-must-deliver-as-the-raptors-chase-knicks-payback",
-        "https://www.espn.com/video/clip/_/id/50465943/immanuel-quickley-somehow-gets-1-fall"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3gsHk7cyc1kbxQ_twkUhRDEmYPOG3DJdeCAZ3U_z0rJqbxoD699e0f2VBMg",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRatAB6cFj__uP9veK475bkA2IaVyhs3WKjAwu2vjqevoTCpCGCZI7Y5XOOJ2M",
       "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://www.nba.com/watch/video/immanuel-quickley-from-deep-7",
-          "title": "Immanuel Quickley from deep!",
+          "url": "https://warriors.com/news/stephen-curry-injury-update-11-12-26",
+          "title": "Stephen Curry Injury Update - 11/12/26 | Golden State Warriors",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3gsHk7cyc1kbxQ_twkUhRDEmYPOG3DJdeCAZ3U_z0rJqbxoD699e0f2VBMg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRatAB6cFj__uP9veK475bkA2IaVyhs3WKjAwu2vjqevoTCpCGCZI7Y5XOOJ2M"
         },
         {
-          "url": "https://raptorsrapture.com/immanuel-quickley-and-ja-kobe-walter-must-deliver-as-the-raptors-chase-knicks-payback",
-          "title": "Immanuel Quickley and Ja’Kobe Walter must deliver as the Raptors chase Knicks payback",
-          "publisher": "Raptors Rapture",
+          "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steve-kerr-lineup-draymond-green/1980899/",
+          "title": "Steve Kerr rightfully beginning to tinker with Warriors' Steph Curry-less lineup",
+          "publisher": "NBC Sports Bay Area & California",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSjBDmkst2eHgKc8sIojRYtKfJH5K1BdHrDbOXdKS5dETN-Pxe9buE7oOapug"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYvFuEjbwRBYVCF8hTgGzo8I_2Jyv10IOA15zr1koaZFhVH370zPDPKyNh2HY"
         },
         {
-          "url": "https://www.espn.com/video/clip/_/id/50465943/immanuel-quickley-somehow-gets-1-fall",
-          "title": "Immanuel Quickley somehow gets the and-1 to fall",
-          "publisher": "ESPN",
+          "url": "https://www.nbcsports.com/fantasy/basketball/news/week-5-look-ahead-stephen-curry-and-caleb-wilson-go-do-and-toss-jeremiah-fears-the-keys",
+          "title": "Week 5 Look-Ahead: Stephen Curry and Caleb Wilson go down, and toss Jeremiah Fears the keys",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1qrbyi88gwD7Zhy5KG0jzk21SbK4JHyz-hKwn03CRJTP-OGDGPPKzqmJ2Z9s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTshxs6hXafrbGJNuqL9qqeyAss7Xmz2fh9U9tzsssY1HQ2X6HAZznEmrx1UDI"
         }
       ]
     },
     {
-      "query": "ayo dosunmu",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T01:50:00Z",
+      "query": "ohio university football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T02:40:00Z",
       "related_news_urls": [
-        "https://slamonline.com/nba/timberwolves-back-on-track-despite-anthony-edwards-absence/",
-        "https://www.nba.com/news/ayo-dosunmu-lift-wolves-sans-anthony-edwards",
-        "https://bringmethesports.com/timberwolves-insider-gives-encouraging-early-anthony-edwards-injury-update"
+        "https://sportsbook.fanduel.com/football/ncaa-football-games/ball-state-@-ohio-36305455",
+        "https://sports.yahoo.com/articles/watch-ball-state-vs-ohio-230000250.html",
+        "https://www.usatoday.com/sports/ncaaf/event/2026/2975030/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=1"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz2zgkGeNASE7OclrGVHk3bi984z9c1fiWPwvboVBGCtulRSTHBdWWYfMuuUU",
-      "image_credit": "SLAM Online",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2w08DvKooMZ8G1CBBPYTam7rbfs46ZxVLqwUaEFYTKIaRGBmYmAHTHYJZUw",
+      "image_credit": "FanDuel Sportsbook",
       "news": [
         {
-          "url": "https://slamonline.com/nba/timberwolves-back-on-track-despite-anthony-edwards-absence/",
-          "title": "Timberwolves Back on Track Despite Anthony Edwards’ Absence",
-          "publisher": "SLAM Online",
+          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/ball-state-@-ohio-36305455",
+          "title": "Ball State @ Ohio Odds",
+          "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz2zgkGeNASE7OclrGVHk3bi984z9c1fiWPwvboVBGCtulRSTHBdWWYfMuuUU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2w08DvKooMZ8G1CBBPYTam7rbfs46ZxVLqwUaEFYTKIaRGBmYmAHTHYJZUw"
         },
         {
-          "url": "https://www.nba.com/news/ayo-dosunmu-lift-wolves-sans-anthony-edwards",
-          "title": "Ayo Dosunmu is helping keep the Timberwolves on track while Anthony Edwards recovers",
+          "url": "https://sports.yahoo.com/articles/watch-ball-state-vs-ohio-230000250.html",
+          "title": "How to watch Ball State vs Ohio: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST0Pyb-lTq8Dd1lBwUpvpNd3eHz1K4V4Mbq19lWGkSTmDe-TJVAEgiE5YyQXE"
+        },
+        {
+          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2975030/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=1",
+          "title": "Ball State Cardinals at Ohio Bobcats - NCAAF Game Summary - Nov 17, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIjvZbFmQbw6PAFnSgK3a0Kym_tdlFOOEQVajQTn_aHH_5n4Fo4w9cdHHTUI8"
+        }
+      ]
+    },
+    {
+      "query": "jazz vs clippers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T02:30:00Z",
+      "related_news_urls": [
+        "https://utahjazz.com/news/preview-utah-jazz-begin-back-to-back-against-la-clippers",
+        "https://www.cbssports.com/betting/news/jazz-vs-clippers-nba-picks-tuesday-injury-ravaged-utah-could-tie-third-longest-losing-skid-in-team-history/",
+        "https://www.si.com/betting/jazz-vs-clippers-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-17-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3qbBqc7y2gq4-FhQiUcGGR2GcbT7EP_cMr2Yt4jTph3WE6GcmRrTIP5xdqtg",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://utahjazz.com/news/preview-utah-jazz-begin-back-to-back-against-la-clippers",
+          "title": "Preview: Utah Jazz Begin Back-to-Back Against LA Clippers",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2uYN9KseH5Eq3a0-7mGXwCfKKi5jiXscVppC4MtSDdoQ20vvTvoJ-WX7jbWo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3qbBqc7y2gq4-FhQiUcGGR2GcbT7EP_cMr2Yt4jTph3WE6GcmRrTIP5xdqtg"
         },
         {
-          "url": "https://bringmethesports.com/timberwolves-insider-gives-encouraging-early-anthony-edwards-injury-update",
-          "title": "Timberwolves insider gives encouraging early Anthony Edwards injury update",
-          "publisher": "Bring Me the Sports",
+          "url": "https://www.cbssports.com/betting/news/jazz-vs-clippers-nba-picks-tuesday-injury-ravaged-utah-could-tie-third-longest-losing-skid-in-team-history/",
+          "title": "Jazz vs. Clippers NBA picks Tuesday: Injury-ravaged Utah could tie third-longest losing skid in team history",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5pOu97f1__wIikiFonD9wfGluv9MHREYI0shxmjhodVF3jBXcecn-y40GPQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjsIQ_Ab5NnZ0ua3d1v7w6IqSZurqygSoVGBADtq8QcAtDPq6zIX9Equt6PGE"
+        },
+        {
+          "url": "https://www.si.com/betting/jazz-vs-clippers-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-17-2026",
+          "title": "Jazz vs. Clippers Prediction, Odds and Best NBA Prop Bets for Tuesday, Nov. 17",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULoAu5A8Vdbye4JEcLRwjxBZ69TwRiZtwqQIMArMzJj9H2swRohdSGsQ71i8"
+        }
+      ]
+    },
+    {
+      "query": "ncaa basketball",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T02:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50514250/lsu-adds-rj-luis-jr-roster-sec-oks-addition",
+        "https://www.nytimes.com/athletic/7787857/2026/11/16/rj-luis-lsu-basketball-roster-sec/",
+        "https://www.wafb.com/2026/11/16/sec-tells-attorneys-it-wont-penalize-lsu-adding-rj-luis-jr-basketball-roster/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8k6SLRXJ2cKKq73GMaubSzOmnYxlhl9Z_hQlDDhwOFvI_PSnCFK2uzz4YUDg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50514250/lsu-adds-rj-luis-jr-roster-sec-oks-addition",
+          "title": "LSU adds RJ Luis Jr. to roster; SEC calls move 'disappointing'",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8k6SLRXJ2cKKq73GMaubSzOmnYxlhl9Z_hQlDDhwOFvI_PSnCFK2uzz4YUDg"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7787857/2026/11/16/rj-luis-lsu-basketball-roster-sec/",
+          "title": "SEC won’t block LSU from rostering RJ Luis, clearing 2025 NBA Draft entrant to play",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYK4AJNggqBQViVGj0toXp4KD7cnR9ER7FwaFK-_Wqxu4-TPsuTm1BWxbNgd8"
+        },
+        {
+          "url": "https://www.wafb.com/2026/11/16/sec-tells-attorneys-it-wont-penalize-lsu-adding-rj-luis-jr-basketball-roster/",
+          "title": "SEC tells attorneys it won’t penalize LSU for adding RJ Luis Jr. to basketball roster",
+          "publisher": "WAFB",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg71MtylvLrJduT7QQnVdEC8HLLRVHEnizFcYOumLo7MzWE904E1Y1ZqOkB_M"
+        }
+      ]
+    },
+    {
+      "query": "connor bedard",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T02:30:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/gavin-mckenna-connor-bedard-mutual-respect-ahead-of-first-nhl-meeting",
+        "https://sports.yahoo.com/articles/connor-bedard-high-praise-maple-204357123.html",
+        "https://www.bleachernation.com/blackhawks/2026/11/17/patrick-kane-toronto-blackhawks-top-picks/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6O79fn6j_7SswtApKL-ZgMHDTiLlmZLcKLWuzQQBLuET0WzwPQv11lI9fKqI",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/gavin-mckenna-connor-bedard-mutual-respect-ahead-of-first-nhl-meeting",
+          "title": "Bedard, McKenna share mutual respect as No. 1 picks in NHL Draft",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6O79fn6j_7SswtApKL-ZgMHDTiLlmZLcKLWuzQQBLuET0WzwPQv11lI9fKqI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/connor-bedard-high-praise-maple-204357123.html",
+          "title": "Connor Bedard has High Praise for Maple Leafs’ Gavin McKenna",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTYgblQGzdDr7TxRvyt1FyFAxxnDlhkqOY3_Uea-IBIm4P6JLFcb5JyqTwneg"
+        },
+        {
+          "url": "https://www.bleachernation.com/blackhawks/2026/11/17/patrick-kane-toronto-blackhawks-top-picks/",
+          "title": "Blackhawks, Maple Leafs Boast Five No. 1 Picks - Patrick Kane Talks Matthews, McKenna, Bedard",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrdxF6Boo3Vvkdrvwbf19RBhL1peceEsd-YHxx_bkUi1_BEAHrlSV_qGgK6r8"
+        }
+      ]
+    },
+    {
+      "query": "ku basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T02:30:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/kansas/article/kansas-basketball-players-era-eight-292879159/",
+        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/16/preview-ku-to-begin-players-era-8-with-unlv-matchup/",
+        "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318110442.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUAK-s-nymH2F36061WyAo4BrHFMq6V_YvGVWOB_fZiDxFleKWiOTPqnCKbkE",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/kansas/article/kansas-basketball-players-era-eight-292879159/",
+          "title": "The biggest thing Bill Self can learn about his team during Players Era Eight",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUAK-s-nymH2F36061WyAo4BrHFMq6V_YvGVWOB_fZiDxFleKWiOTPqnCKbkE"
+        },
+        {
+          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/16/preview-ku-to-begin-players-era-8-with-unlv-matchup/",
+          "title": "Preview: KU to begin Players Era 8 with UNLV matchup",
+          "publisher": "KU Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJHGLxcV90crMDxrdUsnpZ7pQ3SshZJUqvpkLZOdlU-9qWqgTl6yeL9gPif_g"
+        },
+        {
+          "url": "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318110442.html",
+          "title": "KU basketball vs. UNLV at Players Era 8: Probable starters, tipoff, TV, notes",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzPT9FcNe3tcxye-E-HrPnevBUeaGG13tohKRsLl-7PY75LYO0fOSl_5AxqTE"
         }
       ]
     }
