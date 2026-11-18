@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T19:31:05.183686Z",
+  "checked_at": "2026-11-18T20:01:19.524645Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "hailey bieber",
+      "query": "ngc 1433 supernova",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T19:10:00Z",
+      "published_at": "2026-11-18T19:40:00Z",
       "related_news_urls": [
-        "https://wwd.com/beauty-industry-news/beauty-features/lists/wwd-beauty-awards-hailey-bieber-rhode-chanel-1239416307/",
-        "https://www.beautypackaging.com/breaking-news/rhode-launches-the-navy-capsule-for-hailey-biebers-birthday/",
-        "https://www.instyle.com/hailey-bieber-poses-new-rhode-capsule-30th-birthday-12259039"
+        "https://www.space.com/astronomy/a-newfound-supernova-explodes-50-million-light-years-away-space-photo-of-the-day-for-nov-18-2026",
+        "https://phys.org/news/2026-11-gemini-decam-showcase-young-ia.html",
+        "https://www.iflscience.com/a-nearby-exploding-supernova-will-peak-within-days-and-you-can-help-scientists-with-their-observations-85188"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_doT59-5DPkTTey-VGbYLoxt-aqw_YWEcIX7oNgcjTzbcvF_A5hgh0JICz0",
-      "image_credit": "WWD",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EQXJJCL0msJLGAwfJ6x7I5C3TLpIubsXso2oFNh47506k6KldJ_ORc0ivUQ",
+      "image_credit": "Space",
       "news": [
         {
-          "url": "https://wwd.com/beauty-industry-news/beauty-features/lists/wwd-beauty-awards-hailey-bieber-rhode-chanel-1239416307/",
-          "title": "Hailey Bieber’s Rhode, Marc Jacobs Beauty, Mikayla Nogueira Among 2026 Beauty Inc Award Winners",
-          "publisher": "WWD",
+          "url": "https://www.space.com/astronomy/a-newfound-supernova-explodes-50-million-light-years-away-space-photo-of-the-day-for-nov-18-2026",
+          "title": "Supernova explodes before astronomers' eyes photo of the day for Nov. 18, 2026",
+          "publisher": "Space",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_doT59-5DPkTTey-VGbYLoxt-aqw_YWEcIX7oNgcjTzbcvF_A5hgh0JICz0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EQXJJCL0msJLGAwfJ6x7I5C3TLpIubsXso2oFNh47506k6KldJ_ORc0ivUQ"
         },
         {
-          "url": "https://www.beautypackaging.com/breaking-news/rhode-launches-the-navy-capsule-for-hailey-biebers-birthday/",
-          "title": "rhode Launches the Navy Capsule for Hailey Bieber’s Birthday",
-          "publisher": "Beauty Packaging",
+          "url": "https://phys.org/news/2026-11-gemini-decam-showcase-young-ia.html",
+          "title": "Gemini and DECam showcase a young Type Ia supernova",
+          "publisher": "Phys.org",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr79oEvwJl03Xx_TlrHEkp8YJykrkU0S7BDSqAMZ75nYWzJSsxj83kv22hXpI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTr7XYeLR_gKVfpVIY5qQvgAniNrmYTKGiyBGLTynxS9ozgrHwiNAtDED4MiHY"
         },
         {
-          "url": "https://www.instyle.com/hailey-bieber-poses-new-rhode-capsule-30th-birthday-12259039",
-          "title": "Hailey Bieber Goes Pantsless and Poses in Her Undies for Meaningful Photo Shoot",
-          "publisher": "InStyle",
+          "url": "https://www.iflscience.com/a-nearby-exploding-supernova-will-peak-within-days-and-you-can-help-scientists-with-their-observations-85188",
+          "title": "A Nearby Exploding Supernova Will Peak Within Days, And You Can Help Scientists With Their Observations",
+          "publisher": "IFLScience",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4c0-o6Yj6Gdkoex-yIqUWag4yw5bRCDdLWYAd-Ekbs5Lcfr9FqXOQ3g368rI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgsVssM95jkJasoJuAZZQbByiy-N-4aqEbYinrXOEFrrl33ECHAsZuJIrVZxM"
         }
       ]
     },
     {
-      "query": "i am helen",
+      "query": "kash patel",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T18:50:00Z",
+      "published_at": "2026-11-18T19:40:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/tv-and-radio/2026/nov/16/i-am-helen-review-channel-4",
-        "https://www.thetimes.com/culture/tv-radio/article/joe-cole-interview-i-am-helen-manosphere-c35l8ljsj",
-        "https://www.telegraph.co.uk/tv/0/i-am-helen-channel-4-review/"
+        "https://thehill.com/homenews/house/6227622-fbi-director-skips-threats-hearing/",
+        "https://nypost.com/2026/11/18/us-news/markwayne-mullin-testifies-about-security-threats-amid-tech-outages-live-updates/",
+        "https://www.thedailybeast.com/keystone-kash-ripped-for-skipping-testimony-amid-cyber-chaos"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZedoeOtnqUqFesXgLJdMMHeJ7EL6a1oKYutL8WFlid4Ot2P1gdMBoGwEZ6q0",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3iwb-T1M7mcq0JcQVFbrjGeoh6DMaHliZwxKE5OigbwwJZ6nrSDgA9ra0PEo",
+      "image_credit": "The Hill",
       "news": [
         {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/16/i-am-helen-review-channel-4",
-          "title": "I Am Helen review – Nicola Coughlan is absolutely superb in this terrifying must-watch",
-          "publisher": "The Guardian",
+          "url": "https://thehill.com/homenews/house/6227622-fbi-director-skips-threats-hearing/",
+          "title": "GOP chair blasts Patel for skipping worldwide threats hearing",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZedoeOtnqUqFesXgLJdMMHeJ7EL6a1oKYutL8WFlid4Ot2P1gdMBoGwEZ6q0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3iwb-T1M7mcq0JcQVFbrjGeoh6DMaHliZwxKE5OigbwwJZ6nrSDgA9ra0PEo"
         },
         {
-          "url": "https://www.thetimes.com/culture/tv-radio/article/joe-cole-interview-i-am-helen-manosphere-c35l8ljsj",
-          "title": "Joe Cole: ‘The manosphere’s worse than I thought. You’ll be shocked’",
-          "publisher": "The Times",
+          "url": "https://nypost.com/2026/11/18/us-news/markwayne-mullin-testifies-about-security-threats-amid-tech-outages-live-updates/",
+          "title": "Outages, cyber attacks live updates: NY Republican warns Trump admin to heed lesson from 9/11 after outages",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrV4fdvEMqAhdbzAoiDqdsFB3MzU0Zv3v_UAiNeXW7Yuoss-9DOS15MpU3XQ4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwzSk-JY_QVSzQ1M8Ih1dElM7AkzTsSLKJGSDz2AbvTeah80nNWGf-LX7yJPQ"
         },
         {
-          "url": "https://www.telegraph.co.uk/tv/0/i-am-helen-channel-4-review/",
-          "title": "Nicola Coughlan gets trapped by the ‘manosphere’ in a devastating fable",
-          "publisher": "The Telegraph",
+          "url": "https://www.thedailybeast.com/keystone-kash-ripped-for-skipping-testimony-amid-cyber-chaos",
+          "title": "Keystone Kash Ripped for Skipping Testimony Amid Cyber Chaos",
+          "publisher": "The Daily Beast",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-lGdjj453DS8Ij1dZKaWLFaSawOM6IVhe_7qcOZVmVxgbpBzzfnrDLXsY_Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFc1GTb9VfMCsMz6x1FRejzrydzVdSihpnp_QfjkxVpwCeexPuBdZv2YRgkhA"
         }
       ]
     },
     {
-      "query": "jason movie cast",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-18T18:30:00Z",
+      "query": "florence pugh governors awards",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T19:40:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
-        "https://www.forbes.com/sites/timlammers/2026/11/18/new-friday-the-13th-movie-jason-announces-cast-and-release-date-as-filming-wraps/",
-        "https://people.com/rob-lowe-s-son-john-owen-lowe-starring-in-new-friday-the-13th-movie-jason-12262663"
+        "https://pagesix.com/2026/11/15/photos/2026-governors-awards-zendaya-florence-pugh-more/",
+        "https://www.imdb.com/es/news/ni66113595/?ref_=nwc_art_perm",
+        "https://www.aol.co.uk/articles/zendaya-florence-pugh-stand-sparkles-122526000.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe7--9y8KVEdf7Ue9ls3jJQZtm-reocqmhR1tU-qMqDjF7C1z6vaFhhbKhfeg",
+      "image_credit": "Page Six",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
-          "title": "New ‘Friday The 13th’ Movie Unveils Cast, Title & Release Date",
-          "publisher": "Deadline",
+          "url": "https://pagesix.com/2026/11/15/photos/2026-governors-awards-zendaya-florence-pugh-more/",
+          "title": "2026 Governors Awards: Zendaya, Florence Pugh, more",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe7--9y8KVEdf7Ue9ls3jJQZtm-reocqmhR1tU-qMqDjF7C1z6vaFhhbKhfeg"
         },
         {
-          "url": "https://www.forbes.com/sites/timlammers/2026/11/18/new-friday-the-13th-movie-jason-announces-cast-and-release-date-as-filming-wraps/",
-          "title": "New ‘Friday The 13th’ Movie ‘Jason’ Announces Cast And Release Date As Filming Wraps",
-          "publisher": "Forbes",
+          "url": "https://www.imdb.com/es/news/ni66113595/?ref_=nwc_art_perm",
+          "title": "2026 Governors Awards Red Carpet: Zendaya, Inde Navarrette and More",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNRUCtQAcipbP4-aY5Zj_7Pe_Jc0ZdOHMW1b37DEDaZU-X4_MR0fH0qhpSxU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCFoMxHCE6zMcN_rhc2U0rlwXI-K-aY3Ne4W3osATFk-RJkyzmAFl3kbBLAEE"
         },
         {
-          "url": "https://people.com/rob-lowe-s-son-john-owen-lowe-starring-in-new-friday-the-13th-movie-jason-12262663",
-          "title": "Rob Lowe’s Son John Owen Lowe Lands Starring Role in New Friday the 13th Movie",
-          "publisher": "People.com",
+          "url": "https://www.aol.co.uk/articles/zendaya-florence-pugh-stand-sparkles-122526000.html",
+          "title": "Zendaya and Florence Pugh stand out in sparkles at Governors Awards",
+          "publisher": "AOL.co.uk",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYRZWh_wtGpv8nXZ37Vhls5TTFqnT2IQi2N8QdSmzxVnfZQW-ZkcKr1HfW_Lw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfCY4hdxa1IXwnzOfArL2QCOH-1WUHq-q0jd6ICwe2ldPInsKouoOHDA9v2N0"
         }
       ]
     },
     {
-      "query": "florida flooding today",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-18T18:30:00Z",
+      "query": "golf",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T19:40:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
-        "https://www.washingtonpost.com/nation/2026/11/18/more-than-foot-overnight-rain-south-florida-causes-widespread-flooding/",
-        "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/"
+        "https://www.golfchannel.com/watch/golf-central/kessler-weighs-in-on-growing-the-lpga-fanbase",
+        "https://sports.yahoo.com/articles/lpga-working-pga-tour-networks-171452889.html",
+        "https://www.golfdigest.com/story/lpga-tv-viewership-plan-2027-craig-kessler-pga-tour-follow-up"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq8_9nInNVNZgUK_v9Y9sO7eTPcp8LOHQ7qyp-94MpEgVoy0a29FWGy9XXx74",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4v9_ZI4UAu9yt5Beas_P_Mvg5KPcj-EdJv40xTEinIXCruM589V5s2muSVQs",
+      "image_credit": "Golf Channel",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
-          "title": "Intense flooding slams Florida from a developing storm that could snarl early Thanksgiving travel on the East Coast",
-          "publisher": "CNN",
+          "url": "https://www.golfchannel.com/watch/golf-central/kessler-weighs-in-on-growing-the-lpga-fanbase",
+          "title": "Kessler weighs in on growing the LPGA fanbase",
+          "publisher": "Golf Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq8_9nInNVNZgUK_v9Y9sO7eTPcp8LOHQ7qyp-94MpEgVoy0a29FWGy9XXx74"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4v9_ZI4UAu9yt5Beas_P_Mvg5KPcj-EdJv40xTEinIXCruM589V5s2muSVQs"
         },
         {
-          "url": "https://www.washingtonpost.com/nation/2026/11/18/more-than-foot-overnight-rain-south-florida-causes-widespread-flooding/",
-          "title": "More than a foot of overnight rain in South Florida causes widespread flooding",
+          "url": "https://sports.yahoo.com/articles/lpga-working-pga-tour-networks-171452889.html",
+          "title": "LPGA Working With PGA Tour, Networks for Better TV Windows",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvAxmb869QfGXs0MB81MeeXDQQc5az1vD15QozOBfXEsc6LToB0MXlY_xoe08"
+        },
+        {
+          "url": "https://www.golfdigest.com/story/lpga-tv-viewership-plan-2027-craig-kessler-pga-tour-follow-up",
+          "title": "How can the LPGA increase its viewership? Here’s one simple plan the tour commissioner is trying in 2027",
+          "publisher": "Golf Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6GoQonuthQRAdyn2QeNV9j_JkYgTpZ0dC5lZB6v2W2WkapZVMtkMFPiOHWlM"
+        }
+      ]
+    },
+    {
+      "query": "jace jung",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T19:40:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/tigers-peyton-graham-40-man-roster-matt-vierling-designated-for-assignment",
+        "https://www.woodtv.com/sports/detroit-tigers/tigers-cut-matt-vierling-two-former-first-round-picks-from-40-man-roster/",
+        "https://www.freep.com/story/sports/columnists/jeff-seidel/2026/11/17/detroit-tigers-40-man-roster-cuts-matt-vierling-trey-sweeney/92825610007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ01S_vytIjsDRhFYmlkmaYsknd1f3MtcviS8NNCaE68zBlV0DFuDUKCcPSoms",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/tigers-peyton-graham-40-man-roster-matt-vierling-designated-for-assignment",
+          "title": "Tigers add fast-rising prospect Graham to 40-man roster, DFA Vierling",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ01S_vytIjsDRhFYmlkmaYsknd1f3MtcviS8NNCaE68zBlV0DFuDUKCcPSoms"
+        },
+        {
+          "url": "https://www.woodtv.com/sports/detroit-tigers/tigers-cut-matt-vierling-two-former-first-round-picks-from-40-man-roster/",
+          "title": "Tigers cut Matt Vierling, two former first-round picks from 40-man roster",
+          "publisher": "WOODTV.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTpMZaawULtSdb2eHitOmOw7-x_0eTSIfBxMS1Aq43mZQNbwRWgV0YwknqeBc"
+        },
+        {
+          "url": "https://www.freep.com/story/sports/columnists/jeff-seidel/2026/11/17/detroit-tigers-40-man-roster-cuts-matt-vierling-trey-sweeney/92825610007/",
+          "title": "Matt Vierling among veterans Tigers sacrificed on 40-man roster cuts",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2cePWZTeRV_oGAkA_pv7a5KfLspAA9asBuIOBfQN1Z8o4exGQVdFUpBkzc30"
+        }
+      ]
+    },
+    {
+      "query": "nick fortes",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T19:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-17/report-rays-working-on-nick-fortes-trade",
+        "https://cubbiescrib.com/cubs-could-pivot-to-imminent-rays-target-as-carson-kelly-s-price-climbs",
+        "https://blogredmachine.com/reds-should-not-let-growing-competition-scare-them-off-rays-catcher"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQO6s05yC0ezutd__uzPLp7qnlHaxw6_h0E-czxHkMqz17AVQo6QfhT-2L9A4Y",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-17/report-rays-working-on-nick-fortes-trade",
+          "title": "Report: Rays working on Nick Fortes trade",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQO6s05yC0ezutd__uzPLp7qnlHaxw6_h0E-czxHkMqz17AVQo6QfhT-2L9A4Y"
+        },
+        {
+          "url": "https://cubbiescrib.com/cubs-could-pivot-to-imminent-rays-target-as-carson-kelly-s-price-climbs",
+          "title": "Cubs could pivot to imminent Rays target as Carson Kelly's price climbs",
+          "publisher": "Cubbies Crib",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQvADwHXJ-9ToG8Xke-NepeOURQq1zZKfiKPk9P1m7zHwDSaXY2GPpVxuCDgo"
+        },
+        {
+          "url": "https://blogredmachine.com/reds-should-not-let-growing-competition-scare-them-off-rays-catcher",
+          "title": "Reds should not let growing competition scare them off Rays catcher",
+          "publisher": "Blog Red Machine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIIG2fd5CZ61MyTn4Q2lEZmiAxIoGX1D2LWRTn_NTkE3Wtf6zsg61cnwEulp4"
+        }
+      ]
+    },
+    {
+      "query": "senate majority leader",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T19:30:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/politics/interactive/2026/11/18/these-are-senate-democrats-backing-schumer-van-hollen-majority-leader/",
+        "https://apnews.com/article/schumer-bernie-sanders-senate-democrats-leadership-election-c5a182727397e964b19ad0dec5aeca42",
+        "https://www.rollcall.com/2026/11/17/senate-democrats-leadership-vote"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSzjjvi-UPNn4V7_MkKfP8tSxbKfldefQ6aNE3aEOQNha8UvR7EAitmU3G2-g",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/politics/interactive/2026/11/18/these-are-senate-democrats-backing-schumer-van-hollen-majority-leader/",
+          "title": "These are the Senate Democrats backing Schumer and Van Hollen for majority leader",
           "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-D12zoCo67R2yEXlXR02VlLEH_gsASLRUoZ7h-c9EVWI5vp-7xdxceI2M700"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSzjjvi-UPNn4V7_MkKfP8tSxbKfldefQ6aNE3aEOQNha8UvR7EAitmU3G2-g"
         },
         {
-          "url": "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
-          "title": "Live updates: Broward declares state of emergency, schools close due to flooding",
-          "publisher": "NBC 6 South Florida",
+          "url": "https://apnews.com/article/schumer-bernie-sanders-senate-democrats-leadership-election-c5a182727397e964b19ad0dec5aeca42",
+          "title": "Bernie Sanders won't support Schumer for Senate Democratic leader, saying it's time for change",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1F-2Od4_sNpPWASVsAcVfNHDTofYnj0Mz42kF4PsQXGkQr8uURqwcPB2f-oM"
+        },
+        {
+          "url": "https://www.rollcall.com/2026/11/17/senate-democrats-leadership-vote",
+          "title": "Senate Dems dismiss talk of earlier leadership election; Schumer confident",
+          "publisher": "Roll Call",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0SACUBWQ2vwfLA2NI6P5lTOmJrNzPJ1JCAFMIfC_AEAJXbxb3EHDPt7DGDvU"
         }
       ]
     },
     {
-      "query": "usda health alert breakfast",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T18:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/breakfast-items-biscuits-recall-health-alert/92830906007/",
-        "https://www.yahoo.com/news/us/articles/popular-ready-eat-meal-being-124035860.html",
-        "https://www.mycentraljersey.com/story/news/2026/11/18/breakfast-food-recall-listeria-risk/92841680007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/breakfast-items-biscuits-recall-health-alert/92830906007/",
-          "title": "Do not eat these breakfast items, says USDA health alert",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/popular-ready-eat-meal-being-124035860.html",
-          "title": "A Popular Ready-to-Eat Meal Is Being Recalled for Possible Listeria Contamination—Here’s What to Know",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNgM_pJylUC_nPRAqxf9raVRFgkhX5iXSBynFYS8x7fvSepOdsAZYk8c3DLTI"
-        },
-        {
-          "url": "https://www.mycentraljersey.com/story/news/2026/11/18/breakfast-food-recall-listeria-risk/92841680007/",
-          "title": "Breakfast foods recalled over listeria risk. What to know",
-          "publisher": "Central New Jersey News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI"
-        }
-      ]
-    },
-    {
-      "query": "ginny and georgia season 4 release date",
+      "query": "start 'em, sit 'em",
       "approx_searches": "1000+",
-      "published_at": "2026-11-18T18:20:00Z",
+      "published_at": "2026-11-18T19:30:00Z",
       "related_news_urls": [
-        "https://www.teenvogue.com/story/ginny-and-georgia-season-4-first-look-exclusive",
-        "https://deadline.com/2026/11/ginny-and-georgia-season-4-release-date-photos-1237228180/",
-        "https://www.upi.com/Entertainment_News/TV/2026/11/18/ginny-georgia-season-4-photos-premiere-date/4881795025780/"
+        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50506830/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
+        "https://www.seahawks.com/news/fantasy-football-week-11-guide-starters-streamers-free-agents",
+        "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-quarterbacks-for-week-11"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQba58lTvvAl3eH7dQaTLo0Cu9NQcYHFcfcAmPjJChh0OCGmG6Q9Nzo4CCVSbw",
-      "image_credit": "Teen Vogue",
-      "news": [
-        {
-          "url": "https://www.teenvogue.com/story/ginny-and-georgia-season-4-first-look-exclusive",
-          "title": "‘Ginny & Georgia’ Season 4 First Look: The Past Is Never Far Behind (Exclusive)",
-          "publisher": "Teen Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQba58lTvvAl3eH7dQaTLo0Cu9NQcYHFcfcAmPjJChh0OCGmG6Q9Nzo4CCVSbw"
-        },
-        {
-          "url": "https://deadline.com/2026/11/ginny-and-georgia-season-4-release-date-photos-1237228180/",
-          "title": "‘Ginny & Georgia’ Season 4 Premiere Date Set By Netflix With First-Look Photos",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQER-TJdcfYo7cjRBmmrPuHjfhmswweR2_BPtAfm-qRkCfKZtGGkkuEA_yI0AA"
-        },
-        {
-          "url": "https://www.upi.com/Entertainment_News/TV/2026/11/18/ginny-georgia-season-4-photos-premiere-date/4881795025780/",
-          "title": "'Ginny & Georgia' gets Season 4 photos, January premiere date",
-          "publisher": "upi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUFY6h9rfrD3LI4nzCuiPEzamf97s6aZmk8nb_Z8oTCZ239sf8v9rXCuh2dwI"
-        }
-      ]
-    },
-    {
-      "query": "ak dear",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T18:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50523034/alabama-running-back-prospect-ak-dear-no-longer-team",
-        "https://247sports.com/college/alabama/article/sophomore-running-back-ak-dear-292898366/",
-        "https://www.on3.com/news/kalen-deboer-reveals-rb-ak-dear-is-no-longer-a-member-of-alabama-roster/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkVcxq1Ay9ZD9z17U3HzE8BbqfU3qRIAhcHWbw6kfxeZZFW9PzP--JXC02FlE",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBHCY7M403PzN62mK9hCN2jLKk3yUCQXZSjayM-9fW0YYQtlfozGYUDLNrDs",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50523034/alabama-running-back-prospect-ak-dear-no-longer-team",
-          "title": "Alabama running back prospect AK Dear no longer with team",
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50506830/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
+          "title": "Fantasy football rankings for Week 11: Wide receiver",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkVcxq1Ay9ZD9z17U3HzE8BbqfU3qRIAhcHWbw6kfxeZZFW9PzP--JXC02FlE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBHCY7M403PzN62mK9hCN2jLKk3yUCQXZSjayM-9fW0YYQtlfozGYUDLNrDs"
         },
         {
-          "url": "https://247sports.com/college/alabama/article/sophomore-running-back-ak-dear-292898366/",
-          "title": "Sophomore running back AK Dear no longer with Alabama football program, Kalen DeBoer says",
-          "publisher": "247Sports",
+          "url": "https://www.seahawks.com/news/fantasy-football-week-11-guide-starters-streamers-free-agents",
+          "title": "Fantasy Football Week 11 Guide: Starters, Streamers & Free Agents",
+          "publisher": "Seattle Seahawks",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD3vdkiQ9BNYP3KgZiiEIGxoNZiDDUeAA736QCaIIAAreMRO9YmHRZcz2USTI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrWkfvQkI2v6dPDb-LbFuxq52-EC3Zfh9flzkvMNRLABiSXY9tdeVGOLhU4Xw"
         },
         {
-          "url": "https://www.on3.com/news/kalen-deboer-reveals-rb-ak-dear-is-no-longer-a-member-of-alabama-roster/",
-          "title": "Kalen DeBoer reveals Alabama RB AK Dear is no longer a member the program",
-          "publisher": "On3",
+          "url": "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-quarterbacks-for-week-11",
+          "title": "NFL Fantasy 2026 Start 'Em, Sit 'Em: Quarterbacks for Week 11",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHVnTQjN3X8h3NhnqXctuFG18BmexYQJvETztO7Dei0kDGu6zejbTyoI9k-Ho"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDOCTGlBpQyk3XAdeS_gCIOrTSJzWRsx1Y87WiWDht-4gKWOIDQi4loiHygOQ"
         }
       ]
     },
     {
-      "query": "susan smith",
+      "query": "chelsea vs psg",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T18:00:00Z",
+      "published_at": "2026-11-18T19:20:00Z",
       "related_news_urls": [
-        "https://people.com/susan-smith-ex-husband-barely-remember-murdered-sons-exclusive-12262478",
-        "https://www.foxnews.com/us/susan-smith-ex-husband-wants-prison-until-dies-after-killing-sons-alleged-bid-win-lover",
-        "https://edition.cnn.com/2026/11/15/us/susan-smith-murder-parole-hearing"
+        "https://www.bbc.com/sport/football/live/c9zrdej3njdzt",
+        "https://www.skysports.com/football/live-blog/13613594/womens-champions-league-live-bk-hacken-vs-man-city-chelsea-vs-psg-score-updates-news-prediction-and-line-ups",
+        "https://sports.yahoo.com/articles/womens-champions-league-shaw-bench-171805487.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4kIFN9ny6MlrUTsaSoFjNUXohlKnRBCGUgD585iitVBlEnJKjqmfcxwArIy4",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLCpPdZaI6qBWCKKBgmzEXcjtDmL4Qsv7yYhRMT7hpkdjVe_CBiTSB1LtRzpI",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://people.com/susan-smith-ex-husband-barely-remember-murdered-sons-exclusive-12262478",
-          "title": "Susan Smith’s Ex-Husband Says He Can Barely Remember Their Murdered Sons, as She Seeks Parole (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.bbc.com/sport/football/live/c9zrdej3njdzt",
+          "title": "Women's Champions League LIVE: Hacken vs Man City before Chelsea v PSG - score & live text updates",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4kIFN9ny6MlrUTsaSoFjNUXohlKnRBCGUgD585iitVBlEnJKjqmfcxwArIy4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLCpPdZaI6qBWCKKBgmzEXcjtDmL4Qsv7yYhRMT7hpkdjVe_CBiTSB1LtRzpI"
         },
         {
-          "url": "https://www.foxnews.com/us/susan-smith-ex-husband-wants-prison-until-dies-after-killing-sons-alleged-bid-win-lover",
-          "title": "Susan Smith's ex-husband wants her ‘in prison until she dies’ after killing sons in alleged bid to win lover",
-          "publisher": "Fox News",
+          "url": "https://www.skysports.com/football/live-blog/13613594/womens-champions-league-live-bk-hacken-vs-man-city-chelsea-vs-psg-score-updates-news-prediction-and-line-ups",
+          "title": "Women's Champions League LIVE! BK Hacken vs Man City, Chelsea vs PSG score updates, news, prediction and line-ups",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR31dXyutgjvMK8NCk1X7G6nvimVUjAc19L7hu41GTJ8deqG2W6q1bFraPONjw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNbiQCGs6t_78nt8Z-OGU-uoXC0kcmN2eVq9dpCaq5LpNIHMG7l5yJEtL4YjI"
         },
         {
-          "url": "https://edition.cnn.com/2026/11/15/us/susan-smith-murder-parole-hearing",
-          "title": "He learned on TV that his wife Susan Smith drowned their two young sons in 1994. He wants her in prison forever",
-          "publisher": "CNN",
+          "url": "https://sports.yahoo.com/articles/womens-champions-league-shaw-bench-171805487.html",
+          "title": "Women's Champions League: Shaw on bench for Man City at Hacken",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQojbEuOBaX2QzJ50Qbjp9dy89LnfIFMGxnT1AzZTv7hBMA81PPkF-eN0uNkTI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB1Isy3jdUrLXJOLsLWv9PUHpQqR-YjDpdkUPgQcfw5D4vaQXw4yazIcqRQSU"
         }
       ]
     },
     {
-      "query": "hakeem jeffries speaker",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-18T17:20:00Z",
+      "query": "playstation network",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T19:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
-        "https://www.theguardian.com/us-news/live/2026/nov/18/donald-trump-mary-peltola-alaska-hakeem-jeffries-democrats-republicans-congress-house-senate-midterms-latest-news-updates",
-        "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html"
+        "https://www.vice.com/en/article/gta-6-ps5-game-sharing/",
+        "https://www.independent.co.uk/extras/indybest/gadgets-tech/video-games-consoles/game-sharing-gta-6-xbox-ps5-b3087019.html",
+        "https://metro.co.uk/2026/11/17/games-inbox-will-gta-6-tech-problems-launch-29797346/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNdKdSd1hg-r8TZufdaGWworqzex0_OYu2xBbpc5xEQBxiO1o1MfSkaTULFjQ",
+      "image_credit": "VICE",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
-          "title": "Democrats Nominate Hakeem Jeffries for Speaker of the House, Making History",
-          "publisher": "The New York Times",
+          "url": "https://www.vice.com/en/article/gta-6-ps5-game-sharing/",
+          "title": "Can You Game Share GTA 6 on PS5? PlayStation Has an Answer",
+          "publisher": "VICE",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNdKdSd1hg-r8TZufdaGWworqzex0_OYu2xBbpc5xEQBxiO1o1MfSkaTULFjQ"
         },
         {
-          "url": "https://www.theguardian.com/us-news/live/2026/nov/18/donald-trump-mary-peltola-alaska-hakeem-jeffries-democrats-republicans-congress-house-senate-midterms-latest-news-updates",
-          "title": "Democrats nominate Hakeem Jeffries to become first Black House speaker – US politics live",
-          "publisher": "The Guardian",
+          "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/video-games-consoles/game-sharing-gta-6-xbox-ps5-b3087019.html",
+          "title": "This simple trick lets you share GTA 6 with a friend on Xbox or PS5",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvsSmFdRCVSEMFmW7J8HBflWkzPXiNx3DU-HtccE6HFT9yXIlB2RKHHgASQnQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTh8dBU2vU4vkZ6-iN3dWJOZlpi1lkXhCb9t7XQtLJ2zzog4gA89iXXYs7Ryj8"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
-          "title": "Jeffries wins Democratic House speaker race, on track to make history in January",
-          "publisher": "CNBC",
+          "url": "https://metro.co.uk/2026/11/17/games-inbox-will-gta-6-tech-problems-launch-29797346/",
+          "title": "Games Inbox: Will GTA 6 have tech problems at launch?",
+          "publisher": "Metro.co.uk",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfS_imvE3ZKCIEu1NkQeOgRuY-AYL4tiVy-aEyLJQpRmnFuo6HbmUqPOeZzck"
-        }
-      ]
-    },
-    {
-      "query": "katherine clark",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T17:10:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/boston/news/katherine-clark-house-majority-leader-democrats/",
-        "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
-        "https://www.wcvb.com/article/mass-rep-katherine-clark-nominated-to-become-first-woman-house-majority-leader/74466995"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKAzlK7rMJyOaqgVWYLsLbmhNrqKaLc98CW8f8Oy63JUAs_ktwfttQx8qGdo",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/boston/news/katherine-clark-house-majority-leader-democrats/",
-          "title": "Katherine Clark of Massachusetts elected as next House majority leader by Democrats in historic first",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKAzlK7rMJyOaqgVWYLsLbmhNrqKaLc98CW8f8Oy63JUAs_ktwfttQx8qGdo"
-        },
-        {
-          "url": "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
-          "title": "Katherine Clark, Pete Aguilar, Joe Neguse elected to House majority posts",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROIb7EmX22wEX3Zg7VCI0_1fOD__s-z8tnZf8p18hOafCp48ba4n9b75Ldl3I"
-        },
-        {
-          "url": "https://www.wcvb.com/article/mass-rep-katherine-clark-nominated-to-become-first-woman-house-majority-leader/74466995",
-          "title": "Mass. Rep. Katherine Clark nominated to become first woman House majority leader",
-          "publisher": "WCVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoJUve-tt0gouaP3H5jfM8Vk9x_iKV-pjhnxxwqGFwuTwA2j9wVe1SvDxmLA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpcm8kixbtL1ylTU5su4j96SoKKl1sAqQid-wci2zOiWkeQVGEVa1Lfj93n9o"
         }
       ]
     }
