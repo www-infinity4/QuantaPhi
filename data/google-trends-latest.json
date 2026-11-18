@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T17:31:20.820957Z",
+  "checked_at": "2026-11-18T18:01:20.282902Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "hakeem jeffries speaker",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T17:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
+        "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
+        "https://apnews.com/article/hakeem-jeffries-house-leadership-speaker-democrats-260433358f776473f29151992569f81d"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
+          "title": "Democrats Nominate Hakeem Jeffries for Speaker of the House, Making History",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
+          "title": "Jeffries wins Democratic House speaker race, on track to make history in January",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpwqCN9SsFOMZEGF1L73dkgOPhHAWfP5qgn30u7g8KkJgEXtMKMhO6IDbkFO8"
+        },
+        {
+          "url": "https://apnews.com/article/hakeem-jeffries-house-leadership-speaker-democrats-260433358f776473f29151992569f81d",
+          "title": "Hakeem Jeffries could become the first Black House speaker after Democratic nomination",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAGc-He2sNE9vCrotT_htHDLyA7v7IlDNH1PfO9Vnt0VowErwYvc2VgRMfpZc"
+        }
+      ]
+    },
     {
       "query": "katherine clark",
       "approx_searches": "500+",
@@ -13,7 +48,7 @@
       "related_news_urls": [
         "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
         "https://www.cbsnews.com/boston/news/katherine-clark-house-majority-leader-democrats/",
-        "https://www.bostonherald.com/2026/11/16/lucas-neal-clark-poised-to-be-power-players/"
+        "https://www.wcvb.com/article/mass-rep-katherine-clark-nominated-to-become-first-woman-house-majority-leader/74466995"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROIb7EmX22wEX3Zg7VCI0_1fOD__s-z8tnZf8p18hOafCp48ba4n9b75Ldl3I",
       "image_credit": "Politico",
@@ -33,22 +68,22 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKAzlK7rMJyOaqgVWYLsLbmhNrqKaLc98CW8f8Oy63JUAs_ktwfttQx8qGdo"
         },
         {
-          "url": "https://www.bostonherald.com/2026/11/16/lucas-neal-clark-poised-to-be-power-players/",
-          "title": "Lucas: Neal, Clark poised to be power players in next Congress",
-          "publisher": "Boston Herald",
+          "url": "https://www.wcvb.com/article/mass-rep-katherine-clark-nominated-to-become-first-woman-house-majority-leader/74466995",
+          "title": "Mass. Rep. Katherine Clark nominated to become first woman House majority leader",
+          "publisher": "WCVB",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-RwU2n2WvlxX_sj_TYM6S89CeS3H2mIMsr4Vc2quF9NtV_jCC0uAsE_B0ves"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoJUve-tt0gouaP3H5jfM8Vk9x_iKV-pjhnxxwqGFwuTwA2j9wVe1SvDxmLA"
         }
       ]
     },
     {
       "query": "youngstown propane",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-18T17:10:00Z",
       "related_news_urls": [
         "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
-        "https://www.wfmj.com/news/local-news/austintown/explosion-fire-reported-at-youngstown-propane-in-austinown/article_472d92f7-299e-41f8-b8ea-143304719f87.html",
-        "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane-story-to-follow/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html"
+        "https://fox8.com/news/firefighters-are-on-scene-of-reported-explosion-in-austintown/",
+        "https://www.wfmj.com/news/local-news/austintown/explosion-fire-reported-at-youngstown-propane-in-austinown/article_472d92f7-299e-41f8-b8ea-143304719f87.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvTHDy0-6yhjl1Sansv3rwr-aGPWK68OZ0uo9ZdIUiOHgRLkCuR0kPDI9oME8",
       "image_credit": "WFMJ",
@@ -61,63 +96,28 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvTHDy0-6yhjl1Sansv3rwr-aGPWK68OZ0uo9ZdIUiOHgRLkCuR0kPDI9oME8"
         },
         {
+          "url": "https://fox8.com/news/firefighters-are-on-scene-of-reported-explosion-in-austintown/",
+          "title": "Firefighters are on scene of reported explosion in Austintown",
+          "publisher": "FOX 8 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89rJ9Gaw0hVjcNnJlAH-FI7WrGoSDxo7eKuQxeDtb0664UM-yZx3mBrjrsug"
+        },
+        {
           "url": "https://www.wfmj.com/news/local-news/austintown/explosion-fire-reported-at-youngstown-propane-in-austinown/article_472d92f7-299e-41f8-b8ea-143304719f87.html",
           "title": "Explosion, fire reported at Youngstown Propane in Austinown",
           "publisher": "WFMJ",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDetgtDlBjCyvaWmB0bse-KwXr78_-GpdmhDcGc4MVzYp2nRqEwyEofVe7LGM"
-        },
-        {
-          "url": "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane-story-to-follow/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
-          "title": "Crews investigating explosion at Youngstown Propane (STORY TO FOLLOW)",
-          "publisher": "WFMJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLNlNrGqc4bC5Aph_qAvkpRp-9NDWNC8YKPCNQPBaOWDq_pg3K4uumB3lbyg"
-        }
-      ]
-    },
-    {
-      "query": "trump putin xi jinping",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T17:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-        "https://www.yahoo.com/news/videos/president-trumps-elaborate-welcome-china-163017585.html",
-        "https://www.washingtonpost.com/national-security/2026/11/18/trumps-dream-nuclear-deal-meets-reality-an-unwilling-russia-china/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdxYhOt6s_XvK28LUVWXEALuCUE6pUs0fw9RnBEm6ehdBN5B4nwrWlZTso20E",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-          "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdxYhOt6s_XvK28LUVWXEALuCUE6pUs0fw9RnBEm6ehdBN5B4nwrWlZTso20E"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/president-trumps-elaborate-welcome-china-163017585.html",
-          "title": "President Trump's elaborate welcome in China",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTg1Zyn6-bNWx484dWX5hP0Q4pIQroCPDW5WlDVNccKNBWNOaGyFZTOiRQyXPw"
-        },
-        {
-          "url": "https://www.washingtonpost.com/national-security/2026/11/18/trumps-dream-nuclear-deal-meets-reality-an-unwilling-russia-china/",
-          "title": "Trump’s dream of a nuclear deal meets reality of unwilling Russia and China",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5nc6MyaJaVvNj44VkrdUuy42s5Ld5dLsWwrROHREidKxGITk_etb0MYlnDqw"
         }
       ]
     },
     {
       "query": "real madrid vs inter",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T17:00:00Z",
       "related_news_urls": [
         "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/",
-        "https://www.fantasyfootballscout.co.uk/2026/11/17/wucl-fantasy-matchday-5-team-reveal/",
+        "https://www.reutersconnect.com/item/uefa-womens-champions-league-real-madrid-v-inter-milan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkxQ1NBWUs",
         "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ",
@@ -131,11 +131,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ"
         },
         {
-          "url": "https://www.fantasyfootballscout.co.uk/2026/11/17/wucl-fantasy-matchday-5-team-reveal/",
-          "title": "WUCL Fantasy Matchday 5: Team reveal",
-          "publisher": "Fantasy Football Scout",
+          "url": "https://www.reutersconnect.com/item/uefa-womens-champions-league-real-madrid-v-inter-milan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkxQ1NBWUs",
+          "title": "Licensable picture: UEFA Women's Champions League - Real Madrid v Inter Milan",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSr_h3elVsrCvzhwHjDizln0gkYSOCVdewKp9OHM-hVHXvIlER3ZsNrFzMV6I"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-nai2xe44SCQ1IfoYXhPpUi6AUChSXo09tbEOqdO6oynGlgtIluLYnFP6VE"
         },
         {
           "url": "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing",
@@ -143,41 +143,6 @@
           "publisher": "Sofascore",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7eX8qGm5Pyxy3gkTDa_JYTw2EsA6EHhc1fywCX34GpJSghRmGTYBLm0u4t4"
-        }
-      ]
-    },
-    {
-      "query": "baylor basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T17:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/baylor-jackson-state-prediction-odds-time-2026-college-basketball-picks-wednesday-november-18/",
-        "https://sports.yahoo.com/articles/baylor-hosts-jackson-state-following-094317882.html",
-        "https://www.kcentv.com/video/sports/basketball/bears-basketball-coach-scott-drew-and-kayden-mingo-speak-after-close-loss-against-the-ut/500-93eacbe1-4da8-4877-9552-2dcf7910479c"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrJzEHqQ7pz7BeWdnVsyuyb_Uqj8kCLh7qdb9jvCOjXv4M7ZphcqcBxIBcg4",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/baylor-jackson-state-prediction-odds-time-2026-college-basketball-picks-wednesday-november-18/",
-          "title": "Baylor vs. Jackson State prediction, odds: College basketball picks for Wednesday, Nov. 18 by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrJzEHqQ7pz7BeWdnVsyuyb_Uqj8kCLh7qdb9jvCOjXv4M7ZphcqcBxIBcg4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/baylor-hosts-jackson-state-following-094317882.html",
-          "title": "Baylor hosts Jackson State following Mingo's 23-point game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEHkjsDlghGGoSHUAab4uHGcmdEajSBa3hwPv7KoqKkQu3jGYzRy4uha6HGeE"
-        },
-        {
-          "url": "https://www.kcentv.com/video/sports/basketball/bears-basketball-coach-scott-drew-and-kayden-mingo-speak-after-close-loss-against-the-ut/500-93eacbe1-4da8-4877-9552-2dcf7910479c",
-          "title": "Baylor Basketball | Coach Scott Drew and Kayden Mingo speak after close loss against the UT",
-          "publisher": "KCENTV.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC5fwkWuZqBZFcqTf54pEAF7oCZM1rvW0uZE5SSiHVVrAPRq6uCbDts7RMErw"
         }
       ]
     },
@@ -217,6 +182,76 @@
       ]
     },
     {
+      "query": "baylor basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T17:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/baylor-jackson-state-prediction-odds-time-2026-college-basketball-picks-wednesday-november-18/",
+        "https://sports.yahoo.com/articles/baylor-hosts-jackson-state-following-094317882.html",
+        "https://www.kcentv.com/video/sports/basketball/bears-basketball-coach-scott-drew-and-kayden-mingo-speak-after-close-loss-against-the-ut/500-93eacbe1-4da8-4877-9552-2dcf7910479c"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrJzEHqQ7pz7BeWdnVsyuyb_Uqj8kCLh7qdb9jvCOjXv4M7ZphcqcBxIBcg4",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/baylor-jackson-state-prediction-odds-time-2026-college-basketball-picks-wednesday-november-18/",
+          "title": "Baylor vs. Jackson State prediction, odds: College basketball picks for Wednesday, Nov. 18 by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrJzEHqQ7pz7BeWdnVsyuyb_Uqj8kCLh7qdb9jvCOjXv4M7ZphcqcBxIBcg4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/baylor-hosts-jackson-state-following-094317882.html",
+          "title": "Baylor hosts Jackson State following Mingo's 23-point game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEHkjsDlghGGoSHUAab4uHGcmdEajSBa3hwPv7KoqKkQu3jGYzRy4uha6HGeE"
+        },
+        {
+          "url": "https://www.kcentv.com/video/sports/basketball/bears-basketball-coach-scott-drew-and-kayden-mingo-speak-after-close-loss-against-the-ut/500-93eacbe1-4da8-4877-9552-2dcf7910479c",
+          "title": "Baylor Basketball | Coach Scott Drew and Kayden Mingo speak after close loss against the UT",
+          "publisher": "KCENTV.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC5fwkWuZqBZFcqTf54pEAF7oCZM1rvW0uZE5SSiHVVrAPRq6uCbDts7RMErw"
+        }
+      ]
+    },
+    {
+      "query": "trump putin xi jinping",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T17:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+        "https://www.axios.com/2026/11/18/trump-putin-china-meeting-ukraine",
+        "https://www.washingtonpost.com/national-security/2026/11/18/trumps-dream-nuclear-deal-meets-reality-an-unwilling-russia-china/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdxYhOt6s_XvK28LUVWXEALuCUE6pUs0fw9RnBEm6ehdBN5B4nwrWlZTso20E",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+          "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdxYhOt6s_XvK28LUVWXEALuCUE6pUs0fw9RnBEm6ehdBN5B4nwrWlZTso20E"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/18/trump-putin-china-meeting-ukraine",
+          "title": "Trump to meet Putin in China amid renewed push to end Ukraine war",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdm-1eD0lOIoM7tnN_ZtMHDqw2LBBnoYH3OiQ53VMpprDT2aqYkBypROIOXPY"
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2026/11/18/trumps-dream-nuclear-deal-meets-reality-an-unwilling-russia-china/",
+          "title": "Trump’s dream of a nuclear deal meets reality of unwilling Russia and China",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5nc6MyaJaVvNj44VkrdUuy42s5Ld5dLsWwrROHREidKxGITk_etb0MYlnDqw"
+        }
+      ]
+    },
+    {
       "query": "real madrid - inter de milán",
       "approx_searches": "2000+",
       "published_at": "2026-11-18T16:50:00Z",
@@ -252,78 +287,8 @@
       ]
     },
     {
-      "query": "new york city marathon",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T16:40:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
-        "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
-        "https://cowboystatedaily.com/2026/11/15/rare-condition-turns-routine-gym-workout-into-life-threatening-event-for-teen/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcI8bcNXo4DJ3mzxTWGTfyNx1l3wJbSqO4amtA6KyICdLQ2ZlYxl4k5qUTTA",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
-          "title": "Father of Rachel Apa, NYC Marathon runner who died, calls her death \"unfathomable\"",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcI8bcNXo4DJ3mzxTWGTfyNx1l3wJbSqO4amtA6KyICdLQ2ZlYxl4k5qUTTA"
-        },
-        {
-          "url": "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
-          "title": "Dad of N.Y.C. Marathon Runner Who Died at 24 Recalls Her Heartbreaking Final Texts",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUXijBOPCt-xPh5grgwCsJ7mpA63_MGhBKJkvSRod3KtbVC59hj5JbopGeJc"
-        },
-        {
-          "url": "https://cowboystatedaily.com/2026/11/15/rare-condition-turns-routine-gym-workout-into-life-threatening-event-for-teen/",
-          "title": "Rare Condition That Killed New York Marathoner Threatened Life Of Montana Teen",
-          "publisher": "Cowboy State Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6J9IPsV_Q71Di2eLd4GOeP2QPX3ZEd5taprAbj05cYUfEDTTmbjHsZwFVy8U"
-        }
-      ]
-    },
-    {
-      "query": "kevin feige",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T16:40:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/movies/story/2026-11-17/marvel-kevin-feige-kang-doom-avengers-doomsday",
-        "https://theplaylist.net/kevin-feige-kang-dynasty-doctor-doom-bait-switch-20261116/",
-        "https://www.yahoo.com/entertainment/movies/articles/avengers-secret-wars-must-end-182801600.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIVrna79DYKxmgak_Otv4X2n2_GvYvoUtlZctml95Jzp67od6qWU-mvNP37HU",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/movies/story/2026-11-17/marvel-kevin-feige-kang-doom-avengers-doomsday",
-          "title": "Marvel Studios boss says Doom was already going to replace Kang after ‘Quantumania’ flop",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIVrna79DYKxmgak_Otv4X2n2_GvYvoUtlZctml95Jzp67od6qWU-mvNP37HU"
-        },
-        {
-          "url": "https://theplaylist.net/kevin-feige-kang-dynasty-doctor-doom-bait-switch-20261116/",
-          "title": "Kevin Feige Reveals Marvel Planned To Use Kang As A Set-Up For Doctor Doom In ‘Avengers: The Kang Dynasty’ Before Jonathan Majors Was Ousted",
-          "publisher": "The Playlist",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN2shPO09pSeiVq__wn_VSDy3xJXeGasW67m_esx-B6S55xmLehFu3Ez6MzkI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/avengers-secret-wars-must-end-182801600.html",
-          "title": "Avengers: Secret Wars Must End Marvel’s Obsession With the Next Infinity Saga",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIR0MU5UyF479kACK40Bna_qba02UBMvPgKLrqJ6_FU0bu05XHnWtN7pHSIs"
-        }
-      ]
-    },
-    {
       "query": "chipotle hoodie",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T16:40:00Z",
       "related_news_urls": [
         "https://ir.chipotle.com/2026-11-16-CHIPOTLE-DEBUTS-THE-SNEAK-IT-IN-HOODIE-DESIGNED-TO-DISCREETLY-BRING-BURRITOS-TO-THE-MOVIES",
@@ -353,6 +318,41 @@
           "publisher": "People.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi_3YZQyeEgQIf4eEBuJRdVkTUWO_NhUOXUqVk3rkpjH8qrvZtNgC16KV16vI"
+        }
+      ]
+    },
+    {
+      "query": "new york city marathon",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T16:40:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
+        "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
+        "https://cowboystatedaily.com/2026/11/15/rare-condition-turns-routine-gym-workout-into-life-threatening-event-for-teen/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcI8bcNXo4DJ3mzxTWGTfyNx1l3wJbSqO4amtA6KyICdLQ2ZlYxl4k5qUTTA",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
+          "title": "Father of Rachel Apa, NYC Marathon runner who died, calls her death \"unfathomable\"",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcI8bcNXo4DJ3mzxTWGTfyNx1l3wJbSqO4amtA6KyICdLQ2ZlYxl4k5qUTTA"
+        },
+        {
+          "url": "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
+          "title": "Dad of N.Y.C. Marathon Runner Who Died at 24 Recalls Her Heartbreaking Final Texts",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUXijBOPCt-xPh5grgwCsJ7mpA63_MGhBKJkvSRod3KtbVC59hj5JbopGeJc"
+        },
+        {
+          "url": "https://cowboystatedaily.com/2026/11/15/rare-condition-turns-routine-gym-workout-into-life-threatening-event-for-teen/",
+          "title": "Rare Condition That Killed New York Marathoner Threatened Life Of Montana Teen",
+          "publisher": "Cowboy State Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6J9IPsV_Q71Di2eLd4GOeP2QPX3ZEd5taprAbj05cYUfEDTTmbjHsZwFVy8U"
         }
       ]
     }
