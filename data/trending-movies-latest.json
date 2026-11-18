@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-18T17:32:54.911894Z",
+  "checked_at": "2026-11-18T18:04:41.084215Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
@@ -17,7 +17,7 @@
       "poster": "https://i.ytimg.com/vi/Jmt9KUqotlo/hqdefault.jpg",
       "google_trending": true,
       "trend_query": "the comeback king",
-      "trend_checked_at": "2026-11-18T17:31:20.820957Z",
+      "trend_checked_at": "2026-11-18T18:01:20.282902Z",
       "trend_published_at": "2026-11-18T17:00:00Z",
       "approx_searches": "500+"
     },
