@@ -68,3 +68,12 @@ test('image studio has a prompt-first workflow, honest generation limitations an
  assert.match(css,/font-size:16px/);
  assert.match(css,/min-height:48px/);
 });
+
+test('Follow/Image Studio integration retains merged Oracle, Avatar and automation search',()=>{
+ const html=file('index.html');
+ assert.match(html,/id="oracleCardDepartment"/,'retain the Oracle category chooser');
+ assert.match(html,/id="iowaRadioMedia"/,'retain the radio media shelf');
+ assert.match(html,/id="nuanceDiscoveryCard"/,'retain private Nuance Discovery');
+ assert.match(html,/avatar-ai-card\.css/,'retain the public Avatar prompt card');
+ assert.match(html,/quanta-home-search-assist\.mjs/,'retain source-backed homepage autocomplete');
+});
