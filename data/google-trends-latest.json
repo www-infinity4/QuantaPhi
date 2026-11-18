@@ -3,17 +3,227 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T20:31:05.580433Z",
+  "checked_at": "2026-11-18T21:01:27.876431Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "hacker",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T20:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cm87987w1qz5o",
+        "https://techcrunch.com/2026/11/18/british-hackers-face-prison-for-gta-6-data-breach-and-crypto-thefts/",
+        "https://ktla.com/news/nationworld/british-hacker-text-phishing-cryptocurrency-theft-prison/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-kgD5Q6A1_z5ycFzHovHIm8yHrz2Hh_w4Uz7f6TUt3zf6e-gQ0ZImXVG6Tq4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cm87987w1qz5o",
+          "title": "British hacker who stole $11m through text message scheme jailed for six years in US",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-kgD5Q6A1_z5ycFzHovHIm8yHrz2Hh_w4Uz7f6TUt3zf6e-gQ0ZImXVG6Tq4"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/18/british-hackers-face-prison-for-gta-6-data-breach-and-crypto-thefts/",
+          "title": "British hackers face prison for GTA 6 data breach and crypto thefts",
+          "publisher": "TechCrunch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjeJkC0sKj2zqVTUFBc6cYkutG_z2TuBhZSdob7XG_NLu-up7AKt4rc8XBiJU"
+        },
+        {
+          "url": "https://ktla.com/news/nationworld/british-hacker-text-phishing-cryptocurrency-theft-prison/",
+          "title": "Hackers used fake texts to steal $11.6 million in cryptocurrency, feds say",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtucDAVdht4bdIeQfBdlWjOfy1queeELvlJLE3FBp87d76ryaufUh35hIY4jE"
+        }
+      ]
+    },
+    {
+      "query": "milo ventimiglia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T20:40:00Z",
+      "related_news_urls": [
+        "https://ew.com/jared-padalecki-cries-over-milo-ventimiglia-gilmore-girls-doc-12259853",
+        "https://www.yahoo.com/entertainment/tv/articles/jared-padalecki-shares-emotional-story-163556335.html",
+        "https://decider.com/2026/11/18/jared-padalecki-gilmore-girls-documentary-milo-ventimiglia-dean-jess/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9lsxiPi1E2_FHVhlUV744Z1uvitdvNEd_zHPKevSukHA2paN2dJAJQ13IimM",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/jared-padalecki-cries-over-milo-ventimiglia-gilmore-girls-doc-12259853",
+          "title": "Jared Padalecki cries over Milo Ventimiglia in new ‘Gilmore Girls’ doc",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9lsxiPi1E2_FHVhlUV744Z1uvitdvNEd_zHPKevSukHA2paN2dJAJQ13IimM"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/jared-padalecki-shares-emotional-story-163556335.html",
+          "title": "Jared Padalecki Shares Emotional Story of Support from Rival Milo Ventimiglia on 'Gilmore Girls'",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1xGw3SrZo0BqPLo6tu1dI9TFvJPYvaQ5CPV1dHq-tg0hCmunU557C32fQRsk"
+        },
+        {
+          "url": "https://decider.com/2026/11/18/jared-padalecki-gilmore-girls-documentary-milo-ventimiglia-dean-jess/",
+          "title": "Jared Padalecki reveals how he really felt when Milo Ventimiglia joined ‘Gilmore Girls’",
+          "publisher": "Decider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHGL6czZVucDJy_AhBMElFqx2-AAysjYmiOjOnU9NwEpv8bJxJT3hhDWTUxo"
+        }
+      ]
+    },
+    {
+      "query": "sonny gray",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T20:30:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/video/sonny-gray-signs-two-year-deal-with-twins",
+        "https://www.nytimes.com/athletic/7740198/2026/11/18/sonny-gray-signs-with-twins/",
+        "https://www.mlbtraderumors.com/2026/11/twins-sign-sonny-gray.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3XDs9G8jhkGVpQR7lebnPdsi6WHzBMY1l1lj5GSPsQlWfDSok1KFNmFZXJKw",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/video/sonny-gray-signs-two-year-deal-with-twins",
+          "title": "Sonny Gray signs two-year deal with Twins",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3XDs9G8jhkGVpQR7lebnPdsi6WHzBMY1l1lj5GSPsQlWfDSok1KFNmFZXJKw"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7740198/2026/11/18/sonny-gray-signs-with-twins/",
+          "title": "Twins sign Sonny Gray to two-year deal, bringing veteran starter back to Minnesota",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc2TS_i4WBMM_eL4IJ-fnUDTVWpjRNXjXQP4Hu3xx8T7uBEaHRDAOo_L1n6zs"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/twins-sign-sonny-gray.html",
+          "title": "Twins Sign Sonny Gray",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBw1OpKv8whAggiiB_ySxNf6BhYHFb2InKsdezK5R8UtVET5KHfUE9A8aC-7E"
+        }
+      ]
+    },
+    {
+      "query": "albemarle county public schools",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T20:20:00Z",
+      "related_news_urls": [
+        "https://cvillerightnow.com/news/208802-acps-closed-through-thanksgiving-break/",
+        "https://www.cbs19news.com/news/acps-announcing-early-holiday-closure-due-to-compliance-issues/article_45c7eec1-e951-443c-85fa-8e5e2c1a54d0.html",
+        "https://www.29news.com/2026/11/12/we-want-feedback-albemarle-county-school-board-members-hold-another-town-hall-parents-continue-seek-answers/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPOxIJ-UuXteGGJnJ0cgiS71hwEGcw6Si7qhyQINl_7Dg24YHSNWXLrzORBes",
+      "image_credit": "Cville Right Now",
+      "news": [
+        {
+          "url": "https://cvillerightnow.com/news/208802-acps-closed-through-thanksgiving-break/",
+          "title": "ACPS closes schools through Thanksgiving break",
+          "publisher": "Cville Right Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPOxIJ-UuXteGGJnJ0cgiS71hwEGcw6Si7qhyQINl_7Dg24YHSNWXLrzORBes"
+        },
+        {
+          "url": "https://www.cbs19news.com/news/acps-announcing-early-holiday-closure-due-to-compliance-issues/article_45c7eec1-e951-443c-85fa-8e5e2c1a54d0.html",
+          "title": "ACPS announcing early holiday closure due to ‘compliance issues’",
+          "publisher": "cbs19news.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Lgf-0PkcyZLpB4q1LAKaUD6OOVPC-0kdmiP62k5QYqfDWMpv34a3hEFWRoc"
+        },
+        {
+          "url": "https://www.29news.com/2026/11/12/we-want-feedback-albemarle-county-school-board-members-hold-another-town-hall-parents-continue-seek-answers/",
+          "title": "“We want feedback”: Albemarle County School Board members hold another town hall as parents continue to seek answers",
+          "publisher": "WVIR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQf3dR4wNPJrFxE1uRC_pK0qWnayI18Q2x29yLVzVYnL2nbDLqM3iNEh2a5RwU"
+        }
+      ]
+    },
+    {
+      "query": "anheuser busch",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T20:20:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/food/beverages/beer-wine-spirits/2026/11/18/anheuser-busch-closed-newark-nj/92842972007/",
+        "https://www.thespiritsbusiness.com/2026/11/ab-inbev-pours-1-5m-into-cutwater-production/",
+        "https://www.fooddive.com/news/anheuser-busch-invests-cutwater-plant-expansion/874944/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdyRSK-acSf8dJxeJfNi0615Waql2FfbCCcVO6O2QL5h7kWHgzONv-7aKKK54",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/food/beverages/beer-wine-spirits/2026/11/18/anheuser-busch-closed-newark-nj/92842972007/",
+          "title": "Anheuser-Busch closure marks end to 'beer capital of the world'",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdyRSK-acSf8dJxeJfNi0615Waql2FfbCCcVO6O2QL5h7kWHgzONv-7aKKK54"
+        },
+        {
+          "url": "https://www.thespiritsbusiness.com/2026/11/ab-inbev-pours-1-5m-into-cutwater-production/",
+          "title": "AB InBev pours $1.5m into Cutwater production",
+          "publisher": "The Spirits Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9WukHppnCtyVZpQIXG3ApFS3OMO8UmBTYfkBdVRoqEwWwBBlqVSBnTlw1EOE"
+        },
+        {
+          "url": "https://www.fooddive.com/news/anheuser-busch-invests-cutwater-plant-expansion/874944/",
+          "title": "Anheuser-Busch invests in flagship Cutwater plant to boost production",
+          "publisher": "Food Dive",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_Dx7f98efcbvpOEldf3K_ySTahz6JnoJhSWqjpMzTUF1M-ZVad6FDqVadK24"
+        }
+      ]
+    },
+    {
+      "query": "mercado cambiario",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T20:20:00Z",
+      "related_news_urls": [
+        "https://www.lanacion.com.ar/economia/la-incertidumbre-ya-contagio-al-mercado-cambiario-y-hay-senales-de-menos-oferta-de-dolares-nid18112026/",
+        "https://www.elnuevoherald.com/noticias/estados-unidos/article318101048.html",
+        "https://eleconomista.com.ar/economia/baja-tension-bonos-alivia-gobierno-mantener-ancla-dolar-n99603"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_dNbYYnAic966Tfgt_wNQZ2JIXIL0GOk2nf1aZJCl7xa7-cvX1OnrjiFQWak",
+      "image_credit": "La Nación",
+      "news": [
+        {
+          "url": "https://www.lanacion.com.ar/economia/la-incertidumbre-ya-contagio-al-mercado-cambiario-y-hay-senales-de-menos-oferta-de-dolares-nid18112026/",
+          "title": "La incertidumbre empieza a contagiar al mercado cambiario y hay señales de menos oferta de dólares",
+          "publisher": "La Nación",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_dNbYYnAic966Tfgt_wNQZ2JIXIL0GOk2nf1aZJCl7xa7-cvX1OnrjiFQWak"
+        },
+        {
+          "url": "https://www.elnuevoherald.com/noticias/estados-unidos/article318101048.html",
+          "title": "Mercado cambiario argentino opera en leve baja",
+          "publisher": "El Nuevo Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGi_FsC1DkxMzubRiR9BiPGiI0Fvg0itcD6ZjXjyZS1aFVBpMz7subGcWc4Mo"
+        },
+        {
+          "url": "https://eleconomista.com.ar/economia/baja-tension-bonos-alivia-gobierno-mantener-ancla-dolar-n99603",
+          "title": "Baja la tensión con los bonos y alivia al Gobierno para mantener el ancla con el dólar",
+          "publisher": "El Economista - Últimas noticias económicas y financieras",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw8Zmv1-tTrm2fQyX--GR0nWqvgIgzJGK3xmJS3ViE_hJ7-nqpLw4IckPVIGc"
+        }
+      ]
+    },
     {
       "query": "star wars",
       "approx_searches": "500+",
       "published_at": "2026-11-18T20:10:00Z",
       "related_news_urls": [
         "https://disneyexperiences.com/anzellans-imagineering-rd-robotic-characters/",
-        "https://www.hollywoodreporter.com/business/digital/new-star-wars-robots-disney-amazon-ai-anzellans-1236757851/",
-        "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai"
+        "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
+        "https://www.hollywoodreporter.com/business/digital/new-star-wars-robots-disney-amazon-ai-anzellans-1236757851/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTfDfynHEN1i0FFR936fTCWBV9_E95nDS4Hq7ZDciVoEjnUkSqUVf9b6r7kw",
       "image_credit": "Disney Experiences",
@@ -26,18 +236,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTfDfynHEN1i0FFR936fTCWBV9_E95nDS4Hq7ZDciVoEjnUkSqUVf9b6r7kw"
         },
         {
-          "url": "https://www.hollywoodreporter.com/business/digital/new-star-wars-robots-disney-amazon-ai-anzellans-1236757851/",
-          "title": "Disney and AWS Team Up to Create AI-Powered ‘Star Wars’ Robots",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRcfdsg00v3idrtbKFk3K1GCyQYysRxOgAYUGs4oxghrPf0yyLpXSQ0HYz-5g"
-        },
-        {
           "url": "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
           "title": "Disney’s new Star Wars animatronics interact with guests using AI",
           "publisher": "The Verge",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6kmoBLYRpFGVj_IutbEy63MuDNMIXYA6i9aGjYACouKOx_RlN1byZZUVhmQg"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/business/digital/new-star-wars-robots-disney-amazon-ai-anzellans-1236757851/",
+          "title": "Disney and AWS Team Up to Create AI-Powered ‘Star Wars’ Robots",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRcfdsg00v3idrtbKFk3K1GCyQYysRxOgAYUGs4oxghrPf0yyLpXSQ0HYz-5g"
         }
       ]
     },
@@ -47,8 +257,8 @@
       "published_at": "2026-11-18T20:10:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/seiya-suzuki-6-mlb-free-110621207.html",
-        "https://jaysjournal.com/how-suzuki-lowe-and-6-other-qualifying-offer-decisions-affect-the-blue-jays",
-        "https://www.bleachernation.com/cubs/2026/11/17/cant-forget-about-the-offense-deadlines-mccormick-garrett-and-other-cubs-bullets/"
+        "https://www.si.com/mlb/bluejays/onsi/3-free-agents-rejected-qualifying-offer-today-that-blue-jays-should-pursue",
+        "https://www.nytimes.com/athletic/7787592/2026/11/17/seiya-suzuki-qualifying-offer-cubs-mlb-free-agency/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8BNrPslYwIEe6a3biMWYFqHpQKQPJyZSsWJSrZJNXvYuVIO11AVqboqgwmek",
       "image_credit": "Yahoo Sports",
@@ -61,18 +271,53 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8BNrPslYwIEe6a3biMWYFqHpQKQPJyZSsWJSrZJNXvYuVIO11AVqboqgwmek"
         },
         {
-          "url": "https://jaysjournal.com/how-suzuki-lowe-and-6-other-qualifying-offer-decisions-affect-the-blue-jays",
-          "title": "How Suzuki, Lowe and 6 other Qualifying Offer decisions affect the Blue Jays",
-          "publisher": "Jays Journal",
+          "url": "https://www.si.com/mlb/bluejays/onsi/3-free-agents-rejected-qualifying-offer-today-that-blue-jays-should-pursue",
+          "title": "3 Free Agents Rejected Qualifying Offer Today That Blue Jays Should Pursue",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8-iwvXIrb3qoF2urYcZvuwpQMcNOxToRyDljFFeoC0uag81DJSCIDJIZQ0sE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBtzsHhk4_XaqdHmVbh1tXu29UslmKEN9Cm0AcpNwT9kY3hlLl99XDO2fmFpo"
         },
         {
-          "url": "https://www.bleachernation.com/cubs/2026/11/17/cant-forget-about-the-offense-deadlines-mccormick-garrett-and-other-cubs-bullets/",
-          "title": "Can’t Forget About the Offense, Deadlines, McCormick, Garrett, and Other Cubs Bullets",
-          "publisher": "Bleacher Nation",
+          "url": "https://www.nytimes.com/athletic/7787592/2026/11/17/seiya-suzuki-qualifying-offer-cubs-mlb-free-agency/",
+          "title": "Seiya Suzuki, a key cog in Cubs’ lineup, declines Chicago’s qualifying offer",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnrRB5f0XiJq26SrPrhmYidT-zSNBYwbbX1gtUjI-1y9WGvDzlJ-XRgfr8G00"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzDozNF_0TTSB6iPlcufq_qwKyyn6I8j7UUG282XODcnaeL3g6xg9qsAFOQF8"
+        }
+      ]
+    },
+    {
+      "query": "flavio cobolli",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T20:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/report/_/gameId/401861185",
+        "https://www.reuters.com/sports/soccer/wirtz-scores-twice-germany-thrash-dutch-5-0-win-nations-league-group-2026-11-16/",
+        "https://www.theguardian.com/football/2026/nov/17/jurgen-klopp-germany-project-football-daily-newsletter"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1nxv00X_7fS82VSAtZ_v84VaNGgVN4m4NnxpzSq9u8b__h-gFvpNJBaUBgtQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/report/_/gameId/401861185",
+          "title": "Germany 5-0 Netherlands (Nov 16, 2026) Game Analysis",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1nxv00X_7fS82VSAtZ_v84VaNGgVN4m4NnxpzSq9u8b__h-gFvpNJBaUBgtQ"
+        },
+        {
+          "url": "https://www.reuters.com/sports/soccer/wirtz-scores-twice-germany-thrash-dutch-5-0-win-nations-league-group-2026-11-16/",
+          "title": "Wirtz scores twice as Germany thrash Dutch 5-0 to win Nations League group",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgg21pvanLTVCZrixTocnLgTKXid3Mbf8tJCm8By9FhXdL79tFPFd_Sc_l1ko"
+        },
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/17/jurgen-klopp-germany-project-football-daily-newsletter",
+          "title": "Football Daily | Jürgen Klopp hard-launches his Germany rebuilding project in style",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShZqzXyrUHFIVJnrShaup9nfGRx5jeVto9XLpogadhVzcCkeXR5aTZWSyurec"
         }
       ]
     },
@@ -81,13 +326,20 @@
       "approx_searches": "500+",
       "published_at": "2026-11-18T20:00:00Z",
       "related_news_urls": [
+        "https://truthout.org/articles/21-dem-senators-join-gop-to-move-forward-bill-to-speed-up-data-center-permits/",
         "https://thehill.com/policy/energy-environment/6227652-baaja-bipartisan-permitting-reform-bill-vote/",
-        "https://www.nytimes.com/2026/11/18/climate/the-bill-thats-splitting-the-environmental-movement.html",
         "https://thenevadaindependent.com/article/nevada-senators-split-on-sweeping-energy-legislation-in-first-major-action-since-midterm-elections"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwuCbx68U8WCj41PdR4Cxt8vOycbOsNcXHxGpf4sNhicksK1Ia99r-0OVzmSI",
-      "image_credit": "The Hill",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvRsjwe963miMDeeiaLHNjjhOx9o8VMnlMl1i0etogZS4suYECb18mRdgDV_E",
+      "image_credit": "Truthout",
       "news": [
+        {
+          "url": "https://truthout.org/articles/21-dem-senators-join-gop-to-move-forward-bill-to-speed-up-data-center-permits/",
+          "title": "21 Dem Senators Join GOP to Move Forward Bill to Speed Up Data Center Permits",
+          "publisher": "Truthout",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvRsjwe963miMDeeiaLHNjjhOx9o8VMnlMl1i0etogZS4suYECb18mRdgDV_E"
+        },
         {
           "url": "https://thehill.com/policy/energy-environment/6227652-baaja-bipartisan-permitting-reform-bill-vote/",
           "title": "Senate further advances bipartisan permitting reform bill",
@@ -96,263 +348,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwuCbx68U8WCj41PdR4Cxt8vOycbOsNcXHxGpf4sNhicksK1Ia99r-0OVzmSI"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/18/climate/the-bill-thats-splitting-the-environmental-movement.html",
-          "title": "The Permitting Bill Is Splitting the Environmental Movement",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw8N1jtSaWl7rfoIawYO18P5q2nzwKoRdeA75BynvC7yq-0z4ygb_oPu2-RPQ"
-        },
-        {
           "url": "https://thenevadaindependent.com/article/nevada-senators-split-on-sweeping-energy-legislation-in-first-major-action-since-midterm-elections",
           "title": "Nevada senators split on sweeping energy legislation in first major action since midterm elections",
           "publisher": "The Nevada Independent",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfG-MqIsIbJM9b3h70sNvAv54o91vqupf_CiSojcdUtckyKVlgxPw6fOzo_PQ"
-        }
-      ]
-    },
-    {
-      "query": "flavio cobolli",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T20:00:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
-        "https://www.espn.com/tennis/story/_/id/50521030/alcaraz-cruises-medvedev-atp-finals-leg-issue",
-        "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIC_gOVPSGU0szwsifeG_pd10eUsfwFFLCtTqIE71Pqz09HdaU-LobCJddbA",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
-          "title": "Alcaraz eases past Medvedev, moves to brink of Turin SFs",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIC_gOVPSGU0szwsifeG_pd10eUsfwFFLCtTqIE71Pqz09HdaU-LobCJddbA"
-        },
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50521030/alcaraz-cruises-medvedev-atp-finals-leg-issue",
-          "title": "Alcaraz cruises past Medvedev at ATP Finals despite leg issue",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeI0Crctjs4nxSrlmyToBdZeOsXatAaR3-jvF820WFd_19oxZmXgkMq47Yn2o"
-        },
-        {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live",
-          "title": "Carlos Alcaraz beats Daniil Medvedev in ATP Finals tennis group stage – as it happened",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQkpSY0qD_ROAd5DI4D6jeuT3KgPCHgnE7yAI4PCxvDYcFhY8u5CYRBQhAkJA"
-        }
-      ]
-    },
-    {
-      "query": "frances tiafoe",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T19:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50501663/carlos-alcaraz-dominates-frances-tiafoe-atp-finals-opener",
-        "https://www.atptour.com/en/news/alcaraz-tiafoe-nitto-atp-finals-2026-monday",
-        "https://www.bbc.com/sport/tennis/articles/ckvg294x5yzqo"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTuIlWRDw9b8KN2Upquk6AVjCICIWF2xPv9zYqLxtLElQ8QBlJABo5if0zvyo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50501663/carlos-alcaraz-dominates-frances-tiafoe-atp-finals-opener",
-          "title": "Carlos Alcaraz dominates Frances Tiafoe in ATP Finals opener",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTuIlWRDw9b8KN2Upquk6AVjCICIWF2xPv9zYqLxtLElQ8QBlJABo5if0zvyo"
-        },
-        {
-          "url": "https://www.atptour.com/en/news/alcaraz-tiafoe-nitto-atp-finals-2026-monday",
-          "title": "Alcaraz dispatches Tiafoe for opening win in Turin",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX9A9e5B-2LG00-13izOZrk-VkF10TggiHeUUSpnbC1E4ivCOw3S3aoq_jrP0"
-        },
-        {
-          "url": "https://www.bbc.com/sport/tennis/articles/ckvg294x5yzqo",
-          "title": "ATP Finals: Carlos Alcaraz begins title bid with statement win over Frances Tiafoe",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl-67YRucWr9ZP6O2i7tqevk5hbv-C_TKMfZ9fmr3uA-FKaEJb9cE1Kr6TIIY"
-        }
-      ]
-    },
-    {
-      "query": "tiafoe",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T19:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/1DOjWbMEJi6q/",
-        "https://jen.jiji.com/atp-finals-fognini-also-at-cobollis-training-need-a-sparring-partner-ill-give-you-a-6-2-6-2/",
-        "https://www.reutersconnect.com/item/tennis-2026-nitto-atp-finals-cobolli-tiafoe/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBIMlhSMVo"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprnaDxf0yD036w08S5x3ZyVcbi_YOelIWfS5e2MHtWQXyWB3-q2-F9g39u1o",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/1DOjWbMEJi6q/",
-          "title": "ATP Finals 2026 live updates: Tiafoe faces Cobolli on day four after Alcaraz beat Medvedev in straight sets",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprnaDxf0yD036w08S5x3ZyVcbi_YOelIWfS5e2MHtWQXyWB3-q2-F9g39u1o"
-        },
-        {
-          "url": "https://jen.jiji.com/atp-finals-fognini-also-at-cobollis-training-need-a-sparring-partner-ill-give-you-a-6-2-6-2/",
-          "title": "Atp Finals, Fognini also at Cobolli's training: \"Need a sparring partner? I'll give you a 6-2 6-2\"",
-          "publisher": "jiji press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyXxaLf5W3qOuaqrC2Fo6w3OdFlYmSnlyeRJDr-eZP0Jg9Pb3mep0uRDNtcyY"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/tennis-2026-nitto-atp-finals-cobolli-tiafoe/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBIMlhSMVo",
-          "title": "Licensable picture: Tennis 2026: Nitto ATP Finals: COBOLLI TIAFOE",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_RATITIgtF_jbVAVeYtoKJj8NT18FYLJxN1ti203CKBzywXjh297I4tPnOo"
-        }
-      ]
-    },
-    {
-      "query": "sarah paulson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T19:50:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1438079/why-sarah-paulson-and-holland-taylor-arent-married",
-        "https://www.news24.com/you/celebs/international/american-horror-storys-sarah-paulson-gets-candid-on-why-marriage-gives-her-the-heebie-jeebies-20261116-0711",
-        "https://ew.com/sarah-paulson-and-holland-taylor-have-built-in-separations-in-relationship-12253165"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOzpsjLVmu215LT-fHcsReclRQHJiZWezXhynKkK2KD_zAvwB1Cg1goQJ8Ns",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1438079/why-sarah-paulson-and-holland-taylor-arent-married",
-          "title": "Sarah Paulson Reveals Why She Will Never Marry Holland Taylor",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOzpsjLVmu215LT-fHcsReclRQHJiZWezXhynKkK2KD_zAvwB1Cg1goQJ8Ns"
-        },
-        {
-          "url": "https://www.news24.com/you/celebs/international/american-horror-storys-sarah-paulson-gets-candid-on-why-marriage-gives-her-the-heebie-jeebies-20261116-0711",
-          "title": "American Horror Story’s Sarah Paulson gets candid on why marriage gives her the ‘heebie-jeebies’",
-          "publisher": "News24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsLZhMeBS9RmweEiO-LvenIjWXNqU9jp8jifKtnNL8_OE3qUf_MV02o4z3Kec"
-        },
-        {
-          "url": "https://ew.com/sarah-paulson-and-holland-taylor-have-built-in-separations-in-relationship-12253165",
-          "title": "Sarah Paulson says she and Holland Taylor have ‘built-in separations’ in their relationship",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzUKgRZ3Pau8ROUMsrxkyFcwV-3hdLNPPDrJihFaI03bEa4W3LrKS-XSiN7N4"
-        }
-      ]
-    },
-    {
-      "query": "ngc 1433 supernova",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T19:40:00Z",
-      "related_news_urls": [
-        "https://www.space.com/astronomy/a-newfound-supernova-explodes-50-million-light-years-away-space-photo-of-the-day-for-nov-18-2026",
-        "https://phys.org/news/2026-11-gemini-decam-showcase-young-ia.html",
-        "https://www.iflscience.com/a-nearby-exploding-supernova-will-peak-within-days-and-you-can-help-scientists-with-their-observations-85188"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EQXJJCL0msJLGAwfJ6x7I5C3TLpIubsXso2oFNh47506k6KldJ_ORc0ivUQ",
-      "image_credit": "Space",
-      "news": [
-        {
-          "url": "https://www.space.com/astronomy/a-newfound-supernova-explodes-50-million-light-years-away-space-photo-of-the-day-for-nov-18-2026",
-          "title": "Supernova explodes before astronomers' eyes photo of the day for Nov. 18, 2026",
-          "publisher": "Space",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EQXJJCL0msJLGAwfJ6x7I5C3TLpIubsXso2oFNh47506k6KldJ_ORc0ivUQ"
-        },
-        {
-          "url": "https://phys.org/news/2026-11-gemini-decam-showcase-young-ia.html",
-          "title": "Gemini and DECam showcase a young Type Ia supernova",
-          "publisher": "Phys.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTr7XYeLR_gKVfpVIY5qQvgAniNrmYTKGiyBGLTynxS9ozgrHwiNAtDED4MiHY"
-        },
-        {
-          "url": "https://www.iflscience.com/a-nearby-exploding-supernova-will-peak-within-days-and-you-can-help-scientists-with-their-observations-85188",
-          "title": "A Nearby Exploding Supernova Will Peak Within Days, And You Can Help Scientists With Their Observations",
-          "publisher": "IFLScience",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgsVssM95jkJasoJuAZZQbByiy-N-4aqEbYinrXOEFrrl33ECHAsZuJIrVZxM"
-        }
-      ]
-    },
-    {
-      "query": "kash patel",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T19:40:00Z",
-      "related_news_urls": [
-        "https://thehill.com/homenews/house/6227622-fbi-director-skips-threats-hearing/",
-        "https://nypost.com/2026/11/18/us-news/markwayne-mullin-testifies-about-security-threats-amid-tech-outages-live-updates/",
-        "https://www.thedailybeast.com/keystone-kash-ripped-for-skipping-testimony-amid-cyber-chaos"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3iwb-T1M7mcq0JcQVFbrjGeoh6DMaHliZwxKE5OigbwwJZ6nrSDgA9ra0PEo",
-      "image_credit": "The Hill",
-      "news": [
-        {
-          "url": "https://thehill.com/homenews/house/6227622-fbi-director-skips-threats-hearing/",
-          "title": "GOP chair blasts Patel for skipping worldwide threats hearing",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3iwb-T1M7mcq0JcQVFbrjGeoh6DMaHliZwxKE5OigbwwJZ6nrSDgA9ra0PEo"
-        },
-        {
-          "url": "https://nypost.com/2026/11/18/us-news/markwayne-mullin-testifies-about-security-threats-amid-tech-outages-live-updates/",
-          "title": "Outages, cyber attacks live updates: NY Republican warns Trump admin to heed lesson from 9/11 after outages",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwzSk-JY_QVSzQ1M8Ih1dElM7AkzTsSLKJGSDz2AbvTeah80nNWGf-LX7yJPQ"
-        },
-        {
-          "url": "https://www.thedailybeast.com/keystone-kash-ripped-for-skipping-testimony-amid-cyber-chaos",
-          "title": "Keystone Kash Ripped for Skipping Testimony Amid Cyber Chaos",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFc1GTb9VfMCsMz6x1FRejzrydzVdSihpnp_QfjkxVpwCeexPuBdZv2YRgkhA"
-        }
-      ]
-    },
-    {
-      "query": "golf",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T19:40:00Z",
-      "related_news_urls": [
-        "https://www.golfchannel.com/lpga/news/cme-group-tour-championship-2026-round-1-tee-times-pairings-how-to-watch",
-        "https://www.lpga.com/news/2026/featured-groups-2026-cme-group-tour-championship",
-        "https://sports.yahoo.com/articles/weeks-11-million-lpga-purse-181127816.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQ7Q0ULgQ02eWAHkCCZSQCy9X23tdtQbifei0u7TcQySh4lSyCmk00b9VFOk",
-      "image_credit": "Golf Channel",
-      "news": [
-        {
-          "url": "https://www.golfchannel.com/lpga/news/cme-group-tour-championship-2026-round-1-tee-times-pairings-how-to-watch",
-          "title": "CME Group Tour Championship 2026: Round 1 tee times, pairings, how to watch",
-          "publisher": "Golf Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQ7Q0ULgQ02eWAHkCCZSQCy9X23tdtQbifei0u7TcQySh4lSyCmk00b9VFOk"
-        },
-        {
-          "url": "https://www.lpga.com/news/2026/featured-groups-2026-cme-group-tour-championship",
-          "title": "Featured Groups: 2026 CME Group Tour Championship",
-          "publisher": "LPGA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmr0_TQAf42dGbnoaOrklW6R2a6MbTRVu-O17-YqbeqKJ4sjXTssPusn0Z594"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/weeks-11-million-lpga-purse-181127816.html",
-          "title": "How this week's $11 million LPGA purse is being paid out",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqNA-zEL3iilpwNkZ7tLqB3xDywLbSmxI_iZ1JpxoK3U3GPu_jKUAitOYAz-U"
         }
       ]
     }
