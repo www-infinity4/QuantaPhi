@@ -3,52 +3,332 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T05:30:53.184254Z",
+  "checked_at": "2026-11-18T06:01:45.685410Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "brook lopez",
+      "query": "dallas stars",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T05:10:00Z",
+      "published_at": "2026-11-18T05:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50495893/brook-lopez-drills-triple-vs-charlotte-hornets",
-        "https://www.rotowire.com/basketball/headlines/brook-lopez-news-season-high-eight-assists-sunday-539396",
-        "https://www.cbssports.com/fantasy/basketball/news/clippers-brook-lopez-season-high-eight-assists-sunday/"
+        "https://www.nhl.com/goldenknights/news/morning-skate-report-nov-17-2026",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/dallas-stars-vs-vegas-golden-knights-prediction-odds-2026-11-17/",
+        "https://www.nytimes.com/athletic/7790319/2026/11/17/stars-vs-golden-knights-stream-how-to-watch-nov-17/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxlptcDH2FkIv5IgaqV_PiPcnxLTI_yN9cV1b02oqU1bRORy8lqx3mBEvFP2k",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDmEvKQDT1IDg30quQGLuAoU6ONy-6G4SGVCcmEVoWCWH6zkhgqMQ4auJ44j0",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.espn.com/video/clip/_/id/50495893/brook-lopez-drills-triple-vs-charlotte-hornets",
-          "title": "Brook Lopez drills triple vs. Charlotte Hornets",
-          "publisher": "ESPN",
+          "url": "https://www.nhl.com/goldenknights/news/morning-skate-report-nov-17-2026",
+          "title": "Morning Skate Report: Nov. 17, 2026 | Vegas Golden Knights",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxlptcDH2FkIv5IgaqV_PiPcnxLTI_yN9cV1b02oqU1bRORy8lqx3mBEvFP2k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDmEvKQDT1IDg30quQGLuAoU6ONy-6G4SGVCcmEVoWCWH6zkhgqMQ4auJ44j0"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/brook-lopez-news-season-high-eight-assists-sunday-539396",
-          "title": "Brook Lopez News: Season-high eight assists Sunday",
-          "publisher": "RotoWire",
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/dallas-stars-vs-vegas-golden-knights-prediction-odds-2026-11-17/",
+          "title": "Dallas Stars vs Vegas Golden Knights Prediction, Picks & Odds | 17 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIfeCUYa6H6HfjcofMjSU-H7NblooGvOGS1Y2UPvK0oAaqPJMIf8ItvZJ9YLg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3psawmgXs0IgLPqzFlmVTLAciNiDSbZCDPapDta3MjCvUbGeG8EA0CrNCfws"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/clippers-brook-lopez-season-high-eight-assists-sunday/",
-          "title": "Clippers' Brook Lopez: Season-high eight assists Sunday",
-          "publisher": "CBS Sports",
+          "url": "https://www.nytimes.com/athletic/7790319/2026/11/17/stars-vs-golden-knights-stream-how-to-watch-nov-17/",
+          "title": "How to watch Stars vs. Golden Knights: TV channel and streaming options for November 17",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWcs3j_N5vFt01ACxKo1jhIMkv8rf4Kw3iLpY1wuRgz8aCBMj8q5PzemhqTz4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS95R9oEN9MH38C8GN34ZeemaMq9fGseGTWFRBDxnC0LVXW5uNPApk3Eg4X5ls"
+        }
+      ]
+    },
+    {
+      "query": "jarred vanderbilt",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T05:40:00Z",
+      "related_news_urls": [
+        "https://lakeshowlife.com/jarred-vanderbilt-played-his-way-back-to-lakers-relevancy",
+        "https://sports.yahoo.com/articles/lakers-much-maligned-big-man-174316580.html",
+        "https://heavy.com/sports/nba/los-angeles-lakers/warning-before-hornets-matchup/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpWHyik9yl6KruxwDn8E7iaByBXyxy6WlghE5dZykwl-LMoCXJFX95SZ6lWJ8",
+      "image_credit": "Lake Show Life",
+      "news": [
+        {
+          "url": "https://lakeshowlife.com/jarred-vanderbilt-played-his-way-back-to-lakers-relevancy",
+          "title": "Jarred Vanderbilt has played his way back to Lakers relevancy",
+          "publisher": "Lake Show Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpWHyik9yl6KruxwDn8E7iaByBXyxy6WlghE5dZykwl-LMoCXJFX95SZ6lWJ8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lakers-much-maligned-big-man-174316580.html",
+          "title": "Lakers’ Much-Maligned Big Man to Get Chance Amid Injury Woes",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTP3WgrS_qZ5UwxGomW8LqPIqRWGDYgRQCmKm2hHJpUwRzWyTh7zwx05oiOkE"
+        },
+        {
+          "url": "https://heavy.com/sports/nba/los-angeles-lakers/warning-before-hornets-matchup/",
+          "title": "Lakers Big Man Has Warning Before Hornets Matchup",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPJfA_We_DXhapbNZEFFecDj5nSRzqhvBwxZ_EF00z8Bqey3ebFa-WSIFEZKM"
+        }
+      ]
+    },
+    {
+      "query": "sharks game",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T05:30:00Z",
+      "related_news_urls": [
+        "https://www.mercurynews.com/2026/11/17/san-jose-sharks-kiefer-sherwood-calgary-flames/",
+        "https://www.prohockeyrumors.com/2026/11/kiefer-sherwood-out-week-to-week.html",
+        "https://sports.yahoo.com/articles/avalanche-prospect-found-success-elsewhere-204833190.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa48QodcqyzO24BzxtpNK7Djlf0-FHyBz8T3w-l_X9F-vChxDSZ9KWHQpfWT4",
+      "image_credit": "The Mercury News",
+      "news": [
+        {
+          "url": "https://www.mercurynews.com/2026/11/17/san-jose-sharks-kiefer-sherwood-calgary-flames/",
+          "title": "Sharks get one forward back from injury, but get bad news on another",
+          "publisher": "The Mercury News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa48QodcqyzO24BzxtpNK7Djlf0-FHyBz8T3w-l_X9F-vChxDSZ9KWHQpfWT4"
+        },
+        {
+          "url": "https://www.prohockeyrumors.com/2026/11/kiefer-sherwood-out-week-to-week.html",
+          "title": "Kiefer Sherwood Out Week-To-Week",
+          "publisher": "Pro Hockey Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhj6oZ3kvu1o4L3cLTVj0gE4T3GwB7lzaSxJjWf-LnU3L3KJsXAjdwyYBOqqM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/avalanche-prospect-found-success-elsewhere-204833190.html",
+          "title": "Avalanche Prospect Who Found Success Elsewhere Hit With Major Injury News",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSNUUxNG4GY-7LLetNzgGxfTuPlczjsQCO-aou7jBEOPC-YEufmC94509FFVg"
+        }
+      ]
+    },
+    {
+      "query": "jollibee",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T05:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/live-news/trump-begins-asia-trip-in-philippines-before-trilateral-china-talks-with-xi-putin",
+        "https://www.bloomberg.com/news/articles/2026-11-18/trump-treated-to-jollibee-diplomacy-with-late-night-snacks-from-marcos",
+        "https://globalnation.inquirer.net/348789/marcos-serves-jollibee-to-trump-to-have-taste-of-manila"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQw3jwU7_f3wVbYWLeXUUP3vPqG4XZbCdSEqPcZQEzNPOuf3DJXDyDXD3Kh9E",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/live-news/trump-begins-asia-trip-in-philippines-before-trilateral-china-talks-with-xi-putin",
+          "title": "Trump starts Asia trip in Philippines before high-stakes talks with Xi, Putin",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQw3jwU7_f3wVbYWLeXUUP3vPqG4XZbCdSEqPcZQEzNPOuf3DJXDyDXD3Kh9E"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-18/trump-treated-to-jollibee-diplomacy-with-late-night-snacks-from-marcos",
+          "title": "Trump Treated to Jollibee Diplomacy With Late-Night Snacks From Marcos",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHlfjhHI-1A__m-5kE5-fbE3E-is5kX2eb2eNVZrav1RP4b97frDt5W8VdKko"
+        },
+        {
+          "url": "https://globalnation.inquirer.net/348789/marcos-serves-jollibee-to-trump-to-have-taste-of-manila",
+          "title": "Marcos serves Jollibee to Trump to have ‘taste of Manila’",
+          "publisher": "Inquirer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTON9MgyRLm4d3dRv0j2383yZtIIE5FvvipHXjXamjiv3jK3bIMuhLVDzj8wJ4"
+        }
+      ]
+    },
+    {
+      "query": "jordan firstman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T05:20:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/shopping/news/jordan-firstman-clud-kid-j-crew-holiday-campaign-1236949266/",
+        "https://www.contentgrip.com/jcrew-club-kid-holiday/",
+        "https://wwd.com/business-news/retail/j-crew-holiday-campaign-jordan-firstman-reggie-absolom-1239418745/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQj55dhCys7sJAg4d0Vi8eWXYR6dTdti0IL2MdIlP4Qj6k_wPL0mXBjwsgmkGQ",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/shopping/news/jordan-firstman-clud-kid-j-crew-holiday-campaign-1236949266/",
+          "title": "‘Club Kids’ Jordan Firstman and Reggie Absolom Recreate ’90s J. Crew Catalogues in New Holiday Campaign",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQj55dhCys7sJAg4d0Vi8eWXYR6dTdti0IL2MdIlP4Qj6k_wPL0mXBjwsgmkGQ"
+        },
+        {
+          "url": "https://www.contentgrip.com/jcrew-club-kid-holiday/",
+          "title": "J.Crew taps Club Kid duo for holiday campaign",
+          "publisher": "ContentGrip",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8uSDKPpR2M4dkxEwB0LEhWBQceea-5L677Dbj86si8KFTUzCdoTy8RFRYizU"
+        },
+        {
+          "url": "https://wwd.com/business-news/retail/j-crew-holiday-campaign-jordan-firstman-reggie-absolom-1239418745/",
+          "title": "J.Crew Puts Actors and 1990s Styles in Holiday Campaign",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgk9YvpJLezGq69b3l3nHPibz2txYqaEnSYuIOWFPtlt-A4uDWj9OibIqgo7w"
+        }
+      ]
+    },
+    {
+      "query": "mandy moore",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T05:20:00Z",
+      "related_news_urls": [
+        "https://www.tmz.com/2026/11/17/ryan-adams-engaged-to-kate-farr/",
+        "https://pagesix.com/2026/11/17/celebrity-news/mandy-moores-ex-ryan-adams-engaged-to-woman-30-years-younger-than-him/",
+        "https://ew.com/ryan-adams-engaged-kate-farr-12261648"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpfLs-7qovQcU3liNfm2thWX63qe1pcjzQ5XZSkAp1cSp3qXNt_w4_jhSyibg",
+      "image_credit": "TMZ",
+      "news": [
+        {
+          "url": "https://www.tmz.com/2026/11/17/ryan-adams-engaged-to-kate-farr/",
+          "title": "Singer Ryan Adams Engaged to Kate Farr After Whirlwind Romance, 30-Year Age Gap",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpfLs-7qovQcU3liNfm2thWX63qe1pcjzQ5XZSkAp1cSp3qXNt_w4_jhSyibg"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/17/celebrity-news/mandy-moores-ex-ryan-adams-engaged-to-woman-30-years-younger-than-him/",
+          "title": "Mandy Moore’s ex Ryan Adams engaged to woman 30 years younger than him: ‘I’ve never been happier’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3tTqLbInGndZR_qyzGt7LHlS9Vve2XEjf2kzwG1D8-oN-q3o4U6m9--KtDCA"
+        },
+        {
+          "url": "https://ew.com/ryan-adams-engaged-kate-farr-12261648",
+          "title": "Ryan Adams, 52, engaged to fellow musician Kate Farr, 22, after 6 months of dating",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzGjSxmEY7HwXTRqZZT_PYHnVSBNRk01eO1Pmb3wMpMwZLsajXATzxmuybmnY"
+        }
+      ]
+    },
+    {
+      "query": "the body season 2",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T05:20:00Z",
+      "related_news_urls": [
+        "https://arstechnica.com/culture/2026/11/humanity-braces-for-an-alien-invasion-in-3-body-problem-s2-teaser/",
+        "https://www.hollywoodreporter.com/tv/tv-news/3-body-problem-season-2-trailer-1236757064/",
+        "https://www.netflix.com/tudum/articles/3-body-problem-season-1-recap"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw-1Lz-Yx4wNowN42W6zaa6SWjVNL5twkMQm1YWzZhGShRoKxZ7jbdLh147Sc",
+      "image_credit": "Ars Technica",
+      "news": [
+        {
+          "url": "https://arstechnica.com/culture/2026/11/humanity-braces-for-an-alien-invasion-in-3-body-problem-s2-teaser/",
+          "title": "Humanity braces for an alien invasion in 3 Body Problem S2 teaser",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw-1Lz-Yx4wNowN42W6zaa6SWjVNL5twkMQm1YWzZhGShRoKxZ7jbdLh147Sc"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/3-body-problem-season-2-trailer-1236757064/",
+          "title": "‘3 Body Problem’ Season 2 Trailer Released: “They’re Coming to Exterminate Us”",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSiX6z7-Wk5CgFhMuX2cMh69QGTu4oLfMQsley28rlAb2E2MabGtaukmNkgw4"
+        },
+        {
+          "url": "https://www.netflix.com/tudum/articles/3-body-problem-season-1-recap",
+          "title": "This 3 Body Problem Season 1 Recap Is for All You Bugs Out There",
+          "publisher": "Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLbFFr9MPUkjv5Gcv0Ws99LNMflKUFuCfsjvmEcn8FM3cnSYdUymMVsfVuWeI"
+        }
+      ]
+    },
+    {
+      "query": "sacramento weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T05:20:00Z",
+      "related_news_urls": [
+        "https://www.abc10.com/article/news/local/sacramento/sacramento-county-opens-three-self-serve-sandbag-pickup-sites/103-d6941ce6-b636-4b67-a00f-b29e06057acd",
+        "https://patch.com/california/sacramento/sacramento-county-opens-three-sandbag-sites-unincorporated-area-residents",
+        "https://www.kcra.com/article/rain-snow-totals-northern-california/74445801"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2OTDn39xyxwuRZrq0p1-meh3s6xHm2pazFiOZ7D1pCL9dDXG05cKtUU8cK6E",
+      "image_credit": "ABC10",
+      "news": [
+        {
+          "url": "https://www.abc10.com/article/news/local/sacramento/sacramento-county-opens-three-self-serve-sandbag-pickup-sites/103-d6941ce6-b636-4b67-a00f-b29e06057acd",
+          "title": "Sacramento County opens three self-serve sandbag pickup sites",
+          "publisher": "ABC10",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2OTDn39xyxwuRZrq0p1-meh3s6xHm2pazFiOZ7D1pCL9dDXG05cKtUU8cK6E"
+        },
+        {
+          "url": "https://patch.com/california/sacramento/sacramento-county-opens-three-sandbag-sites-unincorporated-area-residents",
+          "title": "Sacramento County Opens Three Sandbag Sites For Unincorporated-Area Residents",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShIS7AUNafk8RRrjVff3Z6CpBZRAPRDiuU7BTPDuSxRNCX8M9OsE9YacMvVHg"
+        },
+        {
+          "url": "https://www.kcra.com/article/rain-snow-totals-northern-california/74445801",
+          "title": "What are the latest rain and snow totals in Northern California?",
+          "publisher": "KCRA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYrmCBH2RDdZcU1HRRgZo1iO8Zxe1JibqhI4tyVDNrZXEApmflzRbwJELeAkg"
+        }
+      ]
+    },
+    {
+      "query": "quinn shephard",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T05:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
+        "https://variety.com/2026/tv/news/the-body-ratings-netflix-views-1236950624/",
+        "https://deadline.com/2026/11/the-body-ending-explained-by-creators-season-2-hopes-1237221976/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/13/arts/television/the-body-review-netflix.html",
+          "title": "‘The Body’ Talks Like ‘Mean Girls’ and Walks Like ‘The Crucible’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPS9s9GkM3xS41qMhWSbJ91SH0FseODasLiGdO7a_epvXPygy90OI4QwzzGLk"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/the-body-ratings-netflix-views-1236950624/",
+          "title": "‘The Body’ Debuts With 5.1 Million Views in Five Days",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRihQgTSl6XPMNRKIdsvL2TqXOoZ4_vsNwm65p_yEkYdlrCw5S_-Mlt8M5Qam8"
+        },
+        {
+          "url": "https://deadline.com/2026/11/the-body-ending-explained-by-creators-season-2-hopes-1237221976/",
+          "title": "‘The Body’ Creators Address Show’s “Unexplained Mysteries”, Tease Season 2 Hopes",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Hx1jRs9joOhA8iiPWuSkqCj1GTBNrzVeEnL3VsZYHs2ohjzHa6mXR6KNR3I"
         }
       ]
     },
     {
       "query": "dijon",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-18T05:10:00Z",
       "related_news_urls": [
         "https://www.k6fm.com/dijon-l-entreprise-verney-fetera-ses-70-ans-ce-jeudi-avec-l-inauguration-de-son-nouveau-showroom",
-        "https://dijon-actualites.fr/2026/11/18/intemperies-en-cote-dor-plus-de-25-interventions-sur-les-routes-apres-de-fortes-rafales-de-vent/",
-        "https://www.ouest-france.fr/meteo/bourgogne-franche-comte/dijon-21000/la-meteo-du-jour-a-dijon-e916b631-e3fd-4df2-b75c-6c08942279cf"
+        "https://www.bienpublic.com/faits-divers-justice/2026/11/18/rixe-mortelle-lors-d-une-soiree-arrosee-l-autopsie-et-les-temoignages-accablent-l-accuse",
+        "https://www.bienpublic.com/faits-divers-justice/2026/11/16/rixe-mortelle-lors-d-une-soiree-arrosee-son-visage-etait-meconnaissable"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGEvsl4ncJHPgfoHUCh0EGRwsVKAAit1EIpQuOW6udNZk03AGy4aZ_RQ1jua0",
       "image_credit": "K6FM",
@@ -61,290 +341,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGEvsl4ncJHPgfoHUCh0EGRwsVKAAit1EIpQuOW6udNZk03AGy4aZ_RQ1jua0"
         },
         {
-          "url": "https://dijon-actualites.fr/2026/11/18/intemperies-en-cote-dor-plus-de-25-interventions-sur-les-routes-apres-de-fortes-rafales-de-vent/",
-          "title": "Intempéries en Côte-d’Or : plus de 25 interventions sur les routes après de fortes rafales de vent",
-          "publisher": "Dijon Actualités",
+          "url": "https://www.bienpublic.com/faits-divers-justice/2026/11/18/rixe-mortelle-lors-d-une-soiree-arrosee-l-autopsie-et-les-temoignages-accablent-l-accuse",
+          "title": "Rixe mortelle lors d’une soirée arrosée : « Je lui disais “arrête, arrête”, mais il continuait de frapper »",
+          "publisher": "Le Bien Public",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCTj1Nhg_8TzZCXWUKB1WRl5kYLkeqhoc5fTaxtyVMk8mK9YR9AbGhgi0RUN4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlOdrgmm_c_34IdjR83CNlU4inf7gfEUcbIyxCtIMNGlhwmxYXSRShlI01A5I"
         },
         {
-          "url": "https://www.ouest-france.fr/meteo/bourgogne-franche-comte/dijon-21000/la-meteo-du-jour-a-dijon-e916b631-e3fd-4df2-b75c-6c08942279cf",
-          "title": "Météo. Quel temps est-il prévu à Dijon et ses environs le mardi 17 novembre 2026 ?",
-          "publisher": "Ouest-France",
+          "url": "https://www.bienpublic.com/faits-divers-justice/2026/11/16/rixe-mortelle-lors-d-une-soiree-arrosee-son-visage-etait-meconnaissable",
+          "title": "Dijon. Rixe mortelle lors d’une soirée arrosée : « Son visage était méconnaissable »",
+          "publisher": "Le Bien Public",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxrgtAZ3j--NzrEW8g7SzIIuro9T1yk6cgWps8dR9Laxon10ptU-OYiAGYhtU"
-        }
-      ]
-    },
-    {
-      "query": "hrv",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T05:10:00Z",
-      "related_news_urls": [
-        "https://bioengineer.org/exercise-interventions-linked-to-heart-rate-variability-shifts-in-youth-with-obesity/",
-        "https://bioengineer.org/pediatric-heart-rate-variability-marker-loses-significance-after-adjusting-for-life-support/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY6wjnYbZVgXSmLW9etx7l247EReDrawTk5DvxU7i8KMCEfJNptjtJ75FZne4",
-      "image_credit": "Bioengineer.org",
-      "news": [
-        {
-          "url": "https://bioengineer.org/exercise-interventions-linked-to-heart-rate-variability-shifts-in-youth-with-obesity/",
-          "title": "Exercise Interventions Linked to Heart Rate Variability Shifts in Youth with Obesity",
-          "publisher": "Bioengineer.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY6wjnYbZVgXSmLW9etx7l247EReDrawTk5DvxU7i8KMCEfJNptjtJ75FZne4"
-        },
-        {
-          "url": "https://bioengineer.org/pediatric-heart-rate-variability-marker-loses-significance-after-adjusting-for-life-support/",
-          "title": "Pediatric Heart Rate Variability Marker Loses Significance After Adjusting for Life Support",
-          "publisher": "Bioengineer.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr-KO80MZ-vILIH_wOxl3A8HLl4AJqLFGDmh6g5vLLDujPyB4hfiWZEl80oaQ"
-        }
-      ]
-    },
-    {
-      "query": "sion james",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T05:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/hornets-sion-james-headed-to-bench-539672/",
-        "https://www.rotowire.com/basketball/headlines/sion-james-news-headed-to-bench-539672",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/cha-starts-white-james-allen-reid-kalkbrenner"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXWJKelyhiJ8Rs3N3Vc19rkvj74YtI8HYNcivWLPOxA_-pI0CsnK_Im5dZbk",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/hornets-sion-james-headed-to-bench-539672/",
-          "title": "Hornets' Sion James: Headed to bench",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXWJKelyhiJ8Rs3N3Vc19rkvj74YtI8HYNcivWLPOxA_-pI0CsnK_Im5dZbk"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/sion-james-news-headed-to-bench-539672",
-          "title": "Sion James News: Headed to bench",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQYK8Mq1r7x7NoB8BnAKYSeXwofinaZ98l9KIDaM2w9R-Ac2mF9QVc-9Sz-Ls"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/cha-starts-white-james-allen-reid-kalkbrenner",
-          "title": "CHA starts White, James, Allen, Reid, Kalkbrenner",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwe5HSiRzAATPXBswvd3H1-Vf3_X6Mryu7OmC_dYqrdq1ps1I6sC5fmjoBUvo"
-        }
-      ]
-    },
-    {
-      "query": "quentin grimes",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T04:50:00Z",
-      "related_news_urls": [
-        "https://www.silverscreenandroll.com/lakers-analysis/128973/lakers-phoenix-suns-recap-box-score-quentin-grimes-luka-doncic",
-        "https://lakeshowlife.com/los-angeles-lakers-get-quentin-grimes-thought-signed-austin-reaves-out",
-        "https://sports.yahoo.com/articles/lakers-guard-mimics-paul-pierce-052855137.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtopFz6DQfpSyu6oKEH8I3P21QjomJ0N8nzO4yZIsZth7-H25wT2R7RJnNa7Q",
-      "image_credit": "Silver Screen and Roll",
-      "news": [
-        {
-          "url": "https://www.silverscreenandroll.com/lakers-analysis/128973/lakers-phoenix-suns-recap-box-score-quentin-grimes-luka-doncic",
-          "title": "Quentin Grimes calls game as Lakers escape Phoenix",
-          "publisher": "Silver Screen and Roll",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtopFz6DQfpSyu6oKEH8I3P21QjomJ0N8nzO4yZIsZth7-H25wT2R7RJnNa7Q"
-        },
-        {
-          "url": "https://lakeshowlife.com/los-angeles-lakers-get-quentin-grimes-thought-signed-austin-reaves-out",
-          "title": "Lakers get the Quentin Grimes LA thought they signed with Austin Reaves out",
-          "publisher": "Lake Show Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ylwddeayzX3EBNe4BiUY2nyPonLmtJlvxWer2bqh7O0TP43TvbriIFEhRAA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/lakers-guard-mimics-paul-pierce-052855137.html",
-          "title": "Lakers guard mimics Paul Pierce’s iconic line after burying Suns",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfyMtjB59zyTBv59IRHNF3-rX3kPqe8u8kDgBeqB42f6Ew3Az-sKOptSQmBYE"
-        }
-      ]
-    },
-    {
-      "query": "michael che",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T04:50:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/snl-weekend-update-faa-outage-jensen-huang",
-        "https://www.rollingstone.com/tv-movies/tv-movie-news/snl-weekend-update-roasts-trump-grounded-flights-jensen-huang-affairs-1235658417/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/colin-jost-takes-brutal-swipe-060057222.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3Q_WU02jdjK3knrHMN6rZWDghUNr1CtcbIJFdOyAx7Q7eP7hh-UAjM1x_CQU",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/snl-weekend-update-faa-outage-jensen-huang",
-          "title": "'SNL's Weekend Update skewers FAA ground stop, Jensen Huang affairs, and more",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3Q_WU02jdjK3knrHMN6rZWDghUNr1CtcbIJFdOyAx7Q7eP7hh-UAjM1x_CQU"
-        },
-        {
-          "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/snl-weekend-update-roasts-trump-grounded-flights-jensen-huang-affairs-1235658417/",
-          "title": "‘SNL’ Weekend Update Roasts Trump Admin Over Grounded Flights, Jensen Huang Affairs",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRC_MYpv2OYLUVK0EbX1NDAyCdJYmqRKLlctlaMmhLEmwKDjhVR7xx6JCGFbk8"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/colin-jost-takes-brutal-swipe-060057222.html",
-          "title": "Colin Jost Takes Brutal Swipe at Trump Goons Over Travel Nightmare",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3vPMdzDtzAVyGUJANinSJ-jDHbZtYAZJp7a1GVGia36xsYJxVYgUSIv9eOk"
-        }
-      ]
-    },
-    {
-      "query": "leroy blyden jr.",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T04:50:00Z",
-      "related_news_urls": [
-        "https://www.dnronline.com/photo/state-semifinal-volleyball-fort-defiance-vs-madison-county/collection_57786e53-bdc7-53a5-8f63-77a5f0268932.html",
-        "https://www.dnronline.com/associated_press/virginia/us-nationwide-ground-stop/image_893e918d-d12d-5a38-af26-407a15be13b4.html",
-        "https://www.dnronline.com/associated_press/national/the-top-photos-of-the-day-by-aps-photojournalists/article_a863dae1-6381-55ff-b99b-15ea5aa77976.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDmm0ZBCSQSBtRHbYrWfv6KpsjtwXeMXl4Sx6DpMZTvyIJEoMlxq54-B0qeqo",
-      "image_credit": "Daily News-Record",
-      "news": [
-        {
-          "url": "https://www.dnronline.com/photo/state-semifinal-volleyball-fort-defiance-vs-madison-county/collection_57786e53-bdc7-53a5-8f63-77a5f0268932.html",
-          "title": "State Semifinal Volleyball: Fort Defiance vs. Madison County",
-          "publisher": "Daily News-Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDmm0ZBCSQSBtRHbYrWfv6KpsjtwXeMXl4Sx6DpMZTvyIJEoMlxq54-B0qeqo"
-        },
-        {
-          "url": "https://www.dnronline.com/associated_press/virginia/us-nationwide-ground-stop/image_893e918d-d12d-5a38-af26-407a15be13b4.html",
-          "title": "US Nationwide Ground Stop",
-          "publisher": "Daily News-Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3uFIXsUbNDhiHzHmwG9rcgT2KWu_CrJZwpNC0NwoLe1U3Qxm2TELbeBPhXLs"
-        },
-        {
-          "url": "https://www.dnronline.com/associated_press/national/the-top-photos-of-the-day-by-aps-photojournalists/article_a863dae1-6381-55ff-b99b-15ea5aa77976.html",
-          "title": "The top photos of the day by AP's photojournalists",
-          "publisher": "Daily News-Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRzm1ipUQ1FjEsHSISIMzxmWKoA-M5cls-WxFITramrAtmORsXQVb77_JrHEc"
-        }
-      ]
-    },
-    {
-      "query": "doc rivers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T04:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/",
-        "https://bleacherreport.com/articles/25532927-carmelo-anthony-questions-doc-rivers-giannis-criticism-keep-s-t-locker-room",
-        "https://www.sun-sentinel.com/2026/11/12/ask-ira-did-heats-antetokounmpo-show-the-class-that-doc-rivers-lacked/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdqV7JwUyFeSuzKJu1J-1-2qbPKPhmG3J-ybcpYUEifYGBwg9DroMiAvTawjg",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/",
-          "title": "NBA season live updates: Victor Wembanyama, Spurs earn 12th consecutive win; latest news and scores",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdqV7JwUyFeSuzKJu1J-1-2qbPKPhmG3J-ybcpYUEifYGBwg9DroMiAvTawjg"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25532927-carmelo-anthony-questions-doc-rivers-giannis-criticism-keep-s-t-locker-room",
-          "title": "Carmelo Anthony Questions Doc Rivers for Giannis Criticism, 'Keep That S--t in the Locker Room'",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9V2ToYPvuZkH9mI5daGk81eDxTOBOmIVG5Ff3ZO1o9_VOmBi74bD-AQ_a6d0"
-        },
-        {
-          "url": "https://www.sun-sentinel.com/2026/11/12/ask-ira-did-heats-antetokounmpo-show-the-class-that-doc-rivers-lacked/",
-          "title": "ASK IRA: Did Heat’s Antetokounmpo show the class that Doc Rivers lacked?",
-          "publisher": "Sun Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREljz-euxhU9OkE5rIJL9PrZga7n2TWD9Ad8kJrrK17kwEiPiUX0kCeIPlV4s"
-        }
-      ]
-    },
-    {
-      "query": "lakers",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-18T04:40:00Z",
-      "related_news_urls": [
-        "https://www.sportsline.com/insiders/lakers-vs-hornets-prediction-odds-line-proven-model-reveals-nba-picks-for-tuesday-nov-17/",
-        "https://sports.yahoo.com/articles/luka-don-points-reaction-lakers-042056013.html",
-        "https://www.silverscreenandroll.com/lakers-game-previews/129005/lakers-vs-hornets-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-austin-reaves"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqZeLlv7QORU9yiF6mR88m4IttmRfln_Gh2Jr1NJAn_gsQAa3FV4Z2pBNgVOY",
-      "image_credit": "SportsLine",
-      "news": [
-        {
-          "url": "https://www.sportsline.com/insiders/lakers-vs-hornets-prediction-odds-line-proven-model-reveals-nba-picks-for-tuesday-nov-17/",
-          "title": "Lakers vs. Hornets prediction, odds, line: Proven model reveals NBA picks for Tuesday, Nov. 17",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqZeLlv7QORU9yiF6mR88m4IttmRfln_Gh2Jr1NJAn_gsQAa3FV4Z2pBNgVOY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/luka-don-points-reaction-lakers-042056013.html",
-          "title": "Luka Dončić points, reaction as Lakers take on Hornets",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLDR2CjXhG73MXAF6KiKHatwEYyAfag0qd2B7qDQAHOSaLYaGukDhGg18B5kM"
-        },
-        {
-          "url": "https://www.silverscreenandroll.com/lakers-game-previews/129005/lakers-vs-hornets-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-austin-reaves",
-          "title": "Lakers vs. Hornets Preview: The winning continues",
-          "publisher": "Silver Screen and Roll",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMDtbXD7xffr_oWPkPJnzcq_d_grhrBOxgaPrA7F1bI2P8RDu_w3EfXHGuxDA"
-        }
-      ]
-    },
-    {
-      "query": "brandon miller",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T04:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/hornets-panic-meter-charlotte-worried-190005105.html",
-        "https://www.rotoballer.com/player-news/brandon-miller-off-the-injury-report-for-sunday/1994158",
-        "https://therookiewire.usatoday.com/story/sports/nba/rookie/2026/11/15/hornets-forward-brandon-miller-groin-upgraded-to-active-vs-clippers/92793774007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3nhzbcUwa0l2WnLvx7KHBAXq1u-6P8gSfkA5fhrkbo6PlUvPDGsWRp8Ol18",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/hornets-panic-meter-charlotte-worried-190005105.html",
-          "title": "Hornets Panic Meter: Should Charlotte Be Worried About Brandon Miller?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3nhzbcUwa0l2WnLvx7KHBAXq1u-6P8gSfkA5fhrkbo6PlUvPDGsWRp8Ol18"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/brandon-miller-off-the-injury-report-for-sunday/1994158",
-          "title": "Brandon Miller Off the Injury Report for Sunday - NBA News | Fantasy Basketball",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7uv9K6eCGxpL1j2jh90Zux3kLqj2p20jP96f1Mdh85syLifkN8qGvslf-lKI"
-        },
-        {
-          "url": "https://therookiewire.usatoday.com/story/sports/nba/rookie/2026/11/15/hornets-forward-brandon-miller-groin-upgraded-to-active-vs-clippers/92793774007/",
-          "title": "Brandon Miller (groin) upgraded to active Sunday vs. Clippers",
-          "publisher": "Rookie Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSamqYsBzJrhbdYU_VXF1FkF4CdanKh0h7y-pFkYF_wSNgjOU4u4fy3_b3HCVQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSorwG52-cUPeHVHfwoLzfSonA1igzR0psjo_dPTiSoBAgCMRpsm-ugTj2L3n8"
         }
       ]
     }
