@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T13:01:18.637051Z",
+  "checked_at": "2026-11-18T13:31:19.099702Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "glenn close",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T13:00:00Z",
+      "related_news_urls": [
+        "https://www.elle.com/culture/celebrities/a74427141/zendaya-photos-governors-awards-2026/",
+        "https://www.theguardian.com/film/2026/nov/16/governers-awards-honorary-oscars",
+        "https://people.com/ridley-scott-dedicates-his-first-oscar-to-late-brother-tony-scott-12258267"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQJ-wHw1YoFr7vQr-6-3PkermWvdwCRcNhU_VCYjuV0hN0ZTZLk3syXNz9PUU",
+      "image_credit": "ELLE",
+      "news": [
+        {
+          "url": "https://www.elle.com/culture/celebrities/a74427141/zendaya-photos-governors-awards-2026/",
+          "title": "Zendaya Channels ‘Dune’ in a Glittering Sculptural Gown at the 2026 Governors Awards",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQJ-wHw1YoFr7vQr-6-3PkermWvdwCRcNhU_VCYjuV0hN0ZTZLk3syXNz9PUU"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/16/governers-awards-honorary-oscars",
+          "title": "Glenn Close cries! John Malkovich weeps! But it’s Nathan Fielder everyone wants to talk to at the honorary Oscars",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMYSzor6gCCNOx1avJIlqLhno_klyuwdisl0ngcN0TQTMi0FN2droCQ7JE1Dc"
+        },
+        {
+          "url": "https://people.com/ridley-scott-dedicates-his-first-oscar-to-late-brother-tony-scott-12258267",
+          "title": "Ridley Scott Dedicates His First Oscar to Late Brother, Top Gun Director Tony Scott, in Emotional Speech",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXKLOaqwXnJgSsKwJPBcVUyHk6yS6tj0WOGTxdliu-kTRc5LnRCEKoT6GJTw8"
+        }
+      ]
+    },
+    {
+      "query": "toxic hall of shame",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T12:50:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/18/health/2026-toxic-hall-of-shame-wellness",
+        "https://toxicfreefuture.org/press-room/new-report-finds-nearly-half-of-major-retailers-evaluated-are-backsliding-on-efforts-to-protect-health-from-toxic-chemicals-and-plastics/",
+        "https://toxicfreefuture.org/take-action/tell-retailers-in-the-toxic-hall-of-shame-its-past-time-to-restrict-harmful-chemicals-and-plastics/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMONzaJJfI692PEXne5npr7z1VD2H__M0X04Z2uI7vE8tGoWL3jMPRqE-IU1Q",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/18/health/2026-toxic-hall-of-shame-wellness",
+          "title": "‘Hall of Shame’ singles out major retailers before Black Friday",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMONzaJJfI692PEXne5npr7z1VD2H__M0X04Z2uI7vE8tGoWL3jMPRqE-IU1Q"
+        },
+        {
+          "url": "https://toxicfreefuture.org/press-room/new-report-finds-nearly-half-of-major-retailers-evaluated-are-backsliding-on-efforts-to-protect-health-from-toxic-chemicals-and-plastics/",
+          "title": "New report finds nearly half of major retailers evaluated are backsliding on efforts to protect health from toxic chemicals and plastics",
+          "publisher": "Toxic-Free Future",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxycM5CKY0-rQNpr_4xWQktcMFTuoapEmNfmnVNLS-txPrSWxcs3pxdzxXySA"
+        },
+        {
+          "url": "https://toxicfreefuture.org/take-action/tell-retailers-in-the-toxic-hall-of-shame-its-past-time-to-restrict-harmful-chemicals-and-plastics/",
+          "title": "Tell retailers in the Toxic Hall of Shame it’s past time to restrict harmful chemicals and plastics!",
+          "publisher": "Toxic-Free Future",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJz9UD2Ul3twfeTqs9lUVUAi2XLEHtQi69SlAnjIS4rEc_r-ja9m52VICUKIA"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 radio stations",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T12:50:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/games/2026/nov/16/auto-tunes-music-grand-theft-auto-conquered-zeitgeist-gta",
+        "https://www.nytimes.com/2026/11/18/arts/music/grand-theft-auto-vi-circoloco-justice.html",
+        "https://mashable.com/life/gta-6-every-artist-track"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMQs6PFZmW3l2OV16WF2kZylswcRd1jHCPVXzMc7dBu4KFEAXxdGz2b5vEKTQ",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/games/2026/nov/16/auto-tunes-music-grand-theft-auto-conquered-zeitgeist-gta",
+          "title": "Killer tunes: how Grand Theft Auto conquered the music world",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMQs6PFZmW3l2OV16WF2kZylswcRd1jHCPVXzMc7dBu4KFEAXxdGz2b5vEKTQ"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/18/arts/music/grand-theft-auto-vi-circoloco-justice.html",
+          "title": "The Sound of G.T.A. VI Was Born on the Dance Floor",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSiIZeGulCyiKd4hM0Q7gyjGPpyAJzvbG3Abl6YhPIQQNCGuluBs3e8mhJy2Y"
+        },
+        {
+          "url": "https://mashable.com/life/gta-6-every-artist-track",
+          "title": "The full 'GTA 6' soundtrack reportedly leaked: See every artist and track",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQP58gHEK1UeRdmsoviDSGcLLq3gMZ-4n1gnTk2i-xOM4IhJd2eIYZNT48n5zA"
+        }
+      ]
+    },
     {
       "query": "carrie ann inaba dwts comfort",
       "approx_searches": "200+",
@@ -83,7 +188,7 @@
       "related_news_urls": [
         "https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/",
         "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-cheat-codes",
-        "https://fandomwire.com/gta-6-cheat-codes-ps5-xbox-series-x-s-full-list/"
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmE_QIibwLyjMC9arz2u-8-fzv7g9TMDnm6QzBoMnVd7Bc0MtftYq-Jd2Wdyc",
       "image_credit": "Insider Gaming",
@@ -103,11 +208,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSRuWCfGDDN2Y3u5y3zHPrDx_DC60UKe6hY5K0vlxNDjQfrncE4AJzQQyrtpU"
         },
         {
-          "url": "https://fandomwire.com/gta-6-cheat-codes-ps5-xbox-series-x-s-full-list/",
-          "title": "GTA 6: Full List of All Cheat Codes for PS5 and Xbox Series X/S",
-          "publisher": "FandomWire",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cheats-list/",
+          "title": "Here's every cheat in GTA 6 to get infinite money, weapons, and vehicles",
+          "publisher": "PC Gamer",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFohcOlW8RWFzcHG5d9n-0RgkLj_WgkQG5r5pvKeCg3jWrjPsT3LNyo3oGRqU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyCG5rPi-FC3hYOaFhjui0jik7Yp-n5hLB-QfTXzTh_7nmR4Foqsu6LalIS9M"
         }
       ]
     },
@@ -116,19 +221,19 @@
       "approx_searches": "200+",
       "published_at": "2026-11-18T12:20:00Z",
       "related_news_urls": [
-        "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
+        "https://kotaku.com/gta-6s-map-contains-areas-that-could-be-used-in-the-future-says-rockstar-2000756338",
         "https://futurefive.com.au/story/should-we-be-excited-about-the-size-of-grand-theft-auto-vi-s-world-map",
         "https://www.cntraveller.com/article/gta-6-leonida-keys-florida-location-grand-theft-auto-vi"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I",
-      "image_credit": "RockstarINTEL",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjNgdF98lSTwJyJiRzK_jOpUU_Pm8OthZ5Bokf06NjtOvU7Ft6HT4QeVSHgQ",
+      "image_credit": "Kotaku",
       "news": [
         {
-          "url": "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
-          "title": "GTA VI Map Leaks As Collector’s Box Sold Early",
-          "publisher": "RockstarINTEL",
+          "url": "https://kotaku.com/gta-6s-map-contains-areas-that-could-be-used-in-the-future-says-rockstar-2000756338",
+          "title": "GTA 6′ s Map Contains Areas That Could Be Used In The ‘Future,’ Says Rockstar",
+          "publisher": "Kotaku",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjNgdF98lSTwJyJiRzK_jOpUU_Pm8OthZ5Bokf06NjtOvU7Ft6HT4QeVSHgQ"
         },
         {
           "url": "https://futurefive.com.au/story/should-we-be-excited-about-the-size-of-grand-theft-auto-vi-s-world-map",
@@ -182,70 +287,8 @@
       ]
     },
     {
-      "query": "prince william",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T12:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/17/world/asia/prince-william-climate-prize-india-rickshaw.html",
-        "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-william-kate-middleton-hand-095631325.html",
-        "https://www.marieclaire.com/celebrity/royals/princess-kate-earthshot-prize-mumbai-gown/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6UuvDre_l5prFw7m-3PoKh6aiQ3h-zE3Xmc3wuyz-eorXyocMUPdMFxbuUt4",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/17/world/asia/prince-william-climate-prize-india-rickshaw.html",
-          "title": "Prince William Brings Climate Prize to India, in an Electric Rickshaw",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6UuvDre_l5prFw7m-3PoKh6aiQ3h-zE3Xmc3wuyz-eorXyocMUPdMFxbuUt4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-william-kate-middleton-hand-095631325.html",
-          "title": "Prince William & Kate Middleton’s Hand-Holding During India Visit Draws Expert Attention",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2G5rD5EZJT_sNSxqH5kCj1YhvmTxRIlJeh1nFfdfmar5KFRKm7Ha2mgRjG9Y"
-        },
-        {
-          "url": "https://www.marieclaire.com/celebrity/royals/princess-kate-earthshot-prize-mumbai-gown/",
-          "title": "Princess Kate Delivers Bollywood Glam on the Earthshot Prize Green Carpet",
-          "publisher": "Marie Claire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGKx0FkiNnKXRPj-aD6PE-xv6rfMjukq1TBrdkOzLem_qrL70n5MZiAIoB9Nk"
-        }
-      ]
-    },
-    {
-      "query": "bobby moynihan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T12:10:00Z",
-      "related_news_urls": [
-        "https://www.vulture.com/article/bobby-moynihan-kids-family-movies-tv.html",
-        "https://deadline.com/2026/11/bobby-moynihan-aristotle-athari-taran-killam-on-display-podcast-1237216844/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRchkRs_HsjzNzjgNYtb7kkdTuu2JcJwOrC-u0oooaThBstdwmdbM1BFESaiDE",
-      "image_credit": "Vulture",
-      "news": [
-        {
-          "url": "https://www.vulture.com/article/bobby-moynihan-kids-family-movies-tv.html",
-          "title": "What Bobby Moynihan Watches (and Listens to) With His Daughters",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRchkRs_HsjzNzjgNYtb7kkdTuu2JcJwOrC-u0oooaThBstdwmdbM1BFESaiDE"
-        },
-        {
-          "url": "https://deadline.com/2026/11/bobby-moynihan-aristotle-athari-taran-killam-on-display-podcast-1237216844/",
-          "title": "‘SNL’ Alums Bobby Moynihan, Aristotle Athari & Taran Killam Team On Collectibles Podcast ‘On Display’ – Watch The First Episode",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMZH6aGtYDgMM3Mq6HXzEBkAJYnvkUQ254OWGNn0Ia3cin4eFWGGtXeclcUOc"
-        }
-      ]
-    },
-    {
       "query": "ruby bridges",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-18T12:10:00Z",
       "related_news_urls": [
         "https://www.smdailyjournal.com/news/local/san-mateo-county-schools-mark-ruby-bridges-walk-to-school-day/article_e3c497e4-d6e2-4dd9-b8b5-94a686558128.html",
@@ -279,72 +322,29 @@
       ]
     },
     {
-      "query": "nifty 50",
-      "approx_searches": "100+",
+      "query": "bobby moynihan",
+      "approx_searches": "200+",
       "published_at": "2026-11-18T12:10:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/world/india/indian-shares-set-lower-open-foreign-inflows-easing-crude-lend-support-2026-11-18/",
-        "https://www.tradingview.com/news/reuters.com,2026:newsml_L3N46Z04W:0-indian-shares-set-for-lower-open-foreign-inflows-easing-crude-to-lend-support/",
-        "https://finimize.com/content/indias-stock-rally-took-a-breather-at-the-open"
+        "https://www.vulture.com/article/bobby-moynihan-kids-family-movies-tv.html",
+        "https://deadline.com/2026/11/bobby-moynihan-aristotle-athari-taran-killam-on-display-podcast-1237216844/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjzCJDe3OfjUzWX1k5lNceb1ezs4OlpAATHWcQ36lJcDuM7Bb7opqgpm4f2RI",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRchkRs_HsjzNzjgNYtb7kkdTuu2JcJwOrC-u0oooaThBstdwmdbM1BFESaiDE",
+      "image_credit": "Vulture",
       "news": [
         {
-          "url": "https://www.reuters.com/world/india/indian-shares-set-lower-open-foreign-inflows-easing-crude-lend-support-2026-11-18/",
-          "title": "Indian shares decline from nine-month high levels on profit-taking",
-          "publisher": "Reuters",
+          "url": "https://www.vulture.com/article/bobby-moynihan-kids-family-movies-tv.html",
+          "title": "What Bobby Moynihan Watches (and Listens to) With His Daughters",
+          "publisher": "Vulture",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjzCJDe3OfjUzWX1k5lNceb1ezs4OlpAATHWcQ36lJcDuM7Bb7opqgpm4f2RI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRchkRs_HsjzNzjgNYtb7kkdTuu2JcJwOrC-u0oooaThBstdwmdbM1BFESaiDE"
         },
         {
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L3N46Z04W:0-indian-shares-set-for-lower-open-foreign-inflows-easing-crude-to-lend-support/",
-          "title": "Indian shares set for lower open; foreign inflows, easing crude to lend support",
-          "publisher": "TradingView",
+          "url": "https://deadline.com/2026/11/bobby-moynihan-aristotle-athari-taran-killam-on-display-podcast-1237216844/",
+          "title": "‘SNL’ Alums Bobby Moynihan, Aristotle Athari & Taran Killam Team On Collectibles Podcast ‘On Display’ – Watch The First Episode",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://finimize.com/content/indias-stock-rally-took-a-breather-at-the-open",
-          "title": "India’s Stock Rally Took A Breather At The Open",
-          "publisher": "Finimize",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4WcSwOoARDcHo3LpctcemOkvKoPfCY9_HkxiYxQtxhp0g6-Xs2dykNCCI2g"
-        }
-      ]
-    },
-    {
-      "query": "celebrini",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T12:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/recap/_/gameId/401892725",
-        "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026",
-        "https://www.nbcsportsbayarea.com/nhl/san-jose-sharks/macklin-celebrini-will-smith-roommate-chemistry/1980656/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBzmrHNxMb-x8xf-QKEpNQoZUIoW_uShDtNAR9R6r_1QWGhTH3IArNLGhakwc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892725",
-          "title": "Sharks 4-2 Predators (Nov 15, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBzmrHNxMb-x8xf-QKEpNQoZUIoW_uShDtNAR9R6r_1QWGhTH3IArNLGhakwc"
-        },
-        {
-          "url": "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-preview-november-15-2026",
-          "title": "Predators at Sharks projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://www.nbcsportsbayarea.com/nhl/san-jose-sharks/macklin-celebrini-will-smith-roommate-chemistry/1980656/",
-          "title": "Macklin Celebrini, Will Smith credit ‘roommate chemistry' for Sharks' win",
-          "publisher": "NBC Sports Bay Area & California",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeKv-QCj0ansfHr_HZd4EPqly5WahsBXiu3cNJBETAomz6NwX1UoJ9RsvJ5qQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMZH6aGtYDgMM3Mq6HXzEBkAJYnvkUQ254OWGNn0Ia3cin4eFWGGtXeclcUOc"
         }
       ]
     }
