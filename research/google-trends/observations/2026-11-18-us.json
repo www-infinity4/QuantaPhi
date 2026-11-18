@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T00:45:33.960574Z",
+  "checked_at": "2026-11-18T01:01:33.779278Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "cfp rankings today",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50503628/cfp-playoff-2026-bubble-watch-week-third-ranking",
+        "https://www.cbssports.com/college-football/news/college-football-playoff-rankings-prediction-top-25-week-12-2026/",
+        "https://www.ncaa.com/news/football/article/2026-11-17/when-do-college-football-playoff-rankings-come-out"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7uaoRhAMFO_wnGjX2vuRw3zRJoWSvAMcnsCPl14sbqdxVVKspZO19c494iNw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50503628/cfp-playoff-2026-bubble-watch-week-third-ranking",
+          "title": "Who's on College Football Playoff bubble ahead of committee's third ranking?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7uaoRhAMFO_wnGjX2vuRw3zRJoWSvAMcnsCPl14sbqdxVVKspZO19c494iNw"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-playoff-rankings-prediction-top-25-week-12-2026/",
+          "title": "College Football Playoff Rankings prediction: Texas rises into top four, but biggest debate is outside top 12",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbVIuWEiZXBl_gd1duL67HRFHdPV5nwg4yBw49p3PYiMO87ZclavIgbDGn1Y"
+        },
+        {
+          "url": "https://www.ncaa.com/news/football/article/2026-11-17/when-do-college-football-playoff-rankings-come-out",
+          "title": "College Football Playoff rankings schedule, release dates",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbq-Ek8omSEsXGN2wN4XpHtDD29xiG4QDGYYj5KrZzeaTHR334yLEJ8jfcNe4"
+        }
+      ]
+    },
+    {
+      "query": "kennesaw st vs alabama",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T00:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/west-virginia/longformarticle/texts-from-kansas-game-day-292846477/",
+        "https://www.goodbullhunting.com/useless-breakdown/41476/useless-breakdown-texas-am-at-oklahoma",
+        "https://wvmetronews.com/2026/11/16/rodriguez-left-searching-for-answers-after-mountaineers-endure-most-lopsided-loss-of-season/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgbpdEDvn9hQjmL1dsTRdz-hYjzvT-0XT059tGdSVJQk_4uFg30Lr6oIKbauE",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/west-virginia/longformarticle/texts-from-kansas-game-day-292846477/",
+          "title": "Texts from Kansas Game Day",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgbpdEDvn9hQjmL1dsTRdz-hYjzvT-0XT059tGdSVJQk_4uFg30Lr6oIKbauE"
+        },
+        {
+          "url": "https://www.goodbullhunting.com/useless-breakdown/41476/useless-breakdown-texas-am-at-oklahoma",
+          "title": "USELESS BREAKDOWN: Texas A&M at Oklahoma graphical football preview",
+          "publisher": "Good Bull Hunting",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT0eShGa5xS4IXhNgNYVdBiOrHE6jdaLnCCL1UxCgI-TJBtcoDYuWDIKiLO30"
+        },
+        {
+          "url": "https://wvmetronews.com/2026/11/16/rodriguez-left-searching-for-answers-after-mountaineers-endure-most-lopsided-loss-of-season/",
+          "title": "Rodriguez left searching for answers after Mountaineers endure most lopsided loss of season",
+          "publisher": "WV MetroNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcfWebs1CKI-AXihqm_GcM-a-5diDXi8d_c5shuqxR2VpO0QJZ-foMhUamisM"
+        }
+      ]
+    },
+    {
+      "query": "tennessee vs belmont",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T00:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/tennessee/article/lady-vols-belmont-setup-292867557/",
+        "https://www.si.com/college/tennessee/women-s-basketball/live-updates-lady-vols-basketball-at-belmont-01m7nyvqnak0",
+        "https://sports.yahoo.com/articles/kim-caldwell-trying-match-third-133048779.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2Z6e4aIPwyBuhWJHFeXg6dro1GZJmglz9Ap9oHOD-audKtCPrREASyfe8-oc",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/tennessee/article/lady-vols-belmont-setup-292867557/",
+          "title": "Lady Vols to face another in-state foe in Belmont",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2Z6e4aIPwyBuhWJHFeXg6dro1GZJmglz9Ap9oHOD-audKtCPrREASyfe8-oc"
+        },
+        {
+          "url": "https://www.si.com/college/tennessee/women-s-basketball/live-updates-lady-vols-basketball-at-belmont-01m7nyvqnak0",
+          "title": "Live Updates: Lady Vols Basketball at Belmont",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK4C9xfGEDJj6AtejiqMiyjFvl6m6yWVG2MMevUWmzkftb2pw3sQ8teNkncfs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/kim-caldwell-trying-match-third-133048779.html",
+          "title": "Kim Caldwell trying to match third-best season start of career",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTssB4w7AXccxz2m0VgCYw0A73WIwWcU1AYZE3wZisLOPoC0ucbF4kV2cmquoU"
+        }
+      ]
+    },
+    {
+      "query": "target black friday 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T00:40:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/articles/target-reveals-black-friday-sale-ad-for-2026",
+        "https://www.fb101.com/target-black-friday-food-beverage-drops-goodles-katjes-backflip-714d89fdbc",
+        "https://drugstorenews.com/target-kick-black-friday-sales-event-giveaways"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfyG3D6L_PlJRjdudoqvW4No3s-JOzZI9-ortZUnR3T7-tIvPpfU4HIm2oWk",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/articles/target-reveals-black-friday-sale-ad-for-2026",
+          "title": "Target Reveals Its Black Friday Sale Ad for 2026 and a Free Gift Card Promotion for Shopping in Stores",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfyG3D6L_PlJRjdudoqvW4No3s-JOzZI9-ortZUnR3T7-tIvPpfU4HIm2oWk"
+        },
+        {
+          "url": "https://www.fb101.com/target-black-friday-food-beverage-drops-goodles-katjes-backflip-714d89fdbc",
+          "title": "Target's First-Ever Black Friday Food & Beverage Drops Signal a New Retail Playbook",
+          "publisher": "Food & Beverage Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSIhtA5DHeefbxEWhXGenaNy1FBqud5pj3frblo1rAMeK2Kuh5vTk4U5YnIz0"
+        },
+        {
+          "url": "https://drugstorenews.com/target-kick-black-friday-sales-event-giveaways",
+          "title": "Target to kick off Black Friday sales event, giveaways",
+          "publisher": "Drug Store News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFAgYEPTZu9sy05O27XZCZxTa29qVxdGQW-ceTCvOGjhZJs4hhs7qeuGnF8IE"
+        }
+      ]
+    },
+    {
+      "query": "dakota fanning",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T00:40:00Z",
+      "related_news_urls": [
+        "https://apnews.com/video/elle-fanning-on-working-with-her-sister-dakota-fanning-ac7aa07400a8461d81026be89a7cb7c7",
+        "https://evoke.ie/2026/11/17/entertainment/celebrity/elle-dakota-fanning-big-screen",
+        "https://apnews.com/video/elle-fanning-on-working-with-her-sister-dakota-fanning-77785ccb5cb645c388bfdfb5a11cd5d8"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdjnwjuPu-CSbvs4785pQSAnM3wW7ab_Pn6DZkl_UMEhaGnxrz31Gnfoww938",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/video/elle-fanning-on-working-with-her-sister-dakota-fanning-ac7aa07400a8461d81026be89a7cb7c7",
+          "title": "Elle Fanning on working with her sister, Dakota Fanning",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdjnwjuPu-CSbvs4785pQSAnM3wW7ab_Pn6DZkl_UMEhaGnxrz31Gnfoww938"
+        },
+        {
+          "url": "https://evoke.ie/2026/11/17/entertainment/celebrity/elle-dakota-fanning-big-screen",
+          "title": "Elle and Dakota Fanning to share the big screen for the first time in movie adaptation of hit book",
+          "publisher": "EVOKE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW2TW4RNn48u17ySIU419Z0Am9O1YCd-DdhOWD_tSjs9Mf-5t5u8WoSJpVfvU"
+        },
+        {
+          "url": "https://apnews.com/video/elle-fanning-on-working-with-her-sister-dakota-fanning-77785ccb5cb645c388bfdfb5a11cd5d8",
+          "title": "Elle Fanning on working with her sister, Dakota Fanning",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh3NI0Lcavw1g-6PbK3golJIMNPCYctSnT77GtEeGIy0fb4sqWxuUV9-RQLEw"
+        }
+      ]
+    },
+    {
+      "query": "indiana vs arkansas",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T00:30:00Z",
+      "related_news_urls": [
+        "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-indiana-bad-boy-mower-series-new-york/",
+        "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-indiana-basketball-vs-no-20-arkansas--292872175/",
+        "https://www.insidethehall.com/2026/11/17/game-5-iu-basketball-vs-arkansas-preview/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFv9b05KyaKw9Rn2i9kHP_k2kC9dsuEHe4o-jxAEhHaWFNXhRnfrMkrHmjhno",
+      "image_credit": "Arkansas Razorbacks",
+      "news": [
+        {
+          "url": "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-indiana-bad-boy-mower-series-new-york/",
+          "title": "MBB Preview: Arkansas vs Indiana @ Bad Boy Mower Series – New York",
+          "publisher": "Arkansas Razorbacks",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFv9b05KyaKw9Rn2i9kHP_k2kC9dsuEHe4o-jxAEhHaWFNXhRnfrMkrHmjhno"
+        },
+        {
+          "url": "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-indiana-basketball-vs-no-20-arkansas--292872175/",
+          "title": "Scouting report & preview: Indiana basketball vs. No. 20 Arkansas",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAYnOcw3ZcRGzfj_54jp6VI8Tng_GWwyqJGbzoRH4vpSM1zkDs3MmmA4_7c-E"
+        },
+        {
+          "url": "https://www.insidethehall.com/2026/11/17/game-5-iu-basketball-vs-arkansas-preview/",
+          "title": "Game 5: IU basketball vs. Arkansas preview",
+          "publisher": "Inside the Hall",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVv6BxtugKkQefaHL4aBPHx8r-QEueMCLYUGlqADDW1Lw_pXiOpvbtOCx_rE"
+        }
+      ]
+    },
     {
       "query": "mexico vs",
       "approx_searches": "10000+",
@@ -43,12 +253,12 @@
     },
     {
       "query": "christian pulisic",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-18T00:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/soccer/story/_/id/50504141/manchester-united-mauricio-pochettino-jim-ratcliffe-glazers-transfers",
-        "https://www.nytimes.com/athletic/7785810/2026/11/16/mauricio-pochettino-america-usmnt-us-soccer/",
-        "https://www.foxnews.com/outkick-sports/former-usmnt-coach-says-american-sports-reward-losers-leaves-manchester-united"
+        "https://sports.yahoo.com/articles/andres-cantor-says-mauricio-pochettino-002954081.html",
+        "https://www.nytimes.com/athletic/7785810/2026/11/16/mauricio-pochettino-america-usmnt-us-soccer/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE5JO_ojNdROMKe07O895nQQqj-B-oAovrb0mVfklvpWVJq2rOIrzglEH4Xws",
       "image_credit": "ESPN",
@@ -61,53 +271,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE5JO_ojNdROMKe07O895nQQqj-B-oAovrb0mVfklvpWVJq2rOIrzglEH4Xws"
         },
         {
+          "url": "https://sports.yahoo.com/articles/andres-cantor-says-mauricio-pochettino-002954081.html",
+          "title": "Andres Cantor says Mauricio Pochettino leaves USMNT 'in a good place' as the U.S. 'has an edge' over CONCACAF rivals",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6v-mUtn4KD_fzQTDmo9txXXX7w2e7v0Oy_nP7KNy50tSWwURGRXScUSqni4"
+        },
+        {
           "url": "https://www.nytimes.com/athletic/7785810/2026/11/16/mauricio-pochettino-america-usmnt-us-soccer/",
           "title": "What Pochettino liked about U.S.’s soccer quirks, what he didn’t, and what he leaves behind - The Athletic",
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvdpCcwgRrNz5cleh129H7ybNuCRv1831QHApaS0MElhh3kmph0NPN1aCDF9E"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/former-usmnt-coach-says-american-sports-reward-losers-leaves-manchester-united",
-          "title": "Former USMNT coach says 'American sports reward losers' as he leaves for Manchester United",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDT_aQWhfTbuj0MoffeshYFQM5RL9BU2zd7Mddk-6eb2lMDECzp5N5u97Fx9M"
-        }
-      ]
-    },
-    {
-      "query": "morgan freeman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T00:30:00Z",
-      "related_news_urls": [
-        "https://wreg.com/news/local/morgan-freeman-blues-project-with-deep-memphis-roots-earns-grammy-nomination/",
-        "https://bluesrockreview.com/2026/11/2027-blues-grammy-nominations-announced.html",
-        "https://rockandbluesmuse.com/2026/11/16/liled-the-blues-imperials-slideways-receives-grammy-award-nomination/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yfMpv0A_om_bejAlx28bx1G2sNWCOoUOZg91ERCkq3Ildt7T31KrQZOFihw",
-      "image_credit": "WREG.com",
-      "news": [
-        {
-          "url": "https://wreg.com/news/local/morgan-freeman-blues-project-with-deep-memphis-roots-earns-grammy-nomination/",
-          "title": "Morgan Freeman blues project with deep Memphis roots earns Grammy nomination",
-          "publisher": "WREG.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yfMpv0A_om_bejAlx28bx1G2sNWCOoUOZg91ERCkq3Ildt7T31KrQZOFihw"
-        },
-        {
-          "url": "https://bluesrockreview.com/2026/11/2027-blues-grammy-nominations-announced.html",
-          "title": "2027 Blues Grammy nominations announced",
-          "publisher": "Blues Rock Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZt4sb3vqXUDEiiajlCjRHF3f70vcB2EfNeW2v1aIHUbR09-JPN97Ye5v4YF0"
-        },
-        {
-          "url": "https://rockandbluesmuse.com/2026/11/16/liled-the-blues-imperials-slideways-receives-grammy-award-nomination/",
-          "title": "Lil’Ed & The Blues Imperials’ Slideways Receives Grammy Award Nomination",
-          "publisher": "Rock & Blues Muse",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReJ68XyvCz9o4h-l1xlj3dADB-8AQBdqlVJGYRkcicY2ceAW58RhbJ3pdnDak"
         }
       ]
     },
@@ -147,212 +322,37 @@
       ]
     },
     {
-      "query": "mark carney",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T00:20:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/world/canada-and-china-draw-closer-with-expanded-trade-pact-b4566a38",
-        "https://www.bloomberg.com/news/newsletters/2026-11-17/canada-edges-a-bit-closer-to-china-as-carney-and-xi-strike-another-deal",
-        "https://www.nytimes.com/2026/11/16/world/canada/carney-china-xi-trump-putin-trade.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6PM98uylW8diqSm2bS_vnkv3od5fctLWde_EM2H6YGt4NT33DAL3CWStrIjw",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/world/canada-and-china-draw-closer-with-expanded-trade-pact-b4566a38",
-          "title": "Canada and China Draw Closer with Expanded Trade Pact",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6PM98uylW8diqSm2bS_vnkv3od5fctLWde_EM2H6YGt4NT33DAL3CWStrIjw"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/newsletters/2026-11-17/canada-edges-a-bit-closer-to-china-as-carney-and-xi-strike-another-deal",
-          "title": "Carney Edges Closer to China as He Strikes Another Deal With Xi",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnc7Ok_1DpjunKY5iYIEJZN_fEXrth8_GEnV6TDNBukiKryPdrvQFA6-jtvng"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/16/world/canada/carney-china-xi-trump-putin-trade.html",
-          "title": "Canada’s Leader, Once a Curiosity at Asia Summits, Is Now a Star",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStQv4yspFBx4RP2fa3fwYf8ryNFf8JtDNClodczl2HjNWeOdnSs2RI6V2qf-0"
-        }
-      ]
-    },
-    {
-      "query": "mt st mary's vs nebraska",
+      "query": "morgan freeman",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T00:20:00Z",
+      "published_at": "2026-11-18T00:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/nebraska-women-basketball-vs-mount-235003384.html",
-        "https://www.si.com/college/nebraska/basketball/how-to-watch-no-25-nebraska-women-s-basketball-vs-mount-st-mary-s-with-preview-breakdown-stream-2026",
-        "https://huskers.com/news/2026/11/16/huskers-back-home-to-meet-the-mount"
+        "https://wreg.com/news/local/morgan-freeman-blues-project-with-deep-memphis-roots-earns-grammy-nomination/",
+        "https://bluesrockreview.com/2026/11/2027-blues-grammy-nominations-announced.html",
+        "https://rockandbluesmuse.com/2026/11/16/liled-the-blues-imperials-slideways-receives-grammy-award-nomination/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQhrOFUGHwJgYOpLW_3a_nidt-_g3kOvXIRCEyAWDdasa-jV6V1juzcxBtoQk",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yfMpv0A_om_bejAlx28bx1G2sNWCOoUOZg91ERCkq3Ildt7T31KrQZOFihw",
+      "image_credit": "WREG.com",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/nebraska-women-basketball-vs-mount-235003384.html",
-          "title": "Nebraska Women’s Basketball vs Mount St. Mary’s Preview and Live Discussion",
-          "publisher": "Yahoo Sports",
+          "url": "https://wreg.com/news/local/morgan-freeman-blues-project-with-deep-memphis-roots-earns-grammy-nomination/",
+          "title": "Morgan Freeman blues project with deep Memphis roots earns Grammy nomination",
+          "publisher": "WREG.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQhrOFUGHwJgYOpLW_3a_nidt-_g3kOvXIRCEyAWDdasa-jV6V1juzcxBtoQk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yfMpv0A_om_bejAlx28bx1G2sNWCOoUOZg91ERCkq3Ildt7T31KrQZOFihw"
         },
         {
-          "url": "https://www.si.com/college/nebraska/basketball/how-to-watch-no-25-nebraska-women-s-basketball-vs-mount-st-mary-s-with-preview-breakdown-stream-2026",
-          "title": "How to Watch No. 25 Nebraska Women’s Basketball vs. Mount St. Mary’s with Preview, Breakdown, Stream",
-          "publisher": "Sports Illustrated",
+          "url": "https://bluesrockreview.com/2026/11/2027-blues-grammy-nominations-announced.html",
+          "title": "2027 Blues Grammy nominations announced",
+          "publisher": "Blues Rock Review",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhHH8sjiRGDkyGer5OUMP9ZDLIM0vIxXZbmUicypwTlUsga6nVBBQSmC2zjtA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZt4sb3vqXUDEiiajlCjRHF3f70vcB2EfNeW2v1aIHUbR09-JPN97Ye5v4YF0"
         },
         {
-          "url": "https://huskers.com/news/2026/11/16/huskers-back-home-to-meet-the-mount",
-          "title": "Huskers Back Home to Meet the Mount - University of Nebraska - Official Athletics Website",
-          "publisher": "huskers.com",
+          "url": "https://rockandbluesmuse.com/2026/11/16/liled-the-blues-imperials-slideways-receives-grammy-award-nomination/",
+          "title": "Lil’Ed & The Blues Imperials’ Slideways Receives Grammy Award Nomination",
+          "publisher": "Rock & Blues Muse",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMntaWEWOfnsoglXA5Z-YBxq2HQb_cooCK7BctvCRXu32IpQHJJE_tgI8_j30"
-        }
-      ]
-    },
-    {
-      "query": "reimbursement",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T00:20:00Z",
-      "related_news_urls": [
-        "https://www.tradingview.com/news/urn:summary_document_transcript:quartr.com:4668737:0-tlx-bipass-data-and-pixclara-reimbursement-milestones-set-up-key-2027-growth-catalysts/",
-        "https://www.morningstar.com/company-reports/1510660-telix-pharmaceuticals-corporate-actionvote-in-favor-of-share-issues-to-acquire-itm",
-        "https://telixpharma.com/news-views/telix-to-participate-in-ubs-global-biopharma-conference/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY",
-      "image_credit": "TradingView",
-      "news": [
-        {
-          "url": "https://www.tradingview.com/news/urn:summary_document_transcript:quartr.com:4668737:0-tlx-bipass-data-and-pixclara-reimbursement-milestones-set-up-key-2027-growth-catalysts/",
-          "title": "TLX: BiPASS data and Pixclara reimbursement milestones set up key 2027 growth catalysts",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://www.morningstar.com/company-reports/1510660-telix-pharmaceuticals-corporate-actionvote-in-favor-of-share-issues-to-acquire-itm",
-          "title": "Telix Pharmaceuticals: Corporate Action—Vote in Favor of Share Issues to Acquire ITM",
-          "publisher": "Morningstar",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA7OHRYksaZ-P0_oBZcTQeJyuuSl_F3Xw8-oxfccKYJPtgeOgSzxFI_TcfR7I"
-        },
-        {
-          "url": "https://telixpharma.com/news-views/telix-to-participate-in-ubs-global-biopharma-conference/",
-          "title": "Telix to Participate in UBS Global Biopharma Conference",
-          "publisher": "Telix Pharmaceuticals Limited",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtFBI2Isb8D8QRUVTU9akBvvbxfDORDpCsuT91WCb3ltGZyCmuuC4sI__uOjA"
-        }
-      ]
-    },
-    {
-      "query": "is deni avdija playing tonight",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-18T00:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50508081/shannon-carries-wolves-edwards-ball-struggling-show-depth",
-        "https://www.oregonlive.com/blazers/2026/11/trail-blazers-all-star-listed-as-questionable-vs-timberwolves.html",
-        "https://www.blazersedge.com/gameday-coverage/118557/portland-trail-blazers-minnesota-timberwolves-nba-preview-injury-report-tv-time-damian-lillard-terrence-shannon-lamelo-ball"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdfKTNaMmoN47kB_9nYwGpsINMuBtS5pSDPCXh1MRWRcbgv3kc5BLTaLJOLkY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50508081/shannon-carries-wolves-edwards-ball-struggling-show-depth",
-          "title": "Shannon carries Wolves with Edwards out, Ball struggling in show of versatility",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdfKTNaMmoN47kB_9nYwGpsINMuBtS5pSDPCXh1MRWRcbgv3kc5BLTaLJOLkY"
-        },
-        {
-          "url": "https://www.oregonlive.com/blazers/2026/11/trail-blazers-all-star-listed-as-questionable-vs-timberwolves.html",
-          "title": "Trail Blazers All-Star listed as questionable vs. Timberwolves",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMf6F1i9Pq9mHhuyJrzyOh_3UyBTGajBq7BND2XWszxIhbcF6-f7a9UWCixfc"
-        },
-        {
-          "url": "https://www.blazersedge.com/gameday-coverage/118557/portland-trail-blazers-minnesota-timberwolves-nba-preview-injury-report-tv-time-damian-lillard-terrence-shannon-lamelo-ball",
-          "title": "Blazers vs Timberwolves Part 2 Preview",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAYAvLLu3eVzoD0KJp-H2YtJ3WBivh-dyQSE0rhKjm7_T7nGlPz-kWjwpCXNU"
-        }
-      ]
-    },
-    {
-      "query": "ludwig",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T00:20:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1304003/ludwig-season-finale-dancing-with-the-stars-semifinals-ncis-origins-phony/",
-        "https://www.imdb.com/news/ni66115211/?ref_=nwc_art_perm",
-        "https://www.desmoinesregister.com/press-release/story/154850/dunlap-bennett-ludwig-and-founding-partner-thomas-dunlap-win-outstanding-achievement-in-ai-technology/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_du3IvhBnLWw0JZp-TVhAMiu53Wp2hp8jsUBXN5XsTF5VdjbYHQn1cXAWRU0",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1304003/ludwig-season-finale-dancing-with-the-stars-semifinals-ncis-origins-phony/",
-          "title": "‘Ludwig’ Finale, ‘Dancing’ Semifinals, Lala Land on ‘NCIS: Origins,’ Unmasking a ‘Phony’",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_du3IvhBnLWw0JZp-TVhAMiu53Wp2hp8jsUBXN5XsTF5VdjbYHQn1cXAWRU0"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66115211/?ref_=nwc_art_perm",
-          "title": "‘Ludwig’ Finale, ‘Dancing’ Semifinals, Lala Land on ‘NCIS: Origins,’ Unmasking a ‘Phony’",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvnhSh-lCDwm5zwwNZiCheEC1TZhlfPb7Rol_t9ToMC-YwpEL18Kuh9Wqxqvo"
-        },
-        {
-          "url": "https://www.desmoinesregister.com/press-release/story/154850/dunlap-bennett-ludwig-and-founding-partner-thomas-dunlap-win-outstanding-achievement-in-ai-technology/",
-          "title": "Dunlap Bennett & Ludwig and Founding Partner Thomas Dunlap Win Outstanding Achievement in AI & Technology",
-          "publisher": "The Des Moines Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ohIK2PYpF5yUskaOPRBfS7GalDBUWEFYgO7EDdz7vc5eokNyVlNYB08SVK0"
-        }
-      ]
-    },
-    {
-      "query": "tyler boucher",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T00:20:00Z",
-      "related_news_urls": [
-        "https://www.sportsnet.ca/nhl/article/senators-call-up-first-rounder-tyler-boucher-from-ahl/",
-        "https://www.nhl.com/senators/news/the-view-from-the-proudest-seats-in-the-house",
-        "https://www.prohockeyrumors.com/2026/11/senators-recall-tyler-boucher.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2aaiUIeNTC3408ylu208wj-VTH2KP3rmFoSHj5_9_bJsWIo73G7tO2nJ8vRg",
-      "image_credit": "Sportsnet.ca",
-      "news": [
-        {
-          "url": "https://www.sportsnet.ca/nhl/article/senators-call-up-first-rounder-tyler-boucher-from-ahl/",
-          "title": "Senators call up first-rounder Tyler Boucher from AHL",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2aaiUIeNTC3408ylu208wj-VTH2KP3rmFoSHj5_9_bJsWIo73G7tO2nJ8vRg"
-        },
-        {
-          "url": "https://www.nhl.com/senators/news/the-view-from-the-proudest-seats-in-the-house",
-          "title": "The view from the proudest seats in the house",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUzx6sE6zxEYvTOUvXM1yQt6F8M-vbA53m8YUoQb7C0sFrZ1kjPrTGCQ5gDNM"
-        },
-        {
-          "url": "https://www.prohockeyrumors.com/2026/11/senators-recall-tyler-boucher.html",
-          "title": "Senators Recall Tyler Boucher",
-          "publisher": "Pro Hockey Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXVK3WaPduGT2ShxebxnagJXXN1JCyz5T2-UghuTtGh8wDma8iBn15od8EBHY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReJ68XyvCz9o4h-l1xlj3dADB-8AQBdqlVJGYRkcicY2ceAW58RhbJ3pdnDak"
         }
       ]
     }
