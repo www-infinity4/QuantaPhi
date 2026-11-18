@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T08:01:43.028368Z",
+  "checked_at": "2026-11-18T08:31:31.489121Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "new zealand breakers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T08:00:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/new-zealand-breakers-vs-south-east-melbourne-phoenix-prediction-odds-2026-11-18/",
+        "https://www.basketball.com.au/news/supercoach-nbl-pods-ultimate-round-10-guide",
+        "https://www.beforeyoubet.com.au/nbl27-round-10-predictions-tips"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/new-zealand-breakers-vs-south-east-melbourne-phoenix-prediction-odds-2026-11-18/",
+          "title": "New Zealand Breakers vs South East Melbourne Phoenix Prediction, Betting Tips & Odds | 17 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
+        },
+        {
+          "url": "https://www.basketball.com.au/news/supercoach-nbl-pods-ultimate-round-10-guide",
+          "title": "SuperCoach NBL PODs: Ultimate Round 10 Guide",
+          "publisher": "Basketball.com.au",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0fL-EkLyeqUuCTk8I66aLJTFKJhvZljBt69YMB0YC9h0-UOcCM_pZo8JfCeE"
+        },
+        {
+          "url": "https://www.beforeyoubet.com.au/nbl27-round-10-predictions-tips",
+          "title": "NBL27 Round 10 Predictions & Tips",
+          "publisher": "Before You Bet",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7HNfsdO7_wqEh1YoZC1LVA3lOy7GtD_Ok7m9ZM0EKghmIbNF_5XcDdxbTrpY"
+        }
+      ]
+    },
+    {
+      "query": "ign",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T08:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/film/2026/nov/17/the-hunger-games-sunrise-on-the-reaping-review-surreally-awful-prequel-to-the-katniss-everdeen-era",
+        "https://editorial.rottentomatoes.com/article/the-hunger-games-sunrise-on-the-reaping-first-reviews/",
+        "https://variety.com/2026/film/news/jennifer-lawrence-hunger-games-sunrise-on-the-reaping-premiere-1236949116/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkVjGYwcIl5kYAfimN8ITtqvYWcyZrXPzol27Xh7EgHCWplso4j3YyYrXdg3g",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/17/the-hunger-games-sunrise-on-the-reaping-review-surreally-awful-prequel-to-the-katniss-everdeen-era",
+          "title": "The Hunger Games: Sunrise on the Reaping review – surreally awful prequel to the Katniss Everdeen era",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkVjGYwcIl5kYAfimN8ITtqvYWcyZrXPzol27Xh7EgHCWplso4j3YyYrXdg3g"
+        },
+        {
+          "url": "https://editorial.rottentomatoes.com/article/the-hunger-games-sunrise-on-the-reaping-first-reviews/",
+          "title": "The Hunger Games: Sunrise on the Reaping First Reviews: A Familiar but Thrilling Return to Form",
+          "publisher": "Rotten Tomatoes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsMvecUHzK32_Vfot4kE3oky0Ii3C_iH2Tkuso8F0tcPboQX6H0Qqyrq-FED4"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/jennifer-lawrence-hunger-games-sunrise-on-the-reaping-premiere-1236949116/",
+          "title": "Jennifer Lawrence Stuns as 'Hunger Games Sunrise on the Reaping' Premiere",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_2GxcIVo1kDJuChkwkPx21mzHOmuUGwqQDXFq9ogaEczNQh-BxcbcgQROt0c"
+        }
+      ]
+    },
+    {
+      "query": "red flag (fire weather) warning",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T07:50:00Z",
+      "related_news_urls": [
+        "https://kdvr.com/weather/weather-forecast/denver-weather-high-wind-mountain-snow-moving-in/",
+        "https://www.cbsnews.com/colorado/video/fire-restrictions-in-place-as-high-winds-move-into-colorado/",
+        "https://www.9news.com/video/weather/forecast/denver-front-range-colorado-weather-forecast/73-5b3210b5-1788-4d80-8065-5f0464258afa"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHs9z7YIKCeYyGRiOrPmVpwvr-ap2Ctj87QYCtlagSUMvvvms_RU8o8sDFas",
+      "image_credit": "KDVR",
+      "news": [
+        {
+          "url": "https://kdvr.com/weather/weather-forecast/denver-weather-high-wind-mountain-snow-moving-in/",
+          "title": "Denver weather: High wind, mountain snow moving in",
+          "publisher": "KDVR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHs9z7YIKCeYyGRiOrPmVpwvr-ap2Ctj87QYCtlagSUMvvvms_RU8o8sDFas"
+        },
+        {
+          "url": "https://www.cbsnews.com/colorado/video/fire-restrictions-in-place-as-high-winds-move-into-colorado/",
+          "title": "Fire restrictions in place as high winds move into Colorado",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGlxCWNRo8iiY2uKzvSIXVkTwvCMY8rtY6WjoeVcLL_jfSgpinMtw0mSO-1MY"
+        },
+        {
+          "url": "https://www.9news.com/video/weather/forecast/denver-front-range-colorado-weather-forecast/73-5b3210b5-1788-4d80-8065-5f0464258afa",
+          "title": "Latest forecast | Denver Fire Weather Watch Wednesday ahead of mountain storm and snow",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3eZgQhDogX0zDbaxEqGz7lux8g5QKYRzWhPk81lv4MAZTNe6AdoJvp-tn23U"
+        }
+      ]
+    },
+    {
+      "query": "ps5 black friday deals",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T07:50:00Z",
+      "related_news_urls": [
+        "https://mashable.com/entertainment/best-early-black-friday-playstation-live-deals-2026",
+        "https://consequence.net/2026/11/best-black-friday-ps5-game-deals-2026/",
+        "https://www.polygon.com/black-friday-2026-amazon-gaming-deals-when-ps5-ps5-xbox-nintendo-switch/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfrNgKSOFEziVcJb8bCetU674eiptDIbCaoo8hR6N4Pw2r1-NupTMTP1skzw",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/entertainment/best-early-black-friday-playstation-live-deals-2026",
+          "title": "The best early Black Friday PlayStation deals: PS5 games, cheap controllers, and more",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfrNgKSOFEziVcJb8bCetU674eiptDIbCaoo8hR6N4Pw2r1-NupTMTP1skzw"
+        },
+        {
+          "url": "https://consequence.net/2026/11/best-black-friday-ps5-game-deals-2026/",
+          "title": "Skipping GTA 6? Save Up to 59% on Other Top PS5 Games for Black Friday",
+          "publisher": "Consequence of Sound",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRDndf883A9m0fdezBYGEAg2cMlw13diiV6eAEkOTaG2uJiaU4mcGyDY4ZB90"
+        },
+        {
+          "url": "https://www.polygon.com/black-friday-2026-amazon-gaming-deals-when-ps5-ps5-xbox-nintendo-switch/",
+          "title": "Amazon Officially Reveals Early Black Friday Gaming Deals",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8f6UE6gAmzVDwp5pSk3sWSbcwef9yPNh3bub_sBzh8Emn1nS-bW342w9414"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 new screenshots",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T07:40:00Z",
+      "related_news_urls": [
+        "https://mashable.com/entertainment/gta-6-weather-images",
+        "https://tech.yahoo.com/gaming/articles/rockstar-confident-gta-6s-weather-220448101.html",
+        "https://80.lv/articles/the-weather-channel-has-shared-new-screenshots-of-gta-6-s-dynamic-weather"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfSj5PJgYTTO2gKBGVC4CAkqtSBXpOzlv3jpRVAstyhif4hbUpt8-A_WaYv00",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/entertainment/gta-6-weather-images",
+          "title": "What's the weather forecast for 'GTA 6'? The Weather Channel has a preview.",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfSj5PJgYTTO2gKBGVC4CAkqtSBXpOzlv3jpRVAstyhif4hbUpt8-A_WaYv00"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/rockstar-confident-gta-6s-weather-220448101.html",
+          "title": "Rockstar is so confident in GTA 6's weather it has The Weather Channel itself sharing screenshots",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeJp4amkG-TKWGTVBV_fhdp0SDeKRr_46WMu9S00ajIQY90IkpNJTsKsDlB2c"
+        },
+        {
+          "url": "https://80.lv/articles/the-weather-channel-has-shared-new-screenshots-of-gta-6-s-dynamic-weather",
+          "title": "The Weather Channel Has Shared New Screenshots of GTA 6's Dynamic Weather",
+          "publisher": "80 Level",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpJI-8EPyADmuIGvcr7nGAt7PCb0dI5ACF8wULIqsb9YJeaBGPiQh5lFf_kN0"
+        }
+      ]
+    },
+    {
+      "query": "google play store",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T07:40:00Z",
+      "related_news_urls": [
+        "https://blog.google/products-and-platforms/platforms/google-play/best-of-play-awards-2026/",
+        "https://www.pocketgamer.biz/google-plays-best-of-play-2026-winners/",
+        "https://www.invenglobal.com/articles/28751/cookierun-crumble-wins-best-casual-game-in-8-overseas-regions"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrcmKeNqTIqjyXCDPAI02tWbWgFZbqlukxMmZ6nli1syAjwgMqJSjqFwddu8",
+      "image_credit": "blog.google",
+      "news": [
+        {
+          "url": "https://blog.google/products-and-platforms/platforms/google-play/best-of-play-awards-2026/",
+          "title": "Google Play unveils the best apps, games, and books of 2026",
+          "publisher": "blog.google",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrcmKeNqTIqjyXCDPAI02tWbWgFZbqlukxMmZ6nli1syAjwgMqJSjqFwddu8"
+        },
+        {
+          "url": "https://www.pocketgamer.biz/google-plays-best-of-play-2026-winners/",
+          "title": "Google Play’s Best of Play 2026 winners: Arknights: Endfield, Subway Surfers City, Sea of Stars and more",
+          "publisher": "PocketGamer.biz",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6ozzKWhm_IOtyChen3xmrw5Xxrf7QNK5e1gAQIa2zVQV8VLbK_jUEiL5ZPxI"
+        },
+        {
+          "url": "https://www.invenglobal.com/articles/28751/cookierun-crumble-wins-best-casual-game-in-8-overseas-regions",
+          "title": "CookieRun: Crumble Wins Best Casual Game in 8 Overseas Regions",
+          "publisher": "Inven Global",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhtCwvweRpGmSCXjCFaf22u4n5iZNZ48xN2SpUdkVj3-k5ws_tpwl2NIX328U"
+        }
+      ]
+    },
     {
       "query": "nba standings",
       "approx_searches": "2000+",
@@ -37,7 +247,7 @@
           "title": "NBA Power Rankings: Lakers thriving behind two-way Luka Dončić, plus a new team at No. 1",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS164v4IgmLaqXPANNxmEUkSgJrtBJBbXfGcDRZd7CcuhD9Rh9vhbd1mGvsACU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfGzZdahT_37A_ppmrQa-tHDvXw8qGAqzjTq_L61j3JcgIi761wd3q2WX7q90"
         }
       ]
     },
@@ -78,16 +288,23 @@
     },
     {
       "query": "fuel",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T07:10:00Z",
       "related_news_urls": [
+        "https://www.bbc.com/news/live/cw808v7d1gkmt",
         "https://www.theguardian.com/business/2026/nov/18/uk-inflation-rises-energy-prices-iran-war-oil",
-        "https://www.bloomberg.com/news/articles/2026-11-18/uk-inflation-hits-highest-in-year-on-soaring-fuel-energy-costs",
-        "https://www.wsj.com/economy/central-banking/u-k-inflation-rises-as-energy-costs-keep-pressure-on-bank-of-england-68f3edbb"
+        "https://www.bloomberg.com/news/articles/2026-11-18/uk-inflation-hits-highest-in-year-on-soaring-fuel-energy-costs"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKbYjudDRUah-HQm7Hzp81tkKknK23r24_aQus1RKYHwIKEWoQ-FK7W1tjd3k",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4K5UbW4CKKAKpwewDfADJORkRVhVTEe_nQ42Za0BqQCfaIiB396ATsCWlF8c",
+      "image_credit": "BBC",
       "news": [
+        {
+          "url": "https://www.bbc.com/news/live/cw808v7d1gkmt",
+          "title": "Latest UK inflation figure about to be released, with rate expected to rise",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4K5UbW4CKKAKpwewDfADJORkRVhVTEe_nQ42Za0BqQCfaIiB396ATsCWlF8c"
+        },
         {
           "url": "https://www.theguardian.com/business/2026/nov/18/uk-inflation-rises-energy-prices-iran-war-oil",
           "title": "UK inflation rises to 3.6% as energy prices increase",
@@ -98,261 +315,44 @@
         {
           "url": "https://www.bloomberg.com/news/articles/2026-11-18/uk-inflation-hits-highest-in-year-on-soaring-fuel-energy-costs",
           "title": "UK Inflation Hits Highest in Year on Soaring Fuel, Energy Costs",
-          "publisher": "Bloomberg",
+          "publisher": "Bloomberg.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4ScCqMj3kuGoxbMI---lfM9PxAF4VW-xKwzTg9q3sEjzwSIDvpU9f5-3zA5I"
-        },
-        {
-          "url": "https://www.wsj.com/economy/central-banking/u-k-inflation-rises-as-energy-costs-keep-pressure-on-bank-of-england-68f3edbb",
-          "title": "U.K. Inflation Rises as Energy Costs Keep Pressure on Bank of England",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsVsCQjle9DBQi4WvmZIoRWPjmEZ5YwHAJ-lx22Si1NsQuCyaQ12iveSSPHj8"
         }
       ]
     },
     {
       "query": "gas",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T07:10:00Z",
-      "related_news_urls": [
-        "https://www.abc10.com/article/news/local/stockton/shelter-in-place-issued-for-stockton-area-after-reported-gas-leak/103-8aa0f23f-1dab-40b5-bb72-0fc290b35a4b",
-        "https://www.yahoo.com/news/videos/shelter-place-issued-near-highway-020516601.html",
-        "https://www.kcra.com/article/stockton-gas-leak-shelter-in-place-order/74458985"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPFAdkLAKMYRYVtGoSAQm3mfGYmy-9TuVbfyQgYh5LjnvU3WXCx62pRQc4vo",
-      "image_credit": "ABC10",
-      "news": [
-        {
-          "url": "https://www.abc10.com/article/news/local/stockton/shelter-in-place-issued-for-stockton-area-after-reported-gas-leak/103-8aa0f23f-1dab-40b5-bb72-0fc290b35a4b",
-          "title": "Shelter-in-place lifted for Stockton area after reported gas leak",
-          "publisher": "ABC10",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPFAdkLAKMYRYVtGoSAQm3mfGYmy-9TuVbfyQgYh5LjnvU3WXCx62pRQc4vo"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/shelter-place-issued-near-highway-020516601.html",
-          "title": "Shelter-in-place issued near Highway 26 in San Joaquin County",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFsNBRVpnMuaJhQHInwFev6Ex7vYskfxvb0pJ69p2mfOev14qNdJHeIORxEKY"
-        },
-        {
-          "url": "https://www.kcra.com/article/stockton-gas-leak-shelter-in-place-order/74458985",
-          "title": "Shelter-in-place order lifted after reported gas leak in Stockton neighborhood",
-          "publisher": "KCRA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5dd_6-tSfL-uRPpYAEqnevVzhPKWogtemZgw-bGszEcFu7nHB2lT2QitDd90"
-        }
-      ]
-    },
-    {
-      "query": "flash flooding florida",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T07:10:00Z",
-      "related_news_urls": [
-        "https://www.wesh.com/article/flooding-rain-volusia-florida-18-24-inches-possible/74442093",
-        "https://www.foxweather.com/weather-news/week-rain-nasty-winds-douse-florida-flood-threat",
-        "https://www.nbcmiami.com/weather/stories-weather/flood-watch-broward-miami-dade-isolated-spots-could-see-10-inches-rain/3889108/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNJWZBtoiz56ZBIGnvrTwzNPW_1cTs7epBWTdvcgZPbjhR9psd5XqqxHru0Rc",
-      "image_credit": "WESH",
-      "news": [
-        {
-          "url": "https://www.wesh.com/article/flooding-rain-volusia-florida-18-24-inches-possible/74442093",
-          "title": "Storm system could bring 12+ inches of rain, flooding to Central Florida this week, models show",
-          "publisher": "WESH",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNJWZBtoiz56ZBIGnvrTwzNPW_1cTs7epBWTdvcgZPbjhR9psd5XqqxHru0Rc"
-        },
-        {
-          "url": "https://www.foxweather.com/weather-news/week-rain-nasty-winds-douse-florida-flood-threat",
-          "title": "Rounds of rain fuel weeklong flood threat along Florida Atlantic Coast ahead of possible move into Atlantic",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8UeXQfmV3NFmJi7QHAwYsBao1u50sQNr0G31XGBmESjHkS0ivGmx9WMqlrU8"
-        },
-        {
-          "url": "https://www.nbcmiami.com/weather/stories-weather/flood-watch-broward-miami-dade-isolated-spots-could-see-10-inches-rain/3889108/",
-          "title": "RADAR: Heavy rain prompts several flood warnings, estimated 8-10″ fall in Broward County",
-          "publisher": "NBC 6 South Florida",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0MAgZ_mYvNq33fhUuOQ9p5aieyjL2XTTf2iPE4uRVAoZ0D7CtNRnJD9N0wZU"
-        }
-      ]
-    },
-    {
-      "query": "medicare part b premium 2027",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T07:10:00Z",
-      "related_news_urls": [
-        "https://money.com/medicare-part-b-adjustment-2027-social-security/",
-        "https://www.barrons.com/articles/medicare-premium-10e60d21",
-        "https://www.newsnationnow.com/business/your-money/medicare-part-b-premiums-2027/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXOlm8eKjx8BLqIV_yqVVfUpfchcyPzxgrEjzo3MskbgsukJKMwPMQX1x5z8Y",
-      "image_credit": "money.com",
-      "news": [
-        {
-          "url": "https://money.com/medicare-part-b-adjustment-2027-social-security/",
-          "title": "Medicare Part B Adjustment for 2027: Here's How Much the New Premiums Will Eat Into Social Security Checks",
-          "publisher": "money.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXOlm8eKjx8BLqIV_yqVVfUpfchcyPzxgrEjzo3MskbgsukJKMwPMQX1x5z8Y"
-        },
-        {
-          "url": "https://www.barrons.com/articles/medicare-premium-10e60d21",
-          "title": "The Medicare Part B Premium for 2027 Is Here",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCvRiFJaacWoqTgJEbVs7ZipBTHL_7llnrHPcpVEPe6vq-soHjTis0F3A65vI"
-        },
-        {
-          "url": "https://www.newsnationnow.com/business/your-money/medicare-part-b-premiums-2027/",
-          "title": "Here’s how much Medicare Part B premiums are rising in 2027",
-          "publisher": "NewsNation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCXAwQ-B2jxn_qsl0fWGxgNrLqGvgj3BQhK0CfHp6Ck6vroqJiTxkCHoTwekE"
-        }
-      ]
-    },
-    {
-      "query": "how long is gta 6 story mode",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T07:10:00Z",
-      "related_news_urls": [
-        "https://insider-gaming.com/how-long-to-complete-gta/",
-        "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6",
-        "https://tech.yahoo.com/gaming/articles/gta-6-game-length-mission-164415947.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK4OHVX8MwzX5HORWMw9Jjl6no9kIriWadKDF3VGB6gB0pfiymzMd54hhLy6k",
-      "image_credit": "Insider Gaming",
-      "news": [
-        {
-          "url": "https://insider-gaming.com/how-long-to-complete-gta/",
-          "title": "How Long Will It Take to Complete GTA 6? Platinum Trophy & Mythic Achievement Time Explained",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK4OHVX8MwzX5HORWMw9Jjl6no9kIriWadKDF3VGB6gB0pfiymzMd54hhLy6k"
-        },
-        {
-          "url": "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6",
-          "title": "How long it takes to play GTA 6: Playthrough and achievements",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYwZAw5JkiJkkTPtjD09NtC9S4iKG9I8Q0UvM1PrW5NPGnutiuTUsaKd3K8lA"
-        },
-        {
-          "url": "https://tech.yahoo.com/gaming/articles/gta-6-game-length-mission-164415947.html",
-          "title": "‘GTA 6’ Game Length and Mission Count Officially Revealed",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14PgKgcGTH68TYDEu8hUkGmlHb6CXSdjS_Sm5YoduD49QKjNuStaL0gFgtN4"
-        }
-      ]
-    },
-    {
-      "query": "matisse thybulle",
       "approx_searches": "1000+",
-      "published_at": "2026-11-18T07:00:00Z",
+      "published_at": "2026-11-18T07:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/lakers-matisse-thybulle-accomplishes-historic-222028894.html",
-        "https://lakeshowlife.com/los-angeles-lakers-must-stick-matisse-thybulle-plan-after-seeing-fit",
-        "https://www.hitc.com/thats-how-he-gets-all-his-steals-jake-laravia-hails-underrated-la-lakers-teammate-making-an-impact/"
+        "https://www.reuters.com/business/energy/china-gas-doubles-volume-20-yr-lng-deal-with-venture-global-2026-11-18/",
+        "https://www.oilandgasmiddleeast.com/news/china-gas-lng-venture-global",
+        "https://lngprime.com/americas/china-gas-buys-more-lng-from-venture-global/200142/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCHfVXRDVRuupV6ybyKLt1B6RsgK9aoEJA-Ybp0mEO2wCW5qto-8rZ6prOZSQ",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgPih91RDPWrqW6b2u23TirCV1RsUbZZm-lUEG_IHR0kA27-AzaG7Ez9sL9pk",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/lakers-matisse-thybulle-accomplishes-historic-222028894.html",
-          "title": "Lakers' Matisse Thybulle Accomplishes Historic Feat Not Seen in 30 Years",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.reuters.com/business/energy/china-gas-doubles-volume-20-yr-lng-deal-with-venture-global-2026-11-18/",
+          "title": "China Gas doubles volume in 20-yr LNG deal with Venture Global",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCHfVXRDVRuupV6ybyKLt1B6RsgK9aoEJA-Ybp0mEO2wCW5qto-8rZ6prOZSQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgPih91RDPWrqW6b2u23TirCV1RsUbZZm-lUEG_IHR0kA27-AzaG7Ez9sL9pk"
         },
         {
-          "url": "https://lakeshowlife.com/los-angeles-lakers-must-stick-matisse-thybulle-plan-after-seeing-fit",
-          "title": "Lakers must stick to Matisse Thybulle plan after seeing his fit",
-          "publisher": "Lake Show Life",
+          "url": "https://www.oilandgasmiddleeast.com/news/china-gas-lng-venture-global",
+          "title": "Venture Global doubles China Gas LNG deal to 1 mtpa for 20 years from 2030",
+          "publisher": "Oil & Gas Middle East",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqiSzvrAYpWmvxUojivauVYS0jec10FmJ3QA6snWyOD3xjtT4HB-4ZXRi4eNM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgXlHPAJe2gEBuva1nnoeS6boeR_KxBQinqeMhudWcJ09TpQqf-PluOdtEOh4"
         },
         {
-          "url": "https://www.hitc.com/thats-how-he-gets-all-his-steals-jake-laravia-hails-underrated-la-lakers-teammate-making-an-impact/",
-          "title": "‘That’s how he gets all his steals’ – Jake LaRavia hails underrated LA Lakers teammate making an impact",
-          "publisher": "HITC",
+          "url": "https://lngprime.com/americas/china-gas-buys-more-lng-from-venture-global/200142/",
+          "title": "China Gas buys more LNG from Venture Global",
+          "publisher": "LNG Prime",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2QD9xHchJTJl3pwQH2FRhBcJqmLChm4cafRCiq4omt_5zD-81p2WKGhjIrVc"
-        }
-      ]
-    },
-    {
-      "query": "adou thiero",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T07:00:00Z",
-      "related_news_urls": [
-        "https://www.silverscreenandroll.com/lakers-news/129070/lakers-news-adou-thiero",
-        "https://lakeshowlife.com/adou-thiero-defensive-flashes-keep-validating-lakers-commitment-development",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/moussa-diabate-quad-good-to-go-thursday"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNycvXU9cS9WpnGjenj9UvlmLRUtVtzuRfbDHNF7irruzQG66O1y3M1SKiuAA",
-      "image_credit": "Silver Screen and Roll",
-      "news": [
-        {
-          "url": "https://www.silverscreenandroll.com/lakers-news/129070/lakers-news-adou-thiero",
-          "title": "Lakers expect to have to manage Adou Thiero’s minutes all season",
-          "publisher": "Silver Screen and Roll",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNycvXU9cS9WpnGjenj9UvlmLRUtVtzuRfbDHNF7irruzQG66O1y3M1SKiuAA"
-        },
-        {
-          "url": "https://lakeshowlife.com/adou-thiero-defensive-flashes-keep-validating-lakers-commitment-development",
-          "title": "Adou Thiero's defensive flashes keep validating Lakers' commitment to his development",
-          "publisher": "Lake Show Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlArqC85NWuH8Th-0TWhklrj-Pym5mj-XNRtkgWEWYZlx_bhbS15wrxCF248g"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/moussa-diabate-quad-good-to-go-thursday",
-          "title": "Moussa Diabaté (quad) good to go Thursday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrAPWYwgsIQnnyzV8SXnrGQoUKH0qJvZ-iAtq26kCiMiVZwhxSYoXVTxe0hx0"
-        }
-      ]
-    },
-    {
-      "query": "austin reaves injury",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T07:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50506501/lakers-rule-austin-reaves-walker-kessler-vs-hornets",
-        "https://sports.yahoo.com/articles/jj-redick-gives-major-injury-060837364.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/walker-kessler-leg-out-tuesday-vs-charlotte"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4jmtxkdNQLQIUSRdsKwgnKg_mV7vFUDR0aLSvJuYyu34FI4vBgIZbIpP0dE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50506501/lakers-rule-austin-reaves-walker-kessler-vs-hornets",
-          "title": "Lakers rule Austin Reaves, Walker Kessler out vs. Hornets",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4jmtxkdNQLQIUSRdsKwgnKg_mV7vFUDR0aLSvJuYyu34FI4vBgIZbIpP0dE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jj-redick-gives-major-injury-060837364.html",
-          "title": "JJ Redick Gives Major Injury Updates On Austin Reaves, Walker Kessler",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbn6jSVK-BRZkaFmxHtYOc85J7JfOHs5nc8zc_d9p3i16dYKP-FWWdyCf4U7E"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/walker-kessler-leg-out-tuesday-vs-charlotte",
-          "title": "Walker Kessler (leg) out Tuesday vs. Charlotte",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6EXJmpjUJOZowNg_ZNphVn_OolpNdH4HRwzCZp21xnuNAlw1KdgtsVy-Mq6s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpIVq2RCGquDT_1vcs-_LIhu2UA8lR8eI3alIxKcCHNZA21-W9G96Ujoipm90"
         }
       ]
     }
