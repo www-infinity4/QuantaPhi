@@ -3,28 +3,266 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T17:01:29.811881Z",
+  "checked_at": "2026-11-18T17:31:20.820957Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "new york city marathon",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T16:40:00Z",
+      "query": "katherine clark",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T17:10:00Z",
       "related_news_urls": [
-        "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
-        "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
-        "https://www.yahoo.com/news/videos/rachel-apas-family-theyre-processing-151252189.html"
+        "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
+        "https://www.cbsnews.com/boston/news/katherine-clark-house-majority-leader-democrats/",
+        "https://www.bostonherald.com/2026/11/16/lucas-neal-clark-poised-to-be-power-players/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUXijBOPCt-xPh5grgwCsJ7mpA63_MGhBKJkvSRod3KtbVC59hj5JbopGeJc",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROIb7EmX22wEX3Zg7VCI0_1fOD__s-z8tnZf8p18hOafCp48ba4n9b75Ldl3I",
+      "image_credit": "Politico",
       "news": [
         {
-          "url": "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
-          "title": "Dad of N.Y.C. Marathon Runner Who Died at 24 Recalls Her Heartbreaking Final Texts",
-          "publisher": "People.com",
+          "url": "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
+          "title": "Katherine Clark, Pete Aguilar, Joe Neguse elected to House majority posts",
+          "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUXijBOPCt-xPh5grgwCsJ7mpA63_MGhBKJkvSRod3KtbVC59hj5JbopGeJc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROIb7EmX22wEX3Zg7VCI0_1fOD__s-z8tnZf8p18hOafCp48ba4n9b75Ldl3I"
         },
+        {
+          "url": "https://www.cbsnews.com/boston/news/katherine-clark-house-majority-leader-democrats/",
+          "title": "Katherine Clark of Massachusetts elected as next House majority leader by Democrats in historic first",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKAzlK7rMJyOaqgVWYLsLbmhNrqKaLc98CW8f8Oy63JUAs_ktwfttQx8qGdo"
+        },
+        {
+          "url": "https://www.bostonherald.com/2026/11/16/lucas-neal-clark-poised-to-be-power-players/",
+          "title": "Lucas: Neal, Clark poised to be power players in next Congress",
+          "publisher": "Boston Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-RwU2n2WvlxX_sj_TYM6S89CeS3H2mIMsr4Vc2quF9NtV_jCC0uAsE_B0ves"
+        }
+      ]
+    },
+    {
+      "query": "youngstown propane",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T17:10:00Z",
+      "related_news_urls": [
+        "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
+        "https://www.wfmj.com/news/local-news/austintown/explosion-fire-reported-at-youngstown-propane-in-austinown/article_472d92f7-299e-41f8-b8ea-143304719f87.html",
+        "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane-story-to-follow/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvTHDy0-6yhjl1Sansv3rwr-aGPWK68OZ0uo9ZdIUiOHgRLkCuR0kPDI9oME8",
+      "image_credit": "WFMJ",
+      "news": [
+        {
+          "url": "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
+          "title": "Crews investigating explosion at Youngstown Propane",
+          "publisher": "WFMJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvTHDy0-6yhjl1Sansv3rwr-aGPWK68OZ0uo9ZdIUiOHgRLkCuR0kPDI9oME8"
+        },
+        {
+          "url": "https://www.wfmj.com/news/local-news/austintown/explosion-fire-reported-at-youngstown-propane-in-austinown/article_472d92f7-299e-41f8-b8ea-143304719f87.html",
+          "title": "Explosion, fire reported at Youngstown Propane in Austinown",
+          "publisher": "WFMJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDetgtDlBjCyvaWmB0bse-KwXr78_-GpdmhDcGc4MVzYp2nRqEwyEofVe7LGM"
+        },
+        {
+          "url": "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane-story-to-follow/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
+          "title": "Crews investigating explosion at Youngstown Propane (STORY TO FOLLOW)",
+          "publisher": "WFMJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLNlNrGqc4bC5Aph_qAvkpRp-9NDWNC8YKPCNQPBaOWDq_pg3K4uumB3lbyg"
+        }
+      ]
+    },
+    {
+      "query": "trump putin xi jinping",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T17:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+        "https://www.yahoo.com/news/videos/president-trumps-elaborate-welcome-china-163017585.html",
+        "https://www.washingtonpost.com/national-security/2026/11/18/trumps-dream-nuclear-deal-meets-reality-an-unwilling-russia-china/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdxYhOt6s_XvK28LUVWXEALuCUE6pUs0fw9RnBEm6ehdBN5B4nwrWlZTso20E",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+          "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdxYhOt6s_XvK28LUVWXEALuCUE6pUs0fw9RnBEm6ehdBN5B4nwrWlZTso20E"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/president-trumps-elaborate-welcome-china-163017585.html",
+          "title": "President Trump's elaborate welcome in China",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTg1Zyn6-bNWx484dWX5hP0Q4pIQroCPDW5WlDVNccKNBWNOaGyFZTOiRQyXPw"
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2026/11/18/trumps-dream-nuclear-deal-meets-reality-an-unwilling-russia-china/",
+          "title": "Trump’s dream of a nuclear deal meets reality of unwilling Russia and China",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5nc6MyaJaVvNj44VkrdUuy42s5Ld5dLsWwrROHREidKxGITk_etb0MYlnDqw"
+        }
+      ]
+    },
+    {
+      "query": "real madrid vs inter",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T17:00:00Z",
+      "related_news_urls": [
+        "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/",
+        "https://www.fantasyfootballscout.co.uk/2026/11/17/wucl-fantasy-matchday-5-team-reveal/",
+        "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ",
+      "image_credit": "UEFA.com",
+      "news": [
+        {
+          "url": "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/",
+          "title": "Women's Champions League Matchday 5 preview: Chelsea vs Paris SG, Real Madrid vs Inter, Arsenal vs OL Lyonnes, Benfica vs Roma",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ"
+        },
+        {
+          "url": "https://www.fantasyfootballscout.co.uk/2026/11/17/wucl-fantasy-matchday-5-team-reveal/",
+          "title": "WUCL Fantasy Matchday 5: Team reveal",
+          "publisher": "Fantasy Football Scout",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSr_h3elVsrCvzhwHjDizln0gkYSOCVdewKp9OHM-hVHXvIlER3ZsNrFzMV6I"
+        },
+        {
+          "url": "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing",
+          "title": "UWCL Round 5 preview: giants on the move, tight races brewing",
+          "publisher": "Sofascore",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7eX8qGm5Pyxy3gkTDa_JYTw2EsA6EHhc1fywCX34GpJSghRmGTYBLm0u4t4"
+        }
+      ]
+    },
+    {
+      "query": "baylor basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T17:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/baylor-jackson-state-prediction-odds-time-2026-college-basketball-picks-wednesday-november-18/",
+        "https://sports.yahoo.com/articles/baylor-hosts-jackson-state-following-094317882.html",
+        "https://www.kcentv.com/video/sports/basketball/bears-basketball-coach-scott-drew-and-kayden-mingo-speak-after-close-loss-against-the-ut/500-93eacbe1-4da8-4877-9552-2dcf7910479c"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrJzEHqQ7pz7BeWdnVsyuyb_Uqj8kCLh7qdb9jvCOjXv4M7ZphcqcBxIBcg4",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/baylor-jackson-state-prediction-odds-time-2026-college-basketball-picks-wednesday-november-18/",
+          "title": "Baylor vs. Jackson State prediction, odds: College basketball picks for Wednesday, Nov. 18 by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrJzEHqQ7pz7BeWdnVsyuyb_Uqj8kCLh7qdb9jvCOjXv4M7ZphcqcBxIBcg4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/baylor-hosts-jackson-state-following-094317882.html",
+          "title": "Baylor hosts Jackson State following Mingo's 23-point game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEHkjsDlghGGoSHUAab4uHGcmdEajSBa3hwPv7KoqKkQu3jGYzRy4uha6HGeE"
+        },
+        {
+          "url": "https://www.kcentv.com/video/sports/basketball/bears-basketball-coach-scott-drew-and-kayden-mingo-speak-after-close-loss-against-the-ut/500-93eacbe1-4da8-4877-9552-2dcf7910479c",
+          "title": "Baylor Basketball | Coach Scott Drew and Kayden Mingo speak after close loss against the UT",
+          "publisher": "KCENTV.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC5fwkWuZqBZFcqTf54pEAF7oCZM1rvW0uZE5SSiHVVrAPRq6uCbDts7RMErw"
+        }
+      ]
+    },
+    {
+      "query": "the comeback king",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T17:00:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/comeback-king-trailer-glen-powell-judd-apatow-1236712505/",
+        "https://www.yahoo.com/entertainment/movies/articles/glen-powell-country-music-movie-170450216.html",
+        "https://www.rollingstone.com/tv-movies/tv-movie-news/glen-powell-judd-apatow-comeback-king-interview-photos-1235657507/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxybo26ephCI1U8sBO8Y0hbOrbNDCg3RVRxjc2WRxCgT4TjeObvSAmRCxJJsc",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/comeback-king-trailer-glen-powell-judd-apatow-1236712505/",
+          "title": "‘The Comeback King’ Trailer: Glen Powell Is a Washed-Up Country Star in Judd Apatow’s New Comedy",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxybo26ephCI1U8sBO8Y0hbOrbNDCg3RVRxjc2WRxCgT4TjeObvSAmRCxJJsc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/glen-powell-country-music-movie-170450216.html",
+          "title": "Glen Powell’s New Country Music Movie Has Jelly Roll Making A Sick Burn About Himself",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjBrbBnP2UGeI9tEbLTNtSocprLWNbGGds_c7W8Z4NpXYYbsAE9ScclIivg8A"
+        },
+        {
+          "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/glen-powell-judd-apatow-comeback-king-interview-photos-1235657507/",
+          "title": "Country Music's Biggest Stars Came Together to Break Glen Powell's Balls in 'The Comeback King'",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKUoA9kJ6DdoQmpm1PV0gFuTRzp3J7yLcDSnZlxZ1anh8Gyx7ZP_Vo4AlvuLE"
+        }
+      ]
+    },
+    {
+      "query": "real madrid - inter de milán",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T16:50:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/video/clip/_/id/17530039/jornada-decisiva-para-real-madrid-en-la-uefa-womens-champion-league",
+        "https://www.mundodeportivo.com/futbol/real-madrid/20261117/1004252168/silvia-cristobal-llevamos-toda-semana-pensando-partido.html",
+        "https://www.relevo.com/futbol/champions-league-femenina/champions-femenina-jornada-5-real-madrid-inter-barca-servette.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSekto7P5rfVbTcMGPZScv-_vxV2EmaHHgBJ_jroNnsiCtr82XtjrCMT5u8CDY",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/video/clip/_/id/17530039/jornada-decisiva-para-real-madrid-en-la-uefa-womens-champion-league",
+          "title": "Jornada decisiva para Real Madrid en la UEFA Women's Champion League",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSekto7P5rfVbTcMGPZScv-_vxV2EmaHHgBJ_jroNnsiCtr82XtjrCMT5u8CDY"
+        },
+        {
+          "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261117/1004252168/silvia-cristobal-llevamos-toda-semana-pensando-partido.html",
+          "title": "Silvia Cristóbal: \"Llevamos toda la semana pensando en este partido\"",
+          "publisher": "Mundo Deportivo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR30sy1CnivHNdbuvo8rhIHR-f8vt0PbGZYIH7H7s15QpS-Ujqv9mQ-uKekNZ8"
+        },
+        {
+          "url": "https://www.relevo.com/futbol/champions-league-femenina/champions-femenina-jornada-5-real-madrid-inter-barca-servette.html",
+          "title": "Real Madrid-Inter y Barça-Servette: la Champions femenina entra en su quinta jornada",
+          "publisher": "Relevo Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXxrC48g65hSJK4XYftAwyqWuGeU0C72W52GaZKVQFxbMOSBMF2zwAZyutDO8"
+        }
+      ]
+    },
+    {
+      "query": "new york city marathon",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T16:40:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
+        "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
+        "https://cowboystatedaily.com/2026/11/15/rare-condition-turns-routine-gym-workout-into-life-threatening-event-for-teen/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcI8bcNXo4DJ3mzxTWGTfyNx1l3wJbSqO4amtA6KyICdLQ2ZlYxl4k5qUTTA",
+      "image_credit": "CBS News",
+      "news": [
         {
           "url": "https://www.cbsnews.com/news/rachel-apa-father-nyc-marathon-death/",
           "title": "Father of Rachel Apa, NYC Marathon runner who died, calls her death \"unfathomable\"",
@@ -33,326 +271,88 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcI8bcNXo4DJ3mzxTWGTfyNx1l3wJbSqO4amtA6KyICdLQ2ZlYxl4k5qUTTA"
         },
         {
-          "url": "https://www.yahoo.com/news/videos/rachel-apas-family-theyre-processing-151252189.html",
-          "title": "Rachel Apa's family on how they're processing her \"unfathomable\" death and honoring her legacy",
+          "url": "https://people.com/dad-of-nyc-marathon-runner-who-died-at-24-recalls-her-heartbreaking-final-texts-12262419",
+          "title": "Dad of N.Y.C. Marathon Runner Who Died at 24 Recalls Her Heartbreaking Final Texts",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUXijBOPCt-xPh5grgwCsJ7mpA63_MGhBKJkvSRod3KtbVC59hj5JbopGeJc"
+        },
+        {
+          "url": "https://cowboystatedaily.com/2026/11/15/rare-condition-turns-routine-gym-workout-into-life-threatening-event-for-teen/",
+          "title": "Rare Condition That Killed New York Marathoner Threatened Life Of Montana Teen",
+          "publisher": "Cowboy State Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6J9IPsV_Q71Di2eLd4GOeP2QPX3ZEd5taprAbj05cYUfEDTTmbjHsZwFVy8U"
+        }
+      ]
+    },
+    {
+      "query": "kevin feige",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T16:40:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/entertainment-arts/movies/story/2026-11-17/marvel-kevin-feige-kang-doom-avengers-doomsday",
+        "https://theplaylist.net/kevin-feige-kang-dynasty-doctor-doom-bait-switch-20261116/",
+        "https://www.yahoo.com/entertainment/movies/articles/avengers-secret-wars-must-end-182801600.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIVrna79DYKxmgak_Otv4X2n2_GvYvoUtlZctml95Jzp67od6qWU-mvNP37HU",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/entertainment-arts/movies/story/2026-11-17/marvel-kevin-feige-kang-doom-avengers-doomsday",
+          "title": "Marvel Studios boss says Doom was already going to replace Kang after ‘Quantumania’ flop",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIVrna79DYKxmgak_Otv4X2n2_GvYvoUtlZctml95Jzp67od6qWU-mvNP37HU"
+        },
+        {
+          "url": "https://theplaylist.net/kevin-feige-kang-dynasty-doctor-doom-bait-switch-20261116/",
+          "title": "Kevin Feige Reveals Marvel Planned To Use Kang As A Set-Up For Doctor Doom In ‘Avengers: The Kang Dynasty’ Before Jonathan Majors Was Ousted",
+          "publisher": "The Playlist",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN2shPO09pSeiVq__wn_VSDy3xJXeGasW67m_esx-B6S55xmLehFu3Ez6MzkI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/avengers-secret-wars-must-end-182801600.html",
+          "title": "Avengers: Secret Wars Must End Marvel’s Obsession With the Next Infinity Saga",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHixOKBsD9tP_FfSlTyrN7bIktz3MuCQUUVXFfHceDAeykKQswslxi9fVpeQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIR0MU5UyF479kACK40Bna_qba02UBMvPgKLrqJ6_FU0bu05XHnWtN7pHSIs"
         }
       ]
     },
     {
-      "query": "tarik skubal",
+      "query": "chipotle hoodie",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T16:20:00Z",
+      "published_at": "2026-11-18T16:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50521652/sources-mets-final-teams-bidding-tarik-skubal",
-        "https://www.cbssports.com/mlb/news/mlb-rumors-tarik-skubal-dodgers-blue-jays-padres-suzuki-arozarena-phillies-red-sox-rays/",
-        "https://sports.yahoo.com/articles/tarik-skubal-bidding-war-reportedly-142929136.html"
+        "https://ir.chipotle.com/2026-11-16-CHIPOTLE-DEBUTS-THE-SNEAK-IT-IN-HOODIE-DESIGNED-TO-DISCREETLY-BRING-BURRITOS-TO-THE-MOVIES",
+        "https://ktla.com/food/chipotle-is-helping-people-sneak-food-into-movie-theaters-heres-how/",
+        "https://people.com/chipotle-is-helping-fans-discreetly-sneak-burritos-into-movie-theaters-12262469"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqNu0VhG_C_Fk9EL8nKAWqISUz5v0OP9k5BmOBoX-VPX0eZBY3Z1BDmFuiIY",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rFYw3q2FleECAPVLqaFAVqabugYyrOamke1A1LWAdEObONFZFY1FrIIBf3U",
+      "image_credit": "Chipotle",
       "news": [
         {
-          "url": "https://www.espn.com/mlb/story/_/id/50521652/sources-mets-final-teams-bidding-tarik-skubal",
-          "title": "Sources: Mets favorite to sign Tarik Skubal as teams ramp up pursuit of FA ace",
-          "publisher": "ESPN",
+          "url": "https://ir.chipotle.com/2026-11-16-CHIPOTLE-DEBUTS-THE-SNEAK-IT-IN-HOODIE-DESIGNED-TO-DISCREETLY-BRING-BURRITOS-TO-THE-MOVIES",
+          "title": "CHIPOTLE DEBUTS THE \"SNEAK IT IN\" HOODIE DESIGNED TO DISCREETLY BRING BURRITOS TO THE MOVIES",
+          "publisher": "Chipotle",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqNu0VhG_C_Fk9EL8nKAWqISUz5v0OP9k5BmOBoX-VPX0eZBY3Z1BDmFuiIY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rFYw3q2FleECAPVLqaFAVqabugYyrOamke1A1LWAdEObONFZFY1FrIIBf3U"
         },
         {
-          "url": "https://www.cbssports.com/mlb/news/mlb-rumors-tarik-skubal-dodgers-blue-jays-padres-suzuki-arozarena-phillies-red-sox-rays/",
-          "title": "MLB rumors: Tarik Skubal hosts more meetings, Padres eyeing top FA hitter, plus Red Sox, Phillies, Rays, more",
-          "publisher": "CBS Sports",
+          "url": "https://ktla.com/food/chipotle-is-helping-people-sneak-food-into-movie-theaters-heres-how/",
+          "title": "Chipotle is helping people sneak food into movie theaters. Here’s how",
+          "publisher": "KTLA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS537VEilGrAL33T2UKxtHKm1egE2oGLPOo0_IAY_5Pk2ZDg02d_hkraq831Zw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8Us2kEHy90d79l0ciuVCAnN_eMD_D0tGDlxS0BeO6jlO-h-2sczBCJUUMTA0"
         },
         {
-          "url": "https://sports.yahoo.com/articles/tarik-skubal-bidding-war-reportedly-142929136.html",
-          "title": "Tarik Skubal’s bidding war reportedly down to 2 teams",
-          "publisher": "Yahoo Sports",
+          "url": "https://people.com/chipotle-is-helping-fans-discreetly-sneak-burritos-into-movie-theaters-12262469",
+          "title": "Chipotle Just Made It Easier to ‘Discreetly’ Sneak Burritos into Movie Theaters",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX2G-hLWiQu2wlpikfb0D4hd-ZAqKUl1VCRbK44UpoieOdign5pmNr6x6rBMw"
-        }
-      ]
-    },
-    {
-      "query": "rashid bashir",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T16:10:00Z",
-      "related_news_urls": [
-        "https://news.wisc.edu/rashid-bashir-named-chancellor-of-uwmadison/",
-        "https://captimes.com/news/education/students-raise-concerns-over-finalist-for-uw-madisons-next-chancellor/article_07a4a14e-62b5-457b-b379-a2d43379cc28.html",
-        "https://www.jsonline.com/story/news/education/2026/11/18/rashid-bashir-dean-at-illinois-appointed-new-uw-madison-chancellor/92830200007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJUxpC3mp3xf4x81YcLklFjY3N6t6uu411e-tVy6WaiLExJVHBt0Vt1nPco0",
-      "image_credit": "UW–Madison News",
-      "news": [
-        {
-          "url": "https://news.wisc.edu/rashid-bashir-named-chancellor-of-uwmadison/",
-          "title": "Rashid Bashir named chancellor of UW–Madison",
-          "publisher": "UW–Madison News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJUxpC3mp3xf4x81YcLklFjY3N6t6uu411e-tVy6WaiLExJVHBt0Vt1nPco0"
-        },
-        {
-          "url": "https://captimes.com/news/education/students-raise-concerns-over-finalist-for-uw-madisons-next-chancellor/article_07a4a14e-62b5-457b-b379-a2d43379cc28.html",
-          "title": "Students raise concerns over finalist for UW-Madison's next chancellor",
-          "publisher": "The Cap Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsRXC41K8BHZpVjP0DSFZXPPEM0gDrELPdMxXkVe0kUjZtX2bYHIMlX4YNGwo"
-        },
-        {
-          "url": "https://www.jsonline.com/story/news/education/2026/11/18/rashid-bashir-dean-at-illinois-appointed-new-uw-madison-chancellor/92830200007/",
-          "title": "UW regents select Rashid Bashir from Illinois as Madison chancellor",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn5t8lUAzv7eo7KpYWcqgVtPbNZCRDT63GQ84Z_MUDdkUni2suc3lBwCv16cs"
-        }
-      ]
-    },
-    {
-      "query": "maikel garcia",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-18T16:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50521866/sources-royals-trade-maikel-garcia-mariners-miller",
-        "https://www.mlb.com/news/maikel-garcia-traded-from-royals-to-mariners",
-        "https://www.cbssports.com/mlb/news/maikel-garcia-trade-grades-mariners-royals/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdBehRjaClo4E8ZcfwxavMtvwuA1uED9zM4FFhC6zV79LtXzIIY6zLhvo-ZOQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50521866/sources-royals-trade-maikel-garcia-mariners-miller",
-          "title": "Sources: Royals trade Maikel Garcia to Mariners for Bryce Miller",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdBehRjaClo4E8ZcfwxavMtvwuA1uED9zM4FFhC6zV79LtXzIIY6zLhvo-ZOQ"
-        },
-        {
-          "url": "https://www.mlb.com/news/maikel-garcia-traded-from-royals-to-mariners",
-          "title": "KC trading All-Star 3B Garcia to Seattle for RHP Miller in 6-player swap (source)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWydZ4Lnj4aCJNOeGRpjYnlfh2jmttuExq01sBX8KVawC6SFqLTljxl2iT2T4"
-        },
-        {
-          "url": "https://www.cbssports.com/mlb/news/maikel-garcia-trade-grades-mariners-royals/",
-          "title": "Maikel Garcia trade: Mariners land Gold Glove infielder from Royals in six-player deal, per report",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS537VEilGrAL33T2UKxtHKm1egE2oGLPOo0_IAY_5Pk2ZDg02d_hkraq831Zw"
-        }
-      ]
-    },
-    {
-      "query": "jeffries",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-18T16:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
-        "https://www.cnn.com/2026/11/18/politics/hakeem-jeffries-house-democrats-leadership-elections",
-        "https://www.bbc.com/news/articles/cmy49873dn95o"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
-          "title": "Democrats Nominate Hakeem Jeffries for Speaker of the House, Making History",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/18/politics/hakeem-jeffries-house-democrats-leadership-elections",
-          "title": "Hakeem Jeffries overwhelmingly wins House speaker nomination despite threats from ultra-progressives",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi16S1MCd0kM6qFDxbDOpDdrOBrF2p7xbM3-sviis90ZCo2yLGh-R_a1iLUIo"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cmy49873dn95o",
-          "title": "Hakeem Jeffries re-elected to lead US House Democrats",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjmhe9_N7mCkFbBI6ZvLUeAgnPHh8z1_vn1t1579Wz6Mf8oF-eEqq_sWI2gMY"
-        }
-      ]
-    },
-    {
-      "query": "interland",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T15:50:00Z",
-      "related_news_urls": [
-        "https://www.ad.nl/video/productie/reiziger-na-moeizame-ek-kwalificatie-zo-dramatisch-was-het-niet-15066533",
-        "https://nos.nl/artikel/2639928-jong-oranje-plaatst-zich-met-hakken-over-de-sloot-voor-ek-na-nederlaag-tegen-denen",
-        "https://www.telegraaf.nl/sport/voetbal/twijfels-over-ek-perspectief-van-jong-oranje-na-wisselvallige-kwalificatie-ik-heb-er-een-hard-hoofd-in/164735874.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeDqh90K39ZCE1ScCg24jMIaXm58EmeET0eUeeDjnJmerh3Cfdxv6B8msq6bQ",
-      "image_credit": "AD.nl",
-      "news": [
-        {
-          "url": "https://www.ad.nl/video/productie/reiziger-na-moeizame-ek-kwalificatie-zo-dramatisch-was-het-niet-15066533",
-          "title": "Reiziger na moeizame EK-kwalificatie: 'Zo dramatisch was het niet'",
-          "publisher": "AD.nl",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeDqh90K39ZCE1ScCg24jMIaXm58EmeET0eUeeDjnJmerh3Cfdxv6B8msq6bQ"
-        },
-        {
-          "url": "https://nos.nl/artikel/2639928-jong-oranje-plaatst-zich-met-hakken-over-de-sloot-voor-ek-na-nederlaag-tegen-denen",
-          "title": "Jong Oranje plaatst zich met hakken over de sloot voor EK na nederlaag tegen Denen",
-          "publisher": "NOS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAaZZbg1aEF7FPW2btSXsm3ZOudjC5jz9GiHqWJm0tL4h2_tSmSdIc1r4F9AE"
-        },
-        {
-          "url": "https://www.telegraaf.nl/sport/voetbal/twijfels-over-ek-perspectief-van-jong-oranje-na-wisselvallige-kwalificatie-ik-heb-er-een-hard-hoofd-in/164735874.html",
-          "title": "Twijfels over EK-perspectief van Jong Oranje na wisselvallige kwalificatie: ’Ik heb er een hard hoofd in’",
-          "publisher": "De Telegraaf",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSALBWBZYkuKKBn2PdLRk5JSYrnXtwkuRCFPFgQZORltaMVnE-5Hlh991i0PMQ"
-        }
-      ]
-    },
-    {
-      "query": "new jason movie",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T15:30:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
-        "https://www.forbes.com/sites/timlammers/2026/11/18/new-friday-the-13th-movie-jason-announces-cast-and-release-date-as-filming-wraps/",
-        "https://bloody-disgusting.com/movie/3976124/jason-13th-official-movie-will-release-in-theaters-august-13-2027-from-cineverse/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
-          "title": "New ‘Friday The 13th’ Movie Unveils Cast, Title & Release Date",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0"
-        },
-        {
-          "url": "https://www.forbes.com/sites/timlammers/2026/11/18/new-friday-the-13th-movie-jason-announces-cast-and-release-date-as-filming-wraps/",
-          "title": "New ‘Friday The 13th’ Movie ‘Jason’ Announces Cast And Release Date As Filming Wraps",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNRUCtQAcipbP4-aY5Zj_7Pe_Jc0ZdOHMW1b37DEDaZU-X4_MR0fH0qhpSxU"
-        },
-        {
-          "url": "https://bloody-disgusting.com/movie/3976124/jason-13th-official-movie-will-release-in-theaters-august-13-2027-from-cineverse/",
-          "title": "‘JASON’ – 13th Official Movie Will Release in Theaters August 13, 2027 from Cineverse",
-          "publisher": "Bloody Disgusting",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgGykrdU2PktIV5ked1xD3etzvodM3l-l_FJItQtHxdrZrCJtjHBMOv4b-yiU"
-        }
-      ]
-    },
-    {
-      "query": "spartanburg water",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T15:30:00Z",
-      "related_news_urls": [
-        "https://www.foxcarolina.com/2026/11/18/spartanburg-water-issues-systemwide-boil-water-advisory/",
-        "https://www.wyff4.com/article/spartanburg-boil-water-advisory-systemwide/74464896",
-        "https://www.goupstate.com/story/news/environment/2026/11/18/spartanburg-water-boil-water-advisory-what-customers-need-to-know/92843961007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEwd-e-xZNnvm-oPPdn8w9IOr67zMFiJhC6KbPoUTp2Y6YSbmu8nwhJl7ameE",
-      "image_credit": "FOX Carolina News",
-      "news": [
-        {
-          "url": "https://www.foxcarolina.com/2026/11/18/spartanburg-water-issues-systemwide-boil-water-advisory/",
-          "title": "Spartanburg Water issues systemwide boil water advisory",
-          "publisher": "FOX Carolina News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEwd-e-xZNnvm-oPPdn8w9IOr67zMFiJhC6KbPoUTp2Y6YSbmu8nwhJl7ameE"
-        },
-        {
-          "url": "https://www.wyff4.com/article/spartanburg-boil-water-advisory-systemwide/74464896",
-          "title": "Spartanburg Water issues systemwide boil water advisory",
-          "publisher": "WYFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpLoQc30p-x1rbNaLUgx7Gj78XdprQWzNf8QD3lzj0gwkZcjzblLvV2v3LBq0"
-        },
-        {
-          "url": "https://www.goupstate.com/story/news/environment/2026/11/18/spartanburg-water-boil-water-advisory-what-customers-need-to-know/92843961007/",
-          "title": "Spartanburg Water issues systemwide boil water advisory",
-          "publisher": "GoUpstate",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ3qR_56qr_VI4-7HzmaNA8oqqqjPH0JHH_br3J0qrKpsiLWZ9w18uIyRme4E"
-        }
-      ]
-    },
-    {
-      "query": "florida weather flooding",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-18T15:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
-        "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
-        "https://www.foxweather.com/live-news/live-updates-relentless-storms-bring-heavy-rain-intense-flooding-to-florida-s-atlantic-coast"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
-          "title": "Severe flooding hits parts of coastal Florida from over a foot of rain … and a lot more is incoming",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8"
-        },
-        {
-          "url": "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
-          "title": "Live updates: Rain and flooding ground flights, close schools in South Florida",
-          "publisher": "NBC 6 South Florida",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk"
-        },
-        {
-          "url": "https://www.foxweather.com/live-news/live-updates-relentless-storms-bring-heavy-rain-intense-flooding-to-florida-s-atlantic-coast",
-          "title": "Live updates: Relentless storms bring heavy rain, intense flooding to Florida's Atlantic Coast",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoeYMjb_einyaMth-_5CeQOP0oi1IqgDYCESCowUCFed5QgdCPUfhlskHszy0"
-        }
-      ]
-    },
-    {
-      "query": "seatgeek",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T15:20:00Z",
-      "related_news_urls": [
-        "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
-        "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
-        "https://attstadium.com/events/morgan-wallen-aug-13-2027/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmXeLbwrthD3Ou0-4VCDpGZ8LXliY-U5pItDdGrqeOZb5semVdRnKAYW77SA8",
-      "image_credit": "Nissan Stadium",
-      "news": [
-        {
-          "url": "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
-          "title": "Morgan Wallen",
-          "publisher": "Nissan Stadium",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmXeLbwrthD3Ou0-4VCDpGZ8LXliY-U5pItDdGrqeOZb5semVdRnKAYW77SA8"
-        },
-        {
-          "url": "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
-          "title": "Morgan Wallen’s Last Time I Checked Tour is coming to Buffalo on July 23 and 24, 2027",
-          "publisher": "Buffalo Bills",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4G44OXFDuyuyc6Bvp7I1V4As-bR18QVIB6ElnjSGEMawiFSx3khrBrAgLC-I"
-        },
-        {
-          "url": "https://attstadium.com/events/morgan-wallen-aug-13-2027/",
-          "title": "Morgan Wallen: Last Time I Checked Tour 2027",
-          "publisher": "attstadium.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJIVuYkxS-Jwor6aGFnVzEbqbOrd0392w8qOle2Ed2rHarVvvYfW-z1OGQnS8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi_3YZQyeEgQIf4eEBuJRdVkTUWO_NhUOXUqVk3rkpjH8qrvZtNgC16KV16vI"
         }
       ]
     }
