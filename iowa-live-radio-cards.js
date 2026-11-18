@@ -5,7 +5,11 @@
  */
 (() => {
   'use strict';
-  const anchor = document.getElementById('infinityRadioQuick') || document.getElementById('qtraffic');
+  // Keep the full WHO and statewide station carousel with media, not beside
+  // the compact Infinity Radio player immediately under search/traffic.
+  // Older pages without the media anchor retain their existing placement.
+  const anchor = document.getElementById('iowaRadioMedia') ||
+    document.getElementById('infinityRadioQuick') || document.getElementById('qtraffic');
   if (!anchor || document.getElementById('iowaLiveRadio')) return;
 
   const stations = [

@@ -100,6 +100,10 @@ const routeFor = incoming => {
  // Shared Oracle interface now belongs to QuantaPhi's tested main stylesheet.
  if (path === '/QuantaPhi' || path === '/QuantaPhi/' || path === '/QuantaPhi/index.html') return { redirect: '/' + incoming.search };
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
+ for (const guide of ['/continuitybuilder', '/avatarai']) {
+  const sourcePath = guide + '/index.html';
+  if (path === guide || path === guide + '/' || path === sourcePath) return { repo: 'QuantaPhi', sourcePath, publicPath: guide };
+ }
  for (const section of ['directory','studio','pixie','bubbles-agent-workshop']) {
   if(path==='/'+section)return {redirect:'/'+section+'/'+incoming.search};
   if(path.startsWith('/'+section+'/'))return {repo:'QuantaPhi',sourcePath:path.endsWith('/')?path+'index.html':path,publicPath:path};
@@ -404,6 +408,20 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env, ctx) {
   const incoming = new URL(request.url);
+  // Source-only private telemetry bridge. Both routes fail closed by default.
+  // No live data, wallet or Quant ledger writes when either binding/flag is absent.
+  if(incoming.pathname === '/api/quant-events/consent' || incoming.pathname === '/api/quant-events'){
+   const consent=incoming.pathname==='/api/quant-events/consent';
+   const flag=consent?'EVENT_CONSENT_MANAGEMENT_ENABLED':'EVENTS_BRIDGE_ENABLED';
+   const headers={'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Vary':'Origin'};
+   const error=env?.[flag]!=='true'
+     ? consent?'consent_management_disabled':'event_collection_disabled'
+     : !env.EVENTS_BRIDGE?.fetch
+       ? consent?'consent_service_unavailable':'event_bridge_unavailable'
+       : null;
+   if(error)return Response.json({error},{status:503,headers});
+   return env.EVENTS_BRIDGE.fetch(request);
+  }
   if(incoming.pathname.startsWith('/api/bubbles/connections/')){
    if(!env.BUBBLES_CONNECTIONS)return Response.json({ok:false,error:'connections_not_configured'},{status:503,headers:{'Cache-Control':'no-store'}});
    return env.BUBBLES_CONNECTIONS.fetch(request);

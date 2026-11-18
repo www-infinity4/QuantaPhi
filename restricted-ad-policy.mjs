@@ -23,6 +23,15 @@ export function eligibleCreative(item,decision,now=Date.now()){
     !item.approved_jurisdictions.includes(decision.jurisdiction))return null;
  const review=Date.parse(item.reviewed_at);
  if(!Number.isFinite(review)||review>now||now-review>30*DAYS||!clean(item.license_id,120)||!clean(item.advertiser,100))return null;
+ // Government permission to operate is NOT permission to reuse an image or
+ // proof of a live paid campaign. Missing review receipts fail closed.
+ const rightsEnd=Date.parse(item.rights_expires_at);
+ const flightStart=Date.parse(item.campaign_starts_at);
+ const flightEnd=Date.parse(item.campaign_ends_at);
+ if(item.rights_cleared!==true||!clean(item.sponsor_agreement_id,120)||
+    !Number.isFinite(rightsEnd)||rightsEnd<=now||
+    !Number.isFinite(flightStart)||!Number.isFinite(flightEnd)||
+    flightStart>flightEnd||now<flightStart||now>flightEnd)return null;
  const domain=String(item.publisher_domain||'').toLowerCase().replace(/^www\./,'');
  if(!/^[a-z0-9-]+(?:\.[a-z0-9-]+)+$/.test(domain))return null;
  const source=fromPublisher(item.url,domain),image=fromPublisher(item.image,domain);

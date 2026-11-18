@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Pixie Stories | Original Storybook share artwork</title><desc id="desc">Original QuantaPhi visual preview for /pixie/. Decorative graphic, project title and description.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#431637"/><stop offset=".65" stop-color="#9b417f"/><stop offset="1" stop-color="#431637"/></linearGradient><radialGradient id="light"><stop stop-color="#ffe6aa" stop-opacity=".55"/><stop offset="1" stop-color="#ffe6aa" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="630" fill="url(#bg)"/><circle cx="1030" cy="260" r="320" fill="url(#light)"/>
+<path d="M0 506q272-115 538-52t662-38" fill="none" stroke="#ffe6aa" stroke-opacity=".24" stroke-width="4"/><path d="M0 528q342-89 635 17t565-42" fill="none" stroke="#fff" stroke-opacity=".13" stroke-width="2"/>
+<rect x="29" y="27" width="1142" height="576" rx="34" fill="none" stroke="#fff" stroke-opacity=".26" stroke-width="3"/>
+<path d="M76 131H698" stroke="#ffe6aa" stroke-width="5" stroke-linecap="round"/>
+<text x="79" y="112" fill="#ffe6aa" font-size="28" letter-spacing="3" font-family="DejaVu Sans,Arial,sans-serif" font-weight="800">QUANTAPHI · STORYBOOK</text>
+<text x="76" y="265" fill="#fff" font-size="79" font-family="DejaVu Sans,Arial,sans-serif" font-weight="900">PIXIE</text>
+<text x="76" y="359" fill="#fff" font-size="79" font-family="DejaVu Sans,Arial,sans-serif" font-weight="900">STORIES</text>
+<text x="78" y="425" fill="#dce6f6" font-size="29" font-family="DejaVu Sans,Arial,sans-serif" font-weight="650">A LITTLE MAGIC IN EVERY PAGE</text>
+<rect x="76" y="483" width="410" height="55" rx="14" fill="#fff" fill-opacity=".14" stroke="#ffe6aa" stroke-opacity=".6" stroke-width="2"/>
+<text x="100" y="519" fill="#fff" font-size="23" font-family="DejaVu Sans,Arial,sans-serif" font-weight="750">OPEN ON QUANTAPHI.ORG</text>
+<circle cx="951" cy="315" r="199" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".12" stroke-width="3"/>
+<path d="M789 209q95-53 162 10q72-63 171-10v241q-96-54-171 16q-79-65-162-16z" fill="#fff" fill-opacity=".23" stroke="#fff" stroke-width="7"/><path d="M951 220v246M818 278q51-24 101 7M818 330q51-24 101 7M984 285q51-31 107-6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M858 125v51M833 150h50M1063 130v38M1044 149h38" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+<text x="75" y="580" fill="#e4eafa" opacity=".75" font-size="19" font-family="DejaVu Sans,Arial,sans-serif">INFINITY 2026®  ·  ORIGINAL QUANTAPHI PAGE</text>
+</svg>

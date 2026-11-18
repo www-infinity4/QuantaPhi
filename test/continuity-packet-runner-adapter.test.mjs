@@ -84,8 +84,8 @@ test('changed inventory selects, rotates after one blocker, then resumes without
       loadCandidates: async () => {
         scans++;
         return [
-          packet(1, {state: 'blocked', blockReason: 'needs owner scope'}),
-          packet(2),
+          packet(1, {repo: REPO.toLowerCase(), state: 'blocked', blockReason: 'needs owner scope'}),
+          packet(2, {repo: REPO.toLowerCase()}),
           packet(3, {headSha: THIRD, nextSourcePath: 'src/3.mjs', priority: 10}),
         ];
       },
@@ -439,4 +439,59 @@ test('legacy blocked merge receipt does not make a later eligible merge complete
   assert.equal(merged.status,'processed');
   assert.equal(merged.attempted[0].result,'merged');
  }finally{d.close();}
+});
+
+test('D1 packet pass persists verified dependency requirements and reports source overlap without dispatch', async () => {
+ const d=database();
+ try{
+  const lease=await claim(d.db,AT,AT,'graph-fence');
+  const observed=[];
+  const result=await runPacketPass({
+   db:d.db,claim:lease,ownerScope:OWNER_SCOPE,ownerId:OWNER,sourceVersion:SHA,now:AT+1,
+   loadCandidates:async()=>[
+    packet(90,{priority:100,dependencies:[REPO+'#89'],estimatedMinutes:30}),
+    packet(91,{priority:99,scopePaths:['src/shared/'],nextSourcePath:'src/shared/module.mjs'}),
+    packet(92,{repo:REPO.toLowerCase(),priority:98,scopePaths:['src/shared/file.mjs'],nextSourcePath:'src/shared/file.mjs'}),
+    packet(93,{priority:97,nextSourcePath:'src/other.mjs'})
+   ],
+   executePacket:async (work,{idempotencyKey})=>{
+    observed.push(work.issue);
+    return {receipt:receipt(work,work.nextAction,'changed',idempotencyKey,{
+      providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/commit/abc123'
+    })};
+   }
+  });
+  assert.deepEqual(observed,[91,93]);
+  assert.ok(result.skipped.some(s=>s.issue===90&&s.reason==='dependency_pending'));
+  assert.ok(result.skipped.some(s=>s.issue===92&&s.reason==='source_overlap'));
+ }finally{d.close()}
+});
+
+test('dependency completion resumes same-version inventory without history reread or replay', async () => {
+ const d=database();
+ try{
+  const first=await claim(d.db,AT,AT,'dependency-first');
+  let scans=0,executions=0;
+  const before=await runPacketPass({
+   db:d.db,claim:first,ownerScope:OWNER_SCOPE,ownerId:OWNER,sourceVersion:SHA,now:AT+1,
+   loadCandidates:async()=>{scans++;return [packet(80,{dependencies:[REPO.toLowerCase()+'#79']})];},
+   executePacket:async()=>{executions++;throw Error('missing dependency must not execute')}
+  });
+  assert.equal(before.status,'dependency_pending');
+  assert.equal(executions,0);
+  const second=await claim(d.db,AT+INTERVAL,AT+INTERVAL,'dependency-second');
+  const after=await runPacketPass({
+   db:d.db,claim:second,ownerScope:OWNER_SCOPE,ownerId:OWNER,sourceVersion:SHA,now:AT+INTERVAL+1,
+   completedDependencies:[REPO+'#79'],
+   loadCandidates:async()=>{scans++;throw Error('same source version must not rescan');},
+   executePacket:async(work,{idempotencyKey})=>{executions++;return {
+    receipt:receipt(work,work.nextAction,'changed',idempotencyKey,{
+     providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/commit/abc123'
+    })
+   }}
+  });
+  assert.equal(after.status,'processed');
+  assert.equal(scans,1);
+  assert.equal(executions,1);
+ }finally{d.close()}
 });

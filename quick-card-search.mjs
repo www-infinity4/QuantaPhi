@@ -16,6 +16,10 @@ article.classList.add('search-card-improved');
 article.dataset.improved = 'true'; // evidence: 73 views, 0 interactions
 // Ensure the article can contain absolutely positioned elements
 article.style.position='relative';
+// search-card-improved: evidence 43 views, 0 interactions
+article.classList.add('search-card-improved');
+article.dataset.improved = 'true';
+article.style.position='relative';
 const badge=el('span','search-card-improved-badge','Try it!');
 badge.style.cssText='position:absolute;top:4px;right:4px;background:#ff0;color:#000;padding:2px 4px;font-size:0.75rem;border-radius:4px;';
 article.append(badge);

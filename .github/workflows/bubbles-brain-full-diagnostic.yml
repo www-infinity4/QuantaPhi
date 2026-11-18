@@ -78,6 +78,7 @@ jobs:
             test/bubbles-tools.test.mjs \
             test/brain-assigned-job-scope.test.mjs \
             test/brain-color-core.test.mjs \
+            test/brain-role-handoffs.test.mjs \
             test/brain-clock.test.mjs \
             test/bubbles-owner-history-draft.test.mjs \
             test/bubbles-owner-clock.test.mjs \

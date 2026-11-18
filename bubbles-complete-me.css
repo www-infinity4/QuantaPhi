@@ -1,0 +1,32 @@
+.ba-complete-me {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dfc8ba;
+  border-radius: 18px;
+  background: #fffaf5;
+  color: #312722;
+  font: 400 16px/1.5 system-ui, sans-serif;
+  overflow-wrap: anywhere;
+}
+.ba-complete-me :is(h3, h4, p) { margin: 0 0 8px; }
+.ba-complete-me form { display: grid; gap: 10px; }
+.ba-complete-me form[hidden] { display: none; }
+.ba-complete-me label { display: grid; gap: 4px; font-weight: 650; }
+.ba-complete-me :is(input, select, textarea, button) {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #c3a698;
+  border-radius: 10px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+.ba-complete-me textarea { resize: vertical; }
+.ba-complete-me button { margin: 4px 6px 4px 0; cursor: pointer; }
+.ba-complete-me button[type='submit'] { background: #a8322b; border-color: #a8322b; color: #fff; font-weight: 700; }
+.ba-complete-me a { display: inline-flex; align-items: center; min-height: 44px; margin-right: 10px; color: #942d27; }
+.ba-complete-me :focus-visible { outline: 3px solid #3384a5; outline-offset: 2px; }

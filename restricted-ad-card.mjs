@@ -108,6 +108,7 @@ if(root){
  }
  browse.addEventListener('click',()=>{
   acknowledged=true;publisherLast='';publisherSeen=[];browse.hidden=true;closeBrowse.hidden=false;
+  window.dispatchEvent(new CustomEvent('quantaphi:age-preference',{detail:{action:'browse'}}));
   kitSelect.value=selectedKitId;paintKit();
  });
  kitSelect.addEventListener('change',()=>{selectedKitId=kitSelect.value;paintKit()});
@@ -118,6 +119,7 @@ if(root){
  });
  closeBrowse.addEventListener('click',()=>{
   acknowledged=false;publisherLast='';publisherSeen=[];publisher.hidden=true;
+  window.dispatchEvent(new CustomEvent('quantaphi:age-preference',{detail:{action:'skip'}}));
   publisherLink.removeAttribute('href');publisherName.textContent='';publisherDesc.textContent='';kitLinks.replaceChildren();resetPlan();
   kitPlanBudget.value='300.00';kitPlanRegion.value='';
   browse.hidden=false;closeBrowse.hidden=true;
