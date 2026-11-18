@@ -26,9 +26,16 @@ test('Oracle and feed recommendations present the next card without personal-sou
  assert.match(oracle,/Next card:/);
 });
 
-test('source-backed Quick Cards keep the sole Oracle Follow control visible',()=>{
+test('source-backed Quick Cards show the inline publisher Follow instead of duplicate Oracle Follow',()=>{
  const oracle=source('oracle-card-deck.js');
- assert.match(oracle,/follow\.hidden=!active;/,
-  'Following must support authorized source and publisher cards, not only local widgets');
- assert.doesNotMatch(oracle,/follow\.hidden=!active\|\|active\.id\.startsWith\('source-'\)/);
+ const actions=source('quanta-card-actions.mjs');
+ const premium=source('premium-source-cards.mjs');
+ assert.match(oracle,/follow\.hidden=!active\|\|active\.id\.startsWith\('source-'\)/,
+  'Hide only the redundant Oracle Follow for source cards');
+ assert.match(oracle,/\{showFollow:false\}/,
+  'Do not mount a second dynamic Follow toolbar on the moved Oracle card');
+ assert.match(actions,/if\(options\.showFollow!==false\)/,
+  'Source publisher toolbars retain their own valid Follow control');
+ assert.match(premium,/mountCardActions\(actions,\{\.\.\.card,/,
+  'Inline publisher Follow remains available');
 });
