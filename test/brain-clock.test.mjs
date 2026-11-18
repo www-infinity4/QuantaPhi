@@ -938,7 +938,7 @@ test('signed Pink source verification handles '+scenario.replaceAll('_',' '),asy
   assert.equal(updated.color_jobs[0].status,'merged_verified');
   assert.equal(updatedStatus,'blocked','whole ticket must not claim deployment');
   assert.equal(memory.get('job-quant-index'),undefined,'review never mints');
-  assert.equal(calls.length,scenario==='existing_test'?5:4);
+  assert.equal(calls.length,['existing_test','changed_test'].includes(scenario)?5:4);
   const readback=await (await clock.runner(request('source-review-receipt'))).json();
   assert.equal(readback.durableReadback,true);
   assert.equal(readback.coinsMinted,false);
