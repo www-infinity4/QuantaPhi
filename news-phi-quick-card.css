@@ -1,0 +1,17 @@
+/* News Phi stays inside the existing Oracle carousel, not a duplicate shelf. */
+.newsphi-card{display:flex;flex-direction:column;gap:10px;min-width:0;background:#fffaf7;color:#283849;line-height:1.5}
+.newsphi-card .newsphi-title{margin:0;font-size:clamp(1.25rem,4vw,1.65rem);line-height:1.25}
+.newsphi-card .newsphi-description,.newsphi-card .newsphi-status{margin:0;font-size:1rem}
+.newsphi-card .newsphi-filter-label{font-size:.95rem;font-weight:800}
+.newsphi-card .newsphi-topic{width:100%;min-height:48px;border-radius:12px;border:1px solid #879bb0;background:white;color:#172f48;padding:10px;font-size:1.08rem}
+.newsphi-card .newsphi-story{min-height:215px;display:flex;flex-direction:column;gap:10px;border:1px solid #e0e7f0;border-radius:14px;background:#fff;padding:14px;overflow-wrap:anywhere}
+.newsphi-card .newsphi-headline{margin:0;font-size:1.2rem;line-height:1.35}
+.newsphi-card .newsphi-byline{font-size:.92rem;font-weight:750;color:#465d76;margin:0}
+.newsphi-card .newsphi-extract{font-size:1rem;margin:0;line-height:1.55}
+.newsphi-card .newsphi-read,.newsphi-card .newsphi-newsroom{display:inline-flex;align-items:center;min-height:44px;font-weight:800;color:#135487;text-decoration:underline}
+.newsphi-card .newsphi-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.newsphi-card .newsphi-controls button{min-height:44px;padding:10px 12px;border:0;border-radius:11px;background:#155a87;color:white;font-size:1rem;font-weight:750;cursor:pointer}
+.newsphi-card .newsphi-controls button:disabled{opacity:.55;cursor:not-allowed}
+.newsphi-card .newsphi-count{min-width:55px;text-align:center;font-size:.95rem;font-variant-numeric:tabular-nums}
+.newsphi-card :is(a,button,select):focus-visible{outline:3px solid #d07825;outline-offset:3px}
+@media(max-width:400px){.newsphi-card .newsphi-controls button{flex:1 1 43%}.newsphi-card .newsphi-controls .newsphi-count{order:3;flex:1 1 100%}}
