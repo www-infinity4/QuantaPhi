@@ -5,6 +5,10 @@
 'use strict';
 const host=document.getElementById('oracleCardDeck'),stage=document.getElementById('oracleCardStage');
 if(!host||!stage)return;
+// Source-backed observations prepare bounded owner work; never auto-write from ad content.
+void import('/oracle-aware-write.mjs?v=20261117-owner-write1')
+ .then(({mountAwareWriter})=>mountAwareWriter({host,stage}))
+ .catch(error=>console.warn('Oracle aware-writing editor unavailable',error));
 const agePolicy=window.QuantaAgePreferences;
 const categoryPicker=document.getElementById('oracleCardDepartment');
 const saveCategory=document.getElementById('oracleSaveDepartment');
