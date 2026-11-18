@@ -3,188 +3,153 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T15:01:17.684932Z",
+  "checked_at": "2026-11-18T15:31:08.810572Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mike pettine",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T14:40:00Z",
+      "query": "ticket master",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T15:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50511280/cowboys-discussing-new-role-dc-parker-jones-says",
-        "https://www.bloggingtheboys.com/dallas-cowboys-news/227106/jerry-jones-christian-parkers-role-brian-schottenheimer",
-        "https://sports.yahoo.com/nfl/breaking-news/article/jerry-jones-says-cowboys-are-discussing-defensive-coordinator-christian-parkers-role-after-brian-schottenheimer-declines-to-support-him-160031342.html"
+        "https://www.cbsnews.com/detroit/news/stevie-wonder-detroit-fox-theatre-concerts-canceled-refunds/",
+        "https://www.clickondetroit.com/news/local/2026/11/17/stevie-wonders-songs-in-the-key-of-life-50th-anniversary-performances-at-fox-theatre-canceled/",
+        "https://www.freep.com/story/entertainment/music/brian-mccollum/2026/11/16/stevie-wonder-fox-shows-canceled-may-be-rescheduled-in-detroit/92818449007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxYUaRkrShsJvMK6IjEl6ovjK4cVLsBRI6rWRqlh7Izjk3D0LXynBH67A7Cdo",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGRnIiZD1mUzwoyD_XT777WZUwZAsJl4WZk99EjT-9ikO31kDgBlcOCPDW5LY",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50511280/cowboys-discussing-new-role-dc-parker-jones-says",
-          "title": "Cowboys discussing new role for DC Parker, Jones says",
-          "publisher": "ESPN",
+          "url": "https://www.cbsnews.com/detroit/news/stevie-wonder-detroit-fox-theatre-concerts-canceled-refunds/",
+          "title": "Stevie Wonder's two sold-out Fox Theatre concerts in Detroit canceled, Ticketmaster says",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxYUaRkrShsJvMK6IjEl6ovjK4cVLsBRI6rWRqlh7Izjk3D0LXynBH67A7Cdo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGRnIiZD1mUzwoyD_XT777WZUwZAsJl4WZk99EjT-9ikO31kDgBlcOCPDW5LY"
         },
         {
-          "url": "https://www.bloggingtheboys.com/dallas-cowboys-news/227106/jerry-jones-christian-parkers-role-brian-schottenheimer",
-          "title": "Cowboys news: Jerry Jones discusses Christian Parker’s role for the rest of 2026",
-          "publisher": "Blogging The Boys",
+          "url": "https://www.clickondetroit.com/news/local/2026/11/17/stevie-wonders-songs-in-the-key-of-life-50th-anniversary-performances-at-fox-theatre-canceled/",
+          "title": "Stevie Wonder’s ‘Songs in the Key of Life’ 50th anniversary performances at Fox Theatre canceled",
+          "publisher": "ClickOnDetroit | WDIV Local 4",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShJBNkyPbCCdE1iQLD-k5d49WORdQiCkurnFoGXIwOs4i-3_SWASaN12hx2pY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQquyVDtDl30EVS2Rsz8_Aix67sDlhBQmia-kld8N8XB2TTV8HtrWGMU7kQNyg"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/breaking-news/article/jerry-jones-says-cowboys-are-discussing-defensive-coordinator-christian-parkers-role-after-brian-schottenheimer-declines-to-support-him-160031342.html",
-          "title": "Jerry Jones says Cowboys are discussing defensive coordinator Christian Parker's role after Brian Schottenheimer declines to support him",
+          "url": "https://www.freep.com/story/entertainment/music/brian-mccollum/2026/11/16/stevie-wonder-fox-shows-canceled-may-be-rescheduled-in-detroit/92818449007/",
+          "title": "Stevie Wonder Fox shows canceled, may be rescheduled in Detroit",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWJ1Nqb1-MfKkZ2ZNEnHdrAxtoGJwajwT-4FW76daJ9wqkwUukDNefOu36pn0"
+        }
+      ]
+    },
+    {
+      "query": "urban meyer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T15:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/maryland/article/insidemdsports-exclusive-urban-meyer-emerging-in-marylands-football-coaching-search-292929495/",
+        "https://www.on3.com/news/report-urban-meyer-seriously-considering-maryland-head-coaching-job/",
+        "https://sports.yahoo.com/college-football/article/is-there-a-reason-to-feel-bad-for-lane-kiffin-in-year-1-at-lsu-212741459.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAiKv7bnI1ogRHfbFzexLiUq45m14zQV1H_8WqfAoHCEzoa5hgwG8mUJEe18M",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/maryland/article/insidemdsports-exclusive-urban-meyer-emerging-in-marylands-football-coaching-search-292929495/",
+          "title": "InsideMDSports Exclusive: Urban Meyer emerging in Maryland's football coaching search",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAiKv7bnI1ogRHfbFzexLiUq45m14zQV1H_8WqfAoHCEzoa5hgwG8mUJEe18M"
+        },
+        {
+          "url": "https://www.on3.com/news/report-urban-meyer-seriously-considering-maryland-head-coaching-job/",
+          "title": "Report: Urban Meyer 'seriously considering' Maryland head coaching job",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSu3ZhsG4eUodCDElPqEP_oeNSZTY0ZiGtVpsu-up02qLUgZxIOqiJpuCs4eY0"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/article/is-there-a-reason-to-feel-bad-for-lane-kiffin-in-year-1-at-lsu-212741459.html",
+          "title": "Is there a reason to feel bad for Lane Kiffin in Year 1 at LSU?",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR3odFd8q2_jOiBptk27bxzC8OX80AAZx_Vvf4lR1F8VvxmOUQGtlkwRHVdiU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR359QxdmQBHkon2Vjee96U042l4vTF_-vVpynEwgwGK1ypp83Tqujw9wsGi8w"
         }
       ]
     },
     {
-      "query": "lance bass",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T14:30:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/17/celebrity-news/lance-bass-shares-the-sweet-holiday-traditions-he-shares-with-his-children/",
-        "https://www.usmagazine.com/celebrity-moms/news/lance-bass-reveals-what-kids-think-of-nsync-christmas-album/",
-        "https://katu.com/news/entertainment/lance-bass-twins-inherited-his-christmas-decorating-passion-definitely-in-the-genes?teaserSource=databricks"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUHEV0ZYN3-Ko9qdIZndoDmlfW24jM8SFyXafv6Tqoz6s1ABIR-u71PMJZdxI",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/17/celebrity-news/lance-bass-shares-the-sweet-holiday-traditions-he-shares-with-his-children/",
-          "title": "Exclusive | Lance Bass shares the sweet holiday traditions he shares with his children",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUHEV0ZYN3-Ko9qdIZndoDmlfW24jM8SFyXafv6Tqoz6s1ABIR-u71PMJZdxI"
-        },
-        {
-          "url": "https://www.usmagazine.com/celebrity-moms/news/lance-bass-reveals-what-kids-think-of-nsync-christmas-album/",
-          "title": "Lance Bass Reveals What His 5-Year-Old Twins Really Think of ‘NSync’s Christmas Album",
-          "publisher": "Us Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAXy8DYzmNGXIYysK9jqvo0hBoPpwzX-SxU2O4EvV4AXc5AyZimyhUbIj4PZg"
-        },
-        {
-          "url": "https://katu.com/news/entertainment/lance-bass-twins-inherited-his-christmas-decorating-passion-definitely-in-the-genes?teaserSource=databricks",
-          "title": "Lance Bass' twins inherited his Christmas decorating passion: 'Definitely in the genes'",
-          "publisher": "KATU",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW1XDDuzHejSo0Pti-VESEQwvx3BbI3T9vqkBhD3tcP_HNvVYqyhC5SqyS_ZM"
-        }
-      ]
-    },
-    {
-      "query": "wendi mclendon-covey",
+      "query": "unh stock",
       "approx_searches": "200+",
-      "published_at": "2026-11-18T14:30:00Z",
+      "published_at": "2026-11-18T15:10:00Z",
       "related_news_urls": [
-        "https://www.tampabay.com/life-culture/arts/tv/2026/11/17/kelly-ripa-mark-consuelos-clearwater-beach/",
-        "https://people.com/mark-consuelos-honors-late-dad-after-visit-to-florida-childhood-home-exclusive-12261552",
-        "https://www.fox13news.com/news/live-kelly-mark-morning-tapings-draw-crowds-clearwater-beach"
+        "https://finance.yahoo.com/healthcare/articles/safe-health-care-etf-just-164729571.html",
+        "https://www.zacks.com/commentary/3031459/unitedhealth-unh-vs-humana-hum-buy-the-dip",
+        "https://www.benzinga.com/trading-ideas/movers/26/11/63348762/unitedhealth-stock-drops-4-whats-going-on"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIg4bGQwuGVFIuXrvu0ss_hFYf0Z0Vuqlb3XNEZ2srZ-e6D_XyBvhwm5MRS7o",
-      "image_credit": "Tampa Bay Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOOkw5IuOibD75QPsPAv2WERGiD3-iOg-wTLfsAUrDiBVfrlDdwYwoTOTx3Wc",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.tampabay.com/life-culture/arts/tv/2026/11/17/kelly-ripa-mark-consuelos-clearwater-beach/",
-          "title": "Scenes from ‘Live with Kelly and Mark’ taping on Clearwater Beach",
-          "publisher": "Tampa Bay Times",
+          "url": "https://finance.yahoo.com/healthcare/articles/safe-health-care-etf-just-164729571.html",
+          "title": "Your “Safe” Health Care ETF Just Got Hit by UnitedHealth Again",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIg4bGQwuGVFIuXrvu0ss_hFYf0Z0Vuqlb3XNEZ2srZ-e6D_XyBvhwm5MRS7o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOOkw5IuOibD75QPsPAv2WERGiD3-iOg-wTLfsAUrDiBVfrlDdwYwoTOTx3Wc"
         },
         {
-          "url": "https://people.com/mark-consuelos-honors-late-dad-after-visit-to-florida-childhood-home-exclusive-12261552",
-          "title": "Mark Consuelos Honors Late Dad After Visit to Florida Childhood Home (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.zacks.com/commentary/3031459/unitedhealth-unh-vs-humana-hum-buy-the-dip",
+          "title": "UnitedHealth (UNH) vs. Humana (HUM): Buy the Dip?",
+          "publisher": "Zacks Investment Research",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUdQo7DIwn3VfMb65M9NkmAd9ZW8q4Nk5-CGvY5RDW09RV7fS74qVjO82fcLE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbQoY_BdkcM_7XWo0lUXmqcc5phnOPwqsWruUgg6EoSgDgPrZk7mLoXLYZxWc"
         },
         {
-          "url": "https://www.fox13news.com/news/live-kelly-mark-morning-tapings-draw-crowds-clearwater-beach",
-          "title": "Live with Kelly and Mark: Morning tapings draw crowds to Clearwater Beach",
-          "publisher": "FOX 13 Tampa Bay",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63348762/unitedhealth-stock-drops-4-whats-going-on",
+          "title": "UnitedHealth Stock Drops 4%: What’s Going On?",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeiZFLuxx3XZkcEWfmPYOadlv0J_KbEI_0iItYZLiKKBXqmOaJeRcDxoiXF58"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDC-XZyw1kFwifObwuZTGpdcN_7_PYjxzmdOpKi1eOqG4wcmq6moat4bj-08A"
         }
       ]
     },
     {
-      "query": "turkey",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T14:10:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/energy/iraq-resumes-crude-oil-pumping-export-purposes-via-pipeline-turkey-oil-minister-2026-11-17/",
-        "https://www.arabnews.com/middle-east/iraq-resumes-oil-exports-through-turkish-pipeline-after-12-year-break-3012601",
-        "https://www.thearabweekly.com/iraq-exports-oil-overland-syrian-route-revival-after-hormuz-disruption"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqsbBAMqeKVn1Z9SBl1meUy4ariZA1EHBwjWcUqFBtDFPPFs7sfOagEdx2n3s",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/energy/iraq-resumes-crude-oil-pumping-export-purposes-via-pipeline-turkey-oil-minister-2026-11-17/",
-          "title": "Iraq resumes crude oil pumping for export purposes via pipeline to Turkey, oil minister says",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqsbBAMqeKVn1Z9SBl1meUy4ariZA1EHBwjWcUqFBtDFPPFs7sfOagEdx2n3s"
-        },
-        {
-          "url": "https://www.arabnews.com/middle-east/iraq-resumes-oil-exports-through-turkish-pipeline-after-12-year-break-3012601",
-          "title": "Iraq resumes oil exports through Turkish pipeline after 12-year break",
-          "publisher": "Arab News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Og3LLMyzm-nejdkWfXNoQybDNA1uS-CCErXLuJwSuRSrsYAdYx7jGhH4NTE"
-        },
-        {
-          "url": "https://www.thearabweekly.com/iraq-exports-oil-overland-syrian-route-revival-after-hormuz-disruption",
-          "title": "Iraq exports oil in overland Syrian route revival after Hormuz disruption",
-          "publisher": "The Arab Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhQkh-qbGYmLPPbRbvwBcZgnEtWc-AK8_K4cTCnzyA4LjR3CdbORAHkSAerb4"
-        }
-      ]
-    },
-    {
-      "query": "northern lights forecast",
+      "query": "greg brockman",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T13:50:00Z",
+      "published_at": "2026-11-18T15:00:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/jamiecartereurope/2026/11/17/northern-lights-forecast-12-states-may-see-aurora-this-tuesday-night/",
-        "https://watchers.news/2026/11/17/g1-geomagnetic-storm-watch-kp-4-67-november-17-18-2026/",
-        "https://starlust.org/aurora-alert-coronal-hole-cme-combination-could-trigger-northern-light-visibility-in-u-s-this-week/"
+        "https://www.theinformation.com/articles/brockman-pushes-openai-toward-cybersecurity-and-showdown-ai-safety",
+        "https://www.wsj.com/tech/cybersecurity/openai-partners-with-nato-on-cyber-defenses-ea4df258",
+        "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZxGacR5VucN5WlvXO7nwfbblqvs4jTLK6dq3OxEy5tDPvk9M0sCkQDpdg3Cc",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW1tNDHS_kZ-TigGIuFKmGMw0i_ki3tQ1yssTByRt2L7wG0pQGqVB9_mWVYL8",
+      "image_credit": "The Information",
       "news": [
         {
-          "url": "https://www.forbes.com/sites/jamiecartereurope/2026/11/17/northern-lights-forecast-12-states-may-see-aurora-this-tuesday-night/",
-          "title": "Northern Lights Forecast: 12 States May See Aurora This Tuesday Night",
-          "publisher": "Forbes",
+          "url": "https://www.theinformation.com/articles/brockman-pushes-openai-toward-cybersecurity-and-showdown-ai-safety",
+          "title": "To Strengthen OpenAI, Brockman Goes ‘Full Management Mode’",
+          "publisher": "The Information",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZxGacR5VucN5WlvXO7nwfbblqvs4jTLK6dq3OxEy5tDPvk9M0sCkQDpdg3Cc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW1tNDHS_kZ-TigGIuFKmGMw0i_ki3tQ1yssTByRt2L7wG0pQGqVB9_mWVYL8"
         },
         {
-          "url": "https://watchers.news/2026/11/17/g1-geomagnetic-storm-watch-kp-4-67-november-17-18-2026/",
-          "title": "G1 geomagnetic storm watch remains in effect as NOAA forecasts Kp 4.67 late on November 17 and early on November 18",
-          "publisher": "The Watchers - Watching the world evolve and transform",
+          "url": "https://www.wsj.com/tech/cybersecurity/openai-partners-with-nato-on-cyber-defenses-ea4df258",
+          "title": "OpenAI Partners With NATO On Cyber Defenses",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsnnJu-lRqpj2jUGWZdvqER_kHsVdKjYxjhOeG0Z969b49T4Pubin0hk80Vq4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXdMSj9cMTdO0i93VvfMeaXuuuGUD1CD0sxd7JIXDYvwuAbSrSBOjI4Bhc4n4"
         },
         {
-          "url": "https://starlust.org/aurora-alert-coronal-hole-cme-combination-could-trigger-northern-light-visibility-in-u-s-this-week/",
-          "title": "Aurora alert: Coronal hole-CME combination could trigger northern light visibility in U.S. this week",
-          "publisher": "Starlust.org",
+          "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/",
+          "title": "Strengthening NATO and allied cyber defenses with AI",
+          "publisher": "OpenAI",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZFHC5ggGVoq584nYeM2Qlgv4cf3AFRejdDZDyvO3mGoEwGBpWRG-hyLI6Zvk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL-Fa9AHce-GeivtMWNxbpfGExwOh8rMwg7xEEnLPfKs-tsLG1vd2I7chfgBA"
         }
       ]
     },
     {
-      "query": "daniil medvedev",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T13:50:00Z",
+      "query": "nitto atp finals",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T15:00:00Z",
       "related_news_urls": [
         "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
         "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live",
@@ -202,10 +167,10 @@
         },
         {
           "url": "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live",
-          "title": "Carlos Alcaraz v Daniil Medvedev: ATP Finals tennis group stage – live",
+          "title": "Carlos Alcaraz beats Daniil Medvedev in ATP Finals tennis group stage – as it happened",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRnr5RgofcaL6yn7dxXcUtj6k_HUYQdEzO4KwlG2H5a7MUtKNR3zZaKsu0as8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQkpSY0qD_ROAd5DI4D6jeuT3KgPCHgnE7yAI4PCxvDYcFhY8u5CYRBQhAkJA"
         },
         {
           "url": "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november",
@@ -217,142 +182,177 @@
       ]
     },
     {
-      "query": "carlos alcaraz",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T13:30:00Z",
-      "related_news_urls": [
-        "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-daniil-medvedev/2026/11/18/04_0414_20261118_6-directo.html",
-        "https://www.elmundo.es/deportes/tenis/2026/11/18/6afdb525e4d4d800778b4584.html",
-        "https://www.laopiniondemurcia.es/deportes/2026/11/18/carlos-alcaraz-medvedev-finales-atp-136526612.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxLuD-SxUAnx5ogqaBxFJ6NQLYJAYmoesO--G3ERpcNhN9AmqO6vnKaVk8p-U",
-      "image_credit": "MARCA",
-      "news": [
-        {
-          "url": "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-daniil-medvedev/2026/11/18/04_0414_20261118_6-directo.html",
-          "title": "Carlos Alcaraz - Daniil Medvedev en directo | Última hora de las ATP Finals, en vivo",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxLuD-SxUAnx5ogqaBxFJ6NQLYJAYmoesO--G3ERpcNhN9AmqO6vnKaVk8p-U"
-        },
-        {
-          "url": "https://www.elmundo.es/deportes/tenis/2026/11/18/6afdb525e4d4d800778b4584.html",
-          "title": "Alcaraz maravilla de nuevo ante Medvedev y asusta con un tirón",
-          "publisher": "El Mundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXjNn9Cd-EfgYXTlaBAcQ0HtRBu24OUgIr9et7JiHOILDYotWAOPMYosRqCY"
-        },
-        {
-          "url": "https://www.laopiniondemurcia.es/deportes/2026/11/18/carlos-alcaraz-medvedev-finales-atp-136526612.html",
-          "title": "Carlos Alcaraz-Medvedev, en las Finales ATP: cuándo se juega, a qué hora y dónde verlo",
-          "publisher": "La Opinión de Murcia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXcgnvE2qKn5GtW1VHHp_YZOpGrja7lzg2HFl8wv9npEoxHbNUnArs-06vMO4"
-        }
-      ]
-    },
-    {
-      "query": "emma grede",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T13:30:00Z",
-      "related_news_urls": [
-        "https://www.jesus.cam.ac.uk/articles/careers-luxury-and-art-building-brand",
-        "https://wwd.com/footwear-news/shoe-trends/amina-muaddi-emma-grede-podcast-shoe-brand-1239421323/",
-        "https://www.businesstoday.in/jobs/story/bt-big-story-behind-the-glamour-how-to-build-a-career-in-luxury-566569-2026-11-10"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLLYk8v3xS_bpbucBSmjS6QmdOKJXb8WEe4GCr3V0i5-4Zpv--3VkCKUGHL2M",
-      "image_credit": "Jesus College, Cambridge",
-      "news": [
-        {
-          "url": "https://www.jesus.cam.ac.uk/articles/careers-luxury-and-art-building-brand",
-          "title": "Careers in luxury and the art of building a brand",
-          "publisher": "Jesus College, Cambridge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLLYk8v3xS_bpbucBSmjS6QmdOKJXb8WEe4GCr3V0i5-4Zpv--3VkCKUGHL2M"
-        },
-        {
-          "url": "https://wwd.com/footwear-news/shoe-trends/amina-muaddi-emma-grede-podcast-shoe-brand-1239421323/",
-          "title": "Amina Muaddi Talks to Emma Grede About Her Label, Being Her Own Boss",
-          "publisher": "WWD",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYfPHp4Gaj8hulkw6iDz1Zs_Pwk8DDE-qeC3vJnLQTaTZ7GHKwJPEJw0A56I"
-        },
-        {
-          "url": "https://www.businesstoday.in/jobs/story/bt-big-story-behind-the-glamour-how-to-build-a-career-in-luxury-566569-2026-11-10",
-          "title": "BT BIG STORY | Behind the glamour: How to build a career in luxury",
-          "publisher": "Business Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxrd4iTFbWnBxrG4FAiBeqACnRDYDMcm3oP5r7ueVT4W-9oOwtzDVKQ2zXoSM"
-        }
-      ]
-    },
-    {
-      "query": "take two interactive stock",
+      "query": "morgan wallen presale",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T13:20:00Z",
+      "published_at": "2026-11-18T14:50:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/iainmartin/2026/11/18/the-big-score-grand-theft-auto-vi-could-be-a-huge-pay-day-for-rockstars-founders/",
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-18-2026/card/rave-reviews-for-grand-theft-auto-vi-lift-take-two-interactive-stock-b5IsI1rP0uIKg2UXA4Tr",
-        "https://finance.yahoo.com/markets/stocks/articles/why-did-two-stock-fall-144048564.html"
+        "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
+        "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
+        "https://attstadium.com/events/morgan-wallen-aug-13-2027/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_oHavbTECLlyZVVIlpDT5YsY5fwH4G1paSYEYvKIevv4JXODJjTsknt0IXk",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmXeLbwrthD3Ou0-4VCDpGZ8LXliY-U5pItDdGrqeOZb5semVdRnKAYW77SA8",
+      "image_credit": "Nissan Stadium",
       "news": [
         {
-          "url": "https://www.forbes.com/sites/iainmartin/2026/11/18/the-big-score-grand-theft-auto-vi-could-be-a-huge-pay-day-for-rockstars-founders/",
-          "title": "How Much Grand Theft Auto VI Will Make For Rockstar’s Founders",
-          "publisher": "Forbes",
+          "url": "https://nissanstadium.com/event/morgan-wallen-friday-aug-27-2027/",
+          "title": "Morgan Wallen",
+          "publisher": "Nissan Stadium",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_oHavbTECLlyZVVIlpDT5YsY5fwH4G1paSYEYvKIevv4JXODJjTsknt0IXk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmXeLbwrthD3Ou0-4VCDpGZ8LXliY-U5pItDdGrqeOZb5semVdRnKAYW77SA8"
         },
         {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-18-2026/card/rave-reviews-for-grand-theft-auto-vi-lift-take-two-interactive-stock-b5IsI1rP0uIKg2UXA4Tr",
-          "title": "Rave Reviews for Grand Theft Auto VI’ Lift Take-Two Interactive Stock",
-          "publisher": "WSJ",
+          "url": "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
+          "title": "Morgan Wallen’s Last Time I Checked Tour is coming to Buffalo on July 23 and 24, 2027",
+          "publisher": "Buffalo Bills",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4q96k3lX_p4bcbjUkazN-5HNi4_AOzeSHCWZ3gFQkEofbc0Y1xth_er_E4k0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4G44OXFDuyuyc6Bvp7I1V4As-bR18QVIB6ElnjSGEMawiFSx3khrBrAgLC-I"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-did-two-stock-fall-144048564.html",
-          "title": "Why Did Take-Two Stock Fall 6% Before GTA VI?",
-          "publisher": "Yahoo Finance",
+          "url": "https://attstadium.com/events/morgan-wallen-aug-13-2027/",
+          "title": "Morgan Wallen: Last Time I Checked Tour 2027",
+          "publisher": "attstadium.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoZnrN71jEXGJdL4AxKEBoNdCctksD-tp-YDyjwUjFmpHSXBO4w3D9GUSDI0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJIVuYkxS-Jwor6aGFnVzEbqbOrd0392w8qOle2Ed2rHarVvvYfW-z1OGQnS8"
         }
       ]
     },
     {
-      "query": "anthropic ipo",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-18T13:00:00Z",
+      "query": "jason derulo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T14:50:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/article/bill-gurley-says-giving-away-ai-is-googles-no-1-move-against-anthropic-133314859.html",
-        "https://www.cnbc.com/2026/11/18/anthropic-ipo-stock-ai.html",
-        "https://www.bloomberg.com/news/articles/2026-11-18/anthropic-approaches-final-ipo-hurdle-after-tech-stocks-churn"
+        "https://thepeninsulaqatar.com/article/17/11/2026/jason-derulo-to-headline-sunday-night-at-formula-1-qatar-airways-qatar-grand-prix-2026",
+        "https://tbreak.com/jason-derulo-qatar-grand-prix-lusail-live/",
+        "https://speedwaydigest.com/index.php/news/racing-news/895461-jason-derulo-to-headline-entertainment-lineup-at-qatar-grand-prix-weekend/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLwrXnUgFeBmcuujHHWEgcmwOolxHLFzw-zOlINBoVrWB4rR2Jcsnz8LbAlYY",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpdKi_aIYQSv5uZoMwPzvc_0GYmsHaV-p1FTwkcEGsi9lA9azy4JrBRaqeoz8",
+      "image_credit": "The Peninsula Qatar",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/article/bill-gurley-says-giving-away-ai-is-googles-no-1-move-against-anthropic-133314859.html",
-          "title": "Bill Gurley says giving away AI is Google's 'No. 1' move against Anthropic",
-          "publisher": "Yahoo Finance",
+          "url": "https://thepeninsulaqatar.com/article/17/11/2026/jason-derulo-to-headline-sunday-night-at-formula-1-qatar-airways-qatar-grand-prix-2026",
+          "title": "Jason Derulo to headline Sunday night at Formula 1 Qatar Airways Qatar Grand Prix 2026",
+          "publisher": "The Peninsula Qatar",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLwrXnUgFeBmcuujHHWEgcmwOolxHLFzw-zOlINBoVrWB4rR2Jcsnz8LbAlYY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpdKi_aIYQSv5uZoMwPzvc_0GYmsHaV-p1FTwkcEGsi9lA9azy4JrBRaqeoz8"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-stock-ai.html",
-          "title": "How to get Anthropic stock — without buying the IPO",
-          "publisher": "CNBC",
+          "url": "https://tbreak.com/jason-derulo-qatar-grand-prix-lusail-live/",
+          "title": "Jason Derulo to headline Qatar Grand Prix Sunday",
+          "publisher": "Tbreak UAE",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeWnlQBliBNoLU4g27JT6mZhhfHZYvYo9FcTMYfzmuFZj9S_UgrJx6lderYFM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQliYjHtHUOCkQ9H9lqQQlzqp15yohZCB16brhxUIZgSdByNG8ZSe_f2o3E24c"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-18/anthropic-approaches-final-ipo-hurdle-after-tech-stocks-churn",
-          "title": "Anthropic Approaches Final IPO Hurdle After Tech Stocks Churn",
-          "publisher": "Bloomberg.com",
+          "url": "https://speedwaydigest.com/index.php/news/racing-news/895461-jason-derulo-to-headline-entertainment-lineup-at-qatar-grand-prix-weekend/",
+          "title": "Jason Derulo to Headline Entertainment Lineup at Qatar Grand Prix Weekend",
+          "publisher": "Speedway Digest",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLooB_lC04ZBLypKbr8YvKiQHXO3og8_JG3V8dPm2lpB2FM3FIy_1XD801KUs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3q1shknQMUl_5umg-zEYkSZL53ymu2t1v1m0IwPIo4vWPsjSTmkNcJjWI6l4"
+        }
+      ]
+    },
+    {
+      "query": "schuyler white",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T14:50:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
+        "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/",
+        "https://bloody-disgusting.com/movie/3975590/jason-voorhees-returning-to-theaters-with-13th-feature-film-directed-by-steve-miner/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
+          "title": "New ‘Friday The 13th’ Movie Unveils Cast, Title & Release Date",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0"
+        },
+        {
+          "url": "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/",
+          "title": "Producer Robbie Barsamian Talks New ‘Friday the 13th’ Entry and Getting Jason Back on the Big Screen | Exclusive",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPecFtUC48kmyQBJNg-GQa6dunaBWsG-6Rf2ED-2XI7M3IYpyit1lI8H2fH6M"
+        },
+        {
+          "url": "https://bloody-disgusting.com/movie/3975590/jason-voorhees-returning-to-theaters-with-13th-feature-film-directed-by-steve-miner/",
+          "title": "Jason Voorhees Returning to Theaters With 13th Feature Film Directed by Steve Miner",
+          "publisher": "Bloody Disgusting",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYr4MkluY27gxZfTmBwcMJRfsgsHoYV7kA0JQkkWIJX-iJh7-xLe0VwNyRLGo"
+        }
+      ]
+    },
+    {
+      "query": "mike pettine",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T14:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys",
+        "https://www.nytimes.com/athletic/7791975/2026/11/18/christian-parker-dallas-cowboys-dc-play-calling/",
+        "https://www.dallascowboys.com/news/jerry-jones-cowboys-talking-about-adjustment-to-christian-parker-s-role"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuei03ZhiCg75AJupOYy08ySGiSeFpMIb4SZ4FuP0dHNPUrjKcrgscMiy_V78",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys",
+          "title": "Sources: Mike Pettine to take over defensive playcalling from Parker for Cowboys",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuei03ZhiCg75AJupOYy08ySGiSeFpMIb4SZ4FuP0dHNPUrjKcrgscMiy_V78"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7791975/2026/11/18/christian-parker-dallas-cowboys-dc-play-calling/",
+          "title": "Christian Parker, Cowboys’ defensive coordinator, stripped of play-calling duties: Sources",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1V-xjtl323zoeFwErt1rrFWvpyyhqMqQpEwR8zK81Stitvt-M3RnJ6lQQ_OM"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/jerry-jones-cowboys-talking-about-adjustment-to-christian-parker-s-role",
+          "title": "Jerry Jones: Cowboys 'talking about' adjustment to Christian Parker's role",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK109PbkRRxt8MXGY16SJ4GV5zdamKh0sGmpzpQ6mcTcBbtYGyOjlW0b333Fw"
+        }
+      ]
+    },
+    {
+      "query": "maine rooster statue lawsuit",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T14:40:00Z",
+      "related_news_urls": [
+        "https://www.newscentermaine.com/article/news/local/ogunquit-family-sues-town-over-rooster-statues-citing-first-amendment-rights-maine/97-c3a4cee9-eff4-4616-9d8c-4fba25afaaf8",
+        "https://www.seacoastonline.com/story/news/local/york-star/2026/11/17/omelette-factory-owners-roosters-lawsuit-ogunquit-maine/92816385007/",
+        "https://ij.org/press-release/maine-family-sues-town-after-officials-declare-that-autistic-daughters-lawn-decorations-are-illegal-advertising-signs/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZsIbRvra_bbe7d4YTtLUmg_a2Bw-ESuuquqeZAxdx51azDCVIsVf0cGV9rdg",
+      "image_credit": "newscentermaine.com",
+      "news": [
+        {
+          "url": "https://www.newscentermaine.com/article/news/local/ogunquit-family-sues-town-over-rooster-statues-citing-first-amendment-rights-maine/97-c3a4cee9-eff4-4616-9d8c-4fba25afaaf8",
+          "title": "Ogunquit family sues town over rooster statues, citing First Amendment rights",
+          "publisher": "newscentermaine.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZsIbRvra_bbe7d4YTtLUmg_a2Bw-ESuuquqeZAxdx51azDCVIsVf0cGV9rdg"
+        },
+        {
+          "url": "https://www.seacoastonline.com/story/news/local/york-star/2026/11/17/omelette-factory-owners-roosters-lawsuit-ogunquit-maine/92816385007/",
+          "title": "Omelette Factory owners file federal lawsuit against Ogunquit over roosters",
+          "publisher": "Seacoastonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjRH-7MTizehW0ql06TydEeivwdnUv8V7FiR8qRoEXJzTMOBZGeNqjTvFiLy4"
+        },
+        {
+          "url": "https://ij.org/press-release/maine-family-sues-town-after-officials-declare-that-autistic-daughters-lawn-decorations-are-illegal-advertising-signs/",
+          "title": "Maine Family Sues Town After Officials Declare That Autistic Daughter’s Lawn Decorations Are Illegal “Advertising Signs”",
+          "publisher": "The Institute for Justice",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxmx08nIpfvHmSN1-skKp6oK76pLzz44PRM3eFghZ6j4gIVYqABGPf46qRZ3M"
         }
       ]
     }
