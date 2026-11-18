@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T08:31:31.489121Z",
+  "checked_at": "2026-11-18T09:01:28.052304Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "glastonbury",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T08:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/crwy4w381nlpo",
+        "https://www.theguardian.com/music/2026/nov/18/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century",
+        "https://www.rollingstone.com/music/music-news/harry-styles-billie-eilish-cher-glastonbury-lineup-2027-1235660230/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgDxGwHzS8JZ8zbFf1Qnz3YiRokhffHUeD-UZcX-KjBuQK4OUNaYjvvwh0Z4c",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/crwy4w381nlpo",
+          "title": "Harry Styles, Sam Fender and Billie Eilish to headline Glastonbury 2027",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgDxGwHzS8JZ8zbFf1Qnz3YiRokhffHUeD-UZcX-KjBuQK4OUNaYjvvwh0Z4c"
+        },
+        {
+          "url": "https://www.theguardian.com/music/2026/nov/18/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century",
+          "title": "Sam Fender, Harry Styles and Billie Eilish to be youngest Glastonbury headliners of 21st century",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_GWPzqhN9ipl6CcFnI5Zp-fxygwkhbLyRoAElLb4WAI-fVExHTSQD1EcwvxQ"
+        },
+        {
+          "url": "https://www.rollingstone.com/music/music-news/harry-styles-billie-eilish-cher-glastonbury-lineup-2027-1235660230/",
+          "title": "Harry Styles, Billie Eilish, Cher to Headline Glastonbury 2027",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1T0mekM1uMouTC8rf_4iYF9DHmS7UjpG0of4-Tsk6bm5P9y7eEJnvge8I33E"
+        }
+      ]
+    },
+    {
+      "query": "john madden",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T08:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/article/madden-is-a-comedy-disguised-as-a-biopic-the-jokes-on-us-171247702.html",
+        "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/",
+        "https://www.forbes.com/sites/timlammers/2026/11/17/madden-rotten-tomatoes-reviews-sack-nicolas-cages-john-madden-biopic/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhVV9m8My1-dKZH40HGmIZ-idc7gaXwuOnVqe8WKtOg_-M66LBm9PicWZkP_0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/article/madden-is-a-comedy-disguised-as-a-biopic-the-jokes-on-us-171247702.html",
+          "title": "'Madden' is a comedy disguised as a biopic. The joke's on us",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhVV9m8My1-dKZH40HGmIZ-idc7gaXwuOnVqe8WKtOg_-M66LBm9PicWZkP_0"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/",
+          "title": "'Madden' Review: Nicolas Cage and Christian Bale in Football Biopic",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrcWfjrKpYCgQnUzWnEILQ5gYBrdD5Pm52ZkYWSY-hyMzX1ASDpYmu3uSA2jI"
+        },
+        {
+          "url": "https://www.forbes.com/sites/timlammers/2026/11/17/madden-rotten-tomatoes-reviews-sack-nicolas-cages-john-madden-biopic/",
+          "title": "‘Madden’ Rotten Tomatoes Critics Sack Nicolas Cage’s John Madden Biopic",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaRo-Suhz2uWVfL-wraJgBiNbhKdDzfzeAeA25Nt_wgT1jafq_GpXzyhKtgQU"
+        }
+      ]
+    },
+    {
+      "query": "bangladesh vs south africa",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T08:30:00Z",
+      "related_news_urls": [
+        "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
+        "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/ball-by-ball-commentary",
+        "https://www.newsbytesapp.com/news/sports/dane-paterson-shines-on-test-comeback/story"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdSFWqVg6Bqs2dzxRniFHDL_zltcxE7Kju2ZJg9ZuIwmSsv42BepiusNoQP0",
+      "image_credit": "Cricbuzz",
+      "news": [
+        {
+          "url": "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
+          "title": "RSA vs BAN, 1st Test, Bangladesh tour of South Africa, 2026 - Live Stream",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdSFWqVg6Bqs2dzxRniFHDL_zltcxE7Kju2ZJg9ZuIwmSsv42BepiusNoQP0"
+        },
+        {
+          "url": "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - SA vs BAN, 1st Test",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyfFrQpuRMUUEOAzDcjCVOpNDJLpMpxd7Jl71Wx_Ds73SjIF2eGtIm33ch-uE"
+        },
+        {
+          "url": "https://www.newsbytesapp.com/news/sports/dane-paterson-shines-on-test-comeback/story",
+          "title": "SA's Dane Paterson celebrates Test comeback with four-wicket haul: Stats",
+          "publisher": "NewsBytes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHQQfw7loGCgiIdgrVb8lRCTtOLk2vzZd5pjVU-1FWSjAaRakRGhuyjdjsJ-M"
+        }
+      ]
+    },
+    {
+      "query": "david montgomery",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T08:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/texans-estimate-david-montgomery-as-a-full-participant-but-woody-marks-doesnt-practice",
+        "https://sports.yahoo.com/articles/texans-david-montgomery-gives-encouraging-003121054.html",
+        "https://www.fantasypros.com/nfl/news/620779/david-montgomery-groin-trending-right-direction.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS88c98jyPsC3vETYRMkDEfjXNkP90BOxnhOLFjM-snHMuJfFRkuCM9trckCxw",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/texans-estimate-david-montgomery-as-a-full-participant-but-woody-marks-doesnt-practice",
+          "title": "Texans estimate David Montgomery as a full participant, but Woody Marks doesn’t practice",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS88c98jyPsC3vETYRMkDEfjXNkP90BOxnhOLFjM-snHMuJfFRkuCM9trckCxw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/texans-david-montgomery-gives-encouraging-003121054.html",
+          "title": "Texans’ David Montgomery gives encouraging injury update for Colts game on TNF",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2sXdFq4GQmLgiNUsku_nV_aF91qOS7MM_uUnkCt33oH5H__782B8hNnEdkrM"
+        },
+        {
+          "url": "https://www.fantasypros.com/nfl/news/620779/david-montgomery-groin-trending-right-direction.php",
+          "title": "David Montgomery (groin) trending in right direction",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBIufvG-COPJhesRm7MAP6MZWeSeD2pK8ieoDLkYDt4OyAGKLOOvDotML2zVA"
+        }
+      ]
+    },
+    {
+      "query": "chris evans",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T08:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/articles/chris-evans-offer-clears-answer-213533534.html",
+        "https://www.imdb.com/news/ni66115940/?ref_=int_nwr_1",
+        "https://www.comingsoon.net/movies/news/2225639-avengers-doomsday-chris-evans-steve-rogers-changed-endgame"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-YgA5gdEb2PWgxZjupX7bSwOqugXQrcVQtjj32Tqs9F710e9XThfijelWb90",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/chris-evans-offer-clears-answer-213533534.html",
+          "title": "Chris Evans Offer Clears Answer to if He’s Playing Captain America in Avengers: Doomsday",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-YgA5gdEb2PWgxZjupX7bSwOqugXQrcVQtjj32Tqs9F710e9XThfijelWb90"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66115940/?ref_=int_nwr_1",
+          "title": "Avengers: Doomsday Star Chris Evans On The Steve Rogers Pitches He Rejected And His Doctor Doom Rematch",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDVZbUtykmc4gR63vG-TK9I9rTGnJB7KFOiOpPoWj8LmelbS_7IWfEym37kCA"
+        },
+        {
+          "url": "https://www.comingsoon.net/movies/news/2225639-avengers-doomsday-chris-evans-steve-rogers-changed-endgame",
+          "title": "Avengers: Doomsday’s Chris Evans Reveals How Steve Rogers Has Changed Since Endgame",
+          "publisher": "ComingSoon.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAlbeKnpx37WlpbBWQ551VLjeWFE-b3XckUlaHXZVT6HZ-O6V5zE4qGCBIntw"
+        }
+      ]
+    },
     {
       "query": "new zealand breakers",
       "approx_searches": "200+",
@@ -48,7 +223,7 @@
       "related_news_urls": [
         "https://www.theguardian.com/film/2026/nov/17/the-hunger-games-sunrise-on-the-reaping-review-surreally-awful-prequel-to-the-katniss-everdeen-era",
         "https://editorial.rottentomatoes.com/article/the-hunger-games-sunrise-on-the-reaping-first-reviews/",
-        "https://variety.com/2026/film/news/jennifer-lawrence-hunger-games-sunrise-on-the-reaping-premiere-1236949116/"
+        "https://www.nytimes.com/2026/11/17/movies/the-hunger-games-sunrise-on-the-reaping-review.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkVjGYwcIl5kYAfimN8ITtqvYWcyZrXPzol27Xh7EgHCWplso4j3YyYrXdg3g",
       "image_credit": "The Guardian",
@@ -68,11 +243,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsMvecUHzK32_Vfot4kE3oky0Ii3C_iH2Tkuso8F0tcPboQX6H0Qqyrq-FED4"
         },
         {
-          "url": "https://variety.com/2026/film/news/jennifer-lawrence-hunger-games-sunrise-on-the-reaping-premiere-1236949116/",
-          "title": "Jennifer Lawrence Stuns as 'Hunger Games Sunrise on the Reaping' Premiere",
-          "publisher": "Variety",
+          "url": "https://www.nytimes.com/2026/11/17/movies/the-hunger-games-sunrise-on-the-reaping-review.html",
+          "title": "‘The Hunger Games: Sunrise on the Reaping’ Review: Another Tribute",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_2GxcIVo1kDJuChkwkPx21mzHOmuUGwqQDXFq9ogaEczNQh-BxcbcgQROt0c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd2n6UTK7-56SXyngxv0N3jeu7JLCANu0DK5oR8KqJLJCjqm70MOK7lyotOv0"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "80 Level",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpJI-8EPyADmuIGvcr7nGAt7PCb0dI5ACF8wULIqsb9YJeaBGPiQh5lFf_kN0"
-        }
-      ]
-    },
-    {
-      "query": "google play store",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T07:40:00Z",
-      "related_news_urls": [
-        "https://blog.google/products-and-platforms/platforms/google-play/best-of-play-awards-2026/",
-        "https://www.pocketgamer.biz/google-plays-best-of-play-2026-winners/",
-        "https://www.invenglobal.com/articles/28751/cookierun-crumble-wins-best-casual-game-in-8-overseas-regions"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrcmKeNqTIqjyXCDPAI02tWbWgFZbqlukxMmZ6nli1syAjwgMqJSjqFwddu8",
-      "image_credit": "blog.google",
-      "news": [
-        {
-          "url": "https://blog.google/products-and-platforms/platforms/google-play/best-of-play-awards-2026/",
-          "title": "Google Play unveils the best apps, games, and books of 2026",
-          "publisher": "blog.google",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrcmKeNqTIqjyXCDPAI02tWbWgFZbqlukxMmZ6nli1syAjwgMqJSjqFwddu8"
-        },
-        {
-          "url": "https://www.pocketgamer.biz/google-plays-best-of-play-2026-winners/",
-          "title": "Google Play’s Best of Play 2026 winners: Arknights: Endfield, Subway Surfers City, Sea of Stars and more",
-          "publisher": "PocketGamer.biz",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6ozzKWhm_IOtyChen3xmrw5Xxrf7QNK5e1gAQIa2zVQV8VLbK_jUEiL5ZPxI"
-        },
-        {
-          "url": "https://www.invenglobal.com/articles/28751/cookierun-crumble-wins-best-casual-game-in-8-overseas-regions",
-          "title": "CookieRun: Crumble Wins Best Casual Game in 8 Overseas Regions",
-          "publisher": "Inven Global",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhtCwvweRpGmSCXjCFaf22u4n5iZNZ48xN2SpUdkVj3-k5ws_tpwl2NIX328U"
-        }
-      ]
-    },
-    {
-      "query": "nba standings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T07:20:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/los-angeles-lakers-hot-start-glory-days",
-        "https://sports.yahoo.com/articles/nba-fans-blast-espn-analyst-051722421.html",
-        "https://www.cbssports.com/nba/news/nba-power-rankings-lakers-luka-doncic-nov-11/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-UeOrcHMYcD5stO3LX8t8rJR5IOYz_rxu3osvSvue1ckNcISLYKefCRq1L5Y",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/los-angeles-lakers-hot-start-glory-days",
-          "title": "Lakers' hot start reminiscent of past glory days",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-UeOrcHMYcD5stO3LX8t8rJR5IOYz_rxu3osvSvue1ckNcISLYKefCRq1L5Y"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/nba-fans-blast-espn-analyst-051722421.html",
-          "title": "NBA fans blast ESPN analyst’s claims that LA Lakers’ 12-2 start is due to ‘easiest’ schedule",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbwUiVWj59rai2wnG4Licr_mvBit6WBjstUzzfpJaE9srw6dDSY9Svuv5tD0k"
-        },
-        {
-          "url": "https://www.cbssports.com/nba/news/nba-power-rankings-lakers-luka-doncic-nov-11/",
-          "title": "NBA Power Rankings: Lakers thriving behind two-way Luka Dončić, plus a new team at No. 1",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfGzZdahT_37A_ppmrQa-tHDvXw8qGAqzjTq_L61j3JcgIi761wd3q2WX7q90"
-        }
-      ]
-    },
-    {
-      "query": "cox",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T07:20:00Z",
-      "related_news_urls": [
-        "https://people.com/courteney-cox-ina-garten-denim-shirt-quince-november-2026-12259235",
-        "https://www.theguardian.com/environment/2026/nov/17/country-diary-autumns-great-colour-display-is-a-matter-of-life-and-death",
-        "https://www.therepublic.com/2026/11/18/susan-cox-turning-leaves-turning-pages/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRau6ayqj8W-FHSxXAM4a0NrtDDN4RqEa_k4IQKWjZKQxDgmzF1ISShezvu76Q",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/courteney-cox-ina-garten-denim-shirt-quince-november-2026-12259235",
-          "title": "Courteney Cox, 62, Co-Signed the Fall Layer That Ina Garten, 78, Keeps Wearing — Shop Similar Pieces",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRau6ayqj8W-FHSxXAM4a0NrtDDN4RqEa_k4IQKWjZKQxDgmzF1ISShezvu76Q"
-        },
-        {
-          "url": "https://www.theguardian.com/environment/2026/nov/17/country-diary-autumns-great-colour-display-is-a-matter-of-life-and-death",
-          "title": "Country diary: Autumn’s great colour display is a matter of life and death | Mark Cocker",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSljzZ4og9OdKV2vqGT_FFc2f45NGIXwA6GbMoV3gdUS-P5lFpUDIwNYtso5ZA"
-        },
-        {
-          "url": "https://www.therepublic.com/2026/11/18/susan-cox-turning-leaves-turning-pages/",
-          "title": "Susan Cox: Turning leaves, turning pages",
-          "publisher": "The Republic News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvDt9gDvNFuR8n2XQnYsknhSgAlDKdd6oEgLboCBMmiJCUnxIzB8le5gTwP1M"
-        }
-      ]
-    },
-    {
-      "query": "fuel",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T07:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/live/cw808v7d1gkmt",
-        "https://www.theguardian.com/business/2026/nov/18/uk-inflation-rises-energy-prices-iran-war-oil",
-        "https://www.bloomberg.com/news/articles/2026-11-18/uk-inflation-hits-highest-in-year-on-soaring-fuel-energy-costs"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4K5UbW4CKKAKpwewDfADJORkRVhVTEe_nQ42Za0BqQCfaIiB396ATsCWlF8c",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/live/cw808v7d1gkmt",
-          "title": "Latest UK inflation figure about to be released, with rate expected to rise",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4K5UbW4CKKAKpwewDfADJORkRVhVTEe_nQ42Za0BqQCfaIiB396ATsCWlF8c"
-        },
-        {
-          "url": "https://www.theguardian.com/business/2026/nov/18/uk-inflation-rises-energy-prices-iran-war-oil",
-          "title": "UK inflation rises to 3.6% as energy prices increase",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKbYjudDRUah-HQm7Hzp81tkKknK23r24_aQus1RKYHwIKEWoQ-FK7W1tjd3k"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-18/uk-inflation-hits-highest-in-year-on-soaring-fuel-energy-costs",
-          "title": "UK Inflation Hits Highest in Year on Soaring Fuel, Energy Costs",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4ScCqMj3kuGoxbMI---lfM9PxAF4VW-xKwzTg9q3sEjzwSIDvpU9f5-3zA5I"
-        }
-      ]
-    },
-    {
-      "query": "gas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T07:10:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/energy/china-gas-doubles-volume-20-yr-lng-deal-with-venture-global-2026-11-18/",
-        "https://www.oilandgasmiddleeast.com/news/china-gas-lng-venture-global",
-        "https://lngprime.com/americas/china-gas-buys-more-lng-from-venture-global/200142/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgPih91RDPWrqW6b2u23TirCV1RsUbZZm-lUEG_IHR0kA27-AzaG7Ez9sL9pk",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/energy/china-gas-doubles-volume-20-yr-lng-deal-with-venture-global-2026-11-18/",
-          "title": "China Gas doubles volume in 20-yr LNG deal with Venture Global",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgPih91RDPWrqW6b2u23TirCV1RsUbZZm-lUEG_IHR0kA27-AzaG7Ez9sL9pk"
-        },
-        {
-          "url": "https://www.oilandgasmiddleeast.com/news/china-gas-lng-venture-global",
-          "title": "Venture Global doubles China Gas LNG deal to 1 mtpa for 20 years from 2030",
-          "publisher": "Oil & Gas Middle East",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgXlHPAJe2gEBuva1nnoeS6boeR_KxBQinqeMhudWcJ09TpQqf-PluOdtEOh4"
-        },
-        {
-          "url": "https://lngprime.com/americas/china-gas-buys-more-lng-from-venture-global/200142/",
-          "title": "China Gas buys more LNG from Venture Global",
-          "publisher": "LNG Prime",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpIVq2RCGquDT_1vcs-_LIhu2UA8lR8eI3alIxKcCHNZA21-W9G96Ujoipm90"
         }
       ]
     }
