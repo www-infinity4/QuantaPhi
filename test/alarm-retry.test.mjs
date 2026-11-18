@@ -64,3 +64,9 @@ test('unverified commit evidence pauses replay instead of writing the same patch
  assert.equal(eligibleForRetry({...job('working'),progress:{commitSha:'a'.repeat(40)}},{now:t}).reason,'commit_verification_required');
  assert.equal(eligibleForRetry(job(),{now:t,prior:{commitSha:'a'.repeat(40),status:'claimed',leaseUntil:0}}).eligible,false);
 });
+test('durable Pink verification prevents replay until the dependency is projected to D1',()=>{
+ const pink=eligibleForRetry(job('working'),{now:t,prior:{status:'source_verified',leaseUntil:0}});
+ assert.equal(pink.eligible,false);
+ assert.equal(eligibleForRetry(job(),{now:t,deps:[{status:'source_verified'}]}).reason,'dependency_pending');
+ assert.equal(eligibleForRetry(job(),{now:t,deps:[{status:'complete'}]}).eligible,true);
+});

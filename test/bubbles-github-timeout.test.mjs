@@ -10,8 +10,9 @@ const end=worker.indexOf(' async fetch(request){',start);
 test('direct GitHub creates one durable receipt and responds before a slow operation finishes',async()=>{
  assert.ok(start>=0&&end>start,'Durable Object GitHub methods exist');
  const methods=worker.slice(start,end);
+ const locks=worker.slice(worker.indexOf('const repositoryLockKey='),worker.indexOf('async function updateRunnerLease'));
  const factory=new Function('validateRepository','githubEnvironment','githubOperation','directGithubAgent',
-  'return class Harness {'+methods+'}');
+  locks+'return class Harness {'+methods+'}');
  let finish,executions=0;
  const gate=new Promise(resolve=>{finish=resolve;});
  const Harness=factory(value=>{assert.equal(value,'www-infinity4/QuantaPhi');return value;},
@@ -19,7 +20,10 @@ test('direct GitHub creates one durable receipt and responds before a slow opera
  const data=new Map(),waited=[];
  const app=new Harness();
  app.env={};
- app.ctx={storage:{get:async k=>data.get(k),put:async(k,v)=>{data.set(k,v);},delete:async k=>data.delete(k)},
+ const storage={get:async k=>data.get(k),put:async(k,v)=>{data.set(k,v);},delete:async k=>data.delete(k),
+  list:async({prefix})=>new Map([...data].filter(([key])=>key.startsWith(prefix))),
+  transaction:async callback=>callback(storage)};
+ app.ctx={storage,
   blockConcurrencyWhile:async fn=>fn(),waitUntil:promise=>waited.push(promise)};
  app.emit=async()=>{};
  const requestId='ad99f94b-75bd-4557-aaee-793a18004c3b';
@@ -38,7 +42,7 @@ test('direct GitHub creates one durable receipt and responds before a slow opera
  assert.equal(receipt.receipts.length,1);
  assert.ok(receipt.finishedAt);
  assert.equal(executions,1);
- assert.equal(data.has('repository-lease:www-infinity4/QuantaPhi'),false);
+ assert.equal(data.has('repository-lease:www-infinity4/quantaphi'),false);
 });
 
 test('the website preserves and polls the original request ID; no false merge or deployment claim',()=>{

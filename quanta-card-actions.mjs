@@ -1,6 +1,6 @@
 import {cardProvider,quickCardManifest} from './quanta-card-provider.mjs?v=20261031-heritage-signin1';
 import {mountXComposer} from './quanta-x-composer.mjs';
-import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
+import {FEED_STORAGE_KEY,cleanFeedState,commitFollowing} from './quanta-feed-rank.mjs';
 import {mountTinyFishCardReader} from './tinyfish-card-reader.mjs';
 import {openQuickCardPreview,safeLocalCardUrl,safePreviewImage} from './quick-card-preview.mjs';
 import {currentSpotlightCreative,spotlightCardDestination} from './card-spotlight-creative.mjs';
@@ -48,16 +48,17 @@ export function mountCardActions(host,card,options={}){
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const b=(label,fn,action)=>{const n=element('button','qca-button',label);n.type='button';if(action)n.dataset.action=action;n.addEventListener('click',fn);controls.append(n);return n};
  const key='quick-card|'+id,followId=id.slice(0,70);
- const followed=()=>cleanFeedState(read(FEED_STORAGE_KEY,{})).following.includes(followId);
- const follow=b(followed()?'✓ Following':'+ Follow',()=>{
-  const state=cleanFeedState(read(FEED_STORAGE_KEY,{}));
-  const next=toggleFollowing(state,followId);
-  if(!write(FEED_STORAGE_KEY,next))return notify(status,'Could not save Follow on this device.');
-  const yes=next.following.includes(followId);
-  follow.textContent=yes?'✓ Following':'+ Follow';follow.setAttribute('aria-pressed',String(yes));
-  notify(status,yes?'Following saved on this device.':'Unfollowed on this device.');
-  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'card-actions',id:followId}}));
- },'follow');follow.setAttribute('aria-pressed',String(followed()));
+ if(options.showFollow!==false){
+  const followed=()=>cleanFeedState(read(FEED_STORAGE_KEY,{})).following.includes(followId);
+  const follow=b(followed()?'✓ Following':'+ Follow',()=>{
+   const saved=commitFollowing(localStorage,followId);
+   if(!saved.ok)return notify(status,'Could not save or confirm Follow on this device.');
+   const yes=saved.followed;
+   follow.textContent=yes?'✓ Following':'+ Follow';follow.setAttribute('aria-pressed',String(yes));
+   notify(status,yes?'Following saved on this device.':'Unfollowed on this device.');
+   window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'card-actions',id:followId}}));
+  },'follow');follow.setAttribute('aria-pressed',String(followed()));
+ }
  const starred=()=>Boolean(read(STORE_STARS,{})[id]);
  const star=b(starred()?'★ Starred':'☆ Star',()=>{
   const next={...read(STORE_STARS,{})};

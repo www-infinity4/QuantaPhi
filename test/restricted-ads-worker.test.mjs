@@ -4,7 +4,10 @@ import worker, {verifyVerdict,allowCreative,allowJurisdiction} from '../workers/
 
 const now=Date.parse('2026-11-01T12:00:00Z');
 const verdict={authenticated:true,subject:'user-123',verified_over_21:true,proof_kind:'third_party_verified',expires_at:'2026-11-02T12:00:00Z',jurisdiction:'US-CO'};
-const creative={id:'approved-creative',category:'cannabis',approved:1,rights_cleared:1,license_id:'TEST-ONLY',
+const creative={id:'approved-creative',category:'cannabis',approved:1,rights_cleared:1,
+ rights_expires_at:'2026-11-30T23:59:59Z',campaign_starts_at:'2026-10-25T00:00:00Z',
+ campaign_ends_at:'2026-11-15T23:59:59Z',sponsor_agreement_id:'FIXTURE-NOT-A-REAL-AD-CONTRACT',
+ license_id:'TEST-ONLY',
  advertiser:'Sample reviewed advertiser',publisher_domain:'publisher.example.com',
  title:'Reviewed advertiser notice',description:'Publisher information',
  image:'https://publisher.example.com/approved.jpg',url:'https://publisher.example.com/info',
@@ -29,12 +32,24 @@ test('jurisdiction approval must be explicit and current',()=>{
 test('creative delivery requires rights, current review, matching jurisdiction, and license',()=>{
  assert.ok(allowCreative(creative,'US-CO',now));
  for(const invalid of [{...creative,approved:0},{...creative,rights_cleared:0},
+  {...creative,rights_expires_at:''},{...creative,rights_expires_at:'2026-10-15T00:00:00Z'},
+  {...creative,campaign_starts_at:''},{...creative,campaign_ends_at:''},
+  {...creative,campaign_starts_at:'2026-11-10T00:00:00Z'},
+  {...creative,campaign_ends_at:'2026-10-31T00:00:00Z'},
+  {...creative,sponsor_agreement_id:''},
   {...creative,license_id:''},{...creative,approved_jurisdictions:'["US-CA"]'},
   {...creative,reviewed_at:'2025-01-01T00:00:00Z'},
   {...creative,image:'http://publisher.example.com/ad.jpg'},
   {...creative,url:'https://other.example.com/info'}]){
   assert.equal(allowCreative(invalid,'US-CO',now),null);
  }
+});
+test('restricted creative output never restores raw unreviewed markup in its card identifier',()=>{
+ const row={...creative,id:'approved-creative<script></script>'};
+ const result=allowCreative(row,'US-CO',now);
+ assert.ok(result,'valid sanitized creative may be selected after all gates pass');
+ assert.equal(result.id,'approved-creative',
+  'Worker output must preserve the sanitized identifier from eligibleCreative');
 });
 const request=(method,path,origin='https://quantaphi.org')=>new Request(origin+path,{
  method,headers:method==='POST'?{'Origin':origin,'Content-Type':'application/json','Cookie':'session=private'}:{'Cookie':'session=private'},
@@ -70,6 +85,9 @@ test('consent persists, but creative stays blocked until jurisdiction approved; 
    throw Error('Unexpected read '+sql);
   },
   async all(){if(sql.includes('FROM restricted_ad_creatives'))return {results:[{...creative,
+   rights_expires_at:new Date(Date.now()+30*86400000).toISOString(),
+   campaign_starts_at:new Date(Date.now()-86400000).toISOString(),
+   campaign_ends_at:new Date(Date.now()+8*86400000).toISOString(),
    reviewed_at:new Date(Date.now()-86400000).toISOString()}]};throw Error('Unexpected listing')}
  }}}}};
  const valid={...verdict,expires_at:new Date(Date.now()+86400000).toISOString()};

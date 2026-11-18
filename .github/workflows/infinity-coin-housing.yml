@@ -1,0 +1,24 @@
+name: Infinity coin housing engineering preview
+on:
+  pull_request:
+    paths:
+      - 'infinity-coin-housing-core.mjs'
+      - 'infinity-coin-housing.html'
+      - 'docs/INFINITY-ALUMINUM-COIN-HOUSING-1919.md'
+      - 'test/infinity-coin-housing.test.cjs'
+      - '.github/workflows/infinity-coin-housing.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check infinity-coin-housing-core.mjs
+      - run: node --test test/infinity-coin-housing.test.cjs

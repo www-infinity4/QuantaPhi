@@ -11,9 +11,9 @@ export function summarizeGate(payload){
   const live=verifiedAccounts.find(account=>account?.provider===id&&
    account.status==='connected'&&Number.isFinite(account.expiresAt)&&
    account.expiresAt>Date.now()+30000);
+  // Fresh wallet-verified /accounts evidence overrides stale /gate/status configuration.
+  // Account sign-in never implies permissionsApproved or full runner readiness.
   const configured=record?.configured===true||!!live;
-  // A verified /accounts record survives a stale gate response. Neither a
-  // stale gate nor a callback URL can prove identity without wallet proof.
   const connected=summary.walletVerified&&configured&&(record?.connected===true||!!live);
   const approved=connected&&record?.permissionsApproved===true;
   // Request every capability registered for this application. A missing project
