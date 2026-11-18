@@ -7,6 +7,8 @@ on:
       - 'sitemap.xml'
       - 'test/newsroom.test.mjs'
       - 'test/newsroom-freshness.test.mjs'
+      - 'test/newsroom-edge-origin.test.cjs'
+      - 'workers/quantaphi-site/worker.js'
       - 'test/newsroom-daily.test.mjs'
       - 'scripts/newsroom-draft.mjs'
       - '.github/workflows/newsroom-drafts.yml'
@@ -19,6 +21,8 @@ on:
       - 'sitemap.xml'
       - 'test/newsroom.test.mjs'
       - 'test/newsroom-freshness.test.mjs'
+      - 'test/newsroom-edge-origin.test.cjs'
+      - 'workers/quantaphi-site/worker.js'
       - 'test/newsroom-daily.test.mjs'
       - 'scripts/newsroom-draft.mjs'
       - '.github/workflows/newsroom-drafts.yml'
@@ -41,4 +45,4 @@ jobs:
           node --check newsroom/fresh-reports.mjs
           node --check scripts/newsroom-draft.mjs
       - name: Original article, discovery, news freshness and existing privacy tests
-        run: node --test test/newsroom-daily.test.mjs test/newsroom-freshness.test.mjs test/newsroom.test.mjs test/privacy-policy.test.mjs test/audience-audit.test.mjs
+        run: node --test test/newsroom-daily.test.mjs test/newsroom-freshness.test.mjs test/newsroom-edge-origin.test.cjs test/newsroom.test.mjs test/privacy-policy.test.mjs test/audience-audit.test.mjs
