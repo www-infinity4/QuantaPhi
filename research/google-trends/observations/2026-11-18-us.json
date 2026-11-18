@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T07:31:07.181251Z",
+  "checked_at": "2026-11-18T08:01:43.028368Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "nba standings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T07:20:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/news/los-angeles-lakers-hot-start-glory-days",
+        "https://sports.yahoo.com/articles/nba-fans-blast-espn-analyst-051722421.html",
+        "https://www.cbssports.com/nba/news/nba-power-rankings-lakers-luka-doncic-nov-11/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-UeOrcHMYcD5stO3LX8t8rJR5IOYz_rxu3osvSvue1ckNcISLYKefCRq1L5Y",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/news/los-angeles-lakers-hot-start-glory-days",
+          "title": "Lakers' hot start reminiscent of past glory days",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-UeOrcHMYcD5stO3LX8t8rJR5IOYz_rxu3osvSvue1ckNcISLYKefCRq1L5Y"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nba-fans-blast-espn-analyst-051722421.html",
+          "title": "NBA fans blast ESPN analyst’s claims that LA Lakers’ 12-2 start is due to ‘easiest’ schedule",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbwUiVWj59rai2wnG4Licr_mvBit6WBjstUzzfpJaE9srw6dDSY9Svuv5tD0k"
+        },
+        {
+          "url": "https://www.cbssports.com/nba/news/nba-power-rankings-lakers-luka-doncic-nov-11/",
+          "title": "NBA Power Rankings: Lakers thriving behind two-way Luka Dončić, plus a new team at No. 1",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS164v4IgmLaqXPANNxmEUkSgJrtBJBbXfGcDRZd7CcuhD9Rh9vhbd1mGvsACU"
+        }
+      ]
+    },
+    {
+      "query": "cox",
+      "approx_searches": "100+",
+      "published_at": "2026-11-18T07:20:00Z",
+      "related_news_urls": [
+        "https://people.com/courteney-cox-ina-garten-denim-shirt-quince-november-2026-12259235",
+        "https://www.theguardian.com/environment/2026/nov/17/country-diary-autumns-great-colour-display-is-a-matter-of-life-and-death",
+        "https://www.therepublic.com/2026/11/18/susan-cox-turning-leaves-turning-pages/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRau6ayqj8W-FHSxXAM4a0NrtDDN4RqEa_k4IQKWjZKQxDgmzF1ISShezvu76Q",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/courteney-cox-ina-garten-denim-shirt-quince-november-2026-12259235",
+          "title": "Courteney Cox, 62, Co-Signed the Fall Layer That Ina Garten, 78, Keeps Wearing — Shop Similar Pieces",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRau6ayqj8W-FHSxXAM4a0NrtDDN4RqEa_k4IQKWjZKQxDgmzF1ISShezvu76Q"
+        },
+        {
+          "url": "https://www.theguardian.com/environment/2026/nov/17/country-diary-autumns-great-colour-display-is-a-matter-of-life-and-death",
+          "title": "Country diary: Autumn’s great colour display is a matter of life and death | Mark Cocker",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSljzZ4og9OdKV2vqGT_FFc2f45NGIXwA6GbMoV3gdUS-P5lFpUDIwNYtso5ZA"
+        },
+        {
+          "url": "https://www.therepublic.com/2026/11/18/susan-cox-turning-leaves-turning-pages/",
+          "title": "Susan Cox: Turning leaves, turning pages",
+          "publisher": "The Republic News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvDt9gDvNFuR8n2XQnYsknhSgAlDKdd6oEgLboCBMmiJCUnxIzB8le5gTwP1M"
+        }
+      ]
+    },
+    {
+      "query": "fuel",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T07:10:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/business/2026/nov/18/uk-inflation-rises-energy-prices-iran-war-oil",
+        "https://www.bloomberg.com/news/articles/2026-11-18/uk-inflation-hits-highest-in-year-on-soaring-fuel-energy-costs",
+        "https://www.wsj.com/economy/central-banking/u-k-inflation-rises-as-energy-costs-keep-pressure-on-bank-of-england-68f3edbb"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKbYjudDRUah-HQm7Hzp81tkKknK23r24_aQus1RKYHwIKEWoQ-FK7W1tjd3k",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/business/2026/nov/18/uk-inflation-rises-energy-prices-iran-war-oil",
+          "title": "UK inflation rises to 3.6% as energy prices increase",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKbYjudDRUah-HQm7Hzp81tkKknK23r24_aQus1RKYHwIKEWoQ-FK7W1tjd3k"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-18/uk-inflation-hits-highest-in-year-on-soaring-fuel-energy-costs",
+          "title": "UK Inflation Hits Highest in Year on Soaring Fuel, Energy Costs",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4ScCqMj3kuGoxbMI---lfM9PxAF4VW-xKwzTg9q3sEjzwSIDvpU9f5-3zA5I"
+        },
+        {
+          "url": "https://www.wsj.com/economy/central-banking/u-k-inflation-rises-as-energy-costs-keep-pressure-on-bank-of-england-68f3edbb",
+          "title": "U.K. Inflation Rises as Energy Costs Keep Pressure on Bank of England",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsVsCQjle9DBQi4WvmZIoRWPjmEZ5YwHAJ-lx22Si1NsQuCyaQ12iveSSPHj8"
+        }
+      ]
+    },
     {
       "query": "gas",
       "approx_searches": "500+",
       "published_at": "2026-11-18T07:10:00Z",
       "related_news_urls": [
-        "https://ktla.com/news/local-news/massive-geyser-of-rotting-trash-prompts-emergency-health-order-in-l-a-county/",
-        "https://abc7.com/post/crews-respond-chemical-release-chiquita-canyon-landfill-castaic/20046298/",
-        "https://www.foxla.com/news/chiquita-canyon-landfill-geyser-eruption-sends-up-black-smoke-prompts-air-quality-advisory"
+        "https://www.abc10.com/article/news/local/stockton/shelter-in-place-issued-for-stockton-area-after-reported-gas-leak/103-8aa0f23f-1dab-40b5-bb72-0fc290b35a4b",
+        "https://www.yahoo.com/news/videos/shelter-place-issued-near-highway-020516601.html",
+        "https://www.kcra.com/article/stockton-gas-leak-shelter-in-place-order/74458985"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIlR95d_j0tzTG0FwQVtZEtrAVxtJEz_envfGn61fT-TNnpNfkxsJnRe9HC9k",
-      "image_credit": "KTLA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPFAdkLAKMYRYVtGoSAQm3mfGYmy-9TuVbfyQgYh5LjnvU3WXCx62pRQc4vo",
+      "image_credit": "ABC10",
       "news": [
         {
-          "url": "https://ktla.com/news/local-news/massive-geyser-of-rotting-trash-prompts-emergency-health-order-in-l-a-county/",
-          "title": "Massive geyser of rotting trash prompts emergency health order in L.A. County",
-          "publisher": "KTLA",
+          "url": "https://www.abc10.com/article/news/local/stockton/shelter-in-place-issued-for-stockton-area-after-reported-gas-leak/103-8aa0f23f-1dab-40b5-bb72-0fc290b35a4b",
+          "title": "Shelter-in-place lifted for Stockton area after reported gas leak",
+          "publisher": "ABC10",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIlR95d_j0tzTG0FwQVtZEtrAVxtJEz_envfGn61fT-TNnpNfkxsJnRe9HC9k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPFAdkLAKMYRYVtGoSAQm3mfGYmy-9TuVbfyQgYh5LjnvU3WXCx62pRQc4vo"
         },
         {
-          "url": "https://abc7.com/post/crews-respond-chemical-release-chiquita-canyon-landfill-castaic/20046298/",
-          "title": "Landfill geyser erupts at Chiquita Canyon in Castaic, prompts evacuation advisory",
-          "publisher": "ABC7 Los Angeles",
+          "url": "https://www.yahoo.com/news/videos/shelter-place-issued-near-highway-020516601.html",
+          "title": "Shelter-in-place issued near Highway 26 in San Joaquin County",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvcSe6LTEs97-TxyLISryQL6CdYEIB_8xGm6kxxspFIsHNMmMNGnw_-xq4RM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFsNBRVpnMuaJhQHInwFev6Ex7vYskfxvb0pJ69p2mfOev14qNdJHeIORxEKY"
         },
         {
-          "url": "https://www.foxla.com/news/chiquita-canyon-landfill-geyser-eruption-sends-up-black-smoke-prompts-air-quality-advisory",
-          "title": "Chiquita Canyon Landfill methane eruption prompts LA County probe, relocation aid",
-          "publisher": "FOX 11 Los Angeles",
+          "url": "https://www.kcra.com/article/stockton-gas-leak-shelter-in-place-order/74458985",
+          "title": "Shelter-in-place order lifted after reported gas leak in Stockton neighborhood",
+          "publisher": "KCRA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE4_RhorLaOzFM2a6PXI41oKOH649rvTZ1d-bqHDRvdRgWWU6EK5Th-z1cjhM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5dd_6-tSfL-uRPpYAEqnevVzhPKWogtemZgw-bGszEcFu7nHB2lT2QitDd90"
         }
       ]
     },
@@ -151,68 +256,33 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-18T07:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/matters-more-matisse-thybulle-lakers-014253647.html",
-        "https://www.usatoday.com/story/sports/nba/rumors/2026/11/17/matisse-thybulle-on-lakers-streak-wins-right-now-are-great-but-wins-in-the-postseason-are-better/92832130007/",
-        "https://fadeawayworld.net/nba/los-angeles-lakers/matisse-thybulle-reflects-on-lakers-8-game-win-streak-and-what-it-means-for-their-title-chances"
+        "https://sports.yahoo.com/articles/lakers-matisse-thybulle-accomplishes-historic-222028894.html",
+        "https://lakeshowlife.com/los-angeles-lakers-must-stick-matisse-thybulle-plan-after-seeing-fit",
+        "https://www.hitc.com/thats-how-he-gets-all-his-steals-jake-laravia-hails-underrated-la-lakers-teammate-making-an-impact/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ73hRLbbeTHQtAfaQOcXnp9oLnKA1kf-KEgJ0o0wKmXpiQVV6IgOmw9rSmSKI",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCHfVXRDVRuupV6ybyKLt1B6RsgK9aoEJA-Ybp0mEO2wCW5qto-8rZ6prOZSQ",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/matters-more-matisse-thybulle-lakers-014253647.html",
-          "title": "What matters more to Matisse Thybulle than Lakers’ 8-game win streak",
+          "url": "https://sports.yahoo.com/articles/lakers-matisse-thybulle-accomplishes-historic-222028894.html",
+          "title": "Lakers' Matisse Thybulle Accomplishes Historic Feat Not Seen in 30 Years",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ73hRLbbeTHQtAfaQOcXnp9oLnKA1kf-KEgJ0o0wKmXpiQVV6IgOmw9rSmSKI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCHfVXRDVRuupV6ybyKLt1B6RsgK9aoEJA-Ybp0mEO2wCW5qto-8rZ6prOZSQ"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/nba/rumors/2026/11/17/matisse-thybulle-on-lakers-streak-wins-right-now-are-great-but-wins-in-the-postseason-are-better/92832130007/",
-          "title": "Matisse Thybulle on Lakers' streak: 'Wins right now are great, but wins in the postseason are better'",
-          "publisher": "USA Today",
+          "url": "https://lakeshowlife.com/los-angeles-lakers-must-stick-matisse-thybulle-plan-after-seeing-fit",
+          "title": "Lakers must stick to Matisse Thybulle plan after seeing his fit",
+          "publisher": "Lake Show Life",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR6Ps7sZ34S2YRLC_o20xzucVgIwY_GkfE3PvqlA-1K_pjyAYPDmhTJHwWjDo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqiSzvrAYpWmvxUojivauVYS0jec10FmJ3QA6snWyOD3xjtT4HB-4ZXRi4eNM"
         },
         {
-          "url": "https://fadeawayworld.net/nba/los-angeles-lakers/matisse-thybulle-reflects-on-lakers-8-game-win-streak-and-what-it-means-for-their-title-chances",
-          "title": "Matisse Thybulle Reflects On Lakers' 8-Game Win Streak And What It Means For Their Title Chances",
-          "publisher": "Fadeaway World",
+          "url": "https://www.hitc.com/thats-how-he-gets-all-his-steals-jake-laravia-hails-underrated-la-lakers-teammate-making-an-impact/",
+          "title": "‘That’s how he gets all his steals’ – Jake LaRavia hails underrated LA Lakers teammate making an impact",
+          "publisher": "HITC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxw1YiYgTxpPUS5pqVk2GgHE1BpJLRGA2eK-Ivq4eu58IRl1KblC1BWEryehw"
-        }
-      ]
-    },
-    {
-      "query": "grimes nba",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T07:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/fantasy/basketball/story/_/id/50511865/fantasy-basketball-tips-nba-betting-picks-today",
-        "https://www.fanduel.com/research/nba-picks-today-predictions-best-bets-tuesday-nov-17",
-        "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-scottie-barnes-luka-doncic-jazz-vs-clippers"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgWJLdmrBhK7qA2uC61qnE91mLTjnF1BYtCCF4DVshs9Y0x7k4Su6JOpZ3bQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50511865/fantasy-basketball-tips-nba-betting-picks-today",
-          "title": "Fantasy basketball adds and NBA bets: Ride with Doncic and Grimes on Tuesday",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgWJLdmrBhK7qA2uC61qnE91mLTjnF1BYtCCF4DVshs9Y0x7k4Su6JOpZ3bQ"
-        },
-        {
-          "url": "https://www.fanduel.com/research/nba-picks-today-predictions-best-bets-tuesday-nov-17",
-          "title": "NBA Picks Today: 3 NBA Predictions and Best Bets for Tuesday, Nov. 17",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjFpo2DzDW8oZnDhsJozB6mP5n2_8Kz_oojqqLZmN4KGx_po3bNwQRqH0lsI0"
-        },
-        {
-          "url": "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-scottie-barnes-luka-doncic-jazz-vs-clippers",
-          "title": "Peter’s Points: NBA Best Bets Today (Predictions, Prop Bets for Scottie Barnes, Luka Doncic, Jazz vs. Clippers)",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTICuyx_QzP-i-GNLJcEx6aBWo1kZjgWjTGsc9_CitTOlVes5od58SN_qtNyE4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2QD9xHchJTJl3pwQH2FRhBcJqmLChm4cafRCiq4omt_5zD-81p2WKGhjIrVc"
         }
       ]
     },
@@ -222,8 +292,8 @@
       "published_at": "2026-11-18T07:00:00Z",
       "related_news_urls": [
         "https://www.silverscreenandroll.com/lakers-news/129070/lakers-news-adou-thiero",
-        "https://www.cbssports.com/fantasy/basketball/news/lakers-adou-thiero-back-from-knee-injury/",
-        "https://lakeshowlife.com/adou-thiero-defensive-flashes-keep-validating-lakers-commitment-development"
+        "https://lakeshowlife.com/adou-thiero-defensive-flashes-keep-validating-lakers-commitment-development",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/moussa-diabate-quad-good-to-go-thursday"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNycvXU9cS9WpnGjenj9UvlmLRUtVtzuRfbDHNF7irruzQG66O1y3M1SKiuAA",
       "image_credit": "Silver Screen and Roll",
@@ -236,123 +306,53 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNycvXU9cS9WpnGjenj9UvlmLRUtVtzuRfbDHNF7irruzQG66O1y3M1SKiuAA"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-adou-thiero-back-from-knee-injury/",
-          "title": "Lakers' Adou Thiero: Back from knee injury",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-wMNeq09NoAXB6xq35X-_BLYEX-suh0w3vzrmE-64DHe5K_1a9Yxispbfaks"
-        },
-        {
           "url": "https://lakeshowlife.com/adou-thiero-defensive-flashes-keep-validating-lakers-commitment-development",
           "title": "Adou Thiero's defensive flashes keep validating Lakers' commitment to his development",
           "publisher": "Lake Show Life",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlArqC85NWuH8Th-0TWhklrj-Pym5mj-XNRtkgWEWYZlx_bhbS15wrxCF248g"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/moussa-diabate-quad-good-to-go-thursday",
+          "title": "Moussa Diabaté (quad) good to go Thursday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrAPWYwgsIQnnyzV8SXnrGQoUKH0qJvZ-iAtq26kCiMiVZwhxSYoXVTxe0hx0"
         }
       ]
     },
     {
-      "query": "christian anderson jr.",
-      "approx_searches": "100+",
+      "query": "austin reaves injury",
+      "approx_searches": "500+",
       "published_at": "2026-11-18T07:00:00Z",
       "related_news_urls": [
-        "https://www.nba.com/hornets/news/thrust-into-nba-whirlwind-game-is-quickly-slowing-down-for-christian-anderson-jr",
-        "https://atthehive.com/charlotte-hornets-show-signs-of-life/",
-        "https://www.fantasypros.com/nba/news/620535/christian-anderson-jr-leads-bench-loss-to-clippers.php"
+        "https://www.espn.com/nba/story/_/id/50506501/lakers-rule-austin-reaves-walker-kessler-vs-hornets",
+        "https://sports.yahoo.com/articles/jj-redick-gives-major-injury-060837364.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/walker-kessler-leg-out-tuesday-vs-charlotte"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSDN5CpYBhe0btH6fO0gQRZs86qvLENEjRsdImmBMHAQE6-MhuQyA3Cf55RxE",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4jmtxkdNQLQIUSRdsKwgnKg_mV7vFUDR0aLSvJuYyu34FI4vBgIZbIpP0dE",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nba.com/hornets/news/thrust-into-nba-whirlwind-game-is-quickly-slowing-down-for-christian-anderson-jr",
-          "title": "Thrust Into NBA Whirlwind, Game Is Quickly Slowing Down For Christian Anderson Jr.",
-          "publisher": "NBA.com",
+          "url": "https://www.espn.com/nba/story/_/id/50506501/lakers-rule-austin-reaves-walker-kessler-vs-hornets",
+          "title": "Lakers rule Austin Reaves, Walker Kessler out vs. Hornets",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSDN5CpYBhe0btH6fO0gQRZs86qvLENEjRsdImmBMHAQE6-MhuQyA3Cf55RxE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4jmtxkdNQLQIUSRdsKwgnKg_mV7vFUDR0aLSvJuYyu34FI4vBgIZbIpP0dE"
         },
         {
-          "url": "https://atthehive.com/charlotte-hornets-show-signs-of-life/",
-          "title": "Hornets Show Signs of Life",
-          "publisher": "At The Hive",
+          "url": "https://sports.yahoo.com/articles/jj-redick-gives-major-injury-060837364.html",
+          "title": "JJ Redick Gives Major Injury Updates On Austin Reaves, Walker Kessler",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzi5iUaUSc4YMFQCp2DFr3tFKg2i1EVx4Rhhp_H5OEyfKEef16m5ahwjeXEvo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbn6jSVK-BRZkaFmxHtYOc85J7JfOHs5nc8zc_d9p3i16dYKP-FWWdyCf4U7E"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/620535/christian-anderson-jr-leads-bench-loss-to-clippers.php",
-          "title": "Christian Anderson Jr. leads bench in loss to Clippers",
-          "publisher": "FantasyPros",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/walker-kessler-leg-out-tuesday-vs-charlotte",
+          "title": "Walker Kessler (leg) out Tuesday vs. Charlotte",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaf83emM60ALSayeGOxU0AuDQJqwCilf8mr_vz-nXoLWuLTAPwhZ2mA0KoDCU"
-        }
-      ]
-    },
-    {
-      "query": "mega millions drawing november 17",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T06:50:00Z",
-      "related_news_urls": [
-        "https://www.wkyc.com/article/news/lottery/northeast-ohio-mega-millions-player-100k-prize-see-where-winning-ticket-was-sold-check-lucky-numbers-nov-13-ohio-lottery-results/95-98bbc9fd-8457-40c9-9b96-b90429f2679f",
-        "https://www.forbes.com/sites/siladityaray/2026/11/18/mega-millions-jackpot-rises-to-629-million-heres-what-the-winner-could-take-home/",
-        "https://www.yahoo.com/news/us/articles/mega-millions-numbers-lucky-winner-050350603.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I",
-      "image_credit": "WKYC",
-      "news": [
-        {
-          "url": "https://www.wkyc.com/article/news/lottery/northeast-ohio-mega-millions-player-100k-prize-see-where-winning-ticket-was-sold-check-lucky-numbers-nov-13-ohio-lottery-results/95-98bbc9fd-8457-40c9-9b96-b90429f2679f",
-          "title": "Northeast Ohio Mega Millions player hits $100K prize: See where the winning ticket was sold, check the lucky numbers for Nov. 13",
-          "publisher": "WKYC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I"
-        },
-        {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/18/mega-millions-jackpot-rises-to-629-million-heres-what-the-winner-could-take-home/",
-          "title": "Mega Millions Jackpot Rises To $629 Million—Here’s What The Winner Could Take Home",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvxuBeRhGv7c8vcnNzrUU4YyWJvcGiRqq7NH5nwJOD8VsFQBktUlhmtEQaIa8"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/mega-millions-numbers-lucky-winner-050350603.html",
-          "title": "Mega Millions numbers: Are you the lucky winner of Tuesday’s $600 million jackpot?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3pGGIwgHxOKThr1Sedk5E_9pOxT_d5qX8-xuZPCcbKOBhW8wPkFOYJy-8AdI"
-        }
-      ]
-    },
-    {
-      "query": "karely ruiz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T06:40:00Z",
-      "related_news_urls": [
-        "https://elmanana.com.mx/escena/2026/11/17/karely-ruiz-cachetea-a-paolita-suarez-en-la-mansion-vip-2-video-184570.html",
-        "https://superchannel12.com/espectaculos/bellakath-y-karely-ruiz-protagonizan-pelea-a-golpes-en-la-mansion-vip-710488",
-        "https://www.poresto.com/entretenimiento/television/2026/11/17/karely-ruiz-criticada-cachetear-paola-suarez-mansion-vip.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyHD8sqRn41yGmU3K6ZoMTJScQT2bW1TvT7EHGeQHptgJEpWE3_KrdYM1hxFU",
-      "image_credit": "El Mañana de Nuevo Laredo",
-      "news": [
-        {
-          "url": "https://elmanana.com.mx/escena/2026/11/17/karely-ruiz-cachetea-a-paolita-suarez-en-la-mansion-vip-2-video-184570.html",
-          "title": "Karely Ruiz cachetea a Paolita Suárez en La Mansión VIP 2 | VIDEO",
-          "publisher": "El Mañana de Nuevo Laredo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyHD8sqRn41yGmU3K6ZoMTJScQT2bW1TvT7EHGeQHptgJEpWE3_KrdYM1hxFU"
-        },
-        {
-          "url": "https://superchannel12.com/espectaculos/bellakath-y-karely-ruiz-protagonizan-pelea-a-golpes-en-la-mansion-vip-710488",
-          "title": "Bellakath y Karely Ruiz protagonizan pelea a golpes en La Mansión VIP",
-          "publisher": "Super Channel 12",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUsI4wpNqz61mpRxIwGa1QeFEKoIinQiMEm5G49BcR3-NPCFn7euv_4sWaD3E"
-        },
-        {
-          "url": "https://www.poresto.com/entretenimiento/television/2026/11/17/karely-ruiz-criticada-cachetear-paola-suarez-mansion-vip.html",
-          "title": "Karely Ruiz es criticada tras cachetear a Paola Suárez en ‘La Mansión VIP’",
-          "publisher": "Por Esto!",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk3RD2Z5KLvuJCWG91RHVoVPXNcpAdnMyuR1G5jpSEQkRmT45IGGbfp2ZpJDE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6EXJmpjUJOZowNg_ZNphVn_OolpNdH4HRwzCZp21xnuNAlw1KdgtsVy-Mq6s"
         }
       ]
     }
