@@ -2,25 +2,9 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-18T19:03:51.762577Z",
+  "checked_at": "2026-11-18T19:33:03.761210Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
-    {
-      "id": "Jmt9KUqotlo",
-      "title": "The Comeback King",
-      "video_id": "Jmt9KUqotlo",
-      "video_title": "The Comeback King Trailer #1 (2027)",
-      "kind": "trailer",
-      "publisher": "Rotten Tomatoes Trailers",
-      "published_at": "2026-11-18T16:36:13Z",
-      "source_url": "https://www.youtube.com/watch?v=Jmt9KUqotlo",
-      "poster": "https://i.ytimg.com/vi/Jmt9KUqotlo/hqdefault.jpg",
-      "google_trending": true,
-      "trend_query": "the comeback king",
-      "trend_checked_at": "2026-11-18T19:01:03.229143Z",
-      "trend_published_at": "2026-11-18T17:00:00Z",
-      "approx_searches": "1000+"
-    },
     {
       "id": "o9WWeKSbtAo",
       "title": "The Further Mis-Adventures of Cliff Booth",
@@ -63,6 +47,18 @@
       "published_at": "2026-11-18T18:13:50Z",
       "source_url": "https://www.youtube.com/watch?v=pGlzSdv95lI",
       "poster": "https://i.ytimg.com/vi/pGlzSdv95lI/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "Jmt9KUqotlo",
+      "title": "The Comeback King",
+      "video_id": "Jmt9KUqotlo",
+      "video_title": "The Comeback King Trailer #1 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-18T16:36:13Z",
+      "source_url": "https://www.youtube.com/watch?v=Jmt9KUqotlo",
+      "poster": "https://i.ytimg.com/vi/Jmt9KUqotlo/hqdefault.jpg",
       "google_trending": false
     },
     {
