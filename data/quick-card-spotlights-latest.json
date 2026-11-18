@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T13:18:30.218780Z",
+  "checked_at": "2026-11-18T14:19:03.734045Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -197,7 +197,7 @@
     },
     "burger-king-chicken-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://news.bk.com/",
@@ -205,7 +205,7 @@
           "title": "Burger King® Expands Its Iconic Original Chicken Sandwich Lineup with Two Bold New Flavors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Restaurants"
         },
         {
@@ -214,7 +214,7 @@
           "title": "Burger King® is Rebuilding and Modernizing More Restaurants, With Guests Helping Decide Which Ones Are Next",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Restaurants"
         },
         {
@@ -223,7 +223,7 @@
           "title": "Big Holiday Cheer Comes In Mini Packages With The Return Of The Burger King® Advent Calendar",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Restaurants"
         },
         {
@@ -232,7 +232,7 @@
           "title": "Hello Kitty® and Friends Are Coming to Burger King®",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Restaurants"
         },
         {
@@ -248,7 +248,7 @@
     },
     "kraft-mac-cheese": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://www.kraftheinz.com/kraft-mac-and-cheese",
@@ -256,7 +256,7 @@
           "title": "Site Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Food & recipes"
         },
         {
@@ -265,7 +265,7 @@
           "title": "An image displaying two Kraft Mac & Cheese products. On the left, against a solid blue background, the word \"products\" is written in large white text. To the right, on a split blue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Food & recipes"
         },
         {
@@ -274,7 +274,7 @@
           "title": "An image featuring two limited-edition Kraft Mac & Cheese boxes: a red \"Pizza Flavored\" box with pizza slice graphics and a green \"Jalapeño Flavored\" box with a jalapeño pepper gra",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Food & recipes"
         },
         {
@@ -283,7 +283,7 @@
           "title": "Kraft PowerMac and Original Mac & Cheese boxes next to a prepared bowl of macaroni on a blue and yellow background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Food & recipes"
         },
         {
@@ -292,7 +292,7 @@
           "title": "Kraft Heinz logo on a purple background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Food & recipes"
         },
         {
@@ -301,7 +301,7 @@
           "title": "Collage with packages from all the Kraft Heinz brands on a red background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Food & recipes"
         },
         {
@@ -310,7 +310,7 @@
           "title": "A plate of pasta and meat on a yellow background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Food & recipes"
         },
         {
@@ -319,54 +319,54 @@
           "title": "A slice of pumpkin cheesecake topped with whipped cream, served on a plate next to a gold fork.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T08:22:39.967621Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Food & recipes"
         }
       ]
     },
     "heritage": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "topps": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "beckett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "christies": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "shoplc-premium": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "kohls-coupons": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "honda-vehicles": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "oakley-meta": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "gmc-trucks": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T08:22:39.967621Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "gmc-sierra-2026": {
@@ -3370,12 +3370,12 @@
     },
     "durable-sony-professional-pro-audio": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "durable-sennheiser-studio-monitor-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://www.sennheiser.com/en-us",
@@ -3383,7 +3383,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "For over 75 years, our products come with a built-in mission: to stay true to the sound and soul the music was given by its artist.",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3392,7 +3392,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3401,7 +3401,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3410,7 +3410,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3419,7 +3419,7 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "Discover Sennheiser's microphones: Accentuate character, lend power to the voice, reach and touch the audience. Learn more now!",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3428,7 +3428,7 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3437,7 +3437,7 @@
           "title": "evolution",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3446,14 +3446,14 @@
           "title": "Wireless Systems: Top Audio Solutions | Sennheiser",
           "kind": "website",
           "description": "Unleash superior sound with Sennheiser wireless systems. Experience unmatched audio quality and reliability for professional-grade performance.",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-beyerdynamic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://north-america.beyerdynamic.com/",
@@ -3461,7 +3461,7 @@
           "title": "Pre-Black Friday Deals",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3470,7 +3470,7 @@
           "title": "DT 770 PRO studio headphones for control and monitoring purpose (closed) | beyerdynamic",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3479,7 +3479,7 @@
           "title": "beyerdynamic - DT 1770 PRO MK II",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3488,7 +3488,7 @@
           "title": "beyerdynamic - DT 1990 PRO MK II",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3497,7 +3497,7 @@
           "title": "DT 770 PRO, 250 Ohms",
           "kind": "product",
           "description": "Circumaural headphones for professional sound in the studio and on mobile devices Innovative bass reflex system High wearing comfort thanks to soft, circumaural and replaceable ear pads Comfortable fit due to rugged, adjustable, soft padded headband constructi",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "179.99",
@@ -3512,7 +3512,7 @@
           "title": "DT 770 PRO, 80 Ohms",
           "kind": "product",
           "description": "Circumaural headphones for professional sound in the studio and on mobile devices Innovative bass reflex system High wearing comfort thanks to soft, circumaural and replaceable ear pads Comfortable fit due to rugged, adjustable, soft padded headband constructi",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "179.99",
@@ -3527,7 +3527,7 @@
           "title": "DT 770 PRO, 32 Ohm",
           "kind": "product",
           "description": "Circumaural headphones for professional sound in the studio and on mobile devices Innovative bass reflex system High wearing comfort thanks to soft, circumaural and replaceable ear pads Comfortable fit due to rugged, adjustable, soft padded headband constructi",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "179.99",
@@ -3542,7 +3542,7 @@
           "title": "DT 1770 PRO MKII",
           "kind": "product",
           "description": "Premium circumaural studio headphones For a variety of devices thanks to the improved TESLA.45-driver (30 ohms) Incl. detachable cable (mini-XLR) and extensive scope of delivery Industry-leading workmanship “Made in Germany” Superb wearing comfort",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         }
@@ -3550,7 +3550,7 @@
     },
     "durable-audio-technica-studio-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://www.audio-technica.com/en-us/headphones",
@@ -3558,7 +3558,7 @@
           "title": "ATH-M50x studio headphones resting on an audio mixer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3567,7 +3567,7 @@
           "title": "corporate conference room",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3576,7 +3576,7 @@
           "title": "Turntable resting on cabinet with speakers and receiver",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3585,14 +3585,14 @@
           "title": "phono cartridge playing a record",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-genelec": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://www.genelec.com/studio-monitors",
@@ -3600,7 +3600,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3609,7 +3609,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3618,7 +3618,7 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3627,19 +3627,19 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-miele": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "durable-speed-queen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://speedqueen.com/",
@@ -3647,7 +3647,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3656,7 +3656,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3665,7 +3665,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3674,7 +3674,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3683,7 +3683,7 @@
           "title": "All Products - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3692,7 +3692,7 @@
           "title": "TR7 TR7006WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3701,7 +3701,7 @@
           "title": "TR7 TR7006BN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3710,14 +3710,14 @@
           "title": "TC5 TC5003WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-henry-numatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://numatic.com/",
@@ -3725,7 +3725,7 @@
           "title": "Home",
           "kind": "website",
           "description": "Numatic International the home of reliable, high performance, sustainable cleaning for all. UK’s No.1 in Professional Cleaning. Designed & Made in the UK. Committed to Sustainability.",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3734,7 +3734,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3743,7 +3743,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3752,7 +3752,7 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3761,7 +3761,7 @@
           "title": "WBV370NX Pro Cordless Wet Vacuum",
           "kind": "website",
           "description": "The WBV370NX Pro Cordless Wet Vacuum. Eliminate the risk of slips, trips and falls with no cable. Perfect for cleaning up spills in high traffic areas.",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3770,7 +3770,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3779,7 +3779,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3788,14 +3788,14 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-leica-camera-m-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://leica-camera.com/en-US/photography/cameras/m",
@@ -3803,7 +3803,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3812,7 +3812,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3821,7 +3821,7 @@
           "title": "Leica M11-P Hammertone",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3830,7 +3830,7 @@
           "title": "Leica M-A Hammertone",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3839,7 +3839,7 @@
           "title": "Leica Geovid Max 10x42 | Leica Camera US",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3848,7 +3848,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3857,7 +3857,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3866,14 +3866,14 @@
           "title": "Leica M11-P Hammertone",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-garmin-handheld-gps-mariner": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://www.garmin.com/en-US/",
@@ -3881,7 +3881,7 @@
           "title": "Garmin",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3890,7 +3890,7 @@
           "title": "Stack of wrapped holiday gift boxes in red, green, and pink patterns, arranged on a green surface with decorative sparkles around them.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3899,7 +3899,7 @@
           "title": "FĒNIX® 9",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3908,7 +3908,7 @@
           "title": "APPROACH® S72",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3917,7 +3917,7 @@
           "title": "Approach® S72 – 47 mm",
           "kind": "product",
           "description": "Silver/Citron Titanium Bezel with Fog Gray/Citron ComfortFit Fabric Band",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "799.99",
@@ -3932,7 +3932,7 @@
           "title": "CIRQA™ Smart Band",
           "kind": "product",
           "description": "Black",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "199.99",
@@ -3954,12 +3954,12 @@
     },
     "durable-fujitsu-fi-series-scanners": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": []
     },
     "durable-brother-monochrome-laser-printers": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://www.brother-usa.com/c/shop/printers",
@@ -3967,7 +3967,7 @@
           "title": "Printer on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3976,7 +3976,7 @@
           "title": "Ink Cartridge box on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3985,7 +3985,7 @@
           "title": "Sewing machine on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3994,7 +3994,7 @@
           "title": "P-touch label maker on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -4003,7 +4003,7 @@
           "title": "Brother MFC-J4355DW Wireless INKvestment Color Inkjet All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -4013,7 +4013,7 @@
           "title": "Brother PT-N20 Personal Desktop Label Maker",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -4023,7 +4023,7 @@
           "title": "Brother Bellissimo CT1 Matless Cutting Machine",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -4033,7 +4033,7 @@
           "title": "Brother SP1 Sublimation Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         }
@@ -4041,7 +4041,7 @@
     },
     "durable-texas-instruments-graphing-calculators": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T07:20:33.927129Z",
+      "attempted_at": "2026-11-18T14:19:03.734045Z",
       "items": [
         {
           "url": "https://education.ti.com/",
@@ -4049,7 +4049,7 @@
           "title": "Algebra 1: Seven Important Calculator Functions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T07:20:33.927129Z",
+          "checked_at": "2026-11-18T14:19:03.734045Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
