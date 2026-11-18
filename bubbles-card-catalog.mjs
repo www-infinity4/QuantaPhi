@@ -21,11 +21,12 @@ export const cards=Object.freeze([
  local('video-builder','Video Builder','phiVideoBuilder',['phi-video-builder.js'],[],['video studio']),
  local('fred-spaces','Fred Spaces','fredSpacesRadio',['fred-spaces-radio.js'],['fred-spaces-radio.css'],['fred radio','fred krueger','fred space','freds spaces','freds space']),
  local('magoo-spaces','Magoo Spaces','magooSpacesRadio',['magoo-spaces-radio.js'],['magoo-spaces-radio.css'],['magoo phd']),
+ local('asteroid-spaces','ASTEROID RADIO Spaces','asteroidSpacesRadio',['asteroid-spaces-radio.mjs'],['asteroid-spaces-radio.css'],['asteroid radio','asteroid spaces','asteroid radio x spaces','a5t3r0ld']),
  local('x-twitter','Twitter / X','xTwitterCard',['x-twitter-card.mjs'],['x-twitter-card.css'],['twitter','x feed','tweet','twitter card','x app','timeline']),
  local('x-spaces','X Spaces · Listen','xSpacesQuickCard',['x-spaces-quick-card.mjs'],[],['twitter spaces','x spaces','spaces card','live spaces','space audio']),
  local('following-spaces','Following Spaces','followingSpacesRadio',['following-spaces-radio.js'],['following-spaces-radio.css'],['followed spaces']),
  // Player-first: Fred and the owner’s followed-person selector share the Media Star surface.
- local('media-star','Media Star','fredSpacesRadio',['fred-spaces-radio.js','following-spaces-radio.js'],['fred-spaces-radio.css','following-spaces-radio.css'],['media star player','media star radio','media star podcasts','media star card','media star fred spaces'],['followingSpacesRadio']),
+ local('media-star','Media Star','fredSpacesRadio',['fred-spaces-radio.js','following-spaces-radio.js','asteroid-spaces-radio.mjs'],['fred-spaces-radio.css','following-spaces-radio.css','asteroid-spaces-radio.css'],['media star player','media star radio','media star podcasts','media star card','media star fred spaces'],['followingSpacesRadio','asteroidSpacesRadio']),
  local('media-star-creator','Media Star Creator','mediaStarCreator',['media-star-creator.js'],['media-star-creator.css'],['media creator','build media star']),
  local('radio-clubhouse','Radio Clubhouse','radioClubhouse',['radio-clubhouse.js'],['radio-clubhouse.css']),
  local('concepts','Infinity Concepts','infinityConcepts',['infinity-concepts.js'],['infinity-concepts.css']),
