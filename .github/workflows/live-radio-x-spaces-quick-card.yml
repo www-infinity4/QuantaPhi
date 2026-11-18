@@ -6,6 +6,16 @@ on:
       - 'quanta-feed-spaces.mjs'
       - 'iowa-live-radio-cards.js'
       - 'index.html'
+      - 'asteroid-spaces-model.mjs'
+      - 'asteroid-spaces-radio.mjs'
+      - 'asteroid-spaces-radio.css'
+      - 'asteroid-spaces-index.json'
+      - 'bubbles-card-catalog.mjs'
+      - 'oracle-card-deck.js'
+      - 'workers/media-star-following/worker.js'
+      - 'workers/media-star-following/migrations/20261118-asteroid-radio.sql'
+      - 'test/asteroid-spaces-card.test.mjs'
+      - 'test/asteroid-spaces-worker.test.mjs'
       - 'test/live-radio-x-spaces-quick-card.test.mjs'
       - 'test/iowa-live-radio-cards.test.mjs'
       - '.github/workflows/live-radio-x-spaces-quick-card.yml'
@@ -15,6 +25,16 @@ on:
       - 'x-spaces-quick-card.mjs'
       - 'quanta-feed-spaces.mjs'
       - 'iowa-live-radio-cards.js'
+      - 'asteroid-spaces-model.mjs'
+      - 'asteroid-spaces-radio.mjs'
+      - 'asteroid-spaces-radio.css'
+      - 'asteroid-spaces-index.json'
+      - 'bubbles-card-catalog.mjs'
+      - 'oracle-card-deck.js'
+      - 'workers/media-star-following/worker.js'
+      - 'workers/media-star-following/migrations/20261118-asteroid-radio.sql'
+      - 'test/asteroid-spaces-card.test.mjs'
+      - 'test/asteroid-spaces-worker.test.mjs'
       - 'test/live-radio-x-spaces-quick-card.test.mjs'
       - '.github/workflows/live-radio-x-spaces-quick-card.yml'
 permissions:
@@ -31,5 +51,8 @@ jobs:
         run: |
           node --check iowa-live-radio-cards.js
           node --check x-spaces-quick-card.mjs
+          node --check asteroid-spaces-model.mjs
+          node --check asteroid-spaces-radio.mjs
+          node --check workers/media-star-following/worker.js
       - name: Source and mobile-control regressions
-        run: node --test test/live-radio-x-spaces-quick-card.test.mjs test/iowa-live-radio-cards.test.mjs
+        run: node --test test/live-radio-x-spaces-quick-card.test.mjs test/iowa-live-radio-cards.test.mjs test/asteroid-spaces-card.test.mjs test/asteroid-spaces-worker.test.mjs
