@@ -3,41 +3,111 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T10:01:27.271333Z",
+  "checked_at": "2026-11-18T10:31:14.431795Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "retirement",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T09:20:00Z",
+      "query": "nyt connections answers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T10:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/economy/article/havent-saved-enough-for-retirement-wealthy-people-havent-either-192922069.html",
-        "https://www.apollo.com/wealth/insights-news/insights/daily-spark/the-us-retirement-savings-crisis",
-        "https://financebuzz.com/americans-falling-behind-retirement-savings"
+        "https://mashable.com/entertainment/nyt-connections-hint-answer-today-november-17-2026",
+        "https://www.forbes.com/sites/krisholt/2026/11/17/nyt-connections-hint-today-answer-wednesday-november-18-1256/",
+        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-18-1256/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6sY_1OnWZBWkZMVZ6Y1hTYugXlvt_-5EOICMZ5VTbYaDIE96b_8TKc2CJPZQ",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
+      "image_credit": "Mashable",
       "news": [
         {
-          "url": "https://finance.yahoo.com/economy/article/havent-saved-enough-for-retirement-wealthy-people-havent-either-192922069.html",
-          "title": "Haven't saved enough for retirement? Wealthy people haven't either.",
-          "publisher": "Yahoo Finance",
+          "url": "https://mashable.com/entertainment/nyt-connections-hint-answer-today-november-17-2026",
+          "title": "NYT Connections hints and answers for November 17, Tips to solve 'Connections' #1255.",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6sY_1OnWZBWkZMVZ6Y1hTYugXlvt_-5EOICMZ5VTbYaDIE96b_8TKc2CJPZQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
         },
         {
-          "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/the-us-retirement-savings-crisis",
-          "title": "The US Retirement Savings Crisis",
-          "publisher": "Apollo Global Management",
+          "url": "https://www.forbes.com/sites/krisholt/2026/11/17/nyt-connections-hint-today-answer-wednesday-november-18-1256/",
+          "title": "NYT ‘Connections’ Hints And Answers For Wednesday, November 18",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKaXTR3dggG2Xb6BTqcfnGhG4JGof-A0AIe7rx7Jf9SD--kUx2CJHbzqQvLyQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOXjrndVKJ-opemVVFRtPuLaidOb6fu3d1RQC13QgvUqtTijxy7u1KdhMCnM"
         },
         {
-          "url": "https://financebuzz.com/americans-falling-behind-retirement-savings",
-          "title": "Goldman Sachs Just Released Alarming New Data About Americans' Retirement Plans",
-          "publisher": "FinanceBuzz",
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-18-1256/",
+          "title": "Today’s NYT Connections Hints and Answers for Wednesday, Nov. 18, #1256",
+          "publisher": "CNET",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQI0Az3gYF5ZPGmdwUvpBW_2T4C7IV7e_d92JnrfQKk-uJ9NcznRhE92YmlqI0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
+        }
+      ]
+    },
+    {
+      "query": "estados unidos",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T10:00:00Z",
+      "related_news_urls": [
+        "https://cnnespanol.cnn.com/2026/11/17/mundo/live-news/ultima-hora-viaje-trump-asia-trax",
+        "https://www.democracynow.org/es/2026/11/17/titulares",
+        "https://www.latimes.com/espanol/internacional/articulo/2026-11-17/trump-llega-filipinas-para-iniciar-una-gira-por-asia-con-acuerdos-y-conversaciones-con-aliados"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJM2FQR0KZJm108ek_zUk0GpPBX5YzsRudu4G7Uj9Dzs6OLmB2S6ECGnjWS9U",
+      "image_credit": "CNN en Español",
+      "news": [
+        {
+          "url": "https://cnnespanol.cnn.com/2026/11/17/mundo/live-news/ultima-hora-viaje-trump-asia-trax",
+          "title": "Última hora del viaje de Trump a Asia, antes de las históricas conversaciones con Xi y Putin, en vivo",
+          "publisher": "CNN en Español",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJM2FQR0KZJm108ek_zUk0GpPBX5YzsRudu4G7Uj9Dzs6OLmB2S6ECGnjWS9U"
+        },
+        {
+          "url": "https://www.democracynow.org/es/2026/11/17/titulares",
+          "title": "Titulares de 17 de noviembre de 2026",
+          "publisher": "Democracy Now!",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCpfZx0dzTapyTEyOz9AmU4s_-0j4jVK_IfKfkYmlHA7dJnD-CvJGyHL2uTqA"
+        },
+        {
+          "url": "https://www.latimes.com/espanol/internacional/articulo/2026-11-17/trump-llega-filipinas-para-iniciar-una-gira-por-asia-con-acuerdos-y-conversaciones-con-aliados",
+          "title": "Trump llega a Filipinas para iniciar una gira por Asia con acuerdos y conversaciones con aliados",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv_I3mcbxzreRlZ0LMAUC4FVd9AHE1zLLAdX8x6CzU3EgKP5UeRY9C8bqQh9M"
+        }
+      ]
+    },
+    {
+      "query": "retirement",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T09:20:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/15/social-security-tax-changes-midterm-election.html",
+        "https://www.usatoday.com/story/money/personal-finance/retirement/social-security/2026/11/17/investment-tax-social-security/92810465007/",
+        "https://www.newsweek.com/social-security-benefits-proposal-bill-cassidy-donald-trump-12728925"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpVfOJ2bpXFPHNffh8yh5e4VVo4mwRO3naFQ118Cbei0zuSc-tSczG-B2ve38",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/15/social-security-tax-changes-midterm-election.html",
+          "title": "Social Security and the blue wave: What could happen to payroll taxes and senior tax breaks",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpVfOJ2bpXFPHNffh8yh5e4VVo4mwRO3naFQ118Cbei0zuSc-tSczG-B2ve38"
+        },
+        {
+          "url": "https://www.usatoday.com/story/money/personal-finance/retirement/social-security/2026/11/17/investment-tax-social-security/92810465007/",
+          "title": "The new tax plan that could stop Social Security cuts",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeLPWj_U1UnSA_w3278eqVcKKeowpzoePFfrKihisLjLNR4at3rcnLzFB2aDk"
+        },
+        {
+          "url": "https://www.newsweek.com/social-security-benefits-proposal-bill-cassidy-donald-trump-12728925",
+          "title": "What Trump-Backed $1.5T Plan Could Mean for Social Security Recipients",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlTes9O-wqIKyR8k8kCY9gJhanXC0hvl_vfNMLYZIyV5AT3CnmkTWzhS5GfJg"
         }
       ]
     },
@@ -46,26 +116,26 @@
       "approx_searches": "100+",
       "published_at": "2026-11-18T09:20:00Z",
       "related_news_urls": [
-        "https://cryptonews.net/news/security/33770451/",
         "https://www.coinbase.com/blog/consumer-protection-tuesday-how-we-leveraged-ai-to-stop-a-popular-tesla-scam",
+        "https://cryptonews.net/news/security/33770451/",
         "https://www.digitaltoday.co.kr/en/view/127572/coinbase-blocks-elon-musk-deepfake-crypto-scam-transfer"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyl4lax1iO7nx19IvPwBdT61qdFoaGfur-KXz-HI8D7QyVHaRpeeQuSZu8cZ8",
-      "image_credit": "Cryptonews.net",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNWAFY0cvwxLLolB4iUD4-QmgmJpMaoPvsSeK2gzdXAni9V2uBmJnqB-gpY-U",
+      "image_credit": "Coinbase",
       "news": [
-        {
-          "url": "https://cryptonews.net/news/security/33770451/",
-          "title": "Million-Dollar Scam with Fake Elon Musk Broadcast: Coinbase Blocks $4.7 Million Transfer",
-          "publisher": "Cryptonews.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyl4lax1iO7nx19IvPwBdT61qdFoaGfur-KXz-HI8D7QyVHaRpeeQuSZu8cZ8"
-        },
         {
           "url": "https://www.coinbase.com/blog/consumer-protection-tuesday-how-we-leveraged-ai-to-stop-a-popular-tesla-scam",
           "title": "Consumer Protection Tuesday: How we leveraged AI to stop a popular Tesla Scam",
           "publisher": "Coinbase",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNWAFY0cvwxLLolB4iUD4-QmgmJpMaoPvsSeK2gzdXAni9V2uBmJnqB-gpY-U"
+        },
+        {
+          "url": "https://cryptonews.net/news/security/33770451/",
+          "title": "Million-Dollar Scam with Fake Elon Musk Broadcast: Coinbase Blocks $4.7 Million Transfer",
+          "publisher": "Cryptonews.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyl4lax1iO7nx19IvPwBdT61qdFoaGfur-KXz-HI8D7QyVHaRpeeQuSZu8cZ8"
         },
         {
           "url": "https://www.digitaltoday.co.kr/en/view/127572/coinbase-blocks-elon-musk-deepfake-crypto-scam-transfer",
@@ -81,33 +151,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-18T09:20:00Z",
       "related_news_urls": [
-        "https://www.aljazeera.com/news/2026/11/18/india-uk-ties-outride-modis-decolonisation-rhetoric",
-        "https://www.wfmz.com/news/ap/ap-world/india-uk-royals/image_e95b3c36-5402-5b04-aaac-f7189b483226.html",
-        "https://www.prestigeonline.com/in/people/most-memorable-british-royal-family-member-india-trips/"
+        "https://www.reuters.com/world/how-india-became-rice-powerhouse-why-its-becoming-problem-2026-11-18/",
+        "https://www.drishtiias.com/current-affairs-news-analysis-editorials/news-analysis/17-11-2026",
+        "https://iref.net/rice-news/kerala-shortage-japan-fields-India-exports"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPwFq-FV57Wx8p3-520O3Do8G09rUymb9E2YROeECdE_OhFN2wm-3zxwBtstk",
-      "image_credit": "Al Jazeera",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR07Scln8CDYcIJljTRJ6zJ5x_SC5xXf01woJJQ8lT9I-5TxmxwTp6ePkZlM4",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/18/india-uk-ties-outride-modis-decolonisation-rhetoric",
-          "title": "India-UK ties outride Modi’s ‘decolonisation’ rhetoric",
-          "publisher": "Al Jazeera",
+          "url": "https://www.reuters.com/world/how-india-became-rice-powerhouse-why-its-becoming-problem-2026-11-18/",
+          "title": "How India became a rice powerhouse - and why it's becoming a problem",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPwFq-FV57Wx8p3-520O3Do8G09rUymb9E2YROeECdE_OhFN2wm-3zxwBtstk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR07Scln8CDYcIJljTRJ6zJ5x_SC5xXf01woJJQ8lT9I-5TxmxwTp6ePkZlM4"
         },
         {
-          "url": "https://www.wfmz.com/news/ap/ap-world/india-uk-royals/image_e95b3c36-5402-5b04-aaac-f7189b483226.html",
-          "title": "India UK Royals",
-          "publisher": "WFMZ.com",
+          "url": "https://www.drishtiias.com/current-affairs-news-analysis-editorials/news-analysis/17-11-2026",
+          "title": "News Analysis 17 November 2026 | Latest News & Current Affairs",
+          "publisher": "Drishti IAS",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8lnAJKBFbGlY3NhL1-YDzYf7Po_Bm3LVeluG6aXy92Anpa8KUsGlxiPAphJQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVYhohYVgVz3fSzfjtXHbOb-wBzWarIB8xY5__rA9Qzc-viU5EVXDzFRmu1dg"
         },
         {
-          "url": "https://www.prestigeonline.com/in/people/most-memorable-british-royal-family-member-india-trips/",
-          "title": "A look at the British Royal Family’s most memorable visits to India",
-          "publisher": "Prestige Online - Singapore",
+          "url": "https://iref.net/rice-news/kerala-shortage-japan-fields-India-exports",
+          "title": "Top rice news: Kerala Shortage, Japan Floods & India's Rice Export",
+          "publisher": "Indian Rice Exporters Federation",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL0ArDbU0MmDkUIkohBAYu_FV4OBaRBZdzLEUhlaxx0clfKY-aHEGiB2iXvlE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTo2aByH5d0XawbqeQnYTl0jvNXW_ro_rle4F4NevIirQUX30LH_SnzZbyJhaE"
         }
       ]
     },
@@ -116,33 +186,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-18T09:10:00Z",
       "related_news_urls": [
-        "https://www.petitesaffiches.fr/actualites,069/economie,045/ibt-de-retour-a-nice-pour-sa-4e,47730.html",
-        "https://tribuca.net/lindustrie-souffre-et-les-sous-traitants-sont-les-premiers-penalises/",
-        "https://www.lessentiel.fr/nice/entreprises/2026-11-17/un-salon-pour-booster-la-dynamique-economique-du-territoire-32123"
+        "https://www.petitesaffiches.fr/actualites,069/droit,044/trafic-de-stupefiants-66-kilos-de,47733.html",
+        "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/nice/uber-shit-a-nice-71-kilos-de-cannabis-saisis-sept-personnes-deferees-devant-la-justice-3451524.html",
+        "https://www.nicematin.com/societe/justice/huit-interpellations-70-kg-de-cannabis-saisis-50-000-euros-en-liquide-vaste-operation-de-police-avec-le-raid-contre-un-reseau-ubershit-a-nice-10762920"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbnBwBC9uTdDafTn20VD2meguzNC7VjQAQqQFzXNcOQi0BNeVjP6lcfM3-ms",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0oKQz0nUWCvU7jty-u05jJiuRUITi38f-WuFb08djJzMLXaF2pZM3lLVvyuw",
       "image_credit": "Petites Affiches",
       "news": [
         {
-          "url": "https://www.petitesaffiches.fr/actualites,069/economie,045/ibt-de-retour-a-nice-pour-sa-4e,47730.html",
-          "title": "Economie - IBT de retour à Nice pour sa 4e édition",
+          "url": "https://www.petitesaffiches.fr/actualites,069/droit,044/trafic-de-stupefiants-66-kilos-de,47733.html",
+          "title": "Droit - Trafic de stupéfiants : 66 kilos de cannabis et 50 000 euros saisis, sept personnes déférées à Nice",
           "publisher": "Petites Affiches",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbnBwBC9uTdDafTn20VD2meguzNC7VjQAQqQFzXNcOQi0BNeVjP6lcfM3-ms"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0oKQz0nUWCvU7jty-u05jJiuRUITi38f-WuFb08djJzMLXaF2pZM3lLVvyuw"
         },
         {
-          "url": "https://tribuca.net/lindustrie-souffre-et-les-sous-traitants-sont-les-premiers-penalises/",
-          "title": "\"L'industrie souffre, et les sous-traitants sont les premiers pénalisés\"",
-          "publisher": "Tribuca.net",
+          "url": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/nice/uber-shit-a-nice-71-kilos-de-cannabis-saisis-sept-personnes-deferees-devant-la-justice-3451524.html",
+          "title": "\"Uber shit\" à Nice : 71 kilos de cannabis saisis, sept personnes déférées devant la justice",
+          "publisher": "France 3 Régions",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9cKtSI3DtR5aPKsMbMtB-Ch32hpDqZSKPjhH6CbFMjvngPGvVCJTG2xPulpc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtOBzz4hmVS7R6d38QpNOf-jqnxJvzPorzsNNut3LDe8QUfDHZ16LI2wTnX3o"
         },
         {
-          "url": "https://www.lessentiel.fr/nice/entreprises/2026-11-17/un-salon-pour-booster-la-dynamique-economique-du-territoire-32123",
-          "title": "Un salon pour booster la dynamique économique du territoire",
-          "publisher": "l'Essentiel media",
+          "url": "https://www.nicematin.com/societe/justice/huit-interpellations-70-kg-de-cannabis-saisis-50-000-euros-en-liquide-vaste-operation-de-police-avec-le-raid-contre-un-reseau-ubershit-a-nice-10762920",
+          "title": "Huit interpellations, 70 kg de cannabis saisis, 50.000 euros en liquide... Vaste opération de police avec le RAID contre un réseau « Ubershit » à Nice",
+          "publisher": "Nice-Matin",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK-llBo8P6G-CR48rOg-hnyn49aGzSbp1WkekcC0BtQ7yJlXV00LydXxAJm1Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVS_4P436ayCeUtjnSi-nukmAyY0dPaosYaa5CHJnYJPHkS0C1GXLJsh8uYoM"
         }
       ]
     },
@@ -151,19 +221,19 @@
       "approx_searches": "100+",
       "published_at": "2026-11-18T09:10:00Z",
       "related_news_urls": [
-        "https://ktla.com/news/california/worlds-largest-wildlife-crossing-just-a-beginning/",
+        "https://apnews.com/article/wallis-annenberg-wildlife-crossing-los-angeles-california-af2a0788528d85d6624c5b78b0fe427c",
         "https://www.earth.com/animals/mountain-lions-like-p-22-are-set-to-get-a-bridge-over-10-lanes-of-the-101-freeway-near-los-angeles-on-dec-2/",
         "https://www.yahoo.com/news/us/articles/bridge-isnt-cars-saving-lives-201500448.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ407_H_CAH8QMOpc2eU7E1hKbyow_wb5pQ74-WjM0YsMqw8ZWgjImVkivI8U",
-      "image_credit": "KTLA",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7DNbjPQTWKGD-KPMTGAKS_9CRl5ixN5Vjwdh3kxks0-aEG3D3oanxCSiMId4",
+      "image_credit": "AP News",
       "news": [
         {
-          "url": "https://ktla.com/news/california/worlds-largest-wildlife-crossing-just-a-beginning/",
-          "title": "World’s largest wildlife crossing just ‘a beginning’",
-          "publisher": "KTLA",
+          "url": "https://apnews.com/article/wallis-annenberg-wildlife-crossing-los-angeles-california-af2a0788528d85d6624c5b78b0fe427c",
+          "title": "Over a freeway near Los Angeles, animals can roam safely thanks to world's largest wildlife crossing",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ407_H_CAH8QMOpc2eU7E1hKbyow_wb5pQ74-WjM0YsMqw8ZWgjImVkivI8U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7DNbjPQTWKGD-KPMTGAKS_9CRl5ixN5Vjwdh3kxks0-aEG3D3oanxCSiMId4"
         },
         {
           "url": "https://www.earth.com/animals/mountain-lions-like-p-22-are-set-to-get-a-bridge-over-10-lanes-of-the-101-freeway-near-los-angeles-on-dec-2/",
@@ -186,33 +256,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-18T09:00:00Z",
       "related_news_urls": [
-        "https://tech.ifeng.com/c/8y9idubOyvZ",
-        "https://www.stheadline.com/zh-hans/stock-market/3638551/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E6%94%B6%E5%85%A52073%E4%BA%BF%E9%80%8A%E9%A2%84%E6%9C%9F-%E7%BB%8F%E8%B0%83%E6%95%B4%E5%88%A9%E6%B6%A6%E8%B7%8C6-%E7%8E%B0%E9%87%91%E6%B5%81%E8%B4%9F%E6%95%B0%E6%89%A9%E8%87%B3691%E4%BA%BF",
-        "https://longbridge.com/zh-CN/lives/354028"
+        "https://cn.wsj.com/articles/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%BA%A6%E5%88%A9%E6%B6%A6%E4%BB%85%E5%A2%9E%E9%95%BF0-8-e9f878f2",
+        "https://m.sohu.com/a/1103276661_121439537?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "https://hk.on.cc/hk/bkn/cnt/finance/20261118/bkn-20261118163310082-1118_00842_001_cn.html?refer=hn2"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3j9PWFzM_58_D8sOS8gHepgCTR30UVK1zakCvgtx6799mXwsGWlGt3mUaGgQ",
-      "image_credit": "凤凰网科技",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRcCBYqcZ7gwKK8ClZBVsB138LQJw02Zt7O3iVjqy_L7RLzReQmMzywgKA7OA",
+      "image_credit": "华尔街日报中文网",
       "news": [
         {
-          "url": "https://tech.ifeng.com/c/8y9idubOyvZ",
-          "title": "腾讯控股2026财年前三季度归母净利润1777.27亿元，同比增长7%",
-          "publisher": "凤凰网科技",
+          "url": "https://cn.wsj.com/articles/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%BA%A6%E5%88%A9%E6%B6%A6%E4%BB%85%E5%A2%9E%E9%95%BF0-8-e9f878f2",
+          "title": "腾讯第三季度利润仅增长0.8%",
+          "publisher": "华尔街日报中文网",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3j9PWFzM_58_D8sOS8gHepgCTR30UVK1zakCvgtx6799mXwsGWlGt3mUaGgQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRcCBYqcZ7gwKK8ClZBVsB138LQJw02Zt7O3iVjqy_L7RLzReQmMzywgKA7OA"
         },
         {
-          "url": "https://www.stheadline.com/zh-hans/stock-market/3638551/%E8%85%BE%E8%AE%AF%E7%AC%AC%E4%B8%89%E5%AD%A3%E6%94%B6%E5%85%A52073%E4%BA%BF%E9%80%8A%E9%A2%84%E6%9C%9F-%E7%BB%8F%E8%B0%83%E6%95%B4%E5%88%A9%E6%B6%A6%E8%B7%8C6-%E7%8E%B0%E9%87%91%E6%B5%81%E8%B4%9F%E6%95%B0%E6%89%A9%E8%87%B3691%E4%BA%BF",
-          "title": "腾讯第三季收入2073亿逊预期 经调整利润跌6% 现金流负数扩至691亿",
-          "publisher": "星島頭條",
+          "url": "https://m.sohu.com/a/1103276661_121439537?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "腾讯AI投入加速转化：AI进展显著、主业稳健增长，云收入同比大增35%",
+          "publisher": "Sohu",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQa_hBTs6lc-h2d-LIFZ0pZ6vHBDxEUNVWSHuh2RXFAo9hTeEy04UipTBhSDM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOLJJZB--ztZfN3aCrzwltSQ_T9dbJWokvbo3sntdIbrEYxD8-n6_yYLqVFQs"
         },
         {
-          "url": "https://longbridge.com/zh-CN/lives/354028",
-          "title": "小鹏汽车-W (09868.HK，XPEV.US) 2026 年第三季度业绩电话会｜长桥证券",
-          "publisher": "Longbridge",
+          "url": "https://hk.on.cc/hk/bkn/cnt/finance/20261118/bkn-20261118163310082-1118_00842_001_cn.html?refer=hn2",
+          "title": "腾讯上季经调整少赚5.7% 资本开支大增负现金流691亿人币｜即时新闻｜产经｜on.cc东网",
+          "publisher": "on.cc東網",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLyBHpBgUU7lG8d-36z2UC5tM0b5ztt-88sqxNvF0SQtz6Gzo7i7f1u0hA1UU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzm_mniZVE5Ckz-vnmFkaghs087fZJYGPAy80EIDTDQGUcrF7gCeLdL9ysT9c"
         }
       ]
     },
@@ -258,7 +328,7 @@
       "related_news_urls": [
         "https://azbigmedia.com/business/law/5-car-accident-law-firms-in-onondaga-county-to-compare-before-hiring/",
         "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-brooklyn/",
-        "https://www.khou.com/video/entertainment/television/programs/great-day-houston/sponsored-shariff-injury-lawyers-share-what-to-do-immediately-after-a-car-accident/285-1dac553c-2ebc-470f-a35a-a584b6dcac97"
+        "https://www.theautochannel.com/news/2026/11/12/1737840-motorcycle-accident-lawyers-raleigh-nc-4-firms-riders-can-compare.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStrfbXqVbtdbBJY72frlVCG6TaCG07W_-qsS4AImZHZL4UZtm1hv9aTSYcLpU",
       "image_credit": "AZ Big Media",
@@ -278,81 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfWbyAjA5TPJ_2jJhz_fDQrU_MJe6IMC0rcN4svi-Ibz4EBLgHF8LiCzqhlyE"
         },
         {
-          "url": "https://www.khou.com/video/entertainment/television/programs/great-day-houston/sponsored-shariff-injury-lawyers-share-what-to-do-immediately-after-a-car-accident/285-1dac553c-2ebc-470f-a35a-a584b6dcac97",
-          "title": "Sponsored: Shariff Injury Lawyers share what to do immediately after a car accident",
-          "publisher": "KHOU",
+          "url": "https://www.theautochannel.com/news/2026/11/12/1737840-motorcycle-accident-lawyers-raleigh-nc-4-firms-riders-can-compare.html",
+          "title": "Motorcycle Accident Lawyers in Raleigh, NC: 4 Firms Riders Can Compare in 2027",
+          "publisher": "The Auto Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRtr6VQZJ-3FF9Kajp-h3XBFVlgQVQL0Ni5CIJ09n4yYML3tr6uklyUWHX_1g"
-        }
-      ]
-    },
-    {
-      "query": "ban vs sa",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T08:50:00Z",
-      "related_news_urls": [
-        "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
-        "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/ball-by-ball-commentary",
-        "https://www.couriernews.com/sports/south-africa-bangladesh-cricket/image_89784b59-90a4-513e-8715-93c445d88cb5.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdSFWqVg6Bqs2dzxRniFHDL_zltcxE7Kju2ZJg9ZuIwmSsv42BepiusNoQP0",
-      "image_credit": "Cricbuzz",
-      "news": [
-        {
-          "url": "https://www.cricbuzz.com/live-cricket-stream/147953/rsa-vs-ban-1st-test-bangladesh-tour-of-south-africa-2026",
-          "title": "RSA vs BAN, 1st Test, Bangladesh tour of South Africa, 2026 - Live Stream",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdSFWqVg6Bqs2dzxRniFHDL_zltcxE7Kju2ZJg9ZuIwmSsv42BepiusNoQP0"
-        },
-        {
-          "url": "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - SA vs BAN, 1st Test",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyfFrQpuRMUUEOAzDcjCVOpNDJLpMpxd7Jl71Wx_Ds73SjIF2eGtIm33ch-uE"
-        },
-        {
-          "url": "https://www.couriernews.com/sports/south-africa-bangladesh-cricket/image_89784b59-90a4-513e-8715-93c445d88cb5.html",
-          "title": "South Africa Bangladesh Cricket",
-          "publisher": "couriernews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNK0FTMvTB3py70yEsMj8IBh-Yw6rUcOHrA5dZxQoCSQNGt5oWwfIMu9paQRc"
-        }
-      ]
-    },
-    {
-      "query": "imelda marcos",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T08:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-        "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
-        "https://www.reuters.com/world/china/trump-meet-marcos-manila-before-china-talks-2026-11-17/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnMkD9akFnSrFo33ioEPd45LaQm_zCSm9aFcIiSRO42mbBoLUPPrSf-B7HB-0",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-          "title": "Trump Will Miss Most of the ASEAN Summit",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnMkD9akFnSrFo33ioEPd45LaQm_zCSm9aFcIiSRO42mbBoLUPPrSf-B7HB-0"
-        },
-        {
-          "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
-          "title": "Trump Asia trip live updates: Trump joins Philippine president for bilateral meeting",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0X9asJNwXOTYJ5xE7luvrGhdwYlVhWPiGO2rJK6Byy8egGz33MAM06EXFB3Q"
-        },
-        {
-          "url": "https://www.reuters.com/world/china/trump-meet-marcos-manila-before-china-talks-2026-11-17/",
-          "title": "Trump lauds defence alliance with Philippines ahead of China talks",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqs3dDx4iqq-l-UA4wmyFSkfwXpfcZz9XpnuWJHCE4By3HjDpSQSj9d9fCzLo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV2_C1OqHpk7hyyyq0dc4ER0IUQKVe6OJYuaquP2VKTCymNkxJC6RTxXaZFcQ"
         }
       ]
     }
