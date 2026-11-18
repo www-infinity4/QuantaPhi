@@ -53,3 +53,17 @@ This scoped work continues the user's requested Twitter/X Spaces card. Account X
 - Verify that actual official X Space embed/audio can legally play within QuantaPhi; failing this, honest official-player link remains.
 - Independent implementation of full user-authorized X OAuth/post/feed in #1284; only this Spaces slice is built here.
 - Separate exact-head CI, review, merge, deploy, independent readback and issue update.
+
+## Host collection extension — ASTEROID RADIO (2026-11-18)
+
+Owner request: https://x.com/A5T3R0lD/status/2123131588548387160 — an ASTEROID RADIO X post, **not** an original Space replay URL. Resolved provider-host identity from publicly indexed @A5T3R0lD profile and independent public host archive. Avoid mixing the Asteroid *story* search module with this X broadcaster.
+
+- Branch: `feat/asteroid-radio-media-star-20261118`, base main; existing issue #1284 reused, no X OAuth or payment changes.
+- Files staged: `asteroid-spaces-radio.mjs`/CSS, `asteroid-spaces-model.mjs`, `asteroid-spaces-index.json`, homepage + Oracle deck + Bubbles card registrations, shared D1 Worker public curator endpoint and opt-in idempotent seed SQL migration, regression tests and focused workflow.
+- One original X Space ID sourced in archive (`1pKdRbWZgVRJW`, 2026-03-25); audio/playability **not verified**. Third-party archives are **discovery sources**, not permission to copy recordings or claim every broadcast.
+- 2026-11-18 checkpoint state: `implementing` / 🟡; estimated **55% of this host-card source slice** (source code + tests authored; CI, independent review, merge, D1 migration, deployment, Android replay readback and full archive expansion remain). This does not revise the previous 35% estimate for the whole #1284 X OAuth/composer/live-spaces program.
+- Sessions spent on this extension: 1. Remaining estimate: unknown; live playback/provider completeness external blockers.
+- Session test receipt: tests authored and workflow updated, **not yet confirmed passing**. No claim that D1, Workers, Android or live recording changed.
+- Next executable action: open PR at branch head, inspect exact-head CI and independent review, fix failing source tests; guarded merge only when eligible, then separately authorize Cloudflare migration/release and real Android readback.
+
+See [ASTEROID-RADIO-SPACES.md](../../docs/ASTEROID-RADIO-SPACES.md).
