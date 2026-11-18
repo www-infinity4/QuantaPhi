@@ -3,188 +3,48 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T21:30:53.497909Z",
+  "checked_at": "2026-11-18T22:01:25.263314Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "marlon humphrey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T21:10:00Z",
-      "related_news_urls": [
-        "https://www.wbaltv.com/article/marlon-humphrey-podcast-baltimore-criminals-comments/74468759",
-        "https://www.baltimoresun.com/2026/11/18/ravens-marlon-humphrey-baltimore-criminals/",
-        "https://www.yardbarker.com/nfl/articles/espns_hot_mic_captured_angry_ravens_fans_f_bomb_rant_about_marlon_humphrey_on_live_tv/s1_17759_44575952"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRO2SjafBV2k47Mn_WvVYFRzn7554T_BjoPNELW_oM1B7ziQmZiksuxkjoHHmI",
-      "image_credit": "WBAL-TV",
-      "news": [
-        {
-          "url": "https://www.wbaltv.com/article/marlon-humphrey-podcast-baltimore-criminals-comments/74468759",
-          "title": "Baltimore Ravens' Marlon Humphrey under fire for podcast comments",
-          "publisher": "WBAL-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRO2SjafBV2k47Mn_WvVYFRzn7554T_BjoPNELW_oM1B7ziQmZiksuxkjoHHmI"
-        },
-        {
-          "url": "https://www.baltimoresun.com/2026/11/18/ravens-marlon-humphrey-baltimore-criminals/",
-          "title": "Ravens’ Marlon Humphrey says Baltimore is ‘best at making criminals’ on podcast",
-          "publisher": "Baltimore Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4ivPz4x5RupUIb5OKRreWnXVfK306gS7LO-B6G6M6kWMDRQZ_oMwn3-6SvJU"
-        },
-        {
-          "url": "https://www.yardbarker.com/nfl/articles/espns_hot_mic_captured_angry_ravens_fans_f_bomb_rant_about_marlon_humphrey_on_live_tv/s1_17759_44575952",
-          "title": "ESPN’s Hot Mic Captured Angry Ravens Fan’s F-Bomb Rant About Marlon Humphrey On Live TV",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqPjrdfo62KNJL5WHNk-gixuQN8pum3dPPgBQD4M4lMROdjANiprrDNW7OH8"
-        }
-      ]
-    },
-    {
-      "query": "panw stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T21:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/video/2026/11/18/wave-of-tech-outages-sets-stage-for-palo-alto-networks-earnings.html",
-        "https://www.barrons.com/articles/cybersecurity-software-stocks-palo-alto-eaaa4906",
-        "https://www.benzinga.com/trading-ideas/movers/26/11/63397526/palo-alto-stock-rises-ahead-of-earnings-what-you-should-know"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDY6K8EQuzfbZLH0SJkYvsWpCCiYD0Mfc2FF9i_6_sDz9iVAAaBntenUWoMAY",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/video/2026/11/18/wave-of-tech-outages-sets-stage-for-palo-alto-networks-earnings.html",
-          "title": "Wave of tech outages sets stage for Palo Alto Networks earnings",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDY6K8EQuzfbZLH0SJkYvsWpCCiYD0Mfc2FF9i_6_sDz9iVAAaBntenUWoMAY"
-        },
-        {
-          "url": "https://www.barrons.com/articles/cybersecurity-software-stocks-palo-alto-eaaa4906",
-          "title": "AI Risks Lift Cyber Stocks as Software Looks to Shrug Off Slump",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmYD3D-WatOF4UZZ6ianNjbXtAWz_EFApa8GZNlkeo3p_WYnQnvUEYJ_wETDE"
-        },
-        {
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63397526/palo-alto-stock-rises-ahead-of-earnings-what-you-should-know",
-          "title": "Palo Alto Stock Rises Ahead of Earnings: What You Should Know",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk3-FERwlVExU6uSwNIqzFPsV8_luD8DcpqUOq5MIzUonaI4bTTHPX9oT7qQQ"
-        }
-      ]
-    },
-    {
-      "query": "gemini neon",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T21:00:00Z",
-      "related_news_urls": [
-        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-        "https://developers.googleblog.com/gemini-hydrogen-for-robotics/",
-        "https://www.searchenginejournal.com/google-gemini-4-hydrogen-default-ai-mode/597096/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiwyltczoY9eSJinbkCv6IQlnM3F91fZaVyXoLQI10A4eAKbxIGAXO58B_WmE",
-      "image_credit": "blog.google",
-      "news": [
-        {
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-          "title": "Introducing Gemini 4 Hydrogen for Agentic Workflows",
-          "publisher": "blog.google",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiwyltczoY9eSJinbkCv6IQlnM3F91fZaVyXoLQI10A4eAKbxIGAXO58B_WmE"
-        },
-        {
-          "url": "https://developers.googleblog.com/gemini-hydrogen-for-robotics/",
-          "title": "Gemini 4 Hydrogen: a faster model for general purpose robotics",
-          "publisher": "Google for Developers Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-n8DElaDHT0Xff6idM4IlypgtituZPbZCCiXmAWVVdqjcHXvYIdNp3udspi4"
-        },
-        {
-          "url": "https://www.searchenginejournal.com/google-gemini-4-hydrogen-default-ai-mode/597096/",
-          "title": "Google Makes Gemini 4 Hydrogen The Default Model In AI Mode",
-          "publisher": "Search Engine Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjSzJcZyG1VJFWevHBP-VFdPrERpWmvm26_oPj-xyG2pZ-Mhl8JMOl4YOUyDg"
-        }
-      ]
-    },
-    {
-      "query": "houston basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T20:50:00Z",
-      "related_news_urls": [
-        "https://www.sportsline.com/insiders/houston-vs-florida-odds-proven-model-reveals-2026-players-era-8-college-basketball-tournament-semifinal-picks/",
-        "https://www.gainesville.com/story/sports/college/basketball/2026/11/18/how-to-watch-florida-basketball-vs-houston-tv-channel-stream/92768402007/",
-        "https://www.cbssports.com/prediction/news/florida-vs-houston-odds-picks-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWYGsXkU0pXRxe-7CZ8-so7BVHJDekCZ3SA0DKrghHRfNYe_rxLXnncA_j6nQ",
-      "image_credit": "SportsLine",
-      "news": [
-        {
-          "url": "https://www.sportsline.com/insiders/houston-vs-florida-odds-proven-model-reveals-2026-players-era-8-college-basketball-tournament-semifinal-picks/",
-          "title": "Houston vs. Florida odds: Proven model reveals 2026 Players Era 8 college basketball tournament semifinal picks",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWYGsXkU0pXRxe-7CZ8-so7BVHJDekCZ3SA0DKrghHRfNYe_rxLXnncA_j6nQ"
-        },
-        {
-          "url": "https://www.gainesville.com/story/sports/college/basketball/2026/11/18/how-to-watch-florida-basketball-vs-houston-tv-channel-stream/92768402007/",
-          "title": "How to watch Florida basketball vs Houston | TV channel, streaming",
-          "publisher": "Gainesville Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREOcraBxOiTxvtSv_k86TDjQ64WU-aHioPoYkaBEjKB8oihgSeX9bkdWGnbUs"
-        },
-        {
-          "url": "https://www.cbssports.com/prediction/news/florida-vs-houston-odds-picks-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-          "title": "Florida vs. Houston odds, picks, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5P-JdXqDGw48J2wekzoHm_7b7SA2O1z5CzTeU1JjmSc7ID_kbBlWEKBmV1_A"
-        }
-      ]
-    },
-    {
-      "query": "milo ventimiglia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T20:40:00Z",
-      "related_news_urls": [
-        "https://decider.com/2026/11/18/jared-padalecki-gilmore-girls-documentary-milo-ventimiglia-dean-jess/",
-        "https://parade.com/tv/gilmore-girls-star-jared-padalecki-breaks-down-as-he-reveals-how-onscreen-rival-milo-ventimiglia-supported-him-25-years-ago",
-        "https://demokratis.co.id/en/padalecki-ventimiglia-gilmore-friendship"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHGL6czZVucDJy_AhBMElFqx2-AAysjYmiOjOnU9NwEpv8bJxJT3hhDWTUxo",
-      "image_credit": "Decider",
-      "news": [
-        {
-          "url": "https://decider.com/2026/11/18/jared-padalecki-gilmore-girls-documentary-milo-ventimiglia-dean-jess/",
-          "title": "Jared Padalecki reveals how he really felt when Milo Ventimiglia joined ‘Gilmore Girls’",
-          "publisher": "Decider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHGL6czZVucDJy_AhBMElFqx2-AAysjYmiOjOnU9NwEpv8bJxJT3hhDWTUxo"
-        },
-        {
-          "url": "https://parade.com/tv/gilmore-girls-star-jared-padalecki-breaks-down-as-he-reveals-how-onscreen-rival-milo-ventimiglia-supported-him-25-years-ago",
-          "title": "‘Gilmore Girls’ Star Jared Padalecki Breaks Down as He Reveals How Onscreen Rival Milo Ventimiglia Supported Him 25 Years Ago",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqJek36wGxngjEFCTkPdvWbQDTcz2b3JTO_669ZfuajCgkQCIO6TAru6EBvNw"
-        },
-        {
-          "url": "https://demokratis.co.id/en/padalecki-ventimiglia-gilmore-friendship",
-          "title": "Jared Padalecki Recalls Milo Ventimiglia Support on Gilmore Girls",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxvKM7Y8q_X7EXBZvDFe1QV09mTW2aElmwJECPHNizXU1ylopIgEskR_4fsts"
-        }
-      ]
-    },
-    {
-      "query": "notre dame vs rutgers",
+      "query": "nz vs ind",
       "approx_searches": "10000+",
-      "published_at": "2026-11-18T20:40:00Z",
+      "published_at": "2026-11-18T21:40:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/ball-by-ball-commentary",
+        "https://www.cricbuzz.com/cricket-news/140955/wellington-test-preview-indias-wtc-hopes-meet-a-stubborn-history-in-nz-cricbuzzcom",
+        "https://sports.yahoo.com/articles/ind-vs-nz-1st-test-184001355.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzEwOBtvwvl50dNhQXwnRyCSpj2BlGE0D8_XpOAUhSeVAQBvy3J7QhpSlOUbo",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 1st Test",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzEwOBtvwvl50dNhQXwnRyCSpj2BlGE0D8_XpOAUhSeVAQBvy3J7QhpSlOUbo"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140955/wellington-test-preview-indias-wtc-hopes-meet-a-stubborn-history-in-nz-cricbuzzcom",
+          "title": "India's WTC hopes meet a stubborn history in New Zealand",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZJcB7zdqrid5KzYqN5cxYpvldj9Q_4wnT_OvFKJ5RChd3xmDALr2J_TfFRg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ind-vs-nz-1st-test-184001355.html",
+          "title": "IND vs NZ 1st Test 2026 live scorecard, toss winner, winning probability, result and highlights from Wellington",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTewkZYTbYz2SAUGFPdPED5N5VxddABa_YDdOk569q4daDISKPrTsSmJniidzU"
+        }
+      ]
+    },
+    {
+      "query": "florida basketball",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-18T21:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/mens-college-basketball/game/_/gameId/401920513",
         "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
@@ -217,142 +77,282 @@
       ]
     },
     {
-      "query": "hacker",
+      "query": "bo french",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T20:40:00Z",
+      "published_at": "2026-11-18T21:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/news/articles/cm87987w1qz5o",
-        "https://techcrunch.com/2026/11/18/british-hackers-face-prison-for-gta-6-data-breach-and-crypto-thefts/",
-        "https://ktla.com/news/nationworld/british-hacker-text-phishing-cryptocurrency-theft-prison/"
+        "https://www.politico.com/news/2026/11/18/bo-french-texas-country-club-membership-01173063",
+        "https://www.alternet.org/karl-rove-2678446322/",
+        "https://www.rawstory.com/bo-french-2678446814/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-kgD5Q6A1_z5ycFzHovHIm8yHrz2Hh_w4Uz7f6TUt3zf6e-gQ0ZImXVG6Tq4",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA0Kp7fiBI7kOtBFxsFdAtZeaf1goWlkpX2BQJOP6geyQft8vNsKPapou-WGQ",
+      "image_credit": "Politico",
       "news": [
         {
-          "url": "https://www.bbc.com/news/articles/cm87987w1qz5o",
-          "title": "British hacker who stole $11m through text message scheme jailed for six years in US",
-          "publisher": "BBC",
+          "url": "https://www.politico.com/news/2026/11/18/bo-french-texas-country-club-membership-01173063",
+          "title": "Bo French loses Texas country club membership",
+          "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-kgD5Q6A1_z5ycFzHovHIm8yHrz2Hh_w4Uz7f6TUt3zf6e-gQ0ZImXVG6Tq4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA0Kp7fiBI7kOtBFxsFdAtZeaf1goWlkpX2BQJOP6geyQft8vNsKPapou-WGQ"
         },
         {
-          "url": "https://techcrunch.com/2026/11/18/british-hackers-face-prison-for-gta-6-data-breach-and-crypto-thefts/",
-          "title": "British hackers face prison for GTA 6 data breach and crypto thefts",
-          "publisher": "TechCrunch",
+          "url": "https://www.alternet.org/karl-rove-2678446322/",
+          "title": "MAGA election loser suffers another humiliation",
+          "publisher": "Alternet",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjeJkC0sKj2zqVTUFBc6cYkutG_z2TuBhZSdob7XG_NLu-up7AKt4rc8XBiJU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxDF4t9SNbCSTPQ58wf-z0YKl6DFBy557fjkgVHJurqSLezcK75hDpZshLoE"
         },
         {
-          "url": "https://ktla.com/news/nationworld/british-hacker-text-phishing-cryptocurrency-theft-prison/",
-          "title": "Hackers used fake texts to steal $11.6 million in cryptocurrency, feds say",
-          "publisher": "KTLA",
+          "url": "https://www.rawstory.com/bo-french-2678446814/",
+          "title": "Ridicule as far-right Republican ejected from elite country club over his 'reputation'",
+          "publisher": "Raw Story",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtucDAVdht4bdIeQfBdlWjOfy1queeELvlJLE3FBp87d76ryaufUh35hIY4jE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbdIFlCMNnjwAsYovtCnNbl1qEl9o4aZcr8Pd6MKI7Ol1DbumizbxkQX1dsG4"
         }
       ]
     },
     {
-      "query": "sonny gray",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T20:30:00Z",
+      "query": "clavicular",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T21:40:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/sonny-gray-free-agent-contract-twins",
-        "https://www.espn.com/mlb/story/_/id/50523817/twins-sign-veteran-right-hander-sonny-gray-two-year-deal",
-        "https://www.mlbtraderumors.com/2026/11/twins-sign-sonny-gray.html"
+        "https://www.bostonglobe.com/2026/11/18/metro/clavicular-indicted-on-rape-charges-braden-e-peters/",
+        "https://www.boston25news.com/news/local/social-media-influencer-clavicular-indicted-rape-charges-stemming-2025-cape-cod-incident/L5PPILU3TBDNDBJKERRK5UHCS4/",
+        "https://www.yahoo.com/news/us/articles/looksmaxxing-influencer-clavicular-indicted-rape-150746977.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1QtPhndbbJBbmePQsrvvZ0vt9sgBbURYhtN5hso39kz0ngRBp-nMvQ3tR8G0",
-      "image_credit": "MLB.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9kbknlxrwFGWGXmMX3V2pD2LZJoWkEiEVOmhJ-hVd2qAYGn2D8UXVFw9lhSw",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://www.mlb.com/news/sonny-gray-free-agent-contract-twins",
-          "title": "Sonny Gray reunites with Twins on 2-year deal",
-          "publisher": "MLB.com",
+          "url": "https://www.bostonglobe.com/2026/11/18/metro/clavicular-indicted-on-rape-charges-braden-e-peters/",
+          "title": "‘Looksmaxxer’ known as Clavicular indicted on two rape charges stemming from 2025 incident on Cape Cod",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1QtPhndbbJBbmePQsrvvZ0vt9sgBbURYhtN5hso39kz0ngRBp-nMvQ3tR8G0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9kbknlxrwFGWGXmMX3V2pD2LZJoWkEiEVOmhJ-hVd2qAYGn2D8UXVFw9lhSw"
         },
         {
-          "url": "https://www.espn.com/mlb/story/_/id/50523817/twins-sign-veteran-right-hander-sonny-gray-two-year-deal",
-          "title": "Twins reunite with veteran right-hander Sonny Gray on two-year deal",
+          "url": "https://www.boston25news.com/news/local/social-media-influencer-clavicular-indicted-rape-charges-stemming-2025-cape-cod-incident/L5PPILU3TBDNDBJKERRK5UHCS4/",
+          "title": "Social media influencer ‘Clavicular’ indicted on rape charges stemming from 2025 Cape Cod incident",
+          "publisher": "Boston 25 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZiJAW9tjM0Qo7hCNjizW62w-qI990wM4YMAXu6m9UVj09rKGIQV9k5wLeIUo"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/looksmaxxing-influencer-clavicular-indicted-rape-150746977.html",
+          "title": "'Looksmaxxing' influencer 'Clavicular' indicted on rape charges in Cape Cod court",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPW2zxiahw4noYnfWKkOgrl9_7leZJ_M2CmFswbAlzFfRb4Xp4qEEwqHzCwlc"
+        }
+      ]
+    },
+    {
+      "query": "south florida floods",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-18T21:20:00Z",
+      "related_news_urls": [
+        "https://www.wesh.com/article/central-florida-flood-watch-heavy-rain-orlando-weather/74463066",
+        "https://www.cbsnews.com/miami/news/broward-county-schools-closed-thursday-flooding-bus-depots/",
+        "https://www.washingtonpost.com/nation/2026/11/18/more-than-foot-overnight-rain-south-florida-causes-widespread-flooding/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuEmgu31flASxfm5lSsgYJGEOShxyAFQx-he2UvfcaLOroNRvSvMgAPmYFqE0",
+      "image_credit": "WESH",
+      "news": [
+        {
+          "url": "https://www.wesh.com/article/central-florida-flood-watch-heavy-rain-orlando-weather/74463066",
+          "title": "12+ inches of rain possible by Friday night along coast; 18 inches in isolated areas",
+          "publisher": "WESH",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuEmgu31flASxfm5lSsgYJGEOShxyAFQx-he2UvfcaLOroNRvSvMgAPmYFqE0"
+        },
+        {
+          "url": "https://www.cbsnews.com/miami/news/broward-county-schools-closed-thursday-flooding-bus-depots/",
+          "title": "Broward County schools to remain closed Thursday as flooding leaves bus depots inaccessible",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzkhgi2LSKa8fNYju00PzOfGY5aE-8WdGD4yHDdKK-7wywDCxbh205cyKFlU4"
+        },
+        {
+          "url": "https://www.washingtonpost.com/nation/2026/11/18/more-than-foot-overnight-rain-south-florida-causes-widespread-flooding/",
+          "title": "More than a foot of overnight rain in South Florida causes widespread flooding",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-D12zoCo67R2yEXlXR02VlLEH_gsASLRUoZ7h-c9EVWI5vp-7xdxceI2M700"
+        }
+      ]
+    },
+    {
+      "query": "inundaciones en el sur de florida",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T21:20:00Z",
+      "related_news_urls": [
+        "https://cnnespanol.cnn.com/2026/11/18/clima-y-tiempo/eeuu-florida-graves-inundaciones-tormentas-trax",
+        "https://www.telemundo51.com/noticias/local/mas-de-15-pulgadas-de-lluvia-en-broward-y-casi-9-en-miami-dade-continua-riesgo-de-inundaciones/2851596/",
+        "https://www.telemundo.com/noticias/el-secretario-de-defensa-pete-hegseth-visita-la-embajada-de-ee-uu-en-caracas-tmvo5796716"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxwocw94wFx8SLvdmAG7KyOqV97PTosRKLSuYsBHN4LAIABuHD9cc4FiHywdg",
+      "image_credit": "CNN en Español",
+      "news": [
+        {
+          "url": "https://cnnespanol.cnn.com/2026/11/18/clima-y-tiempo/eeuu-florida-graves-inundaciones-tormentas-trax",
+          "title": "Inundaciones fuertes azotan Florida: la tormenta podría complicar viajes previos al Día de Acción de Gracias en la costa este",
+          "publisher": "CNN en Español",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxwocw94wFx8SLvdmAG7KyOqV97PTosRKLSuYsBHN4LAIABuHD9cc4FiHywdg"
+        },
+        {
+          "url": "https://www.telemundo51.com/noticias/local/mas-de-15-pulgadas-de-lluvia-en-broward-y-casi-9-en-miami-dade-continua-riesgo-de-inundaciones/2851596/",
+          "title": "Más de 15 pulgadas de lluvia en Broward y casi 9 en Miami-Dade: continúa riesgo de inundaciones",
+          "publisher": "Telemundo Miami",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBoFrpfzEQdmGjjd_cu_0KunMw7VNPgjIUDqeWsEsqyW7D-DN7ozmdu8HXcog"
+        },
+        {
+          "url": "https://www.telemundo.com/noticias/el-secretario-de-defensa-pete-hegseth-visita-la-embajada-de-ee-uu-en-caracas-tmvo5796716",
+          "title": "EN VIVO: El secretario de Defensa, Pete Hegseth, visita la Embajada de EE.UU. en Caracas",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1Wh86OnAsgtKOdgmwNsFxfZJ3RsyVA0Q2Y6GdamuOQeyKARIjhzFOap65J3E"
+        }
+      ]
+    },
+    {
+      "query": "boogie fland",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T21:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50515779/gators-boogie-fland-aggravates-shoulder-injury",
+        "https://fightingirish.com/news/2026/11/17/irish-give-no-1-florida-a-battle-but-fall-86-78",
+        "https://247sports.com/college/florida/article/florida-basketball-gators-head-coach-todd-golden-details-win-notre-dame-las-vegas-players-era-292904716/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzLjfscJCAY_k_OyLOPqPnbdItskrDeUTgB3VEtZPyBhh4lb_WamUtmZewiPI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50515779/gators-boogie-fland-aggravates-shoulder-injury",
+          "title": "Gators' Boogie Fland aggravates shoulder injury, status vs. Houston in question",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS15hMtvJiboQqCNbM-yWoWGdwKZ0Jr-aqNbmNnZ27rvy4SIj78GiFwhNyS2HM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzLjfscJCAY_k_OyLOPqPnbdItskrDeUTgB3VEtZPyBhh4lb_WamUtmZewiPI"
         },
         {
-          "url": "https://www.mlbtraderumors.com/2026/11/twins-sign-sonny-gray.html",
-          "title": "Twins Sign Sonny Gray",
-          "publisher": "MLB Trade Rumors",
+          "url": "https://fightingirish.com/news/2026/11/17/irish-give-no-1-florida-a-battle-but-fall-86-78",
+          "title": "Irish Give No. 1 Florida A Battle, But Fall 86-78",
+          "publisher": "Notre Dame Fighting Irish",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBw1OpKv8whAggiiB_ySxNf6BhYHFb2InKsdezK5R8UtVET5KHfUE9A8aC-7E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOM8qeWiZm-MIGLz0OmaElyy6whm5FcqPD95vIrqLgV0J9ydChP95bnyXOfxg"
+        },
+        {
+          "url": "https://247sports.com/college/florida/article/florida-basketball-gators-head-coach-todd-golden-details-win-notre-dame-las-vegas-players-era-292904716/",
+          "title": "Todd Golden provides update on Boogie Fland, reveals who will start if junior unable to play vs. Houston",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXi9DLr-eVjFRbZNnhyfbmm8wwBK7FcC0w2gU9V6cLSbqmCzHhhMP5zN0dR5s"
         }
       ]
     },
     {
-      "query": "albemarle county public schools",
+      "query": "crwd stock",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T20:20:00Z",
+      "published_at": "2026-11-18T21:20:00Z",
       "related_news_urls": [
-        "https://cvillerightnow.com/news/208802-acps-closed-through-thanksgiving-break/",
-        "https://www.cbs19news.com/news/acps-announcing-early-holiday-closure-due-to-compliance-issues/article_45c7eec1-e951-443c-85fa-8e5e2c1a54d0.html",
-        "https://cwibc.co.id/en/albemarle-schools-background-checks"
+        "https://www.benzinga.com/trading-ideas/movers/26/11/63400654/why-is-crowdstrike-stock-surging-on-wednesday",
+        "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-toll-brothers-130005308.html",
+        "https://cwibc.co.id/en/crowdstrike-cybersecurity-stock-rally"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPOxIJ-UuXteGGJnJ0cgiS71hwEGcw6Si7qhyQINl_7Dg24YHSNWXLrzORBes",
-      "image_credit": "Cville Right Now",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeNaF_8GEoV86kw-hPTglYDBlSd1AJzybOuoNij20kb44-dg-xaL-zB2B17bY",
+      "image_credit": "Benzinga",
       "news": [
         {
-          "url": "https://cvillerightnow.com/news/208802-acps-closed-through-thanksgiving-break/",
-          "title": "ACPS closes schools through Thanksgiving break",
-          "publisher": "Cville Right Now",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63400654/why-is-crowdstrike-stock-surging-on-wednesday",
+          "title": "Why Is CrowdStrike Stock Surging on Wednesday?",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPOxIJ-UuXteGGJnJ0cgiS71hwEGcw6Si7qhyQINl_7Dg24YHSNWXLrzORBes"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeNaF_8GEoV86kw-hPTglYDBlSd1AJzybOuoNij20kb44-dg-xaL-zB2B17bY"
         },
         {
-          "url": "https://www.cbs19news.com/news/acps-announcing-early-holiday-closure-due-to-compliance-issues/article_45c7eec1-e951-443c-85fa-8e5e2c1a54d0.html",
-          "title": "ACPS announcing early holiday closure due to ‘compliance issues’",
-          "publisher": "cbs19news.com",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-toll-brothers-130005308.html",
+          "title": "Investors Heavily Search Toll Brothers Inc. (TOL): Here is What You Need to Know",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Lgf-0PkcyZLpB4q1LAKaUD6OOVPC-0kdmiP62k5QYqfDWMpv34a3hEFWRoc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ8q_HcChX0Xv3QFzjPRfufowvvCwauEFGNtg32FIRbLBCul14gNxrqD33MMs"
         },
         {
-          "url": "https://cwibc.co.id/en/albemarle-schools-background-checks",
-          "title": "Albemarle Schools Close After 500 Background Checks Miss Review",
+          "url": "https://cwibc.co.id/en/crowdstrike-cybersecurity-stock-rally",
+          "title": "CrowdStrike Gains 7% as Cybersecurity Stocks Rally",
           "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGBGn-L9et3you-NQQ6UHwVxAN5Zjn6NEAjz7311lYVqp1T6aCWse4oFoVELE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxfaz9Q8B0XgC_mdIrP7rJFc3EK6nEb49oc6iwtgwOiak-cTfscjEbBb9Wn5k"
         }
       ]
     },
     {
-      "query": "mercado cambiario",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T20:20:00Z",
+      "query": "applied compute",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T21:10:00Z",
       "related_news_urls": [
-        "https://www.clarin.com/economia/vuelve-brecha-cambiaria-diferencia-dolar-oficial-financiero-maximo-ano_0_5FEk4nr6ee.html",
-        "https://www.lagaceta.com.ar/nota/1163127/economia/dolar-volvio-subir-blue-marco-record-contado-liquidacion-supero-1700.html",
-        "https://www.cronista.com/finanzas-mercados/se-dispara-el-dolar-y-el-blue-lidera-la-suba-ahora-es-negocio-comprar-oficial-y-revenderlo-en-el-paralelo/"
+        "https://www.wsj.com/tech/ai/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion-39193611",
+        "https://www.bloomberg.com/news/articles/2026-11-18/palo-alto-networks-to-buy-applied-compute-in-4-5-billion-deal",
+        "https://www.theinformation.com/briefings/palo-alto-networks-acquire-ai-firm-applied-compute-4-5-billion"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRb6482mIi8EmqB4emnNvsdX9DOXPD_-GiL8URYPMSHeGmkv6jjAg9Q6YtlXc",
-      "image_credit": "Clarin.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjacKonDRqLp0_gIpBOkxX5k7cbNe-vVQG-s0F3hOb80k28rzI7mBlC3mqKHg",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://www.clarin.com/economia/vuelve-brecha-cambiaria-diferencia-dolar-oficial-financiero-maximo-ano_0_5FEk4nr6ee.html",
-          "title": "¿Vuelve la brecha cambiaria? La diferencia entre el dólar oficial y el financiero está en su máximo en un año",
-          "publisher": "Clarin.com",
+          "url": "https://www.wsj.com/tech/ai/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion-39193611",
+          "title": "Exclusive | Palo Alto Networks to Buy AI-Startup Applied Compute for $4.5 Billion",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRb6482mIi8EmqB4emnNvsdX9DOXPD_-GiL8URYPMSHeGmkv6jjAg9Q6YtlXc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjacKonDRqLp0_gIpBOkxX5k7cbNe-vVQG-s0F3hOb80k28rzI7mBlC3mqKHg"
         },
         {
-          "url": "https://www.lagaceta.com.ar/nota/1163127/economia/dolar-volvio-subir-blue-marco-record-contado-liquidacion-supero-1700.html",
-          "title": "El dólar volvió a subir: el blue marcó un récord y el contado con liquidación superó los $1.700",
-          "publisher": "La Gaceta",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-18/palo-alto-networks-to-buy-applied-compute-in-4-5-billion-deal",
+          "title": "Palo Alto Networks to Buy Applied Compute in $4.5 Billion Deal",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTy_ElkONvcpIIkMB8RQXhFnyOHNAbWX_lv8WPdFB8D9MHAAVGiHneXRfvnrA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFByavy5NrlMRvJQqGYu9D55XtepLqaXEYFITSThGbCS7yye1AkXoHTQCiia0"
         },
         {
-          "url": "https://www.cronista.com/finanzas-mercados/se-dispara-el-dolar-y-el-blue-lidera-la-suba-ahora-es-negocio-comprar-oficial-y-revenderlo-en-el-paralelo/",
-          "title": "Se dispara el dólar y el blue lidera la suba: ahora es negocio comprar oficial y revenderlo en el paralelo",
-          "publisher": "El Cronista",
+          "url": "https://www.theinformation.com/briefings/palo-alto-networks-acquire-ai-firm-applied-compute-4-5-billion",
+          "title": "Palo Alto Networks to Acquire AI Firm Applied Compute for $4.5 Billion",
+          "publisher": "The Information",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdbLyY9Umj_sEAem2voc6TlInyIOFfEp1ulFUE4HR-pvmxy4wRrUDTmb4TgV4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2Xhh66lOPKR4YS_Y-lMTzkfQ8vpgmFIF0fMEv1XUYgzOI322S8mnpgERL7sw"
+        }
+      ]
+    },
+    {
+      "query": "marlon humphrey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T21:10:00Z",
+      "related_news_urls": [
+        "https://www.thebanner.com/sports/ravens-nfl/ravens-marlon-humphrey-podcast-criminals-baltimore-J3G46AD7AVGNHALZSATLYVJ5YQ/",
+        "https://www.wbaltv.com/article/marlon-humphrey-podcast-baltimore-criminals-comments/74468759",
+        "https://www.baltimoresun.com/2026/11/18/ravens-marlon-humphrey-baltimore-criminals/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyuoQLksAumD0lMhQ3xM4r1IvK1oiYJJ7eicdvEVb61L-3oIj754YbIJJnWiI",
+      "image_credit": "The Baltimore Banner",
+      "news": [
+        {
+          "url": "https://www.thebanner.com/sports/ravens-nfl/ravens-marlon-humphrey-podcast-criminals-baltimore-J3G46AD7AVGNHALZSATLYVJ5YQ/",
+          "title": "Ravens’ Marlon Humphrey says Baltimore is ‘best at making criminals’",
+          "publisher": "The Baltimore Banner",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyuoQLksAumD0lMhQ3xM4r1IvK1oiYJJ7eicdvEVb61L-3oIj754YbIJJnWiI"
+        },
+        {
+          "url": "https://www.wbaltv.com/article/marlon-humphrey-podcast-baltimore-criminals-comments/74468759",
+          "title": "Baltimore Ravens' Marlon Humphrey under fire for podcast comments",
+          "publisher": "WBAL-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRO2SjafBV2k47Mn_WvVYFRzn7554T_BjoPNELW_oM1B7ziQmZiksuxkjoHHmI"
+        },
+        {
+          "url": "https://www.baltimoresun.com/2026/11/18/ravens-marlon-humphrey-baltimore-criminals/",
+          "title": "Ravens’ Marlon Humphrey says Baltimore is ‘best at making criminals’ on podcast",
+          "publisher": "Baltimore Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4ivPz4x5RupUIb5OKRreWnXVfK306gS7LO-B6G6M6kWMDRQZ_oMwn3-6SvJU"
         }
       ]
     }
