@@ -3,192 +3,17 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T03:31:19.822702Z",
+  "checked_at": "2026-11-18T04:01:37.326852Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "hornets vs lakers",
+      "query": "timberwolves",
       "approx_searches": "20000+",
-      "published_at": "2026-11-18T03:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50516759/game-highlights",
-        "https://www.espn.com/mens-college-basketball/game/_/gameId/401934595",
-        "https://www.espn.com/college-football/boxscore/_/gameId/401866466"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmsXH1aEHBYmU7cL00BXmhVBei2b7MqpRw9MQUpQTb9AkBy3vdBL4vSuhgt1Q",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50516759/game-highlights",
-          "title": "Jackson State Lady Tigers vs. Arkansas State Red Wolves: Game Highlights",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmsXH1aEHBYmU7cL00BXmhVBei2b7MqpRw9MQUpQTb9AkBy3vdBL4vSuhgt1Q"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401934595",
-          "title": "Simon Fraser vs. Washington (Nov 17, 2026) Live Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhuI2QDWeXT4ULhneWFBctp3562kvu7TLN78gXaC6GfyZyGy5prJX2Ra4Kv_s"
-        },
-        {
-          "url": "https://www.espn.com/college-football/boxscore/_/gameId/401866466",
-          "title": "Miami (OH) vs. Kent State (Nov 17, 2026) Box Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbT0bYcB6fXzSkzXoHLI241fZHMynIyHLNis_QkeQawEwJOZQ-UwBzm3t_Qsc"
-        }
-      ]
-    },
-    {
-      "query": "big ten volleyball tournament",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T03:10:00Z",
-      "related_news_urls": [
-        "https://bigten.org/news/2026/11/17/2026-allstate-big-ten-volleyball-tournament-clinch-update.aspx",
-        "https://www.si.com/college/nebraska/volleyball/big-tenteams-battle-for-seeding-position-on-final-day-of-regular-season-2026",
-        "https://www.jsonline.com/story/sports/college/uw/2026/11/17/wisconsin-badgers-in-big-ten-volleyball-tournament-bracket/92807681007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3rl4v6MImapz7F6HmFZPQ7Pc1o6uwc0p9YxriPyCT80oiBdKRdYJUYdMWcYo",
-      "image_credit": "Big Ten Conference",
-      "news": [
-        {
-          "url": "https://bigten.org/news/2026/11/17/2026-allstate-big-ten-volleyball-tournament-clinch-update.aspx",
-          "title": "2026 Allstate Big Ten Volleyball Tournament Clinch Update",
-          "publisher": "Big Ten Conference",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3rl4v6MImapz7F6HmFZPQ7Pc1o6uwc0p9YxriPyCT80oiBdKRdYJUYdMWcYo"
-        },
-        {
-          "url": "https://www.si.com/college/nebraska/volleyball/big-tenteams-battle-for-seeding-position-on-final-day-of-regular-season-2026",
-          "title": "Big Ten Teams Battle for Seeding Position on Final Day of Regular Season",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmomM8LOIWbMe4ChZLM6UxUp7YwCRIj4q4TikJJ8gthvZiTrfqT-zDtoSpTcc"
-        },
-        {
-          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/17/wisconsin-badgers-in-big-ten-volleyball-tournament-bracket/92807681007/",
-          "title": "What will be Wisconsin volleyball's seed in 2026 Big Ten tournament?",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW6ESjv0BX1YNtoJ1EE_p09LwmORrcsj2VxD1hqirjKlUU50pKxoOaW0NojlA"
-        }
-      ]
-    },
-    {
-      "query": "clean harbors explosion",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T03:10:00Z",
-      "related_news_urls": [
-        "https://www.click2houston.com/news/local/2026/11/18/loud-boom-heard-in-deer-park-as-clean-harbors-reports-incident/",
-        "https://www.khou.com/article/news/local/explosion-fire-clean-harbors-facility-la-porte-houston/285-2f3453d7-a023-47d9-8da2-163cb0afc332",
-        "https://www.fox26houston.com/news/la-porte-explosion-authorities-responding-reported-explosion-clean-harbors-facility"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTszznPP9Zd6zonHr42pITxS_ypnx-aNvtFU4YhjhIluNuOfCSA1TCRpZ0xUzA",
-      "image_credit": "Click2Houston",
-      "news": [
-        {
-          "url": "https://www.click2houston.com/news/local/2026/11/18/loud-boom-heard-in-deer-park-as-clean-harbors-reports-incident/",
-          "title": "Loud boom heard in Deer Park as Clean Harbors reports incident",
-          "publisher": "Click2Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTszznPP9Zd6zonHr42pITxS_ypnx-aNvtFU4YhjhIluNuOfCSA1TCRpZ0xUzA"
-        },
-        {
-          "url": "https://www.khou.com/article/news/local/explosion-fire-clean-harbors-facility-la-porte-houston/285-2f3453d7-a023-47d9-8da2-163cb0afc332",
-          "title": "Explosion, fire reported at Clean Harbors facility in La Porte",
-          "publisher": "KHOU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_eBfHZFv2V6IQYUqCooXSRNqzgzXs9ate4eV9m0btcuWshzFS87if_BLnOY"
-        },
-        {
-          "url": "https://www.fox26houston.com/news/la-porte-explosion-authorities-responding-reported-explosion-clean-harbors-facility",
-          "title": "La Porte explosion: Authorities responding to reported explosion at Clean Harbors facility",
-          "publisher": "FOX 26 Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8nnxZQcc-gJrXKb4BBM4JdAM7-sFgqIpHFcKRDbHBBAEH-Twk_nJip-6cwXI"
-        }
-      ]
-    },
-    {
-      "query": "univision",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T03:10:00Z",
-      "related_news_urls": [
-        "https://listindiario.com/entretenimiento/farandula/20261116/periodista-tanya-charry-sale-gordo-flaca-mas-decada-univision_930336.html",
-        "https://lastopnews.com/2026/11/16/confirmado-tanya-charry-sale-de-univision/",
-        "https://meridiano.net/farandula/tanya-charry-fue-despedida-de-univision-y-de-el-gordo-y-la-flaca-esto-se-conoce-2026111710480"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLOwPLuFj-baY5WcCsu-l8cb5k7SAh4H0BIsv0yjBajBlJjpoJxCIz7zha42U",
-      "image_credit": "Listín Diario",
-      "news": [
-        {
-          "url": "https://listindiario.com/entretenimiento/farandula/20261116/periodista-tanya-charry-sale-gordo-flaca-mas-decada-univision_930336.html",
-          "title": "Periodista Tanya Charry sale de \"El Gordo y la Flaca\" tras más de una década en Univision",
-          "publisher": "Listín Diario",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLOwPLuFj-baY5WcCsu-l8cb5k7SAh4H0BIsv0yjBajBlJjpoJxCIz7zha42U"
-        },
-        {
-          "url": "https://lastopnews.com/2026/11/16/confirmado-tanya-charry-sale-de-univision/",
-          "title": "Confirmado: Tanya Charry sale de Univision",
-          "publisher": "LAS TOP NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJgtsYAreCA1cpjq7ow8ZA4Vi3XOnQ3yXZG1JEylPSDLbd3nXAUGDztRxW6Ss"
-        },
-        {
-          "url": "https://meridiano.net/farandula/tanya-charry-fue-despedida-de-univision-y-de-el-gordo-y-la-flaca-esto-se-conoce-2026111710480",
-          "title": "¿Tanya Charry fue despedida de Univisión y de \"El Gordo y la Flaca\"? Esto se conoce",
-          "publisher": "Meridiano.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX0ZJxbK_OC920fi9c1wqiFms2ExiFBnXxpJwGStyqtmEvFQTfWmXVAyyhAoQ"
-        }
-      ]
-    },
-    {
-      "query": "tecatito",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T03:00:00Z",
-      "related_news_urls": [
-        "https://www.elfutbolero.com.mx/seleccion/tecatito-titular-en-su-casa-cuatro-anos-despues-la-ultima-vez-que-arranco-con-mexico-no-llego-a-la-media-hora-20261118.html",
-        "https://www.excelsior.com.mx/deportes/tecatito-corona-ilusiona-con-mundial-2030-busca-sacarse-espina",
-        "https://siete24.mx/deportes/el-abrazo-que-vale-mas-que-un-mundial-el-hijo-del-tecatito-celebra-su-regreso-al-tri/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQksVRiNuyOZW_PD3EdngzwzujWhw6yX4nDJ2Kw0ddCOa8qUyVHWhu612qpBZI",
-      "image_credit": "El Futbolero México",
-      "news": [
-        {
-          "url": "https://www.elfutbolero.com.mx/seleccion/tecatito-titular-en-su-casa-cuatro-anos-despues-la-ultima-vez-que-arranco-con-mexico-no-llego-a-la-media-hora-20261118.html",
-          "title": "Tecatito, titular en su casa cuatro años después: la última vez que arrancó con México no llegó a la media hora",
-          "publisher": "El Futbolero México",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQksVRiNuyOZW_PD3EdngzwzujWhw6yX4nDJ2Kw0ddCOa8qUyVHWhu612qpBZI"
-        },
-        {
-          "url": "https://www.excelsior.com.mx/deportes/tecatito-corona-ilusiona-con-mundial-2030-busca-sacarse-espina",
-          "title": "Tecatito Corona se ilusiona con el Mundial 2030 en busca de 'sacarse la espina'",
-          "publisher": "Excélsior",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR3T3bhViNyNZNswm-0LrWqX3qUhw1y5IjcPiXrvpyzxMkiESgKjzj4vwTX9s"
-        },
-        {
-          "url": "https://siete24.mx/deportes/el-abrazo-que-vale-mas-que-un-mundial-el-hijo-del-tecatito-celebra-su-regreso-al-tri/",
-          "title": "El abrazo que vale más que un Mundial: el hijo del Tecatito celebra su regreso al Tri",
-          "publisher": "Siete24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlmGkfw4JGnqEvaUUhcIZ_6ysA3weozBSBQ4mOeV8JTQrxYKML7LtYHL7-cGc"
-        }
-      ]
-    },
-    {
-      "query": "timberwolves game",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T03:00:00Z",
+      "published_at": "2026-11-18T03:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nba/story/_/id/50515349/blazers-rule-star-deni-avdija-vs-wolves-sore-foot",
-        "https://www.blazersedge.com/gameday-threads-2/118563/portland-trail-blazers-minnesota-timberwolves-time-tv-injury-report-how-to-watch",
-        "https://www.canishoopus.com/timberwolves-game-previews/72087/nba-thread-portland-trail-blazers-terrence-shannon-jr-deni-avdija"
+        "https://www.canishoopus.com/timberwolves-game-previews/72087/nba-thread-portland-trail-blazers-terrence-shannon-jr-deni-avdija",
+        "https://www.startribune.com/minnesota-timberwolves-portland-trail-blazers-score-today-lamelo-ball-stats-anthony-edwards-injury/601914495"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTppQgfRtHXr9xAHmUAkgybbWNANE-djnkF2rQtHathykH5LzbR58UuqQEJ77E",
       "image_credit": "ESPN",
@@ -201,81 +26,116 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTppQgfRtHXr9xAHmUAkgybbWNANE-djnkF2rQtHathykH5LzbR58UuqQEJ77E"
         },
         {
-          "url": "https://www.blazersedge.com/gameday-threads-2/118563/portland-trail-blazers-minnesota-timberwolves-time-tv-injury-report-how-to-watch",
-          "title": "Discuss the Trail Blazers vs. Timberwolves Rematch Here",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ85gsdXemt0tH1NqUEJMJR_A3YYjCvPwmjIyRE3Opq7Ys6fPAIXrk2dFd84Y"
-        },
-        {
           "url": "https://www.canishoopus.com/timberwolves-game-previews/72087/nba-thread-portland-trail-blazers-terrence-shannon-jr-deni-avdija",
           "title": "Game Preview #15: Wolves vs Trail Blazers Game Thread",
           "publisher": "Canis Hoopus",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQB7eGT18ilRFsB_x_V78OhGyfEn7xQfR-PFe561tm7FYaiPkywiRmSr5gvrfI"
+        },
+        {
+          "url": "https://www.startribune.com/minnesota-timberwolves-portland-trail-blazers-score-today-lamelo-ball-stats-anthony-edwards-injury/601914495",
+          "title": "Live: Wolves have narrow lead over Trail Blazers in second game of back-to-back",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMF5f28kJQPYUiu8PDBxh4cKC-lEq8i-9xPH6NnW-WQNp6xU1kq4-HSueKxc4"
         }
       ]
     },
     {
-      "query": "tecatito corona",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T03:00:00Z",
+      "query": "santiago sandoval",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T03:40:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/selecciones/nota/_/id/17512478/mexico-hormiga-santimi-ranking-minutos-europa",
-        "https://www.si.com/mx/futbol/rafael-marquez-rejuvenece-al-tri-baja-casi-ano-y-medio-el-promedio-de-edad-respecto-al-mundial",
-        "https://www.lajornadamorelos.mx/deportes/merito-sobre-nombres-el-recambio-del-tricolor-apunta-a-croacia-y-rescata-viejos-conocidos/"
+        "https://chivaspasion.bolavip.com/noticias/noticias-de-chivas-hoy-15-de-noviembre-santiago-sandoval-cade-cowell-denzell-garcia-jesus-hernandez-platano-alvarado-y-femenil",
+        "https://www.soyfutbol.com/noticias/santiago-sandoval-responde-sobre-europa-y-deja-clara-su-prioridad-estoy-muy-enfocado-en-chivas-20261117-0026.html",
+        "https://chivaspasion.bolavip.com/noticias/noticias-de-chivas-hoy-17-de-noviembre-santiago-sandoval-hugo-camberos-seleccion-mexicana-y-mercado-de-pases-aQg2k4Y8A5uf"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzZLxprpEKOoB0dkZAAP25VDPRkGWK_drkQW4PYJ6tgPrUYyIbL2uiIaYUJv8",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNXgzz2J60vpzCGInLwxMTxumJuAadm60-PGijGuIO-y0T_kq3bs5tgLnn9Bc",
+      "image_credit": "Rebaño Pasión",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/selecciones/nota/_/id/17512478/mexico-hormiga-santimi-ranking-minutos-europa",
-          "title": "México: Solo dos jugadores superan los mil minutos en Europa",
-          "publisher": "ESPN Deportes",
+          "url": "https://chivaspasion.bolavip.com/noticias/noticias-de-chivas-hoy-15-de-noviembre-santiago-sandoval-cade-cowell-denzell-garcia-jesus-hernandez-platano-alvarado-y-femenil",
+          "title": "Noticias de Chivas HOY, 15 de noviembre: Santiago Sandoval, Cade Cowell, Denzell García, Jesús Hernández, Plátano Alvarado y Femenil",
+          "publisher": "Rebaño Pasión",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzZLxprpEKOoB0dkZAAP25VDPRkGWK_drkQW4PYJ6tgPrUYyIbL2uiIaYUJv8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNXgzz2J60vpzCGInLwxMTxumJuAadm60-PGijGuIO-y0T_kq3bs5tgLnn9Bc"
         },
         {
-          "url": "https://www.si.com/mx/futbol/rafael-marquez-rejuvenece-al-tri-baja-casi-ano-y-medio-el-promedio-de-edad-respecto-al-mundial",
-          "title": "Rafael Márquez rejuvenece al Tri: baja casi año y medio el promedio de edad respecto al Mundial",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.soyfutbol.com/noticias/santiago-sandoval-responde-sobre-europa-y-deja-clara-su-prioridad-estoy-muy-enfocado-en-chivas-20261117-0026.html",
+          "title": "Santiago Sandoval responde sobre Europa y deja clara su prioridad: «Estoy muy enfocado en Chivas",
+          "publisher": "Soy Futbol",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQWil6oRXZpndg_uggV5snJpTt9-N7qEb2TUZo-VIcWwL0fNyp53KbmgZ6q0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZAj7e1GVT38MYgVx6bk-xfdts3ut1DW3yWHns7XCKO4FQdzZQQt2Tw6tFw0"
         },
         {
-          "url": "https://www.lajornadamorelos.mx/deportes/merito-sobre-nombres-el-recambio-del-tricolor-apunta-a-croacia-y-rescata-viejos-conocidos/",
-          "title": "Mérito sobre nombres: El recambio del Tricolor apunta a Croacia y rescata viejos conocidos",
-          "publisher": "La Jornada Morelos",
+          "url": "https://chivaspasion.bolavip.com/noticias/noticias-de-chivas-hoy-17-de-noviembre-santiago-sandoval-hugo-camberos-seleccion-mexicana-y-mercado-de-pases-aQg2k4Y8A5uf",
+          "title": "Noticias de Chivas HOY 17 de noviembre: Santiago Sandoval, Hugo Camberos, Selección Mexicana y Mercado de Pases",
+          "publisher": "Rebaño Pasión",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAjcR1jqiZWJJxZwCatfiJMSWro2c23Yn7OyVh2xccSPNUeo_PeM7yQ16oo84"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ98febz1wLNxOrFrczNe8f5l2EbwKXhjKEDJWwBTWsY2ganKlQpi2A1cQiLyo"
         }
       ]
     },
     {
-      "query": "lakers vs hornets",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T03:00:00Z",
+      "query": "dylan harper injury",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T03:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-hornets-vs-lakers-nba-030000957.html",
-        "https://www.sportsline.com/insiders/lakers-vs-hornets-prediction-odds-line-proven-model-reveals-nba-picks-for-tuesday-nov-17/",
-        "https://www.cbssports.com/betting/news/lakers-hornets-prediction-odds-time-2026-nba-picks-best-bets-tuesday-november-17/"
+        "https://sports.yahoo.com/nba/breaking-news/article/spurs-guard-dylan-harper-slips-on-court-late-in-loss-to-pistons-limps-off-with-apparent-groin-injury-033925334.html",
+        "https://www.usatoday.com/story/sports/nba/spurs/2026/11/17/dylan-harper-injury-update-spurs-pistons/92838014007/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/dylan-harper-groin-helped-to-locker-room-in-4th"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLjj4a-n-zBcwmKgsHv1vOyvxQDOmb-8Z9STK3midUm9fFSc8VXIlie5tiF-c",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_n-Z3HPuAcQxrO9c9H8oNuykOmOuuE9lT5R5j7wrd911v576pQgWvmCt_U8",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-hornets-vs-lakers-nba-030000957.html",
-          "title": "How to watch Hornets vs Lakers: NBA, live stream, TV channel, start time",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/spurs-guard-dylan-harper-slips-on-court-late-in-loss-to-pistons-limps-off-with-apparent-groin-injury-033925334.html",
+          "title": "Spurs guard Dylan Harper slips on court late in loss to Pistons, limps off with apparent groin injury",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLjj4a-n-zBcwmKgsHv1vOyvxQDOmb-8Z9STK3midUm9fFSc8VXIlie5tiF-c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_n-Z3HPuAcQxrO9c9H8oNuykOmOuuE9lT5R5j7wrd911v576pQgWvmCt_U8"
         },
+        {
+          "url": "https://www.usatoday.com/story/sports/nba/spurs/2026/11/17/dylan-harper-injury-update-spurs-pistons/92838014007/",
+          "title": "Dylan Harper injured late in Spurs' loss to Pistons",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp0CCTR-YNNpnvPsLNVwuo2vv-ga7DozljDMy7kXHht6x0KJ2shfd3k_9kNSU"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/dylan-harper-groin-helped-to-locker-room-in-4th",
+          "title": "Dylan Harper (groin) helped to locker room in 4th",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_0v6BftuLoofBx0A0tTKRFbIgC8OGBoi1p6DSX1_wd1vAvUxz27uQwWPgxYA"
+        }
+      ]
+    },
+    {
+      "query": "lakers vs hornets prediction",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T03:40:00Z",
+      "related_news_urls": [
+        "https://www.sportsline.com/insiders/lakers-vs-hornets-prediction-odds-line-proven-model-reveals-nba-picks-for-tuesday-nov-17/",
+        "https://sports.yahoo.com/articles/watch-hornets-vs-lakers-nba-030000957.html",
+        "https://www.cbssports.com/betting/news/lakers-hornets-prediction-odds-time-2026-nba-picks-best-bets-tuesday-november-17/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqZeLlv7QORU9yiF6mR88m4IttmRfln_Gh2Jr1NJAn_gsQAa3FV4Z2pBNgVOY",
+      "image_credit": "SportsLine",
+      "news": [
         {
           "url": "https://www.sportsline.com/insiders/lakers-vs-hornets-prediction-odds-line-proven-model-reveals-nba-picks-for-tuesday-nov-17/",
           "title": "Lakers vs. Hornets prediction, odds, line: Proven model reveals NBA picks for Tuesday, Nov. 17",
           "publisher": "SportsLine",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqZeLlv7QORU9yiF6mR88m4IttmRfln_Gh2Jr1NJAn_gsQAa3FV4Z2pBNgVOY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-hornets-vs-lakers-nba-030000957.html",
+          "title": "How to watch Hornets vs Lakers: NBA, live stream, TV channel, start time",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLjj4a-n-zBcwmKgsHv1vOyvxQDOmb-8Z9STK3midUm9fFSc8VXIlie5tiF-c"
         },
         {
           "url": "https://www.cbssports.com/betting/news/lakers-hornets-prediction-odds-time-2026-nba-picks-best-bets-tuesday-november-17/",
@@ -287,72 +147,212 @@
       ]
     },
     {
-      "query": "unlv vs kansas",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T02:50:00Z",
+      "query": "stanford basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T03:40:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/kansas/article/kansas-basketball-players-era-eight-292879159/",
-        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/16/preview-ku-to-begin-players-era-8-with-unlv-matchup/",
-        "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318110442.html"
+        "https://www.sportsgambler.com/betting-tips/basketball/uc-irvine-anteaters-vs-stanford-cardinal-prediction-odds-2026-11-17/",
+        "https://www.bleachernation.com/picks/2026/11/16/acc-basketball-predictions-computer-picks-and-best-bets-november-17-2/",
+        "https://gostanford.com/news/2026/11/16/stanford-hosts-uc-irvine-to-open-two-game-homestand"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUAK-s-nymH2F36061WyAo4BrHFMq6V_YvGVWOB_fZiDxFleKWiOTPqnCKbkE",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://247sports.com/college/kansas/article/kansas-basketball-players-era-eight-292879159/",
-          "title": "The biggest thing Bill Self can learn about his team during Players Era Eight",
-          "publisher": "247Sports",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/uc-irvine-anteaters-vs-stanford-cardinal-prediction-odds-2026-11-17/",
+          "title": "UC Irvine vs Stanford Prediction, Picks & Odds | 17 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUAK-s-nymH2F36061WyAo4BrHFMq6V_YvGVWOB_fZiDxFleKWiOTPqnCKbkE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
         },
         {
-          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/16/preview-ku-to-begin-players-era-8-with-unlv-matchup/",
-          "title": "Preview: KU to begin Players Era 8 with UNLV matchup",
-          "publisher": "KU Sports",
+          "url": "https://www.bleachernation.com/picks/2026/11/16/acc-basketball-predictions-computer-picks-and-best-bets-november-17-2/",
+          "title": "ACC Basketball Predictions, Computer Picks and Best Bets | November 17",
+          "publisher": "Bleacher Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJHGLxcV90crMDxrdUsnpZ7pQ3SshZJUqvpkLZOdlU-9qWqgTl6yeL9gPif_g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-qnK5nzJ9JndAkhlaK1L2ht2bWmKhXoIQ7SYduWBsHE9s_XxD84z4DeD5NdY"
         },
         {
-          "url": "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318110442.html",
-          "title": "KU basketball vs. UNLV at Players Era 8: Probable starters, tipoff, TV, notes",
-          "publisher": "Kansas City Star",
+          "url": "https://gostanford.com/news/2026/11/16/stanford-hosts-uc-irvine-to-open-two-game-homestand",
+          "title": "Stanford Hosts UC Irvine to Open Two-Game Homestand",
+          "publisher": "Stanford Cardinal",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzPT9FcNe3tcxye-E-HrPnevBUeaGG13tohKRsLl-7PY75LYO0fOSl_5AxqTE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfCcEcMeVv-eBTCYmXah5OAaVDJPgBjKISrB2fYgSAtkWaN3vsT6PrC50BQho"
         }
       ]
     },
     {
-      "query": "hunter yurachek",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T02:50:00Z",
+      "query": "uc davis basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T03:40:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/sports/ncaaf/2026/11/15/college-football-winners-losers-week-11-cfp-prediction/92792334007/",
-        "https://www.al.com/alabamafootball/2026/11/where-alabama-landed-in-latest-cfp-rankings.html",
-        "https://247sports.com/college/alabama/article/alabama-learns-latest-college-football-playoff-ranking-after-win-over-vanderbilt-292897667/"
+        "https://www.sportsgambler.com/betting-tips/basketball/alabama-state-hornets-vs-uc-davis-aggies-prediction-odds-2026-11-17/",
+        "https://www.accuscore.com/game/cmwjv3i2wc0wtnw01vhznwl1f",
+        "https://www.bleachernation.com/picks/2026/11/16/mwc-basketball-predictions-computer-picks-and-best-bets-november-18/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4EAl79AcvgSSssrTTF_zc3UzI8leOz3mhkbQfTLpAaBZNEewNc2UmHn7vQcs",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/15/college-football-winners-losers-week-11-cfp-prediction/92792334007/",
-          "title": "Alabama punching CFP ticket leads college football Week 11 winners and losers",
-          "publisher": "USA Today",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/alabama-state-hornets-vs-uc-davis-aggies-prediction-odds-2026-11-17/",
+          "title": "Alabama State vs UC Davis Prediction, Picks & Odds | 17 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4EAl79AcvgSSssrTTF_zc3UzI8leOz3mhkbQfTLpAaBZNEewNc2UmHn7vQcs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
         },
         {
-          "url": "https://www.al.com/alabamafootball/2026/11/where-alabama-landed-in-latest-cfp-rankings.html",
-          "title": "Did Alabama’s resume taking a hit hurt Crimson Tide in CFP rankings?",
-          "publisher": "AL.com",
+          "url": "https://www.accuscore.com/game/cmwjv3i2wc0wtnw01vhznwl1f",
+          "title": "Alabama State vs UC Davis Prediction (Nov 17): UC Davis 88% — Odds & Live Score",
+          "publisher": "AccuScore",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnYEguNpbSV4EvYYBEn_LCBekn_ZMGWGBNBATyLX_YYYaEA2x9N4My_MFx9L8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnCkHIoo3rkqflc_m2K3Hwlb0lO8-BmbtJvslLnBC_dsgxSDh-oBmAJ-eLUT4"
         },
         {
-          "url": "https://247sports.com/college/alabama/article/alabama-learns-latest-college-football-playoff-ranking-after-win-over-vanderbilt-292897667/",
-          "title": "Alabama learns latest College Football Playoff ranking after win over Vanderbilt",
-          "publisher": "247Sports",
+          "url": "https://www.bleachernation.com/picks/2026/11/16/mwc-basketball-predictions-computer-picks-and-best-bets-november-18/",
+          "title": "MWC Basketball Predictions, Computer Picks and Best Bets | November 18",
+          "publisher": "Bleacher Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVg8TedX8e9ISuBMKxcD-vnKcELgeTyBV6ukvYSq0E7Mj2OBkhkWHqqg25B6M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS63Z6UMcAldTBOPu0gVPCz4YRmNkftvnc4xT9lyeQhiLw-N7PMBY1_j961aeE"
+        }
+      ]
+    },
+    {
+      "query": "lakers starting lineup",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T03:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/lakers-matisse-thybulle-makes-eye-025744831.html",
+        "https://www.silverscreenandroll.com/lakers-analysis/129044/jake-laravia-lakers-analysis-starting-lineup-stats",
+        "https://lakersnation.com/lakers-news-jj-redick-explains-why-he-likes-jake-laravia-in-starting-lineup/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRJNEleLXtFyKlAwGeRFgAhbWKCtOcr5YG8SZHIylK9i9FmmkU6hQwpaU1_5A",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/lakers-matisse-thybulle-makes-eye-025744831.html",
+          "title": "Lakers’ Matisse Thybulle makes eye-opening claim on Jake LaRavia’s overlooked quality",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRJNEleLXtFyKlAwGeRFgAhbWKCtOcr5YG8SZHIylK9i9FmmkU6hQwpaU1_5A"
+        },
+        {
+          "url": "https://www.silverscreenandroll.com/lakers-analysis/129044/jake-laravia-lakers-analysis-starting-lineup-stats",
+          "title": "Jake LaRavia is the glue to the Lakers’ starting lineup",
+          "publisher": "Silver Screen and Roll",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxeByJffsh-W_BcCm7IJ9kyU_ZlbdxqayHzLYDfogxDNJQEyRYMjGfyp0pFyM"
+        },
+        {
+          "url": "https://lakersnation.com/lakers-news-jj-redick-explains-why-he-likes-jake-laravia-in-starting-lineup/",
+          "title": "Lakers News: JJ Redick Explains Why He Likes Jake LaRavia In Starting Lineup",
+          "publisher": "Lakers Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjPSIeilQJo_XB7V3YRm71CuT0QJ1S9xUwX_vhYSRnVcAK0cIoPuWvEEgBgBo"
+        }
+      ]
+    },
+    {
+      "query": "players era 8 bracket",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T03:40:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/basketball-men/article/2026-11-17/2026-players-era-8-bracket-schedule-scores",
+        "https://www.espn.com/mens-college-basketball/story/_/id/50505898/players-era-8-matchups-analysis",
+        "https://espnpressroom.com/press-release/players-era-8-duke-illinois-and-start-of-annual-feast-week-headline-espn-mens-college-basketball-programming-nov-17-22/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzX6kT5Y2MBjvIYTjV_R6G8Yzc1b--634l3rob17aHMopO0fro0zDUCaFHB6s",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-17/2026-players-era-8-bracket-schedule-scores",
+          "title": "2026 Players Era 8: Bracket, schedule, scores",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzX6kT5Y2MBjvIYTjV_R6G8Yzc1b--634l3rob17aHMopO0fro0zDUCaFHB6s"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50505898/players-era-8-matchups-analysis",
+          "title": "Players Era 8 matchups, analysis on Day 1",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKLNDXfqAOpMRbwKSVvWnbNCAKr_MpJHhAnGIBGDeWR3QMczdg55arOtm-H0"
+        },
+        {
+          "url": "https://espnpressroom.com/press-release/players-era-8-duke-illinois-and-start-of-annual-feast-week-headline-espn-mens-college-basketball-programming-nov-17-22/",
+          "title": "Players Era 8, Duke-Illinois and start of annual 'Feast Week' headline ESPN men’s college basketball programming, Nov. 17-22",
+          "publisher": "ESPN Press Room",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTan_xasYGitLd6jlPBmVOl_gyHdQUAznvY8omSqRYWvIfw5m0nZrWJnP2_mU8"
+        }
+      ]
+    },
+    {
+      "query": "daniss jenkins",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T03:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/det-starts-cade-jenkins-huerter-ausar-collins",
+        "https://sports.yahoo.com/videos/back-kevin-huerter-over-10-151540407.html",
+        "https://www.rotowire.com/basketball/headlines/kevin-huerter-news-starting-against-spurs-539662"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTcO9BrGquDp0WeAR-1TrV1zCKNZ5XzTRnQFFkzq_uS4G7TnInJgv3DUmnDVE",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/det-starts-cade-jenkins-huerter-ausar-collins",
+          "title": "DET starts Cade, Jenkins, Huerter, Ausar, Collins",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTcO9BrGquDp0WeAR-1TrV1zCKNZ5XzTRnQFFkzq_uS4G7TnInJgv3DUmnDVE"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/back-kevin-huerter-over-10-151540407.html",
+          "title": "Back Kevin Huerter Over 10.5 Points Tonight",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj_HJ3ywHIVcQBi2jyEmmxJFnY96Wf-1nWG_zTlL6g_XPSWpRK63MhcymvOlc"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/kevin-huerter-news-starting-against-spurs-539662",
+          "title": "Kevin Huerter News: Starting against Spurs",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvI-6jl75fJn10wclXPP3muwo9f10UduqvrxW6rhVQbLdsp1Dw-i_-1bxIWS0"
+        }
+      ]
+    },
+    {
+      "query": "ausar thompson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T03:30:00Z",
+      "related_news_urls": [
+        "https://pistonpowered.com/ausar-thompson-early-mistakes-actually-great-sign",
+        "https://www.9news.com/video/sports/detroit-pistons-show-signs-of-threat-then-collapse-heres-the-mystery-of-ausar-thompsons-impact/535-96d698f0-296e-4f5e-a9a6-54e7e2a07cfb",
+        "https://sportsbook.fanduel.com/teams/nba/roster/coby-white-under-2756"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI21JmE-VMnqNS9_xwtYv9GmS0pSV5_7k8qGzlk5sHNdg_aoJ6pFzACgkN85Q",
+      "image_credit": "PistonPowered",
+      "news": [
+        {
+          "url": "https://pistonpowered.com/ausar-thompson-early-mistakes-actually-great-sign",
+          "title": "Ausar Thompson’s early mistakes are actually a great sign",
+          "publisher": "PistonPowered",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI21JmE-VMnqNS9_xwtYv9GmS0pSV5_7k8qGzlk5sHNdg_aoJ6pFzACgkN85Q"
+        },
+        {
+          "url": "https://www.9news.com/video/sports/detroit-pistons-show-signs-of-threat-then-collapse-heres-the-mystery-of-ausar-thompsons-impact/535-96d698f0-296e-4f5e-a9a6-54e7e2a07cfb",
+          "title": "Detroit Pistons Show Signs Of Threat Then Collapse Here’s The Mystery Of Ausar Thompson’s Impact",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIClJiWf4hQJgi37wPfSIeof8erBAhaqfDKuOp8lcaM0p8NjXG6ciorTz4eUA"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/teams/nba/roster/coby-white-under-2756",
+          "title": "SPORTSBOOK",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_Sp2GuU9xREQxqvxx79SrYcAzc9so8WhabqUSP0e75b0TGTVM6oCGp1Ptsg0"
         }
       ]
     }
