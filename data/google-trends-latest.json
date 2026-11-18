@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T14:01:25.395189Z",
+  "checked_at": "2026-11-18T14:31:18.055702Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "turkey",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T14:10:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/business/energy/iraq-resumes-crude-oil-pumping-export-purposes-via-pipeline-turkey-oil-minister-2026-11-17/",
+        "https://www.arabnews.com/middle-east/iraq-resumes-oil-exports-through-turkish-pipeline-after-12-year-break-3012601",
+        "https://english.globalarabnetwork.com/2026/11/13/iraq-transports-up-to-150000-barrels-of-oil-daily-via-syria/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqsbBAMqeKVn1Z9SBl1meUy4ariZA1EHBwjWcUqFBtDFPPFs7sfOagEdx2n3s",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/business/energy/iraq-resumes-crude-oil-pumping-export-purposes-via-pipeline-turkey-oil-minister-2026-11-17/",
+          "title": "Iraq resumes crude oil pumping for export purposes via pipeline to Turkey, oil minister says",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqsbBAMqeKVn1Z9SBl1meUy4ariZA1EHBwjWcUqFBtDFPPFs7sfOagEdx2n3s"
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/iraq-resumes-oil-exports-through-turkish-pipeline-after-12-year-break-3012601",
+          "title": "Iraq resumes oil exports through Turkish pipeline after 12-year break",
+          "publisher": "Arab News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Og3LLMyzm-nejdkWfXNoQybDNA1uS-CCErXLuJwSuRSrsYAdYx7jGhH4NTE"
+        },
+        {
+          "url": "https://english.globalarabnetwork.com/2026/11/13/iraq-transports-up-to-150000-barrels-of-oil-daily-via-syria/",
+          "title": "Iraq Transports Up to 150,000 Barrels of Oil Daily via Syria",
+          "publisher": "Global Arab Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThMgtazZvSSTpqNOVHNWkZOecoDuW0pw5nMJpn8q0JqmKXi9LSSyMhBT78bKw"
+        }
+      ]
+    },
+    {
+      "query": "brett cooper",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T14:00:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/politics/2026/11/18/trump-was-once-celebrated-by-people-distancing-themselves-his-politics/",
+        "https://www.ft.com/content/676d1291-3007-4a32-9332-abf803d0f581?syn-25a6b1a6=1",
+        "https://newrepublic.com/article/218024/christ-king-trump-conference-maga-manosphere-breaking-apart"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJjlWWsmdfL-E3ijOIGREKKW6skuOZUpz7hLvGHKvEfV3MiqCvdtqT6cnOcXU",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/11/18/trump-was-once-celebrated-by-people-distancing-themselves-his-politics/",
+          "title": "Analysis | Trump was once celebrated by people distancing themselves from his politics",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJjlWWsmdfL-E3ijOIGREKKW6skuOZUpz7hLvGHKvEfV3MiqCvdtqT6cnOcXU"
+        },
+        {
+          "url": "https://www.ft.com/content/676d1291-3007-4a32-9332-abf803d0f581?syn-25a6b1a6=1",
+          "title": "‘There was a lot of gaslighting’: why America’s podcast stars ditched Donald Trump",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR5ibaZWvJuqSFuykXWHfALGfSnCdrgnq002EfGFvknRaMZPfB-l3v-2X__ng"
+        },
+        {
+          "url": "https://newrepublic.com/article/218024/christ-king-trump-conference-maga-manosphere-breaking-apart",
+          "title": "The MAGA Manosphere Is Breaking Apart",
+          "publisher": "The New Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZHbabeZDwZbyD01BEc5P3EpL24ypHRfVJNHcBwyj5p6SQ_iXRTwSzhsbTLSo"
+        }
+      ]
+    },
+    {
+      "query": "northern lights forecast",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T13:50:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/jamiecartereurope/2026/11/17/northern-lights-forecast-12-states-may-see-aurora-this-tuesday-night/",
+        "https://watchers.news/2026/11/17/g1-geomagnetic-storm-watch-kp-4-67-november-17-18-2026/",
+        "https://starlust.org/aurora-alert-coronal-hole-cme-combination-could-trigger-northern-light-visibility-in-u-s-this-week/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZxGacR5VucN5WlvXO7nwfbblqvs4jTLK6dq3OxEy5tDPvk9M0sCkQDpdg3Cc",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/jamiecartereurope/2026/11/17/northern-lights-forecast-12-states-may-see-aurora-this-tuesday-night/",
+          "title": "Northern Lights Forecast: 12 States May See Aurora This Tuesday Night",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZxGacR5VucN5WlvXO7nwfbblqvs4jTLK6dq3OxEy5tDPvk9M0sCkQDpdg3Cc"
+        },
+        {
+          "url": "https://watchers.news/2026/11/17/g1-geomagnetic-storm-watch-kp-4-67-november-17-18-2026/",
+          "title": "G1 geomagnetic storm watch remains in effect as NOAA forecasts Kp 4.67 late on November 17 and early on November 18",
+          "publisher": "The Watchers - Watching the world evolve and transform",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsnnJu-lRqpj2jUGWZdvqER_kHsVdKjYxjhOeG0Z969b49T4Pubin0hk80Vq4"
+        },
+        {
+          "url": "https://starlust.org/aurora-alert-coronal-hole-cme-combination-could-trigger-northern-light-visibility-in-u-s-this-week/",
+          "title": "Aurora alert: Coronal hole-CME combination could trigger northern light visibility in U.S. this week",
+          "publisher": "Starlust.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZFHC5ggGVoq584nYeM2Qlgv4cf3AFRejdDZDyvO3mGoEwGBpWRG-hyLI6Zvk"
+        }
+      ]
+    },
+    {
+      "query": "daniil medvedev",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T13:50:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/unlocked/articles/medvedev-sliding-tour-moment-november-2026",
+        "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live",
+        "https://www.atptour.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0zOt0Fl3fTGuv_NRSrps8mUWw6Nf_jU_iBfJ9DpfYrt__3S8BKHGoMZ_Gs70",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/unlocked/articles/medvedev-sliding-tour-moment-november-2026",
+          "title": "Medvedev on his pivotal 2019 streak: When ‘super steady’ became super speed!",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0zOt0Fl3fTGuv_NRSrps8mUWw6Nf_jU_iBfJ9DpfYrt__3S8BKHGoMZ_Gs70"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live",
+          "title": "Carlos Alcaraz v Daniil Medvedev: ATP Finals tennis group stage – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRnr5RgofcaL6yn7dxXcUtj6k_HUYQdEzO4KwlG2H5a7MUtKNR3zZaKsu0as8"
+        },
+        {
+          "url": "https://www.atptour.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november",
+          "title": "What are the Nitto ATP Finals semi-final qualification scenarios?",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5Wm32fgXm9tlYGR8NxSOWRWfrZrQRGXY6sAakmttmpjwEdIjv8z8N7Y-kIdU"
+        }
+      ]
+    },
     {
       "query": "carlos alcaraz",
       "approx_searches": "2000+",
@@ -13,7 +153,7 @@
       "related_news_urls": [
         "https://as.com/meristation/libros/sergio-ramos-y-carlos-alcaraz-entran-en-el-guinness-de-los-records-con-dos-marcas-para-la-historia-f202611-n/",
         "https://www.eurosport.es/tenis/atp-finals-1/2026/carlos-alcaraz-entrenamiento-promesa-tenis-mundial-brasileni-guto-miguel-quien-es-hoy_sto23356170/story.shtml",
-        "https://www.laopiniondemalaga.es/deportes/2026/11/18/atp-finals-directo-carlos-alcaraz-136575776.html"
+        "https://holanews.com/alcaraz-entrena-con-la-promesa-brasilena-guto-miguel/"
       ],
       "image_url": null,
       "image_credit": "Diario AS",
@@ -33,11 +173,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE63UjLGMXH-HObT6koooibYDEqaz49HOh7K1quQY9AHghEaVfupsjOsskL1s"
         },
         {
-          "url": "https://www.laopiniondemalaga.es/deportes/2026/11/18/atp-finals-directo-carlos-alcaraz-136575776.html",
-          "title": "ATP Finals, en directo: Carlos Alcaraz - Daniil Medvedev",
-          "publisher": "La Opinión de Málaga",
+          "url": "https://holanews.com/alcaraz-entrena-con-la-promesa-brasilena-guto-miguel/",
+          "title": "Alcaraz entrena con la promesa brasileña Guto Miguel",
+          "publisher": "HolaNews",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPYjvgv6nbkzWIzdr4-tJgbcnNybE8v2fCSbqZJiJb5U2Sn4xih_o_T35bKBg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJb_3ZTAVPWSh7lfHgJMg-6rl6--dxy1R3bAeHdW3WuI_ERyD34Ls9K49NYnk"
         }
       ]
     },
@@ -77,48 +217,13 @@
       ]
     },
     {
-      "query": "glenn close",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T13:00:00Z",
-      "related_news_urls": [
-        "https://www.huffpost.com/entry/glenn-close-cult-honorary-oscar-speech_n_6afb7ea2e4b04eba4d469d66",
-        "https://www.thedailybeast.com/glenn-close-shares-dark-details-of-childhood-in-restrictive-cult",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/glenn-close-opens-painful-cult-195631686.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSDVybm-2x9ADbP130xwxTZLenLmaBDgD6tR8toZNhxdZXEzfmP04KwFMBG_8",
-      "image_credit": "HuffPost",
-      "news": [
-        {
-          "url": "https://www.huffpost.com/entry/glenn-close-cult-honorary-oscar-speech_n_6afb7ea2e4b04eba4d469d66",
-          "title": "Glenn Close Recalls Growing Up In A ‘Restrictive Cult’ During Emotional Honorary Oscar Speech",
-          "publisher": "HuffPost",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSDVybm-2x9ADbP130xwxTZLenLmaBDgD6tR8toZNhxdZXEzfmP04KwFMBG_8"
-        },
-        {
-          "url": "https://www.thedailybeast.com/glenn-close-shares-dark-details-of-childhood-in-restrictive-cult",
-          "title": "Legendary Actress Shares Dark Secrets of ‘Restrictive Cult’",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0FxTNBspw6LCNIc2ls9iYoCRKsDuYkBRaAL18pO2JyHwVaVYotr1L7h1S-vs"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/glenn-close-opens-painful-cult-195631686.html",
-          "title": "Glenn Close Opens Up About Painful Cult Upbringing: ‘I Was Always on the Outside Looking In’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx7ABTCDv4d8sKsqk_B4mWF56BkVpYDK_N-k3ILc5DZaQriczHycRFTZ-q2K8"
-        }
-      ]
-    },
-    {
       "query": "anthropic ipo",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-18T13:00:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html",
-        "https://www.cnbc.com/video/2026/11/18/anthropic-set-to-price-ipo-today-heres-what-to-expect.html",
-        "https://finance.yahoo.com/markets/stocks/article/theres-no-difference-between-buying-anthropics-ipo-and-amazons-ipo-kevin-oleary-190707549.html"
+        "https://www.cnbc.com/video/2026/11/18/anthropic-ipo-retail-investors.html",
+        "https://www.newyorker.com/news/the-lede/anthropic-and-the-monetization-of-paradise"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmBuq8M7_uCVnoA86HkHJlPg2clRAHtUUQHk_V6m0su8D8SFgORgH0EegGEI",
       "image_credit": "The New York Times",
@@ -131,64 +236,64 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmBuq8M7_uCVnoA86HkHJlPg2clRAHtUUQHk_V6m0su8D8SFgORgH0EegGEI"
         },
         {
-          "url": "https://www.cnbc.com/video/2026/11/18/anthropic-set-to-price-ipo-today-heres-what-to-expect.html",
-          "title": "Anthropic set to price IPO today: Here's what to expect",
+          "url": "https://www.cnbc.com/video/2026/11/18/anthropic-ipo-retail-investors.html",
+          "title": "Anthropic's $1.4 trillion IPO has retail investors divided over whether to buy or wait",
           "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROmaUqcmXx82zm7oVW-54DfaGMM3nwfdU2TiqlrqxWIy4RYr5ytVTwy6Tye8o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_1ufOzJxYOmKN8R31kee5KKCzN8ElHh0wtROV_-93Fym082xqByBIHgppTVw"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/article/theres-no-difference-between-buying-anthropics-ipo-and-amazons-ipo-kevin-oleary-190707549.html",
-          "title": "There's 'no difference' between buying Anthropic's IPO and Amazon's IPO: Kevin O'Leary",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.newyorker.com/news/the-lede/anthropic-and-the-monetization-of-paradise",
+          "title": "Anthropic and the Monetization of Paradise",
+          "publisher": "The New Yorker",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHw_TDRCIYSPsCYGUcfDV2D_KC0UxnKyP9slhDP5Ir-TOHw-inqUg0yODY6GM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPVfYDqOJvjOdjVmRsWWvx3pOZQF7oiY_d4IYSdtxqbfZ7tW4Uii-Clytsvs0"
         }
       ]
     },
     {
-      "query": "flood warning",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T12:50:00Z",
+      "query": "glenn close",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T13:00:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
-        "https://www.wesh.com/article/central-florida-flood-watch-heavy-rain-orlando-weather/74463066",
-        "https://weather.com/2026/11/18/news/weather/florida-flood-forecast-dry-season"
+        "https://www.elle.com/culture/celebrities/a74427141/zendaya-photos-governors-awards-2026/",
+        "https://www.theguardian.com/film/2026/nov/16/governers-awards-honorary-oscars",
+        "https://people.com/ridley-scott-dedicates-his-first-oscar-to-late-brother-tony-scott-12258267"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQJ-wHw1YoFr7vQr-6-3PkermWvdwCRcNhU_VCYjuV0hN0ZTZLk3syXNz9PUU",
+      "image_credit": "ELLE",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
-          "title": "Severe flooding hits parts of coastal Florida from over a foot of rain … and a lot more is incoming",
-          "publisher": "CNN",
+          "url": "https://www.elle.com/culture/celebrities/a74427141/zendaya-photos-governors-awards-2026/",
+          "title": "Zendaya Channels ‘Dune’ in a Glittering Sculptural Gown at the 2026 Governors Awards",
+          "publisher": "ELLE",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFhKj3BsfZrnaG2hOSmQDGcWVpv8HqPTiOWDHOgYrr_HqNBK2JXwV8f3N0IN8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQJ-wHw1YoFr7vQr-6-3PkermWvdwCRcNhU_VCYjuV0hN0ZTZLk3syXNz9PUU"
         },
         {
-          "url": "https://www.wesh.com/article/central-florida-flood-watch-heavy-rain-orlando-weather/74463066",
-          "title": "Flood threat grows across Central Florida as additional inches of rain move in",
-          "publisher": "WESH",
+          "url": "https://www.theguardian.com/film/2026/nov/16/governers-awards-honorary-oscars",
+          "title": "Glenn Close cries! John Malkovich weeps! But it’s Nathan Fielder everyone wants to talk to at the honorary Oscars",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyFjs49oi_7_kp4blYzqr8g-1Xk1TDaLrRTx_5118IexCw0yiFKisyf1OG1VQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMYSzor6gCCNOx1avJIlqLhno_klyuwdisl0ngcN0TQTMi0FN2droCQ7JE1Dc"
         },
         {
-          "url": "https://weather.com/2026/11/18/news/weather/florida-flood-forecast-dry-season",
-          "title": "Why parts of Florida are flooding during the dry season",
-          "publisher": "The Weather Channel",
+          "url": "https://people.com/ridley-scott-dedicates-his-first-oscar-to-late-brother-tony-scott-12258267",
+          "title": "Ridley Scott Dedicates His First Oscar to Late Brother, Top Gun Director Tony Scott, in Emotional Speech",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xYUBxdnCnl2ZeAJ8Om0QkQCxhsqARSzi04cX_jbe_oVR6BQtnhnDWE2rQyw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXKLOaqwXnJgSsKwJPBcVUyHk6yS6tj0WOGTxdliu-kTRc5LnRCEKoT6GJTw8"
         }
       ]
     },
     {
       "query": "toxic hall of shame",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T12:50:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/18/health/2026-toxic-hall-of-shame-wellness",
-        "https://toxicfreefuture.org/press-room/new-report-finds-nearly-half-of-major-retailers-evaluated-are-backsliding-on-efforts-to-protect-health-from-toxic-chemicals-and-plastics/",
-        "https://toxicfreefuture.org/take-action/tell-retailers-in-the-toxic-hall-of-shame-its-past-time-to-restrict-harmful-chemicals-and-plastics/"
+        "https://www.einpresswire.com/article/957486071/nearly-half-of-major-retailers-evaluated-are-backsliding-on-efforts-to-protect-health-from-toxic-chemicals-plastics",
+        "https://news.jkn.co.kr/editions/english/post/1105632"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMONzaJJfI692PEXne5npr7z1VD2H__M0X04Z2uI7vE8tGoWL3jMPRqE-IU1Q",
       "image_credit": "CNN",
@@ -201,158 +306,53 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMONzaJJfI692PEXne5npr7z1VD2H__M0X04Z2uI7vE8tGoWL3jMPRqE-IU1Q"
         },
         {
-          "url": "https://toxicfreefuture.org/press-room/new-report-finds-nearly-half-of-major-retailers-evaluated-are-backsliding-on-efforts-to-protect-health-from-toxic-chemicals-and-plastics/",
-          "title": "New report finds nearly half of major retailers evaluated are backsliding on efforts to protect health from toxic chemicals and plastics",
-          "publisher": "Toxic-Free Future",
+          "url": "https://www.einpresswire.com/article/957486071/nearly-half-of-major-retailers-evaluated-are-backsliding-on-efforts-to-protect-health-from-toxic-chemicals-plastics",
+          "title": "Nearly half of major retailers evaluated are backsliding on efforts to protect health from toxic chemicals & plastics",
+          "publisher": "EIN Presswire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxycM5CKY0-rQNpr_4xWQktcMFTuoapEmNfmnVNLS-txPrSWxcs3pxdzxXySA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQGLkDYmmuAnjfVQhsSFX7gwpkH5K8sY9-Jvd0sy1zTMbJU21CpkddP3pq2po"
         },
         {
-          "url": "https://toxicfreefuture.org/take-action/tell-retailers-in-the-toxic-hall-of-shame-its-past-time-to-restrict-harmful-chemicals-and-plastics/",
-          "title": "Tell retailers in the Toxic Hall of Shame it’s past time to restrict harmful chemicals and plastics!",
-          "publisher": "Toxic-Free Future",
+          "url": "https://news.jkn.co.kr/editions/english/post/1105632",
+          "title": "Toxic-Free Future Report Assigns Failing Grades to 16 Major North American Retailers : Global : JKN",
+          "publisher": "재경일보",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJz9UD2Ul3twfeTqs9lUVUAi2XLEHtQi69SlAnjIS4rEc_r-ja9m52VICUKIA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl2ukMIS5LSRBikoGeZHv-zTIs6b14qKZxkt78XESXuX5WFMZKRVjNW2BdzOQ"
         }
       ]
     },
     {
       "query": "gta 6 radio stations",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-18T12:50:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/games/2026/nov/16/auto-tunes-music-grand-theft-auto-conquered-zeitgeist-gta",
-        "https://www.nytimes.com/2026/11/18/arts/music/grand-theft-auto-vi-circoloco-justice.html",
-        "https://mashable.com/life/gta-6-every-artist-track"
+        "https://www.cultr.com/news/tuning-in-to-leonida-every-radio-station-in-gta-vi-gta-6/",
+        "https://www.gamespot.com/articles/how-to-listen-to-music-and-podcasts-on-your-phone-in-gta-6/",
+        "https://beebom.com/how-to-get-headphones-and-earbuds-in-gta-6/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMQs6PFZmW3l2OV16WF2kZylswcRd1jHCPVXzMc7dBu4KFEAXxdGz2b5vEKTQ",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe7DdQJ6UIJHAbCrooP1quD7B4IihJKCSwXFCXQSjBhZe2hKukKZSETVPIdVk",
+      "image_credit": "CULTR",
       "news": [
         {
-          "url": "https://www.theguardian.com/games/2026/nov/16/auto-tunes-music-grand-theft-auto-conquered-zeitgeist-gta",
-          "title": "Killer tunes: how Grand Theft Auto conquered the music world",
-          "publisher": "The Guardian",
+          "url": "https://www.cultr.com/news/tuning-in-to-leonida-every-radio-station-in-gta-vi-gta-6/",
+          "title": "Tuning In to Leonida: Every Radio Station in GTA VI (GTA 6)",
+          "publisher": "CULTR",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMQs6PFZmW3l2OV16WF2kZylswcRd1jHCPVXzMc7dBu4KFEAXxdGz2b5vEKTQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe7DdQJ6UIJHAbCrooP1quD7B4IihJKCSwXFCXQSjBhZe2hKukKZSETVPIdVk"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/18/arts/music/grand-theft-auto-vi-circoloco-justice.html",
-          "title": "The Sound of G.T.A. VI Was Born on the Dance Floor",
-          "publisher": "The New York Times",
+          "url": "https://www.gamespot.com/articles/how-to-listen-to-music-and-podcasts-on-your-phone-in-gta-6/",
+          "title": "How To Listen To Music And Podcasts On Your Phone In GTA 6",
+          "publisher": "GameSpot",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSiIZeGulCyiKd4hM0Q7gyjGPpyAJzvbG3Abl6YhPIQQNCGuluBs3e8mhJy2Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwWNIqLguA7IpRNyAUHLbTAywK70ECuYOKZMj6A43pIKDXkFiRlrF4y1X5nwk"
         },
         {
-          "url": "https://mashable.com/life/gta-6-every-artist-track",
-          "title": "The full 'GTA 6' soundtrack reportedly leaked: See all artists and tracks",
-          "publisher": "Mashable",
+          "url": "https://beebom.com/how-to-get-headphones-and-earbuds-in-gta-6/",
+          "title": "How to Get Headphones and Earbuds in GTA 6",
+          "publisher": "Beebom",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQP58gHEK1UeRdmsoviDSGcLLq3gMZ-4n1gnTk2i-xOM4IhJd2eIYZNT48n5zA"
-        }
-      ]
-    },
-    {
-      "query": "can you play gta 6 right now",
-      "approx_searches": "100+",
-      "published_at": "2026-11-18T12:40:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/gta-6-xbox-series-s-how-it-runs",
-        "https://www.purexbox.com/features/10-features-that-surprised-me-while-playing-gta-6-on-xbox-series-x",
-        "https://metro.co.uk/2026/11/17/games-inbox-will-gta-6-tech-problems-launch-29797346/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgoZt7yJfg9CSyo1WrsCt0IuaYgzNKHCaFcn06ugoLbTEGPaWKCKdlg5Cweig",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/gta-6-xbox-series-s-how-it-runs",
-          "title": "'GTA 6' on Xbox Series S: How well it actually runs",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgoZt7yJfg9CSyo1WrsCt0IuaYgzNKHCaFcn06ugoLbTEGPaWKCKdlg5Cweig"
-        },
-        {
-          "url": "https://www.purexbox.com/features/10-features-that-surprised-me-while-playing-gta-6-on-xbox-series-x",
-          "title": "10 Features That Surprised Me While Playing GTA 6 On Xbox Series X",
-          "publisher": "Pure Xbox",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8Wnw5moeOIhDfL_L1W1qiRP-Gh9uHAYY7EmWbrXQDBvTN0eND_mffQpc17M"
-        },
-        {
-          "url": "https://metro.co.uk/2026/11/17/games-inbox-will-gta-6-tech-problems-launch-29797346/",
-          "title": "Games Inbox: Will GTA 6 have tech problems at launch?",
-          "publisher": "Metro.co.uk",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpcm8kixbtL1ylTU5su4j96SoKKl1sAqQid-wci2zOiWkeQVGEVa1Lfj93n9o"
-        }
-      ]
-    },
-    {
-      "query": "carrie ann inaba dwts comfort",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T12:30:00Z",
-      "related_news_urls": [
-        "https://ew.com/carrie-ann-inaba-leaves-dwts-judges-table-to-comfort-contestant-12261819",
-        "https://thetab.com/realityshrine/2026/11/17/connor-woods-net-worth-as-the-podcaster-and-comedian-gets-paid-thousands-for-dwts/",
-        "https://www.the-sun.com/tv/17320101/dwts-carrie-ann-inaba-hug-connor-wood/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-8lPAC77hAuRyYNBlBcsDG30CqZPr4bsfypda5xIyerAnhtxKRWL_CdIWsI",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/carrie-ann-inaba-leaves-dwts-judges-table-to-comfort-contestant-12261819",
-          "title": "Carrie Ann Inaba leaves ‘DWTS’ judges table to comfort contestant: ‘You’re doing so great’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-8lPAC77hAuRyYNBlBcsDG30CqZPr4bsfypda5xIyerAnhtxKRWL_CdIWsI"
-        },
-        {
-          "url": "https://thetab.com/realityshrine/2026/11/17/connor-woods-net-worth-as-the-podcaster-and-comedian-gets-paid-thousands-for-dwts/",
-          "title": "Connor Wood’s net worth, as the podcaster and comedian gets paid thousands for DWTS",
-          "publisher": "The Tab",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0dwa6yZG31h4QHSgYz31CTA2MbC--aplVS-8QWHaQxzV98LHAap8KizO-WNs"
-        },
-        {
-          "url": "https://www.the-sun.com/tv/17320101/dwts-carrie-ann-inaba-hug-connor-wood/",
-          "title": "DWTS judge Carrie Ann Inaba JUMPS out of her seat and runs to the ballroom floor after Connor Wood’s dance",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpNifeF0X_GOGNS9iwmv9vMFQrZ5e1WCciMUdF4sdTWXCcwtQEDntRb7Hc5gk"
-        }
-      ]
-    },
-    {
-      "query": "jason eck",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T12:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/names-linked-fsus-coaching-job-225044091.html",
-        "https://www.sportsbettingdime.com/news/college-football/updated-florida-state-next-head-coach-odds-jimbo-fisher-glenn-schumann/",
-        "https://www.yardbarker.com/college_football/articles/why_wake_forests_jake_dickert_is_not_a_candidate_for_florida_state_job/s1_13132_44542233"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEpUAagjxh7OrfOZsGEwIEcP0Wd5iNdSVy5nXHTfZTScOH3d0xG4OmFwx0ek",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/names-linked-fsus-coaching-job-225044091.html",
-          "title": "How the Names Linked to FSU's Coaching Job Performed This Weekend",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEpUAagjxh7OrfOZsGEwIEcP0Wd5iNdSVy5nXHTfZTScOH3d0xG4OmFwx0ek"
-        },
-        {
-          "url": "https://www.sportsbettingdime.com/news/college-football/updated-florida-state-next-head-coach-odds-jimbo-fisher-glenn-schumann/",
-          "title": "Updated Florida State Next Head Coach Odds: Schumann Leads, Fisher Passes Diaz",
-          "publisher": "Sports Betting Dime",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2ctM6eiyEGXflfo0gyebIfhI8eeD86ddOjTDS_lJN5F3eN7bw8ZrbPvcyaaM"
-        },
-        {
-          "url": "https://www.yardbarker.com/college_football/articles/why_wake_forests_jake_dickert_is_not_a_candidate_for_florida_state_job/s1_13132_44542233",
-          "title": "Why Wake Forest's Jake Dickert is not a candidate for Florida State job",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPdnreTjxvml9oiQCj5zj2LZDz_8EQWOc1Li1h9LEGweRTO0TSccjCLUYfbQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSP28VojkN6VonprnPkQl8qWAniUlcd2_JqL23U0oHTX5LenZeVWzdzLA07vrY"
         }
       ]
     }
