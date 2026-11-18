@@ -29,3 +29,25 @@ export function chooseNextAsteroid(entries,currentId,seenIds=[],randomIndex=0){
  if(!pool.length)pool=entries;
  return pool[((Math.trunc(randomIndex)%pool.length)+pool.length)%pool.length];
 }
+
+/* Respect an authoritative empty public catalog. Only use static source records
+ * after a transport/error/schema failure, never when the D1 owner removed rows. */
+export async function readAsteroidCatalog(fetcher,apiUrl,fallbackUrl){
+ try{
+  const response=await fetcher(apiUrl,{cache:'no-store'});
+  if(!response.ok)throw Error('public_catalog_unavailable');
+  const body=await response.json();
+  if(body?.ok!==true||!Array.isArray(body.episodes))throw Error('invalid_public_catalog');
+  return {episodes:normalizeAsteroidCatalog(body.episodes),source:'Media Star public D1 index',unavailable:false};
+ }catch{
+  try{
+   const response=await fetcher(fallbackUrl,{cache:'no-store'});
+   if(!response.ok)throw Error('source_file_unavailable');
+   const body=await response.json();
+   if(body?.handle!=='A5T3R0lD'||!Array.isArray(body.episodes))throw Error('invalid_source_file');
+   return {episodes:normalizeAsteroidCatalog(body.episodes),source:'source-backed fallback',unavailable:false};
+  }catch{
+   return {episodes:[],source:'no catalog available',unavailable:true};
+  }
+ }
+}
