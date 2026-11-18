@@ -32,3 +32,28 @@ test('source-backed static index contains only direct Space records',()=>{
  assert.equal(normalizeAsteroidCatalog(raw.episodes).length,1);
  assert.match(raw.discoveryPost,/^https:\/\/x\.com\/A5T3R0lD\/status\/[0-9]+$/);
 });
+
+
+test('a successful empty D1 result stays empty without resurrecting stale fallback episodes',async()=>{
+ const {readAsteroidCatalog}=await import('../asteroid-spaces-model.mjs');
+ let fallbackCalls=0;
+ const fetcher=async url=>{
+  if(url==='/live')return {ok:true,json:async()=>({ok:true,episodes:[]})};
+  fallbackCalls++;
+  return {ok:true,json:async()=>({handle:'A5T3R0lD',episodes:[good]})};
+ };
+ const result=await readAsteroidCatalog(fetcher,'/live','/fallback');
+ assert.deepEqual(result.episodes,[]);
+ assert.equal(result.source,'Media Star public D1 index');
+ assert.equal(fallbackCalls,0);
+});
+test('an unavailable public D1 endpoint uses the validated source-only fallback',async()=>{
+ const {readAsteroidCatalog}=await import('../asteroid-spaces-model.mjs');
+ const fetcher=async url=>{
+  if(url==='/live')return {ok:false,status:503};
+  return {ok:true,json:async()=>({handle:'A5T3R0lD',episodes:[good]})};
+ };
+ const result=await readAsteroidCatalog(fetcher,'/live','/fallback');
+ assert.equal(result.episodes.length,1);
+ assert.equal(result.source,'source-backed fallback');
+});
