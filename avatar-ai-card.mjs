@@ -2,6 +2,7 @@
  * Explicit copy / drag-and-drop handoff only; no ChatGPT account scraping.
  */
 import {buildAvatarPrompt} from './avatar-ai-core.mjs';
+import {mountAvatarEsp32Input} from './avatar-esp32-card.mjs';
 const make=(tag,klass,text)=>{const element=document.createElement(tag);if(klass)element.className=klass;if(text!==undefined)element.textContent=text;return element};
 
 export function mountAvatarAiCard(parent){
@@ -32,6 +33,7 @@ export function mountAvatarAiCard(parent){
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const refresh=()=>{prompt.value=buildAvatarPrompt(focus.value);};
  focus.addEventListener('input',refresh);refresh();
+ mountAvatarEsp32Input(box,focus,refresh);
  drag.addEventListener('dragstart',event=>{
   if(!event.dataTransfer)return;
   const value=buildAvatarPrompt(focus.value);

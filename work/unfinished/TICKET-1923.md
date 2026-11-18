@@ -69,3 +69,11 @@ Check the PR's exact-head CI, especially `test/avatar-ai-card.test.mjs`, `test/s
 - Test-first integration regression committed on PR #1924 branch: `134a2b34a7920598fe675650e0bb1899c7e35b9c`, corrected test literal escaping at `e515242be8bb4d0c933a85695911e200c59d9002`.
 - Integrate all #1925 source paths with second Git parent, preserving #1924's private Nuance card and owner-only Brain audit and #1925's visitor-neutral public card.
 - Keep one #1923 ticket and one routing index row. Exact-head CI, independent approval, merge, deployment and browser/Android receipts still required. No original full archive import or continuous autonomous service is claimed.
+
+## November 17, 2026 · ESP32 physical-input branch for Avatar AI (owner request)
+
+- **Existing issue/branch/PR:** #1923 / feat/infinity-os-nuance-discovery-1923 / PR #1924. Reuses the prior ESP32 non-invasive hardware direction in hardware/infinity-phone/README.md; no duplicate engine or separate publication.
+- **Source slice:** optional collapsed ESP32 → Hardware branch inside the actual Avatar AI public prompt Quick Card. An explicit Pair ESP32 browser tap requests a narrow custom BLE service; ESP32 button notifications become up to eight in-memory tree leaves. A separately chosen leaf can be added to an editable prompt. No automatic ChatGPT send, brain audit, website action, remote account login, wallet change or background scan.
+- **Firmware source:** original ESP32 DevKit/WROOM pushbutton BLE notification demonstration on GPIO27 and corresponding UUIDs. Only public, non-sensitive button events; no EEG, mental-state inference, cellular network access or device microphone.
+- **Source tests:** local RED missing-module run; after implementing protocol/parser and UI hook, focused Node v22 tests 6/6 passed locally, syntax checks passed. Hardware flash, firmware compile, real Android Chrome BLE pairing, encrypted pairing, Android APK native bridging and Cloudflare production remain unverified.
+- **Gate:** exact-head GitHub CI and independent review of this PR, 320/360/393px Android Chrome pairing with user-controlled disconnect, actual ESP32 bench receipt, then governed merge and deployed readback. Do not claim a tested physical device or an autonomous Avatar project builder. No active executor lease claimed in chat.
