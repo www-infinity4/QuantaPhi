@@ -3,12 +3,257 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T20:01:19.524645Z",
+  "checked_at": "2026-11-18T20:31:05.580433Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ngc 1433 supernova",
+      "query": "star wars",
       "approx_searches": "500+",
+      "published_at": "2026-11-18T20:10:00Z",
+      "related_news_urls": [
+        "https://disneyexperiences.com/anzellans-imagineering-rd-robotic-characters/",
+        "https://www.hollywoodreporter.com/business/digital/new-star-wars-robots-disney-amazon-ai-anzellans-1236757851/",
+        "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTfDfynHEN1i0FFR936fTCWBV9_E95nDS4Hq7ZDciVoEjnUkSqUVf9b6r7kw",
+      "image_credit": "Disney Experiences",
+      "news": [
+        {
+          "url": "https://disneyexperiences.com/anzellans-imagineering-rd-robotic-characters/",
+          "title": "Meet the Anzellans: Inside Imagineering R&D’s Newest Robotic Characters",
+          "publisher": "Disney Experiences",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTfDfynHEN1i0FFR936fTCWBV9_E95nDS4Hq7ZDciVoEjnUkSqUVf9b6r7kw"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/business/digital/new-star-wars-robots-disney-amazon-ai-anzellans-1236757851/",
+          "title": "Disney and AWS Team Up to Create AI-Powered ‘Star Wars’ Robots",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRcfdsg00v3idrtbKFk3K1GCyQYysRxOgAYUGs4oxghrPf0yyLpXSQ0HYz-5g"
+        },
+        {
+          "url": "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
+          "title": "Disney’s new Star Wars animatronics interact with guests using AI",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6kmoBLYRpFGVj_IutbEy63MuDNMIXYA6i9aGjYACouKOx_RlN1byZZUVhmQg"
+        }
+      ]
+    },
+    {
+      "query": "chicago cubs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T20:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/seiya-suzuki-6-mlb-free-110621207.html",
+        "https://jaysjournal.com/how-suzuki-lowe-and-6-other-qualifying-offer-decisions-affect-the-blue-jays",
+        "https://www.bleachernation.com/cubs/2026/11/17/cant-forget-about-the-offense-deadlines-mccormick-garrett-and-other-cubs-bullets/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8BNrPslYwIEe6a3biMWYFqHpQKQPJyZSsWJSrZJNXvYuVIO11AVqboqgwmek",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/seiya-suzuki-6-mlb-free-110621207.html",
+          "title": "MLB qualifying offer deadline LIVE: Morejon and Lowe decline $23 million, others must decide",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8BNrPslYwIEe6a3biMWYFqHpQKQPJyZSsWJSrZJNXvYuVIO11AVqboqgwmek"
+        },
+        {
+          "url": "https://jaysjournal.com/how-suzuki-lowe-and-6-other-qualifying-offer-decisions-affect-the-blue-jays",
+          "title": "How Suzuki, Lowe and 6 other Qualifying Offer decisions affect the Blue Jays",
+          "publisher": "Jays Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8-iwvXIrb3qoF2urYcZvuwpQMcNOxToRyDljFFeoC0uag81DJSCIDJIZQ0sE"
+        },
+        {
+          "url": "https://www.bleachernation.com/cubs/2026/11/17/cant-forget-about-the-offense-deadlines-mccormick-garrett-and-other-cubs-bullets/",
+          "title": "Can’t Forget About the Offense, Deadlines, McCormick, Garrett, and Other Cubs Bullets",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnrRB5f0XiJq26SrPrhmYidT-zSNBYwbbX1gtUjI-1y9WGvDzlJ-XRgfr8G00"
+        }
+      ]
+    },
+    {
+      "query": "baaja",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T20:00:00Z",
+      "related_news_urls": [
+        "https://thehill.com/policy/energy-environment/6227652-baaja-bipartisan-permitting-reform-bill-vote/",
+        "https://www.nytimes.com/2026/11/18/climate/the-bill-thats-splitting-the-environmental-movement.html",
+        "https://thenevadaindependent.com/article/nevada-senators-split-on-sweeping-energy-legislation-in-first-major-action-since-midterm-elections"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwuCbx68U8WCj41PdR4Cxt8vOycbOsNcXHxGpf4sNhicksK1Ia99r-0OVzmSI",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/policy/energy-environment/6227652-baaja-bipartisan-permitting-reform-bill-vote/",
+          "title": "Senate further advances bipartisan permitting reform bill",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwuCbx68U8WCj41PdR4Cxt8vOycbOsNcXHxGpf4sNhicksK1Ia99r-0OVzmSI"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/18/climate/the-bill-thats-splitting-the-environmental-movement.html",
+          "title": "The Permitting Bill Is Splitting the Environmental Movement",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw8N1jtSaWl7rfoIawYO18P5q2nzwKoRdeA75BynvC7yq-0z4ygb_oPu2-RPQ"
+        },
+        {
+          "url": "https://thenevadaindependent.com/article/nevada-senators-split-on-sweeping-energy-legislation-in-first-major-action-since-midterm-elections",
+          "title": "Nevada senators split on sweeping energy legislation in first major action since midterm elections",
+          "publisher": "The Nevada Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfG-MqIsIbJM9b3h70sNvAv54o91vqupf_CiSojcdUtckyKVlgxPw6fOzo_PQ"
+        }
+      ]
+    },
+    {
+      "query": "flavio cobolli",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T20:00:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
+        "https://www.espn.com/tennis/story/_/id/50521030/alcaraz-cruises-medvedev-atp-finals-leg-issue",
+        "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIC_gOVPSGU0szwsifeG_pd10eUsfwFFLCtTqIE71Pqz09HdaU-LobCJddbA",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
+          "title": "Alcaraz eases past Medvedev, moves to brink of Turin SFs",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIC_gOVPSGU0szwsifeG_pd10eUsfwFFLCtTqIE71Pqz09HdaU-LobCJddbA"
+        },
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50521030/alcaraz-cruises-medvedev-atp-finals-leg-issue",
+          "title": "Alcaraz cruises past Medvedev at ATP Finals despite leg issue",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeI0Crctjs4nxSrlmyToBdZeOsXatAaR3-jvF820WFd_19oxZmXgkMq47Yn2o"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/18/carlos-alcaraz-v-daniil-medvedev-atp-finals-tennis-group-stage-live",
+          "title": "Carlos Alcaraz beats Daniil Medvedev in ATP Finals tennis group stage – as it happened",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQkpSY0qD_ROAd5DI4D6jeuT3KgPCHgnE7yAI4PCxvDYcFhY8u5CYRBQhAkJA"
+        }
+      ]
+    },
+    {
+      "query": "frances tiafoe",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T19:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50501663/carlos-alcaraz-dominates-frances-tiafoe-atp-finals-opener",
+        "https://www.atptour.com/en/news/alcaraz-tiafoe-nitto-atp-finals-2026-monday",
+        "https://www.bbc.com/sport/tennis/articles/ckvg294x5yzqo"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTuIlWRDw9b8KN2Upquk6AVjCICIWF2xPv9zYqLxtLElQ8QBlJABo5if0zvyo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50501663/carlos-alcaraz-dominates-frances-tiafoe-atp-finals-opener",
+          "title": "Carlos Alcaraz dominates Frances Tiafoe in ATP Finals opener",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTuIlWRDw9b8KN2Upquk6AVjCICIWF2xPv9zYqLxtLElQ8QBlJABo5if0zvyo"
+        },
+        {
+          "url": "https://www.atptour.com/en/news/alcaraz-tiafoe-nitto-atp-finals-2026-monday",
+          "title": "Alcaraz dispatches Tiafoe for opening win in Turin",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX9A9e5B-2LG00-13izOZrk-VkF10TggiHeUUSpnbC1E4ivCOw3S3aoq_jrP0"
+        },
+        {
+          "url": "https://www.bbc.com/sport/tennis/articles/ckvg294x5yzqo",
+          "title": "ATP Finals: Carlos Alcaraz begins title bid with statement win over Frances Tiafoe",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl-67YRucWr9ZP6O2i7tqevk5hbv-C_TKMfZ9fmr3uA-FKaEJb9cE1Kr6TIIY"
+        }
+      ]
+    },
+    {
+      "query": "tiafoe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T19:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/1DOjWbMEJi6q/",
+        "https://jen.jiji.com/atp-finals-fognini-also-at-cobollis-training-need-a-sparring-partner-ill-give-you-a-6-2-6-2/",
+        "https://www.reutersconnect.com/item/tennis-2026-nitto-atp-finals-cobolli-tiafoe/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBIMlhSMVo"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprnaDxf0yD036w08S5x3ZyVcbi_YOelIWfS5e2MHtWQXyWB3-q2-F9g39u1o",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/1DOjWbMEJi6q/",
+          "title": "ATP Finals 2026 live updates: Tiafoe faces Cobolli on day four after Alcaraz beat Medvedev in straight sets",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprnaDxf0yD036w08S5x3ZyVcbi_YOelIWfS5e2MHtWQXyWB3-q2-F9g39u1o"
+        },
+        {
+          "url": "https://jen.jiji.com/atp-finals-fognini-also-at-cobollis-training-need-a-sparring-partner-ill-give-you-a-6-2-6-2/",
+          "title": "Atp Finals, Fognini also at Cobolli's training: \"Need a sparring partner? I'll give you a 6-2 6-2\"",
+          "publisher": "jiji press",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyXxaLf5W3qOuaqrC2Fo6w3OdFlYmSnlyeRJDr-eZP0Jg9Pb3mep0uRDNtcyY"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/tennis-2026-nitto-atp-finals-cobolli-tiafoe/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBIMlhSMVo",
+          "title": "Licensable picture: Tennis 2026: Nitto ATP Finals: COBOLLI TIAFOE",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_RATITIgtF_jbVAVeYtoKJj8NT18FYLJxN1ti203CKBzywXjh297I4tPnOo"
+        }
+      ]
+    },
+    {
+      "query": "sarah paulson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T19:50:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1438079/why-sarah-paulson-and-holland-taylor-arent-married",
+        "https://www.news24.com/you/celebs/international/american-horror-storys-sarah-paulson-gets-candid-on-why-marriage-gives-her-the-heebie-jeebies-20261116-0711",
+        "https://ew.com/sarah-paulson-and-holland-taylor-have-built-in-separations-in-relationship-12253165"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOzpsjLVmu215LT-fHcsReclRQHJiZWezXhynKkK2KD_zAvwB1Cg1goQJ8Ns",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1438079/why-sarah-paulson-and-holland-taylor-arent-married",
+          "title": "Sarah Paulson Reveals Why She Will Never Marry Holland Taylor",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOzpsjLVmu215LT-fHcsReclRQHJiZWezXhynKkK2KD_zAvwB1Cg1goQJ8Ns"
+        },
+        {
+          "url": "https://www.news24.com/you/celebs/international/american-horror-storys-sarah-paulson-gets-candid-on-why-marriage-gives-her-the-heebie-jeebies-20261116-0711",
+          "title": "American Horror Story’s Sarah Paulson gets candid on why marriage gives her the ‘heebie-jeebies’",
+          "publisher": "News24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsLZhMeBS9RmweEiO-LvenIjWXNqU9jp8jifKtnNL8_OE3qUf_MV02o4z3Kec"
+        },
+        {
+          "url": "https://ew.com/sarah-paulson-and-holland-taylor-have-built-in-separations-in-relationship-12253165",
+          "title": "Sarah Paulson says she and Holland Taylor have ‘built-in separations’ in their relationship",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzUKgRZ3Pau8ROUMsrxkyFcwV-3hdLNPPDrJihFaI03bEa4W3LrKS-XSiN7N4"
+        }
+      ]
+    },
+    {
+      "query": "ngc 1433 supernova",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T19:40:00Z",
       "related_news_urls": [
         "https://www.space.com/astronomy/a-newfound-supernova-explodes-50-million-light-years-away-space-photo-of-the-day-for-nov-18-2026",
@@ -43,7 +288,7 @@
     },
     {
       "query": "kash patel",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T19:40:00Z",
       "related_news_urls": [
         "https://thehill.com/homenews/house/6227622-fbi-director-skips-threats-hearing/",
@@ -77,282 +322,37 @@
       ]
     },
     {
-      "query": "florence pugh governors awards",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T19:40:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/15/photos/2026-governors-awards-zendaya-florence-pugh-more/",
-        "https://www.imdb.com/es/news/ni66113595/?ref_=nwc_art_perm",
-        "https://www.aol.co.uk/articles/zendaya-florence-pugh-stand-sparkles-122526000.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe7--9y8KVEdf7Ue9ls3jJQZtm-reocqmhR1tU-qMqDjF7C1z6vaFhhbKhfeg",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/15/photos/2026-governors-awards-zendaya-florence-pugh-more/",
-          "title": "2026 Governors Awards: Zendaya, Florence Pugh, more",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe7--9y8KVEdf7Ue9ls3jJQZtm-reocqmhR1tU-qMqDjF7C1z6vaFhhbKhfeg"
-        },
-        {
-          "url": "https://www.imdb.com/es/news/ni66113595/?ref_=nwc_art_perm",
-          "title": "2026 Governors Awards Red Carpet: Zendaya, Inde Navarrette and More",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCFoMxHCE6zMcN_rhc2U0rlwXI-K-aY3Ne4W3osATFk-RJkyzmAFl3kbBLAEE"
-        },
-        {
-          "url": "https://www.aol.co.uk/articles/zendaya-florence-pugh-stand-sparkles-122526000.html",
-          "title": "Zendaya and Florence Pugh stand out in sparkles at Governors Awards",
-          "publisher": "AOL.co.uk",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfCY4hdxa1IXwnzOfArL2QCOH-1WUHq-q0jd6ICwe2ldPInsKouoOHDA9v2N0"
-        }
-      ]
-    },
-    {
       "query": "golf",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-18T19:40:00Z",
       "related_news_urls": [
-        "https://www.golfchannel.com/watch/golf-central/kessler-weighs-in-on-growing-the-lpga-fanbase",
-        "https://sports.yahoo.com/articles/lpga-working-pga-tour-networks-171452889.html",
-        "https://www.golfdigest.com/story/lpga-tv-viewership-plan-2027-craig-kessler-pga-tour-follow-up"
+        "https://www.golfchannel.com/lpga/news/cme-group-tour-championship-2026-round-1-tee-times-pairings-how-to-watch",
+        "https://www.lpga.com/news/2026/featured-groups-2026-cme-group-tour-championship",
+        "https://sports.yahoo.com/articles/weeks-11-million-lpga-purse-181127816.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4v9_ZI4UAu9yt5Beas_P_Mvg5KPcj-EdJv40xTEinIXCruM589V5s2muSVQs",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQ7Q0ULgQ02eWAHkCCZSQCy9X23tdtQbifei0u7TcQySh4lSyCmk00b9VFOk",
       "image_credit": "Golf Channel",
       "news": [
         {
-          "url": "https://www.golfchannel.com/watch/golf-central/kessler-weighs-in-on-growing-the-lpga-fanbase",
-          "title": "Kessler weighs in on growing the LPGA fanbase",
+          "url": "https://www.golfchannel.com/lpga/news/cme-group-tour-championship-2026-round-1-tee-times-pairings-how-to-watch",
+          "title": "CME Group Tour Championship 2026: Round 1 tee times, pairings, how to watch",
           "publisher": "Golf Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4v9_ZI4UAu9yt5Beas_P_Mvg5KPcj-EdJv40xTEinIXCruM589V5s2muSVQs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQ7Q0ULgQ02eWAHkCCZSQCy9X23tdtQbifei0u7TcQySh4lSyCmk00b9VFOk"
         },
         {
-          "url": "https://sports.yahoo.com/articles/lpga-working-pga-tour-networks-171452889.html",
-          "title": "LPGA Working With PGA Tour, Networks for Better TV Windows",
+          "url": "https://www.lpga.com/news/2026/featured-groups-2026-cme-group-tour-championship",
+          "title": "Featured Groups: 2026 CME Group Tour Championship",
+          "publisher": "LPGA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmr0_TQAf42dGbnoaOrklW6R2a6MbTRVu-O17-YqbeqKJ4sjXTssPusn0Z594"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/weeks-11-million-lpga-purse-181127816.html",
+          "title": "How this week's $11 million LPGA purse is being paid out",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvAxmb869QfGXs0MB81MeeXDQQc5az1vD15QozOBfXEsc6LToB0MXlY_xoe08"
-        },
-        {
-          "url": "https://www.golfdigest.com/story/lpga-tv-viewership-plan-2027-craig-kessler-pga-tour-follow-up",
-          "title": "How can the LPGA increase its viewership? Here’s one simple plan the tour commissioner is trying in 2027",
-          "publisher": "Golf Digest",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6GoQonuthQRAdyn2QeNV9j_JkYgTpZ0dC5lZB6v2W2WkapZVMtkMFPiOHWlM"
-        }
-      ]
-    },
-    {
-      "query": "jace jung",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T19:40:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/tigers-peyton-graham-40-man-roster-matt-vierling-designated-for-assignment",
-        "https://www.woodtv.com/sports/detroit-tigers/tigers-cut-matt-vierling-two-former-first-round-picks-from-40-man-roster/",
-        "https://www.freep.com/story/sports/columnists/jeff-seidel/2026/11/17/detroit-tigers-40-man-roster-cuts-matt-vierling-trey-sweeney/92825610007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ01S_vytIjsDRhFYmlkmaYsknd1f3MtcviS8NNCaE68zBlV0DFuDUKCcPSoms",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/tigers-peyton-graham-40-man-roster-matt-vierling-designated-for-assignment",
-          "title": "Tigers add fast-rising prospect Graham to 40-man roster, DFA Vierling",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ01S_vytIjsDRhFYmlkmaYsknd1f3MtcviS8NNCaE68zBlV0DFuDUKCcPSoms"
-        },
-        {
-          "url": "https://www.woodtv.com/sports/detroit-tigers/tigers-cut-matt-vierling-two-former-first-round-picks-from-40-man-roster/",
-          "title": "Tigers cut Matt Vierling, two former first-round picks from 40-man roster",
-          "publisher": "WOODTV.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTpMZaawULtSdb2eHitOmOw7-x_0eTSIfBxMS1Aq43mZQNbwRWgV0YwknqeBc"
-        },
-        {
-          "url": "https://www.freep.com/story/sports/columnists/jeff-seidel/2026/11/17/detroit-tigers-40-man-roster-cuts-matt-vierling-trey-sweeney/92825610007/",
-          "title": "Matt Vierling among veterans Tigers sacrificed on 40-man roster cuts",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2cePWZTeRV_oGAkA_pv7a5KfLspAA9asBuIOBfQN1Z8o4exGQVdFUpBkzc30"
-        }
-      ]
-    },
-    {
-      "query": "nick fortes",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T19:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-17/report-rays-working-on-nick-fortes-trade",
-        "https://cubbiescrib.com/cubs-could-pivot-to-imminent-rays-target-as-carson-kelly-s-price-climbs",
-        "https://blogredmachine.com/reds-should-not-let-growing-competition-scare-them-off-rays-catcher"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQO6s05yC0ezutd__uzPLp7qnlHaxw6_h0E-czxHkMqz17AVQo6QfhT-2L9A4Y",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-17/report-rays-working-on-nick-fortes-trade",
-          "title": "Report: Rays working on Nick Fortes trade",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQO6s05yC0ezutd__uzPLp7qnlHaxw6_h0E-czxHkMqz17AVQo6QfhT-2L9A4Y"
-        },
-        {
-          "url": "https://cubbiescrib.com/cubs-could-pivot-to-imminent-rays-target-as-carson-kelly-s-price-climbs",
-          "title": "Cubs could pivot to imminent Rays target as Carson Kelly's price climbs",
-          "publisher": "Cubbies Crib",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQvADwHXJ-9ToG8Xke-NepeOURQq1zZKfiKPk9P1m7zHwDSaXY2GPpVxuCDgo"
-        },
-        {
-          "url": "https://blogredmachine.com/reds-should-not-let-growing-competition-scare-them-off-rays-catcher",
-          "title": "Reds should not let growing competition scare them off Rays catcher",
-          "publisher": "Blog Red Machine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIIG2fd5CZ61MyTn4Q2lEZmiAxIoGX1D2LWRTn_NTkE3Wtf6zsg61cnwEulp4"
-        }
-      ]
-    },
-    {
-      "query": "senate majority leader",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T19:30:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/politics/interactive/2026/11/18/these-are-senate-democrats-backing-schumer-van-hollen-majority-leader/",
-        "https://apnews.com/article/schumer-bernie-sanders-senate-democrats-leadership-election-c5a182727397e964b19ad0dec5aeca42",
-        "https://www.rollcall.com/2026/11/17/senate-democrats-leadership-vote"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSzjjvi-UPNn4V7_MkKfP8tSxbKfldefQ6aNE3aEOQNha8UvR7EAitmU3G2-g",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/politics/interactive/2026/11/18/these-are-senate-democrats-backing-schumer-van-hollen-majority-leader/",
-          "title": "These are the Senate Democrats backing Schumer and Van Hollen for majority leader",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSzjjvi-UPNn4V7_MkKfP8tSxbKfldefQ6aNE3aEOQNha8UvR7EAitmU3G2-g"
-        },
-        {
-          "url": "https://apnews.com/article/schumer-bernie-sanders-senate-democrats-leadership-election-c5a182727397e964b19ad0dec5aeca42",
-          "title": "Bernie Sanders won't support Schumer for Senate Democratic leader, saying it's time for change",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1F-2Od4_sNpPWASVsAcVfNHDTofYnj0Mz42kF4PsQXGkQr8uURqwcPB2f-oM"
-        },
-        {
-          "url": "https://www.rollcall.com/2026/11/17/senate-democrats-leadership-vote",
-          "title": "Senate Dems dismiss talk of earlier leadership election; Schumer confident",
-          "publisher": "Roll Call",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0SACUBWQ2vwfLA2NI6P5lTOmJrNzPJ1JCAFMIfC_AEAJXbxb3EHDPt7DGDvU"
-        }
-      ]
-    },
-    {
-      "query": "start 'em, sit 'em",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T19:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50506830/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
-        "https://www.seahawks.com/news/fantasy-football-week-11-guide-starters-streamers-free-agents",
-        "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-quarterbacks-for-week-11"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBHCY7M403PzN62mK9hCN2jLKk3yUCQXZSjayM-9fW0YYQtlfozGYUDLNrDs",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50506830/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
-          "title": "Fantasy football rankings for Week 11: Wide receiver",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBHCY7M403PzN62mK9hCN2jLKk3yUCQXZSjayM-9fW0YYQtlfozGYUDLNrDs"
-        },
-        {
-          "url": "https://www.seahawks.com/news/fantasy-football-week-11-guide-starters-streamers-free-agents",
-          "title": "Fantasy Football Week 11 Guide: Starters, Streamers & Free Agents",
-          "publisher": "Seattle Seahawks",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrWkfvQkI2v6dPDb-LbFuxq52-EC3Zfh9flzkvMNRLABiSXY9tdeVGOLhU4Xw"
-        },
-        {
-          "url": "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-quarterbacks-for-week-11",
-          "title": "NFL Fantasy 2026 Start 'Em, Sit 'Em: Quarterbacks for Week 11",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDOCTGlBpQyk3XAdeS_gCIOrTSJzWRsx1Y87WiWDht-4gKWOIDQi4loiHygOQ"
-        }
-      ]
-    },
-    {
-      "query": "chelsea vs psg",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T19:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c9zrdej3njdzt",
-        "https://www.skysports.com/football/live-blog/13613594/womens-champions-league-live-bk-hacken-vs-man-city-chelsea-vs-psg-score-updates-news-prediction-and-line-ups",
-        "https://sports.yahoo.com/articles/womens-champions-league-shaw-bench-171805487.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLCpPdZaI6qBWCKKBgmzEXcjtDmL4Qsv7yYhRMT7hpkdjVe_CBiTSB1LtRzpI",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c9zrdej3njdzt",
-          "title": "Women's Champions League LIVE: Hacken vs Man City before Chelsea v PSG - score & live text updates",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLCpPdZaI6qBWCKKBgmzEXcjtDmL4Qsv7yYhRMT7hpkdjVe_CBiTSB1LtRzpI"
-        },
-        {
-          "url": "https://www.skysports.com/football/live-blog/13613594/womens-champions-league-live-bk-hacken-vs-man-city-chelsea-vs-psg-score-updates-news-prediction-and-line-ups",
-          "title": "Women's Champions League LIVE! BK Hacken vs Man City, Chelsea vs PSG score updates, news, prediction and line-ups",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNbiQCGs6t_78nt8Z-OGU-uoXC0kcmN2eVq9dpCaq5LpNIHMG7l5yJEtL4YjI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/womens-champions-league-shaw-bench-171805487.html",
-          "title": "Women's Champions League: Shaw on bench for Man City at Hacken",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB1Isy3jdUrLXJOLsLWv9PUHpQqR-YjDpdkUPgQcfw5D4vaQXw4yazIcqRQSU"
-        }
-      ]
-    },
-    {
-      "query": "playstation network",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T19:10:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-ps5-game-sharing/",
-        "https://www.independent.co.uk/extras/indybest/gadgets-tech/video-games-consoles/game-sharing-gta-6-xbox-ps5-b3087019.html",
-        "https://metro.co.uk/2026/11/17/games-inbox-will-gta-6-tech-problems-launch-29797346/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNdKdSd1hg-r8TZufdaGWworqzex0_OYu2xBbpc5xEQBxiO1o1MfSkaTULFjQ",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/gta-6-ps5-game-sharing/",
-          "title": "Can You Game Share GTA 6 on PS5? PlayStation Has an Answer",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNdKdSd1hg-r8TZufdaGWworqzex0_OYu2xBbpc5xEQBxiO1o1MfSkaTULFjQ"
-        },
-        {
-          "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/video-games-consoles/game-sharing-gta-6-xbox-ps5-b3087019.html",
-          "title": "This simple trick lets you share GTA 6 with a friend on Xbox or PS5",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTh8dBU2vU4vkZ6-iN3dWJOZlpi1lkXhCb9t7XQtLJ2zzog4gA89iXXYs7Ryj8"
-        },
-        {
-          "url": "https://metro.co.uk/2026/11/17/games-inbox-will-gta-6-tech-problems-launch-29797346/",
-          "title": "Games Inbox: Will GTA 6 have tech problems at launch?",
-          "publisher": "Metro.co.uk",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpcm8kixbtL1ylTU5su4j96SoKKl1sAqQid-wci2zOiWkeQVGEVa1Lfj93n9o"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqNA-zEL3iilpwNkZ7tLqB3xDywLbSmxI_iZ1JpxoK3U3GPu_jKUAitOYAz-U"
         }
       ]
     }
