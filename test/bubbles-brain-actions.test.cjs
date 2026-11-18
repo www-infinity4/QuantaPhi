@@ -134,6 +134,23 @@ test('owner continue resumes the immediately preceding explicit task without bro
 
 
 
+test('consecutive star commands retain the last explicit owner job without crossing a topic change',()=>{
+ const task='Please fix the video generator on QuantaPhi';
+ const context=[{role:'user',text:task},{role:'assistant',text:'Saved existing job'}];
+ const first=resolveFollowupRequest('*',context);
+ assert.equal(first,task);
+ const twice=[...context,{role:'user',text:'*'},{role:'assistant',text:'Job still queued'}];
+ assert.equal(resolveFollowupRequest('*',twice),task,'second consecutive star continues the original job');
+ const three=[...twice,{role:'user',text:'continue'},{role:'assistant',text:'Job checkpoint saved'}];
+ assert.equal(resolveFollowupRequest('*',three),task,'mixed continue/star chain remains on same job');
+ assert.equal(resolveFollowupRequest('continue engineering',three),task,'existing owner continuation phrase works');
+ assert.equal(resolveFollowupRequest('*',[...three,{role:'user',text:'What is the weather?'}]),'','unrelated new user topic blocks an old job');
+ assert.equal(resolveFollowupRequest('*',[{role:'assistant',text:'Please fix the QuantaPhi deployment'},{role:'user',text:'*'}]),'','assistant suggestion alone cannot authorize work');
+});
+
+
+
+
 test('refusals and explanatory questions cannot dispatch Brain work',()=>{
  for(const text of ["Don't queue a job in Robot Brain","Bubbles, please do not tell the bots to repair my page","I don't want the bots to build anything","I want you not to dispatch agents to repair the site","Explain how bots build a website","How can I start a job in Robot Brain?","Describe how Robot Brain repairs pages"])assert.equal(classify(text),'chat',text);
  for(const text of ["Please tell Robot Brain to repair my page","Have the bots build the website","Fix the video player; don't change my wallet"])assert.equal(classify(text),'queue',text);
