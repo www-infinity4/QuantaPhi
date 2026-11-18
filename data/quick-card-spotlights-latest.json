@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T15:18:36.851038Z",
+  "checked_at": "2026-11-18T16:18:25.779983Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -423,7 +423,7 @@
     },
     "hurley-surfwear": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.hurley.com/",
@@ -431,7 +431,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Clothing"
         },
         {
@@ -440,7 +440,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Clothing"
         },
         {
@@ -449,7 +449,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Clothing"
         },
         {
@@ -458,7 +458,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Clothing"
         },
         {
@@ -467,7 +467,7 @@
           "title": "Renzo Skate Crew Long Sleeve - BONE / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Clothing",
           "offer": null
         },
@@ -477,7 +477,7 @@
           "title": "Benson Flannel Shacket Long Sleeve - BLACK HEATHER / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Clothing",
           "offer": null
         },
@@ -487,7 +487,7 @@
           "title": "Hurley x Mikey DeTemple Woolsy Flannel Long Sleeve - Woodside / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Clothing",
           "offer": null
         },
@@ -510,7 +510,7 @@
     },
     "royal-caribbean-cruises": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.royalcaribbean.com/",
@@ -518,7 +518,7 @@
           "title": "Best Cruise, Vacation and Travel Deals | Royal Caribbean Official Site",
           "kind": "website",
           "description": "Book cruises and vacation deals on the official Royal Caribbean site. Sail to the Caribbean, Bahamas, Perfect Day CocoCay, Mexico, Alaska and Europe.",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Travel"
         },
         {
@@ -527,7 +527,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Travel"
         },
         {
@@ -536,7 +536,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Travel"
         },
         {
@@ -545,14 +545,14 @@
           "title": "lg banner 640 480 1x",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Travel"
         }
       ]
     },
     "durable-channellock": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.channellock.com",
@@ -560,7 +560,7 @@
           "title": "CHANNELLOCK®: High-Quality Hand Tools - Channellock, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -569,7 +569,7 @@
           "title": "CHANNELLOCK® adjustable pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -578,7 +578,7 @@
           "title": "CHANNELLOCK® groove-joint pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -587,14 +587,14 @@
           "title": "CHANNELLOCK® locking pliers with blue and black handles and serrated jaws.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-wright-tool": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.wrighttool.com/",
@@ -602,7 +602,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -611,7 +611,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -620,7 +620,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -629,14 +629,14 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-estwing": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.estwing.com/",
@@ -644,7 +644,7 @@
           "title": "Home - Estwing",
           "kind": "website",
           "description": "ProfessionalOutdoorHome Who’s Behind Your Swing? When it’s an Estwing, every strike, every detail counts. https://vimeo.com/1091256749 Estwing 100 Years of a Genuine American Icon How a true American legend grew to become the hand tool of choice for generation",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -653,7 +653,7 @@
           "title": "Shop - Estwing",
           "kind": "website",
           "description": "Select CategorySure Strike— Specialty— Roofing Tools— Pry Tools— Nail HammersSpecialty— Welding & Tinner’s— Lineman’s— Drywall— Drilling & Engineer’s— Bricklayer— Ball PeenSafetyRoofing— Shingler’s Hatchet— Shingler’s Hammer— Rigger’s Axes— Carpenter’s Hatchet",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -662,7 +662,7 @@
           "title": "Titanium Hammer (Black) - Estwing",
           "kind": "website",
           "description": "Power meets precision in a lightweight design as this titanium hammer delivers the striking force of a heavier steel hammer without the added weight. Its magnetic nail starter makes setting nails quick and easy. The Shock Reduction Grip® offers the utmost in b",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -671,7 +671,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -680,7 +680,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_02_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -689,7 +689,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_03_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -698,7 +698,7 @@
           "title": "Timber Titan™ Splitting Tool (Blue) - Estwing",
           "kind": "website",
           "description": "Estwing’s Timber Titan™ Splitting Tool is the ultimate long-handle splitting tool, designed for fast, efficient, and precise wood splitting.",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -707,7 +707,7 @@
           "title": "prod_outdoor_splitting_tools_E6-TT4_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
@@ -2041,7 +2041,7 @@
     },
     "colorado-rocky-mountain": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.nps.gov/romo/index.htm",
@@ -2049,7 +2049,7 @@
           "title": "Rocky Mountain National Park (U.S. National Park Service)",
           "kind": "website",
           "description": "Located in northern Colorado, visitors to Rocky Mountain National Park can explore over 415 square miles (265,807 acres) within the Southern Rocky Mountains. From montane meadows to subalpine forests and mountain peaks in the alpine tundra, there is something ",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2058,7 +2058,7 @@
           "title": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2067,7 +2067,7 @@
           "title": "A man is standing on a bridge and looking up at a waterfall",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2076,7 +2076,7 @@
           "title": "A pika has harvested a tundra thistle",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2085,7 +2085,7 @@
           "title": "Visitors are walking on the Tundra Communities trail in summer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2094,7 +2094,7 @@
           "title": "The NPS Arrowhead appears on blue with text \"Rocky Mountain National Park Timed Entry Reservations\"",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2103,7 +2103,7 @@
           "title": "Park Entrance Fees and Passes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2112,14 +2112,14 @@
           "title": "A park ranger is sharing a program inside Beaver Meadows Visitor Center",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Alpine hikes"
         }
       ]
     },
     "colorado-numbers-rafting": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.americanadventure.com/tour-category/the-numbers/",
@@ -2127,7 +2127,7 @@
           "title": "most-popular",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2136,7 +2136,7 @@
           "title": "Classic Colorado Whitewater",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2145,7 +2145,7 @@
           "title": "The Numbers Half Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2154,7 +2154,7 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2163,7 +2163,7 @@
           "title": "Numbers Half Day Rafting Adventure | American Adventure Expeditions",
           "kind": "website",
           "description": "Our classic half-day rafting adventure is great for experienced white water rafters looking for a challenging ride through The Numbers in Buena Vista, CO.",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2172,7 +2172,7 @@
           "title": "Numbers Half Day Private Trip",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2181,7 +2181,7 @@
           "title": "The Numbers Raft + ATV",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2190,14 +2190,14 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Whitewater"
         }
       ]
     },
     "colorado-breckenridge-trails": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
@@ -2205,7 +2205,34 @@
           "title": "Easy Hiking Trails in Breckenridge",
           "kind": "website",
           "description": "Enjoying one of the many easy hikes near Breckenridge is a great way to spend a summer day in the outdoors. Find the hike right for you and your crew.",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2018/03/Sapphire-Point-sunset-sept-9-Edit.jpg",
+          "title": "Sunset view from the Sapphire Point Loop, one of the easy hiking trails in Breckenridge.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2017/12/Sallie-Barber-Trail-3-1.jpg",
+          "title": "Dog on Sallie Barber Trail: a perfect hike for your four-legged friend!",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2017/12/Blue-River-Rec-Path.jpg",
+          "title": "The Blue River Rec Path right through the heart of Breckenridge.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2214,7 +2241,7 @@
           "title": "Hiking in Breckenridge Without A Car",
           "kind": "website",
           "description": "You don’t need a car to hike some spectacular trails in Breckenridge. Free public transportation can make hiking in without a car simple and easy.",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2223,7 +2250,7 @@
           "title": "family hiking to see the Breckenridge Troll",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2232,7 +2259,7 @@
           "title": "View from Gold Hill Trail in Breckenridge",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2241,41 +2268,14 @@
           "title": "family walking the dog by a lake",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
-          "category": "Colorado · Easy hiking"
-        },
-        {
-          "url": "https://gobreck.com/summer/best-summer-hikes-in-breckenridge/",
-          "image": "https://gobreck.com/wp-content/uploads/2021/05/family-hiking-summer-aspen-alley.jpg",
-          "title": "Best Summer Hikes in Breckenridge",
-          "kind": "website",
-          "description": "When it comes to hiking, Breckenridge has it all — waterfalls, wildflowers, alpine lakes, and more. Check out our favorite summer hikes in Breckenridge!",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
-          "category": "Colorado · Easy hiking"
-        },
-        {
-          "url": "https://gobreck.com/summer/best-summer-hikes-in-breckenridge/",
-          "image": "https://gobreck.com/wp-content/uploads/2021/05/family-hiking-summer-aspen-alley-1536x1024.jpg",
-          "title": "Kids running down a Breckenridge hiking trail",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
-          "category": "Colorado · Easy hiking"
-        },
-        {
-          "url": "https://gobreck.com/summer/best-summer-hikes-in-breckenridge/",
-          "image": "https://gobreck.com/wp-content/uploads/2016/03/Sawmill-Reservoir-Hike_3-scaled.jpg",
-          "title": "Family hiking across a bridge on the Sawmill Reservoir Trail in the Summer",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Easy hiking"
         }
       ]
     },
     "colorado-glenwood-hot-springs": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://hotspringspool.com/",
@@ -2353,7 +2353,7 @@
     },
     "colorado-ouray-ice-park": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://ourayicepark.com/",
@@ -2361,7 +2361,7 @@
           "title": "Climbing in the Ouray Ice Park",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2370,7 +2370,7 @@
           "title": "Ouray Ice Park Climbers and Members",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2379,7 +2379,7 @@
           "title": "Ice Park Tour and Conditions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2388,32 +2388,14 @@
           "title": "Guided Ice Climbing in Ouray",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
-          "category": "Colorado · Technical ice"
-        },
-        {
-          "url": "https://ourayicepark.com/events/2027/01/28/fest",
-          "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1761337787701-7WK847ICRVSBLYMO6O03/temp-icefest-banner.webp",
-          "title": "32nd Annual Ouray Ice Festival",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-11T15:18:41.127377Z",
-          "category": "Colorado · Technical ice"
-        },
-        {
-          "url": "https://ourayicepark.com/events/2026/02/20/paradox-y94xd",
-          "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1770213148817-E9TXJ5COZHT09F67A70G/paradox-0.jpg",
-          "title": "Paradox Sports Annual Ice Climbing Program: 20th Anniversary!",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-11T15:18:41.127377Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · Technical ice"
         }
       ]
     },
     "colorado-ice-lakes-basin": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T10:18:46.172824Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.fs.usda.gov/r02/sanjuan",
@@ -2421,7 +2403,7 @@
           "title": "San Juan National Forest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2430,7 +2412,7 @@
           "title": "A road is washed out by a river",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2439,7 +2421,7 @@
           "title": "Road Conditions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2448,7 +2430,7 @@
           "title": "South Mineral Campground",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T10:18:46.172824Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Colorado · High alpine"
         }
       ]
@@ -4719,7 +4701,7 @@
     },
     "durable-phil-wood": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://philwood.com/",
@@ -4727,7 +4709,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4736,7 +4718,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4745,7 +4727,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4754,7 +4736,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4763,7 +4745,7 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4772,7 +4754,7 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4781,7 +4763,7 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4790,14 +4772,14 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-ortlieb": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://de.ortlieb.com/collections/panniers-and-bike-bags",
@@ -4805,7 +4787,7 @@
           "title": "Fahrradtaschen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4814,7 +4796,7 @@
           "title": "Bikepacking",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4823,7 +4805,7 @@
           "title": "Gepäckträger",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4832,7 +4814,7 @@
           "title": "Satteltaschen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4841,7 +4823,7 @@
           "title": "BACK-ROLLER 20L Zip-Pocket - lavender / QL2.2",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "110.00",
@@ -4856,7 +4838,7 @@
           "title": "BACK-ROLLER 20L Zip-Pocket - black / QL2.2",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "110.00",
@@ -4871,7 +4853,7 @@
           "title": "DAYPACK 23L - dark-sand",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "140.00",
@@ -4886,7 +4868,7 @@
           "title": "DAYPACK 23L - black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "140.00",
@@ -4899,7 +4881,7 @@
     },
     "durable-ram-mounts": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://rammount.com/",
@@ -4907,7 +4889,7 @@
           "title": "Flag of America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4916,7 +4898,7 @@
           "title": "Web banner with an in use on the right of a GDS Dock with a Nexa tablet in it and renders of Nexa and Sonim devices on the left",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4925,7 +4907,7 @@
           "title": "Web banner with an in use on the right of a RAM Tough Tray III with a laptop in it in a vehicle. The middle has text and the left is a render of a tough tray III attached to a lapt",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4934,7 +4916,7 @@
           "title": "Image of a GDS Intelliskin H Series with an apple ipad mounted on a charging dock. There is a user interacting with the device looking at home automation cameras.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4943,7 +4925,7 @@
           "title": "RAM® Powered Dock with USB-C for Zebra HC20 & HC50",
           "kind": "product",
           "description": "The RAM® Powered Dock with USB-C for Zebra HC20 & HC50 (RAM-HOL-ZE39-GRY) is a rugged, healthcare-grade docking solution purpose-built for demanding medical workflows. Designed with a form-fit cradle, this dock keeps all device buttons accessible and includes ",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "97.49",
@@ -4958,7 +4940,7 @@
           "title": "IntelliSkin® Next Gen for NEXA Rhino T80",
           "kind": "product",
           "description": "The IntelliSkin® Next Gen for NEXA Rhino T80 (RAM-GDS-SKIN-SOM3-NG) is an insert-molded design that combines a hard plastic shell with soft, shock-absorbing rubber and an integrated GDS® connector that upgrades the device's USB-C port to flat, ruggedized pogo ",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -4968,7 +4950,7 @@
           "title": "IntelliSkin® Next Gen for NEXA Rhino T85",
           "kind": "product",
           "description": "The IntelliSkin® Next Gen for NEXA Rhino T85 (RAM-GDS-SKIN-SOM4-NG) is an insert-molded design that combines a hard plastic shell with soft, shock-absorbing rubber and an integrated GDS® connector that upgrades the device's USB-C port to flat, ruggedized pogo ",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         }
@@ -4976,7 +4958,7 @@
     },
     "durable-maclaren": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://maclarenbaby.com/",
@@ -4984,14 +4966,14 @@
           "title": "Maclaren Baby",
           "kind": "website",
           "description": "A new chapter is about to begin. Maclaren is coming back. Stay tuned.",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-peak-design": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.peakdesign.com/",
@@ -4999,7 +4981,7 @@
           "title": "Man holding a camera and taking photo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5008,7 +4990,7 @@
           "title": "Close up photo of a man holding a camera",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5017,7 +4999,7 @@
           "title": "Peak Design Tripod Ball Head with camera attached",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5026,7 +5008,7 @@
           "title": "Eclipse Roller",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5035,7 +5017,7 @@
           "title": "Roller Lite Carry-On",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "549.95",
@@ -5050,7 +5032,7 @@
           "title": "Gift Card",
           "kind": "product",
           "description": "Whether you're a last-minute shopper or you're stumped on what to buy you'll never go wrong with thoughtfully designed sustainably made guaranteed-for-l...",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -5060,7 +5042,7 @@
           "title": "Roller Lite Carry-On",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "549.95",
@@ -5082,7 +5064,7 @@
     },
     "durable-anchor-hocking": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.anchorhocking.com/",
@@ -5090,7 +5072,7 @@
           "title": "Anchor Hocking Homepage",
           "kind": "website",
           "description": "We began in 1905 with a simple goal: make the glass that homes really need. Anchor Hocking glassware showcases the genius of utility.",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5099,7 +5081,7 @@
           "title": "Anchor Hocking Homepage",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5108,7 +5090,7 @@
           "title": "Anchor Hocking Homepage",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5117,14 +5099,14 @@
           "title": "Anchor Hocking Homepage",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-thule": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.thule.com/en-us/",
@@ -5132,7 +5114,7 @@
           "title": "Family enjoying a snowy mountain landscape beside a pickup truck fitted with a rooftop tent.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5141,7 +5123,7 @@
           "title": "Family enjoying a snowy mountain landscape beside a pickup truck fitted with a rooftop tent.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5150,7 +5132,7 @@
           "title": "Two people skiing behind a car fitted with a Thule roof box in a snowy mountain landscape.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5159,24 +5141,24 @@
           "title": "Two people skiing behind a car fitted with a Thule roof box in a snowy mountain landscape.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-patagonia": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": []
     },
     "durable-osprey": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": []
     },
     "durable-darn-tough": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://darntough.com/",
@@ -5184,7 +5166,7 @@
           "title": "The Hiker Micro Crew sock with Oprah's Favorite Things 2026 Award Badge",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5193,7 +5175,7 @@
           "title": "The Hiker Micro Crew sock with Oprah's Favorite Things 2026 Award Badge",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5202,7 +5184,7 @@
           "title": "The Hiker Micro Crew sock with Oprah's Favorite Things 2026 Award Badge",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5211,7 +5193,7 @@
           "title": "1466 Micro crew sock in heathered navy blue with bright red accents on heel/toe/cuff, A red ribbon banner over a knitted circular graphic reads 'OPRAH'S FAVORITE THINGS 2026.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5220,7 +5202,7 @@
           "title": "Men's Hiker Micro Crew Midweight Hiking Socks",
           "kind": "product",
           "description": "Great taste runs in good company. This best-selling sock is featured on Oprah's Favorite Things 2026. From the AT to the Pacific Crest Trail, our \"1466\" Hiker raised the bar on what the ultimate hiking sock needs to deliver. Each year we hear from countless th",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "26.0",
@@ -5236,7 +5218,7 @@
           "title": "Men's Hiker Micro Crew Midweight Hiking Socks",
           "kind": "product",
           "description": "Great taste runs in good company. This best-selling sock is featured on Oprah's Favorite Things 2026. From the AT to the Pacific Crest Trail, our \"1466\" Hiker raised the bar on what the ultimate hiking sock needs to deliver. Each year we hear from countless th",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "26.0",
@@ -5251,7 +5233,7 @@
           "title": "Women's Hiker Micro Crew Midweight Hiking Socks",
           "kind": "product",
           "description": "Great taste runs in good company. This best-selling sock is featured on Oprah's Favorite Things 2026. This Micro Crew has earned a hallowed place in the hearts of many a thru-hiker who demands more from a sock. Comfort, durability and fit that never rests.",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "26.0",
@@ -5267,7 +5249,7 @@
           "title": "Women's Hiker Micro Crew Midweight Hiking Socks",
           "kind": "product",
           "description": "Great taste runs in good company. This best-selling sock is featured on Oprah's Favorite Things 2026. This Micro Crew has earned a hallowed place in the hearts of many a thru-hiker who demands more from a sock. Comfort, durability and fit that never rests.",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "26.0",
@@ -5280,7 +5262,7 @@
     },
     "durable-filson": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.filson.com/collections/mens-new-arrivals",
@@ -5288,7 +5270,7 @@
           "title": "Filson - Better Outdoor Clothes, Bags, and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5297,7 +5279,7 @@
           "title": "Filson - Better Outdoor Clothes, Bags, and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5306,7 +5288,7 @@
           "title": "Filson - Better Outdoor Clothes, Bags, and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5315,7 +5297,7 @@
           "title": "Filson - Better Outdoor Clothes, Bags, and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5324,7 +5306,7 @@
           "title": "Electronic Gift Card",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "25.00",
@@ -5340,7 +5322,7 @@
           "title": "Electronic Gift Card - $25",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "25.00",
@@ -5355,7 +5337,7 @@
           "title": "Filson X Casström No. 8 Swedish Forest Knife - Black Maple",
           "kind": "product",
           "description": "The Filson × Casström Swedish Forest Knife is a fixed-blade workhorse built for hard use in the field. Its 3.25\" drop-point blade is made from CPM MagnaCut steel, cryogenically treated below −150°C for dependable edge retention and wear resistance. The optimiz",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "299.00",
@@ -5371,7 +5353,7 @@
           "title": "Filson X Casström No. 8 Swedish Forest Knife - Black Maple - Black Maple",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "299.00",
@@ -5384,7 +5366,7 @@
     },
     "durable-barbour": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://www.barbour.com/us/",
@@ -5392,7 +5374,7 @@
           "title": "Discover Now",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5401,7 +5383,7 @@
           "title": "Descriptive image",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5410,7 +5392,7 @@
           "title": "Descriptive image",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5419,14 +5401,14 @@
           "title": "Descriptive image",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-arc-teryx-alpha-beta-hard-shell-lines": {
       "schema_version": 1,
-      "attempted_at": "2026-11-18T09:19:55.930008Z",
+      "attempted_at": "2026-11-18T16:18:25.779983Z",
       "items": [
         {
           "url": "https://arcteryx.com/us/en",
@@ -5434,7 +5416,7 @@
           "title": "Person in ski gear hiking up a steep, snowy mountain slope, carrying skis on their backpack and using ski poles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5443,7 +5425,7 @@
           "title": "Dark green Arc'teryx jacket, partially unzipped, showing a black quilted interior.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5452,7 +5434,7 @@
           "title": "Multiple blue-toned photographs featuring outdoor gear, a person's reflection, and abstract patterns.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5461,7 +5443,7 @@
           "title": "A man wearing a red and rust two-tone winter jacket, black pants, black gloves, and a yellow beanie.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5470,7 +5452,7 @@
           "title": "Sidewinder Jacket - Archive Women's, Citrus, Size XXS",
           "kind": "product",
           "description": "Twenty-five years ago, we added a curved WaterTight™ zipper to the front of a GORE-TEX shell intended for snowsports. It was our first stab at an innovative, technical downhill hardshell. Over two decades later, that jacket still embodies our design philosophy",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1000",
@@ -5485,7 +5467,7 @@
           "title": "Sidewinder Jacket - Archive Men's, Chili, Size XXS",
           "kind": "product",
           "description": "Twenty-five years ago, we added a curved WaterTight ™ zipper to the front of a GORE-TEX shell intended for freeride. It was our first stab at an innovative, technical downhill hardshell, with a thermomoulded, cupped zipper that left your chin chafe-free. Over ",
-          "checked_at": "2026-11-18T09:19:55.930008Z",
+          "checked_at": "2026-11-18T16:18:25.779983Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1000",
