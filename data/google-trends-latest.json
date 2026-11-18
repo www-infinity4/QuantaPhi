@@ -3,17 +3,192 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T19:01:03.229143Z",
+  "checked_at": "2026-11-18T19:31:05.183686Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ginny and georgia season 4 release date",
+      "query": "hailey bieber",
       "approx_searches": "500+",
+      "published_at": "2026-11-18T19:10:00Z",
+      "related_news_urls": [
+        "https://wwd.com/beauty-industry-news/beauty-features/lists/wwd-beauty-awards-hailey-bieber-rhode-chanel-1239416307/",
+        "https://www.beautypackaging.com/breaking-news/rhode-launches-the-navy-capsule-for-hailey-biebers-birthday/",
+        "https://www.instyle.com/hailey-bieber-poses-new-rhode-capsule-30th-birthday-12259039"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_doT59-5DPkTTey-VGbYLoxt-aqw_YWEcIX7oNgcjTzbcvF_A5hgh0JICz0",
+      "image_credit": "WWD",
+      "news": [
+        {
+          "url": "https://wwd.com/beauty-industry-news/beauty-features/lists/wwd-beauty-awards-hailey-bieber-rhode-chanel-1239416307/",
+          "title": "Hailey Bieber’s Rhode, Marc Jacobs Beauty, Mikayla Nogueira Among 2026 Beauty Inc Award Winners",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_doT59-5DPkTTey-VGbYLoxt-aqw_YWEcIX7oNgcjTzbcvF_A5hgh0JICz0"
+        },
+        {
+          "url": "https://www.beautypackaging.com/breaking-news/rhode-launches-the-navy-capsule-for-hailey-biebers-birthday/",
+          "title": "rhode Launches the Navy Capsule for Hailey Bieber’s Birthday",
+          "publisher": "Beauty Packaging",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr79oEvwJl03Xx_TlrHEkp8YJykrkU0S7BDSqAMZ75nYWzJSsxj83kv22hXpI"
+        },
+        {
+          "url": "https://www.instyle.com/hailey-bieber-poses-new-rhode-capsule-30th-birthday-12259039",
+          "title": "Hailey Bieber Goes Pantsless and Poses in Her Undies for Meaningful Photo Shoot",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4c0-o6Yj6Gdkoex-yIqUWag4yw5bRCDdLWYAd-Ekbs5Lcfr9FqXOQ3g368rI"
+        }
+      ]
+    },
+    {
+      "query": "i am helen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T18:50:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/2026/nov/16/i-am-helen-review-channel-4",
+        "https://www.thetimes.com/culture/tv-radio/article/joe-cole-interview-i-am-helen-manosphere-c35l8ljsj",
+        "https://www.telegraph.co.uk/tv/0/i-am-helen-channel-4-review/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZedoeOtnqUqFesXgLJdMMHeJ7EL6a1oKYutL8WFlid4Ot2P1gdMBoGwEZ6q0",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/16/i-am-helen-review-channel-4",
+          "title": "I Am Helen review – Nicola Coughlan is absolutely superb in this terrifying must-watch",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZedoeOtnqUqFesXgLJdMMHeJ7EL6a1oKYutL8WFlid4Ot2P1gdMBoGwEZ6q0"
+        },
+        {
+          "url": "https://www.thetimes.com/culture/tv-radio/article/joe-cole-interview-i-am-helen-manosphere-c35l8ljsj",
+          "title": "Joe Cole: ‘The manosphere’s worse than I thought. You’ll be shocked’",
+          "publisher": "The Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrV4fdvEMqAhdbzAoiDqdsFB3MzU0Zv3v_UAiNeXW7Yuoss-9DOS15MpU3XQ4"
+        },
+        {
+          "url": "https://www.telegraph.co.uk/tv/0/i-am-helen-channel-4-review/",
+          "title": "Nicola Coughlan gets trapped by the ‘manosphere’ in a devastating fable",
+          "publisher": "The Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-lGdjj453DS8Ij1dZKaWLFaSawOM6IVhe_7qcOZVmVxgbpBzzfnrDLXsY_Q"
+        }
+      ]
+    },
+    {
+      "query": "jason movie cast",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-18T18:30:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
+        "https://www.forbes.com/sites/timlammers/2026/11/18/new-friday-the-13th-movie-jason-announces-cast-and-release-date-as-filming-wraps/",
+        "https://people.com/rob-lowe-s-son-john-owen-lowe-starring-in-new-friday-the-13th-movie-jason-12262663"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/new-friday-13-movie-jason-cast-release-date-title-1237226827/",
+          "title": "New ‘Friday The 13th’ Movie Unveils Cast, Title & Release Date",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gzw3BO3zMm0CZ5sdNmxPjZNcadYed-tKqLte_PG0dkvdBRmjf1VV8uU0bQ0"
+        },
+        {
+          "url": "https://www.forbes.com/sites/timlammers/2026/11/18/new-friday-the-13th-movie-jason-announces-cast-and-release-date-as-filming-wraps/",
+          "title": "New ‘Friday The 13th’ Movie ‘Jason’ Announces Cast And Release Date As Filming Wraps",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNRUCtQAcipbP4-aY5Zj_7Pe_Jc0ZdOHMW1b37DEDaZU-X4_MR0fH0qhpSxU"
+        },
+        {
+          "url": "https://people.com/rob-lowe-s-son-john-owen-lowe-starring-in-new-friday-the-13th-movie-jason-12262663",
+          "title": "Rob Lowe’s Son John Owen Lowe Lands Starring Role in New Friday the 13th Movie",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYRZWh_wtGpv8nXZ37Vhls5TTFqnT2IQi2N8QdSmzxVnfZQW-ZkcKr1HfW_Lw"
+        }
+      ]
+    },
+    {
+      "query": "florida flooding today",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-18T18:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
+        "https://www.washingtonpost.com/nation/2026/11/18/more-than-foot-overnight-rain-south-florida-causes-widespread-flooding/",
+        "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq8_9nInNVNZgUK_v9Y9sO7eTPcp8LOHQ7qyp-94MpEgVoy0a29FWGy9XXx74",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
+          "title": "Intense flooding slams Florida from a developing storm that could snarl early Thanksgiving travel on the East Coast",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq8_9nInNVNZgUK_v9Y9sO7eTPcp8LOHQ7qyp-94MpEgVoy0a29FWGy9XXx74"
+        },
+        {
+          "url": "https://www.washingtonpost.com/nation/2026/11/18/more-than-foot-overnight-rain-south-florida-causes-widespread-flooding/",
+          "title": "More than a foot of overnight rain in South Florida causes widespread flooding",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-D12zoCo67R2yEXlXR02VlLEH_gsASLRUoZ7h-c9EVWI5vp-7xdxceI2M700"
+        },
+        {
+          "url": "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
+          "title": "Live updates: Broward declares state of emergency, schools close due to flooding",
+          "publisher": "NBC 6 South Florida",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk"
+        }
+      ]
+    },
+    {
+      "query": "usda health alert breakfast",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T18:20:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/breakfast-items-biscuits-recall-health-alert/92830906007/",
+        "https://www.yahoo.com/news/us/articles/popular-ready-eat-meal-being-124035860.html",
+        "https://www.mycentraljersey.com/story/news/2026/11/18/breakfast-food-recall-listeria-risk/92841680007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/breakfast-items-biscuits-recall-health-alert/92830906007/",
+          "title": "Do not eat these breakfast items, says USDA health alert",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/popular-ready-eat-meal-being-124035860.html",
+          "title": "A Popular Ready-to-Eat Meal Is Being Recalled for Possible Listeria Contamination—Here’s What to Know",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNgM_pJylUC_nPRAqxf9raVRFgkhX5iXSBynFYS8x7fvSepOdsAZYk8c3DLTI"
+        },
+        {
+          "url": "https://www.mycentraljersey.com/story/news/2026/11/18/breakfast-food-recall-listeria-risk/92841680007/",
+          "title": "Breakfast foods recalled over listeria risk. What to know",
+          "publisher": "Central New Jersey News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI"
+        }
+      ]
+    },
+    {
+      "query": "ginny and georgia season 4 release date",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T18:20:00Z",
       "related_news_urls": [
         "https://www.teenvogue.com/story/ginny-and-georgia-season-4-first-look-exclusive",
         "https://deadline.com/2026/11/ginny-and-georgia-season-4-release-date-photos-1237228180/",
-        "https://www.whats-on-netflix.com/news/ginny-georgia-season-4-netflix-release-date-first-look/"
+        "https://www.upi.com/Entertainment_News/TV/2026/11/18/ginny-georgia-season-4-photos-premiere-date/4881795025780/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQba58lTvvAl3eH7dQaTLo0Cu9NQcYHFcfcAmPjJChh0OCGmG6Q9Nzo4CCVSbw",
       "image_credit": "Teen Vogue",
@@ -33,32 +208,32 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQER-TJdcfYo7cjRBmmrPuHjfhmswweR2_BPtAfm-qRkCfKZtGGkkuEA_yI0AA"
         },
         {
-          "url": "https://www.whats-on-netflix.com/news/ginny-georgia-season-4-netflix-release-date-first-look/",
-          "title": "‘Ginny & Georgia’ Season 4 Finally Gets Netflix Release Date",
-          "publisher": "What's on Netflix",
+          "url": "https://www.upi.com/Entertainment_News/TV/2026/11/18/ginny-georgia-season-4-photos-premiere-date/4881795025780/",
+          "title": "'Ginny & Georgia' gets Season 4 photos, January premiere date",
+          "publisher": "upi",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOMO2ZRm_QVeuX8qO17xPad-iMSboXE8gp6G8WNZFHrE-bwPc_NGmLpc5T6K4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUFY6h9rfrD3LI4nzCuiPEzamf97s6aZmk8nb_Z8oTCZ239sf8v9rXCuh2dwI"
         }
       ]
     },
     {
       "query": "ak dear",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-18T18:00:00Z",
       "related_news_urls": [
-        "https://www.al.com/alabamafootball/2026/11/ak-dear-not-with-alabama-football-anymore.html",
+        "https://www.espn.com/college-football/story/_/id/50523034/alabama-running-back-prospect-ak-dear-no-longer-team",
         "https://247sports.com/college/alabama/article/sophomore-running-back-ak-dear-292898366/",
         "https://www.on3.com/news/kalen-deboer-reveals-rb-ak-dear-is-no-longer-a-member-of-alabama-roster/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCzrlxzLVjJnQu3-ZKTuWNJz9GOkucD6fLTgCb0poSyoyxVaHPnvUzi0XuRs0",
-      "image_credit": "AL.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkVcxq1Ay9ZD9z17U3HzE8BbqfU3qRIAhcHWbw6kfxeZZFW9PzP--JXC02FlE",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.al.com/alabamafootball/2026/11/ak-dear-not-with-alabama-football-anymore.html",
-          "title": "Alabama running back no longer with program, DeBoer says",
-          "publisher": "AL.com",
+          "url": "https://www.espn.com/college-football/story/_/id/50523034/alabama-running-back-prospect-ak-dear-no-longer-team",
+          "title": "Alabama running back prospect AK Dear no longer with team",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCzrlxzLVjJnQu3-ZKTuWNJz9GOkucD6fLTgCb0poSyoyxVaHPnvUzi0XuRs0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkVcxq1Ay9ZD9z17U3HzE8BbqfU3qRIAhcHWbw6kfxeZZFW9PzP--JXC02FlE"
         },
         {
           "url": "https://247sports.com/college/alabama/article/sophomore-running-back-ak-dear-292898366/",
@@ -112,48 +287,13 @@
       ]
     },
     {
-      "query": "biscuit recall",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T17:30:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/breakfast-items-biscuits-recall-health-alert/92830906007/",
-        "https://www.mycentraljersey.com/story/news/2026/11/18/breakfast-food-recall-listeria-risk/92841680007/",
-        "https://news4sanantonio.com/news/local/biscuit-and-sausage-gravy-recalled-for-possible-listeria-contamination-san-antonio-food-safety-guenther"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/breakfast-items-biscuits-recall-health-alert/92830906007/",
-          "title": "Do not eat these breakfast items, says USDA health alert",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI"
-        },
-        {
-          "url": "https://www.mycentraljersey.com/story/news/2026/11/18/breakfast-food-recall-listeria-risk/92841680007/",
-          "title": "Breakfast foods recalled over listeria risk. What to know",
-          "publisher": "Central New Jersey News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakoXC6d34zp186K0e9yaK6LOeOCAs9spWsrZ5qxBJxDUA9Y48eKgyRKNwDcI"
-        },
-        {
-          "url": "https://news4sanantonio.com/news/local/biscuit-and-sausage-gravy-recalled-for-possible-listeria-contamination-san-antonio-food-safety-guenther",
-          "title": "Biscuit and sausage gravy recalled for possible listeria contamination",
-          "publisher": "WOAI",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYN_MIDWSE-2uOzxBD3WocK4EW4yo2ko9jP-aBialh87g4p-NRhy6ZxIjE1Xc"
-        }
-      ]
-    },
-    {
       "query": "hakeem jeffries speaker",
       "approx_searches": "20000+",
       "published_at": "2026-11-18T17:20:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
-        "https://www.timesofisrael.com/democrats-formally-nominate-hakeem-jeffries-to-be-next-us-house-speaker/",
-        "https://www.cnn.com/2026/11/18/politics/video/jeffries-wins-nomination-digvid"
+        "https://www.theguardian.com/us-news/live/2026/nov/18/donald-trump-mary-peltola-alaska-hakeem-jeffries-democrats-republicans-congress-house-senate-midterms-latest-news-updates",
+        "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI",
       "image_credit": "The New York Times",
@@ -166,24 +306,24 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI"
         },
         {
-          "url": "https://www.timesofisrael.com/democrats-formally-nominate-hakeem-jeffries-to-be-next-us-house-speaker/",
-          "title": "Democrats formally nominate Hakeem Jeffries to be next US House speaker",
-          "publisher": "The Times of Israel",
+          "url": "https://www.theguardian.com/us-news/live/2026/nov/18/donald-trump-mary-peltola-alaska-hakeem-jeffries-democrats-republicans-congress-house-senate-midterms-latest-news-updates",
+          "title": "Democrats nominate Hakeem Jeffries to become first Black House speaker – US politics live",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNUNfOjQyUZGb8xGoO7MwQuOdH9w4CF5mZ8MPAvvoPRwUBdwJ_1nV8dtB2EjM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvsSmFdRCVSEMFmW7J8HBflWkzPXiNx3DU-HtccE6HFT9yXIlB2RKHHgASQnQ"
         },
         {
-          "url": "https://www.cnn.com/2026/11/18/politics/video/jeffries-wins-nomination-digvid",
-          "title": "Hakeem Jeffries wins Democratic nomination for House speaker",
-          "publisher": "CNN",
+          "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
+          "title": "Jeffries wins Democratic House speaker race, on track to make history in January",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZOTGWbo2bV231_wSPdYlsdzAu9Z1DpLqfmISlwnMyPsDYQJIn-EuFtpV7sE4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfS_imvE3ZKCIEu1NkQeOgRuY-AYL4tiVy-aEyLJQpRmnFuo6HbmUqPOeZzck"
         }
       ]
     },
     {
       "query": "katherine clark",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-18T17:10:00Z",
       "related_news_urls": [
         "https://www.cbsnews.com/boston/news/katherine-clark-house-majority-leader-democrats/",
@@ -213,146 +353,6 @@
           "publisher": "WCVB",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoJUve-tt0gouaP3H5jfM8Vk9x_iKV-pjhnxxwqGFwuTwA2j9wVe1SvDxmLA"
-        }
-      ]
-    },
-    {
-      "query": "youngstown propane",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T17:10:00Z",
-      "related_news_urls": [
-        "https://fox8.com/news/firefighters-are-on-scene-of-reported-explosion-in-austintown/",
-        "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
-        "https://www.limapagi.id/en/youngstown-propane-explosion-injures-workers"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89rJ9Gaw0hVjcNnJlAH-FI7WrGoSDxo7eKuQxeDtb0664UM-yZx3mBrjrsug",
-      "image_credit": "FOX 8 News",
-      "news": [
-        {
-          "url": "https://fox8.com/news/firefighters-are-on-scene-of-reported-explosion-in-austintown/",
-          "title": "Firefighters are on scene of reported explosion in Austintown",
-          "publisher": "FOX 8 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89rJ9Gaw0hVjcNnJlAH-FI7WrGoSDxo7eKuQxeDtb0664UM-yZx3mBrjrsug"
-        },
-        {
-          "url": "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
-          "title": "Crews investigating explosion at Youngstown Propane",
-          "publisher": "WFMJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvTHDy0-6yhjl1Sansv3rwr-aGPWK68OZ0uo9ZdIUiOHgRLkCuR0kPDI9oME8"
-        },
-        {
-          "url": "https://www.limapagi.id/en/youngstown-propane-explosion-injures-workers",
-          "title": "Explosion Injures Two Workers at Youngstown Propane in Ohio",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1MazUyXeoK0xHodyJrrwba2gHIAiSCAk6HH0nV16ki0bJDcY6Rk8OUodB1WY"
-        }
-      ]
-    },
-    {
-      "query": "the comeback king",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T17:00:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/the-comeback-king-trailer-glen-powell-judd-apatow-1237228094/",
-        "https://www.esquire.com/entertainment/tv/a74465481/glen-powell-the-comeback-king-trailer/",
-        "https://www.yahoo.com/entertainment/movies/articles/glen-powell-country-music-movie-170450216.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTO5wEGbCRD9X0vPLr4wRKh35hZvDxSKNDjlDkLQPUZZiyafngAideAHfsXeI",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/the-comeback-king-trailer-glen-powell-judd-apatow-1237228094/",
-          "title": "‘The Comeback King’ Trailer: Glen Powell Goes Country In New Judd Apatow Comedy",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTO5wEGbCRD9X0vPLr4wRKh35hZvDxSKNDjlDkLQPUZZiyafngAideAHfsXeI"
-        },
-        {
-          "url": "https://www.esquire.com/entertainment/tv/a74465481/glen-powell-the-comeback-king-trailer/",
-          "title": "Glen Powell Tussles with Country Music Superstars in ‘The Comeback King’ Trailer",
-          "publisher": "Esquire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBfB5_QJxwXLqSxOO540yP2-bafVxdO9VCi5fReISD3EPH7qh1m59mi09KS7M"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/glen-powell-country-music-movie-170450216.html",
-          "title": "Glen Powell’s New Country Music Movie Has Jelly Roll Making A Sick Burn About Himself",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjBrbBnP2UGeI9tEbLTNtSocprLWNbGGds_c7W8Z4NpXYYbsAE9ScclIivg8A"
-        }
-      ]
-    },
-    {
-      "query": "real madrid vs inter",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T17:00:00Z",
-      "related_news_urls": [
-        "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/",
-        "https://www.reutersconnect.com/item/uefa-womens-champions-league-real-madrid-v-inter-milan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkxQ1NBWUs",
-        "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ",
-      "image_credit": "UEFA.com",
-      "news": [
-        {
-          "url": "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/",
-          "title": "Women's Champions League Matchday 5 preview: Chelsea vs Paris SG, Real Madrid vs Inter, Arsenal vs OL Lyonnes, Benfica vs Roma",
-          "publisher": "UEFA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/uefa-womens-champions-league-real-madrid-v-inter-milan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkxQ1NBWUs",
-          "title": "Licensable picture: UEFA Women's Champions League - Real Madrid v Inter Milan",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-nai2xe44SCQ1IfoYXhPpUi6AUChSXo09tbEOqdO6oynGlgtIluLYnFP6VE"
-        },
-        {
-          "url": "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing",
-          "title": "UWCL Round 5 preview: giants on the move, tight races brewing",
-          "publisher": "Sofascore",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7eX8qGm5Pyxy3gkTDa_JYTw2EsA6EHhc1fywCX34GpJSghRmGTYBLm0u4t4"
-        }
-      ]
-    },
-    {
-      "query": "baylor basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T17:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/baylor-jackson-state-prediction-odds-time-2026-college-basketball-picks-wednesday-november-18/",
-        "https://sports.yahoo.com/articles/baylor-hosts-jackson-state-following-094317882.html",
-        "https://www.kcentv.com/video/sports/basketball/bears-basketball-coach-scott-drew-and-kayden-mingo-speak-after-close-loss-against-the-ut/500-93eacbe1-4da8-4877-9552-2dcf7910479c"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrJzEHqQ7pz7BeWdnVsyuyb_Uqj8kCLh7qdb9jvCOjXv4M7ZphcqcBxIBcg4",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/baylor-jackson-state-prediction-odds-time-2026-college-basketball-picks-wednesday-november-18/",
-          "title": "Baylor vs. Jackson State prediction, odds: College basketball picks for Wednesday, Nov. 18 by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrJzEHqQ7pz7BeWdnVsyuyb_Uqj8kCLh7qdb9jvCOjXv4M7ZphcqcBxIBcg4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/baylor-hosts-jackson-state-following-094317882.html",
-          "title": "Baylor hosts Jackson State following Mingo's 23-point game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEHkjsDlghGGoSHUAab4uHGcmdEajSBa3hwPv7KoqKkQu3jGYzRy4uha6HGeE"
-        },
-        {
-          "url": "https://www.kcentv.com/video/sports/basketball/bears-basketball-coach-scott-drew-and-kayden-mingo-speak-after-close-loss-against-the-ut/500-93eacbe1-4da8-4877-9552-2dcf7910479c",
-          "title": "Baylor Basketball | Coach Scott Drew and Kayden Mingo speak after close loss against the UT",
-          "publisher": "KCENTV.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC5fwkWuZqBZFcqTf54pEAF7oCZM1rvW0uZE5SSiHVVrAPRq6uCbDts7RMErw"
         }
       ]
     }
