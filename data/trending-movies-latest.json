@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-18T18:04:41.084215Z",
+  "checked_at": "2026-11-18T18:33:01.372215Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
@@ -17,9 +17,9 @@
       "poster": "https://i.ytimg.com/vi/Jmt9KUqotlo/hqdefault.jpg",
       "google_trending": true,
       "trend_query": "the comeback king",
-      "trend_checked_at": "2026-11-18T18:01:20.282902Z",
+      "trend_checked_at": "2026-11-18T18:31:25.132134Z",
       "trend_published_at": "2026-11-18T17:00:00Z",
-      "approx_searches": "500+"
+      "approx_searches": "1000+"
     },
     {
       "id": "o9WWeKSbtAo",
@@ -52,6 +52,18 @@
       "trend_checked_at": "2026-11-14T20:31:06.368122Z",
       "trend_published_at": "2026-11-14T19:50:00Z",
       "approx_searches": "500+"
+    },
+    {
+      "id": "pGlzSdv95lI",
+      "title": "Artificial",
+      "video_id": "pGlzSdv95lI",
+      "video_title": "Artificial Trailer #1 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-18T18:13:50Z",
+      "source_url": "https://www.youtube.com/watch?v=pGlzSdv95lI",
+      "poster": "https://i.ytimg.com/vi/pGlzSdv95lI/hqdefault.jpg",
+      "google_trending": false
     },
     {
       "id": "naGmiGQea-M",
