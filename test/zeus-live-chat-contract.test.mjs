@@ -80,3 +80,13 @@ test('Start Quest opens the original Zeus chat path and focuses the real compose
  assert.match(js,/el\('zeusStartQuest'\)\?\.addEventListener\('click'/);
  assert.match(js,/questInput\.focus\(\)/);
 });
+
+test('Zeus live quest integration preserves newer Oracle, Avatar, and search entrypoints',()=>{
+ const html=read('index.html');
+ assert.match(html,/id="oracleCardDepartment"/);
+ assert.match(html,/id="iowaRadioMedia"/);
+ assert.match(html,/id="nuanceDiscoveryCard"/);
+ assert.match(html,/avatar-ai-card\.css/);
+ assert.match(html,/quanta-home-search-assist\.mjs/);
+ assert.match(html,/bubbles-ai\.js\?v=20261111-zeus-terminal1/);
+});
