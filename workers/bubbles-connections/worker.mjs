@@ -1,5 +1,6 @@
 import {DurableObject} from 'cloudflare:workers';
 import {ConsentService} from './consent.mjs';
+import {OwnerPasskeys} from './owner-passkeys.mjs';
 import {TokenVault,digest} from './vault.mjs';
 import {googleAdapter,githubAdapter,cloudflareAdapter,resolveCloudflareScopeConfig} from './providers.mjs';
 import {executeGoogleRead,selectGoogleResource} from './google-read.mjs';
@@ -13,6 +14,7 @@ export class UserConnections extends DurableObject {
   constructor(ctx,env) {
     super(ctx,env);
     this.pairing=new ConnectorPairing(ctx.storage);
+    this.ownerPasskeys=new OwnerPasskeys(ctx.storage,{allowedAliases:env.OWNER_EMAIL_ALIAS_REGISTRY});
     const adapters = {};
     const cloudflareScopes=resolveCloudflareScopeConfig(env);
     if (env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET) adapters.google = googleAdapter({clientId:env.GOOGLE_CLIENT_ID,clientSecret:env.GOOGLE_CLIENT_SECRET,redirectUri:'https://quantaphi.org/api/bubbles/connections/google/callback'});
@@ -23,6 +25,11 @@ export class UserConnections extends DurableObject {
         redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'});
     this.service = new ConsentService({storage:ctx.storage,vault:new TokenVault(JSON.parse(env.CONNECTION_KEYRING || '{}'),env.CONNECTION_ACTIVE_KEY),adapters});
   }
+  async passkeyRegisterBegin(input){return this.ownerPasskeys.beginRegistration(input);}
+  async passkeyRegisterFinish(input){return this.ownerPasskeys.finishRegistration(input);}
+  async passkeyLoginBegin(input){return this.ownerPasskeys.beginAuthentication(input);}
+  async passkeyLoginFinish(input){return this.ownerPasskeys.finishAuthentication(input);}
+  async passkeyValidateSession(input){return this.ownerPasskeys.validateSession(input);}
   async list(input) {return this.service.list(input);}
   async walletEmail(input) {return walletEmailPreference(this.service,input);}
   async gateStatus(input) {return this.service.gateStatus(input);}

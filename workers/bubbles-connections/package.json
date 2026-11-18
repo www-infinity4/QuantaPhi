@@ -1,0 +1,9 @@
+{
+  "name": "quantaphi-bubbles-connections",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@simplewebauthn/server": "14.0.3"
+  }
+}
