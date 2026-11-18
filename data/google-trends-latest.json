@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T01:01:33.779278Z",
+  "checked_at": "2026-11-18T01:31:35.298740Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cfp rankings today",
+      "query": "harry shum jr",
       "approx_searches": "2000+",
-      "published_at": "2026-11-18T00:40:00Z",
+      "published_at": "2026-11-18T01:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50503628/cfp-playoff-2026-bubble-watch-week-third-ranking",
-        "https://www.cbssports.com/college-football/news/college-football-playoff-rankings-prediction-top-25-week-12-2026/",
-        "https://www.ncaa.com/news/football/article/2026-11-17/when-do-college-football-playoff-rankings-come-out"
+        "https://www.imdb.com/es/news/ni66114747/?ref_=nwc_art_perm",
+        "https://people.com/harry-shum-jr-mom-told-him-i-love-you-first-time-dancing-with-the-stars-12260245",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/harry-shum-jr-heard-three-202000358.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7uaoRhAMFO_wnGjX2vuRw3zRJoWSvAMcnsCPl14sbqdxVVKspZO19c494iNw",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5U9ciD-CLj3PBYmcfaQo1hUT9wCj6oVjf0d6UJC9JOzUQUFc4vtBDu1T3Xk",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50503628/cfp-playoff-2026-bubble-watch-week-third-ranking",
-          "title": "Who's on College Football Playoff bubble ahead of committee's third ranking?",
-          "publisher": "ESPN",
+          "url": "https://www.imdb.com/es/news/ni66114747/?ref_=nwc_art_perm",
+          "title": "Harry Shum Jr.’s Mom Tells Him ‘I Love You’ for the First Time After 44 Years Following ‘DWTS’",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7uaoRhAMFO_wnGjX2vuRw3zRJoWSvAMcnsCPl14sbqdxVVKspZO19c494iNw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5U9ciD-CLj3PBYmcfaQo1hUT9wCj6oVjf0d6UJC9JOzUQUFc4vtBDu1T3Xk"
         },
         {
-          "url": "https://www.cbssports.com/college-football/news/college-football-playoff-rankings-prediction-top-25-week-12-2026/",
-          "title": "College Football Playoff Rankings prediction: Texas rises into top four, but biggest debate is outside top 12",
+          "url": "https://people.com/harry-shum-jr-mom-told-him-i-love-you-first-time-dancing-with-the-stars-12260245",
+          "title": "Harry Shum Jr. Says His Mom Told Him ‘I Love You’ for the First Time After Watching Him on Dancing with the Stars",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS50nQh0BFpZWZEco-oK7xQFe4PyZaDrIsNNxUeY-aB1Mwqix76l2UshtBPZnE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/harry-shum-jr-heard-three-202000358.html",
+          "title": "Harry Shum Jr. Heard Three Words From His Mom For The First Time At 44 After ‘DWTS’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4-ymCRkLhIDXyxApxwmsKBbHJb-3dZT2iIlSJRCUd5NLydEX-ZxvEe62lc2U"
+        }
+      ]
+    },
+    {
+      "query": "alabama basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T01:10:00Z",
+      "related_news_urls": [
+        "https://www.al.com/alabamabasketball/2026/11/alabama-legend-returns-home-as-crimson-tide-closes-out-homestand.html",
+        "https://www.rollbamaroll.com/alabama-crimson-tide-basketball/86774/alabama-basketball-vs-kennesaw-state-3-keys-how-to-watch",
+        "https://247sports.com/college/alabama/article/alabama-coach-nate-oats-reflects-on-time-with-antoine-pettway-before-matchup-with-kennesaw-state--292882820/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtWV6zYA5S0hXlfskeoCpB3-Xcfie3e1bnkLiW-7FrpPd6zz_rfryUbkJAn5w",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/alabamabasketball/2026/11/alabama-legend-returns-home-as-crimson-tide-closes-out-homestand.html",
+          "title": "Alabama legend returns home as Crimson Tide closes out homestand",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtWV6zYA5S0hXlfskeoCpB3-Xcfie3e1bnkLiW-7FrpPd6zz_rfryUbkJAn5w"
+        },
+        {
+          "url": "https://www.rollbamaroll.com/alabama-crimson-tide-basketball/86774/alabama-basketball-vs-kennesaw-state-3-keys-how-to-watch",
+          "title": "Alabama Basketball vs Kennesaw State: 3 Keys, How to Watch",
+          "publisher": "Roll 'Bama Roll",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9IzNiBv3s4xct6_C9_haQdY7Id8dtBIJFCUAXQOTwexx2TpsLJ9M3f8Q5Pg0"
+        },
+        {
+          "url": "https://247sports.com/college/alabama/article/alabama-coach-nate-oats-reflects-on-time-with-antoine-pettway-before-matchup-with-kennesaw-state--292882820/",
+          "title": "Alabama coach Nate Oats reflects on time with Antoine Pettway before matchup with Kennesaw State",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCvbv6oxOiIy4131bX3A4nIzsGJvdScK20Ff3-Inor-75CXWplvtpx_WTQHCM"
+        }
+      ]
+    },
+    {
+      "query": "tasty chick n llc",
+      "approx_searches": "500+",
+      "published_at": "2026-11-18T01:10:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-17/kfc-franchisee-blames-bankruptcy-on-rising-costs-falling-sales",
+        "https://www.inc.com/amaya-nichole/kfc-franchisee-84-restaurants-filed-bankruptcy-demand-chicken-is-not-problem/91438319",
+        "https://www.masslive.com/news/2026/11/say-goodbye-major-chicken-chain-operator-files-bankruptcy-closing-dozens-of-locations.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgzjWp56J5KpNzm9JNHcoxpObETEjwbx_mRJvLgpgNy_ME-Hji10JF_g-2Nog",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-17/kfc-franchisee-blames-bankruptcy-on-rising-costs-falling-sales",
+          "title": "KFC Franchisee Blames Bankruptcy on Rising Costs, Falling Sales",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgzjWp56J5KpNzm9JNHcoxpObETEjwbx_mRJvLgpgNy_ME-Hji10JF_g-2Nog"
+        },
+        {
+          "url": "https://www.inc.com/amaya-nichole/kfc-franchisee-84-restaurants-filed-bankruptcy-demand-chicken-is-not-problem/91438319",
+          "title": "A KFC Franchisee With 84 Restaurants Just Filed for Bankruptcy. Demand for Chicken Isn't the Problem",
+          "publisher": "Inc.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7vonEdemRL6-p1Btlc_JNRI_sohSiruFh0ZmOsXOU0y4tZlK2lo58XS_j1Sw"
+        },
+        {
+          "url": "https://www.masslive.com/news/2026/11/say-goodbye-major-chicken-chain-operator-files-bankruptcy-closing-dozens-of-locations.html",
+          "title": "Say goodbye: Major chicken chain operator files bankruptcy, closing dozens of locations",
+          "publisher": "MassLive",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwBPkhDoApUg_Id28TBe0t0rqQZdLgXa6DIVLXxy2l92fLqdQGdlZ5uRUqPgg"
+        }
+      ]
+    },
+    {
+      "query": "cody williams",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T01:10:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/timberwolves-cody-williams-starting-tuesday/",
+        "https://timberwolves.com/news/jaylen-clark-injury-update",
+        "https://www.canishoopus.com/timberwolves-news/72002/nba-injury-update-jaylen-clark-cody-williams"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXWJKelyhiJ8Rs3N3Vc19rkvj74YtI8HYNcivWLPOxA_-pI0CsnK_Im5dZbk",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/timberwolves-cody-williams-starting-tuesday/",
+          "title": "Timberwolves' Cody Williams: Starting Tuesday",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbVIuWEiZXBl_gd1duL67HRFHdPV5nwg4yBw49p3PYiMO87ZclavIgbDGn1Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXWJKelyhiJ8Rs3N3Vc19rkvj74YtI8HYNcivWLPOxA_-pI0CsnK_Im5dZbk"
         },
         {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-17/when-do-college-football-playoff-rankings-come-out",
-          "title": "College Football Playoff rankings schedule, release dates",
-          "publisher": "NCAA.com",
+          "url": "https://timberwolves.com/news/jaylen-clark-injury-update",
+          "title": "Jaylen Clark Injury Update | Minnesota Timberwolves",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbq-Ek8omSEsXGN2wN4XpHtDD29xiG4QDGYYj5KrZzeaTHR334yLEJ8jfcNe4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3F7XDou5yNkERE9n29L4pa_tWUxwYsOlftt8gvmICw34PNSY3c57NblRkZpc"
+        },
+        {
+          "url": "https://www.canishoopus.com/timberwolves-news/72002/nba-injury-update-jaylen-clark-cody-williams",
+          "title": "NBA News: Jaylen Clark out 2 weeks",
+          "publisher": "Canis Hoopus",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQopKWJ0SB9qIDloBLBb2iBgEcHRgdlrHQSW0O1YWl6J7G1GQ9ab0tevxhOugc"
         }
       ]
     },
     {
-      "query": "kennesaw st vs alabama",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T00:40:00Z",
+      "query": "immanuel quickley",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T01:10:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/west-virginia/longformarticle/texts-from-kansas-game-day-292846477/",
-        "https://www.goodbullhunting.com/useless-breakdown/41476/useless-breakdown-texas-am-at-oklahoma",
-        "https://wvmetronews.com/2026/11/16/rodriguez-left-searching-for-answers-after-mountaineers-endure-most-lopsided-loss-of-season/"
+        "https://raptorsrapture.com/immanuel-quickley-comparisons-highlight-uncomfortable-raptors-contract-reality",
+        "https://www.thestar.com/sports/doug-smiths-sports-blog/raptors-mailbag-can-this-to-be-a-contender-with-immanuel-quickley-starting/article_04a241bd-8072-4835-ae32-0e0248adf6dc.html",
+        "https://raptorsrapture.com/raptors-could-unlock-immanuel-quickley-s-off-guard-potential-with-a-kris-dunn-trade"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgbpdEDvn9hQjmL1dsTRdz-hYjzvT-0XT059tGdSVJQk_4uFg30Lr6oIKbauE",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRs2nOiQCh2bUpXen6NSi2fuOgvet_GM2TSnuWLNLUnYfnwkaCG0zco1qfXgxw",
+      "image_credit": "Raptors Rapture",
       "news": [
         {
-          "url": "https://247sports.com/college/west-virginia/longformarticle/texts-from-kansas-game-day-292846477/",
-          "title": "Texts from Kansas Game Day",
-          "publisher": "247Sports",
+          "url": "https://raptorsrapture.com/immanuel-quickley-comparisons-highlight-uncomfortable-raptors-contract-reality",
+          "title": "Immanuel Quickley comparisons highlight uncomfortable Raptors contract reality",
+          "publisher": "Raptors Rapture",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgbpdEDvn9hQjmL1dsTRdz-hYjzvT-0XT059tGdSVJQk_4uFg30Lr6oIKbauE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRs2nOiQCh2bUpXen6NSi2fuOgvet_GM2TSnuWLNLUnYfnwkaCG0zco1qfXgxw"
         },
         {
-          "url": "https://www.goodbullhunting.com/useless-breakdown/41476/useless-breakdown-texas-am-at-oklahoma",
-          "title": "USELESS BREAKDOWN: Texas A&M at Oklahoma graphical football preview",
-          "publisher": "Good Bull Hunting",
+          "url": "https://www.thestar.com/sports/doug-smiths-sports-blog/raptors-mailbag-can-this-to-be-a-contender-with-immanuel-quickley-starting/article_04a241bd-8072-4835-ae32-0e0248adf6dc.html",
+          "title": "Doug Smith: Raptors mailbag: Can this team be a contender with Immanuel Quickley starting?",
+          "publisher": "Toronto Star",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT0eShGa5xS4IXhNgNYVdBiOrHE6jdaLnCCL1UxCgI-TJBtcoDYuWDIKiLO30"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRO2HWDXBtCQMSwCLm0yA8hPbpeBZKZ9uLWFX2mBViOad25rcM7OAPTaMbbcw"
         },
         {
-          "url": "https://wvmetronews.com/2026/11/16/rodriguez-left-searching-for-answers-after-mountaineers-endure-most-lopsided-loss-of-season/",
-          "title": "Rodriguez left searching for answers after Mountaineers endure most lopsided loss of season",
-          "publisher": "WV MetroNews",
+          "url": "https://raptorsrapture.com/raptors-could-unlock-immanuel-quickley-s-off-guard-potential-with-a-kris-dunn-trade",
+          "title": "Raptors could unlock Immanuel Quickley's off-guard potential with a Kris Dunn trade",
+          "publisher": "Raptors Rapture",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcfWebs1CKI-AXihqm_GcM-a-5diDXi8d_c5shuqxR2VpO0QJZ-foMhUamisM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbEhP__GQv1NlKrTlWu9H7W_L_0x-WnuLTJw0LlJDqBgwjg-BnVnIgv-CgWA8"
         }
       ]
     },
     {
-      "query": "tennessee vs belmont",
+      "query": "dazn",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T00:40:00Z",
+      "published_at": "2026-11-18T01:00:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/tennessee/article/lady-vols-belmont-setup-292867557/",
-        "https://www.si.com/college/tennessee/women-s-basketball/live-updates-lady-vols-basketball-at-belmont-01m7nyvqnak0",
-        "https://sports.yahoo.com/articles/kim-caldwell-trying-match-third-133048779.html"
+        "https://www.bbc.com/sport/swimming/articles/ck1wvzryg015o",
+        "https://swimswam.com/isl-partners-with-dazn-to-stream-upcoming-all-star-match-live-free-around-the-world/",
+        "https://www.bbc.co.uk/sport/swimming/videos/c6742ej3dgkko"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2Z6e4aIPwyBuhWJHFeXg6dro1GZJmglz9Ap9oHOD-audKtCPrREASyfe8-oc",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs64_2J2RjWbJ-x03dZAPQnpKrlBWWQ5j1xNJML0V-MR_XRudNB1_6BBCsukE",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://247sports.com/college/tennessee/article/lady-vols-belmont-setup-292867557/",
-          "title": "Lady Vols to face another in-state foe in Belmont",
-          "publisher": "247Sports",
+          "url": "https://www.bbc.com/sport/swimming/articles/ck1wvzryg015o",
+          "title": "International Swimming League: Adam Ramsay-Peaty named for All-Star Match",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2Z6e4aIPwyBuhWJHFeXg6dro1GZJmglz9Ap9oHOD-audKtCPrREASyfe8-oc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs64_2J2RjWbJ-x03dZAPQnpKrlBWWQ5j1xNJML0V-MR_XRudNB1_6BBCsukE"
         },
         {
-          "url": "https://www.si.com/college/tennessee/women-s-basketball/live-updates-lady-vols-basketball-at-belmont-01m7nyvqnak0",
-          "title": "Live Updates: Lady Vols Basketball at Belmont",
+          "url": "https://swimswam.com/isl-partners-with-dazn-to-stream-upcoming-all-star-match-live-free-around-the-world/",
+          "title": "ISL Partners With DAZN To Stream Upcoming All-Star Match Live & Free Around The World",
+          "publisher": "SwimSwam",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_7jP92vn6rqnqC5BB6twsdErmwxBh2sr1cG8Wv8gte13Du54hnxUO0BW4tg"
+        },
+        {
+          "url": "https://www.bbc.co.uk/sport/swimming/videos/c6742ej3dgkko",
+          "title": "International Swimming League: Adam Ramsay-Peaty says just want sport needs",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRodd9_o7ri73IVWlyODJMBeNraKEXkQ8mARynkelCqgfqAuD7fdSzNt6mNPik"
+        }
+      ]
+    },
+    {
+      "query": "knicks vs toronto raptors match player stats",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T01:00:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/game/orl-vs-bos-0022600245/box-score",
+        "https://www.canishoopus.com/timberwolves-analysis/71795/minnesota-timberwolves-quarter-report-lamelo-ball",
+        "https://sports.yahoo.com/articles/analyzing-timberwolves-biggest-strength-weakness-020044705.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyTEekA7C_BdXocojC9sABcKDdqg8Y5a8btLe9wHgozOl5ky-PYAbFYzoZKrI",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/game/orl-vs-bos-0022600245/box-score",
+          "title": "Orlando Magic vs Boston Celtics Nov 16, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyTEekA7C_BdXocojC9sABcKDdqg8Y5a8btLe9wHgozOl5ky-PYAbFYzoZKrI"
+        },
+        {
+          "url": "https://www.canishoopus.com/timberwolves-analysis/71795/minnesota-timberwolves-quarter-report-lamelo-ball",
+          "title": "NBA Quarterly Report: Minnesota Timberwolves First Quarter Conferences",
+          "publisher": "Canis Hoopus",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb15ZK-GCtCiVm1SXhadpk8sAs1y34B1TesJ0bbPkxTsLYfYAByZG9r4hZc3o"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/analyzing-timberwolves-biggest-strength-weakness-020044705.html",
+          "title": "Analyzing Timberwolves’ Biggest Strength and Weakness After First 11 Games",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7cZ0RDCyjyYAJfPLagen4t7S3JOMCI4Z0l0lo9ZVpShQqN3kwq0Sik_Y3mhI"
+        }
+      ]
+    },
+    {
+      "query": "nyk vs tor",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T01:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/game/_/gameId/401909990/knicks-raptors",
+        "https://www.espn.com/nba/game/_/gameId/401909988/spurs-jazz",
+        "https://www.espn.com/nba/game/_/gameId/401909987/hornets-clippers"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyhYRxQI0JHAi12ZzX-zUj_xmgRjEu32dA7468mmqYvjGrO-DQTiUxWbcerf4",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/game/_/gameId/401909990/knicks-raptors",
+          "title": "Knicks 112-108 Raptors (Nov 15, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyhYRxQI0JHAi12ZzX-zUj_xmgRjEu32dA7468mmqYvjGrO-DQTiUxWbcerf4"
+        },
+        {
+          "url": "https://www.espn.com/nba/game/_/gameId/401909988/spurs-jazz",
+          "title": "Spurs 110-102 Jazz (Nov 15, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9yjc0-mtNuZEEnFaakTudQrsWZXygqiw8opDAnIZnhftHTKX6BobWKMo6Vjg"
+        },
+        {
+          "url": "https://www.espn.com/nba/game/_/gameId/401909987/hornets-clippers",
+          "title": "Clippers 113-105 Hornets (Nov 15, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx4wgUSBhX0dWTgLHARGat80Cw2PH1Kuj9ilasTN4kDnXnlHeoXhtjYs2JPj8"
+        }
+      ]
+    },
+    {
+      "query": "xavier basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T01:00:00Z",
+      "related_news_urls": [
+        "https://www.cincinnati.com/story/sports/college/xavier/2026/11/16/xavier-musketeers-cleveland-state-vikings-basketball-preview/92808685007/",
+        "https://sports.yahoo.com/articles/xavier-v-cleveland-state-preview-204342672.html",
+        "https://csuvikings.com/news/2026/11/16/cleveland-state-mens-basketball-concludes-road-trip-at-xavier-tuesday-night.aspx"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5IS5_mk1U4inQyWx57HAi2dQFD26n163Kz1pI6ps_DfJxiP2and8DwcEQHds",
+      "image_credit": "Cincinnati Enquirer",
+      "news": [
+        {
+          "url": "https://www.cincinnati.com/story/sports/college/xavier/2026/11/16/xavier-musketeers-cleveland-state-vikings-basketball-preview/92808685007/",
+          "title": "Bold predictions for Xavier vs. Cleveland State",
+          "publisher": "Cincinnati Enquirer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5IS5_mk1U4inQyWx57HAi2dQFD26n163Kz1pI6ps_DfJxiP2and8DwcEQHds"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/xavier-v-cleveland-state-preview-204342672.html",
+          "title": "Xavier v. Cleveland State: Preview and keys to the game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKveOFSpChuC4JOxFcz1IE3oxGdVo4smfVeonJb9ZJLLwywLAW04ARuyL7RiQ"
+        },
+        {
+          "url": "https://csuvikings.com/news/2026/11/16/cleveland-state-mens-basketball-concludes-road-trip-at-xavier-tuesday-night.aspx",
+          "title": "Cleveland State Men's Basketball Concludes Road Trip at Xavier",
+          "publisher": "csuvikings.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIe4GrvYZGnpNKl6ZOgG6l-hdK7p5aOAl1MDjnyUcoevmLsQ7L86V0AOlPRXM"
+        }
+      ]
+    },
+    {
+      "query": "julian hall",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-18T00:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50482590/julian-hall-usa-poland-haiti-fifa-nations-league-concacaf",
+        "https://www.si.com/soccer/every-dual-national-cap-tied-usmnt-concacaf-nations-league",
+        "https://sbisoccer.com/2026/11/julian-hall-officially-cap-tied-to-usmnt-with-nations-league-appearance"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlosKthIvUfK-ciMAZ1_iWp3f1V-Fh53UVF__FV8RPehpogFyfjT7A9LpsRhY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50482590/julian-hall-usa-poland-haiti-fifa-nations-league-concacaf",
+          "title": "Dual-national Julian Hall officially tied to USMNT with appearance vs. Haiti",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlosKthIvUfK-ciMAZ1_iWp3f1V-Fh53UVF__FV8RPehpogFyfjT7A9LpsRhY"
+        },
+        {
+          "url": "https://www.si.com/soccer/every-dual-national-cap-tied-usmnt-concacaf-nations-league",
+          "title": "Every Dual National Now Cap-Tied to the USMNT Following Concacaf Nations League",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK4C9xfGEDJj6AtejiqMiyjFvl6m6yWVG2MMevUWmzkftb2pw3sQ8teNkncfs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNxEAqlZLJY6pyLYjJv3hPpIXAZRcZfvo9NVQMOvCY-HzGqTYWBZM6TSYuWE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/kim-caldwell-trying-match-third-133048779.html",
-          "title": "Kim Caldwell trying to match third-best season start of career",
-          "publisher": "Yahoo Sports",
+          "url": "https://sbisoccer.com/2026/11/julian-hall-officially-cap-tied-to-usmnt-with-nations-league-appearance",
+          "title": "Julian Hall officially cap-tied to USMNT with Nations League appearance - x",
+          "publisher": "SBI Soccer",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTssB4w7AXccxz2m0VgCYw0A73WIwWcU1AYZE3wZisLOPoC0ucbF4kV2cmquoU"
-        }
-      ]
-    },
-    {
-      "query": "target black friday 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T00:40:00Z",
-      "related_news_urls": [
-        "https://www.ign.com/articles/target-reveals-black-friday-sale-ad-for-2026",
-        "https://www.fb101.com/target-black-friday-food-beverage-drops-goodles-katjes-backflip-714d89fdbc",
-        "https://drugstorenews.com/target-kick-black-friday-sales-event-giveaways"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfyG3D6L_PlJRjdudoqvW4No3s-JOzZI9-ortZUnR3T7-tIvPpfU4HIm2oWk",
-      "image_credit": "IGN",
-      "news": [
-        {
-          "url": "https://www.ign.com/articles/target-reveals-black-friday-sale-ad-for-2026",
-          "title": "Target Reveals Its Black Friday Sale Ad for 2026 and a Free Gift Card Promotion for Shopping in Stores",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfyG3D6L_PlJRjdudoqvW4No3s-JOzZI9-ortZUnR3T7-tIvPpfU4HIm2oWk"
-        },
-        {
-          "url": "https://www.fb101.com/target-black-friday-food-beverage-drops-goodles-katjes-backflip-714d89fdbc",
-          "title": "Target's First-Ever Black Friday Food & Beverage Drops Signal a New Retail Playbook",
-          "publisher": "Food & Beverage Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSIhtA5DHeefbxEWhXGenaNy1FBqud5pj3frblo1rAMeK2Kuh5vTk4U5YnIz0"
-        },
-        {
-          "url": "https://drugstorenews.com/target-kick-black-friday-sales-event-giveaways",
-          "title": "Target to kick off Black Friday sales event, giveaways",
-          "publisher": "Drug Store News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFAgYEPTZu9sy05O27XZCZxTa29qVxdGQW-ceTCvOGjhZJs4hhs7qeuGnF8IE"
-        }
-      ]
-    },
-    {
-      "query": "dakota fanning",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T00:40:00Z",
-      "related_news_urls": [
-        "https://apnews.com/video/elle-fanning-on-working-with-her-sister-dakota-fanning-ac7aa07400a8461d81026be89a7cb7c7",
-        "https://evoke.ie/2026/11/17/entertainment/celebrity/elle-dakota-fanning-big-screen",
-        "https://apnews.com/video/elle-fanning-on-working-with-her-sister-dakota-fanning-77785ccb5cb645c388bfdfb5a11cd5d8"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdjnwjuPu-CSbvs4785pQSAnM3wW7ab_Pn6DZkl_UMEhaGnxrz31Gnfoww938",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/video/elle-fanning-on-working-with-her-sister-dakota-fanning-ac7aa07400a8461d81026be89a7cb7c7",
-          "title": "Elle Fanning on working with her sister, Dakota Fanning",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdjnwjuPu-CSbvs4785pQSAnM3wW7ab_Pn6DZkl_UMEhaGnxrz31Gnfoww938"
-        },
-        {
-          "url": "https://evoke.ie/2026/11/17/entertainment/celebrity/elle-dakota-fanning-big-screen",
-          "title": "Elle and Dakota Fanning to share the big screen for the first time in movie adaptation of hit book",
-          "publisher": "EVOKE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW2TW4RNn48u17ySIU419Z0Am9O1YCd-DdhOWD_tSjs9Mf-5t5u8WoSJpVfvU"
-        },
-        {
-          "url": "https://apnews.com/video/elle-fanning-on-working-with-her-sister-dakota-fanning-77785ccb5cb645c388bfdfb5a11cd5d8",
-          "title": "Elle Fanning on working with her sister, Dakota Fanning",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh3NI0Lcavw1g-6PbK3golJIMNPCYctSnT77GtEeGIy0fb4sqWxuUV9-RQLEw"
-        }
-      ]
-    },
-    {
-      "query": "indiana vs arkansas",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-18T00:30:00Z",
-      "related_news_urls": [
-        "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-indiana-bad-boy-mower-series-new-york/",
-        "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-indiana-basketball-vs-no-20-arkansas--292872175/",
-        "https://www.insidethehall.com/2026/11/17/game-5-iu-basketball-vs-arkansas-preview/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFv9b05KyaKw9Rn2i9kHP_k2kC9dsuEHe4o-jxAEhHaWFNXhRnfrMkrHmjhno",
-      "image_credit": "Arkansas Razorbacks",
-      "news": [
-        {
-          "url": "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-indiana-bad-boy-mower-series-new-york/",
-          "title": "MBB Preview: Arkansas vs Indiana @ Bad Boy Mower Series – New York",
-          "publisher": "Arkansas Razorbacks",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFv9b05KyaKw9Rn2i9kHP_k2kC9dsuEHe4o-jxAEhHaWFNXhRnfrMkrHmjhno"
-        },
-        {
-          "url": "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-indiana-basketball-vs-no-20-arkansas--292872175/",
-          "title": "Scouting report & preview: Indiana basketball vs. No. 20 Arkansas",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAYnOcw3ZcRGzfj_54jp6VI8Tng_GWwyqJGbzoRH4vpSM1zkDs3MmmA4_7c-E"
-        },
-        {
-          "url": "https://www.insidethehall.com/2026/11/17/game-5-iu-basketball-vs-arkansas-preview/",
-          "title": "Game 5: IU basketball vs. Arkansas preview",
-          "publisher": "Inside the Hall",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVv6BxtugKkQefaHL4aBPHx8r-QEueMCLYUGlqADDW1Lw_pXiOpvbtOCx_rE"
-        }
-      ]
-    },
-    {
-      "query": "mexico vs",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-18T00:30:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17526031/seleccion-mexicana-rafa-marquez-jamaica-futuro-continuidad",
-        "https://www.univision.com/noticias/mexico-vs-jamaica-a-que-hora-y-donde-ver-en-vivo-la-vuelta-de-los-cuartos-de-final-de-concacaf-nations-league-video",
-        "https://www.azcentral.com/story/deportes/futbol/2026/11/17/mexico-vs-jamaica-nations-league-cup-cuartos-hora-canal-donde-ver/92819330007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwd3udzetGjxKQFpZuTV4slnIu4PjVbYOUQr8Oz4HhLi62B4WicBeln1ti6E",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17526031/seleccion-mexicana-rafa-marquez-jamaica-futuro-continuidad",
-          "title": "Selección Mexicana: No eres tú, Rafa... es Mikel, los dueños, el sistema",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwd3udzetGjxKQFpZuTV4slnIu4PjVbYOUQr8Oz4HhLi62B4WicBeln1ti6E"
-        },
-        {
-          "url": "https://www.univision.com/noticias/mexico-vs-jamaica-a-que-hora-y-donde-ver-en-vivo-la-vuelta-de-los-cuartos-de-final-de-concacaf-nations-league-video",
-          "title": "México vs. Jamaica hoy: ¿A qué hora y dónde ver en vivo la vuelta de los cuartos de final de Concacaf Nations League 2026?",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrvMv5-GNUWV1DRDdgH2xT4-OLoUQKfMsJCvCOtyE-0QFhHnSk2ocdWdtD7KI"
-        },
-        {
-          "url": "https://www.azcentral.com/story/deportes/futbol/2026/11/17/mexico-vs-jamaica-nations-league-cup-cuartos-hora-canal-donde-ver/92819330007/",
-          "title": "¿Cuándo juegan México vs Jamaica? Entérate hora y dónde ver",
-          "publisher": "The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStsHBfYyHD8V4NkaioXxawD0RtQzT2ftuxJk03bT9Hq3JfC_wvgtDU1qAh5j4"
-        }
-      ]
-    },
-    {
-      "query": "christian pulisic",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T00:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50504141/manchester-united-mauricio-pochettino-jim-ratcliffe-glazers-transfers",
-        "https://sports.yahoo.com/articles/andres-cantor-says-mauricio-pochettino-002954081.html",
-        "https://www.nytimes.com/athletic/7785810/2026/11/16/mauricio-pochettino-america-usmnt-us-soccer/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE5JO_ojNdROMKe07O895nQQqj-B-oAovrb0mVfklvpWVJq2rOIrzglEH4Xws",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50504141/manchester-united-mauricio-pochettino-jim-ratcliffe-glazers-transfers",
-          "title": "Mauricio Pochettino can't fix Man United on his own, the owners have to do their jobs",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE5JO_ojNdROMKe07O895nQQqj-B-oAovrb0mVfklvpWVJq2rOIrzglEH4Xws"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/andres-cantor-says-mauricio-pochettino-002954081.html",
-          "title": "Andres Cantor says Mauricio Pochettino leaves USMNT 'in a good place' as the U.S. 'has an edge' over CONCACAF rivals",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6v-mUtn4KD_fzQTDmo9txXXX7w2e7v0Oy_nP7KNy50tSWwURGRXScUSqni4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7785810/2026/11/16/mauricio-pochettino-america-usmnt-us-soccer/",
-          "title": "What Pochettino liked about U.S.’s soccer quirks, what he didn’t, and what he leaves behind - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvdpCcwgRrNz5cleh129H7ybNuCRv1831QHApaS0MElhh3kmph0NPN1aCDF9E"
-        }
-      ]
-    },
-    {
-      "query": "ncaa basketball rankings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T00:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50493491/ap-mens-top-25-poll-reaction-2026-27-week-2",
-        "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after",
-        "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtKGNN2WUF0oJd4alzMay8QUhpMb0M7XxNYw2sNug2YT0C7pn0PxgEAX0Zhs",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50493491/ap-mens-top-25-poll-reaction-2026-27-week-2",
-          "title": "Breaking down the 2026-27 AP Top 25 men's basketball poll for Week 2",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtKGNN2WUF0oJd4alzMay8QUhpMb0M7XxNYw2sNug2YT0C7pn0PxgEAX0Zhs"
-        },
-        {
-          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-16/florida-reclaims-top-spot-andy-katzs-mens-basketball-power-44-rankings-after",
-          "title": "Florida reclaims top spot in Andy Katz's men's basketball Power 44 rankings after Week 2",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxTlVSV8YXdJYx5w1tprDqJKbthwTJ7CgHRlmDNxVwXUVb98rS0lo22BJTT6k"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/",
-          "title": "AP Top 25: Michigan State rises to No. 2, LSU replaces Kentucky in college basketball rankings",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWv6OvUUjjVcJgdIIPMp2FCccTnSitOrE6prsQ47SdiRniCmpZRJgYk-ORjlA"
-        }
-      ]
-    },
-    {
-      "query": "morgan freeman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T00:30:00Z",
-      "related_news_urls": [
-        "https://wreg.com/news/local/morgan-freeman-blues-project-with-deep-memphis-roots-earns-grammy-nomination/",
-        "https://bluesrockreview.com/2026/11/2027-blues-grammy-nominations-announced.html",
-        "https://rockandbluesmuse.com/2026/11/16/liled-the-blues-imperials-slideways-receives-grammy-award-nomination/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yfMpv0A_om_bejAlx28bx1G2sNWCOoUOZg91ERCkq3Ildt7T31KrQZOFihw",
-      "image_credit": "WREG.com",
-      "news": [
-        {
-          "url": "https://wreg.com/news/local/morgan-freeman-blues-project-with-deep-memphis-roots-earns-grammy-nomination/",
-          "title": "Morgan Freeman blues project with deep Memphis roots earns Grammy nomination",
-          "publisher": "WREG.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yfMpv0A_om_bejAlx28bx1G2sNWCOoUOZg91ERCkq3Ildt7T31KrQZOFihw"
-        },
-        {
-          "url": "https://bluesrockreview.com/2026/11/2027-blues-grammy-nominations-announced.html",
-          "title": "2027 Blues Grammy nominations announced",
-          "publisher": "Blues Rock Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZt4sb3vqXUDEiiajlCjRHF3f70vcB2EfNeW2v1aIHUbR09-JPN97Ye5v4YF0"
-        },
-        {
-          "url": "https://rockandbluesmuse.com/2026/11/16/liled-the-blues-imperials-slideways-receives-grammy-award-nomination/",
-          "title": "Lil’Ed & The Blues Imperials’ Slideways Receives Grammy Award Nomination",
-          "publisher": "Rock & Blues Muse",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReJ68XyvCz9o4h-l1xlj3dADB-8AQBdqlVJGYRkcicY2ceAW58RhbJ3pdnDak"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxn7pXuVgROegx8jNqQgDje4t-FGd7ybORTiiNkoPX3IGLGAAAB7mLtM8AKg"
         }
       ]
     }
