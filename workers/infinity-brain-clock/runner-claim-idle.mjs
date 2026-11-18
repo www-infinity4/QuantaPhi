@@ -2,8 +2,8 @@
  * never include ticket IDs, owner identities, instructions or blocker prose.
  * They do not change eligibility, retries, consent or queue state. */
 export const CLAIM_SKIP_REASONS=Object.freeze([
- 'source_repair_active','dependency_pending','repository_lease_active',
- 'commit_verification_required','runner_backoff','recent_runner_receipt',
+ 'source_repair_active','source_review_receipt_pending','dependency_pending','repository_lease_active',
+ 'commit_verification_required','publication_reconciliation_required','runner_backoff','recent_runner_receipt',
  'owner_decision_required','claimed_by_runner','d1_update_conflict','other_policy'
 ]);
 export function noteRunnerSkip(counts,reason){

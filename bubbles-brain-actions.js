@@ -98,19 +98,29 @@ function classify(utterance){
  if(change.test(text)&&subject.test(text)&&(imperative.test(text)||directive.test(text)))return 'queue';
  return 'chat';
 }
-// Continue an OWNER'S last explicit work command, not an assistant suggestion.
- // No older browsing context or model-authored instruction can create a job.
+// Continue the latest OWNER work command across a contiguous chain of '*' or
+// 'continue' turns. A new unrelated user message breaks the chain; assistant
+// suggestions never authorize work, and the Brain retains its owner/write gate.
+function isOwnerContinuation(input){
+ const text=String(input||'').trim().toLowerCase();
+ return /^(?:(?:please|bubbles)[\s,:]+)?(?:\*|continue(?: (?:engineering|please|building|working|the build|that|where you left off))?|keep (?:going|building|working)(?: on (?:it|that))?|go ahead|go on|carry on|proceed|yes[, ]*(?:do it|go ahead|continue)|finish (?:it|that|the build)|pick up (?:the work|where you left off))\s*[.!*]*$/.test(text);
+}
 function resolveFollowupRequest(utterance, history=[]){
- const latest=String(utterance||'').trim().toLowerCase();
- if(!/^(?:\*|continue(?: (?:building|working|the build|that|where you left off))?|keep (?:going|building|working)(?: on (?:it|that))?|go ahead|go on|carry on|proceed|yes[, ]*(?:do it|go ahead|continue)|finish (?:it|that|the build)|pick up (?:the work|where you left off))\s*[.!*]*$/.test(latest))return '';
- if(!Array.isArray(history))return '';
- // Only the *most recent* user command is eligible. Earlier, unrelated requests
- // cannot be revived by a one-word "continue" after an intervening topic.
- const last=[...history].reverse().find(item=>item?.role==='user'&&typeof item.text==='string');
- if(!last)return '';
- const previous=last.text.trim().slice(0,4000);
- if(previous.length<12||classify(previous)!=='queue')return '';
- return previous;
+ if(!isOwnerContinuation(utterance)||!Array.isArray(history))return '';
+ let priorContinuations=0;
+ for(let i=history.length-1;i>=0;i--){
+  const item=history[i];
+  if(item?.role!=='user'||typeof item.text!=='string')continue;
+  const previous=item.text.trim().slice(0,4000);
+  if(isOwnerContinuation(previous)){
+   if(++priorContinuations>200)return '';
+   continue;
+  }
+  // Stop at the first different user topic, even if earlier messages contain
+  // commands or an assistant claimed a task was completed.
+  return previous.length>=12&&classify(previous)==='queue'?previous:'';
+ }
+ return '';
 }
 // Resolve a deictic repair command only against the owner's latest message.
 function resolveRepairRequest(utterance, history=[]){
@@ -248,7 +258,25 @@ function requestPlan(request,repository){
 function executionMessage(execution={},deduplicated=false,status='ready'){
  if(deduplicated&&!execution.status)return ['complete','deployed_verified'].includes(status)?'This request already has a saved result. Open its progress to review it.':'This request is already saved. Following its progress without creating duplicate work.';
  if(execution.status==='queued_for_runner')return 'Your request is saved and the build runner has been requested. Progress will appear here as it starts.';
- if(execution.status==='job_not_dispatchable')return 'Your request is saved. The runner is waiting for a prerequisite; its progress will explain what is needed.';
+ if(execution.status==='job_not_dispatchable'){
+  // Server-calculated admission codes are not proof that the executor ran.
+  // Do not echo unknown or untrusted upstream details into owner chat.
+  const blockers={
+   dependency_pending:'A required dependency job is still pending. Verify its result before retrying this job.',
+   no_matching_runner_adapter:'No matching authenticated repository runner adapter is available. Check the existing Brain executor configuration.',
+   owner_decision_required:'An owner decision or security approval is required. The runner will not bypass it.',
+   technical_source_evidence_required:'Technical source evidence is required before the runner can claim this job.',
+   repository_lease_active:'Another runner holds the repository lease. Check its actual completion or expiry.',
+   runner_backoff:'An earlier attempt is subject to a retry backoff. The saved job remains pending.',
+   alarm_backoff:'The retry timer has not elapsed. The saved job remains pending.',
+   commit_verification_required:'An earlier source commit requires independent verification before another claim.',
+   invalid_job_scope:'The saved job lacks a valid repository or engineering instruction. Inspect its original scope.'
+  };
+  const reason=typeof execution.reason==='string'?execution.reason:'';
+  const detail=Object.hasOwn(blockers,reason)?blockers[reason]:
+   'The runner did not admit this job. Open its authenticated progress record for the exact blocker.';
+  return 'Your request is saved, but no source execution has been verified. '+detail;
+ }
  if(execution.status==='no_pending_jobs')return 'Your request is saved. Checking whether its jobs have already been claimed.';
  return 'Your request is saved, but the runner has not confirmed a launch. Robot Brain will retry automatically; you do not need to press Run.';
 }

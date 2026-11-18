@@ -61,7 +61,9 @@ export function checkOwnerRunnerRequest(
   if (!job?.id || !/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(String(job.repository || '')) || !String(job.instructions || '').trim()) {
     return { eligible: false, reason: 'invalid_job_scope' };
   }
-  const blockerText=[job.progress?.blocker,job.progress?.summary,job.progress?.next].filter(v=>typeof v==='string').join(' ');
+  const savedBlocker=['blocked','publication_absent'].includes(prior?.status)?prior.summary:'';
+  const blockerText=[job.progress?.blocker,job.progress?.summary,job.progress?.next,savedBlocker]
+    .filter(v=>typeof v==='string').join(' ');
   if (ownerBlock.test(blockerText)) {
     return { eligible: false, reason: technicalSourceEvidenceNeeded(blockerText)?
       'technical_source_evidence_required':'owner_decision_required' };

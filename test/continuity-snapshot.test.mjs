@@ -28,6 +28,13 @@ test('stale work must reconcile runner lease before retry',()=>{
   Date.parse('2026-10-24T02:00:00Z'));
  assert.equal(r.phase,'stale_working');assert.match(r.next,/Reconcile active runner lease/);
 });
+test('an active signed lease remains working after the old 20-minute display threshold',()=>{
+ const began=Date.parse('2026-10-24T00:00:00Z'),leaseExpiresAt=began+40*60000;
+ const job={status:'working',progress:{attemptedAt:new Date(began).toISOString(),leaseExpiresAt,
+  runUrl:'https://github.com/www-infinity4/Moltnook/actions/runs/123'}};
+ assert.equal(classifyContinuityJob(job,began+30*60000).phase,'working');
+ assert.equal(classifyContinuityJob(job,leaseExpiresAt).phase,'stale_working');
+});
 test('legacy jobs remain in the repository folder',()=>{
  const p=projectContinuity([ticket([{id:'TASK-1',status:'blocked',
   progress:{blocker:'source_file_missing'}}]),ticket([])]);
