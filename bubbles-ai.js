@@ -2250,6 +2250,25 @@ function toggle(open){
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
+// Same-page handoff from the owner-selected Oracle card. Not a command or send.
+window.addEventListener('quantaphi:bubbles:card-context',event=>{
+ if(embedded)return;
+ const detail=event.detail;
+ if(!detail||detail.version!==1||
+    typeof detail.sourceCardId!=='string'||!(/^[a-zA-Z0-9][a-zA-Z0-9:_-]{1,109}$/).test(detail.sourceCardId)||
+    typeof detail.draft!=='string'||detail.draft.length>900)return;
+ if(input.value.trim()){
+  detail.blocked='unsent';
+  toggle(true);
+  status.textContent='An unsent Bubbles message is already present. Send or clear it before importing this card.';
+  return;
+ }
+ input.value=detail.draft;
+ detail.handled=true;
+ toggle(true);
+ status.textContent='Card context prepared. Review and press Send. No provider action was executed.';
+ input.focus();
+});
 // A host-page orb opens this iframe only on explicit visitor interaction.
 // No owner job, microphone or permission is activated by this display signal.
 if(embedded)window.addEventListener('message',event=>{

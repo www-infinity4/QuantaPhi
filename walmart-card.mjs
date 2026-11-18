@@ -28,7 +28,7 @@ export function validWalmartProduct(p){
  try{const u=new URL(p.url),i=new URL(p.image);return u.origin==='https://www.walmart.com'&&u.pathname.endsWith('/'+p.itemId)&&/^\d+$/.test(p.itemId)&&i.origin==='https://i5.walmartimages.com'&&Number.isFinite(p.price)&&p.price>0;}catch{return false}
 }
 export function nextWalmartProduct(currentId,state,quantScores={}){
- const ranked=nextFeedDirection(WALMART_PRODUCTS,'for-you',{...cleanFeedState(state),catalog:WALMART_PRODUCTS,quantScores},currentId);
+ const ranked=nextFeedDirection(WALMART_PRODUCTS,'for-you',{...cleanFeedState(state),interests:['shopping'],catalog:WALMART_PRODUCTS,quantScores},currentId);
  return WALMART_PRODUCTS.find(p=>p.id===ranked.card?.id)||WALMART_PRODUCTS.find(p=>p.id!==currentId)||WALMART_PRODUCTS[0];
 }
 const KEY='quanta:walmart-products:v1';
