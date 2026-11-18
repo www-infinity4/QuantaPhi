@@ -3,21 +3,63 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T18:31:25.132134Z",
+  "checked_at": "2026-11-18T19:01:03.229143Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ak dear",
+      "query": "ginny and georgia season 4 release date",
       "approx_searches": "500+",
+      "published_at": "2026-11-18T18:20:00Z",
+      "related_news_urls": [
+        "https://www.teenvogue.com/story/ginny-and-georgia-season-4-first-look-exclusive",
+        "https://deadline.com/2026/11/ginny-and-georgia-season-4-release-date-photos-1237228180/",
+        "https://www.whats-on-netflix.com/news/ginny-georgia-season-4-netflix-release-date-first-look/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQba58lTvvAl3eH7dQaTLo0Cu9NQcYHFcfcAmPjJChh0OCGmG6Q9Nzo4CCVSbw",
+      "image_credit": "Teen Vogue",
+      "news": [
+        {
+          "url": "https://www.teenvogue.com/story/ginny-and-georgia-season-4-first-look-exclusive",
+          "title": "‘Ginny & Georgia’ Season 4 First Look: The Past Is Never Far Behind (Exclusive)",
+          "publisher": "Teen Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQba58lTvvAl3eH7dQaTLo0Cu9NQcYHFcfcAmPjJChh0OCGmG6Q9Nzo4CCVSbw"
+        },
+        {
+          "url": "https://deadline.com/2026/11/ginny-and-georgia-season-4-release-date-photos-1237228180/",
+          "title": "‘Ginny & Georgia’ Season 4 Premiere Date Set By Netflix With First-Look Photos",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQER-TJdcfYo7cjRBmmrPuHjfhmswweR2_BPtAfm-qRkCfKZtGGkkuEA_yI0AA"
+        },
+        {
+          "url": "https://www.whats-on-netflix.com/news/ginny-georgia-season-4-netflix-release-date-first-look/",
+          "title": "‘Ginny & Georgia’ Season 4 Finally Gets Netflix Release Date",
+          "publisher": "What's on Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOMO2ZRm_QVeuX8qO17xPad-iMSboXE8gp6G8WNZFHrE-bwPc_NGmLpc5T6K4"
+        }
+      ]
+    },
+    {
+      "query": "ak dear",
+      "approx_searches": "1000+",
       "published_at": "2026-11-18T18:00:00Z",
       "related_news_urls": [
+        "https://www.al.com/alabamafootball/2026/11/ak-dear-not-with-alabama-football-anymore.html",
         "https://247sports.com/college/alabama/article/sophomore-running-back-ak-dear-292898366/",
-        "https://www.rotoballer.com/player-news/ak-dear-no-longer-on-alabama-roster/1997269",
-        "https://www.si.com/college/alabama/football/alabama-running-back-no-longer-with-team"
+        "https://www.on3.com/news/kalen-deboer-reveals-rb-ak-dear-is-no-longer-a-member-of-alabama-roster/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD3vdkiQ9BNYP3KgZiiEIGxoNZiDDUeAA736QCaIIAAreMRO9YmHRZcz2USTI",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCzrlxzLVjJnQu3-ZKTuWNJz9GOkucD6fLTgCb0poSyoyxVaHPnvUzi0XuRs0",
+      "image_credit": "AL.com",
       "news": [
+        {
+          "url": "https://www.al.com/alabamafootball/2026/11/ak-dear-not-with-alabama-football-anymore.html",
+          "title": "Alabama running back no longer with program, DeBoer says",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCzrlxzLVjJnQu3-ZKTuWNJz9GOkucD6fLTgCb0poSyoyxVaHPnvUzi0XuRs0"
+        },
         {
           "url": "https://247sports.com/college/alabama/article/sophomore-running-back-ak-dear-292898366/",
           "title": "Sophomore running back AK Dear no longer with Alabama football program, Kalen DeBoer says",
@@ -26,18 +68,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD3vdkiQ9BNYP3KgZiiEIGxoNZiDDUeAA736QCaIIAAreMRO9YmHRZcz2USTI"
         },
         {
-          "url": "https://www.rotoballer.com/player-news/ak-dear-no-longer-on-alabama-roster/1997269",
-          "title": "AK Dear No Longer on Alabama Roster - College Football News | Fantasy CFB",
-          "publisher": "RotoBaller",
+          "url": "https://www.on3.com/news/kalen-deboer-reveals-rb-ak-dear-is-no-longer-a-member-of-alabama-roster/",
+          "title": "Kalen DeBoer reveals Alabama RB AK Dear is no longer a member the program",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_EOhVM4jO3q1h6qvxdVMP43Dgbd_SOT4409pLQR6pUHe3GcpOoUHEs0JS9po"
-        },
-        {
-          "url": "https://www.si.com/college/alabama/football/alabama-running-back-no-longer-with-team",
-          "title": "Alabama Running Back No Longer With Team",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmn7kkwFwjwdniZPkKVWWmSFT25hTV7YIuZGLuRp3VZHh8wo5RVga3ALt1l3k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHVnTQjN3X8h3NhnqXctuFG18BmexYQJvETztO7Dei0kDGu6zejbTyoI9k-Ho"
         }
       ]
     },
@@ -113,12 +148,12 @@
     },
     {
       "query": "hakeem jeffries speaker",
-      "approx_searches": "5000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-18T17:20:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
-        "https://apnews.com/article/hakeem-jeffries-house-leadership-speaker-democrats-260433358f776473f29151992569f81d",
-        "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html"
+        "https://www.timesofisrael.com/democrats-formally-nominate-hakeem-jeffries-to-be-next-us-house-speaker/",
+        "https://www.cnn.com/2026/11/18/politics/video/jeffries-wins-nomination-digvid"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI",
       "image_credit": "The New York Times",
@@ -131,18 +166,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnpsyUI9LQzf1qmtShwfKKRUMhr7QD4Si8rQ00NQrKhW_cGVlW5V1v0STmzpI"
         },
         {
-          "url": "https://apnews.com/article/hakeem-jeffries-house-leadership-speaker-democrats-260433358f776473f29151992569f81d",
-          "title": "Hakeem Jeffries could become the first Black House speaker after Democratic nomination",
-          "publisher": "AP News",
+          "url": "https://www.timesofisrael.com/democrats-formally-nominate-hakeem-jeffries-to-be-next-us-house-speaker/",
+          "title": "Democrats formally nominate Hakeem Jeffries to be next US House speaker",
+          "publisher": "The Times of Israel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAGc-He2sNE9vCrotT_htHDLyA7v7IlDNH1PfO9Vnt0VowErwYvc2VgRMfpZc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNUNfOjQyUZGb8xGoO7MwQuOdH9w4CF5mZ8MPAvvoPRwUBdwJ_1nV8dtB2EjM"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
-          "title": "Jeffries wins Democratic House speaker race, on track to make history in January",
-          "publisher": "CNBC",
+          "url": "https://www.cnn.com/2026/11/18/politics/video/jeffries-wins-nomination-digvid",
+          "title": "Hakeem Jeffries wins Democratic nomination for House speaker",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfS_imvE3ZKCIEu1NkQeOgRuY-AYL4tiVy-aEyLJQpRmnFuo6HbmUqPOeZzck"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZOTGWbo2bV231_wSPdYlsdzAu9Z1DpLqfmISlwnMyPsDYQJIn-EuFtpV7sE4"
         }
       ]
     },
@@ -151,26 +186,26 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-18T17:10:00Z",
       "related_news_urls": [
-        "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
         "https://www.cbsnews.com/boston/news/katherine-clark-house-majority-leader-democrats/",
+        "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
         "https://www.wcvb.com/article/mass-rep-katherine-clark-nominated-to-become-first-woman-house-majority-leader/74466995"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROIb7EmX22wEX3Zg7VCI0_1fOD__s-z8tnZf8p18hOafCp48ba4n9b75Ldl3I",
-      "image_credit": "Politico",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKAzlK7rMJyOaqgVWYLsLbmhNrqKaLc98CW8f8Oy63JUAs_ktwfttQx8qGdo",
+      "image_credit": "CBS News",
       "news": [
-        {
-          "url": "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
-          "title": "Katherine Clark, Pete Aguilar, Joe Neguse elected to House majority posts",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROIb7EmX22wEX3Zg7VCI0_1fOD__s-z8tnZf8p18hOafCp48ba4n9b75Ldl3I"
-        },
         {
           "url": "https://www.cbsnews.com/boston/news/katherine-clark-house-majority-leader-democrats/",
           "title": "Katherine Clark of Massachusetts elected as next House majority leader by Democrats in historic first",
           "publisher": "CBS News",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKAzlK7rMJyOaqgVWYLsLbmhNrqKaLc98CW8f8Oy63JUAs_ktwfttQx8qGdo"
+        },
+        {
+          "url": "https://www.politico.com/live-updates/2026/11/18/congress/clark-aguilar-neguse-win-01172728",
+          "title": "Katherine Clark, Pete Aguilar, Joe Neguse elected to House majority posts",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROIb7EmX22wEX3Zg7VCI0_1fOD__s-z8tnZf8p18hOafCp48ba4n9b75Ldl3I"
         },
         {
           "url": "https://www.wcvb.com/article/mass-rep-katherine-clark-nominated-to-become-first-woman-house-majority-leader/74466995",
@@ -186,20 +221,13 @@
       "approx_searches": "500+",
       "published_at": "2026-11-18T17:10:00Z",
       "related_news_urls": [
-        "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
         "https://fox8.com/news/firefighters-are-on-scene-of-reported-explosion-in-austintown/",
-        "https://www.wfmj.com/news/local-news/austintown/explosion-fire-reported-at-youngstown-propane-in-austinown/article_472d92f7-299e-41f8-b8ea-143304719f87.html"
+        "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
+        "https://www.limapagi.id/en/youngstown-propane-explosion-injures-workers"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvTHDy0-6yhjl1Sansv3rwr-aGPWK68OZ0uo9ZdIUiOHgRLkCuR0kPDI9oME8",
-      "image_credit": "WFMJ",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89rJ9Gaw0hVjcNnJlAH-FI7WrGoSDxo7eKuQxeDtb0664UM-yZx3mBrjrsug",
+      "image_credit": "FOX 8 News",
       "news": [
-        {
-          "url": "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
-          "title": "Crews investigating explosion at Youngstown Propane",
-          "publisher": "WFMJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvTHDy0-6yhjl1Sansv3rwr-aGPWK68OZ0uo9ZdIUiOHgRLkCuR0kPDI9oME8"
-        },
         {
           "url": "https://fox8.com/news/firefighters-are-on-scene-of-reported-explosion-in-austintown/",
           "title": "Firefighters are on scene of reported explosion in Austintown",
@@ -208,46 +236,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89rJ9Gaw0hVjcNnJlAH-FI7WrGoSDxo7eKuQxeDtb0664UM-yZx3mBrjrsug"
         },
         {
-          "url": "https://www.wfmj.com/news/local-news/austintown/explosion-fire-reported-at-youngstown-propane-in-austinown/article_472d92f7-299e-41f8-b8ea-143304719f87.html",
-          "title": "Explosion, fire reported at Youngstown Propane in Austinown",
+          "url": "https://www.wfmj.com/news/local-news/austintown/crews-investigating-explosion-at-youngstown-propane/article_9f21be2a-eb7d-4414-861f-e4f56676f46c.html",
+          "title": "Crews investigating explosion at Youngstown Propane",
           "publisher": "WFMJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDetgtDlBjCyvaWmB0bse-KwXr78_-GpdmhDcGc4MVzYp2nRqEwyEofVe7LGM"
-        }
-      ]
-    },
-    {
-      "query": "real madrid vs inter",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-18T17:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50522539/alaina-dadzie-1-bucket",
-        "https://www.espn.com/soccer/team-stats/_/gameId/401916981/league/uefa.wchampions",
-        "https://www.espn.com/soccer/team-stats/_/gameId/401916982/league/uefa.wchampions"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcabyaY7yTx5TH3KuB46bl_LqcRc3CKsR3t98RJ7cyM5jPk2dC-6Cg-9rl30",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50522539/alaina-dadzie-1-bucket",
-          "title": "Alaina Dadzie with the and-1 bucket",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcabyaY7yTx5TH3KuB46bl_LqcRc3CKsR3t98RJ7cyM5jPk2dC-6Cg-9rl30"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvTHDy0-6yhjl1Sansv3rwr-aGPWK68OZ0uo9ZdIUiOHgRLkCuR0kPDI9oME8"
         },
         {
-          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401916981/league/uefa.wchampions",
-          "title": "Real Madrid vs. Inter Milan (Nov 18, 2026) Team Stats",
-          "publisher": "ESPN",
+          "url": "https://www.limapagi.id/en/youngstown-propane-explosion-injures-workers",
+          "title": "Explosion Injures Two Workers at Youngstown Propane in Ohio",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsjoXh42Lv4QPlT2pCBTepnQARisY3Xd_6V1Hra4JP5kiEhucJ-97-y7N7S4s"
-        },
-        {
-          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401916982/league/uefa.wchampions",
-          "title": "BK Häcken vs. Man City (Nov 18, 2026) Team Stats",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQp3Cl2gC40WECmRK5OLtrYn2B6WQcSendi6de9ZE_8nwLe_nZQ_ZC_UIZLmWw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1MazUyXeoK0xHodyJrrwba2gHIAiSCAk6HH0nV16ki0bJDcY6Rk8OUodB1WY"
         }
       ]
     },
@@ -287,6 +287,41 @@
       ]
     },
     {
+      "query": "real madrid vs inter",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T17:00:00Z",
+      "related_news_urls": [
+        "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/",
+        "https://www.reutersconnect.com/item/uefa-womens-champions-league-real-madrid-v-inter-milan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkxQ1NBWUs",
+        "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ",
+      "image_credit": "UEFA.com",
+      "news": [
+        {
+          "url": "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/",
+          "title": "Women's Champions League Matchday 5 preview: Chelsea vs Paris SG, Real Madrid vs Inter, Arsenal vs OL Lyonnes, Benfica vs Roma",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTTvphX_-AslKiOetbBdeMlzN-7KrBjxLeprt8E40uBTB6AZZh97bmd_87ZQ"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/uefa-womens-champions-league-real-madrid-v-inter-milan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkxQ1NBWUs",
+          "title": "Licensable picture: UEFA Women's Champions League - Real Madrid v Inter Milan",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-nai2xe44SCQ1IfoYXhPpUi6AUChSXo09tbEOqdO6oynGlgtIluLYnFP6VE"
+        },
+        {
+          "url": "https://www.sofascore.com/news/uwcl-round-5-preview-giants-on-the-move-tight-races-brewing",
+          "title": "UWCL Round 5 preview: giants on the move, tight races brewing",
+          "publisher": "Sofascore",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7eX8qGm5Pyxy3gkTDa_JYTw2EsA6EHhc1fywCX34GpJSghRmGTYBLm0u4t4"
+        }
+      ]
+    },
+    {
       "query": "baylor basketball",
       "approx_searches": "1000+",
       "published_at": "2026-11-18T17:00:00Z",
@@ -318,41 +353,6 @@
           "publisher": "KCENTV.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC5fwkWuZqBZFcqTf54pEAF7oCZM1rvW0uZE5SSiHVVrAPRq6uCbDts7RMErw"
-        }
-      ]
-    },
-    {
-      "query": "trump putin xi jinping",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-18T17:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-        "https://www.axios.com/2026/11/18/trump-putin-china-meeting-ukraine",
-        "https://www.washingtonpost.com/national-security/2026/11/18/trumps-dream-nuclear-deal-meets-reality-an-unwilling-russia-china/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdxYhOt6s_XvK28LUVWXEALuCUE6pUs0fw9RnBEm6ehdBN5B4nwrWlZTso20E",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-          "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdxYhOt6s_XvK28LUVWXEALuCUE6pUs0fw9RnBEm6ehdBN5B4nwrWlZTso20E"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/18/trump-putin-china-meeting-ukraine",
-          "title": "Trump to meet Putin in China amid renewed push to end Ukraine war",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdm-1eD0lOIoM7tnN_ZtMHDqw2LBBnoYH3OiQ53VMpprDT2aqYkBypROIOXPY"
-        },
-        {
-          "url": "https://www.washingtonpost.com/national-security/2026/11/18/trumps-dream-nuclear-deal-meets-reality-an-unwilling-russia-china/",
-          "title": "Trump’s dream of a nuclear deal meets reality of unwilling Russia and China",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5nc6MyaJaVvNj44VkrdUuy42s5Ld5dLsWwrROHREidKxGITk_etb0MYlnDqw"
         }
       ]
     }
