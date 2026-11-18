@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-18T01:31:35.298740Z",
+  "checked_at": "2026-11-18T02:01:18.631352Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "harry shum jr",
+      "query": "julianne hough",
       "approx_searches": "2000+",
-      "published_at": "2026-11-18T01:10:00Z",
+      "published_at": "2026-11-18T01:40:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/es/news/ni66114747/?ref_=nwc_art_perm",
-        "https://people.com/harry-shum-jr-mom-told-him-i-love-you-first-time-dancing-with-the-stars-12260245",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/harry-shum-jr-heard-three-202000358.html"
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/julianne-hough-turns-heads-pink-002520953.html",
+        "https://www.thebiglead.com/julianne-hough-sheer-black-minidress-dwts-35-semifinals/",
+        "https://www.the-sun.com/tv/17320052/dwts-fans-julianne-hough-nude-bodysuit-skirt-sexy-disney/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5U9ciD-CLj3PBYmcfaQo1hUT9wCj6oVjf0d6UJC9JOzUQUFc4vtBDu1T3Xk",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_PqEee_fAebZqC0ZMnkmzkUPHDKQVIYRxDNOLUZ8MP8p43b6VXEO3dxBP5TU",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/julianne-hough-turns-heads-pink-002520953.html",
+          "title": "Julianne Hough turns heads in pink Valentino dress for DWTS 35 semifinals",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_PqEee_fAebZqC0ZMnkmzkUPHDKQVIYRxDNOLUZ8MP8p43b6VXEO3dxBP5TU"
+        },
+        {
+          "url": "https://www.thebiglead.com/julianne-hough-sheer-black-minidress-dwts-35-semifinals/",
+          "title": "Julianne Hough shows off pre-‘DWTS 35’ semifinals glam with co-host Alfonso Ribeiro",
+          "publisher": "The Big Lead",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDmCjTseFagiGJnAGEjcVUqXZrEdL5iGqFyPTcyKW5mqrYxEofaF218RBTjFM"
+        },
+        {
+          "url": "https://www.the-sun.com/tv/17320052/dwts-fans-julianne-hough-nude-bodysuit-skirt-sexy-disney/",
+          "title": "DWTS fans brand Julianne Hough’s nude bodysuit and totally see-through skirt ‘too sexy for Disney’",
+          "publisher": "www.the-sun.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ0t9_KPGsYruqI2yjgUlV9Um7lroSuSFkp1JDoIe92Z1xGd11xQnh7Rv91hI"
+        }
+      ]
+    },
+    {
+      "query": "rudy gobert",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T01:40:00Z",
+      "related_news_urls": [
+        "https://bringmethesports.com/chris-finch-bluntly-calls-out-rudy-gobert-after-wolves-loss-to-bulls",
+        "https://sports.yahoo.com/articles/dwyane-wade-hits-back-rudy-163809703.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/17/he-has-had-four-games-this-season-that-he-has-not/92835088007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYIs6gF71nRcWGZFPDdBbO25qXv65TH5NohONArvY83RLjfh_5syQSQ1dPGA",
+      "image_credit": "Bring Me the Sports",
+      "news": [
+        {
+          "url": "https://bringmethesports.com/chris-finch-bluntly-calls-out-rudy-gobert-after-wolves-loss-to-bulls",
+          "title": "Chris Finch bluntly calls out Rudy Gobert after Wolves’ loss to Bulls",
+          "publisher": "Bring Me the Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYIs6gF71nRcWGZFPDdBbO25qXv65TH5NohONArvY83RLjfh_5syQSQ1dPGA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/dwyane-wade-hits-back-rudy-163809703.html",
+          "title": "Dwyane Wade hits back at Rudy Gobert critics for having unreasonable expectations of Timberwolves star",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9V89LqE8ZOzTMik7NNM61kKLt0kcjjypxnaeWajBjIGgG0J3VITCuMDDqm9A"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/17/he-has-had-four-games-this-season-that-he-has-not/92835088007/",
+          "title": "“He has had four games this season that he has not …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR85C8VPCTeNTRa585f5TytfIOpdkO022aLRF791kVXY3Pwa4fLhr6r1-1ufbU"
+        }
+      ]
+    },
+    {
+      "query": "wake forest basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-18T01:40:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/17/frank-fritz-american-pickers-estate-battle-settlement/92826662007/",
+        "https://missoulian.com/news/local/business/article_5dd5ed47-aefb-46fe-b05e-f58c3cfe409f.html",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-230052550.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCqPkLLfV-U9XBYj5Q-c9OeMIGkib2uWqTNeRxXGBJD589hNb65TXZ2ZEFjMI",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/17/frank-fritz-american-pickers-estate-battle-settlement/92826662007/",
+          "title": "'American Pickers' star Frank Fritz estate suit ends in last-minute settlement",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCqPkLLfV-U9XBYj5Q-c9OeMIGkib2uWqTNeRxXGBJD589hNb65TXZ2ZEFjMI"
+        },
+        {
+          "url": "https://missoulian.com/news/local/business/article_5dd5ed47-aefb-46fe-b05e-f58c3cfe409f.html",
+          "title": "Mechanical failure ruins in-demand Missoula rink's outdoor ice, costs $30K",
+          "publisher": "The Missoulian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNbybb3pz3QyP6fd61C9cjHtEBPMu7E7-AkqLIilY2_E2yT3Z_u9wugqSvpVk"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-230052550.html",
+          "title": "‘American Pickers’ Star Frank Fritz’s $6M Estate Heads to Jury Trial as Father Battles Friends Named in Will",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3YZEzOc4UvWZrrXPi9itE6DyuvJzRiLKoAdpaS2qd_qFTrZNKUDNFze6jKSE"
+        }
+      ]
+    },
+    {
+      "query": "alfonso ribeiro",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T01:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/fr/news/ni66115869/?ref_=nwc_art_perm",
+        "https://www.tvinsider.com/swooon/1313145/alfonso-ribeiro-wife-angela-kids-family-divorce/",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/julianne-hough-turns-heads-pink-002520953.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU5o1ny5HMSyA26Vsqy9UgernM4RzEH2ZQ23Qn3wj5wmkfYAhdLEZe18SR73k",
       "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.imdb.com/es/news/ni66114747/?ref_=nwc_art_perm",
-          "title": "Harry Shum Jr.’s Mom Tells Him ‘I Love You’ for the First Time After 44 Years Following ‘DWTS’",
+          "url": "https://www.imdb.com/fr/news/ni66115869/?ref_=nwc_art_perm",
+          "title": "All About ‘DWTS’ Host Alfonso Ribeiro’s Wife & Family",
           "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5U9ciD-CLj3PBYmcfaQo1hUT9wCj6oVjf0d6UJC9JOzUQUFc4vtBDu1T3Xk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU5o1ny5HMSyA26Vsqy9UgernM4RzEH2ZQ23Qn3wj5wmkfYAhdLEZe18SR73k"
         },
         {
-          "url": "https://people.com/harry-shum-jr-mom-told-him-i-love-you-first-time-dancing-with-the-stars-12260245",
-          "title": "Harry Shum Jr. Says His Mom Told Him ‘I Love You’ for the First Time After Watching Him on Dancing with the Stars",
-          "publisher": "People.com",
+          "url": "https://www.tvinsider.com/swooon/1313145/alfonso-ribeiro-wife-angela-kids-family-divorce/",
+          "title": "Alfonso Ribeiro's Wife Angela: Their Relationship, Children, His Divorce, and More",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS50nQh0BFpZWZEco-oK7xQFe4PyZaDrIsNNxUeY-aB1Mwqix76l2UshtBPZnE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtBMmiXEBvcCtTT5fW1XVS3_-5sbjOpwaMr0BXOygyEpe2RHCxRMXQMnftkjI"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/harry-shum-jr-heard-three-202000358.html",
-          "title": "Harry Shum Jr. Heard Three Words From His Mom For The First Time At 44 After ‘DWTS’",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/julianne-hough-turns-heads-pink-002520953.html",
+          "title": "Julianne Hough turns heads in pink Valentino dress for DWTS 35 semifinals",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4-ymCRkLhIDXyxApxwmsKBbHJb-3dZT2iIlSJRCUd5NLydEX-ZxvEe62lc2U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_PqEee_fAebZqC0ZMnkmzkUPHDKQVIYRxDNOLUZ8MP8p43b6VXEO3dxBP5TU"
         }
       ]
     },
     {
-      "query": "alabama basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T01:10:00Z",
+      "query": "mark zuckerberg",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T01:40:00Z",
       "related_news_urls": [
-        "https://www.al.com/alabamabasketball/2026/11/alabama-legend-returns-home-as-crimson-tide-closes-out-homestand.html",
-        "https://www.rollbamaroll.com/alabama-crimson-tide-basketball/86774/alabama-basketball-vs-kennesaw-state-3-keys-how-to-watch",
-        "https://247sports.com/college/alabama/article/alabama-coach-nate-oats-reflects-on-time-with-antoine-pettway-before-matchup-with-kennesaw-state--292882820/"
+        "https://cryptonews.com/news/mark-zuckerbergs-meta-ai-predicts-wild-aster-crypto-rally/",
+        "https://www.forbes.com/sites/fionariley/2026/11/17/meta-shareholder-sues-zuckerberg-other-company-leaders-for-allegedly-presenting-misleading-information-on-social-media-safety-for-kids/",
+        "https://www.dailyjournal.com/article/396341-meta-directors-accused-of-concealing-platform-harms-to-protect-user-growth"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtWV6zYA5S0hXlfskeoCpB3-Xcfie3e1bnkLiW-7FrpPd6zz_rfryUbkJAn5w",
-      "image_credit": "AL.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2qo__SwtrRezIN_5zupSnTD7AqEQYfHJVx80e4omEpfQ_OfFVRoEoXvnwgVE",
+      "image_credit": "Cryptonews",
       "news": [
         {
-          "url": "https://www.al.com/alabamabasketball/2026/11/alabama-legend-returns-home-as-crimson-tide-closes-out-homestand.html",
-          "title": "Alabama legend returns home as Crimson Tide closes out homestand",
-          "publisher": "AL.com",
+          "url": "https://cryptonews.com/news/mark-zuckerbergs-meta-ai-predicts-wild-aster-crypto-rally/",
+          "title": "Mark Zuckerberg’s Meta AI Predicts an Unbelievable ASTER Crypto Rally",
+          "publisher": "Cryptonews",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtWV6zYA5S0hXlfskeoCpB3-Xcfie3e1bnkLiW-7FrpPd6zz_rfryUbkJAn5w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2qo__SwtrRezIN_5zupSnTD7AqEQYfHJVx80e4omEpfQ_OfFVRoEoXvnwgVE"
         },
         {
-          "url": "https://www.rollbamaroll.com/alabama-crimson-tide-basketball/86774/alabama-basketball-vs-kennesaw-state-3-keys-how-to-watch",
-          "title": "Alabama Basketball vs Kennesaw State: 3 Keys, How to Watch",
-          "publisher": "Roll 'Bama Roll",
+          "url": "https://www.forbes.com/sites/fionariley/2026/11/17/meta-shareholder-sues-zuckerberg-other-company-leaders-for-allegedly-presenting-misleading-information-on-social-media-safety-for-kids/",
+          "title": "Meta Shareholder Sues Zuckerberg, Other Company Leaders For Allegedly Presenting Misleading Information On Social Media Safety For Kids",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9IzNiBv3s4xct6_C9_haQdY7Id8dtBIJFCUAXQOTwexx2TpsLJ9M3f8Q5Pg0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQsGZm4Ax5-S-E31ZSXnoq_e9dcyvUwjRqCNS5r6OEKGk91ms5phIC5LuJUJs"
         },
         {
-          "url": "https://247sports.com/college/alabama/article/alabama-coach-nate-oats-reflects-on-time-with-antoine-pettway-before-matchup-with-kennesaw-state--292882820/",
-          "title": "Alabama coach Nate Oats reflects on time with Antoine Pettway before matchup with Kennesaw State",
+          "url": "https://www.dailyjournal.com/article/396341-meta-directors-accused-of-concealing-platform-harms-to-protect-user-growth",
+          "title": "Meta directors accused of concealing platform harms to protect user growth",
+          "publisher": "Daily Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLo20AFV4Nrkh77d3DFfxWTAiuXvIPZUR1HpFJ1nEZyHUaUxYiTF3yeSvNJz8"
+        }
+      ]
+    },
+    {
+      "query": "rumer willis",
+      "approx_searches": "200+",
+      "published_at": "2026-11-18T01:40:00Z",
+      "related_news_urls": [
+        "https://wwd.com/pop-culture/celebrity-news/gallery/2026-baby2baby-gala-red-carpet-style-photos-1239416697/",
+        "https://www.vanityfair.com/story/demi-moore-tallulah-willis-baby2baby",
+        "https://www.marieclaire.com/fashion/celebrity-style/cardi-b-tamara-ralph-couture-feathery-fluffy-hat/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-wz-In8-yKViliprOdXjhMTRRLAz0m0q13cJ_ZueseptgT0C9iw0OtVMsmII",
+      "image_credit": "WWD",
+      "news": [
+        {
+          "url": "https://wwd.com/pop-culture/celebrity-news/gallery/2026-baby2baby-gala-red-carpet-style-photos-1239416697/",
+          "title": "Demi Moore, Cardi B and More Stars Arrive at the 2026 Baby2Baby Gala",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-wz-In8-yKViliprOdXjhMTRRLAz0m0q13cJ_ZueseptgT0C9iw0OtVMsmII"
+        },
+        {
+          "url": "https://www.vanityfair.com/story/demi-moore-tallulah-willis-baby2baby",
+          "title": "Tallulah Willis: I Stayed Out Past My Bedtime to Celebrate My Mom at the Baby2Baby Gala",
+          "publisher": "Vanity Fair",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdFcCFMfgrZ6dZAhmS7-FnbmP-lKq3vKoif6f9PrAYYiSl3UvZPEUjaKp40Ho"
+        },
+        {
+          "url": "https://www.marieclaire.com/fashion/celebrity-style/cardi-b-tamara-ralph-couture-feathery-fluffy-hat/",
+          "title": "Cardi B Steals the Show in a Fluffy, Feathery Hat and a Corseted Halter Gown at the 2026 Baby2Baby Gala",
+          "publisher": "Marie Claire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSviaCDNQYxjac6tA8Ty4Tn1gdTIJMqZxfLTI_orqzzyWC2tZinbnN9GXh_Zcg"
+        }
+      ]
+    },
+    {
+      "query": "cayden boozer",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T01:30:00Z",
+      "related_news_urls": [
+        "https://siuecougars.com/news/2026/11/13/a-letter-from-mens-basketball-head-coach-brian-barone-ahead-of-the-duke-game.aspx",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909565",
+        "https://247sports.com/college/duke/article/duke-takeaways-williams-offensive-roles-and-illinois-next-292672491/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgauJiCAUNtYKrFbgehYJM_ZGk8hwXXgrVYvLzIvMpDqtyR8Kyobh0fV7ZX1k",
+      "image_credit": "SIUE Cougars Official Athletic Site",
+      "news": [
+        {
+          "url": "https://siuecougars.com/news/2026/11/13/a-letter-from-mens-basketball-head-coach-brian-barone-ahead-of-the-duke-game.aspx",
+          "title": "A Letter from Men's Basketball Head Coach Brian Barone Ahead of the Duke Game",
+          "publisher": "SIUE Cougars Official Athletic Site",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgauJiCAUNtYKrFbgehYJM_ZGk8hwXXgrVYvLzIvMpDqtyR8Kyobh0fV7ZX1k"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909565",
+          "title": "Duke 90-47 SIU Edwardsville (Nov 13, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6p9Ydi22Sg4l5vRSNcDmPMzdHESrDFLzp2ByBu3MGOlNCgmGCNXukSb3W2-s"
+        },
+        {
+          "url": "https://247sports.com/college/duke/article/duke-takeaways-williams-offensive-roles-and-illinois-next-292672491/",
+          "title": "Duke takeaways: Williams, offensive roles and Illinois next",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCvbv6oxOiIy4131bX3A4nIzsGJvdScK20Ff3-Inor-75CXWplvtpx_WTQHCM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfir9pzq0AFtwc8kG53WitaRA9SzHAho63KhEbyYEeRj3nllfi-oDE2CT_btc"
         }
       ]
     },
     {
-      "query": "tasty chick n llc",
+      "query": "john collins",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T01:10:00Z",
+      "published_at": "2026-11-18T01:30:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-17/kfc-franchisee-blames-bankruptcy-on-rising-costs-falling-sales",
-        "https://www.inc.com/amaya-nichole/kfc-franchisee-84-restaurants-filed-bankruptcy-demand-chicken-is-not-problem/91438319",
-        "https://www.masslive.com/news/2026/11/say-goodbye-major-chicken-chain-operator-files-bankruptcy-closing-dozens-of-locations.html"
+        "https://pistonpowered.com/john-collins-poor-finishing-just-big-problem-shooting",
+        "https://www.rotowire.com/basketball/headlines/john-collins-news-quiet-in-loss-538315",
+        "https://detroitjockcity.com/pistons-should-seriously-consider-trading-john-collins-upgrade-01m7d5ks1s8h"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgzjWp56J5KpNzm9JNHcoxpObETEjwbx_mRJvLgpgNy_ME-Hji10JF_g-2Nog",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr9DjUe1CGmVBp67jQkevmak8_XSRs65YMIWhxnaIgqj8voZHw5Iz4dYGXD4Q",
+      "image_credit": "PistonPowered",
       "news": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-17/kfc-franchisee-blames-bankruptcy-on-rising-costs-falling-sales",
-          "title": "KFC Franchisee Blames Bankruptcy on Rising Costs, Falling Sales",
-          "publisher": "Bloomberg.com",
+          "url": "https://pistonpowered.com/john-collins-poor-finishing-just-big-problem-shooting",
+          "title": "John Collins' poor finishing is just as big of a problem as his shooting",
+          "publisher": "PistonPowered",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgzjWp56J5KpNzm9JNHcoxpObETEjwbx_mRJvLgpgNy_ME-Hji10JF_g-2Nog"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr9DjUe1CGmVBp67jQkevmak8_XSRs65YMIWhxnaIgqj8voZHw5Iz4dYGXD4Q"
         },
         {
-          "url": "https://www.inc.com/amaya-nichole/kfc-franchisee-84-restaurants-filed-bankruptcy-demand-chicken-is-not-problem/91438319",
-          "title": "A KFC Franchisee With 84 Restaurants Just Filed for Bankruptcy. Demand for Chicken Isn't the Problem",
-          "publisher": "Inc.com",
+          "url": "https://www.rotowire.com/basketball/headlines/john-collins-news-quiet-in-loss-538315",
+          "title": "John Collins News: Quiet in loss",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7vonEdemRL6-p1Btlc_JNRI_sohSiruFh0ZmOsXOU0y4tZlK2lo58XS_j1Sw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRGZ2xFpSs8gin9AaF0R8sg4LTX8sK3VNo9_PTH_8Wsu7lrJzHa_JiGT3MeZk"
         },
         {
-          "url": "https://www.masslive.com/news/2026/11/say-goodbye-major-chicken-chain-operator-files-bankruptcy-closing-dozens-of-locations.html",
-          "title": "Say goodbye: Major chicken chain operator files bankruptcy, closing dozens of locations",
-          "publisher": "MassLive",
+          "url": "https://detroitjockcity.com/pistons-should-seriously-consider-trading-john-collins-upgrade-01m7d5ks1s8h",
+          "title": "Pistons should seriously consider trading for a John Collins upgrade",
+          "publisher": "Detroit Jock City",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwBPkhDoApUg_Id28TBe0t0rqQZdLgXa6DIVLXxy2l92fLqdQGdlZ5uRUqPgg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnjRnZyD_qwj7iyK5pflGGGP8yhLFzxzrDffSnk-EgJwicAruexE8JAVXMIM"
         }
       ]
     },
     {
-      "query": "cody williams",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T01:10:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/timberwolves-cody-williams-starting-tuesday/",
-        "https://timberwolves.com/news/jaylen-clark-injury-update",
-        "https://www.canishoopus.com/timberwolves-news/72002/nba-injury-update-jaylen-clark-cody-williams"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXWJKelyhiJ8Rs3N3Vc19rkvj74YtI8HYNcivWLPOxA_-pI0CsnK_Im5dZbk",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/timberwolves-cody-williams-starting-tuesday/",
-          "title": "Timberwolves' Cody Williams: Starting Tuesday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXWJKelyhiJ8Rs3N3Vc19rkvj74YtI8HYNcivWLPOxA_-pI0CsnK_Im5dZbk"
-        },
-        {
-          "url": "https://timberwolves.com/news/jaylen-clark-injury-update",
-          "title": "Jaylen Clark Injury Update | Minnesota Timberwolves",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3F7XDou5yNkERE9n29L4pa_tWUxwYsOlftt8gvmICw34PNSY3c57NblRkZpc"
-        },
-        {
-          "url": "https://www.canishoopus.com/timberwolves-news/72002/nba-injury-update-jaylen-clark-cody-williams",
-          "title": "NBA News: Jaylen Clark out 2 weeks",
-          "publisher": "Canis Hoopus",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQopKWJ0SB9qIDloBLBb2iBgEcHRgdlrHQSW0O1YWl6J7G1GQ9ab0tevxhOugc"
-        }
-      ]
-    },
-    {
-      "query": "immanuel quickley",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T01:10:00Z",
-      "related_news_urls": [
-        "https://raptorsrapture.com/immanuel-quickley-comparisons-highlight-uncomfortable-raptors-contract-reality",
-        "https://www.thestar.com/sports/doug-smiths-sports-blog/raptors-mailbag-can-this-to-be-a-contender-with-immanuel-quickley-starting/article_04a241bd-8072-4835-ae32-0e0248adf6dc.html",
-        "https://raptorsrapture.com/raptors-could-unlock-immanuel-quickley-s-off-guard-potential-with-a-kris-dunn-trade"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRs2nOiQCh2bUpXen6NSi2fuOgvet_GM2TSnuWLNLUnYfnwkaCG0zco1qfXgxw",
-      "image_credit": "Raptors Rapture",
-      "news": [
-        {
-          "url": "https://raptorsrapture.com/immanuel-quickley-comparisons-highlight-uncomfortable-raptors-contract-reality",
-          "title": "Immanuel Quickley comparisons highlight uncomfortable Raptors contract reality",
-          "publisher": "Raptors Rapture",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRs2nOiQCh2bUpXen6NSi2fuOgvet_GM2TSnuWLNLUnYfnwkaCG0zco1qfXgxw"
-        },
-        {
-          "url": "https://www.thestar.com/sports/doug-smiths-sports-blog/raptors-mailbag-can-this-to-be-a-contender-with-immanuel-quickley-starting/article_04a241bd-8072-4835-ae32-0e0248adf6dc.html",
-          "title": "Doug Smith: Raptors mailbag: Can this team be a contender with Immanuel Quickley starting?",
-          "publisher": "Toronto Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRO2HWDXBtCQMSwCLm0yA8hPbpeBZKZ9uLWFX2mBViOad25rcM7OAPTaMbbcw"
-        },
-        {
-          "url": "https://raptorsrapture.com/raptors-could-unlock-immanuel-quickley-s-off-guard-potential-with-a-kris-dunn-trade",
-          "title": "Raptors could unlock Immanuel Quickley's off-guard potential with a Kris Dunn trade",
-          "publisher": "Raptors Rapture",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbEhP__GQv1NlKrTlWu9H7W_L_0x-WnuLTJw0LlJDqBgwjg-BnVnIgv-CgWA8"
-        }
-      ]
-    },
-    {
-      "query": "dazn",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T01:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/swimming/articles/ck1wvzryg015o",
-        "https://swimswam.com/isl-partners-with-dazn-to-stream-upcoming-all-star-match-live-free-around-the-world/",
-        "https://www.bbc.co.uk/sport/swimming/videos/c6742ej3dgkko"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs64_2J2RjWbJ-x03dZAPQnpKrlBWWQ5j1xNJML0V-MR_XRudNB1_6BBCsukE",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/swimming/articles/ck1wvzryg015o",
-          "title": "International Swimming League: Adam Ramsay-Peaty named for All-Star Match",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs64_2J2RjWbJ-x03dZAPQnpKrlBWWQ5j1xNJML0V-MR_XRudNB1_6BBCsukE"
-        },
-        {
-          "url": "https://swimswam.com/isl-partners-with-dazn-to-stream-upcoming-all-star-match-live-free-around-the-world/",
-          "title": "ISL Partners With DAZN To Stream Upcoming All-Star Match Live & Free Around The World",
-          "publisher": "SwimSwam",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_7jP92vn6rqnqC5BB6twsdErmwxBh2sr1cG8Wv8gte13Du54hnxUO0BW4tg"
-        },
-        {
-          "url": "https://www.bbc.co.uk/sport/swimming/videos/c6742ej3dgkko",
-          "title": "International Swimming League: Adam Ramsay-Peaty says just want sport needs",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRodd9_o7ri73IVWlyODJMBeNraKEXkQ8mARynkelCqgfqAuD7fdSzNt6mNPik"
-        }
-      ]
-    },
-    {
-      "query": "knicks vs toronto raptors match player stats",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T01:00:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/game/orl-vs-bos-0022600245/box-score",
-        "https://www.canishoopus.com/timberwolves-analysis/71795/minnesota-timberwolves-quarter-report-lamelo-ball",
-        "https://sports.yahoo.com/articles/analyzing-timberwolves-biggest-strength-weakness-020044705.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyTEekA7C_BdXocojC9sABcKDdqg8Y5a8btLe9wHgozOl5ky-PYAbFYzoZKrI",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/game/orl-vs-bos-0022600245/box-score",
-          "title": "Orlando Magic vs Boston Celtics Nov 16, 2026 Box Scores",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyTEekA7C_BdXocojC9sABcKDdqg8Y5a8btLe9wHgozOl5ky-PYAbFYzoZKrI"
-        },
-        {
-          "url": "https://www.canishoopus.com/timberwolves-analysis/71795/minnesota-timberwolves-quarter-report-lamelo-ball",
-          "title": "NBA Quarterly Report: Minnesota Timberwolves First Quarter Conferences",
-          "publisher": "Canis Hoopus",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb15ZK-GCtCiVm1SXhadpk8sAs1y34B1TesJ0bbPkxTsLYfYAByZG9r4hZc3o"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/analyzing-timberwolves-biggest-strength-weakness-020044705.html",
-          "title": "Analyzing Timberwolves’ Biggest Strength and Weakness After First 11 Games",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7cZ0RDCyjyYAJfPLagen4t7S3JOMCI4Z0l0lo9ZVpShQqN3kwq0Sik_Y3mhI"
-        }
-      ]
-    },
-    {
-      "query": "nyk vs tor",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T01:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/game/_/gameId/401909990/knicks-raptors",
-        "https://www.espn.com/nba/game/_/gameId/401909988/spurs-jazz",
-        "https://www.espn.com/nba/game/_/gameId/401909987/hornets-clippers"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyhYRxQI0JHAi12ZzX-zUj_xmgRjEu32dA7468mmqYvjGrO-DQTiUxWbcerf4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/game/_/gameId/401909990/knicks-raptors",
-          "title": "Knicks 112-108 Raptors (Nov 15, 2026) Final Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyhYRxQI0JHAi12ZzX-zUj_xmgRjEu32dA7468mmqYvjGrO-DQTiUxWbcerf4"
-        },
-        {
-          "url": "https://www.espn.com/nba/game/_/gameId/401909988/spurs-jazz",
-          "title": "Spurs 110-102 Jazz (Nov 15, 2026) Final Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9yjc0-mtNuZEEnFaakTudQrsWZXygqiw8opDAnIZnhftHTKX6BobWKMo6Vjg"
-        },
-        {
-          "url": "https://www.espn.com/nba/game/_/gameId/401909987/hornets-clippers",
-          "title": "Clippers 113-105 Hornets (Nov 15, 2026) Final Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx4wgUSBhX0dWTgLHARGat80Cw2PH1Kuj9ilasTN4kDnXnlHeoXhtjYs2JPj8"
-        }
-      ]
-    },
-    {
-      "query": "xavier basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T01:00:00Z",
-      "related_news_urls": [
-        "https://www.cincinnati.com/story/sports/college/xavier/2026/11/16/xavier-musketeers-cleveland-state-vikings-basketball-preview/92808685007/",
-        "https://sports.yahoo.com/articles/xavier-v-cleveland-state-preview-204342672.html",
-        "https://csuvikings.com/news/2026/11/16/cleveland-state-mens-basketball-concludes-road-trip-at-xavier-tuesday-night.aspx"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5IS5_mk1U4inQyWx57HAi2dQFD26n163Kz1pI6ps_DfJxiP2and8DwcEQHds",
-      "image_credit": "Cincinnati Enquirer",
-      "news": [
-        {
-          "url": "https://www.cincinnati.com/story/sports/college/xavier/2026/11/16/xavier-musketeers-cleveland-state-vikings-basketball-preview/92808685007/",
-          "title": "Bold predictions for Xavier vs. Cleveland State",
-          "publisher": "Cincinnati Enquirer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5IS5_mk1U4inQyWx57HAi2dQFD26n163Kz1pI6ps_DfJxiP2and8DwcEQHds"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/xavier-v-cleveland-state-preview-204342672.html",
-          "title": "Xavier v. Cleveland State: Preview and keys to the game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKveOFSpChuC4JOxFcz1IE3oxGdVo4smfVeonJb9ZJLLwywLAW04ARuyL7RiQ"
-        },
-        {
-          "url": "https://csuvikings.com/news/2026/11/16/cleveland-state-mens-basketball-concludes-road-trip-at-xavier-tuesday-night.aspx",
-          "title": "Cleveland State Men's Basketball Concludes Road Trip at Xavier",
-          "publisher": "csuvikings.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIe4GrvYZGnpNKl6ZOgG6l-hdK7p5aOAl1MDjnyUcoevmLsQ7L86V0AOlPRXM"
-        }
-      ]
-    },
-    {
-      "query": "julian hall",
+      "query": "maura higgins",
       "approx_searches": "5000+",
-      "published_at": "2026-11-18T00:50:00Z",
+      "published_at": "2026-11-18T01:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50482590/julian-hall-usa-poland-haiti-fifa-nations-league-concacaf",
-        "https://www.si.com/soccer/every-dual-national-cap-tied-usmnt-concacaf-nations-league",
-        "https://sbisoccer.com/2026/11/julian-hall-officially-cap-tied-to-usmnt-with-nations-league-appearance"
+        "https://www.yahoo.com/entertainment/tv/articles/maura-higgins-dropping-dancing-stars-135839250.html",
+        "https://www.the-sun.com/tv/17311905/dwts-maura-higgins-rib-injury-quit-show-semifinals/",
+        "https://www.thesun.co.uk/video/41054691/dwts-maura-higgins-suffers-fresh-injury-setback-before-semifinals/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlosKthIvUfK-ciMAZ1_iWp3f1V-Fh53UVF__FV8RPehpogFyfjT7A9LpsRhY",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEqoUPv_tjQzWKAYPJX2cfLAkelH_KMYSV91gZMoXGf8QoBvuzl7LasMKRuk",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50482590/julian-hall-usa-poland-haiti-fifa-nations-league-concacaf",
-          "title": "Dual-national Julian Hall officially tied to USMNT with appearance vs. Haiti",
-          "publisher": "ESPN",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/maura-higgins-dropping-dancing-stars-135839250.html",
+          "title": "Is Maura Higgins Dropping Out of ‘Dancing With the Stars’? Doctors Have Allegedly Recommended She Quit",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlosKthIvUfK-ciMAZ1_iWp3f1V-Fh53UVF__FV8RPehpogFyfjT7A9LpsRhY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEqoUPv_tjQzWKAYPJX2cfLAkelH_KMYSV91gZMoXGf8QoBvuzl7LasMKRuk"
         },
         {
-          "url": "https://www.si.com/soccer/every-dual-national-cap-tied-usmnt-concacaf-nations-league",
-          "title": "Every Dual National Now Cap-Tied to the USMNT Following Concacaf Nations League",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.the-sun.com/tv/17311905/dwts-maura-higgins-rib-injury-quit-show-semifinals/",
+          "title": "DWTS’ Maura Higgins injures her rib AGAIN and has to cancel another rehearsal days before live semifinals",
+          "publisher": "The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNxEAqlZLJY6pyLYjJv3hPpIXAZRcZfvo9NVQMOvCY-HzGqTYWBZM6TSYuWE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSN3ljlF8dfXbNw1n6KQ6nTYFJET8vdiLoVz5grOEj_lehTIXNIcGcZSSZ-A14"
         },
         {
-          "url": "https://sbisoccer.com/2026/11/julian-hall-officially-cap-tied-to-usmnt-with-nations-league-appearance",
-          "title": "Julian Hall officially cap-tied to USMNT with Nations League appearance - x",
-          "publisher": "SBI Soccer",
+          "url": "https://www.thesun.co.uk/video/41054691/dwts-maura-higgins-suffers-fresh-injury-setback-before-semifinals/",
+          "title": "DWTS’ Maura Higgins suffers fresh injury setback before semifinals",
+          "publisher": "The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxn7pXuVgROegx8jNqQgDje4t-FGd7ybORTiiNkoPX3IGLGAAAB7mLtM8AKg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8Hj7nZufAGKD1-a433AIgC8sgMJWUo9gc0ccIsn9Ge8LtAvx8MLVW7U-mXV8"
+        }
+      ]
+    },
+    {
+      "query": "cavan sullivan",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-18T01:20:00Z",
+      "related_news_urls": [
+        "https://www.philadelphiaunion.com/news/official-playoffs-watch-parties-set-for-this-weekend",
+        "https://www.mlssoccer.com/playoffs/2026/news/new-england-revolution-vs-philadelphia-union-5-biggest-storylines-for-round-one-series",
+        "https://sports.yahoo.com/articles/england-revolution-vs-philadelphia-union-150900989.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ZSPKCpTeAtWF8moqNXAE1tDedXJQrjRpdvjVH8xgrMbBd6qDCkSD7H_SlIg",
+      "image_credit": "Philadelphia Union",
+      "news": [
+        {
+          "url": "https://www.philadelphiaunion.com/news/official-playoffs-watch-parties-set-for-this-weekend",
+          "title": "Official Playoffs Watch Parties Set for this weekend",
+          "publisher": "Philadelphia Union",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ZSPKCpTeAtWF8moqNXAE1tDedXJQrjRpdvjVH8xgrMbBd6qDCkSD7H_SlIg"
+        },
+        {
+          "url": "https://www.mlssoccer.com/playoffs/2026/news/new-england-revolution-vs-philadelphia-union-5-biggest-storylines-for-round-one-series",
+          "title": "New England Revolution vs. Philadelphia Union: 5 biggest storylines for Round One series",
+          "publisher": "MLSsoccer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSQVE4D3An_HzHhO-Aq680JxLXpHsSuue1ShYniMVfB1Xqo4GhFmBrFMw4Qbk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/england-revolution-vs-philadelphia-union-150900989.html",
+          "title": "New England Revolution vs. Philadelphia Union: How to watch, stream Round One Game 1",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7j8TmPpXo90T0bMrlp-Lh9yxKFznsCLupACNBK7cqmaaJ1Sn-Wh4GrbtWvSc"
         }
       ]
     }
