@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T14:01:16.601869Z",
+  "checked_at": "2026-11-19T14:31:18.920376Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "meg ryan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T14:10:00Z",
+      "related_news_urls": [
+        "https://www.vogue.com/slideshow/vintage-pictures-of-meg-ryan",
+        "https://www.upi.com/Entertainment_News/Photos/Meg-Ryan-turns-65-a-look-back/12875/",
+        "https://www.thelist.com/2321483/meg-ryan-grew-out-signature-blond-bob-still-stunner-65/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1_7XgBbM3Edi9OwhKp9g2vO1FmcYohAuLMeiH-VxXHyHO8PEIkLps1_oJm88",
+      "image_credit": "Vogue",
+      "news": [
+        {
+          "url": "https://www.vogue.com/slideshow/vintage-pictures-of-meg-ryan",
+          "title": "Happy Birthday, Meg Ryan! 29 Vintage Pictures of the High Priestess of Fall",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1_7XgBbM3Edi9OwhKp9g2vO1FmcYohAuLMeiH-VxXHyHO8PEIkLps1_oJm88"
+        },
+        {
+          "url": "https://www.upi.com/Entertainment_News/Photos/Meg-Ryan-turns-65-a-look-back/12875/",
+          "title": "In photos: Meg Ryan turns 65: a look back - All Photos",
+          "publisher": "UPI.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkL58c9d2_hTkpvJrzPYwGlQoQaIeaTp1XhrZmI0pht_auQUpNrKfQ4CQSxSM"
+        },
+        {
+          "url": "https://www.thelist.com/2321483/meg-ryan-grew-out-signature-blond-bob-still-stunner-65/",
+          "title": "Meg Ryan Grew Out Her Signature Blond Bob, But She's Still A Stunner At 65",
+          "publisher": "The List",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlJ5O8zNh70PodUcb0et3-vi0Dvli3OI8caFGMNPeFTWD_VY0t4k6uP8p-PJs"
+        }
+      ]
+    },
+    {
+      "query": "turkey",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T14:00:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/uk/britain-eu-drop-trusted-partnership-term-summit-draft-2026-11-18/",
+        "https://www.bloomberg.com/news/articles/2026-11-18/uk-at-odds-with-eu-on-international-trade-and-youth-mobility",
+        "https://www.ft.com/content/6b278daf-6fdf-4951-af8a-227f25c4e0b7?syn-25a6b1a6=1"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aVy4KSPKUer9J_y0NxU8BcolOUzwKQY3d-CbKEafcTbHk_5W4tZzdC71_kw",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/uk/britain-eu-drop-trusted-partnership-term-summit-draft-2026-11-18/",
+          "title": "Britain, EU drop 'trusted partnership' term from summit draft",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aVy4KSPKUer9J_y0NxU8BcolOUzwKQY3d-CbKEafcTbHk_5W4tZzdC71_kw"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-18/uk-at-odds-with-eu-on-international-trade-and-youth-mobility",
+          "title": "UK at Odds With EU on International Trade and Youth Mobility",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtfoRRWjH7tOkdP6z6AJGDGvp7ot680uNxoQZOFHohbw7HrH8TxpszPzlQOPM"
+        },
+        {
+          "url": "https://www.ft.com/content/6b278daf-6fdf-4951-af8a-227f25c4e0b7?syn-25a6b1a6=1",
+          "title": "UK plans to resist EU request to match tariffs on Chinese goods",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8mct9rVf3FUQbHCzLl9kfd1lV4FJtNJbAdndqLBGnkwk0rkoX9ABLFoc7KKs"
+        }
+      ]
+    },
+    {
+      "query": "when does the stock market open",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T14:00:00Z",
+      "related_news_urls": [
+        "https://www.news-journalonline.com/story/news/education/2026/11/11/school-today-florida-veterans-day/92675380007/",
+        "https://www.facebook.com/chp/posts/in-observance-of-veterans-day-our-offices-will-be-closed-please-dial-9-1-1-for-e/1564034125762646/",
+        "https://www.cambridgema.gov/departments/publicworks/news/2026/11/cityofcambridgeveteransdayholidayclosuresandserviceinformationforwednesdaynovember11"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoQh34oDomwebXuJDYIV1jXbh8xneYV7sF_X8yArR8VAia5JCeNaG3bU-92m0",
+      "image_credit": "Daytona Beach News-Journal",
+      "news": [
+        {
+          "url": "https://www.news-journalonline.com/story/news/education/2026/11/11/school-today-florida-veterans-day/92675380007/",
+          "title": "Is there school on Veterans Day in Florida? See list by county",
+          "publisher": "Daytona Beach News-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoQh34oDomwebXuJDYIV1jXbh8xneYV7sF_X8yArR8VAia5JCeNaG3bU-92m0"
+        },
+        {
+          "url": "https://www.facebook.com/chp/posts/in-observance-of-veterans-day-our-offices-will-be-closed-please-dial-9-1-1-for-e/1564034125762646/",
+          "title": "In observance of Veteran's Day, our offices will be closed. Please dial 9-1-1 for emergencies.",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSi4VV702DBsWoxXZrDX8hDz-ML2A-pjBZEvx0sBD5FYb9roQ3yhIPyjjPHNy8"
+        },
+        {
+          "url": "https://www.cambridgema.gov/departments/publicworks/news/2026/11/cityofcambridgeveteransdayholidayclosuresandserviceinformationforwednesdaynovember11",
+          "title": "Veterans Day Holiday Closures and Service Information for Wednesday November 11",
+          "publisher": "the City of Cambridge (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeo2KXDxNU5PpEe5S0xIfwWPE0h5l87mf_RUISctO968L_a7MnU8WnPBJkwmI"
+        }
+      ]
+    },
+    {
+      "query": "annmarie hordern",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T13:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/19/world/asia/trump-summit-china-media-bloomberg-reporter-nvidia.html",
+        "https://www.foxnews.com/politics/china-blocks-bloomberg-reporter-trump-putin-xi-meeting-question-trump",
+        "https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcXUxzhqSBmmZnYBHt8CLDkJxKLbar-c0RNtDCfd5pHxHk-Tf7JnQPOVEgvwY",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/19/world/asia/trump-summit-china-media-bloomberg-reporter-nvidia.html",
+          "title": "China Bars Bloomberg Reporter From Trilateral Talks for Asking a Question",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcXUxzhqSBmmZnYBHt8CLDkJxKLbar-c0RNtDCfd5pHxHk-Tf7JnQPOVEgvwY"
+        },
+        {
+          "url": "https://www.foxnews.com/politics/china-blocks-bloomberg-reporter-trump-putin-xi-meeting-question-trump",
+          "title": "China blocks Bloomberg reporter from Trump-Putin-Xi meeting over question to Trump",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgSdi_YZ5LoFA3yvGrNraNezepeRlnjAgAstxU6nAHLkaRshy2w6sYGsfDIko"
+        },
+        {
+          "url": "https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/",
+          "title": "Reporter banned from summit after asking Trump about Jensen Huang in front of Chinese leader",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnledk7H3TS4WXYdORQGoIq8XLde5UDOd8nLq44dyfuCFhSzu3LnnJJhBw7NA"
+        }
+      ]
+    },
     {
       "query": "bob woodward",
       "approx_searches": "500+",
@@ -13,7 +153,7 @@
       "related_news_urls": [
         "https://www.bostonglobe.com/2026/11/17/arts/bob-wordward-secrets-memoir/",
         "https://www.commonwealmagazine.org/scialabba-george-bob-woodward-reagan",
-        "https://www.wsj.com/opinion/bob-woodward-puts-self-interest-over-duty-674e9c95"
+        "https://www.yahoo.com/news/videos/bob-woodward-talks-memoir-secrets-085454740.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGiAjbj5YgfXP5Q5lytMp-8xENN7b7YYVT1MkrXdN5dhoDMYCf8XuNBEJlpMY",
       "image_credit": "The Boston Globe",
@@ -33,46 +173,46 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8_Gz5dYnLYtT39Ht-0N6wEdco1PHRWykM_zWrGj9yOdd43X_uJkwOzf5WSu4"
         },
         {
-          "url": "https://www.wsj.com/opinion/bob-woodward-puts-self-interest-over-duty-674e9c95",
-          "title": "Opinion | Bob Woodward Puts Self-Interest Over Duty",
-          "publisher": "WSJ",
+          "url": "https://www.yahoo.com/news/videos/bob-woodward-talks-memoir-secrets-085454740.html",
+          "title": "Bob Woodward talks new memoir, 'Secrets'",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8_K4Vz1R1KbTH-imib0QRlGkl-H6yb9UojUc_r5a0frPQAfwmTfQeoSJfcuQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPeczzu9gwwftxO6DBm2Or5PRcV2ezKwgLRvh2lnqVstJrFIxDT-2kLQQfhxQ"
         }
       ]
     },
     {
       "query": "nitto atp finals",
-      "approx_searches": "200+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-19T13:40:00Z",
       "related_news_urls": [
-        "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
-        "https://www.bbc.com/sport/tennis/articles/cmdx1erlpqkxo",
-        "https://www.nittoatpfinals.com/en/news/alcaraz-nitto-atp-finals-2026-semi-final-qualification"
+        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/1DOjWbMEJi6q/",
+        "https://sports.yahoo.com/articles/chris-eubanks-surprised-flavio-cobolli-110000374.html",
+        "https://www.tennismajors.com/atp/nitto-atp-finals-atp/i-deserved-to-win-the-first-set-cobollis-body-gave-out-after-an-hour-in-turin-867289.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIC_gOVPSGU0szwsifeG_pd10eUsfwFFLCtTqIE71Pqz09HdaU-LobCJddbA",
-      "image_credit": "ATP Tour",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUmNKTRxFjtSbywF6Fv5Ay5Bht1crgBYtzzcaGK6GuEOisJw_9ZhApMOSgDCg",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
-          "title": "Alcaraz eases past Medvedev, moves to brink of Turin SFs",
-          "publisher": "ATP Tour",
+          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/1DOjWbMEJi6q/",
+          "title": "How day four of the ATP Finals 2026 unfolded as Alcaraz eased past Medvedev and Tiafoe beat Cobolli",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIC_gOVPSGU0szwsifeG_pd10eUsfwFFLCtTqIE71Pqz09HdaU-LobCJddbA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUmNKTRxFjtSbywF6Fv5Ay5Bht1crgBYtzzcaGK6GuEOisJw_9ZhApMOSgDCg"
         },
         {
-          "url": "https://www.bbc.com/sport/tennis/articles/cmdx1erlpqkxo",
-          "title": "ATP Finals: Carlos Alcaraz outclasses Daniil Medvedev to qualify despite injury concern",
-          "publisher": "BBC",
+          "url": "https://sports.yahoo.com/articles/chris-eubanks-surprised-flavio-cobolli-110000374.html",
+          "title": "Chris Eubanks surprised by Flavio Cobolli’s attitude on court in defeat to Frances Tiafoe",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXjPW2RyPKv9KXh3BNMa1vWtCT5cFp0AIe0JWX0m6jp-SV21WW1xcGy8c_SpI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRY7wZ4_P5Noy5MD4P-m8UbgO1hhHuby4oH8b92bkktjFupB3e9Va6IZDA8Bp0"
         },
         {
-          "url": "https://www.nittoatpfinals.com/en/news/alcaraz-nitto-atp-finals-2026-semi-final-qualification",
-          "title": "Alcaraz Nitto ATP Finals 2026 Semi Final Qualification | Nitto ATP Finals | Tennis",
-          "publisher": "Nitto ATP Finals",
+          "url": "https://www.tennismajors.com/atp/nitto-atp-finals-atp/i-deserved-to-win-the-first-set-cobollis-body-gave-out-after-an-hour-in-turin-867289.html",
+          "title": "“I deserved to win the first set”: Cobolli’s body gave out after an hour in Turin",
+          "publisher": "Tennis Majors",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq2T_iPsE3vJD5To5_eM5FhwvaJbCsKY1ItNJhiCacSfEMESnOFntgL31XypU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5rZBPlOGYhQLs-QLpAlKPSNGlGxRP0c9N4ySEz1pUP3Z2u76darEFJ4L8hZ0"
         }
       ]
     },
@@ -104,13 +244,48 @@
       ]
     },
     {
+      "query": "9to5google",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T13:40:00Z",
+      "related_news_urls": [
+        "https://www.droid-life.com/2026/11/18/app-lock-is-back-on-android-17-heres-how-i-got-it/",
+        "https://www.digitaltrends.com/phones/google-brings-back-app-lock-for-pixel-with-a-stable-release-set-for-q1-2027/",
+        "https://www.neowin.net/news/android-is-finally-getting-native-app-lock-but-users-already-want-these-additional-features/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDPXY0L4azTGAP27Aas1hH4tzprcwiiAEP4ABA1mnt10Kr9BfwNUWzPteaiEQ",
+      "image_credit": "Droid Life",
+      "news": [
+        {
+          "url": "https://www.droid-life.com/2026/11/18/app-lock-is-back-on-android-17-heres-how-i-got-it/",
+          "title": "App Lock is Back on Android 17 – Here’s How I Got It",
+          "publisher": "Droid Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDPXY0L4azTGAP27Aas1hH4tzprcwiiAEP4ABA1mnt10Kr9BfwNUWzPteaiEQ"
+        },
+        {
+          "url": "https://www.digitaltrends.com/phones/google-brings-back-app-lock-for-pixel-with-a-stable-release-set-for-q1-2027/",
+          "title": "Google brings back App Lock for Pixel, with a wide release set for Q1 2027",
+          "publisher": "Digital Trends",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuB6af-MJT3qGdKfXcUxbRfEZpZBZ4vEg8PitTwOXpcJM0qnijzb-NQWeDAWQ"
+        },
+        {
+          "url": "https://www.neowin.net/news/android-is-finally-getting-native-app-lock-but-users-already-want-these-additional-features/",
+          "title": "Android is finally getting native App Lock, but users already want these additional features",
+          "publisher": "Neowin",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjQbcZ4dEo9LMorh69b0PSOXfG5KkvGIjwwN6QIJE4o4bYpcn1JDWkBPWTlY"
+        }
+      ]
+    },
+    {
       "query": "ben shelton",
       "approx_searches": "2000+",
       "published_at": "2026-11-19T13:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/tennis/story/_/id/50513841/alexander-zverev-beats-ben-shelton-semis-atp-finals",
         "https://sports.yahoo.com/articles/alexander-zverev-match-ben-shelton-000000942.html",
-        "https://www.atptour.com/en/news/zverev-shelton-nitto-atp-finals-2026-tuesday"
+        "https://www.atptour.com/en/news/nitto-atp-finals-2026-results"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUc4vRbW0u1NtJVodFZDpRAmwyubZTTkHHszSyic5k-Ivu1PS0m419VcDQtzI",
       "image_credit": "ESPN",
@@ -130,52 +305,17 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6PpY1cYr7FB-8UUs6ErZ9QyK6awL7uGUvqa3Xr6ASo2WCTbxwQJKhIqNtPA4"
         },
         {
-          "url": "https://www.atptour.com/en/news/zverev-shelton-nitto-atp-finals-2026-tuesday",
-          "title": "Zverev shuts down Shelton to seal Nitto ATP Finals SF berth",
+          "url": "https://www.atptour.com/en/news/nitto-atp-finals-2026-results",
+          "title": "What were the Nitto ATP Finals results?",
           "publisher": "ATP Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5AYOLASNtRP4g990L6ruKgIqD1J_2pmqrwPdYkpRffCle5C9HZSBeti1OhI"
-        }
-      ]
-    },
-    {
-      "query": "gma deals and steals today",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T13:30:00Z",
-      "related_news_urls": [
-        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-gifts-20-138213829",
-        "https://abcnews.com/GMA/Shop/abc-secret-savings-gifts-home/story?id=138112968",
-        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-gifting-138082156"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkbNn3U12VTpJCphVf8RNTjeq3hZhwZqnjmezPkKP2uDG6coChZi69XmmYVyo",
-      "image_credit": "Good Morning America",
-      "news": [
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-gifts-20-138213829",
-          "title": "'GMA' Deals & Steals on gifts $20 and under",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkbNn3U12VTpJCphVf8RNTjeq3hZhwZqnjmezPkKP2uDG6coChZi69XmmYVyo"
-        },
-        {
-          "url": "https://abcnews.com/GMA/Shop/abc-secret-savings-gifts-home/story?id=138112968",
-          "title": "ABC Secret Savings: Gifts for home",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoixryZy9Nf7CNJMwK95HDX91aKjWs_oshpBIGDzTccgLstgIZgz6-Se_-Xgg"
-        },
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-gifting-138082156",
-          "title": "'GMA' Deals & Steals for gifting",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN8wsxGWE-T8vYtdgnoU-yGU2PA4-0hy6-dNpTQ3gfoN-yzxh9hfbYVumbh3M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSlkVLen6f6twXKM69RZQyxUXSNRfsE1N1PDHcr6lBgGvnYlbMeZvimmkCzk"
         }
       ]
     },
     {
       "query": "brooks koepka",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T13:30:00Z",
       "related_news_urls": [
         "https://www.pgatour.com/article/news/latest/2026/11/18/brooks-koepka-new-swing-new-coaches-the-rsm-classic-leaderboard-preview",
@@ -205,146 +345,6 @@
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWR-mwfzUHL91VvQMWjqk4KPYqBMkU4YUnpRloM7enl2JSJCslh2S3m-HC-Xs"
-        }
-      ]
-    },
-    {
-      "query": "uma thurman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T13:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/ethan-hawke-uma-thurmans-famous-164642105.html",
-        "https://www.facebook.com/officialbenshapiro/videos/maya-hawke-wants-to-radicalize-your-children-with-the-hunger-games/1656611059290293/",
-        "https://lufkindailynews.com/news_reuters/national/maya-hawke-as-wiress-in-the-hunger-games-sunrise-on-the-reaping/image_39580328-48e4-5bae-a708-1127ee15b13d.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0Edc6zEJaJtq9OR2JpRR-fGSUzvJMGneW8JTlQiB8Nb6etceKC14GvkS-TU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/ethan-hawke-uma-thurmans-famous-164642105.html",
-          "title": "Ethan Hawke and Uma Thurman's famous lookalike daughter wows in daring crop top – 9 months after surprise wedding",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0Edc6zEJaJtq9OR2JpRR-fGSUzvJMGneW8JTlQiB8Nb6etceKC14GvkS-TU"
-        },
-        {
-          "url": "https://www.facebook.com/officialbenshapiro/videos/maya-hawke-wants-to-radicalize-your-children-with-the-hunger-games/1656611059290293/",
-          "title": "Ben Shapiro. . Maya Hawke Wants to Radicalize Your Children With The Hunger Games",
-          "publisher": "Facebook",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSFJNzuVYKL0R26DDiaHphst6BlgVQHNK8ka5ybXd94cgkV4ZzZZEvhRUQNm8"
-        },
-        {
-          "url": "https://lufkindailynews.com/news_reuters/national/maya-hawke-as-wiress-in-the-hunger-games-sunrise-on-the-reaping/image_39580328-48e4-5bae-a708-1127ee15b13d.html",
-          "title": "Maya Hawke as Wiress in \"The Hunger Games: Sunrise on the Reaping.\"",
-          "publisher": "The Lufkin Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDeVq0GnY5nT_FoRUcv1kD5-gwkFxaVHlP7z_bIhRXkPQO5d5w8It3zBy6XIE"
-        }
-      ]
-    },
-    {
-      "query": "next friday",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T13:20:00Z",
-      "related_news_urls": [
-        "https://www.complex.com/pop-culture/a/markelibert/ice-cube-chris-tucker-next-friday-smokey",
-        "https://lindyssports.com/other-sports/ice-cube-friday-4-update-raiders-dodgers",
-        "https://www.yahoo.com/entertainment/movies/articles/ice-cube-says-chris-tucker-163619931.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9LTQPRI93katmRP0lqiWFCb_P8t3V0xWKb4apnH4ElMqTCDOSHh3IqeFMDVI",
-      "image_credit": "Complex",
-      "news": [
-        {
-          "url": "https://www.complex.com/pop-culture/a/markelibert/ice-cube-chris-tucker-next-friday-smokey",
-          "title": "Ice Cube Says He Was 'Confused' by Chris Tucker Turning Down 'Next Friday,' Not Hurt",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9LTQPRI93katmRP0lqiWFCb_P8t3V0xWKb4apnH4ElMqTCDOSHh3IqeFMDVI"
-        },
-        {
-          "url": "https://lindyssports.com/other-sports/ice-cube-friday-4-update-raiders-dodgers",
-          "title": "Raiders, Dodgers fan Ice Cube gives ‘Friday 4’ update",
-          "publisher": "Lyndy's Sports Annuals",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlAI4pMGJhgez3sgJJPrHUrle9ZLMfV3aQamnJUxzSndeFpOm9SsDslBw11-w"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/ice-cube-says-chris-tucker-163619931.html",
-          "title": "Ice Cube Says Chris Tucker Wants in on 'Last Friday,' Cameras Roll in April",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr7nnRpe3ZbsG0n16dcX8-FggU92Kaz1baPEfvMnhYeE7lvpu2jGiAW8uW2SQ"
-        }
-      ]
-    },
-    {
-      "query": "fox news politics",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T13:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/article/stalemates-over-semiconductors-and-rare-earth-minerals-appear-little-changed-as-trump-heads-home-from-china-121555352.html",
-        "https://apnews.com/video/us-president-donald-trump-appears-to-reach-for-xis-hand-on-escalator-9009de93d349428ab1b5f0f5565e7e0d",
-        "https://www.axios.com/2026/11/18/trump-china-xi-hug-airport"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9a4Quh-Mp0bnHOsUIlnJqnsK30bmw16-edAlQVYKepQBfjsNAGs7n95y3hL8",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/article/stalemates-over-semiconductors-and-rare-earth-minerals-appear-little-changed-as-trump-heads-home-from-china-121555352.html",
-          "title": "Stalemates over semiconductors and rare earth minerals appear little changed as Trump heads home from China",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9a4Quh-Mp0bnHOsUIlnJqnsK30bmw16-edAlQVYKepQBfjsNAGs7n95y3hL8"
-        },
-        {
-          "url": "https://apnews.com/video/us-president-donald-trump-appears-to-reach-for-xis-hand-on-escalator-9009de93d349428ab1b5f0f5565e7e0d",
-          "title": "US President Donald Trump appears to reach for Xi’s hand on escalator",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTs12DBSfnAwnuqu4boibpdH6BsaazS5E27HRq8Rco8HcuWdagvXoxB0Ujxl58"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/18/trump-china-xi-hug-airport",
-          "title": "Xi Jinping breaks protocol to greet and hug Trump at China airport",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5d2K8i-x6XDQFKsKlqHkIKRCKu5hT10d0Y1Ujbyk3fbgCdV7FN8qkSN7O2NI"
-        }
-      ]
-    },
-    {
-      "query": "wordle — the new york times",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T13:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/19/world/asia/trump-summit-china-media-bloomberg-reporter-nvidia.html",
-        "https://www.foxnews.com/politics/china-blocks-bloomberg-reporter-trump-putin-xi-meeting-question-trump",
-        "https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcXUxzhqSBmmZnYBHt8CLDkJxKLbar-c0RNtDCfd5pHxHk-Tf7JnQPOVEgvwY",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/19/world/asia/trump-summit-china-media-bloomberg-reporter-nvidia.html",
-          "title": "China Bars Bloomberg Reporter From Trilateral Talks for Asking a Question",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcXUxzhqSBmmZnYBHt8CLDkJxKLbar-c0RNtDCfd5pHxHk-Tf7JnQPOVEgvwY"
-        },
-        {
-          "url": "https://www.foxnews.com/politics/china-blocks-bloomberg-reporter-trump-putin-xi-meeting-question-trump",
-          "title": "China blocks Bloomberg reporter from Trump-Putin-Xi meeting over question to Trump",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlH1rIyxhQ0B5cXeDSTBOXEbPvMoTpgJW_6WWJneUwGRjasMKNmTWBZki24lc"
-        },
-        {
-          "url": "https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/",
-          "title": "Reporter banned from summit after asking Trump about Jensen Huang in front of Chinese leader",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLnTqh1YZZYr6QpHigG73zlzPXzogYFohqZIkJ-XbVKTpBx1lbY8R925wlBlM"
         }
       ]
     }
