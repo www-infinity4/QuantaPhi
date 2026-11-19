@@ -31,6 +31,13 @@ def run():
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
         results.append('360px initial rendering and truthful seed status')
 
+        page.locator('#trace-query').fill('Dash')
+        page.get_by_role('button', name='Build dated trace', exact=True).click()
+        assert page.locator('#trace-results article').count() == 1
+        assert '1 matching notes' in page.locator('#trace-results').inner_text()
+        assert 'do not establish who uploaded content' in page.locator('#trace-results').inner_text()
+        assert all(url.startswith('http://127.0.0.1:8765/') for url in requests)
+
         page.locator('#record-search').fill('Dash')
         assert page.locator('#records-list article').count() == 1
         page.locator('#record-search').fill('')
