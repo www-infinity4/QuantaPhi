@@ -3,17 +3,157 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T20:01:40.205776Z",
+  "checked_at": "2026-11-19T20:31:14.347204Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "drew mestemaker",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T20:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/drew-mestemaker-injury-status-revealed-035043730.html",
+        "https://247sports.com/college/oklahoma-state/article/osu-cowboys-football-mailbag-drew-mestemaker-injury-eric-morris-decisions-week-12-292965285/",
+        "https://arizonasports.com/ncaa/arizona-state/asu-football/drew-mestemaker-omarion-miller"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXwkUVYL3HcaA9fqTn8Vv6Psl2LiybTknaD_7pqpSiofvCitjJPRVgMIq6L4w",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/drew-mestemaker-injury-status-revealed-035043730.html",
+          "title": "Drew Mestemaker injury status revealed for Oklahoma State football game vs Arizona State",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXwkUVYL3HcaA9fqTn8Vv6Psl2LiybTknaD_7pqpSiofvCitjJPRVgMIq6L4w"
+        },
+        {
+          "url": "https://247sports.com/college/oklahoma-state/article/osu-cowboys-football-mailbag-drew-mestemaker-injury-eric-morris-decisions-week-12-292965285/",
+          "title": "GoPokes Mailbag: Assessing in-game decisions, Drew Mestemaker’s health, transfer portal plans",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDWka_Q9NBsNbcSSGILaHNe_fA1588owguEPUjGzqNu_sAc80EiBX3ne0nzXU"
+        },
+        {
+          "url": "https://arizonasports.com/ncaa/arizona-state/asu-football/drew-mestemaker-omarion-miller",
+          "title": "Drew Mestemaker questionable vs. ASU, Omarion Miller ruled out",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtjCm5y7enmXxYMYKoLR80YNyK65YZ8Xg7Z1qc5iDr3GXjqqnYiA4wO-BgvAA"
+        }
+      ]
+    },
+    {
+      "query": "scott speedman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T20:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-culture/landman-adds-another-big-name-scott-speedman-signs-oil-drama-third-season",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/does-scott-speedman-joining-landman-132508229.html",
+        "https://www.tvline.com/2321137/scott-speedman-landman-season-3-selling-sunset-season-10-cast/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEzvCiKK3gQedPUWWHAWb2EZQrSucRYGp8XVhWoYUCmNK8iU3CnScqxoO3sUg",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-culture/landman-adds-another-big-name-scott-speedman-signs-oil-drama-third-season",
+          "title": "'Landman' adds another big name as Scott Speedman signs on for the oil drama's third season",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEzvCiKK3gQedPUWWHAWb2EZQrSucRYGp8XVhWoYUCmNK8iU3CnScqxoO3sUg"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/does-scott-speedman-joining-landman-132508229.html",
+          "title": "Does Scott Speedman Joining ‘Landman’ Mean Bad News for ‘R.J. Decker’?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7G1zqOkbp47qyM9HSKxzND4nQexK5Ht6FTpPCZjFefHPXV8gV2f5YhlsSVoI"
+        },
+        {
+          "url": "https://www.tvline.com/2321137/scott-speedman-landman-season-3-selling-sunset-season-10-cast/",
+          "title": "Casting News: Scott Speedman Joins Landman, Selling Sunset Adds 4, And More",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbRqQaed4K3DZNvilitOWfb_SIXTnnt8npnC8b1dYSBN1dz85HzV0u7Oc750"
+        }
+      ]
+    },
+    {
+      "query": "alexander zverev",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T19:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50513841/alexander-zverev-beats-ben-shelton-semis-atp-finals",
+        "https://sports.yahoo.com/articles/alexander-zverev-match-ben-shelton-000000942.html",
+        "https://www.atptour.com/en/video/highlights-zverev-into-turin-sfs-after-beating-shelton-nitto-atp-finals-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUc4vRbW0u1NtJVodFZDpRAmwyubZTTkHHszSyic5k-Ivu1PS0m419VcDQtzI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50513841/alexander-zverev-beats-ben-shelton-semis-atp-finals",
+          "title": "Alexander Zverev improved to 7-0 vs. Ben Shelton, advancing to ATP Finals semis",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUc4vRbW0u1NtJVodFZDpRAmwyubZTTkHHszSyic5k-Ivu1PS0m419VcDQtzI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/alexander-zverev-match-ben-shelton-000000942.html",
+          "title": "Alexander Zverev’s match with Ben Shelton at the ATP Finals angers tennis fans, ‘I feel so bad’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6PpY1cYr7FB-8UUs6ErZ9QyK6awL7uGUvqa3Xr6ASo2WCTbxwQJKhIqNtPA4"
+        },
+        {
+          "url": "https://www.atptour.com/en/video/highlights-zverev-into-turin-sfs-after-beating-shelton-nitto-atp-finals-2026",
+          "title": "Highlights: Zverev into Turin SFs after beating Shelton",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5AYOLASNtRP4g990L6ruKgIqD1J_2pmqrwPdYkpRffCle5C9HZSBeti1OhI"
+        }
+      ]
+    },
+    {
+      "query": "arthur fils",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T19:50:00Z",
+      "related_news_urls": [
+        "https://www.eurosport.fr/tennis/atp-finals-1/2026/atp-finals-2026-arthur-fils-qualifie-en-demi-finales-du-masters-si_sto23356308/story.shtml",
+        "https://www.lequipe.fr/Tennis/Actualites/Dans-les-conditions-rapides-des-finales-atp-alexander-zverev-adversaire-d-arthur-fils-est-pratiquement-impossible-a-breaker/1744530",
+        "https://www.linternaute.com/television/emission-sportive-tennis-atp-finals-1er-jour-p6278948/tennis-atp-finals-henry-patten-harri-heliovaara-theo-arribage-albano-olivetti-e7137738/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZC3g1XKrHYlkUw0we6HJj3f9tpbSErNpspSiOvURDsnlNa2jNa7u6y3jQ974",
+      "image_credit": "Eurosport",
+      "news": [
+        {
+          "url": "https://www.eurosport.fr/tennis/atp-finals-1/2026/atp-finals-2026-arthur-fils-qualifie-en-demi-finales-du-masters-si_sto23356308/story.shtml",
+          "title": "ATP Finals 2026 - Arthur Fils qualifié en demi-finales du Masters si…",
+          "publisher": "Eurosport",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZC3g1XKrHYlkUw0we6HJj3f9tpbSErNpspSiOvURDsnlNa2jNa7u6y3jQ974"
+        },
+        {
+          "url": "https://www.lequipe.fr/Tennis/Actualites/Dans-les-conditions-rapides-des-finales-atp-alexander-zverev-adversaire-d-arthur-fils-est-pratiquement-impossible-a-breaker/1744530",
+          "title": "Dans les conditions ultra rapides des Finales ATP, Alexander Zverev, prochain adversaire d'Arthur Fils, est pratiquement impossible à breaker",
+          "publisher": "L'Équipe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR04_1frcKLJkqCo7fEIUUBa8XOi1Fw0mybODXGPQ3syEQvmVSL7iNI5uFD8s"
+        },
+        {
+          "url": "https://www.linternaute.com/television/emission-sportive-tennis-atp-finals-1er-jour-p6278948/tennis-atp-finals-henry-patten-harri-heliovaara-theo-arribage-albano-olivetti-e7137738/",
+          "title": "Tennis : ATP Finals, à la tv",
+          "publisher": "Linternaute.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqUVpQl_IeWQko8OfhvT2kfzVWBQ9cwg09yN0vbrsJpm9Osb6CyarZP3fCVlE"
+        }
+      ]
+    },
     {
       "query": "zverev",
       "approx_searches": "10000+",
       "published_at": "2026-11-19T19:40:00Z",
       "related_news_urls": [
         "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
-        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/ZWrCJhdAjkP7/",
-        "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro"
+        "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
+        "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI",
       "image_credit": "ATP Tour",
@@ -26,46 +166,46 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI"
         },
         {
-          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/ZWrCJhdAjkP7/",
-          "title": "ATP Finals 2026 live updates: Latest with Zverev vs. Fils next after Shelton beats Jodar on day five",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYh4bSOxT_Lsug4KrRZCLEeNlnQh3zPybVDlWrENVzYhebiezf-pHXNRhNCfQ"
-        },
-        {
           "url": "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
           "title": "ATP Finals: Ben Shelton beats Rafael Jodar to move within touching distance of semi-finals",
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH47ZQ2zVJcVSkwamqYVF23FQFhfT-Zj85JA1c-VR3Or8bGiiqjE6zzrYOiYM"
+        },
+        {
+          "url": "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november",
+          "title": "Nitto ATP Finals 2026 SF Qualification Scenarios 16 November | Nitto ATP Finals | Tennis",
+          "publisher": "Nitto ATP Finals",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLuV9YZssD8GFROW-oOH40LhxaIGHRFE-s3HbIkkQuf67mD8zQBb9O1NfhePc"
         }
       ]
     },
     {
       "query": "federal emergency management agency",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T19:40:00Z",
       "related_news_urls": [
-        "https://homeland.house.gov/hearing/beyond-the-storm-assessing-femas-mission-readiness/",
         "https://www.c-span.org/event/house-committee/fema-administrator-testifies-on-agencys-disaster-readiness/449687",
+        "https://homeland.house.gov/hearing/beyond-the-storm-assessing-femas-mission-readiness/",
         "https://thehill.com/homenews/house/6229989-watch-live-fema-chief-testimony-house-hearing-disaster-preparedness/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQETef23uQXJs0reIq4pGtXO0xP2Q8ToKoTiNdOblItWlFUwH92xmlQIUycZYo",
-      "image_credit": "House Committee on Homeland Security (.gov)",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSPrLBoO-i5jU1_yKtO95VKFdZbO6nKg19pAITSjWnnpeTom7_l76cskmp3Ps",
+      "image_credit": "C-SPAN",
       "news": [
-        {
-          "url": "https://homeland.house.gov/hearing/beyond-the-storm-assessing-femas-mission-readiness/",
-          "title": "Beyond the Storm: Assessing FEMA’s Mission Readiness",
-          "publisher": "House Committee on Homeland Security (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQETef23uQXJs0reIq4pGtXO0xP2Q8ToKoTiNdOblItWlFUwH92xmlQIUycZYo"
-        },
         {
           "url": "https://www.c-span.org/event/house-committee/fema-administrator-testifies-on-agencys-disaster-readiness/449687",
           "title": "FEMA Administrator Testifies on Agency's Disaster Readiness",
           "publisher": "C-SPAN",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSPrLBoO-i5jU1_yKtO95VKFdZbO6nKg19pAITSjWnnpeTom7_l76cskmp3Ps"
+        },
+        {
+          "url": "https://homeland.house.gov/hearing/beyond-the-storm-assessing-femas-mission-readiness/",
+          "title": "Beyond the Storm: Assessing FEMA’s Mission Readiness",
+          "publisher": "House Committee on Homeland Security (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQETef23uQXJs0reIq4pGtXO0xP2Q8ToKoTiNdOblItWlFUwH92xmlQIUycZYo"
         },
         {
           "url": "https://thehill.com/homenews/house/6229989-watch-live-fema-chief-testimony-house-hearing-disaster-preparedness/",
@@ -77,15 +217,120 @@
       ]
     },
     {
-      "query": "andrew marsh",
+      "query": "nasa voyager 1",
       "approx_searches": "500+",
+      "published_at": "2026-11-19T19:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/18/science/nasa-voyager-1-earth-light-day.html",
+        "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+        "https://www.cnn.com/2026/11/18/science/voyager-1-light-day"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGJ7A9457hsIjQ_IMVZdNzwu7nN0bFGboZUk4gCmfpHkCSjQxjqR7hYcX_FHA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/18/science/nasa-voyager-1-earth-light-day.html",
+          "title": "After 49 Years, Voyager 1 Is a Mind-Blowing One Light-Day From Earth",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGJ7A9457hsIjQ_IMVZdNzwu7nN0bFGboZUk4gCmfpHkCSjQxjqR7hYcX_FHA"
+        },
+        {
+          "url": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+          "title": "Voyager 1 Engineers Analyze Data Issue, Ready to Confirm Light-day",
+          "publisher": "NASA Science (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtbeBzTcQ76db7wAIn4Gv-J--I2vlX8FGi5nkb0morW3vETALM3IDqBX4BjF8"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/18/science/voyager-1-light-day",
+          "title": "NASA’s Voyager 1 is now one light-day away from Earth",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGm06VTVoOgPuZskVlDhpcRGZJTN9vMYXIpHqdgH_Vsn3oIgzf6oB73-IohHs"
+        }
+      ]
+    },
+    {
+      "query": "corey ruiz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T19:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/19/us/madison-police-shooting",
+        "https://www.channel3000.com/news/exclusive-madison-braces-for-das-decision-on-corey-ruiz-shooting-tomorrow/article_025e2b3c-2c78-43f7-b4bd-78466ef04914.html",
+        "https://www.wmtv15news.com/2026/11/19/dane-county-da-announces-charging-decision-madison-police-fatal-shooting-corey-ruiz/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6uj1olu5Azq56wptZSCCT_pl_mtL_t8vtYrWydJU3Xjht3fm-j5w_Tn8-u0A",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/19/us/madison-police-shooting",
+          "title": "Prosecutor declines to charge a White police officer who fatally shot a Black man in Wisconsin",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6uj1olu5Azq56wptZSCCT_pl_mtL_t8vtYrWydJU3Xjht3fm-j5w_Tn8-u0A"
+        },
+        {
+          "url": "https://www.channel3000.com/news/exclusive-madison-braces-for-das-decision-on-corey-ruiz-shooting-tomorrow/article_025e2b3c-2c78-43f7-b4bd-78466ef04914.html",
+          "title": "Exclusive: Madison braces for DA's decision on Corey Ruiz shooting tomorrow",
+          "publisher": "Channel 3000",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpZS9aiyqD8kn2iN9KJKXc7N3dwsj1oCbTEr252-xw66d2YHhE4jUR3hHsDUY"
+        },
+        {
+          "url": "https://www.wmtv15news.com/2026/11/19/dane-county-da-announces-charging-decision-madison-police-fatal-shooting-corey-ruiz/",
+          "title": "🔴LIVE: Dane County DA announces charging decision in Madison police fatal shooting of Corey Ruiz",
+          "publisher": "WMTV 15 NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5-dH2c27nxfO2kwDkDpugC_Am36ar3ukvTH1RYYaUQF1-dXJStMNzLRUrQRU"
+        }
+      ]
+    },
+    {
+      "query": "hyundai elantra",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T19:40:00Z",
+      "related_news_urls": [
+        "https://www.caranddriver.com/photos/a74470042/2027-hyundai-elantra-revealed-exterior-gallery/",
+        "https://www.motortrend.com/reviews/first-look-2027-2028-hyundai-elantra",
+        "https://www.usatoday.com/videos/cars/news/auto-shows/2026/11/19/2027-hyundai-elantra-la-auto-show/92864719007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRKDsxmxHcchXPbYazgtvggSsjkzvTmGGTlpbGrblPghqSHpyqsmO78PybcuE",
+      "image_credit": "Car and Driver",
+      "news": [
+        {
+          "url": "https://www.caranddriver.com/photos/a74470042/2027-hyundai-elantra-revealed-exterior-gallery/",
+          "title": "View Exterior Photos of the 2027 Hyundai Elantra",
+          "publisher": "Car and Driver",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRKDsxmxHcchXPbYazgtvggSsjkzvTmGGTlpbGrblPghqSHpyqsmO78PybcuE"
+        },
+        {
+          "url": "https://www.motortrend.com/reviews/first-look-2027-2028-hyundai-elantra",
+          "title": "Hyundai’s New 2027 Elantra Compact Sedan Just Got a Lot More Interesting",
+          "publisher": "MotorTrend",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQqR33JSaa70ATYJo_h0hkfQYRv_N7qBYyyPYjtWINgLtWtMaAPKzvarXHGZA"
+        },
+        {
+          "url": "https://www.usatoday.com/videos/cars/news/auto-shows/2026/11/19/2027-hyundai-elantra-la-auto-show/92864719007/",
+          "title": "Hyundai gave the Elantra a 'bold' makeover at the LA Auto Show. See it",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGFbamCoKOIbBYW-Tsexw5UOzyOGeeeJfg-a8MNuO2HP_0qrryQDh2lZzyQN0"
+        }
+      ]
+    },
+    {
+      "query": "andrew marsh",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T19:30:00Z",
       "related_news_urls": [
         "https://www.mlive.com/news/ann-arbor/2026/11/michigan-footballs-andrew-marsh-charged-with-indecent-exposure.html",
-        "https://sports.yahoo.com/articles/michigan-football-star-charged-indecent-192458804.html",
-        "https://www.nytimes.com/athletic/7795654/2026/11/19/michigan-andrew-marsh-misdemeanor-indecent-exposure/"
+        "https://www.cbssports.com/college-football/news/michigan-wr-andrew-marsh-charged-indecent-exposure/",
+        "https://sports.yahoo.com/articles/michigan-football-star-charged-indecent-192458804.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3QI_vH4kP_rbqNxcb_hUVwsiFIlVCqkLXCDX3FrsdCH3iAyHocSdffmI6eis",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGXgewL0KIIYNRXGOx6xxLycX6t7Xsxc8whKmUeOkAk34yUITU4WysKw7Z8Kc",
       "image_credit": "MLive.com",
       "news": [
         {
@@ -93,7 +338,14 @@
           "title": "Michigan football’s Andrew Marsh charged with indecent exposure",
           "publisher": "MLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3QI_vH4kP_rbqNxcb_hUVwsiFIlVCqkLXCDX3FrsdCH3iAyHocSdffmI6eis"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGXgewL0KIIYNRXGOx6xxLycX6t7Xsxc8whKmUeOkAk34yUITU4WysKw7Z8Kc"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/michigan-wr-andrew-marsh-charged-indecent-exposure/",
+          "title": "Michigan WR Andrew Marsh charged with misdemeanor indecent exposure",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4wp9DhhWrFE3i-cm8_mqSG-zfsS2HyUv3NslhA49GO3i_dZx3-_nCvMdXPiY"
         },
         {
           "url": "https://sports.yahoo.com/articles/michigan-football-star-charged-indecent-192458804.html",
@@ -101,258 +353,6 @@
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgJZXG44erlf-WjTkfUiTWaP2rMk74UE7PmKvr6740Rb1Jok5WKB_RaZIRWig"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7795654/2026/11/19/michigan-andrew-marsh-misdemeanor-indecent-exposure/",
-          "title": "Michigan WR Andrew Marsh charged with misdemeanor for indecent exposure",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8wuH9m1I2Gc5F5UwdOSl7hdg4Fqxx2fnlYYYSsoiSC_DFOLQ5oxVUIJDkumk"
-        }
-      ]
-    },
-    {
-      "query": "wes huff",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T19:30:00Z",
-      "related_news_urls": [
-        "https://www.baptistpress.com/resource-library/news/plagiarism-claims-mount-against-christian-apologist-wes-huff/",
-        "https://wng.org/sift/apologist-wesley-huff-reportedly-dropped-from-ph-d-over-plagiarism-1794838792",
-        "https://www.jubileecast.com/articles/41121/20261115/wes-huff-pledges-accountability-as-apologetics-canada-reviews-plagiarism-allegations.htm"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZyWSBt3_lWxyIbyFjHzREA8Sygx1R8Ifzq9DDRdrN3cgQHaWt6SMy0H6z2qg",
-      "image_credit": "Baptist Press",
-      "news": [
-        {
-          "url": "https://www.baptistpress.com/resource-library/news/plagiarism-claims-mount-against-christian-apologist-wes-huff/",
-          "title": "Plagiarism claims mount against Christian apologist Wes Huff",
-          "publisher": "Baptist Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZyWSBt3_lWxyIbyFjHzREA8Sygx1R8Ifzq9DDRdrN3cgQHaWt6SMy0H6z2qg"
-        },
-        {
-          "url": "https://wng.org/sift/apologist-wesley-huff-reportedly-dropped-from-ph-d-over-plagiarism-1794838792",
-          "title": "Apologist Wesley Huff says plagiarism concerns taken seriously",
-          "publisher": "WORLD News Group",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlvGJDyMkUxbxLTWNma5LdjSxDf8vt3zE3I5PPf1FPDn1LCKkCTIWjtKIz6Lw"
-        },
-        {
-          "url": "https://www.jubileecast.com/articles/41121/20261115/wes-huff-pledges-accountability-as-apologetics-canada-reviews-plagiarism-allegations.htm",
-          "title": "Wes Huff Pledges Accountability as Apologetics Canada Reviews Plagiarism Allegations",
-          "publisher": "JubileeCast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE2Q1V0j2eg_KAnLVPcsdVyWnr0FFVsVCYnI_HJufUxGcYXIWkGQnbkyXmKJ8"
-        }
-      ]
-    },
-    {
-      "query": "pammy maye",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T19:30:00Z",
-      "related_news_urls": [
-        "https://www.nbc4i.com/news/local-news/columbus/watch-pammy-maye-to-be-sentenced-in-death-of-5-year-old-darnell-taylor/",
-        "https://www.10tv.com/article/news/local/pammy-maye-sentenced-prison-murder-darnell-taylor/530-affbe132-176d-4740-b7ce-0401f630a2ca",
-        "https://www.dispatch.com/story/news/courts/2026/11/19/pammy-maye-prison-sentence-columbus-ohio/92849696007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_LDw_lDvQDtMHAPesVhKosrFNXCT30--qa83pdg3iAqvc8AOnIKgJs8i4YlM",
-      "image_credit": "NBC4 WCMH-TV",
-      "news": [
-        {
-          "url": "https://www.nbc4i.com/news/local-news/columbus/watch-pammy-maye-to-be-sentenced-in-death-of-5-year-old-darnell-taylor/",
-          "title": "Pammy Maye sentenced to at least 29 years in death of 5-year-old Darnell Taylor",
-          "publisher": "NBC4 WCMH-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_LDw_lDvQDtMHAPesVhKosrFNXCT30--qa83pdg3iAqvc8AOnIKgJs8i4YlM"
-        },
-        {
-          "url": "https://www.10tv.com/article/news/local/pammy-maye-sentenced-prison-murder-darnell-taylor/530-affbe132-176d-4740-b7ce-0401f630a2ca",
-          "title": "Pammy Maye sentenced for murder of 5-year-old Darnell Taylor",
-          "publisher": "10TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjx_xb8J6k2SNnF5R_Z1Fd7eKiXD8sJKfUPPN7nIeEJwDKZ2NRneVbbnT2Dg"
-        },
-        {
-          "url": "https://www.dispatch.com/story/news/courts/2026/11/19/pammy-maye-prison-sentence-columbus-ohio/92849696007/",
-          "title": "Pammy Maye called her defense lawyer the anti-Christ. A judge gave her life",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSH2m0a5aloOEWeJDwZVUaxAUoCQVE9EsOlFGNAqi_p4QT8KYpIPFd0U11bZb8"
-        }
-      ]
-    },
-    {
-      "query": "hunter moreno",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T19:20:00Z",
-      "related_news_urls": [
-        "https://people.com/brittany-snow-confirms-engagement-to-hunter-moreno-11847333",
-        "https://parade.com/news/brittany-snow-announces-engagement-a-year-after-proposal-reports",
-        "https://ew.com/brittany-snow-breaks-silence-hunter-moreno-engagement-12265308"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0EDU6F0Kt9SN0lzZTiWEcAZXSWpqHPEB9F1XrY29Y2oL9Hj85E9IFCMdPzb4",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/brittany-snow-confirms-engagement-to-hunter-moreno-11847333",
-          "title": "Brittany Snow Confirms Engagement to Hunter Moreno After a Year of Speculation",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0EDU6F0Kt9SN0lzZTiWEcAZXSWpqHPEB9F1XrY29Y2oL9Hj85E9IFCMdPzb4"
-        },
-        {
-          "url": "https://parade.com/news/brittany-snow-announces-engagement-a-year-after-proposal-reports",
-          "title": "Brittany Snow Announces Engagement, A Year After Proposal Reports",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDVZRUUO-dITkjge1tQ-DbVTseVfIMwZqY0VF6OnpThNXNsrBIhjTt5CrFspU"
-        },
-        {
-          "url": "https://ew.com/brittany-snow-breaks-silence-hunter-moreno-engagement-12265308",
-          "title": "Brittany Snow breaks silence on rumored engagement to Hunter Moreno",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSmANaEvdznOSThkriiJztZY_iLGqRq91fzNLKXAkeaO0nrMTbrmIcj-y-vFg"
-        }
-      ]
-    },
-    {
-      "query": "ncaa division i men's basketball",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-19T19:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50523371/mens-college-basketball-power-rankings",
-        "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/",
-        "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/mens-basketball-ap-poll-florida-holds-at-the-top-while-michigan-state-jumps-to-no-2-after-big-win-over-duke-180724316.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8P0PxIuexHPEYFWZoItIIth-81ThZAy9ACvRf3qompp5TKfmpHwNlenYtt1s",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50523371/mens-college-basketball-power-rankings",
-          "title": "Men's college basketball Power Rankings: Duke drops, Kansas is new No. 1",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8P0PxIuexHPEYFWZoItIIth-81ThZAy9ACvRf3qompp5TKfmpHwNlenYtt1s"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/",
-          "title": "AP Top 25: Michigan State rises to No. 2, LSU replaces Kentucky in college basketball rankings",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWv6OvUUjjVcJgdIIPMp2FCccTnSitOrE6prsQ47SdiRniCmpZRJgYk-ORjlA"
-        },
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/mens-basketball-ap-poll-florida-holds-at-the-top-while-michigan-state-jumps-to-no-2-after-big-win-over-duke-180724316.html",
-          "title": "Men's basketball AP poll: Florida holds at the top while Michigan State jumps to No. 2 after big win over Duke",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfB03heaPDcDoEcy3Z1xpe9tLXCHG4MK6NRl5ga72_OdC5V8ZpZQH0wJ2OAmI"
-        }
-      ]
-    },
-    {
-      "query": "arsenal vs ol lyonnes",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T19:10:00Z",
-      "related_news_urls": [
-        "https://www.olympique-et-lyonnais.com/ol-lyonnes-qualifie-en-quarts-de-finale-de-ligue-des-champions,413843.html",
-        "https://madeingones.ouest-france.fr/infos/article-arsenal-f-renee-slegers-se-mefie-du-jeu-ouvert-des-lyonnaises-546227.html",
-        "https://coeursdefoot.fr/event/uefa-women%E2%80%99s-champions-league-un-quatuor-arbitral-italien-pour-le-choc-entre-arsenal-et-l%E2%80%99ol-lyonnes/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqu5BwtQzAKScz_dgldZiiyY3POR3MJnN_9J0gzwhkFcxU8yweZ7juB7l8l_Y",
-      "image_credit": "Olympique & Lyonnais",
-      "news": [
-        {
-          "url": "https://www.olympique-et-lyonnais.com/ol-lyonnes-qualifie-en-quarts-de-finale-de-ligue-des-champions,413843.html",
-          "title": "OL Lyonnes qualifié en quarts de finale de Ligue des champions si…",
-          "publisher": "Olympique & Lyonnais",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqu5BwtQzAKScz_dgldZiiyY3POR3MJnN_9J0gzwhkFcxU8yweZ7juB7l8l_Y"
-        },
-        {
-          "url": "https://madeingones.ouest-france.fr/infos/article-arsenal-f-renee-slegers-se-mefie-du-jeu-ouvert-des-lyonnaises-546227.html",
-          "title": "Arsenal (F) - Renée Slegers se méfie du jeu ouvert des Lyonnaises",
-          "publisher": "MadeInGones",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmcYTT7bmIcva42i5srOwghj2Zdf8lzMfYib3_58Ic5-LCJAVcu4A5DDIBTHw"
-        },
-        {
-          "url": "https://coeursdefoot.fr/event/uefa-women%E2%80%99s-champions-league-un-quatuor-arbitral-italien-pour-le-choc-entre-arsenal-et-l%E2%80%99ol-lyonnes/",
-          "title": "UEFA Women’s Champions League : un quatuor arbitral italien pour le choc entre Arsenal et l’OL Lyonnes",
-          "publisher": "Coeurs de foot",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX4_zfVzLrULRCFbexciMqqY8RBfx42kdtbWUA0kLjMNQmvPlkalKrx__UUbE"
-        }
-      ]
-    },
-    {
-      "query": "cte",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T19:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/19/science/cte-blood-test-diagnosis.html",
-        "https://www.espn.com/nfl/story/_/id/50532686/studies-blood-test-potential-detect-cte-living",
-        "https://www.scientificamerican.com/article/a-watershed-moment-researchers-unveil-first-of-its-kind-blood-test-for-cte/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuI2yfLfTdzFeAQpJbu12hIdndZSIxnIakjpfqa6sLFfo8gii1vrmFBVqys8g",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/19/science/cte-blood-test-diagnosis.html",
-          "title": "Scientists Discover a Possible Marker in the Blood of C.T.E. Patients",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuI2yfLfTdzFeAQpJbu12hIdndZSIxnIakjpfqa6sLFfo8gii1vrmFBVqys8g"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50532686/studies-blood-test-potential-detect-cte-living",
-          "title": "Studies: Blood test has potential to detect CTE in the living",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqhsGonl3dlnXqiWamB-8G4ENIw084_EkmHhKb7k-xMP9AN_hnh98RGFj3NpM"
-        },
-        {
-          "url": "https://www.scientificamerican.com/article/a-watershed-moment-researchers-unveil-first-of-its-kind-blood-test-for-cte/",
-          "title": "‘A watershed moment’: Researchers unveil first-of-its-kind blood test for CTE",
-          "publisher": "Scientific American",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgqVHwQxsLFYlrM8SDFq-ovED64ejWxtI2kqds80UuvJJOBjfKwKaOyPFZQ48"
-        }
-      ]
-    },
-    {
-      "query": "jpmorgan chase & co",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-19T18:40:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
-        "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705",
-        "https://www.washingtonpost.com/nation/2026/11/19/cyberattack-may-have-exposed-chase-bank-mastercard-customer-data/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGgc_4Dp78ZNvvrqX83P3XcY67R3s2aEMeaH4HYb_xaY_A2RIy6DRwGV4WQ3U",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
-          "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGgc_4Dp78ZNvvrqX83P3XcY67R3s2aEMeaH4HYb_xaY_A2RIy6DRwGV4WQ3U"
-        },
-        {
-          "url": "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705",
-          "title": "JPMorganChase reports cyberattack on third-party service providers",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRELDP9seVz-BgEcGkl-RRf8a2She16bZT_3_EqT3sPXvxVqh12OFqyei3Y5FY"
-        },
-        {
-          "url": "https://www.washingtonpost.com/nation/2026/11/19/cyberattack-may-have-exposed-chase-bank-mastercard-customer-data/",
-          "title": "Cyberattack may have exposed Chase Bank and Mastercard customer data",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZgTBfvAiYFfPVBxIHrWBIC0KmNxJBNH0fnCiBz1Yonrx_8iP6XDkqg56Tpr8"
         }
       ]
     }
