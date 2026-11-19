@@ -3,12 +3,284 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T11:31:09.776552Z",
+  "checked_at": "2026-11-19T12:01:34.337481Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "patrick petty",
+      "query": "charlotte sweeney ice colorado ruling",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T11:40:00Z",
+      "related_news_urls": [
+        "https://www.mprnews.org/story/2026/11/18/colorado-judge-finds-ice-in-contempt-for-instant-rearrests-borrowed-from-minnesota-agents",
+        "https://www.reuters.com/legal/government/us-judge-says-ice-made-mockery-court-orders-colorado-2026-11-19/",
+        "https://www.newsweek.com/judge-ice-officials-mockery-court-order-contempt-arrested-migrant-release-12738687"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVXRw4747T5ROTspuIX0_vbdBnbRx6vrw3f4BhMk2mRaQ2MqzcQGK2klAEQyk",
+      "image_credit": "MPR News",
+      "news": [
+        {
+          "url": "https://www.mprnews.org/story/2026/11/18/colorado-judge-finds-ice-in-contempt-for-instant-rearrests-borrowed-from-minnesota-agents",
+          "title": "Colorado judge finds ICE in contempt for instant re-arrests borrowed from Minnesota agents",
+          "publisher": "MPR News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVXRw4747T5ROTspuIX0_vbdBnbRx6vrw3f4BhMk2mRaQ2MqzcQGK2klAEQyk"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/us-judge-says-ice-made-mockery-court-orders-colorado-2026-11-19/",
+          "title": "US judge says ICE 'made a mockery of court orders' in Colorado",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCtpBaVgY6JxmxxVxHwvAO2-ZLzPV_z1_8v_IwCkJ0dmkKJZadIECp_wiV5BU"
+        },
+        {
+          "url": "https://www.newsweek.com/judge-ice-officials-mockery-court-order-contempt-arrested-migrant-release-12738687",
+          "title": "Judge blasts ICE over “ridiculous\" justification for migrant arrest",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGYzRXi3jZh4oVhnKZ16zs2Sjs7xJQyLZ2kzUwS9nmOpLP7khlvt518B1-x_c"
+        }
+      ]
+    },
+    {
+      "query": "caleb williams hamstring recovery details",
       "approx_searches": "100+",
+      "published_at": "2026-11-19T11:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50515291/bears-caleb-williams-moved-4-interception-game-frustration-lingers",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/caleb-williams-remains-frustrated-with-four-interception-game",
+        "https://chicago.suntimes.com/bears/2026/11/17/bears-qb-caleb-williams-ive-moved-on-from-4-interception-debacle-ready-for-home-stretch-of-playoff-race"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR34y6sfP_wTDuNVdozcB_0IIDSTvCmLnUAygPnpBbGgt77N1NErk0RNJC39yQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50515291/bears-caleb-williams-moved-4-interception-game-frustration-lingers",
+          "title": "Bears QB Caleb Williams has moved on from 4-INT game, but frustration lingers",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR34y6sfP_wTDuNVdozcB_0IIDSTvCmLnUAygPnpBbGgt77N1NErk0RNJC39yQ"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/caleb-williams-remains-frustrated-with-four-interception-game",
+          "title": "Caleb Williams remains frustrated with four interception game",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFnQ8GBn18iaaRdRXrhlXm-G-uu5ME3ysi0LJYigX32gLUhDS5peYxSV9-2tU"
+        },
+        {
+          "url": "https://chicago.suntimes.com/bears/2026/11/17/bears-qb-caleb-williams-ive-moved-on-from-4-interception-debacle-ready-for-home-stretch-of-playoff-race",
+          "title": "Bears QB Caleb Williams: 'I’ve moved on' from 4-interception debacle, ready for home stretch of playoff race",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfUKMbpK1VDmj3fewLLxcEu8KxTajD6jInFZK0RRbGTCNpW1RNDzZ0PZPqBss"
+        }
+      ]
+    },
+    {
+      "query": "elon musk",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T11:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/live/2026/11/18/business/dealbook-summit-news",
+        "https://abcnews.com/Politics/musk-regrets-500-million-midterm-elections-spending-hes/story?id=138270985",
+        "https://www.bbc.com/news/articles/cm9q8j2z3gg8o"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIF9AH-Q5-Azv96r6LmwNtQ9y5KaZ8Hy8sjbJUovRYMWe861ksuv_E-9nTe8",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/live/2026/11/18/business/dealbook-summit-news",
+          "title": "DealBook Summit: Elon Musk Paints Himself as Political Moderate, Says He Is ‘Not MAGA’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuIF9AH-Q5-Azv96r6LmwNtQ9y5KaZ8Hy8sjbJUovRYMWe861ksuv_E-9nTe8"
+        },
+        {
+          "url": "https://abcnews.com/Politics/musk-regrets-500-million-midterm-elections-spending-hes/story?id=138270985",
+          "title": "Musk regrets nearly $500 million midterm elections spending, says he’s not MAGA",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScKoHmZzgmx_9gobxkGiQR16cgAeXyseLhkZg_NrxFmRl2uCtG3C5QlpUOTBs"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cm9q8j2z3gg8o",
+          "title": "Elon Musk says record $446m spending on US midterms was 'pretty foolish'",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF6v8TP19irII3xfuqE984W6DNo2XpwUCoTJhRfqrWmFb7gzV-uLg3ZZWLLdU"
+        }
+      ]
+    },
+    {
+      "query": "scott spivey",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T11:30:00Z",
+      "related_news_urls": [
+        "https://www.wmbfnews.com/2026/11/18/attorney-says-boyd-williams-indicted-murder-charges-scott-spiveys-death/",
+        "https://wpde.com/news/local/scott-spivey-weldon-boyd-kenneth-williams-road-rage-shooting-death-indicted-grand-jury-murder-indictment-november-2026",
+        "https://www.wbtw.com/news/grand-strand/horry-county/grand-jury-indicts-weldon-boyd-kenneth-williams-on-murder-charges-in-scott-spivey-killing/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-1XIWzw6VBcC9qGb0wYNvnAtSu0O4o7OFxkR85hF9EzssmK6BSmzRyy-FT8c",
+      "image_credit": "WMBF",
+      "news": [
+        {
+          "url": "https://www.wmbfnews.com/2026/11/18/attorney-says-boyd-williams-indicted-murder-charges-scott-spiveys-death/",
+          "title": "Boyd, Williams indicted on murder charges in Scott Spivey’s death",
+          "publisher": "WMBF",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-1XIWzw6VBcC9qGb0wYNvnAtSu0O4o7OFxkR85hF9EzssmK6BSmzRyy-FT8c"
+        },
+        {
+          "url": "https://wpde.com/news/local/scott-spivey-weldon-boyd-kenneth-williams-road-rage-shooting-death-indicted-grand-jury-murder-indictment-november-2026",
+          "title": "2 accused in death of Scott Spivey indicted by grand jury",
+          "publisher": "WPDE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREUDTNffV2muOuHCcmnRMXU3-ofJPYU9Y-5oOwhiJ-chFMkR_zuqI4ALeYs4c"
+        },
+        {
+          "url": "https://www.wbtw.com/news/grand-strand/horry-county/grand-jury-indicts-weldon-boyd-kenneth-williams-on-murder-charges-in-scott-spivey-killing/",
+          "title": "Grand jury indicts Weldon Boyd, Kenneth Williams on murder charges in Scott Spivey killing",
+          "publisher": "WBTW",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR604zLu2vT78lGU9sw-WrC4LXt7L0hAw6IvAFJHtMX-RxyFNR3PbiRorGxdY"
+        }
+      ]
+    },
+    {
+      "query": "ncaa division i women's volleyball tournament",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T11:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-sports/story/_/id/50513460/2026-ncaa-womens-volleyball-bracketology-top-seedings",
+        "https://www.ncaa.com/news/volleyball-women/article/2026-11-09/2026-diii-womens-volleyball-championship-bracket-schedule-scores",
+        "https://fsubroncos.com/news/2026/11/17/broncos-set-for-ncaa-atlantic-region-first-round-showdown-with-shepherd.aspx"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDVob_MwVJ8SZyuqdG1kDDSAuyRYH7xd1gGI2lkv_IufgUwjo41wZeA9WgRqY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-sports/story/_/id/50513460/2026-ncaa-womens-volleyball-bracketology-top-seedings",
+          "title": "Women's college volleyball Bracketology: 2026 NCAA tournament predictions",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDVob_MwVJ8SZyuqdG1kDDSAuyRYH7xd1gGI2lkv_IufgUwjo41wZeA9WgRqY"
+        },
+        {
+          "url": "https://www.ncaa.com/news/volleyball-women/article/2026-11-09/2026-diii-womens-volleyball-championship-bracket-schedule-scores",
+          "title": "2026 DIII women's volleyball championship: Bracket, schedule, scores",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsCclU8zFe1VDnCCuo3oIBllU1hVAdx7HjHMIPV0mOydXxTEnSVaYfZ1zNIvY"
+        },
+        {
+          "url": "https://fsubroncos.com/news/2026/11/17/broncos-set-for-ncaa-atlantic-region-first-round-showdown-with-shepherd.aspx",
+          "title": "Broncos Set for NCAA Atlantic Region First Round Showdown with Shepherd",
+          "publisher": "Fayetteville State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5osa1f7gYhFbBS2d553Vz3xQW88uiV2IX1Gcg6sDJ0eDI5_EpmkUcej-m9TQ"
+        }
+      ]
+    },
+    {
+      "query": "bitcoin price today",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T11:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/crypto/articles/whats-behind-bitcoins-drop-cz-185946117.html",
+        "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-slide-reopens-an-old-feud-between-crypto-s-most-powerful-founders",
+        "https://coinpedia.org/news/crypto-market-crash-changpeng-zhao-reveals-5-possible-reasons-behind-the-sell-off/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/crypto/articles/whats-behind-bitcoins-drop-cz-185946117.html",
+          "title": "What's Behind Bitcoin's Drop? CZ Points to 6 Possible Reasons",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8"
+        },
+        {
+          "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-slide-reopens-an-old-feud-between-crypto-s-most-powerful-founders",
+          "title": "Bitcoin’s slide reopens an old feud between crypto’s most powerful founders",
+          "publisher": "CoinDesk",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdNljIhAVmeY4H6x-S5jTsxPF8CpY_ibsgaC-IlGDNoOIzEeQv8z7xMZFaDMs"
+        },
+        {
+          "url": "https://coinpedia.org/news/crypto-market-crash-changpeng-zhao-reveals-5-possible-reasons-behind-the-sell-off/",
+          "title": "Crypto Market Crash: Changpeng Zhao Reveals 5 Possible Reasons Behind the Sell-Off",
+          "publisher": "Coinpedia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHRLbths68jpXs-ItUchtqR792tGe379GN26AKvlwckE8QwV_hiOZda_-ZrE0"
+        }
+      ]
+    },
+    {
+      "query": "burt reynolds",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T11:20:00Z",
+      "related_news_urls": [
+        "https://faroutmagazine.co.uk/burt-reynolds-turned-down-iconic-role-28-years-later-still-had-no-idea-why/",
+        "https://geekvibesnation.com/toy-robot-video-december-releases/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCl4H_SkDge3qfleXP7gvWX-e_bAbAYpi5hOxuPnO-iHUqvJLc32dsbzgaC9s",
+      "image_credit": "Far Out Magazine",
+      "news": [
+        {
+          "url": "https://faroutmagazine.co.uk/burt-reynolds-turned-down-iconic-role-28-years-later-still-had-no-idea-why/",
+          "title": "In 1987, Burt Reynolds turned down one of cinema’s most iconic roles. 28 years later, he still had no idea why he did it",
+          "publisher": "Far Out Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCl4H_SkDge3qfleXP7gvWX-e_bAbAYpi5hOxuPnO-iHUqvJLc32dsbzgaC9s"
+        },
+        {
+          "url": "https://geekvibesnation.com/toy-robot-video-december-releases/",
+          "title": "Toy Robot Video’s December Slate Includes Works From Wesley Snipes, Burt Reynolds & More",
+          "publisher": "Geek Vibes Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUAXjVf_25cLosJv7y66bHfcSmlgi4hwAJ1sUvhLxp4J-V6xXU4lsdJvh_Bts"
+        }
+      ]
+    },
+    {
+      "query": "ao3 down",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T11:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/15/arts/ao3-fan-fiction-site.html",
+        "https://apnews.com/article/ao3-fandom-archive-transformative-9e752c2cf91409434fcde7188140d066",
+        "https://commonwealthtimes.org/2026/11/18/we-need-to-begin-mourning-ao3/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRahRErxXasZZOpbs03Xrzh0ige9aLuDPzQq7hB98cqOjdScpkom7ZrvuvbDEI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/15/arts/ao3-fan-fiction-site.html",
+          "title": "Fan Fiction Site AO3 Returns, and So Do Its Readers, in Droves",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRahRErxXasZZOpbs03Xrzh0ige9aLuDPzQq7hB98cqOjdScpkom7ZrvuvbDEI"
+        },
+        {
+          "url": "https://apnews.com/article/ao3-fandom-archive-transformative-9e752c2cf91409434fcde7188140d066",
+          "title": "Fans cheer as popular online platform for spinoff stories nears full return after security incident",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTORac7mzRIdqBsBN3obZd7vQcpyZok-CzY-F7eCNjI_NDGkJFmoq1Zutt70Kk"
+        },
+        {
+          "url": "https://commonwealthtimes.org/2026/11/18/we-need-to-begin-mourning-ao3/",
+          "title": "We need to begin mourning AO3",
+          "publisher": "The Commonwealth Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7v1MxyujN8JkbG4N3_atZwpNIp3JCqRZqincCpHBDg9iGEjtEA63eFHgEvcw"
+        }
+      ]
+    },
+    {
+      "query": "patrick petty",
+      "approx_searches": "200+",
       "published_at": "2026-11-19T11:10:00Z",
       "related_news_urls": [
         "https://www.masslive.com/boston/2026/11/family-speaks-out-about-boston-fashion-icon-who-styled-new-kids-on-the-block-dead-at-62.html",
@@ -42,317 +314,37 @@
       ]
     },
     {
-      "query": "the further mis-adventures of cliff booth",
+      "query": "lego black friday",
       "approx_searches": "100+",
-      "published_at": "2026-11-19T11:00:00Z",
+      "published_at": "2026-11-19T11:10:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
-        "https://www.netflix.com/tudum/features/elizabeth-debicki-cliff-booth-cover-story",
-        "https://people.com/brad-pitt-and-ines-de-ramon-hold-hands-enjoy-date-night-the-further-mis-adventures-of-cliff-booth-premiere-12260007"
+        "https://www.cnn.com/cnn-underscored/deals/black-friday-lego-deals-2026-11-14",
+        "https://stonewars.com/black-friday/",
+        "https://nerdist.com/article/the-best-lego-holiday-gift-guide-2026/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY",
-      "image_credit": "Variety",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3SaMYwp6vBMCoH_gnBLfIpsStUdkbrJglDJAFzP89kN_NGSF0uhsNAGGqz_k",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
-          "title": "‘Cliff Booth’ First Reactions: Brad Pitt’s Sequel Is an ‘Absolute Triumph’ and a ‘Wildly Entertaining’ ‘Love Letter’ to Hollywood",
-          "publisher": "Variety",
+          "url": "https://www.cnn.com/cnn-underscored/deals/black-friday-lego-deals-2026-11-14",
+          "title": "Early Lego Black Friday deals take up to 44% off Star Wars sets, flowers and more | CNN Underscored",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3SaMYwp6vBMCoH_gnBLfIpsStUdkbrJglDJAFzP89kN_NGSF0uhsNAGGqz_k"
         },
         {
-          "url": "https://www.netflix.com/tudum/features/elizabeth-debicki-cliff-booth-cover-story",
-          "title": "Elizabeth Debicki Lights Up THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-          "publisher": "Netflix",
+          "url": "https://stonewars.com/black-friday/",
+          "title": "LEGO Black Friday 2026: Overview of the Promotions and Deals",
+          "publisher": "StoneWars.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4M9y12dNTbu18wGze_bqHM0_VsJ8SdkP9ICdT8LEE-ZDalgggWhun8A1isiQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqU0A9mFQhLS_AipV83tQoaUjAKRavgo7Q_vGsWyBAQwpB9ETk9j9821Lyhns"
         },
         {
-          "url": "https://people.com/brad-pitt-and-ines-de-ramon-hold-hands-enjoy-date-night-the-further-mis-adventures-of-cliff-booth-premiere-12260007",
-          "title": "Brad Pitt and Ines de Ramon Attend ‘The Further Mis-Adventures of Cliff Booth’ Premiere",
-          "publisher": "People.com",
+          "url": "https://nerdist.com/article/the-best-lego-holiday-gift-guide-2026/",
+          "title": "The Ultimate LEGO® Black Friday & Cyber Monday Gift Guide",
+          "publisher": "Nerdist",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJpsXsch_VJ30ul0Vq-uR3F7c68nF95A6RdljmLj_Rn0jMWIls3E-ljz_HAqE"
-        }
-      ]
-    },
-    {
-      "query": "bowling",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T11:00:00Z",
-      "related_news_urls": [
-        "https://www.thetelegramnews.com/articles/jackson-bowling-looking-to-keep-the-ball-rolling-in-10th-season/",
-        "https://www.thestar.com.my/sport/bowling/2026/11/19/teamwork-makes-the-dream-work-for-timmy-and-co",
-        "https://bowlinglife.eu/asian-tenpin-bowling-championships-2026-trios-results"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStGAQm4sX5mVusoUVjGzXV2mUbV3yBQVaboi3zpuh7bHBW0fL78amxXPlLGEk",
-      "image_credit": "The Telegram News",
-      "news": [
-        {
-          "url": "https://www.thetelegramnews.com/articles/jackson-bowling-looking-to-keep-the-ball-rolling-in-10th-season/",
-          "title": "Jackson Bowling looking to keep the ball rolling in 10th season",
-          "publisher": "The Telegram News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStGAQm4sX5mVusoUVjGzXV2mUbV3yBQVaboi3zpuh7bHBW0fL78amxXPlLGEk"
-        },
-        {
-          "url": "https://www.thestar.com.my/sport/bowling/2026/11/19/teamwork-makes-the-dream-work-for-timmy-and-co",
-          "title": "Bowling: Teamwork makes the dream work for Timmy and Co",
-          "publisher": "The Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgkvV-whuCl3Kmk2r5fT-TvrptYzNDFhEc6RNE35Fg73SYzosoItxJGEhWWg0"
-        },
-        {
-          "url": "https://bowlinglife.eu/asian-tenpin-bowling-championships-2026-trios-results",
-          "title": "Malaysia and Korea Win Trios Gold at the 2026 Asian Championships",
-          "publisher": "BowlingLife",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_FW-XFa_bzHRX7WMkiEx4DQ343EGolC5rjHobiMGn5l-lcZXlqKEUkRXyPhg"
-        }
-      ]
-    },
-    {
-      "query": "brooks nader",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T10:40:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/16/style/brooks-nader-tennis-bracelet-is-21-on-amazon-but-looks-like-diamonds/",
-        "https://pagesix.com/2026/11/16/style/brooks-nader-swears-by-clarins-double-serum-for-a-healthy-glow/",
-        "https://www.foxnews.com/entertainment/brooks-nader-turns-heads-sheer-dress-cfda-fashion-awards-ahead-baywatch-reboot"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxMBaJAqJg43bK25Kaw3uOsy_31npzDKR0eEnv0epkLEhsqCSGMpP3tI2-TM",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/16/style/brooks-nader-tennis-bracelet-is-21-on-amazon-but-looks-like-diamonds/",
-          "title": "Brooks Nader’s tennis bracelet looks like real diamonds, but it’s $21 on Amazon",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxMBaJAqJg43bK25Kaw3uOsy_31npzDKR0eEnv0epkLEhsqCSGMpP3tI2-TM"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/16/style/brooks-nader-swears-by-clarins-double-serum-for-a-healthy-glow/",
-          "title": "Brooks Nader says this ‘two-in-one’ skin care superhero gets her face ‘snatched’ in seconds",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNMVs0AHu3WDcQ7YMEIv9G87SJqZja0TAW-OM4LOM5HAO-5roebpFHVK_e7J0"
-        },
-        {
-          "url": "https://www.foxnews.com/entertainment/brooks-nader-turns-heads-sheer-dress-cfda-fashion-awards-ahead-baywatch-reboot",
-          "title": "Brooks Nader turns heads in sheer dress at CFDA Fashion Awards",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgDzedlRwsurgWDlzEWWyNsCZm25JV9tBh41_FTCKTHtvswzjKpW483vUOJ5E"
-        }
-      ]
-    },
-    {
-      "query": "braden smith",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T10:30:00Z",
-      "related_news_urls": [
-        "https://www.indystar.com/story/sports/nba/pacers/2026/11/18/braden-smith-pacers-rookie-helped-off-court-vs-rockets/92854026007/",
-        "https://pacers.com/news/fearless-braden-smith-continues-show-he-belongs-in-nba",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/braden-smith-had-8-5-3-before-leaving-with-injury"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0K0VrCxwjyPJxqvwAiTnjEZV4TI_h1e5_sDNm_pJio39Z1RPnO7We5fN04Kc",
-      "image_credit": "IndyStar",
-      "news": [
-        {
-          "url": "https://www.indystar.com/story/sports/nba/pacers/2026/11/18/braden-smith-pacers-rookie-helped-off-court-vs-rockets/92854026007/",
-          "title": "Pacers rookie Braden Smith helped off court, to locker room vs. Rockets",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0K0VrCxwjyPJxqvwAiTnjEZV4TI_h1e5_sDNm_pJio39Z1RPnO7We5fN04Kc"
-        },
-        {
-          "url": "https://pacers.com/news/fearless-braden-smith-continues-show-he-belongs-in-nba",
-          "title": "\"Fearless\" Braden Smith Continues to Show He Belongs in NBA",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltD0fO9UDUCVwzt1ifsaYS7M6vqHamn6u7D5YlA3hdqYfBm3URDOxlCTKDGY"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/braden-smith-had-8-5-3-before-leaving-with-injury",
-          "title": "Braden Smith had 8/5/3 before leaving with injury",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuYz_AFRsP7AqlsXQ02q8v328MZEyYMwxG4sTynSLjt2_Wyek0bViQeuRBt9s"
-        }
-      ]
-    },
-    {
-      "query": "weather near me",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T10:30:00Z",
-      "related_news_urls": [
-        "https://www.abc10.com/article/weather/weather-impact/risk-of-tornadoes-for-the-valley-as-a-major-storm-rolls-through-northern-california/103-73a32110-5aac-4449-92f6-5446337cb8df",
-        "https://www.sacbee.com/news/weather-news/article318145913.html",
-        "https://stocktonia.org/news/weather/2026/11/18/possible-tornadoes-damaging-winds-forecast-for-san-joaquin-valley-on-thursday/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgoadxM3nOOPKOsCS1-eeVki7V9-5nDVHS0p-X1u0T0oG3rXd1ZiXM2Ak4s1c",
-      "image_credit": "ABC10",
-      "news": [
-        {
-          "url": "https://www.abc10.com/article/weather/weather-impact/risk-of-tornadoes-for-the-valley-as-a-major-storm-rolls-through-northern-california/103-73a32110-5aac-4449-92f6-5446337cb8df",
-          "title": "Risk of tornadoes for the valley as a major storm rolls through Northern California",
-          "publisher": "ABC10",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgoadxM3nOOPKOsCS1-eeVki7V9-5nDVHS0p-X1u0T0oG3rXd1ZiXM2Ak4s1c"
-        },
-        {
-          "url": "https://www.sacbee.com/news/weather-news/article318145913.html",
-          "title": "Atmospheric river continues Thursday in California, bringing small risk of tornadoes",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_5-rERfbzG2dUznvQt_Pq4F5o6DLCmWZ9cV95dGSVKOoPLTGP-085-e-IWfY"
-        },
-        {
-          "url": "https://stocktonia.org/news/weather/2026/11/18/possible-tornadoes-damaging-winds-forecast-for-san-joaquin-valley-on-thursday/",
-          "title": "Possible tornadoes, damaging winds forecast for San Joaquin Valley on Thursday",
-          "publisher": "Stocktonia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ43cN8Cpaki3EoWlYlArJkRxEWouUGMxCitmltVIpyzSV_cIOl-52sHG16P-g"
-        }
-      ]
-    },
-    {
-      "query": "tampa weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T10:20:00Z",
-      "related_news_urls": [
-        "https://www.fox13news.com/video/fmc-802b28sdnjncm2d7",
-        "https://hoodline.com/2026/11/rip-current-danger-as-tampa-basks-in-chilly-sunshine-before-heat-returns/",
-        "https://www.fox13news.com/video/fmc-4px7tq31m5g2z6t3"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb02TKK6k4GVbkW8UZ--NxE57aZKry8i-ZEolbrLL2N2PLsO5FPLfrG2fpMjM",
-      "image_credit": "FOX 13 Tampa Bay",
-      "news": [
-        {
-          "url": "https://www.fox13news.com/video/fmc-802b28sdnjncm2d7",
-          "title": "Tampa weather | Thursday morning forecast",
-          "publisher": "FOX 13 Tampa Bay",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb02TKK6k4GVbkW8UZ--NxE57aZKry8i-ZEolbrLL2N2PLsO5FPLfrG2fpMjM"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/rip-current-danger-as-tampa-basks-in-chilly-sunshine-before-heat-returns/",
-          "title": "Tampa Weather: Chilly Weekend Before 80-Degree Warmup",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrFkt7bVkJf4GNZ1_NFDzkeCICJRb_0djWc3dNF3rcV3gd4UzlJXNUv1Rp1lo"
-        },
-        {
-          "url": "https://www.fox13news.com/video/fmc-4px7tq31m5g2z6t3",
-          "title": "Tampa Weather | Thursday Evening Forecast",
-          "publisher": "FOX 13 Tampa Bay",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOREGGsLrgc3h7M2ayXj5VNr69rKpNsYM_0rmxHShSH8uAKNVePVRLAU1_lDU"
-        }
-      ]
-    },
-    {
-      "query": "sri lanka vs pakistan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T10:10:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/ball-by-ball-commentary",
-        "https://www.foxsports.com/articles/soccer/sri-lanka-reaches-1675-still-trails-pakistan-by-60-runs-in-2nd-cricket-test",
-        "https://www.cricbuzz.com/cricket-news/140960/ghori-razaullah-push-pakistan-to-commanding-position-in-rawalpindi-cricbuzzcom"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6j2tPIl0v5CpgZsURpNdrMApfYhr8D8aIVgyhZvbBjrUGkgbFzwS2JBaka3w",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - PAK vs SL, 2nd Test",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6j2tPIl0v5CpgZsURpNdrMApfYhr8D8aIVgyhZvbBjrUGkgbFzwS2JBaka3w"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/soccer/sri-lanka-reaches-1675-still-trails-pakistan-by-60-runs-in-2nd-cricket-test",
-          "title": "Sri Lanka reaches 167-5, still trails Pakistan by 60 runs in 2nd cricket test",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140960/ghori-razaullah-push-pakistan-to-commanding-position-in-rawalpindi-cricbuzzcom",
-          "title": "Ghori, Razaullah push Pakistan to commanding position in Rawalpindi",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKG38yEjzvUDps1gYFwAtuHrD3aBoarlAXko_sIO98vR_Y7ult9YEX4bZx7c8"
-        }
-      ]
-    },
-    {
-      "query": "sc lottery",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T10:10:00Z",
-      "related_news_urls": [
-        "https://www.foxcarolina.com/2026/11/17/2-million-upstate-lottery-winner-looks-help-others/",
-        "https://www.wspa.com/news/local-news/spartanburg-co-claims-2m-lottery-prize-plans-to-give-back/",
-        "https://www.wyff4.com/article/2-million-scratch-off-ticket-lottery-winner-south-carolina/74454285"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlFpFIysOLAo_HOLch288VVQ8ncRTujRRVsDvbj98dZDIB4ihNpz5z08HMF-g",
-      "image_credit": "FOX Carolina News",
-      "news": [
-        {
-          "url": "https://www.foxcarolina.com/2026/11/17/2-million-upstate-lottery-winner-looks-help-others/",
-          "title": "$2 million Upstate lottery winner looks to help others",
-          "publisher": "FOX Carolina News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlFpFIysOLAo_HOLch288VVQ8ncRTujRRVsDvbj98dZDIB4ihNpz5z08HMF-g"
-        },
-        {
-          "url": "https://www.wspa.com/news/local-news/spartanburg-co-claims-2m-lottery-prize-plans-to-give-back/",
-          "title": "Spartanburg Co. winner claims $2M lottery prize, plans to give back",
-          "publisher": "WSPA 7News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1LFEq5JdnmzQJsG4xYMChA__6SEcjHIzoOx4ZqAlGinw0jLp1O8_q3ASR0Cc"
-        },
-        {
-          "url": "https://www.wyff4.com/article/2-million-scratch-off-ticket-lottery-winner-south-carolina/74454285",
-          "title": "Lottery player in South Carolina wins $2 million on scratch-off ticket",
-          "publisher": "WYFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9Uchr74GqmwQJ0Zz0eZOlJdwI4UTqOkWRCd8N423iMweyD-3Deax5HstvvsM"
-        }
-      ]
-    },
-    {
-      "query": "mta",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T10:10:00Z",
-      "related_news_urls": [
-        "https://www.nydailynews.com/2026/11/18/mta-proposing-fare-increases-for-nyc-subways-and-buses-lirr-metro-north/",
-        "https://gothamist.com/news/mta-warns-of-major-budget-deficit-without-help-from-city-state-and-feds",
-        "https://nypost.com/2026/11/18/us-news/mta-plans-fare-hikes-despite-boasting-about-676m-in-savings/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgGIQvruOG8vbr8ry5vZbzKKwAfgs5moGA6MQUkF71S48KDO1ZaP1ofWdiJuE",
-      "image_credit": "New York Daily News",
-      "news": [
-        {
-          "url": "https://www.nydailynews.com/2026/11/18/mta-proposing-fare-increases-for-nyc-subways-and-buses-lirr-metro-north/",
-          "title": "MTA plans to increase fares for NYC subways and buses, LIRR, Metro-North",
-          "publisher": "New York Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgGIQvruOG8vbr8ry5vZbzKKwAfgs5moGA6MQUkF71S48KDO1ZaP1ofWdiJuE"
-        },
-        {
-          "url": "https://gothamist.com/news/mta-warns-of-major-budget-deficit-without-help-from-city-state-and-feds",
-          "title": "MTA warns of major budget deficit without help from city, state and feds",
-          "publisher": "Gothamist",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvrsR_79bhvvj6z-zA0hcjbdbIGlwIrhVgTxCrncHe9T6_DwtAoBQqwhOHAaQ"
-        },
-        {
-          "url": "https://nypost.com/2026/11/18/us-news/mta-plans-fare-hikes-despite-boasting-about-676m-in-savings/",
-          "title": "MTA plans fare hikes despite boasting about $676M in savings",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6CK7W2IBdQdb5rxOEYY8dKx-dRlo66V2Sa3huQRMRf1IYV6lHkMtmT3mxVUo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTm2nWj-K-8Q2cjcJsMsduqbz46jdVsAa5NxDQ5ltZTxnVHNAmunK6oe0KqcV8"
         }
       ]
     }
