@@ -40,3 +40,33 @@ test('homepage stays ad-friendly by linking locally only inside the acknowledged
  const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  assert.doesNotMatch(home,/xgroovy\.com/);
 });
+
+test('this-visit 21+ reveal and Close remove the external href without persisting state',async()=>{
+ const events=new Map();
+ const node=id=>({
+  hidden:false,textContent:'',href:undefined,
+  addEventListener(type,fn){events.set(id+':'+type,fn)},
+  removeAttribute(attr){if(attr==='href')delete this.href},
+  focus(){this.focused=true}
+ });
+ const nodes=Object.fromEntries(['adultVideoEnter','adultVideoClose','adultVideoContent','adultVideoOpen','adultVideoStatus'].map(id=>[id,node(id)]));
+ const oldDocument=globalThis.document;
+ globalThis.document={
+  getElementById(id){return id==='adultVideoCard'?{querySelector(selector){return nodes[selector.slice(1)]}}:null}
+ };
+ try{
+  await import('../adult-video-source.mjs?gate-contract-test=20261119');
+  assert.equal(nodes.adultVideoContent.hidden,true);
+  assert.equal('href' in nodes.adultVideoOpen,false);
+  events.get('adultVideoEnter:click')();
+  assert.equal(nodes.adultVideoContent.hidden,false);
+  assert.equal(nodes.adultVideoOpen.href,'https://xgroovy.com/gifs/205466/filled-my-mouth-with-cum/');
+  events.get('adultVideoClose:click')();
+  assert.equal(nodes.adultVideoContent.hidden,true);
+  assert.equal('href' in nodes.adultVideoOpen,false);
+  assert.equal(nodes.adultVideoEnter.focused,true);
+ }finally{
+  if(oldDocument===undefined)delete globalThis.document;
+  else globalThis.document=oldDocument;
+ }
+});
