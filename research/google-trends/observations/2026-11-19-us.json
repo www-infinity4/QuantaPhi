@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T01:31:28.879392Z",
+  "checked_at": "2026-11-19T02:01:23.729084Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "sammy kershaw",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-19T01:10:00Z",
-      "related_news_urls": [
-        "https://savingcountrymusic.com/the-cma-now-has-a-another-controversy-on-its-hands/",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/watch-sammy-kershaw-rodney-atkins-002023699.html",
-        "https://nypost.com/2026/11/15/entertainment/country-music-world-outraged-after-cma-awards-snub-legends-from-attending-red-carpet/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvvwvZctBJaKSM8BMjckeY5Mp9ap6nLy34-nVDdvxJMDXFYY9jUQ1pz2p_y3w",
-      "image_credit": "- Saving Country Music",
-      "news": [
-        {
-          "url": "https://savingcountrymusic.com/the-cma-now-has-a-another-controversy-on-its-hands/",
-          "title": "The CMA Now Has a Another Controversy On Its Hands",
-          "publisher": "- Saving Country Music",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvvwvZctBJaKSM8BMjckeY5Mp9ap6nLy34-nVDdvxJMDXFYY9jUQ1pz2p_y3w"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/watch-sammy-kershaw-rodney-atkins-002023699.html",
-          "title": "Watch: Sammy Kershaw and Rodney Atkins walk CMA Awards red carpet after controversy",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCybucYyfQxhFPeMr7J19YumPMq-Mw6gwfEy4P79q6E3NAo0-ThLgLv2qNYe4"
-        },
-        {
-          "url": "https://nypost.com/2026/11/15/entertainment/country-music-world-outraged-after-cma-awards-snub-legends-from-attending-red-carpet/",
-          "title": "Country music world outraged after CMA Awards snub legends from attending red carpet",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5wPUtc7IEO0i471hQvXFGXfn3iGEJe0puChJgM3tuVPJ161vUNKYl0egXUM"
-        }
-      ]
-    },
-    {
-      "query": "jessica chastain",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T01:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66107035/?ref_=nmnw_art_perm",
-        "https://www.hellomagazine.com/us/935130/jessica-chastain-transformation-jessica-rabbit/",
-        "https://foro3d.com/en/2026/noviembre/jessica-chastain-se-transforma-en-jessica-rabbit-para-flaunt.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj9vCIhCDj0Z4JILoIiLeXDvbcwiAAicVpCQU2bdfuBn6FTHCFVGKztHfYhX8",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66107035/?ref_=nmnw_art_perm",
-          "title": "Jessica Chastain: “Heartland”",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj9vCIhCDj0Z4JILoIiLeXDvbcwiAAicVpCQU2bdfuBn6FTHCFVGKztHfYhX8"
-        },
-        {
-          "url": "https://www.hellomagazine.com/us/935130/jessica-chastain-transformation-jessica-rabbit/",
-          "title": "Jessica Chastain transforms into Jessica Rabbit in sultry new photos",
-          "publisher": "HELLO!",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdbg5TDkeH5EBNeDnn6mCifQJmH7Q4BZgG1qFBIj_6tTlCW81dLuRxa0y8gw"
-        },
-        {
-          "url": "https://foro3d.com/en/2026/noviembre/jessica-chastain-se-transforma-en-jessica-rabbit-para-flaunt.html",
-          "title": "Jessica Chastain transforms into Jessica Rabbit for Flaunt",
-          "publisher": "Foro3D",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG8DsZwoLNycZ8Nu0DmoxGTw9qIfCxE5eW0ex1yKvTVjnHmEQIvATE3NmyKOA"
-        }
-      ]
-    },
-    {
-      "query": "heartland",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T01:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66117407/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/tv/articles/heartland-sneak-peek-amy-confronts-161728902.html",
-        "https://www.palatkadailynews.com/articles/sports/njcaa-division-ii-volleyball-tournament-sjrsc-gets-swept-by-heartland/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQVvDKj7kRB0U5UjjlELbuErscHA3402Dgj6f7j7n0VbCoOGcq1FBWP7Go0Y",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66117407/?ref_=nwc_art_perm",
-          "title": "‘Heartland’ Season 20 Premiere Sneak Peek: Amy Confronts New Rival After Nathan’s Proposal",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQVvDKj7kRB0U5UjjlELbuErscHA3402Dgj6f7j7n0VbCoOGcq1FBWP7Go0Y"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/heartland-sneak-peek-amy-confronts-161728902.html",
-          "title": "‘Heartland’ Sneak Peek: Amy Confronts New Rival After Nathan’s Proposal",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1edGQriASjt9muWwK8sMzVjfMpXlf13cIEdhj-i82LBI7pYfPBZtCGjDLgA"
-        },
-        {
-          "url": "https://www.palatkadailynews.com/articles/sports/njcaa-division-ii-volleyball-tournament-sjrsc-gets-swept-by-heartland/",
-          "title": "NJCAA Division II volleyball tournament: SJRSC gets swept by Heartland",
-          "publisher": "Palatka Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCr0OzT8uCZ5Dbi-lmcmeD2765TKjbPcvtjTyny971RSl9qZLM8ctdIMLBYbo"
-        }
-      ]
-    },
-    {
-      "query": "abc",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T01:10:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/abc-world-news-tonight-ratings-best-since-covid-1236952295/",
-        "https://www.detpress.com/abcnews/pressrelease/with-more-than-9-million-viewers-every-night-of-the-week-abc-world-news-tonight-with-david-muir-delivers-biggest-viewership-in-nearly-4-years-averaging-9-3-million-viewers/",
-        "https://www.imdb.com/it/news/ni66111322/?ref_=nmnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQe_YRvzDZNrNMwB-4omlikLnVdD8b0V3DfInXTRkfpEusXDV11_7C61c-r5gg",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/abc-world-news-tonight-ratings-best-since-covid-1236952295/",
-          "title": "As U.S. Infrastructure Crumbles, ABC’s ‘World News Tonight’ Posts Highest Week-Long Daily Ratings Since COVID",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQe_YRvzDZNrNMwB-4omlikLnVdD8b0V3DfInXTRkfpEusXDV11_7C61c-r5gg"
-        },
-        {
-          "url": "https://www.detpress.com/abcnews/pressrelease/with-more-than-9-million-viewers-every-night-of-the-week-abc-world-news-tonight-with-david-muir-delivers-biggest-viewership-in-nearly-4-years-averaging-9-3-million-viewers/",
-          "title": "WITH MORE THAN 9 MILLION VIEWERS EVERY NIGHT OF THE WEEK, ‘ABC WORLD NEWS TONIGHT WITH DAVID MUIR’ DELIVERS BIGGEST VIEWERSHIP IN NEARLY 4 YEARS, AVERAGING 9.3 MILLION VIEWERS — AN",
-          "publisher": "detpress.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_P_ggyCvpBEvbkXTIFvLHilUPGtK7J3aFnhY-870Yr0BqOn9qDNY_04rUHQ"
-        },
-        {
-          "url": "https://www.imdb.com/it/news/ni66111322/?ref_=nmnw_art_perm",
-          "title": "NBC, ABC & CBS Evening News Ratings Surge Amid Midterms’ Blue Wave",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPqJHVdsQJgxDAims_A_S0dENR3srD7eFN7q4GAKgOLFF-wAYPT6jKUu4dZg"
-        }
-      ]
-    },
-    {
-      "query": "devlin hodges",
+      "query": "kimberly williams-paisley",
       "approx_searches": "500+",
-      "published_at": "2026-11-19T01:10:00Z",
+      "published_at": "2026-11-19T01:40:00Z",
       "related_news_urls": [
-        "https://people.com/all-about-devlin-duck-hodges-lainey-wilson-husband-12260249",
-        "https://www.imdb.com/news/ni66118168/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/celebrity/articles/lainey-wilson-husband-devlin-duck-143639771.html"
+        "https://people.com/kimberly-williams-paisley-remembers-her-mom-10-years-after-her-death-12260192",
+        "https://drgnews.com/2026/11/17/kimberly-williams-paisley-honors-mom-10-years-after-her-death/",
+        "https://tasteofcountry.com/kimberly-williams-paisley-mom-tribute-10-years-death/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvU2cxqCrcYAm76ESrGGVt5jtdn1oc3UiTkejgDu27UaBJUu7PUA2MaPIrRg",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQACy-Kur1GrYhuRq0WxsC01JYk-VZ-x848G3qq5uAQIR_N1gdubvXRHiy0Kq4",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/all-about-devlin-duck-hodges-lainey-wilson-husband-12260249",
-          "title": "All About Lainey Wilson’s Husband, Former NFL Player Devlin ‘Duck’ Hodges",
+          "url": "https://people.com/kimberly-williams-paisley-remembers-her-mom-10-years-after-her-death-12260192",
+          "title": "Kimberly Williams-Paisley Remembers Her Mom 10 Years After Her Death",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvU2cxqCrcYAm76ESrGGVt5jtdn1oc3UiTkejgDu27UaBJUu7PUA2MaPIrRg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQACy-Kur1GrYhuRq0WxsC01JYk-VZ-x848G3qq5uAQIR_N1gdubvXRHiy0Kq4"
         },
         {
-          "url": "https://www.imdb.com/news/ni66118168/?ref_=nwc_art_perm",
-          "title": "Lainey Wilson Shares a Kiss with Husband Devlin ‘Duck’ Hodges on CMAs 2026 Red Carpet",
-          "publisher": "IMDb",
+          "url": "https://drgnews.com/2026/11/17/kimberly-williams-paisley-honors-mom-10-years-after-her-death/",
+          "title": "Kimberly Williams-Paisley Honors Mom 10 Years After Her Death",
+          "publisher": "DRGNews",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdQPd65PaJgW5HqBtEkRxWivma4I3mtzS0M-qa6oz9-9cyJdUZq-W_OUJBHb8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLsiks_vyY_fqtq7ecNaQCw0XzVoNJ4T39DBHAv6b4y2OVU6SCAMCFhIpJN8c"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/lainey-wilson-husband-devlin-duck-143639771.html",
-          "title": "All About Lainey Wilson’s Husband Devlin ‘Duck’ Hodges",
-          "publisher": "Yahoo",
+          "url": "https://tasteofcountry.com/kimberly-williams-paisley-mom-tribute-10-years-death/",
+          "title": "PHOTO: Kimberly Williams-Paisley Spots Special Signs From Late Mom 10 Years Later",
+          "publisher": "Taste of Country",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaFFggV_YCz1OJ9SWU7-hesUaHjh_w2Sek3zr3P3CzpHPcTkUS3W18ARYPVhs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMAnDn5SHEI51YfYXgf7Tb1Ff8HIqsEbXaawtlYGdXv-L52ivheubtd4NFsa4"
         }
       ]
     },
     {
-      "query": "kyle kuzma",
+      "query": "nebraska basketball",
       "approx_searches": "500+",
-      "published_at": "2026-11-19T01:10:00Z",
+      "published_at": "2026-11-19T01:40:00Z",
       "related_news_urls": [
-        "https://www.jns.org/news/israel-news/nbas-kyle-kuzma-discusses-support-for-israel-says-he-will-visit",
-        "https://www.algemeiner.com/2026/11/16/nba-player-kyle-kuzma-defends-solidarity-israel-slams-critics-their-lack-information/",
-        "https://sports.yahoo.com/articles/nfl-saquon-unfortunate-174152168.html"
+        "https://omaha.com/sports/huskers/mens-basketball/article_e4a4a242-5164-4b2e-aae0-dbdc0b46ec24.html",
+        "https://sports.yahoo.com/articles/nebraska-mbb-south-dakota-preview-003000290.html",
+        "https://www.sportsgambler.com/betting-tips/basketball/south-dakota-coyotes-vs-nebraska-cornhuskers-prediction-odds-2026-11-18/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyp7BzS0ivIunKEzxqiXWX4JIoyxrJjz19bnpI9wpG7irfVCwp_CamjTqUp18",
-      "image_credit": "JNS.org",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUNoZ7gn9XRSiRYuw64Its107hwHWHwWjtuAB7t6AWODv930ynvtjAYy3obU",
+      "image_credit": "Omaha World-Herald",
       "news": [
         {
-          "url": "https://www.jns.org/news/israel-news/nbas-kyle-kuzma-discusses-support-for-israel-says-he-will-visit",
-          "title": "NBA’s Kyle Kuzma discusses support for Israel, says he will visit",
-          "publisher": "JNS.org",
+          "url": "https://omaha.com/sports/huskers/mens-basketball/article_e4a4a242-5164-4b2e-aae0-dbdc0b46ec24.html",
+          "title": "How to watch Nebraska vs. South Dakota: Time, TV and streaming info",
+          "publisher": "Omaha World-Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyp7BzS0ivIunKEzxqiXWX4JIoyxrJjz19bnpI9wpG7irfVCwp_CamjTqUp18"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUNoZ7gn9XRSiRYuw64Its107hwHWHwWjtuAB7t6AWODv930ynvtjAYy3obU"
         },
         {
-          "url": "https://www.algemeiner.com/2026/11/16/nba-player-kyle-kuzma-defends-solidarity-israel-slams-critics-their-lack-information/",
-          "title": "NBA Player Kyle Kuzma Defends Solidarity With Israel, Slams Critics and Their ‘Lack of Information’",
-          "publisher": "Algemeiner.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUg4t-vJYVr76A4cfKOlOAA_jI35eOkpl6pe63ZtWlf7ckBZS03h8GgDGZoCk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/nfl-saquon-unfortunate-174152168.html",
-          "title": "“For the NFL to say that about Saquon, so unfortunate, …",
+          "url": "https://sports.yahoo.com/articles/nebraska-mbb-south-dakota-preview-003000290.html",
+          "title": "Nebraska MBB: South Dakota Preview and Live Discussion",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrBPz3G_r6iTkOav0JACaCRo_mOPbequkb2WFQIR55XzCV_BXeBrAsieY_guQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSM9r86rymeKPUNOXzwcr32L8t-9SLqJqIWElMOrF69_CqODs0NnDhR94pwZQg"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/south-dakota-coyotes-vs-nebraska-cornhuskers-prediction-odds-2026-11-18/",
+          "title": "South Dakota vs Nebraska Prediction, Picks & Odds | 18 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
         }
       ]
     },
     {
-      "query": "miles sadler",
+      "query": "rj godfrey",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T01:40:00Z",
+      "related_news_urls": [
+        "https://www.azdesertswarm.com/basketball/85843/arizona-wildcats-mens-basketball-rj-godfrey-ncaa-eligibility-update-court-order-2026",
+        "https://www.espn.com/mens-college-basketball/story/_/id/50513120/arizona-rj-godfrey-declared-eligible-play-vs-uconn",
+        "https://www.cbssports.com/college-basketball/news/rj-godfrey-eligibilty-granted-injunction-arizona-basketball/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb9kDW4QgzpObgZ8A9kj5qrCWeQuQGAz-xqMJhTzGSodT4KcMlIJzDLa5q_xQ",
+      "image_credit": "Arizona Desert Swarm",
+      "news": [
+        {
+          "url": "https://www.azdesertswarm.com/basketball/85843/arizona-wildcats-mens-basketball-rj-godfrey-ncaa-eligibility-update-court-order-2026",
+          "title": "NCAA declines to certify RJ Godfrey’s eligibility despite court order",
+          "publisher": "Arizona Desert Swarm",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb9kDW4QgzpObgZ8A9kj5qrCWeQuQGAz-xqMJhTzGSodT4KcMlIJzDLa5q_xQ"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50513120/arizona-rj-godfrey-declared-eligible-play-vs-uconn",
+          "title": "Judge rules in favor of Arizona hoop star RJ Godfrey in 5th-year eligibility case",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRclP23KP7Mg73H2ubRYzYJgO2V8wYatdOvFlq2lJbTi5fMS11-Z8SsvOYl_2I"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/rj-godfrey-eligibilty-granted-injunction-arizona-basketball/",
+          "title": "RJ Godfrey granted injunction to play for Arizona: Why the Wildcats' biggest weakness is now solved",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfR7oNZ0favAYDUZLDpQQs-Ia8XkyIXjM0c3-lNV9U380iFnzTjbeHijBBnhM"
+        }
+      ]
+    },
+    {
+      "query": "celtics vs nuggets",
       "approx_searches": "5000+",
-      "published_at": "2026-11-19T01:10:00Z",
+      "published_at": "2026-11-19T01:30:00Z",
       "related_news_urls": [
-        "https://wvusports.com/news/2026/11/18/mens-basketball-mountaineers-down-auburn-in-players-era-8-tournament-in-las-vegas",
-        "https://www.al.com/auburnbasketball/2026/11/the-moment-auburns-18-point-comeback-fell-apart-and-why-steven-pearl-is-taking-the-blame.html",
-        "https://www.si.com/college/westvirginia/basketball/stock-up-stock-down-center-duo-big-game-sadler-defense"
+        "https://www.bostonglobe.com/2026/11/18/sports/celtics-nuggets-preview-november-18-2026/",
+        "https://sports.yahoo.com/articles/boston-celtics-11-3-denver-233000245.html",
+        "https://www.celticsblog.com/boston-celtics-news/150441/celtics-injury-report-denver-nuggets-neemias-queta"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGp2nP5qKlg-fo8hQT_m63O4ycVoxTKJ_YIfy1cm-iRsnVWx98OlEa8vpT1k4",
-      "image_credit": "West Virginia University Athletics",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkBBLJvGqa-uWMt5-d494gTkMjfkf34fdDbmewNpY_StOJshmVd0_jWL9TNuU",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://wvusports.com/news/2026/11/18/mens-basketball-mountaineers-down-auburn-in-players-era-8-tournament-in-las-vegas",
-          "title": "Mountaineers Down Auburn in Players Era 8 Tournament in Las Vegas",
-          "publisher": "West Virginia University Athletics",
+          "url": "https://www.bostonglobe.com/2026/11/18/sports/celtics-nuggets-preview-november-18-2026/",
+          "title": "Celtics at Nuggets preview: Boston kicks off four-game road trip",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGp2nP5qKlg-fo8hQT_m63O4ycVoxTKJ_YIfy1cm-iRsnVWx98OlEa8vpT1k4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkBBLJvGqa-uWMt5-d494gTkMjfkf34fdDbmewNpY_StOJshmVd0_jWL9TNuU"
         },
         {
-          "url": "https://www.al.com/auburnbasketball/2026/11/the-moment-auburns-18-point-comeback-fell-apart-and-why-steven-pearl-is-taking-the-blame.html",
-          "title": "The moment Auburn’s 18-point comeback fell apart, and why Steven Pearl is taking the blame",
-          "publisher": "AL.com",
+          "url": "https://sports.yahoo.com/articles/boston-celtics-11-3-denver-233000245.html",
+          "title": "Boston Celtics (11-3) at Denver Nuggets (7-5) Game #15 11/18/26",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYb_GWDF4zh4g0HbiCQPsulKEKTv6Sg1z-3TxWCpKStlZcp65RWCCI_l7gan8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgHt6ktzGhiOcIj4NpH3z_bKb6cmQy7_8MClEby-U6o7xaooqdhMnbXn2P9w"
         },
         {
-          "url": "https://www.si.com/college/westvirginia/basketball/stock-up-stock-down-center-duo-big-game-sadler-defense",
-          "title": "Stock Up, Stock Down: Center Duo, Big Game Sadler, Defense + More",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.celticsblog.com/boston-celtics-news/150441/celtics-injury-report-denver-nuggets-neemias-queta",
+          "title": "Celtics get good injury news ahead of game vs. Nuggets",
+          "publisher": "CelticsBlog",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfePSzkpQLCWYqB8xxQBJD-S70IKslXtDHcnjMTpPjpWE-9og7UQQ_D1O19o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMVKNXthPEYfAfD9WCuAzzLTEccd3XnpqPrMgkSpkjvun4HtpH7HBSD37jPLA"
         }
       ]
     },
     {
-      "query": "ufl draft",
+      "query": "lsu basketball",
       "approx_searches": "1000+",
-      "published_at": "2026-11-19T01:00:00Z",
+      "published_at": "2026-11-19T01:30:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25534680-2027-ufl-draft-prospects-who-deserve-another-shot-nfl",
-        "https://www.usatoday.com/story/sports/nfl/2026/11/18/diego-pavia-2027-ufl-draft-aviators/92827083007/",
-        "https://www.statecollege.com/articles/penn-state-football/trio-of-former-penn-state-players-listed-as-top-prospects-for-2027-ufl-draft/"
+        "https://www.espn.com/mens-college-basketball/story/_/id/50525838/rj-luis-jr-not-lsu-starting-lineup-game-vs-ul-monroe",
+        "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/lsu-adds-all-american-rj-luis-jr-to-basketball-roster-after-court-battle-with-sec-over-his-nba-contracts-234713181.html",
+        "https://www.cbssports.com/college-basketball/news/lsu-rj-luis-sec-boycott-will-wade-court-ruling-tigers-roster/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsirGtPD-M4g9w00KNhSb3DAP1izsCfa3H8wJiJTrjUWneAq8n8ucDHzXQJXw",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25534680-2027-ufl-draft-prospects-who-deserve-another-shot-nfl",
-          "title": "2027 UFL Draft Prospects Who Deserve Another Shot in the NFL",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsirGtPD-M4g9w00KNhSb3DAP1izsCfa3H8wJiJTrjUWneAq8n8ucDHzXQJXw"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/18/diego-pavia-2027-ufl-draft-aviators/92827083007/",
-          "title": "Diego Pavia selected with No. 1 overall pick in 2027 UFL Draft",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvD45zUyZcGbk_JlLVOU6DI5HZNVCmmQsmJEPVYW4CHJ12kzWSHix7yyivgDQ"
-        },
-        {
-          "url": "https://www.statecollege.com/articles/penn-state-football/trio-of-former-penn-state-players-listed-as-top-prospects-for-2027-ufl-draft/",
-          "title": "Trio of Former Penn State Players Listed as Top Prospects for 2027 UFL Draft",
-          "publisher": "StateCollege.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdQ8WTYYQ8BBjxSexoYWOXZpOTRcsbTRgz-IZ8tQ_dz7utQXpxwk9YrPNPgIo"
-        }
-      ]
-    },
-    {
-      "query": "tacko fall",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T01:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50525729/tacko-fall-gets-rejection",
-        "https://www.nba.com/watch/video/tacko-fall-rises-up-for-the-rejection",
-        "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/rZq332IeNmYV/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCPb4UiyIjmYU3-yxD5wwpC34y6h7tAHy7Rnt2xyh58u0xaYq_pXIjNfE6fw",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSG9xvTvzsituJBTjFmCRo012fhK_1Cw7i67zZPa8KysHTHPTBBBv9tOHnHt1Y",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/video/clip/_/id/50525729/tacko-fall-gets-rejection",
-          "title": "Tacko Fall gets up for the rejection",
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50525838/rj-luis-jr-not-lsu-starting-lineup-game-vs-ul-monroe",
+          "title": "RJ Luis Jr. not in LSU's starting lineup for game vs. UL Monroe",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCPb4UiyIjmYU3-yxD5wwpC34y6h7tAHy7Rnt2xyh58u0xaYq_pXIjNfE6fw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSG9xvTvzsituJBTjFmCRo012fhK_1Cw7i67zZPa8KysHTHPTBBBv9tOHnHt1Y"
         },
         {
-          "url": "https://www.nba.com/watch/video/tacko-fall-rises-up-for-the-rejection",
-          "title": "Tacko Fall rises up for the rejection",
-          "publisher": "NBA.com",
+          "url": "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/lsu-adds-all-american-rj-luis-jr-to-basketball-roster-after-court-battle-with-sec-over-his-nba-contracts-234713181.html",
+          "title": "LSU adds All-American RJ Luis Jr. to basketball roster after court battle with SEC over his NBA contracts",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4SfaJVr6RRs_OHoAJhoVuIPcleIE8lnBeI_CBmez9hVj8m9lQOaln_k0PRdY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLgm-lxBqiFxKUin26ukXgHobFhlOLYu41afw-LE9wBJv28-Er2XUWxhPCA7k"
         },
         {
-          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/rZq332IeNmYV/",
-          "title": "Wizards take late lead",
-          "publisher": "The New York Times",
+          "url": "https://www.cbssports.com/college-basketball/news/lsu-rj-luis-sec-boycott-will-wade-court-ruling-tigers-roster/",
+          "title": "SEC frustrated over LSU's RJ Luis: Boycotts of Tigers considered if Will Wade puts ex-St. John's star on court",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQoGmPCrzrTClrwV9GL15Y1YngtShdPJIlv4GKN6_mqWPivd1hF1Mjcty4LzQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvB1vKZjTPgUam8kCFmkLXcqRzwwXWgGWxtMWKFe6t5aC5H4zh0kP4Bw0Wuz8"
         }
       ]
     },
     {
-      "query": "california",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T01:00:00Z",
+      "query": "palantir",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T01:30:00Z",
       "related_news_urls": [
-        "https://www.foxweather.com/weather-news/30-million-along-california-coast-under-flash-flood-threat-from-latest-atmospheric-river-storm",
-        "https://www.abridged.org/news/sacramento-rain-and-storm-continues/",
-        "https://www.theguardian.com/us-news/2026/nov/18/california-atmospheric-river-flooding"
+        "https://www.cnn.com/2026/11/18/politics/russian-arrested-charges-spied-palantir",
+        "https://www.bbc.com/news/articles/cq20xg80ly47o",
+        "https://www.nbcnews.com/politics/justice-department/russian-national-igor-diu-targeted-palantir-workers-sources-say-rcna610112"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl-SIise-7cu7DHINLKykbWR6vMyfo4QM6Vk-htc7ROH3M3f9bsWmpKmAb08A",
-      "image_credit": "FOX Weather",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX24hQ7qR5-Z_qDQ8uTHMnAzSkU_p9R7hEvDWxy7QKba3Kd9w6k0GB5BhWuJ0",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.foxweather.com/weather-news/30-million-along-california-coast-under-flash-flood-threat-from-latest-atmospheric-river-storm",
-          "title": "West Coast community urged to evacuate as powerful storms fuel mudslide threat, flash flooding for 25+ million",
-          "publisher": "FOX Weather",
+          "url": "https://www.cnn.com/2026/11/18/politics/russian-arrested-charges-spied-palantir",
+          "title": "Russian arrested on charges he spied on and harassed employees of defense tech company Palantir",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl-SIise-7cu7DHINLKykbWR6vMyfo4QM6Vk-htc7ROH3M3f9bsWmpKmAb08A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX24hQ7qR5-Z_qDQ8uTHMnAzSkU_p9R7hEvDWxy7QKba3Kd9w6k0GB5BhWuJ0"
         },
         {
-          "url": "https://www.abridged.org/news/sacramento-rain-and-storm-continues/",
-          "title": "What to know as the Sacramento area’s rainiest storm of the season continues",
-          "publisher": "Abridged – PBS KVIE",
+          "url": "https://www.bbc.com/news/articles/cq20xg80ly47o",
+          "title": "Russian man accused of spying on US tech defence company that assists Ukraine",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7Sn4PQWBSI1PR7AUxW-YBj2oW4opIgQnsSikYdCr2ICxUL393Kfkyz1p_qAw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJn4LhzR8xczGtt1sISX-IFn4sR4u1CtcsPcxDq0lhK8ZjuFPJd0b9dAuaAo8"
         },
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/18/california-atmospheric-river-flooding",
-          "title": "Record-breaking rain lashes California’s Bay area as ‘atmospheric river’ arrives",
-          "publisher": "The Guardian",
+          "url": "https://www.nbcnews.com/politics/justice-department/russian-national-igor-diu-targeted-palantir-workers-sources-say-rcna610112",
+          "title": "Russian national who targeted Palantir workers charged as a foreign agent, sources say",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD1sMsYj--UlTlDS-599HQP0Nwxmqlov0_9kcOwna2ZMDOfkjsgtiBkpKR6IU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr31qlaSPgvVvW6PVt9en2zct2-j10827pLQnmJlFhGBgAtyrKepiYCTMjQNw"
+        }
+      ]
+    },
+    {
+      "query": "dylan larkin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T01:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/red-wings-reportedly-unwilling-deal-181033986.html",
+        "https://www.freep.com/story/sports/nhl/red-wings/2026/11/16/detroit-red-wings-dylan-larkin-trade-rumors-latest/92808173007/",
+        "https://hockeywilderness.com/news-rumors/minnesota-wild/take-danila-yurov-off-the-table-already-r31798/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTetbtQVe3CGOok3PAVpr3nAf0nFIXf25zVl-mIon790kA_eNf6QALqgLfYi3s",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/red-wings-reportedly-unwilling-deal-181033986.html",
+          "title": "Red Wings Reportedly Unwilling To Deal Dylan Larkin To The Wild",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTetbtQVe3CGOok3PAVpr3nAf0nFIXf25zVl-mIon790kA_eNf6QALqgLfYi3s"
+        },
+        {
+          "url": "https://www.freep.com/story/sports/nhl/red-wings/2026/11/16/detroit-red-wings-dylan-larkin-trade-rumors-latest/92808173007/",
+          "title": "Detroit Red Wings have offers for Dylan Larkin. But value is not there",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlzpEfNwjhHRf9m2jnhnF2H1lPIWvt7AKqrPBje3ao0XYQsOGbtH0ArztEVqE"
+        },
+        {
+          "url": "https://hockeywilderness.com/news-rumors/minnesota-wild/take-danila-yurov-off-the-table-already-r31798/",
+          "title": "Take Danila Yurov Off the Table, Already",
+          "publisher": "Hockey Wilderness",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYWcW5q8ij2byTq3m57GGMgQvUmXklOjdsceuEho9u09Qr2lWqwiMZsjUUBk"
+        }
+      ]
+    },
+    {
+      "query": "kansas vs minnesota",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T01:30:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/minnesota/article/minnesota-gopher-womens-basketball-kansas-preview-prediction-292937775/",
+        "https://www.thedailygopher.com/womens-college-basketball-content/41755/minnesota-golden-gophers-host-kansas-jayhawks-womens-basketball",
+        "https://www.willmarradio.com/sports/gopher-womens-basketball-team-to-host-kansas-this-evening/article_950e5a65-5e06-4625-b7af-0993693d4602.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqrBjAd-OE3bdWKg9HJWxG12OATQunte1nndt8rLUwhhDhFjq9TWaN_Lzo-NY",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/minnesota/article/minnesota-gopher-womens-basketball-kansas-preview-prediction-292937775/",
+          "title": "#17 Gopher Women's Basketball vs. Kansas Preview & Prediction",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqrBjAd-OE3bdWKg9HJWxG12OATQunte1nndt8rLUwhhDhFjq9TWaN_Lzo-NY"
+        },
+        {
+          "url": "https://www.thedailygopher.com/womens-college-basketball-content/41755/minnesota-golden-gophers-host-kansas-jayhawks-womens-basketball",
+          "title": "#17 Minnesota Golden Gophers Host Kansas Jayhawks in Women’s Basketball",
+          "publisher": "The Daily Gopher",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjGlc9SmWsLgtc6tkEOR-JryK1pCKLLaTKO_O7Y30GoX5yuamTr_ZalOiBIZU"
+        },
+        {
+          "url": "https://www.willmarradio.com/sports/gopher-womens-basketball-team-to-host-kansas-this-evening/article_950e5a65-5e06-4625-b7af-0993693d4602.html",
+          "title": "Gopher women's basketball team to host Kansas this evening",
+          "publisher": "Willmar Radio",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS54gQL7m2wzrW9k-9dN5HsqqMMhGjBgWRH5TNTgv4We74zIFUrUIeqYsekmog"
+        }
+      ]
+    },
+    {
+      "query": "6abc philadelphia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T01:30:00Z",
+      "related_news_urls": [
+        "https://6abc.com/post/police-juvenile-shot-frankford-avenue-kensington-section-philadelphia/20049449/",
+        "https://www.fox29.com/news/15-year-old-shot-critically-injured-frankford-ave-philadephia-police",
+        "https://www.nbcphiladelphia.com/news/local/teen-shot-in-the-chest-in-kensington/4499108/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNOk0nGo5UjN8bbgivqGAGs2e7-KgEvmfvsbZbf2S-VdB0M3SsvukpierPMiw",
+      "image_credit": "6abc Philadelphia",
+      "news": [
+        {
+          "url": "https://6abc.com/post/police-juvenile-shot-frankford-avenue-kensington-section-philadelphia/20049449/",
+          "title": "15-year-old shot after attending 1-year-old's birthday party in Philadelphia's Kensington section: Family",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNOk0nGo5UjN8bbgivqGAGs2e7-KgEvmfvsbZbf2S-VdB0M3SsvukpierPMiw"
+        },
+        {
+          "url": "https://www.fox29.com/news/15-year-old-shot-critically-injured-frankford-ave-philadephia-police",
+          "title": "15-year-old shot, critically injured on Frankford Ave in Philadelphia: police",
+          "publisher": "FOX 29 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJF0UinRXZAkhna668GYPMbrJuNSCwfYe1bgVRqDan5zUFIWLghsDU_BancnM"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/teen-shot-in-the-chest-in-kensington/4499108/",
+          "title": "15-year-old shot at least twice in the chest; search for shooter ongoing",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQq_rS2TGQeu4UkZb0Owdfito_4nul8JwqEYpgRgY-1Ra-5nknOJiiwB6XhKdI"
+        }
+      ]
+    },
+    {
+      "query": "will scharf",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T01:30:00Z",
+      "related_news_urls": [
+        "https://thehill.com/homenews/administration/6228627-white-house-will-scharf-democrats-oversight-trump-administration-probes/",
+        "https://www.politico.com/news/2026/11/18/white-house-will-scharf-letter-democrats-01172952",
+        "https://www.axios.com/2026/11/16/exclusive-white-house-requires-signoff-before-agency-staffers-testify-to-congress"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxwQfCMKkdmsLpCOnh3e6m7CUWh0ozWCRKUWdlV5Fm7xbDI14gPxyo2mb2lE4",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/homenews/administration/6228627-white-house-will-scharf-democrats-oversight-trump-administration-probes/",
+          "title": "White House counsel Will Scharf pushes back on Democrats’ mounting oversight demands",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxwQfCMKkdmsLpCOnh3e6m7CUWh0ozWCRKUWdlV5Fm7xbDI14gPxyo2mb2lE4"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/18/white-house-will-scharf-letter-democrats-01172952",
+          "title": "White House dismisses Dems’ early demands — with a nod toward Biden",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj19W0ewBApYQKdmiAHtBFKAeqx5xOXZ2mBxb8YPtytzaWBtgRkwY6Eof2OXY"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/16/exclusive-white-house-requires-signoff-before-agency-staffers-testify-to-congress",
+          "title": "Exclusive: White House requires signoff before staffers testify to Congress",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHR15O_YVYfP9gwSOYTeybz9A8xKfDWnvgGXA6FAvQehck3RKw8zCjjrLjPVo"
         }
       ]
     }
