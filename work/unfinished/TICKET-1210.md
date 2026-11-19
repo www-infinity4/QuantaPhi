@@ -1,3 +1,22 @@
+---
+issue: 1210
+state: implementing
+dot: "🟡"
+progress_percent: 44
+progress_basis: "4/9 source capture, account registration, reader/UI patch, tests added; CI/review/merge/deploy/Android incomplete"
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: "ChatGPT GitHub connector (unclaimed Bubbles lease)"
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+next_action: "Verify PR #1983 exact-head tests and obtain independent review before any merge or Worker deploy"
+merged: false
+deployed: false
+live_verified: false
+---
+
 # TICKET-1210 — Bubbles X source-to-build ledger
 
 - Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1210
