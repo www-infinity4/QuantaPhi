@@ -164,3 +164,132 @@ test('6502 stores write their destination without an unintended I/O read',()=>{
  assert.equal(destinationReads,0);
  assert.equal(m.sensors.dac,42);
 });
+
+test('IIe RAMRD and RAMWRT select distinct main and auxiliary banks',()=>{
+ const m=new Apple2Infinity(),b=m.bus;
+ b.write(0x200,0x11);
+ b.write(0xc005,0); // aux writes, main reads
+ b.write(0x200,0x22);
+ assert.equal(b.read(0x200),0x11);
+ assert.equal(b.auxRam[0x200],0x22);
+ assert.equal(b.read(0xc014)&0x80,0x80);
+ b.write(0xc003,0);
+ assert.equal(b.read(0x200),0x22);
+ assert.equal(b.read(0xc013)&0x80,0x80);
+ b.write(0xc004,0);b.write(0xc002,0);
+ assert.equal(b.read(0x200),0x11);
+ assert.equal(b.auxRam[0x200],0x22);
+});
+
+test('IIe ALTZP routes zero page and stack independently of RAMRD/RAMWRT',()=>{
+ const m=new Apple2Infinity(),b=m.bus;
+ b.write(0x00,17);b.write(0x1ff,18);
+ b.write(0xc003,0);b.write(0xc005,0);
+ assert.equal(b.read(0x00),17);
+ b.write(0xc009,0);b.write(0x00,33);b.write(0x1ff,34);
+ assert.equal(b.read(0x00),33);
+ assert.equal(b.auxRam[0x1ff],34);
+ b.write(0xc008,0);
+ assert.equal(b.read(0x00),17);
+ assert.equal(b.read(0x1ff),18);
+ assert.equal(b.read(0xc016)&128,0);
+});
+
+test('IIe 80STORE plus PAGE2 overrides general bank selection for text page 1',()=>{
+ const m=new Apple2Infinity(),b=m.bus;
+ b.write(0x400,0x41);
+ b.write(0xc001,0);b.write(0xc055,0);
+ b.write(0x400,0x42);
+ assert.equal(b.ram[0x400],0x41);
+ assert.equal(b.auxRam[0x400],0x42);
+ b.write(0xc003,0);b.write(0xc004,0);
+ assert.equal(b.read(0x400),0x42,'80STORE takes priority over RAMRD');
+ b.write(0xc054,0);
+ assert.equal(b.read(0x400),0x41);
+ b.write(0xc055,0);
+ assert.equal(b.read(0xc018)&128,128);
+ assert.equal(b.read(0xc01c)&128,128);
+ assert.equal(b.read(0x800),0,'non-video RAM remains RAMRD controlled');
+ b.write(0xc000,0);
+ assert.equal(b.read(0xc018)&128,0);
+});
+
+test('IIe 80STORE high resolution page1 bank override requires HIRES',()=>{
+ const m=new Apple2Infinity(),b=m.bus;
+ b.write(0x2000,0x11);
+ b.write(0xc001,0);b.write(0xc055,0);
+ b.write(0x2000,0x22);
+ assert.equal(b.ram[0x2000],0x22,'HIRES disabled: PAGE2 should not override');
+ b.write(0xc057,0);b.write(0x2000,0x33);
+ assert.equal(b.auxRam[0x2000],0x33);
+ assert.equal(b.ram[0x2000],0x22);
+ b.read(0xc056);
+ b.write(0x2000,0x44);
+ assert.equal(b.ram[0x2000],0x44,'reading C056 toggles HIRES off');
+});
+
+test('IIe 80-column video interleaves aux and main text bytes',()=>{
+ const m=new Apple2Infinity(),b=m.bus;
+ const addr=b.video.textAddress(0,0);
+ b.auxRam[addr]=65;
+ b.ram[addr]=66;
+ b.auxRam[addr+1]=67;
+ b.ram[addr+1]=68;
+ b.write(0xc00d,0);
+ assert.equal(b.video.frame().split('\n')[0].slice(0,4),'ABCD');
+ assert.equal(b.video.frame().split('\n')[0].length,80);
+ b.write(0xc00c,0);
+ assert.equal(b.video.frame().split('\n')[0].length,40);
+ assert.equal(b.video.frame().split('\n')[0][0],'B');
+ assert.equal(b.read(0xc01f)&128,0);
+});
+
+test('IIe 40-column video shows text page2 or 80STORE-selected aux bank',()=>{
+ const m=new Apple2Infinity(),b=m.bus;
+ b.ram[b.video.textAddress(0,0)]=65;
+ b.ram[b.video.textAddress(0,0)+0x400]=66;
+ b.auxRam[b.video.textAddress(0,0)]=67;
+ assert.equal(b.video.frame().split('\n')[0][0],'A');
+ b.write(0xc055,0);
+ assert.equal(b.video.frame().split('\n')[0][0],'B');
+ b.write(0xc001,0);
+ assert.equal(b.video.frame().split('\n')[0][0],'C');
+ b.write(0xc054,0);
+ assert.equal(b.video.frame().split('\n')[0][0],'A');
+});
+
+test('IIe C00X reads do not activate soft switches and C05X reads do',()=>{
+ const m=new Apple2Infinity(),b=m.bus;
+ b.key('Z');
+ assert.equal(b.read(0xc003),0xda,'soft switch write-only read is keyboard latch');
+ assert.equal(b.read(0xc013)&128,0,'RAMRD must remain off after read');
+ assert.equal(b.read(0xc010),0xda);
+ assert.equal(b.read(0xc000)&128,0,'strobe cleared');
+ b.read(0xc055);
+ assert.equal(b.read(0xc01c)&128,128);
+ b.read(0xc050);
+ assert.equal(b.read(0xc01a)&128,0);
+ b.read(0xc051);
+ assert.equal(b.read(0xc01a)&128,128);
+});
+
+test('browser workbench can switch 40/80 text columns, display page and 80STORE',()=>{
+ const html=readFileSync(new URL('../apple2-infinity/index.html',import.meta.url),'utf8');
+ for(const id of ['mmu','colMode','textPage','store80','screenMode'])
+  assert.ok(html.includes('id="'+id+'"'),'missing '+id);
+ assert.match(html,/vm\.bus\.write\(0xc00d\)/,'80-column switch must go through virtual I/O bus');
+ assert.match(html,/vm\.bus\.write\(0xc055\)/,'PAGE2 switch must go through virtual I/O bus');
+ assert.match(html,/vm\.bus\.write\(0xc001\)/,'80STORE switch must go through virtual I/O bus');
+});
+
+test('6502 instructions can write to auxiliary text RAM through IIe soft switches',()=>{
+ const m=new Apple2Infinity();
+ // LDA #'Q'; STA $C005 (RAMWRT on); STA $0400; STA $C004 (RAMWRT off); BRK
+ m.bus.load(0x800,[0xa9,0x51,0x8d,0x05,0xc0,0x8d,0x00,0x04,0x8d,0x04,0xc0,0x00]);
+ const result=m.cpu.run(20,{stopOnBrk:true});
+ assert.equal(result.halted,true);
+ assert.equal(m.bus.auxRam[0x400],0x51);
+ assert.equal(m.bus.ram[0x400],0);
+ m.bus.write(0xc00d,0);
+ assert.equal(m.bus.video.frame().split('\n')[0][0],'Q');
+});

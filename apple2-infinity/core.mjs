@@ -22,13 +22,38 @@ export class PagedMemory {
 }
 
 export class VirtualVideo {
-  constructor(ram){this.ram=ram;this.textMode=true;this.hires=false;this.speakerEdges=0;}
-  textAddress(row,col) {
-    if(!Number.isInteger(row)||row<0||row>=24||!Number.isInteger(col)||col<0||col>=40)throw RangeError('40x24 text coordinates');
-    return 0x400+((row&7)<<7)+((row>>3)*40)+col;
+  constructor(bus) {
+    this.bus=bus; this.ram=bus.ram; this.textMode=true;
+    this.hires=false; this.mixed=false; this.page2=false;
+    this.speakerEdges=0;
   }
-  put(row,col,text){for(let i=0;i<String(text).length&&col+i<40;i++)this.ram[this.textAddress(row,col+i)]=String(text).charCodeAt(i)&0x7f;}
-  frame(){return Array.from({length:24},(_,r)=>Array.from({length:40},(_,c)=>{const v=this.ram[this.textAddress(r,c)]&0x7f;return v>=32&&v<=126?String.fromCharCode(v):' ';}).join('')).join('\n');}
+  textAddress(row,col,base=0x400) {
+    if(!Number.isInteger(row)||row<0||row>=24||!Number.isInteger(col)||col<0||col>=40)
+      throw RangeError('40x24 text coordinates');
+    return base+((row&7)<<7)+((row>>3)*40)+col;
+  }
+  get columns(){return this.bus.soft.col80?80:40;}
+  get textBase(){return this.page2&&!this.bus.soft.store80?0x800:0x400;}
+  // Video fetches physical main/aux RAM, not the CPU's RAMRD/RAMWRT window.
+  visibleByte(row,col){
+    const addr=this.textAddress(row,this.columns===80?Math.floor(col/2):col,this.textBase);
+    const bank=this.columns===80?(col%2===0?this.bus.auxRam:this.ram)
+      :(this.bus.soft.store80&&this.page2?this.bus.auxRam:this.ram);
+    return bank[addr];
+  }
+  put(row,col,text){
+    const str=String(text);
+    for(let i=0;i<str.length&&col+i<this.columns;i++){
+      const c=col+i,addr=this.textAddress(row,this.columns===80?Math.floor(c/2):c,this.textBase);
+      const bank=this.columns===80?(c%2===0?this.bus.auxRam:this.ram)
+        :(this.bus.soft.store80&&this.page2?this.bus.auxRam:this.ram);
+      bank[addr]=str.charCodeAt(i)&0x7f;
+    }
+  }
+  frame(){return Array.from({length:24},(_,r)=>Array.from({length:this.columns},(_,c)=>{
+    const v=this.visibleByte(r,c)&0x7f;
+    return v>=32&&v<=126?String.fromCharCode(v):' ';
+  }).join('')).join('\n');}
 }
 
 export class VirtualSensors {
@@ -84,25 +109,71 @@ export class VirtualFPGA {
 }
 
 export class VirtualAppleBus {
-  constructor(fpga){this.ram=new Uint8Array(65536);this.rom=new Uint8Array(0x3000);this.fpga=fpga;this.video=new VirtualVideo(this.ram);this.keyboard=0;this.cycles=0;this.phase=0;}
+  constructor(fpga){
+    this.ram=new Uint8Array(65536);
+    this.auxRam=new Uint8Array(65536);
+    this.rom=new Uint8Array(0x3000);
+    this.fpga=fpga;
+    this.soft={store80:false,ramrd:false,ramwrt:false,altzp:false,col80:false,altcharset:false};
+    this.video=new VirtualVideo(this);
+    this.keyboard=0;this.cycles=0;this.phase=0;
+  }
   key(value){this.keyboard=byte(typeof value==='string'?value.charCodeAt(0):value)|0x80;}
+  // CPU bank routing; zero page/stack take ALTZP, and 80STORE+PAGE2 overrides
+  // RAMRD/RAMWRT for text page 1, or hi-res page 1 when HIRES is enabled.
+  bank(address,isWrite=false){
+    if(address<0x200)return this.soft.altzp?this.auxRam:this.ram;
+    const override=this.soft.store80&&(
+      (address>=0x400&&address<0x800)||
+      (this.video.hires&&address>=0x2000&&address<0x4000)
+    );
+    if(override)return this.video.page2?this.auxRam:this.ram;
+    return (isWrite?this.soft.ramwrt:this.soft.ramrd)?this.auxRam:this.ram;
+  }
+  setMemorySwitch(address){
+    const field={0:'store80',1:'store80',2:'ramrd',3:'ramrd',4:'ramwrt',5:'ramwrt',
+      8:'altzp',9:'altzp',12:'col80',13:'col80',14:'altcharset',15:'altcharset'}[address&15];
+    if(field)this.soft[field]=!!(address&1);
+  }
+  displaySwitch(address){
+    const n=address&15,on=!!(n&1);
+    switch(n>>1){
+      case 0:this.video.textMode=on;break;
+      case 1:this.video.mixed=on;break;
+      case 2:this.video.page2=on;break;
+      case 3:this.video.hires=on;break;
+      default:break;
+    }
+  }
+  status(address){
+    const enabled={
+      0x13:this.soft.ramrd,0x14:this.soft.ramwrt,0x16:this.soft.altzp,
+      0x18:this.soft.store80,0x1a:this.video.textMode,0x1b:this.video.mixed,
+      0x1c:this.video.page2,0x1d:this.video.hires,0x1e:this.soft.altcharset,
+      0x1f:this.soft.col80
+    }[address&255];
+    // Only bit 7 is currently modeled; real bits 0-6 are floating-bus values.
+    return enabled?0x80:0;
+  }
   read(address){address&=0xffff;
-    if(address===0xc000)return this.keyboard;
+    if(address>=0xc000&&address<=0xc00f)return this.keyboard;
     if(address===0xc010){const v=this.keyboard;this.keyboard&=0x7f;return v;}
+    if(address>=0xc011&&address<=0xc01f)return this.status(address);
+    if(address>=0xc050&&address<=0xc057){this.displaySwitch(address);return 0;}
     if(address>=IO_BASE&&address<IO_BASE+16)return this.fpga.read(address-IO_BASE);
     if(address>=0xd000)return this.rom[address-0xd000];
-    return this.ram[address];
+    if(address<0xc000)return this.bank(address)[address];
+    return this.ram[address]; // unmapped I/O stub, not accurate floating bus
   }
   write(address,value){address&=0xffff;value=byte(value);
+    if(address>=0xc000&&address<=0xc00f){this.setMemorySwitch(address);return;}
+    if(address>=0xc050&&address<=0xc057){this.displaySwitch(address);return;}
     if(address>=IO_BASE&&address<IO_BASE+16){this.fpga.write(address-IO_BASE,value);return;}
     if(address===0xc030){this.video.speakerEdges++;return;}
-    if(address===0xc050){this.video.textMode=false;return;}
-    if(address===0xc051){this.video.textMode=true;return;}
-    if(address===0xc056){this.video.hires=false;return;}
-    if(address===0xc057){this.video.hires=true;return;}
-    if(address<0xc000)this.ram[address]=value;
+    if(address<0xc000)this.bank(address,true)[address]=value;
   }
-  load(address,bytes){if(!Number.isInteger(address)||address<0||address+bytes.length>0xc000)throw RangeError('Load into RAM only');this.ram.set(bytes,address);}
+  // Developer loader intentionally writes physical main memory, not the active CPU bank.
+  load(address,bytes){if(!Number.isInteger(address)||address<0||!bytes||!Number.isSafeInteger(bytes.length)||address+bytes.length>0xc000)throw RangeError('Load into RAM only');this.ram.set(bytes,address);}
   loadROM(address,bytes){if(!Number.isInteger(address)||address<0xd000||address+bytes.length>0x10000)throw RangeError('ROM image must remain in $D000–$FFFF');this.rom.set(bytes,address-0xd000);}
   tick(){this.cycles++;this.phase^=1;this.fpga.tick();}
 }
@@ -114,5 +185,5 @@ export class Apple2Infinity {
       0xa9,1,0x8d,0xf0,0xc0,0xad,0xf1,0xc0,0x29,2,0xf0,0xf9,0xad,0xf8,0xc0,0x8d,0x00,0x04,0x00];
     this.cpu.reset();this.bus.load(0x800,program);const result=this.cpu.run(10000,{stopOnBrk:true});return {...result,result:this.bus.read(0x400)};
   }
-  snapshot(){return {cpu:{a:this.cpu.a,x:this.cpu.x,y:this.cpu.y,pc:this.cpu.pc,cycles:this.bus.cycles},fpga:{status:this.fpga.reg[1],irq:this.fpga.irq,logic:this.fpga.gate,ramPhysical:this.fpga.ram.physicalBytes},cm5:{jobs:this.cm5.jobs,ramPhysical:this.cm5.ram.physicalBytes},sensors:{samples:this.sensors.samples,dac:this.sensors.dac},screen:this.bus.video.frame()};}
+  snapshot(){return {cpu:{a:this.cpu.a,x:this.cpu.x,y:this.cpu.y,pc:this.cpu.pc,cycles:this.bus.cycles},fpga:{status:this.fpga.reg[1],irq:this.fpga.irq,logic:this.fpga.gate,ramPhysical:this.fpga.ram.physicalBytes},cm5:{jobs:this.cm5.jobs,ramPhysical:this.cm5.ram.physicalBytes},sensors:{samples:this.sensors.samples,dac:this.sensors.dac},mmu:{...this.bus.soft,page2:this.bus.video.page2,hires:this.bus.video.hires,textMode:this.bus.video.textMode,mixed:this.bus.video.mixed,columns:this.bus.video.columns},screen:this.bus.video.frame()};}
 }
