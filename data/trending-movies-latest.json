@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-19T18:33:12.258589Z",
+  "checked_at": "2026-11-19T19:03:46.262438Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
@@ -36,6 +36,30 @@
       "trend_checked_at": "2026-11-14T20:31:06.368122Z",
       "trend_published_at": "2026-11-14T19:50:00Z",
       "approx_searches": "500+"
+    },
+    {
+      "id": "S-SNLzfrUNw",
+      "title": "Ice Age: Boiling Point",
+      "video_id": "S-SNLzfrUNw",
+      "video_title": "Ice Age: Boiling Point Trailer #1 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-19T18:53:24Z",
+      "source_url": "https://www.youtube.com/watch?v=S-SNLzfrUNw",
+      "poster": "https://i.ytimg.com/vi/S-SNLzfrUNw/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "8Mm-N8o3z_c",
+      "title": "Killing Castro",
+      "video_id": "8Mm-N8o3z_c",
+      "video_title": "Killing Castro Trailer #1 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-19T18:39:00Z",
+      "source_url": "https://www.youtube.com/watch?v=8Mm-N8o3z_c",
+      "poster": "https://i.ytimg.com/vi/8Mm-N8o3z_c/hqdefault.jpg",
+      "google_trending": false
     },
     {
       "id": "wz1mkkDn95U",
