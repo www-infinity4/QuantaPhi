@@ -3,12 +3,187 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T17:01:29.546943Z",
+  "checked_at": "2026-11-19T17:31:02.894390Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "gme stock",
+      "query": "patrick sellers alabama",
       "approx_searches": "500+",
+      "published_at": "2026-11-19T17:10:00Z",
+      "related_news_urls": [
+        "https://www.alreporter.com/2026/11/19/sources-state-rep-sellers-indicted-on-fraud-charges",
+        "https://www.wbrc.com/2026/11/19/state-rep-patrick-sellers-indicted-federal-wire-fraud-charges/",
+        "https://abc3340.com/news/local/jefferson-county-lawmaker-indicted-in-alleged-240k-covid-relief-fraud-scheme"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLryOy4RyHTiX61beCSZbfalnoCTUchMm72hWVOi33BQVQElqHRikdDIJpgJc",
+      "image_credit": "Alabama Political Reporter",
+      "news": [
+        {
+          "url": "https://www.alreporter.com/2026/11/19/sources-state-rep-sellers-indicted-on-fraud-charges",
+          "title": "Sources: State Rep. Sellers indicted on fraud charges",
+          "publisher": "Alabama Political Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLryOy4RyHTiX61beCSZbfalnoCTUchMm72hWVOi33BQVQElqHRikdDIJpgJc"
+        },
+        {
+          "url": "https://www.wbrc.com/2026/11/19/state-rep-patrick-sellers-indicted-federal-wire-fraud-charges/",
+          "title": "State Rep. Patrick Sellers indicted on federal wire fraud charges",
+          "publisher": "WBRC 6 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrqjMGgAkHw1H2IqQlu9XiFcGwJBlND4lqN9JOgBxJCpDXec8XE3PmgbqPmHQ"
+        },
+        {
+          "url": "https://abc3340.com/news/local/jefferson-county-lawmaker-indicted-in-alleged-240k-covid-relief-fraud-scheme",
+          "title": "Jefferson County lawmaker indicted in alleged $240K COVID relief fraud scheme",
+          "publisher": "WBMA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSv6m6owfaXil5RWQzPx0_BJaKUdeVtv6-TyxDBihQO3V5PeyrcdjyrJ1u6vQQ"
+        }
+      ]
+    },
+    {
+      "query": "jazz fest 2027 lineup",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T17:00:00Z",
+      "related_news_urls": [
+        "https://www.nola.com/entertainment_life/festivals/jazz-fest-lineup-early/article_af2c14fa-1009-42c1-a470-b2c5aa06ef60.html",
+        "https://www.audacy.com/wwl/news/local/james-taylor-foo-fighters-gwen-stefani-among-new-orleans-jazz-fest-headliners",
+        "https://www.wwltv.com/article/entertainment/events/festivals/jazz-fest-lineup-released-earlier-than-usual-heres-whos-playing/289-e6b78b1f-ce9a-4c1d-b8af-73b2020affca"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDU30sQ_w3esk8KpbVQqfBF-ldPVfRMI1r_bXeoKZOIIsDtk6mNSaN4NJASkI",
+      "image_credit": "NOLA.com",
+      "news": [
+        {
+          "url": "https://www.nola.com/entertainment_life/festivals/jazz-fest-lineup-early/article_af2c14fa-1009-42c1-a470-b2c5aa06ef60.html",
+          "title": "2027 New Orleans Jazz Fest lineup is coming earlier than ever this year. See the details.",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDU30sQ_w3esk8KpbVQqfBF-ldPVfRMI1r_bXeoKZOIIsDtk6mNSaN4NJASkI"
+        },
+        {
+          "url": "https://www.audacy.com/wwl/news/local/james-taylor-foo-fighters-gwen-stefani-among-new-orleans-jazz-fest-headliners",
+          "title": "James Taylor, Foo Fighters, Gwen Stefani among Jazz Fest headliners",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsCq5bYtYSKFJBU2FI7z2yabOHEjVU4_PvKH2oMu5arhjP-etw0BxZeL-_QTQ"
+        },
+        {
+          "url": "https://www.wwltv.com/article/entertainment/events/festivals/jazz-fest-lineup-released-earlier-than-usual-heres-whos-playing/289-e6b78b1f-ce9a-4c1d-b8af-73b2020affca",
+          "title": "Jazz Fest lineup released earlier than usual: Here's who's playing",
+          "publisher": "WWLTV.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm2UICxy0BjrE6ekdy0sZ5V4ZJMXw4irV75HMrt_xSWVPnP-o77VYjct4Jk3Y"
+        }
+      ]
+    },
+    {
+      "query": "space x stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T17:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-adds-54-billion-230223184.html",
+        "https://www.fool.com/investing/2026/11/19/prediction-this-will-be-spacexs-stock-price-by-the/",
+        "https://www.moomoo.com/news/post/1004905812/starship-successfully-recovered-yet-fails-to-boost-stock-price-morgan"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-adds-54-billion-230223184.html",
+          "title": "SpaceX Stock Adds $54 Billion Amid Viral AI in Space Discussions",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/19/prediction-this-will-be-spacexs-stock-price-by-the/",
+          "title": "Prediction: This Will Be SpaceX's Stock Price by the End of 2030",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPKhrCxjQxY28WXd-H41_lfkgUlqwIU8JLRkDR_ujI7AM7FKlS_BA3q7AZ7XI"
+        },
+        {
+          "url": "https://www.moomoo.com/news/post/1004905812/starship-successfully-recovered-yet-fails-to-boost-stock-price-morgan",
+          "title": "Starship successfully recovered, yet fails to boost stock price! Morgan Stanley: Market reassesses SpaceX (SPCX.US) business model and strategic risks; maintains $300 target price",
+          "publisher": "Moomoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGSEt7avbpQMb6LjCR8p9lk-XuOMepOO8eGH5WrsNx9hqx7AuA5tpqYc0YCNg"
+        }
+      ]
+    },
+    {
+      "query": "riley moss",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T16:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/broncos-riley-moss-agree-four-165834561.html",
+        "https://www.nytimes.com/athletic/7795216/2026/11/19/riley-moss-contract-broncos/",
+        "https://bleacherreport.com/articles/25535353-riley-moss-broncos-reportedly-agree-contract-extension-details-revealed-new-nfl-rumors"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrsps2I8QWvCZK-YEv4v5rtDtY0mnzOli8YKdVw5ygCWqTZF9TmzYDBJRZr9k",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/broncos-riley-moss-agree-four-165834561.html",
+          "title": "Broncos, Riley Moss agree to four-year extension",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrsps2I8QWvCZK-YEv4v5rtDtY0mnzOli8YKdVw5ygCWqTZF9TmzYDBJRZr9k"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7795216/2026/11/19/riley-moss-contract-broncos/",
+          "title": "Riley Moss, Broncos finalizing 4-year, $67 million extension: Sources",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1jitkPQyFgEl6cTiPG273wVgiHCChxsu6Gttq9hrCNbPUmzVL_CnX9hzH2tM"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25535353-riley-moss-broncos-reportedly-agree-contract-extension-details-revealed-new-nfl-rumors",
+          "title": "Riley Moss, Broncos Reportedly Agree to Contract Extension, Details Revealed in New NFL Rumors",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSVYNwBusGI4bMzxAWk3Y92bLeZPbWtb5BRkdCc8sG2BzmghsLMznFCNjrdeY"
+        }
+      ]
+    },
+    {
+      "query": "brett rypien",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T16:50:00Z",
+      "related_news_urls": [
+        "https://www.silverandblackpride.com/las-vegas-raiders-roster/146507/raiders-brett-rypien-practice-squad-quarterback",
+        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/19/nfl-news-raiders-sign-ex-broncos-backup-qb-brett-rypien/92826288007/",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/raiders-sign-qb-brett-rypien-to-the-practice-squad"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwXJWVKYmrX-4q3_QCxnUEGgI6zw9_6EgZ1V46ooc9bjTeAwx5X0RAEUeDVnM",
+      "image_credit": "Silver And Black Pride",
+      "news": [
+        {
+          "url": "https://www.silverandblackpride.com/las-vegas-raiders-roster/146507/raiders-brett-rypien-practice-squad-quarterback",
+          "title": "Raiders roster 2026: Get to know Brett Rypien",
+          "publisher": "Silver And Black Pride",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwXJWVKYmrX-4q3_QCxnUEGgI6zw9_6EgZ1V46ooc9bjTeAwx5X0RAEUeDVnM"
+        },
+        {
+          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/19/nfl-news-raiders-sign-ex-broncos-backup-qb-brett-rypien/92826288007/",
+          "title": "Ex-Broncos quarterback signs with division rival Raiders",
+          "publisher": "Broncos Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDvx9AZm7t79B5yMc4K8_sBb6bNrCDLnljObv098GuL-OJTjr727Isx7Y_q-Q"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/raiders-sign-qb-brett-rypien-to-the-practice-squad",
+          "title": "Raiders sign QB Brett Rypien to the practice squad",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwnPJRhqWHKTa2j4mjq9s4LEDWuXMeUnjjNApg50EbZKjIQjk8ZjBCPoE2Z2I"
+        }
+      ]
+    },
+    {
+      "query": "gme stock",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T16:30:00Z",
       "related_news_urls": [
         "https://finance.yahoo.com/research/reports/ARGUS_4323_QuantitativeReport_1794960000000",
@@ -43,7 +218,7 @@
     },
     {
       "query": "gme",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T16:30:00Z",
       "related_news_urls": [
         "https://www.bloomberg.com/news/articles/2026-11-19/gamestop-ceo-criticizes-digital-game-releases-on-gta-vi-eve",
@@ -78,7 +253,7 @@
     },
     {
       "query": "petroleum",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T16:30:00Z",
       "related_news_urls": [
         "https://www.trefis.com/stock/mpc/articles/626943/what-moved-marathon-petroleum-stock/2026-11-19",
@@ -153,7 +328,7 @@
       "related_news_urls": [
         "https://people.com/glenn-close-on-creating-drusilla-sickle-iconic-look-in-sunrise-on-the-reaping-exclusive-12260229",
         "https://www.thedailybeast.com/obsessed/glenn-close-delivers-most-unhinged-performance-yet-in-hunger-games-prequel",
-        "https://apnews.com/video/elle-fanning-on-seeing-glenn-close-in-costume-for-hunger-games-0f2edcdbd05e41b2be3536a6c77de8c7"
+        "https://www.facebook.com/deadline/videos/glenn-close-on-who-she-thinks-drusilla-sickle-is-underneath-the-facade-hungergam/1136680665725816/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKlsCD1P9Sz-MiKrHS8a-NDPZQdD__eKzNiK_U3HTunBVtXCr3_uNYILikvo",
       "image_credit": "People.com",
@@ -173,186 +348,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz0yh85fV_OEIYj3S_XgeArHsJjQZwIvj04b0Tlljv_0eHjBoRcoi4MVL1p0E"
         },
         {
-          "url": "https://apnews.com/video/elle-fanning-on-seeing-glenn-close-in-costume-for-hunger-games-0f2edcdbd05e41b2be3536a6c77de8c7",
-          "title": "Elle Fanning on seeing Glenn Close in costume for ‘Hunger Games’",
-          "publisher": "AP News",
+          "url": "https://www.facebook.com/deadline/videos/glenn-close-on-who-she-thinks-drusilla-sickle-is-underneath-the-facade-hungergam/1136680665725816/",
+          "title": "Glenn Close on who she thinks Drusilla Sickle is underneath the facade #HungerGames",
+          "publisher": "Facebook",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmN5OOD4jeQxQ70YCCjnuNuytEf4kWBi7UzNqFf3gQ9l9Kv7FpSCUndqXL6Ws"
-        }
-      ]
-    },
-    {
-      "query": "cody johnson cma awards withdrawal",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T16:10:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/GMA/Culture/cody-johnson-skip-2026-cma-awards-cites-mental/story?id=138258783",
-        "https://www.kcci.com/article/country-star-cody-johnson-out-cma-awards/74465171",
-        "https://www.pennlive.com/entertainment/2026/11/country-music-star-pulls-out-of-cma-performance-at-last-minute-see-you-all-in-2027.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyJ-7GAN4zoiUSU9sZsDbM5fNENM9nQi3qjfw3NNtxDaWfdPsOGPqU_aeTT0Y",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/GMA/Culture/cody-johnson-skip-2026-cma-awards-cites-mental/story?id=138258783",
-          "title": "Cody Johnson to skip 2026 CMA Awards, cites mental and physical exhaustion",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyJ-7GAN4zoiUSU9sZsDbM5fNENM9nQi3qjfw3NNtxDaWfdPsOGPqU_aeTT0Y"
-        },
-        {
-          "url": "https://www.kcci.com/article/country-star-cody-johnson-out-cma-awards/74465171",
-          "title": "Country singer pulls out of CMA Awards: 'Going 100 mph all the time isn't healthy'",
-          "publisher": "KCCI",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMeOYjd1bIc7rZiFfGFHw3T1_0DZLcamwEFCtKRoZ8aA9CBVFb_2Z32p4XFxw"
-        },
-        {
-          "url": "https://www.pennlive.com/entertainment/2026/11/country-music-star-pulls-out-of-cma-performance-at-last-minute-see-you-all-in-2027.html",
-          "title": "Country music star pulls out of CMA performance at last minute: ‘See you all in 2027′",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcNWnsBnqAKouGXtbslfrp-8mUggOciekKN_B7fu3FHNSXvHgH3Fb1R7BgJDQ"
-        }
-      ]
-    },
-    {
-      "query": "amd",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T16:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/video/2026/11/19/shares-of-amd-fall-after-hunterbrook-discloses-short-position.html",
-        "https://www.bloomberg.com/news/articles/2026-11-19/amd-slides-after-hunterbrook-shorts-stock-cites-circular-deals",
-        "https://finance.yahoo.com/video/blacklisted-chinese-server-maker-kept-getting-amd-firmware-updates-hunterbrook-162807931.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDiJOX4VlHnq4rIv6KEW9H6hcrph9j87IEEc9iyn20eH3S_HGQuqc1VEPq0F8",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/video/2026/11/19/shares-of-amd-fall-after-hunterbrook-discloses-short-position.html",
-          "title": "Shares of AMD fall after Hunterbrook discloses short position",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDiJOX4VlHnq4rIv6KEW9H6hcrph9j87IEEc9iyn20eH3S_HGQuqc1VEPq0F8"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-19/amd-slides-after-hunterbrook-shorts-stock-cites-circular-deals",
-          "title": "AMD Slides After Hunterbrook Shorts Stock, Cites Circular Deals",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHT1jIxb3HV0aiw5SJ-dmS02ea9vkIGCLHvyoLJ88X-FA7Yo0BhwiFxhrQL1c"
-        },
-        {
-          "url": "https://finance.yahoo.com/video/blacklisted-chinese-server-maker-kept-getting-amd-firmware-updates-hunterbrook-162807931.html",
-          "title": "Blacklisted Chinese server maker kept getting AMD firmware updates: Hunterbrook",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6VbSXA3PjzbYyIP5Ep_bPwetsQupK2lpBIdhQv89vozwK10WkS5mnYOsH1vg"
-        }
-      ]
-    },
-    {
-      "query": "amd news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T15:50:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidia-amd-stock-prices-194602677.html",
-        "https://www.benzinga.com/markets/tech/26/11/63379917/why-is-amd-stock-gaining-wednesday",
-        "https://www.fool.com/investing/2026/11/16/amd-earnings-what-wall-street-missed/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9ORSlveRdJ7xmqGVfFaTX1VqTa3dmx8SEc2Gme_ju2QTaPYcAGk9ozKbiEh8",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidia-amd-stock-prices-194602677.html",
-          "title": "Prediction: These Will Be Nvidia’s and AMD’s Stock Prices by the End of 2027 (Hint: Only 1 Is a Buy).",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9ORSlveRdJ7xmqGVfFaTX1VqTa3dmx8SEc2Gme_ju2QTaPYcAGk9ozKbiEh8"
-        },
-        {
-          "url": "https://www.benzinga.com/markets/tech/26/11/63379917/why-is-amd-stock-gaining-wednesday",
-          "title": "Why Is AMD Stock Gaining Wednesday?",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgFbfDUvEy4VBJ9vHVEDHoPEYclhgaYDgzqIBwEoL8d-a-WlGnCBXD12e14pc"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/16/amd-earnings-what-wall-street-missed/",
-          "title": "AMD Earnings: What Wall Street Missed",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHH-fT6jgXDuTYAFBJoqlpmnY1wHFxyjpBSn_GHru6_tHt6T8lp4BzEVJuedA"
-        }
-      ]
-    },
-    {
-      "query": "is kenneth walker playing this week",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T15:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/chiefs-kenneth-walker-misses-practice-203459695.html",
-        "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhHJvcTy4LP-k3y9viSYfUq2bC95_XSsowMHAO289HgcyAk6Tj9dckOjatcu8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/chiefs-kenneth-walker-misses-practice-203459695.html",
-          "title": "Chiefs' Kenneth Walker misses practice with groin injury; Emmett Johnson in line to start again",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhHJvcTy4LP-k3y9viSYfUq2bC95_XSsowMHAO289HgcyAk6Tj9dckOjatcu8"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline",
-          "title": "Kenneth Walker Injury Update, Latest NFL Rumors on Chiefs RB Recovery Timeline",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5M0h-gn_N3xQBtMV8fRcIg0m1vtyd2stv_b2rrBNByYwT7ylqXzbI9miESxk"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury",
-          "title": "Kenneth Walker won’t practice Wednesday with groin injury",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2f0tMH2mkvQ7Yc3nH1KYrhQmdonyA4jWf63gzXFsEA4HjfsVJwLiQWaafXnM"
-        }
-      ]
-    },
-    {
-      "query": "pwhl takeover tour",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T15:30:00Z",
-      "related_news_urls": [
-        "https://www.thepwhl.com/en/news/2026/november/19/pwhl-announces-largest-takeover-tour-to-date-with-24-games-across-19-cities",
-        "https://www.cbsnews.com/pittsburgh/news/professional-womens-hockey-league-takeover-tour-comes-to-pittsburgh-in-2027/",
-        "https://www.nhl.com/predators/news/bridgestone-arena-to-host-pwhl-takeover-tourtm-game-2026-11-19"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjb04JhhkxD0mix-vQKdIss9HHj8i-IYiiGIPJ0WWL6Ktrr7mlYvsXpMTryjI",
-      "image_credit": "Professional Women's Hockey League (PWHL)",
-      "news": [
-        {
-          "url": "https://www.thepwhl.com/en/news/2026/november/19/pwhl-announces-largest-takeover-tour-to-date-with-24-games-across-19-cities",
-          "title": "PWHL ANNOUNCES LARGEST TAKEOVER TOUR™ TO DATE WITH 24 GAMES ACROSS 19 CITIES",
-          "publisher": "Professional Women's Hockey League (PWHL)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjb04JhhkxD0mix-vQKdIss9HHj8i-IYiiGIPJ0WWL6Ktrr7mlYvsXpMTryjI"
-        },
-        {
-          "url": "https://www.cbsnews.com/pittsburgh/news/professional-womens-hockey-league-takeover-tour-comes-to-pittsburgh-in-2027/",
-          "title": "Professional Women's Hockey League \"Takeover Tour\" comes to Pittsburgh in 2027",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_SgqGqtMZTfatOf7PVXo5yfAoI-JUks45IWkg1ke4iVz9F5k_xNGT-cYSZf8"
-        },
-        {
-          "url": "https://www.nhl.com/predators/news/bridgestone-arena-to-host-pwhl-takeover-tourtm-game-2026-11-19",
-          "title": "Bridgestone Arena To Host PWHL Takeover Tour™ Game",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvgUbBNr4pqO3VtbKe80iNfTpgNJ7i5tBTw9n1ZgsHNF70rXm2LVsj0E7b78"
+          "image_url": null
         }
       ]
     }
