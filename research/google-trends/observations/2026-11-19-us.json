@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T08:31:39.875081Z",
+  "checked_at": "2026-11-19T09:01:37.557481Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "john cornyn",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T08:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/18/politics/republican-cornyn-blocks-trump-judicial-nomination-gaiser-texas",
+        "https://thehill.com/homenews/senate/6229094-cornyn-blocks-non-texan-judge/",
+        "https://www.reuters.com/legal/government/republican-senator-cornyn-blocks-trump-judicial-nominee-texas-2026-11-18/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbKccDW_Us5kbYA9dLlf00s4ohblsi6Qkqb51Z04vl53j6Q7I-tqdLBUrODX4",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/18/politics/republican-cornyn-blocks-trump-judicial-nomination-gaiser-texas",
+          "title": "Sen. Cornyn blocks judicial nominee because Trump didn’t choose Texas",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbKccDW_Us5kbYA9dLlf00s4ohblsi6Qkqb51Z04vl53j6Q7I-tqdLBUrODX4"
+        },
+        {
+          "url": "https://thehill.com/homenews/senate/6229094-cornyn-blocks-non-texan-judge/",
+          "title": "Cornyn blocks Trump’s nomination to federal district court because he didn’t choose a Texan",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3ZNVM02b0ujp0Kf2ZHepJfYi9iitWs0L8VgAAbJYz-k8v78uUmfwOLeQ3JZc"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/republican-senator-cornyn-blocks-trump-judicial-nominee-texas-2026-11-18/",
+          "title": "Republican Senator Cornyn blocks Trump judicial nominee in Texas",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYbNg8zKcRt0dzPvkWLyzkwiG-93YOwuzLQZRYUrFeIaXBR6j789RMJ7urjGU"
+        }
+      ]
+    },
+    {
+      "query": "the altruists",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T08:30:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-19/netflix-s-the-altruists-takes-a-sympathetic-view-of-sam-bankman-fried",
+        "https://www.theguardian.com/tv-and-radio/2026/nov/19/the-altruists-review-anthony-boyle-julia-garner",
+        "https://www.hollywoodreporter.com/tv/tv-reviews/the-altruists-review-julia-garner-anthony-boyle-netflix-1236758009/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC2_Pyt8ftzMcvgQN975PRb1bFglsAK3LxxzZDuxTRVIkERtlpJwpItQeHp2w",
+      "image_credit": "Bloomberg",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-19/netflix-s-the-altruists-takes-a-sympathetic-view-of-sam-bankman-fried",
+          "title": "Netflix’s Sam Bankman-Fried Show Offers a Different Version of the Story",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC2_Pyt8ftzMcvgQN975PRb1bFglsAK3LxxzZDuxTRVIkERtlpJwpItQeHp2w"
+        },
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/19/the-altruists-review-anthony-boyle-julia-garner",
+          "title": "The Altruists review – two of TV’s best actors light up this chaotic crypto tale",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNwzeb6SFM2QYA965SNpkBXmOzBftFmeayoQcphEej4Z76ZXExR2R1vKZlV0"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-reviews/the-altruists-review-julia-garner-anthony-boyle-netflix-1236758009/",
+          "title": "'The Altruists' Review: Julia Garner, Anthony Boyle in FTX Drama",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoU4WnYE6PCfaA9juRkaU-QabK0ya3iQi35mpmF2gMDQLlreA3AR7XuB0BiCU"
+        }
+      ]
+    },
+    {
+      "query": "trinidad",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T08:20:00Z",
+      "related_news_urls": [
+        "https://tt.usembassy.gov/united-states-partners-with-odpm-to-enhance-disaster-response-capacity-through-250000-humanitarian-assistance-project/",
+        "https://trinidadexpress.com/news/local/tstt-goes-after-12-million/article_35931c55-f2fd-495e-835c-3f304d40b495.html",
+        "https://www.winnmediaskn.com/tstt-goes-after-12-million-pre-action-letter-to-recover-money-from-tech-company/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWc40t7rWp5Re-QwrjQ2Bt--sukL5VHGGNLckLkwhUJEa6G5wwkKyykNGDhDw",
+      "image_credit": "U.S. Embassy in Trinidad & Tobago (.gov)",
+      "news": [
+        {
+          "url": "https://tt.usembassy.gov/united-states-partners-with-odpm-to-enhance-disaster-response-capacity-through-250000-humanitarian-assistance-project/",
+          "title": "United States Partners with ODPM To Enhance Disaster Response Capacity Through $250,000 Humanitarian Assistance Project",
+          "publisher": "U.S. Embassy in Trinidad & Tobago (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWc40t7rWp5Re-QwrjQ2Bt--sukL5VHGGNLckLkwhUJEa6G5wwkKyykNGDhDw"
+        },
+        {
+          "url": "https://trinidadexpress.com/news/local/tstt-goes-after-12-million/article_35931c55-f2fd-495e-835c-3f304d40b495.html",
+          "title": "TSTT goes after $12 million",
+          "publisher": "Trinidad Express Newspapers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0ej7Y1OsjfHfRqSKwSJwO9-vLRzChsfisAjXqA8P0vXpsfSstzVRUROSoFiQ"
+        },
+        {
+          "url": "https://www.winnmediaskn.com/tstt-goes-after-12-million-pre-action-letter-to-recover-money-from-tech-company/",
+          "title": "TSTT goes after $12 million Pre-action letter to recover money from tech company",
+          "publisher": "WINNFM 98.9",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSENqO5J-Gko-bhQt-XFcvi_zzXujIUehUukcVxhWSlXvM3vRt0u1qVE_OxVZk"
+        }
+      ]
+    },
     {
       "query": "gta 6 bigfoot",
       "approx_searches": "100+",
@@ -38,6 +143,41 @@
           "publisher": "GameSpot",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUYZS0LQHbt1-1JVSXPpyOchItBMGkofKOkzsZA-gpIGRjTp5lMHWEbGv8yNE"
+        }
+      ]
+    },
+    {
+      "query": "housing",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T08:10:00Z",
+      "related_news_urls": [
+        "https://www.ft.com/content/9450175e-3da3-4df3-bd93-050683bbb98a?syn-25a6b1a6=1",
+        "https://www.msn.com/en-us/news/other/ar-AA2hIaHg",
+        "https://www.cnbc.com/2026/11/18/two-new-housing-reports-point-to-bleak-winter-ahead.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Xx2xwKdq09XhTzVWOAzDX8moA-XKEVYa6OiVaXXS8ANtGYKZ4awC4OFhstg",
+      "image_credit": "Financial Times",
+      "news": [
+        {
+          "url": "https://www.ft.com/content/9450175e-3da3-4df3-bd93-050683bbb98a?syn-25a6b1a6=1",
+          "title": "Angry America and its housing market",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Xx2xwKdq09XhTzVWOAzDX8moA-XKEVYa6OiVaXXS8ANtGYKZ4awC4OFhstg"
+        },
+        {
+          "url": "https://www.msn.com/en-us/news/other/ar-AA2hIaHg",
+          "title": "US pending home sales tumble to record low in October",
+          "publisher": "MSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4_VeI1qAKa0oeMfX7hTMS233nk3TGmfAYyTfK6Qa79SBaHNO7wPp-VIV8pxI"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/18/two-new-housing-reports-point-to-bleak-winter-ahead.html",
+          "title": "Two new housing reports point to bleak winter ahead, with record low sales",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRc4v6D9J-AzQfZx-CBszQqrcLRJ4Bqlrg1ObeIS-T2bx2qx2_U-FlR4Vt5ZrE"
         }
       ]
     },
@@ -77,37 +217,37 @@
       ]
     },
     {
-      "query": "cyber attacks",
-      "approx_searches": "2000+",
+      "query": "michele lamy jaden smith",
+      "approx_searches": "200+",
       "published_at": "2026-11-19T07:50:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/18/tech/whats-causing-outages",
-        "https://www.theatlantic.com/ideas/2026/11/major-server-outage-response/689486/",
-        "https://www.foxbusiness.com/technology/cybersecurity-expert-sounds-alarm-over-us-infrastructure-vulnerabilities-amid-widespread-outages"
+        "https://www.prestigeonline.com/in/lifestyle/everything-to-know-about-michele-lamy-controversy-jaden-smith/",
+        "https://t2online.in/goodlife/people/is-jaden-smith-dating-82-year-old-michele-lamy-or-are-the-viral-pics-ai-/2009310",
+        "https://www.ndtv.com/offbeat/rumour-or-real-what-to-know-about-viral-relationship-photo-of-jaden-smith-and-michele-lamy-12325723"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIEO-GFTQ1kp0ZC8G7M0UcyB6LtY1hSyLrfyPbt6I8IEoRJ-bPzJdAaRjAEdc",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eC0JtH8CQtzLNPctvPBUKTBfoEav-t_gnwR5ljmcnV1TTLoYOMZe0NSSvVM",
+      "image_credit": "Prestige Online - Singapore",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/18/tech/whats-causing-outages",
-          "title": "What’s causing all these outages? The internet is held together with shoestring and bubblegum",
-          "publisher": "CNN",
+          "url": "https://www.prestigeonline.com/in/lifestyle/everything-to-know-about-michele-lamy-controversy-jaden-smith/",
+          "title": "Who is Michèle Lamy, the woman the Internet can’t stop talking about?",
+          "publisher": "Prestige Online - Singapore",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIEO-GFTQ1kp0ZC8G7M0UcyB6LtY1hSyLrfyPbt6I8IEoRJ-bPzJdAaRjAEdc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eC0JtH8CQtzLNPctvPBUKTBfoEav-t_gnwR5ljmcnV1TTLoYOMZe0NSSvVM"
         },
         {
-          "url": "https://www.theatlantic.com/ideas/2026/11/major-server-outage-response/689486/",
-          "title": "What on Earth Is Going On?",
-          "publisher": "The Atlantic",
+          "url": "https://t2online.in/goodlife/people/is-jaden-smith-dating-82-year-old-michele-lamy-or-are-the-viral-pics-ai-/2009310",
+          "title": "Is Jaden Smith dating 82-year-old Michele Lamy or are the viral pics AI?",
+          "publisher": "t2ONLINE",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcpxOjLqVqESY-C0CJhDLGMjaZV-QGZFp8XRCfsxAkFnb6uq_sOyxlPLbTjl4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmq8oEho_8xvlH3Xvg7Em-btV0xRdmFneIw8U6_eJITJnR_k2w9oxAPxNmp1k"
         },
         {
-          "url": "https://www.foxbusiness.com/technology/cybersecurity-expert-sounds-alarm-over-us-infrastructure-vulnerabilities-amid-widespread-outages",
-          "title": "Cybersecurity expert sounds alarm over US infrastructure vulnerabilities amid widespread outages",
-          "publisher": "Fox Business",
+          "url": "https://www.ndtv.com/offbeat/rumour-or-real-what-to-know-about-viral-relationship-photo-of-jaden-smith-and-michele-lamy-12325723",
+          "title": "Rumour Or Real? What To Know About Viral Relationship Photo Of Jaden Smith And Michele Lamy",
+          "publisher": "NDTV",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQm0TdXCxjOLnrozLSxGOX55UUYIEx8-UUYHqM84MUT3jNGrBwKv3a0BFk8aoE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR76v510VeKbDannmGI3deSIVTJyteCKxDEcZ-DwxQJtQOjSbkNZE8dacLJ-lQ"
         }
       ]
     },
@@ -147,41 +287,6 @@
       ]
     },
     {
-      "query": "stanislaus wildlife care center",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T07:40:00Z",
-      "related_news_urls": [
-        "https://www.kcra.com/article/stanislaus-county-wildlife-center-fire-kills-animals/74472380",
-        "https://www.cbsnews.com/sacramento/news/stanislaus-wildlife-center-fire-hughson/",
-        "https://www.modbee.com/news/local/article318150687.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvsSz8VI2eKRUEAieBzyOSoXkKVsZt2tvZ2AU4mggVreQygHOph1KglThCUmQ",
-      "image_credit": "KCRA",
-      "news": [
-        {
-          "url": "https://www.kcra.com/article/stanislaus-county-wildlife-center-fire-kills-animals/74472380",
-          "title": "Fire at Stanislaus County wildlife center kills approximately 40 animals",
-          "publisher": "KCRA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvsSz8VI2eKRUEAieBzyOSoXkKVsZt2tvZ2AU4mggVreQygHOph1KglThCUmQ"
-        },
-        {
-          "url": "https://www.cbsnews.com/sacramento/news/stanislaus-wildlife-center-fire-hughson/",
-          "title": "Most animals inside Stanislaus wildlife center killed in fire",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdW-CUHSebfkKF5aBAIDkcLjPaSeYhDJ0LYRzUL8JHIPd1O4NCcwWFGwa8dv4"
-        },
-        {
-          "url": "https://www.modbee.com/news/local/article318150687.html",
-          "title": "Blaze at Stanislaus Wildlife Care Center kills nearly all animals in hospital building",
-          "publisher": "Modesto Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRa9n2S9cYnRALGvno1Ofwyu_iBN4liGQy1RSzQTtx9gvHMofKsaF4rXQkNM"
-        }
-      ]
-    },
-    {
       "query": "joe jonas",
       "approx_searches": "200+",
       "published_at": "2026-11-19T07:40:00Z",
@@ -217,142 +322,37 @@
       ]
     },
     {
-      "query": "las vegas weather",
+      "query": "stanislaus wildlife care center",
       "approx_searches": "100+",
-      "published_at": "2026-11-19T07:30:00Z",
+      "published_at": "2026-11-19T07:40:00Z",
       "related_news_urls": [
-        "https://www.8newsnow.com/weather/storm-systems-bring-rain-chances-to-las-vegas-starting-thursday/",
-        "https://www.fox5vegas.com/2026/11/16/showers-cooler-temperatures-expected-las-vegas-this-week/",
-        "https://www.reviewjournal.com/local/weather/wind-rain-bring-unsettled-week-of-weather-to-las-vegas-3916150/?utm_campaign=widget&utm_medium=section_row&utm_source=traffic&utm_term=Wind%2C%20rain%20bring%20%E2%80%98unsettled%E2%80%99%20week%20of%20weather%20to%20Las%20Vegas"
+        "https://www.kcra.com/article/stanislaus-county-wildlife-center-fire-kills-animals/74472380",
+        "https://www.cbsnews.com/sacramento/news/stanislaus-wildlife-center-fire-hughson/",
+        "https://www.modbee.com/news/local/article318150687.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvLXSVR24zqaa1Td6nvXNL8fOFopJFWEFizIAz4-e7N2t5ARZt2trs6y2SPQ8",
-      "image_credit": "KLAS 8 News Now",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvsSz8VI2eKRUEAieBzyOSoXkKVsZt2tvZ2AU4mggVreQygHOph1KglThCUmQ",
+      "image_credit": "KCRA",
       "news": [
         {
-          "url": "https://www.8newsnow.com/weather/storm-systems-bring-rain-chances-to-las-vegas-starting-thursday/",
-          "title": "Storm systems bring rain chances to Las Vegas starting Thursday",
-          "publisher": "KLAS 8 News Now",
+          "url": "https://www.kcra.com/article/stanislaus-county-wildlife-center-fire-kills-animals/74472380",
+          "title": "Fire at Stanislaus County wildlife center kills approximately 40 animals",
+          "publisher": "KCRA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvLXSVR24zqaa1Td6nvXNL8fOFopJFWEFizIAz4-e7N2t5ARZt2trs6y2SPQ8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvsSz8VI2eKRUEAieBzyOSoXkKVsZt2tvZ2AU4mggVreQygHOph1KglThCUmQ"
         },
         {
-          "url": "https://www.fox5vegas.com/2026/11/16/showers-cooler-temperatures-expected-las-vegas-this-week/",
-          "title": "Shower chances and wind move back into Las Vegas",
-          "publisher": "FOX5 Vegas",
+          "url": "https://www.cbsnews.com/sacramento/news/stanislaus-wildlife-center-fire-hughson/",
+          "title": "Most animals inside Stanislaus wildlife center killed in fire",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQFH0Mat9vYzdIf2Lz07hviryASLgzDgmqsskQoFF50RbKjUX45NmeTPlx9Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdW-CUHSebfkKF5aBAIDkcLjPaSeYhDJ0LYRzUL8JHIPd1O4NCcwWFGwa8dv4"
         },
         {
-          "url": "https://www.reviewjournal.com/local/weather/wind-rain-bring-unsettled-week-of-weather-to-las-vegas-3916150/?utm_campaign=widget&utm_medium=section_row&utm_source=traffic&utm_term=Wind%2C%20rain%20bring%20%E2%80%98unsettled%E2%80%99%20week%20of%20weather%20to%20Las%20Vegas",
-          "title": "Wind, rain bring ‘unsettled’ week of weather to Las Vegas",
-          "publisher": "Las Vegas Review-Journal",
+          "url": "https://www.modbee.com/news/local/article318150687.html",
+          "title": "Blaze at Stanislaus Wildlife Care Center kills nearly all animals in hospital building",
+          "publisher": "Modesto Bee",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREA-uxU3yrqi69h_a9mTpUVGk4RywlJE8QdJCgY24igp4_4FDDrR7oXKXdN_k"
-        }
-      ]
-    },
-    {
-      "query": "app",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T07:30:00Z",
-      "related_news_urls": [
-        "https://www.theverge.com/tech/1036796/google-android-app-games-developers-foldables-support",
-        "https://www.phonearena.com/news/google-play-puts-galaxy-z-fold-8-and-pixel-11-pro-fold-apps-on-the-clock_id184905",
-        "https://www.androidpolice.com/google-play-is-getting-serious-about-foldables/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFsGlMoicM1XyJVKuvWgIP8bNA0SWbEn1yiu0wqGN8T6AHv7ZwD7niXKsbwq8",
-      "image_credit": "The Verge",
-      "news": [
-        {
-          "url": "https://www.theverge.com/tech/1036796/google-android-app-games-developers-foldables-support",
-          "title": "Google is forcing Android app developers to properly support foldables",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFsGlMoicM1XyJVKuvWgIP8bNA0SWbEn1yiu0wqGN8T6AHv7ZwD7niXKsbwq8"
-        },
-        {
-          "url": "https://www.phonearena.com/news/google-play-puts-galaxy-z-fold-8-and-pixel-11-pro-fold-apps-on-the-clock_id184905",
-          "title": "Google Play puts Galaxy Z Fold 8 and Pixel 11 Pro Fold apps on the clock",
-          "publisher": "PhoneArena",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbtYhTfjAsjUL2iD3Ekpmk-5OdTLRAcst5vlrJfvPyf-_7-Vqea_D3RCKvjxA"
-        },
-        {
-          "url": "https://www.androidpolice.com/google-play-is-getting-serious-about-foldables/",
-          "title": "Google Play is about to crack down on app support for foldables",
-          "publisher": "Android Police",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREMj3ObyBsaJMRM4DiBBmcuxL9dJ5WkY9ye9vVS3UoGJiJp4AtJslR_AQ8XP8"
-        }
-      ]
-    },
-    {
-      "query": "should i spare arnold gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T07:20:00Z",
-      "related_news_urls": [
-        "https://www.gamersheroes.com/game-guides/grand-theft-auto-vi-choices-guide/",
-        "https://www.videogameschronicle.com/guide/gta-6-hey-arnold-walkthrough/",
-        "https://suaragarut.id/en/gta-6-hey-arnold-mission-choices"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzLmvXqmiwLrvQ3FWXnNSBa3S47DRWgD1CjXJtndKui1dyr2rihmVblHgHXv8",
-      "image_credit": "Gamers Heroes",
-      "news": [
-        {
-          "url": "https://www.gamersheroes.com/game-guides/grand-theft-auto-vi-choices-guide/",
-          "title": "Grand Theft Auto VI Choices Guide",
-          "publisher": "Gamers Heroes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzLmvXqmiwLrvQ3FWXnNSBa3S47DRWgD1CjXJtndKui1dyr2rihmVblHgHXv8"
-        },
-        {
-          "url": "https://www.videogameschronicle.com/guide/gta-6-hey-arnold-walkthrough/",
-          "title": "GTA 6 Hey Arnold Walkthrough",
-          "publisher": "Video Games Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHkG8LisvWeEqMR--iY5fZ8133kI6E3Eilax66u4eaN3thFHrxYBA5PSJQzVk"
-        },
-        {
-          "url": "https://suaragarut.id/en/gta-6-hey-arnold-mission-choices",
-          "title": "GTA 6 Gives Players Two Choices in Hey Arnold Mission",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQE_XguM4gPd2Y9zwIVFUy_fCh3Mj3HhQJdC0zMalDNAngdTi3WGL-7kx3kMMM"
-        }
-      ]
-    },
-    {
-      "query": "unwanted attention gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T07:00:00Z",
-      "related_news_urls": [
-        "https://www.videogameschronicle.com/guide/gta-6-unwanted-attention-mission-walkthrough/",
-        "https://suaragarut.id/en/gta-six-unwanted-attention-walkthrough",
-        "https://www.gtaboom.com/gta-6-unwanted-attention-walkthrough-40ae"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrD5SZC__P3o3NBTkHt7_1dWgtI4XKZBeLqrDxkhUxQMsClcOsuWPhv3uJ7kA",
-      "image_credit": "Video Games Chronicle",
-      "news": [
-        {
-          "url": "https://www.videogameschronicle.com/guide/gta-6-unwanted-attention-mission-walkthrough/",
-          "title": "GTA 6 Unwanted Attention Mission Walkthrough",
-          "publisher": "Video Games Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrD5SZC__P3o3NBTkHt7_1dWgtI4XKZBeLqrDxkhUxQMsClcOsuWPhv3uJ7kA"
-        },
-        {
-          "url": "https://suaragarut.id/en/gta-six-unwanted-attention-walkthrough",
-          "title": "GTA 6 Guides Players Through the Unwanted Attention Mission",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYo5tAGfnvWEhkDQ8gg62a3gt1NAXfIxqlUe_J5df200vcU2-zFoa3ivpViMY"
-        },
-        {
-          "url": "https://www.gtaboom.com/gta-6-unwanted-attention-walkthrough-40ae",
-          "title": "Article (spoilers)",
-          "publisher": "GTA BOOM",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEgPdSQYZn_9iY4yJhd-uYuEbktiKziSQaDkmIc1sA1zqYEJeuRR4lXEgZO14"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRa9n2S9cYnRALGvno1Ofwyu_iBN4liGQy1RSzQTtx9gvHMofKsaF4rXQkNM"
         }
       ]
     }
