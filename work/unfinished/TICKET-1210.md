@@ -1,19 +1,19 @@
 ---
 issue: 1210
-state: implementing
+state: deployed
 dot: "🟡"
-progress_percent: 44
-progress_basis: "4/9 source capture, account registration, reader/UI patch, tests added; CI/review/merge/deploy/Android incomplete"
-sessions_spent: 1
+progress_percent: 70
+progress_basis: "7/10 original reader milestones: screenshot transcription, account allowlist, isolated UI/context, tests, CI, independent review and merge, Worker deployment verified; live X read and physical Android pending; screenshot archive follow-up PR under review"
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: "ChatGPT GitHub connector (unclaimed Bubbles lease)"
 lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-next_action: "Verify PR #1983 exact-head tests and obtain independent review before any merge or Worker deploy"
-merged: false
-deployed: false
+next_action: "Review exact-head screenshot archive PR; check the first scheduled StarCraftCo X scan and verify on Android"
+merged: true
+deployed: true
 live_verified: false
 ---
 
@@ -43,3 +43,12 @@ live_verified: false
 - Lease: not claimed (null job lease, null expiry). This ChatGPT GitHub write is a real branch/PR action but not a signed Bubbles executor claim.
 - Next executable step: check PR #1983 exact-head workflow results, fix any failing tests, acquire independent review, then only use the authorized source/Worker deployment path. Do not infer deployment from a PR or GitHub Pages build.
 - Stop condition: do not add @StarCraftCo to the privileged owner inbox or perform X posting, wallet, security, or private browsing actions.
+
+## Session 2 — 2026-11-19 · source archive and production readback
+- PR #1983 was independently reviewed, merged at `791c23b620547535122de00af2667cabbd6d0c71`, and Cloudflare Worker deployment `35461749-c6a3-4193-8d39-ab8d304cc2c1` serves version `97a4c598-a32d-4e37-bea9-a9f9e93aa639` at 100%, with BROWSER/DB bindings and existing hourly cron unchanged.
+- Direct Cloudflare D1 readback: no `StarCraftCo` source scan row yet; `main` last checked 2026-11-19T22:17:23.834Z and `IntegraAI` last checked 2026-11-19T18:17:23.390Z, both blocked with `no_visible_public_owner_posts_after_retry`.
+- Independently rendered mobile-width Browser Run HTML confirms `/api/bubbles/public-x/health` lists StarCraftCo `reference_only`, `not_run`; `/api/bubbles/public-x/context?account=StarCraftCo` returns empty items, not a successful X import. `https://x.com/StarCraftCo` returned the Chromium access-denied document, not real X post IDs.
+- Follow-up branch `feat/starcraftco-screenshot-archive-1210` adds source-labeled technical screenshot excerpts to the existing X reader Quick Card, with native Android-friendly expandable sections and a regression test. The fallback is not presented as live fetched posts and does not populate the owner command inbox.
+- Source HTML static assertions 9/9 passed in this chat; full repository CI and physical Android acceptance are NOT yet claimed for this follow-up.
+- Distinct states: original reader **deployed**, screenshot archive **source staged**, live StarCraftCo X scan **blocked/not run**, physical Android **not verified**.
+- Next: open/review follow-up PR, inspect exact-head CI; verify first scheduled StarCraftCo scan via D1 and physical Android. Do not claim live X capture when provider denies access.
