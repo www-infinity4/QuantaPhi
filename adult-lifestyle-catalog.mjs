@@ -37,7 +37,7 @@ export const ADULT_LIFESTYLE_KITS=Object.freeze([
  kit('room-party','Room and party setup','Bring lighting, sound, decorations and event ideas together before checking separate retailers for current offers.',['philips-hue','sonos','etsy','eventbrite']),
  kit('lingerie-wellness','Lingerie and wellness','Compare original fashion boutiques alongside provider-led men’s wellness information.',['adore-me','savage-x','agent-provocateur','hims']),
  kit('glass-lounge','Glass and coffee lounge','Glassware, specialty coffee and room audio; no tobacco, nicotine or mushroom products.',['grav','coffee-coconuts','sonos']),
- kit('special-occasion','Special occasion','Combine an outfit, a restaurant, a spa idea and a maker gift from original providers.',['agent-provocateur','opentable','spafinder','etsy'])
+ kit('special-occasion','Special occasion','Combine an outfit, a restaurant, a spa idea and a maker gift from original providers.',['agent-provocateur','opentable','spafinder','etsy']),
  kit('adult-video-links','Adult video links','Open the submitted external adult video on its source website only. No hosting, embedded player or publisher authorization is claimed.',['xgroovy-205466'],true)
 ]);
 export function sourcesForKit(id){
