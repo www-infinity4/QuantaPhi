@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T06:37:33.571884Z",
+  "checked_at": "2026-11-19T07:01:26.053721Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "strip club gta 6 location",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T06:40:00Z",
+      "related_news_urls": [
+        "https://www.dualshockers.com/gta-6-where-to-find-strip-clubs/",
+        "https://suaragarut.id/en/gta-six-strip-club-locations",
+        "https://screenrant.com/gta-6-strip-club-where-to-find/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc81es-isrnV-OZjTzX6zUyJc_FX_GcwkcwQvV4MMXayB6xHu_LwGHSbiLXlo",
+      "image_credit": "DualShockers",
+      "news": [
+        {
+          "url": "https://www.dualshockers.com/gta-6-where-to-find-strip-clubs/",
+          "title": "GTA 6: Where to Find Strip Clubs",
+          "publisher": "DualShockers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc81es-isrnV-OZjTzX6zUyJc_FX_GcwkcwQvV4MMXayB6xHu_LwGHSbiLXlo"
+        },
+        {
+          "url": "https://suaragarut.id/en/gta-six-strip-club-locations",
+          "title": "GTA 6 Features Three Strip Clubs Across Vice City",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXKsEo2kwo_c7Zr1PE2o7U4-QBpCxi5ufF_nPs8ypYc9lP5A7gjTlxvJrP8lM"
+        },
+        {
+          "url": "https://screenrant.com/gta-6-strip-club-where-to-find/",
+          "title": "GTA 6's First Strip Club Is Super Easy To Find",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRl1wMNhrc7gaYKUPA0oQJpKIVd2gV2iJETzVBUvi8K1hdPwbJ1fuLukkzBFEc"
+        }
+      ]
+    },
+    {
+      "query": "tv",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T06:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/culture/article/20261117-10-of-the-best-tv-shows-to-watch-this-december",
+        "https://ca.news.yahoo.com/harry-potter-pride-prejudice-10-103600746.html",
+        "https://www.latimes.com/entertainment-arts/business/story/2026-11-18/skydance-shakes-up-tv-by-collapsing-two-prominent-studios-into-one"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-C1o6Az-2ax_9Rtub7kMH9VRH_jeE9EL1OTrDQkpN3zSlH1EZ4VzTAn0lixg",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/culture/article/20261117-10-of-the-best-tv-shows-to-watch-this-december",
+          "title": "Harry Potter to Pride and Prejudice: 10 of the best TV shows to watch this December",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-C1o6Az-2ax_9Rtub7kMH9VRH_jeE9EL1OTrDQkpN3zSlH1EZ4VzTAn0lixg"
+        },
+        {
+          "url": "https://ca.news.yahoo.com/harry-potter-pride-prejudice-10-103600746.html",
+          "title": "Harry Potter to Pride and Prejudice: 10 of the best TV shows to watch this December",
+          "publisher": "Yahoo News Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTODnUukElV_t7SZiWA56nGnY9eCHdC9_ELx39R0ppsCKbZu9aESD4uDXnpCIk"
+        },
+        {
+          "url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-18/skydance-shakes-up-tv-by-collapsing-two-prominent-studios-into-one",
+          "title": "Skydance shakes up TV by collapsing two prominent studios into one",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQl3egn2LKhkqWKpwqvkwCdMe6fiWonpSGhRjlSB9HPGF-OdnUL-Avr8hU87o"
+        }
+      ]
+    },
+    {
+      "query": "quinnen williams press conference response",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-19T06:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys",
+        "https://sports.yahoo.com/articles/hates-nfl-fans-awe-dallas-053701716.html",
+        "https://www.dallascowboys.com/news/zero-to-100-boosted-sack-numbers-in-last-5-games"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6ptnK5yopBT-tKSGPhSQSqlIiEK9IfI_BWmxx0Gz8DhwO71fTj7Qv_TPq1eU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys",
+          "title": "Sources: Pettine to take over defensive playcalling for Cowboys; Parker still DC",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6ptnK5yopBT-tKSGPhSQSqlIiEK9IfI_BWmxx0Gz8DhwO71fTj7Qv_TPq1eU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/hates-nfl-fans-awe-dallas-053701716.html",
+          "title": "‘Hates it here’ – NFL fans in awe as Dallas Cowboys star repeats answer 12 times in press conference",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5m1hyPz55jWg6Z0rzNNi87yFpwxh2isspI6Y7VtFKl6bOa_DQgZC_2qei-O8"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/zero-to-100-boosted-sack-numbers-in-last-5-games",
+          "title": "Zero to 100: Boosted sack numbers in last 5 games",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLicv-u4nceKJZAUgcOKLegxGG8QdSnHw0X-PPofU-1ovIuNTp_64EnT-z7vo"
+        }
+      ]
+    },
+    {
+      "query": "david montgomery",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T06:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/david-montgomery-has-no-injury-designation-for-thursday-woody-marks-ruled-out",
+        "https://sports.yahoo.com/articles/david-montgomery-ready-play-week-210053548.html",
+        "https://www.profootballrumors.com/2026/11/texans-getting-rb-david-montgomery-back-in-week-11-rule-out-marvin-harrison-danielle-hunter"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS88c98jyPsC3vETYRMkDEfjXNkP90BOxnhOLFjM-snHMuJfFRkuCM9trckCxw",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/david-montgomery-has-no-injury-designation-for-thursday-woody-marks-ruled-out",
+          "title": "David Montgomery has no injury designation for Thursday; Woody Marks ruled out",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS88c98jyPsC3vETYRMkDEfjXNkP90BOxnhOLFjM-snHMuJfFRkuCM9trckCxw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/david-montgomery-ready-play-week-210053548.html",
+          "title": "David Montgomery ready to play in Week 11",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuuyyHC69Z_sBA5Drf_LaZ0aRag2wNsgcwgBTMWBgEtNJwPz8fDm5pRaIjRMo"
+        },
+        {
+          "url": "https://www.profootballrumors.com/2026/11/texans-getting-rb-david-montgomery-back-in-week-11-rule-out-marvin-harrison-danielle-hunter",
+          "title": "Texans Getting RB David Montgomery Back In Week 11; Rule Out Marvin Harrison, Danielle Hunter",
+          "publisher": "ProFootballRumors.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTva5xWhEdAn-XYFsjcUG99K9MaxwjpGVlUjsRWZNE9ld6g_Phox_UaFQ7qOI8"
+        }
+      ]
+    },
+    {
+      "query": "high school student",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T06:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit",
+        "https://www.usatoday.com/story/news/nation/2026/11/19/baltimore-students-lawsuit-ai-gun-alert-chips/92855684007/",
+        "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLFRi-VMsl3DXAaCeX9Pgek69l9yiaAfB8WJoxqSErifFfwk448tUX5qZfG7w",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit",
+          "title": "Four Maryland high school students sue after AI mistakes Doritos bag for gun",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLFRi-VMsl3DXAaCeX9Pgek69l9yiaAfB8WJoxqSErifFfwk448tUX5qZfG7w"
+        },
+        {
+          "url": "https://www.usatoday.com/story/news/nation/2026/11/19/baltimore-students-lawsuit-ai-gun-alert-chips/92855684007/",
+          "title": "Baltimore students sue over AI that allegedly mistook Doritos bag for gun",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7rnCA_Aneyhy7GaHPkYz9fwKafSWanayan54AjTs80oqzXJ7tW3fY_B9vxok"
+        },
+        {
+          "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
+          "title": "Lawyers’ Committee Files Lawsuit on Behalf of Black Students Detained and Searched Due to AI Alert Falsely Identifying a Bag of Chips as a Firearm",
+          "publisher": "Lawyers' Committee for Civil Rights Under Law",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZUplXjCFcaAQXCa1q9XhWOedZOTpmOC5YvcbaQr4nQ5bDg-iUC_kT_VFRNKo"
+        }
+      ]
+    },
+    {
+      "query": "fresno weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T06:30:00Z",
+      "related_news_urls": [
+        "https://mavensnotebook.com/2026/11/16/daily-digest-11-16-soaking-california-storms-continue-this-week-delta-levees-may-be-tested-from-multiple-sides-this-winter-plastic-waste-study-shows-long-paths-through-waterways-dangerous-surf-pe/",
+        "https://abc30.com/post/storm-brings-hazardous-road-conditions-local-agencies-prepare-fresno-county/20039286/",
+        "https://www.modbee.com/news/weather-news/article318102868.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiYdEZR-szJFW2rIL_eNEGUlGN6w6n04NHuDdtmLzseNpROwqlBFx2laAAMPE",
+      "image_credit": "Maven's Notebook",
+      "news": [
+        {
+          "url": "https://mavensnotebook.com/2026/11/16/daily-digest-11-16-soaking-california-storms-continue-this-week-delta-levees-may-be-tested-from-multiple-sides-this-winter-plastic-waste-study-shows-long-paths-through-waterways-dangerous-surf-pe/",
+          "title": "DAILY DIGEST, 11/16: Soaking California storms continue this week; Delta levees may be tested from multiple sides this winter; Plastic waste study shows long paths through waterway",
+          "publisher": "Maven's Notebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiYdEZR-szJFW2rIL_eNEGUlGN6w6n04NHuDdtmLzseNpROwqlBFx2laAAMPE"
+        },
+        {
+          "url": "https://abc30.com/post/storm-brings-hazardous-road-conditions-local-agencies-prepare-fresno-county/20039286/",
+          "title": "Storm brings hazardous road conditions as local agencies prepare across Fresno County",
+          "publisher": "ABC30 Fresno",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQF1aL_8lx-oLVKP80V2hudbj7hY53Qy5gQu_AKDm9eoa2OIxpZX9UL5stpGUA"
+        },
+        {
+          "url": "https://www.modbee.com/news/weather-news/article318102868.html",
+          "title": "How much rain has fallen in Modesto? Area braces for more with ‘stronger storm’",
+          "publisher": "Modesto Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ohkgsaV3SvPbd-aGpEN1z-61Lc3t5ImI5CtpK7QiUHlMUrNlmP_CZI1A3Gc"
+        }
+      ]
+    },
+    {
+      "query": "diesel fuel",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T06:20:00Z",
+      "related_news_urls": [
+        "https://www.kmaland.com/news/triple-a-report-iowa-gas-prices-tumble/article_27faeff0-0a4a-4982-8229-6201c65e559e.html",
+        "https://www.ktvo.com/news/local/falling-gas-prices-across-tri-states-continue-with-missouri-seeing-cheapest-prices/article_2aa1062a-19bd-4817-b882-c4f22189a00e.html",
+        "https://www.businessrecord.com/iowa-fuel-prices-decrease-by-25-cents-since-last-week/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvCOA02SACSDuhWzXCdiBuX4U0FY782Kn56VN7Ww-87JXkrtzHP-9zaCPm3bQ",
+      "image_credit": "KMAland.com",
+      "news": [
+        {
+          "url": "https://www.kmaland.com/news/triple-a-report-iowa-gas-prices-tumble/article_27faeff0-0a4a-4982-8229-6201c65e559e.html",
+          "title": "Triple A report: Iowa gas prices tumble",
+          "publisher": "KMAland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvCOA02SACSDuhWzXCdiBuX4U0FY782Kn56VN7Ww-87JXkrtzHP-9zaCPm3bQ"
+        },
+        {
+          "url": "https://www.ktvo.com/news/local/falling-gas-prices-across-tri-states-continue-with-missouri-seeing-cheapest-prices/article_2aa1062a-19bd-4817-b882-c4f22189a00e.html",
+          "title": "Falling gas prices across Tri-States continue with Missouri seeing cheapest prices",
+          "publisher": "KTVO",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpb2-Kg4OpMM6aTFUwCI9P5nxI3zf7TD2aGR2S6BnM3hUCFIUYs1Ed7BOIJ5Q"
+        },
+        {
+          "url": "https://www.businessrecord.com/iowa-fuel-prices-decrease-by-25-cents-since-last-week/",
+          "title": "Iowa fuel prices decrease by 25 cents since last week",
+          "publisher": "Business Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6cg_usFWYggR44PXhUOQFpzExQv798y_-UWL2yxqt67rNNiij0MHHGJPbgNs"
+        }
+      ]
+    },
+    {
+      "query": "fix railing gta 6",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T06:20:00Z",
+      "related_news_urls": [
+        "https://www.gamespot.com/articles/how-to-fix-all-projects-at-jasons-house-in-gta-6/",
+        "https://www.shacknews.com/article/151406/safehouse-repairs-gta6",
+        "https://www.videogameschronicle.com/guide/gta-6-jasons-house-how-to-fix-all-projects-around-jasons-house/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSCJXRxWe7yd1_ngBHOvB4-RJNVKPZKYXVAhZWKImw0vC6CtQc2vC3pFX7MU",
+      "image_credit": "GameSpot",
+      "news": [
+        {
+          "url": "https://www.gamespot.com/articles/how-to-fix-all-projects-at-jasons-house-in-gta-6/",
+          "title": "How To Fix All Projects At Jason’s House In GTA 6",
+          "publisher": "GameSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSCJXRxWe7yd1_ngBHOvB4-RJNVKPZKYXVAhZWKImw0vC6CtQc2vC3pFX7MU"
+        },
+        {
+          "url": "https://www.shacknews.com/article/151406/safehouse-repairs-gta6",
+          "title": "All Key Lento safehouse repairs in GTA 6",
+          "publisher": "Shacknews",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfP-Tk4ZVjT8CH3ygfoNVNNj4zSLwxLFhZTSkOKRi24HNdfdU25uNo5nfpqRo"
+        },
+        {
+          "url": "https://www.videogameschronicle.com/guide/gta-6-jasons-house-how-to-fix-all-projects-around-jasons-house/",
+          "title": "GTA 6 Jason’s House: How to fix all projects around Jason’s House",
+          "publisher": "Video Games Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ_e12DdC4Xs3MJr_cByKqKDAxK5K9xK-2oT8vHAwfJ3VVq8Ca2tub0VS1aU"
+        }
+      ]
+    },
     {
       "query": "fuel",
       "approx_searches": "2000+",
@@ -73,286 +353,6 @@
           "publisher": "Consequence of Sound",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQJmD97J9IB9QraKygM2lc4M_eypyTJgK5RUL3tfMJ2BT3U1v5GyIflXIAJ7w"
-        }
-      ]
-    },
-    {
-      "query": "fix railing gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T06:20:00Z",
-      "related_news_urls": [
-        "https://www.gamespot.com/articles/how-to-fix-all-projects-at-jasons-house-in-gta-6/",
-        "https://www.shacknews.com/article/151406/safehouse-repairs-gta6",
-        "https://www.videogameschronicle.com/guide/gta-6-jasons-house-how-to-fix-all-projects-around-jasons-house/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSCJXRxWe7yd1_ngBHOvB4-RJNVKPZKYXVAhZWKImw0vC6CtQc2vC3pFX7MU",
-      "image_credit": "GameSpot",
-      "news": [
-        {
-          "url": "https://www.gamespot.com/articles/how-to-fix-all-projects-at-jasons-house-in-gta-6/",
-          "title": "How To Fix All Projects At Jason’s House In GTA 6",
-          "publisher": "GameSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSCJXRxWe7yd1_ngBHOvB4-RJNVKPZKYXVAhZWKImw0vC6CtQc2vC3pFX7MU"
-        },
-        {
-          "url": "https://www.shacknews.com/article/151406/safehouse-repairs-gta6",
-          "title": "All Key Lento safehouse repairs in GTA 6",
-          "publisher": "Shacknews",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfP-Tk4ZVjT8CH3ygfoNVNNj4zSLwxLFhZTSkOKRi24HNdfdU25uNo5nfpqRo"
-        },
-        {
-          "url": "https://www.videogameschronicle.com/guide/gta-6-jasons-house-how-to-fix-all-projects-around-jasons-house/",
-          "title": "GTA 6 Jason’s House: How to fix all projects around Jason’s House",
-          "publisher": "Video Games Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ_e12DdC4Xs3MJr_cByKqKDAxK5K9xK-2oT8vHAwfJ3VVq8Ca2tub0VS1aU"
-        }
-      ]
-    },
-    {
-      "query": "kristen ruskey",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T06:20:00Z",
-      "related_news_urls": [
-        "https://people.com/before-parents-were-found-dead-dad-showed-warning-signs-nobody-caught-12263128",
-        "https://ktla.com/news/california/california-couple-carbon-monoxide-deaths-birthday-party-lawsuit/",
-        "https://www.sfgate.com/bayarea/article/calif-ruskeys-death-lawsuit-22529665.php"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxb5m69PIKc80sAdrbcgjKm-WIAZTq0k1Lz57WnqTtudrgwB3RAEMELVfVmhE",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/before-parents-were-found-dead-dad-showed-warning-signs-nobody-caught-12263128",
-          "title": "Before Parents Were Found Dead, Dad Showed Warning Signs Nobody Caught",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxb5m69PIKc80sAdrbcgjKm-WIAZTq0k1Lz57WnqTtudrgwB3RAEMELVfVmhE"
-        },
-        {
-          "url": "https://ktla.com/news/california/california-couple-carbon-monoxide-deaths-birthday-party-lawsuit/",
-          "title": "Beloved California couple found dead in waterfront mansion after birthday party",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR66CGodoY5E1JuueLIdLNSZr9Y8vYTzTJMCMFhmaVRZMr8_zQTLa1axLftt4g"
-        },
-        {
-          "url": "https://www.sfgate.com/bayarea/article/calif-ruskeys-death-lawsuit-22529665.php",
-          "title": "Calif. kids sue homeowner after both parents die at seaside mansion",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQe-EHmp3_XHHhc_NO6K8ApiCJyQq9m5iaNsUMvtYULvhnHxVzlsD7RCBxjzB8"
-        }
-      ]
-    },
-    {
-      "query": "the body season 2",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T06:20:00Z",
-      "related_news_urls": [
-        "https://defector.com/the-problem-with-3-body-problem-is-that-it-stinks",
-        "https://arstechnica.com/culture/2026/11/humanity-braces-for-an-alien-invasion-in-3-body-problem-s2-teaser/",
-        "https://variety.com/2026/tv/news/tv-news-roundup-week-of-nov-16-1236949183/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWd8KIdmb0lWBOg6UCReJFO0Tc6Q6ljGLPLpZ-e_9WlxP4OBs5KfU9qao4y0g",
-      "image_credit": "Defector",
-      "news": [
-        {
-          "url": "https://defector.com/the-problem-with-3-body-problem-is-that-it-stinks",
-          "title": "The Problem With ‘3 Body Problem’ Is That It Stinks",
-          "publisher": "Defector",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWd8KIdmb0lWBOg6UCReJFO0Tc6Q6ljGLPLpZ-e_9WlxP4OBs5KfU9qao4y0g"
-        },
-        {
-          "url": "https://arstechnica.com/culture/2026/11/humanity-braces-for-an-alien-invasion-in-3-body-problem-s2-teaser/",
-          "title": "Humanity braces for an alien invasion in 3 Body Problem S2 teaser",
-          "publisher": "Ars Technica",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw-1Lz-Yx4wNowN42W6zaa6SWjVNL5twkMQm1YWzZhGShRoKxZ7jbdLh147Sc"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/tv-news-roundup-week-of-nov-16-1236949183/",
-          "title": "‘3 Body Problem’ Sets Season 2 Release Date at Netflix (TV News Roundup)",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScapp_0Y67xSnwQCYG4JZRoDdptVc5f_pwkEgT4QrXs6znhWdsWbvXEKWOsMQ"
-        }
-      ]
-    },
-    {
-      "query": "monica barbaro",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T06:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/monica-barbaro-stuns-daring-black-034426881.html",
-        "https://wwd.com/pop-culture/celebrity-news/monica-barbaro-brandon-maxwell-gown-gq-men-of-the-year-1239416679/",
-        "https://www.barstoolsports.com/blog/3581099/alert-monica-barbaros-recent-red-carpet-fashion-deserves-one-final-click-an"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW7yFSlTs_u9BEgrGsloVTnZ-bYzCBfcb-L_XX09rikUy1OKR2YrIYwQvQ10",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/monica-barbaro-stuns-daring-black-034426881.html",
-          "title": "Monica Barbaro stuns in daring black dress with thigh-high split",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW7yFSlTs_u9BEgrGsloVTnZ-bYzCBfcb-L_XX09rikUy1OKR2YrIYwQvQ10"
-        },
-        {
-          "url": "https://wwd.com/pop-culture/celebrity-news/monica-barbaro-brandon-maxwell-gown-gq-men-of-the-year-1239416679/",
-          "title": "Monica Barbaro Contrasts in Plunging Black and White Brandon Maxwell Gown for GQ’s Men of the Year Party",
-          "publisher": "WWD",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIN7v_Cqks4OoRx6OrPDttwSdhEZWHx9ubrdNDEDlvmeVg43dLdC4aT719Cv8"
-        },
-        {
-          "url": "https://www.barstoolsports.com/blog/3581099/alert-monica-barbaros-recent-red-carpet-fashion-deserves-one-final-click-an",
-          "title": "ALERT: Monica Barbaro's Recent Red Carpet Fashion Deserves One Final Click (Since An All Out Cyber Attack Is Coming Within The Next 48 Hours, Per Jersey Jerry)",
-          "publisher": "Barstool Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCtnbc2ht0Ervzi3jVBSRLy0PpJE5jKqKz51qtshdGJykmlJ6vRedRPCYLrWw"
-        }
-      ]
-    },
-    {
-      "query": "amy poehler",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T06:10:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/tv/story/2026-11-18/amy-poehler-mike-schur-dig-holiday-preview-2026",
-        "https://www.today.com/video/amy-poehler-and-geraldine-viswanathan-talk-comedy-series-dig-273583685700",
-        "https://www.smh.com.au/culture/tv-and-radio/amy-poehler-dig-mike-schur-geraldine-viswanathan-interview-20261119-p61egh.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScJplYLVjXS_9fpzhWKgqtUJKb28C3-vO9L1n9PWT3BIdj1I-NWjc7p-i6Mgc",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/tv/story/2026-11-18/amy-poehler-mike-schur-dig-holiday-preview-2026",
-          "title": "From a pit in Pawnee to one in Greece: Amy Poehler and Mike Schur reunite for ‘Dig’",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScJplYLVjXS_9fpzhWKgqtUJKb28C3-vO9L1n9PWT3BIdj1I-NWjc7p-i6Mgc"
-        },
-        {
-          "url": "https://www.today.com/video/amy-poehler-and-geraldine-viswanathan-talk-comedy-series-dig-273583685700",
-          "title": "Stars of Comedy Series ‘Dig’ Talk Strong Female Characters",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJFq33YKkaYTnIIyV5RQ2LCbXtuSZ8TH7HSCe9PXV2SVMgXs10Hoy8WuwCzJk"
-        },
-        {
-          "url": "https://www.smh.com.au/culture/tv-and-radio/amy-poehler-dig-mike-schur-geraldine-viswanathan-interview-20261119-p61egh.html",
-          "title": "The new Parks and Recreation? Inside Amy Poehler’s long-awaited return to TV",
-          "publisher": "SMH.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMvR8SrhmWAa1dZeoO_XnqgIkkrpul0rLPallPnYz6ysB3EZLEPrzZ3156d14"
-        }
-      ]
-    },
-    {
-      "query": "cathay pacific",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T06:10:00Z",
-      "related_news_urls": [
-        "https://www.nerdwallet.com/travel/news/chase-transfer-partners-cathay-qantas",
-        "https://upgradedpoints.com/news/chase-adds-qantas-cathay-transfer-partners/",
-        "https://www.insideflyer.com/posts/chase-expands-rewards-transfers-with-two-airline-programs/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4yc1oRJJP47YVuQ3SuiUhqpphWJ3cVVRb4lu5T5r4qiDEkUWvV_8TG9aRoXA",
-      "image_credit": "NerdWallet",
-      "news": [
-        {
-          "url": "https://www.nerdwallet.com/travel/news/chase-transfer-partners-cathay-qantas",
-          "title": "Chase Adds Qantas, Cathay Pacific as Transfer Partners",
-          "publisher": "NerdWallet",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4yc1oRJJP47YVuQ3SuiUhqpphWJ3cVVRb4lu5T5r4qiDEkUWvV_8TG9aRoXA"
-        },
-        {
-          "url": "https://upgradedpoints.com/news/chase-adds-qantas-cathay-transfer-partners/",
-          "title": "Chase Ultimate Rewards Adds Not 1 but 2 Airline Transfer Partners",
-          "publisher": "Upgraded Points",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtN9uoah9HzaDU4FMjHH1KUum6LgzRbiuFM1tYj3mQJtMsMe8ngawO-g-3o8Q"
-        },
-        {
-          "url": "https://www.insideflyer.com/posts/chase-expands-rewards-transfers-with-two-airline-programs/",
-          "title": "Chase expands rewards transfers with two airline programs",
-          "publisher": "InsideFlyer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSazWsRE9CFEx-ENytiio6pfnPenSO0a9CKiTB6ps9btfvCddfA5UND54IWzn0"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 main character",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T06:10:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/games/2026/nov/09/grand-theft-auto-creators-gta",
-        "https://www.pbs.org/newshour/arts/the-long-wait-is-almost-over-heres-what-to-know-about-the-upcoming-release-of-grand-theft-auto-vi",
-        "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwe5DkKg8lE67K9u2TTzGjHP2D0EUYTsxP5fSZm4A6xIi3A_VnNEILuFNlDc",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/games/2026/nov/09/grand-theft-auto-creators-gta",
-          "title": "Crime pays: how Grand Theft Auto became a cultural colossus",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwe5DkKg8lE67K9u2TTzGjHP2D0EUYTsxP5fSZm4A6xIi3A_VnNEILuFNlDc"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/arts/the-long-wait-is-almost-over-heres-what-to-know-about-the-upcoming-release-of-grand-theft-auto-vi",
-          "title": "The long wait is almost over. Here's what to know about the upcoming release of 'Grand Theft Auto VI'",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpVXkKqgFuESsXhlzE_7oRmfMavTQh-cgc0FWw8FzbrIsM2KRgd-jBZs6S2cs"
-        },
-        {
-          "url": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
-          "title": "‘GTA 6’ Presales ‘Far in Excess’ of Expectations Ahead of Next Week’s Launch, Take-Two CEO Says",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe6D2hdsqu3Gusi3vyff-3VGSyM80FVd48wlWhpzECpRRdvlqqyJy62MZaT_o"
-        }
-      ]
-    },
-    {
-      "query": "emirates",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T06:10:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/energy/emirates-boss-says-fuel-not-demand-squeezing-airline-profits-2026-11-18/",
-        "https://africa.businessinsider.com/local/markets/emirates-president-tim-clark-says-fuel-not-demand-is-squeezing-profits-after-a-68/x8pq9jy",
-        "https://internationalfinance.com/aviation/emirates-posts-usd-903-million-half-year-profit-as-iran-war-hits-earnings/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXzZKqR-9GGaT207kV2yqrpBPhd25TsVBBAUCIFRq1CfispiWtnA3lbG4c944",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/energy/emirates-boss-says-fuel-not-demand-squeezing-airline-profits-2026-11-18/",
-          "title": "Emirates boss says fuel, not demand, squeezing airline profits",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXzZKqR-9GGaT207kV2yqrpBPhd25TsVBBAUCIFRq1CfispiWtnA3lbG4c944"
-        },
-        {
-          "url": "https://africa.businessinsider.com/local/markets/emirates-president-tim-clark-says-fuel-not-demand-is-squeezing-profits-after-a-68/x8pq9jy",
-          "title": "Emirates president Tim Clark says fuel, not demand, is squeezing profits after a 68% first-half fall, as African routes stay busy and he calls for $70 oil",
-          "publisher": "Business Insider Africa",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJGDFaTQWStcScRvoU6ymkir3BZ0ZrKEjcNMUCfImz1PxLyI0hZ62Jy0B46wI"
-        },
-        {
-          "url": "https://internationalfinance.com/aviation/emirates-posts-usd-903-million-half-year-profit-as-iran-war-hits-earnings/",
-          "title": "Emirates posts USD 903 million half-year profit as Iran war hits earnings",
-          "publisher": "https://internationalfinance.com/",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShQvfDmL6BYzlSFCsEK8djUDPCiEeUwWUMBnAWA2LkuN10P4By76xlv8St-mE"
         }
       ]
     }
