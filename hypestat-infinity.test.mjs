@@ -84,3 +84,60 @@ test('app forbids automatic network requests and unsafe DOM HTML rendering', () 
   assert.match(html, /Onion availability<\/small><strong>Not checked/);
   assert.match(html, /Dash \/ script claim<\/small><strong>Unverified/);
 });
+
+test('unified project has a safe discovery card and a full-surface Bubbles route', async () => {
+  const { findCard, cards, cardIntent } = await import('./bubbles-card-catalog.mjs');
+  const { findDiscovery, safeDiscovery } = await import('./quanta-feed-catalog.mjs');
+  const card = findCard('hypestat');
+  assert.equal(card?.id, 'hypestat-infinity');
+  assert.equal(card.url, '/hypestat-infinity.html');
+  assert.equal(card.surface, 'body', 'the navigation tabs must stay available in the full card');
+  assert.equal(cards.filter(c => c.id === card.id).length, 1);
+  for (const name of ['tor public records', 'google traffic', 'gemini traffic']) {
+    assert.equal(cardIntent('open ' + name)?.card?.id, card.id, name);
+  }
+  const discovery = findDiscovery(card.id);
+  assert.equal(discovery?.url, 'https://quantaphi.org/hypestat-infinity.html');
+  assert.ok(safeDiscovery(discovery));
+});
+
+test('earlier Tor design retains all seven dated records and safe source references', () => {
+  assert.match(html, /id="tab-tor"/);
+  assert.match(html, /id="view-tor"/);
+  assert.match(html, /id="tor-query"/);
+  assert.match(html, /id="tor-type"/);
+  const match = html.match(/<script type="application\/json" id="tor-record-data">([\s\S]*?)<\/script>/);
+  assert.ok(match, 'the previous Tor records must be included in the unified page');
+  const rows = JSON.parse(match[1]);
+  assert.equal(rows.length, 7);
+  assert.equal(rows.filter(r => r.type === 'enforcement').length, 3);
+  assert.ok(rows.some(r => r.title === 'BBC report on Tor traffic'));
+  assert.ok(rows.some(r => r.title === 'United States v. Levin'));
+  assert.match(rows.find(r => r.title === 'Xplay').label, /unverified/i);
+  for (const row of rows) assert.equal(C.safeSource(row.source), row.source);
+  assert.match(html, /historical.*live status/i);
+  const priorRoute = readFileSync(new URL('./tor-public-records.html', import.meta.url), 'utf8');
+  assert.ok(priorRoute.includes('url=./hypestat-infinity.html?view=tor'));
+  assert.ok(priorRoute.includes('href="./hypestat-infinity.html?view=tor"'));
+});
+
+test('homepage and full-size experiences mount the same project component', () => {
+  const home = readFileSync(new URL('./index.html', import.meta.url), 'utf8');
+  const experience = readFileSync(new URL('./quanta-card-experience.mjs', import.meta.url), 'utf8');
+  const deck = readFileSync(new URL('./oracle-card-deck.js', import.meta.url), 'utf8');
+  assert.match(home, /id="hypestatInfinityQuickCard"/);
+  assert.match(home, /href="\/hypestat-infinity\.html"/);
+  assert.match(home, /src="\/hypestat-infinity-card\.mjs/);
+  assert.match(experience, /mountHypeStatInfinityCard/);
+  assert.match(experience, /id==='hypestat-infinity'/);
+  assert.ok(deck.includes("['hypestatInfinityQuickCard','HypeStat Infinity · Tor & Google Research']"));
+  assert.ok(deck.includes("hypestatInfinityQuickCard:['hypestat-infinity','Research'"));
+});
+
+test('embedded component only constructs known same-origin workspace paths', async () => {
+  const { hypestatWorkspacePath, HYPESTAT_VIEWS } = await import('./hypestat-infinity-card.mjs');
+  assert.equal(HYPESTAT_VIEWS.length, 4);
+  assert.equal(hypestatWorkspacePath('tor', true), '/hypestat-infinity.html?view=tor&embed=1');
+  assert.equal(hypestatWorkspacePath('google'), '/hypestat-infinity.html?view=google');
+  assert.equal(hypestatWorkspacePath('https://unexpected.example/'), '/hypestat-infinity.html?view=records');
+});

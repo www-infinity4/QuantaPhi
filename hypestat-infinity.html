@@ -6,11 +6,12 @@
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="description" content="Infinity's public evidence and authorized aggregate traffic workspace. Search dated sources, separate estimates from measurements, and preserve research locally.">
-<title>HypeStat Infinity · Evidence & traffic</title>
+<title>HypeStat Infinity · Tor, Traffic &amp; Google</title>
 <style>
 :root{color-scheme:light;--paper:#fffdf8;--wash:#f6f0fb;--ink:#30243e;--muted:#65536f;--purple:#5f2c91;--line:#ddcdea;--gold:#79571b;--green:#23634f;--radius:24px;font:17px/1.65 system-ui,-apple-system,Roboto,sans-serif;letter-spacing:.012em;background:var(--paper);color:var(--ink)}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#ebdff8 0,transparent 46%),linear-gradient(150deg,#fffdf8,#f8f3fc 64%,#fffaf0);min-height:100vh}button,input,select,textarea{font:inherit;color:inherit}button,a,input,select,textarea,summary{-webkit-tap-highlight-color:transparent}button,.button{border:1px solid #bda2d3;border-radius:999px;background:#f5edfc;color:var(--purple);min-height:46px;padding:10px 19px;cursor:pointer;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:8px;font-weight:650;font-size:.94rem;line-height:1.5}button:hover,.button:hover{background:#eadcf7}.primary{background:var(--purple);border-color:var(--purple);color:#fff}.primary:hover{background:#48216e}button:disabled{opacity:.6;cursor:wait}a{color:var(--purple);text-underline-offset:4px;overflow-wrap:anywhere}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #8654de;outline-offset:3px}input,select,textarea{width:100%;min-height:48px;padding:10px 13px;border:1px solid #bda2d3;border-radius:12px;background:#fff;font-size:1rem}textarea{min-height:120px;resize:vertical}input[type=checkbox]{width:22px;min-height:22px;margin:3px 0;accent-color:var(--purple);flex-shrink:0}input[type=file]{padding:9px;font-size:.9rem}label{display:grid;gap:7px;font-weight:600;color:#4d365e}label small{font-weight:400;color:var(--muted)}p{margin:.35rem 0 1rem}h1,h2,h3{line-height:1.15;letter-spacing:-.025em;font-weight:650}h1{font-size:clamp(2.6rem,7vw,4.6rem);margin:.4rem 0 1rem}h1 em{font-family:Georgia,serif;font-weight:400;color:var(--purple)}h2{font-size:1.55rem;margin:0 0 .65rem}h3{font-size:1.12rem;margin:0 0 .5rem}.muted,small{color:var(--muted)}small{font-size:.86rem}code{font-family:ui-monospace,monospace;font-size:.85em;overflow-wrap:anywhere}.shell{width:min(1240px,100%);margin:auto;padding:26px clamp(17px,4vw,54px) 48px}.top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;border-bottom:1px solid var(--line);padding-bottom:22px}.brand{display:flex;align-items:center;gap:12px}.symbol{width:48px;height:48px;background:#5f2c91;color:#fff;display:grid;place-items:center;border-radius:16px;font:38px/1 Georgia,serif}.brand strong{display:block;letter-spacing:.16em;font-size:.8rem}.brand span{font-size:.8rem;color:var(--muted)}.tools{display:flex;flex-wrap:wrap;gap:8px}.tools button{font-size:.83rem;min-height:44px;padding:8px 13px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:.73rem;font-weight:750;color:var(--purple)}.hero{padding:40px 0 22px;max-width:850px}.hero>p{max-width:720px;color:var(--muted);font-size:1.08rem}.privacy-line{display:flex;align-items:center;gap:9px;font-size:.85rem;color:var(--green)}.privacy-line:before{content:'◇';font-size:1.3rem}.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:4px 0 28px}.fact{border:1px solid var(--line);background:#ffffffbc;border-radius:18px;padding:17px}.fact small{display:block;font-size:.77rem;margin-bottom:3px}.fact strong{font-size:1rem;display:block;color:#482563}.tabs{display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:24px}.tabs button[aria-selected=true]{background:var(--purple);color:#fff;border-color:var(--purple)}.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,3vw,28px);box-shadow:0 8px 24px #3814470a;min-width:0}.layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(290px,1fr);gap:22px;align-items:start}.stack{display:grid;gap:20px;min-width:0}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.row>*{min-width:0}.row .grow{flex:1 1 220px}.filters{display:grid;grid-template-columns:minmax(150px,1fr) minmax(140px,.6fr);gap:12px;margin-bottom:12px}.records{display:grid;gap:14px}.record{border:1px solid var(--line);border-radius:18px;padding:19px;background:linear-gradient(140deg,#fff,#fcf9ff);min-width:0;overflow-wrap:anywhere}.record p{margin:.45rem 0 .7rem;font-size:.95rem}.meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;font-size:.75rem;margin-bottom:12px;color:var(--muted)}.pill{display:inline-block;border:1px solid #d4b9e9;border-radius:99px;padding:3px 9px;color:var(--purple);background:#f8f1fe;font-size:.73rem;font-weight:650}.pill.gold{background:#fffaeb;color:var(--gold);border-color:#decea4}.record-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.record-foot a{min-height:44px;display:inline-flex;align-items:center;font-size:.88rem;font-weight:650}.record-foot button{font-size:.77rem;padding:6px 13px;min-height:44px}.empty{border:1px dashed #bda2d3;border-radius:18px;padding:28px;text-align:center;color:var(--muted)}.note{padding:14px 17px;background:#f8f3fc;border-left:3px solid #a67fc1;border-radius:0 12px 12px 0;color:var(--muted);font-size:.9rem}.form{display:grid;gap:14px}details>summary{cursor:pointer;font-weight:650;min-height:46px;display:flex;align-items:center;gap:8px}details>summary:before{content:'+';color:var(--purple);font-size:1.3rem}details[open]>summary:before{content:'−'}details[open]>summary{margin-bottom:15px}.check{display:flex;align-items:start;gap:11px;font-size:.9rem;line-height:1.55;font-weight:400}.table-wrap{overflow:auto;max-width:100%;border:1px solid var(--line);border-radius:16px;margin-top:16px}table{border-collapse:collapse;width:100%;font-size:.86rem;min-width:720px}th,td{text-align:left;padding:13px;vertical-align:top;border-bottom:1px solid #e9dff0}th{font-size:.75rem;color:var(--purple);background:#f8f3fc}td small{display:block}tr:last-child td{border-bottom:0}.steps{counter-reset:step;display:grid;gap:15px}.step{position:relative;padding:0 0 0 43px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:29px;height:29px;display:grid;place-items:center;border:1px solid #bda2d3;border-radius:50%;font-size:.83rem;font-weight:650;color:var(--purple)}.source-links{display:grid;gap:3px;margin-top:14px}.source-links a{display:flex;align-items:center;min-height:44px;font-size:.91rem}.mini-metrics{display:flex;gap:20px;flex-wrap:wrap;margin:15px 0}.mini-metrics strong{display:block;color:var(--purple);font-size:1.6rem}.mini-metrics small{font-size:.77rem}.digest{font-size:.8rem;border:1px solid var(--line);border-radius:12px;padding:12px;white-space:pre-wrap;overflow-wrap:anywhere;background:#fbf8fd}.prompt{min-height:285px;font:.85rem/1.65 ui-monospace,monospace}footer{margin-top:32px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.79rem;color:var(--muted)}#message{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);width:min(660px,calc(100% - 30px));padding:16px 22px;border-radius:16px;background:#30243e;color:#fff;box-shadow:0 10px 40px #30243e33;z-index:10;font-size:.95rem}.statusline{min-height:1.5rem;margin:.5rem 0;color:var(--muted);font-size:.83rem}[hidden]{display:none!important}.skip{position:absolute;top:-80px;left:12px;background:#fff;padding:10px;z-index:20}.skip:focus{top:8px}#address-result{margin-top:14px}.subtle{background:#fff}.spacer{margin-top:16px}.safety{color:var(--muted);font-size:.85rem}.traffic-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.count{font-variant-numeric:tabular-nums}.mono{font-family:ui-monospace,monospace;overflow-wrap:anywhere}
 @media(max-width:850px){.layout{grid-template-columns:1fr}.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.traffic-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding-top:30px}}@media(max-width:440px){.shell{padding-top:18px}.filters{grid-template-columns:1fr}.facts{gap:8px}.fact{padding:13px}.fact strong{font-size:.9rem}.top{align-items:start}.brand{gap:9px}.symbol{width:42px;height:42px}.tabs button{padding:9px 13px;font-size:.85rem}.tools{width:100%}.hero>p{font-size:1rem}.traffic-filters{grid-template-columns:1fr}.step{padding-left:38px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}@media print{.tools,.tabs,.form,button,#message{display:none!important}.layout{display:block}.panel{box-shadow:none;margin-bottom:20px}body{background:white}.shell{width:100%;padding:0}a{color:#30243e}.record{break-inside:avoid}}
+body.hypestat-embedded .shell{padding:16px}body.hypestat-embedded .hero{padding:20px 0 12px}body.hypestat-embedded h1{font-size:2.15rem}body.hypestat-embedded .facts{margin-bottom:18px}body.hypestat-embedded .hero>p{font-size:1rem}
 </style>
 </head>
 <body class="oracle-octaves-page">
@@ -35,6 +36,7 @@
 </div>
 <nav class="tabs" role="tablist" aria-label="Workspace views">
   <button id="tab-records" role="tab" aria-selected="true" aria-controls="view-records" tabindex="0" data-view="records">Evidence records</button>
+  <button id="tab-tor" role="tab" aria-selected="false" aria-controls="view-tor" tabindex="-1" data-view="tor">Tor public records</button>
   <button id="tab-traffic" role="tab" aria-selected="false" aria-controls="view-traffic" tabindex="-1" data-view="traffic">Traffic workspace</button>
   <button id="tab-google" role="tab" aria-selected="false" aria-controls="view-google" tabindex="-1" data-view="google">Google + Gemini</button>
 </nav>
@@ -60,6 +62,67 @@
     </aside>
   </div>
 </section>
+<section id="view-tor" role="tabpanel" aria-labelledby="tab-tor" hidden>
+  <section class="panel">
+    <div class="eyebrow">Tor + public records / Earlier project</div>
+    <h2>Tor Public Records Tracker</h2>
+    <p class="muted">The earlier Tor design is now part of this workspace. These historical records preserve the dates and sources from the November 19, 2026 snapshot. A historical shutdown is not a live status check.</p>
+    <div class="filters"><label>Search Tor records<input id="tor-query" type="search" placeholder="Case name or keyword" autocomplete="off"></label><label>Record type<select id="tor-type"><option value="">All records</option><option value="enforcement">Enforcement</option><option value="court">Court rulings</option><option value="oversight">Oversight and research</option><option value="unverified">Unverified leads</option></select></label></div>
+    <p id="tor-count" class="statusline" role="status" aria-live="polite"></p><div id="tor-records" class="records"></div>
+    <p class="note spacer">Each entry is an earlier source record. Historical enforcement, directory requests, gateway reports and unsupported leads do not establish a site's present operator, visitors or availability.</p>
+  </section>
+</section>
+<script type="application/json" id="tor-record-data">[
+  {
+    "type": "enforcement",
+    "title": "Operation Onymous",
+    "label": "Seizure reported · November 2014",
+    "claim": "The FBI announced a coordinated action targeting more than 400 onion addresses, including Silk Road 2.0 and other hidden markets.",
+    "source": "https://www.fbi.gov/news/press-releases/more-than-400-.onion-addresses-including-dozens-of-dark-market-sites-targeted-as-part-of-global-enforcement-action-on-tor-network"
+  },
+  {
+    "type": "oversight",
+    "title": "BBC report on Tor traffic",
+    "label": "Research · 2014–2016",
+    "claim": "The study behind the December 2014 BBC article measured requests for directory records. These counts cannot establish unique visitors, site operators, or current site activity.",
+    "source": "https://doi.org/10.1049/iet-ifs.2015.0121"
+  },
+  {
+    "type": "enforcement",
+    "title": "Playpen / Operation Pacifier",
+    "label": "Seized · February 2015",
+    "claim": "The FBI took control of the existing site and ran it for about two weeks to identify users. In 2017, creator Steven Chase was sentenced to 30 years.",
+    "source": "https://www.justice.gov/archives/opa/pr/florida-man-sentenced-prison-engaging-child-exploitation-enterprise"
+  },
+  {
+    "type": "court",
+    "title": "United States v. Levin",
+    "label": "Appeal decided · October 2017",
+    "claim": "A district court suppressed evidence in a Playpen case over the warrant’s geographic reach. The First Circuit reversed because agents relied on the warrant in good faith.",
+    "source": "https://media.ca1.uscourts.gov/pdf.opinions/16-1567P-01A.pdf"
+  },
+  {
+    "type": "enforcement",
+    "title": "Welcome to Video",
+    "label": "Server seized · March 2018",
+    "claim": "Authorities seized the server of a separate service that accepted Bitcoin. DOJ reported in October 2019 that 337 users had been arrested and charged.",
+    "source": "https://www.justice.gov/usao-dc/pr/south-korean-national-and-hundreds-others-charged-worldwide-takedown-largest-darknet"
+  },
+  {
+    "type": "oversight",
+    "title": "Inspector General review",
+    "label": "Audit · December 2020",
+    "claim": "The DOJ Inspector General audited the FBI’s dark web enforcement and recorded 887 arrests attributed to Operation Pacifier.",
+    "source": "https://oig.justice.gov/sites/default/files/reports/21-014.pdf"
+  },
+  {
+    "type": "unverified",
+    "title": "Xplay",
+    "label": "Current status unverified",
+    "claim": "A search snippet describes an alleged account leak. That does not establish a Tor service’s current status or operator. The similarly named xplay.gg identifies itself as a Counter-Strike 2 gaming service.",
+    "source": "https://xplay.gg/blog/cs2-community-servers-guide/"
+  }
+]</script>
 <section id="view-traffic" role="tabpanel" aria-labelledby="tab-traffic" hidden>
   <div class="stack">
     <section class="panel"><div class="eyebrow">01 / Entry, activity, exit</div><h2>Traffic with a defined scope</h2><p class="muted">Import aggregate measurements from sites you own or are authorized to analyze. Referrers show reported arrivals; pages show activity; outbound clicks show recorded departures. They do not reveal browsing after departure.</p>
@@ -238,6 +301,19 @@ globalThis.HypeInfinity = (() => {
   const tabs=[...document.querySelectorAll('[role=tab]')];
   function selectTab(tab,focus=false){for(const t of tabs){const active=t===tab;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;$('view-'+t.dataset.view).hidden=!active;}if(focus)tab.focus();}
   tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>selectTab(tab));tab.addEventListener('keydown',e=>{let next;if(e.key==='ArrowRight')next=(index+1)%tabs.length;if(e.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;if(next!==undefined){e.preventDefault();selectTab(tabs[next],true);}});});
+  const torRecords=JSON.parse($('tor-record-data').textContent);
+  function renderTorRecords(){
+    const terms=$('tor-query').value.trim().toLowerCase().split(/\s+/).filter(Boolean),kind=$('tor-type').value;
+    const rows=torRecords.filter(r=>(!kind||r.type===kind)&&terms.every(t=>[r.title,r.label,r.claim].join(' ').toLowerCase().includes(t)));
+    const list=$('tor-records');list.replaceChildren();
+    $('tor-count').textContent=rows.length+' of '+torRecords.length+' historical records';
+    for(const r of rows){const card=node('article',undefined,'record'),a=node('a','Read original source ↗');a.href=C.safeSource(r.source);a.target='_blank';a.rel='noopener noreferrer';card.append(node('span',r.label,'pill'+(r.type==='unverified'?' gold':'')),node('h3',r.title),node('p',r.claim),a);list.append(card);}
+    if(!rows.length)list.append(node('div','No matching historical records.','empty'));
+  }
+  $('tor-query').addEventListener('input',renderTorRecords);$('tor-type').addEventListener('change',renderTorRecords);renderTorRecords();
+  const requestedView=new URLSearchParams(location.search).get('view');
+  const initialTab=tabs.find(tab=>tab.dataset.view===requestedView);if(initialTab)selectTab(initialTab);
+  if(new URLSearchParams(location.search).get('embed')==='1')document.body.classList.add('hypestat-embedded');
   $('address-form').addEventListener('submit',e=>{e.preventDefault();try{const a=C.classify($('address-input').value),out=$('address-result');out.replaceChildren(node('span',a.kind,'pill'),node('p',a.display,'mono'),node('p',a.checksum,'safety'));out.append(node('p','No target connection, identity lookup, or availability check was made.','safety'));const link=node('a','Search official public records ↗','button');link.href='https://www.google.com/search?q='+encodeURIComponent('"'+a.host+'" (site:justice.gov OR site:fbi.gov OR site:europol.europa.eu OR site:torproject.org)');link.target='_blank';link.rel='noopener noreferrer';out.append(link);out.hidden=false;}catch(err){notify(err.message);}});
   $('record-search').addEventListener('input',renderRecords);$('record-filter').addEventListener('change',renderRecords);
   $('evidence-time').value=localTime();

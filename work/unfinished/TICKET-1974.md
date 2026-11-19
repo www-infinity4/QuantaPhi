@@ -1,20 +1,20 @@
 ---
 issue: 1974
-state: live_verified
+state: source_tested
 dot: "🟡"
-progress_percent: 90
-progress_basis: "Source/review/tests/CI 75%, merge/deployment 10%, canonical live-browser acceptance 5%; physical Android acceptance is the remaining 10%."
-sessions_spent: 1
-sessions_remaining_estimate: "unknown; physical Android observation required"
+progress_percent: 75
+progress_basis: "Session 2 integration source implemented and 13 Node tests passed; new exact-head CI, independent approval, merge and live integration acceptance pending. Session 1 receipts remain historical."
+sessions_spent: 2
+sessions_remaining_estimate: "unknown; integration release and physical Android acceptance pending"
 agent: "GPT Brain coordinator with independent hypestat_review"
 lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-next_action: "Verify the canonical HypeStat page on the owner physical Android device."
-merged: true
-deployed: true
-live_verified: true
+next_action: "Inspect exact-head Session 2 integration CI and independent source review."
+merged: false
+deployed: false
+live_verified: false
 ---
 
 # HypeStat Infinity — public evidence and authorized aggregate traffic
@@ -79,6 +79,22 @@ At `59450f85d50863be562289a3a21b319691b92232`, all seven other workflow runs pas
 - A separate live production browser run completed successfully: https://agent.tinyfish.ai/runs/b5cdb338-c936-41cc-9250-b23da2a4d708 . It verified JavaScript initialization, browser-local saving status, all 5 seeded records, Dash search filtering and clearing, Traffic workspace's empty authorized-import state, Google + Gemini prompt visibility, and local classification of example.org. It followed no source links and accessed no investigated target. This is live web acceptance, not physical Android acceptance.
 - Site operator, Dash/payment evidence and script authorship remain unverified. No global traffic or visitor identity feed exists or is claimed.
 
-## Next executable action
+## Session 1 next action (historical)
 
 Verify the canonical page on the owner's physical Android device, including search, tabs and browser-local persistence. Keep #1974 open until that observation is recorded. This follow-up changes release metadata only; application, tests and workflow remain unchanged.
+
+## Session 2 — unified Tor / Google page integration — 2026-11-19T14:25:34.611Z
+
+The front-matter state now refers to this integration, not the prior standalone release. Continue canonical issue #1974. Base: `62aa70dd658f868b3a49e08ee8ebe8fdd7509353`; isolated branch `feat/hypestat-tor-google-page-1974`. No coordinator lease was observed or manufactured; all lease/fence/session/expiry fields remain null.
+
+Owner request: merge the whole project into the page with the earlier Tor and Google designs. The earlier `tor-public-records.html` snapshot was read from its current saved source; its seven records are now included under a Tor public records tab next to Evidence, Traffic and Google + Gemini. Event dates, source links and unverified/historical distinctions are retained. The earlier Tor route redirects to that tab. No extra provider data or current operator/visitor claim is imported.
+
+One reusable lazy Quick Card is registered on the homepage, Oracle player, source/discovery catalog and Bubbles catalog. All four views use one same-origin iframe; switching/minimizing preserves the live frame and its unsaved drafts. Bubbles uses the full body surface so the workspace navigation is available. A homepage menu link and validated direct view URLs provide navigation. Existing saved state key/version, notes, traffic and backup schema remain unchanged. No new external tracker, account connection, permissions or payment path is added.
+
+Actual local checks: 13/13 Node tests passed, retaining the original nine and adding catalog/route/Tor-data/homepage integration checks. Module syntax and Python browser-test syntax passed. The new behavior regressions first failed against the previous source (three new tests failed; original nine passed), then passed after implementation. The browser suite now has 11 check groups, including Tor filtering, view/legacy routes and the actual homepage lazy card/draft-preservation flow; its new-head execution is pending GitHub CI, not yet claimed passed. The local environment's prior Chromium restriction is not used to infer UI success.
+
+Integration milestones: estimated 75% for existing capabilities plus implemented/source-tested integration; independent approval, exact-head CI, permitted merge and live homepage/unified-page readback remain. Physical Android acceptance is still a distinct missing observation. Prior release receipts above verify only Session 1.
+
+### Next executable action
+
+Inspect the integration PR's exact-head CI and independent review; fix actual failures on this same branch without weakening checks. Merge with expected-head protection only when eligible. Verify Pages deployment, the homepage Quick Card and the combined public page, then append actual receipts here/on #1974. Do not close the issue based on prior standalone receipts.

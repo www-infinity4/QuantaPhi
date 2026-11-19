@@ -58,6 +58,18 @@ def run():
         assert all(url.startswith('http://127.0.0.1:8765/') for url in requests)
         results.append('address classification without external requests')
 
+        page.get_by_role('tab', name='Tor public records', exact=True).click()
+        expect(page.locator('#tor-records article')).to_have_count(7)
+        page.locator('#tor-type').select_option('enforcement')
+        expect(page.locator('#tor-records article')).to_have_count(3)
+        page.locator('#tor-query').fill('Playpen')
+        expect(page.locator('#tor-records article')).to_have_count(1)
+        page.locator('#tor-type').select_option('')
+        page.locator('#tor-query').fill('BBC traffic')
+        expect(page.locator('#tor-records article')).to_have_count(1)
+        page.locator('#tor-query').fill('')
+        results.append('all seven earlier Tor records, type filters, and multiword search')
+
         page.get_by_role('tab', name='Traffic workspace', exact=True).click()
         page.locator('#traffic-file').set_input_files({'name': 'aggregate.csv', 'mimeType': 'text/csv', 'buffer': CSV.encode()})
         page.get_by_role('button', name='Validate and import', exact=True).click()
@@ -108,7 +120,7 @@ def run():
         assert 'private browsing histories' in page.locator('#gemini-prompt').input_value()
         for width in [320, 360, 412, 768, 1280]:
             page.set_viewport_size({'width': width, 'height': 900})
-            for tab in ['Evidence records', 'Traffic workspace', 'Google + Gemini']:
+            for tab in ['Evidence records', 'Tor public records', 'Traffic workspace', 'Google + Gemini']:
                 page.get_by_role('tab', name=tab, exact=True).click()
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), (width, tab)
         page.set_viewport_size({'width': 1280, 'height': 1000})
@@ -119,6 +131,47 @@ def run():
         assert not errors, errors
         assert all(url.startswith('http://127.0.0.1:8765/') for url in requests), requests
         results.append('all tabs at 320/360/412/768/1280px, no JavaScript errors or external requests')
+
+        linked = browser.new_context(viewport={'width': 360, 'height': 800})
+        lp = linked.new_page()
+        for view in ['tor', 'google', 'traffic', 'records']:
+            lp.goto(BASE + '?view=' + view)
+            expect(lp.locator('#tab-' + view)).to_have_attribute('aria-selected', 'true')
+            expect(lp.locator('#view-' + view)).to_be_visible()
+        lp.goto(BASE + '?view=unrecognized')
+        expect(lp.locator('#tab-records')).to_have_attribute('aria-selected', 'true')
+        lp.goto(BASE.rsplit('/', 1)[0] + '/tor-public-records.html')
+        lp.wait_for_url('**/hypestat-infinity.html?view=tor')
+        expect(lp.locator('#tab-tor')).to_have_attribute('aria-selected', 'true')
+        results.append('direct view links and earlier Tor route open the unified project safely')
+
+        home = browser.new_context(viewport={'width': 360, 'height': 800})
+        # The homepage has other services. This test never contacts them.
+        home.route('**/*', lambda route: route.continue_() if route.request.url.startswith('http://127.0.0.1:8765/') else route.abort())
+        hp = home.new_page()
+        hp.goto(BASE.rsplit('/', 1)[0] + '/index.html?card=hypestat-infinity', wait_until='domcontentloaded')
+        card = hp.locator('#hypestatInfinityQuickCard')
+        expect(card.locator('[data-hypestat-component]')).to_have_count(1)
+        expect(card.locator('iframe')).to_have_count(0)
+        card.get_by_role('button', name='Tor records', exact=True).click()
+        expect(card.locator('iframe')).to_have_count(1)
+        frame = card.frame_locator('iframe')
+        expect(frame.locator('#tab-tor')).to_have_attribute('aria-selected', 'true')
+        expect(frame.locator('#tor-records article')).to_have_count(7)
+        frame.get_by_role('tab', name='Evidence records', exact=True).click()
+        frame.locator('#record-details summary').click()
+        frame.locator('[name=subject]').fill('Preserve unsaved draft')
+        card.get_by_role('button', name='Google + Gemini', exact=True).click()
+        expect(frame.locator('#tab-google')).to_have_attribute('aria-selected', 'true')
+        card.get_by_role('button', name='Evidence', exact=True).click()
+        expect(frame.locator('[name=subject]')).to_have_value('Preserve unsaved draft')
+        card.get_by_role('button', name='Minimize workspace', exact=True).click()
+        card.get_by_role('button', name='Traffic', exact=True).click()
+        expect(frame.locator('#tab-traffic')).to_have_attribute('aria-selected', 'true')
+        expect(card.locator('iframe')).to_have_count(1)
+        expect(card.get_by_role('link', name='Open full page', exact=True)).to_have_attribute('href', '/hypestat-infinity.html?view=traffic')
+        assert hp.evaluate('document.getElementById("hypestatInfinityQuickCard").scrollWidth <= document.getElementById("hypestatInfinityQuickCard").clientWidth')
+        results.append('actual homepage lazy Quick Card opens all views in one frame and preserves drafts')
 
         # Unreadable stored data must survive every subsequent in-memory edit.
         broken = browser.new_context(viewport={'width': 360, 'height': 800})
