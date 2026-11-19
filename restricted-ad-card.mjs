@@ -77,8 +77,9 @@ if(root){
  function activeKitSources(){return selectedKitId==='cannabis-sources'?PUBLIC_21_SOURCES:sourcesForKit(selectedKitId)}
  function paintKit(){
   if(!acknowledged)return;
-  resetPlan();kitPlanButton.hidden=selectedKitId==='cannabis-sources';
+  resetPlan();
   const kit=ADULT_LIFESTYLE_KITS.find(x=>x.id===selectedKitId);
+  kitPlanButton.hidden=selectedKitId==='cannabis-sources'||kit?.sourceOnly===true;
   kitDesc.textContent=kit?kit.description:'Independent original cannabis publisher references only. Not an advertisement or product checkout.';
   kitLinks.replaceChildren();
   for(const row of activeKitSources().slice(0,6)){
@@ -125,12 +126,12 @@ if(root){
   browse.hidden=false;closeBrowse.hidden=true;
  });
  kitPlanButton.addEventListener('click',()=>{
-  if(!acknowledged||selectedKitId==='cannabis-sources')return;
+  if(!acknowledged||selectedKitId==='cannabis-sources'||ADULT_LIFESTYLE_KITS.find(x=>x.id===selectedKitId)?.sourceOnly===true)return;
   kitPlanBox.hidden=!kitPlanBox.hidden;
   if(!kitPlanBox.hidden)kitPlanBudget.focus();
  });
  kitPlanForm.addEventListener('submit',event=>{
-  event.preventDefault();if(!acknowledged||selectedKitId==='cannabis-sources')return;
+  event.preventDefault();if(!acknowledged||selectedKitId==='cannabis-sources'||ADULT_LIFESTYLE_KITS.find(x=>x.id===selectedKitId)?.sourceOnly===true)return;
   try{
    lastKitPlan=prepareAdultKitResearch({kitId:selectedKitId,budget:kitPlanBudget.value,region:kitPlanRegion.value});
    const heading=el('h3','rac-plan-title',lastKitPlan.title+' · '+lastKitPlan.budgetLabel+' ceiling');
