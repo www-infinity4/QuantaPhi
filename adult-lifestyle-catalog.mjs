@@ -10,7 +10,6 @@ const source=(id,title,subtitle,summary,url,official_domain,category)=>Object.fr
  id,kind:'independent-source',title,subtitle,summary,url,official_domain,category
 });
 export const ADULT_LIFESTYLE_SOURCES=Object.freeze([
- source('xgroovy-205466','XGroovy · adult video link','External video · user-submitted URL','A visitor-submitted link to an adult video on a third-party website. No preview, playback, copied media or rights approval is provided by QuantaPhi.','https://xgroovy.com/gifs/205466/filled-my-mouth-with-cum/','xgroovy.com','Adult video'),
  source('playboy','Playboy','Publisher · adult media','Browse the original adult-oriented publisher site. No media is embedded or copied.','https://www.playboy.com/','playboy.com','Adult media'),
  source('victorias-secret',"Victoria's Secret",'Lingerie and sleepwear','Explore lingerie, sleepwear and gifts on the brand’s original storefront.','https://www.victoriassecret.com/','victoriassecret.com','Fashion'),
  source('hims','Hims','Men’s health · provider-led','Explore the original telehealth provider; prescription eligibility and healthcare decisions stay with the provider.','https://www.hims.com/','hims.com','Wellness'),
@@ -30,15 +29,14 @@ export const ADULT_LIFESTYLE_SOURCES=Object.freeze([
  source('etsy','Etsy','Independent makers','Browse decorations and gifts through the original marketplace.','https://www.etsy.com/','etsy.com','Room and event'),
  source('eventbrite','Eventbrite','Events and experiences','Find events and organizer information on the original events platform.','https://www.eventbrite.com/','eventbrite.com','Room and event')
 ]);
-const kit=(id,title,description,sourceIds,sourceOnly=false)=>Object.freeze({id,title,description,sourceIds:Object.freeze(sourceIds),sourceOnly});
+const kit=(id,title,description,sourceIds)=>Object.freeze({id,title,description,sourceIds:Object.freeze(sourceIds)});
 export const ADULT_LIFESTYLE_KITS=Object.freeze([
  kit('after-dark-date','Date-night plans','Dress, dinner, relaxation and an original publisher in one research card. These are separate sellers and not one checkout.',['victorias-secret','opentable','spafinder','playboy']),
  kit('amsterdam-after-dark','Amsterdam after dark','De Wallen cultural guide, nightlife, a real café and English-language coffeeshop information. No person listings or service bookings.',['amsterdam-de-wallen','amsterdam-nightlife','cafe-de-jaren','amsterdam-coffeeshops']),
  kit('room-party','Room and party setup','Bring lighting, sound, decorations and event ideas together before checking separate retailers for current offers.',['philips-hue','sonos','etsy','eventbrite']),
  kit('lingerie-wellness','Lingerie and wellness','Compare original fashion boutiques alongside provider-led men’s wellness information.',['adore-me','savage-x','agent-provocateur','hims']),
  kit('glass-lounge','Glass and coffee lounge','Glassware, specialty coffee and room audio; no tobacco, nicotine or mushroom products.',['grav','coffee-coconuts','sonos']),
- kit('special-occasion','Special occasion','Combine an outfit, a restaurant, a spa idea and a maker gift from original providers.',['agent-provocateur','opentable','spafinder','etsy']),
- kit('adult-video-links','Adult video links','Open the submitted external adult video on its source website only. No hosting, embedded player or publisher authorization is claimed.',['xgroovy-205466'],true)
+ kit('special-occasion','Special occasion','Combine an outfit, a restaurant, a spa idea and a maker gift from original providers.',['agent-provocateur','opentable','spafinder','etsy'])
 ]);
 export function sourcesForKit(id){
  const selected=ADULT_LIFESTYLE_KITS.find(x=>x.id===id);
