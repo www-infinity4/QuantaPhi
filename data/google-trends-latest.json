@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T06:01:38.064525Z",
+  "checked_at": "2026-11-19T06:37:33.571884Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "trent perry",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T05:40:00Z",
+      "query": "fuel",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T06:20:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/kansas/longformarticle/bill-self-kansas-basketball-postgame-quotes-unlv-292923158/",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
-        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/18/blyden-perfect-on-jayhawks-charmed-shooting-night/"
+        "https://www.geekwire.com/2026/latest-findings-point-to-fuel-supply-not-blue-origins-engines-in-loss-of-amazon-leo-satellites/",
+        "https://arstechnica.com/features/2026/11/sources-vulcan-launch-anomaly-investigation-is-complex/",
+        "https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVoyGq1VvynoBbRhp27ySjQhCrf8HZT7SQMfceHey0QgYRKiCyMr_Xra1xHAg",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxRsWq2Hoq6dkW4NfyY4VxKivCtO4OlLTNre5MWYyLr-svEn_TcxazHS8jf6I",
+      "image_credit": "GeekWire",
       "news": [
         {
-          "url": "https://247sports.com/college/kansas/longformarticle/bill-self-kansas-basketball-postgame-quotes-unlv-292923158/",
-          "title": "Everything Bill Self said after KU's win over UNLV",
-          "publisher": "247Sports",
+          "url": "https://www.geekwire.com/2026/latest-findings-point-to-fuel-supply-not-blue-origins-engines-in-loss-of-amazon-leo-satellites/",
+          "title": "Latest findings point to fuel supply, not Blue Origin’s engines, in loss of Amazon Leo satellites",
+          "publisher": "GeekWire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVoyGq1VvynoBbRhp27ySjQhCrf8HZT7SQMfceHey0QgYRKiCyMr_Xra1xHAg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxRsWq2Hoq6dkW4NfyY4VxKivCtO4OlLTNre5MWYyLr-svEn_TcxazHS8jf6I"
         },
         {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
-          "title": "Kansas 102-77 UNLV (Nov 17, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://arstechnica.com/features/2026/11/sources-vulcan-launch-anomaly-investigation-is-complex/",
+          "title": "The data is very preliminary, but Vulcan failure may not be due to BE-4 engines",
+          "publisher": "Ars Technica",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8usoSp041bXEUQZ2jxIojkczYy038RKK2b3yrp_Ltv0XHXVsPqe-a_6gw7vQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXpaj1HTcDvM9ReQFxi_v2Wm2NFgqchCs7La0K0gyZ-m6G_P_mVRLSQYdqJ_U"
         },
         {
-          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/18/blyden-perfect-on-jayhawks-charmed-shooting-night/",
-          "title": "Blyden perfect on Jayhawks’ charmed shooting night",
-          "publisher": "KU Sports",
+          "url": "https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931",
+          "title": "Amazon loses 40 Leo satellites as Boeing-Lockheed rocket fails",
+          "publisher": "DW.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgme6AfReziSTbHtqjkdNe60SHvycoo_rk8pGiAvP7mUZUkGsng4IC5ZxQN6k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM1dLu_g6evKNL6FNvDA0gmo03EYaDLp9GzUTkXU2V4gFW1XVlQbgxGjnvOsM"
         }
       ]
     },
     {
-      "query": "barry",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T05:40:00Z",
+      "query": "where is strip club in gta 6",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T06:20:00Z",
       "related_news_urls": [
-        "https://people.com/brady-bunch-star-barry-williams-says-it-took-him-year-to-recover-from-dwts-12252856",
-        "https://www.yahoo.com/entertainment/videos/brady-bunch-star-barry-williams-204500625.html",
-        "https://www.imdb.com/es/news/ni66113999/?ref_=nwc_art_perm"
+        "https://www.shacknews.com/article/151386/prostitutes-gta6",
+        "https://www.imdb.com/fr/news/ni66047709/",
+        "https://consequence.net/2026/11/gta-6-no-sex-workers-rockstar-games-comment/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzc8Qv7giZRs14BetnkTAiv2scwpMRzMsyHstY0ARK4rIbL96mjm4lKm2nNgc",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzcP3L6N950qW5YlAL-gCglqNp_LcG5ilkWWmvntSG9KHeThFxKn5J6tpQWgI",
+      "image_credit": "Shacknews",
+      "news": [
+        {
+          "url": "https://www.shacknews.com/article/151386/prostitutes-gta6",
+          "title": "Can you hire prostitutes in GTA 6?",
+          "publisher": "Shacknews",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzcP3L6N950qW5YlAL-gCglqNp_LcG5ilkWWmvntSG9KHeThFxKn5J6tpQWgI"
+        },
+        {
+          "url": "https://www.imdb.com/fr/news/ni66047709/",
+          "title": "GTA 6 To Feature Full \"Sex Scenes\" For The First Time",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://consequence.net/2026/11/gta-6-no-sex-workers-rockstar-games-comment/",
+          "title": "Rockstar Leaves Sex Workers Out of Grand Theft Auto for First Time in 25 Years",
+          "publisher": "Consequence of Sound",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQJmD97J9IB9QraKygM2lc4M_eypyTJgK5RUL3tfMJ2BT3U1v5GyIflXIAJ7w"
+        }
+      ]
+    },
+    {
+      "query": "fix railing gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T06:20:00Z",
+      "related_news_urls": [
+        "https://www.gamespot.com/articles/how-to-fix-all-projects-at-jasons-house-in-gta-6/",
+        "https://www.shacknews.com/article/151406/safehouse-repairs-gta6",
+        "https://www.videogameschronicle.com/guide/gta-6-jasons-house-how-to-fix-all-projects-around-jasons-house/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSCJXRxWe7yd1_ngBHOvB4-RJNVKPZKYXVAhZWKImw0vC6CtQc2vC3pFX7MU",
+      "image_credit": "GameSpot",
+      "news": [
+        {
+          "url": "https://www.gamespot.com/articles/how-to-fix-all-projects-at-jasons-house-in-gta-6/",
+          "title": "How To Fix All Projects At Jason’s House In GTA 6",
+          "publisher": "GameSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSCJXRxWe7yd1_ngBHOvB4-RJNVKPZKYXVAhZWKImw0vC6CtQc2vC3pFX7MU"
+        },
+        {
+          "url": "https://www.shacknews.com/article/151406/safehouse-repairs-gta6",
+          "title": "All Key Lento safehouse repairs in GTA 6",
+          "publisher": "Shacknews",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfP-Tk4ZVjT8CH3ygfoNVNNj4zSLwxLFhZTSkOKRi24HNdfdU25uNo5nfpqRo"
+        },
+        {
+          "url": "https://www.videogameschronicle.com/guide/gta-6-jasons-house-how-to-fix-all-projects-around-jasons-house/",
+          "title": "GTA 6 Jason’s House: How to fix all projects around Jason’s House",
+          "publisher": "Video Games Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ_e12DdC4Xs3MJr_cByKqKDAxK5K9xK-2oT8vHAwfJ3VVq8Ca2tub0VS1aU"
+        }
+      ]
+    },
+    {
+      "query": "kristen ruskey",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T06:20:00Z",
+      "related_news_urls": [
+        "https://people.com/before-parents-were-found-dead-dad-showed-warning-signs-nobody-caught-12263128",
+        "https://ktla.com/news/california/california-couple-carbon-monoxide-deaths-birthday-party-lawsuit/",
+        "https://www.sfgate.com/bayarea/article/calif-ruskeys-death-lawsuit-22529665.php"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxb5m69PIKc80sAdrbcgjKm-WIAZTq0k1Lz57WnqTtudrgwB3RAEMELVfVmhE",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/brady-bunch-star-barry-williams-says-it-took-him-year-to-recover-from-dwts-12252856",
-          "title": "‘Brady Bunch’ Star Barry Williams, 72, Says It Took Him a Year to Recover from ‘DWTS’",
+          "url": "https://people.com/before-parents-were-found-dead-dad-showed-warning-signs-nobody-caught-12263128",
+          "title": "Before Parents Were Found Dead, Dad Showed Warning Signs Nobody Caught",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzc8Qv7giZRs14BetnkTAiv2scwpMRzMsyHstY0ARK4rIbL96mjm4lKm2nNgc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxb5m69PIKc80sAdrbcgjKm-WIAZTq0k1Lz57WnqTtudrgwB3RAEMELVfVmhE"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/videos/brady-bunch-star-barry-williams-204500625.html",
-          "title": "Brady Bunch Star Barry Williams Was Never The Same After Dancing With The Stars",
+          "url": "https://ktla.com/news/california/california-couple-carbon-monoxide-deaths-birthday-party-lawsuit/",
+          "title": "Beloved California couple found dead in waterfront mansion after birthday party",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR66CGodoY5E1JuueLIdLNSZr9Y8vYTzTJMCMFhmaVRZMr8_zQTLa1axLftt4g"
+        },
+        {
+          "url": "https://www.sfgate.com/bayarea/article/calif-ruskeys-death-lawsuit-22529665.php",
+          "title": "Calif. kids sue homeowner after both parents die at seaside mansion",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQe-EHmp3_XHHhc_NO6K8ApiCJyQq9m5iaNsUMvtYULvhnHxVzlsD7RCBxjzB8"
+        }
+      ]
+    },
+    {
+      "query": "the body season 2",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T06:20:00Z",
+      "related_news_urls": [
+        "https://defector.com/the-problem-with-3-body-problem-is-that-it-stinks",
+        "https://arstechnica.com/culture/2026/11/humanity-braces-for-an-alien-invasion-in-3-body-problem-s2-teaser/",
+        "https://variety.com/2026/tv/news/tv-news-roundup-week-of-nov-16-1236949183/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWd8KIdmb0lWBOg6UCReJFO0Tc6Q6ljGLPLpZ-e_9WlxP4OBs5KfU9qao4y0g",
+      "image_credit": "Defector",
+      "news": [
+        {
+          "url": "https://defector.com/the-problem-with-3-body-problem-is-that-it-stinks",
+          "title": "The Problem With ‘3 Body Problem’ Is That It Stinks",
+          "publisher": "Defector",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWd8KIdmb0lWBOg6UCReJFO0Tc6Q6ljGLPLpZ-e_9WlxP4OBs5KfU9qao4y0g"
+        },
+        {
+          "url": "https://arstechnica.com/culture/2026/11/humanity-braces-for-an-alien-invasion-in-3-body-problem-s2-teaser/",
+          "title": "Humanity braces for an alien invasion in 3 Body Problem S2 teaser",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw-1Lz-Yx4wNowN42W6zaa6SWjVNL5twkMQm1YWzZhGShRoKxZ7jbdLh147Sc"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/tv-news-roundup-week-of-nov-16-1236949183/",
+          "title": "‘3 Body Problem’ Sets Season 2 Release Date at Netflix (TV News Roundup)",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScapp_0Y67xSnwQCYG4JZRoDdptVc5f_pwkEgT4QrXs6znhWdsWbvXEKWOsMQ"
+        }
+      ]
+    },
+    {
+      "query": "monica barbaro",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T06:20:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/monica-barbaro-stuns-daring-black-034426881.html",
+        "https://wwd.com/pop-culture/celebrity-news/monica-barbaro-brandon-maxwell-gown-gq-men-of-the-year-1239416679/",
+        "https://www.barstoolsports.com/blog/3581099/alert-monica-barbaros-recent-red-carpet-fashion-deserves-one-final-click-an"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW7yFSlTs_u9BEgrGsloVTnZ-bYzCBfcb-L_XX09rikUy1OKR2YrIYwQvQ10",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/monica-barbaro-stuns-daring-black-034426881.html",
+          "title": "Monica Barbaro stuns in daring black dress with thigh-high split",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyTOOVREAo2U50HkvWs0draCuQBria1yPeZfL5UJ1FmzU0wDgNC3mCswfyXGI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW7yFSlTs_u9BEgrGsloVTnZ-bYzCBfcb-L_XX09rikUy1OKR2YrIYwQvQ10"
         },
         {
-          "url": "https://www.imdb.com/es/news/ni66113999/?ref_=nwc_art_perm",
-          "title": "‘Brady Bunch’s Barry Williams Says It Took 1 Year to Recover From ‘Dancing With the Stars’",
-          "publisher": "IMDb",
+          "url": "https://wwd.com/pop-culture/celebrity-news/monica-barbaro-brandon-maxwell-gown-gq-men-of-the-year-1239416679/",
+          "title": "Monica Barbaro Contrasts in Plunging Black and White Brandon Maxwell Gown for GQ’s Men of the Year Party",
+          "publisher": "WWD",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2RoGLxdDNCX2uUtfh7wQTfa_AxF6_9QZLR_Q6PuWd9ZwzWEDcumfYzX-FBIs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIN7v_Cqks4OoRx6OrPDttwSdhEZWHx9ubrdNDEDlvmeVg43dLdC4aT719Cv8"
+        },
+        {
+          "url": "https://www.barstoolsports.com/blog/3581099/alert-monica-barbaros-recent-red-carpet-fashion-deserves-one-final-click-an",
+          "title": "ALERT: Monica Barbaro's Recent Red Carpet Fashion Deserves One Final Click (Since An All Out Cyber Attack Is Coming Within The Next 48 Hours, Per Jersey Jerry)",
+          "publisher": "Barstool Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCtnbc2ht0Ervzi3jVBSRLy0PpJE5jKqKz51qtshdGJykmlJ6vRedRPCYLrWw"
         }
       ]
     },
     {
-      "query": "jaden smith michele lamy",
+      "query": "amy poehler",
       "approx_searches": "200+",
-      "published_at": "2026-11-19T05:40:00Z",
+      "published_at": "2026-11-19T06:10:00Z",
       "related_news_urls": [
-        "https://www.prestigeonline.com/in/lifestyle/everything-to-know-about-michele-lamy-controversy-jaden-smith/",
-        "https://www.10news.com/news/fact-or-fiction/fact-or-fiction-jaden-smith-dating-82-year-old",
-        "https://www.galaxytvonline.com/news/entertainment/viral-posts-falsely-link-jaden-smith-romantically-to-fashion-figure-michele-lamy"
+        "https://www.latimes.com/entertainment-arts/tv/story/2026-11-18/amy-poehler-mike-schur-dig-holiday-preview-2026",
+        "https://www.today.com/video/amy-poehler-and-geraldine-viswanathan-talk-comedy-series-dig-273583685700",
+        "https://www.smh.com.au/culture/tv-and-radio/amy-poehler-dig-mike-schur-geraldine-viswanathan-interview-20261119-p61egh.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eC0JtH8CQtzLNPctvPBUKTBfoEav-t_gnwR5ljmcnV1TTLoYOMZe0NSSvVM",
-      "image_credit": "Prestige Online - Singapore",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScJplYLVjXS_9fpzhWKgqtUJKb28C3-vO9L1n9PWT3BIdj1I-NWjc7p-i6Mgc",
+      "image_credit": "Los Angeles Times",
       "news": [
         {
-          "url": "https://www.prestigeonline.com/in/lifestyle/everything-to-know-about-michele-lamy-controversy-jaden-smith/",
-          "title": "Who is Michèle Lamy, the woman the Internet can’t stop talking about?",
-          "publisher": "Prestige Online - Singapore",
+          "url": "https://www.latimes.com/entertainment-arts/tv/story/2026-11-18/amy-poehler-mike-schur-dig-holiday-preview-2026",
+          "title": "From a pit in Pawnee to one in Greece: Amy Poehler and Mike Schur reunite for ‘Dig’",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eC0JtH8CQtzLNPctvPBUKTBfoEav-t_gnwR5ljmcnV1TTLoYOMZe0NSSvVM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScJplYLVjXS_9fpzhWKgqtUJKb28C3-vO9L1n9PWT3BIdj1I-NWjc7p-i6Mgc"
         },
         {
-          "url": "https://www.10news.com/news/fact-or-fiction/fact-or-fiction-jaden-smith-dating-82-year-old",
-          "title": "Fact or Fiction: Jaden Smith dating 82-year-old?",
-          "publisher": "10News.com",
+          "url": "https://www.today.com/video/amy-poehler-and-geraldine-viswanathan-talk-comedy-series-dig-273583685700",
+          "title": "Stars of Comedy Series ‘Dig’ Talk Strong Female Characters",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnBIn52kyAxr_OwEIgD14kcGL1v_BE79BzdgNtQIfaqqF8F4SVnbEu23mPYdk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJFq33YKkaYTnIIyV5RQ2LCbXtuSZ8TH7HSCe9PXV2SVMgXs10Hoy8WuwCzJk"
         },
         {
-          "url": "https://www.galaxytvonline.com/news/entertainment/viral-posts-falsely-link-jaden-smith-romantically-to-fashion-figure-michele-lamy",
-          "title": "Jaden Smith, Michèle Lamy romance claims debunked",
-          "publisher": "Galaxy Television",
+          "url": "https://www.smh.com.au/culture/tv-and-radio/amy-poehler-dig-mike-schur-geraldine-viswanathan-interview-20261119-p61egh.html",
+          "title": "The new Parks and Recreation? Inside Amy Poehler’s long-awaited return to TV",
+          "publisher": "SMH.com.au",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXbGRKaH-5gBoyXYyO4IzHpaNDkkTo834IjUZZlkB9q6urJvoRQx6eH65zs-w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMvR8SrhmWAa1dZeoO_XnqgIkkrpul0rLPallPnYz6ysB3EZLEPrzZ3156d14"
         }
       ]
     },
     {
-      "query": "utah jazz",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T05:30:00Z",
+      "query": "cathay pacific",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T06:10:00Z",
       "related_news_urls": [
-        "https://utahjazz.com/news/utah-jazz-132-la-clippers-107-key-takeaways",
-        "https://sports.ksl.com/nba/utah-jazz/fourth-quarter-explosion-ends-utah-jazz-losing-streak-in-los-angeles/579025",
-        "https://www.sportsline.com/nba/game-forecast/NBA_20261117_UTA@LAC/"
+        "https://www.nerdwallet.com/travel/news/chase-transfer-partners-cathay-qantas",
+        "https://upgradedpoints.com/news/chase-adds-qantas-cathay-transfer-partners/",
+        "https://www.insideflyer.com/posts/chase-expands-rewards-transfers-with-two-airline-programs/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTS4rDLMh6Wb4d9UBWAMiLkgtI3_vKPcnbR-w5ErleMBGUotkSu57kcoCcgeg",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4yc1oRJJP47YVuQ3SuiUhqpphWJ3cVVRb4lu5T5r4qiDEkUWvV_8TG9aRoXA",
+      "image_credit": "NerdWallet",
       "news": [
         {
-          "url": "https://utahjazz.com/news/utah-jazz-132-la-clippers-107-key-takeaways",
-          "title": "Utah Jazz 132, LA Clippers 107: Key Takeaways",
-          "publisher": "NBA.com",
+          "url": "https://www.nerdwallet.com/travel/news/chase-transfer-partners-cathay-qantas",
+          "title": "Chase Adds Qantas, Cathay Pacific as Transfer Partners",
+          "publisher": "NerdWallet",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTS4rDLMh6Wb4d9UBWAMiLkgtI3_vKPcnbR-w5ErleMBGUotkSu57kcoCcgeg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4yc1oRJJP47YVuQ3SuiUhqpphWJ3cVVRb4lu5T5r4qiDEkUWvV_8TG9aRoXA"
         },
         {
-          "url": "https://sports.ksl.com/nba/utah-jazz/fourth-quarter-explosion-ends-utah-jazz-losing-streak-in-los-angeles/579025",
-          "title": "Fourth quarter explosion ends Utah Jazz losing streak in Los Angeles",
-          "publisher": "KSL Sports",
+          "url": "https://upgradedpoints.com/news/chase-adds-qantas-cathay-transfer-partners/",
+          "title": "Chase Ultimate Rewards Adds Not 1 but 2 Airline Transfer Partners",
+          "publisher": "Upgraded Points",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzZGzuSaQr4912slx6z6qi3GU9q7SAs09-1R-dMO4cj8V6otmrflkFDb2MSPg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtN9uoah9HzaDU4FMjHH1KUum6LgzRbiuFM1tYj3mQJtMsMe8ngawO-g-3o8Q"
         },
         {
-          "url": "https://www.sportsline.com/nba/game-forecast/NBA_20261117_UTA@LAC/",
-          "title": "Expert Picks",
-          "publisher": "SportsLine",
+          "url": "https://www.insideflyer.com/posts/chase-expands-rewards-transfers-with-two-airline-programs/",
+          "title": "Chase expands rewards transfers with two airline programs",
+          "publisher": "InsideFlyer",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxCLh5AGnErzIgOPHkvjFNavIY3Y4bQUvGz3OIoSTPvDhUsLDOB9qh7ed7wa4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSazWsRE9CFEx-ENytiio6pfnPenSO0a9CKiTB6ps9btfvCddfA5UND54IWzn0"
         }
       ]
     },
     {
-      "query": "maga elon musk",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T05:30:00Z",
+      "query": "gta 6 main character",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T06:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/live/2026/11/18/business/dealbook-summit-news",
-        "https://deadline.com/2026/11/elon-musk-midterms-regrets-1237228534/",
-        "https://www.cnn.com/2026/11/18/us/video/ac360-kara-swisher-musk"
+        "https://www.theguardian.com/games/2026/nov/09/grand-theft-auto-creators-gta",
+        "https://www.pbs.org/newshour/arts/the-long-wait-is-almost-over-heres-what-to-know-about-the-upcoming-release-of-grand-theft-auto-vi",
+        "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-BNkyqESv49x7RotfXszLcnXpfeSspJtF3Eb9K23JFDxZjtK7F48Ar6lYxtg",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwe5DkKg8lE67K9u2TTzGjHP2D0EUYTsxP5fSZm4A6xIi3A_VnNEILuFNlDc",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.nytimes.com/live/2026/11/18/business/dealbook-summit-news",
-          "title": "DealBook Summit: Elon Musk Paints Himself as Political Moderate, Says He Is ‘Not MAGA’",
-          "publisher": "The New York Times",
+          "url": "https://www.theguardian.com/games/2026/nov/09/grand-theft-auto-creators-gta",
+          "title": "Crime pays: how Grand Theft Auto became a cultural colossus",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-BNkyqESv49x7RotfXszLcnXpfeSspJtF3Eb9K23JFDxZjtK7F48Ar6lYxtg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwe5DkKg8lE67K9u2TTzGjHP2D0EUYTsxP5fSZm4A6xIi3A_VnNEILuFNlDc"
         },
         {
-          "url": "https://deadline.com/2026/11/elon-musk-midterms-regrets-1237228534/",
-          "title": "Elon Musk Feels “Pretty Foolish” For Donating Mega-Bucks To Losing MAGA In Midterms",
-          "publisher": "Deadline",
+          "url": "https://www.pbs.org/newshour/arts/the-long-wait-is-almost-over-heres-what-to-know-about-the-upcoming-release-of-grand-theft-auto-vi",
+          "title": "The long wait is almost over. Here's what to know about the upcoming release of 'Grand Theft Auto VI'",
+          "publisher": "PBS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR63bZ7TyILZ6UQzlMUUq7M11zJAlEl3npfgjc3lkjRmkk4vFfGZgRYhTj9phA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpVXkKqgFuESsXhlzE_7oRmfMavTQh-cgc0FWw8FzbrIsM2KRgd-jBZs6S2cs"
         },
         {
-          "url": "https://www.cnn.com/2026/11/18/us/video/ac360-kara-swisher-musk",
-          "title": "Elon Musk distances himself from Trump, says ‘I’m not MAGA’",
-          "publisher": "CNN",
+          "url": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
+          "title": "‘GTA 6’ Presales ‘Far in Excess’ of Expectations Ahead of Next Week’s Launch, Take-Two CEO Says",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuvTPX5YNPwZQoaVGrvqsu60DjXLSXgs1YeQC9lu5Ugr_UvBcLybLUixhmHwQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe6D2hdsqu3Gusi3vyff-3VGSyM80FVd48wlWhpzECpRRdvlqqyJy62MZaT_o"
         }
       ]
     },
     {
-      "query": "cold weather advisory",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T05:30:00Z",
+      "query": "emirates",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T06:10:00Z",
       "related_news_urls": [
-        "https://www.sacbee.com/news/weather-news/article318150933.html",
-        "https://www.mercurynews.com/2026/11/16/cold-weather-advisory-issued-for-bay-area-inland-regions-until-tuesday-morning/"
+        "https://www.reuters.com/business/energy/emirates-boss-says-fuel-not-demand-squeezing-airline-profits-2026-11-18/",
+        "https://africa.businessinsider.com/local/markets/emirates-president-tim-clark-says-fuel-not-demand-is-squeezing-profits-after-a-68/x8pq9jy",
+        "https://internationalfinance.com/aviation/emirates-posts-usd-903-million-half-year-profit-as-iran-war-hits-earnings/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGsT_abhj5kJPuEtt1hm76gTnaXTWA-h4aRGpGkgFUMz3WZr0NpyEI1qtHNbo",
-      "image_credit": "Sacramento Bee",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXzZKqR-9GGaT207kV2yqrpBPhd25TsVBBAUCIFRq1CfispiWtnA3lbG4c944",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.sacbee.com/news/weather-news/article318150933.html",
-          "title": "Cold weather advisory in place for Northern California for Friday, says the NWS",
-          "publisher": "Sacramento Bee",
+          "url": "https://www.reuters.com/business/energy/emirates-boss-says-fuel-not-demand-squeezing-airline-profits-2026-11-18/",
+          "title": "Emirates boss says fuel, not demand, squeezing airline profits",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGsT_abhj5kJPuEtt1hm76gTnaXTWA-h4aRGpGkgFUMz3WZr0NpyEI1qtHNbo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXzZKqR-9GGaT207kV2yqrpBPhd25TsVBBAUCIFRq1CfispiWtnA3lbG4c944"
         },
         {
-          "url": "https://www.mercurynews.com/2026/11/16/cold-weather-advisory-issued-for-bay-area-inland-regions-until-tuesday-morning/",
-          "title": "Cold weather advisory issued for Bay Area inland regions until Tuesday morning",
-          "publisher": "The Mercury News",
+          "url": "https://africa.businessinsider.com/local/markets/emirates-president-tim-clark-says-fuel-not-demand-is-squeezing-profits-after-a-68/x8pq9jy",
+          "title": "Emirates president Tim Clark says fuel, not demand, is squeezing profits after a 68% first-half fall, as African routes stay busy and he calls for $70 oil",
+          "publisher": "Business Insider Africa",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9fX4-eaM0vKeElod6Tx8VHAXZnvfwx6Yc7tYAJDxgLC9Knk_DTHc-4y8Bt-s"
-        }
-      ]
-    },
-    {
-      "query": "ziaire williams",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T05:20:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/lakers-ziaire-williams-starting-wednesday/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/ziaire-williams-returns-to-starting-lineup-monday",
-        "https://www.rotowire.com/basketball/headlines/ziaire-williams-news-starting-sans-reaves-538367"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2r-7eMDvBV3c-FpVuudIlgl9K97b0Hn-eGBAQUkhp72IfwZmqYjxzLsVletg",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-ziaire-williams-starting-wednesday/",
-          "title": "Lakers' Ziaire Williams: Starting Wednesday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2r-7eMDvBV3c-FpVuudIlgl9K97b0Hn-eGBAQUkhp72IfwZmqYjxzLsVletg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJGDFaTQWStcScRvoU6ymkir3BZ0ZrKEjcNMUCfImz1PxLyI0hZ62Jy0B46wI"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/ziaire-williams-returns-to-starting-lineup-monday",
-          "title": "Ziaire Williams returns to starting lineup Monday",
-          "publisher": "NBC Sports",
+          "url": "https://internationalfinance.com/aviation/emirates-posts-usd-903-million-half-year-profit-as-iran-war-hits-earnings/",
+          "title": "Emirates posts USD 903 million half-year profit as Iran war hits earnings",
+          "publisher": "https://internationalfinance.com/",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDMi5KF0zuTFN-CPZ9ePkoFCaD0TJ1qmLfPQTU9IYV1j4nH9mPAniL8zPBsJw"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/ziaire-williams-news-starting-sans-reaves-538367",
-          "title": "Ziaire Williams News: Starting sans Reaves",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnrXZlAomOU95QQcEe_0Fj_tkuRMcbQ5z2hCR8jqqA2n2SXOpx0HH4ypTJ-Uw"
-        }
-      ]
-    },
-    {
-      "query": "cal state fullerton basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T05:20:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/ucla/article/ucla-mens-basketball-cal-state-fullerton-preview-292917137/",
-        "https://www.foxsports.com/articles/cbk/ward-leads-csu-fullerton-against-no-7-ucla-after-21point-showing",
-        "https://www.fanduel.com/research/ucla-vs-csu-fullerton-college-basketball-predictions-odds-picks-best-bets-for-11-18-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktVW9YvBOGxeR7AnOGRYjZp2fr7wjy5tXIgl_JBGmevfartVuRq8KiOR-8sk",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/ucla/article/ucla-mens-basketball-cal-state-fullerton-preview-292917137/",
-          "title": "UCLA Men’s Basketball: Cal State Fullerton Preview",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktVW9YvBOGxeR7AnOGRYjZp2fr7wjy5tXIgl_JBGmevfartVuRq8KiOR-8sk"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/cbk/ward-leads-csu-fullerton-against-no-7-ucla-after-21point-showing",
-          "title": "Ward leads CSU Fullerton against No. 7 UCLA after 21-point showing",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
-        },
-        {
-          "url": "https://www.fanduel.com/research/ucla-vs-csu-fullerton-college-basketball-predictions-odds-picks-best-bets-for-11-18-2026",
-          "title": "UCLA vs CSU Fullerton College Basketball Prediction, Odds, Picks, Best Bets for Nov. 18",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSn1CcYoJ2t34pGe-YqDZzYjQe8G_5GbsrCBuTPEJmkSe8AzXymcZt_clKPRNQ"
-        }
-      ]
-    },
-    {
-      "query": "lakers game today",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-19T05:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50519611/quentin-grimes-2nd-laker-hit-10-3s-single-game",
-        "https://www.nba.com/news/quentin-grimes-drops-47-celebrates-with-mom",
-        "https://sports.yahoo.com/nba/breaking-news/article/quentin-grimes-matches-kobe-bryant-mark-with-10-3-pointers-drops-career-high-47-points-to-lift-lakers-past-hornets-070602327.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnbQEe_mQcVwSD9bVYWDGbz313bXrOz9PCF4jIK0Xvk8DMWd3GyrkYlt45fn4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50519611/quentin-grimes-2nd-laker-hit-10-3s-single-game",
-          "title": "Quentin Grimes becomes 2nd in Lakers history to hit 10 or more 3s in single game",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnbQEe_mQcVwSD9bVYWDGbz313bXrOz9PCF4jIK0Xvk8DMWd3GyrkYlt45fn4"
-        },
-        {
-          "url": "https://www.nba.com/news/quentin-grimes-drops-47-celebrates-with-mom",
-          "title": "The Athletic: Quentin Grimes drops 47, celebrates with mom",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTr-Se56QSFPa6CG5jkU7vSAeQS_6iY2sPwso9LWTKXnhrvE2GhSkMlqL0H6Mg"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/quentin-grimes-matches-kobe-bryant-mark-with-10-3-pointers-drops-career-high-47-points-to-lift-lakers-past-hornets-070602327.html",
-          "title": "Quentin Grimes matches Kobe Bryant mark with 10 3-pointers, drops career-high 47 points to lift Lakers past Hornets",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKKwR4jFI3IQ8E-4Q_kb52r3ZxA4LOims4DBxSbVX9cGyYXznXoG8RXAPUCHc"
-        }
-      ]
-    },
-    {
-      "query": "내일 날씨",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T05:20:00Z",
-      "related_news_urls": [
-        "https://biz.chosun.com/topics/topics_social/2026/11/18/FOVYXMTVHZHK3L7YMOH5KA266E/",
-        "https://imnews.imbc.com/replay/2026/nw1200/article/6866904_36967.html",
-        "https://www.hankyung.com/article/202611197170i"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicVq8vtC7aJztItZZpQrvHB8WZHy8qrANMfikDOTZ3SfzQXCQVc_vtr0D4kk",
-      "image_credit": "Chosunbiz",
-      "news": [
-        {
-          "url": "https://biz.chosun.com/topics/topics_social/2026/11/18/FOVYXMTVHZHK3L7YMOH5KA266E/",
-          "title": "돌아온 ‘수능 한파’… 아침 영하권에 입실시간 도로 살얼음 주의",
-          "publisher": "Chosunbiz",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicVq8vtC7aJztItZZpQrvHB8WZHy8qrANMfikDOTZ3SfzQXCQVc_vtr0D4kk"
-        },
-        {
-          "url": "https://imnews.imbc.com/replay/2026/nw1200/article/6866904_36967.html",
-          "title": "'수능일' 한낮 4~11도 쌀쌀‥강풍에 체감 '뚝'",
-          "publisher": "MBC 뉴스",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwXzYXP2laqHuIwKOuXW0cD0ReUP2pU9pfRI9Cv7R97ZtFJ-RB7oJJShaX1NE"
-        },
-        {
-          "url": "https://www.hankyung.com/article/202611197170i",
-          "title": "[포토] 서울 도심 하늘 헤엄치는 고래 모양 구름",
-          "publisher": "한국경제",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQloPK9AqBrch2c4s_WdLkMX7CMI8WdJ0UxSrkjGDRPN87kFSIAbSw39mZsokY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShQvfDmL6BYzlSFCsEK8djUDPCiEeUwWUMBnAWA2LkuN10P4By76xlv8St-mE"
         }
       ]
     }
