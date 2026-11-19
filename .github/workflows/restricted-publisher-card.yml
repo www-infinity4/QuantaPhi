@@ -8,6 +8,8 @@ on:
       - 'test/adult-kit-research.test.mjs'
       - 'test/adult-lifestyle-catalog.test.mjs'
       - 'test/adult-video-source.test.mjs'
+      - 'adult-video-source.mjs'
+      - '21plus-video-source.html'
       - 'restricted-ad-card.mjs'
       - 'restricted-ad-card.css'
       - 'test/restricted-source-directory.test.mjs'
@@ -21,6 +23,8 @@ on:
       - 'test/adult-kit-research.test.mjs'
       - 'test/adult-lifestyle-catalog.test.mjs'
       - 'test/adult-video-source.test.mjs'
+      - 'adult-video-source.mjs'
+      - '21plus-video-source.html'
       - 'restricted-ad-card.mjs'
       - 'test/restricted-source-directory.test.mjs'
 jobs:
@@ -41,3 +45,4 @@ jobs:
           node --check restricted-source-directory.mjs
           node --check adult-lifestyle-catalog.mjs
           node --check adult-kit-research.mjs
+          node --check adult-video-source.mjs
