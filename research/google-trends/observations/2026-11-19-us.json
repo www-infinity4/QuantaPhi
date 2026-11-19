@@ -3,258 +3,118 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T03:01:33.644932Z",
+  "checked_at": "2026-11-19T03:31:25.140522Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "tucker wetmore and ella langley",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T02:40:00Z",
+      "query": "demar derozan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T03:10:00Z",
       "related_news_urls": [
-        "https://people.com/cma-awards-2026-tucker-wetmore-plays-coy-ella-langley-romance-exclusive-12263995",
-        "https://www.usmagazine.com/entertainment/news/ella-langley-tucker-wetmore-on-red-carpet-at-cma-awards-2026/",
-        "https://www.tennessean.com/story/entertainment/music/country/2026/11/17/ella-langley-tucker-wetmore-cma-awards/92565843007/"
+        "https://sports.yahoo.com/articles/cam-whitmore-could-solution-nuggets-230003453.html",
+        "https://nugglove.com/nuggets-keep-paying-price-david-adelmans-stubbornness-with-demar-derozan",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/demar-derozan-plays-19-minutes-vs-houston"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJarAkYDjMRyaSUAO3vQMTwBms_TzeCRdIclX_qmpOigKhPxH2XbW5whVC1Z0",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRINUiPMmaKQQSWz8gtzh0lkv0dUj4cCZig-69WMxEQ3a_x83y9cGzb5klznY",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://people.com/cma-awards-2026-tucker-wetmore-plays-coy-ella-langley-romance-exclusive-12263995",
-          "title": "Tucker Wetmore Plays Coy About Ella Langley Relationship at the 2026 CMA Awards (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJarAkYDjMRyaSUAO3vQMTwBms_TzeCRdIclX_qmpOigKhPxH2XbW5whVC1Z0"
-        },
-        {
-          "url": "https://www.usmagazine.com/entertainment/news/ella-langley-tucker-wetmore-on-red-carpet-at-cma-awards-2026/",
-          "title": "Ella Langley and Tucker Wetmore Walk Red Carpet Separately at 2026 CMA Awards Amid Low-Key Romance",
-          "publisher": "Us Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOqTPSUsiXzK-pzA3ghx6RxIlt0c7qfwRsKtWgLVV8GmHeiFa99Ktn7GxMl5o"
-        },
-        {
-          "url": "https://www.tennessean.com/story/entertainment/music/country/2026/11/17/ella-langley-tucker-wetmore-cma-awards/92565843007/",
-          "title": "Are Ella Langley and Tucker Wetmore dating? What we know",
-          "publisher": "The Tennessean",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQujMTK_xhVWnWf5KFuLAJbPohXwaMNTCE0MchoJMHmWVWhCq63RAp93Grjr1s"
-        }
-      ]
-    },
-    {
-      "query": "tyler herro",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T02:40:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/tyler-herro-three-words-sums-status-ex-teammate-bam-adebayo-first-game-since-punching-incident",
-        "https://www.nytimes.com/athletic/7791966/2026/11/18/tyler-herro-bucks-heat-bam-adebayo-giannis-return/",
-        "https://sports.yahoo.com/articles/watch-heat-home-fans-reception-020337206.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9Cwbv9-72QkcrgfBG1NM4OydywsByrXrJoBIniP2uDsWicFrQ8fJWGumrwjw",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/tyler-herro-three-words-sums-status-ex-teammate-bam-adebayo-first-game-since-punching-incident",
-          "title": "Tyler Herro's three-words sums up status with ex-teammate Bam Adebayo for first game since punching incident",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9Cwbv9-72QkcrgfBG1NM4OydywsByrXrJoBIniP2uDsWicFrQ8fJWGumrwjw"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7791966/2026/11/18/tyler-herro-bucks-heat-bam-adebayo-giannis-return/",
-          "title": "Tyler Herro hasn’t spoken to Bam Adebayo ‘in a while,’ is excited to play Heat - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCp-APRxWEr8E6EHT6HGlRTI7qajAZcFJt_JrKMgMHDERb8qHGLzhXVHEBdGw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-heat-home-fans-reception-020337206.html",
-          "title": "Watch Heat home fans’ reception to Tyler Herro’s intro before Bucks game",
+          "url": "https://sports.yahoo.com/articles/cam-whitmore-could-solution-nuggets-230003453.html",
+          "title": "Cam Whitmore could be the solution to Nuggets DeMar DeRozan issues",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGapTaOuUfjRX3iPs66MaCZN40StS9PpX-Ra2hVQm8KaXBwaghN45VAZXHWKQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRINUiPMmaKQQSWz8gtzh0lkv0dUj4cCZig-69WMxEQ3a_x83y9cGzb5klznY"
+        },
+        {
+          "url": "https://nugglove.com/nuggets-keep-paying-price-david-adelmans-stubbornness-with-demar-derozan",
+          "title": "Nuggets keep paying the price for David Adelman's stubbornness with DeMar DeRozan",
+          "publisher": "Nugg Love",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTm17odjo1yx-l1ZT003wCC_ONnwlmXYZCm9YMOgiZ9CXWaaqzvpHAviFBsm4c"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/demar-derozan-plays-19-minutes-vs-houston",
+          "title": "DeMar DeRozan plays 19 minutes vs. Houston",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_o8bW14zqHFnc73NnEL3JA0r8Psxd5d-Ak1thN3TKlBuRIXhywz0nIcFaTPM"
         }
       ]
     },
     {
-      "query": "byu basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T02:40:00Z",
+      "query": "asu basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T03:10:00Z",
       "related_news_urls": [
-        "https://byucougars.com/news/2026/11/17/no-21-byu-concludes-four-game-homestand-against-northern-colorado",
-        "https://www.si.com/college/byu/basketball/game-preview-byu-basketball-vs-northern-colorado",
-        "https://www.vanquishthefoe.com/byu-basketball/28141/byu-vs-northern-colorado-preview-byu-big-favorite-in-final-tune-up-before-maui"
+        "https://sports.yahoo.com/articles/homestand-finale-three-things-watch-183204933.html",
+        "https://www.azcentral.com/story/sports/college/asu/2026/11/17/undefeated-asu-mens-basketball-will-face-oakland/92819020007/",
+        "https://goldengrizzlies.com/news/2026/11/17/mens-basketball-golden-grizzlies-back-on-the-road-at-arizona-state.aspx"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvfu0oOV2FSOQfBOPi1g91-n_6o8xhMkp2hk1HF0LL8QRWYGdGlka2wCMGxHs",
-      "image_credit": "BYU Athletics",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM3bBeWFBM1ZZosM9iore-HWQ-4cvgO6I8Xy5yJMaI8YMYUXGKe6ZsO8iuwag",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://byucougars.com/news/2026/11/17/no-21-byu-concludes-four-game-homestand-against-northern-colorado",
-          "title": "No. 21 BYU concludes four-game homestand against Northern Colorado",
-          "publisher": "BYU Athletics",
+          "url": "https://sports.yahoo.com/articles/homestand-finale-three-things-watch-183204933.html",
+          "title": "Homestand Finale: Three Things to Watch for ASU Men's Basketball vs. Oakland ahead of Power-Conference Matchups",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvfu0oOV2FSOQfBOPi1g91-n_6o8xhMkp2hk1HF0LL8QRWYGdGlka2wCMGxHs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM3bBeWFBM1ZZosM9iore-HWQ-4cvgO6I8Xy5yJMaI8YMYUXGKe6ZsO8iuwag"
         },
         {
-          "url": "https://www.si.com/college/byu/basketball/game-preview-byu-basketball-vs-northern-colorado",
-          "title": "Game Preview: BYU Basketball vs Northern Colorado",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.azcentral.com/story/sports/college/asu/2026/11/17/undefeated-asu-mens-basketball-will-face-oakland/92819020007/",
+          "title": "Oakland is next opponent for undefeated Arizona State men's basketball",
+          "publisher": "azcentral.com and The Arizona Republic",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQF-03VJEuQqC-9UHujb2Sj9EsDhfkFWPLX3x70YAyw3lwX1_bTRfqKgN_SSA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTitnEozv1LZK00-jjdm3_JGzfKrz7gJatPSe3ZQ7z6gba8c2Px71NMr8is8nA"
         },
         {
-          "url": "https://www.vanquishthefoe.com/byu-basketball/28141/byu-vs-northern-colorado-preview-byu-big-favorite-in-final-tune-up-before-maui",
-          "title": "BYU vs Northern Colorado Preview: BYU Big Favorite in Final Tune-up Before Maui",
-          "publisher": "Vanquish The Foe",
+          "url": "https://goldengrizzlies.com/news/2026/11/17/mens-basketball-golden-grizzlies-back-on-the-road-at-arizona-state.aspx",
+          "title": "Golden Grizzlies Back on the Road at Arizona State",
+          "publisher": "Oakland University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy6PzvpQlQ2y-ajjKCL_8CK8RiTM5OsPIaS-L8CfRd4jLAGSJEjrJtxESeRoc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEpzAuuR62dXMxRBS5pE9pvEuW4ajTe7vxm1WS06ZC0NkrQF7qcA1w7x_PEVI"
         }
       ]
     },
     {
-      "query": "trey kaufman renn",
+      "query": "the dodo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T03:10:00Z",
+      "related_news_urls": [
+        "https://www.thedodo.com/daily-dodo/visit-to-the-dump-leads-to-unexpected-reunion-between-woman-and-her-missing-dog",
+        "https://www.yahoo.com/lifestyle/videos/goat-stranded-remote-island-finally-180343387.html",
+        "https://www.thedodo.com/daily-dodo/no-one-wants-these-sweet-shelter-puppies-because-of-how-they-look"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFgcLeb22zl7_lddiWq4bx1QTGZKWiTbaHlhKqXMNgnG52VuY24MuEJzHXR6Q",
+      "image_credit": "The Dodo",
+      "news": [
+        {
+          "url": "https://www.thedodo.com/daily-dodo/visit-to-the-dump-leads-to-unexpected-reunion-between-woman-and-her-missing-dog",
+          "title": "Visit To The Dump Leads To Unexpected Reunion Between Woman And Her Missing Dog",
+          "publisher": "The Dodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFgcLeb22zl7_lddiWq4bx1QTGZKWiTbaHlhKqXMNgnG52VuY24MuEJzHXR6Q"
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/videos/goat-stranded-remote-island-finally-180343387.html",
+          "title": "Goat Stranded On Remote Island Finally Gets Rescued",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXMe7uifJxPEhEAZ-ze__MV0bUCJHMaa8MCGVXVANEQrTMiNupOhmIA9IBy9A"
+        },
+        {
+          "url": "https://www.thedodo.com/daily-dodo/no-one-wants-these-sweet-shelter-puppies-because-of-how-they-look",
+          "title": "No One Wants These Sweet Shelter Puppies Because Of How They Look",
+          "publisher": "The Dodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIJxKVVpKLqbQgSCKCpLEW2LLyTO6EW7ALAZmYCb1EZ_myNPoOBgEozlpcbBo"
+        }
+      ]
+    },
+    {
+      "query": "doj probe elissa slotkin rhetoric",
       "approx_searches": "500+",
-      "published_at": "2026-11-19T02:40:00Z",
-      "related_news_urls": [
-        "https://www.si.com/college/purdue/basketball/tracking-how-all-five-purdue-basketball-transfers-are-performing-at-new-schools",
-        "https://247sports.com/college/kansas/longformarticle/bill-self-kansas-basketball-postgame-quotes-unlv-292923158/",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUC3hXznNcKWNU3OYomoWehEHSjVGfxt7pvdyRALw4RwC_jQfg8OTrQar6O3c",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/college/purdue/basketball/tracking-how-all-five-purdue-basketball-transfers-are-performing-at-new-schools",
-          "title": "Tracking How All 5 Purdue Basketball Transfers Are Performing at New Schools",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUC3hXznNcKWNU3OYomoWehEHSjVGfxt7pvdyRALw4RwC_jQfg8OTrQar6O3c"
-        },
-        {
-          "url": "https://247sports.com/college/kansas/longformarticle/bill-self-kansas-basketball-postgame-quotes-unlv-292923158/",
-          "title": "Everything Bill Self said after KU's win over UNLV",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVoyGq1VvynoBbRhp27ySjQhCrf8HZT7SQMfceHey0QgYRKiCyMr_Xra1xHAg"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
-          "title": "Kansas 102-77 UNLV (Nov 17, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8usoSp041bXEUQZ2jxIojkczYy038RKK2b3yrp_Ltv0XHXVsPqe-a_6gw7vQ"
-        }
-      ]
-    },
-    {
-      "query": "military strike",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-19T02:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/17/politics/us-iran-self-defense-strikes",
-        "https://www.foxnews.com/world/iran-warns-bahrain-monarchy-survival-risk-amid-push-evict-us-fifth-fleet",
-        "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLCB9HypeQ-wdjXD-c79VQPat67Na9nJWf3JwQmCPi7GSzzSqIpAx23cg7fNc",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/17/politics/us-iran-self-defense-strikes",
-          "title": "Iran widens Gulf attacks after US strikes missile launch site",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLCB9HypeQ-wdjXD-c79VQPat67Na9nJWf3JwQmCPi7GSzzSqIpAx23cg7fNc"
-        },
-        {
-          "url": "https://www.foxnews.com/world/iran-warns-bahrain-monarchy-survival-risk-amid-push-evict-us-fifth-fleet",
-          "title": "Iran warns Bahrain monarchy its survival is at risk amid push to 'evict' US Fifth Fleet",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb-W-1rLEdwChdxOCug1HrFS5G3rvZj-02hc3HC75GqXUMbMG59h6dljseQCY"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks",
-          "title": "Iran war updates: US says it hits IRGC Qeshm; Iran says US drone downed",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoJwmjvyaDffHA0YLPrLyxrZ6ul2PiYbTtA7oKkiXkGsKPsC7BNWuR-kqs-x8"
-        }
-      ]
-    },
-    {
-      "query": "michelle randolph",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T02:40:00Z",
-      "related_news_urls": [
-        "https://www.news10.com/news/greene-county/amazon-prime-movie-shot-in-greene-county-sets-premiere-date/",
-        "https://www.imdb.com/video/vi703515161/",
-        "https://www.moviewalks.com/news/poughkeepsie-manhattan-and-the-upper-west-side-the-filming-locations-of-clashing-through-the-snow~lfscSvSr/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7F16fxs-Y31g_VXjmK0u10S_VOKzNJo7ElmpI1E1FOctJAChKpjIpgFVK5c",
-      "image_credit": "NEWS10 ABC",
-      "news": [
-        {
-          "url": "https://www.news10.com/news/greene-county/amazon-prime-movie-shot-in-greene-county-sets-premiere-date/",
-          "title": "Amazon Prime movie, shot in Greene County, sets premiere date",
-          "publisher": "NEWS10 ABC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7F16fxs-Y31g_VXjmK0u10S_VOKzNJo7ElmpI1E1FOctJAChKpjIpgFVK5c"
-        },
-        {
-          "url": "https://www.imdb.com/video/vi703515161/",
-          "title": "▶️ Clashing Through the Snow - Trailer",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvAVwYq5sdXthHKo1oLYkFf7h3Qg4RWyGzLYIEnah557uu82krSzhQ0NKyaWw"
-        },
-        {
-          "url": "https://www.moviewalks.com/news/poughkeepsie-manhattan-and-the-upper-west-side-the-filming-locations-of-clashing-through-the-snow~lfscSvSr/",
-          "title": "Poughkeepsie, Manhattan and the Upper West Side: The filming locations of Clashing Through the Snow",
-          "publisher": "MovieWalks",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeCKd-E9QinGg48TF-beNLLc4dG5_hIAcCMHc6DRrguvzoraHI-5RXM0yxjFo"
-        }
-      ]
-    },
-    {
-      "query": "sports scores today",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T02:30:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-12-cfp-hot-seats/",
-        "https://www.espn.com/espn/betting/story/_/id/50504671/college-football-heisman-trophy-cfp-futures-betting-week-12",
-        "https://www.nytimes.com/athletic/7783181/2026/11/15/college-football-playoff-bracket-projections-big-ten/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtv7Edz1AjXTds3RsqE2GR6hTKAHDxpRQxuGfDFeEZ3sua3LwbqWVIJi87zQ",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-12-cfp-hot-seats/",
-          "title": "Big Ten Power Rankings: Playoff hopes, hot seats fuel pivotal final two weeks of season",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtv7Edz1AjXTds3RsqE2GR6hTKAHDxpRQxuGfDFeEZ3sua3LwbqWVIJi87zQ"
-        },
-        {
-          "url": "https://www.espn.com/espn/betting/story/_/id/50504671/college-football-heisman-trophy-cfp-futures-betting-week-12",
-          "title": "Breaking down the major futures for the Big Ten, from the Heisman to the CFP",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0VFwRqfRSa2YKOxubeWh1Qym1VQIR92ce34HB36eqmS6AsNzI46wE-cEYKwA"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7783181/2026/11/15/college-football-playoff-bracket-projections-big-ten/",
-          "title": "Can the Big Ten get 3 teams into the College Football Playoff? Week 11 bracket projections - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8GTayiVE71_UHthicnkRIjPnuJdEzu12CTYIRMWthzxjNnwzOEc9ZGTD6T6k"
-        }
-      ]
-    },
-    {
-      "query": "aaron reitz",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T02:30:00Z",
+      "published_at": "2026-11-19T03:00:00Z",
       "related_news_urls": [
         "https://www.nbcnews.com/politics/congress/elissa-slotkin-fires-back-aaron-reitz-investigation-political-speech-rcna610133",
         "https://newrepublic.com/post/217976/todd-blanche-admit-free-speech-not-crime",
@@ -287,72 +147,212 @@
       ]
     },
     {
-      "query": "joe buck",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T02:30:00Z",
+      "query": "ryan garcia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T03:00:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/news/2026/11/espn-boss-breaks-silence-on-joe-buck-troy-aikman-tension-disappointing.html",
-        "https://sports.yahoo.com/articles/fired-mnf-booth-himself-nfl-181139296.html",
-        "https://www.usatoday.com/story/sports/media/2026/11/17/troy-aikman-joe-buck-feud-jimmy-pitaro-espn/92827672007/"
+        "https://www.boxingnews24.com/2026/11/hearn-wants-mayweather-to-risk-50-0-against-garcia/",
+        "https://www.boxingscene.com/articles/would-you-bet-your-mortgage-against-floyd-mayweather-beating-ryan-garcia",
+        "https://timesofindia.indiatimes.com/sports/international-sports/floyd-mayweathers-bid-to-break-hopkins-record-faces-medical-and-licensing-conditions/articleshow/135809187.cms"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbfZcIHKXEREBUMq9EFu_bMylwj2WrbQ-3dV0j40NMHKH-YgqTXQ2k07ZgYxo",
-      "image_credit": "Cleveland.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX97AY0pPqNCuSvjeDVxjrWY_SbVzDzIHEO3ZI0RUueT9YJSNAMMygdEZH2L0",
+      "image_credit": "Boxing News 24",
       "news": [
         {
-          "url": "https://www.cleveland.com/news/2026/11/espn-boss-breaks-silence-on-joe-buck-troy-aikman-tension-disappointing.html",
-          "title": "ESPN boss breaks silence on Joe Buck, Troy Aikman tension: ‘Disappointing’",
-          "publisher": "Cleveland.com",
+          "url": "https://www.boxingnews24.com/2026/11/hearn-wants-mayweather-to-risk-50-0-against-garcia/",
+          "title": "Hearn Wants Mayweather To Risk 50–0 Against Garcia",
+          "publisher": "Boxing News 24",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbfZcIHKXEREBUMq9EFu_bMylwj2WrbQ-3dV0j40NMHKH-YgqTXQ2k07ZgYxo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX97AY0pPqNCuSvjeDVxjrWY_SbVzDzIHEO3ZI0RUueT9YJSNAMMygdEZH2L0"
         },
         {
-          "url": "https://sports.yahoo.com/articles/fired-mnf-booth-himself-nfl-181139296.html",
-          "title": "Fired From the MNF Booth Himself, NFL Legend Says Troy Aikman’s Super Bowl Call With Joe Buck Could Get Awkward",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.boxingscene.com/articles/would-you-bet-your-mortgage-against-floyd-mayweather-beating-ryan-garcia",
+          "title": "'Would you bet your mortgage against Floyd Mayweather beating Ryan Garcia'",
+          "publisher": "BoxingScene",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST0mQ7Cvgsr3X89cfecOhKozqQ3JSP87lF5EBWve6Ho6MbZT3SqK_QHiHvgRk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh18PhhyY0DrkIU-e-WrQhlee27ovGeoxPVD15FyNqoqsMMFCXNmhE-G8SJ3c"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/media/2026/11/17/troy-aikman-joe-buck-feud-jimmy-pitaro-espn/92827672007/",
-          "title": "ESPN boss says timing of Troy Aikman, Joe Buck feud 'disappointing'",
-          "publisher": "USA Today",
+          "url": "https://timesofindia.indiatimes.com/sports/international-sports/floyd-mayweathers-bid-to-break-hopkins-record-faces-medical-and-licensing-conditions/articleshow/135809187.cms",
+          "title": "Floyd Mayweather’s bid to break Hopkins’ record faces medical and licensing conditions",
+          "publisher": "The Times of India",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTWpmvSuJV1w_EFuu5mleS8czlsghzX2k8Qoa8YtYu2FwNuw6F6B0V56chTQ0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8it5BWjNu87JVuWiR1H3heenqCYmRXuUy-alqclF7v1GXsSWdW16Rd2Pepk"
         }
       ]
     },
     {
-      "query": "sam merrill",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T02:30:00Z",
+      "query": "javonte green",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T03:00:00Z",
       "related_news_urls": [
-        "https://www.vikings.com/news/signing-damon-bankston-josh-ross-practice-squad",
-        "https://www.fantasypros.com/nfl/news/621032/michael-pittman-jr-foot-returns-to-practice-wednesday.php",
-        "https://www.cbssports.com/fantasy/football/news/damon-bankston-staying-in-nfc-north-with-minnesota/"
+        "https://www.cbssports.com/fantasy/basketball/news/pistons-javonte-green-starting-wednesday/",
+        "https://www.rotowire.com/basketball/headlines/javonte-green-news-starting-wednesday-539845",
+        "https://sports.yahoo.com/articles/sixers-forward-dean-wade-left-233757854.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUWmLHX8OHDnvupbpCcCKx0AdKOCC4HIXW6hx5x1aJtqmFyTQdIUs6cmmkLlM",
-      "image_credit": "Vikings.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2r-7eMDvBV3c-FpVuudIlgl9K97b0Hn-eGBAQUkhp72IfwZmqYjxzLsVletg",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.vikings.com/news/signing-damon-bankston-josh-ross-practice-squad",
-          "title": "Vikings Sign RB Damon Bankston & LB Josh Ross to Practice Squad",
-          "publisher": "Vikings.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUWmLHX8OHDnvupbpCcCKx0AdKOCC4HIXW6hx5x1aJtqmFyTQdIUs6cmmkLlM"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/news/621032/michael-pittman-jr-foot-returns-to-practice-wednesday.php",
-          "title": "Michael Pittman Jr. (foot) returns to practice Wednesday",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5Jy0kfQkw1A09mn3ZXP-uudRzYJndCabIKVQWe2JKtsE9K5PtEDSBcE06tIU"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/damon-bankston-staying-in-nfc-north-with-minnesota/",
-          "title": "Damon Bankston: Staying in NFC North with Minnesota",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/pistons-javonte-green-starting-wednesday/",
+          "title": "Pistons' Javonte Green: Starting Wednesday",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTJ6gwJCH7IU0Wx2qdBpkDgPi90hjl_3BZbe45wktHa-N3I9fcmFQRmNiDV1k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2r-7eMDvBV3c-FpVuudIlgl9K97b0Hn-eGBAQUkhp72IfwZmqYjxzLsVletg"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/javonte-green-news-starting-wednesday-539845",
+          "title": "Javonte Green News: Starting Wednesday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7ewEMYscQiKsa8Gae7wdWWZsr_7jns6JgfVisogTEP9MlsrbOrYblqvjkBv4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/sixers-forward-dean-wade-left-233757854.html",
+          "title": "Sixers forward Dean Wade (left hamstring …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uqIrko1CErtYr8U-BhSWdifI8t8W1I2OpRN7rKV159Q2lUhS3uzQ6uSev9E"
+        }
+      ]
+    },
+    {
+      "query": "oklahoma basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T03:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/oklahoma/article/oklahoma-basketball-duke-brennan-injury-frontcourt-rotation-292864286/",
+        "https://www.vuhoops.com/villanova-basketball/35629/former-villanova-big-to-miss-time-following-ankle-surgery",
+        "https://sports.yahoo.com/articles/oklahomas-latest-injury-affect-sooners-120010015.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk_B0xlLp39tpwiuqdTZjKSPEzz6lI7XfDqujuS_xbv4mzL4DpynqmrDl5WoY",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/oklahoma/article/oklahoma-basketball-duke-brennan-injury-frontcourt-rotation-292864286/",
+          "title": "Oklahoma center Duke Brennan to undergo surgery after ankle injury",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk_B0xlLp39tpwiuqdTZjKSPEzz6lI7XfDqujuS_xbv4mzL4DpynqmrDl5WoY"
+        },
+        {
+          "url": "https://www.vuhoops.com/villanova-basketball/35629/former-villanova-big-to-miss-time-following-ankle-surgery",
+          "title": "Former Villanova Big To Miss Time Following Ankle Surgery",
+          "publisher": "VU Hoops",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVJoI3yGJQC3unu6c8HWb7WnMVty3cRm-ppgyMvWASxzWJuu_amNF4ixZU-G8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/oklahomas-latest-injury-affect-sooners-120010015.html",
+          "title": "How Will Oklahoma's Latest Injury Affect Sooners' Rotation?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHL3J1WGI0YTIe44zeQjj3A3Vx23cmZIkg__SEHgdNGOgSgt9NT65RnqPw9co"
+        }
+      ]
+    },
+    {
+      "query": "michael buble",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T02:50:00Z",
+      "related_news_urls": [
+        "https://www.wdwmagic.com/attractions/rock-n-roller-coaster-starring-aerosmith/news/16nov2026-michael-buble-and-gonzo-promote-rock-n-roller-coaster-holiday-overlay-in-new-video.htm",
+        "https://wdwnt.com/2026/11/michael-buble-joins-the-great-gonzo-to-promote-rock-n-roller-coaster-starring-the-muppets-obligatory-holiday-overlay/",
+        "https://cwibc.co.id/en/michael-buble-holiday-events"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ14wCGA1v_v2Ms23zIsTgiV6b9tnMJkhswATD3fx4tXN_c3yq2elIkrsjs_YU",
+      "image_credit": "WDWMagic",
+      "news": [
+        {
+          "url": "https://www.wdwmagic.com/attractions/rock-n-roller-coaster-starring-aerosmith/news/16nov2026-michael-buble-and-gonzo-promote-rock-n-roller-coaster-holiday-overlay-in-new-video.htm",
+          "title": "Michael Bublé and Gonzo Promote Rock 'n' Roller Coaster Holiday Overlay in New Video",
+          "publisher": "WDWMagic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ14wCGA1v_v2Ms23zIsTgiV6b9tnMJkhswATD3fx4tXN_c3yq2elIkrsjs_YU"
+        },
+        {
+          "url": "https://wdwnt.com/2026/11/michael-buble-joins-the-great-gonzo-to-promote-rock-n-roller-coaster-starring-the-muppets-obligatory-holiday-overlay/",
+          "title": "Michael Bublé Joins The Great Gonzo to Promote Rock 'n' Roller Coaster Starring the Muppets: Obligatory Holiday Overlay",
+          "publisher": "WDW News Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gYn7pAMji8yrJE1dN1VDjAkjF0e0VNmfYom9_nD1pIdWdb9q7-k3pcrdHA0"
+        },
+        {
+          "url": "https://cwibc.co.id/en/michael-buble-holiday-events",
+          "title": "Michael Bublé Songs Headline Disney Ride and UK Tribute Show",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzw9iF335mqN2cmGUPpVGKzbLGPkULGDMHlRDDBtDlmFhzDyocRgsJcmV_dtc"
+        }
+      ]
+    },
+    {
+      "query": "kasparas jakučionis",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T02:50:00Z",
+      "related_news_urls": [
+        "https://www.sportas.lt/naujiena/553410/jakucionis-pries-buvusi-kluba-suzaide-vienas-geriausiu-rungtyniu",
+        "https://www.15min.lt/video/highlights-kasparas-jakucionis-scores-25-points-vs-hawks-111526-285394",
+        "https://77.lt/jakucionis-pelne-25-taskus-daugiausia-nba-bet-bucks-nusileido-hawks-106-113"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2UnZQ2mwkSocWMJwbrw-lexoirAz5bj5ymgQXFfHHuuF56ixst5FkJhH0ekw",
+      "image_credit": "Sportas.lt",
+      "news": [
+        {
+          "url": "https://www.sportas.lt/naujiena/553410/jakucionis-pries-buvusi-kluba-suzaide-vienas-geriausiu-rungtyniu",
+          "title": "Jakučionis prieš buvusį klubą sužaidė vienas geriausių rungtynių",
+          "publisher": "Sportas.lt",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2UnZQ2mwkSocWMJwbrw-lexoirAz5bj5ymgQXFfHHuuF56ixst5FkJhH0ekw"
+        },
+        {
+          "url": "https://www.15min.lt/video/highlights-kasparas-jakucionis-scores-25-points-vs-hawks-111526-285394",
+          "title": "Highlights: Kasparas Jakučionis Scores 25 Points vs. Hawks | 11.15.26",
+          "publisher": "15min.lt",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoBHxv5GXRF8g2Fp0aR-i1ljG8bEd0CKzu8TsbUnD4Hh08SQevSQt46JIHvTI"
+        },
+        {
+          "url": "https://77.lt/jakucionis-pelne-25-taskus-daugiausia-nba-bet-bucks-nusileido-hawks-106-113",
+          "title": "Jakučionis pelnė 25 taškus – daugiausia NBA, bet „Bucks“ nusileido „Hawks“ 106:113",
+          "publisher": "77.lt",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-PGjAjnUAA5kBBdg24AiF9cIZV6l3kLnOEzc5gwRDiw2ij4zYZUD6eSQU2g0"
+        }
+      ]
+    },
+    {
+      "query": "nikola jokic",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T02:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401910001",
+        "https://bleacherreport.com/articles/25534560-nikola-jokic-calls-out-nuggets-after-loss-suns-comments-demar-derozan-new-video",
+        "https://www.denverpost.com/2026/11/16/nuggets-suns-nikola-jokic-devin-booker-rebounding/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdm1p2yQlwr0agkJpDrMaQOnpGmRAlGl9iWRPj7aaZKlBdhOjb7dnFOKAjrdU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401910001",
+          "title": "Suns 117-105 Nuggets (Nov 16, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdm1p2yQlwr0agkJpDrMaQOnpGmRAlGl9iWRPj7aaZKlBdhOjb7dnFOKAjrdU"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25534560-nikola-jokic-calls-out-nuggets-after-loss-suns-comments-demar-derozan-new-video",
+          "title": "Nikola Jokic Calls Out Nuggets After Loss to Suns, Comments on DeMar DeRozan in New Video",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPU5IA3PqpDosJZzVnIGG39B6k7x8VwqftHkq0KY-Pmpy3EWSrv1axBWLE44"
+        },
+        {
+          "url": "https://www.denverpost.com/2026/11/16/nuggets-suns-nikola-jokic-devin-booker-rebounding/",
+          "title": "Nuggets’ shooting, rebounding issues resurface in home loss to Suns",
+          "publisher": "The Denver Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpr-g44LT3k2SAJohY-fQHFAN3WURYb88Vme2NJlqv8gRPUCEaBcSl4RhNO_U"
         }
       ]
     }
