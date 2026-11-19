@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T05:31:21.861399Z",
+  "checked_at": "2026-11-19T06:01:38.064525Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "weather today",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T05:10:00Z",
-      "related_news_urls": [
-        "https://weather.com/2026/11/18/forecast/regional/east-coast-storm-coastal-flooding-winds-rain",
-        "https://cbs12.com/news/local/nhc-tracking-possible-subtropical-development-near-the-southeastern-us-coast",
-        "https://www.foxweather.com/weather-news/potential-coastal-storm-southeast-soaking-rain-gusty-winds"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQe3-jCj1nwTORimlzctgxaOryXcyY__qD1eoRrMHtXm9kRiMJXXtnNeqmUKE",
-      "image_credit": "The Weather Channel",
-      "news": [
-        {
-          "url": "https://weather.com/2026/11/18/forecast/regional/east-coast-storm-coastal-flooding-winds-rain",
-          "title": "East Coast storm possible this weekend into Monday",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQe3-jCj1nwTORimlzctgxaOryXcyY__qD1eoRrMHtXm9kRiMJXXtnNeqmUKE"
-        },
-        {
-          "url": "https://cbs12.com/news/local/nhc-tracking-possible-subtropical-development-near-the-southeastern-us-coast",
-          "title": "NHC tracking possible subtropical development near the southeastern U.S. coast",
-          "publisher": "WPEC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUuoT_OPD12PnzKX1zUD7-cdO2uvmrza8soQhOiB4iOFpMam9YGdUDEwkW32g"
-        },
-        {
-          "url": "https://www.foxweather.com/weather-news/potential-coastal-storm-southeast-soaking-rain-gusty-winds",
-          "title": "All eyes on Future Subtropical Storm Kyle as coastal storm brews off Southeast this weekend",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_UgJGyiatecVa6mlX1-6hSepTkA7qyF6GVE6u_LmOQIToMgBdjXNDENTaXJc"
-        }
-      ]
-    },
-    {
-      "query": "dillon brooks",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T05:10:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/18/lebron-james-bron-betting-app-lawsuit",
-        "https://frontofficesports.com/article/lebron-takes-ai-betting-app-to-court-over-fake-endorsement/",
-        "https://www.cnbc.com/2026/11/18/lebron-james-startup-ai-lawsuit.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH0OjAP0xdgo3Tp633NZqBU42tzkjVjTDCPPHE4VDryjUF3MqTTW5GVgVtZ6c",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/18/lebron-james-bron-betting-app-lawsuit",
-          "title": "LeBron James sues sports betting app Bron for using nickname and likeness without permission",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH0OjAP0xdgo3Tp633NZqBU42tzkjVjTDCPPHE4VDryjUF3MqTTW5GVgVtZ6c"
-        },
-        {
-          "url": "https://frontofficesports.com/article/lebron-takes-ai-betting-app-to-court-over-fake-endorsement/",
-          "title": "LeBron Takes AI Betting App to Court Over Fake Endorsement",
-          "publisher": "Front Office Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxsykURRrNxBHi97QMdc8wY8TpCkAuSd5pNJLhv_L15Y6iiiirbrBHcwOd1Yk"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/18/lebron-james-startup-ai-lawsuit.html",
-          "title": "LeBron James sues startup over viral AI ad allegedly exploiting his likeness",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzvbmpi32rOtdsQfw3tYo-AlLJWnX6p6-OoLAvg3XYM_NRvNcepAZJK2_z1TM"
-        }
-      ]
-    },
-    {
-      "query": "resin",
+      "query": "trent perry",
       "approx_searches": "200+",
-      "published_at": "2026-11-19T05:10:00Z",
+      "published_at": "2026-11-19T05:40:00Z",
       "related_news_urls": [
-        "https://www.metrowestdailynews.com/story/news/local/2026/11/18/ocean-wave-resin-board-workshop-tackle-box-brewing-marlborough/92821444007/",
-        "https://suaragarut.id/en/marlborough-resin-board-workshop",
-        "https://cwibc.co.id/en/reclaimed-and-refined-brings-resin-workshop-to-marlborough"
+        "https://247sports.com/college/kansas/longformarticle/bill-self-kansas-basketball-postgame-quotes-unlv-292923158/",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
+        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/18/blyden-perfect-on-jayhawks-charmed-shooting-night/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6U_vBGjf5sZsgntk5cDZyU0cOts6qo2YdDxf7GJaXGeGphY1h0-kHAQ5w8_Y",
-      "image_credit": "MetroWest Daily News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVoyGq1VvynoBbRhp27ySjQhCrf8HZT7SQMfceHey0QgYRKiCyMr_Xra1xHAg",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.metrowestdailynews.com/story/news/local/2026/11/18/ocean-wave-resin-board-workshop-tackle-box-brewing-marlborough/92821444007/",
-          "title": "Ocean wave resin board workshop set for Marlborough",
-          "publisher": "MetroWest Daily News",
+          "url": "https://247sports.com/college/kansas/longformarticle/bill-self-kansas-basketball-postgame-quotes-unlv-292923158/",
+          "title": "Everything Bill Self said after KU's win over UNLV",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6U_vBGjf5sZsgntk5cDZyU0cOts6qo2YdDxf7GJaXGeGphY1h0-kHAQ5w8_Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVoyGq1VvynoBbRhp27ySjQhCrf8HZT7SQMfceHey0QgYRKiCyMr_Xra1xHAg"
         },
         {
-          "url": "https://suaragarut.id/en/marlborough-resin-board-workshop",
-          "title": "Tackle Box Brewing Hosts Resin Board Workshop in Marlborough",
-          "publisher": "SuaraGarut.ID",
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909787",
+          "title": "Kansas 102-77 UNLV (Nov 17, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfBdsWO_Atb41CJ_SfW0TdQw2ClN3s9h5UJiAyGioBDjEUWUjjzRYkypkE8OE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8usoSp041bXEUQZ2jxIojkczYy038RKK2b3yrp_Ltv0XHXVsPqe-a_6gw7vQ"
         },
         {
-          "url": "https://cwibc.co.id/en/reclaimed-and-refined-brings-resin-workshop-to-marlborough",
-          "title": "Reclaimed and Refined Brings Resin Workshop to Marlborough",
-          "publisher": "cwibc.co.id",
+          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/18/blyden-perfect-on-jayhawks-charmed-shooting-night/",
+          "title": "Blyden perfect on Jayhawks’ charmed shooting night",
+          "publisher": "KU Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0S9gnpHD55LAmiHLCcD5jXh940xN8GD-NMWHQtAxCabYiKxAT5VOVPtUsYc4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgme6AfReziSTbHtqjkdNe60SHvycoo_rk8pGiAvP7mUZUkGsng4IC5ZxQN6k"
         }
       ]
     },
     {
-      "query": "domantas sabonis",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T05:10:00Z",
-      "related_news_urls": [
-        "https://www.basketballnews.com/news/basketballnews-nba-active-news-fact-check-is-the-nba-investigating-domantas-sabonis-over-recent-performances/",
-        "https://www.nbcsportsbayarea.com/nba/sacramento-kings/darius-acuff-jr-domantas-sabonis-trail-blazers/1979949/",
-        "https://sports.yahoo.com/articles/none-us-want-terms-losing-211557775.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlge_K5xBDZ3wtTa3MWkWj5zt_ElndxWTJpHahbRlnUHzcOlSjFmx7dmQnLW8",
-      "image_credit": "BasketballNews.com",
-      "news": [
-        {
-          "url": "https://www.basketballnews.com/news/basketballnews-nba-active-news-fact-check-is-the-nba-investigating-domantas-sabonis-over-recent-performances/",
-          "title": "Fact-Check: Is the NBA Investigating Domantas Sabonis Over Recent Performances?",
-          "publisher": "BasketballNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlge_K5xBDZ3wtTa3MWkWj5zt_ElndxWTJpHahbRlnUHzcOlSjFmx7dmQnLW8"
-        },
-        {
-          "url": "https://www.nbcsportsbayarea.com/nba/sacramento-kings/darius-acuff-jr-domantas-sabonis-trail-blazers/1979949/",
-          "title": "What we learned as Darius Acuff Jr. cools off in Kings' loss to Trail Blazers",
-          "publisher": "NBC Sports Bay Area & California",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOyWLvyDgQD-uSnrRY0VTB7z44rRKMkAuLhMEF7BawHIa5UeW87pFRfNzlLc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/none-us-want-terms-losing-211557775.html",
-          "title": "“None of us want to be here in terms of losing one in …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAZAWAtqbekIZ6G6fkFd6AAz5IO3jINsKSHLd5FAbIwHx2wlu9-HpPmDyr0t0"
-        }
-      ]
-    },
-    {
-      "query": "best hdr calibration for gta 6",
+      "query": "barry",
       "approx_searches": "200+",
-      "published_at": "2026-11-19T05:10:00Z",
+      "published_at": "2026-11-19T05:40:00Z",
       "related_news_urls": [
-        "https://www.rtings.com/tv/learn/research/gaming-motion-interpolation-gta-vi",
-        "https://www.cnet.com/tech/gaming/gta6-headsets-black-friday-deals/",
-        "https://www.theverge.com/gadgets/1033262/best-gta-6-gaming-accessories-controllers-headsets-tvs"
+        "https://people.com/brady-bunch-star-barry-williams-says-it-took-him-year-to-recover-from-dwts-12252856",
+        "https://www.yahoo.com/entertainment/videos/brady-bunch-star-barry-williams-204500625.html",
+        "https://www.imdb.com/es/news/ni66113999/?ref_=nwc_art_perm"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKN4iKiwGGtCSac00ncivz3VcLCvTYyL_duXpHxbMTMA7dS4xnn-MhdVAGnVY",
-      "image_credit": "RTINGS.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzc8Qv7giZRs14BetnkTAiv2scwpMRzMsyHstY0ARK4rIbL96mjm4lKm2nNgc",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.rtings.com/tv/learn/research/gaming-motion-interpolation-gta-vi",
-          "title": "GTA VI At 30 FPS: Can Your TV Save The Day?",
-          "publisher": "RTINGS.com",
+          "url": "https://people.com/brady-bunch-star-barry-williams-says-it-took-him-year-to-recover-from-dwts-12252856",
+          "title": "‘Brady Bunch’ Star Barry Williams, 72, Says It Took Him a Year to Recover from ‘DWTS’",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKN4iKiwGGtCSac00ncivz3VcLCvTYyL_duXpHxbMTMA7dS4xnn-MhdVAGnVY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzc8Qv7giZRs14BetnkTAiv2scwpMRzMsyHstY0ARK4rIbL96mjm4lKm2nNgc"
         },
         {
-          "url": "https://www.cnet.com/tech/gaming/gta6-headsets-black-friday-deals/",
-          "title": "GTA 6 Is Almost Here. These Headsets Will Help You Game in Style",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGtG1rpD-j5Ja929xGCrQquPxEf7xJlY9DoBX6Cqu0G6KnEnWHFrJO5WrT2I"
-        },
-        {
-          "url": "https://www.theverge.com/gadgets/1033262/best-gta-6-gaming-accessories-controllers-headsets-tvs",
-          "title": "Our favorite accessories to level up your gaming setup ahead of GTA VI",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxJxN8UzbUlk1Mjz_2HEE73zBigivNgrzzzHPRRVcPaYz5f6uS6UFdY3KDonY"
-        }
-      ]
-    },
-    {
-      "query": "avs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T05:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/avalanche/news/game-preview-11-18-26",
-        "https://sports.yahoo.com/articles/avalanche-vs-mammoth-projected-lines-010002695.html",
-        "https://www.milehighhockey.com/colorado-avalanche-game-coverage/67880/preview-wounded-avs-visit-utah-for-mammoth-matchup"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPyjwOAKBLx3qalXfGHd8TrQKzMI6noiqAToXlGQ2KmBuabKAnATg-5KncgXM",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/avalanche/news/game-preview-11-18-26",
-          "title": "Rocky Mountain Meeting with the Mammoth | Colorado Avalanche",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPyjwOAKBLx3qalXfGHd8TrQKzMI6noiqAToXlGQ2KmBuabKAnATg-5KncgXM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/avalanche-vs-mammoth-projected-lines-010002695.html",
-          "title": "Avalanche vs. Mammoth Projected Lines as Bednar Makes Surprising Decision",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWD8rycVPiBri2D7-CfOpZ-3_5SFG6Dtz9WW8vcEke0wvOOE-ZJxTAkmAbwag"
-        },
-        {
-          "url": "https://www.milehighhockey.com/colorado-avalanche-game-coverage/67880/preview-wounded-avs-visit-utah-for-mammoth-matchup",
-          "title": "Preview: Wounded Avs visit Utah for Mammoth matchup",
-          "publisher": "Mile High Hockey",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy1KdZUaPkSpxTh9A6NH4i0byEO_D2XEThFXI9j1x_8KZIaUHrVdM7l0CVKdY"
-        }
-      ]
-    },
-    {
-      "query": "salvadoran forces haiti operation",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T05:10:00Z",
-      "related_news_urls": [
-        "https://www.france24.com/en/americas/20261118-haitians-rally-behind-bukele-as-salvadoran-troops-battle-gangs",
-        "https://www.reuters.com/world/americas/thousands-march-support-bukeles-haiti-mission-analysts-warn-escalation-2026-11-17/",
-        "https://www.aljazeera.com/news/2026/11/17/haitians-protest-in-support-of-el-salvadors-anti-gang-troop-deployment"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbIgsqw-pD5LIUnFqCOsDi_YbbRxz6KRakpJ4OOyrjQQAz2HNu7sPaQXe3SQA",
-      "image_credit": "France 24",
-      "news": [
-        {
-          "url": "https://www.france24.com/en/americas/20261118-haitians-rally-behind-bukele-as-salvadoran-troops-battle-gangs",
-          "title": "Haitians rally behind Bukele as Salvadoran troops battle gangs",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbIgsqw-pD5LIUnFqCOsDi_YbbRxz6KRakpJ4OOyrjQQAz2HNu7sPaQXe3SQA"
-        },
-        {
-          "url": "https://www.reuters.com/world/americas/thousands-march-support-bukeles-haiti-mission-analysts-warn-escalation-2026-11-17/",
-          "title": "Thousands march in support of Bukele's Haiti mission as analysts warn of escalation",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzYnhJ0dS6zUk77A_qLjTS8pWgQeoxB4bjwP9LDdxbObWyX_qVoOvcnzg0bv4"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/17/haitians-protest-in-support-of-el-salvadors-anti-gang-troop-deployment",
-          "title": "Haitians protest in support of El Salvador’s anti-gang troop deployment",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvKl8hmerS-J_V3XN8_EOuVxuQwYy2bVkk_DuV0nemKwqgYSFAI6NU_4nu60"
-        }
-      ]
-    },
-    {
-      "query": "chris pratt",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T05:00:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/chris-pratt-the-traveler-paramount-deal-1236952517/",
-        "https://www.hollywoodreporter.com/movies/movie-news/chris-pratt-to-star-in-sci-fi-movie-the-traveler-1236758984/",
-        "https://www.yahoo.com/entertainment/movies/articles/chris-pratt-star-sci-fi-041214193.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKQuF-JVySvcJ6k5B8IOUcmB_e7jVcxSExajkcX1MLJ8HCWfhVJf8GY2-qlVI",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/chris-pratt-the-traveler-paramount-deal-1236952517/",
-          "title": "Chris Pratt to Star in Sci-Fi Family Drama ‘The Traveler,’ Inks First-Look Producing Deal at Paramount (EXCLUSIVE)",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKQuF-JVySvcJ6k5B8IOUcmB_e7jVcxSExajkcX1MLJ8HCWfhVJf8GY2-qlVI"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/chris-pratt-to-star-in-sci-fi-movie-the-traveler-1236758984/",
-          "title": "Chris Pratt to Star in Sci-Fi Movie ‘The Traveler’ as He Inks Paramount First-Look",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmr98PB19okLGasKLUXnBVBJIYOxmhv6CFC9CqtuBlI2HByERt6Kx8IucVLU4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/chris-pratt-star-sci-fi-041214193.html",
-          "title": "Chris Pratt to Star in New Sci-Fi Movie Based on Novel With Time Travel Storyline",
+          "url": "https://www.yahoo.com/entertainment/videos/brady-bunch-star-barry-williams-204500625.html",
+          "title": "Brady Bunch Star Barry Williams Was Never The Same After Dancing With The Stars",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw-TS0SZ7PYHxWh2qytEkfl5vDyN9SBXWU-77p10hW7XkBtLFqLhzAVrsE4gE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyTOOVREAo2U50HkvWs0draCuQBria1yPeZfL5UJ1FmzU0wDgNC3mCswfyXGI"
+        },
+        {
+          "url": "https://www.imdb.com/es/news/ni66113999/?ref_=nwc_art_perm",
+          "title": "‘Brady Bunch’s Barry Williams Says It Took 1 Year to Recover From ‘Dancing With the Stars’",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2RoGLxdDNCX2uUtfh7wQTfa_AxF6_9QZLR_Q6PuWd9ZwzWEDcumfYzX-FBIs"
         }
       ]
     },
     {
-      "query": "darius acuff jr.",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T05:00:00Z",
+      "query": "jaden smith michele lamy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T05:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/",
-        "https://www.hitc.com/great-ones-have-that-shai-gilgeous-alexander-says-whats-impressed-him-most-about-darius-acuff-jr/",
-        "https://www.fantasypros.com/nba/news/620523/darius-acuff-jr-puts-up-26-points-sundays-loss.php"
+        "https://www.prestigeonline.com/in/lifestyle/everything-to-know-about-michele-lamy-controversy-jaden-smith/",
+        "https://www.10news.com/news/fact-or-fiction/fact-or-fiction-jaden-smith-dating-82-year-old",
+        "https://www.galaxytvonline.com/news/entertainment/viral-posts-falsely-link-jaden-smith-romantically-to-fashion-figure-michele-lamy"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSt7qjdO55A00uP1YSGqohKfY3Y586Rgo8E8Dct8fGL7kc1LPuYstV3K1zgY10",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eC0JtH8CQtzLNPctvPBUKTBfoEav-t_gnwR5ljmcnV1TTLoYOMZe0NSSvVM",
+      "image_credit": "Prestige Online - Singapore",
+      "news": [
+        {
+          "url": "https://www.prestigeonline.com/in/lifestyle/everything-to-know-about-michele-lamy-controversy-jaden-smith/",
+          "title": "Who is Michèle Lamy, the woman the Internet can’t stop talking about?",
+          "publisher": "Prestige Online - Singapore",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eC0JtH8CQtzLNPctvPBUKTBfoEav-t_gnwR5ljmcnV1TTLoYOMZe0NSSvVM"
+        },
+        {
+          "url": "https://www.10news.com/news/fact-or-fiction/fact-or-fiction-jaden-smith-dating-82-year-old",
+          "title": "Fact or Fiction: Jaden Smith dating 82-year-old?",
+          "publisher": "10News.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnBIn52kyAxr_OwEIgD14kcGL1v_BE79BzdgNtQIfaqqF8F4SVnbEu23mPYdk"
+        },
+        {
+          "url": "https://www.galaxytvonline.com/news/entertainment/viral-posts-falsely-link-jaden-smith-romantically-to-fashion-figure-michele-lamy",
+          "title": "Jaden Smith, Michèle Lamy romance claims debunked",
+          "publisher": "Galaxy Television",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXbGRKaH-5gBoyXYyO4IzHpaNDkkTo834IjUZZlkB9q6urJvoRQx6eH65zs-w"
+        }
+      ]
+    },
+    {
+      "query": "utah jazz",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T05:30:00Z",
+      "related_news_urls": [
+        "https://utahjazz.com/news/utah-jazz-132-la-clippers-107-key-takeaways",
+        "https://sports.ksl.com/nba/utah-jazz/fourth-quarter-explosion-ends-utah-jazz-losing-streak-in-los-angeles/579025",
+        "https://www.sportsline.com/nba/game-forecast/NBA_20261117_UTA@LAC/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTS4rDLMh6Wb4d9UBWAMiLkgtI3_vKPcnbR-w5ErleMBGUotkSu57kcoCcgeg",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://utahjazz.com/news/utah-jazz-132-la-clippers-107-key-takeaways",
+          "title": "Utah Jazz 132, LA Clippers 107: Key Takeaways",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTS4rDLMh6Wb4d9UBWAMiLkgtI3_vKPcnbR-w5ErleMBGUotkSu57kcoCcgeg"
+        },
+        {
+          "url": "https://sports.ksl.com/nba/utah-jazz/fourth-quarter-explosion-ends-utah-jazz-losing-streak-in-los-angeles/579025",
+          "title": "Fourth quarter explosion ends Utah Jazz losing streak in Los Angeles",
+          "publisher": "KSL Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzZGzuSaQr4912slx6z6qi3GU9q7SAs09-1R-dMO4cj8V6otmrflkFDb2MSPg"
+        },
+        {
+          "url": "https://www.sportsline.com/nba/game-forecast/NBA_20261117_UTA@LAC/",
+          "title": "Expert Picks",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxCLh5AGnErzIgOPHkvjFNavIY3Y4bQUvGz3OIoSTPvDhUsLDOB9qh7ed7wa4"
+        }
+      ]
+    },
+    {
+      "query": "maga elon musk",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T05:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/live/2026/11/18/business/dealbook-summit-news",
+        "https://deadline.com/2026/11/elon-musk-midterms-regrets-1237228534/",
+        "https://www.cnn.com/2026/11/18/us/video/ac360-kara-swisher-musk"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-BNkyqESv49x7RotfXszLcnXpfeSspJtF3Eb9K23JFDxZjtK7F48Ar6lYxtg",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/",
-          "title": "Damian Lillard respects Darius Acuff Jr.’s mentality. He also knows the test ahead",
+          "url": "https://www.nytimes.com/live/2026/11/18/business/dealbook-summit-news",
+          "title": "DealBook Summit: Elon Musk Paints Himself as Political Moderate, Says He Is ‘Not MAGA’",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSt7qjdO55A00uP1YSGqohKfY3Y586Rgo8E8Dct8fGL7kc1LPuYstV3K1zgY10"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-BNkyqESv49x7RotfXszLcnXpfeSspJtF3Eb9K23JFDxZjtK7F48Ar6lYxtg"
         },
         {
-          "url": "https://www.hitc.com/great-ones-have-that-shai-gilgeous-alexander-says-whats-impressed-him-most-about-darius-acuff-jr/",
-          "title": "‘Great ones have that’: Shai Gilgeous-Alexander says what’s impressed him most about Darius Acuff Jr.",
-          "publisher": "HITC",
+          "url": "https://deadline.com/2026/11/elon-musk-midterms-regrets-1237228534/",
+          "title": "Elon Musk Feels “Pretty Foolish” For Donating Mega-Bucks To Losing MAGA In Midterms",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSr03KVM6-pmUk6I6YjvHvaMPRZcKBicIyq401Q58Qb0hhemop7E1P-ZVtQNJY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR63bZ7TyILZ6UQzlMUUq7M11zJAlEl3npfgjc3lkjRmkk4vFfGZgRYhTj9phA"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/620523/darius-acuff-jr-puts-up-26-points-sundays-loss.php",
-          "title": "Darius Acuff Jr. puts up 26 points in Sunday's loss",
-          "publisher": "FantasyPros",
+          "url": "https://www.cnn.com/2026/11/18/us/video/ac360-kara-swisher-musk",
+          "title": "Elon Musk distances himself from Trump, says ‘I’m not MAGA’",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgG0dedydmiRp_Ye-ya2Vt-3KEwNbYyZaOlVn-Xw-k2zKC2dHW80geLZtd8yg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuvTPX5YNPwZQoaVGrvqsu60DjXLSXgs1YeQC9lu5Ugr_UvBcLybLUixhmHwQ"
         }
       ]
     },
     {
-      "query": "julia garner",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T05:00:00Z",
+      "query": "cold weather advisory",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T05:30:00Z",
       "related_news_urls": [
-        "https://www.vulture.com/article/anna-delvey-crashed-julia-garner-the-altruists-screening.html",
-        "https://ew.com/julia-garner-anna-delvey-pose-together-inventing-anna-the-altruists-12261159",
-        "https://www.yahoo.com/entertainment/celebrity/articles/anna-delvey-surprises-julia-garner-143603315.html"
+        "https://www.sacbee.com/news/weather-news/article318150933.html",
+        "https://www.mercurynews.com/2026/11/16/cold-weather-advisory-issued-for-bay-area-inland-regions-until-tuesday-morning/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTa_ZGG9lbleGkKF0wieCUhwgos3x0BCRj3_Nh7JOjcdvDdKLs_CPtxWfRN-sM",
-      "image_credit": "Vulture",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGsT_abhj5kJPuEtt1hm76gTnaXTWA-h4aRGpGkgFUMz3WZr0NpyEI1qtHNbo",
+      "image_credit": "Sacramento Bee",
       "news": [
         {
-          "url": "https://www.vulture.com/article/anna-delvey-crashed-julia-garner-the-altruists-screening.html",
-          "title": "What Happened When Anna Delvey Crashed Julia Garner’s The Altruists Q&A",
-          "publisher": "Vulture",
+          "url": "https://www.sacbee.com/news/weather-news/article318150933.html",
+          "title": "Cold weather advisory in place for Northern California for Friday, says the NWS",
+          "publisher": "Sacramento Bee",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTa_ZGG9lbleGkKF0wieCUhwgos3x0BCRj3_Nh7JOjcdvDdKLs_CPtxWfRN-sM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGsT_abhj5kJPuEtt1hm76gTnaXTWA-h4aRGpGkgFUMz3WZr0NpyEI1qtHNbo"
         },
         {
-          "url": "https://ew.com/julia-garner-anna-delvey-pose-together-inventing-anna-the-altruists-12261159",
-          "title": "Very VIP! Julia Garner poses with Anna Delvey 4 years after ‘Inventing Anna’",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.mercurynews.com/2026/11/16/cold-weather-advisory-issued-for-bay-area-inland-regions-until-tuesday-morning/",
+          "title": "Cold weather advisory issued for Bay Area inland regions until Tuesday morning",
+          "publisher": "The Mercury News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO6jR3S75iT2fPaYXRFNqdgFympCS9ZInie2JEWALNrPi7kk5gN1r8haJHrfQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9fX4-eaM0vKeElod6Tx8VHAXZnvfwx6Yc7tYAJDxgLC9Knk_DTHc-4y8Bt-s"
+        }
+      ]
+    },
+    {
+      "query": "ziaire williams",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T05:20:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/lakers-ziaire-williams-starting-wednesday/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/ziaire-williams-returns-to-starting-lineup-monday",
+        "https://www.rotowire.com/basketball/headlines/ziaire-williams-news-starting-sans-reaves-538367"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2r-7eMDvBV3c-FpVuudIlgl9K97b0Hn-eGBAQUkhp72IfwZmqYjxzLsVletg",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-ziaire-williams-starting-wednesday/",
+          "title": "Lakers' Ziaire Williams: Starting Wednesday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2r-7eMDvBV3c-FpVuudIlgl9K97b0Hn-eGBAQUkhp72IfwZmqYjxzLsVletg"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/anna-delvey-surprises-julia-garner-143603315.html",
-          "title": "Anna Delvey surprises Julia Garner at screening of different scammer series",
-          "publisher": "Yahoo",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/ziaire-williams-returns-to-starting-lineup-monday",
+          "title": "Ziaire Williams returns to starting lineup Monday",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHZWZpc0_bMUJ-hivolWehYn-7C52taNddBnM0EG-sc_p3ug9Ln3w99yRkT1s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDMi5KF0zuTFN-CPZ9ePkoFCaD0TJ1qmLfPQTU9IYV1j4nH9mPAniL8zPBsJw"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/ziaire-williams-news-starting-sans-reaves-538367",
+          "title": "Ziaire Williams News: Starting sans Reaves",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnrXZlAomOU95QQcEe_0Fj_tkuRMcbQ5z2hCR8jqqA2n2SXOpx0HH4ypTJ-Uw"
+        }
+      ]
+    },
+    {
+      "query": "cal state fullerton basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T05:20:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/ucla/article/ucla-mens-basketball-cal-state-fullerton-preview-292917137/",
+        "https://www.foxsports.com/articles/cbk/ward-leads-csu-fullerton-against-no-7-ucla-after-21point-showing",
+        "https://www.fanduel.com/research/ucla-vs-csu-fullerton-college-basketball-predictions-odds-picks-best-bets-for-11-18-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktVW9YvBOGxeR7AnOGRYjZp2fr7wjy5tXIgl_JBGmevfartVuRq8KiOR-8sk",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/ucla/article/ucla-mens-basketball-cal-state-fullerton-preview-292917137/",
+          "title": "UCLA Men’s Basketball: Cal State Fullerton Preview",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktVW9YvBOGxeR7AnOGRYjZp2fr7wjy5tXIgl_JBGmevfartVuRq8KiOR-8sk"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/cbk/ward-leads-csu-fullerton-against-no-7-ucla-after-21point-showing",
+          "title": "Ward leads CSU Fullerton against No. 7 UCLA after 21-point showing",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
+        },
+        {
+          "url": "https://www.fanduel.com/research/ucla-vs-csu-fullerton-college-basketball-predictions-odds-picks-best-bets-for-11-18-2026",
+          "title": "UCLA vs CSU Fullerton College Basketball Prediction, Odds, Picks, Best Bets for Nov. 18",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSn1CcYoJ2t34pGe-YqDZzYjQe8G_5GbsrCBuTPEJmkSe8AzXymcZt_clKPRNQ"
+        }
+      ]
+    },
+    {
+      "query": "lakers game today",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-19T05:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50519611/quentin-grimes-2nd-laker-hit-10-3s-single-game",
+        "https://www.nba.com/news/quentin-grimes-drops-47-celebrates-with-mom",
+        "https://sports.yahoo.com/nba/breaking-news/article/quentin-grimes-matches-kobe-bryant-mark-with-10-3-pointers-drops-career-high-47-points-to-lift-lakers-past-hornets-070602327.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnbQEe_mQcVwSD9bVYWDGbz313bXrOz9PCF4jIK0Xvk8DMWd3GyrkYlt45fn4",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50519611/quentin-grimes-2nd-laker-hit-10-3s-single-game",
+          "title": "Quentin Grimes becomes 2nd in Lakers history to hit 10 or more 3s in single game",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnbQEe_mQcVwSD9bVYWDGbz313bXrOz9PCF4jIK0Xvk8DMWd3GyrkYlt45fn4"
+        },
+        {
+          "url": "https://www.nba.com/news/quentin-grimes-drops-47-celebrates-with-mom",
+          "title": "The Athletic: Quentin Grimes drops 47, celebrates with mom",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTr-Se56QSFPa6CG5jkU7vSAeQS_6iY2sPwso9LWTKXnhrvE2GhSkMlqL0H6Mg"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/quentin-grimes-matches-kobe-bryant-mark-with-10-3-pointers-drops-career-high-47-points-to-lift-lakers-past-hornets-070602327.html",
+          "title": "Quentin Grimes matches Kobe Bryant mark with 10 3-pointers, drops career-high 47 points to lift Lakers past Hornets",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKKwR4jFI3IQ8E-4Q_kb52r3ZxA4LOims4DBxSbVX9cGyYXznXoG8RXAPUCHc"
+        }
+      ]
+    },
+    {
+      "query": "내일 날씨",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T05:20:00Z",
+      "related_news_urls": [
+        "https://biz.chosun.com/topics/topics_social/2026/11/18/FOVYXMTVHZHK3L7YMOH5KA266E/",
+        "https://imnews.imbc.com/replay/2026/nw1200/article/6866904_36967.html",
+        "https://www.hankyung.com/article/202611197170i"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicVq8vtC7aJztItZZpQrvHB8WZHy8qrANMfikDOTZ3SfzQXCQVc_vtr0D4kk",
+      "image_credit": "Chosunbiz",
+      "news": [
+        {
+          "url": "https://biz.chosun.com/topics/topics_social/2026/11/18/FOVYXMTVHZHK3L7YMOH5KA266E/",
+          "title": "돌아온 ‘수능 한파’… 아침 영하권에 입실시간 도로 살얼음 주의",
+          "publisher": "Chosunbiz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicVq8vtC7aJztItZZpQrvHB8WZHy8qrANMfikDOTZ3SfzQXCQVc_vtr0D4kk"
+        },
+        {
+          "url": "https://imnews.imbc.com/replay/2026/nw1200/article/6866904_36967.html",
+          "title": "'수능일' 한낮 4~11도 쌀쌀‥강풍에 체감 '뚝'",
+          "publisher": "MBC 뉴스",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwXzYXP2laqHuIwKOuXW0cD0ReUP2pU9pfRI9Cv7R97ZtFJ-RB7oJJShaX1NE"
+        },
+        {
+          "url": "https://www.hankyung.com/article/202611197170i",
+          "title": "[포토] 서울 도심 하늘 헤엄치는 고래 모양 구름",
+          "publisher": "한국경제",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQloPK9AqBrch2c4s_WdLkMX7CMI8WdJ0UxSrkjGDRPN87kFSIAbSw39mZsokY"
         }
       ]
     }
