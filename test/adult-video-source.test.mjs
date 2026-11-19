@@ -1,35 +1,42 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {ADULT_LIFESTYLE_KITS,sourcesForKit} from '../adult-lifestyle-catalog.mjs';
-import {eligiblePublisher} from '../restricted-source-directory.mjs';
-import {prepareAdultKitResearch} from '../adult-kit-research.mjs';
+import {ADULT_VIDEO_SOURCE,sourceForAdultBrowse} from '../adult-video-source.mjs';
 
-test('owner-supplied adult video URL is offered only as a source-only 21+ link',()=>{
- const kit=ADULT_LIFESTYLE_KITS.find(item=>item.id==='adult-video-links');
- assert.ok(kit,'video links need a distinct 21+ chooser entry');
- assert.equal(kit.sourceOnly,true);
- const rows=sourcesForKit(kit.id);
- assert.equal(rows.length,1,'never fabricate additional videos');
- const [row]=rows;
- assert.equal(row.kind,'independent-source');
- assert.equal(row.category,'Adult video');
- assert.equal(row.url,'https://xgroovy.com/gifs/205466/filled-my-mouth-with-cum/');
- assert.equal(row.official_domain,'xgroovy.com');
- assert.equal(eligiblePublisher(row,false),null,'links are gated until explicit adult browsing');
- assert.equal(eligiblePublisher(row,true),row);
+test('source-only adult link is unavailable before this-visit 21+ acknowledgment',()=>{
+ assert.equal(sourceForAdultBrowse(),null);
+ assert.equal(sourceForAdultBrowse(false),null);
+ assert.equal(sourceForAdultBrowse('true'),null);
+ assert.equal(sourceForAdultBrowse(1),null);
+ assert.equal(sourceForAdultBrowse(true),ADULT_VIDEO_SOURCE);
+ assert.equal(ADULT_VIDEO_SOURCE.url,'https://xgroovy.com/gifs/205466/filled-my-mouth-with-cum/');
+ assert.equal(ADULT_VIDEO_SOURCE.category,'21+ external source');
  for(const field of ['image','images','poster','embed','iframe','video','media','price','paid','sponsored','approvedRights']){
-  assert.equal(field in row,false,field+' must never be invented or imported');
+  assert.equal(field in ADULT_VIDEO_SOURCE,false,'unlicensed media field '+field);
  }
 });
 
-test('adult video reference cannot become a shopping kit, automatic media load or sponsored placement',()=>{
- assert.throws(()=>prepareAdultKitResearch({kitId:'adult-video-links'}),RangeError);
+test('dedicated 21+ Quick Card is ad-free, hidden until acknowledgment and not indexed',()=>{
+ const html=readFileSync(new URL('../21plus-video-source.html',import.meta.url),'utf8');
+ assert.match(html,/name="robots" content="noindex, nofollow, noarchive, nosnippet"/);
+ assert.match(html,/id="adultVideoContent" hidden/);
+ assert.match(html,/id="adultVideoOpen"(?![^>]*href)/);
+ assert.match(html,/id="adultVideoEnter"/);
+ assert.match(html,/adult-video-source\.mjs/);
+ assert.doesNotMatch(html,/xgroovy\.com|googlesyndication|googletagmanager|adsbygoogle|google-analytics|iframe|<video\b|<img\b|<source\b/i);
+ const script=readFileSync(new URL('../adult-video-source.mjs',import.meta.url),'utf8');
+ assert.match(script,/sourceForAdultBrowse\(true\)/);
+ assert.match(script,/link\.removeAttribute\('href'\)/);
+ assert.doesNotMatch(script,/fetch\s*\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|document\.cookie/);
+});
+
+test('homepage stays ad-friendly by linking locally only inside the acknowledged 21+ panel',()=>{
  const card=readFileSync(new URL('../restricted-ad-card.mjs',import.meta.url),'utf8');
- assert.match(card,/kit\?\.sourceOnly===true/);
- assert.match(card,/if\(!acknowledged\)return/);
  assert.match(card,/publisher\.hidden=true/);
- assert.match(card,/Open external video page/);
- assert.match(card,/third-party video link/i);
- assert.doesNotMatch(card,/createElement\(['"]iframe['"]\).*xgroovy|createElement\(['"]video['"]\).*xgroovy/i);
+ assert.match(card,/21plus-video-source\.html/);
+ assert.doesNotMatch(card,/xgroovy\.com|Open external video page/);
+ const catalog=readFileSync(new URL('../adult-lifestyle-catalog.mjs',import.meta.url),'utf8');
+ assert.doesNotMatch(catalog,/xgroovy\.com|adult-video-links/);
+ const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ assert.doesNotMatch(home,/xgroovy\.com/);
 });
