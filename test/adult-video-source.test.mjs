@@ -41,6 +41,15 @@ test('homepage stays ad-friendly by linking locally only inside the acknowledged
  assert.doesNotMatch(home,/xgroovy\.com/);
 });
 
+test('homepage 21+ portal is distinct from dynamically listed kit source links',()=>{
+ const source=readFileSync(new URL('../restricted-ad-card.mjs',import.meta.url),'utf8');
+ const portal=source.match(/const videoPortal=el\\('a','([^']+)'/);
+ assert.ok(portal,'separate source portal must be present');
+ assert.doesNotMatch(portal[1],/\\brac-kit-link\\b/,'portal cannot count as an approved dynamic kit link before acknowledgment or after Close');
+ assert.match(portal[1],/\\brac-source-portal\\b/);
+ assert.match(source,/publisher\\.append\\([^;]*videoPortal\\)/,'source portal remains behind 21+ publisher gate');
+});
+
 test('this-visit 21+ reveal and Close remove the external href without persisting state',async()=>{
  const events=new Map();
  const node=id=>({
