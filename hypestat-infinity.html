@@ -48,6 +48,12 @@
         <div class="filters"><label>Search records<input id="record-search" type="search" placeholder="Source, claim, or case" autocomplete="off"></label><label>Evidence type<select id="record-filter"><option value="">All types</option><option value="public_record">Public record</option><option value="estimate">Third-party estimate</option><option value="observation">Authorized observation</option><option value="lead">Unverified lead</option><option value="fingerprint">Local file fingerprint</option></select></label></div>
         <p id="record-count" class="statusline" aria-live="polite"></p><div id="records-list" class="records"></div>
       </section>
+      <section class="panel" aria-labelledby="trace-title">
+        <div class="eyebrow">Public reference trail</div><h2 id="trace-title">Trace a case across saved sources</h2>
+        <p class="muted">Compare mentions across your saved public records, oldest observation first. Dates are when notes were observed, not necessarily when the original material was published. This tool does not contact the investigated website.</p>
+        <form id="trace-form" class="form"><label>Case, address, or public reference phrase<input id="trace-query" type="search" maxlength="160" placeholder="Enter a public case phrase" autocomplete="off" required></label><button class="primary" type="submit">Build dated trace</button></form>
+        <div id="trace-results" class="spacer" role="status" aria-live="polite"></div>
+      </section>
     </div>
     <aside class="stack">
       <section class="panel"><div class="eyebrow">02 / Public-source lookup</div><h2>Classify an address</h2><p class="muted">Checks address structure locally. Official-record search opens only after you choose it.</p>
@@ -185,13 +191,20 @@ globalThis.HypeInfinity = (() => {
     if(b.version!==1||!Array.isArray(b.records)||!Array.isArray(b.traffic)||b.records.length>1000||b.traffic.length>MAX_ROWS)throw new Error('Unsupported backup version or record limit.');
     return {version:1,records:b.records.map(record),traffic:b.traffic.map(traffic)};
   }
+  function trace(records, phrase) {
+    if(!Array.isArray(records)||records.length>1000)throw new Error('Invalid evidence collection.');
+    const query=clean(phrase,160,'case phrase').toLowerCase();
+    const entries=records.map(record).filter(r=>[r.subject,r.claim,r.source].some(text=>text.toLowerCase().includes(query)))
+      .sort((a,b)=>a.observedAt.localeCompare(b.observedAt)||a.subject.localeCompare(b.subject));
+    return {entries,sourceCount:new Set(entries.map(r=>r.source).filter(Boolean)).size};
+  }
   function merge(a,b) {
     const unique=(x,y,max)=>{const m=new Map([...x,...y].map(v=>[JSON.stringify(v),v]));if(m.size>max)throw new Error('Workspace record limit reached. Export a backup first.');return [...m.values()];};
     const result={version:1,records:unique(a.records,b.records,1000),traffic:unique(a.traffic,b.traffic,MAX_ROWS)};
     if(new TextEncoder().encode(JSON.stringify(result)).length>MAX_BYTES)throw new Error('Workspace exceeds 2 MiB. Export and archive a backup first.');
     return result;
   }
-  return {HEADERS,KINDS,METRICS,MAX_BYTES,classify,safeSource,record,traffic,parseCSV,csv,backup,merge};
+  return {HEADERS,KINDS,METRICS,MAX_BYTES,classify,safeSource,record,traffic,parseCSV,csv,backup,merge,trace};
 })();
 </script>
 <script id="infinity-ui">
@@ -225,6 +238,21 @@ globalThis.HypeInfinity = (() => {
     }
     if(!items.length)list.append(node('div','No matching evidence. Change the filter or add a sourced note.','empty'));
   }
+  function renderTrace(){
+    const trail=C.trace(state.records,$('trace-query').value),out=$('trace-results');out.replaceChildren();
+    out.append(node('p',trail.entries.length+' matching notes, '+trail.sourceCount+' distinct public source links. These matches do not establish who uploaded content, authored code, or operates a server.','safety'));
+    if(!trail.entries.length){out.append(node('p','No saved record matches this phrase. Record a public source before drawing conclusions.','empty'));return;}
+    const list=node('div',undefined,'records');
+    for(const r of trail.entries){
+      const card=node('article',undefined,'record'),meta=node('div',undefined,'meta');
+      meta.append(node('span',C.KINDS[r.kind],'pill'),node('time',time(r.observedAt)));meta.lastChild.dateTime=r.observedAt;
+      card.append(meta,node('h3',r.subject),node('p',r.claim));
+      if(r.source){const a=node('a','Open cited public source');a.href=r.source;a.target='_blank';a.rel='noopener noreferrer';card.append(a);}
+      else card.append(node('small','No public source link attached'));
+      list.append(card);
+    }
+    out.append(list);
+  }
   function filteredTraffic(){const site=$('traffic-site').value.trim().toLowerCase(),provider=$('traffic-provider').value.trim().toLowerCase(),basis=$('traffic-basis').value,metric=$('traffic-metric').value;return state.traffic.filter(r=>r.site.includes(site)&&r.provider.toLowerCase().includes(provider)&&(!basis||r.basis===basis)&&(!metric||r.metric===metric));}
   function renderTraffic(){
     const rows=filteredTraffic(), counts=$('traffic-counts');counts.replaceChildren();
@@ -240,6 +268,7 @@ globalThis.HypeInfinity = (() => {
   tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>selectTab(tab));tab.addEventListener('keydown',e=>{let next;if(e.key==='ArrowRight')next=(index+1)%tabs.length;if(e.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;if(next!==undefined){e.preventDefault();selectTab(tabs[next],true);}});});
   $('address-form').addEventListener('submit',e=>{e.preventDefault();try{const a=C.classify($('address-input').value),out=$('address-result');out.replaceChildren(node('span',a.kind,'pill'),node('p',a.display,'mono'),node('p',a.checksum,'safety'));out.append(node('p','No target connection, identity lookup, or availability check was made.','safety'));const link=node('a','Search official public records ↗','button');link.href='https://www.google.com/search?q='+encodeURIComponent('"'+a.host+'" (site:justice.gov OR site:fbi.gov OR site:europol.europa.eu OR site:torproject.org)');link.target='_blank';link.rel='noopener noreferrer';out.append(link);out.hidden=false;}catch(err){notify(err.message);}});
   $('record-search').addEventListener('input',renderRecords);$('record-filter').addEventListener('change',renderRecords);
+  $('trace-form').addEventListener('submit',e=>{e.preventDefault();try{renderTrace();}catch(err){notify(err.message);}});
   $('evidence-time').value=localTime();
   $('evidence-form').addEventListener('submit',e=>{e.preventDefault();try{const d=new FormData(e.target),r=C.record({subject:d.get('subject'),kind:d.get('kind'),source:d.get('source'),observedAt:new Date(d.get('observedAt')).toISOString(),claim:d.get('claim')});commit(C.merge(state,{records:[r],traffic:[]}));e.target.reset();$('evidence-time').value=localTime();notify('Evidence saved. A saved claim is not an independently verified fact.');}catch(err){notify(err.message);}});
   $('hash-file').addEventListener('click',async()=>{const button=$('hash-file');button.disabled=true;try{const file=$('script-file').files[0];if(!file)throw new Error('Choose an authorized local script file first.');if(file.size>C.MAX_BYTES)throw new Error('File is larger than 2 MiB.');if(!globalThis.crypto?.subtle)throw new Error('SHA-256 is unavailable in this browser context. Open in a modern browser.');const bytes=await file.arrayBuffer(),digest=await crypto.subtle.digest('SHA-256',bytes),hex=Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,'0')).join('');const r=C.record({subject:'Local fingerprint · '+file.name.slice(0,120),kind:'fingerprint',source:'',observedAt:new Date().toISOString(),claim:'SHA-256: '+hex+'\nBytes: '+file.size+'\nThis local calculation fingerprints the selected file only. It does not execute the file, verify its source, or establish authorship.'});commit(C.merge(state,{records:[r],traffic:[]}));$('hash-result').textContent='SHA-256\n'+hex+'\n'+file.size+' bytes';$('hash-result').hidden=false;notify('Local fingerprint saved. File contents were not uploaded or executed.');}catch(err){notify(err.message);}finally{button.disabled=false;}});
