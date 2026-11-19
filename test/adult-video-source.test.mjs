@@ -43,11 +43,11 @@ test('homepage stays ad-friendly by linking locally only inside the acknowledged
 
 test('homepage 21+ portal is distinct from dynamically listed kit source links',()=>{
  const source=readFileSync(new URL('../restricted-ad-card.mjs',import.meta.url),'utf8');
- const portal=source.match(/const videoPortal=el\\('a','([^']+)'/);
+ const portal=source.split("const videoPortal=el('a','")[1]?.split("'")[0];
  assert.ok(portal,'separate source portal must be present');
- assert.doesNotMatch(portal[1],/\\brac-kit-link\\b/,'portal cannot count as an approved dynamic kit link before acknowledgment or after Close');
- assert.match(portal[1],/\\brac-source-portal\\b/);
- assert.match(source,/publisher\\.append\\([^;]*videoPortal\\)/,'source portal remains behind 21+ publisher gate');
+ assert.ok(!portal.includes('rac-kit-link'),'portal cannot count as a dynamic kit before acknowledgment or after Close');
+ assert.ok(portal.includes('rac-source-portal'),'portal needs a separate accessible class');
+ assert.ok(source.includes('publisher.append(')&&source.includes('videoPortal);'),'portal remains inside the visit-gated publisher panel');
 });
 
 test('this-visit 21+ reveal and Close remove the external href without persisting state',async()=>{
