@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-19T17:33:21.933239Z",
+  "checked_at": "2026-11-19T18:05:30.479104Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
@@ -36,6 +36,18 @@
       "trend_checked_at": "2026-11-14T20:31:06.368122Z",
       "trend_published_at": "2026-11-14T19:50:00Z",
       "approx_searches": "500+"
+    },
+    {
+      "id": "wz1mkkDn95U",
+      "title": "Let the energy in. Have you seen the",
+      "video_id": "wz1mkkDn95U",
+      "video_title": "Let the energy in. Have you seen the trailer for #RemainMovie yet? Only in theaters February 5.",
+      "kind": "trailer",
+      "publisher": "Warner Bros. Pictures",
+      "published_at": "2026-11-19T17:30:22Z",
+      "source_url": "https://www.youtube.com/watch?v=wz1mkkDn95U",
+      "poster": "https://i.ytimg.com/vi/wz1mkkDn95U/hqdefault.jpg",
+      "google_trending": false
     },
     {
       "id": "E4rPY20fHSE",
