@@ -29,7 +29,7 @@ test('purpose kits combine several actual publishers without inventing an order 
   assert.ok(!ids.has(kit.id));ids.add(kit.id);
   assert.ok(kit.title&&kit.description);
   const sources=sourcesForKit(kit.id);
-  assert.ok(kit.sourceOnly?sources.length===1:sources.length>=3&&sources.length<=6,kit.id);
+  assert.ok(sources.length>=3&&sources.length<=6,kit.id);
   assert.equal(sources.length,new Set(sources.map(x=>x.id)).size);
   assert.deepEqual(sources.map(x=>x.id),kit.sourceIds);
   assert.equal('estimated_savings' in kit,false);
