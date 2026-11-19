@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T07:01:26.053721Z",
+  "checked_at": "2026-11-19T07:31:27.476094Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "strip club gta 6 location",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T06:40:00Z",
+      "query": "san diego",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T07:10:00Z",
       "related_news_urls": [
-        "https://www.dualshockers.com/gta-6-where-to-find-strip-clubs/",
-        "https://suaragarut.id/en/gta-six-strip-club-locations",
-        "https://screenrant.com/gta-6-strip-club-where-to-find/"
+        "https://www.sandiegouniontribune.com/2026/11/18/scouting-report-aztecs-host-texas-southern-before-nonconference-competition-stiffens/",
+        "https://www.cbssports.com/college-basketball/news/san-diego-state-stays-unbeaten-with-97-51-rout-of-texas-southern/",
+        "https://sports.yahoo.com/articles/watch-san-diego-state-vs-055243899.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc81es-isrnV-OZjTzX6zUyJc_FX_GcwkcwQvV4MMXayB6xHu_LwGHSbiLXlo",
-      "image_credit": "DualShockers",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7ThQvgIw7aCXrsZ1RPyK7MwmKlZWU3zT5ILtQdQAmNYa8AriUAaCASSzmkCk",
+      "image_credit": "San Diego Union-Tribune",
       "news": [
         {
-          "url": "https://www.dualshockers.com/gta-6-where-to-find-strip-clubs/",
-          "title": "GTA 6: Where to Find Strip Clubs",
-          "publisher": "DualShockers",
+          "url": "https://www.sandiegouniontribune.com/2026/11/18/scouting-report-aztecs-host-texas-southern-before-nonconference-competition-stiffens/",
+          "title": "Scouting Report: Aztecs host Texas Southern before nonconference competition stiffens",
+          "publisher": "San Diego Union-Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc81es-isrnV-OZjTzX6zUyJc_FX_GcwkcwQvV4MMXayB6xHu_LwGHSbiLXlo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7ThQvgIw7aCXrsZ1RPyK7MwmKlZWU3zT5ILtQdQAmNYa8AriUAaCASSzmkCk"
         },
         {
-          "url": "https://suaragarut.id/en/gta-six-strip-club-locations",
-          "title": "GTA 6 Features Three Strip Clubs Across Vice City",
-          "publisher": "SuaraGarut.ID",
+          "url": "https://www.cbssports.com/college-basketball/news/san-diego-state-stays-unbeaten-with-97-51-rout-of-texas-southern/",
+          "title": "San Diego State stays unbeaten with 97-51 rout of Texas Southern",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXKsEo2kwo_c7Zr1PE2o7U4-QBpCxi5ufF_nPs8ypYc9lP5A7gjTlxvJrP8lM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSESe2I45Erdw4JyOk1hbBVAYoKg0pUlLJP4u-tXd3DeJsgmChAPS1_0uw7__o"
         },
         {
-          "url": "https://screenrant.com/gta-6-strip-club-where-to-find/",
-          "title": "GTA 6's First Strip Club Is Super Easy To Find",
-          "publisher": "ScreenRant",
+          "url": "https://sports.yahoo.com/articles/watch-san-diego-state-vs-055243899.html",
+          "title": "How to watch San Diego State vs. Texas Southern basketball: TV channel, live stream and game time",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRl1wMNhrc7gaYKUPA0oQJpKIVd2gV2iJETzVBUvi8K1hdPwbJ1fuLukkzBFEc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsojYIuxJtg0YmaYwT5Cv2h-qh3dd6rJPEbBRW5H39pFFzBoCtJ7ENosQCT-4"
+        }
+      ]
+    },
+    {
+      "query": "unwanted attention gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T07:00:00Z",
+      "related_news_urls": [
+        "https://www.videogameschronicle.com/guide/gta-6-unwanted-attention-mission-walkthrough/",
+        "https://www.gtaboom.com/gta-6-unwanted-attention-walkthrough-40ae",
+        "https://www.eurogamer.net/gta-6-unwanted-attention-walkthrough"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrD5SZC__P3o3NBTkHt7_1dWgtI4XKZBeLqrDxkhUxQMsClcOsuWPhv3uJ7kA",
+      "image_credit": "Video Games Chronicle",
+      "news": [
+        {
+          "url": "https://www.videogameschronicle.com/guide/gta-6-unwanted-attention-mission-walkthrough/",
+          "title": "GTA 6 Unwanted Attention Mission Walkthrough",
+          "publisher": "Video Games Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrD5SZC__P3o3NBTkHt7_1dWgtI4XKZBeLqrDxkhUxQMsClcOsuWPhv3uJ7kA"
+        },
+        {
+          "url": "https://www.gtaboom.com/gta-6-unwanted-attention-walkthrough-40ae",
+          "title": "Article (spoilers)",
+          "publisher": "GTA BOOM",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEgPdSQYZn_9iY4yJhd-uYuEbktiKziSQaDkmIc1sA1zqYEJeuRR4lXEgZO14"
+        },
+        {
+          "url": "https://www.eurogamer.net/gta-6-unwanted-attention-walkthrough",
+          "title": "GTA 6 Unwanted Attention walkthrough",
+          "publisher": "Eurogamer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRixxA_Guec4YCMExTEF1sBDIJuB0q8bEKhOBmxwzmoKix5pZzL5Xj9g-QwBM8"
+        }
+      ]
+    },
+    {
+      "query": "truck accident lawyer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T07:00:00Z",
+      "related_news_urls": [
+        "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-sacramento/",
+        "https://kfoxtv.com/news/local/el-paso-police-confirm-man-died-after-fleeing-traffic-stop-and-crashing-on-i-10",
+        "https://www.ktsm.com/news/national/1-person-seriously-hurt-in-rollover-on-i-10-in-west-el-paso/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSfLJzvRCxCpu-QnHJ6vdWg-8Y44pK84RiBLn8-x6PQ3uA5jnAPc1mMTFyCB8",
+      "image_credit": "Lawyer Monthly",
+      "news": [
+        {
+          "url": "https://lawyer-monthly.com/2026/11/best-car-accident-lawyers-sacramento/",
+          "title": "Best Car Accident Lawyers in Sacramento for 2026",
+          "publisher": "Lawyer Monthly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSfLJzvRCxCpu-QnHJ6vdWg-8Y44pK84RiBLn8-x6PQ3uA5jnAPc1mMTFyCB8"
+        },
+        {
+          "url": "https://kfoxtv.com/news/local/el-paso-police-confirm-man-died-after-fleeing-traffic-stop-and-crashing-on-i-10",
+          "title": "El Paso police: man died after fleeing traffic stop and crashing on I-10",
+          "publisher": "KFOX",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJO7iEXZBsOIQ4sH3Jv9_TysNTar8cuJdUKf1OjidtNzOVBy6yACcz5Xa6c28"
+        },
+        {
+          "url": "https://www.ktsm.com/news/national/1-person-seriously-hurt-in-rollover-on-i-10-in-west-el-paso/",
+          "title": "Man dead after fleeing from police, rollover on I-10 in West El Paso",
+          "publisher": "KTSM 9 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWSYiEZAPdQG0Ip1uIGvgu5rzbxHnYEjOreJ83GCeUOBjyjxa-BcY945ZWRd4"
+        }
+      ]
+    },
+    {
+      "query": "qatar airways",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T06:50:00Z",
+      "related_news_urls": [
+        "https://wgntv.com/news/chicago-news/qatar-airways-flight-lands-safely-in-chicago-after-altercation-breaks-out-between-2-passengers/",
+        "https://www.cbsnews.com/chicago/news/qatar-airways-dohar-chicago-fight/",
+        "https://nypost.com/2026/11/17/us-news/fight-breaks-out-between-passengers-aboard-chicago-bound-flight-fbi-responds/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT58ZvtXtu1rSkJYtwxsK-utkQ8-dh1T5fjHbTvglKwaEs2xt8k9DfA7r_mK7A",
+      "image_credit": "WGN-TV",
+      "news": [
+        {
+          "url": "https://wgntv.com/news/chicago-news/qatar-airways-flight-lands-safely-in-chicago-after-altercation-breaks-out-between-2-passengers/",
+          "title": "Qatar Airways flight lands safely in Chicago after altercation breaks out between 2 passengers",
+          "publisher": "WGN-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT58ZvtXtu1rSkJYtwxsK-utkQ8-dh1T5fjHbTvglKwaEs2xt8k9DfA7r_mK7A"
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/news/qatar-airways-dohar-chicago-fight/",
+          "title": "2 passengers taken into custody after fight on Qatar Airways flight to Chicago",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQLDOkyoprZFgBFyI14LlJlJB1Dd1n0yaf4lRNNdfjREhrVJbG9F-ctJ6GIVo"
+        },
+        {
+          "url": "https://nypost.com/2026/11/17/us-news/fight-breaks-out-between-passengers-aboard-chicago-bound-flight-fbi-responds/",
+          "title": "Fight breaks out between passengers aboard Chicago-bound flight, FBI responds",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOD8GvADe8ik05IUU1qy_mU-BGiZIHrH8B5C92WazJmROKfQ1Surzp8lpRuis"
         }
       ]
     },
@@ -78,22 +183,22 @@
     },
     {
       "query": "quinnen williams press conference response",
-      "approx_searches": "10000+",
+      "approx_searches": "200+",
       "published_at": "2026-11-19T06:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys",
+        "https://www.foxnews.com/outkick-sports/cowboys-star-quinnen-williams-repeats-six-word-answer-12-times-presser-major-coaching-change",
         "https://sports.yahoo.com/articles/hates-nfl-fans-awe-dallas-053701716.html",
-        "https://www.dallascowboys.com/news/zero-to-100-boosted-sack-numbers-in-last-5-games"
+        "https://bleacherreport.com/articles/25535076-cowboys-quinnen-williams-repeats-same-answer-trending-video-while-discussing-defense-more"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6ptnK5yopBT-tKSGPhSQSqlIiEK9IfI_BWmxx0Gz8DhwO71fTj7Qv_TPq1eU",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBO95JTpXQYH7oZ5ytFsJ_UHs3r2ui5Z-JchH1oDPYhjQlC7WFB29ThrKTy6s",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys",
-          "title": "Sources: Pettine to take over defensive playcalling for Cowboys; Parker still DC",
-          "publisher": "ESPN",
+          "url": "https://www.foxnews.com/outkick-sports/cowboys-star-quinnen-williams-repeats-six-word-answer-12-times-presser-major-coaching-change",
+          "title": "Cowboys star Quinnen Williams repeats six word answer 12 times in presser after major coaching change",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6ptnK5yopBT-tKSGPhSQSqlIiEK9IfI_BWmxx0Gz8DhwO71fTj7Qv_TPq1eU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBO95JTpXQYH7oZ5ytFsJ_UHs3r2ui5Z-JchH1oDPYhjQlC7WFB29ThrKTy6s"
         },
         {
           "url": "https://sports.yahoo.com/articles/hates-nfl-fans-awe-dallas-053701716.html",
@@ -103,11 +208,46 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5m1hyPz55jWg6Z0rzNNi87yFpwxh2isspI6Y7VtFKl6bOa_DQgZC_2qei-O8"
         },
         {
-          "url": "https://www.dallascowboys.com/news/zero-to-100-boosted-sack-numbers-in-last-5-games",
-          "title": "Zero to 100: Boosted sack numbers in last 5 games",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "url": "https://bleacherreport.com/articles/25535076-cowboys-quinnen-williams-repeats-same-answer-trending-video-while-discussing-defense-more",
+          "title": "Cowboys' Quinnen Williams Repeats Same Answer in Trending Video While Discussing Defense, More",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLicv-u4nceKJZAUgcOKLegxGG8QdSnHw0X-PPofU-1ovIuNTp_64EnT-z7vo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLV2aEjAbUGAKVggqfA3ubj7kDWatxu7fwAEcr8SzhbEJqoghTFn1GrOGhtU"
+        }
+      ]
+    },
+    {
+      "query": "high school student",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T06:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit",
+        "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
+        "https://www.nytimes.com/2026/11/17/us/baltimore-school-chips-gun-alert.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLFRi-VMsl3DXAaCeX9Pgek69l9yiaAfB8WJoxqSErifFfwk448tUX5qZfG7w",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit",
+          "title": "Four Maryland high school students sue after AI mistakes Doritos bag for gun",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLFRi-VMsl3DXAaCeX9Pgek69l9yiaAfB8WJoxqSErifFfwk448tUX5qZfG7w"
+        },
+        {
+          "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
+          "title": "Lawyers’ Committee Files Lawsuit on Behalf of Black Students Detained and Searched Due to AI Alert Falsely Identifying a Bag of Chips as a Firearm",
+          "publisher": "Lawyers' Committee for Civil Rights Under Law",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZUplXjCFcaAQXCa1q9XhWOedZOTpmOC5YvcbaQr4nQ5bDg-iUC_kT_VFRNKo"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/17/us/baltimore-school-chips-gun-alert.html",
+          "title": "A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVFQHJzfEMUbcneLlRNETQ9hGOOoR9sMqvqzlccAJgKjXsf4Z-bgAuAUgnKbA"
         }
       ]
     },
@@ -147,41 +287,6 @@
       ]
     },
     {
-      "query": "high school student",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T06:30:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit",
-        "https://www.usatoday.com/story/news/nation/2026/11/19/baltimore-students-lawsuit-ai-gun-alert-chips/92855684007/",
-        "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLFRi-VMsl3DXAaCeX9Pgek69l9yiaAfB8WJoxqSErifFfwk448tUX5qZfG7w",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit",
-          "title": "Four Maryland high school students sue after AI mistakes Doritos bag for gun",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLFRi-VMsl3DXAaCeX9Pgek69l9yiaAfB8WJoxqSErifFfwk448tUX5qZfG7w"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/nation/2026/11/19/baltimore-students-lawsuit-ai-gun-alert-chips/92855684007/",
-          "title": "Baltimore students sue over AI that allegedly mistook Doritos bag for gun",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7rnCA_Aneyhy7GaHPkYz9fwKafSWanayan54AjTs80oqzXJ7tW3fY_B9vxok"
-        },
-        {
-          "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
-          "title": "Lawyers’ Committee Files Lawsuit on Behalf of Black Students Detained and Searched Due to AI Alert Falsely Identifying a Bag of Chips as a Firearm",
-          "publisher": "Lawyers' Committee for Civil Rights Under Law",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZUplXjCFcaAQXCa1q9XhWOedZOTpmOC5YvcbaQr4nQ5bDg-iUC_kT_VFRNKo"
-        }
-      ]
-    },
-    {
       "query": "fresno weather",
       "approx_searches": "100+",
       "published_at": "2026-11-19T06:30:00Z",
@@ -217,82 +322,12 @@
       ]
     },
     {
-      "query": "diesel fuel",
+      "query": "fuel",
       "approx_searches": "1000+",
       "published_at": "2026-11-19T06:20:00Z",
       "related_news_urls": [
-        "https://www.kmaland.com/news/triple-a-report-iowa-gas-prices-tumble/article_27faeff0-0a4a-4982-8229-6201c65e559e.html",
-        "https://www.ktvo.com/news/local/falling-gas-prices-across-tri-states-continue-with-missouri-seeing-cheapest-prices/article_2aa1062a-19bd-4817-b882-c4f22189a00e.html",
-        "https://www.businessrecord.com/iowa-fuel-prices-decrease-by-25-cents-since-last-week/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvCOA02SACSDuhWzXCdiBuX4U0FY782Kn56VN7Ww-87JXkrtzHP-9zaCPm3bQ",
-      "image_credit": "KMAland.com",
-      "news": [
-        {
-          "url": "https://www.kmaland.com/news/triple-a-report-iowa-gas-prices-tumble/article_27faeff0-0a4a-4982-8229-6201c65e559e.html",
-          "title": "Triple A report: Iowa gas prices tumble",
-          "publisher": "KMAland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvCOA02SACSDuhWzXCdiBuX4U0FY782Kn56VN7Ww-87JXkrtzHP-9zaCPm3bQ"
-        },
-        {
-          "url": "https://www.ktvo.com/news/local/falling-gas-prices-across-tri-states-continue-with-missouri-seeing-cheapest-prices/article_2aa1062a-19bd-4817-b882-c4f22189a00e.html",
-          "title": "Falling gas prices across Tri-States continue with Missouri seeing cheapest prices",
-          "publisher": "KTVO",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpb2-Kg4OpMM6aTFUwCI9P5nxI3zf7TD2aGR2S6BnM3hUCFIUYs1Ed7BOIJ5Q"
-        },
-        {
-          "url": "https://www.businessrecord.com/iowa-fuel-prices-decrease-by-25-cents-since-last-week/",
-          "title": "Iowa fuel prices decrease by 25 cents since last week",
-          "publisher": "Business Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6cg_usFWYggR44PXhUOQFpzExQv798y_-UWL2yxqt67rNNiij0MHHGJPbgNs"
-        }
-      ]
-    },
-    {
-      "query": "fix railing gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T06:20:00Z",
-      "related_news_urls": [
-        "https://www.gamespot.com/articles/how-to-fix-all-projects-at-jasons-house-in-gta-6/",
-        "https://www.shacknews.com/article/151406/safehouse-repairs-gta6",
-        "https://www.videogameschronicle.com/guide/gta-6-jasons-house-how-to-fix-all-projects-around-jasons-house/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSCJXRxWe7yd1_ngBHOvB4-RJNVKPZKYXVAhZWKImw0vC6CtQc2vC3pFX7MU",
-      "image_credit": "GameSpot",
-      "news": [
-        {
-          "url": "https://www.gamespot.com/articles/how-to-fix-all-projects-at-jasons-house-in-gta-6/",
-          "title": "How To Fix All Projects At Jason’s House In GTA 6",
-          "publisher": "GameSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSCJXRxWe7yd1_ngBHOvB4-RJNVKPZKYXVAhZWKImw0vC6CtQc2vC3pFX7MU"
-        },
-        {
-          "url": "https://www.shacknews.com/article/151406/safehouse-repairs-gta6",
-          "title": "All Key Lento safehouse repairs in GTA 6",
-          "publisher": "Shacknews",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfP-Tk4ZVjT8CH3ygfoNVNNj4zSLwxLFhZTSkOKRi24HNdfdU25uNo5nfpqRo"
-        },
-        {
-          "url": "https://www.videogameschronicle.com/guide/gta-6-jasons-house-how-to-fix-all-projects-around-jasons-house/",
-          "title": "GTA 6 Jason’s House: How to fix all projects around Jason’s House",
-          "publisher": "Video Games Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ_e12DdC4Xs3MJr_cByKqKDAxK5K9xK-2oT8vHAwfJ3VVq8Ca2tub0VS1aU"
-        }
-      ]
-    },
-    {
-      "query": "fuel",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T06:20:00Z",
-      "related_news_urls": [
         "https://www.geekwire.com/2026/latest-findings-point-to-fuel-supply-not-blue-origins-engines-in-loss-of-amazon-leo-satellites/",
-        "https://arstechnica.com/features/2026/11/sources-vulcan-launch-anomaly-investigation-is-complex/",
+        "https://www.scientificamerican.com/article/the-vulcan-rocket-failure-could-haunt-u-s-spaceflight-for-years-to-come/",
         "https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxRsWq2Hoq6dkW4NfyY4VxKivCtO4OlLTNre5MWYyLr-svEn_TcxazHS8jf6I",
@@ -306,11 +341,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxRsWq2Hoq6dkW4NfyY4VxKivCtO4OlLTNre5MWYyLr-svEn_TcxazHS8jf6I"
         },
         {
-          "url": "https://arstechnica.com/features/2026/11/sources-vulcan-launch-anomaly-investigation-is-complex/",
-          "title": "The data is very preliminary, but Vulcan failure may not be due to BE-4 engines",
-          "publisher": "Ars Technica",
+          "url": "https://www.scientificamerican.com/article/the-vulcan-rocket-failure-could-haunt-u-s-spaceflight-for-years-to-come/",
+          "title": "The Vulcan rocket failure could haunt U.S. spaceflight for years to come",
+          "publisher": "Scientific American",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXpaj1HTcDvM9ReQFxi_v2Wm2NFgqchCs7La0K0gyZ-m6G_P_mVRLSQYdqJ_U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSImk1PUEVrI6Mg1EKSC1KIELOXVWPzESL9fsH_rzaV-_oYK7hfDlL4EDUkHr4"
         },
         {
           "url": "https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931",
@@ -318,41 +353,6 @@
           "publisher": "DW.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM1dLu_g6evKNL6FNvDA0gmo03EYaDLp9GzUTkXU2V4gFW1XVlQbgxGjnvOsM"
-        }
-      ]
-    },
-    {
-      "query": "where is strip club in gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T06:20:00Z",
-      "related_news_urls": [
-        "https://www.shacknews.com/article/151386/prostitutes-gta6",
-        "https://www.imdb.com/fr/news/ni66047709/",
-        "https://consequence.net/2026/11/gta-6-no-sex-workers-rockstar-games-comment/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzcP3L6N950qW5YlAL-gCglqNp_LcG5ilkWWmvntSG9KHeThFxKn5J6tpQWgI",
-      "image_credit": "Shacknews",
-      "news": [
-        {
-          "url": "https://www.shacknews.com/article/151386/prostitutes-gta6",
-          "title": "Can you hire prostitutes in GTA 6?",
-          "publisher": "Shacknews",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzcP3L6N950qW5YlAL-gCglqNp_LcG5ilkWWmvntSG9KHeThFxKn5J6tpQWgI"
-        },
-        {
-          "url": "https://www.imdb.com/fr/news/ni66047709/",
-          "title": "GTA 6 To Feature Full \"Sex Scenes\" For The First Time",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://consequence.net/2026/11/gta-6-no-sex-workers-rockstar-games-comment/",
-          "title": "Rockstar Leaves Sex Workers Out of Grand Theft Auto for First Time in 25 Years",
-          "publisher": "Consequence of Sound",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQJmD97J9IB9QraKygM2lc4M_eypyTJgK5RUL3tfMJ2BT3U1v5GyIflXIAJ7w"
         }
       ]
     }
