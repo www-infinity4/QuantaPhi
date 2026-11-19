@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T00:02:46.495726Z",
+  "checked_at": "2026-11-19T00:45:14.609878Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "bulls vs nets",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T23:40:00Z",
+      "query": "anthony black",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T00:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/bulls-vs-nets-preview-watch-210005787.html",
-        "https://www.netsdaily.com/nets-game-previews/116338/nets-bulls-preview-nic-claxton-returns-brooklyn",
-        "https://www.si.com/nba/bulls/onsi/why-the-bulls-matchup-with-the-nets-is-sneakily-really-important-18"
+        "https://bleacherreport.com/articles/25532919-new-nba-trade-rumors-magics-anthony-black-after-contract-extension-talks-fizzled-out",
+        "https://hardwoodhoudini.com/anthony-black-would-ideal-derrick-white-style-trade-target-for-celtics",
+        "https://sports.yahoo.com/articles/yet-team-league-sources-knowledge-093644338.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDyi2w3tSb9bFGURsjv8HMo6xN3u78vIEDXfsltQ9U_cr5KVHnjhz3PupiwIE",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1LPGCHDqbAlbRIuIuAxmgteIaumEGxd31SrCBnL-nf494dwMa37WH1oc07U",
+      "image_credit": "Bleacher Report",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/bulls-vs-nets-preview-watch-210005787.html",
-          "title": "Bulls vs. Nets Preview: How to Watch, Injury Report & Odds",
+          "url": "https://bleacherreport.com/articles/25532919-new-nba-trade-rumors-magics-anthony-black-after-contract-extension-talks-fizzled-out",
+          "title": "New NBA Trade Rumors on Magic's Anthony Black After Contract Extension Talks Fizzled Out",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1LPGCHDqbAlbRIuIuAxmgteIaumEGxd31SrCBnL-nf494dwMa37WH1oc07U"
+        },
+        {
+          "url": "https://hardwoodhoudini.com/anthony-black-would-ideal-derrick-white-style-trade-target-for-celtics",
+          "title": "Anthony Black would be ideal Derrick White-style trade target for the Celtics",
+          "publisher": "Hardwood Houdini",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyqxEudp-GNZ51_9O7puTF39lwGA5Z4kGHjOhA3vPQCjQNPQSGAxHSHtLSOKg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/yet-team-league-sources-knowledge-093644338.html",
+          "title": "Yet team and league sources with knowledge of the …",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDyi2w3tSb9bFGURsjv8HMo6xN3u78vIEDXfsltQ9U_cr5KVHnjhz3PupiwIE"
-        },
-        {
-          "url": "https://www.netsdaily.com/nets-game-previews/116338/nets-bulls-preview-nic-claxton-returns-brooklyn",
-          "title": "Nets vs. Bulls Preview: Nic Claxton Returns to Brooklyn",
-          "publisher": "NetsDaily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0Bvbf2jD-kEdqmzVtRhyXBktoAFNFjIrF9tclW3dGbrjHnC96LWK5mQYaDRk"
-        },
-        {
-          "url": "https://www.si.com/nba/bulls/onsi/why-the-bulls-matchup-with-the-nets-is-sneakily-really-important-18",
-          "title": "Why the Bulls' Matchup with the Nets is Sneakily Really Important",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzie5XOfPqPvj7dKanPzzwpax30bvJVdVDcTN_fsNcxkdA6ko7Ql7y4FoS1IE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMGvLUySb8YCDF0BnlarfsMmF0jTc49L0R11_lW34d2oAiCPgMtkDlbopoH8"
         }
       ]
     },
     {
-      "query": "central mi vs buffalo",
+      "query": "cedric coward",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T00:30:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/watch/video/game-recap-grizzlies-129-nets-110-nov-14",
+        "https://www.sportsline.com/nba/game-forecast/NBA_20261114_BKN@MEM/",
+        "https://www.espn.com/video/clip/_/id/17518510/cedric-coward-clave-en-el-triunfo-de-grizzlies-contra-nets"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfSO_ldUEQQ4yl3kRNCrqyebdkSeQTx5a8Qy7g3Gh_vD3GJaMlU5gb2tkFdz0",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/watch/video/game-recap-grizzlies-129-nets-110-nov-14",
+          "title": "Game Recap: Grizzlies 129, Nets 110 (Nov. 14)",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfSO_ldUEQQ4yl3kRNCrqyebdkSeQTx5a8Qy7g3Gh_vD3GJaMlU5gb2tkFdz0"
+        },
+        {
+          "url": "https://www.sportsline.com/nba/game-forecast/NBA_20261114_BKN@MEM/",
+          "title": "Brooklyn Nets vs. Memphis Grizzlies Odds, Betting Lines, Expert picks, Game Projections, DFS Projections and Player Prop Projections - Saturday 11/14 8:00 PM ET",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA1zJmcJqRgpaIvZ7Z8FtxZXi969LuxFy8WJHdR8Qi7UOmPZmuP7kKxcCa2rU"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/17518510/cedric-coward-clave-en-el-triunfo-de-grizzlies-contra-nets",
+          "title": "Cedric Coward, clave en el triunfo de Grizzlies contra Nets",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSj5wl-F32_dxgx0uZRFAEdc3243pPFyrfXdhdqJctuMljG_XgdXCZ_Tb-SQ_Y"
+        }
+      ]
+    },
+    {
+      "query": "madden 27",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T00:30:00Z",
+      "related_news_urls": [
+        "https://bringmethesports.com/madden-nfl-27-adds-vikings-beat-writer-as-unlockable-personality",
+        "https://www.mensjournal.com/news/madden-97-bringing-throwback-players-appearance-to-current-consoles",
+        "https://tech.yahoo.com/gaming/articles/madden-27-week-11-roster-192039276.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6fRIPtf71p5vdWwsPPArKLbx6O_k_-cS2BIxxELkJSGK7dOFrGwLlNke2OPs",
+      "image_credit": "Bring Me the Sports",
+      "news": [
+        {
+          "url": "https://bringmethesports.com/madden-nfl-27-adds-vikings-beat-writer-as-unlockable-personality",
+          "title": "Madden NFL 27 adds Vikings beat writer as unlockable personality",
+          "publisher": "Bring Me the Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6fRIPtf71p5vdWwsPPArKLbx6O_k_-cS2BIxxELkJSGK7dOFrGwLlNke2OPs"
+        },
+        {
+          "url": "https://www.mensjournal.com/news/madden-97-bringing-throwback-players-appearance-to-current-consoles",
+          "title": "Madden ’97 Bringing Throwback Players, Appearance to Current Consoles",
+          "publisher": "Men's Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1l38x8lZuLv_3VRzh8gTONaanTe2DyWrlQ_EV4TOpnWbgDNxUF33EhcQCYA8"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/madden-27-week-11-roster-192039276.html",
+          "title": "Madden 27 Week 11 Roster Update Release Date",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ34DclZZnVIb2sqkubi3SJh-vV-y-SU9gmfCsRngtoD5jjiXrv6ktJTtTDIrE"
+        }
+      ]
+    },
+    {
+      "query": "cornyn trump",
       "approx_searches": "1000+",
-      "published_at": "2026-11-18T23:40:00Z",
+      "published_at": "2026-11-19T00:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-central-michigan-vs-buffalo-233000455.html",
-        "https://www.cbssports.com/betting/news/central-michigan-buffalo-prediction-odds-time-week-12-wednesday-maction-picks-best-bets/",
-        "https://collegefootballnews.com/college-football/central-michigan-vs-buffalo-prediction-2026"
+        "https://www.cnn.com/2026/11/18/politics/republican-cornyn-blocks-trump-judicial-nomination-gaiser-texas",
+        "https://thehill.com/homenews/senate/6229094-cornyn-blocks-non-texan-judge/",
+        "https://www.reuters.com/legal/government/republican-senator-cornyn-blocks-trump-judicial-nominee-texas-2026-11-18/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFjUdFVAv8UZWMwbYsgxOdKGp43ABMs4eqO2JVjXD0qFPnMyN6LcdGk4fBbYE",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbKccDW_Us5kbYA9dLlf00s4ohblsi6Qkqb51Z04vl53j6Q7I-tqdLBUrODX4",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-central-michigan-vs-buffalo-233000455.html",
-          "title": "How to watch Central Michigan vs Buffalo: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.cnn.com/2026/11/18/politics/republican-cornyn-blocks-trump-judicial-nomination-gaiser-texas",
+          "title": "Sen. Cornyn blocks judicial nominee because Trump didn’t choose Texas",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFjUdFVAv8UZWMwbYsgxOdKGp43ABMs4eqO2JVjXD0qFPnMyN6LcdGk4fBbYE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbKccDW_Us5kbYA9dLlf00s4ohblsi6Qkqb51Z04vl53j6Q7I-tqdLBUrODX4"
         },
         {
-          "url": "https://www.cbssports.com/betting/news/central-michigan-buffalo-prediction-odds-time-week-12-wednesday-maction-picks-best-bets/",
-          "title": "Central Michigan vs. Buffalo prediction, odds, time: Week 12 Wednesday MACtion picks from proven model",
-          "publisher": "CBS Sports",
+          "url": "https://thehill.com/homenews/senate/6229094-cornyn-blocks-non-texan-judge/",
+          "title": "Cornyn blocks Trump’s nomination to federal district court because he didn’t choose a Texan",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9aEQCGCsd0gP6nkD97d0vUaLY-Xf6Bov-g3q1pJhLqMqjxY3t4VOa2ZnvP8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3ZNVM02b0ujp0Kf2ZHepJfYi9iitWs0L8VgAAbJYz-k8v78uUmfwOLeQ3JZc"
         },
         {
-          "url": "https://collegefootballnews.com/college-football/central-michigan-vs-buffalo-prediction-2026",
-          "title": "Central Michigan vs Buffalo Prediction: Can the Bulls Stay Alive For the MAC Title?",
-          "publisher": "College Football News",
+          "url": "https://www.reuters.com/legal/government/republican-senator-cornyn-blocks-trump-judicial-nominee-texas-2026-11-18/",
+          "title": "Republican Senator Cornyn blocks Trump judicial nominee in Texas",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCNGHz9ZREDPRR03P-EUM99YCstRceirpQvjSG9cwbKtXyMfvG7q4GKYfI4WQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYbNg8zKcRt0dzPvkWLyzkwiG-93YOwuzLQZRYUrFeIaXBR6j789RMJ7urjGU"
         }
       ]
     },
     {
-      "query": "kelvin sampson",
+      "query": "desmond bane",
       "approx_searches": "500+",
-      "published_at": "2026-11-18T23:40:00Z",
+      "published_at": "2026-11-19T00:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/houston-kelvin-sampson-warns-starting-023253553.html",
-        "https://clutchpoints.com/ncaa-basketball/houston-basketball-news-kelvin-sampson-mercy-miller-low-iq-mistake",
-        "https://sports.yahoo.com/articles/uh-coach-kelvin-sampson-found-190749682.html"
+        "https://www.espn.com/nba/recap/_/gameId/401909994",
+        "https://www.nba.com/watch/video/game-recap-magic-115-celtics-105-nov-16",
+        "https://orlandomagicdaily.com/orlando-magics-process-building-confidence-delivering-wins-01m7kkyxy7km"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwCqb7A-Stj-3hMa35BtSZafHzQ-Jye0Pvk6Wq8yhiz75v5SF1ZduqW9XSHg",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/houston-kelvin-sampson-warns-starting-023253553.html",
-          "title": "Houston’s Kelvin Sampson warns starting guard to avoid mistake ‘low IQ players’ make",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwCqb7A-Stj-3hMa35BtSZafHzQ-Jye0Pvk6Wq8yhiz75v5SF1ZduqW9XSHg"
-        },
-        {
-          "url": "https://clutchpoints.com/ncaa-basketball/houston-basketball-news-kelvin-sampson-mercy-miller-low-iq-mistake",
-          "title": "Houston’s Kelvin Sampson warns starting guard to avoid mistake ‘low IQ players’ make",
-          "publisher": "ClutchPoints",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-efVaQCUSKBIRQK5qBmrGUl_m-UOSS5Ae7ltZ7IOIUfWsm3uaFDqFGVLnoo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/uh-coach-kelvin-sampson-found-190749682.html",
-          "title": "How UH coach Kelvin Sampson found his next point guard in Dedan Thomas Jr. with just a phone call",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuQzHxfZHSHsH_MtZYawVeMX6ctlfVljczyjh34KYxQtWFiEbBOSq097RU8H4"
-        }
-      ]
-    },
-    {
-      "query": "jack nicklaus",
-      "approx_searches": "500+",
-      "published_at": "2026-11-18T23:40:00Z",
-      "related_news_urls": [
-        "https://www.golfdigest.com/story/jack-nicklaus-gave-brutally-honest-one-word-answer-when-asked-what-he-knows-about-grant-horvat-video",
-        "https://sports.yahoo.com/articles/jack-nicklaus-gave-brutally-honest-213037174.html",
-        "https://wiod.iheart.com/featured/florida-news/content/2026-11-18-hall-of-fame-golfer-jack-nicklaus-wins-award-from-florida-university/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPuLplKOpLhjfLHfbW5gwU_HQJ8tM6khisWguytrBQfWGUfLIJsP4VdecRkN8",
-      "image_credit": "Golf Digest",
-      "news": [
-        {
-          "url": "https://www.golfdigest.com/story/jack-nicklaus-gave-brutally-honest-one-word-answer-when-asked-what-he-knows-about-grant-horvat-video",
-          "title": "Jack Nicklaus gave a brutally honest one-word answer when asked what he knows about Grant Horvat",
-          "publisher": "Golf Digest",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPuLplKOpLhjfLHfbW5gwU_HQJ8tM6khisWguytrBQfWGUfLIJsP4VdecRkN8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jack-nicklaus-gave-brutally-honest-213037174.html",
-          "title": "Jack Nicklaus gave a brutally honest answer when asked whether he knew Grant Horvat",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIpk99eQh0Z8oZZFy55g_4yD6Ybjmpz_rVwC1JvBy0OvxTozpi0eRgYpOcM7w"
-        },
-        {
-          "url": "https://wiod.iheart.com/featured/florida-news/content/2026-11-18-hall-of-fame-golfer-jack-nicklaus-wins-award-from-florida-university/",
-          "title": "Hall-Of-Fame Golfer Jack Nicklaus Wins Award From Florida University",
-          "publisher": "WIOD",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBwUBr30xqyRwPYvQKgyrbJY2jPAS8NOyBriv1HE8wIs4HYfT0feqYaT62oy4"
-        }
-      ]
-    },
-    {
-      "query": "dedan thomas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T23:40:00Z",
-      "related_news_urls": [
-        "https://www.courant.com/2026/11/18/five-uconn-men-women-named-to-wooden-award-watch-list/",
-        "https://floridagators.com/news/2026/11/18/womens-basketball-mcmiller-named-to-wooden-award-preseason-top-50-watchlist",
-        "https://arkansasrazorbacks.com/smith-and-richmond-on-wooden-award-watch-list/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlEwokoUA5rmCA3lyES1N_cwf8mM1jL4gGbGM6SuA0K9Y3Raue05_as_6f8wY",
-      "image_credit": "Hartford Courant",
-      "news": [
-        {
-          "url": "https://www.courant.com/2026/11/18/five-uconn-men-women-named-to-wooden-award-watch-list/",
-          "title": "Five UConn men, women named to Wooden Award watch list",
-          "publisher": "Hartford Courant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlEwokoUA5rmCA3lyES1N_cwf8mM1jL4gGbGM6SuA0K9Y3Raue05_as_6f8wY"
-        },
-        {
-          "url": "https://floridagators.com/news/2026/11/18/womens-basketball-mcmiller-named-to-wooden-award-preseason-top-50-watchlist",
-          "title": "McMiller Named To Wooden Award Preseason Top 50 Watchlist",
-          "publisher": "Florida Gators",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXZpYlRp1qwfirfBFzcckghsqjxcCXozDopm9szNeRgKIYgur_eThqKbmzNJE"
-        },
-        {
-          "url": "https://arkansasrazorbacks.com/smith-and-richmond-on-wooden-award-watch-list/",
-          "title": "Smith and Richmond on Wooden Award Watch List",
-          "publisher": "Arkansas Razorbacks",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqjwRipyDYp1NhAybzoUp0VqG9tHu82mYw6nZarK5-iEvY1XN0bWt4W49BmQs"
-        }
-      ]
-    },
-    {
-      "query": "akash deep",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T23:40:00Z",
-      "related_news_urls": [
-        "https://suaragarut.id/en/akash-deep-test-career-comeback",
-        "https://www.cricbuzz.com/cricket-news/140965/akash-deep-the-making-of-a-second-innings",
-        "https://demokratis.co.id/en/akash-deep-test-comeback-recovery"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRekTmNgNCq3dph7p9k-QKiFrFa-yrrk869RpY3hpfJWQgeosu2mAT4BApS-WM",
-      "image_credit": "SuaraGarut.ID",
-      "news": [
-        {
-          "url": "https://suaragarut.id/en/akash-deep-test-career-comeback",
-          "title": "Akash Deep Rebuilds His Test Career After Nine Month Injury",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRekTmNgNCq3dph7p9k-QKiFrFa-yrrk869RpY3hpfJWQgeosu2mAT4BApS-WM"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140965/akash-deep-the-making-of-a-second-innings",
-          "title": "Akash Deep: The making of a second innings",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_u62y3ekY5RAlrdJicrfHUmslQK6-LrIlrj-nd4zkAvLyDjCCnJ3EDr_m2Jk"
-        },
-        {
-          "url": "https://demokratis.co.id/en/akash-deep-test-comeback-recovery",
-          "title": "Akash Deep Returns to India Squad After Nine Month Recovery",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRekTmNgNCq3dph7p9k-QKiFrFa-yrrk869RpY3hpfJWQgeosu2mAT4BApS-WM"
-        }
-      ]
-    },
-    {
-      "query": "sofi stadium",
-      "approx_searches": "200+",
-      "published_at": "2026-11-18T23:40:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/two-bad-teams-one-cheap-ticket-jets-chargers-seats-barely-cost-more-than-sofi-cheeseburger",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/after-earning-their-first-win-chargers-are-favored-to-win-their-second-vs-jets",
-        "https://www.boltsfromtheblue.com/los-angeles-chargers-news/67165/chargers-jets-game-preview-geno-smiths-health-could-decide-week-11-matchup"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdIc6PFZf5jHwMsQ89Ws70MF9YelQ_sh0Ch5Pm0-NflI1KTMZqF0iqXaakPT8",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/two-bad-teams-one-cheap-ticket-jets-chargers-seats-barely-cost-more-than-sofi-cheeseburger",
-          "title": "Two bad teams, one cheap ticket: The Jets-Chargers seats barely cost more than a SoFi cheeseburger",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdIc6PFZf5jHwMsQ89Ws70MF9YelQ_sh0Ch5Pm0-NflI1KTMZqF0iqXaakPT8"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/after-earning-their-first-win-chargers-are-favored-to-win-their-second-vs-jets",
-          "title": "After earning their first win, Chargers are favored to win their second vs. Jets",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLm8mDcNDDnYUWWBKkx_XhlICWFWj3MEBoRN67wAQIWLpmZg5gvr7ic51piRw"
-        },
-        {
-          "url": "https://www.boltsfromtheblue.com/los-angeles-chargers-news/67165/chargers-jets-game-preview-geno-smiths-health-could-decide-week-11-matchup",
-          "title": "Chargers-Jets Game Preview: Geno Smith’s health could decide Week 11 matchup",
-          "publisher": "Bolts From The Blue",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNKK66Ebzujju06bnozgd8Gn-sm3inXU5lDkxEGz_gR6enx11AXnrkt7uvZRY"
-        }
-      ]
-    },
-    {
-      "query": "bruins vs red wings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-18T23:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50513005/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-        "https://sports.yahoo.com/articles/bruins-vs-red-wings-score-233001745.html",
-        "https://www.freep.com/story/sports/nhl/red-wings/2026/11/18/detroit-red-wings-boston-bruins-nhl-original-six/92823558007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl3O7LHXq8Drnthpfk54x_ALHkv9oK1Y9eo_MwV6ahBgjrb3zc6e51-AE8si8",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTjTtMyr1RCFUg6Ib_H1XcGw8azB31VMEXtl9pGEZVchEm1Pg09E7kWBdUK-I",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nhl/story/_/id/50513005/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-          "title": "NHL Tonight: What to watch in Bruins-Red Wings, Canadiens-Devils, Avalanche-Mammoth",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909994",
+          "title": "Magic 115-105 Celtics (Nov 16, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl3O7LHXq8Drnthpfk54x_ALHkv9oK1Y9eo_MwV6ahBgjrb3zc6e51-AE8si8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTjTtMyr1RCFUg6Ib_H1XcGw8azB31VMEXtl9pGEZVchEm1Pg09E7kWBdUK-I"
         },
         {
-          "url": "https://sports.yahoo.com/articles/bruins-vs-red-wings-score-233001745.html",
-          "title": "Bruins vs. Red Wings Score, Live Updates, Highlights From NHL Game",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nba.com/watch/video/game-recap-magic-115-celtics-105-nov-16",
+          "title": "Game Recap: Magic 115, Celtics 105 (Nov. 16)",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0xkBw1fpRI3nl9OGjc0yAfGyEqG0El2MxidXq4R1XAQhuWzUtaA75tExB7G8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUd3FO9y1OkRPMPrS9QGADXZPjMm-qBgEgXgPrdgZ-8IR6LuS5SbUoaL_FJM"
         },
         {
-          "url": "https://www.freep.com/story/sports/nhl/red-wings/2026/11/18/detroit-red-wings-boston-bruins-nhl-original-six/92823558007/",
-          "title": "100 years later, Red Wings franchise ready to avenge loss to Bruins",
-          "publisher": "Detroit Free Press",
+          "url": "https://orlandomagicdaily.com/orlando-magics-process-building-confidence-delivering-wins-01m7kkyxy7km",
+          "title": "Orlando Magic's process is building confidence and delivering wins",
+          "publisher": "Orlando Magic Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStF9A2t1xJlehh7HMzR-53yHxZXnLxEisc5vV6PxdqaZs41GLFg7E8APVDazA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR737NN1cy8yoPiGZe_l8mGxGAY3Se3ulGA5HPYxpYM6_veNS1wPhGdJliuwOw"
         }
       ]
     },
     {
-      "query": "wizards vs raptors",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T23:30:00Z",
+      "query": "iowa state vs northern iowa",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T00:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/rajakovic-says-hamstring-tightened-233754638.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/amen-thompson-knee-upgraded-to-available-weds",
-        "https://roundtable.io/sports/nba/wizards/news/injury-report-washington-wizards-vs-toronto-raptors"
+        "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-womens/2026/11/18/iowa-state-womens-basketball-uni-where-to-watch-time-channel-tv/92846081007/",
+        "https://cyclones.com/news/2026/11/17/womens-basketball-primer-iowa-state-at-uni",
+        "https://unipanthers.com/news/2026/11/17/womens-basketball-uni-womens-basketball-hosts-in-state-rival-iowa-state-in-second-consecutive-home-contest"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSopSeSjNIC5itu3mVY5t-GpVUDIrQlqhE-DPXqPZ6FMtkZjBBgXN8eYAvpos",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5z6CHdhU90E_6FFyn6FbD2i6ZTTDt4ML8lua-dhPM7MiO_77-dIH1SBAToZE",
+      "image_credit": "The Des Moines Register",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/rajakovic-says-hamstring-tightened-233754638.html",
-          "title": "Rajakovic says his hamstring tightened up after the …",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-womens/2026/11/18/iowa-state-womens-basketball-uni-where-to-watch-time-channel-tv/92846081007/",
+          "title": "How to watch Iowa State women's basketball vs UNI today",
+          "publisher": "The Des Moines Register",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSopSeSjNIC5itu3mVY5t-GpVUDIrQlqhE-DPXqPZ6FMtkZjBBgXN8eYAvpos"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5z6CHdhU90E_6FFyn6FbD2i6ZTTDt4ML8lua-dhPM7MiO_77-dIH1SBAToZE"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/amen-thompson-knee-upgraded-to-available-weds",
-          "title": "Amen Thompson (knee) upgraded to available Weds.",
-          "publisher": "NBC Sports",
+          "url": "https://cyclones.com/news/2026/11/17/womens-basketball-primer-iowa-state-at-uni",
+          "title": "PRIMER: Iowa State at UNI",
+          "publisher": "Iowa State Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxm2kS0NyMcU8726PqoqDPQH0eTIchr7H3DkgXkPzpTUQbecBx1sDuo2Avkd0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG_XwEQqe7KvDQoo7vaFF6Q8VAteRevig9ZgcwOoX5wyPFgAnczndjsfU9ZVs"
         },
         {
-          "url": "https://roundtable.io/sports/nba/wizards/news/injury-report-washington-wizards-vs-toronto-raptors",
-          "title": "Injury Report: Washington Wizards vs. Toronto Raptors",
-          "publisher": "roundtable.io",
+          "url": "https://unipanthers.com/news/2026/11/17/womens-basketball-uni-womens-basketball-hosts-in-state-rival-iowa-state-in-second-consecutive-home-contest",
+          "title": "UNI women’s basketball hosts in-state rival Iowa State in second consecutive home contest",
+          "publisher": "UNI Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzl7xy8Rqg4evGBDngzobLI7ZU45LmwuzKc-nvjJaYGzmcAwBfXqi9_8a5My4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVvVgTIrxfzAittyuNK_CdSwDqMPpYbDrLrOx6UVNszGlMrsYt6FYcv8-OdqE"
         }
       ]
     },
     {
-      "query": "canadiens vs devils",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-18T23:30:00Z",
+      "query": "st john's basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T00:20:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/devils-nico-hischier-elite-two-way-game-to-be-tested-against-canadiens",
-        "https://sports.yahoo.com/articles/2026-27-gamethread-22-jersey-220000900.html",
-        "https://www.allaboutthejersey.com/devils-game-previews/75312/game-preview-22-montreal-canadiens-new-jersey-devils"
+        "https://www.timesunion.com/sports/article/st-johns-basketball-vs-siena-preview-pitino-22534121.php",
+        "https://sports.yahoo.com/articles/one-bold-prediction-st-johns-200001597.html",
+        "https://www.news10.com/sports/saints-and-danes/saints-ready-to-march-into-battle-with-13th-ranked-st-johns/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW829YdbbcaeDF5CdATEuXTxDClOuqU5r3AAjuu3D5iI_uYH3qiCdwUfNTtn0",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkaVtL1kMpsXV8c3_TxTRa_V-JDmEWCc2v7cIJjLY5xfsiW-TXnXBvsxhwS-4",
+      "image_credit": "Times Union",
       "news": [
         {
-          "url": "https://www.nhl.com/news/devils-nico-hischier-elite-two-way-game-to-be-tested-against-canadiens",
-          "title": "Hischier's elite two-way game with Devils to be tested against Canadiens",
+          "url": "https://www.timesunion.com/sports/article/st-johns-basketball-vs-siena-preview-pitino-22534121.php",
+          "title": "'You never know what can happen': Siena basketball set to take on Rick Pitino's No. 13 St. John's",
+          "publisher": "Times Union",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkaVtL1kMpsXV8c3_TxTRa_V-JDmEWCc2v7cIJjLY5xfsiW-TXnXBvsxhwS-4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/one-bold-prediction-st-johns-200001597.html",
+          "title": "One Bold Prediction for St. John's Basketball vs. Siena",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3xK2L00jhW0eHxWffbbucgiv9jVxRkAVOXGiG5126cfrcaGC-XP88UsAFAHE"
+        },
+        {
+          "url": "https://www.news10.com/sports/saints-and-danes/saints-ready-to-march-into-battle-with-13th-ranked-st-johns/",
+          "title": "Saints ready to march into battle with 13th-ranked St. John’s",
+          "publisher": "NEWS10 ABC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnwdjfhWY7zTeKFZkvKJnGBLvAid4AlTYaakmXyAP_yJcfazTzFG6S5zQUtyU"
+        }
+      ]
+    },
+    {
+      "query": "ole miss vs ohio state",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T00:20:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/stories/womens-college-basketball/how-watch-ole-miss-vs-ohio-state-womens-basketball-tv-channel-live-stream-time-nov-18-2026",
+        "https://sports.yahoo.com/articles/3-things-watch-no-19-143100492.html",
+        "https://ohiostatebuckeyes.com/news/2026/11/16/womens-basketball-ohio-state-hosts-ole-miss-on-wednesday-for-90s-night"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHBDVUOMV4S883bWaZDMmr7-MFWO18wyxfFgxiSCF2A_DV8CHvo19_Kuf5tXg",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/stories/womens-college-basketball/how-watch-ole-miss-vs-ohio-state-womens-basketball-tv-channel-live-stream-time-nov-18-2026",
+          "title": "How to Watch Ole Miss vs. Ohio State Women's Basketball: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHBDVUOMV4S883bWaZDMmr7-MFWO18wyxfFgxiSCF2A_DV8CHvo19_Kuf5tXg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/3-things-watch-no-19-143100492.html",
+          "title": "3 things to watch when No. 19 Ole Miss faces No. 19 Ohio State women’s basketball",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb908nvXMeAKOwjlQoufGDjVfs8OQWDo-LhUSH6Plx2zV0vWz7uIZ548rt7zQ"
+        },
+        {
+          "url": "https://ohiostatebuckeyes.com/news/2026/11/16/womens-basketball-ohio-state-hosts-ole-miss-on-wednesday-for-90s-night",
+          "title": "Ohio State Hosts Ole Miss on Wednesday for 90’s Night",
+          "publisher": "Ohio State | Official Athletics Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDOdSf9akSQay7nEZmod2mMxV2DmrRlIvX6RwoQHPNWdpMGitvmHr0WHzPnJs"
+        }
+      ]
+    },
+    {
+      "query": "wayne gretzky",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T00:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/story/_/id/50502384/nhl-2026-27-connor-mcdavid-scoring-200-points-stats-record-wayne-gretzky",
+        "https://www.nhl.com/video/edm-fla-mcdavid-scores-ppg-against-jacob-markstrom-6408522334112",
+        "https://edmontonjournal.com/sports/hockey/nhl/edmonton-oilers/barely-a-peep-from-tkachuk-bros-as-edmonton-oilers-humble-florida-panthers"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRMMZ8YONAfIxtfA59Q3jhWTuqh666tX5nnezeHVCA0BYrIAi_y91k5yUXPNw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50502384/nhl-2026-27-connor-mcdavid-scoring-200-points-stats-record-wayne-gretzky",
+          "title": "The Connor McDavid Scoring Tracker: Can the Oilers' superstar break 200 points?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRMMZ8YONAfIxtfA59Q3jhWTuqh666tX5nnezeHVCA0BYrIAi_y91k5yUXPNw"
+        },
+        {
+          "url": "https://www.nhl.com/video/edm-fla-mcdavid-scores-ppg-against-jacob-markstrom-6408522334112",
+          "title": "McDavid's point streak continues with PPG",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW829YdbbcaeDF5CdATEuXTxDClOuqU5r3AAjuu3D5iI_uYH3qiCdwUfNTtn0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQR-qBjaW2T6WqXTXQYINjb7livzJt_pB_T9lpglLd71EXHVR9SZIGgJXHk-vA"
         },
         {
-          "url": "https://sports.yahoo.com/articles/2026-27-gamethread-22-jersey-220000900.html",
-          "title": "2026-27 Gamethread #22: New Jersey Devils vs. Montreal Canadiens",
+          "url": "https://edmontonjournal.com/sports/hockey/nhl/edmonton-oilers/barely-a-peep-from-tkachuk-bros-as-edmonton-oilers-humble-florida-panthers",
+          "title": "Barely a peep from Tkachuk Bros. as Edmonton Oilers humble Florida Panthers",
+          "publisher": "Edmonton Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD5cXKGkBr1wGan_TUfTEpi6S5Ry0Gww8Z2XoH8pRu5iPDvuy0oP45Wg7_X9w"
+        }
+      ]
+    },
+    {
+      "query": "hawks vs thunder",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-19T00:10:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/news/atlanta-hawks-dort-wiggins-face-oklahoma-city-thunder",
+        "https://sports.yahoo.com/articles/hawks-vs-thunder-live-updates-000032216.html",
+        "https://www.koco.com/article/sports-former-oklahoma-city-thunder-players-return-paycom-center/74469804"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8Ulm6ktXIEZsvqEjPIOatkqAmtk6BURfQYbQzTQ5a2rOB5L1_epjw5EKZHM",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/news/atlanta-hawks-dort-wiggins-face-oklahoma-city-thunder",
+          "title": "Lu Dort knows his first return to Oklahoma City will be emotional and 'surreal'",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8Ulm6ktXIEZsvqEjPIOatkqAmtk6BURfQYbQzTQ5a2rOB5L1_epjw5EKZHM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/hawks-vs-thunder-live-updates-000032216.html",
+          "title": "Hawks vs. Thunder: Live updates, highlights for Wednesday's game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBbsXslRBx-E2-nhJdi446WkU0GXO-zfMpi7yyvkmBM9ChkaWiRb3l3Mz2YLA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQD-tLL4ytAoGo4HpTCc2OfOyaGGofwqUYlK4ZqpUbsjnHOXFs-TREJG-bS1XE"
         },
         {
-          "url": "https://www.allaboutthejersey.com/devils-game-previews/75312/game-preview-22-montreal-canadiens-new-jersey-devils",
-          "title": "Game Preview #22: Montreal Canadiens @ New Jersey Devils",
-          "publisher": "All About The Jersey",
+          "url": "https://www.koco.com/article/sports-former-oklahoma-city-thunder-players-return-paycom-center/74469804",
+          "title": "Former Oklahoma City Thunder players return to Paycom Center",
+          "publisher": "KOCO",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ9aXbjSseaz00TVSlyxPfVzvkNymAy0lHzmKYK-A_GtVsGFCqex-YRNQTxk4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRR2xFgVjvwawPOfIsD81cR8El2pJqX-R2OVlpbj_GjR1CsbTO86OH8h3HjPzQ"
         }
       ]
     }
