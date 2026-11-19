@@ -65,3 +65,15 @@ test('health lists StarCraftCo as a read-only account with separately tracked st
  assert.equal(source.authority,'reference_only');
  assert.equal(source.readStatus.status,'not_run');
 });
+
+test('Bubbles X Quick Card displays StarCraftCo source status without an owner badge',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const page=await readFile(new URL('../bubbles-x-connect.html',import.meta.url),'utf8');
+ const script=await readFile(new URL('../bubbles-public-x-status.js',import.meta.url),'utf8');
+ assert.match(page,/id="bubblesPublicXStarCraftStatus"/);
+ assert.match(page,/context\?account=StarCraftCo/);
+ assert.match(page,/read-only context/);
+ assert.match(script,/item\.account==='StarCraftCo'/);
+ assert.match(script,/scan not yet verified/);
+ assert.doesNotMatch(script,/innerHTML/);
+});
