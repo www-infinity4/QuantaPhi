@@ -111,16 +111,6 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Local sports','https://www.desmoinesregister.com/sports/'],
   ['News home','https://www.desmoinesregister.com/']
  ),icon('desmoinesregister.com')),
- entry('miller-meeks-ia1','Mariannette Miller-Meeks · IA-1','civic','Iowa civics','Neutral public-office information and the representative’s official updates. No election endorsements or targeted political advertising.','https://millermeeks.house.gov/',actions(
-  ['Official House office','https://millermeeks.house.gov/'],
-  ['House Clerk profile','https://clerk.house.gov/members/M001215'],
-  ['Congress.gov','https://www.congress.gov/']
- ),icon('millermeeks.house.gov'),{nonTargeted:true}),
- entry('zach-nunn-ia3','Zach Nunn · Iowa','civic','Iowa civics','Neutral directory entry for the member’s congressional office; the exact official route must be verified before publication.','https://nunn.house.gov/',actions(
-  ['Congressional office','https://nunn.house.gov/'],
-  ['Official House directory','https://www.house.gov/representatives'],
-  ['Congress.gov','https://www.congress.gov/']
- ),icon('nunn.house.gov'),{nonTargeted:true}),
  entry('hurley-surfwear','Hurley · surf and sport','retail','Clothing','Surf apparel and original brand collections.','https://www.hurley.com/',actions(
   ['Hurley shop','https://www.hurley.com/'],
   ['Collections','https://www.hurley.com/'],
