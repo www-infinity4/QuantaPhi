@@ -84,3 +84,21 @@ test('app forbids automatic network requests and unsafe DOM HTML rendering', () 
   assert.match(html, /Onion availability<\/small><strong>Not checked/);
   assert.match(html, /Dash \/ script claim<\/small><strong>Unverified/);
 });
+
+test('public-source tracing keeps mention dates and citations without inventing operator identity', () => {
+  const entries = [
+    C.record(evidence({ subject: 'XPlay reference', source: 'https://example.org/archive/2021', observedAt: '2021-12-05T14:23:54Z' })),
+    C.record(evidence({ subject: 'Unrelated case', source: 'https://example.org/other', observedAt: '2025-05-01T00:00:00Z' })),
+    C.record(evidence({ subject: 'Later XPlay mention', source: 'https://example.org/archive/2026', observedAt: '2026-11-19T12:00:00Z', kind: 'lead' }))
+  ];
+  const trace = C.trace(entries, 'xPlAy');
+  assert.equal(trace.entries.length, 2);
+  assert.equal(trace.sourceCount, 2);
+  assert.deepEqual(plain(trace.entries.map(r => r.subject)), ['XPlay reference', 'Later XPlay mention']);
+  assert.equal(trace.entries[0].observedAt, '2021-12-05T14:23:54.000Z');
+  assert.equal(trace.entries[1].kind, 'lead');
+  assert.equal(Object.hasOwn(trace, 'operator'), false);
+  assert.equal(C.trace(entries, 'not-present').entries.length, 0);
+  assert.throws(() => C.trace(entries, ' '), /Missing case phrase/);
+  assert.throws(() => C.trace(entries, 'x'.repeat(161)), /Invalid case phrase/);
+});
