@@ -3,17 +3,157 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T18:31:30.756892Z",
+  "checked_at": "2026-11-19T19:01:18.203571Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "invincible season 5",
-      "approx_searches": "1000+",
+      "query": "jpmorgan chase & co",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T18:40:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
+        "https://www.click2houston.com/news/local/2026/11/19/chase-bank-says-cyberattack-on-third-party-vendors-may-have-exposed-customer-information/",
+        "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGgc_4Dp78ZNvvrqX83P3XcY67R3s2aEMeaH4HYb_xaY_A2RIy6DRwGV4WQ3U",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
+          "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGgc_4Dp78ZNvvrqX83P3XcY67R3s2aEMeaH4HYb_xaY_A2RIy6DRwGV4WQ3U"
+        },
+        {
+          "url": "https://www.click2houston.com/news/local/2026/11/19/chase-bank-says-cyberattack-on-third-party-vendors-may-have-exposed-customer-information/",
+          "title": "Chase Bank says cyberattack on third party vendors may have exposed customer information",
+          "publisher": "Click2Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8n7NFE417OXyv55LWt2dFx2_1B5Gh7Qz_QNPWPi5MMt80w6T89ke4KnNm2xA"
+        },
+        {
+          "url": "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705",
+          "title": "JPMorganChase reports cyberattack on third-party service providers",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRELDP9seVz-BgEcGkl-RRf8a2She16bZT_3_EqT3sPXvxVqh12OFqyei3Y5FY"
+        }
+      ]
+    },
+    {
+      "query": "conroe high school",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T18:00:00Z",
+      "related_news_urls": [
+        "https://www.fox26houston.com/news/conroe-high-school-lockdown-texas-2026",
+        "https://www.khou.com/article/news/local/conroe-high-school-lockdown/285-aa02087e-532f-4f34-9160-d3ef37c37390",
+        "https://www.houstonchronicle.com/news/houston-texas/trending/article/conroe-isd-lockdown-schools-22540034.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnRAi3jH8kQxPnLusSEWoqLdeZ8HKxXOdaa606NrWLvmgox-hp5IF8k3QLL98",
+      "image_credit": "FOX 26 Houston",
+      "news": [
+        {
+          "url": "https://www.fox26houston.com/news/conroe-high-school-lockdown-texas-2026",
+          "title": "Conroe High School on lockdown following 'concerning phone call'",
+          "publisher": "FOX 26 Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnRAi3jH8kQxPnLusSEWoqLdeZ8HKxXOdaa606NrWLvmgox-hp5IF8k3QLL98"
+        },
+        {
+          "url": "https://www.khou.com/article/news/local/conroe-high-school-lockdown/285-aa02087e-532f-4f34-9160-d3ef37c37390",
+          "title": "Conroe High School placed on lockdown due to 'concerning phone call'",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQciKLooENngHd2OJDLTvU14JDXscA2Fa4L73nK5ZVqpuuwS7a4RLbv5F6bPmk"
+        },
+        {
+          "url": "https://www.houstonchronicle.com/news/houston-texas/trending/article/conroe-isd-lockdown-schools-22540034.php",
+          "title": "Conroe ISD locks down five campuses, law enforcement on scene",
+          "publisher": "Houston Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiSlcvXyePXYhgN30krfv9odxaHpJa69tWjRvNlgSPvfhivW5H-bA8Mw9QYaI"
+        }
+      ]
+    },
+    {
+      "query": "marlon jackson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T18:00:00Z",
+      "related_news_urls": [
+        "https://www.instagram.com/p/Df7lsKWSqP6/",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jackson-5-member-marlon-jackson-182453657.html",
+        "https://turnto10.com/news/entertainment/the-jackson-5s-marlon-jackson-reveals-stage-4-prostate-cancer-diagnosis"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOKzXKyuMbWxPbZPPnhj8bVSMPx-b9EZB2DIVhugmRM84UcnYk0CCptrliGJo",
+      "image_credit": "Instagram",
+      "news": [
+        {
+          "url": "https://www.instagram.com/p/Df7lsKWSqP6/",
+          "title": "#TSRPrayersUp: #MarlonJackson is opening up about his health journey. During an appearance on @thefarahshammaspodcast, the singer revealed that he’s been living with prostate cance",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOKzXKyuMbWxPbZPPnhj8bVSMPx-b9EZB2DIVhugmRM84UcnYk0CCptrliGJo"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jackson-5-member-marlon-jackson-182453657.html",
+          "title": "Jackson 5 Member Marlon Jackson Reveals Stage 4 Cancer Diagnosis: ‘God Got Me’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1lIpm549zHO05wbVRwALVv_sPwQ9IlmzpRdIWTP0_96fmDcI7cBXmPg3AOO8"
+        },
+        {
+          "url": "https://turnto10.com/news/entertainment/the-jackson-5s-marlon-jackson-reveals-stage-4-prostate-cancer-diagnosis",
+          "title": "The Jackson 5’s Marlon Jackson reveals stage 4 prostate cancer diagnosis",
+          "publisher": "WJAR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9E6zwZxLaFbmVXFjuDCX3dmZHeG8SOjHf-d8X-JWi-MQKyCknhyqv2YEfckE"
+        }
+      ]
+    },
+    {
+      "query": "ashton kutcher anthropic",
+      "approx_searches": "200+",
       "published_at": "2026-11-19T17:50:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/livecoverage/anthropic-ipo-stock-market-today-11-19-2026/card/vc-firm-founded-by-ashton-kutcher-set-to-make-billions-on-anthropic-ipo-gAr0Gx7ge3sIXEIs7ukH",
+        "https://variety.com/2026/biz/news/anthropic-largest-ipo-of-all-time-celebrity-investors-billions-1236951285/",
+        "https://www.inc.com/victoria-salves/celebrity-stand-to-gain-anthropic-stock-market-debut/91439736"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV0Rf4iGIHr_Te3WuOOwJxjrqvpi592skDsUTphSnZqQqlCFfnuYF3766yxAk",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/livecoverage/anthropic-ipo-stock-market-today-11-19-2026/card/vc-firm-founded-by-ashton-kutcher-set-to-make-billions-on-anthropic-ipo-gAr0Gx7ge3sIXEIs7ukH",
+          "title": "VC Firm Founded by Ashton Kutcher Scores on Anthropic",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV0Rf4iGIHr_Te3WuOOwJxjrqvpi592skDsUTphSnZqQqlCFfnuYF3766yxAk"
+        },
+        {
+          "url": "https://variety.com/2026/biz/news/anthropic-largest-ipo-of-all-time-celebrity-investors-billions-1236951285/",
+          "title": "Ashton Kutcher Celebrates Anthropic’s Massive IPO as Firm He Cofounded Rakes in Billions: ‘Kind of Cool When That Works Out’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMQKz9zgrVBQlBwtdzKRfumrFWgknS3Fp_1F5D5MI7kU-1toyZ6kOIAZ6yBQ0"
+        },
+        {
+          "url": "https://www.inc.com/victoria-salves/celebrity-stand-to-gain-anthropic-stock-market-debut/91439736",
+          "title": "3 Celebrities Stand to Gain From Anthropic's Stock-Market Debut. 1 Invested After an NBA Dinner",
+          "publisher": "Inc.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSev0EzcsW7FQtswqCCSj-qzAnkPQSjOgh-kBy5zfjvZ8P7_72NWj6NgOKg-ew"
+        }
+      ]
+    },
+    {
+      "query": "invincible",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T17:40:00Z",
       "related_news_urls": [
         "https://variety.com/2026/tv/news/invincible-season-5-release-date-teaser-1236952556/",
         "https://www.polygon.com/invincible-season-5-announcement-teaser/",
-        "https://www.imdb.com/news/ni66119264/?ref_=ttnw_art_perm"
+        "https://www.ign.com/articles/invincible-season-5-premiers-on-february-17-2026"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzYa6L7JDt8g4YftD2ZL0yypNfvQdpCevsX7woB8tWL-OeSWDf1trcCt2b8ms",
       "image_credit": "Variety",
@@ -33,32 +173,32 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqqww1VWt5Q12BzvvDbz38MLOr9VWZEVGSTPTJw_RaCn5wgQqpur8TbjUJ8A"
         },
         {
-          "url": "https://www.imdb.com/news/ni66119264/?ref_=ttnw_art_perm",
-          "title": "Invincible Season 5 Sets February 17, 2027 Premiere Date as Prime Video Releases New Teaser Featuring Mark Grayson and Damien Darkblood",
-          "publisher": "IMDb",
+          "url": "https://www.ign.com/articles/invincible-season-5-premiers-on-february-17-2026",
+          "title": "Invincible Season 5 Gets February 17 Premiere With Cheeky Trailer Hinting at More Viltrumite Shenanigans",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvbvDHPF36PmWxZA0DBsEO8Cv4bOuLRrg54pURM19luON2pe8PsA58E2jBhSg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkx5uJJWyqv_qLl76OF9BlMvY9xfEYLnQcB3JXQSRllGDnS2A8rmK9PDQoqjg"
         }
       ]
     },
     {
       "query": "dwts finale songs",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T17:40:00Z",
       "related_news_urls": [
-        "https://www.eonline.com/news/1438204/dancing-with-the-stars-season-35-finale-airing-live-coast-to-coast-nov-24",
+        "https://deadline.com/2026/11/dancing-with-the-stars-finale-live-across-the-country-1237226920/",
         "https://www.deseret.com/entertainment/2026/11/18/dancing-with-the-stars-semifinals-recap/",
         "https://www.upi.com/Entertainment_News/TV/2026/11/18/dwts-season-35-finalists/9371795016369/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDXMtU3m_LmAl5WAwTvwXDYUwt6J41MVcuLXbw9jkumyFYf-xTw_U485AKxGc",
-      "image_credit": "E! News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbivDRp5H3XRDrYMDLqRhNOs782l4D7WVs0StRR3ADFXK1ryz6bJhPVBWWBDI",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://www.eonline.com/news/1438204/dancing-with-the-stars-season-35-finale-airing-live-coast-to-coast-nov-24",
-          "title": "Dancing With the Stars Reveals Major Change for Season 35 Finale",
-          "publisher": "E! News",
+          "url": "https://deadline.com/2026/11/dancing-with-the-stars-finale-live-across-the-country-1237226920/",
+          "title": "‘Dancing With The Stars’ Finale Will Go Live Across The Country For The First Time",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDXMtU3m_LmAl5WAwTvwXDYUwt6J41MVcuLXbw9jkumyFYf-xTw_U485AKxGc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbivDRp5H3XRDrYMDLqRhNOs782l4D7WVs0StRR3ADFXK1ryz6bJhPVBWWBDI"
         },
         {
           "url": "https://www.deseret.com/entertainment/2026/11/18/dancing-with-the-stars-semifinals-recap/",
@@ -78,71 +218,36 @@
     },
     {
       "query": "rsm classic",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T17:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/lifestyle/articles/ludvig-aberg-leads-string-rsm-151439805.html",
-        "https://www.asiae.co.kr/en/article/2026111917454307637",
-        "https://ontapsportsnet.com/golf/ludvig-aberg-withdraws-2026-rsm-classic/"
+        "https://sports.yahoo.com/articles/pga-tour-privileges-line-former-181121257.html",
+        "https://www.hitc.com/ludvig-aberg-withdraws-from-latest-pga-tour-event-at-last-minute-and-confirms-why/",
+        "https://cwibc.co.id/en/aberg-lee-rsm-classic-withdrawals"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzQ50G-LgyPcCa12VKxAA1gy31CxFdjtE-wUNoEKqnj2AE1p-d2fbY4UmFSaw",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRchsD4NaVR-bLRcCOi2CILJ0KdOyp3Yq4CQOyv35hqexrpVp9-pDfsVK8CbeM",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.yahoo.com/lifestyle/articles/ludvig-aberg-leads-string-rsm-151439805.html",
-          "title": "Ludvig Aberg Leads String Of RSM Classic Withdrawals",
-          "publisher": "Yahoo",
+          "url": "https://sports.yahoo.com/articles/pga-tour-privileges-line-former-181121257.html",
+          "title": "With PGA Tour privileges on the line, this former winner had to WD from RSM Classic",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzQ50G-LgyPcCa12VKxAA1gy31CxFdjtE-wUNoEKqnj2AE1p-d2fbY4UmFSaw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRchsD4NaVR-bLRcCOi2CILJ0KdOyp3Yq4CQOyv35hqexrpVp9-pDfsVK8CbeM"
         },
         {
-          "url": "https://www.asiae.co.kr/en/article/2026111917454307637",
-          "title": "Two-Time PGA Tour Winner Lee Kyounghoon Withdraws Just Before RSM Classic Begins",
-          "publisher": "아시아경제",
+          "url": "https://www.hitc.com/ludvig-aberg-withdraws-from-latest-pga-tour-event-at-last-minute-and-confirms-why/",
+          "title": "Ludvig Aberg withdraws from latest PGA Tour event at last minute and confirms why",
+          "publisher": "HITC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWdYamCKA7XS2jy5s83SNxn7y-7KQBZph-rXdHbGGtdtdDn_NBQmIS3_VAmRQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxutvHRuxkZYwLFT4vvmnUTazyDU90rV-k-cn_Cj9NzbnrWWfv6fNrstjYkGc"
         },
         {
-          "url": "https://ontapsportsnet.com/golf/ludvig-aberg-withdraws-2026-rsm-classic/",
-          "title": "Ludvig Aberg Withdraws from 2026 RSM Classic",
-          "publisher": "On Tap Sports Net",
+          "url": "https://cwibc.co.id/en/aberg-lee-rsm-classic-withdrawals",
+          "title": "Aberg and Lee Withdraw From RSM Classic After Injuries",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPdR1zMciCYpiDo6bvJ4B2aaylR_oKbQzZDEulI5ErsEcVSBHRDZD6HI9OgC0"
-        }
-      ]
-    },
-    {
-      "query": "al gore",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-19T17:30:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/climate-environment/2026/11/19/bipartisan-permitting-reform-bill-explained/",
-        "https://yaleclimateconnections.org/2026/11/baaja-whos-in-favor-and-whos-opposed/",
-        "https://www.axios.com/2026/11/19/energy-permitting-bill-senate-politics"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQftahMLecf_uEpnxN6rnfi186xGbvnBRhvuqXsSjgy7Mvsl4AyhPaUIvosNDg",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/climate-environment/2026/11/19/bipartisan-permitting-reform-bill-explained/",
-          "title": "Congress may soon pass the biggest environmental bill in decades. Here’s why.",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQftahMLecf_uEpnxN6rnfi186xGbvnBRhvuqXsSjgy7Mvsl4AyhPaUIvosNDg"
-        },
-        {
-          "url": "https://yaleclimateconnections.org/2026/11/baaja-whos-in-favor-and-whos-opposed/",
-          "title": "BAAJA: Who’s in favor and who’s opposed?",
-          "publisher": "Yale Climate Connections",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfGuPoJ0KGYqcIspHTCnNMAqwdQk6DfPhp-cB7ZTU2TXwaDTnPS6Q69xPl4oM"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/19/energy-permitting-bill-senate-politics",
-          "title": "Why the Senate permitting bill might become law",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUdw9MNk1RzPcY0klWW1L4iQ8Mm4xFUrfpINbQooZ_9t5GQWiZFAfT6BCmfpI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_FJxhilg-CEaAR43b4TRsXF1Z0XhHoXutn_5SfTW2e6rV8AXRHEiK9OMl0h0"
         }
       ]
     },
@@ -183,7 +288,7 @@
     },
     {
       "query": "jazz fest 2027 lineup",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-19T17:00:00Z",
       "related_news_urls": [
         "https://www.wwltv.com/article/entertainment/events/festivals/jazz-fest-lineup-released-earlier-than-usual-heres-whos-playing/289-e6b78b1f-ce9a-4c1d-b8af-73b2020affca",
@@ -212,7 +317,7 @@
           "title": "Foo Fighters, Noah Kahan, The Who set to headline Jazz Fest. See the full lineup",
           "publisher": "WDSU",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz0i1K-MDiojZLTBufrAkO_qSWtG2ddvlp1LxLVxynWsaphsPo1LD2v5CfkBU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjPOZe5K2DsSpQQzBUDTGlaeucnR4WycXZUtOxi90YZ1PpoqXYW-qML8PW5JE"
         }
       ]
     },
@@ -221,138 +326,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-19T17:00:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-adds-54-billion-230223184.html",
-        "https://www.barchart.com/story/news/8920669/spacex-stock-is-down-nearly-40-from-its-post-ipo-highs-but-nvidia-is-still-loading-up",
-        "https://news.futunn.com/en/post/1005066461/the-economics-of-spacex-one-starship-generates-400-million-in"
+        "https://www.cnbc.com/video/2026/11/19/dario-amodei-anthropic-enjoying-working-with-spacex.html",
+        "https://finance.yahoo.com/video/being-bearish-on-anthropic-1-trillion-compute-bill-and-nvidia-turmoil-172453054.html",
+        "https://www.wsj.com/livecoverage/anthropic-ipo-stock-market-today-11-19-2026/card/sizing-up-the-mega-ipos-anthropic-vs-spacex-x0GQcPMzF860nR8HHf7g"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw4xQlmBPyPO-mZlCIHzaCt8rjAUUmVU0oT7WTe3SvVgcxuRefw5ny5BE_yw0",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-adds-54-billion-230223184.html",
-          "title": "SpaceX Stock Adds $54 Billion Amid Viral AI in Space Discussions",
+          "url": "https://www.cnbc.com/video/2026/11/19/dario-amodei-anthropic-enjoying-working-with-spacex.html",
+          "title": "Anthropic is ‘enjoying’ working with SpaceX, says CEO Dario Amodei",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw4xQlmBPyPO-mZlCIHzaCt8rjAUUmVU0oT7WTe3SvVgcxuRefw5ny5BE_yw0"
+        },
+        {
+          "url": "https://finance.yahoo.com/video/being-bearish-on-anthropic-1-trillion-compute-bill-and-nvidia-turmoil-172453054.html",
+          "title": "Being Bearish on Anthropic: $1 Trillion Compute Bill and Nvidia turmoil",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_pe507hRySbq-8GkQWyQ0vaZ6il3036u59BY72WdSc7vZ58xzReOCdud2Ws"
         },
         {
-          "url": "https://www.barchart.com/story/news/8920669/spacex-stock-is-down-nearly-40-from-its-post-ipo-highs-but-nvidia-is-still-loading-up",
-          "title": "SpaceX Stock Is Down Nearly 40% from Its Post-IPO Highs but Nvidia Is Still Loading Up",
-          "publisher": "Barchart.com",
+          "url": "https://www.wsj.com/livecoverage/anthropic-ipo-stock-market-today-11-19-2026/card/sizing-up-the-mega-ipos-anthropic-vs-spacex-x0GQcPMzF860nR8HHf7g",
+          "title": "Sizing Up the Mega-IPOs: Anthropic vs. SpaceX",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_GLRlqNHC8g-yd55qiPc1cP4Dj-YRwYdRhqzRjN68C8kEmFmhIO4IXvijDpo"
-        },
-        {
-          "url": "https://news.futunn.com/en/post/1005066461/the-economics-of-spacex-one-starship-generates-400-million-in",
-          "title": "The Economics of SpaceX: One Starship Generates $400 Million in Revenue, with a Payback Period of Under 20 Weeks—Far Faster Than AI Cloud Infrastructure!",
-          "publisher": "富途牛牛",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST2Z4xmER-thyiZBdRsJ_PrUQ5lm3bJGxRgab2ZFDKjEIVMgpaOe4YVTqU3ag"
-        }
-      ]
-    },
-    {
-      "query": "roaring kitty",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T17:00:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/articles/gamestop-stock-roaring-kitty-6277bb9f",
-        "https://www.benzinga.com/news/entertainment/26/11/63447813/roaring-kitty-returns-gamestop-tops-list-of-stocks-primed-to-pop",
-        "https://seekingalpha.com/news/4674838-the-return-of-roaring-kitty-sends-nintendo-and-gamestop-higher"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTogp2AH1WoBLs4q0p4TM4PQaM0u_tOdhoXcYvdXLpjGd9XE7dhG9xoxK_YyEQ",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/articles/gamestop-stock-roaring-kitty-6277bb9f",
-          "title": "Roaring Kitty Is Back. Can He Spark Another GameStop Stock Frenzy?",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTogp2AH1WoBLs4q0p4TM4PQaM0u_tOdhoXcYvdXLpjGd9XE7dhG9xoxK_YyEQ"
-        },
-        {
-          "url": "https://www.benzinga.com/news/entertainment/26/11/63447813/roaring-kitty-returns-gamestop-tops-list-of-stocks-primed-to-pop",
-          "title": "Roaring Kitty Returns: GameStop Tops List of Stocks Primed to Pop",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcgqv_qWss6uSZ62jvdVQ5uA9Yw0bieYZ1Krhr3afCdkPJFBSoJH_otCgPNGs"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4674838-the-return-of-roaring-kitty-sends-nintendo-and-gamestop-higher",
-          "title": "The return of Roaring Kitty sends Nintendo and GameStop higher (NTDOY:OTCMKTS)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbdC8xeMtCdZvVjhp6InU7WE-xRGIGPensmHccNMuM6WrLLOfk-oS-qV70zyw"
-        }
-      ]
-    },
-    {
-      "query": "riley moss",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T16:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50532392/sources-broncos-sign-cb-riley-moss-four-year-extension",
-        "https://sports.yahoo.com/articles/broncos-agree-4-67-million-173316135.html",
-        "https://www.usatoday.com/story/sports/nfl/broncos/2026/11/19/riley-moss-contract-details-broncos/92861422007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ1tXHx7M0xkF15xguWA2z2_V7YwPXVYiXJeVZcfR8Zerjx4KdOVaYq7yTSW0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50532392/sources-broncos-sign-cb-riley-moss-four-year-extension",
-          "title": "Sources -- Broncos sign CB Riley Moss to four-year extension",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ1tXHx7M0xkF15xguWA2z2_V7YwPXVYiXJeVZcfR8Zerjx4KdOVaYq7yTSW0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/broncos-agree-4-67-million-173316135.html",
-          "title": "Broncos agree to a 4-year, $67 million extension with cornerback Riley Moss, AP source says",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPG041TGaZoVKW9CKT5dg06BELSlXnFk3HCRwDYlHq1JmHMPCX5q_xH8Pw8BU"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/broncos/2026/11/19/riley-moss-contract-details-broncos/92861422007/",
-          "title": "Broncos sign CB Riley Moss to multiyear extension. See the details",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGKbV50i8wi5A_Bdc4T-0TCxQ2MBB6S6kdBz7WJGowhVWAz9Mbxtxblrz452I"
-        }
-      ]
-    },
-    {
-      "query": "brett rypien",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T16:50:00Z",
-      "related_news_urls": [
-        "https://www.silverandblackpride.com/las-vegas-raiders-roster/146507/raiders-brett-rypien-practice-squad-quarterback",
-        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/19/nfl-news-raiders-sign-ex-broncos-backup-qb-brett-rypien/92826288007/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/raiders-sign-qb-brett-rypien-to-the-practice-squad"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnpU40t1dxoRUCKIajXpXcnfYREIQey9SO7E67ZclOfdbkTzlN7C2s9q3rr3M",
-      "image_credit": "Silver And Black Pride",
-      "news": [
-        {
-          "url": "https://www.silverandblackpride.com/las-vegas-raiders-roster/146507/raiders-brett-rypien-practice-squad-quarterback",
-          "title": "Raiders roster 2026: Get to know Brett Rypien",
-          "publisher": "Silver And Black Pride",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnpU40t1dxoRUCKIajXpXcnfYREIQey9SO7E67ZclOfdbkTzlN7C2s9q3rr3M"
-        },
-        {
-          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/19/nfl-news-raiders-sign-ex-broncos-backup-qb-brett-rypien/92826288007/",
-          "title": "Ex-Broncos quarterback signs with division rival Raiders",
-          "publisher": "Broncos Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDvx9AZm7t79B5yMc4K8_sBb6bNrCDLnljObv098GuL-OJTjr727Isx7Y_q-Q"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/raiders-sign-qb-brett-rypien-to-the-practice-squad",
-          "title": "Raiders sign QB Brett Rypien to the practice squad",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwnPJRhqWHKTa2j4mjq9s4LEDWuXMeUnjjNApg50EbZKjIQjk8ZjBCPoE2Z2I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl91pGPvQYzrNptPeJ3eYWqvoEgXtb0UrwGstE9bziFVtnuxLPZxEBUdIfRQM"
         }
       ]
     }
