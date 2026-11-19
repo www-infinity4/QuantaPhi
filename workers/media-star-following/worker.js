@@ -360,6 +360,26 @@ async function handle(request,env){
     GROUP BY h.x_user_id,h.display_name,h.handle ORDER BY CASE WHEN h.handle='dotkrueger' THEN 0 ELSE 1 END,lower(h.handle) LIMIT 12`).all();
   return out({featured:(h.results||[]).map(x=>({...x,episodes:Number(x.episodes||0),archiveUrl:x.archiveUrl||null})),discoveryLinksNotReplays:true});
  }
+
+ // Public curator feed is intentionally restricted to this one approved host.
+ // No owner authentication, follows or private replay history are exposed.
+ if(path==='/v1/curated/asteroid'&&request.method==='GET'){
+  try{
+   const records=await env.DB.prepare(`SELECT e.space_id AS id,e.title,e.space_url AS source,
+    e.started_at AS date,e.duration_seconds AS durationSeconds,e.availability
+    FROM space_episodes e JOIN space_hosts h ON h.x_user_id=e.host_user_id
+    WHERE lower(h.handle)='a5t3r0ld' AND e.availability IN ('indexed','verified_replay')
+    ORDER BY e.started_at DESC,e.space_id LIMIT 500`).all();
+   const episodes=(records.results||[]).map(row=>{
+    const seconds=Math.max(0,Number(row.durationSeconds)||0);
+    const duration=seconds?[Math.floor(seconds/3600),String(Math.floor(seconds%3600/60)).padStart(2,'0'),String(seconds%60).padStart(2,'0')].join(':'):'';
+    return {id:row.id,title:row.title,source:row.source,date:row.date||'',duration,
+      handle:'A5T3R0lD',availability:row.availability};
+   });
+   return out({ok:true,handle:'A5T3R0lD',episodes,playbackVerified:false,archiveComplete:false});
+  }catch(err){return out({ok:false,error:'curated_catalog_unavailable'},503)}
+ }
+
  try{
   const owner=await account(request,env);
   if(path==='/v1/x/oauth/start'&&request.method==='POST'){const body=await request.json().catch(()=>({}));return out(await xoBegin(env,owner,{write:body?.write===true}));}
