@@ -3,41 +3,181 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T15:01:38.543442Z",
+  "checked_at": "2026-11-19T15:31:27.138801Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "apple black friday",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T15:10:00Z",
+      "related_news_urls": [
+        "https://shopping.yahoo.com/deals/article/amazon-is-selling-apple-airpods-pro-3-earbuds-for-a-near-all-time-low-of-179-plus-10-more-fab-deals-222300999.html",
+        "https://www.cnn.com/cnn-underscored/deals/apple-black-friday-deals-2026-11-19",
+        "https://www.macrumors.com/2026/11/14/early-apple-black-friday-deals-2/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTOAIZTJSISCqGFzG0D_giTsJCd0suOrqTKxwF1WI96z1k-nex8VudNytM1U",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://shopping.yahoo.com/deals/article/amazon-is-selling-apple-airpods-pro-3-earbuds-for-a-near-all-time-low-of-179-plus-10-more-fab-deals-222300999.html",
+          "title": "Amazon is selling Apple AirPods Pro 3 earbuds for a near-all-time low of $179 (plus 10 more fab deals)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTOAIZTJSISCqGFzG0D_giTsJCd0suOrqTKxwF1WI96z1k-nex8VudNytM1U"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/apple-black-friday-deals-2026-11-19",
+          "title": "Black Friday prices are officially live on Apple Watches, AirTags, MacBooks and more",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSMhrr7odwVddeRYaqLRngj8GihSyFhl9Hx9nSA15lzrHWwn4OoODRQfD6Kk"
+        },
+        {
+          "url": "https://www.macrumors.com/2026/11/14/early-apple-black-friday-deals-2/",
+          "title": "Apple Black Friday Starts Early: Save on Apple Watch, MacBook Air, and More",
+          "publisher": "MacRumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLOhpnS-YWa75RTGCva8mv1HLNefiHAhLEk_pAEbTkUxXBNczl40aFoKAs7I8"
+        }
+      ]
+    },
+    {
+      "query": "robinhood",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T14:50:00Z",
+      "related_news_urls": [
+        "https://www.trefis.com/stock/hood/articles/625195/the-single-most-important-metric-for-robinhood-stock/2026-11-16",
+        "https://www.tradingview.com/news/stockstory:3f97fbf47094b:0-why-robinhood-stock-is-trading-lower-today/",
+        "https://coinpedia.org/price-analysis/hood-stock-price-crashes-7-35-as-robinhood-insider-fraud-case-adds-to-selling-pressure/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBob7IDfoc0u5aNxegieIginov6MBrnpdhK3jAYTJTFSMFolTbOp4X03qtC68",
+      "image_credit": "Trefis",
+      "news": [
+        {
+          "url": "https://www.trefis.com/stock/hood/articles/625195/the-single-most-important-metric-for-robinhood-stock/2026-11-16",
+          "title": "The Single Most Important Metric For Robinhood Stock",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBob7IDfoc0u5aNxegieIginov6MBrnpdhK3jAYTJTFSMFolTbOp4X03qtC68"
+        },
+        {
+          "url": "https://www.tradingview.com/news/stockstory:3f97fbf47094b:0-why-robinhood-stock-is-trading-lower-today/",
+          "title": "Why Robinhood stock is trading lower today",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhgysbLdf7gNryHN9Smjcl5vhxCdE8-4mlv7q6myFTFB0352NU-FR2BbS1rvA"
+        },
+        {
+          "url": "https://coinpedia.org/price-analysis/hood-stock-price-crashes-7-35-as-robinhood-insider-fraud-case-adds-to-selling-pressure/",
+          "title": "HOOD Stock Price Crashes 7.35% as Robinhood Insider Fraud Case Adds to Selling Pressure",
+          "publisher": "Coinpedia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4YEK2VrU-Hf6_oZTOLyP2gH9H426O-4ogx4Eh2kShCefb4gy_QX-KCQl_p0w"
+        }
+      ]
+    },
+    {
+      "query": "the nightingale movie",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T14:50:00Z",
+      "related_news_urls": [
+        "https://www.vanityfair.com/story/the-nightingale-exclusive-first-look-images-dakota-elle-fanning-kristin-hannah",
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/nightingale-trailer-dakota-elle-fanning-143822548.html",
+        "https://www.womansworld.com/entertainment/books/reeses-book-club-leaks-kristin-hannahs-the-nightingale-movie-cover"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc",
+      "image_credit": "Vanity Fair",
+      "news": [
+        {
+          "url": "https://www.vanityfair.com/story/the-nightingale-exclusive-first-look-images-dakota-elle-fanning-kristin-hannah",
+          "title": "‘The Nightingale’ First Look Starring Dakota and Elle Fanning in Their First Film As Sisters: “It Certainly Brought Us Closer”",
+          "publisher": "Vanity Fair",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/nightingale-trailer-dakota-elle-fanning-143822548.html",
+          "title": "‘The Nightingale’ Trailer: Dakota and Elle Fanning Share the Screen for the First Time and Play Sisters During WWII in Adaptation of Popular Book",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiiPtal3ipcL_kZxmO0C_gl1O0g0uPWGaoA-Atb6G1ebl3WpAeq7eJXPeJJ_8"
+        },
+        {
+          "url": "https://www.womansworld.com/entertainment/books/reeses-book-club-leaks-kristin-hannahs-the-nightingale-movie-cover",
+          "title": "Reese’s Book Club Reveals Kristin Hannah’s ‘The Nightingale’ Movie Cover",
+          "publisher": "Woman's World",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77_CRdO-kBhOke7tF6hK1xxCswddKrHl7ExxAlgBz6LisXc_PKRT_DRYtZGY"
+        }
+      ]
+    },
     {
       "query": "lululemon black friday",
       "approx_searches": "500+",
       "published_at": "2026-11-19T14:40:00Z",
       "related_news_urls": [
-        "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/",
-        "https://www.runnersworld.com/gear/a74377121/lululemon-black-friday-sale-2026/",
-        "https://www.menshealth.com/fitness/a74466918/lululemon-black-friday-sale-2026/"
+        "https://www.today.com/shop/lululemon-black-friday-sale-2026-rcna607526",
+        "https://www.goodhousekeeping.com/what-to-buy/clothing/a74443063/lululemon-black-friday-sale-2026/",
+        "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhLrZHZfK0W9okNOjby43Y7nHz6Z6CAPU9YDEVXX2WuysJx-8wZ9lKj1h1ceE",
-      "image_credit": "Cosmopolitan",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxi0dvJ_AJTZlwmq9AcR5Ee1eushhLES1vrBZlWzMwL-A8cYzRwfxdgFvdY0",
+      "image_credit": "TODAY.com",
       "news": [
+        {
+          "url": "https://www.today.com/shop/lululemon-black-friday-sale-2026-rcna607526",
+          "title": "Yes, Lululemon Dropped Its Black Friday Sale Early — Our Picks Start at $9",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxi0dvJ_AJTZlwmq9AcR5Ee1eushhLES1vrBZlWzMwL-A8cYzRwfxdgFvdY0"
+        },
+        {
+          "url": "https://www.goodhousekeeping.com/what-to-buy/clothing/a74443063/lululemon-black-friday-sale-2026/",
+          "title": "Lululemon’s Biggest Sale of the Year Just Started—These 20 Picks Made Our Wish List",
+          "publisher": "Good Housekeeping",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtZfqi9XrQh7w1V6gYLgelngZdhcyMcIc_3WPGamC_e9qWwaUTzLhFNTvZvuM"
+        },
         {
           "url": "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/",
           "title": "I’ve Been Wearing Lululemon for Over a Decade—These Are the Black Friday Deals I’d Shop First",
           "publisher": "Cosmopolitan",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhLrZHZfK0W9okNOjby43Y7nHz6Z6CAPU9YDEVXX2WuysJx-8wZ9lKj1h1ceE"
+        }
+      ]
+    },
+    {
+      "query": "common",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T14:40:00Z",
+      "related_news_urls": [
+        "https://ua.news/en/dovkolo-svitu/u-norvegiyi-doslidzhennia-ne-pidtverdilo-koristi-dvokh-preparativ-pid-chas-pologiv-news-medical",
+        "https://medicalxpress.com/news/2026-11-benefit-drugs-spontaneous-birth-induction.html",
+        "https://www.space.com/space-exploration/satellites/nonprofit-common-space-will-launch-1st-humanitarian-satellite-in-2027"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBNI9ghs8uo7npwxkmO-8BRBRP3Efg2v0XY6v_YbcxGe20E6CKRfMzKxbYc9Y",
+      "image_credit": "UA.NEWS",
+      "news": [
+        {
+          "url": "https://ua.news/en/dovkolo-svitu/u-norvegiyi-doslidzhennia-ne-pidtverdilo-koristi-dvokh-preparativ-pid-chas-pologiv-news-medical",
+          "title": "Norwegian study found no benefit from two drugs during labour — News-Medical",
+          "publisher": "UA.NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBNI9ghs8uo7npwxkmO-8BRBRP3Efg2v0XY6v_YbcxGe20E6CKRfMzKxbYc9Y"
         },
         {
-          "url": "https://www.runnersworld.com/gear/a74377121/lululemon-black-friday-sale-2026/",
-          "title": "lululemon’s Black Friday Finds Include Cold-Weather Running Gear Starting at $39",
-          "publisher": "Runner's World",
+          "url": "https://medicalxpress.com/news/2026-11-benefit-drugs-spontaneous-birth-induction.html",
+          "title": "No clear benefit from two drugs intended to increase spontaneous birth after induction in first-time moms",
+          "publisher": "Medical Xpress",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp61Hv188PAPayYPz-2_HkkwPiKLmjleoZrI-zvpW6Gk3HiTNOW1-kWfSxZYs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLNThrVNir9Qzdk4WtCebLViXaN4kxxrRjAmJUTKPuyAQGeufwTx3W9DCx_3A"
         },
         {
-          "url": "https://www.menshealth.com/fitness/a74466918/lululemon-black-friday-sale-2026/",
-          "title": "Our Favorite Lululemon Lightweight Running Shorts Are 43% Off for Black Friday",
-          "publisher": "Men's Health",
+          "url": "https://www.space.com/space-exploration/satellites/nonprofit-common-space-will-launch-1st-humanitarian-satellite-in-2027",
+          "title": "Nonprofit Common Space will launch 1st 'humanitarian satellite' in 2027",
+          "publisher": "Space",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQul3xvSvhaH7flkXJttLWU4-t0oQcEWaNG0qAwoZUwvDdSbgKhb0b-emANJCQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToixar2M6ssPtgQBuv-WYlw8AM0H-OLPtNaBSPzLnRbbvPFvXOqOM3mGXccWY"
         }
       ]
     },
@@ -82,8 +222,8 @@
       "published_at": "2026-11-19T14:30:00Z",
       "related_news_urls": [
         "https://www.cbsnews.com/news/kurt-van-dyke-killed-costa-rica-girlfriend-arrest/",
-        "https://www.yahoo.com/news/videos/surf-legend-kurt-van-dykes-012320082.html",
-        "https://www.foxnews.com/us/surfing-legend-found-stabbed-death-under-bed-girlfriend-accused-letting-thugs-wipe-him-out"
+        "https://www.newser.com/story/400280/cops-make-shocking-arrest-in-surf-legends-murder.html",
+        "https://www.yahoo.com/news/videos/surf-legend-kurt-van-dykes-012320082.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqZJhBA1KDInuOYyJ5wymhVAKgAnLxWhuFixmfUiPIKAs2oKVym5DYS-vNgU",
       "image_credit": "CBS News",
@@ -96,18 +236,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqZJhBA1KDInuOYyJ5wymhVAKgAnLxWhuFixmfUiPIKAs2oKVym5DYS-vNgU"
         },
         {
+          "url": "https://www.newser.com/story/400280/cops-make-shocking-arrest-in-surf-legends-murder.html",
+          "title": "Cops Make 'Shocking' Arrest in Surf Legend's Murder",
+          "publisher": "Newser",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsL2CN1snSA87jPNWVP0PEHY8Ky4EpRwj2LuiVZ8BebGz8gvUTpPKOxXI_EEU"
+        },
+        {
           "url": "https://www.yahoo.com/news/videos/surf-legend-kurt-van-dykes-012320082.html",
           "title": "American surfer Kurt Van Dyke's girlfriend and another man arrested for his murder",
           "publisher": "Yahoo",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRh2koX05thbNh0g-DLMHZmmfiwEHM4rymdridNRzWCV2poqsdlzv5tDOttuM"
-        },
-        {
-          "url": "https://www.foxnews.com/us/surfing-legend-found-stabbed-death-under-bed-girlfriend-accused-letting-thugs-wipe-him-out",
-          "title": "Surfing legend found stabbed to death under bed – girlfriend accused of letting thugs in to wipe him out",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPkbaGs4zMbK-GNqQ_Kp1b6KAsGH5lKweR1BjEjeSexlcsmIA_53EEYtIWqQM"
         }
       ]
     },
@@ -117,8 +257,8 @@
       "published_at": "2026-11-19T14:20:00Z",
       "related_news_urls": [
         "https://apnews.com/article/thanksgiving-prices-turkey-costs-diesel-dinner-5c5f6f4fd28ce2ff3cbfb1398cf28fd0",
-        "https://www.fb.org/intel/markets/thanksgiving-dinner-cost-ticks-upward-in-2026",
-        "https://www.dispatch.com/story/grocery/2026/11/19/what-thanksgiving-staples-cost-at-columbus-area-grocery-stores-in-2026/92841723007/"
+        "https://thehill.com/business/6229798-turkey-inflation-holiday-costs/",
+        "https://www.fb.org/intel/markets/thanksgiving-dinner-cost-ticks-upward-in-2026"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4r7c-zoKudEUC1eu9uNIBpp3V5VTT69ZVLb-lHrNFUABIKkV6alLYQnTBCk",
       "image_credit": "AP News",
@@ -131,53 +271,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4r7c-zoKudEUC1eu9uNIBpp3V5VTT69ZVLb-lHrNFUABIKkV6alLYQnTBCk"
         },
         {
+          "url": "https://thehill.com/business/6229798-turkey-inflation-holiday-costs/",
+          "title": "Thanksgiving dinner will come with higher price tag: Research",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTY0gvICl52EYhSYFxooROWpkGGp4ayjv3-00gvyCr78SWb9_Dn7ij7bCILsE"
+        },
+        {
           "url": "https://www.fb.org/intel/markets/thanksgiving-dinner-cost-ticks-upward-in-2026",
           "title": "Thanksgiving Dinner Cost Ticks Upward in 2026",
           "publisher": "American Farm Bureau Federation",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzsfjR9s0oq88XOiVT4HSTM-eyB623gPl51vy_wgn9fKw3sSYjYn20-dvlQzA"
-        },
-        {
-          "url": "https://www.dispatch.com/story/grocery/2026/11/19/what-thanksgiving-staples-cost-at-columbus-area-grocery-stores-in-2026/92841723007/",
-          "title": "Turkey is a pricier this year. How about the rest of your holiday menu?",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKA7dHMjz-4MwO4mrQzDhoVl0wHgIxakDn7XwziiIUcVeydzTVeSEBiAyi0iw"
-        }
-      ]
-    },
-    {
-      "query": "bert kreischer",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T14:20:00Z",
-      "related_news_urls": [
-        "https://www.masslive.com/centralmass/2026/11/comic-says-hell-fund-college-for-child-of-woman-who-had-contractions-at-his-worcester-show.html",
-        "https://hoodline.com/2026/11/bert-kreischer-s-college-fund-pledge-after-worcester-show-has-not-been-confirmed-as-an-account/",
-        "https://dailyvoice.com/article/bert-kreischer-promises-to-pay-for-babys-college-after-mom-has-contractions-at-mass-show/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK-IOTOGBHEJ14sBAEtYCT5OiAZbCpVxMhZ3ynMECzTf_-xJ6NVBIwosoXpgM",
-      "image_credit": "MassLive",
-      "news": [
-        {
-          "url": "https://www.masslive.com/centralmass/2026/11/comic-says-hell-fund-college-for-child-of-woman-who-had-contractions-at-his-worcester-show.html",
-          "title": "Mass. woman's contractions at Worcester comedy show might get her kid's college paid",
-          "publisher": "MassLive",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK-IOTOGBHEJ14sBAEtYCT5OiAZbCpVxMhZ3ynMECzTf_-xJ6NVBIwosoXpgM"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/bert-kreischer-s-college-fund-pledge-after-worcester-show-has-not-been-confirmed-as-an-account/",
-          "title": "Framingham Woman's Contractions at Kreischer Show in Worcester",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO3-bk97qWESAW3faohGnK0aYcqyXiiDDcidDgcPsa9AOS0p3DL1krKezehBw"
-        },
-        {
-          "url": "https://dailyvoice.com/article/bert-kreischer-promises-to-pay-for-babys-college-after-mom-has-contractions-at-mass-show/",
-          "title": "Bert Kreischer To Pay For Baby's College After Mom Has Contractions Laughing At Worcester Show",
-          "publisher": "DailyVoice.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9Wloh4CXhiirR_VsmdWkudnVbUYNLVUwUzR6zRwlf8aRAaxNfBQr05_1ayWM"
         }
       ]
     },
@@ -217,142 +322,37 @@
       ]
     },
     {
-      "query": "corte suprema",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T14:10:00Z",
-      "related_news_urls": [
-        "https://www.dw.com/es/trump-pide-al-supremo-bloquear-fallo-que-restituye-protecci%C3%B3n-migratoria-a-cientos-de-miles-de-venezolanos/a-79986699",
-        "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/inmigracion/video/unos-1-800-inmigrantes-detenidos-estan-entre-los-afectados-por-la-disputa-judicial-sobre-el-tps-tmvo13246052",
-        "https://www.lmtonline.com/news/article/gobierno-de-trump-presenta-apelaci-n-ante-corte-22538201.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGZVijLJCGFicoFv_bi3lf3aVRiqS1fI7w_EHpgs94gIkKR-DJ8mbVjidFiL4",
-      "image_credit": "DW.com",
-      "news": [
-        {
-          "url": "https://www.dw.com/es/trump-pide-al-supremo-bloquear-fallo-que-restituye-protecci%C3%B3n-migratoria-a-cientos-de-miles-de-venezolanos/a-79986699",
-          "title": "Trump solicita a la Corte frenar restitución del TPS para miles de venezolanos",
-          "publisher": "DW.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGZVijLJCGFicoFv_bi3lf3aVRiqS1fI7w_EHpgs94gIkKR-DJ8mbVjidFiL4"
-        },
-        {
-          "url": "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/inmigracion/video/unos-1-800-inmigrantes-detenidos-estan-entre-los-afectados-por-la-disputa-judicial-sobre-el-tps-tmvo13246052",
-          "title": "Unos 1,800 inmigrantes detenidos están entre los afectados por la disputa judicial sobre el TPS",
-          "publisher": "Telemundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4VNNrD7ziXiwBS9yejH3yWRy4n1l2KBJ9cr7xe8ofahVQeDKwB7htDJvecmw"
-        },
-        {
-          "url": "https://www.lmtonline.com/news/article/gobierno-de-trump-presenta-apelaci-n-ante-corte-22538201.php",
-          "title": "Gobierno de Trump presenta apelación ante Corte Suprema por protecciones a migrantes venezolanos",
-          "publisher": "Laredo Morning Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBnHzd8duJE4OQGKR5pGCP39quuC0FbGEeBymT1xob8dgh2sx_MB9J5hj6Utw"
-        }
-      ]
-    },
-    {
-      "query": "meg ryan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T14:10:00Z",
-      "related_news_urls": [
-        "https://www.vogue.com/slideshow/vintage-pictures-of-meg-ryan",
-        "https://www.upi.com/Entertainment_News/Photos/Meg-Ryan-turns-65-a-look-back/12875/",
-        "https://www.thelist.com/2321483/meg-ryan-grew-out-signature-blond-bob-still-stunner-65/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1_7XgBbM3Edi9OwhKp9g2vO1FmcYohAuLMeiH-VxXHyHO8PEIkLps1_oJm88",
-      "image_credit": "Vogue",
-      "news": [
-        {
-          "url": "https://www.vogue.com/slideshow/vintage-pictures-of-meg-ryan",
-          "title": "Happy Birthday, Meg Ryan! 29 Vintage Pictures of the High Priestess of Fall",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1_7XgBbM3Edi9OwhKp9g2vO1FmcYohAuLMeiH-VxXHyHO8PEIkLps1_oJm88"
-        },
-        {
-          "url": "https://www.upi.com/Entertainment_News/Photos/Meg-Ryan-turns-65-a-look-back/12875/",
-          "title": "In photos: Meg Ryan turns 65: a look back - All Photos",
-          "publisher": "UPI.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkL58c9d2_hTkpvJrzPYwGlQoQaIeaTp1XhrZmI0pht_auQUpNrKfQ4CQSxSM"
-        },
-        {
-          "url": "https://www.thelist.com/2321483/meg-ryan-grew-out-signature-blond-bob-still-stunner-65/",
-          "title": "Meg Ryan Grew Out Her Signature Blond Bob, But She's Still A Stunner At 65",
-          "publisher": "The List",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlJ5O8zNh70PodUcb0et3-vi0Dvli3OI8caFGMNPeFTWD_VY0t4k6uP8p-PJs"
-        }
-      ]
-    },
-    {
-      "query": "turkey",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T14:00:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/uk/britain-eu-drop-trusted-partnership-term-summit-draft-2026-11-18/",
-        "https://www.bloomberg.com/news/articles/2026-11-18/uk-at-odds-with-eu-on-international-trade-and-youth-mobility",
-        "https://www.ft.com/content/6b278daf-6fdf-4951-af8a-227f25c4e0b7?syn-25a6b1a6=1"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aVy4KSPKUer9J_y0NxU8BcolOUzwKQY3d-CbKEafcTbHk_5W4tZzdC71_kw",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/uk/britain-eu-drop-trusted-partnership-term-summit-draft-2026-11-18/",
-          "title": "Britain, EU drop 'trusted partnership' term from summit draft",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aVy4KSPKUer9J_y0NxU8BcolOUzwKQY3d-CbKEafcTbHk_5W4tZzdC71_kw"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-18/uk-at-odds-with-eu-on-international-trade-and-youth-mobility",
-          "title": "UK at Odds With EU on International Trade and Youth Mobility",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtfoRRWjH7tOkdP6z6AJGDGvp7ot680uNxoQZOFHohbw7HrH8TxpszPzlQOPM"
-        },
-        {
-          "url": "https://www.ft.com/content/6b278daf-6fdf-4951-af8a-227f25c4e0b7?syn-25a6b1a6=1",
-          "title": "UK plans to resist EU request to match tariffs on Chinese goods",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8mct9rVf3FUQbHCzLl9kfd1lV4FJtNJbAdndqLBGnkwk0rkoX9ABLFoc7KKs"
-        }
-      ]
-    },
-    {
-      "query": "when does the stock market open",
+      "query": "bert kreischer",
       "approx_searches": "500+",
-      "published_at": "2026-11-19T14:00:00Z",
+      "published_at": "2026-11-19T14:20:00Z",
       "related_news_urls": [
-        "https://www.news-journalonline.com/story/news/education/2026/11/11/school-today-florida-veterans-day/92675380007/",
-        "https://www.facebook.com/chp/posts/in-observance-of-veterans-day-our-offices-will-be-closed-please-dial-9-1-1-for-e/1564034125762646/",
-        "https://www.cambridgema.gov/departments/publicworks/news/2026/11/cityofcambridgeveteransdayholidayclosuresandserviceinformationforwednesdaynovember11"
+        "https://www.masslive.com/centralmass/2026/11/comic-says-hell-fund-college-for-child-of-woman-who-had-contractions-at-his-worcester-show.html",
+        "https://hoodline.com/2026/11/bert-kreischer-s-college-fund-pledge-after-worcester-show-has-not-been-confirmed-as-an-account/",
+        "https://dailyvoice.com/article/bert-kreischer-promises-to-pay-for-babys-college-after-mom-has-contractions-at-mass-show/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoQh34oDomwebXuJDYIV1jXbh8xneYV7sF_X8yArR8VAia5JCeNaG3bU-92m0",
-      "image_credit": "Daytona Beach News-Journal",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK-IOTOGBHEJ14sBAEtYCT5OiAZbCpVxMhZ3ynMECzTf_-xJ6NVBIwosoXpgM",
+      "image_credit": "MassLive",
       "news": [
         {
-          "url": "https://www.news-journalonline.com/story/news/education/2026/11/11/school-today-florida-veterans-day/92675380007/",
-          "title": "Is there school on Veterans Day in Florida? See list by county",
-          "publisher": "Daytona Beach News-Journal",
+          "url": "https://www.masslive.com/centralmass/2026/11/comic-says-hell-fund-college-for-child-of-woman-who-had-contractions-at-his-worcester-show.html",
+          "title": "Mass. woman's contractions at Worcester comedy show might get her kid's college paid",
+          "publisher": "MassLive",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoQh34oDomwebXuJDYIV1jXbh8xneYV7sF_X8yArR8VAia5JCeNaG3bU-92m0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK-IOTOGBHEJ14sBAEtYCT5OiAZbCpVxMhZ3ynMECzTf_-xJ6NVBIwosoXpgM"
         },
         {
-          "url": "https://www.facebook.com/chp/posts/in-observance-of-veterans-day-our-offices-will-be-closed-please-dial-9-1-1-for-e/1564034125762646/",
-          "title": "In observance of Veteran's Day, our offices will be closed. Please dial 9-1-1 for emergencies.",
-          "publisher": "Facebook",
+          "url": "https://hoodline.com/2026/11/bert-kreischer-s-college-fund-pledge-after-worcester-show-has-not-been-confirmed-as-an-account/",
+          "title": "Framingham Woman's Contractions at Kreischer Show in Worcester",
+          "publisher": "Hoodline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSi4VV702DBsWoxXZrDX8hDz-ML2A-pjBZEvx0sBD5FYb9roQ3yhIPyjjPHNy8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO3-bk97qWESAW3faohGnK0aYcqyXiiDDcidDgcPsa9AOS0p3DL1krKezehBw"
         },
         {
-          "url": "https://www.cambridgema.gov/departments/publicworks/news/2026/11/cityofcambridgeveteransdayholidayclosuresandserviceinformationforwednesdaynovember11",
-          "title": "Veterans Day Holiday Closures and Service Information for Wednesday November 11",
-          "publisher": "the City of Cambridge (.gov)",
+          "url": "https://dailyvoice.com/article/bert-kreischer-promises-to-pay-for-babys-college-after-mom-has-contractions-at-mass-show/",
+          "title": "Bert Kreischer To Pay For Baby's College After Mom Has Contractions Laughing At Worcester Show",
+          "publisher": "DailyVoice.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeo2KXDxNU5PpEe5S0xIfwWPE0h5l87mf_RUISctO968L_a7MnU8WnPBJkwmI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9Wloh4CXhiirR_VsmdWkudnVbUYNLVUwUzR6zRwlf8aRAaxNfBQr05_1ayWM"
         }
       ]
     }
