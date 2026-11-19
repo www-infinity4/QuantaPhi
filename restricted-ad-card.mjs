@@ -100,6 +100,9 @@ if(root){
   publisherLast=item.id;publisherSeen.push(item.id);
   publisherName.textContent=item.title;publisherSmall.textContent=item.subtitle;
   publisherDesc.textContent=item.summary;publisherLink.href=item.url;
+  const externalVideo=item.category==='Adult video';
+  publisherLink.textContent=externalVideo?'Open external video page':'Open original website';
+  publisherNote.textContent=externalVideo?'This third-party video link has no verified creator rights, performer consent or playback integration. QuantaPhi does not host or preview it.':'You are opening each publisher’s original website. Any merchant age check, prescription review, purchase, booking or delivery stays with that provider. No live pricing, stock, licensed ads or consolidated freight is implied.';
   for(const link of kitLinks.querySelectorAll('.rac-kit-link')){
    const current=link.dataset.sourceId===item.id;
    link.classList.toggle('rac-kit-active',current);
