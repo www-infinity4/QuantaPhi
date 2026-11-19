@@ -33,7 +33,7 @@ test('every lifestyle kit prepares a local, source-only multi-store plan with ro
 });
 
 test('kit roles distinguish editorial, medical, booking, venue and physical merchants',()=>{
- const byId=id=>ADULT_LIFESTYLE_KITS.flatMap(kit=>prepareAdultKitResearch({kitId:kit.id}).sources).find(x=>x.id===id);
+ const byId=id=>ADULT_LIFESTYLE_KITS.filter(kit=>!kit.sourceOnly).flatMap(kit=>prepareAdultKitResearch({kitId:kit.id}).sources).find(x=>x.id===id);
  assert.equal(byId('playboy').role,'publisher');
  assert.equal(byId('hims').role,'health-provider');
  assert.equal(byId('amsterdam-de-wallen').role,'visitor-guide');
