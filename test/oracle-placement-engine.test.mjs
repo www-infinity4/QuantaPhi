@@ -40,6 +40,10 @@ test('political promotions are ineligible across ad feeds while ordinary reporti
   {advertiser:'Political action committee'},
   {campaignType:'election'},
   {sponsor:'Republican Party'},
+  {title:'State Senate district 4 fundraising'},
+  {title:'Vote YES on ballot proposition 2'},
+  {campaignType:'PAC'},
+  {destinationUrl:'https://secure.actblue.com/donate/example'},
   {id:'zach-nunn-ia3'}
  ])assert.equal(placementPolicy({...approved,...update},{now}).eligible,false,
   'political ad must fail closed: '+JSON.stringify(update));
