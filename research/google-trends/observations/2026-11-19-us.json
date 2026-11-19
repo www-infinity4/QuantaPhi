@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T13:01:20.760452Z",
+  "checked_at": "2026-11-19T13:31:08.535182Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "billie jean king",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T13:10:00Z",
+      "related_news_urls": [
+        "https://www.billiejeankingcup.com/en/news/usa-v-hungary-2026-billie-jean-king-cup-play-offs-preview",
+        "https://www.wpbf.com/article/coco-gauff-team-usa-billiejeankingcup/74470569",
+        "https://www.tenniswatcher.com/en/news/ashlyn-krueger-and-desirae-krawczyk-replace-injured-keys-keys-in-us-billie-jean-king-cup-team-for-hungary-tie"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF9bj3VKGhJ_C3gY3Mkkp383YRrK2vO9mzSjwFt20Q-UJl7ilUQJRoiKlfkME",
+      "image_credit": "Billie Jean King Cup",
+      "news": [
+        {
+          "url": "https://www.billiejeankingcup.com/en/news/usa-v-hungary-2026-billie-jean-king-cup-play-offs-preview",
+          "title": "USA v Hungary: 2026 Billie Jean King Cup Play-offs preview - Billie Jean King Cup - The World Cup of Tennis",
+          "publisher": "Billie Jean King Cup",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF9bj3VKGhJ_C3gY3Mkkp383YRrK2vO9mzSjwFt20Q-UJl7ilUQJRoiKlfkME"
+        },
+        {
+          "url": "https://www.wpbf.com/article/coco-gauff-team-usa-billiejeankingcup/74470569",
+          "title": "Coco Gauff ready to represent team USA in hometown of Delray Beach",
+          "publisher": "WPBF",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3UaNnQCcuUUohyaL5CYKeZuAFCn5udDixzStXWQyIjUaj9Xqfk5J6gwpwTAo"
+        },
+        {
+          "url": "https://www.tenniswatcher.com/en/news/ashlyn-krueger-and-desirae-krawczyk-replace-injured-keys-keys-in-us-billie-jean-king-cup-team-for-hungary-tie",
+          "title": "Two Late Call-Ups: How the US Rebuilt Its Billie Jean King Cup Lineup",
+          "publisher": "www.tenniswatcher.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3zhUUjFXV_pXMcaFfJksNA1hRewTElKwYvZnrkT_l66EauqQ4f0FOL3_5soQ"
+        }
+      ]
+    },
+    {
+      "query": "nelly korda",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T13:10:00Z",
+      "related_news_urls": [
+        "https://www.golfchannel.com/lpga/news/nelly-korda-looking-for-a-big-finish-to-a-great-year-and-willing-to-make-mistakes-along-the-way",
+        "https://www.lpga.com/news/2026/hye-jin-choi-finishes-runner-up-at-the-annika-looks-ahead-to-cme-group-tour-championship",
+        "https://www.espn.com/golf/story/_/id/50475367/hye-jin-choi-carlota-ciganda-lindy-duncan-share-lead-annika"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSei9akvvdoxLTrkBwxWcXl5xtEbsDfTH-qepEWwVTptEKxUmxMSqjZPUQGmXs",
+      "image_credit": "Golf Channel",
+      "news": [
+        {
+          "url": "https://www.golfchannel.com/lpga/news/nelly-korda-looking-for-a-big-finish-to-a-great-year-and-willing-to-make-mistakes-along-the-way",
+          "title": "Nelly Korda looking for a big finish to a great year and willing to make mistakes along the way",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSei9akvvdoxLTrkBwxWcXl5xtEbsDfTH-qepEWwVTptEKxUmxMSqjZPUQGmXs"
+        },
+        {
+          "url": "https://www.lpga.com/news/2026/hye-jin-choi-finishes-runner-up-at-the-annika-looks-ahead-to-cme-group-tour-championship",
+          "title": "Hye-Jin Choi finishes runner-up at The ANNIKA, looks ahead to CME Group Tour Championship",
+          "publisher": "LPGA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkM0p0CaZXgLcJR49q0EL3rZ_SBEB06SGua9-WKI4cZkYVeA5SyGszMEtF1XU"
+        },
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50475367/hye-jin-choi-carlota-ciganda-lindy-duncan-share-lead-annika",
+          "title": "Hye-Jin Choi, Carlota Ciganda, Lindy Duncan share lead at The Annika",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQukP-XCQt5C1Clc2VUFbgn_sh76BwqTcB4YrDjM1cYsUgMsV4cMG7tu80M08s"
+        }
+      ]
+    },
+    {
+      "query": "rafael jodar",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T13:10:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/espanol/deportes/articulo/2026-11-17/fils-vence-jodar-en-tres-sets-para-su-primer-triunfo-en-finales-atp",
+        "https://www.france24.com/es/minuto-a-minuto/20261117-j%C3%B3dar-se-hunde-en-el-masters-atp-y-zverev-ya-est%C3%A1-en-semifinales",
+        "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-escenario-clasificacion-sf-jodar"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpXivcrDmM4GoNjo4iwUzAZ-6FXiybT2UXmh5365mDVFdqkITnYYtRHt2urKQ",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/espanol/deportes/articulo/2026-11-17/fils-vence-jodar-en-tres-sets-para-su-primer-triunfo-en-finales-atp",
+          "title": "Zverev vuelve a vencer a Shelton en revancha del US Open y avanza en las Finales ATP",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpXivcrDmM4GoNjo4iwUzAZ-6FXiybT2UXmh5365mDVFdqkITnYYtRHt2urKQ"
+        },
+        {
+          "url": "https://www.france24.com/es/minuto-a-minuto/20261117-j%C3%B3dar-se-hunde-en-el-masters-atp-y-zverev-ya-est%C3%A1-en-semifinales",
+          "title": "Jódar se hunde en el Masters ATP y Zverev ya está en semifinales",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgmpO2Sw8Eaf3qRr0hIB5Sb5LtqBNt9cJDymfLDuAdWStIwYadXWSo9kKykwI"
+        },
+        {
+          "url": "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-escenario-clasificacion-sf-jodar",
+          "title": "¿Jódar aún puede clasificarse a SF de las Nitto ATP Finals?",
+          "publisher": "Nitto ATP Finals",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxPbOtWRNVgtctxhZneemAN_zUkCIrDOTgoW3rParIgm30DHlR0j_O7R_bBZY"
+        }
+      ]
+    },
+    {
+      "query": "3x3",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T13:10:00Z",
+      "related_news_urls": [
+        "https://www.fiba.basketball/en/news/all-you-need-to-know-before-fiba-3x3-world-tour-manama-2026",
+        "https://www.gdnonline.com/Details/1413270/Game-on--Manama-Masters-tips-off-tomorrow-for-world-class-3x3-basketball-action",
+        "https://www.fiba.basketball/en/news/stars-shooters-and-contenders-players-to-watch-at-wt-manama-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidrYfQWOb3qwlvbPHfWHHJJF9Y21xCKu_yg6c7FnFJtNfOQ_-FhFcfWLEpI4",
+      "image_credit": "FIBA",
+      "news": [
+        {
+          "url": "https://www.fiba.basketball/en/news/all-you-need-to-know-before-fiba-3x3-world-tour-manama-2026",
+          "title": "All you need to know before FIBA 3x3 World Tour Manama 2026",
+          "publisher": "FIBA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidrYfQWOb3qwlvbPHfWHHJJF9Y21xCKu_yg6c7FnFJtNfOQ_-FhFcfWLEpI4"
+        },
+        {
+          "url": "https://www.gdnonline.com/Details/1413270/Game-on--Manama-Masters-tips-off-tomorrow-for-world-class-3x3-basketball-action",
+          "title": "Other Sports: Game on!: Manama Masters tips off tomorrow for world-class 3x3 basketball action",
+          "publisher": "Gulf Daily News (Bahrain)",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYEYCV2Hk2G1QML6SI_xwctf1UNVJr4D7ezb5Nk2I9bzsCtmVpnVkcN296cg"
+        },
+        {
+          "url": "https://www.fiba.basketball/en/news/stars-shooters-and-contenders-players-to-watch-at-wt-manama-2026",
+          "title": "Stars, shooters and contenders: Players to watch at WT Manama 2026",
+          "publisher": "FIBA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfGll2pHoc6Y7q_e8IYYAlIkifAYcMC6L5x_HV_UTbaHxpI6Ci5-QX08BDAvs"
+        }
+      ]
+    },
+    {
+      "query": "gary sinise",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T12:50:00Z",
+      "related_news_urls": [
+        "https://mainstreetmediatn.com/articles/mainstreetmaury/spring-hill-fire-dept-awarded-gary-sinise-foundation-grant/",
+        "https://cwibc.co.id/en/spring-hill-fire-training-grant",
+        "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPHUB7MlvIJPpHEa17KTyBaqs_-sr9YYRw2CwzeoanQLCCEd4DCEDarv1trrY",
+      "image_credit": "Main Street Media of Tennessee",
+      "news": [
+        {
+          "url": "https://mainstreetmediatn.com/articles/mainstreetmaury/spring-hill-fire-dept-awarded-gary-sinise-foundation-grant/",
+          "title": "Spring Hill Fire Dept. Awarded Gary Sinise Foundation Grant",
+          "publisher": "Main Street Media of Tennessee",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPHUB7MlvIJPpHEa17KTyBaqs_-sr9YYRw2CwzeoanQLCCEd4DCEDarv1trrY"
+        },
+        {
+          "url": "https://cwibc.co.id/en/spring-hill-fire-training-grant",
+          "title": "Spring Hill Fire Department Secures $17,474 Training Grant",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGRCzUxYvauH5oJXqffp67xeuxZADZkKwRjc5K8fw02k2hbvMh5aclDP6BMro"
+        },
+        {
+          "url": "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969",
+          "title": "Gary Sinise Shares What It Would Take for Him to Return to Acting After 6 Years (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTc8tSUpKu4a02fhzYbBVRxLlmYO5T8zIDXfSBwat7gz0cQ97jHr58kUAYpVT0"
+        }
+      ]
+    },
     {
       "query": "us winter 2026 2027 snow outlook",
       "approx_searches": "200+",
@@ -43,47 +218,82 @@
     },
     {
       "query": "movie directors",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-19T12:40:00Z",
       "related_news_urls": [
-        "https://ew.com/daniel-roebuck-hits-back-chris-columbus-home-alone-firing-12261353",
-        "https://www.sfchronicle.com/entertainment/movies-tv/article/home-alone-firing-dispute-22537882.php",
-        "https://pagesix.com/2026/11/18/entertainment/fired-home-alone-actor-daniel-roebuck-accuses-director-chris-columbus-of-lying-about-infamous-axing-it-hurts-my-heart/"
+        "https://faroutmagazine.co.uk/10-directors-who-made-a-masterpiece-in-their-20s/",
+        "https://cwibc.co.id/en/young-directors-masterpiece-films",
+        "https://ew.com/director-chris-columbus-recalls-having-to-fire-this-actor-on-home-alone-12260706"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9wrVnO66FKeIcaI1AJZv3bLArI2VQRESOYw2NxL1LwJCZRYIRN2QbBf2T89c",
-      "image_credit": "Entertainment Weekly",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQult_6XRiV1FepHncAvwZ3Y5pdHq6zk2llVr-jrvdS9GVUIrhTc7Kct2oNMkE",
+      "image_credit": "Far Out Magazine",
       "news": [
         {
-          "url": "https://ew.com/daniel-roebuck-hits-back-chris-columbus-home-alone-firing-12261353",
-          "title": "Daniel Roebuck hits back at Chris Columbus’ claims he was ‘horrible’ in ‘Home Alone’ screen test",
+          "url": "https://faroutmagazine.co.uk/10-directors-who-made-a-masterpiece-in-their-20s/",
+          "title": "10 movie directors who made a masterpiece in their 20s",
+          "publisher": "Far Out Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQult_6XRiV1FepHncAvwZ3Y5pdHq6zk2llVr-jrvdS9GVUIrhTc7Kct2oNMkE"
+        },
+        {
+          "url": "https://cwibc.co.id/en/young-directors-masterpiece-films",
+          "title": "Five Directors Made Masterpieces Before Turning 30",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlWgz4joxK2Jjt0qi1g2JSaGNcHGo4M1AxBhy2RrAtX_8fxj8LEAF4EEpqwZs"
+        },
+        {
+          "url": "https://ew.com/director-chris-columbus-recalls-having-to-fire-this-actor-on-home-alone-12260706",
+          "title": "Director Chris Columbus recalls having to fire this ‘awful’ actor on Home Alone : ‘They were horrible’",
           "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9wrVnO66FKeIcaI1AJZv3bLArI2VQRESOYw2NxL1LwJCZRYIRN2QbBf2T89c"
-        },
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxpR9JNXdMjnxzJLB83-DmK3gPzGOTih5-zv2jwfRutDoYgN_C_8cyGnQ3k-8"
+        }
+      ]
+    },
+    {
+      "query": "jax taylor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T12:30:00Z",
+      "related_news_urls": [
+        "https://people.com/jax-taylor-reveals-cancer-diagnosis-says-its-been-scary-few-months-exclusive-12264354",
+        "https://www.today.com/health/jax-taylor-cancer-diagnosis-surgery-vanderpump-rules-rcna610183",
+        "https://pagesix.com/2026/11/19/celebrity-news/jax-taylor-reveals-cancer-diagnosis-as-he-undergoes-surgery-in-a-really-dark-place/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtz1PmEEJ-DBFXsS-4hKID72DDyjc73nXK9qA8oSX3P_gUEPigPjiB84gEVM",
+      "image_credit": "People.com",
+      "news": [
         {
-          "url": "https://www.sfchronicle.com/entertainment/movies-tv/article/home-alone-firing-dispute-22537882.php",
-          "title": "Chris Columbus says a ‘Home Alone’ screen test was ‘horrible.’ The actor says it never happened",
-          "publisher": "San Francisco Chronicle",
+          "url": "https://people.com/jax-taylor-reveals-cancer-diagnosis-says-its-been-scary-few-months-exclusive-12264354",
+          "title": "Jax Taylor Reveals Cancer Diagnosis, Says ‘It’s Been a Really Scary Few Months’ (Exclusive)",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-NYyAlt1PE6u61956JInUGSzKROeT9VlQKK1gDb-PNSkaTHSjaDopThJy1Bc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtz1PmEEJ-DBFXsS-4hKID72DDyjc73nXK9qA8oSX3P_gUEPigPjiB84gEVM"
         },
         {
-          "url": "https://pagesix.com/2026/11/18/entertainment/fired-home-alone-actor-daniel-roebuck-accuses-director-chris-columbus-of-lying-about-infamous-axing-it-hurts-my-heart/",
-          "title": "Exclusive | Fired ‘Home Alone’ actor Daniel Roebuck accuses director Chris Columbus of lying about infamous axing: ‘It hurts my heart’",
+          "url": "https://www.today.com/health/jax-taylor-cancer-diagnosis-surgery-vanderpump-rules-rcna610183",
+          "title": "Jax Taylor Was Diagnosed With Cancer Over the Summer After Waking up in ‘Horrible Pain’",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrizDYebcsSOiGH6SMJ06hDH2YD2ozDKlr31NyI4JdKBt8sLB92F-7w5j4Pno"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/19/celebrity-news/jax-taylor-reveals-cancer-diagnosis-as-he-undergoes-surgery-in-a-really-dark-place/",
+          "title": "Jax Taylor reveals cancer diagnosis as he undergoes surgery: ‘In a really dark place’",
           "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQa2GXVg5F27gvsH51G2ajuOjX_qeTePayMuJABnZm6k1ga_LoDnn0qEvyiXiw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjlSfodQuKQcwMztnVsD5RBRVQr3KI1NzeAS8Jf9MZIJxsVz_JdF89UB0NEM4"
         }
       ]
     },
     {
       "query": "ben shapiro",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T12:30:00Z",
       "related_news_urls": [
         "https://www.npr.org/2026/11/19/nx-s1-6034593/ben-shapiro-gop-midterms-losses-trump",
         "https://www.huffpost.com/entry/ben-shapiro-republicans-bite-ass-corruption_n_6af3b60de4b0a8468d8bfcf1",
-        "https://www.npr.org/2026/11/19/nx-s1-6035863/ben-shapiro-on-conservative-media-and-the-future-of-the-republican-party"
+        "https://www.rawstory.com/ben-shapiro-2678453348/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTExegKVxoaZT8KBpXI-SI6-X271GSxvPzmSioUW86829_pIsPuklvp1OjGVkQ",
       "image_credit": "NPR",
@@ -103,57 +313,22 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7osRd4mgHpzfhNBgauGtC_UuIGyHzii01mEySbiQBzhBWU4TZW1BEmnjIOKM"
         },
         {
-          "url": "https://www.npr.org/2026/11/19/nx-s1-6035863/ben-shapiro-on-conservative-media-and-the-future-of-the-republican-party",
-          "title": "Ben Shapiro on conservative media and the future of the Republican Party",
-          "publisher": "NPR",
+          "url": "https://www.rawstory.com/ben-shapiro-2678453348/",
+          "title": "MAGA pundit 'regrets' Trump's behavior after epic loss: He has 'whiff of corruption'",
+          "publisher": "Raw Story",
           "description": "",
-          "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "jax taylor",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T12:30:00Z",
-      "related_news_urls": [
-        "https://people.com/jax-taylor-reveals-cancer-diagnosis-says-its-been-scary-few-months-exclusive-12264354",
-        "https://pagesix.com/2026/11/19/celebrity-news/jax-taylor-reveals-cancer-diagnosis-as-he-undergoes-surgery-in-a-really-dark-place/",
-        "https://www.eonline.com/news/1438242/vanderpump-rules-alum-jax-taylor-diagnosed-with-kidney-cancer"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtz1PmEEJ-DBFXsS-4hKID72DDyjc73nXK9qA8oSX3P_gUEPigPjiB84gEVM",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/jax-taylor-reveals-cancer-diagnosis-says-its-been-scary-few-months-exclusive-12264354",
-          "title": "Jax Taylor Reveals Cancer Diagnosis, Says ‘It’s Been a Really Scary Few Months’ (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtz1PmEEJ-DBFXsS-4hKID72DDyjc73nXK9qA8oSX3P_gUEPigPjiB84gEVM"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/19/celebrity-news/jax-taylor-reveals-cancer-diagnosis-as-he-undergoes-surgery-in-a-really-dark-place/",
-          "title": "Jax Taylor reveals cancer diagnosis as he undergoes surgery: ‘In a really dark place’",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4PZx4ShAvoZq544OdIow8fOhIUMMgTJxxbIksrfXoMul1Tg5vEf-c-jBCrLs"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438242/vanderpump-rules-alum-jax-taylor-diagnosed-with-kidney-cancer",
-          "title": "Vanderpump Rules Alum Jax Taylor Shares Cancer Diagnosis",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_Wou3FwymC3T_yU_eiiV_F0j2-2gpYEw_fV45-CAbmWuSpnwI28RcnmFv1A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgwLYtAEEI8QZzxlreClHUsnFzidfQfcPyqiqhBt8UYiM9d0tEEgYzx-AnWvo"
         }
       ]
     },
     {
       "query": "ohio powerball winners nov 18 2026",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T12:20:00Z",
       "related_news_urls": [
         "https://www.wkyc.com/article/news/lottery/winning-powerball-numbers-92-million-jackpot-wednesday-november-18-2026-ohio-lottery-winners/95-e04e7ed3-3e1f-4ed0-b0fa-619be1bb2260",
         "https://www.desertsun.com/story/news/local/2026/11/18/california-lottery-results-wednesday-november-18-2026/92856494007/",
-        "https://www.cincinnati.com/story/news/local/2026/11/18/ohio-lottery-results-wednesday-november-18-2026/92855663007/"
+        "https://www.wlwt.com/article/ohio-powerball-winners-nov-16-lottery/74453608"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwz_Xouo5N-RjpdlCPz4j78KKTwsy2ce2lp4T41gqxDD7-BgvlkeM6CkxXhp4",
       "image_credit": "WKYC",
@@ -173,186 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfi7GQfayw9ShJ0hpy0SehkUHS7uERlyZcfWrjFTaQJDYhw55yH1qdriDCaz0"
         },
         {
-          "url": "https://www.cincinnati.com/story/news/local/2026/11/18/ohio-lottery-results-wednesday-november-18-2026/92855663007/",
-          "title": "Ohio Lottery Powerball, Pick 3 Midday winning numbers for Nov. 18, 2026",
-          "publisher": "Cincinnati Enquirer",
+          "url": "https://www.wlwt.com/article/ohio-powerball-winners-nov-16-lottery/74453608",
+          "title": "Three Ohioans win big in recent Powerball drawings",
+          "publisher": "WLWT",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTusEOVUYPc9oSltPZuIBXlYPhIEk-GLt5J6pCwXl6eu-qx-7sZSWd_HJGhokc"
-        }
-      ]
-    },
-    {
-      "query": "cignetti",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T12:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50503441/narrative-surrounding-indiana-serves-motivation",
-        "https://www.usatoday.com/story/sports/columnist/nancy-armour/2026/11/17/curt-cignetti-paul-finebaum-cfp-sec-indiana-football/92829852007/",
-        "https://sports.yahoo.com/articles/indiana-curt-cignetti-escalates-cfp-154300691.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv-QjCy1H9Q2FTlJiGzPB2OLcP4v9gJcdYQHMHHYe2C0cZa-U3QLF20AZEzKY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50503441/narrative-surrounding-indiana-serves-motivation",
-          "title": "Cignetti: Narrative surrounding Indiana serves as motivation",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv-QjCy1H9Q2FTlJiGzPB2OLcP4v9gJcdYQHMHHYe2C0cZa-U3QLF20AZEzKY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/columnist/nancy-armour/2026/11/17/curt-cignetti-paul-finebaum-cfp-sec-indiana-football/92829852007/",
-          "title": "Curt Cignetti's criticism isn't the problem. College football's gatekeepers are | Opinion",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQB_ohRLbIEKYitkzZQ7vlxVH2nfiRWoQSup5GnqfDMcjmkShHDeUqQAUbFn0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/indiana-curt-cignetti-escalates-cfp-154300691.html",
-          "title": "Indiana’s Curt Cignetti Escalates CFP Criticism With Strong Ohio State Statement",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSx3YGBFHyPkrPcU_IjBOhnMlyz5ypb__Vv_7FdjxB8gAKfgo2HT7YhjHDM4ec"
-        }
-      ]
-    },
-    {
-      "query": "fútbol",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T12:10:00Z",
-      "related_news_urls": [
-        "https://www.marca.com/futbol/2026/11/19/cassano-carga-regreso-ronaldinho-futbol-profesional-farsa-ridicula.html",
-        "https://es-us.noticias.yahoo.com/deportes/antonio-cassano-destroz%C3%B3-ronaldinho-regreso-110500292.html",
-        "https://espndeportes.espn.com/futbol/italia/nota/_/id/17512292/ronaldinho-italia-ravenna-llegada-regreso"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs965d2wLYl_HKVnoWtnIiFsLaSgV10r2xL8HnuYQOx2EHalDBSU5KR8421NY",
-      "image_credit": "MARCA",
-      "news": [
-        {
-          "url": "https://www.marca.com/futbol/2026/11/19/cassano-carga-regreso-ronaldinho-futbol-profesional-farsa-ridicula.html",
-          "title": "Cassano carga contra el regreso de Ronaldinho al fútbol profesional: “Fue una farsa ridícula”",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs965d2wLYl_HKVnoWtnIiFsLaSgV10r2xL8HnuYQOx2EHalDBSU5KR8421NY"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/antonio-cassano-destroz%C3%B3-ronaldinho-regreso-110500292.html",
-          "title": "Antonio Cassano destrozó a Ronaldinho por su regreso al fútbol a los 46 años: «Fue una farsa ridícula",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQclgqzj0Xqq3ZpdlqPOeVuOYHSmz8SApPR5m2iH9zXqxXtW5G9LxmwRMGtk"
-        },
-        {
-          "url": "https://espndeportes.espn.com/futbol/italia/nota/_/id/17512292/ronaldinho-italia-ravenna-llegada-regreso",
-          "title": "Ronaldinho llega a Italia y tendrá un día para alistar su regreso al futbol",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRBgfM74BTVPWAaOis83Gt9ftPkiOOg-I17-UxERUBAWFvwxO3oEEgESPfkKA"
-        }
-      ]
-    },
-    {
-      "query": "dolar hoje",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T12:10:00Z",
-      "related_news_urls": [
-        "https://g1.globo.com/economia/noticia/2026/11/18/dolar-ibovespa.ghtml",
-        "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/19/dolar-abre-a-r-590-apesar-de-aprovacao-do-plano-moretti-no-senado.ghtm",
-        "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18112026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qMURPpfX-OFuOkEspGl9NyLA1Du-sys_3ZScc5hkxXUSObblDArF_Grfckk",
-      "image_credit": "G1",
-      "news": [
-        {
-          "url": "https://g1.globo.com/economia/noticia/2026/11/18/dolar-ibovespa.ghtml",
-          "title": "Dólar dispara a R$ 5,86, maior valor desde abril de 2025; Ibovespa cai com impasse no ajuste fiscal",
-          "publisher": "G1",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qMURPpfX-OFuOkEspGl9NyLA1Du-sys_3ZScc5hkxXUSObblDArF_Grfckk"
-        },
-        {
-          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/19/dolar-abre-a-r-590-apesar-de-aprovacao-do-plano-moretti-no-senado.ghtm",
-          "title": "Dólar abre a R$ 5,90, apesar de aprovação do ?Plano Moretti? no Senado",
-          "publisher": "UOL Economia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbc-IGusv8miZQ_78hHSsEeW5ocA-uZW89UOHsoUN-p4lMDfZ40WpukfRLCs"
-        },
-        {
-          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18112026/",
-          "title": "Ibovespa tem novo dia de baixa ampla e dólar dispara mais uma vez, a R$ 5,86",
-          "publisher": "InfoMoney",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTm_ATIPfmv1OajavUcysTT1JCQpMT9dB0TeGP8lbtSWoLw2869bQNuEjGwHL4"
-        }
-      ]
-    },
-    {
-      "query": "noah kahan tour supporting acts 2027",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T12:10:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/18/metro/noah-kahan-sold-out-fenway-park-2027-tour/",
-        "https://www.ticketnews.com/2026/11/noah-kahan-2027-tour-new-opening-acts/",
-        "https://www.syracuse.com/live-entertainment/2026/11/are-noah-kahan-stubhub-tickets-legit-what-to-know-before-you-buy-resale.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvDJ9B8fw8SLIwWc_BtbTCX1_ub6Z6wLDe_lzp3V-ubYlpanTkQrJSkIwnF7c",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/18/metro/noah-kahan-sold-out-fenway-park-2027-tour/",
-          "title": "Noah Kahan sells out all North American dates on 2027 tour, including a record-setting 6 shows at Fenway",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvDJ9B8fw8SLIwWc_BtbTCX1_ub6Z6wLDe_lzp3V-ubYlpanTkQrJSkIwnF7c"
-        },
-        {
-          "url": "https://www.ticketnews.com/2026/11/noah-kahan-2027-tour-new-opening-acts/",
-          "title": "Noah Kahan Adds Dates to 2027 Last of the Bugs World Tour",
-          "publisher": "TicketNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwlsRuyq8mXrjvyXeCxN-lzIVUb4sL9wO_iRfMn-CzETPO6Dm53KhTX29r_D4"
-        },
-        {
-          "url": "https://www.syracuse.com/live-entertainment/2026/11/are-noah-kahan-stubhub-tickets-legit-what-to-know-before-you-buy-resale.html",
-          "title": "Are Noah Kahan StubHub tickets legit? What to know before you buy resale",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFTHBDJA2_G6t_EfG3GricDrPAPONtbaxLhVa7PitJrDhqw7_TVuggc6FkjJs"
-        }
-      ]
-    },
-    {
-      "query": "wmt stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T12:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-        "https://finance.yahoo.com/markets/stocks/article/walmart-beats-q3-earnings-expectations-raises-2026-outlook-again-120803355.html",
-        "https://www.axios.com/2026/11/19/walmart-earnings-sales-revenue"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIeguPZgPQRoxK4DpwRiXDTex_5YUlOqi2BYDID1R28p45UQsoz6lbLba465A",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-          "title": "Walmart raises sales and earnings outlook as e-commerce sales jump again",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIeguPZgPQRoxK4DpwRiXDTex_5YUlOqi2BYDID1R28p45UQsoz6lbLba465A"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/article/walmart-beats-q3-earnings-expectations-raises-2026-outlook-again-120803355.html",
-          "title": "Walmart beats Q3 earnings expectations, raises 2026 outlook again",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ90gGnzRhcxqvR0M0wpy1DEHPCyKWutLy2cI3OrM4iZgqONL9_tx1HPTNtRQ"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/19/walmart-earnings-sales-revenue",
-          "title": "Walmart raises sales outlook but U.S. growth rate falls",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsAdo1SXnHmGaa_Y2jgC4oZQotfeMaEvu364RC0o0944R0K2mXCwOaRiEpv2g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpe-xjbQyz1sQysKC6azYM7pDPUDSTRjlF63zokq2ksiV8ibWHeJm9Csp7khs"
         }
       ]
     }
