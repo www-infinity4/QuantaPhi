@@ -146,7 +146,7 @@ test('6502 flag transfers, branches and memory shifts preserve register semantic
 });
 
 test('browser workbench exposes bounded hex loader and step/run controls without external APIs',()=>{
- const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const html=readFileSync(new URL('../apple2-infinity/index.html',import.meta.url),'utf8');
  for(const id of ['programHex','loadProgram','stepProgram','runProgram','programStatus','run','dma','screen'])
   assert.ok(html.includes(`id="${id}"`),`missing ${id}`);
  assert.match(html,/bytes\.length>4096/);
