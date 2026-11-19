@@ -7,7 +7,7 @@ import {housingCompanions,housingResource} from './housing-help-catalog.mjs';
 import {createHousingHelpCard} from './housing-help-cards.mjs';
 import {chapterFor} from './shopphi-showcase-core.mjs';
 import {createShopPhiStoryPlayer} from './shopphi-story-player.mjs';
-import {placementPolicy} from './quanta-context-placement.mjs';
+import {placementPolicy,isPoliticalPromotion} from './quanta-context-placement.mjs';
 
 export const SLOT_COUNT=6;
 // Companion pages can advance without fetching ads or changing the selected hero.
@@ -81,6 +81,7 @@ export function contextFor(hero={}){
 }
 const tokenize=x=>new Set((scrub(x).toLowerCase().match(/[a-z0-9]{3,}/g)||[]).slice(0,65));
 export function normalizeCandidate(raw={}){
+ if(isPoliticalPromotion(raw))return null; // No political promotions in companion ads or publisher boosts.
  const id=scrub(raw.id).slice(0,110),title=scrub(raw.title);
  const url=httpsUrl(raw.url);
  if(!id||title.length<3||!url)return null;
