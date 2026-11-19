@@ -28,7 +28,6 @@ const ROLES=Object.freeze({
 export function prepareAdultKitResearch({kitId,budget='300.00',region=''}={}){
  const kit=ADULT_LIFESTYLE_KITS.find(x=>x.id===kitId);
  if(!kit)throw new RangeError('Choose a lifestyle kit before preparing a plan');
- if(kit.sourceOnly===true)throw new RangeError('External video links are not shopping kits');
  const budgetCents=moneyCents(budget,'Budget');
  if(!budgetCents)throw new RangeError('Budget must be greater than zero');
  if(typeof region!=='string'||region.length>60||/[<>\x00-\x1f\x7f]/.test(region))throw new RangeError('Enter a short destination or region without special characters');
