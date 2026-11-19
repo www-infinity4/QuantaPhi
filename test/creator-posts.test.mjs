@@ -41,6 +41,14 @@ test('validation rejects wrong authors, mismatched IDs, hostile URLs, future obs
  assert.equal(validateCreatorPost({...row(),summary:'x'.repeat(301)}),false);
  assert.equal(validateCreatorPost({...row(),publishedAt:'2099-01-01T00:00:00Z'}),false);
  assert.equal(validateCreatorPost({...row(),topic:'invented'}),false);
+ assert.equal(validateCreatorPost({...row(),publishedAt:'2026-02-30T12:00:00Z'}),false);
+});
+test('immutable public catalog loads independently of a slow visitor clock',async()=>{
+ const originalNow=Date.now;
+ try{Date.now=()=>Date.parse('2026-11-19T00:00:00Z');
+  const fresh=await import('../creator-post-catalog.mjs?slow-clock-regression');
+  assert.equal(fresh.CREATOR_DATABASE.posts.length,5);
+ }finally{Date.now=originalNow;}
 });
 test('bulk import is idempotent, excludes arbitrary data and never promotes a partial archive to complete',()=>{
  const original=CREATOR_DATABASE.posts;
@@ -54,4 +62,5 @@ test('bulk import is idempotent, excludes arbitrary data and never promotes a pa
  assert.throws(()=>prepareCreatorImport({posts:[row()]}),/reviewed/);
  const prepared=prepareCreatorImport({reviewed:true,posts:[row()],coverage:{complete:true}});
  assert.equal(prepared.posts.length,5);assert.equal(prepared.coverage.complete,false);
+ assert.throws(()=>prepareCreatorImport({reviewed:true,posts:[{...row(),checkedAt:'2099-01-01T00:00:00Z'}]}),/future observation/);
 });

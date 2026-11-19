@@ -8,12 +8,12 @@ function loadXWidget(){
  if(window.twttr?.widgets?.createTweet)return Promise.resolve(window.twttr.widgets);
  if(widgetPromise)return widgetPromise;
  widgetPromise=new Promise((resolve,reject)=>{
-  let script=document.querySelector('script[src="https://platform.twitter.com/widgets.js"]');
-  const timer=setTimeout(()=>reject(new Error('X embed timed out')),12000);
-  const loaded=()=>{clearTimeout(timer);window.twttr?.widgets?.createTweet?resolve(window.twttr.widgets):reject(new Error('X embed unavailable'));};
-  const failed=()=>{clearTimeout(timer);reject(new Error('X embed unavailable'));};
-  if(script){script.addEventListener('load',loaded,{once:true});script.addEventListener('error',failed,{once:true});}
-  else{script=el('script');script.src='https://platform.twitter.com/widgets.js';script.async=true;script.addEventListener('load',loaded,{once:true});script.addEventListener('error',failed,{once:true});document.head.append(script);}
+  const script=el('script');script.dataset.creatorXWidget='true';
+  const failed=()=>{clearTimeout(timer);script.remove();reject(new Error('X embed unavailable'));};
+  const timer=setTimeout(failed,12000);
+  const loaded=()=>{clearTimeout(timer);if(window.twttr?.widgets?.createTweet)resolve(window.twttr.widgets);else failed();};
+  script.src='https://platform.twitter.com/widgets.js';script.async=true;
+  script.addEventListener('load',loaded,{once:true});script.addEventListener('error',failed,{once:true});document.head.append(script);
  }).catch(error=>{widgetPromise=null;throw error;});
  return widgetPromise;
 }

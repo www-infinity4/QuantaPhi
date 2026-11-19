@@ -43,8 +43,18 @@ Branch: `feat/elena-post-cards-1977`.
   `{ "reviewed": true, "posts": [...] }`, with the same known fields as the seed.
   Every original must be source-checked before import. No API key, paid service,
   credential, recurring job or automatic publishing is added.
-- Source checks: 87 Node tests passed before final browser/CI work. Regression was
+- Source checks: 88 Node tests passed after independent review corrections. Regression was
   first run failing for the absent creator catalog, then implemented.
+- Independent review identified a visitor-clock boot failure and non-recovering
+  X script retry. Both were corrected; future-date rejection now runs only at
+  the import boundary, invalid calendar dates are rejected, and retry requests
+  a fresh script. New checks cover slow clocks and provider failure/recovery.
+- PR: https://github.com/www-infinity4/QuantaPhi/pull/1978 . Initial browser CI
+  reached actual carousel classification but the test tried selecting the
+  collapsed card-library dropdown; the test now opens its visible summary first.
+- Local Chromium launch is blocked by environment socket restrictions. Browser
+  acceptance is delegated to the repository's actual GitHub Chromium CI; no
+  successful local browser result is claimed.
 - No coordinator lease is claimed. GitHub issue and isolated branch identify this
   bounded session; lease fields remain null.
 

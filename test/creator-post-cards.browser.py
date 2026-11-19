@@ -42,7 +42,10 @@ def run():
                     url = request.request.url
                     if url.startswith('https://platform.twitter.com/widgets.js'):
                         widget_requests.append(url)
-                        request.fulfill(status=200, content_type='application/javascript', body=WIDGET)
+                        if len(widget_requests) == 1:
+                            request.abort()
+                        else:
+                            request.fulfill(status=200, content_type='application/javascript', body=WIDGET)
                     elif urlparse(url).netloc == urlparse(base).netloc:
                         request.continue_()
                     else:
@@ -73,7 +76,10 @@ def run():
                 exported = json.loads(Path(download.value.path()).read_text())
                 assert len(exported['posts']) == 5 and exported['coverage']['complete'] is False
                 card.get_by_role('button', name='Load original X post').click()
+                expect(card.get_by_role('button', name='Retry original X post', exact=True)).to_be_visible()
+                card.get_by_role('button', name='Retry original X post', exact=True).click()
                 expect(card.get_by_role('button', name='Original loaded', exact=True)).to_be_visible()
+                assert len(widget_requests) == 2, 'Retry must make a fresh provider script request'
                 expect(card.locator('[data-mock-x-post]')).to_have_count(1)
                 card.get_by_role('button', name='Next post').click()
                 expect(card.locator('[data-mock-x-post]')).to_have_count(0)
@@ -92,6 +98,7 @@ def run():
                 creator_options = chooser.locator('option[value^="source-elena-cardone"]')
                 expect(creator_options).to_have_count(6)
                 page.locator('#oracleCardDepartment').select_option('business')
+                page.locator('#oracleCardInventory').click()
                 chooser.select_option('source-'+POST)
                 expect(stage.locator('[data-source-id="'+POST+'"]')).to_be_visible()
                 assert stage.get_attribute('data-switchboard-category') == 'Business & finance'

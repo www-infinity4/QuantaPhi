@@ -5,11 +5,13 @@ export const CREATOR_TOPICS=Object.freeze({
  gratitude:'Education · Gratitude',relationships:'Education · Relationships'
 });
 const text=(value,max)=>typeof value==='string'&&value.trim().length>0&&value.length<=max&&!/[<>\u0000-\u001f]/.test(value);
-const date=value=>typeof value==='string'&&/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d{3})?Z$/.test(value)&&Number.isFinite(Date.parse(value));
+const date=value=>typeof value==='string'&&/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d{3})?Z$/.test(value)&&Number.isFinite(Date.parse(value))&&new Date(value).toISOString().replace('.000Z','Z')===value.replace('.000Z','Z');
 export function validateCreatorPost(post){
  if(!post||post.creatorId!=='elena-cardone'||!/^\d{15,22}$/.test(post.postId||''))return false;
  if(!text(post.title,110)||!text(post.summary,300)||!Object.hasOwn(CREATOR_TOPICS,post.topic))return false;
- if(!date(post.publishedAt)||!date(post.checkedAt)||Date.parse(post.publishedAt)>Date.parse(post.checkedAt)||Date.parse(post.checkedAt)>Date.now()+300000)return false;
+ // Immutable snapshots must load even when a visitor's device clock is wrong.
+ // Only the reviewed import boundary compares observations to its own clock.
+ if(!date(post.publishedAt)||!date(post.checkedAt)||Date.parse(post.publishedAt)>Date.parse(post.checkedAt))return false;
  // Exact URLs bind the author and ID; credentials, lookalike hosts, ports and
  // arbitrary queries cannot turn a source link into an unrelated destination.
  return post.sourceUrl==='https://x.com/ElenaCardone/status/'+post.postId;
