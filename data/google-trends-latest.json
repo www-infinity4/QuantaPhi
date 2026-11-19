@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T22:31:34.853982Z",
+  "checked_at": "2026-11-19T23:01:10.135518Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "united states secretary of war",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T22:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/18/world/americas/colombia-us-joint-military.html",
+        "https://thehill.com/policy/defense/6230698-hegseth-delivers-c130-colombia/",
+        "https://www.barrons.com/news/hegseth-visits-ecuador-to-bolster-anti-narco-fight-dcc6b8f2"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmb2DGo9ZxDlYQXXjYqiB57Q36jBtpAIBInVERzgbN87cZ8jaoacUQwTOfS1E",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/18/world/americas/colombia-us-joint-military.html",
+          "title": "Colombia Rejects Joint Plan With U.S. to Target Drug Gangs",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmb2DGo9ZxDlYQXXjYqiB57Q36jBtpAIBInVERzgbN87cZ8jaoacUQwTOfS1E"
+        },
+        {
+          "url": "https://thehill.com/policy/defense/6230698-hegseth-delivers-c130-colombia/",
+          "title": "Hegseth hands Colombia C-130 military transport aircraft",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ0LmRP2LtaFlWIV662UKYfQzmvFYY5F5-orYwaRk1g_syOnsdCqmRImJB8Qk"
+        },
+        {
+          "url": "https://www.barrons.com/news/hegseth-visits-ecuador-to-bolster-anti-narco-fight-dcc6b8f2",
+          "title": "Hegseth Visits Ecuador To Bolster Anti-narco Fight",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK2I8UyPoOxy1OF96oihQHmFu88Kc65FujOe5j_IZkwABK5UI4DCKjyNKlNK8"
+        }
+      ]
+    },
+    {
+      "query": "venezuela",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T22:40:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/world/americas/hegseth-cements-new-military-deal-in-visit-to-venezuela-621ccdcb",
+        "https://www.aljazeera.com/news/2026/11/19/why-is-pete-hegseth-strengthening-us-military-ties-with-venezuela",
+        "https://apnews.com/video/eeuu-y-venezuela-firman-acuerdo-para-restablecer-lazos-militares-dice-hegseth-en-visita-a-caracas-1ca3c823053a4f00ac48a41185ff453e"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM6hC2dEQ6m1z5cudjrhMAyBbFu04EEpMkpBQ-FSKQDwY7AoYcAX-8g4Sqt1g",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/world/americas/hegseth-cements-new-military-deal-in-visit-to-venezuela-621ccdcb",
+          "title": "Hegseth Cements New Military Deal in Visit to Venezuela",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM6hC2dEQ6m1z5cudjrhMAyBbFu04EEpMkpBQ-FSKQDwY7AoYcAX-8g4Sqt1g"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/19/why-is-pete-hegseth-strengthening-us-military-ties-with-venezuela",
+          "title": "Why is Pete Hegseth strengthening US military ties with Venezuela?",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQLkxUBOyoqXv-03zQKPt5xk_SSOBll1e7HhRwpE3pc_zVeOyBy5FsY1XPCoM"
+        },
+        {
+          "url": "https://apnews.com/video/eeuu-y-venezuela-firman-acuerdo-para-restablecer-lazos-militares-dice-hegseth-en-visita-a-caracas-1ca3c823053a4f00ac48a41185ff453e",
+          "title": "EEUU y Venezuela firman acuerdo para restablecer lazos militares, dice Hegseth en visita a Caracas",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTPnBkHaORKaUcGRw5jL9Wz6YZAAw-thPULIv7vzZwaa71lZKbTlZguL5GD8A"
+        }
+      ]
+    },
+    {
+      "query": "saudi arabia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T22:30:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz",
+        "https://news.sky.com/story/saudis-tallest-skyscraper-damaged-in-houthi-attack-13614147",
+        "https://www.reuters.com/world/middle-east/houthi-attacks-saudi-arabia-2026-11-19/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmyzzkhHZGfn34Ty8mpLUrOOxzL5tbkU4YZtUGWqxUexXnZPoqc49gceTCq1o",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz",
+          "title": "LIVE: Tower in Riyadh hit by Houthi attack, Saudi authorities say",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmyzzkhHZGfn34Ty8mpLUrOOxzL5tbkU4YZtUGWqxUexXnZPoqc49gceTCq1o"
+        },
+        {
+          "url": "https://news.sky.com/story/saudis-tallest-skyscraper-damaged-in-houthi-attack-13614147",
+          "title": "Saudi's tallest skyscraper damaged in Houthi attack",
+          "publisher": "Sky News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJcqX6dAiNdW6A6c_TwUcv7rjGXM8VESgwwTr0KArT1ZDQQ3Zqtn88BFuW5KQ"
+        },
+        {
+          "url": "https://www.reuters.com/world/middle-east/houthi-attacks-saudi-arabia-2026-11-19/",
+          "title": "Houthi attacks on Saudi Arabia",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCyv_sD0X35tKBwE2O-fzcXQG1Os5yUzFktiOJ_j2WXS2GlnvgRsA-GZAWt-I"
+        }
+      ]
+    },
+    {
+      "query": "cisa",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T22:20:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/michael-losapio-cisa-trump-jan-6-3c88bb68960ce74206863794c4af9548",
+        "https://www.nbcnews.com/politics/trump-administration/trumps-pick-agency-providing-election-security-says-jan-6-was-not-atta-rcna610298",
+        "https://www.motherjones.com/politics/2026/11/trumps-pick-to-run-americas-cyber-defense-agency-doesnt-think-january-6-was-an-attack/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLUV5kT7j2xh6RFYIbn38AHsy-zJh8sJAZ4nVss50Fw2u1oGLitLTgSCUn5pU",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/michael-losapio-cisa-trump-jan-6-3c88bb68960ce74206863794c4af9548",
+          "title": "Trump’s CISA pick Michael LoSapio rejects Jan. 6 as an 'attack,' won't name 2020 election winner",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLUV5kT7j2xh6RFYIbn38AHsy-zJh8sJAZ4nVss50Fw2u1oGLitLTgSCUn5pU"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/trump-administration/trumps-pick-agency-providing-election-security-says-jan-6-was-not-atta-rcna610298",
+          "title": "Trump’s pick for agency providing election security says Jan. 6 was not an attack",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZ6wrBQ67RVgOYQXw42eONPLTmMUUKU8M2uc5DsHjQi3yrgBppATZwrzHOApg"
+        },
+        {
+          "url": "https://www.motherjones.com/politics/2026/11/trumps-pick-to-run-americas-cyber-defense-agency-doesnt-think-january-6-was-an-attack/",
+          "title": "Trump’s Pick to Run America’s Cyber Defense Agency Doesn’t Think January 6 Was an Attack",
+          "publisher": "Mother Jones",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNMNCtejbxyfES1OwbtHtOWxgJoKZL-WnZqvmtjm2w8g67J4mm0KoNlUxn7N0"
+        }
+      ]
+    },
+    {
+      "query": "texans schedule",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T22:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+        "https://sports.yahoo.com/articles/nfl-week-11-uniforms-helmets-154219034.html",
+        "https://demokratis.co.id/en/nfl-week-eleven-uniform-matchups"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQscnMv6c9R2a2v7-NSm4uAw5UZosXndPrs0G-i_sMzpVbIk3CrEN5YU37i1kc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+          "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQscnMv6c9R2a2v7-NSm4uAw5UZosXndPrs0G-i_sMzpVbIk3CrEN5YU37i1kc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nfl-week-11-uniforms-helmets-154219034.html",
+          "title": "NFL Week 11 uniforms: Here are the helmets, jerseys and pants for every team",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqfcJcJSpE7SPDU1dLZE8cxk-m6bkSNVLmn7udYnSTETPwXllWdJ9j4kqYk4"
+        },
+        {
+          "url": "https://demokratis.co.id/en/nfl-week-eleven-uniform-matchups",
+          "title": "NFL Reveals Week 11 Uniform Matchups for All Four Games",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF19G3fcMjhmfZgd739DaRRfAy_MjMAKJ2g-fFfLpM0GFGeepZzcxqESRTaL4"
+        }
+      ]
+    },
     {
       "query": "notre dame basketball",
       "approx_searches": "2000+",
@@ -13,7 +188,7 @@
       "related_news_urls": [
         "https://sports.yahoo.com/articles/auburn-vs-notre-dame-live-210049658.html",
         "https://247sports.com/college/auburn/article/auburn-basketball-score-notre-dame-292985278/",
-        "https://www.miamiherald.com/sports/article318157199.html"
+        "https://www.al.com/auburnbasketball/2026/11/auburn-set-for-notre-dame-after-strong-showing-against-unlv-in-players-era-tournament.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEMGkxRhSpj0pzz1iNXJkC60KMh43s7Snfrje_YLX8O8GuBuVjSmMUAX3G_3Y",
       "image_credit": "Yahoo Sports",
@@ -33,21 +208,21 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMjRdWvq2_LfLS0PhH-xKNY8DlMljFxlTBhR9vKg49_xXt-7wUykrNMwBWRjc"
         },
         {
-          "url": "https://www.miamiherald.com/sports/article318157199.html",
-          "title": "How to watch Auburn basketball vs Notre Dame: TV, streaming for today's game",
-          "publisher": "Miami Herald",
+          "url": "https://www.al.com/auburnbasketball/2026/11/auburn-set-for-notre-dame-after-strong-showing-against-unlv-in-players-era-tournament.html",
+          "title": "Auburn set for Notre Dame after strong showing against UNLV in Players Era tournament",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDj1uWm7xeXvUbZ-NeJwZZQ36VvXcSMmkTqOg2stcbSqwjXYdymPLYHna_OgI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1_ZENax3y-bYfTfgIfOvxIwxbZ3zUmhQQ3eCLWTmikgPN1SiWNKjTK2IKnR0"
         }
       ]
     },
     {
       "query": "vasco da gama x internacional",
-      "approx_searches": "2000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T22:00:00Z",
       "related_news_urls": [
         "https://ge.globo.com/rj/futebol/brasileirao-serie-a/noticia/2026/11/19/vasco-x-internacional-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://www.correiodopovo.com.br/esportes/inter/inter-tera-victor-gabriel-na-lateral-e-bruno-henrique-entre-os-titulares-contra-o-vasco-1.1766205",
+        "https://gauchazh.clicrbs.com.br/esportes/inter/noticia/2026/11/com-retorno-no-meio-e-desfalque-na-lateral-inter-esta-escalado-para-enfrentar-o-vasco-cmwo1brm401k8015u7805ff86.html",
         "https://internacional.com.br/noticias/masculino/raio-x-inter-enfrenta-o-vasco-da-gama-no-sao-januario"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGfYxuOzLNUMzYEAtVSd53EakI_IteKdGAEF5YxtuPhoOvuFLLpH0QAFRnhJ4",
@@ -61,11 +236,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGfYxuOzLNUMzYEAtVSd53EakI_IteKdGAEF5YxtuPhoOvuFLLpH0QAFRnhJ4"
         },
         {
-          "url": "https://www.correiodopovo.com.br/esportes/inter/inter-tera-victor-gabriel-na-lateral-e-bruno-henrique-entre-os-titulares-contra-o-vasco-1.1766205",
-          "title": "Inter terá Victor Gabriel na lateral e Bruno Henrique entre os titulares contra o Vasco",
-          "publisher": "Correio do Povo",
+          "url": "https://gauchazh.clicrbs.com.br/esportes/inter/noticia/2026/11/com-retorno-no-meio-e-desfalque-na-lateral-inter-esta-escalado-para-enfrentar-o-vasco-cmwo1brm401k8015u7805ff86.html",
+          "title": "Com retorno no meio e desfalque na lateral, Inter está escalado para enfrentar o Vasco",
+          "publisher": "GZH",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQckLKUVD5ORv_FmmTfn0Z1EEJM8Uc1DAkdDmHr8GvHMByIkqEYJ8fqyt1Wdws"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4XhtLVGi8ya4Gc9_45rsf0T68QnSTFwqxu2QVFNyfAPUf3REnn601zZ2y1aY"
         },
         {
           "url": "https://internacional.com.br/noticias/masculino/raio-x-inter-enfrenta-o-vasco-da-gama-no-sao-januario",
@@ -82,7 +257,7 @@
       "published_at": "2026-11-19T21:50:00Z",
       "related_news_urls": [
         "https://www.usatoday.com/story/cars/recalls/2026/11/19/toyota-recalls-vehicles-lexus-models/92860583007/",
-        "https://www.kcra.com/article/toyota-recall-due-to-takata-airbag-degradation/74479922",
+        "https://www.wmur.com/article/toyota-recall-due-to-takata-airbag-degradation/74479922",
         "https://www.consumerreports.org/cars/car-recalls-defects/toyota-and-lexus-recall-more-cars-to-replace-takata-airbags-a9852430890/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9YPL1T0-AQXv7Vq8USR6OqlIEbyzRBj51-rLLGUq4QNU5DuVTrThZ51KY5ok",
@@ -96,9 +271,9 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9YPL1T0-AQXv7Vq8USR6OqlIEbyzRBj51-rLLGUq4QNU5DuVTrThZ51KY5ok"
         },
         {
-          "url": "https://www.kcra.com/article/toyota-recall-due-to-takata-airbag-degradation/74479922",
+          "url": "https://www.wmur.com/article/toyota-recall-due-to-takata-airbag-degradation/74479922",
           "title": "Toyota issues recall for thousands of vehicles due to airbag degradation",
-          "publisher": "KCRA",
+          "publisher": "WMUR",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5iakk2jnLonlJhl7W8EGlC9Hu5p7yr6MBbyLIf1UFuBYrN3sJvEyhhPyjgh4"
         },
@@ -116,68 +291,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-19T21:50:00Z",
       "related_news_urls": [
-        "https://www.eurosport.es/futbol/serie-a-brasil/2026/vasco-da-gama-internacional_mtc1656910/live.shtml",
-        "https://es-us.noticias.yahoo.com/deportes/vasco-inter-onces-confirmados-duelo-213400448.html",
-        "https://rcdm.es/alineaciones-de-vasco-da-gama-contra-internacional/"
+        "https://sports.yahoo.com/articles/vasco-inter-line-ups-confirmed-213400975.html",
+        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-vasco-da-gama-v-internacional/blt0a4a0b8ec9716f41",
+        "https://www.eurosport.es/futbol/serie-a-brasil/2026/vasco-da-gama-internacional_mtc1656910/live.shtml"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEkgaULwocaBORJDFSmMSXXbTIq4tjPyJTxF9bwwmP7-MSfKBwDjK_dUfbKBk",
-      "image_credit": "Eurosport",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIWh8wkaO2l9C2yGMwZN_0NKM8yAuYyTTOKOoOSN-YT5kU7fYBhCouUYAIgrc",
+      "image_credit": "Yahoo Sports",
       "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/vasco-inter-line-ups-confirmed-213400975.html",
+          "title": "📋 Vasco and Inter line-ups confirmed for crucial relegation clash",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIWh8wkaO2l9C2yGMwZN_0NKM8yAuYyTTOKOoOSN-YT5kU7fYBhCouUYAIgrc"
+        },
+        {
+          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-vasco-da-gama-v-internacional/blt0a4a0b8ec9716f41",
+          "title": "Watch Vasco da Gama vs Internacional live today: Who is broadcasting the match on TV and via live stream?",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS2Jb7QE5YIHPHBHa_vv0Yrg3UWciPEG_eslAonnA8RxQQW5f9FGuoDxt04IY"
+        },
         {
           "url": "https://www.eurosport.es/futbol/serie-a-brasil/2026/vasco-da-gama-internacional_mtc1656910/live.shtml",
           "title": "Vasco da Gama - Internacional en directo - Serie A Brasil: Resultados y resúmenes de Fútbol - 19/11/2026",
           "publisher": "Eurosport",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEkgaULwocaBORJDFSmMSXXbTIq4tjPyJTxF9bwwmP7-MSfKBwDjK_dUfbKBk"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/vasco-inter-onces-confirmados-duelo-213400448.html",
-          "title": "📋 Vasco e Inter: onces confirmados para duelo clave por la permanencia",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2qYO5q2cnyrJeNdkCs4s4yqt2d-jZU7-B1egLAsyGgncsw8B_giQsoT0cB4"
-        },
-        {
-          "url": "https://rcdm.es/alineaciones-de-vasco-da-gama-contra-internacional/",
-          "title": "Alineaciones de Vasco da Gama contra Internacional",
-          "publisher": "rcdm.es",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOyiUHATfSCIj9CmlE6r8aNBO8gNnnKz-7zCyLqjeRJncb-Q70OR5RYyLrqpg"
-        }
-      ]
-    },
-    {
-      "query": "cameron fens",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T21:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50526108/unc-cameron-fens-files-lawsuit-ncaa",
-        "https://247sports.com/college/north-carolina/article/north-carolina-unc-tar-heels-basketball-coach-michael-malone-292973540/",
-        "https://www.wral.com/sports/northcarolina-basketball-cameron-fens-sues-ncaa-seeking-eligibility-orange-county-court-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiOFsVQ6AVJsOityBr5RkOczfgo68Jsw6eeOOrnN-i-dMF5P5SflD3wDBkuZ4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50526108/unc-cameron-fens-files-lawsuit-ncaa",
-          "title": "UNC's Cameron Fens files lawsuit vs. NCAA, seeks to recover year of eligibility",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiOFsVQ6AVJsOityBr5RkOczfgo68Jsw6eeOOrnN-i-dMF5P5SflD3wDBkuZ4"
-        },
-        {
-          "url": "https://247sports.com/college/north-carolina/article/north-carolina-unc-tar-heels-basketball-coach-michael-malone-292973540/",
-          "title": "Cameron Fens By the Numbers",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYncl5t8A0mmITjv63mCOqrK6QynUFzCzud7Iiifm2wyI-G3HcvWHtXy8xmzE"
-        },
-        {
-          "url": "https://www.wral.com/sports/northcarolina-basketball-cameron-fens-sues-ncaa-seeking-eligibility-orange-county-court-november-2026/",
-          "title": "UNC basketball player sues NCAA seeking additional year of eligibility",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrJXzrAos3Z3MVVJ3s2AibmHc-FkVtUgf3wNeIsWFx-7mz9ai1X1lEE60oXQA"
         }
       ]
     },
@@ -213,146 +353,6 @@
           "publisher": "Page Six",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLucAmgom1thEjCijzMWLTZxeWyPUAeI2TTLmiwQHPcJJDCOlHRR-KZ4yoD2s"
-        }
-      ]
-    },
-    {
-      "query": "liv hewson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T21:50:00Z",
-      "related_news_urls": [
-        "https://people.com/warren-kole-says-yellowjackets-creators-did-the-right-thing-for-series-finale-exclusive-12250842",
-        "https://www.rollingstone.com/tv-movies/tv-movie-news/where-to-watch-yellowjackets-season-4-online-streaming-1235661472/",
-        "https://www.thewrap.com/creative-content/reviews/yellowjackets-season-4-review/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9Y4FuPx7Yq1VZrSAZQH3wWn89YvlZA3cq3ne6hk-_e-zLtt0iG0PWqHUboi8",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/warren-kole-says-yellowjackets-creators-did-the-right-thing-for-series-finale-exclusive-12250842",
-          "title": "Warren Kole Says Yellowjackets Creators ‘Did the Right Thing’ with How They Ended the Series (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9Y4FuPx7Yq1VZrSAZQH3wWn89YvlZA3cq3ne6hk-_e-zLtt0iG0PWqHUboi8"
-        },
-        {
-          "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/where-to-watch-yellowjackets-season-4-online-streaming-1235661472/",
-          "title": "Where to Watch Yellowjackets Season 4 Online Streaming",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkd0T2c8FRHKJIwBmvfQ-4o_wk8MR72wSaN_O4wPec7STkFe0YVnlslXvtmLg"
-        },
-        {
-          "url": "https://www.thewrap.com/creative-content/reviews/yellowjackets-season-4-review/",
-          "title": "‘Yellowjackets’ Season 4 Review: Mystery Stumbles to the End With Small Glimpses of Promise",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzzqV2PQauLL7WqDJLP8ECYRDPDV8qBIxXDk6EyMH5oFHddCBM4_rsV0gjtjc"
-        }
-      ]
-    },
-    {
-      "query": "uefa women's champions league",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T21:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmvg250r0jpkt",
-        "https://www.theguardian.com/football/live/2026/nov/19/arsenal-v-ol-lyonnes-womens-champions-league-live",
-        "https://www.skysports.com/football/live-blog/13614127/arsenal-vs-lyon-live-womens-champions-league-match-updates-news-and-score"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ5POJcs5pRZK0Ub2exqo9BLoK-HILrVNS_M4Aibd2gfpYN64mllmNSbBPIOk",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmvg250r0jpkt",
-          "title": "Arsenal 0-2 OL Lyon: French giants outclass Gunners",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ5POJcs5pRZK0Ub2exqo9BLoK-HILrVNS_M4Aibd2gfpYN64mllmNSbBPIOk"
-        },
-        {
-          "url": "https://www.theguardian.com/football/live/2026/nov/19/arsenal-v-ol-lyonnes-womens-champions-league-live",
-          "title": "Arsenal v OL Lyonnes: Women’s Champions League – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkYyXBha8LKJVCHjg3jYbs2AZ6RXJvcJXK5RIQ1o1vwXSZG6Q96eYupZKcVYw"
-        },
-        {
-          "url": "https://www.skysports.com/football/live-blog/13614127/arsenal-vs-lyon-live-womens-champions-league-match-updates-news-and-score",
-          "title": "Arsenal vs Lyon LIVE! Women's Champions League match updates, news and score",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRppFSP6e1hAB2KpBw9rg8f2Ayrtm5sdiKUhZZSyYlFSt6oqTEpP4tsTPOGM44"
-        }
-      ]
-    },
-    {
-      "query": "pete rose",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-19T21:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/19/politics/trump-pardons-pete-rose-baseball",
-        "https://www.espn.com/mlb/story/_/id/50534187/pete-rose-posthumously-pardoned-president-donald-trump",
-        "https://www.nbcnews.com/politics/donald-trump/posthumously-pardons-pete-rose-mlb-hit-leader-betting-baseball-rcna610308"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbF3c0nrYw9hAvokIP0XB32hUD1O8SCGdM-raBklA5b35F56lZdxeP-E-VVgU",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/19/politics/trump-pardons-pete-rose-baseball",
-          "title": "Trump pardons controversial baseball legend Pete Rose",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbF3c0nrYw9hAvokIP0XB32hUD1O8SCGdM-raBklA5b35F56lZdxeP-E-VVgU"
-        },
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50534187/pete-rose-posthumously-pardoned-president-donald-trump",
-          "title": "Pete Rose posthumously pardoned by President Donald Trump",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2_BbRLB49tXm7-RC_8Sx7LHp0J2-Ulv7YSznHJBjZVDPp8KoU6EdSc9iD5U"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/donald-trump/posthumously-pardons-pete-rose-mlb-hit-leader-betting-baseball-rcna610308",
-          "title": "Trump posthumously pardons MLB all-time hits leader Pete Rose",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSduSA2kN3tS4xN-YLftZS26AC_xlsK2H2wIgC2emkaI18q9OkstABrEt5379o"
-        }
-      ]
-    },
-    {
-      "query": "ps5 gta6",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-19T21:40:00Z",
-      "related_news_urls": [
-        "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
-        "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
-        "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw",
-      "image_credit": "Digital Foundry",
-      "news": [
-        {
-          "url": "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
-          "title": "GTA 6: PS5 vs PS5 Pro, Xbox Series X and Series S: Which Console Plays Best?",
-          "publisher": "Digital Foundry",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw"
-        },
-        {
-          "url": "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
-          "title": "Grand Theft Auto VI Uses AMD FSR 4 On Xbox Series S, Upscaling 720p To 1080p While Still Running Ray Traced Global Illumination",
-          "publisher": "Wccftech",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8AMqKOkopU6mi5ahjy2oGDadqeUTOb08fkwa1HeGMkCIw09-d26qrtECsl7s"
-        },
-        {
-          "url": "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979",
-          "title": "GTA 6 Won’t Get A 60 FPS Mode, Even On PS5 Pro, Because It’s ‘Not Powerful Enough’",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROmKm3_DuoRdLIj-n08VTdrtbbdHT7Zddidf_soIeK6ZipViaE1KXiet62zwU"
         }
       ]
     }
