@@ -66,7 +66,7 @@ export const VISUAL_EXPRESSION=`(() => {
    if(!nonBlank)blankCanvases.push({index:i,probe:'transparent_corner_sample'});
   }catch{}
  }
- return {red:{title:limit(document.title,160),url:location.origin+location.pathname,...view,
+ return {red:{title:limit(document.title,160),url:location.origin+location.pathname,readyState:document.readyState,...view,
   headings:[...document.querySelectorAll('h1,h2')].filter(visible).slice(0,15).map(el=>limit(el.textContent,100))},
   yellow:items,orange:{overflow:view.docWidth>view.width+4,offscreenRight,brokenImages,overlaps,blankCanvases}};
 })()`;
@@ -104,6 +104,7 @@ export async function capturePublicBubbles(env,mode,{pause=ms=>new Promise(r=>se
    const onEvent=e=>{let data;try{data=JSON.parse(e.data)}catch{return}
     if(data.method==='Runtime.exceptionThrown')errors.push({kind:'uncaught_js'});
     if(data.method==='Log.entryAdded'&&data.params?.entry?.level==='error')errors.push({kind:'console_error'});
+    if(data.method==='Runtime.consoleAPICalled'&&data.params?.type==='error')errors.push({kind:'console_error'});
     if(data.method==='Network.loadingFailed')errors.push({kind:'request_failed'});
     if(data.method==='Network.responseReceived'&&data.params?.response?.status>=400)errors.push({kind:'http_'+data.params.response.status});
    };
@@ -116,13 +117,16 @@ export async function capturePublicBubbles(env,mode,{pause=ms=>new Promise(r=>se
     let state;
     for(let attempt=0;attempt<12;attempt++){
      const result=await send('Runtime.evaluate',{expression:VISUAL_EXPRESSION,returnByValue:true});
-     if(!result.exceptionDetails&&result.result?.value?.red?.url===PAGE){state=result.result.value;break}
+     if(!result.exceptionDetails&&result.result?.value?.red?.url===PAGE&&result.result.value.red.readyState==='complete'){
+      state=result.result.value;break;
+     }
      if(attempt<11)await pause(350);
     }
     if(!state)throw Error('eye_dom_unavailable');
     await pause(750);
     const stable=await send('Runtime.evaluate',{expression:VISUAL_EXPRESSION,returnByValue:true});
-    if(stable.result?.value?.red?.url===PAGE)state=stable.result.value;
+    if(stable.result?.value?.red?.url===PAGE&&stable.result.value.red.readyState==='complete')state=stable.result.value;
+    else throw Error('eye_dom_unavailable');
     const fold=await send('Page.captureScreenshot',{format:'png',fromSurface:true,captureBeyondViewport:false});
     const fullHeight=Math.min(3000,Math.max(viewport.height,Math.ceil(state.red.docHeight)||viewport.height));
     const full=await send('Page.captureScreenshot',{format:'png',fromSurface:true,
