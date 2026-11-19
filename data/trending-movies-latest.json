@@ -2,25 +2,9 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-19T16:32:57.762065Z",
+  "checked_at": "2026-11-19T17:04:07.397991Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
-    {
-      "id": "E4rPY20fHSE",
-      "title": "The Nightingale",
-      "video_id": "E4rPY20fHSE",
-      "video_title": "The Nightingale Teaser Trailer (2026)",
-      "kind": "trailer",
-      "publisher": "Rotten Tomatoes Trailers",
-      "published_at": "2026-11-19T15:14:32Z",
-      "source_url": "https://www.youtube.com/watch?v=E4rPY20fHSE",
-      "poster": "https://i.ytimg.com/vi/E4rPY20fHSE/hqdefault.jpg",
-      "google_trending": true,
-      "trend_query": "the nightingale movie",
-      "trend_checked_at": "2026-11-19T16:31:23.122469Z",
-      "trend_published_at": "2026-11-19T14:50:00Z",
-      "approx_searches": "1000+"
-    },
     {
       "id": "o9WWeKSbtAo",
       "title": "The Further Mis-Adventures of Cliff Booth",
@@ -52,6 +36,18 @@
       "trend_checked_at": "2026-11-14T20:31:06.368122Z",
       "trend_published_at": "2026-11-14T19:50:00Z",
       "approx_searches": "500+"
+    },
+    {
+      "id": "E4rPY20fHSE",
+      "title": "The Nightingale",
+      "video_id": "E4rPY20fHSE",
+      "video_title": "The Nightingale Teaser Trailer (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-19T15:14:32Z",
+      "source_url": "https://www.youtube.com/watch?v=E4rPY20fHSE",
+      "poster": "https://i.ytimg.com/vi/E4rPY20fHSE/hqdefault.jpg",
+      "google_trending": false
     },
     {
       "id": "pGlzSdv95lI",
