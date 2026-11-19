@@ -1,0 +1,84 @@
+name: bubbles-eye
+on:
+  pull_request:
+    paths: ['.github/workflows/bubbles-eye.yml', 'workers/bubbles-cloud-browser/**', 'tools/eye/**', 'test/bubbles-eye-cloudflare.test.mjs']
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Public Bubbles URL (only quantaphi.org/bubbles.html accepted)
+        required: false
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: bubbles-eye-public-capture
+  cancel-in-progress: false
+jobs:
+  source:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check workers/bubbles-cloud-browser/eye-capture.mjs
+      - run: node --check tools/eye/capture.mjs
+      - run: node --check tools/eye/diagnose.mjs
+      - run: node --test test/bubbles-eye-cloudflare.test.mjs
+  eye:
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Bubbles Eye source and identity gates
+        run: node --test test/bubbles-eye-cloudflare.test.mjs
+      - name: Existing Cloudflare browser captures the public page
+        env:
+          BUBBLES_URL: ${{ github.event.inputs.url || vars.BUBBLES_URL || 'https://quantaphi.org/bubbles.html' }}
+        run: node tools/eye/capture.mjs
+      - name: Preserve run evidence for debugging
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bubbles-eye-evidence
+          path: eye-out/
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Blue - publish verified public evidence only to eye-data
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name bubbles-eye
+          git config user.email eye@users.noreply.github.com
+          if git ls-remote --exit-code origin refs/heads/eye-data >/dev/null 2>&1; then
+            git fetch origin eye-data
+            git worktree add -B eye-data /tmp/eye-data origin/eye-data
+          else
+            git worktree add --orphan -b eye-data /tmp/eye-data
+          fi
+          rm -rf /tmp/eye-data/latest
+          mkdir -p /tmp/eye-data/latest
+          cp -R eye-out/. /tmp/eye-data/latest/
+          cd /tmp/eye-data
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No changed eye-data evidence'
+          else
+            git commit -m "eye capsule ${GITHUB_SHA::7}"
+            git push origin eye-data
+          fi
