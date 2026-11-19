@@ -3,30 +3,30 @@ issue: 1966
 project: "Apple II Infinity virtual hardware software workbench"
 state: review_pending
 dot: "🟡"
-progress_percent: 62
-progress_basis: "Apple IIe auxiliary memory/MMU and 40/80 column video software added; 29 local tests passed (9 new), exact-head CI, independent review, live browser and Android acceptance pending."
-sessions_spent: 3
+progress_percent: 65
+progress_basis: "38/38 local Node tests for virtual CPU, FPGA/CM5, Apple IIe main/aux memory and new language-card banking; browser, exact-head CI, independent PR review, merge and production acceptance pending."
+sessions_spent: 4
 sessions_remaining_estimate: "unknown"
 agent: "GPT Green engineer, unleased GitHub connector scoped writes"
 lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-last_observed_at_utc: "2026-11-19T00:50:23.050Z"
+last_observed_at_utc: "2026-11-19T23:45:11.771Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/apple2-infinity-software-1966
-head_sha: 6353aca7372ec9cf0e1caf40a4e0b9ced660eb8c
+head_sha: f72fee92610201ac4848a567670f518eaa3cec7d
 pr: "https://github.com/www-infinity4/QuantaPhi/pull/1967"
 tests:
   - "8/8 local Node v22 tests passed; dedicated GitHub CI https://github.com/www-infinity4/QuantaPhi/actions/runs/44426652404 succeeded on original head."
 ci:
-  - "Prior head 6353aca7: seven GitHub workflows succeeded. New source head CI pending."
+  - "Previous v3 exact head f72fee9 passed seven workflows. New language-card and main reconciliation head checks still pending."
 independent_review: "pending"
 merged: false
 deployed: false
 live_verified: false
-blocker: "Independent source review not recorded; Chromium localhost navigation blocked by administrator; no merge or production/Android acceptance."
-next_action: "Verify updated Apple II Infinity PR exact-head CI and obtain independent source review; then gated merge and live/Android acceptance"
+blocker: "Independent reviewer approval and live/browser/Android verification not yet available; check new exact-head CI before considering guarded merge."
+next_action: "Check GitHub exact-head CI for language-card/main reconciliation, obtain independent review, and verify any authorized source merge and Android/browser acceptance"
 ---
 
 # Apple II Infinity · software-only workstation · #1966
@@ -67,3 +67,12 @@ next_action: "Verify updated Apple II Infinity PR exact-head CI and obtain indep
 - Sources: https://github.com/frozen-signal/Apple_IIe_MMU_IOU/blob/master/Documentation/Understanding_IOU_MMU/mmu-soft-switches.md ; https://github-wiki-see.page/m/mikedaley/web-a2e/wiki/Memory-System
 - No lease claimed; no merge, site deployment, physical Android acceptance or Apple ROM distribution.
 - Next action: verify exact-head CI, secure independent code review and obey approved merge/deploy gates.
+
+## APPLE2-INF-1966-S4 · Language Card + main reconciliation
+
+- Verified prior PR head f72fee92610201ac4848a567670f518eaa3cec7d: seven GitHub workflows successful, no independent reviews, new main acfd3c9aac055a9fd8c960851885e1da324e37f0 caused a dirty PR.
+- RED: 9 additional language-card behavior tests failed before implementation. GREEN: 38/38 focused Node v22 tests locally passed after implementing two D000 4KiB switchable banks, shared E000 8KiB high memory and separate main/aux banks controlled by ALTZP. C080-C08F switch accesses, double-odd-read prewrite, ROM write-through and C011/C012 status are modeled. All 151 documented 6502 opcode dispatches remain tested.
+- Browser controls now select LC bank and protected/ROM-read/write-through modes, using virtual memory-mapped I/O. Physical timing, ROM licensing and disk boot still unimplemented.
+- Main reconciliation preserves three current main-only index updates (HypeStat #1974; X Spaces #1284; X intake #1210), plus Apple II ticket; overlaying branch-owned files into main tree on a two-parent merge commit. New exact-head CI and independent review required before source merge.
+- Verification receipts: local 38/38 Node checks only prior to GitHub push; no production, Android or genuine browser readback; no authenticated runner lease claimed.
+- Next action: inspect new exact-head CI, resolve failures and seek independent review; no release assertion.

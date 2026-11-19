@@ -3,9 +3,9 @@ issue: 1905
 project: "QuantaPhi Advertising and Quick Card discovery"
 state: implementing
 dot: "🟡"
-progress_percent: 12
-progress_basis: "1/7 ticket workstreams source-hardened; restricted ad policy, Worker schema and tests staged but not yet merged or deployed; 0 verified new paid advertiser campaigns"
-sessions_spent: 1
+progress_percent: 25
+progress_basis: "2/7 estimated workstreams source-hardened (restricted media rights and nonpartisan political ad exclusion); no proof of production filter, live ad campaign or Google AdSense category setting"
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: "ChatGPT GitHub connector (owner-authorized isolated source branch; not Moltnook runner)"
 lease_id: null
@@ -13,13 +13,13 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: fix/advertising-rights-campaign-expiry-1905-20261111
-pr: 1909
+branch: fix/no-political-ads-1905-20261119
+pr: 1982
 merged: false
 deployed: false
 live_verified: false
-blocker: "External advertiser licensing, source rights and signed ad deals not established; age-verifier and production restricted-ad route remain unconfigured; independent review and exact-head CI required"
-next_action: "Verify final exact-head GitHub CI for PR #1909, obtain independent review, address findings and merge only if permitted; keep #1905 open for the complete advertising program"
+blocker: "PR #1982 independent review and exact-head CI pending; Cloudflare/Android release unverified; Google AdSense Politics blocking is an external account setting, not a source-control change"
+next_action: "Check exact-head green CI and non-author review for PR #1982, then guarded merge; confirm Google AdSense Politics category blocked and verify Cloudflare/Android production separately"
 ---
 # Work Order 003 · Advertising and Quick Cards
 
@@ -39,3 +39,10 @@ Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1905
 1. Inspect exact head and dedicated CI after Worker/schema test changes; repair failures, no bypasses.
 2. Request independent reviewer for license/provenance, D1 forward migration and the original visual/runtime constraints.
 3. Merge reviewed, eligible PR with pinned head SHA. Keep #1905 OPEN until the entire advertisement and Quick Card system is accepted on real desktop/Android production.
+
+## 2026-11-19 UTC · owner-directed all-political-ad removal
+- Owner requested removal of Zach Nunn and all political advertisements, regardless of affiliation, from QuantaPhi public carousels, auto-discovery and ad feeds. Kept this request on existing advertising issue #1905 and existing source-card catalog issue #1076; no duplicate issue.
+- Created isolated source PR https://github.com/www-infinity4/QuantaPhi/pull/1982 ; scope: political creative exclusion in `quanta-context-placement.mjs`, all-tab `quanta-feed-rank.mjs`, ShopPhi companion normalization, and removal of the Zach Nunn/Mariannette Miller-Meeks cards in both auto-catalogs. News editorial and neutral public services remain; no wallet, identity, payments or unrelated cards edited.
+- RED reproduction: https://github.com/www-infinity4/QuantaPhi/actions/runs/44555819720 failed on test-only head `5df5881f181e954b57dc9870690f6bdc25a73d0b` as expected. After source implementation, Oracle workflow https://github.com/www-infinity4/QuantaPhi/actions/runs/44556403817 passed; TinyFish https://github.com/www-infinity4/QuantaPhi/actions/runs/44556238416 initially failed due to hard-coded catalog count, corrected without restoring removed political cards. Fresh exact-head CI and independent review still required.
+- Google AdSense's separate publisher ad auction is included on `index.html` and has its own Politics sensitive-category blocking control in AdSense Brand safety. No AdSense admin action, account change, paid ad placement, Cloudflare deployment or Android/browser acceptance is claimed from this source PR.
+- Previous advertising rights PR #1909 was merged on 2026-11-18; this is a separate bounded follow-up under issue #1905. Last gate is non-author review, exact-head CI, owner-permitted merge, production deployment/readback and ad account category verification.

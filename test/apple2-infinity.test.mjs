@@ -293,3 +293,70 @@ test('6502 instructions can write to auxiliary text RAM through IIe soft switche
  m.bus.write(0xc00d,0);
  assert.equal(m.bus.video.frame().split('\n')[0][0],'Q');
 });
+
+
+test('language card defaults to ROM and reports bank/status',()=>{
+ const b=new Apple2Infinity().bus;
+ b.loadROM(0xd000,[0x91]);b.loadROM(0xe000,[0x92]);
+ assert.equal(b.read(0xd000),0x91);assert.equal(b.read(0xe000),0x92);
+ assert.equal(b.read(0xc011)&128,128);assert.equal(b.read(0xc012)&128,0);
+ assert.equal(b.lc.writeEnabled,false);
+});
+test('language card bank1 and bank2 store distinct D000 data',()=>{
+ const b=new Apple2Infinity().bus;
+ b.read(0xc083);b.read(0xc083);b.write(0xd000,0x21);
+ b.read(0xc08b);b.read(0xc08b);b.write(0xd000,0x11);
+ assert.equal(b.read(0xc011)&128,0);assert.equal(b.read(0xd000),0x11);
+ b.read(0xc080);assert.equal(b.read(0xd000),0x21);
+ b.read(0xc088);assert.equal(b.read(0xd000),0x11);
+ assert.equal(b.read(0xc012)&128,128);
+});
+test('language card E000 high RAM is common to D000 banks and write protected',()=>{
+ const b=new Apple2Infinity().bus;b.read(0xc083);b.read(0xc083);
+ b.write(0xe000,0x41);b.write(0xffff,0x51);b.read(0xc088);
+ assert.equal(b.read(0xe000),0x41);assert.equal(b.read(0xffff),0x51);
+ b.write(0xe000,0x99);assert.equal(b.read(0xe000),0x41);
+});
+test('ROM-read mode permits hidden LC RAM write only after two odd reads',()=>{
+ const b=new Apple2Infinity().bus;b.loadROM(0xd000,[0xab]);
+ b.read(0xc081);b.write(0xd000,0x11);
+ assert.equal(b.lc.writeEnabled,false);
+ b.read(0xc081);b.write(0xd000,0x22);
+ assert.equal(b.read(0xd000),0xab);
+ b.read(0xc080);assert.equal(b.read(0xd000),0x22);
+});
+test('even/write LC switch access cancels the write-enable prewrite sequence',()=>{
+ const b=new Apple2Infinity().bus;
+ b.read(0xc083);b.write(0xc083,0);b.read(0xc083);
+ b.write(0xd000,0x11);b.read(0xc080);assert.equal(b.read(0xd000),0);
+ b.read(0xc083);b.read(0xc082);b.read(0xc083);
+ b.write(0xd000,0x22);b.read(0xc080);assert.equal(b.read(0xd000),0);
+ b.read(0xc083);b.read(0xc083);b.write(0xd000,0x33);
+ assert.equal(b.read(0xd000),0x33);
+});
+test('ALTZP routes language card high and low banks to independent auxiliary RAM',()=>{
+ const b=new Apple2Infinity().bus;b.loadROM(0xd000,[0xcc]);
+ b.read(0xc083);b.read(0xc083);b.write(0xd000,0x51);b.write(0xe000,0x61);
+ b.write(0xc009);b.write(0xd000,0xa1);b.write(0xe000,0xb1);
+ assert.equal(b.read(0xd000),0xa1);assert.equal(b.read(0xe000),0xb1);
+ b.write(0xc008);assert.equal(b.read(0xd000),0x51);assert.equal(b.read(0xe000),0x61);
+ b.read(0xc082);assert.equal(b.read(0xd000),0xcc);
+});
+test('language card C08X mirror registers select the proper bank',()=>{
+ const b=new Apple2Infinity().bus;
+ b.read(0xc087);b.read(0xc087);b.write(0xd123,0x88);
+ b.read(0xc08c);assert.equal(b.read(0xd123),0);
+ b.read(0xc084);assert.equal(b.read(0xd123),0x88);
+});
+test('6502 executes machine code written to virtual LC RAM',()=>{
+ const m=new Apple2Infinity(),b=m.bus;
+ b.load(0x800,[0xad,0x83,0xc0,0xad,0x83,0xc0,0xa9,0x77,0x8d,0x00,0xd0,
+  0xa9,0xa9,0x8d,0x00,0xd0,0xa9,0x63,0x8d,0x01,0xd0,0x4c,0x00,0xd0]);
+ for(let i=0;i<9;i++)m.cpu.step();
+ assert.equal(m.cpu.pc,0xd000);m.cpu.step();assert.equal(m.cpu.a,0x63);
+});
+test('browser has LC controls and mapped C083/C08B double-read operations',()=>{
+ const html=readFileSync(new URL('../apple2-infinity/index.html',import.meta.url),'utf8');
+ for(const id of ['lcBank','lcMode','lcStatus'])assert.ok(html.includes('id="'+id+'"'),id);
+ assert.match(html,/0xc083/);assert.match(html,/0xc08b/);
+});

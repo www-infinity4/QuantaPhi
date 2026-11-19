@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {tinyfishCard} from '../tinyfish-card-catalog.mjs';
 import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from '../verified-brand-sports-catalog.mjs';
 import {VERIFIED_CARD_COUNT,isSafeCardUrl,safeSportsArticle} from '../verified-brand-sports-cards.mjs';
 const read=x=>readFileSync(new URL('../'+x,import.meta.url),'utf8');
@@ -39,8 +40,9 @@ test('uncertain brands and age restrictions are preserved without premature publ
  for(const name of ['Crown Royal','Bud Light','Petrona','how','Viper Google simulator'])assert.ok(names.includes(name));
  assert.equal(REQUESTED_PUBLIC_CARDS.some(x=>x.id.includes('bud-light')||x.id.includes('crown-royal')),false);
  const politics=REQUESTED_PUBLIC_CARDS.filter(x=>x.kind==='civic');
- assert.equal(politics.length,2);
- assert.ok(politics.every(x=>x.nonTargeted));
+ assert.equal(politics.length,0);
+ assert.equal(tinyfishCard('zach-nunn-ia3'),null);
+ assert.equal(tinyfishCard('miller-meeks-ia1'),null);
  const health=REQUESTED_PUBLIC_CARDS.find(x=>x.id==='colorectal-screening');
  assert.equal(health.nonTargeted,true);
  assert.match(health.official,/cancer.gov/);

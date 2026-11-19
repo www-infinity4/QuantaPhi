@@ -68,7 +68,9 @@ test('Media Star commands resolve to the real player and person picker, not the 
  const player=findCard('Media Star');
  assert.equal(player.id,'media-star');
  assert.equal(player.mount,'fredSpacesRadio');
- assert.deepEqual(player.extraMounts,['followingSpacesRadio']);
+ assert.deepEqual(player.extraMounts,['followingSpacesRadio','asteroidSpacesRadio']);
+ assert.ok(player.scripts.includes('asteroid-spaces-radio.mjs'));
+ assert.equal(findCard('ASTEROID RADIO Spaces').mount,'asteroidSpacesRadio');
  assert.ok(player.scripts.includes('fred-spaces-radio.js'));
  assert.ok(player.scripts.includes('following-spaces-radio.js'));
  assert.equal(findCard('Media Star Creator').mount,'mediaStarCreator');

@@ -14,6 +14,12 @@
 <label for="textPage">Display text page<select id="textPage"><option value="1">Page 1</option><option value="2">Page 2</option></select></label>
 <label for="store80">80STORE bank selection<select id="store80"><option value="off">Off</option><option value="on">On</option></select></label></div>
 <p id="screenMode" class="muted" role="status">40-column text, page 1, 80STORE off</p></section>
+<section class="panel"><h2>Apple IIe language card</h2>
+<p class="muted">Two software-selectable 4 KiB banks at $D000, shared upper 8 KiB, and main/auxiliary bank isolation. Changing to a write mode performs the two required switch reads. No Apple ROM is included.</p>
+<div class="actions">
+<label for="lcBank">Language Card bank<select id="lcBank"><option value="2">Bank 2</option><option value="1">Bank 1</option></select></label>
+<label for="lcMode">Read/write mode<select id="lcMode"><option value="rom-read">ROM read, write protected</option><option value="ram-read">RAM read, write protected</option><option value="ram-write">RAM read and write</option><option value="rom-write">ROM read, RAM write-through</option></select></label>
+</div><p id="lcStatus" class="muted" role="status" aria-live="polite">Bank 2 · ROM read · RAM write protected</p></section>
 <section class="panel"><h2>Apple IIe 40/80-column text display</h2><div class="terminal" id="screen" role="status" aria-live="polite"></div></section>
 <section class="panel"><h2>Machine log</h2><pre id="log" class="terminal" role="log" aria-live="polite"></pre><p class="note">All signals, bus cycles, RAM, DMA, analog samples and CM5 operations here are <strong>software simulations</strong>. They are not timing measurements from real Apple hardware. No 6502 ROM or commercial Apple software is included.</p></section>
 </main><script type="module">
@@ -28,6 +34,9 @@ $('sensors').innerHTML=metric('ADC samples',s.sensors.samples)+metric('DAC outpu
 $('mmu').innerHTML=metric('Main RAM','64 KiB')+metric('Auxiliary RAM','64 KiB')+metric('RAMRD',s.mmu.ramrd?'Aux':'Main')+metric('RAMWRT',s.mmu.ramwrt?'Aux':'Main')+metric('ALTZP',s.mmu.altzp?'Aux':'Main');
 $('colMode').value=String(s.mmu.columns);$('textPage').value=s.mmu.page2?'2':'1';$('store80').value=s.mmu.store80?'on':'off';
 $('screenMode').textContent=s.mmu.columns+'-column text · page '+(s.mmu.page2?'2':'1')+' · 80STORE '+(s.mmu.store80?'on':'off');
+$('lcBank').value=String(s.languageCard.bank);
+$('lcMode').value=s.languageCard.readRAM?(s.languageCard.writeEnabled?'ram-write':'ram-read'):(s.languageCard.writeEnabled?'rom-write':'rom-read');
+$('lcStatus').textContent='Bank '+s.languageCard.bank+' · '+(s.languageCard.readRAM?'RAM':'ROM')+' reads · RAM writes '+(s.languageCard.writeEnabled?'enabled':'protected')+' · '+(s.languageCard.aux?'auxiliary':'main')+' side';
 $('screen').textContent=s.screen;}
 function execute(op){const a=Math.max(0,Math.min(65535,Number($('lhs').value)||0)),b=Math.max(0,Math.min(65535,Number($('rhs').value)||0));
 [a&255,a>>8,b&255,b>>8].forEach((v,i)=>vm.bus.write(0xc0f4+i,v));vm.bus.write(0xc0f0,op);for(let i=0;i<3;i++)vm.bus.tick();
@@ -63,6 +72,14 @@ $('dma').addEventListener('click',()=>{vm.bus.load(0x0800,[73,78,70,73,78,73,84,
 $('colMode').addEventListener('change',()=>{if($('colMode').value==='80')vm.bus.write(0xc00d);else vm.bus.write(0xc00c);render();});
 $('textPage').addEventListener('change',()=>{if($('textPage').value==='2')vm.bus.write(0xc055);else vm.bus.write(0xc054);render();});
 $('store80').addEventListener('change',()=>{if($('store80').value==='on')vm.bus.write(0xc001);else vm.bus.write(0xc000);render();});
+const LC_READWRITE={2:0xc083,1:0xc08b};
+function selectLC(){const bank=Number($('lcBank').value),mode=$('lcMode').value;
+ const offset={'ram-read':0,'rom-write':1,'rom-read':2,'ram-write':3}[mode];
+ const address=mode==='ram-write'?LC_READWRITE[bank]:(bank===1?0xc088:0xc080)+offset;
+ vm.bus.read(address);if(offset&1)vm.bus.read(address);render();
+}
+$('lcBank').addEventListener('change',selectLC);
+$('lcMode').addEventListener('change',selectLC);
 $('gate').addEventListener('change',()=>{vm.fpga.configureGate($('gate').value);render();});
 $('logic').addEventListener('click',()=>{vm.fpga.configureGate($('gate').value);report('FPGA '+vm.fpga.gate+' = '+hex(vm.fpga.logic(Number($('a').value),Number($('b').value))));render();});
 $('compute').addEventListener('click',()=>execute(1));$('multiply').addEventListener('click',()=>execute(2));

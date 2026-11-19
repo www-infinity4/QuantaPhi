@@ -87,3 +87,11 @@ this observation do not by themselves prove deployment or a future task run.
 - The public read-only `/api/bubbles/public-x/context` endpoint is contextual; `/inbox` remains owner-only and excludes Integra posts even when they include #bubbles.
 - A merge of source code is not a Cloudflare Worker deployment receipt. Verify exact deployed version, current cron/bindings and D1 per-source timestamps before calling the integration live.
 - This does not enable X automatic replies, private timeline scraping, background microphone access, delegated X OAuth scopes, TinyFish billing or any new wallet action.
+
+## Additional StarCraftCo read-only public context (November 19, 2026)
+
+- Public source URL: https://x.com/StarCraftCo , supplied by requester via screenshots. The source is reference_only, not a replacement for the owner-command account @YahooPingcwlz.
+- Visible technical posts about White coordination, Pink assimilation, Red fanout and eBay/analytics research are captured in docs/STARCRAFTCO-X-20261119.md. No source status IDs or verified publication timestamps were visible in screenshots. One HypeStat-related X composer was a draft, not a published post.
+- Existing browser reader is extended with an exact-author StarCraftCo source and independent scan key. StarCraftCo context scans at 02:17 and 14:17 UTC (subject to actual worker deployment and public availability); /api/bubbles/public-x/context?account=StarCraftCo exposes public context. The existing default Integra endpoint and owner inbox remain unchanged.
+- The presence of a source or screenshot is not authorization to scrape private timelines, publish X replies, run code, mint tokens or deploy. A real successful scan records its own observed IDs/UTC receipts; blocked public rendering remains blocked, not a fake empty feed.
+- Stage source changes through review and target CI. Distinguish branch, PR, merged source, Worker deployment and live Android acceptance. HypeStat research continues existing QuantaPhi issue #1974.

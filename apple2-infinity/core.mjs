@@ -115,6 +115,9 @@ export class VirtualAppleBus {
     this.rom=new Uint8Array(0x3000);
     this.fpga=fpga;
     this.soft={store80:false,ramrd:false,ramwrt:false,altzp:false,col80:false,altcharset:false};
+    // Physically separate Language Card banks for main and auxiliary memory.
+    const makeSide=()=>({bank1:new Uint8Array(0x1000),bank2:new Uint8Array(0x1000),high:new Uint8Array(0x2000)});
+    this.lc={bank:2,readRAM:false,writeEnabled:false,prewrite:false,main:makeSide(),aux:makeSide()};
     this.video=new VirtualVideo(this);
     this.keyboard=0;this.cycles=0;this.phase=0;
   }
@@ -135,6 +138,32 @@ export class VirtualAppleBus {
       8:'altzp',9:'altzp',12:'col80',13:'col80',14:'altcharset',15:'altcharset'}[address&15];
     if(field)this.soft[field]=!!(address&1);
   }
+  languageCardSwitch(address,isRead){
+    // C080-C08F: bit 3 selects bank 1; bits 0-1 select read/write mode.
+    // Odd reads implement the two-read write-enable latch.
+    const mode=address&3;
+    this.lc.bank=(address&8)?1:2;
+    this.lc.readRAM=mode===0||mode===3;
+    if((mode&1)&&isRead){
+      this.lc.writeEnabled=this.lc.writeEnabled||this.lc.prewrite;
+      this.lc.prewrite=true;
+    }else{
+      this.lc.prewrite=false;
+      this.lc.writeEnabled=false;
+    }
+  }
+  languageCardArray(address){
+    const side=this.soft.altzp?this.lc.aux:this.lc.main;
+    return address<0xe000?side[this.lc.bank===1?'bank1':'bank2']:side.high;
+  }
+  readLanguageCard(address){
+    if(!this.lc.readRAM)return this.rom[address-0xd000];
+    return this.languageCardArray(address)[address<0xe000?address-0xd000:address-0xe000];
+  }
+  writeLanguageCard(address,value){
+    if(!this.lc.writeEnabled)return;
+    this.languageCardArray(address)[address<0xe000?address-0xd000:address-0xe000]=value;
+  }
   displaySwitch(address){
     const n=address&15,on=!!(n&1);
     switch(n>>1){
@@ -147,6 +176,7 @@ export class VirtualAppleBus {
   }
   status(address){
     const enabled={
+      0x11:this.lc.bank===2,0x12:this.lc.readRAM,
       0x13:this.soft.ramrd,0x14:this.soft.ramwrt,0x16:this.soft.altzp,
       0x18:this.soft.store80,0x1a:this.video.textMode,0x1b:this.video.mixed,
       0x1c:this.video.page2,0x1d:this.video.hires,0x1e:this.soft.altcharset,
@@ -160,16 +190,19 @@ export class VirtualAppleBus {
     if(address===0xc010){const v=this.keyboard;this.keyboard&=0x7f;return v;}
     if(address>=0xc011&&address<=0xc01f)return this.status(address);
     if(address>=0xc050&&address<=0xc057){this.displaySwitch(address);return 0;}
+    if(address>=0xc080&&address<=0xc08f){this.languageCardSwitch(address,true);return 0;}
     if(address>=IO_BASE&&address<IO_BASE+16)return this.fpga.read(address-IO_BASE);
-    if(address>=0xd000)return this.rom[address-0xd000];
+    if(address>=0xd000)return this.readLanguageCard(address);
     if(address<0xc000)return this.bank(address)[address];
     return this.ram[address]; // unmapped I/O stub, not accurate floating bus
   }
   write(address,value){address&=0xffff;value=byte(value);
     if(address>=0xc000&&address<=0xc00f){this.setMemorySwitch(address);return;}
     if(address>=0xc050&&address<=0xc057){this.displaySwitch(address);return;}
+    if(address>=0xc080&&address<=0xc08f){this.languageCardSwitch(address,false);return;}
     if(address>=IO_BASE&&address<IO_BASE+16){this.fpga.write(address-IO_BASE,value);return;}
     if(address===0xc030){this.video.speakerEdges++;return;}
+    if(address>=0xd000){this.writeLanguageCard(address,value);return;}
     if(address<0xc000)this.bank(address,true)[address]=value;
   }
   // Developer loader intentionally writes physical main memory, not the active CPU bank.
@@ -185,5 +218,5 @@ export class Apple2Infinity {
       0xa9,1,0x8d,0xf0,0xc0,0xad,0xf1,0xc0,0x29,2,0xf0,0xf9,0xad,0xf8,0xc0,0x8d,0x00,0x04,0x00];
     this.cpu.reset();this.bus.load(0x800,program);const result=this.cpu.run(10000,{stopOnBrk:true});return {...result,result:this.bus.read(0x400)};
   }
-  snapshot(){return {cpu:{a:this.cpu.a,x:this.cpu.x,y:this.cpu.y,pc:this.cpu.pc,cycles:this.bus.cycles},fpga:{status:this.fpga.reg[1],irq:this.fpga.irq,logic:this.fpga.gate,ramPhysical:this.fpga.ram.physicalBytes},cm5:{jobs:this.cm5.jobs,ramPhysical:this.cm5.ram.physicalBytes},sensors:{samples:this.sensors.samples,dac:this.sensors.dac},mmu:{...this.bus.soft,page2:this.bus.video.page2,hires:this.bus.video.hires,textMode:this.bus.video.textMode,mixed:this.bus.video.mixed,columns:this.bus.video.columns},screen:this.bus.video.frame()};}
+  snapshot(){return {cpu:{a:this.cpu.a,x:this.cpu.x,y:this.cpu.y,pc:this.cpu.pc,cycles:this.bus.cycles},fpga:{status:this.fpga.reg[1],irq:this.fpga.irq,logic:this.fpga.gate,ramPhysical:this.fpga.ram.physicalBytes},cm5:{jobs:this.cm5.jobs,ramPhysical:this.cm5.ram.physicalBytes},sensors:{samples:this.sensors.samples,dac:this.sensors.dac},mmu:{...this.bus.soft,page2:this.bus.video.page2,hires:this.bus.video.hires,textMode:this.bus.video.textMode,mixed:this.bus.video.mixed,columns:this.bus.video.columns},languageCard:{bank:this.bus.lc.bank,readRAM:this.bus.lc.readRAM,writeEnabled:this.bus.lc.writeEnabled,aux:this.bus.soft.altzp},screen:this.bus.video.frame()};}
 }
