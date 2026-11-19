@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T14:31:18.920376Z",
+  "checked_at": "2026-11-19T15:01:38.543442Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "lululemon black friday",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T14:40:00Z",
+      "related_news_urls": [
+        "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/",
+        "https://www.runnersworld.com/gear/a74377121/lululemon-black-friday-sale-2026/",
+        "https://www.menshealth.com/fitness/a74466918/lululemon-black-friday-sale-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhLrZHZfK0W9okNOjby43Y7nHz6Z6CAPU9YDEVXX2WuysJx-8wZ9lKj1h1ceE",
+      "image_credit": "Cosmopolitan",
+      "news": [
+        {
+          "url": "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/",
+          "title": "I’ve Been Wearing Lululemon for Over a Decade—These Are the Black Friday Deals I’d Shop First",
+          "publisher": "Cosmopolitan",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhLrZHZfK0W9okNOjby43Y7nHz6Z6CAPU9YDEVXX2WuysJx-8wZ9lKj1h1ceE"
+        },
+        {
+          "url": "https://www.runnersworld.com/gear/a74377121/lululemon-black-friday-sale-2026/",
+          "title": "lululemon’s Black Friday Finds Include Cold-Weather Running Gear Starting at $39",
+          "publisher": "Runner's World",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp61Hv188PAPayYPz-2_HkkwPiKLmjleoZrI-zvpW6Gk3HiTNOW1-kWfSxZYs"
+        },
+        {
+          "url": "https://www.menshealth.com/fitness/a74466918/lululemon-black-friday-sale-2026/",
+          "title": "Our Favorite Lululemon Lightweight Running Shorts Are 43% Off for Black Friday",
+          "publisher": "Men's Health",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQul3xvSvhaH7flkXJttLWU4-t0oQcEWaNG0qAwoZUwvDdSbgKhb0b-emANJCQ"
+        }
+      ]
+    },
+    {
+      "query": "dermot mulroney",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T14:30:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/dermot-mulroney-diane-keaton-family-stone-sequel-1236950731/",
+        "https://ryerecord.com/the-family-stone-sequel-to-film-holiday-scenes-in-rye/",
+        "https://mezha.net/eng/news/mezha-809d0f324dafea08ac447066_dermot_mulroney_says/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZE944M4Rl8ybdFXqDVelC6mhQRzHRhIC0-rYCBx5Eweoi0Cwkvpma4PSnYNk",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/dermot-mulroney-diane-keaton-family-stone-sequel-1236950731/",
+          "title": "Diane Keaton’s ‘Memory Is Honored in Everything‘ in ‘Family Stone’ Sequel, Says Star Dermot Mulroney",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZE944M4Rl8ybdFXqDVelC6mhQRzHRhIC0-rYCBx5Eweoi0Cwkvpma4PSnYNk"
+        },
+        {
+          "url": "https://ryerecord.com/the-family-stone-sequel-to-film-holiday-scenes-in-rye/",
+          "title": "‘The Family Stone’ Sequel to Film Holiday Scenes in Rye",
+          "publisher": "Rye Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ79xAJ0SFu77XAdZMH-t8ATyPJP7OXPKat3TA-v5LbGnQ8GjPAkqZJGZz-p7E"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-809d0f324dafea08ac447066_dermot_mulroney_says/",
+          "title": "Dermot Mulroney Says ‘The Family Stone’ Sequel Honors Diane Keaton’s Memory",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnn05CKKG50Xa8eAs94Rnk4Fdn-8lTENnl1x0o6_DpdmMUNvd3VmVbVxBoXIw"
+        }
+      ]
+    },
+    {
+      "query": "kurt van dyke",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T14:30:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/kurt-van-dyke-killed-costa-rica-girlfriend-arrest/",
+        "https://www.yahoo.com/news/videos/surf-legend-kurt-van-dykes-012320082.html",
+        "https://www.foxnews.com/us/surfing-legend-found-stabbed-death-under-bed-girlfriend-accused-letting-thugs-wipe-him-out"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqZJhBA1KDInuOYyJ5wymhVAKgAnLxWhuFixmfUiPIKAs2oKVym5DYS-vNgU",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/kurt-van-dyke-killed-costa-rica-girlfriend-arrest/",
+          "title": "Brother of American killed in Costa Rica says he's focused on justice after arrest of former girlfriend",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqZJhBA1KDInuOYyJ5wymhVAKgAnLxWhuFixmfUiPIKAs2oKVym5DYS-vNgU"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/surf-legend-kurt-van-dykes-012320082.html",
+          "title": "American surfer Kurt Van Dyke's girlfriend and another man arrested for his murder",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRh2koX05thbNh0g-DLMHZmmfiwEHM4rymdridNRzWCV2poqsdlzv5tDOttuM"
+        },
+        {
+          "url": "https://www.foxnews.com/us/surfing-legend-found-stabbed-death-under-bed-girlfriend-accused-letting-thugs-wipe-him-out",
+          "title": "Surfing legend found stabbed to death under bed – girlfriend accused of letting thugs in to wipe him out",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPkbaGs4zMbK-GNqQ_Kp1b6KAsGH5lKweR1BjEjeSexlcsmIA_53EEYtIWqQM"
+        }
+      ]
+    },
+    {
+      "query": "thanksgiving",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T14:20:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/thanksgiving-prices-turkey-costs-diesel-dinner-5c5f6f4fd28ce2ff3cbfb1398cf28fd0",
+        "https://www.fb.org/intel/markets/thanksgiving-dinner-cost-ticks-upward-in-2026",
+        "https://www.dispatch.com/story/grocery/2026/11/19/what-thanksgiving-staples-cost-at-columbus-area-grocery-stores-in-2026/92841723007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4r7c-zoKudEUC1eu9uNIBpp3V5VTT69ZVLb-lHrNFUABIKkV6alLYQnTBCk",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/thanksgiving-prices-turkey-costs-diesel-dinner-5c5f6f4fd28ce2ff3cbfb1398cf28fd0",
+          "title": "Americans will pay more for Thanksgiving dinners this year, Farm Bureau says",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4r7c-zoKudEUC1eu9uNIBpp3V5VTT69ZVLb-lHrNFUABIKkV6alLYQnTBCk"
+        },
+        {
+          "url": "https://www.fb.org/intel/markets/thanksgiving-dinner-cost-ticks-upward-in-2026",
+          "title": "Thanksgiving Dinner Cost Ticks Upward in 2026",
+          "publisher": "American Farm Bureau Federation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzsfjR9s0oq88XOiVT4HSTM-eyB623gPl51vy_wgn9fKw3sSYjYn20-dvlQzA"
+        },
+        {
+          "url": "https://www.dispatch.com/story/grocery/2026/11/19/what-thanksgiving-staples-cost-at-columbus-area-grocery-stores-in-2026/92841723007/",
+          "title": "Turkey is a pricier this year. How about the rest of your holiday menu?",
+          "publisher": "The Columbus Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKA7dHMjz-4MwO4mrQzDhoVl0wHgIxakDn7XwziiIUcVeydzTVeSEBiAyi0iw"
+        }
+      ]
+    },
+    {
+      "query": "bert kreischer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T14:20:00Z",
+      "related_news_urls": [
+        "https://www.masslive.com/centralmass/2026/11/comic-says-hell-fund-college-for-child-of-woman-who-had-contractions-at-his-worcester-show.html",
+        "https://hoodline.com/2026/11/bert-kreischer-s-college-fund-pledge-after-worcester-show-has-not-been-confirmed-as-an-account/",
+        "https://dailyvoice.com/article/bert-kreischer-promises-to-pay-for-babys-college-after-mom-has-contractions-at-mass-show/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK-IOTOGBHEJ14sBAEtYCT5OiAZbCpVxMhZ3ynMECzTf_-xJ6NVBIwosoXpgM",
+      "image_credit": "MassLive",
+      "news": [
+        {
+          "url": "https://www.masslive.com/centralmass/2026/11/comic-says-hell-fund-college-for-child-of-woman-who-had-contractions-at-his-worcester-show.html",
+          "title": "Mass. woman's contractions at Worcester comedy show might get her kid's college paid",
+          "publisher": "MassLive",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK-IOTOGBHEJ14sBAEtYCT5OiAZbCpVxMhZ3ynMECzTf_-xJ6NVBIwosoXpgM"
+        },
+        {
+          "url": "https://hoodline.com/2026/11/bert-kreischer-s-college-fund-pledge-after-worcester-show-has-not-been-confirmed-as-an-account/",
+          "title": "Framingham Woman's Contractions at Kreischer Show in Worcester",
+          "publisher": "Hoodline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO3-bk97qWESAW3faohGnK0aYcqyXiiDDcidDgcPsa9AOS0p3DL1krKezehBw"
+        },
+        {
+          "url": "https://dailyvoice.com/article/bert-kreischer-promises-to-pay-for-babys-college-after-mom-has-contractions-at-mass-show/",
+          "title": "Bert Kreischer To Pay For Baby's College After Mom Has Contractions Laughing At Worcester Show",
+          "publisher": "DailyVoice.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9Wloh4CXhiirR_VsmdWkudnVbUYNLVUwUzR6zRwlf8aRAaxNfBQr05_1ayWM"
+        }
+      ]
+    },
+    {
+      "query": "finn wittrock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T14:20:00Z",
+      "related_news_urls": [
+        "https://www.abc27.com/hershey/hershey-movie-has-its-red-carpet-premiere-at-hershey-theatre/",
+        "https://triblive.com/local/westmoreland/from-ligonier-to-the-red-carpet-hershey-biopic-makes-its-debut/",
+        "https://www.hollywoodreporter.com/movies/movie-reviews/hershey-review-finn-wittrock-alexandra-daddario-chocolate-1236757233/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSofTdcgf7ywO5txTuTBpoACHL_cCMUld3vkCfafGFScgYQEAig68TS6B7S9Qc",
+      "image_credit": "ABC27",
+      "news": [
+        {
+          "url": "https://www.abc27.com/hershey/hershey-movie-has-its-red-carpet-premiere-at-hershey-theatre/",
+          "title": "‘Hershey’ movie has its red carpet premiere at Hershey Theatre",
+          "publisher": "ABC27",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSofTdcgf7ywO5txTuTBpoACHL_cCMUld3vkCfafGFScgYQEAig68TS6B7S9Qc"
+        },
+        {
+          "url": "https://triblive.com/local/westmoreland/from-ligonier-to-the-red-carpet-hershey-biopic-makes-its-debut/",
+          "title": "From Ligonier to the red carpet, ‘Hershey’ biopic makes its debut",
+          "publisher": "TribLIVE.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLzUQNLAEbvSzg-tV1ue9U5zJJkILtiruHfN6B5KiBfOvrP_tf350rQ90kQMU"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/hershey-review-finn-wittrock-alexandra-daddario-chocolate-1236757233/",
+          "title": "‘Hershey’ Review: Finn Wittrock Plays the American Chocolate Titan in a Sickly Sweet Biopic",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2u7N0_FzgKNrO4_EPIqA1oZcfsiQYf9ftR9Xr-j5gTA9OJLvzT7UVpptSFTU"
+        }
+      ]
+    },
+    {
+      "query": "corte suprema",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T14:10:00Z",
+      "related_news_urls": [
+        "https://www.dw.com/es/trump-pide-al-supremo-bloquear-fallo-que-restituye-protecci%C3%B3n-migratoria-a-cientos-de-miles-de-venezolanos/a-79986699",
+        "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/inmigracion/video/unos-1-800-inmigrantes-detenidos-estan-entre-los-afectados-por-la-disputa-judicial-sobre-el-tps-tmvo13246052",
+        "https://www.lmtonline.com/news/article/gobierno-de-trump-presenta-apelaci-n-ante-corte-22538201.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGZVijLJCGFicoFv_bi3lf3aVRiqS1fI7w_EHpgs94gIkKR-DJ8mbVjidFiL4",
+      "image_credit": "DW.com",
+      "news": [
+        {
+          "url": "https://www.dw.com/es/trump-pide-al-supremo-bloquear-fallo-que-restituye-protecci%C3%B3n-migratoria-a-cientos-de-miles-de-venezolanos/a-79986699",
+          "title": "Trump solicita a la Corte frenar restitución del TPS para miles de venezolanos",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGZVijLJCGFicoFv_bi3lf3aVRiqS1fI7w_EHpgs94gIkKR-DJ8mbVjidFiL4"
+        },
+        {
+          "url": "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/inmigracion/video/unos-1-800-inmigrantes-detenidos-estan-entre-los-afectados-por-la-disputa-judicial-sobre-el-tps-tmvo13246052",
+          "title": "Unos 1,800 inmigrantes detenidos están entre los afectados por la disputa judicial sobre el TPS",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4VNNrD7ziXiwBS9yejH3yWRy4n1l2KBJ9cr7xe8ofahVQeDKwB7htDJvecmw"
+        },
+        {
+          "url": "https://www.lmtonline.com/news/article/gobierno-de-trump-presenta-apelaci-n-ante-corte-22538201.php",
+          "title": "Gobierno de Trump presenta apelación ante Corte Suprema por protecciones a migrantes venezolanos",
+          "publisher": "Laredo Morning Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBnHzd8duJE4OQGKR5pGCP39quuC0FbGEeBymT1xob8dgh2sx_MB9J5hj6Utw"
+        }
+      ]
+    },
     {
       "query": "meg ryan",
       "approx_searches": "200+",
@@ -78,7 +323,7 @@
     },
     {
       "query": "when does the stock market open",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T14:00:00Z",
       "related_news_urls": [
         "https://www.news-journalonline.com/story/news/education/2026/11/11/school-today-florida-veterans-day/92675380007/",
@@ -108,243 +353,6 @@
           "publisher": "the City of Cambridge (.gov)",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeo2KXDxNU5PpEe5S0xIfwWPE0h5l87mf_RUISctO968L_a7MnU8WnPBJkwmI"
-        }
-      ]
-    },
-    {
-      "query": "annmarie hordern",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T13:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/19/world/asia/trump-summit-china-media-bloomberg-reporter-nvidia.html",
-        "https://www.foxnews.com/politics/china-blocks-bloomberg-reporter-trump-putin-xi-meeting-question-trump",
-        "https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcXUxzhqSBmmZnYBHt8CLDkJxKLbar-c0RNtDCfd5pHxHk-Tf7JnQPOVEgvwY",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/19/world/asia/trump-summit-china-media-bloomberg-reporter-nvidia.html",
-          "title": "China Bars Bloomberg Reporter From Trilateral Talks for Asking a Question",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcXUxzhqSBmmZnYBHt8CLDkJxKLbar-c0RNtDCfd5pHxHk-Tf7JnQPOVEgvwY"
-        },
-        {
-          "url": "https://www.foxnews.com/politics/china-blocks-bloomberg-reporter-trump-putin-xi-meeting-question-trump",
-          "title": "China blocks Bloomberg reporter from Trump-Putin-Xi meeting over question to Trump",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgSdi_YZ5LoFA3yvGrNraNezepeRlnjAgAstxU6nAHLkaRshy2w6sYGsfDIko"
-        },
-        {
-          "url": "https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/",
-          "title": "Reporter banned from summit after asking Trump about Jensen Huang in front of Chinese leader",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnledk7H3TS4WXYdORQGoIq8XLde5UDOd8nLq44dyfuCFhSzu3LnnJJhBw7NA"
-        }
-      ]
-    },
-    {
-      "query": "bob woodward",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T13:40:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/17/arts/bob-wordward-secrets-memoir/",
-        "https://www.commonwealmagazine.org/scialabba-george-bob-woodward-reagan",
-        "https://www.yahoo.com/news/videos/bob-woodward-talks-memoir-secrets-085454740.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGiAjbj5YgfXP5Q5lytMp-8xENN7b7YYVT1MkrXdN5dhoDMYCf8XuNBEJlpMY",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/17/arts/bob-wordward-secrets-memoir/",
-          "title": "Iconic journalist Bob Woodward titled his memoir ‘Secrets,’ but he doesn’t spill many",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGiAjbj5YgfXP5Q5lytMp-8xENN7b7YYVT1MkrXdN5dhoDMYCf8XuNBEJlpMY"
-        },
-        {
-          "url": "https://www.commonwealmagazine.org/scialabba-george-bob-woodward-reagan",
-          "title": "The Triviality of Bob Woodward",
-          "publisher": "Commonweal Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8_Gz5dYnLYtT39Ht-0N6wEdco1PHRWykM_zWrGj9yOdd43X_uJkwOzf5WSu4"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/bob-woodward-talks-memoir-secrets-085454740.html",
-          "title": "Bob Woodward talks new memoir, 'Secrets'",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPeczzu9gwwftxO6DBm2Or5PRcV2ezKwgLRvh2lnqVstJrFIxDT-2kLQQfhxQ"
-        }
-      ]
-    },
-    {
-      "query": "nitto atp finals",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-19T13:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/1DOjWbMEJi6q/",
-        "https://sports.yahoo.com/articles/chris-eubanks-surprised-flavio-cobolli-110000374.html",
-        "https://www.tennismajors.com/atp/nitto-atp-finals-atp/i-deserved-to-win-the-first-set-cobollis-body-gave-out-after-an-hour-in-turin-867289.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUmNKTRxFjtSbywF6Fv5Ay5Bht1crgBYtzzcaGK6GuEOisJw_9ZhApMOSgDCg",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/1DOjWbMEJi6q/",
-          "title": "How day four of the ATP Finals 2026 unfolded as Alcaraz eased past Medvedev and Tiafoe beat Cobolli",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUmNKTRxFjtSbywF6Fv5Ay5Bht1crgBYtzzcaGK6GuEOisJw_9ZhApMOSgDCg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/chris-eubanks-surprised-flavio-cobolli-110000374.html",
-          "title": "Chris Eubanks surprised by Flavio Cobolli’s attitude on court in defeat to Frances Tiafoe",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRY7wZ4_P5Noy5MD4P-m8UbgO1hhHuby4oH8b92bkktjFupB3e9Va6IZDA8Bp0"
-        },
-        {
-          "url": "https://www.tennismajors.com/atp/nitto-atp-finals-atp/i-deserved-to-win-the-first-set-cobollis-body-gave-out-after-an-hour-in-turin-867289.html",
-          "title": "“I deserved to win the first set”: Cobolli’s body gave out after an hour in Turin",
-          "publisher": "Tennis Majors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5rZBPlOGYhQLs-QLpAlKPSNGlGxRP0c9N4ySEz1pUP3Z2u76darEFJ4L8hZ0"
-        }
-      ]
-    },
-    {
-      "query": "$ant",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T13:40:00Z",
-      "related_news_urls": [
-        "https://www.taste.com.au/food-news/actually-sugar-ants-get-rid-them/d5zoi2zi",
-        "https://www.monitor.co.ug/uganda/news/national/lwengo-man-killed-in-fake-white-ant-catching-expedition-5675734"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDi47IIx8v152Br6M76Y7dZpkLb4EG6U_82Z2AEyREOIoomEEQjmEooARVIoE",
-      "image_credit": "Taste",
-      "news": [
-        {
-          "url": "https://www.taste.com.au/food-news/actually-sugar-ants-get-rid-them/d5zoi2zi",
-          "title": "What actually are sugar ants (and how do I get rid of them?)",
-          "publisher": "Taste",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDi47IIx8v152Br6M76Y7dZpkLb4EG6U_82Z2AEyREOIoomEEQjmEooARVIoE"
-        },
-        {
-          "url": "https://www.monitor.co.ug/uganda/news/national/lwengo-man-killed-in-fake-white-ant-catching-expedition-5675734",
-          "title": "Lwengo man killed in fake white ant-catching expedition",
-          "publisher": "Daily Monitor",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8XZNJ73ilUiqZQiF8KdE9KDSueOSK2cd14uodXhavHC6g0kTw1ztxpEnY3CU"
-        }
-      ]
-    },
-    {
-      "query": "9to5google",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T13:40:00Z",
-      "related_news_urls": [
-        "https://www.droid-life.com/2026/11/18/app-lock-is-back-on-android-17-heres-how-i-got-it/",
-        "https://www.digitaltrends.com/phones/google-brings-back-app-lock-for-pixel-with-a-stable-release-set-for-q1-2027/",
-        "https://www.neowin.net/news/android-is-finally-getting-native-app-lock-but-users-already-want-these-additional-features/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDPXY0L4azTGAP27Aas1hH4tzprcwiiAEP4ABA1mnt10Kr9BfwNUWzPteaiEQ",
-      "image_credit": "Droid Life",
-      "news": [
-        {
-          "url": "https://www.droid-life.com/2026/11/18/app-lock-is-back-on-android-17-heres-how-i-got-it/",
-          "title": "App Lock is Back on Android 17 – Here’s How I Got It",
-          "publisher": "Droid Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDPXY0L4azTGAP27Aas1hH4tzprcwiiAEP4ABA1mnt10Kr9BfwNUWzPteaiEQ"
-        },
-        {
-          "url": "https://www.digitaltrends.com/phones/google-brings-back-app-lock-for-pixel-with-a-stable-release-set-for-q1-2027/",
-          "title": "Google brings back App Lock for Pixel, with a wide release set for Q1 2027",
-          "publisher": "Digital Trends",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuB6af-MJT3qGdKfXcUxbRfEZpZBZ4vEg8PitTwOXpcJM0qnijzb-NQWeDAWQ"
-        },
-        {
-          "url": "https://www.neowin.net/news/android-is-finally-getting-native-app-lock-but-users-already-want-these-additional-features/",
-          "title": "Android is finally getting native App Lock, but users already want these additional features",
-          "publisher": "Neowin",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjQbcZ4dEo9LMorh69b0PSOXfG5KkvGIjwwN6QIJE4o4bYpcn1JDWkBPWTlY"
-        }
-      ]
-    },
-    {
-      "query": "ben shelton",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T13:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50513841/alexander-zverev-beats-ben-shelton-semis-atp-finals",
-        "https://sports.yahoo.com/articles/alexander-zverev-match-ben-shelton-000000942.html",
-        "https://www.atptour.com/en/news/nitto-atp-finals-2026-results"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUc4vRbW0u1NtJVodFZDpRAmwyubZTTkHHszSyic5k-Ivu1PS0m419VcDQtzI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50513841/alexander-zverev-beats-ben-shelton-semis-atp-finals",
-          "title": "Alexander Zverev improved to 7-0 vs. Ben Shelton, advancing to ATP Finals semis",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUc4vRbW0u1NtJVodFZDpRAmwyubZTTkHHszSyic5k-Ivu1PS0m419VcDQtzI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/alexander-zverev-match-ben-shelton-000000942.html",
-          "title": "Alexander Zverev’s match with Ben Shelton at the ATP Finals angers tennis fans, ‘I feel so bad’",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6PpY1cYr7FB-8UUs6ErZ9QyK6awL7uGUvqa3Xr6ASo2WCTbxwQJKhIqNtPA4"
-        },
-        {
-          "url": "https://www.atptour.com/en/news/nitto-atp-finals-2026-results",
-          "title": "What were the Nitto ATP Finals results?",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSlkVLen6f6twXKM69RZQyxUXSNRfsE1N1PDHcr6lBgGvnYlbMeZvimmkCzk"
-        }
-      ]
-    },
-    {
-      "query": "brooks koepka",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T13:30:00Z",
-      "related_news_urls": [
-        "https://www.pgatour.com/article/news/latest/2026/11/18/brooks-koepka-new-swing-new-coaches-the-rsm-classic-leaderboard-preview",
-        "https://www.skysports.com/golf/news/13613712/brooks-koepka-american-labels-his-2026-pga-tour-season-a-disappointment-and-targets-2027-ryder-cup-spot",
-        "https://sports.yahoo.com/articles/koepka-sideline-fury-fuel-needs-085436964.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR94pOBoqel181eVSdmK343htm317rQGlGWewDw5H8TNhvZ8EKYcG3FR02Guqc",
-      "image_credit": "PGA Tour",
-      "news": [
-        {
-          "url": "https://www.pgatour.com/article/news/latest/2026/11/18/brooks-koepka-new-swing-new-coaches-the-rsm-classic-leaderboard-preview",
-          "title": "Brooks Koepka brings new swing, coaches to The RSM Classic debut in pursuit of returning to top form",
-          "publisher": "PGA Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR94pOBoqel181eVSdmK343htm317rQGlGWewDw5H8TNhvZ8EKYcG3FR02Guqc"
-        },
-        {
-          "url": "https://www.skysports.com/golf/news/13613712/brooks-koepka-american-labels-his-2026-pga-tour-season-a-disappointment-and-targets-2027-ryder-cup-spot",
-          "title": "Brooks Koepka: American labels his 2026 PGA Tour season a 'disappointment' and targets 2027 Ryder Cup spot",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFl2OwNWK9UshXrs_WCMNpFr_lHEU8GsJqRv1VXQb5vUd91Dj7jW715PXlNAo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/koepka-sideline-fury-fuel-needs-085436964.html",
-          "title": "Koepka’s Sideline Fury Is The Fuel He Needs For Adare Manor",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWR-mwfzUHL91VvQMWjqk4KPYqBMkU4YUnpRloM7enl2JSJCslh2S3m-HC-Xs"
         }
       ]
     }
