@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T20:31:14.347204Z",
+  "checked_at": "2026-11-19T21:01:13.185209Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "rams schedule",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T20:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50512215/rams-bye-rest-ramp-week-11",
+        "https://www.therams.com/news/3-keys-to-winning-for-rest-of-rams-season-heading-into-bye-week-2026",
+        "https://sports.yahoo.com/articles/4-players-must-perform-better-182012176.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZmfOc3iZZSPdFaoS746J703HO8Nevd1qSmvzDtxfraBVdpr1bYdb1p7nm9ws",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50512215/rams-bye-rest-ramp-week-11",
+          "title": "A Rams bye means time for rest and ramping up",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZmfOc3iZZSPdFaoS746J703HO8Nevd1qSmvzDtxfraBVdpr1bYdb1p7nm9ws"
+        },
+        {
+          "url": "https://www.therams.com/news/3-keys-to-winning-for-rest-of-rams-season-heading-into-bye-week-2026",
+          "title": "3 Keys to Winning for rest of Rams' season heading into bye week",
+          "publisher": "Rams",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fpCiHQrc5_cLzA7cZcawZvBF2euOEQeJybzc03o7emFJUtWLZNUkn4B1ZxQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/4-players-must-perform-better-182012176.html",
+          "title": "4 players who must perform better for the Rams after the bye",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ4nVFIliv8BKf0vOy2YEbu_l1YFKMp9BlTs1rV7v7c5LR-U1EaSQoA94qh8s"
+        }
+      ]
+    },
+    {
+      "query": "sentence",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T20:40:00Z",
+      "related_news_urls": [
+        "https://www.news9.com/crime/stillwater-man-life-sentence-child-sexual-abuse-lee-clark",
+        "https://okcfox.com/news/local/fbi-identifies-at-least-8-victims-stillwater-man-gets-life-in-federal-prison",
+        "https://kfor.com/news/local/79-year-old-stillwater-man-sentenced-to-life-for-child-sexual-abuse-crimes/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFR5f_YWc5cp2LlwLjU2LY7yiCpLebjxxj5fEGpqg83ZC04X5XQLVpOhAJB2Q",
+      "image_credit": "News 9",
+      "news": [
+        {
+          "url": "https://www.news9.com/crime/stillwater-man-life-sentence-child-sexual-abuse-lee-clark",
+          "title": "Stillwater man sentenced to life in federal prison for child sexual abuse",
+          "publisher": "News 9",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFR5f_YWc5cp2LlwLjU2LY7yiCpLebjxxj5fEGpqg83ZC04X5XQLVpOhAJB2Q"
+        },
+        {
+          "url": "https://okcfox.com/news/local/fbi-identifies-at-least-8-victims-stillwater-man-gets-life-in-federal-prison",
+          "title": "FBI identifies at least 8 victims; Stillwater man gets life in federal prison",
+          "publisher": "KOKH",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmF4voBAr9C-RZo3U7W64TB7I5VJrtMDC7MUeBnL_yDJWuNuh6vn6q_euZuqQ"
+        },
+        {
+          "url": "https://kfor.com/news/local/79-year-old-stillwater-man-sentenced-to-life-for-child-sexual-abuse-crimes/",
+          "title": "79-year-old Stillwater man sentenced to life for child sexual abuse crimes",
+          "publisher": "KFOR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlj3xJ7nrI9W0lMdmtJVGLRjefVIs20ZTTa-bk_U-otEinPsH1ZvdJapCGXV8"
+        }
+      ]
+    },
+    {
+      "query": "puka nacua",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-19T20:30:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/sports/rams/story/2026-11-19/nfl-suspends-rams-star-puka-nacua",
+        "https://sports.yahoo.com/articles/puka-nacua-suspended-nfl-203518733.html",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/tommy-tremble-knee-returns-to-practice"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRQV5a7Hl-RQcKEN8gsphClc_d2LlQ4561GhzBtfXzC0e_2_VMDqATQ5EZNf8",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/sports/rams/story/2026-11-19/nfl-suspends-rams-star-puka-nacua",
+          "title": "NFL suspends Rams star Puka Nacua for violating its personal-conduct policy",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRQV5a7Hl-RQcKEN8gsphClc_d2LlQ4561GhzBtfXzC0e_2_VMDqATQ5EZNf8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/puka-nacua-suspended-nfl-203518733.html",
+          "title": "Puka Nacua suspended by the NFL",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNfnP1lWGqtT63minSFhlQAtyzUunEae4YqJufhF7tICIsYxG0OGg23jpVuD8"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/tommy-tremble-knee-returns-to-practice",
+          "title": "Tommy Tremble (knee) returns to practice",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8SIN_ywcOVhKyb7lMgj4VxjU8rQDcUlvJqknYE_xDwqV4SWfGdN-II2sC65o"
+        }
+      ]
+    },
+    {
+      "query": "calmatters",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T20:30:00Z",
+      "related_news_urls": [
+        "https://calmatters.org/politics/2026/11/california-republican-losses/",
+        "https://www.sfchronicle.com/politics/article/republican-democrat-state-california-22524256.php",
+        "https://crpa.org/news/crpa/californias-new-reality-first-in-a-series-from-chuck-michel/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI4qEqbFn4XIXqDlwdlDwwQ3E6N6d9OjZl7i8zZoZwoOv8_uG-UqhH9-ro1wA",
+      "image_credit": "CalMatters",
+      "news": [
+        {
+          "url": "https://calmatters.org/politics/2026/11/california-republican-losses/",
+          "title": "Can California Republicans turn their “dumpster fire” around?",
+          "publisher": "CalMatters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI4qEqbFn4XIXqDlwdlDwwQ3E6N6d9OjZl7i8zZoZwoOv8_uG-UqhH9-ro1wA"
+        },
+        {
+          "url": "https://www.sfchronicle.com/politics/article/republican-democrat-state-california-22524256.php",
+          "title": "California Republicans just suffered their worst defeat in history. Does the party have a future?",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8wjzCl7bB2vrpV5Ys7OySQVG9EDMtnh7RZHQ1-SmFzdBVyJGUUd9zoJv5vxo"
+        },
+        {
+          "url": "https://crpa.org/news/crpa/californias-new-reality-first-in-a-series-from-chuck-michel/",
+          "title": "California’s New Reality: First In A Series From Chuck Michel",
+          "publisher": "California Rifle & Pistol Association",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLODuIEai31FOjJttm95PiqtAJ02VFUl7mLI-64pe2jlEYu9xcr4btfnUjK8Q"
+        }
+      ]
+    },
     {
       "query": "drew mestemaker",
       "approx_searches": "1000+",
@@ -47,7 +187,7 @@
       "published_at": "2026-11-19T20:10:00Z",
       "related_news_urls": [
         "https://www.foxnews.com/outkick-culture/landman-adds-another-big-name-scott-speedman-signs-oil-drama-third-season",
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/does-scott-speedman-joining-landman-132508229.html",
+        "https://www.tvinsider.com/1304564/scott-speedman-landman-role-rj-decker-canceled-renewed-season-3/",
         "https://www.tvline.com/2321137/scott-speedman-landman-season-3-selling-sunset-season-10-cast/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEzvCiKK3gQedPUWWHAWb2EZQrSucRYGp8XVhWoYUCmNK8iU3CnScqxoO3sUg",
@@ -61,11 +201,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEzvCiKK3gQedPUWWHAWb2EZQrSucRYGp8XVhWoYUCmNK8iU3CnScqxoO3sUg"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/does-scott-speedman-joining-landman-132508229.html",
+          "url": "https://www.tvinsider.com/1304564/scott-speedman-landman-role-rj-decker-canceled-renewed-season-3/",
           "title": "Does Scott Speedman Joining ‘Landman’ Mean Bad News for ‘R.J. Decker’?",
-          "publisher": "Yahoo",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7G1zqOkbp47qyM9HSKxzND4nQexK5Ht6FTpPCZjFefHPXV8gV2f5YhlsSVoI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtmdhSbRhwmvWumvt9f9C9qt2H3_2Q93d7siIPnLEuyiI1YBoexODparhfCS4"
         },
         {
           "url": "https://www.tvline.com/2321137/scott-speedman-landman-season-3-selling-sunset-season-10-cast/",
@@ -118,7 +258,7 @@
       "related_news_urls": [
         "https://www.eurosport.fr/tennis/atp-finals-1/2026/atp-finals-2026-arthur-fils-qualifie-en-demi-finales-du-masters-si_sto23356308/story.shtml",
         "https://www.lequipe.fr/Tennis/Actualites/Dans-les-conditions-rapides-des-finales-atp-alexander-zverev-adversaire-d-arthur-fils-est-pratiquement-impossible-a-breaker/1744530",
-        "https://www.linternaute.com/television/emission-sportive-tennis-atp-finals-1er-jour-p6278948/tennis-atp-finals-henry-patten-harri-heliovaara-theo-arribage-albano-olivetti-e7137738/"
+        "https://www.lefigaro.fr/sports/tennis/en-direct-tennis-oppose-a-zverev-arthur-fils-n-a-plus-le-choix-au-masters-20261119"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZC3g1XKrHYlkUw0we6HJj3f9tpbSErNpspSiOvURDsnlNa2jNa7u6y3jQ974",
       "image_credit": "Eurosport",
@@ -138,52 +278,17 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR04_1frcKLJkqCo7fEIUUBa8XOi1Fw0mybODXGPQ3syEQvmVSL7iNI5uFD8s"
         },
         {
-          "url": "https://www.linternaute.com/television/emission-sportive-tennis-atp-finals-1er-jour-p6278948/tennis-atp-finals-henry-patten-harri-heliovaara-theo-arribage-albano-olivetti-e7137738/",
-          "title": "Tennis : ATP Finals, à la tv",
-          "publisher": "Linternaute.com",
+          "url": "https://www.lefigaro.fr/sports/tennis/en-direct-tennis-oppose-a-zverev-arthur-fils-n-a-plus-le-choix-au-masters-20261119",
+          "title": "EN DIRECT - Tennis : Zverev remporte le premier set contre Fils qui ne verra pas le dernier carré du Masters",
+          "publisher": "Le Figaro",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqUVpQl_IeWQko8OfhvT2kfzVWBQ9cwg09yN0vbrsJpm9Osb6CyarZP3fCVlE"
-        }
-      ]
-    },
-    {
-      "query": "zverev",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-19T19:40:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
-        "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
-        "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
-          "title": "Shelton defeats Jodar, now awaits Nitto ATP Finals SF fate",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI"
-        },
-        {
-          "url": "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
-          "title": "ATP Finals: Ben Shelton beats Rafael Jodar to move within touching distance of semi-finals",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH47ZQ2zVJcVSkwamqYVF23FQFhfT-Zj85JA1c-VR3Or8bGiiqjE6zzrYOiYM"
-        },
-        {
-          "url": "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sf-qualification-scenarios-16-november",
-          "title": "Nitto ATP Finals 2026 SF Qualification Scenarios 16 November | Nitto ATP Finals | Tennis",
-          "publisher": "Nitto ATP Finals",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLuV9YZssD8GFROW-oOH40LhxaIGHRFE-s3HbIkkQuf67mD8zQBb9O1NfhePc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDkTlKQ6kpTz3XbaXtPjprHNYovfwK8Nz8mtW6vOyMyK5B9kwykiCoBdoHt2M"
         }
       ]
     },
     {
       "query": "federal emergency management agency",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T19:40:00Z",
       "related_news_urls": [
         "https://www.c-span.org/event/house-committee/fema-administrator-testifies-on-agencys-disaster-readiness/449687",
@@ -217,142 +322,37 @@
       ]
     },
     {
-      "query": "nasa voyager 1",
-      "approx_searches": "500+",
+      "query": "zverev",
+      "approx_searches": "10000+",
       "published_at": "2026-11-19T19:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/18/science/nasa-voyager-1-earth-light-day.html",
-        "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
-        "https://www.cnn.com/2026/11/18/science/voyager-1-light-day"
+        "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
+        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/ZWrCJhdAjkP7/",
+        "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGJ7A9457hsIjQ_IMVZdNzwu7nN0bFGboZUk4gCmfpHkCSjQxjqR7hYcX_FHA",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI",
+      "image_credit": "ATP Tour",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/18/science/nasa-voyager-1-earth-light-day.html",
-          "title": "After 49 Years, Voyager 1 Is a Mind-Blowing One Light-Day From Earth",
+          "url": "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
+          "title": "Shelton defeats Jodar, now awaits Nitto ATP Finals SF fate",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/ZWrCJhdAjkP7/",
+          "title": "ATP Finals 2026 live updates: Alexander Zverev leads Arthur Fils; Ben Shelton beats Rafael Jodar on Day 5",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGJ7A9457hsIjQ_IMVZdNzwu7nN0bFGboZUk4gCmfpHkCSjQxjqR7hYcX_FHA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRdpGJ_lK_MtsOA-fjJOavZRIt0eiaIH7jepmgI0814SbZYs-3R5QrZkub8Zg"
         },
         {
-          "url": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
-          "title": "Voyager 1 Engineers Analyze Data Issue, Ready to Confirm Light-day",
-          "publisher": "NASA Science (.gov)",
+          "url": "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
+          "title": "ATP Finals: Ben Shelton beats Rafael Jodar to move within touching distance of semi-finals",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtbeBzTcQ76db7wAIn4Gv-J--I2vlX8FGi5nkb0morW3vETALM3IDqBX4BjF8"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/18/science/voyager-1-light-day",
-          "title": "NASA’s Voyager 1 is now one light-day away from Earth",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGm06VTVoOgPuZskVlDhpcRGZJTN9vMYXIpHqdgH_Vsn3oIgzf6oB73-IohHs"
-        }
-      ]
-    },
-    {
-      "query": "corey ruiz",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T19:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/19/us/madison-police-shooting",
-        "https://www.channel3000.com/news/exclusive-madison-braces-for-das-decision-on-corey-ruiz-shooting-tomorrow/article_025e2b3c-2c78-43f7-b4bd-78466ef04914.html",
-        "https://www.wmtv15news.com/2026/11/19/dane-county-da-announces-charging-decision-madison-police-fatal-shooting-corey-ruiz/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6uj1olu5Azq56wptZSCCT_pl_mtL_t8vtYrWydJU3Xjht3fm-j5w_Tn8-u0A",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/19/us/madison-police-shooting",
-          "title": "Prosecutor declines to charge a White police officer who fatally shot a Black man in Wisconsin",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6uj1olu5Azq56wptZSCCT_pl_mtL_t8vtYrWydJU3Xjht3fm-j5w_Tn8-u0A"
-        },
-        {
-          "url": "https://www.channel3000.com/news/exclusive-madison-braces-for-das-decision-on-corey-ruiz-shooting-tomorrow/article_025e2b3c-2c78-43f7-b4bd-78466ef04914.html",
-          "title": "Exclusive: Madison braces for DA's decision on Corey Ruiz shooting tomorrow",
-          "publisher": "Channel 3000",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpZS9aiyqD8kn2iN9KJKXc7N3dwsj1oCbTEr252-xw66d2YHhE4jUR3hHsDUY"
-        },
-        {
-          "url": "https://www.wmtv15news.com/2026/11/19/dane-county-da-announces-charging-decision-madison-police-fatal-shooting-corey-ruiz/",
-          "title": "🔴LIVE: Dane County DA announces charging decision in Madison police fatal shooting of Corey Ruiz",
-          "publisher": "WMTV 15 NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5-dH2c27nxfO2kwDkDpugC_Am36ar3ukvTH1RYYaUQF1-dXJStMNzLRUrQRU"
-        }
-      ]
-    },
-    {
-      "query": "hyundai elantra",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T19:40:00Z",
-      "related_news_urls": [
-        "https://www.caranddriver.com/photos/a74470042/2027-hyundai-elantra-revealed-exterior-gallery/",
-        "https://www.motortrend.com/reviews/first-look-2027-2028-hyundai-elantra",
-        "https://www.usatoday.com/videos/cars/news/auto-shows/2026/11/19/2027-hyundai-elantra-la-auto-show/92864719007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRKDsxmxHcchXPbYazgtvggSsjkzvTmGGTlpbGrblPghqSHpyqsmO78PybcuE",
-      "image_credit": "Car and Driver",
-      "news": [
-        {
-          "url": "https://www.caranddriver.com/photos/a74470042/2027-hyundai-elantra-revealed-exterior-gallery/",
-          "title": "View Exterior Photos of the 2027 Hyundai Elantra",
-          "publisher": "Car and Driver",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRKDsxmxHcchXPbYazgtvggSsjkzvTmGGTlpbGrblPghqSHpyqsmO78PybcuE"
-        },
-        {
-          "url": "https://www.motortrend.com/reviews/first-look-2027-2028-hyundai-elantra",
-          "title": "Hyundai’s New 2027 Elantra Compact Sedan Just Got a Lot More Interesting",
-          "publisher": "MotorTrend",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQqR33JSaa70ATYJo_h0hkfQYRv_N7qBYyyPYjtWINgLtWtMaAPKzvarXHGZA"
-        },
-        {
-          "url": "https://www.usatoday.com/videos/cars/news/auto-shows/2026/11/19/2027-hyundai-elantra-la-auto-show/92864719007/",
-          "title": "Hyundai gave the Elantra a 'bold' makeover at the LA Auto Show. See it",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGFbamCoKOIbBYW-Tsexw5UOzyOGeeeJfg-a8MNuO2HP_0qrryQDh2lZzyQN0"
-        }
-      ]
-    },
-    {
-      "query": "andrew marsh",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T19:30:00Z",
-      "related_news_urls": [
-        "https://www.mlive.com/news/ann-arbor/2026/11/michigan-footballs-andrew-marsh-charged-with-indecent-exposure.html",
-        "https://www.cbssports.com/college-football/news/michigan-wr-andrew-marsh-charged-indecent-exposure/",
-        "https://sports.yahoo.com/articles/michigan-football-star-charged-indecent-192458804.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGXgewL0KIIYNRXGOx6xxLycX6t7Xsxc8whKmUeOkAk34yUITU4WysKw7Z8Kc",
-      "image_credit": "MLive.com",
-      "news": [
-        {
-          "url": "https://www.mlive.com/news/ann-arbor/2026/11/michigan-footballs-andrew-marsh-charged-with-indecent-exposure.html",
-          "title": "Michigan football’s Andrew Marsh charged with indecent exposure",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGXgewL0KIIYNRXGOx6xxLycX6t7Xsxc8whKmUeOkAk34yUITU4WysKw7Z8Kc"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/michigan-wr-andrew-marsh-charged-indecent-exposure/",
-          "title": "Michigan WR Andrew Marsh charged with misdemeanor indecent exposure",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4wp9DhhWrFE3i-cm8_mqSG-zfsS2HyUv3NslhA49GO3i_dZx3-_nCvMdXPiY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/michigan-football-star-charged-indecent-192458804.html",
-          "title": "Michigan Football Star Charged With Indecent Exposure",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgJZXG44erlf-WjTkfUiTWaP2rMk74UE7PmKvr6740Rb1Jok5WKB_RaZIRWig"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH47ZQ2zVJcVSkwamqYVF23FQFhfT-Zj85JA1c-VR3Or8bGiiqjE6zzrYOiYM"
         }
       ]
     }
