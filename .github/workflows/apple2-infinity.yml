@@ -1,0 +1,22 @@
+name: Apple II Infinity software prototype
+on:
+  pull_request:
+    paths:
+      - 'apple2-infinity/**'
+      - 'test/apple2-infinity.test.mjs'
+      - '.github/workflows/apple2-infinity.yml'
+  push:
+    paths:
+      - 'apple2-infinity/**'
+      - 'test/apple2-infinity.test.mjs'
+      - '.github/workflows/apple2-infinity.yml'
+jobs:
+  node-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Model checks
+        run: node --test test/apple2-infinity.test.mjs
