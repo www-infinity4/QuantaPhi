@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T00:45:14.609878Z",
+  "checked_at": "2026-11-19T01:01:35.361783Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "sophie cunningham",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-19T00:40:00Z",
+      "related_news_urls": [
+        "https://www.maxim.com/sports/indiana-fever-star-sophie-cunningham-on-viral-fame-her-enforcer-reputation-wnba-commissioner-dreams/",
+        "https://www.foxnews.com/outkick-sports/sophie-cunningham-says-fans-thank-her-standing-women-girls-fame-brings-security-concerns",
+        "https://www.si.com/onsi/athlete-lifestyle/sophie-cunningham-reveals-what-shes-looking-for-in-a-future-husband"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbDzfnixkhOdwBmKhe-EK4HvdIfWu3jAPNlU8T3M9BAAxpfV0mTfjf34PT21Y",
+      "image_credit": "Maxim",
+      "news": [
+        {
+          "url": "https://www.maxim.com/sports/indiana-fever-star-sophie-cunningham-on-viral-fame-her-enforcer-reputation-wnba-commissioner-dreams/",
+          "title": "Indiana Fever Star Sophie Cunningham On Viral Fame, Her ‘Enforcer’ Reputation & WNBA Commissioner Dreams",
+          "publisher": "Maxim",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbDzfnixkhOdwBmKhe-EK4HvdIfWu3jAPNlU8T3M9BAAxpfV0mTfjf34PT21Y"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/sophie-cunningham-says-fans-thank-her-standing-women-girls-fame-brings-security-concerns",
+          "title": "Sophie Cunningham says fans thank her for standing up for women and girls as fame brings security concerns",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr9MMuRuLU3XSAoMmWpbzaDcWtOVvZ0YpsiKNP8r7u3_zCM1XaS0TxvGJYXpA"
+        },
+        {
+          "url": "https://www.si.com/onsi/athlete-lifestyle/sophie-cunningham-reveals-what-shes-looking-for-in-a-future-husband",
+          "title": "Sophie Cunningham Reveals What She's Looking for in a Future Husband",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy9gfrNOf1NTvO21yLn391W7itbfg1QQNouhN6iuzbVVWqILbdk6h0inFie7w"
+        }
+      ]
+    },
+    {
+      "query": "soldier",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T00:40:00Z",
+      "related_news_urls": [
+        "https://taskandpurpose.com/culture/army-reenlistment-gta-vi/",
+        "https://www.washingtonpost.com/national-security/2026/11/18/soldiers-sign-up-play-grand-theft-auto-vi-exchange-reenlisting/",
+        "https://www.foxnews.com/politics/dozens-army-soldiers-sign-up-unique-reenlistment-incentive-play-grand-theft-auto-vi"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQk89_8mIeYSNyaB-dxWFv5xZ09ubJfVKoWw1IA5BC9WO0If4bLxlWClkaDFqw",
+      "image_credit": "Task & Purpose",
+      "news": [
+        {
+          "url": "https://taskandpurpose.com/culture/army-reenlistment-gta-vi/",
+          "title": "43 soldiers said yes to more Army if they could play ‘GTA VI’",
+          "publisher": "Task & Purpose",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQk89_8mIeYSNyaB-dxWFv5xZ09ubJfVKoWw1IA5BC9WO0If4bLxlWClkaDFqw"
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2026/11/18/soldiers-sign-up-play-grand-theft-auto-vi-exchange-reenlisting/",
+          "title": "Soldiers sign up to play ‘Grand Theft Auto VI’ in exchange for reenlisting",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsoJvdIubpzvEZYxBAs794OZhmWJIzwj7x3IPND3lwFmSEnYp-zXMaMaWZjxU"
+        },
+        {
+          "url": "https://www.foxnews.com/politics/dozens-army-soldiers-sign-up-unique-reenlistment-incentive-play-grand-theft-auto-vi",
+          "title": "Dozens of Army soldiers sign up for unique reenlistment incentive to play Grand Theft Auto VI",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH2mugVYSwTYPx7FKpMGH-7njvmq-aZglgsQ8IlAvS9r6O5EJxERHAwXGGESs"
+        }
+      ]
+    },
+    {
+      "query": "cait conley",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/2026-elections/new-york-house-results",
+        "https://www.forbes.com/sites/saradorn/2026/11/05/midterm-election-results-live-updates-democrat-ousts-lawler-in-new-york-43rd-gop-house-district-flipped/",
+        "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-17-results"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1mwDYHyDkf1aTaubQyyY_caXMOpQ9SFpo_G99RWKJ4z9ECwu5z5Tz5d2sD5Y",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/new-york-house-results",
+          "title": "New York U.S. House Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1mwDYHyDkf1aTaubQyyY_caXMOpQ9SFpo_G99RWKJ4z9ECwu5z5Tz5d2sD5Y"
+        },
+        {
+          "url": "https://www.forbes.com/sites/saradorn/2026/11/05/midterm-election-results-live-updates-democrat-ousts-lawler-in-new-york-43rd-gop-house-district-flipped/",
+          "title": "Midterm Election Results (Live Updates): Democrat Ousts Lawler In New York—43rd GOP House District Flipped",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj9EScjQG_Tm__NCL6dHPJIdzGFZJ3LUQQuUrLpMk8JdKsYdUUEeNeC3p9LEE"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-17-results",
+          "title": "New York House District 17 Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEmPADyN35RGPvKBP2a5MMQVfZYzzqoND4cXUO7tgxrZ0S0Z2Tx3WVei7PwlA"
+        }
+      ]
+    },
+    {
+      "query": "indiana fever",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T00:40:00Z",
+      "related_news_urls": [
+        "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/11/18/caitlin-clark-indiana-fever-roster-needs-wnba-draft-play-style/92845764007/",
+        "https://bleacherreport.com/articles/25534981-caitlin-clark-talks-fevers-wnba-offseason-roster-needs-video-travis-jason-kelce",
+        "https://highposthoops.com/napheesa-collier-fever-sounds-perfect-until-you-consider-franchise"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpXb-aezCqr1dr4kD6MN4671wDBgnDpyQkbfW4oScENnKrNURJuAR7BZhj4io",
+      "image_credit": "IndyStar",
+      "news": [
+        {
+          "url": "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/11/18/caitlin-clark-indiana-fever-roster-needs-wnba-draft-play-style/92845764007/",
+          "title": "Caitlin Clark on what Indiana Fever roster needs, WNBA draft importance",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpXb-aezCqr1dr4kD6MN4671wDBgnDpyQkbfW4oScENnKrNURJuAR7BZhj4io"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25534981-caitlin-clark-talks-fevers-wnba-offseason-roster-needs-video-travis-jason-kelce",
+          "title": "Caitlin Clark Talks Fever's WNBA Offseason Roster Needs in Video With Travis, Jason Kelce",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlVdAMtCUTBjpa_xjoHgVOH_5gBy9BCtpThbnq3dF3l2gs7GWOH3xfC-sXraM"
+        },
+        {
+          "url": "https://highposthoops.com/napheesa-collier-fever-sounds-perfect-until-you-consider-franchise",
+          "title": "Napheesa Collier to the Fever sounds perfect until you consider the franchise",
+          "publisher": "High Post Hoops",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5AlycWFdFLMlyJwh3n2_o1a1uN1DzT6amvjWavaQHE7Bh2owGOlutKP1DDBY"
+        }
+      ]
+    },
+    {
+      "query": "neymar",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/santos-vs-coritiba-lineups-neymar-204816821.html",
+        "https://athlonsports.com/soccer/santos-vs-coritiba-lineups-is-neymar-playing-tonight",
+        "https://sports.yahoo.com/articles/bayern-munich-starlet-tim-binder-213000516.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD5WPXsWYp93LFZzcrfDNAXPnodM-u_vM0y7KgDADxFJgjYJVJ7TnStMg2Wfk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/santos-vs-coritiba-lineups-neymar-204816821.html",
+          "title": "Santos vs. Coritiba Lineups: Is Neymar Playing Tonight?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD5WPXsWYp93LFZzcrfDNAXPnodM-u_vM0y7KgDADxFJgjYJVJ7TnStMg2Wfk"
+        },
+        {
+          "url": "https://athlonsports.com/soccer/santos-vs-coritiba-lineups-is-neymar-playing-tonight",
+          "title": "Santos vs. Coritiba Lineups: Is Neymar Playing Tonight?",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjE2DuAZUfCDvNYd46_TeYYcnU_3UQqQ6zUXL1kHxOtWt_7LYVH6PrOoS4nyw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/bayern-munich-starlet-tim-binder-213000516.html",
+          "title": "Bayern Munich starlet Tim Binder likens his playing style to Neymar",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKdTWzzo681Uj1AyZ78UucKazkhDf-ts-ywbvp4txJCBSPF5ALFjcmea6yhE"
+        }
+      ]
+    },
     {
       "query": "anthony black",
       "approx_searches": "500+",
@@ -43,12 +218,12 @@
     },
     {
       "query": "cedric coward",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T00:30:00Z",
       "related_news_urls": [
         "https://www.nba.com/watch/video/game-recap-grizzlies-129-nets-110-nov-14",
         "https://www.sportsline.com/nba/game-forecast/NBA_20261114_BKN@MEM/",
-        "https://www.espn.com/video/clip/_/id/17518510/cedric-coward-clave-en-el-triunfo-de-grizzlies-contra-nets"
+        "https://www.foxsports.com/articles/nba/memphis-faces-brooklyn-looks-to-end-home-skid"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfSO_ldUEQQ4yl3kRNCrqyebdkSeQTx5a8Qy7g3Gh_vD3GJaMlU5gb2tkFdz0",
       "image_credit": "NBA.com",
@@ -68,11 +243,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA1zJmcJqRgpaIvZ7Z8FtxZXi969LuxFy8WJHdR8Qi7UOmPZmuP7kKxcCa2rU"
         },
         {
-          "url": "https://www.espn.com/video/clip/_/id/17518510/cedric-coward-clave-en-el-triunfo-de-grizzlies-contra-nets",
-          "title": "Cedric Coward, clave en el triunfo de Grizzlies contra Nets",
-          "publisher": "ESPN",
+          "url": "https://www.foxsports.com/articles/nba/memphis-faces-brooklyn-looks-to-end-home-skid",
+          "title": "Memphis faces Brooklyn, looks to end home skid",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSj5wl-F32_dxgx0uZRFAEdc3243pPFyrfXdhdqJctuMljG_XgdXCZ_Tb-SQ_Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
+        }
+      ]
+    },
+    {
+      "query": "miami vice",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T00:30:00Z",
+      "related_news_urls": [
+        "https://people.com/jill-collins-charity-auction-phil-collins-exclusive-12260791",
+        "https://www.loudersound.com/bands-artists/phil-collins-king-s-trust-auction-live-aid-miami-vice",
+        "https://www.yahoo.com/entertainment/music/new-albums/articles/dress-phil-collins-live-aid-170000552.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbrLJTj2QvFCdlKct22w9ii7kDkJ8B99KQNz0nVtFriUKt42Zzfp9CtvT1ekk",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/jill-collins-charity-auction-phil-collins-exclusive-12260791",
+          "title": "Jill Collins Says She and Ex Phil Collins Put Together Charity Auction as a ‘Team’ — and Reveals Her Favorite Item (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbrLJTj2QvFCdlKct22w9ii7kDkJ8B99KQNz0nVtFriUKt42Zzfp9CtvT1ekk"
+        },
+        {
+          "url": "https://www.loudersound.com/bands-artists/phil-collins-king-s-trust-auction-live-aid-miami-vice",
+          "title": "Dress like Phil Collins at Live Aid or on Miami Vice via charity auction",
+          "publisher": "Louder",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVEjT1RaJLIkZVLFu9JmcTgTQGcjNXvh3nBMxpaLKUhuqXKNDPhRjMP0giKjk"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/new-albums/articles/dress-phil-collins-live-aid-170000552.html",
+          "title": "Dress like Phil Collins at Live Aid or on Miami Vice via charity auction",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_NyTpH4RhoYULCEh_79447KffhqpJuSqYGGeRPiedwa-BcTypvSafbwF2Pt8"
         }
       ]
     },
@@ -113,7 +323,7 @@
     },
     {
       "query": "cornyn trump",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-19T00:20:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/18/politics/republican-cornyn-blocks-trump-judicial-nomination-gaiser-texas",
@@ -143,216 +353,6 @@
           "publisher": "Reuters",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYbNg8zKcRt0dzPvkWLyzkwiG-93YOwuzLQZRYUrFeIaXBR6j789RMJ7urjGU"
-        }
-      ]
-    },
-    {
-      "query": "desmond bane",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T00:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909994",
-        "https://www.nba.com/watch/video/game-recap-magic-115-celtics-105-nov-16",
-        "https://orlandomagicdaily.com/orlando-magics-process-building-confidence-delivering-wins-01m7kkyxy7km"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTjTtMyr1RCFUg6Ib_H1XcGw8azB31VMEXtl9pGEZVchEm1Pg09E7kWBdUK-I",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909994",
-          "title": "Magic 115-105 Celtics (Nov 16, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTjTtMyr1RCFUg6Ib_H1XcGw8azB31VMEXtl9pGEZVchEm1Pg09E7kWBdUK-I"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/game-recap-magic-115-celtics-105-nov-16",
-          "title": "Game Recap: Magic 115, Celtics 105 (Nov. 16)",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUd3FO9y1OkRPMPrS9QGADXZPjMm-qBgEgXgPrdgZ-8IR6LuS5SbUoaL_FJM"
-        },
-        {
-          "url": "https://orlandomagicdaily.com/orlando-magics-process-building-confidence-delivering-wins-01m7kkyxy7km",
-          "title": "Orlando Magic's process is building confidence and delivering wins",
-          "publisher": "Orlando Magic Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR737NN1cy8yoPiGZe_l8mGxGAY3Se3ulGA5HPYxpYM6_veNS1wPhGdJliuwOw"
-        }
-      ]
-    },
-    {
-      "query": "iowa state vs northern iowa",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T00:20:00Z",
-      "related_news_urls": [
-        "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-womens/2026/11/18/iowa-state-womens-basketball-uni-where-to-watch-time-channel-tv/92846081007/",
-        "https://cyclones.com/news/2026/11/17/womens-basketball-primer-iowa-state-at-uni",
-        "https://unipanthers.com/news/2026/11/17/womens-basketball-uni-womens-basketball-hosts-in-state-rival-iowa-state-in-second-consecutive-home-contest"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5z6CHdhU90E_6FFyn6FbD2i6ZTTDt4ML8lua-dhPM7MiO_77-dIH1SBAToZE",
-      "image_credit": "The Des Moines Register",
-      "news": [
-        {
-          "url": "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-womens/2026/11/18/iowa-state-womens-basketball-uni-where-to-watch-time-channel-tv/92846081007/",
-          "title": "How to watch Iowa State women's basketball vs UNI today",
-          "publisher": "The Des Moines Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5z6CHdhU90E_6FFyn6FbD2i6ZTTDt4ML8lua-dhPM7MiO_77-dIH1SBAToZE"
-        },
-        {
-          "url": "https://cyclones.com/news/2026/11/17/womens-basketball-primer-iowa-state-at-uni",
-          "title": "PRIMER: Iowa State at UNI",
-          "publisher": "Iowa State Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG_XwEQqe7KvDQoo7vaFF6Q8VAteRevig9ZgcwOoX5wyPFgAnczndjsfU9ZVs"
-        },
-        {
-          "url": "https://unipanthers.com/news/2026/11/17/womens-basketball-uni-womens-basketball-hosts-in-state-rival-iowa-state-in-second-consecutive-home-contest",
-          "title": "UNI women’s basketball hosts in-state rival Iowa State in second consecutive home contest",
-          "publisher": "UNI Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVvVgTIrxfzAittyuNK_CdSwDqMPpYbDrLrOx6UVNszGlMrsYt6FYcv8-OdqE"
-        }
-      ]
-    },
-    {
-      "query": "st john's basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T00:20:00Z",
-      "related_news_urls": [
-        "https://www.timesunion.com/sports/article/st-johns-basketball-vs-siena-preview-pitino-22534121.php",
-        "https://sports.yahoo.com/articles/one-bold-prediction-st-johns-200001597.html",
-        "https://www.news10.com/sports/saints-and-danes/saints-ready-to-march-into-battle-with-13th-ranked-st-johns/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkaVtL1kMpsXV8c3_TxTRa_V-JDmEWCc2v7cIJjLY5xfsiW-TXnXBvsxhwS-4",
-      "image_credit": "Times Union",
-      "news": [
-        {
-          "url": "https://www.timesunion.com/sports/article/st-johns-basketball-vs-siena-preview-pitino-22534121.php",
-          "title": "'You never know what can happen': Siena basketball set to take on Rick Pitino's No. 13 St. John's",
-          "publisher": "Times Union",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkaVtL1kMpsXV8c3_TxTRa_V-JDmEWCc2v7cIJjLY5xfsiW-TXnXBvsxhwS-4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/one-bold-prediction-st-johns-200001597.html",
-          "title": "One Bold Prediction for St. John's Basketball vs. Siena",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3xK2L00jhW0eHxWffbbucgiv9jVxRkAVOXGiG5126cfrcaGC-XP88UsAFAHE"
-        },
-        {
-          "url": "https://www.news10.com/sports/saints-and-danes/saints-ready-to-march-into-battle-with-13th-ranked-st-johns/",
-          "title": "Saints ready to march into battle with 13th-ranked St. John’s",
-          "publisher": "NEWS10 ABC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnwdjfhWY7zTeKFZkvKJnGBLvAid4AlTYaakmXyAP_yJcfazTzFG6S5zQUtyU"
-        }
-      ]
-    },
-    {
-      "query": "ole miss vs ohio state",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T00:20:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/stories/womens-college-basketball/how-watch-ole-miss-vs-ohio-state-womens-basketball-tv-channel-live-stream-time-nov-18-2026",
-        "https://sports.yahoo.com/articles/3-things-watch-no-19-143100492.html",
-        "https://ohiostatebuckeyes.com/news/2026/11/16/womens-basketball-ohio-state-hosts-ole-miss-on-wednesday-for-90s-night"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHBDVUOMV4S883bWaZDMmr7-MFWO18wyxfFgxiSCF2A_DV8CHvo19_Kuf5tXg",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/stories/womens-college-basketball/how-watch-ole-miss-vs-ohio-state-womens-basketball-tv-channel-live-stream-time-nov-18-2026",
-          "title": "How to Watch Ole Miss vs. Ohio State Women's Basketball: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHBDVUOMV4S883bWaZDMmr7-MFWO18wyxfFgxiSCF2A_DV8CHvo19_Kuf5tXg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/3-things-watch-no-19-143100492.html",
-          "title": "3 things to watch when No. 19 Ole Miss faces No. 19 Ohio State women’s basketball",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb908nvXMeAKOwjlQoufGDjVfs8OQWDo-LhUSH6Plx2zV0vWz7uIZ548rt7zQ"
-        },
-        {
-          "url": "https://ohiostatebuckeyes.com/news/2026/11/16/womens-basketball-ohio-state-hosts-ole-miss-on-wednesday-for-90s-night",
-          "title": "Ohio State Hosts Ole Miss on Wednesday for 90’s Night",
-          "publisher": "Ohio State | Official Athletics Website",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDOdSf9akSQay7nEZmod2mMxV2DmrRlIvX6RwoQHPNWdpMGitvmHr0WHzPnJs"
-        }
-      ]
-    },
-    {
-      "query": "wayne gretzky",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T00:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50502384/nhl-2026-27-connor-mcdavid-scoring-200-points-stats-record-wayne-gretzky",
-        "https://www.nhl.com/video/edm-fla-mcdavid-scores-ppg-against-jacob-markstrom-6408522334112",
-        "https://edmontonjournal.com/sports/hockey/nhl/edmonton-oilers/barely-a-peep-from-tkachuk-bros-as-edmonton-oilers-humble-florida-panthers"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRMMZ8YONAfIxtfA59Q3jhWTuqh666tX5nnezeHVCA0BYrIAi_y91k5yUXPNw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50502384/nhl-2026-27-connor-mcdavid-scoring-200-points-stats-record-wayne-gretzky",
-          "title": "The Connor McDavid Scoring Tracker: Can the Oilers' superstar break 200 points?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRMMZ8YONAfIxtfA59Q3jhWTuqh666tX5nnezeHVCA0BYrIAi_y91k5yUXPNw"
-        },
-        {
-          "url": "https://www.nhl.com/video/edm-fla-mcdavid-scores-ppg-against-jacob-markstrom-6408522334112",
-          "title": "McDavid's point streak continues with PPG",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQR-qBjaW2T6WqXTXQYINjb7livzJt_pB_T9lpglLd71EXHVR9SZIGgJXHk-vA"
-        },
-        {
-          "url": "https://edmontonjournal.com/sports/hockey/nhl/edmonton-oilers/barely-a-peep-from-tkachuk-bros-as-edmonton-oilers-humble-florida-panthers",
-          "title": "Barely a peep from Tkachuk Bros. as Edmonton Oilers humble Florida Panthers",
-          "publisher": "Edmonton Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD5cXKGkBr1wGan_TUfTEpi6S5Ry0Gww8Z2XoH8pRu5iPDvuy0oP45Wg7_X9w"
-        }
-      ]
-    },
-    {
-      "query": "hawks vs thunder",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-19T00:10:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/atlanta-hawks-dort-wiggins-face-oklahoma-city-thunder",
-        "https://sports.yahoo.com/articles/hawks-vs-thunder-live-updates-000032216.html",
-        "https://www.koco.com/article/sports-former-oklahoma-city-thunder-players-return-paycom-center/74469804"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8Ulm6ktXIEZsvqEjPIOatkqAmtk6BURfQYbQzTQ5a2rOB5L1_epjw5EKZHM",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/atlanta-hawks-dort-wiggins-face-oklahoma-city-thunder",
-          "title": "Lu Dort knows his first return to Oklahoma City will be emotional and 'surreal'",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8Ulm6ktXIEZsvqEjPIOatkqAmtk6BURfQYbQzTQ5a2rOB5L1_epjw5EKZHM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/hawks-vs-thunder-live-updates-000032216.html",
-          "title": "Hawks vs. Thunder: Live updates, highlights for Wednesday's game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQD-tLL4ytAoGo4HpTCc2OfOyaGGofwqUYlK4ZqpUbsjnHOXFs-TREJG-bS1XE"
-        },
-        {
-          "url": "https://www.koco.com/article/sports-former-oklahoma-city-thunder-players-return-paycom-center/74469804",
-          "title": "Former Oklahoma City Thunder players return to Paycom Center",
-          "publisher": "KOCO",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRR2xFgVjvwawPOfIsD81cR8El2pJqX-R2OVlpbj_GjR1CsbTO86OH8h3HjPzQ"
         }
       ]
     }
