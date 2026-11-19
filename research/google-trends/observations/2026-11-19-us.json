@@ -3,17 +3,297 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T21:01:13.185209Z",
+  "checked_at": "2026-11-19T21:31:22.739845Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "rams schedule",
+      "query": "troy aikman",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T21:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
+        "https://sports.yahoo.com/articles/disgruntled-nothing-lose-good-chance-210355724.html",
+        "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
+          "title": "Troy Aikman takes dig at Joe Buck, extending tensions: ‘Joe’s always wanted a 1-man booth’ - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/disgruntled-nothing-lose-good-chance-210355724.html",
+          "title": "‘Disgruntled With Nothing To Lose,’ ‘There’s a Good Chance He’s Done Now’ — NFL Fans Question Troy Aikman’s ESPN Future After ‘One-Man Booth’ Remark",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrsDew-pG4OohyBhUntJTpFzrD63r9yRoH4zGpknEUpfqlhxJ1Sy4C9u25pb0"
+        },
+        {
+          "url": "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242",
+          "title": "Troy Aikman escalates ongoing feud with Joe Buck, saying broadcast partner ‘always wanted a one-man booth’",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsZG4o50zce7tg1bwnNg6a5rXYGaPjM8brC8p-NdldcwgNXgavX3-3lbNzOtM"
+        }
+      ]
+    },
+    {
+      "query": "nascar whelen modified tour",
       "approx_searches": "500+",
+      "published_at": "2026-11-19T21:10:00Z",
+      "related_news_urls": [
+        "https://racedayct.com/2026/11/thunder-road-announces-nascar-whelen-modified-tickets-on-sale-now-online-ticket-purchases-available-in-2027/",
+        "https://sports.yahoo.com/articles/nascar-community-hit-heartbreaking-loss-160605762.html",
+        "https://www.wpri.com/sports/nascar-news/seekonk-grand-prix-owner-local-racing-legend-dies/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_gbhyq4w5lGiM5qFvPys1MBCAZOvSrvaAjjhPROCbOHGJwoH4arXVqh5T_lE",
+      "image_credit": "RaceDayCT.com -",
+      "news": [
+        {
+          "url": "https://racedayct.com/2026/11/thunder-road-announces-nascar-whelen-modified-tickets-on-sale-now-online-ticket-purchases-available-in-2027/",
+          "title": "Thunder Road Announces NASCAR Whelen Modified Tickets On Sale Now, Online Ticket Purchases Available In 2027",
+          "publisher": "RaceDayCT.com -",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_gbhyq4w5lGiM5qFvPys1MBCAZOvSrvaAjjhPROCbOHGJwoH4arXVqh5T_lE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nascar-community-hit-heartbreaking-loss-160605762.html",
+          "title": "NASCAR Community Hit With Heartbreaking Loss as Championship-Winning Racing Figure Dies",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5CkotCDv37LaUNEq9Q73Mj9ggjbDVd-uJ-oqP2NlCr2MjrXwVgnhB05fuVk"
+        },
+        {
+          "url": "https://www.wpri.com/sports/nascar-news/seekonk-grand-prix-owner-local-racing-legend-dies/",
+          "title": "Seekonk Grand Prix owner, local racing legend dies",
+          "publisher": "WPRI.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3vulU8R5g-bTFHQBXf-b5BDrMNf8TdJOU-_v6KcDIgkgTDraDocVCW-Ffj9c"
+        }
+      ]
+    },
+    {
+      "query": "intu stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T21:10:00Z",
+      "related_news_urls": [
+        "https://www.barchart.com/story/news/8902300/dear-intuit-stock-fans-mark-your-calendars-for-november-19",
+        "https://kalkine.com.au/news/technology/what-could-shape-the-outcome-for-intuit-nasdaqintu-ross-stores-and-gap-when-they-report-on-november-19",
+        "https://www.tradingkey.com/news/earnings/262313950-"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmAlu3OBQp0Z8noxHnhMfjaHXeKg323pwu7xquObjbXeKb5dl0Z6bVxUmKnv4",
+      "image_credit": "Barchart.com",
+      "news": [
+        {
+          "url": "https://www.barchart.com/story/news/8902300/dear-intuit-stock-fans-mark-your-calendars-for-november-19",
+          "title": "Dear Intuit Stock Fans, Mark Your Calendars for November 19",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmAlu3OBQp0Z8noxHnhMfjaHXeKg323pwu7xquObjbXeKb5dl0Z6bVxUmKnv4"
+        },
+        {
+          "url": "https://kalkine.com.au/news/technology/what-could-shape-the-outcome-for-intuit-nasdaqintu-ross-stores-and-gap-when-they-report-on-november-19",
+          "title": "What Could Shape the Outcome for Intuit (NASDAQ:INTU), Ross Stores and Gap When They Report on November 19?",
+          "publisher": "Kalkine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxPhNM0I1KFVC0WQRMnAqwInosB-zxsaRyjqtQaSuQCspHP5aK4uvfr8ELBc"
+        },
+        {
+          "url": "https://www.tradingkey.com/news/earnings/262313950-",
+          "title": "Intuit Q1 FY2027 Earnings: Online Growth and Cost Discipline Lift Profit",
+          "publisher": "TradingKey",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyg96KSjfT4k_-JG_YJbJfUG42bByR0_Ct1ol4uPdmRDcrvpPqpXENqaUzkqw"
+        }
+      ]
+    },
+    {
+      "query": "julia stiles",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T21:00:00Z",
+      "related_news_urls": [
+        "https://people.com/julia-styles-shares-who-she-wants-to-win-dancing-with-the-stars-ahead-of-the-season-35-finale-exclusive-12264395",
+        "https://ew.com/julia-stiles-shares-her-dwts-winner-pick-12264907",
+        "https://www.imdb.com/news/ni66104982/?ref_=int_nwr_3"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQOVya43lLAhkBKGsW-PCgYqstfQgtn5pNqVeRIZgnV033v6Tt9DP6fMM4UVo",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/julia-styles-shares-who-she-wants-to-win-dancing-with-the-stars-ahead-of-the-season-35-finale-exclusive-12264395",
+          "title": "Julia Stiles Shares Who She Wants to Win Dancing with the Stars Ahead of the Season 35 Finale (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQOVya43lLAhkBKGsW-PCgYqstfQgtn5pNqVeRIZgnV033v6Tt9DP6fMM4UVo"
+        },
+        {
+          "url": "https://ew.com/julia-stiles-shares-her-dwts-winner-pick-12264907",
+          "title": "Julia Stiles is torn between 2 teams to cheer for ahead of the ‘DWTS’ season 35 finale",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJDIrGMvLKU6GNKqV_da3BCRecbjElRRAUJd3oUBhsVLm8LkfREjMPGJrZICo"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66104982/?ref_=int_nwr_3",
+          "title": "Ezra Sosa Reflects on “Bittersweet” ‘DWTS’ Elimination, Working With Julia Stiles and Who He Wants to Win Season 35 (Exclusive)",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzTHRV_enMFRcPCT3cADvgXyV2ybfWP-nZ87Ix9w_jErfbrWhBGrm5IojvwxI"
+        }
+      ]
+    },
+    {
+      "query": "denver weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T21:00:00Z",
+      "related_news_urls": [
+        "https://kdvr.com/weather/weather-forecast/denver-weather-dry-warm-tuesday-ahead-of-shower-chances/",
+        "https://www.yahoo.com/news/weather-news/articles/denver-weather-partly-sunny-seasonal-143354569.html",
+        "https://www.kktv.com/2026/11/19/clear-cool-overnight-ahead-another-weekend-system/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHs9z7YIKCeYyGRiOrPmVpwvr-ap2Ctj87QYCtlagSUMvvvms_RU8o8sDFas",
+      "image_credit": "KDVR",
+      "news": [
+        {
+          "url": "https://kdvr.com/weather/weather-forecast/denver-weather-dry-warm-tuesday-ahead-of-shower-chances/",
+          "title": "Denver weather: Dry, warm Tuesday ahead of shower chances",
+          "publisher": "KDVR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHs9z7YIKCeYyGRiOrPmVpwvr-ap2Ctj87QYCtlagSUMvvvms_RU8o8sDFas"
+        },
+        {
+          "url": "https://www.yahoo.com/news/weather-news/articles/denver-weather-partly-sunny-seasonal-143354569.html",
+          "title": "Denver weather: Partly sunny and seasonal",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ51E-B4mzysCs9fncmqgvQinAZHTXGgIDsXNGpaj1GV6uKkGTKCdsIZUBVo9s"
+        },
+        {
+          "url": "https://www.kktv.com/2026/11/19/clear-cool-overnight-ahead-another-weekend-system/",
+          "title": "A clear and cool overnight ahead of another weekend system",
+          "publisher": "KKTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaqp0L4C2M8gL3s9Kdcrzm7x88oNSCOyISKfoSmzBhG6FPH6BdEfa3FKeZXnc"
+        }
+      ]
+    },
+    {
+      "query": "justin reid",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T20:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/report-saints-143-game-veteran-202329360.html",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/saints-plan-to-release-justin-reid-at-his-request",
+        "https://www.nola.com/sports/saints/the-saints-and-justin-reid-are-reportedly-working-toward-the-veteran-safety-s-release/article_8a1f27cf-3197-4f96-b30b-341daa117e09.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH1i2OZXT3m90w79PZc0COr9_i2Zlqiw9DcPLAi15IJC6k1lN-QSGDm9gc6Pg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/report-saints-143-game-veteran-202329360.html",
+          "title": "Report: Saints, 143-game veteran to 'discuss his future with the team'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH1i2OZXT3m90w79PZc0COr9_i2Zlqiw9DcPLAi15IJC6k1lN-QSGDm9gc6Pg"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/saints-plan-to-release-justin-reid-at-his-request",
+          "title": "Saints plan to release Justin Reid at his request",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_ccwugrIt0nWbDvMs1N0j65bmAX6z_L0cmJ3nRwI5FPptKlAnPRSQMBx8iA"
+        },
+        {
+          "url": "https://www.nola.com/sports/saints/the-saints-and-justin-reid-are-reportedly-working-toward-the-veteran-safety-s-release/article_8a1f27cf-3197-4f96-b30b-341daa117e09.html",
+          "title": "The Saints and Justin Reid are reportedly working toward the veteran safety’s release",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQyn2bnd8ORB9q-Np5Q0DKp50o1a0mYx6gl9YLFFmlmgYZX6TJM_TQ6QExyxs"
+        }
+      ]
+    },
+    {
+      "query": "temporary protected status",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T20:50:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/supreme-court-trump-administration-immigration-venezuela-34f5293fe85f3befb2a599f513308d60",
+        "https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans",
+        "https://www.nbcnews.com/news/us-news/appeals-court-grants-trump-request-halt-order-restoring-venezuelan-tps-rcna610209"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq3QHQrktgdssRFbIslDpGBdKRATfzvuUfGcitMhtzvNEn01h3W5RfTE996vg",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/supreme-court-trump-administration-immigration-venezuela-34f5293fe85f3befb2a599f513308d60",
+          "title": "Trump administration appeals to Supreme Court over legal protections for Venezuelan migrants",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq3QHQrktgdssRFbIslDpGBdKRATfzvuUfGcitMhtzvNEn01h3W5RfTE996vg"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans",
+          "title": "US appeals court lets Trump end TPS deportation protections for Venezuelans",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC8Mn3monsChrzEXINW0JxTsYRNDDq1lrkPRWDaPoMLYZxoH2dx0dfrFa--FY"
+        },
+        {
+          "url": "https://www.nbcnews.com/news/us-news/appeals-court-grants-trump-request-halt-order-restoring-venezuelan-tps-rcna610209",
+          "title": "Appeals court grants Trump request to halt order restoring Venezuelan TPS",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC3PcRuvS1Js_hgMa_zsytWvACAEncUjDvDIyPPCC-XYDlXywFNHWgfQA_bjQ"
+        }
+      ]
+    },
+    {
+      "query": "sentence",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T20:40:00Z",
+      "related_news_urls": [
+        "https://www.sacbee.com/news/local/crime/article318162807.html",
+        "https://www.cbsnews.com/sacramento/news/former-sacramento-councilmember-sean-loloee-sentenced-federal-prison/",
+        "https://www.kcra.com/article/sacramento-sean-loloee-sentence-fraud-viva-supermarkets/74480990"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSx5esc8xLOfIZ_5H3D9OLCBTV6tPm6u6MT_E_3Nqg7dR9_PmOYVKR3okIH4U",
+      "image_credit": "Sacramento Bee",
+      "news": [
+        {
+          "url": "https://www.sacbee.com/news/local/crime/article318162807.html",
+          "title": "See former council member react to sentencing (Video)",
+          "publisher": "Sacramento Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSx5esc8xLOfIZ_5H3D9OLCBTV6tPm6u6MT_E_3Nqg7dR9_PmOYVKR3okIH4U"
+        },
+        {
+          "url": "https://www.cbsnews.com/sacramento/news/former-sacramento-councilmember-sean-loloee-sentenced-federal-prison/",
+          "title": "Former Sacramento city councilmember Sean Loloee sentenced to over 3 years in federal prison",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA4Akn8E_WhIWIHrzSP0pDx9OyvYQoix9i4dm9cJORDxWqyAIEjLobl8CAOSU"
+        },
+        {
+          "url": "https://www.kcra.com/article/sacramento-sean-loloee-sentence-fraud-viva-supermarkets/74480990",
+          "title": "Former Sacramento City Council member Sean Loloee sentenced for fraud schemes",
+          "publisher": "KCRA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRZmPeDGkjIr2dF9WUJDsV3DUZHiX1k8ZXbQIkn7ATUkqTrLda9MDw4CwkMxQ"
+        }
+      ]
+    },
+    {
+      "query": "rams schedule",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T20:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50512215/rams-bye-rest-ramp-week-11",
         "https://www.therams.com/news/3-keys-to-winning-for-rest-of-rams-season-heading-into-bye-week-2026",
-        "https://sports.yahoo.com/articles/4-players-must-perform-better-182012176.html"
+        "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/19/rams-schedule-games-predictions-win-loss-record/92828586007/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZmfOc3iZZSPdFaoS746J703HO8Nevd1qSmvzDtxfraBVdpr1bYdb1p7nm9ws",
       "image_credit": "ESPN",
@@ -33,326 +313,46 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fpCiHQrc5_cLzA7cZcawZvBF2euOEQeJybzc03o7emFJUtWLZNUkn4B1ZxQ"
         },
         {
-          "url": "https://sports.yahoo.com/articles/4-players-must-perform-better-182012176.html",
-          "title": "4 players who must perform better for the Rams after the bye",
-          "publisher": "Yahoo Sports",
+          "url": "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/19/rams-schedule-games-predictions-win-loss-record/92828586007/",
+          "title": "Final score predictions for every game left on Rams' schedule",
+          "publisher": "Rams Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ4nVFIliv8BKf0vOy2YEbu_l1YFKMp9BlTs1rV7v7c5LR-U1EaSQoA94qh8s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4F1m-WMChwFLDrHFHUfzm5rn4ROuEx366f1NGdPdrhUPoFkvhsFOBDoqTSz4"
         }
       ]
     },
     {
-      "query": "sentence",
+      "query": "lance broadway",
       "approx_searches": "500+",
       "published_at": "2026-11-19T20:40:00Z",
       "related_news_urls": [
-        "https://www.news9.com/crime/stillwater-man-life-sentence-child-sexual-abuse-lee-clark",
-        "https://okcfox.com/news/local/fbi-identifies-at-least-8-victims-stillwater-man-gets-life-in-federal-prison",
-        "https://kfor.com/news/local/79-year-old-stillwater-man-sentenced-to-life-for-child-sexual-abuse-crimes/"
+        "https://sports.yahoo.com/articles/former-white-sox-mets-pitcher-030321513.html",
+        "https://www.hollywoodreporter.com/movies/movie-news/lance-broadway-dead-olympus-has-fallen-mets-white-sox-1236759442/",
+        "https://nypost.com/2026/11/19/sports/lance-broadway-former-top-draft-pick-who-ended-career-with-mets-dead-at-43/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFR5f_YWc5cp2LlwLjU2LY7yiCpLebjxxj5fEGpqg83ZC04X5XQLVpOhAJB2Q",
-      "image_credit": "News 9",
-      "news": [
-        {
-          "url": "https://www.news9.com/crime/stillwater-man-life-sentence-child-sexual-abuse-lee-clark",
-          "title": "Stillwater man sentenced to life in federal prison for child sexual abuse",
-          "publisher": "News 9",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFR5f_YWc5cp2LlwLjU2LY7yiCpLebjxxj5fEGpqg83ZC04X5XQLVpOhAJB2Q"
-        },
-        {
-          "url": "https://okcfox.com/news/local/fbi-identifies-at-least-8-victims-stillwater-man-gets-life-in-federal-prison",
-          "title": "FBI identifies at least 8 victims; Stillwater man gets life in federal prison",
-          "publisher": "KOKH",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmF4voBAr9C-RZo3U7W64TB7I5VJrtMDC7MUeBnL_yDJWuNuh6vn6q_euZuqQ"
-        },
-        {
-          "url": "https://kfor.com/news/local/79-year-old-stillwater-man-sentenced-to-life-for-child-sexual-abuse-crimes/",
-          "title": "79-year-old Stillwater man sentenced to life for child sexual abuse crimes",
-          "publisher": "KFOR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlj3xJ7nrI9W0lMdmtJVGLRjefVIs20ZTTa-bk_U-otEinPsH1ZvdJapCGXV8"
-        }
-      ]
-    },
-    {
-      "query": "puka nacua",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-19T20:30:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/sports/rams/story/2026-11-19/nfl-suspends-rams-star-puka-nacua",
-        "https://sports.yahoo.com/articles/puka-nacua-suspended-nfl-203518733.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/tommy-tremble-knee-returns-to-practice"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRQV5a7Hl-RQcKEN8gsphClc_d2LlQ4561GhzBtfXzC0e_2_VMDqATQ5EZNf8",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/sports/rams/story/2026-11-19/nfl-suspends-rams-star-puka-nacua",
-          "title": "NFL suspends Rams star Puka Nacua for violating its personal-conduct policy",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRQV5a7Hl-RQcKEN8gsphClc_d2LlQ4561GhzBtfXzC0e_2_VMDqATQ5EZNf8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/puka-nacua-suspended-nfl-203518733.html",
-          "title": "Puka Nacua suspended by the NFL",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNfnP1lWGqtT63minSFhlQAtyzUunEae4YqJufhF7tICIsYxG0OGg23jpVuD8"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/tommy-tremble-knee-returns-to-practice",
-          "title": "Tommy Tremble (knee) returns to practice",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8SIN_ywcOVhKyb7lMgj4VxjU8rQDcUlvJqknYE_xDwqV4SWfGdN-II2sC65o"
-        }
-      ]
-    },
-    {
-      "query": "calmatters",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T20:30:00Z",
-      "related_news_urls": [
-        "https://calmatters.org/politics/2026/11/california-republican-losses/",
-        "https://www.sfchronicle.com/politics/article/republican-democrat-state-california-22524256.php",
-        "https://crpa.org/news/crpa/californias-new-reality-first-in-a-series-from-chuck-michel/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI4qEqbFn4XIXqDlwdlDwwQ3E6N6d9OjZl7i8zZoZwoOv8_uG-UqhH9-ro1wA",
-      "image_credit": "CalMatters",
-      "news": [
-        {
-          "url": "https://calmatters.org/politics/2026/11/california-republican-losses/",
-          "title": "Can California Republicans turn their “dumpster fire” around?",
-          "publisher": "CalMatters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI4qEqbFn4XIXqDlwdlDwwQ3E6N6d9OjZl7i8zZoZwoOv8_uG-UqhH9-ro1wA"
-        },
-        {
-          "url": "https://www.sfchronicle.com/politics/article/republican-democrat-state-california-22524256.php",
-          "title": "California Republicans just suffered their worst defeat in history. Does the party have a future?",
-          "publisher": "San Francisco Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8wjzCl7bB2vrpV5Ys7OySQVG9EDMtnh7RZHQ1-SmFzdBVyJGUUd9zoJv5vxo"
-        },
-        {
-          "url": "https://crpa.org/news/crpa/californias-new-reality-first-in-a-series-from-chuck-michel/",
-          "title": "California’s New Reality: First In A Series From Chuck Michel",
-          "publisher": "California Rifle & Pistol Association",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLODuIEai31FOjJttm95PiqtAJ02VFUl7mLI-64pe2jlEYu9xcr4btfnUjK8Q"
-        }
-      ]
-    },
-    {
-      "query": "drew mestemaker",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T20:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/drew-mestemaker-injury-status-revealed-035043730.html",
-        "https://247sports.com/college/oklahoma-state/article/osu-cowboys-football-mailbag-drew-mestemaker-injury-eric-morris-decisions-week-12-292965285/",
-        "https://arizonasports.com/ncaa/arizona-state/asu-football/drew-mestemaker-omarion-miller"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXwkUVYL3HcaA9fqTn8Vv6Psl2LiybTknaD_7pqpSiofvCitjJPRVgMIq6L4w",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDHfYMrPRh4ArMgWoumzhz7I86LAFA7tL1VElKNqEWtFD58_HN9NOPtbpfVog",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/drew-mestemaker-injury-status-revealed-035043730.html",
-          "title": "Drew Mestemaker injury status revealed for Oklahoma State football game vs Arizona State",
+          "url": "https://sports.yahoo.com/articles/former-white-sox-mets-pitcher-030321513.html",
+          "title": "Former White Sox, Mets pitcher dies unexpectedly at 43",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXwkUVYL3HcaA9fqTn8Vv6Psl2LiybTknaD_7pqpSiofvCitjJPRVgMIq6L4w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDHfYMrPRh4ArMgWoumzhz7I86LAFA7tL1VElKNqEWtFD58_HN9NOPtbpfVog"
         },
         {
-          "url": "https://247sports.com/college/oklahoma-state/article/osu-cowboys-football-mailbag-drew-mestemaker-injury-eric-morris-decisions-week-12-292965285/",
-          "title": "GoPokes Mailbag: Assessing in-game decisions, Drew Mestemaker’s health, transfer portal plans",
-          "publisher": "247Sports",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/lance-broadway-dead-olympus-has-fallen-mets-white-sox-1236759442/",
+          "title": "Lance Broadway, Pitcher Turned ‘Olympus Has Fallen’ Actor, Dies at 43",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDWka_Q9NBsNbcSSGILaHNe_fA1588owguEPUjGzqNu_sAc80EiBX3ne0nzXU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnSQKtV0P9YgJRf7C7zKBNZ2ZBGibXm9ykHgva3FvFzhHOYRvKhVMOuiJ9fJI"
         },
         {
-          "url": "https://arizonasports.com/ncaa/arizona-state/asu-football/drew-mestemaker-omarion-miller",
-          "title": "Drew Mestemaker questionable vs. ASU, Omarion Miller ruled out",
-          "publisher": "Arizona Sports",
+          "url": "https://nypost.com/2026/11/19/sports/lance-broadway-former-top-draft-pick-who-ended-career-with-mets-dead-at-43/",
+          "title": "Lance Broadway, former top draft pick who ended career with Mets, dead at 43",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtjCm5y7enmXxYMYKoLR80YNyK65YZ8Xg7Z1qc5iDr3GXjqqnYiA4wO-BgvAA"
-        }
-      ]
-    },
-    {
-      "query": "scott speedman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T20:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-culture/landman-adds-another-big-name-scott-speedman-signs-oil-drama-third-season",
-        "https://www.tvinsider.com/1304564/scott-speedman-landman-role-rj-decker-canceled-renewed-season-3/",
-        "https://www.tvline.com/2321137/scott-speedman-landman-season-3-selling-sunset-season-10-cast/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEzvCiKK3gQedPUWWHAWb2EZQrSucRYGp8XVhWoYUCmNK8iU3CnScqxoO3sUg",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-culture/landman-adds-another-big-name-scott-speedman-signs-oil-drama-third-season",
-          "title": "'Landman' adds another big name as Scott Speedman signs on for the oil drama's third season",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEzvCiKK3gQedPUWWHAWb2EZQrSucRYGp8XVhWoYUCmNK8iU3CnScqxoO3sUg"
-        },
-        {
-          "url": "https://www.tvinsider.com/1304564/scott-speedman-landman-role-rj-decker-canceled-renewed-season-3/",
-          "title": "Does Scott Speedman Joining ‘Landman’ Mean Bad News for ‘R.J. Decker’?",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtmdhSbRhwmvWumvt9f9C9qt2H3_2Q93d7siIPnLEuyiI1YBoexODparhfCS4"
-        },
-        {
-          "url": "https://www.tvline.com/2321137/scott-speedman-landman-season-3-selling-sunset-season-10-cast/",
-          "title": "Casting News: Scott Speedman Joins Landman, Selling Sunset Adds 4, And More",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbRqQaed4K3DZNvilitOWfb_SIXTnnt8npnC8b1dYSBN1dz85HzV0u7Oc750"
-        }
-      ]
-    },
-    {
-      "query": "alexander zverev",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T19:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50513841/alexander-zverev-beats-ben-shelton-semis-atp-finals",
-        "https://sports.yahoo.com/articles/alexander-zverev-match-ben-shelton-000000942.html",
-        "https://www.atptour.com/en/video/highlights-zverev-into-turin-sfs-after-beating-shelton-nitto-atp-finals-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUc4vRbW0u1NtJVodFZDpRAmwyubZTTkHHszSyic5k-Ivu1PS0m419VcDQtzI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50513841/alexander-zverev-beats-ben-shelton-semis-atp-finals",
-          "title": "Alexander Zverev improved to 7-0 vs. Ben Shelton, advancing to ATP Finals semis",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUc4vRbW0u1NtJVodFZDpRAmwyubZTTkHHszSyic5k-Ivu1PS0m419VcDQtzI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/alexander-zverev-match-ben-shelton-000000942.html",
-          "title": "Alexander Zverev’s match with Ben Shelton at the ATP Finals angers tennis fans, ‘I feel so bad’",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6PpY1cYr7FB-8UUs6ErZ9QyK6awL7uGUvqa3Xr6ASo2WCTbxwQJKhIqNtPA4"
-        },
-        {
-          "url": "https://www.atptour.com/en/video/highlights-zverev-into-turin-sfs-after-beating-shelton-nitto-atp-finals-2026",
-          "title": "Highlights: Zverev into Turin SFs after beating Shelton",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5AYOLASNtRP4g990L6ruKgIqD1J_2pmqrwPdYkpRffCle5C9HZSBeti1OhI"
-        }
-      ]
-    },
-    {
-      "query": "arthur fils",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T19:50:00Z",
-      "related_news_urls": [
-        "https://www.eurosport.fr/tennis/atp-finals-1/2026/atp-finals-2026-arthur-fils-qualifie-en-demi-finales-du-masters-si_sto23356308/story.shtml",
-        "https://www.lequipe.fr/Tennis/Actualites/Dans-les-conditions-rapides-des-finales-atp-alexander-zverev-adversaire-d-arthur-fils-est-pratiquement-impossible-a-breaker/1744530",
-        "https://www.lefigaro.fr/sports/tennis/en-direct-tennis-oppose-a-zverev-arthur-fils-n-a-plus-le-choix-au-masters-20261119"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZC3g1XKrHYlkUw0we6HJj3f9tpbSErNpspSiOvURDsnlNa2jNa7u6y3jQ974",
-      "image_credit": "Eurosport",
-      "news": [
-        {
-          "url": "https://www.eurosport.fr/tennis/atp-finals-1/2026/atp-finals-2026-arthur-fils-qualifie-en-demi-finales-du-masters-si_sto23356308/story.shtml",
-          "title": "ATP Finals 2026 - Arthur Fils qualifié en demi-finales du Masters si…",
-          "publisher": "Eurosport",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZC3g1XKrHYlkUw0we6HJj3f9tpbSErNpspSiOvURDsnlNa2jNa7u6y3jQ974"
-        },
-        {
-          "url": "https://www.lequipe.fr/Tennis/Actualites/Dans-les-conditions-rapides-des-finales-atp-alexander-zverev-adversaire-d-arthur-fils-est-pratiquement-impossible-a-breaker/1744530",
-          "title": "Dans les conditions ultra rapides des Finales ATP, Alexander Zverev, prochain adversaire d'Arthur Fils, est pratiquement impossible à breaker",
-          "publisher": "L'Équipe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR04_1frcKLJkqCo7fEIUUBa8XOi1Fw0mybODXGPQ3syEQvmVSL7iNI5uFD8s"
-        },
-        {
-          "url": "https://www.lefigaro.fr/sports/tennis/en-direct-tennis-oppose-a-zverev-arthur-fils-n-a-plus-le-choix-au-masters-20261119",
-          "title": "EN DIRECT - Tennis : Zverev remporte le premier set contre Fils qui ne verra pas le dernier carré du Masters",
-          "publisher": "Le Figaro",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDkTlKQ6kpTz3XbaXtPjprHNYovfwK8Nz8mtW6vOyMyK5B9kwykiCoBdoHt2M"
-        }
-      ]
-    },
-    {
-      "query": "federal emergency management agency",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T19:40:00Z",
-      "related_news_urls": [
-        "https://www.c-span.org/event/house-committee/fema-administrator-testifies-on-agencys-disaster-readiness/449687",
-        "https://homeland.house.gov/hearing/beyond-the-storm-assessing-femas-mission-readiness/",
-        "https://thehill.com/homenews/house/6229989-watch-live-fema-chief-testimony-house-hearing-disaster-preparedness/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSPrLBoO-i5jU1_yKtO95VKFdZbO6nKg19pAITSjWnnpeTom7_l76cskmp3Ps",
-      "image_credit": "C-SPAN",
-      "news": [
-        {
-          "url": "https://www.c-span.org/event/house-committee/fema-administrator-testifies-on-agencys-disaster-readiness/449687",
-          "title": "FEMA Administrator Testifies on Agency's Disaster Readiness",
-          "publisher": "C-SPAN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSPrLBoO-i5jU1_yKtO95VKFdZbO6nKg19pAITSjWnnpeTom7_l76cskmp3Ps"
-        },
-        {
-          "url": "https://homeland.house.gov/hearing/beyond-the-storm-assessing-femas-mission-readiness/",
-          "title": "Beyond the Storm: Assessing FEMA’s Mission Readiness",
-          "publisher": "House Committee on Homeland Security (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQETef23uQXJs0reIq4pGtXO0xP2Q8ToKoTiNdOblItWlFUwH92xmlQIUycZYo"
-        },
-        {
-          "url": "https://thehill.com/homenews/house/6229989-watch-live-fema-chief-testimony-house-hearing-disaster-preparedness/",
-          "title": "Watch live: FEMA chief testifies before House on disaster preparedness",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFQk59AgZMviubM0RZUYG8O1l6X03gweQtOcBxMmbzBYAXEHQOdYsyu7G6CWw"
-        }
-      ]
-    },
-    {
-      "query": "zverev",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-19T19:40:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
-        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/ZWrCJhdAjkP7/",
-        "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
-          "title": "Shelton defeats Jodar, now awaits Nitto ATP Finals SF fate",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/ZWrCJhdAjkP7/",
-          "title": "ATP Finals 2026 live updates: Alexander Zverev leads Arthur Fils; Ben Shelton beats Rafael Jodar on Day 5",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRdpGJ_lK_MtsOA-fjJOavZRIt0eiaIH7jepmgI0814SbZYs-3R5QrZkub8Zg"
-        },
-        {
-          "url": "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
-          "title": "ATP Finals: Ben Shelton beats Rafael Jodar to move within touching distance of semi-finals",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH47ZQ2zVJcVSkwamqYVF23FQFhfT-Zj85JA1c-VR3Or8bGiiqjE6zzrYOiYM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf9YCMlyHBCc2icar9Nsgg5xzC4b_TRdeRVFHtS6A7bFCWMdejkbsZizgymiA"
         }
       ]
     }
