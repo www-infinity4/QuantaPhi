@@ -44,11 +44,13 @@ def run():
         page.locator('#record-details summary').click()
         payload = '<img src=x onerror="window.__injected=true">'
         page.locator('[name=subject]').fill(payload)
-        page.locator('[name=claim]').fill('Unverified local test note.')
+        page.locator('[name=claim]').fill('Dash case: unverified local test note.')
         page.locator('[name=source]').fill('https://example.org/report')
         page.locator('#evidence-time').fill('2026-11-19T06:30')
         page.get_by_role('button', name='Save evidence note', exact=True).click()
         assert page.locator('#records-list article').count() == 6
+        # Newly added matching evidence must refresh an already-built source trace.
+        assert page.locator('#trace-results article').count() == 2
         assert not page.evaluate('Boolean(window.__injected)')
         state = json.loads(page.evaluate(f'localStorage.getItem({json.dumps(KEY)})'))
         assert state['records'][-1]['observedAt'] == '2026-11-19T12:30:00.000Z'
