@@ -54,9 +54,28 @@ function seasonMatches(season,now){
  return !seasons[season]||seasons[season].includes(month);
 }
 const sensitiveCommercial=/\b(cannabis|dispensary|marijuana|thc|cigar|tobacco|vape|nicotine|alcohol|liquor|gambling|diagnos|medical|colorectal|disease|prescription|21\+)\b/i;
+/* No political advertising: apply to third-party campaigns, published
+ * promotional cards and source-directory spotlights, regardless of party.
+ * Editorial news reporting and neutral government-service references remain.
+ */
+const politicalPromotion=/\b(?:politic(?:al|s)|election(?:s|eering)?|electoral|re[- ]?elect(?:ion)?|vote\s+for|vot(?:e|ing)\s+(?:yes|no)\s+on|candidate|campaign\s+committee|political\s+action\s+committee|(?:democrat(?:ic)?|republican|libertarian|green)\s+party|zach\s+nunn|mariannette\s+miller[- ]?meeks)\b/i;
+const namedCandidateCard=id=>/^(?:source-)?(?:zach-nunn-ia3|miller-meeks-ia1)$/i.test(String(id||''));
+export function isPoliticalPromotion(card={}){
+ if(!card||typeof card!=='object')return false;
+ if(namedCandidateCard(card.id))return true;
+ const fields=[card.id,card.name,card.title,card.description,card.body,
+  card.category,card.kind,card.topic,card.campaignType,card.campaignName,
+  card.advertiser,card.sponsor,card.paidForBy,card.paid_for_by,
+  ...(Array.isArray(card.tags)?card.tags.slice(0,12):[])];
+ return politicalPromotion.test(fields.map(safeText).join(' ').replace(/[-_]+/g,' '));
+}
+
 export function placementPolicy(campaign,{now=new Date(),daypart=currentDaypart(now),region=''}={}){
  if(!(now instanceof Date)||!Number.isFinite(now.getTime()))return {eligible:false,reason:'Invalid clock',openNow:false,weight:0};
  const type=campaign?.type||'editorial',sponsor=type==='sponsored';
+ const adPlacement=['sponsored','paid','promoted','house-ad','advertisement','ad','published-card'].includes(type)||campaign?.isAd===true;
+ if(namedCandidateCard(campaign?.id)||(adPlacement&&isPoliticalPromotion(campaign)))
+  return {eligible:false,reason:'Political advertising disabled',openNow:false,weight:0};
  const category=[campaign?.category,campaign?.title,campaign?.description].map(safeText).join(' ');
  if(sponsor&&sensitiveCommercial.test(category))return {eligible:false,reason:'Restricted ad category',openNow:false,weight:0};
  if(campaign?.status==='removed'||campaign?.status==='expired'||campaign?.status==='rejected')return {eligible:false,reason:'Not active',openNow:false,weight:0};
@@ -92,7 +111,7 @@ export function freshApprovedCreatives(payload,{now=new Date(),maxAgeDays=45}={}
   const created=validDate(card.createdAt||card.updatedAt);
   if(!created||created>now.getTime()||now.getTime()-created>maxAgeDays*86400000)continue;
   const image=validUrl(card.image),website=validUrl(card.website),cardUrl=validUrl(card.cardUrl);
-  if(!image||!website||!cardUrl||sensitiveCommercial.test([card.kind,card.title,card.description].join(' ')))continue;
+  if(!image||!website||!cardUrl||isPoliticalPromotion(card)||sensitiveCommercial.test([card.kind,card.title,card.description].join(' ')))continue;
   seen.add(card.slug);
   out.push({id:safeText(card.slug).slice(0,95),title:safeText(card.title).slice(0,85),
    description:safeText(card.description).slice(0,350),website,image,cardUrl,
