@@ -34,6 +34,9 @@ if(root){
  const publisherNext=el('button','rac-button','Next website ›');
  const publisherPause=el('button','rac-button','Pause');
  publisherNext.type=publisherPause.type='button';publisherControls.append(publisherPause,publisherNext);
+ const videoPortal=el('a','rac-kit-link','21+ separate source card');
+ videoPortal.href='/21plus-video-source.html';videoPortal.rel='noopener noreferrer';
+ videoPortal.setAttribute('aria-label','Open separate 21 plus source Quick Card');
  const publisherNote=el('p','rac-note','You are opening each publisher’s original website. Any merchant age check, prescription review, purchase, booking or delivery stays with that provider. No live pricing, stock, licensed ads or consolidated freight is implied.');
  const kitBar=el('div','rac-kitbar'),kitLabel=el('label','rac-kit-label','Choose a purpose-built kit');
  const kitSelect=el('select','rac-kit-select');
@@ -65,7 +68,7 @@ if(root){
  kitPlanPower.target='_blank';kitPlanPower.rel='noopener noreferrer';
  kitPlanForm.append(budgetLabel,regionLabel,planSubmit);
  kitPlanBox.append(kitPlanForm,kitPlanStatus,kitPlanSummary,kitPlanCopy,kitPlanPower);
- publisher.append(publisherHead,kitBar,kitDesc,kitLinks,kitPlanButton,kitPlanBox,publisherArt,publisherDesc,publisherLink,publisherControls,publisherNote);
+ publisher.append(publisherHead,kitBar,kitDesc,kitLinks,kitPlanButton,kitPlanBox,publisherArt,publisherDesc,publisherLink,publisherControls,publisherNote,videoPortal);
  root.append(browse,closeBrowse,browseHint,publisher,message);
  let acknowledged=false,publisherLast='',publisherSeen=[],publisherPaused=false;
  let selectedKitId=ADULT_LIFESTYLE_KITS[0].id,lastKitPlan=null;
@@ -77,9 +80,8 @@ if(root){
  function activeKitSources(){return selectedKitId==='cannabis-sources'?PUBLIC_21_SOURCES:sourcesForKit(selectedKitId)}
  function paintKit(){
   if(!acknowledged)return;
-  resetPlan();
+  resetPlan();kitPlanButton.hidden=selectedKitId==='cannabis-sources';
   const kit=ADULT_LIFESTYLE_KITS.find(x=>x.id===selectedKitId);
-  kitPlanButton.hidden=selectedKitId==='cannabis-sources'||kit?.sourceOnly===true;
   kitDesc.textContent=kit?kit.description:'Independent original cannabis publisher references only. Not an advertisement or product checkout.';
   kitLinks.replaceChildren();
   for(const row of activeKitSources().slice(0,6)){
@@ -100,9 +102,6 @@ if(root){
   publisherLast=item.id;publisherSeen.push(item.id);
   publisherName.textContent=item.title;publisherSmall.textContent=item.subtitle;
   publisherDesc.textContent=item.summary;publisherLink.href=item.url;
-  const externalVideo=item.category==='Adult video';
-  publisherLink.textContent=externalVideo?'Open external video page':'Open original website';
-  publisherNote.textContent=externalVideo?'This third-party video link has no verified creator rights, performer consent or playback integration. QuantaPhi does not host or preview it.':'You are opening each publisher’s original website. Any merchant age check, prescription review, purchase, booking or delivery stays with that provider. No live pricing, stock, licensed ads or consolidated freight is implied.';
   for(const link of kitLinks.querySelectorAll('.rac-kit-link')){
    const current=link.dataset.sourceId===item.id;
    link.classList.toggle('rac-kit-active',current);
@@ -129,12 +128,12 @@ if(root){
   browse.hidden=false;closeBrowse.hidden=true;
  });
  kitPlanButton.addEventListener('click',()=>{
-  if(!acknowledged||selectedKitId==='cannabis-sources'||ADULT_LIFESTYLE_KITS.find(x=>x.id===selectedKitId)?.sourceOnly===true)return;
+  if(!acknowledged||selectedKitId==='cannabis-sources')return;
   kitPlanBox.hidden=!kitPlanBox.hidden;
   if(!kitPlanBox.hidden)kitPlanBudget.focus();
  });
  kitPlanForm.addEventListener('submit',event=>{
-  event.preventDefault();if(!acknowledged||selectedKitId==='cannabis-sources'||ADULT_LIFESTYLE_KITS.find(x=>x.id===selectedKitId)?.sourceOnly===true)return;
+  event.preventDefault();if(!acknowledged||selectedKitId==='cannabis-sources')return;
   try{
    lastKitPlan=prepareAdultKitResearch({kitId:selectedKitId,budget:kitPlanBudget.value,region:kitPlanRegion.value});
    const heading=el('h3','rac-plan-title',lastKitPlan.title+' · '+lastKitPlan.budgetLabel+' ceiling');
