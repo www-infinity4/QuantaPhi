@@ -47,6 +47,7 @@ test('political promotions are ineligible across ad feeds while ordinary reporti
   {id:'zach-nunn-ia3'}
  ])assert.equal(placementPolicy({...approved,...update},{now}).eligible,false,
   'political ad must fail closed: '+JSON.stringify(update));
+ assert.equal(placementPolicy({id:'vote-disguised',type:'public-service',title:'Vote for Zach Nunn',category:'Shopping'},{now}).eligible,false);
  assert.equal(placementPolicy({id:'local-news',type:'editorial',title:'Election news coverage',category:'News'},{now}).eligible,true);
  const editorial=card('local-news','News',{name:'Election news coverage'});
  const boosted=card('promoted-election','Shopping',{type:'sponsored',name:'Zach Nunn for Congress',
