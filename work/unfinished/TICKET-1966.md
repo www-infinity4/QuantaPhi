@@ -1,3 +1,34 @@
+---
+issue: 1966
+project: "Apple II Infinity virtual hardware software workbench"
+state: review_pending
+dot: "🟡"
+progress_percent: 40
+progress_basis: "Browser and Node source staged; 8/8 local tests, Apple II focused exact-head CI succeeded at d684a1a; two broader workflow failures traced to missing YAML front matter, repaired in this revision; independent review and live release remain."
+sessions_spent: 1
+sessions_remaining_estimate: "unknown"
+agent: "GPT Green engineer, unleased GitHub connector scoped writes"
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+last_observed_at_utc: "2026-11-19T00:10:23.470Z"
+repo: www-infinity4/QuantaPhi
+branch: feat/apple2-infinity-software-1966
+head_sha: d684a1a82c09a3d7d4f5808e98f7ed92b5e00267
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1967"
+tests:
+  - "8/8 local Node v22 tests passed; dedicated GitHub CI https://github.com/www-infinity4/QuantaPhi/actions/runs/44426652404 succeeded on original head."
+ci:
+  - "Initial unfinished ledger jobs failed only because this checkpoint missed mandatory front matter. Exact repaired-head CI pending."
+independent_review: "pending"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Independent source review, new exact-head ledger CI, GitHub merge authorization, production/browser/Android acceptance."
+next_action: "Verify repaired-head CI including unfinished ledger and obtain independent source review on PR #1967"
+---
+
 # Apple II Infinity · software-only workstation · #1966
 
 - Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1966
