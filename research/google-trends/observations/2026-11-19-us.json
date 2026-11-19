@@ -3,17 +3,52 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T19:01:18.203571Z",
+  "checked_at": "2026-11-19T19:30:46.966751Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "cte",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T19:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50532686/studies-blood-test-potential-detect-cte-living",
+        "https://www.nytimes.com/2026/11/19/science/cte-blood-test-diagnosis.html",
+        "https://www.scientificamerican.com/article/a-watershed-moment-researchers-unveil-first-of-its-kind-blood-test-for-cte/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqhsGonl3dlnXqiWamB-8G4ENIw084_EkmHhKb7k-xMP9AN_hnh98RGFj3NpM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50532686/studies-blood-test-potential-detect-cte-living",
+          "title": "Studies: Blood test has potential to detect CTE in the living",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqhsGonl3dlnXqiWamB-8G4ENIw084_EkmHhKb7k-xMP9AN_hnh98RGFj3NpM"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/19/science/cte-blood-test-diagnosis.html",
+          "title": "Scientists Discover a Possible Marker in the Blood of C.T.E. Patients",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuI2yfLfTdzFeAQpJbu12hIdndZSIxnIakjpfqa6sLFfo8gii1vrmFBVqys8g"
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/a-watershed-moment-researchers-unveil-first-of-its-kind-blood-test-for-cte/",
+          "title": "‘A watershed moment’: Researchers unveil first-of-its-kind blood test for CTE",
+          "publisher": "Scientific American",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgqVHwQxsLFYlrM8SDFq-ovED64ejWxtI2kqds80UuvJJOBjfKwKaOyPFZQ48"
+        }
+      ]
+    },
+    {
       "query": "jpmorgan chase & co",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-19T18:40:00Z",
       "related_news_urls": [
         "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
-        "https://www.click2houston.com/news/local/2026/11/19/chase-bank-says-cyberattack-on-third-party-vendors-may-have-exposed-customer-information/",
-        "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705"
+        "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705",
+        "https://www.washingtonpost.com/nation/2026/11/19/cyberattack-may-have-exposed-chase-bank-mastercard-customer-data/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGgc_4Dp78ZNvvrqX83P3XcY67R3s2aEMeaH4HYb_xaY_A2RIy6DRwGV4WQ3U",
       "image_credit": "WSJ",
@@ -26,68 +61,75 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGgc_4Dp78ZNvvrqX83P3XcY67R3s2aEMeaH4HYb_xaY_A2RIy6DRwGV4WQ3U"
         },
         {
-          "url": "https://www.click2houston.com/news/local/2026/11/19/chase-bank-says-cyberattack-on-third-party-vendors-may-have-exposed-customer-information/",
-          "title": "Chase Bank says cyberattack on third party vendors may have exposed customer information",
-          "publisher": "Click2Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8n7NFE417OXyv55LWt2dFx2_1B5Gh7Qz_QNPWPi5MMt80w6T89ke4KnNm2xA"
-        },
-        {
           "url": "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705",
           "title": "JPMorganChase reports cyberattack on third-party service providers",
           "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRELDP9seVz-BgEcGkl-RRf8a2She16bZT_3_EqT3sPXvxVqh12OFqyei3Y5FY"
+        },
+        {
+          "url": "https://www.washingtonpost.com/nation/2026/11/19/cyberattack-may-have-exposed-chase-bank-mastercard-customer-data/",
+          "title": "Cyberattack may have exposed Chase Bank and Mastercard customer data",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZgTBfvAiYFfPVBxIHrWBIC0KmNxJBNH0fnCiBz1Yonrx_8iP6XDkqg56Tpr8"
         }
       ]
     },
     {
-      "query": "conroe high school",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T18:00:00Z",
+      "query": "south carolina",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T18:20:00Z",
       "related_news_urls": [
-        "https://www.fox26houston.com/news/conroe-high-school-lockdown-texas-2026",
-        "https://www.khou.com/article/news/local/conroe-high-school-lockdown/285-aa02087e-532f-4f34-9160-d3ef37c37390",
-        "https://www.houstonchronicle.com/news/houston-texas/trending/article/conroe-isd-lockdown-schools-22540034.php"
+        "https://gamecocksonline.com/news/2026/11/16/sec-nation-returns-to-the-horseshoe-saturday/",
+        "https://www.sportsline.com/insiders/georgia-vs-south-carolina-odds-2026-college-football-picks-week-12-predictions-from-proven-model/",
+        "https://247sports.com/college/georgia/article/georgia-bulldogs-rave-south-carolina-gamecocks-qb-lanorris-sellers-injury-update-shane-beamer-kirby-smart-cutter-woods-292894517/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnRAi3jH8kQxPnLusSEWoqLdeZ8HKxXOdaa606NrWLvmgox-hp5IF8k3QLL98",
-      "image_credit": "FOX 26 Houston",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzJA_gwEJ-UOMZqtmvf0Z-LF8cgS-BCExsjoXJwA6GKzK266G646054TODgNc",
+      "image_credit": "University of South Carolina Athletics",
       "news": [
         {
-          "url": "https://www.fox26houston.com/news/conroe-high-school-lockdown-texas-2026",
-          "title": "Conroe High School on lockdown following 'concerning phone call'",
-          "publisher": "FOX 26 Houston",
+          "url": "https://gamecocksonline.com/news/2026/11/16/sec-nation-returns-to-the-horseshoe-saturday/",
+          "title": "SEC Nation Returns to The Horseshoe Saturday",
+          "publisher": "University of South Carolina Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnRAi3jH8kQxPnLusSEWoqLdeZ8HKxXOdaa606NrWLvmgox-hp5IF8k3QLL98"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzJA_gwEJ-UOMZqtmvf0Z-LF8cgS-BCExsjoXJwA6GKzK266G646054TODgNc"
         },
         {
-          "url": "https://www.khou.com/article/news/local/conroe-high-school-lockdown/285-aa02087e-532f-4f34-9160-d3ef37c37390",
-          "title": "Conroe High School placed on lockdown due to 'concerning phone call'",
-          "publisher": "KHOU",
+          "url": "https://www.sportsline.com/insiders/georgia-vs-south-carolina-odds-2026-college-football-picks-week-12-predictions-from-proven-model/",
+          "title": "Georgia vs. South Carolina odds: 2026 college football picks, Week 12 predictions from proven model",
+          "publisher": "SportsLine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQciKLooENngHd2OJDLTvU14JDXscA2Fa4L73nK5ZVqpuuwS7a4RLbv5F6bPmk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_0XTLntm2Vf1q-HaDzuJRM5qkXLnfTaNv_ftRBAYhZJa3u38Epo7VLYEt-Zc"
         },
         {
-          "url": "https://www.houstonchronicle.com/news/houston-texas/trending/article/conroe-isd-lockdown-schools-22540034.php",
-          "title": "Conroe ISD locks down five campuses, law enforcement on scene",
-          "publisher": "Houston Chronicle",
+          "url": "https://247sports.com/college/georgia/article/georgia-bulldogs-rave-south-carolina-gamecocks-qb-lanorris-sellers-injury-update-shane-beamer-kirby-smart-cutter-woods-292894517/",
+          "title": "Georgia raves about South Carolina QB LaNorris Sellers as status remains uncertain",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiSlcvXyePXYhgN30krfv9odxaHpJa69tWjRvNlgSPvfhivW5H-bA8Mw9QYaI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAI-o4e5RKe6C6OpySwEYK7zuIWxX1uBdPMgNmjrr7sPCI8iqMqFZXNTMZlFw"
         }
       ]
     },
     {
       "query": "marlon jackson",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T18:00:00Z",
       "related_news_urls": [
+        "https://www.rollingstone.com/music/music-news/marlon-jackson-reveal-stage-4-prostate-cancer-diagnosis-1235661255/",
         "https://www.instagram.com/p/Df7lsKWSqP6/",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jackson-5-member-marlon-jackson-182453657.html",
-        "https://turnto10.com/news/entertainment/the-jackson-5s-marlon-jackson-reveals-stage-4-prostate-cancer-diagnosis"
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jackson-5-member-marlon-jackson-182453657.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOKzXKyuMbWxPbZPPnhj8bVSMPx-b9EZB2DIVhugmRM84UcnYk0CCptrliGJo",
-      "image_credit": "Instagram",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT15NI5XJxEX7SeMQ9ghPeSaStKunze0JAUYPwkCsvkN39W8WMyD7Shwkhf7IY",
+      "image_credit": "Rolling Stone",
       "news": [
+        {
+          "url": "https://www.rollingstone.com/music/music-news/marlon-jackson-reveal-stage-4-prostate-cancer-diagnosis-1235661255/",
+          "title": "Marlon Jackson Reveals Stage 4 Prostate Cancer Diagnosis",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT15NI5XJxEX7SeMQ9ghPeSaStKunze0JAUYPwkCsvkN39W8WMyD7Shwkhf7IY"
+        },
         {
           "url": "https://www.instagram.com/p/Df7lsKWSqP6/",
           "title": "#TSRPrayersUp: #MarlonJackson is opening up about his health journey. During an appearance on @thefarahshammaspodcast, the singer revealed that he’s been living with prostate cance",
@@ -101,13 +143,76 @@
           "publisher": "Yahoo",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1lIpm549zHO05wbVRwALVv_sPwQ9IlmzpRdIWTP0_96fmDcI7cBXmPg3AOO8"
+        }
+      ]
+    },
+    {
+      "query": "conroe high school",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T18:00:00Z",
+      "related_news_urls": [
+        "https://www.khou.com/article/news/local/conroe-high-school-lockdown/285-aa02087e-532f-4f34-9160-d3ef37c37390",
+        "https://www.fox26houston.com/news/conroe-high-school-lockdown-texas-2026",
+        "https://hellowoodlands.com/msco-conroe-high-school-is-on-lockdown-no-reported-injuries/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQciKLooENngHd2OJDLTvU14JDXscA2Fa4L73nK5ZVqpuuwS7a4RLbv5F6bPmk",
+      "image_credit": "KHOU",
+      "news": [
+        {
+          "url": "https://www.khou.com/article/news/local/conroe-high-school-lockdown/285-aa02087e-532f-4f34-9160-d3ef37c37390",
+          "title": "Conroe High School placed on lockdown due to 'concerning phone call'",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQciKLooENngHd2OJDLTvU14JDXscA2Fa4L73nK5ZVqpuuwS7a4RLbv5F6bPmk"
         },
         {
-          "url": "https://turnto10.com/news/entertainment/the-jackson-5s-marlon-jackson-reveals-stage-4-prostate-cancer-diagnosis",
-          "title": "The Jackson 5’s Marlon Jackson reveals stage 4 prostate cancer diagnosis",
-          "publisher": "WJAR",
+          "url": "https://www.fox26houston.com/news/conroe-high-school-lockdown-texas-2026",
+          "title": "Conroe High School on lockdown following 'concerning phone call'",
+          "publisher": "FOX 26 Houston",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9E6zwZxLaFbmVXFjuDCX3dmZHeG8SOjHf-d8X-JWi-MQKyCknhyqv2YEfckE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnRAi3jH8kQxPnLusSEWoqLdeZ8HKxXOdaa606NrWLvmgox-hp5IF8k3QLL98"
+        },
+        {
+          "url": "https://hellowoodlands.com/msco-conroe-high-school-is-on-lockdown-no-reported-injuries/",
+          "title": "MSCO: Conroe High School is on lockdown, no reported injuries",
+          "publisher": "Hello Woodlands",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjV0WOI23Knj2Nyfh8L8rEHbcCAsdd19LvGFJSS4VHQrJECGVgj5Jvtm-pza8"
+        }
+      ]
+    },
+    {
+      "query": "invincible season 5",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T17:50:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/invincible-season-5-release-date-teaser-1236952556/",
+        "https://www.polygon.com/invincible-season-5-announcement-teaser/",
+        "https://www.ign.com/articles/invincible-season-5-premiers-on-february-17-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzYa6L7JDt8g4YftD2ZL0yypNfvQdpCevsX7woB8tWL-OeSWDf1trcCt2b8ms",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/invincible-season-5-release-date-teaser-1236952556/",
+          "title": "‘Invincible’ Season 5 Sets Release Date, Drops Burger Mart Teaser Trailer",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzYa6L7JDt8g4YftD2ZL0yypNfvQdpCevsX7woB8tWL-OeSWDf1trcCt2b8ms"
+        },
+        {
+          "url": "https://www.polygon.com/invincible-season-5-announcement-teaser/",
+          "title": "Invincible mocks its worst season 4 episode in official season 5 reveal",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqqww1VWt5Q12BzvvDbz38MLOr9VWZEVGSTPTJw_RaCn5wgQqpur8TbjUJ8A"
+        },
+        {
+          "url": "https://www.ign.com/articles/invincible-season-5-premiers-on-february-17-2026",
+          "title": "Invincible Season 5 Gets February 17 Premiere With Cheeky Trailer Hinting at More Viltrumite Shenanigans",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkx5uJJWyqv_qLl76OF9BlMvY9xfEYLnQcB3JXQSRllGDnS2A8rmK9PDQoqjg"
         }
       ]
     },
@@ -147,76 +252,6 @@
       ]
     },
     {
-      "query": "invincible",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T17:40:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/invincible-season-5-release-date-teaser-1236952556/",
-        "https://www.polygon.com/invincible-season-5-announcement-teaser/",
-        "https://www.ign.com/articles/invincible-season-5-premiers-on-february-17-2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzYa6L7JDt8g4YftD2ZL0yypNfvQdpCevsX7woB8tWL-OeSWDf1trcCt2b8ms",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/invincible-season-5-release-date-teaser-1236952556/",
-          "title": "‘Invincible’ Season 5 Sets Release Date, Drops Burger Mart Teaser Trailer",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzYa6L7JDt8g4YftD2ZL0yypNfvQdpCevsX7woB8tWL-OeSWDf1trcCt2b8ms"
-        },
-        {
-          "url": "https://www.polygon.com/invincible-season-5-announcement-teaser/",
-          "title": "Invincible mocks its worst season 4 episode in official season 5 reveal",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqqww1VWt5Q12BzvvDbz38MLOr9VWZEVGSTPTJw_RaCn5wgQqpur8TbjUJ8A"
-        },
-        {
-          "url": "https://www.ign.com/articles/invincible-season-5-premiers-on-february-17-2026",
-          "title": "Invincible Season 5 Gets February 17 Premiere With Cheeky Trailer Hinting at More Viltrumite Shenanigans",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkx5uJJWyqv_qLl76OF9BlMvY9xfEYLnQcB3JXQSRllGDnS2A8rmK9PDQoqjg"
-        }
-      ]
-    },
-    {
-      "query": "dwts finale songs",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T17:40:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/dancing-with-the-stars-finale-live-across-the-country-1237226920/",
-        "https://www.deseret.com/entertainment/2026/11/18/dancing-with-the-stars-semifinals-recap/",
-        "https://www.upi.com/Entertainment_News/TV/2026/11/18/dwts-season-35-finalists/9371795016369/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbivDRp5H3XRDrYMDLqRhNOs782l4D7WVs0StRR3ADFXK1ryz6bJhPVBWWBDI",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/dancing-with-the-stars-finale-live-across-the-country-1237226920/",
-          "title": "‘Dancing With The Stars’ Finale Will Go Live Across The Country For The First Time",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbivDRp5H3XRDrYMDLqRhNOs782l4D7WVs0StRR3ADFXK1ryz6bJhPVBWWBDI"
-        },
-        {
-          "url": "https://www.deseret.com/entertainment/2026/11/18/dancing-with-the-stars-semifinals-recap/",
-          "title": "Top-scoring actor sent home in ‘Dancing with the Stars’ semifinals",
-          "publisher": "Deseret News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpoIDGOaDlyy7H9GrvaNE8pkVg-1q4HmGNLpfjIQEfrWsoMGVoLwpSRB-ivqU"
-        },
-        {
-          "url": "https://www.upi.com/Entertainment_News/TV/2026/11/18/dwts-season-35-finalists/9371795016369/",
-          "title": "'DWTS' Season 35 finalists confirmed for first-ever live finale",
-          "publisher": "upi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWMeWjAl8Ab3b4lkdqxvemgoUG4Al2jM1svsDI6d7JwdZaLaR1nL0CfTGCESI"
-        }
-      ]
-    },
-    {
       "query": "rsm classic",
       "approx_searches": "1000+",
       "published_at": "2026-11-19T17:40:00Z",
@@ -252,37 +287,37 @@
       ]
     },
     {
-      "query": "patrick sellers alabama",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T17:10:00Z",
+      "query": "dwts finale songs",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T17:40:00Z",
       "related_news_urls": [
-        "https://www.wbrc.com/2026/11/19/state-rep-patrick-sellers-indicted-federal-wire-fraud-charges/",
-        "https://www.al.com/politics/2026/11/alabama-lawmaker-indicted-on-federal-fraud-charges.html",
-        "https://www.alreporter.com/2026/11/19/sources-state-rep-sellers-indicted-on-fraud-charges"
+        "https://www.eonline.com/news/1438204/dancing-with-the-stars-season-35-finale-airing-live-coast-to-coast-nov-24",
+        "https://www.deseret.com/entertainment/2026/11/18/dancing-with-the-stars-semifinals-recap/",
+        "https://ew.com/dancing-with-the-stars-season-35-finale-songs-dance-styles-revealed-12262457"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrqjMGgAkHw1H2IqQlu9XiFcGwJBlND4lqN9JOgBxJCpDXec8XE3PmgbqPmHQ",
-      "image_credit": "WBRC 6 News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDXMtU3m_LmAl5WAwTvwXDYUwt6J41MVcuLXbw9jkumyFYf-xTw_U485AKxGc",
+      "image_credit": "E! News",
       "news": [
         {
-          "url": "https://www.wbrc.com/2026/11/19/state-rep-patrick-sellers-indicted-federal-wire-fraud-charges/",
-          "title": "State Rep. Patrick Sellers indicted on federal wire fraud charges",
-          "publisher": "WBRC 6 News",
+          "url": "https://www.eonline.com/news/1438204/dancing-with-the-stars-season-35-finale-airing-live-coast-to-coast-nov-24",
+          "title": "Dancing With the Stars Reveals Major Change for Season 35 Finale",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrqjMGgAkHw1H2IqQlu9XiFcGwJBlND4lqN9JOgBxJCpDXec8XE3PmgbqPmHQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDXMtU3m_LmAl5WAwTvwXDYUwt6J41MVcuLXbw9jkumyFYf-xTw_U485AKxGc"
         },
         {
-          "url": "https://www.al.com/politics/2026/11/alabama-lawmaker-indicted-on-federal-fraud-charges.html",
-          "title": "Alabama lawmaker, pastor indicted for COVID relief fraud",
-          "publisher": "AL.com",
+          "url": "https://www.deseret.com/entertainment/2026/11/18/dancing-with-the-stars-semifinals-recap/",
+          "title": "Top-scoring actor sent home in ‘Dancing with the Stars’ semifinals",
+          "publisher": "Deseret News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzwPfjPIoBlDSYKEKC8vnd3CurmWecxLV5Zh-RpQQXtJ0s5HrSuutereiPIpU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpoIDGOaDlyy7H9GrvaNE8pkVg-1q4HmGNLpfjIQEfrWsoMGVoLwpSRB-ivqU"
         },
         {
-          "url": "https://www.alreporter.com/2026/11/19/sources-state-rep-sellers-indicted-on-fraud-charges",
-          "title": "Sources: State Rep. Sellers indicted on fraud charges",
-          "publisher": "Alabama Political Reporter",
+          "url": "https://ew.com/dancing-with-the-stars-season-35-finale-songs-dance-styles-revealed-12262457",
+          "title": "‘Dancing With the Stars’ season 35 finale songs and dance styles revealed",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLryOy4RyHTiX61beCSZbfalnoCTUchMm72hWVOi33BQVQElqHRikdDIJpgJc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_VAKnEZu6bNVGhS4KZ81U0kP_9CREFFXbjbHos90Cnd4UWLDhppuNKZyP7xA"
         }
       ]
     },
@@ -292,25 +327,25 @@
       "published_at": "2026-11-19T17:00:00Z",
       "related_news_urls": [
         "https://www.wwltv.com/article/entertainment/events/festivals/jazz-fest-lineup-released-earlier-than-usual-heres-whos-playing/289-e6b78b1f-ce9a-4c1d-b8af-73b2020affca",
-        "https://www.audacy.com/wwl/news/local/jazz-fest-2678454351",
+        "https://www.rollingstone.com/music/music-news/foo-fighters-noah-kahan-the-who-new-orleans-jazz-fest-1235661091/",
         "https://www.wdsu.com/article/new-orleans-jazz-and-heritage-festival-music-lineup-2027/74479227"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm2UICxy0BjrE6ekdy0sZ5V4ZJMXw4irV75HMrt_xSWVPnP-o77VYjct4Jk3Y",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlFyYk_GVEteAMWcN0Sw07g7fodcuhhOhuUQY7WIBITe5oNZ9zrHtyu4bxpNM",
       "image_credit": "WWLTV.com",
       "news": [
         {
           "url": "https://www.wwltv.com/article/entertainment/events/festivals/jazz-fest-lineup-released-earlier-than-usual-heres-whos-playing/289-e6b78b1f-ce9a-4c1d-b8af-73b2020affca",
-          "title": "Jazz Fest lineup released earlier than usual: Here's who's playing",
+          "title": "Jazz Fest 2027 lineup released earlier than usual: Here's who's playing",
           "publisher": "WWLTV.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm2UICxy0BjrE6ekdy0sZ5V4ZJMXw4irV75HMrt_xSWVPnP-o77VYjct4Jk3Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlFyYk_GVEteAMWcN0Sw07g7fodcuhhOhuUQY7WIBITe5oNZ9zrHtyu4bxpNM"
         },
         {
-          "url": "https://www.audacy.com/wwl/news/local/jazz-fest-2678454351",
-          "title": "Jazz Fest announces 2027 lineup today, who may be playing?",
-          "publisher": "Audacy",
+          "url": "https://www.rollingstone.com/music/music-news/foo-fighters-noah-kahan-the-who-new-orleans-jazz-fest-1235661091/",
+          "title": "Foo Fighters, Noah Kahan, the Who Lead New Orleans Jazz and Heritage Festival Lineup",
+          "publisher": "Rolling Stone",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkfT301OXO-WfinkLgUZt3-ni17J-tb1CM6vY5h6DSqpyu2sLX4eKp2nMBbY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRl7dOuMoa-HeoxDQ1z6ZBO-ngqe29gXsaUlI725mEbT_g132WFmSqXGFwKiRs"
         },
         {
           "url": "https://www.wdsu.com/article/new-orleans-jazz-and-heritage-festival-music-lineup-2027/74479227",
@@ -318,41 +353,6 @@
           "publisher": "WDSU",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjPOZe5K2DsSpQQzBUDTGlaeucnR4WycXZUtOxi90YZ1PpoqXYW-qML8PW5JE"
-        }
-      ]
-    },
-    {
-      "query": "space x stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T17:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/video/2026/11/19/dario-amodei-anthropic-enjoying-working-with-spacex.html",
-        "https://finance.yahoo.com/video/being-bearish-on-anthropic-1-trillion-compute-bill-and-nvidia-turmoil-172453054.html",
-        "https://www.wsj.com/livecoverage/anthropic-ipo-stock-market-today-11-19-2026/card/sizing-up-the-mega-ipos-anthropic-vs-spacex-x0GQcPMzF860nR8HHf7g"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw4xQlmBPyPO-mZlCIHzaCt8rjAUUmVU0oT7WTe3SvVgcxuRefw5ny5BE_yw0",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/video/2026/11/19/dario-amodei-anthropic-enjoying-working-with-spacex.html",
-          "title": "Anthropic is ‘enjoying’ working with SpaceX, says CEO Dario Amodei",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw4xQlmBPyPO-mZlCIHzaCt8rjAUUmVU0oT7WTe3SvVgcxuRefw5ny5BE_yw0"
-        },
-        {
-          "url": "https://finance.yahoo.com/video/being-bearish-on-anthropic-1-trillion-compute-bill-and-nvidia-turmoil-172453054.html",
-          "title": "Being Bearish on Anthropic: $1 Trillion Compute Bill and Nvidia turmoil",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_pe507hRySbq-8GkQWyQ0vaZ6il3036u59BY72WdSc7vZ58xzReOCdud2Ws"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/anthropic-ipo-stock-market-today-11-19-2026/card/sizing-up-the-mega-ipos-anthropic-vs-spacex-x0GQcPMzF860nR8HHf7g",
-          "title": "Sizing Up the Mega-IPOs: Anthropic vs. SpaceX",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl91pGPvQYzrNptPeJ3eYWqvoEgXtb0UrwGstE9bziFVtnuxLPZxEBUdIfRQM"
         }
       ]
     }
