@@ -1,3 +1,22 @@
+---
+issue: 1974
+state: source_tested
+dot: "🟡"
+progress_percent: 75
+progress_basis: "Source implemented and independently reviewed; 9 Node tests and 9 browser check groups passed at d1dc4da; corrected ledger CI, merge, deployment and physical Android acceptance pending."
+sessions_spent: 1
+sessions_remaining_estimate: "1–2, dependent on release acceptance"
+agent: "GPT Brain coordinator with independent hypestat_review"
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+next_action: "Inspect all exact-head checks on PR 1975 after the ledger metadata correction."
+merged: false
+deployed: false
+live_verified: false
+---
+
 # HypeStat Infinity — public evidence and authorized aggregate traffic
 
 - Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1974
@@ -5,9 +24,9 @@
 - Repository: www-infinity4/QuantaPhi.
 - Base: `ff6a3242bcdbd75ba15511d9a3d846dda1a6631e`.
 - Source branch: `feat/hypestat-infinity-1974`.
-- Status: `source_tested`, independent source review passed; CI/browser/release pending.
+- Status: `source_tested`, independent source review and focused browser CI passed; corrected ledger CI/release pending.
 - Dot: yellow, waiting on CI and release evidence; no signed writer lease claimed.
-- Progress: estimated 65%; four of six acceptance groups source-implemented. UI behavior, exact-head CI and release acceptance remain to be established.
+- Progress: estimated 75%; source and review 50%, tests 15%, focused CI/browser 10%. Remaining 25% covers all exact-head gates, permitted merge/release, and production/physical Android acceptance.
 - Sessions spent: 1; sessions remaining estimate: 1–2, dependent on CI/release.
 - Lease: none observed or created; lease ID/fence/session/expiry null. Changes staged through the authenticated GitHub connector on a new isolated branch. This is not a signed repository-engine execution receipt.
 
@@ -19,11 +38,11 @@ Primary page: `hypestat-infinity.html`, intended route `/hypestat-infinity.html`
 
 Acceptance groups:
 
-1. Source-implemented: Android-readable static workspace and local persistence; physical Android/browser rendering still unverified.
+1. Source-implemented/browser-tested: readable static workspace and local persistence; 320–1280px layouts passed; physical Android operation still unverified.
 2. Source-implemented: dated evidence, address classification and explicit unknown attribution/availability. Public-domain, gateway and onion-origin scopes are distinct.
 3. Source-implemented/tested: normalized aggregate CSV and strict backup validation, atomic imports, limits and deduplication; manual redaction remains required inside permitted values.
 4. Source-implemented: local script SHA-256 with no execution/upload; bounded Gemini handoff, GA4/Search Console documentation. No Google/Gemini connection or API spend claimed.
-5. Partially verified: 9 Node tests passed; independent source review passed after fixes. Browser suite supplied; local Chromium launch blocked by AF_UNIX socket restriction. Cloud browser could not reach the local HTTP server; file protocol was denied and was not bypassed. A dedicated secret-free GitHub workflow runs the suite against local HTTP on its normal runner.
+5. Verified at source head `d1dc4da30eb392dc9e30baf17f828ccb04fc70a2`: 9 Node tests and all 9 browser check groups passed in the dedicated workflow. Independent source review passed after fixes. Local Chromium was unavailable, so the normal GitHub runner tested the app over local HTTP; no browser security policy was bypassed. The initial ledger contract failed because this new checkpoint lacked YAML front matter; that omission is corrected in this follow-up. Both initial ledger-related failures have the same cause, not an application failure.
 6. Pending: actual exact-head CI, permitted merge, production deployment, live source readback and physical Android acceptance. No production or visitor/maintainer identity receipt exists.
 
 ## Public evidence
@@ -43,7 +62,9 @@ Acceptance groups:
 
 Independent reviewer `/root/hypestat_review` found a saved-data overwrite path, rolled timestamps and overly broad privacy wording. All were fixed and independently re-reviewed; the reviewer independently reran 9/9 tests and found no remaining source blocker. This is source approval, not GitHub/CI/deployment approval.
 
-Browser suite: `hypestat-infinity.browser-test.py`; intended checks include safe DOM rendering, local persistence, authorized aggregate imports, backup exports/imports, actual SHA-256 without execution, all tabs at 320/360/412/768/1280px, and storage-denied/unreadable-data preservation. No passing browser receipt is claimed in this checkpoint.
+Browser suite: `hypestat-infinity.browser-test.py`; all 9 check groups passed: safe DOM rendering, local persistence, authorized aggregate imports, backup exports/imports, actual SHA-256 without execution, all tabs at 320/360/412/768/1280px, and storage-denied/unreadable-data preservation. Run: https://github.com/www-infinity4/QuantaPhi/actions/runs/44523854341 ; job 135559140946. Test step completed successfully at 2026-11-19T12:26:46Z. Keep this prior-head receipt distinct from the next corrected-head run.
+
+PR: https://github.com/www-infinity4/QuantaPhi/pull/1975 . Actual source commit: `d1dc4da30eb392dc9e30baf17f828ccb04fc70a2`.
 
 ## Next executable action
 
