@@ -29,5 +29,7 @@ test('adult video reference cannot become a shopping kit, automatic media load o
  assert.match(card,/kit\?\.sourceOnly===true/);
  assert.match(card,/if\(!acknowledged\)return/);
  assert.match(card,/publisher\.hidden=true/);
+ assert.match(card,/Open external video page/);
+ assert.match(card,/third-party video link/i);
  assert.doesNotMatch(card,/createElement\(['"]iframe['"]\).*xgroovy|createElement\(['"]video['"]\).*xgroovy/i);
 });
