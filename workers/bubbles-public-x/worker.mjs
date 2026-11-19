@@ -131,7 +131,7 @@ export default {
   const hour=new Date(event?.scheduledTime||Date.now()).getUTCHours();
   if(hour%6===0)tasks.push(scanPublicX(env,SECONDARY));
   // Additional public context only; two bounded daily reads minimize browser usage.
-  if(hour%12===0)tasks.push(scanPublicX(env,STARCRAFT));
+  if(hour%12===2)tasks.push(scanPublicX(env,STARCRAFT));
   ctx.waitUntil(Promise.allSettled(tasks));
  },
  async fetch(request,env){
