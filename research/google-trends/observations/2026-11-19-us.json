@@ -3,82 +3,109 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T17:31:02.894390Z",
+  "checked_at": "2026-11-19T18:01:36.218230Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "patrick sellers alabama",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T17:10:00Z",
+      "query": "invincible",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T17:40:00Z",
       "related_news_urls": [
-        "https://www.alreporter.com/2026/11/19/sources-state-rep-sellers-indicted-on-fraud-charges",
-        "https://www.wbrc.com/2026/11/19/state-rep-patrick-sellers-indicted-federal-wire-fraud-charges/",
-        "https://abc3340.com/news/local/jefferson-county-lawmaker-indicted-in-alleged-240k-covid-relief-fraud-scheme"
+        "https://mezha.net/eng/news/mezha-54fbf09f5e0bf2f9ec90f2cd_invincible-_season_5/",
+        "https://nerdist.com/article/invincible-season-5-release-date-new-burger-mart-trailer/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLryOy4RyHTiX61beCSZbfalnoCTUchMm72hWVOi33BQVQElqHRikdDIJpgJc",
-      "image_credit": "Alabama Political Reporter",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7by0cHHfoxPnU_rKy312PJB_bfdgcMYeBaBg-mDmSLRRPzSRED_aeABgDZYs",
+      "image_credit": "The Futon Critic",
       "news": [
         {
-          "url": "https://www.alreporter.com/2026/11/19/sources-state-rep-sellers-indicted-on-fraud-charges",
-          "title": "Sources: State Rep. Sellers indicted on fraud charges",
-          "publisher": "Alabama Political Reporter",
+          "url": "https://mezha.net/eng/news/mezha-54fbf09f5e0bf2f9ec90f2cd_invincible-_season_5/",
+          "title": "‘Invincible’ Season 5 to Premiere Feb. 17; Teaser Features Burger Mart",
+          "publisher": "Mezha.net",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLryOy4RyHTiX61beCSZbfalnoCTUchMm72hWVOi33BQVQElqHRikdDIJpgJc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpENWf1QOL-yfIzvyNaVChJZsgy6jxkVR47sTlaqEie-cjDePG8rg2xZD_G1Y"
         },
         {
-          "url": "https://www.wbrc.com/2026/11/19/state-rep-patrick-sellers-indicted-federal-wire-fraud-charges/",
-          "title": "State Rep. Patrick Sellers indicted on federal wire fraud charges",
-          "publisher": "WBRC 6 News",
+          "url": "https://nerdist.com/article/invincible-season-5-release-date-new-burger-mart-trailer/",
+          "title": "INVINCIBLE Sets Season 5 Release Date with New Burger Mart Trailer",
+          "publisher": "Nerdist",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrqjMGgAkHw1H2IqQlu9XiFcGwJBlND4lqN9JOgBxJCpDXec8XE3PmgbqPmHQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-vbXeGC8OpzsnEsLqO17TYN37fihGzfRzEFUNgfIH5vyot5CST-v6qSGQ7Uw"
+        }
+      ]
+    },
+    {
+      "query": "dwts finale songs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T17:40:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1438204/dancing-with-the-stars-season-35-finale-airing-live-coast-to-coast-nov-24",
+        "https://www.deseret.com/entertainment/2026/11/18/dancing-with-the-stars-semifinals-recap/",
+        "https://www.upi.com/Entertainment_News/TV/2026/11/18/dwts-season-35-finalists/9371795016369/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDXMtU3m_LmAl5WAwTvwXDYUwt6J41MVcuLXbw9jkumyFYf-xTw_U485AKxGc",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1438204/dancing-with-the-stars-season-35-finale-airing-live-coast-to-coast-nov-24",
+          "title": "Dancing With the Stars Reveals Major Change for Season 35 Finale",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDXMtU3m_LmAl5WAwTvwXDYUwt6J41MVcuLXbw9jkumyFYf-xTw_U485AKxGc"
         },
         {
-          "url": "https://abc3340.com/news/local/jefferson-county-lawmaker-indicted-in-alleged-240k-covid-relief-fraud-scheme",
-          "title": "Jefferson County lawmaker indicted in alleged $240K COVID relief fraud scheme",
-          "publisher": "WBMA",
+          "url": "https://www.deseret.com/entertainment/2026/11/18/dancing-with-the-stars-semifinals-recap/",
+          "title": "Top-scoring actor sent home in ‘Dancing with the Stars’ semifinals",
+          "publisher": "Deseret News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSv6m6owfaXil5RWQzPx0_BJaKUdeVtv6-TyxDBihQO3V5PeyrcdjyrJ1u6vQQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpoIDGOaDlyy7H9GrvaNE8pkVg-1q4HmGNLpfjIQEfrWsoMGVoLwpSRB-ivqU"
+        },
+        {
+          "url": "https://www.upi.com/Entertainment_News/TV/2026/11/18/dwts-season-35-finalists/9371795016369/",
+          "title": "'DWTS' Season 35 finalists confirmed for first-ever live finale",
+          "publisher": "upi",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWMeWjAl8Ab3b4lkdqxvemgoUG4Al2jM1svsDI6d7JwdZaLaR1nL0CfTGCESI"
         }
       ]
     },
     {
       "query": "jazz fest 2027 lineup",
-      "approx_searches": "500+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-19T17:00:00Z",
       "related_news_urls": [
-        "https://www.nola.com/entertainment_life/festivals/jazz-fest-lineup-early/article_af2c14fa-1009-42c1-a470-b2c5aa06ef60.html",
-        "https://www.audacy.com/wwl/news/local/james-taylor-foo-fighters-gwen-stefani-among-new-orleans-jazz-fest-headliners",
-        "https://www.wwltv.com/article/entertainment/events/festivals/jazz-fest-lineup-released-earlier-than-usual-heres-whos-playing/289-e6b78b1f-ce9a-4c1d-b8af-73b2020affca"
+        "https://www.audacy.com/wwl/news/local/jazz-fest-2678454351",
+        "https://www.nola.com/entertainment_life/festivals/how-to-buy-jazz-fest-tickets2027/article_7b81f22b-0b45-5d57-91dc-55270f5e0b5b.html",
+        "https://www.jambase.com/article/new-orleans-jazz-fest-lineup-2027"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDU30sQ_w3esk8KpbVQqfBF-ldPVfRMI1r_bXeoKZOIIsDtk6mNSaN4NJASkI",
-      "image_credit": "NOLA.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkfT301OXO-WfinkLgUZt3-ni17J-tb1CM6vY5h6DSqpyu2sLX4eKp2nMBbY",
+      "image_credit": "Audacy",
       "news": [
         {
-          "url": "https://www.nola.com/entertainment_life/festivals/jazz-fest-lineup-early/article_af2c14fa-1009-42c1-a470-b2c5aa06ef60.html",
-          "title": "2027 New Orleans Jazz Fest lineup is coming earlier than ever this year. See the details.",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDU30sQ_w3esk8KpbVQqfBF-ldPVfRMI1r_bXeoKZOIIsDtk6mNSaN4NJASkI"
-        },
-        {
-          "url": "https://www.audacy.com/wwl/news/local/james-taylor-foo-fighters-gwen-stefani-among-new-orleans-jazz-fest-headliners",
-          "title": "James Taylor, Foo Fighters, Gwen Stefani among Jazz Fest headliners",
+          "url": "https://www.audacy.com/wwl/news/local/jazz-fest-2678454351",
+          "title": "Jazz Fest announces 2027 lineup today, who may be playing?",
           "publisher": "Audacy",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsCq5bYtYSKFJBU2FI7z2yabOHEjVU4_PvKH2oMu5arhjP-etw0BxZeL-_QTQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkfT301OXO-WfinkLgUZt3-ni17J-tb1CM6vY5h6DSqpyu2sLX4eKp2nMBbY"
         },
         {
-          "url": "https://www.wwltv.com/article/entertainment/events/festivals/jazz-fest-lineup-released-earlier-than-usual-heres-whos-playing/289-e6b78b1f-ce9a-4c1d-b8af-73b2020affca",
-          "title": "Jazz Fest lineup released earlier than usual: Here's who's playing",
-          "publisher": "WWLTV.com",
+          "url": "https://www.nola.com/entertainment_life/festivals/how-to-buy-jazz-fest-tickets2027/article_7b81f22b-0b45-5d57-91dc-55270f5e0b5b.html",
+          "title": "New Orleans Jazz Fest 2027 tickets and weekend passes: What to know, how to buy",
+          "publisher": "NOLA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm2UICxy0BjrE6ekdy0sZ5V4ZJMXw4irV75HMrt_xSWVPnP-o77VYjct4Jk3Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpvgpgI7bX53Q-MmAKOSa-rJkMqcuqH53FEEOtS7PbZDgTnOhMm1U_qAS91HY"
+        },
+        {
+          "url": "https://www.jambase.com/article/new-orleans-jazz-fest-lineup-2027",
+          "title": "Foo Fighters, Noah Kahan & The Who Lead New Orleans Jazz Fest 2027 Lineup",
+          "publisher": "JamBase",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTb5gox-l03sVXqWu2_sK5eaIZytJQzJ_s3TfWqrIfbpuHy9CNAdQ8jaukSvIU"
         }
       ]
     },
     {
       "query": "space x stock",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T17:00:00Z",
       "related_news_urls": [
         "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-adds-54-billion-230223184.html",
@@ -112,37 +139,91 @@
       ]
     },
     {
+      "query": "roaring kitty",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T17:00:00Z",
+      "related_news_urls": [
+        "https://www.barrons.com/articles/gamestop-stock-roaring-kitty-6277bb9f"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTogp2AH1WoBLs4q0p4TM4PQaM0u_tOdhoXcYvdXLpjGd9XE7dhG9xoxK_YyEQ",
+      "image_credit": "Barron's",
+      "news": [
+        {
+          "url": "https://www.barrons.com/articles/gamestop-stock-roaring-kitty-6277bb9f",
+          "title": "Roaring Kitty Is Back. Can He Spark Another GameStop Stock Frenzy?",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTogp2AH1WoBLs4q0p4TM4PQaM0u_tOdhoXcYvdXLpjGd9XE7dhG9xoxK_YyEQ"
+        }
+      ]
+    },
+    {
       "query": "riley moss",
       "approx_searches": "1000+",
       "published_at": "2026-11-19T16:50:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/broncos-riley-moss-agree-four-165834561.html",
-        "https://www.nytimes.com/athletic/7795216/2026/11/19/riley-moss-contract-broncos/",
-        "https://bleacherreport.com/articles/25535353-riley-moss-broncos-reportedly-agree-contract-extension-details-revealed-new-nfl-rumors"
+        "https://www.espn.com/nfl/story/_/id/50532392/sources-broncos-sign-cb-riley-moss-four-year-extension",
+        "https://sports.yahoo.com/articles/why-broncos-signing-riley-moss-172126703.html",
+        "https://www.foxsports.com/stories/nfl/denver-broncos-riley-moss-contract-extension"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrsps2I8QWvCZK-YEv4v5rtDtY0mnzOli8YKdVw5ygCWqTZF9TmzYDBJRZr9k",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ1tXHx7M0xkF15xguWA2z2_V7YwPXVYiXJeVZcfR8Zerjx4KdOVaYq7yTSW0",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/broncos-riley-moss-agree-four-165834561.html",
-          "title": "Broncos, Riley Moss agree to four-year extension",
+          "url": "https://www.espn.com/nfl/story/_/id/50532392/sources-broncos-sign-cb-riley-moss-four-year-extension",
+          "title": "Sources -- Broncos sign CB Riley Moss to four-year extension",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ1tXHx7M0xkF15xguWA2z2_V7YwPXVYiXJeVZcfR8Zerjx4KdOVaYq7yTSW0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/why-broncos-signing-riley-moss-172126703.html",
+          "title": "Why Broncos are signing Riley Moss to a $67 million contract extension",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrsps2I8QWvCZK-YEv4v5rtDtY0mnzOli8YKdVw5ygCWqTZF9TmzYDBJRZr9k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtZw-R--E3Nly5jTinC4ZT3MRLBIzOgCtkEq-51VEOExyMu3Kr7KKuRVSWEgQ"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7795216/2026/11/19/riley-moss-contract-broncos/",
-          "title": "Riley Moss, Broncos finalizing 4-year, $67 million extension: Sources",
-          "publisher": "The New York Times",
+          "url": "https://www.foxsports.com/stories/nfl/denver-broncos-riley-moss-contract-extension",
+          "title": "Denver Broncos, CB Riley Moss Agree To 4-Year Extension",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1jitkPQyFgEl6cTiPG273wVgiHCChxsu6Gttq9hrCNbPUmzVL_CnX9hzH2tM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbnP-dnw_qVRbOIKlcSPOk4UoT_MpfiykiuobIHgJ-_64DtdVIb0Rn7Iar7CI"
+        }
+      ]
+    },
+    {
+      "query": "indicted",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T16:50:00Z",
+      "related_news_urls": [
+        "https://www.alreporter.com/2026/11/19/sources-state-rep-sellers-indicted-on-fraud-charges",
+        "https://www.wbrc.com/2026/11/19/state-rep-patrick-sellers-indicted-federal-wire-fraud-charges/",
+        "https://www.al.com/politics/2026/11/alabama-lawmaker-indicted-on-federal-fraud-charges.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLryOy4RyHTiX61beCSZbfalnoCTUchMm72hWVOi33BQVQElqHRikdDIJpgJc",
+      "image_credit": "Alabama Political Reporter",
+      "news": [
+        {
+          "url": "https://www.alreporter.com/2026/11/19/sources-state-rep-sellers-indicted-on-fraud-charges",
+          "title": "Sources: State Rep. Sellers indicted on fraud charges",
+          "publisher": "Alabama Political Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLryOy4RyHTiX61beCSZbfalnoCTUchMm72hWVOi33BQVQElqHRikdDIJpgJc"
         },
         {
-          "url": "https://bleacherreport.com/articles/25535353-riley-moss-broncos-reportedly-agree-contract-extension-details-revealed-new-nfl-rumors",
-          "title": "Riley Moss, Broncos Reportedly Agree to Contract Extension, Details Revealed in New NFL Rumors",
-          "publisher": "Bleacher Report",
+          "url": "https://www.wbrc.com/2026/11/19/state-rep-patrick-sellers-indicted-federal-wire-fraud-charges/",
+          "title": "State Rep. Patrick Sellers indicted on federal wire fraud charges",
+          "publisher": "WBRC 6 News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSVYNwBusGI4bMzxAWk3Y92bLeZPbWtb5BRkdCc8sG2BzmghsLMznFCNjrdeY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrqjMGgAkHw1H2IqQlu9XiFcGwJBlND4lqN9JOgBxJCpDXec8XE3PmgbqPmHQ"
+        },
+        {
+          "url": "https://www.al.com/politics/2026/11/alabama-lawmaker-indicted-on-federal-fraud-charges.html",
+          "title": "Alabama lawmaker, pastor indicted for COVID relief fraud",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzwPfjPIoBlDSYKEKC8vnd3CurmWecxLV5Zh-RpQQXtJ0s5HrSuutereiPIpU"
         }
       ]
     },
@@ -248,111 +329,6 @@
           "publisher": "KETV",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5cbzNrSKg3u25Jb7gme_f3-dDnaYUkIHHUKXjNiZr2XHGEJNh3duWieKk"
-        }
-      ]
-    },
-    {
-      "query": "petroleum",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T16:30:00Z",
-      "related_news_urls": [
-        "https://www.trefis.com/stock/mpc/articles/626943/what-moved-marathon-petroleum-stock/2026-11-19",
-        "https://kalkinemedia.com/us/stocks/oil-gas/how-will-a-bigger-buyback-plan-shape-marathon-petroleum-nysempc",
-        "https://www.marketwatch.com/data-news/marathon-petroleum-corp-stock-underperforms-tuesday-when-compared-to-competitors-91633a9a-eb419f83c98b?mod=goog_fin_scmw"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0N6Ul-OQCRczOyGq-fyBioF8Wp3Yw5a4a25RphcTCm8iOzxx0G01vHYH-VVo",
-      "image_credit": "Trefis",
-      "news": [
-        {
-          "url": "https://www.trefis.com/stock/mpc/articles/626943/what-moved-marathon-petroleum-stock/2026-11-19",
-          "title": "What Moved Marathon Petroleum Stock?",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0N6Ul-OQCRczOyGq-fyBioF8Wp3Yw5a4a25RphcTCm8iOzxx0G01vHYH-VVo"
-        },
-        {
-          "url": "https://kalkinemedia.com/us/stocks/oil-gas/how-will-a-bigger-buyback-plan-shape-marathon-petroleum-nysempc",
-          "title": "How Will a Bigger Buyback Plan Shape Marathon Petroleum (NYSE:MPC)?",
-          "publisher": "Kalkine Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKXxgR4xwZGBZ0SHy4fp8dg7ylA0HwDbLU4whBYPFijbTm3qAPjx122kmRx7Y"
-        },
-        {
-          "url": "https://www.marketwatch.com/data-news/marathon-petroleum-corp-stock-underperforms-tuesday-when-compared-to-competitors-91633a9a-eb419f83c98b?mod=goog_fin_scmw",
-          "title": "Marathon Petroleum Corp. stock underperforms Tuesday when compared to competitors",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTELrZBk2oHD-lb3LayGayxt_pw8CWnBT0_GDiNlf45HykrttzSBTNjguhmF9w"
-        }
-      ]
-    },
-    {
-      "query": "nascar",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-19T16:20:00Z",
-      "related_news_urls": [
-        "https://www.nascar.com/news-media/2026/11/18/nascar-announces-format-eligibility-requirements-for-2027-clash-at-daytona/",
-        "https://www.jayski.com/2026/11/18/nascar-announces-eligibility-requirements-format-for-2027-wheatley-vodka-clash/",
-        "https://www.usatoday.com/story/sports/nascar/2026/11/18/nascar-clash-daytona-format-eligibility-2027/92850190007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTszRkDPocTwFN5vFsdxZyrRuUuxbdkBbqkPUdODtMvjnK40lm-E8YCVdj98M",
-      "image_credit": "NASCAR.com",
-      "news": [
-        {
-          "url": "https://www.nascar.com/news-media/2026/11/18/nascar-announces-format-eligibility-requirements-for-2027-clash-at-daytona/",
-          "title": "NASCAR announces format, eligibility requirements for 2027 Clash at Daytona",
-          "publisher": "NASCAR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTszRkDPocTwFN5vFsdxZyrRuUuxbdkBbqkPUdODtMvjnK40lm-E8YCVdj98M"
-        },
-        {
-          "url": "https://www.jayski.com/2026/11/18/nascar-announces-eligibility-requirements-format-for-2027-wheatley-vodka-clash/",
-          "title": "NASCAR announces eligibility requirements, format for 2027 Wheatley Vodka Clash",
-          "publisher": "Jayski",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX70DT2tDrZbFjVwFpc6uJNsThxxx9zIRrOHfnVn7fDMVoD5y38mFkddWrNrk"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nascar/2026/11/18/nascar-clash-daytona-format-eligibility-2027/92850190007/",
-          "title": "NASCAR sets format for 2027 Clash at Daytona, 22 drivers eligible",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQu1qvRiepaMG4uJYq6H8T_M2Wu4ZiSklpHyj1PoZtbRgycNzB87kHWHRySgbQ"
-        }
-      ]
-    },
-    {
-      "query": "glenn close",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T16:20:00Z",
-      "related_news_urls": [
-        "https://people.com/glenn-close-on-creating-drusilla-sickle-iconic-look-in-sunrise-on-the-reaping-exclusive-12260229",
-        "https://www.thedailybeast.com/obsessed/glenn-close-delivers-most-unhinged-performance-yet-in-hunger-games-prequel",
-        "https://www.facebook.com/deadline/videos/glenn-close-on-who-she-thinks-drusilla-sickle-is-underneath-the-facade-hungergam/1136680665725816/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKlsCD1P9Sz-MiKrHS8a-NDPZQdD__eKzNiK_U3HTunBVtXCr3_uNYILikvo",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/glenn-close-on-creating-drusilla-sickle-iconic-look-in-sunrise-on-the-reaping-exclusive-12260229",
-          "title": "Glenn Close Details How She Came Up with Drusilla Sickle’s Iconic Look in Sunrise on the Reaping (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKlsCD1P9Sz-MiKrHS8a-NDPZQdD__eKzNiK_U3HTunBVtXCr3_uNYILikvo"
-        },
-        {
-          "url": "https://www.thedailybeast.com/obsessed/glenn-close-delivers-most-unhinged-performance-yet-in-hunger-games-prequel",
-          "title": "79-Year-Old Legend Delivers Most Unhinged Performance Yet",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz0yh85fV_OEIYj3S_XgeArHsJjQZwIvj04b0Tlljv_0eHjBoRcoi4MVL1p0E"
-        },
-        {
-          "url": "https://www.facebook.com/deadline/videos/glenn-close-on-who-she-thinks-drusilla-sickle-is-underneath-the-facade-hungergam/1136680665725816/",
-          "title": "Glenn Close on who she thinks Drusilla Sickle is underneath the facade #HungerGames",
-          "publisher": "Facebook",
-          "description": "",
-          "image_url": null
         }
       ]
     }
