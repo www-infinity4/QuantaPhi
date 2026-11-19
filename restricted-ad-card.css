@@ -49,6 +49,8 @@
 .rac-kit-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-bottom:12px}
 .rac-kit-link{display:flex;align-items:center;justify-content:center;padding:9px;min-height:48px;border-radius:11px;background:#f5f7f8;color:#223b4d!important;border:1px solid #d9dfe4;text-decoration:none;text-align:center;font-size:13px;font-weight:700;overflow-wrap:anywhere}
 .rac-kit-link:focus-visible{outline:3px solid #77abc9;outline-offset:2px}
+.rac-source-portal{display:flex;align-items:center;justify-content:center;min-height:48px;margin-top:12px;padding:10px 12px;border:1px solid #d9dfe4;border-radius:11px;background:#f5f7f8;color:#223b4d!important;text-decoration:none;text-align:center;font-size:14px;font-weight:700;overflow-wrap:anywhere}
+.rac-source-portal:focus-visible{outline:3px solid #77abc9;outline-offset:2px}
 @media(max-width:390px){.rac-kit-links{grid-template-columns:1fr}#infinityAdultContentCard .rac-kitbar .rac-button{width:100%}}
 
 /* Local purpose-kit checklist: restrained, readable and not a fabricated shopping cart. */
