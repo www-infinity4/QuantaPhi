@@ -27,6 +27,38 @@ test('For You is limited to followed cards or visitor-chosen departments; Public
  assert.deepEqual(feedCandidates(all,'following',state).map(c=>c.id),['go-shopping']);
  assert.ok(!('gender' in cleanFeedState({gender:'male',interests:['sports']})));
 });
+test('political promotions are ineligible across ad feeds while ordinary reporting remains',()=>{
+ const approved={id:'sample-promotion',type:'sponsored',approved:true,reviewed:true,
+  category:'Shopping',title:'Community spotlight',createdAt:'2026-11-09T12:00:00Z',
+  startsAt:'2026-11-01T00:00:00Z',endsAt:'2026-11-30T23:59:59Z',
+  image:'https://example.org/ad.webp',sourceUrl:'https://example.org/ad'};
+ assert.equal(placementPolicy(approved,{now}).eligible,true,'neutral product ads remain eligible');
+ for(const update of [
+  {category:'Political campaign'},
+  {title:'Re-elect Zach Nunn to Congress'},
+  {description:'Paid for by the Iowa campaign committee'},
+  {advertiser:'Political action committee'},
+  {campaignType:'election'},
+  {sponsor:'Republican Party'},
+  {id:'zach-nunn-ia3'}
+ ])assert.equal(placementPolicy({...approved,...update},{now}).eligible,false,
+  'political ad must fail closed: '+JSON.stringify(update));
+ assert.equal(placementPolicy({id:'local-news',type:'editorial',title:'Election news coverage',category:'News'},{now}).eligible,true);
+ const editorial=card('local-news','News',{name:'Election news coverage'});
+ const boosted=card('promoted-election','Shopping',{type:'sponsored',name:'Zach Nunn for Congress',
+  approved:true,reviewed:true,createdAt:approved.createdAt,startsAt:approved.startsAt,
+  endsAt:approved.endsAt,image:approved.image,sourceUrl:approved.sourceUrl});
+ assert.deepEqual(feedCandidates([boosted,editorial],'public',cleanFeedState({})).map(c=>c.id),['local-news']);
+});
+test('political approved publisher cards are excluded from creative rotation',()=>{
+ const good={slug:'product-review',status:'approved',title:'Product review',kind:'Shopping',
+  website:'https://example.org/',image:'https://example.org/ad.webp',
+  createdAt:'2026-11-09T12:00:00Z',cardUrl:'https://quantaphi.org/cards/product-review'};
+ const all=[good,{...good,slug:'iowa-office',title:'Zach Nunn election campaign'},
+  {...good,slug:'party-drive',kind:'Political party'},
+  {...good,slug:'vote-ad',description:'Vote for our candidate'}];
+ assert.deepEqual(freshApprovedCreatives({cards:all},{now}).map(x=>x.id),['product-review']);
+});
 test('verified lunch ad can run when region/time is verified; business unknown hours never imply open now',()=>{
  const campaign={id:'mcd-source',title:'Official restaurant promotion',type:'sponsored',approved:true,reviewed:true,
   category:'Restaurants',createdAt:'2026-11-09T18:00:00Z',startsAt:'2026-11-02T00:00:00Z',endsAt:'2026-11-30T23:59:59Z',
