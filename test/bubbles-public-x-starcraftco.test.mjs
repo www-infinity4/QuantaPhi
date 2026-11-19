@@ -48,12 +48,12 @@ test('StarCraftCo scheduled context runs twice daily, isolated from owner and In
   BROWSER:{async quickAction(_op,opts){const account=opts.url.split('/').at(-1);accountByHour.push(account);return new Response(article(account,'2123456789012345678','Source read'));}},
   DB:{prepare(){return {bind(){return {async run(){return {meta:{changes:1}}}}}}}}
  };
- for(const hour of [0,6,12,18]){
+ for(const hour of [0,2,6,12,14,18]){
   let pending;
   await reader.scheduled({scheduledTime:Date.parse('2026-11-19T'+String(hour).padStart(2,'0')+':17:00Z')},env,{waitUntil(p){pending=p}});
   await pending;
  }
- assert.equal(accountByHour.filter(x=>x==='YahooPingcwlz').length,4);
+ assert.equal(accountByHour.filter(x=>x==='YahooPingcwlz').length,6);
  assert.equal(accountByHour.filter(x=>x==='IntegraAI').length,4);
  assert.equal(accountByHour.filter(x=>x==='StarCraftCo').length,2);
 });
