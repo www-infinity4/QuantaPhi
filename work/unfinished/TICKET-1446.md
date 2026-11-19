@@ -3,9 +3,9 @@ issue: 1446
 project: "21+ lifestyle source carousel · external adult video reference"
 state: review_pending
 dot: "🟡"
-progress_percent: 55
-progress_basis: "Existing 21+ gate and source card reused; one source-only link, isolated chooser, and regression test authored. CI, review, merge, production and physical Android acceptance not yet verified."
-sessions_spent: 1
+progress_percent: 70
+progress_basis: "Ad-free external-link source Quick Card and visit gate implemented, source-only home link, and dedicated regressions CI-passing. Independent rights/age-policy review, permitted merge, live and Android acceptance remain outstanding."
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: "ChatGPT GitHub connector · scoped owner source branch"
 lease_id: null
@@ -19,7 +19,7 @@ merged: false
 deployed: false
 live_verified: false
 blocker: "No owner/publisher permission or consent provenance established for copying/embedding video. Independent review, exact-head CI, merge, live and Android acceptance outstanding."
-next_action: "Read exact-head 21+ publisher GitHub Actions status, repair any failing tests and request independent review; keep source-only external link unless media rights are separately validated."
+next_action: "Confirm all exact-head Actions are green, obtain independent policy/accessibility review and source provenance, then guarded merge if approved; do not publish unlicensed media."
 ---
 # 21+ external video source · 2026-11-19
 
@@ -36,3 +36,13 @@ Scope: Add **one submitted external URL only** into the existing visit-acknowled
 - Stages: source committed to review branch; PR #1985 opened as draft; GitHub CI and independent reviewer still needed; no merge/deployment/Android receipt claimed.
 
 Next action: check exact-head workflow result at PR #1985 and resolve failures before independent review.
+
+## Session 2 · November 19, 2026 · Red/Green/Pink/Black continuity
+
+- Reconciled four intervening main-branch commits into the PR branch with explicit dual-parent merge `ffe7fd22f18deb5fc0662d141ac1b18da4dabab6` using GitHub's repository Git objects, preserving all main files. Comparison readback: 0 commits behind main at that checkpoint.
+- Reviewed Google Publisher policies: external links count as monetized page content; sexually explicit media is in prohibited advertising categories. Direct adult video referral removed from `adult-lifestyle-catalog.mjs` and the AdSense-loaded homepage source carousel.
+- Created separate `/21plus-video-source.html` and `adult-video-source.mjs`: no ads, analytics, third-party scripts or media, explicit per-page 21+ browsing acknowledgment, closed-by-default external `href`, local page navigation from the existing acknowledged 21+ panel. This is **not verified age** or publisher permission.
+- The new test-first commit `c3bfe86e534719c5004aedcaf11c61597cdd7922` failed the existing publisher workflow (RED) before the isolated page existed; then new source was committed, and the original ad-safe catalog and shopping-kit tests restored.
+- Later CI `44630867874` 21+ publisher **passed**, `44630867966` restricted-ads policy **passed**, `44630868045` Oracle **passed**, `44630867862` unfinished ledger **passed**, `44630868018` Obsidian **passed** on head `80dc466fbf26d5f5e5743e99766f75179bb66841`. At this checkpoint, general quality and StarCoin workflow were still running; recheck latest head after this ticket update.
+- Fixed missing mainline #1210 route after merging main; restored #1974 route. Independently enumerated 54 ticket files on branch: all have INDEX.md references.
+- No independent approved review, media license, consent provenance, actual hosted playback, merge, Cloudflare deployment, browser or physical Android acceptance established. Keep PR #1985 open and do not call source tests production readiness.
