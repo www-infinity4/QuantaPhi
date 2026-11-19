@@ -58,11 +58,15 @@ const sensitiveCommercial=/\b(cannabis|dispensary|marijuana|thc|cigar|tobacco|va
  * promotional cards and source-directory spotlights, regardless of party.
  * Editorial news reporting and neutral government-service references remain.
  */
-const politicalPromotion=/\b(?:politic(?:al|s)|election(?:s|eering)?|electoral|re[- ]?elect(?:ion)?|vote\s+for|vot(?:e|ing)\s+(?:yes|no)\s+on|candidate|campaign\s+committee|political\s+action\s+committee|(?:democrat(?:ic)?|republican|libertarian|green)\s+party|zach\s+nunn|mariannette\s+miller[- ]?meeks)\b/i;
+const politicalPromotion=/\b(?:politic(?:al|s)|election(?:s|eering)?|electoral|re[- ]?elect(?:ion)?|vote|voter|voting|ballot|referendum|proposition|candidate|congress|senate|senator|governor|mayor|campaign\s+committee|political\s+action\s+committee|(?:democrat(?:ic)?|republican|libertarian|green)\s+party|zach\s+nunn|mariannette\s+miller[- ]?meeks)\b/i;
 const namedCandidateCard=id=>/^(?:source-)?(?:zach-nunn-ia3|miller-meeks-ia1)$/i.test(String(id||''));
 export function isPoliticalPromotion(card={}){
  if(!card||typeof card!=='object')return false;
  if(namedCandidateCard(card.id))return true;
+ if(/^pac$/i.test(safeText(card.campaignType))||/\bpac\b/i.test([card.advertiser,card.sponsor,card.paidForBy].map(safeText).join(' ')))return true;
+ for(const value of [card.url,card.website,card.sourceUrl,card.destinationUrl,card.landingUrl]){
+  try {if(/(?:^|\.)(?:actblue\.com|winred\.com)$/i.test(new URL(value).hostname))return true;}catch{}
+ }
  const fields=[card.id,card.name,card.title,card.description,card.body,
   card.category,card.kind,card.topic,card.campaignType,card.campaignName,
   card.advertiser,card.sponsor,card.paidForBy,card.paid_for_by,
