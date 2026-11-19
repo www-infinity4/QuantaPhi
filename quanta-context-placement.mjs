@@ -78,7 +78,8 @@ export function placementPolicy(campaign,{now=new Date(),daypart=currentDaypart(
  if(!(now instanceof Date)||!Number.isFinite(now.getTime()))return {eligible:false,reason:'Invalid clock',openNow:false,weight:0};
  const type=campaign?.type||'editorial',sponsor=type==='sponsored';
  const adPlacement=['sponsored','paid','promoted','house-ad','advertisement','ad','published-card'].includes(type)||campaign?.isAd===true;
- if(namedCandidateCard(campaign?.id)||(adPlacement&&isPoliticalPromotion(campaign)))
+ const editorial=['editorial','news','article'].includes(type);
+ if(namedCandidateCard(campaign?.id)||((adPlacement||!editorial)&&isPoliticalPromotion(campaign)))
   return {eligible:false,reason:'Political advertising disabled',openNow:false,weight:0};
  const category=[campaign?.category,campaign?.title,campaign?.description].map(safeText).join(' ');
  if(sponsor&&sensitiveCommercial.test(category))return {eligible:false,reason:'Restricted ad category',openNow:false,weight:0};
