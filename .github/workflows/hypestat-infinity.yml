@@ -34,8 +34,10 @@ jobs:
           python-version: '3.12'
       - name: Install browser test tools
         run: |
-          python -m pip install playwright
-          python -m playwright install --with-deps chromium
+          python -m pip install playwright==1.62.0
+          # Hosted Ubuntu already supplies Chromium's runtime libraries. Avoid
+          # reinstalling unrelated system fonts through flaky package mirrors.
+          python -m playwright install chromium
       - name: Test local HTTP UI and mobile viewports
         run: |
           python -m http.server 8765 --bind 127.0.0.1 > /tmp/infinity-http.log 2>&1 &

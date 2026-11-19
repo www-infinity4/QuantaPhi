@@ -3,7 +3,7 @@ issue: 1974
 state: source_tested
 dot: "🟡"
 progress_percent: 75
-progress_basis: "Source implemented and independently reviewed; 9 Node tests and 9 browser check groups passed at d1dc4da; corrected ledger CI, merge, deployment and physical Android acceptance pending."
+progress_basis: "Source implemented and independently reviewed; 9 Node tests and 9 browser check groups passed at d1dc4da; seven checks passed at 59450f8; focused CI setup repair and release acceptance pending."
 sessions_spent: 1
 sessions_remaining_estimate: "1–2, dependent on release acceptance"
 agent: "GPT Brain coordinator with independent hypestat_review"
@@ -11,7 +11,7 @@ lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-next_action: "Inspect all exact-head checks on PR 1975 after the ledger metadata correction."
+next_action: "Inspect all exact-head checks on PR 1975 after the browser-tool setup repair."
 merged: false
 deployed: false
 live_verified: false
@@ -24,7 +24,7 @@ live_verified: false
 - Repository: www-infinity4/QuantaPhi.
 - Base: `ff6a3242bcdbd75ba15511d9a3d846dda1a6631e`.
 - Source branch: `feat/hypestat-infinity-1974`.
-- Status: `source_tested`, independent source review and focused browser CI passed; corrected ledger CI/release pending.
+- Status: `source_tested`, independent source review and initial focused browser CI passed; current focused CI setup repair/release pending.
 - Dot: yellow, waiting on CI and release evidence; no signed writer lease claimed.
 - Progress: estimated 75%; source and review 50%, tests 15%, focused CI/browser 10%. Remaining 25% covers all exact-head gates, permitted merge/release, and production/physical Android acceptance.
 - Sessions spent: 1; sessions remaining estimate: 1–2, dependent on CI/release.
@@ -65,6 +65,8 @@ Independent reviewer `/root/hypestat_review` found a saved-data overwrite path, 
 Browser suite: `hypestat-infinity.browser-test.py`; all 9 check groups passed: safe DOM rendering, local persistence, authorized aggregate imports, backup exports/imports, actual SHA-256 without execution, all tabs at 320/360/412/768/1280px, and storage-denied/unreadable-data preservation. Run: https://github.com/www-infinity4/QuantaPhi/actions/runs/44523854341 ; job 135559140946. Test step completed successfully at 2026-11-19T12:26:46Z. Keep this prior-head receipt distinct from the next corrected-head run.
 
 PR: https://github.com/www-infinity4/QuantaPhi/pull/1975 . Actual source commit: `d1dc4da30eb392dc9e30baf17f828ccb04fc70a2`.
+
+At `59450f85d50863be562289a3a21b319691b92232`, all seven other workflow runs passed, including both ledger-related checks. Focused run https://github.com/www-infinity4/QuantaPhi/actions/runs/44524144882 failed before UI execution: Ubuntu package mirrors timed out while Playwright's `--with-deps` attempted to install additional system fonts. Logs showed the required Chromium runtime libraries already installed. The workflow now pins the tested Playwright 1.62.0 and installs its browser without reinstalling system packages. No application assertion was removed or weakened; the full same browser suite remains required. The repaired workflow needs a new exact-head receipt.
 
 ## Next executable action
 
