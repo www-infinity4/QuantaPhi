@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T13:31:08.535182Z",
+  "checked_at": "2026-11-19T14:01:16.601869Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "billie jean king",
+      "query": "bob woodward",
       "approx_searches": "500+",
-      "published_at": "2026-11-19T13:10:00Z",
+      "published_at": "2026-11-19T13:40:00Z",
       "related_news_urls": [
-        "https://www.billiejeankingcup.com/en/news/usa-v-hungary-2026-billie-jean-king-cup-play-offs-preview",
-        "https://www.wpbf.com/article/coco-gauff-team-usa-billiejeankingcup/74470569",
-        "https://www.tenniswatcher.com/en/news/ashlyn-krueger-and-desirae-krawczyk-replace-injured-keys-keys-in-us-billie-jean-king-cup-team-for-hungary-tie"
+        "https://www.bostonglobe.com/2026/11/17/arts/bob-wordward-secrets-memoir/",
+        "https://www.commonwealmagazine.org/scialabba-george-bob-woodward-reagan",
+        "https://www.wsj.com/opinion/bob-woodward-puts-self-interest-over-duty-674e9c95"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF9bj3VKGhJ_C3gY3Mkkp383YRrK2vO9mzSjwFt20Q-UJl7ilUQJRoiKlfkME",
-      "image_credit": "Billie Jean King Cup",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGiAjbj5YgfXP5Q5lytMp-8xENN7b7YYVT1MkrXdN5dhoDMYCf8XuNBEJlpMY",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://www.billiejeankingcup.com/en/news/usa-v-hungary-2026-billie-jean-king-cup-play-offs-preview",
-          "title": "USA v Hungary: 2026 Billie Jean King Cup Play-offs preview - Billie Jean King Cup - The World Cup of Tennis",
-          "publisher": "Billie Jean King Cup",
+          "url": "https://www.bostonglobe.com/2026/11/17/arts/bob-wordward-secrets-memoir/",
+          "title": "Iconic journalist Bob Woodward titled his memoir ‘Secrets,’ but he doesn’t spill many",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF9bj3VKGhJ_C3gY3Mkkp383YRrK2vO9mzSjwFt20Q-UJl7ilUQJRoiKlfkME"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGiAjbj5YgfXP5Q5lytMp-8xENN7b7YYVT1MkrXdN5dhoDMYCf8XuNBEJlpMY"
         },
         {
-          "url": "https://www.wpbf.com/article/coco-gauff-team-usa-billiejeankingcup/74470569",
-          "title": "Coco Gauff ready to represent team USA in hometown of Delray Beach",
-          "publisher": "WPBF",
+          "url": "https://www.commonwealmagazine.org/scialabba-george-bob-woodward-reagan",
+          "title": "The Triviality of Bob Woodward",
+          "publisher": "Commonweal Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3UaNnQCcuUUohyaL5CYKeZuAFCn5udDixzStXWQyIjUaj9Xqfk5J6gwpwTAo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8_Gz5dYnLYtT39Ht-0N6wEdco1PHRWykM_zWrGj9yOdd43X_uJkwOzf5WSu4"
         },
         {
-          "url": "https://www.tenniswatcher.com/en/news/ashlyn-krueger-and-desirae-krawczyk-replace-injured-keys-keys-in-us-billie-jean-king-cup-team-for-hungary-tie",
-          "title": "Two Late Call-Ups: How the US Rebuilt Its Billie Jean King Cup Lineup",
-          "publisher": "www.tenniswatcher.com",
+          "url": "https://www.wsj.com/opinion/bob-woodward-puts-self-interest-over-duty-674e9c95",
+          "title": "Opinion | Bob Woodward Puts Self-Interest Over Duty",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3zhUUjFXV_pXMcaFfJksNA1hRewTElKwYvZnrkT_l66EauqQ4f0FOL3_5soQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8_K4Vz1R1KbTH-imib0QRlGkl-H6yb9UojUc_r5a0frPQAfwmTfQeoSJfcuQ"
         }
       ]
     },
     {
-      "query": "nelly korda",
+      "query": "nitto atp finals",
       "approx_searches": "200+",
-      "published_at": "2026-11-19T13:10:00Z",
+      "published_at": "2026-11-19T13:40:00Z",
       "related_news_urls": [
-        "https://www.golfchannel.com/lpga/news/nelly-korda-looking-for-a-big-finish-to-a-great-year-and-willing-to-make-mistakes-along-the-way",
-        "https://www.lpga.com/news/2026/hye-jin-choi-finishes-runner-up-at-the-annika-looks-ahead-to-cme-group-tour-championship",
-        "https://www.espn.com/golf/story/_/id/50475367/hye-jin-choi-carlota-ciganda-lindy-duncan-share-lead-annika"
+        "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
+        "https://www.bbc.com/sport/tennis/articles/cmdx1erlpqkxo",
+        "https://www.nittoatpfinals.com/en/news/alcaraz-nitto-atp-finals-2026-semi-final-qualification"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSei9akvvdoxLTrkBwxWcXl5xtEbsDfTH-qepEWwVTptEKxUmxMSqjZPUQGmXs",
-      "image_credit": "Golf Channel",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIC_gOVPSGU0szwsifeG_pd10eUsfwFFLCtTqIE71Pqz09HdaU-LobCJddbA",
+      "image_credit": "ATP Tour",
       "news": [
         {
-          "url": "https://www.golfchannel.com/lpga/news/nelly-korda-looking-for-a-big-finish-to-a-great-year-and-willing-to-make-mistakes-along-the-way",
-          "title": "Nelly Korda looking for a big finish to a great year and willing to make mistakes along the way",
-          "publisher": "Golf Channel",
+          "url": "https://www.atptour.com/en/news/alcaraz-medvedev-nitto-atp-finals-2026-wednesday",
+          "title": "Alcaraz eases past Medvedev, moves to brink of Turin SFs",
+          "publisher": "ATP Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSei9akvvdoxLTrkBwxWcXl5xtEbsDfTH-qepEWwVTptEKxUmxMSqjZPUQGmXs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIC_gOVPSGU0szwsifeG_pd10eUsfwFFLCtTqIE71Pqz09HdaU-LobCJddbA"
         },
         {
-          "url": "https://www.lpga.com/news/2026/hye-jin-choi-finishes-runner-up-at-the-annika-looks-ahead-to-cme-group-tour-championship",
-          "title": "Hye-Jin Choi finishes runner-up at The ANNIKA, looks ahead to CME Group Tour Championship",
-          "publisher": "LPGA",
+          "url": "https://www.bbc.com/sport/tennis/articles/cmdx1erlpqkxo",
+          "title": "ATP Finals: Carlos Alcaraz outclasses Daniil Medvedev to qualify despite injury concern",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkM0p0CaZXgLcJR49q0EL3rZ_SBEB06SGua9-WKI4cZkYVeA5SyGszMEtF1XU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXjPW2RyPKv9KXh3BNMa1vWtCT5cFp0AIe0JWX0m6jp-SV21WW1xcGy8c_SpI"
         },
         {
-          "url": "https://www.espn.com/golf/story/_/id/50475367/hye-jin-choi-carlota-ciganda-lindy-duncan-share-lead-annika",
-          "title": "Hye-Jin Choi, Carlota Ciganda, Lindy Duncan share lead at The Annika",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQukP-XCQt5C1Clc2VUFbgn_sh76BwqTcB4YrDjM1cYsUgMsV4cMG7tu80M08s"
-        }
-      ]
-    },
-    {
-      "query": "rafael jodar",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T13:10:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/espanol/deportes/articulo/2026-11-17/fils-vence-jodar-en-tres-sets-para-su-primer-triunfo-en-finales-atp",
-        "https://www.france24.com/es/minuto-a-minuto/20261117-j%C3%B3dar-se-hunde-en-el-masters-atp-y-zverev-ya-est%C3%A1-en-semifinales",
-        "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-escenario-clasificacion-sf-jodar"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpXivcrDmM4GoNjo4iwUzAZ-6FXiybT2UXmh5365mDVFdqkITnYYtRHt2urKQ",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/espanol/deportes/articulo/2026-11-17/fils-vence-jodar-en-tres-sets-para-su-primer-triunfo-en-finales-atp",
-          "title": "Zverev vuelve a vencer a Shelton en revancha del US Open y avanza en las Finales ATP",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpXivcrDmM4GoNjo4iwUzAZ-6FXiybT2UXmh5365mDVFdqkITnYYtRHt2urKQ"
-        },
-        {
-          "url": "https://www.france24.com/es/minuto-a-minuto/20261117-j%C3%B3dar-se-hunde-en-el-masters-atp-y-zverev-ya-est%C3%A1-en-semifinales",
-          "title": "Jódar se hunde en el Masters ATP y Zverev ya está en semifinales",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgmpO2Sw8Eaf3qRr0hIB5Sb5LtqBNt9cJDymfLDuAdWStIwYadXWSo9kKykwI"
-        },
-        {
-          "url": "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-escenario-clasificacion-sf-jodar",
-          "title": "¿Jódar aún puede clasificarse a SF de las Nitto ATP Finals?",
+          "url": "https://www.nittoatpfinals.com/en/news/alcaraz-nitto-atp-finals-2026-semi-final-qualification",
+          "title": "Alcaraz Nitto ATP Finals 2026 Semi Final Qualification | Nitto ATP Finals | Tennis",
           "publisher": "Nitto ATP Finals",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxPbOtWRNVgtctxhZneemAN_zUkCIrDOTgoW3rParIgm30DHlR0j_O7R_bBZY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq2T_iPsE3vJD5To5_eM5FhwvaJbCsKY1ItNJhiCacSfEMESnOFntgL31XypU"
         }
       ]
     },
     {
-      "query": "3x3",
+      "query": "$ant",
       "approx_searches": "200+",
-      "published_at": "2026-11-19T13:10:00Z",
+      "published_at": "2026-11-19T13:40:00Z",
       "related_news_urls": [
-        "https://www.fiba.basketball/en/news/all-you-need-to-know-before-fiba-3x3-world-tour-manama-2026",
-        "https://www.gdnonline.com/Details/1413270/Game-on--Manama-Masters-tips-off-tomorrow-for-world-class-3x3-basketball-action",
-        "https://www.fiba.basketball/en/news/stars-shooters-and-contenders-players-to-watch-at-wt-manama-2026"
+        "https://www.taste.com.au/food-news/actually-sugar-ants-get-rid-them/d5zoi2zi",
+        "https://www.monitor.co.ug/uganda/news/national/lwengo-man-killed-in-fake-white-ant-catching-expedition-5675734"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidrYfQWOb3qwlvbPHfWHHJJF9Y21xCKu_yg6c7FnFJtNfOQ_-FhFcfWLEpI4",
-      "image_credit": "FIBA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDi47IIx8v152Br6M76Y7dZpkLb4EG6U_82Z2AEyREOIoomEEQjmEooARVIoE",
+      "image_credit": "Taste",
       "news": [
         {
-          "url": "https://www.fiba.basketball/en/news/all-you-need-to-know-before-fiba-3x3-world-tour-manama-2026",
-          "title": "All you need to know before FIBA 3x3 World Tour Manama 2026",
-          "publisher": "FIBA",
+          "url": "https://www.taste.com.au/food-news/actually-sugar-ants-get-rid-them/d5zoi2zi",
+          "title": "What actually are sugar ants (and how do I get rid of them?)",
+          "publisher": "Taste",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidrYfQWOb3qwlvbPHfWHHJJF9Y21xCKu_yg6c7FnFJtNfOQ_-FhFcfWLEpI4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDi47IIx8v152Br6M76Y7dZpkLb4EG6U_82Z2AEyREOIoomEEQjmEooARVIoE"
         },
         {
-          "url": "https://www.gdnonline.com/Details/1413270/Game-on--Manama-Masters-tips-off-tomorrow-for-world-class-3x3-basketball-action",
-          "title": "Other Sports: Game on!: Manama Masters tips off tomorrow for world-class 3x3 basketball action",
-          "publisher": "Gulf Daily News (Bahrain)",
+          "url": "https://www.monitor.co.ug/uganda/news/national/lwengo-man-killed-in-fake-white-ant-catching-expedition-5675734",
+          "title": "Lwengo man killed in fake white ant-catching expedition",
+          "publisher": "Daily Monitor",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYEYCV2Hk2G1QML6SI_xwctf1UNVJr4D7ezb5Nk2I9bzsCtmVpnVkcN296cg"
-        },
-        {
-          "url": "https://www.fiba.basketball/en/news/stars-shooters-and-contenders-players-to-watch-at-wt-manama-2026",
-          "title": "Stars, shooters and contenders: Players to watch at WT Manama 2026",
-          "publisher": "FIBA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfGll2pHoc6Y7q_e8IYYAlIkifAYcMC6L5x_HV_UTbaHxpI6Ci5-QX08BDAvs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8XZNJ73ilUiqZQiF8KdE9KDSueOSK2cd14uodXhavHC6g0kTw1ztxpEnY3CU"
         }
       ]
     },
     {
-      "query": "gary sinise",
+      "query": "ben shelton",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T13:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50513841/alexander-zverev-beats-ben-shelton-semis-atp-finals",
+        "https://sports.yahoo.com/articles/alexander-zverev-match-ben-shelton-000000942.html",
+        "https://www.atptour.com/en/news/zverev-shelton-nitto-atp-finals-2026-tuesday"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUc4vRbW0u1NtJVodFZDpRAmwyubZTTkHHszSyic5k-Ivu1PS0m419VcDQtzI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50513841/alexander-zverev-beats-ben-shelton-semis-atp-finals",
+          "title": "Alexander Zverev improved to 7-0 vs. Ben Shelton, advancing to ATP Finals semis",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUc4vRbW0u1NtJVodFZDpRAmwyubZTTkHHszSyic5k-Ivu1PS0m419VcDQtzI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/alexander-zverev-match-ben-shelton-000000942.html",
+          "title": "Alexander Zverev’s match with Ben Shelton at the ATP Finals angers tennis fans, ‘I feel so bad’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6PpY1cYr7FB-8UUs6ErZ9QyK6awL7uGUvqa3Xr6ASo2WCTbxwQJKhIqNtPA4"
+        },
+        {
+          "url": "https://www.atptour.com/en/news/zverev-shelton-nitto-atp-finals-2026-tuesday",
+          "title": "Zverev shuts down Shelton to seal Nitto ATP Finals SF berth",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5AYOLASNtRP4g990L6ruKgIqD1J_2pmqrwPdYkpRffCle5C9HZSBeti1OhI"
+        }
+      ]
+    },
+    {
+      "query": "gma deals and steals today",
       "approx_searches": "500+",
-      "published_at": "2026-11-19T12:50:00Z",
+      "published_at": "2026-11-19T13:30:00Z",
       "related_news_urls": [
-        "https://mainstreetmediatn.com/articles/mainstreetmaury/spring-hill-fire-dept-awarded-gary-sinise-foundation-grant/",
-        "https://cwibc.co.id/en/spring-hill-fire-training-grant",
-        "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969"
+        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-gifts-20-138213829",
+        "https://abcnews.com/GMA/Shop/abc-secret-savings-gifts-home/story?id=138112968",
+        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-gifting-138082156"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPHUB7MlvIJPpHEa17KTyBaqs_-sr9YYRw2CwzeoanQLCCEd4DCEDarv1trrY",
-      "image_credit": "Main Street Media of Tennessee",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkbNn3U12VTpJCphVf8RNTjeq3hZhwZqnjmezPkKP2uDG6coChZi69XmmYVyo",
+      "image_credit": "Good Morning America",
       "news": [
         {
-          "url": "https://mainstreetmediatn.com/articles/mainstreetmaury/spring-hill-fire-dept-awarded-gary-sinise-foundation-grant/",
-          "title": "Spring Hill Fire Dept. Awarded Gary Sinise Foundation Grant",
-          "publisher": "Main Street Media of Tennessee",
+          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-gifts-20-138213829",
+          "title": "'GMA' Deals & Steals on gifts $20 and under",
+          "publisher": "Good Morning America",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPHUB7MlvIJPpHEa17KTyBaqs_-sr9YYRw2CwzeoanQLCCEd4DCEDarv1trrY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkbNn3U12VTpJCphVf8RNTjeq3hZhwZqnjmezPkKP2uDG6coChZi69XmmYVyo"
         },
         {
-          "url": "https://cwibc.co.id/en/spring-hill-fire-training-grant",
-          "title": "Spring Hill Fire Department Secures $17,474 Training Grant",
-          "publisher": "cwibc.co.id",
+          "url": "https://abcnews.com/GMA/Shop/abc-secret-savings-gifts-home/story?id=138112968",
+          "title": "ABC Secret Savings: Gifts for home",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGRCzUxYvauH5oJXqffp67xeuxZADZkKwRjc5K8fw02k2hbvMh5aclDP6BMro"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoixryZy9Nf7CNJMwK95HDX91aKjWs_oshpBIGDzTccgLstgIZgz6-Se_-Xgg"
         },
         {
-          "url": "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969",
-          "title": "Gary Sinise Shares What It Would Take for Him to Return to Acting After 6 Years (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-gifting-138082156",
+          "title": "'GMA' Deals & Steals for gifting",
+          "publisher": "Good Morning America",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTc8tSUpKu4a02fhzYbBVRxLlmYO5T8zIDXfSBwat7gz0cQ97jHr58kUAYpVT0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN8wsxGWE-T8vYtdgnoU-yGU2PA4-0hy6-dNpTQ3gfoN-yzxh9hfbYVumbh3M"
         }
       ]
     },
     {
-      "query": "us winter 2026 2027 snow outlook",
+      "query": "brooks koepka",
       "approx_searches": "200+",
-      "published_at": "2026-11-19T12:40:00Z",
+      "published_at": "2026-11-19T13:30:00Z",
       "related_news_urls": [
-        "https://www.wjhl.com/wjhl-weather/mark-reynolds-2026-2027-winter-weather-outlook/",
-        "https://www.localsyr.com/weather/what-to-expect-for-this-winter-in-syracuse/",
-        "https://www.krem.com/article/weather/krem-2-2026-long-range-winter-forecast/293-801b1a29-afe5-4955-9af8-0c623da93057"
+        "https://www.pgatour.com/article/news/latest/2026/11/18/brooks-koepka-new-swing-new-coaches-the-rsm-classic-leaderboard-preview",
+        "https://www.skysports.com/golf/news/13613712/brooks-koepka-american-labels-his-2026-pga-tour-season-a-disappointment-and-targets-2027-ryder-cup-spot",
+        "https://sports.yahoo.com/articles/koepka-sideline-fury-fuel-needs-085436964.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkl8teDF_39aLqy34jz86-NfjyHtddLHo9I6T2-BgdJuYn-0LpRUXTWNmDXTk",
-      "image_credit": "WJHL",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR94pOBoqel181eVSdmK343htm317rQGlGWewDw5H8TNhvZ8EKYcG3FR02Guqc",
+      "image_credit": "PGA Tour",
       "news": [
         {
-          "url": "https://www.wjhl.com/wjhl-weather/mark-reynolds-2026-2027-winter-weather-outlook/",
-          "title": "Mark Reynolds’ 2026-2027 Winter Weather Outlook",
-          "publisher": "WJHL",
+          "url": "https://www.pgatour.com/article/news/latest/2026/11/18/brooks-koepka-new-swing-new-coaches-the-rsm-classic-leaderboard-preview",
+          "title": "Brooks Koepka brings new swing, coaches to The RSM Classic debut in pursuit of returning to top form",
+          "publisher": "PGA Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkl8teDF_39aLqy34jz86-NfjyHtddLHo9I6T2-BgdJuYn-0LpRUXTWNmDXTk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR94pOBoqel181eVSdmK343htm317rQGlGWewDw5H8TNhvZ8EKYcG3FR02Guqc"
         },
         {
-          "url": "https://www.localsyr.com/weather/what-to-expect-for-this-winter-in-syracuse/",
-          "title": "What to expect for this winter in Syracuse",
-          "publisher": "WSYR",
+          "url": "https://www.skysports.com/golf/news/13613712/brooks-koepka-american-labels-his-2026-pga-tour-season-a-disappointment-and-targets-2027-ryder-cup-spot",
+          "title": "Brooks Koepka: American labels his 2026 PGA Tour season a 'disappointment' and targets 2027 Ryder Cup spot",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsygqvyDcOg8cZV3daVpaI12pfyLeWo7i2jZQnU8TUt2ZOkEno2-TLmFvFo9M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFl2OwNWK9UshXrs_WCMNpFr_lHEU8GsJqRv1VXQb5vUd91Dj7jW715PXlNAo"
         },
         {
-          "url": "https://www.krem.com/article/weather/krem-2-2026-long-range-winter-forecast/293-801b1a29-afe5-4955-9af8-0c623da93057",
-          "title": "2026 long-range winter forecast: This could be the strongest El Niño in 75 years - Here's what it means for the Inland Northwest",
-          "publisher": "KREM",
+          "url": "https://sports.yahoo.com/articles/koepka-sideline-fury-fuel-needs-085436964.html",
+          "title": "Koepka’s Sideline Fury Is The Fuel He Needs For Adare Manor",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQahMAZvo_PGB9s0Gm80YgPKipfQYlcZNgiNj3IZvW2kmThPRJcaTHRpvTrKVA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWR-mwfzUHL91VvQMWjqk4KPYqBMkU4YUnpRloM7enl2JSJCslh2S3m-HC-Xs"
         }
       ]
     },
     {
-      "query": "movie directors",
+      "query": "uma thurman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T13:20:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/ethan-hawke-uma-thurmans-famous-164642105.html",
+        "https://www.facebook.com/officialbenshapiro/videos/maya-hawke-wants-to-radicalize-your-children-with-the-hunger-games/1656611059290293/",
+        "https://lufkindailynews.com/news_reuters/national/maya-hawke-as-wiress-in-the-hunger-games-sunrise-on-the-reaping/image_39580328-48e4-5bae-a708-1127ee15b13d.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0Edc6zEJaJtq9OR2JpRR-fGSUzvJMGneW8JTlQiB8Nb6etceKC14GvkS-TU",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/ethan-hawke-uma-thurmans-famous-164642105.html",
+          "title": "Ethan Hawke and Uma Thurman's famous lookalike daughter wows in daring crop top – 9 months after surprise wedding",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0Edc6zEJaJtq9OR2JpRR-fGSUzvJMGneW8JTlQiB8Nb6etceKC14GvkS-TU"
+        },
+        {
+          "url": "https://www.facebook.com/officialbenshapiro/videos/maya-hawke-wants-to-radicalize-your-children-with-the-hunger-games/1656611059290293/",
+          "title": "Ben Shapiro. . Maya Hawke Wants to Radicalize Your Children With The Hunger Games",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSFJNzuVYKL0R26DDiaHphst6BlgVQHNK8ka5ybXd94cgkV4ZzZZEvhRUQNm8"
+        },
+        {
+          "url": "https://lufkindailynews.com/news_reuters/national/maya-hawke-as-wiress-in-the-hunger-games-sunrise-on-the-reaping/image_39580328-48e4-5bae-a708-1127ee15b13d.html",
+          "title": "Maya Hawke as Wiress in \"The Hunger Games: Sunrise on the Reaping.\"",
+          "publisher": "The Lufkin Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDeVq0GnY5nT_FoRUcv1kD5-gwkFxaVHlP7z_bIhRXkPQO5d5w8It3zBy6XIE"
+        }
+      ]
+    },
+    {
+      "query": "next friday",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T13:20:00Z",
+      "related_news_urls": [
+        "https://www.complex.com/pop-culture/a/markelibert/ice-cube-chris-tucker-next-friday-smokey",
+        "https://lindyssports.com/other-sports/ice-cube-friday-4-update-raiders-dodgers",
+        "https://www.yahoo.com/entertainment/movies/articles/ice-cube-says-chris-tucker-163619931.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9LTQPRI93katmRP0lqiWFCb_P8t3V0xWKb4apnH4ElMqTCDOSHh3IqeFMDVI",
+      "image_credit": "Complex",
+      "news": [
+        {
+          "url": "https://www.complex.com/pop-culture/a/markelibert/ice-cube-chris-tucker-next-friday-smokey",
+          "title": "Ice Cube Says He Was 'Confused' by Chris Tucker Turning Down 'Next Friday,' Not Hurt",
+          "publisher": "Complex",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9LTQPRI93katmRP0lqiWFCb_P8t3V0xWKb4apnH4ElMqTCDOSHh3IqeFMDVI"
+        },
+        {
+          "url": "https://lindyssports.com/other-sports/ice-cube-friday-4-update-raiders-dodgers",
+          "title": "Raiders, Dodgers fan Ice Cube gives ‘Friday 4’ update",
+          "publisher": "Lyndy's Sports Annuals",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlAI4pMGJhgez3sgJJPrHUrle9ZLMfV3aQamnJUxzSndeFpOm9SsDslBw11-w"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/ice-cube-says-chris-tucker-163619931.html",
+          "title": "Ice Cube Says Chris Tucker Wants in on 'Last Friday,' Cameras Roll in April",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr7nnRpe3ZbsG0n16dcX8-FggU92Kaz1baPEfvMnhYeE7lvpu2jGiAW8uW2SQ"
+        }
+      ]
+    },
+    {
+      "query": "fox news politics",
       "approx_searches": "200+",
-      "published_at": "2026-11-19T12:40:00Z",
+      "published_at": "2026-11-19T13:20:00Z",
       "related_news_urls": [
-        "https://faroutmagazine.co.uk/10-directors-who-made-a-masterpiece-in-their-20s/",
-        "https://cwibc.co.id/en/young-directors-masterpiece-films",
-        "https://ew.com/director-chris-columbus-recalls-having-to-fire-this-actor-on-home-alone-12260706"
+        "https://finance.yahoo.com/markets/article/stalemates-over-semiconductors-and-rare-earth-minerals-appear-little-changed-as-trump-heads-home-from-china-121555352.html",
+        "https://apnews.com/video/us-president-donald-trump-appears-to-reach-for-xis-hand-on-escalator-9009de93d349428ab1b5f0f5565e7e0d",
+        "https://www.axios.com/2026/11/18/trump-china-xi-hug-airport"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQult_6XRiV1FepHncAvwZ3Y5pdHq6zk2llVr-jrvdS9GVUIrhTc7Kct2oNMkE",
-      "image_credit": "Far Out Magazine",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9a4Quh-Mp0bnHOsUIlnJqnsK30bmw16-edAlQVYKepQBfjsNAGs7n95y3hL8",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://faroutmagazine.co.uk/10-directors-who-made-a-masterpiece-in-their-20s/",
-          "title": "10 movie directors who made a masterpiece in their 20s",
-          "publisher": "Far Out Magazine",
+          "url": "https://finance.yahoo.com/markets/article/stalemates-over-semiconductors-and-rare-earth-minerals-appear-little-changed-as-trump-heads-home-from-china-121555352.html",
+          "title": "Stalemates over semiconductors and rare earth minerals appear little changed as Trump heads home from China",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQult_6XRiV1FepHncAvwZ3Y5pdHq6zk2llVr-jrvdS9GVUIrhTc7Kct2oNMkE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9a4Quh-Mp0bnHOsUIlnJqnsK30bmw16-edAlQVYKepQBfjsNAGs7n95y3hL8"
         },
         {
-          "url": "https://cwibc.co.id/en/young-directors-masterpiece-films",
-          "title": "Five Directors Made Masterpieces Before Turning 30",
-          "publisher": "cwibc.co.id",
+          "url": "https://apnews.com/video/us-president-donald-trump-appears-to-reach-for-xis-hand-on-escalator-9009de93d349428ab1b5f0f5565e7e0d",
+          "title": "US President Donald Trump appears to reach for Xi’s hand on escalator",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlWgz4joxK2Jjt0qi1g2JSaGNcHGo4M1AxBhy2RrAtX_8fxj8LEAF4EEpqwZs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTs12DBSfnAwnuqu4boibpdH6BsaazS5E27HRq8Rco8HcuWdagvXoxB0Ujxl58"
         },
         {
-          "url": "https://ew.com/director-chris-columbus-recalls-having-to-fire-this-actor-on-home-alone-12260706",
-          "title": "Director Chris Columbus recalls having to fire this ‘awful’ actor on Home Alone : ‘They were horrible’",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.axios.com/2026/11/18/trump-china-xi-hug-airport",
+          "title": "Xi Jinping breaks protocol to greet and hug Trump at China airport",
+          "publisher": "Axios",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxpR9JNXdMjnxzJLB83-DmK3gPzGOTih5-zv2jwfRutDoYgN_C_8cyGnQ3k-8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5d2K8i-x6XDQFKsKlqHkIKRCKu5hT10d0Y1Ujbyk3fbgCdV7FN8qkSN7O2NI"
         }
       ]
     },
     {
-      "query": "jax taylor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T12:30:00Z",
+      "query": "wordle — the new york times",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T13:20:00Z",
       "related_news_urls": [
-        "https://people.com/jax-taylor-reveals-cancer-diagnosis-says-its-been-scary-few-months-exclusive-12264354",
-        "https://www.today.com/health/jax-taylor-cancer-diagnosis-surgery-vanderpump-rules-rcna610183",
-        "https://pagesix.com/2026/11/19/celebrity-news/jax-taylor-reveals-cancer-diagnosis-as-he-undergoes-surgery-in-a-really-dark-place/"
+        "https://www.nytimes.com/2026/11/19/world/asia/trump-summit-china-media-bloomberg-reporter-nvidia.html",
+        "https://www.foxnews.com/politics/china-blocks-bloomberg-reporter-trump-putin-xi-meeting-question-trump",
+        "https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtz1PmEEJ-DBFXsS-4hKID72DDyjc73nXK9qA8oSX3P_gUEPigPjiB84gEVM",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcXUxzhqSBmmZnYBHt8CLDkJxKLbar-c0RNtDCfd5pHxHk-Tf7JnQPOVEgvwY",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://people.com/jax-taylor-reveals-cancer-diagnosis-says-its-been-scary-few-months-exclusive-12264354",
-          "title": "Jax Taylor Reveals Cancer Diagnosis, Says ‘It’s Been a Really Scary Few Months’ (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.nytimes.com/2026/11/19/world/asia/trump-summit-china-media-bloomberg-reporter-nvidia.html",
+          "title": "China Bars Bloomberg Reporter From Trilateral Talks for Asking a Question",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtz1PmEEJ-DBFXsS-4hKID72DDyjc73nXK9qA8oSX3P_gUEPigPjiB84gEVM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcXUxzhqSBmmZnYBHt8CLDkJxKLbar-c0RNtDCfd5pHxHk-Tf7JnQPOVEgvwY"
         },
         {
-          "url": "https://www.today.com/health/jax-taylor-cancer-diagnosis-surgery-vanderpump-rules-rcna610183",
-          "title": "Jax Taylor Was Diagnosed With Cancer Over the Summer After Waking up in ‘Horrible Pain’",
-          "publisher": "TODAY.com",
+          "url": "https://www.foxnews.com/politics/china-blocks-bloomberg-reporter-trump-putin-xi-meeting-question-trump",
+          "title": "China blocks Bloomberg reporter from Trump-Putin-Xi meeting over question to Trump",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrizDYebcsSOiGH6SMJ06hDH2YD2ozDKlr31NyI4JdKBt8sLB92F-7w5j4Pno"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlH1rIyxhQ0B5cXeDSTBOXEbPvMoTpgJW_6WWJneUwGRjasMKNmTWBZki24lc"
         },
         {
-          "url": "https://pagesix.com/2026/11/19/celebrity-news/jax-taylor-reveals-cancer-diagnosis-as-he-undergoes-surgery-in-a-really-dark-place/",
-          "title": "Jax Taylor reveals cancer diagnosis as he undergoes surgery: ‘In a really dark place’",
-          "publisher": "Page Six",
+          "url": "https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/",
+          "title": "Reporter banned from summit after asking Trump about Jensen Huang in front of Chinese leader",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjlSfodQuKQcwMztnVsD5RBRVQr3KI1NzeAS8Jf9MZIJxsVz_JdF89UB0NEM4"
-        }
-      ]
-    },
-    {
-      "query": "ben shapiro",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T12:30:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/19/nx-s1-6034593/ben-shapiro-gop-midterms-losses-trump",
-        "https://www.huffpost.com/entry/ben-shapiro-republicans-bite-ass-corruption_n_6af3b60de4b0a8468d8bfcf1",
-        "https://www.rawstory.com/ben-shapiro-2678453348/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTExegKVxoaZT8KBpXI-SI6-X271GSxvPzmSioUW86829_pIsPuklvp1OjGVkQ",
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/19/nx-s1-6034593/ben-shapiro-gop-midterms-losses-trump",
-          "title": "Ben Shapiro says 'whiff of corruption' surrounds the president he campaigned for",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTExegKVxoaZT8KBpXI-SI6-X271GSxvPzmSioUW86829_pIsPuklvp1OjGVkQ"
-        },
-        {
-          "url": "https://www.huffpost.com/entry/ben-shapiro-republicans-bite-ass-corruption_n_6af3b60de4b0a8468d8bfcf1",
-          "title": "Ben Shapiro Spots No. 1 Issue That'll Come Back To 'Bite Republicans' Right 'In The Ass'",
-          "publisher": "HuffPost",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7osRd4mgHpzfhNBgauGtC_UuIGyHzii01mEySbiQBzhBWU4TZW1BEmnjIOKM"
-        },
-        {
-          "url": "https://www.rawstory.com/ben-shapiro-2678453348/",
-          "title": "MAGA pundit 'regrets' Trump's behavior after epic loss: He has 'whiff of corruption'",
-          "publisher": "Raw Story",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgwLYtAEEI8QZzxlreClHUsnFzidfQfcPyqiqhBt8UYiM9d0tEEgYzx-AnWvo"
-        }
-      ]
-    },
-    {
-      "query": "ohio powerball winners nov 18 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T12:20:00Z",
-      "related_news_urls": [
-        "https://www.wkyc.com/article/news/lottery/winning-powerball-numbers-92-million-jackpot-wednesday-november-18-2026-ohio-lottery-winners/95-e04e7ed3-3e1f-4ed0-b0fa-619be1bb2260",
-        "https://www.desertsun.com/story/news/local/2026/11/18/california-lottery-results-wednesday-november-18-2026/92856494007/",
-        "https://www.wlwt.com/article/ohio-powerball-winners-nov-16-lottery/74453608"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwz_Xouo5N-RjpdlCPz4j78KKTwsy2ce2lp4T41gqxDD7-BgvlkeM6CkxXhp4",
-      "image_credit": "WKYC",
-      "news": [
-        {
-          "url": "https://www.wkyc.com/article/news/lottery/winning-powerball-numbers-92-million-jackpot-wednesday-november-18-2026-ohio-lottery-winners/95-e04e7ed3-3e1f-4ed0-b0fa-619be1bb2260",
-          "title": "Winning Powerball numbers for the $92 million jackpot on Nov. 18, 2026: See all the prizes hit in Ohio",
-          "publisher": "WKYC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwz_Xouo5N-RjpdlCPz4j78KKTwsy2ce2lp4T41gqxDD7-BgvlkeM6CkxXhp4"
-        },
-        {
-          "url": "https://www.desertsun.com/story/news/local/2026/11/18/california-lottery-results-wednesday-november-18-2026/92856494007/",
-          "title": "California Lottery Powerball, Daily 3 Midday winning numbers for Nov. 18, 2026",
-          "publisher": "The Desert Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfi7GQfayw9ShJ0hpy0SehkUHS7uERlyZcfWrjFTaQJDYhw55yH1qdriDCaz0"
-        },
-        {
-          "url": "https://www.wlwt.com/article/ohio-powerball-winners-nov-16-lottery/74453608",
-          "title": "Three Ohioans win big in recent Powerball drawings",
-          "publisher": "WLWT",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpe-xjbQyz1sQysKC6azYM7pDPUDSTRjlF63zokq2ksiV8ibWHeJm9Csp7khs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLnTqh1YZZYr6QpHigG73zlzPXzogYFohqZIkJ-XbVKTpBx1lbY8R925wlBlM"
         }
       ]
     }
