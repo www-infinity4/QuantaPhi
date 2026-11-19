@@ -1,0 +1,48 @@
+name: Creator post Quick Cards
+on:
+  pull_request:
+    paths:
+      - 'creator-post-*.mjs'
+      - 'data/creator-posts.mjs'
+      - 'scripts/import-creator-posts.mjs'
+      - 'source-quick-cards.mjs'
+      - 'quanta-card-experience.*'
+      - 'quanta-context-placement.mjs'
+      - 'quanta-feed.mjs'
+      - 'index.html'
+      - 'test/creator-post*'
+      - '.github/workflows/creator-post-cards.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'creator-post-*.mjs'
+      - 'data/creator-posts.mjs'
+      - 'scripts/import-creator-posts.mjs'
+      - 'source-quick-cards.mjs'
+      - 'quanta-card-experience.*'
+      - 'quanta-context-placement.mjs'
+      - 'quanta-feed.mjs'
+      - 'test/creator-post*'
+      - '.github/workflows/creator-post-cards.yml'
+permissions:
+  contents: read
+jobs:
+  source-and-mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify database, placement and source integration
+        run: node --test test/creator-posts.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/oracle-placement-engine.test.mjs test/oracle-feed-persistence.test.mjs test/cardone-offer.test.cjs test/unfinished-ledger.test.mjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser tools
+        run: |
+          python -m pip install playwright==1.62.0
+          python -m playwright install chromium
+      - name: Verify actual source card and Oracle at mobile and desktop widths
+        run: python test/creator-post-cards.browser.py

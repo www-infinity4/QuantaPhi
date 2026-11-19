@@ -1,4 +1,4 @@
-import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
+import {ACTIVE_SOURCE_CARDS} from './source-quick-cards.mjs';
 import {suggestFeedSearch} from './quanta-feed-search-assist.mjs';
 import {INFINITY_ACCEPTED_BRANDS} from './infinity-accepted-catalog.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
@@ -12,8 +12,8 @@ import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,ne
 import {INTEREST_DEPARTMENTS} from './quanta-context-placement.mjs';
 import {registerVisibleCard} from './quanta-feed-exposure.mjs';
 
-const fromSources=QUICK_CARD_SOURCES.map(c=>({
- id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
+const fromSources=ACTIVE_SOURCE_CARDS.map(c=>({
+ ...c,id:c.id,name:c.name,category:c.kind||c.category,feature:c.feature,study:c.details,
  official:c.official,url:c.featureUrl,image:c.image||'',images:c.images||[],logo:c.logo||'',route:'/source-quick-card.html?card='+encodeURIComponent(c.id),origin:'source'
 }));
 const fromScience=SCIENCE_CARDS.map(c=>({
