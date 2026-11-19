@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T11:01:31.487583Z",
+  "checked_at": "2026-11-19T11:31:09.776552Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "patrick petty",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T11:10:00Z",
+      "related_news_urls": [
+        "https://www.masslive.com/boston/2026/11/family-speaks-out-about-boston-fashion-icon-who-styled-new-kids-on-the-block-dead-at-62.html",
+        "https://ew.com/donnie-wahlberg-jenny-mccarthy-mourn-death-patrick-petty-new-kids-on-the-block-stylist-12263867",
+        "https://parade.com/celebrities/donnie-wahlberg-and-jenny-mccarthy-pay-tribute-to-late-friend-patrick-petty-heart-of-an-angel"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJACTxmbl7RlItGMWDBZLFq3Pmm2hK5fzdRUiiKWPofy_KgIq6C_BOUOzZHtY",
+      "image_credit": "MassLive",
+      "news": [
+        {
+          "url": "https://www.masslive.com/boston/2026/11/family-speaks-out-about-boston-fashion-icon-who-styled-new-kids-on-the-block-dead-at-62.html",
+          "title": "Boston fashion icon and New Kids on the Block stylist dies at 62. ‘He always showed up,’ daughter says",
+          "publisher": "MassLive",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJACTxmbl7RlItGMWDBZLFq3Pmm2hK5fzdRUiiKWPofy_KgIq6C_BOUOzZHtY"
+        },
+        {
+          "url": "https://ew.com/donnie-wahlberg-jenny-mccarthy-mourn-death-patrick-petty-new-kids-on-the-block-stylist-12263867",
+          "title": "Donnie Wahlberg and wife Jenny McCarthy mourn death of New Kids on the Block stylist Patrick Petty: ‘A true friend’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4ezOsW1x4G_7s6jiBBW9-3Y2QZztZWCmFhGi8aKeJSpq94ARVjnYwprtg2oA"
+        },
+        {
+          "url": "https://parade.com/celebrities/donnie-wahlberg-and-jenny-mccarthy-pay-tribute-to-late-friend-patrick-petty-heart-of-an-angel",
+          "title": "Donnie Wahlberg and Jenny McCarthy Pay Tribute to Late Friend Patrick Petty: ‘Heart of an Angel’",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLniMj7Svq6c0flhNu3Kagxi4CxCUT8wzqfEmFHsABuv7gCUgFF8OQ1c2CvSk"
+        }
+      ]
+    },
+    {
+      "query": "the further mis-adventures of cliff booth",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T11:00:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
+        "https://www.netflix.com/tudum/features/elizabeth-debicki-cliff-booth-cover-story",
+        "https://people.com/brad-pitt-and-ines-de-ramon-hold-hands-enjoy-date-night-the-further-mis-adventures-of-cliff-booth-premiere-12260007"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975/",
+          "title": "‘Cliff Booth’ First Reactions: Brad Pitt’s Sequel Is an ‘Absolute Triumph’ and a ‘Wildly Entertaining’ ‘Love Letter’ to Hollywood",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
+        },
+        {
+          "url": "https://www.netflix.com/tudum/features/elizabeth-debicki-cliff-booth-cover-story",
+          "title": "Elizabeth Debicki Lights Up THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+          "publisher": "Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4M9y12dNTbu18wGze_bqHM0_VsJ8SdkP9ICdT8LEE-ZDalgggWhun8A1isiQ"
+        },
+        {
+          "url": "https://people.com/brad-pitt-and-ines-de-ramon-hold-hands-enjoy-date-night-the-further-mis-adventures-of-cliff-booth-premiere-12260007",
+          "title": "Brad Pitt and Ines de Ramon Attend ‘The Further Mis-Adventures of Cliff Booth’ Premiere",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJpsXsch_VJ30ul0Vq-uR3F7c68nF95A6RdljmLj_Rn0jMWIls3E-ljz_HAqE"
+        }
+      ]
+    },
+    {
+      "query": "bowling",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T11:00:00Z",
+      "related_news_urls": [
+        "https://www.thetelegramnews.com/articles/jackson-bowling-looking-to-keep-the-ball-rolling-in-10th-season/",
+        "https://www.thestar.com.my/sport/bowling/2026/11/19/teamwork-makes-the-dream-work-for-timmy-and-co",
+        "https://bowlinglife.eu/asian-tenpin-bowling-championships-2026-trios-results"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStGAQm4sX5mVusoUVjGzXV2mUbV3yBQVaboi3zpuh7bHBW0fL78amxXPlLGEk",
+      "image_credit": "The Telegram News",
+      "news": [
+        {
+          "url": "https://www.thetelegramnews.com/articles/jackson-bowling-looking-to-keep-the-ball-rolling-in-10th-season/",
+          "title": "Jackson Bowling looking to keep the ball rolling in 10th season",
+          "publisher": "The Telegram News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStGAQm4sX5mVusoUVjGzXV2mUbV3yBQVaboi3zpuh7bHBW0fL78amxXPlLGEk"
+        },
+        {
+          "url": "https://www.thestar.com.my/sport/bowling/2026/11/19/teamwork-makes-the-dream-work-for-timmy-and-co",
+          "title": "Bowling: Teamwork makes the dream work for Timmy and Co",
+          "publisher": "The Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgkvV-whuCl3Kmk2r5fT-TvrptYzNDFhEc6RNE35Fg73SYzosoItxJGEhWWg0"
+        },
+        {
+          "url": "https://bowlinglife.eu/asian-tenpin-bowling-championships-2026-trios-results",
+          "title": "Malaysia and Korea Win Trios Gold at the 2026 Asian Championships",
+          "publisher": "BowlingLife",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_FW-XFa_bzHRX7WMkiEx4DQ343EGolC5rjHobiMGn5l-lcZXlqKEUkRXyPhg"
+        }
+      ]
+    },
     {
       "query": "brooks nader",
       "approx_searches": "100+",
@@ -42,13 +147,48 @@
       ]
     },
     {
+      "query": "braden smith",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T10:30:00Z",
+      "related_news_urls": [
+        "https://www.indystar.com/story/sports/nba/pacers/2026/11/18/braden-smith-pacers-rookie-helped-off-court-vs-rockets/92854026007/",
+        "https://pacers.com/news/fearless-braden-smith-continues-show-he-belongs-in-nba",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/braden-smith-had-8-5-3-before-leaving-with-injury"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0K0VrCxwjyPJxqvwAiTnjEZV4TI_h1e5_sDNm_pJio39Z1RPnO7We5fN04Kc",
+      "image_credit": "IndyStar",
+      "news": [
+        {
+          "url": "https://www.indystar.com/story/sports/nba/pacers/2026/11/18/braden-smith-pacers-rookie-helped-off-court-vs-rockets/92854026007/",
+          "title": "Pacers rookie Braden Smith helped off court, to locker room vs. Rockets",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0K0VrCxwjyPJxqvwAiTnjEZV4TI_h1e5_sDNm_pJio39Z1RPnO7We5fN04Kc"
+        },
+        {
+          "url": "https://pacers.com/news/fearless-braden-smith-continues-show-he-belongs-in-nba",
+          "title": "\"Fearless\" Braden Smith Continues to Show He Belongs in NBA",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltD0fO9UDUCVwzt1ifsaYS7M6vqHamn6u7D5YlA3hdqYfBm3URDOxlCTKDGY"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/braden-smith-had-8-5-3-before-leaving-with-injury",
+          "title": "Braden Smith had 8/5/3 before leaving with injury",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuYz_AFRsP7AqlsXQ02q8v328MZEyYMwxG4sTynSLjt2_Wyek0bViQeuRBt9s"
+        }
+      ]
+    },
+    {
       "query": "weather near me",
       "approx_searches": "100+",
       "published_at": "2026-11-19T10:30:00Z",
       "related_news_urls": [
         "https://www.abc10.com/article/weather/weather-impact/risk-of-tornadoes-for-the-valley-as-a-major-storm-rolls-through-northern-california/103-73a32110-5aac-4449-92f6-5446337cb8df",
-        "https://stocktonia.org/news/weather/2026/11/18/possible-tornadoes-damaging-winds-forecast-for-san-joaquin-valley-on-thursday/",
-        "https://www.sacbee.com/news/weather-news/article318145913.html"
+        "https://www.sacbee.com/news/weather-news/article318145913.html",
+        "https://stocktonia.org/news/weather/2026/11/18/possible-tornadoes-damaging-winds-forecast-for-san-joaquin-valley-on-thursday/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgoadxM3nOOPKOsCS1-eeVki7V9-5nDVHS0p-X1u0T0oG3rXd1ZiXM2Ak4s1c",
       "image_credit": "ABC10",
@@ -61,18 +201,53 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgoadxM3nOOPKOsCS1-eeVki7V9-5nDVHS0p-X1u0T0oG3rXd1ZiXM2Ak4s1c"
         },
         {
-          "url": "https://stocktonia.org/news/weather/2026/11/18/possible-tornadoes-damaging-winds-forecast-for-san-joaquin-valley-on-thursday/",
-          "title": "Possible tornadoes, damaging winds forecast for San Joaquin Valley on Thursday",
-          "publisher": "Stocktonia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ43cN8Cpaki3EoWlYlArJkRxEWouUGMxCitmltVIpyzSV_cIOl-52sHG16P-g"
-        },
-        {
           "url": "https://www.sacbee.com/news/weather-news/article318145913.html",
           "title": "Atmospheric river continues Thursday in California, bringing small risk of tornadoes",
           "publisher": "Sacramento Bee",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_5-rERfbzG2dUznvQt_Pq4F5o6DLCmWZ9cV95dGSVKOoPLTGP-085-e-IWfY"
+        },
+        {
+          "url": "https://stocktonia.org/news/weather/2026/11/18/possible-tornadoes-damaging-winds-forecast-for-san-joaquin-valley-on-thursday/",
+          "title": "Possible tornadoes, damaging winds forecast for San Joaquin Valley on Thursday",
+          "publisher": "Stocktonia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ43cN8Cpaki3EoWlYlArJkRxEWouUGMxCitmltVIpyzSV_cIOl-52sHG16P-g"
+        }
+      ]
+    },
+    {
+      "query": "tampa weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T10:20:00Z",
+      "related_news_urls": [
+        "https://www.fox13news.com/video/fmc-802b28sdnjncm2d7",
+        "https://hoodline.com/2026/11/rip-current-danger-as-tampa-basks-in-chilly-sunshine-before-heat-returns/",
+        "https://www.fox13news.com/video/fmc-4px7tq31m5g2z6t3"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb02TKK6k4GVbkW8UZ--NxE57aZKry8i-ZEolbrLL2N2PLsO5FPLfrG2fpMjM",
+      "image_credit": "FOX 13 Tampa Bay",
+      "news": [
+        {
+          "url": "https://www.fox13news.com/video/fmc-802b28sdnjncm2d7",
+          "title": "Tampa weather | Thursday morning forecast",
+          "publisher": "FOX 13 Tampa Bay",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb02TKK6k4GVbkW8UZ--NxE57aZKry8i-ZEolbrLL2N2PLsO5FPLfrG2fpMjM"
+        },
+        {
+          "url": "https://hoodline.com/2026/11/rip-current-danger-as-tampa-basks-in-chilly-sunshine-before-heat-returns/",
+          "title": "Tampa Weather: Chilly Weekend Before 80-Degree Warmup",
+          "publisher": "Hoodline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrFkt7bVkJf4GNZ1_NFDzkeCICJRb_0djWc3dNF3rcV3gd4UzlJXNUv1Rp1lo"
+        },
+        {
+          "url": "https://www.fox13news.com/video/fmc-4px7tq31m5g2z6t3",
+          "title": "Tampa Weather | Thursday Evening Forecast",
+          "publisher": "FOX 13 Tampa Bay",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOREGGsLrgc3h7M2ayXj5VNr69rKpNsYM_0rmxHShSH8uAKNVePVRLAU1_lDU"
         }
       ]
     },
@@ -82,8 +257,8 @@
       "published_at": "2026-11-19T10:10:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/ball-by-ball-commentary",
-        "https://www.cricbuzz.com/cricket-news/140960/ghori-razaullah-push-pakistan-to-commanding-position-in-rawalpindi-cricbuzzcom",
-        "https://www.foxsports.com/articles/soccer/sri-lanka-reaches-1675-still-trails-pakistan-by-60-runs-in-2nd-cricket-test"
+        "https://www.foxsports.com/articles/soccer/sri-lanka-reaches-1675-still-trails-pakistan-by-60-runs-in-2nd-cricket-test",
+        "https://www.cricbuzz.com/cricket-news/140960/ghori-razaullah-push-pakistan-to-commanding-position-in-rawalpindi-cricbuzzcom"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6j2tPIl0v5CpgZsURpNdrMApfYhr8D8aIVgyhZvbBjrUGkgbFzwS2JBaka3w",
       "image_credit": "Cricinfo",
@@ -96,24 +271,24 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6j2tPIl0v5CpgZsURpNdrMApfYhr8D8aIVgyhZvbBjrUGkgbFzwS2JBaka3w"
         },
         {
-          "url": "https://www.cricbuzz.com/cricket-news/140960/ghori-razaullah-push-pakistan-to-commanding-position-in-rawalpindi-cricbuzzcom",
-          "title": "Ghori, Razaullah push Pakistan to commanding position in Rawalpindi",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKG38yEjzvUDps1gYFwAtuHrD3aBoarlAXko_sIO98vR_Y7ult9YEX4bZx7c8"
-        },
-        {
           "url": "https://www.foxsports.com/articles/soccer/sri-lanka-reaches-1675-still-trails-pakistan-by-60-runs-in-2nd-cricket-test",
           "title": "Sri Lanka reaches 167-5, still trails Pakistan by 60 runs in 2nd cricket test",
           "publisher": "FOX Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140960/ghori-razaullah-push-pakistan-to-commanding-position-in-rawalpindi-cricbuzzcom",
+          "title": "Ghori, Razaullah push Pakistan to commanding position in Rawalpindi",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKG38yEjzvUDps1gYFwAtuHrD3aBoarlAXko_sIO98vR_Y7ult9YEX4bZx7c8"
         }
       ]
     },
     {
       "query": "sc lottery",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-19T10:10:00Z",
       "related_news_urls": [
         "https://www.foxcarolina.com/2026/11/17/2-million-upstate-lottery-winner-looks-help-others/",
@@ -147,212 +322,37 @@
       ]
     },
     {
-      "query": "palm beach county schools",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-19T10:00:00Z",
+      "query": "mta",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T10:10:00Z",
       "related_news_urls": [
-        "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
-        "https://www.miamiherald.com/news/local/education/article318145212.html",
-        "https://www.wpbf.com/article/palm-beach-county-schools-cancel-after-school-activities-flood-threat/74464712"
+        "https://www.nydailynews.com/2026/11/18/mta-proposing-fare-increases-for-nyc-subways-and-buses-lirr-metro-north/",
+        "https://gothamist.com/news/mta-warns-of-major-budget-deficit-without-help-from-city-state-and-feds",
+        "https://nypost.com/2026/11/18/us-news/mta-plans-fare-hikes-despite-boasting-about-676m-in-savings/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk",
-      "image_credit": "NBC 6 South Florida",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgGIQvruOG8vbr8ry5vZbzKKwAfgs5moGA6MQUkF71S48KDO1ZaP1ofWdiJuE",
+      "image_credit": "New York Daily News",
       "news": [
         {
-          "url": "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
-          "title": "Historic flooding in South Florida closes schools, leaves residents stranded in deluge",
-          "publisher": "NBC 6 South Florida",
+          "url": "https://www.nydailynews.com/2026/11/18/mta-proposing-fare-increases-for-nyc-subways-and-buses-lirr-metro-north/",
+          "title": "MTA plans to increase fares for NYC subways and buses, LIRR, Metro-North",
+          "publisher": "New York Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgGIQvruOG8vbr8ry5vZbzKKwAfgs5moGA6MQUkF71S48KDO1ZaP1ofWdiJuE"
         },
         {
-          "url": "https://www.miamiherald.com/news/local/education/article318145212.html",
-          "title": "Miami-Dade schools to close Thursday after more than 24 hours of heavy rain",
-          "publisher": "Miami Herald",
+          "url": "https://gothamist.com/news/mta-warns-of-major-budget-deficit-without-help-from-city-state-and-feds",
+          "title": "MTA warns of major budget deficit without help from city, state and feds",
+          "publisher": "Gothamist",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYE4tux0oowYGp8wMey5x5yi8SxNyWAywipAhuaPRRHMT6Jm8E3RZDPE4eB0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvrsR_79bhvvj6z-zA0hcjbdbIGlwIrhVgTxCrncHe9T6_DwtAoBQqwhOHAaQ"
         },
         {
-          "url": "https://www.wpbf.com/article/palm-beach-county-schools-cancel-after-school-activities-flood-threat/74464712",
-          "title": "Palm Beach County schools cancel after-school activities due to weather",
-          "publisher": "WPBF",
+          "url": "https://nypost.com/2026/11/18/us-news/mta-plans-fare-hikes-despite-boasting-about-676m-in-savings/",
+          "title": "MTA plans fare hikes despite boasting about $676M in savings",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIq99Ax8ETdhNyX7K0gnx7ewqaowc7rtC5OyPEzJlaB0FXWbhtutM0Ev1As4"
-        }
-      ]
-    },
-    {
-      "query": "spider",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T09:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cm87987w1qz5o",
-        "https://ktla.com/news/nationworld/british-hacker-text-phishing-cryptocurrency-theft-prison/",
-        "https://techcrunch.com/2026/11/18/british-hackers-face-prison-for-gta-6-data-breach-and-crypto-thefts/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-kgD5Q6A1_z5ycFzHovHIm8yHrz2Hh_w4Uz7f6TUt3zf6e-gQ0ZImXVG6Tq4",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cm87987w1qz5o",
-          "title": "British hacker who stole $11m through text message scheme jailed for six years in US",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-kgD5Q6A1_z5ycFzHovHIm8yHrz2Hh_w4Uz7f6TUt3zf6e-gQ0ZImXVG6Tq4"
-        },
-        {
-          "url": "https://ktla.com/news/nationworld/british-hacker-text-phishing-cryptocurrency-theft-prison/",
-          "title": "Hackers used fake texts to steal $11.6 million in cryptocurrency, feds say",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtucDAVdht4bdIeQfBdlWjOfy1queeELvlJLE3FBp87d76ryaufUh35hIY4jE"
-        },
-        {
-          "url": "https://techcrunch.com/2026/11/18/british-hackers-face-prison-for-gta-6-data-breach-and-crypto-thefts/",
-          "title": "British hackers face prison for GTA 6 data breach and crypto thefts",
-          "publisher": "TechCrunch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjeJkC0sKj2zqVTUFBc6cYkutG_z2TuBhZSdob7XG_NLu-up7AKt4rc8XBiJU"
-        }
-      ]
-    },
-    {
-      "query": "train",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T09:50:00Z",
-      "related_news_urls": [
-        "https://www.fox5ny.com/news/fatal-nj-transit-train-collision-nanuet-new-clarkstown-road",
-        "https://www.cbsnews.com/newyork/video/1-dead-after-nj-transit-train-car-crash-on-pascack-valley-line-in-nanuet-police-say/",
-        "https://pix11.com/news/local-news/new-jersey/nj-transit-suspends-pascack-valley-line-after-fatal-crash/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4ErBYXzFE6gFC0IpxlWfEauU56NfyOF211R8I88dGw1FB6cXkQ1Xe0bX4CY0",
-      "image_credit": "FOX 5 New York",
-      "news": [
-        {
-          "url": "https://www.fox5ny.com/news/fatal-nj-transit-train-collision-nanuet-new-clarkstown-road",
-          "title": "Driver killed in collision with NJ Transit train at crossing in Nanuet, police say",
-          "publisher": "FOX 5 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4ErBYXzFE6gFC0IpxlWfEauU56NfyOF211R8I88dGw1FB6cXkQ1Xe0bX4CY0"
-        },
-        {
-          "url": "https://www.cbsnews.com/newyork/video/1-dead-after-nj-transit-train-car-crash-on-pascack-valley-line-in-nanuet-police-say/",
-          "title": "1 dead after NJ Transit train, car crash on Pascack Valley Line in Nanuet, police say",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjrdpkE6S8WcgvUA5MJ8WH8OqiddA-J9A4epgzo_J0u_fyLop_LWQOR3SaRCg"
-        },
-        {
-          "url": "https://pix11.com/news/local-news/new-jersey/nj-transit-suspends-pascack-valley-line-after-fatal-crash/",
-          "title": "Woman killed after NJ Transit train strikes SUV in Nanuet: police",
-          "publisher": "PIX11",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsJjuRmYwpKliSMiYPIXOqGR_NgtVWhQFX8ApTT02qJR9HSRvj6qTq20g79M4"
-        }
-      ]
-    },
-    {
-      "query": "bangladesh vs south africa",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T09:40:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/match-report",
-        "https://www.cricbuzz.com/cricket-news/140963/mahmud-we-couldnt-create-pressure-against-south-africas-tailenders-cricbuzzcom",
-        "https://www.wral.com/news/ap/80744-south-africa-beats-bangladesh-on-day-5-of-first-cricket-test-after-harmer-shines-again/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1J4jRynajrdgJmMJH9EA7ZGJyTOzP9Uymt7WBqCTSYvZzPIBo1jKcJZPxO70",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/match-report",
-          "title": "Bad light stops play early with Bangladesh under the pump",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1J4jRynajrdgJmMJH9EA7ZGJyTOzP9Uymt7WBqCTSYvZzPIBo1jKcJZPxO70"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140963/mahmud-we-couldnt-create-pressure-against-south-africas-tailenders-cricbuzzcom",
-          "title": "Mahmud: We couldn't create pressure against South Africa's tailenders",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOzuxRGCky8QgN-aOfteAJU3TNVgEgJ_eIoVVZMLILmRuJ6h_gHKHYIPSat8"
-        },
-        {
-          "url": "https://www.wral.com/news/ap/80744-south-africa-beats-bangladesh-on-day-5-of-first-cricket-test-after-harmer-shines-again/",
-          "title": "South Africa beats Bangladesh on Day 5 of first cricket test after Harmer shines again",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQw7ObNA1zJt1culN07mudm_Qugtp1vSgsTPdhOuteknTBnIX_RxoaCaGrzbM"
-        }
-      ]
-    },
-    {
-      "query": "football",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T09:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/espn/betting/story/_/id/50498153/2026-college-football-week-12-top-25-betting-lines-odds",
-        "https://www.nytimes.com/athletic/7792817/2026/11/19/college-football-picks-spread-week-12-lsu-tennessee-ohio-state-nebraska/",
-        "https://www.cbssports.com/college-football/news/college-football-odds-predictions-lsu-tennessee-michigan-ucla-week-12/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHvP9Rpf_xBi6fw3CfnDyb8UdVr0xgqITrFFKkDpD8GscKrH0YUqi2rmEIGQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/espn/betting/story/_/id/50498153/2026-college-football-week-12-top-25-betting-lines-odds",
-          "title": "Top 25 betting lines: UGA big faves over Gamecocks, Vols slim favorites vs. LSU",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHvP9Rpf_xBi6fw3CfnDyb8UdVr0xgqITrFFKkDpD8GscKrH0YUqi2rmEIGQ"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7792817/2026/11/19/college-football-picks-spread-week-12-lsu-tennessee-ohio-state-nebraska/",
-          "title": "College football picks ATS Week 12: LSU-Tennessee, Ohio State-Nebraska, more",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkHgpdS0K-HFBXpsLqOzAF9DKWaZEguSf5l5o9yYY7lOvcopEB-xtq2KFfUtU"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/college-football-odds-predictions-lsu-tennessee-michigan-ucla-week-12/",
-          "title": "College football odds, predictions: LSU vs. Tennessee, Michigan vs. UCLA lead Week 12 slate",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk_59EMxUEwGOrwenk4OkiXZ5iKXzQxtDlN-W9V-dhPTBi5euAeurhtsRrF0Q"
-        }
-      ]
-    },
-    {
-      "query": "soccer",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T09:30:00Z",
-      "related_news_urls": [
-        "https://www.nj.com/highschoolsports/2026/11/boys-soccer-live-group-semifinal-results-photos-and-recaps-for-wednesday-nov-18.html",
-        "https://shoresportsinsider.com/second-string-savior-peck-bench-deliver-in-penalties-send-toms-river-east-to-state-final/",
-        "https://sports.yahoo.com/videos/watch-mike-pecks-save-seals-233358880.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7kiTiw6eTRTwBKczVZRlyz9yE8st5W9KOhC1pLsTj_XjFCCID33N1eflynVE",
-      "image_credit": "NJ.com",
-      "news": [
-        {
-          "url": "https://www.nj.com/highschoolsports/2026/11/boys-soccer-live-group-semifinal-results-photos-and-recaps-for-wednesday-nov-18.html",
-          "title": "Boys Soccer: Group semifinal LIVE video, results, photos and recaps for Wednesday, Nov. 18",
-          "publisher": "NJ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7kiTiw6eTRTwBKczVZRlyz9yE8st5W9KOhC1pLsTj_XjFCCID33N1eflynVE"
-        },
-        {
-          "url": "https://shoresportsinsider.com/second-string-savior-peck-bench-deliver-in-penalties-send-toms-river-east-to-state-final/",
-          "title": "Second-String Savior: Peck, Bench Deliver in Penalties, Send Toms River East to State Final",
-          "publisher": "Shore Sports Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGS0ClQHdSR1isTPiHytk9ZH7DrSIZKV5DvAIuW_RkHNq7YL2Qczhh5O8RvWU"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/watch-mike-pecks-save-seals-233358880.html",
-          "title": "WATCH: Mike Peck's save seals Toms River East's PK win in state semis",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRx2Y3bSEPm0qIUxU45Msccma7ZtSFVL76kevicvficQzJIKGzEbrkSIH22-n8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6CK7W2IBdQdb5rxOEYY8dKx-dRlo66V2Sa3huQRMRf1IYV6lHkMtmT3mxVUo"
         }
       ]
     }
