@@ -34,7 +34,7 @@ if(root){
  const publisherNext=el('button','rac-button','Next website ›');
  const publisherPause=el('button','rac-button','Pause');
  publisherNext.type=publisherPause.type='button';publisherControls.append(publisherPause,publisherNext);
- const videoPortal=el('a','rac-kit-link','21+ separate source card');
+ const videoPortal=el('a','rac-source-portal','21+ separate source card');
  videoPortal.href='/21plus-video-source.html';videoPortal.rel='noopener noreferrer';
  videoPortal.setAttribute('aria-label','Open separate 21 plus source Quick Card');
  const publisherNote=el('p','rac-note','You are opening each publisher’s original website. Any merchant age check, prescription review, purchase, booking or delivery stays with that provider. No live pricing, stock, licensed ads or consolidated freight is implied.');
