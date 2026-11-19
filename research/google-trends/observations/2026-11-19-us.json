@@ -3,12 +3,187 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T16:31:23.122469Z",
+  "checked_at": "2026-11-19T17:01:29.546943Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cody johnson cma awards withdrawal",
+      "query": "gme stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T16:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/research/reports/ARGUS_4323_QuantitativeReport_1794960000000",
+        "https://finance.yahoo.com/research/reports/ARGUS_3867_QuantitativeReport_1794960000000",
+        "https://finance.yahoo.com/research/reports/ARGUS_4895_QuantitativeReport_1794960000000"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/research/reports/ARGUS_4323_QuantitativeReport_1794960000000",
+          "title": "Unifirst Corporation (UNF) Stock Forecasts",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://finance.yahoo.com/research/reports/ARGUS_3867_QuantitativeReport_1794960000000",
+          "title": "Applied Industrial Technologies (AIT) Stock Forecasts",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://finance.yahoo.com/research/reports/ARGUS_4895_QuantitativeReport_1794960000000",
+          "title": "XPO, Inc. (XPO) Stock Forecasts",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        }
+      ]
+    },
+    {
+      "query": "gme",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T16:30:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-19/gamestop-ceo-criticizes-digital-game-releases-on-gta-vi-eve",
+        "https://www.forbes.com/sites/mattgardner1/2026/11/12/the-gta-6-physical-edition-is-missing-more-than-just-its-disc/",
+        "https://www.ketv.com/article/gta-6-digital-only-release-boycott-fears/74459734"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwoYDIne8iF-Lhm-zMl5t6gDVCbHxo63gmxYNXvFk9YYZhf-PguKI86mKO-m8",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-19/gamestop-ceo-criticizes-digital-game-releases-on-gta-vi-eve",
+          "title": "GameStop CEO Criticizes Digital Game Releases on ‘GTA VI’ Eve",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwoYDIne8iF-Lhm-zMl5t6gDVCbHxo63gmxYNXvFk9YYZhf-PguKI86mKO-m8"
+        },
+        {
+          "url": "https://www.forbes.com/sites/mattgardner1/2026/11/12/the-gta-6-physical-edition-is-missing-more-than-just-its-disc/",
+          "title": "The ‘GTA 6’ Physical Edition Is Missing More Than Just Its Disc",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDqy4Ll9McwT-4BbOpCrIZVNxTndQedlrDoxH-Q1Yu8H_fO9FeDprIUSmRzUg"
+        },
+        {
+          "url": "https://www.ketv.com/article/gta-6-digital-only-release-boycott-fears/74459734",
+          "title": "GTA 6 launch has fans 'very, very excited' and one manager boycotting the digital release",
+          "publisher": "KETV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5cbzNrSKg3u25Jb7gme_f3-dDnaYUkIHHUKXjNiZr2XHGEJNh3duWieKk"
+        }
+      ]
+    },
+    {
+      "query": "petroleum",
       "approx_searches": "200+",
+      "published_at": "2026-11-19T16:30:00Z",
+      "related_news_urls": [
+        "https://www.trefis.com/stock/mpc/articles/626943/what-moved-marathon-petroleum-stock/2026-11-19",
+        "https://kalkinemedia.com/us/stocks/oil-gas/how-will-a-bigger-buyback-plan-shape-marathon-petroleum-nysempc",
+        "https://www.marketwatch.com/data-news/marathon-petroleum-corp-stock-underperforms-tuesday-when-compared-to-competitors-91633a9a-eb419f83c98b?mod=goog_fin_scmw"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0N6Ul-OQCRczOyGq-fyBioF8Wp3Yw5a4a25RphcTCm8iOzxx0G01vHYH-VVo",
+      "image_credit": "Trefis",
+      "news": [
+        {
+          "url": "https://www.trefis.com/stock/mpc/articles/626943/what-moved-marathon-petroleum-stock/2026-11-19",
+          "title": "What Moved Marathon Petroleum Stock?",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0N6Ul-OQCRczOyGq-fyBioF8Wp3Yw5a4a25RphcTCm8iOzxx0G01vHYH-VVo"
+        },
+        {
+          "url": "https://kalkinemedia.com/us/stocks/oil-gas/how-will-a-bigger-buyback-plan-shape-marathon-petroleum-nysempc",
+          "title": "How Will a Bigger Buyback Plan Shape Marathon Petroleum (NYSE:MPC)?",
+          "publisher": "Kalkine Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKXxgR4xwZGBZ0SHy4fp8dg7ylA0HwDbLU4whBYPFijbTm3qAPjx122kmRx7Y"
+        },
+        {
+          "url": "https://www.marketwatch.com/data-news/marathon-petroleum-corp-stock-underperforms-tuesday-when-compared-to-competitors-91633a9a-eb419f83c98b?mod=goog_fin_scmw",
+          "title": "Marathon Petroleum Corp. stock underperforms Tuesday when compared to competitors",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTELrZBk2oHD-lb3LayGayxt_pw8CWnBT0_GDiNlf45HykrttzSBTNjguhmF9w"
+        }
+      ]
+    },
+    {
+      "query": "nascar",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-19T16:20:00Z",
+      "related_news_urls": [
+        "https://www.nascar.com/news-media/2026/11/18/nascar-announces-format-eligibility-requirements-for-2027-clash-at-daytona/",
+        "https://www.jayski.com/2026/11/18/nascar-announces-eligibility-requirements-format-for-2027-wheatley-vodka-clash/",
+        "https://www.usatoday.com/story/sports/nascar/2026/11/18/nascar-clash-daytona-format-eligibility-2027/92850190007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTszRkDPocTwFN5vFsdxZyrRuUuxbdkBbqkPUdODtMvjnK40lm-E8YCVdj98M",
+      "image_credit": "NASCAR.com",
+      "news": [
+        {
+          "url": "https://www.nascar.com/news-media/2026/11/18/nascar-announces-format-eligibility-requirements-for-2027-clash-at-daytona/",
+          "title": "NASCAR announces format, eligibility requirements for 2027 Clash at Daytona",
+          "publisher": "NASCAR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTszRkDPocTwFN5vFsdxZyrRuUuxbdkBbqkPUdODtMvjnK40lm-E8YCVdj98M"
+        },
+        {
+          "url": "https://www.jayski.com/2026/11/18/nascar-announces-eligibility-requirements-format-for-2027-wheatley-vodka-clash/",
+          "title": "NASCAR announces eligibility requirements, format for 2027 Wheatley Vodka Clash",
+          "publisher": "Jayski",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX70DT2tDrZbFjVwFpc6uJNsThxxx9zIRrOHfnVn7fDMVoD5y38mFkddWrNrk"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nascar/2026/11/18/nascar-clash-daytona-format-eligibility-2027/92850190007/",
+          "title": "NASCAR sets format for 2027 Clash at Daytona, 22 drivers eligible",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQu1qvRiepaMG4uJYq6H8T_M2Wu4ZiSklpHyj1PoZtbRgycNzB87kHWHRySgbQ"
+        }
+      ]
+    },
+    {
+      "query": "glenn close",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T16:20:00Z",
+      "related_news_urls": [
+        "https://people.com/glenn-close-on-creating-drusilla-sickle-iconic-look-in-sunrise-on-the-reaping-exclusive-12260229",
+        "https://www.thedailybeast.com/obsessed/glenn-close-delivers-most-unhinged-performance-yet-in-hunger-games-prequel",
+        "https://apnews.com/video/elle-fanning-on-seeing-glenn-close-in-costume-for-hunger-games-0f2edcdbd05e41b2be3536a6c77de8c7"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKlsCD1P9Sz-MiKrHS8a-NDPZQdD__eKzNiK_U3HTunBVtXCr3_uNYILikvo",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/glenn-close-on-creating-drusilla-sickle-iconic-look-in-sunrise-on-the-reaping-exclusive-12260229",
+          "title": "Glenn Close Details How She Came Up with Drusilla Sickle’s Iconic Look in Sunrise on the Reaping (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKlsCD1P9Sz-MiKrHS8a-NDPZQdD__eKzNiK_U3HTunBVtXCr3_uNYILikvo"
+        },
+        {
+          "url": "https://www.thedailybeast.com/obsessed/glenn-close-delivers-most-unhinged-performance-yet-in-hunger-games-prequel",
+          "title": "79-Year-Old Legend Delivers Most Unhinged Performance Yet",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz0yh85fV_OEIYj3S_XgeArHsJjQZwIvj04b0Tlljv_0eHjBoRcoi4MVL1p0E"
+        },
+        {
+          "url": "https://apnews.com/video/elle-fanning-on-seeing-glenn-close-in-costume-for-hunger-games-0f2edcdbd05e41b2be3536a6c77de8c7",
+          "title": "Elle Fanning on seeing Glenn Close in costume for ‘Hunger Games’",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmN5OOD4jeQxQ70YCCjnuNuytEf4kWBi7UzNqFf3gQ9l9Kv7FpSCUndqXL6Ws"
+        }
+      ]
+    },
+    {
+      "query": "cody johnson cma awards withdrawal",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T16:10:00Z",
       "related_news_urls": [
         "https://abcnews.com/GMA/Culture/cody-johnson-skip-2026-cma-awards-cites-mental/story?id=138258783",
@@ -46,6 +221,41 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-19T16:00:00Z",
       "related_news_urls": [
+        "https://www.cnbc.com/video/2026/11/19/shares-of-amd-fall-after-hunterbrook-discloses-short-position.html",
+        "https://www.bloomberg.com/news/articles/2026-11-19/amd-slides-after-hunterbrook-shorts-stock-cites-circular-deals",
+        "https://finance.yahoo.com/video/blacklisted-chinese-server-maker-kept-getting-amd-firmware-updates-hunterbrook-162807931.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDiJOX4VlHnq4rIv6KEW9H6hcrph9j87IEEc9iyn20eH3S_HGQuqc1VEPq0F8",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/video/2026/11/19/shares-of-amd-fall-after-hunterbrook-discloses-short-position.html",
+          "title": "Shares of AMD fall after Hunterbrook discloses short position",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDiJOX4VlHnq4rIv6KEW9H6hcrph9j87IEEc9iyn20eH3S_HGQuqc1VEPq0F8"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-19/amd-slides-after-hunterbrook-shorts-stock-cites-circular-deals",
+          "title": "AMD Slides After Hunterbrook Shorts Stock, Cites Circular Deals",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHT1jIxb3HV0aiw5SJ-dmS02ea9vkIGCLHvyoLJ88X-FA7Yo0BhwiFxhrQL1c"
+        },
+        {
+          "url": "https://finance.yahoo.com/video/blacklisted-chinese-server-maker-kept-getting-amd-firmware-updates-hunterbrook-162807931.html",
+          "title": "Blacklisted Chinese server maker kept getting AMD firmware updates: Hunterbrook",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6VbSXA3PjzbYyIP5Ep_bPwetsQupK2lpBIdhQv89vozwK10WkS5mnYOsH1vg"
+        }
+      ]
+    },
+    {
+      "query": "amd news",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T15:50:00Z",
+      "related_news_urls": [
         "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidia-amd-stock-prices-194602677.html",
         "https://www.benzinga.com/markets/tech/26/11/63379917/why-is-amd-stock-gaining-wednesday",
         "https://www.fool.com/investing/2026/11/16/amd-earnings-what-wall-street-missed/"
@@ -77,85 +287,15 @@
       ]
     },
     {
-      "query": "hunterbrook",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T15:50:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-19/amd-slides-after-hunterbrook-shorts-stock-cites-circular-deals",
-        "https://www.cnbc.com/video/2026/11/19/shares-of-amd-fall-after-hunterbrook-discloses-short-position.html",
-        "https://www.marketwatch.com/story/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang-2fb74547"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHT1jIxb3HV0aiw5SJ-dmS02ea9vkIGCLHvyoLJ88X-FA7Yo0BhwiFxhrQL1c",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-19/amd-slides-after-hunterbrook-shorts-stock-cites-circular-deals",
-          "title": "AMD Slides After Hunterbrook Shorts Stock, Cites Circular Deals",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHT1jIxb3HV0aiw5SJ-dmS02ea9vkIGCLHvyoLJ88X-FA7Yo0BhwiFxhrQL1c"
-        },
-        {
-          "url": "https://www.cnbc.com/video/2026/11/19/shares-of-amd-fall-after-hunterbrook-discloses-short-position.html",
-          "title": "Shares of AMD fall after Hunterbrook discloses short position",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDiJOX4VlHnq4rIv6KEW9H6hcrph9j87IEEc9iyn20eH3S_HGQuqc1VEPq0F8"
-        },
-        {
-          "url": "https://www.marketwatch.com/story/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang-2fb74547",
-          "title": "AMD and other chip stocks slide as Wall Street rethinks the AI trade without Jensen Huang",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7q7MhmOUJnMx4R7w9Pda5iFYUDYOfI15iHTqOWE97d9II-VnQbuZ052zMH0M"
-        }
-      ]
-    },
-    {
-      "query": "pwhl takeover tour",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T15:30:00Z",
-      "related_news_urls": [
-        "https://www.thepwhl.com/en/news/2026/november/19/pwhl-announces-largest-takeover-tour-to-date-with-24-games-across-19-cities",
-        "https://sports.yahoo.com/articles/bridgestone-arena-host-pwhls-seattle-151100003.html",
-        "https://www.kare11.com/article/syndication/associatedpress/from-sunrise-to-saskatoon-pwhl-bringing-womens-pro-hockey-to-19-neutral-site-markets-in-season-4/616-64dd4b1c-9d2f-4828-9766-4f322c4a9896"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFlhwscAx1UlNMhIBNB0xYdVXYoG4r3Kxd3qT8JD7D6_KQjJl_ZBNHztWnjRk",
-      "image_credit": "Professional Women's Hockey League (PWHL)",
-      "news": [
-        {
-          "url": "https://www.thepwhl.com/en/news/2026/november/19/pwhl-announces-largest-takeover-tour-to-date-with-24-games-across-19-cities",
-          "title": "PWHL ANNOUNCES LARGEST TAKEOVER TOUR™ TO DATE WITH 24 GAMES ACROSS 19 CITIES",
-          "publisher": "Professional Women's Hockey League (PWHL)",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFlhwscAx1UlNMhIBNB0xYdVXYoG4r3Kxd3qT8JD7D6_KQjJl_ZBNHztWnjRk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/bridgestone-arena-host-pwhls-seattle-151100003.html",
-          "title": "Bridgestone Arena to host PWHL's Seattle Torrent and Vegas Vanguards in 2027",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVmSUmPLzC8fojLRLMDKNpRNkJovQKk4HgD0rdmW4ZOoijJBMqouBxtEHuQmY"
-        },
-        {
-          "url": "https://www.kare11.com/article/syndication/associatedpress/from-sunrise-to-saskatoon-pwhl-bringing-womens-pro-hockey-to-19-neutral-site-markets-in-season-4/616-64dd4b1c-9d2f-4828-9766-4f322c4a9896",
-          "title": "From Sunrise to Saskatoon, PWHL bringing women’s pro hockey to 19 neutral site markets in Season 4",
-          "publisher": "kare11.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn9YbFxZ2ObFzc8x6KJ7Qhw2lBGv_OmRRuEu5BdLs9jG7pVFLhLh78aGUNaGg"
-        }
-      ]
-    },
-    {
       "query": "is kenneth walker playing this week",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T15:30:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/chiefs-kenneth-walker-misses-practice-203459695.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury",
-        "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline"
+        "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xdqZ4FEUI4243BGhvbxoH5GciNtXnDG0YUWE1IjnLgaNYk64ow7cHUzR26k",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhHJvcTy4LP-k3y9viSYfUq2bC95_XSsowMHAO289HgcyAk6Tj9dckOjatcu8",
       "image_credit": "Yahoo Sports",
       "news": [
         {
@@ -163,14 +303,7 @@
           "title": "Chiefs' Kenneth Walker misses practice with groin injury; Emmett Johnson in line to start again",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xdqZ4FEUI4243BGhvbxoH5GciNtXnDG0YUWE1IjnLgaNYk64ow7cHUzR26k"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury",
-          "title": "Kenneth Walker won’t practice Wednesday with groin injury",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2f0tMH2mkvQ7Yc3nH1KYrhQmdonyA4jWf63gzXFsEA4HjfsVJwLiQWaafXnM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhHJvcTy4LP-k3y9viSYfUq2bC95_XSsowMHAO289HgcyAk6Tj9dckOjatcu8"
         },
         {
           "url": "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline",
@@ -178,181 +311,48 @@
           "publisher": "Bleacher Report",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5M0h-gn_N3xQBtMV8fRcIg0m1vtyd2stv_b2rrBNByYwT7ylqXzbI9miESxk"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury",
+          "title": "Kenneth Walker won’t practice Wednesday with groin injury",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2f0tMH2mkvQ7Yc3nH1KYrhQmdonyA4jWf63gzXFsEA4HjfsVJwLiQWaafXnM"
         }
       ]
     },
     {
-      "query": "princess anne",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T15:20:00Z",
+      "query": "pwhl takeover tour",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T15:30:00Z",
       "related_news_urls": [
-        "https://www.batimes.com.ar/news/world/argentina-condemns-princess-annes-visit-to-malvinas.phtml",
-        "https://en.mercopress.com/2026/11/17/falklands-close-november-with-cricket-archery-and-hockey-after-opening-sports-complex",
-        "https://www.express.co.uk/news/royal/2267688/princess-anne-played-blinder-falklands-argentine"
+        "https://www.thepwhl.com/en/news/2026/november/19/pwhl-announces-largest-takeover-tour-to-date-with-24-games-across-19-cities",
+        "https://www.cbsnews.com/pittsburgh/news/professional-womens-hockey-league-takeover-tour-comes-to-pittsburgh-in-2027/",
+        "https://www.nhl.com/predators/news/bridgestone-arena-to-host-pwhl-takeover-tourtm-game-2026-11-19"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHcBF9zyK80V5dfj9EeGXaP5zfhCHyaCB4QbVFW6AalO4qjGccGCRyph98p3g",
-      "image_credit": "Buenos Aires Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjb04JhhkxD0mix-vQKdIss9HHj8i-IYiiGIPJ0WWL6Ktrr7mlYvsXpMTryjI",
+      "image_credit": "Professional Women's Hockey League (PWHL)",
       "news": [
         {
-          "url": "https://www.batimes.com.ar/news/world/argentina-condemns-princess-annes-visit-to-malvinas.phtml",
-          "title": "Argentina condemns Princess Anne’s visit to Malvinas",
-          "publisher": "Buenos Aires Times",
+          "url": "https://www.thepwhl.com/en/news/2026/november/19/pwhl-announces-largest-takeover-tour-to-date-with-24-games-across-19-cities",
+          "title": "PWHL ANNOUNCES LARGEST TAKEOVER TOUR™ TO DATE WITH 24 GAMES ACROSS 19 CITIES",
+          "publisher": "Professional Women's Hockey League (PWHL)",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHcBF9zyK80V5dfj9EeGXaP5zfhCHyaCB4QbVFW6AalO4qjGccGCRyph98p3g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjb04JhhkxD0mix-vQKdIss9HHj8i-IYiiGIPJ0WWL6Ktrr7mlYvsXpMTryjI"
         },
         {
-          "url": "https://en.mercopress.com/2026/11/17/falklands-close-november-with-cricket-archery-and-hockey-after-opening-sports-complex",
-          "title": "Falklands close November with cricket, archery and hockey after opening Sports Complex",
-          "publisher": "MercoPress",
+          "url": "https://www.cbsnews.com/pittsburgh/news/professional-womens-hockey-league-takeover-tour-comes-to-pittsburgh-in-2027/",
+          "title": "Professional Women's Hockey League \"Takeover Tour\" comes to Pittsburgh in 2027",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQm8U_82je0q2ScHwB2AuK9IlT9vvmHno6oVsblRwjpaZ6hBiYBFlkp0YTyqvE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_SgqGqtMZTfatOf7PVXo5yfAoI-JUks45IWkg1ke4iVz9F5k_xNGT-cYSZf8"
         },
         {
-          "url": "https://www.express.co.uk/news/royal/2267688/princess-anne-played-blinder-falklands-argentine",
-          "title": "Princess Anne has just played a blinder — the Argentines are fuming",
-          "publisher": "Daily Express",
+          "url": "https://www.nhl.com/predators/news/bridgestone-arena-to-host-pwhl-takeover-tourtm-game-2026-11-19",
+          "title": "Bridgestone Arena To Host PWHL Takeover Tour™ Game",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7W8jkcVeMmfcVzo-3X6phfl7L47dexXpK222J9z5_1u9yOJci6ZIrjyEi5GY"
-        }
-      ]
-    },
-    {
-      "query": "the nightingale movie",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T14:50:00Z",
-      "related_news_urls": [
-        "https://www.vanityfair.com/story/the-nightingale-exclusive-first-look-images-dakota-elle-fanning-kristin-hannah",
-        "https://variety.com/2026/film/news/the-nightingale-trailer-dakota-elle-fanning-book-1236953111/",
-        "https://www.yahoo.com/entertainment/movies/trailers/articles/nightingale-footage-gives-us-intense-143153580.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc",
-      "image_credit": "Vanity Fair",
-      "news": [
-        {
-          "url": "https://www.vanityfair.com/story/the-nightingale-exclusive-first-look-images-dakota-elle-fanning-kristin-hannah",
-          "title": "‘The Nightingale’ First Look Starring Dakota and Elle Fanning in Their First Film As Sisters: “It Certainly Brought Us Closer”",
-          "publisher": "Vanity Fair",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc"
-        },
-        {
-          "url": "https://variety.com/2026/film/news/the-nightingale-trailer-dakota-elle-fanning-book-1236953111/",
-          "title": "‘The Nightingale’ Trailer: Dakota and Elle Fanning Share the Screen for the First Time and Play Sisters During WWII in Adaptation of Popular Book",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBu-5Jg39llRUwBibfACe1IY2s_0gWIDPmqnqfRmYyQFy61En6kNFcVZYr1U0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/nightingale-footage-gives-us-intense-143153580.html",
-          "title": "The Nightingale Footage Gives Us An Intense Look At Dakota And Elle Fanning As Sisters During WWII",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXZqWxXiyXnacGaYmSO_0-26reZIXKxm0rYboH-ZVI5OZO86nJZ-bdqZGqa_U"
-        }
-      ]
-    },
-    {
-      "query": "ao3 outage",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-19T14:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/15/arts/ao3-fan-fiction-site.html",
-        "https://apnews.com/article/ao3-fandom-archive-transformative-9e752c2cf91409434fcde7188140d066",
-        "https://commonwealthtimes.org/2026/11/18/we-need-to-begin-mourning-ao3/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRahRErxXasZZOpbs03Xrzh0ige9aLuDPzQq7hB98cqOjdScpkom7ZrvuvbDEI",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/15/arts/ao3-fan-fiction-site.html",
-          "title": "Fan Fiction Site AO3 Returns, and So Do Its Readers, in Droves",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRahRErxXasZZOpbs03Xrzh0ige9aLuDPzQq7hB98cqOjdScpkom7ZrvuvbDEI"
-        },
-        {
-          "url": "https://apnews.com/article/ao3-fandom-archive-transformative-9e752c2cf91409434fcde7188140d066",
-          "title": "Fans cheer as popular online platform for spinoff stories nears full return after security incident",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTORac7mzRIdqBsBN3obZd7vQcpyZok-CzY-F7eCNjI_NDGkJFmoq1Zutt70Kk"
-        },
-        {
-          "url": "https://commonwealthtimes.org/2026/11/18/we-need-to-begin-mourning-ao3/",
-          "title": "We need to begin mourning AO3",
-          "publisher": "The Commonwealth Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7v1MxyujN8JkbG4N3_atZwpNIp3JCqRZqincCpHBDg9iGEjtEA63eFHgEvcw"
-        }
-      ]
-    },
-    {
-      "query": "robinhood",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T14:50:00Z",
-      "related_news_urls": [
-        "https://www.trefis.com/stock/hood/articles/625195/the-single-most-important-metric-for-robinhood-stock/2026-11-16",
-        "https://www.tradingview.com/news/stockstory:3f97fbf47094b:0-why-robinhood-stock-is-trading-lower-today/",
-        "https://coinpedia.org/price-analysis/hood-stock-price-crashes-7-35-as-robinhood-insider-fraud-case-adds-to-selling-pressure/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBob7IDfoc0u5aNxegieIginov6MBrnpdhK3jAYTJTFSMFolTbOp4X03qtC68",
-      "image_credit": "Trefis",
-      "news": [
-        {
-          "url": "https://www.trefis.com/stock/hood/articles/625195/the-single-most-important-metric-for-robinhood-stock/2026-11-16",
-          "title": "The Single Most Important Metric For Robinhood Stock",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBob7IDfoc0u5aNxegieIginov6MBrnpdhK3jAYTJTFSMFolTbOp4X03qtC68"
-        },
-        {
-          "url": "https://www.tradingview.com/news/stockstory:3f97fbf47094b:0-why-robinhood-stock-is-trading-lower-today/",
-          "title": "Why Robinhood stock is trading lower today",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhgysbLdf7gNryHN9Smjcl5vhxCdE8-4mlv7q6myFTFB0352NU-FR2BbS1rvA"
-        },
-        {
-          "url": "https://coinpedia.org/price-analysis/hood-stock-price-crashes-7-35-as-robinhood-insider-fraud-case-adds-to-selling-pressure/",
-          "title": "HOOD Stock Price Crashes 7.35% as Robinhood Insider Fraud Case Adds to Selling Pressure",
-          "publisher": "Coinpedia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4YEK2VrU-Hf6_oZTOLyP2gH9H426O-4ogx4Eh2kShCefb4gy_QX-KCQl_p0w"
-        }
-      ]
-    },
-    {
-      "query": "lululemon black friday",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T14:40:00Z",
-      "related_news_urls": [
-        "https://www.today.com/shop/lululemon-black-friday-sale-2026-rcna607526",
-        "https://ca.style.yahoo.com/lululemons-black-friday-sale-is-finally-here--20-best-deals-on-belt-bags-leggings-winter-jackets-and-more-033221358.html",
-        "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoasU9dpIzMIhDTWXa8nUI0AnSXavRCbkohRHB_2T5T5BhzGA16ED4a1796lA",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/shop/lululemon-black-friday-sale-2026-rcna607526",
-          "title": "Yes, Lululemon Dropped Its Black Friday Sale Early — Our Picks Start at $9",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoasU9dpIzMIhDTWXa8nUI0AnSXavRCbkohRHB_2T5T5BhzGA16ED4a1796lA"
-        },
-        {
-          "url": "https://ca.style.yahoo.com/lululemons-black-friday-sale-is-finally-here--20-best-deals-on-belt-bags-leggings-winter-jackets-and-more-033221358.html",
-          "title": "lululemon's Black Friday sale is finally here — 20 best deals on belt bags, leggings, winter jackets and more",
-          "publisher": "Yahoo Lifestyle Canada",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5tdKP5zDEtd618xg1_riLJ9_Y_to4wz2X5TPWEQwS_GsftD0a7FwaLFL65iU"
-        },
-        {
-          "url": "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/",
-          "title": "I’ve Been Wearing Lululemon for Over a Decade—These Are the Black Friday Deals I’d Shop First",
-          "publisher": "Cosmopolitan",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhLrZHZfK0W9okNOjby43Y7nHz6Z6CAPU9YDEVXX2WuysJx-8wZ9lKj1h1ceE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvgUbBNr4pqO3VtbKe80iNfTpgNJ7i5tBTw9n1ZgsHNF70rXm2LVsj0E7b78"
         }
       ]
     }
