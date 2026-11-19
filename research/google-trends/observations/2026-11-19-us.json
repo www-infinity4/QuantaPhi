@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T16:01:12.477681Z",
+  "checked_at": "2026-11-19T16:31:23.122469Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "cody johnson cma awards withdrawal",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T16:10:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/GMA/Culture/cody-johnson-skip-2026-cma-awards-cites-mental/story?id=138258783",
+        "https://www.kcci.com/article/country-star-cody-johnson-out-cma-awards/74465171",
+        "https://www.pennlive.com/entertainment/2026/11/country-music-star-pulls-out-of-cma-performance-at-last-minute-see-you-all-in-2027.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyJ-7GAN4zoiUSU9sZsDbM5fNENM9nQi3qjfw3NNtxDaWfdPsOGPqU_aeTT0Y",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/GMA/Culture/cody-johnson-skip-2026-cma-awards-cites-mental/story?id=138258783",
+          "title": "Cody Johnson to skip 2026 CMA Awards, cites mental and physical exhaustion",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyJ-7GAN4zoiUSU9sZsDbM5fNENM9nQi3qjfw3NNtxDaWfdPsOGPqU_aeTT0Y"
+        },
+        {
+          "url": "https://www.kcci.com/article/country-star-cody-johnson-out-cma-awards/74465171",
+          "title": "Country singer pulls out of CMA Awards: 'Going 100 mph all the time isn't healthy'",
+          "publisher": "KCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMeOYjd1bIc7rZiFfGFHw3T1_0DZLcamwEFCtKRoZ8aA9CBVFb_2Z32p4XFxw"
+        },
+        {
+          "url": "https://www.pennlive.com/entertainment/2026/11/country-music-star-pulls-out-of-cma-performance-at-last-minute-see-you-all-in-2027.html",
+          "title": "Country music star pulls out of CMA performance at last minute: ‘See you all in 2027′",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcNWnsBnqAKouGXtbslfrp-8mUggOciekKN_B7fu3FHNSXvHgH3Fb1R7BgJDQ"
+        }
+      ]
+    },
+    {
+      "query": "amd",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T16:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidia-amd-stock-prices-194602677.html",
+        "https://www.benzinga.com/markets/tech/26/11/63379917/why-is-amd-stock-gaining-wednesday",
+        "https://www.fool.com/investing/2026/11/16/amd-earnings-what-wall-street-missed/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9ORSlveRdJ7xmqGVfFaTX1VqTa3dmx8SEc2Gme_ju2QTaPYcAGk9ozKbiEh8",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidia-amd-stock-prices-194602677.html",
+          "title": "Prediction: These Will Be Nvidia’s and AMD’s Stock Prices by the End of 2027 (Hint: Only 1 Is a Buy).",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9ORSlveRdJ7xmqGVfFaTX1VqTa3dmx8SEc2Gme_ju2QTaPYcAGk9ozKbiEh8"
+        },
+        {
+          "url": "https://www.benzinga.com/markets/tech/26/11/63379917/why-is-amd-stock-gaining-wednesday",
+          "title": "Why Is AMD Stock Gaining Wednesday?",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgFbfDUvEy4VBJ9vHVEDHoPEYclhgaYDgzqIBwEoL8d-a-WlGnCBXD12e14pc"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/16/amd-earnings-what-wall-street-missed/",
+          "title": "AMD Earnings: What Wall Street Missed",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHH-fT6jgXDuTYAFBJoqlpmnY1wHFxyjpBSn_GHru6_tHt6T8lp4BzEVJuedA"
+        }
+      ]
+    },
+    {
+      "query": "hunterbrook",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T15:50:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-19/amd-slides-after-hunterbrook-shorts-stock-cites-circular-deals",
+        "https://www.cnbc.com/video/2026/11/19/shares-of-amd-fall-after-hunterbrook-discloses-short-position.html",
+        "https://www.marketwatch.com/story/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang-2fb74547"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHT1jIxb3HV0aiw5SJ-dmS02ea9vkIGCLHvyoLJ88X-FA7Yo0BhwiFxhrQL1c",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-19/amd-slides-after-hunterbrook-shorts-stock-cites-circular-deals",
+          "title": "AMD Slides After Hunterbrook Shorts Stock, Cites Circular Deals",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHT1jIxb3HV0aiw5SJ-dmS02ea9vkIGCLHvyoLJ88X-FA7Yo0BhwiFxhrQL1c"
+        },
+        {
+          "url": "https://www.cnbc.com/video/2026/11/19/shares-of-amd-fall-after-hunterbrook-discloses-short-position.html",
+          "title": "Shares of AMD fall after Hunterbrook discloses short position",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDiJOX4VlHnq4rIv6KEW9H6hcrph9j87IEEc9iyn20eH3S_HGQuqc1VEPq0F8"
+        },
+        {
+          "url": "https://www.marketwatch.com/story/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang-2fb74547",
+          "title": "AMD and other chip stocks slide as Wall Street rethinks the AI trade without Jensen Huang",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7q7MhmOUJnMx4R7w9Pda5iFYUDYOfI15iHTqOWE97d9II-VnQbuZ052zMH0M"
+        }
+      ]
+    },
     {
       "query": "pwhl takeover tour",
       "approx_searches": "1000+",
       "published_at": "2026-11-19T15:30:00Z",
       "related_news_urls": [
         "https://www.thepwhl.com/en/news/2026/november/19/pwhl-announces-largest-takeover-tour-to-date-with-24-games-across-19-cities",
-        "https://www.nhl.com/penguins/news/ppg-paints-arena-to-host-pwhl-takeover-tour-game-on-january-24",
-        "https://sports.yahoo.com/articles/sunrise-saskatoon-pwhl-bringing-women-054338725.html"
+        "https://sports.yahoo.com/articles/bridgestone-arena-host-pwhls-seattle-151100003.html",
+        "https://www.kare11.com/article/syndication/associatedpress/from-sunrise-to-saskatoon-pwhl-bringing-womens-pro-hockey-to-19-neutral-site-markets-in-season-4/616-64dd4b1c-9d2f-4828-9766-4f322c4a9896"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFlhwscAx1UlNMhIBNB0xYdVXYoG4r3Kxd3qT8JD7D6_KQjJl_ZBNHztWnjRk",
       "image_credit": "Professional Women's Hockey League (PWHL)",
@@ -26,29 +131,29 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFlhwscAx1UlNMhIBNB0xYdVXYoG4r3Kxd3qT8JD7D6_KQjJl_ZBNHztWnjRk"
         },
         {
-          "url": "https://www.nhl.com/penguins/news/ppg-paints-arena-to-host-pwhl-takeover-tour-game-on-january-24",
-          "title": "PPG Paints Arena to Host PWHL Takeover Tour™ Game on January 24",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBpVBnVh3yUtvPRVaJ0RFiHG9j7TDW4T9LczPiyvKhnYbjZVmMy4H0mcbVKhs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/sunrise-saskatoon-pwhl-bringing-women-054338725.html",
-          "title": "From Sunrise to Saskatoon, PWHL bringing women’s pro hockey to 19 neutral site markets in Season 4",
+          "url": "https://sports.yahoo.com/articles/bridgestone-arena-host-pwhls-seattle-151100003.html",
+          "title": "Bridgestone Arena to host PWHL's Seattle Torrent and Vegas Vanguards in 2027",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6hzrsXVFwTGdskP7ogLUEuLIuXW3qx065A6T1TP1dzHsS5zbFf1BE5cD1tmM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVmSUmPLzC8fojLRLMDKNpRNkJovQKk4HgD0rdmW4ZOoijJBMqouBxtEHuQmY"
+        },
+        {
+          "url": "https://www.kare11.com/article/syndication/associatedpress/from-sunrise-to-saskatoon-pwhl-bringing-womens-pro-hockey-to-19-neutral-site-markets-in-season-4/616-64dd4b1c-9d2f-4828-9766-4f322c4a9896",
+          "title": "From Sunrise to Saskatoon, PWHL bringing women’s pro hockey to 19 neutral site markets in Season 4",
+          "publisher": "kare11.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn9YbFxZ2ObFzc8x6KJ7Qhw2lBGv_OmRRuEu5BdLs9jG7pVFLhLh78aGUNaGg"
         }
       ]
     },
     {
       "query": "is kenneth walker playing this week",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T15:30:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/chiefs-kenneth-walker-misses-practice-203459695.html",
-        "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury",
+        "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xdqZ4FEUI4243BGhvbxoH5GciNtXnDG0YUWE1IjnLgaNYk64ow7cHUzR26k",
       "image_credit": "Yahoo Sports",
@@ -61,18 +166,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xdqZ4FEUI4243BGhvbxoH5GciNtXnDG0YUWE1IjnLgaNYk64ow7cHUzR26k"
         },
         {
-          "url": "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline",
-          "title": "Kenneth Walker Injury Update, Latest NFL Rumors on Chiefs RB Recovery Timeline",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5M0h-gn_N3xQBtMV8fRcIg0m1vtyd2stv_b2rrBNByYwT7ylqXzbI9miESxk"
-        },
-        {
           "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury",
           "title": "Kenneth Walker won’t practice Wednesday with groin injury",
           "publisher": "NBC Sports",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2f0tMH2mkvQ7Yc3nH1KYrhQmdonyA4jWf63gzXFsEA4HjfsVJwLiQWaafXnM"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline",
+          "title": "Kenneth Walker Injury Update, Latest NFL Rumors on Chiefs RB Recovery Timeline",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5M0h-gn_N3xQBtMV8fRcIg0m1vtyd2stv_b2rrBNByYwT7ylqXzbI9miESxk"
         }
       ]
     },
@@ -82,7 +187,7 @@
       "published_at": "2026-11-19T15:20:00Z",
       "related_news_urls": [
         "https://www.batimes.com.ar/news/world/argentina-condemns-princess-annes-visit-to-malvinas.phtml",
-        "https://www.aol.co.uk/articles/falklands-row-erupts-argentine-government-120200000.html",
+        "https://en.mercopress.com/2026/11/17/falklands-close-november-with-cricket-archery-and-hockey-after-opening-sports-complex",
         "https://www.express.co.uk/news/royal/2267688/princess-anne-played-blinder-falklands-argentine"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHcBF9zyK80V5dfj9EeGXaP5zfhCHyaCB4QbVFW6AalO4qjGccGCRyph98p3g",
@@ -96,11 +201,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHcBF9zyK80V5dfj9EeGXaP5zfhCHyaCB4QbVFW6AalO4qjGccGCRyph98p3g"
         },
         {
-          "url": "https://www.aol.co.uk/articles/falklands-row-erupts-argentine-government-120200000.html",
-          "title": "Falklands row erupts as Argentine government slams Princess Anne",
-          "publisher": "AOL.co.uk",
+          "url": "https://en.mercopress.com/2026/11/17/falklands-close-november-with-cricket-archery-and-hockey-after-opening-sports-complex",
+          "title": "Falklands close November with cricket, archery and hockey after opening Sports Complex",
+          "publisher": "MercoPress",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamFwDhXYHPLnMqmlYXhP6JGPeAso0MR4bt35zZE_kocvyQlqBtIx5G7UTZ90"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQm8U_82je0q2ScHwB2AuK9IlT9vvmHno6oVsblRwjpaZ6hBiYBFlkp0YTyqvE"
         },
         {
           "url": "https://www.express.co.uk/news/royal/2267688/princess-anne-played-blinder-falklands-argentine",
@@ -112,48 +217,13 @@
       ]
     },
     {
-      "query": "apple black friday",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T15:10:00Z",
-      "related_news_urls": [
-        "https://shopping.yahoo.com/deals/article/amazon-is-selling-apple-airpods-pro-3-earbuds-for-a-near-all-time-low-of-179-plus-10-more-fab-deals-222300999.html",
-        "https://www.cnn.com/cnn-underscored/deals/apple-black-friday-deals-2026-11-19",
-        "https://www.macrumors.com/2026/11/14/early-apple-black-friday-deals-2/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTOAIZTJSISCqGFzG0D_giTsJCd0suOrqTKxwF1WI96z1k-nex8VudNytM1U",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://shopping.yahoo.com/deals/article/amazon-is-selling-apple-airpods-pro-3-earbuds-for-a-near-all-time-low-of-179-plus-10-more-fab-deals-222300999.html",
-          "title": "Amazon is selling Apple AirPods Pro 3 earbuds for a near-all-time low of $179 (plus 10 more fab deals)",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTOAIZTJSISCqGFzG0D_giTsJCd0suOrqTKxwF1WI96z1k-nex8VudNytM1U"
-        },
-        {
-          "url": "https://www.cnn.com/cnn-underscored/deals/apple-black-friday-deals-2026-11-19",
-          "title": "Black Friday prices are officially live on Apple Watches, AirTags, MacBooks and more",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpH8WTxBydFo7bppiNzGeT69Bays1a_r-xObRxklraXovRNHf05U1y0BHssIA"
-        },
-        {
-          "url": "https://www.macrumors.com/2026/11/14/early-apple-black-friday-deals-2/",
-          "title": "Apple Black Friday Starts Early: Save on Apple Watch, MacBook Air, and More",
-          "publisher": "MacRumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLOhpnS-YWa75RTGCva8mv1HLNefiHAhLEk_pAEbTkUxXBNczl40aFoKAs7I8"
-        }
-      ]
-    },
-    {
       "query": "the nightingale movie",
       "approx_searches": "1000+",
       "published_at": "2026-11-19T14:50:00Z",
       "related_news_urls": [
         "https://www.vanityfair.com/story/the-nightingale-exclusive-first-look-images-dakota-elle-fanning-kristin-hannah",
-        "https://people.com/dakota-fanning-elle-fanning-the-nightingale-trailer-12263423",
-        "https://variety.com/2026/film/news/the-nightingale-trailer-dakota-elle-fanning-book-1236953111/"
+        "https://variety.com/2026/film/news/the-nightingale-trailer-dakota-elle-fanning-book-1236953111/",
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/nightingale-footage-gives-us-intense-143153580.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc",
       "image_credit": "Vanity Fair",
@@ -166,18 +236,53 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc"
         },
         {
-          "url": "https://people.com/dakota-fanning-elle-fanning-the-nightingale-trailer-12263423",
-          "title": "Dakota Fanning and Elle Fanning Share the Screen for the First Time as Sisters in Dramatic The Nightingale Trailer",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJOgKxDb7fMS-KbQVJtH0Glt4DQKJRfmh7iuxtIKu9tNfIpCQSnGouBBmImLw"
-        },
-        {
           "url": "https://variety.com/2026/film/news/the-nightingale-trailer-dakota-elle-fanning-book-1236953111/",
           "title": "‘The Nightingale’ Trailer: Dakota and Elle Fanning Share the Screen for the First Time and Play Sisters During WWII in Adaptation of Popular Book",
           "publisher": "Variety",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBu-5Jg39llRUwBibfACe1IY2s_0gWIDPmqnqfRmYyQFy61En6kNFcVZYr1U0"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/nightingale-footage-gives-us-intense-143153580.html",
+          "title": "The Nightingale Footage Gives Us An Intense Look At Dakota And Elle Fanning As Sisters During WWII",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXZqWxXiyXnacGaYmSO_0-26reZIXKxm0rYboH-ZVI5OZO86nJZ-bdqZGqa_U"
+        }
+      ]
+    },
+    {
+      "query": "ao3 outage",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-19T14:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/15/arts/ao3-fan-fiction-site.html",
+        "https://apnews.com/article/ao3-fandom-archive-transformative-9e752c2cf91409434fcde7188140d066",
+        "https://commonwealthtimes.org/2026/11/18/we-need-to-begin-mourning-ao3/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRahRErxXasZZOpbs03Xrzh0ige9aLuDPzQq7hB98cqOjdScpkom7ZrvuvbDEI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/15/arts/ao3-fan-fiction-site.html",
+          "title": "Fan Fiction Site AO3 Returns, and So Do Its Readers, in Droves",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRahRErxXasZZOpbs03Xrzh0ige9aLuDPzQq7hB98cqOjdScpkom7ZrvuvbDEI"
+        },
+        {
+          "url": "https://apnews.com/article/ao3-fandom-archive-transformative-9e752c2cf91409434fcde7188140d066",
+          "title": "Fans cheer as popular online platform for spinoff stories nears full return after security incident",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTORac7mzRIdqBsBN3obZd7vQcpyZok-CzY-F7eCNjI_NDGkJFmoq1Zutt70Kk"
+        },
+        {
+          "url": "https://commonwealthtimes.org/2026/11/18/we-need-to-begin-mourning-ao3/",
+          "title": "We need to begin mourning AO3",
+          "publisher": "The Commonwealth Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7v1MxyujN8JkbG4N3_atZwpNIp3JCqRZqincCpHBDg9iGEjtEA63eFHgEvcw"
         }
       ]
     },
@@ -222,10 +327,10 @@
       "published_at": "2026-11-19T14:40:00Z",
       "related_news_urls": [
         "https://www.today.com/shop/lululemon-black-friday-sale-2026-rcna607526",
-        "https://www.goodhousekeeping.com/what-to-buy/clothing/a74443063/lululemon-black-friday-sale-2026/",
+        "https://ca.style.yahoo.com/lululemons-black-friday-sale-is-finally-here--20-best-deals-on-belt-bags-leggings-winter-jackets-and-more-033221358.html",
         "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJUftXa6pl3fiLgS7_FPjAD18rLe2W9-yKY07pi-Gl8xbMbaYkaQo1egPs6w",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoasU9dpIzMIhDTWXa8nUI0AnSXavRCbkohRHB_2T5T5BhzGA16ED4a1796lA",
       "image_credit": "TODAY.com",
       "news": [
         {
@@ -233,14 +338,14 @@
           "title": "Yes, Lululemon Dropped Its Black Friday Sale Early — Our Picks Start at $9",
           "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJUftXa6pl3fiLgS7_FPjAD18rLe2W9-yKY07pi-Gl8xbMbaYkaQo1egPs6w"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoasU9dpIzMIhDTWXa8nUI0AnSXavRCbkohRHB_2T5T5BhzGA16ED4a1796lA"
         },
         {
-          "url": "https://www.goodhousekeeping.com/what-to-buy/clothing/a74443063/lululemon-black-friday-sale-2026/",
-          "title": "Lululemon’s Biggest Sale of the Year Just Started—These 20 Picks Made Our Wish List",
-          "publisher": "Good Housekeeping",
+          "url": "https://ca.style.yahoo.com/lululemons-black-friday-sale-is-finally-here--20-best-deals-on-belt-bags-leggings-winter-jackets-and-more-033221358.html",
+          "title": "lululemon's Black Friday sale is finally here — 20 best deals on belt bags, leggings, winter jackets and more",
+          "publisher": "Yahoo Lifestyle Canada",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtZfqi9XrQh7w1V6gYLgelngZdhcyMcIc_3WPGamC_e9qWwaUTzLhFNTvZvuM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5tdKP5zDEtd618xg1_riLJ9_Y_to4wz2X5TPWEQwS_GsftD0a7FwaLFL65iU"
         },
         {
           "url": "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/",
@@ -248,111 +353,6 @@
           "publisher": "Cosmopolitan",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhLrZHZfK0W9okNOjby43Y7nHz6Z6CAPU9YDEVXX2WuysJx-8wZ9lKj1h1ceE"
-        }
-      ]
-    },
-    {
-      "query": "common",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T14:40:00Z",
-      "related_news_urls": [
-        "https://www.wktv.com/news/local/utica-common-council-votes-5-4-to-defeat-good-cause-eviction-law/article_c63471ce-c049-4bad-8548-74020f7288ae.html",
-        "https://www.romesentinel.com/good-cause-rally-utica-11-18/image_5beaf301-55ab-4cb0-b69a-9fd90d662959.html",
-        "https://www.romesentinel.com/news/utica-common-council-votes-down-good-cause-eviction-proposal/article_554c669a-08b3-45f9-a203-b6ebd62ec01e.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2_qbvipsQN8y48nq31yRFmLraRuZoxJNucOk7DhTlIB4rJlA-6j_5bNMsJA",
-      "image_credit": "WKTV",
-      "news": [
-        {
-          "url": "https://www.wktv.com/news/local/utica-common-council-votes-5-4-to-defeat-good-cause-eviction-law/article_c63471ce-c049-4bad-8548-74020f7288ae.html",
-          "title": "Utica Common Council Votes 5-4 to Defeat Good Cause Eviction Law",
-          "publisher": "WKTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2_qbvipsQN8y48nq31yRFmLraRuZoxJNucOk7DhTlIB4rJlA-6j_5bNMsJA"
-        },
-        {
-          "url": "https://www.romesentinel.com/good-cause-rally-utica-11-18/image_5beaf301-55ab-4cb0-b69a-9fd90d662959.html",
-          "title": "Good Cause rally Utica 11/18",
-          "publisher": "Rome Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7UjV6Ui25MERKPsXJOMepmjDtkefIf076eiS_pK1ZhCT5u1l6GmxoNxHjA"
-        },
-        {
-          "url": "https://www.romesentinel.com/news/utica-common-council-votes-down-good-cause-eviction-proposal/article_554c669a-08b3-45f9-a203-b6ebd62ec01e.html",
-          "title": "Utica Common Council votes down Good Cause Eviction proposal",
-          "publisher": "Rome Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY8vk4UsGdM51thvffhS7x9B1-0ohNl7BzSdpzowtTBA2QiGlKdUS_j1hREvI"
-        }
-      ]
-    },
-    {
-      "query": "dermot mulroney",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T14:30:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/dermot-mulroney-diane-keaton-family-stone-sequel-1236950731/",
-        "https://ryerecord.com/the-family-stone-sequel-to-film-holiday-scenes-in-rye/",
-        "https://mezha.net/eng/news/mezha-809d0f324dafea08ac447066_dermot_mulroney_says/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZE944M4Rl8ybdFXqDVelC6mhQRzHRhIC0-rYCBx5Eweoi0Cwkvpma4PSnYNk",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/dermot-mulroney-diane-keaton-family-stone-sequel-1236950731/",
-          "title": "Diane Keaton’s ‘Memory Is Honored in Everything‘ in ‘Family Stone’ Sequel, Says Star Dermot Mulroney",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZE944M4Rl8ybdFXqDVelC6mhQRzHRhIC0-rYCBx5Eweoi0Cwkvpma4PSnYNk"
-        },
-        {
-          "url": "https://ryerecord.com/the-family-stone-sequel-to-film-holiday-scenes-in-rye/",
-          "title": "‘The Family Stone’ Sequel to Film Holiday Scenes in Rye",
-          "publisher": "Rye Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ79xAJ0SFu77XAdZMH-t8ATyPJP7OXPKat3TA-v5LbGnQ8GjPAkqZJGZz-p7E"
-        },
-        {
-          "url": "https://mezha.net/eng/news/mezha-809d0f324dafea08ac447066_dermot_mulroney_says/",
-          "title": "Dermot Mulroney Says ‘The Family Stone’ Sequel Honors Diane Keaton’s Memory",
-          "publisher": "Mezha.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnn05CKKG50Xa8eAs94Rnk4Fdn-8lTENnl1x0o6_DpdmMUNvd3VmVbVxBoXIw"
-        }
-      ]
-    },
-    {
-      "query": "kurt van dyke",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T14:30:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/kurt-van-dyke-killed-costa-rica-girlfriend-arrest/",
-        "https://www.newser.com/story/400280/cops-make-shocking-arrest-in-surf-legends-murder.html",
-        "https://www.yahoo.com/news/videos/surf-legend-kurt-van-dykes-012320082.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqZJhBA1KDInuOYyJ5wymhVAKgAnLxWhuFixmfUiPIKAs2oKVym5DYS-vNgU",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/kurt-van-dyke-killed-costa-rica-girlfriend-arrest/",
-          "title": "Brother of American killed in Costa Rica says he's focused on justice after arrest of former girlfriend",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqZJhBA1KDInuOYyJ5wymhVAKgAnLxWhuFixmfUiPIKAs2oKVym5DYS-vNgU"
-        },
-        {
-          "url": "https://www.newser.com/story/400280/cops-make-shocking-arrest-in-surf-legends-murder.html",
-          "title": "Surf Legend's Girlfriend Accused in His Tortuous Murder",
-          "publisher": "Newser",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsL2CN1snSA87jPNWVP0PEHY8Ky4EpRwj2LuiVZ8BebGz8gvUTpPKOxXI_EEU"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/surf-legend-kurt-van-dykes-012320082.html",
-          "title": "American surfer Kurt Van Dyke's girlfriend and another man arrested for his murder",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRh2koX05thbNh0g-DLMHZmmfiwEHM4rymdridNRzWCV2poqsdlzv5tDOttuM"
         }
       ]
     }
