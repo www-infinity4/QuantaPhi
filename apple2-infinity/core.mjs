@@ -1,3 +1,5 @@
+import { Virtual6502 } from './cpu6502.mjs';
+export { Virtual6502, LEGAL_OPCODES } from './cpu6502.mjs';
 /* Apple II Infinity: original, dependency-free software components.
    This is a functional teaching/workbench model, NOT a cycle-accurate Apple IIe or full 6502. */
 export const APPLE_HZ = 1_023_000;
@@ -14,8 +16,8 @@ export class PagedMemory {
   check(address) {if (!Number.isSafeInteger(address) || address<0 || address>=this.size) throw RangeError('Memory address out of range');}
   read(address) {this.check(address);return this.pages.get(Math.floor(address/this.pageSize))?.[address%this.pageSize]??0;}
   write(address,value) {this.check(address); const p=Math.floor(address/this.pageSize);if(!this.pages.has(p))this.pages.set(p,new Uint8Array(this.pageSize));this.pages.get(p)[address%this.pageSize]=byte(value);}
-  readBlock(address,count) {if(!Number.isSafeInteger(count)||count<0||address+count>this.size)throw RangeError('Invalid block');return Uint8Array.from({length:count},(_,i)=>this.read(address+i));}
-  writeBlock(address,data) {for(let i=0;i<data.length;i++)this.write(address+i,data[i]);}
+  readBlock(address,count) {if(!Number.isSafeInteger(address)||address<0||!Number.isSafeInteger(count)||count<0||count>8*1024*1024||address+count>this.size)throw RangeError('Invalid block');return Uint8Array.from({length:count},(_,i)=>this.read(address+i));}
+  writeBlock(address,data) {if(!Number.isSafeInteger(address)||address<0||!data||!Number.isSafeInteger(data.length)||data.length<0||data.length>8*1024*1024||address+data.length>this.size)throw RangeError('Invalid memory block');for(let i=0;i<data.length;i++)this.write(address+i,data[i]);}
   get physicalBytes(){return this.pages.size*this.pageSize;}
 }
 
@@ -100,49 +102,9 @@ export class VirtualAppleBus {
     if(address===0xc057){this.video.hires=true;return;}
     if(address<0xc000)this.ram[address]=value;
   }
-  load(address,bytes){if(address<0||address+bytes.length>0xc000)throw RangeError('Load into RAM only');this.ram.set(bytes,address);}
+  load(address,bytes){if(!Number.isInteger(address)||address<0||address+bytes.length>0xc000)throw RangeError('Load into RAM only');this.ram.set(bytes,address);}
+  loadROM(address,bytes){if(!Number.isInteger(address)||address<0xd000||address+bytes.length>0x10000)throw RangeError('ROM image must remain in $D000–$FFFF');this.rom.set(bytes,address-0xd000);}
   tick(){this.cycles++;this.phase^=1;this.fpga.tick();}
-}
-
-// Focused 6502 instruction interpreter. Unimplemented opcodes fail loudly.
-export class Virtual6502 {
-  constructor(bus){this.bus=bus;this.reset();}
-  reset(pc=0x800){this.a=0;this.x=0;this.y=0;this.sp=0xfd;this.pc=pc;this.p=0x20;this.halted=false;this.instructions=0;}
-  setZN(v){this.p=(this.p&~0x82)|(v===0?2:0)|(v&0x80);}
-  fetch(){return this.bus.read(this.pc++ & 0xffff);}
-  abs(){const lo=this.fetch();return lo|(this.fetch()<<8);}
-  push(v){this.bus.write(0x100+this.sp--,v);}
-  pull(){return this.bus.read(0x100+(++this.sp&255));}
-  step(){if(this.halted)return 0;if(this.bus.fpga.dmaActive)throw Error('CPU paused during DMA');
-    const opcode=this.fetch();let cycles=2;
-    switch(opcode){
-      case 0xa9:this.a=this.fetch();this.setZN(this.a);break;
-      case 0xa2:this.x=this.fetch();this.setZN(this.x);break;
-      case 0xa0:this.y=this.fetch();this.setZN(this.y);break;
-      case 0xad:this.a=this.bus.read(this.abs());this.setZN(this.a);cycles=4;break;
-      case 0xae:this.x=this.bus.read(this.abs());this.setZN(this.x);cycles=4;break;
-      case 0x8d:this.bus.write(this.abs(),this.a);cycles=4;break;
-      case 0x8e:this.bus.write(this.abs(),this.x);cycles=4;break;
-      case 0x8c:this.bus.write(this.abs(),this.y);cycles=4;break;
-      case 0x29:this.a&=this.fetch();this.setZN(this.a);break;
-      case 0x09:this.a|=this.fetch();this.setZN(this.a);break;
-      case 0x49:this.a^=this.fetch();this.setZN(this.a);break;
-      case 0xc9:{const v=this.fetch(),d=(this.a-v)&255;this.p=(this.p&~0x83)|(this.a>=v?1:0)|(d===0?2:0)|(d&128);break;}
-      case 0x69:{const v=this.fetch(),total=this.a+v+(this.p&1);this.p=(this.p&~1)|(total>255?1:0);this.a=total&255;this.setZN(this.a);break;}
-      case 0xe8:this.x=(this.x+1)&255;this.setZN(this.x);break;
-      case 0xca:this.x=(this.x-1)&255;this.setZN(this.x);break;
-      case 0x4c:this.pc=this.abs();cycles=3;break;
-      case 0xf0:{const b=this.fetch();if(this.p&2){this.pc=(this.pc+(b<128?b:b-256))&0xffff;cycles++;}break;}
-      case 0xd0:{const b=this.fetch();if(!(this.p&2)){this.pc=(this.pc+(b<128?b:b-256))&0xffff;cycles++;}break;}
-      case 0x20:{const target=this.abs(),ret=(this.pc-1)&0xffff;this.push(ret>>8);this.push(ret);this.pc=target;cycles=6;break;}
-      case 0x60:this.pc=(((this.pull())|(this.pull()<<8))+1)&0xffff;cycles=6;break;
-      case 0xea:break;
-      case 0x00:this.halted=true;cycles=7;break; // demo sentinel, NOT hardware BRK interrupt behavior
-      default:throw Error('Unimplemented 6502 opcode $'+opcode.toString(16).padStart(2,'0')+' at $'+((this.pc-1)&0xffff).toString(16));
-    }
-    this.instructions++;for(let i=0;i<cycles;i++)this.bus.tick();return cycles;
-  }
-  run(limit=10000){let steps=0;while(!this.halted&&steps<limit){this.step();steps++;}return {steps,halted:this.halted,pc:this.pc,cycles:this.bus.cycles};}
 }
 
 export class Apple2Infinity {
@@ -150,7 +112,7 @@ export class Apple2Infinity {
   demo(){// 7 + 9 -> software CM5 result $C0F8; CPU stores the returned low byte at $0400.
     const program=[0xa9,7,0x8d,0xf4,0xc0,0xa9,0,0x8d,0xf5,0xc0,0xa9,9,0x8d,0xf6,0xc0,0xa9,0,0x8d,0xf7,0xc0,
       0xa9,1,0x8d,0xf0,0xc0,0xad,0xf1,0xc0,0x29,2,0xf0,0xf9,0xad,0xf8,0xc0,0x8d,0x00,0x04,0x00];
-    this.cpu.reset();this.bus.load(0x800,program);const result=this.cpu.run();return {...result,result:this.bus.read(0x400)};
+    this.cpu.reset();this.bus.load(0x800,program);const result=this.cpu.run(10000,{stopOnBrk:true});return {...result,result:this.bus.read(0x400)};
   }
   snapshot(){return {cpu:{a:this.cpu.a,x:this.cpu.x,y:this.cpu.y,pc:this.cpu.pc,cycles:this.bus.cycles},fpga:{status:this.fpga.reg[1],irq:this.fpga.irq,logic:this.fpga.gate,ramPhysical:this.fpga.ram.physicalBytes},cm5:{jobs:this.cm5.jobs,ramPhysical:this.cm5.ram.physicalBytes},sensors:{samples:this.sensors.samples,dac:this.sensors.dac},screen:this.bus.video.frame()};}
 }

@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {Apple2Infinity,PagedMemory,IO_BASE,STATUS} from '../apple2-infinity/core.mjs';
 
 test('software-only 6502 launches CM5 calculation through the slot 7 FPGA registers',()=>{
@@ -44,4 +45,122 @@ test('Apple II 40-column interleaved text buffer and keyboard work',()=>{
 test('CM5 network stays offline and the 6502 refuses unknown instructions',()=>{
  const m=new Apple2Infinity();assert.equal(m.cm5.enqueueNetwork('hello'),1);assert.equal(m.cm5.networkLog[0].mode,'offline');
  m.bus.load(0x800,[0x02]);assert.throws(()=>m.cpu.step(),/Unimplemented/);
+});
+
+test('6502 supports documented NMOS instruction table and indexed zero-page wrapping',()=>{
+ const m=new Apple2Infinity();
+ assert.equal(m.cpu.legalOpcodes.length,151);
+ m.bus.load(0x800,[0xa2,1,0xa9,0x7f,0x95,0xff,0xb5,0xff,0x8d,0x00,0x04,0x00]);
+ assert.equal(m.cpu.run(50,{stopOnBrk:true}).halted,true);
+ assert.equal(m.bus.read(0x00),0x7f);
+ assert.equal(m.bus.read(0x400),0x7f);
+});
+
+test('6502 indirect indexed addressing wraps zero page and accounts for read page crossings',()=>{
+ const m=new Apple2Infinity();
+ m.bus.write(0x00ff,0xff);m.bus.write(0x0000,0x02);m.bus.write(0x0300,0x44);
+ m.bus.load(0x800,[0xa0,1,0xb1,0xff,0x00]);
+ m.cpu.run(10,{stopOnBrk:true});
+ assert.equal(m.cpu.a,0x44);
+ assert.equal(m.bus.cycles,2+6+7); // LDY=2, LDA (zp),Y 5+1, BRK=7
+});
+
+test('6502 arithmetic sets binary overflow and negative flags and decimal carry',()=>{
+ const m=new Apple2Infinity();
+ m.bus.load(0x800,[0x18,0xa9,0x7f,0x69,0x01,0x38,0xe9,0x01,0xf8,0x18,0xa9,0x45,0x69,0x55,0x00]);
+ const cpu=m.cpu;
+ cpu.step();cpu.step();cpu.step();
+ assert.equal(cpu.a,0x80);assert.ok(cpu.p&0x40,'signed overflow');assert.ok(cpu.p&0x80,'negative');
+ cpu.step();cpu.step();assert.equal(cpu.a,0x7f);
+ cpu.step();cpu.step();cpu.step();cpu.step();
+ assert.equal(cpu.a,0x00);assert.ok(cpu.p&1,'decimal carry');
+});
+
+test('6502 pushes BRK return address, uses IRQ vector, and RTI restores program',()=>{
+ const m=new Apple2Infinity();
+ m.bus.loadROM(0xfffe,[0x00,0x09]);
+ m.bus.load(0x800,[0x00,0xea,0xa9,0x42,0xea]);
+ m.bus.load(0x900,[0x40]); // RTI
+ m.cpu.step();assert.equal(m.cpu.pc,0x900);assert.equal(m.cpu.sp,0xfa);
+ assert.equal(m.bus.read(0x1fc),0x02);assert.equal(m.bus.read(0x1fd),0x08);
+ assert.ok(m.bus.read(0x1fb)&0x10,'BRK pushes the B bit');
+ m.cpu.step();assert.equal(m.cpu.pc,0x802);
+ m.cpu.step();assert.equal(m.cpu.a,0x42);
+});
+
+test('6502 stack, subroutine, shifts and indirect JMP wrap behave as NMOS',()=>{
+ const m=new Apple2Infinity();
+ m.bus.write(0x12ff,0x34);m.bus.write(0x1200,0x12);
+ m.bus.load(0x800,[0x20,0x10,0x08,0x6c,0xff,0x12]);
+ m.bus.load(0x810,[0xa9,0x81,0x0a,0x48,0x68,0x60]);
+ m.cpu.step();assert.equal(m.cpu.pc,0x810);
+ for(let i=0;i<5;i++)m.cpu.step();
+ assert.equal(m.cpu.a,0x02);assert.ok(m.cpu.p&1,'carry after ASL');
+ m.cpu.step();assert.equal(m.cpu.pc,0x1234);
+});
+
+test('6502 IRQ respects interrupt disable and independent NMI always vectors',()=>{
+ const m=new Apple2Infinity();
+ m.bus.loadROM(0xfffa,[0x00,0x09,0x00,0x00,0x20,0x09]);
+ m.bus.load(0x800,[0x78,0xea,0x58,0xea]);
+ m.bus.load(0x900,[0x40]);m.bus.load(0x920,[0x40]);
+ m.cpu.step();m.cpu.requestIRQ();m.cpu.step();assert.equal(m.cpu.pc,0x802,'SEI masks IRQ');
+ m.cpu.step();m.cpu.step();assert.equal(m.cpu.pc,0x920,'IRQ vector after CLI');
+ m.cpu.requestIRQ(false);m.cpu.step();assert.equal(m.cpu.pc,0x803);
+ m.cpu.requestNMI();m.cpu.step();assert.equal(m.cpu.pc,0x900,'NMI non-maskable');
+});
+
+test('RAM block validation refuses partial boundary writes',()=>{
+ const m=new PagedMemory(4096);
+ assert.throws(()=>m.writeBlock(4095,[1,2]),RangeError);
+ assert.equal(m.read(4095),0);
+ assert.throws(()=>m.readBlock(-1,2),RangeError);
+ assert.throws(()=>m.readBlock(0,9_000_000),RangeError);
+});
+
+test('each documented NMOS opcode has a dispatch path and advances at least one virtual cycle',()=>{
+ const catalog=new Apple2Infinity().cpu.legalOpcodes;
+ for(const opcode of catalog){
+  const m=new Apple2Infinity();
+  m.bus.load(0x800,[opcode,0,0,0]);
+  assert.doesNotThrow(()=>m.cpu.step(),'opcode $'+opcode.toString(16).padStart(2,'0'));
+  assert.equal(m.cpu.instructions,1);
+  assert.ok(m.bus.cycles>=2);
+ }
+});
+
+test('6502 sets carry and zero on BCD subtraction and exposes reset vector',()=>{
+ const m=new Apple2Infinity();
+ m.bus.loadROM(0xfffc,[0x10,0x08]);m.cpu.resetFromVector();assert.equal(m.cpu.pc,0x0810);
+ m.bus.load(0x0810,[0xf8,0x38,0xa9,0x00,0xe9,0x01]);
+ for(let i=0;i<4;i++)m.cpu.step();
+ assert.equal(m.cpu.a,0x99);assert.equal(m.cpu.p&1,0);assert.ok(m.cpu.p&0x80);
+});
+
+test('6502 flag transfers, branches and memory shifts preserve register semantics',()=>{
+ const m=new Apple2Infinity();
+ m.bus.load(0x800,[0xa9,0x80,0xaa,0x8a,0x0a,0x85,0x10,0x46,0x10,0xa5,0x10,0xc9,0x00,0xf0,0x02,0xa9,0xff,0x00]);
+ m.cpu.run(50,{stopOnBrk:true});
+ assert.equal(m.cpu.a,0x00);assert.equal(m.cpu.x,0x80);
+ assert.equal(m.bus.read(0x10),0);assert.ok(m.cpu.p&2,'zero after compare');
+});
+
+test('browser workbench exposes bounded hex loader and step/run controls without external APIs',()=>{
+ const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ for(const id of ['programHex','loadProgram','stepProgram','runProgram','programStatus','run','dma','screen'])
+  assert.ok(html.includes(`id="${id}"`),`missing ${id}`);
+ assert.match(html,/bytes\.length>4096/);
+ assert.match(html,/\.run\(2000,\{stopOnBrk:true\}\)/);
+ assert.doesNotMatch(html,/https?:\/\/(?:.*)?api\./i,'offline page must not rely on remote API calls');
+});
+
+
+test('6502 stores write their destination without an unintended I/O read',()=>{
+ const m=new Apple2Infinity();
+ m.bus.load(0x800,[0xa9,0x2a,0x8d,0xf2,0xc0]);
+ const old=m.bus.read.bind(m.bus);let destinationReads=0;
+ m.bus.read=addr=>{if(addr===0xc0f2)destinationReads++;return old(addr);};
+ m.cpu.step();m.cpu.step();
+ assert.equal(destinationReads,0);
+ assert.equal(m.sensors.dac,42);
 });
