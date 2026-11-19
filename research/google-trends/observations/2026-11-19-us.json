@@ -3,27 +3,202 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T07:31:27.476094Z",
+  "checked_at": "2026-11-19T08:01:16.984245Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "stanislaus wildlife care center",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T07:40:00Z",
+      "related_news_urls": [
+        "https://www.kcra.com/article/stanislaus-county-wildlife-center-fire-kills-animals/74472380",
+        "https://www.cbsnews.com/sacramento/news/stanislaus-wildlife-center-fire-hughson/",
+        "https://www.modbee.com/news/local/article318150687.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvsSz8VI2eKRUEAieBzyOSoXkKVsZt2tvZ2AU4mggVreQygHOph1KglThCUmQ",
+      "image_credit": "KCRA",
+      "news": [
+        {
+          "url": "https://www.kcra.com/article/stanislaus-county-wildlife-center-fire-kills-animals/74472380",
+          "title": "Fire at Stanislaus County wildlife center kills approximately 40 animals",
+          "publisher": "KCRA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvsSz8VI2eKRUEAieBzyOSoXkKVsZt2tvZ2AU4mggVreQygHOph1KglThCUmQ"
+        },
+        {
+          "url": "https://www.cbsnews.com/sacramento/news/stanislaus-wildlife-center-fire-hughson/",
+          "title": "Most animals inside Stanislaus wildlife center killed in fire",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdW-CUHSebfkKF5aBAIDkcLjPaSeYhDJ0LYRzUL8JHIPd1O4NCcwWFGwa8dv4"
+        },
+        {
+          "url": "https://www.modbee.com/news/local/article318150687.html",
+          "title": "Blaze at Stanislaus Wildlife Care Center kills nearly all animals in hospital building",
+          "publisher": "Modesto Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRa9n2S9cYnRALGvno1Ofwyu_iBN4liGQy1RSzQTtx9gvHMofKsaF4rXQkNM"
+        }
+      ]
+    },
+    {
+      "query": "joe jonas",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T07:40:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1438213/joe-jonas-gave-demi-lovato-a-mug-years-after-viral-interview-clip",
+        "https://www.realitytea.com/2026/11/18/demi-lovato-birthday-gift-ex-joe-jonas/",
+        "https://www.desertsun.com/story/life/entertainment/music/2026/11/18/jonas-brothers-make-palm-springs-area-debut-ahead-of-hollywood-bowl/92844806007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx88pPmIlENACVYbu8PzcJwzbIHflkBMDq_l2WJALUZkT0msfTuaE6BmlQhvE",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1438213/joe-jonas-gave-demi-lovato-a-mug-years-after-viral-interview-clip",
+          "title": "Joe Jonas Reveals Cheeky Gift He Recently Gave Ex Demi Lovato",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx88pPmIlENACVYbu8PzcJwzbIHflkBMDq_l2WJALUZkT0msfTuaE6BmlQhvE"
+        },
+        {
+          "url": "https://www.realitytea.com/2026/11/18/demi-lovato-birthday-gift-ex-joe-jonas/",
+          "title": "Joe Jonas Recalls Turning Ex Demi Lovato’s Decade-Old Meme Into ‘Special’ Birthday Gift",
+          "publisher": "Reality Tea",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCNSpXO9pgFKn-c75Xi-cMo_5LLV6tYz6ozNvLIfY4TC4yUO848kZF9smzoUM"
+        },
+        {
+          "url": "https://www.desertsun.com/story/life/entertainment/music/2026/11/18/jonas-brothers-make-palm-springs-area-debut-ahead-of-hollywood-bowl/92844806007/",
+          "title": "Jonas Brothers make Palm Springs area debut ahead of Hollywood Bowl",
+          "publisher": "The Desert Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGVL-sPGPdVsfwdd4A_Ncgg2f19qDSMLsqrvS-5nR3EVhduLZYx7avSPWUlAg"
+        }
+      ]
+    },
+    {
+      "query": "las vegas weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T07:30:00Z",
+      "related_news_urls": [
+        "https://www.8newsnow.com/weather/storm-systems-bring-rain-chances-to-las-vegas-starting-thursday/",
+        "https://www.fox5vegas.com/2026/11/16/showers-cooler-temperatures-expected-las-vegas-this-week/",
+        "https://www.reviewjournal.com/local/weather/wind-rain-bring-unsettled-week-of-weather-to-las-vegas-3916150/?utm_campaign=widget&utm_medium=section_row&utm_source=traffic&utm_term=Wind%2C%20rain%20bring%20%E2%80%98unsettled%E2%80%99%20week%20of%20weather%20to%20Las%20Vegas"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvLXSVR24zqaa1Td6nvXNL8fOFopJFWEFizIAz4-e7N2t5ARZt2trs6y2SPQ8",
+      "image_credit": "KLAS 8 News Now",
+      "news": [
+        {
+          "url": "https://www.8newsnow.com/weather/storm-systems-bring-rain-chances-to-las-vegas-starting-thursday/",
+          "title": "Storm systems bring rain chances to Las Vegas starting Thursday",
+          "publisher": "KLAS 8 News Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvLXSVR24zqaa1Td6nvXNL8fOFopJFWEFizIAz4-e7N2t5ARZt2trs6y2SPQ8"
+        },
+        {
+          "url": "https://www.fox5vegas.com/2026/11/16/showers-cooler-temperatures-expected-las-vegas-this-week/",
+          "title": "Shower chances and wind move back into Las Vegas",
+          "publisher": "FOX5 Vegas",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQFH0Mat9vYzdIf2Lz07hviryASLgzDgmqsskQoFF50RbKjUX45NmeTPlx9Y"
+        },
+        {
+          "url": "https://www.reviewjournal.com/local/weather/wind-rain-bring-unsettled-week-of-weather-to-las-vegas-3916150/?utm_campaign=widget&utm_medium=section_row&utm_source=traffic&utm_term=Wind%2C%20rain%20bring%20%E2%80%98unsettled%E2%80%99%20week%20of%20weather%20to%20Las%20Vegas",
+          "title": "Wind, rain bring ‘unsettled’ week of weather to Las Vegas",
+          "publisher": "Las Vegas Review-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREA-uxU3yrqi69h_a9mTpUVGk4RywlJE8QdJCgY24igp4_4FDDrR7oXKXdN_k"
+        }
+      ]
+    },
+    {
+      "query": "app",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T07:30:00Z",
+      "related_news_urls": [
+        "https://www.theverge.com/tech/1036796/google-android-app-games-developers-foldables-support",
+        "https://www.phonearena.com/news/google-play-puts-galaxy-z-fold-8-and-pixel-11-pro-fold-apps-on-the-clock_id184905",
+        "https://www.androidpolice.com/google-play-is-getting-serious-about-foldables/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFsGlMoicM1XyJVKuvWgIP8bNA0SWbEn1yiu0wqGN8T6AHv7ZwD7niXKsbwq8",
+      "image_credit": "The Verge",
+      "news": [
+        {
+          "url": "https://www.theverge.com/tech/1036796/google-android-app-games-developers-foldables-support",
+          "title": "Google is forcing Android app developers to properly support foldables",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFsGlMoicM1XyJVKuvWgIP8bNA0SWbEn1yiu0wqGN8T6AHv7ZwD7niXKsbwq8"
+        },
+        {
+          "url": "https://www.phonearena.com/news/google-play-puts-galaxy-z-fold-8-and-pixel-11-pro-fold-apps-on-the-clock_id184905",
+          "title": "Google Play puts Galaxy Z Fold 8 and Pixel 11 Pro Fold apps on the clock",
+          "publisher": "PhoneArena",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbtYhTfjAsjUL2iD3Ekpmk-5OdTLRAcst5vlrJfvPyf-_7-Vqea_D3RCKvjxA"
+        },
+        {
+          "url": "https://www.androidpolice.com/google-play-is-getting-serious-about-foldables/",
+          "title": "Google Play is about to crack down on app support for foldables",
+          "publisher": "Android Police",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREMj3ObyBsaJMRM4DiBBmcuxL9dJ5WkY9ye9vVS3UoGJiJp4AtJslR_AQ8XP8"
+        }
+      ]
+    },
+    {
+      "query": "should i spare arnold gta 6",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T07:20:00Z",
+      "related_news_urls": [
+        "https://www.gamersheroes.com/game-guides/grand-theft-auto-vi-choices-guide/",
+        "https://www.videogameschronicle.com/guide/gta-6-hey-arnold-walkthrough/",
+        "https://demokratis.co.id/en/gta-6-story-choices-outcomes"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzLmvXqmiwLrvQ3FWXnNSBa3S47DRWgD1CjXJtndKui1dyr2rihmVblHgHXv8",
+      "image_credit": "Gamers Heroes",
+      "news": [
+        {
+          "url": "https://www.gamersheroes.com/game-guides/grand-theft-auto-vi-choices-guide/",
+          "title": "Grand Theft Auto VI Choices Guide",
+          "publisher": "Gamers Heroes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzLmvXqmiwLrvQ3FWXnNSBa3S47DRWgD1CjXJtndKui1dyr2rihmVblHgHXv8"
+        },
+        {
+          "url": "https://www.videogameschronicle.com/guide/gta-6-hey-arnold-walkthrough/",
+          "title": "GTA 6 Hey Arnold Walkthrough",
+          "publisher": "Video Games Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHkG8LisvWeEqMR--iY5fZ8133kI6E3Eilax66u4eaN3thFHrxYBA5PSJQzVk"
+        },
+        {
+          "url": "https://demokratis.co.id/en/gta-6-story-choices-outcomes",
+          "title": "GTA 6 Guide Reveals Story Choices and Mission Outcomes",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQg0oTppr64kqrT8YIxpfFtcNUnohJeKjZ8Gfj9aYE6P8h65arAo77rw6tknag"
+        }
+      ]
+    },
+    {
       "query": "san diego",
-      "approx_searches": "2000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T07:10:00Z",
       "related_news_urls": [
-        "https://www.sandiegouniontribune.com/2026/11/18/scouting-report-aztecs-host-texas-southern-before-nonconference-competition-stiffens/",
+        "https://www.sandiegouniontribune.com/2026/11/18/san-diego-state-rolls-texas-southern-to-remain-undefeated-in-2026-27-season/",
         "https://www.cbssports.com/college-basketball/news/san-diego-state-stays-unbeaten-with-97-51-rout-of-texas-southern/",
-        "https://sports.yahoo.com/articles/watch-san-diego-state-vs-055243899.html"
+        "https://goaztecs.com/news/2026/11/17/mens-hoops-host-texas-southern-on-wednesday-night"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7ThQvgIw7aCXrsZ1RPyK7MwmKlZWU3zT5ILtQdQAmNYa8AriUAaCASSzmkCk",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnE0aEwYm-1J17jU_cRJG9bBccBktZ1yIwSJC9jZ3dJOlJRbiYVxKR4h4HB14",
       "image_credit": "San Diego Union-Tribune",
       "news": [
         {
-          "url": "https://www.sandiegouniontribune.com/2026/11/18/scouting-report-aztecs-host-texas-southern-before-nonconference-competition-stiffens/",
-          "title": "Scouting Report: Aztecs host Texas Southern before nonconference competition stiffens",
+          "url": "https://www.sandiegouniontribune.com/2026/11/18/san-diego-state-rolls-texas-southern-to-remain-undefeated-in-2026-27-season/",
+          "title": "San Diego State rolls Texas Southern to remain undefeated in 2026-27 season",
           "publisher": "San Diego Union-Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7ThQvgIw7aCXrsZ1RPyK7MwmKlZWU3zT5ILtQdQAmNYa8AriUAaCASSzmkCk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnE0aEwYm-1J17jU_cRJG9bBccBktZ1yIwSJC9jZ3dJOlJRbiYVxKR4h4HB14"
         },
         {
           "url": "https://www.cbssports.com/college-basketball/news/san-diego-state-stays-unbeaten-with-97-51-rout-of-texas-southern/",
@@ -33,11 +208,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSESe2I45Erdw4JyOk1hbBVAYoKg0pUlLJP4u-tXd3DeJsgmChAPS1_0uw7__o"
         },
         {
-          "url": "https://sports.yahoo.com/articles/watch-san-diego-state-vs-055243899.html",
-          "title": "How to watch San Diego State vs. Texas Southern basketball: TV channel, live stream and game time",
-          "publisher": "Yahoo Sports",
+          "url": "https://goaztecs.com/news/2026/11/17/mens-hoops-host-texas-southern-on-wednesday-night",
+          "title": "Men's Hoops Host Texas Southern on Wednesday Night",
+          "publisher": "San Diego State Aztecs",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsojYIuxJtg0YmaYwT5Cv2h-qh3dd6rJPEbBRW5H39pFFzBoCtJ7ENosQCT-4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpVKlGVWn0tksxss9H8OiCA-WNVHVa1Tk3WL8qL50sp9ui5Vz5uIxg2KRWCT0"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 jason",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T07:10:00Z",
+      "related_news_urls": [
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-romance-jason-lucia/",
+        "https://insider-gaming.com/when-can-switch-lucia-gta-6-fastest-method/",
+        "https://en.as.com/meristation/guides/how-to-improve-jason-and-lucias-relationship-in-gta-6-love-levels-and-endgame-consequences-f202611-n/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzcdhaHsNSNG_GuvaeZ9FEOyHNHlEsU1t3wFq3gj7tzJZs3Php5GEiynz3kJo",
+      "image_credit": "PC Gamer",
+      "news": [
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-romance-jason-lucia/",
+          "title": "GTA 6 romance guide: How Jason and Lucia's relationship actually works",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzcdhaHsNSNG_GuvaeZ9FEOyHNHlEsU1t3wFq3gj7tzJZs3Php5GEiynz3kJo"
+        },
+        {
+          "url": "https://insider-gaming.com/when-can-switch-lucia-gta-6-fastest-method/",
+          "title": "When Can You Switch To Lucia in GTA 6? Fastest Method, Explained",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0M1Ot83vY4JW2Pr5d0hsHIBwubFW0xFvLlfPGmqurEvxP38EkTbFpMMHXUkE"
+        },
+        {
+          "url": "https://en.as.com/meristation/guides/how-to-improve-jason-and-lucias-relationship-in-gta-6-love-levels-and-endgame-consequences-f202611-n/",
+          "title": "How to improve Jason and Lucia’s relationship in GTA 6: love levels and endgame consequences",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": null
         }
       ]
     },
@@ -47,8 +257,8 @@
       "published_at": "2026-11-19T07:00:00Z",
       "related_news_urls": [
         "https://www.videogameschronicle.com/guide/gta-6-unwanted-attention-mission-walkthrough/",
-        "https://www.gtaboom.com/gta-6-unwanted-attention-walkthrough-40ae",
-        "https://www.eurogamer.net/gta-6-unwanted-attention-walkthrough"
+        "https://suaragarut.id/en/gta-six-unwanted-attention-walkthrough",
+        "https://www.gtaboom.com/gta-6-unwanted-attention-walkthrough-40ae"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrD5SZC__P3o3NBTkHt7_1dWgtI4XKZBeLqrDxkhUxQMsClcOsuWPhv3uJ7kA",
       "image_credit": "Video Games Chronicle",
@@ -61,18 +271,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrD5SZC__P3o3NBTkHt7_1dWgtI4XKZBeLqrDxkhUxQMsClcOsuWPhv3uJ7kA"
         },
         {
+          "url": "https://suaragarut.id/en/gta-six-unwanted-attention-walkthrough",
+          "title": "GTA 6 Guides Players Through the Unwanted Attention Mission",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYo5tAGfnvWEhkDQ8gg62a3gt1NAXfIxqlUe_J5df200vcU2-zFoa3ivpViMY"
+        },
+        {
           "url": "https://www.gtaboom.com/gta-6-unwanted-attention-walkthrough-40ae",
           "title": "Article (spoilers)",
           "publisher": "GTA BOOM",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEgPdSQYZn_9iY4yJhd-uYuEbktiKziSQaDkmIc1sA1zqYEJeuRR4lXEgZO14"
-        },
-        {
-          "url": "https://www.eurogamer.net/gta-6-unwanted-attention-walkthrough",
-          "title": "GTA 6 Unwanted Attention walkthrough",
-          "publisher": "Eurogamer.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRixxA_Guec4YCMExTEF1sBDIJuB0q8bEKhOBmxwzmoKix5pZzL5Xj9g-QwBM8"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "New York Post",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOD8GvADe8ik05IUU1qy_mU-BGiZIHrH8B5C92WazJmROKfQ1Surzp8lpRuis"
-        }
-      ]
-    },
-    {
-      "query": "tv",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T06:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/culture/article/20261117-10-of-the-best-tv-shows-to-watch-this-december",
-        "https://ca.news.yahoo.com/harry-potter-pride-prejudice-10-103600746.html",
-        "https://www.latimes.com/entertainment-arts/business/story/2026-11-18/skydance-shakes-up-tv-by-collapsing-two-prominent-studios-into-one"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-C1o6Az-2ax_9Rtub7kMH9VRH_jeE9EL1OTrDQkpN3zSlH1EZ4VzTAn0lixg",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/culture/article/20261117-10-of-the-best-tv-shows-to-watch-this-december",
-          "title": "Harry Potter to Pride and Prejudice: 10 of the best TV shows to watch this December",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-C1o6Az-2ax_9Rtub7kMH9VRH_jeE9EL1OTrDQkpN3zSlH1EZ4VzTAn0lixg"
-        },
-        {
-          "url": "https://ca.news.yahoo.com/harry-potter-pride-prejudice-10-103600746.html",
-          "title": "Harry Potter to Pride and Prejudice: 10 of the best TV shows to watch this December",
-          "publisher": "Yahoo News Canada",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTODnUukElV_t7SZiWA56nGnY9eCHdC9_ELx39R0ppsCKbZu9aESD4uDXnpCIk"
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-18/skydance-shakes-up-tv-by-collapsing-two-prominent-studios-into-one",
-          "title": "Skydance shakes up TV by collapsing two prominent studios into one",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQl3egn2LKhkqWKpwqvkwCdMe6fiWonpSGhRjlSB9HPGF-OdnUL-Avr8hU87o"
-        }
-      ]
-    },
-    {
-      "query": "quinnen williams press conference response",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T06:30:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/cowboys-star-quinnen-williams-repeats-six-word-answer-12-times-presser-major-coaching-change",
-        "https://sports.yahoo.com/articles/hates-nfl-fans-awe-dallas-053701716.html",
-        "https://bleacherreport.com/articles/25535076-cowboys-quinnen-williams-repeats-same-answer-trending-video-while-discussing-defense-more"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBO95JTpXQYH7oZ5ytFsJ_UHs3r2ui5Z-JchH1oDPYhjQlC7WFB29ThrKTy6s",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/cowboys-star-quinnen-williams-repeats-six-word-answer-12-times-presser-major-coaching-change",
-          "title": "Cowboys star Quinnen Williams repeats six word answer 12 times in presser after major coaching change",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBO95JTpXQYH7oZ5ytFsJ_UHs3r2ui5Z-JchH1oDPYhjQlC7WFB29ThrKTy6s"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/hates-nfl-fans-awe-dallas-053701716.html",
-          "title": "‘Hates it here’ – NFL fans in awe as Dallas Cowboys star repeats answer 12 times in press conference",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5m1hyPz55jWg6Z0rzNNi87yFpwxh2isspI6Y7VtFKl6bOa_DQgZC_2qei-O8"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25535076-cowboys-quinnen-williams-repeats-same-answer-trending-video-while-discussing-defense-more",
-          "title": "Cowboys' Quinnen Williams Repeats Same Answer in Trending Video While Discussing Defense, More",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLV2aEjAbUGAKVggqfA3ubj7kDWatxu7fwAEcr8SzhbEJqoghTFn1GrOGhtU"
-        }
-      ]
-    },
-    {
-      "query": "high school student",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T06:30:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit",
-        "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
-        "https://www.nytimes.com/2026/11/17/us/baltimore-school-chips-gun-alert.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLFRi-VMsl3DXAaCeX9Pgek69l9yiaAfB8WJoxqSErifFfwk448tUX5qZfG7w",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit",
-          "title": "Four Maryland high school students sue after AI mistakes Doritos bag for gun",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLFRi-VMsl3DXAaCeX9Pgek69l9yiaAfB8WJoxqSErifFfwk448tUX5qZfG7w"
-        },
-        {
-          "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
-          "title": "Lawyers’ Committee Files Lawsuit on Behalf of Black Students Detained and Searched Due to AI Alert Falsely Identifying a Bag of Chips as a Firearm",
-          "publisher": "Lawyers' Committee for Civil Rights Under Law",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZUplXjCFcaAQXCa1q9XhWOedZOTpmOC5YvcbaQr4nQ5bDg-iUC_kT_VFRNKo"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/17/us/baltimore-school-chips-gun-alert.html",
-          "title": "A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVFQHJzfEMUbcneLlRNETQ9hGOOoR9sMqvqzlccAJgKjXsf4Z-bgAuAUgnKbA"
-        }
-      ]
-    },
-    {
-      "query": "david montgomery",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T06:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/david-montgomery-has-no-injury-designation-for-thursday-woody-marks-ruled-out",
-        "https://sports.yahoo.com/articles/david-montgomery-ready-play-week-210053548.html",
-        "https://www.profootballrumors.com/2026/11/texans-getting-rb-david-montgomery-back-in-week-11-rule-out-marvin-harrison-danielle-hunter"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS88c98jyPsC3vETYRMkDEfjXNkP90BOxnhOLFjM-snHMuJfFRkuCM9trckCxw",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/david-montgomery-has-no-injury-designation-for-thursday-woody-marks-ruled-out",
-          "title": "David Montgomery has no injury designation for Thursday; Woody Marks ruled out",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS88c98jyPsC3vETYRMkDEfjXNkP90BOxnhOLFjM-snHMuJfFRkuCM9trckCxw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/david-montgomery-ready-play-week-210053548.html",
-          "title": "David Montgomery ready to play in Week 11",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuuyyHC69Z_sBA5Drf_LaZ0aRag2wNsgcwgBTMWBgEtNJwPz8fDm5pRaIjRMo"
-        },
-        {
-          "url": "https://www.profootballrumors.com/2026/11/texans-getting-rb-david-montgomery-back-in-week-11-rule-out-marvin-harrison-danielle-hunter",
-          "title": "Texans Getting RB David Montgomery Back In Week 11; Rule Out Marvin Harrison, Danielle Hunter",
-          "publisher": "ProFootballRumors.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTva5xWhEdAn-XYFsjcUG99K9MaxwjpGVlUjsRWZNE9ld6g_Phox_UaFQ7qOI8"
-        }
-      ]
-    },
-    {
-      "query": "fresno weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T06:30:00Z",
-      "related_news_urls": [
-        "https://mavensnotebook.com/2026/11/16/daily-digest-11-16-soaking-california-storms-continue-this-week-delta-levees-may-be-tested-from-multiple-sides-this-winter-plastic-waste-study-shows-long-paths-through-waterways-dangerous-surf-pe/",
-        "https://abc30.com/post/storm-brings-hazardous-road-conditions-local-agencies-prepare-fresno-county/20039286/",
-        "https://www.modbee.com/news/weather-news/article318102868.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiYdEZR-szJFW2rIL_eNEGUlGN6w6n04NHuDdtmLzseNpROwqlBFx2laAAMPE",
-      "image_credit": "Maven's Notebook",
-      "news": [
-        {
-          "url": "https://mavensnotebook.com/2026/11/16/daily-digest-11-16-soaking-california-storms-continue-this-week-delta-levees-may-be-tested-from-multiple-sides-this-winter-plastic-waste-study-shows-long-paths-through-waterways-dangerous-surf-pe/",
-          "title": "DAILY DIGEST, 11/16: Soaking California storms continue this week; Delta levees may be tested from multiple sides this winter; Plastic waste study shows long paths through waterway",
-          "publisher": "Maven's Notebook",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiYdEZR-szJFW2rIL_eNEGUlGN6w6n04NHuDdtmLzseNpROwqlBFx2laAAMPE"
-        },
-        {
-          "url": "https://abc30.com/post/storm-brings-hazardous-road-conditions-local-agencies-prepare-fresno-county/20039286/",
-          "title": "Storm brings hazardous road conditions as local agencies prepare across Fresno County",
-          "publisher": "ABC30 Fresno",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQF1aL_8lx-oLVKP80V2hudbj7hY53Qy5gQu_AKDm9eoa2OIxpZX9UL5stpGUA"
-        },
-        {
-          "url": "https://www.modbee.com/news/weather-news/article318102868.html",
-          "title": "How much rain has fallen in Modesto? Area braces for more with ‘stronger storm’",
-          "publisher": "Modesto Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ohkgsaV3SvPbd-aGpEN1z-61Lc3t5ImI5CtpK7QiUHlMUrNlmP_CZI1A3Gc"
-        }
-      ]
-    },
-    {
-      "query": "fuel",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T06:20:00Z",
-      "related_news_urls": [
-        "https://www.geekwire.com/2026/latest-findings-point-to-fuel-supply-not-blue-origins-engines-in-loss-of-amazon-leo-satellites/",
-        "https://www.scientificamerican.com/article/the-vulcan-rocket-failure-could-haunt-u-s-spaceflight-for-years-to-come/",
-        "https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxRsWq2Hoq6dkW4NfyY4VxKivCtO4OlLTNre5MWYyLr-svEn_TcxazHS8jf6I",
-      "image_credit": "GeekWire",
-      "news": [
-        {
-          "url": "https://www.geekwire.com/2026/latest-findings-point-to-fuel-supply-not-blue-origins-engines-in-loss-of-amazon-leo-satellites/",
-          "title": "Latest findings point to fuel supply, not Blue Origin’s engines, in loss of Amazon Leo satellites",
-          "publisher": "GeekWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxRsWq2Hoq6dkW4NfyY4VxKivCtO4OlLTNre5MWYyLr-svEn_TcxazHS8jf6I"
-        },
-        {
-          "url": "https://www.scientificamerican.com/article/the-vulcan-rocket-failure-could-haunt-u-s-spaceflight-for-years-to-come/",
-          "title": "The Vulcan rocket failure could haunt U.S. spaceflight for years to come",
-          "publisher": "Scientific American",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSImk1PUEVrI6Mg1EKSC1KIELOXVWPzESL9fsH_rzaV-_oYK7hfDlL4EDUkHr4"
-        },
-        {
-          "url": "https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931",
-          "title": "Amazon loses 40 Leo satellites as Boeing-Lockheed rocket fails",
-          "publisher": "DW.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM1dLu_g6evKNL6FNvDA0gmo03EYaDLp9GzUTkXU2V4gFW1XVlQbgxGjnvOsM"
         }
       ]
     }
