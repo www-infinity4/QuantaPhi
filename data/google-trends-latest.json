@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T15:31:27.138801Z",
+  "checked_at": "2026-11-19T16:01:12.477681Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "pwhl takeover tour",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T15:30:00Z",
+      "related_news_urls": [
+        "https://www.thepwhl.com/en/news/2026/november/19/pwhl-announces-largest-takeover-tour-to-date-with-24-games-across-19-cities",
+        "https://www.nhl.com/penguins/news/ppg-paints-arena-to-host-pwhl-takeover-tour-game-on-january-24",
+        "https://sports.yahoo.com/articles/sunrise-saskatoon-pwhl-bringing-women-054338725.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFlhwscAx1UlNMhIBNB0xYdVXYoG4r3Kxd3qT8JD7D6_KQjJl_ZBNHztWnjRk",
+      "image_credit": "Professional Women's Hockey League (PWHL)",
+      "news": [
+        {
+          "url": "https://www.thepwhl.com/en/news/2026/november/19/pwhl-announces-largest-takeover-tour-to-date-with-24-games-across-19-cities",
+          "title": "PWHL ANNOUNCES LARGEST TAKEOVER TOUR™ TO DATE WITH 24 GAMES ACROSS 19 CITIES",
+          "publisher": "Professional Women's Hockey League (PWHL)",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFlhwscAx1UlNMhIBNB0xYdVXYoG4r3Kxd3qT8JD7D6_KQjJl_ZBNHztWnjRk"
+        },
+        {
+          "url": "https://www.nhl.com/penguins/news/ppg-paints-arena-to-host-pwhl-takeover-tour-game-on-january-24",
+          "title": "PPG Paints Arena to Host PWHL Takeover Tour™ Game on January 24",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBpVBnVh3yUtvPRVaJ0RFiHG9j7TDW4T9LczPiyvKhnYbjZVmMy4H0mcbVKhs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/sunrise-saskatoon-pwhl-bringing-women-054338725.html",
+          "title": "From Sunrise to Saskatoon, PWHL bringing women’s pro hockey to 19 neutral site markets in Season 4",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6hzrsXVFwTGdskP7ogLUEuLIuXW3qx065A6T1TP1dzHsS5zbFf1BE5cD1tmM"
+        }
+      ]
+    },
+    {
+      "query": "is kenneth walker playing this week",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T15:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/chiefs-kenneth-walker-misses-practice-203459695.html",
+        "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xdqZ4FEUI4243BGhvbxoH5GciNtXnDG0YUWE1IjnLgaNYk64ow7cHUzR26k",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/chiefs-kenneth-walker-misses-practice-203459695.html",
+          "title": "Chiefs' Kenneth Walker misses practice with groin injury; Emmett Johnson in line to start again",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xdqZ4FEUI4243BGhvbxoH5GciNtXnDG0YUWE1IjnLgaNYk64ow7cHUzR26k"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25534251-kenneth-walker-injury-update-latest-nfl-rumors-chiefs-rb-recovery-timeline",
+          "title": "Kenneth Walker Injury Update, Latest NFL Rumors on Chiefs RB Recovery Timeline",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5M0h-gn_N3xQBtMV8fRcIg0m1vtyd2stv_b2rrBNByYwT7ylqXzbI9miESxk"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kenneth-walker-wont-practice-wednesday-with-groin-injury",
+          "title": "Kenneth Walker won’t practice Wednesday with groin injury",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2f0tMH2mkvQ7Yc3nH1KYrhQmdonyA4jWf63gzXFsEA4HjfsVJwLiQWaafXnM"
+        }
+      ]
+    },
+    {
+      "query": "princess anne",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T15:20:00Z",
+      "related_news_urls": [
+        "https://www.batimes.com.ar/news/world/argentina-condemns-princess-annes-visit-to-malvinas.phtml",
+        "https://www.aol.co.uk/articles/falklands-row-erupts-argentine-government-120200000.html",
+        "https://www.express.co.uk/news/royal/2267688/princess-anne-played-blinder-falklands-argentine"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHcBF9zyK80V5dfj9EeGXaP5zfhCHyaCB4QbVFW6AalO4qjGccGCRyph98p3g",
+      "image_credit": "Buenos Aires Times",
+      "news": [
+        {
+          "url": "https://www.batimes.com.ar/news/world/argentina-condemns-princess-annes-visit-to-malvinas.phtml",
+          "title": "Argentina condemns Princess Anne’s visit to Malvinas",
+          "publisher": "Buenos Aires Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHcBF9zyK80V5dfj9EeGXaP5zfhCHyaCB4QbVFW6AalO4qjGccGCRyph98p3g"
+        },
+        {
+          "url": "https://www.aol.co.uk/articles/falklands-row-erupts-argentine-government-120200000.html",
+          "title": "Falklands row erupts as Argentine government slams Princess Anne",
+          "publisher": "AOL.co.uk",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamFwDhXYHPLnMqmlYXhP6JGPeAso0MR4bt35zZE_kocvyQlqBtIx5G7UTZ90"
+        },
+        {
+          "url": "https://www.express.co.uk/news/royal/2267688/princess-anne-played-blinder-falklands-argentine",
+          "title": "Princess Anne has just played a blinder — the Argentines are fuming",
+          "publisher": "Daily Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7W8jkcVeMmfcVzo-3X6phfl7L47dexXpK222J9z5_1u9yOJci6ZIrjyEi5GY"
+        }
+      ]
+    },
     {
       "query": "apple black friday",
       "approx_searches": "200+",
@@ -30,7 +135,7 @@
           "title": "Black Friday prices are officially live on Apple Watches, AirTags, MacBooks and more",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSMhrr7odwVddeRYaqLRngj8GihSyFhl9Hx9nSA15lzrHWwn4OoODRQfD6Kk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpH8WTxBydFo7bppiNzGeT69Bays1a_r-xObRxklraXovRNHf05U1y0BHssIA"
         },
         {
           "url": "https://www.macrumors.com/2026/11/14/early-apple-black-friday-deals-2/",
@@ -38,6 +143,41 @@
           "publisher": "MacRumors",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLOhpnS-YWa75RTGCva8mv1HLNefiHAhLEk_pAEbTkUxXBNczl40aFoKAs7I8"
+        }
+      ]
+    },
+    {
+      "query": "the nightingale movie",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T14:50:00Z",
+      "related_news_urls": [
+        "https://www.vanityfair.com/story/the-nightingale-exclusive-first-look-images-dakota-elle-fanning-kristin-hannah",
+        "https://people.com/dakota-fanning-elle-fanning-the-nightingale-trailer-12263423",
+        "https://variety.com/2026/film/news/the-nightingale-trailer-dakota-elle-fanning-book-1236953111/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc",
+      "image_credit": "Vanity Fair",
+      "news": [
+        {
+          "url": "https://www.vanityfair.com/story/the-nightingale-exclusive-first-look-images-dakota-elle-fanning-kristin-hannah",
+          "title": "‘The Nightingale’ First Look Starring Dakota and Elle Fanning in Their First Film As Sisters: “It Certainly Brought Us Closer”",
+          "publisher": "Vanity Fair",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc"
+        },
+        {
+          "url": "https://people.com/dakota-fanning-elle-fanning-the-nightingale-trailer-12263423",
+          "title": "Dakota Fanning and Elle Fanning Share the Screen for the First Time as Sisters in Dramatic The Nightingale Trailer",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJOgKxDb7fMS-KbQVJtH0Glt4DQKJRfmh7iuxtIKu9tNfIpCQSnGouBBmImLw"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/the-nightingale-trailer-dakota-elle-fanning-book-1236953111/",
+          "title": "‘The Nightingale’ Trailer: Dakota and Elle Fanning Share the Screen for the First Time and Play Sisters During WWII in Adaptation of Popular Book",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBu-5Jg39llRUwBibfACe1IY2s_0gWIDPmqnqfRmYyQFy61En6kNFcVZYr1U0"
         }
       ]
     },
@@ -77,50 +217,15 @@
       ]
     },
     {
-      "query": "the nightingale movie",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T14:50:00Z",
-      "related_news_urls": [
-        "https://www.vanityfair.com/story/the-nightingale-exclusive-first-look-images-dakota-elle-fanning-kristin-hannah",
-        "https://www.yahoo.com/entertainment/movies/trailers/articles/nightingale-trailer-dakota-elle-fanning-143822548.html",
-        "https://www.womansworld.com/entertainment/books/reeses-book-club-leaks-kristin-hannahs-the-nightingale-movie-cover"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc",
-      "image_credit": "Vanity Fair",
-      "news": [
-        {
-          "url": "https://www.vanityfair.com/story/the-nightingale-exclusive-first-look-images-dakota-elle-fanning-kristin-hannah",
-          "title": "‘The Nightingale’ First Look Starring Dakota and Elle Fanning in Their First Film As Sisters: “It Certainly Brought Us Closer”",
-          "publisher": "Vanity Fair",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0D7OvOg1-Wt5oj7kcCAqPhO5hsBfb8JX9f68XQGxSyTtfoolWzz8_0cpYnjc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/nightingale-trailer-dakota-elle-fanning-143822548.html",
-          "title": "‘The Nightingale’ Trailer: Dakota and Elle Fanning Share the Screen for the First Time and Play Sisters During WWII in Adaptation of Popular Book",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiiPtal3ipcL_kZxmO0C_gl1O0g0uPWGaoA-Atb6G1ebl3WpAeq7eJXPeJJ_8"
-        },
-        {
-          "url": "https://www.womansworld.com/entertainment/books/reeses-book-club-leaks-kristin-hannahs-the-nightingale-movie-cover",
-          "title": "Reese’s Book Club Reveals Kristin Hannah’s ‘The Nightingale’ Movie Cover",
-          "publisher": "Woman's World",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77_CRdO-kBhOke7tF6hK1xxCswddKrHl7ExxAlgBz6LisXc_PKRT_DRYtZGY"
-        }
-      ]
-    },
-    {
       "query": "lululemon black friday",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T14:40:00Z",
       "related_news_urls": [
         "https://www.today.com/shop/lululemon-black-friday-sale-2026-rcna607526",
         "https://www.goodhousekeeping.com/what-to-buy/clothing/a74443063/lululemon-black-friday-sale-2026/",
         "https://www.cosmopolitan.com/style-beauty/fashion/a74454025/lululemon-black-friday-sale-2026/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxi0dvJ_AJTZlwmq9AcR5Ee1eushhLES1vrBZlWzMwL-A8cYzRwfxdgFvdY0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJUftXa6pl3fiLgS7_FPjAD18rLe2W9-yKY07pi-Gl8xbMbaYkaQo1egPs6w",
       "image_credit": "TODAY.com",
       "news": [
         {
@@ -128,7 +233,7 @@
           "title": "Yes, Lululemon Dropped Its Black Friday Sale Early — Our Picks Start at $9",
           "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxi0dvJ_AJTZlwmq9AcR5Ee1eushhLES1vrBZlWzMwL-A8cYzRwfxdgFvdY0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJUftXa6pl3fiLgS7_FPjAD18rLe2W9-yKY07pi-Gl8xbMbaYkaQo1egPs6w"
         },
         {
           "url": "https://www.goodhousekeeping.com/what-to-buy/clothing/a74443063/lululemon-black-friday-sale-2026/",
@@ -151,39 +256,39 @@
       "approx_searches": "200+",
       "published_at": "2026-11-19T14:40:00Z",
       "related_news_urls": [
-        "https://ua.news/en/dovkolo-svitu/u-norvegiyi-doslidzhennia-ne-pidtverdilo-koristi-dvokh-preparativ-pid-chas-pologiv-news-medical",
-        "https://medicalxpress.com/news/2026-11-benefit-drugs-spontaneous-birth-induction.html",
-        "https://www.space.com/space-exploration/satellites/nonprofit-common-space-will-launch-1st-humanitarian-satellite-in-2027"
+        "https://www.wktv.com/news/local/utica-common-council-votes-5-4-to-defeat-good-cause-eviction-law/article_c63471ce-c049-4bad-8548-74020f7288ae.html",
+        "https://www.romesentinel.com/good-cause-rally-utica-11-18/image_5beaf301-55ab-4cb0-b69a-9fd90d662959.html",
+        "https://www.romesentinel.com/news/utica-common-council-votes-down-good-cause-eviction-proposal/article_554c669a-08b3-45f9-a203-b6ebd62ec01e.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBNI9ghs8uo7npwxkmO-8BRBRP3Efg2v0XY6v_YbcxGe20E6CKRfMzKxbYc9Y",
-      "image_credit": "UA.NEWS",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2_qbvipsQN8y48nq31yRFmLraRuZoxJNucOk7DhTlIB4rJlA-6j_5bNMsJA",
+      "image_credit": "WKTV",
       "news": [
         {
-          "url": "https://ua.news/en/dovkolo-svitu/u-norvegiyi-doslidzhennia-ne-pidtverdilo-koristi-dvokh-preparativ-pid-chas-pologiv-news-medical",
-          "title": "Norwegian study found no benefit from two drugs during labour — News-Medical",
-          "publisher": "UA.NEWS",
+          "url": "https://www.wktv.com/news/local/utica-common-council-votes-5-4-to-defeat-good-cause-eviction-law/article_c63471ce-c049-4bad-8548-74020f7288ae.html",
+          "title": "Utica Common Council Votes 5-4 to Defeat Good Cause Eviction Law",
+          "publisher": "WKTV",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBNI9ghs8uo7npwxkmO-8BRBRP3Efg2v0XY6v_YbcxGe20E6CKRfMzKxbYc9Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2_qbvipsQN8y48nq31yRFmLraRuZoxJNucOk7DhTlIB4rJlA-6j_5bNMsJA"
         },
         {
-          "url": "https://medicalxpress.com/news/2026-11-benefit-drugs-spontaneous-birth-induction.html",
-          "title": "No clear benefit from two drugs intended to increase spontaneous birth after induction in first-time moms",
-          "publisher": "Medical Xpress",
+          "url": "https://www.romesentinel.com/good-cause-rally-utica-11-18/image_5beaf301-55ab-4cb0-b69a-9fd90d662959.html",
+          "title": "Good Cause rally Utica 11/18",
+          "publisher": "Rome Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLNThrVNir9Qzdk4WtCebLViXaN4kxxrRjAmJUTKPuyAQGeufwTx3W9DCx_3A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7UjV6Ui25MERKPsXJOMepmjDtkefIf076eiS_pK1ZhCT5u1l6GmxoNxHjA"
         },
         {
-          "url": "https://www.space.com/space-exploration/satellites/nonprofit-common-space-will-launch-1st-humanitarian-satellite-in-2027",
-          "title": "Nonprofit Common Space will launch 1st 'humanitarian satellite' in 2027",
-          "publisher": "Space",
+          "url": "https://www.romesentinel.com/news/utica-common-council-votes-down-good-cause-eviction-proposal/article_554c669a-08b3-45f9-a203-b6ebd62ec01e.html",
+          "title": "Utica Common Council votes down Good Cause Eviction proposal",
+          "publisher": "Rome Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToixar2M6ssPtgQBuv-WYlw8AM0H-OLPtNaBSPzLnRbbvPFvXOqOM3mGXccWY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY8vk4UsGdM51thvffhS7x9B1-0ohNl7BzSdpzowtTBA2QiGlKdUS_j1hREvI"
         }
       ]
     },
     {
       "query": "dermot mulroney",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-19T14:30:00Z",
       "related_news_urls": [
         "https://variety.com/2026/film/news/dermot-mulroney-diane-keaton-family-stone-sequel-1236950731/",
@@ -237,7 +342,7 @@
         },
         {
           "url": "https://www.newser.com/story/400280/cops-make-shocking-arrest-in-surf-legends-murder.html",
-          "title": "Cops Make 'Shocking' Arrest in Surf Legend's Murder",
+          "title": "Surf Legend's Girlfriend Accused in His Tortuous Murder",
           "publisher": "Newser",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsL2CN1snSA87jPNWVP0PEHY8Ky4EpRwj2LuiVZ8BebGz8gvUTpPKOxXI_EEU"
@@ -248,111 +353,6 @@
           "publisher": "Yahoo",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRh2koX05thbNh0g-DLMHZmmfiwEHM4rymdridNRzWCV2poqsdlzv5tDOttuM"
-        }
-      ]
-    },
-    {
-      "query": "thanksgiving",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T14:20:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/thanksgiving-prices-turkey-costs-diesel-dinner-5c5f6f4fd28ce2ff3cbfb1398cf28fd0",
-        "https://thehill.com/business/6229798-turkey-inflation-holiday-costs/",
-        "https://www.fb.org/intel/markets/thanksgiving-dinner-cost-ticks-upward-in-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4r7c-zoKudEUC1eu9uNIBpp3V5VTT69ZVLb-lHrNFUABIKkV6alLYQnTBCk",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/thanksgiving-prices-turkey-costs-diesel-dinner-5c5f6f4fd28ce2ff3cbfb1398cf28fd0",
-          "title": "Americans will pay more for Thanksgiving dinners this year, Farm Bureau says",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4r7c-zoKudEUC1eu9uNIBpp3V5VTT69ZVLb-lHrNFUABIKkV6alLYQnTBCk"
-        },
-        {
-          "url": "https://thehill.com/business/6229798-turkey-inflation-holiday-costs/",
-          "title": "Thanksgiving dinner will come with higher price tag: Research",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTY0gvICl52EYhSYFxooROWpkGGp4ayjv3-00gvyCr78SWb9_Dn7ij7bCILsE"
-        },
-        {
-          "url": "https://www.fb.org/intel/markets/thanksgiving-dinner-cost-ticks-upward-in-2026",
-          "title": "Thanksgiving Dinner Cost Ticks Upward in 2026",
-          "publisher": "American Farm Bureau Federation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzsfjR9s0oq88XOiVT4HSTM-eyB623gPl51vy_wgn9fKw3sSYjYn20-dvlQzA"
-        }
-      ]
-    },
-    {
-      "query": "finn wittrock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T14:20:00Z",
-      "related_news_urls": [
-        "https://www.abc27.com/hershey/hershey-movie-has-its-red-carpet-premiere-at-hershey-theatre/",
-        "https://triblive.com/local/westmoreland/from-ligonier-to-the-red-carpet-hershey-biopic-makes-its-debut/",
-        "https://www.hollywoodreporter.com/movies/movie-reviews/hershey-review-finn-wittrock-alexandra-daddario-chocolate-1236757233/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSofTdcgf7ywO5txTuTBpoACHL_cCMUld3vkCfafGFScgYQEAig68TS6B7S9Qc",
-      "image_credit": "ABC27",
-      "news": [
-        {
-          "url": "https://www.abc27.com/hershey/hershey-movie-has-its-red-carpet-premiere-at-hershey-theatre/",
-          "title": "‘Hershey’ movie has its red carpet premiere at Hershey Theatre",
-          "publisher": "ABC27",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSofTdcgf7ywO5txTuTBpoACHL_cCMUld3vkCfafGFScgYQEAig68TS6B7S9Qc"
-        },
-        {
-          "url": "https://triblive.com/local/westmoreland/from-ligonier-to-the-red-carpet-hershey-biopic-makes-its-debut/",
-          "title": "From Ligonier to the red carpet, ‘Hershey’ biopic makes its debut",
-          "publisher": "TribLIVE.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLzUQNLAEbvSzg-tV1ue9U5zJJkILtiruHfN6B5KiBfOvrP_tf350rQ90kQMU"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/hershey-review-finn-wittrock-alexandra-daddario-chocolate-1236757233/",
-          "title": "‘Hershey’ Review: Finn Wittrock Plays the American Chocolate Titan in a Sickly Sweet Biopic",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2u7N0_FzgKNrO4_EPIqA1oZcfsiQYf9ftR9Xr-j5gTA9OJLvzT7UVpptSFTU"
-        }
-      ]
-    },
-    {
-      "query": "bert kreischer",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T14:20:00Z",
-      "related_news_urls": [
-        "https://www.masslive.com/centralmass/2026/11/comic-says-hell-fund-college-for-child-of-woman-who-had-contractions-at-his-worcester-show.html",
-        "https://hoodline.com/2026/11/bert-kreischer-s-college-fund-pledge-after-worcester-show-has-not-been-confirmed-as-an-account/",
-        "https://dailyvoice.com/article/bert-kreischer-promises-to-pay-for-babys-college-after-mom-has-contractions-at-mass-show/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK-IOTOGBHEJ14sBAEtYCT5OiAZbCpVxMhZ3ynMECzTf_-xJ6NVBIwosoXpgM",
-      "image_credit": "MassLive",
-      "news": [
-        {
-          "url": "https://www.masslive.com/centralmass/2026/11/comic-says-hell-fund-college-for-child-of-woman-who-had-contractions-at-his-worcester-show.html",
-          "title": "Mass. woman's contractions at Worcester comedy show might get her kid's college paid",
-          "publisher": "MassLive",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK-IOTOGBHEJ14sBAEtYCT5OiAZbCpVxMhZ3ynMECzTf_-xJ6NVBIwosoXpgM"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/bert-kreischer-s-college-fund-pledge-after-worcester-show-has-not-been-confirmed-as-an-account/",
-          "title": "Framingham Woman's Contractions at Kreischer Show in Worcester",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO3-bk97qWESAW3faohGnK0aYcqyXiiDDcidDgcPsa9AOS0p3DL1krKezehBw"
-        },
-        {
-          "url": "https://dailyvoice.com/article/bert-kreischer-promises-to-pay-for-babys-college-after-mom-has-contractions-at-mass-show/",
-          "title": "Bert Kreischer To Pay For Baby's College After Mom Has Contractions Laughing At Worcester Show",
-          "publisher": "DailyVoice.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9Wloh4CXhiirR_VsmdWkudnVbUYNLVUwUzR6zRwlf8aRAaxNfBQr05_1ayWM"
         }
       ]
     }
