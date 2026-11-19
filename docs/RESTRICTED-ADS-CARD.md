@@ -46,3 +46,9 @@ The 21+ source card now includes a deliberate **Build a kit research plan** butt
 Acceptance: `node --test test/adult-kit-research.test.mjs`, `node --check adult-kit-research.mjs` and the Android-width `test/adult-lifestyle-card.browser.spec.mjs` regression.
 
 Follow-up: Continuity Builder issue #1446 for approved merchant offers, licensed creative rights, actual supplier discounts, and signed hub quote receipts.
+
+## User-submitted adult video source reference · 2026-11-19
+
+Draft PR #1985 (canonical issue #1446) adds one external video URL to the original 21+ lifestyle publisher carousel as a distinct `adult-video-links` option. The source URL is supplied by the owner, not independently verified as hosted by the creator or licensed for republishing. It appears only after visitor-initiated 21+ browsing acknowledgment. The card never embeds, scrapes, previews, autoplays, caches or republishes the video. No other videos are invented. The source-only entry cannot create a shopping kit or an ad targeting signal. Per-visit acknowledgment is **not** verified age; provider checks and regional restrictions still apply.
+
+Tests: `node --test test/adult-video-source.test.mjs test/adult-lifestyle-catalog.test.mjs test/adult-kit-research.test.mjs` and the existing restricted publisher CI. Video hosting, inline playback, image thumbnails and monetization require verified rights, consent, provider integration, review and separate acceptance evidence. This draft is not a live deployment.
