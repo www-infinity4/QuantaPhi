@@ -1,0 +1,61 @@
+name: HypeStat Infinity
+
+on:
+  pull_request:
+    paths:
+      - 'hypestat-infinity.html'
+      - 'hypestat-infinity.test.mjs'
+      - 'hypestat-infinity.browser-test.py'
+      - '.github/workflows/hypestat-infinity.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'hypestat-infinity.html'
+      - 'hypestat-infinity.test.mjs'
+      - 'hypestat-infinity.browser-test.py'
+      - '.github/workflows/hypestat-infinity.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  public-evidence-and-aggregate-traffic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate source and import boundaries
+        run: node --test hypestat-infinity.test.mjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test tools
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Test local HTTP UI and mobile viewports
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 > /tmp/infinity-http.log 2>&1 &
+          python - <<'PY'
+          import time, urllib.request
+          for attempt in range(30):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:8765/hypestat-infinity.html', timeout=1).read(1)
+                  break
+              except OSError:
+                  time.sleep(0.2)
+          else:
+              raise SystemExit('Static HTTP server did not start')
+          PY
+          python hypestat-infinity.browser-test.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hypestat-infinity-browser-evidence
+          path: |
+            hypestat-infinity-desktop.png
+            hypestat-infinity-mobile.png
+          if-no-files-found: ignore
