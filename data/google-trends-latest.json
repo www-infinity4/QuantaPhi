@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T04:31:08.057175Z",
+  "checked_at": "2026-11-19T05:01:27.648599Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "technology news",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T04:10:00Z",
+      "query": "latest news",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-19T04:40:00Z",
       "related_news_urls": [
-        "https://www.theatlantic.com/ideas/2026/11/major-server-outage-response/689486/",
-        "https://www.fox5atlanta.com/news/faa-ground-stop-bank-outages-spark-concern-despite-white-house-denial",
-        "https://www.nytimes.com/2026/11/18/technology/tech-outages-emergency-prep.html"
+        "https://www.politico.com/news/2026/11/18/trump-xi-putin-trilateral-01173590",
+        "https://www.theguardian.com/world/live/2026/nov/19/apec-summit-trump-xi-putin-meeting-shenzhen-china?page=with:block-6afe7cbc8f082fa02797a05c",
+        "https://www.cnn.com/2026/11/18/politics/trump-china-russia-putin-xi"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcpxOjLqVqESY-C0CJhDLGMjaZV-QGZFp8XRCfsxAkFnb6uq_sOyxlPLbTjl4",
-      "image_credit": "The Atlantic",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmqs8N0q31WVUpCyzh16l4aJKYh-xqARqCtoFuAI96JCS4b4MmIFPpUfQy_N4",
+      "image_credit": "Politico",
       "news": [
         {
-          "url": "https://www.theatlantic.com/ideas/2026/11/major-server-outage-response/689486/",
-          "title": "What on Earth Is Going On?",
-          "publisher": "The Atlantic",
+          "url": "https://www.politico.com/news/2026/11/18/trump-xi-putin-trilateral-01173590",
+          "title": "‘An absolute nightmare’ — Trump’s trilateral with Xi and Putin spooks allies",
+          "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcpxOjLqVqESY-C0CJhDLGMjaZV-QGZFp8XRCfsxAkFnb6uq_sOyxlPLbTjl4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmqs8N0q31WVUpCyzh16l4aJKYh-xqARqCtoFuAI96JCS4b4MmIFPpUfQy_N4"
         },
         {
-          "url": "https://www.fox5atlanta.com/news/faa-ground-stop-bank-outages-spark-concern-despite-white-house-denial",
-          "title": "FAA ground stop, bank outages spark concern despite White House denial",
-          "publisher": "FOX 5 Atlanta",
+          "url": "https://www.theguardian.com/world/live/2026/nov/19/apec-summit-trump-xi-putin-meeting-shenzhen-china?page=with:block-6afe7cbc8f082fa02797a05c",
+          "title": "Apec summit live: Xi, Trump and Putin set to hold historic trilateral in China",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJKb1CPtIJ2JQS3fyXnhywOZXJpbqiaIu6i0c8mikZh7d0HFlmkWe70HLsH6g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-6S5645Dfk12lHUthnYyWT2WUYz5BK5URAQe5hSxRGsmaPQiyglZWOYoe4RA"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/18/technology/tech-outages-emergency-prep.html",
-          "title": "What to Do Before the Next Big Tech Outage?",
-          "publisher": "The New York Times",
+          "url": "https://www.cnn.com/2026/11/18/politics/trump-china-russia-putin-xi",
+          "title": "Russia and China are not America’s friends. Why does Trump think they are?",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKSEEuMgLhYjB4HGy3P20qnumbU0ArhhEMSCggqfyKOoE_69DUr4dFwmYgblg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBJwwcl8012o9Hy8Qk_qRRCAx32RjuaAVtDsVKqcDjxxVSAfbsKcIrJVfLT7o"
         }
       ]
     },
     {
-      "query": "national book award 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T04:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/18/books/national-book-award-for-nonfiction-goes-to-writer-denied-visa-to-attend.html",
-        "https://www.newyorker.com/books/page-turner/i-am-a-2026-national-book-award-finalist-the-us-denied-my-visa",
-        "https://www.nationalbook.org/winners-of-the-2026-national-book-awards-announced/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTP8_GUS4T_rsJtCv1LN37ExRWiyWb0V-Odq19oboeEdXE0yIt1IPAWMSLeNRQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/18/books/national-book-award-for-nonfiction-goes-to-writer-denied-visa-to-attend.html",
-          "title": "National Book Award for Nonfiction Goes to Writer Denied Visa to Attend",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTP8_GUS4T_rsJtCv1LN37ExRWiyWb0V-Odq19oboeEdXE0yIt1IPAWMSLeNRQ"
-        },
-        {
-          "url": "https://www.newyorker.com/books/page-turner/i-am-a-2026-national-book-award-finalist-the-us-denied-my-visa",
-          "title": "I Am a 2026 National Book Award Finalist. The U.S. Denied My Visa",
-          "publisher": "The New Yorker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrssEjH-CIkzs22HkrUxy_9H7flhGWC606gGT-SlT3fVDuB5FGICxyN9ru-_c"
-        },
-        {
-          "url": "https://www.nationalbook.org/winners-of-the-2026-national-book-awards-announced/",
-          "title": "Winners of the 2026 National Book Awards Announced",
-          "publisher": "National Book Award",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyFkYXwbYzS4qAVd2yr3GeP4AObVe9R7je5b00kNmrl2iyUMDpN_slUxZOsoA"
-        }
-      ]
-    },
-    {
-      "query": "matt rife",
+      "query": "walker kessler",
       "approx_searches": "1000+",
-      "published_at": "2026-11-19T03:50:00Z",
+      "published_at": "2026-11-19T04:40:00Z",
       "related_news_urls": [
-        "https://suaragarut.id/en/lisa-ann-kendra-lust-rife-dispute",
-        "https://www.barstoolsports.com/blog/3581261/porn-wars-ii-kendra-lust-mocked-her-mortal-enemy-lisa-ann-by-posing-with-matt",
-        "https://demokratis.co.id/en/lisa-ann-kendra-lust-matt-rife-feud"
+        "https://www.espn.com/nba/story/_/id/50506501/lakers-rule-austin-reaves-walker-kessler-vs-hornets",
+        "https://sports.yahoo.com/articles/luka-doncic-available-austin-reaves-223053519.html",
+        "https://www.nba.com/news/lakers-rule-out-reaves-kessler-vs-hornets"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9_7kMS2SWZt3pCEKJEzQVntCjlOWNIxyg4KvqGle3XmbEKkR3xhmJ1j3BYck",
-      "image_credit": "SuaraGarut.ID",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4jmtxkdNQLQIUSRdsKwgnKg_mV7vFUDR0aLSvJuYyu34FI4vBgIZbIpP0dE",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://suaragarut.id/en/lisa-ann-kendra-lust-rife-dispute",
-          "title": "Lisa Ann and Kendra Lust Escalate Dispute Over Matt Rife",
-          "publisher": "SuaraGarut.ID",
+          "url": "https://www.espn.com/nba/story/_/id/50506501/lakers-rule-austin-reaves-walker-kessler-vs-hornets",
+          "title": "Lakers rule Austin Reaves, Walker Kessler out vs. Hornets",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9_7kMS2SWZt3pCEKJEzQVntCjlOWNIxyg4KvqGle3XmbEKkR3xhmJ1j3BYck"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4jmtxkdNQLQIUSRdsKwgnKg_mV7vFUDR0aLSvJuYyu34FI4vBgIZbIpP0dE"
         },
         {
-          "url": "https://www.barstoolsports.com/blog/3581261/porn-wars-ii-kendra-lust-mocked-her-mortal-enemy-lisa-ann-by-posing-with-matt",
-          "title": "PORN WARS II: Kendra Lust Mocked Her Mortal Enemy Lisa Ann By Posing With Matt Rife At His Standup Show And Also Teased More Drama About Lisa Hooking Up With Yung Gravy",
-          "publisher": "Barstool Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbnF5_3mBqF6e9QgcoTaSdh_4m8TlQn5gf-B7u9Ymiizm_wVW63IDN5yNDyrI"
-        },
-        {
-          "url": "https://demokratis.co.id/en/lisa-ann-kendra-lust-matt-rife-feud",
-          "title": "Lisa Ann and Kendra Lust Escalate Feud Over Matt Rife",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRL2j2u1XrwR7p5hE10RJiDcdyOdOqaXB8CNvufqln5AR27Ik95GGeZ46jjDlI"
-        }
-      ]
-    },
-    {
-      "query": "red dead redemption",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T03:50:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/gaming/news/gta-6-movie-grand-theft-auto-games-adapted-1236952350/",
-        "https://deadline.com/2026/11/grand-theft-auto-6-could-be-tv-show-film-1237227890/",
-        "https://theankler.com/gta-6-rejected-hollywood-red-dead-redemption-is-in-play-for-100m/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpkB_iZ-lCHjmaSnD4YACYhZGE2gTYF9Njc9UHVl07XQ6tix3bUjG95cwmRng",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/gaming/news/gta-6-movie-grand-theft-auto-games-adapted-1236952350/",
-          "title": "Why ‘GTA’ Has Never Been Adapted for Film or TV: ‘We Prefer to Control Our Own Destiny,’ Take-Two CEO Says",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpkB_iZ-lCHjmaSnD4YACYhZGE2gTYF9Njc9UHVl07XQ6tix3bUjG95cwmRng"
-        },
-        {
-          "url": "https://deadline.com/2026/11/grand-theft-auto-6-could-be-tv-show-film-1237227890/",
-          "title": "'Grand Theft Auto VI': Take Two CEO On TV & Film Adaptation Chances",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd6hU-b3VYJtpSaq7JcCvFg9519CYIkecvV_Te4wMhtAlA9BlKaqK5pwULqgc"
-        },
-        {
-          "url": "https://theankler.com/gta-6-rejected-hollywood-red-dead-redemption-is-in-play-for-100m/",
-          "title": "‘GTA 6’ Rejected Hollywood. ‘Red Dead Redemption’ is in Play — for $100M+",
-          "publisher": "The Ankler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmySAQoW8YorGn9i8ryWvaPOJB-X4JjPXKOt8lXbFAdO3AyvCBNzM92RJC9R4"
-        }
-      ]
-    },
-    {
-      "query": "connections hint nov 18",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T03:50:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-19-2026",
-        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-19-2026",
-        "https://www.forbes.com/sites/krisholt/2026/11/17/nyt-connections-hint-today-answer-wednesday-november-18-1256/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-19-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 19, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-19-2026",
-          "title": "Today's NYT Connections Hints (and Answer) for Thursday, November 19, 2026",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsCf0foIRgvjp6U7XjqeNnK9AZHZbcUadayusHDV2XmXQ8Cejm7Sf9kYny2J0"
-        },
-        {
-          "url": "https://www.forbes.com/sites/krisholt/2026/11/17/nyt-connections-hint-today-answer-wednesday-november-18-1256/",
-          "title": "NYT ‘Connections’ Hints And Answers For Wednesday, November 18",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOXjrndVKJ-opemVVFRtPuLaidOb6fu3d1RQC13QgvUqtTijxy7u1KdhMCnM"
-        }
-      ]
-    },
-    {
-      "query": "colorado basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T03:50:00Z",
-      "related_news_urls": [
-        "https://bvmsports.com/2026/11/18/cu-students-can-win-a-trip-to-boston-in-colorado-basketballs-punch-card-challenge/",
-        "https://sports.yahoo.com/articles/blackhawks-fandom-home-fansided-app-221520193.html",
-        "https://www.sportsbusinessjournal.com/Articles/2026/11/16/fansided-launches-redesigned-app-with-emphasis-on-personalized-feeds-in-depth-coverage/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgcoOUIwTMyxZJpLPjqoka-a0dLH4TT4oQLo83p9dBIOdi4xhEM8Z8neUR06o",
-      "image_credit": "BVM Sports",
-      "news": [
-        {
-          "url": "https://bvmsports.com/2026/11/18/cu-students-can-win-a-trip-to-boston-in-colorado-basketballs-punch-card-challenge/",
-          "title": "CU Students Can Win a Trip to Boston in Colorado Basketball’s Punch Card Challenge",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgcoOUIwTMyxZJpLPjqoka-a0dLH4TT4oQLo83p9dBIOdi4xhEM8Z8neUR06o"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/blackhawks-fandom-home-fansided-app-221520193.html",
-          "title": "Your Blackhawks fandom has a home in the new FanSided app",
+          "url": "https://sports.yahoo.com/articles/luka-doncic-available-austin-reaves-223053519.html",
+          "title": "Luka Doncic available, Austin Reaves ruled out for Lakers-Jazz clash",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-g5Adflzsni9mQT7hzyZSgrXDQ4uqWHhwDpvkrnPwpDW_RCwHPOPehgN1e60"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkt9ujr3GBEwmTFsWuT8uMeSS86UBNtsazlF1nMUX4mqucRXQpxK4ei3-GOU8"
         },
         {
-          "url": "https://www.sportsbusinessjournal.com/Articles/2026/11/16/fansided-launches-redesigned-app-with-emphasis-on-personalized-feeds-in-depth-coverage/",
-          "title": "FanSided launches redesigned app with emphasis on personalized feeds, in-depth coverage",
-          "publisher": "Sports Business Journal",
+          "url": "https://www.nba.com/news/lakers-rule-out-reaves-kessler-vs-hornets",
+          "title": "Lakers rule out Austin Reaves, Walker Kessler with injuries for next game vs. Hornets",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzeijUSmXZfVsUujRq18enFNAyNyshl0e1To20iH7SaitqzfJH_3ON_GoqnTc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqlYOTe1oHHA4XjWhF4urQ7RuUJY1JZ5bh1NWyU8dSkw12CY3lu6vzVmQEWFY"
         }
       ]
     },
     {
-      "query": "amazing race",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T03:50:00Z",
+      "query": "darryn peterson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T04:40:00Z",
       "related_news_urls": [
-        "https://timesofsandiego.com/newsletter/san-diegans-make-history-on-the-amazing-race/",
-        "https://hoodline.com/2026/11/poway-marine-captain-and-her-mom-make-history-on-the-amazing-race/",
-        "https://readthereporter.com/a-race-to-remember/"
+        "https://sports.yahoo.com/articles/darryn-peterson-made-34-3-015856507.html",
+        "https://www.sltrib.com/sports/jazz/2026/11/14/darryn-peterson-injury-update-why/",
+        "https://www.hoopsrumors.com/2026/11/northwest-notes-peterson-bagley-topic-wolves.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0U549_xi4kp05OjlT1jULBbAmvne75-4QdnUtD2GKRQTKPxoM2ESDdBlBWMo",
-      "image_credit": "Times of San Diego",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwGgfUopesnTtuRYcQP3aPw7eioyMyVqOli7IWCw48jJozyfTWN9eROWh9fo",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://timesofsandiego.com/newsletter/san-diegans-make-history-on-the-amazing-race/",
-          "title": "San Diegans make history on ‘The Amazing Race’",
-          "publisher": "Times of San Diego",
+          "url": "https://sports.yahoo.com/articles/darryn-peterson-made-34-3-015856507.html",
+          "title": "Darryn Peterson has made 34 3-pointers and registered …",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0U549_xi4kp05OjlT1jULBbAmvne75-4QdnUtD2GKRQTKPxoM2ESDdBlBWMo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwGgfUopesnTtuRYcQP3aPw7eioyMyVqOli7IWCw48jJozyfTWN9eROWh9fo"
         },
         {
-          "url": "https://hoodline.com/2026/11/poway-marine-captain-and-her-mom-make-history-on-the-amazing-race/",
-          "title": "Poway Marine Captain and Her Mom Make History on The Amazing Race",
-          "publisher": "Hoodline",
+          "url": "https://www.sltrib.com/sports/jazz/2026/11/14/darryn-peterson-injury-update-why/",
+          "title": "Why Darryn Peterson asked out late in Jazz loss to Houston — and his status moving forward",
+          "publisher": "The Salt Lake Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXfN__oLZRR2CNPxlXNfarM73KvW0GWlSiKJvpSHCuG-NHXOXh7-l1jdzW2UA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4lp85GW3_M4ArNtl4D9iqsd72XSKrksTij5bQVbvnf4FuN9LEWkWAd4_PZvk"
         },
         {
-          "url": "https://readthereporter.com/a-race-to-remember/",
-          "title": "A race to remember",
-          "publisher": "The Hamilton County Reporter",
+          "url": "https://www.hoopsrumors.com/2026/11/northwest-notes-peterson-bagley-topic-wolves.html",
+          "title": "Northwest Notes: Peterson, Bagley, Topic, Wolves",
+          "publisher": "Hoops Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkjP6XdNNCVXWRLGwCjO6PowaqiMMFxwsbf2a8dq66kbc5bVHzF5TsidGpLxA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3YiFNxw7dVheVNpXpA84uZNLXMB0LWlpxIlYIBmEYFi7EM5PQF5Rz4xdusVg"
         }
       ]
     },
     {
-      "query": "fresno state basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T03:50:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/fresno-state-bulldogs-vs-san-jose-state-spartans-prediction-odds-2026-11-18/",
-        "https://www.accuscore.com/game/cmwl62s4yr3cjph01s76t5gnq",
-        "https://sjsuspartans.com/news/2026/11/17/spartans-to-face-fresno-state-at-home-on-wednesday-night"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/fresno-state-bulldogs-vs-san-jose-state-spartans-prediction-odds-2026-11-18/",
-          "title": "Fresno State vs San Jose State Prediction, Picks & Odds | 18 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
-        },
-        {
-          "url": "https://www.accuscore.com/game/cmwl62s4yr3cjph01s76t5gnq",
-          "title": "Fresno State vs San José State Prediction (Nov 18): San José State 68% — Odds & Live Score",
-          "publisher": "AccuScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpSEm_ZklVX4A1DlZKBi0s7uf-8go9AGzUqNn9aua-kDR0uHH8tMPT8UQIG5Q"
-        },
-        {
-          "url": "https://sjsuspartans.com/news/2026/11/17/spartans-to-face-fresno-state-at-home-on-wednesday-night",
-          "title": "Spartans to Face Fresno State at Home on Wednesday Night - SJSU Athletics - Official Athletics Website",
-          "publisher": "San Jose State Spartans",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTf3MljA5xcs7PQ15oI3tpvxgKM8BuvnSMhivWahF7xlAS42IsMX-QAoQrWsY"
-        }
-      ]
-    },
-    {
-      "query": "chicago pd cast",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T03:50:00Z",
-      "related_news_urls": [
-        "https://onechicagocenter.com/chicago-pd-season-14-episode-7-recap-intelligence-gets-closer-identifying-ghost",
-        "https://film-book.com/chicago-pd-season-14-episode-7-persons-yet-unknown-tv-show-trailer/",
-        "https://fangirlish.com/2026/11/18/chicago-p-d-season-14-episode-7-review-persons-yet-unknown/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KnOvO4ooKWlEhokKUvIvJdLEMTZ65BaF6ht8xHbRAngOvm09uqRumy_XJHY",
-      "image_credit": "One Chicago Center",
-      "news": [
-        {
-          "url": "https://onechicagocenter.com/chicago-pd-season-14-episode-7-recap-intelligence-gets-closer-identifying-ghost",
-          "title": "Chicago PD season 14 episode 7 recap: Intelligence gets closer to identifying Ghost",
-          "publisher": "One Chicago Center",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KnOvO4ooKWlEhokKUvIvJdLEMTZ65BaF6ht8xHbRAngOvm09uqRumy_XJHY"
-        },
-        {
-          "url": "https://film-book.com/chicago-pd-season-14-episode-7-persons-yet-unknown-tv-show-trailer/",
-          "title": "Chicago PD: Season 14, Episode 7: Persons Yet Unknown TV Show Trailer",
-          "publisher": "Film-Book.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxDN8nQujmp1wnJM0hsGIX1n8sZktjf3cGGJyzMGyQSixT8A0lEZoVKie69V8"
-        },
-        {
-          "url": "https://fangirlish.com/2026/11/18/chicago-p-d-season-14-episode-7-review-persons-yet-unknown/",
-          "title": "Chicago P.D. Season 14, Episode 7 Review: ‘Persons Yet Unknown’",
-          "publisher": "Fangirlish",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKVg16mCOp7wNssPvmOgoWnVqepI3gltNiDd9uRA9bMipGEflYzkLPBX_DK88"
-        }
-      ]
-    },
-    {
-      "query": "josh green",
+      "query": "ace bailey",
       "approx_searches": "500+",
-      "published_at": "2026-11-19T03:40:00Z",
+      "published_at": "2026-11-19T04:40:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/jazzs-josh-green-efficient-shooting-in-limited-minutes/",
-        "https://www.nba.com/watch/video/jalen-green-with-the-dunk-16",
-        "https://peradaban.id/en/josh-green-jazz-clippers-win"
+        "https://www.espn.com/video/clip/_/id/50527314/ace-bailey-gets-basket-plus-foul",
+        "https://www.cbssports.com/fantasy/basketball/news/jazzs-ace-bailey-scoring-struggles-continue-in-win/",
+        "https://sports.betmgm.com/en/blog/nba/ace-bailey-props-odds-gaa/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2r-7eMDvBV3c-FpVuudIlgl9K97b0Hn-eGBAQUkhp72IfwZmqYjxzLsVletg",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvYBHnUeSOqR65tTHLoS7cjgFCSL-VkQ3PzbddwX56xvjvDU-sr_FHQAIBIw4",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/jazzs-josh-green-efficient-shooting-in-limited-minutes/",
-          "title": "Jazz's Josh Green: Efficient shooting in limited minutes",
+          "url": "https://www.espn.com/video/clip/_/id/50527314/ace-bailey-gets-basket-plus-foul",
+          "title": "Ace Bailey gets the basket plus the foul",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvYBHnUeSOqR65tTHLoS7cjgFCSL-VkQ3PzbddwX56xvjvDU-sr_FHQAIBIw4"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/jazzs-ace-bailey-scoring-struggles-continue-in-win/",
+          "title": "Jazz's Ace Bailey: Scoring struggles continue in win",
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2r-7eMDvBV3c-FpVuudIlgl9K97b0Hn-eGBAQUkhp72IfwZmqYjxzLsVletg"
         },
         {
-          "url": "https://www.nba.com/watch/video/jalen-green-with-the-dunk-16",
-          "title": "Jalen Green with the dunk",
-          "publisher": "NBA.com",
+          "url": "https://sports.betmgm.com/en/blog/nba/ace-bailey-props-odds-gaa/",
+          "title": "Ace Bailey Props Today: Points, Rebounds, Assists, 3-Pointers",
+          "publisher": "sports.betmgm.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoK5a0yHnZlT39E3OIVJJyctyqFaHt5281n9PJq4alDOKAPOkKeWbjoXJ_SuU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW-he1N4fNIGiWOxqVMzhePOuhotIIl8qZsAJ96Q8zgVGO6RHfjM2xynYbOMs"
+        }
+      ]
+    },
+    {
+      "query": "nuggets game",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T04:40:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/18/sports/celtics-nuggets-preview-november-18-2026/",
+        "https://sports.yahoo.com/articles/celtics-announce-starting-lineup-against-022032736.html",
+        "https://www.celticsblog.com/boston-celtics-game-previews/150530/boston-celtics-11-3-at-denver-nuggets-7-5-game-15-11-18-26"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkBBLJvGqa-uWMt5-d494gTkMjfkf34fdDbmewNpY_StOJshmVd0_jWL9TNuU",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/18/sports/celtics-nuggets-preview-november-18-2026/",
+          "title": "Celtics at Nuggets preview: Boston kicks off four-game road trip",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkBBLJvGqa-uWMt5-d494gTkMjfkf34fdDbmewNpY_StOJshmVd0_jWL9TNuU"
         },
         {
-          "url": "https://peradaban.id/en/josh-green-jazz-clippers-win",
-          "title": "Josh Green Scores Nine Points in Jazz Win Over Clippers",
-          "publisher": "Peradaban.id",
+          "url": "https://sports.yahoo.com/articles/celtics-announce-starting-lineup-against-022032736.html",
+          "title": "Celtics announce starting lineup against Denver Nuggets",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW6j8r9DwvozDLKmTwBHyagFN5tzVuSNVRGb95cQpttbYqFqVgM2SpKKAXsLM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8DBMLVCLQD9f0g2I9ruC3GLvEfPVzPzuHjKgF8ZbyU5bTytNmXTPo5fTe-oM"
+        },
+        {
+          "url": "https://www.celticsblog.com/boston-celtics-game-previews/150530/boston-celtics-11-3-at-denver-nuggets-7-5-game-15-11-18-26",
+          "title": "Boston Celtics (11-3) at Denver Nuggets (7-5) Game #15 11/18/26",
+          "publisher": "CelticsBlog",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvUaKyLl0IoWV35pv8su8E452LQiIrUTG2Bz-UCT2SurSVGtjtm1wu9P2Dzmo"
+        }
+      ]
+    },
+    {
+      "query": "nayib bukele",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T04:40:00Z",
+      "related_news_urls": [
+        "https://www.dw.com/es/miles-de-personas-marchan-en-hait%C3%AD-en-apoyo-a-militares-salvadore%C3%B1os-y-agradecen-a-nayib-bukele/a-79975723",
+        "https://www.latimes.com/espanol/internacional/articulo/2026-11-18/presidente-de-el-salvador-confirma-y-celebra-ataque-casa-de-lider-de-pandilla-haitiana",
+        "https://cnnespanol.cnn.com/2026/11/18/mundo/video/haitianos-festejan-llegada-soldados-extranjeros-trax"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6isBY9rHAC7_s7fULarkEOxUhTGXyThXHvDY-ocONtDkHDHfkeFUXQio3Tnk",
+      "image_credit": "DW.com",
+      "news": [
+        {
+          "url": "https://www.dw.com/es/miles-de-personas-marchan-en-hait%C3%AD-en-apoyo-a-militares-salvadore%C3%B1os-y-agradecen-a-nayib-bukele/a-79975723",
+          "title": "Miles de personas marchan en Haití para agradecer a Nayib Bukele por envío de tropas",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6isBY9rHAC7_s7fULarkEOxUhTGXyThXHvDY-ocONtDkHDHfkeFUXQio3Tnk"
+        },
+        {
+          "url": "https://www.latimes.com/espanol/internacional/articulo/2026-11-18/presidente-de-el-salvador-confirma-y-celebra-ataque-casa-de-lider-de-pandilla-haitiana",
+          "title": "Presidente de El Salvador confirma y celebra ataque a casa de líder de pandilla haitiana",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTTzi5O6fz97Kq3qgJd5tCloYsBielzfpFBR7RSzps2eW7_KTfDNfLSYM3dIE"
+        },
+        {
+          "url": "https://cnnespanol.cnn.com/2026/11/18/mundo/video/haitianos-festejan-llegada-soldados-extranjeros-trax",
+          "title": "Así festejan los haitianos la intervención de soldados salvadoreños enviados para combatir a las pandillas",
+          "publisher": "CNN en Español",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6en3D9_2DkQOnIv4Y868GmR0XgwHc6WluVV5D6IOPrUuocRKgpJAHxJQB9XQ"
+        }
+      ]
+    },
+    {
+      "query": "ralph fiennes",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T04:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/lifestyle/amazons-bezos-says-he-helped-pick-pattinson-bond-2026-11-18/",
+        "https://www.hollywoodreporter.com/movies/movie-news/robert-pattinson-landed-007-what-next-1236757722/",
+        "https://www.nytimes.com/2026/11/18/style/robert-pattinson-james-bond-style-watches-suits.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdx6DVYftq8AMqCzkNYZfTr3uy49a2ojZAjqwhxbtnm5HSrHiRw7nDwYMOwFY",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/lifestyle/amazons-bezos-says-he-helped-pick-pattinson-bond-2026-11-18/",
+          "title": "Amazon's Bezos says he helped pick Pattinson as Bond",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdx6DVYftq8AMqCzkNYZfTr3uy49a2ojZAjqwhxbtnm5HSrHiRw7nDwYMOwFY"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/robert-pattinson-landed-007-what-next-1236757722/",
+          "title": "Bat, Bond and Beyond: How Robert Pattinson Landed 007 (and What Comes Next)",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4z_d99X-4kL-SBKuVHH_egW9XWSL6chw0vORK1HuTaLp2S2zV8AKD2iRevPA"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/18/style/robert-pattinson-james-bond-style-watches-suits.html",
+          "title": "How Robert Pattinson Could Shape a New James Bond Style",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRItDoOpPXHp6tShQOgwT_H0jB-8p_GL4Qh0ko8UHlS-N2Z39Q0mhiNVWIVWTU"
+        }
+      ]
+    },
+    {
+      "query": "fred wellman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T04:40:00Z",
+      "related_news_urls": [
+        "https://thehill.com/homenews/house/6223902-wellman-accuses-hegseth-crimes/",
+        "https://www.yahoo.com/news/politics/articles/pete-hegseth-accused-war-crimes-073349884.html",
+        "https://www.huffpost.com/topic/fred-wellman"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt6BnvFl-ZwgOlg03U-CEn1CudTSROAC5fWCbsavZxlPtqyS7t2WwzkLCQGZ0",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/homenews/house/6223902-wellman-accuses-hegseth-crimes/",
+          "title": "Incoming House Democrat accuses Hegseth of ‘war crimes’",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt6BnvFl-ZwgOlg03U-CEn1CudTSROAC5fWCbsavZxlPtqyS7t2WwzkLCQGZ0"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/pete-hegseth-accused-war-crimes-073349884.html",
+          "title": "Pete Hegseth Accused of War Crimes and ‘Murder’ by Incoming Democrat Who Vows Probe: Prediction Markets Are Betting on His Fate",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDUKieGhCZR6t-wkFWWlfPuwhEZkhx9X_9_HiOEyYNayD0Fh7uGlzu6l3bhbM"
+        },
+        {
+          "url": "https://www.huffpost.com/topic/fred-wellman",
+          "title": "Fred Wellman",
+          "publisher": "HuffPost",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhuE1Cu5R2lwISLCIhALKr9zRWFHtzes56t1iZCjt0YcCHfNTyvgRt8kc_o6c"
+        }
+      ]
+    },
+    {
+      "query": "keyonte george",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T04:30:00Z",
+      "related_news_urls": [
+        "https://www.slcdunk.com/utah-jazz-game-coverage/70789/new-details-on-keyonte-georges-injury",
+        "https://www.si.com/nba/jazz/onsi/utah-jazz-s-keyonte-george-dealing-with-hidden-injury-concerns",
+        "https://sports.yahoo.com/articles/details-keyonte-george-injury-054119073.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBz68U-HSp0qYwuHfpo5DnzDBhpcufXIBpp2xyR9UXghLszTdVeR5LqROfsTE",
+      "image_credit": "SLC Dunk",
+      "news": [
+        {
+          "url": "https://www.slcdunk.com/utah-jazz-game-coverage/70789/new-details-on-keyonte-georges-injury",
+          "title": "New details on Keyonte George’s injury",
+          "publisher": "SLC Dunk",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBz68U-HSp0qYwuHfpo5DnzDBhpcufXIBpp2xyR9UXghLszTdVeR5LqROfsTE"
+        },
+        {
+          "url": "https://www.si.com/nba/jazz/onsi/utah-jazz-s-keyonte-george-dealing-with-hidden-injury-concerns",
+          "title": "Utah Jazz's Keyonte George Dealing With Hidden Injury Concerns",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZajCdR8U99covDD6GChHjOPnRwlgthsiWlj0hjfQ8NMhoanxV4upUshqP92Q"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/details-keyonte-george-injury-054119073.html",
+          "title": "New details on Keyonte George’s injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvjjzYjAKanJo66A3mI-_WrfDD2N7Qruxpe8iFxYgTGe8eQAH4tR1LR0iFBA"
+        }
+      ]
+    },
+    {
+      "query": "kylie jenner",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T04:30:00Z",
+      "related_news_urls": [
+        "https://www.realtor.com/news/celebrity-real-estate/kylie-jenner-relists-los-angeles-concrete-mansion/",
+        "https://www.tmz.com/2026/11/17/kylie-jenner-holmby-hills-home-on-sale-again/",
+        "https://www.billionaires.africa/2026/11/18/kylie-cosmetics-founder-kylie-jenner-puts-38-5-million-la-mansion-back-on-market/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiH9FASGB-qEu_Vk-M-84f4W6ngcJwypuPZIC6_1eX5Z1A5dScpRBgHi_Ykpk",
+      "image_credit": "Realtor.com",
+      "news": [
+        {
+          "url": "https://www.realtor.com/news/celebrity-real-estate/kylie-jenner-relists-los-angeles-concrete-mansion/",
+          "title": "EXCLUSIVE: Kylie Jenner’s $38 Million Concrete Mansion Is Back on the Market With a Glamorous New Look",
+          "publisher": "Realtor.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiH9FASGB-qEu_Vk-M-84f4W6ngcJwypuPZIC6_1eX5Z1A5dScpRBgHi_Ykpk"
+        },
+        {
+          "url": "https://www.tmz.com/2026/11/17/kylie-jenner-holmby-hills-home-on-sale-again/",
+          "title": "Kylie Jenner Lists L.A. Home Again for $38.5 Million",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf-g2bwZqRmiS10eTXToFfm9Owi2M0d3qz3_j6595-M1-TxympGhdcpKgupuI"
+        },
+        {
+          "url": "https://www.billionaires.africa/2026/11/18/kylie-cosmetics-founder-kylie-jenner-puts-38-5-million-la-mansion-back-on-market/",
+          "title": "Kylie Jenner relists $38.5m Holmby Hills mansion",
+          "publisher": "Billionaires.Africa",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8rZgCrTnMhV0gO7sg0WgINu_CyazP6KXRXFgLlsKTSzsevkujNUnPIaV9vsc"
         }
       ]
     }
