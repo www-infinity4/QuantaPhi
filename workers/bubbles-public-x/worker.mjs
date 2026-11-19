@@ -1,7 +1,8 @@
 /* Public X browser reader. Separate Cloudflare browser/D1, no X API credentials. */
 const OWNER='YahooPingcwlz';
 const SECONDARY='IntegraAI';
-const SOURCES=Object.freeze({YahooPingcwlz:'https://x.com/YahooPingcwlz',IntegraAI:'https://x.com/IntegraAI'});
+const STARCRAFT='StarCraftCo';
+const SOURCES=Object.freeze({YahooPingcwlz:'https://x.com/YahooPingcwlz',IntegraAI:'https://x.com/IntegraAI',StarCraftCo:'https://x.com/StarCraftCo'});
 const PROFILE=SOURCES[OWNER];
 function sourceProfile(account){if(!Object.hasOwn(SOURCES,account))throw Error('unapproved_public_x_source');return SOURCES[account];}
 const origin='https://quantaphi.org';
@@ -121,7 +122,7 @@ export async function scanPublicX(env,account=OWNER){
   }
  }
  await recordScan(env,{status:'public_posts_observed',visible:observed.length,added:newCount,candidates:account===OWNER?candidates:0,checkedAt:scanStartedAt,account});
- return {ok:true,status:'public_posts_observed',sourceAccount:account,authority:account===OWNER?'owner_source':'reference_only',visibleCount:observed.length,newPosts:newCount,expandedPosts:expandedCount,newPossibleRequests:candidates,lastSuccess:stamp,publicRead:true,completeHistory:false};
+ return {ok:true,status:'public_posts_observed',sourceAccount:account,authority:account===OWNER?'owner_source':'reference_only',visibleCount:observed.length,newPosts:newCount,expandedPosts:expandedCount,newPossibleRequests:account===OWNER?candidates:0,lastSuccess:stamp,publicRead:true,completeHistory:false};
 }
 export default {
  async scheduled(event,env,ctx){
@@ -129,6 +130,8 @@ export default {
   const tasks=[scanPublicX(env,OWNER)];
   const hour=new Date(event?.scheduledTime||Date.now()).getUTCHours();
   if(hour%6===0)tasks.push(scanPublicX(env,SECONDARY));
+  // Additional public context only; two bounded daily reads minimize browser usage.
+  if(hour%12===2)tasks.push(scanPublicX(env,STARCRAFT));
   ctx.waitUntil(Promise.allSettled(tasks));
  },
  async fetch(request,env){
@@ -137,15 +140,22 @@ export default {
   if(url.pathname.endsWith('/health')){
    const row=await env.DB.prepare("SELECT last_checked,last_success,status,visible_count,new_count,candidate_count,error FROM owner_x_scans WHERE k='main'").first();
    const secondary=await env.DB.prepare("SELECT last_checked,last_success,status,visible_count,new_count,candidate_count,error FROM owner_x_scans WHERE k=?").bind(SECONDARY).first();
-   return json({ok:true,reader:'Cloudflare Browser Run public profile',profile:PROFILE,cron:'17 * * * * UTC',apiTokenRequired:false,readStatus:row||{status:'not_run'},sources:[{account:OWNER,authority:'owner_source',readStatus:row||{status:'not_run'}},{account:SECONDARY,authority:'reference_only',readStatus:secondary||{status:'not_run'}}],executionEnabled:false});
+   const starcraft=await env.DB.prepare("SELECT last_checked,last_success,status,visible_count,new_count,candidate_count,error FROM owner_x_scans WHERE k=?").bind(STARCRAFT).first();
+   return json({ok:true,reader:'Cloudflare Browser Run public profile',profile:PROFILE,cron:'17 * * * * UTC',apiTokenRequired:false,readStatus:row||{status:'not_run'},sources:[{account:OWNER,authority:'owner_source',readStatus:row||{status:'not_run'}},{account:SECONDARY,authority:'reference_only',readStatus:secondary||{status:'not_run'}},{account:STARCRAFT,authority:'reference_only',readStatus:starcraft||{status:'not_run'}}],executionEnabled:false});
   }
   if(url.pathname.endsWith('/inbox')){
    const rows=await env.DB.prepare("SELECT id,url,body,kind,observed_at FROM owner_x_posts WHERE kind IN ('tagged','possible') AND url LIKE 'https://x.com/YahooPingcwlz/status/%' ORDER BY CAST(id AS INTEGER) DESC LIMIT 30").all();
    return json({ok:true,author:OWNER,items:rows.results||[],state:'candidate_review_only',note:'These posts are not verified owner work tickets.'});
   }
   if(url.pathname.endsWith('/context')){
-   const rows=await env.DB.prepare("SELECT id,url,body,kind,observed_at FROM owner_x_posts WHERE url LIKE 'https://x.com/IntegraAI/status/%' ORDER BY CAST(id AS INTEGER) DESC LIMIT 30").all();
-   return json({ok:true,author:SECONDARY,authority:'reference_only',items:rows.results||[],state:'context_review_only',note:'Integra posts are not owner instructions or permission to publish.'});
+   const account=url.searchParams.get('account')||SECONDARY;
+   if(account!==SECONDARY&&account!==STARCRAFT)return json({ok:false,error:'unapproved_public_x_source'},400);
+   // Keep the owner inbox strictly separate from these public reference contexts.
+   const query=account===SECONDARY?
+    "SELECT id,url,body,kind,observed_at FROM owner_x_posts WHERE url LIKE 'https://x.com/IntegraAI/status/%' ORDER BY CAST(id AS INTEGER) DESC LIMIT 30":
+    "SELECT id,url,body,kind,observed_at FROM owner_x_posts WHERE url LIKE 'https://x.com/StarCraftCo/status/%' ORDER BY CAST(id AS INTEGER) DESC LIMIT 30";
+   const rows=await env.DB.prepare(query).all();
+   return json({ok:true,author:account,authority:'reference_only',items:rows.results||[],state:'context_review_only',note:'Public context posts do not authorize work, replies or publishing.'});
   }
   return json({ok:false,error:'not_found'},404);
  }

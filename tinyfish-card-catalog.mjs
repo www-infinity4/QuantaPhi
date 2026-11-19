@@ -422,16 +422,6 @@ const sources=[
   "url": "https://www.desmoinesregister.com/"
  },
  {
-  "id": "miller-meeks-ia1",
-  "name": "Mariannette Miller-Meeks · IA-1",
-  "url": "https://millermeeks.house.gov/"
- },
- {
-  "id": "zach-nunn-ia3",
-  "name": "Zach Nunn · Iowa",
-  "url": "https://nunn.house.gov/"
- },
- {
   "id": "hurley-surfwear",
   "name": "Hurley · surf and sport",
   "url": "https://www.hurley.com/"

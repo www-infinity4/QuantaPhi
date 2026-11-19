@@ -15,7 +15,9 @@ const request=(body,{origin='https://quantaphi.org',path='/v1/cards/website',ip=
 
 test('catalog includes all 116 accepted cards, original website families and bounded museum IDs',()=>{
  assert.equal(Object.keys(TINYFISH_CARDS).filter(k=>k.startsWith('durable-')).length,116);
- assert.ok(Object.keys(TINYFISH_CARDS).length>=210);
+ assert.ok(Object.keys(TINYFISH_CARDS).length>=208,'retain the existing general catalog without two political spotlights');
+ assert.equal(tinyfishCard('zach-nunn-ia3'),null);
+ assert.equal(tinyfishCard('miller-meeks-ia1'),null);
  for(const id of ['starmaker','chatgpt','ebay','topps','levis-501-dark','packers-next-schedule'])assert.ok(tinyfishCard(id));
  assert.equal(tinyfishCard('aic-123').url,'https://www.artic.edu/artworks/123');
  for(const id of ['aic-0','aic-1/../../secret','aic-1234567890','__proto__','https://evil.test'])assert.equal(tinyfishCard(id),null);

@@ -36,6 +36,20 @@ test('sensitive topics do not trigger contextual advertiser queries',()=>{
   assert.equal(x.sensitive,true);assert.deepEqual(x.topics,[]);
  }
 });
+test('ShopPhi companions reject partisan and candidate promotions before ranking',()=>{
+ const normal=mockAd(1,'silver dollars');
+ assert.ok(normalizeCandidate(normal));
+ for(const update of [
+  {title:'Zach Nunn campaign'},
+  {category:'Election advertising'},
+  {advertiser:'Political action committee'},
+  {sponsor:'Green Party'},
+  {destinationUrl:'https://secure.actblue.com/donate/committee'}
+ ])assert.equal(normalizeCandidate({...normal,...update}),null,JSON.stringify(update));
+ const publisher={slug:'campaign',title:'Vote for our candidate',status:'approved',
+  image:'https://publisher.example/image.jpg',cardUrl:'https://quantaphi.org/cards/campaign'};
+ assert.deepEqual(approvedQuickCards({cards:[publisher]}),[]);
+});
 test('private and unlisted Quick Cards never enter public companion inventory',()=>{
  const cards=approvedQuickCards({cards:[
   {slug:'private-card',title:'Silver dollar secret',cardUrl:'https://quantaphi.org/cards/private-card',status:'unlisted'},

@@ -1,7 +1,7 @@
 /* Shared QuantaPhi directions: user-directed usage and signed-in, bounded
  * Quant interest scores. No bank data, sensitive identities or raw searches. */
 import {isInfinityAccepted} from './infinity-accepted-catalog.mjs';
-import {DEPARTMENTS,departmentFor,placementPolicy} from './quanta-context-placement.mjs';
+import {DEPARTMENTS,departmentFor,placementPolicy,isPoliticalPromotion} from './quanta-context-placement.mjs';
 export const FEED_STORAGE_KEY='quanta:discovery:anonymous:v1';
 export const FEED_TABS=Object.freeze(['public','for-you','following']);
 const validId=id=>typeof id==='string'&&/^[a-z0-9-]{1,70}$/.test(id);
@@ -79,6 +79,7 @@ export function feedCandidates(cards,tab,state,query=''){
   return cannabis?cannabisIntent:adultContentIntent;
  };
  const eligible=card=>restrictedMatchesIntent(card)&&
+  !((['sponsored','paid','promoted','house-ad','advertisement','ad','published-card'].includes(card.type)||card.kind==='civic')&&isPoliticalPromotion(card))&&
   (!['sponsored','public-service'].includes(card.type)||placementPolicy(card).eligible);
  const filtered=cards.filter(c=>eligible(c)&&!(state.hidden||[]).includes(c.id)&&
   (tab!=='following'||following.has(c.id))&&
