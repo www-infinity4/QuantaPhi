@@ -3,16 +3,226 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T21:31:22.739845Z",
+  "checked_at": "2026-11-19T22:01:24.677619Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "pete rose",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T21:40:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25535443-pete-rose-posthumously-pardoned-trump-after-baseballs-career-hits-leader-was-reinstated-mlb",
+        "https://www.scrippsnews.com/sports/trump-announces-posthumous-pardon-for-baseball-great-pete-rose",
+        "https://nypost.com/2026/11/19/us-news/trump-grants-posthumous-pardon-to-baseball-hit-king-pete-rose/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuJxPLrCvOr_26bmFnxwtTXtGylk9ojqHn0qVdaGE3Bk3X29w2ywwcM_hoGoM",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25535443-pete-rose-posthumously-pardoned-trump-after-baseballs-career-hits-leader-was-reinstated-mlb",
+          "title": "Pete Rose Posthumously Pardoned by Trump After Baseball's Career Hits Leader Was Reinstated by MLB",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuJxPLrCvOr_26bmFnxwtTXtGylk9ojqHn0qVdaGE3Bk3X29w2ywwcM_hoGoM"
+        },
+        {
+          "url": "https://www.scrippsnews.com/sports/trump-announces-posthumous-pardon-for-baseball-great-pete-rose",
+          "title": "Trump announces posthumous pardon for baseball great Pete Rose",
+          "publisher": "Scripps News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhTpj6QQyEOMxHEBhpVZ_ekp_zFnXzTSchoT7XyrZm5Cnj2_Qb8adWe7XgZs0"
+        },
+        {
+          "url": "https://nypost.com/2026/11/19/us-news/trump-grants-posthumous-pardon-to-baseball-hit-king-pete-rose/",
+          "title": "Trump grants posthumous pardon to MLB hit king Pete Rose",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVXdKY6-hjMmPdiKQhCOLr1qa3OPEb6jfpZICqx4R0WE2DT9iDi1PY3TPP_0Q"
+        }
+      ]
+    },
+    {
+      "query": "ps5 gta6",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-19T21:40:00Z",
+      "related_news_urls": [
+        "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
+        "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
+        "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw",
+      "image_credit": "Digital Foundry",
+      "news": [
+        {
+          "url": "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
+          "title": "GTA 6: PS5 vs PS5 Pro, Xbox Series X and Series S: Which Console Plays Best?",
+          "publisher": "Digital Foundry",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw"
+        },
+        {
+          "url": "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
+          "title": "Grand Theft Auto VI Uses AMD FSR 4 On Xbox Series S, Upscaling 720p To 1080p While Still Running Ray Traced Global Illumination",
+          "publisher": "Wccftech",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8AMqKOkopU6mi5ahjy2oGDadqeUTOb08fkwa1HeGMkCIw09-d26qrtECsl7s"
+        },
+        {
+          "url": "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979",
+          "title": "GTA 6 Won’t Get A 60 FPS Mode, Even On PS5 Pro, Because It’s ‘Not Powerful Enough’",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROmKm3_DuoRdLIj-n08VTdrtbbdHT7Zddidf_soIeK6ZipViaE1KXiet62zwU"
+        }
+      ]
+    },
+    {
+      "query": "kenneth walker injury",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T21:40:00Z",
+      "related_news_urls": [
+        "https://arizonasports.com/arizona-cardinals-injury-report/cardinals-chiefs-injury-report",
+        "https://sports.yahoo.com/articles/chiefs-rb-kenneth-walker-remains-212513784.html",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-injuries/216872/chiefs-cardinals-week-11-wednesday-injury-report-3-chiefs-starters-miss-practice"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQzd2_Da-CFZRfBygMKB5Wj2l6o5TtsytLxr8cPORqYNYCSN29z_V_7-tI_7s",
+      "image_credit": "Arizona Sports",
+      "news": [
+        {
+          "url": "https://arizonasports.com/arizona-cardinals-injury-report/cardinals-chiefs-injury-report",
+          "title": "Cardinals-Chiefs injury report: Offensive line help on the way?",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQzd2_Da-CFZRfBygMKB5Wj2l6o5TtsytLxr8cPORqYNYCSN29z_V_7-tI_7s"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/chiefs-rb-kenneth-walker-remains-212513784.html",
+          "title": "Chiefs RB Kenneth Walker remains out of practice Thursday",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbKwmKHEwbH9L7NWlRN5uVSxE73IwNM323BVticcL0O45S81JvO9WPP2NM0EI"
+        },
+        {
+          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-injuries/216872/chiefs-cardinals-week-11-wednesday-injury-report-3-chiefs-starters-miss-practice",
+          "title": "Chiefs-Cardinals Week 11 Wednesday injury report: 3 Chiefs starters miss practice",
+          "publisher": "Arrowhead Pride",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9k-uhIZwcAQJ_9RdWWzSeeiabyFZaTkhtkJ8SPehoFEtwyLwFBCm1AQsOh7g"
+        }
+      ]
+    },
+    {
+      "query": "auburn vs notre dame prediction",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T21:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/auburn-vs-notre-dame-live-210049658.html",
+        "https://247sports.com/college/auburn/article/auburn-basketball-score-notre-dame-292985278/",
+        "https://irishsportsdaily.com/s/28610/game-thread-notre-dame-vs-auburn"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEMGkxRhSpj0pzz1iNXJkC60KMh43s7Snfrje_YLX8O8GuBuVjSmMUAX3G_3Y",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/auburn-vs-notre-dame-live-210049658.html",
+          "title": "Auburn vs. Notre Dame live updates: Score, highlights, analysis",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEMGkxRhSpj0pzz1iNXJkC60KMh43s7Snfrje_YLX8O8GuBuVjSmMUAX3G_3Y"
+        },
+        {
+          "url": "https://247sports.com/college/auburn/article/auburn-basketball-score-notre-dame-292985278/",
+          "title": "Game thread: Auburn vs. Notre Dame",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMjRdWvq2_LfLS0PhH-xKNY8DlMljFxlTBhR9vKg49_xXt-7wUykrNMwBWRjc"
+        },
+        {
+          "url": "https://irishsportsdaily.com/s/28610/game-thread-notre-dame-vs-auburn",
+          "title": "Game Thread | Notre Dame vs. Auburn",
+          "publisher": "Irish Sports Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rY-npIdS1kdBoxHtTwx6SrzOfTkQ8uen7vfFo1_o-qh98g8DH0KQGpMC16M"
+        }
+      ]
+    },
+    {
+      "query": "jim cramer",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T21:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/video/2026/11/19/firstmarkas-rick-heitzmann-on-anthropic-this-is-the-beginning-of-the-next-wave-of-ipos.html",
+        "https://www.marketwatch.com/story/gold-is-in-a-bear-market-and-hackproof-in-an-increasingly-digital-world-is-this-a-good-time-to-buy-fabfd528",
+        "https://www.cnbc.com/investingclub/2026/11/19/jim-cramer-says-to-buy-stock-in-this-sleeping-tech-giant-aggressively.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnKAIbB3fxyeO50l0HdPf4AQspwm6CxJiL8ultcnRUXZn53MNOACpf7G_36ro",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/video/2026/11/19/firstmarkas-rick-heitzmann-on-anthropic-this-is-the-beginning-of-the-next-wave-of-ipos.html",
+          "title": "FirstMark’s Rick Heitzmann on Anthropic: This is the beginning of the next wave of IPOs",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnKAIbB3fxyeO50l0HdPf4AQspwm6CxJiL8ultcnRUXZn53MNOACpf7G_36ro"
+        },
+        {
+          "url": "https://www.marketwatch.com/story/gold-is-in-a-bear-market-and-hackproof-in-an-increasingly-digital-world-is-this-a-good-time-to-buy-fabfd528",
+          "title": "Gold is in a bear market — and hackproof in an increasingly digital world. Is now a good time to buy?",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4AWc3LMt_mb6-AMuYNn28lmc3bK_UM5wxgHCJhH3cPdjkW862MwUYB6CaAWI"
+        },
+        {
+          "url": "https://www.cnbc.com/investingclub/2026/11/19/jim-cramer-says-to-buy-stock-in-this-sleeping-tech-giant-aggressively.html",
+          "title": "Jim Cramer says to buy stock in this sleeping tech giant 'aggressively, aggressively'",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqqtvAuDPuM_dg0yo6nKpWs9rP04O5-KuODfwQEWsV_3oamM6IQq28naTruxo"
+        }
+      ]
+    },
+    {
+      "query": "florida basketball",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-19T21:20:00Z",
+      "related_news_urls": [
+        "https://floridagators.com/news/2026/11/18/mens-basketball-cougars-take-it-to-the-gators-inside-nov-18-2026",
+        "https://www.espn.com/video/clip/_/id/50533023/alex-condon-throws-dunk-florida",
+        "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/houston-knocks-off-top-ranked-florida-to-reach-players-era-8-championship-014024884.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5lAK3wWUECbp95vhi-WrGXQKTLmhZVZ5koI6z-drXthLEVtkLK-XTu41ubbo",
+      "image_credit": "Florida Gators",
+      "news": [
+        {
+          "url": "https://floridagators.com/news/2026/11/18/mens-basketball-cougars-take-it-to-the-gators-inside-nov-18-2026",
+          "title": "Cougars Take It to Gators Inside",
+          "publisher": "Florida Gators",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5lAK3wWUECbp95vhi-WrGXQKTLmhZVZ5koI6z-drXthLEVtkLK-XTu41ubbo"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50533023/alex-condon-throws-dunk-florida",
+          "title": "Alex Condon throws down a dunk for Florida",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRk-I8YSzZa3kjU8KN05w0jee_g7vkcK0iNc2mASffS5dYFIFm0Cb1yfi564QY"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/breaking-news/article/houston-knocks-off-top-ranked-florida-to-reach-players-era-8-championship-014024884.html",
+          "title": "Houston knocks off top-ranked Florida to reach Players Era 8 championship",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXtlqPv7dfQnaczn5yD4Nj6U1S0wngfh7JCz_-crKUFOYfGqGNH4yaGXO-A_Q"
+        }
+      ]
+    },
     {
       "query": "troy aikman",
       "approx_searches": "2000+",
       "published_at": "2026-11-19T21:10:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
-        "https://sports.yahoo.com/articles/disgruntled-nothing-lose-good-chance-210355724.html",
+        "https://www.nbcsports.com/watch/nfl/profootballtalk/pft-pm/troy-aikman-adds-to-joe-buck-feud-with-new-radio-show-comments",
         "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI",
@@ -20,17 +230,17 @@
       "news": [
         {
           "url": "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
-          "title": "Troy Aikman takes dig at Joe Buck, extending tensions: ‘Joe’s always wanted a 1-man booth’ - The Athletic",
+          "title": "Troy Aikman takes dig at Joe Buck, extending tensions: ‘Joe’s always wanted a 1-man booth’",
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/disgruntled-nothing-lose-good-chance-210355724.html",
-          "title": "‘Disgruntled With Nothing To Lose,’ ‘There’s a Good Chance He’s Done Now’ — NFL Fans Question Troy Aikman’s ESPN Future After ‘One-Man Booth’ Remark",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nbcsports.com/watch/nfl/profootballtalk/pft-pm/troy-aikman-adds-to-joe-buck-feud-with-new-radio-show-comments",
+          "title": "Aikman adds to Buck feud with radio show comments",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrsDew-pG4OohyBhUntJTpFzrD63r9yRoH4zGpknEUpfqlhxJ1Sy4C9u25pb0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUVwdOY4PDp8yT1xrMkGY4wTz1-MlA8G8UTKDwkQ_mIsvBU2UQqVbQw0upyn8"
         },
         {
           "url": "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242",
@@ -42,72 +252,37 @@
       ]
     },
     {
-      "query": "nascar whelen modified tour",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T21:10:00Z",
-      "related_news_urls": [
-        "https://racedayct.com/2026/11/thunder-road-announces-nascar-whelen-modified-tickets-on-sale-now-online-ticket-purchases-available-in-2027/",
-        "https://sports.yahoo.com/articles/nascar-community-hit-heartbreaking-loss-160605762.html",
-        "https://www.wpri.com/sports/nascar-news/seekonk-grand-prix-owner-local-racing-legend-dies/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_gbhyq4w5lGiM5qFvPys1MBCAZOvSrvaAjjhPROCbOHGJwoH4arXVqh5T_lE",
-      "image_credit": "RaceDayCT.com -",
-      "news": [
-        {
-          "url": "https://racedayct.com/2026/11/thunder-road-announces-nascar-whelen-modified-tickets-on-sale-now-online-ticket-purchases-available-in-2027/",
-          "title": "Thunder Road Announces NASCAR Whelen Modified Tickets On Sale Now, Online Ticket Purchases Available In 2027",
-          "publisher": "RaceDayCT.com -",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_gbhyq4w5lGiM5qFvPys1MBCAZOvSrvaAjjhPROCbOHGJwoH4arXVqh5T_lE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/nascar-community-hit-heartbreaking-loss-160605762.html",
-          "title": "NASCAR Community Hit With Heartbreaking Loss as Championship-Winning Racing Figure Dies",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5CkotCDv37LaUNEq9Q73Mj9ggjbDVd-uJ-oqP2NlCr2MjrXwVgnhB05fuVk"
-        },
-        {
-          "url": "https://www.wpri.com/sports/nascar-news/seekonk-grand-prix-owner-local-racing-legend-dies/",
-          "title": "Seekonk Grand Prix owner, local racing legend dies",
-          "publisher": "WPRI.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3vulU8R5g-bTFHQBXf-b5BDrMNf8TdJOU-_v6KcDIgkgTDraDocVCW-Ffj9c"
-        }
-      ]
-    },
-    {
       "query": "intu stock",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T21:10:00Z",
       "related_news_urls": [
-        "https://www.barchart.com/story/news/8902300/dear-intuit-stock-fans-mark-your-calendars-for-november-19",
-        "https://kalkine.com.au/news/technology/what-could-shape-the-outcome-for-intuit-nasdaqintu-ross-stores-and-gap-when-they-report-on-november-19",
-        "https://www.tradingkey.com/news/earnings/262313950-"
+        "https://www.barrons.com/articles/intuit-earnings-stock-price-50cb5c01",
+        "https://www.investors.com/news/technology/intuit-stock-fiscal-q1-2027-earnings-intu-stock/",
+        "https://www.barchart.com/story/news/8902300/dear-intuit-stock-fans-mark-your-calendars-for-november-19"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmAlu3OBQp0Z8noxHnhMfjaHXeKg323pwu7xquObjbXeKb5dl0Z6bVxUmKnv4",
-      "image_credit": "Barchart.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3O8tZjSqgrmm3RMHZ54Y_YmdCToK2bI4HJm3qdvOZWVA3a-rUoaCfQUh_QNk",
+      "image_credit": "Barron's",
       "news": [
+        {
+          "url": "https://www.barrons.com/articles/intuit-earnings-stock-price-50cb5c01",
+          "title": "Intuit Earnings Beat Wasn’t Enough to Boost the Stock",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3O8tZjSqgrmm3RMHZ54Y_YmdCToK2bI4HJm3qdvOZWVA3a-rUoaCfQUh_QNk"
+        },
+        {
+          "url": "https://www.investors.com/news/technology/intuit-stock-fiscal-q1-2027-earnings-intu-stock/",
+          "title": "Intuit Beats Fiscal Q1 Goals, Gives Soft Outlook, Sells Mailchimp",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIUpf-sZz7bX_oz0PwTI87cjb-gOt1OAKdGcPL5oLEk76mlXCl3lSplrxFm_Q"
+        },
         {
           "url": "https://www.barchart.com/story/news/8902300/dear-intuit-stock-fans-mark-your-calendars-for-november-19",
           "title": "Dear Intuit Stock Fans, Mark Your Calendars for November 19",
           "publisher": "Barchart.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmAlu3OBQp0Z8noxHnhMfjaHXeKg323pwu7xquObjbXeKb5dl0Z6bVxUmKnv4"
-        },
-        {
-          "url": "https://kalkine.com.au/news/technology/what-could-shape-the-outcome-for-intuit-nasdaqintu-ross-stores-and-gap-when-they-report-on-november-19",
-          "title": "What Could Shape the Outcome for Intuit (NASDAQ:INTU), Ross Stores and Gap When They Report on November 19?",
-          "publisher": "Kalkine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxPhNM0I1KFVC0WQRMnAqwInosB-zxsaRyjqtQaSuQCspHP5aK4uvfr8ELBc"
-        },
-        {
-          "url": "https://www.tradingkey.com/news/earnings/262313950-",
-          "title": "Intuit Q1 FY2027 Earnings: Online Growth and Cost Discipline Lift Profit",
-          "publisher": "TradingKey",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyg96KSjfT4k_-JG_YJbJfUG42bByR0_Ct1ol4uPdmRDcrvpPqpXENqaUzkqw"
         }
       ]
     },
@@ -151,208 +326,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-19T21:00:00Z",
       "related_news_urls": [
-        "https://kdvr.com/weather/weather-forecast/denver-weather-dry-warm-tuesday-ahead-of-shower-chances/",
-        "https://www.yahoo.com/news/weather-news/articles/denver-weather-partly-sunny-seasonal-143354569.html",
-        "https://www.kktv.com/2026/11/19/clear-cool-overnight-ahead-another-weekend-system/"
+        "https://www.9news.com/article/weather/weather-colorado/snow-colorado-mountains-forecast/73-6d5427a0-5fab-444e-a038-7020f83a5266",
+        "https://www.denver7.com/weather/denver-weather/a-seasonal-afternoon-in-store-across-the-denver-metro-area",
+        "https://opensnow.com/dailysnow/colorado/post/44984"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHs9z7YIKCeYyGRiOrPmVpwvr-ap2Ctj87QYCtlagSUMvvvms_RU8o8sDFas",
-      "image_credit": "KDVR",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuuN5XTekFHCMCVl2i2sTigrFbXiWAnGJinA4PucfBrZfdia93s_xP7Tmp3TI",
+      "image_credit": "9NEWS",
       "news": [
         {
-          "url": "https://kdvr.com/weather/weather-forecast/denver-weather-dry-warm-tuesday-ahead-of-shower-chances/",
-          "title": "Denver weather: Dry, warm Tuesday ahead of shower chances",
-          "publisher": "KDVR",
+          "url": "https://www.9news.com/article/weather/weather-colorado/snow-colorado-mountains-forecast/73-6d5427a0-5fab-444e-a038-7020f83a5266",
+          "title": "Snow to pick up in Colorado mountains, colder fall temps this weekend",
+          "publisher": "9NEWS",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHs9z7YIKCeYyGRiOrPmVpwvr-ap2Ctj87QYCtlagSUMvvvms_RU8o8sDFas"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuuN5XTekFHCMCVl2i2sTigrFbXiWAnGJinA4PucfBrZfdia93s_xP7Tmp3TI"
         },
         {
-          "url": "https://www.yahoo.com/news/weather-news/articles/denver-weather-partly-sunny-seasonal-143354569.html",
-          "title": "Denver weather: Partly sunny and seasonal",
-          "publisher": "Yahoo",
+          "url": "https://www.denver7.com/weather/denver-weather/a-seasonal-afternoon-in-store-across-the-denver-metro-area",
+          "title": "A seasonal afternoon in store across the Denver metro area",
+          "publisher": "Denver7",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ51E-B4mzysCs9fncmqgvQinAZHTXGgIDsXNGpaj1GV6uKkGTKCdsIZUBVo9s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTriAC0qBC96_J9RSR64Kt87okguf3wFN_1rD8kz4nWQ8thbp3U5iCK3AOCFAk"
         },
         {
-          "url": "https://www.kktv.com/2026/11/19/clear-cool-overnight-ahead-another-weekend-system/",
-          "title": "A clear and cool overnight ahead of another weekend system",
-          "publisher": "KKTV",
+          "url": "https://opensnow.com/dailysnow/colorado/post/44984",
+          "title": "It snowed (a least a little) and more snow is on the way Fri & Sat",
+          "publisher": "OpenSnow",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaqp0L4C2M8gL3s9Kdcrzm7x88oNSCOyISKfoSmzBhG6FPH6BdEfa3FKeZXnc"
-        }
-      ]
-    },
-    {
-      "query": "justin reid",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T20:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/report-saints-143-game-veteran-202329360.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/saints-plan-to-release-justin-reid-at-his-request",
-        "https://www.nola.com/sports/saints/the-saints-and-justin-reid-are-reportedly-working-toward-the-veteran-safety-s-release/article_8a1f27cf-3197-4f96-b30b-341daa117e09.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH1i2OZXT3m90w79PZc0COr9_i2Zlqiw9DcPLAi15IJC6k1lN-QSGDm9gc6Pg",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/report-saints-143-game-veteran-202329360.html",
-          "title": "Report: Saints, 143-game veteran to 'discuss his future with the team'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH1i2OZXT3m90w79PZc0COr9_i2Zlqiw9DcPLAi15IJC6k1lN-QSGDm9gc6Pg"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/saints-plan-to-release-justin-reid-at-his-request",
-          "title": "Saints plan to release Justin Reid at his request",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_ccwugrIt0nWbDvMs1N0j65bmAX6z_L0cmJ3nRwI5FPptKlAnPRSQMBx8iA"
-        },
-        {
-          "url": "https://www.nola.com/sports/saints/the-saints-and-justin-reid-are-reportedly-working-toward-the-veteran-safety-s-release/article_8a1f27cf-3197-4f96-b30b-341daa117e09.html",
-          "title": "The Saints and Justin Reid are reportedly working toward the veteran safety’s release",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQyn2bnd8ORB9q-Np5Q0DKp50o1a0mYx6gl9YLFFmlmgYZX6TJM_TQ6QExyxs"
-        }
-      ]
-    },
-    {
-      "query": "temporary protected status",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T20:50:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/supreme-court-trump-administration-immigration-venezuela-34f5293fe85f3befb2a599f513308d60",
-        "https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans",
-        "https://www.nbcnews.com/news/us-news/appeals-court-grants-trump-request-halt-order-restoring-venezuelan-tps-rcna610209"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq3QHQrktgdssRFbIslDpGBdKRATfzvuUfGcitMhtzvNEn01h3W5RfTE996vg",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/supreme-court-trump-administration-immigration-venezuela-34f5293fe85f3befb2a599f513308d60",
-          "title": "Trump administration appeals to Supreme Court over legal protections for Venezuelan migrants",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq3QHQrktgdssRFbIslDpGBdKRATfzvuUfGcitMhtzvNEn01h3W5RfTE996vg"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans",
-          "title": "US appeals court lets Trump end TPS deportation protections for Venezuelans",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC8Mn3monsChrzEXINW0JxTsYRNDDq1lrkPRWDaPoMLYZxoH2dx0dfrFa--FY"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/appeals-court-grants-trump-request-halt-order-restoring-venezuelan-tps-rcna610209",
-          "title": "Appeals court grants Trump request to halt order restoring Venezuelan TPS",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC3PcRuvS1Js_hgMa_zsytWvACAEncUjDvDIyPPCC-XYDlXywFNHWgfQA_bjQ"
-        }
-      ]
-    },
-    {
-      "query": "sentence",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T20:40:00Z",
-      "related_news_urls": [
-        "https://www.sacbee.com/news/local/crime/article318162807.html",
-        "https://www.cbsnews.com/sacramento/news/former-sacramento-councilmember-sean-loloee-sentenced-federal-prison/",
-        "https://www.kcra.com/article/sacramento-sean-loloee-sentence-fraud-viva-supermarkets/74480990"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSx5esc8xLOfIZ_5H3D9OLCBTV6tPm6u6MT_E_3Nqg7dR9_PmOYVKR3okIH4U",
-      "image_credit": "Sacramento Bee",
-      "news": [
-        {
-          "url": "https://www.sacbee.com/news/local/crime/article318162807.html",
-          "title": "See former council member react to sentencing (Video)",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSx5esc8xLOfIZ_5H3D9OLCBTV6tPm6u6MT_E_3Nqg7dR9_PmOYVKR3okIH4U"
-        },
-        {
-          "url": "https://www.cbsnews.com/sacramento/news/former-sacramento-councilmember-sean-loloee-sentenced-federal-prison/",
-          "title": "Former Sacramento city councilmember Sean Loloee sentenced to over 3 years in federal prison",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA4Akn8E_WhIWIHrzSP0pDx9OyvYQoix9i4dm9cJORDxWqyAIEjLobl8CAOSU"
-        },
-        {
-          "url": "https://www.kcra.com/article/sacramento-sean-loloee-sentence-fraud-viva-supermarkets/74480990",
-          "title": "Former Sacramento City Council member Sean Loloee sentenced for fraud schemes",
-          "publisher": "KCRA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRZmPeDGkjIr2dF9WUJDsV3DUZHiX1k8ZXbQIkn7ATUkqTrLda9MDw4CwkMxQ"
-        }
-      ]
-    },
-    {
-      "query": "rams schedule",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T20:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50512215/rams-bye-rest-ramp-week-11",
-        "https://www.therams.com/news/3-keys-to-winning-for-rest-of-rams-season-heading-into-bye-week-2026",
-        "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/19/rams-schedule-games-predictions-win-loss-record/92828586007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZmfOc3iZZSPdFaoS746J703HO8Nevd1qSmvzDtxfraBVdpr1bYdb1p7nm9ws",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50512215/rams-bye-rest-ramp-week-11",
-          "title": "A Rams bye means time for rest and ramping up",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZmfOc3iZZSPdFaoS746J703HO8Nevd1qSmvzDtxfraBVdpr1bYdb1p7nm9ws"
-        },
-        {
-          "url": "https://www.therams.com/news/3-keys-to-winning-for-rest-of-rams-season-heading-into-bye-week-2026",
-          "title": "3 Keys to Winning for rest of Rams' season heading into bye week",
-          "publisher": "Rams",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fpCiHQrc5_cLzA7cZcawZvBF2euOEQeJybzc03o7emFJUtWLZNUkn4B1ZxQ"
-        },
-        {
-          "url": "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/19/rams-schedule-games-predictions-win-loss-record/92828586007/",
-          "title": "Final score predictions for every game left on Rams' schedule",
-          "publisher": "Rams Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4F1m-WMChwFLDrHFHUfzm5rn4ROuEx366f1NGdPdrhUPoFkvhsFOBDoqTSz4"
-        }
-      ]
-    },
-    {
-      "query": "lance broadway",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T20:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/former-white-sox-mets-pitcher-030321513.html",
-        "https://www.hollywoodreporter.com/movies/movie-news/lance-broadway-dead-olympus-has-fallen-mets-white-sox-1236759442/",
-        "https://nypost.com/2026/11/19/sports/lance-broadway-former-top-draft-pick-who-ended-career-with-mets-dead-at-43/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDHfYMrPRh4ArMgWoumzhz7I86LAFA7tL1VElKNqEWtFD58_HN9NOPtbpfVog",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/former-white-sox-mets-pitcher-030321513.html",
-          "title": "Former White Sox, Mets pitcher dies unexpectedly at 43",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDHfYMrPRh4ArMgWoumzhz7I86LAFA7tL1VElKNqEWtFD58_HN9NOPtbpfVog"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/lance-broadway-dead-olympus-has-fallen-mets-white-sox-1236759442/",
-          "title": "Lance Broadway, Pitcher Turned ‘Olympus Has Fallen’ Actor, Dies at 43",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnSQKtV0P9YgJRf7C7zKBNZ2ZBGibXm9ykHgva3FvFzhHOYRvKhVMOuiJ9fJI"
-        },
-        {
-          "url": "https://nypost.com/2026/11/19/sports/lance-broadway-former-top-draft-pick-who-ended-career-with-mets-dead-at-43/",
-          "title": "Lance Broadway, former top draft pick who ended career with Mets, dead at 43",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf9YCMlyHBCc2icar9Nsgg5xzC4b_TRdeRVFHtS6A7bFCWMdejkbsZizgymiA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_3K0_pUmkIEaYl0m7Bnrt-BqsYSYCveMGKJocb0AD2lmQ68eWIZ-ukgx-Lrw"
         }
       ]
     }
