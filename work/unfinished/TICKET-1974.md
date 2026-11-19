@@ -4,14 +4,14 @@ state: live_verified
 dot: "🟡"
 progress_percent: 90
 progress_basis: "Source/review/tests/CI 75%, merge/deployment 10%, canonical live-browser acceptance 5%; physical Android acceptance is the remaining 10%."
-sessions_spent: 2
+sessions_spent: 3
 sessions_remaining_estimate: "unknown; physical Android observation required"
 agent: "GPT Brain coordinator with independent hypestat_review"
 lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-next_action: "Obtain independent review of draft PR #1984, verify exact-head CI before guarded merge; physical Android remains pending."
+next_action: "Obtain independent review of PR #1984; latest source tests passed but merge/deploy/physical Android remain separate gates."
 merged: true
 deployed: true
 live_verified: true
@@ -95,3 +95,15 @@ Verify the canonical page on the owner's physical Android device, including sear
 - Not merged or deployed to the canonical page. Independent review and exact-head CI remain required before moving the draft PR forward; physical Android verification of the original release remains pending. No public identity of the XPlay uploader or operator has been established.
 - Lease ID, fencing token, expiry and signed runner receipt: **none claimed or observed**. Changes used the authenticated GitHub connector.
 - Next executable action: independent source review of draft PR #1984 at its updated exact head. After a passing review and current CI, consider a guarded merge and separate deployment/live/Android acceptance receipts.
+
+## Session 3 — Trace refresh regression (November 19, 2026)
+
+- Continuing owner command `*` on existing issue #1974 and PR #1984.
+- Found a real UI bug: a source trace did not update after matching evidence was added or imported, leaving stale results. The query input also retained stale visual results after editing.
+- RED: browser test-only commit `58366e0be17b26d54368130e4cf6c443cf4e917e`. GitHub HypeStat run https://github.com/www-infinity4/QuantaPhi/actions/runs/44629878701 failed at browser test line 53, `assert page.locator('#trace-results article').count() == 2`, while the 10 Node tests passed. This is a verified regression failure, not infrastructure.
+- GREEN: source patch `3777192207f31142a8bb25baee398d9e2b1ee871` uses `traceActive`; evidence changes refresh an active trace and a changed query clears previously built trace output.
+- Exact source-head CI: https://github.com/www-infinity4/QuantaPhi/actions/runs/44630083213 completed successfully, including **10/10 Node tests and 8/8 Playwright browser groups**. Other observed workflows for that head succeeded.
+- No independent PR review recorded, and the attempted Copilot review request was not confirmed by GitHub review records; do **not** count it as an approval or infer that any paid review credit was consumed.
+- PR #1984 remains unmerged and the canonical https://quantaphi.org/hypestat-infinity.html remains on the earlier deployed version. Physical Android acceptance is still unverified. No uploader or operator has been identified.
+- No runner lease or fencing receipt was claimed. Signed-engine, CI, merge and production evidence must remain distinct.
+- Next action: independent review of PR #1984 and exact-head CI after these ledger changes; guarded merge only if the review gate is satisfied, then separate deployment and live browser/Android verification.
