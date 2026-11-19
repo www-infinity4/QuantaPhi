@@ -6,6 +6,7 @@ import {ADULT_LIFESTYLE_KITS} from '../adult-lifestyle-catalog.mjs';
 
 test('every lifestyle kit prepares a local, source-only multi-store plan with role-aware destinations',()=>{
  for(const kit of ADULT_LIFESTYLE_KITS){
+  if(kit.sourceOnly)continue;
   const plan=prepareAdultKitResearch({kitId:kit.id,budget:'450.00',region:'CO'});
   assert.equal(plan.status,'research_only');
   assert.equal(plan.kitId,kit.id);
@@ -45,6 +46,7 @@ test('kit roles distinguish editorial, medical, booking, venue and physical merc
 
 test('a kit plan never accepts protected cannabis sources or dubious budget and destination inputs',()=>{
  assert.throws(()=>prepareAdultKitResearch({kitId:'cannabis-sources'}),RangeError);
+ assert.throws(()=>prepareAdultKitResearch({kitId:'adult-video-links'}),RangeError);
  assert.throws(()=>prepareAdultKitResearch({kitId:'not-a-kit'}),RangeError);
  for(const bad of ['-1','0','1.005','1e9','99999999','USD 10','']){
   assert.throws(()=>prepareAdultKitResearch({kitId:'room-party',budget:bad}),RangeError,bad);
