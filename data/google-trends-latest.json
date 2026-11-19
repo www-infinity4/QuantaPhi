@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T12:33:50.764051Z",
+  "checked_at": "2026-11-19T13:01:20.760452Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "us winter 2026 2027 snow outlook",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T12:40:00Z",
+      "related_news_urls": [
+        "https://www.wjhl.com/wjhl-weather/mark-reynolds-2026-2027-winter-weather-outlook/",
+        "https://www.localsyr.com/weather/what-to-expect-for-this-winter-in-syracuse/",
+        "https://www.krem.com/article/weather/krem-2-2026-long-range-winter-forecast/293-801b1a29-afe5-4955-9af8-0c623da93057"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkl8teDF_39aLqy34jz86-NfjyHtddLHo9I6T2-BgdJuYn-0LpRUXTWNmDXTk",
+      "image_credit": "WJHL",
+      "news": [
+        {
+          "url": "https://www.wjhl.com/wjhl-weather/mark-reynolds-2026-2027-winter-weather-outlook/",
+          "title": "Mark Reynolds’ 2026-2027 Winter Weather Outlook",
+          "publisher": "WJHL",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkl8teDF_39aLqy34jz86-NfjyHtddLHo9I6T2-BgdJuYn-0LpRUXTWNmDXTk"
+        },
+        {
+          "url": "https://www.localsyr.com/weather/what-to-expect-for-this-winter-in-syracuse/",
+          "title": "What to expect for this winter in Syracuse",
+          "publisher": "WSYR",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsygqvyDcOg8cZV3daVpaI12pfyLeWo7i2jZQnU8TUt2ZOkEno2-TLmFvFo9M"
+        },
+        {
+          "url": "https://www.krem.com/article/weather/krem-2-2026-long-range-winter-forecast/293-801b1a29-afe5-4955-9af8-0c623da93057",
+          "title": "2026 long-range winter forecast: This could be the strongest El Niño in 75 years - Here's what it means for the Inland Northwest",
+          "publisher": "KREM",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQahMAZvo_PGB9s0Gm80YgPKipfQYlcZNgiNj3IZvW2kmThPRJcaTHRpvTrKVA"
+        }
+      ]
+    },
+    {
+      "query": "movie directors",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T12:40:00Z",
+      "related_news_urls": [
+        "https://ew.com/daniel-roebuck-hits-back-chris-columbus-home-alone-firing-12261353",
+        "https://www.sfchronicle.com/entertainment/movies-tv/article/home-alone-firing-dispute-22537882.php",
+        "https://pagesix.com/2026/11/18/entertainment/fired-home-alone-actor-daniel-roebuck-accuses-director-chris-columbus-of-lying-about-infamous-axing-it-hurts-my-heart/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9wrVnO66FKeIcaI1AJZv3bLArI2VQRESOYw2NxL1LwJCZRYIRN2QbBf2T89c",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/daniel-roebuck-hits-back-chris-columbus-home-alone-firing-12261353",
+          "title": "Daniel Roebuck hits back at Chris Columbus’ claims he was ‘horrible’ in ‘Home Alone’ screen test",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9wrVnO66FKeIcaI1AJZv3bLArI2VQRESOYw2NxL1LwJCZRYIRN2QbBf2T89c"
+        },
+        {
+          "url": "https://www.sfchronicle.com/entertainment/movies-tv/article/home-alone-firing-dispute-22537882.php",
+          "title": "Chris Columbus says a ‘Home Alone’ screen test was ‘horrible.’ The actor says it never happened",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-NYyAlt1PE6u61956JInUGSzKROeT9VlQKK1gDb-PNSkaTHSjaDopThJy1Bc"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/18/entertainment/fired-home-alone-actor-daniel-roebuck-accuses-director-chris-columbus-of-lying-about-infamous-axing-it-hurts-my-heart/",
+          "title": "Exclusive | Fired ‘Home Alone’ actor Daniel Roebuck accuses director Chris Columbus of lying about infamous axing: ‘It hurts my heart’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQa2GXVg5F27gvsH51G2ajuOjX_qeTePayMuJABnZm6k1ga_LoDnn0qEvyiXiw"
+        }
+      ]
+    },
+    {
+      "query": "ben shapiro",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T12:30:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/19/nx-s1-6034593/ben-shapiro-gop-midterms-losses-trump",
+        "https://www.huffpost.com/entry/ben-shapiro-republicans-bite-ass-corruption_n_6af3b60de4b0a8468d8bfcf1",
+        "https://www.npr.org/2026/11/19/nx-s1-6035863/ben-shapiro-on-conservative-media-and-the-future-of-the-republican-party"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTExegKVxoaZT8KBpXI-SI6-X271GSxvPzmSioUW86829_pIsPuklvp1OjGVkQ",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/19/nx-s1-6034593/ben-shapiro-gop-midterms-losses-trump",
+          "title": "Ben Shapiro says 'whiff of corruption' surrounds the president he campaigned for",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTExegKVxoaZT8KBpXI-SI6-X271GSxvPzmSioUW86829_pIsPuklvp1OjGVkQ"
+        },
+        {
+          "url": "https://www.huffpost.com/entry/ben-shapiro-republicans-bite-ass-corruption_n_6af3b60de4b0a8468d8bfcf1",
+          "title": "Ben Shapiro Spots No. 1 Issue That'll Come Back To 'Bite Republicans' Right 'In The Ass'",
+          "publisher": "HuffPost",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7osRd4mgHpzfhNBgauGtC_UuIGyHzii01mEySbiQBzhBWU4TZW1BEmnjIOKM"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/19/nx-s1-6035863/ben-shapiro-on-conservative-media-and-the-future-of-the-republican-party",
+          "title": "Ben Shapiro on conservative media and the future of the Republican Party",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "query": "jax taylor",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T12:30:00Z",
+      "related_news_urls": [
+        "https://people.com/jax-taylor-reveals-cancer-diagnosis-says-its-been-scary-few-months-exclusive-12264354",
+        "https://pagesix.com/2026/11/19/celebrity-news/jax-taylor-reveals-cancer-diagnosis-as-he-undergoes-surgery-in-a-really-dark-place/",
+        "https://www.eonline.com/news/1438242/vanderpump-rules-alum-jax-taylor-diagnosed-with-kidney-cancer"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtz1PmEEJ-DBFXsS-4hKID72DDyjc73nXK9qA8oSX3P_gUEPigPjiB84gEVM",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/jax-taylor-reveals-cancer-diagnosis-says-its-been-scary-few-months-exclusive-12264354",
+          "title": "Jax Taylor Reveals Cancer Diagnosis, Says ‘It’s Been a Really Scary Few Months’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCtz1PmEEJ-DBFXsS-4hKID72DDyjc73nXK9qA8oSX3P_gUEPigPjiB84gEVM"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/19/celebrity-news/jax-taylor-reveals-cancer-diagnosis-as-he-undergoes-surgery-in-a-really-dark-place/",
+          "title": "Jax Taylor reveals cancer diagnosis as he undergoes surgery: ‘In a really dark place’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4PZx4ShAvoZq544OdIow8fOhIUMMgTJxxbIksrfXoMul1Tg5vEf-c-jBCrLs"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438242/vanderpump-rules-alum-jax-taylor-diagnosed-with-kidney-cancer",
+          "title": "Vanderpump Rules Alum Jax Taylor Shares Cancer Diagnosis",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_Wou3FwymC3T_yU_eiiV_F0j2-2gpYEw_fV45-CAbmWuSpnwI28RcnmFv1A"
+        }
+      ]
+    },
     {
       "query": "ohio powerball winners nov 18 2026",
       "approx_searches": "200+",
@@ -42,37 +182,107 @@
       ]
     },
     {
+      "query": "cignetti",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T12:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50503441/narrative-surrounding-indiana-serves-motivation",
+        "https://www.usatoday.com/story/sports/columnist/nancy-armour/2026/11/17/curt-cignetti-paul-finebaum-cfp-sec-indiana-football/92829852007/",
+        "https://sports.yahoo.com/articles/indiana-curt-cignetti-escalates-cfp-154300691.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv-QjCy1H9Q2FTlJiGzPB2OLcP4v9gJcdYQHMHHYe2C0cZa-U3QLF20AZEzKY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50503441/narrative-surrounding-indiana-serves-motivation",
+          "title": "Cignetti: Narrative surrounding Indiana serves as motivation",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv-QjCy1H9Q2FTlJiGzPB2OLcP4v9gJcdYQHMHHYe2C0cZa-U3QLF20AZEzKY"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/columnist/nancy-armour/2026/11/17/curt-cignetti-paul-finebaum-cfp-sec-indiana-football/92829852007/",
+          "title": "Curt Cignetti's criticism isn't the problem. College football's gatekeepers are | Opinion",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQB_ohRLbIEKYitkzZQ7vlxVH2nfiRWoQSup5GnqfDMcjmkShHDeUqQAUbFn0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/indiana-curt-cignetti-escalates-cfp-154300691.html",
+          "title": "Indiana’s Curt Cignetti Escalates CFP Criticism With Strong Ohio State Statement",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSx3YGBFHyPkrPcU_IjBOhnMlyz5ypb__Vv_7FdjxB8gAKfgo2HT7YhjHDM4ec"
+        }
+      ]
+    },
+    {
       "query": "fútbol",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T12:10:00Z",
+      "related_news_urls": [
+        "https://www.marca.com/futbol/2026/11/19/cassano-carga-regreso-ronaldinho-futbol-profesional-farsa-ridicula.html",
+        "https://es-us.noticias.yahoo.com/deportes/antonio-cassano-destroz%C3%B3-ronaldinho-regreso-110500292.html",
+        "https://espndeportes.espn.com/futbol/italia/nota/_/id/17512292/ronaldinho-italia-ravenna-llegada-regreso"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs965d2wLYl_HKVnoWtnIiFsLaSgV10r2xL8HnuYQOx2EHalDBSU5KR8421NY",
+      "image_credit": "MARCA",
+      "news": [
+        {
+          "url": "https://www.marca.com/futbol/2026/11/19/cassano-carga-regreso-ronaldinho-futbol-profesional-farsa-ridicula.html",
+          "title": "Cassano carga contra el regreso de Ronaldinho al fútbol profesional: “Fue una farsa ridícula”",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs965d2wLYl_HKVnoWtnIiFsLaSgV10r2xL8HnuYQOx2EHalDBSU5KR8421NY"
+        },
+        {
+          "url": "https://es-us.noticias.yahoo.com/deportes/antonio-cassano-destroz%C3%B3-ronaldinho-regreso-110500292.html",
+          "title": "Antonio Cassano destrozó a Ronaldinho por su regreso al fútbol a los 46 años: «Fue una farsa ridícula",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQclgqzj0Xqq3ZpdlqPOeVuOYHSmz8SApPR5m2iH9zXqxXtW5G9LxmwRMGtk"
+        },
+        {
+          "url": "https://espndeportes.espn.com/futbol/italia/nota/_/id/17512292/ronaldinho-italia-ravenna-llegada-regreso",
+          "title": "Ronaldinho llega a Italia y tendrá un día para alistar su regreso al futbol",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRBgfM74BTVPWAaOis83Gt9ftPkiOOg-I17-UxERUBAWFvwxO3oEEgESPfkKA"
+        }
+      ]
+    },
+    {
+      "query": "dolar hoje",
       "approx_searches": "100+",
       "published_at": "2026-11-19T12:10:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17529407/juan-mata-espana-se-retira-amar-dejar-ir",
-        "https://apnews.com/article/juan-mata-retiro-espana-manchester-united-chelsea-eb07d2a097b35953f9bfc1a410b3e9a5",
-        "https://www.si.com/mx/futbol/juan-mata-campeon-con-espana-en-2010-anuncia-su-retiro-del-futbol"
+        "https://g1.globo.com/economia/noticia/2026/11/18/dolar-ibovespa.ghtml",
+        "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/19/dolar-abre-a-r-590-apesar-de-aprovacao-do-plano-moretti-no-senado.ghtm",
+        "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18112026/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmaBMHIoWFjVfwGCzyZQyemrTFV-_Cm9FAunL77EdtJNXKd6b5PBKo_4HT_Eg",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qMURPpfX-OFuOkEspGl9NyLA1Du-sys_3ZScc5hkxXUSObblDArF_Grfckk",
+      "image_credit": "G1",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17529407/juan-mata-espana-se-retira-amar-dejar-ir",
-          "title": "Se retira Juan Mata, campeón del mundo con España: \"A veces amar es dejar ir\"",
-          "publisher": "ESPN Deportes",
+          "url": "https://g1.globo.com/economia/noticia/2026/11/18/dolar-ibovespa.ghtml",
+          "title": "Dólar dispara a R$ 5,86, maior valor desde abril de 2025; Ibovespa cai com impasse no ajuste fiscal",
+          "publisher": "G1",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmaBMHIoWFjVfwGCzyZQyemrTFV-_Cm9FAunL77EdtJNXKd6b5PBKo_4HT_Eg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qMURPpfX-OFuOkEspGl9NyLA1Du-sys_3ZScc5hkxXUSObblDArF_Grfckk"
         },
         {
-          "url": "https://apnews.com/article/juan-mata-retiro-espana-manchester-united-chelsea-eb07d2a097b35953f9bfc1a410b3e9a5",
-          "title": "Juan Mata se retira del fútbol tras ganar Mundial y pasar por Man U y Chelsea",
-          "publisher": "AP News",
+          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/19/dolar-abre-a-r-590-apesar-de-aprovacao-do-plano-moretti-no-senado.ghtm",
+          "title": "Dólar abre a R$ 5,90, apesar de aprovação do ?Plano Moretti? no Senado",
+          "publisher": "UOL Economia",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbOtVglUXLLp7VRrlqIh6e08j5fd1n0ln0orywPf5spG6Z1ewWc1zTjY7fIJE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbc-IGusv8miZQ_78hHSsEeW5ocA-uZW89UOHsoUN-p4lMDfZ40WpukfRLCs"
         },
         {
-          "url": "https://www.si.com/mx/futbol/juan-mata-campeon-con-espana-en-2010-anuncia-su-retiro-del-futbol",
-          "title": "Juan Mata, campeón con España en 2010, anuncia su retiro del futbol",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18112026/",
+          "title": "Ibovespa tem novo dia de baixa ampla e dólar dispara mais uma vez, a R$ 5,86",
+          "publisher": "InfoMoney",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnguwAuMi0ttbvxIdQm4AO_x7AYler_w4xyZ24kozE8NeoGZBA6pk_bM9q7xY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTm_ATIPfmv1OajavUcysTT1JCQpMT9dB0TeGP8lbtSWoLw2869bQNuEjGwHL4"
         }
       ]
     },
@@ -112,58 +322,30 @@
       ]
     },
     {
-      "query": "dolar hoje",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T12:10:00Z",
-      "related_news_urls": [
-        "https://g1.globo.com/economia/noticia/2026/11/18/dolar-ibovespa.ghtml",
-        "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/18/dolar-avanca-a-r-580-com-pressao-sobre-ajuste-nas-contas-publicas.ghtm",
-        "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18112026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qMURPpfX-OFuOkEspGl9NyLA1Du-sys_3ZScc5hkxXUSObblDArF_Grfckk",
-      "image_credit": "G1",
-      "news": [
-        {
-          "url": "https://g1.globo.com/economia/noticia/2026/11/18/dolar-ibovespa.ghtml",
-          "title": "Dólar dispara a R$ 5,86, maior valor desde abril de 2025; Ibovespa cai com impasse no ajuste fiscal",
-          "publisher": "G1",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qMURPpfX-OFuOkEspGl9NyLA1Du-sys_3ZScc5hkxXUSObblDArF_Grfckk"
-        },
-        {
-          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/18/dolar-avanca-a-r-580-com-pressao-sobre-ajuste-nas-contas-publicas.ghtm",
-          "title": "Dólar salta a R$ 5,86 com pressão sobre ajuste nas contas públicas",
-          "publisher": "UOL Economia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOOVASfdpE2Tefch8tWT-PG3eIXHAoOjWfz-8uOjeaCxpovQ_0usGog66tKuU"
-        },
-        {
-          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18112026/",
-          "title": "Ibovespa tem novo dia de baixa ampla e dólar dispara mais uma vez, a R$ 5,86",
-          "publisher": "InfoMoney",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTm_ATIPfmv1OajavUcysTT1JCQpMT9dB0TeGP8lbtSWoLw2869bQNuEjGwHL4"
-        }
-      ]
-    },
-    {
       "query": "wmt stock",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-19T12:00:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-        "https://www.axios.com/2026/11/19/walmart-earnings-sales-revenue",
-        "https://www.businessinsider.com/walmarts-growth-continues-with-shoppers-coming-for-groceries-and-gas-2026-11"
+        "https://finance.yahoo.com/markets/stocks/article/walmart-beats-q3-earnings-expectations-raises-2026-outlook-again-120803355.html",
+        "https://www.axios.com/2026/11/19/walmart-earnings-sales-revenue"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIeguPZgPQRoxK4DpwRiXDTex_5YUlOqi2BYDID1R28p45UQsoz6lbLba465A",
       "image_credit": "CNBC",
       "news": [
         {
           "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-          "title": "Walmart is set to report earnings before the bell. Here's what to expect",
+          "title": "Walmart raises sales and earnings outlook as e-commerce sales jump again",
           "publisher": "CNBC",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIeguPZgPQRoxK4DpwRiXDTex_5YUlOqi2BYDID1R28p45UQsoz6lbLba465A"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/article/walmart-beats-q3-earnings-expectations-raises-2026-outlook-again-120803355.html",
+          "title": "Walmart beats Q3 earnings expectations, raises 2026 outlook again",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ90gGnzRhcxqvR0M0wpy1DEHPCyKWutLy2cI3OrM4iZgqONL9_tx1HPTNtRQ"
         },
         {
           "url": "https://www.axios.com/2026/11/19/walmart-earnings-sales-revenue",
@@ -171,188 +353,6 @@
           "publisher": "Axios",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsAdo1SXnHmGaa_Y2jgC4oZQotfeMaEvu364RC0o0944R0K2mXCwOaRiEpv2g"
-        },
-        {
-          "url": "https://www.businessinsider.com/walmarts-growth-continues-with-shoppers-coming-for-groceries-and-gas-2026-11",
-          "title": "Walmart's growth continues, with wealthier shoppers coming for groceries and gas",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3XtF9otYCqLiuG-Hf27MlzKor0XtBWnFCYqjkFWvzanV-X1qI4pMbRSUuS1g"
-        }
-      ]
-    },
-    {
-      "query": "what does anthropic do",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T12:00:00Z",
-      "related_news_urls": [
-        "https://www.anthropic.com/research/claude-black-hole-physics",
-        "https://fourweekmba.com/ai-claude-agents-ran-6-weeks-solved-2-of-22-physics-problems/",
-        "https://cryptobriefing.com/claude-fable-black-hole-calculation/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNOgyIHXUMZgx3WsFCqwKV-o8wWUMYt3isFv_9vbE73s_ASg2iiOI3uDyOepk",
-      "image_credit": "Anthropic",
-      "news": [
-        {
-          "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-          "title": "Claude solves two open problems in the physics of black holes",
-          "publisher": "Anthropic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNOgyIHXUMZgx3WsFCqwKV-o8wWUMYt3isFv_9vbE73s_ASg2iiOI3uDyOepk"
-        },
-        {
-          "url": "https://fourweekmba.com/ai-claude-agents-ran-6-weeks-solved-2-of-22-physics-problems/",
-          "title": "Claude Agents Ran 6 Weeks, Solved 2 of 22 Physics Problems",
-          "publisher": "FourWeekMBA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDfN2UJdkbC-mK2AQnVk-GSDTKdM0FEjwp7Nm9RmofwAGzTM0SncvJwf1eflY"
-        },
-        {
-          "url": "https://cryptobriefing.com/claude-fable-black-hole-calculation/",
-          "title": "Anthropic’s Claude Fable 5.2 finishes a 23-year-old black hole calculation",
-          "publisher": "Crypto Briefing",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnf1kuZdjg21KtTINJxattqTVIyuSZgOe_h0NOLnGD30oDznnb8V_ADXFR6zM"
-        }
-      ]
-    },
-    {
-      "query": "brevard county",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T12:00:00Z",
-      "related_news_urls": [
-        "https://www.fox35orlando.com/live-blog/news/florida-flash-flooding-live-updates-rainfall-totals-closures",
-        "https://www.wesh.com/article/rain-threat-flooding-brevard-schools-closure-florida/74469863",
-        "https://www.news-journalonline.com/story/weather/severe/2026/11/18/daytona-edgewater-nsb-flagler-flood-watch--live/92846765007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQGLMqti7SnWfictQzSQb2QYk-Z2du6aZrHvBGrowDH_d_ZGrBtNjbcFMLopU",
-      "image_credit": "FOX 35 Orlando",
-      "news": [
-        {
-          "url": "https://www.fox35orlando.com/live-blog/news/florida-flash-flooding-live-updates-rainfall-totals-closures",
-          "title": "Florida flash flooding: live updates, rainfall totals, closures",
-          "publisher": "FOX 35 Orlando",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQGLMqti7SnWfictQzSQb2QYk-Z2du6aZrHvBGrowDH_d_ZGrBtNjbcFMLopU"
-        },
-        {
-          "url": "https://www.wesh.com/article/rain-threat-flooding-brevard-schools-closure-florida/74469863",
-          "title": "Heavy rain threat prompts Central Florida counties to close schools as flood risks rise",
-          "publisher": "WESH",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6dUsqDhY8ln4vIbLeyeI6j-B2gOu-MnrnvzrLSxHU6_IyXi9LYzmD-KyUGg"
-        },
-        {
-          "url": "https://www.news-journalonline.com/story/weather/severe/2026/11/18/daytona-edgewater-nsb-flagler-flood-watch--live/92846765007/",
-          "title": "No end in sight as rain continues to pound Volusia, Flagler",
-          "publisher": "Daytona Beach News-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKktaV3cRjiWWuzu-RRif1ByI412qnDWRIe4EvNonLJUXp5t3ua5Uk44dCzb4"
-        }
-      ]
-    },
-    {
-      "query": "underground",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T12:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/videos/c8p3vw4q6nzzo",
-        "https://www.cbsnews.com/news/russia-ukraine-war-battle-in-underground-gas-pipeline-kupiansk/",
-        "https://www.newser.com/story/400190/ukrainian-troops-hole-up-in-pipeline-to-ambush-russians.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWKyrNqoBJUZ3VIFQRuoF0xe-qQYSqAQ-mXemTPz9w-fl3I0hYzd0j49Ha8gs",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/videos/c8p3vw4q6nzzo",
-          "title": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWKyrNqoBJUZ3VIFQRuoF0xe-qQYSqAQ-mXemTPz9w-fl3I0hYzd0j49Ha8gs"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/russia-ukraine-war-battle-in-underground-gas-pipeline-kupiansk/",
-          "title": "Ukrainian troops say they battled through underground gas pipeline to launch attack behind Russian lines",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNnBw5o1_XeJBmLhXpUhJGOtb2a_7KAiRuXKzj-qqL9Ul-rxSSyZK6id6w2yQ"
-        },
-        {
-          "url": "https://www.newser.com/story/400190/ukrainian-troops-hole-up-in-pipeline-to-ambush-russians.html",
-          "title": "In Frigid Pipeline, Ukrainians Launched 'Operation Impossible'",
-          "publisher": "Newser",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPwikRN-HLDpkqCr-rz-BPzyod_aVG4T-LdfNpvTfqhcwLqWYPPKxqxaOOE-k"
-        }
-      ]
-    },
-    {
-      "query": "brooke hanlon",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T12:00:00Z",
-      "related_news_urls": [
-        "https://people.com/brooke-hanlon-murder-dna-testing-blood-spatter-may-hold-clues-to-crime-scene-12263461",
-        "https://nj1015.com/chester-mother-homicide-unsolved/",
-        "https://www.newjerseyhills.com/observer-tribune/news/new-evidence-found-in-chester-homicide-according-to-published-reports/article_38cc3582-d0ab-4915-a7e9-e45b3cab18cf.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP89UCw5KOvidOx2Q7HChHBW5_RfGlmzJ_PnzI2F0A1rVm5_SpM3NR8sqYFxI",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/brooke-hanlon-murder-dna-testing-blood-spatter-may-hold-clues-to-crime-scene-12263461",
-          "title": "Brooke Hanlon Murder: Crime Scene Search Offers Possible Clues About DNA, Blood Spatter and Suspect",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP89UCw5KOvidOx2Q7HChHBW5_RfGlmzJ_PnzI2F0A1rVm5_SpM3NR8sqYFxI"
-        },
-        {
-          "url": "https://nj1015.com/chester-mother-homicide-unsolved/",
-          "title": "Investigators return to Morris County home where NJ mom was brutally killed",
-          "publisher": "New Jersey 101.5",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN5f4-QQOh5I3In6BVRH3tdn6DO3NgJ63Swa0X42ZP48j30bW6TsxT_0BLzQY"
-        },
-        {
-          "url": "https://www.newjerseyhills.com/observer-tribune/news/new-evidence-found-in-chester-homicide-according-to-published-reports/article_38cc3582-d0ab-4915-a7e9-e45b3cab18cf.html",
-          "title": "New evidence found in Chester homicide according to published reports",
-          "publisher": "New Jersey Hills Media Group",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRrupIW7X8jPJAKXBOW5fRZTD0_gSGYoKTG4PHro_hJ59Btmg8H3scFsT80s0"
-        }
-      ]
-    },
-    {
-      "query": "united states department of veterans affairs",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T12:00:00Z",
-      "related_news_urls": [
-        "https://www.khou.com/article/news/local/va-benefits-crackdown-houston-woman-charged/285-7157be8d-3d8c-4648-9c04-a33f63b02d99",
-        "https://www.militarytimes.com/veterans/2026/11/17/va-crackdown-on-fraud-results-in-dozens-of-arrests/",
-        "https://www.kcentv.com/article/news/local/killeen-va-employee-indicted-diverting-disability-payments/500-cf0438d5-46e0-496a-83de-4ec6aa04bfff"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxgYfjDXSTXeZOMhgt8v2LpUEAfBKvGPhQUxIWf8YMU21JVKMlI5UDdXzAwF0",
-      "image_credit": "KHOU",
-      "news": [
-        {
-          "url": "https://www.khou.com/article/news/local/va-benefits-crackdown-houston-woman-charged/285-7157be8d-3d8c-4648-9c04-a33f63b02d99",
-          "title": "15 defendants, including Houston woman, charged in nationwide VA benefits fraud crackdown",
-          "publisher": "KHOU",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxgYfjDXSTXeZOMhgt8v2LpUEAfBKvGPhQUxIWf8YMU21JVKMlI5UDdXzAwF0"
-        },
-        {
-          "url": "https://www.militarytimes.com/veterans/2026/11/17/va-crackdown-on-fraud-results-in-dozens-of-arrests/",
-          "title": "VA crackdown on fraud results in dozens of arrests",
-          "publisher": "Military Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUmDUba3YZ4NQM43Q2Cm5dCJHH7fE2lZ8ekN8Qhti17ZFgW8ngvuC9ZARsAmo"
-        },
-        {
-          "url": "https://www.kcentv.com/article/news/local/killeen-va-employee-indicted-diverting-disability-payments/500-cf0438d5-46e0-496a-83de-4ec6aa04bfff",
-          "title": "Killeen VA employee indicted for allegedly diverting disability payments from veterans",
-          "publisher": "kcentv.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cNJ3U44ts0azs9O-SJD3af-RwMdFyI4yzBxqLmMBvvFN6h6urJcFAwf4uHk"
         }
       ]
     }
