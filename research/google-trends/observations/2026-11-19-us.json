@@ -3,19 +3,89 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-19T10:31:13.894759Z",
+  "checked_at": "2026-11-19T11:01:31.487583Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "brooks nader",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T10:40:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/16/style/brooks-nader-tennis-bracelet-is-21-on-amazon-but-looks-like-diamonds/",
+        "https://pagesix.com/2026/11/16/style/brooks-nader-swears-by-clarins-double-serum-for-a-healthy-glow/",
+        "https://www.foxnews.com/entertainment/brooks-nader-turns-heads-sheer-dress-cfda-fashion-awards-ahead-baywatch-reboot"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxMBaJAqJg43bK25Kaw3uOsy_31npzDKR0eEnv0epkLEhsqCSGMpP3tI2-TM",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/16/style/brooks-nader-tennis-bracelet-is-21-on-amazon-but-looks-like-diamonds/",
+          "title": "Brooks Nader’s tennis bracelet looks like real diamonds, but it’s $21 on Amazon",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxMBaJAqJg43bK25Kaw3uOsy_31npzDKR0eEnv0epkLEhsqCSGMpP3tI2-TM"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/16/style/brooks-nader-swears-by-clarins-double-serum-for-a-healthy-glow/",
+          "title": "Brooks Nader says this ‘two-in-one’ skin care superhero gets her face ‘snatched’ in seconds",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNMVs0AHu3WDcQ7YMEIv9G87SJqZja0TAW-OM4LOM5HAO-5roebpFHVK_e7J0"
+        },
+        {
+          "url": "https://www.foxnews.com/entertainment/brooks-nader-turns-heads-sheer-dress-cfda-fashion-awards-ahead-baywatch-reboot",
+          "title": "Brooks Nader turns heads in sheer dress at CFDA Fashion Awards",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgDzedlRwsurgWDlzEWWyNsCZm25JV9tBh41_FTCKTHtvswzjKpW483vUOJ5E"
+        }
+      ]
+    },
+    {
+      "query": "weather near me",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T10:30:00Z",
+      "related_news_urls": [
+        "https://www.abc10.com/article/weather/weather-impact/risk-of-tornadoes-for-the-valley-as-a-major-storm-rolls-through-northern-california/103-73a32110-5aac-4449-92f6-5446337cb8df",
+        "https://stocktonia.org/news/weather/2026/11/18/possible-tornadoes-damaging-winds-forecast-for-san-joaquin-valley-on-thursday/",
+        "https://www.sacbee.com/news/weather-news/article318145913.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgoadxM3nOOPKOsCS1-eeVki7V9-5nDVHS0p-X1u0T0oG3rXd1ZiXM2Ak4s1c",
+      "image_credit": "ABC10",
+      "news": [
+        {
+          "url": "https://www.abc10.com/article/weather/weather-impact/risk-of-tornadoes-for-the-valley-as-a-major-storm-rolls-through-northern-california/103-73a32110-5aac-4449-92f6-5446337cb8df",
+          "title": "Risk of tornadoes for the valley as a major storm rolls through Northern California",
+          "publisher": "ABC10",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgoadxM3nOOPKOsCS1-eeVki7V9-5nDVHS0p-X1u0T0oG3rXd1ZiXM2Ak4s1c"
+        },
+        {
+          "url": "https://stocktonia.org/news/weather/2026/11/18/possible-tornadoes-damaging-winds-forecast-for-san-joaquin-valley-on-thursday/",
+          "title": "Possible tornadoes, damaging winds forecast for San Joaquin Valley on Thursday",
+          "publisher": "Stocktonia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ43cN8Cpaki3EoWlYlArJkRxEWouUGMxCitmltVIpyzSV_cIOl-52sHG16P-g"
+        },
+        {
+          "url": "https://www.sacbee.com/news/weather-news/article318145913.html",
+          "title": "Atmospheric river continues Thursday in California, bringing small risk of tornadoes",
+          "publisher": "Sacramento Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_5-rERfbzG2dUznvQt_Pq4F5o6DLCmWZ9cV95dGSVKOoPLTGP-085-e-IWfY"
+        }
+      ]
+    },
     {
       "query": "sri lanka vs pakistan",
       "approx_searches": "500+",
       "published_at": "2026-11-19T10:10:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/ball-by-ball-commentary",
-        "https://www.foxsports.com/articles/soccer/sri-lanka-reaches-1675-still-trails-pakistan-by-60-runs-in-2nd-cricket-test",
-        "https://www.cricbuzz.com/cricket-news/140960/ghori-razaullah-push-pakistan-to-commanding-position-in-rawalpindi-cricbuzzcom"
+        "https://www.cricbuzz.com/cricket-news/140960/ghori-razaullah-push-pakistan-to-commanding-position-in-rawalpindi-cricbuzzcom",
+        "https://www.foxsports.com/articles/soccer/sri-lanka-reaches-1675-still-trails-pakistan-by-60-runs-in-2nd-cricket-test"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZex81WPQVDGMNSClHR3hyQ1fhVvjRLbyWSiO2Sa5uFnZere8fRHvz4vjO5RQ",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6j2tPIl0v5CpgZsURpNdrMApfYhr8D8aIVgyhZvbBjrUGkgbFzwS2JBaka3w",
       "image_credit": "Cricinfo",
       "news": [
         {
@@ -23,14 +93,7 @@
           "title": "Ball by Ball Commentary & Live Score - PAK vs SL, 2nd Test",
           "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZex81WPQVDGMNSClHR3hyQ1fhVvjRLbyWSiO2Sa5uFnZere8fRHvz4vjO5RQ"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/soccer/sri-lanka-reaches-1675-still-trails-pakistan-by-60-runs-in-2nd-cricket-test",
-          "title": "Sri Lanka reaches 167-5, still trails Pakistan by 60 runs in 2nd cricket test",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6j2tPIl0v5CpgZsURpNdrMApfYhr8D8aIVgyhZvbBjrUGkgbFzwS2JBaka3w"
         },
         {
           "url": "https://www.cricbuzz.com/cricket-news/140960/ghori-razaullah-push-pakistan-to-commanding-position-in-rawalpindi-cricbuzzcom",
@@ -38,12 +101,89 @@
           "publisher": "Cricbuzz",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKG38yEjzvUDps1gYFwAtuHrD3aBoarlAXko_sIO98vR_Y7ult9YEX4bZx7c8"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/soccer/sri-lanka-reaches-1675-still-trails-pakistan-by-60-runs-in-2nd-cricket-test",
+          "title": "Sri Lanka reaches 167-5, still trails Pakistan by 60 runs in 2nd cricket test",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+        }
+      ]
+    },
+    {
+      "query": "sc lottery",
+      "approx_searches": "100+",
+      "published_at": "2026-11-19T10:10:00Z",
+      "related_news_urls": [
+        "https://www.foxcarolina.com/2026/11/17/2-million-upstate-lottery-winner-looks-help-others/",
+        "https://www.wspa.com/news/local-news/spartanburg-co-claims-2m-lottery-prize-plans-to-give-back/",
+        "https://www.wyff4.com/article/2-million-scratch-off-ticket-lottery-winner-south-carolina/74454285"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlFpFIysOLAo_HOLch288VVQ8ncRTujRRVsDvbj98dZDIB4ihNpz5z08HMF-g",
+      "image_credit": "FOX Carolina News",
+      "news": [
+        {
+          "url": "https://www.foxcarolina.com/2026/11/17/2-million-upstate-lottery-winner-looks-help-others/",
+          "title": "$2 million Upstate lottery winner looks to help others",
+          "publisher": "FOX Carolina News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlFpFIysOLAo_HOLch288VVQ8ncRTujRRVsDvbj98dZDIB4ihNpz5z08HMF-g"
+        },
+        {
+          "url": "https://www.wspa.com/news/local-news/spartanburg-co-claims-2m-lottery-prize-plans-to-give-back/",
+          "title": "Spartanburg Co. winner claims $2M lottery prize, plans to give back",
+          "publisher": "WSPA 7News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1LFEq5JdnmzQJsG4xYMChA__6SEcjHIzoOx4ZqAlGinw0jLp1O8_q3ASR0Cc"
+        },
+        {
+          "url": "https://www.wyff4.com/article/2-million-scratch-off-ticket-lottery-winner-south-carolina/74454285",
+          "title": "Lottery player in South Carolina wins $2 million on scratch-off ticket",
+          "publisher": "WYFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9Uchr74GqmwQJ0Zz0eZOlJdwI4UTqOkWRCd8N423iMweyD-3Deax5HstvvsM"
+        }
+      ]
+    },
+    {
+      "query": "palm beach county schools",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-19T10:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
+        "https://www.miamiherald.com/news/local/education/article318145212.html",
+        "https://www.wpbf.com/article/palm-beach-county-schools-cancel-after-school-activities-flood-threat/74464712"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk",
+      "image_credit": "NBC 6 South Florida",
+      "news": [
+        {
+          "url": "https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/",
+          "title": "Historic flooding in South Florida closes schools, leaves residents stranded in deluge",
+          "publisher": "NBC 6 South Florida",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGSnf0gY9bT5Q6P_ypI5zlz2W1fgip7R8OX_dfhi7QR_jtZ0V5Fk1_pvLNmlk"
+        },
+        {
+          "url": "https://www.miamiherald.com/news/local/education/article318145212.html",
+          "title": "Miami-Dade schools to close Thursday after more than 24 hours of heavy rain",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYE4tux0oowYGp8wMey5x5yi8SxNyWAywipAhuaPRRHMT6Jm8E3RZDPE4eB0"
+        },
+        {
+          "url": "https://www.wpbf.com/article/palm-beach-county-schools-cancel-after-school-activities-flood-threat/74464712",
+          "title": "Palm Beach County schools cancel after-school activities due to weather",
+          "publisher": "WPBF",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIq99Ax8ETdhNyX7K0gnx7ewqaowc7rtC5OyPEzJlaB0FXWbhtutM0Ev1As4"
         }
       ]
     },
     {
       "query": "spider",
-      "approx_searches": "1000+",
+      "approx_searches": "100+",
       "published_at": "2026-11-19T09:50:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/cm87987w1qz5o",
@@ -113,12 +253,12 @@
     },
     {
       "query": "bangladesh vs south africa",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-19T09:40:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-1st-test-1525662/match-report",
         "https://www.cricbuzz.com/cricket-news/140963/mahmud-we-couldnt-create-pressure-against-south-africas-tailenders-cricbuzzcom",
-        "https://www.news24.com/sport/cricket/proteas/live-proteas-v-bangladesh-day-1-1st-test-20261115-0310"
+        "https://www.wral.com/news/ap/80744-south-africa-beats-bangladesh-on-day-5-of-first-cricket-test-after-harmer-shines-again/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1J4jRynajrdgJmMJH9EA7ZGJyTOzP9Uymt7WBqCTSYvZzPIBo1jKcJZPxO70",
       "image_credit": "Cricinfo",
@@ -138,11 +278,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOzuxRGCky8QgN-aOfteAJU3TNVgEgJ_eIoVVZMLILmRuJ6h_gHKHYIPSat8"
         },
         {
-          "url": "https://www.news24.com/sport/cricket/proteas/live-proteas-v-bangladesh-day-1-1st-test-20261115-0310",
-          "title": "LIVE | First Test, day five: Proteas v Bangladesh",
-          "publisher": "News24",
+          "url": "https://www.wral.com/news/ap/80744-south-africa-beats-bangladesh-on-day-5-of-first-cricket-test-after-harmer-shines-again/",
+          "title": "South Africa beats Bangladesh on Day 5 of first cricket test after Harmer shines again",
+          "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSFZRcMxvwmMrn7Hednmd6OXuOjvaSBpeqTscYBb34wxfK9UgNdlApMZQcjaQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQw7ObNA1zJt1culN07mudm_Qugtp1vSgsTPdhOuteknTBnIX_RxoaCaGrzbM"
         }
       ]
     },
@@ -186,173 +326,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-19T09:30:00Z",
       "related_news_urls": [
-        "https://www.ncaa.com/news/soccer-women/article/2026-11-09/2026-di-womens-soccer-championship-bracket-schedule-scores",
-        "https://fightingirish.com/news/2026/11/16/irish-earned-2-seed-in-2026-ncaa-womens-soccer-tournament",
-        "https://theacc.com/news/2026/11/16/record-tying-10-acc-teams-selected-to-2026-ncaa-womens-soccer-championship.aspx"
+        "https://www.nj.com/highschoolsports/2026/11/boys-soccer-live-group-semifinal-results-photos-and-recaps-for-wednesday-nov-18.html",
+        "https://shoresportsinsider.com/second-string-savior-peck-bench-deliver-in-penalties-send-toms-river-east-to-state-final/",
+        "https://sports.yahoo.com/videos/watch-mike-pecks-save-seals-233358880.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSso824CQ3smggXuONgqUovw2C7eR5PXSlyeEeaSXMcl2cqWf_13su6Jf3CaOQ",
-      "image_credit": "NCAA.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7kiTiw6eTRTwBKczVZRlyz9yE8st5W9KOhC1pLsTj_XjFCCID33N1eflynVE",
+      "image_credit": "NJ.com",
       "news": [
         {
-          "url": "https://www.ncaa.com/news/soccer-women/article/2026-11-09/2026-di-womens-soccer-championship-bracket-schedule-scores",
-          "title": "2026 DI women's soccer championship: Bracket, schedule, scores",
-          "publisher": "NCAA.com",
+          "url": "https://www.nj.com/highschoolsports/2026/11/boys-soccer-live-group-semifinal-results-photos-and-recaps-for-wednesday-nov-18.html",
+          "title": "Boys Soccer: Group semifinal LIVE video, results, photos and recaps for Wednesday, Nov. 18",
+          "publisher": "NJ.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSso824CQ3smggXuONgqUovw2C7eR5PXSlyeEeaSXMcl2cqWf_13su6Jf3CaOQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7kiTiw6eTRTwBKczVZRlyz9yE8st5W9KOhC1pLsTj_XjFCCID33N1eflynVE"
         },
         {
-          "url": "https://fightingirish.com/news/2026/11/16/irish-earned-2-seed-in-2026-ncaa-womens-soccer-tournament",
-          "title": "Irish Earned #2 Seed In 2026 NCAA Women's Soccer Tournament",
-          "publisher": "Notre Dame Fighting Irish",
+          "url": "https://shoresportsinsider.com/second-string-savior-peck-bench-deliver-in-penalties-send-toms-river-east-to-state-final/",
+          "title": "Second-String Savior: Peck, Bench Deliver in Penalties, Send Toms River East to State Final",
+          "publisher": "Shore Sports Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThTVRCzPIz8OXZ6gfyS_2tSwwu00geDUrxEs2LkpV5JSI5XoyjEtbuTe5B2Qs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGS0ClQHdSR1isTPiHytk9ZH7DrSIZKV5DvAIuW_RkHNq7YL2Qczhh5O8RvWU"
         },
         {
-          "url": "https://theacc.com/news/2026/11/16/record-tying-10-acc-teams-selected-to-2026-ncaa-womens-soccer-championship.aspx",
-          "title": "Record-Tying 10 ACC Teams Selected to 2026 NCAA Women’s Soccer Championship",
-          "publisher": "Atlantic Coast Conference",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ70DiJ8WrDTmPc03CQtDGp6HbhtX1hqARKp97RkZ2UVTKLJBDeRv4NftXBpY"
-        }
-      ]
-    },
-    {
-      "query": "tiger",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T09:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/golf/story/_/id/50511075/tiger-woods-return-next-month-hero-world-challenge",
-        "https://sports.yahoo.com/golf/breaking-news/article/tiger-woods-making-return-to-competitive-golf-at-decembers-hero-world-challenge-145057441.html",
-        "https://www.cbssports.com/golf/news/tiger-woods-next-tournament-2026-hero-world-challenge/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmiqcSyOkb6YLSxKfLuq5cahGIvn1T64MwW7tH4Mhxsjmr092nPcKs8ebZOYk",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/golf/story/_/id/50511075/tiger-woods-return-next-month-hero-world-challenge",
-          "title": "Tiger Woods to return for next month's Hero World Challenge",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmiqcSyOkb6YLSxKfLuq5cahGIvn1T64MwW7tH4Mhxsjmr092nPcKs8ebZOYk"
-        },
-        {
-          "url": "https://sports.yahoo.com/golf/breaking-news/article/tiger-woods-making-return-to-competitive-golf-at-decembers-hero-world-challenge-145057441.html",
-          "title": "Tiger Woods making return to competitive golf at December's Hero World Challenge",
+          "url": "https://sports.yahoo.com/videos/watch-mike-pecks-save-seals-233358880.html",
+          "title": "WATCH: Mike Peck's save seals Toms River East's PK win in state semis",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzcsIrlQSC6p-QxYgCzfSi5QeOORxD3xHT11jMYEcO-bXheVc5pL9Y7_GWwsM"
-        },
-        {
-          "url": "https://www.cbssports.com/golf/news/tiger-woods-next-tournament-2026-hero-world-challenge/",
-          "title": "Tiger Woods to play in Hero World Challenge: 15-time major champion set for first tournament since 2024 Open",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnLl_E7lGhP87NJamw-hMsRdJ0iZewNctp4mShpWfe2tz49ilQWaZ_o4vdbP0"
-        }
-      ]
-    },
-    {
-      "query": "ring",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T09:20:00Z",
-      "related_news_urls": [
-        "https://www.menshealth.com/fitness/a74390673/oura-ring-black-friday-sale-2026/",
-        "https://memeburn.com/the-oura-ring-4-is-249-the-ring-5-mostly-charges-you-for-a-thinner-ring/",
-        "https://the-gadgeteer.com/2026/11/16/give-the-smart-ring-that-wears-like-jewelry-in-deep-rose-gold-and-four-more-finishes/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTi0xW5VyLAvq7zuq-_sdxVV6StIrattXvzMu7U-fH7MKmJTh17pcwzQoECQ9M",
-      "image_credit": "Men's Health",
-      "news": [
-        {
-          "url": "https://www.menshealth.com/fitness/a74390673/oura-ring-black-friday-sale-2026/",
-          "title": "News: Details on the Oura Ring 5 Black Friday Sale",
-          "publisher": "Men's Health",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTi0xW5VyLAvq7zuq-_sdxVV6StIrattXvzMu7U-fH7MKmJTh17pcwzQoECQ9M"
-        },
-        {
-          "url": "https://memeburn.com/the-oura-ring-4-is-249-the-ring-5-mostly-charges-you-for-a-thinner-ring/",
-          "title": "The Oura Ring 4 Is $249. The Ring 5 Mostly Charges You for a Thinner Ring",
-          "publisher": "Memeburn",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX3Y9UnmRbe_N-t1XNCkqCCsiu_9DbrFxynTmAyBDHGdpIyGL38TNijTw7uSI"
-        },
-        {
-          "url": "https://the-gadgeteer.com/2026/11/16/give-the-smart-ring-that-wears-like-jewelry-in-deep-rose-gold-and-four-more-finishes/",
-          "title": "Give the smart ring that wears like jewelry, in Deep Rose, gold and four more finishes",
-          "publisher": "The Gadgeteer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZq9UkbWqiUvJcTpSc1ji48LQ2gEfJlHhj1-rPvZWJ4VvjLK0oRPus2MxE_m8"
-        }
-      ]
-    },
-    {
-      "query": "sun",
-      "approx_searches": "100+",
-      "published_at": "2026-11-19T09:20:00Z",
-      "related_news_urls": [
-        "https://www.sun-sentinel.com/2026/11/19/morning-update-south-floridas-top-stories-for-thursday-nov-19-2026/",
-        "https://www.sun-sentinel.com/2026/11/17/morning-update-south-floridas-top-stories-for-tuesday-nov-17-2026/",
-        "https://www.sun-sentinel.com/2026/11/18/morning-update-south-floridas-top-stories-for-wednesday-nov-18-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStnKnB_T57c7ELN2P7HKkWte4z45pdrK0SPwviPY4jLa88uR5VDeaoF5y-fbE",
-      "image_credit": "Sun Sentinel",
-      "news": [
-        {
-          "url": "https://www.sun-sentinel.com/2026/11/19/morning-update-south-floridas-top-stories-for-thursday-nov-19-2026/",
-          "title": "Morning Update: South Florida’s top stories for Thursday, Nov. 19, 2026",
-          "publisher": "Sun Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStnKnB_T57c7ELN2P7HKkWte4z45pdrK0SPwviPY4jLa88uR5VDeaoF5y-fbE"
-        },
-        {
-          "url": "https://www.sun-sentinel.com/2026/11/17/morning-update-south-floridas-top-stories-for-tuesday-nov-17-2026/",
-          "title": "Morning Update: South Florida’s top stories for Tuesday, Nov. 17, 2026",
-          "publisher": "Sun Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStnKnB_T57c7ELN2P7HKkWte4z45pdrK0SPwviPY4jLa88uR5VDeaoF5y-fbE"
-        },
-        {
-          "url": "https://www.sun-sentinel.com/2026/11/18/morning-update-south-floridas-top-stories-for-wednesday-nov-18-2026/",
-          "title": "Morning Update: South Florida’s top stories for Wednesday, Nov. 18, 2026",
-          "publisher": "Sun Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStnKnB_T57c7ELN2P7HKkWte4z45pdrK0SPwviPY4jLa88uR5VDeaoF5y-fbE"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 ps5 controller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T09:20:00Z",
-      "related_news_urls": [
-        "https://www.rtings.com/tv/learn/research/gaming-motion-interpolation-gta-vi",
-        "https://www.cnet.com/tech/gaming/gta6-headsets-black-friday-deals/",
-        "https://www.theverge.com/gadgets/1033262/best-gta-6-gaming-accessories-controllers-headsets-tvs"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKN4iKiwGGtCSac00ncivz3VcLCvTYyL_duXpHxbMTMA7dS4xnn-MhdVAGnVY",
-      "image_credit": "RTINGS.com",
-      "news": [
-        {
-          "url": "https://www.rtings.com/tv/learn/research/gaming-motion-interpolation-gta-vi",
-          "title": "GTA VI At 30 FPS: Can Your TV Save The Day?",
-          "publisher": "RTINGS.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKN4iKiwGGtCSac00ncivz3VcLCvTYyL_duXpHxbMTMA7dS4xnn-MhdVAGnVY"
-        },
-        {
-          "url": "https://www.cnet.com/tech/gaming/gta6-headsets-black-friday-deals/",
-          "title": "GTA 6 Is Almost Here. These Headsets Will Help You Game in Style",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGtG1rpD-j5Ja929xGCrQquPxEf7xJlY9DoBX6Cqu0G6KnEnWHFrJO5WrT2I"
-        },
-        {
-          "url": "https://www.theverge.com/gadgets/1033262/best-gta-6-gaming-accessories-controllers-headsets-tvs",
-          "title": "Our favorite accessories to level up your gaming setup ahead of GTA VI",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxJxN8UzbUlk1Mjz_2HEE73zBigivNgrzzzHPRRVcPaYz5f6uS6UFdY3KDonY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRx2Y3bSEPm0qIUxU45Msccma7ZtSFVL76kevicvficQzJIKGzEbrkSIH22-n8"
         }
       ]
     }
