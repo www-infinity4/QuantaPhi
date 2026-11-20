@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import reader,{parsePublicProfile,scanPublicX} from '../workers/bubbles-public-x/worker.mjs';
+import reader,{parsePublicProfile,scanPublicX,normalizeStarCraftObservation} from '../workers/bubbles-public-x/worker.mjs';
 
 const article=(account,id,body)=>'<div role="link" data-href="/'+account+'/status/'+id+'"><article><a href="/'+account+'">'+account+'</a><div class="whitespace-pre-wrap" dir="auto">'+body+'</div></article></div>';
 
@@ -92,4 +92,55 @@ test('X Quick Card presents screenshot-provenance archive even when live X conte
  assert.match(page,/STARCRAFTCO-X-20261119\.md/);
  assert.match(page,/not a live X import/i);
  assert.doesNotMatch(page,/x\.com\/StarCraftCo\/status\/\d+/,'no invented canonical post IDs');
+});
+
+
+test('TinyFish observation normalization rejects forged author, mismatched ID and non-public URLs',()=>{
+ const good={account:'StarCraftCo',post_id:'2123567922820035034',url:'https://x.com/StarCraftCo/status/2123567922820035034',
+  summary:'QuantaPhi research link about MMT, deficits and bitcoin',audience:'general',source_method:'tinyfish_public_browser',
+  source_run_url:'https://agent.tinyfish.ai/runs/3728a4bc-fc2e-41f6-a524-c5e05eb0189c',observed_at:'2026-11-20T00:00:00Z'};
+ const normalized=normalizeStarCraftObservation(good);
+ assert.equal(normalized.post_id,good.post_id);
+ assert.equal(normalized.authority,'reference_only');
+ assert.equal(normalized.fullTextVerified,false);
+ assert.equal(normalized.url,good.url);
+ assert.equal(normalizeStarCraftObservation({...good,account:'YahooPingcwlz'}),null);
+ assert.equal(normalizeStarCraftObservation({...good,url:'https://x.com/YahooPingcwlz/status/'+good.post_id}),null);
+ assert.equal(normalizeStarCraftObservation({...good,url:'https://evil.test/redirect?to='+good.url}),null);
+ assert.equal(normalizeStarCraftObservation({...good,post_id:'2123567922820035033'}),null);
+ assert.equal(normalizeStarCraftObservation({...good,source_run_url:'javascript:alert(1)'}),null);
+ assert.equal(normalizeStarCraftObservation({...good,summary:'a'.repeat(400)}),null);
+});
+test('StarCraftCo context keeps external review distinct, deduped and excludes adult-labeled rows',async()=>{
+ const good={account:'StarCraftCo',post_id:'2123567922820035034',url:'https://x.com/StarCraftCo/status/2123567922820035034',
+  summary:'QuantaPhi research reference',audience:'general',source_method:'tinyfish_public_browser',
+  source_run_url:'https://agent.tinyfish.ai/runs/3728a4bc-fc2e-41f6-a524-c5e05eb0189c',observed_at:'2026-11-20T00:00:00Z'};
+ const adult={...good,post_id:'2123527176394043785',url:'https://x.com/StarCraftCo/status/2123527176394043785',summary:'Adult-labeled video',audience:'restricted'};
+ const spoof={...good,account:'YahooPingcwlz'};
+ const queries=[];
+ const env={DB:{prepare(sql){queries.push(sql);return{bind(){return this},async first(){return null},async all(){return {results:sql.includes('starcraft_public_observations')?[good,good,adult,spoof]:[]}}}}}};
+ const response=await reader.fetch(new Request('https://quantaphi.org/api/bubbles/public-x/context?account=StarCraftCo'),env);
+ const data=await response.json();
+ assert.equal(data.authority,'reference_only');
+ assert.equal(data.items.length,0,'Cloudflare browser posts remain a separate verified field');
+ assert.equal(data.observations.length,1,'one exact public reference, no duplicate or adult media');
+ assert.equal(data.observations[0].post_id,good.post_id);
+ assert.match(data.observationState,/external_public_browser_review/);
+ assert.ok(queries.some(sql=>sql.includes('starcraft_public_observations')));
+ const owner=await (await reader.fetch(new Request('https://quantaphi.org/api/bubbles/public-x/inbox'),env)).json();
+ assert.equal(owner.author,'YahooPingcwlz');
+ assert.equal(owner.items.length,0);
+ assert.equal(owner.observations,undefined);
+});
+test('StarCraftCo public Quick Card renders reviewed references without inserting media',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const html=await readFile(new URL('../bubbles-x-connect.html',import.meta.url),'utf8');
+ const ui=await readFile(new URL('../bubbles-public-x-status.js',import.meta.url),'utf8');
+ assert.match(html,/id="starCraftPublicObservations"/);
+ assert.match(html,/StarCraftCo.*public references/);
+ assert.match(ui,/context\?account=StarCraftCo/);
+ assert.match(ui,/textContent/);
+ assert.match(ui,/createElement\('a'\)/);
+ assert.doesNotMatch(ui,/innerHTML/);
+ assert.doesNotMatch(html,/<iframe[^>]*x\.com/i);
 });
