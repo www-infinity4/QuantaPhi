@@ -34,6 +34,7 @@ services:
     read_only: true
     init: true
     cap_drop: [ALL]
+    cap_add: [SYS_CHROOT]
     security_opt:
       - no-new-privileges:true
       - seccomp=./seccomp_profile.json
