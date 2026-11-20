@@ -11,7 +11,7 @@ export function assertNoDefaultRoute(ipv4,ipv6) {
   if(v4.slice(1).some(row=>row[1]==='00000000'&&row[7]==='00000000'))
     throw Error('IPv4 default route detected: Tor isolation refused');
   const v6=lines(ipv6,'IPv6');
-  if(v6.some(row=>row.length>=10&&row[0]==='0'.repeat(32)&&row[1]==='00'))
+  if(v6.some(row=>row.length>=10&&row[0]==='0'.repeat(32)&&row[1]==='00'&&row[9]!=='lo'))
     throw Error('IPv6 default route detected: Tor isolation refused');
 }
 export function torTransport(env,routes){
