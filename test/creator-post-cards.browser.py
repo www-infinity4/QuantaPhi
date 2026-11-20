@@ -107,6 +107,42 @@ def run():
                 expect(chooser.locator('option[value="source-elena-cardone"]')).to_have_count(1)
                 expect(chooser.locator('option[value="source-'+POST+'"]')).to_have_count(0)
                 checks.append(f'{width}px: six original carousel cards, business placement and strict Following')
+
+                # AbbeCAdventures: source data, native card search and consented
+                # YouTube iframe only after a human Play click (not playback rights).
+                page.goto(base+'/source-quick-card.html?card=abbecadventures-youtube', wait_until='domcontentloaded')
+                yt = page.locator('.youtube-creator-post-card')
+                expect(yt).to_be_visible()
+                expect(yt).to_contain_text('11 source-identified videos')
+                assert yt.locator('iframe').count() == 0, 'No video frame before Play'
+                yt_search = yt.get_by_role('searchbox', name='Search AbbeCAdventures indexed videos')
+                yt_search.fill('daycare')
+                expect(yt.get_by_role('status')).to_contain_text('1 of 3')
+                yt_search.fill('no-matching-video-xyz')
+                expect(yt.get_by_role('status')).to_contain_text('No indexed videos match')
+                yt_search.fill('')
+                with page.expect_download() as youtube_download:
+                    yt.get_by_role('button', name='Export indexed database').click()
+                exported_yt = json.loads(Path(youtube_download.value.path()).read_text())
+                assert len(exported_yt['videos']) == 11 and exported_yt['coverage']['complete'] is False
+                assert exported_yt['coverage']['communityPostsIndexed'] is False
+                yt.get_by_role('button', name='Play video in card').click()
+                expect(yt.locator('iframe')).to_have_attribute('src', 'https://www.youtube-nocookie.com/embed/cF6XusNOfjM')
+                yt.get_by_role('button', name='Stop playback').click()
+                expect(yt.locator('iframe')).to_have_count(0)
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'YouTube card overflow'
+                checks.append(f'{width}px: YouTube catalog, search, JSON export, opt-in iframe, Stop and no overflow')
+
+                page.goto(base+'/?card=abbecadventures-youtube', wait_until='domcontentloaded')
+                stage = page.locator('#oracleCardStage')
+                expect(stage.locator('[data-source-id="abbecadventures-youtube"] .youtube-creator-post-card')).to_be_visible(timeout=20000)
+                chooser = page.locator('#oracleCardChooser')
+                expect(chooser.locator('option[value^="source-abbecadventures"]')).to_have_count(12)
+                page.locator('#oracleCardDepartment').select_option('media')
+                page.locator('#oracleCardInventory').click()
+                chooser.select_option('source-abbecadventures-video-cF6XusNOfjM')
+                expect(stage.locator('[data-source-id="abbecadventures-video-cF6XusNOfjM"]')).to_be_visible()
+                checks.append(f'{width}px: 12 original YouTube source cards with media placement in Oracle')
                 context.close()
             browser.close()
     finally:
