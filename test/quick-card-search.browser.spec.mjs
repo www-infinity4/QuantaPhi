@@ -68,3 +68,26 @@ test('Android autocomplete fills on tap and leaves search submission under the v
  await page.locator('#go').click();
  await expect(page.locator('[data-quick-card-match="burger-king"]')).toBeVisible();
 });
+
+test('AI failure reuses attributed search evidence rather than repeating the same broker query',async({page})=>{
+ await prepare(page);
+ const topic='unique source reuse';
+ let originalBrokerRequests=0;
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
+  const url=new URL(route.request().url());
+  if(url.searchParams.get('q')!==topic||url.searchParams.get('categories')!=='general')return route.abort();
+  originalBrokerRequests++;
+  return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({results:[
+   {title:'Unique source reuse guide',url:'https://example.org/source-guide',content:'unique source reuse evidence'}
+  ]})});
+ });
+ await page.route('**/v1/chat',route=>route.fulfill({status:503,contentType:'application/json',body:'{"error":"offline"}'}));
+ await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+ await page.getByRole('searchbox',{name:'Search anything',exact:true}).fill(topic);
+ await page.locator('#go').click();
+ await expect(page.locator('#webSearchResults a').filter({hasText:'Unique source reuse guide'})).toBeVisible();
+ await expect(page.locator('#overview')).toContainText('Unique source reuse guide',{timeout:15000});
+ // Wait for the overview retry and evidence-only fallback; the preview alone is not completion.
+ await expect(page.locator('#status')).not.toContainText(/Building semantic field|preparing the AI overview|Retrying AI Overview/i,{timeout:15000});
+ expect(originalBrokerRequests).toBe(1);
+});
