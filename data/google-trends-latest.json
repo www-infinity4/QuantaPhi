@@ -3,12 +3,222 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T22:01:32.986074Z",
+  "checked_at": "2026-11-20T22:31:19.889918Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "air force one",
+      "query": "retirement age",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T22:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/currencies/articles/claim-social-security-62-check-095339976.html",
+        "https://www.cleveland.com/news/2026/11/social-security-retirement-age-change-here-are-the-important-date-to-know-with-2027-update.html",
+        "https://247wallst.com/personal-finance/2026/11/20/claimed-at-62-and-regret-it-at-67-you-can-switch-the-checks-off-and-earn-8-a-year-until-70-nothing-has-to-be-paid-back-and-your-spouses-benefit-on-your-record-stops-too/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWode2naO3Hr3foYisVdACMOiUzMeYlZwDT8Ka6lLG-ZDAcdlM0_0Pj1_smkw",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/currencies/articles/claim-social-security-62-check-095339976.html",
+          "title": "Claim Social Security at 62 and the Check Is 70% of the Full Amount. Wait Until 70 and It’s 124%. Here’s the Table for a Retiree Whose Pension Covers the Basics",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWode2naO3Hr3foYisVdACMOiUzMeYlZwDT8Ka6lLG-ZDAcdlM0_0Pj1_smkw"
+        },
+        {
+          "url": "https://www.cleveland.com/news/2026/11/social-security-retirement-age-change-here-are-the-important-date-to-know-with-2027-update.html",
+          "title": "Social Security retirement age change: Here are the important date to know with 2027 update",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbagSHxtQdZE1-UqJmQFbX9jkTjvfm8sCOAy8gq6du0edTd9rg8I3mGQW-9q8"
+        },
+        {
+          "url": "https://247wallst.com/personal-finance/2026/11/20/claimed-at-62-and-regret-it-at-67-you-can-switch-the-checks-off-and-earn-8-a-year-until-70-nothing-has-to-be-paid-back-and-your-spouses-benefit-on-your-record-stops-too/",
+          "title": "Claimed at 62 and Regret It? At 67 You Can Switch the Checks Off and Earn 8% a Year Until 70. Nothing Has to Be Paid Back, and Your Spouse's Benefit on Your Record Stops Too",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThonBQdPMDyCMhXrEfSzL6pEXqYIjoihwp24OxqyVXPTA8aeI4zS_0cOYp6H8"
+        }
+      ]
+    },
+    {
+      "query": "iowa state vs ucf",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-20T22:00:00Z",
+      "related_news_urls": [
+        "https://ucfknights.com/news/2026/11/19/ucfisu",
+        "https://www.cbssports.com/betting/news/iowa-state-ucf-odds-prediction-time-2026-week-12-college-football-friday-picks-best-bets/",
+        "https://sports.yahoo.com/articles/watch-ucf-knights-vs-iowa-172546656.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHdu4q0mQboO7IzFKvw8awDYkbc-LlhL4McsZ7OTRyHnQ-EHnmQly6xKtbbc",
+      "image_credit": "UCF Athletics",
+      "news": [
+        {
+          "url": "https://ucfknights.com/news/2026/11/19/ucfisu",
+          "title": "Football vs. Iowa State | Weather and Gameday Updates",
+          "publisher": "UCF Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHdu4q0mQboO7IzFKvw8awDYkbc-LlhL4McsZ7OTRyHnQ-EHnmQly6xKtbbc"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/iowa-state-ucf-odds-prediction-time-2026-week-12-college-football-friday-picks-best-bets/",
+          "title": "Iowa State vs. UCF odds, prediction, time: Week 12 college football Friday picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiz71HUjDk8Hz1UOEWx2NzdC8GE-zSoMr_QuozdP33lY3LruZYePH6FEYMNns"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-ucf-knights-vs-iowa-172546656.html",
+          "title": "How to Watch UCF Knights vs. Iowa State: TV Channel, Kickoff Time, and Everything You Need To Know",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvee6TcdSx0qnUI12l_j8yXqGW27FF932dE1y7fwKksVmvaCykeWObeUURDo8"
+        }
+      ]
+    },
+    {
+      "query": "weather tropical storm",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-20T22:00:00Z",
+      "related_news_urls": [
+        "https://weather.com/2026/11/20/forecast/regional/east-coast-storm-coastal-flooding-winds-rain-kyle",
+        "https://www.nytimes.com/2026/11/20/weather/tropical-storm-kyle-florida-rain-thanksgiving.html",
+        "https://www.accuweather.com/en/weather-news/tropical-wind-and-rainstorm-to-streak-north-near-us-east-coast-this-weekend-into-next-week/1960952"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2O2U_BtuvOSS5OD-38Uo4UJD0mGIQyQgXXWT70Zb7PikfJKZ2IMfk7AfXhiU",
+      "image_credit": "The Weather Channel",
+      "news": [
+        {
+          "url": "https://weather.com/2026/11/20/forecast/regional/east-coast-storm-coastal-flooding-winds-rain-kyle",
+          "title": "East Coast storm could become 'Kyle' this weekend",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2O2U_BtuvOSS5OD-38Uo4UJD0mGIQyQgXXWT70Zb7PikfJKZ2IMfk7AfXhiU"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/20/weather/tropical-storm-kyle-florida-rain-thanksgiving.html",
+          "title": "As a Storm Floods Florida, Heavy Rain Will Creep Up the East Coast",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XlHqnBP_kupn2xxlUVKno_Z0thIeQuj7GxKXA8XagnbUgglf7KuG597p6sI"
+        },
+        {
+          "url": "https://www.accuweather.com/en/weather-news/tropical-wind-and-rainstorm-to-streak-north-near-us-east-coast-this-weekend-into-next-week/1960952",
+          "title": "Tropical wind and rainstorm to streak north near US East Coast this weekend into next week",
+          "publisher": "AccuWeather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVnW-6wh-mlLhYpdw9cMtgZajf2kG_K4Lm_YykfbToowhnY7cE_HEYQlY97Lc"
+        }
+      ]
+    },
+    {
+      "query": "jonathan roumie",
       "approx_searches": "200+",
+      "published_at": "2026-11-20T22:00:00Z",
+      "related_news_urls": [
+        "https://people.com/jonathan-roumie-playing-jesus-the-chosen-overwhelming-exclusive-12261279",
+        "https://www.ewtnnews.com/world/us/jonathan-roumie-says-the-chosen-season-6-deepened-his-understanding-of-redemptive-suffering",
+        "https://www.nbcpalmsprings.com/manny-the-movie-guy/2026/11/20/behind-the-scenes-of-the-chosen-season-6-manny-the-movie-guy-visits-biblical-jerusalem"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLjmUdF0ypG0LvO49Q_nlLoOgpdQP569uO1AjIOACZru0iVyWxzu0q-lPq8B4",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/jonathan-roumie-playing-jesus-the-chosen-overwhelming-exclusive-12261279",
+          "title": "Jonathan Roumie Says the ‘Weight’ of Playing Jesus in The Chosen ‘Feels Overwhelming at Times’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLjmUdF0ypG0LvO49Q_nlLoOgpdQP569uO1AjIOACZru0iVyWxzu0q-lPq8B4"
+        },
+        {
+          "url": "https://www.ewtnnews.com/world/us/jonathan-roumie-says-the-chosen-season-6-deepened-his-understanding-of-redemptive-suffering",
+          "title": "Jonathan Roumie says ‘The Chosen’ Season 6 deepened his understanding of redemptive suffering",
+          "publisher": "EWTN News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRV81flaHBwwhu7L3V_nTi-SHwOSVb7PtNJ2Iqx7PUA_ndmgqbhPagnocDmKvU"
+        },
+        {
+          "url": "https://www.nbcpalmsprings.com/manny-the-movie-guy/2026/11/20/behind-the-scenes-of-the-chosen-season-6-manny-the-movie-guy-visits-biblical-jerusalem",
+          "title": "Behind the Scenes of “The Chosen” Season 6: Manny the Movie Guy Visits Biblical Jerusalem",
+          "publisher": "NBC Palm Springs",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQD9UHGxd6hYwVUazqYTVJDtutgatSxkMXocstY3akWwg71Pqli3pv5DwvcRTA"
+        }
+      ]
+    },
+    {
+      "query": "mary peltola doj probe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T21:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/19/us/politics/justice-department-gives-up-on-alaska-senate-lawsuit.html",
+        "https://www.yahoo.com/news/politics/article/final-2026-midterm-election-results-democrats-clinch-56-seat-senate-majority-with-peltolas-alaska-win-what-they-can--and-cant--do-next-184618858.html",
+        "https://www.foxnews.com/politics/dozens-fbi-doj-personnel-investigating-peltolas-alaska-victory"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuGeRD2munUrSPDz6lypuxnBrDyFdIi7yaHq6WWlx1Y7kplNJNH6iepZQSshs",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/19/us/politics/justice-department-gives-up-on-alaska-senate-lawsuit.html",
+          "title": "Justice Department Gives Up on Alaska Senate Lawsuit",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuGeRD2munUrSPDz6lypuxnBrDyFdIi7yaHq6WWlx1Y7kplNJNH6iepZQSshs"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/article/final-2026-midterm-election-results-democrats-clinch-56-seat-senate-majority-with-peltolas-alaska-win-what-they-can--and-cant--do-next-184618858.html",
+          "title": "Final 2026 midterm election results: Democrats clinch 56-seat Senate majority with Peltola's Alaska win. What they can — and can't — do next.",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPNxbZCQUZoKoni7GpEivAAlF17OuXQBELPrbZGdyNgrws277OAFcV_xc6E4Y"
+        },
+        {
+          "url": "https://www.foxnews.com/politics/dozens-fbi-doj-personnel-investigating-peltolas-alaska-victory",
+          "title": "Dozens of FBI and DOJ personnel are investigating Peltola's Alaska victory",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZRorPnoC2LS93KSTytPCsdTNB4DddKquNn8Wr79OxTI0EvH508riPTxpCJG0"
+        }
+      ]
+    },
+    {
+      "query": "jarren duran",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcsportsboston.com/mlb/boston-red-sox/red-sox-non-tender-candidates-duran-casas-among-potential-cuts/814783/",
+        "https://www.nytimes.com/athletic/7792647/2026/11/19/cubs-lineup-offseason-needs/",
+        "https://bleacherreport.com/articles/25535390-new-cubs-rumors-teruaki-sato-pursuit-jarren-duran-trade-interest-amid-red-sox-buzz"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ98EI4j0vLqsuCw-2Bs_S5jfTc0F1EKGE4Cb6poOllX3nNum4ZsvMRoMFCd4M",
+      "image_credit": "NBC Sports Boston",
+      "news": [
+        {
+          "url": "https://www.nbcsportsboston.com/mlb/boston-red-sox/red-sox-non-tender-candidates-duran-casas-among-potential-cuts/814783/",
+          "title": "Red Sox non-tender candidates: Duran, Casas among potential cuts",
+          "publisher": "NBC Sports Boston",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ98EI4j0vLqsuCw-2Bs_S5jfTc0F1EKGE4Cb6poOllX3nNum4ZsvMRoMFCd4M"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7792647/2026/11/19/cubs-lineup-offseason-needs/",
+          "title": "The Cubs are focused on their pitching issues. But they haven’t forgotten their lineup",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCbu94w4SJpZTLsz_cryuCzd1folDshGLS-ySOkDX7e2w6_wpkuiFecQJufMo"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25535390-new-cubs-rumors-teruaki-sato-pursuit-jarren-duran-trade-interest-amid-red-sox-buzz",
+          "title": "New Cubs Rumors on Teruaki Sato Pursuit, Jarren Duran Trade Interest amid Red Sox Buzz",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5KlqpvmMQLzyMWRa5W76LgCnbtg3Rt-MuSl2XrPUbIhOHlwzax2fkWZ_0r2k"
+        }
+      ]
+    },
+    {
+      "query": "air force one",
+      "approx_searches": "500+",
       "published_at": "2026-11-20T21:40:00Z",
       "related_news_urls": [
         "https://thehill.com/homenews/administration/6230274-trump-press-phones-confiscated-china/",
@@ -42,50 +252,85 @@
       ]
     },
     {
-      "query": "home alone",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T21:30:00Z",
+      "query": "gta 6 xbox auto upload bans",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T21:40:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/home-alone-macaulay-culkin-seth-rogen-evan-goldberg-1237230258/",
-        "https://www.theguardian.com/film/2026/nov/20/home-alone-sequel-macaulay-culkin",
-        "https://variety.com/2026/film/news/home-alone-reboot-disney-macaulay-culkin-seth-rogen-1236954344/"
+        "https://www.purexbox.com/news/2026/11/gta-6-players-warned-to-turn-off-auto-uploads-or-risk-getting-banned-on-xbox",
+        "https://twistedvoxel.com/gta-vi-xbox-suspensions-auto-upload-nudity/",
+        "https://opencritic.com/news/40036/gta-6-xbox-players-risk-getting-banned-if-they-dont-make-important-settings-change"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Fy--q9YIRB3JmOeRW_WTBzrug2Oq3FC6IddR9g6MxAdi7tQwaBIf5Opz5P0",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTTJKYWqe90IEIhXeVbe0NxX6NfCVwKmEVr21VZpIVGJlKRo-iZXdtwa5zjtQ",
+      "image_credit": "Pure Xbox",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/home-alone-macaulay-culkin-seth-rogen-evan-goldberg-1237230258/",
-          "title": "‘Home Alone’ Sequel With Macaulay Culkin In Early Works With Seth Rogen & Evan Goldberg Writing & Producing",
-          "publisher": "Deadline",
+          "url": "https://www.purexbox.com/news/2026/11/gta-6-players-warned-to-turn-off-auto-uploads-or-risk-getting-banned-on-xbox",
+          "title": "GTA 6 Players Warned To Turn Off Auto-Uploads Or Risk Getting Banned On Xbox",
+          "publisher": "Pure Xbox",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Fy--q9YIRB3JmOeRW_WTBzrug2Oq3FC6IddR9g6MxAdi7tQwaBIf5Opz5P0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTTJKYWqe90IEIhXeVbe0NxX6NfCVwKmEVr21VZpIVGJlKRo-iZXdtwa5zjtQ"
         },
         {
-          "url": "https://www.theguardian.com/film/2026/nov/20/home-alone-sequel-macaulay-culkin",
-          "title": "Home Alone sequel reportedly in development with Macaulay Culkin returning",
-          "publisher": "The Guardian",
+          "url": "https://twistedvoxel.com/gta-vi-xbox-suspensions-auto-upload-nudity/",
+          "title": "Xbox Players Report Account Suspensions Over GTA VI Clips Automatically Uploaded With Nudity",
+          "publisher": "TwistedVoxel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWSh9eNIQfWtxzMpb-JOjkI2hr-jQ8Is4P4Oj_gb_W2CPbnRIZYd_3vPfpeLQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMSIw-Qa15ovCZKXzfSit0LpEeQ-Cy5p8mMBx0ijZ78jGipGyYoI1GTEMkWEM"
         },
         {
-          "url": "https://variety.com/2026/film/news/home-alone-reboot-disney-macaulay-culkin-seth-rogen-1236954344/",
-          "title": "‘Home Alone’ Reboot in the Works at Disney from Macaulay Culkin, Seth Rogen and Evan Goldberg",
-          "publisher": "Variety",
+          "url": "https://opencritic.com/news/40036/gta-6-xbox-players-risk-getting-banned-if-they-dont-make-important-settings-change",
+          "title": "GTA 6 Xbox Players Risk Getting Banned If They Don't Make Important Settings Change",
+          "publisher": "OpenCritic",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTE3UVXUgrMjkPaXFExVfaYVgVUSxQeyeyklLZ2--3E8R5nq6KznsYw8NZgRI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_ut0bJ-5g8F0orp45P-qbuNQmJgCRM6kq4T9tu2_4cmswaNyYHwNyQmM9T1o"
+        }
+      ]
+    },
+    {
+      "query": "liberty basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:40:00Z",
+      "related_news_urls": [
+        "https://libertyflames.com/news/2026/11/18/mens-basketball-liberty-wins-3rd-straight-87-78-over-siu-in-charlotte",
+        "https://dailyegyptian.com/126301/sports/salukis-fall-short-after-second-half-surge-suffer-87-78-loss-to-flames/",
+        "https://sports.betmgm.com/en/blog/ncaab/southern-illinois-liberty-prediction-odds-picks-nov-17-college-basketball-jaa/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd4Tlc6X6BKSzfcv7A3ZU0J5VwhB2uYTl39L4Ta6pm-pxla8mL53s80dhXa-Q",
+      "image_credit": "libertyflames.com",
+      "news": [
+        {
+          "url": "https://libertyflames.com/news/2026/11/18/mens-basketball-liberty-wins-3rd-straight-87-78-over-siu-in-charlotte",
+          "title": "Liberty Wins 3rd Straight, 87-78 Over SIU in Charlotte",
+          "publisher": "libertyflames.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd4Tlc6X6BKSzfcv7A3ZU0J5VwhB2uYTl39L4Ta6pm-pxla8mL53s80dhXa-Q"
+        },
+        {
+          "url": "https://dailyegyptian.com/126301/sports/salukis-fall-short-after-second-half-surge-suffer-87-78-loss-to-flames/",
+          "title": "Salukis fall short after second-half surge, suffer 87-78 loss to Flames",
+          "publisher": "The Daily Egyptian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLZMvh9Wae81rjV0LWwVAsRC-VafVTXynBmVchVjf1wBguNAjXrk7WrwHo4rY"
+        },
+        {
+          "url": "https://sports.betmgm.com/en/blog/ncaab/southern-illinois-liberty-prediction-odds-picks-nov-17-college-basketball-jaa/",
+          "title": "Southern Illinois vs Liberty Prediction, Odds & Best Bets Today – NCAAB, Nov. 17",
+          "publisher": "sports.betmgm.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJTSsM4mlgcMN0CayDRWkHAYUaTItHMJm5W-qdfbKmaAG3_2d-tm-Ixlrp_N8"
         }
       ]
     },
     {
       "query": "troy melton",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-20T21:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/mlb/story/_/id/50543664/sources-tigers-troy-melton-reach-6-year-465m-extension",
         "https://www.mlb.com/news/tigers-troy-melton-contract-extension",
-        "https://sports.yahoo.com/articles/tigers-agree-46-5-million-213221394.html"
+        "https://www.mlbtraderumors.com/2026/11/tigers-troy-melton-agree-to-six-year-extension.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRatR9P6GLEJY8CKLvxg4fdzUfloL_e-fV3kXC5kgn7tkN20JCPTbhH2IJkJ8I",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKPj3SXDCSlLeOtUAhDYzsFNCA9yN8PzW_LTqt-LwHMQFPaCNBMTJeEpJ3i60",
       "image_credit": "ESPN",
       "news": [
         {
@@ -93,7 +338,7 @@
           "title": "Sources - Tigers, Troy Melton reach 6-year, $46.5M extension",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRatR9P6GLEJY8CKLvxg4fdzUfloL_e-fV3kXC5kgn7tkN20JCPTbhH2IJkJ8I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKPj3SXDCSlLeOtUAhDYzsFNCA9yN8PzW_LTqt-LwHMQFPaCNBMTJeEpJ3i60"
         },
         {
           "url": "https://www.mlb.com/news/tigers-troy-melton-contract-extension",
@@ -103,248 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw4CPjRcfey8ROhW916bO3uYnjXOkgS0oFSIDmR14zhqC_xnWi59bhmST9AWI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/tigers-agree-46-5-million-213221394.html",
-          "title": "Tigers agree to $46.5 million extension with breakout 25-year-old pitcher",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.mlbtraderumors.com/2026/11/tigers-troy-melton-agree-to-six-year-extension.html",
+          "title": "Tigers, Troy Melton Agree To Six-Year Extension",
+          "publisher": "MLB Trade Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDssYJaiNnqwsbWW0HJILcZXIAvMpPN2AmUUHSKXydsycLD3TlI5AD3KTBoNg"
-        }
-      ]
-    },
-    {
-      "query": "cme group tour championship",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T21:30:00Z",
-      "related_news_urls": [
-        "https://www.lpga.com/news/2026/featured-groups-2026-cme-group-tour-championship",
-        "https://www.golfdigest.com/story/heres-the-prize-money-payout-for-each-golfer-at-the-lpga-2026-cme-group-tour-championship",
-        "https://www.golfchannel.com/lpga/news/cme-group-tour-championship-2026-round-2-tee-times-pairings-how-to-watch"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmr0_TQAf42dGbnoaOrklW6R2a6MbTRVu-O17-YqbeqKJ4sjXTssPusn0Z594",
-      "image_credit": "LPGA",
-      "news": [
-        {
-          "url": "https://www.lpga.com/news/2026/featured-groups-2026-cme-group-tour-championship",
-          "title": "Featured Groups: 2026 CME Group Tour Championship",
-          "publisher": "LPGA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmr0_TQAf42dGbnoaOrklW6R2a6MbTRVu-O17-YqbeqKJ4sjXTssPusn0Z594"
-        },
-        {
-          "url": "https://www.golfdigest.com/story/heres-the-prize-money-payout-for-each-golfer-at-the-lpga-2026-cme-group-tour-championship",
-          "title": "Here’s the prize money payout for each golfer at the LPGA’s 2026 CME Group Tour Championship",
-          "publisher": "Golf Digest",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROmYX7NI7xXakFhxXxLGIZ0bVj0CENxAad426iIHugjBsGhI9kcGW5I2iyQpE"
-        },
-        {
-          "url": "https://www.golfchannel.com/lpga/news/cme-group-tour-championship-2026-round-2-tee-times-pairings-how-to-watch",
-          "title": "CME Group Tour Championship 2026: Round 2 tee times, pairings, how to watch",
-          "publisher": "Golf Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVotDioUQQI4oX2trGARtyJFPp1RpYaqeO1lhi9kx5gIEeF0qM4oDASOh6yks"
-        }
-      ]
-    },
-    {
-      "query": "iowa state vs ucf prediction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T21:20:00Z",
-      "related_news_urls": [
-        "https://ucfknights.com/news/2026/11/19/ucfisu",
-        "https://www.cbssports.com/betting/news/iowa-state-ucf-odds-prediction-time-2026-week-12-college-football-friday-picks-best-bets/",
-        "https://sports.yahoo.com/articles/watch-ucf-knights-vs-iowa-172546656.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHdu4q0mQboO7IzFKvw8awDYkbc-LlhL4McsZ7OTRyHnQ-EHnmQly6xKtbbc",
-      "image_credit": "UCF Athletics",
-      "news": [
-        {
-          "url": "https://ucfknights.com/news/2026/11/19/ucfisu",
-          "title": "Football vs. Iowa State | Weather and Gameday Updates",
-          "publisher": "UCF Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHdu4q0mQboO7IzFKvw8awDYkbc-LlhL4McsZ7OTRyHnQ-EHnmQly6xKtbbc"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/iowa-state-ucf-odds-prediction-time-2026-week-12-college-football-friday-picks-best-bets/",
-          "title": "Iowa State vs. UCF odds, prediction, time: Week 12 college football Friday picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiz71HUjDk8Hz1UOEWx2NzdC8GE-zSoMr_QuozdP33lY3LruZYePH6FEYMNns"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-ucf-knights-vs-iowa-172546656.html",
-          "title": "How to Watch UCF Knights vs. Iowa State: TV Channel, Kickoff Time, and Everything You Need To Know",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvee6TcdSx0qnUI12l_j8yXqGW27FF932dE1y7fwKksVmvaCykeWObeUURDo8"
-        }
-      ]
-    },
-    {
-      "query": "idaho state basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T21:20:00Z",
-      "related_news_urls": [
-        "https://isubengal.com/caldwells-second-half-surge-carries-young-idaho-state-womens-basketball-past-cal-poly-as-bengals-open-2-1/",
-        "https://www.bleachernation.com/how-to-watch/2026/11/20/loyola-marymount-vs-idaho-state-womens-basketball-free-live-stream-tv-channel-how-to-watch/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIHM28iLT0AxwNTu2SkgRB-SUIXOCt_X-KteLR3C-LunjIoq-xbHvDRsqpfac",
-      "image_credit": "ISU Bengal",
-      "news": [
-        {
-          "url": "https://isubengal.com/caldwells-second-half-surge-carries-young-idaho-state-womens-basketball-past-cal-poly-as-bengals-open-2-1/",
-          "title": "Caldwell’s second-half surge carries young Idaho State Women’s Basketball past Cal Poly as Bengals open 2-1",
-          "publisher": "ISU Bengal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIHM28iLT0AxwNTu2SkgRB-SUIXOCt_X-KteLR3C-LunjIoq-xbHvDRsqpfac"
-        },
-        {
-          "url": "https://www.bleachernation.com/how-to-watch/2026/11/20/loyola-marymount-vs-idaho-state-womens-basketball-free-live-stream-tv-channel-how-to-watch/",
-          "title": "Loyola Marymount vs. Idaho State Women's Basketball: Free Live Stream, TV Channel, How to Watch",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMl6XM_13H5lUJxDENEOAVobXhK8C9rMYcvDDczjqxC8VEVebe1qzRb5YR1Bs"
-        }
-      ]
-    },
-    {
-      "query": "when does the stock market close",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T21:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-veterans-day-153919156.html",
-        "https://www.facebook.com/chp/posts/in-observance-of-veterans-day-our-offices-will-be-closed-please-dial-9-1-1-for-e/1564034125762646/",
-        "https://www.cambridgema.gov/departments/publicworks/news/2026/11/cityofcambridgeveteransdayholidayclosuresandserviceinformationforwednesdaynovember11"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-veterans-day-153919156.html",
-          "title": "Is the stock market open on Veterans Day?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k"
-        },
-        {
-          "url": "https://www.facebook.com/chp/posts/in-observance-of-veterans-day-our-offices-will-be-closed-please-dial-9-1-1-for-e/1564034125762646/",
-          "title": "In observance of Veteran's Day, our offices will be closed. Please dial 9-1-1 for emergencies.",
-          "publisher": "Facebook",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSi4VV702DBsWoxXZrDX8hDz-ML2A-pjBZEvx0sBD5FYb9roQ3yhIPyjjPHNy8"
-        },
-        {
-          "url": "https://www.cambridgema.gov/departments/publicworks/news/2026/11/cityofcambridgeveteransdayholidayclosuresandserviceinformationforwednesdaynovember11",
-          "title": "Veterans Day Holiday Closures and Service Information for Wednesday November 11",
-          "publisher": "the City of Cambridge (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeo2KXDxNU5PpEe5S0xIfwWPE0h5l87mf_RUISctO968L_a7MnU8WnPBJkwmI"
-        }
-      ]
-    },
-    {
-      "query": "athletic bilbao",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T21:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/ckg5r28gd2l1t",
-        "https://bookies.com/uk/news/expert-football-betting-tips-todays-best-football-tips-athletic-club-vs-espanyol",
-        "https://www.tufutbolero.com/en/news/athletic-line-up-yeray-prados-and-sancet-vs-espanyol-93d4c1"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/ckg5r28gd2l1t",
-          "title": "Athletic Club vs Espanyol: Spanish La Liga stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
-        },
-        {
-          "url": "https://bookies.com/uk/news/expert-football-betting-tips-todays-best-football-tips-athletic-club-vs-espanyol",
-          "title": "Expert Football Betting Tips - Today's Best Football Tips For Athletic Club vs Espanyol",
-          "publisher": "Bookies.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJQ8E6NS-niqlS9cFh1siGWwWq8kpnvYJoKwoSLFyG_UPkRbnhOmXHbRBcolM"
-        },
-        {
-          "url": "https://www.tufutbolero.com/en/news/athletic-line-up-yeray-prados-and-sancet-vs-espanyol-93d4c1",
-          "title": "Athletic line up Yeray, Prados and Sancet vs Espanyol",
-          "publisher": "Tu Futbolero",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5Jff8UIzgopRVoypufkBnU2PBPoAJaPSVDJronheztTjbZVsoq0tRFJ8TSIE"
-        }
-      ]
-    },
-    {
-      "query": "zscaler",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T21:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
-        "https://www.bloomberg.com/news/articles/2026-11-20/crowdstrike-is-in-talks-to-buy-cybersecurity-firm-zscaler",
-        "https://ua.news/en/dovkolo-svitu/aktsiyi-kiberbezpekovoyi-kompaniyi-zscaler-zrosli-na-20-na-tli-peregovoriv-shchodo-yiyi-kupivli-cnbc"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkSjjswmuGeRbvBSWmuZg-9bFrl0I7cBvSEe3shs1xyMsABtaJVrOsXKAtq-c",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
-          "title": "Zscaler stock jumps 20% on report that CrowdStrike in talks to buy security vendor",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkSjjswmuGeRbvBSWmuZg-9bFrl0I7cBvSEe3shs1xyMsABtaJVrOsXKAtq-c"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-20/crowdstrike-is-in-talks-to-buy-cybersecurity-firm-zscaler",
-          "title": "CrowdStrike Is in Talks to Buy Cybersecurity Firm Zscaler",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKCR1Rm5_MsaAdKm3cDd4S_lrRSg8YqCEEShnWTwn2Ye9sAwhf-roDOQPhsiE"
-        },
-        {
-          "url": "https://ua.news/en/dovkolo-svitu/aktsiyi-kiberbezpekovoyi-kompaniyi-zscaler-zrosli-na-20-na-tli-peregovoriv-shchodo-yiyi-kupivli-cnbc",
-          "title": "Zscaler shares rise 20% amid talks over its acquisition — CNBC",
-          "publisher": "UA.NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkiKdGttgUKJpGGcDZ1TNTTaPTvcteP_WAkQV3rzFvU55P5cUftI5X2rtgBRI"
-        }
-      ]
-    },
-    {
-      "query": "tarik skubal",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T21:10:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/tarik-skubal-long-term-contract-with-mets-likelihood",
-        "https://sports.yahoo.com/articles/jonah-tong-love-join-forces-205527872.html",
-        "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1tw5DZxXmtkSQZ5wkuxaasfPwQZ5QA2lx5zmhSfSHTSTzU8GyHlklFKdQt5M",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/tarik-skubal-long-term-contract-with-mets-likelihood",
-          "title": "If Mets are to land big fish Skubal, Stearns needs to sail uncharted waters",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1tw5DZxXmtkSQZ5wkuxaasfPwQZ5QA2lx5zmhSfSHTSTzU8GyHlklFKdQt5M"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jonah-tong-love-join-forces-205527872.html",
-          "title": "Jonah Tong would love to join forces with ‘bulldog’ Tarik Skubal as he navigates his Mets future",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRThlbjOHjfmrrtNnRyyN6CxB_o8vJGlmvKV46ZOVLTvN6npEd5sM-NWnSQ7J4"
-        },
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans",
-          "title": "Every MLB team's chance of signing Skubal -- and their backup plans",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4k_TsL7nzfWH6UscKfSwGSeFul869g5SCnfN3rDQhlyWeuA-NJzivsTFJ1T8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSS-jGNBO8iDQBdJKANZOACrQwJn7YPmylHpDgtZzG8ljh7tkATuLeRkkRwxI"
         }
       ]
     }
