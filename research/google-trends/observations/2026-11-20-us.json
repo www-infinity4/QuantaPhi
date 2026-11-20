@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T02:01:34.076266Z",
+  "checked_at": "2026-11-20T02:30:55.201842Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jj watt",
+      "query": "salt lake vs seattle sounders",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T02:10:00Z",
+      "related_news_urls": [
+        "https://www.soundersfc.com/news/seavrsl-101-preview-all-you-need-to-know-when-the-sounders-host-real-salt-lake-in-the-2026-audi-mls-cup-playoffs-wildcard-round-pres-by-ticketmaster",
+        "https://www.sounderatheart.com/2026/11/expectations-be-damned-sounders-enter-playoffs-with-something-to-prove/",
+        "https://www.seattletimes.com/sports/sounders/sounders-try-to-salvage-disappointing-season-in-mls-playoffs/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3bPSSARRdB4xLGygx_pXon_JB_X7gouJokCHisTZSO9jhkPviF82wZxkJicc",
+      "image_credit": "Seattle Sounders FC",
+      "news": [
+        {
+          "url": "https://www.soundersfc.com/news/seavrsl-101-preview-all-you-need-to-know-when-the-sounders-host-real-salt-lake-in-the-2026-audi-mls-cup-playoffs-wildcard-round-pres-by-ticketmaster",
+          "title": "SEAvRSL 101 Preview: All you need to know when the Sounders host Real Salt Lake in the 2026 Audi MLS Cup Playoffs Wildcard Round, pres. by Ticketmaster",
+          "publisher": "Seattle Sounders FC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3bPSSARRdB4xLGygx_pXon_JB_X7gouJokCHisTZSO9jhkPviF82wZxkJicc"
+        },
+        {
+          "url": "https://www.sounderatheart.com/2026/11/expectations-be-damned-sounders-enter-playoffs-with-something-to-prove/",
+          "title": "Expectations be damned: Sounders enter playoffs with something to prove",
+          "publisher": "Sounder at Heart",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdvnKCny0F9t8Ez0v6KT9Dw7r1SIF92U298OXgisigwqPgBRXBqT-ZZ3mVdJI"
+        },
+        {
+          "url": "https://www.seattletimes.com/sports/sounders/sounders-try-to-salvage-disappointing-season-in-mls-playoffs/",
+          "title": "How Sounders can still salvage a disappointing season",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdYUa0OI8KiaVLUOIhxbX_h1UhAcaimodTAlksHBG0dataAJq4k8C8UeDIwFk"
+        }
+      ]
+    },
+    {
+      "query": "i play rocky cast",
       "approx_searches": "500+",
-      "published_at": "2026-11-20T01:40:00Z",
+      "published_at": "2026-11-20T02:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/emmett-johnson-rookie-surge-changes-013853154.html",
-        "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article318144271.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-on-emmett-johnson-my-hat-goes-off-to-him"
+        "https://www.detroitnews.com/story/entertainment/movies/2026/11/18/i-play-rocky-is-a-genuine-crowd-pleaser-with-a-winning-spirit/92830714007/",
+        "https://www.hollywoodreporter.com/movies/movie-news/i-play-rocky-stars-rocky-producer-50th-anniversary-1236758733/",
+        "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0jhiFgMl1N3GB91svK3jHLXp5fHWqokG-Aq4G7v4Noyo8OClKFcSr50ko26w",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGx7y3-BHya-Pe4dSmloOjO3wPFX3S2Mh8ORHZ5tnB9999EOfc68e2y7wVzm0",
+      "image_credit": "The Detroit News",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/emmett-johnson-rookie-surge-changes-013853154.html",
-          "title": "Emmett Johnson’s Rookie Surge Changes Chiefs Backfield Plan",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.detroitnews.com/story/entertainment/movies/2026/11/18/i-play-rocky-is-a-genuine-crowd-pleaser-with-a-winning-spirit/92830714007/",
+          "title": "'I Play Rocky,' stirring story of the making of 'Rocky,' is a knockout",
+          "publisher": "The Detroit News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0jhiFgMl1N3GB91svK3jHLXp5fHWqokG-Aq4G7v4Noyo8OClKFcSr50ko26w"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGx7y3-BHya-Pe4dSmloOjO3wPFX3S2Mh8ORHZ5tnB9999EOfc68e2y7wVzm0"
         },
         {
-          "url": "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article318144271.html",
-          "title": "Why Chiefs’ Emmett Johnson continues to tune out the noise despite recent success",
-          "publisher": "Kansas City Star",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/i-play-rocky-stars-rocky-producer-50th-anniversary-1236758733/",
+          "title": "‘I Play Rocky’ Stars Unite With Original ‘Rocky’ Producer for Film’s 50th Anniversary Celebration",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1iJYUniBNYiXgxklkI1nMr8TGrXlfASIwzfAhU8Ao6uYjVAZzF0u6VcCVH5g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMcXKxD2L5vjCUU32eyMZhZDMI6tf8JaqvWqe-hrViItrw7CLAjNJP0-8sh5Q"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-on-emmett-johnson-my-hat-goes-off-to-him",
-          "title": "Andy Reid on Emmett Johnson: My hat goes off to him",
-          "publisher": "NBC Sports",
+          "url": "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/",
+          "title": "AnnaSophia Robb on I Play Rocky and Representing the Underdogs",
+          "publisher": "Rotten Tomatoes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-MIOwfYx2JY-A0LpSoTTUqme9BEzr7A6oeGYnSo4ifmAzhVqYncaNKicfHQI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHzZAMq1Da1-_MtJxA99UToYuETyIiF185b_QNNiz5pA2atuK2m6KAZ5zTUQ"
         }
       ]
     },
     {
-      "query": "carlie irsay-gordon",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T01:40:00Z",
+      "query": "rutgers basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T02:10:00Z",
       "related_news_urls": [
-        "https://www.indystar.com/story/sports/columnists/gregg-doyel/2026/11/17/colts-in-flux-would-carlie-irsay-gordon-hire-bruce-arians-74-as-coach/92782478007/",
-        "https://www.espn.com/nfl/story/_/id/50521994/colts-anthony-richardson-daniel-jones-quarterback",
-        "https://sports.yahoo.com/articles/colts-rumors-daniel-jones-stinks-180128968.html"
+        "https://247sports.com/college/rutgers/article/rutgers-vs-unlv-preview-how-to-watch-tv-radio-live-thread-292975913/",
+        "https://www.bdtonline.com/sports/national_sports/rutgers-scarlet-knights-take-on-the-unlv-rebels/article_96467f87-01c9-531e-9b3c-d34a59076f4e.html",
+        "https://www.on3.com/sites/the-knight-report/news/how-to-watch-rutgers-unlv-pregame-info-gameday-central/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmdG3KknwyN11vBgiubBOO96Nch3QYPGk8VusdEYIVU7c9uo8Z6OKyJY871WA",
-      "image_credit": "IndyStar",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnrxz3GC_EYbi_ffQge0JcOPxbKQIwN3Mtw72lXvh0O7Luv2bkUbNgBxmaRY",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.indystar.com/story/sports/columnists/gregg-doyel/2026/11/17/colts-in-flux-would-carlie-irsay-gordon-hire-bruce-arians-74-as-coach/92782478007/",
-          "title": "Doyel: Should Carlie Irsay-Gordon hire Bruce Arians, 74, to coach Colts? Better question: Why NOT?",
-          "publisher": "IndyStar",
+          "url": "https://247sports.com/college/rutgers/article/rutgers-vs-unlv-preview-how-to-watch-tv-radio-live-thread-292975913/",
+          "title": "Rutgers vs UNLV Preview: How to watch, tv, radio, live thread",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmdG3KknwyN11vBgiubBOO96Nch3QYPGk8VusdEYIVU7c9uo8Z6OKyJY871WA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnrxz3GC_EYbi_ffQge0JcOPxbKQIwN3Mtw72lXvh0O7Luv2bkUbNgBxmaRY"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50521994/colts-anthony-richardson-daniel-jones-quarterback",
-          "title": "Why can't Richardson beat out struggling Jones as Colts QB1?",
-          "publisher": "ESPN",
+          "url": "https://www.bdtonline.com/sports/national_sports/rutgers-scarlet-knights-take-on-the-unlv-rebels/article_96467f87-01c9-531e-9b3c-d34a59076f4e.html",
+          "title": "Rutgers Scarlet Knights take on the UNLV Rebels",
+          "publisher": "Bluefield Daily Telegraph",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVHehAJlRbc5Vz35vwxySCfTmL81fb7zRDrW8tKrUOtaAa2xqyU4RvDZEszqc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8_SEDXmSB6SixxLSLmjeaTZouryvvI7Nr4xbJXMS8YRucw0ORsr2M4kgRnGI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/colts-rumors-daniel-jones-stinks-180128968.html",
-          "title": "Colts rumors: Daniel Jones stinks, but Shane Steichen is a real Anthony Richardson hater",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.on3.com/sites/the-knight-report/news/how-to-watch-rutgers-unlv-pregame-info-gameday-central/",
+          "title": "How to watch Rutgers / UNLV; Pregame Info, More: Gameday Central",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpasBg2CAUbCtlsuoVKwiMA0LNcx2SgGHp4QD_tYGeewDeHSK4ZIjKAtsj05g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpJ0WvgPNEKr68cf4app4jO7hxlRfVK262uipWq7Yiey4yWT9re0Q8I85F-UI"
         }
       ]
     },
     {
-      "query": "calgary flames",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T01:40:00Z",
+      "query": "christian bale",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T02:10:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/flames/news/5-things-flames-vs-wild-19-11-26",
-        "https://www.startribune.com/minnesota-wild-calgary-flames-score-today-quinn-hughes-kirill-kaprizov-stats-jesper-wallstedt-saves/601918868",
-        "https://sports.yahoo.com/videos/calgary-flames-welcome-red-hot-191632265.html"
+        "https://www.usatoday.com/story/entertainment/movies/2026/11/18/christian-bale-al-davis-madden-movie/92792897007/",
+        "https://ew.com/why-madden-star-christian-bale-confused-first-nfl-game-12261769"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Ywcu6Z9pTrgCJ0nJL2Qks62QTy5yZZ8CMsgrkPCmUfKUT8FGk-2hAojXpvI",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/flames/news/5-things-flames-vs-wild-19-11-26",
-          "title": "5 Things - Flames vs. Wild | Calgary Flames",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Ywcu6Z9pTrgCJ0nJL2Qks62QTy5yZZ8CMsgrkPCmUfKUT8FGk-2hAojXpvI"
-        },
-        {
-          "url": "https://www.startribune.com/minnesota-wild-calgary-flames-score-today-quinn-hughes-kirill-kaprizov-stats-jesper-wallstedt-saves/601918868",
-          "title": "Live: Wild looking to extend 12-game point streak in road rematch with Flames",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbWJid54X11CNj0Ucnh97dOdJea_fpvoUY3z4YKtv3KY747BQwC57WoPZqNJo"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/calgary-flames-welcome-red-hot-191632265.html",
-          "title": "Calgary Flames Welcome Red-Hot Minnesota Wild to the Saddledome",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEj1IlCvHyxq8HkbFUDFBE-LkwNClVtKeVuPwIceifw88Q2ojSehkFeVHiNUo"
-        }
-      ]
-    },
-    {
-      "query": "deion burks",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T01:40:00Z",
-      "related_news_urls": [
-        "https://www.rotoballer.com/player-news/deion-burks-not-worth-trying-until-results-improve/1997427",
-        "https://sports.yahoo.com/articles/colts-week-10-snap-counts-135256904.html",
-        "https://www.fantasypros.com/nfl/news/619251/deion-burks-to-see-expanded-role.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeL_CRI_tD-SRn-qSo2ooo1Ng00_Avll4siNxCV4iYxbuxZ2_qklyyxtnQtJY",
-      "image_credit": "RotoBaller",
-      "news": [
-        {
-          "url": "https://www.rotoballer.com/player-news/deion-burks-not-worth-trying-until-results-improve/1997427",
-          "title": "Deion Burks Week 11 Outlook for Fantasy Football (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeL_CRI_tD-SRn-qSo2ooo1Ng00_Avll4siNxCV4iYxbuxZ2_qklyyxtnQtJY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/colts-week-10-snap-counts-135256904.html",
-          "title": "Colts Week 10 Snap Counts: Deion Burks, Anthony Gould Get Season Highs Without Josh Downs",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzmGXk5LYz-b1eKgAvVV9nT3jAO04UI2aex1vdGIILiK_ykghiW3FxXKetNU"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/news/619251/deion-burks-to-see-expanded-role.php",
-          "title": "Deion Burks to see expanded role",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUPpaHltZZtE0LFJ7hq5XnKSAzwRhYeBCMtxUVkR5TAbjaS9fVC0y6t0jT-jo"
-        }
-      ]
-    },
-    {
-      "query": "quez watkins",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T01:30:00Z",
-      "related_news_urls": [
-        "https://www.colts.com/news/colts-sign-wr-quez-watkins-to-53-man-roster-from-practice-squad-place-lb-jaylon-carlies-on-injured-reserve",
-        "https://sports.yahoo.com/articles/colts-sign-former-steelers-wr-221159527.html",
-        "https://www.yardbarker.com/nfl/articles/indianapolis_colts_sign_new_wide_receiver_before_rivalry_game/s1_17355_44577102"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDlYhDOCo1y2qeXoFHtbFXAskXkYQXdEmN_qQc8dg9CGZ-w_yMbnEB3Mb3dU",
-      "image_credit": "Colts.com",
-      "news": [
-        {
-          "url": "https://www.colts.com/news/colts-sign-wr-quez-watkins-to-53-man-roster-from-practice-squad-place-lb-jaylon-carlies-on-injured-reserve",
-          "title": "Colts sign WR Quez Watkins to 53-man roster from practice squad, place LB Jaylon Carlies on injured reserve",
-          "publisher": "Colts.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDlYhDOCo1y2qeXoFHtbFXAskXkYQXdEmN_qQc8dg9CGZ-w_yMbnEB3Mb3dU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/colts-sign-former-steelers-wr-221159527.html",
-          "title": "Colts Sign Former Steelers WR to Active Roster",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStyIxFVR091NHTRTmSBqvgZuISfLl9FnmYtAphxR_uIRQ9kaKZkp-tHXlo1gA"
-        },
-        {
-          "url": "https://www.yardbarker.com/nfl/articles/indianapolis_colts_sign_new_wide_receiver_before_rivalry_game/s1_17355_44577102",
-          "title": "Indianapolis Colts Sign New Wide Receiver Before Rivalry Game",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy8mlvk08Y0JEkZCmS5fVuzTO5BeD_ohCu0bYrxRcIo62uFSmCgERSntIBuYg"
-        }
-      ]
-    },
-    {
-      "query": "anthony edwards",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T01:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50532808/timberwolves-edwards-no-clue-return",
-        "https://sports.yahoo.com/nba/article/timberwolves-star-anthony-edwards-speaks-on-decision-to-undergo-knee-surgery-has-no-clear-return-timeline-whenever-my-knee-tells-me-its-ready-then-ill-be-ready-200950484.html",
-        "https://bleacherreport.com/articles/25535368-anthony-edwards-opens-knee-injury-timeline-return-1st-comments-surgery"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6_3fLmdKkTRaTXGhg1awpK9mZ1V2qFPp6F6l-alNZHtlN0aIqG6zBmJ0_vw",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1JqNo6nXMTIZnCsXCA8X17EJW7U6Y32S1jS37YM0_mIrlNFZtaB7jSXgcLSo",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50532808/timberwolves-edwards-no-clue-return",
-          "title": "Timberwolves' Edwards has 'no clue' on when he will return",
-          "publisher": "ESPN",
+          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/18/christian-bale-al-davis-madden-movie/92792897007/",
+          "title": "Christian Bale reveals what baffled him the first time he watched NFL",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6_3fLmdKkTRaTXGhg1awpK9mZ1V2qFPp6F6l-alNZHtlN0aIqG6zBmJ0_vw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGgLiTsrie9HpB6XdfKJN6P-9V2l4k9Ihk5Wm9iwYjLepDbU_Jsk88pWTlizo"
         },
         {
-          "url": "https://sports.yahoo.com/nba/article/timberwolves-star-anthony-edwards-speaks-on-decision-to-undergo-knee-surgery-has-no-clear-return-timeline-whenever-my-knee-tells-me-its-ready-then-ill-be-ready-200950484.html",
-          "title": "Timberwolves star Anthony Edwards speaks on decision to undergo knee surgery, has no clear return timeline: 'Whenever my knee tells me it's ready, then I'll be ready'",
-          "publisher": "Yahoo Sports",
+          "url": "https://ew.com/why-madden-star-christian-bale-confused-first-nfl-game-12261769",
+          "title": "Why ‘Madden’ star Christian Bale was confused by his first American football game",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpvMZk6ry3gFXFwHJStPRDtOQowFtnDbk_DIdT1N3OILVW1MxDObZmDzTlEY0"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25535368-anthony-edwards-opens-knee-injury-timeline-return-1st-comments-surgery",
-          "title": "Anthony Edwards Opens Up on Knee Injury, Timeline to Return in 1st Comments Since Surgery",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKAeTf1Hh9HZ0764Ek7oc4GBQ69i_w5_RGmg2rM8kR4fAOiE97_44ElGXYSRs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSosQ6yvmB45EkE6wNWjRG3hYprspn4fpRjXa3pdBusZwTYoup-sCIz74xk-yo"
         }
       ]
     },
     {
-      "query": "marvin harrison jr",
+      "query": "thanksgiving football games",
       "approx_searches": "500+",
-      "published_at": "2026-11-20T01:30:00Z",
+      "published_at": "2026-11-20T02:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/colts-declare-both-cbs-ots-inactive-for-week-11",
-        "https://sports.yahoo.com/articles/happened-marvin-harrison-jr-return-000054799.html",
-        "https://www.fantasypros.com/nfl/news/621040/marvin-harrison-jr-hamstring-ruled-out-thursday.php"
+        "https://www.washingtonpost.com/opinions/2026/11/19/nfl-wants-own-thanksgiving-christmas-new-year-eve/",
+        "https://www.usatoday.com/story/sports/nfl/2026/11/19/thanksgiving-nfl-games-2026-schedule-matchups-teams/92836301007/",
+        "https://www.bostonglobe.com/2026/11/19/opinion/nfl-thanksgiving-games-peter-king/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbRClWSvfMfncC-2cHudjZJZqcn0IKWxSGN-qXfKbRfonKBBBZA-rYC_A6tLM",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotaYmh3MtAy-7fvIeLdQeVunR_aK7kA60yskfCpOpDZHg2oaaGW-ZGNQkimY",
+      "image_credit": "The Washington Post",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-19/colts-declare-both-cbs-ots-inactive-for-week-11",
-          "title": "Colts declare both CBs, OTs inactive for Week 11",
-          "publisher": "NBC Sports",
+          "url": "https://www.washingtonpost.com/opinions/2026/11/19/nfl-wants-own-thanksgiving-christmas-new-year-eve/",
+          "title": "Opinion | The NFL ate Thanksgiving. Christmas and New Year’s could be next.",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbRClWSvfMfncC-2cHudjZJZqcn0IKWxSGN-qXfKbRfonKBBBZA-rYC_A6tLM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotaYmh3MtAy-7fvIeLdQeVunR_aK7kA60yskfCpOpDZHg2oaaGW-ZGNQkimY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/happened-marvin-harrison-jr-return-000054799.html",
-          "title": "What Happened to Marvin Harrison Jr., and When Will He Return? Latest on Texans WR’s Injury and Why He’s Out for Week 11 vs. Colts on TNF",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/19/thanksgiving-nfl-games-2026-schedule-matchups-teams/92836301007/",
+          "title": "What NFL games are on Thanksgiving? Teams, matchups, TV channels for every game",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9WJvJFvEPkoR1EOvBtvjog-zbE2XTxLSGcA3JdoITPUO20BBy0nOMSPsLtOM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRT3pYEL9Z9Sc7S7fe5FmNUOe314QpEvIgGEWK63IwlNfOJfLuaVQxWoSxdpk"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/news/621040/marvin-harrison-jr-hamstring-ruled-out-thursday.php",
-          "title": "Marvin Harrison Jr. (hamstring) ruled out for Thursday",
-          "publisher": "FantasyPros",
+          "url": "https://www.bostonglobe.com/2026/11/19/opinion/nfl-thanksgiving-games-peter-king/",
+          "title": "Opinion | How the NFL captured Thanksgiving",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLlgW4uHB6-qAQvBaMGS5jrtTguLHQT-Rb3uG4CmrOiXcf9DdcFL4N2UXFB44"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQESMsXXaVXoqlNWit9nQCHUTd_VxAS4_5haZiRAPmEMPyIhwOex8Z8F00vZGM"
         }
       ]
     },
     {
-      "query": "accidente",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T01:30:00Z",
+      "query": "toronto maple leafs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T02:10:00Z",
       "related_news_urls": [
-        "https://www.telemundolaredo.tv/2026/11/20/cierran-carril-en-la-carretera-83-tras-accidente-entre-3-vehculos/",
-        "https://www.univision.com/noticias/video-capta-el-momento-en-que-un-motociclista-se-estrella-tras-caer-en-un-bache-y-fallece-en-la-ciudad-de-mexico-video-vertical",
-        "https://www.jornada.com.mx/noticia/2026/11/19/capital/familiares-de-motociclista-fallecido-por-socavon-niegan-apoyo-de-autoridades"
+        "https://www.sportsnet.ca/nhl/article/mckenna-promoted-nylander-dropped-as-maple-leafs-mix-lines/",
+        "https://www.nytimes.com/athletic/7795172/2026/11/19/maple-leafs-lineup-gavin-mckenna-power-play/",
+        "https://www.tsn.ca/nhl/article/ice-chips-stolarz-to-start-nylander-moved-down-and-mckenna-bumped-up-as-leafs-face-kings/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS814Nmcl1uWuH6mNHa3jkWK0GIjJb6GuBeKqYEfCzyjmucI8oJ4z1pBosxivE",
-      "image_credit": "Telemundo Laredo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvastCD8GL7C_-oJxGK8uNKACWJ3UbIge131GisCzqKhXXm6rJHEMAlXk2sCY",
+      "image_credit": "Sportsnet.ca",
       "news": [
         {
-          "url": "https://www.telemundolaredo.tv/2026/11/20/cierran-carril-en-la-carretera-83-tras-accidente-entre-3-vehculos/",
-          "title": "Cierran carril en la carretera 83 tras accidente entre 3 vehículos",
-          "publisher": "Telemundo Laredo",
+          "url": "https://www.sportsnet.ca/nhl/article/mckenna-promoted-nylander-dropped-as-maple-leafs-mix-lines/",
+          "title": "McKenna promoted, Nylander dropped as Maple Leafs mix lines",
+          "publisher": "Sportsnet.ca",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS814Nmcl1uWuH6mNHa3jkWK0GIjJb6GuBeKqYEfCzyjmucI8oJ4z1pBosxivE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvastCD8GL7C_-oJxGK8uNKACWJ3UbIge131GisCzqKhXXm6rJHEMAlXk2sCY"
         },
         {
-          "url": "https://www.univision.com/noticias/video-capta-el-momento-en-que-un-motociclista-se-estrella-tras-caer-en-un-bache-y-fallece-en-la-ciudad-de-mexico-video-vertical",
-          "title": "Video capta el momento en que un motociclista se estrella tras caer en un bache y fallece en la Ciudad de México",
-          "publisher": "Univision",
+          "url": "https://www.nytimes.com/athletic/7795172/2026/11/19/maple-leafs-lineup-gavin-mckenna-power-play/",
+          "title": "Sliding Maple Leafs shake up lineup; Gavin McKenna rejoins PP1",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbuJovJvvPJj5nKLnBz7z-PFNZDihc3P6IU-ZoHJ_uXvc1jn2nhr8Uxl4M16I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDgsgD3YoXJS8DfO7_6w5IiFMIkvw29Wx-T2zparKgnsNrbmuWuMnGRcBKF-I"
         },
         {
-          "url": "https://www.jornada.com.mx/noticia/2026/11/19/capital/familiares-de-motociclista-fallecido-por-socavon-niegan-apoyo-de-autoridades",
-          "title": "Injusto que hayan tapado el socavón después de su muerte: esposa de motociclista",
-          "publisher": "La Jornada",
+          "url": "https://www.tsn.ca/nhl/article/ice-chips-stolarz-to-start-nylander-moved-down-and-mckenna-bumped-up-as-leafs-face-kings/",
+          "title": "Ice Chips: Stolarz to start, Nylander moved down and McKenna bumped up as Leafs face Kings",
+          "publisher": "TSN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJj0tj1QuXobJf2xaRLO5836On0Wlyjs70SKU6GEEZNq6MpV9RdQJdEk_PGb0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbWjVx4bjtKLMxct1wGhrMLsNguaaEg74FRV-xCPalvuzyRn9PNoB3Yo_0FKk"
         }
       ]
     },
     {
-      "query": "henry nicholls",
+      "query": "oregon basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T02:10:00Z",
+      "related_news_urls": [
+        "https://www.oregonlive.com/collegebasketball/2026/11/new-look-oregon-oregon-state-basketball-to-face-off-at-moda-center.html",
+        "https://247sports.com/college/oregon/article/oregon-basketball-faces-its-toughest-test-yet-against-unbeaten-oregon-state-292941311/",
+        "https://bvmsports.com/2026/11/18/tony-stubblefield-take-it-up-to-another-level/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZjMPDbczLeHTQhWsJC7sb8le9YAGiHkqT7ysyouvuqiP8vC0_0n3TfFt75g4",
+      "image_credit": "OregonLive.com",
+      "news": [
+        {
+          "url": "https://www.oregonlive.com/collegebasketball/2026/11/new-look-oregon-oregon-state-basketball-to-face-off-at-moda-center.html",
+          "title": "Oregon, Oregon State rivalry returns to Portland after 28 years",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZjMPDbczLeHTQhWsJC7sb8le9YAGiHkqT7ysyouvuqiP8vC0_0n3TfFt75g4"
+        },
+        {
+          "url": "https://247sports.com/college/oregon/article/oregon-basketball-faces-its-toughest-test-yet-against-unbeaten-oregon-state-292941311/",
+          "title": "Oregon basketball faces its toughest test yet against unbeaten Oregon State",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpdeDM-Kf8ZLXGpzZDCu1txwTuVg0ZSO0eQXKCNHE5MELmENeayBF7jpeJ6wE"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/18/tony-stubblefield-take-it-up-to-another-level/",
+          "title": "Tony Stubblefield: \"Take it up to another level.\"",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdvJUxcqkPTEoanvIUdSguJQ3DxHIYVL__dxLxyOa-kKIxB2wuSC7YO-ir8mI"
+        }
+      ]
+    },
+    {
+      "query": "patrick stewart",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T02:00:00Z",
+      "related_news_urls": [
+        "https://www.tmz.com/2026/11/19/patrick-stewart-cause-of-death/",
+        "https://deadline.com/2026/11/patrick-stewart-cause-of-death-1237229735/",
+        "https://people.com/patrick-stewart-cause-of-death-confirmed-12201341"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiddJ_ox_hBgxE-sNSFuXdk8kjZHtpploUf96-7Q_HK6Yk9S5ETEVnIgxWDv8",
+      "image_credit": "TMZ",
+      "news": [
+        {
+          "url": "https://www.tmz.com/2026/11/19/patrick-stewart-cause-of-death/",
+          "title": "Patrick Stewart's Cause of Death Revealed",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiddJ_ox_hBgxE-sNSFuXdk8kjZHtpploUf96-7Q_HK6Yk9S5ETEVnIgxWDv8"
+        },
+        {
+          "url": "https://deadline.com/2026/11/patrick-stewart-cause-of-death-1237229735/",
+          "title": "Patrick Stewart Cause Of Death Revealed",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRFYfP44EvBbmnBlYk5pj2Lm5Vqmfn8jUMCyJyQb5EG2IqW5cz-2ydVLj8CF4"
+        },
+        {
+          "url": "https://people.com/patrick-stewart-cause-of-death-confirmed-12201341",
+          "title": "Patrick Stewart’s Official Cause of Death Confirmed: Report",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD9L281OcN-lOJkjbDoPwKU_5psPneM4mCfjH6ulsmessBPdD1E00jxhWnpCE"
+        }
+      ]
+    },
+    {
+      "query": "ncis",
       "approx_searches": "1000+",
-      "published_at": "2026-11-20T01:30:00Z",
+      "published_at": "2026-11-20T02:00:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/live-match-blog-2",
-        "https://sports.yahoo.com/articles/phillips-118-zealand-reaches-317-002002527.html",
-        "https://www.cricbuzz.com/cricket-news/140977/india-vs-new-zealand-1st-test-2026-bingo-at-the-basin-reseve-but-indias-grip-slips-cricbuzzcom"
+        "https://www.imdb.com/news/ni66116726/?ref_=int_nwr_1",
+        "https://www.tvline.com/2319796/ncis-origins-season-3-episode-6-franks-muse-watson-kyle-schmid-interview/",
+        "https://deadline.com/2026/11/ncis-origins-gibbs-teaser-s3-episode-6-1237225533/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTi2IBl-dtfiSBgKaXZOtwm-QG_WXMrFJllkXi6XBv1xcj2yIzdXWveWJHK-nk",
-      "image_credit": "Cricinfo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXBHAmuOTlbN3LZWi_Qm-I6lzKIQ0ugDdorSLvpFnvkjVb_QiuB74n01DclZI",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/live-match-blog-2",
-          "title": "NZ vs Ind, 1st Test, Live Blog - Akash, Krishna into NZ tail but Nicholls firm",
-          "publisher": "Cricinfo",
+          "url": "https://www.imdb.com/news/ni66116726/?ref_=int_nwr_1",
+          "title": "‘NCIS: Origins’ Season 3 Episode 6 Recap and Ending Explained: What Gibbs Learns About Lala",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTi2IBl-dtfiSBgKaXZOtwm-QG_WXMrFJllkXi6XBv1xcj2yIzdXWveWJHK-nk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXBHAmuOTlbN3LZWi_Qm-I6lzKIQ0ugDdorSLvpFnvkjVb_QiuB74n01DclZI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/phillips-118-zealand-reaches-317-002002527.html",
-          "title": "Phillips out for 118. New Zealand reaches 317-6 at lunch on Day 2 of 1st cricket test against India",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.tvline.com/2319796/ncis-origins-season-3-episode-6-franks-muse-watson-kyle-schmid-interview/",
+          "title": "NCIS: Origins: Muse Watson And Kyle Schmid Tell All About Playing Franks, Past And Present",
+          "publisher": "TVLine",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc5i2WT_fXmg5HwNA8Ryfiwcw6TAdnkxySuLKhF-CpY4ZGKR7FKfOPbOung3Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTveMyYHVOlatGAPhj8CggEABJzxTZtOgtvdgDva_CkcAR1tc_I5WSE9jKrWmM"
         },
         {
-          "url": "https://www.cricbuzz.com/cricket-news/140977/india-vs-new-zealand-1st-test-2026-bingo-at-the-basin-reseve-but-indias-grip-slips-cricbuzzcom",
-          "title": "Bingo at the Basin as India’s grip slips",
-          "publisher": "Cricbuzz",
+          "url": "https://deadline.com/2026/11/ncis-origins-gibbs-teaser-s3-episode-6-1237225533/",
+          "title": "‘NCIS: Origins’ Sets Gibbs Up For Meeting Across Time In New Teaser As Lala Mystery Intensifies",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYFnndEjx1oBc_RE9ib3IAewkqmgqIsO1WK70mLw78nwhVXILzRuJB-l4qUbs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMuRjnLZVskdBJexGt5Zez9De-Q62XklwtJheIIlSMFTIn15mR0XLYdCRURuQ"
         }
       ]
     },
     {
-      "query": "miss universe 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T01:30:00Z",
+      "query": "law and order svu",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T02:00:00Z",
       "related_news_urls": [
-        "https://people.com/miss-universe-vietnam-2026-stripped-of-crown-after-violating-conditions-of-earlier-title-suspension-12264743",
-        "https://www.yahoo.com/entertainment/celebrity/articles/miss-universe-vietnam-title-revoked-230143707.html",
-        "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/miss-universe-vietnam-stripped-title"
+        "https://people.com/why-isnt-law-and-order-svu-on-tonight-november-2026-12262884",
+        "https://www.yahoo.com/entertainment/tv/articles/law-order-special-victims-unit-151722253.html",
+        "https://www.imdb.com/news/ni66113941/?ref_=nmnw_art_perm"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5o9-XseDk0M5GtEXyftRvz_Ca0xgQ6xE5RuW6ATS_Xht3T7v05Jc8bVhRnyc",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Pz9Zw-5FCjvxLm0SA5FfuoazL9PM5YM51nxxDjAosD1cSCwY5s5_nxpOIdE",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/miss-universe-vietnam-2026-stripped-of-crown-after-violating-conditions-of-earlier-title-suspension-12264743",
-          "title": "Miss Universe Vietnam 2026 Stripped of Title Just 48 Days After Being Crowned",
+          "url": "https://people.com/why-isnt-law-and-order-svu-on-tonight-november-2026-12262884",
+          "title": "Why Isn’t Law & Order: Special Victims Unit on Tonight? What We Know About the Season 28 Schedule Change",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5o9-XseDk0M5GtEXyftRvz_Ca0xgQ6xE5RuW6ATS_Xht3T7v05Jc8bVhRnyc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Pz9Zw-5FCjvxLm0SA5FfuoazL9PM5YM51nxxDjAosD1cSCwY5s5_nxpOIdE"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/miss-universe-vietnam-title-revoked-230143707.html",
-          "title": "Miss Universe Vietnam title revoked after suspension, contract dispute",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/law-order-special-victims-unit-151722253.html",
+          "title": "‘Law and Order: Special Victims Unit’ Has Surprise Schedule Change on NBC After 600th Episode",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt_dQPkoQfM8wtYH7EyvK3NSZ5N8QWS05qvNLDlg2xF7ec1Q6nN4Zj_sistqk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XT_Z0f73Q4lrF421v3fBgHEP43R6wEDz-u3PkpOZg3lxPAor26TVMLBT6Eo"
         },
         {
-          "url": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/miss-universe-vietnam-stripped-title",
-          "title": "Miss Universe Vietnam Loses Crown After Just 48 Days as Pageant Controversy Escalates",
-          "publisher": "Complex",
+          "url": "https://www.imdb.com/news/ni66113941/?ref_=nmnw_art_perm",
+          "title": "'Svu' Officially Goes on Break After Its 600th Episode",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEa8z0YFxN5zZcNYtfNqbK1PRrjMTzvT8XLIMf-e7I59GCmpNB_h1-ytOofk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUD1kgzvuVj6nX6eUqdV9ttu6CQzsRt9OBCDDqo4sWrMYepaL-S5Q-oXTVH90"
         }
       ]
     }
