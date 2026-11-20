@@ -1,4 +1,4 @@
-name: Infinity Open Browser Bridge policy
+name: Infinity Open Browser Bridge policy and isolation
 on:
   pull_request:
     paths:
@@ -19,10 +19,36 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Syntax, URL policy and DNS regressions
+      - name: Syntax, URL, route and Compose policy tests
         run: |
           node --check tools/open-browser-bridge/policy.mjs
           node --check tools/open-browser-bridge/dns-policy.mjs
+          node --check tools/open-browser-bridge/transport.mjs
           node --check tools/open-browser-bridge/request-policy.mjs
           node --check tools/open-browser-bridge/browser-bridge.mjs
+          node --check tools/open-browser-bridge/network-probe.mjs
+          node --check tools/open-browser-bridge/chromium-smoke.mjs
           node --test tools/open-browser-bridge/*.test.mjs
+  kernel-isolation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build isolated Tor and Chromium containers
+        run: |
+          cd tools/open-browser-bridge
+          docker compose -f compose.tor.yml build --pull tor browser
+          docker compose -f compose.tor.yml up -d tor
+      - name: Verify kernel-level direct egress denial in browser namespace
+        run: |
+          cd tools/open-browser-bridge
+          docker compose -f compose.tor.yml run --rm --no-deps browser network-probe.mjs
+      - name: Verify real sandboxed Chromium and blocked metadata request
+        run: |
+          cd tools/open-browser-bridge
+          docker compose -f compose.tor.yml run --rm --no-deps browser chromium-smoke.mjs
+      - name: Remove containers, private networks and temporary state
+        if: always()
+        run: |
+          cd tools/open-browser-bridge
+          docker compose -f compose.tor.yml down -v --remove-orphans
