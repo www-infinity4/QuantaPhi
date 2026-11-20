@@ -4,6 +4,7 @@ import {mountOfficialViewer} from './quanta-official-viewer.mjs';
 import {mountAvatarAiCard} from './avatar-ai-card.mjs';
 import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
+import {AI_VENTURES} from './infinity-ai-ventures.mjs';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -43,6 +44,10 @@ export const QUICK_CARD_SOURCES=Object.freeze([
 const PCLA_DISCOVERY=findDiscovery('pcla-picocela');
 export const ACTIVE_SOURCE_CARDS=Object.freeze([
  ...QUICK_CARD_SOURCES,
+ // Existing first-party product entries. The same Oracle carousel moves their
+ // original card nodes; no new Bubbles model/session is instantiated here.
+ ...AI_VENTURES.map(v=>source(v.id,v.name,v.kind,v.feature,v.official,v.featureUrl,
+   v.focus,v.details,{venture:true,businessModel:v.businessModel,readiness:v.readiness})),
  ...(PCLA_DISCOVERY?[source(PCLA_DISCOVERY.id,PCLA_DISCOVERY.name,PCLA_DISCOVERY.category,
    PCLA_DISCOVERY.feature,PCLA_DISCOVERY.official,PCLA_DISCOVERY.url,
    PCLA_DISCOVERY.study,PCLA_DISCOVERY.study,PCLA_DISCOVERY)]:[])
@@ -53,7 +58,8 @@ export const ACTIVE_SOURCE_CARDS=Object.freeze([
 export const PUBLIC_SOURCE_IDS=Object.freeze([
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
- 'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela'
+ 'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela',
+ ...AI_VENTURES.map(v=>v.id)
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>{
@@ -215,13 +221,14 @@ function starterCard(card){
  item.append(createCardArtwork(card,true));
  if(card.id!=='google'&&card.id!=='bing')item.append(el('p','iqc-kind',card.kind));
  const tools=el('div','iqc-inline-tools');mountCardTools(tools,card);item.append(tools);
+ if(card.venture)item.append(el('p','iqc-muted',card.businessModel+' · '+card.readiness));
  if(card.id==='chatgpt')mountOfficialViewer(item,card.id);
  if(card.id==='avatar-ai')mountAvatarAiCard(item);
  askAiTools(item,card);
  // Search cards are already complete with their own actual search fields.
  if(!['google','bing'].includes(card.id)){
   const actions=el('div','iqc-actions');
-  actions.append(link(card.id==='avatar-ai'?'Open ChatGPT · prompt destination':'Official '+card.name+' website',card.official));
+  actions.append(link(card.id==='avatar-ai'?'Open ChatGPT · prompt destination':card.venture?'Explore '+card.name:'Official '+card.name+' website',card.official));
   if(card.id==='microsoft-ai-builder'){
    const open=link('Build with Bubbles','/source-quick-card.html?card=microsoft-ai-builder','iqc-primary');open.target='_self';
    actions.append(open,link('Your Microsoft AI fork',card.secondUrl));
@@ -259,6 +266,7 @@ function mountDetail(){
  const tools=el('div','iqc-tools');mountCardTools(tools,card);host.append(tools);
  if(card.id==='chatgpt')mountOfficialViewer(host,card.id);
  if(card.id==='avatar-ai')mountAvatarAiCard(host);
+ if(card.venture)host.append(el('p','iqc-muted',card.businessModel+' · '+card.readiness));
  askAiTools(host,card);
  const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio);const mini=link('Try portable interactive card ↗','/starmaker-embed.html','iqc-primary');mini.target='_self';actions.append(mini)}actions.append(link(card.id==='avatar-ai'?'Open ChatGPT · prompt destination':'Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
  const about=el('section','iqc-feature');
@@ -266,6 +274,11 @@ function mountDetail(){
   about.append(el('h3','','Start your partial Avatar AI in ChatGPT'),
    el('p','','This QuantaPhi card supplies a reusable prompt, not an AI login or automatic conversation reader. ChatGPT works with whatever personal context, files and connected sources your own ChatGPT account can actually access.'),
    el('p','iqc-muted','Copy the prompt, open ChatGPT, paste and send. Review any proposed changes there. Ongoing scans and agent-to-agent background updates are future integrations, not enabled by this card.'));
+ }else if(card.venture){
+  about.append(el('h3','','Use the existing Bubbles brain'),
+   el('p','','This Infinity AI product uses the shared Bubbles context and existing authenticated tools. It does not start another assistant or borrow your owner permissions.'),
+   el('p','iqc-muted','On the homepage, choose this card and tap Ask Bubbles about this card. Review the prepared question before sending.'));
+  about.append(link('Open shared Bubbles', 'https://quantaphi.org/bubbles.html', 'iqc-primary'));
  }else{
   about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));
   installBubble(card);
