@@ -1,0 +1,33 @@
+name: Copilot original source card safety
+on:
+  pull_request:
+    paths:
+      - 'copilot-card-tool.mjs'
+      - 'source-quick-cards.mjs'
+      - 'quanta-card-experience.css'
+      - 'test/copilot-card-tool.test.mjs'
+      - 'test/copilot-current-integration.test.mjs'
+      - '.github/workflows/copilot-card-form.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'copilot-card-tool.mjs'
+      - 'source-quick-cards.mjs'
+      - 'test/copilot-card-tool.test.mjs'
+      - 'test/copilot-current-integration.test.mjs'
+jobs:
+  source-card:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax
+        run: |
+          node --check copilot-card-tool.mjs
+          node --check source-quick-cards.mjs
+      - name: Copilot prompt and zero-fake-provider assertion
+        run: node --test test/copilot-card-tool.test.mjs test/copilot-current-integration.test.mjs
