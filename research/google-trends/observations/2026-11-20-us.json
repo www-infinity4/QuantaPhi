@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T21:01:24.891339Z",
+  "checked_at": "2026-11-20T21:31:03.309240Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "porto vs paredes",
+      "query": "crwd stock",
       "approx_searches": "1000+",
-      "published_at": "2026-11-20T20:40:00Z",
+      "published_at": "2026-11-20T21:10:00Z",
       "related_news_urls": [
-        "https://www.abola.pt/noticias/claudio-ramos-e-mais-dez-o-onze-provavel-do-fc-porto-para-o-paredes-2026111918140012358",
-        "https://sapo.pt/artigo/farioli-promove-muitas-mudancas-no-onze-para-a-taca-de-portugal-6b00a06df92df73836253388",
-        "https://www.fcporto.pt/pt/noticias/20261120-pt-o-onze-do-fc-porto-para-a-estreia-na-taca-de-portugal"
+        "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-crwd-getting-investor-attention-033346621.html",
+        "https://www.fool.com/investing/2026/11/19/why-crowdstrike-holdings-stock-flew-while-the-market-flopped-today/",
+        "https://www.tikr.com/blog/cantor-fitzgerald-raises-its-crowdstrike-target-to-275-is-it-still-too-low"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfG-X4PoWmL5Skdio4oc9JFZLc4DQ8Oz67AlYB9qnZHrLsb3FMm4nfplmE5Ms",
-      "image_credit": "A Bola",
-      "news": [
-        {
-          "url": "https://www.abola.pt/noticias/claudio-ramos-e-mais-dez-o-onze-provavel-do-fc-porto-para-o-paredes-2026111918140012358",
-          "title": "Cláudio Ramos e mais dez: o onze provável do FC Porto para o Paredes",
-          "publisher": "A Bola",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfG-X4PoWmL5Skdio4oc9JFZLc4DQ8Oz67AlYB9qnZHrLsb3FMm4nfplmE5Ms"
-        },
-        {
-          "url": "https://sapo.pt/artigo/farioli-promove-muitas-mudancas-no-onze-para-a-taca-de-portugal-6b00a06df92df73836253388",
-          "title": "Farioli promove muitas mudanças no onze para a Taça de Portugal",
-          "publisher": "SAPO",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2uUgca9xfwxaYKtKooolu52OpoN0_KjNr271etznfAxI-VJzrq8ujJZNmncc"
-        },
-        {
-          "url": "https://www.fcporto.pt/pt/noticias/20261120-pt-o-onze-do-fc-porto-para-a-estreia-na-taca-de-portugal",
-          "title": "Notícias - O onze do FC Porto para a estreia na Taça de Portugal",
-          "publisher": "FC Porto",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFxzrV1o35eNGWMF7Y8hTZ8SeOk9wf8fmbjjI23LHj3Pb25ZrsGa3NCeRSt7Q"
-        }
-      ]
-    },
-    {
-      "query": "spcx stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T20:40:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/articles/spacex-stock-price-ai-slump-c3557145",
-        "https://finance.yahoo.com/video/what-does-spacex-have-that-anthropic-doesnt-why-the-stock-is-losing-steam-202232861.html",
-        "https://www.forbes.com/sites/eriksherman/2026/11/20/spacex-stock-fell-below-its-ipo-in-34-days-anthropics-could-today/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTm2v5rdTio5ZDHYf4Lz1Pgxg3yPN-DKyynfFxy1Yh4-Lxs-uDQkcq4MuBJzx4",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/articles/spacex-stock-price-ai-slump-c3557145",
-          "title": "Three Ways SpaceX Stock Can Buck the AI Slump",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTm2v5rdTio5ZDHYf4Lz1Pgxg3yPN-DKyynfFxy1Yh4-Lxs-uDQkcq4MuBJzx4"
-        },
-        {
-          "url": "https://finance.yahoo.com/video/what-does-spacex-have-that-anthropic-doesnt-why-the-stock-is-losing-steam-202232861.html",
-          "title": "What does SpaceX have that Anthropic doesn't? Why the stock is losing steam",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1CnWOdAEcE0WoMRSplD6jg42yu3HmqYRRChbqOCho6yFV_q5bigUTPeswEkA"
-        },
-        {
-          "url": "https://www.forbes.com/sites/eriksherman/2026/11/20/spacex-stock-fell-below-its-ipo-in-34-days-anthropics-could-today/",
-          "title": "SpaceX Stock Fell Below Its IPO In 34 Days; Anthropic’s Could Today",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4j45qsh8lQGpU9igxvXrI7-BPEmOOgN81jy5Hng-uBSyhSp_vmhT-Xg4p7Z8"
-        }
-      ]
-    },
-    {
-      "query": "ben affleck",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T20:40:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/ben-affleck-jennifer-garner-reunite-ahead-thanksgiving-12267230",
-        "https://www.theaustralian.com.au/arts/news-of-the-week-jennifer-garner-reflects-on-incredible-part-of-ben-affleck-marriage/video/75793ab6de375b238ab608fa0407c979",
-        "https://www.tmz.com/2026/11/20/jennifer-lopez-no-creative-control-greatest-love-story-never-told/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKs89WsmXtxnasrqJrBZbM-SO3eFsgilK9YKaLWiQB6-hKcYFfL3Cea3cV150",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/ben-affleck-jennifer-garner-reunite-ahead-thanksgiving-12267230",
-          "title": "Ben Affleck Steps Out With Ex Jennifer Garner Ahead of Thanksgiving in Rare Public Outing",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKs89WsmXtxnasrqJrBZbM-SO3eFsgilK9YKaLWiQB6-hKcYFfL3Cea3cV150"
-        },
-        {
-          "url": "https://www.theaustralian.com.au/arts/news-of-the-week-jennifer-garner-reflects-on-incredible-part-of-ben-affleck-marriage/video/75793ab6de375b238ab608fa0407c979",
-          "title": "NEWS OF THE WEEK: Jennifer Garner reflects on ‘incredible’ part of Ben Affleck marriage",
-          "publisher": "The Australian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDjoV_s8UcI0m1R96URqunQ2sVMglQRkVz6YwZSgRqg2--AKmG9TSReybg4PI"
-        },
-        {
-          "url": "https://www.tmz.com/2026/11/20/jennifer-lopez-no-creative-control-greatest-love-story-never-told/",
-          "title": "J Lo Ceded Creative Control Over 'Greatest Love Story' To Ben Affleck, Says It Was 'Disappointing'",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1g6OhQKXDfrrWnjm7ZmsrDcKR7ThTn8kN3ZiK12gPGbMUZluLcSO9psZtMiI"
-        }
-      ]
-    },
-    {
-      "query": "stephen a smith",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T20:40:00Z",
-      "related_news_urls": [
-        "https://www.pennlive.com/sports/2026/11/espn-analyst-goes-after-stephen-a-smith-over-disturbing-racial-take-on-lakers.html",
-        "https://wng.org/opinions/a-black-and-white-issue-1794876567",
-        "https://sports.yahoo.com/articles/doesnt-matter-look-walker-kessler-002400289.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDuYkTPdg-3QS3gHRed7jeS8u2EAopWYo2vpE6fyC34GpNyqZayG65M28ggc",
-      "image_credit": "PennLive.com",
-      "news": [
-        {
-          "url": "https://www.pennlive.com/sports/2026/11/espn-analyst-goes-after-stephen-a-smith-over-disturbing-racial-take-on-lakers.html",
-          "title": "ESPN analyst goes after Stephen A. Smith over ‘disturbing’ racial take on Lakers",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDuYkTPdg-3QS3gHRed7jeS8u2EAopWYo2vpE6fyC34GpNyqZayG65M28ggc"
-        },
-        {
-          "url": "https://wng.org/opinions/a-black-and-white-issue-1794876567",
-          "title": "A black-and-white issue",
-          "publisher": "WORLD News Group",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEB-f1SFv7PxMvhRpcqBx7NAo-_pDHpCDOfyx6g_SxOX9Xt25qkJ6Jy9rxXBk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/doesnt-matter-look-walker-kessler-002400289.html",
-          "title": "\"It doesn't matter what you look like\" - Walker Kessler fires back at criticism that the Lakers have too many white players",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkNDZQVBu_5MaBK9pK2S3LpRVVPxwWGmv-KhYvHwaV40XaMykR4GDwG4iwtrk"
-        }
-      ]
-    },
-    {
-      "query": "gavin sheets",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T20:40:00Z",
-      "related_news_urls": [
-        "https://www.mlbtraderumors.com/2026/11/padres-gavin-sheets-agree-to-three-year-deal.html",
-        "https://cubbiescrib.com/cubs-could-get-a-surprise-outfield-gift-from-padres-non-tender-decision",
-        "https://friarsonbase.com/why-non-tendering-gavin-sheets-could-cost-the-padres-more-than-it-saves"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmCX2UEappik8gOHjuyWlmK7DJ6wplh52EHEpeWyfHXnTVWswEplSqVb0p91g",
-      "image_credit": "MLB Trade Rumors",
-      "news": [
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/padres-gavin-sheets-agree-to-three-year-deal.html",
-          "title": "Padres, Gavin Sheets Agree To Three-Year Deal",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmCX2UEappik8gOHjuyWlmK7DJ6wplh52EHEpeWyfHXnTVWswEplSqVb0p91g"
-        },
-        {
-          "url": "https://cubbiescrib.com/cubs-could-get-a-surprise-outfield-gift-from-padres-non-tender-decision",
-          "title": "Cubs could get a surprise outfield gift from Padres’ non-tender decision",
-          "publisher": "Cubbies Crib",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZmCpGtvj49H4YvQjK4mGRPjCZ1AFGkdOKzdWZT6pL0RFF9tPSqtlwgUxDCjQ"
-        },
-        {
-          "url": "https://friarsonbase.com/why-non-tendering-gavin-sheets-could-cost-the-padres-more-than-it-saves",
-          "title": "Why non-tendering Gavin Sheets could cost the Padres more than it saves",
-          "publisher": "Friars on Base",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnx6w6sZRY6hKS2iOtB-sCnU3-CA7lHy7yaNfSnGX2Srb4QvLHczgzWG1PrZg"
-        }
-      ]
-    },
-    {
-      "query": "dell stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T20:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/technology/ai/articles/ai-backlog-might-change-case-171345062.html",
-        "https://www.benzinga.com/trading-ideas/movers/26/11/63470675/why-is-dell-stock-falling-on-friday",
-        "https://www.zacks.com/stock/news/3032534/dell-technologies-and-draftkings-have-been-highlighted-as-zacks-bull-and-bear-of-the-day"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVDOdcNuxMJCkM822QrEHaCqLWb7kuqzBvxKdYYKLh1lw3In6M9hKHoaVH2Yw",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/technology/ai/articles/ai-backlog-might-change-case-171345062.html",
-          "title": "AI Backlog Might Change The Case For Investing In Dell Technologies (DELL)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-crwd-getting-investor-attention-033346621.html",
+          "title": "CrowdStrike (CRWD) is Getting Investor Attention — Here’s Why",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVDOdcNuxMJCkM822QrEHaCqLWb7kuqzBvxKdYYKLh1lw3In6M9hKHoaVH2Yw"
         },
         {
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63470675/why-is-dell-stock-falling-on-friday",
-          "title": "Why Is Dell Stock Falling on Friday?",
-          "publisher": "Benzinga",
+          "url": "https://www.fool.com/investing/2026/11/19/why-crowdstrike-holdings-stock-flew-while-the-market-flopped-today/",
+          "title": "Why CrowdStrike Holdings Stock Flew While the Market Flopped Today",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0TnWK5Zcu7yEbMFbitkc1_x7n7rPDBH13sVuCH6ATZaiorV1H3CWoIeeJNJ0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhZR25DYBdJ-30-XAHdyVdUES9Z5j6u4zYhA477rw-EFoiwN00FMqDhB4y-8"
         },
         {
-          "url": "https://www.zacks.com/stock/news/3032534/dell-technologies-and-draftkings-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
-          "title": "Dell Technologies and DraftKings have been highlighted as Zacks Bull and Bear of the Day",
-          "publisher": "Zacks Investment Research",
+          "url": "https://www.tikr.com/blog/cantor-fitzgerald-raises-its-crowdstrike-target-to-275-is-it-still-too-low",
+          "title": "Cantor Fitzgerald Raises Its CrowdStrike Target to $275. Is It Still Too Low?",
+          "publisher": "TIKR.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-9l2n34mJhrFLAYW0-6ye1s-kY20hKPeUt5mjVBhmrtGqr0aVeoWQfOVSOI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKcIRipuY0ehv22x3ETUxJPA8cf6JDX4hTWCNuPnB-GvzmHrT69upX2sqcV-I"
         }
       ]
     },
     {
-      "query": "meta stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T20:20:00Z",
+      "query": "zs stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T21:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/meta-stock-down-21-too-181015251.html",
-        "https://www.reuters.com/default/global-markets-technicals-2026-11-19/",
-        "https://247wallst.com/investing/2026/11/19/metas-advertising-business-could-drive-another-major-earnings-surprise/"
+        "https://www.quantisnow.com/insight/new-insider-ross-justyn-tackett-claimed-ownership-of-77322-shares-6801398",
+        "https://www.tokenpost.com/news/investing/61983",
+        "https://www.tradingview.com/news/benzinga:42afc8811094b:0-palo-alto-earnings-boost-cybersecurity-sentiment-zscaler-stock-gains/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4L1uzbZJhqdUz-3EAB9WNQkQ6RUOqTaeCFECKUFGWPWqxi5AWYj4Oozx3P-E",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5WPi0sdJs8t4dvYz1YXq6oIAjihfarC04ECie2W5F4XYigiR4_hwdvnEMxmg",
+      "image_credit": "Quantisnow",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/meta-stock-down-21-too-181015251.html",
-          "title": "Meta Stock Down 21%: Too Much AI Spending?",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.quantisnow.com/insight/new-insider-ross-justyn-tackett-claimed-ownership-of-77322-shares-6801398",
+          "title": "Zscaler (ZS): New insider Ross Justyn Tackett claimed ownership of 77,322 shares (SEC Form 3)",
+          "publisher": "Quantisnow",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4L1uzbZJhqdUz-3EAB9WNQkQ6RUOqTaeCFECKUFGWPWqxi5AWYj4Oozx3P-E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5WPi0sdJs8t4dvYz1YXq6oIAjihfarC04ECie2W5F4XYigiR4_hwdvnEMxmg"
         },
         {
-          "url": "https://www.reuters.com/default/global-markets-technicals-2026-11-19/",
-          "title": "Mapping the Market: Meta shares may be about to deepen their slide",
-          "publisher": "Reuters",
+          "url": "https://www.tokenpost.com/news/investing/61983",
+          "title": "Zscaler Shares Fall 3.81% as Price Sits Below Key Averages",
+          "publisher": "TOKENPOST",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOFar2E02LwB-2cylhkZ3MvwvQ4xyA9t6CEdDPEOhPTBaxU3YmNF59vWmatsQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD_OkaQg3beAby8cwco_nNalHxkuWjHCPmND8IZzkwVh9Q5ACFYfMBt9o7SMs"
         },
         {
-          "url": "https://247wallst.com/investing/2026/11/19/metas-advertising-business-could-drive-another-major-earnings-surprise/",
-          "title": "Meta’s Advertising Business Could Drive Another Major Earnings Surprise",
-          "publisher": "24/7 Wall St.",
+          "url": "https://www.tradingview.com/news/benzinga:42afc8811094b:0-palo-alto-earnings-boost-cybersecurity-sentiment-zscaler-stock-gains/",
+          "title": "Palo Alto Earnings Boost Cybersecurity Sentiment: Zscaler Stock Gains",
+          "publisher": "TradingView",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEFHTSRY9YquIZYZnAaVxmTihQ6Gdw4QYj2Bp6PVD81g26dv0klF5ux1ZQDyI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
         }
       ]
     },
     {
-      "query": "virginia tech vs northwestern",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T20:20:00Z",
+      "query": "nitto atp finals",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T21:10:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/virginia-tech/article/virginia-tech-northwestern-game-preview-mens-basketball-26-293000100/",
-        "https://sports.yahoo.com/articles/gamethread-watch-northwestern-men-basketball-180554432.html",
-        "https://www.si.com/college/northwestern/basketball/northwestern-basketball-preview-wildcats-face-5-0-hokies"
+        "https://www.espn.com/tennis/story/_/id/50534384/shelton-beats-jodar-joins-zverev-alcaraz-atp-finals-semis",
+        "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
+        "https://www.si.com/onsi/serve/news/shelton-meet-alcaraz-tantalising-atp-finals-last-four-clash-01m7wstwpq4d"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMxzlK4DL166zEezOkpKwlTffdTDN64voyF--oW8Ju84_r3UxzOLb-YNcoGzk",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST8jw8Q0lCWpzF7xl-6skgO6iGmO8xCnFt0vSKLhxMKQuM7cmmCFmBtRCRwng",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://247sports.com/college/virginia-tech/article/virginia-tech-northwestern-game-preview-mens-basketball-26-293000100/",
-          "title": "Game Preview: Virginia Tech against Northwestern",
-          "publisher": "247Sports",
+          "url": "https://www.espn.com/tennis/story/_/id/50534384/shelton-beats-jodar-joins-zverev-alcaraz-atp-finals-semis",
+          "title": "Shelton beats Jodar, joins Zverev, Alcaraz in ATP Finals semis",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMxzlK4DL166zEezOkpKwlTffdTDN64voyF--oW8Ju84_r3UxzOLb-YNcoGzk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST8jw8Q0lCWpzF7xl-6skgO6iGmO8xCnFt0vSKLhxMKQuM7cmmCFmBtRCRwng"
         },
         {
-          "url": "https://sports.yahoo.com/articles/gamethread-watch-northwestern-men-basketball-180554432.html",
-          "title": "Gamethread/How to watch Northwestern men’s basketball vs. Virginia Tech: TV, streaming, radio, injury report, betting line",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
+          "title": "Shelton defeats Jodar, reaches Nitto ATP Finals SFs for the first time",
+          "publisher": "ATP Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXPfUJNZNse3dmqtRNtB3NOSky1feYWZhm7HwTuLBCr69tXaZVRXR5wyYVUYw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI"
         },
         {
-          "url": "https://www.si.com/college/northwestern/basketball/northwestern-basketball-preview-wildcats-face-5-0-hokies",
-          "title": "Northwestern Basketball Preview: Wildcats Face 5-0 Hokies",
+          "url": "https://www.si.com/onsi/serve/news/shelton-meet-alcaraz-tantalising-atp-finals-last-four-clash-01m7wstwpq4d",
+          "title": "Shelton Sets Up Tantalising ATP Finals Last-Four Clash Against Alcaraz",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhBfm8KFLIpqs1kC-Mh6WqG2UoXe-hjHX6qwnIRzrVAxeB7P_N6QEHx1B5xx4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeqLdPXTXBa9xBlfQjRSWa78R7tLBS7vSgkTiOxnrOvhiXtTWhP5FfjFNhgWw"
         }
       ]
     },
     {
-      "query": "nolan gorman",
+      "query": "tarik skubal",
       "approx_searches": "500+",
-      "published_at": "2026-11-20T20:10:00Z",
+      "published_at": "2026-11-20T21:10:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/nolan-gorman-non-tendered-by-cardinals",
-        "https://sports.yahoo.com/articles/cardinals-reportedly-set-move-nolan-201513168.html",
-        "https://www.stltoday.com/sports/professional/mlb/cardinals/article_53cae89b-3ee2-4da9-82ad-1f3cc15ecf09.html"
+        "https://www.mlb.com/news/tarik-skubal-long-term-contract-with-mets-likelihood",
+        "https://sports.yahoo.com/articles/jonah-tong-love-join-forces-205527872.html",
+        "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HgqoAnkL5G2fzzhCgq3dtobapW1toXBG9XoSRKfDvVPrJPR6o-rQKNIP2-E",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb8poQZiSt3LMhmnTrkzSDtH93A5wbqS_dIsT8zT3f1kOyP_koGCxE4DdfaB4",
       "image_credit": "MLB.com",
       "news": [
         {
-          "url": "https://www.mlb.com/news/nolan-gorman-non-tendered-by-cardinals",
-          "title": "Cardinals non-tender former first-round pick Nolan Gorman (report)",
+          "url": "https://www.mlb.com/news/tarik-skubal-long-term-contract-with-mets-likelihood",
+          "title": "If Mets are to land big fish Skubal, Stearns needs to sail uncharted waters",
           "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HgqoAnkL5G2fzzhCgq3dtobapW1toXBG9XoSRKfDvVPrJPR6o-rQKNIP2-E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb8poQZiSt3LMhmnTrkzSDtH93A5wbqS_dIsT8zT3f1kOyP_koGCxE4DdfaB4"
         },
         {
-          "url": "https://sports.yahoo.com/articles/cardinals-reportedly-set-move-nolan-201513168.html",
-          "title": "Cardinals Reportedly Set to Move on From Nolan Gorman",
+          "url": "https://sports.yahoo.com/articles/jonah-tong-love-join-forces-205527872.html",
+          "title": "Jonah Tong would love to join forces with ‘bulldog’ Tarik Skubal as he navigates his Mets future",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdadeCUGGvFE8cwcAJlOSsGKm46uDrNak6tSU3E3bMB1_xjHj1fZSG7VAgxNs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRThlbjOHjfmrrtNnRyyN6CxB_o8vJGlmvKV46ZOVLTvN6npEd5sM-NWnSQ7J4"
         },
         {
-          "url": "https://www.stltoday.com/sports/professional/mlb/cardinals/article_53cae89b-3ee2-4da9-82ad-1f3cc15ecf09.html",
-          "title": "Cardinals have full roster but only 1 contract commitment for 2027. That's about to change",
-          "publisher": "STLtoday.com",
+          "url": "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans",
+          "title": "Every MLB team's chance of signing Skubal -- and their backup plans",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgMCpElyOBauSZ_BR8eOaJhZXVbLaRjz2Hbp36F1_SfQWmBvCYGT2IjnwQemQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4k_TsL7nzfWH6UscKfSwGSeFul869g5SCnfN3rDQhlyWeuA-NJzivsTFJ1T8"
         }
       ]
     },
     {
-      "query": "is taylor swift pregnant",
+      "query": "macaulay culkin",
       "approx_searches": "500+",
-      "published_at": "2026-11-20T20:10:00Z",
+      "published_at": "2026-11-20T21:10:00Z",
       "related_news_urls": [
-        "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article318128907.html",
-        "https://bleacherreport.com/articles/25535112-taylor-swift-performs-2026-cma-awards-video-patrick-mahomes-wife-brittany-attends",
-        "https://www.eonline.com/news/1438239/cma-awards-2026-pregnant-brittany-mahomes-debuts-baby-bump-on-red-carpet"
+        "https://deadline.com/2026/11/home-alone-macaulay-culkin-seth-rogen-evan-goldberg-1237230258/",
+        "https://www.theguardian.com/film/2026/nov/20/home-alone-sequel-macaulay-culkin",
+        "https://variety.com/2026/film/news/home-alone-reboot-disney-macaulay-culkin-seth-rogen-1236954344/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBaXn9taAbn-IzsgxLvjgZWEKC_vdesGqdOX8tpunYZuxLb3KhnyoyoZGXnxw",
-      "image_credit": "Kansas City Star",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Fy--q9YIRB3JmOeRW_WTBzrug2Oq3FC6IddR9g6MxAdi7tQwaBIf5Opz5P0",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article318128907.html",
-          "title": "Patrick and Brittany Mahomes use unique method for gender reveal of fourth child",
-          "publisher": "Kansas City Star",
+          "url": "https://deadline.com/2026/11/home-alone-macaulay-culkin-seth-rogen-evan-goldberg-1237230258/",
+          "title": "‘Home Alone’ Sequel With Macaulay Culkin In Early Works With Seth Rogen & Evan Goldberg Writing & Producing",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBaXn9taAbn-IzsgxLvjgZWEKC_vdesGqdOX8tpunYZuxLb3KhnyoyoZGXnxw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Fy--q9YIRB3JmOeRW_WTBzrug2Oq3FC6IddR9g6MxAdi7tQwaBIf5Opz5P0"
         },
         {
-          "url": "https://bleacherreport.com/articles/25535112-taylor-swift-performs-2026-cma-awards-video-patrick-mahomes-wife-brittany-attends",
-          "title": "Taylor Swift Performs at 2026 CMA Awards on Video as Patrick Mahomes' Wife Brittany Attends",
-          "publisher": "Bleacher Report",
+          "url": "https://www.theguardian.com/film/2026/nov/20/home-alone-sequel-macaulay-culkin",
+          "title": "Home Alone sequel reportedly in development with Macaulay Culkin returning",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlLkZTbUd94lC-_NTQ7Ypc2UvlzrTj-_rZqg06x_jlgrA5vjrk6xWb0JL-zJM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWSh9eNIQfWtxzMpb-JOjkI2hr-jQ8Is4P4Oj_gb_W2CPbnRIZYd_3vPfpeLQ"
         },
         {
-          "url": "https://www.eonline.com/news/1438239/cma-awards-2026-pregnant-brittany-mahomes-debuts-baby-bump-on-red-carpet",
-          "title": "Pregnant Brittany Mahomes Debuts Baby Bump on Red Carpet While Attending CMA Awards With Taylor Swift",
-          "publisher": "E! News",
+          "url": "https://variety.com/2026/film/news/home-alone-reboot-disney-macaulay-culkin-seth-rogen-1236954344/",
+          "title": "‘Home Alone’ Reboot in the Works at Disney from Macaulay Culkin, Seth Rogen and Evan Goldberg",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPKyxKDCU63ox4Np-F8oXUt4O0vOMMv1AuyNvhrCAqtQ50OcuK_SbxiI2LBKI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTE3UVXUgrMjkPaXFExVfaYVgVUSxQeyeyklLZ2--3E8R5nq6KznsYw8NZgRI"
+        }
+      ]
+    },
+    {
+      "query": "spacex starshield",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:10:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/20/politics/himes-ukraine-starlink-slowdown",
+        "https://www.cnbc.com/2026/11/18/ukraine-starshield-starlink-musk-spacex.html",
+        "https://www.semafor.com/article/11/18/2026/nations-push-to-develop-starlink-alternatives"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4uqGXOjHLdYnOymDerdZ4KVL48Kqr4OkKB7TG0Ov9srU8D-5Ll5YXtkBylTg",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/20/politics/himes-ukraine-starlink-slowdown",
+          "title": "Trump intel chief warned no funding for Musk’s SpaceX without answers on Ukraine Starshield slowdown",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4uqGXOjHLdYnOymDerdZ4KVL48Kqr4OkKB7TG0Ov9srU8D-5Ll5YXtkBylTg"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/18/ukraine-starshield-starlink-musk-spacex.html",
+          "title": "Zelenskyy says Starshield speed curbs still in place over parts of Ukraine",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGqhTvkYN0XbTLiNFgnX3ux-L8L9x0XKv4Qd_508H319KxAdwLWEtuA276M6s"
+        },
+        {
+          "url": "https://www.semafor.com/article/11/18/2026/nations-push-to-develop-starlink-alternatives",
+          "title": "Nations push to develop Starlink alternatives",
+          "publisher": "Semafor",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQblVtCYlzumMsVFMDtig4DS6GSf7E-qQmhWCemkWUL6PG2smquvH0RveYL6p8"
+        }
+      ]
+    },
+    {
+      "query": "zscaler stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:10:00Z",
+      "related_news_urls": [
+        "https://www.tokenpost.com/news/investing/61983",
+        "https://www.tradingview.com/news/benzinga:42afc8811094b:0-palo-alto-earnings-boost-cybersecurity-sentiment-zscaler-stock-gains/",
+        "https://kalkine.com.au/news/technology/what-sparked-rebounds-at-zscaler-nasdaqzs-coreweave-nasdaqcrwv-and-backblaze-nasdaqblze-after-datadog-nasdaqddog-lost-29-in-a-month"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD_OkaQg3beAby8cwco_nNalHxkuWjHCPmND8IZzkwVh9Q5ACFYfMBt9o7SMs",
+      "image_credit": "TOKENPOST",
+      "news": [
+        {
+          "url": "https://www.tokenpost.com/news/investing/61983",
+          "title": "Zscaler Shares Fall 3.81% as Price Sits Below Key Averages",
+          "publisher": "TOKENPOST",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD_OkaQg3beAby8cwco_nNalHxkuWjHCPmND8IZzkwVh9Q5ACFYfMBt9o7SMs"
+        },
+        {
+          "url": "https://www.tradingview.com/news/benzinga:42afc8811094b:0-palo-alto-earnings-boost-cybersecurity-sentiment-zscaler-stock-gains/",
+          "title": "Palo Alto Earnings Boost Cybersecurity Sentiment: Zscaler Stock Gains",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        },
+        {
+          "url": "https://kalkine.com.au/news/technology/what-sparked-rebounds-at-zscaler-nasdaqzs-coreweave-nasdaqcrwv-and-backblaze-nasdaqblze-after-datadog-nasdaqddog-lost-29-in-a-month",
+          "title": "What Sparked Rebounds at Zscaler (NASDAQ:ZS), CoreWeave (NASDAQ:CRWV) and Backblaze (NASDAQ:BLZE) After Datadog (NASDAQ:DDOG) Lost 29% in a Month?",
+          "publisher": "Kalkine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq0ZbdSfzsreuFEW1YZIWze5ry5MJYUhqoBYVG21XAV-UGgpHyvytDB4qzPSA"
+        }
+      ]
+    },
+    {
+      "query": "10 year treasury yield",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T21:00:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-20/treasuries-eye-longest-rally-in-five-months-on-haven-demand",
+        "https://www.cnbc.com/2026/11/20/treasury-yields-bonds-inflation.html",
+        "https://www.wsj.com/economy/central-banking/treasury-eurozone-bond-yields-edge-higher-47e08817"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL89nRIAgZh6RiV7rucwFOmRwffhptx-uGjoFlJ1gBvaVYCftKJEfVJ9W4-aI",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-20/treasuries-eye-longest-rally-in-five-months-on-haven-demand",
+          "title": "Treasuries Eye Longest Rally in Five Months on Haven Demand",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL89nRIAgZh6RiV7rucwFOmRwffhptx-uGjoFlJ1gBvaVYCftKJEfVJ9W4-aI"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/20/treasury-yields-bonds-inflation.html",
+          "title": "Treasury yields are sharply lower as investors flee to safe havens",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRs7qQTXMxIkGzh0yrLrE1VegKXyLT4IInZcBz9JabAx0ZXRrwfM4fIMks7WV0"
+        },
+        {
+          "url": "https://www.wsj.com/economy/central-banking/treasury-eurozone-bond-yields-edge-higher-47e08817",
+          "title": "Treasury Yields Fall as Anthropic Fails to Sustain Risk Appetite",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzrfOEEtiaAzndhL1Kisn_kLvcWQoTeDObMSBYdrqeVaCHUaUHR63m77zijY0"
+        }
+      ]
+    },
+    {
+      "query": "indiana state basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:00:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/college-basketball/us-virgin-islands-paradise-jam-indiana-state-sycamores-vs-stephen-f-austin-lumberjacks-nov-20-2026-game-boxscore-265407",
+        "https://www.bleachernation.com/picks/2026/11/20/mvc-basketball-predictions-computer-picks-and-best-bets-november-20-2/",
+        "https://gosycamores.com/news/2026/11/18/basketball-indiana-state-heads-to-2026-paradise-jam.aspx"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/college-basketball/us-virgin-islands-paradise-jam-indiana-state-sycamores-vs-stephen-f-austin-lumberjacks-nov-20-2026-game-boxscore-265407",
+          "title": "Indiana State vs. Stephen F Austin - Live Score - November 20, 2026",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/20/mvc-basketball-predictions-computer-picks-and-best-bets-november-20-2/",
+          "title": "MVC Basketball Predictions, Computer Picks and Best Bets | November 20",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPrrFYgJEDfi9ruw9NGIll-lNaRY8cBhxBGwXhFzaVv2y01F8VjhxlYgzH7zg"
+        },
+        {
+          "url": "https://gosycamores.com/news/2026/11/18/basketball-indiana-state-heads-to-2026-paradise-jam.aspx",
+          "title": "Indiana State heads to 2026 Paradise Jam",
+          "publisher": "Indiana State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT30sS_YqNDjtB_6XcAVvAAwwAw6AYQByvlCzQBxrgalJLfdy4vrKnvnTG7ouA"
+        }
+      ]
+    },
+    {
+      "query": "palantir stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T21:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/where-palantir-stock-1-215902553.html",
+        "https://www.fool.com/investing/2026/11/18/is-palantir-overvalued-or-is-it-still-a-buy-at-this-price/",
+        "https://www.moomoo.com/community/feed/institutional-flow-in-palantir-technologies-pltr-55-of-the-options-117648130703365"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj-9N_2aiPHHlUO34HTQzi7dbc-c6lGSbmx6q8lpNKwajQNoQ7tocq-6hxCyo",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/where-palantir-stock-1-215902553.html",
+          "title": "Where Will Palantir Stock Be in 1 Year?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj-9N_2aiPHHlUO34HTQzi7dbc-c6lGSbmx6q8lpNKwajQNoQ7tocq-6hxCyo"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/18/is-palantir-overvalued-or-is-it-still-a-buy-at-this-price/",
+          "title": "Is Palantir Overvalued, or Is It Still a Buy at This Price?",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_R0irEPiRzTy3sz54prQGOMcVfUzrijsO4AwTF8nHLleyN4fh6oh5elEVyNs"
+        },
+        {
+          "url": "https://www.moomoo.com/community/feed/institutional-flow-in-palantir-technologies-pltr-55-of-the-options-117648130703365",
+          "title": "Institutional Flow in Palantir Technologies (PLTR): 55% of the Options Money Is in Calls, Nov 19 at 2:47 PM",
+          "publisher": "Moomoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpfxt4MC531UXxYjpIywYc9BFwudD2BXlfXDUqk42KomPYXOSd33kO8wpMl6E"
         }
       ]
     }
