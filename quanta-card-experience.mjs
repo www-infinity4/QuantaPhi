@@ -8,6 +8,7 @@ import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source
 import {mountMarketplaceCarousel} from './quanta-marketplace-carousel.mjs?v=20261101-unified-market1';
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
 import {mountMotorcycleQuickCard} from './motorcycle-quick-cards.mjs';
+import {mountHypeStatInfinityCard} from './hypestat-infinity-card.mjs?v=20261119-project1';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
@@ -398,6 +399,10 @@ export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(id==='hypestat-infinity'){
+  mountHypeStatInfinityCard(root);
+  return;
+ }
  if(id==='pcla-picocela'){
   mountPclaResearch(root,card);
   mountCardActions(root,card,{showSearch:false});

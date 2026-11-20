@@ -4,6 +4,13 @@ on:
   pull_request:
     paths:
       - 'hypestat-infinity.html'
+      - 'tor-public-records.html'
+      - 'hypestat-infinity-card.mjs'
+      - 'quanta-feed-catalog.mjs'
+      - 'quanta-card-experience.mjs'
+      - 'bubbles-card-catalog.mjs'
+      - 'index.html'
+      - 'oracle-card-deck.js'
       - 'hypestat-infinity.test.mjs'
       - 'hypestat-infinity.browser-test.py'
       - '.github/workflows/hypestat-infinity.yml'
@@ -11,6 +18,13 @@ on:
     branches: [main]
     paths:
       - 'hypestat-infinity.html'
+      - 'tor-public-records.html'
+      - 'hypestat-infinity-card.mjs'
+      - 'quanta-feed-catalog.mjs'
+      - 'quanta-card-experience.mjs'
+      - 'bubbles-card-catalog.mjs'
+      - 'index.html'
+      - 'oracle-card-deck.js'
       - 'hypestat-infinity.test.mjs'
       - 'hypestat-infinity.browser-test.py'
       - '.github/workflows/hypestat-infinity.yml'

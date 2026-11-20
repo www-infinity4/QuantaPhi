@@ -573,9 +573,16 @@ export default {
   }
   if (raw) { out.delete('Content-Security-Policy'); out.delete('Content-Disposition'); }
   // Upstream GitHub headers prohibit even our own embedded suite pages.
-  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/infinity-affiliates.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
+  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/hypestat-infinity.html','/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/infinity-affiliates.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
    || (['Oracle-Octaves','C13b0','Omni-Phi','News-Phi','Mckee-Coins-Inc','Omni-TV','Builder-Reserve'].includes(route.repo) && route.sourcePath === '/index.html');
   if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio','Alien-Coin'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
+  // HypeStat is browser-local research: allow only this origin's Quick Card iframe.
+  // Preserve no-network/no-form policy so a local CSV is never silently submitted.
+  if (route.repo === 'QuantaPhi' && route.sourcePath === '/hypestat-infinity.html' && /text\/html/i.test(out.get('Content-Type') || '')) {
+   out.set('X-Frame-Options', 'SAMEORIGIN');
+   out.set('Content-Security-Policy', "default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'");
+   out.set('Referrer-Policy', 'no-referrer');
+  }
   // Public housing intake can run inside QuantaPhi, but cannot submit or send answers.
   if (route.repo === 'QuantaPhi' && ['/disability-housing.html','/housing-help.html'].includes(route.sourcePath) && /text\/html/i.test(out.get('Content-Type') || '')) {
    out.set('X-Frame-Options', 'SAMEORIGIN');

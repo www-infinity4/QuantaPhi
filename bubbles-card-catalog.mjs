@@ -3,6 +3,7 @@ import {HOUSING_HELP_RESOURCES,housingResourceRoute} from './housing-help-catalo
 const local=(id,title,mount,scripts,styles=[],aliases=[],extraMounts=[])=>({id,title,mount,scripts,styles,aliases,extraMounts,repository:'www-infinity4/QuantaPhi',pageUrl:'/#'+mount,url:'/bubbles-card-host.html?card='+id});
 const app=(id,title,path,repo,aliases=[],play='')=>({id,title,url:path,repository:'www-infinity4/'+repo,aliases,play,surface:id==='bubbles-workshop'?'body':id==='infinity-radio'?'.player':'main, [role="main"]'});
 export const cards=Object.freeze([
+ {...app('hypestat-infinity','HypeStat Infinity · Tor, Traffic & Google','/hypestat-infinity.html','QuantaPhi',['hypestat','hype stat','hypestat infinity','tor public records','tor records','tor research','google traffic','gemini traffic']),surface:'body'},
  app('disability-housing','Home Access · Disability Housing','/disability-housing.html','QuantaPhi',['disability housing','disabled housing','housing on disability','ssi housing','ssdi housing','usda housing','home access','housing assistance']),
  ...HOUSING_HELP_RESOURCES.map(r=>app('housing-help-'+r.id,r.title+' · '+r.provider,housingResourceRoute(r.id),'QuantaPhi',[r.id,r.id==='sieda'?'seida':r.id,r.provider.toLowerCase()+' housing help',r.title.toLowerCase()])),
  app('bubbles-workshop','Bubbles Agent Workshop','/bubbles-agent-workshop/','Bubbles-Agent-Workshop',['agent workshop','build workshop']),

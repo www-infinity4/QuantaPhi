@@ -21,6 +21,17 @@ test('every registered public chat card can embed on this origin',async()=>{
   assert.equal(r.headers.get('X-Frame-Options'),expected,card.title+' '+card.url);
  }
 });
+test('HypeStat workspace remains private-network-free and is frameable only on its own origin',async()=>{
+ const r=await request('/hypestat-infinity.html?view=records&embed=1');
+ assert.equal(r.status,200);
+ assert.equal(r.headers.get('X-Frame-Options'),'SAMEORIGIN');
+ const policy=r.headers.get('Content-Security-Policy')||'';
+ assert.match(policy,/frame-ancestors 'self'/);
+ assert.match(policy,/connect-src 'none'/);
+ assert.match(policy,/form-action 'none'/);
+ assert.match(policy,/base-uri 'none'/);
+ assert.equal(r.headers.get('Referrer-Policy'),'no-referrer');
+});
 test('owner, connection and unrelated pages retain upstream frame protection',async()=>{
  for(const path of ['/bubbles-accounts.html','/bubbles-connections.mjs','/learn/','/index.html'])
   assert.equal((await request(path,path.endsWith('.mjs')?'application/javascript':'text/html')).headers.get('X-Frame-Options'),'DENY',path);
