@@ -147,15 +147,17 @@ async function screenshotMeta(file){
 }
 async function saveForm(ev){
   ev.preventDefault();
+  // currentTarget is cleared after the event dispatch; retain the form before await.
+  const form=ev.currentTarget;
   const button=$('save-check');button.disabled=true;
   try{
     if(storageBlocked)throw new Error('Local storage cannot be read; do not overwrite');
-    const values=Object.fromEntries(new FormData(ev.currentTarget).entries());
+    const values=Object.fromEntries(new FormData(form).entries());
     if(!values.checkedAt||!Number.isFinite(new Date(values.checkedAt).getTime()))throw new Error('Enter a valid check time');
     const meta=await screenshotMeta($('screenshot-file').files[0]);
     const item=normalizeCheck({...values,...meta,id:'check-'+crypto.randomUUID(),checkedAt:new Date(values.checkedAt).toISOString()});
     persist(mergeChecks(checks,[item]));
-    ev.currentTarget.reset();
+    form.reset();
     // A second historical check must never inherit the previous screenshot.
     $('screenshot-file').value='';
     $('checked-at').value=localTime();
