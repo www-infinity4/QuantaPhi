@@ -47,4 +47,3 @@ export function educationCarePhotos(category='all'){
 export function nextEducationCareIndex(index,length,step){
  return length?((index+step)%length+length)%length:0;
 }
-
