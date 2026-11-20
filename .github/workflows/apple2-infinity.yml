@@ -19,4 +19,4 @@ jobs:
         with:
           node-version: '22'
       - name: Model checks
-        run: node --test test/apple2-infinity.test.mjs test/apple2-disk2.test.mjs
+        run: node --test test/apple2-infinity.test.mjs test/apple2-disk2.test.mjs test/apple2-sector-image.test.mjs

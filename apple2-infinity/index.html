@@ -21,20 +21,21 @@
 <label for="lcMode">Read/write mode<select id="lcMode"><option value="rom-read">ROM read, write protected</option><option value="ram-read">RAM read, write protected</option><option value="ram-write">RAM read and write</option><option value="rom-write">ROM read, RAM write-through</option></select></label>
 </div><p id="lcStatus" class="muted" role="status" aria-live="polite">Bank 2 · ROM read · RAM write protected</p></section>
 <section class="panel"><h2>Virtual Disk II · slot 6</h2>
-<p class="muted">Load a disk image you are authorized to use. Accepts 35-track <code>.nib</code> files only (232,960 bytes). Motor, two-drive selection and Q6/Q7 nibble reads use simulated $C0E0–$C0EF soft switches. No online fetches or firmware are included.</p>
+<p class="muted">Load a disk image you are authorized to use. Accepts 35-track <code>.nib</code> (232,960 bytes) or 16-sector <code>.dsk</code>/<code>.do</code> (DOS order) and <code>.po</code> (ProDOS order) disk images (143,360 bytes). Disk-image conversion runs entirely in your browser. No 13-sector or copy-protected support. Motor, two-drive selection and Q6/Q7 nibble reads use simulated $C0E0–$C0EF soft switches. No online fetches or firmware are included.</p>
 <div id="diskStatus" role="status" aria-live="polite"></div>
 <div class="actions">
 <label for="diskDrive">Drive<select id="diskDrive"><option value="0">Drive 1</option><option value="1">Drive 2</option></select></label>
-<label for="diskFile">Local .nib disk image<input id="diskFile" type="file" accept=".nib,application/octet-stream"></label>
+<label for="diskFile">Local disk image<input id="diskFile" type="file" accept=".nib,.dsk,.do,.po,application/octet-stream"></label>
 <label for="diskWritable">Disk permissions<label><input id="diskWritable" type="checkbox"> Enable disk writes (off by default)</label></label>
 </div>
-<div class="actions"><button id="diskMount">Mount disk</button><button class="secondary" id="diskMotor">Start motor</button><button class="secondary" id="diskRead">Read next nibble</button><button class="secondary" id="diskEject">Eject disk</button><button class="secondary" id="diskExport">Save a copy of disk image</button></div>
-<p class="muted">Optional: supply your own licensed 256-byte Disk II slot bootstrap ROM. Without it, disk-control tests work but a real Apple II disk operating system cannot boot.</p>
+<div class="actions"><button id="diskMount">Mount disk</button><button class="secondary" id="diskMotor">Start motor</button><button class="secondary" id="diskRead">Read next nibble</button><button class="secondary" id="diskEject">Eject disk</button><button class="secondary" id="diskExport">Save disk as .nib</button></div>
+<p class="muted">Exports always save a .nib copy, even when the source is .dsk, .do or .po. Optional: supply your own licensed 256-byte Disk II slot bootstrap ROM. Without it, disk-control tests work but a real Apple II disk operating system cannot boot.</p>
 <div class="actions"><label for="diskROMFile">Licensed slot 6 ROM<input id="diskROMFile" type="file" accept=".rom,.bin,application/octet-stream"></label><button class="secondary" id="diskROMMount">Load slot ROM</button></div></section>
 <section class="panel"><h2>Apple IIe 40/80-column text display</h2><div class="terminal" id="screen" role="status" aria-live="polite"></div></section>
 <section class="panel"><h2>Machine log</h2><pre id="log" class="terminal" role="log" aria-live="polite"></pre><p class="note">All signals, bus cycles, RAM, DMA, analog samples and CM5 operations here are <strong>software simulations</strong>. They are not timing measurements from real Apple hardware. No 6502 ROM or commercial Apple software is included.</p></section>
 </main><script type="module">
 import {Apple2Infinity,STATUS} from './core.mjs';
+import {sectorImageToNib,SECTOR_IMAGE_BYTES} from './sector-image.mjs';
 let vm=new Apple2Infinity(),programLoaded=false;const $=id=>document.getElementById(id);const hex=(n,len=2)=>'$'+n.toString(16).toUpperCase().padStart(len,'0');
 const metric=(name,value)=>`<div class="metric"><span>${name}</span><output>${value}</output></div>`;
 function report(message){$('log').textContent=message+'\n'+$('log').textContent.slice(0,3000);}
@@ -100,11 +101,15 @@ $('diskMotor').addEventListener('click',()=>{vm.bus.read(vm.bus.disk.motorOn?0xc
 $('diskRead').addEventListener('click',()=>{vm.bus.read(0xc0ee);const n=vm.bus.read(0xc0ec);report('Disk II drive '+vm.bus.disk.snapshot().selectedDrive+' read '+hex(n));render();});
 $('diskEject').addEventListener('click',()=>{vm.bus.disk.eject(vm.bus.disk.selected);report('Ejected selected virtual disk');render();});
 $('diskMount').addEventListener('click',async()=>{try{
- const file=$('diskFile').files?.[0];if(!file)throw Error('Choose a local .nib image first.');
- if(!/\.nib$/i.test(file.name)||file.size!==232960)throw Error('Only a 35-track .nib disk image of exactly 232,960 bytes is supported.');
- const bytes=new Uint8Array(await file.arrayBuffer());
+ const file=$('diskFile').files?.[0];if(!file)throw Error('Choose a local .nib, .dsk, .do or .po image.');
+ const extension=file.name.split('.').at(-1).toLowerCase();
+ if(!['nib','dsk','do','po'].includes(extension))throw Error('Supported formats: .nib, .dsk, .do, .po');
+ const sectorImage=extension!=='nib',size=sectorImage?SECTOR_IMAGE_BYTES:232960;
+ if(file.size!==size)throw Error('Invalid '+extension.toUpperCase()+' image size; expected '+size+' bytes');
+ const source=new Uint8Array(await file.arrayBuffer());
+ const bytes=sectorImage?sectorImageToNib(source,{order:extension==='po'?'prodos':'dos'}):source;
  vm.bus.disk.mount(vm.bus.disk.selected,bytes,{writeProtected:!$('diskWritable').checked});
- report('Mounted local NIB file on drive '+vm.bus.disk.snapshot().selectedDrive+', write protection '+(vm.bus.disk.drives[vm.bus.disk.selected].writeProtected?'ON':'OFF'));render();
+ report('Mounted local '+extension.toUpperCase()+' image as NIB on drive '+vm.bus.disk.snapshot().selectedDrive+'. Source file left unchanged.');render();
  }catch(error){report('DISK MOUNT ERROR: '+error.message);render();}});
 $('diskROMMount').addEventListener('click',async()=>{try{
  const file=$('diskROMFile').files?.[0];if(!file||file.size!==256)throw Error('Supply an authorized 256-byte slot ROM file.');
