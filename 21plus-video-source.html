@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none';">
+<meta name="referrer" content="no-referrer">
+<title>21+ Source Quick Card · QuantaPhi</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,Roboto,sans-serif;background:#f6f3f9;color:#22202a}
+*{box-sizing:border-box}body{margin:0;min-height:100dvh;padding:24px 14px 56px}
+main{margin:0 auto;max-width:560px}.card{border:1px solid #ddd5e5;border-radius:22px;background:#fff;padding:clamp(18px,5vw,32px);box-shadow:0 12px 32px #25152e0d}
+.kicker{font-size:14px;font-weight:800;letter-spacing:.09em;color:#64378c;text-transform:uppercase}
+h1{font-size:clamp(25px,7vw,34px);line-height:1.2;letter-spacing:.01em;margin:12px 0 18px}
+p{font-size:18px;line-height:1.56;letter-spacing:.005em}
+a,button{font:inherit;font-size:18px;line-height:1.35;min-height:48px;border-radius:13px;padding:12px 16px;display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid #823ec4;outline-offset:4px}
+.primary{background:#543278;color:#fff;border:2px solid #543278;font-weight:750;cursor:pointer}
+.secondary{border:2px solid #bfb3cb;background:#fff;color:#2c203a;font-weight:700;cursor:pointer}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
+#adultVideoContent{border-top:1px solid #e5deeb;margin-top:22px;padding-top:12px}
+#adultVideoContent[hidden],button[hidden]{display:none}
+.note{color:#514b58;font-size:16px;line-height:1.48}
+.back{color:#493067;font-weight:700;margin:14px 0}
+@media(max-width:420px){.actions>*{width:100%}}
+</style>
+<script type="module" src="/adult-video-source.mjs"></script>
+</head>
+<body>
+<main>
+<a class="back" href="/">QuantaPhi homepage</a>
+<article class="card" id="adultVideoCard">
+<div class="kicker">QuantaPhi · External source</div>
+<h1>21+ video source Quick Card</h1>
+<p>This is a visitor-selected link to a third-party page. No video is hosted, copied, previewed or embedded here.</p>
+<p class="note">Continue only if you are at least 21. This age statement is for browsing this visit only, not government-ID or identity verification. Local laws and the destination site's rules still apply.</p>
+<div class="actions">
+<button class="primary" id="adultVideoEnter" type="button">I am 21+ · Show source</button>
+<button class="secondary" id="adultVideoClose" type="button" hidden>Close 21+ source</button>
+</div>
+<p class="note" id="adultVideoStatus" role="status" aria-live="polite">External links are hidden until you confirm 21+ browsing.</p>
+<section id="adultVideoContent" hidden aria-label="External video source">
+<h2>External source link</h2>
+<p class="note">Unverified user-submitted destination. QuantaPhi has not established publisher permission, performer consent, licensing or age eligibility for the video. The destination is responsible for its content and policies.</p>
+<div class="actions"><a class="primary" id="adultVideoOpen" target="_blank" rel="noopener noreferrer nofollow" referrerpolicy="no-referrer">Open video on external site</a></div>
+</section>
+</article>
+</main>
+</body>
+</html>

@@ -46,3 +46,13 @@ The 21+ source card now includes a deliberate **Build a kit research plan** butt
 Acceptance: `node --test test/adult-kit-research.test.mjs`, `node --check adult-kit-research.mjs` and the Android-width `test/adult-lifestyle-card.browser.spec.mjs` regression.
 
 Follow-up: Continuity Builder issue #1446 for approved merchant offers, licensed creative rights, actual supplier discounts, and signed hub quote receipts.
+
+## External adult-video source · ad-free separate card · November 19, 2026
+
+PR #1985 continues issue #1446. The QuantaPhi AdSense-bearing homepage **never receives the external adult-video URL** in its data catalog. Inside the existing visitor-opened 21+ lifestyle panel, a neutral local link to `/21plus-video-source.html` opens a separate Quick Card.
+
+The separate page deliberately contains no Google Analytics, AdSense, third-party scripts, media previews, images, embeds, or automatic requests. The external URL is available only after a fresh, explicit 21+ browsing acknowledgment on that page. Closing immediately hides the source link and removes its `href`; no age state is stored. The source is owner-submitted, **not rights-verified**. A self-declaration is not independently verified age and the destination controls its own access rules.
+
+Google's publisher rules include external links on monetized pages, so this architecture reduces but cannot prove away all publisher-policy risk. No explicit video media is reproduced or monetized. Before any live release, require independent legal, site-policy, accessibility/mobile review, source permission/provenance, and tested behavior on production. CI alone does not establish permission or compliant distribution.
+
+Tests: `node --test test/adult-video-source.test.mjs` and the 21+ publisher workflow. Files: `21plus-video-source.html`, `adult-video-source.mjs`, `restricted-ad-card.mjs`.

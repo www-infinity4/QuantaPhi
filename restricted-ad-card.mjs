@@ -34,6 +34,9 @@ if(root){
  const publisherNext=el('button','rac-button','Next website ›');
  const publisherPause=el('button','rac-button','Pause');
  publisherNext.type=publisherPause.type='button';publisherControls.append(publisherPause,publisherNext);
+ const videoPortal=el('a','rac-source-portal','21+ separate source card');
+ videoPortal.href='/21plus-video-source.html';videoPortal.rel='noopener noreferrer';
+ videoPortal.setAttribute('aria-label','Open separate 21 plus source Quick Card');
  const publisherNote=el('p','rac-note','You are opening each publisher’s original website. Any merchant age check, prescription review, purchase, booking or delivery stays with that provider. No live pricing, stock, licensed ads or consolidated freight is implied.');
  const kitBar=el('div','rac-kitbar'),kitLabel=el('label','rac-kit-label','Choose a purpose-built kit');
  const kitSelect=el('select','rac-kit-select');
@@ -65,7 +68,7 @@ if(root){
  kitPlanPower.target='_blank';kitPlanPower.rel='noopener noreferrer';
  kitPlanForm.append(budgetLabel,regionLabel,planSubmit);
  kitPlanBox.append(kitPlanForm,kitPlanStatus,kitPlanSummary,kitPlanCopy,kitPlanPower);
- publisher.append(publisherHead,kitBar,kitDesc,kitLinks,kitPlanButton,kitPlanBox,publisherArt,publisherDesc,publisherLink,publisherControls,publisherNote);
+ publisher.append(publisherHead,kitBar,kitDesc,kitLinks,kitPlanButton,kitPlanBox,publisherArt,publisherDesc,publisherLink,publisherControls,publisherNote,videoPortal);
  root.append(browse,closeBrowse,browseHint,publisher,message);
  let acknowledged=false,publisherLast='',publisherSeen=[],publisherPaused=false;
  let selectedKitId=ADULT_LIFESTYLE_KITS[0].id,lastKitPlan=null;
