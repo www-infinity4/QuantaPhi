@@ -66,3 +66,6 @@ assert.match(html,/data-oracle-family="original"/);
 assert.match(deck,/selectNextFamilyPool\(tour\.cards,cardFamily\(active\)\)/);
 assert.match(deck,/openingFamilyPool\(cards,openingCursor\)/);
 assert.match(deck,/show\(chosen\)/);
+
+// The Story Writer cover must advertise Story Writer, not the Scholastic Reader tool.
+assert.match(deck,/phiStoryWriter:\['Story Writer','Write it\. Illustrate it\. Make it yours\.','\/apps\/icons\/story-writer\.svg'\]/);
