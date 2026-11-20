@@ -7,6 +7,15 @@ async function request(path,type='text/html'){
 test('Phi-owned ShopLC HTML can embed only on the same origin',async()=>{
  const r=await request('/shoplc/');assert.equal(r.status,200);assert.equal(r.headers.get('X-Frame-Options'),'SAMEORIGIN');assert.equal(r.headers.get('Content-Security-Policy'),null);assert.equal(r.headers.get('x-quantaphi-app'),'ShopLC');
 });
+test('ISHA Rulebook is framed only on QuantaPhi and keeps strict no-network policy',async()=>{
+ const response=await request('/isha-rulebook.html');
+ assert.equal(response.status,200);
+ assert.equal(response.headers.get('X-Frame-Options'),'SAMEORIGIN');
+ const csp=response.headers.get('Content-Security-Policy')||'';
+ assert.match(csp,/frame-ancestors 'self'/);
+ assert.match(csp,/connect-src 'none'/);
+ assert.equal((await request('/isha-rulebook-core.mjs','application/javascript')).headers.get('X-Frame-Options'),'DENY');
+});
 test('existing Crusher same-origin embedding is preserved',async()=>{assert.equal((await request('/bitcoin-crusher/')).headers.get('X-Frame-Options'),'SAMEORIGIN');});
 test('unrelated HTML and ShopLC scripts keep their upstream frame restriction',async()=>{assert.equal((await request('/learn/')).headers.get('X-Frame-Options'),'DENY');assert.equal((await request('/shoplc/player.js','application/javascript')).headers.get('X-Frame-Options'),'DENY');});
 
