@@ -68,7 +68,7 @@ export const YOUTUBE_CREATOR_SOURCES=Object.freeze([
   kind:'Video · YouTube',feature:'Browse 11 indexed public videos',
   featureUrl:YOUTUBE_CHANNEL.profileUrl,details:'Source-identified video catalog with search and original YouTube links. Partial coverage; no Community posts imported.'}),
  ...YOUTUBE_VIDEO_DATABASE.videos.map(v=>Object.freeze({
-  ...shared,id:'abbecadventures-video-'+v.videoId,
+  ...shared,id:'abbecadventures-video-'+[...v.videoId].map(c=>c.charCodeAt(0).toString(16).padStart(2,'0')).join(''),
   youtubeVideoId:v.videoId,
   name:YOUTUBE_CHANNEL.name+' · '+v.title,
   kind:'Video · YouTube',feature:v.title,featureUrl:v.sourceUrl,
