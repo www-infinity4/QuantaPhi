@@ -4,6 +4,7 @@ on:
     paths:
       - 'isha-rulebook-core.mjs'
       - 'isha-rulebook.html'
+      - 'isha-rulebook-ui.mjs'
       - 'bubbles-card-catalog.mjs'
       - 'test/isha-rulebook.test.mjs'
       - '.github/workflows/isha-rulebook.yml'
@@ -14,6 +15,7 @@ on:
     paths:
       - 'isha-rulebook-core.mjs'
       - 'isha-rulebook.html'
+      - 'isha-rulebook-ui.mjs'
       - 'bubbles-card-catalog.mjs'
       - 'test/isha-rulebook.test.mjs'
       - '.github/workflows/isha-rulebook.yml'
@@ -29,4 +31,6 @@ jobs:
         with:
           node-version: '22'
       - name: Test source handling, draft ledger, and Bubbles Quick Card routing
-        run: node --test test/isha-rulebook.test.mjs
+        run: |
+          node --check isha-rulebook-ui.mjs
+          node --test test/isha-rulebook.test.mjs
