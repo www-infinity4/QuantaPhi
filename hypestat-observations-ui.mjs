@@ -177,7 +177,9 @@ function exportBackup(){
   }catch(error){message('backup-message','Export unavailable: '+error.message)}
 }
 async function importBackup(ev){
-  const file=ev.currentTarget.files[0];
+  // Keep the file input across await; event.currentTarget is ephemeral.
+  const input=ev.currentTarget;
+  const file=input.files[0];
   if(!file)return;
   try{
     if(file.size>MAX_BYTES)throw new Error('Backup file is too large');
@@ -187,7 +189,7 @@ async function importBackup(ev){
     persist(merged);
     message('backup-message','Merged '+added+' new checks. Existing IDs were preserved.');
   }catch(error){message('backup-message','Import rejected; existing records unchanged: '+error.message)}
-  finally{ev.currentTarget.value=''}
+  finally{input.value=''}
 }
 function setupTabs(){
   const tabs=[...document.querySelectorAll('[data-tab]')];
