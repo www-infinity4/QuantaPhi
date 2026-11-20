@@ -3,12 +3,284 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T13:31:06.906170Z",
+  "checked_at": "2026-11-20T14:01:32.790468Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ronny hallin passed away",
+      "query": "abdul el-sayed u.s. senate",
       "approx_searches": "200+",
+      "published_at": "2026-11-20T13:40:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/20/el-sayed-trump-israel-aid",
+        "https://www.timesofisrael.com/us-senator-elect-el-sayed-says-israel-should-not-identify-with-one-faith-or-culture/",
+        "https://jewishinsider.com/2026/11/el-sayed-says-israel-should-not-identify-with-a-faith-pushes-back-on-antisemitism-concerns/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHih9MuNYRXWDXzdl4KN6H49LnCY5dWdWPf6rfHsMZBniVYNhMhrveaT9G1xc",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/20/el-sayed-trump-israel-aid",
+          "title": "‘I agree with the president’: incoming senator Abdul El-Sayed seeks to help Trump end military aid to Israel",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHih9MuNYRXWDXzdl4KN6H49LnCY5dWdWPf6rfHsMZBniVYNhMhrveaT9G1xc"
+        },
+        {
+          "url": "https://www.timesofisrael.com/us-senator-elect-el-sayed-says-israel-should-not-identify-with-one-faith-or-culture/",
+          "title": "US Senator-elect El-Sayed says Israel should not identify with one faith or culture",
+          "publisher": "The Times of Israel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6EYrkJka8IUtdfHIv1MMFmKS2ZfYcO9FP1Id7L3e7fQ2Mb0ZaspAx-fycOnE"
+        },
+        {
+          "url": "https://jewishinsider.com/2026/11/el-sayed-says-israel-should-not-identify-with-a-faith-pushes-back-on-antisemitism-concerns/",
+          "title": "El-Sayed says Israel should not identify with a faith, pushes back on antisemitism concerns",
+          "publisher": "Jewish Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScP5H_3XyRg6D-5AzsQMQ6yP2tDcTVKBWBO7mhxtmBJiIffRCMTkXQTCmq4JA"
+        }
+      ]
+    },
+    {
+      "query": "3x3",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T13:40:00Z",
+      "related_news_urls": [
+        "https://www.chosun.com/english/sports-en/2026/11/20/NRZWHE6JDZALNMJMISDCNYKGZU/",
+        "https://news.sbs.co.kr/english/article.do?news_id=N1008856468",
+        "https://www.starnewskorea.com/en/sports/2026/11/20/2026112015065979514"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9x31RR2yXehrf06-AMLByruO60FD-GFhjtmCz3836K6U7uu-5NmHKBt6wk_Y",
+      "image_credit": "조선일보",
+      "news": [
+        {
+          "url": "https://www.chosun.com/english/sports-en/2026/11/20/NRZWHE6JDZALNMJMISDCNYKGZU/",
+          "title": "Suwon KT Selects Lee Dong-geun as First Overall Pick",
+          "publisher": "조선일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9x31RR2yXehrf06-AMLByruO60FD-GFhjtmCz3836K6U7uu-5NmHKBt6wk_Y"
+        },
+        {
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008856468",
+          "title": "\"Hero of 3v3 Gold, No. 1 Pick to KT... 'I Will Die on the Court'\"",
+          "publisher": "SBS 뉴스",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQexrNCpDTaMWoyRdnqmL-CPFurtPMaUluKx_FGSaf8X4A1QkEqRs7NeGB0yGo"
+        },
+        {
+          "url": "https://www.starnewskorea.com/en/sports/2026/11/20/2026112015065979514",
+          "title": "It did not end at 27! Cheers erupted in succession in the fourth round... Sonu, LG, and Samsung made additional selections → KBL draft records most with '30 picks' [Jamsil on-site]",
+          "publisher": "스타뉴스",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG8JP-cORO7ecGQtUElJRWo3Zt_h-A0rhVK4Y9e8VhL2BdeCP63sxVRQO6NXs"
+        }
+      ]
+    },
+    {
+      "query": "carlos alcaraz",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T13:30:00Z",
+      "related_news_urls": [
+        "https://www.chicagotribune.com/2026/11/18/alcaraz-vence-a-medvedev-en-las-finales-atp-pese-a-un-problema-fsico-y-avanza-a-semifinales/",
+        "https://elpais.com/deportes/tenis/2026-11-20/carlos-alcaraz-flavio-cobolli-en-directo-el-partido-de-las-atp-finals-en-vivo.html",
+        "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-dia-6-previa-alcaraz-cobolli-medvedev-tiafoe"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--s-sd16jM_OPn5W3wFRkwZwLe2qjVcQ5eYpT0_zDwbjK3Ppr5Kl8QM3PEtA",
+      "image_credit": "Chicago Tribune",
+      "news": [
+        {
+          "url": "https://www.chicagotribune.com/2026/11/18/alcaraz-vence-a-medvedev-en-las-finales-atp-pese-a-un-problema-fsico-y-avanza-a-semifinales/",
+          "title": "Alcaraz vence a Medvedev en las Finales ATP pese a un problema físico y avanza a semifinales",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--s-sd16jM_OPn5W3wFRkwZwLe2qjVcQ5eYpT0_zDwbjK3Ppr5Kl8QM3PEtA"
+        },
+        {
+          "url": "https://elpais.com/deportes/tenis/2026-11-20/carlos-alcaraz-flavio-cobolli-en-directo-el-partido-de-las-atp-finals-en-vivo.html",
+          "title": "Carlos Alcaraz - Flavio Cobolli en directo, el partido de las ATP Finals en vivo|Comienza el encuentro",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRwkF-m05bD9hAE9JB_3350LVqiOQ7HkGpFHuu7qFmVpd5Rzi5EkM3zoeteKw"
+        },
+        {
+          "url": "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-dia-6-previa-alcaraz-cobolli-medvedev-tiafoe",
+          "title": "Alcaraz busca seguir invicto; Medvedev y Tiafoe se juegan una plaza de SF",
+          "publisher": "Nitto ATP Finals",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT921-3cC3Z2s--emTeoNcBsImkMpZ5wrdLmx85V9QdO749TzMC4wAtWpwBV7s"
+        }
+      ]
+    },
+    {
+      "query": "turkey",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T13:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/20/climate/cop31-talks-fossil-fuels-finance-electrification",
+        "https://www.reuters.com/sustainability/cop/businesses-urge-faster-action-electrification-cop31-enters-final-hours-2026-11-19/",
+        "https://www.theguardian.com/environment/live/2026/nov/19/cop31-climate-turkey-live-news-updates-"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcwqf0edpBj6BOWm4kdQcbPiS3nC2E2QHE9BNZcfRx04-LtqZrjKvUQrptbWE",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/20/climate/cop31-talks-fossil-fuels-finance-electrification",
+          "title": "How two words could derail the world’s biggest climate conference",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcwqf0edpBj6BOWm4kdQcbPiS3nC2E2QHE9BNZcfRx04-LtqZrjKvUQrptbWE"
+        },
+        {
+          "url": "https://www.reuters.com/sustainability/cop/businesses-urge-faster-action-electrification-cop31-enters-final-hours-2026-11-19/",
+          "title": "Businesses urge faster action on electrification as COP31 enters final hours",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq0Gxbgsdea8eoZH--nbfaihsDXa8bInPppTMlFdpk-5M4Ya649xRNB0TPqqI"
+        },
+        {
+          "url": "https://www.theguardian.com/environment/live/2026/nov/19/cop31-climate-turkey-live-news-updates-",
+          "title": "Cop31 as it happened: Fossil fuels dumped from latest draft deal at climate summit",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtNEDXv0n4h5hFdOdx8aCf8kw2UkcDAK_dBKpKaQg2-xICxsZ8QgzVyxj7YYA"
+        }
+      ]
+    },
+    {
+      "query": "walton goggins",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T13:30:00Z",
+      "related_news_urls": [
+        "https://www.gamesradar.com/entertainment/sci-fi-shows/walton-goggins-doesnt-know-if-fallout-will-come-back-for-season-4-but-is-confident-season-3-remains-true-to-the-sacred-nature-of-this-game/",
+        "https://www.pcgamer.com/movies-tv/not-even-walton-goggins-knows-if-fallout-will-have-a-season-4-if-we-get-the-opportunity-to-come-back-for-season-four-that-would-continue-to-honor-how-sacred-this-is-to-people/",
+        "https://www.cbr.com/fallout-season-4-disappointing-update-walton-goggins/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFhDybhQaYvtAwPXdVjAuns7gk0EBEaSVQ_xujsoWes3hA9SAmy8jL4HTX1F8",
+      "image_credit": "GamesRadar+",
+      "news": [
+        {
+          "url": "https://www.gamesradar.com/entertainment/sci-fi-shows/walton-goggins-doesnt-know-if-fallout-will-come-back-for-season-4-but-is-confident-season-3-remains-true-to-the-sacred-nature-of-this-game/",
+          "title": "Walton Goggins doesn't know if Fallout will \"come back for season 4\" but is confident season 3 remains true to \"the sacred nature of this game\"",
+          "publisher": "GamesRadar+",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFhDybhQaYvtAwPXdVjAuns7gk0EBEaSVQ_xujsoWes3hA9SAmy8jL4HTX1F8"
+        },
+        {
+          "url": "https://www.pcgamer.com/movies-tv/not-even-walton-goggins-knows-if-fallout-will-have-a-season-4-if-we-get-the-opportunity-to-come-back-for-season-four-that-would-continue-to-honor-how-sacred-this-is-to-people/",
+          "title": "Not even Walton Goggins knows if Fallout will have a Season 4: 'if we get the opportunity to come back for season four, that would continue to honor how sacred this is to people'",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlc1soLi9z-PcgAdwm6zo54phlUzzgiqGIxj9_k8Rhyk3ODWDBoBjrPNlkkEA"
+        },
+        {
+          "url": "https://www.cbr.com/fallout-season-4-disappointing-update-walton-goggins/",
+          "title": "Fallout Season 4 Gets Disappointing Update After Walton Goggins' Cryptic Goodbye",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsXnlcsf4cEExvUwThIJ4zcTdPfwDwRdpzdpnSMtTPEGEhN5fVxUA9TtWpvuI"
+        }
+      ]
+    },
+    {
+      "query": "trinity rodman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T13:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/picture-gallery/sports/soccer/uswnt/2026/11/20/trinity-rodman-soccer-career-uswnt-photos/92868850007/",
+        "https://www.cbssports.com/soccer/news/trinity-rodmans-washington-spirit-nwsl-final-fun/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWFbLZMRgSPlsB8wsUppotvIOXwD5I4UQnz_OrNi5vrbrZgMXciC_YavU2pr0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/picture-gallery/sports/soccer/uswnt/2026/11/20/trinity-rodman-soccer-career-uswnt-photos/92868850007/",
+          "title": "Trinity Rodman’s rise from soccer prodigy to USWNT star",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWbwyNO3omfZST-JEte1hyegvMCpDraa4hwFMlDZo9xkd3JM1ibpKU3BzJLLQ"
+        },
+        {
+          "url": "https://www.cbssports.com/soccer/news/trinity-rodmans-washington-spirit-nwsl-final-fun/",
+          "title": "Trinity Rodman's non-negotiable for Washington Spirit: 'I wouldn't be playing soccer if it wasn't fun'",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Y-KP0EE0-nJItk6HeEoFJMG8Gr2AUTK9Y9mewemTwgDN_3T56jBHH9eQJn4"
+        }
+      ]
+    },
+    {
+      "query": "rahm emanuel",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T13:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/politics/rahm-emanuel-is-betting-america-wants-a-radical-centrist-as-president-9a914708",
+        "https://www.arkansasonline.com/news/2026/nov/11/emanuel-offers-a-do-able-path-forward-for/",
+        "https://www.washingtonexaminer.com/opinion/columnists/4807147/rahm-emanuel-2028-pittsburgh-trades-steel/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGjiWj8gGP0nZVVcqUFV4yEtF38UnGh9aTEx4OFHmVqcroMsISbncb-miZ7xM",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/politics/rahm-emanuel-is-betting-america-wants-a-radical-centrist-as-president-9a914708",
+          "title": "Rahm Emanuel Is Betting America Wants a Radical Centrist as President",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGjiWj8gGP0nZVVcqUFV4yEtF38UnGh9aTEx4OFHmVqcroMsISbncb-miZ7xM"
+        },
+        {
+          "url": "https://www.arkansasonline.com/news/2026/nov/11/emanuel-offers-a-do-able-path-forward-for/",
+          "title": "OPINION | JOHN BRUMMETT: Emanuel offers a do-able path forward for Democrats, nation",
+          "publisher": "The Arkansas Democrat-Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2svAqkiE23uUyAOFZOGXdNDm3KgF6hrWEXWvY8pfavyWS1GUBJqk3q1pF3dI"
+        },
+        {
+          "url": "https://www.washingtonexaminer.com/opinion/columnists/4807147/rahm-emanuel-2028-pittsburgh-trades-steel/",
+          "title": "Eyeing 2028, Rahm Emanuel meets Pittsburgh trades on old steel ground",
+          "publisher": "Washington Examiner",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRz4Yvdgil9HMd9FL-e1B5tbR4wzu8V-9rG4xGDcqGdXIwKR4C8Ap4IHTxuYA8"
+        }
+      ]
+    },
+    {
+      "query": "flavio cobolli",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T13:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/sport/live/2026/nov/20/carlos-alcaraz-v-flavio-cobolli-atp-finals-tennis-group-stage-live?page=with:block-6b004e208f083dc0e3993957",
+        "https://sportsbook.fanduel.com/tennis/atp-finals-turin-2026/carlos-alcaraz-v-flavio-cobolli-36313140",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/ben-shelton-vs-rafael-jodar-group-stage-match-nov-19-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8U-zi06jqTiK3oHqg6kbMvxHQRwqpDjJ2vPHSv9f9Ip6bWQFhjkRgsXS0938",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/20/carlos-alcaraz-v-flavio-cobolli-atp-finals-tennis-group-stage-live?page=with:block-6b004e208f083dc0e3993957",
+          "title": "Carlos Alcaraz v Flavio Cobolli: ATP Finals tennis group stage – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8U-zi06jqTiK3oHqg6kbMvxHQRwqpDjJ2vPHSv9f9Ip6bWQFhjkRgsXS0938"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/tennis/atp-finals-turin-2026/carlos-alcaraz-v-flavio-cobolli-36313140",
+          "title": "Carlos Alcaraz v Flavio Cobolli Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/ben-shelton-vs-rafael-jodar-group-stage-match-nov-19-2026/",
+          "title": "November 19, 2026: Ben Shelton vs Rafael Jodar Group Stage match Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrnLTUgFDxo9e_MLe6ihcnF7Iz1QM1dEe2tl1_lQZaRneLKAEAm69Apzt54oU"
+        }
+      ]
+    },
+    {
+      "query": "ronny hallin passed away",
+      "approx_searches": "500+",
       "published_at": "2026-11-20T13:10:00Z",
       "related_news_urls": [
         "https://www.nine.com.au/entertainment/celebrity/ronny-hallin-death-aged-88-laverne-and-shirley-20261120-p61fuj.html",
@@ -42,317 +314,37 @@
       ]
     },
     {
-      "query": "france vs spain",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T13:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cx8dv4y3nm8et",
-        "https://www.espn.com/soccer/story/_/id/50539055/england-norway-spain-france-nations-league",
-        "https://www.uefa.com/uefanationsleague/news/02ab-2219b45e1aa6-7834fde41ea1-1000--2026-27-nations-league-quarter-finals-get-to-know-the-eight-/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkMX9Q4B_TPHsgOqwcs5cjr9j2Fbv6f5ZatWkuSzXxVr6yrKvCfeW_S4oilXw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cx8dv4y3nm8et",
-          "title": "Nations League draw LIVE: England and Wales to find out opponents",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkMX9Q4B_TPHsgOqwcs5cjr9j2Fbv6f5ZatWkuSzXxVr6yrKvCfeW_S4oilXw"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50539055/england-norway-spain-france-nations-league",
-          "title": "Nations League quarterfinal draw: England face Norway, Spain to meet France",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvJyBmA4zWQk9rrXzNdaijy_Up-aUcKllSBqRPJ17BOToJBnnENXCY0YZlIQQ"
-        },
-        {
-          "url": "https://www.uefa.com/uefanationsleague/news/02ab-2219b45e1aa6-7834fde41ea1-1000--2026-27-nations-league-quarter-finals-get-to-know-the-eight-/",
-          "title": "2026/27 Nations League quarter-finals: Get to know the eight contenders",
-          "publisher": "UEFA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbb0tw81wOCKwwWaA9XvjQMySswCN81kjWinsQtdPhEw2D1Wh4vQkHA75y7Q"
-        }
-      ]
-    },
-    {
-      "query": "vix index",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T13:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
-        "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
-        "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/it-s-getting-more-and-more-volatile-for-stocks-ROSooZcFbkLpYiu56lWF"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtFzxamjX-wQ0HKRTmXKVR6XqvfraOA-vFmsBHpI7Z3l3FNs23GkiQ48D6Xxc",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
-          "title": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtFzxamjX-wQ0HKRTmXKVR6XqvfraOA-vFmsBHpI7Z3l3FNs23GkiQ48D6Xxc"
-        },
-        {
-          "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
-          "title": "Wall Street's fear gauge touches seven-month high as AI worries mount",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq1ESR5fXEraX1hmJ93NxxWaYFi17ZY7A2XEaEc3LH2vhj_bSFZ2Vm3uUt2og"
-        },
-        {
-          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/it-s-getting-more-and-more-volatile-for-stocks-ROSooZcFbkLpYiu56lWF",
-          "title": "It’s Getting More and More Volatile for Stocks",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS92LI4aEwMNmHs9GR3K2sah9YJ5TUvK-LC8aAZUJVWKNro75oi2SXuQEfF2k"
-        }
-      ]
-    },
-    {
-      "query": "corey heim",
+      "query": "lexi thomas",
       "approx_searches": "200+",
-      "published_at": "2026-11-20T12:40:00Z",
+      "published_at": "2026-11-20T13:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/racing/nascar/story/_/id/50513007/heim-drive-no-67-not-no-35-23xi-racing-2027",
-        "https://www.nascar.com/news-media/2026/11/17/cup-series-corey-heim-to-drive-no-67-toyota-23xi-racing-2027/",
-        "https://www.jayski.com/2026/11/17/corey-heim-to-drive-no-67-in-2027/"
+        "https://www.thebanner.com/community/local-news/lexi-thomas-hannan-cancer-scammer-arrested-B727S3E44BEIREDTMHQBOVEORM/",
+        "https://www.cleveland.com/news/2026/11/woman-claimed-she-had-cancer-for-a-decade-police-say-there-was-a-costly-secret.html",
+        "https://mocoshow.com/2026/11/19/good-counsel-graduate-arrested-on-felony-theft-charges-amid-allegations-of-fabricated-cancer-battle/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2IV-Eum9nXui-KaFF1ENXWkZjNGiN0WXWoVPMVA7wDig9E0gGHlRZFOyCCG4",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKYfkzQAJT916gXZ2A0Dyf7ni12MV50J3ZC5-ZMx1OjFP3uDwJCSrd0q4oqI",
+      "image_credit": "The Baltimore Banner",
       "news": [
         {
-          "url": "https://www.espn.com/racing/nascar/story/_/id/50513007/heim-drive-no-67-not-no-35-23xi-racing-2027",
-          "title": "Corey Heim to drive No. 67, not No. 35, with 23XI Racing in 2027",
-          "publisher": "ESPN",
+          "url": "https://www.thebanner.com/community/local-news/lexi-thomas-hannan-cancer-scammer-arrested-B727S3E44BEIREDTMHQBOVEORM/",
+          "title": "Accused cancer scammer Lexi Thomas charged with felony theft",
+          "publisher": "The Baltimore Banner",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2IV-Eum9nXui-KaFF1ENXWkZjNGiN0WXWoVPMVA7wDig9E0gGHlRZFOyCCG4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKYfkzQAJT916gXZ2A0Dyf7ni12MV50J3ZC5-ZMx1OjFP3uDwJCSrd0q4oqI"
         },
         {
-          "url": "https://www.nascar.com/news-media/2026/11/17/cup-series-corey-heim-to-drive-no-67-toyota-23xi-racing-2027/",
-          "title": "Corey Heim to drive No. 67 Toyota for 23XI Racing in 2027",
-          "publisher": "NASCAR.com",
+          "url": "https://www.cleveland.com/news/2026/11/woman-claimed-she-had-cancer-for-a-decade-police-say-there-was-a-costly-secret.html",
+          "title": "Woman claimed she had cancer for a decade. Police say there was a costly secret",
+          "publisher": "Cleveland.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3nSVj3lE4smWYccYPCg54Xw3Myf6USCYDrVHT9NO3pxQKi-U2sHjyCrl2GGQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-ZKx9hkLnOKNriWch8z7UnHXDFd00ra9ggqv95e8STFMtBfOxl8U1VSYlJno"
         },
         {
-          "url": "https://www.jayski.com/2026/11/17/corey-heim-to-drive-no-67-in-2027/",
-          "title": "Corey Heim to drive No. 67 in 2027",
-          "publisher": "Jayski",
+          "url": "https://mocoshow.com/2026/11/19/good-counsel-graduate-arrested-on-felony-theft-charges-amid-allegations-of-fabricated-cancer-battle/",
+          "title": "Good Counsel Graduate Arrested on Felony Theft Charges Amid Allegations of Fabricated Cancer Battle",
+          "publisher": "The MoCo Show -",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaABWSZqqpjVJI6uu0Y1Cvcrpuj4xA-n790E2WqkSc24JcCrzQ2-n8QwrILjI"
-        }
-      ]
-    },
-    {
-      "query": "marketwatch",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T12:30:00Z",
-      "related_news_urls": [
-        "https://www.marketwatch.com/story/heres-what-happened-next-after-previous-times-the-s-p-500-losing-streak-reached-six-sessions-13ff7704",
-        "https://richtv.io/news/sp-500s-losing-streak-may-reach-six-sessions-as-jj-advances-two-products",
-        "https://www.wsj.com/finance/stocks/two-big-debuts-fail-to-boost-stocks-b68b79b1"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0s04eiyf4gOBIEELMdqntbLwEzj13sWM4VG_-KPzCx_NdoCrXf9kPdfPkEDw",
-      "image_credit": "MarketWatch",
-      "news": [
-        {
-          "url": "https://www.marketwatch.com/story/heres-what-happened-next-after-previous-times-the-s-p-500-losing-streak-reached-six-sessions-13ff7704",
-          "title": "Here’s what happened next after previous times the S&P 500 losing streak reached six sessions",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0s04eiyf4gOBIEELMdqntbLwEzj13sWM4VG_-KPzCx_NdoCrXf9kPdfPkEDw"
-        },
-        {
-          "url": "https://richtv.io/news/sp-500s-losing-streak-may-reach-six-sessions-as-jj-advances-two-products",
-          "title": "S&P 500’s losing streak may reach six sessions as J&J advances two pro…",
-          "publisher": "Rich Picks Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5DXIgI-alebP04qzIROGR79Egqj8B8i69RoSN5VBn9Qv5Ub6PkZIuY_ypxjU"
-        },
-        {
-          "url": "https://www.wsj.com/finance/stocks/two-big-debuts-fail-to-boost-stocks-b68b79b1",
-          "title": "Two Big Debuts Fail To Boost Stocks",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75Q1FbrLaJ0D3JEAxCR4kVUw9715rvLmtHTOn_olg9P-oZQ7YijUhjhwSMzM"
-        }
-      ]
-    },
-    {
-      "query": "sat",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T12:30:00Z",
-      "related_news_urls": [
-        "https://edsource.org/2026/uc-regents-debate-sat/770804",
-        "https://www.yahoo.com/news/politics/articles/uc-must-bring-back-academic-030954739.html",
-        "https://www.kqed.org/news/12110099/as-uc-regents-reconsider-sat-requirements-students-rally-for-test-free-admissions"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkuD4PXh5rtPPEMBB-HxU2xEo1BJYbGAVo3iztFv0l64b-2GoiUlog2v_ifRM",
-      "image_credit": "EdSource",
-      "news": [
-        {
-          "url": "https://edsource.org/2026/uc-regents-debate-sat/770804",
-          "title": "Should admission to University of California require SAT exams? Researchers give competing views",
-          "publisher": "EdSource",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkuD4PXh5rtPPEMBB-HxU2xEo1BJYbGAVo3iztFv0l64b-2GoiUlog2v_ifRM"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/uc-must-bring-back-academic-030954739.html",
-          "title": "UC must bring back academic standards and stop pandering to campus crazies",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCDSdwmYhQ3KVes4DSWyGsm9GEVmLXOfg6UsIwOil8Vt5vpF4nRe5aiLNPHuQ"
-        },
-        {
-          "url": "https://www.kqed.org/news/12110099/as-uc-regents-reconsider-sat-requirements-students-rally-for-test-free-admissions",
-          "title": "As UC Regents Reconsider SAT Requirements, Students Rally for Test-Free Admissions",
-          "publisher": "KQED",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0kwyXCMt4csa2maM06j8opESK7AL0XKEtbM5sONJsytZPY2-VbMnrVmPOlXQ"
-        }
-      ]
-    },
-    {
-      "query": "regions",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T12:20:00Z",
-      "related_news_urls": [
-        "https://www.al.com/news/birmingham/2026/11/regions-is-inviting-the-public-to-its-annual-birmingham-holiday-light-display.html",
-        "https://yellowhammernews.com/regions-bank-christmas-display-returns-to-downtown-birmingham-nov-27/",
-        "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqeLxL_-cvG_5lBCTR-Ww-Oj-zgZEEq0mnRQcDGsKmTh596o5uJR8p4WFE_qc",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/news/birmingham/2026/11/regions-is-inviting-the-public-to-its-annual-birmingham-holiday-light-display.html",
-          "title": "Regions is inviting the public to its annual Birmingham holiday light display",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqeLxL_-cvG_5lBCTR-Ww-Oj-zgZEEq0mnRQcDGsKmTh596o5uJR8p4WFE_qc"
-        },
-        {
-          "url": "https://yellowhammernews.com/regions-bank-christmas-display-returns-to-downtown-birmingham-nov-27/",
-          "title": "Regions Bank Christmas display returns to downtown Birmingham Nov. 27",
-          "publisher": "Yellowhammer News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3-gUn2Oj3FmeeZ5-EC98VeR4EJtfNURkffyChHcWppeDy8qoZTUN4d2bNmTE"
-        },
-        {
-          "url": "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/",
-          "title": "More Russian regions limit fuel sales as Ukrainian drone strikes hit refinery output",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTmeOuc6nvFW7Qlu0adKC13-NLBi_UD9AhnQ18Pb7Py6G56oRJHS7jlubXp5g"
-        }
-      ]
-    },
-    {
-      "query": "warren buffett",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T12:20:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-        "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/",
-        "https://www.foxbusiness.com/lifestyle/warren-buffett-takes-another-step-toward-giving-away-his-entire-fortune"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-          "title": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA"
-        },
-        {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/",
-          "title": "Warren Buffett Announces $5.5 Billion Thanksgiving Gift—Four Times Bigger Than Last Year",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsYvVdYcQM7wl0_6auvMrJO1eTr0WAGBYG1Ix8cYLRNfM-zkeHs9xXdrh7iLU"
-        },
-        {
-          "url": "https://www.foxbusiness.com/lifestyle/warren-buffett-takes-another-step-toward-giving-away-his-entire-fortune",
-          "title": "Warren Buffett takes another step toward giving away his entire fortune",
-          "publisher": "Fox Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ06o-zdaM1DijWmmsl09cLnbTuCPYuELLH8Sv4CzO2xWpgnN25rDC_yezwi8"
-        }
-      ]
-    },
-    {
-      "query": "quinn hughes injury",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T12:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7796855/2026/11/19/quinn-hughes-wild-injury-adam-klapka/",
-        "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-exits-in-win-over-flames/",
-        "https://www.tsn.ca/nhl/article/star-defenceman-hughes-leaves-early-vs-flames/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4uESyot5-oG09tivFQQp2jXY_PWP2jwGwXWgSMuoZdZp0Wyz2qZdi5v2pNQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7796855/2026/11/19/quinn-hughes-wild-injury-adam-klapka/",
-          "title": "Wild’s Quinn Hughes leaves game after hit from Adam Klapka: ‘We hope he’s good’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4uESyot5-oG09tivFQQp2jXY_PWP2jwGwXWgSMuoZdZp0Wyz2qZdi5v2pNQ"
-        },
-        {
-          "url": "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-exits-in-win-over-flames/",
-          "title": "Wild's Quinn Hughes exits in win over Flames",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxqgSZLPHAbQxcrpnXlP5XR0t9Ke0RlzOkn5pTJgIPaDM6ZVlR2DYegqYzIQM"
-        },
-        {
-          "url": "https://www.tsn.ca/nhl/article/star-defenceman-hughes-leaves-early-vs-flames/",
-          "title": "Star defenceman Hughes leaves early vs. Flames",
-          "publisher": "TSN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIOQR3w7fx6d4LIgaWeCLcFZPpvtg2AudkIT6azo9sYUMI4GydCX28jQ7El50"
-        }
-      ]
-    },
-    {
-      "query": "anthony ippolito",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T12:20:00Z",
-      "related_news_urls": [
-        "https://www.inquirer.com/sports/i-play-rocky-movie-paulie-actor-burt-young-stallone-20261120.html",
-        "https://www.theringer.com/2026/11/20/movies/i-play-rocky-review-sylvester-stallone-biopic",
-        "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0p6SkDvdkVpdfLZOHYuEfPoUXwF-e2182wbrsuFQ7ZpbsM_IqnNDAq-FKOkM",
-      "image_credit": "Inquirer.com",
-      "news": [
-        {
-          "url": "https://www.inquirer.com/sports/i-play-rocky-movie-paulie-actor-burt-young-stallone-20261120.html",
-          "title": "He credits Rocky with saving his life. Now Scot Teller is living a dream as Paulie in ‘I Play Rocky’",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0p6SkDvdkVpdfLZOHYuEfPoUXwF-e2182wbrsuFQ7ZpbsM_IqnNDAq-FKOkM"
-        },
-        {
-          "url": "https://www.theringer.com/2026/11/20/movies/i-play-rocky-review-sylvester-stallone-biopic",
-          "title": "‘I Play Rocky’ Will Work You Over (and Over and Over)",
-          "publisher": "The Ringer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6qAlioCXQcZsTrU5Ne1dSWwu5O1cjQXo1xG6dWPMW5nioDSbia82VNLePpkY"
-        },
-        {
-          "url": "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/",
-          "title": "AnnaSophia Robb on I Play Rocky and Representing the Underdogs",
-          "publisher": "Rotten Tomatoes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHzZAMq1Da1-_MtJxA99UToYuETyIiF185b_QNNiz5pA2atuK2m6KAZ5zTUQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_68DU83uH95KAOnOL-yzyUqigtNi1lnuBB1hZrKfgueNmSqttSxTLHiNe9g"
         }
       ]
     }
