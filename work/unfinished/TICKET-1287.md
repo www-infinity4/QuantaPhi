@@ -3,19 +3,21 @@ issue: 1287
 project: Infinity Open Browser Bridge
 source_requests:
   - "Owner request Oct 31: free, original self-hosted browser alternative after TinyFish credits exhausted"
-state: review_pending
+state: source_tested
 dot: "🟡"
 progress_percent: unknown
-progress_basis: "Milestone 1 policy and navigation scaffold only; browser/session/owner authorization/real deployment acceptance unverified"
-sessions_spent: 10
+progress_basis: "Milestone 2 source additions: Docker-internal egress profile, Tor SOCKS sidecar, exact-host policy, real kernel and Chromium CI tests; current-head CI/independent approval and live acceptance pending"
+sessions_spent: 11
 sessions_remaining_estimate: unknown
 agent: "Continuity Builder source engineering"
 lease_id: null
+fence: null
+task_session_id: null
 lease_expires_at: null
-last_observed_at_utc: "2026-10-31T19:15:00Z"
+last_observed_at_utc: "2026-11-20T02:30:00Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/open-browser-bridge-20261031
-head_sha: "4db0b06cff911a58113cdac0c3aed6d5ab75bfd2"
+head_sha: "b1e8f5e80a0225dea28b1c8a341750437d2ac9f2"
 pr: 1286
 tests:
   - "Node v22 local policy regression: test-first 2/3 (alternate-port bypass reproduced), fixed 3/3 pass; node --check policy.mjs pass"
@@ -28,8 +30,8 @@ ci:
 merged: false
 deployed: false
 live_verified: false
-blocker: "Independent security review, network egress firewall and DNS pinning still required; Node DNS checks are not complete SSRF protection"
-next_action: "Obtain independent security review of context routing and egress/DNS pinning; implement verified network isolation before any browser authentication"
+blocker: "Kernel egress/Chromium integration CI and independent security review required; Tor stream, live browser, operator host and Android not accepted"
+next_action: "Confirm exact-head Docker kernel isolation and Chromium sandbox checks, then independent security review before permitted merge"
 ---
 
 ## Bounded source receipt (2026-10-31)
@@ -89,3 +91,14 @@ Index synchronization: main lacks `work/unfinished/INDEX.md`; it exists in still
 - Source commit `7b3235ea9a5d58d6afe639acb9dcf8e91654acc0` rejects an unapproved final browser URL after `page.goto` and before a success receipt; commit `4db0b06cff911a58113cdac0c3aed6d5ab75bfd2` adds static regression test for ordering (navigation → final URL check → screenshot → receipt).
 - Exact source head `4db0b06` GitHub Actions **4/4 succeeded**: policy `41232191583`, search/wallet `41232191674`, image `41232191569`, StarCoin payout `41232191593`.
 - Caveat: the static regression guard does not demonstrate live Chromium DNS rebinding containment or complete browser isolation. Independent PR reviews last checked: zero. No merge, production deployment, or live verified browser execution. Next action: independent security reviewer and network-isolated Chromium integration acceptance, then owner-approved release gates.
+
+## Session 11 — network isolation and Tor transport (November 19, 2026 CT)
+
+- Owner requested that the unfinished browser bridge be built, including network isolation and filtering. Reused issue #1287 and PR #1286, same source branch; no browser/work lease or credentials claimed.
+- Added exact-host Tor mode: allowlisted v3 `.onion` HTTP only through the isolated SOCKS5 sidecar; no `.onion.ly` proxy substitution, no plaintext clearnet HTTP, direct DNS only for pre-existing non-Tor mode. Chromium disables QUIC, restricts unproxied WebRTC UDP, and all WebSockets remain blocked.
+- Enforced Docker topology: browser ONLY on `internal: true` network, Tor dual-homed and SOCKS listener bound to the private address with source policy, no host ports, non-root users, read-only roots, all capabilities dropped, no-new-privileges, seccomp profile from microsoft/playwright, and separate receipt volume.
+- Network/runtime regression runners: `network-probe.mjs` tests private/metadata/IPv4/IPv6 direct TCP denial and sidecar availability; `chromium-smoke.mjs` attempts a sandboxed real browser launch with blocked metadata request. Dedicated GitHub workflow has separate source-policy and kernel-isolation jobs.
+- RED-intent test commit `976165394287002703067a1353199293660e909e` created before transport module. A failing test run at that exact test-only head was not observed; no RED execution receipt claimed.
+- CI diagnosis: workflow `44660674360` had policy 22 pass/2 fail due old static source match and overescaped seccomp assertion; integration failed because Tor config was verified as root against debian-tor-owned data. Fixes committed and rerun. Subsequent exact head `29e0330a` passed policy; kernel test still reported a Linux IPv6 loopback placeholder as a default route. Follow-up source `b1e8f5e8` excludes loopback-only placeholder while still rejecting real interfaces with default routes.
+- The old source-only bridge is NOT a Tor Browser fork. Official Tor Firefox/GeckoView fingerprinting changes are absent; there is no authenticated user session, live Bubbles tool handoff, Tor circuit acceptance, deployment or physical Android evidence. Independent security review and release signoff have not occurred.
+- This checkpoint does not assert a successful merge or deployment. Next step: exact-head kernel CI/readback, assess any failed socket/Chromium test, and independent review before an expected-head merge.
