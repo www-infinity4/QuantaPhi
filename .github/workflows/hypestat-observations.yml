@@ -1,0 +1,53 @@
+name: HypeStat observations source tests
+on:
+  push:
+    paths:
+      - 'hypestat-observations*'
+      - '.github/workflows/hypestat-observations.yml'
+  pull_request:
+    paths:
+      - 'hypestat-observations*'
+      - '.github/workflows/hypestat-observations.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  observation-unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate source schema and safety
+        run: node --test hypestat-observations.test.mjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned browser runner
+        run: |
+          python -m pip install playwright==1.62.0
+          python -m playwright install chromium
+      - name: Test responsive local browser interactions
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 > /tmp/observation-http.log 2>&1 &
+          python - <<'PY'
+          import time,urllib.request
+          for attempt in range(30):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:8765/hypestat-observations.html',timeout=1).read(1)
+                  break
+              except OSError:
+                  time.sleep(.2)
+          else:
+              raise SystemExit('Static test server unavailable')
+          PY
+          python hypestat-observations.browser-test.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hypestat-observations-browser-evidence
+          path: |
+            hypestat-observations-mobile.png
+            hypestat-observations-desktop.png
+          if-no-files-found: ignore

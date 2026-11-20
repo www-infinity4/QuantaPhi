@@ -124,6 +124,40 @@ export async function scanPublicX(env,account=OWNER){
  await recordScan(env,{status:'public_posts_observed',visible:observed.length,added:newCount,candidates:account===OWNER?candidates:0,checkedAt:scanStartedAt,account});
  return {ok:true,status:'public_posts_observed',sourceAccount:account,authority:account===OWNER?'owner_source':'reference_only',visibleCount:observed.length,newPosts:newCount,expandedPosts:expandedCount,newPossibleRequests:account===OWNER?candidates:0,lastSuccess:stamp,publicRead:true,completeHistory:false};
 }
+// One-time external public-browser observations are separate from Cloudflare's
+// scheduled profile scans. Never interpret this table as an X writer grant.
+export function normalizeStarCraftObservation(row){
+ if(!row||row.account!==STARCRAFT||row.audience!=='general'||row.source_method!=='tinyfish_public_browser')return null;
+ const id=String(row.post_id??'');
+ if(!/^\d{15,22}$/.test(id)||row.url!==SOURCES[STARCRAFT]+'/status/'+id)return null;
+ const summary=String(row.summary??'').trim();
+ if(!summary||summary.length>240)return null;
+ const source=String(row.source_run_url??'');
+ if(!/^https:\/\/agent\.tinyfish\.ai\/runs\/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(source))return null;
+ const stamp=String(row.observed_at??'');
+ if(!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$/.test(stamp)||!Number.isFinite(Date.parse(stamp)))return null;
+ return {account:STARCRAFT,post_id:id,url:row.url,summary,
+  observed_at:stamp,source_method:'tinyfish_public_browser',source_run_url:source,
+  audience:'general',authority:'reference_only',fullTextVerified:false};
+}
+async function loadStarCraftObservations(env){
+ let rows;
+ try{
+  // Metadata only. There is no public write endpoint and no X session token.
+  // Source scans and external human-reviewed captures remain separate D1 tables.
+  rows=await env.DB.prepare("SELECT account,post_id,url,summary,audience,source_method,source_run_url,observed_at FROM starcraft_public_observations WHERE account='StarCraftCo' AND audience='general' ORDER BY CAST(post_id AS INTEGER) DESC LIMIT 30").all();
+ }catch(e){
+  return {observations:[],observationState:'storage_unavailable'};
+ }
+ const seen=new Set(),observations=[];
+ for(const raw of rows.results||[]){
+  const normalized=normalizeStarCraftObservation(raw);
+  if(!normalized||seen.has(normalized.post_id))continue;
+  seen.add(normalized.post_id);
+  observations.push(normalized);
+ }
+ return {observations,observationState:observations.length?'external_public_browser_review':'none_imported'};
+}
 export default {
  async scheduled(event,env,ctx){
   // Owner hourly; secondary public context runs at 00, 06, 12, 18 UTC.
@@ -155,7 +189,8 @@ export default {
     "SELECT id,url,body,kind,observed_at FROM owner_x_posts WHERE url LIKE 'https://x.com/IntegraAI/status/%' ORDER BY CAST(id AS INTEGER) DESC LIMIT 30":
     "SELECT id,url,body,kind,observed_at FROM owner_x_posts WHERE url LIKE 'https://x.com/StarCraftCo/status/%' ORDER BY CAST(id AS INTEGER) DESC LIMIT 30";
    const rows=await env.DB.prepare(query).all();
-   return json({ok:true,author:account,authority:'reference_only',items:rows.results||[],state:'context_review_only',note:'Public context posts do not authorize work, replies or publishing.'});
+   const observed=account===STARCRAFT?await loadStarCraftObservations(env):null;
+   return json({ok:true,author:account,authority:'reference_only',items:rows.results||[],...(observed||{}),state:'context_review_only',note:'Public context posts do not authorize work, replies or publishing. External public browser references are not Cloudflare profile scan successes.'});
   }
   return json({ok:false,error:'not_found'},404);
  }

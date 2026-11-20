@@ -6,6 +6,7 @@
 export const DEPARTMENTS=Object.freeze([
  {id:'all',label:'All Quick Cards'},
  {id:'shopping',label:'Shopping & brands'},
+ {id:'business',label:'Business & finance'},
  {id:'restaurants',label:'Restaurants & food'},
  {id:'sports',label:'Sports · followed teams'},
  {id:'news',label:'News & civic updates'},
@@ -26,6 +27,7 @@ export function departmentFor(card={}){
  if(/\b(health|medical|screening|clinic|pharmacy|mychart)\b/.test(cat))return 'healthcare';
  if(/\b(sports?|nfl|nba|mlb|nhl|football|baseball|basketball|hockey|soccer|team|olympic)\b/.test(cat)||/\b(nfl|nba|mlb|sports?|scores?|packers|lions|world.series)\b|googletrend(nba|mlb)|world-series/.test(id))return 'sports';
  if(/\b(news|journalis|civic|government|public.servic|politic)\b/.test(cat)||/\b(news|headline|breaking)\b/.test(id))return 'news';
+ if(/\b(business|finance|investing|real estate|entrepreneurship)\b/.test(cat))return 'business';
  if(/\b(restaur|food|grocer|recipe|dining|pizza|produce|burger|coffee|cook)\b/.test(cat))return 'restaurants';
  if(/\b(develop|code|programming|builder|software|ai tools|computing)\b/.test(cat)||/\b(phiProjectActions|developer|termux|code.phi|bubbles.aicard)\b/i.test(id))return 'developers';
  if(/\b(radio|music|song|album|podcast|audio)\b/.test(cat)||/radio|music|song|spotify/.test(id))return 'radio';

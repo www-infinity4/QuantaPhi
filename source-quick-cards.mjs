@@ -3,6 +3,7 @@ import {findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
 import {mountAvatarAiCard} from './avatar-ai-card.mjs';
 import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
+import {CREATOR_SOURCES} from './creator-post-catalog.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
@@ -43,6 +44,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
 const PCLA_DISCOVERY=findDiscovery('pcla-picocela');
 export const ACTIVE_SOURCE_CARDS=Object.freeze([
  ...QUICK_CARD_SOURCES,
+ ...CREATOR_SOURCES,
  ...(PCLA_DISCOVERY?[source(PCLA_DISCOVERY.id,PCLA_DISCOVERY.name,PCLA_DISCOVERY.category,
    PCLA_DISCOVERY.feature,PCLA_DISCOVERY.official,PCLA_DISCOVERY.url,
    PCLA_DISCOVERY.study,PCLA_DISCOVERY.study,PCLA_DISCOVERY)]:[])
@@ -53,7 +55,8 @@ export const ACTIVE_SOURCE_CARDS=Object.freeze([
 export const PUBLIC_SOURCE_IDS=Object.freeze([
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
- 'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela'
+ 'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela',
+ ...CREATOR_SOURCES.map(c=>c.id)
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>{
