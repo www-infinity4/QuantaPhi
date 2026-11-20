@@ -14,6 +14,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from c13b0_scope_inventory import validate_public_scope_inventory
 
 BASE = "https://quantaphi.org"
 STAMP = str(int(time.time()))
@@ -51,10 +52,7 @@ def scope():
     code,headers,body,url=get('/api/bubbles/connections/scope-inventory?c13b0='+STAMP)
     if code!=200:raise Exception('scope inventory HTTP '+str(code))
     data=json.loads(body)
-    item=data.get('scopeInventory') or {}
-    if data.get('configured') is not True or item.get('serverAllowlistCount')!=386 or item.get('signInRequestScopeCount')!=386:
-        raise Exception('live scope inventory not 386/386')
-    return {"allowed":386,"requested":386}
+    return validate_public_scope_inventory(data)
 
 def frontend():
     code,headers,body,url=get('/bubbles.html?c13b0='+STAMP)
@@ -73,13 +71,13 @@ def javascript():
     module=html['module']
     code,headers,body,url=get(module+'&c13b0='+STAMP if '?' in module else module+'?c13b0='+STAMP)
     if code!=200:raise Exception('Sign-in JS HTTP '+str(code))
-    if "fullCloudflare?['owner.full']" not in body:
-        raise Exception('Expected registered 386-scope sign-in code is not live')
-    if 'Sign in and authorize 386 Cloudflare permissions' not in body:
-        raise Exception('Explicit 386-scope Cloudflare sign-in label is not live')
+    if "authorizationActions=id==='cloudflare'?['account.read']" not in body:
+        raise Exception('Cloudflare button is not wired to the small account OAuth request')
+    if 'Review Cloudflare project access' not in body or re.search(r'\b386 (?:registered |Cloudflare )?permissions\b',body):
+        raise Exception('Cloudflare account sign-in and project access review labels are not live')
     if 'client.resumePending(' not in body:
         raise Exception('Android/Chrome OAuth return recovery not present')
-    return {"fullRequiredScopeConsent":True,"scopeCountDisclosed":386,"returnHandler":True}
+    return {"minimalAccountScopeConsent":True,"separateProjectAccessLabel":True,"returnHandler":True}
 
 def callback():
     code,headers,body,url=get('/api/bubbles/connections/cloudflare/callback?result=failed&c13b0='+STAMP)
@@ -107,9 +105,9 @@ def protected():
     return {"requiresWallet":True,"noBypass":True}
 
 check('Bubbles routed to Cloudflare service',api)
-check('registered 386 OAuth scopes',scope)
+check('configured 386 OAuth request scopes (not provider registration)',scope)
 check('live Bubbles button',frontend)
-check('live registered-scope JavaScript',javascript)
+check('live Cloudflare account-consent JavaScript',javascript)
 check('Cloudflare callback failure visibility',callback)
 check('wallet-bound gate enforcement',protected)
 RECEIPT.parent.mkdir(mode=0o700,parents=True,exist_ok=True)
@@ -125,7 +123,7 @@ print("\nReceipt:",RECEIPT)
 print("Outcome:",receipt['status'])
 if receipt["status"]=="public_path_verified_not_user_signed_in":
     print("These checks passed; actual browser OAuth still requires confirmation.")
-    url=BASE+'/bubbles.html?signin=required386-1134'
+    url=BASE+'/bubbles.html?signin=cloudflare-account7'
     try:
         opener=subprocess.run(['am','start','-a','android.intent.action.VIEW',
             '-d',url,'-p','com.android.chrome'],capture_output=True,timeout=10)

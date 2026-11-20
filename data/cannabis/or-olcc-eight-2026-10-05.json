@@ -1,0 +1,92 @@
+{
+  "source": "Oregon Liquor and Cannabis Commission",
+  "dataset_id": "q32u-cmam",
+  "source_url": "https://data.oregon.gov/d/q32u-cmam",
+  "dataset_last_updated": "2026-10-05",
+  "queried_at": "2026-11-02",
+  "filter": "RECREATIONAL RETAILER; ACTIVE; license_expired No; expiration_date after 2026-11-01; non-exempt public physical address; first 8 by license number",
+  "license_verified": false,
+  "advertising_approved": false,
+  "records": [
+    {
+      "license_number": "050-10000590807",
+      "business_name": "DiamondTREE",
+      "city": "Bend",
+      "physical_address": "2715 NE HIGHWAY 20 BEND OR 97701-9595",
+      "expiration_date": "2026-12-31",
+      "license_type": "RECREATIONAL RETAILER",
+      "license_status": "ACTIVE",
+      "license_expired": "No"
+    },
+    {
+      "license_number": "050-10000680436",
+      "business_name": "MARITIME CAFE",
+      "city": "Milwaukie",
+      "physical_address": "17417 SE MCLOUGHLIN BLVD MILWAUKIE OR 97267-5906",
+      "expiration_date": "2026-12-31",
+      "license_type": "RECREATIONAL RETAILER",
+      "license_status": "ACTIVE",
+      "license_expired": "No"
+    },
+    {
+      "license_number": "050-1000071214D",
+      "business_name": "DiamondTREE",
+      "city": "Bend",
+      "physical_address": "1233 NW GALVESTON AVE BEND OR 97703-2433",
+      "expiration_date": "2026-12-08",
+      "license_type": "RECREATIONAL RETAILER",
+      "license_status": "ACTIVE",
+      "license_expired": "No"
+    },
+    {
+      "license_number": "050-1000076B368",
+      "business_name": "DiamondTREE",
+      "city": "Madras",
+      "physical_address": "380 N HIGHWAY 26 MADRAS OR 97741-9599",
+      "expiration_date": "2027-01-09",
+      "license_type": "RECREATIONAL RETAILER",
+      "license_status": "ACTIVE",
+      "license_expired": "No"
+    },
+    {
+      "license_number": "050-1000146ACE7",
+      "business_name": "Happy Leaf",
+      "city": "Portland",
+      "physical_address": "1301 NE BROADWAY ST PORTLAND OR 97232-1235",
+      "expiration_date": "2026-12-11",
+      "license_type": "RECREATIONAL RETAILER",
+      "license_status": "ACTIVE",
+      "license_expired": "No"
+    },
+    {
+      "license_number": "050-10001534ACF",
+      "business_name": "Silver Stem Fine Cannabis",
+      "city": "Portland",
+      "physical_address": "12240 N JANTZEN DR PORTLAND OR 97217-8137",
+      "expiration_date": "2026-12-31",
+      "license_type": "RECREATIONAL RETAILER",
+      "license_status": "ACTIVE",
+      "license_expired": "No"
+    },
+    {
+      "license_number": "050-1000163439B",
+      "business_name": "Gorge Greenery",
+      "city": "Hood River",
+      "physical_address": "13 OAK ST HOOD RIVER OR 97031-2384",
+      "expiration_date": "2027-09-30",
+      "license_type": "RECREATIONAL RETAILER",
+      "license_status": "ACTIVE",
+      "license_expired": "No"
+    },
+    {
+      "license_number": "050-10001759551",
+      "business_name": "Nectar",
+      "city": "Portland",
+      "physical_address": "3350 NE SANDY BLVD PORTLAND OR 97232-1927",
+      "expiration_date": "2026-12-29",
+      "license_type": "RECREATIONAL RETAILER",
+      "license_status": "ACTIVE",
+      "license_expired": "No"
+    }
+  ]
+}

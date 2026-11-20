@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-31T01:17:51.555811Z",
+  "cards": {
+    "pepe-brooke": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:11:46.827286Z",
+      "items": []
+    },
+    "pepe-vapour": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:11:46.827286Z",
+      "items": []
+    },
+    "guess-g11-light": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:11:46.827286Z",
+      "items": [
+        {
+          "url": "https://www.guess.com/en-us/guess/women/jeans",
+          "image": "https://img.guess.com/image/upload/f_auto,q_auto/v1/EU/Asset/Europe/E-Commerce/SFCC_Assets/OG_image/OG_image.jpg",
+          "title": "GUESS | Women's Jeans | GUESS United States",
+          "kind": "website",
+          "description": "Shop Women's Jeans by GUESS. Explore the online collection of clothing and accessories to suit your style. Discover your favourites and shop online. | GUESS\u00ae Official Website",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion"
+        },
+        {
+          "url": "https://www.guess.com/en-us/guess-jeans/denim/women/jeans/g11-wide-leg-jeans-blue/W4BA0YD5CCA-GJRV.html",
+          "image": "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,w_800,c_scale/v1/NA/Style/ECOMM/W4BA0YD5CCA-GJRV",
+          "title": "G11 Wide-Leg Jeans",
+          "kind": "product",
+          "description": "A wide-leg denim pant that pairs a timeless look with modern details. Made with our signature GUESS JEANS denim featuring GUESS AIRWASH\u2122.",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion",
+          "offer": {
+            "price": "62.30",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.guess.com/en-us/guess/women/jeans/wide-leg/g11-wide-leg-jeans-blue/GNAW5RA0YD5M42-GJHR.html",
+          "image": "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,w_800,c_scale/v1/NA/Style/ECOMM/W5RA0YD5M42-GJHR",
+          "title": "G11 Wide-Leg Jeans",
+          "kind": "product",
+          "description": "For those who love a baggy fit. A wide-leg denim pant that pairs a timeless look with contemporary touches. Made with our signature GUESS JEANS denim featuring GUESS AIRWASH\u2122.",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion",
+          "offer": {
+            "price": "62.30",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "guess-g11-dark": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:11:46.827286Z",
+      "items": [
+        {
+          "url": "https://www.guess.com/en-us/guess/women/jeans",
+          "image": "https://img.guess.com/image/upload/f_auto,q_auto/v1/EU/Asset/Europe/E-Commerce/SFCC_Assets/OG_image/OG_image.jpg",
+          "title": "GUESS | Women's Jeans | GUESS United States",
+          "kind": "website",
+          "description": "Shop Women's Jeans by GUESS. Explore the online collection of clothing and accessories to suit your style. Discover your favourites and shop online. | GUESS\u00ae Official Website",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion"
+        },
+        {
+          "url": "https://www.guess.com/en-us/guess-jeans/denim/women/jeans/g11-wide-leg-jeans-blue/W4BA0YD5CCA-GJRV.html",
+          "image": "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,w_800,c_scale/v1/NA/Style/ECOMM/W4BA0YD5CCA-GJRV",
+          "title": "G11 Wide-Leg Jeans",
+          "kind": "product",
+          "description": "A wide-leg denim pant that pairs a timeless look with modern details. Made with our signature GUESS JEANS denim featuring GUESS AIRWASH\u2122.",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion",
+          "offer": {
+            "price": "62.30",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.guess.com/en-us/guess/women/jeans/wide-leg/g11-wide-leg-jeans-blue/GNAW5RA0YD5M42-GJHR.html",
+          "image": "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,w_800,c_scale/v1/NA/Style/ECOMM/W5RA0YD5M42-GJHR",
+          "title": "G11 Wide-Leg Jeans",
+          "kind": "product",
+          "description": "For those who love a baggy fit. A wide-leg denim pant that pairs a timeless look with contemporary touches. Made with our signature GUESS JEANS denim featuring GUESS AIRWASH\u2122.",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion",
+          "offer": {
+            "price": "62.30",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "levis-501-dark": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:11:46.827286Z",
+      "items": [
+        {
+          "url": "https://www.levi.com/US/en_US/clothing/men/jeans/straight/501-original-mens-jeans/p/005013306",
+          "image": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-3306_GLO_CM_DA?$qv_desktop_full$",
+          "title": "501\u00ae Original Men's Jeans",
+          "kind": "product",
+          "description": "Close your eyes. Think \u201cjeans.\u201d Now open. They were 501\u00ae Originals, right? With a classic straight leg and iconic styling, they\u2019re literally the blueprint for every pair of modern jeans in existence\u2014burned into the world\u2019s collective cortex ever since Levi Str",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion",
+          "offer": {
+            "price": "33.98",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.levi.com/US/en_US/jeans-by-fit-number/men/jeans/501/501-loose-mens-jeans/p/0057U0007",
+          "image": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_0057U-0007_GLO_CM_DA?$qv_desktop_full$",
+          "title": "501\u00ae Loose Men's Jeans",
+          "kind": "product",
+          "description": "Meet the 501\u00ae Loose\u2014the bold evolution of our most iconic style. We stayed true to the Original with the signature button fly and straight leg, but amplified the fit with more room. The result? An extra-loose shape that\u2019s modern and fresh, with the kind of ver",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion",
+          "offer": {
+            "price": "110.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "levis-501-medium": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:11:46.827286Z",
+      "items": [
+        {
+          "url": "https://www.levi.com/US/en_US/clothing/men/jeans/straight/501-original-mens-jeans/p/005013306",
+          "image": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_00501-3306_GLO_CM_DA?$qv_desktop_full$",
+          "title": "501\u00ae Original Men's Jeans",
+          "kind": "product",
+          "description": "Close your eyes. Think \u201cjeans.\u201d Now open. They were 501\u00ae Originals, right? With a classic straight leg and iconic styling, they\u2019re literally the blueprint for every pair of modern jeans in existence\u2014burned into the world\u2019s collective cortex ever since Levi Str",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion",
+          "offer": {
+            "price": "33.98",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.levi.com/US/en_US/clothing/men/jeans/loose/baggy-barrel-mens-jeans/p/0057O0001",
+          "image": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_0057O-0001_GLO_CM_DA?$qv_desktop_full$",
+          "title": "Baggy Barrel Men's Jeans",
+          "kind": "product",
+          "description": "Get ready for a new kind of baggy. Our Baggy Barrel jeans have a relaxed fit that's roomy through the thigh and tapers slightly at the ankle. With waist adjusters, you can customize the fit\u2014all in the same pair of jeans.A new kind of baggy jeanCut with a baggy",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Denim & fashion",
+          "offer": {
+            "price": "110.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "sonic": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:17:51.555811Z",
+      "items": [
+        {
+          "url": "https://pages-a.sonicdrivein.com/deals/",
+          "image": "https://imagedelivery.net/cyuZzWywsYlsu7DPQZIgOg/ac63dc74-4bc2-4e9b-c0fd-b54b6615e000?&q=80&w=397",
+          "title": "Deals | Sonic",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T01:17:51.555811Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "burger-king": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:17:51.555811Z",
+      "items": []
+    },
+    "mcdonalds": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:17:51.555811Z",
+      "items": [
+        {
+          "url": "https://www.mcdonalds.com/us/en-us/deals.html",
+          "image": "https://s7d1.scene7.com/is/image/mcdonalds/1Pub_Monopoly_Post-Launchv3_2336x1040:1-column-desktop?fmt=png-alpha&resmode=sharp2",
+          "title": "get your bag, play in the app",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T01:17:51.555811Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://www.mcdonalds.com/us/en-us/deals.html",
+          "image": "https://s7d1.scene7.com/is/image/mcdonalds/1PUB_McValue%20Q3%20Launch_2336x1040:1-column-desktop?resmode=sharp2",
+          "title": "under $3 each for menu items like a McDouble, 4 piece chicken McNuggets, sausage McMuffin, hash browns, small fries, McChicken, sausage burrito and sausage biscuit",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T01:17:51.555811Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "hidden-valley-ranch": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:11:46.827286Z",
+      "items": [
+        {
+          "url": "https://www.hiddenvalley.com/products/",
+          "image": "https://images.ctfassets.net/j9gt1m2cyvgh/KGEMqoEYy0zbTW3zKlJAJ/4707d2cb4e555df0d82cb4b1475b8f88/hidden-valley-product-group.webp?w=1200&h=630&fit=crop&q=75",
+          "title": "Hidden Valley Ranch Products",
+          "kind": "website",
+          "description": "Try our bottled dressings, dips, mixes, & seasonings for bold flavors you are sure to love. Our products are a convenient and delicious way to improve...",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.hiddenvalley.com/products/ranch-condiments/",
+          "image": "https://images.ctfassets.net/j9gt1m2cyvgh/60YSKMCHMVUNKAaTNJl5wD/a17c984317ebcf8ca3c5480ca77cdcda/ranch-condiments-category.jpg?w=1200&h=630&fit=crop&q=75",
+          "title": "Ranch Condiments | Hidden Valley\u2122 Ranch",
+          "kind": "website",
+          "description": "Explore all Hidden Valley\u2122 Ranch condiments\u2014Original Ranch, flavored Ranch varieties, plus lighter and plant-based options for a range of dietary preferences.",
+          "checked_at": "2026-10-31T01:11:46.827286Z",
+          "category": "Food & recipes"
+        }
+      ]
+    },
+    "mcdonalds-big-mac-deals": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:17:51.555811Z",
+      "items": [
+        {
+          "url": "https://www.mcdonalds.com/us/en-us/deals.html",
+          "image": "https://s7d1.scene7.com/is/image/mcdonalds/1Pub_Monopoly_Post-Launchv3_2336x1040:1-column-desktop?fmt=png-alpha&resmode=sharp2",
+          "title": "get your bag, play in the app",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T01:17:51.555811Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://www.mcdonalds.com/us/en-us/deals.html",
+          "image": "https://s7d1.scene7.com/is/image/mcdonalds/1PUB_McValue%20Q3%20Launch_2336x1040:1-column-desktop?resmode=sharp2",
+          "title": "under $3 each for menu items like a McDouble, 4 piece chicken McNuggets, sausage McMuffin, hash browns, small fries, McChicken, sausage burrito and sausage biscuit",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T01:17:51.555811Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "burger-king-chicken-2026": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T01:17:51.555811Z",
+      "items": [
+        {
+          "url": "https://news.bk.com/",
+          "image": "https://cdn.prod.website-files.com/631b4b4e277091a7d4450233/631b79a162511b2f4a075be0_Burger-King-Newsroom.png",
+          "title": "Burger King\u00ae Expands Its Iconic Original Chicken Sandwich Lineup with Two Bold New Flavors",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T01:17:51.555811Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://news.bk.com/blog-posts/hello-kitty-r-and-friends-are-coming-to-burger-king-r",
+          "image": "https://cdn.prod.website-files.com/631b4b4e277091ef01450237/6ad76867bf03265157187ff5_10964-2%20Hello%20Kitty%20PR_1920x1080_CR.jpg",
+          "title": "Hello Kitty\u00ae and Friends Are Coming to Burger King\u00ae",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T01:17:51.555811Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://news.bk.com/blog-posts/burger-king-r-serves-up-game-day-flavor-with-new-stadium-inspired-menu",
+          "image": "https://cdn.prod.website-files.com/631b4b4e277091ef01450237/6abad616dbd94b42f3a1c355_Burger%20King%20Game%20Day%20Hero.png",
+          "title": "Burger King\u00ae Serves Up Game Day Flavor with New Stadium-Inspired Menu",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T01:17:51.555811Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://news.bk.com/blog-posts/burger-king-r-gives-new-chicken-nuggets-the-high-fashion-treatment-with-le-nugguette",
+          "image": "https://cdn.prod.website-files.com/631b4b4e277091ef01450237/6aa3009bb40f041d0932164b_Screenshot%202026-09-10%20150919.png",
+          "title": "Burger King\u00ae Gives New Chicken Nuggets The High-Fashion Treatment With \u201cLe Nugguette\u201d",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T01:17:51.555811Z",
+          "category": "Restaurants"
+        }
+      ]
+    }
+  }
+}

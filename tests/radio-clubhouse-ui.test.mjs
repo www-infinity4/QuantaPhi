@@ -50,12 +50,14 @@ test('Radio Clubhouse browser refresh, archive labels, pending rewards and BFCac
   assert.equal(find(mount,'rc-new').length,0);
   await find(mount,'rc-refresh')[0].listeners.click();
   await flush();
-  // Preserve the currently selected card when newer topics arrive.
-  assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['8']);
-  // The next control exposes the newly discovered discussion.
-  find(mount,'rc-button').find(x=>x.textContent==='Next discussion').listeners.click();
+  // Newest verified discussion moves to the front on every successful refresh.
   assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['9']);
   assert.equal(find(mount,'rc-new').length,1);
+  // Older entries remain reachable without losing the latest story.
+  find(mount,'rc-button').find(x=>x.textContent==='Next discussion').listeners.click();
+  assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['8']);
+  find(mount,'rc-button').find(x=>x.textContent==='Next discussion').listeners.click();
+  assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['9']);
   find(mount,'rc-secondary')[0].listeners.click();
   assert.equal(credits.length,2); // successful Share and Star each submit one receipt
   assert.deepEqual(credits.map(x=>x[0]),['share','star']);

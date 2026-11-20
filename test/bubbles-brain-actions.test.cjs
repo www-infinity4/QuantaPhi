@@ -108,7 +108,7 @@ test('website uses same-origin verified owner gate for Brain calls and keeps gue
  }
  const js=fs.readFileSync('bubbles-ai.js','utf8');
  assert.match(js,/function isOwnerWorkRequest\(text\)/);
- assert.match(js,/if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
+ assert.match(js,/if\(!embedded&&\(isOwnerWorkRequest\(request\)\|\|neuralCoding&&requestsAgents\)\)/);
  assert.match(js,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
  assert.match(js,/window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready/);
  assert.match(js,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain\.'\)/);
@@ -131,6 +131,23 @@ test('owner continue resumes the immediately preceding explicit task without bro
  assert.equal(resolveFollowupRequest('please fix a new project',context),'');
  assert.equal(resolveFollowupRequest('continue',[{role:'user',text:'Explain what a repository is'}]),'');
 });
+
+
+
+test('consecutive star commands retain the last explicit owner job without crossing a topic change',()=>{
+ const task='Please fix the video generator on QuantaPhi';
+ const context=[{role:'user',text:task},{role:'assistant',text:'Saved existing job'}];
+ const first=resolveFollowupRequest('*',context);
+ assert.equal(first,task);
+ const twice=[...context,{role:'user',text:'*'},{role:'assistant',text:'Job still queued'}];
+ assert.equal(resolveFollowupRequest('*',twice),task,'second consecutive star continues the original job');
+ const three=[...twice,{role:'user',text:'continue'},{role:'assistant',text:'Job checkpoint saved'}];
+ assert.equal(resolveFollowupRequest('*',three),task,'mixed continue/star chain remains on same job');
+ assert.equal(resolveFollowupRequest('continue engineering',three),task,'existing owner continuation phrase works');
+ assert.equal(resolveFollowupRequest('*',[...three,{role:'user',text:'What is the weather?'}]),'','unrelated new user topic blocks an old job');
+ assert.equal(resolveFollowupRequest('*',[{role:'assistant',text:'Please fix the QuantaPhi deployment'},{role:'user',text:'*'}]),'','assistant suggestion alone cannot authorize work');
+});
+
 
 
 

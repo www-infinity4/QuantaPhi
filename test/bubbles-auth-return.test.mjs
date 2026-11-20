@@ -34,7 +34,7 @@ test('provider failure callback stays visible instead of auto-resuming to an exp
 test('Cloudflare return stores only a bounded UI outcome and not an OAuth secret',()=>{
  const data=new Map();
  const pending={provider:'cloudflare',state:'q'.repeat(43),returnPath:'/bubbles.html',
-  expiresAt:Date.now()+60000};
+  flow:'same-window',expiresAt:Date.now()+60000};
  data.set('bubbles:oauth-pending:v1',JSON.stringify(pending));
  let destination='';
  const host={sessionStorage:{
@@ -52,14 +52,23 @@ test('Cloudflare return stores only a bounded UI outcome and not an OAuth secret
  assert.equal(destination,'');
  assert.equal(JSON.parse(data.get('bubbles:oauth-return-note:v1')).result,'declined');
 });
-test('received callback with lost tab session stays visible with an explanation',()=>{
- let message='Authorization received securely.';
+test('Cloudflare return in another Android tab opens secure recovery without claiming a signed-in account',()=>{
+ let destination='';
  const host={location:{search:'?result=received',pathname:'/api/bubbles/connections/cloudflare/callback',
-  replace:()=>assert.fail('No automatic bounce without a matching tab session')},
-  sessionStorage:{getItem:()=>null,setItem(){}},
-  document:{querySelector:()=>({set textContent(value){message=value;}})}};
- assert.equal(resumeAuthReturn(host),false);
- assert.match(message,/no longer has the matching Bubbles sign-in session/);
+  replace:path=>destination=path},
+  sessionStorage:{getItem:()=>null,setItem(){}}};
+ assert.equal(resumeAuthReturn(host),true);
+ assert.equal(destination,'/bubbles-accounts.html?return=cloudflare');
+});
+
+test('Google returns to Account Connections even when Android lost the original tab',()=>{
+ let destination='';
+ const host={
+  location:{pathname:'/api/bubbles/connections/google/callback',search:'?result=received',replace:path=>destination=path},
+  sessionStorage:{getItem:()=>{throw Error('Tab storage unavailable');}}
+ };
+ assert.equal(resumeAuthReturn(host),true);
+ assert.equal(destination,'/bubbles-accounts.html?return=google');
 });
 
 test('failed callback reports only recognized error classes and never OAuth code or state',()=>{
@@ -78,4 +87,16 @@ test('failed callback reports only recognized error classes and never OAuth code
  host.location.search='?result=failed&reason=leak-USER-ID';
  assert.equal(resumeAuthReturn(host),false);
  assert.equal(JSON.parse(store.get('bubbles:oauth-return-note:v1')).reason,null);
+});
+
+
+test('Google callback returns to Bubbles chat when a valid chat-originated OAuth handoff exists',()=>{
+ const pending={provider:'google',state:'g'.repeat(43),returnPath:'/bubbles.html',flow:'same-window',expiresAt:Date.now()+60000};
+ let destination='';
+ const host={
+  location:{pathname:'/api/bubbles/connections/google/callback',search:'?result=received',replace:path=>destination=path},
+  sessionStorage:{getItem:key=>key==='bubbles:oauth-pending:v1'?JSON.stringify(pending):null,setItem:()=>{}}
+ };
+ assert.equal(resumeAuthReturn(host),true);
+ assert.equal(destination,'/bubbles.html');
 });

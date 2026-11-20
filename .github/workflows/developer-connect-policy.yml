@@ -1,0 +1,23 @@
+name: Developer Connect policy contract
+on:
+  pull_request:
+    paths:
+      - 'scripts/developer-connect-policy.mjs'
+      - 'test/developer-connect-policy.test.mjs'
+      - 'work/unfinished/TICKET-1282.md'
+      - '.github/workflows/developer-connect-policy.yml'
+  workflow_dispatch:
+jobs:
+  policy-contract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Syntax and fail-closed policy tests
+        run: |
+          node --check scripts/developer-connect-policy.mjs
+          node --test test/developer-connect-policy.test.mjs

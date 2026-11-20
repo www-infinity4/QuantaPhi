@@ -70,6 +70,23 @@ test('ready job dispatch is explicit and target-specific; acceptance is not comp
  await expect(page.locator('#tickets')).toContainText('completion is not verified');await expect(button).toBeDisabled();
  expect(writes).toEqual([{ticketId:'IW-20261025-00000004',jobId:'TASK-2'}]);
 });
+test('recorded runner progress and its receipt remain readable at Android widths',async({page})=>{
+ await setup(page);
+ const runUrl='https://github.com/www-infinity4/Moltnook/actions/runs/500';
+ await page.route(api+'/**',r=>respond(r,snapshot([ticket(1,{jobs:[{
+  jobId:'TASK-1',phase:'working',next:'Read runner progress and receipts',
+  latestRunnerStep:'Repository checks passed',runUrl
+ }]})])));
+ await page.goto(base+'/continuity/owner/');
+ await expect(page.getByText('Repository checks passed',{exact:true})).toBeVisible();
+ const receipt=page.getByRole('link',{name:'Open workflow receipt'});
+ await expect(receipt).toHaveAttribute('href',runUrl);
+ for(const width of [320,360,393,720]){
+  await page.setViewportSize({width,height:800});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  expect((await receipt.boundingBox()).height).toBeGreaterThanOrEqual(44);
+ }
+});
 test('store failure remains a failure instead of a silent legacy fallback',async({page})=>{
  await setup(page);let legacy=0;
  await page.route(api+'/**',r=>{

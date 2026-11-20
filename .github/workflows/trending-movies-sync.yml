@@ -1,0 +1,57 @@
+name: Refresh Trending Movie Oracle Cards
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync_trending_movies.py'
+      - 'test/test_trending_movies_sync.py'
+      - '.github/workflows/trending-movies-sync.yml'
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+# Both scheduled jobs write to the same branch. Never race against the Trends RSS importer.
+concurrency:
+  group: quantaphi-google-trends-sync
+  cancel-in-progress: false
+
+jobs:
+  movie-trailer-feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify matching and no-invention rules
+        run: python3 -m unittest discover -s test -p 'test_trending_movies_sync.py' -v
+      - name: Fetch latest verified Google Trends snapshot from canonical data branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin refs/heads/trends-rss-data:refs/remotes/origin/trends-rss-data
+          git show refs/remotes/origin/trends-rss-data:data/google-trends-latest.json > "$RUNNER_TEMP/trends.json"
+          if git cat-file -e refs/remotes/origin/trends-rss-data:data/trending-movies-latest.json 2>/dev/null; then
+            git show refs/remotes/origin/trends-rss-data:data/trending-movies-latest.json > "$RUNNER_TEMP/previous-movies.json"
+          fi
+      - name: Compare trends with real publisher YouTube RSS and preserve trusted history
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/sync_trending_movies.py --trends "$RUNNER_TEMP/trends.json" --previous "$RUNNER_TEMP/previous-movies.json" --output "$RUNNER_TEMP/trending-movies-latest.json"
+      - name: Publish new snapshot without modifying the main branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "quanta-trends-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -B trends-rss-data refs/remotes/origin/trends-rss-data
+          mkdir -p data
+          cp "$RUNNER_TEMP/trending-movies-latest.json" data/trending-movies-latest.json
+          git add data/trending-movies-latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh actual playable movie trailers and Google trend matches"
+            git push origin HEAD:refs/heads/trends-rss-data
+          fi

@@ -1,0 +1,38 @@
+name: Bruce Banner 21+ publisher source rotation
+on:
+  pull_request:
+    paths:
+      - 'bruce-banner-*'
+      - 'restricted-source-directory.mjs'
+      - 'restricted-ad-card.mjs'
+      - 'restricted-ad-card.css'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - 'test/bruce-banner-weedmaps.test.mjs'
+      - 'test/restricted-source-directory.test.mjs'
+      - '.github/workflows/bruce-banner-source-rotation.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bruce-banner-*'
+      - 'restricted-source-directory.mjs'
+      - 'test/bruce-banner-weedmaps.test.mjs'
+jobs:
+  validate-banner-sources:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate module syntax
+        run: |
+          node --check bruce-banner-weedmaps.mjs
+          node --check bruce-banner-card.mjs
+          node --check restricted-ad-card.mjs
+          node --check restricted-source-directory.mjs
+          node --check oracle-card-deck.js
+      - name: Verify trusted Weedmaps sources, age gate, rotation and real Oracle mounting
+        run: node --test test/bruce-banner-weedmaps.test.mjs test/restricted-source-directory.test.mjs

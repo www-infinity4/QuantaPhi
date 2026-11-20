@@ -48,31 +48,24 @@ test('final status and five-minute campaign expiry remain intact',()=>{
  assert.equal(isNotificationWindow(TONIGHT_END),true);
  assert.equal(isNotificationWindow(TONIGHT_END+1),false);
 });
-test('existing TV players remain while FOX channels extend the same TV grid',()=>{
- const html=load('index.html'),tv=load('phi-channel-cards.js'),newTv=load('fox-infinity-tv.mjs');
- assert.match(tv,/StarQuest/);assert.match(tv,/Omni TV/);assert.match(tv,/Chiller/);assert.match(tv,/ShopLC/);
+test('existing TV channels remain while FOX cards use source-aware poster screens',()=>{
+ const html=load('index.html'),tv=load('phi-channel-cards.js'),fox=load('fox-infinity-tv.mjs');
+ for(const name of ['StarQuest','Omni TV','Chiller','ShopLC'])assert.ok(tv.includes(name));
  assert.match(html,/id="phiChannelCards"/);
- assert.match(html,/fox-infinity-tv\.mjs\?v=20261028-game5c/);
- assert.match(html,/world-series-updates\.mjs\?v=20261028-game5c/);
- assert.match(html,/fox-infinity-tv\.css\?v=20261028-game5b/);
- assert.match(newTv,/#phiChannelCards \.channelphi-grid/);
- for(const word of ['FOX · World Series','FOX One · Live TV','FOX Sports','FOX News'])assert.ok(newTv.includes(word));
- assert.match(newTv,/Try FOX in Infinity Viewer/);
- assert.match(newTv,/closeFrame\(\)/);
+ assert.match(html,/fox-infinity-tv\.mjs\?v=20261102-player1/);
+ assert.doesNotMatch(html,/world-series-updates|world-series-news/);
+ assert.match(fox,/liveNewsEmbed/);
+ assert.match(fox,/fit-fox-poster/);
+ assert.doesNotMatch(fox,/Try FOX in Infinity Viewer|fetchWorldSeries|FOX · World Series/);
+ for(const name of ['LiveNOW from FOX','FOX One','FOX Sports','FOX News'])assert.ok(fox.includes(name));
 });
-test('five-minute notifications use live scores and full FOX Infinity Viewer URL, never illegal stream',()=>{
- const updates=load('world-series-updates.mjs'),viewer=load('infinity-tv/fox.html');
- const quickAds=load('quick-ads.mjs'),styles=load('fox-infinity-tv.css');
- assert.match(updates,/setInterval\(\(\)=>\{/);
- assert.match(updates,/REFRESH_MS/);
- assert.match(updates,/game\.status!=='live'/);
- assert.match(updates,/world-series-toast/);
- assert.match(updates,/infinity-tv\/fox\.html\?channel=world-series/);
- assert.match(quickAds,/scoreAdSuppressedUntil/);
- assert.match(viewer,/id="foxInfinityViewer"/);
- assert.match(styles,/prefers-reduced-motion:reduce/);
+test('old World Series UI is not mounted and FOX viewer never loads a full website iframe',()=>{
+ const html=load('index.html'),fox=load('fox-infinity-tv.mjs'),page=load('infinity-tv/fox.html');
+ assert.doesNotMatch(html,/world-series-updates|world-series-news|World Series/);
+ assert.match(fox,/liveNewsEmbed/);
+ assert.doesNotMatch(fox,/frame.src=selection.url/);
+ assert.match(page,/id="foxInfinityViewer"/);
 });
-
 test('pregame reminder cadence advances every fifteen minutes and stops at first pitch',()=>{
  const afternoon=Date.parse('2026-10-28T14:00:00-05:00');
  assert.equal(pregameReminderSlot(afternoon),pregameReminderSlot(afternoon+899999));

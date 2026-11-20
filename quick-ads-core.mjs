@@ -1,6 +1,6 @@
 import {GAME_START,CAMPAIGN_START,TONIGHT_END,GAME_PK} from './world-series-score.mjs?v=20261028-game5b';
 export {GAME_START,CAMPAIGN_START};
-/* QuantaPhi independent Quick Ads: pregame and game campaign, no paid-sponsor assertions.
+/* QuantaPhi independent Quick Ads: bounded game campaign plus first-party house successor; no paid-sponsor assertions.
  * Public outbound destinations are a reviewed allowlist; no unapproved scraping,
  * alcohol, gambling, cookies, wallet reads or API keys. */
 export const GAME_END=TONIGHT_END;
@@ -22,8 +22,8 @@ export const QUICK_ADS=Object.freeze([
  ad('fox-nation','FOX Nation','Explore documentaries and entertainment','media','https://nation.foxnews.com/','#204e84',true),
  ad('fox-shows','FOX','Explore FOX primetime and current shows','media','https://www.fox.com/','#194874',true),
  ad('mlb-shop','MLB Shop','Browse officially licensed team gear','sports','https://www.mlbshop.com/','#06457d',true),
- ad('mlb','MLB','World Series scores, recaps and highlights','sports','https://www.mlb.com/postseason','#103b69'),
- ad('fox-sports','FOX Sports','Watch highlights and World Series coverage','sports','https://www.foxsports.com/mlb','#164b88'),
+ ad('mlb','MLB','Current game scores, schedules and highlights','sports','https://www.mlb.com/scores','#103b69'),
+ ad('fox-sports','FOX Sports','Watch current sports coverage and highlights','sports','https://www.foxsports.com/mlb','#164b88'),
  ad('youtube','YouTube','Watch the latest sports and entertainment videos','media','https://www.youtube.com/','#d82332'),
  ad('google','Google','Find more websites and useful answers','technology','https://www.google.com/','#2361ad'),
  ad('best-buy','Best Buy','Shop electronics and useful accessories','technology','https://www.bestbuy.com/','#113a84'),
@@ -33,12 +33,82 @@ export const QUICK_ADS=Object.freeze([
  ad('helzberg','Helzberg Diamonds','Explore jewelry at the official Helzberg store','shopping','https://www.helzberg.com/','#843e6c'),
  ad('infinity-affiliates','Infinity Affiliates','Explore Infinity Accepted brands and product affiliations','shopping','https://quantaphi.org/infinity-affiliates.html','#135e9d')
 ]);
+// Verified MLB Game 5 final (October 28, 2026) ends the event campaign.
+// The successor promotes only QuantaPhi's own already-published catalog and
+// review page; accepted brands are not sponsors, affiliates or warranties.
+export const HOUSE_START=GAME_END+1;
+export const HOUSE_ADS=Object.freeze([
+ ad('infinity-accepted-house','Infinity Accepted','Browse 116 owner-curated brand cards and official product sources','shopping','https://quantaphi.org/infinity-accepted.html','#135e9d'),
+ ad('infinity-affiliates-house','Infinity Affiliates','Match a product to an accepted brand and request independent review','shopping','https://quantaphi.org/infinity-affiliates.html','#0d6175')
+]);
+export function quickAdCampaign(now=Date.now()){
+ if(!Number.isFinite(now)||now<CAMPAIGN_START)return 'inactive';
+ return now<=GAME_END?'world-series':'infinity-house';
+}
+// Preserve an existing ten-minute dismissal and 24-second pacing when the
+// World Series script is replaced by the house campaign. Never inherit the
+// expired campaign's view cap, merchant counts, or rotation history.
+export function restoreQuickAdState(current={},legacy={}){
+ const record=x=>x&&typeof x==='object'&&!Array.isArray(x)?x:{};
+ const fresh=record(current),old=record(legacy);
+ const time=x=>typeof x==='number'&&Number.isFinite(x)&&x>=0?x:0;
+ return {
+  ...fresh,
+  dismissedUntil:Math.max(time(fresh.dismissedUntil),time(old.dismissedUntil)),
+  lastAt:Math.max(time(fresh.lastAt),time(old.lastAt)),
+  total:time(fresh.total),
+  counts:{...record(fresh.counts)},
+  recent:Array.isArray(fresh.recent)?fresh.recent.filter(x=>typeof x==='string').slice(0,4):[]
+ };
+}
+// Check again after any asynchronous MLB status request: a user may dismiss a
+// spotlight while that request is pending, and the old result must not revive it.
+export function quickAdPacingAllows(now,state={},suppressedUntil=0){
+ if(!Number.isFinite(now)||!state||typeof state!=='object')return false;
+ const dismiss=Number(state.dismissedUntil)||0;
+ const last=Number(state.lastAt)||0;
+ const suppressed=Number(suppressedUntil)||0;
+ const total=Number(state.total)||0;
+ return now>=dismiss&&now>=suppressed&&now-last>=24000&&total<30;
+}
 export function inGameWindow(now=Date.now()){
  return Number.isFinite(now)&&now>=CAMPAIGN_START&&now<=GAME_END;
 }
-export function isOfficialUrl(href){
- try{const u=new URL(href);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.');}
- catch{return false;}
+// Deliberately separate from QUICK_ADS: a new ad needs a reviewed, exact official
+// destination. A syntactically valid HTTPS link alone is not brand verification.
+const REVIEWED_AD_DESTINATIONS=Object.freeze({
+ 'capital-one':'https://www.capitalone.com/',
+ 't-mobile':'https://www.t-mobile.com/',
+ 'google-cloud':'https://cloud.google.com/',
+ 'apple-tv':'https://tv.apple.com/',
+ 'mastercard':'https://www.mastercard.com/',
+ 'att':'https://www.att.com/',
+ 'starbucks':'https://www.starbucks.com/',
+ 'liberty-mutual':'https://www.libertymutual.com/',
+ 'progressive':'https://www.progressive.com/',
+ 'fox-nation':'https://nation.foxnews.com/',
+ 'fox-shows':'https://www.fox.com/',
+ 'mlb-shop':'https://www.mlbshop.com/',
+ 'mlb':'https://www.mlb.com/scores',
+ 'fox-sports':'https://www.foxsports.com/mlb',
+ 'youtube':'https://www.youtube.com/',
+ 'google':'https://www.google.com/',
+ 'best-buy':'https://www.bestbuy.com/',
+ 'ebay':'https://www.ebay.com/',
+ 'walmart':'https://www.walmart.com/',
+ 'apple-iphone':'https://www.apple.com/iphone/',
+ 'helzberg':'https://www.helzberg.com/',
+ 'infinity-affiliates':'https://quantaphi.org/infinity-affiliates.html',
+ 'infinity-accepted-house':'https://quantaphi.org/infinity-accepted.html',
+ 'infinity-affiliates-house':'https://quantaphi.org/infinity-affiliates.html',
+});
+export function isOfficialUrl(href,id){
+ if(typeof id!=='string'||!Object.hasOwn(REVIEWED_AD_DESTINATIONS,id))return false;
+ try{
+  const u=new URL(href);
+  return u.protocol==='https:'&&!u.username&&!u.password&&
+   u.href===REVIEWED_AD_DESTINATIONS[id];
+ }catch{return false;}
 }
 export function gameLiveStatus(payload){
  const games=(payload?.dates||[]).flatMap(d=>Array.isArray(d.games)?d.games:[]);
@@ -54,7 +124,9 @@ export function gameLiveStatus(payload){
  return 'unknown';
 }
 export function eligibleQuickAds(now=Date.now()){
- return inGameWindow(now)?QUICK_ADS.filter(a=>isOfficialUrl(a.href)):[];
+ const campaign=quickAdCampaign(now);
+ const ads=campaign==='world-series'?QUICK_ADS:campaign==='infinity-house'?HOUSE_ADS:[];
+ return ads.filter(a=>isOfficialUrl(a.href,a.id));
 }
 // Session-first rotation: never replay the same ad while a different unseen one
 // exists, then restart the queue with adjacent/topic relevance and view penalty.

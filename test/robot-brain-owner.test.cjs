@@ -96,3 +96,11 @@ test('expired browser identity offers existing-wallet recovery instead of a new 
  assert.ok(recovery.includes("location.assign('/#robotDirections')"));
  assert.ok(recovery.indexOf("'/v1/verify-existing'")<recovery.indexOf("'/v1/bootstrap'"),'verify the saved account before enrolling a new device');
 });
+
+test('wallet renewal loss never forces an account-reset reload loop and owner tools must lock',()=>{
+ const renewal=gate.slice(gate.indexOf('async function renewWallet()'),gate.indexOf('function unlocked('));
+ assert.ok(renewal.length>100);
+ assert.doesNotMatch(renewal,/location\.reload\(\)/,'a transient wallet mismatch must not reload Bubbles');
+ assert.match(renewal,/verifiedHeaders=null/,'invalidate cached owner headers before retrying');
+ assert.match(renewal,/bubbles:owner-lost/,'tell open Bubbles chat to stop using the old owner session');
+});

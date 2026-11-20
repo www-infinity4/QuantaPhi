@@ -1,14 +1,19 @@
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
 import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs';
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
+import {websiteFaviconUrl} from './card-source-images.mjs';
 const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
+const isBrandIdentityImage=url=>/logo|favicon|brandmark|og[-_]?image|ogimage|opengraph|social[-_]?share|social[-_]?image/i.test(new URL(url).pathname);
 export function cardImageCandidates(card){
- return [...new Set([...(card.images||[]),card.image,card.logo].filter(value=>{
+ const images=[...new Set([...(card.images||[]),card.image,card.logo].filter(value=>{
   if(typeof value!=='string'||!value.trim())return false;
   try{const u=new URL(value,typeof location==='undefined'?'https://quantaphi.org':location.origin);
    return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&!/\.(gif|apng)(?:[?#]|$)/i.test(u.href);
   }catch{return false}
  }))];
+ // Actual source products and lifestyle photos should lead, not social OG art.
+ return [...images.filter(x=>!isBrandIdentityImage(x)),...images.filter(isBrandIdentityImage)];
 }
 export function mountAcceptedWebsiteActions(host,card,{reader=readCardWebsite}={}){
  const trusted=acceptedBrand(card?.id);if(!host||!trusted||trusted.official!==card.official)return null;
@@ -50,7 +55,15 @@ export function mountAcceptedWebsiteActions(host,card,{reader=readCardWebsite}={
   buttons.forEach(b=>b.setAttribute('aria-expanded','false'));selected?.focus();
  });
  actions.style.setProperty('--iac-action-count',Math.min(3,buttons.length)||1);
- if(!buttons.length)status.textContent='Website actions are awaiting verification.';
+ if(!buttons.length){
+  // A real, explicit manufacturer link is more useful than an empty panel.
+  // Do not imply that a particular product or price has been verified.
+  const original=node('a','Browse official products ↗','iac-web-action iac-direct');
+  original.href=trusted.official;original.target='_blank';original.rel='noopener noreferrer';
+  original.setAttribute('aria-label','Browse '+trusted.name+' official website');
+  actions.append(original);
+  status.textContent='Specific product listings have not been verified for this card.';
+ }
  box.append(actions);if(buttons.length>3)box.append(more);box.append(status,close,result);host.append(box);
  return {box,buttons,result};
 }
@@ -63,15 +76,30 @@ export function createAcceptedCard(card){
  heading.append(node('span','∞ Infinity accepted','iac-badge'),node('small',card.category,'iqc-kind'));
  const title=node('div',undefined,'iac-title');title.append(node('h2',card.name),node('p',card.feature,'iac-intro'));
  const media=node('div',undefined,'iac-media'),images=cardImageCandidates(card);let imageIndex=0;
+ if(images.length&&images.every(isBrandIdentityImage))media.classList.add('iac-logo-only');
  if(images.length){
   const img=node('img');img.alt=card.name+' — image from the original website';
   img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';
+  const fallback=()=>{
+   img.remove();media.classList.add('iac-logo-only');
+   const sourceIcon=websiteFaviconUrl(card);
+   const mark=node('img');mark.alt=card.name+' official website icon';
+   const label=node('span','Source photograph unavailable · open the original site','iac-source-icon-note');
+   if(!sourceIcon){media.replaceChildren(label);return}
+   mark.addEventListener('error',()=>{mark.remove();label.textContent='Website image unavailable · open original source'},{once:true});
+   mark.src=sourceIcon;media.replaceChildren(mark,label);
+  };
   img.addEventListener('error',()=>{
    if(++imageIndex<images.length){img.src=images[imageIndex];return}
-   // Collapse exhausted media instead of leaving a large empty moving viewer.
-   img.remove();media.hidden=true;
+   fallback();
   });img.src=images[0];media.append(img);
- }else media.hidden=true;
+ }else{
+  // The website icon is a real source asset, never a fabricated product image.
+  const sourceIcon=websiteFaviconUrl(card),mark=node('img');mark.alt=card.name+' official website icon';
+  media.classList.add('iac-logo-only');
+  if(sourceIcon){mark.src=sourceIcon;mark.addEventListener('error',()=>mark.remove(),{once:true});media.append(mark)}
+  media.append(node('span','Source product photo not yet available','iac-source-icon-note'));
+ }
  const content=node('div',undefined,'iac-content');mountAcceptedWebsiteActions(content,card);
  const tools=node('div');mountCardActions(tools,{...card,route:'/?card='+card.id},
   {showSearch:false,websiteReader:false,showPreview:false,showOriginal:false});content.append(tools);
@@ -82,7 +110,8 @@ export function createAcceptedCard(card){
  const affiliate=node('a','Request affiliate product ↗','iac-official iac-affiliate-link');
  affiliate.href='/infinity-affiliates.html?brand='+encodeURIComponent(card.id);
  affiliate.setAttribute('aria-label','Request affiliation for '+card.name+' products');more.append(official,affiliate,source);content.append(more);
- article.append(heading,title,media,content);return article;
+ article.append(heading,title,media,content);
+ mountRotatingSpotlights(article,card);return article;
 }
 function mount(){
  const bank=document.getElementById('infinityAcceptedCards');

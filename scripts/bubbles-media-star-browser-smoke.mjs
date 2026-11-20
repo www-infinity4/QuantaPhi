@@ -43,6 +43,9 @@ try{
   const nested=chat.frameLocator('.ba-panel .ba-card-workspace iframe[title="Media Star"]');
   await nested.locator('#fredSpacesRadio .fs-media-star').waitFor({state:'visible',timeout:20000});
   assert.equal(await nested.locator('#followingSpacesRadio .fsr-person-picker').count(),1);
+  // Opening three source-backed media panels can be asynchronous. Verify the
+  // settled state, not a transient loading label; a stuck open still times out.
+  await workspace.locator('p[role="status"]').filter({hasText:/open in chat/i}).first().waitFor({state:'visible',timeout:20000});
   assert.match(await workspace.locator('p[role="status"]').first().innerText(),/open in chat/i);
   results.push({probe:'bubbles_chat_spoken_command',status:'passed',card:'media-star',iframeRendered:true,playerLinkedToX:true});
   // Now execute a FOLLOW-UP ordinary tap. Bubbles must use its real action

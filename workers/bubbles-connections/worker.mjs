@@ -72,6 +72,8 @@ export class UserConnections extends DurableObject {
   }
   async handoffStatus(input) {return connectionResult(()=>this.service.handoffStatus(input));}
   async finishHandoff(input) {return connectionResult(()=>this.service.finishHandoff(input));}
+  async resumeGoogleHandoff(input) {return connectionResult(()=>this.service.resumeGoogleHandoff(input));}
+  async resumeCloudflareHandoff(input) {return connectionResult(()=>this.service.resumeCloudflareHandoff(input));}
   async complete(input) {return connectionResult(()=>this.service.complete(input));}
   async checkSetup(input) {return connectionResult(()=>checkConnectionSetup(this.service,input));}
   async disconnect(input) {return this.service.disconnect(input);}

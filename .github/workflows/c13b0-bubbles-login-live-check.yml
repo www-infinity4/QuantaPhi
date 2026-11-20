@@ -1,5 +1,14 @@
 name: C13b0 Bubbles Cloudflare sign-in live public check
 on:
+  pull_request:
+    paths:
+      - 'bubbles-signin-gate.mjs'
+      - 'bubbles-connections.mjs'
+      - 'bubbles.html'
+      - 'scripts/c13b0-bubbles-signin-check.py'
+      - 'scripts/c13b0_scope_inventory.py'
+      - 'test/test_c13b0_scope_inventory.py'
+      - '.github/workflows/c13b0-bubbles-login-live-check.yml'
   push:
     branches: [main]
     paths:
@@ -7,12 +16,25 @@ on:
       - 'bubbles-connections.mjs'
       - 'bubbles.html'
       - 'scripts/c13b0-bubbles-signin-check.py'
+      - 'scripts/c13b0_scope_inventory.py'
+      - 'test/test_c13b0_scope_inventory.py'
       - '.github/workflows/c13b0-bubbles-login-live-check.yml'
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
+  unit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate configured OAuth scope inventory without claiming consent
+        run: python3 -m unittest discover -s test -p 'test_c13b0_scope_inventory.py' -v
   probe:
+    if: github.event_name != 'pull_request'
+    needs: unit
     runs-on: ubuntu-latest
     timeout-minutes: 4
     steps:

@@ -20,6 +20,27 @@ const OWNER_REPOS={
  'recordb':'www-infinity4/RecordB',
  'record b':'www-infinity4/RecordB'
 };
+// Canonical first-party chat/social repairs can be sent directly to an
+// authenticated Brain ticket without asking for an unrelated repository.
+// Intent detection never grants permissions: the server still verifies owner
+// identity, repository scope and actual runner/job receipts.
+function firstPartyRepairTarget(utterance){
+ const command=String(utterance||'').trim().slice(0,4001);
+ if(!command||command.length>4000)return null;
+ if(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don't|never|stop|how\b|why\b|what\b|when\b|where\b|explain\b|describe\b)/i.test(command))return null;
+ if(/\bwww-infinity4\/[\w.-]+\b/i.test(command))return null;
+ if(/\b(?:moltnook|widget\s*phi|widgetphi|record\s?b|tv-database|code\s*phi|omni\s*phi)\b/i.test(command))return null;
+ if(/\b(?:both|two|multiple|all)\b.{0,50}\b(?:repos?|repositories)\b/i.test(command))return null;
+ const firstParty=/\b(?:bubbles|twitter)\b|\bx[\s/-]+(?:quick\s*card|posting|feed|timeline|spaces)\b|\b(?:infinity|oracle)\s+carousel\b/i;
+ // QuantaPhi owns the artist music Quick Cards. A rock-player repair
+ // must not fall through to an unrelated generic INFINITY code runner.
+ const musicCard=/\b(?:rock\s+music\s+(?:player|buttons?|radio)|(?:steve\s+miller|pink\s+floyd|classic\s+rock|infinity\s+radio)\b.{0,80}\b(?:radio|player|buttons?|quick\s*card|playback|music))\b/i;
+ if(!firstParty.test(command)&&!musicCard.test(command))return null;
+ const verb='(?:fix|repair|finish|complete|restore|debug|update|upgrade|build|create|deploy|wire|connect|replace|correct|implement|integrate|hook\\s+up)';
+ const start=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)*'+verb+'\\b','i');
+ const directive=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)?(?:i\\s+(?:need|want)\\s+(?:you\\s+)?to|you\\s+(?:need|have)\\s+to|(?:can|could|would|will)\\s+you|we\\s+need\\s+to)\\s+'+verb+'\\b','i');
+ return start.test(command)||directive.test(command)?'www-infinity4/QuantaPhi':null;
+}
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
  if(!text||text.length>4000)return 'chat';
@@ -56,9 +77,9 @@ function classify(utterance){
  const dispatch=/\b(?:send|assign|instruct|dispatch|queue|start|launch|submit)\b.{0,100}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther|jobs?|tasks?)\b/i;
  const dispatchByName=/\b(?:tell|ask|have|give)\b.{0,70}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,90}\b(?:to\s+)?(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
  const dispatchReverse=/\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,80}\b(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
- const change=/\b(?:fix|repair|restore|debug|update|upgrade|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install)\b/i;
- const subject=/\b(?:quantaphi|quanta\s*phi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone|app|code\s*phi|omni\s*code|notification\s*cent(?:re|er)|infinity\s*phi|omni\s*phi|omni\s*tv|moltnook|widgetphi|widget\s*phi|channel-creatir|hbo|tv-database)\b/i;
- const imperative=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:fix|repair|restore|debug|update|upgrade|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install|start|queue|assign|dispatch|send|tell|ask|have|launch|search|scan|inspect|combine|pull together|edit)\b/i;
+ const change=/\b(?:fix|repair|restore|debug|update|upgrade|deploy|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install)\b/i;
+ const subject=/\b(?:cloudflare|workers?|deployments?|quantaphi|quanta\s*phi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone|app|code\s*phi|omni\s*code|notification\s*cent(?:re|er)|infinity\s*phi|omni\s*phi|omni\s*tv|moltnook|widgetphi|widget\s*phi|channel-creatir|hbo|tv-database)\b/i;
+ const imperative=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:fix|repair|restore|debug|update|upgrade|deploy|build|create|make|generate|package|publish|ship|assemble|wire|connect|replace|correct|implement|investigate|verify|check|import|bind|integrate|refresh|install|start|queue|assign|dispatch|send|tell|ask|have|launch|search|scan|inspect|combine|pull together|edit)\b/i;
  const directive=/^(?:(?:bubbles)[\s,:]+)?(?:please\s+)?(?:i\s+(?:need|want)\s+(?:you\s+)?to|you\s+(?:need|have)\s+to|can\s+you|could\s+you|would\s+you|we\s+need\s+to)\b/i;
  const makeJob=/\b(?:make|create|add)\s+(?:(?:a|an|the|new)\s+)*(?:job|task)\b.{0,70}\b(?:in|for|to|on)\s+(?:(?:my|the)\s+)?(?:robot\s*brain|brain)\b/i;
  const makeDirective=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:make|create|add)\b/i;
@@ -77,19 +98,29 @@ function classify(utterance){
  if(change.test(text)&&subject.test(text)&&(imperative.test(text)||directive.test(text)))return 'queue';
  return 'chat';
 }
-// Continue an OWNER'S last explicit work command, not an assistant suggestion.
- // No older browsing context or model-authored instruction can create a job.
+// Continue the latest OWNER work command across a contiguous chain of '*' or
+// 'continue' turns. A new unrelated user message breaks the chain; assistant
+// suggestions never authorize work, and the Brain retains its owner/write gate.
+function isOwnerContinuation(input){
+ const text=String(input||'').trim().toLowerCase();
+ return /^(?:(?:please|bubbles)[\s,:]+)?(?:\*|continue(?: (?:engineering|please|building|working|the build|that|where you left off))?|keep (?:going|building|working)(?: on (?:it|that))?|go ahead|go on|carry on|proceed|yes[, ]*(?:do it|go ahead|continue)|finish (?:it|that|the build)|pick up (?:the work|where you left off))\s*[.!*]*$/.test(text);
+}
 function resolveFollowupRequest(utterance, history=[]){
- const latest=String(utterance||'').trim().toLowerCase();
- if(!/^(?:\*|continue(?: (?:building|working|the build|that|where you left off))?|keep (?:going|building|working)(?: on (?:it|that))?|go ahead|go on|carry on|proceed|yes[, ]*(?:do it|go ahead|continue)|finish (?:it|that|the build)|pick up (?:the work|where you left off))\s*[.!*]*$/.test(latest))return '';
- if(!Array.isArray(history))return '';
- // Only the *most recent* user command is eligible. Earlier, unrelated requests
- // cannot be revived by a one-word "continue" after an intervening topic.
- const last=[...history].reverse().find(item=>item?.role==='user'&&typeof item.text==='string');
- if(!last)return '';
- const previous=last.text.trim().slice(0,4000);
- if(previous.length<12||classify(previous)!=='queue')return '';
- return previous;
+ if(!isOwnerContinuation(utterance)||!Array.isArray(history))return '';
+ let priorContinuations=0;
+ for(let i=history.length-1;i>=0;i--){
+  const item=history[i];
+  if(item?.role!=='user'||typeof item.text!=='string')continue;
+  const previous=item.text.trim().slice(0,4000);
+  if(isOwnerContinuation(previous)){
+   if(++priorContinuations>200)return '';
+   continue;
+  }
+  // Stop at the first different user topic, even if earlier messages contain
+  // commands or an assistant claimed a task was completed.
+  return previous.length>=12&&classify(previous)==='queue'?previous:'';
+ }
+ return '';
 }
 // Resolve a deictic repair command only against the owner's latest message.
 function resolveRepairRequest(utterance, history=[]){
@@ -227,7 +258,25 @@ function requestPlan(request,repository){
 function executionMessage(execution={},deduplicated=false,status='ready'){
  if(deduplicated&&!execution.status)return ['complete','deployed_verified'].includes(status)?'This request already has a saved result. Open its progress to review it.':'This request is already saved. Following its progress without creating duplicate work.';
  if(execution.status==='queued_for_runner')return 'Your request is saved and the build runner has been requested. Progress will appear here as it starts.';
- if(execution.status==='job_not_dispatchable')return 'Your request is saved. The runner is waiting for a prerequisite; its progress will explain what is needed.';
+ if(execution.status==='job_not_dispatchable'){
+  // Server-calculated admission codes are not proof that the executor ran.
+  // Do not echo unknown or untrusted upstream details into owner chat.
+  const blockers={
+   dependency_pending:'A required dependency job is still pending. Verify its result before retrying this job.',
+   no_matching_runner_adapter:'No matching authenticated repository runner adapter is available. Check the existing Brain executor configuration.',
+   owner_decision_required:'An owner decision or security approval is required. The runner will not bypass it.',
+   technical_source_evidence_required:'Technical source evidence is required before the runner can claim this job.',
+   repository_lease_active:'Another runner holds the repository lease. Check its actual completion or expiry.',
+   runner_backoff:'An earlier attempt is subject to a retry backoff. The saved job remains pending.',
+   alarm_backoff:'The retry timer has not elapsed. The saved job remains pending.',
+   commit_verification_required:'An earlier source commit requires independent verification before another claim.',
+   invalid_job_scope:'The saved job lacks a valid repository or engineering instruction. Inspect its original scope.'
+  };
+  const reason=typeof execution.reason==='string'?execution.reason:'';
+  const detail=Object.hasOwn(blockers,reason)?blockers[reason]:
+   'The runner did not admit this job. Open its authenticated progress record for the exact blocker.';
+  return 'Your request is saved, but no source execution has been verified. '+detail;
+ }
  if(execution.status==='no_pending_jobs')return 'Your request is saved. Checking whether its jobs have already been claimed.';
  return 'Your request is saved, but the runner has not confirmed a launch. Robot Brain will retry automatically; you do not need to press Run.';
 }
@@ -441,7 +490,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
+const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,firstPartyRepairTarget,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);

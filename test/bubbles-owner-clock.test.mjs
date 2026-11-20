@@ -123,3 +123,19 @@ test('Cloudflare clock route has the same verified owner gate as Robot Brain wor
  assert.match(worker,/alarm-global-next-at/);
  assert.match(worker,/this.fetch\(new Request\('https:\/\/clock.internal\/run-next'/);
 });
+
+test('Bubbles chat actually recognizes normal scheduling commands and Clock IDs',()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const begin=ui.indexOf('// Clock and alarm requests stay in Bubbles');
+ const end=ui.indexOf('// A named public README/source request',begin);
+ assert.ok(begin>0&&end>begin);
+ const routing=ui.slice(begin,end);
+ assert.ok(!routing.includes(String.raw`\\b`),'double-escaped word boundary silently disables scheduling');
+ assert.match(routing,/bubbles-cloud-clock\.mjs/);
+});
+test('resuming a verified owner Clock task reads an explicit ISO date and never fabricates an alarm',()=>{
+ const cid='clock_'+'a'.repeat(8)+'-'+'b'.repeat(4)+'-'+'c'.repeat(4)+'-'+'d'.repeat(4)+'-'+'e'.repeat(12);
+ const iso='2026-11-03T14:15:00-06:00';
+ assert.deepEqual(parseClockIntent('Resume '+cid+' at '+iso),{action:'resume',id:cid,startAt:iso});
+ assert.deepEqual(parseClockIntent('Resume '+cid),{action:'resume',id:cid,needsTime:true});
+});

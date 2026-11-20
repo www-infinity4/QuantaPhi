@@ -17,6 +17,8 @@ test('eBay Quick Card returns source results in its existing search field and fi
   {title:'Other shop',url:'https://example.com/coins'}]);
  await page.goto(base+'/quanta-feed-card.html?card=ebay',{waitUntil:'domcontentloaded'});
  const card=page.locator('#quantaFeedCardDetail');
+ // The four-seller search is primary; retain the existing source reader in an optional disclosure.
+ await card.locator('details.qcx-ebay-direct summary').click();
  await card.getByLabel('Search eBay').fill('1881 Morgan dollar');
  await card.getByRole('button',{name:'Search eBay',exact:true}).click();
  await expect(card.locator('.qca-website-result')).toHaveCount(1);
