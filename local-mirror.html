@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; worker-src 'self'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Local Mirror · Shadow Web Radar · Quantaφ</title>
+<meta name="description" content="Opt-in local snippet playground and observable resource ledger, with transparent security boundaries.">
+<style>
+:root{color-scheme:light;font:17px/1.6 system-ui,Roboto,sans-serif;letter-spacing:.014em;background:#f7f3fc;color:#352242;--purple:#5b2d88}*{box-sizing:border-box}body{margin:0}main{max-width:980px;margin:auto;padding:22px 16px 52px}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:6px 0 14px}h2{font-size:1.3rem;margin:0 0 10px}.kicker{color:var(--purple);font-weight:750;letter-spacing:.12em;text-transform:uppercase}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:white;border:1px solid #ded1e9;border-radius:20px;padding:20px;min-width:0;box-shadow:0 6px 22px #4820650c}.lead{color:#695576}label{display:flex;gap:10px;align-items:flex-start;font-weight:700;margin:16px 0}.pill{display:inline-block;background:#eee5f7;color:#48216b;padding:3px 11px;border-radius:25px;font-weight:700}button,textarea{font:inherit;width:100%;border:1.5px solid #bda1d0;border-radius:12px}button{cursor:pointer;min-height:48px;font-weight:700;padding:10px;background:var(--purple);color:white;margin-top:9px}button:disabled{opacity:.45;cursor:not-allowed}textarea{min-height:145px;padding:12px;resize:vertical}button.secondary{background:#eee6f8;color:var(--purple)}button:focus-visible,textarea:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #9660c8;outline-offset:3px}input{width:23px;height:23px;flex-shrink:0}ul{padding-left:23px;overflow-wrap:anywhere}li{margin:12px 0}li p{font-size:.9rem;overflow-wrap:anywhere;margin:4px 0}#status,#audit{overflow-wrap:anywhere;background:#f5ecfd;border-radius:12px;padding:12px}small{color:#65536f}.note{padding:16px;border-left:4px solid #7d4aad;background:#f0e8f7;margin:14px 0}a{color:#55258a}@media(max-width:700px){.grid{grid-template-columns:1fr}.card{padding:16px}}
+</style>
+</head>
+<body><main>
+<div class="kicker">Quantaφ · Privacy & Agency</div>
+<h1>The Local Mirror</h1>
+<p class="lead">A private, opt-in snippet playground with a local text fingerprint and a transparent resource-observation panel. Text is processed locally and then discarded from the saved record. Only its SHA-256 digest, timestamp and limited word-count metadata remain in IndexedDB, where other code sharing this origin might still have access.</p>
+<div class="note"><strong>Scope:</strong> This page uses a restrictive Content Security Policy. Its content hashes are not cryptographic proof of zero outbound packets. Initial page assets must still download; browser extensions, other tabs, operating-system traffic, and upstream infrastructure are outside this page's visibility.</div>
+<div class="grid">
+<section class="card" aria-labelledby="mirror-title"><h2 id="mirror-title">Local Mirror · Snippets</h2>
+<span class="pill">Opt-in · On-device</span>
+<label><input id="consent" type="checkbox">Enable private snippet processing in this tab</label>
+<label for="text">Paste selected text (up to 8,000 characters)</label>
+<textarea id="text" maxlength="8000" placeholder="Enter text you want to summarize locally into word counts. Nothing is sent to AI."></textarea>
+<button id="save" disabled>Analyze & save locally</button><button class="secondary" id="refresh" disabled>Show saved entries</button><button class="secondary" id="clear">Delete local entries</button>
+<p role="status" aria-live="polite" id="status">Collection is off until you enable it.</p>
+<h2>Saved local fingerprints</h2><ul id="records"><li>No locally saved snippets.</li></ul>
+<p id="audit" aria-live="polite">Network proof not established. Local digest is not a signed isolation receipt.</p>
+</section>
+<section class="card" aria-labelledby="radar-title"><h2 id="radar-title">Shadow Web Radar</h2>
+<span class="pill">Passive · Current page only</span>
+<p>Observed resources and browser-reported Content Security Policy violations for this page only. This <strong>does not monitor other tabs or websites</strong>, see all request headers or fingerprints, or control third-party websites. Category labels are heuristic, not proof of malicious behavior.</p>
+<ul id="radar" aria-live="polite"><li>No observable resource entries yet.</li></ul>
+<p><small>Allow/Block/Spoof controls require a separate authorized extension or proxy. This standalone page cannot intercept all browsing requests, and synthetic spoofing is not enabled.</small></p>
+<h2>Isolation checklist</h2>
+<ul><li>On-device snippet fingerprints: browser IndexedDB (no raw snippet saved)</li><li>Local analysis: word-count profile, not an AI embedding model</li><li>Page CSP: network connections disabled for this document</li><li>Outbound byte count: unknown without an independently trusted network monitor</li><li>Deletion: manually erase the local records at any time</li></ul>
+</section>
+</div><p><a href="/">Return to Quantaφ home</a></p>
+</main><script type="module" src="./local-mirror-app.mjs"></script></body></html>

@@ -576,6 +576,19 @@ export default {
   const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/infinity-affiliates.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
    || (['Oracle-Octaves','C13b0','Omni-Phi','News-Phi','Mckee-Coins-Inc','Omni-TV','Builder-Reserve'].includes(route.repo) && route.sourcePath === '/index.html');
   if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio','Alien-Coin'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
+  // Dedicated opt-in privacy playground: enforce network denial on the *worker*
+  // response too. A creator document's CSP is not inherited by ordinary
+  // same-origin worker scripts. Applies only to these four static assets.
+  const localMirrorAsset = route.repo === 'QuantaPhi' &&
+    ['/local-mirror.html','/local-mirror-app.mjs','/local-mirror-worker.mjs','/local-mirror-core.mjs'].includes(route.sourcePath);
+  if (localMirrorAsset) {
+   const LOCAL_MIRROR_CSP = "default-src 'none'; script-src 'self'; worker-src 'self'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'";
+   out.set('Content-Security-Policy', LOCAL_MIRROR_CSP);
+   out.set('X-Frame-Options', 'SAMEORIGIN');
+   out.set('X-Content-Type-Options', 'nosniff');
+   out.set('Referrer-Policy', 'no-referrer');
+   out.set('Cross-Origin-Resource-Policy', 'same-origin');
+  }
   // Public housing intake can run inside QuantaPhi, but cannot submit or send answers.
   if (route.repo === 'QuantaPhi' && ['/disability-housing.html','/housing-help.html'].includes(route.sourcePath) && /text\/html/i.test(out.get('Content-Type') || '')) {
    out.set('X-Frame-Options', 'SAMEORIGIN');
