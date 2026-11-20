@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'creator-post-*.mjs'
+      - 'youtube-creator-*.mjs'
+      - 'test/youtube-creator-*.test.mjs'
       - 'data/creator-posts.mjs'
       - 'scripts/import-creator-posts.mjs'
       - 'source-quick-cards.mjs'
@@ -16,6 +18,8 @@ on:
     branches: [main]
     paths:
       - 'creator-post-*.mjs'
+      - 'youtube-creator-*.mjs'
+      - 'test/youtube-creator-*.test.mjs'
       - 'data/creator-posts.mjs'
       - 'scripts/import-creator-posts.mjs'
       - 'source-quick-cards.mjs'
@@ -35,8 +39,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Check YouTube creator modules
+        run: |
+          node --check youtube-creator-catalog.mjs
+          node --check youtube-creator-cards.mjs
       - name: Verify database, placement and source integration
-        run: node --test test/creator-posts.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/oracle-placement-engine.test.mjs test/oracle-feed-persistence.test.mjs test/cardone-offer.test.cjs test/unfinished-ledger.test.mjs
+        run: node --test test/youtube-creator-quick-cards.test.mjs test/creator-posts.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/oracle-placement-engine.test.mjs test/oracle-feed-persistence.test.mjs test/cardone-offer.test.cjs test/unfinished-ledger.test.mjs
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
