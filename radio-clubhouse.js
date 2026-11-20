@@ -52,6 +52,8 @@
  add(titleGroup,make('p','rc-subtitle','Radio Clubhouse discussion cards: latest verified forum topics first, with real archived threads if live access is unavailable.'));
  const refresh=add(head,make('button','rc-refresh','Refresh discussions'));
  refresh.type='button';
+ const archiveToggle=add(head,make('button','rc-refresh rc-archive-toggle','View older archive'));
+ archiveToggle.type='button';archiveToggle.hidden=true;
  const status=add(shell,make('p','rc-status','Connecting to Radio Clubhouse…'));
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const collection=add(shell,make('div','rc-feed'));
@@ -61,7 +63,12 @@
  add(footer,make('span','','Discussions belong to their original authors at Antique Radio Forums.'));
  const source=add(footer,make('a','','Visit Antique Radio Forums ↗'));
  source.href='https://antiqueradios.com/forums/viewforum.php?f=2';source.target='_blank';source.rel='noopener noreferrer';
- let pending=false,live=[],known=new Set(stored(SEEN,[]).map(String)),everLoaded=!!stored(SNAPSHOT,null),lastChecked=null;
+ let pending=false,live=[],archivedTopics=[],archiveShown=false,known=new Set(stored(SEEN,[]).map(String)),everLoaded=!!stored(SNAPSHOT,null),lastChecked=null;
+ archiveToggle.addEventListener('click',()=>{
+  archiveShown=!archiveShown;archiveToggle.textContent=archiveShown?'Hide older archive':'View older archive';
+  if(archiveShown)render(archivedTopics,false,undefined,true);
+  else render([],false,'No currently verified topics. Open the original forum for new posts, or choose View older archive for historical discussions.');
+ });
  function actions(article,t){
   const buttons=add(article,make('div','rc-actions'));
   const reader=add(buttons,make('a','rc-button rc-reader inPageSite','Read in Infinity Viewer'));
@@ -168,19 +175,22 @@
    const topics=normalize(payload.topics);
    if(!topics.length)throw new Error('no_valid_discussions');
    const archived=payload.archived===true||payload.feedType==='archive';
-   if(curated){render(topics,false);status.textContent='Curated historical reads from Antique Radio Forums · source dates are shown when available. These are not the latest live posts.';return;}
+   if(curated){archiveToggle.hidden=true;archiveShown=false;render(topics,false);status.textContent='Curated historical reads from Antique Radio Forums · source dates are shown when available. These are not the latest live posts.';return;}
    if(archived){
+    archivedTopics=topics;archiveShown=false;archiveToggle.textContent='View older archive';
+    archiveToggle.hidden=false;
     const snapshot=stored(SNAPSHOT,null);
     const recent=normalize(snapshot?.topics);
     if(recent.length){
      render(recent,false);
      status.textContent='Live forum access unavailable. Showing the last previously retrieved forum discussions ('+formatDate(new Date(snapshot.checkedAt).toISOString())+'). The archive is available if needed; these are not confirmed current.';
     }else{
-     render(topics,false);
-     status.textContent='Showing '+topics.length+' VERIFIED ARCHIVED discussions (2025). Live access is unavailable to the feed service; these are not the newest live posts. Checks retry every 5 minutes.';
+     render([],false,'No current Radio Clubhouse posts could be verified. Open the original board for recent discussions, or select View older archive for dated threads.');
+     status.textContent='Live source unavailable. Archived discussions are hidden by default; checking again every 5 minutes.';
     }
     return;
    }
+   archiveToggle.hidden=true;archiveShown=false;
    const first=!everLoaded;
    for(const t of topics)t.isNew=!first&&!known.has(t.id);
    known=new Set([...known,...topics.map(t=>t.id)].slice(-500));
