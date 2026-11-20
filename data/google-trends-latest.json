@@ -3,17 +3,273 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T19:31:31.422057Z",
+  "checked_at": "2026-11-20T20:01:12.657367Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "posiciones de al-ahli saudi contra al-nassr",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T19:40:00Z",
+      "related_news_urls": [
+        "https://es-us.noticias.yahoo.com/deportes/ronaldo-lidera-ataque-nassr-cl%C3%A1sico-163044322.html",
+        "https://hsbnoticias.com/noticias/cristiano-ronaldo-y-su-partido-contra-el-al-alhi-en-la-liga-saudi"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_EybN58AIoEfbdbBMqpd8bmWrWVd2KMNXV29oKSfIKC43ctwspvT6Qo3-zTE",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://es-us.noticias.yahoo.com/deportes/ronaldo-lidera-ataque-nassr-cl%C3%A1sico-163044322.html",
+          "title": "Ronaldo lidera el ataque del Al Nassr en el clásico y Al Buraikan, al banquillo en el Al Ahli",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_EybN58AIoEfbdbBMqpd8bmWrWVd2KMNXV29oKSfIKC43ctwspvT6Qo3-zTE"
+        },
+        {
+          "url": "https://hsbnoticias.com/noticias/cristiano-ronaldo-y-su-partido-contra-el-al-alhi-en-la-liga-saudi",
+          "title": "Cristiano Ronaldo y su partido contra el al alhi en la liga saudí",
+          "publisher": "HSB Noticias",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQ_HVPiCeL9iOYRXDrePRThDAn9kzMtIjs0VqBQXxYa6bktDzzCsthJac95Dw"
+        }
+      ]
+    },
+    {
+      "query": "daniil medvedev",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T19:40:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/alcaraz-cobolli-medvedev-tiafoe-nitto-atp-finals-2026-day-6-preview",
+        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/6LKlXRh5iaXe/",
+        "https://vsin.com/tennis/atp-finals-tennis-best-bets-predictions-for-friday-november-20/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROaRA7VOFscgjpBAESzVaOVbWrOdiGujBGlPIYVbMkFECIwL9pLyxDxdVzP7s",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/alcaraz-cobolli-medvedev-tiafoe-nitto-atp-finals-2026-day-6-preview",
+          "title": "Medvedev, Tiafoe set for win-or-go-home clash; Alcaraz faces Cobolli",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROaRA7VOFscgjpBAESzVaOVbWrOdiGujBGlPIYVbMkFECIwL9pLyxDxdVzP7s"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/6LKlXRh5iaXe/",
+          "title": "ATP Finals 2026 live updates: Tiafoe vs. Medvedev underway after Alcaraz beats Cobolli on day six",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUXpefofT3npNb5yy3RkrmpvUlp6hC4TFCgHjxZLc6EgCTMA3FVZwYV1P80iU"
+        },
+        {
+          "url": "https://vsin.com/tennis/atp-finals-tennis-best-bets-predictions-for-friday-november-20/",
+          "title": "ATP Finals Tennis Best Bets & Predictions for Friday, November 20",
+          "publisher": "VSiN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR-Bos2nCqzFJZgAVZnAYsTP44mNuZizeq3kCWiYhAllkLigtCehpHbbWWf2w"
+        }
+      ]
+    },
+    {
+      "query": "is drake maye out for the season",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T19:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50542578/patriots-qb-drake-maye-fractured-fibula-sources-say",
+        "https://www.cbssports.com/nfl/news/drake-maye-has-fractured-right-fibula-will-not-require-surgery-per-report/",
+        "https://www.audacy.com/weei/sports/patriots/nfl-insider-adam-schefter-says-drake-maye-injury-is-fractured-ankle"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYpDNWChdU7fk3BdWBrXkdTvL6LQV74oq7m1fNmBvJDKtlFUgNd6qrhnIugA",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50542578/patriots-qb-drake-maye-fractured-fibula-sources-say",
+          "title": "Patriots QB Drake Maye has fractured fibula, sources say",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYpDNWChdU7fk3BdWBrXkdTvL6LQV74oq7m1fNmBvJDKtlFUgNd6qrhnIugA"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/drake-maye-has-fractured-right-fibula-will-not-require-surgery-per-report/",
+          "title": "Drake Maye has fractured right fibula, will not require surgery, per report",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXcJJIV6_T9U5VPkEi2OYsweBI2qifSwPm6yTFc5NP0a4JJ3HYPdWzYMhT6Mo"
+        },
+        {
+          "url": "https://www.audacy.com/weei/sports/patriots/nfl-insider-adam-schefter-says-drake-maye-injury-is-fractured-ankle",
+          "title": "NFL Insider Adam Schefter says Drake Maye injury is 'fractured ankle'",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT53HxyWMRlxjTOhE6zvDY15Y-VKerd_lVB7sPcMX7wfbHvZBBNPK0zWdAUPHg"
+        }
+      ]
+    },
+    {
+      "query": "nasdaq",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-20T19:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+        "https://www.fastcompany.com/91646735/stock-markets-anthropic-ai-chips-boom",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-20-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRshcZ9syJeEZqn26wB-iMj4jupbRMJYxOFX1xA2ZjKD0GRzRqqecbYzkzlMmY",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+          "title": "S&P 500 and Dow enter correction, Nasdaq wipes out 2026 gain as Anthropic leads AI sell-off: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRshcZ9syJeEZqn26wB-iMj4jupbRMJYxOFX1xA2ZjKD0GRzRqqecbYzkzlMmY"
+        },
+        {
+          "url": "https://www.fastcompany.com/91646735/stock-markets-anthropic-ai-chips-boom",
+          "title": "AI stock sell-off accelerates as markets head for steep weekly losses",
+          "publisher": "Fast Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0TFfKDAiMP0Rd4hz-dUNSh9XbUoFdTrlRN65vd-iJSVVKfpvsP_4uAK2J03s"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-20-2026",
+          "title": "Stock Market Today: Nasdaq, S&P 500 Sink Lower; Anthropic Slips 10% — Live Updates",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwHpZq-H6K6m2eV3x2TveLQxmsHeeb7F6-Z45qWd9ZYWMyjcIDn77eQg3k1E8"
+        }
+      ]
+    },
+    {
+      "query": "smh stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T19:30:00Z",
+      "related_news_urls": [
+        "https://www.fool.com/investing/2026/11/19/the-semiconductor-etf-is-on-track-to-beat-the-s-and-p-500-for-a-4th-straight-year-it-has-never-done-that-before/",
+        "https://finance.yahoo.com/markets/stocks/articles/smh-great-dip-buy-31-172145083.html",
+        "https://seekingalpha.com/article/4970655-smh-cover-the-shorts-for-now-upgrade"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSCFdsRlEwrJWr3FhB38vSw7Tic4OU-CiPr8LBbM_LwfbYbupjJ4YH-oDkPVg",
+      "image_credit": "The Motley Fool",
+      "news": [
+        {
+          "url": "https://www.fool.com/investing/2026/11/19/the-semiconductor-etf-is-on-track-to-beat-the-s-and-p-500-for-a-4th-straight-year-it-has-never-done-that-before/",
+          "title": "The Semiconductor ETF Is on Track to Beat the S&P 500 for a 4th Straight Year. It Has Never Done That Before.",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSCFdsRlEwrJWr3FhB38vSw7Tic4OU-CiPr8LBbM_LwfbYbupjJ4YH-oDkPVg"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/smh-great-dip-buy-31-172145083.html",
+          "title": "Is SMH A Great Dip Buy At 31% Off?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbKFV0_I7Eosx2moyHB-CyVHeaxaFVmfiRhcwGX2WtfI-8Evyw5Ox7Sm2V0pM"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4970655-smh-cover-the-shorts-for-now-upgrade",
+          "title": "SMH: Cover The Shorts For Now (Rating Upgrade) (NASDAQ:SMH)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSgAY8fiMaSItKAR2D6cieT8xGef_UKXCm18s411akWd1U6fswlFl0X_WmLX0"
+        }
+      ]
+    },
+    {
+      "query": "troyes vs le havre",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T19:20:00Z",
+      "related_news_urls": [
+        "https://www.oddschecker.com/us/picks-parlays/soccer/cng201-20261120-troyes-vs-le-havre-lineups-prediction-betting-picks-odds"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZKmokx8wo4lvMlhJH-cmouONL49SVaDpvdXCjyaYl5vld-l5MO7fcw5eqnZ0",
+      "image_credit": "Oddschecker",
+      "news": [
+        {
+          "url": "https://www.oddschecker.com/us/picks-parlays/soccer/cng201-20261120-troyes-vs-le-havre-lineups-prediction-betting-picks-odds",
+          "title": "Troyes vs Le Havre Lineups, Prediction, Betting Picks & Odds",
+          "publisher": "Oddschecker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZKmokx8wo4lvMlhJH-cmouONL49SVaDpvdXCjyaYl5vld-l5MO7fcw5eqnZ0"
+        }
+      ]
+    },
+    {
+      "query": "purdue professor dead",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T19:20:00Z",
+      "related_news_urls": [
+        "https://www.jconline.com/story/news/crime/2026/11/19/2-adults-2-girls-found-dead-early-thursday-in-west-lafayette/92857164007/",
+        "https://people.com/purdue-professor-family-dead-home-daughter-terrifying-call-police-12267430",
+        "https://www.purdueexponent.org/city_state/general_news/family-of-4-identified-in-west-lafayette-death-investigation/article_5140e421-005b-4d81-bc63-0dc25a34e96a.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgbXl7WerRCX7P9lsu3Tpf7QJsJf22P3Du3XoHuMs38SHieBoBRUuI92KF3r0",
+      "image_credit": "Journal & Courier",
+      "news": [
+        {
+          "url": "https://www.jconline.com/story/news/crime/2026/11/19/2-adults-2-girls-found-dead-early-thursday-in-west-lafayette/92857164007/",
+          "title": "2 adults, 2 girls found dead Wednesday night in West Lafayette",
+          "publisher": "Journal & Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgbXl7WerRCX7P9lsu3Tpf7QJsJf22P3Du3XoHuMs38SHieBoBRUuI92KF3r0"
+        },
+        {
+          "url": "https://people.com/purdue-professor-family-dead-home-daughter-terrifying-call-police-12267430",
+          "title": "Purdue U. Professor and Her Family Found Dead Inside Home After Daughter’s Terrifying 911 Call",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5g3PBlMMGD69i5zOpYLHRTA_CykKhuGH1I_Me533U1BI9vn40z09XUhA-0qI"
+        },
+        {
+          "url": "https://www.purdueexponent.org/city_state/general_news/family-of-4-identified-in-west-lafayette-death-investigation/article_5140e421-005b-4d81-bc63-0dc25a34e96a.html",
+          "title": "Family of 4 identified in West Lafayette death investigation",
+          "publisher": "Purdue Exponent",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQaw81Ltbrv1GesS7auat7nQzTeBYHGWgbd8DiueLBSZL4INEGPKA0LqDIlo"
+        }
+      ]
+    },
+    {
+      "query": "athletic - rcd espanyol",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T19:10:00Z",
+      "related_news_urls": [
+        "https://es-us.noticias.yahoo.com/deportes/onces-athletic-club-espanyol-be%C3%B1at-185100828.html",
+        "https://as.com/futbol/un-nuevo-san-mames-y-otro-sarabia-en-el-cesped-f202611-n/",
+        "https://www.mundodeportivo.com/futbol/rcd-espanyol/20261120/1004253484/riedel-bauza-e-hinojo-titulares-eder-sarabia-resguarda-san-mames.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT40Z0aHeLJGKMXi7DI6cRtfbMfnnl3NT2hzJTUUVj9YyXgd_eL49ol-9nM8Wo",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://es-us.noticias.yahoo.com/deportes/onces-athletic-club-espanyol-be%C3%B1at-185100828.html",
+          "title": "🚨 ONCES del Athletic Club-Espanyol: ¡Beñat Prados titular; Dolan suplente!",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT40Z0aHeLJGKMXi7DI6cRtfbMfnnl3NT2hzJTUUVj9YyXgd_eL49ol-9nM8Wo"
+        },
+        {
+          "url": "https://as.com/futbol/un-nuevo-san-mames-y-otro-sarabia-en-el-cesped-f202611-n/",
+          "title": "Un nuevo San Mamés y otro Sarabia en el césped",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTHJftuqdWKMI6XMDTFpNV4BjTeFeC3lyLaJuIbhx00lGBuW2x_Ja7JvfWkBg"
+        },
+        {
+          "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20261120/1004253484/riedel-bauza-e-hinojo-titulares-eder-sarabia-resguarda-san-mames.html",
+          "title": "Riedel, Bauza e Hinojo, titulares: Eder Sarabia se resguarda en San Mamés",
+          "publisher": "Mundo Deportivo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE8RhKhPNZ1CK2HrIS4OfJygs8KpQCHK5jI-JLu_73_KEPjDZQQ779bnj_DEU"
+        }
+      ]
+    },
+    {
       "query": "elise stefanik",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-20T19:10:00Z",
       "related_news_urls": [
         "https://www.washingtonpost.com/dc-md-va/2026/11/20/stefanik-familys-dc-home-sells-mystery-buyer-900k-over-list-price/",
-        "https://www.nationalreview.com/magazine/january-2027/the-grotesque-old-party",
-        "https://www.newsday.com/opinion/commentary/guest-essays/republican-party-in-the-arena-u263umcd"
+        "https://www.baltimoresun.com/2026/11/20/republicans-candidate-unite/",
+        "https://www.nationalreview.com/magazine/january-2027/the-grotesque-old-party"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjJn5hUU74Pt2luxCjhoFUVD9LPHeYqHwUXQejgfuD5YaU2GHkj5kIWTRwkD8",
       "image_credit": "The Washington Post",
@@ -26,53 +282,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjJn5hUU74Pt2luxCjhoFUVD9LPHeYqHwUXQejgfuD5YaU2GHkj5kIWTRwkD8"
         },
         {
+          "url": "https://www.baltimoresun.com/2026/11/20/republicans-candidate-unite/",
+          "title": "Republicans need a candidate who can unite | READER COMMENTARY",
+          "publisher": "Baltimore Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoeK2pkbzzLgra3cYJtFmCuVfP-2iBbUQQzfO34W8ZeREQK5LuvIzsw0Fdas"
+        },
+        {
           "url": "https://www.nationalreview.com/magazine/january-2027/the-grotesque-old-party",
           "title": "The Grotesque Old Party: The GOP’s Bad Candidates",
           "publisher": "National Review",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWIl-YqUrPa08be2PbQiR9wxgBi4Sooxs5WKsrlv80t0wE4GQub5mwWrDi4n0"
-        },
-        {
-          "url": "https://www.newsday.com/opinion/commentary/guest-essays/republican-party-in-the-arena-u263umcd",
-          "title": "Republicans need to stop blame game, chart our future course",
-          "publisher": "Newsday",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCyaaxKM4NAVqsn7K07OMaTdyut54LSO3J3ySxpND3l1fQwxnFPYNzrqY4-xA"
-        }
-      ]
-    },
-    {
-      "query": "athletic - rcd espanyol",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T19:10:00Z",
-      "related_news_urls": [
-        "https://es-us.noticias.yahoo.com/deportes/onces-athletic-club-espanyol-be%C3%B1at-185100828.html",
-        "https://as.com/futbol/un-nuevo-san-mames-y-otro-sarabia-en-el-cesped-f202611-n/",
-        "https://www.lavanguardia.com/deportes/20261120/11688538/debut-especial-romper-tendencia-desastrosa-2026-espanyol-athletic.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrirH5KKM73ZTy8E57fR3yYxTX59GlX7_s62lkqx0TCDxNPVYR8ziPKFMnrU4",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/onces-athletic-club-espanyol-be%C3%B1at-185100828.html",
-          "title": "🚨 ONCES del Athletic Club-Espanyol: ¡Beñat Prados titular; Dolan suplente!",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrirH5KKM73ZTy8E57fR3yYxTX59GlX7_s62lkqx0TCDxNPVYR8ziPKFMnrU4"
-        },
-        {
-          "url": "https://as.com/futbol/un-nuevo-san-mames-y-otro-sarabia-en-el-cesped-f202611-n/",
-          "title": "Un nuevo San Mamés y otro Sarabia en el césped",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTHJftuqdWKMI6XMDTFpNV4BjTeFeC3lyLaJuIbhx00lGBuW2x_Ja7JvfWkBg"
-        },
-        {
-          "url": "https://www.lavanguardia.com/deportes/20261120/11688538/debut-especial-romper-tendencia-desastrosa-2026-espanyol-athletic.html",
-          "title": "Un debut muy especial en la Catedral para romper una tendencia desastrosa en el 2026",
-          "publisher": "La Vanguardia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxb4Mzc3KoHSSKDfZMcZ7tyQTrlxQIUkvT5ltsTJqXm_h0Y66c0IC_DuiWvwY"
         }
       ]
     },
@@ -82,8 +303,8 @@
       "published_at": "2026-11-20T18:50:00Z",
       "related_news_urls": [
         "https://www.dailyprincetonian.com/article/2026/11/princeton-news-broadfocus-princeton-phd-neuroscience-student-detained-by-immigration-customs-and-enforcement-ice",
-        "https://www.theguardian.com/us-news/2026/nov/20/princeton-doctoral-student-reportedly-detained-ice",
-        "https://www.newsweek.com/princeton-phd-student-detained-by-ice-eva-yi-xie-12745291"
+        "https://www.newsweek.com/princeton-phd-student-detained-by-ice-eva-yi-xie-12745291",
+        "https://www.theguardian.com/us-news/2026/nov/20/princeton-doctoral-student-reportedly-detained-ice"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSixxwQu9YgE7M9j0M6rSBGVuhDgB7OuThnCTvO-a3zHKZgHVx6uE2juAxlVb8",
       "image_credit": "The Daily Princetonian",
@@ -96,263 +317,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSixxwQu9YgE7M9j0M6rSBGVuhDgB7OuThnCTvO-a3zHKZgHVx6uE2juAxlVb8"
         },
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/20/princeton-doctoral-student-reportedly-detained-ice",
-          "title": "Princeton doctoral student reportedly detained by ICE on way back from conference",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFFCPNBaYu9b25Kkrk9-rSyuPuUxrIkSFSdzALeEr_m2d2ZDf5bdLmyr45ii4"
-        },
-        {
           "url": "https://www.newsweek.com/princeton-phd-student-detained-by-ice-eva-yi-xie-12745291",
           "title": "Princeton PhD Student Detained by ICE",
           "publisher": "Newsweek",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJlL5mnxGErAmzQjIp3rRJFu6HeuJVgRSTA5cZIGl2Wf_dnJ1SMID38AGFVcc"
-        }
-      ]
-    },
-    {
-      "query": "russia",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T18:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/world/articles/russia-pummels-ukraine-putin-vowed-073406181.html",
-        "https://www.bbc.com/news/videos/cmwy8e0pxw3wo",
-        "https://www.cnn.com/2026/11/20/europe/russia-ukraine-putin-trump-intl-hnk"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1rG2r_BaAdvI6CXvKWxvWqmSYOnPQzsmnAcRZNipwsfpEUixDrcD3eSFyWzI",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/world/articles/russia-pummels-ukraine-putin-vowed-073406181.html",
-          "title": "Russia pummels Ukraine, missile hits Poland, after Putin threat",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1rG2r_BaAdvI6CXvKWxvWqmSYOnPQzsmnAcRZNipwsfpEUixDrcD3eSFyWzI"
         },
         {
-          "url": "https://www.bbc.com/news/videos/cmwy8e0pxw3wo",
-          "title": "What we know about the latest Russian missile strikes on Ukraine",
-          "publisher": "BBC",
+          "url": "https://www.theguardian.com/us-news/2026/nov/20/princeton-doctoral-student-reportedly-detained-ice",
+          "title": "Princeton doctoral student reportedly detained by ICE on way back from conference",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIgkhbwhzPjXatkVc2JEsjMZXqJbLA-59dC8J8rrHrVoH3lbNpWtwhKz4t4Bw"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/20/europe/russia-ukraine-putin-trump-intl-hnk",
-          "title": "Hours after Trump reportedly says ‘tired’ Putin is ready for a deal, Ukraine hit with massive strikes",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzOrHwVFosmbdzZGt7Sw00EpqJMfuzlZxCHZkuq0f1h7hUuGtjJtWaXLP6_UE"
-        }
-      ]
-    },
-    {
-      "query": "bayern vs köln",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-20T18:40:00Z",
-      "related_news_urls": [
-        "https://www.bild.de/sport/fussball/bundesliga-wirbel-um-koeln-ultras-vor-dem-spiel-gegen-bayern-6b0096d75842ff528b9e2321",
-        "https://fc.de/aktuelles/news/so-startet-der-fc-in-muenchen",
-        "https://come-on-fc.com/profis/jahmai-simpson-pusey-fc-koeln-harry-kane/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv6NZ8toyk9Fh5KE0b2r1-vqA88SOMcNCMXhyXGmesolSdynqw-TKloo5IWC4",
-      "image_credit": "BILD",
-      "news": [
-        {
-          "url": "https://www.bild.de/sport/fussball/bundesliga-wirbel-um-koeln-ultras-vor-dem-spiel-gegen-bayern-6b0096d75842ff528b9e2321",
-          "title": "Bundesliga: Wirbel um Köln-Ultras vor dem Spiel gegen Bayern",
-          "publisher": "BILD",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv6NZ8toyk9Fh5KE0b2r1-vqA88SOMcNCMXhyXGmesolSdynqw-TKloo5IWC4"
-        },
-        {
-          "url": "https://fc.de/aktuelles/news/so-startet-der-fc-in-muenchen",
-          "title": "So startet der FC in München",
-          "publisher": "1. FC Köln",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4j-iaYU0Y67n_XkrGm7HjiefejCz85ww3h9lDI3axScCE18txPE0_pJ3Nny4"
-        },
-        {
-          "url": "https://come-on-fc.com/profis/jahmai-simpson-pusey-fc-koeln-harry-kane/",
-          "title": "\"Kann und wird sich durchsetzen\": Jahmai Simpson-Pusey und der 1. FC Köln treffen auf Weltfußballer Harry Kane",
-          "publisher": "come-on-fc.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrSa2NI4qqkiGpNodMl_Nq7RA-EFxfrhbR28u6_WXjLL6fb_zLB08LJw9485A"
-        }
-      ]
-    },
-    {
-      "query": "bayern - colonia",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-20T18:40:00Z",
-      "related_news_urls": [
-        "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-fc-bayern-vs.-koeln-bundesliga-md-10",
-        "https://sports.yahoo.com/articles/confirmed-lineups-fc-bayern-vs-183200822.html",
-        "https://www.bbc.com/sport/football/live/cw99ex0kn0p4t"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjOo-7uSeSW3EhiZMhlNKQ6rygxmnJm98bY7lobbJSUTaw7nzZH7X_5wCQwSw",
-      "image_credit": "FC Bayern",
-      "news": [
-        {
-          "url": "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-fc-bayern-vs.-koeln-bundesliga-md-10",
-          "title": "Preview: FC Bayern vs. 1. FC Köln, Bundesliga",
-          "publisher": "FC Bayern",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjOo-7uSeSW3EhiZMhlNKQ6rygxmnJm98bY7lobbJSUTaw7nzZH7X_5wCQwSw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/confirmed-lineups-fc-bayern-vs-183200822.html",
-          "title": "Confirmed Lineups: FC Bayern vs. 1. FC Köln",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcQbo9q2ytuVvzguIurIPl04y8XERG5aICwgeFwYGRH6_die-j3UnTAlCb6oA"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/cw99ex0kn0p4t",
-          "title": "Bayern Munich vs Köln LIVE: German Bundesliga stream, text, stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlEHbgEC0lyB-nhlCGYFcpWlJqmbKYiOlUsEMQtzA3haOu6n-tLvaR2YjL6dQ"
-        }
-      ]
-    },
-    {
-      "query": "wiaa state football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T18:40:00Z",
-      "related_news_urls": [
-        "https://fox11online.com/sports/high-school-gametime/state-championship-previews-for-west-de-pere-notre-dame-and-freedom",
-        "https://www.boundwisconsin.com/p/state-championship-game-predictions-and-breakdown-b4d9",
-        "https://www.wbay.com/2026/11/19/operation-football-three-northeast-wisconsin-teams-play-football-state-titles/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVZql2comMdV9sQJJKcryohw59vmd68aX1vgzrSnRY_DWaMtQ8YvBkj7y_8c",
-      "image_credit": "WLUK",
-      "news": [
-        {
-          "url": "https://fox11online.com/sports/high-school-gametime/state-championship-previews-for-west-de-pere-notre-dame-and-freedom",
-          "title": "State championship previews for West De Pere, Notre Dame and Freedom",
-          "publisher": "WLUK",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVZql2comMdV9sQJJKcryohw59vmd68aX1vgzrSnRY_DWaMtQ8YvBkj7y_8c"
-        },
-        {
-          "url": "https://www.boundwisconsin.com/p/state-championship-game-predictions-and-breakdown-b4d9",
-          "title": "State Championship Game predictions and breakdown",
-          "publisher": "https://www.boundwisconsin.com/",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEfcfsYAqELwmpfqgG5TXV34R2_LjQu1Y2lTZye2K2Z0GkmRa4eKmVlvKJtfg"
-        },
-        {
-          "url": "https://www.wbay.com/2026/11/19/operation-football-three-northeast-wisconsin-teams-play-football-state-titles/",
-          "title": "Operation Football: Three Northeast Wisconsin teams play for football state titles",
-          "publisher": "WBAY",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4sPjqsBk95ywNWzDPihdbEWH9WNzy7ZqHLHu1sus7FfqYTphIhEOatWXc_ZU"
-        }
-      ]
-    },
-    {
-      "query": "big ten volleyball tournament",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T18:40:00Z",
-      "related_news_urls": [
-        "https://bigten.org/news/2026/11/20/opening-previews-inaugural-allstate-big-ten-volleyball-tournament.aspx",
-        "https://www.si.com/college/nebraska/volleyball/how-to-watch-no-1-nebraska-volleyball-in-the-b1g-tournament-quarterfinals-with-previews-breakdowns-tv-channel-2026",
-        "https://mgoblue.com/news/2026/11/20/volleyball-u-m-rallies-past-usc-in-historic-big-ten-tournament-opener"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDPcn7gWjgwl2ocQc4pGM3c9KvdSW-02aIR0BMUnrlkxuxrWBgIaIW2HXEnQY",
-      "image_credit": "Big Ten Conference",
-      "news": [
-        {
-          "url": "https://bigten.org/news/2026/11/20/opening-previews-inaugural-allstate-big-ten-volleyball-tournament.aspx",
-          "title": "Opening Previews: Inaugural Allstate Big Ten Volleyball Tournament",
-          "publisher": "Big Ten Conference",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDPcn7gWjgwl2ocQc4pGM3c9KvdSW-02aIR0BMUnrlkxuxrWBgIaIW2HXEnQY"
-        },
-        {
-          "url": "https://www.si.com/college/nebraska/volleyball/how-to-watch-no-1-nebraska-volleyball-in-the-b1g-tournament-quarterfinals-with-previews-breakdowns-tv-channel-2026",
-          "title": "How to Watch No. 1 Nebraska Volleyball in the B1G Tournament Quarterfinals with Previews, Breakdowns, TV Channel",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS1iYYfcDIvdy8j83KHPjxgWV5VyADRMiOmyPrro0eIyQ9rCQzoL5xaWNC4Lg"
-        },
-        {
-          "url": "https://mgoblue.com/news/2026/11/20/volleyball-u-m-rallies-past-usc-in-historic-big-ten-tournament-opener",
-          "title": "U-M Rallies Past USC in Historic Big Ten Tournament Opener",
-          "publisher": "University of Michigan Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQh0mnGZI6Gh5Wn2AMGu0Gz06YCIXM4vybxr4XyIYSc3jlTfvd2Aiwgckh1ccg"
-        }
-      ]
-    },
-    {
-      "query": "joey bart",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T18:30:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/joey-bart-deal-with-cubs",
-        "https://sports.yahoo.com/articles/cubs-acquire-former-no-2-182510310.html",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-20/giants-sign-erick-mejia-to-minor-league-contract"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZPEBMERoF539wDnOcuqL6xCSqWXQKv3DoWQZ_m4CKrXR17V7Rca9_2jKaVv4",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/joey-bart-deal-with-cubs",
-          "title": "Cubs add backstop Bart off waivers (source)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZPEBMERoF539wDnOcuqL6xCSqWXQKv3DoWQZ_m4CKrXR17V7Rca9_2jKaVv4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/cubs-acquire-former-no-2-182510310.html",
-          "title": "Cubs acquire former No. 2 draft pick three days after White Sox cut him: report",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl3ROqGXrEpWci7ehXM4khb5x8Ec1iW17RW8YZxwVF61kLVlRAdv7GBeCvQOs"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-20/giants-sign-erick-mejia-to-minor-league-contract",
-          "title": "Giants sign Erick Mejia to minor league contract",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCoZJDw8Hj5-9KGH155WuEu0P37oj7ZFZdS-FiiTVXHUnCM1z9VQ_eFtOWtbk"
-        }
-      ]
-    },
-    {
-      "query": "colts depth chart",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-20T18:30:00Z",
-      "related_news_urls": [
-        "https://www.houstontexans.com/news/texans-inactives-week-11-vs-indianapolis-colts",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-sauce-gardner-is-not-expected-to-play-vs-texans-due-to-calf-injury",
-        "https://www.espn.com/nfl/story/_/id/50524890/texans-rule-hunter-marks-colts-rule-ward-starting-ots"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHQk0D5w-o9MLB51NR-YBG-Dw8Cd3cM98meFBxNms04aQvArdlL9Rbes59Xqc",
-      "image_credit": "Houston Texans",
-      "news": [
-        {
-          "url": "https://www.houstontexans.com/news/texans-inactives-week-11-vs-indianapolis-colts",
-          "title": "Texans Inactives: Week 11 vs Indianapolis Colts",
-          "publisher": "Houston Texans",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHQk0D5w-o9MLB51NR-YBG-Dw8Cd3cM98meFBxNms04aQvArdlL9Rbes59Xqc"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-sauce-gardner-is-not-expected-to-play-vs-texans-due-to-calf-injury",
-          "title": "Report: Sauce Gardner is not expected to play vs. Texans due to calf injury",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1htV_afmDSQBw7_FnNR_D4GzzVXIGQ9CrBYsq5YZk8W5ub77lBtf5LsVasus"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50524890/texans-rule-hunter-marks-colts-rule-ward-starting-ots",
-          "title": "Texans DE Hunter, RB Marks to miss TNF; Colts rule out CB Ward, starting OTs",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm7hkQ5NnsDsMvxvMl34ZbIpuPBVVts3Av_3T_JHVzlIcp6FaNHl73Vb0cKqA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFFCPNBaYu9b25Kkrk9-rSyuPuUxrIkSFSdzALeEr_m2d2ZDf5bdLmyr45ii4"
         }
       ]
     }
