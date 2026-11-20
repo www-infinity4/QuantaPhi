@@ -3,27 +3,228 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T14:31:27.791594Z",
+  "checked_at": "2026-11-20T15:01:45.080551Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "riemann hypothesis",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T14:40:00Z",
+      "related_news_urls": [
+        "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4NANYhgyenYpCk17FAZkqiJzmlRHRBu2VUmQtW8Gx7Rbw4Ni3IEXwPQeJQAw",
+      "image_credit": "Scientific American",
+      "news": [
+        {
+          "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/",
+          "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math",
+          "publisher": "Scientific American",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4NANYhgyenYpCk17FAZkqiJzmlRHRBu2VUmQtW8Gx7Rbw4Ni3IEXwPQeJQAw"
+        }
+      ]
+    },
+    {
+      "query": "anthony boyle",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T14:30:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/ninabambysheva/2026/11/19/netflixs-nerdy-romance-between-cryptos-bonnie-and-clyde-is-a-cringeworthy-watch/",
+        "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11",
+        "https://time.com/article/2026/11/19/the-true-story-behind-the-altruists-sam-bankman-fried/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Xgie-J7rNHbo7D3cUIfa26bcb-zNjA8DsjdchICqWG2jpIsIl0VjZQvBw7o",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/ninabambysheva/2026/11/19/netflixs-nerdy-romance-between-cryptos-bonnie-and-clyde-is-a-cringeworthy-watch/",
+          "title": "Netflix’s The Altruists Fixates On The Toxic Romance Behind FTX’s $8 Billion Fraud",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Xgie-J7rNHbo7D3cUIfa26bcb-zNjA8DsjdchICqWG2jpIsIl0VjZQvBw7o"
+        },
+        {
+          "url": "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11",
+          "title": "Where is Caroline Ellison now? She's out of prison and landed a nonprofit job",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKDFP6fEjjKXxYr0mb0l83sp386D8Lfs6Us7pjXOo9eDMRD4NMbBPAWKP2GA"
+        },
+        {
+          "url": "https://time.com/article/2026/11/19/the-true-story-behind-the-altruists-sam-bankman-fried/",
+          "title": "The True Story Behind 'The Altruists' and the FTX Scandal",
+          "publisher": "Time Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-lrv8u3YOs20c2euIqOLkGdOU3kk3HA2E0z1ZF6cZUsb1RWyrhFKYMv3kNqk"
+        }
+      ]
+    },
+    {
+      "query": "vix stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T14:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+        "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/it-s-getting-more-and-more-volatile-for-stocks-ROSooZcFbkLpYiu56lWF"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtFzxamjX-wQ0HKRTmXKVR6XqvfraOA-vFmsBHpI7Z3l3FNs23GkiQ48D6Xxc",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+          "title": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtFzxamjX-wQ0HKRTmXKVR6XqvfraOA-vFmsBHpI7Z3l3FNs23GkiQ48D6Xxc"
+        },
+        {
+          "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
+          "title": "Wall Street's fear gauge touches seven-month high as AI worries mount",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq1ESR5fXEraX1hmJ93NxxWaYFi17ZY7A2XEaEc3LH2vhj_bSFZ2Vm3uUt2og"
+        },
+        {
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/it-s-getting-more-and-more-volatile-for-stocks-ROSooZcFbkLpYiu56lWF",
+          "title": "It’s Getting More and More Volatile for Stocks",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS92LI4aEwMNmHs9GR3K2sah9YJ5TUvK-LC8aAZUJVWKNro75oi2SXuQEfF2k"
+        }
+      ]
+    },
+    {
+      "query": "elizabeth debicki",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T14:20:00Z",
+      "related_news_urls": [
+        "https://www.aboutamazon.com/news/entertainment/james-bond-robert-pattinson-cast-amazon-mgm-film",
+        "https://www.yahoo.com/entertainment/celebrity/articles/robert-pattinson-doesn-t-ooze-130000797.html",
+        "https://www.usatoday.com/story/entertainment/movies/2026/11/19/robert-pattinson-james-bond-pierce-brosnan-reaction/92857817007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjDlUDOkp_5DywnL9gPTE99-T4L_XfStzwzUyyqKLzOGNdlpFF8kLApYDBxzs",
+      "image_credit": "About Amazon",
+      "news": [
+        {
+          "url": "https://www.aboutamazon.com/news/entertainment/james-bond-robert-pattinson-cast-amazon-mgm-film",
+          "title": "Robert Pattinson is the new James Bond",
+          "publisher": "About Amazon",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjDlUDOkp_5DywnL9gPTE99-T4L_XfStzwzUyyqKLzOGNdlpFF8kLApYDBxzs"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/robert-pattinson-doesn-t-ooze-130000797.html",
+          "title": "Robert Pattinson doesn’t ooze the Alpha male sex appeal of Bond",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7Mm7-ZKYEM9dt8i-H0KMjUJu697DNQpQKkdAg-e2-u9ze6q8ZwunT3eQE1KY"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/19/robert-pattinson-james-bond-pierce-brosnan-reaction/92857817007/",
+          "title": "Pierce Brosnan reacts to Robert Pattinson's casting as James Bond",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLJhRw9oinkXMzkTnmiNq6iz4Mi3Q5XdDmZ9QnVDJuBRwuacYeO72w6io24x8"
+        }
+      ]
+    },
+    {
+      "query": "jensen huang workplace culture nvidia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T14:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html",
+        "https://www.wsj.com/opinion/free-expression/jensen-huang-hopes-you-get-flu-and-die-0f1e8a37",
+        "https://nypost.com/2026/11/14/business/how-ex-nvidia-ceo-jensen-huang-threw-tantrums-in-the-office-dressed-down-tech-execs-i-hope-you-die/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSkDMj8UWkWdQzCOb1mAaMsRAnmossr8zIEzG13gWpEWfrLdzPOGJvKO4FaTc",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html",
+          "title": "How Jensen Huang Made Humiliation Routine at Nvidia",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSkDMj8UWkWdQzCOb1mAaMsRAnmossr8zIEzG13gWpEWfrLdzPOGJvKO4FaTc"
+        },
+        {
+          "url": "https://www.wsj.com/opinion/free-expression/jensen-huang-hopes-you-get-flu-and-die-0f1e8a37",
+          "title": "Opinion | Jensen Huang Hopes You Get Flu and Die",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMqvzucvm6e1Grhpor1v7blROX9vZkEoxaZ3xGehkUfJaFsSv0bwG60LahzaE"
+        },
+        {
+          "url": "https://nypost.com/2026/11/14/business/how-ex-nvidia-ceo-jensen-huang-threw-tantrums-in-the-office-dressed-down-tech-execs-i-hope-you-die/",
+          "title": "Exclusive | How ex-Nvidia CEO Jensen Huang threw tantrums in the office, dressed down tech execs: 'I hope you die'",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwsRfk0BYtWTPl-n93TcSuPJrf2iXelrXnoUOMnVPqtyn0Xy_dk-qxwmRdXmY"
+        }
+      ]
+    },
+    {
+      "query": "humble high school",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T14:10:00Z",
+      "related_news_urls": [
+        "https://www.khou.com/article/news/crime/humble-high-school-lockdown-threat/285-c5001838-c314-4e62-b7ee-d79291f6b6fb",
+        "https://abc13.com/post/police-investigating-shooting-outside-mcdonalds-school-humble/20053125/",
+        "https://www.click2houston.com/news/local/2026/11/18/1-injured-1-in-custody-after-confrontation-between-two-juveniles-at-humble-mcdonalds-leads-to-shooting/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS570trvWGlo-Qr_jXxLY2f17ZPqRHLBz5VRMwY3TeaLpleoG5Jwt3CIDPivok",
+      "image_credit": "KHOU",
+      "news": [
+        {
+          "url": "https://www.khou.com/article/news/crime/humble-high-school-lockdown-threat/285-c5001838-c314-4e62-b7ee-d79291f6b6fb",
+          "title": "Police investigate reported threat at Humble High School, constable says",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS570trvWGlo-Qr_jXxLY2f17ZPqRHLBz5VRMwY3TeaLpleoG5Jwt3CIDPivok"
+        },
+        {
+          "url": "https://abc13.com/post/police-investigating-shooting-outside-mcdonalds-school-humble/20053125/",
+          "title": "Person shot inside McDonald's restaurant near school in Humble, police say",
+          "publisher": "ABC13 Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpQOV0I7-Ua8HwQM38qYrM_Mqe-wQ3bVLfuySjU2E34jiNxW8ShQGYCW2pojE"
+        },
+        {
+          "url": "https://www.click2houston.com/news/local/2026/11/18/1-injured-1-in-custody-after-confrontation-between-two-juveniles-at-humble-mcdonalds-leads-to-shooting/",
+          "title": "1 injured, 1 in custody after confrontation between two juveniles at Humble McDonald’s leads to shooting",
+          "publisher": "Click2Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRleq-cwbL1ShcmptylrzjTfqQR2dNk-EZ4Kh1G6OTkD3iXkr1vnDpnthM7-Sk"
+        }
+      ]
+    },
     {
       "query": "melania trump",
       "approx_searches": "1000+",
       "published_at": "2026-11-20T13:50:00Z",
       "related_news_urls": [
-        "https://www.usnews.com/news/best-states/new-york/articles/2026-11-20/melania-trump-gives-a-peek-inside-her-marriage-motherhood-and-more-in-new-series",
-        "https://www.theatlantic.com/newsletters/2026/11/melania-tv-show-melaniaverse/689519/",
-        "https://www.usatoday.com/picture-gallery/entertainment/tv-streaming/2026/11/19/melania-trump-tv-series-red-carpet-premiere-nyc-photos/92830963007/"
+        "https://www.bostonglobe.com/2026/11/20/lifestyle/melania-trump-documentary-series/",
+        "https://www.nytimes.com/2026/11/20/style/melania-trump-series-premiere-nyc.html",
+        "https://www.theatlantic.com/newsletters/2026/11/melania-tv-show-melaniaverse/689519/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPy4i4s3jExOVx0ITKBaGMIQasoN7QT87Vbs9aeA6_bVGYZ4EVHfe8f7eAI3k",
-      "image_credit": "U.S. News & World Report",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRl-OfR1sMCX284KDxIQKO5vLgvGLJzpT9Ut9z4MwSIHrTUEL40ihwhGtz_Yo",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://www.usnews.com/news/best-states/new-york/articles/2026-11-20/melania-trump-gives-a-peek-inside-her-marriage-motherhood-and-more-in-new-series",
-          "title": "Melania Trump Gives a Peek Inside Her Marriage, Motherhood and More in New Series",
-          "publisher": "U.S. News & World Report",
+          "url": "https://www.bostonglobe.com/2026/11/20/lifestyle/melania-trump-documentary-series/",
+          "title": "Melania Trump gives a peek inside her marriage, motherhood, and more in new series",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPy4i4s3jExOVx0ITKBaGMIQasoN7QT87Vbs9aeA6_bVGYZ4EVHfe8f7eAI3k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRl-OfR1sMCX284KDxIQKO5vLgvGLJzpT9Ut9z4MwSIHrTUEL40ihwhGtz_Yo"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/20/style/melania-trump-series-premiere-nyc.html",
+          "title": "Who Turned Out for Melania Trump in New York?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNoXEMm8ZpNLWz-JwQu9Kf6KjKBIS5CEpSoaznIfLCQRhaTXMGIoFVbe70OyQ"
         },
         {
           "url": "https://www.theatlantic.com/newsletters/2026/11/melania-tv-show-melaniaverse/689519/",
@@ -31,13 +232,6 @@
           "publisher": "The Atlantic",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbU9sKgSOHVYX4K4jknPXchrZbhJYpHeO86oJYO3myAcesiwc6eqfo4ZjQ6ac"
-        },
-        {
-          "url": "https://www.usatoday.com/picture-gallery/entertainment/tv-streaming/2026/11/19/melania-trump-tv-series-red-carpet-premiere-nyc-photos/92830963007/",
-          "title": "'Melania, The Series' red carpet: Pam Bondi, Kellyanne Conway and more",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYYTTFVMs0VKEwHiOaGhXb3OzLBmZwtJCeq35SwkcSdbXH-lxXSO7pfRZotHc"
         }
       ]
     },
@@ -47,10 +241,10 @@
       "published_at": "2026-11-20T13:50:00Z",
       "related_news_urls": [
         "https://www.pbs.org/newshour/economy/americans-will-pay-more-for-thanksgiving-dinners-this-year-says-farm-bureau-survey",
-        "https://www.washingtonpost.com/business/2026/11/19/cost-thanksgiving-dinner-rises-first-time-since-2022/",
-        "https://www.axios.com/2026/11/20/thanksgiving-meal-cost-increases-2026"
+        "https://www.axios.com/2026/11/20/thanksgiving-meal-cost-increases-2026",
+        "https://thehill.com/business/6229798-turkey-inflation-holiday-costs/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT77yMPtKNGJhLx8BJf5dQXQMFT_2eZfO_X39qAfrb1-brc1RFpm7itY0y1xP0",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-sfjc0GyWR4gfBQ_1nEF84I_3Qo5hQKyY6EazbmrZnOCC02Cg0V8Wg6gcYz8",
       "image_credit": "PBS",
       "news": [
         {
@@ -58,14 +252,7 @@
           "title": "Americans will pay more for Thanksgiving dinners this year, says Farm Bureau survey",
           "publisher": "PBS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT77yMPtKNGJhLx8BJf5dQXQMFT_2eZfO_X39qAfrb1-brc1RFpm7itY0y1xP0"
-        },
-        {
-          "url": "https://www.washingtonpost.com/business/2026/11/19/cost-thanksgiving-dinner-rises-first-time-since-2022/",
-          "title": "Cost of Thanksgiving dinner rises for first time since 2022",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfD-hwxAx3l4YX0b9nE5V_DcelyKouRbTEKr3yXH0M0BVtD9JvaBaiq-a3MxE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-sfjc0GyWR4gfBQ_1nEF84I_3Qo5hQKyY6EazbmrZnOCC02Cg0V8Wg6gcYz8"
         },
         {
           "url": "https://www.axios.com/2026/11/20/thanksgiving-meal-cost-increases-2026",
@@ -73,6 +260,13 @@
           "publisher": "Axios",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_Q8Hn_xTgSHjwCTuw4tue9srBidlQUkFASVQRLwFANH5-WcFD6kAms5sHvPY"
+        },
+        {
+          "url": "https://thehill.com/business/6229798-turkey-inflation-holiday-costs/",
+          "title": "Thanksgiving dinner will come with higher price tag: Research",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTY0gvICl52EYhSYFxooROWpkGGp4ayjv3-00gvyCr78SWb9_Dn7ij7bCILsE"
         }
       ]
     },
@@ -82,7 +276,7 @@
       "published_at": "2026-11-20T13:50:00Z",
       "related_news_urls": [
         "https://finance.yahoo.com/markets/article/kind-of-cool-early-anthropic-investor-and-actor-ashton-kutcher-celebrates-ipo-200123416.html",
-        "https://www.thetimes.com/us/american-politics/article/ashton-kutcher-billionaire-anthropic-ipo-5mg275l59",
+        "https://www.newsweek.com/ashton-kutchers-anthropic-investment-pushes-him-toward-billionaire-status-12730209",
         "https://www.inc.com/victoria-salves/celebrity-stand-to-gain-anthropic-stock-market-debut/91439736"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7FkhkYteO7e1KPlvJW0RRPBIxj_N3VkV5Wf7igLLamNAy6Eos730797KFQiM",
@@ -96,11 +290,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7FkhkYteO7e1KPlvJW0RRPBIxj_N3VkV5Wf7igLLamNAy6Eos730797KFQiM"
         },
         {
-          "url": "https://www.thetimes.com/us/american-politics/article/ashton-kutcher-billionaire-anthropic-ipo-5mg275l59",
-          "title": "Ashton Kutcher to become billionaire when Anthropic goes public",
-          "publisher": "The Times",
+          "url": "https://www.newsweek.com/ashton-kutchers-anthropic-investment-pushes-him-toward-billionaire-status-12730209",
+          "title": "Ashton Kutcher’s Anthropic Investment Pushes Him Toward Billionaire Status",
+          "publisher": "Newsweek",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBWpnlJauSY8m-bdPZCwMzgKqDkO6Rwz2fP2vT09AtcaG7ox-l7EDRLnTjqUE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE3R7gpDXHr9JCsxo3iAPuyRCaISJ2AdvUicbEx9uc3FlU8kiC6nIZnWB5WkU"
         },
         {
           "url": "https://www.inc.com/victoria-salves/celebrity-stand-to-gain-anthropic-stock-market-debut/91439736",
@@ -143,208 +337,6 @@
           "publisher": "Jewish Insider",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScP5H_3XyRg6D-5AzsQMQ6yP2tDcTVKBWBO7mhxtmBJiIffRCMTkXQTCmq4JA"
-        }
-      ]
-    },
-    {
-      "query": "grandes ligas de béisbol",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T13:40:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/beisbol/nota/_/id/17535872/mlb-2026-pete-rose-indulto-postumo-presidente-trump",
-        "https://www.expressnews.com/sports/article/trump-indulta-p-stumamente-a-pete-rose-tras-ser-22540437.php",
-        "https://www.france24.com/es/minuto-a-minuto/20261119-trump-concede-indulto-p%C3%B3stumo-a-pete-rose-rey-hist%C3%B3rico-de-hits-en-grandes-ligas"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB1JalT3aSRRz9lgl0eYsF_7hbvm6TTYBgV0ki-3DSPGRxlYUX5qgmDVciIqo",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/beisbol/nota/_/id/17535872/mlb-2026-pete-rose-indulto-postumo-presidente-trump",
-          "title": "Pete Rose es indultado póstumamente por el presidente Donald Trump",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB1JalT3aSRRz9lgl0eYsF_7hbvm6TTYBgV0ki-3DSPGRxlYUX5qgmDVciIqo"
-        },
-        {
-          "url": "https://www.expressnews.com/sports/article/trump-indulta-p-stumamente-a-pete-rose-tras-ser-22540437.php",
-          "title": "Trump indulta póstumamente a Pete Rose tras ser reincorporado por MLB",
-          "publisher": "San Antonio Express-News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvKpIj5JhjV_cPDZT1Tpc6mHgu_hUFlNGe3anhOTiBZ8esJWBW4VBSl1xwE2w"
-        },
-        {
-          "url": "https://www.france24.com/es/minuto-a-minuto/20261119-trump-concede-indulto-p%C3%B3stumo-a-pete-rose-rey-hist%C3%B3rico-de-hits-en-grandes-ligas",
-          "title": "Trump concede indulto póstumo a Pete Rose, rey histórico de hits en Grandes Ligas",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyZi4NDgG40p4eVS0eXoFWZKJABknW12pJHCCcCkE6cUoimEw_Z_uuj6avSlk"
-        }
-      ]
-    },
-    {
-      "query": "3x3",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T13:40:00Z",
-      "related_news_urls": [
-        "https://www.chosun.com/english/sports-en/2026/11/20/NRZWHE6JDZALNMJMISDCNYKGZU/",
-        "https://news.sbs.co.kr/english/article.do?news_id=N1008856468",
-        "https://www.starnewskorea.com/en/sports/2026/11/20/2026112015065979514"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbBnbmlp6WTKPWIx3sS5mrQdKbVBk_kFxF7clp7udpJViqQ0JhgyR9yZoaHUU",
-      "image_credit": "조선일보",
-      "news": [
-        {
-          "url": "https://www.chosun.com/english/sports-en/2026/11/20/NRZWHE6JDZALNMJMISDCNYKGZU/",
-          "title": "Suwon KT Selects Lee Dong-geun as First Overall Pick",
-          "publisher": "조선일보",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbBnbmlp6WTKPWIx3sS5mrQdKbVBk_kFxF7clp7udpJViqQ0JhgyR9yZoaHUU"
-        },
-        {
-          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008856468",
-          "title": "\"Hero of 3v3 Gold, No. 1 Pick to KT... 'I Will Die on the Court'\"",
-          "publisher": "SBS 뉴스",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQexrNCpDTaMWoyRdnqmL-CPFurtPMaUluKx_FGSaf8X4A1QkEqRs7NeGB0yGo"
-        },
-        {
-          "url": "https://www.starnewskorea.com/en/sports/2026/11/20/2026112015065979514",
-          "title": "It did not end at 27! Cheers erupted in succession in the fourth round... Sonu, LG, and Samsung made additional selections → KBL draft records most with '30 picks' [Jamsil on-site]",
-          "publisher": "스타뉴스",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG8JP-cORO7ecGQtUElJRWo3Zt_h-A0rhVK4Y9e8VhL2BdeCP63sxVRQO6NXs"
-        }
-      ]
-    },
-    {
-      "query": "carlos alcaraz",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T13:30:00Z",
-      "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/18/alcaraz-vence-a-medvedev-en-las-finales-atp-pese-a-un-problema-fsico-y-avanza-a-semifinales/",
-        "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-flavio-cobolli/2026/11/20/04_0414_20261120_10-directo.html",
-        "https://elpais.com/deportes/tenis/2026-11-19/alcaraz-continua-en-turin-pero-sobre-el-alambre-los-isquios-vuelven-a-azotarle-el-asume-los-riesgos.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--s-sd16jM_OPn5W3wFRkwZwLe2qjVcQ5eYpT0_zDwbjK3Ppr5Kl8QM3PEtA",
-      "image_credit": "Chicago Tribune",
-      "news": [
-        {
-          "url": "https://www.chicagotribune.com/2026/11/18/alcaraz-vence-a-medvedev-en-las-finales-atp-pese-a-un-problema-fsico-y-avanza-a-semifinales/",
-          "title": "Alcaraz vence a Medvedev en las Finales ATP pese a un problema físico y avanza a semifinales",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--s-sd16jM_OPn5W3wFRkwZwLe2qjVcQ5eYpT0_zDwbjK3Ppr5Kl8QM3PEtA"
-        },
-        {
-          "url": "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-flavio-cobolli/2026/11/20/04_0414_20261120_10-directo.html",
-          "title": "Carlos Alcaraz - Flavio Cobolli en directo | Última hora de las ATP Finals, en vivo",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgS2hEeXedabCOc6m9W4hX0EfsuJRbnRe5M-LP98fgfu7RXuPeEigVk9HokQE"
-        },
-        {
-          "url": "https://elpais.com/deportes/tenis/2026-11-19/alcaraz-continua-en-turin-pero-sobre-el-alambre-los-isquios-vuelven-a-azotarle-el-asume-los-riesgos.html",
-          "title": "Alcaraz continúa, pero sobre el alambre: los isquios vuelven a azotarle, él asume los riesgos",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlXQOiVxEYCHKn96bvyzEEaXFM5Epbe-m_XRanAyF22ejOimX2Bm3tpfBG9BY"
-        }
-      ]
-    },
-    {
-      "query": "turkey",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T13:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/20/climate/cop31-talks-fossil-fuels-finance-electrification",
-        "https://www.reuters.com/sustainability/cop/businesses-urge-faster-action-electrification-cop31-enters-final-hours-2026-11-19/",
-        "https://www.theguardian.com/environment/live/2026/nov/19/cop31-climate-turkey-live-news-updates-"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcwqf0edpBj6BOWm4kdQcbPiS3nC2E2QHE9BNZcfRx04-LtqZrjKvUQrptbWE",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/20/climate/cop31-talks-fossil-fuels-finance-electrification",
-          "title": "How two words could derail the world’s biggest climate conference",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcwqf0edpBj6BOWm4kdQcbPiS3nC2E2QHE9BNZcfRx04-LtqZrjKvUQrptbWE"
-        },
-        {
-          "url": "https://www.reuters.com/sustainability/cop/businesses-urge-faster-action-electrification-cop31-enters-final-hours-2026-11-19/",
-          "title": "Businesses urge faster action on electrification as COP31 enters final hours",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq0Gxbgsdea8eoZH--nbfaihsDXa8bInPppTMlFdpk-5M4Ya649xRNB0TPqqI"
-        },
-        {
-          "url": "https://www.theguardian.com/environment/live/2026/nov/19/cop31-climate-turkey-live-news-updates-",
-          "title": "Cop31 as it happened: Fossil fuels dumped from latest draft deal at climate summit",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtNEDXv0n4h5hFdOdx8aCf8kw2UkcDAK_dBKpKaQg2-xICxsZ8QgzVyxj7YYA"
-        }
-      ]
-    },
-    {
-      "query": "walton goggins",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T13:30:00Z",
-      "related_news_urls": [
-        "https://www.gamesradar.com/entertainment/sci-fi-shows/walton-goggins-doesnt-know-if-fallout-will-come-back-for-season-4-but-is-confident-season-3-remains-true-to-the-sacred-nature-of-this-game/",
-        "https://www.pcgamer.com/movies-tv/not-even-walton-goggins-knows-if-fallout-will-have-a-season-4-if-we-get-the-opportunity-to-come-back-for-season-four-that-would-continue-to-honor-how-sacred-this-is-to-people/",
-        "https://www.cbr.com/fallout-season-4-disappointing-update-walton-goggins/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFhDybhQaYvtAwPXdVjAuns7gk0EBEaSVQ_xujsoWes3hA9SAmy8jL4HTX1F8",
-      "image_credit": "GamesRadar+",
-      "news": [
-        {
-          "url": "https://www.gamesradar.com/entertainment/sci-fi-shows/walton-goggins-doesnt-know-if-fallout-will-come-back-for-season-4-but-is-confident-season-3-remains-true-to-the-sacred-nature-of-this-game/",
-          "title": "Walton Goggins doesn't know if Fallout will \"come back for season 4\" but is confident season 3 remains true to \"the sacred nature of this game\"",
-          "publisher": "GamesRadar+",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFhDybhQaYvtAwPXdVjAuns7gk0EBEaSVQ_xujsoWes3hA9SAmy8jL4HTX1F8"
-        },
-        {
-          "url": "https://www.pcgamer.com/movies-tv/not-even-walton-goggins-knows-if-fallout-will-have-a-season-4-if-we-get-the-opportunity-to-come-back-for-season-four-that-would-continue-to-honor-how-sacred-this-is-to-people/",
-          "title": "Not even Walton Goggins knows if Fallout will have a Season 4: 'if we get the opportunity to come back for season four, that would continue to honor how sacred this is to people'",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlc1soLi9z-PcgAdwm6zo54phlUzzgiqGIxj9_k8Rhyk3ODWDBoBjrPNlkkEA"
-        },
-        {
-          "url": "https://www.cbr.com/fallout-season-4-disappointing-update-walton-goggins/",
-          "title": "Fallout Season 4 Gets Disappointing Update After Walton Goggins' Cryptic Goodbye",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsXnlcsf4cEExvUwThIJ4zcTdPfwDwRdpzdpnSMtTPEGEhN5fVxUA9TtWpvuI"
-        }
-      ]
-    },
-    {
-      "query": "trinity rodman",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T13:30:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/picture-gallery/sports/soccer/uswnt/2026/11/20/trinity-rodman-soccer-career-uswnt-photos/92868850007/",
-        "https://www.cbssports.com/soccer/news/trinity-rodmans-washington-spirit-nwsl-final-fun/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWFbLZMRgSPlsB8wsUppotvIOXwD5I4UQnz_OrNi5vrbrZgMXciC_YavU2pr0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/picture-gallery/sports/soccer/uswnt/2026/11/20/trinity-rodman-soccer-career-uswnt-photos/92868850007/",
-          "title": "Trinity Rodman’s rise from soccer prodigy to USWNT star",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6vuT8f9Wh955pqd9bI7lppBwdLbLd_FglsWbmj6rdqgdRh1IUJ5B1N_e1Z3k"
-        },
-        {
-          "url": "https://www.cbssports.com/soccer/news/trinity-rodmans-washington-spirit-nwsl-final-fun/",
-          "title": "Trinity Rodman's non-negotiable for Washington Spirit: 'I wouldn't be playing soccer if it wasn't fun'",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Y-KP0EE0-nJItk6HeEoFJMG8Gr2AUTK9Y9mewemTwgDN_3T56jBHH9eQJn4"
         }
       ]
     }
