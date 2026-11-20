@@ -3,75 +3,28 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T15:01:45.080551Z",
+  "checked_at": "2026-11-20T15:31:22.735883Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "riemann hypothesis",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T14:40:00Z",
+      "query": "vix",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T14:50:00Z",
       "related_news_urls": [
-        "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4NANYhgyenYpCk17FAZkqiJzmlRHRBu2VUmQtW8Gx7Rbw4Ni3IEXwPQeJQAw",
-      "image_credit": "Scientific American",
-      "news": [
-        {
-          "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/",
-          "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math",
-          "publisher": "Scientific American",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4NANYhgyenYpCk17FAZkqiJzmlRHRBu2VUmQtW8Gx7Rbw4Ni3IEXwPQeJQAw"
-        }
-      ]
-    },
-    {
-      "query": "anthony boyle",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T14:30:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/ninabambysheva/2026/11/19/netflixs-nerdy-romance-between-cryptos-bonnie-and-clyde-is-a-cringeworthy-watch/",
-        "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11",
-        "https://time.com/article/2026/11/19/the-true-story-behind-the-altruists-sam-bankman-fried/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Xgie-J7rNHbo7D3cUIfa26bcb-zNjA8DsjdchICqWG2jpIsIl0VjZQvBw7o",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/ninabambysheva/2026/11/19/netflixs-nerdy-romance-between-cryptos-bonnie-and-clyde-is-a-cringeworthy-watch/",
-          "title": "Netflix’s The Altruists Fixates On The Toxic Romance Behind FTX’s $8 Billion Fraud",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Xgie-J7rNHbo7D3cUIfa26bcb-zNjA8DsjdchICqWG2jpIsIl0VjZQvBw7o"
-        },
-        {
-          "url": "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11",
-          "title": "Where is Caroline Ellison now? She's out of prison and landed a nonprofit job",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKDFP6fEjjKXxYr0mb0l83sp386D8Lfs6Us7pjXOo9eDMRD4NMbBPAWKP2GA"
-        },
-        {
-          "url": "https://time.com/article/2026/11/19/the-true-story-behind-the-altruists-sam-bankman-fried/",
-          "title": "The True Story Behind 'The Altruists' and the FTX Scandal",
-          "publisher": "Time Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-lrv8u3YOs20c2euIqOLkGdOU3kk3HA2E0z1ZF6cZUsb1RWyrhFKYMv3kNqk"
-        }
-      ]
-    },
-    {
-      "query": "vix stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T14:30:00Z",
-      "related_news_urls": [
+        "https://seekingalpha.com/news/4675180-stocks-jump-more-than-10-percent-six-months-after-the-vix-reaches-28minus-33?utm_source=tradingview&utm_medium=referral&feed_item_type=news",
         "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
-        "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
-        "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/it-s-getting-more-and-more-volatile-for-stocks-ROSooZcFbkLpYiu56lWF"
+        "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtFzxamjX-wQ0HKRTmXKVR6XqvfraOA-vFmsBHpI7Z3l3FNs23GkiQ48D6Xxc",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTl7WjnVWAD4IQj1cOaR_4PC2mTJXr61WINdQ05PsaedrX51J7c39h-BKNeG-o",
+      "image_credit": "Seeking Alpha",
       "news": [
+        {
+          "url": "https://seekingalpha.com/news/4675180-stocks-jump-more-than-10-percent-six-months-after-the-vix-reaches-28minus-33?utm_source=tradingview&utm_medium=referral&feed_item_type=news",
+          "title": "Stocks jump more than 10% six months after the VIX reaches 28-33",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTl7WjnVWAD4IQj1cOaR_4PC2mTJXr61WINdQ05PsaedrX51J7c39h-BKNeG-o"
+        },
         {
           "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
           "title": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
@@ -85,13 +38,146 @@
           "publisher": "Reuters",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq1ESR5fXEraX1hmJ93NxxWaYFi17ZY7A2XEaEc3LH2vhj_bSFZ2Vm3uUt2og"
+        }
+      ]
+    },
+    {
+      "query": "presumed innocent",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T14:50:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/presumed-innocent-season-2-release-date-photos-teaser-1237229678/",
+        "https://variety.com/2026/tv/news/presumed-innocent-season-2-release-date-trailer-1236953834/",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/presumed-innocent-gets-season-2-140000049.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNGw2-DCXatD581r1LRP1fOfjltwIFB6JvjiE6reSbi9bhPX55lY3wDNEHVQ4",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/presumed-innocent-season-2-release-date-photos-teaser-1237229678/",
+          "title": "'Presumed Innocent' Sets Season 2 Release Date, Unveils First Photos",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNGw2-DCXatD581r1LRP1fOfjltwIFB6JvjiE6reSbi9bhPX55lY3wDNEHVQ4"
         },
         {
-          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/it-s-getting-more-and-more-volatile-for-stocks-ROSooZcFbkLpYiu56lWF",
-          "title": "It’s Getting More and More Volatile for Stocks",
-          "publisher": "Barron's",
+          "url": "https://variety.com/2026/tv/news/presumed-innocent-season-2-release-date-trailer-1236953834/",
+          "title": "'Presumed Innocent' Season 2 Release Date, Trailer Dropped by Apple",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS92LI4aEwMNmHs9GR3K2sah9YJ5TUvK-LC8aAZUJVWKNro75oi2SXuQEfF2k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAPlmzVdxag26x0jsCoDaepMbA9Gwl-3hsSopbPt1xpdQ-3GUFDjiXmrdNyLY"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/presumed-innocent-gets-season-2-140000049.html",
+          "title": "Presumed Innocent Gets Season 2 Premiere Date At Apple TV — Watch Rachel Brosnahan And Matthew Rhys Face Off In Court In A New Teaser",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoyG1yOUctHdwPaDzFcp8KRaMT_qvt9FsKQk-9_zXIBpwz_NmpPEtSdYbBYoo"
+        }
+      ]
+    },
+    {
+      "query": "riemann hypothesis",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T14:40:00Z",
+      "related_news_urls": [
+        "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/",
+        "https://officechai.com/ai/claimed-riemann-hypothesis-proof-made-with-claude-appears-on-anthropic-mathematician-levent-alpoges-website/",
+        "https://www.newscientist.com/article/2600134-anthropic-mathematician-claims-ai-assisted-proof-of-the-riemann-hypothesis/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4NANYhgyenYpCk17FAZkqiJzmlRHRBu2VUmQtW8Gx7Rbw4Ni3IEXwPQeJQAw",
+      "image_credit": "Scientific American",
+      "news": [
+        {
+          "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/",
+          "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math",
+          "publisher": "Scientific American",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4NANYhgyenYpCk17FAZkqiJzmlRHRBu2VUmQtW8Gx7Rbw4Ni3IEXwPQeJQAw"
+        },
+        {
+          "url": "https://officechai.com/ai/claimed-riemann-hypothesis-proof-made-with-claude-appears-on-anthropic-mathematician-levent-alpoges-website/",
+          "title": "Claimed Riemann Hypothesis Proof Made With Claude Appears On Anthropic Mathematician Levent Alpöge's Website",
+          "publisher": "OfficeChai",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJgBI8lq62pXCg-9ylkkbTWpbduHEUpBcm3CuKmpa1HxcwUsVgw1pkGCH280E"
+        },
+        {
+          "url": "https://www.newscientist.com/article/2600134-anthropic-mathematician-claims-ai-assisted-proof-of-the-riemann-hypothesis/",
+          "title": "Anthropic mathematician claims AI-assisted proof of the Riemann hypothesis",
+          "publisher": "New Scientist",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9rGhxOYkiq6ZCc5p2l0QSD2nMJ8VWtX0HxzT87no-7k_k5uNfhNzaeLp4-4U"
+        }
+      ]
+    },
+    {
+      "query": "anthony boyle",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T14:30:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/ninabambysheva/2026/11/19/netflixs-nerdy-romance-between-cryptos-bonnie-and-clyde-is-a-cringeworthy-watch/",
+        "https://www.today.com/video/anthony-boyle-on-playing-sam-bankman-fried-in-the-altruists-273892421598",
+        "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Xgie-J7rNHbo7D3cUIfa26bcb-zNjA8DsjdchICqWG2jpIsIl0VjZQvBw7o",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/ninabambysheva/2026/11/19/netflixs-nerdy-romance-between-cryptos-bonnie-and-clyde-is-a-cringeworthy-watch/",
+          "title": "Netflix’s The Altruists Fixates On The Toxic Romance Behind FTX’s $8 Billion Fraud",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Xgie-J7rNHbo7D3cUIfa26bcb-zNjA8DsjdchICqWG2jpIsIl0VjZQvBw7o"
+        },
+        {
+          "url": "https://www.today.com/video/anthony-boyle-on-playing-sam-bankman-fried-in-the-altruists-273892421598",
+          "title": "Anthony Boyle Talks Series That Takes on Real-Life $8B Scandal",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrvWXIjq8FqbUhNMGD8wq9CQ7BlFRFK-7qL8oOCZjvtHaMmY9Y5w31pyXNP2E"
+        },
+        {
+          "url": "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11",
+          "title": "Where is Caroline Ellison now? She's out of prison and landed a nonprofit job",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKDFP6fEjjKXxYr0mb0l83sp386D8Lfs6Us7pjXOo9eDMRD4NMbBPAWKP2GA"
+        }
+      ]
+    },
+    {
+      "query": "vix stock",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-20T14:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-drops-after-first-day-of-trading-143300513.html",
+        "https://www.detroitnews.com/story/business/2026/11/20/stocks-wall-street/92876492007/",
+        "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqKz7cl7HYoveJwuNhTiUCLGJVj6OwtH052_7CTQJcRRt-qU0JmdQKenoGGkk",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-drops-after-first-day-of-trading-143300513.html",
+          "title": "Anthropic IPO live: Anthropic stock drops after first day of trading",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqKz7cl7HYoveJwuNhTiUCLGJVj6OwtH052_7CTQJcRRt-qU0JmdQKenoGGkk"
+        },
+        {
+          "url": "https://www.detroitnews.com/story/business/2026/11/20/stocks-wall-street/92876492007/",
+          "title": "Nasdaq falls 1% at open as Anthropic fails to steady AI trade",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRen15lw7qJ6g_U5kf280vnTrtYvBn2BHEv91DATbBJinl6rWXcopT9x_2OFHg"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+          "title": "Nasdaq drops as Anthropic falls, Dow bounces after nearing correction territory: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQalLiU4QelgVNjLH3yHAzlss2RqVgdRQwaMgDbaF9gLfIwnuXqf-_l33_1c8"
         }
       ]
     },
@@ -101,8 +187,8 @@
       "published_at": "2026-11-20T14:20:00Z",
       "related_news_urls": [
         "https://www.aboutamazon.com/news/entertainment/james-bond-robert-pattinson-cast-amazon-mgm-film",
-        "https://www.yahoo.com/entertainment/celebrity/articles/robert-pattinson-doesn-t-ooze-130000797.html",
-        "https://www.usatoday.com/story/entertainment/movies/2026/11/19/robert-pattinson-james-bond-pierce-brosnan-reaction/92857817007/"
+        "https://www.yahoo.com/entertainment/videos/pierce-brosnan-reacts-robert-pattinson-140824645.html",
+        "https://people.com/christopher-nolan-jokes-robert-pattinson-is-most-cowardly-james-bond-ever-12262130"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjDlUDOkp_5DywnL9gPTE99-T4L_XfStzwzUyyqKLzOGNdlpFF8kLApYDBxzs",
       "image_credit": "About Amazon",
@@ -115,18 +201,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjDlUDOkp_5DywnL9gPTE99-T4L_XfStzwzUyyqKLzOGNdlpFF8kLApYDBxzs"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/robert-pattinson-doesn-t-ooze-130000797.html",
-          "title": "Robert Pattinson doesn’t ooze the Alpha male sex appeal of Bond",
+          "url": "https://www.yahoo.com/entertainment/videos/pierce-brosnan-reacts-robert-pattinson-140824645.html",
+          "title": "Pierce Brosnan reacts to Robert Pattinson taking over as James Bond",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7Mm7-ZKYEM9dt8i-H0KMjUJu697DNQpQKkdAg-e2-u9ze6q8ZwunT3eQE1KY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMnsHItePbXCpc8E470HMq0H3g_jjaDuQsuoFd7cungZa5eIYk6Cpw3z6_SjQ"
         },
         {
-          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/19/robert-pattinson-james-bond-pierce-brosnan-reaction/92857817007/",
-          "title": "Pierce Brosnan reacts to Robert Pattinson's casting as James Bond",
-          "publisher": "USA Today",
+          "url": "https://people.com/christopher-nolan-jokes-robert-pattinson-is-most-cowardly-james-bond-ever-12262130",
+          "title": "Christopher Nolan Jokes How Robert Pattinson’s Odyssey Character Would Fare as James Bond",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLJhRw9oinkXMzkTnmiNq6iz4Mi3Q5XdDmZ9QnVDJuBRwuacYeO72w6io24x8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvR0y8SCgFTkUy8tlAn6SeIOwV1EeLEOVtDAKNg4Em9BgOiZKh-kUe68BllEE"
         }
       ]
     },
@@ -166,78 +252,8 @@
       ]
     },
     {
-      "query": "humble high school",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T14:10:00Z",
-      "related_news_urls": [
-        "https://www.khou.com/article/news/crime/humble-high-school-lockdown-threat/285-c5001838-c314-4e62-b7ee-d79291f6b6fb",
-        "https://abc13.com/post/police-investigating-shooting-outside-mcdonalds-school-humble/20053125/",
-        "https://www.click2houston.com/news/local/2026/11/18/1-injured-1-in-custody-after-confrontation-between-two-juveniles-at-humble-mcdonalds-leads-to-shooting/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS570trvWGlo-Qr_jXxLY2f17ZPqRHLBz5VRMwY3TeaLpleoG5Jwt3CIDPivok",
-      "image_credit": "KHOU",
-      "news": [
-        {
-          "url": "https://www.khou.com/article/news/crime/humble-high-school-lockdown-threat/285-c5001838-c314-4e62-b7ee-d79291f6b6fb",
-          "title": "Police investigate reported threat at Humble High School, constable says",
-          "publisher": "KHOU",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS570trvWGlo-Qr_jXxLY2f17ZPqRHLBz5VRMwY3TeaLpleoG5Jwt3CIDPivok"
-        },
-        {
-          "url": "https://abc13.com/post/police-investigating-shooting-outside-mcdonalds-school-humble/20053125/",
-          "title": "Person shot inside McDonald's restaurant near school in Humble, police say",
-          "publisher": "ABC13 Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpQOV0I7-Ua8HwQM38qYrM_Mqe-wQ3bVLfuySjU2E34jiNxW8ShQGYCW2pojE"
-        },
-        {
-          "url": "https://www.click2houston.com/news/local/2026/11/18/1-injured-1-in-custody-after-confrontation-between-two-juveniles-at-humble-mcdonalds-leads-to-shooting/",
-          "title": "1 injured, 1 in custody after confrontation between two juveniles at Humble McDonald’s leads to shooting",
-          "publisher": "Click2Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRleq-cwbL1ShcmptylrzjTfqQR2dNk-EZ4Kh1G6OTkD3iXkr1vnDpnthM7-Sk"
-        }
-      ]
-    },
-    {
-      "query": "melania trump",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T13:50:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/20/lifestyle/melania-trump-documentary-series/",
-        "https://www.nytimes.com/2026/11/20/style/melania-trump-series-premiere-nyc.html",
-        "https://www.theatlantic.com/newsletters/2026/11/melania-tv-show-melaniaverse/689519/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRl-OfR1sMCX284KDxIQKO5vLgvGLJzpT9Ut9z4MwSIHrTUEL40ihwhGtz_Yo",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/20/lifestyle/melania-trump-documentary-series/",
-          "title": "Melania Trump gives a peek inside her marriage, motherhood, and more in new series",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRl-OfR1sMCX284KDxIQKO5vLgvGLJzpT9Ut9z4MwSIHrTUEL40ihwhGtz_Yo"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/20/style/melania-trump-series-premiere-nyc.html",
-          "title": "Who Turned Out for Melania Trump in New York?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNoXEMm8ZpNLWz-JwQu9Kf6KjKBIS5CEpSoaznIfLCQRhaTXMGIoFVbe70OyQ"
-        },
-        {
-          "url": "https://www.theatlantic.com/newsletters/2026/11/melania-tv-show-melaniaverse/689519/",
-          "title": "Welcome to the Melaniaverse",
-          "publisher": "The Atlantic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbU9sKgSOHVYX4K4jknPXchrZbhJYpHeO86oJYO3myAcesiwc6eqfo4ZjQ6ac"
-        }
-      ]
-    },
-    {
       "query": "thanksgiving",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-20T13:50:00Z",
       "related_news_urls": [
         "https://www.pbs.org/newshour/economy/americans-will-pay-more-for-thanksgiving-dinners-this-year-says-farm-bureau-survey",
@@ -267,6 +283,41 @@
           "publisher": "The Hill",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTY0gvICl52EYhSYFxooROWpkGGp4ayjv3-00gvyCr78SWb9_Dn7ij7bCILsE"
+        }
+      ]
+    },
+    {
+      "query": "melania trump",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T13:50:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/melania-trump-streaming-series-life-02e5c9ec1a482ea68094c2268a42856a",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/melania-the-series-takeaways-melania-trump-donald-trump-barron-trump/92729512007/",
+        "https://www.theatlantic.com/newsletters/2026/11/melania-tv-show-melaniaverse/689519/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_LcC4kmimWjk8Tz0dhDfsl7bJ_UBbbaXqjPDWWnvqC3p3cfuvlNWPax5wjEs",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/melania-trump-streaming-series-life-02e5c9ec1a482ea68094c2268a42856a",
+          "title": "Melania Trump gives a peek inside her marriage, motherhood and more in new series",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_LcC4kmimWjk8Tz0dhDfsl7bJ_UBbbaXqjPDWWnvqC3p3cfuvlNWPax5wjEs"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/melania-the-series-takeaways-melania-trump-donald-trump-barron-trump/92729512007/",
+          "title": "What Melania Trump reveals about Donald Trump, raising son Barron in new series",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSloa-dnzGFneV1XGM53-15Py15y0aO6y17GZPv6ie6ewMNuINz-DFPQ4iyluE"
+        },
+        {
+          "url": "https://www.theatlantic.com/newsletters/2026/11/melania-tv-show-melaniaverse/689519/",
+          "title": "Welcome to the Melaniaverse",
+          "publisher": "The Atlantic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbU9sKgSOHVYX4K4jknPXchrZbhJYpHeO86oJYO3myAcesiwc6eqfo4ZjQ6ac"
         }
       ]
     },
@@ -302,41 +353,6 @@
           "publisher": "Inc.com",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSev0EzcsW7FQtswqCCSj-qzAnkPQSjOgh-kBy5zfjvZ8P7_72NWj6NgOKg-ew"
-        }
-      ]
-    },
-    {
-      "query": "abdul el-sayed u.s. senate",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T13:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/20/el-sayed-trump-israel-aid",
-        "https://www.timesofisrael.com/us-senator-elect-el-sayed-says-israel-should-not-identify-with-one-faith-or-culture/",
-        "https://jewishinsider.com/2026/11/el-sayed-says-israel-should-not-identify-with-a-faith-pushes-back-on-antisemitism-concerns/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHih9MuNYRXWDXzdl4KN6H49LnCY5dWdWPf6rfHsMZBniVYNhMhrveaT9G1xc",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/20/el-sayed-trump-israel-aid",
-          "title": "‘I agree with the president’: incoming senator Abdul El-Sayed seeks to help Trump end military aid to Israel",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHih9MuNYRXWDXzdl4KN6H49LnCY5dWdWPf6rfHsMZBniVYNhMhrveaT9G1xc"
-        },
-        {
-          "url": "https://www.timesofisrael.com/us-senator-elect-el-sayed-says-israel-should-not-identify-with-one-faith-or-culture/",
-          "title": "US Senator-elect El-Sayed says Israel should not identify with one faith or culture",
-          "publisher": "The Times of Israel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6EYrkJka8IUtdfHIv1MMFmKS2ZfYcO9FP1Id7L3e7fQ2Mb0ZaspAx-fycOnE"
-        },
-        {
-          "url": "https://jewishinsider.com/2026/11/el-sayed-says-israel-should-not-identify-with-a-faith-pushes-back-on-antisemitism-concerns/",
-          "title": "El-Sayed says Israel should not identify with a faith, pushes back on antisemitism concerns",
-          "publisher": "Jewish Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScP5H_3XyRg6D-5AzsQMQ6yP2tDcTVKBWBO7mhxtmBJiIffRCMTkXQTCmq4JA"
         }
       ]
     }
