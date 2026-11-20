@@ -1,7 +1,7 @@
 ---
 issue: 1993
 project: "Schools, daycare and babysitting licensed-photo Oracle Quick Card"
-state: source_tested
+state: ci_pending
 dot: "🟡"
 progress_percent: 55
 progress_basis: "Existing Oracle viewer integration, static licensed catalog, manual category/photo navigation and Node/Android tests authored; exact-head CI, independent review, merge, Cloudflare browser and physical Android acceptance not complete."
@@ -14,7 +14,7 @@ task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
 branch: feat/education-care-gallery-20261119
-pr: null
+pr: 1994
 merged: false
 deployed: false
 live_verified: false
@@ -22,6 +22,8 @@ blocker: "CI and independent review pending. User photos include identifiable ch
 next_action: "Verify exact-head GitHub Actions Node and Android-width browser results; repair any failures, obtain independent review, guarded merge then live/Android readback."
 ---
 # Schools / daycare / babysitting photo gallery · November 19, 2026
+
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1993
 
 Owner request: public Oracle carousel includes school, daycare and babysitter-related photographic Quick Cards. Ten example images supplied in conversation are **reference only**, not authorized public assets.
 
