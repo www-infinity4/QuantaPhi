@@ -1,30 +1,37 @@
-# Open Browser Bridge (self-hosted alternative)
+# Infinity Open Browser Bridge · isolated Tor research transport
 
-This is an original integration scaffold, **not TinyFish source code**. It uses Playwright (Apache-2.0) for user-authorized browser tasks. No paid browser API required. The machine running it still needs Node.js, Chromium, and hosting resources.
+This is an **owner-controlled browser automation bridge**, not the Tor Project's Firefox-derived Tor Browser and not a TinyFish source-code copy. The original Playwright URL/screenshot tool still exists; this branch adds an opt-in **Tor SOCKS5 transport and kernel-isolated Docker topology** for lawful, source-authorized public research. It does not provide Tor Browser's fingerprinting protections or a public interactive GUI. No paid browser API is required, but the Linux host must provide Docker and enough memory for Chromium.
 
-## Safety model
-- Browser runs locally/on an owner-controlled worker, never inside public Quick Card JavaScript.
-- Login secrets, cookies, storage state and screenshots stay on the owner's machine; never commit them to Git.
-- Every job has an explicit allowed hostname, action, and deadline. No anti-bot bypass, CAPTCHA evasion, rate-limit circumvention, or covert scraping.
-- Public-facing posting or account changes require a separate owner approval and provider-compliant API flow. X posting must use the official X API, **not** browser automation.
-- Do not automatically submit developer terms, payments, account changes or irreversible actions.
+## Network isolation design
 
-## Security limitation
+The browser service is connected **only** to a Docker `internal: true` network (`172.30.211.0/24`). Docker is expected to block that network's direct access to external networks. The separate Tor service joins both that internal network and an outbound bridge, and exposes SOCKS5 **only at `172.30.211.2:9050`** to the browser's fixed IP `172.30.211.3`. Neither container publishes host ports. Browser TCP cannot directly reach the public Internet or host metadata; the Tor SOCKS endpoint is the intended egress. The Tor service's outbound network is not attached to the browser.
 
-The exact-hostname HTTPS policy rejects alternate ports, loopback literals and local hostnames. The DNS preflight and per-request check **also reject private, loopback, link-local, reserved, mixed and failed DNS answers**, and Chromium's sandbox is requested. The request policy is installed at **browser context** scope before any page is opened, so the first navigation of popup/new-tab pages is also checked; page-only interception misses that initial request. The screenshot-only scaffold now closes **all WebSocket connections** at browser-context scope, before page creation; Playwright's HTTP route handler alone cannot intercept ws/wss. A missing WebSocket interception API fails closed. These checks are defense in depth, **not complete DNS-rebinding/SSRF protection**: Chromium may resolve a hostname again after Node's check, and network requests can occur outside route interception. Use an independently verified network egress firewall/namespace with private ranges denied and DNS pinning or equivalent protections before any authenticated or multi-tenant use. Chromium sandbox requires a supported non-root host with user namespaces; do not disable it to make a broken host work. No website login, paid service, X posting or provider approval is included.
+Defenses in depth: non-root process, Chromium sandbox (fails closed if unavailable), Playwright's upstream default-deny seccomp profile with user namespace syscalls, dropped Linux capabilities, read-only root, `no-new-privileges`, temporary writable filesystems and private receipt volume. The browser's direct DNS resolver is set to loopback; Chrome routes proxied domain resolution through Tor SOCKS5. Before launching, the code checks both Linux route tables for default routes and rejects a missing isolation signal or altered Tor proxy endpoint. HTTP/WebSocket URL filters operate at browser-context scope; metadata and local IPs are never allowed destinations. HTTP is accepted only for explicitly allowlisted v3 `.onion` services in Tor mode. Ordinary Internet pages require HTTPS and an exact host allowlist. `.onion.ly` gateways are not treated as onion services.
 
-## Deployment acceptance checklist
+Security limits: an untrusted host administrator or compromised Tor sidecar can violate network boundaries. The image is not a substitute for the Tor Project's browser protections; it does not authenticate site claims or identify Tor service operators. The fixed `172.30.211.0/24` subnet must not collide with another local network. Do not attach the browser container to a normal bridge network or grant `NET_ADMIN`/`SYS_ADMIN`; do not disable Chromium's sandbox to make a failing environment pass.
 
-Before enabling authenticated or multi-tenant use, a reviewer independent of the author must record evidence that the browser process is non-root and sandboxed, and that host-level egress isolation blocks loopback, RFC1918, link-local, metadata endpoints, IPv6 local ranges and DNS rebinding even when Chromium resolves independently of Node. Run a real Chromium integration test against a controlled DNS-rebinding target, including popup navigation and WebSocket attempts; record observed network connections and failure results. Reviewers must verify screenshot and receipt files cannot expose credentials or other users' sessions, and that the worker has no wallet, GitHub or Cloudflare write credentials. Do not mark this checklist complete from unit tests or green CI alone. Obtain separate approval before provider account actions.
+The seccomp profile is sourced from [Microsoft Playwright's upstream file](https://github.com/microsoft/playwright/blob/main/utils/docker/seccomp_profile.json) at blob `fddc05fb520affb145404e6f6f647ca96af8087d`. Review updates before changing it. Docker's internal-network isolation contract is documented at https://docs.docker.com/reference/compose-file/networks/ .
 
-## Run
+## Run on a Linux host with Docker Compose
+
 ```sh
 cd tools/open-browser-bridge
-npm install
-npx playwright install chromium
-node browser-bridge.mjs https://example.com
+BROWSER_ALLOWED_HOSTS=example.com docker compose -f compose.tor.yml build tor browser
+docker compose -f compose.tor.yml up -d tor
+BROWSER_ALLOWED_HOSTS=example.com docker compose -f compose.tor.yml run --rm --no-deps browser network-probe.mjs
+BROWSER_ALLOWED_HOSTS=example.com docker compose -f compose.tor.yml run --rm --no-deps browser chromium-smoke.mjs
+BROWSER_ALLOWED_HOSTS=example.com docker compose -f compose.tor.yml run --rm --no-deps browser browser-bridge.mjs https://example.com
+docker compose -f compose.tor.yml down
 ```
 
-Run policy tests without installing browser packages: `node --test tools/open-browser-bridge/*.test.mjs` from the repository root. The dedicated GitHub workflow runs URL, DNS and context-routing tests and syntax checks without using paid browser services.
+For an authorized onion target, explicitly add its **complete, valid v3 `<56 characters>.onion` hostname** to `BROWSER_ALLOWED_HOSTS` and use its direct `http://` or `https://` URL, not a clearnet gateway. If the Tor daemon has not bootstrapped, navigation may fail and must not fall back to direct network access.
 
-This first milestone opens an allowlisted page, prints its title and saves a screenshot locally. A future owner-authenticated Bubbles job runner can add consented workflows, persistent session encryption, signed receipts, and a Quick Card UI. This scaffold is **not deployed**.
+The browser prints a bounded JSON receipt with the URL, title, selected transport and saved screenshot path. Screenshots are held in the private `browser_receipts` Docker volume and are not publicly served or copied into Git. The screenshot content may be sensitive, so use owner-authorized test pages only. `docker compose down -v` permanently removes these named volumes, including Tor state and receipts.
+
+The original direct-mode command (`node browser-bridge.mjs https://example.com`) is a developer-only scaffold; its Node DNS checks do **not** constitute a network sandbox. Never use that mode with untrusted websites, credentials, or multi-tenant workloads.
+
+## Test and release gates
+
+`node --test tools/open-browser-bridge/*.test.mjs` covers URL, DNS, context, Tor route, and Compose policy. GitHub Actions `open-browser-bridge-policy.yml` also builds real Docker services and runs `network-probe.mjs` (direct IPv4/IPv6/private/metadata socket attempts) and `chromium-smoke.mjs` (non-root sandboxed Chromium plus blocked metadata navigation). These tests must be **observed passing on the exact current head**, not merely defined.
+
+An independently approved security review, successful real Tor stream/circuit acceptance, signed owner-scoped job sessions, screenshot/session privacy checks, verified deployment and physical Android acceptance remain distinct requirements. No Bubbles execution adapter or APK is connected by this source patch. An official Tor Browser fork would require the Tor Project's separate Firefox/GeckoView source and release build system (https://gitlab.torproject.org/tpo/applications/tor-browser-build), not the Chromium bridge.
