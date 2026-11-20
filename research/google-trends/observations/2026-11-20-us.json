@@ -3,27 +3,167 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T16:31:02.629420Z",
+  "checked_at": "2026-11-20T17:01:08.911939Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "when we were young festival 2027",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T16:40:00Z",
+      "related_news_urls": [
+        "https://lasvegassun.com/news/2026/nov/17/blink-182-pierce-the-veil-to-headline-when-we-were/",
+        "https://nypost.com/2026/11/18/ticket-sales/when-we-were-young-festival-announces-2027-lineup-see-blink-182-limp-bizkit/",
+        "https://www.casino.org/news/vegas-music-news-when-we-were-young-to-return-t-mobile-arena-books-animated-k-pop-band-first-vegas-residency-for-a-former-beatle/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlRpYfrOgkihL9EKeuUmUn72EXIZG_SpJZfjtAMO3JfozXDsNDbDMKtc27lqk",
+      "image_credit": "Las Vegas Sun",
+      "news": [
+        {
+          "url": "https://lasvegassun.com/news/2026/nov/17/blink-182-pierce-the-veil-to-headline-when-we-were/",
+          "title": "Blink-182, Pierce the Veil to headline When We Were Young in 2027",
+          "publisher": "Las Vegas Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlRpYfrOgkihL9EKeuUmUn72EXIZG_SpJZfjtAMO3JfozXDsNDbDMKtc27lqk"
+        },
+        {
+          "url": "https://nypost.com/2026/11/18/ticket-sales/when-we-were-young-festival-announces-2027-lineup-see-blink-182-limp-bizkit/",
+          "title": "When We Were Young Festival announces 2027 lineup: See Blink-182, Limp Bizkit",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGC2Z-XSiCzcuINW9AGtt49pap0UTJeRhWOzEnMP5RBcyYqm5AcEysJRpSHh4"
+        },
+        {
+          "url": "https://www.casino.org/news/vegas-music-news-when-we-were-young-to-return-t-mobile-arena-books-animated-k-pop-band-first-vegas-residency-for-a-former-beatle/",
+          "title": "VEGAS MUSIC NEWS: ‘When We Were Young’ to Return, T-Mobile Arena Books Animated K-Pop Band, First Vegas Residency for a Former Beatle?",
+          "publisher": "Casino.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTs5wF-tCv5N8S-uXQc3CHmxKmStgZ-15bMYG8NVfdAHJqLbmNH209YJAaSheg"
+        }
+      ]
+    },
+    {
+      "query": "lance bass",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T16:30:00Z",
+      "related_news_urls": [
+        "https://www.today.com/video/lance-bass-talks-children-s-christmas-book-30-years-of-nsync-273733189634",
+        "https://pagesix.com/2026/11/17/celebrity-news/lance-bass-shares-the-sweet-holiday-traditions-he-shares-with-his-children/",
+        "https://katv.com/news/hogs-fans-storm-the-field-after-huge-upset-vs-south-carolina-hog-central-podcast"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROqt_3ApyVAO5_yiXBwgqx5c7AyM5UamVvl-jVuZ6uEVIAlxXNLLcNaiFc_AU",
+      "image_credit": "TODAY.com",
+      "news": [
+        {
+          "url": "https://www.today.com/video/lance-bass-talks-children-s-christmas-book-30-years-of-nsync-273733189634",
+          "title": "Lance Bass Talks Children’s Christmas Book, 30 Years of NSYNC",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROqt_3ApyVAO5_yiXBwgqx5c7AyM5UamVvl-jVuZ6uEVIAlxXNLLcNaiFc_AU"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/17/celebrity-news/lance-bass-shares-the-sweet-holiday-traditions-he-shares-with-his-children/",
+          "title": "Exclusive | Lance Bass shares the sweet holiday traditions he shares with his children",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUHEV0ZYN3-Ko9qdIZndoDmlfW24jM8SFyXafv6Tqoz6s1ABIR-u71PMJZdxI"
+        },
+        {
+          "url": "https://katv.com/news/hogs-fans-storm-the-field-after-huge-upset-vs-south-carolina-hog-central-podcast",
+          "title": "Hogs fans storm the field after huge upset vs. South Carolina | Hog Central Podcast",
+          "publisher": "KATV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjZmJz9r0k93-G3Joqfp7ZOO_oR4qYMmjIbH2J083IUqlxy9asmeFmcmrgMLU"
+        }
+      ]
+    },
+    {
+      "query": "soxx",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T16:30:00Z",
+      "related_news_urls": [
+        "https://www.benzinga.com/news/26/11/63430495/1000-invested-ishares-phlx-sox-semiconductor-sector-index-fund-15-years-ago-would-be-worth-much-toda",
+        "https://finance.yahoo.com/markets/stocks/articles/peter-thiel-makes-161-million-043300842.html",
+        "https://www.tikr.com/blog/inside-peter-thiels-portfolio-every-move-he-made-in-the-third-quarter"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LjkTI5A-Uwv4H5fexFYUqvDbfgmaUf6kx_86avQhl50af-x8Gdg3-9qhSpo",
+      "image_credit": "Benzinga",
+      "news": [
+        {
+          "url": "https://www.benzinga.com/news/26/11/63430495/1000-invested-ishares-phlx-sox-semiconductor-sector-index-fund-15-years-ago-would-be-worth-much-toda",
+          "title": "$1000 Invested In iShares PHLX SOX Semiconductor Sector Index Fund 15 Years Ago Would Be Worth This Much",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LjkTI5A-Uwv4H5fexFYUqvDbfgmaUf6kx_86avQhl50af-x8Gdg3-9qhSpo"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/peter-thiel-makes-161-million-043300842.html",
+          "title": "Peter Thiel makes new $161 million ETF bet, dethroning Amazon stock",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrcT93APEUBHOtqROrx1yXbouHbZD7OE8fn5W0Yup218CHLktKMJMjOyCim0U"
+        },
+        {
+          "url": "https://www.tikr.com/blog/inside-peter-thiels-portfolio-every-move-he-made-in-the-third-quarter",
+          "title": "Inside Peter Thiel’s Portfolio: Every Move He Made in the Third Quarter",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbrtHsGU_nqcAx8f2fEVU6n4lzho2rKfLtCfZbHTx_V0i3Fk_RG6n3sSIZYsk"
+        }
+      ]
+    },
+    {
+      "query": "spy",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T16:20:00Z",
+      "related_news_urls": [
+        "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
+        "https://www.bloomberg.com/news/articles/2026-11-18/us-charges-russian-as-foreign-agent-targeting-palantir-workers",
+        "https://abc7news.com/post/exclusive-head-fbi-san-francisco-office-says-espionage-bay-area-is-constantly-evolving-threat-amid-ai-boom/20056095/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyqp57mQQ7tuzJtPz4m4_3fXWQK_T8ls0YyV3DFQXgy_Wpwc4T1lzVW9SV8YM",
+      "image_credit": "Ars Technica",
+      "news": [
+        {
+          "url": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
+          "title": "Man hired by Russia spied on Silicon Valley tech and defense company, feds say",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyqp57mQQ7tuzJtPz4m4_3fXWQK_T8ls0YyV3DFQXgy_Wpwc4T1lzVW9SV8YM"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-18/us-charges-russian-as-foreign-agent-targeting-palantir-workers",
+          "title": "US Charges Russian as Foreign Agent Targeting Palantir Workers",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrypOH2ql8H0fKZe00m8IWMMUm5WMVFV5x4to8pXixlmBIuCSbKGxFS6wxWaM"
+        },
+        {
+          "url": "https://abc7news.com/post/exclusive-head-fbi-san-francisco-office-says-espionage-bay-area-is-constantly-evolving-threat-amid-ai-boom/20056095/",
+          "title": "EXCLUSIVE: Head of FBI San Francisco office says espionage in Bay Area is a 'constantly evolving threat' amid AI boom",
+          "publisher": "ABC7 Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxwbcQ9l3ctIP2p6UHjV33YpMxvovCzmGOt1-yj10mWRDaC_h65CpRapa56xE"
+        }
+      ]
+    },
     {
       "query": "mstr stock",
       "approx_searches": "500+",
       "published_at": "2026-11-20T16:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/strategy-mstr-bitcoin-buying-msci-211424742.html",
+        "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-buy-strategy-202222723.html",
         "https://www.investors.com/news/mstr-stock-discount-vs-bitcoin-trump-media-convertible/",
-        "https://www.tradingview.com/news/tradingview:c4760aad6d49c:0-key-facts-mstr-falls-36-65-sell-call-msci-exclusion-850-849-btc/"
+        "https://www.tikr.com/blog/strategy-sinks-26-in-a-week-as-msci-drops-it-saylor-seller-exhaustion-will-come-long-before-saylor-exhaustion"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuGhjHDmg-r3_xe3A-doiHCh347zkSVG5RzmbU3yzDhCrA_ABYUfPryKklLu4",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdqhpf1Drxp0mTQY86m9Lm_gyV7DufKV0-LadU0QofnTwhIO-NWII8_iSd1Q",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/strategy-mstr-bitcoin-buying-msci-211424742.html",
-          "title": "Strategy (MSTR) On Bitcoin Buying And MSCI Exit Still Looks Undervalued",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-buy-strategy-202222723.html",
+          "title": "Wall Street analysts say buy Strategy Inc, yet a November 30 shock is coming",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuGhjHDmg-r3_xe3A-doiHCh347zkSVG5RzmbU3yzDhCrA_ABYUfPryKklLu4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdqhpf1Drxp0mTQY86m9Lm_gyV7DufKV0-LadU0QofnTwhIO-NWII8_iSd1Q"
         },
         {
           "url": "https://www.investors.com/news/mstr-stock-discount-vs-bitcoin-trump-media-convertible/",
@@ -33,11 +173,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBtaNM8_MmhL09vNIqJuOYCILDKLJs9Q1vhhEpOzg9jbo0Y78HabkZCotuDNw"
         },
         {
-          "url": "https://www.tradingview.com/news/tradingview:c4760aad6d49c:0-key-facts-mstr-falls-36-65-sell-call-msci-exclusion-850-849-btc/",
-          "title": "Key facts: MSTR falls 36%; $65 Sell call; MSCI exclusion; 850,849 BTC",
-          "publisher": "TradingView",
+          "url": "https://www.tikr.com/blog/strategy-sinks-26-in-a-week-as-msci-drops-it-saylor-seller-exhaustion-will-come-long-before-saylor-exhaustion",
+          "title": "Strategy Sinks 26% in a Week as MSCI Drops It. Saylor: “Seller Exhaustion Will Come Long Before Saylor Exhaustion”",
+          "publisher": "TIKR.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfegVrfJmI0w7XwAMYIcL9-xoND3KBij2aJSX5MGoSm7bA_PCqT6I_cVGwQXU"
         }
       ]
     },
@@ -48,7 +188,7 @@
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/20/bitcoin-pre-ipo-selloff-pattern-anthropic-spacex.html",
         "https://finance.yahoo.com/markets/crypto/articles/bitcoin-enters-death-cross-anthropic-190824839.html",
-        "https://seekingalpha.com/news/4674681-bitcoin-crypto-get-a-modest-boost-amid-anthropic-bullishness"
+        "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUk9tasQ2HPrmSQ74hWcyMKJF3bK-XaGfi7ypqfnG7oGpWN-pZX2MVUcxeDuo",
       "image_credit": "CNBC",
@@ -68,11 +208,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8"
         },
         {
-          "url": "https://seekingalpha.com/news/4674681-bitcoin-crypto-get-a-modest-boost-amid-anthropic-bullishness",
-          "title": "Bitcoin, crypto get a modest boost amid Anthropic bullishness (BTC-USD:Cryptocurrency)",
-          "publisher": "Seeking Alpha",
+          "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt",
+          "title": "BTC slides to $61,300 after Anthropic's IPO, triggers $660 million in liquidations",
+          "publisher": "CoinDesk",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4aLnCko-RZBB95G5Rbcmuv7yq2IKK5_eE3__fYXTw7VQwzUg5DamTbRklbAo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5nOf_Z5P8iOL9IPwGcbTThJ3huByPNuI356L2n1AHEbM_mB5BF6V1xlS385E"
         }
       ]
     },
@@ -83,7 +223,7 @@
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
         "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
-        "https://www.bloomberg.com/news/articles/2026-11-18/bitcoin-erases-bessent-rally-as-leverage-and-liquidity-fade"
+        "https://research.glassnode.com/the-week-onchain-week-46-2026/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszVKjR2ov3hRsb4VWgWjZAZ--j32c5s2wIshKyrL_1at1uQe6CBvbApIKCt4",
       "image_credit": "CNBC",
@@ -103,46 +243,81 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSF6EBrVCJiHIvLKFqrahNEFI0ktiIhmiCJJe9WXinPeQYsDFEQ-1mNNuLe0Mo"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-18/bitcoin-erases-bessent-rally-as-leverage-and-liquidity-fade",
-          "title": "Bitcoin Erases Bessent Rally as Leverage and Liquidity Fade",
-          "publisher": "Bloomberg.com",
+          "url": "https://research.glassnode.com/the-week-onchain-week-46-2026/",
+          "title": "Capitulation Meets Support",
+          "publisher": "Glassnode Research",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuI1z95xbPsH9mbHN-PVZN7LPj-Nyrg6CbFokcQTx2_t27tdLlxrFHj-OQSbk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSO1zM3wCyTbzl21ySDOrS3b3iFutC7a_cjvO_v8JObdCoUi_NV3iJATGkTyPo"
         }
       ]
     },
     {
       "query": "btc price",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-20T16:00:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-at-11-am-cst-on-nov-20-2026-nov-20-2026/",
-        "https://robinhood.com/us/en/prediction-markets/crypto/events/eth-price-on-nov-16-2026-at-2pm-est-nov-15-2026/",
-        "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-on-nov-15-2026-at-3am-est-nov-14-2026/"
+        "https://www.fool.com/coverage/stock-market-today/2026/11/19/crypto-market-today-nov-19-bitcoin-approaches-usd60-000-as-etf-outflows-surpass-usd2-5-billion-in-2026/",
+        "https://crypto.news/crypto-market-crash-today-why-are-ethereum-zec-and-altcoins-down/",
+        "https://cryptonews.net/news/analytics/33784323/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmi98rXIOIxNtmw7pYCl74OsGcCyLzPmfhVUqbpujtv7xSRHyXrXuZN6UbL0g",
-      "image_credit": "Robinhood",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5tGVfKMTBz0xClR_rhIZ6wsolQm8MIqqI7fXE7_LdHBsTDUO4Kts_QPFDVA",
+      "image_credit": "The Motley Fool",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-at-11-am-cst-on-nov-20-2026-nov-20-2026/",
-          "title": "BTC price at 11 AM CST on Nov 20, 2026",
-          "publisher": "Robinhood",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/crypto-market-today-nov-19-bitcoin-approaches-usd60-000-as-etf-outflows-surpass-usd2-5-billion-in-2026/",
+          "title": "Crypto Market Today, Nov. 19: Bitcoin Approaches $60,000 as ETF Outflows Surpass $2.5 Billion in 2026",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmi98rXIOIxNtmw7pYCl74OsGcCyLzPmfhVUqbpujtv7xSRHyXrXuZN6UbL0g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5tGVfKMTBz0xClR_rhIZ6wsolQm8MIqqI7fXE7_LdHBsTDUO4Kts_QPFDVA"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/crypto/events/eth-price-on-nov-16-2026-at-2pm-est-nov-15-2026/",
-          "title": "ETH price on Nov 16, 2026 at 2pm EST Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://crypto.news/crypto-market-crash-today-why-are-ethereum-zec-and-altcoins-down/",
+          "title": "Crypto market crash today: Why are Ethereum, ZEC and altcoins down?",
+          "publisher": "Crypto News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh6ZHIgcvsUnEg8SM6bDHIhicsVZo3vWy_CrvJCLuVu8Wy7-k9XAl-oF63uLY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcy1k0zLc-_ZF6mLO40XQJhBpAHzbl4Z1m6Pht7vam75Y-nZor33I_53hoq2A"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-on-nov-15-2026-at-3am-est-nov-14-2026/",
-          "title": "BTC price on Nov 15, 2026 at 3am EST Crypto Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://cryptonews.net/news/analytics/33784323/",
+          "title": "Top 4 Reasons Why BTC, ETH and XRP Price Are Crashing Today",
+          "publisher": "Cryptonews.net",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQngxSjznUu8bXQzWpNw_1oWt9U2gM-7n5NJir28fxpNUHBEc3rRnLOO3wVaAk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwHMviJIFWx_MkwR-j0BvjcIK51jYRTtwhy9543EqZoNgC3b3OUI8BB3PbJM0"
+        }
+      ]
+    },
+    {
+      "query": "bitcoin price usd",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T16:00:00Z",
+      "related_news_urls": [
+        "https://africa.businessinsider.com/local/how-breet-business-api-is-unlocking-new-payment-opportunities-for-african-businesses/vbnlxk7",
+        "https://techeconomy.ng/africa-101bn-crypto-market-stablecoins-cross-border-payments",
+        "https://www.thecable.ng/bitcoin-loses-ground-to-stablecoins-in-nigeria/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb56FQtOdoo9MM_WQoSdrSLFrJ5PpFqGIkCKEGCgy8M1twiUqEOPSxIRXlTLU",
+      "image_credit": "Business Insider Africa",
+      "news": [
+        {
+          "url": "https://africa.businessinsider.com/local/how-breet-business-api-is-unlocking-new-payment-opportunities-for-african-businesses/vbnlxk7",
+          "title": "How Breet Business API is unlocking new payment opportunities for African businesses through cryptocurrency and stablecoins",
+          "publisher": "Business Insider Africa",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb56FQtOdoo9MM_WQoSdrSLFrJ5PpFqGIkCKEGCgy8M1twiUqEOPSxIRXlTLU"
+        },
+        {
+          "url": "https://techeconomy.ng/africa-101bn-crypto-market-stablecoins-cross-border-payments",
+          "title": "Africa’s $101bn Crypto Market: Why Cross-Border Supplier Payments Remain Difficult",
+          "publisher": "Techeconomy",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0rblW-32_ev2b8UFgt043RneXlQ3f0C4EtojSbUO-j1IQN6xv1Vozw9PvI5w"
+        },
+        {
+          "url": "https://www.thecable.ng/bitcoin-loses-ground-to-stablecoins-in-nigeria/",
+          "title": "Bitcoin could become part of Africa’s renewable-energy business model",
+          "publisher": "TheCable",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJzpCXzatCydFqSP5EmDm5Def049GhSqEMJMQ5Qn20knkcNhPjuLl0ReybZnA"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "Robinhood",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH5NlOEKGVGY4zUpbjWTCGBg5p81UogFuwK3Z5OijaI3OjvL0abVYgvkWZDSM"
-        }
-      ]
-    },
-    {
-      "query": "walmart stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T15:50:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/earnings/walmart-wmt-3q-earnings-report-2026-6e658c54",
-        "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-        "https://www.retaildive.com/news/walmart-ecommerce-boom-fulfillment-speed-q3-earnings/875166/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGdEqOiTu1bkhx5qOm0tK8-2CSax0U0iaSjzp6GctG75mQ5wIWixcOcArz1uI",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/earnings/walmart-wmt-3q-earnings-report-2026-6e658c54",
-          "title": "Walmart’s Digital Sales Are Now Driving Its Growth, Not Stores",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGdEqOiTu1bkhx5qOm0tK8-2CSax0U0iaSjzp6GctG75mQ5wIWixcOcArz1uI"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-          "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIeguPZgPQRoxK4DpwRiXDTex_5YUlOqi2BYDID1R28p45UQsoz6lbLba465A"
-        },
-        {
-          "url": "https://www.retaildive.com/news/walmart-ecommerce-boom-fulfillment-speed-q3-earnings/875166/",
-          "title": "Walmart’s e-commerce boom driven by fulfillment speed",
-          "publisher": "Retail Dive",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3cpiW5bYIJ1L_GhRq9A9u2DYL408FN3G7HBKKHK6IeDoz0Dy-I09lAm5c98Y"
-        }
-      ]
-    },
-    {
-      "query": "micron stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T15:50:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/articles/micron-stock-memory-price-catalyst-58e84734",
-        "https://finance.yahoo.com/markets/stocks/articles/happens-micron-stock-prices-stop-150147307.html",
-        "https://www.trefis.com/stock/mu/articles/626702/what-micron-s-record-margin-means-for-your-shares/2026-11-19"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PsqvhTf8lfcv6J3-tyCknfh4YjPdAO96_2jeVtQO_IGVGcNeNinehPki8HM",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/articles/micron-stock-memory-price-catalyst-58e84734",
-          "title": "Micron Keeps Falling as Memory Stocks Get Agonizingly Cheap. The Next Catalyst.",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PsqvhTf8lfcv6J3-tyCknfh4YjPdAO96_2jeVtQO_IGVGcNeNinehPki8HM"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/happens-micron-stock-prices-stop-150147307.html",
-          "title": "What Happens To Micron Stock If Prices Stop Rising?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpHyu2-Fbib9MeE9IoICFCbl9I9RccEbJOR2tcLOhRtC2IVQTPAT4keJ3vfw"
-        },
-        {
-          "url": "https://www.trefis.com/stock/mu/articles/626702/what-micron-s-record-margin-means-for-your-shares/2026-11-19",
-          "title": "What Micron’s Record Margin Means For Your Shares",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmf7hQbKMhfhjUIZiZc5vJclECpYllHDVAWA-lkef0Q6zwoKZQeBB0ky3r2xQ"
-        }
-      ]
-    },
-    {
-      "query": "jp morgan chase",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-20T15:40:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
-        "https://www.forbes.com/sites/maryroeloffs/2026/11/20/chase-visa-mastercard-customer-data-leaked-in-cyberattack/",
-        "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGgc_4Dp78ZNvvrqX83P3XcY67R3s2aEMeaH4HYb_xaY_A2RIy6DRwGV4WQ3U",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
-          "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGgc_4Dp78ZNvvrqX83P3XcY67R3s2aEMeaH4HYb_xaY_A2RIy6DRwGV4WQ3U"
-        },
-        {
-          "url": "https://www.forbes.com/sites/maryroeloffs/2026/11/20/chase-visa-mastercard-customer-data-leaked-in-cyberattack/",
-          "title": "Did Banks Get Hacked? Visa, Mastercard, Chase Confirm Vendor Cyberattack",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8eIr5BQS_TfTq_cM3n1lPNg9kQsfe8mvISeNG9jqwglWviIae-2jPpBu2MZo"
-        },
-        {
-          "url": "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705",
-          "title": "JPMorganChase, Mastercard, Visa report cyberattack on third-party service providers",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRELDP9seVz-BgEcGkl-RRf8a2She16bZT_3_EqT3sPXvxVqh12OFqyei3Y5FY"
-        }
-      ]
-    },
-    {
-      "query": "pj simon",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T15:30:00Z",
-      "related_news_urls": [
-        "https://tiebreakertimes.com.ph/tbt/magnolia-great-pj-simon-46-passes-away/390440",
-        "https://www.spin.ph/basketball/pba/pba-great-pj-simon-rushed-to-hospital-after-collapsing-in-game-a2437-20261120?ref=home_feed_1",
-        "https://fastbreak.com.ph/peter-june-simon-suffers-medical-emergency-during-basketball-game/sports-galore/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJTJN5TKzL6wIeGFeqGJkPPGhhrGFkDpzjvvjl7KcivZcm82BjKznHWX-Rd94",
-      "image_credit": "Tiebreaker Times",
-      "news": [
-        {
-          "url": "https://tiebreakertimes.com.ph/tbt/magnolia-great-pj-simon-46-passes-away/390440",
-          "title": "Magnolia great PJ Simon, 46, passes away",
-          "publisher": "Tiebreaker Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJTJN5TKzL6wIeGFeqGJkPPGhhrGFkDpzjvvjl7KcivZcm82BjKznHWX-Rd94"
-        },
-        {
-          "url": "https://www.spin.ph/basketball/pba/pba-great-pj-simon-rushed-to-hospital-after-collapsing-in-game-a2437-20261120?ref=home_feed_1",
-          "title": "PBA great PJ Simon rushed to hospital after collapsing in game",
-          "publisher": "Spin.ph",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLRKKRom7seGcu1GWMg8SSH30L3z5-0VQqIZS5aDwm4PsTmSdOPC8yo4p0WYg"
-        },
-        {
-          "url": "https://fastbreak.com.ph/peter-june-simon-suffers-medical-emergency-during-basketball-game/sports-galore/",
-          "title": "Peter June Simon suffers medical emergency during basketball game",
-          "publisher": "FASTBREAK.com.ph",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDCbcU7EXmOzEejvcPsAP2rJjg3l4G5BZK5ThkfPJOSa7kJxhTL5SOkEhXyRs"
-        }
-      ]
-    },
-    {
-      "query": "interland",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T15:30:00Z",
-      "related_news_urls": [
-        "https://www.telegraaf.nl/sport/voetbal/twijfels-over-ek-perspectief-van-jong-oranje-na-wisselvallige-kwalificatie-ik-heb-er-een-hard-hoofd-in/164735874.html",
-        "https://www.ajax1.nl/vink-duidelijk-op-het-vlak-van-bewustwording-stappen-zetten/",
-        "https://www.twentefans.nl/als-een-heel-groot-talent-als-ruud-nijstad-niet-eens-speelt/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSALBWBZYkuKKBn2PdLRk5JSYrnXtwkuRCFPFgQZORltaMVnE-5Hlh991i0PMQ",
-      "image_credit": "De Telegraaf",
-      "news": [
-        {
-          "url": "https://www.telegraaf.nl/sport/voetbal/twijfels-over-ek-perspectief-van-jong-oranje-na-wisselvallige-kwalificatie-ik-heb-er-een-hard-hoofd-in/164735874.html",
-          "title": "Twijfels over EK-perspectief van Jong Oranje na wisselvallige kwalificatie: ’Ik heb er een hard hoofd in’",
-          "publisher": "De Telegraaf",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSALBWBZYkuKKBn2PdLRk5JSYrnXtwkuRCFPFgQZORltaMVnE-5Hlh991i0PMQ"
-        },
-        {
-          "url": "https://www.ajax1.nl/vink-duidelijk-op-het-vlak-van-bewustwording-stappen-zetten/",
-          "title": "Vink duidelijk: \"Op het vlak van bewustwording stappen zetten\"",
-          "publisher": "Ajax1",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMYYbJ08xBIDAtxTfDzsz6IQegEA-RcsjprPy4BdbAel0vVqGu94lBA27pRq0"
-        },
-        {
-          "url": "https://www.twentefans.nl/als-een-heel-groot-talent-als-ruud-nijstad-niet-eens-speelt/",
-          "title": "\"Als een heel groot talent als Ruud Nijstad niet eens speelt...\"",
-          "publisher": "Twentefans.nl",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhnO2VyEGAzvnPl2BmEAgdcWbVoAEBX9pZPB7JR-g7L0RU40JQLOf_Fwyyxss"
         }
       ]
     }
