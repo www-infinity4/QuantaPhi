@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T08:01:42.888237Z",
+  "checked_at": "2026-11-20T08:31:33.603807Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "will gta 6 have online",
+      "query": "criminal defense lawyer",
       "approx_searches": "200+",
-      "published_at": "2026-11-20T07:40:00Z",
+      "published_at": "2026-11-20T08:00:00Z",
       "related_news_urls": [
-        "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
-        "https://www.imdb.com/news/ni66116171/?ref_=nwc_art_perm",
-        "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/"
+        "https://patch.com/massachusetts/beverly/north-shore-law-firm-adds-former-essex-prosecutor-criminal-defense-team",
+        "https://www.thestate.com/news/local/crime/article318164022.html",
+        "https://www.politico.com/news/2026/11/17/tim-parlatore-libya-warlord-hegseth-01168919"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY",
-      "image_credit": "PCMag",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnJL_IQ2foJ_xiakOp3k1YTajGc3xZ2yG1y7dICiPoz0cjsqAKnGcjQNYrlWg",
+      "image_credit": "Patch",
       "news": [
         {
-          "url": "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
-          "title": "GTA 6 Is Finally Here...So When Can You Play Online With Friends?",
-          "publisher": "PCMag",
+          "url": "https://patch.com/massachusetts/beverly/north-shore-law-firm-adds-former-essex-prosecutor-criminal-defense-team",
+          "title": "North Shore Law Firm Adds Former Essex Prosecutor To Criminal Defense Team",
+          "publisher": "Patch",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnJL_IQ2foJ_xiakOp3k1YTajGc3xZ2yG1y7dICiPoz0cjsqAKnGcjQNYrlWg"
         },
         {
-          "url": "https://www.imdb.com/news/ni66116171/?ref_=nwc_art_perm",
-          "title": "‘GTA 6 Online’ Release Date: Will ‘Grand Theft Auto VI’ Have Multiplayer at Launch?",
+          "url": "https://www.thestate.com/news/local/crime/article318164022.html",
+          "title": "SC attorney who helped exonerate Rick Chow, steps up to another high-profile case",
+          "publisher": "The State",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRub9Z3dvu-Da8nYQdLNm89KiKVzHu2x4vH-wb3DCkULVogFf2FnlOekur319E"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/17/tim-parlatore-libya-warlord-hegseth-01168919",
+          "title": "Top Hegseth adviser represents Libyan warlord’s son accused of torture",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzCFv92yMD2qTF3pnC854QDEIQr83raxvdMFDLa1smu_bdCc89aLslKFCIyL0"
+        }
+      ]
+    },
+    {
+      "query": "mobland season 2 episode 10",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T08:00:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66118038/?ref_=ttnw_art_perm",
+        "https://www.forbes.com/sites/erikkain/2026/11/18/mobland-season-2-finale-episode-10-release-time-paramount-plus/",
+        "https://screenrant.com/mobland-season-2-tom-hardy-guy-ritchie-mob-thriller-peaks-before-finale/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1yJRJJYBfdYFr3wKDymnvAkrFD-grl-dnKwgtOq4QQtPyvPfjyAqT7dTLQE8",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66118038/?ref_=ttnw_art_perm",
+          "title": "Guy Ritchie's New MobLand Season 2 Episode Sets All-Time Series IMDb Record",
           "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3sLRw4Q4iWUlOlWnScamGyHj1J8cpmXfawyUUTL1gVXuJ2G61qM_ORUUBfKs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1yJRJJYBfdYFr3wKDymnvAkrFD-grl-dnKwgtOq4QQtPyvPfjyAqT7dTLQE8"
         },
         {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
-          "title": "Another Update About The ‘GTA 6 Online’ Release Date",
+          "url": "https://www.forbes.com/sites/erikkain/2026/11/18/mobland-season-2-finale-episode-10-release-time-paramount-plus/",
+          "title": "‘MobLand’ Season 2, Episode 10 Release Time And Preview: ‘The Queen Is Dead’ — But Which Queen?",
           "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3qAOOwp11B6hIGveAOUwxtfXkLkN_2rWhTNVZR64l6M7om_XQ7WsUi77_BpM"
+        },
+        {
+          "url": "https://screenrant.com/mobland-season-2-tom-hardy-guy-ritchie-mob-thriller-peaks-before-finale/",
+          "title": "Tom Hardy & Guy Ritchie’s Mob Thriller Officially Peaks 3 Days Before Finale",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxhJ2q62QmR7SD9QhWXoKimSAgiCWPzB06xux-MFCO2Bk1NNs_RK4wGtobffQ"
+        }
+      ]
+    },
+    {
+      "query": "karely ruiz",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T07:50:00Z",
+      "related_news_urls": [
+        "https://www.infobae.com/mexico/2026/11/17/polemica-en-la-mansion-vip-exhiben-presunto-codigo-del-esposo-de-karely-ruiz-para-advertirle-su-posicion-en-el-reality/",
+        "https://www.facebook.com/MilenioDiario/posts/por-qu%C3%A9-est%C3%A1-cancelando-a-karely-ruiz-esto-pas%C3%B3-entre-la-modelo-y-la-cukis-en-la/1683953760428755/",
+        "https://www.elmanana.com/escena/famosos/karely-ruiz-y-la-cukis-generan-controversia-en-la-mansion-vip-2/6210301"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7MVaNWKH53uzkahK2eNzsvTBww-yOToQVQmSNBeJnVyorv61wPGJSO_KGwO0",
+      "image_credit": "Infobae",
+      "news": [
+        {
+          "url": "https://www.infobae.com/mexico/2026/11/17/polemica-en-la-mansion-vip-exhiben-presunto-codigo-del-esposo-de-karely-ruiz-para-advertirle-su-posicion-en-el-reality/",
+          "title": "Polémica en La Mansión VIP: exhiben presunto código del esposo de Karely Ruiz para advertirle su posición en el reality",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7MVaNWKH53uzkahK2eNzsvTBww-yOToQVQmSNBeJnVyorv61wPGJSO_KGwO0"
+        },
+        {
+          "url": "https://www.facebook.com/MilenioDiario/posts/por-qu%C3%A9-est%C3%A1-cancelando-a-karely-ruiz-esto-pas%C3%B3-entre-la-modelo-y-la-cukis-en-la/1683953760428755/",
+          "title": "¿Por qué está cancelando a Karely Ruiz? Esto pasó entre la modelo y La Cukis en La Mansión VIP https://mile.io/4eCy0i9",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDsmOacafsg0PhQqJBQEeQzj04_AfuKaYnXApXaEZvUs2sviYYxVatWqevW0I"
+        },
+        {
+          "url": "https://www.elmanana.com/escena/famosos/karely-ruiz-y-la-cukis-generan-controversia-en-la-mansion-vip-2/6210301",
+          "title": "Enfrenta Karely Ruiz críticas tras incidentes",
+          "publisher": "El Mañana de Reynosa",
+          "description": "",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "query": "app",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T07:50:00Z",
+      "related_news_urls": [
+        "https://9to5google.com/2026/11/18/google-pixel-app-lock-release-beta/",
+        "https://www.androidauthority.com/android-native-app-lock-older-versions-3737530/",
+        "https://www.digitaltrends.com/phones/google-brings-back-app-lock-for-pixel-with-a-stable-release-set-for-q1-2027/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToxwOwkA8Vro4RLB11Cq8YoKOU1M5BJ-SBMUkWNali8Nve3oqXqbzIrWg8hpI",
+      "image_credit": "9to5Google",
+      "news": [
+        {
+          "url": "https://9to5google.com/2026/11/18/google-pixel-app-lock-release-beta/",
+          "title": "Google Pixel officially re-releases App Lock in beta, Samsung Galaxy gets it too",
+          "publisher": "9to5Google",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToxwOwkA8Vro4RLB11Cq8YoKOU1M5BJ-SBMUkWNali8Nve3oqXqbzIrWg8hpI"
+        },
+        {
+          "url": "https://www.androidauthority.com/android-native-app-lock-older-versions-3737530/",
+          "title": "Google confirms native app lock won't come to older Android versions",
+          "publisher": "Android Authority",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsvQ5pfT-CrTvGe2MajA1qE9Mo9H7m-sHljSuowOvSaTD8wMuzH0lqA67ogow"
+        },
+        {
+          "url": "https://www.digitaltrends.com/phones/google-brings-back-app-lock-for-pixel-with-a-stable-release-set-for-q1-2027/",
+          "title": "Google brings back App Lock for Pixel, with a wide release set for Q1 2027",
+          "publisher": "Digital Trends",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuB6af-MJT3qGdKfXcUxbRfEZpZBZ4vEg8PitTwOXpcJM0qnijzb-NQWeDAWQ"
         }
       ]
     },
@@ -77,13 +182,48 @@
       ]
     },
     {
+      "query": "will gta 6 have online",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T07:40:00Z",
+      "related_news_urls": [
+        "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
+        "https://www.imdb.com/news/ni66116171/?ref_=nwc_art_perm",
+        "https://insider-gaming.com/gta-6-online-multiplayer-release/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY",
+      "image_credit": "PCMag",
+      "news": [
+        {
+          "url": "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
+          "title": "GTA 6 Is Finally Here...So When Can You Play Online With Friends?",
+          "publisher": "PCMag",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66116171/?ref_=nwc_art_perm",
+          "title": "‘GTA 6 Online’ Release Date: Will ‘Grand Theft Auto VI’ Have Multiplayer at Launch?",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3sLRw4Q4iWUlOlWnScamGyHj1J8cpmXfawyUUTL1gVXuJ2G61qM_ORUUBfKs"
+        },
+        {
+          "url": "https://insider-gaming.com/gta-6-online-multiplayer-release/",
+          "title": "Where is GTA 6 Online Multiplayer? GTA Online 2 Release Window",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLCQvP0awzrdwWwfKJayKz5rcXt9B0hOeXI4R08_yDwpFncUNC6p158Nff8E0"
+        }
+      ]
+    },
+    {
       "query": "daycare",
       "approx_searches": "500+",
       "published_at": "2026-11-20T07:30:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/cvkg58d7z10ro",
-        "https://www.reutersconnect.com/item/anita-palupi-head-of-the-little-aresha-daycare-center-talks-with-her-lawyer-during-a-verdict-hearing-in-a-child-abuse-case-at-yogyakarta-district-court-in-yogyakarta/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlNRT0FTSVNOUA",
-        "https://www.devdiscourse.com/article/international/4009289-indonesia-court-jails-daycare-head-for-5-years-in-child-abuse-case"
+        "https://www.devdiscourse.com/article/international/4009289-indonesia-court-jails-daycare-head-for-5-years-in-child-abuse-case",
+        "https://www.reutersconnect.com/item/anita-palupi-head-of-the-little-aresha-daycare-center-talks-with-her-lawyer-during-a-verdict-hearing-in-a-child-abuse-case-at-yogyakarta-district-court-in-yogyakarta/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlNRT0FTSVNOUA"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKciyuppoTkEqOYU6LytVWlm3vG2VVlRd-3ivpLgHPtnR7GSgNzFPfKkif418",
       "image_credit": "BBC",
@@ -96,18 +236,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKciyuppoTkEqOYU6LytVWlm3vG2VVlRd-3ivpLgHPtnR7GSgNzFPfKkif418"
         },
         {
-          "url": "https://www.reutersconnect.com/item/anita-palupi-head-of-the-little-aresha-daycare-center-talks-with-her-lawyer-during-a-verdict-hearing-in-a-child-abuse-case-at-yogyakarta-district-court-in-yogyakarta/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlNRT0FTSVNOUA",
-          "title": "Licensable picture: Anita Palupi, head of the Little Aresha daycare center, talks with her lawyer during a verdict hearing in a child abuse case at Yogyakarta District Court in Yog",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDdno25yGagJPnWZJ_qUQMNjBKhGMVhqHKdk2zB26N6uE90qQTXQBX67bVids"
-        },
-        {
           "url": "https://www.devdiscourse.com/article/international/4009289-indonesia-court-jails-daycare-head-for-5-years-in-child-abuse-case",
           "title": "Indonesia court jails daycare head for 5 years in child abuse case",
           "publisher": "Devdiscourse",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBnQTwUY5pEwC8EpzVWBVE0lLyJcmifbrtNRVISYh6CUjNHq0b4e0nLEDEzBk"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/anita-palupi-head-of-the-little-aresha-daycare-center-talks-with-her-lawyer-during-a-verdict-hearing-in-a-child-abuse-case-at-yogyakarta-district-court-in-yogyakarta/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlNRT0FTSVNOUA",
+          "title": "Licensable picture: Anita Palupi, head of the Little Aresha daycare center, talks with her lawyer during a verdict hearing in a child abuse case at Yogyakarta District Court in Yog",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDdno25yGagJPnWZJ_qUQMNjBKhGMVhqHKdk2zB26N6uE90qQTXQBX67bVids"
         }
       ]
     },
@@ -117,7 +257,7 @@
       "published_at": "2026-11-20T07:30:00Z",
       "related_news_urls": [
         "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-worth-third-june-181602656.html",
-        "https://www.barchart.com/story/news/8918198/how-to-play-sndk-stock-after-sandisks-8-for-1-stock-split",
+        "https://www.tradingview.com/news/gurufocus:942b663a5094b:0-sandisk-stocks-jump-6-29-hours-before-8-for-1-split-takes-effect/",
         "https://www.tikr.com/blog/sandisk-sinks-21-in-a-week-as-nvidias-ceo-exit-hits-memory-stocks-time-to-buy"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpjKLE1dYHVKIt0Cme4_6F0BSd74RKv9tSiyx-TUrIqK3yNMeFqWbkmNaLB58",
@@ -131,11 +271,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpjKLE1dYHVKIt0Cme4_6F0BSd74RKv9tSiyx-TUrIqK3yNMeFqWbkmNaLB58"
         },
         {
-          "url": "https://www.barchart.com/story/news/8918198/how-to-play-sndk-stock-after-sandisks-8-for-1-stock-split",
-          "title": "How to Play SNDK Stock After Sandisk’s 8-for-1 Stock Split",
-          "publisher": "Barchart.com",
+          "url": "https://www.tradingview.com/news/gurufocus:942b663a5094b:0-sandisk-stocks-jump-6-29-hours-before-8-for-1-split-takes-effect/",
+          "title": "Sandisk Stocks Jump 6.29% Hours Before 8-for-1 Split Takes Effect",
+          "publisher": "TradingView",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7TMfwt3aGyh5w8fvDAgTo2gIwNFsqns_eu16dMEy1XLLgjkSdHkMaOuKKZg8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ56KuD88gfoedWQc0khgOnLcDOqBC_okZ_gcKAbikFxuD98v58uQSzzRvy19Q"
         },
         {
           "url": "https://www.tikr.com/blog/sandisk-sinks-21-in-a-week-as-nvidias-ceo-exit-hits-memory-stocks-time-to-buy",
@@ -148,7 +288,7 @@
     },
     {
       "query": "truck accident lawyer",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-20T07:20:00Z",
       "related_news_urls": [
         "https://kpq.com/fatal-hitandrun-okanogan-tips-investigation/",
@@ -213,146 +353,6 @@
           "publisher": "Source ONE News",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLLFRDEpNayIwsOunKjudafGXa7KdEzom7EtR14eiF3_JIdOWN4dBqMi5I71o"
-        }
-      ]
-    },
-    {
-      "query": "5.4 magnitude earthquake",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T07:20:00Z",
-      "related_news_urls": [
-        "https://cwibc.co.id/en/usgs-toms-place-earthquake-november-19",
-        "https://www.sacbee.com/news/california/earthquakes/article318153941.html",
-        "https://www.reuters.com/business/environment/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-2026-11-20/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3foXwncr17Y0wtuzX2t2i3daoOyCBZnYKf53RJ7JU0U5teM-x93LYwV_hhzs",
-      "image_credit": "cwibc.co.id",
-      "news": [
-        {
-          "url": "https://cwibc.co.id/en/usgs-toms-place-earthquake-november-19",
-          "title": "USGS Reports 2.3 Magnitude Earthquake Near Toms Place",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3foXwncr17Y0wtuzX2t2i3daoOyCBZnYKf53RJ7JU0U5teM-x93LYwV_hhzs"
-        },
-        {
-          "url": "https://www.sacbee.com/news/california/earthquakes/article318153941.html",
-          "title": "2.8 magnitude earthquake reported near Toms Place, CA on Nov. 19",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1oAuToou89x__3KyjtJmNMExSEWqfdLR8MNK-gMl4q0PJKu1-B_r6YiYy7I"
-        },
-        {
-          "url": "https://www.reuters.com/business/environment/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-2026-11-20/",
-          "title": "Magnitude 5.1 earthquake strikes near California's Monterey County, USGS says",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdOZTxj6jIteFG_a7RNZvPGxIjwB_hoaSPdMEZ_7LzEoVBE5Ywx9-0YxFY3rc"
-        }
-      ]
-    },
-    {
-      "query": "aleksandre topuria",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T07:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/ilia-topuria-says-half-millimeter-064229631.html",
-        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/19/ufc-joe-rogan-concerned-ilia-topuria-lightweight/92856711007/",
-        "https://demokratis.co.id/en/topuria-orbital-injury-career-threat"
-      ],
-      "image_url": null,
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/ilia-topuria-says-half-millimeter-064229631.html",
-          "title": "Ilia Topuria Says He Was Half A Millimeter From Career-Ending Surgery After Gaethje Broke Both Orbitals — And Joe Rogan Now Wants Him Back At 145",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/19/ufc-joe-rogan-concerned-ilia-topuria-lightweight/92856711007/",
-          "title": "Joe Rogan has 'much better weight class' in mind for Ilia Topuria",
-          "publisher": "MMA Junkie",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhh33dr83e8x8nFl8hKu1-_thq5LyTkhSbtZ3GBVUdw15D3g0SL_84kSbSOus"
-        },
-        {
-          "url": "https://demokratis.co.id/en/topuria-orbital-injury-career-threat",
-          "title": "Topuria Reveals Near Career Ending Injury Against Gaethje",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrZTZRAWuBJdfS7qJF3ilUDU8ybPCnDd50VyvuhAel7HO3dEfWRuRd8LLdxyM"
-        }
-      ]
-    },
-    {
-      "query": "pg&e",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T07:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcbayarea.com/news/local/cpuc-approves-pg-rate-hike-2027/4179166/",
-        "https://consumerwatchdog.org/energy/newsoms-cpuc-appointees-approve-456-million-pge-rate-hike-before-becerra-takes-office-despite-unanswered-questions-about-2-billion-in-spending-cuts/",
-        "https://www.mercurynews.com/2026/11/19/pge-bill-economy-electric-gas-consumer-fire-energy-power-utility-puc/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYg0ES5PAH2g06Hf3kV7sGqW__z8bHXwWJiGJrAxh0HTuq9mZV6ud2Jvf5qw",
-      "image_credit": "NBC Bay Area",
-      "news": [
-        {
-          "url": "https://www.nbcbayarea.com/news/local/cpuc-approves-pg-rate-hike-2027/4179166/",
-          "title": "CPUC approves PG&E ‘interim' rate hike for 2027",
-          "publisher": "NBC Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYg0ES5PAH2g06Hf3kV7sGqW__z8bHXwWJiGJrAxh0HTuq9mZV6ud2Jvf5qw"
-        },
-        {
-          "url": "https://consumerwatchdog.org/energy/newsoms-cpuc-appointees-approve-456-million-pge-rate-hike-before-becerra-takes-office-despite-unanswered-questions-about-2-billion-in-spending-cuts/",
-          "title": "Newsom’s CPUC Appointees Approve $456 Million PG&E Rate Hike Before Becerra Takes Office, Despite Unanswered Questions About $2 Billion in Spending Cuts",
-          "publisher": "Consumer Watchdog",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvk3JZDHTCcV7PBjHzFgMNlpDXeLMGvwL2e9wWufiiTANInqQA5NEAWlTdB7w"
-        },
-        {
-          "url": "https://www.mercurynews.com/2026/11/19/pge-bill-economy-electric-gas-consumer-fire-energy-power-utility-puc/",
-          "title": "State OKs interim rise in PG&E bills but costs for 2026 will be flat",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFhWMrbROn8ydXQkgv9sY1B9QIk77BqPympVjQdkJAHKyNJo6YCMZuBnLAe5w"
-        }
-      ]
-    },
-    {
-      "query": "ksbw",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T07:10:00Z",
-      "related_news_urls": [
-        "https://www.ksbw.com/article/alisal-school-district-wont-rename-cesar-e-chavez-elementary/74482801",
-        "https://www.montereyherald.com/2026/11/19/cesar-e-chavez-elementary-school-in-salinas-to-keep-original-name/",
-        "https://www.sfgate.com/news/bayarea/article/salinas-school-board-halts-possible-renaming-of-22540672.php"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWvRnsdZMyCEMzjydMP8bxxEN5-fzshs_xi8YKz_Ir9ow-PsZZhCrYOSyCB44",
-      "image_credit": "KSBW",
-      "news": [
-        {
-          "url": "https://www.ksbw.com/article/alisal-school-district-wont-rename-cesar-e-chavez-elementary/74482801",
-          "title": "Alisal school district won't rename César E. Chávez Elementary",
-          "publisher": "KSBW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWvRnsdZMyCEMzjydMP8bxxEN5-fzshs_xi8YKz_Ir9ow-PsZZhCrYOSyCB44"
-        },
-        {
-          "url": "https://www.montereyherald.com/2026/11/19/cesar-e-chavez-elementary-school-in-salinas-to-keep-original-name/",
-          "title": "César E. Chávez Elementary school in Salinas to keep original name",
-          "publisher": "Monterey Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNCh38qbStdCSvYU2iiLMO-DC8ZKYMtdbFYdzmwJn8et_76uVEJIfvujPMlYc"
-        },
-        {
-          "url": "https://www.sfgate.com/news/bayarea/article/salinas-school-board-halts-possible-renaming-of-22540672.php",
-          "title": "Salinas: School Board Halts Possible Renaming Of Cesar E. Chavez Elementary After Community Survey",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK4Lw8OLffFQLm4BDiDxFhzlXpbVPiUfhhcsVyURD440XHxD6NYa6tLlViVzU"
         }
       ]
     }
