@@ -26,7 +26,8 @@ async function transaction(mode,action) {
 }
 async function storeRecord(text){
  const record=await prepareRecord(text);
- await transaction('readwrite',(store)=>{store.put(record);});
+ const {text:discard,...metadata}=record;
+ await transaction('readwrite',(store)=>{store.put(metadata);});
  return {id:record.id,sha256:record.sha256,timestamp:record.timestamp,length:record.length,lexicalProfile:record.lexicalProfile};
 }
 async function listRecords(){
