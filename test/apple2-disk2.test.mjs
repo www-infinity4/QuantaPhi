@@ -105,3 +105,11 @@ test('browser has local NIB mount, user ROM, safe image export and disk controls
  assert.match(html,/\.disk\.mount\(/);
  assert.doesNotMatch(html,/fetch\(|XMLHttpRequest/);
 });
+
+test('loading a custom 6502 program preserves mounted virtual disk and slot ROM',()=>{
+ const html=readFileSync(new URL('../apple2-infinity/index.html',import.meta.url),'utf8');
+ const loader=html.slice(html.indexOf('function loadProgram(){'),html.indexOf('function programAction('));
+ assert.ok(loader.length>150,'loader definition found');
+ assert.doesNotMatch(loader,/vm\s*=\s*new Apple2Infinity\s*\(/,'a fresh VM would discard mounted disk');
+ assert.match(loader,/vm\.cpu\.reset\(/,'reset CPU without destroying drive');
+});

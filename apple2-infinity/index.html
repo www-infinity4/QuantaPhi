@@ -61,7 +61,8 @@ function loadProgram(){
  if(!/^[0-9a-f]{2}(?:[\s,]+[0-9a-f]{2})*$/i.test(raw))throw Error('Use hexadecimal pairs such as A9 41 8D 00 04 00.');
  const bytes=raw.split(/[\s,]+/).map(v=>parseInt(v,16));
  if(bytes.length>4096)throw Error('Program exceeds the 4,096-byte loader limit.');
- vm=new Apple2Infinity();vm.bus.load(0x800,bytes);vm.cpu.stopOnBrk=true;programLoaded=true;
+ vm.bus.write(0xc002,0);vm.bus.write(0xc004,0);vm.bus.write(0xc008,0);
+ vm.bus.ram.fill(0,0x800,0x1800);vm.bus.load(0x800,bytes);vm.cpu.reset(0x800);vm.cpu.stopOnBrk=true;programLoaded=true;
  $('programStatus').textContent=bytes.length+' bytes loaded at $0800. Ready to step or run.';
  report('Loaded '+bytes.length+' custom 6502 bytes.');render();
 }

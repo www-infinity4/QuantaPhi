@@ -4,7 +4,7 @@ project: "Apple II Infinity virtual hardware software workbench"
 state: review_pending
 dot: "🟡"
 progress_percent: 70
-progress_basis: "Software Disk II slot-6 nibble controller, two drives, user-owned image/ROM loading, and UI built; 47 focused local Node tests passed (38 prior plus 9 new); exact-head CI, independent review, merge and live/Android acceptance remain."
+progress_basis: "Software Disk II slot-6 nibble controller, two drives, user-owned image/ROM loading, and UI built; 48 focused local Node tests passed (38 prior plus 9 new); exact-head CI, independent review, merge and live/Android acceptance remain."
 sessions_spent: 5
 sessions_remaining_estimate: "unknown"
 agent: "GPT Green engineer, unleased GitHub connector scoped writes"
@@ -81,7 +81,8 @@ next_action: "Verify exact PR-head CI (including new Disk II test job), obtain i
 
 - Implemented separate disk2.mjs controller: virtual slot 6 C0E0-C0EF motor/phase/drive/Q6/Q7 soft switches, two independent nibble images, 35 tracks x 6656 nibbles, optional owner-supplied 256-byte slot ROM at C600-C6FF, read-only default and explicit image export.
 - Browser workbench mounts local 232,960-byte .nib files without network, controls drive/motor/read/eject, allows user-supplied authorized ROM. Unlicensed firmware and other disk formats not bundled.
-- Regression TDD: new disk test suite initially failed without component; nine tests now pass alongside 38 existing, total 47/47 local Node 22.
+- Regression TDD: new disk test suite initially failed without component; nine tests now pass alongside 38 existing, total 48/48 local Node 22.
 - This is an instruction-level byte-nibble stream model, not the real Disk II P6 logic state sequencer or certified DOS boot; raw DSK/WOZ and accurate flux/timing still pending.
 - Prior PR head 7dcb8f0 passed 7 remote workflows; new source commit and its exact-head CI/independent approval pending. No merge, deployment, or Android acceptance claimed.
 - Reviewer gate: no recorded independent review. Next action: exact-head Actions test and independent review.
+- S5 regression follow-up: custom 6502 program loading no longer creates a fresh virtual machine, preserving mounted drive data and user ROM. Added red→green UI contract test, now 48/48 local tests. Actual GitHub exact-head CI must be rechecked.

@@ -23,7 +23,7 @@ A zero-hardware, dependency-free, offline-capable software workbench. Not an App
 
 ## Run
 
-From repository root: `node --test test/apple2-infinity.test.mjs` (47 focused tests (38 previous + 9 Disk II)).
+From repository root: `node --test test/apple2-infinity.test.mjs` (48 focused tests (38 previous + 9 Disk II)).
 
 Static site path: `/apple2-infinity/` (HTML + native JavaScript modules; no npm or backend). The browser workbench accepts up to 4,096 hex bytes at `$0800`, lets you step instructions or run at most 2,000 per click, and shows CPU registers, 40/80-column virtual text output, auxiliary memory and language-card selectors plus the Disk II controller panel. Only this demo workbench treats `BRK` as a convenient stop; `Virtual6502.step()` implements the real vector path by default.
 
