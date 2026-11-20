@@ -2,6 +2,7 @@
  * A search result title is not proof of live price, condition, auction type or availability.
  */
 import {fetchLiveSourceResults,liveSourceProfile,safeSourceResultUrl} from './quanta-card-live-source.mjs';
+import {normalizeEbayFeed,safeEbayImageUrl} from './ebay-quick-cards-core.mjs';
 
 export const MARKETPLACE_SOURCES=Object.freeze([
  Object.freeze({id:'ebay',name:'eBay',search:'https://www.ebay.com/sch/i.html?_nkw='}),
@@ -18,6 +19,24 @@ export function marketSearchLink(id,query,mode='all'){
  if(id==='ebay'&&mode==='buy_now')u.searchParams.set('LH_BIN','1');
  return u.href;
 }
+/** Verified public eBay catalog only. Account purchases and member OAuth stay at eBay. */
+export async function fetchVerifiedEbayListings(query,{fetcher=fetch,mode='buy'}={}){
+ const q=boundedQuery(query).slice(0,85);
+ if(q.length<2||!['auction','buy'].includes(mode))return [];
+ const base=typeof location!=='undefined'?location.origin:'https://quantaphi.org';
+ const url=new URL('/api/ebay/quick-cards',base);
+ url.searchParams.set('mode',mode);url.searchParams.set('q',q);
+ try{
+  const response=await fetcher(url.href,{credentials:'same-origin',cache:'no-store',signal:AbortSignal.timeout(8000)});
+  if(!response.ok)return [];
+  const payload=await response.json();
+  if(payload?.ok!==true||payload.provider!=='eBay Browse API'||payload.mode!==mode||
+     !Number.isFinite(Date.parse(payload.fetchedAt))||!Array.isArray(payload.itemSummaries))return [];
+  return normalizeEbayFeed(payload,mode).slice(0,4).map(item=>Object.freeze({
+   ...item,verifiedBy:'eBay Browse API',checkedAt:payload.fetchedAt,checkoutConnected:false
+  }));
+ }catch{return []}
+}
 export function combineMarketplaceResults(results,limit=16){
  const safe=[];
  const sources=MARKETPLACE_SOURCES.map(provider=>{
@@ -28,10 +47,21 @@ export function combineMarketplaceResults(results,limit=16){
  for(let i=0;i<4;i++)for(const {provider,rows} of sources){
   const item=rows[i];if(!item||seen.has(item.url))continue;
   seen.add(item.url);
+  const verified=provider.id==='ebay'&&item.verifiedBy==='eBay Browse API';
   safe.push(Object.freeze({provider:provider.name,providerId:provider.id,
    title:String(item.title||'').trim().slice(0,175),
    url:safeSourceResultUrl(liveSourceProfile(provider.id),item.url),
-   snippet:String(item.snippet||'').slice(0,250)}));
+   snippet:String(item.snippet||'').slice(0,250),
+   ...(verified?{
+    verifiedBy:'eBay Browse API',
+    image:safeEbayImageUrl(item.image),
+    price:String(item.price||'Price unavailable').slice(0,40),
+    seller:String(item.seller||'').slice(0,65),
+    shipping:String(item.shipping||'').slice(0,90),
+    checkedAt:item.checkedAt,
+    canBuyNow:item.canBuyNow===true,
+    checkoutConnected:false
+   }:{})}));
   if(safe.length>=Math.min(16,Math.max(1,Number(limit)||16)))return safe;
  }
  return safe;
@@ -40,19 +70,30 @@ export async function searchMarketplaceListings(query,{fetcher=fetch,sourceIds=M
  const q=boundedQuery(query);
  if(q.length<2)throw Error('marketplace_query_required');
  const eligible=MARKETPLACE_SOURCES.filter(x=>sourceIds.includes(x.id));
- const settled=await Promise.all(eligible.map(async source=>{
+ const [verifiedEbay,settled]=await Promise.all([
+  sourceIds.includes('ebay')?fetchVerifiedEbayListings(q,{fetcher}):Promise.resolve([]),
+  Promise.all(eligible.map(async source=>{
   try{
    const result=await fetchLiveSourceResults(source.id,q,fetcher);
    return {id:source.id,state:result.items.length?'found':'empty',result};
   }catch{return {id:source.id,state:'unavailable',result:null}}
- }));
+  }))
+ ]);
  const status={},sourceResults={};let observedAt='';
  for(const row of settled){
   status[row.id]=row.state;
   if(row.result){sourceResults[row.id]=row.result;observedAt=row.result.checkedAt||observedAt}
  }
+ if(verifiedEbay.length){
+  // Authoritative public eBay listing data replaces eBay indexed snippets, not
+  // source-link searches for the three other marketplaces.
+  sourceResults.ebay={items:verifiedEbay};
+  status.ebay='verified';
+  observedAt=verifiedEbay[0].checkedAt;
+ }
  return {items:combineMarketplaceResults(sourceResults),status,query:q,
-  checkedAt:observedAt||null,method:'Independent public web index · source linked',
+  checkedAt:observedAt||null,method:verifiedEbay.length?
+   'Official eBay Browse API + independently indexed other sellers':'Independent public web index · source linked',
   checkoutConnected:false,biddingConnected:false};
 }
 
@@ -98,11 +139,28 @@ export function mountMarketplaceCarousel(root,card,{search=searchMarketplaceList
   }
   const item=filtered[index];
   const article=el('article','qcm-listing');
-  article.append(el('p','qcm-seller',item.provider+' · Original listing'),
+  if(item.verifiedBy==='eBay Browse API'&&item.image){
+   const image=el('img','qcm-product-image');image.src=item.image;
+   image.alt='eBay seller product photograph: '+item.title;image.loading='lazy';
+   image.referrerPolicy='no-referrer';
+   image.addEventListener('error',()=>image.remove(),{once:true});
+   article.append(image);
+  }
+  article.append(el('p','qcm-seller',item.verifiedBy==='eBay Browse API'
+   ?'eBay · Verified public Browse listing':item.provider+' · Original indexed listing'),
    el('h4','qcm-title',item.title));
+  if(item.verifiedBy==='eBay Browse API'){
+   article.append(el('strong','qcm-product-price',item.price));
+   if(item.seller)article.append(el('p','qcm-product-meta','Seller · '+item.seller));
+   if(item.shipping)article.append(el('p','qcm-product-meta',item.shipping));
+  }
   if(item.snippet)article.append(el('p','qcm-description',item.snippet));
-  article.append(outbound('View listing on '+item.provider,item.url,'qcm-open'));
-  article.append(el('small','qcm-fact','Listed information is from an independent web index. Check the current price, shipping, availability, auction status and seller terms on '+item.provider+'.'));
+  article.append(outbound(item.verifiedBy==='eBay Browse API'&&item.canBuyNow?
+   'Buy on eBay · secure checkout':'View listing on '+item.provider,item.url,'qcm-open'));
+  article.append(el('small','qcm-fact',item.verifiedBy==='eBay Browse API'?
+   'eBay Browse API public catalog · checked '+new Date(item.checkedAt).toLocaleString()+
+   '. Price, shipping and availability can change. Buy only on eBay after sign-in. QuantaPhi checkout is not connected.':
+   'Independently indexed listing. Check current price, shipping, availability and seller terms on '+item.provider+'.'));
   viewer.append(article);
  }
  for(const choice of choices){

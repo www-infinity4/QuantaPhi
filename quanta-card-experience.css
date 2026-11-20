@@ -324,3 +324,10 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-pcla-points{margin:0;padding-left:22px;line-height:1.5}.qcx-pcla-points li{margin:7px 0}
 .qcx-pcla-links{display:flex;flex-wrap:wrap;gap:12px}.qcx-pcla-links .qcx-link{min-height:44px;display:inline-flex;align-items:center}
 .qcx-art.qcx-small[data-brand="pcla-picocela"] .qcx-pcla-company{font-size:25px}
+
+/* Official eBay Browse results enrich the existing marketplace carousel only. */
+.qcm-product-image{display:block;box-sizing:border-box;width:100%;height:clamp(150px,42vw,280px);object-fit:contain;background:#f9fafb;border:1px solid #e5e9ee;border-radius:12px}
+.qcm-product-price{font:850 clamp(21px,5vw,27px)/1.25 system-ui,sans-serif;color:#163f68}
+.qcm-product-meta{font:600 13px/1.45 system-ui,sans-serif;color:#4a5c68;margin:0}
+.qcm-listing .qcm-open{min-height:48px;display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:360px){.qcm-product-image{height:190px}.qcm-listing{padding:12px}}
