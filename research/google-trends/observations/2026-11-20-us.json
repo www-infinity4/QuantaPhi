@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T11:31:16.089121Z",
+  "checked_at": "2026-11-20T12:01:39.045341Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cleetus mcfarland lemullets freedom factory",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T11:10:00Z",
+      "query": "flood watch",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-20T11:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/nascar-urged-look-mirror-cleetus-172305519.html",
-        "https://www.motorsport.com/general/news/carson-hocevar-and-cleetus-mcfarland-win-lemullets-2026/10874411/",
-        "https://www.essentiallysports.com/nascar-news-dale-jr-makes-bold-prediction-on-cleetus-mcfarlands-racing-future/"
+        "https://weather.com/2026/11/20/news/weather/florida-flooding-record-rain",
+        "https://www.cbsnews.com/miami/video/flooding-cleanup-begins-in-south-florida-but-many-communities-remain-underwater/",
+        "https://www.foxweather.com/weather-news/florida-atlantic-coast-flooding-november-torrential-rain-2026"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgppu7Nz7pTAKpuDhv6LZYU2bQtzRVK-y0OpQqSD9Ryht_pyOKS_0nDP8Xf8g",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xYUBxdnCnl2ZeAJ8Om0QkQCxhsqARSzi04cX_jbe_oVR6BQtnhnDWE2rQyw",
+      "image_credit": "The Weather Channel",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/nascar-urged-look-mirror-cleetus-172305519.html",
-          "title": "NASCAR Urged to ‘Look in the Mirror’ After Cleetus McFarland & Carson Hocevar Steal the Spotlight at Freedom Factory",
-          "publisher": "Yahoo Sports",
+          "url": "https://weather.com/2026/11/20/news/weather/florida-flooding-record-rain",
+          "title": "Florida flooding rain topped monthly, fall, all-time records",
+          "publisher": "The Weather Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgppu7Nz7pTAKpuDhv6LZYU2bQtzRVK-y0OpQqSD9Ryht_pyOKS_0nDP8Xf8g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xYUBxdnCnl2ZeAJ8Om0QkQCxhsqARSzi04cX_jbe_oVR6BQtnhnDWE2rQyw"
         },
         {
-          "url": "https://www.motorsport.com/general/news/carson-hocevar-and-cleetus-mcfarland-win-lemullets-2026/10874411/",
-          "title": "Carson Hocevar and Cleetus McFarland win LeMullets 2026 in epic finish",
-          "publisher": "Motorsport.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIpu-LjLDD6dEzFaa9044anq_FiAmlnNnC2S3PFizS4FsyLt39FdowMzv6WD8"
-        },
-        {
-          "url": "https://www.essentiallysports.com/nascar-news-dale-jr-makes-bold-prediction-on-cleetus-mcfarlands-racing-future/",
-          "title": "Dale Jr. Makes Bold Prediction on Cleetus McFarland’s Racing Future",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG6vRxPLTHxm-zt5dmRXn0DD9p1_4NJ3nlPJ8Ro9fanWtJVCWyStWTRj-z33o"
-        }
-      ]
-    },
-    {
-      "query": "india a vs nepal",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T11:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/india-vs-nepal-acc-mens-101517630.html",
-        "https://www.cricbuzz.com/player-match-performance/match/177148/player/1448181/bowling",
-        "https://www.afaqs.com/news/mktg/excitel-becomes-global-sponsor-of-dp-world-asia-cup-rising-stars-2026-12823784"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-i71Z5FaN5T7Fi3zguZwpJWEqYkgcqFL3wDcyneVESSLMnQqjeokwnJsl1qU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/india-vs-nepal-acc-mens-101517630.html",
-          "title": "India vs Nepal ACC Men's Asia Cup Rising Stars score, toss winner, winning probability, result and highlights from Doha",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-i71Z5FaN5T7Fi3zguZwpJWEqYkgcqFL3wDcyneVESSLMnQqjeokwnJsl1qU"
-        },
-        {
-          "url": "https://www.cricbuzz.com/player-match-performance/match/177148/player/1448181/bowling",
-          "title": "Live Cricket Score, Schedule, Latest News, Stats & Videos",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-xk3Rcj6WZEcjbkAek4pqV01ic2l1SQ-Zm1994rmZStJm3oMFps6OMMmlsJM"
-        },
-        {
-          "url": "https://www.afaqs.com/news/mktg/excitel-becomes-global-sponsor-of-dp-world-asia-cup-rising-stars-2026-12823784",
-          "title": "Excitel becomes Global Sponsor of DP World Asia Cup Rising Stars 2026",
-          "publisher": "afaqs!",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN8A1nnn_8PurI7mUD3arH91rhjZuq90m88ciGsQg53TC_T_xUGuGVSwEhA5A"
-        }
-      ]
-    },
-    {
-      "query": "lincolnshire nhs a&e bed delays",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T11:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cq39g0em40e4o",
-        "https://www.itv.com/watch/news/grandmother-with-terminal-cancer-left-for-48-hours-in-hospital-cupboard/ztwcv1c",
-        "https://demokratis.co.id/en/lincoln-hospital-emergency-waits"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX5mAsSVldi6374b363GXJnNsoQYv3MwKmn56JQS4yYYslr3VRjvfmsVluoaQ",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cq39g0em40e4o",
-          "title": "Patient, 83, waited nearly two days in chair at Lincoln A&E, son says",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX5mAsSVldi6374b363GXJnNsoQYv3MwKmn56JQS4yYYslr3VRjvfmsVluoaQ"
-        },
-        {
-          "url": "https://www.itv.com/watch/news/grandmother-with-terminal-cancer-left-for-48-hours-in-hospital-cupboard/ztwcv1c",
-          "title": "Grandmother with terminal cancer left for 48 hours in hospital cupboard",
-          "publisher": "ITVX",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2RHDqzh-adltUjEc3oNhrAZXI32tJN5goSM1XuuTdnojLUF85Jjs5lXacDrM"
-        },
-        {
-          "url": "https://demokratis.co.id/en/lincoln-hospital-emergency-waits",
-          "title": "Lincoln Hospital Patients Face Long Emergency Department Delays",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRE-GGywHFP6ud-3a-7-t4h5LRCb-UGjB5MYxijKxx6PYw152dW03y_GS2eZfo"
-        }
-      ]
-    },
-    {
-      "query": "tim hortons",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T11:00:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/features/2026/11/19/canadas-beloved-tim-hortons-brews-ire-over-excessive-israeli-data-deal",
-        "https://www.cbc.ca/news/canada/app-data-privacy-9.7417814",
-        "https://www.middleeasteye.net/news/tim-hortons-app-sending-user-data-israeli-cybertech-company-advocacy-group-confirms"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEZ4zR7ZEz0YQws1CO_E01fdjCP15EILqhUuvfDRqt21G0k9VU29VJ33Bigt0",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/features/2026/11/19/canadas-beloved-tim-hortons-brews-ire-over-excessive-israeli-data-deal",
-          "title": "Canada’s beloved Tim Hortons brews ire over ‘excessive’ Israeli data deal",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEZ4zR7ZEz0YQws1CO_E01fdjCP15EILqhUuvfDRqt21G0k9VU29VJ33Bigt0"
-        },
-        {
-          "url": "https://www.cbc.ca/news/canada/app-data-privacy-9.7417814",
-          "title": "We tested 6 popular apps to see what data they collect and share. Here’s what we found",
-          "publisher": "CBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNRk5NYY_gJhUzTdCf2RlkthllETVmEwQqgkVJ_Ar2dyHzqMsSfJn_f3_eTSw"
-        },
-        {
-          "url": "https://www.middleeasteye.net/news/tim-hortons-app-sending-user-data-israeli-cybertech-company-advocacy-group-confirms",
-          "title": "Tim Hortons app sending user data to Israeli cybertech company, advocacy group confirms",
-          "publisher": "Middle East Eye",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnyWUS28WAu2rQGyybDU40CdPF-xzzLJLLopD3qqFhWCI00ZghjqemD_V_T2I"
-        }
-      ]
-    },
-    {
-      "query": "mass lottery",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T11:00:00Z",
-      "related_news_urls": [
-        "https://www.patriotledger.com/story/news/lottery/2026/11/12/massachusetts-lottery-results-thursday-november-12-2026/92753653007/",
-        "https://www.cbsnews.com/boston/news/unclaimed-scratch-tickets-massachusetts-lottery/",
-        "https://www.facebook.com/Boston25News/posts/check-those-old-scratch-tickets-before-its-too-late-prizes-from-seven-massachuse/1642487704579556/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeehNfporT8jnYJZwn4_GMbOuN5KpVnHm2gfK6lSBue2qKkTPQKIPz7qRmYXY",
-      "image_credit": "The Patriot Ledger",
-      "news": [
-        {
-          "url": "https://www.patriotledger.com/story/news/lottery/2026/11/12/massachusetts-lottery-results-thursday-november-12-2026/92753653007/",
-          "title": "Mass Lottery Numbers Midday, Numbers Evening winning numbers for Nov. 12, 2026",
-          "publisher": "The Patriot Ledger",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeehNfporT8jnYJZwn4_GMbOuN5KpVnHm2gfK6lSBue2qKkTPQKIPz7qRmYXY"
-        },
-        {
-          "url": "https://www.cbsnews.com/boston/news/unclaimed-scratch-tickets-massachusetts-lottery/",
-          "title": "Unclaimed scratch ticket worth $1 million and more big Massachusetts lottery prizes set to expire soon",
+          "url": "https://www.cbsnews.com/miami/video/flooding-cleanup-begins-in-south-florida-but-many-communities-remain-underwater/",
+          "title": "Flooding cleanup begins in South Florida, but many communities remain underwater",
           "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoiwPFlsdRg1RK_gzBtM36GBrT6WBox-BJKvzxN9htz0QMpcH0xzTzVzq6Ztk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZtFnLvsns70oJdifN15nnDoa6DoVdNnghRjcQ181yEYZRuVLUi9JGOZlctIs"
         },
         {
-          "url": "https://www.facebook.com/Boston25News/posts/check-those-old-scratch-tickets-before-its-too-late-prizes-from-seven-massachuse/1642487704579556/",
-          "title": "Check those old scratch tickets before it’s too late! Prizes from seven Massachusetts Lottery games are about to expire.",
-          "publisher": "Facebook",
+          "url": "https://www.foxweather.com/weather-news/florida-atlantic-coast-flooding-november-torrential-rain-2026",
+          "title": "Florida Atlantic Coast faces dangerous flooding as intense rain prompts emergency declarations and rescues",
+          "publisher": "FOX Weather",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIHRrq65Kq1KRzxENT_5y1lM9nZTuqTvPY6wB8600JOPE5yNcTzZpzsCO1a3c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMOZ2P909Ale9JgZB2NevtCs6KUtTdNRd53ZYcTg8bQCZ46rj_yb07du9WPTY"
         }
       ]
     },
     {
-      "query": "deion sanders",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T10:50:00Z",
+      "query": "tampa weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T11:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7793031/2026/11/19/deion-sanders-death-threats-colorado-football-police-reports/",
-        "https://www.foxnews.com/outkick-sports/deion-sanders-receives-about-five-death-threats-every-day-colorado-football-coach",
-        "https://sports.yahoo.com/articles/deion-sanders-fighting-tooth-nail-094130999.html"
+        "https://www.news4jax.com/weather/2026/11/18/live-radar-weather-authority-alert-thursday-and-friday/",
+        "https://www.tampabay.com/news/weather/2026/11/19/florida-rain-flooding-forecast-hillsborough-pinellas-tampa/",
+        "https://www.wfla.com/weather/forecast/scattered-showers-thu-fri-drier-weekend-ahead/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbfDkjOYrgjj3IbtOosdSpIt7zVvv1C2iWe6ab8pBaXQGPYZM8rVBSP5r73JA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYxl3ovLBgE9I3peLgTSEPOb7hUfvDHIG6YW2IYQxJ5flSWp3LMis7pcMwvPs",
+      "image_credit": "News4JAX",
+      "news": [
+        {
+          "url": "https://www.news4jax.com/weather/2026/11/18/live-radar-weather-authority-alert-thursday-and-friday/",
+          "title": "Live Radar: Weather Authority Alert issued for elevated flooding risk from rounds of windy rain Today through Friday",
+          "publisher": "News4JAX",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYxl3ovLBgE9I3peLgTSEPOb7hUfvDHIG6YW2IYQxJ5flSWp3LMis7pcMwvPs"
+        },
+        {
+          "url": "https://www.tampabay.com/news/weather/2026/11/19/florida-rain-flooding-forecast-hillsborough-pinellas-tampa/",
+          "title": "Tampa Bay spared the worst of Florida’s rain. What to expect this week",
+          "publisher": "Tampa Bay Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSatIk0Mn7qywNTHHZaTYamz_d8VPy2ee6SZFqGTOayCNLgCVbaFAWZcJ9CF38"
+        },
+        {
+          "url": "https://www.wfla.com/weather/forecast/scattered-showers-thu-fri-drier-weekend-ahead/",
+          "title": "Wet pattern continues through Friday before a drier weekend",
+          "publisher": "WFLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-JjKWkkKDWCvA-OQxlPhanJJFFOTr8RtxHOBjuzXoQ0NFfR2CSPoS6018KM"
+        }
+      ]
+    },
+    {
+      "query": "ktla",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T11:30:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/travel/story/2026-11-20/dune-the-experience-downtown-los-angeles",
+        "https://www.facebook.com/deadline/videos/we-got-to-step-into-arrakis-and-the-world-of-denis-villeneuves-dune-at-the-immer/1849314182774041/",
+        "https://ktla.com/news/local-news/dune-the-experience-preview/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKoW17np6iizGAHEyuL5Xk5P63EqlYTYsBHxhJwJqj0wJvhpCw7F6OZEmB7Wc",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/travel/story/2026-11-20/dune-the-experience-downtown-los-angeles",
+          "title": "L.A.’s immersive ‘Dune’ experience takes superfans onto the desert planet of Arrakis",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKoW17np6iizGAHEyuL5Xk5P63EqlYTYsBHxhJwJqj0wJvhpCw7F6OZEmB7Wc"
+        },
+        {
+          "url": "https://www.facebook.com/deadline/videos/we-got-to-step-into-arrakis-and-the-world-of-denis-villeneuves-dune-at-the-immer/1849314182774041/",
+          "title": "Deadline Hollywood. Timothée Chalamet · Desert Chant (from \"Dune: Part Three\"). We got to step into Arrakis and the world of Denis Villeneuve’s #Dune at the immersive experience in",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://ktla.com/news/local-news/dune-the-experience-preview/",
+          "title": "Dune: The Experience preview",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH_NqIQw7OK3eEBHqnDw1LSBQu6EdPIrKlFWLjWbCSz3Me85TLFFBKxZpLW_k"
+        }
+      ]
+    },
+    {
+      "query": "ktla news",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T11:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/19/weather/california-rain-sf-la.html",
+        "https://www.latimes.com/california/story/2026-11-19/socal-atmospheric-river-storm",
+        "https://abc7.com/live-updates/los-angeles-rain-evacuation-warnings-issued-southern-california-burn-scar-areas-ahead-storm/20051889/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3f0sxVZEXOuHejZostP8NXTpyHCmS019G_AQTu-mp3kEHx6oRT8kc8BYeQA",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7793031/2026/11/19/deion-sanders-death-threats-colorado-football-police-reports/",
-          "title": "Deion Sanders says he receives death threats. Police records reveal the troubling details - The Athletic",
+          "url": "https://www.nytimes.com/2026/11/19/weather/california-rain-sf-la.html",
+          "title": "California Storm Sweeps South, Prompting Some Evacuation Warnings in L.A.",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbfDkjOYrgjj3IbtOosdSpIt7zVvv1C2iWe6ab8pBaXQGPYZM8rVBSP5r73JA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3f0sxVZEXOuHejZostP8NXTpyHCmS019G_AQTu-mp3kEHx6oRT8kc8BYeQA"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/deion-sanders-receives-about-five-death-threats-every-day-colorado-football-coach",
-          "title": "Deion Sanders receives 'about five' death threats every day as Colorado football coach",
-          "publisher": "Fox News",
+          "url": "https://www.latimes.com/california/story/2026-11-19/socal-atmospheric-river-storm",
+          "title": "Heavy rain drenches Southern California, prompting rescues, flash flood concerns",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPVF6kGUtRekyS9sQuLYRAiz4_vOh-5Mn8OxbRy7zo5772DJF81dkgEQGUJ5k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIpD9qvGALPJQMtAfjwvzoWffcFej0RTd73_3uSK0e69NmZAWigR_0dG3_8A"
         },
         {
-          "url": "https://sports.yahoo.com/articles/deion-sanders-fighting-tooth-nail-094130999.html",
-          "title": "“Deion Sanders Is Fighting Tooth and Nail Not To Get Fired”: Jason Whitlock Calls Out Coach Prime for “Playing Race Card” With Death Threats Comment",
-          "publisher": "Yahoo Sports",
+          "url": "https://abc7.com/live-updates/los-angeles-rain-evacuation-warnings-issued-southern-california-burn-scar-areas-ahead-storm/20051889/",
+          "title": "SoCal sees flooded roads, water rescues as powerful storm drenches region with rain",
+          "publisher": "ABC7 Los Angeles",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHdu_Nm3w9C1BZp052y2RAYa9mIcztJWa3oag1AYqeB_ZTkh5030Zbk9TDrLA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfrPwnaymK0FKPgde9LRI7o9Xi9BjXXFbAmnmhD0cKZILu89vUGXVULzJU4SM"
         }
       ]
     },
     {
-      "query": "price of oil",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T10:50:00Z",
+      "query": "local news",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T11:30:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
-        "https://www.wsj.com/business/energy-oil/oil-prices-edge-higher-as-traders-assess-middle-east-shipping-risks-supply-outlook-faf8f60a",
-        "https://www.cnbc.com/2026/11/19/oil-brent-wti-price-hormuz.html"
+        "https://www.poynter.org/commentary/2026/maine-local-news-2026-election-coverage-national-media/",
+        "https://patch.com/maine/across-me/maine-legacy-media-failed-poynter",
+        "https://www.poynter.org/commentary/2026/national-news-outlets-local-reporters-2026-election-scoops/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyXmvznpzJNj0hzn_BzQMoPoRsCupMf3NbjseEXvvbhRg7-0eRvG6DLCy7ocM",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXju4guatMQct0GelSOcc4ZIa0m25hAJun5INDGeJmTZAonSTxsqIQTmok5FI",
+      "image_credit": "Poynter",
+      "news": [
+        {
+          "url": "https://www.poynter.org/commentary/2026/maine-local-news-2026-election-coverage-national-media/",
+          "title": "Opinion | Local news is strong in Maine. Coverage of the 2026 campaign proved it.",
+          "publisher": "Poynter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXju4guatMQct0GelSOcc4ZIa0m25hAJun5INDGeJmTZAonSTxsqIQTmok5FI"
+        },
+        {
+          "url": "https://patch.com/maine/across-me/maine-legacy-media-failed-poynter",
+          "title": "Maine legacy media failed: Poynter",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSI9i0VpZwpZv2pWkKFnzNeypTj7gCvmzuUDmetca-fWS2yOuRGdpmN5r-LSJU"
+        },
+        {
+          "url": "https://www.poynter.org/commentary/2026/national-news-outlets-local-reporters-2026-election-scoops/",
+          "title": "Opinion | National news outlets landed the biggest stories of the 2026 campaign. That’s a problem.",
+          "publisher": "Poynter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPIaU8lgybzs3v_kN72WBZGGWjoe32FJ3DQrv4VqVdzxUjF66jNBIpsfbF1Fc"
+        }
+      ]
+    },
+    {
+      "query": "strands hint today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T11:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/19/crosswords/strands-sidekick-992.html",
+        "https://www.pcguide.com/news/todays-nyt-strands-answers-clues-and-hints-on-november-18-puzzle-990/",
+        "https://www.technobezz.com/news/nyt-strands-sports-edition-31-hints-and-answers"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61Km64EyIgf2_JF3FjtcehELeePlGqGcOYRd_QH7s8iNbdpJsE-UR2a0oLk0",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/19/crosswords/strands-sidekick-992.html",
+          "title": "NYT Strands Hints for November 20, 2026",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61Km64EyIgf2_JF3FjtcehELeePlGqGcOYRd_QH7s8iNbdpJsE-UR2a0oLk0"
+        },
+        {
+          "url": "https://www.pcguide.com/news/todays-nyt-strands-answers-clues-and-hints-on-november-18-puzzle-990/",
+          "title": "Today’s NYT Strands answers, clues, and hints on November 18 (puzzle #990)",
+          "publisher": "PC Guide",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xLR9EKGIgNwiuIJRtIJJgZdp83ZzzMePStydpu4GG5YdxPMAwUP_M68LygU"
+        },
+        {
+          "url": "https://www.technobezz.com/news/nyt-strands-sports-edition-31-hints-and-answers",
+          "title": "NYT Strands Sports Edition Hints & Answers for Friday, November 20, 2026 (Puzzle #31)",
+          "publisher": "Technobezz",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwb-fAE6FXFYb7mG_RfWxEwRW14PrSyX2-CCtL5OPB28_F7LQkMwk4TKXHK2k"
+        }
+      ]
+    },
+    {
+      "query": "darlie routier",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T11:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/us/articles/darlie-routier-appeal-cites-dna-233612617.html",
+        "https://www.dmagazine.com/frontburner/2026/11/death-row-north-texas/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2HFrLPHplPL04F0nFJOSS7w_h95KeOf02vJlR74syGpWCJWiFitmv8N75SY",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/us/articles/darlie-routier-appeal-cites-dna-233612617.html",
+          "title": "Darlie Routier appeal cites new DNA evidence in attempt to overturn death sentence",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2HFrLPHplPL04F0nFJOSS7w_h95KeOf02vJlR74syGpWCJWiFitmv8N75SY"
+        },
+        {
+          "url": "https://www.dmagazine.com/frontburner/2026/11/death-row-north-texas/",
+          "title": "More Than 20 People Connected to North Texas Sit on Death Row",
+          "publisher": "D Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBksF4lLJseBGeerl0OXtGkreMjUKdKrk3W8PEJLwJjWCrlj5WFmkBUOMhsyY"
+        }
+      ]
+    },
+    {
+      "query": "earthquake los angeles",
+      "approx_searches": "200000+",
+      "published_at": "2026-11-20T11:20:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/business/environment/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-2026-11-20/",
+        "https://www.edhat.com/beyond-local/news/san-benito-county-earthquake-pinnacles/",
+        "https://www.foxweather.com/weather-news/central-california-struck-dozen-earthquakes-pinnacles"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdOZTxj6jIteFG_a7RNZvPGxIjwB_hoaSPdMEZ_7LzEoVBE5Ywx9-0YxFY3rc",
       "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
-          "title": "Oil prices gain as Houthi attacks on Riyadh raise supply concerns",
+          "url": "https://www.reuters.com/business/environment/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-2026-11-20/",
+          "title": "Magnitude 5.1 earthquake strikes near California's Monterey County, USGS says",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyXmvznpzJNj0hzn_BzQMoPoRsCupMf3NbjseEXvvbhRg7-0eRvG6DLCy7ocM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdOZTxj6jIteFG_a7RNZvPGxIjwB_hoaSPdMEZ_7LzEoVBE5Ywx9-0YxFY3rc"
         },
         {
-          "url": "https://www.wsj.com/business/energy-oil/oil-prices-edge-higher-as-traders-assess-middle-east-shipping-risks-supply-outlook-faf8f60a",
-          "title": "Oil Prices Retreat as Traders Assess Supply Outlook, Middle East Risks",
-          "publisher": "WSJ",
+          "url": "https://www.edhat.com/beyond-local/news/san-benito-county-earthquake-pinnacles/",
+          "title": "5-Magnitude Earthquake Near Pinnacles Felt as Far as Los Angeles and Sacramento",
+          "publisher": "edhat",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ22CSJnD3RAOYRqQDMq-J_2rLqGMRzh5av-Mi5YJbUOx-y2IsBuKq-lrWajN8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiNqcRSGgjyy0eRlVbHfa6Mypjhk5bo1LfesvSBLYuPC3bpWEKGTXcyhP7PsM"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/19/oil-brent-wti-price-hormuz.html",
-          "title": "Oil prices inch up as tanker disruptions offset surplus supply outlook",
-          "publisher": "CNBC",
+          "url": "https://www.foxweather.com/weather-news/central-california-struck-dozen-earthquakes-pinnacles",
+          "title": "Over a dozen earthquakes rattle Central California, Pacific Ring of Fire, including magnitude 5.0 quake",
+          "publisher": "FOX Weather",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwZ4Qq1ewLbksDHP3mfCKr2C7DAH0VfdljQqQnlTn4k19Z3F8Q_bdAb8pbkis"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEV1XZ9wYqOXJli8C4Se7CddCMz8X0zoLR5tbFXmEaXNshsq5ESeA9UYHm1MI"
         }
       ]
     },
     {
-      "query": "dolar hoje",
+      "query": "temblor",
       "approx_searches": "500+",
-      "published_at": "2026-11-20T10:50:00Z",
+      "published_at": "2026-11-20T11:20:00Z",
       "related_news_urls": [
-        "https://g1.globo.com/economia/noticia/2026/11/19/dolar-ibovespa.ghtml",
-        "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/19/dolar-abre-a-r-590-apesar-de-aprovacao-do-plano-moretti-no-senado.ghtm",
-        "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-19112026/"
+        "https://www3.nhk.or.jp/nhkworld/news/20261119de78099/",
+        "https://japantoday.com/category/national/update3-m5.7-quake-strikes-japan's-kumamoto-prefecture-2-injured",
+        "https://www.japantimes.co.jp/news/2026/11/19/japan/kumamoto-quake-no-tsunami-warning/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh6D60bH2L5USwtcS_-YTNK6zUjUe4ZWdmYxWfHSVrwWFVLKZ6WJGUH4TnQMk",
-      "image_credit": "G1",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTnmu9eICyP_g2xQJoTy3sgZ6MZmKOk9RvYMNxBHf7hLrEj-gSkSM7DpuMnEo",
+      "image_credit": "NHKニュース",
       "news": [
         {
-          "url": "https://g1.globo.com/economia/noticia/2026/11/19/dolar-ibovespa.ghtml",
-          "title": "Dólar fecha a R$ 5,93 e tem sexta alta seguida, mesmo após BC vender US$ 1 bilhão; Ibovespa cai",
-          "publisher": "G1",
+          "url": "https://www3.nhk.or.jp/nhkworld/news/20261119de78099/",
+          "title": "A strong earthquake struck southwestern Japan | NHK WORLD-JAPAN News",
+          "publisher": "NHKニュース",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh6D60bH2L5USwtcS_-YTNK6zUjUe4ZWdmYxWfHSVrwWFVLKZ6WJGUH4TnQMk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTnmu9eICyP_g2xQJoTy3sgZ6MZmKOk9RvYMNxBHf7hLrEj-gSkSM7DpuMnEo"
         },
         {
-          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/19/dolar-abre-a-r-590-apesar-de-aprovacao-do-plano-moretti-no-senado.ghtm",
-          "title": "Dólar chega a R$ 5,92, mas modera alta após intervenção do Banco Central",
-          "publisher": "UOL Economia",
+          "url": "https://japantoday.com/category/national/update3-m5.7-quake-strikes-japan's-kumamoto-prefecture-2-injured",
+          "title": "M5.7 quake strikes Kumamoto Prefecture; 2 injured",
+          "publisher": "Japan Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbc-IGusv8miZQ_78hHSsEeW5ocA-uZW89UOHsoUN-p4lMDfZ40WpukfRLCs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0U0wbYhLH2yYJTsdUScD0qbztksuDdcJBXKJjwR5-tEETWhgM1Oklp0NnTjc"
         },
         {
-          "url": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-19112026/",
-          "title": "Dólar hoje sobe 1,1% e fecha a R$ 5,93 em meio a temor fiscal, apesar de leilão do BC",
-          "publisher": "InfoMoney",
+          "url": "https://www.japantimes.co.jp/news/2026/11/19/japan/kumamoto-quake-no-tsunami-warning/",
+          "title": "Magnitude 5.7 quake jolts Kumamoto Prefecture, but no tsunami warning issued",
+          "publisher": "The Japan Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRf2jgpa7ZVAJmxkzDzdL1sjTXxceSgoQ3wXACMozyRj2tB9Ki51Xi5KMqnlw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW6ldlSeU7jNX1o-1n69NaxjbjUMB0aCg_ftjKTMck6qDWRa2WvtoKM8coyv8"
         }
       ]
     },
     {
-      "query": "nc lottery",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T10:50:00Z",
+      "query": "地震",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T11:20:00Z",
       "related_news_urls": [
-        "https://nclottery.com/NewsBlogDetails/2026/11/18/Cumberland-County-dad-will-take-daughter-to-Disney-World-with-200000-win",
-        "https://www.yahoo.com/news/articles/nc-lottery-pick-3-day-043003156.html",
-        "https://demokratis.co.id/en/north-carolina-november-18-results"
+        "https://www.8world.com/world/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-3346356",
+        "https://china.kyodonews.net/articles/-/18496",
+        "https://mil.ifeng.com/c/8y9WDK3T8g2"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2hr3MSTrjS8M-r_9FG9tQHj9aQbRa7tPhWsAcCNBkXO_FpfPe4E2vwLfxAmg",
-      "image_credit": "NC Education Lottery",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ32tXXSp636OsuhiDzX9eXxkXrMqGXGRzp1eK9vOx5lrXejVOx5E1SUxZA9z8",
+      "image_credit": "8world",
       "news": [
         {
-          "url": "https://nclottery.com/NewsBlogDetails/2026/11/18/Cumberland-County-dad-will-take-daughter-to-Disney-World-with-200000-win",
-          "title": "Cumberland County dad will take daughter to Disney World with $200,000 win",
-          "publisher": "NC Education Lottery",
+          "url": "https://www.8world.com/world/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-3346356",
+          "title": "美国加州发生5.1级地震",
+          "publisher": "8world",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2hr3MSTrjS8M-r_9FG9tQHj9aQbRa7tPhWsAcCNBkXO_FpfPe4E2vwLfxAmg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ32tXXSp636OsuhiDzX9eXxkXrMqGXGRzp1eK9vOx5lrXejVOx5E1SUxZA9z8"
         },
         {
-          "url": "https://www.yahoo.com/news/articles/nc-lottery-pick-3-day-043003156.html",
-          "title": "NC Lottery Pick 3 Day, Pick 3 Evening results for Nov. 19, 2026",
-          "publisher": "Yahoo",
+          "url": "https://china.kyodonews.net/articles/-/18496",
+          "title": "快讯：高市与习近平在APEC会场握手",
+          "publisher": "共同网",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHiC5u-85FZuIXXGnRoiHn8jinTYQVUJGSkL2lPhNkfFkGLUNdRYkqYhesgcY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSrS3z7WILavH2XwYDzzKRkUZg2NSmgZp-1OpqujBcoBN7SGpJ8JWiCCaEGdk"
         },
         {
-          "url": "https://demokratis.co.id/en/north-carolina-november-18-results",
-          "title": "North Carolina Lottery Releases November 18 Draw Results",
-          "publisher": "Demokratis.co.id",
+          "url": "https://mil.ifeng.com/c/8y9WDK3T8g2",
+          "title": "美国漫天要价，开出3倍驻日美军账单，日本坐地还钱：打5折",
+          "publisher": "凤凰网",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_eq3bxZLyUZbs5nt6OXD6N5sTUgyONAvsFkz4OmK5McpsAoPPZgAwpDyMeGM"
-        }
-      ]
-    },
-    {
-      "query": "new york yankees",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T10:30:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/commissioner-rob-manfred-discusses-salary-cap-and-floor-proposals",
-        "https://www.espn.com/mlb/story/_/id/50523785/rob-manfred-says-mlb-owners-compromise-salary-cap",
-        "https://sports.yahoo.com/mlb/article/mlb-lockout-watch-with-less-than-2-weeks-before-a-shutdown-heres-what-baseball-fans-need-to-know-214839820.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv7Gb0v-eoPbxbmVwcv-WPc0-MZRWBPQd3-If3WGtG05qhO-Fj3zugXVHYxfo",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/commissioner-rob-manfred-discusses-salary-cap-and-floor-proposals",
-          "title": "Commissioner Manfred ‘can’t imagine’ owners ratifying a deal without salary cap and floor",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv7Gb0v-eoPbxbmVwcv-WPc0-MZRWBPQd3-If3WGtG05qhO-Fj3zugXVHYxfo"
-        },
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50523785/rob-manfred-says-mlb-owners-compromise-salary-cap",
-          "title": "Rob Manfred says MLB owners won't compromise on salary cap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_nDMVSJ_NqcUH4J3qQ-eQCFMi7pFD-fGhRoLyrKY7uHlWeDhAo3i6swqMPaQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/mlb/article/mlb-lockout-watch-with-less-than-2-weeks-before-a-shutdown-heres-what-baseball-fans-need-to-know-214839820.html",
-          "title": "MLB lockout watch: With less than 2 weeks before a shutdown, here's what baseball fans need to know",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToA-MVUH8YhEk8C71Z5z9j3k36KUKjrkX4ArEuckkH8T202-GMn41Ot7eZXDE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy0SPKM0bwsAYdAz4LLKODWTClq-SVlA6cFJDco9l2F-Bd_8dYM6aQVCqN6ms"
         }
       ]
     }
