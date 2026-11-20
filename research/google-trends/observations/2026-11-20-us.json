@@ -3,253 +3,226 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T01:01:36.649979Z",
+  "checked_at": "2026-11-20T01:32:59.050173Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "harrison ford",
+      "query": "jalen brunson",
       "approx_searches": "1000+",
-      "published_at": "2026-11-20T00:40:00Z",
+      "published_at": "2026-11-20T01:10:00Z",
       "related_news_urls": [
-        "https://people.com/harrison-ford-calista-flockhart-step-out-glamorous-night-together-receive-first-joint-award-12264224",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/harrison-ford-84-calista-flockhart-101602266.html",
-        "https://parade.com/celebrities/ally-mcbeal-star-62-turns-heads-rare-red-carpet-appearance-alongside-superstar-husband-calista-flockhart-harrison-ford"
+        "https://people.com/jalen-brunson-reveals-how-daughter-inspired-the-release-of-his-first-ever-childrens-book-exclusive-12263215",
+        "https://dailyknicks.com/knicks-making-even-harder-defenses-stop-jalen-brunson",
+        "https://www.dazn.com/en-GB/news/basketball/tyler-kolek-knicks-nba-assist-turnover-ratio-leader/1rfiyau1ysi0f1mcpb7yeenyq7"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnKvQUhHXH7eXaHc8bYKjvUydpYdieY-RhoaKNpV1WNm9dlMi3uZQgkqzX3mU",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzC5jBdzYP1YYJZUpNhhQGmNuM2G9ZO5X9UezZEa5c5vBMawGc6gNFq3sRoHM",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/harrison-ford-calista-flockhart-step-out-glamorous-night-together-receive-first-joint-award-12264224",
-          "title": "Harrison Ford and Calista Flockhart Step Out for Date Night to Celebrate Joint Career Milestone Award",
+          "url": "https://people.com/jalen-brunson-reveals-how-daughter-inspired-the-release-of-his-first-ever-childrens-book-exclusive-12263215",
+          "title": "Jalen Brunson Reveals How His Daughter Inspired the Release of His First-Ever Children’s Book (Exclusive)",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnKvQUhHXH7eXaHc8bYKjvUydpYdieY-RhoaKNpV1WNm9dlMi3uZQgkqzX3mU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzC5jBdzYP1YYJZUpNhhQGmNuM2G9ZO5X9UezZEa5c5vBMawGc6gNFq3sRoHM"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/harrison-ford-84-calista-flockhart-101602266.html",
-          "title": "Harrison Ford, 84, and Calista Flockhart, 62, turn heads with age-defying appearance in matching outfits",
-          "publisher": "Yahoo",
+          "url": "https://dailyknicks.com/knicks-making-even-harder-defenses-stop-jalen-brunson",
+          "title": "Knicks are making it even harder for defenses to stop Jalen Brunson",
+          "publisher": "Daily Knicks",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROH0Wq_D-O4YZ92cg9m1-Wlmgt_TGazsfk9mVxsehJnNuhoAqNEtQdrVzXwJc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYZSX9A1MGbQ71BaSrGXNY5hxVEe6DBOMghYI8Ff7h97nH6VcoM3rnX9TYI_4"
         },
         {
-          "url": "https://parade.com/celebrities/ally-mcbeal-star-62-turns-heads-rare-red-carpet-appearance-alongside-superstar-husband-calista-flockhart-harrison-ford",
-          "title": "‘Ally McBeal’ Star, 62, Turns Heads in Rare Red Carpet Appearance Alongside Superstar Husband",
-          "publisher": "Parade Magazine",
+          "url": "https://www.dazn.com/en-GB/news/basketball/tyler-kolek-knicks-nba-assist-turnover-ratio-leader/1rfiyau1ysi0f1mcpb7yeenyq7",
+          "title": "Knicks' Tyler Kolek leads NBA point guards in surprising stat",
+          "publisher": "DAZN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNEOjhJQnEVD5uONuqQpgzf8umcpFitjyJRJh-1wIO_A-mwvH3KTNoWK6Z0a4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8TavsN_6RvZPflbaIlku3Pjd1h6a3tRh_-TaR-cMxhH0ZD6ajAPzjiNqRQ5o"
         }
       ]
     },
     {
-      "query": "bo french",
+      "query": "madden cast",
       "approx_searches": "1000+",
-      "published_at": "2026-11-20T00:40:00Z",
+      "published_at": "2026-11-20T01:10:00Z",
       "related_news_urls": [
-        "https://www.politico.com/news/2026/11/18/bo-french-texas-country-club-membership-01173063",
-        "https://people.com/texas-republican-loses-country-club-membership-over-racist-posts-2-weeks-after-losing-election-12265270",
-        "https://www.yahoo.com/news/politics/articles/bo-french-loses-texas-election-181534144.html"
+        "https://www.nytimes.com/athletic/7791034/2026/11/18/madden-movie-john-madden-nicolas-cage/",
+        "https://www.usatoday.com/story/sports/nfl/columnist/nate-davis/2026/11/19/madden-movie-nicolas-cage-christian-bale-flop/92867653007/",
+        "https://bleacherreport.com/articles/25534332-ranking-10-best-football-movies-all-time"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA0Kp7fiBI7kOtBFxsFdAtZeaf1goWlkpX2BQJOP6geyQft8vNsKPapou-WGQ",
-      "image_credit": "Politico",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYQ8t83_kh9IEv0Y-QCtMGpH0JiD_v4_GidEWZANVkrCdHwgWuVhO8stONv0Y",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.politico.com/news/2026/11/18/bo-french-texas-country-club-membership-01173063",
-          "title": "Bo French loses Texas country club membership",
-          "publisher": "Politico",
+          "url": "https://www.nytimes.com/athletic/7791034/2026/11/18/madden-movie-john-madden-nicolas-cage/",
+          "title": "The ‘Madden’ movie whiffed on the title character, even if it has redeeming qualities",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA0Kp7fiBI7kOtBFxsFdAtZeaf1goWlkpX2BQJOP6geyQft8vNsKPapou-WGQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYQ8t83_kh9IEv0Y-QCtMGpH0JiD_v4_GidEWZANVkrCdHwgWuVhO8stONv0Y"
         },
         {
-          "url": "https://people.com/texas-republican-loses-country-club-membership-over-racist-posts-2-weeks-after-losing-election-12265270",
-          "title": "Texas Republican Loses Country Club Membership Over ‘Racist Posts’ 2 Weeks After Losing Election",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4VKiJ5P5wLFTWlzicQ_NrBFSoQOWKxsWEjAvqYDWwM7_0fxYfRmb1NTAghps"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/bo-french-loses-texas-election-181534144.html",
-          "title": "Bo French loses Texas election, gets booted from country club after UT racism roil",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqnEvlbTnjYwA_WJVMlWTJMM_lMMJS4JKpmfPaWAcmDxip--4fs7JyINGBl48"
-        }
-      ]
-    },
-    {
-      "query": "davis martin",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T00:30:00Z",
-      "related_news_urls": [
-        "https://www.mlbtraderumors.com/2026/11/white-sox-to-trade-davis-martin-luis-castillo-to-rockies.html",
-        "https://www.soxon35th.com/white-sox-trade-davis-martin-luis-castillo-to-rockies/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH4WlYdtmVhjVqflC1DmA5sHopfC9MpfdMHfiL9vxZp57eepO4dlbuq4Wg5f8",
-      "image_credit": "MLB Trade Rumors",
-      "news": [
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/white-sox-to-trade-davis-martin-luis-castillo-to-rockies.html",
-          "title": "White Sox To Trade Davis Martin, Luis Castillo To Rockies",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH4WlYdtmVhjVqflC1DmA5sHopfC9MpfdMHfiL9vxZp57eepO4dlbuq4Wg5f8"
-        },
-        {
-          "url": "https://www.soxon35th.com/white-sox-trade-davis-martin-luis-castillo-to-rockies/",
-          "title": "White Sox trade Davis Martin, Luis Castillo to the Rockies",
-          "publisher": "Sox On 35th",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_-jaIlLOHQSRlRWnomYhWtfYVjZcBiZlvXy_uqMSLDsezV1TrqD_YQbnbA60"
-        }
-      ]
-    },
-    {
-      "query": "22nd amendment",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T00:30:00Z",
-      "related_news_urls": [
-        "https://people.com/trump-nominated-judge-refuses-to-say-he-cant-run-for-third-term-12263450",
-        "https://truthout.org/articles/trump-judge-nominee-wont-say-if-he-can-run-for-president-a-third-time/",
-        "https://www.cornyn.senate.gov/news/video-cornyn-introduces-james-sullivan-in-judiciary-committee-to-be-a-u-s-district-judge-for-the-western-district-of-texas/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVeqFG57xPkFLeswjwjZcMlQHVfetq8XgtgN2pMKc7LnTlM0RzvuNOFWQynVc",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/trump-nominated-judge-refuses-to-say-he-cant-run-for-third-term-12263450",
-          "title": "Trump-Nominated Judge Refuses to Say the President Can’t Run for a Third Term",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVeqFG57xPkFLeswjwjZcMlQHVfetq8XgtgN2pMKc7LnTlM0RzvuNOFWQynVc"
-        },
-        {
-          "url": "https://truthout.org/articles/trump-judge-nominee-wont-say-if-he-can-run-for-president-a-third-time/",
-          "title": "Trump Judicial Nominee Won’t Say If He Can Run for President a Third Time",
-          "publisher": "Truthout",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpQU3RjuWOVy99bm-4LZAbhJK2RH2KhM5Owxcxg92ca69qsxS2pdr6iPITHIo"
-        },
-        {
-          "url": "https://www.cornyn.senate.gov/news/video-cornyn-introduces-james-sullivan-in-judiciary-committee-to-be-a-u-s-district-judge-for-the-western-district-of-texas/",
-          "title": "VIDEO: Cornyn Introduces James Sullivan in Judiciary Committee to be a U.S. District Judge for the Western District of Texas",
-          "publisher": "Senator Cornyn (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAnZzqAgPyQDb8xmJTNZJ4gzgr0t7def8uL4Or-iuneITpFCr3loXTiJFJDz4"
-        }
-      ]
-    },
-    {
-      "query": "butler basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T00:30:00Z",
-      "related_news_urls": [
-        "https://www.wthr.com/article/news/crime/two-indiana-men-charged-in-600-million-dollar-ponzi-scheme/531-03bd3401-e425-40eb-8d88-2655a030012a",
-        "https://www.indystar.com/story/sports/2026/11/19/indiana-ponzi-scheme-fbi-devin-johnson-phil-williams-droplight-butler-athletics-rll-indy-eleven/92861320007/",
-        "https://fox59.com/news/indycrime/2-indiana-men-backward-hat-capital-founders-charged-in-600-million-ponzi-scheme/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLAFCEyrhpDJfY7Wro_IPMTTHJD2nbRqsQr6Gj_jR37uzr-3Qy8Mu_5wC4zZI",
-      "image_credit": "WTHR",
-      "news": [
-        {
-          "url": "https://www.wthr.com/article/news/crime/two-indiana-men-charged-in-600-million-dollar-ponzi-scheme/531-03bd3401-e425-40eb-8d88-2655a030012a",
-          "title": "2 Indiana men charged in $600 million Ponzi scheme",
-          "publisher": "WTHR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLAFCEyrhpDJfY7Wro_IPMTTHJD2nbRqsQr6Gj_jR37uzr-3Qy8Mu_5wC4zZI"
-        },
-        {
-          "url": "https://www.indystar.com/story/sports/2026/11/19/indiana-ponzi-scheme-fbi-devin-johnson-phil-williams-droplight-butler-athletics-rll-indy-eleven/92861320007/",
-          "title": "Man charged in $600 million Ponzi scheme has ties to Butler Athletics, IndyCar team, more",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3hxRzArJea6YyMxCEnPZdZ900ut7FWwYa8zZyjk93HeslZfPBU_SP5F9mzj8"
-        },
-        {
-          "url": "https://fox59.com/news/indycrime/2-indiana-men-backward-hat-capital-founders-charged-in-600-million-ponzi-scheme/",
-          "title": "2 Indiana men, Backward Hat Capital founders charged in $600 million Ponzi scheme",
-          "publisher": "Fox 59",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIszSA9kRosjxbpThyWAYGgOeU8FnGq3zS99-qc5j7LAP08oXt_otKCr0fGnQ"
-        }
-      ]
-    },
-    {
-      "query": "justin pippen",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T00:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401916317",
-        "https://247sports.com/college/ohio-state/article/3-point-analysis-ohio-state-basketball-still-shows-issues-in-win-over-prairie-view-am-panthers-292893751/",
-        "https://www.dispatch.com/story/sports/college/basketball/2026/11/17/prairie-view-am-shows-ohio-state-basketball-still-maturing-takeaways/92806789007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPsno-XGyRfSjTChH3PG18oyIqK1ZFuk2rN6d9-NDQ6S4Kw6VS09_T5y7NBYg",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401916317",
-          "title": "Ohio State 86-59 Prairie View A&M (Nov 16, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPsno-XGyRfSjTChH3PG18oyIqK1ZFuk2rN6d9-NDQ6S4Kw6VS09_T5y7NBYg"
-        },
-        {
-          "url": "https://247sports.com/college/ohio-state/article/3-point-analysis-ohio-state-basketball-still-shows-issues-in-win-over-prairie-view-am-panthers-292893751/",
-          "title": "3-point analysis: Ohio State still shows issues in win over Prairie View A&M",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYM_-xBVvMjNFTU6_eJKSLuaOqYlwhMzWywhTNesutM-gAB4QwOwYuxEa1Xk4"
-        },
-        {
-          "url": "https://www.dispatch.com/story/sports/college/basketball/2026/11/17/prairie-view-am-shows-ohio-state-basketball-still-maturing-takeaways/92806789007/",
-          "title": "First half vs Prairie View A&M shows Ohio State still maturing: Takeaways",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThT19BI0HX3RZaRRzeULKfWqDYaUzZScAoASeLNCLUNyNgbYLs5ViBHZr5t-s"
-        }
-      ]
-    },
-    {
-      "query": "taylor sheridan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T00:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/18/taylor-sheridan-yellowstone-lioness-budgets-nbc-deal/92841320007/",
-        "https://finance.yahoo.com/video/taylor-sheridan-talks-career-altering-moves-and-saving-a-historic-ranch-154546711.html",
-        "https://www.foxnews.com/outkick-culture/ive-never-had-show-canceled-taylor-sheridan-explains-big-move-nbcuniversal"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN7Ew3r5Gvwt5LpVhYjsoQ-pX13-nxqQGQF5VRqNufh9lXXqFzMOdMQxnvsbo",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/18/taylor-sheridan-yellowstone-lioness-budgets-nbc-deal/92841320007/",
-          "title": "'Yellowstone' creator Taylor Sheridan defends massive TV show budgets",
+          "url": "https://www.usatoday.com/story/sports/nfl/columnist/nate-davis/2026/11/19/madden-movie-nicolas-cage-christian-bale-flop/92867653007/",
+          "title": "Five reasons why 'Madden' movie fails miserably | Opinion",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN7Ew3r5Gvwt5LpVhYjsoQ-pX13-nxqQGQF5VRqNufh9lXXqFzMOdMQxnvsbo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsOHLYjmax9SUWtd6xBd2EBZw7tFrhLtH23IQuLu7J3elR3tcjStdYFkp1Sik"
         },
         {
-          "url": "https://finance.yahoo.com/video/taylor-sheridan-talks-career-altering-moves-and-saving-a-historic-ranch-154546711.html",
-          "title": "Taylor Sheridan talks career-altering moves and saving a historic ranch",
-          "publisher": "Yahoo Finance",
+          "url": "https://bleacherreport.com/articles/25534332-ranking-10-best-football-movies-all-time",
+          "title": "Ranking the 10 Best Football Movies of All Time",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuj3jm3jBB5QYeqcCVfFhNQlsA0Nzz7c08ZKl8RkIgdQVjgMcazWbF74yEOtw"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-culture/ive-never-had-show-canceled-taylor-sheridan-explains-big-move-nbcuniversal",
-          "title": "'I've never had a show canceled:' Taylor Sheridan explains his big move to NBCUniversal",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQg6P-GRLpFOjPzXJ8v5GDER8yqL1Iu-DaxV8ENJpiOsThZUunKQcbvdpkUDDw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7BRLoijmMA1OIzUx5pY5qaKNnOLt0u5KuWebkze5buizaihDIVshJwzHPIic"
         }
       ]
     },
     {
-      "query": "colts qb",
+      "query": "nocturne apple tv",
       "approx_searches": "200+",
-      "published_at": "2026-11-20T00:20:00Z",
+      "published_at": "2026-11-20T01:10:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66109226/?ref_=int_nwr_2",
+        "https://www.avclub.com/nocturne-recap-season-1-episode-4-the-courier",
+        "https://awardsradar.com/2026/11/18/tv-review-nocturne/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTphpIzeRYQxMdjnC7a5MnEAKVIFE_ge4sBi93gWk4hEZNmADtciVowBT51nsQ",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66109226/?ref_=int_nwr_2",
+          "title": "‘Nocturne’ Episode 5 Release Date, Time, Where to Watch and Preview",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTphpIzeRYQxMdjnC7a5MnEAKVIFE_ge4sBi93gWk4hEZNmADtciVowBT51nsQ"
+        },
+        {
+          "url": "https://www.avclub.com/nocturne-recap-season-1-episode-4-the-courier",
+          "title": "Something is missing on a slightly confusing Nocturne",
+          "publisher": "A.V. Club",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIHCPNHclYRPnD5BxcYJ24aGfD00pDdSYYCOwJQk-FgXB1wPLVOD61QOILGvQ"
+        },
+        {
+          "url": "https://awardsradar.com/2026/11/18/tv-review-nocturne/",
+          "title": "TV Review: 'Nocturne' is a Twisted Psychological Thriller with a Killer Who's Just as Dangerous Behind Bars",
+          "publisher": "Awards Radar",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzf9FAmDa0qM_4t6QMQ_Ehph1fu0KIX9ry2a7ADP9PuIKGrNp8gQswPihDYHA"
+        }
+      ]
+    },
+    {
+      "query": "wisconsin basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T01:10:00Z",
+      "related_news_urls": [
+        "https://uwbadgers.com/news/2026/11/17/mens-basketball-five-things-to-know-badgers-head-to-bahamas-for-baha-mar-championship",
+        "https://247sports.com/college/wisconsin/article/wisconsin-badgers-greg-gard-seton-hall-pirates-292969100/",
+        "https://www.jsonline.com/story/sports/college/uw/2026/11/19/watch-wisconsin-basketball-vs-seton-hall-tonight-time-tv-channel/92855133007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzpofa30jiGrkRZXfbpS9NmWbxlBm4TAoyGt7RV5tFp2v0-aHN3c5SlBVIi1s",
+      "image_credit": "Wisconsin Badgers",
+      "news": [
+        {
+          "url": "https://uwbadgers.com/news/2026/11/17/mens-basketball-five-things-to-know-badgers-head-to-bahamas-for-baha-mar-championship",
+          "title": "Five Things to Know: Badgers head to Bahamas for Baha Mar Championship",
+          "publisher": "Wisconsin Badgers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzpofa30jiGrkRZXfbpS9NmWbxlBm4TAoyGt7RV5tFp2v0-aHN3c5SlBVIi1s"
+        },
+        {
+          "url": "https://247sports.com/college/wisconsin/article/wisconsin-badgers-greg-gard-seton-hall-pirates-292969100/",
+          "title": "Baha Mar Championship Preview: Wisconsin Badgers vs. Seton Hall Pirates",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5-CE0pc-ElDa4ETu1Rn0SgZ_M46iWTRKn-eM-jqzTpyxRdcr_X6QQAIgKBE4"
+        },
+        {
+          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/19/watch-wisconsin-basketball-vs-seton-hall-tonight-time-tv-channel/92855133007/",
+          "title": "What channel is Wisconsin vs Seton Hall on tonight? Time, TV, stream",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLbx6Ra6YpRijIMB6t5ClJJl2km4Ikwgz_gCXKHSGPuinQT43kU2pmTWAwBnw"
+        }
+      ]
+    },
+    {
+      "query": "victoria broderick",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T01:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/18/us/politics/new-members-congress.html",
+        "https://www.politico.com/news/magazine/2026/11/18/new-congress-surprise-candidates-01170191",
+        "https://blog.fiftyplusone.news/p/how-wave-babies-took-over-congress"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTq-gpUlStOLbqiHsMatKujSHisKarr0uRYneS_8JwOI1eBD3w9Q_a7a-WJdU0",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/18/us/politics/new-members-congress.html",
+          "title": "New Members Get a Congress Crash Course With Grade School Vibes",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTq-gpUlStOLbqiHsMatKujSHisKarr0uRYneS_8JwOI1eBD3w9Q_a7a-WJdU0"
+        },
+        {
+          "url": "https://www.politico.com/news/magazine/2026/11/18/new-congress-surprise-candidates-01170191",
+          "title": "The Democrats Who Washington Never Saw Coming",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9BQyvnnjENAvZLoVyvX1_cVk65DfSv3FctuGfB1EoKrCxWfC6NWl9cNhmScU"
+        },
+        {
+          "url": "https://blog.fiftyplusone.news/p/how-wave-babies-took-over-congress",
+          "title": "How “wave babies” took over Congress",
+          "publisher": "FiftyPlusOne",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyXC8Krf9oieYhMw4u3yJahBGUoarQXnMWTtwjO_P2xjyGg1_a1-7qdxXla2s"
+        }
+      ]
+    },
+    {
+      "query": "flash flooding florida",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-20T01:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/19/weather/florida-floods-rain-closures-evacuations.html",
+        "https://www.cbsnews.com/miami/video/cleanup-is-a-slow-process-for-neighbors-in-hollywood-affected-by-flooding-heavy-rain/",
+        "https://www.foxweather.com/weather-news/florida-atlantic-coast-flooding-november-torrential-rain-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XlHqnBP_kupn2xxlUVKno_Z0thIeQuj7GxKXA8XagnbUgglf7KuG597p6sI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/19/weather/florida-floods-rain-closures-evacuations.html",
+          "title": "In Florida, More Rain Threatens Flooded Areas and Roads",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XlHqnBP_kupn2xxlUVKno_Z0thIeQuj7GxKXA8XagnbUgglf7KuG597p6sI"
+        },
+        {
+          "url": "https://www.cbsnews.com/miami/video/cleanup-is-a-slow-process-for-neighbors-in-hollywood-affected-by-flooding-heavy-rain/",
+          "title": "Cleanup is a slow process for neighbors in Hollywood affected by flooding, heavy rain",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlQBhbXTs-TcR9Dsmn8KLphWw3jck_rNCqmelkPjqhttQLgmercMRGz4EK_EI"
+        },
+        {
+          "url": "https://www.foxweather.com/weather-news/florida-atlantic-coast-flooding-november-torrential-rain-2026",
+          "title": "Florida Atlantic Coast faces Level 4 out of 4 flash flood risk as intense rain prompts emergency declarations",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMOZ2P909Ale9JgZB2NevtCs6KUtTdNRd53ZYcTg8bQCZ46rj_yb07du9WPTY"
+        }
+      ]
+    },
+    {
+      "query": "daniel jones",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T01:00:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50521994/colts-anthony-richardson-daniel-jones-quarterback",
-        "https://sports.yahoo.com/articles/colts-rumors-indy-insider-drops-003634685.html",
+        "https://sports.yahoo.com/articles/colts-rumors-daniel-jones-stinks-180128968.html",
         "https://www.si.com/nfl/why-thursday-night-in-houston-could-mark-end-of-colts-daniel-jones-era"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVHehAJlRbc5Vz35vwxySCfTmL81fb7zRDrW8tKrUOtaAa2xqyU4RvDZEszqc",
@@ -263,11 +236,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVHehAJlRbc5Vz35vwxySCfTmL81fb7zRDrW8tKrUOtaAa2xqyU4RvDZEszqc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/colts-rumors-indy-insider-drops-003634685.html",
-          "title": "Colts rumors: Indy insider drops Anthony Richardson revelation as Shane Steichen refuses to play him",
+          "url": "https://sports.yahoo.com/articles/colts-rumors-daniel-jones-stinks-180128968.html",
+          "title": "Colts rumors: Daniel Jones stinks, but Shane Steichen is a real Anthony Richardson hater",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAqeeWEX0xh77rz_iUm-yO5DDwEcmvmcCPibYdvBa6E0YK-rEq_pgZuOnqDFg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpasBg2CAUbCtlsuoVKwiMA0LNcx2SgGHp4QD_tYGeewDeHSK4ZIjKAtsj05g"
         },
         {
           "url": "https://www.si.com/nfl/why-thursday-night-in-houston-could-mark-end-of-colts-daniel-jones-era",
@@ -279,72 +252,107 @@
       ]
     },
     {
-      "query": "clippers vs spurs",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-20T00:10:00Z",
+      "query": "ducks vs avalanche",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T01:00:00Z",
       "related_news_urls": [
-        "https://www.poundingtherock.com/spurs-game-previews/110399/game-preview-san-antonio-spurs-vs-los-angeles-clippers",
-        "https://sports.yahoo.com/videos/exploit-las-sluggish-defense-spurs-163031800.html",
-        "https://www.nytimes.com/athletic/7795412/2026/11/19/clippers-vs-spurs-stream-how-to-watch-nov-19/"
+        "https://www.nhl.com/news/anaheim-ducks-colorado-avalanche-game-preview-november-19-2026",
+        "https://www.milehighhockey.com/colorado-avalanche-game-coverage/67925/preview-colorado-aims-to-go-duck-hunting-tonight",
+        "https://www.si.com/nhl/avalanche/onsi/news/avalanche-vs-ducks-projected-lines-injuries-force-another-lineup-shakeup"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY0TIBouFxau2Dc5UqK6aQKMIWSe8KEMP9irf86IJEZ7g_1f9TlzJm9kvFa80",
-      "image_credit": "Pounding The Rock",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.poundingtherock.com/spurs-game-previews/110399/game-preview-san-antonio-spurs-vs-los-angeles-clippers",
-          "title": "Game Preview: San Antonio Spurs vs. Los Angeles Clippers",
-          "publisher": "Pounding The Rock",
+          "url": "https://www.nhl.com/news/anaheim-ducks-colorado-avalanche-game-preview-november-19-2026",
+          "title": "Ducks at Avalanche projected lineups",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY0TIBouFxau2Dc5UqK6aQKMIWSe8KEMP9irf86IJEZ7g_1f9TlzJm9kvFa80"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://sports.yahoo.com/videos/exploit-las-sluggish-defense-spurs-163031800.html",
-          "title": "Exploit LA's Sluggish Defense With Spurs 1H",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.milehighhockey.com/colorado-avalanche-game-coverage/67925/preview-colorado-aims-to-go-duck-hunting-tonight",
+          "title": "Preview: Colorado aims to go Duck hunting tonight",
+          "publisher": "Mile High Hockey",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCbZ_JGiIX_jd5MZDyuf19VVcrmEO11vAqAaHqZ0pTLz2BfAbsqW0lBp0znqs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZfTrZHXaDMXPWPRQuz4Rztu9OdCimQ4dUv04m6wNFIIwI-LwF3RuT8QXDw6Q"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7795412/2026/11/19/clippers-vs-spurs-stream-how-to-watch-nov-19/",
-          "title": "How to watch Clippers vs. Spurs: TV channel and streaming options for November 19",
-          "publisher": "The New York Times",
+          "url": "https://www.si.com/nhl/avalanche/onsi/news/avalanche-vs-ducks-projected-lines-injuries-force-another-lineup-shakeup",
+          "title": "Avalanche vs. Ducks Projected Lines as Injuries Force Another Lineup Shakeup",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXRQz-RZ6bJWpd31A8zcsPwTHbfwSGM3Zoz8bUvHmUiBrmJtz4ZiDyXh8spKs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvhUEuHyGz60e635dzj6Jq7QeNA4PVTLUoeduM-IWiL4Fq1VZBBe47yfvexaI"
         }
       ]
     },
     {
-      "query": "warriors vs grizzlies",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-20T00:10:00Z",
+      "query": "tank dell",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T01:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-warriors-vs-grizzlies-nba-000000671.html",
-        "https://warriors.com/news/gameday-preview-20261119",
-        "https://www.si.com/betting/warriors-vs-grizzlies-prediction-odds-and-best-nba-prop-bets-for-thursday-nov-19-2026"
+        "https://www.espn.com/fantasy/football/story/_/id/50510451/fantasy-playbook-projections-lineup-locks-week-11-shadow",
+        "https://www.nytimes.com/athletic/7790154/2026/11/19/nfl-week-11-fantasy-football-rankings-plenty-of-players-you-probably-dont-want-to-start/",
+        "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-11-221227817.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWzCluk2VTNOHHMVK8WGOqECaHjeMNVN2shigCi77ue-ERdlAbfOuTwCxYZJw",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsfDlSAc7ZCoE0_15Jacsj57wKLrDjc5xok9GfGKe61kZqGnKPGuU5y77s8zc",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-warriors-vs-grizzlies-nba-000000671.html",
-          "title": "How to watch Warriors vs Grizzlies: NBA, live stream, TV channel, start time",
+          "url": "https://www.espn.com/fantasy/football/story/_/id/50510451/fantasy-playbook-projections-lineup-locks-week-11-shadow",
+          "title": "Fantasy playbook: Week 11 Shadow Reports, lineup locks and projected scores",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsfDlSAc7ZCoE0_15Jacsj57wKLrDjc5xok9GfGKe61kZqGnKPGuU5y77s8zc"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7790154/2026/11/19/nfl-week-11-fantasy-football-rankings-plenty-of-players-you-probably-dont-want-to-start/",
+          "title": "NFL Week 11 fantasy football rankings: You don’t want no scrubs, but you’ll likely need them - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSorg_209kZTe2VueiRX3yzXeOBfUliXvIFb8uUAurSNXbrCLFGBPbGbjZWHlI"
+        },
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-11-221227817.html",
+          "title": "Fantasy Football Rankings: Hayden Winks' WR Blueprint for Week 11",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWzCluk2VTNOHHMVK8WGOqECaHjeMNVN2shigCi77ue-ERdlAbfOuTwCxYZJw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJx_VzMzRiTFn3mPYGN5H70USP64EUhq6OQ_fXVIFNOF_BkH8uAjqZ5pUaIt8"
+        }
+      ]
+    },
+    {
+      "query": "stetson vs louisville",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T01:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/louisville/article/louisville-guard-seth-trimble-ruled-out-against-stetson-292988802/",
+        "https://sports.yahoo.com/articles/open-thread-louisville-vs-stetson-005000023.html",
+        "https://www.courier-journal.com/story/sports/college/louisville/2026/11/19/louisville-stetson-basketball-game-score-live-updates-highlights-uofl-cardinals/92351026007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw-LUuqi1yKwjbiEiWuG_BVjKbESfj6XryV4t3ZvHPxnwSYsDkDex2NCIhVPg",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/louisville/article/louisville-guard-seth-trimble-ruled-out-against-stetson-292988802/",
+          "title": "Louisville Guard Seth Trimble Ruled Out Against Stetson",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw-LUuqi1yKwjbiEiWuG_BVjKbESfj6XryV4t3ZvHPxnwSYsDkDex2NCIhVPg"
         },
         {
-          "url": "https://warriors.com/news/gameday-preview-20261119",
-          "title": "Game Preview: Warriors at Memphis Grizzlies - 11/19/26",
-          "publisher": "NBA.com",
+          "url": "https://sports.yahoo.com/articles/open-thread-louisville-vs-stetson-005000023.html",
+          "title": "Open Thread: Louisville vs. Stetson",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyoYUhOmiqw3KnW2L9d_1RTI7DPQgwiyiRe7oFbBodxTOd5RhJeTbQMTjAgOM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJ_0rcZh8NlIf093WrNpZz4cnbvZkteIWgUZkAxNIZmBeBY6XbM7nB_QStiSs"
         },
         {
-          "url": "https://www.si.com/betting/warriors-vs-grizzlies-prediction-odds-and-best-nba-prop-bets-for-thursday-nov-19-2026",
-          "title": "Warriors vs. Grizzlies Prediction, Odds and Best NBA Prop Bets for Thursday, Nov. 19",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.courier-journal.com/story/sports/college/louisville/2026/11/19/louisville-stetson-basketball-game-score-live-updates-highlights-uofl-cardinals/92351026007/",
+          "title": "Louisville-Stetson score today, UofL basketball live updates",
+          "publisher": "The Courier-Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpxJkeYztn5taKzM0G_Y6gVnBG9PrCelyXs33WIq_rv9rlGAGJEfuHOMhyhlc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9WQJAnVqvyrTl-txZLB_biZKggBGLBrOLfrydbXPb2Y9LC3IXtyKLshlEv0I"
         }
       ]
     }
