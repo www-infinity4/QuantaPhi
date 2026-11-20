@@ -4542,6 +4542,16 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
  finally{workButton.disabled=false}
 }
 workButton.addEventListener('click',()=>{void submitWork(workText.value.trim()).catch(()=>{})});
+// Local product controls may prepare a request in the existing editor.
+// Submission remains on the ordinary Start work action and owner adapter.
+function prepareWorkDraft(request) {
+ if(embedded||typeof request!=='string'||!request.trim()||request.length>1800)return false;
+ if(workText.value.trim()&&workText.value.trim()!==request.trim())return false;
+ workText.value=request.trim();
+ tools.open=true;toggle(true);workText.focus();
+ workStatus.textContent='Work draft ready. Review it and press Start work when your owner session is connected.';
+ return true;
+}
 // Android hands off text only. Owner credentials remain in the verified website;
 // an explicit owner button press is required before saving any ticket.
 const incomingWork=params.get('workRequest');
@@ -4592,6 +4602,7 @@ async function checkForSiteUpdate(){
  finally{siteVersionChecking=false}
 }
 window.QuantaBubbles={
+ prepareWorkDraft,
  siteRevision,
  sharedMainThread:SHARED_MAIN_THREAD,
  // The native X hides the outer Android window, not this inner WebView.

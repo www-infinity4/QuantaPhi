@@ -103,7 +103,7 @@
   <script defer src="/bubbles-brain-actions.js?v=20261025-speech-guard1"></script>
   <script defer src="/bubbles-memory.js?v=20261020-synapse1"></script>
   <script defer src="/quant-ai-personal.js?v=20261020-bubbles-private1"></script>
-  <script defer src="/bubbles-ai.js?v=20261108-native-bubbles3"></script>
+  <script defer src="/bubbles-ai.js?v=20261120-builder-draft1"></script>
   <script defer src="/bubbles-family-prompts.js?v=20261104-family-prompts1"></script>
 <script type="module" src="/bubbles-live-iteration-feed.mjs?v=20261107-runner-steps2"></script>
   <script defer src="/bubbles-owner-diagnostic.js?v=20261026-owner-health2"></script>
@@ -124,6 +124,8 @@
   <link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1">
   <link rel="stylesheet" href="/bubbles-responsive-20261026-v2.css?v=20261026-mobile-layout3">
   <link rel="stylesheet" href="/bubbles-family-modern.css?v=20261104-family-room1">
+  <link rel="stylesheet" href="/avatar-ai-builder.css?v=20261120-builder1">
+  <script type="module" src="/avatar-ai-builder.mjs?v=20261120-builder1"></script>
 </head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
@@ -131,6 +133,7 @@
       <a class="bubbles-nav-brand" href="/" aria-label="QuantaPhi home"><span class="bubbles-nav-mark" aria-hidden="true">o O o</span><strong>Bubbles</strong></a>
       <div class="bubbles-nav-links">
         <a class="bubbles-nav-chat" href="#bubblesAICard" aria-current="page">Chat</a>
+        <a href="#avatarBuilder">Builder</a>
         <a href="/bubbles-accounts.html">Accounts</a><a href="/bubbles-identity-settings.html">Identity &amp; Documents</a>
         <details class="bubbles-nav-more">
           <summary>More</summary>
@@ -161,6 +164,92 @@
       </div>
     </section>
 
+
+    <section id="avatarBuilder" aria-label="Avatar AI visual builder" data-analytics-ignore>
+      <header class="av-top">
+        <h2>Avatar AI <span>/ Autonomy</span></h2>
+        <span class="av-demo">Demo replay</span>
+      </header>
+      <div class="av-browser">
+        <div class="av-address">
+          <span>quantaphi.org</span>
+          <button type="button" class="av-work" aria-pressed="true" aria-label="Show bots on the page">Bots <span class="av-count">0</span></button>
+        </div>
+        <div class="av-scene" aria-label="Homepage design canvas" data-header="left" data-search="center" data-carousel="lower">
+          <div class="av-mast av-part" data-part="header">
+            <div class="av-wordmark"><b aria-hidden="true">Φ</b> QuantaPhi</div>
+            <div class="av-nav av-part" data-part="navigation"><span>Explore</span><span>Following</span></div>
+            <span class="av-bot" data-worker="header" hidden>Header</span>
+            <span class="av-bot" data-worker="navigation" hidden>Navigation</span>
+            <button type="button" class="av-pin" data-pin="header-center" aria-label="Preview centered header" aria-expanded="false" aria-controls="avatarBuilderChoice" hidden><b aria-hidden="true">✦</b></button>
+          </div>
+          <div class="av-hero">
+            <h3 class="av-part" data-part="type">Explore QuantaPhi</h3>
+            <span class="av-bot" data-worker="type" hidden>Type</span>
+            <span class="av-bot" data-worker="spacing" hidden>Spacing</span>
+            <button type="button" class="av-pin" data-pin="carousel-upper" aria-label="Preview carousel above search" aria-expanded="false" aria-controls="avatarBuilderChoice" hidden><b aria-hidden="true">✦</b></button>
+          </div>
+          <div class="av-layout">
+            <div class="av-search-row av-part" data-part="search">
+              <div class="av-search-field"><i class="av-lens" aria-hidden="true"></i><span>Search cards, projects, and media</span></div>
+              <button type="button" class="av-pin" data-pin="search-left" aria-label="Preview left-aligned search" aria-expanded="false" aria-controls="avatarBuilderChoice" hidden><b aria-hidden="true">✦</b></button>
+              <button type="button" class="av-pin" data-pin="search-wide" aria-label="Preview full-width search" aria-expanded="false" aria-controls="avatarBuilderChoice" hidden><b aria-hidden="true">✦</b></button>
+            </div>
+            <div class="av-carousel av-part" data-part="carousel">
+              <div class="av-carousel-head"><h4>Quick Cards</h4><span>Discover</span></div>
+              <div class="av-cards av-part" data-part="cards">
+                <article class="av-tile"><div class="av-tile-art" aria-hidden="true"></div><p>Continuity Builder</p></article>
+                <article class="av-tile"><div class="av-tile-art" aria-hidden="true"></div><p>Avatar AI</p></article>
+                <article class="av-tile"><div class="av-tile-art" aria-hidden="true"></div><p>Infinity Radio</p></article>
+              </div>
+              <span class="av-bot" data-worker="carousel" hidden>Carousel</span>
+              <span class="av-bot" data-worker="cards" hidden>Cards</span>
+            </div>
+          </div>
+          <div class="av-search-window av-part" data-part="search-window" aria-label="Separate search preview window">
+            <div class="av-search-window-head"><span>Search preview</span><span class="av-search-position">Centered</span></div>
+            <div class="av-mini-canvas"><div class="av-mini-input">Search</div></div>
+            <span class="av-bot" data-worker="search" hidden>Search</span>
+          </div>
+          <span class="av-bot" data-worker="mobile" hidden>Mobile</span>
+        </div>
+      </div>
+      <div class="av-choice" id="avatarBuilderChoice" hidden>
+        <span class="av-choice-name"></span>
+        <div class="av-choice-actions">
+          <button type="button" class="av-apply">Update design</button>
+          <button type="button" class="av-cancel" aria-label="Close layout preview">×</button>
+        </div>
+      </div>
+      <div class="av-player" aria-label="Replay controls">
+        <label class="av-seek">
+          <span class="av-sr">Replay position</span>
+          <input type="range" min="0" max="26" step="0.05" value="0">
+        </label>
+        <time class="av-time">0:00</time>
+        <button type="button" class="av-play">Play</button>
+        <button type="button" class="av-reverse" aria-pressed="false">Reverse</button>
+        <select class="av-rate" aria-label="Replay speed">
+          <option value="0.5">0.5×</option>
+          <option value="0.75" selected>0.75×</option>
+          <option value="1">1×</option>
+          <option value="2">2×</option>
+          <option value="4">4×</option>
+        </select>
+        <button type="button" class="av-latest">Latest</button>
+      </div>
+      <footer class="av-footer">
+        <span>Tap ✦ to try a saved layout.</span>
+        <details class="av-improve">
+          <summary>Improve with Bubbles</summary>
+          <label for="avatarBuilderInstruction">Next change</label>
+          <textarea id="avatarBuilderInstruction" rows="2" maxlength="600" placeholder="Describe how you want the builder to improve…"></textarea>
+          <button type="button" class="av-prepare">Prepare Bubbles request</button>
+        </details>
+        <p class="av-status" role="status" aria-live="polite"></p>
+      </footer>
+      <noscript><p>This builder needs JavaScript for playback and design choices.</p></noscript>
+    </section>
 
     <p class="bubbles-wallet-identity" id="bubblesWalletIdentity" role="status" hidden></p>
     <p class="bubbles-account-status" id="bubblesConnectionSummary" role="status" aria-live="polite" hidden></p>

@@ -1,0 +1,53 @@
+name: Avatar AI visual builder
+
+on:
+  pull_request:
+    paths:
+      - 'avatar-ai-builder*'
+      - 'bubbles.html'
+      - 'bubbles-ai.js'
+      - 'test/avatar-ai-builder*'
+      - '.github/workflows/avatar-ai-builder.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'avatar-ai-builder*'
+      - 'bubbles.html'
+      - 'bubbles-ai.js'
+      - 'test/avatar-ai-builder*'
+      - '.github/workflows/avatar-ai-builder.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  builder:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check source and playback regressions
+        run: |
+          node --check avatar-ai-builder-core.mjs
+          node --check avatar-ai-builder.mjs
+          node --check bubbles-ai.js
+          node --test test/avatar-ai-builder.test.mjs test/bubbles-apk-website-release-parity.test.cjs test/bubbles-fresh-chat-opening.test.mjs test/cardone-bubbles-embed-boot.test.cjs test/unfinished-ledger.test.mjs
+      - name: Install browser test tools
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test the Bubbles builder at phone and desktop sizes
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/avatar-builder-http.log 2>&1 &
+          npx playwright test test/avatar-ai-builder.browser.spec.mjs --reporter=line --workers=1
+      - name: Retain browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: avatar-ai-builder-browser
+          path: test-results/
+          retention-days: 7
