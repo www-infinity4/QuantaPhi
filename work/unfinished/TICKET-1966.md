@@ -3,19 +3,19 @@ issue: 1966
 project: "Apple II Infinity virtual hardware software workbench"
 state: review_pending
 dot: "🟡"
-progress_percent: 70
-progress_basis: "Software Disk II slot-6 nibble controller, two drives, user-owned image/ROM loading, and UI built; 48 focused local Node tests passed (38 prior plus 9 new); exact-head CI, independent review, merge and live/Android acceptance remain."
-sessions_spent: 5
+progress_percent: 75
+progress_basis: "58 local Node tests for software CPU/MMU/video, FPGA/CM5, Disk II and DOS/ProDOS GCR image conversion; exact-head GitHub CI, independent review and live Android release pending."
+sessions_spent: 6
 sessions_remaining_estimate: "unknown"
 agent: "GPT Green engineer, unleased GitHub connector scoped writes"
 lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-last_observed_at_utc: "2026-11-20T01:27:56.021Z"
+last_observed_at_utc: "2026-11-20T02:25:35.620Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/apple2-infinity-software-1966
-head_sha: 7dcb8f0ae112b2611a5860c89a725ff26c8f0038
+head_sha: e6570ac2a7171335f959887eb83d8f448e812056
 pr: "https://github.com/www-infinity4/QuantaPhi/pull/1967"
 tests:
   - "8/8 local Node v22 tests passed; dedicated GitHub CI https://github.com/www-infinity4/QuantaPhi/actions/runs/44426652404 succeeded on original head."
@@ -25,8 +25,8 @@ independent_review: "pending"
 merged: false
 deployed: false
 live_verified: false
-blocker: "Independent reviewer approval and live/browser/Android verification not yet available; check new exact-head CI before considering guarded merge."
-next_action: "Verify exact PR-head CI (including new Disk II test job), obtain independent review, then apply guarded merge and live/Android acceptance"
+blocker: "Need exact-head CI and independent approval; production and physical Android not verified."
+next_action: "Verify 58-test GitHub CI and independent PR review, then any authorized SHA-protected merge and separate live/Android verification"
 ---
 
 # Apple II Infinity · software-only workstation · #1966
@@ -86,3 +86,12 @@ next_action: "Verify exact PR-head CI (including new Disk II test job), obtain i
 - Prior PR head 7dcb8f0 passed 7 remote workflows; new source commit and its exact-head CI/independent approval pending. No merge, deployment, or Android acceptance claimed.
 - Reviewer gate: no recorded independent review. Next action: exact-head Actions test and independent review.
 - S5 regression follow-up: custom 6502 program loading no longer creates a fresh virtual machine, preserving mounted drive data and user ROM. Added red→green UI contract test, now 48/48 local tests. Actual GitHub exact-head CI must be rechecked.
+
+## APPLE2-INF-1966-S6 · DOS/ProDOS logical disk import
+
+- Existing PR #1967, prior exact head d33409c, prior seven CI successes, no independent reviews, repository instructions re-read; no new issue.
+- Source commit: e6570ac2a7171335f959887eb83d8f448e812056 adds original 6-and-2 343-nibble GCR sector encoder/decoder, full 35×16-sector DOS and ProDOS mapping into 35×6,656-byte NIB tracks, 4-and-4 address prologues, checksums, strict validation.
+- Browser file selection now accepts local .nib/.dsk/.do/.po with strict byte lengths and explicit DOS vs ProDOS sector mapping; conversion stays offline and mounting uses the existing Disk II controller. Disk export always .nib, preserving source files. No Apple ROMs or disk images bundled.
+- TDD: new tests first failed with missing module. 58/58 local Node v22 tests pass after implementation (48 prior + 10 GCR/round-trip/integration checks). New exact-head CI/review pending at checkpoint creation.
+- Out of scope: bit-accurate P6 logic sequencer, 13-sector/WOZ/copy protection, guaranteed OS boot, production or Android verified release.
+- Next action: check exact-head CI for final checkpoint commit, independently review PR, then merge only after required gates.

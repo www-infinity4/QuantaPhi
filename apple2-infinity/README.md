@@ -23,7 +23,7 @@ A zero-hardware, dependency-free, offline-capable software workbench. Not an App
 
 ## Run
 
-From repository root: `node --test test/apple2-infinity.test.mjs` (48 focused tests (38 previous + 9 Disk II)).
+From repository root: `node --test test/apple2-infinity.test.mjs` (58 focused tests (48 previous + 10 disk sector image tests)).
 
 Static site path: `/apple2-infinity/` (HTML + native JavaScript modules; no npm or backend). The browser workbench accepts up to 4,096 hex bytes at `$0800`, lets you step instructions or run at most 2,000 per click, and shows CPU registers, 40/80-column virtual text output, auxiliary memory and language-card selectors plus the Disk II controller panel. Only this demo workbench treats `BRK` as a convenient stop; `Virtual6502.step()` implements the real vector path by default.
 
@@ -75,3 +75,12 @@ Do not represent this prototype as a full Apple IIe ROM emulator, a physical com
 - This is not a flux/timing-accurate Disk II logic state sequencer. One nibble is read per C0EC software access and write timing is simplified. Real DOS boot compatibility is not established.
 - Files remain in local browser memory; there are no network requests, paid APIs, or system filesystem scans.
 - Original implementation informed by https://github-wiki-see.page/m/mikedaley/web-a2e/wiki/Disk-System-Internals and https://github-wiki-see.page/m/mikedaley/web-a2e/wiki/Expansion-Slots ; reference code was not copied.
+
+## User-supplied 140 KB DOS/ProDOS sector images (Session 6)
+
+- The browser accepts local \`.dsk\` / \`.do\` as DOS 3.3 order, or \`.po\` as ProDOS order; all three are strictly 143,360 bytes (35 tracks × 16 sectors × 256 bytes). Ambiguous \`.dsk\` defaults to DOS order, so explicit source labeling matters.
+- \`sector-image.mjs\` GCR-encodes each logical sector into 343 disk nibbles, with 4-and-4 address headers and DOS/ProDOS sector interleaving, to produce the 232,960-byte NIB stream consumed by the existing Disk II controller. The module also includes strict checksum-validated NIB-to-sector conversion for tests.
+- The 10 new regression tests include both complete 560-sector round trips, invalid GCR/address/size rejection, and slot-6 read-through. The original 48 tests remain in CI, for 58 focused tests total.
+- All imports operate locally; mount copies data into virtual memory. The browser exports an independent \`.nib\` copy for all supported import types, never overwriting the original \`.dsk\`, \`.do\`, or \`.po\`.
+- Supported: standard 16-sector DOS 3.3/ProDOS image ordering. Not supported: 13-sector disks, copy-protected layouts, bit-accurate flux or P6 timing, guaranteed DOS/ProDOS boot, bundled Apple ROMs or network-based image retrieval.
+- Algorithm reference: https://github-wiki-see.page/m/mikedaley/web-a2e/wiki/Disk-System-Internals . Original implementation, no reference source copied.
