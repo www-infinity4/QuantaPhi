@@ -51,7 +51,7 @@ test('invalid image sizes, bad volume, damaged sector address are rejected',()=>
  const nib=sectorImageToNib(sample());nib[135]^=1;
  assert.throws(()=>nibToSectorImage(nib),/address|checksum|sector/i);
 });
-test('slot-6 controller reads converted image's address prologue',()=>{
+test('slot-6 controller reads converted image address prologue',()=>{
  const vm=new Apple2Infinity();vm.bus.disk.mount(0,sectorImageToNib(sample()));
  vm.bus.write(0xc0e9,0);
  for(let i=0;i<128;i++)assert.equal(vm.bus.read(0xc0ec),0xff);
