@@ -82,3 +82,14 @@ At `59450f85d50863be562289a3a21b319691b92232`, all seven other workflow runs pas
 ## Next executable action
 
 Verify the canonical page on the owner's physical Android device, including search, tabs and browser-local persistence. Keep #1974 open until that observation is recorded. This follow-up changes release metadata only; application, tests and workflow remain unchanged.
+
+## Follow-up session · Manual public-site observation timeline (PR #2000)
+
+- Scope: owner's November 19, 2026 request for a source-bounded, searchable evidence ledger with exact URLs, onion identifiers, public mirrors, observed/reported status, redirects, screenshots, custody, unknowns, safe next actions, timeline and comparison. Continues #1974 rather than adding a duplicate issue.
+- Branch: `feat/hypestat-observation-timeline-1974`; proposed PR: https://github.com/www-infinity4/QuantaPhi/pull/2000 .
+- New route: `/hypestat-observations.html`; linked from HypeStat. Original evidence, traffic workspace and existing storage schema are preserved. Manual observation data uses independent `quantaphi-hypestat-observations-v1` local storage, with bounded validated JSON backups and collision rejection.
+- Source controls: no automatic external network or onion navigation, no identity/geolocation inferences, no external collection, no screenshot-byte upload, and no automatic code edits. File hashes identify evidence bytes only, not file authorship. Historical manual status is not live reachability.
+- Test-first new unit coverage: `hypestat-observations.test.mjs` added before implementation, source test run https://github.com/www-infinity4/QuantaPhi/actions/runs/44671937895 passed; existing HypeStat source/browser regression run https://github.com/www-infinity4/QuantaPhi/actions/runs/44671937960 passed. New Chromium mobile/browser test and artifact workflow staged afterward; its exact-head result must be read separately.
+- Reviewer gate: no independent GitHub approval verified; PR remains draft. Concurrent PRs #1979/#1984 modify `hypestat-infinity.html` and ticket/index, so protected reconciliation is required before merge.
+- **Status:** new extension source implemented, tests/review/release incomplete. The prior 90% estimate above applies to the earlier released HypeStat feature, not this extension. No runner lease was claimed; lease ID, fence, task ID and expiry are null.
+- **Next smallest action:** verify new Android-viewport Chromium run at exact PR head, fix any failures, then request independent source/security review and protected merge; check actual Pages publication and physical Android separately.
