@@ -62,3 +62,38 @@ test('video cards use only approved click-to-play YouTube embeds and retain dire
  assert.match(media,/iframe/);
  assert.doesNotMatch(media,/autoplay=1|localStorage|document\.cookie/);
 });
+
+
+test('owner-linked YouTube video becomes a separate source-backed public Oracle carousel card, not a family or 21+ placement',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ assert.equal(REVIEWED_OWNER_VIDEO_LINKS.length,1);
+ const v=REVIEWED_OWNER_VIDEO_LINKS[0];
+ assert.equal(v.videoId,'PyUwXoTabPA');
+ assert.equal(v.title,'REFRESHING! 6-2-2014');
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v=PyUwXoTabPA');
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.equal(validateOwnerYouTubeLink(v),true);
+ assert.equal(validateOwnerYouTubeLink({...v,sourceUrl:'https://youtube.com.evil.test/watch?v=PyUwXoTabPA'}),false);
+ assert.equal(validateOwnerYouTubeLink({...v,contentBoundary:'adult'}),false);
+ assert.equal(validateOwnerYouTubeLink({...v,contentBoundary:'family-education'}),false);
+ assert.equal(validateOwnerYouTubeLink({...v,publisherVerified:true}),false);
+ const c=REVIEWED_OWNER_VIDEO_CARDS[0];
+ assert.ok(c);
+ assert.equal(c.reviewedYouTubeVideoId,v.videoId);
+ assert.ok(isPublicSourceCard(c));
+ assert.ok(validSourceCard(c));
+ assert.ok(ACTIVE_SOURCE_CARDS.some(item=>item.id===c.id));
+ assert.ok(ALL_FEED_CARDS.some(item=>item.id===c.id));
+ assert.equal(departmentFor(c),'media');
+});
+test('owner video has a click-only embedded player, Stop action, thumbnail and original YouTube fallback',()=>{
+ const src=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
+ assert.match(src,/card\.reviewedYouTubeVideoId/);
+ assert.match(src,/field\.value=initialVideo\.sourceUrl/);
+ assert.match(src,/Stop playback/);
+ assert.match(src,/Original video on YouTube/);
+ assert.match(src,/youtube-nocookie\.com\/embed/);
+ assert.doesNotMatch(src,/autoplay=1/);
+});

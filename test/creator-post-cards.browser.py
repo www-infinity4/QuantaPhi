@@ -176,6 +176,26 @@ def run():
                 expect(page.locator('#oracleCardStage [data-source-id="family-parenting-tv"]')).to_be_visible(timeout=20000)
                 assert page.locator('#oracleCardChooser option[value="source-family-parenting-tv"]').count()==1
                 checks.append(f'{width}px: separate D1 family channel in Oracle, search/player controls, no autoplay or overflow')
+                # Owner-submitted YouTube link: separate general-media video card
+                # appears in the original Oracle, with click-only playback.
+                reviewed_id='youtube-reviewed-50795577586f5461625041'
+                page.goto(base+'/source-quick-card.html?card='+reviewed_id,wait_until='domcontentloaded')
+                reviewed=page.locator('.qcx-experience')
+                expect(reviewed).to_contain_text('REFRESHING! 6-2-2014')
+                expect(reviewed.get_by_role('link',name='Original video on YouTube')).to_have_attribute(
+                    'href','https://www.youtube.com/watch?v=PyUwXoTabPA')
+                assert reviewed.locator('iframe').count()==0, 'Owner video cannot autoplay before consent'
+                reviewed.get_by_role('button',name='Play in card').click()
+                expect(reviewed.locator('iframe')).to_have_attribute(
+                    'src','https://www.youtube-nocookie.com/embed/PyUwXoTabPA')
+                reviewed.get_by_role('button',name='Stop playback').click()
+                expect(reviewed.locator('iframe')).to_have_count(0)
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Reviewed video overflow'
+                page.goto(base+'/?card='+reviewed_id,wait_until='domcontentloaded')
+                expect(page.locator('#oracleCardStage [data-source-id="'+reviewed_id+'"]')).to_be_visible(timeout=20000)
+                assert page.locator('#oracleCardChooser option[value="source-'+reviewed_id+'"]').count()==1
+                checks.append(f'{width}px: owner video as its own public Oracle source card, opt-in player and Stop')
+
                 context.close()
             browser.close()
     finally:

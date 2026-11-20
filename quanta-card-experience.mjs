@@ -186,24 +186,39 @@ const youtubeId=value=>{
 const tiktokId=value=>{try{const u=new URL(value);if(u.protocol!=='https:'||!['www.tiktok.com','tiktok.com'].includes(u.hostname))return null;const m=u.pathname.match(/\/video\/(\d{16,22})/);return m?m[1]:null;}catch{return null}};
 const spotifyEmbed=value=>{try{const u=new URL(value);if(u.protocol!=='https:'||u.hostname!=='open.spotify.com')return null;const m=u.pathname.match(/^\/(?:intl-[a-z]{2}\/)?(track|album|playlist|episode|show)\/([A-Za-z0-9]{15,30})\/?$/);return m?'https://open.spotify.com/embed/'+m[1]+'/'+m[2]:null}catch{return null}};
 export const validMediaUrl=(provider,value)=>provider==='youtube'?Boolean(youtubeId(value)):provider==='tiktok'?Boolean(tiktokId(value)):provider==='spotify'?Boolean(spotifyEmbed(value)):false;
-function mediaPlayer(root,id){
- const panel=section(root,'PLAY · REAL PROVIDER MEDIA',id==='youtube'?'Your YouTube reel':id==='tiktok'?'Watch a TikTok':'Play a Spotify selection');
+let activeLinkMediaFrame=null;
+function mediaPlayer(root,id,initialVideo=null){
+ const panel=section(root,'PLAY · REAL PROVIDER MEDIA',initialVideo?'Source-identified YouTube video':id==='youtube'?'Your YouTube reel':id==='tiktok'?'Watch a TikTok':'Play a Spotify selection');
+ if(initialVideo?.reviewedYouTubeVideoId&&id==='youtube'&&youtubeId(initialVideo.sourceUrl)===initialVideo.reviewedYouTubeVideoId){
+  const preview=node('img','qcx-thumb');preview.src=initialVideo.image;
+  preview.alt='Original YouTube thumbnail · '+initialVideo.name;preview.loading='lazy';
+  preview.style.maxWidth='100%';preview.style.height='auto';
+  preview.addEventListener('error',()=>preview.remove(),{once:true});
+  panel.append(preview,node('h4','',initialVideo.name),
+   node('p','qcx-note','Owner-submitted public video · publisher and exact publication date not independently verified · general media only'),
+   link('Original video on YouTube',initialVideo.sourceUrl));
+ }
  note(panel,'Paste a public '+(id==='youtube'?'YouTube video or Short':id==='tiktok'?'TikTok video':'Spotify track, album or playlist')+' URL. Nothing is loaded until you press Play.');
  const form=node('form','qcx-search-form');const field=input('Paste an original '+id+' URL','Public media URL');
+ if(initialVideo?.reviewedYouTubeVideoId&&youtubeId(initialVideo.sourceUrl)===initialVideo.reviewedYouTubeVideoId)field.value=initialVideo.sourceUrl;
  const button=node('button','qcx-button','Play in card');button.type='submit';form.append(field,button);
  const result=node('div','qcx-player');result.setAttribute('aria-live','polite');
+ const stop=node('button','qcx-button','Stop playback');stop.type='button';stop.hidden=true;
+ stop.addEventListener('click',()=>{if(activeLinkMediaFrame&&result.contains(activeLinkMediaFrame))activeLinkMediaFrame=null;result.replaceChildren();stop.hidden=true;});
  form.addEventListener('submit',e=>{
   e.preventDefault();
   const src=id==='youtube'?(youtubeId(field.value)?'https://www.youtube-nocookie.com/embed/'+youtubeId(field.value):null):
    id==='tiktok'?(tiktokId(field.value)?'https://www.tiktok.com/player/v1/'+tiktokId(field.value):null):spotifyEmbed(field.value);
-  result.replaceChildren();
+  if(activeLinkMediaFrame)activeLinkMediaFrame.remove();activeLinkMediaFrame=null;
+  result.replaceChildren();stop.hidden=true;
   if(!src){note(result,'This is not a supported public '+id+' URL. Paste the original link.');return;}
   const frame=node('iframe','qcx-video');frame.src=src;frame.title=id+' player';
   frame.loading='lazy';frame.referrerPolicy='strict-origin-when-cross-origin';frame.allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share';
   if(id!=='spotify')frame.allowFullscreen=true;
-  if(id==='spotify')frame.style.aspectRatio='4 / 2';result.append(frame);
+  if(id==='spotify')frame.style.aspectRatio='4 / 2';
+  result.append(frame);activeLinkMediaFrame=frame;stop.hidden=false;
  });
- panel.append(form,result);
+ panel.append(form,stop,result);
  return panel;
 }
 async function wikiSearch(root,query){
@@ -408,6 +423,10 @@ export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(card.reviewedYouTubeVideoId&&card.contentBoundary==='general-media'){
+  root.append(mediaPlayer(root,'youtube',card));
+  mountCardActions(root,card,{showSearch:false});return;
+ }
  if(mountFamilyParentingTvCard(root,card)){
   mountCardActions(root,card,{showSearch:false});return;
  }
