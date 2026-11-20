@@ -262,6 +262,14 @@ function mountBuilder(root) {
     renderActivity();
   });
   renderActivity();
+  // A wallet sign-out, owner switch or new chat must erase the previous
+  // account's in-memory job display, not merely hide it.
+  for (const eventName of ['bubbles:owner-lost', 'bubbles:owner-ready']) {
+    window.addEventListener(eventName, () => {
+      activity = initialAvatarActivity();
+      renderActivity();
+    });
+  }
 
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) setPlaying(false);
