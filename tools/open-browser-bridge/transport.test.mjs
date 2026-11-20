@@ -11,6 +11,11 @@ test('Tor transport fails closed if Linux has an IPv4 default route', () => {
   assert.throws(()=>assertNoDefaultRoute(ipv4+'eth0 00000000 0101A8C0 0003 0 0 0 00000000 0 0 0\n',ipv6),/default route/i);
 });
 
+test('IPv6 kernel loopback reject placeholder is not an external route', () => {
+  const blocked='00000000000000000000000000000000 00 00000000000000000000000000000000 00 00000000000000000000000000000000 00000000 00000000 00000000 00200200 lo\\n';
+  assert.doesNotThrow(()=>assertNoDefaultRoute(ipv4,ipv6+blocked));
+});
+
 test('Tor transport fails closed if Linux has an IPv6 default route', () => {
   const route='00000000000000000000000000000000 00 00000000000000000000000000000000 00 00000000000000000000000000000000 00000000 00000000 00000000 00000001 eth0\n';
   assert.throws(()=>assertNoDefaultRoute(ipv4,ipv6+route),/default route/i);
