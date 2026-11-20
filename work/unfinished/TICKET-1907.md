@@ -22,6 +22,8 @@ next_action: "Obtain independent PR #1990 review at exact head before protected 
 
 **Request:** Continue the owner's request for an editable ISHA safety/standards guide that Bubbles can recognize in the app. Investigate and integrate only verified existing Tor Browser source; do not treat onion gateway or public browser broker as Tor transport. Avoid downloading, indexing or distributing sexual material involving minors. Support only authorized provider media under separate #1603 review.
 
+**Canonical issue:** https://github.com/www-infinity4/QuantaPhi/issues/1907
+
 **Repo:** `www-infinity4/QuantaPhi` / branch `feat/isha-rulebook-bubbles-1907` / PR https://github.com/www-infinity4/QuantaPhi/pull/1990 .
 
 ## Source and acceptance
