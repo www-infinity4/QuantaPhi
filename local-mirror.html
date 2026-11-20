@@ -14,7 +14,7 @@
 <body><main>
 <div class="kicker">Quantaφ · Privacy & Agency</div>
 <h1>The Local Mirror</h1>
-<p class="lead">A private, opt-in snippet playground with a local text fingerprint and a transparent resource-observation panel. Text processing and notes stay in this browser's IndexedDB unless another browser component, extension or device compromise interferes.</p>
+<p class="lead">A private, opt-in snippet playground with a local text fingerprint and a transparent resource-observation panel. Text is processed locally and then discarded from the saved record. Only its SHA-256 digest, timestamp and limited word-count metadata remain in IndexedDB, where other code sharing this origin might still have access.</p>
 <div class="note"><strong>Scope:</strong> This page uses a restrictive Content Security Policy. Its content hashes are not cryptographic proof of zero outbound packets. Initial page assets must still download; browser extensions, other tabs, operating-system traffic, and upstream infrastructure are outside this page's visibility.</div>
 <div class="grid">
 <section class="card" aria-labelledby="mirror-title"><h2 id="mirror-title">Local Mirror · Snippets</h2>
@@ -24,7 +24,7 @@
 <textarea id="text" maxlength="8000" placeholder="Enter text you want to summarize locally into word counts. Nothing is sent to AI."></textarea>
 <button id="save" disabled>Analyze & save locally</button><button class="secondary" id="refresh" disabled>Show saved entries</button><button class="secondary" id="clear">Delete local entries</button>
 <p role="status" aria-live="polite" id="status">Collection is off until you enable it.</p>
-<h2>Private records</h2><ul id="records"><li>No locally saved snippets.</li></ul>
+<h2>Saved local fingerprints</h2><ul id="records"><li>No locally saved snippets.</li></ul>
 <p id="audit" aria-live="polite">Network proof not established. Local digest is not a signed isolation receipt.</p>
 </section>
 <section class="card" aria-labelledby="radar-title"><h2 id="radar-title">Shadow Web Radar</h2>
@@ -33,7 +33,7 @@
 <ul id="radar" aria-live="polite"><li>No observable resource entries yet.</li></ul>
 <p><small>Allow/Block/Spoof controls require a separate authorized extension or proxy. This standalone page cannot intercept all browsing requests, and synthetic spoofing is not enabled.</small></p>
 <h2>Isolation checklist</h2>
-<ul><li>On-device snippets: browser IndexedDB</li><li>Local analysis: word-count profile, not an AI embedding model</li><li>Page CSP: network connections disabled for this document</li><li>Outbound byte count: unknown without an independently trusted network monitor</li><li>Deletion: manually erase the local records at any time</li></ul>
+<ul><li>On-device snippet fingerprints: browser IndexedDB (no raw snippet saved)</li><li>Local analysis: word-count profile, not an AI embedding model</li><li>Page CSP: network connections disabled for this document</li><li>Outbound byte count: unknown without an independently trusted network monitor</li><li>Deletion: manually erase the local records at any time</li></ul>
 </section>
 </div><p><a href="/">Return to Quantaφ home</a></p>
 </main><script type="module" src="./local-mirror-app.mjs"></script></body></html>
