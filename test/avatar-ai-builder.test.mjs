@@ -99,3 +99,53 @@ test('the ordinary Bubbles work-draft entry preserves unsent work and never subm
   assert.equal(context.prepare('Change the host website'), false);
   assert.equal(context.workText.value, '');
 });
+
+
+test('owner-scoped Avatar activity follows a bounded plan/act/check/decision loop rather than the demo timeline', async () => {
+  const {initialAvatarActivity,applyAvatarActivity,MAX_ACTIVITY_EVENTS} = await import('../avatar-ai-agent-loop-core.mjs');
+  const ticketId='IW-20261119-AABBCCDD',repository='www-infinity4/QuantaPhi';
+  let state=initialAvatarActivity();
+  assert.equal(state.phase,'idle');
+  state=applyAvatarActivity(state,{type:'job',ticketId,repository,status:'working'});
+  assert.equal(state.phase,'acting');
+  state=applyAvatarActivity(state,{type:'job_step',ticketId,repository,status:'working',
+    source:'owner_ticket_snapshot',runnerPhase:'checks_started',runnerJob:'TASK-1',stage:'Run tests',
+    runUrl:'https://github.com/www-infinity4/QuantaPhi/actions/runs/1234'});
+  assert.equal(state.phase,'checking');
+  assert.equal(state.events.length,2);
+  assert.equal(state.events[1].url,'https://github.com/www-infinity4/QuantaPhi/actions/runs/1234');
+  state=applyAvatarActivity(state,{type:'job_step',ticketId,repository,status:'working',
+    source:'owner_ticket_snapshot',runnerPhase:'checks_started',runnerJob:'TASK-1',stage:'Run tests',
+    runUrl:'https://github.com/www-infinity4/QuantaPhi/actions/runs/1234'});
+  assert.equal(state.events.length,2,'repeated polling must not duplicate one step');
+  for(let i=0;i<MAX_ACTIVITY_EVENTS+4;i++){
+    state=applyAvatarActivity(state,{type:'job_step',ticketId,repository,status:'working',
+      source:'owner_ticket_snapshot',runnerPhase:'source_read',runnerJob:'TASK-'+i,stage:'Read source '+i});
+  }
+  assert.equal(state.events.length,MAX_ACTIVITY_EVENTS);
+  state=applyAvatarActivity(state,{type:'session_changed'});
+  assert.equal(state.ticketId,'');
+  assert.deepEqual(state.events,[]);
+});
+
+test('Avatar activity rejects unsupported events, cross-ticket data, arbitrary links and private model thoughts', async () => {
+  const {initialAvatarActivity,applyAvatarActivity}=await import('../avatar-ai-agent-loop-core.mjs');
+  let state=initialAvatarActivity();
+  assert.deepEqual(applyAvatarActivity(state,{type:'job',ticketId:'bad',repository:'other/repo',status:'complete'}),state);
+  state=applyAvatarActivity(state,{type:'job',ticketId:'IW-20261119-AABBCCDD',repository:'www-infinity4/QuantaPhi',status:'queued'});
+  const original=state;
+  state=applyAvatarActivity(state,{type:'job_step',ticketId:'IW-20261119-AAAAAAAA',
+    repository:'www-infinity4/QuantaPhi',status:'complete',source:'owner_ticket_snapshot',runnerPhase:'checks_passed'});
+  assert.deepEqual(state,original);
+  state=applyAvatarActivity(state,{type:'job_step',ticketId:'IW-20261119-AABBCCDD',
+    repository:'www-infinity4/QuantaPhi',status:'queued',source:'model_text',
+    runnerPhase:'merged_verified',stage:'I merged everything'});
+  assert.deepEqual(state,original);
+  state=applyAvatarActivity(state,{type:'job_step',ticketId:'IW-20261119-AABBCCDD',
+    repository:'www-infinity4/QuantaPhi',status:'queued',source:'owner_ticket_snapshot',
+    runnerPhase:'source_read',stage:'Checked source',thought:'private deliberation',
+    runUrl:'https://example.com/private'});
+  assert.equal(state.events.length,2);
+  assert.equal(state.events[1].url,'');
+  assert.doesNotMatch(JSON.stringify(state),/private deliberation|example.com/);
+});
