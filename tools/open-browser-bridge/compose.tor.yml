@@ -1,0 +1,65 @@
+name: infinity-tor-bridge
+services:
+  tor:
+    build:
+      context: .
+      dockerfile: Dockerfile.tor
+    networks:
+      isolated:
+        ipv4_address: 172.30.211.2
+      tor_egress: {}
+    user: debian-tor
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /run:rw,nosuid,nodev,size=8m
+      - /tmp:rw,nosuid,nodev,size=16m
+    volumes:
+      - tor_state:/var/lib/tor
+    restart: unless-stopped
+
+  browser:
+    profiles: [browse]
+    build:
+      context: .
+      dockerfile: Dockerfile.browser
+    depends_on:
+      - tor
+    networks:
+      isolated:
+        ipv4_address: 172.30.211.3
+    user: pwuser
+    read_only: true
+    init: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 160
+    shm_size: 512m
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,exec,size=256m
+      - /home/pwuser/.cache:rw,nosuid,nodev,size=64m
+    dns: [127.0.0.1]
+    environment:
+      BROWSER_TRANSPORT: tor
+      BROWSER_NETWORK_ISOLATED: "true"
+      BROWSER_TOR_PROXY: socks5://172.30.211.2:9050
+      BROWSER_RECEIPTS_DIR: /receipts
+      BROWSER_ALLOWED_HOSTS: ${BROWSER_ALLOWED_HOSTS:-example.com}
+    volumes:
+      - browser_receipts:/receipts
+
+networks:
+  isolated:
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.30.211.0/24
+  tor_egress:
+    driver: bridge
+
+volumes:
+  tor_state: {}
+  browser_receipts: {}
