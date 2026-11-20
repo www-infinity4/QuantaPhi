@@ -1,0 +1,32 @@
+name: ISHA Rulebook static safety and Bubbles Quick Card
+on:
+  pull_request:
+    paths:
+      - 'isha-rulebook-core.mjs'
+      - 'isha-rulebook.html'
+      - 'bubbles-card-catalog.mjs'
+      - 'test/isha-rulebook.test.mjs'
+      - '.github/workflows/isha-rulebook.yml'
+  push:
+    branches:
+      - feat/isha-rulebook-bubbles-1907
+      - main
+    paths:
+      - 'isha-rulebook-core.mjs'
+      - 'isha-rulebook.html'
+      - 'bubbles-card-catalog.mjs'
+      - 'test/isha-rulebook.test.mjs'
+      - '.github/workflows/isha-rulebook.yml'
+permissions:
+  contents: read
+jobs:
+  safety-and-card-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test source handling, draft ledger, and Bubbles Quick Card routing
+        run: node --test test/isha-rulebook.test.mjs
