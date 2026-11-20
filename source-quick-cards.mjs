@@ -1,6 +1,7 @@
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
 import {findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
+import {mountCopilotCardTool} from './copilot-card-tool.mjs?v=20261119-qa1';
 import {mountAvatarAiCard} from './avatar-ai-card.mjs';
 import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
@@ -179,7 +180,7 @@ function askAiTools(root,card){
  const area=el('div','iqc-ask-ai');
  if(card.id==='gemini'){mountGeminiTools(area);root.append(area);return;}
  if(card.id==='copilot'){
-  area.append(el('p','iqc-muted','Copilot runs through GitHub’s own agent interface, with repository permission and a reviewable PR. No silent issue assignment.'));
+  mountCopilotCardTool(area);
   root.append(area);return;
  }
  const form=el('form','iqc-ai-form');
