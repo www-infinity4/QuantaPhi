@@ -10,8 +10,10 @@ test('browser service is exclusively on a Docker-internal link, while Tor owns t
   const service=compose.split(/\n  browser:\n/)[1].split(/\nnetworks:\n/)[0];
   assert.match(compose,/\n  isolated:\n    internal: true/);
   assert.match(service,/\n    networks:\n      isolated:/);
-  assert.doesNotMatch(service,/tor_egress|network_mode:|privileged:|cap_add:|ports:/);
+  assert.doesNotMatch(service,/tor_egress|network_mode:|privileged:|ports:/);
   assert.match(service,/cap_drop: \[ALL\]/);
+  assert.ok(service.includes('cap_add: [SYS_CHROOT]'));
+  assert.doesNotMatch(service,/NET_ADMIN|SYS_ADMIN/);
   assert.match(service,/read_only: true/);
   assert.match(service,/no-new-privileges:true/);
   assert.ok(service.includes('seccomp=./seccomp_profile.json'));
