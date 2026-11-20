@@ -7,6 +7,16 @@ export const MAXIMUM_BACKGROUND_AGE_DAYS=7;
 const DAY=86400000;
 const NO_SPECS=/\b(?:must|needs?|required|lacks?|without)\b.{0,100}\b(?:specify|provide|supply|identify|define|concrete|exact|full)\b|\b(?:specify|provide|supply)\b.{0,100}\b(?:file|schema|signature|requirement|path|details?)\b|(?:unspecified|underspecified|missing actionable|unknown export signatures)/i;
 const OWNER_BLOCK=/owner_input_required|owner_authorization_required|owner_approval_required|requires_owner|permission_denied|security_hold|sensitive_decision|unsupported_repository|invalid_color_jobs/i;
+// A missing immutable edit path is a source-evidence problem, not a request
+// for the owner to decide or grant access. Keep it INELIGIBLE until the
+// authenticated runner provides exact source evidence; never revive a job.
+const IMMUTABLE_PATH_EVIDENCE=/(?:edit must match immutable source exactly once|failure report does not specify which repository file|exact path is required to locate the immutable.source)/i;
+const OWNER_CHOICE_OR_SECURITY=/(?:owner_authorization_required|owner_approval_required|requires_owner|permission_denied|security_hold|sensitive_decision|unsupported_repository|invalid_color_jobs|owner must (?:approve|choose|authorize)|owner (?:approval|consent|sign.in)|new permission|payment|purchase|wallet|biometric|credential|password)/i;
+export function technicalSourceEvidenceNeeded(summary){
+ const text=String(summary||'').slice(0,3000);
+ return /owner_input_required/i.test(text)&&IMMUTABLE_PATH_EVIDENCE.test(text)&&
+  !OWNER_CHOICE_OR_SECURITY.test(text);
+}
 const toMillis=value=>{
  if(typeof value==='number'&&Number.isFinite(value))return value<1e11?value*1000:value;
  if(typeof value!=='string'||!value.trim())return NaN;
@@ -25,7 +35,7 @@ export function ticketAdmission(candidate,{
  // or security hold must be explicitly resolved through its own auth gate.
  // A model's self-asserted hasActionableSpecs cannot override a blocker.
  if(job.status==='blocked'&&(OWNER_BLOCK.test(summary)||job.hasActionableSpecs===false&&NO_SPECS.test(summary))){
-  return {eligible:false,reason:OWNER_BLOCK.test(summary)?'owner_decision_required':'actionable_specs_required',selected};
+  return {eligible:false,reason:OWNER_BLOCK.test(summary)?(technicalSourceEvidenceNeeded(summary)?'technical_source_evidence_required':'owner_decision_required'):'actionable_specs_required',selected};
  }
  if(job.status==='blocked'&&NO_SPECS.test(summary)){
   return {eligible:false,reason:'actionable_specs_required',selected};
@@ -58,10 +68,37 @@ export function filterActiveTickets(candidates,{
 }={}){
  const allowed=[],deferred=[];
  const limit=Number.isInteger(maxLookAhead)?Math.max(1,Math.min(500,maxLookAhead)):500;
- for(const candidate of (Array.isArray(candidates)?candidates:[]).slice(0,limit)){
-  const admission=ticketAdmission(candidate,{now,maximumAgeDays,requested});
+ const examined=(Array.isArray(candidates)?candidates:[]).slice(0,limit);
+ // A signed owner request to finish a specific old job must also be able to
+ // execute the SAME ticket's SAME repository prerequisite stages. Otherwise
+ // the selected parent remains stuck behind its old, aged-out dependencies.
+ // This is age-selection only: each predecessor still goes through all
+ // owner/security, repository, retry, lease and source-review gates.
+ const root=requested?.ticketId&&requested?.jobId
+  ?examined.find(c=>c.ticket?.id===requested.ticketId&&c.job?.id===requested.jobId):null;
+ const selectedDependencies=new Set();
+ if(root&&ticketAdmission(root,{now,maximumAgeDays,requested}).eligible){
+  const sameScope=new Map(examined.filter(c=>c.ticket?.id===root.ticket.id&&
+   c.job?.repository===root.job.repository&&typeof c.job?.id==='string').map(c=>[c.job.id,c]));
+  const pending=Array.isArray(root.job.dependencies)?[...root.job.dependencies]:[];
+  const seen=new Set([root.job.id]);
+  while(pending.length&&seen.size<16){
+   const id=pending.shift();
+   if(typeof id!=='string'||seen.has(id))continue;
+   const dependency=sameScope.get(id);
+   if(!dependency)continue; // Cross-repository or missing dependencies cannot be auto-selected.
+   seen.add(id);
+   selectedDependencies.add(id);
+   if(Array.isArray(dependency.job.dependencies))pending.push(...dependency.job.dependencies);
+  }
+ }
+ for(const candidate of examined){
+  const selectedDependency=candidate?.ticket?.id===requested?.ticketId&&
+   selectedDependencies.has(candidate?.job?.id)&&candidate?.job?.repository===root?.job?.repository;
+  const admission=ticketAdmission(candidate,{now,maximumAgeDays,
+   requested:selectedDependency?{ticketId:requested.ticketId,jobId:candidate.job.id}:requested});
   if(admission.eligible)allowed.push(candidate);
   else deferred.push({ticketId:candidate?.ticket?.id||'',jobId:candidate?.job?.id||'',reason:admission.reason});
  }
- return {allowed,deferred,examined:Math.min(Array.isArray(candidates)?candidates.length:0,limit)};
+ return {allowed,deferred,examined:examined.length};
 }

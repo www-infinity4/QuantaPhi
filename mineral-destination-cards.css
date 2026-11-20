@@ -1,0 +1,29 @@
+/* Original licensed photography first; neutral Infinity controls and Android-friendly sizing. */
+.mineral-destination-card{display:flex;flex-direction:column;gap:0;overflow:hidden;background:#fff!important;color:#252525!important;border:1px solid #e1ddd7!important;border-radius:20px!important;box-shadow:0 8px 25px #0000000b!important;max-width:100%;box-sizing:border-box}
+.mineral-destination-card *{box-sizing:border-box}
+.mineral-card-hero{position:relative;background:#f3f3f3;overflow:hidden}
+.mineral-card-image{width:100%;height:clamp(220px,46vw,390px);object-fit:cover;display:block;background:#f3f3f3}
+.mineral-card-photo-credit{position:absolute;bottom:0;right:0;left:0;padding:6px 12px;margin:0;background:#0009;color:#fff;font:500 10px/1.35 system-ui,sans-serif}
+.mineral-card-photo-credit a{color:#fff!important;text-underline-offset:2px}
+.mineral-card-photo-fallback{display:none;min-height:45px;align-items:center;justify-content:center;text-align:center;color:#1b4c71!important;background:#f4f7f9;border:1px solid #cbdce7;border-radius:12px;padding:12px;font:700 13px/1.4 system-ui;text-decoration:none}
+.mineral-card-photo-missing{background:#fff;padding:16px 18px 0}
+.mineral-card-photo-missing .mineral-card-photo-fallback{display:flex}
+.mineral-card-photo-missing .mineral-card-photo-credit{display:none}
+.mineral-card-body{padding:18px clamp(16px,4vw,24px) 20px;display:grid;gap:12px;min-width:0}
+.mineral-card-body .iqc-kind{font:700 10px/1.4 system-ui;letter-spacing:.08em;color:#626262!important;margin:0}
+.mineral-card-name{font:750 clamp(20px,4.5vw,27px)/1.2 system-ui,sans-serif!important;color:#222!important;margin:0;letter-spacing:-.02em}
+.mineral-card-city{font:500 12px/1.4 system-ui;color:#656565;margin:0}
+.mineral-card-summary{font:500 16px/1.6 system-ui;color:#323232;margin:0}
+.mineral-card-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:3px 0}
+.mineral-card-link{display:flex;min-height:48px;align-items:center;justify-content:center;text-align:center;padding:9px 10px;border-radius:11px;border:1px solid #d2d2d2;background:#fafafa;color:#242424!important;text-decoration:none;font:700 12px/1.35 system-ui,sans-serif}
+.mineral-card-link:first-child{background:#f2f6f9;border-color:#ccd8e1;color:#1d425b!important}
+.mineral-card-visitor-guide{border-top:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7;padding:10px 0}
+.mineral-card-visitor-guide summary{min-height:35px;cursor:pointer;font:700 13px/1.4 system-ui;color:#343434}
+.mineral-card-visitor-guide p{font:500 13px/1.5 system-ui;color:#4c4c4c;margin:4px 0 8px}
+.mineral-card-update{font:500 11px/1.4 system-ui;color:#757575;margin:0}
+.mineral-card-shared{margin:0;padding-top:9px}
+.mineral-card-shared :is(.qca-button,.qca-search-submit){background:#fff!important;color:#303030!important;border:1px solid #d7d7d7!important;box-shadow:none!important;border-radius:10px!important}
+.mineral-card-shared .qca-button[aria-pressed="true"]{background:#e6ecf0!important;color:#202020!important}
+.mineral-destination-card :is(a,button,summary):focus-visible{outline:3px solid #2977a3;outline-offset:3px}
+@media(max-width:420px){.mineral-card-image{height:230px}.mineral-card-links{grid-template-columns:1fr 1fr}.mineral-card-link:last-child{grid-column:span 2}.mineral-card-shared .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.mineral-destination-card *{scroll-behavior:auto!important;transition:none!important}}

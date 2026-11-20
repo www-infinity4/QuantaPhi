@@ -4,6 +4,7 @@
  */
 const PROVIDERS=Object.freeze([
  {id:'ebay',name:'eBay',hosts:['ebay.com'],signin:'https://signin.ebay.com/',search:'https://www.ebay.com/sch/i.html?_nkw=',actions:['search','shop','orders'],purchase:'provider-checkout'},
+ {id:'heritage',name:'Heritage Auctions',hosts:['ha.com'],signin:'https://www.ha.com/c/login.zx',actions:['search','auction-listings','source-site-bidding'],purchase:'provider-checkout'},
  {id:'x',name:'X',hosts:['x.com','twitter.com'],signin:'https://x.com/i/flow/login',search:'https://x.com/search?q=',actions:['search','post','follow'],compose:'https://x.com/compose/post'},
  {id:'facebook',name:'Facebook',hosts:['facebook.com'],signin:'https://www.facebook.com/login/',search:'https://www.facebook.com/search/top?q=',actions:['search','post','follow']},
  {id:'instagram',name:'Instagram',hosts:['instagram.com'],signin:'https://www.instagram.com/accounts/login/',actions:['explore','publish','follow']},
@@ -29,7 +30,8 @@ export function cardProvider(card){
  const verified=asHttps(card?.official)||asHttps(card?.website)||asHttps(card?.url);
  const copilot=verified?.hostname==='github.com'&&/^\/copilot(?:\/|$)/.test(verified.pathname);
  const descriptor=verified&&(copilot?PROVIDERS.find(p=>p.id==='copilot'):
-  PROVIDERS.find(p=>p.hosts.some(root=>matches(verified.hostname.toLowerCase(),root))));
+  PROVIDERS.filter(p=>p.hosts.some(root=>matches(verified.hostname.toLowerCase(),root)))
+    .sort((a,b)=>Math.max(...b.hosts.map(h=>h.length))-Math.max(...a.hosts.map(h=>h.length)))[0]);
  if(!descriptor)return null;
  return Object.freeze({
   id:descriptor.id,name:descriptor.name,origin:verified.origin,

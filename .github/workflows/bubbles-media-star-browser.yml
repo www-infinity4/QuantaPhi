@@ -30,7 +30,7 @@ permissions:
   contents: read
 jobs:
   chromium_card_and_chat:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
@@ -65,7 +65,7 @@ jobs:
           node scripts/bubbles-components-browser.mjs
       - name: Keep truthful card browser receipts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: bubbles-media-star-browser-evidence
           path: |

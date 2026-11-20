@@ -1,0 +1,41 @@
+name: Trending Movie Oracle source and playback contracts
+
+on:
+  pull_request:
+    paths:
+      - 'trending-movie-*.mjs'
+      - 'trending-movie-quick-cards.css'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'scripts/sync_trending_movies.py'
+      - 'test/trending-movie-oracle.test.mjs'
+      - 'test/test_trending_movies_sync.py'
+      - '.github/workflows/trending-movies-*.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'trending-movie-*.mjs'
+      - 'scripts/sync_trending_movies.py'
+      - 'test/trending-movie-oracle.test.mjs'
+
+permissions:
+  contents: read
+
+jobs:
+  movie-cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse browser modules and Oracle carousel
+        run: |
+          node --check trending-movie-core.mjs
+          node --check trending-movie-quick-cards.mjs
+          node --check oracle-card-deck.js
+      - name: Verify no fabricated trend counts or player IDs
+        run: node --test test/trending-movie-oracle.test.mjs
+      - name: Test Google and YouTube RSS cross-matching
+        run: python3 -m unittest discover -s test -p 'test_trending_movies_sync.py' -v

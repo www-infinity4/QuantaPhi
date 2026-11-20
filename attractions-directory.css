@@ -1,0 +1,45 @@
+/* Content-first, neutral public attractions directory Quick Card. */
+.ad-card{background:#fff!important;color:#203646!important;border:1px solid #d6e0e6!important;overflow:hidden}
+.ad-card .ad-header{background:#fff;border:0;padding:18px 20px 7px}
+.ad-card .ad-header h2{font:750 clamp(22px,5.2vw,29px)/1.16 system-ui;margin:4px 0!important;color:#183247!important}
+.ad-card .ad-note{font:14px/1.55 system-ui;color:#586976;margin:0 20px 13px}
+.ad-card .ad-inputs{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.75fr) auto;gap:8px}
+.ad-card .ad-form,.ad-card .ad-status,.ad-card .ad-result,.ad-card .ad-nav,.ad-card .ad-actions{margin-left:20px;margin-right:20px}
+.ad-card input,.ad-card select,.ad-card button{min-width:0;min-height:46px;background:#fff;color:#243c4c;border:1px solid #c0cdd5;border-radius:11px;padding:10px;font:650 13px system-ui}
+.ad-card .ad-inputs button,.ad-card .ad-build{background:#edf4f8}
+.ad-card .ad-status{font:13px/1.5 system-ui;min-height:22px;color:#667785}
+.ad-card .ad-result{border:1px solid #d9e2e8;border-radius:16px;overflow:hidden;min-height:190px;background:#fff}
+.ad-card .ad-photo:empty{display:none}.ad-card .ad-photo img{display:block;width:100%;max-height:340px;object-fit:cover}
+.ad-card .ad-photo-note{padding:16px;background:#f4f7f9;color:#667682;font:13px/1.5 system-ui;margin:0}
+.ad-card .ad-credit{font:11px system-ui;color:#657583;margin:6px 14px}
+.ad-card .ad-info{padding:18px;display:grid;gap:10px}
+.ad-card .ad-kind{font:750 12px system-ui;color:#526d7e;text-transform:capitalize;margin:0}
+.ad-card .ad-info h3{font:780 clamp(23px,5.3vw,29px)/1.2 system-ui!important;color:#182f3e!important;margin:0!important}
+.ad-card .ad-address{font:14px/1.5 system-ui;color:#4d6370}
+.ad-card .ad-links{display:flex;flex-wrap:wrap;gap:8px}
+.ad-card .ad-links a,.ad-card .ad-links button{display:inline-flex;align-items:center;min-height:44px;padding:9px 11px;border:1px solid #c7d2d9;border-radius:9px;text-decoration:none;font:700 12px/1.25 system-ui;color:#224e69!important;background:#fff}
+.ad-card .ad-links a.ad-primary,.ad-card .ad-links a.ad-own-card{background:#eff5f8}
+.ad-card .ad-source{font:11px/1.5 system-ui;color:#677784;margin:0}
+.ad-card .ad-empty{padding:18px;font:14px system-ui}
+.ad-card .ad-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
+.ad-card .ad-nav span{font:650 12px system-ui;color:#526b79;text-align:center}
+.ad-card button:disabled{opacity:.42;cursor:default}
+.ad-card .ad-actions{margin-top:10px;margin-bottom:16px}
+@media(max-width:480px){.ad-card .ad-inputs{grid-template-columns:1fr 1fr}.ad-card .ad-inputs input{grid-column:1/-1}.ad-card .ad-header{padding:16px}.ad-card :is(.ad-note,.ad-form,.ad-status,.ad-result,.ad-nav,.ad-actions){margin-left:16px;margin-right:16px}}
+
+/* Genuine D1-backed Quant AI picks. One independently actionable Oracle card
+   per sourced attraction; neutral controls, original photography only. */
+.ad-rec-card{background:#fff!important;border:1px solid #d8e1e6!important;color:#1d3545!important;overflow:hidden}
+.ad-rec-media img{display:block;width:100%;height:min(40vw,290px);min-height:180px;object-fit:cover}
+.ad-rec-media .ad-rec-credit{display:block;padding:8px 16px;font:11px/1.4 system-ui;color:#566979;background:#f7fafb}
+.ad-rec-fallback{font:14px/1.5 system-ui;margin:0;padding:28px 20px;background:#edf3f7;color:#455e70}
+.ad-rec-body{display:grid;gap:10px;padding:18px}
+.ad-rec-title{font:750 clamp(23px,5.4vw,30px)/1.16 system-ui;margin:0!important;color:#173246!important}
+.ad-rec-category{font:650 12px/1.5 system-ui;text-transform:capitalize;color:#516b78;margin:0}
+.ad-rec-match{font:14px/1.5 system-ui;color:#4d6778;margin:0}
+.ad-rec-links{display:flex;gap:8px;flex-wrap:wrap}
+.ad-rec-source-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border:1px solid #ccd9e1;border-radius:10px;padding:8px 11px;background:#fff;color:#1a526e!important;font:700 12px/1.3 system-ui;text-decoration:none}
+.ad-rec-disclosure{font:12px/1.5 system-ui;color:#627785;margin:0}
+.ad-rec-actions{margin-top:4px}
+.ad-rec-card :is(a,button):focus-visible{outline:3px solid #a57a36;outline-offset:2px}
+@media(max-width:430px){.ad-rec-media img{height:210px;min-height:170px}.ad-rec-body{padding:16px}}

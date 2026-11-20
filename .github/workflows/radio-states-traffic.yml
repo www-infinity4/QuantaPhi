@@ -1,0 +1,35 @@
+name: Source-Backed 50-State Radio Directory and Traffic Snapshot
+on:
+  pull_request:
+    paths:
+      - 'iowa-live-radio-cards.js'
+      - 'workers/radio-stations/**'
+      - 'data/site-traffic-lifetime.json'
+      - 'test/live-radio-states-traffic.test.mjs'
+      - 'test/radio-states-directory-worker.test.mjs'
+      - '.github/workflows/radio-states-traffic.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'iowa-live-radio-cards.js'
+      - 'workers/radio-stations/**'
+      - 'data/site-traffic-lifetime.json'
+      - 'test/live-radio-states-traffic.test.mjs'
+      - 'test/radio-states-directory-worker.test.mjs'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Static syntax
+        run: |
+          node --check iowa-live-radio-cards.js
+          node --check workers/radio-stations/worker.mjs
+      - name: Station and traffic regression suite
+        run: |
+          node --test test/live-radio-states-traffic.test.mjs test/radio-states-directory-worker.test.mjs test/live-radio-x-spaces-quick-card.test.mjs test/iowa-live-radio-cards.test.mjs

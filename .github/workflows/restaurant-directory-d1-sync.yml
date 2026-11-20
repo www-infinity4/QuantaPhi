@@ -1,0 +1,45 @@
+name: Restaurant Directory · Validate source
+on:
+  pull_request:
+    paths:
+      - scripts/restaurant-directory-cloudflare-sync.py
+      - test/test_restaurant_cloudflare_sync.py
+      - .github/workflows/restaurant-directory-d1-sync.yml
+  push:
+    branches: [main]
+    paths:
+      - data/restaurants/denver-co.json
+      - scripts/restaurant-directory-cloudflare-sync.py
+      - test/test_restaurant_cloudflare_sync.py
+      - .github/workflows/restaurant-directory-d1-sync.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: restaurant-directory-source-validation
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Verify source and D1 write restrictions
+        run: |
+          python -m unittest discover -s test -p test_restaurant_directory_import.py -v
+          python -m unittest discover -s test -p test_restaurant_cloudflare_sync.py -v
+      - name: Report safe record count
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('data/restaurants/denver-co.json').read_text())
+          print('Vetted restaurant snapshot records:',len(data['items']))
+          print('Cloudflare Worker cron owns ingestion via its D1 binding; this workflow validates source only.')
+          assert data['source_name']=='Overture Maps' and len(data['items']) >= 100
+          PY

@@ -71,6 +71,9 @@ async function populate(token,star,unified){
   line('Infinity',b.INFINITY),
   line('Music Quants',b.MUSIC_QUANT)
  );
+ const bitInfo=unified.bubbleBits;
+ if(bitInfo?.available&&Number.isSafeInteger(bitInfo.credited))balances.append(line('Bubble Bits credited',bitInfo.credited));
+ else {const unavailable=document.createElement('p');unavailable.textContent='Bubble Bit credit ledger unavailable';balances.append(unavailable);}
  balances.hidden=false;
  history.hidden=false;
  status('Cloudflare verified · '+name+' · live balances');

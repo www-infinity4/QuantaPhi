@@ -1,0 +1,35 @@
+name: Trending Android Apps and Termux Oracle card contracts
+on:
+  pull_request:
+    paths:
+      - 'trending-apps-core.mjs'
+      - 'trending-apps-quick-cards.mjs'
+      - 'trending-apps-quick-cards.css'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'bubbles-card-catalog.mjs'
+      - 'test/trending-apps-termux.test.mjs'
+      - '.github/workflows/trending-apps-termux-contracts.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'trending-apps-*.mjs'
+      - 'test/trending-apps-termux.test.mjs'
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse browser modules and Oracle viewer
+        run: |
+          node --check trending-apps-core.mjs
+          node --check trending-apps-quick-cards.mjs
+          node --check oracle-card-deck.js
+      - name: Verify real Google Trends app matches and non-executing Termux card
+        run: node --test test/trending-apps-termux.test.mjs

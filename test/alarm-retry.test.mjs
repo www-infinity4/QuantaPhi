@@ -55,11 +55,18 @@ test('global alarm dispatch lease throttles all repos, not just one ticket',asyn
  const retry=code.slice(code.indexOf('async retryPendingWork(){'),code.indexOf('async directGithub(body){'));
  assert.match(retry,/get\('alarm-global-next-at'\)/);
  assert.match(retry,/put\('alarm-global-next-at',now\+5\*60\*1000\)/);
- assert.ok(retry.indexOf("get('alarm-global-next-at')")<retry.indexOf('SELECT id,context_json'));
+ assert.ok(retry.indexOf("get('alarm-global-next-at')")<retry.indexOf('readRunnerQueue('));
+ assert.match(retry,/readRunnerQueue\(this\.env\.WORK_DB/);
  assert.ok(retry.indexOf("put('alarm-global-next-at'")<retry.indexOf('this.dispatchRunner()'));
 });
 
 test('unverified commit evidence pauses replay instead of writing the same patch again',()=>{
  assert.equal(eligibleForRetry({...job('working'),progress:{commitSha:'a'.repeat(40)}},{now:t}).reason,'commit_verification_required');
  assert.equal(eligibleForRetry(job(),{now:t,prior:{commitSha:'a'.repeat(40),status:'claimed',leaseUntil:0}}).eligible,false);
+});
+test('durable Pink verification prevents replay until the dependency is projected to D1',()=>{
+ const pink=eligibleForRetry(job('working'),{now:t,prior:{status:'source_verified',leaseUntil:0}});
+ assert.equal(pink.eligible,false);
+ assert.equal(eligibleForRetry(job(),{now:t,deps:[{status:'source_verified'}]}).reason,'dependency_pending');
+ assert.equal(eligibleForRetry(job(),{now:t,deps:[{status:'complete'}]}).eligible,true);
 });

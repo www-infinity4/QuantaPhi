@@ -27,11 +27,8 @@
 .oracle-card-deck-stage .ba-panel{z-index:9999}
 .oracle-card-scroll{display:block;width:100%;background:#a33042;font-weight:900;font-size:15px}
 .oracle-card-deck-status{font-size:12px;line-height:1.45;margin:8px 0 0;color:#604d6e}
-/* Keep the original Gary Cardone I AM node available to the Oracle carousel,
- * but never render it as a standalone homepage card, even before JS loads. */
-main.app > #churchOfIAmCard{display:none!important}
-.oracle-card-deck-active:not(.oracle-shelf-open) main.app > :is(#coliseumZeusCard,#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#result,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:none!important}
-.oracle-shelf-open main.app > :is(#coliseumZeusCard,#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:block}
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app > :is(#coliseumZeusCard,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#result,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:none!important}
+.oracle-shelf-open main.app > :is(#coliseumZeusCard,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:block}
 @media(max-width:390px){.oracle-card-deck{padding:11px}.oracle-card-deck-nav{grid-template-columns:1fr 1fr}.oracle-card-deck-nav strong{grid-column:1/-1;grid-row:1}.oracle-card-deck-nav button{font-size:13px;min-height:48px}}
 
 /* Search and the working card lead the page; navigation stays quiet. */
@@ -63,3 +60,55 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{background:transparent;co
 .oracle-family-jump [data-family-count]{display:inline-block;min-width:25px;margin-left:3px;
  border-radius:20px;background:#e0edf9;padding:3px 5px;color:#14416f;font-size:11px;font-variant-numeric:tabular-nums}
 @media(max-width:410px){.oracle-family-jump{gap:5px}.oracle-family-jump button{font-size:11px;padding:8px 3px;min-height:50px}}
+
+
+/* Following stream: actual original publisher items instead of name-only promotional tiles.
+ * Controls stay neutral and do not imply sponsorship or authentication. */
+.oracle-following-feed[hidden]{display:none!important}
+.oracle-following-feed{min-width:0;display:grid;gap:9px;margin:10px 0 17px;padding:8px 0;border-bottom:1px solid #e4e4e4}
+.oracle-following-feed .ofp-status{margin:0;color:#454545;font:650 13px/1.5 system-ui,sans-serif}
+.oracle-following-feed .ofp-note{font:450 11px/1.45 system-ui,sans-serif;color:#696969;margin:0}
+.oracle-following-feed .ofp-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:12px;min-width:0}
+.oracle-following-feed .ofp-item{display:grid;grid-template-rows:auto 1fr;background:#fff;border:1px solid #dfdfdf;border-radius:14px;overflow:hidden;min-width:0}
+.oracle-following-feed .ofp-photo{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.oracle-following-feed .ofp-info{display:grid;align-content:start;gap:7px;padding:13px;min-width:0}
+.oracle-following-feed .ofp-source{font:750 11px/1.4 system-ui,sans-serif;color:#565656;margin:0}
+.oracle-following-feed .ofp-title{font:750 18px/1.25 system-ui,sans-serif;color:#222;margin:0;overflow-wrap:anywhere}
+.oracle-following-feed .ofp-description{font:450 13px/1.45 system-ui,sans-serif;color:#494949;margin:0;overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.oracle-following-feed .ofp-price{font:800 15px/1.35 system-ui,sans-serif;color:#252525;margin:0}
+.oracle-following-feed .ofp-disclosure{font:450 10px/1.35 system-ui,sans-serif;color:#686868;margin:2px 0 0}
+.oracle-following-feed .ofp-actions{display:flex;flex-wrap:wrap;gap:7px}
+.oracle-following-feed .ofp-action,.oracle-following-feed .ofp-more{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;min-height:44px;padding:9px 11px;border:1px solid #cacaca;border-radius:11px;background:#fff;color:#252525!important;font:750 12px/1.35 system-ui,sans-serif;cursor:pointer}
+.oracle-following-feed .ofp-action:hover,.oracle-following-feed .ofp-more:hover{background:#f3f3f3}
+.oracle-following-feed .ofp-unavailable{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;min-height:48px;padding:8px 12px;border-bottom:1px solid #e1e1e1;background:#fff;color:#555;font:550 12px/1.4 system-ui,sans-serif}
+.oracle-following-feed .ofp-more[hidden]{display:none!important}
+.oracle-following-feed :is(a,button):focus-visible{outline:3px solid #333;outline-offset:2px}
+@media(max-width:600px){.oracle-following-feed .ofp-items{grid-template-columns:1fr}.oracle-following-feed .ofp-item{grid-template-columns:minmax(116px,42%) 1fr;grid-template-rows:auto}.oracle-following-feed .ofp-photo{height:100%;aspect-ratio:auto;min-height:145px;object-fit:cover}.oracle-following-feed .ofp-title{font-size:15px}.oracle-following-feed .ofp-info{padding:11px}.oracle-following-feed .ofp-actions{display:grid;grid-template-columns:1fr}.oracle-following-feed .ofp-action{width:100%}.oracle-following-feed .ofp-item.ofp-no-photo{grid-template-columns:1fr}}
+
+/* One real Oracle Octaves carousel, changed by the compact department selector.
+ * Retains original typography/materials rather than a replacement design. */
+#oracleCardDeck .oracle-department-bar{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:10px 0 14px;padding:10px 13px;border:1px solid #c69fdf;border-radius:14px;background:linear-gradient(110deg,#fff6eb,#f2eaff)}
+#oracleCardDeck .oracle-department-bar label{font:750 16px/1.45 system-ui,sans-serif;letter-spacing:.01em;color:#623472}
+#oracleCardDepartment{font:680 17px/1.4 system-ui,sans-serif;color:#352144;background:#fffdf8;border:2px solid #8e629f;border-radius:12px;min-height:49px;flex:1 1 220px;max-width:100%;padding:10px 15px}
+#oracleSaveDepartment{font:720 15px/1.3 system-ui,sans-serif;min-height:48px;max-width:100%;border-radius:12px;border:1px solid #8e629f;background:#6b348c;color:#fff;padding:10px 15px;cursor:pointer}
+#oracleSaveDepartment[aria-pressed="true"]{background:#eee2f6;color:#51325f}
+#oracleCardDepartment:focus-visible,#oracleSaveDepartment:focus-visible{outline:3px solid #dc985c;outline-offset:3px}
+#oracleCardDepartment option{color:#332838;background:#fff}
+@media(max-width:420px){#oracleCardDeck .oracle-department-bar{padding:9px;gap:8px}#oracleCardDeck .oracle-department-bar label{width:100%}#oracleCardDepartment,#oracleSaveDepartment{width:100%;flex:1 1 100%}}
+
+#oracleCardHide{min-height:48px;padding:10px 14px;border:1px solid #986c97;border-radius:12px;background:#fff7f1;color:#72395b;font:700 15px/1.35 system-ui,sans-serif;cursor:pointer}
+#oracleCardHide:focus-visible{outline:3px solid #c97942;outline-offset:3px}
+#oracleCardHide[hidden]{display:none!important}
+
+
+/* Owner-reviewed Aware Carousel programming; collapsed by default to preserve
+   the original single-card Android viewer and Oracle Octaves appearance. */
+.oracle-aware-writer{margin:9px 8px 12px;padding:8px 12px;border:1px solid #cfb8df;border-radius:15px;background:#faf6fd;color:#342344;max-width:100%;font:500 15px/1.5 system-ui,sans-serif}
+.oracle-aware-writer>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:800;font-size:16px;letter-spacing:.015em}
+.oracle-aware-writer p{margin:8px 0 10px;font-size:14px;line-height:1.5}
+.oracle-aware-writer select,.oracle-aware-writer textarea{display:block;width:100%;box-sizing:border-box;min-height:44px;margin:8px 0;border:1px solid #ab8bc0;border-radius:9px;padding:9px;font:500 15px/1.45 system-ui,sans-serif;color:#281b34;background:white}
+.oracle-aware-writer textarea{resize:vertical;min-height:78px}
+.oracle-aware-writer textarea[readonly]{background:#f3edf7;min-height:130px}
+.oracle-aware-writer button{min-height:44px;min-width:160px;padding:10px 13px;margin:4px 7px 4px 0;border-radius:11px;border:1px solid #6c4685;background:#52326e;color:white;font:750 14px/1.3 system-ui,sans-serif;cursor:pointer}
+.oracle-aware-writer :is(button,select,textarea,summary):focus-visible{outline:3px solid #246ba4;outline-offset:2px}
+@media(max-width:420px){.oracle-aware-writer button{width:100%;margin:5px 0}}

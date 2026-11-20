@@ -55,6 +55,8 @@ public final class PlatinumActivity extends Activity {
  private static final int FILE_PICKER=301;
  private static final int PHONE_MEDIA_PERMISSION=302;
  private PermissionRequest pendingPhoneMedia;
+ private WebView pendingPhoneMediaView;
+ private String[] pendingPhoneMediaResources;
  private static final String PREFS="platinum-device";
  private static final int MAX_TABS=3;
  private static final int SILVER=Color.rgb(237,239,243),INK=Color.rgb(44,53,69),STEEL=Color.rgb(76,91,116);
@@ -206,6 +208,9 @@ public final class PlatinumActivity extends Activity {
     note("Unsupported link blocked. Only HTTP(S) websites can open.");
     return true;
    }
+   @Override public void onPageStarted(WebView view,String url,android.graphics.Bitmap favicon){
+    if(view==pendingPhoneMediaView)cancelPendingPhoneMedia();
+   }
    @Override public void onPageFinished(WebView view,String url){
     if(view==active()){
      address.setText(url);
@@ -235,6 +240,8 @@ public final class PlatinumActivity extends Activity {
      Uri page=Uri.parse(web.getUrl()==null?"":web.getUrl());
      // Only this user's foreground Infinity Phone page may ask for call media.
      if(web!=active()||!"https".equals(origin.getScheme())||
+       (origin.getPort()!=-1&&origin.getPort()!=443)||
+       !"https".equals(page.getScheme())||(page.getPort()!=-1&&page.getPort()!=443)||
        !"quantaphi.org".equalsIgnoreCase(origin.getHost())||
        !"quantaphi.org".equalsIgnoreCase(page.getHost())||
        page.getPath()==null||!page.getPath().startsWith("/phone/")){
@@ -252,14 +259,16 @@ public final class PlatinumActivity extends Activity {
      }
      if(grants.isEmpty()){request.deny();return;}
      if(!missing.isEmpty()){
-      if(pendingPhoneMedia!=null)pendingPhoneMedia.deny();
+      cancelPendingPhoneMedia();
       pendingPhoneMedia=request;
+      pendingPhoneMediaView=web;
+      pendingPhoneMediaResources=grants.toArray(new String[0]);
       requestPermissions(missing.toArray(new String[0]),PHONE_MEDIA_PERMISSION);
      }else request.grant(grants.toArray(new String[0]));
     });
    }
    @Override public void onPermissionRequestCanceled(PermissionRequest request){
-    runOnUiThread(()->{if(pendingPhoneMedia==request)pendingPhoneMedia=null;});
+    runOnUiThread(()->{if(pendingPhoneMedia==request)clearPendingPhoneMedia();});
    }
    @Override public boolean onShowFileChooser(WebView view,ValueCallback<Uri[]> callback,FileChooserParams params){
     if(pendingFiles!=null)pendingFiles.onReceiveValue(null);
@@ -293,6 +302,7 @@ public final class PlatinumActivity extends Activity {
   w.loadUrl(url);
  }
  private void showTab(){
+  cancelPendingPhoneMedia();
   frame.removeAllViews();
   WebView w=active();if(w!=null){
    if(w.getParent()!=null)((android.view.ViewGroup)w.getParent()).removeView(w);
@@ -303,6 +313,7 @@ public final class PlatinumActivity extends Activity {
  }
  private void switchNext(){if(tabs.size()>1){current=(current+1)%tabs.size();showTab();}else note("Only one tab open. Tap + to add a tab.");}
  private void closeTab(){
+  cancelPendingPhoneMedia();
   if(tabs.size()==1){home();return;}
   WebView closing=tabs.remove(current);frame.removeView(closing);closing.stopLoading();closing.destroy();
   current=Math.max(0,Math.min(current,tabs.size()-1));showTab();
@@ -395,18 +406,35 @@ public final class PlatinumActivity extends Activity {
  @Override public void onRequestPermissionsResult(int requestCode,String[] permissions,int[] grantResults){
   super.onRequestPermissionsResult(requestCode,permissions,grantResults);
   if(requestCode!=PHONE_MEDIA_PERMISSION||pendingPhoneMedia==null)return;
-  PermissionRequest request=pendingPhoneMedia;pendingPhoneMedia=null;
-  boolean permitted=grantResults.length>0;
+  PermissionRequest request=pendingPhoneMedia;
+  WebView source=pendingPhoneMediaView;
+  String[] resources=pendingPhoneMediaResources;
+  clearPendingPhoneMedia();
+  boolean permitted=grantResults.length>0&&source!=null&&source==active()&&resources!=null;
   for(int result:grantResults)if(result!=PackageManager.PERMISSION_GRANTED)permitted=false;
-  if(permitted){
-   WebView view=active();
-   String activeUrl=view==null?"":view.getUrl();
-   Uri page=Uri.parse(activeUrl==null?"":activeUrl);
-   if(!"quantaphi.org".equalsIgnoreCase(page.getHost())||page.getPath()==null||!page.getPath().startsWith("/phone/"))permitted=false;
+  Uri page=Uri.parse(source==null||source.getUrl()==null?"":source.getUrl());
+  Uri origin=request.getOrigin();
+  if(!"https".equals(page.getScheme())||(page.getPort()!=-1&&page.getPort()!=443)||
+    !"https".equals(origin.getScheme())||(origin.getPort()!=-1&&origin.getPort()!=443)||
+    !"quantaphi.org".equalsIgnoreCase(origin.getHost())||
+    !"quantaphi.org".equalsIgnoreCase(page.getHost())||page.getPath()==null||!page.getPath().startsWith("/phone/"))permitted=false;
+  if(resources!=null)for(String resource:resources){
+   String permission=PermissionRequest.RESOURCE_AUDIO_CAPTURE.equals(resource)?"android.permission.RECORD_AUDIO":
+    PermissionRequest.RESOURCE_VIDEO_CAPTURE.equals(resource)?"android.permission.CAMERA":null;
+   if(permission==null||checkSelfPermission(permission)!=PackageManager.PERMISSION_GRANTED)permitted=false;
   }
-  if(permitted)request.grant(request.getResources());
+  if(permitted)request.grant(resources);
   else{request.deny();note("Microphone/camera permission denied. No call media was captured.");}
  }
+ private void clearPendingPhoneMedia(){
+  pendingPhoneMedia=null;pendingPhoneMediaView=null;pendingPhoneMediaResources=null;
+ }
+ private void cancelPendingPhoneMedia(){
+  PermissionRequest request=pendingPhoneMedia;
+  clearPendingPhoneMedia();
+  if(request!=null)request.deny();
+ }
+
  @Override public void onBackPressed(){
   WebView w=active();
   if(w!=null&&w.canGoBack()){w.goBack();return;}
@@ -418,7 +446,7 @@ public final class PlatinumActivity extends Activity {
    try{networkManager.unregisterNetworkCallback(networkCallback);}catch(Exception ignored){}
    networkCallback=null;
   }
-  if(pendingPhoneMedia!=null){pendingPhoneMedia.deny();pendingPhoneMedia=null;}
+  cancelPendingPhoneMedia();
   if(pendingFiles!=null){pendingFiles.onReceiveValue(null);pendingFiles=null;}
   for(WebView w:tabs){w.stopLoading();if(w.getParent()!=null)((android.view.ViewGroup)w.getParent()).removeView(w);w.destroy();}
   tabs.clear();super.onDestroy();

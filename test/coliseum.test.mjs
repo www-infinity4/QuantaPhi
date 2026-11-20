@@ -56,3 +56,27 @@ test('homepage has a real Zeus card in existing Oracle rotation, not a standalon
  assert.match(html,/No paid subscriptions or third-party-model access/);
  assert.doesNotMatch(html,/name="paypal-email"/);
 });
+
+test('Zeus uses Infinity brand-card visual structure with honest original-product labeling',()=>{
+ const index=read('index.html'),css=read('coliseum/zeus-card.css');
+ const start=index.indexOf('<article id="coliseumZeusCard"');
+ const end=index.indexOf('</article>',start);
+ assert.ok(start>=0&&end>start);
+ const card=index.slice(start,end);
+ assert.match(card,/class="iqc-card iac-card"/);
+ assert.match(card,/class="iac-heading zc-heading"/);
+ assert.match(card,/class="iac-badge">∞ Infinity original/);
+ assert.match(card,/class="iac-media zc-art"/);
+ assert.match(card,/class="iac-content zc-main"/);
+ assert.match(card,/class="iac-website-actions zc-links"/);
+ assert.match(card,/href="\/coliseum\/index\.html#arena"/);
+ assert.match(card,/href="\/coliseum\/index\.html#models"/);
+ assert.match(card,/id="coliseumZeusActions"/);
+ assert.match(card,/No third-party AI model, public room or paid membership activated/);
+ assert.doesNotMatch(card,/Infinity accepted|Official OpenAI|Subscribe now/i);
+ assert.match(index,/coliseum\/zeus-card\.css\?v=20261028-brand1/);
+ assert.match(css,/#coliseumZeusCard\.iac-card/);
+ assert.match(css,/grid-template-areas:"heading heading" "media content"/);
+ assert.match(css,/@media\(max-width:650px\)/);
+ assert.match(css,/:focus-visible/);
+});

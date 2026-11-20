@@ -11,10 +11,13 @@ assert.ok(neuralStart>0&&neuralEnd>neuralStart);
 // Source classifier fixtures exercise the deterministic path; the asynchronous
 // model only runs in the actual verified-owner chat.
 const source=originalSource.slice(0,neuralStart)+' let neuralCoding=false;\n'+originalSource.slice(neuralEnd);
-const modeLine=site.slice(site.indexOf('   const mode='),site.indexOf('   const namedWorkflow=',site.indexOf('   const mode=')));
+const modeStart=site.indexOf('   const workflowDispatch=');
+const modeEnd=site.indexOf('   const action=',modeStart);
+assert.ok(modeStart>0&&modeEnd>modeStart);
+const modeLine=site.slice(modeStart,modeEnd);
 // The real chat resolves namedCardWork from its card catalog before entering this
 // excerpt. Here, exercise the old operator with no named-card match.
-const classify=new Function('request','coderIntent','const namedCardWork=null;\n'+source+'\n'+modeLine+'\nreturn {ownerGithubNonAction,createRepository,directCoding,requestsAgents,mode};');
+const classify=new Function('request','coderIntent','const namedCardWork=null;\nconst contextualPluralRepair=false;\n'+source+'\n'+modeLine+'\nreturn {ownerGithubNonAction,createRepository,directCoding,requestsAgents,mode};');
 
 test('create a new file uses GitHub WRITE, not READ',()=>{
  const request='Create a new file named hello.txt in RecordB';
@@ -127,4 +130,20 @@ test('repository creation contract is explicit and does not report verified CI o
  assert.equal(result.deployed,false);
  assert.deepEqual(JSON.parse(calls[1].options.body).private,true);
  assert.ok(calls.every(c=>c.options.redirect==='manual'));
+});
+
+test('a bare completed status cannot claim passed checks or deployed code without verification',()=>{
+ const start=site.indexOf('const humanReplies=()=>({'),end=site.indexOf('const brainTools=',start);
+ const replies=new Function(site.slice(start,end)+'\nreturn humanReplies;')()();
+ for(const outcome of [
+  {ok:true,status:'completed'},
+  {ok:true,status:'completed',testsVerified:false},
+  {ok:true,status:'deployed_verified',deploymentVerified:false},
+  {ok:true,status:'success'}
+ ]){
+  const spoken=replies.githubReply(outcome);
+  assert.doesNotMatch(spoken,/checks passed|repair is finished|deployed successfully|what should we work on next/i);
+  assert.match(spoken,/not verified|not confirmed|unverified|awaiting/i);
+ }
+ assert.match(replies.githubReply({ok:true,status:'deployed_verified',deploymentVerified:true,testsVerified:true}),/verified|passed/i);
 });

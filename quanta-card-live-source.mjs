@@ -5,6 +5,9 @@
 const BROKER='https://orange-brook-a2ac.marvaseater.workers.dev/search';
 const profiles=Object.freeze({
  ebay:{name:'eBay listings',site:'ebay.com/itm',hosts:['ebay.com'],path:'/itm/'},
+ etsy:{name:'Etsy listings',site:'etsy.com/listing',hosts:['etsy.com'],path:'/listing/'},
+ mercari:{name:'Mercari listings',site:'mercari.com/us/item',hosts:['mercari.com'],path:'/us/item/'},
+ poshmark:{name:'Poshmark listings',site:'poshmark.com/listing',hosts:['poshmark.com'],path:'/listing/'},
  'vintage-toys':{name:'eBay vintage toys',site:'ebay.com/itm',hosts:['ebay.com'],path:'/itm/'},
  'antique-collectibles':{name:'eBay antiques',site:'ebay.com/itm',hosts:['ebay.com'],path:'/itm/'},
  'us-mint':{name:'U.S. Mint',site:'usmint.gov',hosts:['usmint.gov']},

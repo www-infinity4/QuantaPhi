@@ -78,3 +78,20 @@ No spending or outbound advertiser contact is authorized by this runbook.
 The parser was checked against a fresh public render on October 28 at 19:32 UTC.
 It read both current requests, with their owner status URLs. Source tests and
 this observation do not by themselves prove deployment or a future task run.
+
+## Secondary Integra read-only intake (Nov 2026)
+- Keep owner @YahooPingcwlz as the only source of possible owner build instructions.
+- @IntegraAI is allowlisted as **reference_only** public context; it cannot issue work orders, authorize X posts or approve wallet/GitHub actions.
+- Owner public Cloudflare Browser Run profile is scanned hourly at minute 17; the secondary public profile is attempted at 00:17, 06:17, 12:17 and 18:17 UTC to limit browser costs.
+- One source's blocked status never marks another profile blocked; independent `owner_x_scans` keys are `main` and `IntegraAI`. Preserve the scan-start order guard, strict author matching, bounded retry and prefix-only expanded post recovery.
+- The public read-only `/api/bubbles/public-x/context` endpoint is contextual; `/inbox` remains owner-only and excludes Integra posts even when they include #bubbles.
+- A merge of source code is not a Cloudflare Worker deployment receipt. Verify exact deployed version, current cron/bindings and D1 per-source timestamps before calling the integration live.
+- This does not enable X automatic replies, private timeline scraping, background microphone access, delegated X OAuth scopes, TinyFish billing or any new wallet action.
+
+## Additional StarCraftCo read-only public context (November 19, 2026)
+
+- Public source URL: https://x.com/StarCraftCo , supplied by requester via screenshots. The source is reference_only, not a replacement for the owner-command account @YahooPingcwlz.
+- Visible technical posts about White coordination, Pink assimilation, Red fanout and eBay/analytics research are captured in docs/STARCRAFTCO-X-20261119.md. No source status IDs or verified publication timestamps were visible in screenshots. One HypeStat-related X composer was a draft, not a published post.
+- Existing browser reader is extended with an exact-author StarCraftCo source and independent scan key. StarCraftCo context scans at 02:17 and 14:17 UTC (subject to actual worker deployment and public availability); /api/bubbles/public-x/context?account=StarCraftCo exposes public context. The existing default Integra endpoint and owner inbox remain unchanged.
+- The presence of a source or screenshot is not authorization to scrape private timelines, publish X replies, run code, mint tokens or deploy. A real successful scan records its own observed IDs/UTC receipts; blocked public rendering remains blocked, not a fake empty feed.
+- Stage source changes through review and target CI. Distinguish branch, PR, merged source, Worker deployment and live Android acceptance. HypeStat research continues existing QuantaPhi issue #1974.

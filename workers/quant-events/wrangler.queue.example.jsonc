@@ -1,0 +1,35 @@
+// EXAMPLE ONLY: merge the fields into QuantaPhi's existing Worker config after
+// identifying the reviewed target Worker. Do NOT deploy this file directly.
+// Create new, isolated event D1/Queue/DLQ resources via approved infrastructure
+// changes; never point DB at quant-ai or the wallet/receipts databases blindly.
+{
+  "name": "REPLACE_EXISTING_WORKER_NAME",
+  "main": "src/ingest.ts",
+  "compatibility_date": "2026-11-08",
+  "vars": {
+    "INGEST_MODE": "queue"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "quantaphi-events",
+      "database_id": "REPLACE_WITH_APPROVED_D1_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "queues": {
+    "producers": [
+      { "binding": "EVENT_QUEUE", "queue": "quantaphi-events-ingest" }
+    ],
+    "consumers": [
+      {
+        "queue": "quantaphi-events-ingest",
+        "max_batch_size": 5,
+        "max_batch_timeout": 3,
+        "max_retries": 8,
+        "max_concurrency": 2,
+        "dead_letter_queue": "quantaphi-events-dlq"
+      }
+    ]
+  }
+}

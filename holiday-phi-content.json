@@ -1,0 +1,84 @@
+{
+  "schema": "quantaphi.holiday-phi/v1",
+  "updated": "2026-11-02",
+  "holidays": {
+    "thanksgiving": {
+      "name": "Thanksgiving",
+      "subtitle": "Family, food, history & gratitude",
+      "searchHint": "Thanksgiving harvest dinner parade",
+      "images": [
+        {
+          "title": "Thanksgiving dinner",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Turkey_dinner.jpg?width=960",
+          "source": "https://commons.wikimedia.org/wiki/File:Turkey_dinner.jpg",
+          "license": "Mark Miller · CC BY-SA 4.0 · credit and share-alike terms apply"
+        },
+        {
+          "title": "Thanksgiving turkey on a platter",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thanksgiving_Turkey_on_platter.jpg?width=960",
+          "source": "https://commons.wikimedia.org/wiki/File:Thanksgiving_Turkey_on_platter.jpg",
+          "license": "slgckgc · CC BY 2.0 · attribution required"
+        }
+      ],
+      "videos": [
+        {
+          "title": "A Day of Thanksgiving (1951)",
+          "year": 1951,
+          "source": "https://archive.org/details/DayofTha1951",
+          "embedUrl": "https://archive.org/embed/DayofTha1951",
+          "imageUrl": "https://archive.org/services/img/DayofTha1951",
+          "description": "A family reflects on gratitude in a vintage educational film. The original film also has historical messaging worth discussing.",
+          "rightsNote": "Prelinger Archives source · verify item and edition-specific rights before reuse."
+        }
+      ]
+    },
+    "christmas": {
+      "name": "Christmas",
+      "subtitle": "Classic films, festive art & seasonal creations",
+      "searchHint": "Christmas winter tree decorated presents",
+      "images": [
+        {
+          "title": "Christmas tree with presents",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christmas_tree_with_presents.JPG?width=960",
+          "source": "https://commons.wikimedia.org/wiki/File:Christmas_tree_with_presents.JPG",
+          "license": "Juliancolton · public domain dedication"
+        },
+        {
+          "title": "Christmas tree",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christmas_Tree.png?width=960",
+          "source": "https://commons.wikimedia.org/wiki/File:Christmas_Tree.png",
+          "license": "Kelvinsong · CC0 1.0 dedication"
+        }
+      ],
+      "videos": [
+        {
+          "title": "Christmas Comes But Once a Year (1936)",
+          "year": 1936,
+          "source": "https://archive.org/details/ChristmasComesButOnceAYear-1936",
+          "embedUrl": "https://archive.org/embed/ChristmasComesButOnceAYear-1936",
+          "imageUrl": "https://archive.org/services/img/ChristmasComesButOnceAYear-1936",
+          "description": "A vintage Christmas animation hosted by the Internet Archive.",
+          "rightsNote": "Read Archive item rights and edition metadata before remixing."
+        },
+        {
+          "title": "Santa's Surprise (1947)",
+          "year": 1947,
+          "source": "https://archive.org/details/SantasSuprise",
+          "embedUrl": "https://archive.org/embed/SantasSuprise",
+          "imageUrl": "https://archive.org/services/img/SantasSuprise",
+          "description": "A short holiday cartoon, available from its original Archive host.",
+          "rightsNote": "Check the specific edition and any soundtrack reuse terms at the original source."
+        },
+        {
+          "title": "Scrooge (1935)",
+          "year": 1935,
+          "source": "https://archive.org/details/Scrooge_1935",
+          "embedUrl": "https://archive.org/embed/Scrooge_1935",
+          "imageUrl": "https://archive.org/services/img/Scrooge_1935",
+          "description": "The classic Christmas story in a vintage feature-film adaptation.",
+          "rightsNote": "Read Archive item notes and confirm reuse rights for this edition."
+        }
+      ]
+    }
+  }
+}

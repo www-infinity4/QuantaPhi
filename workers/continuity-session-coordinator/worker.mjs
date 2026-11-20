@@ -149,6 +149,9 @@ export async function sourceCache(db, at) {
       if (report?.protocol !== PROTOCOL || !Array.isArray(report.tracks)) continue;
       for (const t of report.tracks) {
         if (!Object.hasOwn(SOURCE_URLS, t.id) || cache[t.id] || t.url !== SOURCE_URLS[t.id]) continue;
+        // Old coordinator receipts treated API pagination as complete CI coverage.
+        // Never replay those green build verdicts after the corrected contract ships.
+        if (t.id === 'build' && (t.ci?.coverageComplete !== false || t.ci?.passed !== false)) continue;
         const sourceState = t.sourceState || t.state;
         const stamp = Date.parse(t.observedAt || report.checkedAt);
         if (!['checked', 'blocked'].includes(sourceState) || !Number.isFinite(stamp) ||
@@ -175,6 +178,10 @@ export async function observe(env, fetcher, at, cycleId, cache = {}) {
     const age = at - Date.parse(prior?.observedAt);
     const valid = prior && prior.url === SOURCE_URLS[id] &&
       ['checked', 'blocked'].includes(prior.sourceState) &&
+      // Defend at the reuse boundary too: an injected or older cached build
+      // observation must never restore the legacy false-green CI verdict.
+      (id !== 'build' || (prior.ci?.coverageComplete === false &&
+        prior.ci?.passed === false && prior.sourceState === 'blocked')) &&
       Number.isFinite(age) && age >= 0 && age <= SOURCE_MAX_AGE;
     if (valid && age < SOURCE_TTL) return savedSource(prior, 'cached');
     const current = await inspect(id, action);
@@ -218,13 +225,23 @@ export async function observe(env, fetcher, at, cycleId, cache = {}) {
       const success = values.filter(r => r.status === 'completed' && r.conclusion === 'success').length;
       const failed = values.filter(r => r.status === 'completed' && !['success', 'skipped', 'neutral'].includes(r.conclusion)).length;
       const pending = values.filter(r => r.status !== 'completed').length;
-      const coverageComplete = doc.total_count <= doc.workflow_runs.length;
-      const ciPassed = coverageComplete && values.length > 0 && success === values.length;
-      return track('build', failed ? 'attention' : ciPassed ? 'checked' : 'blocked',
-        'PR #1144: ' + success + '/' + values.length + ' latest workflows successful; ' +
+      // GitHub's total_count only proves pagination, NOT that required checks ran.
+      // In particular, one successful push run cannot establish PR CI coverage.
+      const pageComplete = doc.total_count <= doc.workflow_runs.length;
+      const prRuns = values.filter(r => r.event === 'pull_request');
+      const prObserved = prRuns.length;
+      const prPassed = pageComplete && prObserved > 0 &&
+        prRuns.every(r => r.status === 'completed' && r.conclusion === 'success');
+      // No independently verified required-workflow baseline is available here.
+      // Never turn an incomplete observation into a green release gate.
+      const coverageComplete = false, ciPassed = false;
+      return track('build', failed ? 'attention' : 'blocked',
+        'PR #1144: ' + success + '/' + values.length + ' observed latest-head workflows successful (' +
+          prObserved + ' PR-triggered); required CI coverage not established; ' +
           (pr.draft ? 'draft' : pr.merged_at ? 'merged' : pr.state) + '; production acceptance is separate', {
         url: 'https://github.com/www-infinity4/QuantaPhi/pull/1144', sourceRevision: pr.head.sha,
-        ci: {success, failed, pending, observed: values.length, coverageComplete, passed: ciPassed},
+        ci: {success, failed, pending, observed: values.length, prObserved,
+          pageComplete, coverageComplete, prPassed, passed: ciPassed},
         draft: pr.draft === true, merged: Boolean(pr.merged_at), deploymentVerified: false,
       });
     }),

@@ -31,7 +31,7 @@ test('source cards, details and feed all use the same real actions',()=>{
  const src=read('source-quick-cards.mjs');
  const feed=read('quanta-feed.mjs');
  assert.match(experience,/import \{mountCardActions\}/);
- assert.match(experience,/mountCardActions\(root,card\)/);
+ assert.match(experience,/mountCardActions\(root,card,\{showSearch:/);
  assert.match(src,/mountCardTools\(tools,card\)/);
  assert.match(feed,/mountCardTools\(tools,selected\)/);
 });

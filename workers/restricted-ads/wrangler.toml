@@ -1,0 +1,17 @@
+name = "quantaphi-restricted-ads"
+main = "./index.mjs"
+compatibility_date = "2026-11-01"
+workers_dev = false
+
+[vars]
+ALLOWED_ORIGIN = "https://quantaphi.org"
+
+[[d1_databases]]
+binding = "ADS_DB"
+database_name = "quantaphi-restricted-ads"
+database_id = "51290427-442b-45e9-a9a9-e9c5f848788a"
+
+# Deliberately NO live route or AGE VERIFIER binding yet.
+# Add the restricted /v1/restricted-ads/* route only when an approved
+# identity+age vendor service, legal review and testing are complete.
+# Keep CONSENT_SALT as a private Worker secret; never commit its value.

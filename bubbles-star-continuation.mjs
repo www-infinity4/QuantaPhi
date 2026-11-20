@@ -9,7 +9,14 @@ const DEPENDENCY_DONE=new Set(['complete','deployed_verified','merged_verified']
 const DENIAL=/owner_input_required|owner_authorization_required|owner_approval_required|security_hold|permission_denied|password|secret|credential|wallet|payment|biometric|consent_required|account_connection_required/i;
 const VERIFY=/commit_verification_required|deployment_not_verified|deployed_unverified|merge_verification_required/i;
 const bounded=n=>Number.isFinite(n)?Math.max(1,Math.min(8,Math.trunc(n))):8;
-export function isStarContinuation(value){return typeof value==='string'&&value.trim()==='*';}
+export function isStarContinuation(value){
+ if(typeof value!=='string')return false;
+ const command=value.trim();
+ // Treat only short owner commands as an instruction to resume saved work.
+ // Longer sentences remain ordinary chat: never authorize builds from a quote,
+ // arbitrary page content, external messages or a model's interpretation.
+ return command==='*'||/^(?:continue|resume)(?:\s+(?:engineering|work))?(?:\s+please)?[.!]?$/i.test(command);
+}
 const time=v=>Number.isFinite(Number(v))?Number(v):Date.parse(v||'')||0;
 function jobStage(job,jobs,now){
  const status=String(job?.status||'');
@@ -53,6 +60,16 @@ export function selectContinuation(tickets,{maxSlots=8,now=Date.now()}={}){
    jobStage(job,ticket.context.color_jobs,now)==='dispatch_eligible').map(job=>({ticketId:ticket.id,jobId:job.id,repository:ticket.repository,stage:'dispatch_eligible'})))[0]||null;
  return {scanned:rows.length,slots,counts,target,maximum:bounded(maxSlots),dispatchBudget:1};
 }
+
+// The UI may reflect a signed dispatch acknowledgement, never completion.
+// Events are read-only observations, not authority, payment or wallet credits.
+export function continuationActivity(result){
+ const target=result?.selected?.target;
+ if(!result?.ok||result?.dispatch?.status!=='queued_for_runner'||!target)return null;
+ if(!ID.test(target.ticketId||'')||!JOB.test(target.jobId||'')||!REPO.test(target.repository||''))return null;
+ return {type:'job',repository:target.repository,status:'queued'};
+}
+
 export async function continueSavedWork({fetcher,ownerHeaders,base,now=Date.now(),maxSlots=8}){
  if(typeof fetcher!=='function'||typeof ownerHeaders!=='function'||!/^https:\/\//.test(base||''))throw Error('continuation_adapter_invalid');
  const headers=await ownerHeaders();
@@ -71,8 +88,13 @@ export async function continueSavedWork({fetcher,ownerHeaders,base,now=Date.now(
    unmatched:(audit.candidates||[]).filter(c=>!Array.isArray(c.linkedTickets)||c.linkedTickets.length===0).length,
    readOnly:true};
  }catch(error){archive={checked:false,error:String(error.message||error).slice(0,100)}}
- const inventory=await call('/work/tickets/list',{},15000);
+ // Ask Brain for the older owner jobs prioritized by readiness, instead of
+ // the generic newest-100 timeline (which can hide all ready work).
+ const inventory=await call('/work/tickets/list',{continuation:true},15000);
  const selected=selectContinuation(inventory.tickets,{now,maxSlots});
+ // Older Brain versions ignore the new prioritized-list hint; never pretend
+ // that one bounded page proves full backlog coverage in that case.
+ selected.inventoryTruncated=inventory.continuationScope!=='owner_robot_directions'||inventory.truncated===true;
  if(!selected.target)return {ok:true,selected,archive,dispatch:null,executionVerified:false};
  // One real signed GitHub runner request, with its exact existing ticket/job.
  // Never authorize work from imported conversation text or a guessed repository.
@@ -83,7 +105,8 @@ export function continuationReply(result){
  const selection=result?.selected;
  if(!result?.ok||!selection)return 'Continuation could not verify owner work. Nothing was started.';
  const n=selection.slots.length,unfinished=Object.values(selection.counts).reduce((a,b)=>a+b,0);
- const summary='Checked saved owner work: '+unfinished+' unfinished job stages across '+selection.scanned+' tickets; '+n+' project slots available (maximum '+selection.maximum+').';
+ const summary='Checked saved owner work: '+unfinished+' unfinished job stages across '+selection.scanned+' tickets; '+n+' project slots available (maximum '+selection.maximum+').'+
+  (selection.inventoryTruncated?' This is a partial queue view; other older work may remain.':'');
  if(!result.archive?.checked)return summary+' Conversation archive was unavailable; no missing request was invented. '+dispatchSummary(result.dispatch);
  return summary+' Earlier conversations were checked read-only. '+dispatchSummary(result.dispatch);
 }

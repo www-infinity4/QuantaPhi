@@ -67,11 +67,21 @@ async function search(){
   if(!response.ok)throw Error('upstream_http_'+response.status);
   return rows(await response.json())
  };
- let found=[];
- try{found=(await lookup(true)).filter(r=>r.engines.some(e=>e===engine));}catch{}
- if(found.length){show(found,true);return}
- try{found=await lookup(false);}catch{}
- if(found.length){show(found,false);return}
+ let displayed=false,verified=false;
+ // A fast provider result costs one request. Slow or empty providers
+ // trigger a hedged general search instead of another full serial timeout.
+ const providerJob=lookup(true).then(found=>{
+  const exact=found.filter(r=>r.engines.some(e=>e===engine));
+  if(exact.length){verified=true;displayed=true;show(exact,true)}
+ }).catch(()=>{});
+ const generalJob=new Promise(resolve=>setTimeout(resolve,250)).then(()=>{
+  if(verified)return [];
+  return lookup(false)
+ }).then(found=>{
+  if(!verified&&found.length){displayed=true;show(found,false)}
+ }).catch(()=>{});
+ await Promise.all([providerJob,generalJob]);
+ if(displayed)return;
  status.textContent='Search results could not be fetched. The original '+provider+' search link above remains available.';
  sourceLabel.textContent='Live source unavailable · nothing fabricated';
  const p=document.createElement('p');p.className='warning';p.textContent='Unable to fetch verified live results at this time.';results.replaceChildren(p)

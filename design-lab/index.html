@@ -1,11 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8">
+<link rel="canonical" href="https://quantaphi.org/design-lab/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="QuantaPhi">
+<meta property="og:url" content="https://quantaphi.org/design-lab/">
+<meta property="og:title" content="Design Lab | QuantaPhi">
+<meta property="og:description" content="Explore original interactive Quick Card designs and source-backed Power Chain research prototypes.">
+<meta property="og:image" content="https://quantaphi.org/assets/share/pages/design-lab.png?v=20261115">
+<meta property="og:image:secure_url" content="https://quantaphi.org/assets/share/pages/design-lab.png?v=20261115">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Design Lab | QuantaPhi original illustrated preview">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Design Lab | QuantaPhi">
+<meta name="twitter:description" content="Explore original interactive Quick Card designs and source-backed Power Chain research prototypes.">
+<meta name="twitter:image" content="https://quantaphi.org/assets/share/pages/design-lab.png?v=20261115">
+<meta name="twitter:image:alt" content="Design Lab | QuantaPhi original illustrated preview">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f5f2eb">
 <meta name="description" content="QuantaPhi Design Lab: invent professional, interactive Quick Cards and test the Power Chain research circuit with verified original-source results.">
 <title>Design Lab · Power Chain | QuantaPhi</title>
-<link rel="canonical" href="https://quantaphi.org/design-lab/index.html">
 <link rel="stylesheet" href="/design-lab/lab.css?v=1">
 </head>
 <body data-finish="copper">
@@ -61,6 +79,38 @@
  <p class="lab-result-note">Links are independently indexed public results filtered to their original domains; not paid placements, official partner feeds, live prices or logged-in account data.</p>
  <div id="chainResults" class="lab-result-grid"></div>
 </section>
+<section class="lab-bulk" id="bulk-allocator" aria-labelledby="bulkHeading">
+ <div class="lab-heading"><div><span class="lab-kicker">POWER CHAIN / COMPONENT 002</span><h2 id="bulkHeading">Bulk-buy allocator.</h2></div><p>One order, exact units, transparent delivered costs. A calculation, never a purchase.</p></div>
+ <form id="bulkAllocatorForm" class="bulk-form">
+  <label>Units available <input name="quantity" type="number" min="1" max="10000" step="1" value="300" required></label>
+  <label>Price per unit ($) <input name="unitPrice" type="text" inputmode="decimal" value="1.00" required></label>
+  <label>Buyers <select name="buyers"><option value="5">5 buyers</option><option value="10">10 buyers</option></select></label>
+  <label>Total shipping ($) <input name="shipping" type="text" inputmode="decimal" value="25.00" required></label>
+  <label>Total tax ($) <input name="tax" type="text" inputmode="decimal" value="0.00" required></label>
+  <label>Total storage ($) <input name="storage" type="text" inputmode="decimal" value="10.00" required></label>
+  <button type="submit">Calculate full allocation ↗</button>
+ </form>
+ <p id="bulkAllocationStatus" role="status" aria-live="polite">Calculate to see buyer quantities and delivered totals.</p>
+ <div id="bulkAllocationResults"></div>
+ <p class="bulk-disclosure">Research-only proposal. No buyer consent, payment, wallet charge, merchant inventory or shipping quote is implied. Confirm costs and storage before purchasing.</p>
+</section>
+<section class="lab-cooperative" id="cooperative-power-chain" aria-labelledby="cooperativeHeading">
+ <div class="lab-heading"><div><span class="lab-kicker">POWER CHAIN / COMPONENT 003</span><h2 id="cooperativeHeading">Cooperative shopping Power Chain</h2></div><p>Describe a gift or supplies mission. Design a practical research sequence before committing money or delivery plans.</p></div>
+ <form id="cooperativeIntentForm" class="co-op-form">
+  <label>Shopping purpose<select name="purpose"><option value="gift">Gifts and special occasions</option><option value="monthly-supplies">Monthly supplies</option></select></label>
+  <label>Maximum budget (USD)<input name="budget" inputmode="decimal" value="1000.00" required aria-label="Shopping budget in US dollars"></label>
+  <label>Items wanted<input name="itemCount" type="number" min="1" max="1000" value="10" required></label>
+  <label>Maximum merchants<input name="maxMerchants" type="number" min="1" max="100" value="4" required></label>
+  <label>Country or region (optional)<input name="region" maxlength="60" autocomplete="off" placeholder="For delivery research, not a live quote"></label>
+  <label>Optional interests, comma separated<input name="recipientInterests" maxlength="300" autocomplete="off" placeholder="art, music, gardening"></label>
+  <button type="submit">Prepare a cooperative research plan</button>
+ </form>
+ <p class="co-op-intro">The recipient's identity is not needed. If you choose to add interests, they're used only for this local research plan. Real merchant prices and stock, a contracted fulfillment hub, and each delivery quote must be verified later.</p>
+ <p id="cooperativeStatus" role="status" aria-live="polite">Ready to prepare your plan locally.</p>
+ <div id="cooperativePlan" class="co-op-output" aria-label="Shopping Power Chain plan"></div>
+ <button type="button" id="cooperativeResearch" class="co-op-advance" disabled>Use the existing Shop research circuit ↗</button>
+ <p class="co-op-intro">No customer payment, user profile, warehouse, 4-store fulfillment, green-freight claim or automatic order is connected here. This is a planning tool, not an offer from Macy's, Walmart, Kroger or JCPenney.</p>
+</section>
 <section class="lab-blueprint" id="blueprint" aria-labelledby="blueprintHeading">
  <div class="lab-heading"><div><span class="lab-kicker">WHY THIS CARD EXISTS</span><h2 id="blueprintHeading">A circuit with a purpose.</h2></div><p>Every new Quick Card begins with intent, an actual working mechanism, and proof.</p></div>
  <div class="lab-principles">
@@ -73,4 +123,6 @@
 </main>
 <footer class="lab-footer"><span>INFINITY® 2026 · QUANTAPHI DESIGN LAB</span><span>Concept 001 · Functional prototype · Source-first design</span><a href="/">QUANTAPHI ↗</a></footer>
 <script type="module" src="/design-lab/app.mjs?v=1"></script>
+<script type="module" src="/design-lab/bulk-allocator-ui.mjs?v=1"></script>
+<script type="module" src="/design-lab/cooperative-ui.mjs?v=20261101-power003"></script>
 </body></html>
