@@ -348,3 +348,13 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-pcla-points{margin:0;padding-left:22px;line-height:1.5}.qcx-pcla-points li{margin:7px 0}
 .qcx-pcla-links{display:flex;flex-wrap:wrap;gap:12px}.qcx-pcla-links .qcx-link{min-height:44px;display:inline-flex;align-items:center}
 .qcx-art.qcx-small[data-brand="pcla-picocela"] .qcx-pcla-company{font-size:25px}
+
+/* Family & Parenting TV mobile player and source picker: no 21+ placement. */
+.qcx-family-tv{min-width:0;max-width:100%;width:100%;overflow-wrap:anywhere}
+.qcx-family-tv .qcx-family-controls{display:grid;gap:9px;grid-template-columns:minmax(0,1fr)}
+.qcx-family-tv :is(input,select){min-width:0;max-width:100%;width:100%;min-height:48px;font-size:16px}
+.qcx-family-tv :is(.qcx-controls,.qcx-family-selected,.qcx-player){min-width:0;max-width:100%}
+.qcx-family-tv :is(.qcx-link,.qcx-button){max-width:100%;white-space:normal;overflow-wrap:anywhere;min-height:46px}
+.qcx-family-tv .qcx-family-thumbnail{display:block;width:100%;max-width:100%;height:auto;max-height:260px;object-fit:cover;border-radius:12px}
+.qcx-family-tv .qcx-video{width:100%;max-width:100%;aspect-ratio:16/9}
+.qcx-family-tv h4{font-size:clamp(18px,4vw,24px);line-height:1.25;margin:8px 0}
