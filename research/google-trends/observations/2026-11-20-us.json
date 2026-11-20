@@ -3,41 +3,321 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T20:31:16.062554Z",
+  "checked_at": "2026-11-20T21:01:24.891339Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "apple stock price",
+      "query": "porto vs paredes",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T20:40:00Z",
+      "related_news_urls": [
+        "https://www.abola.pt/noticias/claudio-ramos-e-mais-dez-o-onze-provavel-do-fc-porto-para-o-paredes-2026111918140012358",
+        "https://sapo.pt/artigo/farioli-promove-muitas-mudancas-no-onze-para-a-taca-de-portugal-6b00a06df92df73836253388",
+        "https://www.fcporto.pt/pt/noticias/20261120-pt-o-onze-do-fc-porto-para-a-estreia-na-taca-de-portugal"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfG-X4PoWmL5Skdio4oc9JFZLc4DQ8Oz67AlYB9qnZHrLsb3FMm4nfplmE5Ms",
+      "image_credit": "A Bola",
+      "news": [
+        {
+          "url": "https://www.abola.pt/noticias/claudio-ramos-e-mais-dez-o-onze-provavel-do-fc-porto-para-o-paredes-2026111918140012358",
+          "title": "Cláudio Ramos e mais dez: o onze provável do FC Porto para o Paredes",
+          "publisher": "A Bola",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfG-X4PoWmL5Skdio4oc9JFZLc4DQ8Oz67AlYB9qnZHrLsb3FMm4nfplmE5Ms"
+        },
+        {
+          "url": "https://sapo.pt/artigo/farioli-promove-muitas-mudancas-no-onze-para-a-taca-de-portugal-6b00a06df92df73836253388",
+          "title": "Farioli promove muitas mudanças no onze para a Taça de Portugal",
+          "publisher": "SAPO",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2uUgca9xfwxaYKtKooolu52OpoN0_KjNr271etznfAxI-VJzrq8ujJZNmncc"
+        },
+        {
+          "url": "https://www.fcporto.pt/pt/noticias/20261120-pt-o-onze-do-fc-porto-para-a-estreia-na-taca-de-portugal",
+          "title": "Notícias - O onze do FC Porto para a estreia na Taça de Portugal",
+          "publisher": "FC Porto",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFxzrV1o35eNGWMF7Y8hTZ8SeOk9wf8fmbjjI23LHj3Pb25ZrsGa3NCeRSt7Q"
+        }
+      ]
+    },
+    {
+      "query": "spcx stock",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T20:40:00Z",
+      "related_news_urls": [
+        "https://www.barrons.com/articles/spacex-stock-price-ai-slump-c3557145",
+        "https://finance.yahoo.com/video/what-does-spacex-have-that-anthropic-doesnt-why-the-stock-is-losing-steam-202232861.html",
+        "https://www.forbes.com/sites/eriksherman/2026/11/20/spacex-stock-fell-below-its-ipo-in-34-days-anthropics-could-today/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTm2v5rdTio5ZDHYf4Lz1Pgxg3yPN-DKyynfFxy1Yh4-Lxs-uDQkcq4MuBJzx4",
+      "image_credit": "Barron's",
+      "news": [
+        {
+          "url": "https://www.barrons.com/articles/spacex-stock-price-ai-slump-c3557145",
+          "title": "Three Ways SpaceX Stock Can Buck the AI Slump",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTm2v5rdTio5ZDHYf4Lz1Pgxg3yPN-DKyynfFxy1Yh4-Lxs-uDQkcq4MuBJzx4"
+        },
+        {
+          "url": "https://finance.yahoo.com/video/what-does-spacex-have-that-anthropic-doesnt-why-the-stock-is-losing-steam-202232861.html",
+          "title": "What does SpaceX have that Anthropic doesn't? Why the stock is losing steam",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1CnWOdAEcE0WoMRSplD6jg42yu3HmqYRRChbqOCho6yFV_q5bigUTPeswEkA"
+        },
+        {
+          "url": "https://www.forbes.com/sites/eriksherman/2026/11/20/spacex-stock-fell-below-its-ipo-in-34-days-anthropics-could-today/",
+          "title": "SpaceX Stock Fell Below Its IPO In 34 Days; Anthropic’s Could Today",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4j45qsh8lQGpU9igxvXrI7-BPEmOOgN81jy5Hng-uBSyhSp_vmhT-Xg4p7Z8"
+        }
+      ]
+    },
+    {
+      "query": "ben affleck",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T20:40:00Z",
+      "related_news_urls": [
+        "https://www.instyle.com/ben-affleck-jennifer-garner-reunite-ahead-thanksgiving-12267230",
+        "https://www.theaustralian.com.au/arts/news-of-the-week-jennifer-garner-reflects-on-incredible-part-of-ben-affleck-marriage/video/75793ab6de375b238ab608fa0407c979",
+        "https://www.tmz.com/2026/11/20/jennifer-lopez-no-creative-control-greatest-love-story-never-told/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKs89WsmXtxnasrqJrBZbM-SO3eFsgilK9YKaLWiQB6-hKcYFfL3Cea3cV150",
+      "image_credit": "InStyle",
+      "news": [
+        {
+          "url": "https://www.instyle.com/ben-affleck-jennifer-garner-reunite-ahead-thanksgiving-12267230",
+          "title": "Ben Affleck Steps Out With Ex Jennifer Garner Ahead of Thanksgiving in Rare Public Outing",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKs89WsmXtxnasrqJrBZbM-SO3eFsgilK9YKaLWiQB6-hKcYFfL3Cea3cV150"
+        },
+        {
+          "url": "https://www.theaustralian.com.au/arts/news-of-the-week-jennifer-garner-reflects-on-incredible-part-of-ben-affleck-marriage/video/75793ab6de375b238ab608fa0407c979",
+          "title": "NEWS OF THE WEEK: Jennifer Garner reflects on ‘incredible’ part of Ben Affleck marriage",
+          "publisher": "The Australian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDjoV_s8UcI0m1R96URqunQ2sVMglQRkVz6YwZSgRqg2--AKmG9TSReybg4PI"
+        },
+        {
+          "url": "https://www.tmz.com/2026/11/20/jennifer-lopez-no-creative-control-greatest-love-story-never-told/",
+          "title": "J Lo Ceded Creative Control Over 'Greatest Love Story' To Ben Affleck, Says It Was 'Disappointing'",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1g6OhQKXDfrrWnjm7ZmsrDcKR7ThTn8kN3ZiK12gPGbMUZluLcSO9psZtMiI"
+        }
+      ]
+    },
+    {
+      "query": "stephen a smith",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T20:40:00Z",
+      "related_news_urls": [
+        "https://www.pennlive.com/sports/2026/11/espn-analyst-goes-after-stephen-a-smith-over-disturbing-racial-take-on-lakers.html",
+        "https://wng.org/opinions/a-black-and-white-issue-1794876567",
+        "https://sports.yahoo.com/articles/doesnt-matter-look-walker-kessler-002400289.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDuYkTPdg-3QS3gHRed7jeS8u2EAopWYo2vpE6fyC34GpNyqZayG65M28ggc",
+      "image_credit": "PennLive.com",
+      "news": [
+        {
+          "url": "https://www.pennlive.com/sports/2026/11/espn-analyst-goes-after-stephen-a-smith-over-disturbing-racial-take-on-lakers.html",
+          "title": "ESPN analyst goes after Stephen A. Smith over ‘disturbing’ racial take on Lakers",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDuYkTPdg-3QS3gHRed7jeS8u2EAopWYo2vpE6fyC34GpNyqZayG65M28ggc"
+        },
+        {
+          "url": "https://wng.org/opinions/a-black-and-white-issue-1794876567",
+          "title": "A black-and-white issue",
+          "publisher": "WORLD News Group",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEB-f1SFv7PxMvhRpcqBx7NAo-_pDHpCDOfyx6g_SxOX9Xt25qkJ6Jy9rxXBk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/doesnt-matter-look-walker-kessler-002400289.html",
+          "title": "\"It doesn't matter what you look like\" - Walker Kessler fires back at criticism that the Lakers have too many white players",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkNDZQVBu_5MaBK9pK2S3LpRVVPxwWGmv-KhYvHwaV40XaMykR4GDwG4iwtrk"
+        }
+      ]
+    },
+    {
+      "query": "gavin sheets",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T20:40:00Z",
+      "related_news_urls": [
+        "https://www.mlbtraderumors.com/2026/11/padres-gavin-sheets-agree-to-three-year-deal.html",
+        "https://cubbiescrib.com/cubs-could-get-a-surprise-outfield-gift-from-padres-non-tender-decision",
+        "https://friarsonbase.com/why-non-tendering-gavin-sheets-could-cost-the-padres-more-than-it-saves"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmCX2UEappik8gOHjuyWlmK7DJ6wplh52EHEpeWyfHXnTVWswEplSqVb0p91g",
+      "image_credit": "MLB Trade Rumors",
+      "news": [
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/padres-gavin-sheets-agree-to-three-year-deal.html",
+          "title": "Padres, Gavin Sheets Agree To Three-Year Deal",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmCX2UEappik8gOHjuyWlmK7DJ6wplh52EHEpeWyfHXnTVWswEplSqVb0p91g"
+        },
+        {
+          "url": "https://cubbiescrib.com/cubs-could-get-a-surprise-outfield-gift-from-padres-non-tender-decision",
+          "title": "Cubs could get a surprise outfield gift from Padres’ non-tender decision",
+          "publisher": "Cubbies Crib",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZmCpGtvj49H4YvQjK4mGRPjCZ1AFGkdOKzdWZT6pL0RFF9tPSqtlwgUxDCjQ"
+        },
+        {
+          "url": "https://friarsonbase.com/why-non-tendering-gavin-sheets-could-cost-the-padres-more-than-it-saves",
+          "title": "Why non-tendering Gavin Sheets could cost the Padres more than it saves",
+          "publisher": "Friars on Base",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnx6w6sZRY6hKS2iOtB-sCnU3-CA7lHy7yaNfSnGX2Srb4QvLHczgzWG1PrZg"
+        }
+      ]
+    },
+    {
+      "query": "dell stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T20:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/ai/articles/ai-backlog-might-change-case-171345062.html",
+        "https://www.benzinga.com/trading-ideas/movers/26/11/63470675/why-is-dell-stock-falling-on-friday",
+        "https://www.zacks.com/stock/news/3032534/dell-technologies-and-draftkings-have-been-highlighted-as-zacks-bull-and-bear-of-the-day"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/ai-backlog-might-change-case-171345062.html",
+          "title": "AI Backlog Might Change The Case For Investing In Dell Technologies (DELL)",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA"
+        },
+        {
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63470675/why-is-dell-stock-falling-on-friday",
+          "title": "Why Is Dell Stock Falling on Friday?",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0TnWK5Zcu7yEbMFbitkc1_x7n7rPDBH13sVuCH6ATZaiorV1H3CWoIeeJNJ0"
+        },
+        {
+          "url": "https://www.zacks.com/stock/news/3032534/dell-technologies-and-draftkings-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
+          "title": "Dell Technologies and DraftKings have been highlighted as Zacks Bull and Bear of the Day",
+          "publisher": "Zacks Investment Research",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-9l2n34mJhrFLAYW0-6ye1s-kY20hKPeUt5mjVBhmrtGqr0aVeoWQfOVSOI"
+        }
+      ]
+    },
+    {
+      "query": "meta stock",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T20:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/meta-stock-down-21-too-181015251.html",
+        "https://www.reuters.com/default/global-markets-technicals-2026-11-19/",
+        "https://247wallst.com/investing/2026/11/19/metas-advertising-business-could-drive-another-major-earnings-surprise/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4L1uzbZJhqdUz-3EAB9WNQkQ6RUOqTaeCFECKUFGWPWqxi5AWYj4Oozx3P-E",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/meta-stock-down-21-too-181015251.html",
+          "title": "Meta Stock Down 21%: Too Much AI Spending?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4L1uzbZJhqdUz-3EAB9WNQkQ6RUOqTaeCFECKUFGWPWqxi5AWYj4Oozx3P-E"
+        },
+        {
+          "url": "https://www.reuters.com/default/global-markets-technicals-2026-11-19/",
+          "title": "Mapping the Market: Meta shares may be about to deepen their slide",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOFar2E02LwB-2cylhkZ3MvwvQ4xyA9t6CEdDPEOhPTBaxU3YmNF59vWmatsQ"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/11/19/metas-advertising-business-could-drive-another-major-earnings-surprise/",
+          "title": "Meta’s Advertising Business Could Drive Another Major Earnings Surprise",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEFHTSRY9YquIZYZnAaVxmTihQ6Gdw4QYj2Bp6PVD81g26dv0klF5ux1ZQDyI"
+        }
+      ]
+    },
+    {
+      "query": "virginia tech vs northwestern",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T20:20:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/virginia-tech/article/virginia-tech-northwestern-game-preview-mens-basketball-26-293000100/",
+        "https://sports.yahoo.com/articles/gamethread-watch-northwestern-men-basketball-180554432.html",
+        "https://www.si.com/college/northwestern/basketball/northwestern-basketball-preview-wildcats-face-5-0-hokies"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMxzlK4DL166zEezOkpKwlTffdTDN64voyF--oW8Ju84_r3UxzOLb-YNcoGzk",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/virginia-tech/article/virginia-tech-northwestern-game-preview-mens-basketball-26-293000100/",
+          "title": "Game Preview: Virginia Tech against Northwestern",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMxzlK4DL166zEezOkpKwlTffdTDN64voyF--oW8Ju84_r3UxzOLb-YNcoGzk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/gamethread-watch-northwestern-men-basketball-180554432.html",
+          "title": "Gamethread/How to watch Northwestern men’s basketball vs. Virginia Tech: TV, streaming, radio, injury report, betting line",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXPfUJNZNse3dmqtRNtB3NOSky1feYWZhm7HwTuLBCr69tXaZVRXR5wyYVUYw"
+        },
+        {
+          "url": "https://www.si.com/college/northwestern/basketball/northwestern-basketball-preview-wildcats-face-5-0-hokies",
+          "title": "Northwestern Basketball Preview: Wildcats Face 5-0 Hokies",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhBfm8KFLIpqs1kC-Mh6WqG2UoXe-hjHX6qwnIRzrVAxeB7P_N6QEHx1B5xx4"
+        }
+      ]
+    },
+    {
+      "query": "nolan gorman",
       "approx_searches": "500+",
       "published_at": "2026-11-20T20:10:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/business/retail-consumer/apple-works-restore-services-after-outage-caused-by-internal-update-2026-11-17/",
-        "https://www.nytimes.com/2026/11/17/technology/apple-down-outage-issues.html",
-        "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-stock-could-33-031750121.html"
+        "https://www.mlb.com/news/nolan-gorman-non-tendered-by-cardinals",
+        "https://sports.yahoo.com/articles/cardinals-reportedly-set-move-nolan-201513168.html",
+        "https://www.stltoday.com/sports/professional/mlb/cardinals/article_53cae89b-3ee2-4da9-82ad-1f3cc15ecf09.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjP3HaeQz3nT794CDJF2HdGeIXlVTV81doK-kd6m-nU3vUfPair41R0gSeVA8",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HgqoAnkL5G2fzzhCgq3dtobapW1toXBG9XoSRKfDvVPrJPR6o-rQKNIP2-E",
+      "image_credit": "MLB.com",
       "news": [
         {
-          "url": "https://www.reuters.com/business/retail-consumer/apple-works-restore-services-after-outage-caused-by-internal-update-2026-11-17/",
-          "title": "Apple works to restore services after outage caused by internal update",
-          "publisher": "Reuters",
+          "url": "https://www.mlb.com/news/nolan-gorman-non-tendered-by-cardinals",
+          "title": "Cardinals non-tender former first-round pick Nolan Gorman (report)",
+          "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjP3HaeQz3nT794CDJF2HdGeIXlVTV81doK-kd6m-nU3vUfPair41R0gSeVA8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HgqoAnkL5G2fzzhCgq3dtobapW1toXBG9XoSRKfDvVPrJPR6o-rQKNIP2-E"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/17/technology/apple-down-outage-issues.html",
-          "title": "Apple Services Disrupted After Internal Update, Company Says",
-          "publisher": "The New York Times",
+          "url": "https://sports.yahoo.com/articles/cardinals-reportedly-set-move-nolan-201513168.html",
+          "title": "Cardinals Reportedly Set to Move on From Nolan Gorman",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe81KQFCiMJ3183uFSLGKmCaKkkkhdOeqqbUSw9K2wrgeq-HVaKxJahXeFY1M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdadeCUGGvFE8cwcAJlOSsGKm46uDrNak6tSU3E3bMB1_xjHj1fZSG7VAgxNs"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-stock-could-33-031750121.html",
-          "title": "Apple (AAPL) Stock Could Be 33% Overvalued On Fresh Service Outage Concerns",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.stltoday.com/sports/professional/mlb/cardinals/article_53cae89b-3ee2-4da9-82ad-1f3cc15ecf09.html",
+          "title": "Cardinals have full roster but only 1 contract commitment for 2027. That's about to change",
+          "publisher": "STLtoday.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-IEEUS5BvkhcmzdKOs1n3FC0Yxi89LF0dttbRlZdgazzQZNARBmM7xrm7UaM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgMCpElyOBauSZ_BR8eOaJhZXVbLaRjz2Hbp36F1_SfQWmBvCYGT2IjnwQemQ"
         }
       ]
     },
@@ -73,286 +353,6 @@
           "publisher": "E! News",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPKyxKDCU63ox4Np-F8oXUt4O0vOMMv1AuyNvhrCAqtQ50OcuK_SbxiI2LBKI"
-        }
-      ]
-    },
-    {
-      "query": "nolan gorman",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T20:10:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/nolan-gorman-non-tendered-by-cardinals",
-        "https://sports.yahoo.com/articles/yankees-chance-cardinals-infielder-hes-192636326.html",
-        "https://www.stltoday.com/sports/professional/mlb/cardinals/article_53cae89b-3ee2-4da9-82ad-1f3cc15ecf09.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HgqoAnkL5G2fzzhCgq3dtobapW1toXBG9XoSRKfDvVPrJPR6o-rQKNIP2-E",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/nolan-gorman-non-tendered-by-cardinals",
-          "title": "Cardinals non-tender former first-round pick Nolan Gorman (report)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HgqoAnkL5G2fzzhCgq3dtobapW1toXBG9XoSRKfDvVPrJPR6o-rQKNIP2-E"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/yankees-chance-cardinals-infielder-hes-192636326.html",
-          "title": "Yankees Should Take Chance On Cardinals Infielder If He's Non-Tendered",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw-sav21Z3BPDqbPxwD6TDK8u_Y6NGtVs8NtR6whBI52RM1Z3_GVHo_u6bVOU"
-        },
-        {
-          "url": "https://www.stltoday.com/sports/professional/mlb/cardinals/article_53cae89b-3ee2-4da9-82ad-1f3cc15ecf09.html",
-          "title": "Cardinals have full roster but only 1 contract commitment for 2027. That's about to change",
-          "publisher": "STLtoday.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgMCpElyOBauSZ_BR8eOaJhZXVbLaRjz2Hbp36F1_SfQWmBvCYGT2IjnwQemQ"
-        }
-      ]
-    },
-    {
-      "query": "farrah aldjufrie",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T20:00:00Z",
-      "related_news_urls": [
-        "https://www.realtor.com/news/reality-tv/kyle-richards-daughter-farrah-aldjufrie-zach-goldstein-welcome-baby-umansky-family-plans/",
-        "https://pagesix.com/2026/11/17/parents/kyle-richards-daughter-farrah-gives-birth-to-first-baby-after-rhobh-star-made-frantic-dash-to-the-hospital-mid-event/",
-        "https://www.eonline.com/news/1438203/kyle-richards-daughter-farrah-aldjufrie-gives-birth-to-baby-with-boyfriend"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDFhxRcIHzI7qogrC-1OZqM9U4wgsHmz0obzgAlEfIzBE6aiNU3LUvNn4Z1lo",
-      "image_credit": "Realtor.com",
-      "news": [
-        {
-          "url": "https://www.realtor.com/news/reality-tv/kyle-richards-daughter-farrah-aldjufrie-zach-goldstein-welcome-baby-umansky-family-plans/",
-          "title": "Real Estate Tycoon Farrah Aldjufrie and Zach Goldsmith Welcome Their First Child",
-          "publisher": "Realtor.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDFhxRcIHzI7qogrC-1OZqM9U4wgsHmz0obzgAlEfIzBE6aiNU3LUvNn4Z1lo"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/17/parents/kyle-richards-daughter-farrah-gives-birth-to-first-baby-after-rhobh-star-made-frantic-dash-to-the-hospital-mid-event/",
-          "title": "Kyle Richards’ daughter Farrah gives birth to first baby after ‘RHOBH’ star made frantic dash to the hospital mid-event",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCPDVWYA9HxcoOfzXLT6q1RVql2mBVKo-rozlJ0WXkUYyQFO86P-YEN0LQoQM"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438203/kyle-richards-daughter-farrah-aldjufrie-gives-birth-to-baby-with-boyfriend",
-          "title": "Kyle Richards' Daughter Farrah Aldjufrie Gives Birth, Welcomes Baby Boy With Boyfriend Zach Goldsmith",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6h3RHh383EH_u5xYOq2z7SQw1jv09If6rkdrBoLjE5kkgRMTSUXLot5GvE_k"
-        }
-      ]
-    },
-    {
-      "query": "virginia tech basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T20:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/virginia-tech/article/virginia-tech-northwestern-game-preview-mens-basketball-26-293000100/",
-        "https://sports.yahoo.com/articles/gamethread-watch-northwestern-men-basketball-180554432.html",
-        "https://www.si.com/college/northwestern/basketball/northwestern-basketball-preview-wildcats-face-5-0-hokies"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMxzlK4DL166zEezOkpKwlTffdTDN64voyF--oW8Ju84_r3UxzOLb-YNcoGzk",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/virginia-tech/article/virginia-tech-northwestern-game-preview-mens-basketball-26-293000100/",
-          "title": "Game Preview: Virginia Tech against Northwestern",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMxzlK4DL166zEezOkpKwlTffdTDN64voyF--oW8Ju84_r3UxzOLb-YNcoGzk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/gamethread-watch-northwestern-men-basketball-180554432.html",
-          "title": "Gamethread/How to watch Northwestern men’s basketball vs. Virginia Tech: TV, streaming, radio, injury report, betting line",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXPfUJNZNse3dmqtRNtB3NOSky1feYWZhm7HwTuLBCr69tXaZVRXR5wyYVUYw"
-        },
-        {
-          "url": "https://www.si.com/college/northwestern/basketball/northwestern-basketball-preview-wildcats-face-5-0-hokies",
-          "title": "Northwestern Basketball Preview: Wildcats Face 5-0 Hokies",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhBfm8KFLIpqs1kC-Mh6WqG2UoXe-hjHX6qwnIRzrVAxeB7P_N6QEHx1B5xx4"
-        }
-      ]
-    },
-    {
-      "query": "kathy hochul food additive veto",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T20:00:00Z",
-      "related_news_urls": [
-        "https://www.news10.com/capitol/gras-loophole-ny-legislation/",
-        "https://www.newsday.com/lifestyle/restaurants/nys-bromate-ban-pizza-veto-k457f0wt",
-        "https://www.timesunion.com/capitol/article/hochul-vetos-ban-food-additives-cost-concerns-22541729.php"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMgw89NN-KZvKtC7b8o9xsfgvoZFncbmZo7I_0DBWpHueJZc3iSATsMYjsDlE",
-      "image_credit": "NEWS10 ABC",
-      "news": [
-        {
-          "url": "https://www.news10.com/capitol/gras-loophole-ny-legislation/",
-          "title": "Hochul mulls ban on Red Dye No. 3, potassium bromate, and propylparaben",
-          "publisher": "NEWS10 ABC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMgw89NN-KZvKtC7b8o9xsfgvoZFncbmZo7I_0DBWpHueJZc3iSATsMYjsDlE"
-        },
-        {
-          "url": "https://www.newsday.com/lifestyle/restaurants/nys-bromate-ban-pizza-veto-k457f0wt",
-          "title": "Long Island pizzeria owners 'not surprised' by NYS bromate ban veto",
-          "publisher": "Newsday",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl1Ro6KrWec6b_tJXSci3Lb6s430HJWtP3Qz-6Me4mPJAyUXHz7kw1x669r8g"
-        },
-        {
-          "url": "https://www.timesunion.com/capitol/article/hochul-vetos-ban-food-additives-cost-concerns-22541729.php",
-          "title": "Hochul vetos ban on food additives over cost concerns",
-          "publisher": "Times Union",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8XmIxnxtRpY6hFUOS7WmtcsqODvLk8gwzqVPIQ1UGfeiAWYrX27gXHNR2s08"
-        }
-      ]
-    },
-    {
-      "query": "tomasz kosowski",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T20:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/20/us/tomasz-kosowski-sentencing-murder-trial",
-        "https://www.fox13news.com/news/judge-weighs-death-penalty-man-who-murdered-largo-attorney-inside-office-bathroom",
-        "https://www.miamiherald.com/news/local/crime/article318158914.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vEaYwrg5scO1M1O7kR63d4UamGVAEE_v1ihublUf6fSGES9YffUD7Cn4xcw",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/20/us/tomasz-kosowski-sentencing-murder-trial",
-          "title": "Former plastic surgeon who defended himself in capital murder case ‘forfeited his right to live,’ judge says",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vEaYwrg5scO1M1O7kR63d4UamGVAEE_v1ihublUf6fSGES9YffUD7Cn4xcw"
-        },
-        {
-          "url": "https://www.fox13news.com/news/judge-weighs-death-penalty-man-who-murdered-largo-attorney-inside-office-bathroom",
-          "title": "Judge weighs death penalty for man who murdered Largo attorney inside office bathroom",
-          "publisher": "FOX 13 Tampa Bay",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9tUJwgg2QRZXZho0PJ7rGhIyCKR2GsbsJHTHlMSmJEdyMJmaQnIJkHm8wlzg"
-        },
-        {
-          "url": "https://www.miamiherald.com/news/local/crime/article318158914.html",
-          "title": "Former Miami plastic surgeon convicted of killing lawyer is sentenced to death",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ80hPZnI6JCtpj8LRsmKKjTTc47cCtN5E3nEsbHBKAt7OcSUbYOOetVSyxHC8"
-        }
-      ]
-    },
-    {
-      "query": "wall street hard landing risk forecast",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T20:00:00Z",
-      "related_news_urls": [
-        "https://www.marketwatch.com/story/bank-of-america-strategist-warns-doom-loop-could-hit-stocks-with-wall-street-underpricing-hard-landing-risks-c3181e57",
-        "https://finance.yahoo.com/markets/article/its-not-just-ai--the-dollar-wrecking-ball-is-leveling-gold-and-bitcoin-as-the-debasement-trade-unravels-143626482.html",
-        "https://www.investing.com/news/stock-market-news/2-questions-will-decide-risk-assets-heading-into-2027-bofas-hartnett-says-5041695"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8Hey81pp_GD1TD75POW0hOOLNA9X138wgmQxgj0FLu7Jfb5Q97qBcdTG8Aw",
-      "image_credit": "MarketWatch",
-      "news": [
-        {
-          "url": "https://www.marketwatch.com/story/bank-of-america-strategist-warns-doom-loop-could-hit-stocks-with-wall-street-underpricing-hard-landing-risks-c3181e57",
-          "title": "Stocks could face a ‘doom loop’ if Wall Street underestimates the risk of an economic downturn, strategist warns",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8Hey81pp_GD1TD75POW0hOOLNA9X138wgmQxgj0FLu7Jfb5Q97qBcdTG8Aw"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/article/its-not-just-ai--the-dollar-wrecking-ball-is-leveling-gold-and-bitcoin-as-the-debasement-trade-unravels-143626482.html",
-          "title": "It's not just AI — the dollar 'wrecking ball' is leveling gold and bitcoin as the debasement trade unravels",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuYQcHrRVoPJcpl4nvcLAH-4Mcv48DfVnH7m5BOlz4duMOBa9tijxWmLAwY-A"
-        },
-        {
-          "url": "https://www.investing.com/news/stock-market-news/2-questions-will-decide-risk-assets-heading-into-2027-bofas-hartnett-says-5041695",
-          "title": "2 questions will decide risk assets heading into 2027, BofA’s Hartnett says",
-          "publisher": "Investing.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlIZIeq4cxRdOl0iK3f0AmVaz4y9f1KzSR7hpz56u24LWQNdRJe_moamC0WsU"
-        }
-      ]
-    },
-    {
-      "query": "frances tiafoe",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T19:50:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/alcaraz-cobolli-medvedev-tiafoe-nitto-atp-finals-2026-day-6-preview",
-        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/6LKlXRh5iaXe/",
-        "https://vsin.com/tennis/atp-finals-tennis-best-bets-predictions-for-friday-november-20/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROaRA7VOFscgjpBAESzVaOVbWrOdiGujBGlPIYVbMkFECIwL9pLyxDxdVzP7s",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/alcaraz-cobolli-medvedev-tiafoe-nitto-atp-finals-2026-day-6-preview",
-          "title": "Medvedev, Tiafoe set for win-or-go-home clash; Alcaraz faces Cobolli",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROaRA7VOFscgjpBAESzVaOVbWrOdiGujBGlPIYVbMkFECIwL9pLyxDxdVzP7s"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/6LKlXRh5iaXe/",
-          "title": "ATP Finals 2026 live updates: Medvedev up a set on Tiafoe after Alcaraz beats Cobolli on day six",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7rXqCb9NIVqno1wBCIf6YBNt5rwSygvMDstYelwPjMwqnX13kWYm4fwrTGs"
-        },
-        {
-          "url": "https://vsin.com/tennis/atp-finals-tennis-best-bets-predictions-for-friday-november-20/",
-          "title": "ATP Finals Tennis Best Bets & Predictions for Friday, November 20",
-          "publisher": "VSiN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR-Bos2nCqzFJZgAVZnAYsTP44mNuZizeq3kCWiYhAllkLigtCehpHbbWWf2w"
-        }
-      ]
-    },
-    {
-      "query": "mikey moore",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T19:50:00Z",
-      "related_news_urls": [
-        "https://www.dailyrecord.co.uk/sport/football/football-news/mikey-moore-didnt-expect-rangers-37877200",
-        "https://sports.yahoo.com/articles/mikey-moore-sent-wrong-club-070500766.html",
-        "https://www.glasgowworld.com/sport/football/rangers/former-rangers-stars-loan-termination-off-the-cards-despite-rumours-as-difficult-spell-powered-through-9359660"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0BGLWp1wK0xkQtOheZoyia_PHg2a129wlJ1iSvVy4yQ7xlQDU2HW2LCo7low",
-      "image_credit": "Daily Record",
-      "news": [
-        {
-          "url": "https://www.dailyrecord.co.uk/sport/football/football-news/mikey-moore-didnt-expect-rangers-37877200",
-          "title": "Mikey Moore didn't expect Rangers fan 'stick' but he thanks Ibrox punters for toughening him up",
-          "publisher": "Daily Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0BGLWp1wK0xkQtOheZoyia_PHg2a129wlJ1iSvVy4yQ7xlQDU2HW2LCo7low"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/mikey-moore-sent-wrong-club-070500766.html",
-          "title": "Mikey Moore sent to the 'wrong club' by Tottenham - ex-Spurs employee",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO9fcIk8s0y4omLdb1snfU43j3AeT5aGIRbIB02l36Ne4oiLfmn_Y697REqfM"
-        },
-        {
-          "url": "https://www.glasgowworld.com/sport/football/rangers/former-rangers-stars-loan-termination-off-the-cards-despite-rumours-as-difficult-spell-powered-through-9359660",
-          "title": "Former Rangers star’s loan termination off the cards despite rumours as difficult spell powered through",
-          "publisher": "GlasgowWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4YDRI9kyZXwwB-RifW4vadEXr2JSOzVPl2IXCNB5ktbEaS8RaEw5ofRfjOmc"
         }
       ]
     }
