@@ -3,48 +3,13 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T03:01:25.156634Z",
+  "checked_at": "2026-11-20T03:31:13.198095Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "leonid meteor shower",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T02:40:00Z",
-      "related_news_urls": [
-        "https://skyandtelescope.org/astronomy-news/observing-news/this-weeks-sky-at-a-glance-november-13-22/",
-        "https://www.cnn.com/2026/11/16/science/leonid-meteor-shower-2026",
-        "https://www.nytimes.com/2026/11/16/science/leonids-meteor-shower-peak.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzL5d1EKaqAescGC47PXOhvOJOjTfdhHZB7Rf45rcOfE1TZWUA-GKCQse9450",
-      "image_credit": "Sky & Telescope",
-      "news": [
-        {
-          "url": "https://skyandtelescope.org/astronomy-news/observing-news/this-weeks-sky-at-a-glance-november-13-22/",
-          "title": "This Week's Sky at a Glance, November 13 – 22",
-          "publisher": "Sky & Telescope",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzL5d1EKaqAescGC47PXOhvOJOjTfdhHZB7Rf45rcOfE1TZWUA-GKCQse9450"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/16/science/leonid-meteor-shower-2026",
-          "title": "See the Leonid meteors this week — ‘the shower that started it all’",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnHM6D9-8BvAovJdrwxDckYTng6PX36t4SphKz0prkdCB9uDOjKmCIJTFu0lM"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/16/science/leonids-meteor-shower-peak.html",
-          "title": "Leonids Meteor Shower Reaches Its Peak Tonight",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIrTEagOCFAVmA1uYNpyrSCsBTy-VCiGeS1278EkqCtxyg3rapTa8Zt1mLo00"
-        }
-      ]
-    },
-    {
-      "query": "timberwolves game",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T02:40:00Z",
+      "query": "minnesota timberwolves",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T03:10:00Z",
       "related_news_urls": [
         "https://www.startribune.com/minnesota-timberwolves-new-york-knicks-karl-anthony-towns-anthony-edwards-injury-wolves-roster-26-27/601921524",
         "https://sports.yahoo.com/articles/game-discussion-thread-knicks-timberwolves-003000978.html",
@@ -77,282 +42,317 @@
       ]
     },
     {
-      "query": "christian braun",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T02:40:00Z",
-      "related_news_urls": [
-        "https://nugglove.com/christian-braun-deserves-his-flowers-his-impact-on-nuggets-defense",
-        "https://www.fantasypros.com/nba/news/620729/christian-braun-quiet-loss-monday.php",
-        "https://www.nba.com/watch/video/christian-braun-with-the-slam-12"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd6-mPWwEIs_gb05kHI0o9KGl0j9GZdMNLL0h8NHX6NcP9R_VuZet9cuiW3yU",
-      "image_credit": "Nugg Love",
-      "news": [
-        {
-          "url": "https://nugglove.com/christian-braun-deserves-his-flowers-his-impact-on-nuggets-defense",
-          "title": "Christian Braun deserves his flowers for his impact on the Nuggets' defense",
-          "publisher": "Nugg Love",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd6-mPWwEIs_gb05kHI0o9KGl0j9GZdMNLL0h8NHX6NcP9R_VuZet9cuiW3yU"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/620729/christian-braun-quiet-loss-monday.php",
-          "title": "Christian Braun quiet in loss Monday",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwltgodW8fompiPE1WtC4A2M0sYhCsbinpnsVUmLIk8ds1xkjl4gEvGjE-_28"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/christian-braun-with-the-slam-12",
-          "title": "Christian Braun with the slam",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_GayltuCU76ylvJC66vLVriCVDI-hsLt2aWfzbwjz7PRr5E4FPubTDaoNCok"
-        }
-      ]
-    },
-    {
-      "query": "ryan phillippe",
+      "query": "penny marshall",
       "approx_searches": "500+",
-      "published_at": "2026-11-20T02:30:00Z",
+      "published_at": "2026-11-20T03:10:00Z",
       "related_news_urls": [
-        "https://people.com/jennifer-love-hewitt-breaks-down-9-1-1-reunion-ryan-phillippe-exclusive-12258421",
-        "https://www.yahoo.com/entertainment/tv/articles/jennifer-love-hewitt-says-she-000015814.html",
-        "https://www.cinemablend.com/television/jennifer-love-hewitt-shares-intense-take-reunion-ryan-phillippe-9-1-1"
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/laverne-shirley-actress-dead-88-170705349.html",
+        "https://www.al.com/life/2026/11/happy-days-and-laverne-shirley-legend-dead-at-88.html",
+        "https://people.com/ronny-hallin-remembered-as-the-unsung-hero-of-the-marshall-family-after-her-death-at-88-12265358"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJCkci-ZNhpATmXkWfgNBdgMYIMtu_kd8aNP7oY4QY-ZxByeQ6F2SeWl6hdLE",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4T68tmWeH2kNOlwmiF1c9qCYvXM5J7idI-qAoWwQghoBhiYd7DgPWCH1waL8",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://people.com/jennifer-love-hewitt-breaks-down-9-1-1-reunion-ryan-phillippe-exclusive-12258421",
-          "title": "Jennifer Love Hewitt Says ‘9-1-1’ Reunion with Ryan Phillippe Is First Time They’d Seen Each Other Since She Was 18 (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJCkci-ZNhpATmXkWfgNBdgMYIMtu_kd8aNP7oY4QY-ZxByeQ6F2SeWl6hdLE"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/jennifer-love-hewitt-says-she-000015814.html",
-          "title": "Jennifer Love Hewitt Says She Felt She'd 'Forgotten How to Act' Before Ryan Phillippe Reunion After 29 Years",
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/laverne-shirley-actress-dead-88-170705349.html",
+          "title": "‘Laverne & Shirley’ actress dead at 88",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0KGd0INcn4whK6-IaOV2-6eS6381banLa0ttNoHvwn7jzoScS5efYVJq45MI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4T68tmWeH2kNOlwmiF1c9qCYvXM5J7idI-qAoWwQghoBhiYd7DgPWCH1waL8"
         },
         {
-          "url": "https://www.cinemablend.com/television/jennifer-love-hewitt-shares-intense-take-reunion-ryan-phillippe-9-1-1",
-          "title": "I Didn’t Expect Jennifer Love Hewitt’s Intense Take On Reuniting With Ryan Phillippe For 9-1-1",
-          "publisher": "Cinemablend",
+          "url": "https://www.al.com/life/2026/11/happy-days-and-laverne-shirley-legend-dead-at-88.html",
+          "title": "‘Happy Days’ and ‘Laverne & Shirley’ legend dead at 88",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpPd2GFyDZGki9rnq-4OsLj6eSxywhyVgTTm4TR_NKQMwEzE3mEfAYvP_77D8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuT6r0Il3bErudnuGeoaQknj6xuGEu9MlwsgrYD0X0p43BRUNQEx8MxLo2VfA"
+        },
+        {
+          "url": "https://people.com/ronny-hallin-remembered-as-the-unsung-hero-of-the-marshall-family-after-her-death-at-88-12265358",
+          "title": "Ronny Hallin Remembered as the ‘Unsung Hero of the Marshall Family’ After Her Death at 88",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZ5w5AxvqZ_oC0-Q1xwrpKxn_q7Tj5HQSNZ59TgRXO6WuBypo7C68Ms4Wc1po"
         }
       ]
     },
     {
-      "query": "mariah carey",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T02:30:00Z",
-      "related_news_urls": [
-        "https://www.essence.com/entertainment/mariah-carey-holiday-barbie-doll/",
-        "https://www.parents.com/mariah-carey-barbie-doll-12258606",
-        "https://www.instagram.com/p/Df7xUlfhec5/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1LvPcMccR-EjOJPAwEpNSwBvf4D1q0XlH3qxGL9xxo1hG0iq4ylvdWkTiCc",
-      "image_credit": "Essence",
-      "news": [
-        {
-          "url": "https://www.essence.com/entertainment/mariah-carey-holiday-barbie-doll/",
-          "title": "Mariah Carey Celebrates The Holidays With A New Barbie Doll",
-          "publisher": "Essence",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1LvPcMccR-EjOJPAwEpNSwBvf4D1q0XlH3qxGL9xxo1hG0iq4ylvdWkTiCc"
-        },
-        {
-          "url": "https://www.parents.com/mariah-carey-barbie-doll-12258606",
-          "title": "Mariah Carey’s New Barbie Is Giving ‘Merry Christmas’ Nostalgia",
-          "publisher": "Parents",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQeJriPyWM4qIMPBbREqm6Y6Z-b0iGtFS9k-kqtpo_12-uM6dkyy0pPt6MIWw"
-        },
-        {
-          "url": "https://www.instagram.com/p/Df7xUlfhec5/",
-          "title": "It’s timmmmmeeeee! 😍 #Barbie has unveiled its second #MariahCarey doll. 🔥 #Roomies, are y’all excited for this holiday szn? 🎄 (📸: @barbie, @gettyimages) ✍🏾: #TSRStaffLG",
-          "publisher": "Instagram",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdB0IP2AmREy18gthFshrwpEGZOCS9xhtj8sPZXGyZ6tjug3mfI8WxPJySco8"
-        }
-      ]
-    },
-    {
-      "query": "submarine",
+      "query": "kasparas jakučionis",
       "approx_searches": "200+",
-      "published_at": "2026-11-20T02:30:00Z",
+      "published_at": "2026-11-20T03:10:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/world/2026/nov/20/aukus-defence-us-warned-supplying-nuclear-powered-submarines-to-australia-would-diminish-its-own-fleet-for-many-years",
-        "https://www.lowyinstitute.org/the-interpreter/aukus-inquiry-scepticism-runs-only-one-way",
-        "https://socialistchina.org/2026/11/19/workers-have-no-interest-in-war-with-china-australian-maritime-workers-leader-addresses-cnd-meeting-of-trade-unionists-in-london/"
+        "https://www.basketnews.lt/news-259813-akistatoje-su-buvusiu-klubu-puikus-jakucionis.html",
+        "https://www.lrt.lt/naujienos/sportas/10/3119022/i-majami-grizes-jakucionis-buvusiai-komandai-atseikejo-20-tasku",
+        "https://www.15min.lt/m/24sek/video/visi-pamatai-buvo-sudeti-skme-kasparas-jakucionis-20-metu-pergaliu-285628"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeso4SUcPL9HcKXq_tpbMZRbI2LWSVaw79GO_EcUAuF45sg3MCha9kXD-RSyc",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQG5YBe3tq9nraZwtgSpmSdCNFPHqgxj7Gj7OSNnEFgEiEqcRvCMQn3Tc4EM",
+      "image_credit": "BasketNews.lt",
       "news": [
         {
-          "url": "https://www.theguardian.com/world/2026/nov/20/aukus-defence-us-warned-supplying-nuclear-powered-submarines-to-australia-would-diminish-its-own-fleet-for-many-years",
-          "title": "US warned supplying nuclear-powered submarines to Australia would diminish its own fleet for ‘many years’",
-          "publisher": "The Guardian",
+          "url": "https://www.basketnews.lt/news-259813-akistatoje-su-buvusiu-klubu-puikus-jakucionis.html",
+          "title": "Akistatoje su buvusiu klubu – puikus Jakučionis",
+          "publisher": "BasketNews.lt",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeso4SUcPL9HcKXq_tpbMZRbI2LWSVaw79GO_EcUAuF45sg3MCha9kXD-RSyc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQG5YBe3tq9nraZwtgSpmSdCNFPHqgxj7Gj7OSNnEFgEiEqcRvCMQn3Tc4EM"
         },
         {
-          "url": "https://www.lowyinstitute.org/the-interpreter/aukus-inquiry-scepticism-runs-only-one-way",
-          "title": "AUKUS inquiry scepticism runs only one way",
-          "publisher": "Lowy Institute",
+          "url": "https://www.lrt.lt/naujienos/sportas/10/3119022/i-majami-grizes-jakucionis-buvusiai-komandai-atseikejo-20-tasku",
+          "title": "Į Majamį grįžęs Jakučionis buvusiai komandai atseikėjo 20 taškų",
+          "publisher": "LRT",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCjnPSl15933ca5YSGvOShuymFStqVAFIAQEW_0tgTUv_D-NThtPIqnDRN80A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfHJLUQM7Lb7lOuwLVU_VCdok5vn7-dp9OKhjD05YTx2tLFfJ6Updm_sjwQmU"
         },
         {
-          "url": "https://socialistchina.org/2026/11/19/workers-have-no-interest-in-war-with-china-australian-maritime-workers-leader-addresses-cnd-meeting-of-trade-unionists-in-london/",
-          "title": "“Workers have no interest in war with China” – Australian maritime workers leader addresses CND meeting of trade unionists in London",
-          "publisher": "Friends of Socialist China",
+          "url": "https://www.15min.lt/m/24sek/video/visi-pamatai-buvo-sudeti-skme-kasparas-jakucionis-20-metu-pergaliu-285628",
+          "title": "„VISI PAMATAI BUVO SUDĖTI SKM‘e“ | KASPARAS JAKUČIONIS | 20 METŲ PERGALIŲ",
+          "publisher": "15min.lt",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ7yA2XULaNTxvamXma4qa1cDNtGUhDb4-OifJSiGUPKSVsQ-qnC2gluu7hH4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUkfiZ28oP9Q4bl_ExMUAsxYFC4Wk7TcyDfoDcvJBxrCNjvfG3WDoDeJTVwdE"
         }
       ]
     },
     {
-      "query": "is gta 6 on xbox",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T02:30:00Z",
+      "query": "de'aaron fox",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T03:00:00Z",
       "related_news_urls": [
-        "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
-        "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
-        "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979"
+        "https://sports.yahoo.com/articles/spurs-rookie-jayden-quaintance-trusting-191028532.html",
+        "https://www.expressnews.com/news/education/article/fox-spurs-thanksgiving-saisd-donation-22539745.php",
+        "https://www.kens5.com/article/sports/nba/spurs/thanksgiving-assist-spurs-heb-deliver-200-turkeys-extra-cheer-giveaway-groceries-quaintance-community-families-donations/273-f655e867-bc37-410b-aa77-083733b55d6b"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw",
-      "image_credit": "Digital Foundry",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5gQq_bwrKe5q7wQmTHxTI0nHWnY6wiI8sHuGtV9hSv-_TXWNghEAcRBfAZLQ",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
-          "title": "GTA 6: PS5 vs PS5 Pro, Xbox Series X and Series S: Which Console Plays Best?",
-          "publisher": "Digital Foundry",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw"
-        },
-        {
-          "url": "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
-          "title": "Grand Theft Auto VI Uses AMD FSR 4 On Xbox Series S, Upscaling 720p To 1080p While Still Running Ray Traced Global Illumination",
-          "publisher": "Wccftech",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8AMqKOkopU6mi5ahjy2oGDadqeUTOb08fkwa1HeGMkCIw09-d26qrtECsl7s"
-        },
-        {
-          "url": "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979",
-          "title": "GTA 6 Won’t Get A 60 FPS Mode, Even On PS5 Pro, Because It’s ‘Not Powerful Enough’",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROmKm3_DuoRdLIj-n08VTdrtbbdHT7Zddidf_soIeK6ZipViaE1KXiet62zwU"
-        }
-      ]
-    },
-    {
-      "query": "stars vs golden knights",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T02:20:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/stars/news/game-day-guide-dallas-stars-at-vegas-golden-knights-111926",
-        "https://www.espn.com/nhl/recap/_/gameId/401892737",
-        "https://sports.yahoo.com/articles/collapse-epic-proportions-3-observations-075610864.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJCx_D8evr_xqSSd54FZtqnTbJnm385uuGF-auEZ1dtH2pNncso_QvAbkrpZY",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/stars/news/game-day-guide-dallas-stars-at-vegas-golden-knights-111926",
-          "title": "Game Day Guide: Dallas Stars at Vegas Golden Knights",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJCx_D8evr_xqSSd54FZtqnTbJnm385uuGF-auEZ1dtH2pNncso_QvAbkrpZY"
-        },
-        {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892737",
-          "title": "Stars 4-3 Golden Knights (Nov 17, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQjMJZuSScIgyzjX-g-Se4Hr-Gz_4mUk7gvrH1gfhixyBihu362iREq7aQrI8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/collapse-epic-proportions-3-observations-075610864.html",
-          "title": "A Collapse of Epic Proportions: 3 Observations as Golden Knights Suffer Historic Loss to Stars",
+          "url": "https://sports.yahoo.com/articles/spurs-rookie-jayden-quaintance-trusting-191028532.html",
+          "title": "Spurs Rookie Jayden Quaintance Trusting Team to 'Keep Him on Right Path' in Recovery",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3neQ7OG0gr-eAdPlLMUU92gF5wuOqF2WMSjCrfEo2O1o8i_kfHjxj5_ClsgA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5gQq_bwrKe5q7wQmTHxTI0nHWnY6wiI8sHuGtV9hSv-_TXWNghEAcRBfAZLQ"
+        },
+        {
+          "url": "https://www.expressnews.com/news/education/article/fox-spurs-thanksgiving-saisd-donation-22539745.php",
+          "title": "De'Aaron Fox gives back to East Side families, high school basketball players",
+          "publisher": "San Antonio Express-News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzGout4li0-KwR3gTTr2LyQWG_ElXl-aprz-kb4DwRoLXlhGoBSzYuTJjCdkA"
+        },
+        {
+          "url": "https://www.kens5.com/article/sports/nba/spurs/thanksgiving-assist-spurs-heb-deliver-200-turkeys-extra-cheer-giveaway-groceries-quaintance-community-families-donations/273-f655e867-bc37-410b-aa77-083733b55d6b",
+          "title": "Thanksgiving assist: Spurs and H-E-B deliver 200 turkeys and a little extra cheer",
+          "publisher": "kens5.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbO0DlN-o_yeHadCFRGeLNQtzWJHuzz7uAK1EQ_7xqIN-GjdgonOMreN8u-XI"
         }
       ]
     },
     {
-      "query": "marvel infernal hulk",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T02:20:00Z",
+      "query": "cher",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T03:00:00Z",
       "related_news_urls": [
-        "https://www.cbr.com/marvel-comics-hulk-war-infernal-rage-details/",
-        "https://bleedingcool.com/comics/where-the-wild-things-are-inside-hulk-war-infernal-rage/",
-        "https://aiptcomics.com/2026/11/18/marvel-infernal-avengers-hulk-war/"
+        "https://www.syracuse.com/entertainment/2026/11/actress-reveals-cher-still-holds-a-grudge-against-her-nearly-30-years-later.html",
+        "https://ew.com/christina-ricci-says-cher-mad-at-her-12262324",
+        "https://www.rollingstone.com/culture/culture-news/christina-ricci-cher-mermaids-feud-call-watch-what-happens-1235660349/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZb4ulj_bItSd7Uk1bKMEgu3Ubqw1hlwQBT91oHfVoBLo3wgi0yEtoyYkibW0",
-      "image_credit": "Comic Book Resources",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3ZLR32cEr1UErDQizWDQgZYRW2ttlXOHHDIo39NN0Iahb0GEvBXS-YuOhoEY",
+      "image_credit": "Syracuse.com",
       "news": [
         {
-          "url": "https://www.cbr.com/marvel-comics-hulk-war-infernal-rage-details/",
-          "title": "A New Era for The Hulk Leads To Massive Changes to The Avengers",
-          "publisher": "Comic Book Resources",
+          "url": "https://www.syracuse.com/entertainment/2026/11/actress-reveals-cher-still-holds-a-grudge-against-her-nearly-30-years-later.html",
+          "title": "Actress reveals Cher still ‘holds a grudge’ against her nearly 30 years later",
+          "publisher": "Syracuse.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZb4ulj_bItSd7Uk1bKMEgu3Ubqw1hlwQBT91oHfVoBLo3wgi0yEtoyYkibW0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3ZLR32cEr1UErDQizWDQgZYRW2ttlXOHHDIo39NN0Iahb0GEvBXS-YuOhoEY"
         },
         {
-          "url": "https://bleedingcool.com/comics/where-the-wild-things-are-inside-hulk-war-infernal-rage/",
-          "title": "Where The Wild Things Are, Inside Hulk War: Infernal Rage",
-          "publisher": "Bleeding Cool News",
+          "url": "https://ew.com/christina-ricci-says-cher-mad-at-her-12262324",
+          "title": "Cher ‘still mad’ at ‘Mermaids’ costar after 27 years, says Christina Ricci: ‘Holds a grudge’",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXa_YJMIaRS4lbID1twwV6CYiHPhlukfJmfsX_O-0CCGtNFOZblll7IkwLtQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS30LyNpAMd6wBppKYgfYRoNwcYQHeUuQitqsRbWa_DVGYTXiVDsVuEqhZQDPk"
         },
         {
-          "url": "https://aiptcomics.com/2026/11/18/marvel-infernal-avengers-hulk-war/",
-          "title": "Marvel unveils terrifying Infernal Avengers ahead of ‘Hulk War: Infernal Rage’ in February 2027",
-          "publisher": "AIPT",
+          "url": "https://www.rollingstone.com/culture/culture-news/christina-ricci-cher-mermaids-feud-call-watch-what-happens-1235660349/",
+          "title": "Christina Ricci and Cher Have Been Mad at Each Other This Whole Time?",
+          "publisher": "Rolling Stone",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6gt416R9HN-53mcGar5UrrF9ls7s6dyCCvWhZJQfJeat8HJdYA7f23rsF5ZE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFUnKnLrG0HWFPoCLEXoorCWbfvaTZ2Jy8paaUqmpRkRGNVmEevzjOqwSGs5g"
         }
       ]
     },
     {
-      "query": "jennifer lawrence",
+      "query": "astrodome",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T03:00:00Z",
+      "related_news_urls": [
+        "https://realtynewsreport.com/astrodome-redo-attracts-major-developers/",
+        "https://www.khou.com/video/money/business/houston-business-journal/astrodome-redevelopment-request-draws-more-than-600-responses-as-future-remains-uncertain/285-2277b336-eed5-4a96-96a0-867fe8c7efff",
+        "https://houston.culturemap.com/news/city-life/astrodome-conservancy-adaptive-reuse-proposals/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ60CAGe2Wa7uF9L_HJy2s_aRgleu8gICHbUemu6Q9I26FmDCpkFOgPfQv0Qc",
+      "image_credit": "Realty News Report",
+      "news": [
+        {
+          "url": "https://realtynewsreport.com/astrodome-redo-attracts-major-developers/",
+          "title": "Astrodome Redo Attracts Major Developers",
+          "publisher": "Realty News Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ60CAGe2Wa7uF9L_HJy2s_aRgleu8gICHbUemu6Q9I26FmDCpkFOgPfQv0Qc"
+        },
+        {
+          "url": "https://www.khou.com/video/money/business/houston-business-journal/astrodome-redevelopment-request-draws-more-than-600-responses-as-future-remains-uncertain/285-2277b336-eed5-4a96-96a0-867fe8c7efff",
+          "title": "Astrodome redevelopment request draws more than 600 responses as future remains uncertain",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqRkfR0RhdVG6ieB8iANQ2_vVwC6EvrK8Bx8uNb4rC-dz1UaZuzR8N5vqe1c4"
+        },
+        {
+          "url": "https://houston.culturemap.com/news/city-life/astrodome-conservancy-adaptive-reuse-proposals/",
+          "title": "New report proposes private sector partners for Astrodome renovations",
+          "publisher": "CultureMap Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGvHHnOhbIV9n5KpDGlCnK8PadBgqXfXpwmDgA6hqdZ7zfAe1_BzKTMuHnSI"
+        }
+      ]
+    },
+    {
+      "query": "ayo dosunmu",
       "approx_searches": "2000+",
-      "published_at": "2026-11-20T02:20:00Z",
+      "published_at": "2026-11-20T02:50:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/de/news/ni66116447/?ref_=ttnw_art_perm",
-        "https://wwd.com/footwear-news/shoe-trends/jennifer-lawrence-jordyn-woods-shoes-2026-beauty-inc-awards-1239424559/",
-        "https://www.harpersbazaar.com/celebrity/latest/a74464800/jennifer-lawrence-dior-plunging-tuxedo-jacket-swan-clutch-beauty-inc-awards-red-carpet-photos/"
+        "https://www.espn.com/nba/story/_/id/50532808/timberwolves-edwards-no-clue-return",
+        "https://sports.yahoo.com/nba/article/timberwolves-star-anthony-edwards-speaks-on-decision-to-undergo-knee-surgery-has-no-clear-return-timeline-whenever-my-knee-tells-me-its-ready-then-ill-be-ready-200950484.html",
+        "https://bleacherreport.com/articles/25535368-anthony-edwards-opens-knee-injury-timeline-return-1st-comments-surgery"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKwy2gG9SRDzOjSFH1kKuOcL_Btma0d6PKgqXt-L9MCmGtmAmu0kCjZMTrXM",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6_3fLmdKkTRaTXGhg1awpK9mZ1V2qFPp6F6l-alNZHtlN0aIqG6zBmJ0_vw",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.imdb.com/de/news/ni66116447/?ref_=ttnw_art_perm",
-          "title": "Jennifer Lawrence Rocks the Wet Hair Trend for Wwd’s Beauty Inc Awards",
-          "publisher": "IMDb",
+          "url": "https://www.espn.com/nba/story/_/id/50532808/timberwolves-edwards-no-clue-return",
+          "title": "Timberwolves' Edwards has 'no clue' on when he will return",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKwy2gG9SRDzOjSFH1kKuOcL_Btma0d6PKgqXt-L9MCmGtmAmu0kCjZMTrXM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6_3fLmdKkTRaTXGhg1awpK9mZ1V2qFPp6F6l-alNZHtlN0aIqG6zBmJ0_vw"
         },
         {
-          "url": "https://wwd.com/footwear-news/shoe-trends/jennifer-lawrence-jordyn-woods-shoes-2026-beauty-inc-awards-1239424559/",
-          "title": "Jennifer Lawrence, Jordyn Woods' Shoes at 2026 Beauty Inc Awards",
-          "publisher": "WWD",
+          "url": "https://sports.yahoo.com/nba/article/timberwolves-star-anthony-edwards-speaks-on-decision-to-undergo-knee-surgery-has-no-clear-return-timeline-whenever-my-knee-tells-me-its-ready-then-ill-be-ready-200950484.html",
+          "title": "Timberwolves star Anthony Edwards speaks on decision to undergo knee surgery, has no clear return timeline: 'Whenever my knee tells me it's ready, then I'll be ready'",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQx6xFqlaVpBah2MYrkY3aWR6fxA9lQLi1i5m6LXwi3IPtwd-xdgbMywEqj_s0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpvMZk6ry3gFXFwHJStPRDtOQowFtnDbk_DIdT1N3OILVW1MxDObZmDzTlEY0"
         },
         {
-          "url": "https://www.harpersbazaar.com/celebrity/latest/a74464800/jennifer-lawrence-dior-plunging-tuxedo-jacket-swan-clutch-beauty-inc-awards-red-carpet-photos/",
-          "title": "Jennifer Lawrence Endorses Fashion’s Latest Novelty Bag",
-          "publisher": "Harper's BAZAAR",
+          "url": "https://bleacherreport.com/articles/25535368-anthony-edwards-opens-knee-injury-timeline-return-1st-comments-surgery",
+          "title": "Anthony Edwards Opens Up on Knee Injury, Timeline to Return in 1st Comments Since Surgery",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwOlnNCnIsrwmsTItIprDIFsl0xfElNeVqtGCU9B6oZymxjLbI2D--w4tjA5s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKAeTf1Hh9HZ0764Ek7oc4GBQ69i_w5_RGmg2rM8kR4fAOiE97_44ElGXYSRs"
+        }
+      ]
+    },
+    {
+      "query": "flyers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T02:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/state-opponent-flyers-showing-signs-001407112.html",
+        "https://www.nhl.com/news/philadelphia-flyers-ottawa-senators-game-recap-november-19-2026",
+        "https://www.tsn.ca/nhl/video/2026/11/20/nhl-flyers-6-senators-5-ot/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQegc-jm49WW_eropfyewH7udaWJF1wMfA7-IT-8zDcK1cexlvMhXsTM5iRSHk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/state-opponent-flyers-showing-signs-001407112.html",
+          "title": "The State Of The Opponent: Flyers Showing Signs Of A Turnaround",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQegc-jm49WW_eropfyewH7udaWJF1wMfA7-IT-8zDcK1cexlvMhXsTM5iRSHk"
+        },
+        {
+          "url": "https://www.nhl.com/news/philadelphia-flyers-ottawa-senators-game-recap-november-19-2026",
+          "title": "Konecny scores in overtime, Flyers rally to stun Senators",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTL4r1QHWqrU9yB4WdrfjfG3rOUljyv10J5pSS6PIaWAfVcAosS0d5x1zCO_g8"
+        },
+        {
+          "url": "https://www.tsn.ca/nhl/video/2026/11/20/nhl-flyers-6-senators-5-ot/",
+          "title": "NHL: Flyers 6, Senators 5 (OT)",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_rncFRCWkuMi9sZdBULpkuaIxcO1vMQoZXns-PTmcBYnnrYufe_uHloNuLTk"
+        }
+      ]
+    },
+    {
+      "query": "jonathan kuminga",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T02:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/jonathan-kuminga-tonight-against-knicks-003556290.html",
+        "https://www.hoopsrumors.com/2026/11/northwest-notes-kuminga-shannon-r-williams-jokic.html",
+        "https://www.blazersedge.com/trail-blazers-injury-report/118495/portland-trail-blazers-minnesota-timberwolves-nba-injury-report-ja-morant-shaedon-sharpe-robert-williams-nba-news"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs3nRvo25-t0e0kCrDxq0sk5pdP6b-NOESaABAzm3hghABG-lDxcXXKbVrxtg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/jonathan-kuminga-tonight-against-knicks-003556290.html",
+          "title": "Jonathan Kuminga is IN tonight against the Knicks …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs3nRvo25-t0e0kCrDxq0sk5pdP6b-NOESaABAzm3hghABG-lDxcXXKbVrxtg"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/northwest-notes-kuminga-shannon-r-williams-jokic.html",
+          "title": "Northwest Notes: Kuminga, Shannon, R. Williams, Jokic",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg3j-Whbfa6CjKgBD_Vs37_-eUnoA3ZMF5txNyKp9SbrHQOC-YfkyAcbDGNT8"
+        },
+        {
+          "url": "https://www.blazersedge.com/trail-blazers-injury-report/118495/portland-trail-blazers-minnesota-timberwolves-nba-injury-report-ja-morant-shaedon-sharpe-robert-williams-nba-news",
+          "title": "Blazers’ Injury Report Remains Unchanged for First Matchup With T-Wolves",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnIq9rtDk9I4HqlXRXGrAURzLPPmgcZl_v3je4xENfzYwSCwUnco1wzS4lbQc"
+        }
+      ]
+    },
+    {
+      "query": "jerami grant",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T02:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/grizzlies-jerami-grant-leaves-game-021741730.html",
+        "https://www.cbssports.com/fantasy/basketball/news/grizzlies-jerami-grant-iffy-to-face-brooklyn/",
+        "https://bsinews.id/en/jerami-grant-calf-injury"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjMhgCkAB3jv5vxkhWtay9DhB_efK56VNj3YStgFukF2EDd3G0aHLguUZnHZg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/grizzlies-jerami-grant-leaves-game-021741730.html",
+          "title": "Grizzlies' Jerami Grant leaves game vs Warriors with calf injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjMhgCkAB3jv5vxkhWtay9DhB_efK56VNj3YStgFukF2EDd3G0aHLguUZnHZg"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/grizzlies-jerami-grant-iffy-to-face-brooklyn/",
+          "title": "Grizzlies' Jerami Grant: Iffy to face Brooklyn",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-KAjyIgyuwINUMNE0RuTlIPtMUiNkaLUWQX3Ldz7weidjbsCrGV7Gf7ejRbE"
+        },
+        {
+          "url": "https://bsinews.id/en/jerami-grant-calf-injury",
+          "title": "Jerami Grant Exits Grizzlies Game Against Warriors With Calf Injury",
+          "publisher": "bsinews.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwrRqUUGLRGbFgL94tIHWkfUQHHIC3CGGNC0XKLX3mBqJrShaO1GIoP9dcYqA"
         }
       ]
     }
