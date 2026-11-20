@@ -4,14 +4,14 @@ state: deployed
 dot: "🟡"
 progress_percent: 70
 progress_basis: "7/10 original reader milestones: screenshot transcription, account allowlist, isolated UI/context, tests, CI, independent review and merge, Worker deployment verified; live X read and physical Android pending; screenshot archive follow-up PR under review"
-sessions_spent: 2
+sessions_spent: 3
 sessions_remaining_estimate: unknown
 agent: "ChatGPT GitHub connector (unclaimed Bubbles lease)"
 lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-next_action: "Review exact-head screenshot archive PR; check the first scheduled StarCraftCo X scan and verify on Android"
+next_action: "Obtain independent approval of screenshot archive PR #1986 at the new exact head; then implement a verified source-scoped StarCraftCo public-ingest fallback without bypassing blocked X access"
 merged: true
 deployed: true
 live_verified: false
@@ -52,3 +52,13 @@ live_verified: false
 - Source HTML static assertions 9/9 passed in this chat; full repository CI and physical Android acceptance are NOT yet claimed for this follow-up.
 - Distinct states: original reader **deployed**, screenshot archive **source staged**, live StarCraftCo X scan **blocked/not run**, physical Android **not verified**.
 - Next: open/review follow-up PR, inspect exact-head CI; verify first scheduled StarCraftCo scan via D1 and physical Android. Do not claim live X capture when provider denies access.
+
+## Session 3 — TinyFish public-status read and implementable follow-on ticket (2026-11-19/20)
+
+- **Owner instruction:** use TinyFish to read public `@StarCraftCo`, then document findings as a ticket ready to build. Reuse canonical issue #1210, existing Worker #1983 and screenshot Quick Card PR #1986; do not create a second issue or parallel reader.
+- **Live observation:** TinyFish run https://agent.tinyfish.ai/runs/3728a4bc-fc2e-41f6-a524-c5e05eb0189c returned six exact X status URLs, with author handle `@StarCraftCo`. The run used a saved X-access profile, not a sign-in as @StarCraftCo. See the exact IDs and content rights notes in `docs/STARCRAFTCO-X-20261119.md`.
+- **Prior versus new evidence:** Previously Cloudflare public Browser Run got an X access-denied document, and the production `/context?account=StarCraftCo` was empty. TinyFish independently viewing real public posts does **not** update Cloudflare D1 or prove its scheduled scanner succeeded.
+- **Source/behavior:** The observed pinned developer link and QuantaPhi research share merit source-linked research metadata. Other posts are context-only; music text and adult-labeled media need licensing/age treatment and must not be copied into general carousel.
+- **New unimplemented acceptance groups:** verified lawful browser/provider data adapter or explicit blocked fallback; per-account author/status validation and dedup; persisted public context + live D1 readback; Android Quick Card attribution and sensitivity rules; source tests, CI, independent review and production device acceptance. The original reader's ~70% completion estimate predates this follow-on and **does not apply to the new adapter**.
+- **Status and authorization:** ticket `implementing`; original Worker **merged/deployed**, TinyFish external URLs **observed**, new source ingest **unimplemented**, PR #1986 **open**, automated import **unverified**, Android **not verified**. No lease claimed, no security grant, no X writes.
+- **Next single executable action:** independent approval of PR #1986 at its refreshed head, followed by the Red/Blue feasibility/adapter slice specified in the source document. Do not merge the archive without its review gate, nor claim content was imported.
