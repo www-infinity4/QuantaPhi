@@ -6,6 +6,7 @@ export const cards=Object.freeze([
  app('disability-housing','Home Access · Disability Housing','/disability-housing.html','QuantaPhi',['disability housing','disabled housing','housing on disability','ssi housing','ssdi housing','usda housing','home access','housing assistance']),
  ...HOUSING_HELP_RESOURCES.map(r=>app('housing-help-'+r.id,r.title+' · '+r.provider,housingResourceRoute(r.id),'QuantaPhi',[r.id,r.id==='sieda'?'seida':r.id,r.provider.toLowerCase()+' housing help',r.title.toLowerCase()])),
  app('bubbles-workshop','Bubbles Agent Workshop','/bubbles-agent-workshop/','Bubbles-Agent-Workshop',['agent workshop','build workshop']),
+ app('isha-rulebook','ISHA Rulebook · Standards & Evidence','/isha-rulebook.html','QuantaPhi',['isha book','isha rulebook','safety rules','infinity standards','measures ledger','rulebook','bubbles policies']),
  app('infinity-radio','Infinity Radio','/infinity-radio/','Alien-Radio',['radio','alien radio'],'#play-btn'),
  local('story-writer','Story Writer','phiStoryWriter',['phi-visual-render.js','phi-story-writer.js'],['phi-story-writer.css'],['oracle story writer']),
  local('reads-realms','Reads & Realms','infiniteBook',['infinite-book-discovery.js','infinite-book.js'],['infinite-book.css'],['reads and realms','reads realms','big book']),
