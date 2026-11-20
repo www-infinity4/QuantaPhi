@@ -109,3 +109,11 @@ test('missing wallet data is unknown, never zero',()=>{
  const r=inspectAccountSession({owner:true,sessionStatus:'authenticated',walletStatus:'unavailable'});
  assert.equal(r.action,'read_only_wallet_health_check');assert.equal('balance' in r,false);
 });
+import {readFileSync} from 'node:fs';
+import {mountAutomationCard} from './card.mjs';
+test('Bubbles page mounts the registered automation hub without implicit capture',()=>{
+ const html=readFileSync(new URL('../../bubbles.html',import.meta.url),'utf8');
+ assert.match(html, /id="bubblesAutomationHub"/);
+ assert.match(html, /automation\/bubbles\/card\.mjs/);
+ assert.equal(mountAutomationCard(null),null);
+});
