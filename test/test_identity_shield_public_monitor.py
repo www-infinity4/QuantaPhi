@@ -45,14 +45,13 @@ class SourceMonitorTests(unittest.TestCase):
         self.assertIsNone(handler.redirect_request(None, None, 302, None, {}, "https://evil.example/internal"))
         
     def test_public_digest_installs_reject_redirect_handler(self):
-        from unittest.mock import Mock, patch
-        fake_response = Mock()
+        from unittest.mock import MagicMock, patch
+        fake_response = MagicMock()
         fake_response.geturl.return_value = module.SOURCES["ssa-account"]
         fake_response.status = 200
         fake_response.read.return_value = ("Agency official public page " * 30).encode("utf-8")
-        opener = Mock()
-        opener.open.return_value.__enter__ = Mock(return_value=fake_response)
-        opener.open.return_value.__exit__ = Mock(return_value=False)
+        opener = MagicMock()
+        opener.open.return_value.__enter__.return_value = fake_response
         with patch.object(module, "build_opener", return_value=opener) as factory:
             digest = module.public_digest(module.SOURCES["ssa-account"])
         self.assertEqual(len(digest), 64)
