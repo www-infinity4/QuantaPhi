@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T11:01:25.063097Z",
+  "checked_at": "2026-11-20T11:31:16.089121Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "new york yankees",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T10:30:00Z",
+      "query": "cleetus mcfarland lemullets freedom factory",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T11:10:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/brian-cashman-on-yankees-offseason-moves-sleep-out-charity-event",
-        "https://sports.yahoo.com/articles/yankees-brian-cashman-sends-ambiguous-072516334.html",
-        "https://nypost.com/2026/11/20/sports/yankees-offseason-not-resting-for-brian-cashmans-sleep-out/"
+        "https://sports.yahoo.com/articles/nascar-urged-look-mirror-cleetus-172305519.html",
+        "https://www.motorsport.com/general/news/carson-hocevar-and-cleetus-mcfarland-win-lemullets-2026/10874411/",
+        "https://www.essentiallysports.com/nascar-news-dale-jr-makes-bold-prediction-on-cleetus-mcfarlands-racing-future/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8Bw2xZku1CHuwPhoKw5mpLFL0XW7AGZzrNK2LF00KuuhQpBTjO-_ZEPzXQyI",
-      "image_credit": "MLB.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgppu7Nz7pTAKpuDhv6LZYU2bQtzRVK-y0OpQqSD9Ryht_pyOKS_0nDP8Xf8g",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.mlb.com/news/brian-cashman-on-yankees-offseason-moves-sleep-out-charity-event",
-          "title": "After busy day in office, Cashman hits field to Sleep Out for good cause",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8Bw2xZku1CHuwPhoKw5mpLFL0XW7AGZzrNK2LF00KuuhQpBTjO-_ZEPzXQyI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/yankees-brian-cashman-sends-ambiguous-072516334.html",
-          "title": "Yankees’ Brian Cashman Sends Ambiguous Message on Potential Deal",
+          "url": "https://sports.yahoo.com/articles/nascar-urged-look-mirror-cleetus-172305519.html",
+          "title": "NASCAR Urged to ‘Look in the Mirror’ After Cleetus McFarland & Carson Hocevar Steal the Spotlight at Freedom Factory",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuvIOFEDO9_uRpjn3bARkfM_66rlaqArCPjFYs0f1Ghh3PaG496_ZHAJl9kdg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgppu7Nz7pTAKpuDhv6LZYU2bQtzRVK-y0OpQqSD9Ryht_pyOKS_0nDP8Xf8g"
         },
         {
-          "url": "https://nypost.com/2026/11/20/sports/yankees-offseason-not-resting-for-brian-cashmans-sleep-out/",
-          "title": "Yankees offseason not resting for Brian Cashman’s annual Sleep Out",
-          "publisher": "New York Post",
+          "url": "https://www.motorsport.com/general/news/carson-hocevar-and-cleetus-mcfarland-win-lemullets-2026/10874411/",
+          "title": "Carson Hocevar and Cleetus McFarland win LeMullets 2026 in epic finish",
+          "publisher": "Motorsport.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRM8_sfMmwwxAceHY6sDxQomTQHjjJl5N0UtNTksL78D0DGutW2kVsllRgFN8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIpu-LjLDD6dEzFaa9044anq_FiAmlnNnC2S3PFizS4FsyLt39FdowMzv6WD8"
+        },
+        {
+          "url": "https://www.essentiallysports.com/nascar-news-dale-jr-makes-bold-prediction-on-cleetus-mcfarlands-racing-future/",
+          "title": "Dale Jr. Makes Bold Prediction on Cleetus McFarland’s Racing Future",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG6vRxPLTHxm-zt5dmRXn0DD9p1_4NJ3nlPJ8Ro9fanWtJVCWyStWTRj-z33o"
         }
       ]
     },
     {
-      "query": "stock market futures",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T10:20:00Z",
+      "query": "india a vs nepal",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T11:00:00Z",
       "related_news_urls": [
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-20-2026",
-        "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
-        "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news"
+        "https://sports.yahoo.com/articles/india-vs-nepal-acc-mens-101517630.html",
+        "https://www.cricbuzz.com/player-match-performance/match/177148/player/1448181/bowling",
+        "https://www.afaqs.com/news/mktg/excitel-becomes-global-sponsor-of-dp-world-asia-cup-rising-stars-2026-12823784"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4",
-      "image_credit": "WSJ",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-i71Z5FaN5T7Fi3zguZwpJWEqYkgcqFL3wDcyneVESSLMnQqjeokwnJsl1qU",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-20-2026",
-          "title": "Stock Market Today: Anthropic Stock Drops Premarket as Tech Rout Intensifies",
-          "publisher": "WSJ",
+          "url": "https://sports.yahoo.com/articles/india-vs-nepal-acc-mens-101517630.html",
+          "title": "India vs Nepal ACC Men's Asia Cup Rising Stars score, toss winner, winning probability, result and highlights from Doha",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-i71Z5FaN5T7Fi3zguZwpJWEqYkgcqFL3wDcyneVESSLMnQqjeokwnJsl1qU"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
-          "title": "SoftBank suffers worst day in over two years as AI sell-off hits Asian tech stocks",
-          "publisher": "CNBC",
+          "url": "https://www.cricbuzz.com/player-match-performance/match/177148/player/1448181/bowling",
+          "title": "Live Cricket Score, Schedule, Latest News, Stats & Videos",
+          "publisher": "Cricbuzz",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx8n1bgA0LWp0RBKkgsHZ32ZSReWlH98XKY3kDKE4a0bhvQZAD2Sp4SW-eAmI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-xk3Rcj6WZEcjbkAek4pqV01ic2l1SQ-Zm1994rmZStJm3oMFps6OMMmlsJM"
         },
         {
-          "url": "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news",
-          "title": "Asian stocks headed for worst week since 2020 as Anthropic IPO fails to end AI rout – business live",
-          "publisher": "The Guardian",
+          "url": "https://www.afaqs.com/news/mktg/excitel-becomes-global-sponsor-of-dp-world-asia-cup-rising-stars-2026-12823784",
+          "title": "Excitel becomes Global Sponsor of DP World Asia Cup Rising Stars 2026",
+          "publisher": "afaqs!",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDunZ7a0hoR1rBKmy-cHu8x3Mk4sLy227odBsPgDK4fx2TlnyL1FdXrzZAInQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN8A1nnn_8PurI7mUD3arH91rhjZuq90m88ciGsQg53TC_T_xUGuGVSwEhA5A"
         }
       ]
     },
     {
-      "query": "lainey wilson 2026 cma awards outfit",
+      "query": "lincolnshire nhs a&e bed delays",
       "approx_searches": "200+",
-      "published_at": "2026-11-20T10:20:00Z",
+      "published_at": "2026-11-20T11:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/18/style/cma-country-music-association-awards-red-carpet.html",
-        "https://www.latimes.com/entertainment-arts/music/story/2026-11-19/taylor-swift-returns-to-cmas-ella-langley-makes-history",
-        "https://wwd.com/pop-culture/celebrity-news/gallery/2026-cma-awards-red-carpet-style-photos-1239425833/"
+        "https://www.bbc.com/news/articles/cq39g0em40e4o",
+        "https://www.itv.com/watch/news/grandmother-with-terminal-cancer-left-for-48-hours-in-hospital-cupboard/ztwcv1c",
+        "https://demokratis.co.id/en/lincoln-hospital-emergency-waits"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqVAVOZC1YMeRrVE3i_Cbl3QPxcvi1kSMyeCln5ONr_uKWE8aiFG4JgNk0FDQ",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX5mAsSVldi6374b363GXJnNsoQYv3MwKmn56JQS4yYYslr3VRjvfmsVluoaQ",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cq39g0em40e4o",
+          "title": "Patient, 83, waited nearly two days in chair at Lincoln A&E, son says",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX5mAsSVldi6374b363GXJnNsoQYv3MwKmn56JQS4yYYslr3VRjvfmsVluoaQ"
+        },
+        {
+          "url": "https://www.itv.com/watch/news/grandmother-with-terminal-cancer-left-for-48-hours-in-hospital-cupboard/ztwcv1c",
+          "title": "Grandmother with terminal cancer left for 48 hours in hospital cupboard",
+          "publisher": "ITVX",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2RHDqzh-adltUjEc3oNhrAZXI32tJN5goSM1XuuTdnojLUF85Jjs5lXacDrM"
+        },
+        {
+          "url": "https://demokratis.co.id/en/lincoln-hospital-emergency-waits",
+          "title": "Lincoln Hospital Patients Face Long Emergency Department Delays",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRE-GGywHFP6ud-3a-7-t4h5LRCb-UGjB5MYxijKxx6PYw152dW03y_GS2eZfo"
+        }
+      ]
+    },
+    {
+      "query": "tim hortons",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T11:00:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/features/2026/11/19/canadas-beloved-tim-hortons-brews-ire-over-excessive-israeli-data-deal",
+        "https://www.cbc.ca/news/canada/app-data-privacy-9.7417814",
+        "https://www.middleeasteye.net/news/tim-hortons-app-sending-user-data-israeli-cybertech-company-advocacy-group-confirms"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEZ4zR7ZEz0YQws1CO_E01fdjCP15EILqhUuvfDRqt21G0k9VU29VJ33Bigt0",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/features/2026/11/19/canadas-beloved-tim-hortons-brews-ire-over-excessive-israeli-data-deal",
+          "title": "Canada’s beloved Tim Hortons brews ire over ‘excessive’ Israeli data deal",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEZ4zR7ZEz0YQws1CO_E01fdjCP15EILqhUuvfDRqt21G0k9VU29VJ33Bigt0"
+        },
+        {
+          "url": "https://www.cbc.ca/news/canada/app-data-privacy-9.7417814",
+          "title": "We tested 6 popular apps to see what data they collect and share. Here’s what we found",
+          "publisher": "CBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNRk5NYY_gJhUzTdCf2RlkthllETVmEwQqgkVJ_Ar2dyHzqMsSfJn_f3_eTSw"
+        },
+        {
+          "url": "https://www.middleeasteye.net/news/tim-hortons-app-sending-user-data-israeli-cybertech-company-advocacy-group-confirms",
+          "title": "Tim Hortons app sending user data to Israeli cybertech company, advocacy group confirms",
+          "publisher": "Middle East Eye",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnyWUS28WAu2rQGyybDU40CdPF-xzzLJLLopD3qqFhWCI00ZghjqemD_V_T2I"
+        }
+      ]
+    },
+    {
+      "query": "mass lottery",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T11:00:00Z",
+      "related_news_urls": [
+        "https://www.patriotledger.com/story/news/lottery/2026/11/12/massachusetts-lottery-results-thursday-november-12-2026/92753653007/",
+        "https://www.cbsnews.com/boston/news/unclaimed-scratch-tickets-massachusetts-lottery/",
+        "https://www.facebook.com/Boston25News/posts/check-those-old-scratch-tickets-before-its-too-late-prizes-from-seven-massachuse/1642487704579556/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeehNfporT8jnYJZwn4_GMbOuN5KpVnHm2gfK6lSBue2qKkTPQKIPz7qRmYXY",
+      "image_credit": "The Patriot Ledger",
+      "news": [
+        {
+          "url": "https://www.patriotledger.com/story/news/lottery/2026/11/12/massachusetts-lottery-results-thursday-november-12-2026/92753653007/",
+          "title": "Mass Lottery Numbers Midday, Numbers Evening winning numbers for Nov. 12, 2026",
+          "publisher": "The Patriot Ledger",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeehNfporT8jnYJZwn4_GMbOuN5KpVnHm2gfK6lSBue2qKkTPQKIPz7qRmYXY"
+        },
+        {
+          "url": "https://www.cbsnews.com/boston/news/unclaimed-scratch-tickets-massachusetts-lottery/",
+          "title": "Unclaimed scratch ticket worth $1 million and more big Massachusetts lottery prizes set to expire soon",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoiwPFlsdRg1RK_gzBtM36GBrT6WBox-BJKvzxN9htz0QMpcH0xzTzVzq6Ztk"
+        },
+        {
+          "url": "https://www.facebook.com/Boston25News/posts/check-those-old-scratch-tickets-before-its-too-late-prizes-from-seven-massachuse/1642487704579556/",
+          "title": "Check those old scratch tickets before it’s too late! Prizes from seven Massachusetts Lottery games are about to expire.",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIHRrq65Kq1KRzxENT_5y1lM9nZTuqTvPY6wB8600JOPE5yNcTzZpzsCO1a3c"
+        }
+      ]
+    },
+    {
+      "query": "deion sanders",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T10:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7793031/2026/11/19/deion-sanders-death-threats-colorado-football-police-reports/",
+        "https://www.foxnews.com/outkick-sports/deion-sanders-receives-about-five-death-threats-every-day-colorado-football-coach",
+        "https://sports.yahoo.com/articles/deion-sanders-fighting-tooth-nail-094130999.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbfDkjOYrgjj3IbtOosdSpIt7zVvv1C2iWe6ab8pBaXQGPYZM8rVBSP5r73JA",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/18/style/cma-country-music-association-awards-red-carpet.html",
-          "title": "The 10 Best Looks From the Country Music Association Awards Red Carpet",
+          "url": "https://www.nytimes.com/athletic/7793031/2026/11/19/deion-sanders-death-threats-colorado-football-police-reports/",
+          "title": "Deion Sanders says he receives death threats. Police records reveal the troubling details - The Athletic",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqVAVOZC1YMeRrVE3i_Cbl3QPxcvi1kSMyeCln5ONr_uKWE8aiFG4JgNk0FDQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbfDkjOYrgjj3IbtOosdSpIt7zVvv1C2iWe6ab8pBaXQGPYZM8rVBSP5r73JA"
         },
         {
-          "url": "https://www.latimes.com/entertainment-arts/music/story/2026-11-19/taylor-swift-returns-to-cmas-ella-langley-makes-history",
-          "title": "Taylor Swift returns to CMA Awards after 13 years, but Ella Langley takes the cake",
-          "publisher": "Los Angeles Times",
+          "url": "https://www.foxnews.com/outkick-sports/deion-sanders-receives-about-five-death-threats-every-day-colorado-football-coach",
+          "title": "Deion Sanders receives 'about five' death threats every day as Colorado football coach",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvxidyXj6ThQIpVXS8muRm0EvUsBGedFWVtDFHuuVMPwa77SjL8QhmAet1JzQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPVF6kGUtRekyS9sQuLYRAiz4_vOh-5Mn8OxbRy7zo5772DJF81dkgEQGUJ5k"
         },
         {
-          "url": "https://wwd.com/pop-culture/celebrity-news/gallery/2026-cma-awards-red-carpet-style-photos-1239425833/",
-          "title": "Taylor Swift, Lainey Wilson, Glen Powell and More Stars Arrive at the 2026 CMA Awards",
-          "publisher": "WWD",
+          "url": "https://sports.yahoo.com/articles/deion-sanders-fighting-tooth-nail-094130999.html",
+          "title": "“Deion Sanders Is Fighting Tooth and Nail Not To Get Fired”: Jason Whitlock Calls Out Coach Prime for “Playing Race Card” With Death Threats Comment",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8tiDYR32STi2gzBlcyUCVJynk03HZNXMHRPWdFaNhnuzCHjHf_giL2sbvhOw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHdu_Nm3w9C1BZp052y2RAYa9mIcztJWa3oag1AYqeB_ZTkh5030Zbk9TDrLA"
         }
       ]
     },
     {
-      "query": "google play",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T10:00:00Z",
+      "query": "price of oil",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T10:50:00Z",
       "related_news_urls": [
-        "https://www.theverge.com/tech/1036796/google-android-app-games-developers-foldables-support",
-        "https://9to5google.com/2026/11/18/android-foldable-apps-google-play/",
-        "https://www.phonearena.com/news/google-play-puts-galaxy-z-fold-8-and-pixel-11-pro-fold-apps-on-the-clock_id184905"
+        "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
+        "https://www.wsj.com/business/energy-oil/oil-prices-edge-higher-as-traders-assess-middle-east-shipping-risks-supply-outlook-faf8f60a",
+        "https://www.cnbc.com/2026/11/19/oil-brent-wti-price-hormuz.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFsGlMoicM1XyJVKuvWgIP8bNA0SWbEn1yiu0wqGN8T6AHv7ZwD7niXKsbwq8",
-      "image_credit": "The Verge",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyXmvznpzJNj0hzn_BzQMoPoRsCupMf3NbjseEXvvbhRg7-0eRvG6DLCy7ocM",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.theverge.com/tech/1036796/google-android-app-games-developers-foldables-support",
-          "title": "Google is forcing Android app developers to properly support foldables",
-          "publisher": "The Verge",
+          "url": "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
+          "title": "Oil prices gain as Houthi attacks on Riyadh raise supply concerns",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFsGlMoicM1XyJVKuvWgIP8bNA0SWbEn1yiu0wqGN8T6AHv7ZwD7niXKsbwq8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyXmvznpzJNj0hzn_BzQMoPoRsCupMf3NbjseEXvvbhRg7-0eRvG6DLCy7ocM"
         },
         {
-          "url": "https://9to5google.com/2026/11/18/android-foldable-apps-google-play/",
-          "title": "Google Play wants Android apps to nail foldable basics by April 2027",
-          "publisher": "9to5Google",
+          "url": "https://www.wsj.com/business/energy-oil/oil-prices-edge-higher-as-traders-assess-middle-east-shipping-risks-supply-outlook-faf8f60a",
+          "title": "Oil Prices Retreat as Traders Assess Supply Outlook, Middle East Risks",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRh4LJWtLlbqse6Jjkyt4yKfxb8A4AnHd0-dhFCdU0P5B26hU1ln9ywiuUHzY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ22CSJnD3RAOYRqQDMq-J_2rLqGMRzh5av-Mi5YJbUOx-y2IsBuKq-lrWajN8"
         },
         {
-          "url": "https://www.phonearena.com/news/google-play-puts-galaxy-z-fold-8-and-pixel-11-pro-fold-apps-on-the-clock_id184905",
-          "title": "Google Play puts Galaxy Z Fold 8 and Pixel 11 Pro Fold apps on the clock",
-          "publisher": "PhoneArena",
+          "url": "https://www.cnbc.com/2026/11/19/oil-brent-wti-price-hormuz.html",
+          "title": "Oil prices inch up as tanker disruptions offset surplus supply outlook",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbtYhTfjAsjUL2iD3Ekpmk-5OdTLRAcst5vlrJfvPyf-_7-Vqea_D3RCKvjxA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwZ4Qq1ewLbksDHP3mfCKr2C7DAH0VfdljQqQnlTn4k19Z3F8Q_bdAb8pbkis"
         }
       ]
     },
     {
-      "query": "national hurricane center",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T09:40:00Z",
-      "related_news_urls": [
-        "https://www.accuweather.com/en/hurricane/tropical-wind-and-rainstorm-to-streak-north-near-us-east-coast-this-weekend-into-next-week/1960952",
-        "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
-        "https://yaleclimateconnections.org/2026/11/kyle-could-form-off-florida-as-extensive-prolonged-coastal-flood-threat-grows/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQE3Zt6CzuzCklvaY57WxFgosOeZBQ-6GlbHgBEd44rfndUURXfEbYeUT0n3_w",
-      "image_credit": "AccuWeather",
-      "news": [
-        {
-          "url": "https://www.accuweather.com/en/hurricane/tropical-wind-and-rainstorm-to-streak-north-near-us-east-coast-this-weekend-into-next-week/1960952",
-          "title": "Tropical wind and rainstorm to streak north near US East Coast this weekend into next week",
-          "publisher": "AccuWeather",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQE3Zt6CzuzCklvaY57WxFgosOeZBQ-6GlbHgBEd44rfndUURXfEbYeUT0n3_w"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/18/weather/florida-flooding-rain-storm-thanksgiving-travel-climate",
-          "title": "Intense flooding slams Florida from a developing storm that could snarl early Thanksgiving travel on the East Coast",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgnUP6bFBb5OGQ6It1OaAyFcCxv6_MA3gErl1YikKmhPapYh06rSUpahGqUT0"
-        },
-        {
-          "url": "https://yaleclimateconnections.org/2026/11/kyle-could-form-off-florida-as-extensive-prolonged-coastal-flood-threat-grows/",
-          "title": "Kyle could form off Florida as extensive, prolonged coastal flood threat grows",
-          "publisher": "Yale Climate Connections",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMyyIPtWTLPurdxhypIN75p_zQZSE6X-BROn0I9WlUe6QBnnWC5OD5O_sxFgs"
-        }
-      ]
-    },
-    {
-      "query": "cruise ship",
+      "query": "dolar hoje",
       "approx_searches": "500+",
-      "published_at": "2026-11-20T09:30:00Z",
+      "published_at": "2026-11-20T10:50:00Z",
       "related_news_urls": [
-        "https://www.carnival-news.com/2026/11/19/carnival-cruise-line-unveils-the-next-wave-of-vacations-from-sea-to-shore-including-a-new-ship-class-and-expansion-celebration-key",
-        "https://www.usatoday.com/story/travel/cruises/2026/11/19/carnival-destiny-new-ships-expansions/92864266007/",
-        "https://people.com/carnival-cruise-line-announces-new-class-of-ships-with-2-vessels-coming-soon-12265833"
+        "https://g1.globo.com/economia/noticia/2026/11/19/dolar-ibovespa.ghtml",
+        "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/19/dolar-abre-a-r-590-apesar-de-aprovacao-do-plano-moretti-no-senado.ghtm",
+        "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-19112026/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqLmBZBxXzDyedmVIk8ydOqOj63bd2hqiHwTPZ8FhMFbJgdBix-1HORw3QvVQ",
-      "image_credit": "Carnival-News.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh6D60bH2L5USwtcS_-YTNK6zUjUe4ZWdmYxWfHSVrwWFVLKZ6WJGUH4TnQMk",
+      "image_credit": "G1",
       "news": [
         {
-          "url": "https://www.carnival-news.com/2026/11/19/carnival-cruise-line-unveils-the-next-wave-of-vacations-from-sea-to-shore-including-a-new-ship-class-and-expansion-celebration-key",
-          "title": "Unveils the Next Wave of Vacations From Sea to Shore, Including a New Ship Class and Expansion Celebration Key | Carnival Cruise Line",
-          "publisher": "Carnival-News.com",
+          "url": "https://g1.globo.com/economia/noticia/2026/11/19/dolar-ibovespa.ghtml",
+          "title": "Dólar fecha a R$ 5,93 e tem sexta alta seguida, mesmo após BC vender US$ 1 bilhão; Ibovespa cai",
+          "publisher": "G1",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqLmBZBxXzDyedmVIk8ydOqOj63bd2hqiHwTPZ8FhMFbJgdBix-1HORw3QvVQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh6D60bH2L5USwtcS_-YTNK6zUjUe4ZWdmYxWfHSVrwWFVLKZ6WJGUH4TnQMk"
         },
         {
-          "url": "https://www.usatoday.com/story/travel/cruises/2026/11/19/carnival-destiny-new-ships-expansions/92864266007/",
-          "title": "Carnival's new ship will have the first-ever adult-only staterooms",
-          "publisher": "USA Today",
+          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/19/dolar-abre-a-r-590-apesar-de-aprovacao-do-plano-moretti-no-senado.ghtm",
+          "title": "Dólar chega a R$ 5,92, mas modera alta após intervenção do Banco Central",
+          "publisher": "UOL Economia",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-ec357Cc9fbBhaOJP0lRCq4sgWI74_jRdvHlImOzekVvfSJw7xXO_NyvBP44"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbc-IGusv8miZQ_78hHSsEeW5ocA-uZW89UOHsoUN-p4lMDfZ40WpukfRLCs"
         },
         {
-          "url": "https://people.com/carnival-cruise-line-announces-new-class-of-ships-with-2-vessels-coming-soon-12265833",
-          "title": "Carnival Cruise Line Announces New Class of Ships — But They Won’t be the Cruise Line’s Largest Yet",
-          "publisher": "People.com",
+          "url": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-19112026/",
+          "title": "Dólar hoje sobe 1,1% e fecha a R$ 5,93 em meio a temor fiscal, apesar de leilão do BC",
+          "publisher": "InfoMoney",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVRpSWfGNCHqTgCNoCQ6Ng5rVNIJuyvVc9sd6LvbTWQdfrVr7bXh7lhD6IH14"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRf2jgpa7ZVAJmxkzDzdL1sjTXxceSgoQ3wXACMozyRj2tB9Ki51Xi5KMqnlw"
         }
       ]
     },
     {
-      "query": "playstation plus",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T09:30:00Z",
-      "related_news_urls": [
-        "https://www.gamespot.com/articles/playstation-plus-is-losing-more-games-but-one-departure-stings-the-most/",
-        "https://www.playstationlifestyle.net/2026/11/16/games-leaving-ps-plus-extra-premium-december-2026",
-        "https://www.pushsquare.com/news/2026/11/3-ps-plus-extra-game-removals-for-december-2026-confirmed"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNuY5LLKEGTGLxjMCpxDpJlqseg3J14KnGqYytqFB_wnXyPkSgV97NPLOk2s",
-      "image_credit": "GameSpot",
-      "news": [
-        {
-          "url": "https://www.gamespot.com/articles/playstation-plus-is-losing-more-games-but-one-departure-stings-the-most/",
-          "title": "PlayStation Plus Is Losing More Games, But One Departure Stings The Most",
-          "publisher": "GameSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNuY5LLKEGTGLxjMCpxDpJlqseg3J14KnGqYytqFB_wnXyPkSgV97NPLOk2s"
-        },
-        {
-          "url": "https://www.playstationlifestyle.net/2026/11/16/games-leaving-ps-plus-extra-premium-december-2026",
-          "title": "Games Leaving PlayStation Plus in December 2026 Confirmed",
-          "publisher": "PlayStation LifeStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0WTsBe06ZGRiIKkjyR67ykY0bJH8PG9JlVoiXRgZBh_s-fmcPlHoBQYGv4C4"
-        },
-        {
-          "url": "https://www.pushsquare.com/news/2026/11/3-ps-plus-extra-game-removals-for-december-2026-confirmed",
-          "title": "3 PS Plus Extra Game Removals for December 2026 Confirmed",
-          "publisher": "Push Square",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5R0jBG9H9QXlEmFa1yIoxF6DHx15Fcjip9QE3alij66_INVm56lBh0j0db2E"
-        }
-      ]
-    },
-    {
-      "query": "does jason die in gta 6",
+      "query": "nc lottery",
       "approx_searches": "100+",
-      "published_at": "2026-11-20T09:30:00Z",
+      "published_at": "2026-11-20T10:50:00Z",
       "related_news_urls": [
-        "https://www.svg.com/2321698/gta-6-prologue-twist-explained-jason-lucia-son/",
-        "https://www.polygon.com/gta6-prologue-secret/",
-        "https://kotaku.com/grand-theft-auto-6-gta6-jason-lucia-tomas-kid-baby-non-lethal-ending-2000758396"
+        "https://nclottery.com/NewsBlogDetails/2026/11/18/Cumberland-County-dad-will-take-daughter-to-Disney-World-with-200000-win",
+        "https://www.yahoo.com/news/articles/nc-lottery-pick-3-day-043003156.html",
+        "https://demokratis.co.id/en/north-carolina-november-18-results"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS06yiya_jZd5tDQqpT9JwKMIbhXdfNwz6ZZYCkNIyuXhn0tBPWDP4DPXDlcVw",
-      "image_credit": "SVG",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2hr3MSTrjS8M-r_9FG9tQHj9aQbRa7tPhWsAcCNBkXO_FpfPe4E2vwLfxAmg",
+      "image_credit": "NC Education Lottery",
       "news": [
         {
-          "url": "https://www.svg.com/2321698/gta-6-prologue-twist-explained-jason-lucia-son/",
-          "title": "GTA 6's Prologue Has A Game-Changing Twist Rockstar Managed To Keep Completely Secret",
-          "publisher": "SVG",
+          "url": "https://nclottery.com/NewsBlogDetails/2026/11/18/Cumberland-County-dad-will-take-daughter-to-Disney-World-with-200000-win",
+          "title": "Cumberland County dad will take daughter to Disney World with $200,000 win",
+          "publisher": "NC Education Lottery",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS06yiya_jZd5tDQqpT9JwKMIbhXdfNwz6ZZYCkNIyuXhn0tBPWDP4DPXDlcVw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2hr3MSTrjS8M-r_9FG9tQHj9aQbRa7tPhWsAcCNBkXO_FpfPe4E2vwLfxAmg"
         },
         {
-          "url": "https://www.polygon.com/gta6-prologue-secret/",
-          "title": "GTA 6’s Best-Kept Secret Is the Most Important Part of the Game",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_abpDxCUU1d-PMndguUG0vWcHGSium6ACbZ4xUZZVzpRemMNYvHoh5zCTSuk"
-        },
-        {
-          "url": "https://kotaku.com/grand-theft-auto-6-gta6-jason-lucia-tomas-kid-baby-non-lethal-ending-2000758396",
-          "title": "Rockstar Kept One Of GTA 6’s Biggest Early Spoilers Under Wraps For Years",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5ha0ni9l0z3JeD0jjZMEFEf9hFpPcii6hFjrv9opqydXId_B_etRHbNu-C9Q"
-        }
-      ]
-    },
-    {
-      "query": "gta online",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T09:20:00Z",
-      "related_news_urls": [
-        "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
-        "https://www.imdb.com/news/ni66116171/?ref_=nwc_art_perm",
-        "https://insider-gaming.com/gta-6-online-multiplayer-release/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY",
-      "image_credit": "PCMag",
-      "news": [
-        {
-          "url": "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
-          "title": "GTA 6 Is Finally Here...So When Can You Play Online With Friends?",
-          "publisher": "PCMag",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66116171/?ref_=nwc_art_perm",
-          "title": "‘GTA 6 Online’ Release Date: Will ‘Grand Theft Auto VI’ Have Multiplayer at Launch?",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3sLRw4Q4iWUlOlWnScamGyHj1J8cpmXfawyUUTL1gVXuJ2G61qM_ORUUBfKs"
-        },
-        {
-          "url": "https://insider-gaming.com/gta-6-online-multiplayer-release/",
-          "title": "Where is GTA 6 Online Multiplayer? GTA Online 2 Release Window",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLCQvP0awzrdwWwfKJayKz5rcXt9B0hOeXI4R08_yDwpFncUNC6p158Nff8E0"
-        }
-      ]
-    },
-    {
-      "query": "heavy metal",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T09:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/heavy-metal-rock-star-dead-002920272.html",
-        "https://www.9news.com/article/news/nation-world/john-christ-original-lead-guitarist-metal-band-danzig-died-61-obit/507-5010a261-21e9-40e8-b4d2-a6fd922e9117",
-        "https://www.rollingstone.com/music/music-news/john-christ-danzig-guitarist-mother-dead-obituary-1235659454/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa2BBsYCerueTn67gYMaRg9Jqs6WN_Xfs8eeow1yRapfe-yghqs1oEWRqX0Nc",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/heavy-metal-rock-star-dead-002920272.html",
-          "title": "Heavy metal rock star dead at 61 — after revealing ‘medical issue’",
+          "url": "https://www.yahoo.com/news/articles/nc-lottery-pick-3-day-043003156.html",
+          "title": "NC Lottery Pick 3 Day, Pick 3 Evening results for Nov. 19, 2026",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa2BBsYCerueTn67gYMaRg9Jqs6WN_Xfs8eeow1yRapfe-yghqs1oEWRqX0Nc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHiC5u-85FZuIXXGnRoiHn8jinTYQVUJGSkL2lPhNkfFkGLUNdRYkqYhesgcY"
         },
         {
-          "url": "https://www.9news.com/article/news/nation-world/john-christ-original-lead-guitarist-metal-band-danzig-died-61-obit/507-5010a261-21e9-40e8-b4d2-a6fd922e9117",
-          "title": "John Christ, original lead guitarist of metal band Danzig, has died at age 61",
-          "publisher": "9NEWS",
+          "url": "https://demokratis.co.id/en/north-carolina-november-18-results",
+          "title": "North Carolina Lottery Releases November 18 Draw Results",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxTleVvZacagTnO4YyuIlUy9Npn6HeOE3nAqMWfZKqdxwR_n-t_Oz6iHmaSc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_eq3bxZLyUZbs5nt6OXD6N5sTUgyONAvsFkz4OmK5McpsAoPPZgAwpDyMeGM"
+        }
+      ]
+    },
+    {
+      "query": "new york yankees",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T10:30:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/commissioner-rob-manfred-discusses-salary-cap-and-floor-proposals",
+        "https://www.espn.com/mlb/story/_/id/50523785/rob-manfred-says-mlb-owners-compromise-salary-cap",
+        "https://sports.yahoo.com/mlb/article/mlb-lockout-watch-with-less-than-2-weeks-before-a-shutdown-heres-what-baseball-fans-need-to-know-214839820.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv7Gb0v-eoPbxbmVwcv-WPc0-MZRWBPQd3-If3WGtG05qhO-Fj3zugXVHYxfo",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/commissioner-rob-manfred-discusses-salary-cap-and-floor-proposals",
+          "title": "Commissioner Manfred ‘can’t imagine’ owners ratifying a deal without salary cap and floor",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv7Gb0v-eoPbxbmVwcv-WPc0-MZRWBPQd3-If3WGtG05qhO-Fj3zugXVHYxfo"
         },
         {
-          "url": "https://www.rollingstone.com/music/music-news/john-christ-danzig-guitarist-mother-dead-obituary-1235659454/",
-          "title": "John Christ, Original Danzig Guitarist on ‘Mother’ and More, Dead at 61",
-          "publisher": "Rolling Stone",
+          "url": "https://www.espn.com/mlb/story/_/id/50523785/rob-manfred-says-mlb-owners-compromise-salary-cap",
+          "title": "Rob Manfred says MLB owners won't compromise on salary cap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIU5nw0g86CG6yQfK03Ipqv9FhFYAnPdva_xFGRNFS_Wb7E7wzMQ39PAbnf6Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_nDMVSJ_NqcUH4J3qQ-eQCFMi7pFD-fGhRoLyrKY7uHlWeDhAo3i6swqMPaQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/mlb/article/mlb-lockout-watch-with-less-than-2-weeks-before-a-shutdown-heres-what-baseball-fans-need-to-know-214839820.html",
+          "title": "MLB lockout watch: With less than 2 weeks before a shutdown, here's what baseball fans need to know",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToA-MVUH8YhEk8C71Z5z9j3k36KUKjrkX4ArEuckkH8T202-GMn41Ot7eZXDE"
         }
       ]
     }
