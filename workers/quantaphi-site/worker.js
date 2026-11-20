@@ -578,7 +578,7 @@ export default {
   if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio','Alien-Coin'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
   // HypeStat is browser-local research: allow only this origin's Quick Card iframe.
   // Preserve no-network/no-form policy so a local CSV is never silently submitted.
-  if (route.repo === 'QuantaPhi' && route.sourcePath === '/hypestat-infinity.html' && /text\\/html/i.test(out.get('Content-Type') || '')) {
+  if (route.repo === 'QuantaPhi' && route.sourcePath === '/hypestat-infinity.html' && /text\/html/i.test(out.get('Content-Type') || '')) {
    out.set('X-Frame-Options', 'SAMEORIGIN');
    out.set('Content-Security-Policy', "default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'");
    out.set('Referrer-Policy', 'no-referrer');
