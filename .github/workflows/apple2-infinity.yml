@@ -3,12 +3,12 @@ on:
   pull_request:
     paths:
       - 'apple2-infinity/**'
-      - 'test/apple2-infinity.test.mjs'
+      - 'test/apple2-*.test.mjs'
       - '.github/workflows/apple2-infinity.yml'
   push:
     paths:
       - 'apple2-infinity/**'
-      - 'test/apple2-infinity.test.mjs'
+      - 'test/apple2-*.test.mjs'
       - '.github/workflows/apple2-infinity.yml'
 jobs:
   node-tests:
@@ -19,4 +19,4 @@ jobs:
         with:
           node-version: '22'
       - name: Model checks
-        run: node --test test/apple2-infinity.test.mjs
+        run: node --test test/apple2-infinity.test.mjs test/apple2-disk2.test.mjs

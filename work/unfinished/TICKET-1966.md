@@ -3,19 +3,19 @@ issue: 1966
 project: "Apple II Infinity virtual hardware software workbench"
 state: review_pending
 dot: "🟡"
-progress_percent: 65
-progress_basis: "38/38 local Node tests for virtual CPU, FPGA/CM5, Apple IIe main/aux memory and new language-card banking; browser, exact-head CI, independent PR review, merge and production acceptance pending."
-sessions_spent: 4
+progress_percent: 70
+progress_basis: "Software Disk II slot-6 nibble controller, two drives, user-owned image/ROM loading, and UI built; 47 focused local Node tests passed (38 prior plus 9 new); exact-head CI, independent review, merge and live/Android acceptance remain."
+sessions_spent: 5
 sessions_remaining_estimate: "unknown"
 agent: "GPT Green engineer, unleased GitHub connector scoped writes"
 lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-last_observed_at_utc: "2026-11-19T23:45:11.771Z"
+last_observed_at_utc: "2026-11-20T01:27:56.021Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/apple2-infinity-software-1966
-head_sha: f72fee92610201ac4848a567670f518eaa3cec7d
+head_sha: 7dcb8f0ae112b2611a5860c89a725ff26c8f0038
 pr: "https://github.com/www-infinity4/QuantaPhi/pull/1967"
 tests:
   - "8/8 local Node v22 tests passed; dedicated GitHub CI https://github.com/www-infinity4/QuantaPhi/actions/runs/44426652404 succeeded on original head."
@@ -26,7 +26,7 @@ merged: false
 deployed: false
 live_verified: false
 blocker: "Independent reviewer approval and live/browser/Android verification not yet available; check new exact-head CI before considering guarded merge."
-next_action: "Check GitHub exact-head CI for language-card/main reconciliation, obtain independent review, and verify any authorized source merge and Android/browser acceptance"
+next_action: "Verify exact PR-head CI (including new Disk II test job), obtain independent review, then apply guarded merge and live/Android acceptance"
 ---
 
 # Apple II Infinity · software-only workstation · #1966
@@ -76,3 +76,12 @@ next_action: "Check GitHub exact-head CI for language-card/main reconciliation, 
 - Main reconciliation preserves three current main-only index updates (HypeStat #1974; X Spaces #1284; X intake #1210), plus Apple II ticket; overlaying branch-owned files into main tree on a two-parent merge commit. New exact-head CI and independent review required before source merge.
 - Verification receipts: local 38/38 Node checks only prior to GitHub push; no production, Android or genuine browser readback; no authenticated runner lease claimed.
 - Next action: inspect new exact-head CI, resolve failures and seek independent review; no release assertion.
+
+## APPLE2-INF-1966-S5 · Disk II software controller
+
+- Implemented separate disk2.mjs controller: virtual slot 6 C0E0-C0EF motor/phase/drive/Q6/Q7 soft switches, two independent nibble images, 35 tracks x 6656 nibbles, optional owner-supplied 256-byte slot ROM at C600-C6FF, read-only default and explicit image export.
+- Browser workbench mounts local 232,960-byte .nib files without network, controls drive/motor/read/eject, allows user-supplied authorized ROM. Unlicensed firmware and other disk formats not bundled.
+- Regression TDD: new disk test suite initially failed without component; nine tests now pass alongside 38 existing, total 47/47 local Node 22.
+- This is an instruction-level byte-nibble stream model, not the real Disk II P6 logic state sequencer or certified DOS boot; raw DSK/WOZ and accurate flux/timing still pending.
+- Prior PR head 7dcb8f0 passed 7 remote workflows; new source commit and its exact-head CI/independent approval pending. No merge, deployment, or Android acceptance claimed.
+- Reviewer gate: no recorded independent review. Next action: exact-head Actions test and independent review.

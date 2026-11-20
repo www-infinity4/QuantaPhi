@@ -13,6 +13,7 @@ A zero-hardware, dependency-free, offline-capable software workbench. Not an App
 | ECP5 FPGA | `VirtualFPGA` | 16 slot-7 registers, reconfigurable gates, IRQ status, DMA model, 64 MiB sparse SDRAM |
 | Pi CM5 | `VirtualCM5` | 8 GiB logically addressable sparse RAM, add/multiply/ADC jobs, offline network outbox |
 | Language Card overlay | VirtualAppleBus language-card banks | 4 KiB bank 1 + bank 2 at $D000, shared upper 8 KiB at $E000, separate main/aux arrays; two-read software write unlock |
+| Disk II controller (slot 6) | VirtualDisk2 in disk2.mjs | Two virtual drives; C0E0-C0EF phase/motor/Q6/Q7 soft switches; user-owned NIB files; optional user-supplied 256-byte slot ROM |
 | ADC / DAC | `VirtualSensors` | 10-bit analog reading and 8-bit digital-to-analog output |
 | DMA arbiter | `VirtualFPGA.dma` | Bounded synchronous 4 KiB RAM copy with address validation; NOT electrical arbitration |
 
@@ -22,9 +23,9 @@ A zero-hardware, dependency-free, offline-capable software workbench. Not an App
 
 ## Run
 
-From repository root: `node --test test/apple2-infinity.test.mjs` (38 focused tests through the language-card follow-up).
+From repository root: `node --test test/apple2-infinity.test.mjs` (47 focused tests (38 previous + 9 Disk II)).
 
-Static site path: `/apple2-infinity/` (HTML + native JavaScript modules; no npm or backend). The browser workbench accepts up to 4,096 hex bytes at `$0800`, lets you step instructions or run at most 2,000 per click, and shows CPU registers, 40/80-column virtual text output, auxiliary memory and language-card selectors. Only this demo workbench treats `BRK` as a convenient stop; `Virtual6502.step()` implements the real vector path by default.
+Static site path: `/apple2-infinity/` (HTML + native JavaScript modules; no npm or backend). The browser workbench accepts up to 4,096 hex bytes at `$0800`, lets you step instructions or run at most 2,000 per click, and shows CPU registers, 40/80-column virtual text output, auxiliary memory and language-card selectors plus the Disk II controller panel. Only this demo workbench treats `BRK` as a convenient stop; `Virtual6502.step()` implements the real vector path by default.
 
 ## Apple IIe auxiliary-memory and video soft switches (software model)
 
@@ -66,3 +67,11 @@ Opcode coverage and base-cycle expectations were checked against the published 1
 5. Verify responsive UI and accessibility on a physical Android device, exact-head CI, independent review, merge and production publication.
 
 Do not represent this prototype as a full Apple IIe ROM emulator, a physical computer, gigahertz-accurate simulation or actual connected sensor/network hardware.
+## Virtual Disk II — slot 6 nibble prototype
+
+- Local, user-authorized .nib files only: exactly 232,960 bytes (35 tracks x 6656 nibbles). DSK, PO, WOZ and other disk formats are intentionally not yet decoded.
+- Two virtual drives, motor and selected-drive signals, stepper-head phase switches, Q6/Q7 status, read-only by default, optional explicit byte-level nibble writes, and disk image export without changing the input file.
+- The optional slot-6 boot ROM is loaded from a separate user-provided 256-byte file at C600-C6FF. No firmware or Apple software is shipped or downloaded.
+- This is not a flux/timing-accurate Disk II logic state sequencer. One nibble is read per C0EC software access and write timing is simplified. Real DOS boot compatibility is not established.
+- Files remain in local browser memory; there are no network requests, paid APIs, or system filesystem scans.
+- Original implementation informed by https://github-wiki-see.page/m/mikedaley/web-a2e/wiki/Disk-System-Internals and https://github-wiki-see.page/m/mikedaley/web-a2e/wiki/Expansion-Slots ; reference code was not copied.

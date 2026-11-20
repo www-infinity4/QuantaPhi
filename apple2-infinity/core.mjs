@@ -1,4 +1,6 @@
 import { Virtual6502 } from './cpu6502.mjs';
+import { VirtualDisk2, DISK2_BASE, DISK2_ROM_BASE } from './disk2.mjs';
+export { VirtualDisk2, DISK2_BASE, DISK2_ROM_BASE, NIB_TRACK_BYTES, NIB_TRACKS } from './disk2.mjs';
 export { Virtual6502, LEGAL_OPCODES } from './cpu6502.mjs';
 /* Apple II Infinity: original, dependency-free software components.
    This is a functional teaching/workbench model, NOT a cycle-accurate Apple IIe or full 6502. */
@@ -114,6 +116,7 @@ export class VirtualAppleBus {
     this.auxRam=new Uint8Array(65536);
     this.rom=new Uint8Array(0x3000);
     this.fpga=fpga;
+    this.disk=new VirtualDisk2();
     this.soft={store80:false,ramrd:false,ramwrt:false,altzp:false,col80:false,altcharset:false};
     // Physically separate Language Card banks for main and auxiliary memory.
     const makeSide=()=>({bank1:new Uint8Array(0x1000),bank2:new Uint8Array(0x1000),high:new Uint8Array(0x2000)});
@@ -191,6 +194,8 @@ export class VirtualAppleBus {
     if(address>=0xc011&&address<=0xc01f)return this.status(address);
     if(address>=0xc050&&address<=0xc057){this.displaySwitch(address);return 0;}
     if(address>=0xc080&&address<=0xc08f){this.languageCardSwitch(address,true);return 0;}
+    if(address>=DISK2_BASE&&address<DISK2_BASE+16)return this.disk.access(address-DISK2_BASE);
+    if(address>=DISK2_ROM_BASE&&address<DISK2_ROM_BASE+256)return this.disk.readBootROM(address);
     if(address>=IO_BASE&&address<IO_BASE+16)return this.fpga.read(address-IO_BASE);
     if(address>=0xd000)return this.readLanguageCard(address);
     if(address<0xc000)return this.bank(address)[address];
@@ -200,6 +205,7 @@ export class VirtualAppleBus {
     if(address>=0xc000&&address<=0xc00f){this.setMemorySwitch(address);return;}
     if(address>=0xc050&&address<=0xc057){this.displaySwitch(address);return;}
     if(address>=0xc080&&address<=0xc08f){this.languageCardSwitch(address,false);return;}
+    if(address>=DISK2_BASE&&address<DISK2_BASE+16){this.disk.access(address-DISK2_BASE,value,true);return;}
     if(address>=IO_BASE&&address<IO_BASE+16){this.fpga.write(address-IO_BASE,value);return;}
     if(address===0xc030){this.video.speakerEdges++;return;}
     if(address>=0xd000){this.writeLanguageCard(address,value);return;}
@@ -218,5 +224,5 @@ export class Apple2Infinity {
       0xa9,1,0x8d,0xf0,0xc0,0xad,0xf1,0xc0,0x29,2,0xf0,0xf9,0xad,0xf8,0xc0,0x8d,0x00,0x04,0x00];
     this.cpu.reset();this.bus.load(0x800,program);const result=this.cpu.run(10000,{stopOnBrk:true});return {...result,result:this.bus.read(0x400)};
   }
-  snapshot(){return {cpu:{a:this.cpu.a,x:this.cpu.x,y:this.cpu.y,pc:this.cpu.pc,cycles:this.bus.cycles},fpga:{status:this.fpga.reg[1],irq:this.fpga.irq,logic:this.fpga.gate,ramPhysical:this.fpga.ram.physicalBytes},cm5:{jobs:this.cm5.jobs,ramPhysical:this.cm5.ram.physicalBytes},sensors:{samples:this.sensors.samples,dac:this.sensors.dac},mmu:{...this.bus.soft,page2:this.bus.video.page2,hires:this.bus.video.hires,textMode:this.bus.video.textMode,mixed:this.bus.video.mixed,columns:this.bus.video.columns},languageCard:{bank:this.bus.lc.bank,readRAM:this.bus.lc.readRAM,writeEnabled:this.bus.lc.writeEnabled,aux:this.bus.soft.altzp},screen:this.bus.video.frame()};}
+  snapshot(){return {cpu:{a:this.cpu.a,x:this.cpu.x,y:this.cpu.y,pc:this.cpu.pc,cycles:this.bus.cycles},fpga:{status:this.fpga.reg[1],irq:this.fpga.irq,logic:this.fpga.gate,ramPhysical:this.fpga.ram.physicalBytes},cm5:{jobs:this.cm5.jobs,ramPhysical:this.cm5.ram.physicalBytes},sensors:{samples:this.sensors.samples,dac:this.sensors.dac},mmu:{...this.bus.soft,page2:this.bus.video.page2,hires:this.bus.video.hires,textMode:this.bus.video.textMode,mixed:this.bus.video.mixed,columns:this.bus.video.columns},languageCard:{bank:this.bus.lc.bank,readRAM:this.bus.lc.readRAM,writeEnabled:this.bus.lc.writeEnabled,aux:this.bus.soft.altzp},disk:this.bus.disk.snapshot(),screen:this.bus.video.frame()};}
 }
