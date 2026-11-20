@@ -3,9 +3,324 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T23:01:25.937513Z",
+  "checked_at": "2026-11-20T23:31:14.369542Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "hornets vs hawks",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T23:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/hornets-lengthy-injury-report-provides-180115670.html",
+        "https://swarmandsting.com/hannes-steinbach-s-hornets-return-jeopardize-sion-james-starting-spot",
+        "https://greensboro.gleague.nba.com/news/swarm-defeat-capital-city-97-86-behind-steinbachs-28-point-double-double"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjG9Ra6dY2VpBybuYEKaExW7BoOmfoMUl_dgWiJnIc-QsRr1bOGURt4nk1xts",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/hornets-lengthy-injury-report-provides-180115670.html",
+          "title": "Hornets' Lengthy Injury Report Provides a Key Opportunity for Hannes Steinbach",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjG9Ra6dY2VpBybuYEKaExW7BoOmfoMUl_dgWiJnIc-QsRr1bOGURt4nk1xts"
+        },
+        {
+          "url": "https://swarmandsting.com/hannes-steinbach-s-hornets-return-jeopardize-sion-james-starting-spot",
+          "title": "Hannes Steinbach's Hornets return should jeopardize Sion James' starting spot",
+          "publisher": "Swarm and Sting",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OkttBugYKe58rtNViXpht6zaNpdXBnyLozH6OP12w_4tjnq1e4INAugk1j8"
+        },
+        {
+          "url": "https://greensboro.gleague.nba.com/news/swarm-defeat-capital-city-97-86-behind-steinbachs-28-point-double-double",
+          "title": "Swarm Defeat Capital City, 97-86, Behind Steinbach’s 28-Point Double-Double",
+          "publisher": "Greensboro Swarm",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzN1jAdoODt780CPdbkRpdTW7iSQQJ7be1aOuwIrXJE4S029gWpzrvgxsmans"
+        }
+      ]
+    },
+    {
+      "query": "johan oviedo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-20/report-d-backs-acquiring-johan-oviedo-from-boston",
+        "https://www.si.com/mlb/red-sox/onsi/red-sox-cut-ties-with-johan-oviedo-in-surprise-diamondbacks-trade-pat3",
+        "https://www.mlbtraderumors.com/2026/11/diamondbacks-to-acquire-johan-oviedo.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSyzOVZEYCyl8O51TqkmKV6dRmCKQHMDsOljSQkFfmON4hq456IbztjkttGQU",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-20/report-d-backs-acquiring-johan-oviedo-from-boston",
+          "title": "Report: D-backs acquiring Johan Oviedo from Boston",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSyzOVZEYCyl8O51TqkmKV6dRmCKQHMDsOljSQkFfmON4hq456IbztjkttGQU"
+        },
+        {
+          "url": "https://www.si.com/mlb/red-sox/onsi/red-sox-cut-ties-with-johan-oviedo-in-surprise-diamondbacks-trade-pat3",
+          "title": "Red Sox Cut Ties With Johan Oviedo In Surprise Diamondbacks Trade",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtwZO9XnAf3aXTViqp4v3GAEjN5F-ANUWle04oKW1bi8E5rh_ViuT1J2fDbI"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/diamondbacks-to-acquire-johan-oviedo.html",
+          "title": "Diamondbacks To Acquire Johan Oviedo",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWq4x6-3BD7oTON5ppzmvvM9Oi2118YjQF6udQH5H7CNPeg0EKrqUYc2Mjqc0"
+        }
+      ]
+    },
+    {
+      "query": "tifa lockhart unauthorized merchandise bust",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T23:10:00Z",
+      "related_news_urls": [
+        "https://automaton-media.com/en/news/final-fantasy-vii-tifa-lockhart-bootleg-figures-lead-to-13-arrests-in-crackdown-on-counterfeit-operation/",
+        "https://gonintendo.com/contents/67437-13-people-arrested-for-selling-over-300k-of-bootleg-final-fantasy-vii-tifa-figurines",
+        "https://nintendowire.com/news/2026/11/20/shanghai-police-arrest-13-people-responsible-for-counterfeit-tifa-figures-seize-roughly-300000-worth-of-goods/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLKDpKvfQJcHahwcM6VoPQo0ceALmHabc-yE0v1o6wza_FX4CSJ56EwkITwow",
+      "image_credit": "AUTOMATON",
+      "news": [
+        {
+          "url": "https://automaton-media.com/en/news/final-fantasy-vii-tifa-lockhart-bootleg-figures-lead-to-13-arrests-in-crackdown-on-counterfeit-operation/",
+          "title": "Final Fantasy VII Tifa Lockhart bootleg figures lead to 13 arrests in crackdown on counterfeit operation",
+          "publisher": "AUTOMATON",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLKDpKvfQJcHahwcM6VoPQo0ceALmHabc-yE0v1o6wza_FX4CSJ56EwkITwow"
+        },
+        {
+          "url": "https://gonintendo.com/contents/67437-13-people-arrested-for-selling-over-300k-of-bootleg-final-fantasy-vii-tifa-figurines",
+          "title": "13 people arrested for selling over $300k of bootleg Final Fantasy VII Tifa figurines and more",
+          "publisher": "GoNintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5r9xlor3LVjkP4kho63fdYprzQhMYKoUqW71SyuDjxteW9N9iad3_lUiE814"
+        },
+        {
+          "url": "https://nintendowire.com/news/2026/11/20/shanghai-police-arrest-13-people-responsible-for-counterfeit-tifa-figures-seize-roughly-300000-worth-of-goods/",
+          "title": "Shanghai police arrest 13 people responsible for counterfeit Tifa figures, seize roughly $300,000 worth of goods",
+          "publisher": "Nintendo Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOLWaPD6CUh_CTghSbWhg6_o4hL1CP698uKJRv5bvcRwSQPo0Of1aJUCbOTdU"
+        }
+      ]
+    },
+    {
+      "query": "max sasson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T23:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7799101/2026/11/20/max-sasson-trade-canucks-rangers-nhl/",
+        "https://www.markerzone.com/news/index.php?no=619060",
+        "https://www.tsn.ca/nhl/article/canucks-deal-f-sasson-to-rangers-for-draft-pick/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTM0KgAKRmTFB3OaNHN-MH9O1khn_C4sZNBg5BTSk5PTfKbu0suF6NtKcFrr1Y",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7799101/2026/11/20/max-sasson-trade-canucks-rangers-nhl/",
+          "title": "Canucks trade Max Sasson to Rangers for 2029 fourth-round draft pick",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTM0KgAKRmTFB3OaNHN-MH9O1khn_C4sZNBg5BTSk5PTfKbu0suF6NtKcFrr1Y"
+        },
+        {
+          "url": "https://www.markerzone.com/news/index.php?no=619060",
+          "title": "New York Rangers acquire 26-year-old center from Vancouver in a Friday trade",
+          "publisher": "Markerzone.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwtiO8dz7HWAKdMrAm1wmYdbDWlGi5Atl1PIdKQ05nGDqasGgh0zJINFDnwws"
+        },
+        {
+          "url": "https://www.tsn.ca/nhl/article/canucks-deal-f-sasson-to-rangers-for-draft-pick/",
+          "title": "Vancouver Canucks deal F Max Sasson to New York Rangers for draft pick",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCsBjdc7_weSfMwb9HJdoNgAZ8mJsD-2LVufxr4oSMZfdLxo1M9GY6cRYkBho"
+        }
+      ]
+    },
+    {
+      "query": "bucaramanga - américa",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T23:00:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17533857/bucaramanga-vs-america-fecha-1-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+        "https://leanotas.com/america-inicia-el-camino-hacia-su-segunda-final-del-ano/",
+        "https://hsbnoticias.com/noticias/pablo-peirano-y-su-previa-de-partido-ante-el-america-de-cali"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX-I_f5asnd5649CmS55F3SUHN4QjMAPgQkX00G8uV8ubuOt7F7zD3OQ-8gso",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17533857/bucaramanga-vs-america-fecha-1-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+          "title": "Cuándo juegan Bucaramanga vs América por fecha 1 de cuadrangulares de Liga BetPlay: equipo, fecha, hora y TV en vivo",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX-I_f5asnd5649CmS55F3SUHN4QjMAPgQkX00G8uV8ubuOt7F7zD3OQ-8gso"
+        },
+        {
+          "url": "https://leanotas.com/america-inicia-el-camino-hacia-su-segunda-final-del-ano/",
+          "title": "América inicia el camino hacia su segunda final del año",
+          "publisher": "leanotas.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTLThKd6raQg4YETHTcP6hg_zEeDpebwjPjb1zQv2cfNyl45ffCHBgCMhKxes"
+        },
+        {
+          "url": "https://hsbnoticias.com/noticias/pablo-peirano-y-su-previa-de-partido-ante-el-america-de-cali",
+          "title": "Pablo Peirano y su previa de partido ante el América de Cali",
+          "publisher": "HSB Noticias",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCKw_t7deIHRmgO-HBdnItzhcefNofHVHwh27FV1z7qt0WBxXNgtqA16H8npI"
+        }
+      ]
+    },
+    {
+      "query": "florida weather flooding",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-20T22:50:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/weather-news/florida-rare-flood-threat-heavy-rain-slams-region",
+        "https://www.clickorlando.com/news/local/2026/11/20/flooding-in-christmas-leaves-roads-yards-underwater-as-family-worries-about-more-rain/",
+        "https://apnews.com/article/extreme-weather-flooding-florida-california-storms-46b14622b3ad77c32eb0182bfe8bc9f4"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6yRm6P8NXC9xXgvNUyOTc-MmOpJz5IVEBNzY43NDW8f-NMJGAT2vxeKpWhnY",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/weather-news/florida-rare-flood-threat-heavy-rain-slams-region",
+          "title": "Florida coast under rare Level 4 flood threat as relentless storms raise risk of catastrophic flooding",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6yRm6P8NXC9xXgvNUyOTc-MmOpJz5IVEBNzY43NDW8f-NMJGAT2vxeKpWhnY"
+        },
+        {
+          "url": "https://www.clickorlando.com/news/local/2026/11/20/flooding-in-christmas-leaves-roads-yards-underwater-as-family-worries-about-more-rain/",
+          "title": "Flooding in Christmas leaves roads, yards underwater as family worries about more rain",
+          "publisher": "WKMG",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZxDmnibRzwQUFxlwGZ6hu2GsG85pNIDk7rokwlD5Nusdx1r9-sWpSwjcbksY"
+        },
+        {
+          "url": "https://apnews.com/article/extreme-weather-flooding-florida-california-storms-46b14622b3ad77c32eb0182bfe8bc9f4",
+          "title": "Storms deluging Florida with historic flooding shift further north after devastating communities",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF5Dc7CKWkAB-9o69Szl0sFa5yX_xXJdJAy0gsbzbRV-Y57iR7KzWDJ9MJcCU"
+        }
+      ]
+    },
+    {
+      "query": "drinking",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T22:50:00Z",
+      "related_news_urls": [
+        "https://www.goodhousekeeping.com/health/diet-nutrition/a74470890/water-before-coffee/",
+        "https://www.health.com/effects-of-drinking-coffee-each-morning-12258018",
+        "https://www.sadanews.ps/en/news/354596.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRScmUgjqNHaYtqZdV4iZbQyzPz5DzrNbAg99wih5XZhE52iRQsSmCWeoqi7m4",
+      "image_credit": "Good Housekeeping",
+      "news": [
+        {
+          "url": "https://www.goodhousekeeping.com/health/diet-nutrition/a74470890/water-before-coffee/",
+          "title": "Should You Drink Water Before Coffee in the Morning? The Answer May Surprise You",
+          "publisher": "Good Housekeeping",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRScmUgjqNHaYtqZdV4iZbQyzPz5DzrNbAg99wih5XZhE52iRQsSmCWeoqi7m4"
+        },
+        {
+          "url": "https://www.health.com/effects-of-drinking-coffee-each-morning-12258018",
+          "title": "What Happens to Your Body When You Drink Coffee Every Morning?",
+          "publisher": "Health.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS37YRkbHiGiQK3xTL6M3Sy7gQ79g4wke_zSAqVKGm7nJCzamN7dyRWCzcvAw"
+        },
+        {
+          "url": "https://www.sadanews.ps/en/news/354596.html",
+          "title": "Coffee Right After Waking Up.. 3 Potential Effects Worth Noting",
+          "publisher": "وكالة صدى نيوز",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf2Ua7pkrDD6147SiwghXrsUaXKBWNWKId_na8ec_Yjrsjpc4u6ldWb8_NK_w"
+        }
+      ]
+    },
+    {
+      "query": "jordan leasure",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T22:50:00Z",
+      "related_news_urls": [
+        "https://www.mlbtraderumors.com/2026/11/white-sox-trade-jordan-leasure-to-phillies.html",
+        "https://sports.yahoo.com/videos/white-sox-dfa-jordan-leasure-193716578.html",
+        "https://southsideshowdown.com/white-sox-latest-roster-move-cements-jordan-leasure-s-downfall-after-promising-2025-season"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFpjsulKXdz3kj_sNrK2dZmuZzPO8-0GK244-yQSsFQwV0nOKNcHUMu8fBsWs",
+      "image_credit": "MLB Trade Rumors",
+      "news": [
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/white-sox-trade-jordan-leasure-to-phillies.html",
+          "title": "White Sox Trade Jordan Leasure To Phillies",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFpjsulKXdz3kj_sNrK2dZmuZzPO8-0GK244-yQSsFQwV0nOKNcHUMu8fBsWs"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/white-sox-dfa-jordan-leasure-193716578.html",
+          "title": "White Sox DFA Jordan Leasure Following Injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9xL8bHrSVYjtozgJ4_kzl2Th-WwQ7HB2YYDbzW4yCzf0TAhrXKX7TTYbrZAE"
+        },
+        {
+          "url": "https://southsideshowdown.com/white-sox-latest-roster-move-cements-jordan-leasure-s-downfall-after-promising-2025-season",
+          "title": "White Sox latest roster move cements Jordan Leasure’s downfall after promising 2025 season",
+          "publisher": "Southside Showdown",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-hObEoYDo8gf1HGAHN3Bu6rotEk4W7-ldDAbV5bqobdIUDKat01L-VoeP79w"
+        }
+      ]
+    },
+    {
+      "query": "feister brothers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T22:40:00Z",
+      "related_news_urls": [
+        "https://www.cantonrep.com/story/sports/high-school/fridaynightohio/2026/11/19/massillon-football-feister-brothers-ohsaa-playoffs-eligibility/92629387007/",
+        "https://www.usatoday.com/story/sports/high-school/football/2026/11/20/massillon-brayton-brydon-feister-father-files-appeal-ohsaa-suspension/92881786007/",
+        "https://www.cleveland.com/highschoolsports/2026/11/massillons-feister-brothers-out-against-bishop-watterson-ohsaa-hands-down-suspension.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoE-hXTYWURVNEDGOJtupyShyt0PongwcJSuHa-GvszBt2ki2SCHyBO5kIN0",
+      "image_credit": "Canton Repository",
+      "news": [
+        {
+          "url": "https://www.cantonrep.com/story/sports/high-school/fridaynightohio/2026/11/19/massillon-football-feister-brothers-ohsaa-playoffs-eligibility/92629387007/",
+          "title": "OHSAA suspends Feister brothers ahead of Massillon football showdown game",
+          "publisher": "Canton Repository",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoE-hXTYWURVNEDGOJtupyShyt0PongwcJSuHa-GvszBt2ki2SCHyBO5kIN0"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/20/massillon-brayton-brydon-feister-father-files-appeal-ohsaa-suspension/92881786007/",
+          "title": "Feister family takes OHSAA back to court after latest Massillon (OH) suspensions",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2PioHe2EoFuthvVR27s51hcwtW_WMo8lKRDXZclQcsOtkvFG2N1MLNS9z8g"
+        },
+        {
+          "url": "https://www.cleveland.com/highschoolsports/2026/11/massillons-feister-brothers-out-against-bishop-watterson-ohsaa-hands-down-suspension.html",
+          "title": "Feister brothers out for Massillon as OHSAA investigates transfer",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3vFyQVmtzqzhHCDFR4Ml-1b01rOaxx7Bq2hdEXgKdB_3ZqsotyC0YvrdxrGE"
+        }
+      ]
+    },
     {
       "query": "dayton basketball",
       "approx_searches": "500+",
@@ -38,321 +353,6 @@
           "publisher": "University of Utah Athletics",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTd7t5-psWZvsiyZqV6aWxeoDxSWPbpvDDsjrTCNgSUfHhfT-TR9LhIUpsmnkk"
-        }
-      ]
-    },
-    {
-      "query": "clemson vs duke",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T22:30:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/clemson-duke-prediction-odds-time-2026-week-12-college-football-friday-picks-best-bets/",
-        "https://sports.yahoo.com/articles/duke-vs-clemson-live-updates-220124436.html",
-        "https://www.tigernet.com/clemson-football/story/clemson-vs-duke-prediction-will-the-tigers-give-nolan-hauser-a-pat-to-kick-25061"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxRXaq47Er06-9bIX9fsXryUMgA39upl9kM_8-EJfGocTw9l5oeS0LcjqbKGE",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/clemson-duke-prediction-odds-time-2026-week-12-college-football-friday-picks-best-bets/",
-          "title": "Clemson vs. Duke prediction, odds, time: Week 12 college football Friday picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxRXaq47Er06-9bIX9fsXryUMgA39upl9kM_8-EJfGocTw9l5oeS0LcjqbKGE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/duke-vs-clemson-live-updates-220124436.html",
-          "title": "Duke vs. Clemson live updates: Score, highlights, predictions, analysis",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3uq3Wv4obBH48xF3q0jZzHsADGsKct_rSL7aKnQ5ZHfV5Td75e51PmNZ7Mdc"
-        },
-        {
-          "url": "https://www.tigernet.com/clemson-football/story/clemson-vs-duke-prediction-will-the-tigers-give-nolan-hauser-a-pat-to-kick-25061",
-          "title": "Clemson vs Duke Prediction: Will the Tigers give Nolan Hauser a PAT to kick?",
-          "publisher": "TigerNet",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQbWGIp-ulOCemvMTwUdB1ysQcLcNGiRzNqH3XfdjRtCC925om2VIsvxhUHsA"
-        }
-      ]
-    },
-    {
-      "query": "royce lewis",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-20T22:20:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/royce-lewis-dodgers-twins-trade",
-        "https://www.mlbtraderumors.com/2026/11/dodgers-acquire-royce-lewis.html",
-        "https://www.cbssports.com/fantasy/baseball/news/dodgers-royce-lewis-shipped-to-dodgers/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy5MHPw0Bw-aTsZ1eynCjkn65ocdQBIbLqe7gIJOhau5BOYdW6rKFcborTEPo",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/royce-lewis-dodgers-twins-trade",
-          "title": "Dodgers acquire INF Royce Lewis from Twins (source)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy5MHPw0Bw-aTsZ1eynCjkn65ocdQBIbLqe7gIJOhau5BOYdW6rKFcborTEPo"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/dodgers-acquire-royce-lewis.html",
-          "title": "Twins, Dodgers Swap Royce Lewis For Bobby Miller",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQnih0D6AGLieQSW3KMk9pKJcYB_SwHngBov093VifMTcs9a8PgI5Qhp3Vtv8"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/baseball/news/dodgers-royce-lewis-shipped-to-dodgers/",
-          "title": "Dodgers' Royce Lewis: Shipped to Dodgers",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0iNUZe3vMUHksUzV48_yojb9Rv3zaGY5kvvV1Q2bCQJ11VazacsLKdePbiPc"
-        }
-      ]
-    },
-    {
-      "query": "luis gil",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T22:20:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/yankees-non-tender-decisions-2026",
-        "https://www.mlbtraderumors.com/2026/11/yankees-to-non-tender-fernando-cruz.html",
-        "https://sports.yahoo.com/articles/yankees-cut-ties-two-players-222816575.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdjhVK8yvsurr-g7MfzxSype0yqpl0yKlCZlmEGDC-dPDIpOyytb9FLXLJKAE",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/yankees-non-tender-decisions-2026",
-          "title": "Yankees non-tender former Rookie of the Year Luis Gil, reliever Fernando Cruz (reports)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdjhVK8yvsurr-g7MfzxSype0yqpl0yKlCZlmEGDC-dPDIpOyytb9FLXLJKAE"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/yankees-to-non-tender-fernando-cruz.html",
-          "title": "Yankees Non-Tender Fernando Cruz, Luis Gil",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRo2fGslhF6N0IKPqy-pX8oaZt0Ps2UXNLbhWmvj_8RUPOSV_w849xy9ZX3wBk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/yankees-cut-ties-two-players-222816575.html",
-          "title": "Yankees cut ties with two players, including former Rookie of the Year",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX3e4rp4vLT06qDR3SRuiA_UbsSMhAUtCwbhNuq2uTdFd4ZV14ZQYha78S85Y"
-        }
-      ]
-    },
-    {
-      "query": "utah basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T22:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401906867",
-        "https://www.on3.com/teams/texas-longhorns/news/relief-syndrome-there-was-some-of-that-texas-mens-basketball-southern-utah-sean-miller/",
-        "https://247sports.com/college/texas/article/longhorn-confidential-texas-defense-gives-out-cookies-and-milk-david-punchs-breakout-game-and-more-293016336/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmhaKCWaXI5vkFqZ5qis4Ybi9nhl8CWLLmsOdbe7uToGtB7ihI79fxvtL9Y80",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401906867",
-          "title": "Texas 92-68 Southern Utah (Nov 19, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmhaKCWaXI5vkFqZ5qis4Ybi9nhl8CWLLmsOdbe7uToGtB7ihI79fxvtL9Y80"
-        },
-        {
-          "url": "https://www.on3.com/teams/texas-longhorns/news/relief-syndrome-there-was-some-of-that-texas-mens-basketball-southern-utah-sean-miller/",
-          "title": "Relief syndrome? There was 'some of that' for Texas men's basketball Thursday",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFLcxoETuRMBWbiFngOAe0I7N4v76scwYc0B4rxD7rC4aBCIjqfgM66gfhB_E"
-        },
-        {
-          "url": "https://247sports.com/college/texas/article/longhorn-confidential-texas-defense-gives-out-cookies-and-milk-david-punchs-breakout-game-and-more-293016336/",
-          "title": "Longhorn Confidential: Texas' defense gives out 'cookies and milk,' David Punch's breakout game and more",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVwNqrvaSBEGf1uf1pwrIBigvV_Fia4ZaiU3Uaa1bd676rkovem-Wr_QJ-VD8"
-        }
-      ]
-    },
-    {
-      "query": "retirement age",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T22:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/currencies/articles/claim-social-security-62-check-095339976.html",
-        "https://www.cleveland.com/news/2026/11/social-security-retirement-age-change-here-are-the-important-date-to-know-with-2027-update.html",
-        "https://247wallst.com/personal-finance/2026/11/20/claimed-at-62-and-regret-it-at-67-you-can-switch-the-checks-off-and-earn-8-a-year-until-70-nothing-has-to-be-paid-back-and-your-spouses-benefit-on-your-record-stops-too/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWode2naO3Hr3foYisVdACMOiUzMeYlZwDT8Ka6lLG-ZDAcdlM0_0Pj1_smkw",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/currencies/articles/claim-social-security-62-check-095339976.html",
-          "title": "Claim Social Security at 62 and the Check Is 70% of the Full Amount. Wait Until 70 and It’s 124%. Here’s the Table for a Retiree Whose Pension Covers the Basics",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWode2naO3Hr3foYisVdACMOiUzMeYlZwDT8Ka6lLG-ZDAcdlM0_0Pj1_smkw"
-        },
-        {
-          "url": "https://www.cleveland.com/news/2026/11/social-security-retirement-age-change-here-are-the-important-date-to-know-with-2027-update.html",
-          "title": "Social Security retirement age change: Here are the important date to know with 2027 update",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbagSHxtQdZE1-UqJmQFbX9jkTjvfm8sCOAy8gq6du0edTd9rg8I3mGQW-9q8"
-        },
-        {
-          "url": "https://247wallst.com/personal-finance/2026/11/20/claimed-at-62-and-regret-it-at-67-you-can-switch-the-checks-off-and-earn-8-a-year-until-70-nothing-has-to-be-paid-back-and-your-spouses-benefit-on-your-record-stops-too/",
-          "title": "Claimed at 62 and Regret It? At 67 You Can Switch the Checks Off and Earn 8% a Year Until 70. Nothing Has to Be Paid Back, and Your Spouse's Benefit on Your Record Stops Too",
-          "publisher": "24/7 Wall St.",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThonBQdPMDyCMhXrEfSzL6pEXqYIjoihwp24OxqyVXPTA8aeI4zS_0cOYp6H8"
-        }
-      ]
-    },
-    {
-      "query": "franklin graham",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T22:10:00Z",
-      "related_news_urls": [
-        "https://www.dallasnews.com/news/faith/article/judge-blocks-highland-park-united-name-22540233.php",
-        "https://www.umnews.org/en/news/judge-restricts-use-of-highland-park-name",
-        "https://www.dmagazine.com/frontburner/2026/11/highland-park-umc-pastor-disappointing-news-on-hpmc-tro/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0cE6VSL31uddFPbJbA_GrafsZLuekyZugGSGMvZeb3gHnrF2R9SWaQTJ3URQ",
-      "image_credit": "Dallas News",
-      "news": [
-        {
-          "url": "https://www.dallasnews.com/news/faith/article/judge-blocks-highland-park-united-name-22540233.php",
-          "title": "Judge temporarily blocks United Methodist congregation from using Highland Park United Methodist name",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0cE6VSL31uddFPbJbA_GrafsZLuekyZugGSGMvZeb3gHnrF2R9SWaQTJ3URQ"
-        },
-        {
-          "url": "https://www.umnews.org/en/news/judge-restricts-use-of-highland-park-name",
-          "title": "Judge restricts use of Highland Park name",
-          "publisher": "UM News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrKQnyi69-cXi9QdozhrDwbc1MbMC_XjDXu8K29XMZo4eGpZXOj0796oS7mQ8"
-        },
-        {
-          "url": "https://www.dmagazine.com/frontburner/2026/11/highland-park-umc-pastor-disappointing-news-on-hpmc-tro/",
-          "title": "Highland Park UMC Pastor: ‘Disappointing’ News on HPMC TRO",
-          "publisher": "D Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY3X_ie6MC1e5aeSNoIa931KhhRTy1d32W7dn7kkSCe2Hu6r_zyxdD79mH8wI"
-        }
-      ]
-    },
-    {
-      "query": "scott wiener",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T22:10:00Z",
-      "related_news_urls": [
-        "https://nymag.com/intelligencer/article/san-francisco-congressional-earthquake-pelosi-scott-weiner-ai-politics.html",
-        "https://sfbaytimes.com/state-senator-scott-wiener-participated-in-congressional-new-member-orientation-in-d-c/",
-        "https://abc7news.com/live-updates/live-california-election-2026-updates-what-voters-need-know-midterms-governors-race-prop-40-bay-area-contests/19969764/entry/20008522/?userab=abcn_article_nfy_v2-691*v2_model_enabled-3729,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,abcn_verts_postmvp_ux-672*variant_a_control-3589,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_content_rec_v2-703*variant_b_content_recs-3789,otv_web_live-581*variant_b_live_redesign-2511,follow_otv_on_google-683*variant_b_share_drop_down-3661,otvlink_abcnnav-576*variant_c_localnews-3316,abcn_verts_duration_badge-748*variant_b_no_badge-4002"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVWN8pUYQXtDWTsrMEmCNNIQIzBB_hYGlPb8pvQ5xDpYAe_RBf7Uj-cQTKx2Q",
-      "image_credit": "New York Magazine",
-      "news": [
-        {
-          "url": "https://nymag.com/intelligencer/article/san-francisco-congressional-earthquake-pelosi-scott-weiner-ai-politics.html",
-          "title": "San Francisco’s Congressional Earthquake",
-          "publisher": "New York Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVWN8pUYQXtDWTsrMEmCNNIQIzBB_hYGlPb8pvQ5xDpYAe_RBf7Uj-cQTKx2Q"
-        },
-        {
-          "url": "https://sfbaytimes.com/state-senator-scott-wiener-participated-in-congressional-new-member-orientation-in-d-c/",
-          "title": "State Senator Scott Wiener Participated in Congressional New Member Orientation in D.C.",
-          "publisher": "San Francisco Bay Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpV38B7Ll8mrpTyCVb0O2fej85HAZKIxjqgIULSeIfaffE4gR6FlGRCZ6_j-M"
-        },
-        {
-          "url": "https://abc7news.com/live-updates/live-california-election-2026-updates-what-voters-need-know-midterms-governors-race-prop-40-bay-area-contests/19969764/entry/20008522/?userab=abcn_article_nfy_v2-691*v2_model_enabled-3729,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,abcn_verts_postmvp_ux-672*variant_a_control-3589,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_content_rec_v2-703*variant_b_content_recs-3789,otv_web_live-581*variant_b_live_redesign-2511,follow_otv_on_google-683*variant_b_share_drop_down-3661,otvlink_abcnnav-576*variant_c_localnews-3316,abcn_verts_duration_badge-748*variant_b_no_badge-4002",
-          "title": "Who will fill Nancy Pelosi's congressional seat?",
-          "publisher": "ABC7 Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEni47ad2guYUtvs-6ONKoL5AT6e5NncWREXrWFmoj6_HpGnqiN_cXr_f6iM4"
-        }
-      ]
-    },
-    {
-      "query": "coosawattee river resort",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T22:10:00Z",
-      "related_news_urls": [
-        "https://www.11alive.com/article/news/local/ellijay-battle-fire-spread-across-multiple-streets-coosawattee-river-resort/85-9c10417c-d644-451a-a776-92e1cdbcc1df",
-        "https://www.fox5atlanta.com/news/residents-asked-leave-homes-after-camper-fire-spreads-gilmer-county",
-        "https://www.atlantanewsfirst.com/2026/11/20/camper-fire-spreading-toward-homes-ellijay-officials-say/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXP6aOSqbMeFw5w_uFVW7bcRBH3Z1h6gekGVC9bIh2gPvbt-ghQtiZuoVKR5c",
-      "image_credit": "11Alive.com",
-      "news": [
-        {
-          "url": "https://www.11alive.com/article/news/local/ellijay-battle-fire-spread-across-multiple-streets-coosawattee-river-resort/85-9c10417c-d644-451a-a776-92e1cdbcc1df",
-          "title": "Ogden Road shut down in Gilmer County as crews battle fire spreading across multiple streets",
-          "publisher": "11Alive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXP6aOSqbMeFw5w_uFVW7bcRBH3Z1h6gekGVC9bIh2gPvbt-ghQtiZuoVKR5c"
-        },
-        {
-          "url": "https://www.fox5atlanta.com/news/residents-asked-leave-homes-after-camper-fire-spreads-gilmer-county",
-          "title": "Spreading camper fire prompts urgent evacuations in Ellijay",
-          "publisher": "FOX 5 Atlanta",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuZ_3Fqp0PoIa2-nDLsjZ4es1IlqXvSRTS345_b3djCjxf3HdwGTqLRvSNrss"
-        },
-        {
-          "url": "https://www.atlantanewsfirst.com/2026/11/20/camper-fire-spreading-toward-homes-ellijay-officials-say/",
-          "title": "Camper fire spreading toward homes in Ellijay, officials say",
-          "publisher": "Atlanta News First",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbIiqhkeytpI94ukFy6eFMWHHrOK4R9L9UVKyh-9nKtfNCIoYGe1tk6ZtiSvI"
-        }
-      ]
-    },
-    {
-      "query": "iowa state vs ucf",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-20T22:00:00Z",
-      "related_news_urls": [
-        "https://ucfknights.com/news/2026/11/19/ucfisu",
-        "https://sports.yahoo.com/articles/watch-iowa-state-vs-ucf-220000215.html",
-        "https://www.cbssports.com/betting/news/iowa-state-ucf-odds-prediction-time-2026-week-12-college-football-friday-picks-best-bets/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHdu4q0mQboO7IzFKvw8awDYkbc-LlhL4McsZ7OTRyHnQ-EHnmQly6xKtbbc",
-      "image_credit": "UCF Athletics",
-      "news": [
-        {
-          "url": "https://ucfknights.com/news/2026/11/19/ucfisu",
-          "title": "Football vs. Iowa State | Weather and Gameday Updates",
-          "publisher": "UCF Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHdu4q0mQboO7IzFKvw8awDYkbc-LlhL4McsZ7OTRyHnQ-EHnmQly6xKtbbc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-iowa-state-vs-ucf-220000215.html",
-          "title": "How to watch Iowa State vs UCF: Live stream NCAA, College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUuAXjZNPAYxYju4YaLyFtGY743H8kNRVMb7udKkh_xEYXFsOSXAkLG_xFx4k"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/iowa-state-ucf-odds-prediction-time-2026-week-12-college-football-friday-picks-best-bets/",
-          "title": "Iowa State vs. UCF odds, prediction, time: Week 12 college football Friday picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiz71HUjDk8Hz1UOEWx2NzdC8GE-zSoMr_QuozdP33lY3LruZYePH6FEYMNns"
         }
       ]
     }
