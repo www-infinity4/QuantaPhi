@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T12:34:18.137346Z",
+  "checked_at": "2026-11-20T13:01:20.342357Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "marketwatch",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T12:30:00Z",
+      "related_news_urls": [
+        "https://www.marketwatch.com/story/heres-what-happened-next-after-previous-times-the-s-p-500-losing-streak-reached-six-sessions-13ff7704",
+        "https://richtv.io/news/sp-500s-losing-streak-may-reach-six-sessions-as-jj-advances-two-products",
+        "https://www.wsj.com/finance/stocks/two-big-debuts-fail-to-boost-stocks-b68b79b1"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0s04eiyf4gOBIEELMdqntbLwEzj13sWM4VG_-KPzCx_NdoCrXf9kPdfPkEDw",
+      "image_credit": "MarketWatch",
+      "news": [
+        {
+          "url": "https://www.marketwatch.com/story/heres-what-happened-next-after-previous-times-the-s-p-500-losing-streak-reached-six-sessions-13ff7704",
+          "title": "Here’s what happened next after previous times the S&P 500 losing streak reached six sessions",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0s04eiyf4gOBIEELMdqntbLwEzj13sWM4VG_-KPzCx_NdoCrXf9kPdfPkEDw"
+        },
+        {
+          "url": "https://richtv.io/news/sp-500s-losing-streak-may-reach-six-sessions-as-jj-advances-two-products",
+          "title": "S&P 500’s losing streak may reach six sessions as J&J advances two pro…",
+          "publisher": "Rich Picks Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5DXIgI-alebP04qzIROGR79Egqj8B8i69RoSN5VBn9Qv5Ub6PkZIuY_ypxjU"
+        },
+        {
+          "url": "https://www.wsj.com/finance/stocks/two-big-debuts-fail-to-boost-stocks-b68b79b1",
+          "title": "Two Big Debuts Fail To Boost Stocks",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75Q1FbrLaJ0D3JEAxCR4kVUw9715rvLmtHTOn_olg9P-oZQ7YijUhjhwSMzM"
+        }
+      ]
+    },
+    {
+      "query": "sat",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T12:30:00Z",
+      "related_news_urls": [
+        "https://edsource.org/2026/uc-regents-debate-sat/770804",
+        "https://www.yahoo.com/news/politics/articles/uc-must-bring-back-academic-030954739.html",
+        "https://www.kqed.org/news/12110099/as-uc-regents-reconsider-sat-requirements-students-rally-for-test-free-admissions"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkuD4PXh5rtPPEMBB-HxU2xEo1BJYbGAVo3iztFv0l64b-2GoiUlog2v_ifRM",
+      "image_credit": "EdSource",
+      "news": [
+        {
+          "url": "https://edsource.org/2026/uc-regents-debate-sat/770804",
+          "title": "Should admission to University of California require SAT exams? Researchers give competing views",
+          "publisher": "EdSource",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkuD4PXh5rtPPEMBB-HxU2xEo1BJYbGAVo3iztFv0l64b-2GoiUlog2v_ifRM"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/uc-must-bring-back-academic-030954739.html",
+          "title": "UC must bring back academic standards and stop pandering to campus crazies",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCDSdwmYhQ3KVes4DSWyGsm9GEVmLXOfg6UsIwOil8Vt5vpF4nRe5aiLNPHuQ"
+        },
+        {
+          "url": "https://www.kqed.org/news/12110099/as-uc-regents-reconsider-sat-requirements-students-rally-for-test-free-admissions",
+          "title": "As UC Regents Reconsider SAT Requirements, Students Rally for Test-Free Admissions",
+          "publisher": "KQED",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0kwyXCMt4csa2maM06j8opESK7AL0XKEtbM5sONJsytZPY2-VbMnrVmPOlXQ"
+        }
+      ]
+    },
     {
       "query": "regions",
       "approx_searches": "200+",
@@ -42,43 +112,8 @@
       ]
     },
     {
-      "query": "anthony ippolito",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T12:20:00Z",
-      "related_news_urls": [
-        "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/",
-        "https://www.npr.org/2026/11/20/nx-s1-5691846/i-play-rocky-chronicles-sylvester-stallones-unconventional-road-to-stardom",
-        "https://www.hollywoodreporter.com/movies/movie-news/i-play-rocky-stars-rocky-producer-50th-anniversary-1236758733/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHzZAMq1Da1-_MtJxA99UToYuETyIiF185b_QNNiz5pA2atuK2m6KAZ5zTUQ",
-      "image_credit": "Rotten Tomatoes",
-      "news": [
-        {
-          "url": "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/",
-          "title": "AnnaSophia Robb on I Play Rocky and Representing the Underdogs",
-          "publisher": "Rotten Tomatoes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHzZAMq1Da1-_MtJxA99UToYuETyIiF185b_QNNiz5pA2atuK2m6KAZ5zTUQ"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/20/nx-s1-5691846/i-play-rocky-chronicles-sylvester-stallones-unconventional-road-to-stardom",
-          "title": "'I Play Rocky' chronicles Sylvester Stallone's unconventional road to stardom",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/i-play-rocky-stars-rocky-producer-50th-anniversary-1236758733/",
-          "title": "‘I Play Rocky’ Stars Unite With Original ‘Rocky’ Producer for Film’s 50th Anniversary Celebration",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMcXKxD2L5vjCUU32eyMZhZDMI6tf8JaqvWqe-hrViItrw7CLAjNJP0-8sh5Q"
-        }
-      ]
-    },
-    {
       "query": "quinn hughes injury",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-20T12:20:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/athletic/7796855/2026/11/19/quinn-hughes-wild-injury-adam-klapka/",
@@ -113,7 +148,7 @@
     },
     {
       "query": "warren buffett",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-20T12:20:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
@@ -147,37 +182,37 @@
       ]
     },
     {
-      "query": "norovirus",
-      "approx_searches": "100+",
+      "query": "anthony ippolito",
+      "approx_searches": "500+",
       "published_at": "2026-11-20T12:20:00Z",
       "related_news_urls": [
-        "https://bismarcktribune.com/obituaries/article_e2940421-233d-5102-96b8-e3394b75773c.html",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-200448370.html",
-        "https://krocnews.com/frank-fritz-estate-battle-ends/"
+        "https://www.inquirer.com/sports/i-play-rocky-movie-paulie-actor-burt-young-stallone-20261120.html",
+        "https://www.npr.org/2026/11/20/nx-s1-5691846/i-play-rocky-chronicles-sylvester-stallones-unconventional-road-to-stardom",
+        "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzNE90DTEV9kPpXysksq-AtgSI4lq68IM7x9caPI154kdIkiWxCeCiQeX7jr4",
-      "image_credit": "The Bismarck Tribune",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0p6SkDvdkVpdfLZOHYuEfPoUXwF-e2182wbrsuFQ7ZpbsM_IqnNDAq-FKOkM",
+      "image_credit": "Inquirer.com",
       "news": [
         {
-          "url": "https://bismarcktribune.com/obituaries/article_e2940421-233d-5102-96b8-e3394b75773c.html",
-          "title": "Rita Marie Mastel",
-          "publisher": "The Bismarck Tribune",
+          "url": "https://www.inquirer.com/sports/i-play-rocky-movie-paulie-actor-burt-young-stallone-20261120.html",
+          "title": "He credits Rocky with saving his life. Now Scot Teller is living a dream as Paulie in ‘I Play Rocky’",
+          "publisher": "Inquirer.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzNE90DTEV9kPpXysksq-AtgSI4lq68IM7x9caPI154kdIkiWxCeCiQeX7jr4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0p6SkDvdkVpdfLZOHYuEfPoUXwF-e2182wbrsuFQ7ZpbsM_IqnNDAq-FKOkM"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-200448370.html",
-          "title": "'American Pickers' star Frank Fritz's multimillion-dollar estate fight heads to trial",
-          "publisher": "Yahoo",
+          "url": "https://www.npr.org/2026/11/20/nx-s1-5691846/i-play-rocky-chronicles-sylvester-stallones-unconventional-road-to-stardom",
+          "title": "'I Play Rocky' chronicles Sylvester Stallone's unconventional road to stardom",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsGEww2ojwm-ndommS4inFwaLkyUtbqSDZ15MaYCiCTE8vNqFhNeoXSA6uTss"
+          "image_url": null
         },
         {
-          "url": "https://krocnews.com/frank-fritz-estate-battle-ends/",
-          "title": "Fight Over 'American Pickers' Star's Estate Reaches Unexpected Ending",
-          "publisher": "KROC-AM",
+          "url": "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/",
+          "title": "AnnaSophia Robb on I Play Rocky and Representing the Underdogs",
+          "publisher": "Rotten Tomatoes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTho5_pk8tlxliUGuQ3n75F1BcPXO0Mcrxoyi8_I9KQeAf_NjWHSpt4EOFoZEk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHzZAMq1Da1-_MtJxA99UToYuETyIiF185b_QNNiz5pA2atuK2m6KAZ5zTUQ"
         }
       ]
     },
@@ -195,7 +230,7 @@
       "news": [
         {
           "url": "https://www.nytimes.com/2026/11/20/opinion/colom-mississippi-grisham.html",
-          "title": "Opinion | John Grisham: I Want to Shake Scott Colom’s Hand",
+          "title": "Opinion | John Grisham: The Meaning of Scott Colom’s Victory",
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMSS8ynpT6UM5uAHbdT8kUfjKu7_8LFh0Bq49tdFUdJX7QR34pKADID-1Vds"
@@ -217,43 +252,8 @@
       ]
     },
     {
-      "query": "super el nino weather transition",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T12:10:00Z",
-      "related_news_urls": [
-        "https://6abc.com/post/winter-weather-outlook-philadelphia-pa-nj-de-forecast/20053543/",
-        "https://www.bloomberg.com/news/articles/2026-11-20/jpmorgan-warns-long-tail-of-el-nino-will-hurt-crops-water-supplies",
-        "https://www.cnn.com/2026/11/19/weather/el-nino-hurricanes-storms-la-nina-climate"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlX9EUcUzHaUOxqnfS-qmgcUCUwbpYrJSqzBd5lhEoXx8a7mE-mrh9qmIFdC0",
-      "image_credit": "6abc Philadelphia",
-      "news": [
-        {
-          "url": "https://6abc.com/post/winter-weather-outlook-philadelphia-pa-nj-de-forecast/20053543/",
-          "title": "Will historic El Niño deliver snowy winter in Philly, Pa., NJ and DE? Experts weigh In",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlX9EUcUzHaUOxqnfS-qmgcUCUwbpYrJSqzBd5lhEoXx8a7mE-mrh9qmIFdC0"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-20/jpmorgan-warns-long-tail-of-el-nino-will-hurt-crops-water-supplies",
-          "title": "JPMorgan Warns Long Tail of El Niño Will Hurt Crops, Water Supplies",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4al9CasnqWcdmaHtWgBYh6VjThb00wBAoZM1NR7oE5o0WolR8OjrNkZDrLBA"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/19/weather/el-nino-hurricanes-storms-la-nina-climate",
-          "title": "Super El Niño will vanish by next hurricane season and that could spell danger",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt2HdA6xDqa2shede9NUV_FKTeppNdEGbaftFEsR7mxfpDU0BAYFAQISwAE3c"
-        }
-      ]
-    },
-    {
       "query": "rikers island",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-20T12:00:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/us-news/2026/nov/20/rikers-island-closure-plan-mamdani",
@@ -328,7 +328,7 @@
       "related_news_urls": [
         "https://people.com/bo-derek-shares-sweet-idea-husband-john-corbett-had-for-her-birthday-exclusive-12240640",
         "https://www.aol.com/articles/day-history-happy-birthday-bo-105613000.html",
-        "https://www.boredpanda.com/bo-derek-bio-and-career-highlights/"
+        "https://www.hellomagazine.com/us/936185/bo-derek-turns-70-see-her-today-47-years-on-from-iconic-10-beach-moment/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZUoJhpRszhHD8nGey11iub0f1cDq5Dsz4dJlHTDoDErNqp3rmlwjgcAl7TnQ",
       "image_credit": "People.com",
@@ -348,11 +348,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM3YSn9OxdflBrwVtIA-DCYVVMv_EKGhQBeKdljBnB--o7fafHnU-qNCRe3C8"
         },
         {
-          "url": "https://www.boredpanda.com/bo-derek-bio-and-career-highlights/",
-          "title": "Bo Derek: Bio And Career Highlights",
-          "publisher": "Bored Panda",
+          "url": "https://www.hellomagazine.com/us/936185/bo-derek-turns-70-see-her-today-47-years-on-from-iconic-10-beach-moment/",
+          "title": "Bo Derek turns 70 – see her today 47 years on from iconic '10' beach moment",
+          "publisher": "HELLO!",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxLp6Y115uSi_6tWC5fEOlbueFxd7prFpqgjxHLqLAzqs31cBEk_n0ri69UbY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZIY8WHPORxh9vH0MsKDnatAocmK6H3rDhPAC7CS16CrVEV7KrnIhpRdUfDa4"
         }
       ]
     }
