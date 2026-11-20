@@ -45,3 +45,36 @@ if(status){
   if(starcraft)starcraft.textContent='StarCraftCo context status unavailable; no successful scan is claimed.';
  });
 }
+
+
+const starReferences=document.getElementById('starCraftPublicObservations');
+if(starReferences){
+ const list=document.getElementById('starCraftPublicObservationList');
+ const note=document.getElementById('starCraftPublicObservationStatus');
+ fetch('/api/bubbles/public-x/context?account=StarCraftCo',{cache:'no-store'})
+ .then(r=>r.ok?r.json():Promise.reject(Error('HTTP '+r.status)))
+ .then(data=>{
+  if(!list||!note)return;
+  const items=Array.isArray(data.observations)?data.observations:[];
+  const seen=new Set();
+  for(const item of items){
+   if(item?.account!=='StarCraftCo'||item?.authority!=='reference_only'||item?.audience!=='general'||item?.source_method!=='tinyfish_public_browser')continue;
+   const id=String(item.post_id||'');
+   if(!/^\d{15,22}$/.test(id)||item.url!=='https://x.com/StarCraftCo/status/'+id||seen.has(id))continue;
+   const summary=String(item.summary||'').trim();
+   if(!summary||summary.length>240)continue;
+   seen.add(id);
+   const li=document.createElement('li');
+   const link=document.createElement('a');
+   link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';
+   link.textContent='Open StarCraftCo post '+id;
+   const description=document.createElement('p');
+   description.textContent=summary+' · Public-browser reference, not a live X feed';
+   li.append(link,description);
+   list.appendChild(li);
+  }
+  note.textContent=seen.size?'Saved reviewed public references: '+seen.size+'. Cloudflare scheduled X scans are tracked separately.':
+    'No verified public references are available here. '+(data.observationState==='storage_unavailable'?'Reference storage is unavailable.':'The scheduled public reader may still be blocked.');
+ })
+ .catch(()=>{if(note)note.textContent='Public reference lookup unavailable. No new X scan or import is claimed.';});
+}
