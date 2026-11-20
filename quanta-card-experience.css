@@ -324,3 +324,15 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-pcla-points{margin:0;padding-left:22px;line-height:1.5}.qcx-pcla-points li{margin:7px 0}
 .qcx-pcla-links{display:flex;flex-wrap:wrap;gap:12px}.qcx-pcla-links .qcx-link{min-height:44px;display:inline-flex;align-items:center}
 .qcx-art.qcx-small[data-brand="pcla-picocela"] .qcx-pcla-company{font-size:25px}
+
+/* First-party Copilot draft card, not an authenticated provider mirror. */
+.iqc-copilot-composer{display:grid;gap:10px;min-width:0;padding:14px;border:1px solid #c7ddec;border-radius:16px;background:#f6fbff;color:#183d57}
+.iqc-copilot-composer h3{margin:0;font:850 18px/1.25 system-ui,sans-serif;color:#163f5b}
+.iqc-copilot-composer .iqc-muted{margin:0;font:500 13px/1.5 system-ui,sans-serif;color:#426071}
+.iqc-copilot-composer .iqc-ai-input{width:100%;min-height:104px;box-sizing:border-box;font-size:16px}
+.iqc-copilot-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;align-items:stretch}
+.iqc-copilot-actions :is(button,a){box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-width:0;min-height:48px;padding:10px 12px;border-radius:12px;text-align:center;font:800 13px/1.35 system-ui,sans-serif;text-decoration:none}
+.iqc-copilot-actions .iqc-copilot-open{color:#fff;background:#075f91;border:1px solid #075f91}
+.iqc-copilot-actions :is(button,a):focus-visible{outline:3px solid #d58b19;outline-offset:3px}
+.iqc-copilot-status{margin:0;font:600 12px/1.5 system-ui,sans-serif;color:#435b6d}
+@media(max-width:360px){.iqc-copilot-actions{grid-template-columns:1fr}}
