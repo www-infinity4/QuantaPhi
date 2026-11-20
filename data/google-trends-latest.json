@@ -3,12 +3,152 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T13:01:20.342357Z",
+  "checked_at": "2026-11-20T13:31:06.906170Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "marketwatch",
+      "query": "ronny hallin passed away",
       "approx_searches": "200+",
+      "published_at": "2026-11-20T13:10:00Z",
+      "related_news_urls": [
+        "https://www.nine.com.au/entertainment/celebrity/ronny-hallin-death-aged-88-laverne-and-shirley-20261120-p61fuj.html",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/laverne-shirley-actress-dead-88-170705349.html",
+        "https://people.com/ronny-hallin-remembered-as-the-unsung-hero-of-the-marshall-family-after-her-death-at-88-12265358"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEsWSRrZJr927ZzZhgy4j6zuKeogi9ai4P5Ko--bKqGqZuI-ZkdyQx35-rkfI",
+      "image_credit": "Nine.com.au",
+      "news": [
+        {
+          "url": "https://www.nine.com.au/entertainment/celebrity/ronny-hallin-death-aged-88-laverne-and-shirley-20261120-p61fuj.html",
+          "title": "’70s star and Happy Days legend dead at 88",
+          "publisher": "Nine.com.au",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEsWSRrZJr927ZzZhgy4j6zuKeogi9ai4P5Ko--bKqGqZuI-ZkdyQx35-rkfI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/laverne-shirley-actress-dead-88-170705349.html",
+          "title": "‘Laverne & Shirley’ actress dead at 88",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4T68tmWeH2kNOlwmiF1c9qCYvXM5J7idI-qAoWwQghoBhiYd7DgPWCH1waL8"
+        },
+        {
+          "url": "https://people.com/ronny-hallin-remembered-as-the-unsung-hero-of-the-marshall-family-after-her-death-at-88-12265358",
+          "title": "Ronny Hallin Remembered as the ‘Unsung Hero of the Marshall Family’ After Her Death at 88",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZ5w5AxvqZ_oC0-Q1xwrpKxn_q7Tj5HQSNZ59TgRXO6WuBypo7C68Ms4Wc1po"
+        }
+      ]
+    },
+    {
+      "query": "france vs spain",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T13:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cx8dv4y3nm8et",
+        "https://www.espn.com/soccer/story/_/id/50539055/england-norway-spain-france-nations-league",
+        "https://www.uefa.com/uefanationsleague/news/02ab-2219b45e1aa6-7834fde41ea1-1000--2026-27-nations-league-quarter-finals-get-to-know-the-eight-/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkMX9Q4B_TPHsgOqwcs5cjr9j2Fbv6f5ZatWkuSzXxVr6yrKvCfeW_S4oilXw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cx8dv4y3nm8et",
+          "title": "Nations League draw LIVE: England and Wales to find out opponents",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkMX9Q4B_TPHsgOqwcs5cjr9j2Fbv6f5ZatWkuSzXxVr6yrKvCfeW_S4oilXw"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50539055/england-norway-spain-france-nations-league",
+          "title": "Nations League quarterfinal draw: England face Norway, Spain to meet France",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvJyBmA4zWQk9rrXzNdaijy_Up-aUcKllSBqRPJ17BOToJBnnENXCY0YZlIQQ"
+        },
+        {
+          "url": "https://www.uefa.com/uefanationsleague/news/02ab-2219b45e1aa6-7834fde41ea1-1000--2026-27-nations-league-quarter-finals-get-to-know-the-eight-/",
+          "title": "2026/27 Nations League quarter-finals: Get to know the eight contenders",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbb0tw81wOCKwwWaA9XvjQMySswCN81kjWinsQtdPhEw2D1Wh4vQkHA75y7Q"
+        }
+      ]
+    },
+    {
+      "query": "vix index",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T13:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+        "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/it-s-getting-more-and-more-volatile-for-stocks-ROSooZcFbkLpYiu56lWF"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtFzxamjX-wQ0HKRTmXKVR6XqvfraOA-vFmsBHpI7Z3l3FNs23GkiQ48D6Xxc",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+          "title": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtFzxamjX-wQ0HKRTmXKVR6XqvfraOA-vFmsBHpI7Z3l3FNs23GkiQ48D6Xxc"
+        },
+        {
+          "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
+          "title": "Wall Street's fear gauge touches seven-month high as AI worries mount",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq1ESR5fXEraX1hmJ93NxxWaYFi17ZY7A2XEaEc3LH2vhj_bSFZ2Vm3uUt2og"
+        },
+        {
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/it-s-getting-more-and-more-volatile-for-stocks-ROSooZcFbkLpYiu56lWF",
+          "title": "It’s Getting More and More Volatile for Stocks",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS92LI4aEwMNmHs9GR3K2sah9YJ5TUvK-LC8aAZUJVWKNro75oi2SXuQEfF2k"
+        }
+      ]
+    },
+    {
+      "query": "corey heim",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T12:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/racing/nascar/story/_/id/50513007/heim-drive-no-67-not-no-35-23xi-racing-2027",
+        "https://www.nascar.com/news-media/2026/11/17/cup-series-corey-heim-to-drive-no-67-toyota-23xi-racing-2027/",
+        "https://www.jayski.com/2026/11/17/corey-heim-to-drive-no-67-in-2027/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2IV-Eum9nXui-KaFF1ENXWkZjNGiN0WXWoVPMVA7wDig9E0gGHlRZFOyCCG4",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/racing/nascar/story/_/id/50513007/heim-drive-no-67-not-no-35-23xi-racing-2027",
+          "title": "Corey Heim to drive No. 67, not No. 35, with 23XI Racing in 2027",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2IV-Eum9nXui-KaFF1ENXWkZjNGiN0WXWoVPMVA7wDig9E0gGHlRZFOyCCG4"
+        },
+        {
+          "url": "https://www.nascar.com/news-media/2026/11/17/cup-series-corey-heim-to-drive-no-67-toyota-23xi-racing-2027/",
+          "title": "Corey Heim to drive No. 67 Toyota for 23XI Racing in 2027",
+          "publisher": "NASCAR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3nSVj3lE4smWYccYPCg54Xw3Myf6USCYDrVHT9NO3pxQKi-U2sHjyCrl2GGQ"
+        },
+        {
+          "url": "https://www.jayski.com/2026/11/17/corey-heim-to-drive-no-67-in-2027/",
+          "title": "Corey Heim to drive No. 67 in 2027",
+          "publisher": "Jayski",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaABWSZqqpjVJI6uu0Y1Cvcrpuj4xA-n790E2WqkSc24JcCrzQ2-n8QwrILjI"
+        }
+      ]
+    },
+    {
+      "query": "marketwatch",
+      "approx_searches": "500+",
       "published_at": "2026-11-20T12:30:00Z",
       "related_news_urls": [
         "https://www.marketwatch.com/story/heres-what-happened-next-after-previous-times-the-s-p-500-losing-streak-reached-six-sessions-13ff7704",
@@ -78,71 +218,36 @@
     },
     {
       "query": "regions",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-20T12:20:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/",
-        "https://www.dw.com/en/ukraine-kyiv-targets-krasnodar-refineries-after-felling-kerch-bridge/live-79976877",
-        "https://kyivindependent.com/ukrainian-drones-reportedly-target-oil-hub-in-russias-tatarstan/"
+        "https://www.al.com/news/birmingham/2026/11/regions-is-inviting-the-public-to-its-annual-birmingham-holiday-light-display.html",
+        "https://yellowhammernews.com/regions-bank-christmas-display-returns-to-downtown-birmingham-nov-27/",
+        "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTmeOuc6nvFW7Qlu0adKC13-NLBi_UD9AhnQ18Pb7Py6G56oRJHS7jlubXp5g",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqeLxL_-cvG_5lBCTR-Ww-Oj-zgZEEq0mnRQcDGsKmTh596o5uJR8p4WFE_qc",
+      "image_credit": "AL.com",
       "news": [
+        {
+          "url": "https://www.al.com/news/birmingham/2026/11/regions-is-inviting-the-public-to-its-annual-birmingham-holiday-light-display.html",
+          "title": "Regions is inviting the public to its annual Birmingham holiday light display",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqeLxL_-cvG_5lBCTR-Ww-Oj-zgZEEq0mnRQcDGsKmTh596o5uJR8p4WFE_qc"
+        },
+        {
+          "url": "https://yellowhammernews.com/regions-bank-christmas-display-returns-to-downtown-birmingham-nov-27/",
+          "title": "Regions Bank Christmas display returns to downtown Birmingham Nov. 27",
+          "publisher": "Yellowhammer News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3-gUn2Oj3FmeeZ5-EC98VeR4EJtfNURkffyChHcWppeDy8qoZTUN4d2bNmTE"
+        },
         {
           "url": "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/",
           "title": "More Russian regions limit fuel sales as Ukrainian drone strikes hit refinery output",
           "publisher": "Reuters",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTmeOuc6nvFW7Qlu0adKC13-NLBi_UD9AhnQ18Pb7Py6G56oRJHS7jlubXp5g"
-        },
-        {
-          "url": "https://www.dw.com/en/ukraine-kyiv-targets-krasnodar-refineries-after-felling-kerch-bridge/live-79976877",
-          "title": "Ukraine says it hit refineries in Krasnodar day after striking nearby Kerch bridge",
-          "publisher": "DW.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6DqGYTFRs6k0rUJlrZaK7q0quEg7VtZ4w-UECIcLhkNC2FrOwIYsU2ZuQgQ"
-        },
-        {
-          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-target-oil-hub-in-russias-tatarstan/",
-          "title": "Ukrainian drones reportedly target oil hub in Russia's Tatarstan",
-          "publisher": "The Kyiv Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWW-mVOagsXO_Zu_bQe5OTVZQw1Q9Lsu1XYZfD0bcv3U7nxMklbZn0tiop88"
-        }
-      ]
-    },
-    {
-      "query": "quinn hughes injury",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T12:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7796855/2026/11/19/quinn-hughes-wild-injury-adam-klapka/",
-        "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-exits-in-win-over-flames/",
-        "https://www.tsn.ca/nhl/article/star-defenceman-hughes-leaves-early-vs-flames/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4uESyot5-oG09tivFQQp2jXY_PWP2jwGwXWgSMuoZdZp0Wyz2qZdi5v2pNQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7796855/2026/11/19/quinn-hughes-wild-injury-adam-klapka/",
-          "title": "Wild’s Quinn Hughes leaves game after hit from Adam Klapka: ‘We hope he’s good’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4uESyot5-oG09tivFQQp2jXY_PWP2jwGwXWgSMuoZdZp0Wyz2qZdi5v2pNQ"
-        },
-        {
-          "url": "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-exits-in-win-over-flames/",
-          "title": "Wild's Quinn Hughes exits in win over Flames",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxqgSZLPHAbQxcrpnXlP5XR0t9Ke0RlzOkn5pTJgIPaDM6ZVlR2DYegqYzIQM"
-        },
-        {
-          "url": "https://www.tsn.ca/nhl/article/star-defenceman-hughes-leaves-early-vs-flames/",
-          "title": "Star defenceman Hughes leaves early vs. Flames",
-          "publisher": "TSN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIOQR3w7fx6d4LIgaWeCLcFZPpvtg2AudkIT6azo9sYUMI4GydCX28jQ7El50"
         }
       ]
     },
@@ -182,12 +287,47 @@
       ]
     },
     {
+      "query": "quinn hughes injury",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T12:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7796855/2026/11/19/quinn-hughes-wild-injury-adam-klapka/",
+        "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-exits-in-win-over-flames/",
+        "https://www.tsn.ca/nhl/article/star-defenceman-hughes-leaves-early-vs-flames/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4uESyot5-oG09tivFQQp2jXY_PWP2jwGwXWgSMuoZdZp0Wyz2qZdi5v2pNQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7796855/2026/11/19/quinn-hughes-wild-injury-adam-klapka/",
+          "title": "Wild’s Quinn Hughes leaves game after hit from Adam Klapka: ‘We hope he’s good’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4uESyot5-oG09tivFQQp2jXY_PWP2jwGwXWgSMuoZdZp0Wyz2qZdi5v2pNQ"
+        },
+        {
+          "url": "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-exits-in-win-over-flames/",
+          "title": "Wild's Quinn Hughes exits in win over Flames",
+          "publisher": "Sportsnet.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxqgSZLPHAbQxcrpnXlP5XR0t9Ke0RlzOkn5pTJgIPaDM6ZVlR2DYegqYzIQM"
+        },
+        {
+          "url": "https://www.tsn.ca/nhl/article/star-defenceman-hughes-leaves-early-vs-flames/",
+          "title": "Star defenceman Hughes leaves early vs. Flames",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIOQR3w7fx6d4LIgaWeCLcFZPpvtg2AudkIT6azo9sYUMI4GydCX28jQ7El50"
+        }
+      ]
+    },
+    {
       "query": "anthony ippolito",
       "approx_searches": "500+",
       "published_at": "2026-11-20T12:20:00Z",
       "related_news_urls": [
         "https://www.inquirer.com/sports/i-play-rocky-movie-paulie-actor-burt-young-stallone-20261120.html",
-        "https://www.npr.org/2026/11/20/nx-s1-5691846/i-play-rocky-chronicles-sylvester-stallones-unconventional-road-to-stardom",
+        "https://www.theringer.com/2026/11/20/movies/i-play-rocky-review-sylvester-stallone-biopic",
         "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0p6SkDvdkVpdfLZOHYuEfPoUXwF-e2182wbrsuFQ7ZpbsM_IqnNDAq-FKOkM",
@@ -201,11 +341,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0p6SkDvdkVpdfLZOHYuEfPoUXwF-e2182wbrsuFQ7ZpbsM_IqnNDAq-FKOkM"
         },
         {
-          "url": "https://www.npr.org/2026/11/20/nx-s1-5691846/i-play-rocky-chronicles-sylvester-stallones-unconventional-road-to-stardom",
-          "title": "'I Play Rocky' chronicles Sylvester Stallone's unconventional road to stardom",
-          "publisher": "NPR",
+          "url": "https://www.theringer.com/2026/11/20/movies/i-play-rocky-review-sylvester-stallone-biopic",
+          "title": "‘I Play Rocky’ Will Work You Over (and Over and Over)",
+          "publisher": "The Ringer",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6qAlioCXQcZsTrU5Ne1dSWwu5O1cjQXo1xG6dWPMW5nioDSbia82VNLePpkY"
         },
         {
           "url": "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/",
@@ -213,146 +353,6 @@
           "publisher": "Rotten Tomatoes",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHzZAMq1Da1-_MtJxA99UToYuETyIiF185b_QNNiz5pA2atuK2m6KAZ5zTUQ"
-        }
-      ]
-    },
-    {
-      "query": "john grisham",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/20/opinion/colom-mississippi-grisham.html",
-        "https://www.npr.org/2026/11/19/nx-s1-6047338/bigger-than-barack-obamas-election-scholars-reflect-on-mississippi-senate-race",
-        "https://www.wlbt.com/2026/11/19/reeves-congratulates-senator-elect-colom-who-names-transition-team/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMSS8ynpT6UM5uAHbdT8kUfjKu7_8LFh0Bq49tdFUdJX7QR34pKADID-1Vds",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/20/opinion/colom-mississippi-grisham.html",
-          "title": "Opinion | John Grisham: The Meaning of Scott Colom’s Victory",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMSS8ynpT6UM5uAHbdT8kUfjKu7_8LFh0Bq49tdFUdJX7QR34pKADID-1Vds"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/19/nx-s1-6047338/bigger-than-barack-obamas-election-scholars-reflect-on-mississippi-senate-race",
-          "title": "'Bigger than Barack Obama's election': Scholars reflect on Mississippi Senate race",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.wlbt.com/2026/11/19/reeves-congratulates-senator-elect-colom-who-names-transition-team/",
-          "title": "Reeves congratulates Senator-elect Colom, who names transition team",
-          "publisher": "WLBT",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpUrBWmXG1WJuyr38grh0CyHCxyBZKhvAGAKYbyrSKvDYN6WfY43xA9v6Iwgg"
-        }
-      ]
-    },
-    {
-      "query": "rikers island",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T12:00:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/20/rikers-island-closure-plan-mamdani",
-        "https://apnews.com/article/zohran-mamdani-rikers-island-aaf05ad46f0a999a213f2613fe39f7dc",
-        "https://www.nytimes.com/2026/11/20/nyregion/rikers-island-mamdani-close-2032.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7DXrbRpKHSxE3a82Nrnkd00a8Cqq3YDfAk0dRCNrn8KkC24Ipp5QZbiLQ3g",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/20/rikers-island-closure-plan-mamdani",
-          "title": "Zohran Mamdani unveils plan to close Rikers Island jail complex",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7DXrbRpKHSxE3a82Nrnkd00a8Cqq3YDfAk0dRCNrn8KkC24Ipp5QZbiLQ3g"
-        },
-        {
-          "url": "https://apnews.com/article/zohran-mamdani-rikers-island-aaf05ad46f0a999a213f2613fe39f7dc",
-          "title": "Mamdani sets plan to close NYC’s notorious Rikers Island jail",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQxf3sS8JOXgrOUjx8R_Nnc-VKoIUEY9GONFZ68R43-Na_kezb3bhmBAMuM00"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/20/nyregion/rikers-island-mamdani-close-2032.html",
-          "title": "Rikers Will Stay Open Until 2032 as Mamdani Commits to New Closure Plan",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMXXTJXixsGQ-RAXINYTz9FaCF7Tqg4T0TnyaE71mIBfpXo3C1CDq7MupR_DY"
-        }
-      ]
-    },
-    {
-      "query": "virginia state police",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T12:00:00Z",
-      "related_news_urls": [
-        "https://www.wavy.com/news/local-news/newport-news/southbound-lanes-at-the-mmmbt-reopen-after-closing-due-to-multi-vehicle-crash/",
-        "https://www.yahoo.com/news/articles/southbound-lanes-mmmbt-reopen-closing-211318924.html",
-        "https://www.13newsnow.com/article/traffic/incidents/multi-vehicle-crashes-block-southbound-mmmbt-monday-morning/291-6e49ff0e-5529-4803-8bd2-a9065a773245"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXQvycgwRpqrsqGQv7jXKfcMEK5D2Zo4WTmp_LG3s5GmyrmQNxenWh73wdCu0",
-      "image_credit": "WAVY.com",
-      "news": [
-        {
-          "url": "https://www.wavy.com/news/local-news/newport-news/southbound-lanes-at-the-mmmbt-reopen-after-closing-due-to-multi-vehicle-crash/",
-          "title": "The Virginia State Police responds to multi-vehicle crash at the MMMBT in Newport News",
-          "publisher": "WAVY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXQvycgwRpqrsqGQv7jXKfcMEK5D2Zo4WTmp_LG3s5GmyrmQNxenWh73wdCu0"
-        },
-        {
-          "url": "https://www.yahoo.com/news/articles/southbound-lanes-mmmbt-reopen-closing-211318924.html",
-          "title": "Southbound lanes at the MMMBT reopen after closing due to multi-vehicle crash",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ9eSNezWUNTVtpJbbS1y-JdGVmiJUR83lzsefmbyTNxZqJfYtCEnjMOF8e8o"
-        },
-        {
-          "url": "https://www.13newsnow.com/article/traffic/incidents/multi-vehicle-crashes-block-southbound-mmmbt-monday-morning/291-6e49ff0e-5529-4803-8bd2-a9065a773245",
-          "title": "Multi-vehicle crashes block southbound MMMBT Monday morning",
-          "publisher": "13newsnow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbkbrNrWnlyqQlRyTz2eh_DT6kwfzFjdRS2y-uJwKS__VK6SWele_dy_Lx9KE"
-        }
-      ]
-    },
-    {
-      "query": "bo derek",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T11:50:00Z",
-      "related_news_urls": [
-        "https://people.com/bo-derek-shares-sweet-idea-husband-john-corbett-had-for-her-birthday-exclusive-12240640",
-        "https://www.aol.com/articles/day-history-happy-birthday-bo-105613000.html",
-        "https://www.hellomagazine.com/us/936185/bo-derek-turns-70-see-her-today-47-years-on-from-iconic-10-beach-moment/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZUoJhpRszhHD8nGey11iub0f1cDq5Dsz4dJlHTDoDErNqp3rmlwjgcAl7TnQ",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/bo-derek-shares-sweet-idea-husband-john-corbett-had-for-her-birthday-exclusive-12240640",
-          "title": "Bo Derek Is 70! Here’s the Sweet Way She and John Corbett Celebrate Her Birthdays (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZUoJhpRszhHD8nGey11iub0f1cDq5Dsz4dJlHTDoDErNqp3rmlwjgcAl7TnQ"
-        },
-        {
-          "url": "https://www.aol.com/articles/day-history-happy-birthday-bo-105613000.html",
-          "title": "This day in history: Happy birthday, Bo Derek!",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM3YSn9OxdflBrwVtIA-DCYVVMv_EKGhQBeKdljBnB--o7fafHnU-qNCRe3C8"
-        },
-        {
-          "url": "https://www.hellomagazine.com/us/936185/bo-derek-turns-70-see-her-today-47-years-on-from-iconic-10-beach-moment/",
-          "title": "Bo Derek turns 70 – see her today 47 years on from iconic '10' beach moment",
-          "publisher": "HELLO!",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZIY8WHPORxh9vH0MsKDnatAocmK6H3rDhPAC7CS16CrVEV7KrnIhpRdUfDa4"
         }
       ]
     }
