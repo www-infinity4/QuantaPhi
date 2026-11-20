@@ -34,6 +34,8 @@ blocker: "Kernel egress/Chromium integration CI and independent security review 
 next_action: "Confirm exact-head Docker kernel isolation and Chromium sandbox checks, then independent security review before permitted merge"
 ---
 
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1287
+
 ## Bounded source receipt (2026-10-31)
 
 - Existing original Playwright starter [PR #1286](https://github.com/www-infinity4/QuantaPhi/pull/1286) reused; no TinyFish proprietary source, wallet secrets, browser cookies or provider sessions copied.
