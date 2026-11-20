@@ -156,6 +156,8 @@ async function saveForm(ev){
     const item=normalizeCheck({...values,...meta,id:'check-'+crypto.randomUUID(),checkedAt:new Date(values.checkedAt).toISOString()});
     persist(mergeChecks(checks,[item]));
     ev.currentTarget.reset();
+    // A second historical check must never inherit the previous screenshot.
+    $('screenshot-file').value='';
     $('checked-at').value=localTime();
     message('form-message','Saved one dated observation locally. Export a backup when appropriate.');
   }catch(error){message('form-message','Not saved: '+error.message)}
