@@ -34,3 +34,14 @@ test('browser runs as nonroot and never disables the Chromium sandbox',()=>{
   assert.match(runner,/chromiumSandbox:true/);
   assert.doesNotMatch(runner,/--no-sandbox/);
 });
+
+test('real Tor circuit acceptance is separately gated and cannot bypass normal isolation CI',()=>{
+  const workflow=readFileSync(new URL('../../.github/workflows/open-browser-bridge-policy.yml',import.meta.url),'utf8');
+  assert.match(workflow,/workflow_dispatch:/);
+  assert.match(workflow,/tor-stream-acceptance:/);
+  assert.match(workflow,/if: github\.event_name == 'workflow_dispatch'/);
+  assert.match(workflow,/needs: \[policy, kernel-isolation\]/);
+  assert.match(workflow,/BROWSER_ALLOWED_HOSTS=example\.com/);
+  assert.match(workflow,/browser-bridge\.mjs https:\/\/example\.com/);
+  assert.doesNotMatch(workflow,/continue-on-error:\s*true/);
+});

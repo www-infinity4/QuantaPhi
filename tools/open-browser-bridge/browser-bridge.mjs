@@ -42,12 +42,14 @@ try{
   if(isolated)await installRequestPolicy(context,allowed,undefined,{torIsolated:true});
   else await installRequestPolicy(context, allowed);
   const page=await context.newPage();
-  await page.goto(raw,{waitUntil:'domcontentloaded',timeout:25000});
+  const response=await page.goto(raw,{waitUntil:'domcontentloaded',timeout:25000});
+  if(!response || response.status()<200 || response.status()>=300)
+    throw Error('Target HTTP response was not successful');
   if(!isAllowedUrl(page.url(),allowed,{torIsolated:isolated}))
     throw Error('Final URL not permitted by host policy');
   await mkdir(receiptDir,{recursive:true,mode:0o700});
   const screenshot=join(receiptDir,'last-visit.png');
   await page.screenshot({path:screenshot,fullPage:false});
-  console.log(JSON.stringify({ok:true,mode:transport.mode,url:page.url(),title:await page.title(),screenshot}));
+  console.log(JSON.stringify({ok:true,mode:transport.mode,status:response.status(),url:page.url(),title:await page.title(),screenshot}));
   await context.close();
 }finally{await browser.close()}

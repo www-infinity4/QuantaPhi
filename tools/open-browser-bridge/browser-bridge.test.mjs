@@ -14,3 +14,13 @@ test('runner checks final navigation destination before screenshot and success r
   assert.ok(screenshot > finalCheck, 'screenshot must follow final URL check');
   assert.ok(receipt > screenshot, 'success receipt must follow screenshot');
 });
+
+test('runner fails closed on missing or non-2xx HTTP response before screenshot or receipt', async () => {
+  const source = await readFile(new URL('./browser-bridge.mjs', import.meta.url), 'utf8');
+  const goto = source.indexOf('const response=await page.goto(');
+  const guard = source.indexOf('if(!response || response.status()<200 || response.status()>=300)');
+  const screenshot = source.indexOf('await page.screenshot(');
+  const receipt = source.indexOf('console.log(JSON.stringify({ok:true');
+  assert.ok(goto >= 0 && guard > goto && guard < screenshot && screenshot < receipt);
+  assert.match(source, /status:response\.status\(\)/);
+});

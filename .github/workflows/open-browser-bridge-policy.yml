@@ -1,5 +1,6 @@
 name: Infinity Open Browser Bridge policy and isolation
 on:
+  workflow_dispatch:
   pull_request:
     paths:
       - 'tools/open-browser-bridge/**'
@@ -48,6 +49,51 @@ jobs:
           cd tools/open-browser-bridge
           docker compose -f compose.tor.yml run --rm --no-deps browser chromium-smoke.mjs
       - name: Remove containers, private networks and temporary state
+        if: always()
+        run: |
+          cd tools/open-browser-bridge
+          docker compose -f compose.tor.yml down -v --remove-orphans
+
+  # Deliberately manual: upstream Tor reachability can be blocked or flaky on
+  # shared runners. This must emit a real acceptance receipt, never a fake green.
+  tor-stream-acceptance:
+    if: github.event_name == 'workflow_dispatch'
+    needs: [policy, kernel-isolation]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and start isolated Tor sidecar
+        run: |
+          cd tools/open-browser-bridge
+          BROWSER_ALLOWED_HOSTS=example.com docker compose -f compose.tor.yml build --pull tor browser
+          BROWSER_ALLOWED_HOSTS=example.com docker compose -f compose.tor.yml up -d tor
+      - name: Require Tor bootstrap through the isolated sidecar
+        run: |
+          cd tools/open-browser-bridge
+          ready=0
+          for attempt in $(seq 1 90); do
+            if docker compose -f compose.tor.yml logs --no-color tor 2>&1 | grep -q 'Bootstrapped 100%'; then ready=1; break; fi
+            sleep 5
+          done
+          if [ "$ready" -ne 1 ]; then
+            echo "Tor circuit did not bootstrap; live acceptance failed."
+            docker compose -f compose.tor.yml logs --no-color tor | tail -30
+            exit 1
+          fi
+      - name: Check kernel egress isolation and real Tor-only HTTP 200 readback
+        run: |
+          cd tools/open-browser-bridge
+          BROWSER_ALLOWED_HOSTS=example.com docker compose -f compose.tor.yml run --rm --no-deps browser network-probe.mjs
+          BROWSER_ALLOWED_HOSTS=example.com docker compose -f compose.tor.yml run --rm --no-deps browser browser-bridge.mjs https://example.com > /tmp/tor-acceptance-receipt.jsonl
+          node -e '
+            const fs = require("node:fs");
+            const lines = fs.readFileSync("/tmp/tor-acceptance-receipt.jsonl","utf8").trim().split(/\\r?\\n/);
+            const r = JSON.parse(lines.at(-1));
+            if(r.ok!==true || r.mode!=="tor" || r.status!==200 || new URL(r.url).hostname!=="example.com" || r.screenshot!=="/receipts/last-visit.png") process.exit(1);
+            console.log("PASS verified isolated Tor HTTP 200 and screenshot receipt (no credentials or page contents uploaded)");
+          '
+      - name: Remove containers and private receipt/state volumes
         if: always()
         run: |
           cd tools/open-browser-bridge
