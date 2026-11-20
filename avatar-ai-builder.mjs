@@ -241,6 +241,7 @@ function mountBuilder(root) {
   let firstView = true;
   const observer = new IntersectionObserver(entries => {
     const entry = entries[0];
+    document.body.classList.toggle('avatar-builder-viewing', entry.isIntersecting);
     if (!entry.isIntersecting) {
       if (playing) setPlaying(false);
       return;

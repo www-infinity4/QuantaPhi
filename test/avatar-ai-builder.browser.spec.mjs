@@ -92,6 +92,12 @@ for (const width of [320, 360, 393, 1024]) {
       expect(box.x + box.width).toBeLessThanOrEqual(width);
     }
     expect(await builder.evaluate(element => element.scrollWidth <= element.clientWidth)).toBe(true);
+    await builder.getByRole('button',{name:'Latest',exact:true}).scrollIntoViewIfNeeded();
+    const latestBox = await builder.getByRole('button',{name:'Latest',exact:true}).boundingBox();
+    expect(await page.evaluate(({x,y}) => {
+      const hit = document.elementFromPoint(x,y);
+      return Boolean(hit?.closest('#avatarBuilder .av-latest'));
+    },{x:latestBox.x+latestBox.width/2,y:latestBox.y+latestBox.height/2})).toBe(true);
     expect(errors).toEqual([]);
     if (width === 360 || width === 1024) {
       await builder.screenshot({path:testInfo.outputPath('avatar-builder-' + width + '.png')});
@@ -131,6 +137,7 @@ test('Improve with Bubbles prepares the actual existing editor and preserves an 
   await expect(editor).toHaveValue(/Let me try a larger header/);
   await expect(editor).toBeVisible();
   await editor.fill('My unsent work');
+  await page.getByRole('button',{name:'Close Notes and tools viewer'}).click();
   await page.evaluate(() => window.QuantaBubbles.close());
   await builder.getByRole('button',{name:'Prepare Bubbles request'}).click();
   await expect(builder.getByRole('status')).toContainText('existing Bubbles work draft');

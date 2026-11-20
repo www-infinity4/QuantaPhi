@@ -75,11 +75,13 @@ test('the ordinary Bubbles work-draft entry preserves unsent work and never subm
   assert.ok(begin >= 0 && end > begin);
   let opened = 0;
   let focused = 0;
+  let viewerOpened = 0;
   const context = {
     embedded:false,
     workText:{value:'',focus(){focused++;}},
     tools:{open:false},
     toggle(){opened++;},
+    openNotesViewer(){viewerOpened++;},
     workStatus:{textContent:''}
   };
   runInNewContext(source.slice(begin,end) + '\nthis.prepare = prepareWorkDraft;', context);
@@ -88,6 +90,7 @@ test('the ordinary Bubbles work-draft entry preserves unsent work and never subm
   assert.equal(context.tools.open, true);
   assert.equal(opened, 1);
   assert.equal(focused, 1);
+  assert.equal(viewerOpened, 1);
   assert.equal(context.prepare('Replace my draft'), false);
   assert.equal(context.workText.value, 'Improve this builder');
   assert.equal(context.prepare('x'.repeat(1801)), false);

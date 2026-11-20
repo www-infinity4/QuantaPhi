@@ -89,3 +89,11 @@ Check the PR's exact-head CI, especially `test/avatar-ai-card.test.mjs`, `test/s
 - Browser CI covers the real Bubbles page at 320/360/393/1024 pixels, sample replay, persistent choices, historical frames, storage failure, actual work editor handoff and hidden orb embedding. Browser execution is pending on GitHub's supported Ubuntu runner. Local browser launch is restricted by this executor's Unix socket permissions.
 - Independent Pink review is in progress. Merge, deployment, live response and physical Android verification are pending for this addition. The broader Avatar AI job stream, five-thread reconstruction and hardware acceptance remain on the same canonical issue.
 - Next action is to inspect browser CI on the pushed head, fix actionable review findings, merge when policy permits and read back the live Bubbles page and builder assets.
+
+### Browser-driven integration corrections
+
+- PR #1991, first corrected source head af2b030a40eeaf7fd60396c352049927e277f6fd. Browser run https://github.com/www-infinity4/QuantaPhi/actions/runs/44660280392 passed the four viewport groups, unavailable-storage group and orb embedding group. It exposed a real work-editor visibility defect: the existing Notes/tools viewer now owns the editor, so opening the older details element alone leaves it hidden.
+- The existing prepareWorkDraft adapter now opens the existing Notes/tools viewer before focusing the request. Its regression checks the viewer opening. The browser test closes that viewer before testing unsent-draft preservation.
+- Actual CI screenshots showed the floating orb over the latest-frame control. While this builder is onscreen, its observer now suppresses that launcher. Chat and the existing tools viewer remain available through their normal actions. The new browser test checks that the playback button receives the actual pointer hit.
+- Script cache revisions and five existing revision assertions now match across all four Bubbles entry points. The initial cache-parity failures were repaired on the same PR. All 142 expanded Node/gateway checks pass locally after the corrections.
+- Independent source review on prior tree eb6b0729c52a01773bf9b93f3599a96f437b7fac found no remaining source issues. Final review and CI must cover these browser-driven corrections before merge. Live runner imagery and physical Android remain unverified.

@@ -286,3 +286,7 @@
 @media (prefers-reduced-motion: reduce) {
   #avatarBuilder *, #avatarBuilder *::before, #avatarBuilder *::after { transition-duration: 0s !important; }
 }
+
+/* The existing floating orb must not cover playback or layout choices. The
+   Bubbles conversation and its Notes/tools viewer still open normally. */
+body.avatar-builder-viewing .ba-launcher { display: none !important; }

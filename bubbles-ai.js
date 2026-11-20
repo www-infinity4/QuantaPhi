@@ -4548,7 +4548,7 @@ function prepareWorkDraft(request) {
  if(embedded||typeof request!=='string'||!request.trim()||request.length>1800)return false;
  if(workText.value.trim()&&workText.value.trim()!==request.trim())return false;
  workText.value=request.trim();
- tools.open=true;toggle(true);workText.focus();
+ tools.open=true;toggle(true);openNotesViewer();workText.focus();
  workStatus.textContent='Work draft ready. Review it and press Start work when your owner session is connected.';
  return true;
 }
