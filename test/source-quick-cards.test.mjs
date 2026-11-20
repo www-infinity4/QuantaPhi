@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {Script} from 'node:vm';
 import {QUICK_CARD_SOURCES,findSourceCard,validSourceCard,PUBLIC_SOURCE_IDS,isPublicSourceCard} from '../source-quick-cards.mjs';
+import {AI_VENTURES} from '../infinity-ai-ventures.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'utf8');
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
@@ -116,9 +117,10 @@ test('functional source cards enter Public while link-only integrations remain s
  assert.deepEqual(PUBLIC_SOURCE_IDS,[
   'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
   'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
-  'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela'
+  'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela',
+  ...AI_VENTURES.map(v=>v.id)
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,25);
+ assert.equal(PUBLIC_SOURCE_IDS.length,25+AI_VENTURES.length);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/ACTIVE_SOURCE_CARDS\.filter\(isPublicSourceCard\)/);
@@ -152,4 +154,21 @@ test('ChatGPT card only requests its actual official website, with no credential
  assert.doesNotMatch(frame,/sessionStorage|localStorage|document\.cookie|postMessage\s*\(|api\.openai\.com/);
  assert.match(launcher,/if\(card\.id==='chatgpt'\)mountOfficialViewer\(item,card\.id\)/);
  assert.match(detail,/quanta-official-viewer\.css/);
+});
+
+
+test('Infinity business cards register in the one Oracle source viewer and reuse Bubbles',()=>{
+ for(const venture of AI_VENTURES){
+  const card=findSourceCard(venture.id);
+  assert.ok(card,'missing '+venture.id);
+  assert.ok(isPublicSourceCard(card),'not visible '+venture.id);
+  assert.equal(card.venture,true);
+  assert.equal(card.featureUrl,venture.featureUrl);
+  assert.ok(validSourceCard(card));
+ }
+ assert.match(launcher,/if\(card\.venture\)item\.append/);
+ assert.match(launcher,/if\(card\.venture\)\{/);
+ assert.match(launcher,/Use the existing Bubbles brain/);
+ assert.match(launcher,/Ask Bubbles about this card/);
+ assert.match(deck,/registerSourceCards/);
 });
