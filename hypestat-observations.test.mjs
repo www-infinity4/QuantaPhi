@@ -84,7 +84,7 @@ test('backups never silently overwrite an existing observation with the same ID'
 test('search covers source, observations, unknowns and notes while filtering by status',()=>{
   const a=normalizeCheck(sample()), b=normalizeCheck(sample({id:'b',caseId:'Other',status:'live',unknowns:'No issue'}));
   assert.equal(searchChecks([a,b],'operator').length,1);
-  assert.equal(searchChecks([a,b],'public report').length,2);
+  assert.equal(searchChecks([a,b],'example.org').length,2);
   assert.equal(searchChecks([a,b],'','live').length,1);
 });
 
