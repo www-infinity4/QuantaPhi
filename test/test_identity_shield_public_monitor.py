@@ -39,5 +39,25 @@ class SourceMonitorTests(unittest.TestCase):
         ))
 
 
+    def test_redirect_handler_blocks_navigation_before_external_request(self):
+        # A default urllib opener follows 302 responses before geturl() can reject them.
+        handler = module.RejectPublicSourceRedirect()
+        self.assertIsNone(handler.redirect_request(None, None, 302, None, {}, "https://evil.example/internal"))
+        
+    def test_public_digest_installs_reject_redirect_handler(self):
+        from unittest.mock import Mock, patch
+        fake_response = Mock()
+        fake_response.geturl.return_value = module.SOURCES["ssa-account"]
+        fake_response.status = 200
+        fake_response.read.return_value = ("Agency official public page " * 30).encode("utf-8")
+        opener = Mock()
+        opener.open.return_value.__enter__ = Mock(return_value=fake_response)
+        opener.open.return_value.__exit__ = Mock(return_value=False)
+        with patch.object(module, "build_opener", return_value=opener) as factory:
+            digest = module.public_digest(module.SOURCES["ssa-account"])
+        self.assertEqual(len(digest), 64)
+        self.assertTrue(any(isinstance(arg, module.RejectPublicSourceRedirect) for arg in factory.call_args.args))
+
+
 if __name__ == "__main__":
     unittest.main()
