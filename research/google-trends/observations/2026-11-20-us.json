@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T02:30:55.201842Z",
+  "checked_at": "2026-11-20T03:01:25.156634Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "salt lake vs seattle sounders",
+      "query": "leonid meteor shower",
       "approx_searches": "1000+",
-      "published_at": "2026-11-20T02:10:00Z",
+      "published_at": "2026-11-20T02:40:00Z",
       "related_news_urls": [
-        "https://www.soundersfc.com/news/seavrsl-101-preview-all-you-need-to-know-when-the-sounders-host-real-salt-lake-in-the-2026-audi-mls-cup-playoffs-wildcard-round-pres-by-ticketmaster",
-        "https://www.sounderatheart.com/2026/11/expectations-be-damned-sounders-enter-playoffs-with-something-to-prove/",
-        "https://www.seattletimes.com/sports/sounders/sounders-try-to-salvage-disappointing-season-in-mls-playoffs/"
+        "https://skyandtelescope.org/astronomy-news/observing-news/this-weeks-sky-at-a-glance-november-13-22/",
+        "https://www.cnn.com/2026/11/16/science/leonid-meteor-shower-2026",
+        "https://www.nytimes.com/2026/11/16/science/leonids-meteor-shower-peak.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3bPSSARRdB4xLGygx_pXon_JB_X7gouJokCHisTZSO9jhkPviF82wZxkJicc",
-      "image_credit": "Seattle Sounders FC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzL5d1EKaqAescGC47PXOhvOJOjTfdhHZB7Rf45rcOfE1TZWUA-GKCQse9450",
+      "image_credit": "Sky & Telescope",
       "news": [
         {
-          "url": "https://www.soundersfc.com/news/seavrsl-101-preview-all-you-need-to-know-when-the-sounders-host-real-salt-lake-in-the-2026-audi-mls-cup-playoffs-wildcard-round-pres-by-ticketmaster",
-          "title": "SEAvRSL 101 Preview: All you need to know when the Sounders host Real Salt Lake in the 2026 Audi MLS Cup Playoffs Wildcard Round, pres. by Ticketmaster",
-          "publisher": "Seattle Sounders FC",
+          "url": "https://skyandtelescope.org/astronomy-news/observing-news/this-weeks-sky-at-a-glance-november-13-22/",
+          "title": "This Week's Sky at a Glance, November 13 – 22",
+          "publisher": "Sky & Telescope",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3bPSSARRdB4xLGygx_pXon_JB_X7gouJokCHisTZSO9jhkPviF82wZxkJicc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzL5d1EKaqAescGC47PXOhvOJOjTfdhHZB7Rf45rcOfE1TZWUA-GKCQse9450"
         },
         {
-          "url": "https://www.sounderatheart.com/2026/11/expectations-be-damned-sounders-enter-playoffs-with-something-to-prove/",
-          "title": "Expectations be damned: Sounders enter playoffs with something to prove",
-          "publisher": "Sounder at Heart",
+          "url": "https://www.cnn.com/2026/11/16/science/leonid-meteor-shower-2026",
+          "title": "See the Leonid meteors this week — ‘the shower that started it all’",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdvnKCny0F9t8Ez0v6KT9Dw7r1SIF92U298OXgisigwqPgBRXBqT-ZZ3mVdJI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnHM6D9-8BvAovJdrwxDckYTng6PX36t4SphKz0prkdCB9uDOjKmCIJTFu0lM"
         },
         {
-          "url": "https://www.seattletimes.com/sports/sounders/sounders-try-to-salvage-disappointing-season-in-mls-playoffs/",
-          "title": "How Sounders can still salvage a disappointing season",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdYUa0OI8KiaVLUOIhxbX_h1UhAcaimodTAlksHBG0dataAJq4k8C8UeDIwFk"
-        }
-      ]
-    },
-    {
-      "query": "i play rocky cast",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T02:10:00Z",
-      "related_news_urls": [
-        "https://www.detroitnews.com/story/entertainment/movies/2026/11/18/i-play-rocky-is-a-genuine-crowd-pleaser-with-a-winning-spirit/92830714007/",
-        "https://www.hollywoodreporter.com/movies/movie-news/i-play-rocky-stars-rocky-producer-50th-anniversary-1236758733/",
-        "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGx7y3-BHya-Pe4dSmloOjO3wPFX3S2Mh8ORHZ5tnB9999EOfc68e2y7wVzm0",
-      "image_credit": "The Detroit News",
-      "news": [
-        {
-          "url": "https://www.detroitnews.com/story/entertainment/movies/2026/11/18/i-play-rocky-is-a-genuine-crowd-pleaser-with-a-winning-spirit/92830714007/",
-          "title": "'I Play Rocky,' stirring story of the making of 'Rocky,' is a knockout",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGx7y3-BHya-Pe4dSmloOjO3wPFX3S2Mh8ORHZ5tnB9999EOfc68e2y7wVzm0"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/i-play-rocky-stars-rocky-producer-50th-anniversary-1236758733/",
-          "title": "‘I Play Rocky’ Stars Unite With Original ‘Rocky’ Producer for Film’s 50th Anniversary Celebration",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMcXKxD2L5vjCUU32eyMZhZDMI6tf8JaqvWqe-hrViItrw7CLAjNJP0-8sh5Q"
-        },
-        {
-          "url": "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/",
-          "title": "AnnaSophia Robb on I Play Rocky and Representing the Underdogs",
-          "publisher": "Rotten Tomatoes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHzZAMq1Da1-_MtJxA99UToYuETyIiF185b_QNNiz5pA2atuK2m6KAZ5zTUQ"
-        }
-      ]
-    },
-    {
-      "query": "rutgers basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T02:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/rutgers/article/rutgers-vs-unlv-preview-how-to-watch-tv-radio-live-thread-292975913/",
-        "https://www.bdtonline.com/sports/national_sports/rutgers-scarlet-knights-take-on-the-unlv-rebels/article_96467f87-01c9-531e-9b3c-d34a59076f4e.html",
-        "https://www.on3.com/sites/the-knight-report/news/how-to-watch-rutgers-unlv-pregame-info-gameday-central/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnrxz3GC_EYbi_ffQge0JcOPxbKQIwN3Mtw72lXvh0O7Luv2bkUbNgBxmaRY",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/rutgers/article/rutgers-vs-unlv-preview-how-to-watch-tv-radio-live-thread-292975913/",
-          "title": "Rutgers vs UNLV Preview: How to watch, tv, radio, live thread",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnrxz3GC_EYbi_ffQge0JcOPxbKQIwN3Mtw72lXvh0O7Luv2bkUbNgBxmaRY"
-        },
-        {
-          "url": "https://www.bdtonline.com/sports/national_sports/rutgers-scarlet-knights-take-on-the-unlv-rebels/article_96467f87-01c9-531e-9b3c-d34a59076f4e.html",
-          "title": "Rutgers Scarlet Knights take on the UNLV Rebels",
-          "publisher": "Bluefield Daily Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8_SEDXmSB6SixxLSLmjeaTZouryvvI7Nr4xbJXMS8YRucw0ORsr2M4kgRnGI"
-        },
-        {
-          "url": "https://www.on3.com/sites/the-knight-report/news/how-to-watch-rutgers-unlv-pregame-info-gameday-central/",
-          "title": "How to watch Rutgers / UNLV; Pregame Info, More: Gameday Central",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpJ0WvgPNEKr68cf4app4jO7hxlRfVK262uipWq7Yiey4yWT9re0Q8I85F-UI"
-        }
-      ]
-    },
-    {
-      "query": "christian bale",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T02:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/movies/2026/11/18/christian-bale-al-davis-madden-movie/92792897007/",
-        "https://ew.com/why-madden-star-christian-bale-confused-first-nfl-game-12261769"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1JqNo6nXMTIZnCsXCA8X17EJW7U6Y32S1jS37YM0_mIrlNFZtaB7jSXgcLSo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/18/christian-bale-al-davis-madden-movie/92792897007/",
-          "title": "Christian Bale reveals what baffled him the first time he watched NFL",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGgLiTsrie9HpB6XdfKJN6P-9V2l4k9Ihk5Wm9iwYjLepDbU_Jsk88pWTlizo"
-        },
-        {
-          "url": "https://ew.com/why-madden-star-christian-bale-confused-first-nfl-game-12261769",
-          "title": "Why ‘Madden’ star Christian Bale was confused by his first American football game",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSosQ6yvmB45EkE6wNWjRG3hYprspn4fpRjXa3pdBusZwTYoup-sCIz74xk-yo"
-        }
-      ]
-    },
-    {
-      "query": "thanksgiving football games",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T02:10:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/opinions/2026/11/19/nfl-wants-own-thanksgiving-christmas-new-year-eve/",
-        "https://www.usatoday.com/story/sports/nfl/2026/11/19/thanksgiving-nfl-games-2026-schedule-matchups-teams/92836301007/",
-        "https://www.bostonglobe.com/2026/11/19/opinion/nfl-thanksgiving-games-peter-king/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotaYmh3MtAy-7fvIeLdQeVunR_aK7kA60yskfCpOpDZHg2oaaGW-ZGNQkimY",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/opinions/2026/11/19/nfl-wants-own-thanksgiving-christmas-new-year-eve/",
-          "title": "Opinion | The NFL ate Thanksgiving. Christmas and New Year’s could be next.",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotaYmh3MtAy-7fvIeLdQeVunR_aK7kA60yskfCpOpDZHg2oaaGW-ZGNQkimY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/19/thanksgiving-nfl-games-2026-schedule-matchups-teams/92836301007/",
-          "title": "What NFL games are on Thanksgiving? Teams, matchups, TV channels for every game",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRT3pYEL9Z9Sc7S7fe5FmNUOe314QpEvIgGEWK63IwlNfOJfLuaVQxWoSxdpk"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/19/opinion/nfl-thanksgiving-games-peter-king/",
-          "title": "Opinion | How the NFL captured Thanksgiving",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQESMsXXaVXoqlNWit9nQCHUTd_VxAS4_5haZiRAPmEMPyIhwOex8Z8F00vZGM"
-        }
-      ]
-    },
-    {
-      "query": "toronto maple leafs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T02:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsnet.ca/nhl/article/mckenna-promoted-nylander-dropped-as-maple-leafs-mix-lines/",
-        "https://www.nytimes.com/athletic/7795172/2026/11/19/maple-leafs-lineup-gavin-mckenna-power-play/",
-        "https://www.tsn.ca/nhl/article/ice-chips-stolarz-to-start-nylander-moved-down-and-mckenna-bumped-up-as-leafs-face-kings/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvastCD8GL7C_-oJxGK8uNKACWJ3UbIge131GisCzqKhXXm6rJHEMAlXk2sCY",
-      "image_credit": "Sportsnet.ca",
-      "news": [
-        {
-          "url": "https://www.sportsnet.ca/nhl/article/mckenna-promoted-nylander-dropped-as-maple-leafs-mix-lines/",
-          "title": "McKenna promoted, Nylander dropped as Maple Leafs mix lines",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvastCD8GL7C_-oJxGK8uNKACWJ3UbIge131GisCzqKhXXm6rJHEMAlXk2sCY"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7795172/2026/11/19/maple-leafs-lineup-gavin-mckenna-power-play/",
-          "title": "Sliding Maple Leafs shake up lineup; Gavin McKenna rejoins PP1",
+          "url": "https://www.nytimes.com/2026/11/16/science/leonids-meteor-shower-peak.html",
+          "title": "Leonids Meteor Shower Reaches Its Peak Tonight",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDgsgD3YoXJS8DfO7_6w5IiFMIkvw29Wx-T2zparKgnsNrbmuWuMnGRcBKF-I"
-        },
-        {
-          "url": "https://www.tsn.ca/nhl/article/ice-chips-stolarz-to-start-nylander-moved-down-and-mckenna-bumped-up-as-leafs-face-kings/",
-          "title": "Ice Chips: Stolarz to start, Nylander moved down and McKenna bumped up as Leafs face Kings",
-          "publisher": "TSN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbWjVx4bjtKLMxct1wGhrMLsNguaaEg74FRV-xCPalvuzyRn9PNoB3Yo_0FKk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIrTEagOCFAVmA1uYNpyrSCsBTy-VCiGeS1278EkqCtxyg3rapTa8Zt1mLo00"
         }
       ]
     },
     {
-      "query": "oregon basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T02:10:00Z",
-      "related_news_urls": [
-        "https://www.oregonlive.com/collegebasketball/2026/11/new-look-oregon-oregon-state-basketball-to-face-off-at-moda-center.html",
-        "https://247sports.com/college/oregon/article/oregon-basketball-faces-its-toughest-test-yet-against-unbeaten-oregon-state-292941311/",
-        "https://bvmsports.com/2026/11/18/tony-stubblefield-take-it-up-to-another-level/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZjMPDbczLeHTQhWsJC7sb8le9YAGiHkqT7ysyouvuqiP8vC0_0n3TfFt75g4",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/collegebasketball/2026/11/new-look-oregon-oregon-state-basketball-to-face-off-at-moda-center.html",
-          "title": "Oregon, Oregon State rivalry returns to Portland after 28 years",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZjMPDbczLeHTQhWsJC7sb8le9YAGiHkqT7ysyouvuqiP8vC0_0n3TfFt75g4"
-        },
-        {
-          "url": "https://247sports.com/college/oregon/article/oregon-basketball-faces-its-toughest-test-yet-against-unbeaten-oregon-state-292941311/",
-          "title": "Oregon basketball faces its toughest test yet against unbeaten Oregon State",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpdeDM-Kf8ZLXGpzZDCu1txwTuVg0ZSO0eQXKCNHE5MELmENeayBF7jpeJ6wE"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/18/tony-stubblefield-take-it-up-to-another-level/",
-          "title": "Tony Stubblefield: \"Take it up to another level.\"",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdvJUxcqkPTEoanvIUdSguJQ3DxHIYVL__dxLxyOa-kKIxB2wuSC7YO-ir8mI"
-        }
-      ]
-    },
-    {
-      "query": "patrick stewart",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T02:00:00Z",
-      "related_news_urls": [
-        "https://www.tmz.com/2026/11/19/patrick-stewart-cause-of-death/",
-        "https://deadline.com/2026/11/patrick-stewart-cause-of-death-1237229735/",
-        "https://people.com/patrick-stewart-cause-of-death-confirmed-12201341"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiddJ_ox_hBgxE-sNSFuXdk8kjZHtpploUf96-7Q_HK6Yk9S5ETEVnIgxWDv8",
-      "image_credit": "TMZ",
-      "news": [
-        {
-          "url": "https://www.tmz.com/2026/11/19/patrick-stewart-cause-of-death/",
-          "title": "Patrick Stewart's Cause of Death Revealed",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiddJ_ox_hBgxE-sNSFuXdk8kjZHtpploUf96-7Q_HK6Yk9S5ETEVnIgxWDv8"
-        },
-        {
-          "url": "https://deadline.com/2026/11/patrick-stewart-cause-of-death-1237229735/",
-          "title": "Patrick Stewart Cause Of Death Revealed",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRFYfP44EvBbmnBlYk5pj2Lm5Vqmfn8jUMCyJyQb5EG2IqW5cz-2ydVLj8CF4"
-        },
-        {
-          "url": "https://people.com/patrick-stewart-cause-of-death-confirmed-12201341",
-          "title": "Patrick Stewart’s Official Cause of Death Confirmed: Report",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD9L281OcN-lOJkjbDoPwKU_5psPneM4mCfjH6ulsmessBPdD1E00jxhWnpCE"
-        }
-      ]
-    },
-    {
-      "query": "ncis",
+      "query": "timberwolves game",
       "approx_searches": "1000+",
-      "published_at": "2026-11-20T02:00:00Z",
+      "published_at": "2026-11-20T02:40:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66116726/?ref_=int_nwr_1",
-        "https://www.tvline.com/2319796/ncis-origins-season-3-episode-6-franks-muse-watson-kyle-schmid-interview/",
-        "https://deadline.com/2026/11/ncis-origins-gibbs-teaser-s3-episode-6-1237225533/"
+        "https://www.startribune.com/minnesota-timberwolves-new-york-knicks-karl-anthony-towns-anthony-edwards-injury-wolves-roster-26-27/601921524",
+        "https://sports.yahoo.com/articles/game-discussion-thread-knicks-timberwolves-003000978.html",
+        "https://www.postingandtoasting.com/knicks-news/91408/knicks-bulletin-xxx"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXBHAmuOTlbN3LZWi_Qm-I6lzKIQ0ugDdorSLvpFnvkjVb_QiuB74n01DclZI",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS933iY0uhE6jrYf1lrPTZoz0sDibibqr5ufRkNido3N9ucSdDkQpfB5g-MfEI",
+      "image_credit": "Star Tribune",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66116726/?ref_=int_nwr_1",
-          "title": "‘NCIS: Origins’ Season 3 Episode 6 Recap and Ending Explained: What Gibbs Learns About Lala",
-          "publisher": "IMDb",
+          "url": "https://www.startribune.com/minnesota-timberwolves-new-york-knicks-karl-anthony-towns-anthony-edwards-injury-wolves-roster-26-27/601921524",
+          "title": "Neal: Karl-Anthony Towns returns as NBA champion, but Wolves shouldn’t envy him",
+          "publisher": "Star Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXBHAmuOTlbN3LZWi_Qm-I6lzKIQ0ugDdorSLvpFnvkjVb_QiuB74n01DclZI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS933iY0uhE6jrYf1lrPTZoz0sDibibqr5ufRkNido3N9ucSdDkQpfB5g-MfEI"
         },
         {
-          "url": "https://www.tvline.com/2319796/ncis-origins-season-3-episode-6-franks-muse-watson-kyle-schmid-interview/",
-          "title": "NCIS: Origins: Muse Watson And Kyle Schmid Tell All About Playing Franks, Past And Present",
-          "publisher": "TVLine",
+          "url": "https://sports.yahoo.com/articles/game-discussion-thread-knicks-timberwolves-003000978.html",
+          "title": "Game Discussion Thread: Knicks at Timberwolves, November 19, 2026",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTveMyYHVOlatGAPhj8CggEABJzxTZtOgtvdgDva_CkcAR1tc_I5WSE9jKrWmM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR03tU2jmOEbI7CwoGwhNddIx6uCWIUDqq1mHqO-uRec-GNpgLnQ3B0_sie2n4"
         },
         {
-          "url": "https://deadline.com/2026/11/ncis-origins-gibbs-teaser-s3-episode-6-1237225533/",
-          "title": "‘NCIS: Origins’ Sets Gibbs Up For Meeting Across Time In New Teaser As Lala Mystery Intensifies",
-          "publisher": "Deadline",
+          "url": "https://www.postingandtoasting.com/knicks-news/91408/knicks-bulletin-xxx",
+          "title": "Knicks Bulletin: ‘It’s going to be bittersweet’",
+          "publisher": "Posting and Toasting",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMuRjnLZVskdBJexGt5Zez9De-Q62XklwtJheIIlSMFTIn15mR0XLYdCRURuQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTACCNlF3-BkCtOmtiG6YcCEGyoShg2BDQDx4srkbfQfMm614GOO5nW06WlJDQ"
         }
       ]
     },
     {
-      "query": "law and order svu",
+      "query": "christian braun",
       "approx_searches": "1000+",
-      "published_at": "2026-11-20T02:00:00Z",
+      "published_at": "2026-11-20T02:40:00Z",
       "related_news_urls": [
-        "https://people.com/why-isnt-law-and-order-svu-on-tonight-november-2026-12262884",
-        "https://www.yahoo.com/entertainment/tv/articles/law-order-special-victims-unit-151722253.html",
-        "https://www.imdb.com/news/ni66113941/?ref_=nmnw_art_perm"
+        "https://nugglove.com/christian-braun-deserves-his-flowers-his-impact-on-nuggets-defense",
+        "https://www.fantasypros.com/nba/news/620729/christian-braun-quiet-loss-monday.php",
+        "https://www.nba.com/watch/video/christian-braun-with-the-slam-12"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Pz9Zw-5FCjvxLm0SA5FfuoazL9PM5YM51nxxDjAosD1cSCwY5s5_nxpOIdE",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd6-mPWwEIs_gb05kHI0o9KGl0j9GZdMNLL0h8NHX6NcP9R_VuZet9cuiW3yU",
+      "image_credit": "Nugg Love",
+      "news": [
+        {
+          "url": "https://nugglove.com/christian-braun-deserves-his-flowers-his-impact-on-nuggets-defense",
+          "title": "Christian Braun deserves his flowers for his impact on the Nuggets' defense",
+          "publisher": "Nugg Love",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd6-mPWwEIs_gb05kHI0o9KGl0j9GZdMNLL0h8NHX6NcP9R_VuZet9cuiW3yU"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/620729/christian-braun-quiet-loss-monday.php",
+          "title": "Christian Braun quiet in loss Monday",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwltgodW8fompiPE1WtC4A2M0sYhCsbinpnsVUmLIk8ds1xkjl4gEvGjE-_28"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/christian-braun-with-the-slam-12",
+          "title": "Christian Braun with the slam",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_GayltuCU76ylvJC66vLVriCVDI-hsLt2aWfzbwjz7PRr5E4FPubTDaoNCok"
+        }
+      ]
+    },
+    {
+      "query": "ryan phillippe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T02:30:00Z",
+      "related_news_urls": [
+        "https://people.com/jennifer-love-hewitt-breaks-down-9-1-1-reunion-ryan-phillippe-exclusive-12258421",
+        "https://www.yahoo.com/entertainment/tv/articles/jennifer-love-hewitt-says-she-000015814.html",
+        "https://www.cinemablend.com/television/jennifer-love-hewitt-shares-intense-take-reunion-ryan-phillippe-9-1-1"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJCkci-ZNhpATmXkWfgNBdgMYIMtu_kd8aNP7oY4QY-ZxByeQ6F2SeWl6hdLE",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/why-isnt-law-and-order-svu-on-tonight-november-2026-12262884",
-          "title": "Why Isn’t Law & Order: Special Victims Unit on Tonight? What We Know About the Season 28 Schedule Change",
+          "url": "https://people.com/jennifer-love-hewitt-breaks-down-9-1-1-reunion-ryan-phillippe-exclusive-12258421",
+          "title": "Jennifer Love Hewitt Says ‘9-1-1’ Reunion with Ryan Phillippe Is First Time They’d Seen Each Other Since She Was 18 (Exclusive)",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Pz9Zw-5FCjvxLm0SA5FfuoazL9PM5YM51nxxDjAosD1cSCwY5s5_nxpOIdE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJCkci-ZNhpATmXkWfgNBdgMYIMtu_kd8aNP7oY4QY-ZxByeQ6F2SeWl6hdLE"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/law-order-special-victims-unit-151722253.html",
-          "title": "‘Law and Order: Special Victims Unit’ Has Surprise Schedule Change on NBC After 600th Episode",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/jennifer-love-hewitt-says-she-000015814.html",
+          "title": "Jennifer Love Hewitt Says She Felt She'd 'Forgotten How to Act' Before Ryan Phillippe Reunion After 29 Years",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XT_Z0f73Q4lrF421v3fBgHEP43R6wEDz-u3PkpOZg3lxPAor26TVMLBT6Eo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0KGd0INcn4whK6-IaOV2-6eS6381banLa0ttNoHvwn7jzoScS5efYVJq45MI"
         },
         {
-          "url": "https://www.imdb.com/news/ni66113941/?ref_=nmnw_art_perm",
-          "title": "'Svu' Officially Goes on Break After Its 600th Episode",
+          "url": "https://www.cinemablend.com/television/jennifer-love-hewitt-shares-intense-take-reunion-ryan-phillippe-9-1-1",
+          "title": "I Didn’t Expect Jennifer Love Hewitt’s Intense Take On Reuniting With Ryan Phillippe For 9-1-1",
+          "publisher": "Cinemablend",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpPd2GFyDZGki9rnq-4OsLj6eSxywhyVgTTm4TR_NKQMwEzE3mEfAYvP_77D8"
+        }
+      ]
+    },
+    {
+      "query": "mariah carey",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T02:30:00Z",
+      "related_news_urls": [
+        "https://www.essence.com/entertainment/mariah-carey-holiday-barbie-doll/",
+        "https://www.parents.com/mariah-carey-barbie-doll-12258606",
+        "https://www.instagram.com/p/Df7xUlfhec5/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1LvPcMccR-EjOJPAwEpNSwBvf4D1q0XlH3qxGL9xxo1hG0iq4ylvdWkTiCc",
+      "image_credit": "Essence",
+      "news": [
+        {
+          "url": "https://www.essence.com/entertainment/mariah-carey-holiday-barbie-doll/",
+          "title": "Mariah Carey Celebrates The Holidays With A New Barbie Doll",
+          "publisher": "Essence",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1LvPcMccR-EjOJPAwEpNSwBvf4D1q0XlH3qxGL9xxo1hG0iq4ylvdWkTiCc"
+        },
+        {
+          "url": "https://www.parents.com/mariah-carey-barbie-doll-12258606",
+          "title": "Mariah Carey’s New Barbie Is Giving ‘Merry Christmas’ Nostalgia",
+          "publisher": "Parents",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQeJriPyWM4qIMPBbREqm6Y6Z-b0iGtFS9k-kqtpo_12-uM6dkyy0pPt6MIWw"
+        },
+        {
+          "url": "https://www.instagram.com/p/Df7xUlfhec5/",
+          "title": "It’s timmmmmeeeee! 😍 #Barbie has unveiled its second #MariahCarey doll. 🔥 #Roomies, are y’all excited for this holiday szn? 🎄 (📸: @barbie, @gettyimages) ✍🏾: #TSRStaffLG",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdB0IP2AmREy18gthFshrwpEGZOCS9xhtj8sPZXGyZ6tjug3mfI8WxPJySco8"
+        }
+      ]
+    },
+    {
+      "query": "submarine",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T02:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/world/2026/nov/20/aukus-defence-us-warned-supplying-nuclear-powered-submarines-to-australia-would-diminish-its-own-fleet-for-many-years",
+        "https://www.lowyinstitute.org/the-interpreter/aukus-inquiry-scepticism-runs-only-one-way",
+        "https://socialistchina.org/2026/11/19/workers-have-no-interest-in-war-with-china-australian-maritime-workers-leader-addresses-cnd-meeting-of-trade-unionists-in-london/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeso4SUcPL9HcKXq_tpbMZRbI2LWSVaw79GO_EcUAuF45sg3MCha9kXD-RSyc",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/20/aukus-defence-us-warned-supplying-nuclear-powered-submarines-to-australia-would-diminish-its-own-fleet-for-many-years",
+          "title": "US warned supplying nuclear-powered submarines to Australia would diminish its own fleet for ‘many years’",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeso4SUcPL9HcKXq_tpbMZRbI2LWSVaw79GO_EcUAuF45sg3MCha9kXD-RSyc"
+        },
+        {
+          "url": "https://www.lowyinstitute.org/the-interpreter/aukus-inquiry-scepticism-runs-only-one-way",
+          "title": "AUKUS inquiry scepticism runs only one way",
+          "publisher": "Lowy Institute",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCjnPSl15933ca5YSGvOShuymFStqVAFIAQEW_0tgTUv_D-NThtPIqnDRN80A"
+        },
+        {
+          "url": "https://socialistchina.org/2026/11/19/workers-have-no-interest-in-war-with-china-australian-maritime-workers-leader-addresses-cnd-meeting-of-trade-unionists-in-london/",
+          "title": "“Workers have no interest in war with China” – Australian maritime workers leader addresses CND meeting of trade unionists in London",
+          "publisher": "Friends of Socialist China",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ7yA2XULaNTxvamXma4qa1cDNtGUhDb4-OifJSiGUPKSVsQ-qnC2gluu7hH4"
+        }
+      ]
+    },
+    {
+      "query": "is gta 6 on xbox",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T02:30:00Z",
+      "related_news_urls": [
+        "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
+        "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
+        "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw",
+      "image_credit": "Digital Foundry",
+      "news": [
+        {
+          "url": "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
+          "title": "GTA 6: PS5 vs PS5 Pro, Xbox Series X and Series S: Which Console Plays Best?",
+          "publisher": "Digital Foundry",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw"
+        },
+        {
+          "url": "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
+          "title": "Grand Theft Auto VI Uses AMD FSR 4 On Xbox Series S, Upscaling 720p To 1080p While Still Running Ray Traced Global Illumination",
+          "publisher": "Wccftech",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8AMqKOkopU6mi5ahjy2oGDadqeUTOb08fkwa1HeGMkCIw09-d26qrtECsl7s"
+        },
+        {
+          "url": "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979",
+          "title": "GTA 6 Won’t Get A 60 FPS Mode, Even On PS5 Pro, Because It’s ‘Not Powerful Enough’",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROmKm3_DuoRdLIj-n08VTdrtbbdHT7Zddidf_soIeK6ZipViaE1KXiet62zwU"
+        }
+      ]
+    },
+    {
+      "query": "stars vs golden knights",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T02:20:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/stars/news/game-day-guide-dallas-stars-at-vegas-golden-knights-111926",
+        "https://www.espn.com/nhl/recap/_/gameId/401892737",
+        "https://sports.yahoo.com/articles/collapse-epic-proportions-3-observations-075610864.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJCx_D8evr_xqSSd54FZtqnTbJnm385uuGF-auEZ1dtH2pNncso_QvAbkrpZY",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/stars/news/game-day-guide-dallas-stars-at-vegas-golden-knights-111926",
+          "title": "Game Day Guide: Dallas Stars at Vegas Golden Knights",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJCx_D8evr_xqSSd54FZtqnTbJnm385uuGF-auEZ1dtH2pNncso_QvAbkrpZY"
+        },
+        {
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892737",
+          "title": "Stars 4-3 Golden Knights (Nov 17, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQjMJZuSScIgyzjX-g-Se4Hr-Gz_4mUk7gvrH1gfhixyBihu362iREq7aQrI8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/collapse-epic-proportions-3-observations-075610864.html",
+          "title": "A Collapse of Epic Proportions: 3 Observations as Golden Knights Suffer Historic Loss to Stars",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3neQ7OG0gr-eAdPlLMUU92gF5wuOqF2WMSjCrfEo2O1o8i_kfHjxj5_ClsgA"
+        }
+      ]
+    },
+    {
+      "query": "marvel infernal hulk",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T02:20:00Z",
+      "related_news_urls": [
+        "https://www.cbr.com/marvel-comics-hulk-war-infernal-rage-details/",
+        "https://bleedingcool.com/comics/where-the-wild-things-are-inside-hulk-war-infernal-rage/",
+        "https://aiptcomics.com/2026/11/18/marvel-infernal-avengers-hulk-war/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZb4ulj_bItSd7Uk1bKMEgu3Ubqw1hlwQBT91oHfVoBLo3wgi0yEtoyYkibW0",
+      "image_credit": "Comic Book Resources",
+      "news": [
+        {
+          "url": "https://www.cbr.com/marvel-comics-hulk-war-infernal-rage-details/",
+          "title": "A New Era for The Hulk Leads To Massive Changes to The Avengers",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZb4ulj_bItSd7Uk1bKMEgu3Ubqw1hlwQBT91oHfVoBLo3wgi0yEtoyYkibW0"
+        },
+        {
+          "url": "https://bleedingcool.com/comics/where-the-wild-things-are-inside-hulk-war-infernal-rage/",
+          "title": "Where The Wild Things Are, Inside Hulk War: Infernal Rage",
+          "publisher": "Bleeding Cool News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXa_YJMIaRS4lbID1twwV6CYiHPhlukfJmfsX_O-0CCGtNFOZblll7IkwLtQ"
+        },
+        {
+          "url": "https://aiptcomics.com/2026/11/18/marvel-infernal-avengers-hulk-war/",
+          "title": "Marvel unveils terrifying Infernal Avengers ahead of ‘Hulk War: Infernal Rage’ in February 2027",
+          "publisher": "AIPT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6gt416R9HN-53mcGar5UrrF9ls7s6dyCCvWhZJQfJeat8HJdYA7f23rsF5ZE"
+        }
+      ]
+    },
+    {
+      "query": "jennifer lawrence",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T02:20:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/de/news/ni66116447/?ref_=ttnw_art_perm",
+        "https://wwd.com/footwear-news/shoe-trends/jennifer-lawrence-jordyn-woods-shoes-2026-beauty-inc-awards-1239424559/",
+        "https://www.harpersbazaar.com/celebrity/latest/a74464800/jennifer-lawrence-dior-plunging-tuxedo-jacket-swan-clutch-beauty-inc-awards-red-carpet-photos/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKwy2gG9SRDzOjSFH1kKuOcL_Btma0d6PKgqXt-L9MCmGtmAmu0kCjZMTrXM",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/de/news/ni66116447/?ref_=ttnw_art_perm",
+          "title": "Jennifer Lawrence Rocks the Wet Hair Trend for Wwd’s Beauty Inc Awards",
           "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUD1kgzvuVj6nX6eUqdV9ttu6CQzsRt9OBCDDqo4sWrMYepaL-S5Q-oXTVH90"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKwy2gG9SRDzOjSFH1kKuOcL_Btma0d6PKgqXt-L9MCmGtmAmu0kCjZMTrXM"
+        },
+        {
+          "url": "https://wwd.com/footwear-news/shoe-trends/jennifer-lawrence-jordyn-woods-shoes-2026-beauty-inc-awards-1239424559/",
+          "title": "Jennifer Lawrence, Jordyn Woods' Shoes at 2026 Beauty Inc Awards",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQx6xFqlaVpBah2MYrkY3aWR6fxA9lQLi1i5m6LXwi3IPtwd-xdgbMywEqj_s0"
+        },
+        {
+          "url": "https://www.harpersbazaar.com/celebrity/latest/a74464800/jennifer-lawrence-dior-plunging-tuxedo-jacket-swan-clutch-beauty-inc-awards-red-carpet-photos/",
+          "title": "Jennifer Lawrence Endorses Fashion’s Latest Novelty Bag",
+          "publisher": "Harper's BAZAAR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwOlnNCnIsrwmsTItIprDIFsl0xfElNeVqtGCU9B6oZymxjLbI2D--w4tjA5s"
         }
       ]
     }
