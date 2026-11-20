@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T00:01:36.175446Z",
+  "checked_at": "2026-11-20T00:43:50.087191Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "oilers vs lightning",
+      "query": "taylor sheridan",
       "approx_searches": "1000+",
-      "published_at": "2026-11-19T23:40:00Z",
+      "published_at": "2026-11-20T00:20:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/oilers/news/projected-lineup-oilers-vs-lightning-11-01-26",
-        "https://www.cbssports.com/betting/news/oilers-vs-lightning-nhl-picks-can-tampa-bay-slow-edmontons-connor-mcdavid-in-possible-cup-finals-preview/",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/edmonton-oilers-vs-tampa-bay-lightning-prediction-odds-2026-11-19/"
+        "https://deadline.com/2026/11/frisco-king-trailer-release-date-taylor-sheridan-paramount-1237157647/",
+        "https://variety.com/2026/tv/news/tulsa-king-spinoff-frisco-king-trailer-samuel-l-jackson-1236951909/",
+        "https://movieweb.com/taylor-sheridan-frisco-king-upcoming-release/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGaFywNZJsM1RA7KwwI_BJUbZCV-doWqc94U1LXIvEBV1ngUiOT73RDn3qMkY",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkmp1fhFGlLMdFEvhwY42rNiA9HxpXa9LpmtYGQWegppu3kUmxKwrZMhUQgWg",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://www.nhl.com/oilers/news/projected-lineup-oilers-vs-lightning-11-01-26",
-          "title": "PROJECTED LINEUP: Oilers vs. Lightning",
-          "publisher": "NHL.com",
+          "url": "https://deadline.com/2026/11/frisco-king-trailer-release-date-taylor-sheridan-paramount-1237157647/",
+          "title": "‘Frisco King’ Trailer: Samuel L. Jackson “Is Gonna Rob This Place Blind” In Taylor Sheridan’s ‘Tulsa King’ Spinoff",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGaFywNZJsM1RA7KwwI_BJUbZCV-doWqc94U1LXIvEBV1ngUiOT73RDn3qMkY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkmp1fhFGlLMdFEvhwY42rNiA9HxpXa9LpmtYGQWegppu3kUmxKwrZMhUQgWg"
         },
         {
-          "url": "https://www.cbssports.com/betting/news/oilers-vs-lightning-nhl-picks-can-tampa-bay-slow-edmontons-connor-mcdavid-in-possible-cup-finals-preview/",
-          "title": "Oilers vs. Lightning NHL picks: Can Tampa Bay slow Edmonton's Connor McDavid in possible Cup Finals preview?",
-          "publisher": "CBS Sports",
+          "url": "https://variety.com/2026/tv/news/tulsa-king-spinoff-frisco-king-trailer-samuel-l-jackson-1236951909/",
+          "title": "‘Tulsa King’ Spinoff ‘Frisco King’ First Trailer Sees Samuel L. Jackson Building Crime Empire in Texas Suburbs",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs0Z2fLzsEuhAtTQOEMQ5qyKFE4E9tHbTeaX-Y7Mm9Vi13jSNxmOCKobT8qZE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzzMP5YJSGRE0Pi03QmuTXTVRWPyOL1rTSc0R8aY1-Wvg5mPTF_sHsTWg4-sY"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/edmonton-oilers-vs-tampa-bay-lightning-prediction-odds-2026-11-19/",
-          "title": "Edmonton Oilers vs Tampa Bay Lightning Prediction, Picks & Odds | 19 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://movieweb.com/taylor-sheridan-frisco-king-upcoming-release/",
+          "title": "Taylor Sheridan’s 4th Brand-New Series of 2026 Officially Releases in One Month",
+          "publisher": "MovieWeb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxiM1MecEy6HnV3eyPkba-klQt4k2qGV10ESJGbdktrfT5uyrpVLc9b9ofsQU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRoTIlGd6IyJaBT5pNOiz7_uv3Uaq_vrnz1UQooWbl6uTKU9q3WObbjZ5SE08"
         }
       ]
     },
     {
-      "query": "rice vs temple",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-19T23:40:00Z",
+      "query": "clippers vs spurs",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-20T00:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/betting/news/temple-rice-prediction-odds-time-spread-week-12-college-football-thursday-picks/",
-        "https://www.sportsbettingdime.com/news/college-football/thursday-predictions-picks-best-bets-nov-19/",
-        "https://www.underdogdynasty.com/american-conference/47807/2026-week-12-preview-rice-owls-temple-owls"
+        "https://www.poundingtherock.com/spurs-game-previews/110399/game-preview-san-antonio-spurs-vs-los-angeles-clippers",
+        "https://sports.yahoo.com/videos/exploit-las-sluggish-defense-spurs-163031800.html",
+        "https://www.nytimes.com/athletic/7795412/2026/11/19/clippers-vs-spurs-stream-how-to-watch-nov-19/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafZSu0kJXz27uVrh4-fop9kkvGE0VLX5U-SDe3cYUVe0rggygqIj5twDa8T8",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY0TIBouFxau2Dc5UqK6aQKMIWSe8KEMP9irf86IJEZ7g_1f9TlzJm9kvFa80",
+      "image_credit": "Pounding The Rock",
       "news": [
         {
-          "url": "https://www.cbssports.com/betting/news/temple-rice-prediction-odds-time-spread-week-12-college-football-thursday-picks/",
-          "title": "Temple vs. Rice prediction, odds, time: Week 12 college football Thursday picks from proven model",
-          "publisher": "CBS Sports",
+          "url": "https://www.poundingtherock.com/spurs-game-previews/110399/game-preview-san-antonio-spurs-vs-los-angeles-clippers",
+          "title": "Game Preview: San Antonio Spurs vs. Los Angeles Clippers",
+          "publisher": "Pounding The Rock",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafZSu0kJXz27uVrh4-fop9kkvGE0VLX5U-SDe3cYUVe0rggygqIj5twDa8T8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY0TIBouFxau2Dc5UqK6aQKMIWSe8KEMP9irf86IJEZ7g_1f9TlzJm9kvFa80"
         },
         {
-          "url": "https://www.sportsbettingdime.com/news/college-football/thursday-predictions-picks-best-bets-nov-19/",
-          "title": "Thursday College Football Predictions & Picks: Best Bets for November 19",
-          "publisher": "Sports Betting Dime",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_9r-k6oEyW9D-jJCABop-ZRLJnC79S-oXSQeIxs8pz85cFVKonQjRqqhw4vM"
-        },
-        {
-          "url": "https://www.underdogdynasty.com/american-conference/47807/2026-week-12-preview-rice-owls-temple-owls",
-          "title": "2026 Week 12 Preview: Rice Owls @ Temple Owls",
-          "publisher": "Underdog Dynasty",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA02bEa7lB8gE8dX6wfxWBiPBQm_lssj72el3u2avk9FbViZRn_ZdU-i4SDMM"
-        }
-      ]
-    },
-    {
-      "query": "tyler warren",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T23:40:00Z",
-      "related_news_urls": [
-        "https://www.draftsharks.com/article/don-t-trust-the-box-score--colts-are-holding-tyler-warren-back",
-        "https://sports.yahoo.com/articles/espn-insider-wonders-colts-te-195122527.html",
-        "https://www.indystar.com/story/sports/nfl/colts/2026/11/18/indianapolis-colts-tyler-warren-stats-targets-catches-production-head-coach-shane-steichen/92735880007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQXuhxybzDnNE2UbP9Vw74FHnzwu9VRYo2Uv6WfKTN32EaULoZOnVYxetdgI0",
-      "image_credit": "Draft Sharks",
-      "news": [
-        {
-          "url": "https://www.draftsharks.com/article/don-t-trust-the-box-score--colts-are-holding-tyler-warren-back",
-          "title": "Don’t Trust The Box Score: Colts Are Holding Tyler Warren Back",
-          "publisher": "Draft Sharks",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQXuhxybzDnNE2UbP9Vw74FHnzwu9VRYo2Uv6WfKTN32EaULoZOnVYxetdgI0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/espn-insider-wonders-colts-te-195122527.html",
-          "title": "ESPN Insider Wonders About Colts TE Tyler Warren",
+          "url": "https://sports.yahoo.com/videos/exploit-las-sluggish-defense-spurs-163031800.html",
+          "title": "Exploit LA's Sluggish Defense With Spurs 1H",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4iJdbUUyjStx0KuzThHAqmL-3o-DmWpfpW3iU7AunPmdbDzfWW7u-jmb3NM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCbZ_JGiIX_jd5MZDyuf19VVcrmEO11vAqAaHqZ0pTLz2BfAbsqW0lBp0znqs"
         },
         {
-          "url": "https://www.indystar.com/story/sports/nfl/colts/2026/11/18/indianapolis-colts-tyler-warren-stats-targets-catches-production-head-coach-shane-steichen/92735880007/",
-          "title": "Colts searching for how to involve 'naturally instinctive and talented' Tyler Warren",
-          "publisher": "IndyStar",
+          "url": "https://www.nytimes.com/athletic/7795412/2026/11/19/clippers-vs-spurs-stream-how-to-watch-nov-19/",
+          "title": "How to watch Clippers vs. Spurs: TV channel and streaming options for November 19",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSv0Ce74VEAq2DJJIBIdMI4JwVpBHAM-6L1JtlXqZyBjUknfBKtDlW2KZ1x3Ng"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXRQz-RZ6bJWpd31A8zcsPwTHbfwSGM3Zoz8bUvHmUiBrmJtz4ZiDyXh8spKs"
         }
       ]
     },
     {
-      "query": "weather san diego",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T23:40:00Z",
+      "query": "warriors vs grizzlies",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-20T00:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsandiego.com/news/local/fast-moving-storm-targets-san-diego-county/4104096/",
-        "https://fox5sandiego.com/weather/weak-atmospheric-river-san-diego/",
-        "https://www.10news.com/weather/san-diegos-weather-forecast-for-november-18-2026-rain-wind-surf-and-thunderstorms-thursday"
+        "https://sports.yahoo.com/articles/watch-warriors-vs-grizzlies-nba-000000671.html",
+        "https://warriors.com/news/gameday-preview-20261119",
+        "https://www.si.com/betting/warriors-vs-grizzlies-prediction-odds-and-best-nba-prop-bets-for-thursday-nov-19-2026"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQg8urMd18oW8qSBhzFzwNXpBiO3RdDUT2RBocZWZu2wouFXsgIM13N0XZEs38",
-      "image_credit": "NBC 7 San Diego",
-      "news": [
-        {
-          "url": "https://www.nbcsandiego.com/news/local/fast-moving-storm-targets-san-diego-county/4104096/",
-          "title": "Fast-moving storm targets San Diego County",
-          "publisher": "NBC 7 San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQg8urMd18oW8qSBhzFzwNXpBiO3RdDUT2RBocZWZu2wouFXsgIM13N0XZEs38"
-        },
-        {
-          "url": "https://fox5sandiego.com/weather/weak-atmospheric-river-san-diego/",
-          "title": "Atmospheric river to bring rain, gusty wind to San Diego County",
-          "publisher": "FOX 5 San Diego & KUSI News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vf3dWZ079qz2z75LcksAi7Z5lY4LhRVtbQjoHO6n_uQu13MjSbV4ThDRIms"
-        },
-        {
-          "url": "https://www.10news.com/weather/san-diegos-weather-forecast-for-november-18-2026-rain-wind-surf-and-thunderstorms-thursday",
-          "title": "San Diego's Weather Forecast for November 18, 2026: Rain, wind, surf and thunderstorms Thursday",
-          "publisher": "10News.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrJ7Z_NhZ-0yoI9yMtFKU9ovsC-MuI1TR36Jvd2fLcuZUffXbxPnG8LjBASDo"
-        }
-      ]
-    },
-    {
-      "query": "cincinnati vs orlando city",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T23:40:00Z",
-      "related_news_urls": [
-        "https://www.fccincinnati.com/news/matchday-preview-presented-by-kiesland-fc-cincinnati-visit-orlando-city-sc-for-wild-card-game-showdown",
-        "https://www.mlssoccer.com/news/mls-player-status-report-wild-card-games-thursday-november-19",
-        "https://sports.yahoo.com/articles/orlando-city-vs-fc-cincinnati-220100663.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFv9TR6DIUhk0hKtn85Xz67bcRCjtThoelamoBG5kn6qmLtVt5RZYrKqiVPUs",
-      "image_credit": "FC Cincinnati",
-      "news": [
-        {
-          "url": "https://www.fccincinnati.com/news/matchday-preview-presented-by-kiesland-fc-cincinnati-visit-orlando-city-sc-for-wild-card-game-showdown",
-          "title": "MATCHDAY PREVIEW presented by Kiesland | FC Cincinnati visit Orlando City SC for Wild Card game showdown",
-          "publisher": "FC Cincinnati",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFv9TR6DIUhk0hKtn85Xz67bcRCjtThoelamoBG5kn6qmLtVt5RZYrKqiVPUs"
-        },
-        {
-          "url": "https://www.mlssoccer.com/news/mls-player-status-report-wild-card-games-thursday-november-19",
-          "title": "MLS Player Status Report: Wild Card Games (Thursday, November 19)",
-          "publisher": "MLSsoccer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdLjwMVoZFtzwWsn_IiF0VwtGqeHxnxyNgAEEGOfV9jSj1UV3exGuEAa2g1q4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/orlando-city-vs-fc-cincinnati-220100663.html",
-          "title": "Orlando City vs FC Cincinnati: Odds, Lineups, TV Info",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRN-vDWKSgh0i0qNbxMssZweuNkr0oiGgwOtj5DI29ThL9S4g6vaa8EW9ZIb7s"
-        }
-      ]
-    },
-    {
-      "query": "tavien st. clair",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T23:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/ohio-state-ryan-day-sends-150119041.html",
-        "https://www.cleveland.com/letters/2026/11/ryan-days-quarterback-development-under-scrutiny-after-st-clair-benching.html",
-        "https://www.si.com/college/ohiostate/football/ryan-day-sheds-light-on-tavien-st-clair-and-the-current-quarterback-situation-01m7td84czsb"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqZxLyxp2_jc3SKIXKsIz8P6HPEGRZsoXcp00uRdbhBqa4AuIZMRUPkODVyFY",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWzCluk2VTNOHHMVK8WGOqECaHjeMNVN2shigCi77ue-ERdlAbfOuTwCxYZJw",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/ohio-state-ryan-day-sends-150119041.html",
-          "title": "Ohio State’s Ryan Day Sends Strong Message on QB Tavien St. Clair",
+          "url": "https://sports.yahoo.com/articles/watch-warriors-vs-grizzlies-nba-000000671.html",
+          "title": "How to watch Warriors vs Grizzlies: NBA, live stream, TV channel, start time",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqZxLyxp2_jc3SKIXKsIz8P6HPEGRZsoXcp00uRdbhBqa4AuIZMRUPkODVyFY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWzCluk2VTNOHHMVK8WGOqECaHjeMNVN2shigCi77ue-ERdlAbfOuTwCxYZJw"
         },
         {
-          "url": "https://www.cleveland.com/letters/2026/11/ryan-days-quarterback-development-under-scrutiny-after-st-clair-benching.html",
-          "title": "Ryan Day benched his 5-star QB during a 24-point deficit — and a fan isn't letting it go",
-          "publisher": "Cleveland.com",
+          "url": "https://warriors.com/news/gameday-preview-20261119",
+          "title": "Game Preview: Warriors at Memphis Grizzlies - 11/19/26",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvj2FOXCYD9bO8chxBEER1Yg9r9iFFbJeKFpqvK944HKVai3e3WSW8TLZjN1I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyoYUhOmiqw3KnW2L9d_1RTI7DPQgwiyiRe7oFbBodxTOd5RhJeTbQMTjAgOM"
         },
         {
-          "url": "https://www.si.com/college/ohiostate/football/ryan-day-sheds-light-on-tavien-st-clair-and-the-current-quarterback-situation-01m7td84czsb",
-          "title": "Ryan Day Sheds Light on Tavien St. Clair and the Current Quarterback Situation",
+          "url": "https://www.si.com/betting/warriors-vs-grizzlies-prediction-odds-and-best-nba-prop-bets-for-thursday-nov-19-2026",
+          "title": "Warriors vs. Grizzlies Prediction, Odds and Best NBA Prop Bets for Thursday, Nov. 19",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRADBfwYWLnOjDewLCIsmmsNZZ8POj0I1VQltsnH3m5uP2KS8cC_Nk9HRel8mE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpxJkeYztn5taKzM0G_Y6gVnBG9PrCelyXs33WIq_rv9rlGAGJEfuHOMhyhlc"
         }
       ]
     },
     {
-      "query": "palm bay florida",
-      "approx_searches": "500+",
-      "published_at": "2026-11-19T23:30:00Z",
+      "query": "trail blazers vs bucks",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T00:10:00Z",
       "related_news_urls": [
-        "https://www.clickorlando.com/news/local/2026/11/19/mandatory-evacuation-issued-in-palm-bay-estates-over-flooding/",
-        "https://mynews13.com/fl/orlando/news/2026/11/19/palm-bay-issues-mandatory-evacuations-for-part-of-palm-bay-estates",
-        "https://www.fox35orlando.com/video/fmc-airofx06m8wjldbs"
+        "https://www.jsonline.com/story/sports/nba/bucks/2026/11/19/damian-lillard-jrue-holiday-traded-to-play-milwaukee-bucks-as-portland-trail-blazers/92841707007/",
+        "https://sports.yahoo.com/articles/bucks-face-more-familiar-faces-225354790.html",
+        "https://www.blazersedge.com/gameday-coverage/118627/portland-trail-blazers-milwaukee-bucks-nba-preview-start-tv-injuries-damian-lillard-deni-avdija-jrue-holiday-giannis"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQH_oawvbOjt0WPyHKj-6qGWEUklyLNFPh9oWgVyN9qXnxzOhDcyPBjtwYMjUA",
-      "image_credit": "WKMG",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXfmSK8HOO8WVyOs-d55YJUbxQd8Iq3vJppmvZUaVP6ffNGQSQGpbmAq6Wto",
+      "image_credit": "Milwaukee Journal Sentinel",
       "news": [
         {
-          "url": "https://www.clickorlando.com/news/local/2026/11/19/mandatory-evacuation-issued-in-palm-bay-estates-over-flooding/",
-          "title": "Mandatory evacuation issued in Palm Bay Estates over flooding",
-          "publisher": "WKMG",
+          "url": "https://www.jsonline.com/story/sports/nba/bucks/2026/11/19/damian-lillard-jrue-holiday-traded-to-play-milwaukee-bucks-as-portland-trail-blazers/92841707007/",
+          "title": "Damian Lillard and Jrue Holiday, once traded for each other, to face Bucks",
+          "publisher": "Milwaukee Journal Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQH_oawvbOjt0WPyHKj-6qGWEUklyLNFPh9oWgVyN9qXnxzOhDcyPBjtwYMjUA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXfmSK8HOO8WVyOs-d55YJUbxQd8Iq3vJppmvZUaVP6ffNGQSQGpbmAq6Wto"
         },
         {
-          "url": "https://mynews13.com/fl/orlando/news/2026/11/19/palm-bay-issues-mandatory-evacuations-for-part-of-palm-bay-estates",
-          "title": "Palm Bay issues mandatory evacuations for part of Palm Bay Estates",
-          "publisher": "Spectrum News 13",
+          "url": "https://sports.yahoo.com/articles/bucks-face-more-familiar-faces-225354790.html",
+          "title": "Bucks will face more familiar faces at Fiserv Forum | Game updates",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyyoDuDJYkjdCKpmkWKa4QSvHJtuaGEcpIUeKEjO3FqP1zcYTUlFwZJM4VOAM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxTcNp5hQG5H-EuI_9vKSSTwYfg4scWHdan8sBVZcWOTvFNW8A_B5Pfm0Ln8E"
         },
         {
-          "url": "https://www.fox35orlando.com/video/fmc-airofx06m8wjldbs",
-          "title": "Saint Johns River hits record flood stage",
-          "publisher": "FOX 35 Orlando",
+          "url": "https://www.blazersedge.com/gameday-coverage/118627/portland-trail-blazers-milwaukee-bucks-nba-preview-start-tv-injuries-damian-lillard-deni-avdija-jrue-holiday-giannis",
+          "title": "Trail Blazers vs. Bucks Preview",
+          "publisher": "Blazer's Edge",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuyMsQfaD35_Fa8hzukat0MhmWn6mwsJTgnNavmZs2W0aPEoj0nQFjCpfl9Qc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPmySKl0OSph3X1jrcGkGY3WRulJW8R-2OXaAmkT9pRa7qGI83VzUq3dL22o"
         }
       ]
     },
     {
-      "query": "texas tech vs unc",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T23:30:00Z",
+      "query": "blue jackets vs blackhawks",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T00:10:00Z",
       "related_news_urls": [
-        "https://goheels.com/news/2026/11/18/womens-basketball-no-24-wbb-open-wbca-showcase-in-orlando-vs-texas-tech-thursday",
-        "https://www.dailytoreador.com/article/lady-raiders-set-for-three-games-at-the-most-magical-place-on-earth-20261119",
-        "https://www.nytimes.com/athletic/7795155/2026/11/19/texas-tech-vs-north-carolina-stream-how-to-watch-nov-19/"
+        "https://www.nytimes.com/athletic/7795518/2026/11/19/blue-jackets-vs-blackhawks-stream-how-to-watch-nov-19/",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/columbus-blue-jackets-vs-chicago-blackhawks-prediction-odds-2026-11-19/",
+        "https://www.nhl.com/news/columbus-blue-jackets-chicago-blackhawks-game-preview-november-19-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjNi0FlF_j-wyoOqG2NK7P8IgXpmDxl-jAVd8GD_nmLGqvZLBgsBwDWHrPbQ",
-      "image_credit": "University of North Carolina Athletics",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdNiBV-nrVwj38IikJLzF9PGN41YazaALIKhxcCI4d0bWjW6MYOTQ2RXaWo9Q",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://goheels.com/news/2026/11/18/womens-basketball-no-24-wbb-open-wbca-showcase-in-orlando-vs-texas-tech-thursday",
-          "title": "No. 24 WBB Opens WBCA Showcase In Orlando Vs. Texas Tech Thursday - University of North Carolina Athletics",
-          "publisher": "University of North Carolina Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjNi0FlF_j-wyoOqG2NK7P8IgXpmDxl-jAVd8GD_nmLGqvZLBgsBwDWHrPbQ"
-        },
-        {
-          "url": "https://www.dailytoreador.com/article/lady-raiders-set-for-three-games-at-the-most-magical-place-on-earth-20261119",
-          "title": "Lady Raiders set for three games at ‘The Most Magical Place on Earth’",
-          "publisher": "The Daily Toreador",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYgazpWpcyrpGaf458orhctp7sMAhkhUxWfarA5gUt6XH1oHu3kXOKjLgubyw"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7795155/2026/11/19/texas-tech-vs-north-carolina-stream-how-to-watch-nov-19/",
-          "title": "How to watch Texas Tech vs. North Carolina women’s basketball: TV channel and streaming options for November 19",
+          "url": "https://www.nytimes.com/athletic/7795518/2026/11/19/blue-jackets-vs-blackhawks-stream-how-to-watch-nov-19/",
+          "title": "How to watch Blue Jackets vs. Blackhawks: TV channel and streaming options for November 19",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcI2NF08CSkRh_MDc5lGL47FfpBroNagacD1XeScJ0B-2-pKi6rEHJ-6k8OFo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdNiBV-nrVwj38IikJLzF9PGN41YazaALIKhxcCI4d0bWjW6MYOTQ2RXaWo9Q"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/columbus-blue-jackets-vs-chicago-blackhawks-prediction-odds-2026-11-19/",
+          "title": "Columbus Blue Jackets vs Chicago Blackhawks Prediction, Picks & Odds | 19 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzKJzO2-O5ASc0A3LCJQeIvaM1jQI4cv-_9zzAZHrrYN_rGRJzSShSeFbMubA"
+        },
+        {
+          "url": "https://www.nhl.com/news/columbus-blue-jackets-chicago-blackhawks-game-preview-november-19-2026",
+          "title": "Blue Jackets at Blackhawks projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         }
       ]
     },
     {
-      "query": "blake lively",
-      "approx_searches": "200+",
-      "published_at": "2026-11-19T23:30:00Z",
+      "query": "ps5 games",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-20T00:10:00Z",
       "related_news_urls": [
-        "https://starmagazine.com/blake-lively-plots-a-surprising-career-move-after-her-it-ends-with-us-drama-done-hiding/",
-        "https://www.washingtontimes.com/news/2026/nov/12/blake-livelys-beverage-company-goes-drain-feud-justin-baldoni/",
-        "https://www.magzter.com/stories/celebrity/Star/BLAKE-LIVELY-GOING-BUST"
+        "https://www.axios.com/2026/11/18/gta-6-playstation-psn-servers",
+        "https://www.wral.com/news/local/outage-hits-playstation-network-on-eve-grand-theft-auto-vi-release-november-2026/",
+        "https://www.theguardian.com/games/2026/nov/18/playstation-down-grand-theft-auto-vi-game-release"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYunmrXRZYUGJK9T8AbDSr-9byYH4yJ0xk-4C5OqZcGPq_S6u5nrBQ2mmuG_Y",
-      "image_credit": "starmagazine.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJp59FT1FR4NKrMPCKT2lgCdp9d0dB7wiVEZaYwOU0SfMTyMj6U-hqRbP7QFE",
+      "image_credit": "Axios",
       "news": [
         {
-          "url": "https://starmagazine.com/blake-lively-plots-a-surprising-career-move-after-her-it-ends-with-us-drama-done-hiding/",
-          "title": "Blake Lively Plots a Surprising Career Move After Her ‘It Ends With Us’ Drama: ‘Done Hiding’",
-          "publisher": "starmagazine.com",
+          "url": "https://www.axios.com/2026/11/18/gta-6-playstation-psn-servers",
+          "title": "PlayStation suffers major outage hours before \"GTA VI\" launch",
+          "publisher": "Axios",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYunmrXRZYUGJK9T8AbDSr-9byYH4yJ0xk-4C5OqZcGPq_S6u5nrBQ2mmuG_Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJp59FT1FR4NKrMPCKT2lgCdp9d0dB7wiVEZaYwOU0SfMTyMj6U-hqRbP7QFE"
         },
         {
-          "url": "https://www.washingtontimes.com/news/2026/nov/12/blake-livelys-beverage-company-goes-drain-feud-justin-baldoni/",
-          "title": "Blake Lively’s beverage company goes down the drain after feud with Justin Baldoni",
-          "publisher": "Washington Times",
+          "url": "https://www.wral.com/news/local/outage-hits-playstation-network-on-eve-grand-theft-auto-vi-release-november-2026/",
+          "title": "Reports: PlayStation Network outages spike during 'Grand Theft Auto VI' release",
+          "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRto2fMy89Nf2AwvCvH_KP9hZPEZNS2xv0XJO7-n8nBjw4u1Ic_OAKOuFIb_kA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdh_Ec4DfKRzXICbVRlpVEdso8G_FfYm9td5QZN5L6YZAxkqX50I8BWtQTZKo"
         },
         {
-          "url": "https://www.magzter.com/stories/celebrity/Star/BLAKE-LIVELY-GOING-BUST",
-          "title": "BLAKE LIVELY: GOING BUST | Star - celebrity",
-          "publisher": "Magzter",
+          "url": "https://www.theguardian.com/games/2026/nov/18/playstation-down-grand-theft-auto-vi-game-release",
+          "title": "PlayStation suffers widespread network problems hours before release of GTA VI",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTv-M7IC3PULB6cTXLSifDpYm9oM9NIY0S-mXafoFtpFSSepnJECS7VKafAkiY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkvX0kUxit9LksBXBvlCgCGDmMcp7pThqNuMaYnIJ5qWgULe2WI0HLIR0cXcc"
         }
       ]
     },
     {
-      "query": "vella campillo arizona desert rescue",
+      "query": "umbc basketball",
       "approx_searches": "500+",
-      "published_at": "2026-11-19T23:20:00Z",
+      "published_at": "2026-11-20T00:00:00Z",
       "related_news_urls": [
-        "https://abcnews.com/US/toddler-rescued-after-walking-remote-area-arizona-desert/story?id=138286121",
-        "https://www.azfamily.com/2026/11/19/man-honored-after-finding-missing-eloy-toddler-2-miles-home/",
-        "https://www.fox10phoenix.com/news/hero-citizen-finds-missing-2-year-old-girl-vella-campillo-eloy"
+        "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-hosts-umbc-retrievers-292971007/",
+        "https://www.dispatch.com/story/sports/college/basketball/2026/11/19/ohio-state-umbc-basketball-how-to-watch-stream-game/92842192007/",
+        "https://www.yahoo.com/news/videos/dispatch-writer-adam-jardy-previews-222749656.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDFbJ-4WRXeIoqRW6h7V8N9MvVv4_MuE6KPkVrJia8r0SEqo8n6WRkrWLDnuY",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYM_-xBVvMjNFTU6_eJKSLuaOqYlwhMzWywhTNesutM-gAB4QwOwYuxEa1Xk4",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://abcnews.com/US/toddler-rescued-after-walking-remote-area-arizona-desert/story?id=138286121",
-          "title": "Toddler rescued after walking into remote area of Arizona desert",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-hosts-umbc-retrievers-292971007/",
+          "title": "What To Watch: Ohio State seeks to play complete game vs. Maryland-Baltimore Co.",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDFbJ-4WRXeIoqRW6h7V8N9MvVv4_MuE6KPkVrJia8r0SEqo8n6WRkrWLDnuY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYM_-xBVvMjNFTU6_eJKSLuaOqYlwhMzWywhTNesutM-gAB4QwOwYuxEa1Xk4"
         },
         {
-          "url": "https://www.azfamily.com/2026/11/19/man-honored-after-finding-missing-eloy-toddler-2-miles-home/",
-          "title": "Man honored for finding missing Eloy toddler 2 miles from home",
-          "publisher": "AZ Family",
+          "url": "https://www.dispatch.com/story/sports/college/basketball/2026/11/19/ohio-state-umbc-basketball-how-to-watch-stream-game/92842192007/",
+          "title": "Where to watch Ohio State vs. UMBC basketball today: Time, TV channel for game",
+          "publisher": "The Columbus Dispatch",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpgo2IM04cjSwIdQYPtgPryNIP--smaX5w8GqyaENhV-rRmnBRJLCLPfcyTbw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqspik0Z7g4XxIK04D7bGGih6h3Ij9K_isFCHAch3VFYUZ8Cs-KaZ_Z-2cu58"
         },
         {
-          "url": "https://www.fox10phoenix.com/news/hero-citizen-finds-missing-2-year-old-girl-vella-campillo-eloy",
-          "title": "Hero citizen finds missing 2-year-old girl Vella Campillo in Eloy",
-          "publisher": "FOX 10 Phoenix",
+          "url": "https://www.yahoo.com/news/videos/dispatch-writer-adam-jardy-previews-222749656.html",
+          "title": "Dispatch writer Adam Jardy previews Ohio State's game vs UMBC",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSG2BcVZb3QIF3U4QVoDjR5UzygCAWDXDZM6QY14grjwvqZLFn84BO4MOS7-Ms"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdV8sJzxduwxZyBSwhaPUVR9RKv3W6GoabTKUeT_E-kQyWmCijc5SHWMxNl54"
+        }
+      ]
+    },
+    {
+      "query": "guy ritchie",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T00:00:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66110391/?ref_=nmnw_art_perm",
+        "https://www.cbr.com/jake-gyllenhaal-in-the-grey-action-thriller-starz-success-november-2026/",
+        "https://screenrant.com/henry-cavill-guy-ritchie-in-the-grey-starz-streaming-chart-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI6YhifwbTe279unpjt_sxvP5lTLviy4ie0NnUxCQXYwvh9LYihUIJllbWkew",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66110391/?ref_=nmnw_art_perm",
+          "title": "Henry Cavill & Guy Ritchie's 97-Minute Spy Thriller Flop Officially Becomes the No. 1 Movie On Streaming",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI6YhifwbTe279unpjt_sxvP5lTLviy4ie0NnUxCQXYwvh9LYihUIJllbWkew"
+        },
+        {
+          "url": "https://www.cbr.com/jake-gyllenhaal-in-the-grey-action-thriller-starz-success-november-2026/",
+          "title": "Jake Gyllenhaal's 97-Minute Action Thriller Flop Returns as the No. 1 Film on Streaming",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT45xfRaapO_Uzbg6TzCqb5d5Ch1_BkQnzoM_fZA-mXQFfiR6HUrCja6b97Cho"
+        },
+        {
+          "url": "https://screenrant.com/henry-cavill-guy-ritchie-in-the-grey-starz-streaming-chart-november-2026/",
+          "title": "Henry Cavill & Guy Ritchie's R-Rated Spy Thriller Is Officially One Of The Biggest Movies On Streaming",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-7EbMxa8H_dhyurTCBFIJtPQcm_vqXKV5Hh9vIaFG_NMlGmJMVpxN3wue-k"
+        }
+      ]
+    },
+    {
+      "query": "mario lopez",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T00:00:00Z",
+      "related_news_urls": [
+        "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
+        "https://www.yahoo.com/entertainment/movies/articles/holiday-movies-feature-family-romance-183638413.html",
+        "https://www.noticiasnewswire.com/mario-lopezs-three-generations-one-christmas/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEL2mG91It2YtQoqCcXlyuANG3n6UUZLvakMz_O_Y2KBg9-jIN0xju3yxWS4",
+      "image_credit": "The National Desk",
+      "news": [
+        {
+          "url": "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
+          "title": "Mario Lopez on working with his son and Tony Danza in 'Three Generations, One Christmas'",
+          "publisher": "The National Desk",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEL2mG91It2YtQoqCcXlyuANG3n6UUZLvakMz_O_Y2KBg9-jIN0xju3yxWS4"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/holiday-movies-feature-family-romance-183638413.html",
+          "title": "Holiday movies feature family, romance, music, football",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfAafd5jZ8sN8YWB7JLr_T3ilkniiR0ADbUa3dq37L43gtDsDoZ8BK-DwhgNA"
+        },
+        {
+          "url": "https://www.noticiasnewswire.com/mario-lopezs-three-generations-one-christmas/",
+          "title": "Mario Lopez’s ‘Three Generations, One Christmas’ to Premiere on Pure Flix Familia November 19",
+          "publisher": "Noticias Newswire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvQyso9QhXvi-GDzsVjIVNt02AnZk65GjOrAlpeXCvGiQPYFYgTk3kAm2zSbA"
+        }
+      ]
+    },
+    {
+      "query": "marvel announces iron man replacement",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-19T23:50:00Z",
+      "related_news_urls": [
+        "https://screenrant.com/iron-man-replacement-thing-marvel-infernal-hulk/",
+        "https://demokratis.co.id/en/marvel-iron-man-iron-thing",
+        "https://www.imdb.com/news/ni66119498/?ref_=ttnw_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdRWJ9H4lEBS_H6oXvMZTfPu19GO-KazhFAhbjZGGN81o_2IIufdS7quf4U-8",
+      "image_credit": "ScreenRant",
+      "news": [
+        {
+          "url": "https://screenrant.com/iron-man-replacement-thing-marvel-infernal-hulk/",
+          "title": "Marvel Officially Announces Name Of New Iron Man Replacement",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdRWJ9H4lEBS_H6oXvMZTfPu19GO-KazhFAhbjZGGN81o_2IIufdS7quf4U-8"
+        },
+        {
+          "url": "https://demokratis.co.id/en/marvel-iron-man-iron-thing",
+          "title": "Marvel Names Iron Man's New Form The Iron Thing",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0yNTx266_zzjAJPUGW8WwWujee3Jbym9hu0iOJoPcSWljX9HQWgfqriMRqnk"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66119498/?ref_=ttnw_art_perm",
+          "title": "Marvel Officially Announces Name Of New Iron Man Replacement",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFsEuQi_Kno_AmOR5NNpdj9YBZlMNwJ4m3aPUB89ngqfS78j15kjgimr1Yycc"
         }
       ]
     }
