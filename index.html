@@ -1094,6 +1094,14 @@ async function loadExpandedDataIndex(q,currentSections,currentEvidence){
   q+' related subjects entities'
  ];
  const batches=await Promise.all(queries.map(async searchTerm=>{
+  // The original topic was fetched for the first attributed results. Reuse
+  // its reviewed public evidence instead of sending an identical second request.
+  if(searchTerm===q&&Array.isArray(currentEvidence)){
+   const existing=currentEvidence.filter(x=>{try{return /^https?:$/.test(new URL(x.url).protocol)}catch{return false}})
+    .slice(0,6).map((x,i)=>({index:i,title:String(x.title||'').slice(0,220),url:x.url,
+     evidence:String(x.evidence||x.snippet||'').replace(/\s+/g,' ').slice(0,650)}));
+   if(existing.length)return {query:searchTerm,results:existing};
+  }
   try{
    const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
    u.search=new URLSearchParams({q:searchTerm,format:'json',categories:'general',safesearch:'1'});
