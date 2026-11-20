@@ -9,6 +9,7 @@ import {mountMarketplaceCarousel} from './quanta-marketplace-carousel.mjs?v=2026
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
 import {mountMotorcycleQuickCard} from './motorcycle-quick-cards.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
+import {mountCreatorPostCard} from './creator-post-cards.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
  */
@@ -51,7 +52,14 @@ export function createCardArtwork(card,small=false){
  const theme=/radio/.test(text)?'radio':/music|karaoke|starmaker/.test(text)?'music':/youtube|video|tiktok/.test(text)?'video':/news|cnn|fox/.test(text)?'news':/social|facebook|instagram|reddit|whatsapp|x \/ grok/.test(text)?'social':/coin|vam|silver|gold|mint|pcgs|ngc/.test(text)?'coin':/market|ebay|toy|antique/.test(text)?'market':/finance|invest|robinhood|chime/.test(text)?'finance':/science|knowledge|wikipedia/.test(text)?'research':'other';
  art.dataset.theme=variants.includes(theme)?theme:'other';
  art.dataset.brand=/^[a-z0-9-]{1,45}$/.test(card.id||'')?card.id:'other';
- if(card.id==='fox-one'||card.id==='fox-one-live-news'){
+ if(card.creatorId&&card.image){
+  art.classList.add('qcx-creator-art');
+  const portrait=node('img','qcx-creator-portrait');portrait.alt='Elena Cardone · X profile portrait';
+  portrait.src=card.image;portrait.loading='lazy';portrait.referrerPolicy='no-referrer';
+  portrait.addEventListener('error',()=>portrait.remove(),{once:true});
+  art.append(portrait,node('span','qcx-art-kicker','INFINITY 2026® · PUBLIC SOURCE'),
+   node('strong','qcx-brand-title',title),node('span','qcx-brand-caption',card.postId?'Source-linked post · independent summary':'Indexed posts · browse by topic'));
+ }else if(card.id==='fox-one'||card.id==='fox-one-live-news'){
   art.classList.add('qcx-fox-one');
   const foxWordmark=node('img','qcx-fox-one-logo');
   foxWordmark.alt='FOX One official wordmark';foxWordmark.loading='lazy';
@@ -398,6 +406,9 @@ export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(mountCreatorPostCard(root,card)){
+  mountCardActions(root,card,{showSearch:false});return;
+ }
  if(id==='pcla-picocela'){
   mountPclaResearch(root,card);
   mountCardActions(root,card,{showSearch:false});
