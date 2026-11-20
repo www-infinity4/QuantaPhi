@@ -1,0 +1,25 @@
+/* Infinity retail destination cards. Source/photo first, neutral actions. */
+.denver-retail-card{box-sizing:border-box;background:#fff!important;color:#292b2e!important;border:1px solid #d8dcdf!important;border-radius:20px!important;overflow:hidden;padding:0!important;margin:0;box-shadow:0 10px 28px #17202d12}
+.denver-retail-card .denver-retail-visual{display:block;position:relative;width:100%;min-height:210px;overflow:hidden;text-decoration:none!important;color:#1c2934!important;background:#f2f4f5}
+.denver-retail-card .denver-retail-photo{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center;background:#f2f4f5}
+.denver-retail-card .denver-retail-photo-credit{position:absolute;right:10px;bottom:9px;padding:5px 8px;background:#fffE;color:#374047;font:650 10px/1.3 system-ui,sans-serif;border-radius:8px}
+.denver-retail-card .denver-retail-no-photo{min-height:230px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;padding:26px;background:linear-gradient(135deg,#f5f6f4,#e6ecee)}
+.denver-retail-card .denver-retail-visual-label{color:#656f73;font:800 11px/1.2 system-ui,sans-serif;letter-spacing:.09em}
+.denver-retail-card .denver-retail-feature{color:#1d2e32;font:800 clamp(27px,7vw,38px)/1.08 system-ui,sans-serif;letter-spacing:-.045em}
+.denver-retail-card .denver-retail-product-preview{color:#4d5a61;font:550 15px/1.5 system-ui,sans-serif}
+.denver-retail-card .denver-retail-info{padding:18px 19px 22px}
+.denver-retail-card .denver-retail-kicker{margin:0 0 8px;color:#606a6d;font:800 10px/1.5 system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase}
+.denver-retail-card .denver-retail-name{margin:0 0 8px;color:#222c32;font:800 clamp(21px,5.4vw,27px)/1.2 system-ui,sans-serif;letter-spacing:-.025em}
+.denver-retail-card .denver-retail-description{color:#475157;font:450 15px/1.55 system-ui,sans-serif;margin:0 0 15px}
+.denver-retail-card .denver-retail-products{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}
+.denver-retail-card .denver-retail-product{display:inline-block;padding:7px 10px;border:1px solid #d7dddf;border-radius:100px;background:#f5f7f7;color:#35444a;font:700 12px/1.3 system-ui,sans-serif}
+.denver-retail-card .denver-retail-address,.denver-retail-card .denver-retail-hours{color:#444f54;font:550 13px/1.5 system-ui,sans-serif;margin:6px 0}
+.denver-retail-card .denver-retail-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:16px 0}
+.denver-retail-card .denver-retail-action{box-sizing:border-box;display:flex;min-height:50px;justify-content:center;align-items:center;padding:9px 12px;border:1px solid #bcc7cb;border-radius:12px;text-decoration:none!important;text-align:center;font:750 13px/1.35 system-ui,sans-serif;color:#273a43!important;background:#f7f9f9;overflow-wrap:anywhere}
+.denver-retail-card .denver-retail-action:first-child{background:#294554;color:#fff!important;border-color:#294554}
+.denver-retail-card .denver-retail-note{color:#697276;font:450 11px/1.55 system-ui,sans-serif;margin:12px 0}
+.denver-retail-card .denver-retail-shared-actions{margin-top:10px}
+.denver-retail-card .denver-retail-shared-actions .qca-toolbar :is(button,a){background:#f6f7f8!important;color:#344047!important;border:1px solid #cbd2d5!important;box-shadow:none!important}
+.denver-retail-card :is(a,button):focus-visible{outline:3px solid #227bb1;outline-offset:3px}
+@media(max-width:370px){.denver-retail-card .denver-retail-info{padding:14px}.denver-retail-card .denver-retail-links{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.denver-retail-card *{transition:none!important;animation:none!important}}

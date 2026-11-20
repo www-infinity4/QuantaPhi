@@ -1,5 +1,7 @@
 const status=document.getElementById('bubblesPublicXLiveStatus');
 const detail=document.getElementById('bubblesPublicXLiveDetail');
+const secondary=document.getElementById('bubblesPublicXSecondaryStatus');
+const starcraft=document.getElementById('bubblesPublicXStarCraftStatus');
 if(status){
  fetch('/api/bubbles/public-x/health',{cache:'no-store'})
  .then(r=>r.ok?r.json():Promise.reject(Error('HTTP '+r.status)))
@@ -18,8 +20,28 @@ if(status){
    status.textContent='Public X reader is configured; awaiting a verified scan';
    if(detail)detail.textContent='Check the first hourly scan receipt before calling it connected.';
   }
+  if(secondary){
+   const source=Array.isArray(v.sources)?v.sources.find(item=>item.account==='IntegraAI'&&item.authority==='reference_only'):null;
+   const sub=source?.readStatus;
+   if(sub?.status==='public_posts_observed'){
+    secondary.textContent='Integra · read-only context verified: '+(sub.last_success||'unverified')+' · Visible posts: '+(sub.visible_count??0)+' · Newly recorded: '+(sub.new_count??0)+'. This does not authorize builds or X replies.';
+   }else if(sub?.status==='blocked'){
+    secondary.textContent='Integra · read-only context blocked at '+(sub.last_checked||'unknown')+' · '+(sub.error||'no error detail')+'. Last success: '+(sub.last_success||'none verified')+'. The owner reader has a separate status.';
+   }else{
+    secondary.textContent='Integra · read-only context not verified yet. This does not affect the owner reader.';
+   }
+  }
+  if(starcraft){
+   const source=Array.isArray(v.sources)?v.sources.find(item=>item.account==='StarCraftCo'&&item.authority==='reference_only'):null;
+   const sc=source?.readStatus;
+   if(sc?.status==='public_posts_observed')starcraft.textContent='StarCraftCo · public context verified: '+(sc.last_success||'unverified')+' · Visible: '+(sc.visible_count??0)+' · New: '+(sc.new_count??0)+'. Read-only, not owner authorization.';
+   else if(sc?.status==='blocked')starcraft.textContent='StarCraftCo · public context blocked at '+(sc.last_checked||'unknown')+' · '+(sc.error||'no error detail')+'. Last success: '+(sc.last_success||'none verified')+'.';
+   else starcraft.textContent='StarCraftCo · source registered, public scan not yet verified. Other sources remain separate.';
+  }
  }).catch(()=>{
   status.textContent='Reader status not available';
   if(detail)detail.textContent='The browser scan has not been verified here; check the service health or Cloudflare logs.';
+  if(secondary)secondary.textContent='Integra read-only context status unavailable; no successful secondary scan is claimed.';
+  if(starcraft)starcraft.textContent='StarCraftCo context status unavailable; no successful scan is claimed.';
  });
 }

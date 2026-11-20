@@ -1,0 +1,29 @@
+/* Neutral mobile-first organic source directory; not cannabis product advertising. */
+/* The original root is hidden in the collapsed shelf, but visible in the active Oracle stage. */
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app > #cannabisDirectoryCard{display:none!important}
+.icd-card{max-width:820px;margin:16px auto;padding:16px;background:#fff;color:#263641;border:1px solid #d3dde2;border-radius:18px;box-shadow:0 5px 20px #1b28330e;font-family:system-ui,-apple-system,Roboto,sans-serif;line-height:1.48}
+.icd-kicker{font-size:11px;letter-spacing:.07em;font-weight:800;color:#657780}
+.icd-title{font-size:clamp(21px,4vw,27px)!important;line-height:1.2!important;margin:8px 0!important;color:#203848!important}
+.icd-intro,.icd-note{font-size:14px;color:#53646f;margin:8px 0 12px}
+.icd-note{font-size:12px}
+.icd-control{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border:1px solid #b8c6cf;border-radius:10px;background:#fff;color:#23475f!important;font:700 14px system-ui,-apple-system,Roboto,sans-serif;text-decoration:none!important;cursor:pointer;text-align:center}
+.icd-control:hover,.icd-control:focus-visible{background:#edf3f6}
+.icd-control:focus-visible,.icd-field:focus-visible,.icd-quiet:focus-visible{outline:3px solid #78a5c4;outline-offset:2px}
+.icd-control:disabled{opacity:.48;cursor:default}
+.icd-enter{width:100%;min-height:50px;font-size:16px}
+.icd-form{display:grid;grid-template-columns:75px minmax(0,1fr) minmax(0,1fr) auto;gap:7px;margin:12px 0}
+.icd-field{width:100%;min-width:0;min-height:44px;border:1px solid #b9c7cf;border-radius:10px;background:#fff;color:#273c49;font:500 14px system-ui;padding:8px}
+.icd-status{min-height:22px;font-size:13px;color:#53636e}
+.icd-listing{padding:16px;border:1px solid #d8e2e7;border-radius:13px;background:#f8fafb}
+.icd-badge{font-size:11px;font-weight:850;letter-spacing:.04em;color:#355a70}
+.icd-name{font-size:clamp(20px,4vw,27px)!important;line-height:1.18!important;color:#1c384b!important;margin:8px 0!important}
+.icd-address{font-size:15px;font-weight:700;color:#354e5c}
+.icd-source,.icd-quality{font-size:12px;color:#596a75}
+.icd-links,.icd-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.icd-links .icd-control{flex:1 1 180px}
+.icd-count{font-size:12px;color:#64747e}
+.icd-quiet{margin-top:12px;padding:8px 0;border:0;background:transparent;color:#465d6c;text-decoration:underline;cursor:pointer}
+.icd-card [hidden]{display:none!important}
+@media(max-width:650px){.icd-form{grid-template-columns:70px 1fr}.icd-form .icd-control{grid-column:1/-1}.icd-card{padding:14px}}
+@media(max-width:360px){.icd-form{grid-template-columns:1fr}.icd-form .icd-control{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){.icd-card *{animation:none!important;transition:none!important}}

@@ -4,10 +4,10 @@ const html=fs.readFileSync('index.html','utf8'),js=fs.readFileSync('halloween-ph
 const config=JSON.parse(fs.readFileSync('halloween-phi-content.json','utf8'));
 const terri=fs.readFileSync('terriphi/index.html','utf8'),petri=fs.readFileSync('petriphi/index.html','utf8');
 
-test('Terra and Petra both mount on homepage in Oracle Octaves style',()=>{
- assert.match(html,/id="halloweenPhi"/);
- assert.match(html,/\/halloween-phi\.js\?/);
- assert.match(html,/\/halloween-phi\.css\?/);
+test('Terra and Petra remain archived but are no longer on the homepage',()=>{
+ assert.doesNotMatch(html,/id="halloweenPhi"/);
+ assert.doesNotMatch(html,/\/halloween-phi\.js\?/);
+ assert.match(html,/id="holidayPhi"/);
  assert.equal(config.schema,'quantaphi.halloween-phi/v1');
  assert.deepEqual(config.cards.map(c=>c.id),['terriphi','petriphi']);
  assert.ok(css.includes('.hphi-card'));

@@ -1,8 +1,13 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardSourceImage,websiteFaviconUrl} from './card-source-images.mjs';
+import {mountIntegraXTour} from './quanta-integra-x-tour.mjs';
+import {mountIntegraAutomationGuide} from './integra-automation-router.mjs';
 import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
 import {tinyfishCard} from './tinyfish-card-catalog.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
+import {mountMarketplaceCarousel} from './quanta-marketplace-carousel.mjs?v=20261101-unified-market1';
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
+import {mountMotorcycleQuickCard} from './motorcycle-quick-cards.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
@@ -63,6 +68,17 @@ export function createCardArtwork(card,small=false){
   logo.src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
   logo.addEventListener('error',()=>{logo.hidden=true;art.append(node('strong','qcx-google-backup','Google'))},{once:true});
   art.append(logo,node('span','qcx-brand-caption','Search Google from this QuantaPhi card'));
+ }else if(card.id==='pcla-picocela'){
+  // Original schematic, not a manufacturer photo or a stock-price chart.
+  art.classList.add('qcx-pcla-art');
+  const hero=node('div','qcx-pcla-hero');
+  hero.append(node('span','qcx-pcla-ticker','NASDAQ · PCLA'),node('strong','qcx-pcla-company','PicoCELA'));
+  const mesh=node('div','qcx-pcla-mesh');mesh.setAttribute('aria-hidden','true');
+  for(let n=0;n<6;n++)mesh.append(node('span','qcx-pcla-node qcx-pcla-node-'+(n+1)));
+  mesh.append(node('span','qcx-pcla-infinity','∞'));
+  hero.append(mesh,node('span','qcx-pcla-tech','PBE · MULTI-HOP NETWORKS'),
+    node('span','qcx-pcla-caption','Japan · Wireless infrastructure · Cloud management'));
+  art.append(hero);
  }else if(card.official){
   // Full-height source-owned icon, paired with real brand name and a
   // distinct branded composition; no arbitrary two-letter cover art.
@@ -81,10 +97,37 @@ export function createCardArtwork(card,small=false){
  }else{
   art.append(node('strong','qcx-art-mark',mark),node('span','qcx-art-name',title));
  }
+ // Every source/catalog card gets an authentic site image when available;
+ // unknown sources retain the genuine publisher/favicon identity rather than a blank.
+ if(!card.official){
+  const icon=websiteFaviconUrl(card);
+  const internal=typeof card.url==='string'&&card.url.startsWith('/')&&!card.url.startsWith('//');
+  if(icon||internal){
+   const badge=node('img','qcx-website-mark');
+   badge.alt=icon?title+' source website icon':'QuantaPhi original site artwork';
+   badge.loading='lazy';badge.decoding='async';
+   badge.src=icon||'/preview.png';
+   badge.addEventListener('error',()=>{badge.remove()},{once:true});
+   art.append(badge);
+  }
+ }
+ mountCardSourceImage(art,card,{small});
  art.setAttribute('aria-label',title+' '+category+' cover');
  return art;
 }
 function searchTool(root,card,options={}){
+ if(['ebay','vintage-toys','antique-collectibles'].includes(card.id)&&!options.singleProvider){
+  mountMarketplaceCarousel(root,card);
+  // Preserve the prior, separately verified TinyFish source reader for those
+  // who need eBay-only results. Closed by default: one visible primary search.
+  if(tinyfishCard(card.id)){
+   const advanced=node('details','qcx-ebay-direct');
+   advanced.append(node('summary','','Search '+(card.id==='ebay'?'eBay':'original eBay listings')+' only'));
+   searchTool(advanced,card,{singleProvider:true});
+   root.append(advanced);
+  }
+  return true;
+ }
  const spec=searchBase[card.id];if(!spec)return false;
  const direct=card.id==='google'||card.id==='bing';
  if(!direct&&!tinyfishCard(card.id))return false;
@@ -334,10 +377,34 @@ export function mountFoxOneSpot(root,card){
   }
  }
 }
+function mountPclaResearch(root,card){
+ const panel=section(root,'PCLA · SOURCE-BACKED RESEARCH','PicoCELA Mesh Networks');
+ note(panel,'PicoCELA is a Japanese wireless-networking company. Infinity is the QuantaPhi visual theme, not a verified commercial partnership.');
+ const list=node('ul','qcx-pcla-points');
+ for(const item of [
+  'PicoCELA Backhaul Engine: multi-hop wireless backhaul extends Wi-Fi coverage.',
+  'PicoManager: cloud management for connected mesh access points.',
+  'Review technology and independent market risks.'
+ ])list.append(node('li','',item));
+ panel.append(list);
+ const sources=node('div','qcx-pcla-links');
+ sources.append(link('Official PicoCELA',card.official),link('Market history',card.marketUrl));
+ panel.append(sources);
+ const close=typeof card.quoteCloseUsd==='number'?'USD '+card.quoteCloseUsd.toFixed(2):'unavailable';
+ note(panel,'Historical PCLA closing price: '+close+' on '+card.quoteDate+'. This is NOT a live quote.');
+ note(panel,'Corporate action: '+card.splitRatio+' reverse stock split in January 2026. Per-share price alone does not prove gains. Compare split-adjusted returns and share quantities. Not financial advice.');
+}
 export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(id==='pcla-picocela'){
+  mountPclaResearch(root,card);
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
+ if(id==='x')mountIntegraXTour(root);
+ if(id==='x')mountIntegraAutomationGuide(root);
  if(id==='chatgpt'){
   // This card is a real-website launch surface, not a fake site search,
   // local checklist or an imitation ChatGPT reply. The official viewer
@@ -346,12 +413,27 @@ export function mountCardTools(root,card){
   mountCardActions(root,card,{showSearch:false});
   return;
  }
+ if(mountMotorcycleQuickCard(root,card)){
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
  if(id==='google'||id==='bing'){
   // Search remains the primary interaction; global controls come afterward.
-  searchTool(root,card);mountCardActions(root,card);return;
+  searchTool(root,card);mountCardActions(root,card,{showSearch:false});return;
  }
  if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
- if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);
+ if(id==='youtube'||id==='tiktok'){
+  // Playback is the first action; source discovery stays optional and secondary.
+  mediaPlayer(root,id);
+  const discover=node('details','qcx-discover-details');
+  discover.append(node('summary','','Find more '+(id==='tiktok'?'TikTok videos':'YouTube videos')));
+  if(searchTool(discover,card)){
+   if(id==='youtube')trendingTool(discover,card);
+   root.append(discover);
+  }
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
  if(id==='spotify')mediaPlayer(root,'spotify');
  if(id==='starmaker'){
   // Real on-card curated song search, explicitly consented Music Quant
@@ -367,8 +449,9 @@ export function mountCardTools(root,card){
  if(id==='wikipedia')wikipediaTool(root,card);
  if(id==='gold'||id==='silver')calculator(root,card);
  checklist(root,card);
- searchTool(root,card);
+ // Wikipedia already has a native API search; never add a second website reader.
+ const alreadyHasSearch=searchTool(root,card)||id==='wikipedia';
  trendingTool(root,card);
- // Cards with their own working source search do not need a duplicate generic search bar.
- mountCardActions(root,card,{showSearch:!liveSourceProfile(id)});
+ // Preserve generic discovery only when there is no existing on-card provider search.
+ mountCardActions(root,card,{showSearch:!alreadyHasSearch&&!liveSourceProfile(id)});
 }

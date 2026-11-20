@@ -1,0 +1,5 @@
+name = "quantaphi-national-directory-page"
+main = "page-worker.mjs"
+compatibility_date = "2026-11-01"
+workers_dev = false
+routes = [{ pattern = "quantaphi.org/businesses*", zone_name = "quantaphi.org" }]

@@ -1,0 +1,76 @@
+name: Gary family continuity and birthday checks
+
+on:
+  pull_request:
+    paths:
+      - 'gary/**'
+      - 'bubbles-embed.js'
+      - 'bubbles-family-prompts.js'
+      - 'bubbles.html'
+      - 'bubbles-family-modern.css'
+      - 'test/gary-modern-bubbles.test.mjs'
+      - 'family/**'
+      - 'templates/family-lounge/**'
+      - 'templates/western-birthday/**'
+      - 'test/gary-birthday.test.mjs'
+      - 'test/gary-family-lounge.test.mjs'
+      - 'test/gary-presentation-and-cast.test.mjs'
+      - 'scripts/gary-family-public-smoke.mjs'
+      - '.github/workflows/gary-birthday.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'gary/**'
+      - 'bubbles-embed.js'
+      - 'bubbles-family-prompts.js'
+      - 'bubbles.html'
+      - 'bubbles-family-modern.css'
+      - 'test/gary-modern-bubbles.test.mjs'
+      - 'family/**'
+      - 'templates/family-lounge/**'
+      - 'templates/western-birthday/**'
+      - 'test/gary-birthday.test.mjs'
+      - 'test/gary-family-lounge.test.mjs'
+      - 'test/gary-presentation-and-cast.test.mjs'
+      - 'scripts/gary-family-public-smoke.mjs'
+      - '.github/workflows/gary-birthday.yml'
+  workflow_dispatch:
+  schedule:
+    # Four source-and-public health checks daily. Works throughout CST/CDT.
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  verify-family-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify birthday and family content without dependencies
+        run: node --test test/gary-birthday.test.mjs test/gary-family-lounge.test.mjs test/gary-presentation-and-cast.test.mjs test/gary-modern-bubbles.test.mjs test/bubbles-embed.test.mjs
+      - name: Verify page module syntax
+        run: |
+          node --check bubbles-embed.js
+          node --check bubbles-family-prompts.js
+          node --check gary/lounge.mjs
+          node --check gary/presentation.mjs
+          node --check gary/presentation-init.mjs
+          node --check scripts/gary-family-public-smoke.mjs
+  verify-family-public:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check actual quantaphi.org family site and sources
+        run: node scripts/gary-family-public-smoke.mjs
+      - name: Preserve evidence receipt for Continuity Builder review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gary-family-live-health
+          path: /tmp/gary-family-health.json
+          retention-days: 14
+          if-no-files-found: warn

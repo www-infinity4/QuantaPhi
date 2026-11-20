@@ -75,6 +75,18 @@ test('HTML-escape the share title; never redirect viewers off-site',async()=>{
  assert.doesNotMatch(html,/location\.replace\("https:\/\/untrusted\.example/);
  assert.match(html,/location\.replace\("https:\/\/quantaphi\.org/);
 });
+test('retailer CDN preview images survive crawler metadata and the selected item stays in the QuantaPhi destination',async()=>{
+ for(const image of ['https://lscoglobal.scene7.com/is/image/lscoglobal/ITEM','https://img.guess.com/image/upload/f_auto,q_auto/v1/NA/Style/ITEM']){
+  const u=new URL('https://quantaphi.org/q-share');u.searchParams.set('image',image);u.searchParams.set('title','Current source product');
+  u.searchParams.set('dest','https://quantaphi.org/?card=levis-501-dark&spotlight=https%3A%2F%2Fwww.levi.com%2Fp%2F2');
+  const html=await (await share(u.href)).text();
+  assert.ok(html.includes('<meta property="og:image" content="'+image+'">'));assert.match(html,/spotlight=https%3A%2F%2Fwww\.levi\.com%2Fp%2F2/);
+ }
+ for(const image of ['https://img.guess.com.attacker.test/image/upload/ITEM','https://img.guess.com/account','https://img.guess.com/image/upload/x.svg','https://img.guess.com:444/image/upload/ITEM']){
+  const u=new URL('https://quantaphi.org/q-share');u.searchParams.set('image',image);
+  assert.doesNotMatch(await (await share(u.href)).text(),/<meta property="og:image"/);
+ }
+});
 test('HEAD shares return metadata headers without a body',async()=>{
  const r=await share('https://quantaphi.org/q-share?title=QuantaPhi',{method:'HEAD'});
  assert.equal(r.status,200);

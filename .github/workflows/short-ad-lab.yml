@@ -1,0 +1,25 @@
+name: QuantaPhi original short-ad lab
+on:
+  pull_request:
+    paths:
+      - 'short-ad-lab.html'
+      - 'test/short-ad-lab.test.mjs'
+      - 'docs/SHORT-AD-GUM-CONCEPT.md'
+      - '.github/workflows/short-ad-lab.yml'
+  push:
+    paths:
+      - 'short-ad-lab.html'
+      - 'test/short-ad-lab.test.mjs'
+      - 'docs/SHORT-AD-GUM-CONCEPT.md'
+      - '.github/workflows/short-ad-lab.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  short-ad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check ad concept rights, official shop link and reduced-motion affordance
+        run: node --test test/short-ad-lab.test.mjs

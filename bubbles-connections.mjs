@@ -1,4 +1,7 @@
+import {summarizeProviderVerification} from './bubbles-provider-verification.mjs';
 const API = '/api/bubbles/connections';
+const GOOGLE_HANDOFF_TIMEOUT_MS=45000;
+const CLOUDFLARE_HANDOFF_TIMEOUT_MS=45000;
 const NAMES = {cloudflare:'Cloudflare',google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic'};
 export function availableCloudflareLoginActions(provider) {
   if(provider?.id!=='cloudflare'||provider.configured!==true||!Array.isArray(provider.actions))return [];
@@ -42,12 +45,21 @@ export function connectionCodeMessage(error) {
   };
   return messages[error?.message]||messages[error?.name]||'Code creation failed (account_connection_unavailable). The service needs further diagnosis.';
 }
-export function providerSignInErrorMessage(code){
+export function providerSignInErrorMessage(code,provider='cloudflare'){
   const value=String(code||'');
+  const providerName=NAMES[provider]||'account';
   if(value==='callback_session_mismatch'||value==='verified_wallet_required')
     return 'Bubbles could not verify this browser session. Return to the original Bubbles browser and sign in again.';
   if(value==='state_invalid_or_used'||value==='state_expired')
-    return 'This authorization was already used or expired. Start a new Cloudflare authorization.';
+    return 'This authorization was already used or expired. Start a new '+providerName+' authorization.';
+  if(value==='connection_timeout')
+    return providerName+' sign-in timed out. Try again.';
+  if(/^google_(?:exchange|identity|refresh)_3\d{2}$/.test(value))
+    return 'Google returned an unexpected redirect during secure authorization. Bubbles blocked it to protect your credentials. Diagnostic: '+value+'.';
+  if(/^google_exchange_(?:[45]\d{2}|rejected)$/.test(value))
+    return 'Google rejected the token exchange. Diagnostic: '+value+'.';
+  if(/^google_identity_(?:[45]\d{2}|rejected)$/.test(value))
+    return 'Google issued a token, but Bubbles could not verify the account. Diagnostic: '+value+'.';
   if(/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_client$/.test(value))
     return 'Cloudflare rejected the Bubbles OAuth client credentials. The server client configuration needs repair. Diagnostic: '+value+'.';
   if(/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_grant$/.test(value))
@@ -61,18 +73,20 @@ export function providerSignInErrorMessage(code){
   if(/^connection_complete_(?:state|exchange|seal|store|handoff_read|handoff_decrypt|handoff_store|receipt_seal|receipt_store|unknown)_(?:timeout|type|internal)_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown)$/.test(value))
     return 'Bubbles could not finish the account connection. Diagnostic: '+value+'.';
   if(value==='connection_operation_failed')
-    return 'Cloudflare returned to Bubbles, but Bubbles could not complete the account connection. Please retry; the connector needs repair if this repeats.';
-  if(value==='cloudflare_client_scopes_unavailable'||value==='provider_not_configured')
+    return providerName+' returned to Bubbles, but Bubbles could not complete the account connection. Please retry; the connector needs repair if this repeats.';
+  if(value==='cloudflare_client_scopes_unavailable')
     return 'The Bubbles Cloudflare OAuth application requires configuration before this permission can be authorized.';
+  if(value==='provider_not_configured')
+    return 'The Bubbles '+providerName+' OAuth application requires configuration before this permission can be authorized.';
   if(value==='provider_response_invalid'||value==='provider_identity_invalid'||value.startsWith('cloudflare_exchange'))
     return 'Cloudflare did not return a usable authorization. Retry the Bubbles Cloudflare connection.';
-  return 'Bubbles could not confirm the authorization. Retry Cloudflare sign-in.';
+  return 'Bubbles could not confirm the authorization. Retry '+providerName+' sign-in.';
 }
 export class AccountConnections {
   constructor({token,request = (...args)=>fetch(...args),root = window,timeoutMs=10000}) {
     this.token=token;this.request=request;this.root=root;this.pending=null;this.timeoutMs=Math.max(1,Number(timeoutMs)||10000);
   }
-  async call(path,body) {
+  async call(path,body,timeoutMs=this.timeoutMs) {
     // Cover wallet readiness, the network request AND JSON parsing. AbortController
     // alone cannot settle a hung bridge or a fetch mock that ignores abort.
     const controller=new AbortController();
@@ -89,7 +103,7 @@ export class AccountConnections {
     };
     try {
       return await Promise.race([attempt(),new Promise((_,reject)=>{
-        timer=setTimeout(()=>{controller.abort();reject(Error('connection_timeout'));},this.timeoutMs);
+        timer=setTimeout(()=>{controller.abort();reject(Error('connection_timeout'));},timeoutMs);
       })]);
     } finally {clearTimeout(timer);}
   }
@@ -122,22 +136,23 @@ export class AccountConnections {
       if(this.pending!==pending||pending.polling||pending.finished)return;
       pending.polling=true;
       try{
-        const data=await this.call('/handoff/status',{provider,state});
+        const input={provider,state};
+        const timeoutMs=provider==='google'?Math.max(this.timeoutMs,GOOGLE_HANDOFF_TIMEOUT_MS):
+          provider==='cloudflare'?Math.max(this.timeoutMs,CLOUDFLARE_HANDOFF_TIMEOUT_MS):this.timeoutMs;
+        let data=state?await this.call('/handoff/status',input):
+          await this.call('/handoff/'+provider+'/resume',{},timeoutMs);
+        if(state&&data.status==='received')data=await this.call('/handoff/finish',input,timeoutMs);
         if(data.status==='connected'&&data.account)finish(null,data.account);
-        else if(data.status==='received'){
-          const completed=await this.call('/handoff/finish',{provider,state});
-          if(completed.status==='connected'&&completed.account)finish(null,completed.account);
-          else if(completed.status==='expired')finish(Error(expiredMessage));
-          else if(completed.status==='declined')finish(Error('Account authorization was declined.'));
-        }else if(data.status==='declined')finish(Error('Account authorization was declined.'));
+        else if(data.status==='declined')finish(Error('Account authorization was declined.'));
         else if(data.status==='expired')finish(Error(expiredMessage));
+        else if(data.status==='missing')finish(Error('No recent '+(NAMES[provider]||provider)+' return matched this wallet session. Use the browser and Bubbles wallet that started sign-in, or start again here.'));
       }catch(error){
         // Callback/code exchange failures cannot be cured by polling. Surface a
         // recoverable, sanitized error now rather than waiting five minutes and
         // incorrectly reporting that the user never authorized the account.
         const code=String(error?.message||'');
         if(!['connection_timeout','AbortError','TimeoutError','TypeError','refresh_in_progress'].includes(code)){
-          finish(Error(providerSignInErrorMessage(code)));
+          finish(Error(providerSignInErrorMessage(code,provider)));
         }
       }finally{
         pending.polling=false;
@@ -147,7 +162,10 @@ export class AccountConnections {
     };
     pending.onReturn=()=>{
       if(this.pending!==pending||pending.finished)return;
-      if(popup?.closed){finish(Error('The sign-in window was closed. Tap Sign in to retry.'));return;}
+      // A closed popup is not a failed authorization: the provider callback
+      // may still be sealing its receipt on the server when focus returns.
+      // Keep polling the wallet-bound handoff until its verified result,
+      // explicit cancellation, or the original five-minute expiry.
       void poll();
     };
     this.root.addEventListener?.('focus',pending.onReturn);
@@ -157,9 +175,10 @@ export class AccountConnections {
       Math.max(1,expiresAt-Date.now()));
     void poll();
   }
-  resumePending(onComplete) {
+  resumePending(onComplete,{recoverGoogle=false,recoverCloudflare=false}={}) {
     if(this.pending)return false;
-    const saved=this.readPendingHandoff();
+    const recoveryProvider=recoverGoogle?'google':recoverCloudflare?'cloudflare':null;
+    const saved=this.readPendingHandoff()||(recoveryProvider?{provider:recoveryProvider,expiresAt:Date.now()+300000}:null);
     if(!saved)return false;
     this.trackHandoff(saved,null,onComplete);
     return true;
@@ -222,18 +241,64 @@ function element(tag,text,className='') {
 }
 export function mountConnections(container,{token}) {
   const sessionKey='bubbles:connector-session:v1';
+  const returnProvider=new URLSearchParams(window.location?.search||'').get('return');
+  const recoverGoogle=returnProvider==='google';
+  const recoverCloudflare=returnProvider==='cloudflare';
+  const clearProviderReturn=()=>{
+    if(!recoverGoogle&&!recoverCloudflare)return;
+    try{
+      const url=new URL(window.location.href);
+      url.searchParams.delete('return');
+      window.history.replaceState(window.history.state,'',url.href);
+    }catch{}
+  };
   const paired=()=>{try{const value=JSON.parse(sessionStorage.getItem(sessionKey)||'null');return value?.expiresAt>Date.now()?value.token:'';}catch{return '';}};
   const client=new AccountConnections({token:async()=>{const session=paired();if(session)return session;try{return await token();}catch{return '';}}}),section=element('section','','ba-connection-section'),status=element('p','Choose an account service.','ba-muted');
   const refresh=element('button','Check connected accounts','ba-control'),catalog=element('div','','ba-provider-catalog'),accounts=element('div','');
+  catalog.id='bubblesProviderCatalog';
+  const verification=element('section','','ba-verification-center'),verificationRows=element('div','','ba-verification-list');
+  verification.id='bubblesVerificationCenter';
+  verification.setAttribute('aria-label','Provider Verification Center');
+  verification.append(element('h2','Verification Center'),
+    element('p','Google, GitHub and Cloudflare are checked separately against this wallet-bound session. Provider sign-in does not authorize owner-only builds.','ba-muted'),verificationRows);
+  const renderVerification=(providers,accountData,verifiedSession=true)=>{
+    const states=summarizeProviderVerification(providers,accountData,{verifiedSession});
+    verificationRows.replaceChildren();
+    for(const provider of states){
+      const card=element('article','','ba-verification-row');card.dataset.status=provider.status;
+      const mark=provider.connected?'✓ ':'',title=element('h3',mark+provider.label+' · '+provider.status.replaceAll('_',' '));
+      card.append(title,element('p',provider.explanation,'ba-muted'));
+      if(provider.accountLabel)card.append(element('p','Account: '+provider.accountLabel,'ba-muted'));
+      card.append(element('p',provider.verifiedAt?'Last verified: '+new Date(provider.verifiedAt).toLocaleString():
+        'Last verified: not available from provider records','ba-muted'));
+      if(provider.updatedAt)card.append(element('p','Server record updated: '+new Date(provider.updatedAt).toLocaleString(),'ba-muted'));
+      if(provider.connected)card.append(element('p',provider.grantedActions.length?
+        'Recorded capability grants: '+provider.grantedActions.join(', '):
+        'No account-level tool grants recorded. Sign-in alone does not permit tool execution.','ba-muted'));
+      if(provider.connected&&provider.missingActions.length)card.append(element('p','Not approved / unavailable: '+provider.missingActions.join(', '),'ba-muted'));
+      if(provider.reconnectAvailable&&(!provider.connected||provider.missingActions.length)){
+        const link=element('a',provider.connected?'Review provider permissions below':'Sign in or reconnect below','ba-control');
+        link.href='#bubblesProviderCatalog';card.append(link);
+      }
+      verificationRows.append(card);
+    }
+  };
   const cancel=element('button','Cancel sign-in','ba-control');cancel.type='button';cancel.hidden=true;
-  cancel.addEventListener('click',()=>{client.cancelConnect();cancel.hidden=true;status.textContent='Sign-in cancelled. You can try again.';void load();});
   refresh.type='button';status.setAttribute('role','status');
-  const scopes=element('fieldset',''),legend=element('legend','Google access');scopes.append(legend);
+  const scopes=element('fieldset',''),googleStatus=element('p','','ba-muted');
+  googleStatus.setAttribute('role','status');
+  scopes.append(element('legend','Google access'),element('p','Basic Google sign-in is available without Gmail or Drive. Select any extra account access you want Bubbles to request.','ba-muted'));
+  scopes.addEventListener('change',()=>{googleStatus.textContent='';});
+  cancel.addEventListener('click',()=>{
+    client.cancelConnect();clearProviderReturn();cancel.hidden=true;googleStatus.textContent='';
+    status.textContent='Sign-in cancelled. You can try again.';void load();
+  });
   const selections=[];
   for(const [name,action] of [['Find Drive files','drive.read'],['Read spreadsheets','sheets.read'],['Read calendar events','calendar.read'],['Read Gmail messages','gmail.read']]) {
     const label=element('label',''),check=document.createElement('input');check.type='checkbox';check.value=action;label.append(check,document.createTextNode(' '+name+' '));scopes.append(label);selections.push(check);
   }
-  section.append(element('h2','Your accounts'),status,catalog,cancel,accounts,scopes,refresh);container.append(section);
+  section.append(element('h2','Your accounts'),status,verification,catalog,cancel,accounts,refresh);container.append(section);
+  renderVerification(null,null,false);
   const walletEmail=element('section','','ba-provider-card ba-wallet-email');
   walletEmail.append(element('h2','StarCoin wallet email updates'),
     element('p','Verify your wallet balance in real time. Choose a daily or weekly email preference after you connect a Google-verified address. Email delivery is not active until a sender is configured.','ba-muted'));
@@ -285,12 +350,28 @@ export function mountConnections(container,{token}) {
   redeem.addEventListener('click',async()=>{redeem.disabled=true;try{const data=await client.call('/pair/redeem',{code:code.value.trim()});sessionStorage.setItem(sessionKey,JSON.stringify({token:data.token,expiresAt:data.expiresAt}));code.value='';output.textContent='This browser is connected for 15 minutes.';await load();}catch{output.textContent='Connection failed. Use a fresh code from your verified phone.';}finally{redeem.disabled=false;}});
   end.addEventListener('click',async()=>{try{if(paired())await client.call('/pair/end',{});sessionStorage.removeItem(sessionKey);output.textContent='Browser connection ended.';await load();}catch{output.textContent='Could not end the server session. Try again; it expires automatically after 15 minutes.';}});
   pairing.append(create,output,code,redeem,end);section.append(pairing);
+  let loadVersion=0,cloudflareRecoveryAttempted=false,cloudflareRecoveryFailure='';
   async function load() {
+    const version=++loadVersion;
     refresh.disabled=true;
     try {
-      // Wait for BOTH authenticated service reads before painting. Do not display
-      // "Sign in" above a confirmed connected account while a second fetch runs.
-      const [data,dataAccounts]=await Promise.all([client.call('/catalog'),client.call('/accounts')]);
+      let [data,dataAccounts,settings]=await Promise.all([client.call('/catalog'),client.call('/accounts'),
+        client.call('/wallet-email/preferences',{action:'read'}).catch(()=>null)]);
+      // Recover a previously authorized Cloudflare callback that the Android
+      // browser never completed. This does NOT open Cloudflare, mint permissions
+      // or claim dashboard login as Bubbles authorization. Server binds it to
+      // the same verified wallet and initiating session; missing means no grant.
+      const alreadyConnected=Array.isArray(dataAccounts.accounts)&&dataAccounts.accounts.some(account=>
+        account.provider==='cloudflare'&&account.status==='connected'&&
+        Number.isFinite(account.expiresAt)&&account.expiresAt>Date.now()+30000);
+      // Do not hold the sign-in button hostage to a stalled 45-second
+      // recovery check. Build the card and attach its click handler first.
+      const shouldRecover=!cloudflareRecoveryAttempted&&!client.pending&&!alreadyConnected;
+      if(shouldRecover)cloudflareRecoveryAttempted=true;
+      // An account read started before OAuth finished must not repaint older
+      // sign-in buttons after the verified connection has been loaded.
+      if(version!==loadVersion)return;
+      renderVerification(data,dataAccounts,true);
       catalog.replaceChildren();accounts.replaceChildren();
       const activeConnection=account=>account.status==='connected'&&
         Number.isFinite(account.expiresAt)&&account.expiresAt>Date.now()+30000;
@@ -301,15 +382,13 @@ export function mountConnections(container,{token}) {
       }
       const googleAccount=signedIn.get('google');
       verifiedGoogleId=googleAccount?.id||null;
-      try{
-        const settings=await client.call('/wallet-email/preferences',{action:'read'});
+      if(settings){
         frequency.value=settings.cadence||'weekly';
         if(settings.enabled)emailStatus.textContent='Verified address: '+settings.email+
           '. '+settings.cadence+' preference saved. Delivery pending sender setup; no email is scheduled.';
         else if(settings.status==='verification_expired')emailStatus.textContent='Google verification expired. Reconnect before balance emails can be enabled.';
         else emailStatus.textContent='No verified wallet email enrolled. Google connection and sender setup are required.';
-      }catch{emailStatus.textContent='Wallet email preferences unavailable until your Unified Wallet is connected.';}
-      scopes.hidden=!data.providers.some(provider=>provider.id==='google'&&provider.configured);
+      }else emailStatus.textContent='Wallet email preferences unavailable until your Unified Wallet is connected.';
       const unavailable=element('details','','ba-unavailable');unavailable.append(element('summary','Other account services'));
       for(const provider of data.providers) {
         const providerName=NAMES[provider.id]||provider.id;
@@ -319,36 +398,37 @@ export function mountConnections(container,{token}) {
         const upgrade=provider.id==='cloudflare'&&existing&&
           Array.isArray(provider.actions)&&provider.actions.includes('owner.full')&&
           !existing.grantedActions?.includes('owner.full');
-        if(existing&&!upgrade){
+        if(existing){
           card.dataset.status='connected';
-          const connected=element('p',providerName+' · Signed in'+(existing.label?' as '+existing.label:''),'ba-provider-connected');
+          const connected=element('p',providerName+' signed in ✓'+(existing.label?' as '+existing.label:''),'ba-provider-connected');
           connected.setAttribute('role','status');
           card.append(connected);
-          catalog.append(card);
-          continue;
+          // Cloudflare and GitHub stay signed in; a second Google identity
+          // can be authorized without disconnecting this wallet's first one.
+          if(provider.id!=='google'){
+            catalog.append(card);
+            continue;
+          }
         }
-        if(upgrade)card.append(element('p','Cloudflare signed in, but full toolkit access is not approved yet. Review the expanded permissions to connect them.','ba-muted'));
-        const fullConsent=provider.id==='cloudflare'&&providerAuthorizationActions(provider).includes('owner.full');
-        const button=element('button',fullConsent?
-          (upgrade?'Authorize all 386 Cloudflare permissions':'Sign in and authorize 386 Cloudflare permissions'):
-          upgrade?'Authorize full Cloudflare toolkit':'Sign in with '+providerName,'ba-control');
+        if(upgrade)card.append(element('p','Project tools require separate Cloudflare approval.','ba-muted'));
+        const button=element('button',provider.id==='google'&&existing?'Connect another Google account':
+          upgrade?'Review Cloudflare project access':'Sign in with '+providerName,'ba-control');
         button.type='button';button.disabled=Boolean(client.pending);button.dataset.provider=provider.id;
         button.classList.add('ba-signin-button');
-        button.setAttribute('aria-label',fullConsent?'Sign in and authorize all 386 Cloudflare permissions':'Sign in with '+providerName);
-        card.append(button);
+        button.setAttribute('aria-label',button.textContent);
+        // Cloudflare errors must appear beside the button the visitor
+        // tapped, not on a distant status line above the entire catalog.
+        const localCloudflareStatus=provider.id==='cloudflare'?element('p','','ba-muted'):null;
+        if(localCloudflareStatus)localCloudflareStatus.setAttribute('role','status');
+        const signInStatus=provider.id==='google'?googleStatus:
+          localCloudflareStatus||status;
+        if(provider.id==='google')card.append(scopes,button,googleStatus);
+        else if(localCloudflareStatus)card.append(button,localCloudflareStatus);
+        else card.append(button);
         if(provider.id==='cloudflare'){
-          card.append(element('p','Cloudflare may already recognize your login and go straight to Review permissions. After authorizing, Bubbles must verify the connection.','ba-muted'));
-          const inventory=provider.scopeInventory;
-          if(inventory&&Number.isInteger(inventory.signInRequestScopeCount)){
-            const client=typeof provider.clientIdPrefix==='string'&&provider.clientIdPrefix?
-              ' OAuth client begins '+provider.clientIdPrefix+'.':'';
-            card.append(element('p','Bubbles sign-in currently requests '+inventory.signInRequestScopeCount+
-              ' Cloudflare scopes; its server allowlist contains '+inventory.serverAllowlistCount+
-              '. This is not proof of the scopes registered on Cloudflare.'+client,'ba-muted'));
-          }
-          const login=element('a','Open Cloudflare login separately','ba-link');
-          login.href='https://dash.cloudflare.com/login';login.target='_blank';login.rel='noopener noreferrer';
-          card.append(login);
+          card.append(element('p','Bubbles has not confirmed a saved Cloudflare authorization for this wallet. It checked for a previously received return without opening another sign-in. Cloudflare dashboard login alone does not complete this connection.','ba-muted'));
+          // The Cloudflare dashboard link is not an OAuth callback and made
+          // an already-logged-in owner appear to be sent in circles.
           if(provider.fullProjectConfigured===false)
             card.append(element('p','Additional project permissions need Bubbles OAuth client setup. More scopes in the Cloudflare dashboard do not automatically change this sign-in request.','ba-muted'));
         }
@@ -358,33 +438,30 @@ export function mountConnections(container,{token}) {
           card.append(element('p','This provider has no registered sign-in permissions. Application setup is required.','ba-muted'));
         }
         button.addEventListener('click',async()=>{
-          if(client.pending){status.textContent='Finish or cancel the current sign-in first.';return;}
-          button.disabled=true;button.setAttribute('aria-busy','true');
-          status.textContent=provider.id==='cloudflare'&&availableActions.includes('owner.full')?
-            'Opening official Cloudflare sign-in for the 386 registered permissions. Approve only if you want to grant all 386.':
-            'Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
-          // The currently registered Cloudflare app has 386 scopes marked
-          // required. Asking for only two on first sign-in does not match that
-          // registration. Only send owner.full when the provider advertises it,
-          // and disclose that the authorization grants the full toolkit.
+          if(client.pending){signInStatus.textContent='Finish or cancel the current sign-in first.';return;}
+          // Google identity-only consent never requires Gmail or Drive.
+          // The Cloudflare OAuth app's full, server-allowed toolkit is reviewed
+          // in the SAME sign-in when available. Provider consent is mandatory.
           const fullCloudflare=provider.id==='cloudflare'&&availableActions.includes('owner.full');
-          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):
-            fullCloudflare?['owner.full']:
-            provider.id==='cloudflare'&&!upgrade?['account.read']:availableActions;
-          if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
+          const actions=provider.id==='google'?['identity.read',...selections.filter(c=>c.checked).map(c=>c.value)]:
+            provider.id==='cloudflare'?(fullCloudflare?['owner.full']:['account.read']):availableActions;
+          button.disabled=true;button.setAttribute('aria-busy','true');
+          signInStatus.textContent=fullCloudflare?
+            'Opening Cloudflare to review the requested project access…':
+            'Opening secure '+providerName+' sign-in…';
           try {await client.connect(provider.id,actions,async(error,account)=>{
             cancel.hidden=true;
             if(error){
               // A timed-out return cannot leave its old disabled button behind.
               // Rebuild from the verified account catalog, then retain the error.
               const message=error.message;
-              await load();status.textContent=message;
+              await load();signInStatus.textContent=message;
             }else{status.textContent='Connected '+account.label+'.';void load();}
           });cancel.hidden=false;
-            status.textContent=provider.id==='cloudflare'
+            signInStatus.textContent=provider.id==='cloudflare'
               ?'On Cloudflare, select your account and tap Authorize to finish connecting Bubbles.'
               :'Continue on '+providerName+' to authorize Bubbles, then return here.';
-          }catch(error){status.textContent=providerSignInErrorMessage(error.message);}
+          }catch(error){signInStatus.textContent=providerSignInErrorMessage(error.message,provider.id);}
           finally{button.disabled=Boolean(client.pending);button.removeAttribute('aria-busy');}
         });catalog.append(card);
       }
@@ -399,6 +476,29 @@ export function mountConnections(container,{token}) {
             grants.includes('projects.build')?'Approved: deploy Workers, Pages and D1 projects. Additional project permissions are not yet approved.':
             'Account connected. Project deployment permission is not yet approved.';
           row.append(element('p',access,'ba-muted'));
+          const provider=data.providers.find(entry=>entry.id==='cloudflare');
+          const available=provider?providerAuthorizationActions(provider):[];
+          if(available.includes('owner.full')&&!grants.includes('owner.full')){
+            const manage=element('details','','ba-optional-project-permissions');
+            const review=element('button','Review project permissions','ba-control');
+            review.type='button';
+            const info=element('p','Signed in. Additional project permissions are optional and require your authorization.','ba-muted');
+            info.setAttribute('role','status');
+            review.addEventListener('click',async()=>{
+              if(client.pending){info.textContent='Finish or cancel the current review first.';return;}
+              review.disabled=true;info.textContent='Opening optional Cloudflare permission review…';
+              try{
+                await client.connect('cloudflare',['owner.full'],async error=>{
+                  cancel.hidden=true;await load();
+                  if(error)status.textContent=providerSignInErrorMessage(error.message,'cloudflare');
+                });
+                cancel.hidden=false;
+              }catch(error){info.textContent=providerSignInErrorMessage(error.message,'cloudflare');}
+              finally{review.disabled=false;}
+            });
+            manage.append(element('summary','Manage Cloudflare project access'),info,review);
+            row.append(manage);
+          }
         }
         if(account.status!=='disconnected') {
           const button=element('button','Disconnect','ba-control');button.type='button';
@@ -602,24 +702,69 @@ export function mountConnections(container,{token}) {
         }
       }
       status.textContent=client.pending?'Complete or cancel the current sign-in.':
+        cloudflareRecoveryFailure?cloudflareRecoveryFailure:
         dataAccounts.accounts.length?'Account connection status verified.':'No connected accounts yet.';
       cancel.hidden=!client.pending;
-    }catch(error) {status.textContent=error?.message==='verified_wallet_required'?
-      'This browser has no verified Bubbles account session. Open Bubbles in the browser where you are signed in.':
-      'Could not verify account connections. Please retry.';}
-    finally {refresh.disabled=false;}
+      if(shouldRecover){
+        // Recovery is wallet-bound and read-only until the provider token is
+        // actually exchanged; it must never delay attaching the login button.
+        void client.call('/handoff/cloudflare/resume',{},CLOUDFLARE_HANDOFF_TIMEOUT_MS)
+          .then(recovered=>{
+            if(recovered.status==='connected'&&recovered.account&&!client.pending)
+              return load();
+          }).catch(error=>{
+            cloudflareRecoveryFailure=providerSignInErrorMessage(error?.message,'cloudflare');
+            if(version===loadVersion&&!client.pending)status.textContent=cloudflareRecoveryFailure;
+          });
+      }
+      return signedIn;
+    }catch(error) {
+      if(version===loadVersion){
+        // A failed refresh is never a current provider verification receipt.
+        renderVerification(null,null,false);
+        catalog.replaceChildren();accounts.replaceChildren();
+        status.textContent=error?.message==='verified_wallet_required'?
+          'This browser has no verified Bubbles account session. Open Bubbles in the browser where you are signed in.':
+          'Could not verify account connections. Please retry.';
+      }
+    }finally {if(version===loadVersion)refresh.disabled=false;}
   }
   refresh.addEventListener('click',()=>void load());
   if(client.resumePending(async(error,account)=>{
     cancel.hidden=true;
+    clearProviderReturn();
     if(error){
-      // The resumed page was rendered with all buttons disabled while pending.
-      // A failed/expired attempt must restore Cloudflare Sign in immediately.
+      // Failed or expired handoffs must remain visible and must not redirect.
       const message=error.message;
       await load();status.textContent=message;
     }else{
-      status.textContent='Connected '+account.label+'.';await load();
+      // Verify directly against the wallet-authenticated server before any
+      // automatic return to chat. UI loads may overlap an older stale fetch.
+      let verifiedReturn=false;
+      if((recoverGoogle||recoverCloudflare)&&account?.id){
+        try{
+          const latest=await client.call('/accounts');
+          verifiedReturn=Array.isArray(latest.accounts)&&latest.accounts.some(record=>
+            record.id===account.id&&record.provider===returnProvider&&
+            record.status==='connected'&&Number.isFinite(record.expiresAt)&&
+            record.expiresAt>Date.now()+30000);
+        }catch{}
+      }
+      await load();
+      if(verifiedReturn&&typeof window.location?.replace==='function'){
+        let destination='/bubbles.html';
+        if(returnProvider==='google'){
+          try{
+            if(sessionStorage.getItem('bubbles:gemini-card-return:v1')==='1'){
+              sessionStorage.removeItem('bubbles:gemini-card-return:v1');
+              destination='/?gemini=ready#gemini';
+            }
+          }catch{}
+        }
+        window.location.replace(destination);
+      }
+      else status.textContent='Connected '+account.label+'.';
     }
-  })){cancel.hidden=false;status.textContent='Finishing Cloudflare authorization securely…';}
+  },{recoverGoogle,recoverCloudflare})){cancel.hidden=false;status.textContent='Finishing account authorization securely…';}
   return {client,refresh:load};
 }

@@ -1,0 +1,9 @@
+# Quant and Star Coin merchant unit model — proposed, not redeemable
+
+Owner proposal [#1327](https://github.com/www-infinity4/QuantaPhi/issues/1327): offer a simple merchant choice where an approved displayed US$1 retail amount could be *illustrated* as 1 Quant or 1 Star Coin in a future authorized commerce system. This is **not** an actual exchange rate, money equivalent, cash balance, merchant payout guarantee, real checkout support, legal stablecoin or promise that either unit has $1 of value.
+
+**Different attached information:** a Quant may represent a search with collected cards and research provenance; a Star Coin is associated with a collected card. Data richness is not intrinsic monetary value and must not allow merchants to see visitors' private searches without separate purpose-specific informed consent.
+
+**Design choices still open:** price/discount authority stays with merchant, payment processor/issuer and settlement source, dollar liability funding, applicable money-transmitter or stored-value law, accounting/taxes, buyer refunds/chargebacks, transferability, expiration/terms, fraud/idempotency protection, transfer receipts, data protection and approved cash redemption (if ever). Independently review with relevant professional advisers and permitted payments providers before accepting commerce transactions. Do not edit or decrement existing Quants/StarCoin balances while marketing this plan.
+
+**Phase 1 safe display:** show current merchant-authorized USD price and original checkout link; if a future sandbox preview illustrates token units, visibly label **PROPOSAL / NOT ACCEPTED HERE** and avoid actual calls to a payments backend. The public product must not say "1 Quant equals $1" as an enforceable cash claim until legal acceptance, finance coverage and signed merchant contracts support it.

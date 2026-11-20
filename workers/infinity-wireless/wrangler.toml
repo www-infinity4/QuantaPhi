@@ -1,0 +1,17 @@
+name = "quantaphi-infinity-wireless-orders"
+main = "worker.mjs"
+compatibility_date = "2026-11-02"
+workers_dev = true
+keep_vars = true
+
+# Staging uses workers.dev. Production /api/wireless/* routing is a
+# separate gated rollout after CI, privacy review and live smoke tests.
+[[d1_databases]]
+binding = "WIRELESS_DB"
+database_name = "quantaphi-infinity-wireless-orders"
+database_id = "230c8dde-fc97-485b-94ad-4b092684bf76"
+
+[triggers]
+crons = ["15 7 * * *"]
+
+# RATE_SALT is a Worker secret, never stored here.

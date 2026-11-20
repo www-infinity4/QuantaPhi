@@ -15,9 +15,11 @@ test('Android homepage shows compact traffic, live card, inline Follow, and acce
   return Boolean(s&&l&&(s.compareDocumentPosition(l)&Node.DOCUMENT_POSITION_FOLLOWING));
  });
  expect(order).toBeTruthy();
- const follow=deck.locator('#oracleCardFollow');
+ const follow=deck.locator('#oracleCardStage [data-source-id="google"] .qca-toolbar [data-action="follow"]');
  await expect(follow).toBeVisible();
- await expect(follow.locator('xpath=..')).toHaveClass(/oracle-card-deck-nav/);
+ await expect(deck.locator('#oracleCardFollow')).toBeHidden();
+ await expect(deck.locator('#oracleCardStage .qca-toolbar [data-action="follow"]')).toHaveCount(1);
+ await expect(follow.locator('xpath=..')).toHaveClass(/qca-controls/);
  const width=await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1);
  expect(width).toBeTruthy();
  await page.getByRole('button',{name:'Open menu'}).click();

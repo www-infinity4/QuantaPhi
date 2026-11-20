@@ -1,0 +1,88 @@
+/* Family living-room card: readable, large touch targets, muted colors and true
+   external-source labels. Scoped to Gary's page only. */
+.family-shell{margin:28px 0 12px;padding:clamp(15px,3vw,28px);background:linear-gradient(145deg,#26322d,#333b30);border:1px solid #8c9574;border-radius:20px;box-shadow:0 9px 36px #0003}
+.family-shell h2{margin:0 0 10px}
+.family-shell h3{font:700 25px/1.25 Georgia,serif;margin:0 0 12px}
+.family-shell h4{font:700 21px/1.3 Georgia,serif;margin:8px 0}
+.family-shell p{margin:9px 0 14px}
+.family-note{max-width:840px;font-size:17px;color:#eee2c9}
+.family-shell label{font-weight:750;display:block;margin-bottom:5px}
+.family-shell input[type=search],.family-shell input[type=text],.family-shell input:not([type]),.family-shell select{
+  min-height:52px;border:2px solid #aab79e;border-radius:11px;padding:11px 13px;
+  background:#f3f0e5;color:#14221b;font:650 18px/1.4 system-ui,sans-serif;max-width:100%;
+}
+.family-search{padding:20px;background:#182721;border:1px solid #8c9574;border-radius:16px}
+.family-search-row{display:grid;grid-template-columns:minmax(180px,1fr) auto auto;gap:10px;align-items:center}
+.family-search-row input{width:100%}
+.family-shell button,.family-action,.family-gpt-link{
+  min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;
+  padding:10px 14px;border:1px solid #b6c09f;border-radius:11px;
+  background:#f4e4be;color:#212c24;font:750 15px/1.3 system-ui,sans-serif;
+  text-decoration:none;letter-spacing:.012em;white-space:normal;text-align:center
+}
+.family-shell button:hover,.family-action:hover,.family-gpt-link:hover{background:#fff1c9}
+.family-shell button:focus-visible,.family-shell a:focus-visible,.family-shell input:focus-visible,.family-shell select:focus-visible{outline:3px solid #9edfeb;outline-offset:2px}
+.family-shell button[aria-pressed=true]{background:#d1eae1;border-color:#88caba;color:#123829}
+.family-shell button:disabled{opacity:.55;cursor:default}
+.family-status{font-size:15px;color:#e9d7a7;line-height:1.5;min-height:20px}
+.family-fine{font-size:14px;color:#d3d7c4;line-height:1.55}
+.family-fine a{color:#f6d28c}
+.family-remote,.family-weather,.family-radio,.family-discovery,.family-widgets,.family-assistant-settings{
+ margin-top:19px;padding:19px;border:1px solid #687969;border-radius:16px;background:#1e2c25;
+}
+.family-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:13px}
+.family-head h3{margin:0}
+.family-channel-buttons{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,155px),1fr));gap:9px}
+.family-channel{display:flex!important;flex-direction:column;align-items:center;justify-content:center;min-height:70px!important;gap:5px}
+.family-channel small{font:500 12px/1.2 system-ui;color:#405848}
+.family-channel-detail{min-height:79px;padding:16px;margin:13px 0;background:#334136;border-radius:12px}
+.family-channel-detail p{margin:5px 0}
+.family-channel-detail .family-action{margin-top:9px}
+.family-sections{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:17px}
+.family-weather,.family-radio{margin-top:17px}
+.family-forecast{display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:9px;margin:13px 0}
+.family-day{border:1px solid #6a846c;border-radius:10px;background:#303e33;padding:11px;min-width:0}
+.family-day strong,.family-day small{display:block}
+.family-day small{color:#e2e2cb;font-size:13px;line-height:1.45}
+.family-temperatures{font-size:21px;font-weight:800;color:#ffdfa5}
+.family-radio-buttons,.family-music-links,.family-rail-buttons{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.family-music-links a{font-size:15px;padding:8px}
+.family-discovery .family-head{align-items:start}
+.family-featured{min-height:240px}
+.family-offer-card{display:grid;grid-template-columns:75px minmax(0,1fr);gap:5px 16px;align-items:start;padding:18px;border:1px solid #a1aa8a;border-radius:14px;background:#324438;min-height:200px}
+.family-logo{grid-row:1/4;width:64px;height:64px;object-fit:contain;background:#f5f1e4;border-radius:13px;padding:7px}
+.family-offer-card h4,.family-offer-card p{grid-column:2;margin:2px 0}
+.family-offer-card .family-action{grid-column:2;justify-self:start;margin-top:6px}
+.family-offer-type{font-weight:800;font-size:12px;letter-spacing:.12em;color:#f5d893}
+.family-optin{display:flex!important;align-items:start;gap:12px;font-size:17px;line-height:1.5;margin:16px 0 12px!important}
+.family-optin input,.family-interest input{width:22px;height:22px;flex:none;accent-color:#83ccb5;margin-top:2px}
+.family-interests{display:flex;gap:12px;flex-wrap:wrap}
+.family-interest{display:flex!important;gap:8px;align-items:center;background:#314a3e;padding:9px 12px;border-radius:10px;font-size:15px}
+.family-link-button{margin-top:12px;background:transparent!important;color:#e9c888!important}
+.family-trending-head{margin-top:30px}
+.family-trends,.family-widget-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));gap:10px}
+.family-trend-card,.family-search-card{border:1px solid #677b68;background:#2b3d32;border-radius:12px;padding:14px}
+.family-trend-card strong,.family-trend-card small,.family-trend-card a{display:block}
+.family-trend-card small{font-size:13px;color:#d6c7a4}
+.family-trend-card a{margin-top:7px}
+.family-widget-grid .family-offer-card{display:flex;flex-direction:column;min-height:200px}
+.family-widget-grid .family-offer-card .family-action{margin-top:auto}
+.family-widget-grid .family-offer-card .family-logo{align-self:start}
+.family-name-row{display:flex;gap:10px;flex-wrap:wrap}
+.family-name-row input{flex:1 1 160px;min-width:150px}
+.family-gpt-link{margin:9px 0;background:#b5d7d8}
+@media(max-width:760px){
+ .family-sections{grid-template-columns:1fr;gap:0}
+ .family-search-row{grid-template-columns:1fr 1fr}
+ .family-search-row input{grid-column:1/-1}
+ .family-remote,.family-weather,.family-radio,.family-discovery,.family-widgets,.family-assistant-settings{padding:15px}
+}
+@media(max-width:420px){
+ .family-search-row{grid-template-columns:1fr}
+ .family-search-row input{grid-column:1}
+ .family-offer-card{grid-template-columns:1fr}
+ .family-offer-card .family-logo,.family-offer-card h4,.family-offer-card p,.family-offer-card .family-action{grid-column:1}
+ .family-channel-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .family-head{align-items:start}
+}
+@media(prefers-reduced-motion:reduce){.family-shell *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

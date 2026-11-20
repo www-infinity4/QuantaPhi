@@ -20,3 +20,8 @@ database_id = "3a755f82-da9a-4e2b-a4f8-67f35d726ee0"
 [[services]]
 binding = "BRAIN"
 service = "infinity-brain-clock"
+
+# Per-visitor Google authorization is verified through the existing Bubbles connection Worker.
+[[services]]
+binding = "CONNECTIONS_SERVICE"
+service = "bubbles-connections"

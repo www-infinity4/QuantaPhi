@@ -57,6 +57,19 @@ test('missing server credential reports a blocker without making a network call'
  const result=await githubOperation({}, {repository,action:'capabilities'},()=>{throw Error('unexpected network')});
  assert.equal(result.error,'github_runtime_credential_missing');assert.equal(result.capabilities.push,false);
 });
+test('source read reports the canonical GitHub name without changing the requested repository field',async()=>{
+ const requested='www-infinity4/quantaphi';
+ const fetchSource=async (url,options)=>{
+  assert.equal(options.method,'GET');
+  if(url.endsWith('/git/ref/heads/main'))return Response.json({object:{sha}});
+  assert.equal(url,'https://api.github.com/repos/'+requested);
+  return Response.json({default_branch:'main',full_name:repository});
+ };
+ const result=await githubOperation({GITHUB_TOKEN:'fixture-token'},{repository:requested,action:'read_repository'},fetchSource);
+ assert.equal(result.repository,requested);
+ assert.equal(result.canonicalRepository,repository);
+ assert.equal(result.headSha,sha);
+});
 test('repository scope, paths and branch changes are enforced before writes',async()=>{
  await assert.rejects(githubOperation({GITHUB_TOKEN:'test'}, {repository:'other/repo',action:'read_repository'}),/explicit_owner_repository/);
  await assert.rejects(githubOperation({GITHUB_TOKEN:'test'}, {repository,action:'read_file',ref:sha,path:'../secret'}),/invalid_repository_path/);
@@ -123,8 +136,36 @@ test('repository creation uses the owner account API and provisions Python/Node 
  const result=await githubOperation({GITHUB_TOKEN:'fixture-token'}, {repository:'www-infinity4/New-App',action:'create_repository'},network);
  assert.equal(result.status,'repository_created');assert.equal(result.environment.status,'configured');assert.equal(result.testsPassed,false);
  assert.equal(JSON.parse(calls[1].options.body).name,'New-App');
- const workflow=Buffer.from(JSON.parse(calls[2].options.body).content,'base64').toString('utf8');
+ const baseline=calls.find(call=>call.options.method==='PUT');
+ const workflow=Buffer.from(JSON.parse(baseline.options.body).content,'base64').toString('utf8');
  assert.match(workflow,/setup-python/);assert.match(workflow,/node-version: '22'/);assert.ok(!workflow.includes('fixture-token'));
+});
+
+test('private creation returns README proof only after a pinned GitHub readback',async()=>{
+ const repository='www-infinity4/Bubbles-QA',url='https://github.com/'+repository;
+ const commitSha='a'.repeat(40),blobSha='b'.repeat(40);
+ for(const hasReadme of [true,false]){
+  const calls=[];
+  const result=await githubOperation({GITHUB_TOKEN:'fixture-token'}, {action:'create_repository',repository,private:true},async (endpoint,options)=>{
+   calls.push([endpoint,options.method]);
+   if(endpoint.endsWith('/user'))return Response.json({login:'www-infinity4'});
+   if(endpoint.endsWith('/user/repos')){
+    assert.equal(JSON.parse(options.body).private,true);
+    assert.equal(JSON.parse(options.body).auto_init,true);
+    return Response.json({full_name:repository,html_url:url,default_branch:'main',private:true},{status:201});
+   }
+   if(endpoint.endsWith('/commits/main'))return Response.json({sha:commitSha});
+   if(endpoint.endsWith('/contents/README.md?ref='+commitSha))return hasReadme?
+    Response.json({type:'file',path:'README.md',sha:blobSha}):Response.json({}, {status:404});
+   assert.equal(options.method,'PUT');
+   return Response.json({commit:{sha:next}},{status:201});
+  });
+  assert.equal(result.status,'repository_created');
+  assert.equal(result.private,true);
+  assert.deepEqual(result.readme,hasReadme?{path:'README.md',commitSha,blobSha}:null);
+  assert.equal(calls.filter(([,method])=>method==='POST').length,1);
+  assert.equal(result.testsPassed,false);
+ }
 });
 
 test('repository catalog follows every page and keeps owner scope without changing repositories',async()=>{

@@ -901,6 +901,13 @@ public final class BubblesService extends Service {
 
     private void beginAudioRecording() {
         if (liveMicrophoneOwned) { pendingAudioRecording = false; return; }
+        // A second Record tap must not reset the active WAV or its transcript.
+        if (recording.active()) {
+            pendingAudioRecording = false;
+            BrainNotes.prefs(this).edit().putBoolean("audio_active", true)
+                .putString("audio_state", "Recording microphone sound").apply();
+            return;
+        }
         pendingAudioRecording = false;
         try {
             recording.start(new java.io.File(getFilesDir(), "captures"));
@@ -917,7 +924,12 @@ public final class BubblesService extends Service {
         final java.io.File completed;
         try {
             completed = recording.finish();
-            if (completed == null) return; // No sound bytes; do not report a fake save.
+            if (completed == null) {
+                // Stop before microphone startup (or with zero PCM) is not a save.
+                BrainNotes.prefs(this).edit()
+                    .putString("audio_state", "No microphone recording to save").apply();
+                return;
+            }
             final String transcript = recordedWords;
             BrainNotes.prefs(this).edit()
                 .putString("audio_path", completed.getAbsolutePath())

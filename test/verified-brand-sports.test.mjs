@@ -1,12 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {tinyfishCard} from '../tinyfish-card-catalog.mjs';
 import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from '../verified-brand-sports-catalog.mjs';
 import {VERIFIED_CARD_COUNT,isSafeCardUrl,safeSportsArticle} from '../verified-brand-sports-cards.mjs';
 const read=x=>readFileSync(new URL('../'+x,import.meta.url),'utf8');
 test('all curated sources have real image URLs and exactly three source-aware interactions',()=>{
  assert.ok(REQUESTED_PUBLIC_CARDS.length>=25);
- assert.equal(VERIFIED_CARD_COUNT,REQUESTED_PUBLIC_CARDS.length);
+ assert.equal(VERIFIED_CARD_COUNT,REQUESTED_PUBLIC_CARDS.filter(c=>!c.id.startsWith('world-series-')).length);
  assert.equal(new Set(REQUESTED_PUBLIC_CARDS.map(x=>x.id)).size,REQUESTED_PUBLIC_CARDS.length);
  for(const item of REQUESTED_PUBLIC_CARDS){
   assert.ok(validBrandSportsCard(item),item.id);
@@ -39,8 +40,9 @@ test('uncertain brands and age restrictions are preserved without premature publ
  for(const name of ['Crown Royal','Bud Light','Petrona','how','Viper Google simulator'])assert.ok(names.includes(name));
  assert.equal(REQUESTED_PUBLIC_CARDS.some(x=>x.id.includes('bud-light')||x.id.includes('crown-royal')),false);
  const politics=REQUESTED_PUBLIC_CARDS.filter(x=>x.kind==='civic');
- assert.equal(politics.length,2);
- assert.ok(politics.every(x=>x.nonTargeted));
+ assert.equal(politics.length,0);
+ assert.equal(tinyfishCard('zach-nunn-ia3'),null);
+ assert.equal(tinyfishCard('miller-meeks-ia1'),null);
  const health=REQUESTED_PUBLIC_CARDS.find(x=>x.id==='colorectal-screening');
  assert.equal(health.nonTargeted,true);
  assert.match(health.official,/cancer.gov/);
@@ -55,6 +57,7 @@ test('same Oracle viewer, no useless generic search bar, original narration',()=
  assert.match(js,/sourceReady='false'/);
  assert.match(js,/sourceReady='true'/);
  assert.match(js,/sampleAnnouncerFacts/);
+ assert.match(js,/!c.id.startsWith/);
  assert.match(js,/speechSynthesis/);
 });
 
@@ -71,4 +74,18 @@ test('Oracle opening selector is initialized before any eager hidden-bank images
  const declaration=deck.indexOf('let openingCursor=null;');
  const firstSourceScan=deck.indexOf('registerSourceCards();');
  assert.ok(declaration>0 && firstSourceScan>declaration,'No temporary-dead-zone crash before chooser listeners mount');
+});
+
+test('Tide #bubbles source card has an actual Tide product image and three first-party actions',()=>{
+ const tide=REQUESTED_PUBLIC_CARDS.find(x=>x.id==='tide-original-liquid');
+ assert.ok(tide,'owner-requested Tide card exists in public rotation');
+ assert.equal(tide.kind,'product');
+ assert.equal(tide.checked,'2026-10-30');
+ assert.equal(tide.official,'https://tide.com/en-us/shop/type/liquid/tide-original-liquid');
+ assert.ok(tide.visual.startsWith('https://images.ctfassets.net/ajjw8wywicb3/'));
+ assert.ok(tide.visual.includes('Tide_Belize_SUD_Original_listing'));
+ assert.equal(tide.actions.length,3);
+ assert.ok(tide.actions.every(x=>x.url.startsWith('https://tide.com/en-us/')));
+ assert.match(tide.description,/independent card/);
+ assert.equal(tide.description.includes('$'),false);
 });

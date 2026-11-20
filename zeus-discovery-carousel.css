@@ -1,0 +1,64 @@
+/* Second independent, cast-friendly model/creator discovery rail. */
+#zeusDiscoveryCarousel{
+ margin:20px 0 26px;padding:clamp(12px,2.2vw,22px);min-width:0;
+ background:#f7f9fa;color:#1b2b33;border:1px solid #d6e1e5;
+ border-radius:22px;box-shadow:0 8px 32px #243e4a0f;scroll-margin-top:22px;
+ font-family:system-ui,-apple-system,Arial,sans-serif;
+}
+#zeusDiscoveryCarousel *{box-sizing:border-box}
+#zeusDiscoveryCarousel .zdc-head{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+#zeusDiscoveryCarousel .zdc-head h2{font-size:clamp(1.3rem,3vw,1.75rem);margin:2px 0 5px;line-height:1.2;color:#15303a}
+#zeusDiscoveryCarousel .zdc-head p{margin:4px 0 12px;font-size:.88rem;line-height:1.5;color:#425861;max-width:760px}
+#zeusDiscoveryCarousel .zdc-eyebrow{font-size:.72rem!important;font-weight:800;letter-spacing:.08em;color:#346178!important;text-transform:uppercase}
+#zeusDiscoveryCarousel .zdc-tabs,#zeusDiscoveryCarousel .zdc-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0 12px}
+#zeusDiscoveryCarousel :is(button,.zdc-cta){font:700 .88rem/1.25 system-ui,sans-serif;min-height:44px;cursor:pointer;border-radius:12px}
+#zeusDiscoveryCarousel button{padding:9px 13px;background:#fff;color:#264350;border:1px solid #c9d7de}
+#zeusDiscoveryCarousel .zdc-tabs button.is-current{color:#084766;border-color:#8bb5c5;box-shadow:inset 0 -3px #227a9f}
+#zeusDiscoveryCarousel button:focus-visible,#zeusDiscoveryCarousel a:focus-visible{outline:3px solid #2183ab;outline-offset:3px}
+#zeusDiscoveryCarousel button:disabled{cursor:not-allowed;opacity:.5}
+#zeusDiscoveryCarousel #zeusDiscoverStatus{margin:0;font-size:.8rem;color:#526873;flex:1 1 190px;line-height:1.5}
+#zeusDiscoveryCarousel .zdc-track{
+ display:flex;gap:0;overflow-x:auto;overscroll-behavior-inline:contain;
+ scroll-snap-type:x mandatory;scroll-padding:0;scroll-behavior:smooth;
+ scrollbar-width:thin;touch-action:pan-x pan-y;border-radius:17px;
+ border:1px solid #cfdbdf;background:#fff;
+}
+#zeusDiscoveryCarousel .zdc-slide{
+ scroll-snap-align:start;scroll-snap-stop:always;
+ flex:0 0 100%;width:100%;max-width:100%;min-width:0;
+ display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+ gap:0;overflow:hidden;background:#fff;color:#162a34;
+}
+#zeusDiscoveryCarousel .zdc-art{
+ min-height:290px;display:grid;place-items:center;
+ background:radial-gradient(circle at 45% 35%,#fff7dd 0,#e4edf0 65%,#cddfe6 100%);
+ border-right:1px solid #dae4e8;
+}
+#zeusDiscoveryCarousel .zdc-glyph{font-size:clamp(5rem,13vw,10rem);font-weight:800;line-height:1;text-shadow:0 5px 0 #ffffffcf;color:#795c20}
+#zeusDiscoveryCarousel .zdc-detail{min-width:0;display:flex;flex-direction:column;padding:clamp(17px,3vw,30px)}
+#zeusDiscoveryCarousel .zdc-kicker{font-size:.74rem;letter-spacing:.03em;color:#32627c;margin:0 0 8px;font-weight:850}
+#zeusDiscoveryCarousel .zdc-detail h3{font-size:clamp(1.5rem,4vw,2.5rem);line-height:1.1;color:#182f39;margin:0 0 8px;overflow-wrap:anywhere}
+#zeusDiscoveryCarousel .zdc-headline{font-size:1rem;font-weight:800;color:#38515e;margin:0 0 8px}
+#zeusDiscoveryCarousel .zdc-description{line-height:1.52;font-size:.98rem;color:#435760;max-width:52ch;margin:0 0 18px}
+#zeusDiscoveryCarousel .zdc-actions{margin-top:auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+#zeusDiscoveryCarousel .zdc-cta{display:inline-flex;align-items:center;justify-content:center;border:1px solid #86b0c2;background:#ecf5f9;color:#165071;text-align:center;text-decoration:none;padding:12px 18px}
+#zeusDiscoveryCarousel .zdc-note{font-size:.78rem;color:#516772;line-height:1.5;margin:12px 0 0}
+#zeusDiscoveryCarousel .zdc-cast-note{margin:10px 0 0;font-size:.79rem;color:#526873}
+#zeusDiscoveryCarousel:fullscreen{width:100vw;height:100dvh;overflow-y:auto;display:flex;flex-direction:column;justify-content:center;background:#f5f8f9;border:0;border-radius:0;padding:clamp(20px,4vw,56px)}
+#zeusDiscoveryCarousel:fullscreen .zdc-art{min-height:clamp(300px,50vh,650px)}
+#zeusDiscoveryCarousel:fullscreen .zdc-detail h3{font-size:clamp(2rem,5vw,4rem)}
+#zeusDiscoveryCarousel:fullscreen .zdc-description{font-size:clamp(1.05rem,2vw,1.45rem)}
+@media(max-width:630px){
+ #zeusDiscoveryCarousel .zdc-slide{grid-template-columns:minmax(0,1fr)}
+ #zeusDiscoveryCarousel .zdc-art{min-height:0;height:clamp(155px,24vh,230px);border-right:0;border-bottom:1px solid #dbe5e9}
+ #zeusDiscoveryCarousel .zdc-glyph{font-size:clamp(4.5rem,20vw,7.2rem)}
+ #zeusDiscoveryCarousel .zdc-detail{padding:16px}
+ #zeusDiscoveryCarousel .zdc-detail h3{font-size:clamp(1.5rem,6vw,2rem)}
+ #zeusDiscoveryCarousel .zdc-description{font-size:.94rem}
+ #zeusDiscoveryCarousel .zdc-controls button{flex:0 1 auto}
+ #zeusDiscoveryCarousel:fullscreen .zdc-art{min-height:0;height:27dvh}
+}
+@media(prefers-reduced-motion:reduce){
+ #zeusDiscoveryCarousel .zdc-track{scroll-behavior:auto}
+ #zeusDiscoveryCarousel .zdc-glyph{animation:none!important}
+}

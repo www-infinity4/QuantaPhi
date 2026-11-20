@@ -4,6 +4,8 @@ on:
     paths:
       - "bubbles-memory.js"
       - "bubbles-ai.js"
+      - "bubbles-public-build-history.mjs"
+      - "test/bubbles-public-build-history.test.mjs"
       - "workers/bubbles-memory/**"
       - "workers/infinity-brain-clock/conversation-memory.mjs"
       - "workers/infinity-brain-clock/notification-settings.mjs"
@@ -16,6 +18,8 @@ on:
     paths:
       - "bubbles-memory.js"
       - "bubbles-ai.js"
+      - "bubbles-public-build-history.mjs"
+      - "test/bubbles-public-build-history.test.mjs"
       - "workers/bubbles-memory/**"
       - "workers/infinity-brain-clock/conversation-memory.mjs"
       - "workers/infinity-brain-clock/notification-settings.mjs"
@@ -36,6 +40,7 @@ jobs:
         run: |
           node --check bubbles-memory.js
           node --check bubbles-ai.js
+          node --check bubbles-public-build-history.mjs
           node --check workers/bubbles-memory/worker.mjs
       - name: Verify wallet-scoped event retention, deletion and replay policy
-        run: node --test test/bubbles-memory.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-memory-context-budget.test.mjs
+        run: node --test test/bubbles-memory.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-memory-context-budget.test.mjs test/bubbles-public-build-history.test.mjs
