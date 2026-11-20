@@ -3,17 +3,87 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T08:31:33.603807Z",
+  "checked_at": "2026-11-20T09:01:41.354548Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "swimming",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T08:30:00Z",
+      "related_news_urls": [
+        "https://www.kcci.com/article/north-high-honors-first-state-swim-champ-since-2012/74484856",
+        "https://www.weareiowa.com/video/sports/local-sports/the-drive-des-moines-norths-haylie-weinheimer/524-4a337453-1d2d-4dee-9164-8ae9c47d2a6c",
+        "https://www.weareiowa.com/video/sports/high-school/norths-haylie-weinheimer-ends-high-school-career-as-state-champ/524-8019b9e2-501d-43b4-9ebd-4046c8b3d252"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIzYxVBSQ0siorWbyDp8nEcyu_zMDMsGKeajkRijEIapx9nzdUHxAI7U96GMc",
+      "image_credit": "KCCI",
+      "news": [
+        {
+          "url": "https://www.kcci.com/article/north-high-honors-first-state-swim-champ-since-2012/74484856",
+          "title": "North High honors first state swim champ since 2012",
+          "publisher": "KCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIzYxVBSQ0siorWbyDp8nEcyu_zMDMsGKeajkRijEIapx9nzdUHxAI7U96GMc"
+        },
+        {
+          "url": "https://www.weareiowa.com/video/sports/local-sports/the-drive-des-moines-norths-haylie-weinheimer/524-4a337453-1d2d-4dee-9164-8ae9c47d2a6c",
+          "title": "The Drive: Des Moines North's Haylie Weinheimer",
+          "publisher": "weareiowa.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqKeMAdtBSbTUsHgqLAA_RrqR4lJGLYzCerYiXCpKtyolgr6sLYheBw1gNzqk"
+        },
+        {
+          "url": "https://www.weareiowa.com/video/sports/high-school/norths-haylie-weinheimer-ends-high-school-career-as-state-champ/524-8019b9e2-501d-43b4-9ebd-4046c8b3d252",
+          "title": "North's Haylie Weinheimer ends high school career as state champ",
+          "publisher": "weareiowa.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4G_x_0bEJEAjUKMeCOwpDZkLZk9i7EQQrUGcvTKLmP-yCmlhOOQ1Krp-p8v0"
+        }
+      ]
+    },
+    {
+      "query": "latest news",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T08:20:00Z",
+      "related_news_urls": [
+        "https://alaskabeacon.com/2026/11/19/doj-abandons-lawsuit-that-sought-to-pause-certification-of-alaskas-us-senate-election/",
+        "https://www.theguardian.com/us-news/2026/nov/19/democrats-senate-majority-midterms-trump",
+        "https://www.washingtonpost.com/national-security/2026/11/19/justice-dept-drops-appeal-bid-delay-certification-alaska-senate-win/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXERlq7y3R_Zuk6aY9NjcrQJE0PtY_S9oH-94yPb0KbJI3UOlzc2ertbPu_rQ",
+      "image_credit": "Alaska Beacon",
+      "news": [
+        {
+          "url": "https://alaskabeacon.com/2026/11/19/doj-abandons-lawsuit-that-sought-to-pause-certification-of-alaskas-us-senate-election/",
+          "title": "DOJ abandons lawsuit that sought to pause certification of Alaska’s US Senate election",
+          "publisher": "Alaska Beacon",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXERlq7y3R_Zuk6aY9NjcrQJE0PtY_S9oH-94yPb0KbJI3UOlzc2ertbPu_rQ"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/19/democrats-senate-majority-midterms-trump",
+          "title": "‘A new day in the Senate’: 56-44 majority gives Democrats fuel to take on Trump",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNoJNkNO-ju5Mz2iQ9x4UqGfioaDileSVjw4f7LSCF51G1E-2sAVGpXOqhV_A"
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2026/11/19/justice-dept-drops-appeal-bid-delay-certification-alaska-senate-win/",
+          "title": "Justice Dept. drops appeal in bid to delay certification of Alaska Senate win",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAXyhTEwR3nMyu1qeEv-94u-pFg2OhjuYre1odztJ6UNVkl9WK_3MR1fInkV8"
+        }
+      ]
+    },
     {
       "query": "criminal defense lawyer",
       "approx_searches": "200+",
       "published_at": "2026-11-20T08:00:00Z",
       "related_news_urls": [
         "https://patch.com/massachusetts/beverly/north-shore-law-firm-adds-former-essex-prosecutor-criminal-defense-team",
-        "https://www.thestate.com/news/local/crime/article318164022.html",
-        "https://www.politico.com/news/2026/11/17/tim-parlatore-libya-warlord-hegseth-01168919"
+        "https://demokratis.co.id/en/stone-adds-former-essex-prosecutor",
+        "https://bsinews.id/en/kaitlyn-duval-stone-defense-practice"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnJL_IQ2foJ_xiakOp3k1YTajGc3xZ2yG1y7dICiPoz0cjsqAKnGcjQNYrlWg",
       "image_credit": "Patch",
@@ -26,18 +96,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnJL_IQ2foJ_xiakOp3k1YTajGc3xZ2yG1y7dICiPoz0cjsqAKnGcjQNYrlWg"
         },
         {
-          "url": "https://www.thestate.com/news/local/crime/article318164022.html",
-          "title": "SC attorney who helped exonerate Rick Chow, steps up to another high-profile case",
-          "publisher": "The State",
+          "url": "https://demokratis.co.id/en/stone-adds-former-essex-prosecutor",
+          "title": "H. Ernest Stone Adds Former Essex Prosecutor to Defense Team",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRub9Z3dvu-Da8nYQdLNm89KiKVzHu2x4vH-wb3DCkULVogFf2FnlOekur319E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMWUUu6itnWvMW5OhQH-5tXhCTy8F88ElwW26ofnx5O8kZ6BZvDNPNQJmjRRA"
         },
         {
-          "url": "https://www.politico.com/news/2026/11/17/tim-parlatore-libya-warlord-hegseth-01168919",
-          "title": "Top Hegseth adviser represents Libyan warlord’s son accused of torture",
-          "publisher": "Politico",
+          "url": "https://bsinews.id/en/kaitlyn-duval-stone-defense-practice",
+          "title": "Kaitlyn Duval Joins H Ernest Stone Defense Practice",
+          "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzCFv92yMD2qTF3pnC854QDEIQr83raxvdMFDLa1smu_bdCc89aLslKFCIyL0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6tln2TYU9omAt7PQskspinOupFkHn0xcUWbcPC84XJByj2RmZjTHKKQb0TUs"
         }
       ]
     },
@@ -112,6 +182,41 @@
       ]
     },
     {
+      "query": "x.",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T07:50:00Z",
+      "related_news_urls": [
+        "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
+        "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
+        "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw",
+      "image_credit": "Digital Foundry",
+      "news": [
+        {
+          "url": "https://www.digitalfoundry.net/features/gta-6-ps5-vs-ps5-pro-xbox-series-x-and-series-s-which-console-plays-best",
+          "title": "GTA 6: PS5 vs PS5 Pro, Xbox Series X and Series S: Which Console Plays Best?",
+          "publisher": "Digital Foundry",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCaX5JvGP0hM7rff1QIkom_oFPhAy0DDtLkI7vcfxnPwGjNDC9El2moVPx-dw"
+        },
+        {
+          "url": "https://wccftech.com/grand-theft-auto-vi-amd-fsr-4-xbox-series-s-ray-tracing/",
+          "title": "Grand Theft Auto VI Uses AMD FSR 4 On Xbox Series S, Upscaling 720p To 1080p While Still Running Ray Traced Global Illumination",
+          "publisher": "Wccftech",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8AMqKOkopU6mi5ahjy2oGDadqeUTOb08fkwa1HeGMkCIw09-d26qrtECsl7s"
+        },
+        {
+          "url": "https://kotaku.com/gta-6-wont-get-a-60-fps-mode-even-on-ps5-pro-because-its-not-powerful-enough-2000755979",
+          "title": "GTA 6 Won’t Get A 60 FPS Mode, Even On PS5 Pro, Because It’s ‘Not Powerful Enough’",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROmKm3_DuoRdLIj-n08VTdrtbbdHT7Zddidf_soIeK6ZipViaE1KXiet62zwU"
+        }
+      ]
+    },
+    {
       "query": "app",
       "approx_searches": "100+",
       "published_at": "2026-11-20T07:50:00Z",
@@ -148,7 +253,7 @@
     },
     {
       "query": "one piece 1199",
-      "approx_searches": "500+",
+      "approx_searches": "200+",
       "published_at": "2026-11-20T07:40:00Z",
       "related_news_urls": [
         "https://www.yahoo.com/entertainment/tv/articles/one-piece-chapter-1199-spoilers-085854936.html",
@@ -222,8 +327,8 @@
       "published_at": "2026-11-20T07:30:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/cvkg58d7z10ro",
-        "https://www.devdiscourse.com/article/international/4009289-indonesia-court-jails-daycare-head-for-5-years-in-child-abuse-case",
-        "https://www.reutersconnect.com/item/anita-palupi-head-of-the-little-aresha-daycare-center-talks-with-her-lawyer-during-a-verdict-hearing-in-a-child-abuse-case-at-yogyakarta-district-court-in-yogyakarta/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlNRT0FTSVNOUA"
+        "https://www.reutersconnect.com/item/anita-palupi-head-of-the-little-aresha-daycare-center-talks-with-her-lawyer-during-a-verdict-hearing-in-a-child-abuse-case-at-yogyakarta-district-court-in-yogyakarta/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlNRT0FTSVNOUA",
+        "https://www.reuters.com/world/asia-pacific/indonesia-court-jails-daycare-head-5-years-child-abuse-case-2026-11-19/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKciyuppoTkEqOYU6LytVWlm3vG2VVlRd-3ivpLgHPtnR7GSgNzFPfKkif418",
       "image_credit": "BBC",
@@ -236,123 +341,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKciyuppoTkEqOYU6LytVWlm3vG2VVlRd-3ivpLgHPtnR7GSgNzFPfKkif418"
         },
         {
-          "url": "https://www.devdiscourse.com/article/international/4009289-indonesia-court-jails-daycare-head-for-5-years-in-child-abuse-case",
-          "title": "Indonesia court jails daycare head for 5 years in child abuse case",
-          "publisher": "Devdiscourse",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBnQTwUY5pEwC8EpzVWBVE0lLyJcmifbrtNRVISYh6CUjNHq0b4e0nLEDEzBk"
-        },
-        {
           "url": "https://www.reutersconnect.com/item/anita-palupi-head-of-the-little-aresha-daycare-center-talks-with-her-lawyer-during-a-verdict-hearing-in-a-child-abuse-case-at-yogyakarta-district-court-in-yogyakarta/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlNRT0FTSVNOUA",
           "title": "Licensable picture: Anita Palupi, head of the Little Aresha daycare center, talks with her lawyer during a verdict hearing in a child abuse case at Yogyakarta District Court in Yog",
           "publisher": "Reuters Connect",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDdno25yGagJPnWZJ_qUQMNjBKhGMVhqHKdk2zB26N6uE90qQTXQBX67bVids"
-        }
-      ]
-    },
-    {
-      "query": "sndk",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T07:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-worth-third-june-181602656.html",
-        "https://www.tradingview.com/news/gurufocus:942b663a5094b:0-sandisk-stocks-jump-6-29-hours-before-8-for-1-split-takes-effect/",
-        "https://www.tikr.com/blog/sandisk-sinks-21-in-a-week-as-nvidias-ceo-exit-hits-memory-stocks-time-to-buy"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpjKLE1dYHVKIt0Cme4_6F0BSd74RKv9tSiyx-TUrIqK3yNMeFqWbkmNaLB58",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-worth-third-june-181602656.html",
-          "title": "Sandisk Stock Is Worth a Third of What It Was in June. I'd Buy It Now.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpjKLE1dYHVKIt0Cme4_6F0BSd74RKv9tSiyx-TUrIqK3yNMeFqWbkmNaLB58"
         },
         {
-          "url": "https://www.tradingview.com/news/gurufocus:942b663a5094b:0-sandisk-stocks-jump-6-29-hours-before-8-for-1-split-takes-effect/",
-          "title": "Sandisk Stocks Jump 6.29% Hours Before 8-for-1 Split Takes Effect",
-          "publisher": "TradingView",
+          "url": "https://www.reuters.com/world/asia-pacific/indonesia-court-jails-daycare-head-5-years-child-abuse-case-2026-11-19/",
+          "title": "Indonesia court jails daycare head for 5 years in child abuse case",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ56KuD88gfoedWQc0khgOnLcDOqBC_okZ_gcKAbikFxuD98v58uQSzzRvy19Q"
-        },
-        {
-          "url": "https://www.tikr.com/blog/sandisk-sinks-21-in-a-week-as-nvidias-ceo-exit-hits-memory-stocks-time-to-buy",
-          "title": "Sandisk Sinks 21% in a Week as Nvidia’s CEO Exit Hits Memory Stocks. Time to Buy?",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAUdQiR0RbL9vSBKQICN27XGPDxzLkLfhmbGG688zax1uI1Q3Xl5n8M266AdQ"
-        }
-      ]
-    },
-    {
-      "query": "truck accident lawyer",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T07:20:00Z",
-      "related_news_urls": [
-        "https://kpq.com/fatal-hitandrun-okanogan-tips-investigation/",
-        "https://www.yoursourceone.com/columbia_basin/victim-identified-in-fatal-okanogan-hit-and-run-cause-of-death-revealed/article_80e46634-d7f1-4873-adf2-74296ffbd6e6.html",
-        "https://www.beverlylaw.org/accident-news/washington/okanogan/11-17-2026-okanogan-sr-215-hit-and-run-pedestrian-accident-lawyer/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX6kpou2ssILtWWbXQlCyIwNbLTHpZp-6nZsEdOc84pqN5G1FGihZ8Xi46x_k",
-      "image_credit": "NewsRadio 560 KPQ",
-      "news": [
-        {
-          "url": "https://kpq.com/fatal-hitandrun-okanogan-tips-investigation/",
-          "title": "Okanogan Police Seek Tips, Video Connected To Investigation Of Fatal Hit-&-Run",
-          "publisher": "NewsRadio 560 KPQ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX6kpou2ssILtWWbXQlCyIwNbLTHpZp-6nZsEdOc84pqN5G1FGihZ8Xi46x_k"
-        },
-        {
-          "url": "https://www.yoursourceone.com/columbia_basin/victim-identified-in-fatal-okanogan-hit-and-run-cause-of-death-revealed/article_80e46634-d7f1-4873-adf2-74296ffbd6e6.html",
-          "title": "Victim Identified in Fatal Okanogan Hit-and-Run; Cause of Death Revealed",
-          "publisher": "Source ONE News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLLFRDEpNayIwsOunKjudafGXa7KdEzom7EtR14eiF3_JIdOWN4dBqMi5I71o"
-        },
-        {
-          "url": "https://www.beverlylaw.org/accident-news/washington/okanogan/11-17-2026-okanogan-sr-215-hit-and-run-pedestrian-accident-lawyer/",
-          "title": "Pedestrian Killed in Hit-and-Run on SR 215 Near Okanogan; Driver Sought | Okanogan Pedestrian Accident Lawyer - Call Beverly Law NOW",
-          "publisher": "Beverly Law",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrSEHThQIcLp2AZGKpOrAFpa_AuSou4vxb921qzXwcFHLeDTewixrctuW95lo"
-        }
-      ]
-    },
-    {
-      "query": "car accident attorney",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T07:20:00Z",
-      "related_news_urls": [
-        "https://www.khou.com/video/entertainment/television/programs/great-day-houston/sponsored-shariff-injury-lawyers-share-what-to-do-immediately-after-a-car-accident/285-1dac553c-2ebc-470f-a35a-a584b6dcac97",
-        "https://kpq.com/fatal-hitandrun-okanogan-tips-investigation/",
-        "https://www.yoursourceone.com/columbia_basin/victim-identified-in-fatal-okanogan-hit-and-run-cause-of-death-revealed/article_80e46634-d7f1-4873-adf2-74296ffbd6e6.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRtr6VQZJ-3FF9Kajp-h3XBFVlgQVQL0Ni5CIJ09n4yYML3tr6uklyUWHX_1g",
-      "image_credit": "KHOU",
-      "news": [
-        {
-          "url": "https://www.khou.com/video/entertainment/television/programs/great-day-houston/sponsored-shariff-injury-lawyers-share-what-to-do-immediately-after-a-car-accident/285-1dac553c-2ebc-470f-a35a-a584b6dcac97",
-          "title": "Sponsored: Shariff Injury Lawyers share what to do immediately after a car accident",
-          "publisher": "KHOU",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRtr6VQZJ-3FF9Kajp-h3XBFVlgQVQL0Ni5CIJ09n4yYML3tr6uklyUWHX_1g"
-        },
-        {
-          "url": "https://kpq.com/fatal-hitandrun-okanogan-tips-investigation/",
-          "title": "Okanogan Police Seek Tips, Video Connected To Investigation Of Fatal Hit-&-Run",
-          "publisher": "NewsRadio 560 KPQ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX6kpou2ssILtWWbXQlCyIwNbLTHpZp-6nZsEdOc84pqN5G1FGihZ8Xi46x_k"
-        },
-        {
-          "url": "https://www.yoursourceone.com/columbia_basin/victim-identified-in-fatal-okanogan-hit-and-run-cause-of-death-revealed/article_80e46634-d7f1-4873-adf2-74296ffbd6e6.html",
-          "title": "Victim Identified in Fatal Okanogan Hit-and-Run; Cause of Death Revealed",
-          "publisher": "Source ONE News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLLFRDEpNayIwsOunKjudafGXa7KdEzom7EtR14eiF3_JIdOWN4dBqMi5I71o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5hmyqNQVJiNQ582nMpLiSD2NNzltGUCRD7IewPcWgBmJ4t4Ft7Q_y3wsANYo"
         }
       ]
     }
