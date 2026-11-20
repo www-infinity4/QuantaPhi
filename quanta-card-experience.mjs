@@ -10,6 +10,7 @@ import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
 import {mountMotorcycleQuickCard} from './motorcycle-quick-cards.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
 import {mountCreatorPostCard} from './creator-post-cards.mjs';
+import {mountYouTubeCreatorCard} from './youtube-creator-cards.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
  */
@@ -406,6 +407,9 @@ export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(mountYouTubeCreatorCard(root,card)){
+  mountCardActions(root,card,{showSearch:false});return;
+ }
  if(mountCreatorPostCard(root,card)){
   mountCardActions(root,card,{showSearch:false});return;
  }

@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {Script} from 'node:vm';
 import {QUICK_CARD_SOURCES,findSourceCard,validSourceCard,PUBLIC_SOURCE_IDS,isPublicSourceCard} from '../source-quick-cards.mjs';
 import {CREATOR_SOURCES} from '../creator-post-catalog.mjs';
+import {YOUTUBE_CREATOR_SOURCES} from '../youtube-creator-catalog.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'utf8');
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
@@ -118,9 +119,10 @@ test('functional source cards enter Public while link-only integrations remain s
   'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
   'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
   'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela',
-  ...CREATOR_SOURCES.map(c=>c.id)
+  ...CREATOR_SOURCES.map(c=>c.id),
+  ...YOUTUBE_CREATOR_SOURCES.map(c=>c.id)
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,25+CREATOR_SOURCES.length);
+ assert.equal(PUBLIC_SOURCE_IDS.length,25+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/ACTIVE_SOURCE_CARDS\.filter\(isPublicSourceCard\)/);

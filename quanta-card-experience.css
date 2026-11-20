@@ -1,4 +1,13 @@
 /* Oracle Octaves editorial identity: functional, readable, no emoji placeholder tiles. */
+/* YouTube video index: native select's intrinsic option width can exceed a
+ * narrow phone viewport. Contain grid min-content sizing without hiding actions. */
+.youtube-creator-post-card{min-width:0;max-width:100%;width:100%;overflow-wrap:anywhere}
+.youtube-creator-post-card :is(.qcx-controls,.youtube-creator-content,.qcx-player){min-width:0;max-width:100%}
+.youtube-creator-post-card :is(input,select){width:100%;min-width:0;max-width:100%;font-size:16px;min-height:46px}
+.youtube-creator-post-card :is(.qcx-link,.qcx-button){max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.youtube-creator-post-card :is(img,iframe){max-width:100%}
+
+
 .creator-post-card{font-size:16px;line-height:1.6;letter-spacing:.015em;min-width:0}
 .creator-post-card .creator-post-controls{display:grid;gap:10px;min-width:0}
 .creator-post-card :is(input,select){width:100%;min-width:0;min-height:46px;font-size:16px}
