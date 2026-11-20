@@ -3,47 +3,284 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T00:43:50.087191Z",
+  "checked_at": "2026-11-20T01:01:36.649979Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "harrison ford",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T00:40:00Z",
+      "related_news_urls": [
+        "https://people.com/harrison-ford-calista-flockhart-step-out-glamorous-night-together-receive-first-joint-award-12264224",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/harrison-ford-84-calista-flockhart-101602266.html",
+        "https://parade.com/celebrities/ally-mcbeal-star-62-turns-heads-rare-red-carpet-appearance-alongside-superstar-husband-calista-flockhart-harrison-ford"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnKvQUhHXH7eXaHc8bYKjvUydpYdieY-RhoaKNpV1WNm9dlMi3uZQgkqzX3mU",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/harrison-ford-calista-flockhart-step-out-glamorous-night-together-receive-first-joint-award-12264224",
+          "title": "Harrison Ford and Calista Flockhart Step Out for Date Night to Celebrate Joint Career Milestone Award",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnKvQUhHXH7eXaHc8bYKjvUydpYdieY-RhoaKNpV1WNm9dlMi3uZQgkqzX3mU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/harrison-ford-84-calista-flockhart-101602266.html",
+          "title": "Harrison Ford, 84, and Calista Flockhart, 62, turn heads with age-defying appearance in matching outfits",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROH0Wq_D-O4YZ92cg9m1-Wlmgt_TGazsfk9mVxsehJnNuhoAqNEtQdrVzXwJc"
+        },
+        {
+          "url": "https://parade.com/celebrities/ally-mcbeal-star-62-turns-heads-rare-red-carpet-appearance-alongside-superstar-husband-calista-flockhart-harrison-ford",
+          "title": "‘Ally McBeal’ Star, 62, Turns Heads in Rare Red Carpet Appearance Alongside Superstar Husband",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNEOjhJQnEVD5uONuqQpgzf8umcpFitjyJRJh-1wIO_A-mwvH3KTNoWK6Z0a4"
+        }
+      ]
+    },
+    {
+      "query": "bo french",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T00:40:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/news/2026/11/18/bo-french-texas-country-club-membership-01173063",
+        "https://people.com/texas-republican-loses-country-club-membership-over-racist-posts-2-weeks-after-losing-election-12265270",
+        "https://www.yahoo.com/news/politics/articles/bo-french-loses-texas-election-181534144.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA0Kp7fiBI7kOtBFxsFdAtZeaf1goWlkpX2BQJOP6geyQft8vNsKPapou-WGQ",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/news/2026/11/18/bo-french-texas-country-club-membership-01173063",
+          "title": "Bo French loses Texas country club membership",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA0Kp7fiBI7kOtBFxsFdAtZeaf1goWlkpX2BQJOP6geyQft8vNsKPapou-WGQ"
+        },
+        {
+          "url": "https://people.com/texas-republican-loses-country-club-membership-over-racist-posts-2-weeks-after-losing-election-12265270",
+          "title": "Texas Republican Loses Country Club Membership Over ‘Racist Posts’ 2 Weeks After Losing Election",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4VKiJ5P5wLFTWlzicQ_NrBFSoQOWKxsWEjAvqYDWwM7_0fxYfRmb1NTAghps"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/bo-french-loses-texas-election-181534144.html",
+          "title": "Bo French loses Texas election, gets booted from country club after UT racism roil",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqnEvlbTnjYwA_WJVMlWTJMM_lMMJS4JKpmfPaWAcmDxip--4fs7JyINGBl48"
+        }
+      ]
+    },
+    {
+      "query": "davis martin",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T00:30:00Z",
+      "related_news_urls": [
+        "https://www.mlbtraderumors.com/2026/11/white-sox-to-trade-davis-martin-luis-castillo-to-rockies.html",
+        "https://www.soxon35th.com/white-sox-trade-davis-martin-luis-castillo-to-rockies/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH4WlYdtmVhjVqflC1DmA5sHopfC9MpfdMHfiL9vxZp57eepO4dlbuq4Wg5f8",
+      "image_credit": "MLB Trade Rumors",
+      "news": [
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/white-sox-to-trade-davis-martin-luis-castillo-to-rockies.html",
+          "title": "White Sox To Trade Davis Martin, Luis Castillo To Rockies",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH4WlYdtmVhjVqflC1DmA5sHopfC9MpfdMHfiL9vxZp57eepO4dlbuq4Wg5f8"
+        },
+        {
+          "url": "https://www.soxon35th.com/white-sox-trade-davis-martin-luis-castillo-to-rockies/",
+          "title": "White Sox trade Davis Martin, Luis Castillo to the Rockies",
+          "publisher": "Sox On 35th",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_-jaIlLOHQSRlRWnomYhWtfYVjZcBiZlvXy_uqMSLDsezV1TrqD_YQbnbA60"
+        }
+      ]
+    },
+    {
+      "query": "22nd amendment",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T00:30:00Z",
+      "related_news_urls": [
+        "https://people.com/trump-nominated-judge-refuses-to-say-he-cant-run-for-third-term-12263450",
+        "https://truthout.org/articles/trump-judge-nominee-wont-say-if-he-can-run-for-president-a-third-time/",
+        "https://www.cornyn.senate.gov/news/video-cornyn-introduces-james-sullivan-in-judiciary-committee-to-be-a-u-s-district-judge-for-the-western-district-of-texas/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVeqFG57xPkFLeswjwjZcMlQHVfetq8XgtgN2pMKc7LnTlM0RzvuNOFWQynVc",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/trump-nominated-judge-refuses-to-say-he-cant-run-for-third-term-12263450",
+          "title": "Trump-Nominated Judge Refuses to Say the President Can’t Run for a Third Term",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVeqFG57xPkFLeswjwjZcMlQHVfetq8XgtgN2pMKc7LnTlM0RzvuNOFWQynVc"
+        },
+        {
+          "url": "https://truthout.org/articles/trump-judge-nominee-wont-say-if-he-can-run-for-president-a-third-time/",
+          "title": "Trump Judicial Nominee Won’t Say If He Can Run for President a Third Time",
+          "publisher": "Truthout",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpQU3RjuWOVy99bm-4LZAbhJK2RH2KhM5Owxcxg92ca69qsxS2pdr6iPITHIo"
+        },
+        {
+          "url": "https://www.cornyn.senate.gov/news/video-cornyn-introduces-james-sullivan-in-judiciary-committee-to-be-a-u-s-district-judge-for-the-western-district-of-texas/",
+          "title": "VIDEO: Cornyn Introduces James Sullivan in Judiciary Committee to be a U.S. District Judge for the Western District of Texas",
+          "publisher": "Senator Cornyn (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAnZzqAgPyQDb8xmJTNZJ4gzgr0t7def8uL4Or-iuneITpFCr3loXTiJFJDz4"
+        }
+      ]
+    },
+    {
+      "query": "butler basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T00:30:00Z",
+      "related_news_urls": [
+        "https://www.wthr.com/article/news/crime/two-indiana-men-charged-in-600-million-dollar-ponzi-scheme/531-03bd3401-e425-40eb-8d88-2655a030012a",
+        "https://www.indystar.com/story/sports/2026/11/19/indiana-ponzi-scheme-fbi-devin-johnson-phil-williams-droplight-butler-athletics-rll-indy-eleven/92861320007/",
+        "https://fox59.com/news/indycrime/2-indiana-men-backward-hat-capital-founders-charged-in-600-million-ponzi-scheme/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLAFCEyrhpDJfY7Wro_IPMTTHJD2nbRqsQr6Gj_jR37uzr-3Qy8Mu_5wC4zZI",
+      "image_credit": "WTHR",
+      "news": [
+        {
+          "url": "https://www.wthr.com/article/news/crime/two-indiana-men-charged-in-600-million-dollar-ponzi-scheme/531-03bd3401-e425-40eb-8d88-2655a030012a",
+          "title": "2 Indiana men charged in $600 million Ponzi scheme",
+          "publisher": "WTHR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLAFCEyrhpDJfY7Wro_IPMTTHJD2nbRqsQr6Gj_jR37uzr-3Qy8Mu_5wC4zZI"
+        },
+        {
+          "url": "https://www.indystar.com/story/sports/2026/11/19/indiana-ponzi-scheme-fbi-devin-johnson-phil-williams-droplight-butler-athletics-rll-indy-eleven/92861320007/",
+          "title": "Man charged in $600 million Ponzi scheme has ties to Butler Athletics, IndyCar team, more",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3hxRzArJea6YyMxCEnPZdZ900ut7FWwYa8zZyjk93HeslZfPBU_SP5F9mzj8"
+        },
+        {
+          "url": "https://fox59.com/news/indycrime/2-indiana-men-backward-hat-capital-founders-charged-in-600-million-ponzi-scheme/",
+          "title": "2 Indiana men, Backward Hat Capital founders charged in $600 million Ponzi scheme",
+          "publisher": "Fox 59",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIszSA9kRosjxbpThyWAYGgOeU8FnGq3zS99-qc5j7LAP08oXt_otKCr0fGnQ"
+        }
+      ]
+    },
+    {
+      "query": "justin pippen",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T00:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401916317",
+        "https://247sports.com/college/ohio-state/article/3-point-analysis-ohio-state-basketball-still-shows-issues-in-win-over-prairie-view-am-panthers-292893751/",
+        "https://www.dispatch.com/story/sports/college/basketball/2026/11/17/prairie-view-am-shows-ohio-state-basketball-still-maturing-takeaways/92806789007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPsno-XGyRfSjTChH3PG18oyIqK1ZFuk2rN6d9-NDQ6S4Kw6VS09_T5y7NBYg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401916317",
+          "title": "Ohio State 86-59 Prairie View A&M (Nov 16, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPsno-XGyRfSjTChH3PG18oyIqK1ZFuk2rN6d9-NDQ6S4Kw6VS09_T5y7NBYg"
+        },
+        {
+          "url": "https://247sports.com/college/ohio-state/article/3-point-analysis-ohio-state-basketball-still-shows-issues-in-win-over-prairie-view-am-panthers-292893751/",
+          "title": "3-point analysis: Ohio State still shows issues in win over Prairie View A&M",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYM_-xBVvMjNFTU6_eJKSLuaOqYlwhMzWywhTNesutM-gAB4QwOwYuxEa1Xk4"
+        },
+        {
+          "url": "https://www.dispatch.com/story/sports/college/basketball/2026/11/17/prairie-view-am-shows-ohio-state-basketball-still-maturing-takeaways/92806789007/",
+          "title": "First half vs Prairie View A&M shows Ohio State still maturing: Takeaways",
+          "publisher": "The Columbus Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThT19BI0HX3RZaRRzeULKfWqDYaUzZScAoASeLNCLUNyNgbYLs5ViBHZr5t-s"
+        }
+      ]
+    },
     {
       "query": "taylor sheridan",
       "approx_searches": "1000+",
       "published_at": "2026-11-20T00:20:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/frisco-king-trailer-release-date-taylor-sheridan-paramount-1237157647/",
-        "https://variety.com/2026/tv/news/tulsa-king-spinoff-frisco-king-trailer-samuel-l-jackson-1236951909/",
-        "https://movieweb.com/taylor-sheridan-frisco-king-upcoming-release/"
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/18/taylor-sheridan-yellowstone-lioness-budgets-nbc-deal/92841320007/",
+        "https://finance.yahoo.com/video/taylor-sheridan-talks-career-altering-moves-and-saving-a-historic-ranch-154546711.html",
+        "https://www.foxnews.com/outkick-culture/ive-never-had-show-canceled-taylor-sheridan-explains-big-move-nbcuniversal"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkmp1fhFGlLMdFEvhwY42rNiA9HxpXa9LpmtYGQWegppu3kUmxKwrZMhUQgWg",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN7Ew3r5Gvwt5LpVhYjsoQ-pX13-nxqQGQF5VRqNufh9lXXqFzMOdMQxnvsbo",
+      "image_credit": "USA Today",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/frisco-king-trailer-release-date-taylor-sheridan-paramount-1237157647/",
-          "title": "‘Frisco King’ Trailer: Samuel L. Jackson “Is Gonna Rob This Place Blind” In Taylor Sheridan’s ‘Tulsa King’ Spinoff",
-          "publisher": "Deadline",
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/18/taylor-sheridan-yellowstone-lioness-budgets-nbc-deal/92841320007/",
+          "title": "'Yellowstone' creator Taylor Sheridan defends massive TV show budgets",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkmp1fhFGlLMdFEvhwY42rNiA9HxpXa9LpmtYGQWegppu3kUmxKwrZMhUQgWg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN7Ew3r5Gvwt5LpVhYjsoQ-pX13-nxqQGQF5VRqNufh9lXXqFzMOdMQxnvsbo"
         },
         {
-          "url": "https://variety.com/2026/tv/news/tulsa-king-spinoff-frisco-king-trailer-samuel-l-jackson-1236951909/",
-          "title": "‘Tulsa King’ Spinoff ‘Frisco King’ First Trailer Sees Samuel L. Jackson Building Crime Empire in Texas Suburbs",
-          "publisher": "Variety",
+          "url": "https://finance.yahoo.com/video/taylor-sheridan-talks-career-altering-moves-and-saving-a-historic-ranch-154546711.html",
+          "title": "Taylor Sheridan talks career-altering moves and saving a historic ranch",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzzMP5YJSGRE0Pi03QmuTXTVRWPyOL1rTSc0R8aY1-Wvg5mPTF_sHsTWg4-sY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuj3jm3jBB5QYeqcCVfFhNQlsA0Nzz7c08ZKl8RkIgdQVjgMcazWbF74yEOtw"
         },
         {
-          "url": "https://movieweb.com/taylor-sheridan-frisco-king-upcoming-release/",
-          "title": "Taylor Sheridan’s 4th Brand-New Series of 2026 Officially Releases in One Month",
-          "publisher": "MovieWeb",
+          "url": "https://www.foxnews.com/outkick-culture/ive-never-had-show-canceled-taylor-sheridan-explains-big-move-nbcuniversal",
+          "title": "'I've never had a show canceled:' Taylor Sheridan explains his big move to NBCUniversal",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRoTIlGd6IyJaBT5pNOiz7_uv3Uaq_vrnz1UQooWbl6uTKU9q3WObbjZ5SE08"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQg6P-GRLpFOjPzXJ8v5GDER8yqL1Iu-DaxV8ENJpiOsThZUunKQcbvdpkUDDw"
+        }
+      ]
+    },
+    {
+      "query": "colts qb",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T00:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50521994/colts-anthony-richardson-daniel-jones-quarterback",
+        "https://sports.yahoo.com/articles/colts-rumors-indy-insider-drops-003634685.html",
+        "https://www.si.com/nfl/why-thursday-night-in-houston-could-mark-end-of-colts-daniel-jones-era"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVHehAJlRbc5Vz35vwxySCfTmL81fb7zRDrW8tKrUOtaAa2xqyU4RvDZEszqc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50521994/colts-anthony-richardson-daniel-jones-quarterback",
+          "title": "Why can't Richardson beat out struggling Jones as Colts QB1?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVHehAJlRbc5Vz35vwxySCfTmL81fb7zRDrW8tKrUOtaAa2xqyU4RvDZEszqc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/colts-rumors-indy-insider-drops-003634685.html",
+          "title": "Colts rumors: Indy insider drops Anthony Richardson revelation as Shane Steichen refuses to play him",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAqeeWEX0xh77rz_iUm-yO5DDwEcmvmcCPibYdvBa6E0YK-rEq_pgZuOnqDFg"
+        },
+        {
+          "url": "https://www.si.com/nfl/why-thursday-night-in-houston-could-mark-end-of-colts-daniel-jones-era",
+          "title": "Why Thursday Night in Houston Could Mark the End of the Colts’ Daniel Jones Era",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTHKWzsJJ5acafat4NPuZZsnBwAoJotD6QcVjb751Ku-2X9hWGTKhYEN3wPSM"
         }
       ]
     },
     {
       "query": "clippers vs spurs",
-      "approx_searches": "10000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-20T00:10:00Z",
       "related_news_urls": [
         "https://www.poundingtherock.com/spurs-game-previews/110399/game-preview-san-antonio-spurs-vs-los-angeles-clippers",
@@ -108,251 +345,6 @@
           "publisher": "Sports Illustrated",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpxJkeYztn5taKzM0G_Y6gVnBG9PrCelyXs33WIq_rv9rlGAGJEfuHOMhyhlc"
-        }
-      ]
-    },
-    {
-      "query": "trail blazers vs bucks",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T00:10:00Z",
-      "related_news_urls": [
-        "https://www.jsonline.com/story/sports/nba/bucks/2026/11/19/damian-lillard-jrue-holiday-traded-to-play-milwaukee-bucks-as-portland-trail-blazers/92841707007/",
-        "https://sports.yahoo.com/articles/bucks-face-more-familiar-faces-225354790.html",
-        "https://www.blazersedge.com/gameday-coverage/118627/portland-trail-blazers-milwaukee-bucks-nba-preview-start-tv-injuries-damian-lillard-deni-avdija-jrue-holiday-giannis"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXfmSK8HOO8WVyOs-d55YJUbxQd8Iq3vJppmvZUaVP6ffNGQSQGpbmAq6Wto",
-      "image_credit": "Milwaukee Journal Sentinel",
-      "news": [
-        {
-          "url": "https://www.jsonline.com/story/sports/nba/bucks/2026/11/19/damian-lillard-jrue-holiday-traded-to-play-milwaukee-bucks-as-portland-trail-blazers/92841707007/",
-          "title": "Damian Lillard and Jrue Holiday, once traded for each other, to face Bucks",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXfmSK8HOO8WVyOs-d55YJUbxQd8Iq3vJppmvZUaVP6ffNGQSQGpbmAq6Wto"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/bucks-face-more-familiar-faces-225354790.html",
-          "title": "Bucks will face more familiar faces at Fiserv Forum | Game updates",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxTcNp5hQG5H-EuI_9vKSSTwYfg4scWHdan8sBVZcWOTvFNW8A_B5Pfm0Ln8E"
-        },
-        {
-          "url": "https://www.blazersedge.com/gameday-coverage/118627/portland-trail-blazers-milwaukee-bucks-nba-preview-start-tv-injuries-damian-lillard-deni-avdija-jrue-holiday-giannis",
-          "title": "Trail Blazers vs. Bucks Preview",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPmySKl0OSph3X1jrcGkGY3WRulJW8R-2OXaAmkT9pRa7qGI83VzUq3dL22o"
-        }
-      ]
-    },
-    {
-      "query": "blue jackets vs blackhawks",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T00:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7795518/2026/11/19/blue-jackets-vs-blackhawks-stream-how-to-watch-nov-19/",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/columbus-blue-jackets-vs-chicago-blackhawks-prediction-odds-2026-11-19/",
-        "https://www.nhl.com/news/columbus-blue-jackets-chicago-blackhawks-game-preview-november-19-2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdNiBV-nrVwj38IikJLzF9PGN41YazaALIKhxcCI4d0bWjW6MYOTQ2RXaWo9Q",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7795518/2026/11/19/blue-jackets-vs-blackhawks-stream-how-to-watch-nov-19/",
-          "title": "How to watch Blue Jackets vs. Blackhawks: TV channel and streaming options for November 19",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdNiBV-nrVwj38IikJLzF9PGN41YazaALIKhxcCI4d0bWjW6MYOTQ2RXaWo9Q"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/columbus-blue-jackets-vs-chicago-blackhawks-prediction-odds-2026-11-19/",
-          "title": "Columbus Blue Jackets vs Chicago Blackhawks Prediction, Picks & Odds | 19 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzKJzO2-O5ASc0A3LCJQeIvaM1jQI4cv-_9zzAZHrrYN_rGRJzSShSeFbMubA"
-        },
-        {
-          "url": "https://www.nhl.com/news/columbus-blue-jackets-chicago-blackhawks-game-preview-november-19-2026",
-          "title": "Blue Jackets at Blackhawks projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        }
-      ]
-    },
-    {
-      "query": "ps5 games",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-20T00:10:00Z",
-      "related_news_urls": [
-        "https://www.axios.com/2026/11/18/gta-6-playstation-psn-servers",
-        "https://www.wral.com/news/local/outage-hits-playstation-network-on-eve-grand-theft-auto-vi-release-november-2026/",
-        "https://www.theguardian.com/games/2026/nov/18/playstation-down-grand-theft-auto-vi-game-release"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJp59FT1FR4NKrMPCKT2lgCdp9d0dB7wiVEZaYwOU0SfMTyMj6U-hqRbP7QFE",
-      "image_credit": "Axios",
-      "news": [
-        {
-          "url": "https://www.axios.com/2026/11/18/gta-6-playstation-psn-servers",
-          "title": "PlayStation suffers major outage hours before \"GTA VI\" launch",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJp59FT1FR4NKrMPCKT2lgCdp9d0dB7wiVEZaYwOU0SfMTyMj6U-hqRbP7QFE"
-        },
-        {
-          "url": "https://www.wral.com/news/local/outage-hits-playstation-network-on-eve-grand-theft-auto-vi-release-november-2026/",
-          "title": "Reports: PlayStation Network outages spike during 'Grand Theft Auto VI' release",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdh_Ec4DfKRzXICbVRlpVEdso8G_FfYm9td5QZN5L6YZAxkqX50I8BWtQTZKo"
-        },
-        {
-          "url": "https://www.theguardian.com/games/2026/nov/18/playstation-down-grand-theft-auto-vi-game-release",
-          "title": "PlayStation suffers widespread network problems hours before release of GTA VI",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkvX0kUxit9LksBXBvlCgCGDmMcp7pThqNuMaYnIJ5qWgULe2WI0HLIR0cXcc"
-        }
-      ]
-    },
-    {
-      "query": "umbc basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T00:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-hosts-umbc-retrievers-292971007/",
-        "https://www.dispatch.com/story/sports/college/basketball/2026/11/19/ohio-state-umbc-basketball-how-to-watch-stream-game/92842192007/",
-        "https://www.yahoo.com/news/videos/dispatch-writer-adam-jardy-previews-222749656.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYM_-xBVvMjNFTU6_eJKSLuaOqYlwhMzWywhTNesutM-gAB4QwOwYuxEa1Xk4",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-hosts-umbc-retrievers-292971007/",
-          "title": "What To Watch: Ohio State seeks to play complete game vs. Maryland-Baltimore Co.",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYM_-xBVvMjNFTU6_eJKSLuaOqYlwhMzWywhTNesutM-gAB4QwOwYuxEa1Xk4"
-        },
-        {
-          "url": "https://www.dispatch.com/story/sports/college/basketball/2026/11/19/ohio-state-umbc-basketball-how-to-watch-stream-game/92842192007/",
-          "title": "Where to watch Ohio State vs. UMBC basketball today: Time, TV channel for game",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqspik0Z7g4XxIK04D7bGGih6h3Ij9K_isFCHAch3VFYUZ8Cs-KaZ_Z-2cu58"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/dispatch-writer-adam-jardy-previews-222749656.html",
-          "title": "Dispatch writer Adam Jardy previews Ohio State's game vs UMBC",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdV8sJzxduwxZyBSwhaPUVR9RKv3W6GoabTKUeT_E-kQyWmCijc5SHWMxNl54"
-        }
-      ]
-    },
-    {
-      "query": "guy ritchie",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T00:00:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66110391/?ref_=nmnw_art_perm",
-        "https://www.cbr.com/jake-gyllenhaal-in-the-grey-action-thriller-starz-success-november-2026/",
-        "https://screenrant.com/henry-cavill-guy-ritchie-in-the-grey-starz-streaming-chart-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI6YhifwbTe279unpjt_sxvP5lTLviy4ie0NnUxCQXYwvh9LYihUIJllbWkew",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66110391/?ref_=nmnw_art_perm",
-          "title": "Henry Cavill & Guy Ritchie's 97-Minute Spy Thriller Flop Officially Becomes the No. 1 Movie On Streaming",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI6YhifwbTe279unpjt_sxvP5lTLviy4ie0NnUxCQXYwvh9LYihUIJllbWkew"
-        },
-        {
-          "url": "https://www.cbr.com/jake-gyllenhaal-in-the-grey-action-thriller-starz-success-november-2026/",
-          "title": "Jake Gyllenhaal's 97-Minute Action Thriller Flop Returns as the No. 1 Film on Streaming",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT45xfRaapO_Uzbg6TzCqb5d5Ch1_BkQnzoM_fZA-mXQFfiR6HUrCja6b97Cho"
-        },
-        {
-          "url": "https://screenrant.com/henry-cavill-guy-ritchie-in-the-grey-starz-streaming-chart-november-2026/",
-          "title": "Henry Cavill & Guy Ritchie's R-Rated Spy Thriller Is Officially One Of The Biggest Movies On Streaming",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-7EbMxa8H_dhyurTCBFIJtPQcm_vqXKV5Hh9vIaFG_NMlGmJMVpxN3wue-k"
-        }
-      ]
-    },
-    {
-      "query": "mario lopez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T00:00:00Z",
-      "related_news_urls": [
-        "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
-        "https://www.yahoo.com/entertainment/movies/articles/holiday-movies-feature-family-romance-183638413.html",
-        "https://www.noticiasnewswire.com/mario-lopezs-three-generations-one-christmas/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEL2mG91It2YtQoqCcXlyuANG3n6UUZLvakMz_O_Y2KBg9-jIN0xju3yxWS4",
-      "image_credit": "The National Desk",
-      "news": [
-        {
-          "url": "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
-          "title": "Mario Lopez on working with his son and Tony Danza in 'Three Generations, One Christmas'",
-          "publisher": "The National Desk",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEL2mG91It2YtQoqCcXlyuANG3n6UUZLvakMz_O_Y2KBg9-jIN0xju3yxWS4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/holiday-movies-feature-family-romance-183638413.html",
-          "title": "Holiday movies feature family, romance, music, football",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfAafd5jZ8sN8YWB7JLr_T3ilkniiR0ADbUa3dq37L43gtDsDoZ8BK-DwhgNA"
-        },
-        {
-          "url": "https://www.noticiasnewswire.com/mario-lopezs-three-generations-one-christmas/",
-          "title": "Mario Lopez’s ‘Three Generations, One Christmas’ to Premiere on Pure Flix Familia November 19",
-          "publisher": "Noticias Newswire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvQyso9QhXvi-GDzsVjIVNt02AnZk65GjOrAlpeXCvGiQPYFYgTk3kAm2zSbA"
-        }
-      ]
-    },
-    {
-      "query": "marvel announces iron man replacement",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-19T23:50:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/iron-man-replacement-thing-marvel-infernal-hulk/",
-        "https://demokratis.co.id/en/marvel-iron-man-iron-thing",
-        "https://www.imdb.com/news/ni66119498/?ref_=ttnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdRWJ9H4lEBS_H6oXvMZTfPu19GO-KazhFAhbjZGGN81o_2IIufdS7quf4U-8",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/iron-man-replacement-thing-marvel-infernal-hulk/",
-          "title": "Marvel Officially Announces Name Of New Iron Man Replacement",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdRWJ9H4lEBS_H6oXvMZTfPu19GO-KazhFAhbjZGGN81o_2IIufdS7quf4U-8"
-        },
-        {
-          "url": "https://demokratis.co.id/en/marvel-iron-man-iron-thing",
-          "title": "Marvel Names Iron Man's New Form The Iron Thing",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0yNTx266_zzjAJPUGW8WwWujee3Jbym9hu0iOJoPcSWljX9HQWgfqriMRqnk"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66119498/?ref_=ttnw_art_perm",
-          "title": "Marvel Officially Announces Name Of New Iron Man Replacement",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFsEuQi_Kno_AmOR5NNpdj9YBZlMNwJ4m3aPUB89ngqfS78j15kjgimr1Yycc"
         }
       ]
     }
