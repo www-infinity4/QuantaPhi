@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T12:01:39.045341Z",
+  "checked_at": "2026-11-20T12:34:18.137346Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "flood watch",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-20T11:40:00Z",
+      "query": "regions",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T12:20:00Z",
       "related_news_urls": [
-        "https://weather.com/2026/11/20/news/weather/florida-flooding-record-rain",
-        "https://www.cbsnews.com/miami/video/flooding-cleanup-begins-in-south-florida-but-many-communities-remain-underwater/",
-        "https://www.foxweather.com/weather-news/florida-atlantic-coast-flooding-november-torrential-rain-2026"
+        "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/",
+        "https://www.dw.com/en/ukraine-kyiv-targets-krasnodar-refineries-after-felling-kerch-bridge/live-79976877",
+        "https://kyivindependent.com/ukrainian-drones-reportedly-target-oil-hub-in-russias-tatarstan/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xYUBxdnCnl2ZeAJ8Om0QkQCxhsqARSzi04cX_jbe_oVR6BQtnhnDWE2rQyw",
-      "image_credit": "The Weather Channel",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTmeOuc6nvFW7Qlu0adKC13-NLBi_UD9AhnQ18Pb7Py6G56oRJHS7jlubXp5g",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://weather.com/2026/11/20/news/weather/florida-flooding-record-rain",
-          "title": "Florida flooding rain topped monthly, fall, all-time records",
-          "publisher": "The Weather Channel",
+          "url": "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/",
+          "title": "More Russian regions limit fuel sales as Ukrainian drone strikes hit refinery output",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xYUBxdnCnl2ZeAJ8Om0QkQCxhsqARSzi04cX_jbe_oVR6BQtnhnDWE2rQyw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTmeOuc6nvFW7Qlu0adKC13-NLBi_UD9AhnQ18Pb7Py6G56oRJHS7jlubXp5g"
         },
         {
-          "url": "https://www.cbsnews.com/miami/video/flooding-cleanup-begins-in-south-florida-but-many-communities-remain-underwater/",
-          "title": "Flooding cleanup begins in South Florida, but many communities remain underwater",
-          "publisher": "CBS News",
+          "url": "https://www.dw.com/en/ukraine-kyiv-targets-krasnodar-refineries-after-felling-kerch-bridge/live-79976877",
+          "title": "Ukraine says it hit refineries in Krasnodar day after striking nearby Kerch bridge",
+          "publisher": "DW.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZtFnLvsns70oJdifN15nnDoa6DoVdNnghRjcQ181yEYZRuVLUi9JGOZlctIs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6DqGYTFRs6k0rUJlrZaK7q0quEg7VtZ4w-UECIcLhkNC2FrOwIYsU2ZuQgQ"
         },
         {
-          "url": "https://www.foxweather.com/weather-news/florida-atlantic-coast-flooding-november-torrential-rain-2026",
-          "title": "Florida Atlantic Coast faces dangerous flooding as intense rain prompts emergency declarations and rescues",
-          "publisher": "FOX Weather",
+          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-target-oil-hub-in-russias-tatarstan/",
+          "title": "Ukrainian drones reportedly target oil hub in Russia's Tatarstan",
+          "publisher": "The Kyiv Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMOZ2P909Ale9JgZB2NevtCs6KUtTdNRd53ZYcTg8bQCZ46rj_yb07du9WPTY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWW-mVOagsXO_Zu_bQe5OTVZQw1Q9Lsu1XYZfD0bcv3U7nxMklbZn0tiop88"
         }
       ]
     },
     {
-      "query": "tampa weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T11:40:00Z",
-      "related_news_urls": [
-        "https://www.news4jax.com/weather/2026/11/18/live-radar-weather-authority-alert-thursday-and-friday/",
-        "https://www.tampabay.com/news/weather/2026/11/19/florida-rain-flooding-forecast-hillsborough-pinellas-tampa/",
-        "https://www.wfla.com/weather/forecast/scattered-showers-thu-fri-drier-weekend-ahead/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYxl3ovLBgE9I3peLgTSEPOb7hUfvDHIG6YW2IYQxJ5flSWp3LMis7pcMwvPs",
-      "image_credit": "News4JAX",
-      "news": [
-        {
-          "url": "https://www.news4jax.com/weather/2026/11/18/live-radar-weather-authority-alert-thursday-and-friday/",
-          "title": "Live Radar: Weather Authority Alert issued for elevated flooding risk from rounds of windy rain Today through Friday",
-          "publisher": "News4JAX",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYxl3ovLBgE9I3peLgTSEPOb7hUfvDHIG6YW2IYQxJ5flSWp3LMis7pcMwvPs"
-        },
-        {
-          "url": "https://www.tampabay.com/news/weather/2026/11/19/florida-rain-flooding-forecast-hillsborough-pinellas-tampa/",
-          "title": "Tampa Bay spared the worst of Florida’s rain. What to expect this week",
-          "publisher": "Tampa Bay Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSatIk0Mn7qywNTHHZaTYamz_d8VPy2ee6SZFqGTOayCNLgCVbaFAWZcJ9CF38"
-        },
-        {
-          "url": "https://www.wfla.com/weather/forecast/scattered-showers-thu-fri-drier-weekend-ahead/",
-          "title": "Wet pattern continues through Friday before a drier weekend",
-          "publisher": "WFLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-JjKWkkKDWCvA-OQxlPhanJJFFOTr8RtxHOBjuzXoQ0NFfR2CSPoS6018KM"
-        }
-      ]
-    },
-    {
-      "query": "ktla",
+      "query": "anthony ippolito",
       "approx_searches": "500+",
-      "published_at": "2026-11-20T11:30:00Z",
+      "published_at": "2026-11-20T12:20:00Z",
       "related_news_urls": [
-        "https://www.latimes.com/travel/story/2026-11-20/dune-the-experience-downtown-los-angeles",
-        "https://www.facebook.com/deadline/videos/we-got-to-step-into-arrakis-and-the-world-of-denis-villeneuves-dune-at-the-immer/1849314182774041/",
-        "https://ktla.com/news/local-news/dune-the-experience-preview/"
+        "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/",
+        "https://www.npr.org/2026/11/20/nx-s1-5691846/i-play-rocky-chronicles-sylvester-stallones-unconventional-road-to-stardom",
+        "https://www.hollywoodreporter.com/movies/movie-news/i-play-rocky-stars-rocky-producer-50th-anniversary-1236758733/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKoW17np6iizGAHEyuL5Xk5P63EqlYTYsBHxhJwJqj0wJvhpCw7F6OZEmB7Wc",
-      "image_credit": "Los Angeles Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHzZAMq1Da1-_MtJxA99UToYuETyIiF185b_QNNiz5pA2atuK2m6KAZ5zTUQ",
+      "image_credit": "Rotten Tomatoes",
       "news": [
         {
-          "url": "https://www.latimes.com/travel/story/2026-11-20/dune-the-experience-downtown-los-angeles",
-          "title": "L.A.’s immersive ‘Dune’ experience takes superfans onto the desert planet of Arrakis",
-          "publisher": "Los Angeles Times",
+          "url": "https://editorial.rottentomatoes.com/article/annasophia-robb-on-i-play-rocky-and-representing-the-underdogs/",
+          "title": "AnnaSophia Robb on I Play Rocky and Representing the Underdogs",
+          "publisher": "Rotten Tomatoes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKoW17np6iizGAHEyuL5Xk5P63EqlYTYsBHxhJwJqj0wJvhpCw7F6OZEmB7Wc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpHzZAMq1Da1-_MtJxA99UToYuETyIiF185b_QNNiz5pA2atuK2m6KAZ5zTUQ"
         },
         {
-          "url": "https://www.facebook.com/deadline/videos/we-got-to-step-into-arrakis-and-the-world-of-denis-villeneuves-dune-at-the-immer/1849314182774041/",
-          "title": "Deadline Hollywood. Timothée Chalamet · Desert Chant (from \"Dune: Part Three\"). We got to step into Arrakis and the world of Denis Villeneuve’s #Dune at the immersive experience in",
-          "publisher": "Facebook",
+          "url": "https://www.npr.org/2026/11/20/nx-s1-5691846/i-play-rocky-chronicles-sylvester-stallones-unconventional-road-to-stardom",
+          "title": "'I Play Rocky' chronicles Sylvester Stallone's unconventional road to stardom",
+          "publisher": "NPR",
           "description": "",
           "image_url": null
         },
         {
-          "url": "https://ktla.com/news/local-news/dune-the-experience-preview/",
-          "title": "Dune: The Experience preview",
-          "publisher": "KTLA",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/i-play-rocky-stars-rocky-producer-50th-anniversary-1236758733/",
+          "title": "‘I Play Rocky’ Stars Unite With Original ‘Rocky’ Producer for Film’s 50th Anniversary Celebration",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH_NqIQw7OK3eEBHqnDw1LSBQu6EdPIrKlFWLjWbCSz3Me85TLFFBKxZpLW_k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMcXKxD2L5vjCUU32eyMZhZDMI6tf8JaqvWqe-hrViItrw7CLAjNJP0-8sh5Q"
         }
       ]
     },
     {
-      "query": "ktla news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T11:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/19/weather/california-rain-sf-la.html",
-        "https://www.latimes.com/california/story/2026-11-19/socal-atmospheric-river-storm",
-        "https://abc7.com/live-updates/los-angeles-rain-evacuation-warnings-issued-southern-california-burn-scar-areas-ahead-storm/20051889/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3f0sxVZEXOuHejZostP8NXTpyHCmS019G_AQTu-mp3kEHx6oRT8kc8BYeQA",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/19/weather/california-rain-sf-la.html",
-          "title": "California Storm Sweeps South, Prompting Some Evacuation Warnings in L.A.",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3f0sxVZEXOuHejZostP8NXTpyHCmS019G_AQTu-mp3kEHx6oRT8kc8BYeQA"
-        },
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-19/socal-atmospheric-river-storm",
-          "title": "Heavy rain drenches Southern California, prompting rescues, flash flood concerns",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIpD9qvGALPJQMtAfjwvzoWffcFej0RTd73_3uSK0e69NmZAWigR_0dG3_8A"
-        },
-        {
-          "url": "https://abc7.com/live-updates/los-angeles-rain-evacuation-warnings-issued-southern-california-burn-scar-areas-ahead-storm/20051889/",
-          "title": "SoCal sees flooded roads, water rescues as powerful storm drenches region with rain",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfrPwnaymK0FKPgde9LRI7o9Xi9BjXXFbAmnmhD0cKZILu89vUGXVULzJU4SM"
-        }
-      ]
-    },
-    {
-      "query": "local news",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T11:30:00Z",
-      "related_news_urls": [
-        "https://www.poynter.org/commentary/2026/maine-local-news-2026-election-coverage-national-media/",
-        "https://patch.com/maine/across-me/maine-legacy-media-failed-poynter",
-        "https://www.poynter.org/commentary/2026/national-news-outlets-local-reporters-2026-election-scoops/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXju4guatMQct0GelSOcc4ZIa0m25hAJun5INDGeJmTZAonSTxsqIQTmok5FI",
-      "image_credit": "Poynter",
-      "news": [
-        {
-          "url": "https://www.poynter.org/commentary/2026/maine-local-news-2026-election-coverage-national-media/",
-          "title": "Opinion | Local news is strong in Maine. Coverage of the 2026 campaign proved it.",
-          "publisher": "Poynter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXju4guatMQct0GelSOcc4ZIa0m25hAJun5INDGeJmTZAonSTxsqIQTmok5FI"
-        },
-        {
-          "url": "https://patch.com/maine/across-me/maine-legacy-media-failed-poynter",
-          "title": "Maine legacy media failed: Poynter",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSI9i0VpZwpZv2pWkKFnzNeypTj7gCvmzuUDmetca-fWS2yOuRGdpmN5r-LSJU"
-        },
-        {
-          "url": "https://www.poynter.org/commentary/2026/national-news-outlets-local-reporters-2026-election-scoops/",
-          "title": "Opinion | National news outlets landed the biggest stories of the 2026 campaign. That’s a problem.",
-          "publisher": "Poynter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPIaU8lgybzs3v_kN72WBZGGWjoe32FJ3DQrv4VqVdzxUjF66jNBIpsfbF1Fc"
-        }
-      ]
-    },
-    {
-      "query": "strands hint today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T11:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/19/crosswords/strands-sidekick-992.html",
-        "https://www.pcguide.com/news/todays-nyt-strands-answers-clues-and-hints-on-november-18-puzzle-990/",
-        "https://www.technobezz.com/news/nyt-strands-sports-edition-31-hints-and-answers"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61Km64EyIgf2_JF3FjtcehELeePlGqGcOYRd_QH7s8iNbdpJsE-UR2a0oLk0",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/19/crosswords/strands-sidekick-992.html",
-          "title": "NYT Strands Hints for November 20, 2026",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61Km64EyIgf2_JF3FjtcehELeePlGqGcOYRd_QH7s8iNbdpJsE-UR2a0oLk0"
-        },
-        {
-          "url": "https://www.pcguide.com/news/todays-nyt-strands-answers-clues-and-hints-on-november-18-puzzle-990/",
-          "title": "Today’s NYT Strands answers, clues, and hints on November 18 (puzzle #990)",
-          "publisher": "PC Guide",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xLR9EKGIgNwiuIJRtIJJgZdp83ZzzMePStydpu4GG5YdxPMAwUP_M68LygU"
-        },
-        {
-          "url": "https://www.technobezz.com/news/nyt-strands-sports-edition-31-hints-and-answers",
-          "title": "NYT Strands Sports Edition Hints & Answers for Friday, November 20, 2026 (Puzzle #31)",
-          "publisher": "Technobezz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwb-fAE6FXFYb7mG_RfWxEwRW14PrSyX2-CCtL5OPB28_F7LQkMwk4TKXHK2k"
-        }
-      ]
-    },
-    {
-      "query": "darlie routier",
+      "query": "quinn hughes injury",
       "approx_searches": "100+",
-      "published_at": "2026-11-20T11:30:00Z",
+      "published_at": "2026-11-20T12:20:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/us/articles/darlie-routier-appeal-cites-dna-233612617.html",
-        "https://www.dmagazine.com/frontburner/2026/11/death-row-north-texas/"
+        "https://www.nytimes.com/athletic/7796855/2026/11/19/quinn-hughes-wild-injury-adam-klapka/",
+        "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-exits-in-win-over-flames/",
+        "https://www.tsn.ca/nhl/article/star-defenceman-hughes-leaves-early-vs-flames/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2HFrLPHplPL04F0nFJOSS7w_h95KeOf02vJlR74syGpWCJWiFitmv8N75SY",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4uESyot5-oG09tivFQQp2jXY_PWP2jwGwXWgSMuoZdZp0Wyz2qZdi5v2pNQ",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.yahoo.com/news/us/articles/darlie-routier-appeal-cites-dna-233612617.html",
-          "title": "Darlie Routier appeal cites new DNA evidence in attempt to overturn death sentence",
+          "url": "https://www.nytimes.com/athletic/7796855/2026/11/19/quinn-hughes-wild-injury-adam-klapka/",
+          "title": "Wild’s Quinn Hughes leaves game after hit from Adam Klapka: ‘We hope he’s good’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4uESyot5-oG09tivFQQp2jXY_PWP2jwGwXWgSMuoZdZp0Wyz2qZdi5v2pNQ"
+        },
+        {
+          "url": "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-exits-in-win-over-flames/",
+          "title": "Wild's Quinn Hughes exits in win over Flames",
+          "publisher": "Sportsnet.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxqgSZLPHAbQxcrpnXlP5XR0t9Ke0RlzOkn5pTJgIPaDM6ZVlR2DYegqYzIQM"
+        },
+        {
+          "url": "https://www.tsn.ca/nhl/article/star-defenceman-hughes-leaves-early-vs-flames/",
+          "title": "Star defenceman Hughes leaves early vs. Flames",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIOQR3w7fx6d4LIgaWeCLcFZPpvtg2AudkIT6azo9sYUMI4GydCX28jQ7El50"
+        }
+      ]
+    },
+    {
+      "query": "warren buffett",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T12:20:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
+        "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/",
+        "https://www.foxbusiness.com/lifestyle/warren-buffett-takes-another-step-toward-giving-away-his-entire-fortune"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
+          "title": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBUX-forrAQ9Wh_wxngfrEMjwOWQVy28MI8Z0fDWR7As1NYGJJaI9mvo3kA"
+        },
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/16/warren-buffett-announces-55-billion-thanksgiving-gift-four-times-bigger-than-last-year/",
+          "title": "Warren Buffett Announces $5.5 Billion Thanksgiving Gift—Four Times Bigger Than Last Year",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsYvVdYcQM7wl0_6auvMrJO1eTr0WAGBYG1Ix8cYLRNfM-zkeHs9xXdrh7iLU"
+        },
+        {
+          "url": "https://www.foxbusiness.com/lifestyle/warren-buffett-takes-another-step-toward-giving-away-his-entire-fortune",
+          "title": "Warren Buffett takes another step toward giving away his entire fortune",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ06o-zdaM1DijWmmsl09cLnbTuCPYuELLH8Sv4CzO2xWpgnN25rDC_yezwi8"
+        }
+      ]
+    },
+    {
+      "query": "norovirus",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T12:20:00Z",
+      "related_news_urls": [
+        "https://bismarcktribune.com/obituaries/article_e2940421-233d-5102-96b8-e3394b75773c.html",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-200448370.html",
+        "https://krocnews.com/frank-fritz-estate-battle-ends/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzNE90DTEV9kPpXysksq-AtgSI4lq68IM7x9caPI154kdIkiWxCeCiQeX7jr4",
+      "image_credit": "The Bismarck Tribune",
+      "news": [
+        {
+          "url": "https://bismarcktribune.com/obituaries/article_e2940421-233d-5102-96b8-e3394b75773c.html",
+          "title": "Rita Marie Mastel",
+          "publisher": "The Bismarck Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzNE90DTEV9kPpXysksq-AtgSI4lq68IM7x9caPI154kdIkiWxCeCiQeX7jr4"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/american-pickers-star-frank-fritz-200448370.html",
+          "title": "'American Pickers' star Frank Fritz's multimillion-dollar estate fight heads to trial",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2HFrLPHplPL04F0nFJOSS7w_h95KeOf02vJlR74syGpWCJWiFitmv8N75SY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsGEww2ojwm-ndommS4inFwaLkyUtbqSDZ15MaYCiCTE8vNqFhNeoXSA6uTss"
         },
         {
-          "url": "https://www.dmagazine.com/frontburner/2026/11/death-row-north-texas/",
-          "title": "More Than 20 People Connected to North Texas Sit on Death Row",
-          "publisher": "D Magazine",
+          "url": "https://krocnews.com/frank-fritz-estate-battle-ends/",
+          "title": "Fight Over 'American Pickers' Star's Estate Reaches Unexpected Ending",
+          "publisher": "KROC-AM",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBksF4lLJseBGeerl0OXtGkreMjUKdKrk3W8PEJLwJjWCrlj5WFmkBUOMhsyY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTho5_pk8tlxliUGuQ3n75F1BcPXO0Mcrxoyi8_I9KQeAf_NjWHSpt4EOFoZEk"
         }
       ]
     },
     {
-      "query": "earthquake los angeles",
-      "approx_searches": "200000+",
-      "published_at": "2026-11-20T11:20:00Z",
+      "query": "john grisham",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T12:10:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/business/environment/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-2026-11-20/",
-        "https://www.edhat.com/beyond-local/news/san-benito-county-earthquake-pinnacles/",
-        "https://www.foxweather.com/weather-news/central-california-struck-dozen-earthquakes-pinnacles"
+        "https://www.nytimes.com/2026/11/20/opinion/colom-mississippi-grisham.html",
+        "https://www.npr.org/2026/11/19/nx-s1-6047338/bigger-than-barack-obamas-election-scholars-reflect-on-mississippi-senate-race",
+        "https://www.wlbt.com/2026/11/19/reeves-congratulates-senator-elect-colom-who-names-transition-team/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdOZTxj6jIteFG_a7RNZvPGxIjwB_hoaSPdMEZ_7LzEoVBE5Ywx9-0YxFY3rc",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMSS8ynpT6UM5uAHbdT8kUfjKu7_8LFh0Bq49tdFUdJX7QR34pKADID-1Vds",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.reuters.com/business/environment/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-2026-11-20/",
-          "title": "Magnitude 5.1 earthquake strikes near California's Monterey County, USGS says",
-          "publisher": "Reuters",
+          "url": "https://www.nytimes.com/2026/11/20/opinion/colom-mississippi-grisham.html",
+          "title": "Opinion | John Grisham: I Want to Shake Scott Colom’s Hand",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdOZTxj6jIteFG_a7RNZvPGxIjwB_hoaSPdMEZ_7LzEoVBE5Ywx9-0YxFY3rc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMSS8ynpT6UM5uAHbdT8kUfjKu7_8LFh0Bq49tdFUdJX7QR34pKADID-1Vds"
         },
         {
-          "url": "https://www.edhat.com/beyond-local/news/san-benito-county-earthquake-pinnacles/",
-          "title": "5-Magnitude Earthquake Near Pinnacles Felt as Far as Los Angeles and Sacramento",
-          "publisher": "edhat",
+          "url": "https://www.npr.org/2026/11/19/nx-s1-6047338/bigger-than-barack-obamas-election-scholars-reflect-on-mississippi-senate-race",
+          "title": "'Bigger than Barack Obama's election': Scholars reflect on Mississippi Senate race",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiNqcRSGgjyy0eRlVbHfa6Mypjhk5bo1LfesvSBLYuPC3bpWEKGTXcyhP7PsM"
+          "image_url": null
         },
         {
-          "url": "https://www.foxweather.com/weather-news/central-california-struck-dozen-earthquakes-pinnacles",
-          "title": "Over a dozen earthquakes rattle Central California, Pacific Ring of Fire, including magnitude 5.0 quake",
-          "publisher": "FOX Weather",
+          "url": "https://www.wlbt.com/2026/11/19/reeves-congratulates-senator-elect-colom-who-names-transition-team/",
+          "title": "Reeves congratulates Senator-elect Colom, who names transition team",
+          "publisher": "WLBT",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEV1XZ9wYqOXJli8C4Se7CddCMz8X0zoLR5tbFXmEaXNshsq5ESeA9UYHm1MI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpUrBWmXG1WJuyr38grh0CyHCxyBZKhvAGAKYbyrSKvDYN6WfY43xA9v6Iwgg"
         }
       ]
     },
     {
-      "query": "temblor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T11:20:00Z",
+      "query": "super el nino weather transition",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T12:10:00Z",
       "related_news_urls": [
-        "https://www3.nhk.or.jp/nhkworld/news/20261119de78099/",
-        "https://japantoday.com/category/national/update3-m5.7-quake-strikes-japan's-kumamoto-prefecture-2-injured",
-        "https://www.japantimes.co.jp/news/2026/11/19/japan/kumamoto-quake-no-tsunami-warning/"
+        "https://6abc.com/post/winter-weather-outlook-philadelphia-pa-nj-de-forecast/20053543/",
+        "https://www.bloomberg.com/news/articles/2026-11-20/jpmorgan-warns-long-tail-of-el-nino-will-hurt-crops-water-supplies",
+        "https://www.cnn.com/2026/11/19/weather/el-nino-hurricanes-storms-la-nina-climate"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTnmu9eICyP_g2xQJoTy3sgZ6MZmKOk9RvYMNxBHf7hLrEj-gSkSM7DpuMnEo",
-      "image_credit": "NHKニュース",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlX9EUcUzHaUOxqnfS-qmgcUCUwbpYrJSqzBd5lhEoXx8a7mE-mrh9qmIFdC0",
+      "image_credit": "6abc Philadelphia",
       "news": [
         {
-          "url": "https://www3.nhk.or.jp/nhkworld/news/20261119de78099/",
-          "title": "A strong earthquake struck southwestern Japan | NHK WORLD-JAPAN News",
-          "publisher": "NHKニュース",
+          "url": "https://6abc.com/post/winter-weather-outlook-philadelphia-pa-nj-de-forecast/20053543/",
+          "title": "Will historic El Niño deliver snowy winter in Philly, Pa., NJ and DE? Experts weigh In",
+          "publisher": "6abc Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTnmu9eICyP_g2xQJoTy3sgZ6MZmKOk9RvYMNxBHf7hLrEj-gSkSM7DpuMnEo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlX9EUcUzHaUOxqnfS-qmgcUCUwbpYrJSqzBd5lhEoXx8a7mE-mrh9qmIFdC0"
         },
         {
-          "url": "https://japantoday.com/category/national/update3-m5.7-quake-strikes-japan's-kumamoto-prefecture-2-injured",
-          "title": "M5.7 quake strikes Kumamoto Prefecture; 2 injured",
-          "publisher": "Japan Today",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-20/jpmorgan-warns-long-tail-of-el-nino-will-hurt-crops-water-supplies",
+          "title": "JPMorgan Warns Long Tail of El Niño Will Hurt Crops, Water Supplies",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0U0wbYhLH2yYJTsdUScD0qbztksuDdcJBXKJjwR5-tEETWhgM1Oklp0NnTjc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4al9CasnqWcdmaHtWgBYh6VjThb00wBAoZM1NR7oE5o0WolR8OjrNkZDrLBA"
         },
         {
-          "url": "https://www.japantimes.co.jp/news/2026/11/19/japan/kumamoto-quake-no-tsunami-warning/",
-          "title": "Magnitude 5.7 quake jolts Kumamoto Prefecture, but no tsunami warning issued",
-          "publisher": "The Japan Times",
+          "url": "https://www.cnn.com/2026/11/19/weather/el-nino-hurricanes-storms-la-nina-climate",
+          "title": "Super El Niño will vanish by next hurricane season and that could spell danger",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW6ldlSeU7jNX1o-1n69NaxjbjUMB0aCg_ftjKTMck6qDWRa2WvtoKM8coyv8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt2HdA6xDqa2shede9NUV_FKTeppNdEGbaftFEsR7mxfpDU0BAYFAQISwAE3c"
         }
       ]
     },
     {
-      "query": "地震",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T11:20:00Z",
+      "query": "rikers island",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T12:00:00Z",
       "related_news_urls": [
-        "https://www.8world.com/world/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-3346356",
-        "https://china.kyodonews.net/articles/-/18496",
-        "https://mil.ifeng.com/c/8y9WDK3T8g2"
+        "https://www.theguardian.com/us-news/2026/nov/20/rikers-island-closure-plan-mamdani",
+        "https://apnews.com/article/zohran-mamdani-rikers-island-aaf05ad46f0a999a213f2613fe39f7dc",
+        "https://www.nytimes.com/2026/11/20/nyregion/rikers-island-mamdani-close-2032.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ32tXXSp636OsuhiDzX9eXxkXrMqGXGRzp1eK9vOx5lrXejVOx5E1SUxZA9z8",
-      "image_credit": "8world",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7DXrbRpKHSxE3a82Nrnkd00a8Cqq3YDfAk0dRCNrn8KkC24Ipp5QZbiLQ3g",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.8world.com/world/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-3346356",
-          "title": "美国加州发生5.1级地震",
-          "publisher": "8world",
+          "url": "https://www.theguardian.com/us-news/2026/nov/20/rikers-island-closure-plan-mamdani",
+          "title": "Zohran Mamdani unveils plan to close Rikers Island jail complex",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ32tXXSp636OsuhiDzX9eXxkXrMqGXGRzp1eK9vOx5lrXejVOx5E1SUxZA9z8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7DXrbRpKHSxE3a82Nrnkd00a8Cqq3YDfAk0dRCNrn8KkC24Ipp5QZbiLQ3g"
         },
         {
-          "url": "https://china.kyodonews.net/articles/-/18496",
-          "title": "快讯：高市与习近平在APEC会场握手",
-          "publisher": "共同网",
+          "url": "https://apnews.com/article/zohran-mamdani-rikers-island-aaf05ad46f0a999a213f2613fe39f7dc",
+          "title": "Mamdani sets plan to close NYC’s notorious Rikers Island jail",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSrS3z7WILavH2XwYDzzKRkUZg2NSmgZp-1OpqujBcoBN7SGpJ8JWiCCaEGdk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQxf3sS8JOXgrOUjx8R_Nnc-VKoIUEY9GONFZ68R43-Na_kezb3bhmBAMuM00"
         },
         {
-          "url": "https://mil.ifeng.com/c/8y9WDK3T8g2",
-          "title": "美国漫天要价，开出3倍驻日美军账单，日本坐地还钱：打5折",
-          "publisher": "凤凰网",
+          "url": "https://www.nytimes.com/2026/11/20/nyregion/rikers-island-mamdani-close-2032.html",
+          "title": "Rikers Will Stay Open Until 2032 as Mamdani Commits to New Closure Plan",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy0SPKM0bwsAYdAz4LLKODWTClq-SVlA6cFJDco9l2F-Bd_8dYM6aQVCqN6ms"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMXXTJXixsGQ-RAXINYTz9FaCF7Tqg4T0TnyaE71mIBfpXo3C1CDq7MupR_DY"
+        }
+      ]
+    },
+    {
+      "query": "virginia state police",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T12:00:00Z",
+      "related_news_urls": [
+        "https://www.wavy.com/news/local-news/newport-news/southbound-lanes-at-the-mmmbt-reopen-after-closing-due-to-multi-vehicle-crash/",
+        "https://www.yahoo.com/news/articles/southbound-lanes-mmmbt-reopen-closing-211318924.html",
+        "https://www.13newsnow.com/article/traffic/incidents/multi-vehicle-crashes-block-southbound-mmmbt-monday-morning/291-6e49ff0e-5529-4803-8bd2-a9065a773245"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXQvycgwRpqrsqGQv7jXKfcMEK5D2Zo4WTmp_LG3s5GmyrmQNxenWh73wdCu0",
+      "image_credit": "WAVY.com",
+      "news": [
+        {
+          "url": "https://www.wavy.com/news/local-news/newport-news/southbound-lanes-at-the-mmmbt-reopen-after-closing-due-to-multi-vehicle-crash/",
+          "title": "The Virginia State Police responds to multi-vehicle crash at the MMMBT in Newport News",
+          "publisher": "WAVY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXQvycgwRpqrsqGQv7jXKfcMEK5D2Zo4WTmp_LG3s5GmyrmQNxenWh73wdCu0"
+        },
+        {
+          "url": "https://www.yahoo.com/news/articles/southbound-lanes-mmmbt-reopen-closing-211318924.html",
+          "title": "Southbound lanes at the MMMBT reopen after closing due to multi-vehicle crash",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ9eSNezWUNTVtpJbbS1y-JdGVmiJUR83lzsefmbyTNxZqJfYtCEnjMOF8e8o"
+        },
+        {
+          "url": "https://www.13newsnow.com/article/traffic/incidents/multi-vehicle-crashes-block-southbound-mmmbt-monday-morning/291-6e49ff0e-5529-4803-8bd2-a9065a773245",
+          "title": "Multi-vehicle crashes block southbound MMMBT Monday morning",
+          "publisher": "13newsnow.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbkbrNrWnlyqQlRyTz2eh_DT6kwfzFjdRS2y-uJwKS__VK6SWele_dy_Lx9KE"
+        }
+      ]
+    },
+    {
+      "query": "bo derek",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T11:50:00Z",
+      "related_news_urls": [
+        "https://people.com/bo-derek-shares-sweet-idea-husband-john-corbett-had-for-her-birthday-exclusive-12240640",
+        "https://www.aol.com/articles/day-history-happy-birthday-bo-105613000.html",
+        "https://www.boredpanda.com/bo-derek-bio-and-career-highlights/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZUoJhpRszhHD8nGey11iub0f1cDq5Dsz4dJlHTDoDErNqp3rmlwjgcAl7TnQ",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/bo-derek-shares-sweet-idea-husband-john-corbett-had-for-her-birthday-exclusive-12240640",
+          "title": "Bo Derek Is 70! Here’s the Sweet Way She and John Corbett Celebrate Her Birthdays (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZUoJhpRszhHD8nGey11iub0f1cDq5Dsz4dJlHTDoDErNqp3rmlwjgcAl7TnQ"
+        },
+        {
+          "url": "https://www.aol.com/articles/day-history-happy-birthday-bo-105613000.html",
+          "title": "This day in history: Happy birthday, Bo Derek!",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM3YSn9OxdflBrwVtIA-DCYVVMv_EKGhQBeKdljBnB--o7fafHnU-qNCRe3C8"
+        },
+        {
+          "url": "https://www.boredpanda.com/bo-derek-bio-and-career-highlights/",
+          "title": "Bo Derek: Bio And Career Highlights",
+          "publisher": "Bored Panda",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxLp6Y115uSi_6tWC5fEOlbueFxd7prFpqgjxHLqLAzqs31cBEk_n0ri69UbY"
         }
       ]
     }
