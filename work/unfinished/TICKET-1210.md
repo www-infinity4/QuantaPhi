@@ -1,17 +1,17 @@
 ---
 issue: 1210
-state: deployed
+state: implementing
 dot: "🟡"
-progress_percent: 70
-progress_basis: "7/10 original reader milestones: screenshot transcription, account allowlist, isolated UI/context, tests, CI, independent review and merge, Worker deployment verified; live X read and physical Android pending; screenshot archive follow-up PR under review"
-sessions_spent: 3
+progress_percent: 60
+progress_basis: "estimated 7/12 combined source/import/acceptance milestones: deployed isolated source, external public read, docs and Quick Card source patch; unmerged new PR, D1 ingestion, live Pages/Worker and Android pending"
+sessions_spent: 4
 sessions_remaining_estimate: unknown
 agent: "ChatGPT GitHub connector (unclaimed Bubbles lease)"
 lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-next_action: "Obtain independent approval of screenshot archive PR #1986 at the new exact head; then implement a verified source-scoped StarCraftCo public-ingest fallback without bypassing blocked X access"
+next_action: "Confirm exact-head CI for PR #2004; guarded merge if eligible, apply isolated D1 migration and import TinyFish-reviewed public metadata, verify context and Android readback"
 merged: true
 deployed: true
 live_verified: false
@@ -62,3 +62,14 @@ live_verified: false
 - **New unimplemented acceptance groups:** verified lawful browser/provider data adapter or explicit blocked fallback; per-account author/status validation and dedup; persisted public context + live D1 readback; Android Quick Card attribution and sensitivity rules; source tests, CI, independent review and production device acceptance. The original reader's ~70% completion estimate predates this follow-on and **does not apply to the new adapter**.
 - **Status and authorization:** ticket `implementing`; original Worker **merged/deployed**, TinyFish external URLs **observed**, new source ingest **unimplemented**, PR #1986 **open**, automated import **unverified**, Android **not verified**. No lease claimed, no security grant, no X writes.
 - **Next single executable action:** independent approval of PR #1986 at its refreshed head, followed by the Red/Blue feasibility/adapter slice specified in the source document. Do not merge the archive without its review gate, nor claim content was imported.
+
+## Session 4 — source bridge PR #2004 · November 19/20, 2026
+
+- Owner requested actual integration of permitted public-source StarCraftCo references, exact post-ID validation/dedup, Android Bubbles Quick Card display and general-audience filtering, while preserving @YahooPingcwlz owner authority.
+- Existing #1983 Cloudflare public reader and #1986 screenshot archive were already merged; no new issue was opened.
+- Source branch: `feat/starcraftco-tinyfish-observation-bridge-1210`, [PR #2004](https://github.com/www-infinity4/QuantaPhi/pull/2004). Changes add `starcraft_public_observations` D1 migration, a validated metadata-only `observations[]` field on existing StarCraftCo `/context`, and a read-only attributed Quick Card section with 44px link targets, no media/lyrics or X publishing.
+- Test-first regression commit `7e132a248f275b1036d06a099d5249f58c0aa9b5` added spoofed-author/ID rejection, adult-labeled exclusion, dedup, owner inbox isolation and UI tests before production source changes. Final exact-head CI and actual cloud database migration are not yet verified at this session checkpoint.
+- Source import proof: prior [TinyFish run](https://agent.tinyfish.ai/runs/3728a4bc-fc2e-41f6-a524-c5e05eb0189c) observed six real public post URLs, but the existing Cloudflare scan remained blocked and no StarCraftCo D1 rows existed at this checkpoint. This PR is the *reviewed external observation bridge*, **not a continuously running TinyFish monitor**.
+- New records must remain metadata summaries with external run receipts, separate from real fetched profile post text and `owner_x_scans`. Restrict two adult-labeled links from general rendering; never copy lyrics, videos, images or posts into a promotional carousel.
+- **Next action:** exact-head PR #2004 focused and full CI; guarded merge only if eligible; schema application with existing DB binding; one-time validated public observation insert with dedup and source readback; live first-party card/browser acceptance. If provider/adapter permission is unavailable, keep explicit blocked state rather than claiming automated source reads.
+- State: active source implementation; **PR not merged, D1 import not completed, new UI not deployed or Android verified** at the point this file was updated. No authenticated robot lease claimed.
