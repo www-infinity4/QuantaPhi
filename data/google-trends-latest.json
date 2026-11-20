@@ -3,41 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T18:31:41.071073Z",
+  "checked_at": "2026-11-20T19:01:19.419258Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "colts news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T18:10:00Z",
+      "query": "bayern vs köln",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T18:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-131219200.html",
-        "https://www.espn.com/nfl/story/_/id/50493317/texans-lose-rb-woody-marks-concussion-browns",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-17/anthony-gould-toe-limited-tuesday"
+        "https://fc.de/aktuelles/news/so-startet-der-fc-in-muenchen",
+        "https://come-on-fc.com/profis/jahmai-simpson-pusey-fc-koeln-harry-kane/",
+        "https://www.diefalsche9.de/bundesliga-groesste-gaestekulisse-trotz-weitester-fahrt/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR4wz0W_rgZ0Z0vfpltc4K_JlTlMsfaKILGkjCbF2-LwKrPvO1blYudMDicn0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4j-iaYU0Y67n_XkrGm7HjiefejCz85ww3h9lDI3axScCE18txPE0_pJ3Nny4",
+      "image_credit": "1. FC Köln",
+      "news": [
+        {
+          "url": "https://fc.de/aktuelles/news/so-startet-der-fc-in-muenchen",
+          "title": "So startet der FC in München",
+          "publisher": "1. FC Köln",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4j-iaYU0Y67n_XkrGm7HjiefejCz85ww3h9lDI3axScCE18txPE0_pJ3Nny4"
+        },
+        {
+          "url": "https://come-on-fc.com/profis/jahmai-simpson-pusey-fc-koeln-harry-kane/",
+          "title": "\"Kann und wird sich durchsetzen\": Jahmai Simpson-Pusey und der 1. FC Köln treffen auf Weltfußballer Harry Kane",
+          "publisher": "come-on-fc.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrSa2NI4qqkiGpNodMl_Nq7RA-EFxfrhbR28u6_WXjLL6fb_zLB08LJw9485A"
+        },
+        {
+          "url": "https://www.diefalsche9.de/bundesliga-groesste-gaestekulisse-trotz-weitester-fahrt/",
+          "title": "Bundesliga: Größte Gästekulisse trotz weitester Fahrt",
+          "publisher": "Die falsche 9",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfLvHNK4vdsZ2Q4Pah2A_n-GAlqlY4YgFfwBi6Wo0YuCL9oxrmcgrdlBxQNsM"
+        }
+      ]
+    },
+    {
+      "query": "bayern - colonia",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T18:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cw99ex0kn0p4t",
+        "https://sports.yahoo.com/articles/bayern-munich-vs-fc-k-163000381.html",
+        "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-fc-bayern-vs.-koeln-bundesliga-md-10"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlEHbgEC0lyB-nhlCGYFcpWlJqmbKYiOlUsEMQtzA3haOu6n-tLvaR2YjL6dQ",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cw99ex0kn0p4t",
+          "title": "Bayern Munich vs Köln LIVE: German Bundesliga stream, text, stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlEHbgEC0lyB-nhlCGYFcpWlJqmbKYiOlUsEMQtzA3haOu6n-tLvaR2YjL6dQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/bayern-munich-vs-fc-k-163000381.html",
+          "title": "Bayern Munich vs. FC Köln: Match discussion, game time thread, odds, prediction, how to watch",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJOvgrjvLcMgqKphNHJNuQS_9Hj5S2DipKbk9s1rC0JGrWMNPolU5nai381Go"
+        },
+        {
+          "url": "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-fc-bayern-vs.-koeln-bundesliga-md-10",
+          "title": "Preview: FC Bayern vs. 1. FC Köln, Bundesliga",
+          "publisher": "FC Bayern",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjOo-7uSeSW3EhiZMhlNKQ6rygxmnJm98bY7lobbJSUTaw7nzZH7X_5wCQwSw"
+        }
+      ]
+    },
+    {
+      "query": "colts depth chart",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-20T18:30:00Z",
+      "related_news_urls": [
+        "https://www.houstontexans.com/news/texans-inactives-week-11-vs-indianapolis-colts",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-sauce-gardner-is-not-expected-to-play-vs-texans-due-to-calf-injury",
+        "https://www.espn.com/nfl/story/_/id/50524890/texans-rule-hunter-marks-colts-rule-ward-starting-ots"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHQk0D5w-o9MLB51NR-YBG-Dw8Cd3cM98meFBxNms04aQvArdlL9Rbes59Xqc",
+      "image_credit": "Houston Texans",
+      "news": [
+        {
+          "url": "https://www.houstontexans.com/news/texans-inactives-week-11-vs-indianapolis-colts",
+          "title": "Texans Inactives: Week 11 vs Indianapolis Colts",
+          "publisher": "Houston Texans",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHQk0D5w-o9MLB51NR-YBG-Dw8Cd3cM98meFBxNms04aQvArdlL9Rbes59Xqc"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-sauce-gardner-is-not-expected-to-play-vs-texans-due-to-calf-injury",
+          "title": "Report: Sauce Gardner is not expected to play vs. Texans due to calf injury",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1htV_afmDSQBw7_FnNR_D4GzzVXIGQ9CrBYsq5YZk8W5ub77lBtf5LsVasus"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50524890/texans-rule-hunter-marks-colts-rule-ward-starting-ots",
+          "title": "Texans DE Hunter, RB Marks to miss TNF; Colts rule out CB Ward, starting OTs",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm7hkQ5NnsDsMvxvMl34ZbIpuPBVVts3Av_3T_JHVzlIcp6FaNHl73Vb0cKqA"
+        }
+      ]
+    },
+    {
+      "query": "joey bart",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T18:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/cubs-acquire-former-no-2-182510310.html",
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-20/giants-sign-erick-mejia-to-minor-league-contract",
+        "https://www.mlb.com/news/william-bergolla-jr-jaden-woods-white-sox-40-man-joey-bart-dfa"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl3ROqGXrEpWci7ehXM4khb5x8Ec1iW17RW8YZxwVF61kLVlRAdv7GBeCvQOs",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-131219200.html",
-          "title": "NFL news, live updates: Colts release Daniel Jones, Anthony Richardson Sr. to start at QB; Puka Nacua potentially out for season after knee surgery",
+          "url": "https://sports.yahoo.com/articles/cubs-acquire-former-no-2-182510310.html",
+          "title": "Cubs acquire former No. 2 draft pick three days after White Sox cut him: report",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR4wz0W_rgZ0Z0vfpltc4K_JlTlMsfaKILGkjCbF2-LwKrPvO1blYudMDicn0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl3ROqGXrEpWci7ehXM4khb5x8Ec1iW17RW8YZxwVF61kLVlRAdv7GBeCvQOs"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50493317/texans-lose-rb-woody-marks-concussion-browns",
-          "title": "Texans lose RB Woody Marks to concussion in loss to Browns",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQO-UD0TnnX5vpxoLjDVVol5HeSZhDcVRiMHBACYOxGtbLBq3kdMJBaMT0NF8c"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-17/anthony-gould-toe-limited-tuesday",
-          "title": "Anthony Gould (toe) limited Tuesday",
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-20/giants-sign-erick-mejia-to-minor-league-contract",
+          "title": "Giants sign Erick Mejia to minor league contract",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs7zTYN3hxo79cbqQ0kvEPOhIUtWrj8J5E0G9UFpHViCZ4aMH3DthJvm72bPc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCoZJDw8Hj5-9KGH155WuEu0P37oj7ZFZdS-FiiTVXHUnCM1z9VQ_eFtOWtbk"
+        },
+        {
+          "url": "https://www.mlb.com/news/william-bergolla-jr-jaden-woods-white-sox-40-man-joey-bart-dfa",
+          "title": "White Sox add Bergolla, Woods to 40-man roster; Bart DFA'd",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6rl6ZQP7QvXVOPjJjGSY5YTdHF5XrTp6bfCEgptf8SusXE97cQKEQhym3ENs"
+        }
+      ]
+    },
+    {
+      "query": "bowen yang",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T18:30:00Z",
+      "related_news_urls": [
+        "https://www.thewrap.com/culture-lifestyle/culture/bowen-yang-slammed-antisemitic-remark-regina-spektor/",
+        "https://parade.com/news/bowen-yang-faces-backlash-over-regina-spektor-remark-as-critics-call-it-antisemitic",
+        "https://www.usmagazine.com/celebrity-news/news/bowen-yang-apologizes-for-antisemitic-podcast-comment/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOjP49X4iu8GWBuSH8KrENtD0732YSiyNMBHK_NYkKuhgorYqT0NM3pbtniB0",
+      "image_credit": "TheWrap",
+      "news": [
+        {
+          "url": "https://www.thewrap.com/culture-lifestyle/culture/bowen-yang-slammed-antisemitic-remark-regina-spektor/",
+          "title": "Bowen Yang Under Fire for Antisemitic Remark About Regina Spektor: 'Incredibly Disappointing'",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOjP49X4iu8GWBuSH8KrENtD0732YSiyNMBHK_NYkKuhgorYqT0NM3pbtniB0"
+        },
+        {
+          "url": "https://parade.com/news/bowen-yang-faces-backlash-over-regina-spektor-remark-as-critics-call-it-antisemitic",
+          "title": "Bowen Yang Faces Backlash Over Regina Spektor Remark as Critics Call It ‘Antisemitic’",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStEy0-dP3DFqhdxqeoTKIDSQ_sdehhJ7d8qF-pKqKVbNzdWVt7tXUvLvn0Qmo"
+        },
+        {
+          "url": "https://www.usmagazine.com/celebrity-news/news/bowen-yang-apologizes-for-antisemitic-podcast-comment/",
+          "title": "‘Saturday Night Live’ Alum Bowen Yang ‘Genuinely’ Apologizes for Antisemitic Podcast Comment",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFMU-gBCy-PU6F1IhdNkz0ll216ozWH6aUKjTTvp0XYagBAyo06ZWIGZbY6RU"
+        }
+      ]
+    },
+    {
+      "query": "medicare part b premium hike 2027",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T18:30:00Z",
+      "related_news_urls": [
+        "https://www.kiplinger.com/retirement/medicare/what-you-will-pay-for-medicare-in-2027",
+        "https://finance.yahoo.com/economy/article/medicare-out-of-pocket-costs-are-rising-in-2027-150513215.html",
+        "https://www.the-independent.com/us/money/medicare-part-b-premium-increase-social-security-cola-b3088215.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkpbXPDYywCJnjHZ0__eWhiXGPqJ4I9Tjjis63Gfyox7btvfnPH4FK7h52zTk",
+      "image_credit": "Kiplinger",
+      "news": [
+        {
+          "url": "https://www.kiplinger.com/retirement/medicare/what-you-will-pay-for-medicare-in-2027",
+          "title": "What You Will Pay for Medicare in 2027",
+          "publisher": "Kiplinger",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkpbXPDYywCJnjHZ0__eWhiXGPqJ4I9Tjjis63Gfyox7btvfnPH4FK7h52zTk"
+        },
+        {
+          "url": "https://finance.yahoo.com/economy/article/medicare-out-of-pocket-costs-are-rising-in-2027-150513215.html",
+          "title": "Medicare out-of-pocket costs are rising in 2027",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMTC4EkbvzCypTJZiHjW7bvB2OZAlNOtYh01Lz6oXPfLvZuiRJpY2tkoYfHAg"
+        },
+        {
+          "url": "https://www.the-independent.com/us/money/medicare-part-b-premium-increase-social-security-cola-b3088215.html",
+          "title": "Medicare increase set to eat into Social Security hike - here’s how much",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2RZLv8jodaw7hm-GJBOu40b2WyGf4PdX8Lvm4EMXrL_H5QzBKX5ibIjPsnY"
+        }
+      ]
+    },
+    {
+      "query": "hogwarts legacy 2 major changes",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T18:30:00Z",
+      "related_news_urls": [
+        "https://www.polygon.com/hogwarts-legacy-2-warner-bros-major-change/",
+        "https://winteriscoming.net/hogwarts-legacy-2-rumored-feature-biggest-curse-or-best-mechanic",
+        "https://www.imdb.com/news/ni66109475/?ref_=ttnw_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQij1WXGibqasn71GJp9SmihOAMY05ylffsrhfcBhER-Cbx2-Cx3tATSDh0BlY",
+      "image_credit": "Polygon.com",
+      "news": [
+        {
+          "url": "https://www.polygon.com/hogwarts-legacy-2-warner-bros-major-change/",
+          "title": "Hogwarts Legacy 2 Officially Reveals Its Most Major Change Yet",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQij1WXGibqasn71GJp9SmihOAMY05ylffsrhfcBhER-Cbx2-Cx3tATSDh0BlY"
+        },
+        {
+          "url": "https://winteriscoming.net/hogwarts-legacy-2-rumored-feature-biggest-curse-or-best-mechanic",
+          "title": "Hogwarts Legacy 2's rumored feature could be its biggest curse (or its best mechanic yet)",
+          "publisher": "Winter is Coming",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRl4jKQ6QSWJRLzmjbGb0w4sltul3K8_AnI4CZB9fMAW9bFeQ74NftZI7RNrzQ"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66109475/?ref_=ttnw_art_perm",
+          "title": "Hogwarts Legacy 2 Just Became Paramount's Most Important Game, But There's a Catch",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX36MDOPVPeKp50ApNs02o2sZyHq5yM-2rsq95SCU_I86Jjz3xHFFy49ocNe8"
         }
       ]
     },
@@ -77,13 +287,48 @@
       ]
     },
     {
+      "query": "skipp townsend",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T18:10:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/california/story/2026-11-20/skipp-townsend-son-murder-charges",
+        "https://thelalocal.org/neighborhoods/south-la/reginald-foremans-death-rattled-south-la-then-his-murder-investigation-divided-it/",
+        "https://www.nbclosangeles.com/video/news/local/anti-violence-activist-accuses-lapd-of-using-his-arrest-as-publicity-stunt/3969214/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-CpdmmCTqiyjygnwsQeRAHZZhWszMYSxtGQ5GUYvt-OpMQZNC9c7djucExdU",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-20/skipp-townsend-son-murder-charges",
+          "title": "He's L.A.'s most renowned anti-gang crusader. How did his son end up charged with murder?",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-CpdmmCTqiyjygnwsQeRAHZZhWszMYSxtGQ5GUYvt-OpMQZNC9c7djucExdU"
+        },
+        {
+          "url": "https://thelalocal.org/neighborhoods/south-la/reginald-foremans-death-rattled-south-la-then-his-murder-investigation-divided-it/",
+          "title": "Reginald Foreman’s death rattled South LA, then his murder investigation divided it",
+          "publisher": "LA Local",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRriwPxwHFh1yRzs-NDkzESy7RXnpQKqEizFuKiwwRjLFkkqw4AhHrtfnBXoTw"
+        },
+        {
+          "url": "https://www.nbclosangeles.com/video/news/local/anti-violence-activist-accuses-lapd-of-using-his-arrest-as-publicity-stunt/3969214/",
+          "title": "Anti-violence activist accuses LAPD of using his arrest as publicity stunt",
+          "publisher": "NBC Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGge_3OPMV-oWTwv8Fftv2ibGQNUuXgAnVZMSDOIW3i_BZVLxHiKN4CUBqsZE"
+        }
+      ]
+    },
+    {
       "query": "brandon smith",
       "approx_searches": "500+",
       "published_at": "2026-11-20T18:10:00Z",
       "related_news_urls": [
         "https://www.steelers.com/news/steelers-make-roster-moves-x9206",
         "https://www.wkbn.com/sports/pittsburgh-steelers/steelers-waive-wide-receiver-from-the-active-roster/",
-        "https://sports.yahoo.com/articles/steelers-release-wr-got-aaron-114442088.html"
+        "https://www.si.com/nfl/steelers/onsi/pittsburgh-steelers-waive-brandon-smith-wilson-pittman-return-practice"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidKGUXlBxQNggxWNG3rPyFKtExYslNeay-gcB3_5jQ3FTqKLg0aQ8NEx01YI",
       "image_credit": "Steelers.com",
@@ -103,256 +348,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHWTaMDMW8ildEfFhk4RGOomI7dq_TwsPg5XR4DEEuhRlU_jCCo1NwsUU757c"
         },
         {
-          "url": "https://sports.yahoo.com/articles/steelers-release-wr-got-aaron-114442088.html",
-          "title": "Steelers Release WR Who Got Aaron Rodgers’ Seal of Approval",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.si.com/nfl/steelers/onsi/pittsburgh-steelers-waive-brandon-smith-wilson-pittman-return-practice",
+          "title": "Steelers Waive WR After Wilson, Pittman Return to Practice",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRX_5SJE1vGoOJfUd_4td2azSQqfvbw6AFClQyaTy-BDJQN66hpGENT2gyC1s"
-        }
-      ]
-    },
-    {
-      "query": "taylor swift",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-20T18:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/18/style/cma-country-music-association-awards-red-carpet.html",
-        "https://www.latimes.com/entertainment-arts/music/story/2026-11-19/taylor-swift-returns-to-cmas-ella-langley-makes-history",
-        "https://wwd.com/pop-culture/celebrity-news/gallery/2026-cma-awards-red-carpet-style-photos-1239425833/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqVAVOZC1YMeRrVE3i_Cbl3QPxcvi1kSMyeCln5ONr_uKWE8aiFG4JgNk0FDQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/18/style/cma-country-music-association-awards-red-carpet.html",
-          "title": "The 10 Best Looks From the Country Music Association Awards Red Carpet",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqVAVOZC1YMeRrVE3i_Cbl3QPxcvi1kSMyeCln5ONr_uKWE8aiFG4JgNk0FDQ"
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/music/story/2026-11-19/taylor-swift-returns-to-cmas-ella-langley-makes-history",
-          "title": "Taylor Swift returns to CMA Awards after 13 years, but Ella Langley takes the cake",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvxidyXj6ThQIpVXS8muRm0EvUsBGedFWVtDFHuuVMPwa77SjL8QhmAet1JzQ"
-        },
-        {
-          "url": "https://wwd.com/pop-culture/celebrity-news/gallery/2026-cma-awards-red-carpet-style-photos-1239425833/",
-          "title": "Taylor Swift, Lainey Wilson, Glen Powell and More Stars Arrive at the 2026 CMA Awards",
-          "publisher": "WWD",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8tiDYR32STi2gzBlcyUCVJynk03HZNXMHRPWdFaNhnuzCHjHf_giL2sbvhOw"
-        }
-      ]
-    },
-    {
-      "query": "marco rubio",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T18:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/20/politics/marco-rubio-2028-race-vance-trump",
-        "https://thehill.com/video/jd-vance%E2%80%99s-%E2%80%98nightmare-scenario%E2%80%99-could-create-a-2028-opening-for-marco-rubio-whole-hog-politics/12392209/",
-        "https://emersoncollegepolling.com/national-poll-rubio-leads-2028-gop-nomination-contest-ossoff-rises-among-democrats/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfmqESVz21Vbn4X1CObRv23OYCydb5aOPY6fH2RdNCzjS-bqNdtVB2pm0vKE0",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/20/politics/marco-rubio-2028-race-vance-trump",
-          "title": "Republicans face a pivot away from Trump’s dystopia in 2028",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfmqESVz21Vbn4X1CObRv23OYCydb5aOPY6fH2RdNCzjS-bqNdtVB2pm0vKE0"
-        },
-        {
-          "url": "https://thehill.com/video/jd-vance%E2%80%99s-%E2%80%98nightmare-scenario%E2%80%99-could-create-a-2028-opening-for-marco-rubio-whole-hog-politics/12392209/",
-          "title": "JD Vance’s ‘nightmare scenario’ could create a 2028 opening for Marco Rubio | WHOLE HOG POLITICS",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSIg0-b2ZHaDuOFJGOc5C2KucI4AFHMbk7aYwSZBhP2iEG3ph9_Ss2UAYW7A8"
-        },
-        {
-          "url": "https://emersoncollegepolling.com/national-poll-rubio-leads-2028-gop-nomination-contest-ossoff-rises-among-democrats/",
-          "title": "National Poll: Rubio Leads 2028 GOP Nomination Contest, Ossoff Rises Among Democrats",
-          "publisher": "- Emerson Polling",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdFkcfNFV7JxQ5Qafaw_eBgTw7XsAbAMJtLjbjH50odkbz6KiUIZyLmM8upNo"
-        }
-      ]
-    },
-    {
-      "query": "josh johnson nfl",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T17:50:00Z",
-      "related_news_urls": [
-        "https://arizonasports.com/arizona-cardinals-injury-report/cardinals-chiefs-injury-report",
-        "https://www.cbssports.com/fantasy/football/news/cardinals-josh-johnson-expected-to-start-sunday/",
-        "https://www.azcentral.com/story/sports/nfl/cardinals/2026/11/19/arizona-cardinals-qb-carson-beck-added-injury-report/92868306007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ4QdHJrf5wu_8H0iJfLymcNstSRmrFS-O7V8Z5Z-XErMIkFn8Yx5uHZyOKVU",
-      "image_credit": "Arizona Sports",
-      "news": [
-        {
-          "url": "https://arizonasports.com/arizona-cardinals-injury-report/cardinals-chiefs-injury-report",
-          "title": "Cardinals-Chiefs injury report: Carson Beck limited, Kenneth Walker III DNP",
-          "publisher": "Arizona Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ4QdHJrf5wu_8H0iJfLymcNstSRmrFS-O7V8Z5Z-XErMIkFn8Yx5uHZyOKVU"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/cardinals-josh-johnson-expected-to-start-sunday/",
-          "title": "Cardinals' Josh Johnson: Expected to start Sunday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw8Bxcs78XEKWBqsrpUPHzqX7maM5BhBDjW_ovucbaKWTdjAanaRVm7xqeiOg"
-        },
-        {
-          "url": "https://www.azcentral.com/story/sports/nfl/cardinals/2026/11/19/arizona-cardinals-qb-carson-beck-added-injury-report/92868306007/",
-          "title": "Cardinals find troubling injury report surprise ahead of Chiefs game",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCpVzxJzc6nexmtfAtbc5hpAU9jL6xc5bVAfIdm0hkmqW6obzS31ZkCd6ntCI"
-        }
-      ]
-    },
-    {
-      "query": "ferdinand marcos",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T17:50:00Z",
-      "related_news_urls": [
-        "https://www.economist.com/asia/2026/11/15/donald-trump-gets-a-warm-welcome-in-the-philippines",
-        "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-united-states-participation-in-the-2026-east-asia-summit",
-        "https://www.reuters.com/world/asia-pacific/trump-says-us-has-concluded-very-big-trade-deal-with-philippines-2026-11-18/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmEfErII6lNz1LsCfqCDQt0r_IpoxSXGV78OJ-N3bquoEupWz3DVc_RIbrQZc",
-      "image_credit": "The Economist",
-      "news": [
-        {
-          "url": "https://www.economist.com/asia/2026/11/15/donald-trump-gets-a-warm-welcome-in-the-philippines",
-          "title": "Donald Trump gets a warm welcome in the Philippines",
-          "publisher": "The Economist",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmEfErII6lNz1LsCfqCDQt0r_IpoxSXGV78OJ-N3bquoEupWz3DVc_RIbrQZc"
-        },
-        {
-          "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-united-states-participation-in-the-2026-east-asia-summit",
-          "title": "The United States’ Participation in the 2026 East Asia Summit",
-          "publisher": "U.S. Department of State (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLdDQkseGtV_N3hJidVHJO4IgF6FMlHP3pXjS3rTnB5-g_gh3fW3ALIL29eTU"
-        },
-        {
-          "url": "https://www.reuters.com/world/asia-pacific/trump-says-us-has-concluded-very-big-trade-deal-with-philippines-2026-11-18/",
-          "title": "Trump says US wraps up 'very big trade deal' with Philippines",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQljNrjZO41neUvDjktSU67u91xyAPCiKDYEtf8K3lOkFWg2QyF1evTCAhXeHo"
-        }
-      ]
-    },
-    {
-      "query": "rsm classic",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T17:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/golf/story/_/id/50534530/jesper-svensson-michael-thorbjornsen-start-fast-rsm",
-        "https://www.pgatour.com/article/news/draws-and-fades/2026/11/19/draws-and-fades-round-1-the-rsm-classic-fedexcup-fall-finale-best-bets-props-advice",
-        "https://sports.yahoo.com/articles/jesper-svensson-grabs-rsm-classic-130026374.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1btwcL9BxP4g7qZA9dUeH3Tb1O6YYcgyLS_pynO1ycky170tJQNFrlV4fFhs",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/golf/story/_/id/50534530/jesper-svensson-michael-thorbjornsen-start-fast-rsm",
-          "title": "Jesper Svensson, Michael Thorbjornsen among those to start fast at RSM Classic",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1btwcL9BxP4g7qZA9dUeH3Tb1O6YYcgyLS_pynO1ycky170tJQNFrlV4fFhs"
-        },
-        {
-          "url": "https://www.pgatour.com/article/news/draws-and-fades/2026/11/19/draws-and-fades-round-1-the-rsm-classic-fedexcup-fall-finale-best-bets-props-advice",
-          "title": "Draws and Fades: Count on elite ball-strikers to thrive in breezy St. Simons",
-          "publisher": "PGA Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj7ee5jCkej6LPUIZpVvsj0MAPJQi_8eeKTrMgfDg_RpKpMOHnLZAHEVlP5iw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jesper-svensson-grabs-rsm-classic-130026374.html",
-          "title": "Jesper Svensson Grabs RSM Classic Lead As PGA Tour Cards Hang In Balance",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsXSJmbCgENEL55W0vycGzqRvp-7XVJ_A1bnaTuSJOAAqG6IEp8-qUXXJQvVw"
-        }
-      ]
-    },
-    {
-      "query": "touchland hand sanitizer bearista",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-20T17:40:00Z",
-      "related_news_urls": [
-        "https://www.centredaily.com/news/business/article318172679.html",
-        "https://www.northjersey.com/story/news/2026/11/20/starbucks-touchland-bearista-price-where-buy-release-date/92875201007/",
-        "https://lufkindailynews.com/news_reuters/national/starbucks-teams-up-with-touchland-for-limited-edition-bearista-set/image_62cbcc64-9397-5717-8108-7c2c2d019053.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFoHw9jVm5zzNRmFe4n_vx516iKkEs8X6RdemBkcqXdMjb5EQX_suKwaxZYoo",
-      "image_credit": "Centre Daily Times",
-      "news": [
-        {
-          "url": "https://www.centredaily.com/news/business/article318172679.html",
-          "title": "Starbucks launches limited-edition Bearista set with self-care brand",
-          "publisher": "Centre Daily Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFoHw9jVm5zzNRmFe4n_vx516iKkEs8X6RdemBkcqXdMjb5EQX_suKwaxZYoo"
-        },
-        {
-          "url": "https://www.northjersey.com/story/news/2026/11/20/starbucks-touchland-bearista-price-where-buy-release-date/92875201007/",
-          "title": "Starbucks Bearista Touchland drops today. What time, where to buy?",
-          "publisher": "Bergen Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHC8kFHzOnrtRhoDgUHUylJkWmAvgAACoGvnBXqeQYYKvEaWTItw1zWtiATbs"
-        },
-        {
-          "url": "https://lufkindailynews.com/news_reuters/national/starbucks-teams-up-with-touchland-for-limited-edition-bearista-set/image_62cbcc64-9397-5717-8108-7c2c2d019053.html",
-          "title": "Starbucks teams up with Touchland for limited-edition Bearista set.",
-          "publisher": "The Lufkin Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTX2sWydT4Brs05M6PG3Ezq4PGByzmv-u6M1i89FAlHihYJoOnkZFN7Bfrnb0"
-        }
-      ]
-    },
-    {
-      "query": "voo stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T17:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/66-old-600-000-voo-233251936.html",
-        "https://247wallst.com/investing/etf/2026/11/19/a-66-year-old-with-600000-in-voo-owns-nvidia-without-ever-buying-a-share-schd-owns-none/",
-        "https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-drops-after-first-day-of-trading-143300513.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLSf1eWjQIaLbSbc54OIF0uvb6UDm-9chhIeC7OWupk0HivLuucP8OysUI0V8",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/66-old-600-000-voo-233251936.html",
-          "title": "A 66-Year-Old With $600,000 in VOO Owns Nvidia Without Ever Buying a Share. SCHD Owns None.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLSf1eWjQIaLbSbc54OIF0uvb6UDm-9chhIeC7OWupk0HivLuucP8OysUI0V8"
-        },
-        {
-          "url": "https://247wallst.com/investing/etf/2026/11/19/a-66-year-old-with-600000-in-voo-owns-nvidia-without-ever-buying-a-share-schd-owns-none/",
-          "title": "A 66-Year-Old With $600,000 in VOO Owns Nvidia Without Ever Buying a Share. SCHD Owns None.",
-          "publisher": "24/7 Wall St.",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9q5XrdbKRSLN_BAZGFgJerDuiP7oUABielruTMIrKqu1bGVN2unV3EWezgTQ"
-        },
-        {
-          "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-drops-after-first-day-of-trading-143300513.html",
-          "title": "Anthropic IPO live: Anthropic stock drops after first day of trading",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEIH60g1_OSrpaeLdt5HFltgXWg1wb03bo-U1IXNeuDCPxjN917A5H8MNZAEg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHnaE_9EJc041CSSAgstpbHahhcwIuxRPdIqKe0xz6HUGngofyvrb9rkz7n-c"
         }
       ]
     }
