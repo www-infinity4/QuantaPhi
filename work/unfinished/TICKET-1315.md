@@ -136,3 +136,14 @@ GitHub issue created during the owner-request scoping session; checkpoint staged
 ### November 17 follow-up · preserve unsent composer on card-context request
 - Test-first: 4th focused regression initially failed because retry status helper was absent; after the correction 4/4 focused Node tests passed locally and parser check passed. Bubbles keeps an existing unsent message intact and tells the user to retry; no queued message or secret is overwritten.
 - Exact-head CI, independent review, production and Android still unverified for this follow-up commit.
+
+
+## November 19, 2026 — Infinity AI ventures + shared-brain carousel cards
+
+- **Owner request:** recover Quant AI, Cosmo and related AI identities; select the strongest realistic business ideas; place their original experiences in the Oracle carousel without importing separate Bubbles assistants; separately repair Zeus, Avatar, slow search and traffic.
+- **Scope:** Existing Oracle issue #1315; existing `source-quick-cards.mjs` source bank and original `oracle-card-deck.js` registration. Not a second carousel, provider, paid API or independent AI engine.
+- **Patch:** six first-party entries via `infinity-ai-ventures.mjs` (Quant AI, Cosmo/StarQuest, creator business pages, Complete Me, Media Star, Code Phi), shared-context handoff on homepage, venture detail paths that do not install `bubbles-embed.js`, and `docs/INFINITY-AI-PORTFOLIO-20261119.md`.
+- **Test-first evidence:** standalone local Node test first failed when the new module was absent; after implementation, 2/2 focused data tests passed. GitHub branch commits `edc53583` (test), `94eac93b` (registry), `42909aac` (source wiring), `f3bbc1a7` (existing suite update), `83f4a3c2` (inventory). Full GitHub CI, independent review, protected merge and deployment **not yet verified**.
+- **Progress:** source staged, approximately 2/6 acceptance gates (source registry and local data tests); 1 documented engineering session / unknown remaining. Dot: yellow for review pending (no active lease inferred). No live site traffic claim.
+- **Blockers:** exact-head CI, original-card mobile behavior and category filtering, independent review, guarded merge, Cloudflare live readback and Android acceptance. Zeus #1903 remains in its separate existing PR #1484.
+- **Next executable action:** open PR for this isolated branch and verify exact-head CI. Route failures to Green; do not merge without independent review and branch-policy checks.
