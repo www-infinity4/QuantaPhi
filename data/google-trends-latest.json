@@ -3,12 +3,301 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T17:01:08.911939Z",
+  "checked_at": "2026-11-20T17:31:13.753227Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "when we were young festival 2027",
+      "query": "oklahoma state basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T17:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/minnesota/article/oklahoma-state-minnesota-mens-basketball-preview-prediction-292972081/",
+        "https://pistolsfiringblog.com/hoops-preview-tv-info-team-stats-and-projected-lineups-for-osu-minnesota/",
+        "https://www.si.com/college/oklahomastate/basketball/how-to-watch-oklahoma-state-cowboys-basketball-vs-minnesota-time-tv-channel-matchup-to-watch"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV3spRqvUCWm9fT242pcOijUIb6uxvC4ksKkexT8cxJRIPLhGmwDZthvukjR8",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/minnesota/article/oklahoma-state-minnesota-mens-basketball-preview-prediction-292972081/",
+          "title": "Oklahoma State vs Minnesota Men's Basketball Preview and Prediction",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV3spRqvUCWm9fT242pcOijUIb6uxvC4ksKkexT8cxJRIPLhGmwDZthvukjR8"
+        },
+        {
+          "url": "https://pistolsfiringblog.com/hoops-preview-tv-info-team-stats-and-projected-lineups-for-osu-minnesota/",
+          "title": "Hoops Preview: TV Info, Team Stats and Projected Lineups for OSU-Minnesota",
+          "publisher": "Pistols Firing",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8EjKRbu0gpd4pol6tKFszt3zkTCBuls9bgLobt-9Kz5fnXzjbVx8AHcWlYlA"
+        },
+        {
+          "url": "https://www.si.com/college/oklahomastate/basketball/how-to-watch-oklahoma-state-cowboys-basketball-vs-minnesota-time-tv-channel-matchup-to-watch",
+          "title": "How to Watch Oklahoma State Cowboys Basketball vs. Minnesota: Time, TV Channel, Matchup to Watch",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRHzZ2g4NidFiqTNh34qYsrelMc4ogt8QXwFEJXox3G90OJeJ4oHw9SIaeGz4"
+        }
+      ]
+    },
+    {
+      "query": "green bay vs florida state",
       "approx_searches": "200+",
+      "published_at": "2026-11-20T17:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/florida-state/longformarticle/florida-state-seminoles-basketball-green-bay-game-preview-292976651/",
+        "https://www.on3.com/teams/florida-state-seminoles/news/loucks-seminoles-making-most-of-unconventional-noon-tipoff-friday/",
+        "https://sports.yahoo.com/articles/fsu-looks-respond-loucks-spirited-030519266.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToxdm3iHTBut0fr682d9f2yfYI-wXtoeuhiZ6-MqjHpbNbAkoEH5-pX_MOytQ",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/florida-state/longformarticle/florida-state-seminoles-basketball-green-bay-game-preview-292976651/",
+          "title": "Preview: FSU Basketball faces Green Bay at noon on Friday",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToxdm3iHTBut0fr682d9f2yfYI-wXtoeuhiZ6-MqjHpbNbAkoEH5-pX_MOytQ"
+        },
+        {
+          "url": "https://www.on3.com/teams/florida-state-seminoles/news/loucks-seminoles-making-most-of-unconventional-noon-tipoff-friday/",
+          "title": "Loucks, Seminoles making most of 'unconventional' noon tipoff Friday",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr0oOkPlOD7QBIUBoIfB96BdjFS66vRyDERuiEIY7Q7fVc3OlnA1cIho10FSI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/fsu-looks-respond-loucks-spirited-030519266.html",
+          "title": "FSU Looks to Respond After Loucks Spirited Criticism",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGNs8MPUBLvrxzg98WAffUwDxi1rdVmD_zHbXj3wxUNaq8loYihaJ06jmqBPM"
+        }
+      ]
+    },
+    {
+      "query": "trump press conference",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T17:10:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/china/trumps-personalized-diplomacy-hits-its-limits-with-3-way-summit-2026-11-20/",
+        "https://www.theguardian.com/us-news/2026/nov/20/donald-trump-xi-jinping-vladimir-putin-summit",
+        "https://www.cnn.com/2026/11/19/politics/trump-putin-xi-meeting-takeaways"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJUQgaPmfRsVHkcCB7sbmwieZsfCyiooagTOeD3R9gFibktb7y38IiidZZ8uk",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/china/trumps-personalized-diplomacy-hits-its-limits-with-3-way-summit-2026-11-20/",
+          "title": "Trump's personalized diplomacy hits its limits with 3-way summit",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJUQgaPmfRsVHkcCB7sbmwieZsfCyiooagTOeD3R9gFibktb7y38IiidZZ8uk"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/20/donald-trump-xi-jinping-vladimir-putin-summit",
+          "title": "Friend zone: humiliated by US voters, Trump finds himself in the company of autocrats",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGvD0SOTxQoseAoE89FhIIVxTxR_hGgomYY7yxXP_F8b7g7JXodJ8K_XdpxEU"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/19/politics/trump-putin-xi-meeting-takeaways",
+          "title": "Strongman ‘friends,’ AI’s potential and other takeaways from Trump’s China trip and sitdown with Putin and Xi",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRk-VE2bn6Q7QteZCuxbJovfT1PXuIVUswm2ICTiyUVTadNq_xeHZcNIiUGwWI"
+        }
+      ]
+    },
+    {
+      "query": "qqq",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T17:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-14-below-october-224301407.html",
+        "https://247wallst.com/investing/2026/11/17/the-nasdaq-100-is-doing-something-it-did-only-in-2000-and-2018-heres-what-happened-next-both-times/",
+        "https://www.moomoo.com/community/feed/nov-check-in-22-117647886974986"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OA1T4qjviSi3t9Gj7JThI5uKHXDaxfQpKNNquIFXNHA0laaTWls-IsgeMoM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-14-below-october-224301407.html",
+          "title": "Invesco QQQ Is 14% Below Its October Record. Here's Where I Think It Will Be in 2030.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OA1T4qjviSi3t9Gj7JThI5uKHXDaxfQpKNNquIFXNHA0laaTWls-IsgeMoM"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/11/17/the-nasdaq-100-is-doing-something-it-did-only-in-2000-and-2018-heres-what-happened-next-both-times/",
+          "title": "The Nasdaq-100 Is Doing Something It Did Only in 2000 and 2018. Here's What Happened Next Both Times",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk8rpQGb0sOeZTU3cJSDy5nBVIx13hM-iKdEf9rTSriRMoLFJl2DSPYCRsTao"
+        },
+        {
+          "url": "https://www.moomoo.com/community/feed/nov-check-in-22-117647886974986",
+          "title": "NOV check in #22",
+          "publisher": "Moomoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTG8eCuA-am0HGH2sEByJ9ysoEwdGEDG1lnJ1D1IpZlwAXLtrTCa_r_YMWBmP4"
+        }
+      ]
+    },
+    {
+      "query": "voo",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T17:00:00Z",
+      "related_news_urls": [
+        "https://pontospravoar.com/promocao-voo-premiado-da-gol-viagens-300-mil-milhas-smiles/",
+        "https://marcaspelomundo.com.br/anunciantes/black-friday-da-gol-sorteia-passagens-aereas-com-acompanhante-e-300-mil-milhas-smiles/",
+        "https://www.melhoresdestinos.com.br/promocao/passagens-aereas-nacionais-19-11-26"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxUECv9lfTpHKMyd9iB8q5Sj7ZxJuMn6eaMofLhtXzp__MVz9NlsBzxDbhGaY",
+      "image_credit": "Pontos pra Voar",
+      "news": [
+        {
+          "url": "https://pontospravoar.com/promocao-voo-premiado-da-gol-viagens-300-mil-milhas-smiles/",
+          "title": "Promoção Voo Premiado da GOL sorteia viagens com acompanhante e 300 mil milhas Smiles",
+          "publisher": "Pontos pra Voar",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxUECv9lfTpHKMyd9iB8q5Sj7ZxJuMn6eaMofLhtXzp__MVz9NlsBzxDbhGaY"
+        },
+        {
+          "url": "https://marcaspelomundo.com.br/anunciantes/black-friday-da-gol-sorteia-passagens-aereas-com-acompanhante-e-300-mil-milhas-smiles/",
+          "title": "Black Friday da Gol sorteia passagens aéreas com acompanhante e 300 mil milhas Smiles",
+          "publisher": "Marcas pelo Mundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpW7JCG8xmWG_l-5BwVt5KzY3_P_ApSYsJ_rO7v3_gzrfqK4YV4Jh8ewwhCOQ"
+        },
+        {
+          "url": "https://www.melhoresdestinos.com.br/promocao/passagens-aereas-nacionais-19-11-26",
+          "title": "Feriadão de ofertas ✈️ Gol, Latam e Azul têm passagens nacionais a partir de R$ 276 ida e volta!",
+          "publisher": "Melhores Destinos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv-bajWIuiLbl2210sO01Z_oMwNs-_6NpkQLTsAWeSqKbFlbw5Vpu01svEpR4"
+        }
+      ]
+    },
+    {
+      "query": "qqq stock",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T17:00:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-20/ai-credit-risk-gauges-worsen-as-tech-selloff-roils-markets",
+        "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N4710AA:0-stocks-slide-as-ai-selloff-deepens-asia-set-for-worst-week-since-2020/",
+        "https://www.benzinga.com/opinion/26/11/63488173/asia-ai-selloff-spilling-into-gold-silver-us-tech-stocks-smart-money-is-buying"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToeIHxaey-ArZ8TwnkbTDiPgPHJcua8h5AqE-K7AJ9A6rBv21qVKhpBPRN6wU",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-20/ai-credit-risk-gauges-worsen-as-tech-selloff-roils-markets",
+          "title": "AI Credit Risk Gauges Worsen as Tech Selloff Roils Markets",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToeIHxaey-ArZ8TwnkbTDiPgPHJcua8h5AqE-K7AJ9A6rBv21qVKhpBPRN6wU"
+        },
+        {
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N4710AA:0-stocks-slide-as-ai-selloff-deepens-asia-set-for-worst-week-since-2020/",
+          "title": "Stocks slide as AI selloff deepens, Asia set for worst week since 2020",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        },
+        {
+          "url": "https://www.benzinga.com/opinion/26/11/63488173/asia-ai-selloff-spilling-into-gold-silver-us-tech-stocks-smart-money-is-buying",
+          "title": "Asia's AI Selloff Spilling Into Gold, Silver, US Tech Stocks—Smart Money Is Buying",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzO1Tg3qJC5H1LQxeeu97zScLj_XSFEyrwMhEiN5UzsCBzCZSwGfCHNtQcv8c"
+        }
+      ]
+    },
+    {
+      "query": "costco stock",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-20T17:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/18/tech-outage-costco-panic-buying.html",
+        "https://www.cbsnews.com/news/doomsday-prepping-scenarios-walmart-costco-technology-outages/",
+        "https://www.cbc.ca/news/world/us-90-day-grid-outage-doomsday-prepping-stockpiling-9.7428489"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEYYIS2OBjSQOHp0O2FysLe31Pd_66AbnAunTxH1BAegnU2Flc4EsUl3zW18U",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/18/tech-outage-costco-panic-buying.html",
+          "title": "Tech outages are causing people to panic-buy. Costco is benefiting, Mizuho says",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEYYIS2OBjSQOHp0O2FysLe31Pd_66AbnAunTxH1BAegnU2Flc4EsUl3zW18U"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/doomsday-prepping-scenarios-walmart-costco-technology-outages/",
+          "title": "Consumers stock their doomsday pantries as tech outages cause jitters",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3XteztHbrMm9N07p6uUUCQ91t7jAFRzdSREgA7NTYduedYXqxaJ37TMZDulg"
+        },
+        {
+          "url": "https://www.cbc.ca/news/world/us-90-day-grid-outage-doomsday-prepping-stockpiling-9.7428489",
+          "title": "Why some Americans are stockpiling for a 90-day power outage",
+          "publisher": "CBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpA1fwg9nXVXi4AyA4Iz0PzEpLRXpr71Nr6DudKVU7ycJc3nqArjZoBXqGXao"
+        }
+      ]
+    },
+    {
+      "query": "al-ahli vs al-nassr",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-20T16:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c6j9k2l339lzt",
+        "https://www.livescore.com/en/news/football/more/ronaldo-leads-al-nassrs-attack-in-the-clasico-al-buraikan-on-the-al-ahli-bench-goal/",
+        "https://www.goal.com/en/news/al-ahli-star-recovers-before-the-clasico-after-a-month-and-a-half/bltd936345b93520ff3"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c6j9k2l339lzt",
+          "title": "Al Ahli vs Al Nassr: Saudi Pro League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.livescore.com/en/news/football/more/ronaldo-leads-al-nassrs-attack-in-the-clasico-al-buraikan-on-the-al-ahli-bench-goal/",
+          "title": "Ronaldo leads Al-Nassr's attack in the Clasico, Al-Buraikan on the Al-Ahli bench",
+          "publisher": "LiveScore",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwRiCM7PtTPXAwpI6wFlEKhLSftTxlKrBFhupaDVQNmdywsRTCaxNolwM0tA"
+        },
+        {
+          "url": "https://www.goal.com/en/news/al-ahli-star-recovers-before-the-clasico-after-a-month-and-a-half/bltd936345b93520ff3",
+          "title": "Al-Ahli star recovers from the Saudi national team curse before the Clasico after a month and a half",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpeXB5sSqWUJ2aq0FS854WRPQPfCxFEJfHTNXF8TXvnEvC22GZmbvEosIWpeQ"
+        }
+      ]
+    },
+    {
+      "query": "independiente del valle - macará",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T16:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "when we were young festival 2027",
+      "approx_searches": "500+",
       "published_at": "2026-11-20T16:40:00Z",
       "related_news_urls": [
         "https://lasvegassun.com/news/2026/nov/17/blink-182-pierce-the-veil-to-headline-when-we-were/",
@@ -38,321 +327,6 @@
           "publisher": "Casino.org",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTs5wF-tCv5N8S-uXQc3CHmxKmStgZ-15bMYG8NVfdAHJqLbmNH209YJAaSheg"
-        }
-      ]
-    },
-    {
-      "query": "lance bass",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T16:30:00Z",
-      "related_news_urls": [
-        "https://www.today.com/video/lance-bass-talks-children-s-christmas-book-30-years-of-nsync-273733189634",
-        "https://pagesix.com/2026/11/17/celebrity-news/lance-bass-shares-the-sweet-holiday-traditions-he-shares-with-his-children/",
-        "https://katv.com/news/hogs-fans-storm-the-field-after-huge-upset-vs-south-carolina-hog-central-podcast"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROqt_3ApyVAO5_yiXBwgqx5c7AyM5UamVvl-jVuZ6uEVIAlxXNLLcNaiFc_AU",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/video/lance-bass-talks-children-s-christmas-book-30-years-of-nsync-273733189634",
-          "title": "Lance Bass Talks Children’s Christmas Book, 30 Years of NSYNC",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROqt_3ApyVAO5_yiXBwgqx5c7AyM5UamVvl-jVuZ6uEVIAlxXNLLcNaiFc_AU"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/17/celebrity-news/lance-bass-shares-the-sweet-holiday-traditions-he-shares-with-his-children/",
-          "title": "Exclusive | Lance Bass shares the sweet holiday traditions he shares with his children",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUHEV0ZYN3-Ko9qdIZndoDmlfW24jM8SFyXafv6Tqoz6s1ABIR-u71PMJZdxI"
-        },
-        {
-          "url": "https://katv.com/news/hogs-fans-storm-the-field-after-huge-upset-vs-south-carolina-hog-central-podcast",
-          "title": "Hogs fans storm the field after huge upset vs. South Carolina | Hog Central Podcast",
-          "publisher": "KATV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjZmJz9r0k93-G3Joqfp7ZOO_oR4qYMmjIbH2J083IUqlxy9asmeFmcmrgMLU"
-        }
-      ]
-    },
-    {
-      "query": "soxx",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T16:30:00Z",
-      "related_news_urls": [
-        "https://www.benzinga.com/news/26/11/63430495/1000-invested-ishares-phlx-sox-semiconductor-sector-index-fund-15-years-ago-would-be-worth-much-toda",
-        "https://finance.yahoo.com/markets/stocks/articles/peter-thiel-makes-161-million-043300842.html",
-        "https://www.tikr.com/blog/inside-peter-thiels-portfolio-every-move-he-made-in-the-third-quarter"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LjkTI5A-Uwv4H5fexFYUqvDbfgmaUf6kx_86avQhl50af-x8Gdg3-9qhSpo",
-      "image_credit": "Benzinga",
-      "news": [
-        {
-          "url": "https://www.benzinga.com/news/26/11/63430495/1000-invested-ishares-phlx-sox-semiconductor-sector-index-fund-15-years-ago-would-be-worth-much-toda",
-          "title": "$1000 Invested In iShares PHLX SOX Semiconductor Sector Index Fund 15 Years Ago Would Be Worth This Much",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LjkTI5A-Uwv4H5fexFYUqvDbfgmaUf6kx_86avQhl50af-x8Gdg3-9qhSpo"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/peter-thiel-makes-161-million-043300842.html",
-          "title": "Peter Thiel makes new $161 million ETF bet, dethroning Amazon stock",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrcT93APEUBHOtqROrx1yXbouHbZD7OE8fn5W0Yup218CHLktKMJMjOyCim0U"
-        },
-        {
-          "url": "https://www.tikr.com/blog/inside-peter-thiels-portfolio-every-move-he-made-in-the-third-quarter",
-          "title": "Inside Peter Thiel’s Portfolio: Every Move He Made in the Third Quarter",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbrtHsGU_nqcAx8f2fEVU6n4lzho2rKfLtCfZbHTx_V0i3Fk_RG6n3sSIZYsk"
-        }
-      ]
-    },
-    {
-      "query": "spy",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T16:20:00Z",
-      "related_news_urls": [
-        "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
-        "https://www.bloomberg.com/news/articles/2026-11-18/us-charges-russian-as-foreign-agent-targeting-palantir-workers",
-        "https://abc7news.com/post/exclusive-head-fbi-san-francisco-office-says-espionage-bay-area-is-constantly-evolving-threat-amid-ai-boom/20056095/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyqp57mQQ7tuzJtPz4m4_3fXWQK_T8ls0YyV3DFQXgy_Wpwc4T1lzVW9SV8YM",
-      "image_credit": "Ars Technica",
-      "news": [
-        {
-          "url": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
-          "title": "Man hired by Russia spied on Silicon Valley tech and defense company, feds say",
-          "publisher": "Ars Technica",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyqp57mQQ7tuzJtPz4m4_3fXWQK_T8ls0YyV3DFQXgy_Wpwc4T1lzVW9SV8YM"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-18/us-charges-russian-as-foreign-agent-targeting-palantir-workers",
-          "title": "US Charges Russian as Foreign Agent Targeting Palantir Workers",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrypOH2ql8H0fKZe00m8IWMMUm5WMVFV5x4to8pXixlmBIuCSbKGxFS6wxWaM"
-        },
-        {
-          "url": "https://abc7news.com/post/exclusive-head-fbi-san-francisco-office-says-espionage-bay-area-is-constantly-evolving-threat-amid-ai-boom/20056095/",
-          "title": "EXCLUSIVE: Head of FBI San Francisco office says espionage in Bay Area is a 'constantly evolving threat' amid AI boom",
-          "publisher": "ABC7 Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxwbcQ9l3ctIP2p6UHjV33YpMxvovCzmGOt1-yj10mWRDaC_h65CpRapa56xE"
-        }
-      ]
-    },
-    {
-      "query": "mstr stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T16:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-buy-strategy-202222723.html",
-        "https://www.investors.com/news/mstr-stock-discount-vs-bitcoin-trump-media-convertible/",
-        "https://www.tikr.com/blog/strategy-sinks-26-in-a-week-as-msci-drops-it-saylor-seller-exhaustion-will-come-long-before-saylor-exhaustion"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdqhpf1Drxp0mTQY86m9Lm_gyV7DufKV0-LadU0QofnTwhIO-NWII8_iSd1Q",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-buy-strategy-202222723.html",
-          "title": "Wall Street analysts say buy Strategy Inc, yet a November 30 shock is coming",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdqhpf1Drxp0mTQY86m9Lm_gyV7DufKV0-LadU0QofnTwhIO-NWII8_iSd1Q"
-        },
-        {
-          "url": "https://www.investors.com/news/mstr-stock-discount-vs-bitcoin-trump-media-convertible/",
-          "title": "Strategy Is Worth Less Than Its Bitcoin, Trump Media May Have To Sell",
-          "publisher": "Investor's Business Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBtaNM8_MmhL09vNIqJuOYCILDKLJs9Q1vhhEpOzg9jbo0Y78HabkZCotuDNw"
-        },
-        {
-          "url": "https://www.tikr.com/blog/strategy-sinks-26-in-a-week-as-msci-drops-it-saylor-seller-exhaustion-will-come-long-before-saylor-exhaustion",
-          "title": "Strategy Sinks 26% in a Week as MSCI Drops It. Saylor: “Seller Exhaustion Will Come Long Before Saylor Exhaustion”",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfegVrfJmI0w7XwAMYIcL9-xoND3KBij2aJSX5MGoSm7bA_PCqT6I_cVGwQXU"
-        }
-      ]
-    },
-    {
-      "query": "bitcoin price",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-20T16:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/20/bitcoin-pre-ipo-selloff-pattern-anthropic-spacex.html",
-        "https://finance.yahoo.com/markets/crypto/articles/bitcoin-enters-death-cross-anthropic-190824839.html",
-        "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUk9tasQ2HPrmSQ74hWcyMKJF3bK-XaGfi7ypqfnG7oGpWN-pZX2MVUcxeDuo",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/20/bitcoin-pre-ipo-selloff-pattern-anthropic-spacex.html",
-          "title": "Bitcoin suffered identical sell-off pattern ahead of Anthropic, SpaceX IPOs — what happens next?",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUk9tasQ2HPrmSQ74hWcyMKJF3bK-XaGfi7ypqfnG7oGpWN-pZX2MVUcxeDuo"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-enters-death-cross-anthropic-190824839.html",
-          "title": "Bitcoin Enters Death Cross as Anthropic IPO Fails to Lift Wall Street",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8"
-        },
-        {
-          "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt",
-          "title": "BTC slides to $61,300 after Anthropic's IPO, triggers $660 million in liquidations",
-          "publisher": "CoinDesk",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5nOf_Z5P8iOL9IPwGcbTThJ3huByPNuI356L2n1AHEbM_mB5BF6V1xlS385E"
-        }
-      ]
-    },
-    {
-      "query": "btc",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T16:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
-        "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
-        "https://research.glassnode.com/the-week-onchain-week-46-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszVKjR2ov3hRsb4VWgWjZAZ--j32c5s2wIshKyrL_1at1uQe6CBvbApIKCt4",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
-          "title": "Bitcoin selloff: Crypto is failing the 'digital gold' test again as it sinks with stocks",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszVKjR2ov3hRsb4VWgWjZAZ--j32c5s2wIshKyrL_1at1uQe6CBvbApIKCt4"
-        },
-        {
-          "url": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
-          "title": "Live news: Bitcoin slips to fresh lows below $60,000 as Anthropic slides after Nasdaq debut",
-          "publisher": "CoinDesk",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSF6EBrVCJiHIvLKFqrahNEFI0ktiIhmiCJJe9WXinPeQYsDFEQ-1mNNuLe0Mo"
-        },
-        {
-          "url": "https://research.glassnode.com/the-week-onchain-week-46-2026/",
-          "title": "Capitulation Meets Support",
-          "publisher": "Glassnode Research",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSO1zM3wCyTbzl21ySDOrS3b3iFutC7a_cjvO_v8JObdCoUi_NV3iJATGkTyPo"
-        }
-      ]
-    },
-    {
-      "query": "btc price",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T16:00:00Z",
-      "related_news_urls": [
-        "https://www.fool.com/coverage/stock-market-today/2026/11/19/crypto-market-today-nov-19-bitcoin-approaches-usd60-000-as-etf-outflows-surpass-usd2-5-billion-in-2026/",
-        "https://crypto.news/crypto-market-crash-today-why-are-ethereum-zec-and-altcoins-down/",
-        "https://cryptonews.net/news/analytics/33784323/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5tGVfKMTBz0xClR_rhIZ6wsolQm8MIqqI7fXE7_LdHBsTDUO4Kts_QPFDVA",
-      "image_credit": "The Motley Fool",
-      "news": [
-        {
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/crypto-market-today-nov-19-bitcoin-approaches-usd60-000-as-etf-outflows-surpass-usd2-5-billion-in-2026/",
-          "title": "Crypto Market Today, Nov. 19: Bitcoin Approaches $60,000 as ETF Outflows Surpass $2.5 Billion in 2026",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5tGVfKMTBz0xClR_rhIZ6wsolQm8MIqqI7fXE7_LdHBsTDUO4Kts_QPFDVA"
-        },
-        {
-          "url": "https://crypto.news/crypto-market-crash-today-why-are-ethereum-zec-and-altcoins-down/",
-          "title": "Crypto market crash today: Why are Ethereum, ZEC and altcoins down?",
-          "publisher": "Crypto News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcy1k0zLc-_ZF6mLO40XQJhBpAHzbl4Z1m6Pht7vam75Y-nZor33I_53hoq2A"
-        },
-        {
-          "url": "https://cryptonews.net/news/analytics/33784323/",
-          "title": "Top 4 Reasons Why BTC, ETH and XRP Price Are Crashing Today",
-          "publisher": "Cryptonews.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwHMviJIFWx_MkwR-j0BvjcIK51jYRTtwhy9543EqZoNgC3b3OUI8BB3PbJM0"
-        }
-      ]
-    },
-    {
-      "query": "bitcoin price usd",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T16:00:00Z",
-      "related_news_urls": [
-        "https://africa.businessinsider.com/local/how-breet-business-api-is-unlocking-new-payment-opportunities-for-african-businesses/vbnlxk7",
-        "https://techeconomy.ng/africa-101bn-crypto-market-stablecoins-cross-border-payments",
-        "https://www.thecable.ng/bitcoin-loses-ground-to-stablecoins-in-nigeria/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb56FQtOdoo9MM_WQoSdrSLFrJ5PpFqGIkCKEGCgy8M1twiUqEOPSxIRXlTLU",
-      "image_credit": "Business Insider Africa",
-      "news": [
-        {
-          "url": "https://africa.businessinsider.com/local/how-breet-business-api-is-unlocking-new-payment-opportunities-for-african-businesses/vbnlxk7",
-          "title": "How Breet Business API is unlocking new payment opportunities for African businesses through cryptocurrency and stablecoins",
-          "publisher": "Business Insider Africa",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb56FQtOdoo9MM_WQoSdrSLFrJ5PpFqGIkCKEGCgy8M1twiUqEOPSxIRXlTLU"
-        },
-        {
-          "url": "https://techeconomy.ng/africa-101bn-crypto-market-stablecoins-cross-border-payments",
-          "title": "Africa’s $101bn Crypto Market: Why Cross-Border Supplier Payments Remain Difficult",
-          "publisher": "Techeconomy",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0rblW-32_ev2b8UFgt043RneXlQ3f0C4EtojSbUO-j1IQN6xv1Vozw9PvI5w"
-        },
-        {
-          "url": "https://www.thecable.ng/bitcoin-loses-ground-to-stablecoins-in-nigeria/",
-          "title": "Bitcoin could become part of Africa’s renewable-energy business model",
-          "publisher": "TheCable",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJzpCXzatCydFqSP5EmDm5Def049GhSqEMJMQ5Qn20knkcNhPjuLl0ReybZnA"
-        }
-      ]
-    },
-    {
-      "query": "ethereum price",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T16:00:00Z",
-      "related_news_urls": [
-        "https://fortune.com/article/price-of-ethereum-11-20-2026/",
-        "https://bitcoinfoundation.org/news/analysis/ethereum-exchange-reserves-rise-as-eth-falls-12-in-a-week/",
-        "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-on-nov-20-2026-at-8am-est-nov-19-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3zRNlPVQdMGb4Zp7W3L9KgPv93W4QzOk_o3r6kMmM-3DIKIB_LQ5suGaLUI",
-      "image_credit": "Fortune",
-      "news": [
-        {
-          "url": "https://fortune.com/article/price-of-ethereum-11-20-2026/",
-          "title": "Current price of Ethereum for Nov. 20, 2026",
-          "publisher": "Fortune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3zRNlPVQdMGb4Zp7W3L9KgPv93W4QzOk_o3r6kMmM-3DIKIB_LQ5suGaLUI"
-        },
-        {
-          "url": "https://bitcoinfoundation.org/news/analysis/ethereum-exchange-reserves-rise-as-eth-falls-12-in-a-week/",
-          "title": "ETH Price Prediction: Exchange Inflows and $1,500 Support",
-          "publisher": "Bitcoin Foundation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3iB7nPvWWWt2291S6CGQ3UmQIYKif2deBVStRG3olHDoM01nhkpljZb28o6c"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-on-nov-20-2026-at-8am-est-nov-19-2026/",
-          "title": "BTC price on Nov 20, 2026 at 8am EST Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH5NlOEKGVGY4zUpbjWTCGBg5p81UogFuwK3Z5OijaI3OjvL0abVYgvkWZDSM"
         }
       ]
     }
