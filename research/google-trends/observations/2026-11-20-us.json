@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-20T00:01:36.175446Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "oilers vs lightning",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T23:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/oilers/news/projected-lineup-oilers-vs-lightning-11-01-26",
+        "https://www.cbssports.com/betting/news/oilers-vs-lightning-nhl-picks-can-tampa-bay-slow-edmontons-connor-mcdavid-in-possible-cup-finals-preview/",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/edmonton-oilers-vs-tampa-bay-lightning-prediction-odds-2026-11-19/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGaFywNZJsM1RA7KwwI_BJUbZCV-doWqc94U1LXIvEBV1ngUiOT73RDn3qMkY",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/oilers/news/projected-lineup-oilers-vs-lightning-11-01-26",
+          "title": "PROJECTED LINEUP: Oilers vs. Lightning",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGaFywNZJsM1RA7KwwI_BJUbZCV-doWqc94U1LXIvEBV1ngUiOT73RDn3qMkY"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/oilers-vs-lightning-nhl-picks-can-tampa-bay-slow-edmontons-connor-mcdavid-in-possible-cup-finals-preview/",
+          "title": "Oilers vs. Lightning NHL picks: Can Tampa Bay slow Edmonton's Connor McDavid in possible Cup Finals preview?",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs0Z2fLzsEuhAtTQOEMQ5qyKFE4E9tHbTeaX-Y7Mm9Vi13jSNxmOCKobT8qZE"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/edmonton-oilers-vs-tampa-bay-lightning-prediction-odds-2026-11-19/",
+          "title": "Edmonton Oilers vs Tampa Bay Lightning Prediction, Picks & Odds | 19 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxiM1MecEy6HnV3eyPkba-klQt4k2qGV10ESJGbdktrfT5uyrpVLc9b9ofsQU"
+        }
+      ]
+    },
+    {
+      "query": "rice vs temple",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-19T23:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/temple-rice-prediction-odds-time-spread-week-12-college-football-thursday-picks/",
+        "https://www.sportsbettingdime.com/news/college-football/thursday-predictions-picks-best-bets-nov-19/",
+        "https://www.underdogdynasty.com/american-conference/47807/2026-week-12-preview-rice-owls-temple-owls"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafZSu0kJXz27uVrh4-fop9kkvGE0VLX5U-SDe3cYUVe0rggygqIj5twDa8T8",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/temple-rice-prediction-odds-time-spread-week-12-college-football-thursday-picks/",
+          "title": "Temple vs. Rice prediction, odds, time: Week 12 college football Thursday picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafZSu0kJXz27uVrh4-fop9kkvGE0VLX5U-SDe3cYUVe0rggygqIj5twDa8T8"
+        },
+        {
+          "url": "https://www.sportsbettingdime.com/news/college-football/thursday-predictions-picks-best-bets-nov-19/",
+          "title": "Thursday College Football Predictions & Picks: Best Bets for November 19",
+          "publisher": "Sports Betting Dime",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_9r-k6oEyW9D-jJCABop-ZRLJnC79S-oXSQeIxs8pz85cFVKonQjRqqhw4vM"
+        },
+        {
+          "url": "https://www.underdogdynasty.com/american-conference/47807/2026-week-12-preview-rice-owls-temple-owls",
+          "title": "2026 Week 12 Preview: Rice Owls @ Temple Owls",
+          "publisher": "Underdog Dynasty",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA02bEa7lB8gE8dX6wfxWBiPBQm_lssj72el3u2avk9FbViZRn_ZdU-i4SDMM"
+        }
+      ]
+    },
+    {
+      "query": "tyler warren",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T23:40:00Z",
+      "related_news_urls": [
+        "https://www.draftsharks.com/article/don-t-trust-the-box-score--colts-are-holding-tyler-warren-back",
+        "https://sports.yahoo.com/articles/espn-insider-wonders-colts-te-195122527.html",
+        "https://www.indystar.com/story/sports/nfl/colts/2026/11/18/indianapolis-colts-tyler-warren-stats-targets-catches-production-head-coach-shane-steichen/92735880007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQXuhxybzDnNE2UbP9Vw74FHnzwu9VRYo2Uv6WfKTN32EaULoZOnVYxetdgI0",
+      "image_credit": "Draft Sharks",
+      "news": [
+        {
+          "url": "https://www.draftsharks.com/article/don-t-trust-the-box-score--colts-are-holding-tyler-warren-back",
+          "title": "Don’t Trust The Box Score: Colts Are Holding Tyler Warren Back",
+          "publisher": "Draft Sharks",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQXuhxybzDnNE2UbP9Vw74FHnzwu9VRYo2Uv6WfKTN32EaULoZOnVYxetdgI0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/espn-insider-wonders-colts-te-195122527.html",
+          "title": "ESPN Insider Wonders About Colts TE Tyler Warren",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4iJdbUUyjStx0KuzThHAqmL-3o-DmWpfpW3iU7AunPmdbDzfWW7u-jmb3NM"
+        },
+        {
+          "url": "https://www.indystar.com/story/sports/nfl/colts/2026/11/18/indianapolis-colts-tyler-warren-stats-targets-catches-production-head-coach-shane-steichen/92735880007/",
+          "title": "Colts searching for how to involve 'naturally instinctive and talented' Tyler Warren",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSv0Ce74VEAq2DJJIBIdMI4JwVpBHAM-6L1JtlXqZyBjUknfBKtDlW2KZ1x3Ng"
+        }
+      ]
+    },
+    {
+      "query": "weather san diego",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T23:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcsandiego.com/news/local/fast-moving-storm-targets-san-diego-county/4104096/",
+        "https://fox5sandiego.com/weather/weak-atmospheric-river-san-diego/",
+        "https://www.10news.com/weather/san-diegos-weather-forecast-for-november-18-2026-rain-wind-surf-and-thunderstorms-thursday"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQg8urMd18oW8qSBhzFzwNXpBiO3RdDUT2RBocZWZu2wouFXsgIM13N0XZEs38",
+      "image_credit": "NBC 7 San Diego",
+      "news": [
+        {
+          "url": "https://www.nbcsandiego.com/news/local/fast-moving-storm-targets-san-diego-county/4104096/",
+          "title": "Fast-moving storm targets San Diego County",
+          "publisher": "NBC 7 San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQg8urMd18oW8qSBhzFzwNXpBiO3RdDUT2RBocZWZu2wouFXsgIM13N0XZEs38"
+        },
+        {
+          "url": "https://fox5sandiego.com/weather/weak-atmospheric-river-san-diego/",
+          "title": "Atmospheric river to bring rain, gusty wind to San Diego County",
+          "publisher": "FOX 5 San Diego & KUSI News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vf3dWZ079qz2z75LcksAi7Z5lY4LhRVtbQjoHO6n_uQu13MjSbV4ThDRIms"
+        },
+        {
+          "url": "https://www.10news.com/weather/san-diegos-weather-forecast-for-november-18-2026-rain-wind-surf-and-thunderstorms-thursday",
+          "title": "San Diego's Weather Forecast for November 18, 2026: Rain, wind, surf and thunderstorms Thursday",
+          "publisher": "10News.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrJ7Z_NhZ-0yoI9yMtFKU9ovsC-MuI1TR36Jvd2fLcuZUffXbxPnG8LjBASDo"
+        }
+      ]
+    },
+    {
+      "query": "cincinnati vs orlando city",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T23:40:00Z",
+      "related_news_urls": [
+        "https://www.fccincinnati.com/news/matchday-preview-presented-by-kiesland-fc-cincinnati-visit-orlando-city-sc-for-wild-card-game-showdown",
+        "https://www.mlssoccer.com/news/mls-player-status-report-wild-card-games-thursday-november-19",
+        "https://sports.yahoo.com/articles/orlando-city-vs-fc-cincinnati-220100663.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFv9TR6DIUhk0hKtn85Xz67bcRCjtThoelamoBG5kn6qmLtVt5RZYrKqiVPUs",
+      "image_credit": "FC Cincinnati",
+      "news": [
+        {
+          "url": "https://www.fccincinnati.com/news/matchday-preview-presented-by-kiesland-fc-cincinnati-visit-orlando-city-sc-for-wild-card-game-showdown",
+          "title": "MATCHDAY PREVIEW presented by Kiesland | FC Cincinnati visit Orlando City SC for Wild Card game showdown",
+          "publisher": "FC Cincinnati",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFv9TR6DIUhk0hKtn85Xz67bcRCjtThoelamoBG5kn6qmLtVt5RZYrKqiVPUs"
+        },
+        {
+          "url": "https://www.mlssoccer.com/news/mls-player-status-report-wild-card-games-thursday-november-19",
+          "title": "MLS Player Status Report: Wild Card Games (Thursday, November 19)",
+          "publisher": "MLSsoccer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdLjwMVoZFtzwWsn_IiF0VwtGqeHxnxyNgAEEGOfV9jSj1UV3exGuEAa2g1q4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/orlando-city-vs-fc-cincinnati-220100663.html",
+          "title": "Orlando City vs FC Cincinnati: Odds, Lineups, TV Info",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRN-vDWKSgh0i0qNbxMssZweuNkr0oiGgwOtj5DI29ThL9S4g6vaa8EW9ZIb7s"
+        }
+      ]
+    },
+    {
+      "query": "tavien st. clair",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T23:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ohio-state-ryan-day-sends-150119041.html",
+        "https://www.cleveland.com/letters/2026/11/ryan-days-quarterback-development-under-scrutiny-after-st-clair-benching.html",
+        "https://www.si.com/college/ohiostate/football/ryan-day-sheds-light-on-tavien-st-clair-and-the-current-quarterback-situation-01m7td84czsb"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqZxLyxp2_jc3SKIXKsIz8P6HPEGRZsoXcp00uRdbhBqa4AuIZMRUPkODVyFY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/ohio-state-ryan-day-sends-150119041.html",
+          "title": "Ohio State’s Ryan Day Sends Strong Message on QB Tavien St. Clair",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqZxLyxp2_jc3SKIXKsIz8P6HPEGRZsoXcp00uRdbhBqa4AuIZMRUPkODVyFY"
+        },
+        {
+          "url": "https://www.cleveland.com/letters/2026/11/ryan-days-quarterback-development-under-scrutiny-after-st-clair-benching.html",
+          "title": "Ryan Day benched his 5-star QB during a 24-point deficit — and a fan isn't letting it go",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvj2FOXCYD9bO8chxBEER1Yg9r9iFFbJeKFpqvK944HKVai3e3WSW8TLZjN1I"
+        },
+        {
+          "url": "https://www.si.com/college/ohiostate/football/ryan-day-sheds-light-on-tavien-st-clair-and-the-current-quarterback-situation-01m7td84czsb",
+          "title": "Ryan Day Sheds Light on Tavien St. Clair and the Current Quarterback Situation",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRADBfwYWLnOjDewLCIsmmsNZZ8POj0I1VQltsnH3m5uP2KS8cC_Nk9HRel8mE"
+        }
+      ]
+    },
+    {
+      "query": "palm bay florida",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T23:30:00Z",
+      "related_news_urls": [
+        "https://www.clickorlando.com/news/local/2026/11/19/mandatory-evacuation-issued-in-palm-bay-estates-over-flooding/",
+        "https://mynews13.com/fl/orlando/news/2026/11/19/palm-bay-issues-mandatory-evacuations-for-part-of-palm-bay-estates",
+        "https://www.fox35orlando.com/video/fmc-airofx06m8wjldbs"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQH_oawvbOjt0WPyHKj-6qGWEUklyLNFPh9oWgVyN9qXnxzOhDcyPBjtwYMjUA",
+      "image_credit": "WKMG",
+      "news": [
+        {
+          "url": "https://www.clickorlando.com/news/local/2026/11/19/mandatory-evacuation-issued-in-palm-bay-estates-over-flooding/",
+          "title": "Mandatory evacuation issued in Palm Bay Estates over flooding",
+          "publisher": "WKMG",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQH_oawvbOjt0WPyHKj-6qGWEUklyLNFPh9oWgVyN9qXnxzOhDcyPBjtwYMjUA"
+        },
+        {
+          "url": "https://mynews13.com/fl/orlando/news/2026/11/19/palm-bay-issues-mandatory-evacuations-for-part-of-palm-bay-estates",
+          "title": "Palm Bay issues mandatory evacuations for part of Palm Bay Estates",
+          "publisher": "Spectrum News 13",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyyoDuDJYkjdCKpmkWKa4QSvHJtuaGEcpIUeKEjO3FqP1zcYTUlFwZJM4VOAM"
+        },
+        {
+          "url": "https://www.fox35orlando.com/video/fmc-airofx06m8wjldbs",
+          "title": "Saint Johns River hits record flood stage",
+          "publisher": "FOX 35 Orlando",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuyMsQfaD35_Fa8hzukat0MhmWn6mwsJTgnNavmZs2W0aPEoj0nQFjCpfl9Qc"
+        }
+      ]
+    },
+    {
+      "query": "texas tech vs unc",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T23:30:00Z",
+      "related_news_urls": [
+        "https://goheels.com/news/2026/11/18/womens-basketball-no-24-wbb-open-wbca-showcase-in-orlando-vs-texas-tech-thursday",
+        "https://www.dailytoreador.com/article/lady-raiders-set-for-three-games-at-the-most-magical-place-on-earth-20261119",
+        "https://www.nytimes.com/athletic/7795155/2026/11/19/texas-tech-vs-north-carolina-stream-how-to-watch-nov-19/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjNi0FlF_j-wyoOqG2NK7P8IgXpmDxl-jAVd8GD_nmLGqvZLBgsBwDWHrPbQ",
+      "image_credit": "University of North Carolina Athletics",
+      "news": [
+        {
+          "url": "https://goheels.com/news/2026/11/18/womens-basketball-no-24-wbb-open-wbca-showcase-in-orlando-vs-texas-tech-thursday",
+          "title": "No. 24 WBB Opens WBCA Showcase In Orlando Vs. Texas Tech Thursday - University of North Carolina Athletics",
+          "publisher": "University of North Carolina Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjNi0FlF_j-wyoOqG2NK7P8IgXpmDxl-jAVd8GD_nmLGqvZLBgsBwDWHrPbQ"
+        },
+        {
+          "url": "https://www.dailytoreador.com/article/lady-raiders-set-for-three-games-at-the-most-magical-place-on-earth-20261119",
+          "title": "Lady Raiders set for three games at ‘The Most Magical Place on Earth’",
+          "publisher": "The Daily Toreador",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYgazpWpcyrpGaf458orhctp7sMAhkhUxWfarA5gUt6XH1oHu3kXOKjLgubyw"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7795155/2026/11/19/texas-tech-vs-north-carolina-stream-how-to-watch-nov-19/",
+          "title": "How to watch Texas Tech vs. North Carolina women’s basketball: TV channel and streaming options for November 19",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcI2NF08CSkRh_MDc5lGL47FfpBroNagacD1XeScJ0B-2-pKi6rEHJ-6k8OFo"
+        }
+      ]
+    },
+    {
+      "query": "blake lively",
+      "approx_searches": "200+",
+      "published_at": "2026-11-19T23:30:00Z",
+      "related_news_urls": [
+        "https://starmagazine.com/blake-lively-plots-a-surprising-career-move-after-her-it-ends-with-us-drama-done-hiding/",
+        "https://www.washingtontimes.com/news/2026/nov/12/blake-livelys-beverage-company-goes-drain-feud-justin-baldoni/",
+        "https://www.magzter.com/stories/celebrity/Star/BLAKE-LIVELY-GOING-BUST"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYunmrXRZYUGJK9T8AbDSr-9byYH4yJ0xk-4C5OqZcGPq_S6u5nrBQ2mmuG_Y",
+      "image_credit": "starmagazine.com",
+      "news": [
+        {
+          "url": "https://starmagazine.com/blake-lively-plots-a-surprising-career-move-after-her-it-ends-with-us-drama-done-hiding/",
+          "title": "Blake Lively Plots a Surprising Career Move After Her ‘It Ends With Us’ Drama: ‘Done Hiding’",
+          "publisher": "starmagazine.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYunmrXRZYUGJK9T8AbDSr-9byYH4yJ0xk-4C5OqZcGPq_S6u5nrBQ2mmuG_Y"
+        },
+        {
+          "url": "https://www.washingtontimes.com/news/2026/nov/12/blake-livelys-beverage-company-goes-drain-feud-justin-baldoni/",
+          "title": "Blake Lively’s beverage company goes down the drain after feud with Justin Baldoni",
+          "publisher": "Washington Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRto2fMy89Nf2AwvCvH_KP9hZPEZNS2xv0XJO7-n8nBjw4u1Ic_OAKOuFIb_kA"
+        },
+        {
+          "url": "https://www.magzter.com/stories/celebrity/Star/BLAKE-LIVELY-GOING-BUST",
+          "title": "BLAKE LIVELY: GOING BUST | Star - celebrity",
+          "publisher": "Magzter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTv-M7IC3PULB6cTXLSifDpYm9oM9NIY0S-mXafoFtpFSSepnJECS7VKafAkiY"
+        }
+      ]
+    },
+    {
+      "query": "vella campillo arizona desert rescue",
+      "approx_searches": "500+",
+      "published_at": "2026-11-19T23:20:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/US/toddler-rescued-after-walking-remote-area-arizona-desert/story?id=138286121",
+        "https://www.azfamily.com/2026/11/19/man-honored-after-finding-missing-eloy-toddler-2-miles-home/",
+        "https://www.fox10phoenix.com/news/hero-citizen-finds-missing-2-year-old-girl-vella-campillo-eloy"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDFbJ-4WRXeIoqRW6h7V8N9MvVv4_MuE6KPkVrJia8r0SEqo8n6WRkrWLDnuY",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/US/toddler-rescued-after-walking-remote-area-arizona-desert/story?id=138286121",
+          "title": "Toddler rescued after walking into remote area of Arizona desert",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDFbJ-4WRXeIoqRW6h7V8N9MvVv4_MuE6KPkVrJia8r0SEqo8n6WRkrWLDnuY"
+        },
+        {
+          "url": "https://www.azfamily.com/2026/11/19/man-honored-after-finding-missing-eloy-toddler-2-miles-home/",
+          "title": "Man honored for finding missing Eloy toddler 2 miles from home",
+          "publisher": "AZ Family",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpgo2IM04cjSwIdQYPtgPryNIP--smaX5w8GqyaENhV-rRmnBRJLCLPfcyTbw"
+        },
+        {
+          "url": "https://www.fox10phoenix.com/news/hero-citizen-finds-missing-2-year-old-girl-vella-campillo-eloy",
+          "title": "Hero citizen finds missing 2-year-old girl Vella Campillo in Eloy",
+          "publisher": "FOX 10 Phoenix",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSG2BcVZb3QIF3U4QVoDjR5UzygCAWDXDZM6QY14grjwvqZLFn84BO4MOS7-Ms"
+        }
+      ]
+    }
+  ]
+}
