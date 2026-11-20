@@ -1,4 +1,5 @@
 import {DURATION, DEFAULT_DESIGN, ALTERNATIVES, normalizeDesign, frameAt, builderWorkRequest} from './avatar-ai-builder-core.mjs?v=20261120-builder1';
+import {initialAvatarActivity, applyAvatarActivity} from './avatar-ai-agent-loop-core.mjs?v=20261120-activity1';
 
 const STORAGE_KEY = 'quantaphi.avatar-builder.design.v1';
 
@@ -227,6 +228,40 @@ function mountBuilder(root) {
     }
     status.textContent = 'Draft opened in Bubbles. Review it and press Start work to submit.';
   });
+
+  // Real activity is a separate display channel. Demo worker motion above
+  // never becomes a claim of actual AI work or a deployment receipt.
+  const activityCount = root.querySelector('.av-activity-count');
+  const activitySpeech = root.querySelector('.av-activity-speech');
+  const activitySteps = root.querySelector('.av-activity-steps');
+  let activity = initialAvatarActivity();
+  function renderActivity() {
+    setText(activityCount, activity.ticketId
+      ? activity.repository + ' · ' + activity.status.replaceAll('_', ' ')
+      : 'No owner ticket observed');
+    setText(activitySpeech, activity.speech);
+    activitySteps.replaceChildren();
+    for (const item of activity.events) {
+      const li = document.createElement('li');
+      li.append(document.createTextNode(item.stage + ' · ' + item.phase));
+      if (item.url) {
+        const link = document.createElement('a');
+        link.href = item.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = ' View GitHub receipt';
+        li.append(link);
+      }
+      activitySteps.append(li);
+    }
+  }
+  window.addEventListener('bubbles:iteration', event => {
+    const next = applyAvatarActivity(activity, event.detail);
+    if (next === activity) return;
+    activity = next;
+    renderActivity();
+  });
+  renderActivity();
 
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) setPlaying(false);
