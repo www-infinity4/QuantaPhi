@@ -5,7 +5,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
 from urllib.request import urlopen
-from playwright.async_api import async_playwright
+from playwright.async_api import async_playwright, expect
 
 CSP = ("default-src 'none'; script-src 'self'; worker-src 'self'; "
        "style-src 'unsafe-inline'; img-src data:; connect-src 'none'; "
@@ -49,7 +49,7 @@ async def verify():
                 assert await page.locator('#save').is_enabled()
                 await page.locator('#text').fill('Private scene, private scene, comet')
                 await page.locator('#save').click()
-                await page.wait_for_function("document.querySelector('#status').textContent.startsWith('Saved locally')")
+                await expect(page.locator('#status')).to_contain_text('Saved locally')
                 records = await page.evaluate("""async () => {
                     const db = await new Promise((resolve,reject) => {
                         const r=indexedDB.open('quantaphi-local-mirror-v1');
@@ -68,14 +68,15 @@ async def verify():
                 overflow=await page.evaluate("document.documentElement.scrollWidth > innerWidth+1")
                 assert not overflow, f'horizontal overflow at {width}'
                 # Attempt a cross-origin loopback connection, without any external Internet address.
-                await page.evaluate("""async () => {
-                    window.__privacyCspViolations=[];
-                    document.addEventListener('securitypolicyviolation',e=>window.__privacyCspViolations.push(e.violatedDirective));
-                    try { await fetch('http://127.0.0.1:9/prohibited'); } catch (_) {}
-                }""")
-                await page.wait_for_function("window.__privacyCspViolations.some(x=>x.includes('connect-src'))")
+                csp_directive = await page.evaluate("""async () => new Promise(resolve => {
+                    document.addEventListener('securitypolicyviolation',
+                      event => resolve(event.violatedDirective), {once:true});
+                    fetch('http://127.0.0.1:9/prohibited').catch(()=>{});
+                    setTimeout(()=>resolve('missing CSP event'), 2000);
+                })""")
+                assert 'connect-src' in csp_directive, csp_directive
                 await page.locator('#clear').click()
-                await page.wait_for_function("document.querySelector('#status').textContent.includes('was cleared')")
+                await expect(page.locator('#status')).to_contain_text('was cleared')
                 assert 'No locally saved snippets' in await page.locator('#records').inner_text()
                 assert not problems, problems
                 assert not external, external
