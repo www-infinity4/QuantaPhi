@@ -1380,7 +1380,7 @@ async function search(options={}){
   sessionStorage.setItem(key,q);
  }catch(monitorError){console.warn('Monitor bit-flip sync deferred',monitorError)}
  const fetchJsonWithTimeout=(url,opt={},ms=6500)=>boundedJsonRequest(signal=>fetch(url,{...opt,signal}),ms);
- let evidence=[];let pairedCommitPromise=null;
+ let evidence=[],cachedAttributedResults=null;let pairedCommitPromise=null;
  if(!refining)try{const key='quantaPhiBuildHistoryV1',items=JSON.parse(localStorage.getItem(key)||'[]'),entry={id:crypto.randomUUID(),token_id:unifiedTokenId,query:q,created_at:new Date().toISOString(),url:searchPermalink(q),website:QuantaUnifiedTokenLedger.website(unifiedTokenId,q)};items.unshift(entry);localStorage.setItem(key,JSON.stringify(items.slice(0,5000)));window.dispatchEvent(new CustomEvent('quantaPhiHistoryAdded',{detail:entry}))}catch(_){}  const eid=selectedSubjects.length>1?null:elementIdentity(q);const nq=selectedSubjects.length>1?q:eid?('Element '+eid.number+' '+eid.name):normalizedEntity(q); try{history.replaceState(null,'',searchPermalink(q))}catch(_){} $('#media').hidden=true; $('#mediaGrid').innerHTML='';
  $('#result').hidden=false; $('#overview').innerHTML='<section class="qzone qzoneRed"><h3>Scholastic Reader</h3><div>Preparing the AI overview…</div></section>'; showField(q);
  $('#status').innerHTML='<small>Building semantic field and overview…</small>';
@@ -1407,6 +1407,9 @@ async function search(options={}){
    }
    sj=await regularResultsPromise;
    if(!isCurrent())return;
+   // Keep this run's already-attributed sources for AI failure recovery.
+   // Reuse only valid public http(s) results; never cache the raw query or credentials.
+   cachedAttributedResults=Array.isArray(sj?.results)&&sj.results.some(x=>{try{return /^https?:$/.test(new URL(x.url).protocol)}catch{return false}})?sj:null;
    const particles=classify(q); const required=particles.filter(x=>!STOP.has(x.w.toLowerCase())).map(x=>x.w.toLowerCase()); let assimilation=window.__qAssimilation||null;if(assimilation&&assimilation.primary!==q)assimilation=null;let inputExtension=window.__qInputExtension||null;if(inputExtension&&inputExtension.primary!==q)inputExtension=null; const weightedConcept=particles.map((x,i)=>({term:x.w,color:x.color,region:x.region,role:x.role,weight:i===0?100:i===1?90:STOP.has(x.w.toLowerCase())?15:55})); const searchAim={primary:q,entity:exactEntity,required_terms:required,weighted_concept:weightedConcept}; const technicalIntent=/\b(schematic|circuit|diagram|radio|receiver|transmitter|solid state|transistor|oscillator|amplifier|antenna|wiring)\b/i.test(q);
    const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
    const weighted=(sj.results||[]).map((x,i)=>{const text=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>text.includes(w)).length;const entityHits=entityWords.filter(w=>text.includes(w)).length;const coverage=required.length?hits/required.length:0;return {...x,_entityHits:entityHits,_weight:(coverage*100)+(hits*35)+(entityHits*100)+Math.max(0,20-i)};}).filter(x=>{if(technicalIntent){const txt=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>txt.includes(w)).length;return hits>=Math.min(3,required.length)}if(entityWords.length<2)return true;const title=String(x.title||'').toLowerCase(),body=String(x.content||x.description||'').toLowerCase();const phrase=entityWords.join(' ');return title.includes(phrase)||body.includes(phrase)||x._entityHits===entityWords.length}).sort((a,b)=>b._weight-a._weight);
@@ -1475,7 +1478,7 @@ const {response:r,data:d}=await fetchJsonWithTimeout('https://infinity-rogers.ma
      const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
      const exactEntity=entityClause(q);
      searchUrl.search=new URLSearchParams({q:exactEntity,format:'json',categories:'general',safesearch:'1'});
-     let sj=await fetchJsonWithTimeout(searchUrl,{cache:'no-store'},6500).then(({response,data})=>response.ok?data:({results:[]})).catch(()=>({results:[]}));if(!sj.results?.length)sj=await fallbackResearch(q);
+     let sj=cachedAttributedResults||await fetchJsonWithTimeout(searchUrl,{cache:'no-store'},6500).then(({response,data})=>response.ok?data:({results:[]})).catch(()=>({results:[]}));if(!sj.results?.length)sj=await fallbackResearch(q);
      const required=classify(q).filter(x=>!STOP.has(x.w.toLowerCase())).map(x=>x.w.toLowerCase());
      const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
      const ranked=(sj.results||[]).map((x,i)=>{const body=((x.title||'')+' '+(x.content||x.description||'')).replace(/\\s+/g,' ').trim();const low=body.toLowerCase();const hits=required.filter(w=>low.includes(w)).length;const entityHits=entityWords.filter(w=>low.includes(w)).length;return {body,hits,entityHits,score:(required.length?hits/required.length:0)*100+hits*35+entityHits*100+Math.max(0,20-i)}}).filter(x=>x.body&&x.hits&&(entityWords.length<2||x.entityHits===entityWords.length)).sort((a,b)=>b.score-a.score);
@@ -1488,7 +1491,7 @@ const {response:r,data:d}=await fetchJsonWithTimeout('https://infinity-rogers.ma
    try{
     const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
     u.search=new URLSearchParams({q:q,format:'json',categories:'general',safesearch:'1'});
-    let j=await fetchJsonWithTimeout(u,{cache:'no-store'},6500).then(({response,data})=>response.ok?data:({results:[]})).catch(()=>({results:[]}));if(!j.results?.length)j=await fallbackResearch(q);
+    let j=cachedAttributedResults||await fetchJsonWithTimeout(u,{cache:'no-store'},6500).then(({response,data})=>response.ok?data:({results:[]})).catch(()=>({results:[]}));if(!j.results?.length)j=await fallbackResearch(q);
     const rows=(j.results||[]).filter(x=>x.title||x.content||x.description);
     if(!isCurrent())return;
     if(rows.length){
