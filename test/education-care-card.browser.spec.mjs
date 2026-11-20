@@ -21,14 +21,25 @@ for(const width of [320,360])test('school, daycare and babysitter photos rotate 
  await card.locator('#ecPhotoCategory').selectOption('babysitting');
  await expect(card.locator('.ec-counter')).toHaveText('1 of 1');
  await expect(card.getByRole('button',{name:'Next photo'})).toBeDisabled();
- const metrics=await card.evaluate(el=>({
-  width:el.getBoundingClientRect().width,
-  next:el.querySelector('.ec-button').getBoundingClientRect().height,
-  viewport:innerWidth,
-  scroll:document.documentElement.scrollWidth
- }));
+ // Inspect the new widget, not unrelated legacy homepage modules: the
+ // existing homepage may be wider than 320px even when this card fits.
+ const metrics=await card.evaluate(el=>{
+  const rect=el.getBoundingClientRect();
+  const overflow=[...el.querySelectorAll('*')].filter(node=>{
+   const child=node.getBoundingClientRect();
+   return child.width>0&&(child.right>rect.right+1||child.left<rect.left-1);
+  }).map(node=>node.tagName.toLowerCase()+'.'+String(node.className||''));
+  return {
+   width:rect.width,right:rect.right,left:rect.left,
+   next:el.querySelector('.ec-button').getBoundingClientRect().height,
+   viewport:innerWidth,
+   overflow
+  };
+ });
  expect(metrics.width).toBeLessThanOrEqual(metrics.viewport);
- expect(metrics.scroll).toBeLessThanOrEqual(metrics.viewport);
+ expect(metrics.left).toBeGreaterThanOrEqual(-1);
+ expect(metrics.right).toBeLessThanOrEqual(metrics.viewport+1);
+ expect(metrics.overflow).toEqual([]);
  expect(metrics.next).toBeGreaterThanOrEqual(48);
  await expect(card.getByText('These are visual examples, not verified local providers or child-care recommendations.',{exact:false})).toBeVisible();
 });
