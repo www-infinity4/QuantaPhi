@@ -30,6 +30,14 @@ for (const width of [320, 360, 393, 1024]) {
     await expect(builder.locator('.av-scene')).toHaveCSS('background-color','rgb(255, 255, 255)');
     await expect(builder.locator('.av-part:visible')).toHaveCount(0);
     await expect(builder.locator('[data-worker]:visible')).toHaveCount(0);
+    await page.locator('.bubbles-nav-more summary').click();
+    const builderLink = page.locator('.bubbles-nav-menu a[href="#avatarBuilder"]');
+    await expect(builderLink).toBeVisible();
+    const navBox = await builderLink.boundingBox();
+    expect(navBox.x).toBeGreaterThanOrEqual(0);
+    expect(navBox.x + navBox.width).toBeLessThanOrEqual(width);
+    await builderLink.click();
+    await page.locator('.bubbles-nav-more summary').click();
 
     await seek(builder, 11);
     await expect(builder.locator('[data-worker]:visible')).toHaveCount(8);
