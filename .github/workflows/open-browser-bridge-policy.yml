@@ -88,7 +88,7 @@ jobs:
           BROWSER_ALLOWED_HOSTS=example.com docker compose -f compose.tor.yml run --rm --no-deps browser browser-bridge.mjs https://example.com > /tmp/tor-acceptance-receipt.jsonl
           node -e '
             const fs = require("node:fs");
-            const lines = fs.readFileSync("/tmp/tor-acceptance-receipt.jsonl","utf8").trim().split(/\\r?\\n/);
+            const lines = fs.readFileSync("/tmp/tor-acceptance-receipt.jsonl","utf8").trim().split(/\r?\n/);
             const r = JSON.parse(lines.at(-1));
             if(r.ok!==true || r.mode!=="tor" || r.status!==200 || new URL(r.url).hostname!=="example.com" || r.screenshot!=="/receipts/last-visit.png") process.exit(1);
             console.log("PASS verified isolated Tor HTTP 200 and screenshot receipt (no credentials or page contents uploaded)");
