@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T07:31:22.608628Z",
+  "checked_at": "2026-11-20T08:01:42.888237Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "san diego",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T07:10:00Z",
-      "related_news_urls": [
-        "https://www.cbs8.com/article/news/local/san-diego-lifeguard-captain-sues-over-gender-discrimination/509-75c94133-0bd0-404b-9376-db4675292fc7",
-        "https://www.nbcsandiego.com/news/investigations/systemic-sexual-harassment-found-within-san-diego-fire-rescues-lifeguard-services/4103715/",
-        "https://www.yahoo.com/news/us/articles/groping-oral-sex-requests-vicious-212451449.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqOaZV24RE8MDYJn3yeFLuKkVnD2j8uSHJbB72_NGZj6XxlDiMi9dBrpJ8af8",
-      "image_credit": "cbs8.com",
-      "news": [
-        {
-          "url": "https://www.cbs8.com/article/news/local/san-diego-lifeguard-captain-sues-over-gender-discrimination/509-75c94133-0bd0-404b-9376-db4675292fc7",
-          "title": "San Diego lifeguard captain sues over gender discrimination",
-          "publisher": "cbs8.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqOaZV24RE8MDYJn3yeFLuKkVnD2j8uSHJbB72_NGZj6XxlDiMi9dBrpJ8af8"
-        },
-        {
-          "url": "https://www.nbcsandiego.com/news/investigations/systemic-sexual-harassment-found-within-san-diego-fire-rescues-lifeguard-services/4103715/",
-          "title": "Systemic sexual harassment found within San Diego Fire-Rescue's Lifeguard Services",
-          "publisher": "NBC 7 San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQll6-hp0wh7_cvIBvG6VywA_ZJjNGVMAisWdChT0z9ZTu6vkjMYZ-yyvvvo7k"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/groping-oral-sex-requests-vicious-212451449.html",
-          "title": "Groping, oral sex requests and vicious nicknames: Sordid secrets of top California lifeguard station revealed — as women speak out",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ416Iqihva5_9-h0bF2y0iAJo-0BLIeNxCCiXf8ss6NWB6JPlwtltPXft56Mk"
-        }
-      ]
-    },
-    {
-      "query": "apple store black friday deals",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T07:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/cnn-underscored/deals/apple-black-friday-deals-2026-11-19",
-        "https://www.usatoday.com/story/shopping/deals/retailers/amazon/2026/11/16/apple-airpods-pro-3-wireless-earbuds-early-black-friday-deal/92807086007/",
-        "https://people.com/early-apple-black-friday-deals-amazon-november-2026-12187514"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpH8WTxBydFo7bppiNzGeT69Bays1a_r-xObRxklraXovRNHf05U1y0BHssIA",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/cnn-underscored/deals/apple-black-friday-deals-2026-11-19",
-          "title": "Black Friday prices are officially live on Apple Watches, AirTags, MacBooks and more",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpH8WTxBydFo7bppiNzGeT69Bays1a_r-xObRxklraXovRNHf05U1y0BHssIA"
-        },
-        {
-          "url": "https://www.usatoday.com/story/shopping/deals/retailers/amazon/2026/11/16/apple-airpods-pro-3-wireless-earbuds-early-black-friday-deal/92807086007/",
-          "title": "Apple’s AirPods Pro 3 just got a huge early Black Friday price cut",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYgrgsNbMh6_0IZoC4ZQgSKG-Z4m1rV1shd6-6x415lewpmEp39KTcIEIuZ1s"
-        },
-        {
-          "url": "https://people.com/early-apple-black-friday-deals-amazon-november-2026-12187514",
-          "title": "Apple AirPods, Watches, and More Hot-Ticket Tech Finds Are Already on Sale Ahead of Black Friday — from $15",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpqN-YcTH_L7Til_qauwLR4gJehK4GjaByBh-QRecoP1kiaP6_HmUt1f8LmOM"
-        }
-      ]
-    },
-    {
-      "query": "mama awards 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T07:00:00Z",
-      "related_news_urls": [
-        "https://news.samsung.com/global/samsung-tv-plus-brings-2026-mama-awards-to-k-pop-fans-around-the-world",
-        "https://www.koreajoongangdaily.com/entertainment/live-enhypen-cl-and-babymonster-line-up-for-the-opening-night-of-the-mama-awards/12983050",
-        "https://biz.chosun.com/en/en-photo-ent/2026/11/18/KEMAE65XYBHNBHOU45WSMZRSHI/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfgn0bSy4zW1Vz1SKVfuuXHWDbMCBsBuLW2AjtA0rnDBZfUxUhMJ0UgNjW-M",
-      "image_credit": "samsung.com",
-      "news": [
-        {
-          "url": "https://news.samsung.com/global/samsung-tv-plus-brings-2026-mama-awards-to-k-pop-fans-around-the-world",
-          "title": "Samsung TV Plus Brings 2026 MAMA AWARDS to K-pop Fans Around the World",
-          "publisher": "samsung.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfgn0bSy4zW1Vz1SKVfuuXHWDbMCBsBuLW2AjtA0rnDBZfUxUhMJ0UgNjW-M"
-        },
-        {
-          "url": "https://www.koreajoongangdaily.com/entertainment/live-enhypen-cl-and-babymonster-line-up-for-the-opening-night-of-the-mama-awards/12983050",
-          "title": "LIVE: Enhypen, CL and BabyMonster line up for the opening night of the MAMA Awards",
-          "publisher": "Korea JoongAng Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIj-Lmu1_j_efnMq7liXCGMRSBCtJNEVErVOqNOrZfuJqp4R65p7pqxpJctas"
-        },
-        {
-          "url": "https://biz.chosun.com/en/en-photo-ent/2026/11/18/KEMAE65XYBHNBHOU45WSMZRSHI/",
-          "title": "[Photo] ILLIT’s Yun-ah and Min-ju bundle up against chilly exam-day weather",
-          "publisher": "Chosunbiz",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWQ1kkvluWpBPRUGmERcQDjJCygFnvPWIMneoM50bP-bLQ8zLVxI8yq7-43Pc"
-        }
-      ]
-    },
-    {
-      "query": "navajo stirling",
+      "query": "will gta 6 have online",
       "approx_searches": "200+",
-      "published_at": "2026-11-20T07:00:00Z",
+      "published_at": "2026-11-20T07:40:00Z",
       "related_news_urls": [
-        "https://www.ufc.com/news/navajo-stirling-four-up-four-down-light-heavyweight-ufc-qatar",
-        "https://sports.yahoo.com/articles/ufc-fight-night-294-official-054746608.html",
-        "https://www.sherdog.com/news/news/Jiri-Prochazka-says-Navajo-Stirling-is-like-fighting-his-younger-self-203687"
+        "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
+        "https://www.imdb.com/news/ni66116171/?ref_=nwc_art_perm",
+        "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMNBeafxnJMFVJ-Wwnaf9QeW2hxUkERLhgqK9wJmszkCQLaMm3Fh78oXiuR8U",
-      "image_credit": "UFC.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY",
+      "image_credit": "PCMag",
       "news": [
         {
-          "url": "https://www.ufc.com/news/navajo-stirling-four-up-four-down-light-heavyweight-ufc-qatar",
-          "title": "Navajo Stirling | Four Up, Four Down",
-          "publisher": "UFC.com",
+          "url": "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
+          "title": "GTA 6 Is Finally Here...So When Can You Play Online With Friends?",
+          "publisher": "PCMag",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMNBeafxnJMFVJ-Wwnaf9QeW2hxUkERLhgqK9wJmszkCQLaMm3Fh78oXiuR8U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/ufc-fight-night-294-official-054746608.html",
-          "title": "UFC Fight Night 294 official weigh-in results from Qatar",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.imdb.com/news/ni66116171/?ref_=nwc_art_perm",
+          "title": "‘GTA 6 Online’ Release Date: Will ‘Grand Theft Auto VI’ Have Multiplayer at Launch?",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiEzXPs0XgPC4aGtZ-fyuzIBHEaBCZ6Fau5lOeqH8xL0M95u19ALYj6Va2YSM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3sLRw4Q4iWUlOlWnScamGyHj1J8cpmXfawyUUTL1gVXuJ2G61qM_ORUUBfKs"
         },
         {
-          "url": "https://www.sherdog.com/news/news/Jiri-Prochazka-says-Navajo-Stirling-is-like-fighting-his-younger-self-203687",
-          "title": "Jiri Prochazka says Navajo Stirling is like fighting his younger self",
-          "publisher": "Sherdog",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_L9OFRAcdhX7FSgo7KJbDmn_kSzncGOKh8DwITtgi48LjBvVrRxQs7bK2_Lo"
-        }
-      ]
-    },
-    {
-      "query": "earthquake alert",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T06:50:00Z",
-      "related_news_urls": [
-        "https://meteoraweb.com/en/news/android-earthquake-alerts-italy-three-warning-levels",
-        "https://www.androidpolice.com/android-earthquake-alerts-explained/",
-        "https://pasqualepillitteri.it/en/news/35090/android-earthquake-alerts-italy-how-it-works"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbc8Q9OABCn6lamRsw9ZgBF_YFLiRNctNXtoSbSc7tSEIlDjPZucWV3bbXF1Y",
-      "image_credit": "Meteora Web",
-      "news": [
-        {
-          "url": "https://meteoraweb.com/en/news/android-earthquake-alerts-italy-three-warning-levels",
-          "title": "Android Earthquake Alerts in Italy, How They Work",
-          "publisher": "Meteora Web",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbc8Q9OABCn6lamRsw9ZgBF_YFLiRNctNXtoSbSc7tSEIlDjPZucWV3bbXF1Y"
-        },
-        {
-          "url": "https://www.androidpolice.com/android-earthquake-alerts-explained/",
-          "title": "A calm guide to Android's three earthquake alerts, before one wakes you up at 3 AM",
-          "publisher": "Android Police",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjMF2j28g7JjQFq-E5Cd2Unf5IA-bqwrlBA_3or7l2QdaPMYKnSMxkkFRKTkQ"
-        },
-        {
-          "url": "https://pasqualepillitteri.it/en/news/35090/android-earthquake-alerts-italy-how-it-works",
-          "title": "Android earthquake alerts arrive in Italy, how Google's phone-based warning works",
-          "publisher": "Pasquale Pillitteri",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdJLf3lL5LdjQZxf0UJikZSOCaoWWRaDkrHlanrwusUXQFCW_2tlZsdm8qrc8"
-        }
-      ]
-    },
-    {
-      "query": "earthquake",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-20T06:40:00Z",
-      "related_news_urls": [
-        "https://www.sfchronicle.com/earthquakes/article/magnitude-5-4-earthquake-strikes-san-benito-county-22541093.php",
-        "https://www.cbsnews.com/sanfrancisco/news/earthquake-near-san-benito-nov-19/",
-        "https://www.mercurynews.com/2026/11/19/magnitude-5-0-quake-rattles-central-coast/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPfnQAnYCXrKMEcIN68SE3fOXLIv2QMYkuF2UsTnX-0YBwxb2GWb7VSSbepMc",
-      "image_credit": "San Francisco Chronicle",
-      "news": [
-        {
-          "url": "https://www.sfchronicle.com/earthquakes/article/magnitude-5-4-earthquake-strikes-san-benito-county-22541093.php",
-          "title": "Magnitude 5.1 earthquake strikes Central California",
-          "publisher": "San Francisco Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPfnQAnYCXrKMEcIN68SE3fOXLIv2QMYkuF2UsTnX-0YBwxb2GWb7VSSbepMc"
-        },
-        {
-          "url": "https://www.cbsnews.com/sanfrancisco/news/earthquake-near-san-benito-nov-19/",
-          "title": "Magnitude 5.0 earthquake strikes near San Benito County, USGS says",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzbrG72hUVDyKBThPJfcLU70VZldPpj3KH-V-F0h9CQkwDVdsv5ZOHmEa_X0w"
-        },
-        {
-          "url": "https://www.mercurynews.com/2026/11/19/magnitude-5-0-quake-rattles-central-coast/",
-          "title": "Magnitude 5.0 quake rattles Central Coast",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRi6Lk2n_WSsyBQ0Ut8Z7Y5JQrbC4GmIWg7wL9z8Igoezo2DybF0p1N3fTdEPM"
-        }
-      ]
-    },
-    {
-      "query": "earthquake san jose",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T06:40:00Z",
-      "related_news_urls": [
-        "https://www.mlssoccer.com/playoffs/2026/news/san-jose-earthquakes-vs-houston-dynamo-5-biggest-storylines-for-western-conference-round-one",
-        "https://www.ktvu.com/video/fmc-di4cr875gq1xhgkd",
-        "https://www.houstondynamofc.com/news/houston-dynamo-fc-to-host-official-game-1-watch-party-at-pitch-25-on-tuesday-nov-24-facing-san-jose-earthquakes-in-the-round-one-best-of-3-series"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMc1UsAvsP6NQJmhIQb-WiuLPJBvmfeRCG15LQk8MdhQ-Geda4gj2og5kGre4",
-      "image_credit": "MLSsoccer.com",
-      "news": [
-        {
-          "url": "https://www.mlssoccer.com/playoffs/2026/news/san-jose-earthquakes-vs-houston-dynamo-5-biggest-storylines-for-western-conference-round-one",
-          "title": "San Jose Earthquakes vs. Houston Dynamo: 5 biggest storylines for Western Conference Round One",
-          "publisher": "MLSsoccer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMc1UsAvsP6NQJmhIQb-WiuLPJBvmfeRCG15LQk8MdhQ-Geda4gj2og5kGre4"
-        },
-        {
-          "url": "https://www.ktvu.com/video/fmc-di4cr875gq1xhgkd",
-          "title": "San Jose Earthquakes prepare for first playoff game at PayPal Park",
-          "publisher": "KTVU",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT5Xih4bdLf0OhQeWkXJtEwkTvHIWIJdMEwlP4LDpbNDZSAg6dohaglvxGf1k"
-        },
-        {
-          "url": "https://www.houstondynamofc.com/news/houston-dynamo-fc-to-host-official-game-1-watch-party-at-pitch-25-on-tuesday-nov-24-facing-san-jose-earthquakes-in-the-round-one-best-of-3-series",
-          "title": "Houston Dynamo FC to host official Game 1 Watch Party at Pitch 25, on Tuesday, Nov. 24, facing San Jose Earthquakes in the Round One Best-of-3 Series",
-          "publisher": "Houston Dynamo FC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_NNrR-5QlmyvqC9MRAAYmvJtZMzcoPfzz46_fHcT8vZfV3TEs-OxKrV4YKk"
-        }
-      ]
-    },
-    {
-      "query": "usgs earthquake",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T06:40:00Z",
-      "related_news_urls": [
-        "https://www.wcnc.com/article/weather/earthquake-rowan-county-north-carolina-brad-panovich-explanation/275-7b21db90-8a99-4598-b844-11d0ea45ae19",
-        "https://www.charlotteobserver.com/news/local/article318132284.html",
-        "https://www.wbtv.com/2026/11/18/earthquake-strikes-near-iredell-rowan-county-line-data-shows/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA2ZIc3ShKAzFseWoiFp-MIRjohvMoVREuDufetEe4DYNhTCc9FYfZ1-TC9MA",
-      "image_credit": "WCNC",
-      "news": [
-        {
-          "url": "https://www.wcnc.com/article/weather/earthquake-rowan-county-north-carolina-brad-panovich-explanation/275-7b21db90-8a99-4598-b844-11d0ea45ae19",
-          "title": "2.4 magnitude earthquake shakes Rowan County late Tuesday night",
-          "publisher": "WCNC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA2ZIc3ShKAzFseWoiFp-MIRjohvMoVREuDufetEe4DYNhTCc9FYfZ1-TC9MA"
-        },
-        {
-          "url": "https://www.charlotteobserver.com/news/local/article318132284.html",
-          "title": "Earthquake in North Carolina was felt by people 25 miles away, USGS data shows",
-          "publisher": "Charlotte Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQN9PLTA9M3I6nB1CqbdMtfyrtjPnjU4ZagHO_QltZtIUtwDlICyhJxeG_waJQ"
-        },
-        {
-          "url": "https://www.wbtv.com/2026/11/18/earthquake-strikes-near-iredell-rowan-county-line-data-shows/",
-          "title": "Earthquake strikes near Iredell-Rowan County line, data shows",
-          "publisher": "WBTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJGp7Axu2-WqoaDgBHlwIj1BphE62k4kesGs9Y1JgCGzSGvuPgebC9IgtvrFU"
-        }
-      ]
-    },
-    {
-      "query": "earthquake today",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T06:40:00Z",
-      "related_news_urls": [
-        "https://www3.nhk.or.jp/nhkworld/news/20261119de78099/",
-        "https://japantoday.com/category/national/update3-m5.7-quake-strikes-japan's-kumamoto-prefecture-2-injured",
-        "https://www.japantimes.co.jp/news/2026/11/19/japan/kumamoto-quake-no-tsunami-warning/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTnmu9eICyP_g2xQJoTy3sgZ6MZmKOk9RvYMNxBHf7hLrEj-gSkSM7DpuMnEo",
-      "image_credit": "NHKニュース",
-      "news": [
-        {
-          "url": "https://www3.nhk.or.jp/nhkworld/news/20261119de78099/",
-          "title": "A strong earthquake struck southwestern Japan | NHK WORLD-JAPAN News",
-          "publisher": "NHKニュース",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTnmu9eICyP_g2xQJoTy3sgZ6MZmKOk9RvYMNxBHf7hLrEj-gSkSM7DpuMnEo"
-        },
-        {
-          "url": "https://japantoday.com/category/national/update3-m5.7-quake-strikes-japan's-kumamoto-prefecture-2-injured",
-          "title": "M5.7 quake strikes Kumamoto Prefecture; 2 injured",
-          "publisher": "Japan Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0U0wbYhLH2yYJTsdUScD0qbztksuDdcJBXKJjwR5-tEETWhgM1Oklp0NnTjc"
-        },
-        {
-          "url": "https://www.japantimes.co.jp/news/2026/11/19/japan/kumamoto-quake-no-tsunami-warning/",
-          "title": "Magnitude 5.7 quake jolts Kumamoto Prefecture, but no tsunami warning issued",
-          "publisher": "The Japan Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW6ldlSeU7jNX1o-1n69NaxjbjUMB0aCg_ftjKTMck6qDWRa2WvtoKM8coyv8"
-        }
-      ]
-    },
-    {
-      "query": "how to sell cars in gta 6",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T06:40:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/gta-6-hidden-cash-talking-parrot",
-        "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
-        "https://www.polygon.com/gta-6-grand-theft-auto-how-to-rob-exotic-animal-front-cash-location/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfMb9S-bclpGdFjhbXTrBXcPzRJbv567FfolWOf4mOE2apj8OpDsezf4MO3Fg",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/gta-6-hidden-cash-talking-parrot",
-          "title": "'GTA 6': How to use a talking parrot to find a stash of money",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfMb9S-bclpGdFjhbXTrBXcPzRJbv567FfolWOf4mOE2apj8OpDsezf4MO3Fg"
-        },
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
-          "title": "The Best Ways To Earn Money In ‘GTA 6,’ Early, Mid- And Late-Game",
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
+          "title": "Another Update About The ‘GTA 6 Online’ Release Date",
           "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68"
+        }
+      ]
+    },
+    {
+      "query": "one piece 1199",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T07:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/one-piece-chapter-1199-spoilers-085854936.html",
+        "https://fandomwire.com/one-piece-chapter-1199-oda-luffy-vs-imu-elbaf-battle/",
+        "https://screenrant.com/one-piece-luffy-god-destruction/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrDO96sqEEaptcxJYWrIeUFm8sSI3iAYSY1CznGuf1RyH7DGSdhmkA5ksIzsA",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/one-piece-chapter-1199-spoilers-085854936.html",
+          "title": "One Piece Chapter 1199 Spoilers & Manga Plot Leaks",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrDO96sqEEaptcxJYWrIeUFm8sSI3iAYSY1CznGuf1RyH7DGSdhmkA5ksIzsA"
         },
         {
-          "url": "https://www.polygon.com/gta-6-grand-theft-auto-how-to-rob-exotic-animal-front-cash-location/",
-          "title": "How to rob the Exotic Animal Front in GTA 6",
-          "publisher": "Polygon.com",
+          "url": "https://fandomwire.com/one-piece-chapter-1199-oda-luffy-vs-imu-elbaf-battle/",
+          "title": "One Piece Creator Oda Officially Confirms The Battle of Gods for The First Time",
+          "publisher": "FandomWire",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB49eDXbrN5Zs1PYZ3l6o-KfFN9Fcq83FqSTHPIrbuqrWuXt_i9SbPfgVI91s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2C0-K01PMp9ivtD115TZ8hrMevcfg8iCSrASwyaRqGYUfKM-QAhYF6S4XVSE"
+        },
+        {
+          "url": "https://screenrant.com/one-piece-luffy-god-destruction/",
+          "title": "30 Years After His Debut, Luffy Is Officially Ready To Become One Piece’s God Of Destruction",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTksOZ5GKANlxFt_I8cLtxpYQOfq6D46UUsulhcdruxsqui39xz8ZMQFaDmDvU"
+        }
+      ]
+    },
+    {
+      "query": "daycare",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T07:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cvkg58d7z10ro",
+        "https://www.reutersconnect.com/item/anita-palupi-head-of-the-little-aresha-daycare-center-talks-with-her-lawyer-during-a-verdict-hearing-in-a-child-abuse-case-at-yogyakarta-district-court-in-yogyakarta/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlNRT0FTSVNOUA",
+        "https://www.devdiscourse.com/article/international/4009289-indonesia-court-jails-daycare-head-for-5-years-in-child-abuse-case"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKciyuppoTkEqOYU6LytVWlm3vG2VVlRd-3ivpLgHPtnR7GSgNzFPfKkif418",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cvkg58d7z10ro",
+          "title": "Indonesian daycare principal jailed for five years over child abuse case",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKciyuppoTkEqOYU6LytVWlm3vG2VVlRd-3ivpLgHPtnR7GSgNzFPfKkif418"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/anita-palupi-head-of-the-little-aresha-daycare-center-talks-with-her-lawyer-during-a-verdict-hearing-in-a-child-abuse-case-at-yogyakarta-district-court-in-yogyakarta/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlNRT0FTSVNOUA",
+          "title": "Licensable picture: Anita Palupi, head of the Little Aresha daycare center, talks with her lawyer during a verdict hearing in a child abuse case at Yogyakarta District Court in Yog",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDdno25yGagJPnWZJ_qUQMNjBKhGMVhqHKdk2zB26N6uE90qQTXQBX67bVids"
+        },
+        {
+          "url": "https://www.devdiscourse.com/article/international/4009289-indonesia-court-jails-daycare-head-for-5-years-in-child-abuse-case",
+          "title": "Indonesia court jails daycare head for 5 years in child abuse case",
+          "publisher": "Devdiscourse",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBnQTwUY5pEwC8EpzVWBVE0lLyJcmifbrtNRVISYh6CUjNHq0b4e0nLEDEzBk"
+        }
+      ]
+    },
+    {
+      "query": "sndk",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T07:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-worth-third-june-181602656.html",
+        "https://www.barchart.com/story/news/8918198/how-to-play-sndk-stock-after-sandisks-8-for-1-stock-split",
+        "https://www.tikr.com/blog/sandisk-sinks-21-in-a-week-as-nvidias-ceo-exit-hits-memory-stocks-time-to-buy"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpjKLE1dYHVKIt0Cme4_6F0BSd74RKv9tSiyx-TUrIqK3yNMeFqWbkmNaLB58",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-worth-third-june-181602656.html",
+          "title": "Sandisk Stock Is Worth a Third of What It Was in June. I'd Buy It Now.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpjKLE1dYHVKIt0Cme4_6F0BSd74RKv9tSiyx-TUrIqK3yNMeFqWbkmNaLB58"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8918198/how-to-play-sndk-stock-after-sandisks-8-for-1-stock-split",
+          "title": "How to Play SNDK Stock After Sandisk’s 8-for-1 Stock Split",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7TMfwt3aGyh5w8fvDAgTo2gIwNFsqns_eu16dMEy1XLLgjkSdHkMaOuKKZg8"
+        },
+        {
+          "url": "https://www.tikr.com/blog/sandisk-sinks-21-in-a-week-as-nvidias-ceo-exit-hits-memory-stocks-time-to-buy",
+          "title": "Sandisk Sinks 21% in a Week as Nvidia’s CEO Exit Hits Memory Stocks. Time to Buy?",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAUdQiR0RbL9vSBKQICN27XGPDxzLkLfhmbGG688zax1uI1Q3Xl5n8M266AdQ"
+        }
+      ]
+    },
+    {
+      "query": "truck accident lawyer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T07:20:00Z",
+      "related_news_urls": [
+        "https://kpq.com/fatal-hitandrun-okanogan-tips-investigation/",
+        "https://www.yoursourceone.com/columbia_basin/victim-identified-in-fatal-okanogan-hit-and-run-cause-of-death-revealed/article_80e46634-d7f1-4873-adf2-74296ffbd6e6.html",
+        "https://www.beverlylaw.org/accident-news/washington/okanogan/11-17-2026-okanogan-sr-215-hit-and-run-pedestrian-accident-lawyer/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX6kpou2ssILtWWbXQlCyIwNbLTHpZp-6nZsEdOc84pqN5G1FGihZ8Xi46x_k",
+      "image_credit": "NewsRadio 560 KPQ",
+      "news": [
+        {
+          "url": "https://kpq.com/fatal-hitandrun-okanogan-tips-investigation/",
+          "title": "Okanogan Police Seek Tips, Video Connected To Investigation Of Fatal Hit-&-Run",
+          "publisher": "NewsRadio 560 KPQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX6kpou2ssILtWWbXQlCyIwNbLTHpZp-6nZsEdOc84pqN5G1FGihZ8Xi46x_k"
+        },
+        {
+          "url": "https://www.yoursourceone.com/columbia_basin/victim-identified-in-fatal-okanogan-hit-and-run-cause-of-death-revealed/article_80e46634-d7f1-4873-adf2-74296ffbd6e6.html",
+          "title": "Victim Identified in Fatal Okanogan Hit-and-Run; Cause of Death Revealed",
+          "publisher": "Source ONE News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLLFRDEpNayIwsOunKjudafGXa7KdEzom7EtR14eiF3_JIdOWN4dBqMi5I71o"
+        },
+        {
+          "url": "https://www.beverlylaw.org/accident-news/washington/okanogan/11-17-2026-okanogan-sr-215-hit-and-run-pedestrian-accident-lawyer/",
+          "title": "Pedestrian Killed in Hit-and-Run on SR 215 Near Okanogan; Driver Sought | Okanogan Pedestrian Accident Lawyer - Call Beverly Law NOW",
+          "publisher": "Beverly Law",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrSEHThQIcLp2AZGKpOrAFpa_AuSou4vxb921qzXwcFHLeDTewixrctuW95lo"
+        }
+      ]
+    },
+    {
+      "query": "car accident attorney",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T07:20:00Z",
+      "related_news_urls": [
+        "https://www.khou.com/video/entertainment/television/programs/great-day-houston/sponsored-shariff-injury-lawyers-share-what-to-do-immediately-after-a-car-accident/285-1dac553c-2ebc-470f-a35a-a584b6dcac97",
+        "https://kpq.com/fatal-hitandrun-okanogan-tips-investigation/",
+        "https://www.yoursourceone.com/columbia_basin/victim-identified-in-fatal-okanogan-hit-and-run-cause-of-death-revealed/article_80e46634-d7f1-4873-adf2-74296ffbd6e6.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRtr6VQZJ-3FF9Kajp-h3XBFVlgQVQL0Ni5CIJ09n4yYML3tr6uklyUWHX_1g",
+      "image_credit": "KHOU",
+      "news": [
+        {
+          "url": "https://www.khou.com/video/entertainment/television/programs/great-day-houston/sponsored-shariff-injury-lawyers-share-what-to-do-immediately-after-a-car-accident/285-1dac553c-2ebc-470f-a35a-a584b6dcac97",
+          "title": "Sponsored: Shariff Injury Lawyers share what to do immediately after a car accident",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRtr6VQZJ-3FF9Kajp-h3XBFVlgQVQL0Ni5CIJ09n4yYML3tr6uklyUWHX_1g"
+        },
+        {
+          "url": "https://kpq.com/fatal-hitandrun-okanogan-tips-investigation/",
+          "title": "Okanogan Police Seek Tips, Video Connected To Investigation Of Fatal Hit-&-Run",
+          "publisher": "NewsRadio 560 KPQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX6kpou2ssILtWWbXQlCyIwNbLTHpZp-6nZsEdOc84pqN5G1FGihZ8Xi46x_k"
+        },
+        {
+          "url": "https://www.yoursourceone.com/columbia_basin/victim-identified-in-fatal-okanogan-hit-and-run-cause-of-death-revealed/article_80e46634-d7f1-4873-adf2-74296ffbd6e6.html",
+          "title": "Victim Identified in Fatal Okanogan Hit-and-Run; Cause of Death Revealed",
+          "publisher": "Source ONE News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLLFRDEpNayIwsOunKjudafGXa7KdEzom7EtR14eiF3_JIdOWN4dBqMi5I71o"
+        }
+      ]
+    },
+    {
+      "query": "5.4 magnitude earthquake",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T07:20:00Z",
+      "related_news_urls": [
+        "https://cwibc.co.id/en/usgs-toms-place-earthquake-november-19",
+        "https://www.sacbee.com/news/california/earthquakes/article318153941.html",
+        "https://www.reuters.com/business/environment/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-2026-11-20/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3foXwncr17Y0wtuzX2t2i3daoOyCBZnYKf53RJ7JU0U5teM-x93LYwV_hhzs",
+      "image_credit": "cwibc.co.id",
+      "news": [
+        {
+          "url": "https://cwibc.co.id/en/usgs-toms-place-earthquake-november-19",
+          "title": "USGS Reports 2.3 Magnitude Earthquake Near Toms Place",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3foXwncr17Y0wtuzX2t2i3daoOyCBZnYKf53RJ7JU0U5teM-x93LYwV_hhzs"
+        },
+        {
+          "url": "https://www.sacbee.com/news/california/earthquakes/article318153941.html",
+          "title": "2.8 magnitude earthquake reported near Toms Place, CA on Nov. 19",
+          "publisher": "Sacramento Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1oAuToou89x__3KyjtJmNMExSEWqfdLR8MNK-gMl4q0PJKu1-B_r6YiYy7I"
+        },
+        {
+          "url": "https://www.reuters.com/business/environment/magnitude-51-earthquake-strikes-near-californias-monterey-county-usgs-says-2026-11-20/",
+          "title": "Magnitude 5.1 earthquake strikes near California's Monterey County, USGS says",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdOZTxj6jIteFG_a7RNZvPGxIjwB_hoaSPdMEZ_7LzEoVBE5Ywx9-0YxFY3rc"
+        }
+      ]
+    },
+    {
+      "query": "aleksandre topuria",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T07:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ilia-topuria-says-half-millimeter-064229631.html",
+        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/19/ufc-joe-rogan-concerned-ilia-topuria-lightweight/92856711007/",
+        "https://demokratis.co.id/en/topuria-orbital-injury-career-threat"
+      ],
+      "image_url": null,
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/ilia-topuria-says-half-millimeter-064229631.html",
+          "title": "Ilia Topuria Says He Was Half A Millimeter From Career-Ending Surgery After Gaethje Broke Both Orbitals — And Joe Rogan Now Wants Him Back At 145",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/19/ufc-joe-rogan-concerned-ilia-topuria-lightweight/92856711007/",
+          "title": "Joe Rogan has 'much better weight class' in mind for Ilia Topuria",
+          "publisher": "MMA Junkie",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhh33dr83e8x8nFl8hKu1-_thq5LyTkhSbtZ3GBVUdw15D3g0SL_84kSbSOus"
+        },
+        {
+          "url": "https://demokratis.co.id/en/topuria-orbital-injury-career-threat",
+          "title": "Topuria Reveals Near Career Ending Injury Against Gaethje",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrZTZRAWuBJdfS7qJF3ilUDU8ybPCnDd50VyvuhAel7HO3dEfWRuRd8LLdxyM"
+        }
+      ]
+    },
+    {
+      "query": "pg&e",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T07:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcbayarea.com/news/local/cpuc-approves-pg-rate-hike-2027/4179166/",
+        "https://consumerwatchdog.org/energy/newsoms-cpuc-appointees-approve-456-million-pge-rate-hike-before-becerra-takes-office-despite-unanswered-questions-about-2-billion-in-spending-cuts/",
+        "https://www.mercurynews.com/2026/11/19/pge-bill-economy-electric-gas-consumer-fire-energy-power-utility-puc/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYg0ES5PAH2g06Hf3kV7sGqW__z8bHXwWJiGJrAxh0HTuq9mZV6ud2Jvf5qw",
+      "image_credit": "NBC Bay Area",
+      "news": [
+        {
+          "url": "https://www.nbcbayarea.com/news/local/cpuc-approves-pg-rate-hike-2027/4179166/",
+          "title": "CPUC approves PG&E ‘interim' rate hike for 2027",
+          "publisher": "NBC Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYg0ES5PAH2g06Hf3kV7sGqW__z8bHXwWJiGJrAxh0HTuq9mZV6ud2Jvf5qw"
+        },
+        {
+          "url": "https://consumerwatchdog.org/energy/newsoms-cpuc-appointees-approve-456-million-pge-rate-hike-before-becerra-takes-office-despite-unanswered-questions-about-2-billion-in-spending-cuts/",
+          "title": "Newsom’s CPUC Appointees Approve $456 Million PG&E Rate Hike Before Becerra Takes Office, Despite Unanswered Questions About $2 Billion in Spending Cuts",
+          "publisher": "Consumer Watchdog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvk3JZDHTCcV7PBjHzFgMNlpDXeLMGvwL2e9wWufiiTANInqQA5NEAWlTdB7w"
+        },
+        {
+          "url": "https://www.mercurynews.com/2026/11/19/pge-bill-economy-electric-gas-consumer-fire-energy-power-utility-puc/",
+          "title": "State OKs interim rise in PG&E bills but costs for 2026 will be flat",
+          "publisher": "The Mercury News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFhWMrbROn8ydXQkgv9sY1B9QIk77BqPympVjQdkJAHKyNJo6YCMZuBnLAe5w"
+        }
+      ]
+    },
+    {
+      "query": "ksbw",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T07:10:00Z",
+      "related_news_urls": [
+        "https://www.ksbw.com/article/alisal-school-district-wont-rename-cesar-e-chavez-elementary/74482801",
+        "https://www.montereyherald.com/2026/11/19/cesar-e-chavez-elementary-school-in-salinas-to-keep-original-name/",
+        "https://www.sfgate.com/news/bayarea/article/salinas-school-board-halts-possible-renaming-of-22540672.php"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWvRnsdZMyCEMzjydMP8bxxEN5-fzshs_xi8YKz_Ir9ow-PsZZhCrYOSyCB44",
+      "image_credit": "KSBW",
+      "news": [
+        {
+          "url": "https://www.ksbw.com/article/alisal-school-district-wont-rename-cesar-e-chavez-elementary/74482801",
+          "title": "Alisal school district won't rename César E. Chávez Elementary",
+          "publisher": "KSBW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWvRnsdZMyCEMzjydMP8bxxEN5-fzshs_xi8YKz_Ir9ow-PsZZhCrYOSyCB44"
+        },
+        {
+          "url": "https://www.montereyherald.com/2026/11/19/cesar-e-chavez-elementary-school-in-salinas-to-keep-original-name/",
+          "title": "César E. Chávez Elementary school in Salinas to keep original name",
+          "publisher": "Monterey Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNCh38qbStdCSvYU2iiLMO-DC8ZKYMtdbFYdzmwJn8et_76uVEJIfvujPMlYc"
+        },
+        {
+          "url": "https://www.sfgate.com/news/bayarea/article/salinas-school-board-halts-possible-renaming-of-22540672.php",
+          "title": "Salinas: School Board Halts Possible Renaming Of Cesar E. Chavez Elementary After Community Survey",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK4Lw8OLffFQLm4BDiDxFhzlXpbVPiUfhhcsVyURD440XHxD6NYa6tLlViVzU"
         }
       ]
     }
