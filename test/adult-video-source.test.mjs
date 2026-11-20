@@ -79,3 +79,10 @@ test('this-visit 21+ reveal and Close remove the external href without persistin
   else globalThis.document=oldDocument;
  }
 });
+
+test('homepage requests the updated 21+ portal script rather than a stale cached module',()=>{
+ const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const match=home.match(/src="\/restricted-ad-card\.mjs\?v=([^"]+)"/);
+ assert.ok(match,'existing 21+ card module must stay mounted on the homepage');
+ assert.match(match[1],/^20261119-/,'cache version must change when the gated portal is added');
+});
