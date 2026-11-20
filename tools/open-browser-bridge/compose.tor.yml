@@ -36,6 +36,7 @@ services:
     cap_drop: [ALL]
     security_opt:
       - no-new-privileges:true
+      - seccomp=./seccomp_profile.json
     pids_limit: 160
     shm_size: 512m
     tmpfs:
