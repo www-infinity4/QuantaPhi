@@ -1,5 +1,4 @@
 import {videoAPI} from './video-api.mjs';
-import {ebayQuickCardsAPI} from './ebay-api.mjs';
 const EDGE_VERSION = 'quantaphi-org-service-20261029-housing-v15';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 // Static public crawler documents, independent of GitHub at request time.
@@ -429,7 +428,12 @@ export default {
   }
   if(['/api/apk-releases','/downloads/bubbles.apk','/downloads/site.apk'].includes(incoming.pathname))return apkRoute(request,incoming);
   if(incoming.pathname.startsWith('/api/video/'))return videoAPI(request,env);
-  if(incoming.pathname==='/api/ebay/quick-cards')return ebayQuickCardsAPI(request,env);
+  if(incoming.pathname==='/api/ebay/quick-cards'){
+   // Local literal dynamic import keeps the legacy Worker VM harness compatible.
+   // Wrangler includes this module during bundling; app OAuth stays server-only.
+   const {ebayQuickCardsAPI}=await import('./ebay-api.mjs');
+   return ebayQuickCardsAPI(request,env);
+  }
   if (/^(?:www\.)?quantaphi\.net$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });
   if (/^(?:www\.)?quantaphi\.org$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });
   if (/^(?:www\.)?quantaphi\.(?:net|org)$/.test(incoming.hostname) && incoming.hostname !== 'quantaphi.org') {
