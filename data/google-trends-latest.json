@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T16:01:16.030665Z",
+  "checked_at": "2026-11-20T16:31:02.629420Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "mstr stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T16:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/strategy-mstr-bitcoin-buying-msci-211424742.html",
+        "https://www.investors.com/news/mstr-stock-discount-vs-bitcoin-trump-media-convertible/",
+        "https://www.tradingview.com/news/tradingview:c4760aad6d49c:0-key-facts-mstr-falls-36-65-sell-call-msci-exclusion-850-849-btc/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuGhjHDmg-r3_xe3A-doiHCh347zkSVG5RzmbU3yzDhCrA_ABYUfPryKklLu4",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/strategy-mstr-bitcoin-buying-msci-211424742.html",
+          "title": "Strategy (MSTR) On Bitcoin Buying And MSCI Exit Still Looks Undervalued",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuGhjHDmg-r3_xe3A-doiHCh347zkSVG5RzmbU3yzDhCrA_ABYUfPryKklLu4"
+        },
+        {
+          "url": "https://www.investors.com/news/mstr-stock-discount-vs-bitcoin-trump-media-convertible/",
+          "title": "Strategy Is Worth Less Than Its Bitcoin, Trump Media May Have To Sell",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBtaNM8_MmhL09vNIqJuOYCILDKLJs9Q1vhhEpOzg9jbo0Y78HabkZCotuDNw"
+        },
+        {
+          "url": "https://www.tradingview.com/news/tradingview:c4760aad6d49c:0-key-facts-mstr-falls-36-65-sell-call-msci-exclusion-850-849-btc/",
+          "title": "Key facts: MSTR falls 36%; $65 Sell call; MSCI exclusion; 850,849 BTC",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        }
+      ]
+    },
+    {
+      "query": "bitcoin price",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-20T16:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/20/bitcoin-pre-ipo-selloff-pattern-anthropic-spacex.html",
+        "https://finance.yahoo.com/markets/crypto/articles/bitcoin-enters-death-cross-anthropic-190824839.html",
+        "https://seekingalpha.com/news/4674681-bitcoin-crypto-get-a-modest-boost-amid-anthropic-bullishness"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUk9tasQ2HPrmSQ74hWcyMKJF3bK-XaGfi7ypqfnG7oGpWN-pZX2MVUcxeDuo",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/20/bitcoin-pre-ipo-selloff-pattern-anthropic-spacex.html",
+          "title": "Bitcoin suffered identical sell-off pattern ahead of Anthropic, SpaceX IPOs — what happens next?",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUk9tasQ2HPrmSQ74hWcyMKJF3bK-XaGfi7ypqfnG7oGpWN-pZX2MVUcxeDuo"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-enters-death-cross-anthropic-190824839.html",
+          "title": "Bitcoin Enters Death Cross as Anthropic IPO Fails to Lift Wall Street",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8"
+        },
+        {
+          "url": "https://seekingalpha.com/news/4674681-bitcoin-crypto-get-a-modest-boost-amid-anthropic-bullishness",
+          "title": "Bitcoin, crypto get a modest boost amid Anthropic bullishness (BTC-USD:Cryptocurrency)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4aLnCko-RZBB95G5Rbcmuv7yq2IKK5_eE3__fYXTw7VQwzUg5DamTbRklbAo"
+        }
+      ]
+    },
+    {
+      "query": "btc",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T16:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
+        "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
+        "https://www.bloomberg.com/news/articles/2026-11-18/bitcoin-erases-bessent-rally-as-leverage-and-liquidity-fade"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszVKjR2ov3hRsb4VWgWjZAZ--j32c5s2wIshKyrL_1at1uQe6CBvbApIKCt4",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
+          "title": "Bitcoin selloff: Crypto is failing the 'digital gold' test again as it sinks with stocks",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszVKjR2ov3hRsb4VWgWjZAZ--j32c5s2wIshKyrL_1at1uQe6CBvbApIKCt4"
+        },
+        {
+          "url": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
+          "title": "Live news: Bitcoin slips to fresh lows below $60,000 as Anthropic slides after Nasdaq debut",
+          "publisher": "CoinDesk",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSF6EBrVCJiHIvLKFqrahNEFI0ktiIhmiCJJe9WXinPeQYsDFEQ-1mNNuLe0Mo"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-18/bitcoin-erases-bessent-rally-as-leverage-and-liquidity-fade",
+          "title": "Bitcoin Erases Bessent Rally as Leverage and Liquidity Fade",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuI1z95xbPsH9mbHN-PVZN7LPj-Nyrg6CbFokcQTx2_t27tdLlxrFHj-OQSbk"
+        }
+      ]
+    },
+    {
+      "query": "btc price",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T16:00:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-at-11-am-cst-on-nov-20-2026-nov-20-2026/",
+        "https://robinhood.com/us/en/prediction-markets/crypto/events/eth-price-on-nov-16-2026-at-2pm-est-nov-15-2026/",
+        "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-on-nov-15-2026-at-3am-est-nov-14-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmi98rXIOIxNtmw7pYCl74OsGcCyLzPmfhVUqbpujtv7xSRHyXrXuZN6UbL0g",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-at-11-am-cst-on-nov-20-2026-nov-20-2026/",
+          "title": "BTC price at 11 AM CST on Nov 20, 2026",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmi98rXIOIxNtmw7pYCl74OsGcCyLzPmfhVUqbpujtv7xSRHyXrXuZN6UbL0g"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/crypto/events/eth-price-on-nov-16-2026-at-2pm-est-nov-15-2026/",
+          "title": "ETH price on Nov 16, 2026 at 2pm EST Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh6ZHIgcvsUnEg8SM6bDHIhicsVZo3vWy_CrvJCLuVu8Wy7-k9XAl-oF63uLY"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-on-nov-15-2026-at-3am-est-nov-14-2026/",
+          "title": "BTC price on Nov 15, 2026 at 3am EST Crypto Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQngxSjznUu8bXQzWpNw_1oWt9U2gM-7n5NJir28fxpNUHBEc3rRnLOO3wVaAk"
+        }
+      ]
+    },
+    {
+      "query": "ethereum price",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T16:00:00Z",
+      "related_news_urls": [
+        "https://fortune.com/article/price-of-ethereum-11-20-2026/",
+        "https://bitcoinfoundation.org/news/analysis/ethereum-exchange-reserves-rise-as-eth-falls-12-in-a-week/",
+        "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-on-nov-20-2026-at-8am-est-nov-19-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3zRNlPVQdMGb4Zp7W3L9KgPv93W4QzOk_o3r6kMmM-3DIKIB_LQ5suGaLUI",
+      "image_credit": "Fortune",
+      "news": [
+        {
+          "url": "https://fortune.com/article/price-of-ethereum-11-20-2026/",
+          "title": "Current price of Ethereum for Nov. 20, 2026",
+          "publisher": "Fortune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3zRNlPVQdMGb4Zp7W3L9KgPv93W4QzOk_o3r6kMmM-3DIKIB_LQ5suGaLUI"
+        },
+        {
+          "url": "https://bitcoinfoundation.org/news/analysis/ethereum-exchange-reserves-rise-as-eth-falls-12-in-a-week/",
+          "title": "ETH Price Prediction: Exchange Inflows and $1,500 Support",
+          "publisher": "Bitcoin Foundation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3iB7nPvWWWt2291S6CGQ3UmQIYKif2deBVStRG3olHDoM01nhkpljZb28o6c"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/crypto/events/btc-price-on-nov-20-2026-at-8am-est-nov-19-2026/",
+          "title": "BTC price on Nov 20, 2026 at 8am EST Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH5NlOEKGVGY4zUpbjWTCGBg5p81UogFuwK3Z5OijaI3OjvL0abVYgvkWZDSM"
+        }
+      ]
+    },
+    {
+      "query": "walmart stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T15:50:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/business/earnings/walmart-wmt-3q-earnings-report-2026-6e658c54",
+        "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+        "https://www.retaildive.com/news/walmart-ecommerce-boom-fulfillment-speed-q3-earnings/875166/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGdEqOiTu1bkhx5qOm0tK8-2CSax0U0iaSjzp6GctG75mQ5wIWixcOcArz1uI",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/business/earnings/walmart-wmt-3q-earnings-report-2026-6e658c54",
+          "title": "Walmart’s Digital Sales Are Now Driving Its Growth, Not Stores",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGdEqOiTu1bkhx5qOm0tK8-2CSax0U0iaSjzp6GctG75mQ5wIWixcOcArz1uI"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+          "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIeguPZgPQRoxK4DpwRiXDTex_5YUlOqi2BYDID1R28p45UQsoz6lbLba465A"
+        },
+        {
+          "url": "https://www.retaildive.com/news/walmart-ecommerce-boom-fulfillment-speed-q3-earnings/875166/",
+          "title": "Walmart’s e-commerce boom driven by fulfillment speed",
+          "publisher": "Retail Dive",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3cpiW5bYIJ1L_GhRq9A9u2DYL408FN3G7HBKKHK6IeDoz0Dy-I09lAm5c98Y"
+        }
+      ]
+    },
+    {
+      "query": "micron stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T15:50:00Z",
+      "related_news_urls": [
+        "https://www.barrons.com/articles/micron-stock-memory-price-catalyst-58e84734",
+        "https://finance.yahoo.com/markets/stocks/articles/happens-micron-stock-prices-stop-150147307.html",
+        "https://www.trefis.com/stock/mu/articles/626702/what-micron-s-record-margin-means-for-your-shares/2026-11-19"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PsqvhTf8lfcv6J3-tyCknfh4YjPdAO96_2jeVtQO_IGVGcNeNinehPki8HM",
+      "image_credit": "Barron's",
+      "news": [
+        {
+          "url": "https://www.barrons.com/articles/micron-stock-memory-price-catalyst-58e84734",
+          "title": "Micron Keeps Falling as Memory Stocks Get Agonizingly Cheap. The Next Catalyst.",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PsqvhTf8lfcv6J3-tyCknfh4YjPdAO96_2jeVtQO_IGVGcNeNinehPki8HM"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/happens-micron-stock-prices-stop-150147307.html",
+          "title": "What Happens To Micron Stock If Prices Stop Rising?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpHyu2-Fbib9MeE9IoICFCbl9I9RccEbJOR2tcLOhRtC2IVQTPAT4keJ3vfw"
+        },
+        {
+          "url": "https://www.trefis.com/stock/mu/articles/626702/what-micron-s-record-margin-means-for-your-shares/2026-11-19",
+          "title": "What Micron’s Record Margin Means For Your Shares",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmf7hQbKMhfhjUIZiZc5vJclECpYllHDVAWA-lkef0Q6zwoKZQeBB0ky3r2xQ"
+        }
+      ]
+    },
     {
       "query": "jp morgan chase",
       "approx_searches": "10000+",
@@ -42,51 +287,24 @@
       ]
     },
     {
-      "query": "mamdani achilles",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T15:30:00Z",
-      "related_news_urls": [
-        "https://abc7ny.com/story/mayor-mamdani-crutches-tearing-achilles-soccer-game/20059356/",
-        "https://nypost.com/2026/11/20/us-news/mamdani-hobbles-on-crutches-after-injury-during-soccer-match/",
-        "https://bleacherreport.com/articles/25535666-nyc-mayor-zohran-mamdani-reveals-he-tore-his-achilles-after-suffering-pickup-soccer-injury"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu6aDWDCKmidC5lwzMLaXeWVLn-RQT6-96ImEfXM61V6E2EtXjkNUizOrljvA",
-      "image_credit": "ABC7 New York",
-      "news": [
-        {
-          "url": "https://abc7ny.com/story/mayor-mamdani-crutches-tearing-achilles-soccer-game/20059356/",
-          "title": "Mayor Mamdani on crutches after tearing his Achilles in soccer game",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu6aDWDCKmidC5lwzMLaXeWVLn-RQT6-96ImEfXM61V6E2EtXjkNUizOrljvA"
-        },
-        {
-          "url": "https://nypost.com/2026/11/20/us-news/mamdani-hobbles-on-crutches-after-injury-during-soccer-match/",
-          "title": "Mamdani hobbles on crutches to City Hall after suffering Archilles’ heel injury during soccer match",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMm95GWJD6UMLxFAkiv-r5-Ev-mTsNa1Rxef30S5jOKsbAOtIRS_EFNZrU7JY"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25535666-nyc-mayor-zohran-mamdani-reveals-he-tore-his-achilles-after-suffering-pickup-soccer-injury",
-          "title": "NYC Mayor Zohran Mamdani Reveals He Tore His Achilles After Suffering Pickup Soccer Injury",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6olbUDdWybp_CUnQONDJXOFoB6OVWAW5FGd8Bapit0zfBSi_Al8-YEo2X4O0"
-        }
-      ]
-    },
-    {
       "query": "pj simon",
       "approx_searches": "500+",
       "published_at": "2026-11-20T15:30:00Z",
       "related_news_urls": [
+        "https://tiebreakertimes.com.ph/tbt/magnolia-great-pj-simon-46-passes-away/390440",
         "https://www.spin.ph/basketball/pba/pba-great-pj-simon-rushed-to-hospital-after-collapsing-in-game-a2437-20261120?ref=home_feed_1",
         "https://fastbreak.com.ph/peter-june-simon-suffers-medical-emergency-during-basketball-game/sports-galore/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLRKKRom7seGcu1GWMg8SSH30L3z5-0VQqIZS5aDwm4PsTmSdOPC8yo4p0WYg",
-      "image_credit": "Spin.ph",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJTJN5TKzL6wIeGFeqGJkPPGhhrGFkDpzjvvjl7KcivZcm82BjKznHWX-Rd94",
+      "image_credit": "Tiebreaker Times",
       "news": [
+        {
+          "url": "https://tiebreakertimes.com.ph/tbt/magnolia-great-pj-simon-46-passes-away/390440",
+          "title": "Magnolia great PJ Simon, 46, passes away",
+          "publisher": "Tiebreaker Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJTJN5TKzL6wIeGFeqGJkPPGhhrGFkDpzjvvjl7KcivZcm82BjKznHWX-Rd94"
+        },
         {
           "url": "https://www.spin.ph/basketball/pba/pba-great-pj-simon-rushed-to-hospital-after-collapsing-in-game-a2437-20261120?ref=home_feed_1",
           "title": "PBA great PJ Simon rushed to hospital after collapsing in game",
@@ -135,216 +353,6 @@
           "publisher": "Twentefans.nl",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhnO2VyEGAzvnPl2BmEAgdcWbVoAEBX9pZPB7JR-g7L0RU40JQLOf_Fwyyxss"
-        }
-      ]
-    },
-    {
-      "query": "coin",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T15:20:00Z",
-      "related_news_urls": [
-        "https://www.al.com/news/huntsville/2026/11/us-mint-released-a-24-karat-trump-gold-coin-heres-what-it-costs.html",
-        "https://omaha.com/news/nation-world/government-politics/image_641e0531-a788-50c3-906f-7d277edc9015.html",
-        "https://www.coinnews.net/2026/11/19/mint-releases-250-trump-gold-coin/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8JlXmP74vOeSoOvVRVnok96eldE-Zjhgf9rzuHv62ckxiF-tjsic_vHXLTXw",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/news/huntsville/2026/11/us-mint-released-a-24-karat-trump-gold-coin-heres-what-it-costs.html",
-          "title": "U.S. Mint released a 24-karat Trump gold coin: Here’s what it costs",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8JlXmP74vOeSoOvVRVnok96eldE-Zjhgf9rzuHv62ckxiF-tjsic_vHXLTXw"
-        },
-        {
-          "url": "https://omaha.com/news/nation-world/government-politics/image_641e0531-a788-50c3-906f-7d277edc9015.html",
-          "title": "Trump gold coins",
-          "publisher": "Omaha World-Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThYZ6AyXoSne4CXWy7Uc-6UZpBI5fQf-OkCeQWxpNOU8yTVfVVnQV3Nk7ZEMg"
-        },
-        {
-          "url": "https://www.coinnews.net/2026/11/19/mint-releases-250-trump-gold-coin/",
-          "title": "U.S. Mint Releases $250 Trump Gold Coin, Dollar Bags",
-          "publisher": "CoinNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMaTHsd2RfYh6eTdwwBh_soZBos4oSmaqg4PUOYD0vMumvJlfWwNsyySd6Xzw"
-        }
-      ]
-    },
-    {
-      "query": "jimmy kimmel trump putin commentary",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T15:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/20/arts/television/jimmy-kimmel-trump-xi-putin-summit.html",
-        "https://www.cnn.com/2026/11/19/politics/video/donald-trump-vladimir-putin-ukraine-china-summit-ambassador-nato-jared-kushner",
-        "https://www.theguardian.com/culture/2026/nov/19/jimmy-kimmel-trump-xi-putin-summit-late-night"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvyLEx8JoZS7FzUU_BGfReS3HJyuv6LVbJ8wbYkQz8PowF43-zEiPPkXRXioI",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/20/arts/television/jimmy-kimmel-trump-xi-putin-summit.html",
-          "title": "Jimmy Kimmel Recaps Trump’s ‘Big Dim Summit’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvyLEx8JoZS7FzUU_BGfReS3HJyuv6LVbJ8wbYkQz8PowF43-zEiPPkXRXioI"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/19/politics/video/donald-trump-vladimir-putin-ukraine-china-summit-ambassador-nato-jared-kushner",
-          "title": "Former U.S. Ambassador: ‘shock and horror’ describe Ukraine’s reaction to Trump calling Putin ‘my friend’",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXYdXhZ0kjvb3XDRu-646oah0RZThMDICWrQ_0cb6ouhkkHJHS9HSplb8UDe4"
-        },
-        {
-          "url": "https://www.theguardian.com/culture/2026/nov/19/jimmy-kimmel-trump-xi-putin-summit-late-night",
-          "title": "Jimmy Kimmel on Trump’s meeting with Xi and Putin: ‘I guess Darth Vader couldn’t make it’",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReAtJ1d9PKd78D8pY8Dt_O7Lo_JHhG7dpQMIOI0350sbH_YLydQy5LFgnOT70"
-        }
-      ]
-    },
-    {
-      "query": "tqqq",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T15:20:00Z",
-      "related_news_urls": [
-        "https://www.tradingview.com/news/seekingalpha:ebcb021a5094b:0-pain-in-tqqq-soxl-may-offer-silver-lining-for-tech-stocks-socgen/",
-        "https://finance.yahoo.com/technology/ai/articles/exclusive-tesla-still-rules-leveraged-033004009.html",
-        "https://www.schaeffersresearch.com/content/options/2026/11/19/2-leveraged-etfs-draw-options-traders-as-tech-stocks-rebound"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY",
-      "image_credit": "TradingView",
-      "news": [
-        {
-          "url": "https://www.tradingview.com/news/seekingalpha:ebcb021a5094b:0-pain-in-tqqq-soxl-may-offer-silver-lining-for-tech-stocks-socgen/",
-          "title": "Pain in TQQQ, SOXL may offer silver lining for tech stocks - SocGen",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-tesla-still-rules-leveraged-033004009.html",
-          "title": "EXCLUSIVE: Tesla Still Rules Leveraged ETFs, but Anthropic IPO and Micron’s Rise Signal What’s Next",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEm0utryaWejY-YUz8wQKXWW4P6uIimAyisOmTI9UaxasDRIIWIWcRQ-AoYk"
-        },
-        {
-          "url": "https://www.schaeffersresearch.com/content/options/2026/11/19/2-leveraged-etfs-draw-options-traders-as-tech-stocks-rebound",
-          "title": "2 Leveraged ETFs Draw Options Traders as Tech Stocks Rebound",
-          "publisher": "Schaeffer's Investment Research",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsaHV5qWtBIayx6tn4D9imLQjKEejSe_G40cvPMNsHIOYXx_s0v4_PgZ5IyS8"
-        }
-      ]
-    },
-    {
-      "query": "vix",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T14:50:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/news/4675180-stocks-jump-more-than-10-percent-six-months-after-the-vix-reaches-28minus-33?utm_source=tradingview&utm_medium=referral&feed_item_type=news",
-        "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
-        "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTl7WjnVWAD4IQj1cOaR_4PC2mTJXr61WINdQ05PsaedrX51J7c39h-BKNeG-o",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/news/4675180-stocks-jump-more-than-10-percent-six-months-after-the-vix-reaches-28minus-33?utm_source=tradingview&utm_medium=referral&feed_item_type=news",
-          "title": "Stocks jump more than 10% six months after the VIX reaches 28-33",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTl7WjnVWAD4IQj1cOaR_4PC2mTJXr61WINdQ05PsaedrX51J7c39h-BKNeG-o"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
-          "title": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtFzxamjX-wQ0HKRTmXKVR6XqvfraOA-vFmsBHpI7Z3l3FNs23GkiQ48D6Xxc"
-        },
-        {
-          "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
-          "title": "Wall Street's fear gauge touches seven-month high as AI worries mount",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq1ESR5fXEraX1hmJ93NxxWaYFi17ZY7A2XEaEc3LH2vhj_bSFZ2Vm3uUt2og"
-        }
-      ]
-    },
-    {
-      "query": "presumed innocent",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T14:50:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/presumed-innocent-season-2-release-date-photos-teaser-1237229678/",
-        "https://variety.com/2026/tv/news/presumed-innocent-season-2-release-date-trailer-1236953834/",
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/presumed-innocent-gets-season-2-140000049.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNGw2-DCXatD581r1LRP1fOfjltwIFB6JvjiE6reSbi9bhPX55lY3wDNEHVQ4",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/presumed-innocent-season-2-release-date-photos-teaser-1237229678/",
-          "title": "'Presumed Innocent' Sets Season 2 Release Date, Unveils First Photos",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNGw2-DCXatD581r1LRP1fOfjltwIFB6JvjiE6reSbi9bhPX55lY3wDNEHVQ4"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/presumed-innocent-season-2-release-date-trailer-1236953834/",
-          "title": "'Presumed Innocent' Season 2 Release Date, Trailer Dropped by Apple",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAPlmzVdxag26x0jsCoDaepMbA9Gwl-3hsSopbPt1xpdQ-3GUFDjiXmrdNyLY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/presumed-innocent-gets-season-2-140000049.html",
-          "title": "Presumed Innocent Gets Season 2 Premiere Date At Apple TV — Watch Rachel Brosnahan And Matthew Rhys Face Off In Court In A New Teaser",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoyG1yOUctHdwPaDzFcp8KRaMT_qvt9FsKQk-9_zXIBpwz_NmpPEtSdYbBYoo"
-        }
-      ]
-    },
-    {
-      "query": "s&p500",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-20T14:50:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html",
-        "https://www.cnn.com/2026/11/19/tech/anthropic-employees-now-millionaires",
-        "https://finance.yahoo.com/technology/article/anthropics-ipo-ties-the-fate-of-the-us-economy-closer-to-ai-110000224.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSowNLE_X_AeW7MSDuoU9T1bbuIDogiKM1zokvMY-pq3xeKlI95GknIUHcTcQs",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html",
-          "title": "Anthropic stock falls 9% to open first full day of trading amid AI sell-off",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSowNLE_X_AeW7MSDuoU9T1bbuIDogiKM1zokvMY-pq3xeKlI95GknIUHcTcQs"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/19/tech/anthropic-employees-now-millionaires",
-          "title": "Almost all of Anthropic’s employees are now millionaires",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuCmn2t76ITX01LcMUuvVZjts2QimNw3isyM78kQqpAD2I77yLH4BStuGPX5Q"
-        },
-        {
-          "url": "https://finance.yahoo.com/technology/article/anthropics-ipo-ties-the-fate-of-the-us-economy-closer-to-ai-110000224.html",
-          "title": "Anthropic's IPO ties the fate of the US economy closer to AI",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQom2nShqUushVzBaT_XxyJ0Q3ZeHPwyzZ-hIcf8ZpW6FoYBe7pWFtWcpitZxI"
         }
       ]
     }
