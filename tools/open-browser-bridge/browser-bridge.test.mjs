@@ -7,9 +7,9 @@ import { readFile } from 'node:fs/promises';
 test('runner checks final navigation destination before screenshot and success receipt', async () => {
   const source = await readFile(new URL('./browser-bridge.mjs', import.meta.url), 'utf8');
   const navigation = source.indexOf('await page.goto(raw,');
-  const finalCheck = source.indexOf('isAllowedUrl(page.url(), allowed)');
+  const finalCheck = source.search(/isAllowedUrl\\(page\\.url\\(\\),\\s*allowed,\\s*\\{torIsolated:isolated\\}\\)/);
   const screenshot = source.indexOf('await page.screenshot(');
-  const receipt = source.indexOf('console.log(JSON.stringify({ ok: true');
+  const receipt = source.indexOf('console.log(JSON.stringify({ok:true');
   assert.ok(navigation >= 0 && finalCheck > navigation, 'final URL must be checked after navigation');
   assert.ok(screenshot > finalCheck, 'screenshot must follow final URL check');
   assert.ok(receipt > screenshot, 'success receipt must follow screenshot');
