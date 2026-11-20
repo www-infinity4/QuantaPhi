@@ -146,6 +146,30 @@ test('Improve with Bubbles prepares the actual existing editor and preserves an 
   await expect(page.locator('textarea[aria-label="Work request for Robot Brain"]')).toHaveValue('My unsent work');
 });
 
+test('real owner-ticket activity is separate from demo replay and erased at owner sign-out', async ({page}) => {
+  await page.goto(base + '/bubbles.html#avatarBuilder');
+  const builder = page.locator('#avatarBuilder');
+  await builder.locator('.av-activity summary').click();
+  await expect(builder.locator('.av-activity-count')).toContainText('No owner ticket observed');
+  await page.evaluate(() => window.dispatchEvent(new CustomEvent('bubbles:iteration', {detail:{
+    type:'job',ticketId:'IW-20261119-AABBCCDD',repository:'www-infinity4/QuantaPhi',status:'working'
+  }})));
+  await expect(builder.locator('.av-activity-count')).toContainText('working');
+  await page.evaluate(() => window.dispatchEvent(new CustomEvent('bubbles:iteration', {detail:{
+    type:'job_step',ticketId:'IW-20261119-AABBCCDD',repository:'www-infinity4/QuantaPhi',
+    source:'owner_ticket_snapshot',status:'working',runnerPhase:'checks_started',
+    runnerJob:'TASK-1',stage:'Checks started',thought:'private internal reasoning',
+    runUrl:'https://github.com/www-infinity4/QuantaPhi/actions/runs/1234'
+  }})));
+  await expect(builder.locator('.av-activity-steps li')).toHaveCount(2);
+  await expect(builder.locator('.av-activity-steps a')).toHaveAttribute('href','https://github.com/www-infinity4/QuantaPhi/actions/runs/1234');
+  await expect(builder).not.toContainText('private internal reasoning');
+  await page.evaluate(() => window.dispatchEvent(new Event('bubbles:owner-lost')));
+  await expect(builder.locator('.av-activity-count')).toContainText('No owner ticket observed');
+  await expect(builder.locator('.av-activity-steps li')).toHaveCount(0);
+  await expect(builder.getByText('Demo replay',{exact:true})).toBeVisible();
+});
+
 test('the orb embed keeps the full builder hidden', async ({page}) => {
   await page.goto(base + '/bubbles.html?embed=1');
   await expect(page.locator('#avatarBuilder')).toBeHidden();
