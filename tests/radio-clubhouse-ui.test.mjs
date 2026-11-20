@@ -68,6 +68,17 @@ test('Radio Clubhouse browser refresh, archive labels, pending rewards and BFCac
   await flush();
   assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['9']);
   assert.match(find(mount,'rc-status')[0].textContent,/previously retrieved/);
+  // No verified live feed and no cached snapshot must not make a 2025
+  // discussion look like the first/current Radio Clubhouse post.
+  cache.delete('quantaphi:radio-clubhouse:latest:v1');
+  await find(mount,'rc-refresh')[0].listeners.click();
+  await flush();
+  assert.equal(find(mount,'rc-topic').length,0,'archived topics hidden until explicitly requested');
+  const archiveChoice=find(mount,'rc-archive-toggle')[0];
+  assert.ok(archiveChoice,'separate archive action');
+  assert.equal(archiveChoice.hidden,false);
+  archiveChoice.listeners.click();
+  assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['448450']);
  }finally{
   for(const key of Object.keys(prior))Object.defineProperty(globalThis,key,{configurable:true,writable:true,value:prior[key]});
  }
