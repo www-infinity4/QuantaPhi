@@ -143,6 +143,39 @@ def run():
                 chooser.select_option('source-abbecadventures-video-6346365875734e4f666a4d')
                 expect(stage.locator('[data-source-id="abbecadventures-video-6346365875734e4f666a4d"]')).to_be_visible()
                 checks.append(f'{width}px: 12 original YouTube source cards with media placement in Oracle')
+
+                # A deterministic, source-shaped D1 response tests the NEW family
+                # channel interface without assuming external Worker availability in CI.
+                family_fixture={'channel':'family-parenting-tv','partial':True,'videos':[
+                    {'video_id':'5Ox2EPCwt4s','channel_key':'family-parenting-tv',
+                     'title':'National Child Care Compensation Data','publisher':'Child Care Aware® of America',
+                     'publisher_url':'https://www.youtube.com/@CCAofAmerica',
+                     'source_url':'https://www.youtube.com/watch?v=5Ox2EPCwt4s',
+                     'topic':'provider-training','observed_at':'2026-11-20',
+                     'published_at':None,'content_boundary':'family-education'}
+                ]}
+                def family_api(route):
+                    route.fulfill(status=200, content_type='application/json',
+                        headers={'access-control-allow-origin':base,'access-control-allow-credentials':'false'},
+                        body=json.dumps(family_fixture))
+                page.route('https://quantaphi-family-parenting-tv.marvaseater.workers.dev/episodes', family_api)
+                page.goto(base+'/source-quick-card.html?card=family-parenting-tv', wait_until='domcontentloaded')
+                family=page.locator('.qcx-family-tv')
+                expect(family).to_be_visible()
+                expect(family).to_contain_text('Family education')
+                expect(family).to_contain_text('Cloudflare D1 read-only database')
+                expect(family.get_by_role('status')).to_contain_text('1 of 1',timeout=10000)
+                assert family.locator('iframe').count()==0, 'No family YouTube iframe before click'
+                assert family.get_by_role('link',name='Read original on YouTube').get_attribute('href').endswith('5Ox2EPCwt4s')
+                family.get_by_role('button',name='Play original in card').click()
+                expect(family.locator('iframe')).to_have_attribute('src','https://www.youtube-nocookie.com/embed/5Ox2EPCwt4s')
+                family.get_by_role('button',name='Stop playback').click()
+                expect(family.locator('iframe')).to_have_count(0)
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Family TV overflow'
+                page.goto(base+'/?card=family-parenting-tv',wait_until='domcontentloaded')
+                expect(page.locator('#oracleCardStage [data-source-id="family-parenting-tv"]')).to_be_visible(timeout=20000)
+                assert page.locator('#oracleCardChooser option[value="source-family-parenting-tv"]').count()==1
+                checks.append(f'{width}px: separate D1 family channel in Oracle, search/player controls, no autoplay or overflow')
                 context.close()
             browser.close()
     finally:
