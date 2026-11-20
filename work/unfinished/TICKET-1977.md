@@ -69,3 +69,10 @@ not bypass account gates or treat a successful import as complete history.
 Browser, independent review, exact-head CI, guarded merge, deployment and live
 acceptance receipts must be recorded separately. Desktop Chromium at mobile
 width is not a physical Android device receipt.
+
+## Session 2 — 2026-11-19 (photo-source continuation)
+
+- Owner requested continuing the creator carousel after asking about photos. Keep the card suitable for general audiences; no explicit imagery or unlicensed photo copies were added.
+- Added a verified official event-gallery **source link** to the creator and individual post Quick Cards: https://elenacardone.com/elena-cardone-event-gallery/. Link opens the publisher site; the asset remains owned/hosted there. Existing public portrait and consented original X embeds were preserved.
+- Added Chromium 360px/1280px gallery-link assertion before the source edit (negative precondition: the link did not exist). The new branch CI must verify code plus browser test. Prior exact head `2d939edcaedb32320ff4ee93d2eb95bbc33b586f` had 67/67 passing workflow runs and no recorded independent review; this new commit needs its **own** checks and review.
+- No full X archive, licensed media bundle, live deploy, physical Android acceptance, or independent approval is claimed. Next: verify CI for this exact head, obtain external review approval, then guarded merge and live verification.

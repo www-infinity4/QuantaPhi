@@ -72,7 +72,7 @@ export function mountCreatorPostCard(root,card){
   actions.append(load);
   content.append(topicLine,heading,date,summary,actions,consent,embed);
  }
- const sources=el('div','qcx-controls');sources.append(link('X profile',creator.profileUrl),link('Elena’s website',creator.website));
+ const sources=el('div','qcx-controls');sources.append(link('X profile',creator.profileUrl),link('Elena’s website',creator.website),link('Official event photos','https://elenacardone.com/elena-cardone-event-gallery/'));
  if(card.postId){const all=el('a','qcx-link','Browse indexed posts');all.href='/source-quick-card.html?card='+creator.id;sources.append(all);}
  else{
   sources.append(button('Export indexed database',()=>{

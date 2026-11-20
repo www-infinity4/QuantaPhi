@@ -55,6 +55,7 @@ def run():
                 card = page.locator('.creator-post-card')
                 expect(card).to_be_visible()
                 expect(card.locator('.creator-coverage')).to_have_text('5 indexed posts · partial public snapshot')
+                expect(card.get_by_role('link', name='Official event photos')).to_have_attribute('href', 'https://elenacardone.com/elena-cardone-event-gallery/')
                 assert not widget_requests, 'Creator post card must not contact X widgets before a visitor request'
                 search = card.get_by_role('searchbox', name='Search Elena Cardone indexed posts')
                 search.fill('gratitude')
