@@ -3,47 +3,222 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T07:01:45.673162Z",
+  "checked_at": "2026-11-20T07:31:22.608628Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "earthquake",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-20T06:40:00Z",
+      "query": "san diego",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T07:10:00Z",
       "related_news_urls": [
-        "https://kyivindependent.com/strongest-earthquake-in-years-hits-romania-tremors-felt-in-ukraine/",
-        "https://moldova1.md/p/90615/scientists-do-not-rule-out-new-tremors-after-5-7-vrancea-quake",
-        "https://www.romaniajournal.ro/society-people/romanias-home-disaster-insurance-coverage-remains-very-poor/"
+        "https://www.cbs8.com/article/news/local/san-diego-lifeguard-captain-sues-over-gender-discrimination/509-75c94133-0bd0-404b-9376-db4675292fc7",
+        "https://www.nbcsandiego.com/news/investigations/systemic-sexual-harassment-found-within-san-diego-fire-rescues-lifeguard-services/4103715/",
+        "https://www.yahoo.com/news/us/articles/groping-oral-sex-requests-vicious-212451449.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzN_KaiPxT4we_UOoBrf2WmbXoYqhGk3-qOIvmJrc2O5iHMxOF6kgzqJ48Vu8",
-      "image_credit": "The Kyiv Independent",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqOaZV24RE8MDYJn3yeFLuKkVnD2j8uSHJbB72_NGZj6XxlDiMi9dBrpJ8af8",
+      "image_credit": "cbs8.com",
       "news": [
         {
-          "url": "https://kyivindependent.com/strongest-earthquake-in-years-hits-romania-tremors-felt-in-ukraine/",
-          "title": "Strongest earthquake in years hits Romania, tremors felt in Ukraine",
-          "publisher": "The Kyiv Independent",
+          "url": "https://www.cbs8.com/article/news/local/san-diego-lifeguard-captain-sues-over-gender-discrimination/509-75c94133-0bd0-404b-9376-db4675292fc7",
+          "title": "San Diego lifeguard captain sues over gender discrimination",
+          "publisher": "cbs8.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzN_KaiPxT4we_UOoBrf2WmbXoYqhGk3-qOIvmJrc2O5iHMxOF6kgzqJ48Vu8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqOaZV24RE8MDYJn3yeFLuKkVnD2j8uSHJbB72_NGZj6XxlDiMi9dBrpJ8af8"
         },
         {
-          "url": "https://moldova1.md/p/90615/scientists-do-not-rule-out-new-tremors-after-5-7-vrancea-quake",
-          "title": "Scientists do not rule out new tremors after 5.7 Vrancea quake",
-          "publisher": "Moldova 1",
+          "url": "https://www.nbcsandiego.com/news/investigations/systemic-sexual-harassment-found-within-san-diego-fire-rescues-lifeguard-services/4103715/",
+          "title": "Systemic sexual harassment found within San Diego Fire-Rescue's Lifeguard Services",
+          "publisher": "NBC 7 San Diego",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToxnQyrvXjW5MO30Gu-Pyy3ifAKs3lHjHJG-96SjCBL4bPRibq6fKU90KVNMA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQll6-hp0wh7_cvIBvG6VywA_ZJjNGVMAisWdChT0z9ZTu6vkjMYZ-yyvvvo7k"
         },
         {
-          "url": "https://www.romaniajournal.ro/society-people/romanias-home-disaster-insurance-coverage-remains-very-poor/",
-          "title": "Romania’s Home Disaster Insurance Coverage Remains Very Poor",
-          "publisher": "The Romania Journal",
+          "url": "https://www.yahoo.com/news/us/articles/groping-oral-sex-requests-vicious-212451449.html",
+          "title": "Groping, oral sex requests and vicious nicknames: Sordid secrets of top California lifeguard station revealed — as women speak out",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgpZFHfWa7ZYmWpTBSx3eX1PrK3tj56UJss7Fm_pm7XZs2LA28s7A5RIeN9M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ416Iqihva5_9-h0bF2y0iAJo-0BLIeNxCCiXf8ss6NWB6JPlwtltPXft56Mk"
+        }
+      ]
+    },
+    {
+      "query": "apple store black friday deals",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T07:00:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/cnn-underscored/deals/apple-black-friday-deals-2026-11-19",
+        "https://www.usatoday.com/story/shopping/deals/retailers/amazon/2026/11/16/apple-airpods-pro-3-wireless-earbuds-early-black-friday-deal/92807086007/",
+        "https://people.com/early-apple-black-friday-deals-amazon-november-2026-12187514"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpH8WTxBydFo7bppiNzGeT69Bays1a_r-xObRxklraXovRNHf05U1y0BHssIA",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/apple-black-friday-deals-2026-11-19",
+          "title": "Black Friday prices are officially live on Apple Watches, AirTags, MacBooks and more",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpH8WTxBydFo7bppiNzGeT69Bays1a_r-xObRxklraXovRNHf05U1y0BHssIA"
+        },
+        {
+          "url": "https://www.usatoday.com/story/shopping/deals/retailers/amazon/2026/11/16/apple-airpods-pro-3-wireless-earbuds-early-black-friday-deal/92807086007/",
+          "title": "Apple’s AirPods Pro 3 just got a huge early Black Friday price cut",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYgrgsNbMh6_0IZoC4ZQgSKG-Z4m1rV1shd6-6x415lewpmEp39KTcIEIuZ1s"
+        },
+        {
+          "url": "https://people.com/early-apple-black-friday-deals-amazon-november-2026-12187514",
+          "title": "Apple AirPods, Watches, and More Hot-Ticket Tech Finds Are Already on Sale Ahead of Black Friday — from $15",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpqN-YcTH_L7Til_qauwLR4gJehK4GjaByBh-QRecoP1kiaP6_HmUt1f8LmOM"
+        }
+      ]
+    },
+    {
+      "query": "mama awards 2026",
+      "approx_searches": "100+",
+      "published_at": "2026-11-20T07:00:00Z",
+      "related_news_urls": [
+        "https://news.samsung.com/global/samsung-tv-plus-brings-2026-mama-awards-to-k-pop-fans-around-the-world",
+        "https://www.koreajoongangdaily.com/entertainment/live-enhypen-cl-and-babymonster-line-up-for-the-opening-night-of-the-mama-awards/12983050",
+        "https://biz.chosun.com/en/en-photo-ent/2026/11/18/KEMAE65XYBHNBHOU45WSMZRSHI/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfgn0bSy4zW1Vz1SKVfuuXHWDbMCBsBuLW2AjtA0rnDBZfUxUhMJ0UgNjW-M",
+      "image_credit": "samsung.com",
+      "news": [
+        {
+          "url": "https://news.samsung.com/global/samsung-tv-plus-brings-2026-mama-awards-to-k-pop-fans-around-the-world",
+          "title": "Samsung TV Plus Brings 2026 MAMA AWARDS to K-pop Fans Around the World",
+          "publisher": "samsung.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfgn0bSy4zW1Vz1SKVfuuXHWDbMCBsBuLW2AjtA0rnDBZfUxUhMJ0UgNjW-M"
+        },
+        {
+          "url": "https://www.koreajoongangdaily.com/entertainment/live-enhypen-cl-and-babymonster-line-up-for-the-opening-night-of-the-mama-awards/12983050",
+          "title": "LIVE: Enhypen, CL and BabyMonster line up for the opening night of the MAMA Awards",
+          "publisher": "Korea JoongAng Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIj-Lmu1_j_efnMq7liXCGMRSBCtJNEVErVOqNOrZfuJqp4R65p7pqxpJctas"
+        },
+        {
+          "url": "https://biz.chosun.com/en/en-photo-ent/2026/11/18/KEMAE65XYBHNBHOU45WSMZRSHI/",
+          "title": "[Photo] ILLIT’s Yun-ah and Min-ju bundle up against chilly exam-day weather",
+          "publisher": "Chosunbiz",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWQ1kkvluWpBPRUGmERcQDjJCygFnvPWIMneoM50bP-bLQ8zLVxI8yq7-43Pc"
+        }
+      ]
+    },
+    {
+      "query": "navajo stirling",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T07:00:00Z",
+      "related_news_urls": [
+        "https://www.ufc.com/news/navajo-stirling-four-up-four-down-light-heavyweight-ufc-qatar",
+        "https://sports.yahoo.com/articles/ufc-fight-night-294-official-054746608.html",
+        "https://www.sherdog.com/news/news/Jiri-Prochazka-says-Navajo-Stirling-is-like-fighting-his-younger-self-203687"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMNBeafxnJMFVJ-Wwnaf9QeW2hxUkERLhgqK9wJmszkCQLaMm3Fh78oXiuR8U",
+      "image_credit": "UFC.com",
+      "news": [
+        {
+          "url": "https://www.ufc.com/news/navajo-stirling-four-up-four-down-light-heavyweight-ufc-qatar",
+          "title": "Navajo Stirling | Four Up, Four Down",
+          "publisher": "UFC.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMNBeafxnJMFVJ-Wwnaf9QeW2hxUkERLhgqK9wJmszkCQLaMm3Fh78oXiuR8U"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ufc-fight-night-294-official-054746608.html",
+          "title": "UFC Fight Night 294 official weigh-in results from Qatar",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiEzXPs0XgPC4aGtZ-fyuzIBHEaBCZ6Fau5lOeqH8xL0M95u19ALYj6Va2YSM"
+        },
+        {
+          "url": "https://www.sherdog.com/news/news/Jiri-Prochazka-says-Navajo-Stirling-is-like-fighting-his-younger-self-203687",
+          "title": "Jiri Prochazka says Navajo Stirling is like fighting his younger self",
+          "publisher": "Sherdog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_L9OFRAcdhX7FSgo7KJbDmn_kSzncGOKh8DwITtgi48LjBvVrRxQs7bK2_Lo"
+        }
+      ]
+    },
+    {
+      "query": "earthquake alert",
+      "approx_searches": "500+",
+      "published_at": "2026-11-20T06:50:00Z",
+      "related_news_urls": [
+        "https://meteoraweb.com/en/news/android-earthquake-alerts-italy-three-warning-levels",
+        "https://www.androidpolice.com/android-earthquake-alerts-explained/",
+        "https://pasqualepillitteri.it/en/news/35090/android-earthquake-alerts-italy-how-it-works"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbc8Q9OABCn6lamRsw9ZgBF_YFLiRNctNXtoSbSc7tSEIlDjPZucWV3bbXF1Y",
+      "image_credit": "Meteora Web",
+      "news": [
+        {
+          "url": "https://meteoraweb.com/en/news/android-earthquake-alerts-italy-three-warning-levels",
+          "title": "Android Earthquake Alerts in Italy, How They Work",
+          "publisher": "Meteora Web",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbc8Q9OABCn6lamRsw9ZgBF_YFLiRNctNXtoSbSc7tSEIlDjPZucWV3bbXF1Y"
+        },
+        {
+          "url": "https://www.androidpolice.com/android-earthquake-alerts-explained/",
+          "title": "A calm guide to Android's three earthquake alerts, before one wakes you up at 3 AM",
+          "publisher": "Android Police",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjMF2j28g7JjQFq-E5Cd2Unf5IA-bqwrlBA_3or7l2QdaPMYKnSMxkkFRKTkQ"
+        },
+        {
+          "url": "https://pasqualepillitteri.it/en/news/35090/android-earthquake-alerts-italy-how-it-works",
+          "title": "Android earthquake alerts arrive in Italy, how Google's phone-based warning works",
+          "publisher": "Pasquale Pillitteri",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdJLf3lL5LdjQZxf0UJikZSOCaoWWRaDkrHlanrwusUXQFCW_2tlZsdm8qrc8"
+        }
+      ]
+    },
+    {
+      "query": "earthquake",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-20T06:40:00Z",
+      "related_news_urls": [
+        "https://www.sfchronicle.com/earthquakes/article/magnitude-5-4-earthquake-strikes-san-benito-county-22541093.php",
+        "https://www.cbsnews.com/sanfrancisco/news/earthquake-near-san-benito-nov-19/",
+        "https://www.mercurynews.com/2026/11/19/magnitude-5-0-quake-rattles-central-coast/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPfnQAnYCXrKMEcIN68SE3fOXLIv2QMYkuF2UsTnX-0YBwxb2GWb7VSSbepMc",
+      "image_credit": "San Francisco Chronicle",
+      "news": [
+        {
+          "url": "https://www.sfchronicle.com/earthquakes/article/magnitude-5-4-earthquake-strikes-san-benito-county-22541093.php",
+          "title": "Magnitude 5.1 earthquake strikes Central California",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPfnQAnYCXrKMEcIN68SE3fOXLIv2QMYkuF2UsTnX-0YBwxb2GWb7VSSbepMc"
+        },
+        {
+          "url": "https://www.cbsnews.com/sanfrancisco/news/earthquake-near-san-benito-nov-19/",
+          "title": "Magnitude 5.0 earthquake strikes near San Benito County, USGS says",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzbrG72hUVDyKBThPJfcLU70VZldPpj3KH-V-F0h9CQkwDVdsv5ZOHmEa_X0w"
+        },
+        {
+          "url": "https://www.mercurynews.com/2026/11/19/magnitude-5-0-quake-rattles-central-coast/",
+          "title": "Magnitude 5.0 quake rattles Central Coast",
+          "publisher": "The Mercury News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRi6Lk2n_WSsyBQ0Ut8Z7Y5JQrbC4GmIWg7wL9z8Igoezo2DybF0p1N3fTdEPM"
         }
       ]
     },
     {
       "query": "earthquake san jose",
-      "approx_searches": "500+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-20T06:40:00Z",
       "related_news_urls": [
         "https://www.mlssoccer.com/playoffs/2026/news/san-jose-earthquakes-vs-houston-dynamo-5-biggest-storylines-for-western-conference-round-one",
@@ -65,7 +240,7 @@
           "title": "San Jose Earthquakes prepare for first playoff game at PayPal Park",
           "publisher": "KTVU",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT5Xih4bdLf0OhQeWkXJtEwkTvHIWIJdMEwlP4LDpbNDZSAg6dohaglvxGf1k"
         },
         {
           "url": "https://www.houstondynamofc.com/news/houston-dynamo-fc-to-host-official-game-1-watch-party-at-pitch-25-on-tuesday-nov-24-facing-san-jose-earthquakes-in-the-round-one-best-of-3-series",
@@ -77,8 +252,43 @@
       ]
     },
     {
+      "query": "usgs earthquake",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T06:40:00Z",
+      "related_news_urls": [
+        "https://www.wcnc.com/article/weather/earthquake-rowan-county-north-carolina-brad-panovich-explanation/275-7b21db90-8a99-4598-b844-11d0ea45ae19",
+        "https://www.charlotteobserver.com/news/local/article318132284.html",
+        "https://www.wbtv.com/2026/11/18/earthquake-strikes-near-iredell-rowan-county-line-data-shows/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA2ZIc3ShKAzFseWoiFp-MIRjohvMoVREuDufetEe4DYNhTCc9FYfZ1-TC9MA",
+      "image_credit": "WCNC",
+      "news": [
+        {
+          "url": "https://www.wcnc.com/article/weather/earthquake-rowan-county-north-carolina-brad-panovich-explanation/275-7b21db90-8a99-4598-b844-11d0ea45ae19",
+          "title": "2.4 magnitude earthquake shakes Rowan County late Tuesday night",
+          "publisher": "WCNC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA2ZIc3ShKAzFseWoiFp-MIRjohvMoVREuDufetEe4DYNhTCc9FYfZ1-TC9MA"
+        },
+        {
+          "url": "https://www.charlotteobserver.com/news/local/article318132284.html",
+          "title": "Earthquake in North Carolina was felt by people 25 miles away, USGS data shows",
+          "publisher": "Charlotte Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQN9PLTA9M3I6nB1CqbdMtfyrtjPnjU4ZagHO_QltZtIUtwDlICyhJxeG_waJQ"
+        },
+        {
+          "url": "https://www.wbtv.com/2026/11/18/earthquake-strikes-near-iredell-rowan-county-line-data-shows/",
+          "title": "Earthquake strikes near Iredell-Rowan County line, data shows",
+          "publisher": "WBTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJGp7Axu2-WqoaDgBHlwIj1BphE62k4kesGs9Y1JgCGzSGvuPgebC9IgtvrFU"
+        }
+      ]
+    },
+    {
       "query": "earthquake today",
-      "approx_searches": "200+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-20T06:40:00Z",
       "related_news_urls": [
         "https://www3.nhk.or.jp/nhkworld/news/20261119de78099/",
@@ -112,247 +322,37 @@
       ]
     },
     {
-      "query": "earthquake california",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T06:40:00Z",
-      "related_news_urls": [
-        "https://www.sacbee.com/news/california/earthquakes/article318131143.html",
-        "https://www.sacbee.com/news/california/earthquakes/article318113556.html",
-        "https://www.sacbee.com/news/california/earthquakes/article318077017.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQKsyypAqpC_wvEkoZntkbP-qbgrXv5-eNCiXgGmnmJdDKgEs-Wf2EoS_sut4",
-      "image_credit": "Sacramento Bee",
-      "news": [
-        {
-          "url": "https://www.sacbee.com/news/california/earthquakes/article318131143.html",
-          "title": "Seismic activity on Nov. 17: Earthquake close to Devore, CA registered - magnitude 2.1",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQKsyypAqpC_wvEkoZntkbP-qbgrXv5-eNCiXgGmnmJdDKgEs-Wf2EoS_sut4"
-        },
-        {
-          "url": "https://www.sacbee.com/news/california/earthquakes/article318113556.html",
-          "title": "Seismic activity on Nov. 17: Earthquake near The Geysers, CA reported - magnitude 2.5",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCpzB3wT-myYP1EQzU8CzglEjUyRZHiKxz4nSV26uaw_b6M0XgroZVkOtJdh0"
-        },
-        {
-          "url": "https://www.sacbee.com/news/california/earthquakes/article318077017.html",
-          "title": "Update: Earthquake measuring 3.0 shakes area near Holtville, CA on Nov. 14",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrxXgfN0Ld0GOkuW16zsdmX7jCSKIME-UGm2pHDKjO_XW7LOzGpUQAQPPyhsI"
-        }
-      ]
-    },
-    {
       "query": "how to sell cars in gta 6",
-      "approx_searches": "200+",
+      "approx_searches": "100+",
       "published_at": "2026-11-20T06:40:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/19/where-to-get-the-car-key-cloner-in-gta-6/",
-        "https://www.polygon.com/gta-6-keep-stolen-vehicles-weapons-register/",
-        "https://culturedvultures.com/gta-6-how-to-register-a-new-vehicle/"
+        "https://mashable.com/entertainment/gta-6-hidden-cash-talking-parrot",
+        "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
+        "https://www.polygon.com/gta-6-grand-theft-auto-how-to-rob-exotic-animal-front-cash-location/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRySO58vH5S8b-8T-1AMY9WP-uSnbeOA5HQEks_hOoVC8L8DpSLX0h29NMzJUw",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfMb9S-bclpGdFjhbXTrBXcPzRJbv567FfolWOf4mOE2apj8OpDsezf4MO3Fg",
+      "image_credit": "Mashable",
       "news": [
         {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/19/where-to-get-the-car-key-cloner-in-gta-6/",
-          "title": "Where To Get The Car Key Cloner In ‘GTA 6’",
+          "url": "https://mashable.com/entertainment/gta-6-hidden-cash-talking-parrot",
+          "title": "'GTA 6': How to use a talking parrot to find a stash of money",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfMb9S-bclpGdFjhbXTrBXcPzRJbv567FfolWOf4mOE2apj8OpDsezf4MO3Fg"
+        },
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
+          "title": "The Best Ways To Earn Money In ‘GTA 6,’ Early, Mid- And Late-Game",
           "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRySO58vH5S8b-8T-1AMY9WP-uSnbeOA5HQEks_hOoVC8L8DpSLX0h29NMzJUw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno"
         },
         {
-          "url": "https://www.polygon.com/gta-6-keep-stolen-vehicles-weapons-register/",
-          "title": "How to keep stolen cars and weapons in GTA 6",
+          "url": "https://www.polygon.com/gta-6-grand-theft-auto-how-to-rob-exotic-animal-front-cash-location/",
+          "title": "How to rob the Exotic Animal Front in GTA 6",
           "publisher": "Polygon.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_tb4fXYgMq5d95wDSwBTKGRwts8u_dgGoKh4ZbOTzMshQyuoiNL6yBauiEwE"
-        },
-        {
-          "url": "https://culturedvultures.com/gta-6-how-to-register-a-new-vehicle/",
-          "title": "GTA 6: How To Register A New Vehicle",
-          "publisher": "Cultured Vultures",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfg_77pWoE0eBpI5mJk0_6oAaK_pkIPxAxCzDv61F30FlcTvx-7G12MiqBcZI"
-        }
-      ]
-    },
-    {
-      "query": "tyran stokes",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T06:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50537388/kansas-star-tyran-stokes-play-houston",
-        "https://247sports.com/college/kansas/article/tyran-stokes-kansas-basketball-game-time-decision-292949183/",
-        "https://bleacherreport.com/articles/25534913-tyran-stokes-injured-latest-top-nba-prospect-and-bill-selfs-reaction-after-kansas-win"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoaA_vaVN0CXPi1-hxmNjO6obgi267vcq9DeXyqwv8yaKGV4gdSjd3wKeSk4o",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50537388/kansas-star-tyran-stokes-play-houston",
-          "title": "KU's Tyran Stokes faces Houston after 1-game absence",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoaA_vaVN0CXPi1-hxmNjO6obgi267vcq9DeXyqwv8yaKGV4gdSjd3wKeSk4o"
-        },
-        {
-          "url": "https://247sports.com/college/kansas/article/tyran-stokes-kansas-basketball-game-time-decision-292949183/",
-          "title": "Tyran Stokes a game time decision against WVU",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLa_FVw4c3cGk3PWsAGfTeJVS_DVpJZRiBqABNG966BGVKk8oGLP-dwxul5qs"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25534913-tyran-stokes-injured-latest-top-nba-prospect-and-bill-selfs-reaction-after-kansas-win",
-          "title": "Tyran Stokes Injured, Latest on Top NBA Prospect and Bill Self's Reaction After Kansas' Win",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9LUPpADw8nn4Vo9FtDq7uIsIufewvngazDOrozU34gOG1qmRpiZRyrbIaVLg"
-        }
-      ]
-    },
-    {
-      "query": "tyler barton missing colorado",
-      "approx_searches": "100+",
-      "published_at": "2026-11-20T06:10:00Z",
-      "related_news_urls": [
-        "https://kdvr.com/news/local/body-found-in-park-county-believed-to-be-missing-littleton-city-employee/",
-        "https://www.cbsnews.com/colorado/news/tyler-barton-search-missing-man-littleton/",
-        "https://www.denver7.com/news/front-range/littleton/city-of-littleton-employees-disappearance-concerning-as-search-for-him-gets-underway-police-say"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBf_oVNUcOG0JO277hvnVNM4DR1raqFIQ8AN16IbZiJr5CujKVbRtxkdWi1nI",
-      "image_credit": "KDVR",
-      "news": [
-        {
-          "url": "https://kdvr.com/news/local/body-found-in-park-county-believed-to-be-missing-littleton-city-employee/",
-          "title": "Body found in Park County believed to be missing Littleton city employee",
-          "publisher": "KDVR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBf_oVNUcOG0JO277hvnVNM4DR1raqFIQ8AN16IbZiJr5CujKVbRtxkdWi1nI"
-        },
-        {
-          "url": "https://www.cbsnews.com/colorado/news/tyler-barton-search-missing-man-littleton/",
-          "title": "Body found, believed to be that of Littleton employee and police say no evidence of foul play",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVYAoab3RTNUq1pcIO6s0tdAWphb-KIKSAmfcZ1xjMCB4DSbFvr2J3gZQDtmw"
-        },
-        {
-          "url": "https://www.denver7.com/news/front-range/littleton/city-of-littleton-employees-disappearance-concerning-as-search-for-him-gets-underway-police-say",
-          "title": "City of Littleton employee’s disappearance ‘concerning’ as search for him gets underway, police say",
-          "publisher": "Denver7",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYvIc76PDBxHJOLsfdqukM51Acdf-FWLrr2qeJRaW7q4q_dhHKWewafLpHgIg"
-        }
-      ]
-    },
-    {
-      "query": "miles teller",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T06:00:00Z",
-      "related_news_urls": [
-        "https://ourculturemag.com/miles-teller-worth-salary-highest-grossing-movies/",
-        "https://www.nytimes.com/2026/11/15/movies/adam-driver-scarlett-johansson-miles-teller-interview-paper-tiger.html",
-        "https://www.bostonglobe.com/2026/11/18/arts/paper-tiger-miles-teller/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1a11nVqZ-hcY-IDYW5Rn-MCmASRSlt0hVayGdqTPb-2BjRytJm6IjLfjdAIg",
-      "image_credit": "Our Culture Mag",
-      "news": [
-        {
-          "url": "https://ourculturemag.com/miles-teller-worth-salary-highest-grossing-movies/",
-          "title": "Miles Teller Net Worth, Salary & Highest Grossing Movies",
-          "publisher": "Our Culture Mag",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1a11nVqZ-hcY-IDYW5Rn-MCmASRSlt0hVayGdqTPb-2BjRytJm6IjLfjdAIg"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/15/movies/adam-driver-scarlett-johansson-miles-teller-interview-paper-tiger.html",
-          "title": "How Adam Driver, Scarlett Johansson and Miles Teller Built a Family in ‘Paper Tiger’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBYrJGrSYi7UpNp3D-4_xXe9CftP3lIc7UMjJZfs7GZfkr5W04RKvu3vrDpVQ"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/18/arts/paper-tiger-miles-teller/",
-          "title": "A never-better Miles Teller deepens neo-noir ‘Paper Tiger’",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwevr_I-tpxCvZoL_IK0_onW-buNDPnmMIXXs48ILo87f-GlKd2XxrosX7IBI"
-        }
-      ]
-    },
-    {
-      "query": "sri lanka vs pakistan",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-20T05:50:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/match-report",
-        "https://www.10tv.com/article/syndication/associatedpress/pakistan-romps-to-eight-wicket-win-over-sri-lanka-for-its-first-test-cricket-series-win-in-2-years/616-47c2f2eb-dc25-4aac-97cd-484a0967715a",
-        "https://www.wvnews.com/sports/pro/pakistan-sri-lanka-cricket/image_476f6f1d-275e-5e42-a3c0-daecf6c2bef2.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyljM7euOz0xkdrFuLW5jxYuLZvQtbn1YYXzVbkdX8-bNavepT7KtlkR88v70",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-test-1550712/match-report",
-          "title": "Pakistan canter to eight-wicket win over Sri Lanka to take the series",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyljM7euOz0xkdrFuLW5jxYuLZvQtbn1YYXzVbkdX8-bNavepT7KtlkR88v70"
-        },
-        {
-          "url": "https://www.10tv.com/article/syndication/associatedpress/pakistan-romps-to-eight-wicket-win-over-sri-lanka-for-its-first-test-cricket-series-win-in-2-years/616-47c2f2eb-dc25-4aac-97cd-484a0967715a",
-          "title": "Pakistan romps to eight-wicket win over Sri Lanka for its first test cricket series win in 2 years",
-          "publisher": "10TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlHRl0ksy-iUTqzJK910Zwe8dYecWlEV6jQV7RGYpl0jtYBpoolWCOsl15wZg"
-        },
-        {
-          "url": "https://www.wvnews.com/sports/pro/pakistan-sri-lanka-cricket/image_476f6f1d-275e-5e42-a3c0-daecf6c2bef2.html",
-          "title": "Pakistan Sri Lanka Cricket",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgrEjt0JZst4YuRUzR-p-h_lUz23DuGdMupu68UvNocaUCXATaSO5Io7yurTI"
-        }
-      ]
-    },
-    {
-      "query": "liam hemsworth",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T05:50:00Z",
-      "related_news_urls": [
-        "https://www.cinemablend.com/movies/jennifer-lawrence-throwback-post-hunger-games-josh-hutcherson-liam-hemsworth-funny-caption",
-        "https://www.imdb.com/es/news/ni66114648/?ref_=nwc_art_perm",
-        "https://www.geo.tv/latest/691483-jennifer-lawrence-shares-throwback-with-josh-hutcherson-liam-hemsworth"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXwHGUNf0_7Y3Z3Ow0XFq1UYv5c2FXrXrkLBwuM_d4zo5xgDEYF2AHxWR6fg",
-      "image_credit": "Cinemablend",
-      "news": [
-        {
-          "url": "https://www.cinemablend.com/movies/jennifer-lawrence-throwback-post-hunger-games-josh-hutcherson-liam-hemsworth-funny-caption",
-          "title": "Jennifer Lawrence Dropped A Throwback Post With The Hunger Games’ Peeta And Gale (And Her Caption Is A+)",
-          "publisher": "Cinemablend",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXwHGUNf0_7Y3Z3Ow0XFq1UYv5c2FXrXrkLBwuM_d4zo5xgDEYF2AHxWR6fg"
-        },
-        {
-          "url": "https://www.imdb.com/es/news/ni66114648/?ref_=nwc_art_perm",
-          "title": "Jennifer Lawrence Shares Never-Before-Seen Throwback Photos with ‘Hunger Games’ Co-Stars Liam Hemsworth & Josh Hutcherson",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrtCBANc9UO6bUkD3fTmgv4Oa0NogXe5MRYoAExV0FKfs22jfsgIKX9xbQxuI"
-        },
-        {
-          "url": "https://www.geo.tv/latest/691483-jennifer-lawrence-shares-throwback-with-josh-hutcherson-liam-hemsworth",
-          "title": "Jennifer Lawrence shares throwback with Josh Hutcherson, Liam Hemsworth",
-          "publisher": "Geo News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkaBzzzcbjrIOMEnN73MHucn4vMdPzWL2AIg2fn1jHmn7eDbNHVGIc0wYpOYI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB49eDXbrN5Zs1PYZ3l6o-KfFN9Fcq83FqSTHPIrbuqrWuXt_i9SbPfgVI91s"
         }
       ]
     }
