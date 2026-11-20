@@ -42,6 +42,7 @@ def run():
         page.locator('#screenshot-file').set_input_files({'name':'sample.png','mimeType':'image/png','buffer':file_bytes})
         page.locator('#save-check').click()
         expect(page.locator('#result-count')).to_contain_text('1 of 1')
+        expect(page.locator('#form-message')).to_contain_text('Saved one dated observation')
         assert not page.evaluate('Boolean(window.evil)')
         state=json.loads(page.evaluate(f'localStorage.getItem({json.dumps(KEY)})'))
         assert state['checks'][0]['checkedAt']=='2026-11-19T12:30:00.000Z'
@@ -54,6 +55,7 @@ def run():
         page.locator('[name=redirectUrl]').fill('https://example.net/new')
         page.locator('#save-check').click()
         expect(page.locator('#result-count')).to_contain_text('2 of 2')
+        expect(page.locator('#form-message')).to_contain_text('Saved one dated observation')
         saved=json.loads(page.evaluate(f'localStorage.getItem({json.dumps(KEY)})'))
         assert [c for c in saved['checks'] if c['status']=='changed'][0]['screenshotName']=='', saved
         page.get_by_role('tab',name='Timeline').click()
