@@ -141,7 +141,9 @@ test('Improve with Bubbles prepares the actual existing editor and preserves an 
   await page.evaluate(() => window.QuantaBubbles.close());
   await builder.getByRole('button',{name:'Prepare Bubbles request'}).click();
   await expect(builder.getByRole('status')).toContainText('existing Bubbles work draft');
-  await expect(editor).toHaveValue('My unsent work');
+  // Closing the Notes viewer removes the textbox from the accessibility tree,
+  // but must preserve the draft in the existing DOM state.
+  await expect(page.locator('textarea[aria-label="Work request for Robot Brain"]')).toHaveValue('My unsent work');
 });
 
 test('the orb embed keeps the full builder hidden', async ({page}) => {
