@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'">
+<title>ISHA Rulebook · Infinity Standards & Evidence</title>
+<meta name="description" content="Editable, evidence-aware research proposals and standards. Browser-local; no site crawling or media importing.">
+<style>
+:root{font:17px/1.58 system-ui,Roboto,-apple-system,sans-serif;letter-spacing:.015em;background:#faf7ff;color:#2c2240;--purple:#5a3384;--line:#d7c8e9;--gold:#806123;--muted:#5e506b;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at right top,#e8dafa,transparent 48%),#faf7ff}main{max-width:1080px;padding:22px clamp(16px,4vw,44px) 55px;margin:auto}a{color:var(--purple)}h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.15;margin:.4rem 0}h2{margin:0 0 12px;line-height:1.2;font-size:1.45rem}p{margin:8px 0 14px}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;font-size:.75rem;letter-spacing:.14em;font-weight:800;color:var(--purple)}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(17px,3vw,28px);margin:16px 0;box-shadow:0 8px 18px #27164b09}button,input,textarea{font:inherit;color:inherit}button,input,textarea{min-height:48px}button{padding:10px 18px;border:1px solid var(--purple);border-radius:13px;background:var(--purple);color:white;cursor:pointer;font-weight:650}button.secondary{color:var(--purple);background:#f5effc}button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #9362d6;outline-offset:2px}label{display:grid;gap:6px;font-weight:600;margin:0}input,textarea{padding:11px 12px;width:100%;background:#fff;border:1px solid #a993bf;border-radius:12px}textarea{min-height:108px}form{display:grid;gap:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}.actions>*{flex:0 1 auto}.record{border:1px solid var(--line);border-radius:15px;padding:15px;margin:12px 0;background:#fdfbff;overflow-wrap:anywhere}.record h3{margin:0;font-size:1.05rem}.record button{min-height:44px;padding:8px 14px}.meta{color:var(--gold);font-weight:650;font-size:.86rem}.note{border-left:4px solid #bc93d5;padding:12px 15px;background:#f4edf9;border-radius:0 10px 10px 0}.empty{border:1px dashed var(--line);padding:18px;border-radius:12px}.tiny{font-size:.84rem}#message{min-height:1.4em;color:var(--purple);font-weight:600}#file-import{display:block;max-width:430px}.top{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.mark{font:2.3rem Georgia,serif;color:var(--purple)}@media(max-width:650px){.two{grid-template-columns:1fr}.actions>button{width:100%}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head><body>
+<main id="workspace">
+<header class="top"><div><div class="eyebrow">Infinity 2026® · Bubbles research desk</div><h1>ISHA <em>Rulebook</em></h1><p class="muted">Observations · safety flags · standards · evidence</p></div><a href="/" aria-label="Return to QuantaPhi">QuantaPhi home</a></header>
+<p class="note">This is an editable proposal ledger, <strong>not</strong> an enacted law, investigative authority, Tor Browser, or video search service. It never contacts investigated websites. Safeguards for minors, consent, privacy, and serious harm cannot be bypassed by writing a new rule.</p>
+<section class="card" aria-labelledby="rules-title"><div class="eyebrow">01 / Living standards</div><h2 id="rules-title">Rules and proposed measures</h2>
+<label>Search saved rules<input id="rule-search" type="search" placeholder="Filter by area, observation, or measure" autocomplete="off"></label>
+<div class="actions"><button id="export-csv" type="button">Export spreadsheet CSV</button><button id="export-json" type="button" class="secondary">Export JSON backup</button></div>
+<label class="tiny">Import a previous ISHA JSON backup (validated, never silently overwrite records)<input id="file-import" type="file" accept=".json,application/json"></label>
+<p id="storage" class="muted tiny">Local ledger loading…</p><p id="record-count" class="tiny" aria-live="polite"></p><div id="rule-list"></div>
+</section>
+<section class="card" aria-labelledby="add-title"><div class="eyebrow">02 / Add only when observed</div><h2 id="add-title">Create a draft rule</h2>
+<form id="rule-form"><div class="two"><label>Area / topic<input name="area" maxlength="80" required placeholder="Source verification"></label><label>Public source reference (optional)<input name="evidenceUrl" type="url" maxlength="1200" placeholder="https://public-report.example/..."></label></div>
+<label>What was actually observed?<textarea name="observation" maxlength="600" required placeholder="Record the observation, not an accusation."></textarea></label>
+<label>Proposed rule, standard, or measurement<textarea name="measure" maxlength="900" required placeholder="Describe a measurable action and an evidence check."></textarea></label>
+<button type="submit">Add draft to ledger</button></form><p class="tiny muted">New records are drafts. A proposed rule does not change Bubbles' operating permissions, override law, or authorize external actions.</p>
+</section>
+<section class="card" aria-labelledby="classify-title"><div class="eyebrow">03 / Site classification</div><h2 id="classify-title">Classify a public domain or onion identifier</h2>
+<form id="classify-form"><label>Root hostname or onion identifier<input id="site-input" maxlength="300" required autocomplete="off" spellcheck="false" placeholder="example.org"></label><button type="submit">Classify locally</button></form><p id="site-result" class="note" hidden></p>
+<p class="tiny muted">A gateway ending in .onion.ly is not the onion service itself. Classification does not verify availability, a repository, media filenames, an uploader, or the hosting operator.</p>
+</section>
+<section class="card"><div class="eyebrow">04 / Bubbles handoff</div><h2>What Bubbles can use</h2>
+<p>Use the saved ledger to draft human-reviewed standards with a specific source, clear observation, objective test, date, proposed response, and a correction path. Publishing videos requires verifiable provider rights, applicable age and consent checks, and safety protections.</p>
+<p>Compatible next work: authorized YouTube/publisher embeds and first-party approved media catalogs inside the existing Media Star/Quick Card player. No third-party video scraping is enabled here.</p>
+</section>
+<p id="message" role="status" aria-live="polite"></p>
+</main>
+<script type="module" src="/isha-rulebook-ui.mjs"></script></body></html>

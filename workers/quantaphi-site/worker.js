@@ -577,6 +577,12 @@ export default {
    || (['Oracle-Octaves','C13b0','Omni-Phi','News-Phi','Mckee-Coins-Inc','Omni-TV','Builder-Reserve'].includes(route.repo) && route.sourcePath === '/index.html');
   if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio','Alien-Coin'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
   // Public housing intake can run inside QuantaPhi, but cannot submit or send answers.
+  // ISHA is a fixed, same-origin public Quick Card. Never broaden framing to
+  // arbitrary paths, upstream sites, media, or authentication pages.
+  if(route.repo==='QuantaPhi'&&route.sourcePath==='/isha-rulebook.html'&&/text\/html/i.test(out.get('Content-Type')||'')){
+   out.set('X-Frame-Options','SAMEORIGIN');
+   out.set('Content-Security-Policy',"default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'");
+  }
   if (route.repo === 'QuantaPhi' && ['/disability-housing.html','/housing-help.html'].includes(route.sourcePath) && /text\/html/i.test(out.get('Content-Type') || '')) {
    out.set('X-Frame-Options', 'SAMEORIGIN');
    out.set('Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'");
