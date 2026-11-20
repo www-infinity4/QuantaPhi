@@ -3,12 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T14:01:32.790468Z",
+  "checked_at": "2026-11-20T14:31:27.791594Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "melania trump",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-20T13:50:00Z",
+      "related_news_urls": [
+        "https://www.usnews.com/news/best-states/new-york/articles/2026-11-20/melania-trump-gives-a-peek-inside-her-marriage-motherhood-and-more-in-new-series",
+        "https://www.theatlantic.com/newsletters/2026/11/melania-tv-show-melaniaverse/689519/",
+        "https://www.usatoday.com/picture-gallery/entertainment/tv-streaming/2026/11/19/melania-trump-tv-series-red-carpet-premiere-nyc-photos/92830963007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPy4i4s3jExOVx0ITKBaGMIQasoN7QT87Vbs9aeA6_bVGYZ4EVHfe8f7eAI3k",
+      "image_credit": "U.S. News & World Report",
+      "news": [
+        {
+          "url": "https://www.usnews.com/news/best-states/new-york/articles/2026-11-20/melania-trump-gives-a-peek-inside-her-marriage-motherhood-and-more-in-new-series",
+          "title": "Melania Trump Gives a Peek Inside Her Marriage, Motherhood and More in New Series",
+          "publisher": "U.S. News & World Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPy4i4s3jExOVx0ITKBaGMIQasoN7QT87Vbs9aeA6_bVGYZ4EVHfe8f7eAI3k"
+        },
+        {
+          "url": "https://www.theatlantic.com/newsletters/2026/11/melania-tv-show-melaniaverse/689519/",
+          "title": "Welcome to the Melaniaverse",
+          "publisher": "The Atlantic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbU9sKgSOHVYX4K4jknPXchrZbhJYpHeO86oJYO3myAcesiwc6eqfo4ZjQ6ac"
+        },
+        {
+          "url": "https://www.usatoday.com/picture-gallery/entertainment/tv-streaming/2026/11/19/melania-trump-tv-series-red-carpet-premiere-nyc-photos/92830963007/",
+          "title": "'Melania, The Series' red carpet: Pam Bondi, Kellyanne Conway and more",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYYTTFVMs0VKEwHiOaGhXb3OzLBmZwtJCeq35SwkcSdbXH-lxXSO7pfRZotHc"
+        }
+      ]
+    },
+    {
+      "query": "thanksgiving",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T13:50:00Z",
+      "related_news_urls": [
+        "https://www.pbs.org/newshour/economy/americans-will-pay-more-for-thanksgiving-dinners-this-year-says-farm-bureau-survey",
+        "https://www.washingtonpost.com/business/2026/11/19/cost-thanksgiving-dinner-rises-first-time-since-2022/",
+        "https://www.axios.com/2026/11/20/thanksgiving-meal-cost-increases-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT77yMPtKNGJhLx8BJf5dQXQMFT_2eZfO_X39qAfrb1-brc1RFpm7itY0y1xP0",
+      "image_credit": "PBS",
+      "news": [
+        {
+          "url": "https://www.pbs.org/newshour/economy/americans-will-pay-more-for-thanksgiving-dinners-this-year-says-farm-bureau-survey",
+          "title": "Americans will pay more for Thanksgiving dinners this year, says Farm Bureau survey",
+          "publisher": "PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT77yMPtKNGJhLx8BJf5dQXQMFT_2eZfO_X39qAfrb1-brc1RFpm7itY0y1xP0"
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2026/11/19/cost-thanksgiving-dinner-rises-first-time-since-2022/",
+          "title": "Cost of Thanksgiving dinner rises for first time since 2022",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfD-hwxAx3l4YX0b9nE5V_DcelyKouRbTEKr3yXH0M0BVtD9JvaBaiq-a3MxE"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/20/thanksgiving-meal-cost-increases-2026",
+          "title": "Thanksgiving meal cost rises for first time in four years",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_Q8Hn_xTgSHjwCTuw4tue9srBidlQUkFASVQRLwFANH5-WcFD6kAms5sHvPY"
+        }
+      ]
+    },
+    {
+      "query": "guy oseary",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T13:50:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/article/kind-of-cool-early-anthropic-investor-and-actor-ashton-kutcher-celebrates-ipo-200123416.html",
+        "https://www.thetimes.com/us/american-politics/article/ashton-kutcher-billionaire-anthropic-ipo-5mg275l59",
+        "https://www.inc.com/victoria-salves/celebrity-stand-to-gain-anthropic-stock-market-debut/91439736"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7FkhkYteO7e1KPlvJW0RRPBIxj_N3VkV5Wf7igLLamNAy6Eos730797KFQiM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/article/kind-of-cool-early-anthropic-investor-and-actor-ashton-kutcher-celebrates-ipo-200123416.html",
+          "title": "'Kind of cool': Early Anthropic investor and actor Ashton Kutcher celebrates IPO",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7FkhkYteO7e1KPlvJW0RRPBIxj_N3VkV5Wf7igLLamNAy6Eos730797KFQiM"
+        },
+        {
+          "url": "https://www.thetimes.com/us/american-politics/article/ashton-kutcher-billionaire-anthropic-ipo-5mg275l59",
+          "title": "Ashton Kutcher to become billionaire when Anthropic goes public",
+          "publisher": "The Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBWpnlJauSY8m-bdPZCwMzgKqDkO6Rwz2fP2vT09AtcaG7ox-l7EDRLnTjqUE"
+        },
+        {
+          "url": "https://www.inc.com/victoria-salves/celebrity-stand-to-gain-anthropic-stock-market-debut/91439736",
+          "title": "3 Celebrities Stand to Gain From Anthropic's Stock-Market Debut. 1 Invested After an NBA Dinner",
+          "publisher": "Inc.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSev0EzcsW7FQtswqCCSj-qzAnkPQSjOgh-kBy5zfjvZ8P7_72NWj6NgOKg-ew"
+        }
+      ]
+    },
+    {
       "query": "abdul el-sayed u.s. senate",
-      "approx_searches": "200+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-20T13:40:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/us-news/2026/nov/20/el-sayed-trump-israel-aid",
@@ -42,6 +147,41 @@
       ]
     },
     {
+      "query": "grandes ligas de béisbol",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T13:40:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/beisbol/nota/_/id/17535872/mlb-2026-pete-rose-indulto-postumo-presidente-trump",
+        "https://www.expressnews.com/sports/article/trump-indulta-p-stumamente-a-pete-rose-tras-ser-22540437.php",
+        "https://www.france24.com/es/minuto-a-minuto/20261119-trump-concede-indulto-p%C3%B3stumo-a-pete-rose-rey-hist%C3%B3rico-de-hits-en-grandes-ligas"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB1JalT3aSRRz9lgl0eYsF_7hbvm6TTYBgV0ki-3DSPGRxlYUX5qgmDVciIqo",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/beisbol/nota/_/id/17535872/mlb-2026-pete-rose-indulto-postumo-presidente-trump",
+          "title": "Pete Rose es indultado póstumamente por el presidente Donald Trump",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB1JalT3aSRRz9lgl0eYsF_7hbvm6TTYBgV0ki-3DSPGRxlYUX5qgmDVciIqo"
+        },
+        {
+          "url": "https://www.expressnews.com/sports/article/trump-indulta-p-stumamente-a-pete-rose-tras-ser-22540437.php",
+          "title": "Trump indulta póstumamente a Pete Rose tras ser reincorporado por MLB",
+          "publisher": "San Antonio Express-News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvKpIj5JhjV_cPDZT1Tpc6mHgu_hUFlNGe3anhOTiBZ8esJWBW4VBSl1xwE2w"
+        },
+        {
+          "url": "https://www.france24.com/es/minuto-a-minuto/20261119-trump-concede-indulto-p%C3%B3stumo-a-pete-rose-rey-hist%C3%B3rico-de-hits-en-grandes-ligas",
+          "title": "Trump concede indulto póstumo a Pete Rose, rey histórico de hits en Grandes Ligas",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyZi4NDgG40p4eVS0eXoFWZKJABknW12pJHCCcCkE6cUoimEw_Z_uuj6avSlk"
+        }
+      ]
+    },
+    {
       "query": "3x3",
       "approx_searches": "200+",
       "published_at": "2026-11-20T13:40:00Z",
@@ -50,7 +190,7 @@
         "https://news.sbs.co.kr/english/article.do?news_id=N1008856468",
         "https://www.starnewskorea.com/en/sports/2026/11/20/2026112015065979514"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9x31RR2yXehrf06-AMLByruO60FD-GFhjtmCz3836K6U7uu-5NmHKBt6wk_Y",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbBnbmlp6WTKPWIx3sS5mrQdKbVBk_kFxF7clp7udpJViqQ0JhgyR9yZoaHUU",
       "image_credit": "조선일보",
       "news": [
         {
@@ -58,7 +198,7 @@
           "title": "Suwon KT Selects Lee Dong-geun as First Overall Pick",
           "publisher": "조선일보",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9x31RR2yXehrf06-AMLByruO60FD-GFhjtmCz3836K6U7uu-5NmHKBt6wk_Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbBnbmlp6WTKPWIx3sS5mrQdKbVBk_kFxF7clp7udpJViqQ0JhgyR9yZoaHUU"
         },
         {
           "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008856468",
@@ -82,8 +222,8 @@
       "published_at": "2026-11-20T13:30:00Z",
       "related_news_urls": [
         "https://www.chicagotribune.com/2026/11/18/alcaraz-vence-a-medvedev-en-las-finales-atp-pese-a-un-problema-fsico-y-avanza-a-semifinales/",
-        "https://elpais.com/deportes/tenis/2026-11-20/carlos-alcaraz-flavio-cobolli-en-directo-el-partido-de-las-atp-finals-en-vivo.html",
-        "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-dia-6-previa-alcaraz-cobolli-medvedev-tiafoe"
+        "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-flavio-cobolli/2026/11/20/04_0414_20261120_10-directo.html",
+        "https://elpais.com/deportes/tenis/2026-11-19/alcaraz-continua-en-turin-pero-sobre-el-alambre-los-isquios-vuelven-a-azotarle-el-asume-los-riesgos.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--s-sd16jM_OPn5W3wFRkwZwLe2qjVcQ5eYpT0_zDwbjK3Ppr5Kl8QM3PEtA",
       "image_credit": "Chicago Tribune",
@@ -96,18 +236,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--s-sd16jM_OPn5W3wFRkwZwLe2qjVcQ5eYpT0_zDwbjK3Ppr5Kl8QM3PEtA"
         },
         {
-          "url": "https://elpais.com/deportes/tenis/2026-11-20/carlos-alcaraz-flavio-cobolli-en-directo-el-partido-de-las-atp-finals-en-vivo.html",
-          "title": "Carlos Alcaraz - Flavio Cobolli en directo, el partido de las ATP Finals en vivo|Comienza el encuentro",
-          "publisher": "EL PAÍS",
+          "url": "https://www.marca.com/tenis/copa-masters/carlos-alcaraz-flavio-cobolli/2026/11/20/04_0414_20261120_10-directo.html",
+          "title": "Carlos Alcaraz - Flavio Cobolli en directo | Última hora de las ATP Finals, en vivo",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRwkF-m05bD9hAE9JB_3350LVqiOQ7HkGpFHuu7qFmVpd5Rzi5EkM3zoeteKw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgS2hEeXedabCOc6m9W4hX0EfsuJRbnRe5M-LP98fgfu7RXuPeEigVk9HokQE"
         },
         {
-          "url": "https://www.nittoatpfinals.com/es/news/nitto-atp-finals-2026-dia-6-previa-alcaraz-cobolli-medvedev-tiafoe",
-          "title": "Alcaraz busca seguir invicto; Medvedev y Tiafoe se juegan una plaza de SF",
-          "publisher": "Nitto ATP Finals",
+          "url": "https://elpais.com/deportes/tenis/2026-11-19/alcaraz-continua-en-turin-pero-sobre-el-alambre-los-isquios-vuelven-a-azotarle-el-asume-los-riesgos.html",
+          "title": "Alcaraz continúa, pero sobre el alambre: los isquios vuelven a azotarle, él asume los riesgos",
+          "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT921-3cC3Z2s--emTeoNcBsImkMpZ5wrdLmx85V9QdO749TzMC4wAtWpwBV7s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlXQOiVxEYCHKn96bvyzEEaXFM5Epbe-m_XRanAyF22ejOimX2Bm3tpfBG9BY"
         }
       ]
     },
@@ -197,7 +337,7 @@
           "title": "Trinity Rodman’s rise from soccer prodigy to USWNT star",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWbwyNO3omfZST-JEte1hyegvMCpDraa4hwFMlDZo9xkd3JM1ibpKU3BzJLLQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6vuT8f9Wh955pqd9bI7lppBwdLbLd_FglsWbmj6rdqgdRh1IUJ5B1N_e1Z3k"
         },
         {
           "url": "https://www.cbssports.com/soccer/news/trinity-rodmans-washington-spirit-nwsl-final-fun/",
@@ -205,146 +345,6 @@
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Y-KP0EE0-nJItk6HeEoFJMG8Gr2AUTK9Y9mewemTwgDN_3T56jBHH9eQJn4"
-        }
-      ]
-    },
-    {
-      "query": "rahm emanuel",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T13:20:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/politics/rahm-emanuel-is-betting-america-wants-a-radical-centrist-as-president-9a914708",
-        "https://www.arkansasonline.com/news/2026/nov/11/emanuel-offers-a-do-able-path-forward-for/",
-        "https://www.washingtonexaminer.com/opinion/columnists/4807147/rahm-emanuel-2028-pittsburgh-trades-steel/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGjiWj8gGP0nZVVcqUFV4yEtF38UnGh9aTEx4OFHmVqcroMsISbncb-miZ7xM",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/politics/rahm-emanuel-is-betting-america-wants-a-radical-centrist-as-president-9a914708",
-          "title": "Rahm Emanuel Is Betting America Wants a Radical Centrist as President",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGjiWj8gGP0nZVVcqUFV4yEtF38UnGh9aTEx4OFHmVqcroMsISbncb-miZ7xM"
-        },
-        {
-          "url": "https://www.arkansasonline.com/news/2026/nov/11/emanuel-offers-a-do-able-path-forward-for/",
-          "title": "OPINION | JOHN BRUMMETT: Emanuel offers a do-able path forward for Democrats, nation",
-          "publisher": "The Arkansas Democrat-Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2svAqkiE23uUyAOFZOGXdNDm3KgF6hrWEXWvY8pfavyWS1GUBJqk3q1pF3dI"
-        },
-        {
-          "url": "https://www.washingtonexaminer.com/opinion/columnists/4807147/rahm-emanuel-2028-pittsburgh-trades-steel/",
-          "title": "Eyeing 2028, Rahm Emanuel meets Pittsburgh trades on old steel ground",
-          "publisher": "Washington Examiner",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRz4Yvdgil9HMd9FL-e1B5tbR4wzu8V-9rG4xGDcqGdXIwKR4C8Ap4IHTxuYA8"
-        }
-      ]
-    },
-    {
-      "query": "flavio cobolli",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T13:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/sport/live/2026/nov/20/carlos-alcaraz-v-flavio-cobolli-atp-finals-tennis-group-stage-live?page=with:block-6b004e208f083dc0e3993957",
-        "https://sportsbook.fanduel.com/tennis/atp-finals-turin-2026/carlos-alcaraz-v-flavio-cobolli-36313140",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/ben-shelton-vs-rafael-jodar-group-stage-match-nov-19-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8U-zi06jqTiK3oHqg6kbMvxHQRwqpDjJ2vPHSv9f9Ip6bWQFhjkRgsXS0938",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/20/carlos-alcaraz-v-flavio-cobolli-atp-finals-tennis-group-stage-live?page=with:block-6b004e208f083dc0e3993957",
-          "title": "Carlos Alcaraz v Flavio Cobolli: ATP Finals tennis group stage – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8U-zi06jqTiK3oHqg6kbMvxHQRwqpDjJ2vPHSv9f9Ip6bWQFhjkRgsXS0938"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/tennis/atp-finals-turin-2026/carlos-alcaraz-v-flavio-cobolli-36313140",
-          "title": "Carlos Alcaraz v Flavio Cobolli Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/ben-shelton-vs-rafael-jodar-group-stage-match-nov-19-2026/",
-          "title": "November 19, 2026: Ben Shelton vs Rafael Jodar Group Stage match Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrnLTUgFDxo9e_MLe6ihcnF7Iz1QM1dEe2tl1_lQZaRneLKAEAm69Apzt54oU"
-        }
-      ]
-    },
-    {
-      "query": "ronny hallin passed away",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T13:10:00Z",
-      "related_news_urls": [
-        "https://www.nine.com.au/entertainment/celebrity/ronny-hallin-death-aged-88-laverne-and-shirley-20261120-p61fuj.html",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/laverne-shirley-actress-dead-88-170705349.html",
-        "https://people.com/ronny-hallin-remembered-as-the-unsung-hero-of-the-marshall-family-after-her-death-at-88-12265358"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEsWSRrZJr927ZzZhgy4j6zuKeogi9ai4P5Ko--bKqGqZuI-ZkdyQx35-rkfI",
-      "image_credit": "Nine.com.au",
-      "news": [
-        {
-          "url": "https://www.nine.com.au/entertainment/celebrity/ronny-hallin-death-aged-88-laverne-and-shirley-20261120-p61fuj.html",
-          "title": "’70s star and Happy Days legend dead at 88",
-          "publisher": "Nine.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEsWSRrZJr927ZzZhgy4j6zuKeogi9ai4P5Ko--bKqGqZuI-ZkdyQx35-rkfI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/laverne-shirley-actress-dead-88-170705349.html",
-          "title": "‘Laverne & Shirley’ actress dead at 88",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4T68tmWeH2kNOlwmiF1c9qCYvXM5J7idI-qAoWwQghoBhiYd7DgPWCH1waL8"
-        },
-        {
-          "url": "https://people.com/ronny-hallin-remembered-as-the-unsung-hero-of-the-marshall-family-after-her-death-at-88-12265358",
-          "title": "Ronny Hallin Remembered as the ‘Unsung Hero of the Marshall Family’ After Her Death at 88",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZ5w5AxvqZ_oC0-Q1xwrpKxn_q7Tj5HQSNZ59TgRXO6WuBypo7C68Ms4Wc1po"
-        }
-      ]
-    },
-    {
-      "query": "lexi thomas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T13:10:00Z",
-      "related_news_urls": [
-        "https://www.thebanner.com/community/local-news/lexi-thomas-hannan-cancer-scammer-arrested-B727S3E44BEIREDTMHQBOVEORM/",
-        "https://www.cleveland.com/news/2026/11/woman-claimed-she-had-cancer-for-a-decade-police-say-there-was-a-costly-secret.html",
-        "https://mocoshow.com/2026/11/19/good-counsel-graduate-arrested-on-felony-theft-charges-amid-allegations-of-fabricated-cancer-battle/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKYfkzQAJT916gXZ2A0Dyf7ni12MV50J3ZC5-ZMx1OjFP3uDwJCSrd0q4oqI",
-      "image_credit": "The Baltimore Banner",
-      "news": [
-        {
-          "url": "https://www.thebanner.com/community/local-news/lexi-thomas-hannan-cancer-scammer-arrested-B727S3E44BEIREDTMHQBOVEORM/",
-          "title": "Accused cancer scammer Lexi Thomas charged with felony theft",
-          "publisher": "The Baltimore Banner",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKYfkzQAJT916gXZ2A0Dyf7ni12MV50J3ZC5-ZMx1OjFP3uDwJCSrd0q4oqI"
-        },
-        {
-          "url": "https://www.cleveland.com/news/2026/11/woman-claimed-she-had-cancer-for-a-decade-police-say-there-was-a-costly-secret.html",
-          "title": "Woman claimed she had cancer for a decade. Police say there was a costly secret",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-ZKx9hkLnOKNriWch8z7UnHXDFd00ra9ggqv95e8STFMtBfOxl8U1VSYlJno"
-        },
-        {
-          "url": "https://mocoshow.com/2026/11/19/good-counsel-graduate-arrested-on-felony-theft-charges-amid-allegations-of-fabricated-cancer-battle/",
-          "title": "Good Counsel Graduate Arrested on Felony Theft Charges Amid Allegations of Fabricated Cancer Battle",
-          "publisher": "The MoCo Show -",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_68DU83uH95KAOnOL-yzyUqigtNi1lnuBB1hZrKfgueNmSqttSxTLHiNe9g"
         }
       ]
     }
