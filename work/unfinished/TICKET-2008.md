@@ -1,9 +1,9 @@
 ---
 issue: 2008
-state: source_tested
+state: ci_passed
 dot: "🟡"
-progress_percent: 30
-progress_basis: "Local source implementation and 5 focused prototype tests passed; exact-head CI, true egress audit, release, browser and Android acceptance not yet verified."
+progress_percent: 45
+progress_basis: "7 focused Node regressions and 3 Chromium browser sizes passed at exact source head 2c421d13 (Actions run 44702833481); dedicated origin, live deployed response headers, external egress audit, guarded merge and physical Android not verified."
 sessions_spent: 1
 sessions_remaining_estimate: "unknown"
 agent: "GPT Brain via authenticated GitHub connector; no signed runner lease claimed"
@@ -11,7 +11,7 @@ lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
-next_action: "Run exact-head CI on PR 2009, review worker response CSP and verify local storage and egress with actual browser evidence."
+next_action: "Obtain independent privacy/security source review of PR 2009, verify edge CSP on target deployment, then complete guarded merge and physical Android acceptance."
 merged: false
 deployed: false
 live_verified: false
@@ -19,9 +19,9 @@ live_verified: false
 
 # TICKET-2008 — Gap 2 Privacy & Agency: Local Mirror + Shadow Web Radar
 canonical_issue: https://github.com/www-infinity4/QuantaPhi/issues/2008
-status: source_tested
+status: ci_passed
 dot: 🟡
-progress_percent_estimate: 30
+progress_percent_estimate: 45
 progress_basis: "Standalone opt-in worker, local IndexedDB, lexical profile, limited resource radar, HTTP CSP header guard, 3 new regression test files and Bubbles card catalog entry staged; exact-head GitHub CI, actual server header readback, browser/Android acceptance, privileged radar extension, true embedding model, network packet attestation and all downstream gap implementations unverified."
 sessions_spent: 1
 sessions_remaining_estimate: unknown
@@ -48,9 +48,9 @@ source_files:
 - Preserve wallet and user-account isolation, no background audio, no covert telemetry or private user text in GitHub.
 
 ## Evidence
-- Development-local TDD: first run failed with missing implementation (ERR_MODULE_NOT_FOUND); after implementation, 5 focused Node tests passed on local prototype (not a GitHub exact-head CI result).
-- GitHub branch writes include worker, UI, tests, gate and catalog. Check exact PR head and CI when PR exists.
+- Development-local TDD: first run failed with missing implementation; after implementation 5 focused Node tests passed. GitHub exact-head Actions run https://github.com/www-infinity4/QuantaPhi/actions/runs/44702833481 passed 7 Node tests and real Chromium smoke at 360, 393, and 1280 px. Browser checks: opt-in, metadata-only IndexedDB, CSP denied loopback request and deletion. Screenshots: https://github.com/www-infinity4/QuantaPhi/actions/runs/44702833481/artifacts/14613891909 .
+- GitHub source head tested: 2c421d13b5a4f915aeb30e1a0d0d59bde3dc8c88; browser CI passed. Current checkpoint commit itself will change PR head; recheck exact-head CI after this documentation update. Strict source policy and unmerged draft PR #2009 remain in place.
 - No browser, physical Android, deployment, or independent network capture result claimed.
 
 ## Next action
-Run exact-head PR CI, repair any failing tests, verify edge CSP responses for the document and worker script and confirm a private Android browser can save/list/clear locally without outbound connection attempts after load. Then source review and guarded merge/deploy; privileged extension/proxy isolation is separate and not approved.
+Verify refreshed exact-head CI after this checkpoint, then obtain privacy/security source review. Confirm deployed document and worker CSP response headers, an independently trusted egress audit and physical Android acceptance before graduating Gap 1. A separate origin remains planned, not implemented.
