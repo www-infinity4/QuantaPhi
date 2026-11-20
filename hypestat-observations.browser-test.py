@@ -54,6 +54,8 @@ def run():
         page.locator('[name=redirectUrl]').fill('https://example.net/new')
         page.locator('#save-check').click()
         expect(page.locator('#result-count')).to_contain_text('2 of 2')
+        saved=json.loads(page.evaluate(f'localStorage.getItem({json.dumps(KEY)})'))
+        assert [c for c in saved['checks'] if c['status']=='changed'][0]['screenshotName']=='', saved
         page.get_by_role('tab',name='Timeline').click()
         expect(page.locator('#timeline-list article')).to_have_count(2)
         page.get_by_role('tab',name='Compare').click()
