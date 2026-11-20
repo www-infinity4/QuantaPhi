@@ -58,5 +58,6 @@ test('existing Oracle source Quick Cards render a standalone channel with opt-in
  assert.match(ui,/www\.youtube-nocookie\.com\/embed\//);
  assert.match(ui,/Read original on YouTube/);
  assert.match(ui,/Stop playback/);
- assert.doesNotMatch(ui,/StarCoin|paywall|21\+|autoplay=1/);
+ assert.match(ui,/No 21\+ material/);
+ assert.doesNotMatch(ui,/StarCoin|paywall|autoplay=1/);
 });
