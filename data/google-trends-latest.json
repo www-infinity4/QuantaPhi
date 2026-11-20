@@ -3,153 +3,48 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-20T21:31:03.309240Z",
+  "checked_at": "2026-11-20T22:01:32.986074Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "crwd stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-20T21:10:00Z",
+      "query": "air force one",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:40:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-crwd-getting-investor-attention-033346621.html",
-        "https://www.fool.com/investing/2026/11/19/why-crowdstrike-holdings-stock-flew-while-the-market-flopped-today/",
-        "https://www.tikr.com/blog/cantor-fitzgerald-raises-its-crowdstrike-target-to-275-is-it-still-too-low"
+        "https://thehill.com/homenews/administration/6230274-trump-press-phones-confiscated-china/",
+        "https://www.advocate.com/politics/national/journalists-phones-confiscated-white-house",
+        "https://www.bloomberg.com/news/articles/2026-11-19/white-house-takes-press-phones-upon-departure-from-china-summit"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVDOdcNuxMJCkM822QrEHaCqLWb7kuqzBvxKdYYKLh1lw3In6M9hKHoaVH2Yw",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2JU0Jdtb5fC6gPih6wVm-8YEgKiS-p3sjyOu5Z3R4ejx88E7AO2oRQw8hIM",
+      "image_credit": "The Hill",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-crwd-getting-investor-attention-033346621.html",
-          "title": "CrowdStrike (CRWD) is Getting Investor Attention — Here’s Why",
-          "publisher": "Yahoo Finance",
+          "url": "https://thehill.com/homenews/administration/6230274-trump-press-phones-confiscated-china/",
+          "title": "White House takes phones from reporters traveling from China with president",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVDOdcNuxMJCkM822QrEHaCqLWb7kuqzBvxKdYYKLh1lw3In6M9hKHoaVH2Yw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2JU0Jdtb5fC6gPih6wVm-8YEgKiS-p3sjyOu5Z3R4ejx88E7AO2oRQw8hIM"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/19/why-crowdstrike-holdings-stock-flew-while-the-market-flopped-today/",
-          "title": "Why CrowdStrike Holdings Stock Flew While the Market Flopped Today",
-          "publisher": "The Motley Fool",
+          "url": "https://www.advocate.com/politics/national/journalists-phones-confiscated-white-house",
+          "title": "‘Our phones are being taken away,’ a White House reporter wrote from Air Force One as Trump left China",
+          "publisher": "Advocate.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhZR25DYBdJ-30-XAHdyVdUES9Z5j6u4zYhA477rw-EFoiwN00FMqDhB4y-8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsb4BxrU5B6QY5skef6dN8ZI6eUiLifJBJdhlCNXfsNR4pcOzJjjMymTurXJw"
         },
         {
-          "url": "https://www.tikr.com/blog/cantor-fitzgerald-raises-its-crowdstrike-target-to-275-is-it-still-too-low",
-          "title": "Cantor Fitzgerald Raises Its CrowdStrike Target to $275. Is It Still Too Low?",
-          "publisher": "TIKR.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-19/white-house-takes-press-phones-upon-departure-from-china-summit",
+          "title": "White House Took Reporters’ Phones as Trump Departed China",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKcIRipuY0ehv22x3ETUxJPA8cf6JDX4hTWCNuPnB-GvzmHrT69upX2sqcV-I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjJ7KbYeEBFI2JhN0X8Hr-0oAnattMWPBHVr69BDKYTZUJCNzQJMIoy-IgCkA"
         }
       ]
     },
     {
-      "query": "zs stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T21:10:00Z",
-      "related_news_urls": [
-        "https://www.quantisnow.com/insight/new-insider-ross-justyn-tackett-claimed-ownership-of-77322-shares-6801398",
-        "https://www.tokenpost.com/news/investing/61983",
-        "https://www.tradingview.com/news/benzinga:42afc8811094b:0-palo-alto-earnings-boost-cybersecurity-sentiment-zscaler-stock-gains/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5WPi0sdJs8t4dvYz1YXq6oIAjihfarC04ECie2W5F4XYigiR4_hwdvnEMxmg",
-      "image_credit": "Quantisnow",
-      "news": [
-        {
-          "url": "https://www.quantisnow.com/insight/new-insider-ross-justyn-tackett-claimed-ownership-of-77322-shares-6801398",
-          "title": "Zscaler (ZS): New insider Ross Justyn Tackett claimed ownership of 77,322 shares (SEC Form 3)",
-          "publisher": "Quantisnow",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5WPi0sdJs8t4dvYz1YXq6oIAjihfarC04ECie2W5F4XYigiR4_hwdvnEMxmg"
-        },
-        {
-          "url": "https://www.tokenpost.com/news/investing/61983",
-          "title": "Zscaler Shares Fall 3.81% as Price Sits Below Key Averages",
-          "publisher": "TOKENPOST",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD_OkaQg3beAby8cwco_nNalHxkuWjHCPmND8IZzkwVh9Q5ACFYfMBt9o7SMs"
-        },
-        {
-          "url": "https://www.tradingview.com/news/benzinga:42afc8811094b:0-palo-alto-earnings-boost-cybersecurity-sentiment-zscaler-stock-gains/",
-          "title": "Palo Alto Earnings Boost Cybersecurity Sentiment: Zscaler Stock Gains",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        }
-      ]
-    },
-    {
-      "query": "nitto atp finals",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T21:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50534384/shelton-beats-jodar-joins-zverev-alcaraz-atp-finals-semis",
-        "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
-        "https://www.si.com/onsi/serve/news/shelton-meet-alcaraz-tantalising-atp-finals-last-four-clash-01m7wstwpq4d"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST8jw8Q0lCWpzF7xl-6skgO6iGmO8xCnFt0vSKLhxMKQuM7cmmCFmBtRCRwng",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50534384/shelton-beats-jodar-joins-zverev-alcaraz-atp-finals-semis",
-          "title": "Shelton beats Jodar, joins Zverev, Alcaraz in ATP Finals semis",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST8jw8Q0lCWpzF7xl-6skgO6iGmO8xCnFt0vSKLhxMKQuM7cmmCFmBtRCRwng"
-        },
-        {
-          "url": "https://www.atptour.com/en/news/shelton-jodar-nitto-atp-finals-2026-thursday",
-          "title": "Shelton defeats Jodar, reaches Nitto ATP Finals SFs for the first time",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsVfvQ8Dx19o8pwOirNW-ojA79rHzvsIsrjhLeBooIat1nkkH2PkXkDi4JhI"
-        },
-        {
-          "url": "https://www.si.com/onsi/serve/news/shelton-meet-alcaraz-tantalising-atp-finals-last-four-clash-01m7wstwpq4d",
-          "title": "Shelton Sets Up Tantalising ATP Finals Last-Four Clash Against Alcaraz",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeqLdPXTXBa9xBlfQjRSWa78R7tLBS7vSgkTiOxnrOvhiXtTWhP5FfjFNhgWw"
-        }
-      ]
-    },
-    {
-      "query": "tarik skubal",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T21:10:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/tarik-skubal-long-term-contract-with-mets-likelihood",
-        "https://sports.yahoo.com/articles/jonah-tong-love-join-forces-205527872.html",
-        "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb8poQZiSt3LMhmnTrkzSDtH93A5wbqS_dIsT8zT3f1kOyP_koGCxE4DdfaB4",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/tarik-skubal-long-term-contract-with-mets-likelihood",
-          "title": "If Mets are to land big fish Skubal, Stearns needs to sail uncharted waters",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb8poQZiSt3LMhmnTrkzSDtH93A5wbqS_dIsT8zT3f1kOyP_koGCxE4DdfaB4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jonah-tong-love-join-forces-205527872.html",
-          "title": "Jonah Tong would love to join forces with ‘bulldog’ Tarik Skubal as he navigates his Mets future",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRThlbjOHjfmrrtNnRyyN6CxB_o8vJGlmvKV46ZOVLTvN6npEd5sM-NWnSQ7J4"
-        },
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans",
-          "title": "Every MLB team's chance of signing Skubal -- and their backup plans",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4k_TsL7nzfWH6UscKfSwGSeFul869g5SCnfN3rDQhlyWeuA-NJzivsTFJ1T8"
-        }
-      ]
-    },
-    {
-      "query": "macaulay culkin",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T21:10:00Z",
+      "query": "home alone",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T21:30:00Z",
       "related_news_urls": [
         "https://deadline.com/2026/11/home-alone-macaulay-culkin-seth-rogen-evan-goldberg-1237230258/",
         "https://www.theguardian.com/film/2026/nov/20/home-alone-sequel-macaulay-culkin",
@@ -182,177 +77,274 @@
       ]
     },
     {
-      "query": "spacex starshield",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T21:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/20/politics/himes-ukraine-starlink-slowdown",
-        "https://www.cnbc.com/2026/11/18/ukraine-starshield-starlink-musk-spacex.html",
-        "https://www.semafor.com/article/11/18/2026/nations-push-to-develop-starlink-alternatives"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4uqGXOjHLdYnOymDerdZ4KVL48Kqr4OkKB7TG0Ov9srU8D-5Ll5YXtkBylTg",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/20/politics/himes-ukraine-starlink-slowdown",
-          "title": "Trump intel chief warned no funding for Musk’s SpaceX without answers on Ukraine Starshield slowdown",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4uqGXOjHLdYnOymDerdZ4KVL48Kqr4OkKB7TG0Ov9srU8D-5Ll5YXtkBylTg"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/18/ukraine-starshield-starlink-musk-spacex.html",
-          "title": "Zelenskyy says Starshield speed curbs still in place over parts of Ukraine",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGqhTvkYN0XbTLiNFgnX3ux-L8L9x0XKv4Qd_508H319KxAdwLWEtuA276M6s"
-        },
-        {
-          "url": "https://www.semafor.com/article/11/18/2026/nations-push-to-develop-starlink-alternatives",
-          "title": "Nations push to develop Starlink alternatives",
-          "publisher": "Semafor",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQblVtCYlzumMsVFMDtig4DS6GSf7E-qQmhWCemkWUL6PG2smquvH0RveYL6p8"
-        }
-      ]
-    },
-    {
-      "query": "zscaler stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-20T21:10:00Z",
-      "related_news_urls": [
-        "https://www.tokenpost.com/news/investing/61983",
-        "https://www.tradingview.com/news/benzinga:42afc8811094b:0-palo-alto-earnings-boost-cybersecurity-sentiment-zscaler-stock-gains/",
-        "https://kalkine.com.au/news/technology/what-sparked-rebounds-at-zscaler-nasdaqzs-coreweave-nasdaqcrwv-and-backblaze-nasdaqblze-after-datadog-nasdaqddog-lost-29-in-a-month"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD_OkaQg3beAby8cwco_nNalHxkuWjHCPmND8IZzkwVh9Q5ACFYfMBt9o7SMs",
-      "image_credit": "TOKENPOST",
-      "news": [
-        {
-          "url": "https://www.tokenpost.com/news/investing/61983",
-          "title": "Zscaler Shares Fall 3.81% as Price Sits Below Key Averages",
-          "publisher": "TOKENPOST",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD_OkaQg3beAby8cwco_nNalHxkuWjHCPmND8IZzkwVh9Q5ACFYfMBt9o7SMs"
-        },
-        {
-          "url": "https://www.tradingview.com/news/benzinga:42afc8811094b:0-palo-alto-earnings-boost-cybersecurity-sentiment-zscaler-stock-gains/",
-          "title": "Palo Alto Earnings Boost Cybersecurity Sentiment: Zscaler Stock Gains",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://kalkine.com.au/news/technology/what-sparked-rebounds-at-zscaler-nasdaqzs-coreweave-nasdaqcrwv-and-backblaze-nasdaqblze-after-datadog-nasdaqddog-lost-29-in-a-month",
-          "title": "What Sparked Rebounds at Zscaler (NASDAQ:ZS), CoreWeave (NASDAQ:CRWV) and Backblaze (NASDAQ:BLZE) After Datadog (NASDAQ:DDOG) Lost 29% in a Month?",
-          "publisher": "Kalkine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq0ZbdSfzsreuFEW1YZIWze5ry5MJYUhqoBYVG21XAV-UGgpHyvytDB4qzPSA"
-        }
-      ]
-    },
-    {
-      "query": "10 year treasury yield",
+      "query": "troy melton",
       "approx_searches": "500+",
-      "published_at": "2026-11-20T21:00:00Z",
+      "published_at": "2026-11-20T21:30:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-20/treasuries-eye-longest-rally-in-five-months-on-haven-demand",
-        "https://www.cnbc.com/2026/11/20/treasury-yields-bonds-inflation.html",
-        "https://www.wsj.com/economy/central-banking/treasury-eurozone-bond-yields-edge-higher-47e08817"
+        "https://www.espn.com/mlb/story/_/id/50543664/sources-tigers-troy-melton-reach-6-year-465m-extension",
+        "https://www.mlb.com/news/tigers-troy-melton-contract-extension",
+        "https://sports.yahoo.com/articles/tigers-agree-46-5-million-213221394.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL89nRIAgZh6RiV7rucwFOmRwffhptx-uGjoFlJ1gBvaVYCftKJEfVJ9W4-aI",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRatR9P6GLEJY8CKLvxg4fdzUfloL_e-fV3kXC5kgn7tkN20JCPTbhH2IJkJ8I",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-20/treasuries-eye-longest-rally-in-five-months-on-haven-demand",
-          "title": "Treasuries Eye Longest Rally in Five Months on Haven Demand",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.espn.com/mlb/story/_/id/50543664/sources-tigers-troy-melton-reach-6-year-465m-extension",
+          "title": "Sources - Tigers, Troy Melton reach 6-year, $46.5M extension",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL89nRIAgZh6RiV7rucwFOmRwffhptx-uGjoFlJ1gBvaVYCftKJEfVJ9W4-aI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRatR9P6GLEJY8CKLvxg4fdzUfloL_e-fV3kXC5kgn7tkN20JCPTbhH2IJkJ8I"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/20/treasury-yields-bonds-inflation.html",
-          "title": "Treasury yields are sharply lower as investors flee to safe havens",
-          "publisher": "CNBC",
+          "url": "https://www.mlb.com/news/tigers-troy-melton-contract-extension",
+          "title": "Tigers agree to six-year extension with newly converted starter Troy Melton (source)",
+          "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRs7qQTXMxIkGzh0yrLrE1VegKXyLT4IInZcBz9JabAx0ZXRrwfM4fIMks7WV0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw4CPjRcfey8ROhW916bO3uYnjXOkgS0oFSIDmR14zhqC_xnWi59bhmST9AWI"
         },
         {
-          "url": "https://www.wsj.com/economy/central-banking/treasury-eurozone-bond-yields-edge-higher-47e08817",
-          "title": "Treasury Yields Fall as Anthropic Fails to Sustain Risk Appetite",
-          "publisher": "WSJ",
+          "url": "https://sports.yahoo.com/articles/tigers-agree-46-5-million-213221394.html",
+          "title": "Tigers agree to $46.5 million extension with breakout 25-year-old pitcher",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzrfOEEtiaAzndhL1Kisn_kLvcWQoTeDObMSBYdrqeVaCHUaUHR63m77zijY0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDssYJaiNnqwsbWW0HJILcZXIAvMpPN2AmUUHSKXydsycLD3TlI5AD3KTBoNg"
         }
       ]
     },
     {
-      "query": "indiana state basketball",
+      "query": "cme group tour championship",
       "approx_searches": "200+",
-      "published_at": "2026-11-20T21:00:00Z",
+      "published_at": "2026-11-20T21:30:00Z",
       "related_news_urls": [
-        "https://www.foxsports.com/college-basketball/us-virgin-islands-paradise-jam-indiana-state-sycamores-vs-stephen-f-austin-lumberjacks-nov-20-2026-game-boxscore-265407",
-        "https://www.bleachernation.com/picks/2026/11/20/mvc-basketball-predictions-computer-picks-and-best-bets-november-20-2/",
-        "https://gosycamores.com/news/2026/11/18/basketball-indiana-state-heads-to-2026-paradise-jam.aspx"
+        "https://www.lpga.com/news/2026/featured-groups-2026-cme-group-tour-championship",
+        "https://www.golfdigest.com/story/heres-the-prize-money-payout-for-each-golfer-at-the-lpga-2026-cme-group-tour-championship",
+        "https://www.golfchannel.com/lpga/news/cme-group-tour-championship-2026-round-2-tee-times-pairings-how-to-watch"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos",
-      "image_credit": "FOX Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmr0_TQAf42dGbnoaOrklW6R2a6MbTRVu-O17-YqbeqKJ4sjXTssPusn0Z594",
+      "image_credit": "LPGA",
       "news": [
         {
-          "url": "https://www.foxsports.com/college-basketball/us-virgin-islands-paradise-jam-indiana-state-sycamores-vs-stephen-f-austin-lumberjacks-nov-20-2026-game-boxscore-265407",
-          "title": "Indiana State vs. Stephen F Austin - Live Score - November 20, 2026",
-          "publisher": "FOX Sports",
+          "url": "https://www.lpga.com/news/2026/featured-groups-2026-cme-group-tour-championship",
+          "title": "Featured Groups: 2026 CME Group Tour Championship",
+          "publisher": "LPGA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmr0_TQAf42dGbnoaOrklW6R2a6MbTRVu-O17-YqbeqKJ4sjXTssPusn0Z594"
         },
         {
-          "url": "https://www.bleachernation.com/picks/2026/11/20/mvc-basketball-predictions-computer-picks-and-best-bets-november-20-2/",
-          "title": "MVC Basketball Predictions, Computer Picks and Best Bets | November 20",
+          "url": "https://www.golfdigest.com/story/heres-the-prize-money-payout-for-each-golfer-at-the-lpga-2026-cme-group-tour-championship",
+          "title": "Here’s the prize money payout for each golfer at the LPGA’s 2026 CME Group Tour Championship",
+          "publisher": "Golf Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROmYX7NI7xXakFhxXxLGIZ0bVj0CENxAad426iIHugjBsGhI9kcGW5I2iyQpE"
+        },
+        {
+          "url": "https://www.golfchannel.com/lpga/news/cme-group-tour-championship-2026-round-2-tee-times-pairings-how-to-watch",
+          "title": "CME Group Tour Championship 2026: Round 2 tee times, pairings, how to watch",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVotDioUQQI4oX2trGARtyJFPp1RpYaqeO1lhi9kx5gIEeF0qM4oDASOh6yks"
+        }
+      ]
+    },
+    {
+      "query": "iowa state vs ucf prediction",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:20:00Z",
+      "related_news_urls": [
+        "https://ucfknights.com/news/2026/11/19/ucfisu",
+        "https://www.cbssports.com/betting/news/iowa-state-ucf-odds-prediction-time-2026-week-12-college-football-friday-picks-best-bets/",
+        "https://sports.yahoo.com/articles/watch-ucf-knights-vs-iowa-172546656.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHdu4q0mQboO7IzFKvw8awDYkbc-LlhL4McsZ7OTRyHnQ-EHnmQly6xKtbbc",
+      "image_credit": "UCF Athletics",
+      "news": [
+        {
+          "url": "https://ucfknights.com/news/2026/11/19/ucfisu",
+          "title": "Football vs. Iowa State | Weather and Gameday Updates",
+          "publisher": "UCF Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHdu4q0mQboO7IzFKvw8awDYkbc-LlhL4McsZ7OTRyHnQ-EHnmQly6xKtbbc"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/iowa-state-ucf-odds-prediction-time-2026-week-12-college-football-friday-picks-best-bets/",
+          "title": "Iowa State vs. UCF odds, prediction, time: Week 12 college football Friday picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiz71HUjDk8Hz1UOEWx2NzdC8GE-zSoMr_QuozdP33lY3LruZYePH6FEYMNns"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-ucf-knights-vs-iowa-172546656.html",
+          "title": "How to Watch UCF Knights vs. Iowa State: TV Channel, Kickoff Time, and Everything You Need To Know",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvee6TcdSx0qnUI12l_j8yXqGW27FF932dE1y7fwKksVmvaCykeWObeUURDo8"
+        }
+      ]
+    },
+    {
+      "query": "idaho state basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:20:00Z",
+      "related_news_urls": [
+        "https://isubengal.com/caldwells-second-half-surge-carries-young-idaho-state-womens-basketball-past-cal-poly-as-bengals-open-2-1/",
+        "https://www.bleachernation.com/how-to-watch/2026/11/20/loyola-marymount-vs-idaho-state-womens-basketball-free-live-stream-tv-channel-how-to-watch/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIHM28iLT0AxwNTu2SkgRB-SUIXOCt_X-KteLR3C-LunjIoq-xbHvDRsqpfac",
+      "image_credit": "ISU Bengal",
+      "news": [
+        {
+          "url": "https://isubengal.com/caldwells-second-half-surge-carries-young-idaho-state-womens-basketball-past-cal-poly-as-bengals-open-2-1/",
+          "title": "Caldwell’s second-half surge carries young Idaho State Women’s Basketball past Cal Poly as Bengals open 2-1",
+          "publisher": "ISU Bengal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIHM28iLT0AxwNTu2SkgRB-SUIXOCt_X-KteLR3C-LunjIoq-xbHvDRsqpfac"
+        },
+        {
+          "url": "https://www.bleachernation.com/how-to-watch/2026/11/20/loyola-marymount-vs-idaho-state-womens-basketball-free-live-stream-tv-channel-how-to-watch/",
+          "title": "Loyola Marymount vs. Idaho State Women's Basketball: Free Live Stream, TV Channel, How to Watch",
           "publisher": "Bleacher Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPrrFYgJEDfi9ruw9NGIll-lNaRY8cBhxBGwXhFzaVv2y01F8VjhxlYgzH7zg"
-        },
-        {
-          "url": "https://gosycamores.com/news/2026/11/18/basketball-indiana-state-heads-to-2026-paradise-jam.aspx",
-          "title": "Indiana State heads to 2026 Paradise Jam",
-          "publisher": "Indiana State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT30sS_YqNDjtB_6XcAVvAAwwAw6AYQByvlCzQBxrgalJLfdy4vrKnvnTG7ouA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMl6XM_13H5lUJxDENEOAVobXhK8C9rMYcvDDczjqxC8VEVebe1qzRb5YR1Bs"
         }
       ]
     },
     {
-      "query": "palantir stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-20T21:00:00Z",
+      "query": "when does the stock market close",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:20:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/where-palantir-stock-1-215902553.html",
-        "https://www.fool.com/investing/2026/11/18/is-palantir-overvalued-or-is-it-still-a-buy-at-this-price/",
-        "https://www.moomoo.com/community/feed/institutional-flow-in-palantir-technologies-pltr-55-of-the-options-117648130703365"
+        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-veterans-day-153919156.html",
+        "https://www.facebook.com/chp/posts/in-observance-of-veterans-day-our-offices-will-be-closed-please-dial-9-1-1-for-e/1564034125762646/",
+        "https://www.cambridgema.gov/departments/publicworks/news/2026/11/cityofcambridgeveteransdayholidayclosuresandserviceinformationforwednesdaynovember11"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj-9N_2aiPHHlUO34HTQzi7dbc-c6lGSbmx6q8lpNKwajQNoQ7tocq-6hxCyo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/where-palantir-stock-1-215902553.html",
-          "title": "Where Will Palantir Stock Be in 1 Year?",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-veterans-day-153919156.html",
+          "title": "Is the stock market open on Veterans Day?",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj-9N_2aiPHHlUO34HTQzi7dbc-c6lGSbmx6q8lpNKwajQNoQ7tocq-6hxCyo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/18/is-palantir-overvalued-or-is-it-still-a-buy-at-this-price/",
-          "title": "Is Palantir Overvalued, or Is It Still a Buy at This Price?",
-          "publisher": "The Motley Fool",
+          "url": "https://www.facebook.com/chp/posts/in-observance-of-veterans-day-our-offices-will-be-closed-please-dial-9-1-1-for-e/1564034125762646/",
+          "title": "In observance of Veteran's Day, our offices will be closed. Please dial 9-1-1 for emergencies.",
+          "publisher": "Facebook",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_R0irEPiRzTy3sz54prQGOMcVfUzrijsO4AwTF8nHLleyN4fh6oh5elEVyNs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSi4VV702DBsWoxXZrDX8hDz-ML2A-pjBZEvx0sBD5FYb9roQ3yhIPyjjPHNy8"
         },
         {
-          "url": "https://www.moomoo.com/community/feed/institutional-flow-in-palantir-technologies-pltr-55-of-the-options-117648130703365",
-          "title": "Institutional Flow in Palantir Technologies (PLTR): 55% of the Options Money Is in Calls, Nov 19 at 2:47 PM",
-          "publisher": "Moomoo",
+          "url": "https://www.cambridgema.gov/departments/publicworks/news/2026/11/cityofcambridgeveteransdayholidayclosuresandserviceinformationforwednesdaynovember11",
+          "title": "Veterans Day Holiday Closures and Service Information for Wednesday November 11",
+          "publisher": "the City of Cambridge (.gov)",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpfxt4MC531UXxYjpIywYc9BFwudD2BXlfXDUqk42KomPYXOSd33kO8wpMl6E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeo2KXDxNU5PpEe5S0xIfwWPE0h5l87mf_RUISctO968L_a7MnU8WnPBJkwmI"
+        }
+      ]
+    },
+    {
+      "query": "athletic bilbao",
+      "approx_searches": "200+",
+      "published_at": "2026-11-20T21:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/ckg5r28gd2l1t",
+        "https://bookies.com/uk/news/expert-football-betting-tips-todays-best-football-tips-athletic-club-vs-espanyol",
+        "https://www.tufutbolero.com/en/news/athletic-line-up-yeray-prados-and-sancet-vs-espanyol-93d4c1"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/ckg5r28gd2l1t",
+          "title": "Athletic Club vs Espanyol: Spanish La Liga stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://bookies.com/uk/news/expert-football-betting-tips-todays-best-football-tips-athletic-club-vs-espanyol",
+          "title": "Expert Football Betting Tips - Today's Best Football Tips For Athletic Club vs Espanyol",
+          "publisher": "Bookies.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJQ8E6NS-niqlS9cFh1siGWwWq8kpnvYJoKwoSLFyG_UPkRbnhOmXHbRBcolM"
+        },
+        {
+          "url": "https://www.tufutbolero.com/en/news/athletic-line-up-yeray-prados-and-sancet-vs-espanyol-93d4c1",
+          "title": "Athletic line up Yeray, Prados and Sancet vs Espanyol",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5Jff8UIzgopRVoypufkBnU2PBPoAJaPSVDJronheztTjbZVsoq0tRFJ8TSIE"
+        }
+      ]
+    },
+    {
+      "query": "zscaler",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T21:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
+        "https://www.bloomberg.com/news/articles/2026-11-20/crowdstrike-is-in-talks-to-buy-cybersecurity-firm-zscaler",
+        "https://ua.news/en/dovkolo-svitu/aktsiyi-kiberbezpekovoyi-kompaniyi-zscaler-zrosli-na-20-na-tli-peregovoriv-shchodo-yiyi-kupivli-cnbc"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkSjjswmuGeRbvBSWmuZg-9bFrl0I7cBvSEe3shs1xyMsABtaJVrOsXKAtq-c",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
+          "title": "Zscaler stock jumps 20% on report that CrowdStrike in talks to buy security vendor",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkSjjswmuGeRbvBSWmuZg-9bFrl0I7cBvSEe3shs1xyMsABtaJVrOsXKAtq-c"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-20/crowdstrike-is-in-talks-to-buy-cybersecurity-firm-zscaler",
+          "title": "CrowdStrike Is in Talks to Buy Cybersecurity Firm Zscaler",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKCR1Rm5_MsaAdKm3cDd4S_lrRSg8YqCEEShnWTwn2Ye9sAwhf-roDOQPhsiE"
+        },
+        {
+          "url": "https://ua.news/en/dovkolo-svitu/aktsiyi-kiberbezpekovoyi-kompaniyi-zscaler-zrosli-na-20-na-tli-peregovoriv-shchodo-yiyi-kupivli-cnbc",
+          "title": "Zscaler shares rise 20% amid talks over its acquisition — CNBC",
+          "publisher": "UA.NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkiKdGttgUKJpGGcDZ1TNTTaPTvcteP_WAkQV3rzFvU55P5cUftI5X2rtgBRI"
+        }
+      ]
+    },
+    {
+      "query": "tarik skubal",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-20T21:10:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/tarik-skubal-long-term-contract-with-mets-likelihood",
+        "https://sports.yahoo.com/articles/jonah-tong-love-join-forces-205527872.html",
+        "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1tw5DZxXmtkSQZ5wkuxaasfPwQZ5QA2lx5zmhSfSHTSTzU8GyHlklFKdQt5M",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/tarik-skubal-long-term-contract-with-mets-likelihood",
+          "title": "If Mets are to land big fish Skubal, Stearns needs to sail uncharted waters",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1tw5DZxXmtkSQZ5wkuxaasfPwQZ5QA2lx5zmhSfSHTSTzU8GyHlklFKdQt5M"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/jonah-tong-love-join-forces-205527872.html",
+          "title": "Jonah Tong would love to join forces with ‘bulldog’ Tarik Skubal as he navigates his Mets future",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRThlbjOHjfmrrtNnRyyN6CxB_o8vJGlmvKV46ZOVLTvN6npEd5sM-NWnSQ7J4"
+        },
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50454235/tarik-skubal-all-30-teams-backup-plans",
+          "title": "Every MLB team's chance of signing Skubal -- and their backup plans",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4k_TsL7nzfWH6UscKfSwGSeFul869g5SCnfN3rDQhlyWeuA-NJzivsTFJ1T8"
         }
       ]
     }
