@@ -77,3 +77,19 @@ test('Bubbles X Quick Card displays StarCraftCo source status without an owner b
  assert.match(script,/scan not yet verified/);
  assert.doesNotMatch(script,/innerHTML/);
 });
+
+
+test('X Quick Card presents screenshot-provenance archive even when live X context is empty',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const page=await readFile(new URL('../bubbles-x-connect.html',import.meta.url),'utf8');
+ assert.match(page,/id="starCraftScreenshotArchive"/);
+ assert.match(page,/Owner-supplied screenshot evidence/);
+ assert.match(page,/White coordination/);
+ assert.match(page,/Pink assimilation/);
+ assert.match(page,/Red source fanout/);
+ assert.match(page,/eBay and analytics example/);
+ assert.match(page,/HypeStat composer draft/);
+ assert.match(page,/STARCRAFTCO-X-20261119\.md/);
+ assert.match(page,/not a live X import/i);
+ assert.doesNotMatch(page,/x\.com\/StarCraftCo\/status\/\d+/,'no invented canonical post IDs');
+});

@@ -35,3 +35,36 @@ Screenshot 1000091950.jpg is a Monopoly quote image, not an identified @StarCraf
 - Verify source tests, exact-head CI, independent review, PR merge, Worker deployment, public profile scan and Android readback separately. Code/doc commits alone do not prove a public reader is running.
 
 Canonical X owner engineering ledger: https://github.com/www-infinity4/QuantaPhi/issues/1210
+
+## TinyFish verified public links — November 19–20, 2026
+
+New live, one-time **external TinyFish browser observation**, separate from the earlier screenshots and from the Cloudflare Worker:
+- Run receipt: https://agent.tinyfish.ai/runs/3728a4bc-fc2e-41f6-a524-c5e05eb0189c
+- Public profile read: https://x.com/StarCraftCo, displayed as Star ⭐ Craft, with a link to quantaphi.org.
+- Profile used for browser access: an existing X-capable profile; **not authenticated as @StarCraftCo**. The run did not post, like, follow, reply, purchase, or change settings.
+- Six distinct authored post URLs were returned. TinyFish's narrative used an approximate “seven captured” count, but supplied only six individual URLs; six is the supported count. Observation date is November 19–20 across local/UTC date boundaries; relative post times are not publication timestamps.
+
+| Public post ID | Public URL | Evidence-limited description | Build treatment |
+| --- | --- | --- | --- |
+| `2079416622326906987` | https://x.com/StarCraftCo/status/2079416622326906987 | Pinned July 2026 development quick-start link and image | Developer-link reference only; validate destination and license before any site reuse |
+| `2123567922820035034` | https://x.com/StarCraftCo/status/2123567922820035034 | Short “MMT deficits bitcoin” QuantaPhi research share with site preview | Candidate source-linked research card after checking destination and factual claims |
+| `2123596246774366447` | https://x.com/StarCraftCo/status/2123596246774366447 | Creative/music image post with lyrics | Metadata/link only; do not republish nonlicensed lyrics or imagery |
+| `2123595879089135693` | https://x.com/StarCraftCo/status/2123595879089135693 | Music-related post mentioning @ElenaCardone, possibly clipped; adult-content label | Do not populate general carousel; retain link, classification and uncertainty |
+| `2123534328080597432` | https://x.com/StarCraftCo/status/2123534328080597432 | Short Texas-related commentary, context incomplete | Reference only; no inferred engineering requirement |
+| `2123527176394043785` | https://x.com/StarCraftCo/status/2123527176394043785 | @ElenaCardone mention with short video and adult-content label | No automatic video copy, download, embedding or general-audience carousel publication |
+
+No explicit new Bubbles or color-agent software instructions were observed among these six public URLs. Their creator identity, full history, private replies, and publication-time provenance are **not** established by this read.
+
+**Distinct source states:** `TinyFish: public_post_urls_observed`; `Cloudflare worker: deployed (PR #1983)`; `StarCraftCo Cloudflare D1 import: not verified`; `screenshot archive Quick Card PR #1986: open/review gated`; `physical Android acceptance: pending`. The earlier x.com access-denied Cloudflare scan cannot be retroactively marked successful from TinyFish output.
+
+## Scoped next engineering slice — canonical #1210 (no duplicate issue)
+
+**P0: Build a lawful, source-verified StarCraftCo context ingestion path** using the existing `workers/bubbles-public-x/worker.mjs`, per-account D1 keys and `/api/bubbles/public-x/context?account=StarCraftCo`. The immediate next action is to finish the independent review gate on open PR #1986; then:
+
+1. **Red/Blue source adapter:** Assess whether a permitted public-reader or provider-approved TinyFish handoff can supply account-authored status URLs to the existing pipeline without paid subscription or bypassing an access block. Validate canonical author and post ID, observedAt, source method, text truncation, duplicate ID, content sensitivity and attribution. If no permitted automation is available, present a read-only manually verified link archive clearly labeled as such; do not invent successful scheduled scans.
+2. **Green integration:** Persist only legitimate public records permitted by the provider with one consistent account-specific provenance; keep `@StarCraftCo` and `@IntegraAI` `reference_only`. Do not allow either account into the privileged `@YahooPingcwlz` owner `/inbox`. Deduplicate across repeated imports and preserve last-success/error independently.
+3. **Green Quick Card:** Surface valid, attributed public links in the existing Android-readable Bubbles X reader/Oracle Quick Card. Display author, verification state, link, content label and stale/error fallback. Do not automatically publish screenshots, copied lyrics, X video or adult-labeled media to a public carousel; any later carousel release requires source rights, age controls and separate acceptance.
+4. **Pink tests:** Demonstrate spoofed author/status ID rejected, duplicates and clipped text handled, read-only endpoint isolation, old scans do not override new, 18+ controls, URL sanitization, mixed-source failures, 320/360/393px Android and 44px targets. Red-before-green for changed behavior, then exact-head CI.
+5. **Purple/Black verification:** Independent review, guarded merge, Cloudflare Worker/version/cron/BROWSER/D1 readback, one **actual** `StarCraftCo` per-source D1 row and matching public context item with the exact observed ID, first-party page check and physical Android acceptance. Record separate post, code, test, merge, deployment and device receipts. No X posting, advertising replies, wallet or private account operations.
+
+Source evidence is not a new grant of credentials or privileged work authority. Preserve the existing Moltnook White/Pink enhancement PR #265 and HypeStat issue #1974 as separate deduplicated dependencies.
