@@ -14,6 +14,7 @@ test('browser service is exclusively on a Docker-internal link, while Tor owns t
   assert.match(service,/cap_drop: \[ALL\]/);
   assert.match(service,/read_only: true/);
   assert.match(service,/no-new-privileges:true/);
+  assert.match(service,/seccomp=\.\/seccomp_profile\\.json/);
   assert.match(service,/dns: \[127\.0\.0\.1\]/);
   const server=compose.split(/\n  tor:\n/)[1].split(/\n  browser:\n/)[0];
   assert.match(server,/tor_egress:/);
