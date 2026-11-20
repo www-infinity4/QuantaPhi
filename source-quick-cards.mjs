@@ -5,6 +5,7 @@ import {mountAvatarAiCard} from './avatar-ai-card.mjs';
 import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {CREATOR_SOURCES} from './creator-post-catalog.mjs';
 import {YOUTUBE_CREATOR_SOURCES} from './youtube-creator-catalog.mjs';
+import {REVIEWED_OWNER_VIDEO_CARDS} from './youtube-owner-video-links.mjs';
 import {FAMILY_TV_SOURCE} from './family-parenting-tv-core.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
@@ -48,6 +49,7 @@ export const ACTIVE_SOURCE_CARDS=Object.freeze([
  ...QUICK_CARD_SOURCES,
  ...CREATOR_SOURCES,
  ...YOUTUBE_CREATOR_SOURCES,
+ ...REVIEWED_OWNER_VIDEO_CARDS,
  FAMILY_TV_SOURCE,
  ...(PCLA_DISCOVERY?[source(PCLA_DISCOVERY.id,PCLA_DISCOVERY.name,PCLA_DISCOVERY.category,
    PCLA_DISCOVERY.feature,PCLA_DISCOVERY.official,PCLA_DISCOVERY.url,
@@ -62,6 +64,7 @@ export const PUBLIC_SOURCE_IDS=Object.freeze([
  'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela',
  ...CREATOR_SOURCES.map(c=>c.id),
  ...YOUTUBE_CREATOR_SOURCES.map(c=>c.id),
+ ...REVIEWED_OWNER_VIDEO_CARDS.map(c=>c.id),
  FAMILY_TV_SOURCE.id
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
