@@ -35,6 +35,8 @@ test('worker requires opt-in before storing snippets and does not contain direct
  assert.match(source,/type === 'STORE' && request\.consent === true/);
  assert.match(source,/indexedDB\.open/);
  assert.match(source,/type === 'CLEAR'/);
+ assert.doesNotMatch(source,/store\.put\(record\)/);
+ assert.match(source,/store\.put\(metadata\)/);
  assert.doesNotMatch(source,/\bfetch\s*\(|XMLHttpRequest|sendBeacon|WebSocket|EventSource|importScripts\s*\(/);
 });
 test('standalone playground uses restrictive CSP and discloses Radar limits',()=>{
