@@ -1,0 +1,11 @@
+# Browser engine version matches the installed Playwright package exactly.
+FROM mcr.microsoft.com/playwright:v1.64.1-noble
+ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+WORKDIR /app
+COPY package.json ./
+RUN npm install --omit=dev --ignore-scripts \
+    && install -d -o pwuser -g pwuser -m 0700 /receipts
+COPY *.mjs ./
+USER pwuser
+ENTRYPOINT ["node"]
+CMD ["browser-bridge.mjs","https://example.com"]

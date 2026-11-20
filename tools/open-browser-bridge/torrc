@@ -1,0 +1,10 @@
+# The only SOCKS listener is on the private browser-to-Tor link.
+ClientOnly 1
+SocksPort 172.30.211.2:9050 IsolateSOCKSAuth
+SocksPolicy accept 172.30.211.3
+SocksPolicy reject *
+ClientRejectInternalAddresses 1
+SafeSocks 1
+DataDirectory /var/lib/tor
+AvoidDiskWrites 1
+Log notice stdout
