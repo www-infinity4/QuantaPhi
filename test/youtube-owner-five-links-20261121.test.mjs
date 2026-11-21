@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {REVIEWED_OWNER_VIDEO_LINKS, REVIEWED_OWNER_VIDEO_CARDS, validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
 import {findSourceCard, isPublicSourceCard, validSourceCard} from '../source-quick-cards.mjs';
 import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {CREATOR_CHANNELS,validCreatorVideo} from '../youtube-creator-mixed-core.mjs';
 import {departmentFor} from '../quanta-context-placement.mjs';
 
 const ids=['93YR_yN2dSY','cfGcMiv3pkw','21tiB8QgHoM','BM41NL-KoDc','kd1PLywtQzI'];
@@ -175,4 +176,16 @@ test('Brittikitty Lily source opens as one original-video Public/Media Quick Car
   assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
   assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
   assert.equal(departmentFor(card),'media');
+});
+
+
+test('Brittikitty creator selector opens original channel without inventing RSS access',()=>{
+ const channel=CREATOR_CHANNELS.find(c=>c.key==='brittikitty');
+ assert.ok(channel,'Channel must be available in the existing mixed creator selector');
+ assert.equal(channel.name,'Brittikitty');
+ assert.equal(channel.url,'https://www.youtube.com/@brittikitty');
+ assert.equal(channel.channelId,null,'Do not invent a canonical UC channel ID');
+ assert.equal(channel.seed.length,1,'A single original video is actually identified');
+ assert.equal(channel.seed[0].videoId,'eikANmw714k');
+ assert.ok(validCreatorVideo(channel.seed[0]));
 });
