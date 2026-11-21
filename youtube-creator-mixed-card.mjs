@@ -23,8 +23,8 @@ export function mountMixedCreatorCard(root,card){
  const dedicatedChannel=CREATOR_CHANNELS.find(c=>c.key===card.initialCreatorChannel)||null;
  const ownerView=card.initialCreatorChannel==='owner';
  const panel=el('section','qcx-tool youtube-creator-mixed-card');
- panel.setAttribute('aria-label',ownerView?'More owner-submitted videos and original creator uploads':dedicatedChannel?dedicatedChannel.name+' full channel YouTube videos':'GANA Tribe, AbbeCAdventures, Julie Deru, Samirah Ann and LANDing Autism mixed YouTube video feed');
- const title=el('h3','',ownerView?'View more videos · owner links + verified creators':dedicatedChannel?dedicatedChannel.name+' · Full channel Quick Card':'YouTube creator mix · GANA Tribe / Abbe / Julie / Samirah / LANDing Autism');
+ panel.setAttribute('aria-label',ownerView?'More owner-submitted videos and original creator uploads':dedicatedChannel?dedicatedChannel.name+' full channel YouTube videos':'GANA Tribe, AbbeCAdventures, Julie Deru, Samirah Ann, Brittikitty and LANDing Autism mixed YouTube video feed');
+ const title=el('h3','',ownerView?'View more videos · owner links + verified creators':dedicatedChannel?dedicatedChannel.name+' · Full channel Quick Card':'YouTube creator mix · GANA Tribe / Abbe / Julie / Samirah / Brittikitty / LANDing Autism');
  const info=el('p','qcx-note',ownerView?'Browse more videos you submitted, then switch the channel selector to load verified creators’ recent uploads using YouTube public RSS. These links are not presumed related or from the same uploader. Full channel archives stay on YouTube.':dedicatedChannel?'Original channel link, six reviewed videos and recent uploads. Search or load more; the full historical archive stays on YouTube.':'Recent videos from YouTube’s official public upload feeds, plus reviewed and personally added links. Full history, Shorts and Community posts may not be present.');
  const status=el('p','qcx-note','Loading available public uploads…');
  status.setAttribute('role','status');
