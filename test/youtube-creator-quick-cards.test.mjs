@@ -117,3 +117,25 @@ test('owner-supplied Samirah video has one public source-linked Oracle Quick Car
  assert.ok(ALL_FEED_CARDS.some(card=>card.id===c.id));
  assert.equal(departmentFor(c),'media');
 });
+
+test('Argo Mill owner Short is indexed in Oracle media without inventing its channel or additional Shorts',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const v=REVIEWED_OWNER_VIDEO_LINKS.find(row=>row.videoId==='bzvtKRteavs');
+ assert.ok(v);
+ assert.equal(v.title,'#idahosprings #goldmill #goldmine $goldmining #gold');
+ assert.equal(v.observedAt,'2026-11-21');
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(v));
+ assert.equal(validateOwnerYouTubeLink({...v,shortsRoute:'https://untrusted.example'}),false);
+ const c=REVIEWED_OWNER_VIDEO_CARDS.find(card=>card.reviewedYouTubeVideoId===v.videoId);
+ assert.ok(c);
+ assert.equal(c.secondUrl,'https://www.youtube.com/shorts/bzvtKRteavs');
+ assert.equal(c.secondLabel,'Open Shorts link');
+ assert.match(c.details,/not a complete channel archive/);
+ assert.ok(isPublicSourceCard(c)&&validSourceCard(c));
+ assert.ok(ACTIVE_SOURCE_CARDS.some(card=>card.id===c.id));
+ assert.ok(ALL_FEED_CARDS.some(card=>card.id===c.id));
+ assert.equal(departmentFor(c),'media');
+});
