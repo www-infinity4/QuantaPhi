@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Originals · QuantaPhi</title><meta name="description" content="Organize original Quick Card ideas on this device and hand them to QuantaPhi creators.">
+<link rel="stylesheet" href="/creator-gpt-handoff.css?v=20261107-1">
+<style>.mo-status{font-size:14px;color:#c3dce9}.mo-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr))}.mo-card{border:1px solid #357a9c;border-radius:15px;padding:12px;background:#091c30}.mo-card img{display:block;max-width:100%;width:auto;height:auto;max-height:260px;object-fit:contain;border-radius:12px;margin:0 auto 8px}.mo-card h3{font-size:21px;line-height:1.25;margin:5px 0}.mo-card p{font-size:15px}.mo-card small{color:#a5c9de}.mo-card a,.mo-card button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;color:#d9f7ff;background:#173953;border:1px solid #367d9e;border-radius:10px;text-decoration:none;font-weight:750;margin:4px 4px 0 0;font:inherit;cursor:pointer}input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #80e6ff;outline-offset:3px}</style></head>
+<body><main class="cgh-shell" id="originalsApp"><a class="cgh-back" href="/#developerCarousel">← Creator tools</a>
+<header><p class="cgh-kicker">INFINITY · CREATOR ORIGINALS</p><h1>My Originals</h1>
+<p>Display your own artwork links, Quick Card concepts, music projects and websites. This is a device-local draft shelf, not a synced account gallery or monetization service.</p></header>
+<section class="cgh-panel"><h2>Save an original draft</h2><p>Only the title, public URLs and description you enter are stored in this browser. No private photo album is inspected, and nothing is published or sent to AI automatically. Other people using this device/browser may see these local drafts.</p>
+<form id="originalDraftForm">
+<label for="originalTitle">Title</label><input id="originalTitle" required minlength="3" maxlength="85" placeholder="My original art collection">
+<label for="originalKind">What did you create?</label><select id="originalKind"><option value="image">Original image</option><option value="music">Music / media</option><option value="video">Video</option><option value="quick-card">Quick Card</option><option value="website">Website</option><option value="other">Other original work</option></select>
+<label for="originalDescription">Description</label><textarea id="originalDescription" maxlength="400" rows="3" placeholder="Describe the project, what makes it original, and what viewers can do."></textarea>
+<label for="originalWebsite">My public HTTPS source website (optional)</label><input id="originalWebsite" type="url" placeholder="https://my-site.example/">
+<label for="originalImage">My permitted JPG/PNG/WebP cover URL (optional)</label><input id="originalImage" type="url" placeholder="https://my-site.example/artwork.jpg">
+<div class="cgh-actions"><button type="submit">Save this device draft</button><a href="/creator-gpt-handoff.html">Create with GPT</a><a href="/?card=mediaStarCreator">Create Media Star</a></div></form>
+<p id="originalStatus" role="status" aria-live="polite">No public publication or coin payment takes place from this form.</p></section>
+<section class="cgh-panel"><h2>My saved drafts · this browser</h2><p id="originalCount">Loading local drafts…</p><div id="originalDraftList" class="mo-grid"></div>
+<p class="mo-status">These entries are not an authenticated private creator database, cannot be transferred to another device automatically and do not reserve exclusive edition rights. Publishing through the original Quick Card builder requires an authorized website and moderation.</p></section>
+</main><script type="module" src="/my-originals.mjs?v=20261107-1"></script></body></html>
