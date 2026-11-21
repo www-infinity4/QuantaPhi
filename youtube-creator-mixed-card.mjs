@@ -16,10 +16,11 @@ const savedUrls=()=>{
 };
 export function mountMixedCreatorCard(root,card){
  if(!root||card?.youtubeMixedFeed!==true)return false;
+ const dedicatedChannel=CREATOR_CHANNELS.find(c=>c.key===card.initialCreatorChannel)||null;
  const panel=el('section','qcx-tool youtube-creator-mixed-card');
- panel.setAttribute('aria-label','GANA Tribe, AbbeCAdventures, Julie Deru and Samirah Ann mixed YouTube video feed');
- const title=el('h3','','YouTube creator mix · GANA Tribe / Abbe / Julie / Samirah');
- const info=el('p','qcx-note','Recent videos from YouTube’s official public upload feeds, plus reviewed and personally added links. Full history, Shorts and Community posts may not be present.');
+ panel.setAttribute('aria-label',dedicatedChannel?dedicatedChannel.name+' full channel YouTube videos':'GANA Tribe, AbbeCAdventures, Julie Deru, Samirah Ann and LANDing Autism mixed YouTube video feed');
+ const title=el('h3','',dedicatedChannel?dedicatedChannel.name+' · Full channel Quick Card':'YouTube creator mix · GANA Tribe / Abbe / Julie / Samirah / LANDing Autism');
+ const info=el('p','qcx-note',dedicatedChannel?'Original channel link, six reviewed videos and recent uploads. Search or load more; the full historical archive stays on YouTube.':'Recent videos from YouTube’s official public upload feeds, plus reviewed and personally added links. Full history, Shorts and Community posts may not be present.');
  const status=el('p','qcx-note','Loading available public uploads…');
  status.setAttribute('role','status');
  const controls=el('div','qcx-mix-controls');
@@ -38,7 +39,7 @@ export function mountMixedCreatorCard(root,card){
  panel.append(title,info,controls,status,feed,more,add,addStatus,channelsBox);
  root.append(panel);
 
- let saved=savedUrls(),visible=BATCH,filter='all',query='',busy=false;
+ let saved=savedUrls(),visible=BATCH,filter=dedicatedChannel?.key||'all',query='',busy=false;
  const live=new Map();
  const channels=()=>{
   const found=[...CREATOR_CHANNELS];
