@@ -66,7 +66,7 @@ test('video cards use only approved click-to-play YouTube embeds and retain dire
 
 test('owner-linked YouTube video becomes a separate source-backed public Oracle carousel card, not a family or 21+ placement',async()=>{
  const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
- assert.equal(REVIEWED_OWNER_VIDEO_LINKS.length,1);
+ assert.equal(REVIEWED_OWNER_VIDEO_LINKS.length,2);
  const v=REVIEWED_OWNER_VIDEO_LINKS[0];
  assert.equal(v.videoId,'PyUwXoTabPA');
  assert.equal(v.title,'REFRESHING! 6-2-2014');
@@ -96,4 +96,24 @@ test('owner video has a click-only embedded player, Stop action, thumbnail and o
  assert.match(src,/Original video on YouTube/);
  assert.match(src,/youtube-nocookie\.com\/embed/);
  assert.doesNotMatch(src,/autoplay=1/);
+});
+
+test('owner-supplied Samirah video has one public source-linked Oracle Quick Card without invented publication, rights or 21+ claims',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const v=REVIEWED_OWNER_VIDEO_LINKS.find(row=>row.videoId==='UPFgnpkm7MQ');
+ assert.ok(v,'Owner link must be in the reviewed catalog');
+ assert.equal(v.title,'BREASTFEEDING A TEETHING BABY | Clingy baby | Clean with me | Mum of four');
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v=UPFgnpkm7MQ');
+ assert.equal(v.observedAt,'2026-11-21');
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.equal(validateOwnerYouTubeLink(v),true);
+ const c=REVIEWED_OWNER_VIDEO_CARDS.find(card=>card.reviewedYouTubeVideoId===v.videoId);
+ assert.ok(c,'Dedicated owner video card should exist');
+ assert.equal(c.image,'https://i.ytimg.com/vi/UPFgnpkm7MQ/hqdefault.jpg');
+ assert.ok(isPublicSourceCard(c));
+ assert.ok(validSourceCard(c));
+ assert.ok(ALL_FEED_CARDS.some(card=>card.id===c.id));
+ assert.equal(departmentFor(c),'media');
 });
