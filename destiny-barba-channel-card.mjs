@@ -24,7 +24,7 @@ export function validateDestinyBarbaVideo(v){
   /^[A-Za-z0-9_-]{11}$/.test(v.videoId||'')&&
   v.sourceUrl==='https://www.youtube.com/watch?v='+v.videoId&&
   typeof v.title==='string'&&v.title.length>0&&v.title.length<=150&&
-  v.title===v.title.trim()&&!/[<>\\u0000-\\u001f]/.test(v.title)&&
+  v.title===v.title.trim()&&!/[<>\u0000-\u001f]/.test(v.title)&&
   v.publishedAt===null&&v.observedAt==='2026-11-21');
 }
 export const DESTINY_BARBA_SOURCE=Object.freeze({
