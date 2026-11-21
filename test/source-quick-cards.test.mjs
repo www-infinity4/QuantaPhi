@@ -5,6 +5,7 @@ import {Script} from 'node:vm';
 import {QUICK_CARD_SOURCES,findSourceCard,validSourceCard,PUBLIC_SOURCE_IDS,isPublicSourceCard} from '../source-quick-cards.mjs';
 import {CREATOR_SOURCES} from '../creator-post-catalog.mjs';
 import {YOUTUBE_CREATOR_SOURCES} from '../youtube-creator-catalog.mjs';
+import {JULIE_DERU_SOURCES} from '../julie-deru-catalog.mjs';
 import {REVIEWED_OWNER_VIDEO_CARDS} from '../youtube-owner-video-links.mjs';
 import {FAMILY_TV_SOURCE} from '../family-parenting-tv-core.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
@@ -123,10 +124,11 @@ test('functional source cards enter Public while link-only integrations remain s
   'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela',
   ...CREATOR_SOURCES.map(c=>c.id),
   ...YOUTUBE_CREATOR_SOURCES.map(c=>c.id),
+  ...JULIE_DERU_SOURCES.map(c=>c.id),
   ...REVIEWED_OWNER_VIDEO_CARDS.map(c=>c.id),
   FAMILY_TV_SOURCE.id
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,26+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+REVIEWED_OWNER_VIDEO_CARDS.length);
+ assert.equal(PUBLIC_SOURCE_IDS.length,26+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+JULIE_DERU_SOURCES.length+REVIEWED_OWNER_VIDEO_CARDS.length);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/ACTIVE_SOURCE_CARDS\.filter\(isPublicSourceCard\)/);
