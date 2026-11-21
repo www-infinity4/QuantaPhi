@@ -3,12 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T10:31:13.697865Z",
+  "checked_at": "2026-11-21T11:01:23.898445Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "smackdown results",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T10:40:00Z",
+      "related_news_urls": [
+        "https://www.wwe.com/shows/smackdown/2026-11-20",
+        "https://sports.yahoo.com/wrestling/live/wwe-smackdown-live-results-nov-20-updates-grades-tonight-as-survivor-series-wargames-nears-203000078.html",
+        "https://www.cbssports.com/wwe/news/wwe-smackdown-results-live-updates-and-grades-for-november-20/live/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGF6652pL6dDiPi6c8LhTldjrpDn_yjwO1EOlR0v8rTAIpzf8nxovy5ZXTfgU",
+      "image_credit": "WWE",
+      "news": [
+        {
+          "url": "https://www.wwe.com/shows/smackdown/2026-11-20",
+          "title": "SmackDown results, Nov. 20, 2026: Sami Zayn blindsides Kevin Owens with a Helluva Kick",
+          "publisher": "WWE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGF6652pL6dDiPi6c8LhTldjrpDn_yjwO1EOlR0v8rTAIpzf8nxovy5ZXTfgU"
+        },
+        {
+          "url": "https://sports.yahoo.com/wrestling/live/wwe-smackdown-live-results-nov-20-updates-grades-tonight-as-survivor-series-wargames-nears-203000078.html",
+          "title": "WWE SmackDown results, grades (Nov. 20): Kevin Owens beats Gunther; Jade Cargill wins WarGames advantage",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStZM_hC_Q94g1bsZ0UEkHMbCl68cKFxwpEWXX1sdloLSFPAWxyLCuvEoZO37o"
+        },
+        {
+          "url": "https://www.cbssports.com/wwe/news/wwe-smackdown-results-live-updates-and-grades-for-november-20/live/",
+          "title": "WWE SmackDown results, review, grades for Nov. 20: Sami Zayn stands tall over Kevin Owens",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnlf_DWRUGqh2OV-kK9l8qNbQ9yNi9CxDq_qWsb8uwc9KaZPEt6uB-8wI_pE"
+        }
+      ]
+    },
+    {
+      "query": "black friday sale deals",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T10:30:00Z",
+      "related_news_urls": [
+        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
+        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-20",
+        "https://www.today.com/shop/gift-sales-adrianna-brach-rcna610463"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
+          "title": "Early Black Friday deals live now: Ugg, Michael Kors, Hoka, Dyson, Ring and more are on major sale for the 2026 holiday event",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-20",
+          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIsEPOqmMSYONoI0wTC7wPWMXt8o2i61InZxXxzvg54CjB_Hr0O55kW1NQOZU"
+        },
+        {
+          "url": "https://www.today.com/shop/gift-sales-adrianna-brach-rcna610463",
+          "title": "Black Friday Holiday Deals, Approved by Executive Editor Adrianna Brach",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhDSA6g8daLTb90uEjPhiS14nRHa8heG2l_zT5VtGGYlq95ZwCHzk5Lq3w3gU"
+        }
+      ]
+    },
+    {
+      "query": "ken paxton",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T10:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/20/us/texas-ken-paxton-drops-lawsuits.html",
+        "https://www.texastribune.org/2026/11/20/texas-paxton-abortion-pill-lawsuits-dropped-california-delaware/",
+        "https://www.houstonchronicle.com/politics/texas/article/paxton-dropped-lawsuits-22537842.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIxBb3p-xLZtO0smVChPU3JEYdjbnvoiD8-hdh3gZR6Xu8ygduxPg5wBK3qBk",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/20/us/texas-ken-paxton-drops-lawsuits.html",
+          "title": "As He Leaves Office, Ken Paxton Drops Suits Against Political Opponents",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIxBb3p-xLZtO0smVChPU3JEYdjbnvoiD8-hdh3gZR6Xu8ygduxPg5wBK3qBk"
+        },
+        {
+          "url": "https://www.texastribune.org/2026/11/20/texas-paxton-abortion-pill-lawsuits-dropped-california-delaware/",
+          "title": "Texas drops abortion pill lawsuits against out-of-state medical providers",
+          "publisher": "The Texas Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfHRRg327DKe1nTOmLMWx6NdNAEGxptRULzPuXZ9OdIPSfp4PO0nYpyM03Oi4"
+        },
+        {
+          "url": "https://www.houstonchronicle.com/politics/texas/article/paxton-dropped-lawsuits-22537842.php",
+          "title": "Ken Paxton is abandoning controversial lawsuits as he leaves office. Why?",
+          "publisher": "Houston Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8K6WfPS0AF5dS5D5KRF3HLJ03j3ApzdLML4tZKGDJKPBYNOCa1qtG5-3_8QI"
+        }
+      ]
+    },
+    {
       "query": "fbi ten most wanted fugitives",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-21T09:50:00Z",
       "related_news_urls": [
         "https://www.newsweek.com/satinderjeet-singh-goldy-brar-fbi-most-wanted-list-canada-reward-murder-suspect-12743107",
@@ -42,37 +147,177 @@
       ]
     },
     {
-      "query": "jake matthews",
+      "query": "u.s. mint stops producing pennies",
       "approx_searches": "100+",
-      "published_at": "2026-11-21T09:00:00Z",
+      "published_at": "2026-11-21T09:50:00Z",
       "related_news_urls": [
-        "https://www.ajc.com/sports/2026/11/who-could-be-best-tackles-in-2027-nfl-draft-falcons-will-be-looking/",
-        "https://bloggingdirty.com/falcons-could-find-their-new-jake-matthews-in-coveted-2027-nfl-draft-prospect-01m7n6f5ax9q",
-        "https://sports.yahoo.com/articles/cardinals-ole-miss-qb-trinidad-222807306.html"
+        "https://www.5newsonline.com/article/news/nation-world/trump-signs-common-cents-act-halting-penny-production/507-8582004e-9fe1-4dab-ac3f-99e4470efae5",
+        "https://www.nbcnews.com/politics/white-house/trump-formally-ends-minting-penny-nearly-250-years-production-rcna600580",
+        "https://www.sweetwaternow.com/trump-signs-lummis-common-cents-act-friday/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOfdvEXkqI6zjas0T-Pz5IYjUbFp3riaKJ8y_SArzFoRKoHA8kfJmuESwmCLU",
-      "image_credit": "The Atlanta Journal-Constitution",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRovkpTazunoS-jEah2DMx2iP0NLNLVNmj0u8mV9DUjV4O0eUreL_01RScM998",
+      "image_credit": "5newsonline.com",
       "news": [
         {
-          "url": "https://www.ajc.com/sports/2026/11/who-could-be-best-tackles-in-2027-nfl-draft-falcons-will-be-looking/",
-          "title": "Who could be best tackles in 2027 NFL draft? Falcons will be looking.",
-          "publisher": "The Atlanta Journal-Constitution",
+          "url": "https://www.5newsonline.com/article/news/nation-world/trump-signs-common-cents-act-halting-penny-production/507-8582004e-9fe1-4dab-ac3f-99e4470efae5",
+          "title": "Trump signs 'Common Cents Act' into law, halting penny production",
+          "publisher": "5newsonline.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOfdvEXkqI6zjas0T-Pz5IYjUbFp3riaKJ8y_SArzFoRKoHA8kfJmuESwmCLU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRovkpTazunoS-jEah2DMx2iP0NLNLVNmj0u8mV9DUjV4O0eUreL_01RScM998"
         },
         {
-          "url": "https://bloggingdirty.com/falcons-could-find-their-new-jake-matthews-in-coveted-2027-nfl-draft-prospect-01m7n6f5ax9q",
-          "title": "Falcons could find their new Jake Matthews in coveted 2027 NFL Draft prospect",
-          "publisher": "Blogging Dirty",
+          "url": "https://www.nbcnews.com/politics/white-house/trump-formally-ends-minting-penny-nearly-250-years-production-rcna600580",
+          "title": "Trump formally ends minting of the penny after nearly 250 years of production",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs3mL3-GttNLtJRNkXGXqCNyY0JjQTmqoxj-FxHSuJYCOeLkjoSk9PvdgkaSk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5SvRht9qbYJDmHlx11Oa1uauithJud5WjCxankZr4e-D5-8yIO8B4u5int0"
         },
         {
-          "url": "https://sports.yahoo.com/articles/cardinals-ole-miss-qb-trinidad-222807306.html",
-          "title": "Cardinals Take Ole Miss QB Trinidad Chambliss at No. 7 in New 2027 NFL Mock Draft",
+          "url": "https://www.sweetwaternow.com/trump-signs-lummis-common-cents-act-friday/",
+          "title": "Trump Signs Lummis’ Common Cents Act Friday",
+          "publisher": "SweetwaterNOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjbwDEwD7nGoWRHt_11X3bpmpvy8kPSsjrs6fww4HXtRA8AM202k1uutgMHEQ"
+        }
+      ]
+    },
+    {
+      "query": "dubious provenance gta 6",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T09:20:00Z",
+      "related_news_urls": [
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
+        "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/",
+        "https://screenrant.com/gta-6-how-to-get-halifax-to-call-you-back/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKl2fy6qyeTlSn3iUVu1agp2KGBgZtrg-Ub73xoo33qhggokj4_xRx-SX0CQs",
+      "image_credit": "PC Gamer",
+      "news": [
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
+          "title": "Should you give the statue to Benedict Halifax in GTA 6?",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKl2fy6qyeTlSn3iUVu1agp2KGBgZtrg-Ub73xoo33qhggokj4_xRx-SX0CQs"
+        },
+        {
+          "url": "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/",
+          "title": "Should you kill or spare Benedict Halifax in GTA 6?",
+          "publisher": "Radio Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
+        },
+        {
+          "url": "https://screenrant.com/gta-6-how-to-get-halifax-to-call-you-back/",
+          "title": "GTA 6: How To Get Halifax To Call You Back",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2xAPetG5CKvio6UrSuOVKk7m7L3tEJC0_zJ1nGWeaLlObuOje1uW4bKfUS3g"
+        }
+      ]
+    },
+    {
+      "query": "events",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T09:20:00Z",
+      "related_news_urls": [
+        "https://www.obawebsite.com/foley-plans-month-of-holiday-events-for-families-this-december",
+        "https://www.limapagi.id/en/foley-holiday-events-december",
+        "https://peradaban.id/en/foley-holiday-events-december"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQeTGbChc1xLVpXEHLAY4g0KuVLLaeReFDlQcaN1RAxIG-isB2UQEqWqKisVM",
+      "image_credit": "OBA News",
+      "news": [
+        {
+          "url": "https://www.obawebsite.com/foley-plans-month-of-holiday-events-for-families-this-december",
+          "title": "Foley Plans Month Of Holiday Events For Families This December",
+          "publisher": "OBA News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQeTGbChc1xLVpXEHLAY4g0KuVLLaeReFDlQcaN1RAxIG-isB2UQEqWqKisVM"
+        },
+        {
+          "url": "https://www.limapagi.id/en/foley-holiday-events-december",
+          "title": "Foley Schedules Six Holiday Events for Families in December",
+          "publisher": "Limapagi",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCeTJFY34DWO_kqiFHzj38p-heE2FBA7sisgXHE0uG27dJ152vmK-li2cyiOs"
+        },
+        {
+          "url": "https://peradaban.id/en/foley-holiday-events-december",
+          "title": "Foley Schedules Six Holiday Events Across December",
+          "publisher": "Peradaban.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCeTJFY34DWO_kqiFHzj38p-heE2FBA7sisgXHE0uG27dJ152vmK-li2cyiOs"
+        }
+      ]
+    },
+    {
+      "query": "england vs australia",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T08:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
+        "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
+        "https://sports.yahoo.com/articles/australia-wins-toss-bowl-1st-081728321.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCCqKLBixawD0bALaHyMNXf6OgBFW9BqJfqI-9aHxOfijaLVvpSgCErQvZSYA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
+          "title": "Australia vs England LIVE: First T20, MCG, Melbourne - cricket score, commentary & updates",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCCqKLBixawD0bALaHyMNXf6OgBFW9BqJfqI-9aHxOfijaLVvpSgCErQvZSYA"
+        },
+        {
+          "url": "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
+          "title": "Harper's Australia debut a much-needed good story",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7jZMpbY-nrsnKq5bLNm3dnxCuVRiqrQvqcFmRN5fsFlqI1CKLICee2zzsh5s"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/australia-wins-toss-bowl-1st-081728321.html",
+          "title": "Australia wins the toss and will bowl in the 1st of 5 T20 matches against England",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuKK0_I0KZWntK25JNKXjMIhsc0Odfps94MwYPdEcThTAvdX_vJ5GSk9wwbLc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNlqj3pX5hPGUOP9zpn90p8ZaDqYXH7ajEzqD7MD7dRCd8Xyvo0UWsl-23h1U"
+        }
+      ]
+    },
+    {
+      "query": "squatter removal company armed raid",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T08:40:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
+        "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
+        "https://www.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
+          "title": "Armed with guns and sword, owner of squatter removal company cleared out a home. Now he faces felonies",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ"
+        },
+        {
+          "url": "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
+          "title": "They raided a Bay Area home with guns and swords. Are they ‘squatter removers’ — or vigilantes?",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLw0YnzGa-2XAY_pLWFVU03T3UUsXAsTi-IJefWoRO_MOAUKrLSna8rNj0xrg"
+        },
+        {
+          "url": "https://www.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/",
+          "title": "Armed Squatter Removal Team Faces Felony Charges In California Raid",
+          "publisher": "iHeart",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzL22gBPuWDayxTVdBEqlrpVAQky8BnC2HCS_eQIJ_m79oW6PJyAOe4CIow4"
         }
       ]
     },
@@ -108,251 +353,6 @@
           "publisher": "Mobalytics",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A"
-        }
-      ]
-    },
-    {
-      "query": "squatter removal company armed raid",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T08:40:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
-        "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
-        "https://973thebullicons.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
-          "title": "Armed with guns and sword, owner of squatter removal company cleared out a home. Now he faces felonies",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ"
-        },
-        {
-          "url": "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
-          "title": "They raided a Bay Area home with guns and swords. Are they ‘squatter removers’ — or vigilantes?",
-          "publisher": "San Francisco Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLw0YnzGa-2XAY_pLWFVU03T3UUsXAsTi-IJefWoRO_MOAUKrLSna8rNj0xrg"
-        },
-        {
-          "url": "https://973thebullicons.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/",
-          "title": "Armed Squatter Removal Team Faces Felony Charges In California Raid",
-          "publisher": "iHeart",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUx3Is8yTOpNY1c5qRzOTOdYyirRU9Ku1oyzoCqZtDj8U8_KWkgItAFbOyLgU"
-        }
-      ]
-    },
-    {
-      "query": "mamu lakers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T08:30:00Z",
-      "related_news_urls": [
-        "https://larrybrownsports.com/basketball/video-luka-doncic-calling-out-lakers-teammate/779309",
-        "https://www.limapagi.id/en/doncic-criticizes-mamukelashvili-lakers-kings",
-        "https://bsinews.id/en/doncic-criticizes-mamukelashvili-lakers-kings"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBpy3K6Nov31byFYD8sy7o1WwkkZ07BNq--jQB8sUKBQvTX6fedW7srVDdiQ",
-      "image_credit": "Larry Brown Sports",
-      "news": [
-        {
-          "url": "https://larrybrownsports.com/basketball/video-luka-doncic-calling-out-lakers-teammate/779309",
-          "title": "Video shows Luka Doncic profanely calling out 1 Lakers teammate",
-          "publisher": "Larry Brown Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBpy3K6Nov31byFYD8sy7o1WwkkZ07BNq--jQB8sUKBQvTX6fedW7srVDdiQ"
-        },
-        {
-          "url": "https://www.limapagi.id/en/doncic-criticizes-mamukelashvili-lakers-kings",
-          "title": "Doncic Criticizes Mamukelashvili as Lakers Defeat Kings",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_mMf8jRQ-4S3U5oOQ54T5MIH0InV2Zrg1SMTwg8qCxPmqGq2zeVAeFP6-Bz8"
-        },
-        {
-          "url": "https://bsinews.id/en/doncic-criticizes-mamukelashvili-lakers-kings",
-          "title": "Doncic Criticizes Mamukelashvili During Lakers Win Over Kings",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9oAZlnWFdLNwIKD3Gjc1ABYOqKi7Z2Ux1k9w1s6xZKywsJMxhRLz-pqBvk7I"
-        }
-      ]
-    },
-    {
-      "query": "julie tkach",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T08:30:00Z",
-      "related_news_urls": [
-        "https://www.starcitytv.com/news/local/four-people-identified-in-west-lafayette-death-investigation/article_270ded97-585a-4d86-97f6-0e054cc310bd.html",
-        "https://people.com/purdue-professor-family-dead-home-daughter-terrifying-call-police-12267430",
-        "https://www.wlfi.com/2026/11/20/coroner-releases-autopsy-findings-west-lafayette-suspected-murder-suicide/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzrASSP9TA4QfVHNhxMijD30i0_YhlCeZ3AHAtYW-uTUAGs47gKt2UHz9ToFY",
-      "image_credit": "starcitytv.com",
-      "news": [
-        {
-          "url": "https://www.starcitytv.com/news/local/four-people-identified-in-west-lafayette-death-investigation/article_270ded97-585a-4d86-97f6-0e054cc310bd.html",
-          "title": "Four people identified in West Lafayette death investigation",
-          "publisher": "starcitytv.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzrASSP9TA4QfVHNhxMijD30i0_YhlCeZ3AHAtYW-uTUAGs47gKt2UHz9ToFY"
-        },
-        {
-          "url": "https://people.com/purdue-professor-family-dead-home-daughter-terrifying-call-police-12267430",
-          "title": "Purdue U. Professor and Her Family Found Dead Inside Home After Daughter’s Terrifying 911 Call",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5g3PBlMMGD69i5zOpYLHRTA_CykKhuGH1I_Me533U1BI9vn40z09XUhA-0qI"
-        },
-        {
-          "url": "https://www.wlfi.com/2026/11/20/coroner-releases-autopsy-findings-west-lafayette-suspected-murder-suicide/",
-          "title": "Coroner Releases Autopsy Findings in West Lafayette Suspected Murder-Suicide",
-          "publisher": "WLFI",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzQ0KjQRWo_Nwr_X-SPeFDh5PA38XFHLQjmvpXCcJroUceBEKIzonl1AbMFfk"
-        }
-      ]
-    },
-    {
-      "query": "la cascara motel gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T08:30:00Z",
-      "related_news_urls": [
-        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-la-cascara-motel-robbery",
-        "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
-        "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL5Ltq4rgoIhfJ0tQ5j5Z_cnW9bziovxsyJjnu4DaUGC5O1vRLedg0_-wKIV4",
-      "image_credit": "Mobalytics",
-      "news": [
-        {
-          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-la-cascara-motel-robbery",
-          "title": "All La Cascara Motel Robbery Loot & Secrets Locations - GTA 6",
-          "publisher": "Mobalytics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL5Ltq4rgoIhfJ0tQ5j5Z_cnW9bziovxsyJjnu4DaUGC5O1vRLedg0_-wKIV4"
-        },
-        {
-          "url": "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
-          "title": "La Cascara Motel Walkthrough",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjrUv5vfIM36kxOJDii_T06O4j_IjfUP2KuosItC8URIJ9Olf-emyCWLNnIGs"
-        },
-        {
-          "url": "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
-          "title": "All GTA 6 Safe Codes for Chapter 2 in Port Gellhorn",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs"
-        }
-      ]
-    },
-    {
-      "query": "porto fc",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T08:10:00Z",
-      "related_news_urls": [
-        "https://onefootball.com/en/news/fc-porto-prepare-for-first-womens-classico-with-five-ex-sporting-players-43811541",
-        "https://www.limapagi.id/en/porto-former-sporting-players-classico",
-        "https://onefootball.com/en/news/fc-porto-beat-usc-paredes-on-pens-to-reach-portuguese-cup-last-16-43810340"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqfrX83OdMLoq2WOMwvRhKJ6TcPuNKs8pP5HHqU1EkHqiJrf4zLrn3VgJOxUw",
-      "image_credit": "OneFootball",
-      "news": [
-        {
-          "url": "https://onefootball.com/en/news/fc-porto-prepare-for-first-womens-classico-with-five-ex-sporting-players-43811541",
-          "title": "FC Porto prepare for first women's Clássico with five ex-Sporting players",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqfrX83OdMLoq2WOMwvRhKJ6TcPuNKs8pP5HHqU1EkHqiJrf4zLrn3VgJOxUw"
-        },
-        {
-          "url": "https://www.limapagi.id/en/porto-former-sporting-players-classico",
-          "title": "Porto Field Five Former Sporting Players for Historic Womens Clássico",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQknggEz8G2FNwkGTR7osmEDT9NNJJ0rL1CpFcMMpkI0u0pj-e4DiTIRMwY9pg"
-        },
-        {
-          "url": "https://onefootball.com/en/news/fc-porto-beat-usc-paredes-on-pens-to-reach-portuguese-cup-last-16-43810340",
-          "title": "FC Porto beat USC Paredes on pens to reach Portuguese Cup last 16",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ06CcZybo4XhEmJtpB0mGKhrR7-XKu_0fVaZoYwvqvwhfk7gALurdl2DXBtIk"
-        }
-      ]
-    },
-    {
-      "query": "dreamstate",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T08:10:00Z",
-      "related_news_urls": [
-        "https://edm.com/news/above-beyond-first-anjunabeats-classics-set-dreamstate-festival/",
-        "https://weraveyou.com/2026/11/7-artists-you-cant-miss-at-dreamstate-socal-2026/",
-        "https://hoodline.com/2026/11/dreamstate-brings-afterparty-aboard-queen-mary-in-long-beach/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiWJdGz-zoMmshQnkkwrYyd9zO5gRETBCCF-iNDaYKhY3JpKxRonwVW2AVbM",
-      "image_credit": "EDM.com",
-      "news": [
-        {
-          "url": "https://edm.com/news/above-beyond-first-anjunabeats-classics-set-dreamstate-festival/",
-          "title": "Above & Beyond to Play First-Ever ‘Anjunabeats Classics’ Set at Dreamstate Festival",
-          "publisher": "EDM.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiWJdGz-zoMmshQnkkwrYyd9zO5gRETBCCF-iNDaYKhY3JpKxRonwVW2AVbM"
-        },
-        {
-          "url": "https://weraveyou.com/2026/11/7-artists-you-cant-miss-at-dreamstate-socal-2026/",
-          "title": "7 artists you can’t miss at Dreamstate SoCal 2026",
-          "publisher": "We Rave You",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpqLfS1m6dSLN5aCouKpDdUS_J0JQmcpQ6kCvc1DyYaVF_F6fAVrn70YPDaZg"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/dreamstate-brings-afterparty-aboard-queen-mary-in-long-beach/",
-          "title": "Dreamstate weekend plan at Queen Mary",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNCCnvEBqCDVZm-LYpxasPzcOF0m7fHNn0jQgXudIdyFjCQAlHdPjcEDhrLw"
-        }
-      ]
-    },
-    {
-      "query": "is jimmy de santa in gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T08:00:00Z",
-      "related_news_urls": [
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-niko-bellic/",
-        "https://www.invenglobal.com/articles/28856/78-minutes-after-the-ending-alone-gta-6-credits-by-the-numbers",
-        "https://insider-gaming.com/niko-bellic-gta-6/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05eoEAIuWDA6hKkX0dki-9SF0Ir5t2Xv4hTspDN1B0cHxOBSJWeFG08oyOKA",
-      "image_credit": "PC Gamer",
-      "news": [
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-niko-bellic/",
-          "title": "Is Niko Bellic in GTA 6?",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05eoEAIuWDA6hKkX0dki-9SF0Ir5t2Xv4hTspDN1B0cHxOBSJWeFG08oyOKA"
-        },
-        {
-          "url": "https://www.invenglobal.com/articles/28856/78-minutes-after-the-ending-alone-gta-6-credits-by-the-numbers",
-          "title": "78 Minutes After the Ending Alone: GTA6 Credits by the Numbers",
-          "publisher": "Inven Global",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM1l-LNtSLte44cLqLSdr00a6fJTCqOAQE2e1yCpmQDy_6cFnPhE8SQ1OW_y0"
-        },
-        {
-          "url": "https://insider-gaming.com/niko-bellic-gta-6/",
-          "title": "Is Niko Bellic in GTA 6?",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWt7Vg3QTmmYMS_9T57-mq5snAKolEPe-20t3cfkRgH5rSyRTjwqOaTtWGNXU"
         }
       ]
     }
