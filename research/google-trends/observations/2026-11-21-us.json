@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T15:01:22.528989Z",
+  "checked_at": "2026-11-21T15:31:22.822285Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "luca williams barnett",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T15:10:00Z",
+      "related_news_urls": [
+        "https://www.spurs-web.com/spurs-news/maybe-de-zerbi-hints-luca-williams-barnett-could-be-in-line-for-first-tottenham-start/",
+        "https://cwibc.co.id/en/tottenham-ipswich-confirmed-lineups",
+        "https://www.yardbarker.com/soccer/articles/spurs_have_a_bench_warmer_who_will_block_williams_barnetts_pathway/s1_17897_44590410"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe8f8u-_Dl2z9LfzuL9TFAwWwQQru0Kps5dUq8WADWf05iGCZCpBn4cieRzsI",
+      "image_credit": "Spurs Web",
+      "news": [
+        {
+          "url": "https://www.spurs-web.com/spurs-news/maybe-de-zerbi-hints-luca-williams-barnett-could-be-in-line-for-first-tottenham-start/",
+          "title": "‘Maybe’ – De Zerbi hints Luca Williams-Barnett could be in line for first Tottenham start",
+          "publisher": "Spurs Web",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe8f8u-_Dl2z9LfzuL9TFAwWwQQru0Kps5dUq8WADWf05iGCZCpBn4cieRzsI"
+        },
+        {
+          "url": "https://cwibc.co.id/en/tottenham-ipswich-confirmed-lineups",
+          "title": "Tottenham Name Williams Barnett for Ipswich Premier League Clash",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcMH4bahX4PZBxfcPOsHBPUwbnl92RxqxwR_K-BAB4JQAImeHoXEKXOyDsogg"
+        },
+        {
+          "url": "https://www.yardbarker.com/soccer/articles/spurs_have_a_bench_warmer_who_will_block_williams_barnetts_pathway/s1_17897_44590410",
+          "title": "Spurs have a bench warmer who will block Williams-Barnett's pathway",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaPI0nPBbSl4KgqB1P2nyRwPSNFCz_DtDSKm9g0Q9jO-1ikVCOHHRZtxhBH8s"
+        }
+      ]
+    },
+    {
+      "query": "bournemouth",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T15:10:00Z",
+      "related_news_urls": [
+        "https://www.si.com/soccer/why-junior-kroupi-may-disappoint-arsenal-transfer-pursuit",
+        "https://www.nytimes.com/athletic/video/ct8J1FKi3tfj6qp/",
+        "https://www.goal.com/en/news/arsenal-transfer-eli-junior-kroupi-bournemouth/blt1a7090360f006863"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuLjYxXFRc5lkpLZ42ljEcqZZrPjuEBMNnGU-SEwH2t6I_2u7lzmAUvCJVRt4",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/soccer/why-junior-kroupi-may-disappoint-arsenal-transfer-pursuit",
+          "title": "Why Junior Kroupi May Disappoint Arsenal in Transfer PursuitStance",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuLjYxXFRc5lkpLZ42ljEcqZZrPjuEBMNnGU-SEwH2t6I_2u7lzmAUvCJVRt4"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/video/ct8J1FKi3tfj6qp/",
+          "title": "Video: David Ornstein latest on Kroupi's future",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLPaMOsjj6-j-AXsqdkfqazyBp-qK5Cf6Zkxz2aLYJ3U6leNrhQUnfR5sSZSU"
+        },
+        {
+          "url": "https://www.goal.com/en/news/arsenal-transfer-eli-junior-kroupi-bournemouth/blt1a7090360f006863",
+          "title": "Arsenal face MASSIVE £100m stumbling block in pursuit of Premier League wonderkid",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMolApKrvQz3njiOpWB5NHTRpbyCrm8QWJPNbI-2B7PD6DKYFooddJRuQW2jg"
+        }
+      ]
+    },
+    {
+      "query": "al jazeera live",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T15:00:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles",
+        "https://www.ynetnews.com/article/b168jg1y7l",
+        "https://www.timesofisrael.com/liveblog_entry/irans-army-claims-it-damaged-us-f-16-over-gulf-forcing-emergency-landing-no-immediate-comment-from-us-military/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQugeP7Bg28xq6kpKkHuGL3bYtvj-G4IFRMtD17qdcudIyOjfM373_EJsYaGFQ",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles",
+          "title": "Iran war live: US denies Iranian army’s claim it struck an F-16 over Gulf",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQugeP7Bg28xq6kpKkHuGL3bYtvj-G4IFRMtD17qdcudIyOjfM373_EJsYaGFQ"
+        },
+        {
+          "url": "https://www.ynetnews.com/article/b168jg1y7l",
+          "title": "Iran unveils underground 'missile city,' claims it struck US F-16 over Persian Gulf",
+          "publisher": "Ynetnews",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr3S-XfH0TwRIMFZIB958UKHLyFwiiZzRqvcH2W8praFcytaLjy9MDuUHiu-E"
+        },
+        {
+          "url": "https://www.timesofisrael.com/liveblog_entry/irans-army-claims-it-damaged-us-f-16-over-gulf-forcing-emergency-landing-no-immediate-comment-from-us-military/",
+          "title": "Iran's army claims it damaged US F-16 over Gulf, forcing emergency landing; no immediate comment from US military",
+          "publisher": "The Times of Israel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_EI9XhYIlIlGZxpUOrk1zDbD3qOxiWy-qW0eOR3bfxCvRXeJLoS348ZL3mPY"
+        }
+      ]
+    },
+    {
+      "query": "mexico u-17 vs romania u-17",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T14:50:00Z",
+      "related_news_urls": [
+        "https://www.fubo.tv/news/2026-fifa-u-17-world-cup/mexico-vs-romania-u17-live-stream-how-to-watch-2026-fifa-u-17-world-cup-nov-21-2026/",
+        "https://www.chivasdecorazon.com.mx/en/noticias/41799/Presencia-Rojiblanca-en-el-triunfo-del-Tri-Sub-17",
+        "https://www.soyfutbol.com/en/leagues/mark-your-calendars-where-to-watch-mexicos-u-17-national-team-live-at-qatar-2026-20261120-0050.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKTF1e0EOBDXlwnDL2y-A9fV-nC2Gr5-iAyUlMBDHVkIg0UR5PAPcfKrvzto",
+      "image_credit": "Fubo",
+      "news": [
+        {
+          "url": "https://www.fubo.tv/news/2026-fifa-u-17-world-cup/mexico-vs-romania-u17-live-stream-how-to-watch-2026-fifa-u-17-world-cup-nov-21-2026/",
+          "title": "Mexico vs Romania U17 Live Stream: How to Watch 2026 FIFA U-17 World Cup (Nov. 21, 2026)",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKTF1e0EOBDXlwnDL2y-A9fV-nC2Gr5-iAyUlMBDHVkIg0UR5PAPcfKrvzto"
+        },
+        {
+          "url": "https://www.chivasdecorazon.com.mx/en/noticias/41799/Presencia-Rojiblanca-en-el-triunfo-del-Tri-Sub-17",
+          "title": "Rojiblanco Presence in Mexico U17's Victory!",
+          "publisher": "Chivas",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwAPNP-vxwqAZSR_Q-AjgmMccAn4quChERUFGQyfXDrt3t4Bc46zcajB2ZmYY"
+        },
+        {
+          "url": "https://www.soyfutbol.com/en/leagues/mark-your-calendars-where-to-watch-mexicos-u-17-national-team-live-at-qatar-2026-20261120-0050.html",
+          "title": "Mark Your Calendars: Where to Watch Mexico’s U-17 National Team Live at Qatar 2026!",
+          "publisher": "Soy Futbol",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlGBtUWB7LB_bAg4HPzLC50BG5lhSudkQ1vXWqvbc2y_hq4nik2krj3Hq0gXA"
+        }
+      ]
+    },
+    {
+      "query": "emmanuel emegha",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T14:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/emmanuel-emegha-issues-chelsea-warning-130239821.html",
+        "https://roundtable.io/sports/soccer/premier-league/chelsea/video/example-of-a-leader-emmanuel-emegha-in-awe-of-chelsea-teammate-who-motivates-the-team",
+        "https://demokratis.co.id/en/emegha-chelsea-breakthrough-reece-james"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSec1XL2UcbbG3vDNn77k_-yJqDXpCXXSOWequhVmrUfqa041vaPo2wMq56enE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/emmanuel-emegha-issues-chelsea-warning-130239821.html",
+          "title": "Emmanuel Emegha issues Chelsea warning as striker targets Stamford Bridge breakthrough against Leeds",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSec1XL2UcbbG3vDNn77k_-yJqDXpCXXSOWequhVmrUfqa041vaPo2wMq56enE"
+        },
+        {
+          "url": "https://roundtable.io/sports/soccer/premier-league/chelsea/video/example-of-a-leader-emmanuel-emegha-in-awe-of-chelsea-teammate-who-motivates-the-team",
+          "title": "'Example Of A Leader': Emmanuel Emegha In Awe Of Chelsea Teammate Who Motivates The Team",
+          "publisher": "roundtable.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRVnPrpJoQf-7W3W1-UukXE962K96GLkL9UtzmD9Do0Ia7d3IdfPBpIDkPjuQ"
+        },
+        {
+          "url": "https://demokratis.co.id/en/emegha-chelsea-breakthrough-reece-james",
+          "title": "Emegha Targets Chelsea Breakthrough and Praises Captain James",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTQ4SKy3lR8m1OIwKTC-avX-0qYe7tFhA_X7GgUl8LeF4nvEn971PXLTtiHg"
+        }
+      ]
+    },
+    {
+      "query": "süper lig",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T14:50:00Z",
+      "related_news_urls": [
+        "https://www.61saat.com/super-ligde-korku-dolu-anlar-ambulans-sahaya-girdi",
+        "https://www.gazianteppostasi.com/spor/mehmet-akinci-ve-meclis-uyeleri-tribunde-gaziantep-fk-nin-yaninda",
+        "https://www.trtspor.com.tr/haber/futbol/bu-galibiyeti-biz-hak-ettik-34178278"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeN4VfgMb2hH-U0jmU27QeceOG5BF0kdXOOfS4kEhrXpcvb-7-4grxUBloWDA",
+      "image_credit": "61SAAT",
+      "news": [
+        {
+          "url": "https://www.61saat.com/super-ligde-korku-dolu-anlar-ambulans-sahaya-girdi",
+          "title": "Süper Lig'de korku dolu anlar! Ambulans sahaya girdi",
+          "publisher": "61SAAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeN4VfgMb2hH-U0jmU27QeceOG5BF0kdXOOfS4kEhrXpcvb-7-4grxUBloWDA"
+        },
+        {
+          "url": "https://www.gazianteppostasi.com/spor/mehmet-akinci-ve-meclis-uyeleri-tribunde-gaziantep-fk-nin-yaninda",
+          "title": "Mehmet Akıncı ve meclis üyeleri tribünde Gaziantep FK’nın yanında",
+          "publisher": "Gaziantep Postası",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvDlXakZi3dRHRJ29i-IjJfR6zdKZZEAGSMxngomvc2UJNIh9IJ_zPCCBTIT4"
+        },
+        {
+          "url": "https://www.trtspor.com.tr/haber/futbol/bu-galibiyeti-biz-hak-ettik-34178278",
+          "title": "\"Bu galibiyeti biz hak ettik\"",
+          "publisher": "TRTSpor",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1rbhKE994yNw8Mk8Xfl13syNbsFtD8D_QdswOohdLZGCKUa8oqF14hga4Vi0"
+        }
+      ]
+    },
     {
       "query": "mario cristobal",
       "approx_searches": "1000+",
@@ -13,7 +223,7 @@
       "related_news_urls": [
         "https://www.espn.com/college-football/story/_/id/50542494/malachi-toney-nearing-return-ankle-surgery-coach-says",
         "https://www.cbssports.com/college-football/news/malachi-toney-injury-update-miami-return-close-ankle-surgery/",
-        "https://www.palmbeachpost.com/story/sports/college/hurricanes/2026/11/21/miami-football-injury-report-virginia-tech-malachi-toney/92847127007/"
+        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177573.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZsYibKW7aWjhwll01eOLZg9yQEmoWutsxeItkktkS05Siq2vx9IEYZqSuJQ8",
       "image_credit": "ESPN",
@@ -33,326 +243,116 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0cpbTnGXPkJ-hwA4jfuDScslLBZ2sPnGSXiJ7BHbv7pFhCnom8O-uEaTmidE"
         },
         {
-          "url": "https://www.palmbeachpost.com/story/sports/college/hurricanes/2026/11/21/miami-football-injury-report-virginia-tech-malachi-toney/92847127007/",
-          "title": "Is Malachi Toney playing today? Latest injury update for Miami WR",
-          "publisher": "The Palm Beach Post",
+          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177573.html",
+          "title": "Miami’s Malachi Toney says he feels ‘almost 100%’ two weeks after ankle surgery",
+          "publisher": "Miami Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXt_BtdL16AB99OZpQE5Wk1wzDCKEV_sz9qis0kqairMVcx-QCB0d9JC_C3nk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVoyKmJMfxXRh-7p6KC6oZjG2inHPYZfjZk7FjPNkC1AYT79YbvhvXb1C-i4s"
         }
       ]
     },
     {
-      "query": "posiciones de manchester city contra fulham",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T14:30:00Z",
+      "query": "best tech black friday deals",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T14:40:00Z",
       "related_news_urls": [
-        "https://as.com/futbol/internacional/manchester-city-fulham-en-directo-premier-league-hoy-en-vivo-f202611-d/",
-        "https://www.sport.es/es/noticias/premier-league/arbeloa-hurga-herida-city-136698694",
-        "https://www.marca.com/futbol/premier-league/cronica/2026/11/21/arbeloa-agrava-crisis-galopante-manchester-city.html"
+        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
+        "https://shopping.yahoo.com/deals/breaking-news/article/i-scoured-dozens-of-black-friday-sales-and-these-are-the-best-style-deals-from-hoka-kate-spade-hanes-and-more-141116602.html",
+        "https://www.today.com/shop/gift-sales-adrianna-brach-rcna610463"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSv-SwG76XOVUV9uhRWD9F3mmhnerCLA0-2HXic21aZvMj3UdLrxsPmEHWrwZs",
-      "image_credit": "Diario AS",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlCfDzuM36UYzWC6JwNIW_suwsgLu4AzcpqIq3xQYdsZIlSTDdhWQB7CLPms",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://as.com/futbol/internacional/manchester-city-fulham-en-directo-premier-league-hoy-en-vivo-f202611-d/",
-          "title": "Manchester City 1-1 Fulham: Resumen, resultado y goles del partido | Premier League en directo",
-          "publisher": "Diario AS",
+          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
+          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSv-SwG76XOVUV9uhRWD9F3mmhnerCLA0-2HXic21aZvMj3UdLrxsPmEHWrwZs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlCfDzuM36UYzWC6JwNIW_suwsgLu4AzcpqIq3xQYdsZIlSTDdhWQB7CLPms"
         },
         {
-          "url": "https://www.sport.es/es/noticias/premier-league/arbeloa-hurga-herida-city-136698694",
-          "title": "Arbeloa hurga en la herida del City",
-          "publisher": "SPORT",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHczicvPjtT6kzy0giBb-UR-JSYJT3Xyb1mzV-Ory5DZg8JP7_txxlkMDOzag"
-        },
-        {
-          "url": "https://www.marca.com/futbol/premier-league/cronica/2026/11/21/arbeloa-agrava-crisis-galopante-manchester-city.html",
-          "title": "Arbeloa agrava la crisis galopante del Manchester City",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLYLyFa324RrYEVhl9MInR-VQ6Z_ZO6sZiVKpBQD0cb3K3uL596cyhAY5t8-M"
-        }
-      ]
-    },
-    {
-      "query": "rayo vallecano - valencia c. f.",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T14:30:00Z",
-      "related_news_urls": [
-        "https://es-us.noticias.yahoo.com/deportes/rayo-vallecano-valencia-buscan-reacci%C3%B3n-141500134.html",
-        "https://www.mundodeportivo.com/futbol/laliga/20261121/1004253522/duelo-directo-permanencia-vallecas.html",
-        "https://www.lasprovincias.es/valenciacf/valencia-inicia-vallecas-cuesta-diciembre-salir-descenso-20261120103311-nt.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSS5zDrm4GkLYucqYCUA-zvjHtkiL5_vQafpI7vPeb7Q34aRq_UKwzsMsQlId0",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/rayo-vallecano-valencia-buscan-reacci%C3%B3n-141500134.html",
-          "title": "🚨 Rayo Vallecano y Valencia buscan hoy la reacción con estos ONCES",
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/i-scoured-dozens-of-black-friday-sales-and-these-are-the-best-style-deals-from-hoka-kate-spade-hanes-and-more-141116602.html",
+          "title": "I scoured dozens of Black Friday sales, and these are the best style deals from Hoka, Kate Spade, Hanes and more",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSS5zDrm4GkLYucqYCUA-zvjHtkiL5_vQafpI7vPeb7Q34aRq_UKwzsMsQlId0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOGY2Fg3b60L0tRfXbbaCnojtfiRVet7M8gF3jll_jeg8gz4zc9E3m5qFjI00"
         },
         {
-          "url": "https://www.mundodeportivo.com/futbol/laliga/20261121/1004253522/duelo-directo-permanencia-vallecas.html",
-          "title": "Duelo directo por la permanencia en Vallecas",
-          "publisher": "Mundo Deportivo",
+          "url": "https://www.today.com/shop/gift-sales-adrianna-brach-rcna610463",
+          "title": "Black Friday Holiday Deals, Approved by Executive Editor Adrianna Brach",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXM1KzMrnPw_V8UDJZywtyhBGR2zEAnaG4dh1WAttkPF0MAAxawy6CkVPww8Q"
-        },
-        {
-          "url": "https://www.lasprovincias.es/valenciacf/valencia-inicia-vallecas-cuesta-diciembre-salir-descenso-20261120103311-nt.html",
-          "title": "El Valencia inicia en Vallecas su cuesta de diciembre para salir del descenso",
-          "publisher": "Las Provincias",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO7O5eFp4TLkStGtb6Gtj18Zk2ehETHYOxqeK0gvjNLilcSXrFb3UDtb9OyNg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhDSA6g8daLTb90uEjPhiS14nRHa8heG2l_zT5VtGGYlq95ZwCHzk5Lq3w3gU"
         }
       ]
     },
     {
-      "query": "rayo vs valencia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T14:30:00Z",
+      "query": "gta 6 xbox auto upload bans",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T14:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c8p3vz73331rt",
-        "https://www.valenciacf.com/en/17951793253743120",
-        "https://www.whoscored.com/articles/bnK8Ok0nV0aZGx0HZBQssQ/show/cng111-20261121-rayo-vallecano-vs-valencia-prediction-1795247160"
+        "https://www.purexbox.com/news/2026/11/gta-6-players-warned-to-turn-off-auto-uploads-or-risk-getting-banned-on-xbox",
+        "https://www.levelup.com/en/news/xbox-bans-grand-theft-auto-6-players-and-all-fans-risk-being-punished-if-they-dont-disable-this-console-feature/",
+        "https://insider-gaming.com/gta-6-xbox-auto-upload-ban-explained/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_QL_xfo663e681KNRaPZi2lE8dJzKtWKWpIclvxDmkpFnhnB-99GqEjAuufQ",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTTJKYWqe90IEIhXeVbe0NxX6NfCVwKmEVr21VZpIVGJlKRo-iZXdtwa5zjtQ",
+      "image_credit": "Pure Xbox",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c8p3vz73331rt",
-          "title": "Rayo Vallecano vs Valencia: Spanish La Liga stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.purexbox.com/news/2026/11/gta-6-players-warned-to-turn-off-auto-uploads-or-risk-getting-banned-on-xbox",
+          "title": "GTA 6 Players Warned To Turn Off Auto-Uploads Or Risk Getting Banned On Xbox",
+          "publisher": "Pure Xbox",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_QL_xfo663e681KNRaPZi2lE8dJzKtWKWpIclvxDmkpFnhnB-99GqEjAuufQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTTJKYWqe90IEIhXeVbe0NxX6NfCVwKmEVr21VZpIVGJlKRo-iZXdtwa5zjtQ"
         },
         {
-          "url": "https://www.valenciacf.com/en/17951793253743120",
-          "title": "MATCH PREVIEW | RAYO VALLECANO – VALENCIA CF",
-          "publisher": "Valencia CF",
+          "url": "https://www.levelup.com/en/news/xbox-bans-grand-theft-auto-6-players-and-all-fans-risk-being-punished-if-they-dont-disable-this-console-feature/",
+          "title": "Xbox Bans Grand Theft Auto 6 Players, and All Fans Risk Being Punished If They Don’t Disable This Console Feature",
+          "publisher": "www.levelup.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv33Q9PLaMju0CiUO7TQb5N7Do-A3gD3xoOkSKdrMpJ3FhtDz82xX767yknv8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq-tQkjJyE54fnl3IFKyNDqfLevuiy88Oc0c2XmXEAhLelHz3jgdNRCyj6Lm0"
         },
         {
-          "url": "https://www.whoscored.com/articles/bnK8Ok0nV0aZGx0HZBQssQ/show/cng111-20261121-rayo-vallecano-vs-valencia-prediction-1795247160",
-          "title": "Rayo Vallecano vs Valencia: Lineups, Prediction, Odds & Bet Builder Tip",
-          "publisher": "WhoScored.com",
+          "url": "https://insider-gaming.com/gta-6-xbox-auto-upload-ban-explained/",
+          "title": "GTA 6 Auto Upload Bans—Can Sex and Nudity Get You Banned From XBOX?",
+          "publisher": "Insider Gaming",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRipSjSsrVIu5dtWqbw0-dsQSU02WmuFkNP_BC61afFM_FyNRqTFTVQjVI1c34"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-7Fr3eo6ckuM19O010ozZJqJn-L5-C41Buh70jI0-nQYCZbutKb8rEwvB4c"
         }
       ]
     },
     {
-      "query": "west ham vs preston",
+      "query": "harvard yale game",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T14:30:00Z",
+      "published_at": "2026-11-21T14:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cq98xlj88p30t",
-        "https://www.whufc.com/en/news/team-news-or-parker-provides-squad-update-ahead-of-preston-clash",
-        "https://talksport.com/betting/4720050/boyle-sports-bowen-50-1-bonus-code/"
+        "https://www.bostonglobe.com/2026/11/19/sports/harvard-yale-football-fenway-park/",
+        "https://www.thecrimson.com/topic/harvard-yale-2026/",
+        "https://yaledailynews.com/articles/this-year-harvard-wins"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwEPNiR1f9pCxWSdVm9Mo3Kg2-gx64JuxWyR3N3mLDH-xrYHK64RR09DCc01I",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4zbRcGt53oT_oiBWRkgsNdd09L0llZ6-LeZsqMnSZnQUh98tn7Hh88qfpYD4",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cq98xlj88p30t",
-          "title": "West Ham United v Preston North End: Championship stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.bostonglobe.com/2026/11/19/sports/harvard-yale-football-fenway-park/",
+          "title": "Harvard wants an Ivy League football title outright. It has to get past Yale in The Game at Fenway Park.",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwEPNiR1f9pCxWSdVm9Mo3Kg2-gx64JuxWyR3N3mLDH-xrYHK64RR09DCc01I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4zbRcGt53oT_oiBWRkgsNdd09L0llZ6-LeZsqMnSZnQUh98tn7Hh88qfpYD4"
         },
         {
-          "url": "https://www.whufc.com/en/news/team-news-or-parker-provides-squad-update-ahead-of-preston-clash",
-          "title": "Team News | Parker provides squad update ahead of Preston clash",
-          "publisher": "West Ham United",
+          "url": "https://www.thecrimson.com/topic/harvard-yale-2026/",
+          "title": "Harvard-Yale: The 142nd Game",
+          "publisher": "The Harvard Crimson",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSg0G8XFiFwz55GETNUWBOIFC5Rsnao56inEqIzIfhOK9Q8h_E1lT53kgT86Ko"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-dcjmlRmRgw4tyxowT-ul8e4nqk2fjzc2H_LKm1YyGzuMko4dwwEI_twng1k"
         },
         {
-          "url": "https://talksport.com/betting/4720050/boyle-sports-bowen-50-1-bonus-code/",
-          "title": "BOYLE Sports sign up offer: Bag Bowen 50/1 to score with Bonus Code",
-          "publisher": "talkSPORT",
+          "url": "https://yaledailynews.com/articles/this-year-harvard-wins",
+          "title": "This year, Harvard wins",
+          "publisher": "Yale Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_t_5FMWRPaGAFcGH1kfIHe4MxnzZErXPi1Bs1HeJymJ1xBZfZE8YL4rN7ED8"
-        }
-      ]
-    },
-    {
-      "query": "leverkusen vs paderborn",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T14:30:00Z",
-      "related_news_urls": [
-        "https://www.kicker.de/mit-maza-gegen-paderborn-comeback-quintett-sorgt-fuer-haertefaelle-1273229/artikel",
-        "https://rp-online.de/sport/fussball/bayer-04/bayer-04-leverkusen-martinez-begruesst-zahlreiche-rueckkehrer_aid-158706197",
-        "https://www.bundesliga.com/de/bundesliga/videos/watch/die-paderborn-pk-vor-dem-spiel-in-leverkusen-2Mr1x375"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCZQ0kS4ZIaJNJAt_kb1n8Ijy6zcAdSXv0nl2VGjrkG5dHe8Iuc7y6YcsuKFk",
-      "image_credit": "Kicker",
-      "news": [
-        {
-          "url": "https://www.kicker.de/mit-maza-gegen-paderborn-comeback-quintett-sorgt-fuer-haertefaelle-1273229/artikel",
-          "title": "Mit Maza gegen Paderborn: Comeback-Quintett sorgt für Härtefälle",
-          "publisher": "Kicker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCZQ0kS4ZIaJNJAt_kb1n8Ijy6zcAdSXv0nl2VGjrkG5dHe8Iuc7y6YcsuKFk"
-        },
-        {
-          "url": "https://rp-online.de/sport/fussball/bayer-04/bayer-04-leverkusen-martinez-begruesst-zahlreiche-rueckkehrer_aid-158706197",
-          "title": "Kader wieder deutlich breiter: Welches Detail Bayer-Coach Martinez nach der Länderspielpause glücklich macht",
-          "publisher": "RP Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAokb0foIJxNzeu_z2Zf-zxeO7ryd3NmwfoCOsg9ki5MPD595_SV3FgsDCCk8"
-        },
-        {
-          "url": "https://www.bundesliga.com/de/bundesliga/videos/watch/die-paderborn-pk-vor-dem-spiel-in-leverkusen-2Mr1x375",
-          "title": "Die Paderborn-PK vor dem Spiel in Leverkusen",
-          "publisher": "Bundesliga | official website",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpuwyMoULJxsqCrAb-croyYb52moGixYl8bpfZgUlmusyP9uG6dLJ9eYL6pZM"
-        }
-      ]
-    },
-    {
-      "query": "como vs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T14:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/serie-como-vs-cagliari-probable-090600686.html",
-        "https://www.goal.com/en-us/news/watch-como-v-cagliari-live-today-who-is-showing-the-match-on-tv-and-live-stream/bltbaecec9dafe4c6f0",
-        "https://www.oddschecker.com/us/picks-parlays/soccer/cng201-20261121-como-vs-cagliari-lineups-prediction-betting-picks-odds"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUXf4ebtRowayFDX4Ng5Zj7e7RM0eMnb29tQPYEqHNESA_dikpGtObJ3IraK0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/serie-como-vs-cagliari-probable-090600686.html",
-          "title": "Serie A: Como vs. Cagliari – Probable line-ups and where to watch on TV",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUXf4ebtRowayFDX4Ng5Zj7e7RM0eMnb29tQPYEqHNESA_dikpGtObJ3IraK0"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/watch-como-v-cagliari-live-today-who-is-showing-the-match-on-tv-and-live-stream/bltbaecec9dafe4c6f0",
-          "title": "Watch Como v Cagliari live today: who is showing the match on TV and live stream?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOVmac_wG2X72fFwGFeYliVFFD74i5fdXsRlOLxQ8k85fWpRXTKWwbxqup7yQ"
-        },
-        {
-          "url": "https://www.oddschecker.com/us/picks-parlays/soccer/cng201-20261121-como-vs-cagliari-lineups-prediction-betting-picks-odds",
-          "title": "Como vs Cagliari Lineups, Prediction, Betting Picks & Odds",
-          "publisher": "Oddschecker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7djh8Gb6H2Zp7g2SRzBoRN94HwcU4lIBfnEeLV-ztoiDTu6ORqOZRUCPJ6Fs"
-        }
-      ]
-    },
-    {
-      "query": "coventry vs palace",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T14:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c6pw42nwwgvjt",
-        "https://www.goal.com/en-us/news/-new-manager-bounce-frank-lampard-wary-thomas-frank-threat-coventry-palace-/blt34ee6adc2e51ac85",
-        "https://sports.yahoo.com/articles/frank-without-duo-crystal-palace-172100296.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDtDD6NtZyBwQyv5GPou-kKwjjYbr5GKa_Tmzyw03JrCLV386LDRQmJaUj9sg",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c6pw42nwwgvjt",
-          "title": "Coventry City vs Crystal Palace: Premier League preview, team news, stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDtDD6NtZyBwQyv5GPou-kKwjjYbr5GKa_Tmzyw03JrCLV386LDRQmJaUj9sg"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/-new-manager-bounce-frank-lampard-wary-thomas-frank-threat-coventry-palace-/blt34ee6adc2e51ac85",
-          "title": "A new manager bounce? Frank Lampard wary of Thomas Frank threat ahead of Coventry's Palace showdown",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZg3nwC6mkMmd_0kl-WOO1h_TU0aymZG3U2XoOvUMH-VOzZ2Mkkbm3OG-PhaU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/frank-without-duo-crystal-palace-172100296.html",
-          "title": "Frank to be without duo for his Crystal Palace debut",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShkmabOyIkxfVmE3Wo8lY7i6ysiq6Q_o8cm0YMPmM-i2ZfnyMRUS_1_AIe1uw"
-        }
-      ]
-    },
-    {
-      "query": "como",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T14:20:00Z",
-      "related_news_urls": [
-        "https://www.pagina12.com.ar/2026/11/19/eduardo-reina-la-historia-sindical-de-lula-explica-lo-que-es-hoy-como-presidente/",
-        "https://rebelion.org/la-historia-sindical-de-lula-explica-lo-que-es-hoy-como-presidente/",
-        "https://es-us.noticias.yahoo.com/deportes/nico-paz-m%C3%A1ximo-perrone-suplentes-135100807.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1oaauFI-T4TyzPunXHsCtpOkGxDuVlNqjCARl7AYZtw4Xis4OLIocFG8e7l4",
-      "image_credit": "Página|12",
-      "news": [
-        {
-          "url": "https://www.pagina12.com.ar/2026/11/19/eduardo-reina-la-historia-sindical-de-lula-explica-lo-que-es-hoy-como-presidente/",
-          "title": "Eduardo Reina: “La historia sindical de Lula explica lo que es hoy como presidente”",
-          "publisher": "Página|12",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1oaauFI-T4TyzPunXHsCtpOkGxDuVlNqjCARl7AYZtw4Xis4OLIocFG8e7l4"
-        },
-        {
-          "url": "https://rebelion.org/la-historia-sindical-de-lula-explica-lo-que-es-hoy-como-presidente/",
-          "title": "«La historia sindical de Lula explica lo que es hoy como presidente»",
-          "publisher": "Rebelión",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaXwXCc2PD4o4b4kHBGQnawZntZlbzway_KWbHchu20fKeM9lrQWDsgBEToiQ"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/nico-paz-m%C3%A1ximo-perrone-suplentes-135100807.html",
-          "title": "¿Por qué Nico Paz y Máximo Perrone son suplentes en el Como ante Cagliari?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHLDDCvRXjDsm8ZBTlQra16jIhKuG3TgOZ-k57iqRo9CWNPAkZaiexLA8uQtU"
-        }
-      ]
-    },
-    {
-      "query": "ken griffin",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T14:20:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/ken-griffin-citadel-miami-carnegie-mellon-338bcd20",
-        "https://the-tartan.org/2026/11/15/advisory-committee-to-guide-allocation-of-500m-griffin-donation/",
-        "https://www.post-gazette.com/region/cmu-miami-climate-FIJKCJ2XLBFITGYEI5MAFSSUCI/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8RHgjK3T372fCLmljhccOiXwOXKc1v54j1RjPhkugzFR7GWZDXB0W-_2p2l4",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/ken-griffin-citadel-miami-carnegie-mellon-338bcd20",
-          "title": "Exclusive | Oxford and MIT Didn’t Bite. So Ken Griffin Took His Miami Campus Elsewhere.",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8RHgjK3T372fCLmljhccOiXwOXKc1v54j1RjPhkugzFR7GWZDXB0W-_2p2l4"
-        },
-        {
-          "url": "https://the-tartan.org/2026/11/15/advisory-committee-to-guide-allocation-of-500m-griffin-donation/",
-          "title": "Advisory committee to guide allocation of $500M Griffin donation",
-          "publisher": "The Tartan",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSGSPtnfeITBrFplRcCWsUCjz1Xj2NeZhxblex3-DscEEDRzNZwjYUV2_sFAM"
-        },
-        {
-          "url": "https://www.post-gazette.com/region/cmu-miami-climate-FIJKCJ2XLBFITGYEI5MAFSSUCI/",
-          "title": "Letter to the editor: Pittsburgh is a safer climate bet than Miami",
-          "publisher": "Pittsburgh Post-Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDnTYQmHXfi8TnxxDlS-BygK7b_Rh8IAIuibtUEuwcGXn9e10-as1HioZdRhI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJDAbg4JL0pVHzJLn3ykJExya6mLHRVbwaNaA4PgRAnojzi2UK8ldq11G82VE"
         }
       ]
     }
