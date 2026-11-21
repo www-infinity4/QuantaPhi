@@ -73,7 +73,20 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=2NLr5ND7BkY',
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
-}];
+},
+{
+ videoId:'mrhL0sUO4j0',title:'YouTube video mrhL0sUO4j0 (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=mrhL0sUO4j0',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'KOhR7s-lXVY',title:'YouTube video KOhR7s-lXVY (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=KOhR7s-lXVY',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
+];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
  if(!/^[A-Za-z0-9_-]{11}$/.test(row.videoId||''))return false;
