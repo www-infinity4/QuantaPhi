@@ -54,7 +54,17 @@ try{
   report.jobId=lease.ticketId+'/'+lease.jobId;report.baseSha=git('rev-parse','HEAD');
   await event('greenbeans','Claimed '+report.jobId+'. Reading exact repository files before editing.');
   const original={};for(const path of allowedFiles)original[path]=await fs.readFile(path,'utf8');
-  const clearJob=/clear\s+(?:text|input)/i.test(lease.job.instructions);
+  // Validate repository slug and base SHA before performing source‑routing actions
+  if (!lease.job.repository || !/^[^\/]+\/[^\/]+$/.test(lease.job.repository)) {
+    throw Error('source_adapter_invalid_repository');
+  }
+  // Prefer an explicit SHA from the lease; fall back to the current HEAD if available
+  const providedSha = lease.job.sha || lease.job.baseSha;
+  const headSha = git('rev-parse','HEAD');
+  if (!providedSha && !headSha) {
+    throw Error('source_adapter_missing_sha');
+  }
+  const clearJob = /clear\s+(?:text|input)/i.test(lease.job.instructions);
   let edits=clearJob?clearButtonPatch(original):(await call('propose',{source:original})).edits;
   // Never exit successfully with an active lease. An early exit bypassed
   // the runner result, retry backoff, and saved receipt. This left
