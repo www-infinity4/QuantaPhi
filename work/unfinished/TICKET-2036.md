@@ -1,3 +1,22 @@
+---
+issue: 2036
+state: scoped
+dot: "🔴"
+progress_percent: 0
+progress_basis: "0 of new implementation acceptance checks verified; documentation only"
+sessions_spent: 0
+sessions_remaining_estimate: unknown
+agent: null
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+next_action: "Inspect Android voice source and benchmark licensed offline STT/TTS candidates."
+merged: false
+deployed: false
+live_verified: false
+---
+
 # TICKET-2036: Bubbles offline Android voice
 
 - **GitHub issue:** https://github.com/www-infinity4/QuantaPhi/issues/2036
