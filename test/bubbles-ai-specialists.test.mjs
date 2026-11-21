@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { buildSpecialists, filterSpecialists, makeStarterPrompt, safeDraft } from '../bubbles-ai-specialists.mjs';
+import { buildSpecialists, filterSpecialists, makeStarterPrompt, safeDraft, prepareExistingBubblesComposer } from '../bubbles-ai-specialists.mjs';
 
 const skillCatalog=JSON.parse(readFileSync(new URL('../bubbles-skill-catalog.json',import.meta.url),'utf8'));
 const providerSources=JSON.parse(readFileSync(new URL('../bubbles-ai-plugin-sources.json',import.meta.url),'utf8'));
@@ -49,4 +49,30 @@ test('Bubbles page mounts specialist buttons beside the existing single composer
  assert.match(html,/bubbles-ai-specialists\.css/);
  assert.match(html,/id="bubblesAICard"/);
  assert.match(html,/aria-label="AI adviser quick cards"/);
+});
+
+test('AI button prepares the existing composer but never overwrites or auto-submits a draft',()=>{
+ const originalDocument=globalThis.document;
+ const input={value:'Already writing a request',focusCount:0,inputEvents:0,
+  closest(){return {hidden:false};},
+  focus(){this.focusCount++;},
+  scrollIntoView(){},
+  dispatchEvent(event){assert.equal(event.type,'input');this.inputEvents++;}
+ };
+ globalThis.document={querySelector(selector){return selector.includes('#bubblesAICard')?input:null;}};
+ try{
+  const agent=specialists.find(x=>x.sourceType==='plugin_source');
+  assert.deepEqual(prepareExistingBubblesComposer(agent),{ok:false,reason:'draft_exists'});
+  assert.equal(input.value,'Already writing a request');
+  assert.equal(input.inputEvents,0);
+  input.value='';
+  assert.deepEqual(prepareExistingBubblesComposer(agent),{ok:true});
+  assert.match(input.value,/specialist profile in Bubbles/i);
+  assert.match(input.value,/verify the Bubbles adapter/i);
+  assert.equal(input.inputEvents,1);
+  assert.equal(input.focusCount,1);
+ }finally{
+  if(originalDocument===undefined)delete globalThis.document;
+  else globalThis.document=originalDocument;
+ }
 });
