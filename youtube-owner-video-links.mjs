@@ -43,6 +43,30 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=kd1PLywtQzI',
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'oxVpgLW2k2c',title:'YouTube video oxVpgLW2k2c (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=oxVpgLW2k2c',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'hI_ZLgcCeVU',title:'YouTube video hI_ZLgcCeVU (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=hI_ZLgcCeVU',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'jZ4Jk4nR94I',title:'YouTube video jZ4Jk4nR94I (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=jZ4Jk4nR94I',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'O5wUpS5z4SI',title:'YouTube video O5wUpS5z4SI (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=O5wUpS5z4SI',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
 }];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
