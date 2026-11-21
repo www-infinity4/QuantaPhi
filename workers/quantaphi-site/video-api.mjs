@@ -1,7 +1,9 @@
 import {available,openVideo,openMedia} from './open-video.mjs';
+import {creatorUploadsApi} from './creator-uploads.mjs';
 const json=(data,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store'}});
 export async function videoAPI(request,env,fetcher=fetch){
  const url=new URL(request.url),path=url.pathname;
+ if(path==='/api/creator-uploads')return creatorUploadsApi(request,fetcher);
  if(path==='/api/video/media'&&request.method==='GET')return openMedia(request,env,fetcher);
  if(path==='/api/video/config'&&request.method==='GET')return json({ok:true,configured:!!env.XAI_API_KEY&&!!env.VIDEO_RATE_LIMITER,engines:available(env),defaultProvider:'open',provider:'Grok Imagine',model:env.XAI_VIDEO_MODEL||'grok-imagine-video-1.5'});
  if(request.method!=='POST')return json({ok:false,error:'Method not allowed'},405);
