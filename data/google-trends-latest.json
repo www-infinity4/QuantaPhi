@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T13:30:58.277325Z",
+  "checked_at": "2026-11-21T14:01:22.689485Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "england vs new zealand",
+      "query": "lazio vs lecce",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T13:10:00Z",
+      "published_at": "2026-11-21T13:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/rugby-union/articles/cqrmgjpp0l48o",
-        "https://www.theguardian.com/sport/live/2026/nov/21/england-v-new-zealand-nations-championship-rugby-union-live",
-        "https://www.telegraph.co.uk/rugby-union/2026/11/20/why-beating-all-blacks-is-still-a-massive-scalp-for-england/"
+        "https://www.bbc.com/sport/football/live/cm0qj04qq43et",
+        "https://football-italia.net/gattuso-feel-like-ive-been-lazio-for-10-years/",
+        "https://www.tufutbolero.com/en/news/di-francesco-prepares-lazio-trip-ilic-and-pierotti-miss-09f9f8"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_E2X66uX47IQ-Pr8KUBVQMB8FSWQHsti0CMOgtWw3YrR8RwMx6Rbw9KInrZQ",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/rugby-union/articles/cqrmgjpp0l48o",
-          "title": "England v New Zealand: Hosts aim to extend All Black misery",
+          "url": "https://www.bbc.com/sport/football/live/cm0qj04qq43et",
+          "title": "Lazio vs Lecce: Italian Serie A stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_E2X66uX47IQ-Pr8KUBVQMB8FSWQHsti0CMOgtWw3YrR8RwMx6Rbw9KInrZQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/21/england-v-new-zealand-nations-championship-rugby-union-live",
-          "title": "England v New Zealand: Nations Championship rugby union – live",
-          "publisher": "The Guardian",
+          "url": "https://football-italia.net/gattuso-feel-like-ive-been-lazio-for-10-years/",
+          "title": "Gattuso: ‘Feel like I’ve been at Lazio for 10 years, Frattesi is fine’",
+          "publisher": "Football Italia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTB4dJGYy8XEZxUqkwWHwCNuRbfyewlSyxOfFSR07vfupsM7HM2sFHFnLecaoI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwTwOqOZvoLejRP2eVk_qVdm_9eJgKPFaETTGtUkod-flH7rqDQTocr_tGOnI"
         },
         {
-          "url": "https://www.telegraph.co.uk/rugby-union/2026/11/20/why-beating-all-blacks-is-still-a-massive-scalp-for-england/",
-          "title": "England beware: Wounded All Blacks are bloodthirsty for revenge",
-          "publisher": "The Telegraph",
+          "url": "https://www.tufutbolero.com/en/news/di-francesco-prepares-lazio-trip-ilic-and-pierotti-miss-09f9f8",
+          "title": "Di Francesco prepares Lazio trip: Ilic and Pierotti miss training",
+          "publisher": "Tu Futbolero",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMxcoNpc3o2d2C55XwoCKXJhHbfyo_ntJM23YQ002aE-j96BfA1VSIZZ_33uQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM-ErvgWC8xs9RP_1QMlFz7wOEqr-eCCbAlWctxMhWP69IwiYcBXV9Eb_CsWk"
         }
       ]
     },
     {
-      "query": "bryce underwood",
+      "query": "ncaa xc championships 2026",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T13:10:00Z",
+      "published_at": "2026-11-21T13:40:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/20/bryce-underwood-donald-trump-nil-protect-college-sports-act/92884444007/",
-        "https://www.mlive.com/wolverines/football/2026/11/did-president-trump-just-take-a-shot-at-michigan-qb-bryce-underwood.html",
-        "https://www.on3.com/news/president-donald-trump-takes-apparent-shot-bryce-underwood-nil-deal-strong-arm-no-accuracy/"
+        "https://www.ncaa.com/news/cross-country-women/article/2026-11-14/2026-ncaa-cross-country-national-championships-date-time-tv-channel-history",
+        "https://byucougars.com/news/2026/11/17/no-1-cougars-prepare-for-ncaa-championships",
+        "https://www.deseret.com/sports/2026/11/20/byu-cross-country-teams-gunning-for-podium-at-ncaa-championships/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkvFqRCJpz1DrN9NzhHmRPZmKEbY_Nygk5SLcORltutqDYsfM0c_zbYBusL6w",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtUEaZfQbMoAhAdd35djTvwQ1ULmYnxua_PqOaRqkdqgEvcFPoeAbt3M4MTUU",
+      "image_credit": "NCAA.com",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/20/bryce-underwood-donald-trump-nil-protect-college-sports-act/92884444007/",
-          "title": "Bryce Underwood catches stray from President Donald Trump with PCSA in limbo",
-          "publisher": "USA Today",
+          "url": "https://www.ncaa.com/news/cross-country-women/article/2026-11-14/2026-ncaa-cross-country-national-championships-date-time-tv-channel-history",
+          "title": "2026 NCAA cross country national championships: Date, time, TV channel, history",
+          "publisher": "NCAA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkvFqRCJpz1DrN9NzhHmRPZmKEbY_Nygk5SLcORltutqDYsfM0c_zbYBusL6w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtUEaZfQbMoAhAdd35djTvwQ1ULmYnxua_PqOaRqkdqgEvcFPoeAbt3M4MTUU"
         },
         {
-          "url": "https://www.mlive.com/wolverines/football/2026/11/did-president-trump-just-take-a-shot-at-michigan-qb-bryce-underwood.html",
-          "title": "Did President Trump just take a shot at Michigan QB Bryce Underwood?",
-          "publisher": "MLive.com",
+          "url": "https://byucougars.com/news/2026/11/17/no-1-cougars-prepare-for-ncaa-championships",
+          "title": "No. 1 Cougars prepare for NCAA Championships",
+          "publisher": "BYU Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSORusFN-AjFVZhtf6_hqH2DImwwTzH3xcWIFNzMJVqNmTjPaRHAQLSSiDiM8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwimAq6c6Cju6W5NUdCRY3YAR5ZpN_3_SVyAv4ygWWzFAIlZSv8p_qdXoXAik"
         },
         {
-          "url": "https://www.on3.com/news/president-donald-trump-takes-apparent-shot-bryce-underwood-nil-deal-strong-arm-no-accuracy/",
-          "title": "President Donald Trump takes apparent shot at Bryce Underwood NIL deal: ‘Strong arm, no accuracy’",
-          "publisher": "On3",
+          "url": "https://www.deseret.com/sports/2026/11/20/byu-cross-country-teams-gunning-for-podium-at-ncaa-championships/",
+          "title": "What to expect from BYU runners at Saturday’s NCAA cross country championships",
+          "publisher": "Deseret News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLhcGBgO5uE6zXs3i3IcsqnVkA_FnaCeyghfJQhVsCTgz_rlDw9Iuj0J_JJRY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3bm-U1btvuXMkEt9MLfGUgTPa9qpM1q_-qAB9Y5o6XlvndrqLgAFUcyuYDcg"
         }
       ]
     },
     {
-      "query": "panda express new rangoon nachos",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T13:10:00Z",
+      "query": "como vs cagliari",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T13:30:00Z",
       "related_news_urls": [
-        "https://www.allrecipes.com/panda-express-rangoon-nachos-12265288",
-        "https://www.tastingtable.com/2322231/panda-express-rangoon-nachos-review/",
-        "https://cw33.com/a-taste-of-north-texas/food-and-drink/panda-express-adds-viral-rangoon-nachos-to-digital-menu/"
+        "https://us.marca.com/soccer/premier-league/a-villa-sunderland/2026/11/21/01_0106_20261121_7_56-directo.html",
+        "https://espndeportes.espn.com/basquetbol/nba/cronica/_/juegoId/401909980",
+        "https://www.vavel.com/es/baloncesto/2026/11/15/nba/1279356-los-nuggets-vencen-en-new-orleans-en-una-noche-de-record-116-108.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB4knw2-nX5z-lE_wlYXIrg11lmP-3F-VxCADoF439439EhONvy68KRTQcgKo",
-      "image_credit": "Allrecipes",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2DqPLNLTishJmM9iP_mC7A8oSrxsfI_ImPnFQ478RHqyR0QjmNxVhLVk6NUE",
+      "image_credit": "marca usa",
       "news": [
         {
-          "url": "https://www.allrecipes.com/panda-express-rangoon-nachos-12265288",
-          "title": "Panda Express Just Quietly Released a New Limited-Time Menu Item",
-          "publisher": "Allrecipes",
+          "url": "https://us.marca.com/soccer/premier-league/a-villa-sunderland/2026/11/21/01_0106_20261121_7_56-directo.html",
+          "title": "A Villa - Sunderland EN VIVO. Últimas actualizaciones de Premier League en directo",
+          "publisher": "marca usa",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB4knw2-nX5z-lE_wlYXIrg11lmP-3F-VxCADoF439439EhONvy68KRTQcgKo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2DqPLNLTishJmM9iP_mC7A8oSrxsfI_ImPnFQ478RHqyR0QjmNxVhLVk6NUE"
         },
         {
-          "url": "https://www.tastingtable.com/2322231/panda-express-rangoon-nachos-review/",
-          "title": "Review: Panda Express Made A Viral Menu Hack Official, And You Need To Try It Before It's Gone",
-          "publisher": "Tasting Table",
+          "url": "https://espndeportes.espn.com/basquetbol/nba/cronica/_/juegoId/401909980",
+          "title": "Resumen del partido Nuggets 116-108 Pelicans (14 de Nov., 2026)",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTePiv3HVMw7eZVYWhizUq9Ynkg2aiEgu-8HP1VizdrTbEAZTcGE9_AzDBh7pc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1SLAAZyKMICOfdcqGV6eW3YZrqsCRpRsqfGedNsYYaUlSECGObIRuOKpS1BI"
         },
         {
-          "url": "https://cw33.com/a-taste-of-north-texas/food-and-drink/panda-express-adds-viral-rangoon-nachos-to-digital-menu/",
-          "title": "Panda Express adds viral Rangoon nachos to digital menu",
-          "publisher": "CW33.com",
+          "url": "https://www.vavel.com/es/baloncesto/2026/11/15/nba/1279356-los-nuggets-vencen-en-new-orleans-en-una-noche-de-record-116-108.html",
+          "title": "Los Denver Nuggets vencen a los New Orleans Pelicans con récord de Jokic y Murray",
+          "publisher": "VAVEL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3sQ4Ln1Uv6e1SJABq_Mi0C2hyRLdJwTUgNIECkbpzcrcHPg6GafTiwLTsLpA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp1PmlPqHLzOlDDx0b4Ie-CkTfDS1sK233OZ_acsv3_F_LhoTLToP9ILkQg7c"
         }
       ]
     },
     {
-      "query": "phil wickham hallelujah! it's christmas again!",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T13:10:00Z",
+      "query": "daniel jones indianapolis colts",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-21T13:30:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/video/6408674651112",
-        "https://chvnradio.com/articles/phil-wickham-set-to-release-new-christmas-album",
-        "https://gospelmusic.org/news/phil-wickham-set-to-perform-for-fox-news-christmas-tree-lighting-on-friday"
+        "https://www.espn.com/nfl/story/_/id/50542293/colts-release-qb-daniel-jones-blowout-loss-texans",
+        "https://sports.yahoo.com/articles/giants-john-harbaugh-priceless-reaction-131156972.html",
+        "https://www.colts.com/news/shane-steichen-explains-colts-decision-to-start-anthony-richardson-sr-waive-daniel-jones"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvTIbso_NVOd8FtpgPs1nHf4uffN5yjWewabqUPsy8Yi0esp3L0f_ItEnhbBI",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/video/6408674651112",
-          "title": "Phil Wickham celebrates new Christmas album ahead of Fox Square performance",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvTIbso_NVOd8FtpgPs1nHf4uffN5yjWewabqUPsy8Yi0esp3L0f_ItEnhbBI"
-        },
-        {
-          "url": "https://chvnradio.com/articles/phil-wickham-set-to-release-new-christmas-album",
-          "title": "Phil Wickham set to release new Christmas album",
-          "publisher": "CHVN Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJjAg3hxnHLaEbj0bsfGdW_loQ3r4xcZXBFapIYyjHl3t0qRIe_eBRnAyUCh8"
-        },
-        {
-          "url": "https://gospelmusic.org/news/phil-wickham-set-to-perform-for-fox-news-christmas-tree-lighting-on-friday",
-          "title": "Phil Wickham Set to Perform for Fox News Christmas Tree Lighting On Friday",
-          "publisher": "Gospel Music Association",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmG2RqRyUKCjmFTFg5OvkcoZgCnyBizEC7HZf-O-9T6o4QjzRJZa6i48V5SVk"
-        }
-      ]
-    },
-    {
-      "query": "trinity rodman",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T13:10:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/sports/2026/11/20/trinity-rodman-became-best-paid-womens-soccer-star-then-backed-up-investment/",
-        "https://www.espn.com/soccer/story/_/id/50535011/spirit-rodman-nwsl-title",
-        "https://www.cbssports.com/soccer/news/trinity-rodmans-washington-spirit-nwsl-final-fun/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwgxVmwOcSBgb7rMd5jgA2_qhnS_19AXPWRDub5Vk08lMooBoEIy3t5qgq0x4",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/sports/2026/11/20/trinity-rodman-became-best-paid-womens-soccer-star-then-backed-up-investment/",
-          "title": "Trinity Rodman became the best-paid women’s soccer star — then backed up the investment",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwgxVmwOcSBgb7rMd5jgA2_qhnS_19AXPWRDub5Vk08lMooBoEIy3t5qgq0x4"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50535011/spirit-rodman-nwsl-title",
-          "title": "Rodman eyes 'full-circle moment' with NWSL title: 'Would mean everything'",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbjm9ZMzNQxGJXQfkcHv5yKaBmeQCujHMcGeoF9KoFJsCZMWLtIp11wTPASU0"
-        },
-        {
-          "url": "https://www.cbssports.com/soccer/news/trinity-rodmans-washington-spirit-nwsl-final-fun/",
-          "title": "Trinity Rodman's non-negotiable for Washington Spirit: 'I wouldn't be playing soccer if it wasn't fun'",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgKEz7T8oy9G2eMiQEdMYg84Ne3wt6HBcjamSJ_6hD37GjdSygj3HEHCSf_CU"
-        }
-      ]
-    },
-    {
-      "query": "fox news politics",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T13:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/economy/policy/article/generational-theft-harsh-pushback-follows-a-plan-to-fund-social-security-with-more-government-borrowing-160247441.html",
-        "https://www.foxnews.com/politics/millions-could-lose-paid-benefits-due-congress-ignoring-decades-social-security-warnings-experts",
-        "https://www.ms.now/rachel-maddow-show/maddowblog/ron-johnson-social-security-ponzi-scheme-wisconsin"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRo4Sy7GhLKtCKmaiFk7kF4caSJAaLZnE2HUyAW5O7PGaXywRCX7ziop9-Tlc",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/economy/policy/article/generational-theft-harsh-pushback-follows-a-plan-to-fund-social-security-with-more-government-borrowing-160247441.html",
-          "title": "'Generational theft': Harsh pushback follows a plan to fund Social Security with more government borrowing",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRo4Sy7GhLKtCKmaiFk7kF4caSJAaLZnE2HUyAW5O7PGaXywRCX7ziop9-Tlc"
-        },
-        {
-          "url": "https://www.foxnews.com/politics/millions-could-lose-paid-benefits-due-congress-ignoring-decades-social-security-warnings-experts",
-          "title": "Millions could lose paid benefits due to Congress ignoring decades of Social Security warnings: experts",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzN9kudDpAEev-LeJFvOEMDUzio4ZPSPfJI8CEuHxGIU0VjxPfTEU31v5yvFg"
-        },
-        {
-          "url": "https://www.ms.now/rachel-maddow-show/maddowblog/ron-johnson-social-security-ponzi-scheme-wisconsin",
-          "title": "The problem(s) with Ron Johnson trying to walk back his call for Social Security’s elimination",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMtlLd170QN8YzwZiBlNFU5vi-3KZcVn_0SlyqiY3rcXMu-1YkNcYvvAFcqIs"
-        }
-      ]
-    },
-    {
-      "query": "nitto atp finals",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T13:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50543676/carlos-alcaraz-wins-set-atp-finals-semi-vs-ben-shelton",
-        "https://www.reuters.com/sports/tennis/alcaraz-eases-injury-concerns-with-cobolli-win-complete-perfect-atp-finals-group-2026-11-20/",
-        "https://www.atptour.com/en/news/alcaraz-cobolli-nitto-atp-finals-2026-friday"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1RYWqo6ozs4bkq3z9VP8GlQWHw38CLvNgufIqkjw9hWHDz-gVwvPXxJ_MBIQ",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMixEMKG6u5bQfm2XfSvxKN8sX8LwT5CohXtE0htXqo4FhMLKURn749n8rC6I",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/tennis/story/_/id/50543676/carlos-alcaraz-wins-set-atp-finals-semi-vs-ben-shelton",
-          "title": "Carlos Alcaraz in off-court 'challenge' to stay healthy for semis of ATP Finals",
+          "url": "https://www.espn.com/nfl/story/_/id/50542293/colts-release-qb-daniel-jones-blowout-loss-texans",
+          "title": "Colts cut QB Daniel Jones, turn to Anthony Richardson Sr. for next start",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1RYWqo6ozs4bkq3z9VP8GlQWHw38CLvNgufIqkjw9hWHDz-gVwvPXxJ_MBIQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMixEMKG6u5bQfm2XfSvxKN8sX8LwT5CohXtE0htXqo4FhMLKURn749n8rC6I"
         },
         {
-          "url": "https://www.reuters.com/sports/tennis/alcaraz-eases-injury-concerns-with-cobolli-win-complete-perfect-atp-finals-group-2026-11-20/",
-          "title": "Alcaraz eases injury concerns with Cobolli win, Medvedev books last four spot",
-          "publisher": "Reuters",
+          "url": "https://sports.yahoo.com/articles/giants-john-harbaugh-priceless-reaction-131156972.html",
+          "title": "Giants’ John Harbaugh Has Priceless Reaction to Colts Cutting Former New York QB Daniel Jones",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbONeTEZ3S8J78_wa9h5_LVR_WuDcpIc-8Jjf-dydCOpyNf5WDPhdkg65Riaw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbWxhZiFbhBXhaLEWlDLYlsEGfbJuuclHu_Nwi9Dpc0meOrxoHGAsQxmE5RLs"
         },
         {
-          "url": "https://www.atptour.com/en/news/alcaraz-cobolli-nitto-atp-finals-2026-friday",
-          "title": "Alcaraz, free & firing, downs Cobolli in Turin",
-          "publisher": "ATP Tour",
+          "url": "https://www.colts.com/news/shane-steichen-explains-colts-decision-to-start-anthony-richardson-sr-waive-daniel-jones",
+          "title": "Shane Steichen explains Colts' decision to start Anthony Richardson Sr., waive Daniel Jones",
+          "publisher": "Colts.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQw4tFEEkar65go_S0oJZqobriqKcG8QAnEuFB-hCwCYdA3bDrPfilQQz8zgl0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSThG2WbLeLFALzlNpiCf-o17jq79M8yc6Xdy3zoT30k2rvOcbpol5NAPG5fzU"
         }
       ]
     },
     {
-      "query": "epl fixtures",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T13:00:00Z",
+      "query": "apple black friday deals 2026",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T13:30:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/football/2026/nov/20/premier-league-10-things-to-look-out-for-this-weekend",
-        "https://www.si.com/soccer/premier-league-predictions-man-utd-liverpool-arsenal-newcastle-gameweek-11",
-        "https://www.premierleague.com/en/news/4764715/predicted-line-ups-for-premier-league-teams-in-matchweek-11"
+        "https://www.nbcnews.com/select/shopping/apple-airpods-pro-3-deal-of-the-day-rcna610526",
+        "https://www.cnn.com/cnn-underscored/deals/apple-airpods-black-friday-deals-2026-11-20",
+        "https://www.macrumors.com/2026/11/20/apple-black-friday-deals-available-now-2026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcRy6Je9r3zk4L4SOvrxQHSuj3-x1wOQa788XluNtM_EyQgxcSxytT2xewdto",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnbJ75s9QLFqk4Z8HSHct_EBxYG2Zem0aEceb_TFu9bywlZzMy5iXcnTJfgho",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/select/shopping/apple-airpods-pro-3-deal-of-the-day-rcna610526",
+          "title": "This AirPods Pro 3 deal is the one to grab before Black Friday",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnbJ75s9QLFqk4Z8HSHct_EBxYG2Zem0aEceb_TFu9bywlZzMy5iXcnTJfgho"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/apple-airpods-black-friday-deals-2026-11-20",
+          "title": "I’ve tested all of Apple’s AirPods. These are the 10 best early Black Friday deals",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyb_gDa-W4yX2VgoGnFFXmdJmnyHsRmQAs7FTr08vJlMY0zhASZKPJqisXagk"
+        },
+        {
+          "url": "https://www.macrumors.com/2026/11/20/apple-black-friday-deals-available-now-2026/",
+          "title": "Apple Black Friday Deals Available Now: AirPods, Apple Watches, MacBooks, and More",
+          "publisher": "MacRumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLZgJySS5Yz70FZhlluEm9kIsPjyA5-YowsUJBRxTmgMvMYOICmdCLoWc6Iag"
+        }
+      ]
+    },
+    {
+      "query": "new orleans harbor police rescue",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T13:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/21/us/new-orleans-cruise-ship-rescue",
+        "https://www.wdsu.com/article/pennsylvania-couple-files-lawsuit-mississippi-river-cruise-collision/74492955",
+        "https://www.fox8live.com/2026/11/20/1-passenger-remains-hospitalized-after-mississippi-river-tanker-crash/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhYkUriZWnWOXTVFuWUhX-bv_6oSWStSMMv-rKdi3awaYap65ugp6TUK8g6vk",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/21/us/new-orleans-cruise-ship-rescue",
+          "title": "A capsizing cruise ship and a gutsy risk: How a quick-thinking police chief turned a looming tragedy into a miracle",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhYkUriZWnWOXTVFuWUhX-bv_6oSWStSMMv-rKdi3awaYap65ugp6TUK8g6vk"
+        },
+        {
+          "url": "https://www.wdsu.com/article/pennsylvania-couple-files-lawsuit-mississippi-river-cruise-collision/74492955",
+          "title": "Pennsylvania couple files lawsuit over Mississippi River cruise collision",
+          "publisher": "WDSU",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhoe5jOUUUBfD7uGWP-Z6k9MlrJQm-oj9Vh6FuWekbZZSxbz7r3Kir1k-N5dg"
+        },
+        {
+          "url": "https://www.fox8live.com/2026/11/20/1-passenger-remains-hospitalized-after-mississippi-river-tanker-crash/",
+          "title": "1 passenger remains hospitalized after Mississippi River tanker crash",
+          "publisher": "FOX 8 Live WVUE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_GbgRIvK198sqoArmZrrb48DC623eJCYJ47EMMHotWeTYBspF5dj2Vye5Xwk"
+        }
+      ]
+    },
+    {
+      "query": "toys r us",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T13:30:00Z",
+      "related_news_urls": [
+        "https://abc7ny.com/post/toys-us-opens-grand-central-terminal-nyc/20059534/",
+        "https://www.cleveland.com/business/2026/11/toys-r-us-is-officially-back-with-160-new-stores-including-one-in-grand-central-terminal.html",
+        "https://www.indystar.com/story/money/business/development/2026/11/17/toys-r-us-makes-a-holiday-comeback-with-2-indy-locations/92808311007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3db1o06euQW8jhuT28DxGnJOFrby7kPV-wZtjeNo2ASw6o-Z9x2muvh8C0ws",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/post/toys-us-opens-grand-central-terminal-nyc/20059534/",
+          "title": "Toys 'R' Us opens at Grand Central Terminal in NYC",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3db1o06euQW8jhuT28DxGnJOFrby7kPV-wZtjeNo2ASw6o-Z9x2muvh8C0ws"
+        },
+        {
+          "url": "https://www.cleveland.com/business/2026/11/toys-r-us-is-officially-back-with-160-new-stores-including-one-in-grand-central-terminal.html",
+          "title": "Toys ‘R’ Us is officially back with 160 new stores, including one in Grand Central Terminal",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzWiqSrAPHzmwcK2071P0lyS1q5pgD20RhqnY-aiBHeOKiZu9MHSKCqoS2Ank"
+        },
+        {
+          "url": "https://www.indystar.com/story/money/business/development/2026/11/17/toys-r-us-makes-a-holiday-comeback-with-2-indy-locations/92808311007/",
+          "title": "Toys 'R' Us makes a holiday comeback with 2 Indy locations",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1KxRIvScMm4Mtnix8j98NxbqDiCkBLG_S2wDpuKNRLgxKZuDw99xUhcdQJ14"
+        }
+      ]
+    },
+    {
+      "query": "the body netflix",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T13:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/2026/nov/21/every-lesbian-i-know-is-obsessed-with-the-body-on-netflix",
+        "https://deadline.com/2026/11/netflix-the-body-petition-remove-blasphemous-anti-christian-1237229570/",
+        "https://www.cbc.ca/news/entertainment/the-body-petition-netflix-9.7428453"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6zG-MqQlPVd8lckOLQlLOwsjc0UhCaDX3a8W8QjhJ64nch7xJ_WvGoesPUZw",
       "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.theguardian.com/football/2026/nov/20/premier-league-10-things-to-look-out-for-this-weekend",
-          "title": "Premier League: 10 things to look out for this weekend",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/21/every-lesbian-i-know-is-obsessed-with-the-body-on-netflix",
+          "title": "The Body is a hit – and every lesbian I know is obsessed. Why aren’t there more sapphic stories on screen?",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcRy6Je9r3zk4L4SOvrxQHSuj3-x1wOQa788XluNtM_EyQgxcSxytT2xewdto"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6zG-MqQlPVd8lckOLQlLOwsjc0UhCaDX3a8W8QjhJ64nch7xJ_WvGoesPUZw"
         },
         {
-          "url": "https://www.si.com/soccer/premier-league-predictions-man-utd-liverpool-arsenal-newcastle-gameweek-11",
-          "title": "Premier League Predictions: Pochettino’s Man Utd Bow at Liverpool, Arsenal Visit Newcastle",
-          "publisher": "Sports Illustrated",
+          "url": "https://deadline.com/2026/11/netflix-the-body-petition-remove-blasphemous-anti-christian-1237229570/",
+          "title": "Netflix’s ‘The Body’ Sparks 126K-Strong Petition To Remove “Blasphemous Anti-Christian” Show",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKVf2jDUPnU0J3GarVMHgdTXHt8hyow1ttelou0UBDaL14RzDou8k6X_Pl2a8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTltEG0sugQwlixVLQo3_5UL7bQ62BsiITUmwDEivTq7h4qheeijUdMtjLKwNM"
         },
         {
-          "url": "https://www.premierleague.com/en/news/4764715/predicted-line-ups-for-premier-league-teams-in-matchweek-11",
-          "title": "Predicted line-ups for Premier League teams in Matchweek 11",
-          "publisher": "Premier League",
+          "url": "https://www.cbc.ca/news/entertainment/the-body-petition-netflix-9.7428453",
+          "title": "Petition asks Netflix to cancel The Body for 'blasphemous' and 'anti-Christian' content",
+          "publisher": "CBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkOE_jDw406NrXLCd0ebtjyEBOJWY8MvCMZeltbdjfNDpjIaYyXvrswjV-yo0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTa1B6nwoWI6TeDfanDERQGXJqNPDlTbxcL3ZnMro_I5OoOn_NKyeeH4IiWqH8"
         }
       ]
     },
     {
-      "query": "2027 ncaa bracketology top seeds",
+      "query": "kelsey grammer",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T12:50:00Z",
+      "published_at": "2026-11-21T13:20:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/college-basketball/news/2027-ncaa-tournament-projection-bracketology-houston-iillinois-virginia/",
-        "https://www.theixsports.com/the-ix-basketball-newsroom/ncaa-basketball/bracketology/2026-27-bracketology-new-no-1-seeds-louisville-michigan/",
-        "https://hoopshd.com/2026/11/16/hoops-hd-merit-rankings-bracket-projections-nov-16th/"
+        "https://www.yahoo.com/entertainment/celebrity/articles/kelsey-grammer-71-hobbles-down-215538811.html",
+        "https://www.dailywire.com/news/weekend-plans-with-frasier-star-kelsey-grammer",
+        "https://www.nacionale.com/en/articles/is-kelsey-grammer-running-for-president-maybe-its-time-newsnation"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe1qa_rBViey0CJmmswW4wCf7v_0jsSWbWW7CuVGSDC4vPVUGmGPuhlbOnEj4",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIegguxVAik5TualiV697NtD7rUDD4s0htSRFUvMxegk_Z60S04N5FgXhWbEE",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.cbssports.com/college-basketball/news/2027-ncaa-tournament-projection-bracketology-houston-iillinois-virginia/",
-          "title": "2027 NCAA Tournament Bracketology: Houston takes over No. 1 overall seed; IIllinois, Virginia jump to top line",
-          "publisher": "CBS Sports",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/kelsey-grammer-71-hobbles-down-215538811.html",
+          "title": "Kelsey Grammer, 71, hobbles down red carpet after suffering health issue",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe1qa_rBViey0CJmmswW4wCf7v_0jsSWbWW7CuVGSDC4vPVUGmGPuhlbOnEj4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIegguxVAik5TualiV697NtD7rUDD4s0htSRFUvMxegk_Z60S04N5FgXhWbEE"
         },
         {
-          "url": "https://www.theixsports.com/the-ix-basketball-newsroom/ncaa-basketball/bracketology/2026-27-bracketology-new-no-1-seeds-louisville-michigan/",
-          "title": "2026-27 Bracketology: New No. 1 seeds join the fray",
-          "publisher": "The IX Sports",
+          "url": "https://www.dailywire.com/news/weekend-plans-with-frasier-star-kelsey-grammer",
+          "title": "Weekend Plans With ‘Frasier’ Star Kelsey Grammer",
+          "publisher": "The Daily Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2SV_y5xxJQxSltrOOs5rNEszpcsVQNFcjN8Q7bwz1j0ExEsGNxkqVAhbB5_k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQIho-DohZ0MhchbcJ78Y03r2QTQPBZS2pBCRHg4ljq2rnIh-hhcx0DsA99ac"
         },
         {
-          "url": "https://hoopshd.com/2026/11/16/hoops-hd-merit-rankings-bracket-projections-nov-16th/",
-          "title": "Hoops HD Merit Rankings/Bracket Projections – Nov 16th",
-          "publisher": "Hoops HD",
+          "url": "https://www.nacionale.com/en/articles/is-kelsey-grammer-running-for-president-maybe-its-time-newsnation",
+          "title": "Kelsey Grammer says 'maybe it's time' to run for president, but has not announced a campaign",
+          "publisher": "Nacionale",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQATSMcx34Jx05r91R2rHeRWDgbbkZ1w0kEgJZ9jYiQQHRO4jVf5brnYNRmzHM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_PyBZMwfdI1ZoPxDh0oBR8w8AcCsOJKQThPUexybs_k2aqpTILruXLhZI9wM"
         }
       ]
     },
     {
-      "query": "southampton vs derby county",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T12:50:00Z",
+      "query": "nintendo switch 2 black friday deals",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T13:20:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c8dx1z4xxqnyt",
-        "https://www.tufutbolero.com/en/news/southampton-derby-derby-arrive-with-eight-confirmed-absences-fdbced",
-        "https://www.dcfc.co.uk/news/2026/11/pre-match-john-eustace-southampton-a-202627"
+        "https://www.nintendo.com/en-gb/News/2026/November/Nintendo-eShop-Highlights-19-11-2026-3244888.html",
+        "https://www.creativebloq.com/deals/nintendo-switch-black-friday-deals-already-include-rare-discounts-on-the-switch-2",
+        "https://www.nintendolife.com/guides/43-switch-1-and-2-games-you-should-check-out-in-nintendos-adventure-awaits-eshop-sale-us"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWBBy1ur4dBM7eYUo1s6W8V6Q56QDaGKjDfwyzdGEgQsF7ptYMRgSSb7KWz3g",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_8nQh4y_HoOqy2501CxxaEhGit8ynT3ibAqXX269BH7PoaPQQyz8Gcor4AHs",
+      "image_credit": "Nintendo",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c8dx1z4xxqnyt",
-          "title": "Southampton v Derby County: Championship stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.nintendo.com/en-gb/News/2026/November/Nintendo-eShop-Highlights-19-11-2026-3244888.html",
+          "title": "Nintendo eShop Highlights – 19/11/2026",
+          "publisher": "Nintendo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWBBy1ur4dBM7eYUo1s6W8V6Q56QDaGKjDfwyzdGEgQsF7ptYMRgSSb7KWz3g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_8nQh4y_HoOqy2501CxxaEhGit8ynT3ibAqXX269BH7PoaPQQyz8Gcor4AHs"
         },
         {
-          "url": "https://www.tufutbolero.com/en/news/southampton-derby-derby-arrive-with-eight-confirmed-absences-fdbced",
-          "title": "Southampton-Derby: Derby arrive with eight confirmed absences",
-          "publisher": "Tu Futbolero",
+          "url": "https://www.creativebloq.com/deals/nintendo-switch-black-friday-deals-already-include-rare-discounts-on-the-switch-2",
+          "title": "Nintendo Switch Black Friday deals already include rare discounts on the Switch 2",
+          "publisher": "Creative Bloq",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAEj_OxcOP3l2J70IOMCfQag7rReJ6TkaHKha-Dc_eijcQLCCm6T3FR4iEhhM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL0pqdQUCHAL3LuxtKzRuvIElRJssq-10I56Yz_edAIhzQkdii770yvNJFoHM"
         },
         {
-          "url": "https://www.dcfc.co.uk/news/2026/11/pre-match-john-eustace-southampton-a-202627",
-          "title": "PRE-MATCH: John Eustace - Southampton (A)",
-          "publisher": "DCFC",
+          "url": "https://www.nintendolife.com/guides/43-switch-1-and-2-games-you-should-check-out-in-nintendos-adventure-awaits-eshop-sale-us",
+          "title": "43 Switch 1 & 2 Games You Should Check Out In Nintendo's 'Adventure Awaits' eShop Sale (US)",
+          "publisher": "Nintendo Life",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScKn69UdBTJK2PChBJiiQ8ovWbMrNPFQxlPFVUg1fcpYzJdFzLzGy1N51oxo8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2qAXT6M2A2JUxgpc1NL5zHGkq74yi4J1acvnKD4vVknCjn27tZ0OD-yJlds8"
         }
       ]
     }
