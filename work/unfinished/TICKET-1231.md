@@ -16,8 +16,8 @@ fence: null
 last_observed_at_utc: "2026-11-21T11:36:58Z"
 repo: www-infinity4/QuantaPhi
 branch: fix/bubbles-media-composer-1231
-head_sha: null
-pr: null
+head_sha: 6a4784c51fb67a4426bb27cb5acbda4dff247034
+pr: 2033
 tests: ["59 focused Node regressions passed", "115 related Bubbles contracts passed", "Two new tests failed against old source before repair"]
 ci: []
 merged: false
@@ -27,7 +27,7 @@ blocker: "Local Chromium launch is blocked by environment socket permissions. Re
 next_action: "Push this scoped source and inspect exact-head PR CI, including the real 36-file mixed-batch browser test."
 ---
 
-This checkpoint covers the November 21 composer request under existing readiness issue #1231. It does not replace the broader website/APK, identity, voice or Brain acceptance work in that issue. No authenticated coordinator lease was issued to this interactive session; none is claimed.
+This checkpoint covers the November 21 composer request under existing [readiness issue #1231](https://github.com/www-infinity4/QuantaPhi/issues/1231). It does not replace the broader website/APK, identity, voice or Brain acceptance work in that issue. No authenticated coordinator lease was issued to this interactive session; none is claimed.
 
 ## Scoped behavior
 
@@ -43,3 +43,7 @@ This checkpoint covers the November 21 composer request under existing readiness
 Two new source/vision regressions failed against the old four-image/2,500-character implementation before the fix. The focused suite now passes 59 tests; a separate related-contract suite passes 115. Independent Pink review identified and prompted fixes for pre-media video routing, cloud prefix replacement and duplicated long-text payloads. Added real browser tests for 16 images plus 20 clips (76 successful vision calls), overflow, failed analysis retry, uncapped 100,004-character entry, long-text failure recovery, video-only New chat cancellation and removal. Those browser tests have not yet executed successfully here: Chromium could not create its singleton socket in the local environment. CI and production acceptance must supply their own receipts.
 
 Next: inspect exact-head PR tests and Android build/browser results; repair actual failures; merge only if GitHub permits and checks pass. Verify Pages and Bubbles tools Worker deployments separately, then inspect the live composer. A published preview APK is not evidence that a phone installed it or that physical Android video decoding passed. Keep #1231 open for remaining readiness work.
+
+## PR CI follow-up
+
+[PR #2033](https://github.com/www-infinity4/QuantaPhi/pull/2033) publishes the locally tested source tree `1a1add837370637b1af16e76fc40104286254089`. The first exact-head pass exposed stale asset-revision assertions, an APK version assertion, a clear-composer source assertion and a missing canonical issue hyperlink in this checkpoint. These assertions/links are updated without weakening the behaviors they check; 86 targeted correction tests passed. The semantic tools source/deployment-check workflow passed on the initial head; this PR run did not deploy production. Full mixed-batch browser execution and release are still pending.

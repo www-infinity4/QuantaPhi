@@ -26,7 +26,7 @@ test('named card chat keeps locally scoped history, resumes, and never auto-clea
 });
 
 test('recognized speech cannot erase an in-progress typed message',()=>{
- assert.match(ai,/const clearSentComposer=\(\)=>\{if\(!fromVoice&&input\.value\.trim\(\)===spoken\)input\.value='';\}/);
+ assert.match(ai,/const clearSentComposer=\(\)=>\{if\(!fromVoice&&input\.value\.trim\(\)===spoken\)\{input\.value='';composerCleared=true;\}\}/);
  assert.match(ai,/display\(spoken,'you'\);clearSentComposer\(\)/);
  assert.match(ai,/requireWakeEveryTurn:embedded/);
  assert.match(ai,/if\(embedded\)\{toggle\(!showing\);return\}/);
