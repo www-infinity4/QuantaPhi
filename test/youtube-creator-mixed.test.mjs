@@ -9,7 +9,7 @@ import {departmentFor} from '../quanta-context-placement.mjs';
 
 const video=(channelId,videoId,title)=>({channelId,videoId,title,sourceUrl:'https://www.youtube.com/watch?v='+videoId,publishedAt:null});
 
-test('GANA Tribe, AbbeCAdventures and Julie Deru are distinct verified publisher channels',()=>{
+test('Creator mix preserves three verified channel IDs and a separate owner-linked Samirah source',()=>{
  assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah']);
  assert.equal(CREATOR_CHANNELS[0].channelId,'UC6ySmwN_K8fGGD2EKLQdEGA');
  assert.equal(CREATOR_CHANNELS[1].channelId,'UCFsg41h5GN7TAxFUK3Sl00w');
