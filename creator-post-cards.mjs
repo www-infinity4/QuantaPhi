@@ -20,7 +20,7 @@ function loadXWidget(){
 /* Generic, source-attributed single X post; use the same opted-in provider
  * widget as the reviewed creator database rather than copying X media. */
 export function mountReviewedSingleXPost(root,card){
- if(!root||!card||!/^\\d{15,22}$/.test(card.xOriginalPostId||'')||
+ if(!root||!card||!/^\d{15,22}$/.test(card.xOriginalPostId||'')||
     !/^[A-Za-z0-9_]{1,15}$/.test(card.xOriginalHandle||'')||
     card.featureUrl!=='https://x.com/'+card.xOriginalHandle+'/status/'+card.xOriginalPostId||
     card.official!=='https://x.com/'+card.xOriginalHandle)return false;
