@@ -3,12 +3,82 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T10:01:09.783349Z",
+  "checked_at": "2026-11-21T10:31:13.697865Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "fbi ten most wanted fugitives",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T09:50:00Z",
+      "related_news_urls": [
+        "https://www.newsweek.com/satinderjeet-singh-goldy-brar-fbi-most-wanted-list-canada-reward-murder-suspect-12743107",
+        "https://www.cbc.ca/news/canada/bolo-program-canada-fugitives-police-ai-9.7428331",
+        "https://www.theglobeandmail.com/canada/toronto/article-ai-used-to-create-virtual-models-of-canadas-25-most-wanted-criminals/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrklgc8JK3-Yv_B0Gz6PPZnSyDNjpMlt20Ti59ybqzj65so6sispy4XIygft8",
+      "image_credit": "Newsweek",
+      "news": [
+        {
+          "url": "https://www.newsweek.com/satinderjeet-singh-goldy-brar-fbi-most-wanted-list-canada-reward-murder-suspect-12743107",
+          "title": "Canada Offers $250K Reward for Murder Suspect on FBI’s Most Wanted List",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrklgc8JK3-Yv_B0Gz6PPZnSyDNjpMlt20Ti59ybqzj65so6sispy4XIygft8"
+        },
+        {
+          "url": "https://www.cbc.ca/news/canada/bolo-program-canada-fugitives-police-ai-9.7428331",
+          "title": "Images of Canada's most wanted are AI-generated. How do we know they're accurate?",
+          "publisher": "CBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-lcOqR0XOaUcV-MD4OgZK92biRecD-oDwdiAsiNN6whXlRTBzAFJzQ5xHEYU"
+        },
+        {
+          "url": "https://www.theglobeandmail.com/canada/toronto/article-ai-used-to-create-virtual-models-of-canadas-25-most-wanted-criminals/",
+          "title": "AI used to create virtual models of Canada’s 25 most wanted criminals",
+          "publisher": "The Globe and Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-fbw6f8-kpOT-MI9SN9Y_h-aIsCec8rLb8Y6uNOg7tidcLJNHsuNyYDdjwiY"
+        }
+      ]
+    },
+    {
+      "query": "jake matthews",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T09:00:00Z",
+      "related_news_urls": [
+        "https://www.ajc.com/sports/2026/11/who-could-be-best-tackles-in-2027-nfl-draft-falcons-will-be-looking/",
+        "https://bloggingdirty.com/falcons-could-find-their-new-jake-matthews-in-coveted-2027-nfl-draft-prospect-01m7n6f5ax9q",
+        "https://sports.yahoo.com/articles/cardinals-ole-miss-qb-trinidad-222807306.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOfdvEXkqI6zjas0T-Pz5IYjUbFp3riaKJ8y_SArzFoRKoHA8kfJmuESwmCLU",
+      "image_credit": "The Atlanta Journal-Constitution",
+      "news": [
+        {
+          "url": "https://www.ajc.com/sports/2026/11/who-could-be-best-tackles-in-2027-nfl-draft-falcons-will-be-looking/",
+          "title": "Who could be best tackles in 2027 NFL draft? Falcons will be looking.",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOfdvEXkqI6zjas0T-Pz5IYjUbFp3riaKJ8y_SArzFoRKoHA8kfJmuESwmCLU"
+        },
+        {
+          "url": "https://bloggingdirty.com/falcons-could-find-their-new-jake-matthews-in-coveted-2027-nfl-draft-prospect-01m7n6f5ax9q",
+          "title": "Falcons could find their new Jake Matthews in coveted 2027 NFL Draft prospect",
+          "publisher": "Blogging Dirty",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs3mL3-GttNLtJRNkXGXqCNyY0JjQTmqoxj-FxHSuJYCOeLkjoSk9PvdgkaSk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/cardinals-ole-miss-qb-trinidad-222807306.html",
+          "title": "Cardinals Take Ole Miss QB Trinidad Chambliss at No. 7 in New 2027 NFL Mock Draft",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuKK0_I0KZWntK25JNKXjMIhsc0Odfps94MwYPdEcThTAvdX_vJ5GSk9wwbLc"
+        }
+      ]
+    },
+    {
       "query": "gta 6 kingpin bowling safe code",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-21T08:40:00Z",
       "related_news_urls": [
         "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
@@ -46,13 +116,20 @@
       "approx_searches": "100+",
       "published_at": "2026-11-21T08:40:00Z",
       "related_news_urls": [
+        "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
         "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
-        "https://973thebullicons.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/",
-        "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords"
+        "https://973thebullicons.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLw0YnzGa-2XAY_pLWFVU03T3UUsXAsTi-IJefWoRO_MOAUKrLSna8rNj0xrg",
-      "image_credit": "San Francisco Chronicle",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ",
+      "image_credit": "Los Angeles Times",
       "news": [
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
+          "title": "Armed with guns and sword, owner of squatter removal company cleared out a home. Now he faces felonies",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ"
+        },
         {
           "url": "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
           "title": "They raided a Bay Area home with guns and swords. Are they ‘squatter removers’ — or vigilantes?",
@@ -66,13 +143,6 @@
           "publisher": "iHeart",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUx3Is8yTOpNY1c5qRzOTOdYyirRU9Ku1oyzoCqZtDj8U8_KWkgItAFbOyLgU"
-        },
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
-          "title": "Armed with guns and sword, owner of squatter removal company cleared out a home. Now he faces felonies",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ"
         }
       ]
     },
@@ -82,8 +152,8 @@
       "published_at": "2026-11-21T08:30:00Z",
       "related_news_urls": [
         "https://larrybrownsports.com/basketball/video-luka-doncic-calling-out-lakers-teammate/779309",
-        "https://lakeshowlife.com/lakers-need-sandro-mamukelashvili-bounce-back-to-ease-luka-doncic-burden",
-        "https://cwibc.co.id/en/lakers-mamukelashvili-doncic-scoring"
+        "https://www.limapagi.id/en/doncic-criticizes-mamukelashvili-lakers-kings",
+        "https://bsinews.id/en/doncic-criticizes-mamukelashvili-lakers-kings"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBpy3K6Nov31byFYD8sy7o1WwkkZ07BNq--jQB8sUKBQvTX6fedW7srVDdiQ",
       "image_credit": "Larry Brown Sports",
@@ -96,53 +166,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBpy3K6Nov31byFYD8sy7o1WwkkZ07BNq--jQB8sUKBQvTX6fedW7srVDdiQ"
         },
         {
-          "url": "https://lakeshowlife.com/lakers-need-sandro-mamukelashvili-bounce-back-to-ease-luka-doncic-burden",
-          "title": "Lakers need a Sandro Mamukelashvili bounce-back to ease Luka Doncic's burden",
-          "publisher": "Lake Show Life",
+          "url": "https://www.limapagi.id/en/doncic-criticizes-mamukelashvili-lakers-kings",
+          "title": "Doncic Criticizes Mamukelashvili as Lakers Defeat Kings",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7guY6i2RSoB3_-5mW_kHyPQ_FYVT4m23bQO2wfb8Ba5E-bGM1XeCjBdc4rbo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_mMf8jRQ-4S3U5oOQ54T5MIH0InV2Zrg1SMTwg8qCxPmqGq2zeVAeFP6-Bz8"
         },
         {
-          "url": "https://cwibc.co.id/en/lakers-mamukelashvili-doncic-scoring",
-          "title": "Lakers Need Mamukelashvili to Ease Doncic's Scoring Burden",
-          "publisher": "cwibc.co.id",
+          "url": "https://bsinews.id/en/doncic-criticizes-mamukelashvili-lakers-kings",
+          "title": "Doncic Criticizes Mamukelashvili During Lakers Win Over Kings",
+          "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyLPME7hlhmu0TgfdiDZ3kk95lvIoEyDAek0r6pIjGPMsIAxXDs43joPHLxL8"
-        }
-      ]
-    },
-    {
-      "query": "la cascara motel gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T08:30:00Z",
-      "related_news_urls": [
-        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-la-cascara-motel-robbery",
-        "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
-        "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL5Ltq4rgoIhfJ0tQ5j5Z_cnW9bziovxsyJjnu4DaUGC5O1vRLedg0_-wKIV4",
-      "image_credit": "Mobalytics",
-      "news": [
-        {
-          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-la-cascara-motel-robbery",
-          "title": "All La Cascara Motel Robbery Loot & Secrets Locations - GTA 6",
-          "publisher": "Mobalytics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL5Ltq4rgoIhfJ0tQ5j5Z_cnW9bziovxsyJjnu4DaUGC5O1vRLedg0_-wKIV4"
-        },
-        {
-          "url": "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
-          "title": "La Cascara Motel Walkthrough",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjrUv5vfIM36kxOJDii_T06O4j_IjfUP2KuosItC8URIJ9Olf-emyCWLNnIGs"
-        },
-        {
-          "url": "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
-          "title": "All GTA 6 Safe Codes for Chapter 2 in Port Gellhorn",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9oAZlnWFdLNwIKD3Gjc1ABYOqKi7Z2Ux1k9w1s6xZKywsJMxhRLz-pqBvk7I"
         }
       ]
     },
@@ -182,37 +217,37 @@
       ]
     },
     {
-      "query": "skunk ape gta 6",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T08:10:00Z",
+      "query": "la cascara motel gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T08:30:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/multiple-bigfoot-sightings-reported-gamers-hands-gta-vi",
-        "https://www.polygon.com/gta-6-skunk-ape-tree-effigies-locations-where-to-find/",
-        "https://kotaku.com/why-rockstar-games-includes-bigfoot-and-ufos-to-find-in-its-big-open-world-games-we-love-that-stuff-2000758423"
+        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-la-cascara-motel-robbery",
+        "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
+        "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS63F1UYlq1JXFEQyurtwNSQ-8z4u498mg6ptNye4OTixkxGOUtmJ8GIrQfslw",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL5Ltq4rgoIhfJ0tQ5j5Z_cnW9bziovxsyJjnu4DaUGC5O1vRLedg0_-wKIV4",
+      "image_credit": "Mobalytics",
       "news": [
         {
-          "url": "https://www.foxnews.com/outkick-sports/multiple-bigfoot-sightings-reported-gamers-hands-gta-vi",
-          "title": "Multiple Bigfoot sightings reported by gamers who have gotten their hands on 'GTA VI'",
-          "publisher": "Fox News",
+          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-la-cascara-motel-robbery",
+          "title": "All La Cascara Motel Robbery Loot & Secrets Locations - GTA 6",
+          "publisher": "Mobalytics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS63F1UYlq1JXFEQyurtwNSQ-8z4u498mg6ptNye4OTixkxGOUtmJ8GIrQfslw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL5Ltq4rgoIhfJ0tQ5j5Z_cnW9bziovxsyJjnu4DaUGC5O1vRLedg0_-wKIV4"
         },
         {
-          "url": "https://www.polygon.com/gta-6-skunk-ape-tree-effigies-locations-where-to-find/",
-          "title": "Where to find the tree effigies for the Skunk Ape mission in GTA 6",
-          "publisher": "Polygon.com",
+          "url": "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
+          "title": "La Cascara Motel Walkthrough",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSczLKHQyOrRS0uQuo1cF87sSB_IH9R5nhP1dgDaFL5yF9HxmwaNTvAXPCUnj0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjrUv5vfIM36kxOJDii_T06O4j_IjfUP2KuosItC8URIJ9Olf-emyCWLNnIGs"
         },
         {
-          "url": "https://kotaku.com/why-rockstar-games-includes-bigfoot-and-ufos-to-find-in-its-big-open-world-games-we-love-that-stuff-2000758423",
-          "title": "Why Rockstar Games Includes Bigfoot And UFOs To Find In Its Big Open-World Games: 'We Love That Stuff'",
-          "publisher": "Kotaku",
+          "url": "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
+          "title": "All GTA 6 Safe Codes for Chapter 2 in Port Gellhorn",
+          "publisher": "VICE",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT11LITutn4a5qrSOYx3e_6luaXB5P_XZsOz_X2NuLi9Lz6lF7uSxOWhw61JHs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs"
         }
       ]
     },
@@ -287,72 +322,37 @@
       ]
     },
     {
-      "query": "jensen ackles",
-      "approx_searches": "100+",
+      "query": "is jimmy de santa in gta 6",
+      "approx_searches": "200+",
       "published_at": "2026-11-21T08:00:00Z",
       "related_news_urls": [
-        "https://bleedingcool.com/tv/the-boys-vought-rising-jensen-ackles-aya-cash-are-heading-to-ccxp/",
-        "https://www.whowhatwear.com/fashion/celebrity/jared-padalecki-guarding-stars-netflix",
-        "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester"
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-niko-bellic/",
+        "https://www.invenglobal.com/articles/28856/78-minutes-after-the-ending-alone-gta-6-credits-by-the-numbers",
+        "https://insider-gaming.com/niko-bellic-gta-6/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEi_y8vgVEi2QtowSLKAt5F2SpzuYuI-UIfRIziVONkcprvEYX1-Z9Qs2HBcU",
-      "image_credit": "Bleeding Cool News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05eoEAIuWDA6hKkX0dki-9SF0Ir5t2Xv4hTspDN1B0cHxOBSJWeFG08oyOKA",
+      "image_credit": "PC Gamer",
       "news": [
         {
-          "url": "https://bleedingcool.com/tv/the-boys-vought-rising-jensen-ackles-aya-cash-are-heading-to-ccxp/",
-          "title": "The Boys: Vought Rising: Jensen Ackles & Aya Cash Are Heading to CCXP",
-          "publisher": "Bleeding Cool News",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-niko-bellic/",
+          "title": "Is Niko Bellic in GTA 6?",
+          "publisher": "PC Gamer",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEi_y8vgVEi2QtowSLKAt5F2SpzuYuI-UIfRIziVONkcprvEYX1-Z9Qs2HBcU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05eoEAIuWDA6hKkX0dki-9SF0Ir5t2Xv4hTspDN1B0cHxOBSJWeFG08oyOKA"
         },
         {
-          "url": "https://www.whowhatwear.com/fashion/celebrity/jared-padalecki-guarding-stars-netflix",
-          "title": "Jared Padalecki's Latest Role Might Surprise You",
-          "publisher": "Who What Wear",
+          "url": "https://www.invenglobal.com/articles/28856/78-minutes-after-the-ending-alone-gta-6-credits-by-the-numbers",
+          "title": "78 Minutes After the Ending Alone: GTA6 Credits by the Numbers",
+          "publisher": "Inven Global",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB8dCI8pjIPZuoZQquOzlaZa0D5BYet-dKSYrooVfSGTw_M4SI4AH7x-cp4Lw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM1l-LNtSLte44cLqLSdr00a6fJTCqOAQE2e1yCpmQDy_6cFnPhE8SQ1OW_y0"
         },
         {
-          "url": "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester",
-          "title": "Guarding Stars review – Leighton Meester is a delight in fizzy Netflix holiday romance",
-          "publisher": "The Guardian",
+          "url": "https://insider-gaming.com/niko-bellic-gta-6/",
+          "title": "Is Niko Bellic in GTA 6?",
+          "publisher": "Insider Gaming",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtFzEQaSek1kon_OBea3Kv5i_PFLXowRj2MWtH56hdYgvMdkUIzAJZDJPvhPg"
-        }
-      ]
-    },
-    {
-      "query": "quentin tarantino",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T07:50:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/movies/story/2026-11-19/david-fincher-further-mis-adventures-cliff-booth-holiday-preview-2026",
-        "https://variety.com/2026/film/reviews/the-further-mis-adventures-of-cliff-booth-review-brad-pitt-1236952037/",
-        "https://deadline.com/2026/11/david-fincher-defends-ai-cliff-booth-criticism-1237230711/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7eRqiY5AiIIIQ1PM1FtmyqOWkuUVEPesmsXEBhdiZMITtrA7OyrSlLnO678M",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/movies/story/2026-11-19/david-fincher-further-mis-adventures-cliff-booth-holiday-preview-2026",
-          "title": "David Fincher got to make his own Tarantino movie. First he needed to find himself in it",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7eRqiY5AiIIIQ1PM1FtmyqOWkuUVEPesmsXEBhdiZMITtrA7OyrSlLnO678M"
-        },
-        {
-          "url": "https://variety.com/2026/film/reviews/the-further-mis-adventures-of-cliff-booth-review-brad-pitt-1236952037/",
-          "title": "'The Further Mis-Adventures of Cliff Booth' Review: Very Fun Hangout",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
-        },
-        {
-          "url": "https://deadline.com/2026/11/david-fincher-defends-ai-cliff-booth-criticism-1237230711/",
-          "title": "David Fincher Defends Use Of AI Amid ‘Cliff Booth’ Criticism: “Well, It Exists. Should We Not Use It?”",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNQ66EcSOykrrJMgd0rG8gtzDw5M69ij1weNe5V51hrY_vNtb59XsdP-CoIiA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWt7Vg3QTmmYMS_9T57-mq5snAKolEPe-20t3cfkRgH5rSyRTjwqOaTtWGNXU"
         }
       ]
     }
