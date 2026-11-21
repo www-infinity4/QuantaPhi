@@ -99,3 +99,31 @@ test('two further owner video URLs become distinct Public/Media Quick Cards with
     assert.equal(departmentFor(c),'media');
   }
 });
+
+
+test('two new November 21 owner YouTube links each register one source-backed public Media card',()=>{
+  for(const id of ['2SmFV8-IXC4','y7kPyfpiIME']){
+    const sources=REVIEWED_OWNER_VIDEO_LINKS.filter(row=>row.videoId===id);
+    assert.equal(sources.length,1,'Exactly one reviewed source link '+id);
+    const video=sources[0];
+    assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+    assert.equal(video.observedAt,'2026-11-21');
+    assert.match(video.title,/title unverified/i);
+    assert.equal(video.titleVerified,false);
+    assert.equal(video.publisherVerified,false);
+    assert.equal(video.publishedAt,null);
+    assert.equal(video.contentBoundary,'general-media');
+    assert.equal(validateOwnerYouTubeLink(video),true);
+    assert.equal(validateOwnerYouTubeLink({...video,sourceUrl:'https://youtube.com.evil.test/watch?v='+id}),false);
+    assert.equal(validateOwnerYouTubeLink({...video,publisherVerified:true}),false);
+    const card=REVIEWED_OWNER_VIDEO_CARDS.find(row=>row.reviewedYouTubeVideoId===id);
+    assert.ok(card,'Public Quick Card exists for '+id);
+    assert.equal(card.featureUrl,video.sourceUrl);
+    assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+    assert.match(card.details,/not independently verified/i);
+    assert.ok(validSourceCard(card)&&isPublicSourceCard(card));
+    assert.equal(findSourceCard(card.id)?.id,card.id);
+    assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
+    assert.equal(departmentFor(card),'media');
+  }
+});
