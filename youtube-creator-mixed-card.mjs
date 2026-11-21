@@ -1,4 +1,5 @@
 import {CREATOR_CHANNELS,parseCreatorInput,mixCreatorVideos,pageCreatorVideos,validCreatorVideo} from './youtube-creator-mixed-core.mjs';
+import {REVIEWED_OWNER_VIDEO_LINKS} from './youtube-owner-video-links.mjs';
 
 /* One original Oracle media Quick Card; only the selected video is embedded.
  * Browsing and personal additions are local; no provider login or media rehost. */
@@ -17,10 +18,11 @@ const savedUrls=()=>{
 export function mountMixedCreatorCard(root,card){
  if(!root||card?.youtubeMixedFeed!==true)return false;
  const dedicatedChannel=CREATOR_CHANNELS.find(c=>c.key===card.initialCreatorChannel)||null;
+ const ownerView=card.initialCreatorChannel==='owner';
  const panel=el('section','qcx-tool youtube-creator-mixed-card');
- panel.setAttribute('aria-label',dedicatedChannel?dedicatedChannel.name+' full channel YouTube videos':'GANA Tribe, AbbeCAdventures, Julie Deru, Samirah Ann and LANDing Autism mixed YouTube video feed');
- const title=el('h3','',dedicatedChannel?dedicatedChannel.name+' · Full channel Quick Card':'YouTube creator mix · GANA Tribe / Abbe / Julie / Samirah / LANDing Autism');
- const info=el('p','qcx-note',dedicatedChannel?'Original channel link, six reviewed videos and recent uploads. Search or load more; the full historical archive stays on YouTube.':'Recent videos from YouTube’s official public upload feeds, plus reviewed and personally added links. Full history, Shorts and Community posts may not be present.');
+ panel.setAttribute('aria-label',ownerView?'More owner-submitted videos and original creator uploads':dedicatedChannel?dedicatedChannel.name+' full channel YouTube videos':'GANA Tribe, AbbeCAdventures, Julie Deru, Samirah Ann and LANDing Autism mixed YouTube video feed');
+ const title=el('h3','',ownerView?'View more videos · owner links + verified creators':dedicatedChannel?dedicatedChannel.name+' · Full channel Quick Card':'YouTube creator mix · GANA Tribe / Abbe / Julie / Samirah / LANDing Autism');
+ const info=el('p','qcx-note',ownerView?'Browse more videos you submitted, then switch the channel selector to load verified creators’ recent uploads using YouTube public RSS. These links are not presumed related or from the same uploader. Full channel archives stay on YouTube.':dedicatedChannel?'Original channel link, six reviewed videos and recent uploads. Search or load more; the full historical archive stays on YouTube.':'Recent videos from YouTube’s official public upload feeds, plus reviewed and personally added links. Full history, Shorts and Community posts may not be present.');
  const status=el('p','qcx-note','Loading available public uploads…');
  status.setAttribute('role','status');
  const controls=el('div','qcx-mix-controls');
@@ -39,7 +41,7 @@ export function mountMixedCreatorCard(root,card){
  panel.append(title,info,controls,status,feed,more,add,addStatus,channelsBox);
  root.append(panel);
 
- let saved=savedUrls(),visible=BATCH,filter=dedicatedChannel?.key||'all',query='',busy=false;
+ let saved=savedUrls(),visible=BATCH,filter=ownerView?'owner':dedicatedChannel?.key||'all',query='',busy=false;
  const live=new Map();
  const channels=()=>{
   const found=[...CREATOR_CHANNELS];
@@ -53,26 +55,34 @@ export function mountMixedCreatorCard(root,card){
   return found;
  };
  const titleFor=(item,chs)=>item.channelId==='saved'?'Your added YouTube link':
+  item.channelId==='owner'?'Owner-submitted video · channel unverified':
   chs.find(c=>c.key===item.channelId)?.name||'YouTube publisher';
  function getRows(chs){
   const rows=[];
+  // Preserve a separate owner-only view without claiming verified uploader IDs.
+  const owner=REVIEWED_OWNER_VIDEO_LINKS.map(v=>({
+   channelId:'owner',videoId:v.videoId,sourceUrl:v.sourceUrl,
+   title:v.title,publishedAt:null,origin:'owner'
+  }));
+  if(filter==='owner')rows.push(...owner);
   for(const channel of chs){
    const current=live.get(channel.key)||[];
    // New RSS records take priority over older reviewed snapshots on duplicate IDs.
    rows.push(...current,...channel.seed.map(v=>({...v,channelId:channel.key})));
   }
+  if(filter!=='owner')rows.push(...owner);
   for(const raw of saved){
    const p=parseCreatorInput(raw);
    if(p?.type==='video')rows.push({channelId:'saved',videoId:p.videoId,
     sourceUrl:'https://www.youtube.com/watch?v='+p.videoId,
     title:'Your added video · '+p.videoId,publishedAt:null,origin:'personal'});
   }
-  const mixed=mixCreatorVideos(rows,[...chs.map(c=>c.key),'saved']);
+  const mixed=mixCreatorVideos(rows,[...chs.map(c=>c.key),'owner','saved']);
   return mixed.filter(v=>(filter==='all'||filter===v.channelId)&&
    (!query||[v.title,titleFor(v,chs)].join(' ').toLocaleLowerCase().includes(query)));
  }
  function setChannelFilter(chs){
-  const options=[{id:'all',name:'All channels'},...chs.map(c=>({id:c.key,name:c.name}))];
+  const options=[{id:'all',name:'All channels'},{id:'owner',name:'Owner-submitted videos'},...chs.map(c=>({id:c.key,name:c.name}))];
   if(saved.some(raw=>parseCreatorInput(raw)?.type==='video'))options.push({id:'saved',name:'Added videos'});
   if(!options.some(x=>x.id===filter))filter='all';
   select.replaceChildren(...options.map(x=>{const option=el('option','',x.name);option.value=x.id;return option}));
@@ -104,7 +114,8 @@ export function mountMixedCreatorCard(root,card){
    const heading=el('h4','',video.title);
    const original=el('p','qcx-note',titleFor(video,chs)+' · '+
     (video.origin==='rss'&&video.publishedAt?'YouTube published '+new Date(video.publishedAt).toLocaleDateString():
-      video.origin==='personal'?'owner-added link, publisher/title unverified':'reviewed public link, date unverified'));
+      video.origin==='personal'?'owner-added link, publisher/title unverified':
+      video.origin==='owner'?'owner source link, uploader/date not confirmed':'reviewed public link, date unverified'));
    const actions=el('div','qcx-controls'),playback=el('div','qcx-player');
    const stop=button('Stop playback',()=>{
     stopPlayer();playback.replaceChildren();stop.hidden=true;
