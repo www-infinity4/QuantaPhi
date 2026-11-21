@@ -5,6 +5,8 @@ on:
       - 'creator-post-*.mjs'
       - 'youtube-creator-*.mjs'
       - 'julie-deru-catalog.mjs'
+      - 'milky-mama-maria-catalog.mjs'
+      - 'test/milky-mama-maria-quick-cards.test.mjs'
       - 'test/julie-deru-quick-cards.test.mjs'
       - 'family-parenting-tv*.mjs'
       - 'workers/family-parenting-tv/**'
@@ -25,6 +27,8 @@ on:
       - 'creator-post-*.mjs'
       - 'youtube-creator-*.mjs'
       - 'julie-deru-catalog.mjs'
+      - 'milky-mama-maria-catalog.mjs'
+      - 'test/milky-mama-maria-quick-cards.test.mjs'
       - 'test/julie-deru-quick-cards.test.mjs'
       - 'family-parenting-tv*.mjs'
       - 'workers/family-parenting-tv/**'
@@ -54,11 +58,12 @@ jobs:
           node --check youtube-creator-catalog.mjs
           node --check youtube-creator-cards.mjs
           node --check julie-deru-catalog.mjs
+          node --check milky-mama-maria-catalog.mjs
           node --check family-parenting-tv-core.mjs
           node --check family-parenting-tv-card.mjs
           node --check workers/family-parenting-tv/worker.mjs
       - name: Verify database, placement and source integration
-        run: node --test test/family-parenting-tv.test.mjs test/youtube-creator-quick-cards.test.mjs test/julie-deru-quick-cards.test.mjs test/creator-posts.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/oracle-placement-engine.test.mjs test/oracle-feed-persistence.test.mjs test/cardone-offer.test.cjs test/unfinished-ledger.test.mjs
+        run: node --test test/family-parenting-tv.test.mjs test/youtube-creator-quick-cards.test.mjs test/julie-deru-quick-cards.test.mjs test/milky-mama-maria-quick-cards.test.mjs test/creator-posts.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/oracle-placement-engine.test.mjs test/oracle-feed-persistence.test.mjs test/cardone-offer.test.cjs test/unfinished-ledger.test.mjs
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
