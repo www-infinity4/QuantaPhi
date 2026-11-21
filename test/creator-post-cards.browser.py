@@ -227,6 +227,38 @@ def run():
                 assert page.locator('#oracleCardChooser option[value="source-'+reviewed_id+'"]').count()==1
                 checks.append(f'{width}px: owner video as its own public Oracle source card, opt-in player and Stop')
 
+                # Mixed YouTube creators: paged source-backed cards, owner additions,
+                # opt-in single YouTube frame, saved links, media department.
+                page.goto(base+'/source-quick-card.html?card=youtube-creator-mix',wait_until='domcontentloaded')
+                mix=page.locator('.youtube-creator-mixed-card')
+                expect(mix).to_be_visible()
+                expect(mix.locator('.qcx-mix-entry')).to_have_count(6)
+                expect(mix.locator('iframe')).to_have_count(0)
+                mix.get_by_role('button',name='Load more videos').click()
+                assert mix.locator('.qcx-mix-entry').count()>=7, 'Load More should paginate inspected uploads'
+                mix.get_by_role('searchbox',name='Search loaded creator videos').fill('ice cream')
+                expect(mix.locator('.qcx-mix-entry')).to_have_count(1)
+                expect(mix).to_contain_text('Everyone Needed Mama')
+                mix.get_by_role('button',name='Play in card').click()
+                expect(mix.locator('iframe')).to_have_attribute('src','https://www.youtube-nocookie.com/embed/OqRb8RKNgQQ')
+                mix.get_by_role('button',name='Stop playback').click()
+                expect(mix.locator('iframe')).to_have_count(0)
+                mix.get_by_role('searchbox',name='Search loaded creator videos').fill('')
+                mix.get_by_role('textbox',name='Add channel or video').fill('https://youtu.be/O4LxiKwh6E0')
+                mix.get_by_role('button',name='Add channel or video').click()
+                mix.get_by_role('combobox',name='Filter by video channel').select_option('saved')
+                expect(mix.locator('.qcx-mix-entry')).to_have_count(1)
+                expect(mix.locator('.qcx-mix-entry')).to_contain_text('O4LxiKwh6E0')
+                page.reload(wait_until='domcontentloaded')
+                mix=page.locator('.youtube-creator-mixed-card')
+                mix.get_by_role('combobox',name='Filter by video channel').select_option('saved')
+                expect(mix.locator('.qcx-mix-entry')).to_have_count(1)
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Mixed YouTube overflow'
+                page.goto(base+'/?card=youtube-creator-mix',wait_until='domcontentloaded')
+                expect(page.locator('#oracleCardStage [data-source-id="youtube-creator-mix"] .youtube-creator-mixed-card')).to_be_visible(timeout=20000)
+                assert page.locator('#oracleCardChooser option[value="source-youtube-creator-mix"]').count()==1
+                checks.append(f'{width}px: 3-channel creator mix, Load More, single player, saved owner link, Oracle/media and no overflow')
+
                 context.close()
             browser.close()
     finally:
