@@ -3,356 +3,330 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T05:01:28.892241Z",
+  "checked_at": "2026-11-21T05:31:11.597378Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "dylan raiola",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T04:40:00Z",
+      "query": "arnold schwarzenegger",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T05:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/latest-injury-news-oregon-qb-004956642.html",
-        "https://www.si.com/college/oregon/football/dan-lanning-doubles-down-dante-moore-status-oregon-ducks-turnaround",
-        "https://clutchpoints.com/ncaa-football/oregon-football-news-could-dante-moore-return-cfp-dan-lanning-weighs-in"
+        "https://www.broadwayworld.com/bwwtv/article/Chris-Pratt-Recalls-Lying-to-Jimmy-Buffett-and-Arnolds-Santa-Portrait-20261119",
+        "https://www.whiskeyriff.com/2026/11/20/the-terminal-list-star-chris-pratt-proved-his-90s-country-cred-to-garth-brooks-failed-jimmy-buffett/",
+        "https://www.momtastic.com/celebrities/827276-arnold-schwarzenegger-grandkids-dad-chris-pratt-santa-christmas-portrait/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8bM-B9cuynuhXEZdnFnCFIBmux7hnHen1KmbWwpGDW3JdKNrbiMSrYCJ-Ml4",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQlt0MmGqxUK1f9H-NAj99oeogTrzipvoSwSihDaWsMICVwnvfAqSF6KF6Bco",
+      "image_credit": "BroadwayWorld",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/latest-injury-news-oregon-qb-004956642.html",
-          "title": "Latest Injury News on Oregon QB Dante Moore Before Playoff Push",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.broadwayworld.com/bwwtv/article/Chris-Pratt-Recalls-Lying-to-Jimmy-Buffett-and-Arnolds-Santa-Portrait-20261119",
+          "title": "Chris Pratt Recalls Lying to Jimmy Buffett and Arnold's Santa Portrait",
+          "publisher": "BroadwayWorld",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8bM-B9cuynuhXEZdnFnCFIBmux7hnHen1KmbWwpGDW3JdKNrbiMSrYCJ-Ml4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQlt0MmGqxUK1f9H-NAj99oeogTrzipvoSwSihDaWsMICVwnvfAqSF6KF6Bco"
         },
         {
-          "url": "https://www.si.com/college/oregon/football/dan-lanning-doubles-down-dante-moore-status-oregon-ducks-turnaround",
-          "title": "Dan Lanning Doubles Down on Dante Moore's Status Amid Oregon's Turnaround",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.whiskeyriff.com/2026/11/20/the-terminal-list-star-chris-pratt-proved-his-90s-country-cred-to-garth-brooks-failed-jimmy-buffett/",
+          "title": "‘The Terminal List’ Star, Chris Pratt, Proved His ’90s Country Cred to Garth Brooks (& Failed Jimmy Buffett)",
+          "publisher": "Whiskey Riff",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJpDUaCnxIqrOB6vpo9uyAt0fOpkUon9GHksOjkKRA35G_tbhau5YDpps_4_k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV9KNFiSl4x5iVsZRrrBlTY-oC12u-mCP2Rb1O9aEvtt5OsSzoCfVK5tok-Ow"
         },
         {
-          "url": "https://clutchpoints.com/ncaa-football/oregon-football-news-could-dante-moore-return-cfp-dan-lanning-weighs-in",
-          "title": "Could Oregon’s Dante Moore return for CFP? Dan Lanning weighs in",
-          "publisher": "ClutchPoints",
+          "url": "https://www.momtastic.com/celebrities/827276-arnold-schwarzenegger-grandkids-dad-chris-pratt-santa-christmas-portrait/",
+          "title": "Arnold Schwarzenegger Finds a Very Personal Way To Play Santa for Grandkids",
+          "publisher": "Momtastic",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNU2mvQsHlqZuqpOYh49CgK5-A1DxyBAOLl1ol56Lo2ExElVZCjpk4pe71MMA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF8duAerj8JGpqgNjr4yxGadkSpCW2OI8MhJIs1T3lXaqVs-kxeaFZPGBZsW8"
         }
       ]
     },
     {
-      "query": "lewis hamilton",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T04:40:00Z",
+      "query": "taylor kinney",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T05:10:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/sport/2026/nov/20/lewis-hamilton-formula-one-activism-gaza",
-        "https://www.inkl.com/news/lewis-hamilton-is-now-the-apex-sports-protester-as-us-athletes-stay-silent",
-        "https://hapakenya.com/?p=187745"
+        "https://www.nbc.com/nbc-insider/what-happened-to-severide-burke-chicago-fire",
+        "https://www.imdb.com/news/ni66118828/?ref_=nmnw_art_perm",
+        "https://onechicagocenter.com/chicago-fire-sidelined-best-character-but-show-good-reason"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeNJ6fYV66IXrAXPo-4fxo05qQmEWV3agnmVR24w1t8FaGvamip61zLM95nI0",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCyOeZH1ri_xlxumKMcEoj2_sovuHDQkwpW6YRmYyk1Soggy6HqT5eT7rG92k",
+      "image_credit": "NBC TV",
       "news": [
         {
-          "url": "https://www.theguardian.com/sport/2026/nov/20/lewis-hamilton-formula-one-activism-gaza",
-          "title": "Lewis Hamilton is now the apex sports protester as US athletes stay silent",
+          "url": "https://www.nbc.com/nbc-insider/what-happened-to-severide-burke-chicago-fire",
+          "title": "What Happened to Severide and Burke on Chicago Fire? Why They're Missing",
+          "publisher": "NBC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCyOeZH1ri_xlxumKMcEoj2_sovuHDQkwpW6YRmYyk1Soggy6HqT5eT7rG92k"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66118828/?ref_=nmnw_art_perm",
+          "title": "Is Kelly Severide Leaving ‘Chicago Fire’? What Happened to Taylor Kinney’s Character",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT46Svirgwg9VmA8edDDI15QT_-XvC6eiqtAJLw9uu93vI94wgDVigXUi9LQpw"
+        },
+        {
+          "url": "https://onechicagocenter.com/chicago-fire-sidelined-best-character-but-show-good-reason",
+          "title": "Chicago Fire sidelined its best character, but at least the show had a good reason",
+          "publisher": "One Chicago Center",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_eUAoOoohiNKsOR5ak4Txy3X-k2i9IY2YGEfZU6MxMJKHDCGPRsAM-3i2ucA"
+        }
+      ]
+    },
+    {
+      "query": "donnie gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T05:10:00Z",
+      "related_news_urls": [
+        "https://www.polygon.com/gta-6-drug-system-mechanics-coke-npc-generation-rockstar/",
+        "https://www.gamesradar.com/games/grand-theft-auto/gta-6-save-donnie/",
+        "https://insider-gaming.com/how-to-take-drugs-in-gta-6/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOmBVpC4ZXllYGhmZo8KkKGklQeGptFrRLLkaoCmm6VFVUwwfhz6hA8-v5dzo",
+      "image_credit": "Polygon.com",
+      "news": [
+        {
+          "url": "https://www.polygon.com/gta-6-drug-system-mechanics-coke-npc-generation-rockstar/",
+          "title": "GTA 6's Hidden Drug System Is Surprisingly Deep",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOmBVpC4ZXllYGhmZo8KkKGklQeGptFrRLLkaoCmm6VFVUwwfhz6hA8-v5dzo"
+        },
+        {
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-save-donnie/",
+          "title": "Can you save Donnie in GTA 6?",
+          "publisher": "GamesRadar+",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSz8CZyJwl1yKGyC826MzGVppS3BZSFXD01d8e4CSgjqocpXn-5CjKforgJsso"
+        },
+        {
+          "url": "https://insider-gaming.com/how-to-take-drugs-in-gta-6/",
+          "title": "How to Take Drugs in Grand Theft Auto 6? Where to Find Drugs, Explained",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMWOASf51TM5WgojO61zb3bDIQqnekzbLpfSazw_kfZo7rPx1aK4M95M0vUGI"
+        }
+      ]
+    },
+    {
+      "query": "emirates",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T05:10:00Z",
+      "related_news_urls": [
+        "https://gulfnews.com/business/aviation/emirates-opens-new-first-class-lounge-at-dubai-airport-as-dh400-million-makeover-begins-1.500753456",
+        "https://livefromalounge.com/emirates-commits-to-a-new-era-of-first-class-lounges-with-aed-400-million-commitment/",
+        "https://www.voyages-d-affaires.com/en/emirates-first-class-lounge-at-dubai-airport/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhX9kJei_N2ppqtgBqc_-Ji2Kxi01GwxJ9YR2LKCDF0W8ktgaiv_187PVyvxw",
+      "image_credit": "Gulf News",
+      "news": [
+        {
+          "url": "https://gulfnews.com/business/aviation/emirates-opens-new-first-class-lounge-at-dubai-airport-as-dh400-million-makeover-begins-1.500753456",
+          "title": "Emirates opens new First Class Lounge at Dubai Airport as Dh400 million makeover begins",
+          "publisher": "Gulf News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhX9kJei_N2ppqtgBqc_-Ji2Kxi01GwxJ9YR2LKCDF0W8ktgaiv_187PVyvxw"
+        },
+        {
+          "url": "https://livefromalounge.com/emirates-commits-to-a-new-era-of-first-class-lounges-with-aed-400-million-commitment/",
+          "title": "Emirates commits to a new era of First Class Lounges with AED 400 million commitment",
+          "publisher": "Live From A Lounge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1y7m4fJlTzfdomV9vNJdP-PPLz-o-lCMd4b5TNeY5F_k8HZ-ZjWWWOB0jrJA"
+        },
+        {
+          "url": "https://www.voyages-d-affaires.com/en/emirates-first-class-lounge-at-dubai-airport/",
+          "title": "Emirates opens a temporary Première Classe lounge at Dubai Airport",
+          "publisher": "Voyages d'affaires",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4QDmdPuNR6-yUp12wvBDUZWKDUb3WmaTUw2p0J5-4LM7yY4BMohHKt6Fjsw8"
+        }
+      ]
+    },
+    {
+      "query": "jessica chastain",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T05:00:00Z",
+      "related_news_urls": [
+        "https://www.netflix.com/tudum/articles/top-10-november-9-2026",
+        "https://www.wsj.com/arts-culture/television/heartland-review-jessica-chastains-country-music-mystery-10b5e33f",
+        "https://collider.com/netflix-thriller-heartland-streaming-success-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7IVhf1A3iOPMWOZw4YnX5m4YFqowJyMcMA8cSynqPD5rjztz7Zy1UC3v7MRM",
+      "image_credit": "Netflix",
+      "news": [
+        {
+          "url": "https://www.netflix.com/tudum/articles/top-10-november-9-2026",
+          "title": "Heartland Hunts Down the No. 1 Spot in This Week’s Top 10",
+          "publisher": "Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7IVhf1A3iOPMWOZw4YnX5m4YFqowJyMcMA8cSynqPD5rjztz7Zy1UC3v7MRM"
+        },
+        {
+          "url": "https://www.wsj.com/arts-culture/television/heartland-review-jessica-chastains-country-music-mystery-10b5e33f",
+          "title": "‘Heartland’ Review: Jessica Chastain’s Country-Music Mystery",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiIZ5S6YsRnLAeGQnTyAkH0aMTgi783udA8qAcO05PMJJib6KEpgmG1fQX-VA"
+        },
+        {
+          "url": "https://collider.com/netflix-thriller-heartland-streaming-success-november-2026/",
+          "title": "Netflix’s New ‘Yellowstone’ Replacement Is Officially a No. 1 Streaming Hit",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXf9O4LURUkhfgVOUi2ECMOYaIhP3cFd3lE6V-od9dAtzyTbH3MELVOYyAQ7E"
+        }
+      ]
+    },
+    {
+      "query": "tourist trap gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T05:00:00Z",
+      "related_news_urls": [
+        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-tourist-trap-mission-walkthrough",
+        "https://www.videogameschronicle.com/guide/gta-6-tourist-trap-mission-walkthrough/",
+        "https://www.eurogamer.net/gta-6-tourist-trap-walkthrough"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A",
+      "image_credit": "Mobalytics",
+      "news": [
+        {
+          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-tourist-trap-mission-walkthrough",
+          "title": "'Tourist Trap' Mission Walkthrough Guide - GTA 6",
+          "publisher": "Mobalytics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A"
+        },
+        {
+          "url": "https://www.videogameschronicle.com/guide/gta-6-tourist-trap-mission-walkthrough/",
+          "title": "GTA 6 Tourist Trap Mission Walkthrough",
+          "publisher": "Video Games Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8q658zKXig81NSMJVY0MSSsWGE4Ukg-5dFPLvqCJFoRvdNjM7jzgDMv6_sk"
+        },
+        {
+          "url": "https://www.eurogamer.net/gta-6-tourist-trap-walkthrough",
+          "title": "GTA 6 Tourist Trap walkthrough",
+          "publisher": "Eurogamer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiXNBrJjVf5bFhFw5d09WRiq4PdAgu6tNxpCIZfYIY3LmjPfFWrnETUEIUdZk"
+        }
+      ]
+    },
+    {
+      "query": "andrew tate",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T05:00:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/andrew-tate-toxic-empire-hbo-lauren-southern-rape-sex-trafficking-1236952871/",
+        "https://thoughtcatalog.com/jeremy-london/2026/11/lauren-southern-says-her-girl-against-feminism-image-made-it-feel-impossible-to-speak-after-she-alleges-andrew-tate-raped-her/",
+        "https://www.imdb.com/fr-ca/news/ni66119095/?ref_=nm_nwr_1"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQafsx6DLtM_kdzbGOQrrk2dkCV68SHHV3zL0gBJDwxkanaSea4XTLucw749FM",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/andrew-tate-toxic-empire-hbo-lauren-southern-rape-sex-trafficking-1236952871/",
+          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQafsx6DLtM_kdzbGOQrrk2dkCV68SHHV3zL0gBJDwxkanaSea4XTLucw749FM"
+        },
+        {
+          "url": "https://thoughtcatalog.com/jeremy-london/2026/11/lauren-southern-says-her-girl-against-feminism-image-made-it-feel-impossible-to-speak-after-she-alleges-andrew-tate-raped-her/",
+          "title": "Lauren Southern Says Her ‘Girl Against Feminism’ Image Made It Feel Impossible to Speak After She Alleges Andrew Tate Raped Her",
+          "publisher": "Thought Catalog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzJfeiZK0w9s08YLDwqAvztM60fE0trsd4nzjNjkO0Ha4ev9e6OrEdr_CaUrA"
+        },
+        {
+          "url": "https://www.imdb.com/fr-ca/news/ni66119095/?ref_=nm_nwr_1",
+          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYAaK1dc05mG8Rqc5ngWJNt4Dmps3lwBLPi-apkABtkQ3qgZUMEJIwYYpktxA"
+        }
+      ]
+    },
+    {
+      "query": "sacramento kings vs lakers timeline",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T04:50:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "jamal murray",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T04:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/jamal-murray-keeping-nuggets-title-190004791.html",
+        "https://bvmsports.com/2026/11/13/the-denver-nuggets-best-player-right-now-is-not-nikola-jokic/",
+        "https://www.denvergazette.com/2026/11/18/jamal-murray-nikola-jokics-unique-spot-in-hoop-history-nba-insider/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJTAbxrzLof8Yz2JfnoNvvGjgoNKaxJFr-4eL3MrKYhtTCP2TELkUVl7wOUzU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/jamal-murray-keeping-nuggets-title-190004791.html",
+          "title": "Jamal Murray is keeping the Nuggets' title hopes alive but he needs more help",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJTAbxrzLof8Yz2JfnoNvvGjgoNKaxJFr-4eL3MrKYhtTCP2TELkUVl7wOUzU"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/13/the-denver-nuggets-best-player-right-now-is-not-nikola-jokic/",
+          "title": "The Denver Nuggets best player right now is not Nikola Jokic",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9Iiwsc-Pcg45asfTDkG1PvCA2in5J8MpsB0--NBSqpsaKAFec9OyKIfjB1yE"
+        },
+        {
+          "url": "https://www.denvergazette.com/2026/11/18/jamal-murray-nikola-jokics-unique-spot-in-hoop-history-nba-insider/",
+          "title": "Jamal Murray, Nikola Jokic’s unique spot in hoop history | NBA Insider",
+          "publisher": "Denver Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkyhCo0rIBHsCjYT8uAcl-xeqtqbf9qJaV5BgdHIEyLdEpcwWwF_RzellyZ-Q"
+        }
+      ]
+    },
+    {
+      "query": "colin farrell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T04:50:00Z",
+      "related_news_urls": [
+        "https://www.prnewswire.com/news-releases/eddie-vedder-hozier-tom-holland-and-colin-farrell-help-raise-over-3-million-for-eb-research-partnership-at-new-york-gala-302947215.html",
+        "https://www.citybiz.co/article/937112/eddie-vedder-hozier-and-celebrity-supporters-help-raise-over-3-million-for-eb-research/",
+        "https://www.theguardian.com/tv-and-radio/2026/nov/20/the-seven-best-films-to-watch-on-tv-this-week"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxYjmywDUZyCEpFz_fXH2x2JaaAJ_X_pACm8G3yulLxU1F4F2LkvGNLca1clg",
+      "image_credit": "PR Newswire",
+      "news": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/eddie-vedder-hozier-tom-holland-and-colin-farrell-help-raise-over-3-million-for-eb-research-partnership-at-new-york-gala-302947215.html",
+          "title": "Eddie Vedder, Hozier, Tom Holland and Colin Farrell Help Raise Over $3 Million for EB Research Partnership at New York Gala",
+          "publisher": "PR Newswire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxYjmywDUZyCEpFz_fXH2x2JaaAJ_X_pACm8G3yulLxU1F4F2LkvGNLca1clg"
+        },
+        {
+          "url": "https://www.citybiz.co/article/937112/eddie-vedder-hozier-and-celebrity-supporters-help-raise-over-3-million-for-eb-research/",
+          "title": "Eddie Vedder, Hozier and Celebrity Supporters Help Raise Over $3 Million for EB Research",
+          "publisher": "citybiz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRo1z-XNZ-Ex30YxzBuEHWIZGLy8Pcy8p-ItuQaL1frKwdUpbVsgwyXLU6ZIz4"
+        },
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/20/the-seven-best-films-to-watch-on-tv-this-week",
+          "title": "The Slightest Touch to California Schemin’: the seven best films to watch on TV this week",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeNJ6fYV66IXrAXPo-4fxo05qQmEWV3agnmVR24w1t8FaGvamip61zLM95nI0"
-        },
-        {
-          "url": "https://www.inkl.com/news/lewis-hamilton-is-now-the-apex-sports-protester-as-us-athletes-stay-silent",
-          "title": "Lewis Hamilton is now the apex sports protester as US athletes stay silent",
-          "publisher": "inkl",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVlyjfJMNIqlX_1B2Uaih9QGmIndWi37gj0dst-3_ZuJfkKBV_DDTFdEJiYZI"
-        },
-        {
-          "url": "https://hapakenya.com/?p=187745",
-          "title": "Lewis Hamilton calls on Israel to open Gaza aid routes after Rafah border visit",
-          "publisher": "HapaKenya -",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJMXphWfHAia6lONja6fbMP2CnNUPNfHA0pZ6TLa8AM038w3pPwcAwUfp6yBA"
-        }
-      ]
-    },
-    {
-      "query": "rocket launch today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T04:40:00Z",
-      "related_news_urls": [
-        "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/",
-        "https://www.spacex.com/launches/nrol136",
-        "https://finance.yahoo.com/markets/stocks/articles/dear-spacex-stock-fans-mark-212821252.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS82m-QvimTiyhzf4NPHVkQfVB3Xprrwg25bolLo-I00zpwXlMz9AzHqjFCBMw",
-      "image_credit": "Spaceflight Now",
-      "news": [
-        {
-          "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/",
-          "title": "SpaceX launches classified payload for the U.S. Space Force",
-          "publisher": "Spaceflight Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS82m-QvimTiyhzf4NPHVkQfVB3Xprrwg25bolLo-I00zpwXlMz9AzHqjFCBMw"
-        },
-        {
-          "url": "https://www.spacex.com/launches/nrol136",
-          "title": "NROL-136 Mission",
-          "publisher": "SpaceX",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa0hSt1koFT9HYqzkIzpATIqP0GQcgaAw9HrLcKRSP_Pi4zDMn-0BXkN7Gr8w"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dear-spacex-stock-fans-mark-212821252.html",
-          "title": "Dear SpaceX Stock Fans, Mark Your Calendars for November 19",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSz28bv5i4M2NQqO9aAWPqXqewF4ORUrl9WFoLE5EnYp-k3tqlfkfFiQkAf-iw"
-        }
-      ]
-    },
-    {
-      "query": "high school football playoffs",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T04:40:00Z",
-      "related_news_urls": [
-        "https://www.al.com/highschoolsports/2026/11/alabama-high-school-playoff-predictions-who-wins-in-round-3.html",
-        "https://sports.yahoo.com/articles/alabama-high-school-football-montgomery-230044777.html",
-        "https://www.fox10tv.com/2026/11/20/big-friday-kickoff-playoffs-round-3/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEFE3DYO2jtFT4MVXXihi9zuapiLRn-RDF4rAlrA73DZLVSk7NxPKhSd1_UXc",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/highschoolsports/2026/11/alabama-high-school-playoff-predictions-who-wins-in-round-3.html",
-          "title": "Alabama high school playoff predictions: Who wins in Round 3?",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEFE3DYO2jtFT4MVXXihi9zuapiLRn-RDF4rAlrA73DZLVSk7NxPKhSd1_UXc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/alabama-high-school-football-montgomery-230044777.html",
-          "title": "Alabama high school football Montgomery-area Round 3 playoff scores",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcf6mgcasIwCNEz9-uBvreg04s-l_oWhTHOVZLTmaqqHA0JA2JHGlP8lRNLt8"
-        },
-        {
-          "url": "https://www.fox10tv.com/2026/11/20/big-friday-kickoff-playoffs-round-3/",
-          "title": "Big Friday Kickoff: Playoffs Round 3",
-          "publisher": "FOX10 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaltxpOlHOES6BWxUgajoRT7bcMBneN-wifcN8M7wy50-iSCFfJ7F9QOOXCio"
-        }
-      ]
-    },
-    {
-      "query": "elizabeth banks",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T04:40:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/elle-fanning-metallic-purple-hair-hunger-games-sunrise-on-reaping-premiere-after-party-12260190",
-        "https://www.tatlerasia.com/style/fashion/elle-fanning-hunger-games-looks",
-        "https://graziamagazine.com/us/articles/elle-fanning-givenchy-make-up-dress-hunger-games-premiere/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4izNBSDUdv-4U_lnD5HcL6Y_2JrlljjQwJFd0wxrzOS2AmiUyV6kh4FzWi7g",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/elle-fanning-metallic-purple-hair-hunger-games-sunrise-on-reaping-premiere-after-party-12260190",
-          "title": "Elle Fanning Looks Completely Unrecognizable With Her Most Shocking Hair Transformation Yet",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4izNBSDUdv-4U_lnD5HcL6Y_2JrlljjQwJFd0wxrzOS2AmiUyV6kh4FzWi7g"
-        },
-        {
-          "url": "https://www.tatlerasia.com/style/fashion/elle-fanning-hunger-games-looks",
-          "title": "8 Elle Fanning ‘Hunger Games’ looks, ranked by Capitol drama for the ‘Sunrise on the Reaping’ press tour",
-          "publisher": "Tatler Asia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTb_6bMceiVPatl0wYhtzj2Axu92HapHJuhyn4Vu5rGUC7iN-xbWMLcxQNVXg"
-        },
-        {
-          "url": "https://graziamagazine.com/us/articles/elle-fanning-givenchy-make-up-dress-hunger-games-premiere/",
-          "title": "Elle Fanning Just Wore the Most Unexpected Dress of 2026 At the Hunger Games Premiere — Her Latest Red Carpet Look Is Straight Out of Marie Antoinette's Wardrobe",
-          "publisher": "Grazia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9CNapoDMIS49CFgkrqHYQF6YE1RcwTNefVR9OXNkbE_oBvPmztURNudr_rUU"
-        }
-      ]
-    },
-    {
-      "query": "stanley tucci",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T04:40:00Z",
-      "related_news_urls": [
-        "https://www.allrecipes.com/stanley-tucci-christmas-pasta-12262889",
-        "https://www.9news.com/article/entertainment/events/sundance/sundance-gala-boulder-2027/73-9f53e533-5acc-44e0-8af2-89b3c337682c",
-        "https://www.imdb.com/news/ni66110493/?ref_=ttnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD1FnB6XcpNDp24FcwZKTf9xMaYtX4NDu-aOIgmF4DejJMcG25BW4yvLng9gs",
-      "image_credit": "Allrecipes",
-      "news": [
-        {
-          "url": "https://www.allrecipes.com/stanley-tucci-christmas-pasta-12262889",
-          "title": "Stanley Tucci’s 5-Ingredient Christmas Pasta Is My Family’s Favorite, Too",
-          "publisher": "Allrecipes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD1FnB6XcpNDp24FcwZKTf9xMaYtX4NDu-aOIgmF4DejJMcG25BW4yvLng9gs"
-        },
-        {
-          "url": "https://www.9news.com/article/entertainment/events/sundance/sundance-gala-boulder-2027/73-9f53e533-5acc-44e0-8af2-89b3c337682c",
-          "title": "Stanley Tucci hosting inaugural Sundance gala in Boulder",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmXBiFhnhvQugbtKJ6-kWqlSOqK917o4SgwTOZqdgnoBJ-8Xgcb_yMNnbGYJo"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66110493/?ref_=ttnw_art_perm",
-          "title": "Jesse Eisenberg, Gina Prince-Bythewood, Beth de Araújo and Dawn Porter to Be Honored at Sundance Fundraiser Event",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjuQtvAXZ3fdPz1VDfhwn3EVpBztE9EyMgqkxOS2YyzTyDKTxjdqrbgPLkgyY"
-        }
-      ]
-    },
-    {
-      "query": "patrick petty obituary",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T04:30:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66120685/?ref_=nwc_art_perm",
-        "https://www.masslive.com/boston/2026/11/family-speaks-out-about-boston-fashion-icon-who-styled-new-kids-on-the-block-dead-at-62.html",
-        "https://www.cleveland.com/entertainment/2026/11/beloved-tv-star-mourns-heartbreaking-loss-you-were-a-legend.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbqxV4d0IJaQmLSOMdMi8PKk2JZ0258_4Hu0E3h0ddR5lmHi36rvJXQkqnYoM",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66120685/?ref_=nwc_art_perm",
-          "title": "Donnie Wahlberg & Jenny McCarthy Share Heartbreak Over Death of NKotB Stylist Patrick Petty",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbqxV4d0IJaQmLSOMdMi8PKk2JZ0258_4Hu0E3h0ddR5lmHi36rvJXQkqnYoM"
-        },
-        {
-          "url": "https://www.masslive.com/boston/2026/11/family-speaks-out-about-boston-fashion-icon-who-styled-new-kids-on-the-block-dead-at-62.html",
-          "title": "Boston fashion icon and New Kids on the Block stylist dies at 62. ‘He always showed up,’ daughter says",
-          "publisher": "MassLive",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJACTxmbl7RlItGMWDBZLFq3Pmm2hK5fzdRUiiKWPofy_KgIq6C_BOUOzZHtY"
-        },
-        {
-          "url": "https://www.cleveland.com/entertainment/2026/11/beloved-tv-star-mourns-heartbreaking-loss-you-were-a-legend.html",
-          "title": "Beloved TV star mourns heartbreaking loss: ‘You were a legend’",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_Qfjp_kr5HwE2HVE_Ub4T_4Vbr32SDeV_HlcxY55XSfmox9da3A3cA9PNHU"
-        }
-      ]
-    },
-    {
-      "query": "kim kardashian",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T04:30:00Z",
-      "related_news_urls": [
-        "https://ew.com/kim-kardashian-doubles-down-moon-landing-fake-in-front-of-scientist-12265630",
-        "https://people.com/kim-kardashian-doubles-down-calling-moon-landing-fake-scientist-reacts-12263428",
-        "https://www.eonline.com/videos/2521489475582/kim-kardashian-doubles-down-on-theory-moon-landings-didnt-happen-after-nasas-response"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5njD4Hp71QBgMWK0NOd1jQjiWWyUijlGAmvkUMNWLkF_dMfU54wKAmJxsdw0",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/kim-kardashian-doubles-down-moon-landing-fake-in-front-of-scientist-12265630",
-          "title": "Kim Kardashian doubles down on moon landing being fake in front of scientist",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5njD4Hp71QBgMWK0NOd1jQjiWWyUijlGAmvkUMNWLkF_dMfU54wKAmJxsdw0"
-        },
-        {
-          "url": "https://people.com/kim-kardashian-doubles-down-calling-moon-landing-fake-scientist-reacts-12263428",
-          "title": "Kim Kardashian Doubles Down on Calling Moon Landing ‘Fake,’ Shocked Scientist Reacts",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjAGJK2MAqVnYe4KHH2DOSZJptT25Fxi-2aG_kW31KvyIHZqgDReEh17Tt8_w"
-        },
-        {
-          "url": "https://www.eonline.com/videos/2521489475582/kim-kardashian-doubles-down-on-theory-moon-landings-didnt-happen-after-nasas-response",
-          "title": "Kim Kardashian Doubles Down on Theory Moon Landings Didn't Happen After NASA's Response",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FlXNfK_KBSWwozfur4G9igQcXxgpdmrs7LXBbwF0gRM5HDC99wZ8Fs7p_R0"
-        }
-      ]
-    },
-    {
-      "query": "bob costas",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T04:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/worst-president-history-united-states-020551590.html",
-        "https://www.foxnews.com/outkick-sports/longtime-sports-broadcaster-bob-costas-calls-donald-trump-sociopath-wild-rant",
-        "https://demokratis.co.id/en/costas-trump-biden-presidential-criticism"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxTFLTMFphfQ8kRy21k00uwGhLkCksR-mGrV--MhXTchpNlvsWnrSgHaUNMnw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/worst-president-history-united-states-020551590.html",
-          "title": "‘Worst President in the history of the United States’: Bob Costas tears into ‘grotesquely unfit’ Donald Trump",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxTFLTMFphfQ8kRy21k00uwGhLkCksR-mGrV--MhXTchpNlvsWnrSgHaUNMnw"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/longtime-sports-broadcaster-bob-costas-calls-donald-trump-sociopath-wild-rant",
-          "title": "Longtime sports broadcaster Bob Costas calls Donald Trump a 'sociopath' in wild rant | OutKick",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrR8EQQlxt4LS2tUoEWRmumqDfXSHqq52f8RBqais6beMFvYuJQ_3sSMIu2Z4"
-        },
-        {
-          "url": "https://demokratis.co.id/en/costas-trump-biden-presidential-criticism",
-          "title": "Bob Costas Criticizes Trump and Biden Over Presidential Records",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2Frqg5mUY7NWBBkROyh6D08M1NzbwZLcqwQMyAwg0ZE-TEaUnat3sz7G4TrU"
-        }
-      ]
-    },
-    {
-      "query": "baylor vs usc",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T04:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/usc-womens-basketball-vs-baylor-020930332.html",
-        "https://www.nytimes.com/athletic/7798787/2026/11/20/baylor-vs-usc-stream-how-to-watch-nov-20/",
-        "https://baylorbears.com/news/2026/11/18/womens-basketball-wbb-faces-stiff-test-at-no-4-5-southern-california-on-friday-night"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBKeFmwyx1-O8Q_nGW9mQLx6sxJ7NmQRedcm7PkG0rDc-_kHwRb1Z99rzKgM0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/usc-womens-basketball-vs-baylor-020930332.html",
-          "title": "USC women's basketball vs Baylor - score, highlights, live updates",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBKeFmwyx1-O8Q_nGW9mQLx6sxJ7NmQRedcm7PkG0rDc-_kHwRb1Z99rzKgM0"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7798787/2026/11/20/baylor-vs-usc-stream-how-to-watch-nov-20/",
-          "title": "How to watch Baylor vs. USC women’s basketball: TV channel and streaming options for November 20 - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSbmzYZp4Xpk3vODev68sE-tsRg9wYTYzEknBXzjwtG6NDujwjYXjMe9AtstI"
-        },
-        {
-          "url": "https://baylorbears.com/news/2026/11/18/womens-basketball-wbb-faces-stiff-test-at-no-4-5-southern-california-on-friday-night",
-          "title": "WBB Faces Stiff Test at No. 4/5 Southern California on Friday Night",
-          "publisher": "BaylorBears.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuWuKrOrRczWI0ZrC5ddt29nbesMrge0KHtn6L_3XrCgnfoDXG_B6VoeoHw-E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm-nNTOFmW9SKiEWCP35y4_1GR2tSpa-B-yDe7fYd4KOHi-Ij1WIXNpC4z-r4"
         }
       ]
     }
