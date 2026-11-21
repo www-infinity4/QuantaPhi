@@ -189,3 +189,27 @@ test('Brittikitty creator selector opens original channel without inventing RSS 
  assert.equal(channel.seed[0].videoId,'eikANmw714k');
  assert.ok(validCreatorVideo(channel.seed[0]));
 });
+
+
+test('girls make a treat original video is linked once as an Oracle Public/Media Quick Card',()=>{
+  const id='Cmar9xsX7AU';
+  const matches=REVIEWED_OWNER_VIDEO_LINKS.filter(row=>row.videoId===id);
+  assert.equal(matches.length,1,'One owner-submitted video, without duplicates');
+  const video=matches[0];
+  assert.equal(video.title,'The girls make a treat - July 1, 2024');
+  assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+  assert.equal(video.observedAt,'2026-11-21');
+  assert.equal(video.publisherVerified,false,'Publisher is not yet verified');
+  assert.equal(video.publishedAt,null,'Title date is not verified publish date');
+  assert.equal(video.contentBoundary,'general-media');
+  assert.ok(validateOwnerYouTubeLink(video));
+  assert.equal(validateOwnerYouTubeLink({...video,sourceUrl:'https://youtube.com.evil.test/watch?v='+id}),false);
+  const card=REVIEWED_OWNER_VIDEO_CARDS.find(row=>row.reviewedYouTubeVideoId===id);
+  assert.ok(card,'Existing factory must expose original video Quick Card');
+  assert.equal(card.featureUrl,video.sourceUrl);
+  assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+  assert.equal(findSourceCard(card.id)?.id,card.id);
+  assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+  assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
+  assert.equal(departmentFor(card),'media');
+});
