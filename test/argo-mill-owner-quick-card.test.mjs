@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
 import {ACTIVE_SOURCE_CARDS,isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
@@ -34,4 +35,12 @@ test('Shorts route cannot be spoofed or attached to unrelated videos',()=>{
  const source=REVIEWED_OWNER_VIDEO_LINKS.find(v=>v.videoId==='bzvtKRteavs');
  assert.equal(validateOwnerYouTubeLink({...source,shortsRoute:'https://example.com'}),false);
  assert.ok(REVIEWED_OWNER_VIDEO_CARDS.every(card=>card.reviewedYouTubeVideoId==='bzvtKRteavs'||!card.secondUrl||card.secondUrl!=='https://www.youtube.com/shorts/bzvtKRteavs'));
+});
+
+test('owner video renderer exposes the source-specific Shorts link without autoplay or new player engine',()=>{
+ const renderer=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
+ assert.match(renderer,/initialVideo\.secondUrl/);
+ assert.match(renderer,/Open Shorts link/);
+ assert.match(renderer,/www\.youtube-nocookie\.com\/embed/);
+ assert.doesNotMatch(renderer,/autoplay=1/);
 });
