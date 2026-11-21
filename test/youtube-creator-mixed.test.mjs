@@ -134,8 +134,8 @@ test('LANDing Autism publisher has a standalone Public/Media full-channel Quick 
  assert.equal(departmentFor(card),'media');
  assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
  const ui=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
- assert.match(ui,/card\\.initialCreatorChannel/);
+ assert.ok(ui.includes('card.initialCreatorChannel'));
  assert.match(ui,/Full channel/);
  assert.match(ui,/Load more videos/);
- assert.match(ui,/youtube-nocookie\\.com\\/embed/);
+ assert.ok(ui.includes('youtube-nocookie.com/embed'));
 });
