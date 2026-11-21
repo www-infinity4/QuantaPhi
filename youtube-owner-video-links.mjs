@@ -85,8 +85,7 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=KOhR7s-lXVY',
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
-}
-,
+},
 {
  videoId:'2SmFV8-IXC4',title:'YouTube video 2SmFV8-IXC4 (title unverified)',
  sourceUrl:'https://www.youtube.com/watch?v=2SmFV8-IXC4',
