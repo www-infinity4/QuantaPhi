@@ -86,6 +86,19 @@ const reviewedLinks=[{
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,
+{
+ videoId:'2SmFV8-IXC4',title:'YouTube video 2SmFV8-IXC4 (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=2SmFV8-IXC4',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'y7kPyfpiIME',title:'YouTube video y7kPyfpiIME (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=y7kPyfpiIME',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
