@@ -3,13 +3,13 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T09:30:59.929237Z",
+  "checked_at": "2026-11-21T10:01:09.783349Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "la cascara motel safe code",
+      "query": "gta 6 kingpin bowling safe code",
       "approx_searches": "500+",
-      "published_at": "2026-11-21T09:00:00Z",
+      "published_at": "2026-11-21T08:40:00Z",
       "related_news_urls": [
         "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
         "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/",
@@ -42,8 +42,78 @@
       ]
     },
     {
-      "query": "la cascara motel gta 6",
+      "query": "squatter removal company armed raid",
       "approx_searches": "100+",
+      "published_at": "2026-11-21T08:40:00Z",
+      "related_news_urls": [
+        "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
+        "https://973thebullicons.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/",
+        "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLw0YnzGa-2XAY_pLWFVU03T3UUsXAsTi-IJefWoRO_MOAUKrLSna8rNj0xrg",
+      "image_credit": "San Francisco Chronicle",
+      "news": [
+        {
+          "url": "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
+          "title": "They raided a Bay Area home with guns and swords. Are they ‘squatter removers’ — or vigilantes?",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLw0YnzGa-2XAY_pLWFVU03T3UUsXAsTi-IJefWoRO_MOAUKrLSna8rNj0xrg"
+        },
+        {
+          "url": "https://973thebullicons.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/",
+          "title": "Armed Squatter Removal Team Faces Felony Charges In California Raid",
+          "publisher": "iHeart",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUx3Is8yTOpNY1c5qRzOTOdYyirRU9Ku1oyzoCqZtDj8U8_KWkgItAFbOyLgU"
+        },
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
+          "title": "Armed with guns and sword, owner of squatter removal company cleared out a home. Now he faces felonies",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ"
+        }
+      ]
+    },
+    {
+      "query": "mamu lakers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T08:30:00Z",
+      "related_news_urls": [
+        "https://larrybrownsports.com/basketball/video-luka-doncic-calling-out-lakers-teammate/779309",
+        "https://lakeshowlife.com/lakers-need-sandro-mamukelashvili-bounce-back-to-ease-luka-doncic-burden",
+        "https://cwibc.co.id/en/lakers-mamukelashvili-doncic-scoring"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBpy3K6Nov31byFYD8sy7o1WwkkZ07BNq--jQB8sUKBQvTX6fedW7srVDdiQ",
+      "image_credit": "Larry Brown Sports",
+      "news": [
+        {
+          "url": "https://larrybrownsports.com/basketball/video-luka-doncic-calling-out-lakers-teammate/779309",
+          "title": "Video shows Luka Doncic profanely calling out 1 Lakers teammate",
+          "publisher": "Larry Brown Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBpy3K6Nov31byFYD8sy7o1WwkkZ07BNq--jQB8sUKBQvTX6fedW7srVDdiQ"
+        },
+        {
+          "url": "https://lakeshowlife.com/lakers-need-sandro-mamukelashvili-bounce-back-to-ease-luka-doncic-burden",
+          "title": "Lakers need a Sandro Mamukelashvili bounce-back to ease Luka Doncic's burden",
+          "publisher": "Lake Show Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7guY6i2RSoB3_-5mW_kHyPQ_FYVT4m23bQO2wfb8Ba5E-bGM1XeCjBdc4rbo"
+        },
+        {
+          "url": "https://cwibc.co.id/en/lakers-mamukelashvili-doncic-scoring",
+          "title": "Lakers Need Mamukelashvili to Ease Doncic's Scoring Burden",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyLPME7hlhmu0TgfdiDZ3kk95lvIoEyDAek0r6pIjGPMsIAxXDs43joPHLxL8"
+        }
+      ]
+    },
+    {
+      "query": "la cascara motel gta 6",
+      "approx_searches": "200+",
       "published_at": "2026-11-21T08:30:00Z",
       "related_news_urls": [
         "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-la-cascara-motel-robbery",
@@ -73,6 +143,111 @@
           "publisher": "VICE",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs"
+        }
+      ]
+    },
+    {
+      "query": "julie tkach",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T08:30:00Z",
+      "related_news_urls": [
+        "https://www.starcitytv.com/news/local/four-people-identified-in-west-lafayette-death-investigation/article_270ded97-585a-4d86-97f6-0e054cc310bd.html",
+        "https://people.com/purdue-professor-family-dead-home-daughter-terrifying-call-police-12267430",
+        "https://www.wlfi.com/2026/11/20/coroner-releases-autopsy-findings-west-lafayette-suspected-murder-suicide/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzrASSP9TA4QfVHNhxMijD30i0_YhlCeZ3AHAtYW-uTUAGs47gKt2UHz9ToFY",
+      "image_credit": "starcitytv.com",
+      "news": [
+        {
+          "url": "https://www.starcitytv.com/news/local/four-people-identified-in-west-lafayette-death-investigation/article_270ded97-585a-4d86-97f6-0e054cc310bd.html",
+          "title": "Four people identified in West Lafayette death investigation",
+          "publisher": "starcitytv.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzrASSP9TA4QfVHNhxMijD30i0_YhlCeZ3AHAtYW-uTUAGs47gKt2UHz9ToFY"
+        },
+        {
+          "url": "https://people.com/purdue-professor-family-dead-home-daughter-terrifying-call-police-12267430",
+          "title": "Purdue U. Professor and Her Family Found Dead Inside Home After Daughter’s Terrifying 911 Call",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5g3PBlMMGD69i5zOpYLHRTA_CykKhuGH1I_Me533U1BI9vn40z09XUhA-0qI"
+        },
+        {
+          "url": "https://www.wlfi.com/2026/11/20/coroner-releases-autopsy-findings-west-lafayette-suspected-murder-suicide/",
+          "title": "Coroner Releases Autopsy Findings in West Lafayette Suspected Murder-Suicide",
+          "publisher": "WLFI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzQ0KjQRWo_Nwr_X-SPeFDh5PA38XFHLQjmvpXCcJroUceBEKIzonl1AbMFfk"
+        }
+      ]
+    },
+    {
+      "query": "skunk ape gta 6",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T08:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/multiple-bigfoot-sightings-reported-gamers-hands-gta-vi",
+        "https://www.polygon.com/gta-6-skunk-ape-tree-effigies-locations-where-to-find/",
+        "https://kotaku.com/why-rockstar-games-includes-bigfoot-and-ufos-to-find-in-its-big-open-world-games-we-love-that-stuff-2000758423"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS63F1UYlq1JXFEQyurtwNSQ-8z4u498mg6ptNye4OTixkxGOUtmJ8GIrQfslw",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/multiple-bigfoot-sightings-reported-gamers-hands-gta-vi",
+          "title": "Multiple Bigfoot sightings reported by gamers who have gotten their hands on 'GTA VI'",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS63F1UYlq1JXFEQyurtwNSQ-8z4u498mg6ptNye4OTixkxGOUtmJ8GIrQfslw"
+        },
+        {
+          "url": "https://www.polygon.com/gta-6-skunk-ape-tree-effigies-locations-where-to-find/",
+          "title": "Where to find the tree effigies for the Skunk Ape mission in GTA 6",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSczLKHQyOrRS0uQuo1cF87sSB_IH9R5nhP1dgDaFL5yF9HxmwaNTvAXPCUnj0"
+        },
+        {
+          "url": "https://kotaku.com/why-rockstar-games-includes-bigfoot-and-ufos-to-find-in-its-big-open-world-games-we-love-that-stuff-2000758423",
+          "title": "Why Rockstar Games Includes Bigfoot And UFOs To Find In Its Big Open-World Games: 'We Love That Stuff'",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT11LITutn4a5qrSOYx3e_6luaXB5P_XZsOz_X2NuLi9Lz6lF7uSxOWhw61JHs"
+        }
+      ]
+    },
+    {
+      "query": "porto fc",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T08:10:00Z",
+      "related_news_urls": [
+        "https://onefootball.com/en/news/fc-porto-prepare-for-first-womens-classico-with-five-ex-sporting-players-43811541",
+        "https://www.limapagi.id/en/porto-former-sporting-players-classico",
+        "https://onefootball.com/en/news/fc-porto-beat-usc-paredes-on-pens-to-reach-portuguese-cup-last-16-43810340"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqfrX83OdMLoq2WOMwvRhKJ6TcPuNKs8pP5HHqU1EkHqiJrf4zLrn3VgJOxUw",
+      "image_credit": "OneFootball",
+      "news": [
+        {
+          "url": "https://onefootball.com/en/news/fc-porto-prepare-for-first-womens-classico-with-five-ex-sporting-players-43811541",
+          "title": "FC Porto prepare for first women's Clássico with five ex-Sporting players",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqfrX83OdMLoq2WOMwvRhKJ6TcPuNKs8pP5HHqU1EkHqiJrf4zLrn3VgJOxUw"
+        },
+        {
+          "url": "https://www.limapagi.id/en/porto-former-sporting-players-classico",
+          "title": "Porto Field Five Former Sporting Players for Historic Womens Clássico",
+          "publisher": "Limapagi",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQknggEz8G2FNwkGTR7osmEDT9NNJJ0rL1CpFcMMpkI0u0pj-e4DiTIRMwY9pg"
+        },
+        {
+          "url": "https://onefootball.com/en/news/fc-porto-beat-usc-paredes-on-pens-to-reach-portuguese-cup-last-16-43810340",
+          "title": "FC Porto beat USC Paredes on pens to reach Portuguese Cup last 16",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ06CcZybo4XhEmJtpB0mGKhrR7-XKu_0fVaZoYwvqvwhfk7gALurdl2DXBtIk"
         }
       ]
     },
@@ -108,41 +283,6 @@
           "publisher": "Hoodline",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNCCnvEBqCDVZm-LYpxasPzcOF0m7fHNn0jQgXudIdyFjCQAlHdPjcEDhrLw"
-        }
-      ]
-    },
-    {
-      "query": "porto fc",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T08:10:00Z",
-      "related_news_urls": [
-        "https://onefootball.com/en/news/francesco-farioli-admits-porto-struggles-for-us-not-a-great-night-43810451",
-        "https://www.beinsports.com/en-us/soccer/articles/live-fc-porto-vs-usc-paredes-ta%C3%A7a-de-portugal-2026-11-20",
-        "https://ua.news/en/world/portu-v-seriyi-penalti-peremig-paredesh-iz-tretogo-divizionu-interia-sport"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM1ROjpn6T-d7zM0J8ijzvRj5lay00MrRz55W8Dvsdxo3Dc38RxvRMYBGfzSM",
-      "image_credit": "OneFootball",
-      "news": [
-        {
-          "url": "https://onefootball.com/en/news/francesco-farioli-admits-porto-struggles-for-us-not-a-great-night-43810451",
-          "title": "Francesco Farioli admits Porto struggles: “For us, not a great night”",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM1ROjpn6T-d7zM0J8ijzvRj5lay00MrRz55W8Dvsdxo3Dc38RxvRMYBGfzSM"
-        },
-        {
-          "url": "https://www.beinsports.com/en-us/soccer/articles/live-fc-porto-vs-usc-paredes-ta%C3%A7a-de-portugal-2026-11-20",
-          "title": "LIVE: FC Porto vs USC Paredes | Taça de Portugal",
-          "publisher": "beIN SPORTS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREp_L2jEEm_vG74f3YnouTWKb0oV0ZPBdy9Ppf3tKh3yAnw13WIYdOHVWLb10"
-        },
-        {
-          "url": "https://ua.news/en/world/portu-v-seriyi-penalti-peremig-paredesh-iz-tretogo-divizionu-interia-sport",
-          "title": "Porto beat third-division Paredes in a penalty shootout — Interia Sport",
-          "publisher": "UA.NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrPJf4BXKZnAA4p_dzoFHtrtgpblFGir-8UE6ymnvW1eLizK8BzhgI7gQzxMk"
         }
       ]
     },
@@ -213,146 +353,6 @@
           "publisher": "Deadline",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNQ66EcSOykrrJMgd0rG8gtzDw5M69ij1weNe5V51hrY_vNtb59XsdP-CoIiA"
-        }
-      ]
-    },
-    {
-      "query": "how old is jason in gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T07:40:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
-        "https://www.yahoo.com/entertainment/celebrity/article/the-lead-actress-in-grand-theft-auto-vi-has-finally-been-revealed-what-to-know-about-the-woman-behind-lucia-185317472.html",
-        "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
-          "title": "‘GTA VI’ finally reveals the actors, voices and familiar names behind Vice City",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/article/the-lead-actress-in-grand-theft-auto-vi-has-finally-been-revealed-what-to-know-about-the-woman-behind-lucia-185317472.html",
-          "title": "The lead actress in 'Grand Theft Auto VI' has finally been revealed. What to know about the woman behind Lucia.",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhXkCY3aEVqu6IhST3uBHl_alSrXTyrVVH8UNnW_e9uJUDnbPookf51GR4hQo"
-        },
-        {
-          "url": "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095",
-          "title": "Everything We Know About Manni L. Perez, ‘GTA 6’ Female Lead Lucia Caminos",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT05kjwrBYX-lcuM3Uf66HDH1E_MhJOBIOl6sfAWvMlnSd8wJyaVwBYXvgzUkI"
-        }
-      ]
-    },
-    {
-      "query": "nvidia stock market",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T07:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/technology/ai/articles/semiconductor-sell-off-artificial-intelligence-125502063.html",
-        "https://www.fool.com/investing/2026/11/21/here-s-my-top-ai-stock-to-buy-with-nvidia-in-uncertain-territory/",
-        "https://seekingalpha.com/article/4970257-ai-cash-kings-why-this-chip-giants-fundamentals-defy-the-selloff"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm4qRRCSml8uNmYveXG4UitDshl1yDALt9ewVnnsjW3tmmGXJ2MrVV1qHOpjc",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/technology/ai/articles/semiconductor-sell-off-artificial-intelligence-125502063.html",
-          "title": "Semiconductor Sell-Off: These Artificial Intelligence (AI) Chip Stocks Are Screaming Buys Before They Go Parabolic",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm4qRRCSml8uNmYveXG4UitDshl1yDALt9ewVnnsjW3tmmGXJ2MrVV1qHOpjc"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/21/here-s-my-top-ai-stock-to-buy-with-nvidia-in-uncertain-territory/",
-          "title": "Here’s My Top AI Stock to Buy With Nvidia in Uncertain Territory",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcQ3fSxjQSKD5go4TCiXGLAOUXS74cAp_nPRdweZwYSxCuGUeTWqiNrrqQPWs"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4970257-ai-cash-kings-why-this-chip-giants-fundamentals-defy-the-selloff",
-          "title": "AI Cash Kings: Why This Chip Giant's Fundamentals Defy The Selloff",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNQk1FuVsqer7hCUB0ydgyCf4radhkUSvCX9pNiJzMpM1nAo9yVF7GJLzrLBk"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 money glitch",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T07:40:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
-        "https://insider-gaming.com/gta-6-infinite-money-glitch/",
-        "https://www.thebanker.com/content/d00ea61c-2b0a-4fe5-be51-f3f764f5347e"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
-          "title": "The Best Ways To Earn Money In ‘GTA 6,’ Early, Mid- And Late-Game",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno"
-        },
-        {
-          "url": "https://insider-gaming.com/gta-6-infinite-money-glitch/",
-          "title": "How To Do GTA 6 Infinite Money Glitch",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdynht4T3fdPkiRMbZJRwjnuFatV7EdAkGht7aeMq0fPPvfXnvKNTi1FNzUEo"
-        },
-        {
-          "url": "https://www.thebanker.com/content/d00ea61c-2b0a-4fe5-be51-f3f764f5347e",
-          "title": "Grand Theft Auto VI takes aim at the US banking system",
-          "publisher": "TheBanker.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2mrdoAiY_nv8PBlrvavYhYbf3zZs34kQZOzl7wqSp24Jf5nwQx6hWcawRGw8"
-        }
-      ]
-    },
-    {
-      "query": "aus vs eng",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T07:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
-        "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
-        "https://sports.yahoo.com/articles/australia-wins-toss-bowl-1st-081728321.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTj1UuhWbILbFaGJGGbS4KjJhoUqg-N4P97IlvfMoS2k2Mp5yrnF3cpb3tiT20",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
-          "title": "Australia vs England LIVE: First T20, MCG, Melbourne - cricket score, commentary & updates",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTj1UuhWbILbFaGJGGbS4KjJhoUqg-N4P97IlvfMoS2k2Mp5yrnF3cpb3tiT20"
-        },
-        {
-          "url": "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
-          "title": "Harper's Australia debut a much-needed good story",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7jZMpbY-nrsnKq5bLNm3dnxCuVRiqrQvqcFmRN5fsFlqI1CKLICee2zzsh5s"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/australia-wins-toss-bowl-1st-081728321.html",
-          "title": "Australia wins the toss and will bowl in the 1st of 5 T20 matches against England",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNlqj3pX5hPGUOP9zpn90p8ZaDqYXH7ajEzqD7MD7dRCd8Xyvo0UWsl-23h1U"
         }
       ]
     }
