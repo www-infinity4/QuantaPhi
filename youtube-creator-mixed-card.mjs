@@ -7,8 +7,11 @@ const KEY='quantaphi:youtube-creator-mix:v1',BATCH=6;
 const el=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;};
 const button=(name,fn)=>{const b=el('button','qcx-button',name);b.type='button';b.style.minHeight='48px';b.addEventListener('click',fn);return b;};
 const anchor=(name,url)=>{const a=el('a','qcx-link',name+' ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
-let frame=null;
-function stopPlayer(){if(frame){frame.remove();frame=null;}}
+let frame=null,frameStop=null;
+function stopPlayer(){
+ if(frame){frame.remove();frame=null;}
+ if(frameStop){const hide=frameStop;frameStop=null;hide();}
+}
 if(typeof window!=='undefined')window.addEventListener('quantaphi:youtube-player-stop',stopPlayer);
 const savedUrls=()=>{
  try{const data=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(data)?
@@ -128,6 +131,7 @@ export function mountMixedCreatorCard(root,card){
     iframe.allow='accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share';
     iframe.allowFullscreen=true;iframe.style.width='100%';
     playback.append(iframe);frame=iframe;stop.hidden=false;
+    frameStop=()=>{playback.replaceChildren();stop.hidden=true;};
    }),stop,anchor('Original video',video.sourceUrl));
    item.append(image,heading,original,actions,playback);feed.append(item);
   }
