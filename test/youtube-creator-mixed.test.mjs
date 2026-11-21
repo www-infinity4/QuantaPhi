@@ -10,7 +10,7 @@ import {departmentFor} from '../quanta-context-placement.mjs';
 const video=(channelId,videoId,title)=>({channelId,videoId,title,sourceUrl:'https://www.youtube.com/watch?v='+videoId,publishedAt:null});
 
 test('Creator mix preserves known channel IDs and a separate owner-linked Samirah source',()=>{
- assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','landing']);
+ assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','brittikitty','landing']);
  assert.equal(CREATOR_CHANNELS[0].channelId,'UC6ySmwN_K8fGGD2EKLQdEGA');
  assert.equal(CREATOR_CHANNELS[1].channelId,'UCFsg41h5GN7TAxFUK3Sl00w');
  assert.equal(CREATOR_CHANNELS[2].channelId,'UCt_P3xPrrnOkYT5UQQ4vUIg');

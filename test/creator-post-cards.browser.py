@@ -221,6 +221,28 @@ def run():
                     'src','https://www.youtube-nocookie.com/embed/PyUwXoTabPA')
                 reviewed.get_by_role('button',name='Stop playback').click()
                 expect(reviewed.locator('iframe')).to_have_count(0)
+                # Owner cards have an in-card View More feed, not a dead link:
+                # six per page, more real owner URLs, and verified creator RSS.
+                reviewed.get_by_role('button',name='View more videos').click()
+                more=reviewed.locator('.qcx-owner-more-videos')
+                expect(more).to_be_visible()
+                expect(more.get_by_role('combobox',name='Filter by video channel')).to_have_value('owner')
+                expect(more.locator('.qcx-mix-entry')).to_have_count(6)
+                more.get_by_role('button',name='Load more videos').click()
+                assert more.locator('.qcx-mix-entry').count()>=11, 'View More must page actual owner links'
+                expect(more).to_contain_text('oxVpgLW2k2c')
+                expect(more).to_contain_text('O5wUpS5z4SI')
+                more.get_by_role('button',name='Play in card').first.click()
+                expect(more.locator('iframe')).to_have_count(1)
+                reviewed.locator('form.qcx-search-form').get_by_role('button',name='Play in card').click()
+                expect(more.locator('iframe')).to_have_count(0)
+                expect(reviewed.locator('iframe')).to_have_count(1)
+                reviewed.get_by_role('button',name='Stop playback').first.click()
+                expect(reviewed.locator('iframe')).to_have_count(0)
+                more.get_by_role('combobox',name='Filter by video channel').select_option('gana')
+                assert more.locator('.qcx-mix-entry').count()>=1, 'Verified channel filter must show real seed videos'
+                reviewed.get_by_role('button',name='Hide more videos').click()
+                expect(more).to_be_hidden()
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Reviewed video overflow'
                 page.goto(base+'/?card='+reviewed_id,wait_until='domcontentloaded')
                 expect(page.locator('#oracleCardStage [data-source-id="'+reviewed_id+'"]')).to_be_visible(timeout=20000)

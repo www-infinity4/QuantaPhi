@@ -25,6 +25,12 @@ export const CREATOR_CHANNELS=Object.freeze([
   url:'https://www.youtube.com/@SamirahAnn',seed:Object.freeze([
    seed('samirah','UPFgnpkm7MQ','BREASTFEEDING A TEETHING BABY | Clingy baby | Clean with me | Mum of four')
   ])}),
+ // Public watch page identifies Brittikitty and the original channel handle.
+ // No canonical UC ID was verified; link the full Videos tab but do not fetch RSS.
+ Object.freeze({key:'brittikitty',name:'Brittikitty',channelId:null,
+  url:'https://www.youtube.com/@brittikitty',seed:Object.freeze([
+   seed('brittikitty','eikANmw714k','Lily can literally fall asleep everywhere and anywhere 😂😂')
+  ])}),
  Object.freeze({key:'landing',name:'LANDing Autism',channelId:'UCQU1zvNELO2AatGXMRQ2bSw',
   url:'https://www.youtube.com/@LANDingAutism',seed:Object.freeze([
    seed('UCQU1zvNELO2AatGXMRQ2bSw','QR_c5m1RLtk','Penelope Takes Her FIRST STEPS!!'),
@@ -87,7 +93,7 @@ export function pageCreatorVideos(videos,offset=0,limit=6){
  return videos.slice(start,start+count);
 }
 export const CREATOR_MIX_SOURCE=Object.freeze({
- id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · LANDing Autism · Creator Mix',
+ id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · Brittikitty · LANDing Autism · Creator Mix',
  kind:'Video · YouTube',feature:'Mixed channel uploads and saved creator videos',
  featureUrl:'https://www.youtube.com/@ganatribe/videos',
  official:'https://www.youtube.com/@ganatribe',
