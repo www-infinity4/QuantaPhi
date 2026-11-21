@@ -239,3 +239,29 @@ test('owner YouTube Short o5ErK3nEpKU creates one Public Media Quick Card withou
   assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
   assert.equal(departmentFor(card),'media');
 });
+
+
+test('new owner-submitted video AhhDT0AkqC0 is added once to Public Media Quick Cards without guessed metadata',()=>{
+  const id='AhhDT0AkqC0';
+  const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+  assert.equal(rows.length,1,'Only one owner-submitted entry');
+  const video=rows[0];
+  assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+  assert.equal(video.observedAt,'2026-11-21');
+  assert.equal(video.titleVerified,false);
+  assert.equal(video.publisherVerified,false);
+  assert.equal(video.publishedAt,null);
+  assert.equal(video.contentBoundary,'general-media');
+  assert.match(video.title,/title unverified/i);
+  assert.ok(validateOwnerYouTubeLink(video));
+  assert.equal(validateOwnerYouTubeLink({...video,sourceUrl:'https://youtube.com.evil.test/watch?v='+id}),false);
+  const card=REVIEWED_OWNER_VIDEO_CARDS.find(v=>v.reviewedYouTubeVideoId===id);
+  assert.ok(card,'Existing Quick Card factory must generate video entry');
+  assert.equal(card.featureUrl,video.sourceUrl);
+  assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+  assert.match(card.details,/not independently verified/i);
+  assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+  assert.equal(findSourceCard(card.id)?.id,card.id);
+  assert.ok(ALL_FEED_CARDS.some(v=>v.id===card.id));
+  assert.equal(departmentFor(card),'media');
+});
