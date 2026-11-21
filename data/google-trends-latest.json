@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T21:01:16.320710Z",
+  "checked_at": "2026-11-21T21:31:05.461941Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "osu game today",
+      "query": "syracuse basketball",
       "approx_searches": "2000+",
-      "published_at": "2026-11-21T20:40:00Z",
+      "published_at": "2026-11-21T21:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50522496/ohio-state-club-football",
-        "https://www.elevenwarriors.com/forum/ohio-state-football/2026/11/165581/good-story-on-espn-about-the-ohio-state-club-football-team",
-        "https://www.dispatch.com/picture-gallery/sports/2026/11/17/ohio-state-club-football-practice-lincoln-tower-park/91582540007/"
+        "https://cuse.com/news/2026/11/20/mens-basketball-orange-welcome-lafayette-for-saturday-showdown-at-the-dome",
+        "https://www.syracuse.com/orangebasketball/2026/11/syracuse-basketball-vs-lafayette-live-score-updates.html",
+        "https://dailyorange.com/2026/11/syracuse-mens-basketball-beat-writers-predict-lafayette/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlOKGDa_o8bnO60GDP1iwC3keCDRlG1sZVB-wXEzZ0zredyrVebqsyzuNQF4U",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0cm6b-ZKms_XpiVAmDpdRoz6MjYWiXzAjdd5nNbTR15Euv2UPrs04RzAVAMs",
+      "image_credit": "Syracuse University Athletics",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50522496/ohio-state-club-football",
-          "title": "Ohio State's club team might be the Buckeyes' most dominant program",
-          "publisher": "ESPN",
+          "url": "https://cuse.com/news/2026/11/20/mens-basketball-orange-welcome-lafayette-for-saturday-showdown-at-the-dome",
+          "title": "Orange Welcome Lafayette for Saturday Showdown at the Dome",
+          "publisher": "Syracuse University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlOKGDa_o8bnO60GDP1iwC3keCDRlG1sZVB-wXEzZ0zredyrVebqsyzuNQF4U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0cm6b-ZKms_XpiVAmDpdRoz6MjYWiXzAjdd5nNbTR15Euv2UPrs04RzAVAMs"
         },
         {
-          "url": "https://www.elevenwarriors.com/forum/ohio-state-football/2026/11/165581/good-story-on-espn-about-the-ohio-state-club-football-team",
-          "title": "Good Story on ESPN About the Ohio State Club Football Team",
-          "publisher": "Eleven Warriors",
+          "url": "https://www.syracuse.com/orangebasketball/2026/11/syracuse-basketball-vs-lafayette-live-score-updates.html",
+          "title": "Garwey Dual heads to locker room after ankle injury: Live score, updates",
+          "publisher": "Syracuse.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5M-ISFnaVjNI1KBmbp3r3IpMp-zNwSWkx6DL-WLF1BeWpzWLYIMJX1HPpPg4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSk7i4JAxW6VuCSsoR27TLaFN7yhMnYF9KxrOWaWMYeZTqL8o3sa7RkKvUlKM"
         },
         {
-          "url": "https://www.dispatch.com/picture-gallery/sports/2026/11/17/ohio-state-club-football-practice-lincoln-tower-park/91582540007/",
-          "title": "See the Ohio State Club Football team practice",
-          "publisher": "The Columbus Dispatch",
+          "url": "https://dailyorange.com/2026/11/syracuse-mens-basketball-beat-writers-predict-lafayette/",
+          "title": "Beat writers agree Syracuse will snag 2nd straight win vs. Lafayette",
+          "publisher": "The Daily Orange",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9NZ3sPru3wM5IAOsAcrb05rZS8lm7qThpm34ia6EVeOueMAUIVsAxl3SilkU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxRiLLcl60uh2DrBHMKFWJiZXtC1ZrJmixr_cIWmFWP4iBr0akO4YGDZ_4odo"
         }
       ]
     },
     {
-      "query": "ryan day",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T20:40:00Z",
+      "query": "ucla football coach",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T21:10:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/osu/2026/11/ohio-state-ryan-day-spent-24-months-fumbling-away-momentum-and-recreating-doubt-stephen-means.html",
-        "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/14/ohio-state-football-fans-empty-seats-the-shoe-northwestern/92780520007/",
-        "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-national-champ-among-fans-writing-off-buckeyes-during-nebraska-game/"
+        "https://www.latimes.com/sports/ucla/story/2026-11-20/on-brand-bob-chesney-has-ucla-football-alums-fired-up-can-bruins-keep-him",
+        "https://sports.yahoo.com/articles/michigan-replacement-kyle-whittingham-could-145714967.html",
+        "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-reveals-why-bob-chesney-michigan-buzz-is-good-news-ucla"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm7BwHPuPDN8iW0z7hd8qvu2vUbYIQoK9DNnQv8SvOYea2jttMiL4o-XGU2cw",
-      "image_credit": "Cleveland.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8zRCDqQMYd2m2-Dh0LBK2GzRtsrurrTTXwMXE_BGsxI98EMA0Y2gI4dJzYI4",
+      "image_credit": "Los Angeles Times",
       "news": [
         {
-          "url": "https://www.cleveland.com/osu/2026/11/ohio-state-ryan-day-spent-24-months-fumbling-away-momentum-and-recreating-doubt-stephen-means.html",
-          "title": "Ryan Day led Ohio State to a national title, then watched rivals use the Buckeyes' momentum against them (104 chars)",
-          "publisher": "Cleveland.com",
+          "url": "https://www.latimes.com/sports/ucla/story/2026-11-20/on-brand-bob-chesney-has-ucla-football-alums-fired-up-can-bruins-keep-him",
+          "title": "‘On brand’ Bob Chesney has UCLA football alums fired up. Can the Bruins keep him?",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm7BwHPuPDN8iW0z7hd8qvu2vUbYIQoK9DNnQv8SvOYea2jttMiL4o-XGU2cw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8zRCDqQMYd2m2-Dh0LBK2GzRtsrurrTTXwMXE_BGsxI98EMA0Y2gI4dJzYI4"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/14/ohio-state-football-fans-empty-seats-the-shoe-northwestern/92780520007/",
-          "title": "Empty seats at The Shoe tell brutal story of Ohio State’s stunning fall",
+          "url": "https://sports.yahoo.com/articles/michigan-replacement-kyle-whittingham-could-145714967.html",
+          "title": "Michigan’s Replacement for Kyle Whittingham Could Be At Big House Today",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQC75-Cq83Oaavpxk7L-eyJFiU-95kkRqmKkXsE4Q0pgzM3caZ3lssAN9byJv0"
+        },
+        {
+          "url": "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-reveals-why-bob-chesney-michigan-buzz-is-good-news-ucla",
+          "title": "Rece Davis Reveals Why Bob Chesney's Michigan Buzz Is Good News for UCLA",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF5vrs1hJaobCo6xJxW8TEGNDUgcl17KLw6MpzpDKDvA4hoFADE8E5XCL1tng"
+        }
+      ]
+    },
+    {
+      "query": "bob chesney",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T21:00:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/sports/ucla/story/2026-11-17/college-football-playoff-rankings",
+        "https://www.newsitem.com/news/local/success-of-coach-chesney-shines-light-on-hometown-high-school-alma-mater/article_b1d85ad5-f0ff-4b9b-beff-32eea8bbd892.html",
+        "https://newsroom.ucla.edu/in-the-news/how-ucla-footballs-undefeated-season-is-turning-heads-nationwide-and-more-ucla-media"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2DDSdzCg1whWzjMOOl7ruMKK3Y77yaqcl6ptHkRMy9oHK0olWFdgz58Sj0Hs",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/sports/ucla/story/2026-11-17/college-football-playoff-rankings",
+          "title": "UCLA still No. 4 in newest College Football Playoff rankings, USC at No. 18",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2DDSdzCg1whWzjMOOl7ruMKK3Y77yaqcl6ptHkRMy9oHK0olWFdgz58Sj0Hs"
+        },
+        {
+          "url": "https://www.newsitem.com/news/local/success-of-coach-chesney-shines-light-on-hometown-high-school-alma-mater/article_b1d85ad5-f0ff-4b9b-beff-32eea8bbd892.html",
+          "title": "Success of coach Chesney shines light on hometown, high school alma mater",
+          "publisher": "The News-Item",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqpLic1zPmRIdEprB-Lc_cchmKZnGeX33qoJBzGQqwlglkTrMG6AAj-XmAds"
+        },
+        {
+          "url": "https://newsroom.ucla.edu/in-the-news/how-ucla-footballs-undefeated-season-is-turning-heads-nationwide-and-more-ucla-media",
+          "title": "UCLA football’s undefeated season is turning heads nationwide — and more UCLA media",
+          "publisher": "Newsroom | UCLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTq0381BDgRFVUd0elAKm8nNmJtClY3CCG40Aj0yyJshuiNy6SKAMobr2xwNJU"
+        }
+      ]
+    },
+    {
+      "query": "is arch manning a senior",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T21:00:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/ncaaf/sec/2026/11/21/arch-manning-future-plans-nfl-draft-texas-football-return-eligibility/92825171007/",
+        "https://247sports.com/article/whats-next-for-texas-quarterback-arch-manning-sources-paint-picture-of-qb-with-decision-to-make-292993974/",
+        "https://www.burntorangenation.com/texas-longhorns-football/107563/arch-manning-senior-day-texas-longhorns"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR30feyAENAnO3G8I9r0XvbAFxe_K1Wgs2NMZt2zT5eqr2mfxTOik794SLYWM4",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/sec/2026/11/21/arch-manning-future-plans-nfl-draft-texas-football-return-eligibility/92825171007/",
+          "title": "What's next for Arch Manning's future as Texas QB partakes in Senior Day?",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOwo5Ayjck2sx1Nt60N6SG-uYzVjYpE2gR6wm-yciDF9-n43fI7_8I5LQPkfg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR30feyAENAnO3G8I9r0XvbAFxe_K1Wgs2NMZt2zT5eqr2mfxTOik794SLYWM4"
         },
         {
-          "url": "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-national-champ-among-fans-writing-off-buckeyes-during-nebraska-game/",
-          "title": "Ohio State National Champ Among Fans Writing Off Buckeyes During Nebraska Game",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOjcVybNQhZFxzl7OAwkMuezCpYzLcjaTJS_wbwbbfJoyXEur8A9sCZdsjUNk"
-        }
-      ]
-    },
-    {
-      "query": "joe biden",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T20:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/books/2026/nov/21/promise-me-america-joe-biden-memoir-review",
-        "https://www.washingtonpost.com/opinions/2026/11/19/joe-bidens-memoir-shows-how-donald-trump-overshadowed-his-presidency/",
-        "https://www.newsweek.com/joe-bidens-book-called-out-lack-accountability-12747309"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT76rTrBDIjy4XBGYa-e5dlT8ryVCOZugC1TXqmnXZTes1REAq0vCl3ArAAPyY",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/books/2026/nov/21/promise-me-america-joe-biden-memoir-review",
-          "title": "Promise Me, America by Joe Biden review – former president defends his decisions",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT76rTrBDIjy4XBGYa-e5dlT8ryVCOZugC1TXqmnXZTes1REAq0vCl3ArAAPyY"
-        },
-        {
-          "url": "https://www.washingtonpost.com/opinions/2026/11/19/joe-bidens-memoir-shows-how-donald-trump-overshadowed-his-presidency/",
-          "title": "Opinion | Nearly 200 mentions of Trump reveal what befell Biden",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTReJgIcBFL6NBuQHhdlIsYMAUtzQcESbo4g_p1N9jSdIN8PEYvrI_iM_IZycQ"
-        },
-        {
-          "url": "https://www.newsweek.com/joe-bidens-book-called-out-lack-accountability-12747309",
-          "title": "Joe Biden’s Book Called Out Over Lack of Accountability",
-          "publisher": "Newsweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR81_CyZ-4uvy8cTXbxP3DOJa7HQOdG_Sik9X9QpR_dHIX_E-iAU0c2EETV6Zw"
-        }
-      ]
-    },
-    {
-      "query": "illinois state football",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T20:40:00Z",
-      "related_news_urls": [
-        "https://chicago.suntimes.com/high-school-football/scores/2026/11/20/2026-ihsa-state-football-semifinal-scores",
-        "https://www.si.com/high-school/illinois/illinois-high-school-football-schedule-scores-live-updates-ihsa-november-21-01m7r99tnv6x",
-        "https://sports.yahoo.com/articles/ihsa-football-bracket-2026-illinois-140232797.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQnzeT-DdZkeANIp-CQPrnW9mYxoTZ1Jn55I6qrVGqifXmYS4ZlpYktxr20lQ",
-      "image_credit": "Chicago Sun-Times",
-      "news": [
-        {
-          "url": "https://chicago.suntimes.com/high-school-football/scores/2026/11/20/2026-ihsa-state-football-semifinal-scores",
-          "title": "2026 IHSA state football semifinal scores",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQnzeT-DdZkeANIp-CQPrnW9mYxoTZ1Jn55I6qrVGqifXmYS4ZlpYktxr20lQ"
-        },
-        {
-          "url": "https://www.si.com/high-school/illinois/illinois-high-school-football-schedule-scores-live-updates-ihsa-november-21-01m7r99tnv6x",
-          "title": "Illinois High School Football Schedule, Scores & Live Updates (IHSA) — November 21",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSku8m73CXke44byO8ou6yyqAqKKbgSYIvsMk-hQVpYdnaTvcgD_4LZdpRehxY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ihsa-football-bracket-2026-illinois-140232797.html",
-          "title": "IHSA football bracket: 2026 Illinois state playoffs semifinal scores",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8MsxUlGs8BiH3NYWgTVU3xvu1TeJv_Y4fu-KnSAYyCTy4JWxUaI7KJdKKM9U"
-        }
-      ]
-    },
-    {
-      "query": "navy football",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T20:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50551457/army-navy-seat-prank",
-        "https://www.nytimes.com/athletic/7800560/2026/11/21/army-navy-football-prank/",
-        "https://sports.yahoo.com/college-football/article/army-pranks-navy-ahead-of-annual-football-matchup-with-go-army-message-in-midshipmens-home-stadium-183607258.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtQILlT_e4m_DfqVnUMg92hoTvCDLuS7G3jznAIR_ZQ44rDR1B5OokFzfjRrE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50551457/army-navy-seat-prank",
-          "title": "Army pulls seating prank at Navy's football stadium ahead of Memphis game",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtQILlT_e4m_DfqVnUMg92hoTvCDLuS7G3jznAIR_ZQ44rDR1B5OokFzfjRrE"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7800560/2026/11/21/army-navy-football-prank/",
-          "title": "Army cadets sneak into Navy stadium overnight, prank Midshipmen with ‘GO ARMY’ message",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3wGN5xircPpkGs4rDdEWFo3QAEVVr-dLJ5Ke28EtzefNaQv8BIIqA6VIg_DQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/article/army-pranks-navy-ahead-of-annual-football-matchup-with-go-army-message-in-midshipmens-home-stadium-183607258.html",
-          "title": "Army pranks Navy ahead of annual football matchup with 'Go Army' message in Midshipmen's home stadium",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5aT2E35hfatnVEjr_d7qod58-21ra0o45aW0aW-sodh0KE_H5WHizjsprUfE"
-        }
-      ]
-    },
-    {
-      "query": "early black friday sales",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-21T20:30:00Z",
-      "related_news_urls": [
-        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
-        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
-        "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
-          "title": "Early Black Friday deals live now: Ugg, Michael Kors, Hoka, Dyson, Ring and more are on major sale for the 2026 holiday event",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY"
-        },
-        {
-          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
-          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlCfDzuM36UYzWC6JwNIW_suwsgLu4AzcpqIq3xQYdsZIlSTDdhWQB7CLPms"
-        },
-        {
-          "url": "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals",
-          "title": "We vetted thousands of early Black Friday deals to find 42 worth pouncing on",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuTtvGXJaj0PcrnoFmkLXVclz26HKxlLWsNNx1VUK8se8PggMjU3FKOBwYmU"
-        }
-      ]
-    },
-    {
-      "query": "chicago fire season 15",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T20:30:00Z",
-      "related_news_urls": [
-        "https://www.nbc.com/nbc-insider/whats-next-for-violet-on-chicago-fire-season-15",
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/chicago-fire-season-15-cast-153704302.html",
-        "https://onechicagocenter.com/chicago-fire-might-be-about-say-goodbye-another-character-temporarily"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oNVFODOnfjz5AHoVOtfEuHjaJ-2igDUroyYBpQifoOhOjx56A-7BuO47MaY",
-      "image_credit": "NBC TV",
-      "news": [
-        {
-          "url": "https://www.nbc.com/nbc-insider/whats-next-for-violet-on-chicago-fire-season-15",
-          "title": "What’s Next for Violet on Chicago Fire Season 15?",
-          "publisher": "NBC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oNVFODOnfjz5AHoVOtfEuHjaJ-2igDUroyYBpQifoOhOjx56A-7BuO47MaY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/chicago-fire-season-15-cast-153704302.html",
-          "title": "‘Chicago Fire’ Season 15 Cast Shakeup: 2 Major Stars Exit, 1 New Regular Joins & 7 Stars Return",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQ1LMkiW6iHUOSeQ6IJ-MDcA2bQMzZbqy3Vo_Gn66S1x6HwlDK7ZNOItugZw"
-        },
-        {
-          "url": "https://onechicagocenter.com/chicago-fire-might-be-about-say-goodbye-another-character-temporarily",
-          "title": "Chicago Fire might be about to say a goodbye to another character (at least temporarily)",
-          "publisher": "One Chicago Center",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQATQKKwVbAtWyqPbK5vxjXVWPXKzivzsDsghWgcUgPkXYoY_lQv04YWhyLJhE"
-        }
-      ]
-    },
-    {
-      "query": "carlos ulberg",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T20:30:00Z",
-      "related_news_urls": [
-        "https://mmasucka.com/news/accepted-history-jiri-prochazka-has-no-regrets-over-carlos-ulberg-loss/",
-        "https://bloodyelbow.com/2026/11/21/jiri-prochazka-is-surprised-ufc-let-carlos-ulberg-stay-champ-after-telling-him-to-vacate-in-2022/",
-        "https://www.ufc.com/news/ufc-qatar-official-scorecards-prochazka-vs-stirling"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLAWeI4cMJkaVs6rIOY4JXCsMejFY6DCBSaFjfdMEfiKP5pm4GCqJKUNYJjg",
-      "image_credit": "MMA Sucka",
-      "news": [
-        {
-          "url": "https://mmasucka.com/news/accepted-history-jiri-prochazka-has-no-regrets-over-carlos-ulberg-loss/",
-          "title": "“Accepted History”: Jiri Prochazka Has No Regrets Over Carlos Ulberg Loss",
-          "publisher": "MMA Sucka",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLAWeI4cMJkaVs6rIOY4JXCsMejFY6DCBSaFjfdMEfiKP5pm4GCqJKUNYJjg"
-        },
-        {
-          "url": "https://bloodyelbow.com/2026/11/21/jiri-prochazka-is-surprised-ufc-let-carlos-ulberg-stay-champ-after-telling-him-to-vacate-in-2022/",
-          "title": "Jiri Prochazka is ‘surprised’ UFC let Carlos Ulberg stay champ after telling him to vacate in 2022",
-          "publisher": "Bloody Elbow",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2HGQfVJ8PywsAxInNNY8sfo9sR-ByywXNPVcsfwQdek5Ztnfll2dIIVD8E9M"
-        },
-        {
-          "url": "https://www.ufc.com/news/ufc-qatar-official-scorecards-prochazka-vs-stirling",
-          "title": "Official Scorecards | UFC Qatar",
-          "publisher": "UFC.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAc5-lCHmTacBl-45afGRZj3F-kmWtJUDcjruUO-lx_nofvqwOv8TkEalKixc"
-        }
-      ]
-    },
-    {
-      "query": "nebraska football coach",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T20:30:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/nebraska/longformarticle/husker-football-game-notes-against-ohio-state-buckeyes--293015942/",
-        "https://www.on3.com/teams/nebraska-cornhuskers/news/radio-notebook-e-j-barthel-on-jamal-rules-rise-isaiah-mozee-and-emmett-johnson/",
-        "https://www.si.com/college/nebraska/football/huskers-interim-oc-glenn-thomas-praises-jamal-rule-previews-ohio-state-01m7ndgnhx6d"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOuRwAJYRwV1W3pxxQr2rvwzr2L6hKuIy_vxLLhqpHLoT6lOcelqLIW2KahiE",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/nebraska/longformarticle/husker-football-game-notes-against-ohio-state-buckeyes--293015942/",
-          "title": "Husker Gameday Wrap: Notable NFL voices saw in Rule what Barthel did; Saturday's tale of the tape; Odem's turn",
+          "url": "https://247sports.com/article/whats-next-for-texas-quarterback-arch-manning-sources-paint-picture-of-qb-with-decision-to-make-292993974/",
+          "title": "What's next for Texas quarterback Arch Manning? Sources paint picture of QB with decision to make",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOuRwAJYRwV1W3pxxQr2rvwzr2L6hKuIy_vxLLhqpHLoT6lOcelqLIW2KahiE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYFEMxzR1C2Sr_9rgwnPStnNwjLIsXkSNdxcDMQbpIgOycn0xW86dJ0MXZGqk"
         },
         {
-          "url": "https://www.on3.com/teams/nebraska-cornhuskers/news/radio-notebook-e-j-barthel-on-jamal-rules-rise-isaiah-mozee-and-emmett-johnson/",
-          "title": "Radio Notebook: E.J. Barthel on Jamal Rule’s rise, and Emmett Johnson's NFL career so far",
-          "publisher": "On3",
+          "url": "https://www.burntorangenation.com/texas-longhorns-football/107563/arch-manning-senior-day-texas-longhorns",
+          "title": "Arch Manning among Texas players to receive recognition on Senior Day",
+          "publisher": "Burnt Orange Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPVZOhysIKeST3lyw4nbeGbjboXkP8bxj7S3c_4eaXXxHkxuXXHw7MfrJdAwk"
-        },
-        {
-          "url": "https://www.si.com/college/nebraska/football/huskers-interim-oc-glenn-thomas-praises-jamal-rule-previews-ohio-state-01m7ndgnhx6d",
-          "title": "'He's Really Turned the Corner': Nebraska Interim OC Glenn Thomas Praises Jamal Rule, Previews Ohio State",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq7PkoELULcIMZFcH5OZUqxfVs4RyJdbUrjPqEeaqQwroj1OoCLb-RTuwNAvs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUKVTqd4VCotAU5PronXUxJRrEKNpYdq8kxNmWigQ8ngrKXvi2w1GHjlsmGT8"
         }
       ]
     },
     {
-      "query": "nebraska football game",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T20:30:00Z",
+      "query": "ncaa football (fbs i)",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-21T20:50:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/",
-        "https://bleacherreport.com/liveblogs/25536112-college-football-week-12-live-cfb-updates-highlights-recap-and-reaction-nov-21",
-        "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights"
+        "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights",
+        "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-ohio-state-vs-nebraska-byu-vs-kansas-and-more-202236067.html",
+        "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkTJOXKJhSggr6UHiyrCHTsJNhmuyldgM47DQ-k0jiZNviMmnHAuZX3ahOsN4",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCFviRF0uCFDdQN4XdAlWWtLlSUMcuBqGBPqJkSHmOlhvv0VAxCArfJa4uRmc",
+      "image_credit": "ESPN",
       "news": [
-        {
-          "url": "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/",
-          "title": "College football picks: Predictions against the spread, odds, betting lines for top 25 games in Week 12",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkTJOXKJhSggr6UHiyrCHTsJNhmuyldgM47DQ-k0jiZNviMmnHAuZX3ahOsN4"
-        },
-        {
-          "url": "https://bleacherreport.com/liveblogs/25536112-college-football-week-12-live-cfb-updates-highlights-recap-and-reaction-nov-21",
-          "title": "College Football Week 12: Live CFB Updates, Highlights, Recap and Reaction for Nov. 21",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLuJw6VZ7XkIIJOBNDaMJw-orvTY_egc13RiyKj8z8kyO6GekK-eYuH5P2T3U"
-        },
         {
           "url": "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights",
           "title": "Week 12 live: Tracking top moments and best highlights",
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCFviRF0uCFDdQN4XdAlWWtLlSUMcuBqGBPqJkSHmOlhvv0VAxCArfJa4uRmc"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-ohio-state-vs-nebraska-byu-vs-kansas-and-more-202236067.html",
+          "title": "College football live updates, scores: LSU vs. Tennessee, UCLA vs. Michigan, Indiana vs. Washington and more",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjMvCgl8TbfQyEY7FzLIefotokFUh_6PrKOs1QVMSH4wk77juT9CSP9VIalKs"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/",
+          "title": "College football picks: Predictions against the spread, odds, betting lines for top 25 games in Week 12",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkTJOXKJhSggr6UHiyrCHTsJNhmuyldgM47DQ-k0jiZNviMmnHAuZX3ahOsN4"
+        }
+      ]
+    },
+    {
+      "query": "george macintyre",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T20:50:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/tennessee/article/tennessee-vols-starting-qb-lsu-faizon-brandon-george-macintyre-293069175/",
+        "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/21/george-macintyre-injury-update-tennessee-football-vs-lsu-faizon-brandon-quarterback/92897944007/",
+        "https://atozsports.com/nashville/volunteers/new-report-confirms-suspicion-tennessee-vols-quarterback-situation-lsu-tigers/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu0vrDBsYlKhIAjNYraDPFN-XWomJDCO4VOd2_DrU1dCAL9X9AnyWDBFGedlM",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/tennessee/article/tennessee-vols-starting-qb-lsu-faizon-brandon-george-macintyre-293069175/",
+          "title": "Faizon Brandon set to be Tennessee’s starting QB against LSU",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu0vrDBsYlKhIAjNYraDPFN-XWomJDCO4VOd2_DrU1dCAL9X9AnyWDBFGedlM"
+        },
+        {
+          "url": "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/21/george-macintyre-injury-update-tennessee-football-vs-lsu-faizon-brandon-quarterback/92897944007/",
+          "title": "Tennessee QB is a game-time decision vs LSU, George MacIntyre or Faizon Brandon",
+          "publisher": "Knoxville News Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQecPpq4w-lZKfdXp09wKw3pUy_GHsaanuhJn1tdWFNH7D9prb9Nym86xEnX8"
+        },
+        {
+          "url": "https://atozsports.com/nashville/volunteers/new-report-confirms-suspicion-tennessee-vols-quarterback-situation-lsu-tigers/",
+          "title": "New report confirms suspicion about the Tennessee Vols' quarterback situation against the LSU Tigers",
+          "publisher": "A to Z Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRho2RqMfib47TFVUJrETEaYwnvOEB21MgivNw9o8qx3mBINBNFQPy6f-ACnzY"
+        }
+      ]
+    },
+    {
+      "query": "big ten football standings",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T20:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/espn/betting/story/_/id/50504671/college-football-heisman-trophy-cfp-futures-betting-week-12",
+        "https://www.foxsports.com/stories/college-football/cfp-rankings-big-ten-oregon-ohio-state-iowa",
+        "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-12-cfp-hot-seats/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0VFwRqfRSa2YKOxubeWh1Qym1VQIR92ce34HB36eqmS6AsNzI46wE-cEYKwA",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/espn/betting/story/_/id/50504671/college-football-heisman-trophy-cfp-futures-betting-week-12",
+          "title": "Breaking down the major futures for the Big Ten, from the Heisman to the CFP",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0VFwRqfRSa2YKOxubeWh1Qym1VQIR92ce34HB36eqmS6AsNzI46wE-cEYKwA"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/college-football/cfp-rankings-big-ten-oregon-ohio-state-iowa",
+          "title": "College Football Playoff: Which Big Ten Bubble Team Could Make the Most Noise?",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhLkyLjqIpFi0KHGg_FiA4akLw-pQi3KKROnVxJcuRtWi3dce_r-ffSw1lJvo"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-12-cfp-hot-seats/",
+          "title": "Big Ten Power Rankings: Playoff hopes, hot seats fuel pivotal final two weeks of season",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk_59EMxUEwGOrwenk4OkiXZ5iKXzQxtDlN-W9V-dhPTBi5euAeurhtsRrF0Q"
+        }
+      ]
+    },
+    {
+      "query": "brady hart",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T20:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50549670/sources-texas-expected-bench-marcel-reed-vs-sooners",
+        "https://www.cbssports.com/college-football/news/texas-a-m-bench-marcel-reed-qb-brady-hart-oklahoma-game/",
+        "https://soonerswire.usatoday.com/story/sports/college/sooners/football/2026/11/20/oklahoma-football-texas-am-brady-hart-marcel-reed/92875067007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2s8AGgbUvpO3SUXjmFXBUgC0IxT4qOSesal014KlKSQQ0ZuxSbFQlpbotDTE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50549670/sources-texas-expected-bench-marcel-reed-vs-sooners",
+          "title": "Sources: Texas A&M expected to bench Marcel Reed, start Brady Hart",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2s8AGgbUvpO3SUXjmFXBUgC0IxT4qOSesal014KlKSQQ0ZuxSbFQlpbotDTE"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/texas-a-m-bench-marcel-reed-qb-brady-hart-oklahoma-game/",
+          "title": "Texas A&M expected to bench Marcel Reed: Aggies set to make QB change for Week 12 showdown vs. Oklahoma",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbKuyBeJIVUEkZPIgRuuTScQExdmccvbAmkl5KaFrYf7rvtCnzJqv5zuSXC_0"
+        },
+        {
+          "url": "https://soonerswire.usatoday.com/story/sports/college/sooners/football/2026/11/20/oklahoma-football-texas-am-brady-hart-marcel-reed/92875067007/",
+          "title": "Texas A&M expected to make a change at quarterback per reports",
+          "publisher": "Sooners Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVh02rbvlRkj51rFzMdcm61voXt6xgcVyzGll6KbarQJ79KkRnWAcvhyRBRO0"
+        }
+      ]
+    },
+    {
+      "query": "why is fsu wearing turquoise today",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T20:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50534624/week-12-college-football-uniforms-florida-state",
+        "https://247sports.com/college/florida-state/contentgallery/fsu-football-turqoise-field-293014004/",
+        "https://news.sportslogos.net/2026/11/17/florida-state-wearing-turquoise-uniforms-on-saturday-against-n-c-state/college/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnhCK1Q78nUf9i0c45yhvVZicS0eTqZHottAAtUOikj-81pVcLlRoFitlqwLE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50534624/week-12-college-football-uniforms-florida-state",
+          "title": "Florida State going turquoise tops best uniforms of CFB Week 12",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnhCK1Q78nUf9i0c45yhvVZicS0eTqZHottAAtUOikj-81pVcLlRoFitlqwLE"
+        },
+        {
+          "url": "https://247sports.com/college/florida-state/contentgallery/fsu-football-turqoise-field-293014004/",
+          "title": "A look at the turquoise on the field for Florida State's Seminole Heritage game against NC State",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdbBTNfBwxy_Wju7Ck7YHoxT5JbgwvmvFtwGINgy_DXfWSvfNFRkj449VCDZM"
+        },
+        {
+          "url": "https://news.sportslogos.net/2026/11/17/florida-state-wearing-turquoise-uniforms-on-saturday-against-n-c-state/college/",
+          "title": "Florida State Wearing Turquoise Uniforms On Saturday Against N.C. State",
+          "publisher": "SportsLogos.Net News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUhUA7FcnG5-OyDipOaAbryMMCikZUhIaKD7gfkxH4J48glLiPNZ8ca5ozPjA"
+        }
+      ]
+    },
+    {
+      "query": "u. católica - barcelona sc",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T20:50:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/ecuador/nota/_/id/17536175/pablo-trobbiani-desafio-barcelona-ante-universidad-catolica",
+        "https://www.ecuavisa.com/liveblogs/universidad-catolica-vs.-barcelona-sc-por-el-hexagonal-final-de-la-ligapro-lb202611210001.html",
+        "https://studiofutbol.com.ec/2026/11/19/trobbiani-ganando-los-partidos-tendremos-posibilidades-para-meternos-en-el-peloton-de-arriba/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT01wv5i-FXBf-Ofo4zH6D0YNKaf3DnepJMGyIhPWGTJvS46wiz0M6TseoksI8",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/ecuador/nota/_/id/17536175/pablo-trobbiani-desafio-barcelona-ante-universidad-catolica",
+          "title": "Pablo Trobbiani y el desafío de Barcelona ante la Universidad Católica: \"No nos resignamos en ninguna cancha\"",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT01wv5i-FXBf-Ofo4zH6D0YNKaf3DnepJMGyIhPWGTJvS46wiz0M6TseoksI8"
+        },
+        {
+          "url": "https://www.ecuavisa.com/liveblogs/universidad-catolica-vs.-barcelona-sc-por-el-hexagonal-final-de-la-ligapro-lb202611210001.html",
+          "title": "Universidad Católica vs. Barcelona SC por el hexagonal final de la LigaPro",
+          "publisher": "Ecuavisa",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYvjBGQyFP4YbkPBSNNqWc9YDeKu3I0gd3-kEEFH5unzDz5Dq_tQs1cNL6weI"
+        },
+        {
+          "url": "https://studiofutbol.com.ec/2026/11/19/trobbiani-ganando-los-partidos-tendremos-posibilidades-para-meternos-en-el-peloton-de-arriba/",
+          "title": "Trobbiani: “Ganando los partidos tendremos posibilidades para meternos en el pelotón de arriba”",
+          "publisher": "Studiofutbol",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRW43IQhTZnEOfNmyGJkIkqGUp5tPsGSI_UTnuJnPbt6d5FLbSHZnSJSCyFrKM"
         }
       ]
     }
