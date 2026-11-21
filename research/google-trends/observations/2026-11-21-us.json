@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T07:01:22.587866Z",
+  "checked_at": "2026-11-21T07:30:38.440123Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "dom mar fan",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T07:10:00Z",
+      "related_news_urls": [
+        "https://cagesidepress.com/2026/11/20/ufc-qatars-dom-mar-fan-discusses-move-to-city-kickboxing/",
+        "https://sports.yahoo.com/articles/nikolas-motta-vs-dom-mar-224829203.html",
+        "https://cagesidepress.com/2026/11/18/ttp-ep-558-dom-mar-fan-canon-swanson-and-ufc-qatar/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK5p-XV66XjfKPuJFoi6CjkTHgnh7w408GjKIz6_xBmnH2PU8GYr55bWZ2HnY",
+      "image_credit": "Cageside Press",
+      "news": [
+        {
+          "url": "https://cagesidepress.com/2026/11/20/ufc-qatars-dom-mar-fan-discusses-move-to-city-kickboxing/",
+          "title": "UFC Qatar’s Dom Mar Fan Discusses Move to City Kickboxing",
+          "publisher": "Cageside Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK5p-XV66XjfKPuJFoi6CjkTHgnh7w408GjKIz6_xBmnH2PU8GYr55bWZ2HnY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nikolas-motta-vs-dom-mar-224829203.html",
+          "title": "Nikolas Motta vs. Dom Mar Fan prediction, odds, pick for UFC Doha",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiWMDdgmgRz8m12ccRhLv1Z2xEjauUSUUoREYEc0A1jPtK7duRhvyWKUE5b5E"
+        },
+        {
+          "url": "https://cagesidepress.com/2026/11/18/ttp-ep-558-dom-mar-fan-canon-swanson-and-ufc-qatar/",
+          "title": "TTP Ep. 558: Dom Mar Fan, Canon Swanson, and UFC Qatar",
+          "publisher": "Cageside Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnFjTrnUVXmBlMJfl6mNeJgXbjffaUo3pK28eq0UHDoMzFSHR963mcJ1L8SOw"
+        }
+      ]
+    },
+    {
+      "query": "bradley cooper",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T07:00:00Z",
+      "related_news_urls": [
+        "https://minutemirror.com.pk/gigi-and-bradley-fuel-secret-wedding-rumours-again-662996/",
+        "https://www.dailymail.com/tvshowbiz/article-16306687/gigi-hadid-bradley-cooper-ring-marriage-rumors.html",
+        "https://www.instyle.com/jennifer-lawrence-discusses-breast-implants-watch-what-happens-live-12268189"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTze7uZiMK5_cVEq9aZQ6Mni9u5tUM0CWaLVDPuYPAw6nG23UM3PaqdvFsOtiE",
+      "image_credit": "Minute Mirror",
+      "news": [
+        {
+          "url": "https://minutemirror.com.pk/gigi-and-bradley-fuel-secret-wedding-rumours-again-662996/",
+          "title": "Gigi and Bradley fuel secret wedding rumours again",
+          "publisher": "Minute Mirror",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTze7uZiMK5_cVEq9aZQ6Mni9u5tUM0CWaLVDPuYPAw6nG23UM3PaqdvFsOtiE"
+        },
+        {
+          "url": "https://www.dailymail.com/tvshowbiz/article-16306687/gigi-hadid-bradley-cooper-ring-marriage-rumors.html",
+          "title": "Gigi Hadid and Bradley Cooper show off rings amid marriage rumors",
+          "publisher": "Daily Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbUcgRfqORJZFLxlXZhG90_KSCMCAWi4II4b8KZDE-LfLKGvpF-eeg0Yd4bdc"
+        },
+        {
+          "url": "https://www.instyle.com/jennifer-lawrence-discusses-breast-implants-watch-what-happens-live-12268189",
+          "title": "Jennifer Lawrence, 36, Shows Off Her “New” Breast Implants on Live TV",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNzbCSf8KIvMyrSQAehTOXa5_wC7-QyluOjRkK-wU-wdNyQ8NFMc-u8tS4i0U"
+        }
+      ]
+    },
+    {
+      "query": "jd",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T07:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/18/us/politics/vance-trump-iran-2028-election-rubio.html",
+        "https://www.vox.com/today-explained-newsletter/511471/jd-vance-trump-iran-war-immigration-2028",
+        "https://www.reuters.com/world/us/us-vice-president-vance-declines-say-he-would-have-ordered-iran-strikes-2026-11-20/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgW_IsXtXeyUvtUVdrlGMxPieNAS2aLFu6XzIZOxAArlKxBNOSCxwc9RjqeY",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/18/us/politics/vance-trump-iran-2028-election-rubio.html",
+          "title": "Trump Grows Frustrated With Vance Over Iran War Critique",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPgW_IsXtXeyUvtUVdrlGMxPieNAS2aLFu6XzIZOxAArlKxBNOSCxwc9RjqeY"
+        },
+        {
+          "url": "https://www.vox.com/today-explained-newsletter/511471/jd-vance-trump-iran-war-immigration-2028",
+          "title": "2028 Republican primary: Why everyone, even the GOP, is sick of JD Vance",
+          "publisher": "Vox",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpY-uXH3ZAmJiFeEEHUyFzNK92I4NSnI5Pa_y_rEePYC_uecJNjDQ4qsx6oWQ"
+        },
+        {
+          "url": "https://www.reuters.com/world/us/us-vice-president-vance-declines-say-he-would-have-ordered-iran-strikes-2026-11-20/",
+          "title": "US Vice President Vance declines to say he would have ordered Iran strikes",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZB42oS7xCDUbBtCdRjvuYgvc32WKt9mWP1g9tyWFZtVSGlEhC2SfzSr0J_HU"
+        }
+      ]
+    },
+    {
+      "query": "black friday deals games",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T06:50:00Z",
+      "related_news_urls": [
+        "https://www.gamesradar.com/live/news/best-early-black-friday-deals-for-gamers-this-weekend-26/",
+        "https://www.polygon.com/black-friday-2026-amazon-gaming-deals-when-ps5-ps5-xbox-nintendo-switch/",
+        "https://kotaku.com/a-ton-of-big-blockbuster-games-are-already-on-sale-for-black-friday-2026-2000757513"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkGS8_Kt8vqRRjfIixMwyo7wUSmH8OCjAaW0QIXz0N65UACL5YmgNu5bkp2QU",
+      "image_credit": "GamesRadar+",
+      "news": [
+        {
+          "url": "https://www.gamesradar.com/live/news/best-early-black-friday-deals-for-gamers-this-weekend-26/",
+          "title": "The best Black Friday deals for gamers already live this weekend: tracking the PS5, Switch 2, Xbox, and PC discounts you need to know about",
+          "publisher": "GamesRadar+",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkGS8_Kt8vqRRjfIixMwyo7wUSmH8OCjAaW0QIXz0N65UACL5YmgNu5bkp2QU"
+        },
+        {
+          "url": "https://www.polygon.com/black-friday-2026-amazon-gaming-deals-when-ps5-ps5-xbox-nintendo-switch/",
+          "title": "Amazon Officially Reveals Early Black Friday Gaming Deals",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8f6UE6gAmzVDwp5pSk3sWSbcwef9yPNh3bub_sBzh8Emn1nS-bW342w9414"
+        },
+        {
+          "url": "https://kotaku.com/a-ton-of-big-blockbuster-games-are-already-on-sale-for-black-friday-2026-2000757513",
+          "title": "A Ton Of Big Blockbuster Games Are Already On Sale For Black Friday 2026",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStfOp-qQxwB3vOIiynabeUxk_8vv1Pd9589I0xMEZLekytxZ8TEmNuE-s68JQ"
+        }
+      ]
+    },
+    {
+      "query": "rdr2",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T06:50:00Z",
+      "related_news_urls": [
+        "https://www.pcgamer.com/games/grand-theft-auto/your-gta-6-car-is-your-red-dead-2-horse-and-its-perfect/",
+        "https://www.svg.com/2316304/red-dead-redemption-2-features-returning-gta-6/",
+        "https://www.gamingbible.com/news/rockstar-explain-gta-6-prologue-inspiration-802250-20261119"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpjamHV8sgT0ZDM26u6Jr5jijDiOjhivz9x0w4eL0ihvuhYJgA7dgb_xEKKe8",
+      "image_credit": "PC Gamer",
+      "news": [
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/your-gta-6-car-is-your-red-dead-2-horse-and-its-perfect/",
+          "title": "Your GTA 6 car is your Red Dead 2 horse, and it's perfect",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpjamHV8sgT0ZDM26u6Jr5jijDiOjhivz9x0w4eL0ihvuhYJgA7dgb_xEKKe8"
+        },
+        {
+          "url": "https://www.svg.com/2316304/red-dead-redemption-2-features-returning-gta-6/",
+          "title": "5 Red Dead Redemption 2 Features That Are Officially Returning In GTA 6",
+          "publisher": "SVG",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2NADk0Y8DYpxCM68SxFStCwEexe0oVRvLg9m5t7YxRpJq516RmRi1NsDHVxo"
+        },
+        {
+          "url": "https://www.gamingbible.com/news/rockstar-explain-gta-6-prologue-inspiration-802250-20261119",
+          "title": "Rockstar co-lead explains how GTA 6's prologue was inspired by Red Dead Redemption 2",
+          "publisher": "GAMINGbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfZc7YNkE7yMTd5U2PPI0SURXn6oOdzhnfwxshQ65XiPsG7ZJcrVvPHdaL4w4"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 brooks boatworks safe code",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T06:50:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/",
+        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-bowling-alley-heist"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
+          "title": "All GTA 6 Safe Codes for Chapter 2 in Port Gellhorn",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/",
+          "title": "How to get safe codes in GTA 6",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2ms6fTUbdJbV3FDg6ZgjRQPz0mFg8z2pG3omv6zgx07xkHmuMyHuc5Qxl3Z0"
+        },
+        {
+          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-bowling-alley-heist",
+          "title": "All Kingpin Bowling Alley Robbery Loot & Secrets Locations - GTA 6",
+          "publisher": "Mobalytics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A"
+        }
+      ]
+    },
+    {
+      "query": "tenebrae lux",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T06:50:00Z",
+      "related_news_urls": [
+        "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
+        "https://www.polygon.com/gta-6-tenebrae-lux-jonathan-blow/",
+        "https://www.gamespot.com/articles/gta-6-tenebrae-lux-puzzle-solutions-guide/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o",
+      "image_credit": "Kotaku",
+      "news": [
+        {
+          "url": "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
+          "title": "GTA 6′ s Tenebrae Lux Is A Hilarious Parody Of Video Game Auteurs, And A Surprisingly Good Puzzle Diversion",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o"
+        },
+        {
+          "url": "https://www.polygon.com/gta-6-tenebrae-lux-jonathan-blow/",
+          "title": "GTA 6's Tenebrae Lux Minigame Is the Ultimate Jonathan Blow Parody",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmyvsPQQaUcf2wfEtj64NFMERXVy5fsqMrM9rnsc94Kn9BEtDxUxBb8TPQoGM"
+        },
+        {
+          "url": "https://www.gamespot.com/articles/gta-6-tenebrae-lux-puzzle-solutions-guide/",
+          "title": "All Tenebrae Lux Puzzle Solutions In GTA 6",
+          "publisher": "GameSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSz4ZLo2unTJ4ooGZAZHV7p9ZtnsmmHIWPDL72mdNaYiYTMYH6Ww5C5eA0qDI"
+        }
+      ]
+    },
+    {
+      "query": "meryl streep",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T06:50:00Z",
+      "related_news_urls": [
+        "https://ca.news.yahoo.com/martin-short-cornered-meryl-streep-165813997.html",
+        "https://www.aol.com/articles/selena-gomez-jimmy-kimmel-tease-153410000.html",
+        "https://www.yahoo.com/news/videos/jimmy-kimmel-corners-martin-short-165813679.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYGm4M3RpfYYcnRWqjUNTWs0IyU_Ltkje643lWlZ0IdFpRo3YkySlHG95gaDs",
+      "image_credit": "Yahoo News Canada",
+      "news": [
+        {
+          "url": "https://ca.news.yahoo.com/martin-short-cornered-meryl-streep-165813997.html",
+          "title": "Martin Short Cornered on Meryl Streep Dating Rumors",
+          "publisher": "Yahoo News Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYGm4M3RpfYYcnRWqjUNTWs0IyU_Ltkje643lWlZ0IdFpRo3YkySlHG95gaDs"
+        },
+        {
+          "url": "https://www.aol.com/articles/selena-gomez-jimmy-kimmel-tease-153410000.html",
+          "title": "Selena Gomez and Jimmy Kimmel Tease Martin Short About Meryl Streep Amid Dating Rumors: 'I Wonder Why She Keeps Coming Back'",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluHx7XHzkzNK9lMOb9AQO9rBFo3wBnBU0WkV2X4KRsciFOiQuZO9c13Y4qFs"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/jimmy-kimmel-corners-martin-short-165813679.html",
+          "title": "Jimmy Kimmel Corners Martin Short About Meryl Streep Rumors",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtk0kCYLkChrLDieGm2fetAjpwsDG6Y8aH53Qq7i4BeO81pqLFTdGcGDQBsN4"
+        }
+      ]
+    },
     {
       "query": "gta online",
       "approx_searches": "500+",
@@ -13,7 +293,7 @@
       "related_news_urls": [
         "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
         "https://insider-gaming.com/gta-6-online-multiplayer-release/",
-        "https://demokratis.co.id/en/gta-6-online-2027-release"
+        "https://peradaban.id/en/rockstar-gta-6-online-launch"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY",
       "image_credit": "PCMag",
@@ -33,46 +313,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLCQvP0awzrdwWwfKJayKz5rcXt9B0hOeXI4R08_yDwpFncUNC6p158Nff8E0"
         },
         {
-          "url": "https://demokratis.co.id/en/gta-6-online-2027-release",
-          "title": "Rockstar Targets 2027 for GTA 6 Online Multiplayer Release",
-          "publisher": "Demokratis.co.id",
+          "url": "https://peradaban.id/en/rockstar-gta-6-online-launch",
+          "title": "Rockstar Targets 2027 for GTA 6 Online Launch",
+          "publisher": "Peradaban.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_wrienaqdvQFOpwZoOca7UGdMh4o5akT-9cIrsBbaicXITz5Bo6pPDQuMO8"
-        }
-      ]
-    },
-    {
-      "query": "owen wilson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T06:30:00Z",
-      "related_news_urls": [
-        "https://www.fox6now.com/video/fmc-qqit8y02m0llxri4",
-        "https://www.bgr.com/2319273/owen-wilson-golf-comedy-stick-apple-tv-season-2/",
-        "https://readysteadycut.com/2026/11/18/stick-season-2-episode-4-recap/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCu553P96oQXBB0_zGQWtPx-b0d6eFyakgt5vKW_vk6LamGjKvFlTmztRm4y8",
-      "image_credit": "FOX6 News Milwaukee",
-      "news": [
-        {
-          "url": "https://www.fox6now.com/video/fmc-qqit8y02m0llxri4",
-          "title": "'Stick' Season 2; Gino at the Movies",
-          "publisher": "FOX6 News Milwaukee",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCu553P96oQXBB0_zGQWtPx-b0d6eFyakgt5vKW_vk6LamGjKvFlTmztRm4y8"
-        },
-        {
-          "url": "https://www.bgr.com/2319273/owen-wilson-golf-comedy-stick-apple-tv-season-2/",
-          "title": "Owen Wilson's Golf Comedy On Apple TV Swings Big In Season 2 And Wins It All",
-          "publisher": "BGR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpMBRLvvMtN20l8LxJUjVSIeVCeHNeyQVzNnc6NS4SzRDDOU6lmjDgSf9WJB4"
-        },
-        {
-          "url": "https://readysteadycut.com/2026/11/18/stick-season-2-episode-4-recap/",
-          "title": "‘Stick’ Season 2, Episode 4 Recap – The Arcade Solves Everything",
-          "publisher": "Ready Steady Cut",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3Oeilwmtius9p-2c4DiKvGjIcPCP2XTgJ3bmy82FkF5YxOZqdY7xvIRb6Eg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKU4_ZHOPhB81UJD4u17V4ZvglM_2KgYCRR8ZTba17-iDbhLTmd41JcMa0j7o"
         }
       ]
     },
@@ -81,278 +326,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-21T06:30:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/news/articles/cmqj5dr01e85o",
-        "https://www.bloomberg.com/news/articles/2026-11-19/gamestop-ceo-criticizes-digital-game-releases-on-gta-vi-eve",
-        "https://www.kctv5.com/2026/11/20/kansas-city-gaming-community-weighs-grand-theft-auto-vi-digital-only-release/"
+        "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
+        "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095",
+        "https://tech.yahoo.com/general/breaking-news/article/the-actor-behind-jason-in-gta-6-has-finally-been-revealed-heres-where-youve-seen-him-before-150006402.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjRaXBCikK7i9UCpt0-OorQHJerXOdPJGc5MpTgD2BumnOlTYPsq1peqkzD1Y",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU",
+      "image_credit": "AP News",
       "news": [
         {
-          "url": "https://www.bbc.com/news/articles/cmqj5dr01e85o",
-          "title": "I've only sold five copies of GTA 6, says shop owner",
-          "publisher": "BBC",
+          "url": "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
+          "title": "‘GTA VI’ finally reveals the actors, voices and familiar names behind Vice City",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjRaXBCikK7i9UCpt0-OorQHJerXOdPJGc5MpTgD2BumnOlTYPsq1peqkzD1Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-19/gamestop-ceo-criticizes-digital-game-releases-on-gta-vi-eve",
-          "title": "GameStop CEO Criticizes Digital Game Releases on ‘GTA VI’ Eve",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095",
+          "title": "Everything We Know About Manni L. Perez, ‘GTA 6’ Female Lead Lucia Caminos",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwoYDIne8iF-Lhm-zMl5t6gDVCbHxo63gmxYNXvFk9YYZhf-PguKI86mKO-m8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT05kjwrBYX-lcuM3Uf66HDH1E_MhJOBIOl6sfAWvMlnSd8wJyaVwBYXvgzUkI"
         },
         {
-          "url": "https://www.kctv5.com/2026/11/20/kansas-city-gaming-community-weighs-grand-theft-auto-vi-digital-only-release/",
-          "title": "Kansas City gaming community weighs in on ‘Grand Theft Auto VI’ digital-only release",
-          "publisher": "KCTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZhOsZsgIhO2Yh3XHxfFje8G0aEwAZznlVjsJaJCW9RLjTkLoSXmOcBC0sF4M"
-        }
-      ]
-    },
-    {
-      "query": "amir albazi",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T06:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/amir-albazi-vs-alessandro-costa-224939377.html",
-        "https://mmasucka.com/previews/ufc-qatar-three-preliminary-fights-to-watch-out-for/",
-        "https://www.thestatszone.com/ufc-fight-night-amir-albazi-vs-alessandro-costa-preview-prediction-239685"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ056z-scIGVJBA3f3QbQeo-K5PBhiYZ9WF6odeurGilIlJoeJWLku2tC8TtzU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/amir-albazi-vs-alessandro-costa-224939377.html",
-          "title": "Amir Albazi vs. Alessandro Costa prediction, odds, pick for UFC Doha",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ056z-scIGVJBA3f3QbQeo-K5PBhiYZ9WF6odeurGilIlJoeJWLku2tC8TtzU"
-        },
-        {
-          "url": "https://mmasucka.com/previews/ufc-qatar-three-preliminary-fights-to-watch-out-for/",
-          "title": "UFC Qatar: 3 Preliminary Fights You Need To Watch Out For",
-          "publisher": "MMA Sucka",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKnshVVsLkSkGy36WVfqjyGWPfkGjs8ZcP3dInDC1755aru3cHxZ6vLH7GQj4"
-        },
-        {
-          "url": "https://www.thestatszone.com/ufc-fight-night-amir-albazi-vs-alessandro-costa-preview-prediction-239685",
-          "title": "UFC Fight Night: Amir Albazi vs Alessandro Costa Preview & Prediction",
-          "publisher": "The Stats Zone",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZeqJDc75Ruh9oni8m0BWqKnyj-8EnSPnfxqAvUVOOrnkTiFi7ZS2J5SAUFPA"
-        }
-      ]
-    },
-    {
-      "query": "criminal profile gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T06:10:00Z",
-      "related_news_urls": [
-        "https://tech.yahoo.com/gaming/articles/wife-says-husband-t-gta-163000428.html",
-        "https://gameinformer.com/exclusive-interview/2026/11/19/exclusive-behind-the-romance-rockstar-talks-gtavis-jason-and-lucia",
-        "https://19thnews.org/2026/11/grand-theft-auto-vi-women-gender-relationships/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvcf9fkj9B5TIg8Mt0J4P5eIQfUT6kiklKHGjpb1aftNk90QlvQezixalMpfU",
-      "image_credit": "Yahoo Tech",
-      "news": [
-        {
-          "url": "https://tech.yahoo.com/gaming/articles/wife-says-husband-t-gta-163000428.html",
-          "title": "Wife says husband can’t get GTA 6 after waiting forever because ‘you’re gonna have to have a girlfriend in the game and that’s cheating’",
+          "url": "https://tech.yahoo.com/general/breaking-news/article/the-actor-behind-jason-in-gta-6-has-finally-been-revealed-heres-where-youve-seen-him-before-150006402.html",
+          "title": "The actor behind Jason in 'GTA 6' has finally been revealed. Here's where you've seen him before.",
           "publisher": "Yahoo Tech",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvcf9fkj9B5TIg8Mt0J4P5eIQfUT6kiklKHGjpb1aftNk90QlvQezixalMpfU"
-        },
-        {
-          "url": "https://gameinformer.com/exclusive-interview/2026/11/19/exclusive-behind-the-romance-rockstar-talks-gtavis-jason-and-lucia",
-          "title": "Exclusive – Behind The Romance: Rockstar Talks GTAVI’s Jason And Lucia",
-          "publisher": "Game Informer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROrOICxsxrFJ6TctWwyl7lpdSKa1VdcVrNLarS55n-SiWCjuXhuAGPvgylxU"
-        },
-        {
-          "url": "https://19thnews.org/2026/11/grand-theft-auto-vi-women-gender-relationships/",
-          "title": "‘GTA 6’ is introducing a new kind of mission: being a good partner",
-          "publisher": "The 19th News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIuVUh9_VZmas6lSX0htLBxUVr0ctkK4zTbU_Z-i-LNoZY4cssupVtF1Blm_g"
-        }
-      ]
-    },
-    {
-      "query": "aljamain sterling",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T06:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/aljamain-sterling-vs-kevin-vallejos-010113209.html",
-        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/19/ufc-qatar-kevin-vallejos-aims-alex-volkanovski-attention/92857393007/",
-        "https://www.ufc.com/video/162172"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS97fDfWN-dUs9IP1R189b_kKJ90PB7QYxHJM1hEFCFT3MpQn_ihN8ilpanOuE",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/aljamain-sterling-vs-kevin-vallejos-010113209.html",
-          "title": "Aljamain Sterling vs. Kevin Vallejos prediction, pick, start time, odds for UFC Qatar",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS97fDfWN-dUs9IP1R189b_kKJ90PB7QYxHJM1hEFCFT3MpQn_ihN8ilpanOuE"
-        },
-        {
-          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/19/ufc-qatar-kevin-vallejos-aims-alex-volkanovski-attention/92857393007/",
-          "title": "Kevin Vallejos hopes highlight UFC Qatar KO gets Alexander Volkanovski's attention",
-          "publisher": "MMA Junkie",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvClz1uFfj8l-rskpSFV33C47kls5Vx6Lm6Q9IoJQjD6uBEU_4f-HkAAbcyP8"
-        },
-        {
-          "url": "https://www.ufc.com/video/162172",
-          "title": "Kevin Vallejos: 'I'm In Perfect Condition' | UFC Qatar",
-          "publisher": "UFC.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtoVmzF_Z1Q7J04S9CCs3nn0WY0nhNUsCN94SmqAMej9-gE44rchlQPzeh-6g"
-        }
-      ]
-    },
-    {
-      "query": "byu vs kansas prediction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T06:00:00Z",
-      "related_news_urls": [
-        "https://www.deseret.com/sports/2026/11/20/byu-cougars-kansas-jayhawks-upset-lawrence-favored-martin-bachmeier-marshall/",
-        "https://www2.kusports.com/sports/college/football/2026/nov/20/preview-ku-faces-difficult-test-with-no-10-byu-on-senior-day/",
-        "https://www.ksl.com/article/51647199/pick-six-previews-byus-defense-to-hold-kansas-en-route-to-road-win"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVrpITkTbDPs9c1pt57ptwfnbhfC9iuFuI1_vv60y4kA7ku6HHgrMQ0jLSm_E",
-      "image_credit": "Deseret News",
-      "news": [
-        {
-          "url": "https://www.deseret.com/sports/2026/11/20/byu-cougars-kansas-jayhawks-upset-lawrence-favored-martin-bachmeier-marshall/",
-          "title": "No. 10 BYU on upset alert, again, at Kansas on Saturday",
-          "publisher": "Deseret News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVrpITkTbDPs9c1pt57ptwfnbhfC9iuFuI1_vv60y4kA7ku6HHgrMQ0jLSm_E"
-        },
-        {
-          "url": "https://www2.kusports.com/sports/college/football/2026/nov/20/preview-ku-faces-difficult-test-with-no-10-byu-on-senior-day/",
-          "title": "Preview: KU faces difficult test with No. 10 BYU on senior day",
-          "publisher": "KU Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlEIHB7C45uZrHrieGbzhp_Fmmv6VSiAi8FhPCSXiHX-terTdWrLNH3cymzYk"
-        },
-        {
-          "url": "https://www.ksl.com/article/51647199/pick-six-previews-byus-defense-to-hold-kansas-en-route-to-road-win",
-          "title": "Pick Six Previews: BYU's defense to hold Kansas en route to road win",
-          "publisher": "KSL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUzMw9GrilElKswqZH6vUWbzcxMQB15-nZUnd1GZ1Gp49kji0D34KWVSxwaoY"
-        }
-      ]
-    },
-    {
-      "query": "lakers standings",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T05:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50519611/quentin-grimes-2nd-laker-hit-10-3s-single-game",
-        "https://www.latimes.com/sports/lakers/story/2026-11-19/lakers-guard-quentin-grimes-tries-to-maintain-hot-shooting",
-        "https://sports.yahoo.com/nba/breaking-news/article/quentin-grimes-matches-kobe-bryant-mark-with-10-3-pointers-drops-career-high-47-points-to-lift-lakers-past-hornets-070602327.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnbQEe_mQcVwSD9bVYWDGbz313bXrOz9PCF4jIK0Xvk8DMWd3GyrkYlt45fn4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50519611/quentin-grimes-2nd-laker-hit-10-3s-single-game",
-          "title": "Quentin Grimes becomes 2nd in Lakers history to hit 10 or more 3s in single game",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnbQEe_mQcVwSD9bVYWDGbz313bXrOz9PCF4jIK0Xvk8DMWd3GyrkYlt45fn4"
-        },
-        {
-          "url": "https://www.latimes.com/sports/lakers/story/2026-11-19/lakers-guard-quentin-grimes-tries-to-maintain-hot-shooting",
-          "title": "How the Lakers’ Quentin Grimes wants to maintain his hot shooting, even off the bench",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9LpIsu6QwdVdBLidqlI6HMKb_UWbHhQ5rXcJg6Yo0APzP4OuZNC2ze3p41nI"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/quentin-grimes-matches-kobe-bryant-mark-with-10-3-pointers-drops-career-high-47-points-to-lift-lakers-past-hornets-070602327.html",
-          "title": "Quentin Grimes matches Kobe Bryant mark with 10 3-pointers, drops career-high 47 points to lift Lakers past Hornets",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKKwR4jFI3IQ8E-4Q_kb52r3ZxA4LOims4DBxSbVX9cGyYXznXoG8RXAPUCHc"
-        }
-      ]
-    },
-    {
-      "query": "general hospital",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T05:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/why-sonny-may-not-behind-191555543.html",
-        "https://www.soapoperadigest.com/content/general-hospital-recap-everyones-coming-for-sonny-and-judes-secret-accomplice-is-revealed/",
-        "https://daytimeconfidential.com/2026/11/19/perkies-observations-bullets-fly-at-the-piers-on-general-hospital"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEWhtCpTVZ930g5KVFI9bwC2dSUT80X5x9MUMv6aEB1CKdr9YKkmZruvQEg1E",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/why-sonny-may-not-behind-191555543.html",
-          "title": "Why Sonny May Not Be Behind the Pier Shooting on GH",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEWhtCpTVZ930g5KVFI9bwC2dSUT80X5x9MUMv6aEB1CKdr9YKkmZruvQEg1E"
-        },
-        {
-          "url": "https://www.soapoperadigest.com/content/general-hospital-recap-everyones-coming-for-sonny-and-judes-secret-accomplice-is-revealed/",
-          "title": "General Hospital Recap: Everyone’s Coming for Sonny and Jude’s Secret Accomplice is Revealed!",
-          "publisher": "Soap Opera Digest",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD947ABJlLkh2OCqhKb2FaKNv54FsAzAOTL7nlUACSDmj5t2JnORTENBcrewQ"
-        },
-        {
-          "url": "https://daytimeconfidential.com/2026/11/19/perkies-observations-bullets-fly-at-the-piers-on-general-hospital",
-          "title": "General Hospital recap: Bullets Fly at The Piers!",
-          "publisher": "Daytime Confidential",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHmk1uBB0Q-1llzVTC_BWCnlhQSkKVvEfRucWvYu4DpVXIUknK_ZTgN3Jbztc"
-        }
-      ]
-    },
-    {
-      "query": "where is the strip club in gta6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T05:40:00Z",
-      "related_news_urls": [
-        "https://escorenews.com/en/article/82818-how-to-find-strip-clubs-in-gta-6-all-locations-is-there-sex-and-nudity-and-how-to-get-a-private-dance",
-        "https://www.elconstitucional.es/en/ecm/find/the-heel-of-gta-6-what-it-is-and-why-it-has-become-one-of-the-most-sought-after-places-in-the-video-game_10403_102.html",
-        "https://bsinews.id/en/gta-six-strip-clubs-locations"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuIXonaCK9O7dw23qGrpWfzjktIs4lsP9Mgou82Ta4bQcvfM3e-F_yOBNneaU",
-      "image_credit": "escorenews.com",
-      "news": [
-        {
-          "url": "https://escorenews.com/en/article/82818-how-to-find-strip-clubs-in-gta-6-all-locations-is-there-sex-and-nudity-and-how-to-get-a-private-dance",
-          "title": "How to find strip clubs in GTA 6: all locations, is there sex and nudity, and how to get a private dance",
-          "publisher": "escorenews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuIXonaCK9O7dw23qGrpWfzjktIs4lsP9Mgou82Ta4bQcvfM3e-F_yOBNneaU"
-        },
-        {
-          "url": "https://www.elconstitucional.es/en/ecm/find/the-heel-of-gta-6-what-it-is-and-why-it-has-become-one-of-the-most-sought-after-places-in-the-video-game_10403_102.html",
-          "title": "The Heel of GTA 6: what it is and why it has become one of the most sought-after places in the video game",
-          "publisher": "El Constitucional",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5xuloOXdl0UuTy4aN_kue2Zn0VPyGzuvJyyoiSYnGqvMFObYiYaCTgvAZec0"
-        },
-        {
-          "url": "https://bsinews.id/en/gta-six-strip-clubs-locations",
-          "title": "GTA 6 Features Three Strip Clubs Across Vice City and Leonida",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuoHgOSQ4qzfM-pYoN8icyK2fv5wR_cINdldibuSfqnw7D_meKefCMe_bnSmo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStEHjgCjsiLyFUvvUCUXwx_QUVrL7FmaeGKETvsc1xsRb9s-APPsUgIIO2EoA"
         }
       ]
     }
