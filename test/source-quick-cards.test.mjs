@@ -129,11 +129,12 @@ test('functional source cards enter Public while link-only integrations remain s
   ...JULIE_DERU_SOURCES.map(c=>c.id),
   CREATOR_MIX_SOURCE.id,
   LANDING_AUTISM_SOURCE.id,
+  'cryptocyberia-japanese-keyboards',
   ...REVIEWED_OWNER_VIDEO_CARDS.map(c=>c.id),
   FAMILY_TV_SOURCE.id,
   MILK_MAMAS_SOURCE.id
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,29+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+JULIE_DERU_SOURCES.length+REVIEWED_OWNER_VIDEO_CARDS.length);
+ assert.equal(PUBLIC_SOURCE_IDS.length,30+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+JULIE_DERU_SOURCES.length+REVIEWED_OWNER_VIDEO_CARDS.length);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/ACTIVE_SOURCE_CARDS\.filter\(isPublicSourceCard\)/);
@@ -167,4 +168,27 @@ test('ChatGPT card only requests its actual official website, with no credential
  assert.doesNotMatch(frame,/sessionStorage|localStorage|document\.cookie|postMessage\s*\(|api\.openai\.com/);
  assert.match(launcher,/if\(card\.id==='chatgpt'\)mountOfficialViewer\(item,card\.id\)/);
  assert.match(detail,/quanta-official-viewer\.css/);
+});
+
+
+test('CryptoCyberia vintage Japanese keyboards X post becomes a source-checked, click-to-load technology Quick Card',async()=>{
+ const {departmentFor}=await import('../quanta-context-placement.mjs');
+ const card=findSourceCard('cryptocyberia-japanese-keyboards');
+ assert.ok(card,'Source card should be indexed');
+ assert.ok(validSourceCard(card));
+ assert.ok(isPublicSourceCard(card));
+ assert.equal(departmentFor(card),'developers');
+ assert.equal(card.official,'https://x.com/CryptoCyberia');
+ assert.equal(card.featureUrl,'https://x.com/CryptoCyberia/status/2123913224965988533');
+ assert.equal(card.xOriginalPostId,'2123913224965988533');
+ assert.equal(card.xOriginalHandle,'CryptoCyberia');
+ assert.equal(card.publishedAt,'2026-11-20T22:55:47.000Z');
+ assert.match(card.details,/kana|kanji/i);
+ assert.match(card.details,/independent|source/i);
+ const ui=readFileSync(new URL('../creator-post-cards.mjs',import.meta.url),'utf8');
+ assert.match(ui,/mountReviewedSingleXPost/);
+ assert.match(ui,/Load original X post/);
+ assert.match(ui,/createTweet/);
+ assert.match(tools,/mountReviewedSingleXPost\(root,card\)/);
+ assert.doesNotMatch(ui,/autoplay=1/);
 });
