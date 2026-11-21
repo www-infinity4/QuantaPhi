@@ -3,17 +3,192 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T11:01:23.898445Z",
+  "checked_at": "2026-11-21T11:31:13.305688Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "atlanta weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T11:10:00Z",
+      "related_news_urls": [
+        "https://newschannel9.com/weather/stormtrack-9-blog/warm-weekend-afternoons-and-a-shower-chance-east-saturday-night",
+        "https://www.kptv.com/2026/11/20/weekend-forecast-off-showers/",
+        "https://www.kgns.tv/2026/11/20/warmer-through-sunday-morning-cooler-weather-follows/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-iNWEJ1E6gau5PiuvS3kylah9vWhl1i9Q0q0gO94wwroiEy12RJvMdDVOfP8",
+      "image_credit": "WTVC",
+      "news": [
+        {
+          "url": "https://newschannel9.com/weather/stormtrack-9-blog/warm-weekend-afternoons-and-a-shower-chance-east-saturday-night",
+          "title": "Warm weekend afternoons and a shower chance east Saturday Night",
+          "publisher": "WTVC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-iNWEJ1E6gau5PiuvS3kylah9vWhl1i9Q0q0gO94wwroiEy12RJvMdDVOfP8"
+        },
+        {
+          "url": "https://www.kptv.com/2026/11/20/weekend-forecast-off-showers/",
+          "title": "Weekend Forecast: On + Off Showers",
+          "publisher": "KPTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm3UK6QAwOvSdVPwicGmrUmzJaEIWJhH_GNyPuWK6WAU3pXhHe52i4n2q88WY"
+        },
+        {
+          "url": "https://www.kgns.tv/2026/11/20/warmer-through-sunday-morning-cooler-weather-follows/",
+          "title": "Warmer Through Sunday Morning, Cooler Weather Follows",
+          "publisher": "KGNS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBVvsNsHeFnnaTKJgQ7hHFJ24yU37L5Q4s4DtxOsuKf5ICo4SU1vwroinf8Nw"
+        }
+      ]
+    },
+    {
+      "query": "doris miller",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T11:00:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/20/politics/navy-wont-rename-carrier-for-trump",
+        "https://www.10tv.com/article/news/nation-world/uss-doris-miller-aircraft-carrier-no-rename-trump/507-e4271b03-b182-4ef1-aa0e-b00fa0a649ab",
+        "https://news.usni.org/2026/11/20/pearl-harbor-hero-doris-miller-will-stay-namesake-of-cvn-81"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKh_KxAjLTrWoGrwWcmnkvJe_EVyHG8trJmZe-Nx3VOhKtMyICfUQK7M3TadI",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/20/politics/navy-wont-rename-carrier-for-trump",
+          "title": "Navy won’t rename carrier slated to honor Black war hero after considering switching it to Trump",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKh_KxAjLTrWoGrwWcmnkvJe_EVyHG8trJmZe-Nx3VOhKtMyICfUQK7M3TadI"
+        },
+        {
+          "url": "https://www.10tv.com/article/news/nation-world/uss-doris-miller-aircraft-carrier-no-rename-trump/507-e4271b03-b182-4ef1-aa0e-b00fa0a649ab",
+          "title": "Pearl Harbor hero Doris Miller's family says aircraft carrier will not be renamed to honor Trump",
+          "publisher": "10TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcRoMzpjuKQ7B2ADTT33cQaQC5at1R8f8tDonONqc5ZTdAltxb9iIif_C3RKc"
+        },
+        {
+          "url": "https://news.usni.org/2026/11/20/pearl-harbor-hero-doris-miller-will-stay-namesake-of-cvn-81",
+          "title": "Pearl Harbor Hero Doris Miller Will Stay Namesake of CVN-81",
+          "publisher": "USNI News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPmcZB7WIfXW06ophvpbedBzl9aNNNJpeWL9tvI6DW6kRK38_zVgubKw7Z8Bs"
+        }
+      ]
+    },
+    {
+      "query": "texas lottery",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T11:00:00Z",
+      "related_news_urls": [
+        "https://www.wkyc.com/article/news/nation-world/mega-millions-jackpot-winning-numbers-friday-november-20/507-41d422cf-aafb-4133-994f-48daac86c2d4",
+        "https://www.cincinnati.com/story/news/local/2026/11/20/ohio-lottery-results-friday-november-20-2026/92892501007/",
+        "https://www.sctimes.com/story/news/local/2026/11/20/minnesota-lottery-results-friday-november-20-2026/92892498007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStM5eubqhK8wZg-_QG_czWcOrd0nVW0QtDgJhq2_ICxWLPwa1VOaQXu-rHSHo",
+      "image_credit": "WKYC",
+      "news": [
+        {
+          "url": "https://www.wkyc.com/article/news/nation-world/mega-millions-jackpot-winning-numbers-friday-november-20/507-41d422cf-aafb-4133-994f-48daac86c2d4",
+          "title": "Did anyone win the Mega Millions $629M jackpot? Winning numbers for Friday, Nov. 20",
+          "publisher": "WKYC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStM5eubqhK8wZg-_QG_czWcOrd0nVW0QtDgJhq2_ICxWLPwa1VOaQXu-rHSHo"
+        },
+        {
+          "url": "https://www.cincinnati.com/story/news/local/2026/11/20/ohio-lottery-results-friday-november-20-2026/92892501007/",
+          "title": "Ohio Lottery Mega Millions, Pick 3 Midday winning numbers for Nov. 20, 2026",
+          "publisher": "Cincinnati Enquirer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTusEOVUYPc9oSltPZuIBXlYPhIEk-GLt5J6pCwXl6eu-qx-7sZSWd_HJGhokc"
+        },
+        {
+          "url": "https://www.sctimes.com/story/news/local/2026/11/20/minnesota-lottery-results-friday-november-20-2026/92892498007/",
+          "title": "MN Lottery Results: Mega Millions, Pick 3 winning numbers for Nov. 20, 2026",
+          "publisher": "St. Cloud Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKj_vT8iZ2jASVs6EFu53EruexGaDeUCWWNjNkQwRzTFVQbdA7QJ2C9g3gqA"
+        }
+      ]
+    },
+    {
+      "query": "toby samuel",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T11:00:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/dd7ca8fe-1389-4854-afd7-331cc1ab1880/",
+        "https://og.com/markets/max-schoenhaus-vs-billy-harris-2026-11-18-zsxfoi",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/b9aaa2e5-c900-47dd-8515-1b77bd5b7e06/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7zPMoJYuLrg4SaImUxq69XlwnNNsYaj12V2eRdIdm8b3FHLiIKa8A9bsZOA0",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/dd7ca8fe-1389-4854-afd7-331cc1ab1880/",
+          "title": "November 21, 2026: Omar Jasika vs Sebastian Gorzny Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7zPMoJYuLrg4SaImUxq69XlwnNNsYaj12V2eRdIdm8b3FHLiIKa8A9bsZOA0"
+        },
+        {
+          "url": "https://og.com/markets/max-schoenhaus-vs-billy-harris-2026-11-18-zsxfoi",
+          "title": "Max Schoenhaus vs Billy Harris Prediction & Odds - Tennis - OG.com",
+          "publisher": "OG Prediction Markets",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnz21JgOkLByep6R48iihql5_pJ6z-S8VBrhzyW9Pw63JIDuQtLrMFoAX6Lfs"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/b9aaa2e5-c900-47dd-8515-1b77bd5b7e06/",
+          "title": "November 20, 2026: Flavio Cobolli vs Carlos Alcaraz Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJ_9oCJj77MSqT5yD-ASaGYloA_ZAQRw4VKm6UMMfKlB9kz6DN70GJKFdpsoo"
+        }
+      ]
+    },
+    {
+      "query": "ohio state vs nebraska",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T10:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ohio-state-football-nebraska-live-100127962.html",
+        "https://sports.yahoo.com/articles/streaming-expert-best-ways-watch-100100968.html",
+        "https://abc6onyourside.com/sports/the-football-fever/injury-report-osu-nebraska-game-ohio-state-buckeyes-cornhuskers-huskers-lincoln-memorial-stadium-big-ten-college-football-b1g-saturday-november-20-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuJCpYycCFnbjX3ShwxUWt00RN8NOQMiT2eaOkWo0-R5YDeVQFbZ-P9b25A0Q",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/ohio-state-football-nebraska-live-100127962.html",
+          "title": "Ohio State football at Nebraska live updates, score, highlights, stats",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuJCpYycCFnbjX3ShwxUWt00RN8NOQMiT2eaOkWo0-R5YDeVQFbZ-P9b25A0Q"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/streaming-expert-best-ways-watch-100100968.html",
+          "title": "Streaming expert on the best ways to watch No. 14 Ohio State vs. Nebraska for free",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRepgeUay3qVC_lyuI8DCC0M8GKLiDksjJ7eJS9xR5xhIucEDo9Aqy7JNBe8JA"
+        },
+        {
+          "url": "https://abc6onyourside.com/sports/the-football-fever/injury-report-osu-nebraska-game-ohio-state-buckeyes-cornhuskers-huskers-lincoln-memorial-stadium-big-ten-college-football-b1g-saturday-november-20-2026",
+          "title": "Injury report released ahead of OSU-Nebraska game",
+          "publisher": "WSYX",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjkbTN_WQc8LyS_fKHV-w0fAFBuupAo_VVkmBArjQ6bmEuVyGiSUrhu6xov2g"
+        }
+      ]
+    },
     {
       "query": "smackdown results",
       "approx_searches": "1000+",
       "published_at": "2026-11-21T10:40:00Z",
       "related_news_urls": [
         "https://www.wwe.com/shows/smackdown/2026-11-20",
-        "https://sports.yahoo.com/wrestling/live/wwe-smackdown-live-results-nov-20-updates-grades-tonight-as-survivor-series-wargames-nears-203000078.html",
-        "https://www.cbssports.com/wwe/news/wwe-smackdown-results-live-updates-and-grades-for-november-20/live/"
+        "https://bleacherreport.com/articles/25535770-wwe-smackdown-winners-live-grades-reaction-and-highlights-november-20",
+        "https://sports.yahoo.com/wrestling/live/wwe-smackdown-live-results-nov-20-updates-grades-tonight-as-survivor-series-wargames-nears-203000078.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGF6652pL6dDiPi6c8LhTldjrpDn_yjwO1EOlR0v8rTAIpzf8nxovy5ZXTfgU",
       "image_credit": "WWE",
@@ -26,24 +201,24 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGF6652pL6dDiPi6c8LhTldjrpDn_yjwO1EOlR0v8rTAIpzf8nxovy5ZXTfgU"
         },
         {
+          "url": "https://bleacherreport.com/articles/25535770-wwe-smackdown-winners-live-grades-reaction-and-highlights-november-20",
+          "title": "WWE SmackDown Winners, Live Grades, Reaction and Highlights From November 20",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1pvY75-mclaloF7_sVmkxpg-Px36wUXa0HFLVgbuy7On_Ywf6jlyfwQK4FkA"
+        },
+        {
           "url": "https://sports.yahoo.com/wrestling/live/wwe-smackdown-live-results-nov-20-updates-grades-tonight-as-survivor-series-wargames-nears-203000078.html",
           "title": "WWE SmackDown results, grades (Nov. 20): Kevin Owens beats Gunther; Jade Cargill wins WarGames advantage",
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStZM_hC_Q94g1bsZ0UEkHMbCl68cKFxwpEWXX1sdloLSFPAWxyLCuvEoZO37o"
-        },
-        {
-          "url": "https://www.cbssports.com/wwe/news/wwe-smackdown-results-live-updates-and-grades-for-november-20/live/",
-          "title": "WWE SmackDown results, review, grades for Nov. 20: Sami Zayn stands tall over Kevin Owens",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnlf_DWRUGqh2OV-kK9l8qNbQ9yNi9CxDq_qWsb8uwc9KaZPEt6uB-8wI_pE"
         }
       ]
     },
     {
       "query": "black friday sale deals",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-21T10:30:00Z",
       "related_news_urls": [
         "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
@@ -73,6 +248,41 @@
           "publisher": "TODAY.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhDSA6g8daLTb90uEjPhiS14nRHa8heG2l_zT5VtGGYlq95ZwCHzk5Lq3w3gU"
+        }
+      ]
+    },
+    {
+      "query": "eastern florida floods",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T10:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/20/weather/tropical-storm-kyle-florida-rain-thanksgiving.html",
+        "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
+        "https://www.accuweather.com/en/weather-news/tropical-wind-and-rainstorm-to-streak-north-near-us-east-coast-this-weekend-into-next-week/1960952"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XlHqnBP_kupn2xxlUVKno_Z0thIeQuj7GxKXA8XagnbUgglf7KuG597p6sI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/20/weather/tropical-storm-kyle-florida-rain-thanksgiving.html",
+          "title": "As a Storm Floods Florida, Heavy Rain Will Creep Up the East Coast",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XlHqnBP_kupn2xxlUVKno_Z0thIeQuj7GxKXA8XagnbUgglf7KuG597p6sI"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
+          "title": "Storm severely flooding Florida to disrupt holiday travel from Southeast to New England",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzFpwcuAXpXZ_ijy3TGrE7bkOk1Og_UN8vZVf1hoQQPuIoFy_5nIUayW8zPkU"
+        },
+        {
+          "url": "https://www.accuweather.com/en/weather-news/tropical-wind-and-rainstorm-to-streak-north-near-us-east-coast-this-weekend-into-next-week/1960952",
+          "title": "Tropical wind and rainstorm to streak north near US East Coast this weekend into next week",
+          "publisher": "AccuWeather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVnW-6wh-mlLhYpdw9cMtgZajf2kG_K4Lm_YykfbToowhnY7cE_HEYQlY97Lc"
         }
       ]
     },
@@ -113,7 +323,7 @@
     },
     {
       "query": "fbi ten most wanted fugitives",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-21T09:50:00Z",
       "related_news_urls": [
         "https://www.newsweek.com/satinderjeet-singh-goldy-brar-fbi-most-wanted-list-canada-reward-murder-suspect-12743107",
@@ -143,216 +353,6 @@
           "publisher": "The Globe and Mail",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-fbw6f8-kpOT-MI9SN9Y_h-aIsCec8rLb8Y6uNOg7tidcLJNHsuNyYDdjwiY"
-        }
-      ]
-    },
-    {
-      "query": "u.s. mint stops producing pennies",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T09:50:00Z",
-      "related_news_urls": [
-        "https://www.5newsonline.com/article/news/nation-world/trump-signs-common-cents-act-halting-penny-production/507-8582004e-9fe1-4dab-ac3f-99e4470efae5",
-        "https://www.nbcnews.com/politics/white-house/trump-formally-ends-minting-penny-nearly-250-years-production-rcna600580",
-        "https://www.sweetwaternow.com/trump-signs-lummis-common-cents-act-friday/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRovkpTazunoS-jEah2DMx2iP0NLNLVNmj0u8mV9DUjV4O0eUreL_01RScM998",
-      "image_credit": "5newsonline.com",
-      "news": [
-        {
-          "url": "https://www.5newsonline.com/article/news/nation-world/trump-signs-common-cents-act-halting-penny-production/507-8582004e-9fe1-4dab-ac3f-99e4470efae5",
-          "title": "Trump signs 'Common Cents Act' into law, halting penny production",
-          "publisher": "5newsonline.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRovkpTazunoS-jEah2DMx2iP0NLNLVNmj0u8mV9DUjV4O0eUreL_01RScM998"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/white-house/trump-formally-ends-minting-penny-nearly-250-years-production-rcna600580",
-          "title": "Trump formally ends minting of the penny after nearly 250 years of production",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5SvRht9qbYJDmHlx11Oa1uauithJud5WjCxankZr4e-D5-8yIO8B4u5int0"
-        },
-        {
-          "url": "https://www.sweetwaternow.com/trump-signs-lummis-common-cents-act-friday/",
-          "title": "Trump Signs Lummis’ Common Cents Act Friday",
-          "publisher": "SweetwaterNOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjbwDEwD7nGoWRHt_11X3bpmpvy8kPSsjrs6fww4HXtRA8AM202k1uutgMHEQ"
-        }
-      ]
-    },
-    {
-      "query": "dubious provenance gta 6",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T09:20:00Z",
-      "related_news_urls": [
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
-        "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/",
-        "https://screenrant.com/gta-6-how-to-get-halifax-to-call-you-back/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKl2fy6qyeTlSn3iUVu1agp2KGBgZtrg-Ub73xoo33qhggokj4_xRx-SX0CQs",
-      "image_credit": "PC Gamer",
-      "news": [
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
-          "title": "Should you give the statue to Benedict Halifax in GTA 6?",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKl2fy6qyeTlSn3iUVu1agp2KGBgZtrg-Ub73xoo33qhggokj4_xRx-SX0CQs"
-        },
-        {
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/",
-          "title": "Should you kill or spare Benedict Halifax in GTA 6?",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
-        },
-        {
-          "url": "https://screenrant.com/gta-6-how-to-get-halifax-to-call-you-back/",
-          "title": "GTA 6: How To Get Halifax To Call You Back",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2xAPetG5CKvio6UrSuOVKk7m7L3tEJC0_zJ1nGWeaLlObuOje1uW4bKfUS3g"
-        }
-      ]
-    },
-    {
-      "query": "events",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T09:20:00Z",
-      "related_news_urls": [
-        "https://www.obawebsite.com/foley-plans-month-of-holiday-events-for-families-this-december",
-        "https://www.limapagi.id/en/foley-holiday-events-december",
-        "https://peradaban.id/en/foley-holiday-events-december"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQeTGbChc1xLVpXEHLAY4g0KuVLLaeReFDlQcaN1RAxIG-isB2UQEqWqKisVM",
-      "image_credit": "OBA News",
-      "news": [
-        {
-          "url": "https://www.obawebsite.com/foley-plans-month-of-holiday-events-for-families-this-december",
-          "title": "Foley Plans Month Of Holiday Events For Families This December",
-          "publisher": "OBA News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQeTGbChc1xLVpXEHLAY4g0KuVLLaeReFDlQcaN1RAxIG-isB2UQEqWqKisVM"
-        },
-        {
-          "url": "https://www.limapagi.id/en/foley-holiday-events-december",
-          "title": "Foley Schedules Six Holiday Events for Families in December",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCeTJFY34DWO_kqiFHzj38p-heE2FBA7sisgXHE0uG27dJ152vmK-li2cyiOs"
-        },
-        {
-          "url": "https://peradaban.id/en/foley-holiday-events-december",
-          "title": "Foley Schedules Six Holiday Events Across December",
-          "publisher": "Peradaban.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCeTJFY34DWO_kqiFHzj38p-heE2FBA7sisgXHE0uG27dJ152vmK-li2cyiOs"
-        }
-      ]
-    },
-    {
-      "query": "england vs australia",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T08:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
-        "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
-        "https://sports.yahoo.com/articles/australia-wins-toss-bowl-1st-081728321.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCCqKLBixawD0bALaHyMNXf6OgBFW9BqJfqI-9aHxOfijaLVvpSgCErQvZSYA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
-          "title": "Australia vs England LIVE: First T20, MCG, Melbourne - cricket score, commentary & updates",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCCqKLBixawD0bALaHyMNXf6OgBFW9BqJfqI-9aHxOfijaLVvpSgCErQvZSYA"
-        },
-        {
-          "url": "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
-          "title": "Harper's Australia debut a much-needed good story",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7jZMpbY-nrsnKq5bLNm3dnxCuVRiqrQvqcFmRN5fsFlqI1CKLICee2zzsh5s"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/australia-wins-toss-bowl-1st-081728321.html",
-          "title": "Australia wins the toss and will bowl in the 1st of 5 T20 matches against England",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNlqj3pX5hPGUOP9zpn90p8ZaDqYXH7ajEzqD7MD7dRCd8Xyvo0UWsl-23h1U"
-        }
-      ]
-    },
-    {
-      "query": "squatter removal company armed raid",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T08:40:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
-        "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
-        "https://www.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-20/squatter-removal-company-owner-facing-criminal-charges-for-use-of-guns-swords",
-          "title": "Armed with guns and sword, owner of squatter removal company cleared out a home. Now he faces felonies",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb3sY5CKJend7Z-QMx5WMLZdnTdMHiXr6PyiMwGndV7wpahxAkIJOQ3F5w0AQ"
-        },
-        {
-          "url": "https://www.sfchronicle.com/bayarea/article/squatter-removal-asap-san-bruno-22479243.php",
-          "title": "They raided a Bay Area home with guns and swords. Are they ‘squatter removers’ — or vigilantes?",
-          "publisher": "San Francisco Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLw0YnzGa-2XAY_pLWFVU03T3UUsXAsTi-IJefWoRO_MOAUKrLSna8rNj0xrg"
-        },
-        {
-          "url": "https://www.iheart.com/content/2026-11-20-armed-squatter-removal-team-faces-felony-charges-in-california-raid/",
-          "title": "Armed Squatter Removal Team Faces Felony Charges In California Raid",
-          "publisher": "iHeart",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzL22gBPuWDayxTVdBEqlrpVAQky8BnC2HCS_eQIJ_m79oW6PJyAOe4CIow4"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 kingpin bowling safe code",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T08:40:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/",
-        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-bowling-alley-heist"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
-          "title": "All GTA 6 Safe Codes for Chapter 2 in Port Gellhorn",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/",
-          "title": "How to get safe codes in GTA 6",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2ms6fTUbdJbV3FDg6ZgjRQPz0mFg8z2pG3omv6zgx07xkHmuMyHuc5Qxl3Z0"
-        },
-        {
-          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-bowling-alley-heist",
-          "title": "All Kingpin Bowling Alley Robbery Loot & Secrets Locations - GTA 6",
-          "publisher": "Mobalytics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A"
         }
       ]
     }
