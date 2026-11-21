@@ -7,6 +7,7 @@ import {CREATOR_SOURCES} from './creator-post-catalog.mjs';
 import {YOUTUBE_CREATOR_SOURCES} from './youtube-creator-catalog.mjs';
 import {REVIEWED_OWNER_VIDEO_CARDS} from './youtube-owner-video-links.mjs';
 import {FAMILY_TV_SOURCE} from './family-parenting-tv-core.mjs';
+import {MILK_MAMAS_SOURCE} from './milk-mamas-catalog.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
@@ -51,6 +52,7 @@ export const ACTIVE_SOURCE_CARDS=Object.freeze([
  ...YOUTUBE_CREATOR_SOURCES,
  ...REVIEWED_OWNER_VIDEO_CARDS,
  FAMILY_TV_SOURCE,
+ MILK_MAMAS_SOURCE,
  ...(PCLA_DISCOVERY?[source(PCLA_DISCOVERY.id,PCLA_DISCOVERY.name,PCLA_DISCOVERY.category,
    PCLA_DISCOVERY.feature,PCLA_DISCOVERY.official,PCLA_DISCOVERY.url,
    PCLA_DISCOVERY.study,PCLA_DISCOVERY.study,PCLA_DISCOVERY)]:[])
@@ -65,7 +67,8 @@ export const PUBLIC_SOURCE_IDS=Object.freeze([
  ...CREATOR_SOURCES.map(c=>c.id),
  ...YOUTUBE_CREATOR_SOURCES.map(c=>c.id),
  ...REVIEWED_OWNER_VIDEO_CARDS.map(c=>c.id),
- FAMILY_TV_SOURCE.id
+ FAMILY_TV_SOURCE.id,
+ MILK_MAMAS_SOURCE.id
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>{
