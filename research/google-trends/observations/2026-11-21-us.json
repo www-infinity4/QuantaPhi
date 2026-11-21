@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T20:01:17.485589Z",
+  "checked_at": "2026-11-21T20:31:04.262859Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "blackhawks vs flames",
+      "query": "northern il vs nd state",
       "approx_searches": "1000+",
-      "published_at": "2026-11-21T19:40:00Z",
+      "published_at": "2026-11-21T20:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/blackhawks-flames-search-answers-struggles-181457352.html",
-        "https://www.nhl.com/flames/news/5-things-flames-vs-blackhawks-21-11-26",
-        "https://www.nytimes.com/athletic/7800165/2026/11/21/blackhawks-vs-flames-stream-how-to-watch-nov-21/"
+        "https://www.inforum.com/sports/bison-media-zone/mens-sports/how-to-watch-ndsu-play-northern-illinois-on-saturday-nov-21",
+        "https://www.sportsgambler.com/betting-tips/ncaaf/northern-illinois-huskies-vs-north-dakota-state-bison-prediction-odds-2026-11-21/",
+        "https://sports.yahoo.com/articles/ndsu-next-game-against-weirdest-210444400.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgm25uaAz09Lmbmhwl5o4LRuleN7cQvMrQVo_UycU3dZJ4DZ626i6wJG1-Fgc",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvpGf-FUCw4H0Ur7WYJbubI4CqQIb5RlFDb9ONi3MIX0eoARwqWzAd0dAtW6Y",
+      "image_credit": "InForum",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/blackhawks-flames-search-answers-struggles-181457352.html",
-          "title": "Blackhawks and Flames Search for Answers as Struggles Continue",
+          "url": "https://www.inforum.com/sports/bison-media-zone/mens-sports/how-to-watch-ndsu-play-northern-illinois-on-saturday-nov-21",
+          "title": "How to watch NDSU play Northern Illinois on Saturday, Nov. 21",
+          "publisher": "InForum",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvpGf-FUCw4H0Ur7WYJbubI4CqQIb5RlFDb9ONi3MIX0eoARwqWzAd0dAtW6Y"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/northern-illinois-huskies-vs-north-dakota-state-bison-prediction-odds-2026-11-21/",
+          "title": "Northern Illinois vs North Dakota State Prediction, Picks & Odds | 21 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ndsu-next-game-against-weirdest-210444400.html",
+          "title": "NDSU’s Next Game Is Against Weirdest Possible Mountain West Opponent",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgm25uaAz09Lmbmhwl5o4LRuleN7cQvMrQVo_UycU3dZJ4DZ626i6wJG1-Fgc"
-        },
-        {
-          "url": "https://www.nhl.com/flames/news/5-things-flames-vs-blackhawks-21-11-26",
-          "title": "5 Things - Flames vs. Blackhawks | Calgary Flames",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLAJssMhNvGl4e0TyWq0LtiVLxgWfwMM891Ffl09q-soECqmlUcsjk3kZeYug"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7800165/2026/11/21/blackhawks-vs-flames-stream-how-to-watch-nov-21/",
-          "title": "How to watch Blackhawks vs. Flames: TV channel and streaming options for November 21",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQM-Wy1_rdW1Hehi0BuOKMiqiN5RMU7OvDiwVzrwmwOq7UVzeNojNC8bRwtMMo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVXNV7WF40-gpbWZWNiO1hYQf8JrKWF9c-k8_PJSDnBLmoaBbtfTj21fiGMc"
         }
       ]
     },
     {
-      "query": "florida a&m vs b-cu",
+      "query": "georgia state vs marshall",
       "approx_searches": "500+",
-      "published_at": "2026-11-21T19:40:00Z",
+      "published_at": "2026-11-21T20:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-florida-m-vs-bethune-192500696.html",
-        "https://www.wftv.com/news/local/florida-classic-on-site-parking-sells-out-todays-matchup/3EEOMIPNNBCY7NOO3CGWPYZN4U/",
-        "https://www.bradenton.com/sports/article318114224.html"
+        "https://www.fubo.tv/news/ncaaf/marshall-vs-georgia-state-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
+        "https://247sports.com/college/marshall/article/basketball-game-thread-north-carolina-293006752/",
+        "https://herdzone.com/news/2026/11/19/marshall-football-hosts-georgia-state-at-4-pm-on-saturday"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz5J7Pr1UFqhSZ3MLc-PAsCPSQJtipJshnzq84ND0U7vMlrFy-m5Jd1sPtrFY",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO_EUTTVe-jgc52JvSey0CuOUtR0kfhW4eU3VTAglTNato5lzzX5jn2J3kmbs",
+      "image_credit": "Fubo",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-florida-m-vs-bethune-192500696.html",
-          "title": "How to watch Florida A&M vs Bethune-Cookman: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz5J7Pr1UFqhSZ3MLc-PAsCPSQJtipJshnzq84ND0U7vMlrFy-m5Jd1sPtrFY"
-        },
-        {
-          "url": "https://www.wftv.com/news/local/florida-classic-on-site-parking-sells-out-todays-matchup/3EEOMIPNNBCY7NOO3CGWPYZN4U/",
-          "title": "Florida Classic on-site parking sells out for today’s matchup",
-          "publisher": "WFTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-8EuJmwTzfVzGyp9lMYhfygPn-5YAx7-zZ04PNkGckX3e3cJaaQJO77csrMA"
-        },
-        {
-          "url": "https://www.bradenton.com/sports/article318114224.html",
-          "title": "FAMU football coach Quinn Gray's Florida Classic past meets present",
-          "publisher": "Bradenton Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOmXOovrSFmbxNYMHZqL6Ji3wbAlbIud6_HmL6pUfsZ9utaEN0fal8ROVt-ww"
-        }
-      ]
-    },
-    {
-      "query": "zverev",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T19:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50544020/daniil-medvedev-defeats-frances-tiafoe-faces-alexander-zverev-atp-finals-semis",
-        "https://www.atptour.com/en/news/zverev-medvedev-nitto-atp-finals-2026-sf-preview",
-        "https://www.nittoatpfinals.com/en/news/medvedev-tiafoe-nitto-atp-finals-2026-friday"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LZPCVCSY9rOUgxemjM0HJAlGCz6_xlBTgNYm24RVnMsreguTDfdIJ1kNrUQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50544020/daniil-medvedev-defeats-frances-tiafoe-faces-alexander-zverev-atp-finals-semis",
-          "title": "Daniil Medvedev beats Frances Tiafoe, faces Alexander Zverev in ATP Finals semis",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LZPCVCSY9rOUgxemjM0HJAlGCz6_xlBTgNYm24RVnMsreguTDfdIJ1kNrUQ"
-        },
-        {
-          "url": "https://www.atptour.com/en/news/zverev-medvedev-nitto-atp-finals-2026-sf-preview",
-          "title": "Preview: Former champs Zverev & Medvedev meet in Nitto ATP Finals SFs",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi1qpfPKobzhATOwPzCh65STxP-MfcbGVIehaSMIqV28bYOSl9K3O7haY7v3k"
-        },
-        {
-          "url": "https://www.nittoatpfinals.com/en/news/medvedev-tiafoe-nitto-atp-finals-2026-friday",
-          "title": "Medvedev sinks Tiafoe, books SF spot at Nitto ATP Finals",
-          "publisher": "Nitto ATP Finals",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTocOKBtbIzfPnriz4Bhi-jpfxg1BZs_FUEeeK9_vAMm5kM5cXTCWodZqv1bTg"
-        }
-      ]
-    },
-    {
-      "query": "josh johnson nfl",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T19:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50542595/cardinals-qb-beck-dealing-back-spasms-johnson-start",
-        "https://www.nfl.com/news/cardinals-preparing-to-start-josh-johnson-chiefs-carson-beck",
-        "https://www.cbssports.com/nfl/news/carson-beck-back-spasms-could-force-cardinals-to-start-fourth-quarterback-in-five-weeks/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRioy3yJRhAhtGEYei-7oSP73-9d5y2EEcc9_oGaLd0j9y5HIagUCjDR7gqtDQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50542595/cardinals-qb-beck-dealing-back-spasms-johnson-start",
-          "title": "Cardinals QB Carson Beck dealing with back spasms; Josh Johnson may start",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRioy3yJRhAhtGEYei-7oSP73-9d5y2EEcc9_oGaLd0j9y5HIagUCjDR7gqtDQ"
-        },
-        {
-          "url": "https://www.nfl.com/news/cardinals-preparing-to-start-josh-johnson-chiefs-carson-beck",
-          "title": "Cardinals preparing to start Josh Johnson vs. Chiefs, their fourth starting QB in four weeks",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9YsjOFksjoD_qoPpepLMYUECAer7W2Ere-0sFLSIyU8I8g39AZvaGh_y4Xzo"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/carson-beck-back-spasms-could-force-cardinals-to-start-fourth-quarterback-in-five-weeks/",
-          "title": "Carson Beck back spasms could force Cardinals to start fourth quarterback in five weeks",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSv-zGNJqfnQ00pc5oXem_RkXcD-cHeMO5oojxXJV1-P-V-uhJigSIwi8DcoQ"
-        }
-      ]
-    },
-    {
-      "query": "real madrid schedule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T19:40:00Z",
-      "related_news_urls": [
-        "https://www.goal.com/en/news/mourinho-surprises-vinicius-junior-with-a-striking-decision-before-celta-vigo-clash/blte9dab7412f44678c",
-        "https://www.nytimes.com/athletic/7797441/2026/11/20/vinicius-real-madrid-form-jose-mourinho/",
-        "https://www.managingmadrid.com/real-madrid-cf-la-liga/115599/jose-mourinho-there-are-no-players-here-with-privileges"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXyWhxg3lg2KTafTEUTBxysMXjmM6yZzVHTfGg610XuiGMpZJ1h6q4Qz6izYw",
-      "image_credit": "Goal.com",
-      "news": [
-        {
-          "url": "https://www.goal.com/en/news/mourinho-surprises-vinicius-junior-with-a-striking-decision-before-celta-vigo-clash/blte9dab7412f44678c",
-          "title": "Mourinho surprises Vinícius Júnior with a striking decision before Celta Vigo clash",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXyWhxg3lg2KTafTEUTBxysMXjmM6yZzVHTfGg610XuiGMpZJ1h6q4Qz6izYw"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7797441/2026/11/20/vinicius-real-madrid-form-jose-mourinho/",
-          "title": "Jose Mourinho says Real Madrid ‘love and need’ Vinicius Jr: Can he help forward refind best form?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJNpfOJwwqiZK9yPfdDYxZCarW9Na44huVba_nhmx1EN82RHQ7dLngFRjCdFo"
-        },
-        {
-          "url": "https://www.managingmadrid.com/real-madrid-cf-la-liga/115599/jose-mourinho-there-are-no-players-here-with-privileges",
-          "title": "Jose Mourinho: “There are no players here with privileges”",
-          "publisher": "Managing Madrid",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5rPs43niHYS8LUKH7w3SgjFKqJxZsTS0czDzWPBPSV_QhsQV4DXeQIfDT3A8"
-        }
-      ]
-    },
-    {
-      "query": "kasparas jakučionis",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T19:40:00Z",
-      "related_news_urls": [
-        "https://www.sportas.lt/naujiena/553568/jakucionio-atstovaujama-bucks-arteja-prie-istorinio-nba-antirekordo",
-        "https://www.basketnews.lt/news-259880-technine-prazanga-nubaustas-jakucionis-pratese-galinga-atkarpa.html",
-        "https://www.lrt.lt/naujienos/sportas/10/3119022/i-majami-grizes-jakucionis-buvusiai-komandai-atseikejo-20-tasku"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDe6EYpBBmDZSVFF56xhR6Doj_9d7xWfeDmzMxrGCS4O33c1AJh9dRmVNIOG0",
-      "image_credit": "Sportas.lt",
-      "news": [
-        {
-          "url": "https://www.sportas.lt/naujiena/553568/jakucionio-atstovaujama-bucks-arteja-prie-istorinio-nba-antirekordo",
-          "title": "Jakučionio atstovaujama „Bucks“ artėja prie istorinio NBA antirekordo",
-          "publisher": "Sportas.lt",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDe6EYpBBmDZSVFF56xhR6Doj_9d7xWfeDmzMxrGCS4O33c1AJh9dRmVNIOG0"
-        },
-        {
-          "url": "https://www.basketnews.lt/news-259880-technine-prazanga-nubaustas-jakucionis-pratese-galinga-atkarpa.html",
-          "title": "Technine pražanga nubaustas Jakučionis pratęsė galingą atkarpą",
-          "publisher": "BasketNews.lt",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuCdwF-YkzGxlV1cMaV8oWzs2_6YiK2mfxAc6SvxGsjcvDxF92s_HdpoV-9kg"
-        },
-        {
-          "url": "https://www.lrt.lt/naujienos/sportas/10/3119022/i-majami-grizes-jakucionis-buvusiai-komandai-atseikejo-20-tasku",
-          "title": "Į Majamį grįžęs Jakučionis buvusiai komandai atseikėjo 20 taškų",
-          "publisher": "LRT",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfHJLUQM7Lb7lOuwLVU_VCdok5vn7-dp9OKhjD05YTx2tLFfJ6Updm_sjwQmU"
-        }
-      ]
-    },
-    {
-      "query": "east tn st vs mercer",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T19:40:00Z",
-      "related_news_urls": [
-        "https://den.mercer.edu/3-things-to-know-about-mercer-vs-etsu-football-game-day-nov-21-2026/",
-        "https://soconsports.com/news/2026/11/16/four-way-tie-possible-for-socon-football-championship.aspx",
-        "https://www.fubo.tv/news/ncaaf/mercer-vs-east-tennessee-state-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDfrQbuGvCrkSYqpKClZUHloSUOL7WPPmbBIIR9L4owpoJHxqMyFBWAVMC7Dc",
-      "image_credit": "Mercer University",
-      "news": [
-        {
-          "url": "https://den.mercer.edu/3-things-to-know-about-mercer-vs-etsu-football-game-day-nov-21-2026/",
-          "title": "3 things to know about Mercer vs. ETSU football game day: Nov. 21, 2026",
-          "publisher": "Mercer University",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDfrQbuGvCrkSYqpKClZUHloSUOL7WPPmbBIIR9L4owpoJHxqMyFBWAVMC7Dc"
-        },
-        {
-          "url": "https://soconsports.com/news/2026/11/16/four-way-tie-possible-for-socon-football-championship.aspx",
-          "title": "Four-Way Tie Possible for SoCon Football Championship",
-          "publisher": "Southern Conference",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-GRmbedSjREtTMTPOfx86qnYIPiFzavnQR3_5XjXInZQ8Da_O-5MYozj3n5I"
-        },
-        {
-          "url": "https://www.fubo.tv/news/ncaaf/mercer-vs-east-tennessee-state-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
-          "title": "Mercer vs East Tennessee State - Where to Watch, Stream Info, TV Channel, and Live Updates (November 21, 2026)",
+          "url": "https://www.fubo.tv/news/ncaaf/marshall-vs-georgia-state-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
+          "title": "Marshall vs Georgia State - Where to Watch, Stream Info, TV Channel, and Live Updates (November 21, 2026)",
           "publisher": "Fubo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf66bLwJwW3E1kHTwIlN0e-yIKRxwLhC0Ona-DmhUc02LF3BIR1AVHr7RrECk"
-        }
-      ]
-    },
-    {
-      "query": "tracy cortez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T19:40:00Z",
-      "related_news_urls": [
-        "https://www.mmafighting.com/ufc/522271/brian-ortega-reveals-crazy-coincidence-about-his-famous-tracy-cortez-lip-tattoo",
-        "https://www.yardbarker.com/mma/articles/ortega_on_cortez_lip_tattoo_after_ufc_qatar_presser/s1_17349_44585109",
-        "https://sports.yahoo.com/articles/brian-ortega-tattooed-tracy-cortezs-080444472.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr9AmkPr9eZte_SFRAZzgw-brKJctMeMWwQ56bjq1KRHFQk5cp8TKvX0LACcU",
-      "image_credit": "MMA Fighting",
-      "news": [
-        {
-          "url": "https://www.mmafighting.com/ufc/522271/brian-ortega-reveals-crazy-coincidence-about-his-famous-tracy-cortez-lip-tattoo",
-          "title": "Brian Ortega reveals crazy coincidence about famous Tracy Cortez lip tattoo",
-          "publisher": "MMA Fighting",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr9AmkPr9eZte_SFRAZzgw-brKJctMeMWwQ56bjq1KRHFQk5cp8TKvX0LACcU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO_EUTTVe-jgc52JvSey0CuOUtR0kfhW4eU3VTAglTNato5lzzX5jn2J3kmbs"
         },
         {
-          "url": "https://www.yardbarker.com/mma/articles/ortega_on_cortez_lip_tattoo_after_ufc_qatar_presser/s1_17349_44585109",
-          "title": "Ortega On Cortez Lip Tattoo After UFC Qatar Presser",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUnR73WQ1-djRup2WZGt9Fm1qJX-cF1FkfXHD7FYJv9ovbViSazT_YaVre080"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/brian-ortega-tattooed-tracy-cortezs-080444472.html",
-          "title": "Brian Ortega Tattooed Tracy Cortez's Name Inside His Lip in 2022, but a Fight Left One Detail Changed Forever",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDc_ReCyHE4EIbP2uZKkauHoH9qEvNMGUbNx0u4xxcouGhSD_nGM4Y2TrZpbA"
-        }
-      ]
-    },
-    {
-      "query": "indiana vs washington",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T19:30:00Z",
-      "related_news_urls": [
-        "https://www.seattletimes.com/sports/washington-huskies-football/washington-huskies-vs-indiana-hoosiers-live-updates-score/",
-        "https://sports.yahoo.com/articles/watch-indiana-vs-washington-live-193000356.html",
-        "https://www.indystar.com/story/sports/college/indiana/2026/11/20/indiana-football-injuries-vs-washington-rolijah-hardy-a-j-harris-out/92888462007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmr1bxqfPme3jy5h5XmgYP87e-av1XEFGQ1RPmJj9-pGcdw9zIKLFGdk_i9qE",
-      "image_credit": "The Seattle Times",
-      "news": [
-        {
-          "url": "https://www.seattletimes.com/sports/washington-huskies-football/washington-huskies-vs-indiana-hoosiers-live-updates-score/",
-          "title": "Live: Updates: Huskies host defending champion Indiana on Montlake",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmr1bxqfPme3jy5h5XmgYP87e-av1XEFGQ1RPmJj9-pGcdw9zIKLFGdk_i9qE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-indiana-vs-washington-live-193000356.html",
-          "title": "How to watch Indiana vs Washington: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeXEfyL95JeEWWf0JRoS3KiwIYXkE7r7ohI8QsZX_1EV3DyIlZ2mkv4hGEV9U"
-        },
-        {
-          "url": "https://www.indystar.com/story/sports/college/indiana/2026/11/20/indiana-football-injuries-vs-washington-rolijah-hardy-a-j-harris-out/92888462007/",
-          "title": "Indiana football without 2 starters at Washington. What it means",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyVfWxN-3Lhz-BLwdKF0CxfiTdBT7CdenjPPJwI7gPnXSkNCVLudBwMB1cw8"
-        }
-      ]
-    },
-    {
-      "query": "nc state vs florida state",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T19:30:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/florida-state/article/florida-state-football-makes-the-legacy-walk-to-doak-campbell-stadium-293055222/",
-        "https://sports.yahoo.com/articles/fsu-footballs-depth-chart-week-191018697.html",
-        "https://www.tomahawknation.com/florida-state-football/141134/gameday-central-florida-state-seminoles-vs-nc-state-wolfpack-previews-predictions-how-to-watch-odds"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRMkXtAZlI54S9cdwnr47n5cS61HpBpk-dp0tONtgtM8Vy1PL8iK_gT9d5s0",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/florida-state/article/florida-state-football-makes-the-legacy-walk-to-doak-campbell-stadium-293055222/",
-          "title": "Florida State football makes the Legacy Walk to Doak Campbell Stadium",
+          "url": "https://247sports.com/college/marshall/article/basketball-game-thread-north-carolina-293006752/",
+          "title": "Basketball Game Thread: North Carolina",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRMkXtAZlI54S9cdwnr47n5cS61HpBpk-dp0tONtgtM8Vy1PL8iK_gT9d5s0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMMbuZC2S43CVXTJNqUKTSvJ2HwZXSZIR7rSSDRvc9kTj5nNdzoFA8fI-Cu-c"
         },
         {
-          "url": "https://sports.yahoo.com/articles/fsu-footballs-depth-chart-week-191018697.html",
-          "title": "FSU football's depth chart for Week 12 vs. NC State",
+          "url": "https://herdzone.com/news/2026/11/19/marshall-football-hosts-georgia-state-at-4-pm-on-saturday",
+          "title": "Marshall Football Hosts Georgia State At 4 p.m. On Saturday",
+          "publisher": "Marshall University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQczKpzjxCzXAx-IQf0VQDoR2Qsk6be5SAIW6DmDWAzbgnhmr8RW2WXXjZx11c"
+        }
+      ]
+    },
+    {
+      "query": "ga southern vs troy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T20:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/georgia-southern-vs-troy-prediction-105423959.html",
+        "https://www.griceconnect.com/sports/game-preview-eagles-look-to-continue-hot-streak-at-troy-13037983",
+        "https://troytrojans.com/news/2026/11/19/troy-football-hosts-georgia-southern-on-senior-day-at-the-vet"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSyPZ3aWNysGFdXkZ5OyWMPgG-4Zks-0KEiD7ItLGPy-lQSXnoA6LBxQudzE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/georgia-southern-vs-troy-prediction-105423959.html",
+          "title": "Georgia Southern vs Troy Prediction, Pick, College Football Odds for Saturday, Nov. 21",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStWTisH633lxyE1O7asd0gbV4-iU3bIEMTmlWwTKfU0lKaRFL-1pGNvFkQIuU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSyPZ3aWNysGFdXkZ5OyWMPgG-4Zks-0KEiD7ItLGPy-lQSXnoA6LBxQudzE"
         },
         {
-          "url": "https://www.tomahawknation.com/florida-state-football/141134/gameday-central-florida-state-seminoles-vs-nc-state-wolfpack-previews-predictions-how-to-watch-odds",
-          "title": "Gameday Central: Florida State Seminoles vs. NC State Wolfpack-Previews, predictions, how to watch, odds",
-          "publisher": "Tomahawk Nation",
+          "url": "https://www.griceconnect.com/sports/game-preview-eagles-look-to-continue-hot-streak-at-troy-13037983",
+          "title": "GAME PREVIEW | Eagles look to continue hot streak at Troy",
+          "publisher": "Grice Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSW36Saqrd8I80ZVkfvnsKiDXiFqqX3Duqbaj2FGbFI__bbo0HEvbz6KVytDqM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpDRQzzdgi3E9AtwW1U2-7MmYgx-L-vttJxqnx2UHc6lOV3pbZToFUE--ceFc"
+        },
+        {
+          "url": "https://troytrojans.com/news/2026/11/19/troy-football-hosts-georgia-southern-on-senior-day-at-the-vet",
+          "title": "Troy Football Hosts Georgia Southern on Senior Day at The Vet",
+          "publisher": "Troy University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa-9E4JwIkHm67FFd_u2nB-DRqHLkAb5J6KyzY3_36HZpL52k1FfDAOfENjOI"
+        }
+      ]
+    },
+    {
+      "query": "south alabama vs southern miss",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T20:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/south-alabama-vs-southern-miss-105249027.html",
+        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-south-alabamas-game-at-southern-miss.html",
+        "https://www.si.com/college/southernmiss/recruiting-the-same-backyard-examining-the-battle-between-southern-miss-and-south-alabama"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLkHUwWyZCd1hA6NnAL9lrK2saL3Wxmx-LUA1VCEZaSknbibJOFR7otLEEUPQ",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/south-alabama-vs-southern-miss-105249027.html",
+          "title": "South Alabama vs Southern Miss Prediction, Pick, College Football Odds for Saturday, Nov. 21",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLkHUwWyZCd1hA6NnAL9lrK2saL3Wxmx-LUA1VCEZaSknbibJOFR7otLEEUPQ"
+        },
+        {
+          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-south-alabamas-game-at-southern-miss.html",
+          "title": "Scouting report: What you need to know for South Alabama’s game at Southern Miss",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZY4D9CH3mE7G02bmMM3yaeS1QXX3XyjvoeRWyTQ7udO_GD3W03eMRh3DEwA4"
+        },
+        {
+          "url": "https://www.si.com/college/southernmiss/recruiting-the-same-backyard-examining-the-battle-between-southern-miss-and-south-alabama",
+          "title": "Recruiting the Same Backyard: Examining the Battle Between Southern Miss and South Alabama",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4qL0_wuabHu5EsL28a5gG2OZ3x7sfjVO3X09NBO9maiLgwu5iF3apjjUoWHE"
+        }
+      ]
+    },
+    {
+      "query": "will muschamp",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T20:10:00Z",
+      "related_news_urls": [
+        "https://www.wholehogsports.com/news/2026/nov/18/arkansas-football-notebook-silverfield-matches-wits-with-his-ex-roommates-brother-will-muschamp/",
+        "https://www.on3.com/teams/texas-longhorns/news/how-whiteboard-links-texas-will-muschamp-arkansas-coach-ryan-silverfield/",
+        "https://www.si.com/college/texas/football/texas-already-working-behind-the-scenes-new-contract-for-will-muschamp"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr86XWXfcTbx-YaWrnooa-_5iQxXu1Uu6FQv15ZU83ybpK4oIvFzAYrX7cyKo",
+      "image_credit": "Whole Hog Sports",
+      "news": [
+        {
+          "url": "https://www.wholehogsports.com/news/2026/nov/18/arkansas-football-notebook-silverfield-matches-wits-with-his-ex-roommates-brother-will-muschamp/",
+          "title": "Arkansas football notebook: Ryan Silverfield and Will Muschamp share unlikely connection through former roommate",
+          "publisher": "Whole Hog Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr86XWXfcTbx-YaWrnooa-_5iQxXu1Uu6FQv15ZU83ybpK4oIvFzAYrX7cyKo"
+        },
+        {
+          "url": "https://www.on3.com/teams/texas-longhorns/news/how-whiteboard-links-texas-will-muschamp-arkansas-coach-ryan-silverfield/",
+          "title": "How a whiteboard (not that one) connects Texas' Will Muschamp to Arkansas' Ryan Silverfield",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWc-3AJAqGP31X4URBVottrt8WibRVKP15WXqYlPvLVCmmBRHUy5vKSHT04fQ"
+        },
+        {
+          "url": "https://www.si.com/college/texas/football/texas-already-working-behind-the-scenes-new-contract-for-will-muschamp",
+          "title": "Texas Already Working Behind the Scenes on New Contract for Will Muschamp",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIB3HaPpYm4yoX2hiNz3d4ZepvHBSq0q_mumDnC-jWRimYTHeDHqwZOjtb2kY"
+        }
+      ]
+    },
+    {
+      "query": "jesus de miguel",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T20:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/articles/ckedq01zve04o",
+        "https://www.espn.com/soccer/story/_/id/50509388/gerard-pique-andorra-goalkeeper-jesus-owono-jesus-de-miguel",
+        "https://www.nytimes.com/athletic/7754047/2026/11/13/jesus-owono-sanction-jesus-de-miguel/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6MHq5vj-VJ4oIa1JhkKEbjzx2nPbM8DMLWWWvZwPzekjDV_xHNGsYT6mj9XQ",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/articles/ckedq01zve04o",
+          "title": "Owono undecided over future following De Miguel death",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6MHq5vj-VJ4oIa1JhkKEbjzx2nPbM8DMLWWWvZwPzekjDV_xHNGsYT6mj9XQ"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50509388/gerard-pique-andorra-goalkeeper-jesus-owono-jesus-de-miguel",
+          "title": "Piqué criticises 12-match ban for Owono after De Miguel death",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZVw01alZiwXzZ1noHXxf9RhvtxmYamAlDWw5ZtUm9x9c5-iiMNSOd86r6CSg"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7754047/2026/11/13/jesus-owono-sanction-jesus-de-miguel/",
+          "title": "Jesus Owono given 12-match ban for collision with Jesus de Miguel that led to striker’s death",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQENWI4tA25uhyTE0K1QcJc_OpSdsglYFseRbDM7TJQ2UHU3TO9vp40q4b_6D4"
+        }
+      ]
+    },
+    {
+      "query": "alexander zverev",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T20:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
+        "https://www.atptour.com/en/video/highlights-zverev-tops-fils-to-stay-perfect-in-turin-nitto-atp-finals-2026",
+        "https://www.theguardian.com/sport/live/2026/nov/19/alexander-zverev-v-arthur-fils-atp-finals-group-stage-live"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFWq9fXcVVfMvyjIOGeiao-eBcaiW-Sriu5w0P_oUUOJAqoyrHqrrHhms3hLg",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
+          "title": "ATP Finals: Alexander Zverev beats Arthur Fils to put Ben Shelton through to semi-finals",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFWq9fXcVVfMvyjIOGeiao-eBcaiW-Sriu5w0P_oUUOJAqoyrHqrrHhms3hLg"
+        },
+        {
+          "url": "https://www.atptour.com/en/video/highlights-zverev-tops-fils-to-stay-perfect-in-turin-nitto-atp-finals-2026",
+          "title": "Highlights: Zverev tops Fils to stay perfect in Turin Nitto ATP Finals 2026",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8OAfo0cQpFPq3DfWBSPvi8uVxz7NIzMBT-y3D8IiRHU5jQnumV9msjjRinmc"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/19/alexander-zverev-v-arthur-fils-atp-finals-group-stage-live",
+          "title": "Alexander Zverev beats Arthur Fils in ATP Finals tennis group stage – as it happened",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvyeZA9YOfDGaeB8ijXjo7N-rhmkuZxyi3gim7vHGe2b2Kje2uMPUYv7NdZbk"
+        }
+      ]
+    },
+    {
+      "query": "brayden burries",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T20:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/bucks-brayden-burries-coming-off-bench-saturday/",
+        "https://www.kvue.com/video/sports/locked-on/lo-wisconsin/bucks-show/young-bucks-keep-showing-promisebut-cant-execute-down-the-stretch-against-the-trail-blazers/535-b8a04a64-e788-4623-aee9-fb95159c6925",
+        "https://madison.com/sports/professional/nba/bucks/article_291598c5-8934-4c6d-9b87-57ff996d5042.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGNk90_TVw3F4K9CC8xxUI7G6F1WqU5leW8DsCj9s7JvOZhm30arygVJg6CGU",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/bucks-brayden-burries-coming-off-bench-saturday/",
+          "title": "Bucks' Brayden Burries: Coming off bench Saturday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGNk90_TVw3F4K9CC8xxUI7G6F1WqU5leW8DsCj9s7JvOZhm30arygVJg6CGU"
+        },
+        {
+          "url": "https://www.kvue.com/video/sports/locked-on/lo-wisconsin/bucks-show/young-bucks-keep-showing-promisebut-cant-execute-down-the-stretch-against-the-trail-blazers/535-b8a04a64-e788-4623-aee9-fb95159c6925",
+          "title": "Young Bucks Keep Showing Promise...But Can't Execute Down The Stretch Against The Trail Blazers",
+          "publisher": "KVUE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPqV_-2n4zd9ODIHXpQo7AwRJ1H-D4uZU8ugVDjjKlj0gWAjMnp8yhm732N6A"
+        },
+        {
+          "url": "https://madison.com/sports/professional/nba/bucks/article_291598c5-8934-4c6d-9b87-57ff996d5042.html",
+          "title": "These Bucks rookies ‘lean on each other’ as they settle into NBA roles",
+          "publisher": "Wisconsin State Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9F6_MDpN8AFgwKZDX0pe638gtxhrNp48FzzZDE0FX-beOt7kuciMvqU2YBmM"
+        }
+      ]
+    },
+    {
+      "query": "colton joseph",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T20:00:00Z",
+      "related_news_urls": [
+        "https://www.jsonline.com/story/sports/college/uw/2026/11/20/status-of-wisconsins-quarterback-ryan-hopkins-upgraded-but-colton-joseph-expected-to-start/92888506007/",
+        "https://www.buckys5thquarter.com/wisconsin-badgers-football/91729/wisconsin-badgers-football-news-start-colton-joseph-at-quarterback-vs-purdue-boilermakers-ryan-hopkins-injury",
+        "https://247sports.com/college/wisconsin/article/multiple-badgers-cleared-in-game-day-injury-report-wisconsin-football-2026-293046696/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9wJwMSMd_I7LBm-W9NMuCleSdt_12aHZ1J_8r6P6cOV-es9ZnrM_OdK0S0s",
+      "image_credit": "Milwaukee Journal Sentinel",
+      "news": [
+        {
+          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/20/status-of-wisconsins-quarterback-ryan-hopkins-upgraded-but-colton-joseph-expected-to-start/92888506007/",
+          "title": "Status of Wisconsin's Ryan Hopkins upgraded, but will Colton Joseph start vs. Purdue?",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9wJwMSMd_I7LBm-W9NMuCleSdt_12aHZ1J_8r6P6cOV-es9ZnrM_OdK0S0s"
+        },
+        {
+          "url": "https://www.buckys5thquarter.com/wisconsin-badgers-football/91729/wisconsin-badgers-football-news-start-colton-joseph-at-quarterback-vs-purdue-boilermakers-ryan-hopkins-injury",
+          "title": "Badgers to start Colton Joseph at QB vs. Purdue",
+          "publisher": "Bucky's 5th Quarter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-vrbnYWTyOjFsEiJ5YGsFMnQX66HvXWywg5igbRQpuavbU5tGhKufdmLyyYo"
+        },
+        {
+          "url": "https://247sports.com/college/wisconsin/article/multiple-badgers-cleared-in-game-day-injury-report-wisconsin-football-2026-293046696/",
+          "title": "Multiple Badgers cleared in game day injury report",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRME3irDSVnjiMm8GSig7ftcyEM_12LflbbIJHLy7QfvD6uYSkUMIpeEzeeH6c"
+        }
+      ]
+    },
+    {
+      "query": "texas a&m vs oklahoma",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-21T19:50:00Z",
+      "related_news_urls": [
+        "https://soonersports.com/news/2026/11/20/football-game-primer-ou-vs-texas-am",
+        "https://sports.yahoo.com/articles/watch-texas-m-vs-oklahoma-194500492.html",
+        "https://247sports.com/college/oklahoma/article/sooners-illustrated-staff-picks-no-22-oklahoma-vs-texas-am-293017451/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdAMBpvTebz6gL2jybR5gI6FTs9i8Y6gG5iNxfOotWDnaODYKeFijncBN0GZA",
+      "image_credit": "Soonersports.com",
+      "news": [
+        {
+          "url": "https://soonersports.com/news/2026/11/20/football-game-primer-ou-vs-texas-am",
+          "title": "Game Primer: OU vs. Texas A&M - University of Oklahoma",
+          "publisher": "Soonersports.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdAMBpvTebz6gL2jybR5gI6FTs9i8Y6gG5iNxfOotWDnaODYKeFijncBN0GZA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-texas-m-vs-oklahoma-194500492.html",
+          "title": "How to watch Texas A&M vs Oklahoma: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyLSQ9TozAgDRqYq_szxRd2pU2_30RMDcyZWOsxis2-TkJLI0mBaLtFuPuX00"
+        },
+        {
+          "url": "https://247sports.com/college/oklahoma/article/sooners-illustrated-staff-picks-no-22-oklahoma-vs-texas-am-293017451/",
+          "title": "Sooners Illustrated Staff Picks: No. 22 Oklahoma vs Texas A&M",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDLEf1MqNm7jWwaqKUdkjKXEZiAV3ErUpYK_WX6fQoDylhwXn5UDLXJkImcEY"
         }
       ]
     }
