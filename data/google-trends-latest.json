@@ -3,336 +3,273 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T17:01:26.757539Z",
+  "checked_at": "2026-11-21T17:30:48.395295Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "sevilla - real betis",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T16:40:00Z",
+      "query": "tottenham vs ipswich town standings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T17:10:00Z",
       "related_news_urls": [
-        "https://as.com/futbol/primera/es-muy-dificil-que-el-sevilla-vuelva-a-ser-el-de-antes-f202611-n/",
-        "https://www.abc.es/deportes/orgullodenervion/noticias-sevilla-fc/derbi-goles-repartidos-20261121070718-nts.html",
-        "https://cadenaser.com/nacional/2026/11/21/sevilla-fc-real-betis-en-directo-el-partido-de-la-jornada-13-en-vivo-cadena-ser/"
+        "https://www.skysports.com/football/live-blog/13610687/tottenham-vs-ipswich-live-premier-league-match-updates-news-and-score",
+        "https://www.tottenhamhotspur.com/news/1266934/confirmed-line-ups-spurs-vs-ipswich-town-premier-league-november-2026",
+        "https://cartilagefreecaptain.sbnation.com/tottenham-hotspur-news/74957/tottenham-hotspur-news-ipswich-bergvall-maddison-savio-return"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUNeBLukz7ytVSpCSR5_utiODMD-fpW3JeMuVKBW34PYbhn__3qdPSxoXwvGg",
-      "image_credit": "Diario AS",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ-Lg9CdLq0Bs8kPT4T5aw5EX6PEMmMst_ZdWVdL92oKPmOzkX9HdWyGEDVJk",
+      "image_credit": "Sky Sports",
       "news": [
         {
-          "url": "https://as.com/futbol/primera/es-muy-dificil-que-el-sevilla-vuelva-a-ser-el-de-antes-f202611-n/",
-          "title": "“Es muy difícil que el Sevilla vuelva a ser el de antes”",
-          "publisher": "Diario AS",
+          "url": "https://www.skysports.com/football/live-blog/13610687/tottenham-vs-ipswich-live-premier-league-match-updates-news-and-score",
+          "title": "Tottenham vs Ipswich LIVE! Premier League match updates, news and score",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUNeBLukz7ytVSpCSR5_utiODMD-fpW3JeMuVKBW34PYbhn__3qdPSxoXwvGg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ-Lg9CdLq0Bs8kPT4T5aw5EX6PEMmMst_ZdWVdL92oKPmOzkX9HdWyGEDVJk"
         },
         {
-          "url": "https://www.abc.es/deportes/orgullodenervion/noticias-sevilla-fc/derbi-goles-repartidos-20261121070718-nts.html",
-          "title": "Un derbi de goles repartidos",
-          "publisher": "ABC",
+          "url": "https://www.tottenhamhotspur.com/news/1266934/confirmed-line-ups-spurs-vs-ipswich-town-premier-league-november-2026",
+          "title": "Confirmed line-ups: Spurs vs Ipswich Town",
+          "publisher": "Tottenham Hotspur",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVTire-UazTH4YL6fatc90QCHHTGNGev2nuWAeovWHLhwJVUJjGtXhz8ce8UM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCZ8eaDi6vxAXNFQ8j4E3Z8KfcFlBb863IAtcSAKCbKYBM0Z7-BT382-rZ7lU"
         },
         {
-          "url": "https://cadenaser.com/nacional/2026/11/21/sevilla-fc-real-betis-en-directo-el-partido-de-la-jornada-13-en-vivo-cadena-ser/",
-          "title": "Sevilla FC-Real Betis, en directo: el partido de la jornada 13, en vivo",
-          "publisher": "Cadena SER",
+          "url": "https://cartilagefreecaptain.sbnation.com/tottenham-hotspur-news/74957/tottenham-hotspur-news-ipswich-bergvall-maddison-savio-return",
+          "title": "De Zerbi: Bergvall, Maddison, Savio in contention for Ipswich, Tel, Tosin, Mudryk out",
+          "publisher": "Cartilage Free Captain",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8B6RBOBZbH1-coOPvbXEuFXbK-evy9lA2aNz67ZRRmitNjFjnrzLCVo_H2fQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL8ZobtKGaxEZua_cHq9UYC1MWmhZoSL_UaLPH48VllBX6iHB0Nj0S6xnH-yY"
         }
       ]
     },
     {
-      "query": "borussia mönchengladbach vs borussia dortmund standings",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T16:40:00Z",
+      "query": "gio lopez",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T17:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/dortmund-top-table-batz-blunder-162500224.html",
-        "https://www.chosun.com/english/sports-en/2026/11/22/KV6O6UOSIVBGDNDSPCQD4AADCE/",
-        "https://onefootball.com/en/news/black-and-yellow-celebrations-in-the-battle-of-the-borussias-43808520"
+        "https://247sports.com/college/wake-forest/article/wake-forest-quarterback-gio-lopez-upgraded-to-probable-against-georgia-tech-292994990/",
+        "https://www.al.com/sports/2026/11/nick-saban-has-high-praise-for-alabama-native-former-south-alabama-qb-gio-lopez.html",
+        "https://journalnow.com/sports/college/wfu/football/article_c7fbe2cc-15c1-4654-94df-b51a7fd19a67.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUjpiaXZOdleahxRtEVELi5QzAkdK5udumIINvyFZI0rOP9Yl08UhpUzBVapA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxXmPNy7-8SgMfhFSWw2sHupW2btMJHq_Q6AEOvMLH5LtDH-MRQquFSDtucY",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/wake-forest/article/wake-forest-quarterback-gio-lopez-upgraded-to-probable-against-georgia-tech-292994990/",
+          "title": "Wake Forest quarterback Gio Lopez upgraded to probable against Georgia Tech",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxXmPNy7-8SgMfhFSWw2sHupW2btMJHq_Q6AEOvMLH5LtDH-MRQquFSDtucY"
+        },
+        {
+          "url": "https://www.al.com/sports/2026/11/nick-saban-has-high-praise-for-alabama-native-former-south-alabama-qb-gio-lopez.html",
+          "title": "Nick Saban has high praise for Alabama native, former South Alabama QB Gio Lopez",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_KIdNOj0FkT4moTRdA9X3UCDpFZT3DDT5YZ_S1C8dMDTcgmj7yYCyaA-1fwA"
+        },
+        {
+          "url": "https://journalnow.com/sports/college/wfu/football/article_c7fbe2cc-15c1-4654-94df-b51a7fd19a67.html",
+          "title": "From Nick Saban to Scott Van Pelt, Wake Forest football is getting some serious love",
+          "publisher": "Winston-Salem Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1f97SAoJ8S7ef_5W8euGP-PjS_-1yhPz5E352vG18v5LkdaBeqqLcK9IC0Kk"
+        }
+      ]
+    },
+    {
+      "query": "anthony colandrea",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T17:10:00Z",
+      "related_news_urls": [
+        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165584/across-the-field-nebraska-writer-tim-verghese-says-self-inflicted-wounds-have-plagued-the-cornhuskers-anthony",
+        "https://www.fox.com/sports/football/college-football/watch-ohio-state-buckeyes-vs-nebraska-cornhuskers-nov-21-2026",
+        "https://www.foxsports.com/live-blog/college-football/college-football-week-4-top-moments-scores-ohio-state-nebraska"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3XcVzgS7Tupww-k45yNuuNERCXaGBnSjSJ41oeRjyT-Bsory3WAe-I-xFLOg",
+      "image_credit": "Eleven Warriors",
+      "news": [
+        {
+          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165584/across-the-field-nebraska-writer-tim-verghese-says-self-inflicted-wounds-have-plagued-the-cornhuskers-anthony",
+          "title": "Across the Field: Nebraska Writer Tim Verghese Says Self-Inflicted Wounds Have Plagued the Cornhuskers, Anthony Colandrea Is A ”Quick, Elusive Runner”",
+          "publisher": "Eleven Warriors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3XcVzgS7Tupww-k45yNuuNERCXaGBnSjSJ41oeRjyT-Bsory3WAe-I-xFLOg"
+        },
+        {
+          "url": "https://www.fox.com/sports/football/college-football/watch-ohio-state-buckeyes-vs-nebraska-cornhuskers-nov-21-2026",
+          "title": "Watch Ohio State vs Nebraska Live: Streaming, TV Channel & Start Time - Nov 21, 2026 | CFB Week 12",
+          "publisher": "FOX One",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-qILQsePnRvjpIWu1tB_VK0hC8wyeiw2p_xzjq2QvgUT_-JR9b5cAXHjU7rY"
+        },
+        {
+          "url": "https://www.foxsports.com/live-blog/college-football/college-football-week-4-top-moments-scores-ohio-state-nebraska",
+          "title": "College Football Week 12 Top Moments, Scores: Ohio State-Nebraska",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvWfCRXXYae0jQcWL087yv69yfOKZ_yX6xAi8eIr_NHDS1MV5NqzmeBCY-38o"
+        }
+      ]
+    },
+    {
+      "query": "south dakota vs illinois st",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T17:10:00Z",
+      "related_news_urls": [
+        "https://www.fubo.tv/news/ncaaf/illinois-state-vs-south-dakota-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
+        "https://sports.yahoo.com/articles/seth-glatz-knows-saturday-game-033514806.html",
+        "https://www.yankton.net/sports/article_81e07834-affc-479c-ba69-7f7a968a696e.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVY5onbOp9wN1G1Tr8GH269HudFq36b2ATPMhWzP6jrclnP1XqBGgl3PWbupQ",
+      "image_credit": "Fubo",
+      "news": [
+        {
+          "url": "https://www.fubo.tv/news/ncaaf/illinois-state-vs-south-dakota-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
+          "title": "Illinois State vs South Dakota - Where to Watch, Stream Info, TV Channel, and Live Updates (November 21, 2026)",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVY5onbOp9wN1G1Tr8GH269HudFq36b2ATPMhWzP6jrclnP1XqBGgl3PWbupQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/seth-glatz-knows-saturday-game-033514806.html",
+          "title": "Seth Glatz knows Saturday game will be critical, emotional at ISU",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjYMD-jI56-LTAQjMivjeWt5T6tm5Z8LzX2-2rJ_BNVf3aQj2DBxd56Nn1K0"
+        },
+        {
+          "url": "https://www.yankton.net/sports/article_81e07834-affc-479c-ba69-7f7a968a696e.html",
+          "title": "Football: A Look Into How No.6 USD Is Preparing For High-Stakes Matchup at No. 11 Illinois State",
+          "publisher": "yankton.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKxKj82gCmnWX6HwcZlVQ_2PAXBqqJbZDXEwGXYPn9GA_L-3K8t_mFofuASeE"
+        }
+      ]
+    },
+    {
+      "query": "bucks vs 76ers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T17:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/watch-bucks-vs-76ers-live-165000344.html",
+        "https://www.cbssports.com/betting/news/76ers-bucks-prediction-odds-time-2026-nba-picks-best-bets-saturday-november-21/",
+        "https://www.libertyballers.com/76ers-game-previews/102433/sixers-host-milwaukee-bucks-for-afternoon-game-lebron-james-joel-embiid"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEbNXMi39zrUW6Ahm1l6dymdkgwNw1-nadysNb1_23UGgw0LuvLNh5eqzCkmM",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/dortmund-top-table-batz-blunder-162500224.html",
-          "title": "Dortmund top the table as Batz blunder consigns Gladbach to defeat",
+          "url": "https://sports.yahoo.com/articles/watch-bucks-vs-76ers-live-165000344.html",
+          "title": "How to watch Bucks vs 76ers: Live stream NBA, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUjpiaXZOdleahxRtEVELi5QzAkdK5udumIINvyFZI0rOP9Yl08UhpUzBVapA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEbNXMi39zrUW6Ahm1l6dymdkgwNw1-nadysNb1_23UGgw0LuvLNh5eqzCkmM"
         },
         {
-          "url": "https://www.chosun.com/english/sports-en/2026/11/22/KV6O6UOSIVBGDNDSPCQD4AADCE/",
-          "title": "Castrop's Defensive Efforts Fail to Save Borussia Mönchengladbach from Loss",
-          "publisher": "조선일보",
+          "url": "https://www.cbssports.com/betting/news/76ers-bucks-prediction-odds-time-2026-nba-picks-best-bets-saturday-november-21/",
+          "title": "76ers vs. Bucks prediction, odds, time: 2026 NBA picks for Saturday, Nov. 21 from proven model",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB-nkp3EO0xIUtHyakjH6IunWWb5oMzPQsGRpLmBW95rq0vemsnx8PUtrdSEs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhammc7wf8X-35aX4XB8081-NOAATkeSkO0Ks3wWlr0djRglmGwS8c08u8pfA"
         },
         {
-          "url": "https://onefootball.com/en/news/black-and-yellow-celebrations-in-the-battle-of-the-borussias-43808520",
-          "title": "Black-and-yellow celebrations in the battle of the Borussias",
-          "publisher": "OneFootball",
+          "url": "https://www.libertyballers.com/76ers-game-previews/102433/sixers-host-milwaukee-bucks-for-afternoon-game-lebron-james-joel-embiid",
+          "title": "Sixers host Milwaukee Bucks for afternoon game",
+          "publisher": "Liberty Ballers",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtyXKJtRCWQ9s8WTlbVR4ZZZie6j4zP7NYARtFUrQVOwjl_fCbgAdUGx7nbIU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWKcktAfwJZqa-KF3NujwTVTONqS5Zd-cv9bChmonuT-HqdzD-YZ12AA2LoZM"
         }
       ]
     },
     {
-      "query": "indictment",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T16:40:00Z",
+      "query": "tornado warning",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-21T17:00:00Z",
       "related_news_urls": [
-        "https://abcnews.com/US/judge-denies-alex-murdaughs-bid-dismiss-murder-charges/story?id=138184686",
-        "https://apnews.com/article/murdaugh-killings-original-indictments-2b933e5f69e3d2c16ecae119f85a0e0d",
-        "https://www.thestate.com/news/local/crime/article318178420.html"
+        "https://weather.com/2026/11/12/news/weather/video/northeast-storm-tornado-delaware-hail-new-jersey-pennsylvania",
+        "https://www.nytimes.com/2026/11/12/weather/noreaster-snow-cold.html",
+        "https://nypost.com/2026/11/13/us-news/nyc-borough-under-tornado-warning-as-ominous-cloud-swirled-above-jfk-airport/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqXer-mpGbGiHZb4p8Ji40jSyNWCKM-_Qtu-fDRW799_rxFlqFzE-xp-ZzX7I",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQz-ofS5_JQlbWbsALtutSkyfYDMMG-w10psoMQxalHcjsm2HMx-YuXBBMffog",
+      "image_credit": "The Weather Channel",
       "news": [
         {
-          "url": "https://abcnews.com/US/judge-denies-alex-murdaughs-bid-dismiss-murder-charges/story?id=138184686",
-          "title": "Judge denies Alex Murdaugh's bid to dismiss murder charges",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://weather.com/2026/11/12/news/weather/video/northeast-storm-tornado-delaware-hail-new-jersey-pennsylvania",
+          "title": "Funnel clouds, hail and flooding slam NY, NJ, DE, PA",
+          "publisher": "The Weather Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqXer-mpGbGiHZb4p8Ji40jSyNWCKM-_Qtu-fDRW799_rxFlqFzE-xp-ZzX7I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQz-ofS5_JQlbWbsALtutSkyfYDMMG-w10psoMQxalHcjsm2HMx-YuXBBMffog"
         },
         {
-          "url": "https://apnews.com/article/murdaugh-killings-original-indictments-2b933e5f69e3d2c16ecae119f85a0e0d",
-          "title": "Judge refuses to dismiss Alex Murdaugh’s original indictments in killings of his wife and son",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhQ0d91LEQK0hftlbL9zCp2WAQeam6jXatyedQAt0exazJm0A0nvB6VRzWIZ0"
-        },
-        {
-          "url": "https://www.thestate.com/news/local/crime/article318178420.html",
-          "title": "Here’s how Judge McCaslin ruled on original indictments in the Murdaugh case",
-          "publisher": "The State",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcvQh1cE7Ej8pzIFKH9JxGe9_gTBcxsdqdHc8i8_t00jFWoYgsrKusRi7JbZw"
-        }
-      ]
-    },
-    {
-      "query": "newcastle vs arsenal",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T16:30:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/football/live/2026/nov/21/newcastle-united-v-arsenal-premier-league-live",
-        "https://www.skysports.com/football/live-blog/13610880/newcastle-vs-arsenal-live-premier-league-match-updates-free-highlights-news-and-score",
-        "https://www.arsenal.com/news/preview-newcastle-united-v-arsenal-aSvdm5s8P3nk"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuuYhKiunEfIuYJme7Q_qAsED7FQ7SySU5_ozqQIbnW2aUw3ZDPrm1gK_iCAo",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/football/live/2026/nov/21/newcastle-united-v-arsenal-premier-league-live",
-          "title": "Newcastle United v Arsenal: Premier League – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuuYhKiunEfIuYJme7Q_qAsED7FQ7SySU5_ozqQIbnW2aUw3ZDPrm1gK_iCAo"
-        },
-        {
-          "url": "https://www.skysports.com/football/live-blog/13610880/newcastle-vs-arsenal-live-premier-league-match-updates-free-highlights-news-and-score",
-          "title": "Newcastle vs Arsenal LIVE! Premier League match updates, free highlights, news and score",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8KNmCoYFTS_Pa5xVqbBo6yq9Y9EtkYsrCM65IPvYEmU0xMHbe0sWaYeSCjbw"
-        },
-        {
-          "url": "https://www.arsenal.com/news/preview-newcastle-united-v-arsenal-aSvdm5s8P3nk",
-          "title": "Preview: Newcastle United v Arsenal",
-          "publisher": "Arsenal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGE9rIbRupiwgRJVLjMA20IE2umeYUvI4ij4uQCK86DAWtBOfoHsGCkhfLOQs"
-        }
-      ]
-    },
-    {
-      "query": "unc vs virginia",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T16:30:00Z",
-      "related_news_urls": [
-        "https://virginiasports.com/news/2026/11/18/souths-oldest-rivalry-matinee-senior-day-closes-cavaliers-home-slate",
-        "https://sports.yahoo.com/articles/watch-north-carolina-vs-virginia-163000680.html",
-        "https://247sports.com/college/north-carolina/article/uncs-depth-chart-series-history-vs-uva-loads-of-notes-more-292933505/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZW1BRSTr85LAOP99jr6JT9JgDzgPkcVfvkYu4W6haRs754xGdlvcUEpU47RQ",
-      "image_credit": "Virginia Sports",
-      "news": [
-        {
-          "url": "https://virginiasports.com/news/2026/11/18/souths-oldest-rivalry-matinee-senior-day-closes-cavaliers-home-slate",
-          "title": "‘South’s Oldest Rivalry’ Matinee, Senior Day Close Cavaliers’ Home Slate",
-          "publisher": "Virginia Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZW1BRSTr85LAOP99jr6JT9JgDzgPkcVfvkYu4W6haRs754xGdlvcUEpU47RQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-north-carolina-vs-virginia-163000680.html",
-          "title": "How to watch North Carolina vs Virginia: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaL4eIXNr565eYUhay-UDYwPEV64l-0HL4324J8j6Dsp9ob4bEZtRrKRRvjXE"
-        },
-        {
-          "url": "https://247sports.com/college/north-carolina/article/uncs-depth-chart-series-history-vs-uva-loads-of-notes-more-292933505/",
-          "title": "UNC's Depth Chart, Series History vs UVA, Loads of Notes & More",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRACGEvqBOgcEor9g-wxHFUPjpbplzob-5Ez35732Ju0jVvn3NAxnZckSzX1tk"
-        }
-      ]
-    },
-    {
-      "query": "psg",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T16:20:00Z",
-      "related_news_urls": [
-        "https://www.eurosport.fr/football/ligue-1/2026-2027/ogc-nice-paris-saint-germain_mtc21875611/live-commentary.shtml",
-        "https://www.lequipe.fr/Football/Actualites/L-infirmerie-se-vide-au-psg-luis-enrique-va-devoir-composer-avec-un-effectif-presque-au-complet-et-les-inevitables-frustrations-de-ceux-qui-joueront-peu/1744969",
-        "https://www.footmercato.net/a3394713200134556816-nice-la-belle-ouverture-du-score-damoura-contre-le-psg"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFvuy4IkAmhN7GIU6PBzbyuxRB9LwK7DMmOHuX2va5A4L2UE5TcJDBmdX0vaY",
-      "image_credit": "Eurosport",
-      "news": [
-        {
-          "url": "https://www.eurosport.fr/football/ligue-1/2026-2027/ogc-nice-paris-saint-germain_mtc21875611/live-commentary.shtml",
-          "title": "Suivez Nice - PSG En direct - Ligue 1 - 11e journée",
-          "publisher": "Eurosport",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFvuy4IkAmhN7GIU6PBzbyuxRB9LwK7DMmOHuX2va5A4L2UE5TcJDBmdX0vaY"
-        },
-        {
-          "url": "https://www.lequipe.fr/Football/Actualites/L-infirmerie-se-vide-au-psg-luis-enrique-va-devoir-composer-avec-un-effectif-presque-au-complet-et-les-inevitables-frustrations-de-ceux-qui-joueront-peu/1744969",
-          "title": "L'infirmerie se vide au PSG : Luis Enrique va devoir composer avec un effectif presque au complet et les inévitables frustrations de ceux qui joueront peu",
-          "publisher": "L'Équipe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOlFENUvjOoESmX1U9fHj1RLSrRIj2o5EUQJzB9lD_hHCr8fiVc3JnWW2braU"
-        },
-        {
-          "url": "https://www.footmercato.net/a3394713200134556816-nice-la-belle-ouverture-du-score-damoura-contre-le-psg",
-          "title": "Nice : la belle ouverture du score d’Amoura contre le PSG",
-          "publisher": "Foot Mercato",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsRbCBaJKFSairU16dIE3uLuxfJfLfrWX8kK1ZOIiz_Ybh5CEE7JcJUh6yRIM"
-        }
-      ]
-    },
-    {
-      "query": "fenerbahçe",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T16:20:00Z",
-      "related_news_urls": [
-        "https://www.sozcu.com.tr/canli-veya-kocaelispor-fenerbahce-maci-canli-anlatim-p383267",
-        "https://afyonsehir.com/recep-durul-fenerbahce-macinda-favori-biziz/",
-        "https://www.bugunkocaeli.com.tr/video/kocaelispor-ve-fenerbahce-turka-kocaeli-stadyumuna-geldi"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGfnMe6I1IuX7qhGgGliz-5AoM4OFUkooKjK7WIgdkzdwyHYeAmRx34U7RQr4",
-      "image_credit": "Sözcü Gazetesi",
-      "news": [
-        {
-          "url": "https://www.sozcu.com.tr/canli-veya-kocaelispor-fenerbahce-maci-canli-anlatim-p383267",
-          "title": "Canlı | Kocaelispor-Fenerbahçe maçı canlı anlatım",
-          "publisher": "Sözcü Gazetesi",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGfnMe6I1IuX7qhGgGliz-5AoM4OFUkooKjK7WIgdkzdwyHYeAmRx34U7RQr4"
-        },
-        {
-          "url": "https://afyonsehir.com/recep-durul-fenerbahce-macinda-favori-biziz/",
-          "title": "Recep Durul: \"Fenerbahçe maçında favori biziz\"",
-          "publisher": "Afyon Şehir",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjLJANl4l1s9B8vPuRsQZOOu1HaxGP6tyonHWxeZn6J8gBy77eGLTN_kCfxpc"
-        },
-        {
-          "url": "https://www.bugunkocaeli.com.tr/video/kocaelispor-ve-fenerbahce-turka-kocaeli-stadyumuna-geldi",
-          "title": "Kocaelispor Ve Fenerbahçe Turka Kocaeli Stadyumu'na Geldi",
-          "publisher": "Bugün Kocaeli Gazetesi",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBdqgwW78X-58NDitYVPhZLlgOS3wqeoQFn4jD931lr5gJOwIrKvaOZ8krz4Y"
-        }
-      ]
-    },
-    {
-      "query": "romy reiner property sold cash",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T16:20:00Z",
-      "related_news_urls": [
-        "https://people.com/rob-reiner-daughter-romy-quietly-sold-usd10m-home-across-the-street-from-mansion-where-parents-were-murdered-12265779",
-        "https://www.instyle.com/rob-reiner-daughter-romy-sells-10-million-los-angeles-mansion-12268562",
-        "https://pagesix.com/2026/11/18/celebrity-news/rob-and-michele-reiners-daughter-quietly-sold-house-across-from-parents-death-home-for-10-3-million-new-owner-takes-staggering-tax-hit/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFyYPX1KMUFV4MhBj3mqhvsCmIwmyXlePuwjSnR2bilkQ4ZZlzNH79UUMF8QY",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/rob-reiner-daughter-romy-quietly-sold-usd10m-home-across-the-street-from-mansion-where-parents-were-murdered-12265779",
-          "title": "Rob Reiner’s Daughter Quietly Sold Her $10M Home Across the Street from Mansion Where Parents Were Killed",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFyYPX1KMUFV4MhBj3mqhvsCmIwmyXlePuwjSnR2bilkQ4ZZlzNH79UUMF8QY"
-        },
-        {
-          "url": "https://www.instyle.com/rob-reiner-daughter-romy-sells-10-million-los-angeles-mansion-12268562",
-          "title": "Rob Reiner’s Daughter, Romy, Sells Her $10 Million Mansion Across the Street From Her Late Parents’ L.A. Home",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyas7nRBgYpv36EshRfXwJmsFCNSdMkwhMDkrvvH06gwUj231rrBK84Db1pds"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/18/celebrity-news/rob-and-michele-reiners-daughter-quietly-sold-house-across-from-parents-death-home-for-10-3-million-new-owner-takes-staggering-tax-hit/",
-          "title": "Rob and Michele Reiner’s daughter quietly sold house across from parents’ death home for $10.3 million — new owner takes staggering tax hit",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS28399wMYSj7TWu4cEHougOnzgNyUIvzYUhTKrZ2Re6AsuPdmSsvWHLMRTXTQ"
-        }
-      ]
-    },
-    {
-      "query": "wired",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T16:20:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/technology/2026/11/21/welcome-age-endless-digital-breakdowns/",
-        "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/",
-        "https://www.nytimes.com/2026/11/18/technology/tech-outages-emergency-prep.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREYA-KWgRa2rZVMTAe10zeYvB5hsVqjVPB9117V4FuXFLikv8MWOYRGQB_N4w",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/technology/2026/11/21/welcome-age-endless-digital-breakdowns/",
-          "title": "Welcome to the age of endless digital breakdowns",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREYA-KWgRa2rZVMTAe10zeYvB5hsVqjVPB9117V4FuXFLikv8MWOYRGQB_N4w"
-        },
-        {
-          "url": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/",
-          "title": "The Outages Are Just Getting Started",
-          "publisher": "WIRED",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDbGUTRK-NqAZA7G7bf39A7LV_alPkhSZ01vx61gXJsgh7Ux1d2e9nECrSYJY"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/18/technology/tech-outages-emergency-prep.html",
-          "title": "Tech Outages May Become Routine. Experts Say Don’t Panic, but Prepare.",
+          "url": "https://www.nytimes.com/2026/11/12/weather/noreaster-snow-cold.html",
+          "title": "After Record Rain and Tornadoes in the Northeast, Now Comes the Cold",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKSEEuMgLhYjB4HGy3P20qnumbU0ArhhEMSCggqfyKOoE_69DUr4dFwmYgblg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUIQgTpdZSTurgeDEr1cS_CLLCe6PAu-IeMtdU1wlBvkWvFp5n2PdBtyDvE0k"
+        },
+        {
+          "url": "https://nypost.com/2026/11/13/us-news/nyc-borough-under-tornado-warning-as-ominous-cloud-swirled-above-jfk-airport/",
+          "title": "NYC borough under tornado warning as ominous cloud swirled above JFK airport",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgxbKcl9XcSNcgToH-b2CzGmWfFhMgycwP-nEfU8sDxPf4rG-QbPj4mr9xm3A"
         }
       ]
     },
     {
-      "query": "tennessee tech football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T16:20:00Z",
+      "query": "houston vs west virginia",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T17:00:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/mississippi-state/article/mississippi-state-tennessee-tech-college-football-preview-293021105/",
-        "https://sports.yahoo.com/articles/much-mississippi-state-football-paying-120108986.html",
-        "https://www.si.com/college/mississippistate/mississippi-state-seniors-have-one-last-chance-to-make-a-statement-at-home-01m7xemk5emd"
+        "https://sports.yahoo.com/articles/wvu-vs-houston-game-thread-160204155.html",
+        "https://www.si.com/college/westvirginia/football/mountaineer-mantrip-senior-day-edition-2026",
+        "https://247sports.com/college/west-virginia/article/wvu-houston-tv-stream-vegas-odds-292879060/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxt38F5g28zXUXxRfXshTIXvHukRp8jRjd5o0MYgCrFKw_9EaOuPCi_VD10U",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGfSfdJUd7wAEvi73a9cPwfBmYmoammqRwluuPNR72Vw3CbrYh98i8yKuQiN8",
+      "image_credit": "Yahoo Sports",
       "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/wvu-vs-houston-game-thread-160204155.html",
+          "title": "WVU vs Houston Game Thread",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGfSfdJUd7wAEvi73a9cPwfBmYmoammqRwluuPNR72Vw3CbrYh98i8yKuQiN8"
+        },
+        {
+          "url": "https://www.si.com/college/westvirginia/football/mountaineer-mantrip-senior-day-edition-2026",
+          "title": "Mountaineer Mantrip: Senior Day Edition",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQANsbqk8wVCArIEGw1cE9vBcGo2BEHvocZNFSk0_0cccdk-sx_KA2F2RuE1i8"
+        },
+        {
+          "url": "https://247sports.com/college/west-virginia/article/wvu-houston-tv-stream-vegas-odds-292879060/",
+          "title": "Where to watch WVU vs Houston",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYDF-o5m8ktC_5Cj_XsKI75b4ckeoJ2Gg6hG6fce7-L1RX9xUQVc80VfObQP4"
+        }
+      ]
+    },
+    {
+      "query": "tn tech vs ms state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T17:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/watch-mississippi-state-vs-tennessee-170000754.html",
+        "https://247sports.com/college/mississippi-state/article/mississippi-state-tennessee-tech-college-football-preview-293021105/",
+        "https://www.clarionledger.com/story/sports/college/mississippi-state/2026/11/21/mississippi-state-football-tennessee-tech-payment-amount/92831589007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3DH0GsBrXHPgPG4jVv4SuDySYvDybrMGES_EuOHasnrto9Nob0VzuPVnXgj4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/watch-mississippi-state-vs-tennessee-170000754.html",
+          "title": "How to watch Mississippi State vs Tennessee Tech: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3DH0GsBrXHPgPG4jVv4SuDySYvDybrMGES_EuOHasnrto9Nob0VzuPVnXgj4"
+        },
         {
           "url": "https://247sports.com/college/mississippi-state/article/mississippi-state-tennessee-tech-college-football-preview-293021105/",
           "title": "Everything fit to print ahead of Bulldogs vs. Golden Eagles",
@@ -341,18 +278,81 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxt38F5g28zXUXxRfXshTIXvHukRp8jRjd5o0MYgCrFKw_9EaOuPCi_VD10U"
         },
         {
-          "url": "https://sports.yahoo.com/articles/much-mississippi-state-football-paying-120108986.html",
+          "url": "https://www.clarionledger.com/story/sports/college/mississippi-state/2026/11/21/mississippi-state-football-tennessee-tech-payment-amount/92831589007/",
           "title": "How much Mississippi State football is paying Tennessee Tech for Week 12 game",
-          "publisher": "Yahoo Sports",
+          "publisher": "The Clarion-Ledger",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPfMnCB1WGdi_YV63qwpen8-kjtLmeAlqj0Ly0UuC95gTJMFFEOUgeihJgds"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsaaKLB2aacqVj56lrB1XzqWzl2T2mqbSPa2hFPjP60VUAfzDhgYh5LmianXE"
+        }
+      ]
+    },
+    {
+      "query": "oilers vs hurricanes",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T17:00:00Z",
+      "related_news_urls": [
+        "https://www.canescountry.com/carolina-hurricanes-game-day-previews/54698/epic-early-season-matchup-as-hurricanes-host-edmonton-preview-how-to-watch-game-thread",
+        "https://sports.yahoo.com/articles/watch-oilers-vs-hurricanes-live-164500382.html",
+        "https://www.nhl.com/hurricanes/news/projected-lineup-november-21-vs-edmonton"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbN0AQ2vFws2DPi_WjfhmF0wsZBtckhPyLjM5wJjoJpULTFkKDn1keF_qV1d0",
+      "image_credit": "Canes Country",
+      "news": [
+        {
+          "url": "https://www.canescountry.com/carolina-hurricanes-game-day-previews/54698/epic-early-season-matchup-as-hurricanes-host-edmonton-preview-how-to-watch-game-thread",
+          "title": "Epic Early Season Matchup as Hurricanes host Edmonton: Preview, How to Watch, Game Thread",
+          "publisher": "Canes Country",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbN0AQ2vFws2DPi_WjfhmF0wsZBtckhPyLjM5wJjoJpULTFkKDn1keF_qV1d0"
         },
         {
-          "url": "https://www.si.com/college/mississippistate/mississippi-state-seniors-have-one-last-chance-to-make-a-statement-at-home-01m7xemk5emd",
-          "title": "Mississippi State Seniors Have One Last Chance to Make a Statement at Home",
-          "publisher": "Sports Illustrated",
+          "url": "https://sports.yahoo.com/articles/watch-oilers-vs-hurricanes-live-164500382.html",
+          "title": "How to watch Oilers vs Hurricanes: Live stream NHL, TV channel",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgPKc8SZ2XOTTB7OFpfApz6meV6mWMUaKKYXt8xoHPEH75hxdGi6VM3uHPszA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKOtueye1lTi4kX-WqBEq8Jgu56FKIdTI_IMBUNouy47nhyG5qbiz9nrrsESw"
+        },
+        {
+          "url": "https://www.nhl.com/hurricanes/news/projected-lineup-november-21-vs-edmonton",
+          "title": "Projected Lineup: November 21 vs. Edmonton",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGZwjdACZgpgyosgxNOMVt19SJr3FDUDAVtAfedPLJiZuh_mNvL4CuQV29soo"
+        }
+      ]
+    },
+    {
+      "query": "detroit mercy vs mi state",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T17:00:00Z",
+      "related_news_urls": [
+        "https://msuspartans.com/news/2026/11/20/mens-basketball-no-2-michigan-state-returns-home-on-saturday-to-host-detroit-mercy",
+        "https://sports.yahoo.com/articles/michigan-state-vs-detroit-mercy-130005111.html",
+        "https://www.lansingstatejournal.com/story/sports/columnists/graham-couch/2026/11/20/msu-basketball-vs-detroit-prediction-preview-analysis-tv-betting-line/92853056007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg4gOSMabCwdGfu77Dy1TbtTsgLeeuLZ2z3xIHT7JR8idxc2gePvZPXB2jPpI",
+      "image_credit": "Michigan State University Athletics",
+      "news": [
+        {
+          "url": "https://msuspartans.com/news/2026/11/20/mens-basketball-no-2-michigan-state-returns-home-on-saturday-to-host-detroit-mercy",
+          "title": "No. 2 Michigan State Returns Home on Saturday to Host Detroit Mercy",
+          "publisher": "Michigan State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg4gOSMabCwdGfu77Dy1TbtTsgLeeuLZ2z3xIHT7JR8idxc2gePvZPXB2jPpI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/michigan-state-vs-detroit-mercy-130005111.html",
+          "title": "Michigan State vs. Detroit Mercy final betting odds and a score prediction",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIbmkGyCZ71xmWhCRdvQSY3JstUCqEUomEmEpy0G3AOHr1pjWNh548RsxzD2k"
+        },
+        {
+          "url": "https://www.lansingstatejournal.com/story/sports/columnists/graham-couch/2026/11/20/msu-basketball-vs-detroit-prediction-preview-analysis-tv-betting-line/92853056007/",
+          "title": "Michigan State basketball vs. Detroit Mercy Tipoff: Matchup analysis and a prediction",
+          "publisher": "Lansing State Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkd1YzO_6vKBkIjdXD8XUcSkuiWLmOSY3Rtguo0KDVdQmmHDR_HnG6EuxyLAM"
         }
       ]
     }
