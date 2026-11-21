@@ -18,7 +18,13 @@ export const CREATOR_CHANNELS=Object.freeze([
   seed:Object.freeze(YOUTUBE_VIDEO_DATABASE.videos.map(v=>seed(v.channelId,v.videoId,v.title)))}),
  Object.freeze({key:'julie',name:JULIE_DERU_CHANNEL.name,channelId:JULIE_DERU_CHANNEL.channelId,
   url:JULIE_DERU_CHANNEL.profileUrl,
-  seed:Object.freeze(JULIE_DERU_VIDEO_DATABASE.videos.map(v=>seed(v.channelId,v.videoId,v.title)))})
+  seed:Object.freeze(JULIE_DERU_VIDEO_DATABASE.videos.map(v=>seed(v.channelId,v.videoId,v.title)))}),
+ // Source-linked video only: public watch metadata checked, but no verified
+ // channel ID. Never request RSS or pretend this is a full creator archive.
+ Object.freeze({key:'samirah',name:'Samirah Ann · owner-linked video',channelId:null,
+  url:'https://www.youtube.com/@SamirahAnn',seed:Object.freeze([
+   seed('samirah','UPFgnpkm7MQ','BREASTFEEDING A TEETHING BABY | Clingy baby | Clean with me | Mum of four')
+  ])})
 ]);
 const VIDEO_ID=/^[A-Za-z0-9_-]{11}$/;
 const CHANNEL_ID=/^UC[A-Za-z0-9_-]{22}$/;
@@ -72,7 +78,7 @@ export function pageCreatorVideos(videos,offset=0,limit=6){
  return videos.slice(start,start+count);
 }
 export const CREATOR_MIX_SOURCE=Object.freeze({
- id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Creator Mix',
+ id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · Creator Mix',
  kind:'Video · YouTube',feature:'Mixed channel uploads and saved creator videos',
  featureUrl:'https://www.youtube.com/@ganatribe/videos',
  official:'https://www.youtube.com/@ganatribe',
