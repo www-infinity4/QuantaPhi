@@ -33,7 +33,8 @@ test('media composer handles a full mixed batch, retries, video-only drafts and 
  try{
   await page.goto(`http://127.0.0.1:${server.address().port}/bubbles.html`);
   await page.waitForFunction(()=>window.QuantaBubbles);
-  await page.locator('.ba-launcher').click();
+  // This suite exercises typed media; opening it must not start microphone permission UI.
+  await page.evaluate(()=>window.QuantaBubbles.open());
   const field=page.getByRole('textbox',{name:'Message Bubbles',exact:true});
   const picker=page.locator('.ba-photo-file'),send=page.getByRole('button',{name:'Send',exact:true});
   const status=page.locator('.ba-status');
@@ -54,6 +55,7 @@ test('media composer handles a full mixed batch, retries, video-only drafts and 
    await page.waitForFunction(()=>!document.querySelector('.ba-send').disabled);
    assert.equal(textRequests.at(-1)?.request,message);
    assert.equal(textRequests.at(-1)?.input,undefined,'long text is sent once, avoiding duplicate JSON-body growth');
+   console.log('composer-after-long-reply',JSON.stringify(await field.evaluate(el=>({hidden:document.querySelector('.ba-panel').hidden,disabled:el.disabled,readOnly:el.readOnly,rect:el.getBoundingClientRect().toJSON(),style:{display:getComputedStyle(el).display,visibility:getComputedStyle(el).visibility},panelRect:document.querySelector('.ba-panel').getBoundingClientRect().toJSON(),composerRect:el.closest('form').getBoundingClientRect().toJSON(),url:location.href}))));
    const escaped='Summarize this passage.\n'+'line\\n\n'.repeat(4300)+'END';
    await field.fill(escaped);failTextNext=true;await send.click();
    await page.waitForFunction(()=>document.querySelector('.ba-status').textContent.includes('synthetic_text_failure')&&!document.querySelector('.ba-send').disabled);
