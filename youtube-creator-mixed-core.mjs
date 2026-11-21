@@ -33,6 +33,17 @@ export const CREATOR_CHANNELS=Object.freeze([
    seed('UCQU1zvNELO2AatGXMRQ2bSw','xDr8qOYR93M','Answering Questions I Really Don\'t Want To'),
    seed('UCQU1zvNELO2AatGXMRQ2bSw','rS_P180JLU8','Autism Life In Texas'),
    seed('UCQU1zvNELO2AatGXMRQ2bSw','4CjRqGBkjQY','New House Grocery Haul 2026 | WALMART GROCERIES')
+  ])}),
+ Object.freeze({key:'famousmommy',name:'The Famous Mommy',channelId:'UCLE2maZ8nLeHMNXihYnd4lg',
+  url:'https://www.youtube.com/@TheFamousMommy',seed:Object.freeze([
+   seed('UCLE2maZ8nLeHMNXihYnd4lg','fivLE0tSUV8','Momcozy Breastpump- my honest review and how to use it tutorial for mothers'),
+   seed('UCLE2maZ8nLeHMNXihYnd4lg','NVd_xfirzvY','A Mom’s Worst Nightmare…on the way home…')
+  ])}),
+ Object.freeze({key:'maxine',name:'Maxine',channelId:'UCHD-KqiMq1aJjHiYZso-2_w',
+  url:'https://www.youtube.com/@Maxineeg',seed:Object.freeze([
+   seed('UCHD-KqiMq1aJjHiYZso-2_w','bCyafMNRVOE','Practicing Babywearing for Our Diamond Head Hike in Hawaii! 🌺 | Toddler Back Carry'),
+   seed('UCHD-KqiMq1aJjHiYZso-2_w','-QQZXVyIWqQ','The Easiest Crispy Teriyaki Tofu You’ll Ever Make! | Vegan and Delicious'),
+   seed('UCHD-KqiMq1aJjHiYZso-2_w','Fy8W0QwsEC0','What My Vegan 3 Year Old Toddler Eats for Dinner!')
   ])})
 ]);
 const VIDEO_ID=/^[A-Za-z0-9_-]{11}$/;
@@ -87,7 +98,7 @@ export function pageCreatorVideos(videos,offset=0,limit=6){
  return videos.slice(start,start+count);
 }
 export const CREATOR_MIX_SOURCE=Object.freeze({
- id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · LANDing Autism · Creator Mix',
+ id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · LANDing · Famous Mommy · Maxine · Creator Mix',
  kind:'Video · YouTube',feature:'Mixed channel uploads and saved creator videos',
  featureUrl:'https://www.youtube.com/@ganatribe/videos',
  official:'https://www.youtube.com/@ganatribe',
@@ -107,3 +118,16 @@ export const LANDING_AUTISM_SOURCE=Object.freeze({
  details:'Source-identified public YouTube video links, checked 2026-11-21. This is a partial indexed selection with keyless recent-upload refresh, not a complete historical video download or licensed rehost; YouTube owns playback restrictions.',
  youtubeMixedFeed:true,initialCreatorChannel:'landing'
 });
+
+/* Publisher-owned videos are linked, not copied. The keyless official RSS
+ * adds recent uploads; history remains on each original YouTube channel. */
+const creatorSource=(id,name,channelKey,profile)=>Object.freeze({
+ id,name:name+' · Full Channel',kind:'Video · YouTube',
+ feature:'Watch selected original videos and recent YouTube uploads',
+ featureUrl:profile+'/videos',official:profile,
+ focus:'Browse source-identified original video links, recent official YouTube uploads and the full channel at its original website. Playback requires a tap.',
+ details:'Original YouTube channel and video links checked on 2026-11-21. The in-card index is partial, not a complete archived channel, copyright grant or provider-account connection.',
+ youtubeMixedFeed:true,initialCreatorChannel:channelKey
+});
+export const FAMOUS_MOMMY_SOURCE=creatorSource('famous-mommy-youtube','The Famous Mommy','famousmommy','https://www.youtube.com/@TheFamousMommy');
+export const MAXINE_SOURCE=creatorSource('maxine-youtube','Maxine','maxine','https://www.youtube.com/@Maxineeg');
