@@ -11,7 +11,9 @@ adb install -r "$APK"
 PKG=org.quantaphi.bubbles.preview5
 adb shell pm path "$PKG" | tee /tmp/bubbles-emulator/installed.txt
 adb shell pm grant "$PKG" android.permission.RECORD_AUDIO
-adb shell pm grant "$PKG" android.permission.POST_NOTIFICATIONS
+if [ "$(adb shell getprop ro.build.version.sdk | tr -d '\r')" -ge 33 ]; then
+    adb shell pm grant "$PKG" android.permission.POST_NOTIFICATIONS
+fi
 adb shell appops set "$PKG" SYSTEM_ALERT_WINDOW allow
 adb logcat -c
 adb shell am start -W -n "$PKG/org.quantaphi.bubbles.MainActivity" | tee /tmp/bubbles-emulator/launch.txt
