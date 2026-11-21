@@ -144,6 +144,28 @@ def run():
                 expect(stage.locator('[data-source-id="abbecadventures-video-6346365875734e4f666a4d"]')).to_be_visible()
                 checks.append(f'{width}px: 12 original YouTube source cards with media placement in Oracle')
 
+                # Maria: 3 verified uploads, opt-in similar carousel, official full listing.
+                # Do not reclassify this as daycare, an advertisement, or a complete feed.
+                page.goto(base+'/source-quick-card.html?card=milky-mama-maria-youtube', wait_until='domcontentloaded')
+                maria = page.locator('.youtube-creator-post-card')
+                expect(maria).to_be_visible()
+                expect(maria).to_contain_text('Milky Mama Maria · Public YouTube videos')
+                expect(maria).to_contain_text('3 source-identified videos')
+                expect(maria.get_by_role('link', name='View all channel videos')).to_have_attribute(
+                    'href', 'https://www.youtube.com/@milkymamamarie/videos')
+                assert maria.locator('iframe').count() == 0
+                maria.get_by_role('button', name='View similar').click()
+                expect(maria.locator('.qcx-related-carousel button')).to_have_count(2)
+                maria.get_by_role('button', name='Related upload 1', exact=False).click()
+                assert maria.locator('iframe').count() == 0
+                maria.get_by_role('button', name='Play video in card').click()
+                expect(maria.locator('iframe')).to_have_attribute(
+                    'src', 'https://www.youtube-nocookie.com/embed/xU6f-lV2rG4')
+                maria.get_by_role('button', name='Stop playback').click()
+                expect(maria.locator('iframe')).to_have_count(0)
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Maria card overflow'
+                checks.append(f'{width}px: Maria series, verified similar carousel, channel lineup and one opt-in player')
+
                 # Julie Deru uses the SAME Abbe player and actual Oracle carousel,
                 # with no frame or provider request until the viewer chooses Play.
                 page.goto(base+'/source-quick-card.html?card=julie-deru-youtube', wait_until='domcontentloaded')
