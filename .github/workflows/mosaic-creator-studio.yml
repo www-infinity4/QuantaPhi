@@ -1,0 +1,29 @@
+name: Mosaic Creator Studio (sandbox)
+on:
+  pull_request:
+    paths:
+      - 'sandbox/mosaic/**'
+      - 'test/mosaic-creator-studio.test.mjs'
+      - '.github/workflows/mosaic-creator-studio.yml'
+  push:
+    branches:
+      - 'feature/mosaic-creator-studio'
+    paths:
+      - 'sandbox/mosaic/**'
+      - 'test/mosaic-creator-studio.test.mjs'
+      - '.github/workflows/mosaic-creator-studio.yml'
+permissions:
+  contents: read
+jobs:
+  local-pipeline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify offline pipeline state and export contract
+        run: node --test test/mosaic-creator-studio.test.mjs
