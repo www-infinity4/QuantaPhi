@@ -17,8 +17,8 @@ const savedUrls=()=>{
 export function mountMixedCreatorCard(root,card){
  if(!root||card?.youtubeMixedFeed!==true)return false;
  const panel=el('section','qcx-tool youtube-creator-mixed-card');
- panel.setAttribute('aria-label','GANA Tribe, AbbeCAdventures and Julie Deru mixed YouTube video feed');
- const title=el('h3','','YouTube creator mix · GANA Tribe / Abbe / Julie');
+ panel.setAttribute('aria-label','GANA Tribe, AbbeCAdventures, Julie Deru and Samirah Ann mixed YouTube video feed');
+ const title=el('h3','','YouTube creator mix · GANA Tribe / Abbe / Julie / Samirah');
  const info=el('p','qcx-note','Recent videos from YouTube’s official public upload feeds, plus reviewed and personally added links. Full history, Shorts and Community posts may not be present.');
  const status=el('p','qcx-note','Loading available public uploads…');
  status.setAttribute('role','status');

@@ -9,8 +9,8 @@ import {departmentFor} from '../quanta-context-placement.mjs';
 
 const video=(channelId,videoId,title)=>({channelId,videoId,title,sourceUrl:'https://www.youtube.com/watch?v='+videoId,publishedAt:null});
 
-test('GANA Tribe, AbbeCAdventures and Julie Deru are distinct verified publisher channels',()=>{
- assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie']);
+test('Creator mix preserves three verified channel IDs and a separate owner-linked Samirah source',()=>{
+ assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah']);
  assert.equal(CREATOR_CHANNELS[0].channelId,'UC6ySmwN_K8fGGD2EKLQdEGA');
  assert.equal(CREATOR_CHANNELS[1].channelId,'UCFsg41h5GN7TAxFUK3Sl00w');
  assert.equal(CREATOR_CHANNELS[2].channelId,'UCt_P3xPrrnOkYT5UQQ4vUIg');
@@ -99,4 +99,16 @@ test('mixed channel Quick Card is a Public/Media Oracle card with one click-to-p
  const api=readFileSync(new URL('../workers/quantaphi-site/video-api.mjs',import.meta.url),'utf8');
  assert.match(api,/if\(path==='\/api\/creator-uploads'\)return creatorUploadsApi\(request,fetcher\)/);
  assert.doesNotMatch(ui,/autoplay=1/);
+});
+
+test('Samirah owner-linked seed appears in creator mix without claiming a verified RSS channel ID',()=>{
+ const channel=CREATOR_CHANNELS.find(row=>row.key==='samirah');
+ assert.ok(channel);
+ assert.equal(channel.channelId,null);
+ assert.equal(channel.seed.length,1);
+ assert.equal(channel.seed[0].videoId,'UPFgnpkm7MQ');
+ assert.equal(channel.seed[0].sourceUrl,'https://www.youtube.com/watch?v=UPFgnpkm7MQ');
+ assert.ok(CREATOR_MIX_SOURCE.name.includes('Samirah'));
+ const all=CREATOR_CHANNELS.flatMap(row=>row.seed.map(v=>({...v,channelId:row.key})));
+ assert.equal(mixCreatorVideos(all,CREATOR_CHANNELS.map(row=>row.key)).filter(v=>v.videoId==='UPFgnpkm7MQ').length,1);
 });
