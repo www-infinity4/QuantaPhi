@@ -8,6 +8,7 @@ import {YOUTUBE_CREATOR_SOURCES} from './youtube-creator-catalog.mjs';
 import {JULIE_DERU_SOURCES} from './julie-deru-catalog.mjs';
 import {CREATOR_MIX_SOURCE,LANDING_AUTISM_SOURCE} from './youtube-creator-mixed-core.mjs';
 import {REVIEWED_OWNER_VIDEO_CARDS} from './youtube-owner-video-links.mjs';
+import {PRIORITY_LIVE_VIDEO_CARD} from './youtube-priority-live-20261121.mjs';
 import {FAMILY_TV_SOURCE} from './family-parenting-tv-core.mjs';
 import {MILK_MAMAS_SOURCE} from './milk-mamas-catalog.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
@@ -49,6 +50,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
 // The source adapter reuses the same verified original catalog record and tools.
 const PCLA_DISCOVERY=findDiscovery('pcla-picocela');
 export const ACTIVE_SOURCE_CARDS=Object.freeze([
+ PRIORITY_LIVE_VIDEO_CARD, // owner-priority stream leads the source bank; no unverified channel import
  ...QUICK_CARD_SOURCES,
  ...CREATOR_SOURCES,
  ...YOUTUBE_CREATOR_SOURCES,
@@ -66,6 +68,7 @@ export const ACTIVE_SOURCE_CARDS=Object.freeze([
 // message draft, model selection, local recording, or approved provider embed). These are
 // independent tools, not claims of publisher data access or affiliation.
 export const PUBLIC_SOURCE_IDS=Object.freeze([
+ PRIORITY_LIVE_VIDEO_CARD.id,
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
  'chatgpt','avatar-ai','gemini','claude','copilot','microsoft-ai-builder','harley-davidson','indian-motorcycle','pcla-picocela',
