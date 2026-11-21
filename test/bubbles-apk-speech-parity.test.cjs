@@ -20,7 +20,7 @@ test('speech errors are shown in the same retained website chat instead of silen
  assert.match(service,/@Override public void onError\(String id\)/);
 });
 test('emulator uses disposable x86_64 build while Moto G APK retains ARM only',()=>{
- assert.match(gradle,/versionCode 58/);
+ assert.match(gradle,/versionCode 59/);
  assert.match(gradle,/if \(project\.hasProperty\('bubblesEmulatorSmoke'\)\) abiFilters 'x86_64'/);
  assert.match(gradle,/else abiFilters 'armeabi-v7a', 'arm64-v8a'/);
  assert.match(ci,/reactivecircus\/android-emulator-runner@v2/);
