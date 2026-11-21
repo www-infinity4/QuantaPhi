@@ -13,6 +13,11 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=UPFgnpkm7MQ',
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  contentBoundary:'general-media'
+},{
+ videoId:'bzvtKRteavs',title:'#idahosprings #goldmill #goldmine $goldmining #gold',
+ sourceUrl:'https://www.youtube.com/watch?v=bzvtKRteavs',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ contentBoundary:'general-media',shortsRoute:true
 }];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
@@ -21,6 +26,7 @@ export function validateOwnerYouTubeLink(row){
  if(typeof row.title!=='string'||row.title.length<1||row.title.length>150||
     row.title!==row.title.trim()||/[<>\u0000-\u001f]/.test(row.title))return false;
  if(row.publishedAt!==null||row.publisherVerified!==false||row.contentBoundary!=='general-media')return false;
+ if(row.shortsRoute!==undefined&&row.shortsRoute!==true)return false;
  return /^\d{4}-\d\d-\d\d$/.test(row.observedAt||'')&&
   Number.isFinite(Date.parse(row.observedAt+'T00:00:00Z'));
 }
@@ -35,6 +41,9 @@ export const REVIEWED_OWNER_VIDEO_CARDS=Object.freeze(REVIEWED_OWNER_VIDEO_LINKS
  image:'https://i.ytimg.com/vi/'+v.videoId+'/hqdefault.jpg',
  reviewedYouTubeVideoId:v.videoId,contentBoundary:'general-media',
  observedAt:v.observedAt,publishedAt:null,publisherVerified:false,
+ ...(v.shortsRoute?{secondUrl:'https://www.youtube.com/shorts/'+v.videoId,secondLabel:'Open Shorts link'}:{}),
  focus:'Original YouTube link and optional provider-hosted playback only. The publisher and upload date have not been independently verified; do not present this as licensed, current/trending, family education, 21+ or an advertisement.',
- details:'Owner-supplied original YouTube link; public page title and video ID checked on '+v.observedAt+'. This entry is not an exhaustive channel import or a paid, adult, or childcare placement.'
+ details:v.shortsRoute
+  ?'Owner-supplied Argo Mill tour video. Public YouTube title and source checked on '+v.observedAt+'. Its Shorts URL may redirect to the normal watch page. Publisher identity, account ownership, other Shorts and publication date are not verified; this is not a complete channel archive.'
+  :'Owner-supplied original YouTube link; public page title and video ID checked on '+v.observedAt+'. This entry is not an exhaustive channel import or a paid, adult, or childcare placement.'
 })));
