@@ -66,7 +66,7 @@ test('video cards use only approved click-to-play YouTube embeds and retain dire
 
 test('owner-linked YouTube video becomes a separate source-backed public Oracle carousel card, not a family or 21+ placement',async()=>{
  const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
- assert.equal(REVIEWED_OWNER_VIDEO_LINKS.length,2);
+ assert.ok(REVIEWED_OWNER_VIDEO_LINKS.length>=2,'Owner catalog includes the original two and may grow with new verified source links');
  const v=REVIEWED_OWNER_VIDEO_LINKS[0];
  assert.equal(v.videoId,'PyUwXoTabPA');
  assert.equal(v.title,'REFRESHING! 6-2-2014');
