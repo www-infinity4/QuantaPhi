@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T12:31:35.463216Z",
+  "checked_at": "2026-11-21T13:01:14.357745Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "fire country",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T12:10:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1304937/sheriff-country-fire-country-boston-blue-not-airing-november-december-2026/",
-        "https://sg.news.yahoo.com/fire-country-fans-ll-absolutely-110200892.html",
-        "https://collider.com/fire-country-no-new-episodes-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2B587V1Lb_RBXLUV7nZXaFtiMJzIUzSLs5ZqZtdnLN-8PW5_U3WCZUxxO4vw",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1304937/sheriff-country-fire-country-boston-blue-not-airing-november-december-2026/",
-          "title": "Why ‘Sheriff Country,’ ‘Fire Country’ & ‘Boston Blue’ Aren’t New Tonight",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2B587V1Lb_RBXLUV7nZXaFtiMJzIUzSLs5ZqZtdnLN-8PW5_U3WCZUxxO4vw"
-        },
-        {
-          "url": "https://sg.news.yahoo.com/fire-country-fans-ll-absolutely-110200892.html",
-          "title": "‘Fire Country’ Fans, You’ll Be Absolutely Devastated by This Season 5 Episode News",
-          "publisher": "Yahoo News Singapore",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZjawTT1mWeUWYOmNxR4aGE34Yp1GB__K-8G091n68Z4wh3qEQSEZUILufx9c"
-        },
-        {
-          "url": "https://collider.com/fire-country-no-new-episodes-november-2026/",
-          "title": "'Fire Country’ Officially Pulled From CBS’ Schedule Until Next Month",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmFRcKfcdYVAdNuslwyTf4YcnepPUVIt9KuvKko7xVMx-tx6m_pGgQa68d4bA"
-        }
-      ]
-    },
-    {
-      "query": "velodrome",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T12:10:00Z",
-      "related_news_urls": [
-        "https://maritima.fr/actualites/culture/marseille/16845/om-les-visages-du-velodrome-le-livre-evenement-qui-raconte-celles-et-ceux-qui-donnent-son-ame-au-stade",
-        "https://rmcsport.bfmtv.com/football/ligue-1/video-pad-after-marseille-1311_VN-202611130687.html",
-        "https://www.lamarseillaise.fr/culture/gregory-martin-aude-donne-la-parole-aux-visages-du-velodrome-MP20940185"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcgSpIPNcto5SDlcDdDCUPgdh3hJFoM2xmibMJYq7IXRN_jKvpAl8u_3X17Bk",
-      "image_credit": "Maritima",
-      "news": [
-        {
-          "url": "https://maritima.fr/actualites/culture/marseille/16845/om-les-visages-du-velodrome-le-livre-evenement-qui-raconte-celles-et-ceux-qui-donnent-son-ame-au-stade",
-          "title": "OM : « Les visages du Vélodrome », le livre événement qui raconte celles et ceux qui donnent son âme au stade",
-          "publisher": "Maritima",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcgSpIPNcto5SDlcDdDCUPgdh3hJFoM2xmibMJYq7IXRN_jKvpAl8u_3X17Bk"
-        },
-        {
-          "url": "https://rmcsport.bfmtv.com/football/ligue-1/video-pad-after-marseille-1311_VN-202611130687.html",
-          "title": "LE VELODROME : PILIER DE L'OM, SES SUPPORTERS ET DES MARSEILLAIS",
-          "publisher": "RMC Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxiHNQnXJkNDpZNXjrvwBK_fHDHBCtJU2ESK86pf_LTXNyUNoXL1bQFSRS48k"
-        },
-        {
-          "url": "https://www.lamarseillaise.fr/culture/gregory-martin-aude-donne-la-parole-aux-visages-du-velodrome-MP20940185",
-          "title": "Grégory Martin-Aude donne la parole aux visages du Vélodrome",
-          "publisher": "www.lamarseillaise.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGcXZNZ2i9sP3GCiqwK3lUWc5TOHna9e3noqdsKdyvepOR5yc0Tvqt4tIYCeU"
-        }
-      ]
-    },
-    {
-      "query": "denver weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T12:10:00Z",
-      "related_news_urls": [
-        "https://www.axios.com/local/denver/2026/11/19/denver-latest-first-snowfall-record-2026",
-        "https://kdvr.com/weather/weather-forecast/denver-weather-much-colder-this-weekend/",
-        "https://opensnow.com/dailysnow/copper/post/45010"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRB5J4QR3Go8IZRdWAPdwWNxK6zCcMxV-yHBLYyCBF_EN9cheHGWgDKMAqaJY",
-      "image_credit": "Axios",
-      "news": [
-        {
-          "url": "https://www.axios.com/local/denver/2026/11/19/denver-latest-first-snowfall-record-2026",
-          "title": "Denver's snow drought could end this weekend — barely",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRB5J4QR3Go8IZRdWAPdwWNxK6zCcMxV-yHBLYyCBF_EN9cheHGWgDKMAqaJY"
-        },
-        {
-          "url": "https://kdvr.com/weather/weather-forecast/denver-weather-much-colder-this-weekend/",
-          "title": "Denver weather: Much colder this weekend",
-          "publisher": "KDVR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWnv8afk4SHAw7YAvKZHBbXvVw-AiQdFIL9Izh3hWPTQDzxs84xIFdjefpmBk"
-        },
-        {
-          "url": "https://opensnow.com/dailysnow/copper/post/45010",
-          "title": "Snow on the way for Friday and Saturday | Copper Mountain Daily Snow Forecast",
-          "publisher": "OpenSnow",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSYntmPV5uWaYr5Tnm5icb2MVJoHtjpYkdU902GovOaN1i5n5BkJFI1kL3azk"
-        }
-      ]
-    },
-    {
-      "query": "météo",
+      "query": "alexander zverev ben shelton atp finals",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T12:00:00Z",
+      "published_at": "2026-11-21T12:40:00Z",
       "related_news_urls": [
-        "https://www.sudouest.fr/landes/mont-de-marsan/mont-de-marsan-meteo-du-samedi-21-novembre-2026-31602496.php",
-        "https://www.ouest-france.fr/meteo/nouvelle-aquitaine/mont-de-marsan-40000/la-meteo-du-jour-a-mont-de-marsan-d4b4bb0e-dc6b-4aa4-a1f4-8fb55784c364",
-        "https://www.ouest-france.fr/meteo/nouvelle-aquitaine/mont-de-marsan-40000/la-meteo-du-jour-a-mont-de-marsan-b11bdc0d-53ea-40e8-be96-fe51da2b1715"
+        "https://www.atptour.com/en/news/alcaraz-shelton-nitto-atp-finals-2026-sf-preview",
+        "https://www.theguardian.com/sport/live/2026/nov/21/atp-finals-tennis-carlos-alcaraz-v-ben-shelton-live-semi-final-updates",
+        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/oNZLt9NIR2At/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9C6_JuMM7ixKYXti6MHuaryLSCGZlDedgWYyxnW6CUyWWcJkOzRQhl7VcIis",
-      "image_credit": "Sud Ouest",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgkDuc652f3q8JGgB0rXF_Mt52nt5p5D1Psk9C9q6yQA1_jJVGuxf9tGAHdOE",
+      "image_credit": "ATP Tour",
       "news": [
         {
-          "url": "https://www.sudouest.fr/landes/mont-de-marsan/mont-de-marsan-meteo-du-samedi-21-novembre-2026-31602496.php",
-          "title": "La météo à Mont-de-Marsan du samedi 21 novembre 2026",
-          "publisher": "Sud Ouest",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9C6_JuMM7ixKYXti6MHuaryLSCGZlDedgWYyxnW6CUyWWcJkOzRQhl7VcIis"
-        },
-        {
-          "url": "https://www.ouest-france.fr/meteo/nouvelle-aquitaine/mont-de-marsan-40000/la-meteo-du-jour-a-mont-de-marsan-d4b4bb0e-dc6b-4aa4-a1f4-8fb55784c364",
-          "title": "Météo. Quel temps fera-t-il à Mont-de-Marsan et ses environs le vendredi 20 novembre 2026 ?",
-          "publisher": "Ouest-France",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvL0hXqv4Z-mAmR_v-ReUI9jKBilCCG0iK6unsnlUAu38W1WU9p4y3U3I6QFY"
-        },
-        {
-          "url": "https://www.ouest-france.fr/meteo/nouvelle-aquitaine/mont-de-marsan-40000/la-meteo-du-jour-a-mont-de-marsan-b11bdc0d-53ea-40e8-be96-fe51da2b1715",
-          "title": "Météo. Quel temps est-il prévu à Mont-de-Marsan et ses environs le mardi 17 novembre 2026 ?",
-          "publisher": "Ouest-France",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvL0hXqv4Z-mAmR_v-ReUI9jKBilCCG0iK6unsnlUAu38W1WU9p4y3U3I6QFY"
-        }
-      ]
-    },
-    {
-      "query": "tennis",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T12:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50543676/carlos-alcaraz-wins-set-atp-finals-semi-vs-ben-shelton",
-        "https://www.atptour.com/en/news/alcaraz-nitto-atp-finals-2026-reaction-friday",
-        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/6LKlXRh5iaXe/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1RYWqo6ozs4bkq3z9VP8GlQWHw38CLvNgufIqkjw9hWHDz-gVwvPXxJ_MBIQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50543676/carlos-alcaraz-wins-set-atp-finals-semi-vs-ben-shelton",
-          "title": "Carlos Alcaraz in off-court 'challenge' to stay healthy for semis of ATP Finals",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1RYWqo6ozs4bkq3z9VP8GlQWHw38CLvNgufIqkjw9hWHDz-gVwvPXxJ_MBIQ"
-        },
-        {
-          "url": "https://www.atptour.com/en/news/alcaraz-nitto-atp-finals-2026-reaction-friday",
-          "title": "Alcaraz reflects on past 24 hours after Nitto ATP Finals injury scare",
+          "url": "https://www.atptour.com/en/news/alcaraz-shelton-nitto-atp-finals-2026-sf-preview",
+          "title": "Preview: Alcaraz & Shelton clash in Nitto ATP Finals SFs",
           "publisher": "ATP Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8fCclZ1YRnz-HLrNShcVfUIoJYCUQ1r8JzsWmU_zmHN--V50v_ejtUFWdFNU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgkDuc652f3q8JGgB0rXF_Mt52nt5p5D1Psk9C9q6yQA1_jJVGuxf9tGAHdOE"
         },
         {
-          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/6LKlXRh5iaXe/",
-          "title": "Medvedev advances to semifinals with win over Tiafoe, Alcaraz beats Cobolli at ATP Finals: Live updates and reaction",
+          "url": "https://www.theguardian.com/sport/live/2026/nov/21/atp-finals-tennis-carlos-alcaraz-v-ben-shelton-live-semi-final-updates",
+          "title": "ATP Finals tennis: Carlos Alcaraz v Ben Shelton – live semi-final updates",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhD5Vxrtv-AXbqfS6KO69PxSR5U8bjnMoA30qFQfJuOvfFAfchYv9B_-SWwDE"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/oNZLt9NIR2At/",
+          "title": "ATP Finals 2026 live updates: Latest with Alcaraz vs. Shelton in semifinals, Zverev vs. Medvedev to come",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBEOyissJYeO6E7ZN5kcJUqvEkkKTQ9mWcwgVEcNtd5UuCGHZ6mhiC9W2hpOY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSonwVIbL1hvs1KjV0fNGOmaYs9rHuCyJn5LQJ9khKOnfoLTT0buM6m_NaOeAc"
         }
       ]
     },
     {
-      "query": "walmart black friday ad 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T12:00:00Z",
-      "related_news_urls": [
-        "https://www.al.com/news/2026/11/top-retailers-preparing-for-black-friday-2026-what-walmart-target-amazon-and-others-have-revealed-so-far.html",
-        "https://www.jsonline.com/story/news/local/wisconsin/2026/11/18/jc-penny-and-macys-offer-biggest-black-friday-deals-wallethub-says/92842908007/",
-        "https://www.wflx.com/2026/11/20/best-stores-black-friday-shopping/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJVkWom6YHV23tQBGc1d8HbzYPcL0ImpZJrPJAh36z-p1Km_TksDVLYkSVxe4",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/news/2026/11/top-retailers-preparing-for-black-friday-2026-what-walmart-target-amazon-and-others-have-revealed-so-far.html",
-          "title": "Top retailers preparing for Black Friday 2026: What Walmart, Target, Amazon and others have revealed so far",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJVkWom6YHV23tQBGc1d8HbzYPcL0ImpZJrPJAh36z-p1Km_TksDVLYkSVxe4"
-        },
-        {
-          "url": "https://www.jsonline.com/story/news/local/wisconsin/2026/11/18/jc-penny-and-macys-offer-biggest-black-friday-deals-wallethub-says/92842908007/",
-          "title": "These stores in Wisconsin will save you the most on Black Friday",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkCW0yyGQIql5mf29iuA0P6evO3wVVL5J7ZZXh2W8Bi-pUUK6uS5QjJh9duRM"
-        },
-        {
-          "url": "https://www.wflx.com/2026/11/20/best-stores-black-friday-shopping/",
-          "title": "The best stores for Black Friday shopping",
-          "publisher": "WFLX",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKoXLvAxl6Cqczjt3Yne8rJTyd5upNmkuTgTF2DcM0n0e6pK6Xli48IS0-89o"
-        }
-      ]
-    },
-    {
-      "query": "stock market crash",
+      "query": "raleigh christmas parade",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T11:50:00Z",
+      "published_at": "2026-11-21T12:40:00Z",
       "related_news_urls": [
-        "https://www.barrons.com/articles/ai-stock-markets-asset-allocation-120e66b9",
-        "https://finance.yahoo.com/markets/stocks/articles/bear-market-coming-2027-history-113502297.html",
-        "https://www.fool.com/investing/2026/11/19/prediction-stock-market-crash-coming-investors-warren-buffetts-proven-advice/"
+        "https://abc11.com/post/christmas-holiday-season-2026-nc-raleigh-tree-lighting-parade-heres-how-watch-live-info-parking-transportation/20059319/",
+        "https://www.newsobserver.com/news/local/article318173141.html",
+        "https://www.wral.com/lifestyles/2026-raleigh-christmas-parade-how-to-watch/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvU39QTrHe91NNNq4Rftmm0BWJss-fI4Vwigw0nwFcWX1uh7b2n-vczvBC1l8",
-      "image_credit": "Barron's",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxYjQ64__inf6JPxi1PbGHAHN8cnEqB1QQXGxpApdCQRI03hVnZam52xAFgo",
+      "image_credit": "ABC11 News",
       "news": [
         {
-          "url": "https://www.barrons.com/articles/ai-stock-markets-asset-allocation-120e66b9",
-          "title": "The Worst Could Still Be Ahead for Markets. 3 Ways to Prepare Your Portfolio.",
-          "publisher": "Barron's",
+          "url": "https://abc11.com/post/christmas-holiday-season-2026-nc-raleigh-tree-lighting-parade-heres-how-watch-live-info-parking-transportation/20059319/",
+          "title": "Christmas Holiday Season 2026 NC: Raleigh Tree Lighting, Parade; Here's how to Watch Live, info on parking, transportation",
+          "publisher": "ABC11 News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvU39QTrHe91NNNq4Rftmm0BWJss-fI4Vwigw0nwFcWX1uh7b2n-vczvBC1l8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxYjQ64__inf6JPxi1PbGHAHN8cnEqB1QQXGxpApdCQRI03hVnZam52xAFgo"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/bear-market-coming-2027-history-113502297.html",
-          "title": "If a Bear Market Is Coming in 2027, History Says This 1 Simple Move Can Protect Your Investments",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.newsobserver.com/news/local/article318173141.html",
+          "title": "The Raleigh Christmas parade is Saturday. Here’s what to expect downtown",
+          "publisher": "Raleigh News & Observer",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNxd9ekG_yTT31ez4XNOBrmUf73KNT98iARDLxB4s3SwYCo0dOw-_1Vcyzzug"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyYGQ8Ry6qn7booaomT2ZsDsCwsYSFsY6JKP52C7O6kvQaqvH82tbo22yTVlw"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/19/prediction-stock-market-crash-coming-investors-warren-buffetts-proven-advice/",
-          "title": "Prediction: A Stock Market Crash Is Coming. Here's What Investors Should Do Based on Warren Buffett's Proven Advice.",
-          "publisher": "The Motley Fool",
+          "url": "https://www.wral.com/lifestyles/2026-raleigh-christmas-parade-how-to-watch/",
+          "title": "Raleigh Christmas Parade kicks off Saturday morning: Route, parking and how to watch at home",
+          "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJHeDzR11kwI_ZbtyEejBVxbQS6H0kX6jW1DbKv9IKgmwMth_W8MEVN3nQYX0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURySAz3GNtBcrRlKZI9lgyRq4iK8uEgf08mmYX0ox7RULnwnw4mKE5Y4LnvI"
         }
       ]
     },
     {
-      "query": "home depot black friday 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T11:40:00Z",
+      "query": "hierophant connections nyt",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T12:40:00Z",
       "related_news_urls": [
-        "https://shopping.yahoo.com/deals/breaking-news/article/the-home-depot-black-friday-event-has-the-best-early-deals-to-help-you-spruce-up-your-space-for-the-holiday-season-161811584.html",
-        "https://lifehacker.com/home/best-home-depot-tool-deals-early-black-friday-2026",
-        "https://www.bobvila.com/reviews/early-black-friday-dewalt-deals-nov-2026/"
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-21-2026",
+        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-20-1258/",
+        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-21-2026"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpf2jX8F1iy79R8cOq-w4HGkcRC_k4fG9tTt59aVTx5JNdyhYxVtlc-6S79MU",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
+      "image_credit": "Mashable",
       "news": [
         {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/the-home-depot-black-friday-event-has-the-best-early-deals-to-help-you-spruce-up-your-space-for-the-holiday-season-161811584.html",
-          "title": "The Home Depot Black Friday event has the best early deals to help you spruce up your space for the holiday season",
-          "publisher": "Yahoo",
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-21-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 21, 2026",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpf2jX8F1iy79R8cOq-w4HGkcRC_k4fG9tTt59aVTx5JNdyhYxVtlc-6S79MU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
         },
         {
-          "url": "https://lifehacker.com/home/best-home-depot-tool-deals-early-black-friday-2026",
-          "title": "These Are the Best Early Black Friday Tool Deals at Home Depot",
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-20-1258/",
+          "title": "Today’s NYT Connections Hints and Answers for Friday, Nov. 20, #1258",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
+        },
+        {
+          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-21-2026",
+          "title": "Today's NYT Connections Hints (and Answer) for Saturday, November 21, 2026",
           "publisher": "Lifehacker",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdccuuXCE8AMIUGAGqz8mXjxhMmHk_uSr1t8aNf1bk-OlbwttmfRwfDyG6lZw"
-        },
-        {
-          "url": "https://www.bobvila.com/reviews/early-black-friday-dewalt-deals-nov-2026/",
-          "title": "DeWalt Black Friday Deals Start at $9.98 at Home Depot, Lowe’s, and Ace—Save Up to 53% Off",
-          "publisher": "BobVila.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_YYqREfkcVLYOB7H8QgezDAZT9mHxsumg-NMmQwWkfuTUhH_tH61yjAB0uhs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIfkxRLUL-dbog89Zo2rKrK16nrtyL6KGnDSmkyalhDTNCKuuiYSUi2zAk8Gw"
         }
       ]
     },
     {
-      "query": "pammy maye",
+      "query": "2026 ihsa football semifinal scores",
       "approx_searches": "100+",
-      "published_at": "2026-11-21T11:40:00Z",
+      "published_at": "2026-11-21T12:40:00Z",
       "related_news_urls": [
-        "https://www.wkyc.com/video/news/local/ohio/pammy-maye-speaks-at-sentencing-for-murder-of-5-year-old-darnell-taylor/95-f72782a4-c3a2-4025-a231-fa833f7e9be2",
-        "https://abc6onyourside.com/news/local/pammy-maye-to-be-sentenced-in-death-of-5-year-old-darnell-taylor",
-        "https://www.courttv.com/news/you-are-the-antichrist-killer-lashes-out-is-removed-from-court-after-trying-to-fire-her-lawyer-at-sentencing/"
+        "https://chicago.suntimes.com/high-school-football/2026/11/20/previewing-the-top-ihsa-football-semifinal-playoff-games",
+        "https://www.si.com/high-school/illinois/illinois-high-school-football-schedule-scores-live-updates-ihsa-november-21-01m7r99tnv6x",
+        "https://www.shawlocal.com/friday-night-drive/2026/11/19/2026-ihsa-playoffs-steve-soucies-class-5a-playoff-analysis-and-picks/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJY1iou5Tn4_01lEC18Tw2OnKK9Y5EWTkLi9VCWgSBi-w0tcif5VQq1m8iZ9Q",
-      "image_credit": "WKYC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAJnmOMO_JwfzPuxu_2b5kwGIYNDO8M-1Bc8Bulp9Ece-3mVR3AKGDQCneDRA",
+      "image_credit": "Chicago Sun-Times",
       "news": [
         {
-          "url": "https://www.wkyc.com/video/news/local/ohio/pammy-maye-speaks-at-sentencing-for-murder-of-5-year-old-darnell-taylor/95-f72782a4-c3a2-4025-a231-fa833f7e9be2",
-          "title": "Pammy Maye speaks at sentencing for murder of 5-year-old Darnell Taylor",
-          "publisher": "WKYC",
+          "url": "https://chicago.suntimes.com/high-school-football/2026/11/20/previewing-the-top-ihsa-football-semifinal-playoff-games",
+          "title": "Previewing the top IHSA football semifinal playoff games",
+          "publisher": "Chicago Sun-Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJY1iou5Tn4_01lEC18Tw2OnKK9Y5EWTkLi9VCWgSBi-w0tcif5VQq1m8iZ9Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAJnmOMO_JwfzPuxu_2b5kwGIYNDO8M-1Bc8Bulp9Ece-3mVR3AKGDQCneDRA"
         },
         {
-          "url": "https://abc6onyourside.com/news/local/pammy-maye-to-be-sentenced-in-death-of-5-year-old-darnell-taylor",
-          "title": "Pammy Maye sentenced to 29 years to life in prison in death of 5-year-old Darnell Taylor",
-          "publisher": "WSYX",
+          "url": "https://www.si.com/high-school/illinois/illinois-high-school-football-schedule-scores-live-updates-ihsa-november-21-01m7r99tnv6x",
+          "title": "Illinois High School Football Schedule, Scores & Live Updates (IHSA) — November 21",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp-dFt-rb0uRmhmIEryS7_puFwEjF7w9zaExAFiECkxdxPpzBycBl9i4lTXeE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSku8m73CXke44byO8ou6yyqAqKKbgSYIvsMk-hQVpYdnaTvcgD_4LZdpRehxY"
         },
         {
-          "url": "https://www.courttv.com/news/you-are-the-antichrist-killer-lashes-out-is-removed-from-court-after-trying-to-fire-her-lawyer-at-sentencing/",
-          "title": "‘You are the Antichrist!’: Killer lashes out, is removed from court after trying to fire her lawyer at sentencing",
-          "publisher": "Court TV",
+          "url": "https://www.shawlocal.com/friday-night-drive/2026/11/19/2026-ihsa-playoffs-steve-soucies-class-5a-playoff-analysis-and-picks/",
+          "title": "2026 IHSA playoffs: Steve Soucie’s Class 5A playoff analysis and picks",
+          "publisher": "Shaw Local",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRBVnpX21qR9lLuU2shd0MrtYau_GMZXjZE1Ty0WoKESknduO2EGeJ1_taHyo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRSvmYo7wuubyyeWVUaSLXz9rAswfdYOq_MEieHTum0sX_llTwAF5Mkbo0D4M"
         }
       ]
     },
     {
-      "query": "man city vs fulham",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-21T11:30:00Z",
+      "query": "sarah mcbride",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T12:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c3kgdxnggq7pt",
-        "https://www.theguardian.com/football/live/2026/nov/21/manchester-city-v-fulham-premier-league-live",
-        "https://www.skysports.com/football/news/13611640/premier-league-predictions-and-jones-knows-best-bets-newcastle-vs-arsenal-liverpool-vs-manchester-united-and-much-more"
+        "https://www.nytimes.com/2026/11/21/us/politics/sarah-mcbride-barred-from-capitol-bathrooms-wins-top-post.html",
+        "https://www.advocate.com/politics/national/sarah-mcbride-elected-house-leadership",
+        "https://www.erininthemorning.com/p/sarah-mcbride-becomes-the-first-trans"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY4whP2rEOg3Hz5KCKdx4HgJux8uqCNJEQRFHIooiTFbKwQzbv5GEouRQFhIU",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6JPvK3q586ZJus_CXvebZ1-3-EDqZQguVQ8EfcDIK4Z3B6D1f1BM4hZJAuq4",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/21/us/politics/sarah-mcbride-barred-from-capitol-bathrooms-wins-top-post.html",
+          "title": "Sarah McBride, Barred From Capitol Bathrooms, Wins Top Post",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6JPvK3q586ZJus_CXvebZ1-3-EDqZQguVQ8EfcDIK4Z3B6D1f1BM4hZJAuq4"
+        },
+        {
+          "url": "https://www.advocate.com/politics/national/sarah-mcbride-elected-house-leadership",
+          "title": "Republicans made Sarah McBride a target. House Democrats just elected her to leadership",
+          "publisher": "Advocate.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCjPvAkry-WwhhuD4jSneIKpCKpJ8PXDsCgB0JXxTHWkVjvpT9N0HItAH9Hg"
+        },
+        {
+          "url": "https://www.erininthemorning.com/p/sarah-mcbride-becomes-the-first-trans",
+          "title": "Sarah McBride Becomes The First Trans Member Of Congressional Leadership In A 248-Vote Landslide",
+          "publisher": "Erin In The Morning | Substack",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsU5JERhvGtnvSXV7mnUSJVRSpXFdMHxDp0btjOuqZt_qPBgLSq_1aHq83Ong"
+        }
+      ]
+    },
+    {
+      "query": "clima",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-21T12:30:00Z",
+      "related_news_urls": [
+        "https://www.pagina12.com.ar/2026/11/21/clima-en-buenos-aires-el-pronostico-del-tiempo-para-este-sabado-21-de-noviembre/",
+        "https://www.meteored.com.ar/noticias/prediccion/se-vienen-noches-de-20-c-y-un-feriado-largo-con-sol-y-lluvias-puntuales-en-el-amba-asi-sigue-el-tiempo-hasta-el-lunes.html",
+        "https://nuevarioja.com.ar/sociedad/la-capital-tendra-una-jornada-calurosa-con-probabilidad-de-tormentas-aisladas-durante-la-tarde.htm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRptVk9wQIrKL5kXm5azovr05UGbelzsUnpKIeNBbhctvxLzpW4KWhc5S_K7bs",
+      "image_credit": "Página|12",
+      "news": [
+        {
+          "url": "https://www.pagina12.com.ar/2026/11/21/clima-en-buenos-aires-el-pronostico-del-tiempo-para-este-sabado-21-de-noviembre/",
+          "title": "Clima en Buenos Aires: el pronóstico del tiempo para este sábado 21 de noviembre",
+          "publisher": "Página|12",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRptVk9wQIrKL5kXm5azovr05UGbelzsUnpKIeNBbhctvxLzpW4KWhc5S_K7bs"
+        },
+        {
+          "url": "https://www.meteored.com.ar/noticias/prediccion/se-vienen-noches-de-20-c-y-un-feriado-largo-con-sol-y-lluvias-puntuales-en-el-amba-asi-sigue-el-tiempo-hasta-el-lunes.html",
+          "title": "Se vienen noches de 20 °C y un feriado largo con sol y lluvias puntuales en el AMBA: así sigue el tiempo hasta el lunes",
+          "publisher": "Meteored Argentina",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwJHTHbnm6JwLhQ_-QQ4pVe_K0kyarQzyZQd2wMXV5tiAeUhv_dHJtvwnMLWs"
+        },
+        {
+          "url": "https://nuevarioja.com.ar/sociedad/la-capital-tendra-una-jornada-calurosa-con-probabilidad-de-tormentas-aisladas-durante-la-tarde.htm",
+          "title": "La Capital tendrá una jornada calurosa con probabilidad de tormentas aisladas durante la tarde",
+          "publisher": "Nueva Rioja",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyGDp6WNEGKn1jM1MXWmCy7EmI0Wq_LWs2hwA30v4O6mWr4O5DCPIxRDUiWng"
+        }
+      ]
+    },
+    {
+      "query": "galatasaray - samsunspor",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T12:30:00Z",
+      "related_news_urls": [
+        "https://www.kahtahaberpostasi.com/haber/galatasaray-spor-kulubu-samsunspor-macina-parcali-formayla-cikacak",
+        "https://www.fotospor.com.tr/spor-toto-super-lig/iste-super-ligde-gunun-var-hakemleri-717431",
+        "https://www.webaslan.com/futbol/galatasaray-da-ilk-11-surprizi-kaan-ayhan-ve-singo-SXHBQ180975SXQ"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPTR6bz3XwfSb2Gjkxb8q15lB33ftRKyUOLaIMJY1wLAWHXV4YP8VyreqmpQs",
+      "image_credit": "Kahta Haber Postası",
+      "news": [
+        {
+          "url": "https://www.kahtahaberpostasi.com/haber/galatasaray-spor-kulubu-samsunspor-macina-parcali-formayla-cikacak",
+          "title": "Galatasaray Spor Kulübü, Samsunspor Maçına Parçalı Formayla Çıkacak",
+          "publisher": "Kahta Haber Postası",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPTR6bz3XwfSb2Gjkxb8q15lB33ftRKyUOLaIMJY1wLAWHXV4YP8VyreqmpQs"
+        },
+        {
+          "url": "https://www.fotospor.com.tr/spor-toto-super-lig/iste-super-ligde-gunun-var-hakemleri-717431",
+          "title": "İşte Süper Lig'de günün VAR hakemleri",
+          "publisher": "Fotospor",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6g-e3l_1zPBxlgV46gMdrmlV9t07obtFPzP7K_jhrRcUlofyswKkc05Xoknk"
+        },
+        {
+          "url": "https://www.webaslan.com/futbol/galatasaray-da-ilk-11-surprizi-kaan-ayhan-ve-singo-SXHBQ180975SXQ",
+          "title": "Galatasaray'da ilk 11 sürprizi: Kaan Ayhan ve Singo!",
+          "publisher": "webaslan.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy8ZQEAbLW3qihsPZJqDvt5htUGnwOOgYAEKP89xvd-12kXwyiYSUqxwo99RU"
+        }
+      ]
+    },
+    {
+      "query": "liverpool vs chelsea",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T12:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cr868wyllle2t",
+        "https://www.chelseafc.com/en/news/article/chelsea-womens-starting-line-up-vs-liverpool-confirmed",
+        "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-against-chelsea-in-the-wsl"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq3uddClhMKUET2rZlo1ZVjw89I4RBHnn1yBICUDLA1Vs12hPtrVlKGFRePJ0",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c3kgdxnggq7pt",
-          "title": "Manchester City vs Fulham: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cr868wyllle2t",
+          "title": "Liverpool vs Chelsea LIVE: Text updates and match stats from WSL lunchtime kick-off",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY4whP2rEOg3Hz5KCKdx4HgJux8uqCNJEQRFHIooiTFbKwQzbv5GEouRQFhIU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq3uddClhMKUET2rZlo1ZVjw89I4RBHnn1yBICUDLA1Vs12hPtrVlKGFRePJ0"
         },
         {
-          "url": "https://www.theguardian.com/football/live/2026/nov/21/manchester-city-v-fulham-premier-league-live",
-          "title": "Manchester City v Fulham: Premier League – live",
-          "publisher": "The Guardian",
+          "url": "https://www.chelseafc.com/en/news/article/chelsea-womens-starting-line-up-vs-liverpool-confirmed",
+          "title": "Chelsea Women's starting line up vs Liverpool confirmed | News | Official Site",
+          "publisher": "Chelsea Football Club",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhyEO4V46mMY0RfL9Bz1K-otEess41tt2rROOYZka0bTNq1TylN1F_IBK9YLw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREneDu4sEZV_j5TS8rcJ0mH8-bImfWelf00vQ16Q8Gsy0y4zIAO99JXb_GkGI"
         },
         {
-          "url": "https://www.skysports.com/football/news/13611640/premier-league-predictions-and-jones-knows-best-bets-newcastle-vs-arsenal-liverpool-vs-manchester-united-and-much-more",
-          "title": "Premier League predictions & Jones Knows' best bets: Newcastle vs Arsenal, Liverpool vs Manchester United and much more!",
-          "publisher": "Sky Sports",
+          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-against-chelsea-in-the-wsl",
+          "title": "Team news: Confirmed Liverpool line-up against Chelsea in the WSL",
+          "publisher": "Liverpool FC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtWtn8zWl9bc15X7eDVgWK6gjFz7H0GyTisyd9Kj15fRt0NtJyiwv_mV4SfiM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlx29okVex_CqOmde2XT9M8o1uiRGOYIB5K684iTUl8fSvnLj9aSjvKhT0RU"
+        }
+      ]
+    },
+    {
+      "query": "méxico",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T12:30:00Z",
+      "related_news_urls": [
+        "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-20-tipo-cambio-22541221.php",
+        "https://es-us.finanzas.yahoo.com/noticias/peso-mexicano-lidera-p%C3%A9rdidas-emergentes-162211222.html",
+        "https://www.elfinanciero.com.mx/opinion/enrique-quintana/2026/11/20/un-dolar-caro-pone-a-prueba-a-banxico/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo",
+      "image_credit": "Dallas News",
+      "news": [
+        {
+          "url": "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-20-tipo-cambio-22541221.php",
+          "title": "Así está el dólar en México hoy: tipo de cambio y cotizaciones en bancos",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo"
+        },
+        {
+          "url": "https://es-us.finanzas.yahoo.com/noticias/peso-mexicano-lidera-p%C3%A9rdidas-emergentes-162211222.html",
+          "title": "Peso mexicano lidera pérdidas emergentes por perspectivas de la Fed y postura de Banxico",
+          "publisher": "Yahoo Finanzas",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2mY9X4I4VRV3tG1Y5VjAP5GmHN4ylz1pl3x_U_50cyOK2G2JKZcZoO-N3fs4"
+        },
+        {
+          "url": "https://www.elfinanciero.com.mx/opinion/enrique-quintana/2026/11/20/un-dolar-caro-pone-a-prueba-a-banxico/",
+          "title": "Un dólar caro pone a prueba a Banxico",
+          "publisher": "El Financiero",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQHtvtRZyf-xVvAIq5TnNgp_gO-b3aGhoYH2riwj3mr_ZWs5tuNcFE7kjFFAs"
+        }
+      ]
+    },
+    {
+      "query": "matt rife",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T12:30:00Z",
+      "related_news_urls": [
+        "https://www.10tv.com/article/news/local/comedian-matt-rife-columbus-ohio-stadium-homecoming/530-2146aa9f-0759-4a6f-9c59-c6f4b645c350",
+        "https://www.nbc4i.com/news/local-news/columbus/ohio-born-comedian-matt-rife-to-headline-ohio-stadium/",
+        "https://news.pollstar.com/2026/11/19/matt-rife-announces-special-2027-homecoming-show/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRItKqxvfZTxFJvzAN7l_uzHxTE5I8eQGsUcYn0h9s6WhKnHOPZBW2pVL4iFUU",
+      "image_credit": "10TV",
+      "news": [
+        {
+          "url": "https://www.10tv.com/article/news/local/comedian-matt-rife-columbus-ohio-stadium-homecoming/530-2146aa9f-0759-4a6f-9c59-c6f4b645c350",
+          "title": "Comedian Matt Rife announces first-ever stadium performance in Columbus",
+          "publisher": "10TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRItKqxvfZTxFJvzAN7l_uzHxTE5I8eQGsUcYn0h9s6WhKnHOPZBW2pVL4iFUU"
+        },
+        {
+          "url": "https://www.nbc4i.com/news/local-news/columbus/ohio-born-comedian-matt-rife-to-headline-ohio-stadium/",
+          "title": "Ohio-born comedian Matt Rife to headline Ohio Stadium",
+          "publisher": "NBC4 WCMH-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8SCB9QudSZAD48RRivkQJ22gscZZOcNAGh6-lAZ71_MxnD2V_LMzzBsPrUiI"
+        },
+        {
+          "url": "https://news.pollstar.com/2026/11/19/matt-rife-announces-special-2027-homecoming-show/",
+          "title": "Matt Rife Announces Special 2027 Homecoming Show",
+          "publisher": "Pollstar News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOKI8-7wFnpPIIWAMR5xQiGa76j7GH0ZPbvs52yGcxb8wia-3i_C23hgIY1t4"
         }
       ]
     }
