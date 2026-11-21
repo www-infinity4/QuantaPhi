@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T08:01:30.875825Z",
+  "checked_at": "2026-11-21T08:31:20.646732Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nvidia stock market",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-21T07:40:00Z",
+      "query": "jensen ackles",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T08:00:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
-        "https://www.fool.com/investing/2026/11/21/after-its-worst-week-in-18-years-nvidia-now-faces-an-sec-investigation-what-it-means-for-investors/",
-        "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html"
+        "https://www.whowhatwear.com/fashion/celebrity/jared-padalecki-guarding-stars-netflix",
+        "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester",
+        "https://www.imdb.com/news/ni66118663/?ref_=nmnw_art_perm"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVsqCo-SGyXBU1vu8o87-V5ZHOz0pRsjcIPdNzyffrD6DLhR3JiF5CXqmqhU0",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB8dCI8pjIPZuoZQquOzlaZa0D5BYet-dKSYrooVfSGTw_M4SI4AH7x-cp4Lw",
+      "image_credit": "Who What Wear",
       "news": [
         {
-          "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
-          "title": "EXCLUSIVE: Nvidia's accounting is a focus of US SEC investigation, sources say",
-          "publisher": "Reuters",
+          "url": "https://www.whowhatwear.com/fashion/celebrity/jared-padalecki-guarding-stars-netflix",
+          "title": "Jared Padalecki's Latest Role Might Surprise You",
+          "publisher": "Who What Wear",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVsqCo-SGyXBU1vu8o87-V5ZHOz0pRsjcIPdNzyffrD6DLhR3JiF5CXqmqhU0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB8dCI8pjIPZuoZQquOzlaZa0D5BYet-dKSYrooVfSGTw_M4SI4AH7x-cp4Lw"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/21/after-its-worst-week-in-18-years-nvidia-now-faces-an-sec-investigation-what-it-means-for-investors/",
-          "title": "After Its Worst Week in 18 Years, Nvidia Now Faces an SEC Investigation. What It Means for Investors",
-          "publisher": "The Motley Fool",
+          "url": "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester",
+          "title": "Guarding Stars review – Leighton Meester is a delight in fizzy Netflix holiday romance",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvyBeKewOzsHvECyAVFGTlHb6iS5O4USKAbh7Sqr2uv-oqcSazaLL7j5wiJWc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtFzEQaSek1kon_OBea3Kv5i_PFLXowRj2MWtH56hdYgvMdkUIzAJZDJPvhPg"
         },
         {
-          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
-          "title": "Nvidia stock extends $2.7 trillion rout as SEC probe reportedly investigates its accounting",
+          "url": "https://www.imdb.com/news/ni66118663/?ref_=nmnw_art_perm",
+          "title": "‘Guarding Stars’ Movie Ending Explained: How Does The Gang Catch The Stalker?",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAnYnZJMrOQBDJ0mogv9B2R19toHru7PUeAiCDq_zHjIsDe38g_6DvZS6oxio"
+        }
+      ]
+    },
+    {
+      "query": "quentin tarantino",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T07:50:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/entertainment-arts/movies/story/2026-11-19/david-fincher-further-mis-adventures-cliff-booth-holiday-preview-2026",
+        "https://www.bbc.com/culture/article/20261119-the-further-mis-adventures-of-cliff-booth-review",
+        "https://www.indiewire.com/criticism/movies/further-misadventures-of-cliff-booth-movie-review-netflix-1235229234/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7eRqiY5AiIIIQ1PM1FtmyqOWkuUVEPesmsXEBhdiZMITtrA7OyrSlLnO678M",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/entertainment-arts/movies/story/2026-11-19/david-fincher-further-mis-adventures-cliff-booth-holiday-preview-2026",
+          "title": "David Fincher got to make his own Tarantino movie. First he needed to find himself in it",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7eRqiY5AiIIIQ1PM1FtmyqOWkuUVEPesmsXEBhdiZMITtrA7OyrSlLnO678M"
+        },
+        {
+          "url": "https://www.bbc.com/culture/article/20261119-the-further-mis-adventures-of-cliff-booth-review",
+          "title": "The Further Mis-Adventures of Cliff Booth review: Brad Pitt returns to his Oscar-winning role in a 'macho fantasy' ★★★☆☆",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2YlOYT8KbJtBPu7fyW8s1u5sgEMQPj3j0xgv0DM1TIR0lD7XFdMNmpi0uJbE"
+        },
+        {
+          "url": "https://www.indiewire.com/criticism/movies/further-misadventures-of-cliff-booth-movie-review-netflix-1235229234/",
+          "title": "‘The Further Mis-Adventures of Cliff Booth’ Review: David Fincher’s Breezy Tarantino Spinoff Is a Disappointing Compromise Between Great Directors",
+          "publisher": "IndieWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmetxSa0wNd5irutH-0iHWxdPc70G59awqAVp6cLTzRclhjUZo5SXqb3no12o"
+        }
+      ]
+    },
+    {
+      "query": "nvidia stock market",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T07:40:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/ai/articles/semiconductor-sell-off-artificial-intelligence-125502063.html",
+        "https://www.fool.com/investing/2026/11/21/here-s-my-top-ai-stock-to-buy-with-nvidia-in-uncertain-territory/",
+        "https://seekingalpha.com/article/4970257-ai-cash-kings-why-this-chip-giants-fundamentals-defy-the-selloff"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm4qRRCSml8uNmYveXG4UitDshl1yDALt9ewVnnsjW3tmmGXJ2MrVV1qHOpjc",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/semiconductor-sell-off-artificial-intelligence-125502063.html",
+          "title": "Semiconductor Sell-Off: These Artificial Intelligence (AI) Chip Stocks Are Screaming Buys Before They Go Parabolic",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB_n6jGkT1MMR4XrAe0_c1RPHxitqjAqzxbKY_-uCHOElPf0Zw8_JKJ8EAjVM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm4qRRCSml8uNmYveXG4UitDshl1yDALt9ewVnnsjW3tmmGXJ2MrVV1qHOpjc"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/21/here-s-my-top-ai-stock-to-buy-with-nvidia-in-uncertain-territory/",
+          "title": "Here’s My Top AI Stock to Buy With Nvidia in Uncertain Territory",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcQ3fSxjQSKD5go4TCiXGLAOUXS74cAp_nPRdweZwYSxCuGUeTWqiNrrqQPWs"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4970257-ai-cash-kings-why-this-chip-giants-fundamentals-defy-the-selloff",
+          "title": "AI Cash Kings: Why This Chip Giant's Fundamentals Defy The Selloff",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNQk1FuVsqer7hCUB0ydgyCf4radhkUSvCX9pNiJzMpM1nAo9yVF7GJLzrLBk"
+        }
+      ]
+    },
+    {
+      "query": "ohsaa football scores",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T07:40:00Z",
+      "related_news_urls": [
+        "https://www.nbc4i.com/sports/ffn/columbus-area-high-school-football-scores-and-highlights-nov-20-2026/",
+        "https://www.10tv.com/article/sports/high-school/hs-football/central-ohio-high-school-football-scores-playoffs-week-4-2026/530-25bcccad-9dc1-4554-8a63-5816acef94f4",
+        "https://www.dispatch.com/story/sports/high-school/football/2026/11/20/ohio-high-school-football-scores-ohsaa-playoff-fourth-round-games--live/92869988007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsu6rtuRnltXpyZ4xUEH1gl5tktGu0-9nAn-OqWxieYgTpLf5uTlGjZIeaerU",
+      "image_credit": "NBC4 WCMH-TV",
+      "news": [
+        {
+          "url": "https://www.nbc4i.com/sports/ffn/columbus-area-high-school-football-scores-and-highlights-nov-20-2026/",
+          "title": "Columbus-area high school football scores and highlights: Nov. 20, 2026",
+          "publisher": "NBC4 WCMH-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsu6rtuRnltXpyZ4xUEH1gl5tktGu0-9nAn-OqWxieYgTpLf5uTlGjZIeaerU"
+        },
+        {
+          "url": "https://www.10tv.com/article/sports/high-school/hs-football/central-ohio-high-school-football-scores-playoffs-week-4-2026/530-25bcccad-9dc1-4554-8a63-5816acef94f4",
+          "title": "First & 10: Central Ohio high school football scores | Week 4 of playoffs",
+          "publisher": "10TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfBUHYDbTrDiT87Sy-TP9onlg-vfFHhNRK73_k0de8Bc13jzvOoRfueJh8GGs"
+        },
+        {
+          "url": "https://www.dispatch.com/story/sports/high-school/football/2026/11/20/ohio-high-school-football-scores-ohsaa-playoff-fourth-round-games--live/92869988007/",
+          "title": "Ohio high school football scores, live regional final playoff game updates",
+          "publisher": "The Columbus Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTo7rhN_PY3_RifWKXTocDcmWGy8MKEG07zrc09RW5rIH1N9LRxWKHzF2nYaEk"
         }
       ]
     },
@@ -113,28 +218,36 @@
     },
     {
       "query": "aus vs eng",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-21T07:30:00Z",
       "related_news_urls": [
-        "https://www.beloitdailynews.com/sports/pro-sports/duckett-scores-133-england-is-in-a-strong-position-vs-australia-in-deciding-odi-cricket/article_6deb7641-c4ea-5578-bc00-0869b90c4636.html",
-        "https://www.beloitdailynews.com/sports/pro-sports/duckett-and-baker-help-england-seal-97-run-victory-over-australia-to-clinch-odi-series/article_6deb7641-c4ea-5578-bc00-0869b90c4636.html"
+        "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
+        "https://www.theguardian.com/sport/live/2026/nov/21/australia-v-england-first-mens-t20-cricket-international-live",
+        "https://www.bbc.com/sport/cricket/live/c30y48pz38qt"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt7Bt1JOXevcsTvvVdhPsE3JImczkfo0mRD8gT6J_tvOV-RrEuiVimRI7WzEU",
-      "image_credit": "Beloit Daily News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7jZMpbY-nrsnKq5bLNm3dnxCuVRiqrQvqcFmRN5fsFlqI1CKLICee2zzsh5s",
+      "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://www.beloitdailynews.com/sports/pro-sports/duckett-scores-133-england-is-in-a-strong-position-vs-australia-in-deciding-odi-cricket/article_6deb7641-c4ea-5578-bc00-0869b90c4636.html",
-          "title": "Duckett scores 133, England is in a strong position vs Australia in deciding ODI cricket match",
-          "publisher": "Beloit Daily News",
+          "url": "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
+          "title": "Harper's Australia debut a much-needed good story",
+          "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt7Bt1JOXevcsTvvVdhPsE3JImczkfo0mRD8gT6J_tvOV-RrEuiVimRI7WzEU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7jZMpbY-nrsnKq5bLNm3dnxCuVRiqrQvqcFmRN5fsFlqI1CKLICee2zzsh5s"
         },
         {
-          "url": "https://www.beloitdailynews.com/sports/pro-sports/duckett-and-baker-help-england-seal-97-run-victory-over-australia-to-clinch-odi-series/article_6deb7641-c4ea-5578-bc00-0869b90c4636.html",
-          "title": "Duckett and Baker help England seal 97-run victory over Australia to clinch ODI series",
-          "publisher": "Beloit Daily News",
+          "url": "https://www.theguardian.com/sport/live/2026/nov/21/australia-v-england-first-mens-t20-cricket-international-live",
+          "title": "Australia v England: first men’s T20 cricket international – live",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt7Bt1JOXevcsTvvVdhPsE3JImczkfo0mRD8gT6J_tvOV-RrEuiVimRI7WzEU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09oMfzpCtEWtbnrRT6OFTB0yb6HFbi--rLerU1Ecxs1Sjp95uHgZXEPxPA2c"
+        },
+        {
+          "url": "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
+          "title": "Australia vs England LIVE: First T20, MCG, Melbourne - cricket score, commentary & updates",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRpU2u88n4CyBBQ_c-Yz7Gl5aLu1oPBUMmFb4FnDAlic7LwOfsCbBK2uAWsi4"
         }
       ]
     },
@@ -174,13 +287,48 @@
       ]
     },
     {
+      "query": "gta 6 interactive map",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T07:20:00Z",
+      "related_news_urls": [
+        "https://www.gamesindustry.biz/ign-partners-with-rockstar-to-host-official-strategy-guide-for-gta-6",
+        "https://www.shacknews.com/article/151428/gta6-interactive-map-shackmaps",
+        "https://www.ign.com/wikis/gta-6/About_the_GTA_6_Guide_Editors"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ18dJrb6--EMF7HeIA-zINxuF4hhcXrQWEqjRWfK-dUSAqKYWSLD5tAAPbZA",
+      "image_credit": "GamesIndustry.biz",
+      "news": [
+        {
+          "url": "https://www.gamesindustry.biz/ign-partners-with-rockstar-to-host-official-strategy-guide-for-gta-6",
+          "title": "IGN partners with Rockstar to host Official Strategy Guide for GTA 6",
+          "publisher": "GamesIndustry.biz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ18dJrb6--EMF7HeIA-zINxuF4hhcXrQWEqjRWfK-dUSAqKYWSLD5tAAPbZA"
+        },
+        {
+          "url": "https://www.shacknews.com/article/151428/gta6-interactive-map-shackmaps",
+          "title": "Grand Theft Auto 6 interactive map - Shackmaps",
+          "publisher": "Shacknews",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHSV61DyobRBBGLLR4yje5RmGqDbPco0SB2vybvYDKERzv3UHfYhLs-MqtIc"
+        },
+        {
+          "url": "https://www.ign.com/wikis/gta-6/About_the_GTA_6_Guide_Editors",
+          "title": "About the GTA 6 Guide Editors",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-XdNh3WmMQVYg1yzPR_WKkij2HjWPLuu9DqUmAj8PcCFM8oLLxflBYS2hLLI"
+        }
+      ]
+    },
+    {
       "query": "zoe saldana",
       "approx_searches": "100+",
       "published_at": "2026-11-21T07:20:00Z",
       "related_news_urls": [
         "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/when-zoe-saldana-spoke-about-her-mothers-obsession-with-star-trek/articleshow/136042615.cms",
         "https://demokratis.co.id/en/zoe-saldana-star-trek",
-        "https://www.thehawk.in/news/showbiz/hollywood/when-zoe-saldana-spoke-about-her-mothers-obsession-with-star-trek"
+        "https://www.socialnews.xyz/2026/11/20/when-zoe-saldana-spoke-about-her-mothers-obsession-with-star-trek/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPmC7TBAeRPA8_1jBr4Fjebe9aFFfXXXDUxr-6OPVecr1wYELBgzDXYhKRDo",
       "image_credit": "The Times of India",
@@ -200,151 +348,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShDGMDCB10Us1B_f9H_Iy4Cpwl5HleiJmDi6FSnneU4dSvwRZXyhCuij6FGus"
         },
         {
-          "url": "https://www.thehawk.in/news/showbiz/hollywood/when-zoe-saldana-spoke-about-her-mothers-obsession-with-star-trek",
+          "url": "https://www.socialnews.xyz/2026/11/20/when-zoe-saldana-spoke-about-her-mothers-obsession-with-star-trek/",
           "title": "When Zoe Saldana spoke about her mother’s obsession with ‘Star Trek’",
-          "publisher": "The Hawk",
+          "publisher": "Social News XYZ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqecm7il95tV3iyC2H-IAFPlu2PvBoRf6fxFk2g_JiI9flvad4ls2GMF81FGQ"
-        }
-      ]
-    },
-    {
-      "query": "future",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T07:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/politics/article/the-last-big-midterms-mystery-who-will-these-future-governors-choose-to-replace-them-in-the-senate-194352449.html",
-        "https://www.semafor.com/article/11/20/2026/why-aocs-future-could-depend-on-chuck-schumer",
-        "https://www.texastribune.org/2026/11/20/death-star-bill-texas-supreme-court/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6m6YlwC7hIt2yJ0R9VhkPSO8gcFO-7rpondbgiztYyNyaKmGVx82_rtx-VVg",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/politics/article/the-last-big-midterms-mystery-who-will-these-future-governors-choose-to-replace-them-in-the-senate-194352449.html",
-          "title": "The last big midterms mystery: Who will these future governors choose to replace them in the Senate?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6m6YlwC7hIt2yJ0R9VhkPSO8gcFO-7rpondbgiztYyNyaKmGVx82_rtx-VVg"
-        },
-        {
-          "url": "https://www.semafor.com/article/11/20/2026/why-aocs-future-could-depend-on-chuck-schumer",
-          "title": "Why AOC’s future could depend on Chuck Schumer",
-          "publisher": "Semafor",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSqPwAUGtXodpUQgqpc6_9o1MMySCmiBHc6U81z6jA9JzsB6rOp2H1uJFOrE"
-        },
-        {
-          "url": "https://www.texastribune.org/2026/11/20/death-star-bill-texas-supreme-court/",
-          "title": "Texas Supreme Court won’t hear challenge to “Death Star” law",
-          "publisher": "The Texas Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmC2LROEWE1OBpa0lJgLdrK67WLoaxP3qGBWJKVQUACLYOsoRu86D-EiJp9-Q"
-        }
-      ]
-    },
-    {
-      "query": "earthquake seattle",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T07:10:00Z",
-      "related_news_urls": [
-        "https://westseattleblog.com/2026/11/yes-that-was-an-earthquake-3/",
-        "https://www.nbclosangeles.com/news/earthquakes/magnitude-3-9-earthquake-shakes-commerce-area/3973351/",
-        "https://abc7.com/post/magnitude-42-earthquake-strikes-commerce-area-usgs-says/20058854/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnZBHtUSqvoGjhGWhe3FKfSCb34XRpjlkXiicrmULLYGXzy7BJ55NFLQGKCxM",
-      "image_credit": "West Seattle Blog...",
-      "news": [
-        {
-          "url": "https://westseattleblog.com/2026/11/yes-that-was-an-earthquake-3/",
-          "title": "Yes, that was an earthquake",
-          "publisher": "West Seattle Blog...",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnZBHtUSqvoGjhGWhe3FKfSCb34XRpjlkXiicrmULLYGXzy7BJ55NFLQGKCxM"
-        },
-        {
-          "url": "https://www.nbclosangeles.com/news/earthquakes/magnitude-3-9-earthquake-shakes-commerce-area/3973351/",
-          "title": "Magnitude 3.9 earthquake shakes Commerce area",
-          "publisher": "NBC Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkwtyJu8rVdCcHhNbum6S5oXDkC76496v0nhdusVFC_O_u0DXnFdldc03v-ww"
-        },
-        {
-          "url": "https://abc7.com/post/magnitude-42-earthquake-strikes-commerce-area-usgs-says/20058854/",
-          "title": "Magnitude 3.9 earthquake strikes Commerce area, awakens residents across Southern California",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6wQGt5eXSSnUJshKiW3TTGpbViNGohZBoHWzgLjIZDlZlHWFFZZkialH4gQg"
-        }
-      ]
-    },
-    {
-      "query": "dom mar fan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T07:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/nikolas-motta-vs-dom-mar-224829203.html",
-        "https://cagesidepress.com/2026/11/20/ufc-qatars-dom-mar-fan-discusses-move-to-city-kickboxing/",
-        "https://www.thestatszone.com/ufc-fight-night-nikolas-motta-vs-dom-mar-fan-preview-prediction-239689"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiWMDdgmgRz8m12ccRhLv1Z2xEjauUSUUoREYEc0A1jPtK7duRhvyWKUE5b5E",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/nikolas-motta-vs-dom-mar-224829203.html",
-          "title": "Nikolas Motta vs. Dom Mar Fan prediction, odds, pick for UFC Doha",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiWMDdgmgRz8m12ccRhLv1Z2xEjauUSUUoREYEc0A1jPtK7duRhvyWKUE5b5E"
-        },
-        {
-          "url": "https://cagesidepress.com/2026/11/20/ufc-qatars-dom-mar-fan-discusses-move-to-city-kickboxing/",
-          "title": "UFC Qatar’s Dom Mar Fan Discusses Move to City Kickboxing",
-          "publisher": "Cageside Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK5p-XV66XjfKPuJFoi6CjkTHgnh7w408GjKIz6_xBmnH2PU8GYr55bWZ2HnY"
-        },
-        {
-          "url": "https://www.thestatszone.com/ufc-fight-night-nikolas-motta-vs-dom-mar-fan-preview-prediction-239689",
-          "title": "UFC Fight Night: Nikolas Motta vs Dom Mar Fan Preview & Prediction",
-          "publisher": "The Stats Zone",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPAaiqC6rY4UKX-UrZnS2FpVkIxGAQb2cfqGjHgEcQ8s10SeMUI3APGESBoOs"
-        }
-      ]
-    },
-    {
-      "query": "how many endings in gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T07:00:00Z",
-      "related_news_urls": [
-        "https://www.clarin.com/us-news/how-many-endings-does-gta-6-have-what-decides-your-finale-and-how-the-post-game-works_0_947bez8oXt.html",
-        "https://www.polygon.com/gta-6-ending-explained-rob-nelson/",
-        "https://www.vice.com/en/article/gta-6-live-coverage-news-reviews-and-more/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxphFhLbjoFeGcjIP3QsSrz-CDX85AvaqHiqDIkX-bLKN3A1yzYSKYgebZWjw",
-      "image_credit": "Clarin.com",
-      "news": [
-        {
-          "url": "https://www.clarin.com/us-news/how-many-endings-does-gta-6-have-what-decides-your-finale-and-how-the-post-game-works_0_947bez8oXt.html",
-          "title": "How many endings does GTA 6 have? What decides your finale and how the post-game works",
-          "publisher": "Clarin.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxphFhLbjoFeGcjIP3QsSrz-CDX85AvaqHiqDIkX-bLKN3A1yzYSKYgebZWjw"
-        },
-        {
-          "url": "https://www.polygon.com/gta-6-ending-explained-rob-nelson/",
-          "title": "The One Thing About GTA 6's Ending to Know Before You Get Too Far In",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgqO1rqfJUpQu3IwLxWllJjtkq-5FVBNsrB1peFMKsqT4spK3cdB-Pv1zTYNs"
-        },
-        {
-          "url": "https://www.vice.com/en/article/gta-6-live-coverage-news-reviews-and-more/",
-          "title": "GTA 6 Live Coverage: News, Reviews, and More",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQANY09gHUAcxOgAmAtFhi_a_OEChmuc6x-jRJUrAZ1Z0zSU_pS7vA_YjgFHZo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbXZd7B9yA82X1YM-LNc3dgdXEoHWG14U9nY-Tq0DuGpwu6-1IzXu4t3ofqC0"
         }
       ]
     }
