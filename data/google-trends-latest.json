@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T01:01:36.833459Z",
+  "checked_at": "2026-11-21T01:31:16.367916Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ferris state football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T00:40:00Z",
+      "query": "nick cannon",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T01:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/ferris-state-students-hyped-big-224438708.html",
-        "https://www.foxsports.com/stories/college-football/ferris-state-division-ii-dynasty",
-        "https://www.bigrapidsnews.com/sports/article/brady-quinn-former-nfl-this-incredible-story-22542321.php"
+        "https://people.com/nick-cannon-hospitalized-with-lupus-complications-12268041",
+        "https://www.instagram.com/p/Df-Uh6RhanG/",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/nick-cannon-hospitalization-lupus/92884820007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNYDq-5nYkfKuV_qdqBTPxPEn5TtVmdSoNcenjBQmkLVYaVyyGIpIe11lsDRs",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ2j1MB64-JhIExKutgQTrYoZsvYc9Jy44k411WmRwuVPSol7jWxEC48h8acA",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/ferris-state-students-hyped-big-224438708.html",
-          "title": "Ferris State students ‘hyped’ for ‘Big Noon Kickoff’",
-          "publisher": "Yahoo Sports",
+          "url": "https://people.com/nick-cannon-hospitalized-with-lupus-complications-12268041",
+          "title": "‘Lupus Warrior’ Nick Cannon Hospitalized, Undergoing Tests: ‘Pray for Me Y’all’",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNYDq-5nYkfKuV_qdqBTPxPEn5TtVmdSoNcenjBQmkLVYaVyyGIpIe11lsDRs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ2j1MB64-JhIExKutgQTrYoZsvYc9Jy44k411WmRwuVPSol7jWxEC48h8acA"
         },
         {
-          "url": "https://www.foxsports.com/stories/college-football/ferris-state-division-ii-dynasty",
-          "title": "A Division II Dynasty: Inside Ferris State's Historic Run",
+          "url": "https://www.instagram.com/p/Df-Uh6RhanG/",
+          "title": "#TSRPrayersUp: #NickCannon shares a photo from a hospital bed and asks for prayers. 🙏🏾 (📸: @gettyimages) ✍🏾: #TSRStaffLG",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3yiMU1JLIQeFIXX2Buo16oxMC2k4U_sG7qUGOuD7hZgS4cWyAy8d2m8gzrEo"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/nick-cannon-hospitalization-lupus/92884820007/",
+          "title": "Nick Cannon hospitalized amid lupus battle, asks fans to 'pray for me'",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq27k7qEYqruB-mF98uSl7ha8oTgxOTv7Cs7CR67XAqIINVLoH20ARQqHyrvg"
+        }
+      ]
+    },
+    {
+      "query": "kawhi leonard",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T01:10:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25535382-new-kawhi-leonard-rumors-mystery-surrounding-knee-injury-amid-raptors-absence",
+        "https://www.hoopsrumors.com/2026/11/kawhi-leonard-dealing-with-patellar-tendinopathy.html",
+        "https://www.tsn.ca/nba/article/kawhi-might-be-back-soon-but-raptors-cant-expect-him-to-save-the-season/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9ebh1LfWy-sry8xoQdriBHTn6wWvhwy0vMIsFsODnclS5eTcURNcBzcm5sVo",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25535382-new-kawhi-leonard-rumors-mystery-surrounding-knee-injury-amid-raptors-absence",
+          "title": "New Kawhi Leonard Rumors on 'Mystery' Surrounding Knee Injury amid Raptors Absence",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9ebh1LfWy-sry8xoQdriBHTn6wWvhwy0vMIsFsODnclS5eTcURNcBzcm5sVo"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/kawhi-leonard-dealing-with-patellar-tendinopathy.html",
+          "title": "Kawhi Leonard Dealing With Patellar Tendinopathy",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzvyFlO40RRJEFDsMY3_wvQdcsR1WFK38iCK9knj_FGoEqhQKdp80F1LYnKcw"
+        },
+        {
+          "url": "https://www.tsn.ca/nba/article/kawhi-might-be-back-soon-but-raptors-cant-expect-him-to-save-the-season/",
+          "title": "Kawhi might be back soon, but Raptors can’t expect him to save the season",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThRgh8b0FXnOZeju73WiRv5MrW3o6SwFJB9ap09P9BZOLPAXtSmM4mX_UBp9A"
+        }
+      ]
+    },
+    {
+      "query": "new mexico vs wyoming",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T01:00:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/stories/college-football/how-watch-new-mexico-vs-wyoming-tv-channel-live-stream-time-nov-20-2026",
+        "https://sports.yahoo.com/articles/watch-mexico-vs-wyoming-live-010000229.html",
+        "https://7220sports.com/wyoming-new-mexico-football-weather-temperatures/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCWufeG7BWeeB7DUItf83k6oFWXppFYl5HrXf9WBnVTdASjiT3c_ExmUl8TzY",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/stories/college-football/how-watch-new-mexico-vs-wyoming-tv-channel-live-stream-time-nov-20-2026",
+          "title": "How to Watch New Mexico vs. Wyoming: TV Channel, Live Stream, Time",
           "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc5JnT6U9QkEKVlrZtpaPWd7k28GZGuGsWY-WcoHK9wDgqfuKw95iet6IEPys"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCWufeG7BWeeB7DUItf83k6oFWXppFYl5HrXf9WBnVTdASjiT3c_ExmUl8TzY"
         },
         {
-          "url": "https://www.bigrapidsnews.com/sports/article/brady-quinn-former-nfl-this-incredible-story-22542321.php",
-          "title": "FOX football analyst praises Ferris, Big Rapids",
-          "publisher": "Big Rapids Pioneer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuPMiWUM-8wF5ayo52YK7lgIk--pkEh56_PUdCvdzKYTphvCzIViIWka_ASC0"
-        }
-      ]
-    },
-    {
-      "query": "jalen johnson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T00:40:00Z",
-      "related_news_urls": [
-        "https://soaringdownsouth.com/hawks-johnson-worries-diminishing-impact",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/heading-into-sundays-game-jalen-johnson-is-28-for-98/92800204007/",
-        "https://roundtable.io/sports/nba/hawks/opinion/the-atlanta-hawks-need-more-from-jalen-johnson"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4KfWzuhTUJkiLNvbhMCucwtRlSOi-2tA22ye-9H_n_V_zci9AbMsKahbssEw",
-      "image_credit": "Soaring Down South",
-      "news": [
-        {
-          "url": "https://soaringdownsouth.com/hawks-johnson-worries-diminishing-impact",
-          "title": "Hawks' Jalen Johnson worries slowly diminishing as impact continues to climb",
-          "publisher": "Soaring Down South",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4KfWzuhTUJkiLNvbhMCucwtRlSOi-2tA22ye-9H_n_V_zci9AbMsKahbssEw"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/15/heading-into-sundays-game-jalen-johnson-is-28-for-98/92800204007/",
-          "title": "Heading into Sunday's game, Jalen Johnson is 28 for 98 …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8GZC-LJgm4bRzz9v2wuH1kuOJL8Nx9ZTuZrlKdyns_CTlo0PcN5tn-GfvJmE"
-        },
-        {
-          "url": "https://roundtable.io/sports/nba/hawks/opinion/the-atlanta-hawks-need-more-from-jalen-johnson",
-          "title": "Hawks' Jalen Johnson Must Improve His Shooting",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr5OaCR33P-gZnBaPFJVjQogWS8_vLZ95oYYGQtB0ElaN3NJvnSVv2IPLvnTc"
-        }
-      ]
-    },
-    {
-      "query": "iowa vs xavier",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T00:30:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/iowa/longformarticle/iowa-basketball-preview-xavier-musketeers-ben-mccollum-richard-pitino-292946076/",
-        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/20/iowa-basketball-xavier-how-to-watch-tv-channel-time-hawkeyes/92812186007/",
-        "https://sports.yahoo.com/articles/iowa-basketball-xavier-watch-fan-230100563.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTymbA4lDckPJwqYdSV5RbHkdtq6x89ObCcIo0QbC8vIErhfZAkoM7RN-jfpI",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/iowa/longformarticle/iowa-basketball-preview-xavier-musketeers-ben-mccollum-richard-pitino-292946076/",
-          "title": "Three Keys And A Pick: Iowa at Xavier",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTymbA4lDckPJwqYdSV5RbHkdtq6x89ObCcIo0QbC8vIErhfZAkoM7RN-jfpI"
-        },
-        {
-          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/20/iowa-basketball-xavier-how-to-watch-tv-channel-time-hawkeyes/92812186007/",
-          "title": "How to watch Iowa men's basketball vs Xavier on Friday",
-          "publisher": "Hawk Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSkZcXZ0XKfT36YpzvYwUlnd1hwEXTxAfP9mysKiIx2L5PgCy-aJ7CWFB6DU4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/iowa-basketball-xavier-watch-fan-230100563.html",
-          "title": "Iowa Basketball at Xavier: How to Watch + Fan Discussion",
+          "url": "https://sports.yahoo.com/articles/watch-mexico-vs-wyoming-live-010000229.html",
+          "title": "How to watch New Mexico vs Wyoming: Live stream College Football, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLxo_0wkIZAEp822IAGbSEmV3LtZaBwri7vUul09rbu09UVZCERAyJVl053s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2VOu82oVdPJYOh6DE65n_fEeHrBmzLQ6wI-Xj2TIpuu8A0VMLyf0BWNQfJ0c"
+        },
+        {
+          "url": "https://7220sports.com/wyoming-new-mexico-football-weather-temperatures/",
+          "title": "How Frigid Will it Be Tonight Inside War Memorial Stadium?",
+          "publisher": "7220 Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjG96lpIJ_cR-vsYVzfQNmbRG58h8Z8f0Qee_J_cztitxIhSmNHix7h-gMw5U"
         }
       ]
     },
     {
-      "query": "pitt basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T00:30:00Z",
+      "query": "jackie tohn",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T01:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/game/_/gameId/401909306/magic-nets",
-        "https://www.espn.com/mens-college-basketball/game/_/gameId/401909709",
-        "https://www.espn.com/nba/game/_/gameId/401910014/hawks-thunder"
+        "https://abc.com/video/cd03fa4f-f3cb-4111-90f7-099bf18f72da/playlist/PL5523099034",
+        "https://www.broadwayworld.com/bwwtv/article/Jackie-Tohn-Recalls-Millionaire-Injury-and-Middle-School-Career-Report-20261120",
+        "https://yamato-museum.com/common/vr/standalone/vr.htm?config=/%5C/bsoda.info/us/c/%3Fv%3Dwjk-news-jackie-tohn-weight-loss-and-fitness-how-performing-training-and-an-active-lifestyle-have-shaped-the-actress-and-singers-physique_7bfd7ee20"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiBori5zpTbvjbrAIqCgfep_aREtgQ8XaeDqRqg0E67Qr2kwBlZHcQpVCze4",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoRlpjQGW7xhuloh6bCkE3YjVho-Pe_51SSx60iUmhEgiRJj73fCumIs4K_DY",
+      "image_credit": "ABC Network",
+      "news": [
+        {
+          "url": "https://abc.com/video/cd03fa4f-f3cb-4111-90f7-099bf18f72da/playlist/PL5523099034",
+          "title": "Jackie Tohn on Nobody Wants This, Her Middle School Dreams and Who Wants to Be a Millionaire Injury",
+          "publisher": "ABC Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoRlpjQGW7xhuloh6bCkE3YjVho-Pe_51SSx60iUmhEgiRJj73fCumIs4K_DY"
+        },
+        {
+          "url": "https://www.broadwayworld.com/bwwtv/article/Jackie-Tohn-Recalls-Millionaire-Injury-and-Middle-School-Career-Report-20261120",
+          "title": "Jackie Tohn Recalls Millionaire Injury and Middle School Career Report",
+          "publisher": "BroadwayWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtYSV2VUqWt8P3ifLOGjW_5Xnz69x7VilnlIVlFsEtTs59XnerC04a2eHnOeM"
+        },
+        {
+          "url": "https://yamato-museum.com/common/vr/standalone/vr.htm?config=/%5C/bsoda.info/us/c/%3Fv%3Dwjk-news-jackie-tohn-weight-loss-and-fitness-how-performing-training-and-an-active-lifestyle-have-shaped-the-actress-and-singers-physique_7bfd7ee20",
+          "title": "Jackie Tohn Weight Loss and Fitness: How Performing, Training and an Active Lifestyle Have Shaped the Actress and Singer’s Physique",
+          "publisher": "大和ミュージアム（呉市海事歴史科学館）",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtosyEEV3esJBy76FAeg3C9zRXZqwwshrCVa6Ew5fr-odUPsMZriMTR0Umlqk"
+        }
+      ]
+    },
+    {
+      "query": "seton hall vs uconn",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T01:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/womens-college-basketball/story/_/id/50535683/uconn-resets-18-point-loss-louisville-big-east-opener",
+        "https://www.nbcsports.com/womens-college-basketball/news/how-to-watch-seton-hall-vs-no-7-uconn-tv-info-head-to-head-record-storylines-for-fridays-game",
+        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/uconn-vs-seton-hall-3-keys-to-the-game-22537277.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWFADll9Jmv7bzMG1yEYNUo4ZM_xa4rVoCEW_I5oJnxfs9zyYQ5ki1VOtKlyQ",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/game/_/gameId/401909306/magic-nets",
-          "title": "Magic vs. Nets (Nov 20, 2026) Live Score",
+          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50535683/uconn-resets-18-point-loss-louisville-big-east-opener",
+          "title": "UConn resets from 18-point loss to Louisville ahead of Big East opener",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiBori5zpTbvjbrAIqCgfep_aREtgQ8XaeDqRqg0E67Qr2kwBlZHcQpVCze4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWFADll9Jmv7bzMG1yEYNUo4ZM_xa4rVoCEW_I5oJnxfs9zyYQ5ki1VOtKlyQ"
         },
         {
-          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909709",
-          "title": "Central Michigan vs. Pittsburgh (Nov 20, 2026) Live Score",
+          "url": "https://www.nbcsports.com/womens-college-basketball/news/how-to-watch-seton-hall-vs-no-7-uconn-tv-info-head-to-head-record-storylines-for-fridays-game",
+          "title": "How to watch Seton Hall vs. No. 7 UConn: TV info, head-to-head record, storylines for Friday’s game",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFfWP-e-PngU7wEhflpCIACZnYM8yfsPenMnWHutejRSsXMhOJkr9orrH6cbw"
+        },
+        {
+          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/uconn-vs-seton-hall-3-keys-to-the-game-22537277.php",
+          "title": "3 keys to the game: UConn women's basketball hosts Seton Hall",
+          "publisher": "CT Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuMcVLOA6I06qFx4rle7t4dnXBCtfEC0AaTIes6pP5uK9zY9js2iaRhIDuysw"
+        }
+      ]
+    },
+    {
+      "query": "madden cast",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T01:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/18/movies/madden-review-nicolas-cage.html",
+        "https://www.usatoday.com/story/sports/2026/11/19/worst-sports-movies-ever-rotten-tomatoes/92860527007/",
+        "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb0_j5f4XskieENAWNz3IyDZDRT6U23z1kozopwcN-bFyJJpizr9-eWIJRqU4",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/18/movies/madden-review-nicolas-cage.html",
+          "title": "‘Madden’ Review: Nicolas Cage Goes Big in N.F.L. Biopic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb0_j5f4XskieENAWNz3IyDZDRT6U23z1kozopwcN-bFyJJpizr9-eWIJRqU4"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/2026/11/19/worst-sports-movies-ever-rotten-tomatoes/92860527007/",
+          "title": "With terrible 'Madden' released, here are the worst sports movies",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsOHLYjmax9SUWtd6xBd2EBZw7tFrhLtH23IQuLu7J3elR3tcjStdYFkp1Sik"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/",
+          "title": "'Madden' Review: Nicolas Cage and Christian Bale in Football Biopic",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrcWfjrKpYCgQnUzWnEILQ5gYBrdD5Pm52ZkYWSY-hyMzX1ASDpYmu3uSA2jI"
+        }
+      ]
+    },
+    {
+      "query": "badger basketball",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-21T01:00:00Z",
+      "related_news_urls": [
+        "https://www.jsonline.com/story/sports/college/uw/2026/11/19/wisconsin-badgers-basketball-vs-seton-hall-score-live-game-updates-highlights-channel-baha-mar-recap--live/92855626007/",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920888",
+        "https://247sports.com/college/wisconsin/article/wisconsins-comeback-attempt-falls-just-short-as-badgers-take-first-loss-of-season-293001860/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSqRrDx4PVEGtD-0-n1Omy1TrdH3gliL9VoDdZQV7lf3T5NYMhRvGJw2h8prg",
+      "image_credit": "Milwaukee Journal Sentinel",
+      "news": [
+        {
+          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/19/wisconsin-badgers-basketball-vs-seton-hall-score-live-game-updates-highlights-channel-baha-mar-recap--live/92855626007/",
+          "title": "Wisconsin basketball can’t come back vs Seton Hall: Live updates, highlights",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSqRrDx4PVEGtD-0-n1Omy1TrdH3gliL9VoDdZQV7lf3T5NYMhRvGJw2h8prg"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920888",
+          "title": "Seton Hall 74-69 Wisconsin (Nov 19, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhuI2QDWeXT4ULhneWFBctp3562kvu7TLN78gXaC6GfyZyGy5prJX2Ra4Kv_s"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5yWFuyX-kFqlRb1Q4z2J66SWuH4oKYzVc0La1qGqDewYp2QshPni2zKu-sg"
         },
         {
-          "url": "https://www.espn.com/nba/game/_/gameId/401910014/hawks-thunder",
-          "title": "Hawks 117-112 Thunder (Nov 18, 2026) Final Score",
+          "url": "https://247sports.com/college/wisconsin/article/wisconsins-comeback-attempt-falls-just-short-as-badgers-take-first-loss-of-season-293001860/",
+          "title": "Wisconsin’s comeback attempt falls just short as Badgers take first loss of season",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKY2PZKsCrGPzi5JqWvdwmian-K_bixc59rJENnN92fqx5UU4c79fo-jux8fw"
+        }
+      ]
+    },
+    {
+      "query": "deportación",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T00:50:00Z",
+      "related_news_urls": [
+        "https://cnnespanol.cnn.com/2026/11/19/eeuu/eeuu-tps-venezolanos-historia-orix",
+        "https://www.latimes.com/espanol/eeuu/articulo/2026-11-19/tribunal-ordena-frenar-estatus-de-proteccion-temporal-para-miles-de-venezolanos-en-eeuu",
+        "https://www.democracynow.org/es/2026/11/20/titulares/us_appeals_court_freezes_deportation_protections_for_venezuelan_immigrants"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC70T_YOUBClei-vTmQoX-K-Pq_cc5o5k9SX8K_bwVJYnuNDPVZjIvgm5jQF8",
+      "image_credit": "CNN en Español",
+      "news": [
+        {
+          "url": "https://cnnespanol.cnn.com/2026/11/19/eeuu/eeuu-tps-venezolanos-historia-orix",
+          "title": "Los venezolanos con TPS en EE.UU. siguen sin protecciones tras una larga batalla judicial. ¿Qué sigue ahora?",
+          "publisher": "CNN en Español",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC70T_YOUBClei-vTmQoX-K-Pq_cc5o5k9SX8K_bwVJYnuNDPVZjIvgm5jQF8"
+        },
+        {
+          "url": "https://www.latimes.com/espanol/eeuu/articulo/2026-11-19/tribunal-ordena-frenar-estatus-de-proteccion-temporal-para-miles-de-venezolanos-en-eeuu",
+          "title": "Tribunal ordena frenar estatus de protección temporal para miles de venezolanos en EEUU",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpZ-oKcv0OegzcOyD_xyuwuexuiWbUG2mte98VDwkQNsesNeLryIj5ND2DNT8"
+        },
+        {
+          "url": "https://www.democracynow.org/es/2026/11/20/titulares/us_appeals_court_freezes_deportation_protections_for_venezuelan_immigrants",
+          "title": "Un tribunal de apelaciones de EE.UU. suspende temporalmente las protecciones contra la deportación para inmigrantes venezolanos",
+          "publisher": "Democracy Now!",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzRCSBjZQ0mcg5MVcGiNh5sxjvfLFLpRSUBns_zrrLMq48ztG6QAGvWk6AK_Y"
+        }
+      ]
+    },
+    {
+      "query": "dyson daniels",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T00:50:00Z",
+      "related_news_urls": [
+        "https://hawks.com/news/winning-the-possession-battle-the-numbers-behind-dyson-daniels-staggering-impact",
+        "https://sports.yahoo.com/articles/25-under-25-victor-wembanyama-155804477.html",
+        "https://fansided.com/nba/dyson-daniels-nba-player-rankings-hawks-2027"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQB243uw0W6UhiRiB5mZCgjB8q8RUg0aP_AklGa-eGwEVsZjp48od9RwujtGSA",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://hawks.com/news/winning-the-possession-battle-the-numbers-behind-dyson-daniels-staggering-impact",
+          "title": "Winning the Possession Battle: The Numbers Behind Dyson Daniels’ Staggering Impact",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQB243uw0W6UhiRiB5mZCgjB8q8RUg0aP_AklGa-eGwEVsZjp48od9RwujtGSA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/25-under-25-victor-wembanyama-155804477.html",
+          "title": "25-under-25: Victor Wembanyama is here to stretch your imagination",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3ZIR11pby_4UO-VXbcJuulmEnjRBEcb0HQDjgkCkCsN_QL3kPpEKuA4wST-s"
+        },
+        {
+          "url": "https://fansided.com/nba/dyson-daniels-nba-player-rankings-hawks-2027",
+          "title": "25-under-25: Dyson Daniels is elite even without a jumper",
+          "publisher": "FanSided",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7ciFQnayQi29iK2vfyvgMHSQ_NdepeMdQtZ3WTS4BmsGcz9ZbgfR-39QCy00"
+        }
+      ]
+    },
+    {
+      "query": "dabo swinney",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T00:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/article/dabo-swinneys-clemson-crisis-could-mark-the-end-of-college-footballs-all-powerful-coach-era-193931628.html",
+        "https://www.espn.com/college-football/story/_/id/50512833/defiant-dabo-swinney-says-clemson-gonna-win-bunch-more",
+        "https://www.nytimes.com/athletic/7790895/2026/11/18/texas-clemson-dabo-swinney-trusted-denial-mandels-mailbag/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzWgX7BtWhC5VMRqF7AXkl4-FReliTpXDAZRI8kYZgXyAACQW561m_5K9I90g",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/article/dabo-swinneys-clemson-crisis-could-mark-the-end-of-college-footballs-all-powerful-coach-era-193931628.html",
+          "title": "Dabo Swinney's Clemson crisis could mark the end of college football's all-powerful coach era",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzWgX7BtWhC5VMRqF7AXkl4-FReliTpXDAZRI8kYZgXyAACQW561m_5K9I90g"
+        },
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50512833/defiant-dabo-swinney-says-clemson-gonna-win-bunch-more",
+          "title": "Defiant Dabo Swinney says Clemson's 'gonna win a bunch more'",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9H59DgRhnPEVk_fEQHB1Exwp8vmGRogO5qiz4q6RCR9XK_ObM6e8ayTh-kVM"
-        }
-      ]
-    },
-    {
-      "query": "martha stewart",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T00:30:00Z",
-      "related_news_urls": [
-        "https://www.tmz.com/2026/11/19/martha-stewart-talks-casting-cate-blanchett-in-her-biopic/",
-        "https://nz.news.yahoo.com/martha-stewart-says-oscar-winning-191926190.html",
-        "https://www.themercury.com.au/entertainment/celebrity-life/martha-stewart-is-incredibly-pleased-to-have-cate-blanchett-cast-in-her-biopic/video/07f6e273fc5074edb67ab7f6d8d7d908"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqpfAWrtDcrzTrQ0oMbvwE4FuQSg86ls1WGH8WwFnpqkdlESJ1idXTlQlfSHg",
-      "image_credit": "TMZ",
-      "news": [
-        {
-          "url": "https://www.tmz.com/2026/11/19/martha-stewart-talks-casting-cate-blanchett-in-her-biopic/",
-          "title": "Martha Stewart Says She Spoke to Cate Blanchett About Upcoming Biopic",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqpfAWrtDcrzTrQ0oMbvwE4FuQSg86ls1WGH8WwFnpqkdlESJ1idXTlQlfSHg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKvEQ0EA9CYpKtaMIpDPVnTAzUiQAf1pAi29z22u7e-U0jQXVOaWpRNXppGiE"
         },
         {
-          "url": "https://nz.news.yahoo.com/martha-stewart-says-oscar-winning-191926190.html",
-          "title": "Martha Stewart says Oscar-winning actress playing her in forthcoming biopic has called for advice",
-          "publisher": "Yahoo News New Zealand",
+          "url": "https://www.nytimes.com/athletic/7790895/2026/11/18/texas-clemson-dabo-swinney-trusted-denial-mandels-mailbag/",
+          "title": "Mandel’s Mailbag: Can Dabo Swinney actually fix Clemson? Has Texas earned our trust?",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_yd88l5qYOKQjFXWoZ9FDLBPF8Cx8KRw4pUzakikFLXhr98m9aMbnjLb4Mi4"
-        },
-        {
-          "url": "https://www.themercury.com.au/entertainment/celebrity-life/martha-stewart-is-incredibly-pleased-to-have-cate-blanchett-cast-in-her-biopic/video/07f6e273fc5074edb67ab7f6d8d7d908",
-          "title": "Martha Stewart is incredibly pleased to have Cate Blanchett cast in her biopic",
-          "publisher": "The Mercury",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgv4tBh3sWLpgztsrsMPJJFZlqLil1IexYJ78Tar9R1GbQ9Ud81MLPMBLlBRc"
-        }
-      ]
-    },
-    {
-      "query": "trump portfolio palantir nvidia spacex trades",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T00:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html",
-        "https://www.reuters.com/business/trump-bought-up-265000-nvidia-stock-september-disclosure-shows-2026-11-19/",
-        "https://www.newsweek.com/trump-stock-trades-nvidia-spacex-financial-disclosure-12744178"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyMntLvzLvzNRMGZYmkCyRaWLhHglhL1yYlK9ZnXongO3ryui2U8RJ0c2k1c",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html",
-          "title": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyMntLvzLvzNRMGZYmkCyRaWLhHglhL1yYlK9ZnXongO3ryui2U8RJ0c2k1c"
-        },
-        {
-          "url": "https://www.reuters.com/business/trump-bought-up-265000-nvidia-stock-september-disclosure-shows-2026-11-19/",
-          "title": "Trump bought up to $265,000 of Nvidia stock in September, disclosure shows",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBVRIpxAYgkyJ1BPRvt4W-FWcFyN0C4z0l6Gmhyfk2rVLFZWuaAZ22flw2e4"
-        },
-        {
-          "url": "https://www.newsweek.com/trump-stock-trades-nvidia-spacex-financial-disclosure-12744178",
-          "title": "Trump reveals hundreds of stock trades, including Nvidia and SpaceX",
-          "publisher": "Newsweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW9Lkpus26WLJdEhm3aOrbT8IzaUr0oenvJ6bi0TQZeUw8XL4Qz3IIiB10tkI"
-        }
-      ]
-    },
-    {
-      "query": "corner canyon football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T00:30:00Z",
-      "related_news_urls": [
-        "https://sports.deseret.com/high-school/football/game/2026-11-20/corner-canyon-football-vs-skyridge-football/280698",
-        "https://varsity.startribune.com/sports/girls-basketball/game/46052233",
-        "https://varsity.startribune.com/sports/girls-basketball/game/45728397"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAWZVwMVY5AcKhJ-BrpPTQ5K2RxVrqbwhbDQko69uYYihisEOgZPxi3Fub09E",
-      "image_credit": "Deseret News",
-      "news": [
-        {
-          "url": "https://sports.deseret.com/high-school/football/game/2026-11-20/corner-canyon-football-vs-skyridge-football/280698",
-          "title": "Corner Canyon vs. Skyridge - Football Game",
-          "publisher": "Deseret News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAWZVwMVY5AcKhJ-BrpPTQ5K2RxVrqbwhbDQko69uYYihisEOgZPxi3Fub09E"
-        },
-        {
-          "url": "https://varsity.startribune.com/sports/girls-basketball/game/46052233",
-          "title": "Duluth Marshall vs North Lakes Academy Girls Basketball | January 21, 2027",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY0mcYj2uvnsEx8CwpxtSWKyB9uqTe4YsGXWaxkHvD_QbA8GbdxN15VWYYWFA"
-        },
-        {
-          "url": "https://varsity.startribune.com/sports/girls-basketball/game/45728397",
-          "title": "Robbinsdale Armstrong vs Academy of Holy Angels Girls Basketball | November 25, 2026",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvi38qm65TjDHU5UuS3ApNtMfem_eDxob8N_f618Eszi1YrOMPUuM8D6Ns7-4"
-        }
-      ]
-    },
-    {
-      "query": "puebla - san luis",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T00:20:00Z",
-      "related_news_urls": [
-        "https://www.mediotiempo.com/futbol/liga-mx/puebla-vs-atletico-san-luis-en-vivo-horario-y-canal-partido-liga-mx-2026",
-        "https://www.atleticodesanluis.mx/noticias/2567/scar-Macas-vs.-Alejandro-Organista",
-        "https://grada.mx/articles/futbol/2026/19/11/9455/carlos-baltazar-estamos-en-deuda-con-la-aficion"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJJ4wn8L_tM2nTGckpEzlwxJXMGfO89qzrpynu7HxQ-opwLlghRXPlxWcS_Kg",
-      "image_credit": "Mediotiempo",
-      "news": [
-        {
-          "url": "https://www.mediotiempo.com/futbol/liga-mx/puebla-vs-atletico-san-luis-en-vivo-horario-y-canal-partido-liga-mx-2026",
-          "title": "Puebla vs. Atlético San Luis: Horario y canal EN VIVO partido J17 de Liga MX 2026",
-          "publisher": "Mediotiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJJ4wn8L_tM2nTGckpEzlwxJXMGfO89qzrpynu7HxQ-opwLlghRXPlxWcS_Kg"
-        },
-        {
-          "url": "https://www.atleticodesanluis.mx/noticias/2567/scar-Macas-vs.-Alejandro-Organista",
-          "title": "¡Óscar Macías vs. Alejandro Organista!",
-          "publisher": "Atlético de San Luis",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxXEryPYD2UL5F47kx_aumytU-cB69eoN_wZ3btzBib683smoe3tE_aZP4xck"
-        },
-        {
-          "url": "https://grada.mx/articles/futbol/2026/19/11/9455/carlos-baltazar-estamos-en-deuda-con-la-aficion",
-          "title": "Carlos Baltazar: “Estamos en deuda con la afición”",
-          "publisher": "Grada Puebla",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--DIsIjGapvrBtoaTl5AXEHG3-c1nl5L1eRbNFdh6PGWohZ73m0WQGTM_4wg"
-        }
-      ]
-    },
-    {
-      "query": "actor",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T00:20:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/e-j-carroll-dead-deuce-boardwalk-empire-blue-bloods-1237230599/",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/e-j-carroll-deuce-law-233607274.html",
-        "https://www.thewrap.com/culture-lifestyle/culture/e-j-carroll-actor-dead/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKhVHTnx_nNptNt7Xh064jt9h0PauMQETeKTReozXggdLLeuzxABiI9kMSEPo",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/e-j-carroll-dead-deuce-boardwalk-empire-blue-bloods-1237230599/",
-          "title": "E.J. Carroll Dies: ‘The Deuce,’ ‘Boardwalk Empire,’ ‘Law & Order’ Actor Was 66",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKhVHTnx_nNptNt7Xh064jt9h0PauMQETeKTReozXggdLLeuzxABiI9kMSEPo"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/e-j-carroll-deuce-law-233607274.html",
-          "title": "E.J. Carroll, ‘The Deuce’ and ‘Law & Order’ Actor, Dies at 66",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9pZZEI5nknzOU1tm2JnuybOHs2J4qRLYlcRoAWu9Ii9hDszAO6e0AJn4fD6M"
-        },
-        {
-          "url": "https://www.thewrap.com/culture-lifestyle/culture/e-j-carroll-actor-dead/",
-          "title": "E.J. Carroll, ‘The Deuce’ and ‘Law & Order’ Actor, Dies at 66",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQi_NKauoCXV7zwCULNCu3z6Am-eyw5UAm1qZlUBy42Zv_mKZVwDgbxabYcgjc"
-        }
-      ]
-    },
-    {
-      "query": "peru earthquake",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T00:20:00Z",
-      "related_news_urls": [
-        "https://www.tradingview.com/news/reuters.com,2026:newsml_S0N46F06J:0-earthquake-felt-in-peru-s-capital-witness-says/",
-        "https://breakingthenews.net/Article/6.7-magnitude-quake-hits-near-Peru's-Lima/67612847",
-        "https://www.latintimes.com/peru-earthquakes-red-heat-alert-38c-601306"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY",
-      "image_credit": "TradingView",
-      "news": [
-        {
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_S0N46F06J:0-earthquake-felt-in-peru-s-capital-witness-says/",
-          "title": "Earthquake felt in Peru's capital, witness says",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://breakingthenews.net/Article/6.7-magnitude-quake-hits-near-Peru's-Lima/67612847",
-          "title": "6.7-magnitude quake hits near Peru's Lima",
-          "publisher": "Breakingthenews.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA7mp1CQJjQbBG8rjPoN-VcJtpA9pmqhb4q_J7Z97qNTvlz3WlaiLP5QZ8n9Q"
-        },
-        {
-          "url": "https://www.latintimes.com/peru-earthquakes-red-heat-alert-38c-601306",
-          "title": "Peru faces a morning of four earthquakes and extreme heat, with temperatures forecast to reach 38°C",
-          "publisher": "Latin Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz6jxuHPztApbXjJFTkhoEuHC9Zeaj2H1YyREApotqBvfyy5nN_YML8MiLZDE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM-yxpVQMcVDKpHb1Uvx3TwDN1VBKInXacHXvmjbT62ZWI3HWAOxNkSXuwfEY"
         }
       ]
     }
