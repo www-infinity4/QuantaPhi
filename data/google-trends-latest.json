@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T01:31:16.367916Z",
+  "checked_at": "2026-11-21T02:01:29.300255Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nick cannon",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T01:10:00Z",
-      "related_news_urls": [
-        "https://people.com/nick-cannon-hospitalized-with-lupus-complications-12268041",
-        "https://www.instagram.com/p/Df-Uh6RhanG/",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/nick-cannon-hospitalization-lupus/92884820007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ2j1MB64-JhIExKutgQTrYoZsvYc9Jy44k411WmRwuVPSol7jWxEC48h8acA",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/nick-cannon-hospitalized-with-lupus-complications-12268041",
-          "title": "‘Lupus Warrior’ Nick Cannon Hospitalized, Undergoing Tests: ‘Pray for Me Y’all’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ2j1MB64-JhIExKutgQTrYoZsvYc9Jy44k411WmRwuVPSol7jWxEC48h8acA"
-        },
-        {
-          "url": "https://www.instagram.com/p/Df-Uh6RhanG/",
-          "title": "#TSRPrayersUp: #NickCannon shares a photo from a hospital bed and asks for prayers. 🙏🏾 (📸: @gettyimages) ✍🏾: #TSRStaffLG",
-          "publisher": "Instagram",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3yiMU1JLIQeFIXX2Buo16oxMC2k4U_sG7qUGOuD7hZgS4cWyAy8d2m8gzrEo"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/nick-cannon-hospitalization-lupus/92884820007/",
-          "title": "Nick Cannon hospitalized amid lupus battle, asks fans to 'pray for me'",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq27k7qEYqruB-mF98uSl7ha8oTgxOTv7Cs7CR67XAqIINVLoH20ARQqHyrvg"
-        }
-      ]
-    },
-    {
-      "query": "kawhi leonard",
+      "query": "john collins",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T01:10:00Z",
+      "published_at": "2026-11-21T01:40:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25535382-new-kawhi-leonard-rumors-mystery-surrounding-knee-injury-amid-raptors-absence",
-        "https://www.hoopsrumors.com/2026/11/kawhi-leonard-dealing-with-patellar-tendinopathy.html",
-        "https://www.tsn.ca/nba/article/kawhi-might-be-back-soon-but-raptors-cant-expect-him-to-save-the-season/"
+        "https://sports.yahoo.com/articles/pistons-insider-delivers-blunt-assessment-201500118.html",
+        "https://detroitjockcity.com/3-pistons-thin-ice-one-month-nba-season-01m7wgwesm60",
+        "https://pistonpowered.com/john-collins-poor-finishing-just-big-problem-shooting"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9ebh1LfWy-sry8xoQdriBHTn6wWvhwy0vMIsFsODnclS5eTcURNcBzcm5sVo",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25535382-new-kawhi-leonard-rumors-mystery-surrounding-knee-injury-amid-raptors-absence",
-          "title": "New Kawhi Leonard Rumors on 'Mystery' Surrounding Knee Injury amid Raptors Absence",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9ebh1LfWy-sry8xoQdriBHTn6wWvhwy0vMIsFsODnclS5eTcURNcBzcm5sVo"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/kawhi-leonard-dealing-with-patellar-tendinopathy.html",
-          "title": "Kawhi Leonard Dealing With Patellar Tendinopathy",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzvyFlO40RRJEFDsMY3_wvQdcsR1WFK38iCK9knj_FGoEqhQKdp80F1LYnKcw"
-        },
-        {
-          "url": "https://www.tsn.ca/nba/article/kawhi-might-be-back-soon-but-raptors-cant-expect-him-to-save-the-season/",
-          "title": "Kawhi might be back soon, but Raptors can’t expect him to save the season",
-          "publisher": "TSN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThRgh8b0FXnOZeju73WiRv5MrW3o6SwFJB9ap09P9BZOLPAXtSmM4mX_UBp9A"
-        }
-      ]
-    },
-    {
-      "query": "new mexico vs wyoming",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T01:00:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/stories/college-football/how-watch-new-mexico-vs-wyoming-tv-channel-live-stream-time-nov-20-2026",
-        "https://sports.yahoo.com/articles/watch-mexico-vs-wyoming-live-010000229.html",
-        "https://7220sports.com/wyoming-new-mexico-football-weather-temperatures/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCWufeG7BWeeB7DUItf83k6oFWXppFYl5HrXf9WBnVTdASjiT3c_ExmUl8TzY",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/stories/college-football/how-watch-new-mexico-vs-wyoming-tv-channel-live-stream-time-nov-20-2026",
-          "title": "How to Watch New Mexico vs. Wyoming: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCWufeG7BWeeB7DUItf83k6oFWXppFYl5HrXf9WBnVTdASjiT3c_ExmUl8TzY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-mexico-vs-wyoming-live-010000229.html",
-          "title": "How to watch New Mexico vs Wyoming: Live stream College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2VOu82oVdPJYOh6DE65n_fEeHrBmzLQ6wI-Xj2TIpuu8A0VMLyf0BWNQfJ0c"
-        },
-        {
-          "url": "https://7220sports.com/wyoming-new-mexico-football-weather-temperatures/",
-          "title": "How Frigid Will it Be Tonight Inside War Memorial Stadium?",
-          "publisher": "7220 Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjG96lpIJ_cR-vsYVzfQNmbRG58h8Z8f0Qee_J_cztitxIhSmNHix7h-gMw5U"
-        }
-      ]
-    },
-    {
-      "query": "jackie tohn",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T01:00:00Z",
-      "related_news_urls": [
-        "https://abc.com/video/cd03fa4f-f3cb-4111-90f7-099bf18f72da/playlist/PL5523099034",
-        "https://www.broadwayworld.com/bwwtv/article/Jackie-Tohn-Recalls-Millionaire-Injury-and-Middle-School-Career-Report-20261120",
-        "https://yamato-museum.com/common/vr/standalone/vr.htm?config=/%5C/bsoda.info/us/c/%3Fv%3Dwjk-news-jackie-tohn-weight-loss-and-fitness-how-performing-training-and-an-active-lifestyle-have-shaped-the-actress-and-singers-physique_7bfd7ee20"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoRlpjQGW7xhuloh6bCkE3YjVho-Pe_51SSx60iUmhEgiRJj73fCumIs4K_DY",
-      "image_credit": "ABC Network",
-      "news": [
-        {
-          "url": "https://abc.com/video/cd03fa4f-f3cb-4111-90f7-099bf18f72da/playlist/PL5523099034",
-          "title": "Jackie Tohn on Nobody Wants This, Her Middle School Dreams and Who Wants to Be a Millionaire Injury",
-          "publisher": "ABC Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoRlpjQGW7xhuloh6bCkE3YjVho-Pe_51SSx60iUmhEgiRJj73fCumIs4K_DY"
-        },
-        {
-          "url": "https://www.broadwayworld.com/bwwtv/article/Jackie-Tohn-Recalls-Millionaire-Injury-and-Middle-School-Career-Report-20261120",
-          "title": "Jackie Tohn Recalls Millionaire Injury and Middle School Career Report",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtYSV2VUqWt8P3ifLOGjW_5Xnz69x7VilnlIVlFsEtTs59XnerC04a2eHnOeM"
-        },
-        {
-          "url": "https://yamato-museum.com/common/vr/standalone/vr.htm?config=/%5C/bsoda.info/us/c/%3Fv%3Dwjk-news-jackie-tohn-weight-loss-and-fitness-how-performing-training-and-an-active-lifestyle-have-shaped-the-actress-and-singers-physique_7bfd7ee20",
-          "title": "Jackie Tohn Weight Loss and Fitness: How Performing, Training and an Active Lifestyle Have Shaped the Actress and Singer’s Physique",
-          "publisher": "大和ミュージアム（呉市海事歴史科学館）",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtosyEEV3esJBy76FAeg3C9zRXZqwwshrCVa6Ew5fr-odUPsMZriMTR0Umlqk"
-        }
-      ]
-    },
-    {
-      "query": "seton hall vs uconn",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T01:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/womens-college-basketball/story/_/id/50535683/uconn-resets-18-point-loss-louisville-big-east-opener",
-        "https://www.nbcsports.com/womens-college-basketball/news/how-to-watch-seton-hall-vs-no-7-uconn-tv-info-head-to-head-record-storylines-for-fridays-game",
-        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/uconn-vs-seton-hall-3-keys-to-the-game-22537277.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWFADll9Jmv7bzMG1yEYNUo4ZM_xa4rVoCEW_I5oJnxfs9zyYQ5ki1VOtKlyQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50535683/uconn-resets-18-point-loss-louisville-big-east-opener",
-          "title": "UConn resets from 18-point loss to Louisville ahead of Big East opener",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWFADll9Jmv7bzMG1yEYNUo4ZM_xa4rVoCEW_I5oJnxfs9zyYQ5ki1VOtKlyQ"
-        },
-        {
-          "url": "https://www.nbcsports.com/womens-college-basketball/news/how-to-watch-seton-hall-vs-no-7-uconn-tv-info-head-to-head-record-storylines-for-fridays-game",
-          "title": "How to watch Seton Hall vs. No. 7 UConn: TV info, head-to-head record, storylines for Friday’s game",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFfWP-e-PngU7wEhflpCIACZnYM8yfsPenMnWHutejRSsXMhOJkr9orrH6cbw"
-        },
-        {
-          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/uconn-vs-seton-hall-3-keys-to-the-game-22537277.php",
-          "title": "3 keys to the game: UConn women's basketball hosts Seton Hall",
-          "publisher": "CT Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuMcVLOA6I06qFx4rle7t4dnXBCtfEC0AaTIes6pP5uK9zY9js2iaRhIDuysw"
-        }
-      ]
-    },
-    {
-      "query": "madden cast",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T01:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/18/movies/madden-review-nicolas-cage.html",
-        "https://www.usatoday.com/story/sports/2026/11/19/worst-sports-movies-ever-rotten-tomatoes/92860527007/",
-        "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb0_j5f4XskieENAWNz3IyDZDRT6U23z1kozopwcN-bFyJJpizr9-eWIJRqU4",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/18/movies/madden-review-nicolas-cage.html",
-          "title": "‘Madden’ Review: Nicolas Cage Goes Big in N.F.L. Biopic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb0_j5f4XskieENAWNz3IyDZDRT6U23z1kozopwcN-bFyJJpizr9-eWIJRqU4"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/2026/11/19/worst-sports-movies-ever-rotten-tomatoes/92860527007/",
-          "title": "With terrible 'Madden' released, here are the worst sports movies",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsOHLYjmax9SUWtd6xBd2EBZw7tFrhLtH23IQuLu7J3elR3tcjStdYFkp1Sik"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/madden-review-nicolas-cage-christian-bale-david-o-russell-1236756928/",
-          "title": "'Madden' Review: Nicolas Cage and Christian Bale in Football Biopic",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrcWfjrKpYCgQnUzWnEILQ5gYBrdD5Pm52ZkYWSY-hyMzX1ASDpYmu3uSA2jI"
-        }
-      ]
-    },
-    {
-      "query": "badger basketball",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-21T01:00:00Z",
-      "related_news_urls": [
-        "https://www.jsonline.com/story/sports/college/uw/2026/11/19/wisconsin-badgers-basketball-vs-seton-hall-score-live-game-updates-highlights-channel-baha-mar-recap--live/92855626007/",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920888",
-        "https://247sports.com/college/wisconsin/article/wisconsins-comeback-attempt-falls-just-short-as-badgers-take-first-loss-of-season-293001860/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSqRrDx4PVEGtD-0-n1Omy1TrdH3gliL9VoDdZQV7lf3T5NYMhRvGJw2h8prg",
-      "image_credit": "Milwaukee Journal Sentinel",
-      "news": [
-        {
-          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/19/wisconsin-badgers-basketball-vs-seton-hall-score-live-game-updates-highlights-channel-baha-mar-recap--live/92855626007/",
-          "title": "Wisconsin basketball can’t come back vs Seton Hall: Live updates, highlights",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSqRrDx4PVEGtD-0-n1Omy1TrdH3gliL9VoDdZQV7lf3T5NYMhRvGJw2h8prg"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920888",
-          "title": "Seton Hall 74-69 Wisconsin (Nov 19, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5yWFuyX-kFqlRb1Q4z2J66SWuH4oKYzVc0La1qGqDewYp2QshPni2zKu-sg"
-        },
-        {
-          "url": "https://247sports.com/college/wisconsin/article/wisconsins-comeback-attempt-falls-just-short-as-badgers-take-first-loss-of-season-293001860/",
-          "title": "Wisconsin’s comeback attempt falls just short as Badgers take first loss of season",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKY2PZKsCrGPzi5JqWvdwmian-K_bixc59rJENnN92fqx5UU4c79fo-jux8fw"
-        }
-      ]
-    },
-    {
-      "query": "deportación",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T00:50:00Z",
-      "related_news_urls": [
-        "https://cnnespanol.cnn.com/2026/11/19/eeuu/eeuu-tps-venezolanos-historia-orix",
-        "https://www.latimes.com/espanol/eeuu/articulo/2026-11-19/tribunal-ordena-frenar-estatus-de-proteccion-temporal-para-miles-de-venezolanos-en-eeuu",
-        "https://www.democracynow.org/es/2026/11/20/titulares/us_appeals_court_freezes_deportation_protections_for_venezuelan_immigrants"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC70T_YOUBClei-vTmQoX-K-Pq_cc5o5k9SX8K_bwVJYnuNDPVZjIvgm5jQF8",
-      "image_credit": "CNN en Español",
-      "news": [
-        {
-          "url": "https://cnnespanol.cnn.com/2026/11/19/eeuu/eeuu-tps-venezolanos-historia-orix",
-          "title": "Los venezolanos con TPS en EE.UU. siguen sin protecciones tras una larga batalla judicial. ¿Qué sigue ahora?",
-          "publisher": "CNN en Español",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC70T_YOUBClei-vTmQoX-K-Pq_cc5o5k9SX8K_bwVJYnuNDPVZjIvgm5jQF8"
-        },
-        {
-          "url": "https://www.latimes.com/espanol/eeuu/articulo/2026-11-19/tribunal-ordena-frenar-estatus-de-proteccion-temporal-para-miles-de-venezolanos-en-eeuu",
-          "title": "Tribunal ordena frenar estatus de protección temporal para miles de venezolanos en EEUU",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpZ-oKcv0OegzcOyD_xyuwuexuiWbUG2mte98VDwkQNsesNeLryIj5ND2DNT8"
-        },
-        {
-          "url": "https://www.democracynow.org/es/2026/11/20/titulares/us_appeals_court_freezes_deportation_protections_for_venezuelan_immigrants",
-          "title": "Un tribunal de apelaciones de EE.UU. suspende temporalmente las protecciones contra la deportación para inmigrantes venezolanos",
-          "publisher": "Democracy Now!",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzRCSBjZQ0mcg5MVcGiNh5sxjvfLFLpRSUBns_zrrLMq48ztG6QAGvWk6AK_Y"
-        }
-      ]
-    },
-    {
-      "query": "dyson daniels",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T00:50:00Z",
-      "related_news_urls": [
-        "https://hawks.com/news/winning-the-possession-battle-the-numbers-behind-dyson-daniels-staggering-impact",
-        "https://sports.yahoo.com/articles/25-under-25-victor-wembanyama-155804477.html",
-        "https://fansided.com/nba/dyson-daniels-nba-player-rankings-hawks-2027"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQB243uw0W6UhiRiB5mZCgjB8q8RUg0aP_AklGa-eGwEVsZjp48od9RwujtGSA",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://hawks.com/news/winning-the-possession-battle-the-numbers-behind-dyson-daniels-staggering-impact",
-          "title": "Winning the Possession Battle: The Numbers Behind Dyson Daniels’ Staggering Impact",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQB243uw0W6UhiRiB5mZCgjB8q8RUg0aP_AklGa-eGwEVsZjp48od9RwujtGSA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/25-under-25-victor-wembanyama-155804477.html",
-          "title": "25-under-25: Victor Wembanyama is here to stretch your imagination",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3ZIR11pby_4UO-VXbcJuulmEnjRBEcb0HQDjgkCkCsN_QL3kPpEKuA4wST-s"
-        },
-        {
-          "url": "https://fansided.com/nba/dyson-daniels-nba-player-rankings-hawks-2027",
-          "title": "25-under-25: Dyson Daniels is elite even without a jumper",
-          "publisher": "FanSided",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7ciFQnayQi29iK2vfyvgMHSQ_NdepeMdQtZ3WTS4BmsGcz9ZbgfR-39QCy00"
-        }
-      ]
-    },
-    {
-      "query": "dabo swinney",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T00:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/article/dabo-swinneys-clemson-crisis-could-mark-the-end-of-college-footballs-all-powerful-coach-era-193931628.html",
-        "https://www.espn.com/college-football/story/_/id/50512833/defiant-dabo-swinney-says-clemson-gonna-win-bunch-more",
-        "https://www.nytimes.com/athletic/7790895/2026/11/18/texas-clemson-dabo-swinney-trusted-denial-mandels-mailbag/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzWgX7BtWhC5VMRqF7AXkl4-FReliTpXDAZRI8kYZgXyAACQW561m_5K9I90g",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmA9Je0G6TmlHI1xORhz1GARhxJqd4o4MEJGAIMGEKWaK3LcdHUJZ0FT-wJ08",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/college-football/article/dabo-swinneys-clemson-crisis-could-mark-the-end-of-college-footballs-all-powerful-coach-era-193931628.html",
-          "title": "Dabo Swinney's Clemson crisis could mark the end of college football's all-powerful coach era",
+          "url": "https://sports.yahoo.com/articles/pistons-insider-delivers-blunt-assessment-201500118.html",
+          "title": "Pistons Insider Delivers Blunt Assessment of John Collins’ Offensive Role",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzWgX7BtWhC5VMRqF7AXkl4-FReliTpXDAZRI8kYZgXyAACQW561m_5K9I90g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmA9Je0G6TmlHI1xORhz1GARhxJqd4o4MEJGAIMGEKWaK3LcdHUJZ0FT-wJ08"
         },
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50512833/defiant-dabo-swinney-says-clemson-gonna-win-bunch-more",
-          "title": "Defiant Dabo Swinney says Clemson's 'gonna win a bunch more'",
+          "url": "https://detroitjockcity.com/3-pistons-thin-ice-one-month-nba-season-01m7wgwesm60",
+          "title": "3 Pistons on thin ice one month into the NBA season",
+          "publisher": "Detroit Jock City",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4GiYVR_g23Eweb9J2Sjl1c1QEFBU9PNiu5IJ4NUYiB-BYsnbBMeYF1qjULJs"
+        },
+        {
+          "url": "https://pistonpowered.com/john-collins-poor-finishing-just-big-problem-shooting",
+          "title": "John Collins' poor finishing is just as big of a problem as his shooting",
+          "publisher": "PistonPowered",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr9DjUe1CGmVBp67jQkevmak8_XSRs65YMIWhxnaIgqj8voZHw5Iz4dYGXD4Q"
+        }
+      ]
+    },
+    {
+      "query": "rhys",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T01:40:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/20/celebrity-news/matthew-rhys-made-bad-joke-that-cost-him-james-bond-role/",
+        "https://www.nine.com.au/entertainment/celebrity/terrible-joke-that-cost-a-lister-the-role-of-james-bond-20261121-p61g4g.html",
+        "https://www.geo.tv/latest/691899-m"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWQfgl4vAaZOtpIYeva2A0iPxSARNNEG8DLEpDqmLwkea0hnxDtYEKO9ldg5o",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/20/celebrity-news/matthew-rhys-made-bad-joke-that-cost-him-james-bond-role/",
+          "title": "The disastrous joke that cost Matthew Rhys James Bond role revealed",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWQfgl4vAaZOtpIYeva2A0iPxSARNNEG8DLEpDqmLwkea0hnxDtYEKO9ldg5o"
+        },
+        {
+          "url": "https://www.nine.com.au/entertainment/celebrity/terrible-joke-that-cost-a-lister-the-role-of-james-bond-20261121-p61g4g.html",
+          "title": "‘Terrible joke’ that cost A-lister the role of James Bond",
+          "publisher": "Nine.com.au",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCFrpNrfTyTU3VvDgRsb9-5T5TDJOjKUxyuNyD3vU0dqUbY6mHUbz8Pd-rqIo"
+        },
+        {
+          "url": "https://www.geo.tv/latest/691899-m",
+          "title": "Matthew Rhys reveals embarrassing moment that ruined his chances of becoming 007",
+          "publisher": "Geo News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIuy_oZVEANPfAYT-cRypyO8ZYYNxFWMNzhLGjYX2p1PzlN1L7DQ40-SMhgg8"
+        }
+      ]
+    },
+    {
+      "query": "suns vs jazz",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T01:30:00Z",
+      "related_news_urls": [
+        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/18/quick-recap-ku-rallies-to-beat-wvu-86-82-and-advance-to-players-era-8-championship/",
+        "https://sports.yahoo.com/ncaab/west-virginia-mountaineers-kansas-jayhawks-202611180287/",
+        "https://www.fearthesword.com/cavs-game-previews/54726/cavs-vs-pacers-game-thread"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTX0KuqXhcVlI1-zoMQAc9wh7p8zAKsh6NX9Xg4Qlpv7HlnIpW-JTYD9ZbQRQ",
+      "image_credit": "KU Sports",
+      "news": [
+        {
+          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/18/quick-recap-ku-rallies-to-beat-wvu-86-82-and-advance-to-players-era-8-championship/",
+          "title": "KU rallies to beat WVU, 86-82, and advance to Players Era 8 championship",
+          "publisher": "KU Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTX0KuqXhcVlI1-zoMQAc9wh7p8zAKsh6NX9Xg4Qlpv7HlnIpW-JTYD9ZbQRQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/ncaab/west-virginia-mountaineers-kansas-jayhawks-202611180287/",
+          "title": "West Virginia Mountaineers 82 - Kansas Jayhawks 86: Final score, results, recap, box score, stats",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpoKpJlgOGi06UXEXp1ycpdDEz0mGn7W4TrnWanFHAGeYJNtGRTIuXQ2wDde0"
+        },
+        {
+          "url": "https://www.fearthesword.com/cavs-game-previews/54726/cavs-vs-pacers-game-thread",
+          "title": "Cavs vs. Pacers game thread",
+          "publisher": "Fear The Sword",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvofT6NGUSsCQ-Wxv3lp965IfmAr6mzkXwUjwDp2Z4lEXltj9JcJcjFMxIEqE"
+        }
+      ]
+    },
+    {
+      "query": "deportivo cali - millonarios",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T01:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17536008/millonarios-anuncio-sus-20-convocados-para-enfrentar-a-deportivo-cali",
+        "https://www.elespectador.com/deportes/futbol-colombiano/millonarios/cali-vs-millonarios-en-vivo-siga-el-minuto-a-minuto-del-juego-de-cuadrangulares-de-liga/",
+        "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-con-menos-presion-comienza-su-paso-por-los-cuadrangulares-de-la-liga-betplay-con-una-visita-al-cali-hora-y-tv-3602586"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQADm1vS9NuB_XVr6JJFqS9otMFAaPlGclRODruwjFxKf33kyBMgCjQym8OWbA",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17536008/millonarios-anuncio-sus-20-convocados-para-enfrentar-a-deportivo-cali",
+          "title": "Millonarios anunció sus 20 convocados para enfrentar a Deportivo Cali",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQADm1vS9NuB_XVr6JJFqS9otMFAaPlGclRODruwjFxKf33kyBMgCjQym8OWbA"
+        },
+        {
+          "url": "https://www.elespectador.com/deportes/futbol-colombiano/millonarios/cali-vs-millonarios-en-vivo-siga-el-minuto-a-minuto-del-juego-de-cuadrangulares-de-liga/",
+          "title": "Cali vs. Millonarios, en vivo: siga el minuto a minuto del juego de cuadrangulares de liga",
+          "publisher": "El Espectador",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKpjWqJd53kgta1_-GBf86z4E5OeTJKsT7MdepIoWgqPMnwWTq0PIhB9vuvTo"
+        },
+        {
+          "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-con-menos-presion-comienza-su-paso-por-los-cuadrangulares-de-la-liga-betplay-con-una-visita-al-cali-hora-y-tv-3602586",
+          "title": "Millonarios, con menos presión, comienza su paso por los cuadrangulares de la Liga BetPlay con una visita al Cali: hora y TV",
+          "publisher": "El Tiempo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOO7fYEArmoY8tGuKoRJeX2rere-Y4vP4mealJ4Nww1hHXbbEeWblfBVWDlTI"
+        }
+      ]
+    },
+    {
+      "query": "haití",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T01:30:00Z",
+      "related_news_urls": [
+        "https://cnnespanol.cnn.com/2026/11/19/latinoamerica/video/haiti-violencia-ayuda-el-salvador-tropas-pandillas-perspectivas-tv",
+        "https://www.dw.com/es/miles-de-personas-marchan-en-hait%C3%AD-en-apoyo-a-militares-salvadore%C3%B1os-y-agradecen-a-nayib-bukele/a-79975723",
+        "https://factual.afp.com/doc.afp.com.D87L39E"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwG07h1qLuQqTO4TQkvb35EXodCj7nVAA_53gaNO1rg-7x7MTsjLPDDUsV9sA",
+      "image_credit": "CNN en Español",
+      "news": [
+        {
+          "url": "https://cnnespanol.cnn.com/2026/11/19/latinoamerica/video/haiti-violencia-ayuda-el-salvador-tropas-pandillas-perspectivas-tv",
+          "title": "“Este es un experimento único en esta región”, dice experto sobre ayuda de El Salvador a Haití",
+          "publisher": "CNN en Español",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwG07h1qLuQqTO4TQkvb35EXodCj7nVAA_53gaNO1rg-7x7MTsjLPDDUsV9sA"
+        },
+        {
+          "url": "https://www.dw.com/es/miles-de-personas-marchan-en-hait%C3%AD-en-apoyo-a-militares-salvadore%C3%B1os-y-agradecen-a-nayib-bukele/a-79975723",
+          "title": "Miles de personas marchan en Haití para agradecer a Nayib Bukele por envío de tropas",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6isBY9rHAC7_s7fULarkEOxUhTGXyThXHvDY-ocONtDkHDHfkeFUXQio3Tnk"
+        },
+        {
+          "url": "https://factual.afp.com/doc.afp.com.D87L39E",
+          "title": "Video de reparto de agua en Costa de Marfil se vincula falsamente al despliegue militar en Haití",
+          "publisher": "AFP Factual",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUCXn7hrFBie4cTG8T5FYrizSUlK30Sfnp5kNnpwhtc3KrY1hLq2kr_wIiMnA"
+        }
+      ]
+    },
+    {
+      "query": "allen graves",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T01:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/graves-leaning-raptors-motto-stronger-181423470.html",
+        "https://www.sportsnet.ca/nba/article/raptors-rookie-allen-graves-making-first-career-start-vs-pistons/",
+        "https://raptorsrapture.com/raptors-allen-graves-pick-looks-even-better-after-early-2026-re-draft"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStt1dZkigHQn3LOK8pH-_wBr2pl6-paQFpcfF03tszZGLY6A3f5aR_Il_W_sc",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/graves-leaning-raptors-motto-stronger-181423470.html",
+          "title": "Graves leaning on Raptors motto ‘Stronger Together’ amid losing streak",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStt1dZkigHQn3LOK8pH-_wBr2pl6-paQFpcfF03tszZGLY6A3f5aR_Il_W_sc"
+        },
+        {
+          "url": "https://www.sportsnet.ca/nba/article/raptors-rookie-allen-graves-making-first-career-start-vs-pistons/",
+          "title": "Raptors rookie Allen Graves making first career start vs. Pistons",
+          "publisher": "Sportsnet.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXoxy-3TiEf2XCJjFHUJX3Mtqo8bq46MK5yweR17cjWGTlCwXlVQDVNGYxhqI"
+        },
+        {
+          "url": "https://raptorsrapture.com/raptors-allen-graves-pick-looks-even-better-after-early-2026-re-draft",
+          "title": "Raptors’ Allen Graves pick looks even better after early 2026 re-draft",
+          "publisher": "Raptors Rapture",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgnSOtxlKzTUSL6CmalM0kzsrx-itLrvRqlOr0YNXhvsFJPPcMORR58RQHfL0"
+        }
+      ]
+    },
+    {
+      "query": "carmelo anthony",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T01:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50532199/ravens-send-marlon-humphrey-home-say-inactive",
+        "https://foxbaltimore.com/news/local/carmelo-anthony-comments-marlon-humphrey-baltimore-ravens-maryland",
+        "https://www.nytimes.com/athletic/7796297/2026/11/20/ravens-marlon-humphrey-baltimore-comments/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1ruNmxLakjEZXufbYU6FMRxf8OeqNId-UCcZXdIPIxrQifXi4S0nkcWdFgz8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50532199/ravens-send-marlon-humphrey-home-say-inactive",
+          "title": "Ravens send CB Humphrey home, say he'll be inactive after 'criminals' comment",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKvEQ0EA9CYpKtaMIpDPVnTAzUiQAf1pAi29z22u7e-U0jQXVOaWpRNXppGiE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1ruNmxLakjEZXufbYU6FMRxf8OeqNId-UCcZXdIPIxrQifXi4S0nkcWdFgz8"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7790895/2026/11/18/texas-clemson-dabo-swinney-trusted-denial-mandels-mailbag/",
-          "title": "Mandel’s Mailbag: Can Dabo Swinney actually fix Clemson? Has Texas earned our trust?",
+          "url": "https://foxbaltimore.com/news/local/carmelo-anthony-comments-marlon-humphrey-baltimore-ravens-maryland",
+          "title": "Carmelo Anthony defends Baltimore's legacy amid viral podcast comments by Marlon Humphrey",
+          "publisher": "WBFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEpMOoMcC3WUK2Hc9XVrCogBq24xxtwl3FLRyOYSMyRyHCuPnkNjgt4q9uYDs"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7796297/2026/11/20/ravens-marlon-humphrey-baltimore-comments/",
+          "title": "For the Ravens, ‘Marlon being Marlon’ isn’t funny — or tolerable — anymore",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM-yxpVQMcVDKpHb1Uvx3TwDN1VBKInXacHXvmjbT62ZWI3HWAOxNkSXuwfEY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTofPe4RIUHTxJFqCiCrx72JBmxgyWFfX0USIhty01rFxiOqjetfpqVP6jK6NU"
+        }
+      ]
+    },
+    {
+      "query": "google nest app",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T01:30:00Z",
+      "related_news_urls": [
+        "https://www.cnet.com/home/smart-home/nest-app-google-assistant-sunset/",
+        "https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down",
+        "https://www.usatoday.com/story/tech/2026/11/20/google-shutting-down-nest-app-google-assistant/92882819007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWybI5JpoaYEq62xLPFhzeLHOHST5A0eowPxE6ZFIMGZZqaR573rRK1UG0w-g",
+      "image_credit": "CNET",
+      "news": [
+        {
+          "url": "https://www.cnet.com/home/smart-home/nest-app-google-assistant-sunset/",
+          "title": "Google Is Killing the Nest App. Here’s What Comes Next",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWybI5JpoaYEq62xLPFhzeLHOHST5A0eowPxE6ZFIMGZZqaR573rRK1UG0w-g"
+        },
+        {
+          "url": "https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down",
+          "title": "Google says it’s going to shut off Google Assistant on smart speakers next year",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnGVRz8HiXONFXiTU1iTLG7ROGhixIy8BdnYPUHei2Rxk-7jnBPeW3UR80DXQ"
+        },
+        {
+          "url": "https://www.usatoday.com/story/tech/2026/11/20/google-shutting-down-nest-app-google-assistant/92882819007/",
+          "title": "Google to shut down Nest app, Google Assistant for home devices",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaH4iSEVOliiA9le9kM_c7Jt2r_CxmVMyvW10tJUfzbrax0g2hCiDAaa5T7Ug"
+        }
+      ]
+    },
+    {
+      "query": "catching fire",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T01:30:00Z",
+      "related_news_urls": [
+        "https://people.com/see-the-sunrise-on-the-reaping-cast-next-to-original-actors-12263160",
+        "https://www.hollywoodreporter.com/movies/movie-news/joseph-zada-woody-harrelson-hunger-games-premiere-1236757437/",
+        "https://www.sfchronicle.com/entertainment/movies-tv/article/hunger-games-sunrise-reaping-cast-22540255.php"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMWtZhK0VZg_j1EfOWYoyQir92gMv7XR5dkUXDf7mzsgXObkXMiakGbGnhkg",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/see-the-sunrise-on-the-reaping-cast-next-to-original-actors-12263160",
+          "title": "See the ‘Sunrise on the Reaping’ Cast Side-by-Side with the Original ‘Hunger Games’ Actors",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMWtZhK0VZg_j1EfOWYoyQir92gMv7XR5dkUXDf7mzsgXObkXMiakGbGnhkg"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/joseph-zada-woody-harrelson-hunger-games-premiere-1236757437/",
+          "title": "Joseph Zada Spent a Month Watching “Everything Woody Harrelson Has Ever Done” to Prepare for ‘Hunger Games’ Role",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6UtxXAoVwtZyjDAwbaeQvtQojMdHSAZ_afoFtHF_SJAmjZV3yz_1BjxKZIlw"
+        },
+        {
+          "url": "https://www.sfchronicle.com/entertainment/movies-tv/article/hunger-games-sunrise-reaping-cast-22540255.php",
+          "title": "‘The Hunger Games’ are back, with an A-list cast and brutal origin story for Haymitch",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlj0D0bHhOMSTfYFEBjZmMziI4jWgP0bOFBp-Xn23QTGA2wKJ67nR3C-jL6s"
+        }
+      ]
+    },
+    {
+      "query": "milan momcilovic",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T01:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/mark-pope-explains-kentuckys-sharpshooter-162443684.html",
+        "https://www.on3.com/teams/kentucky-wildcats/news/milan-momcilovic-plays-the-most-minutes-but-has-the-smallest-offensive-role-according-to-kenpom/",
+        "https://www.nationofblue.com/mark-pope-wants-to-get-milan-momcilovic-more-shots/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFB_VyTdG8mUPAN7qwb99BFFbwE75hENvhBykdEOgPtsjiTP3dQqFL6jE4ONs",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/mark-pope-explains-kentuckys-sharpshooter-162443684.html",
+          "title": "Mark Pope explains how to get Kentucky's sharpshooter Milan Momcilovic more shots",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFB_VyTdG8mUPAN7qwb99BFFbwE75hENvhBykdEOgPtsjiTP3dQqFL6jE4ONs"
+        },
+        {
+          "url": "https://www.on3.com/teams/kentucky-wildcats/news/milan-momcilovic-plays-the-most-minutes-but-has-the-smallest-offensive-role-according-to-kenpom/",
+          "title": "Milan Momcilovic plays the most minutes but has the smallest offensive role, according to KenPom",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRadkdQ-iitix_yc0Fd9BnbQ_G0KMGqbuUBUeMkpKFgQSnRuzL7Lx3qjpLgAks"
+        },
+        {
+          "url": "https://www.nationofblue.com/mark-pope-wants-to-get-milan-momcilovic-more-shots/",
+          "title": "Mark Pope Wants to Get Milan Momcilovic More Shots",
+          "publisher": "Nation of Blue",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcbwpKxN09AJ5V6xIiCsH0byxNKQ7ixImHwjuP1WbBjUwgtHgwCu8EDvEfawo"
         }
       ]
     }
