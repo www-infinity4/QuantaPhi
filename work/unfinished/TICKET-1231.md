@@ -1,4 +1,33 @@
+---
+issue: 1231
+project: "Bubbles Android APK production readiness"
+source_requests: ["Owner: APK finish it please; 2026-11-21"]
+state: source_tested
+dot: "🟡"
+progress_percent: unknown
+progress_basis: "Source reconciled; 13 focused APK tests passed; real signed build, emulator, release and physical-device acceptance pending."
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: "GPT builder with independent Pink source review"
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+last_observed_at_utc: "2026-11-21T11:39:00Z"
+repo: www-infinity4/QuantaPhi
+branch: bubbles/20261023-apk-059-integrated-history-mic
+head_sha: c8e594e3ddf4ddecfa5bc300aec3136ec2dfde9b
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/935"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Exact-head Android build, signer continuity and emulator results pending"
+next_action: "Verify exact-head APK build, signer compatibility and API31/API35 emulator results on PR #935"
+---
+
 # Bubbles Android readiness — canonical issue #1231
+
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1231
 
 - Owner request: “APK finish it please”, 2026-11-21.
 - Existing release PR: [#935](https://github.com/www-infinity4/QuantaPhi/pull/935), branch `bubbles/20261023-apk-059-integrated-history-mic`.

@@ -302,6 +302,9 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: android
     runs-on: ubuntu-latest
+    concurrency:
+      group: bubbles-preview5-publication
+      cancel-in-progress: false
     permissions:
       contents: write
     steps:
@@ -330,6 +333,11 @@ jobs:
           cp dist/receipt/bubbles-apk-receipt.json "dist/$VERSIONED.receipt.json"
           (cd dist && sha256sum "$VERSIONED" > "$VERSIONED.sha256" && sha256sum Bubbles-Preview5-Android12.apk > Bubbles-Preview5-Android12.apk.sha256)
           if gh release view bubbles-preview-current --repo "$GH_REPO" >/dev/null 2>&1; then
+            gh release view bubbles-preview-current --repo "$GH_REPO" --json assets --jq '.assets[].name' > "$RUNNER_TEMP/bubbles-release-assets.txt"
+            if grep -Fxq "$VERSIONED" "$RUNNER_TEMP/bubbles-release-assets.txt"; then
+              echo "::error::Versioned APK already exists; bump the version instead of replacing published bytes"
+              exit 1
+            fi
             gh release upload bubbles-preview-current "dist/$VERSIONED#Bubbles v${VERSION}-preview" "dist/$VERSIONED.sha256" "dist/$VERSIONED.receipt.json" "dist/Bubbles-Preview5-Android12.apk#Current Bubbles Preview" dist/Bubbles-Preview5-Android12.apk.sha256 --clobber --repo "$GH_REPO"
           else
             gh release create bubbles-preview-current "dist/$VERSIONED#Bubbles v${VERSION}-preview" "dist/$VERSIONED.sha256" "dist/$VERSIONED.receipt.json" "dist/Bubbles-Preview5-Android12.apk#Current Bubbles Preview" dist/Bubbles-Preview5-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Every version also retains a uniquely named signed APK asset and SHA256 checksum, so download version identity is clear. Test-signed preview, not a production release."

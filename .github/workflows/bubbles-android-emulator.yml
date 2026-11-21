@@ -5,6 +5,8 @@ on:
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-emulator-smoke.sh'
       - '.github/workflows/bubbles-android-emulator.yml'
+      - '.github/workflows/bubbles-android.yml'
+      - '.github/scripts/verify-bubbles-apk-update.mjs'
   workflow_dispatch:
 permissions:
   contents: read
