@@ -1,5 +1,6 @@
 import {YOUTUBE_CHANNEL,YOUTUBE_VIDEO_DATABASE,YOUTUBE_TOPICS,findYouTubeVideo,searchYouTubeVideos} from './youtube-creator-catalog.mjs';
 import {JULIE_DERU_CHANNEL,JULIE_DERU_VIDEO_DATABASE,JULIE_DERU_TOPICS,findJulieDeruVideo,searchJulieDeruVideos} from './julie-deru-catalog.mjs';
+import {MARIA_CHANNEL,MARIA_VIDEO_DATABASE,MARIA_TOPICS,findMariaVideo,searchMariaVideos,similarMariaVideos} from './milky-mama-maria-catalog.mjs';
 
 /* In-card public-source browser. Each user click mounts at most one YouTube
  * player; switching videos removes the previous iframe. No autoplay, rehost,
@@ -13,20 +14,21 @@ function stopPlayer(){
 }
 export function mountYouTubeCreatorCard(root,card){
  const isJulie=card?.youtubeChannelId===JULIE_DERU_CHANNEL.channelId;
- if(!isJulie&&card?.youtubeChannelId!==YOUTUBE_CHANNEL.channelId)return false;
- const channel=isJulie?JULIE_DERU_CHANNEL:YOUTUBE_CHANNEL;
- const database=isJulie?JULIE_DERU_VIDEO_DATABASE:YOUTUBE_VIDEO_DATABASE;
- const topics=isJulie?JULIE_DERU_TOPICS:YOUTUBE_TOPICS;
- const find=isJulie?findJulieDeruVideo:findYouTubeVideo;
- const searchVideos=isJulie?searchJulieDeruVideos:searchYouTubeVideos;
- const indexRoute=isJulie?'julie-deru-youtube':'abbecadventures-youtube';
+ const isMaria=card?.youtubeChannelId===MARIA_CHANNEL.channelId;
+ if(!isJulie&&!isMaria&&card?.youtubeChannelId!==YOUTUBE_CHANNEL.channelId)return false;
+ const channel=isMaria?MARIA_CHANNEL:isJulie?JULIE_DERU_CHANNEL:YOUTUBE_CHANNEL;
+ const database=isMaria?MARIA_VIDEO_DATABASE:isJulie?JULIE_DERU_VIDEO_DATABASE:YOUTUBE_VIDEO_DATABASE;
+ const topics=isMaria?MARIA_TOPICS:isJulie?JULIE_DERU_TOPICS:YOUTUBE_TOPICS;
+ const find=isMaria?findMariaVideo:isJulie?findJulieDeruVideo:findYouTubeVideo;
+ const searchVideos=isMaria?searchMariaVideos:isJulie?searchJulieDeruVideos:searchYouTubeVideos;
+ const indexRoute=isMaria?'milky-mama-maria-youtube':isJulie?'julie-deru-youtube':'abbecadventures-youtube';
  const panel=el('section','qcx-tool youtube-creator-post-card');
  panel.setAttribute('aria-label',channel.name+' indexed video database');
  panel.append(el('h3','',channel.name+' · Public YouTube videos'),
   el('p','qcx-note',database.videos.length+' source-identified videos · partial archive · checked '+database.coverage.checkedAt),
   el('p','qcx-note','Titles, links and thumbnails are from the original publisher. Community posts, full upload history and exact publish dates have not been indexed.'));
  let query='',selected=card.youtubeVideoId||database.videos[0]?.videoId;
- const single=Boolean(card.youtubeVideoId);
+ const single=Boolean(card.youtubeVideoId)&&!isMaria; // Maria episodes can browse the same verified carousel.
  const controls=el('div','qcx-controls');
  let search,picker,previous,next;
  const status=el('p','qcx-note');status.setAttribute('role','status');
@@ -51,7 +53,7 @@ export function mountYouTubeCreatorCard(root,card){
   const list=rows();
   if(!list.some(v=>v.videoId===selected))selected=list[0]?.videoId;
   if(picker){
-   picker.replaceChildren(...list.map(v=>{const option=el('option','',v.title);option.value=v.videoId;return option;}));
+   picker.replaceChildren(...list.map(v=>{const option=el('option','',isMaria?'Manual pumping routine · '+v.videoId:v.title);option.value=v.videoId;return option;}));
    picker.value=selected||'';picker.disabled=!list.length;
    previous.disabled=next.disabled=list.length<2;
   }
@@ -63,6 +65,7 @@ export function mountYouTubeCreatorCard(root,card){
   const thumb=el('img','qcx-thumb');thumb.loading='lazy';thumb.decoding='async';
   thumb.alt='YouTube thumbnail · '+video.title;
   thumb.src='https://i.ytimg.com/vi/'+video.videoId+'/hqdefault.jpg';
+  // These thumbnails are only displayed after opening the requested creator card.
   thumb.style.maxWidth='100%';thumb.style.height='auto';thumb.style.borderRadius='12px';
   thumb.addEventListener('error',()=>thumb.remove(),{once:true});figure.append(thumb);
   const playback=el('div','qcx-player');
@@ -86,9 +89,27 @@ export function mountYouTubeCreatorCard(root,card){
   });stop.hidden=true;actions.append(play,stop);
   contents.append(figure,title,topic,actions,playback,
    el('p','qcx-note','Playback requires a click. YouTube may restrict embedding; the original link remains available.'));
+  if(isMaria){
+   const related=similarMariaVideos(video.videoId);
+   const show=button('View similar',()=>{
+    const rail=el('div','qcx-related-carousel');
+    rail.setAttribute('aria-label','Similar verified videos carousel');
+    rail.style.cssText='display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 0';
+    related.forEach((v,i)=>{
+     const b=button('Related upload '+(i+1)+' · '+v.videoId,()=>{selected=v.videoId;paint();});
+     b.style.cssText='flex:0 0 184px;white-space:normal;scroll-snap-align:start;min-height:64px';
+     rail.append(b);
+    });
+    show.replaceWith(rail);
+   });
+   show.disabled=related.length===0;
+   const label=el('p','qcx-note',related.length+' other source-identified videos; use Next/Previous to browse. Not a live or exhaustive recommendation feed.');
+   contents.append(label,show);
+  }
  }
  const footer=el('div','qcx-controls');
  footer.append(link('View original channel',channel.profileUrl));
+ if(isMaria)footer.append(link('View all channel videos',channel.videosUrl));
  if(single)footer.append(link('Browse indexed videos','/source-quick-card.html?card='+indexRoute));
  else footer.append(button('Export indexed database',()=>{
   const blob=new Blob([JSON.stringify(database,null,2)],{type:'application/json'});
