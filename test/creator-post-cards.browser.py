@@ -237,7 +237,7 @@ def run():
                 reviewed.locator('form.qcx-search-form').get_by_role('button',name='Play in card').click()
                 expect(more.locator('iframe')).to_have_count(0)
                 expect(reviewed.locator('iframe')).to_have_count(1)
-                reviewed.get_by_role('button',name='Stop playback').click()
+                reviewed.get_by_role('button',name='Stop playback').first.click()
                 expect(reviewed.locator('iframe')).to_have_count(0)
                 more.get_by_role('combobox',name='Filter by video channel').select_option('gana')
                 assert more.locator('.qcx-mix-entry').count()>=1, 'Verified channel filter must show real seed videos'
