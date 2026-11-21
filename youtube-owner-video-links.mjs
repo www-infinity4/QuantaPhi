@@ -115,6 +115,11 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=Cmar9xsX7AU',
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  contentBoundary:'general-media'
+},{
+ videoId:'o5ErK3nEpKU',title:'YouTube video o5ErK3nEpKU (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=o5ErK3nEpKU',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
 }
 ];
 export function validateOwnerYouTubeLink(row){
