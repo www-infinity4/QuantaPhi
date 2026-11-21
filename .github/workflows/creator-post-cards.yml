@@ -10,6 +10,8 @@ on:
       - 'youtube-creator-mixed-*.mjs'
       - 'test/youtube-creator-mixed.test.mjs'
       - 'family-parenting-tv*.mjs'
+      - 'milk-mamas-catalog.mjs'
+      - 'test/milk-mamas-quick-card.test.mjs'
       - 'workers/family-parenting-tv/**'
       - 'test/family-parenting-tv.test.mjs'
       - 'test/youtube-creator-*.test.mjs'
@@ -29,7 +31,12 @@ on:
       - 'youtube-creator-*.mjs'
       - 'julie-deru-catalog.mjs'
       - 'test/julie-deru-quick-cards.test.mjs'
+      - 'workers/quantaphi-site/creator-uploads.mjs'
+      - 'youtube-creator-mixed-*.mjs'
+      - 'test/youtube-creator-mixed.test.mjs'
       - 'family-parenting-tv*.mjs'
+      - 'milk-mamas-catalog.mjs'
+      - 'test/milk-mamas-quick-card.test.mjs'
       - 'workers/family-parenting-tv/**'
       - 'test/family-parenting-tv.test.mjs'
       - 'test/youtube-creator-*.test.mjs'
@@ -60,11 +67,12 @@ jobs:
           node --check youtube-creator-mixed-core.mjs
           node --check youtube-creator-mixed-card.mjs
           node --check workers/quantaphi-site/creator-uploads.mjs
+          node --check milk-mamas-catalog.mjs
           node --check family-parenting-tv-core.mjs
           node --check family-parenting-tv-card.mjs
           node --check workers/family-parenting-tv/worker.mjs
       - name: Verify database, placement and source integration
-        run: node --test test/family-parenting-tv.test.mjs test/youtube-creator-quick-cards.test.mjs test/julie-deru-quick-cards.test.mjs test/youtube-creator-mixed.test.mjs test/creator-posts.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/oracle-placement-engine.test.mjs test/oracle-feed-persistence.test.mjs test/cardone-offer.test.cjs test/unfinished-ledger.test.mjs
+        run: node --test test/milk-mamas-quick-card.test.mjs test/family-parenting-tv.test.mjs test/youtube-creator-quick-cards.test.mjs test/julie-deru-quick-cards.test.mjs test/youtube-creator-mixed.test.mjs test/creator-posts.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/oracle-placement-engine.test.mjs test/oracle-feed-persistence.test.mjs test/cardone-offer.test.cjs test/unfinished-ledger.test.mjs
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

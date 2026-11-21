@@ -102,6 +102,21 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Next executable action:** inspect PR #2019's exact-head CI and browser results; fix failing checks on this branch, then guarded permitted merge and live QuantaPhi/Android readback. Preserve open issue #1603 until broader video feed acceptance.
 
 
+## Session 6 — Milk Mamas Nest seven-video Family Quick Card · 2026-11-21
+
+- Owner source: https://youtu.be/Hft1qIEnuuY?is=Zcop20Bs-r0bcKr9
+- Canonical issue: #1603, existing Family & Parenting TV/player tools reused; no duplicate issue.
+- Publisher observed: Milk Mamas Nest, https://www.youtube.com/@MilkMamasNest3. Public browser inspection identified seven videos. Public watch-page metadata was independently confirmed for the supplied video and five related entries; the remaining link was identified through the channel's Videos tab.
+- Coverage: seven observed video title/URL pairs only, no official publisher playlist found. Future upload completeness or exact publication dates are not asserted.
+- Boundary: nonsexual family education only; no 21+ ads, rehost, account access, paywall, unauthorized publishing or substituted medical advice.
+- Source files: milk-mamas-catalog.mjs, family-parenting-tv-card.mjs, source-quick-cards.mjs, test/milk-mamas-quick-card.test.mjs, .github/workflows/creator-post-cards.yml.
+- Features: official YouTube opt-in player, seven-episode selector, search, Previous/Next navigation and original channel link, one active iframe.
+- Working branch: feat/milk-mamas-nest-episodes-1603-20261121 from main; no shared runner lease issued or overridden in this connector session.
+- Evidence: GitHub commits on branch; standalone local TDD red then two passing tests on new module before integration. Exact-head GitHub CI, browser/Android playback, PR review, merge, deployment and production acceptance have separate receipts pending.
+- State: source_staged. Estimated 4/8 acceptance tracks complete (source, observed catalog, UI integration, regression/CI wiring). Remaining: CI, review/merge, deploy, Android/browser acceptance.
+- Next executable action: inspect exact-head PR CI, fix failing checks on same branch, review then permitted merge and deployed Android test.
+
+
 ## Session 6 — Julie Deru YouTube channel Quick Cards · 2026-11-21
 
 - **Owner request:** https://youtu.be/G6zpr59jEas?is=hMY5CM5yLdoL3uVg — build Julie Deru's channel Quick Card like the merged AbbeCAdventures original; continue canonical media #1603, no duplicate issue.
@@ -123,3 +138,8 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Status:** source-implemented and revision in progress; estimated mixed-feed acceptance 4/7 milestones (source validation and data model, working browser/Worker code authored, registration, tests authored) with 3 major gates pending (latest CI/browser passing, reviewed protected merge, production/Android readback). One current documented mixed-feed session; sessions remaining unknown; lease ID null (no signed Moltnook claim).
 - **Blockers:** YouTube's official RSS only covers recent uploads, not complete 850+ GANA history or actual view counts; client-side handle -> channel-ID resolution is not verified. Avoid promising full archive or fake live view metrics. No paid YouTube API key purchased.
 - **Next action:** inspect latest PR #2045 exact-head CI, fix any Node/browser failures on this same issue/branch, then permitted merge after review and live site + Android verification; do not close canonical #1603.
+
+
+## Reconciliation note · 2026-11-21
+
+- Merged the newer `main` Milk Mamas Nest work into the existing Julie/GANA/Abbe mixed creator PR branch using an exact-base two-parent merge tree. Preserved both media catalogs, source/test contracts, CI workflows and session checkpoints. Must run full exact-head CI again; prior 25/25 belonged to the pre-reconciliation commit and is not a merge/deployment receipt.

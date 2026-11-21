@@ -9,6 +9,7 @@ import {JULIE_DERU_SOURCES} from '../julie-deru-catalog.mjs';
 import {CREATOR_MIX_SOURCE} from '../youtube-creator-mixed-core.mjs';
 import {REVIEWED_OWNER_VIDEO_CARDS} from '../youtube-owner-video-links.mjs';
 import {FAMILY_TV_SOURCE} from '../family-parenting-tv-core.mjs';
+import {MILK_MAMAS_SOURCE} from '../milk-mamas-catalog.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'utf8');
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
@@ -128,9 +129,10 @@ test('functional source cards enter Public while link-only integrations remain s
   ...JULIE_DERU_SOURCES.map(c=>c.id),
   CREATOR_MIX_SOURCE.id,
   ...REVIEWED_OWNER_VIDEO_CARDS.map(c=>c.id),
-  FAMILY_TV_SOURCE.id
+  FAMILY_TV_SOURCE.id,
+  MILK_MAMAS_SOURCE.id
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,27+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+JULIE_DERU_SOURCES.length+REVIEWED_OWNER_VIDEO_CARDS.length);
+ assert.equal(PUBLIC_SOURCE_IDS.length,28+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+JULIE_DERU_SOURCES.length+REVIEWED_OWNER_VIDEO_CARDS.length);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/ACTIVE_SOURCE_CARDS\.filter\(isPublicSourceCard\)/);
