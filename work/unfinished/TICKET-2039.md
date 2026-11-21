@@ -1,3 +1,22 @@
+---
+issue: 2039
+state: scoped
+dot: "🔴"
+progress_percent: 0
+progress_basis: "0 of new implementation acceptance checks verified; documentation only"
+sessions_spent: 0
+sessions_remaining_estimate: unknown
+agent: null
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+next_action: "Inspect token ledgers and implement simulation-only single-use redemption tests."
+merged: false
+deployed: false
+live_verified: false
+---
+
 # TICKET-2039: Infinity travel entitlement simulation
 
 - **GitHub issue:** https://github.com/www-infinity4/QuantaPhi/issues/2039
