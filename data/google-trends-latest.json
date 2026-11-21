@@ -3,12 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T06:35:31.973185Z",
+  "checked_at": "2026-11-21T07:01:22.587866Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "gta online",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T06:40:00Z",
+      "related_news_urls": [
+        "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
+        "https://insider-gaming.com/gta-6-online-multiplayer-release/",
+        "https://demokratis.co.id/en/gta-6-online-2027-release"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY",
+      "image_credit": "PCMag",
+      "news": [
+        {
+          "url": "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
+          "title": "GTA 6 Is Finally Here...So When Can You Play Online With Friends?",
+          "publisher": "PCMag",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY"
+        },
+        {
+          "url": "https://insider-gaming.com/gta-6-online-multiplayer-release/",
+          "title": "Where is GTA 6 Online Multiplayer? GTA Online 2 Release Window",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLCQvP0awzrdwWwfKJayKz5rcXt9B0hOeXI4R08_yDwpFncUNC6p158Nff8E0"
+        },
+        {
+          "url": "https://demokratis.co.id/en/gta-6-online-2027-release",
+          "title": "Rockstar Targets 2027 for GTA 6 Online Multiplayer Release",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_wrienaqdvQFOpwZoOca7UGdMh4o5akT-9cIrsBbaicXITz5Bo6pPDQuMO8"
+        }
+      ]
+    },
+    {
+      "query": "owen wilson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T06:30:00Z",
+      "related_news_urls": [
+        "https://www.fox6now.com/video/fmc-qqit8y02m0llxri4",
+        "https://www.bgr.com/2319273/owen-wilson-golf-comedy-stick-apple-tv-season-2/",
+        "https://readysteadycut.com/2026/11/18/stick-season-2-episode-4-recap/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCu553P96oQXBB0_zGQWtPx-b0d6eFyakgt5vKW_vk6LamGjKvFlTmztRm4y8",
+      "image_credit": "FOX6 News Milwaukee",
+      "news": [
+        {
+          "url": "https://www.fox6now.com/video/fmc-qqit8y02m0llxri4",
+          "title": "'Stick' Season 2; Gino at the Movies",
+          "publisher": "FOX6 News Milwaukee",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCu553P96oQXBB0_zGQWtPx-b0d6eFyakgt5vKW_vk6LamGjKvFlTmztRm4y8"
+        },
+        {
+          "url": "https://www.bgr.com/2319273/owen-wilson-golf-comedy-stick-apple-tv-season-2/",
+          "title": "Owen Wilson's Golf Comedy On Apple TV Swings Big In Season 2 And Wins It All",
+          "publisher": "BGR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpMBRLvvMtN20l8LxJUjVSIeVCeHNeyQVzNnc6NS4SzRDDOU6lmjDgSf9WJB4"
+        },
+        {
+          "url": "https://readysteadycut.com/2026/11/18/stick-season-2-episode-4-recap/",
+          "title": "‘Stick’ Season 2, Episode 4 Recap – The Arcade Solves Everything",
+          "publisher": "Ready Steady Cut",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3Oeilwmtius9p-2c4DiKvGjIcPCP2XTgJ3bmy82FkF5YxOZqdY7xvIRb6Eg"
+        }
+      ]
+    },
+    {
+      "query": "cal gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T06:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cmqj5dr01e85o",
+        "https://www.bloomberg.com/news/articles/2026-11-19/gamestop-ceo-criticizes-digital-game-releases-on-gta-vi-eve",
+        "https://www.kctv5.com/2026/11/20/kansas-city-gaming-community-weighs-grand-theft-auto-vi-digital-only-release/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjRaXBCikK7i9UCpt0-OorQHJerXOdPJGc5MpTgD2BumnOlTYPsq1peqkzD1Y",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cmqj5dr01e85o",
+          "title": "I've only sold five copies of GTA 6, says shop owner",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjRaXBCikK7i9UCpt0-OorQHJerXOdPJGc5MpTgD2BumnOlTYPsq1peqkzD1Y"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-19/gamestop-ceo-criticizes-digital-game-releases-on-gta-vi-eve",
+          "title": "GameStop CEO Criticizes Digital Game Releases on ‘GTA VI’ Eve",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwoYDIne8iF-Lhm-zMl5t6gDVCbHxo63gmxYNXvFk9YYZhf-PguKI86mKO-m8"
+        },
+        {
+          "url": "https://www.kctv5.com/2026/11/20/kansas-city-gaming-community-weighs-grand-theft-auto-vi-digital-only-release/",
+          "title": "Kansas City gaming community weighs in on ‘Grand Theft Auto VI’ digital-only release",
+          "publisher": "KCTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZhOsZsgIhO2Yh3XHxfFje8G0aEwAZznlVjsJaJCW9RLjTkLoSXmOcBC0sF4M"
+        }
+      ]
+    },
+    {
       "query": "amir albazi",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-21T06:20:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/amir-albazi-vs-alessandro-costa-224939377.html",
@@ -77,41 +182,6 @@
       ]
     },
     {
-      "query": "byu vs kansas prediction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T06:00:00Z",
-      "related_news_urls": [
-        "https://www.deseret.com/sports/2026/11/20/byu-cougars-kansas-jayhawks-upset-lawrence-favored-martin-bachmeier-marshall/",
-        "https://www2.kusports.com/sports/college/football/2026/nov/20/preview-ku-faces-difficult-test-with-no-10-byu-on-senior-day/",
-        "https://www.ksl.com/article/51647199/pick-six-previews-byus-defense-to-hold-kansas-en-route-to-road-win"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVrpITkTbDPs9c1pt57ptwfnbhfC9iuFuI1_vv60y4kA7ku6HHgrMQ0jLSm_E",
-      "image_credit": "Deseret News",
-      "news": [
-        {
-          "url": "https://www.deseret.com/sports/2026/11/20/byu-cougars-kansas-jayhawks-upset-lawrence-favored-martin-bachmeier-marshall/",
-          "title": "No. 10 BYU on upset alert, again, at Kansas on Saturday",
-          "publisher": "Deseret News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVrpITkTbDPs9c1pt57ptwfnbhfC9iuFuI1_vv60y4kA7ku6HHgrMQ0jLSm_E"
-        },
-        {
-          "url": "https://www2.kusports.com/sports/college/football/2026/nov/20/preview-ku-faces-difficult-test-with-no-10-byu-on-senior-day/",
-          "title": "Preview: KU faces difficult test with No. 10 BYU on senior day",
-          "publisher": "KU Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlEIHB7C45uZrHrieGbzhp_Fmmv6VSiAi8FhPCSXiHX-terTdWrLNH3cymzYk"
-        },
-        {
-          "url": "https://www.ksl.com/article/51647199/pick-six-previews-byus-defense-to-hold-kansas-en-route-to-road-win",
-          "title": "Pick Six Previews: BYU's defense to hold Kansas en route to road win",
-          "publisher": "KSL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUzMw9GrilElKswqZH6vUWbzcxMQB15-nZUnd1GZ1Gp49kji0D34KWVSxwaoY"
-        }
-      ]
-    },
-    {
       "query": "aljamain sterling",
       "approx_searches": "200+",
       "published_at": "2026-11-21T06:00:00Z",
@@ -143,6 +213,41 @@
           "publisher": "UFC.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtoVmzF_Z1Q7J04S9CCs3nn0WY0nhNUsCN94SmqAMej9-gE44rchlQPzeh-6g"
+        }
+      ]
+    },
+    {
+      "query": "byu vs kansas prediction",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T06:00:00Z",
+      "related_news_urls": [
+        "https://www.deseret.com/sports/2026/11/20/byu-cougars-kansas-jayhawks-upset-lawrence-favored-martin-bachmeier-marshall/",
+        "https://www2.kusports.com/sports/college/football/2026/nov/20/preview-ku-faces-difficult-test-with-no-10-byu-on-senior-day/",
+        "https://www.ksl.com/article/51647199/pick-six-previews-byus-defense-to-hold-kansas-en-route-to-road-win"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVrpITkTbDPs9c1pt57ptwfnbhfC9iuFuI1_vv60y4kA7ku6HHgrMQ0jLSm_E",
+      "image_credit": "Deseret News",
+      "news": [
+        {
+          "url": "https://www.deseret.com/sports/2026/11/20/byu-cougars-kansas-jayhawks-upset-lawrence-favored-martin-bachmeier-marshall/",
+          "title": "No. 10 BYU on upset alert, again, at Kansas on Saturday",
+          "publisher": "Deseret News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVrpITkTbDPs9c1pt57ptwfnbhfC9iuFuI1_vv60y4kA7ku6HHgrMQ0jLSm_E"
+        },
+        {
+          "url": "https://www2.kusports.com/sports/college/football/2026/nov/20/preview-ku-faces-difficult-test-with-no-10-byu-on-senior-day/",
+          "title": "Preview: KU faces difficult test with No. 10 BYU on senior day",
+          "publisher": "KU Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlEIHB7C45uZrHrieGbzhp_Fmmv6VSiAi8FhPCSXiHX-terTdWrLNH3cymzYk"
+        },
+        {
+          "url": "https://www.ksl.com/article/51647199/pick-six-previews-byus-defense-to-hold-kansas-en-route-to-road-win",
+          "title": "Pick Six Previews: BYU's defense to hold Kansas en route to road win",
+          "publisher": "KSL",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUzMw9GrilElKswqZH6vUWbzcxMQB15-nZUnd1GZ1Gp49kji0D34KWVSxwaoY"
         }
       ]
     },
@@ -183,7 +288,7 @@
     },
     {
       "query": "general hospital",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-21T05:40:00Z",
       "related_news_urls": [
         "https://www.yahoo.com/entertainment/tv/articles/why-sonny-may-not-behind-191555543.html",
@@ -248,111 +353,6 @@
           "publisher": "bsinews.id",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuoHgOSQ4qzfM-pYoN8icyK2fv5wR_cINdldibuSfqnw7D_meKefCMe_bnSmo"
-        }
-      ]
-    },
-    {
-      "query": "aaron gordon",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T05:30:00Z",
-      "related_news_urls": [
-        "https://www.denverpost.com/2026/11/19/nuggets-celtics-defense-gordon-jokic/",
-        "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-scores-games-live-updates-2026/CzqWv0txVItd/eYWBwYv00OpM/",
-        "https://demokratis.co.id/en/aaron-gordon-shooting-slump"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSskfpQlIBFhJURV6OTRHYa-rQdFHn_f8yG4r8R6oqntSYBTaSfQ606lW-VdZQ",
-      "image_credit": "The Denver Post",
-      "news": [
-        {
-          "url": "https://www.denverpost.com/2026/11/19/nuggets-celtics-defense-gordon-jokic/",
-          "title": "Renck: Nuggets can’t win like Broncos with their defense. Aaron Gordon needs to start scoring.",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSskfpQlIBFhJURV6OTRHYa-rQdFHn_f8yG4r8R6oqntSYBTaSfQ606lW-VdZQ"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-scores-games-live-updates-2026/CzqWv0txVItd/eYWBwYv00OpM/",
-          "title": "What's wrong with Aaron Gordon?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgWXMishh5wHTHYBVrWqVpRDpVbh0XXboWoXol-tFXZVJrKusJ-eZRexFCJdc"
-        },
-        {
-          "url": "https://demokratis.co.id/en/aaron-gordon-shooting-slump",
-          "title": "Aaron Gordon's Shooting Slump Challenges Denver Nuggets",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHu7lEx6kV3264iteXfVhUwUpTGhoyCwXsAJ19pyXx-820wp1JvQxEDqskUzg"
-        }
-      ]
-    },
-    {
-      "query": "ikram aliskerov",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T05:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/jared-cannonier-vs-ikram-aliskerov-040018066.html",
-        "https://www.yardbarker.com/mma/articles/from_heavyweight_to_42_year_old_middleweight_gatekeeper_the_evolution_of_jared_cannoniers_ufc_run/s1_17615_44587207",
-        "https://www.sportsnet.ca/ufc/video/why-cannonier-is-a-dog-you-should-play-for-ufc-fight-night-in-qatar/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS97fDfWN-dUs9IP1R189b_kKJ90PB7QYxHJM1hEFCFT3MpQn_ihN8ilpanOuE",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/jared-cannonier-vs-ikram-aliskerov-040018066.html",
-          "title": "Jared Cannonier vs. Ikram Aliskerov prediction, pick, start time, odds for UFC Qatar",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS97fDfWN-dUs9IP1R189b_kKJ90PB7QYxHJM1hEFCFT3MpQn_ihN8ilpanOuE"
-        },
-        {
-          "url": "https://www.yardbarker.com/mma/articles/from_heavyweight_to_42_year_old_middleweight_gatekeeper_the_evolution_of_jared_cannoniers_ufc_run/s1_17615_44587207",
-          "title": "From Heavyweight to 42-Year-Old Middleweight Gatekeeper: The Evolution of Jared Cannonier’s UFC Run",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREtwvPJ7nmgZY0XAqqzw4wZWqw0mby3n12EV1uw38n7vHM3emMNrzJg4aFzSE"
-        },
-        {
-          "url": "https://www.sportsnet.ca/ufc/video/why-cannonier-is-a-dog-you-should-play-for-ufc-fight-night-in-qatar/",
-          "title": "Why Cannonier is a dog you should play for UFC Fight Night in Qatar",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQe2tPoSIvXWiTtfuQ_5BR2WoVMrTgJcH9egh0jIiaXOgKyd_4TkIya5MtBFT4"
-        }
-      ]
-    },
-    {
-      "query": "asu almabayev",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T05:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/kyoji-horiguchi-vs-asu-almabayev-030019146.html",
-        "https://cagesidepress.com/2026/11/19/ufc-qatar-kyoji-horiguchi-van-kape/",
-        "https://sportsbook.fanduel.com/mma/ufc-matches/kyoji-horiguchi-v-asu-almabayev-36320374"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS97fDfWN-dUs9IP1R189b_kKJ90PB7QYxHJM1hEFCFT3MpQn_ihN8ilpanOuE",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/kyoji-horiguchi-vs-asu-almabayev-030019146.html",
-          "title": "Kyoji Horiguchi vs. Asu Almabayev prediction, pick, start time, odds for UFC Qatar",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS97fDfWN-dUs9IP1R189b_kKJ90PB7QYxHJM1hEFCFT3MpQn_ihN8ilpanOuE"
-        },
-        {
-          "url": "https://cagesidepress.com/2026/11/19/ufc-qatar-kyoji-horiguchi-van-kape/",
-          "title": "UFC Qatar: Kyoji Horiguchi Doesn’t Care Who Wins Van-Kape, Will Be There",
-          "publisher": "Cageside Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2ZtRheEQuIh27XEG1f4vsr3GccIFo1KKf6RI-zFBiYwZTpB2PxOzX5UtMO14"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/mma/ufc-matches/kyoji-horiguchi-v-asu-almabayev-36320374",
-          "title": "Kyoji Horiguchi v Asu Almabayev Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT12iNKzM2lJ1oZq60vvqRx9Xxg383NKe2D9fOUReKNSTg_l0hVmr_0Cogy-k"
         }
       ]
     }
