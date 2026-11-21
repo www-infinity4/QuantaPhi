@@ -11,6 +11,7 @@ import {mountMotorcycleQuickCard} from './motorcycle-quick-cards.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
 import {mountCreatorPostCard} from './creator-post-cards.mjs';
 import {mountYouTubeCreatorCard} from './youtube-creator-cards.mjs';
+import {mountDestinyBarbaChannelCard} from './destiny-barba-channel-card.mjs';
 import {mountFamilyParentingTvCard} from './family-parenting-tv-card.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
@@ -431,6 +432,9 @@ export function mountCardTools(root,card){
   mountCardActions(root,card,{showSearch:false});return;
  }
  if(mountYouTubeCreatorCard(root,card)){
+  mountCardActions(root,card,{showSearch:false});return;
+ }
+ if(mountDestinyBarbaChannelCard(root,card)){
   mountCardActions(root,card,{showSearch:false});return;
  }
  if(mountCreatorPostCard(root,card)){
