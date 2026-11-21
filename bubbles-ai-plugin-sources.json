@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 1,
+  "provenance": "Public, unmerged QuantaPhi PR #1285 directory metadata, 2026-10-31. Informational registrations only; not connected ChatGPT or Bubbles accounts.",
+  "sources": [
+    {
+      "id": "plugin-codex-security",
+      "name": "Codex Security",
+      "category": "Security",
+      "feature": "Review repository security findings",
+      "official": "https://openai.com/business/plugins/codex-security/",
+      "mode": "plugin",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-malwarebytes",
+      "name": "Malwarebytes",
+      "category": "Security",
+      "feature": "Check cybersecurity and threat information",
+      "official": "https://www.malwarebytes.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-privacyhawk",
+      "name": "PrivacyHawk",
+      "category": "Security",
+      "feature": "Explore personal-data protection",
+      "official": "https://www.privacyhawk.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-ajaxx-data-scrubber",
+      "name": "AJAXX Data Scrubber",
+      "category": "Security",
+      "feature": "Understand privacy scans and removal options",
+      "official": "https://www.ajaxxdatascrubber.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-linkedin",
+      "name": "LinkedIn",
+      "category": "Other",
+      "feature": "Discover professionals and opportunities",
+      "official": "https://www.linkedin.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-etsy",
+      "name": "Etsy",
+      "category": "Other",
+      "feature": "Search shops and handmade goods",
+      "official": "https://www.etsy.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-kleinanzeigen",
+      "name": "Kleinanzeigen",
+      "category": "Other",
+      "feature": "Find local listings on the original marketplace",
+      "official": "https://www.kleinanzeigen.de/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-posthog",
+      "name": "PostHog",
+      "category": "Data & Analytics",
+      "feature": "Explore product analytics and feature tools",
+      "official": "https://posthog.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-blockscout",
+      "name": "Blockscout Blockchain Data",
+      "category": "Data & Analytics",
+      "feature": "Inspect public blockchain explorer data",
+      "official": "https://www.blockscout.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-gsc-wizard",
+      "name": "GSC Wizard - SEO analysis",
+      "category": "Data & Analytics",
+      "feature": "Explore Search Console and SEO analysis through the plugin",
+      "official": "https://chatgpt.com/plugins",
+      "mode": "directory",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-data",
+      "name": "Data",
+      "category": "Data & Analytics",
+      "feature": "Explore data analysis through the ChatGPT plugin",
+      "official": "https://chatgpt.com/plugins",
+      "mode": "directory",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-undermind",
+      "name": "Undermind",
+      "category": "Scientific Research",
+      "feature": "Search scientific papers and citations",
+      "official": "https://www.undermind.ai/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-life-sciences-literature",
+      "name": "Life Sciences Literature",
+      "category": "Scientific Research",
+      "feature": "Find published biomedical literature and preprints",
+      "official": "https://openai.com/business/plugins/life-sciences-literature/",
+      "mode": "plugin",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-ngs-analysis-workbench",
+      "name": "NGS Analysis Workbench",
+      "category": "Scientific Research",
+      "feature": "Plan sequencing analysis with real datasets",
+      "official": "https://openai.com/business/plugins/ngs-analysis-workbench/",
+      "mode": "plugin",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-molecular-structure-viewer",
+      "name": "Molecular Structure Viewer",
+      "category": "Scientific Research",
+      "feature": "Explore molecule visualization with approved sources",
+      "official": "https://chatgpt.com/plugins",
+      "mode": "directory",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-consensus",
+      "name": "Consensus",
+      "category": "Education",
+      "feature": "Search peer-reviewed scientific research",
+      "official": "https://consensus.app/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-scispace",
+      "name": "SciSpace",
+      "category": "Education",
+      "feature": "Explore research papers and explanations",
+      "official": "https://scispace.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-zotero",
+      "name": "Zotero",
+      "category": "Education",
+      "feature": "Organize references and citations",
+      "official": "https://www.zotero.org/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-sider-scholar",
+      "name": "Sider Scholar",
+      "category": "Education",
+      "feature": "Search and understand academic publications",
+      "official": "https://sider.ai/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-shopify",
+      "name": "Shopify",
+      "category": "Business & Operations",
+      "feature": "Build and manage a storefront",
+      "official": "https://www.shopify.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-sales",
+      "name": "Sales",
+      "category": "Business & Operations",
+      "feature": "Explore sales workflows in the plugin directory",
+      "official": "https://chatgpt.com/plugins",
+      "mode": "directory",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-vidiq",
+      "name": "vidIQ",
+      "category": "Business & Operations",
+      "feature": "Research video growth tools",
+      "official": "https://vidiq.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-hubspot",
+      "name": "HubSpot",
+      "category": "Business & Operations",
+      "feature": "Explore CRM and customer workflows",
+      "official": "https://www.hubspot.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-daily-tarot",
+      "name": "Daily Tarot",
+      "category": "Entertainment",
+      "feature": "Find a daily tarot reading plugin",
+      "official": "https://chatgpt.com/plugins",
+      "mode": "directory",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-flaim-fantasy",
+      "name": "Flaim Fantasy",
+      "category": "Entertainment",
+      "feature": "Review fantasy league information",
+      "official": "https://flaim.app/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-spotify",
+      "name": "Spotify",
+      "category": "Entertainment",
+      "feature": "Discover music and podcasts",
+      "official": "https://open.spotify.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-steer-astro",
+      "name": "Steer Astro",
+      "category": "Entertainment",
+      "feature": "Explore Vedic astrology and charts",
+      "official": "https://steer.coach/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-public-equity-investing",
+      "name": "Public Equity Investing",
+      "category": "Finance",
+      "feature": "Explore stock research and scenarios",
+      "official": "https://openai.com/business/plugins/public-equity-investing/",
+      "mode": "plugin",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-binance",
+      "name": "Binance",
+      "category": "Finance",
+      "feature": "Research public crypto market information",
+      "official": "https://www.binance.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-finances",
+      "name": "Finances",
+      "category": "Finance",
+      "feature": "Explore the personal finance connector",
+      "official": "https://chatgpt.com/plugins",
+      "mode": "directory",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-interactive-brokers",
+      "name": "Interactive Brokers (IBKR)",
+      "category": "Finance",
+      "feature": "Research global market access and tools",
+      "official": "https://www.interactivebrokers.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-booking-com",
+      "name": "Booking.com",
+      "category": "Travel",
+      "feature": "Search lodging and stays",
+      "official": "https://www.booking.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-skyscanner",
+      "name": "Skyscanner",
+      "category": "Travel",
+      "feature": "Compare flights and travel options",
+      "official": "https://www.skyscanner.net/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-expedia",
+      "name": "Expedia",
+      "category": "Travel",
+      "feature": "Find hotels, flights and trips",
+      "official": "https://www.expedia.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-trip-com",
+      "name": "Trip.com",
+      "category": "Travel",
+      "feature": "Plan flights and hotel stays",
+      "official": "https://www.trip.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-fitness-ai-connector",
+      "name": "Fitness AI Connector",
+      "category": "Healthcare",
+      "feature": "Explore a Garmin health-data connector",
+      "official": "https://chatgpt.com/plugins/plugin_asdk_app_69beacb8780c81919104bb111b56346b",
+      "mode": "plugin",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-coros",
+      "name": "COROS",
+      "category": "Healthcare",
+      "feature": "Explore training and wearable data tools",
+      "official": "https://coros.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-tredict",
+      "name": "Tredict",
+      "category": "Healthcare",
+      "feature": "Review endurance training planning tools",
+      "official": "https://www.tredict.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-freddy",
+      "name": "freddy",
+      "category": "Healthcare",
+      "feature": "Understand health-data integration options",
+      "official": "https://freddy.coach/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-figma",
+      "name": "Figma",
+      "category": "Creativity",
+      "feature": "Design, prototype and hand off interfaces",
+      "official": "https://www.figma.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-remote-desktop-commander",
+      "name": "Remote Desktop Commander",
+      "category": "Developer Tools",
+      "feature": "Connect a computer through approved remote controls",
+      "official": "https://desktopcommander.app/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-vercel",
+      "name": "Vercel",
+      "category": "Developer Tools",
+      "feature": "Review deployments and hosted applications",
+      "official": "https://vercel.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-lovable",
+      "name": "Lovable",
+      "category": "Developer Tools",
+      "feature": "Prototype full-stack web applications",
+      "official": "https://lovable.dev/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-tinyfish",
+      "name": "TinyFish",
+      "category": "Developer Tools",
+      "feature": "Explore authorized website automation",
+      "official": "https://www.tinyfish.ai/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-slack",
+      "name": "Slack",
+      "category": "Communication",
+      "feature": "Review workspace collaboration tools",
+      "official": "https://slack.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-teams",
+      "name": "Teams",
+      "category": "Communication",
+      "feature": "Explore Microsoft Teams collaboration",
+      "official": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-hostinger-mail",
+      "name": "Hostinger Mail",
+      "category": "Communication",
+      "feature": "Find email hosting and account tools",
+      "official": "https://www.hostinger.com/email-hosting",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-zoom",
+      "name": "Zoom",
+      "category": "Communication",
+      "feature": "Explore meetings and communications",
+      "official": "https://zoom.us/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-canva",
+      "name": "Canva",
+      "category": "Creativity",
+      "feature": "Design branded graphics and presentations",
+      "official": "https://www.canva.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-higgsfield",
+      "name": "Higgsfield",
+      "category": "Creativity",
+      "feature": "Explore AI image and video creation",
+      "official": "https://higgsfield.ai/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-product-design",
+      "name": "Product Design",
+      "category": "Creativity",
+      "feature": "Plan product prototypes and UX concepts",
+      "official": "https://openai.com/business/plugins/product-design/",
+      "mode": "plugin",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-stripe",
+      "name": "Stripe",
+      "category": "Business & Operations",
+      "feature": "Explore payments and commerce infrastructure",
+      "official": "https://stripe.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-notion",
+      "name": "Notion",
+      "category": "Productivity",
+      "feature": "Plan documents and databases",
+      "official": "https://www.notion.so/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-writing-style",
+      "name": "Writing Style",
+      "category": "Productivity",
+      "feature": "Find the Writing Style plugin",
+      "official": "https://chatgpt.com/plugins",
+      "mode": "directory",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-google-calendar",
+      "name": "Google Calendar",
+      "category": "Productivity",
+      "feature": "Plan and review calendars",
+      "official": "https://calendar.google.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    },
+    {
+      "id": "plugin-dropbox",
+      "name": "Dropbox",
+      "category": "Productivity",
+      "feature": "Organize files and collaboration",
+      "official": "https://www.dropbox.com/",
+      "mode": "site",
+      "sourceRef": "https://github.com/www-infinity4/QuantaPhi/pull/1285"
+    }
+  ]
+}

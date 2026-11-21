@@ -39,6 +39,10 @@ on:
       - 'workers/infinity-brain-clock/worker.js'
       - 'bubbles-unified.css'
       - 'bubbles.html'
+      - 'bubbles-ai-specialists.mjs'
+      - 'bubbles-ai-specialists.css'
+      - 'bubbles-ai-plugin-sources.json'
+      - 'test/bubbles-ai-specialists.test.mjs'
       - 'index.html'
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-unified.test.mjs'
@@ -88,6 +92,10 @@ on:
       - 'workers/infinity-brain-clock/worker.js'
       - 'bubbles-unified.css'
       - 'bubbles.html'
+      - 'bubbles-ai-specialists.mjs'
+      - 'bubbles-ai-specialists.css'
+      - 'bubbles-ai-plugin-sources.json'
+      - 'test/bubbles-ai-specialists.test.mjs'
       - 'index.html'
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-unified.test.mjs'
@@ -117,6 +125,8 @@ jobs:
         with:
           node-version: '22'
       - run: node --check bubbles-ai.js
+      - name: Verify 128 named AI profiles and safe composer handoff
+        run: node --check bubbles-ai-specialists.mjs && node --test test/bubbles-ai-specialists.test.mjs
       - run: node --check bubbles-dispatch-catalog.mjs
       - run: node --test test/bubbles-dispatch-catalog.test.mjs test/bubbles-work-evidence.test.mjs test/bubbles-image-conversation.test.mjs
       - run: node --check bubbles-cloud-wallet.js
