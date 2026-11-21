@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuantaPhi · Experimental Viewport Ports</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#eff6ff;background:#0c1627;line-height:1.5;letter-spacing:.015em}
+*{box-sizing:border-box}body{margin:0;padding:clamp(16px,3vw,28px)}main{max-width:1050px;margin:auto}
+h1{font-size:clamp(1.7rem,5vw,2.6rem);margin:.3em 0}.note{color:#c4d8eb}
+fieldset{border:1px solid #5f80a7;border-radius:16px;background:#192b43;padding:20px;margin:20px 0}legend{font-weight:700}
+label{display:block;margin-bottom:10px}input{width:100%;min-height:48px;accent-color:#85c7ff}
+.ports{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,255px),1fr));gap:18px}
+.port{border:1px solid #58799e;background:#172940;border-radius:19px;padding:16px;min-height:300px}
+.port h2{font-size:1.25rem;margin:0 0 10px}.round{width:185px;height:185px;margin:12px auto;border-radius:50%;clip-path:circle(50% at 50%);display:grid;place-items:center;text-align:center;font-size:2.8rem;font-weight:bold;background:radial-gradient(circle at 30% 25%,#8addf0,#173b82 70%)}
+.round small{display:block;font-size:.75rem}.pair{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:45px}
+.pair canvas{display:block;width:100%;aspect-ratio:1.38;border-radius:9px;border:1px solid #8db1d7}
+.cluster{height:185px;display:flex;align-items:center;justify-content:center}.cluster span{width:108px;height:108px;border-radius:50%;border:3px solid #a4d5df;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%,#8de0c2,#234c86);font-weight:700}
+.cluster span:first-child{transform:translateX(22px) scale(.76)}.cluster span:last-child{transform:translateX(-22px) scale(.76)}.cluster span:nth-child(2){z-index:1}
+small,.caption{color:#d1dfef}footer{margin-top:22px}a{color:#b9dfff}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body><main>
+<p class="note">QuantaPhi · Developer sandbox</p><h1>Experimental Viewport Ports</h1>
+<p>Synthetic data · local-only prototype. No live stock feeds, wallet data, cross-origin page embeds or WebSocket services.</p>
+<fieldset><legend>Shared synthetic reading</legend>
+<label for="reading">Simulation: <strong id="readingValue">50</strong> / 100</label>
+<input id="reading" type="range" min="0" max="100" value="50" step="1" aria-describedby="help">
+<p id="help" class="note">All three ports update instantly with no page reload.</p></fieldset>
+<div class="ports">
+<section class="port"><h2>Circular port</h2><div class="round" id="circle" role="img" aria-label="Circular simulated reading 50"><div><small>SIMULATION</small><span id="circleValue">50</span></div></div><p class="caption">Local CSS circle mask.</p></section>
+<section class="port"><h2>Double / mirror</h2><div class="pair"><canvas id="primary" width="180" height="130" role="img" aria-label="Synthetic source vector"></canvas><canvas id="reflection" width="180" height="130" role="img" aria-label="Mirrored synthetic vector"></canvas></div><p class="caption">A canvas reflection of generated vector data, not an iframe or DOM copy.</p></section>
+<section class="port"><h2>Concentric cluster</h2><div id="cluster" class="cluster" role="img" aria-label="Cluster reading 50"><span>PORT A</span><span id="clusterValue">50</span><span>PORT B</span></div><p class="caption">All three components share one local state.</p></section>
+</div><footer>No IBM affiliation is claimed. <a href="/">QuantaPhi home</a></footer>
+</main><script type="module">
+import {createPortState,updatePortReading,portViews} from './port-state.mjs';
+const byId=id=>document.getElementById(id); let state=createPortState(50);
+function paint(canvas,reading){
+  const ctx=canvas.getContext('2d');if(!ctx)return;
+  ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle='#08182d';ctx.fillRect(0,0,180,130);
+  for(let i=0;i<6;i++){const height=18+((reading*7+i*23)%92);ctx.fillStyle=i%2?'#79dbc0':'#8cb7fc';ctx.fillRect(16+i*25,112-height,14,height);}
+}
+function render(){
+  const [circle,mirror,cluster]=portViews(state);
+  byId('readingValue').textContent=String(state.reading);byId('circleValue').textContent=String(circle.reading);
+  byId('clusterValue').textContent=String(cluster.reading);
+  byId('circle').setAttribute('aria-label','Circular simulated reading '+circle.reading);
+  byId('cluster').setAttribute('aria-label','Cluster reading '+cluster.reading);
+  const primary=byId('primary'),reflection=byId('reflection');paint(primary,mirror.reading);
+  const ctx=reflection.getContext('2d');if(!ctx)return;ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,180,130);
+  ctx.save();ctx.translate(180,0);ctx.scale(-1,1);ctx.drawImage(primary,0,0);ctx.restore();
+}
+byId('reading').addEventListener('input',event=>{state=updatePortReading(state,event.target.value);render();});render();
+</script></body></html>
