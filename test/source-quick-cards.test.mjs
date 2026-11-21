@@ -128,7 +128,7 @@ test('functional source cards enter Public while link-only integrations remain s
   FAMILY_TV_SOURCE.id,
   MILK_MAMAS_SOURCE.id
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,27+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+REVIEWED_OWNER_VIDEO_CARDS.length);
+ assert.equal(PUBLIC_SOURCE_IDS.length,27+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+1+REVIEWED_OWNER_VIDEO_CARDS.length);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/ACTIVE_SOURCE_CARDS\.filter\(isPublicSourceCard\)/);
