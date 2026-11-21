@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {CREATOR_CHANNELS, parseCreatorInput, mixCreatorVideos, pageCreatorVideos, CREATOR_MIX_SOURCE} from '../youtube-creator-mixed-core.mjs';
+import {CREATOR_CHANNELS, parseCreatorInput, mixCreatorVideos, pageCreatorVideos, CREATOR_MIX_SOURCE, LANDING_AUTISM_SOURCE} from '../youtube-creator-mixed-core.mjs';
 import {parseCreatorUploads, creatorUploadsApi} from '../workers/quantaphi-site/creator-uploads.mjs';
 import {findSourceCard, isPublicSourceCard, validSourceCard} from '../source-quick-cards.mjs';
 import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
@@ -9,8 +9,8 @@ import {departmentFor} from '../quanta-context-placement.mjs';
 
 const video=(channelId,videoId,title)=>({channelId,videoId,title,sourceUrl:'https://www.youtube.com/watch?v='+videoId,publishedAt:null});
 
-test('Creator mix preserves three verified channel IDs and a separate owner-linked Samirah source',()=>{
- assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah']);
+test('Creator mix preserves known channel IDs and a separate owner-linked Samirah source',()=>{
+ assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','landing']);
  assert.equal(CREATOR_CHANNELS[0].channelId,'UC6ySmwN_K8fGGD2EKLQdEGA');
  assert.equal(CREATOR_CHANNELS[1].channelId,'UCFsg41h5GN7TAxFUK3Sl00w');
  assert.equal(CREATOR_CHANNELS[2].channelId,'UCt_P3xPrrnOkYT5UQQ4vUIg');
@@ -111,4 +111,31 @@ test('Samirah owner-linked seed appears in creator mix without claiming a verifi
  assert.ok(CREATOR_MIX_SOURCE.name.includes('Samirah'));
  const all=CREATOR_CHANNELS.flatMap(row=>row.seed.map(v=>({...v,channelId:row.key})));
  assert.equal(mixCreatorVideos(all,CREATOR_CHANNELS.map(row=>row.key)).filter(v=>v.videoId==='UPFgnpkm7MQ').length,1);
+});
+
+
+test('LANDing Autism publisher has a standalone Public/Media full-channel Quick Card with six original video links',()=>{
+ const channel=CREATOR_CHANNELS.find(row=>row.key==='landing');
+ assert.ok(channel);
+ assert.equal(channel.name,'LANDing Autism');
+ assert.equal(channel.channelId,'UCQU1zvNELO2AatGXMRQ2bSw');
+ assert.equal(channel.url,'https://www.youtube.com/@LANDingAutism');
+ assert.equal(channel.seed.length,6);
+ assert.deepEqual(channel.seed.map(v=>v.videoId),[
+  'QR_c5m1RLtk','ZXcfl1rNQP0','MuZXaYXfPXs','xDr8qOYR93M','rS_P180JLU8','4CjRqGBkjQY'
+ ]);
+ assert.ok(channel.seed.every(v=>v.sourceUrl==='https://www.youtube.com/watch?v='+v.videoId));
+ const card=findSourceCard('landing-autism-youtube');
+ assert.equal(card?.id,LANDING_AUTISM_SOURCE.id);
+ assert.equal(card?.initialCreatorChannel,'landing');
+ assert.equal(card?.youtubeMixedFeed,true);
+ assert.ok(isPublicSourceCard(card));
+ assert.ok(validSourceCard(card));
+ assert.equal(departmentFor(card),'media');
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ const ui=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.ok(ui.includes('card.initialCreatorChannel'));
+ assert.match(ui,/Full channel/);
+ assert.match(ui,/Load more videos/);
+ assert.ok(ui.includes('youtube-nocookie.com/embed'));
 });

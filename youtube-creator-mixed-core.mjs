@@ -24,6 +24,15 @@ export const CREATOR_CHANNELS=Object.freeze([
  Object.freeze({key:'samirah',name:'Samirah Ann · owner-linked video',channelId:null,
   url:'https://www.youtube.com/@SamirahAnn',seed:Object.freeze([
    seed('samirah','UPFgnpkm7MQ','BREASTFEEDING A TEETHING BABY | Clingy baby | Clean with me | Mum of four')
+  ])}),
+ Object.freeze({key:'landing',name:'LANDing Autism',channelId:'UCQU1zvNELO2AatGXMRQ2bSw',
+  url:'https://www.youtube.com/@LANDingAutism',seed:Object.freeze([
+   seed('UCQU1zvNELO2AatGXMRQ2bSw','QR_c5m1RLtk','Penelope Takes Her FIRST STEPS!!'),
+   seed('UCQU1zvNELO2AatGXMRQ2bSw','ZXcfl1rNQP0','WHY We Moved To Texas'),
+   seed('UCQU1zvNELO2AatGXMRQ2bSw','MuZXaYXfPXs','FURNISHED HOME TOUR | New House Reveal 2026'),
+   seed('UCQU1zvNELO2AatGXMRQ2bSw','xDr8qOYR93M','Answering Questions I Really Don\'t Want To'),
+   seed('UCQU1zvNELO2AatGXMRQ2bSw','rS_P180JLU8','Autism Life In Texas'),
+   seed('UCQU1zvNELO2AatGXMRQ2bSw','4CjRqGBkjQY','New House Grocery Haul 2026 | WALMART GROCERIES')
   ])})
 ]);
 const VIDEO_ID=/^[A-Za-z0-9_-]{11}$/;
@@ -78,11 +87,23 @@ export function pageCreatorVideos(videos,offset=0,limit=6){
  return videos.slice(start,start+count);
 }
 export const CREATOR_MIX_SOURCE=Object.freeze({
- id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · Creator Mix',
+ id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · LANDing Autism · Creator Mix',
  kind:'Video · YouTube',feature:'Mixed channel uploads and saved creator videos',
  featureUrl:'https://www.youtube.com/@ganatribe/videos',
  official:'https://www.youtube.com/@ganatribe',
  focus:'Watch official public YouTube uploads from selected channels, with one optional player, a paginated mixed feed and user-added channel/video links.',
  details:'Official YouTube RSS provides only the latest uploads for channels with a verified channel ID. Historical channel videos and Community posts remain at YouTube; no ads, view counts, payment rights or complete archive are claimed.',
  youtubeMixedFeed:true
+});
+
+/* Independent original-source Quick Card. RSS adds recent uploads; the
+ * published channel link is the only full historical YouTube archive. */
+export const LANDING_AUTISM_SOURCE=Object.freeze({
+ id:'landing-autism-youtube',name:'LANDing Autism · Full Channel',
+ kind:'Video · YouTube',feature:'Watch channel videos and browse recent uploads',
+ featureUrl:'https://www.youtube.com/@LANDingAutism/videos',
+ official:'https://www.youtube.com/@LANDingAutism',
+ focus:'Browse six source-identified public original videos, recent official YouTube RSS uploads and the publisher\'s complete public Videos tab. Playback starts only when tapped.',
+ details:'Source-identified public YouTube video links, checked 2026-11-21. This is a partial indexed selection with keyless recent-upload refresh, not a complete historical video download or licensed rehost; YouTube owns playback restrictions.',
+ youtubeMixedFeed:true,initialCreatorChannel:'landing'
 });
