@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T20:31:04.262859Z",
+  "checked_at": "2026-11-21T21:01:16.320710Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "northern il vs nd state",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T20:10:00Z",
+      "query": "osu game today",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T20:40:00Z",
       "related_news_urls": [
-        "https://www.inforum.com/sports/bison-media-zone/mens-sports/how-to-watch-ndsu-play-northern-illinois-on-saturday-nov-21",
-        "https://www.sportsgambler.com/betting-tips/ncaaf/northern-illinois-huskies-vs-north-dakota-state-bison-prediction-odds-2026-11-21/",
-        "https://sports.yahoo.com/articles/ndsu-next-game-against-weirdest-210444400.html"
+        "https://www.espn.com/college-football/story/_/id/50522496/ohio-state-club-football",
+        "https://www.elevenwarriors.com/forum/ohio-state-football/2026/11/165581/good-story-on-espn-about-the-ohio-state-club-football-team",
+        "https://www.dispatch.com/picture-gallery/sports/2026/11/17/ohio-state-club-football-practice-lincoln-tower-park/91582540007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvpGf-FUCw4H0Ur7WYJbubI4CqQIb5RlFDb9ONi3MIX0eoARwqWzAd0dAtW6Y",
-      "image_credit": "InForum",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlOKGDa_o8bnO60GDP1iwC3keCDRlG1sZVB-wXEzZ0zredyrVebqsyzuNQF4U",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.inforum.com/sports/bison-media-zone/mens-sports/how-to-watch-ndsu-play-northern-illinois-on-saturday-nov-21",
-          "title": "How to watch NDSU play Northern Illinois on Saturday, Nov. 21",
-          "publisher": "InForum",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvpGf-FUCw4H0Ur7WYJbubI4CqQIb5RlFDb9ONi3MIX0eoARwqWzAd0dAtW6Y"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/northern-illinois-huskies-vs-north-dakota-state-bison-prediction-odds-2026-11-21/",
-          "title": "Northern Illinois vs North Dakota State Prediction, Picks & Odds | 21 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ndsu-next-game-against-weirdest-210444400.html",
-          "title": "NDSU’s Next Game Is Against Weirdest Possible Mountain West Opponent",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVXNV7WF40-gpbWZWNiO1hYQf8JrKWF9c-k8_PJSDnBLmoaBbtfTj21fiGMc"
-        }
-      ]
-    },
-    {
-      "query": "georgia state vs marshall",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T20:10:00Z",
-      "related_news_urls": [
-        "https://www.fubo.tv/news/ncaaf/marshall-vs-georgia-state-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
-        "https://247sports.com/college/marshall/article/basketball-game-thread-north-carolina-293006752/",
-        "https://herdzone.com/news/2026/11/19/marshall-football-hosts-georgia-state-at-4-pm-on-saturday"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO_EUTTVe-jgc52JvSey0CuOUtR0kfhW4eU3VTAglTNato5lzzX5jn2J3kmbs",
-      "image_credit": "Fubo",
-      "news": [
-        {
-          "url": "https://www.fubo.tv/news/ncaaf/marshall-vs-georgia-state-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
-          "title": "Marshall vs Georgia State - Where to Watch, Stream Info, TV Channel, and Live Updates (November 21, 2026)",
-          "publisher": "Fubo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO_EUTTVe-jgc52JvSey0CuOUtR0kfhW4eU3VTAglTNato5lzzX5jn2J3kmbs"
-        },
-        {
-          "url": "https://247sports.com/college/marshall/article/basketball-game-thread-north-carolina-293006752/",
-          "title": "Basketball Game Thread: North Carolina",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMMbuZC2S43CVXTJNqUKTSvJ2HwZXSZIR7rSSDRvc9kTj5nNdzoFA8fI-Cu-c"
-        },
-        {
-          "url": "https://herdzone.com/news/2026/11/19/marshall-football-hosts-georgia-state-at-4-pm-on-saturday",
-          "title": "Marshall Football Hosts Georgia State At 4 p.m. On Saturday",
-          "publisher": "Marshall University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQczKpzjxCzXAx-IQf0VQDoR2Qsk6be5SAIW6DmDWAzbgnhmr8RW2WXXjZx11c"
-        }
-      ]
-    },
-    {
-      "query": "ga southern vs troy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T20:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/georgia-southern-vs-troy-prediction-105423959.html",
-        "https://www.griceconnect.com/sports/game-preview-eagles-look-to-continue-hot-streak-at-troy-13037983",
-        "https://troytrojans.com/news/2026/11/19/troy-football-hosts-georgia-southern-on-senior-day-at-the-vet"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSyPZ3aWNysGFdXkZ5OyWMPgG-4Zks-0KEiD7ItLGPy-lQSXnoA6LBxQudzE",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/georgia-southern-vs-troy-prediction-105423959.html",
-          "title": "Georgia Southern vs Troy Prediction, Pick, College Football Odds for Saturday, Nov. 21",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSyPZ3aWNysGFdXkZ5OyWMPgG-4Zks-0KEiD7ItLGPy-lQSXnoA6LBxQudzE"
-        },
-        {
-          "url": "https://www.griceconnect.com/sports/game-preview-eagles-look-to-continue-hot-streak-at-troy-13037983",
-          "title": "GAME PREVIEW | Eagles look to continue hot streak at Troy",
-          "publisher": "Grice Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpDRQzzdgi3E9AtwW1U2-7MmYgx-L-vttJxqnx2UHc6lOV3pbZToFUE--ceFc"
-        },
-        {
-          "url": "https://troytrojans.com/news/2026/11/19/troy-football-hosts-georgia-southern-on-senior-day-at-the-vet",
-          "title": "Troy Football Hosts Georgia Southern on Senior Day at The Vet",
-          "publisher": "Troy University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa-9E4JwIkHm67FFd_u2nB-DRqHLkAb5J6KyzY3_36HZpL52k1FfDAOfENjOI"
-        }
-      ]
-    },
-    {
-      "query": "south alabama vs southern miss",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T20:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/south-alabama-vs-southern-miss-105249027.html",
-        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-south-alabamas-game-at-southern-miss.html",
-        "https://www.si.com/college/southernmiss/recruiting-the-same-backyard-examining-the-battle-between-southern-miss-and-south-alabama"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLkHUwWyZCd1hA6NnAL9lrK2saL3Wxmx-LUA1VCEZaSknbibJOFR7otLEEUPQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/south-alabama-vs-southern-miss-105249027.html",
-          "title": "South Alabama vs Southern Miss Prediction, Pick, College Football Odds for Saturday, Nov. 21",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLkHUwWyZCd1hA6NnAL9lrK2saL3Wxmx-LUA1VCEZaSknbibJOFR7otLEEUPQ"
-        },
-        {
-          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-south-alabamas-game-at-southern-miss.html",
-          "title": "Scouting report: What you need to know for South Alabama’s game at Southern Miss",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZY4D9CH3mE7G02bmMM3yaeS1QXX3XyjvoeRWyTQ7udO_GD3W03eMRh3DEwA4"
-        },
-        {
-          "url": "https://www.si.com/college/southernmiss/recruiting-the-same-backyard-examining-the-battle-between-southern-miss-and-south-alabama",
-          "title": "Recruiting the Same Backyard: Examining the Battle Between Southern Miss and South Alabama",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4qL0_wuabHu5EsL28a5gG2OZ3x7sfjVO3X09NBO9maiLgwu5iF3apjjUoWHE"
-        }
-      ]
-    },
-    {
-      "query": "will muschamp",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T20:10:00Z",
-      "related_news_urls": [
-        "https://www.wholehogsports.com/news/2026/nov/18/arkansas-football-notebook-silverfield-matches-wits-with-his-ex-roommates-brother-will-muschamp/",
-        "https://www.on3.com/teams/texas-longhorns/news/how-whiteboard-links-texas-will-muschamp-arkansas-coach-ryan-silverfield/",
-        "https://www.si.com/college/texas/football/texas-already-working-behind-the-scenes-new-contract-for-will-muschamp"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr86XWXfcTbx-YaWrnooa-_5iQxXu1Uu6FQv15ZU83ybpK4oIvFzAYrX7cyKo",
-      "image_credit": "Whole Hog Sports",
-      "news": [
-        {
-          "url": "https://www.wholehogsports.com/news/2026/nov/18/arkansas-football-notebook-silverfield-matches-wits-with-his-ex-roommates-brother-will-muschamp/",
-          "title": "Arkansas football notebook: Ryan Silverfield and Will Muschamp share unlikely connection through former roommate",
-          "publisher": "Whole Hog Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr86XWXfcTbx-YaWrnooa-_5iQxXu1Uu6FQv15ZU83ybpK4oIvFzAYrX7cyKo"
-        },
-        {
-          "url": "https://www.on3.com/teams/texas-longhorns/news/how-whiteboard-links-texas-will-muschamp-arkansas-coach-ryan-silverfield/",
-          "title": "How a whiteboard (not that one) connects Texas' Will Muschamp to Arkansas' Ryan Silverfield",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWc-3AJAqGP31X4URBVottrt8WibRVKP15WXqYlPvLVCmmBRHUy5vKSHT04fQ"
-        },
-        {
-          "url": "https://www.si.com/college/texas/football/texas-already-working-behind-the-scenes-new-contract-for-will-muschamp",
-          "title": "Texas Already Working Behind the Scenes on New Contract for Will Muschamp",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIB3HaPpYm4yoX2hiNz3d4ZepvHBSq0q_mumDnC-jWRimYTHeDHqwZOjtb2kY"
-        }
-      ]
-    },
-    {
-      "query": "jesus de miguel",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T20:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/ckedq01zve04o",
-        "https://www.espn.com/soccer/story/_/id/50509388/gerard-pique-andorra-goalkeeper-jesus-owono-jesus-de-miguel",
-        "https://www.nytimes.com/athletic/7754047/2026/11/13/jesus-owono-sanction-jesus-de-miguel/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6MHq5vj-VJ4oIa1JhkKEbjzx2nPbM8DMLWWWvZwPzekjDV_xHNGsYT6mj9XQ",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/articles/ckedq01zve04o",
-          "title": "Owono undecided over future following De Miguel death",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6MHq5vj-VJ4oIa1JhkKEbjzx2nPbM8DMLWWWvZwPzekjDV_xHNGsYT6mj9XQ"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50509388/gerard-pique-andorra-goalkeeper-jesus-owono-jesus-de-miguel",
-          "title": "Piqué criticises 12-match ban for Owono after De Miguel death",
+          "url": "https://www.espn.com/college-football/story/_/id/50522496/ohio-state-club-football",
+          "title": "Ohio State's club team might be the Buckeyes' most dominant program",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZVw01alZiwXzZ1noHXxf9RhvtxmYamAlDWw5ZtUm9x9c5-iiMNSOd86r6CSg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlOKGDa_o8bnO60GDP1iwC3keCDRlG1sZVB-wXEzZ0zredyrVebqsyzuNQF4U"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7754047/2026/11/13/jesus-owono-sanction-jesus-de-miguel/",
-          "title": "Jesus Owono given 12-match ban for collision with Jesus de Miguel that led to striker’s death",
-          "publisher": "The New York Times",
+          "url": "https://www.elevenwarriors.com/forum/ohio-state-football/2026/11/165581/good-story-on-espn-about-the-ohio-state-club-football-team",
+          "title": "Good Story on ESPN About the Ohio State Club Football Team",
+          "publisher": "Eleven Warriors",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQENWI4tA25uhyTE0K1QcJc_OpSdsglYFseRbDM7TJQ2UHU3TO9vp40q4b_6D4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5M-ISFnaVjNI1KBmbp3r3IpMp-zNwSWkx6DL-WLF1BeWpzWLYIMJX1HPpPg4"
+        },
+        {
+          "url": "https://www.dispatch.com/picture-gallery/sports/2026/11/17/ohio-state-club-football-practice-lincoln-tower-park/91582540007/",
+          "title": "See the Ohio State Club Football team practice",
+          "publisher": "The Columbus Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9NZ3sPru3wM5IAOsAcrb05rZS8lm7qThpm34ia6EVeOueMAUIVsAxl3SilkU"
         }
       ]
     },
     {
-      "query": "alexander zverev",
+      "query": "ryan day",
       "approx_searches": "1000+",
-      "published_at": "2026-11-21T20:00:00Z",
+      "published_at": "2026-11-21T20:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
-        "https://www.atptour.com/en/video/highlights-zverev-tops-fils-to-stay-perfect-in-turin-nitto-atp-finals-2026",
-        "https://www.theguardian.com/sport/live/2026/nov/19/alexander-zverev-v-arthur-fils-atp-finals-group-stage-live"
+        "https://www.cleveland.com/osu/2026/11/ohio-state-ryan-day-spent-24-months-fumbling-away-momentum-and-recreating-doubt-stephen-means.html",
+        "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/14/ohio-state-football-fans-empty-seats-the-shoe-northwestern/92780520007/",
+        "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-national-champ-among-fans-writing-off-buckeyes-during-nebraska-game/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFWq9fXcVVfMvyjIOGeiao-eBcaiW-Sriu5w0P_oUUOJAqoyrHqrrHhms3hLg",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm7BwHPuPDN8iW0z7hd8qvu2vUbYIQoK9DNnQv8SvOYea2jttMiL4o-XGU2cw",
+      "image_credit": "Cleveland.com",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/tennis/articles/c64gne03ykjro",
-          "title": "ATP Finals: Alexander Zverev beats Arthur Fils to put Ben Shelton through to semi-finals",
-          "publisher": "BBC",
+          "url": "https://www.cleveland.com/osu/2026/11/ohio-state-ryan-day-spent-24-months-fumbling-away-momentum-and-recreating-doubt-stephen-means.html",
+          "title": "Ryan Day led Ohio State to a national title, then watched rivals use the Buckeyes' momentum against them (104 chars)",
+          "publisher": "Cleveland.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFWq9fXcVVfMvyjIOGeiao-eBcaiW-Sriu5w0P_oUUOJAqoyrHqrrHhms3hLg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm7BwHPuPDN8iW0z7hd8qvu2vUbYIQoK9DNnQv8SvOYea2jttMiL4o-XGU2cw"
         },
         {
-          "url": "https://www.atptour.com/en/video/highlights-zverev-tops-fils-to-stay-perfect-in-turin-nitto-atp-finals-2026",
-          "title": "Highlights: Zverev tops Fils to stay perfect in Turin Nitto ATP Finals 2026",
-          "publisher": "ATP Tour",
+          "url": "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/14/ohio-state-football-fans-empty-seats-the-shoe-northwestern/92780520007/",
+          "title": "Empty seats at The Shoe tell brutal story of Ohio State’s stunning fall",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8OAfo0cQpFPq3DfWBSPvi8uVxz7NIzMBT-y3D8IiRHU5jQnumV9msjjRinmc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOwo5Ayjck2sx1Nt60N6SG-uYzVjYpE2gR6wm-yciDF9-n43fI7_8I5LQPkfg"
         },
         {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/19/alexander-zverev-v-arthur-fils-atp-finals-group-stage-live",
-          "title": "Alexander Zverev beats Arthur Fils in ATP Finals tennis group stage – as it happened",
-          "publisher": "The Guardian",
+          "url": "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-national-champ-among-fans-writing-off-buckeyes-during-nebraska-game/",
+          "title": "Ohio State National Champ Among Fans Writing Off Buckeyes During Nebraska Game",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvyeZA9YOfDGaeB8ijXjo7N-rhmkuZxyi3gim7vHGe2b2Kje2uMPUYv7NdZbk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOjcVybNQhZFxzl7OAwkMuezCpYzLcjaTJS_wbwbbfJoyXEur8A9sCZdsjUNk"
         }
       ]
     },
     {
-      "query": "brayden burries",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T20:00:00Z",
+      "query": "joe biden",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T20:40:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/bucks-brayden-burries-coming-off-bench-saturday/",
-        "https://www.kvue.com/video/sports/locked-on/lo-wisconsin/bucks-show/young-bucks-keep-showing-promisebut-cant-execute-down-the-stretch-against-the-trail-blazers/535-b8a04a64-e788-4623-aee9-fb95159c6925",
-        "https://madison.com/sports/professional/nba/bucks/article_291598c5-8934-4c6d-9b87-57ff996d5042.html"
+        "https://www.theguardian.com/books/2026/nov/21/promise-me-america-joe-biden-memoir-review",
+        "https://www.washingtonpost.com/opinions/2026/11/19/joe-bidens-memoir-shows-how-donald-trump-overshadowed-his-presidency/",
+        "https://www.newsweek.com/joe-bidens-book-called-out-lack-accountability-12747309"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGNk90_TVw3F4K9CC8xxUI7G6F1WqU5leW8DsCj9s7JvOZhm30arygVJg6CGU",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT76rTrBDIjy4XBGYa-e5dlT8ryVCOZugC1TXqmnXZTes1REAq0vCl3ArAAPyY",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/books/2026/nov/21/promise-me-america-joe-biden-memoir-review",
+          "title": "Promise Me, America by Joe Biden review – former president defends his decisions",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT76rTrBDIjy4XBGYa-e5dlT8ryVCOZugC1TXqmnXZTes1REAq0vCl3ArAAPyY"
+        },
+        {
+          "url": "https://www.washingtonpost.com/opinions/2026/11/19/joe-bidens-memoir-shows-how-donald-trump-overshadowed-his-presidency/",
+          "title": "Opinion | Nearly 200 mentions of Trump reveal what befell Biden",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTReJgIcBFL6NBuQHhdlIsYMAUtzQcESbo4g_p1N9jSdIN8PEYvrI_iM_IZycQ"
+        },
+        {
+          "url": "https://www.newsweek.com/joe-bidens-book-called-out-lack-accountability-12747309",
+          "title": "Joe Biden’s Book Called Out Over Lack of Accountability",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR81_CyZ-4uvy8cTXbxP3DOJa7HQOdG_Sik9X9QpR_dHIX_E-iAU0c2EETV6Zw"
+        }
+      ]
+    },
+    {
+      "query": "illinois state football",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T20:40:00Z",
+      "related_news_urls": [
+        "https://chicago.suntimes.com/high-school-football/scores/2026/11/20/2026-ihsa-state-football-semifinal-scores",
+        "https://www.si.com/high-school/illinois/illinois-high-school-football-schedule-scores-live-updates-ihsa-november-21-01m7r99tnv6x",
+        "https://sports.yahoo.com/articles/ihsa-football-bracket-2026-illinois-140232797.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQnzeT-DdZkeANIp-CQPrnW9mYxoTZ1Jn55I6qrVGqifXmYS4ZlpYktxr20lQ",
+      "image_credit": "Chicago Sun-Times",
+      "news": [
+        {
+          "url": "https://chicago.suntimes.com/high-school-football/scores/2026/11/20/2026-ihsa-state-football-semifinal-scores",
+          "title": "2026 IHSA state football semifinal scores",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQnzeT-DdZkeANIp-CQPrnW9mYxoTZ1Jn55I6qrVGqifXmYS4ZlpYktxr20lQ"
+        },
+        {
+          "url": "https://www.si.com/high-school/illinois/illinois-high-school-football-schedule-scores-live-updates-ihsa-november-21-01m7r99tnv6x",
+          "title": "Illinois High School Football Schedule, Scores & Live Updates (IHSA) — November 21",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSku8m73CXke44byO8ou6yyqAqKKbgSYIvsMk-hQVpYdnaTvcgD_4LZdpRehxY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ihsa-football-bracket-2026-illinois-140232797.html",
+          "title": "IHSA football bracket: 2026 Illinois state playoffs semifinal scores",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8MsxUlGs8BiH3NYWgTVU3xvu1TeJv_Y4fu-KnSAYyCTy4JWxUaI7KJdKKM9U"
+        }
+      ]
+    },
+    {
+      "query": "navy football",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T20:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50551457/army-navy-seat-prank",
+        "https://www.nytimes.com/athletic/7800560/2026/11/21/army-navy-football-prank/",
+        "https://sports.yahoo.com/college-football/article/army-pranks-navy-ahead-of-annual-football-matchup-with-go-army-message-in-midshipmens-home-stadium-183607258.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtQILlT_e4m_DfqVnUMg92hoTvCDLuS7G3jznAIR_ZQ44rDR1B5OokFzfjRrE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50551457/army-navy-seat-prank",
+          "title": "Army pulls seating prank at Navy's football stadium ahead of Memphis game",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtQILlT_e4m_DfqVnUMg92hoTvCDLuS7G3jznAIR_ZQ44rDR1B5OokFzfjRrE"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7800560/2026/11/21/army-navy-football-prank/",
+          "title": "Army cadets sneak into Navy stadium overnight, prank Midshipmen with ‘GO ARMY’ message",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3wGN5xircPpkGs4rDdEWFo3QAEVVr-dLJ5Ke28EtzefNaQv8BIIqA6VIg_DQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/article/army-pranks-navy-ahead-of-annual-football-matchup-with-go-army-message-in-midshipmens-home-stadium-183607258.html",
+          "title": "Army pranks Navy ahead of annual football matchup with 'Go Army' message in Midshipmen's home stadium",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5aT2E35hfatnVEjr_d7qod58-21ra0o45aW0aW-sodh0KE_H5WHizjsprUfE"
+        }
+      ]
+    },
+    {
+      "query": "early black friday sales",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-21T20:30:00Z",
+      "related_news_urls": [
+        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
+        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
+        "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
+          "title": "Early Black Friday deals live now: Ugg, Michael Kors, Hoka, Dyson, Ring and more are on major sale for the 2026 holiday event",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
+          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlCfDzuM36UYzWC6JwNIW_suwsgLu4AzcpqIq3xQYdsZIlSTDdhWQB7CLPms"
+        },
+        {
+          "url": "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals",
+          "title": "We vetted thousands of early Black Friday deals to find 42 worth pouncing on",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuTtvGXJaj0PcrnoFmkLXVclz26HKxlLWsNNx1VUK8se8PggMjU3FKOBwYmU"
+        }
+      ]
+    },
+    {
+      "query": "chicago fire season 15",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T20:30:00Z",
+      "related_news_urls": [
+        "https://www.nbc.com/nbc-insider/whats-next-for-violet-on-chicago-fire-season-15",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/chicago-fire-season-15-cast-153704302.html",
+        "https://onechicagocenter.com/chicago-fire-might-be-about-say-goodbye-another-character-temporarily"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oNVFODOnfjz5AHoVOtfEuHjaJ-2igDUroyYBpQifoOhOjx56A-7BuO47MaY",
+      "image_credit": "NBC TV",
+      "news": [
+        {
+          "url": "https://www.nbc.com/nbc-insider/whats-next-for-violet-on-chicago-fire-season-15",
+          "title": "What’s Next for Violet on Chicago Fire Season 15?",
+          "publisher": "NBC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oNVFODOnfjz5AHoVOtfEuHjaJ-2igDUroyYBpQifoOhOjx56A-7BuO47MaY"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/chicago-fire-season-15-cast-153704302.html",
+          "title": "‘Chicago Fire’ Season 15 Cast Shakeup: 2 Major Stars Exit, 1 New Regular Joins & 7 Stars Return",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQ1LMkiW6iHUOSeQ6IJ-MDcA2bQMzZbqy3Vo_Gn66S1x6HwlDK7ZNOItugZw"
+        },
+        {
+          "url": "https://onechicagocenter.com/chicago-fire-might-be-about-say-goodbye-another-character-temporarily",
+          "title": "Chicago Fire might be about to say a goodbye to another character (at least temporarily)",
+          "publisher": "One Chicago Center",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQATQKKwVbAtWyqPbK5vxjXVWPXKzivzsDsghWgcUgPkXYoY_lQv04YWhyLJhE"
+        }
+      ]
+    },
+    {
+      "query": "carlos ulberg",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T20:30:00Z",
+      "related_news_urls": [
+        "https://mmasucka.com/news/accepted-history-jiri-prochazka-has-no-regrets-over-carlos-ulberg-loss/",
+        "https://bloodyelbow.com/2026/11/21/jiri-prochazka-is-surprised-ufc-let-carlos-ulberg-stay-champ-after-telling-him-to-vacate-in-2022/",
+        "https://www.ufc.com/news/ufc-qatar-official-scorecards-prochazka-vs-stirling"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLAWeI4cMJkaVs6rIOY4JXCsMejFY6DCBSaFjfdMEfiKP5pm4GCqJKUNYJjg",
+      "image_credit": "MMA Sucka",
+      "news": [
+        {
+          "url": "https://mmasucka.com/news/accepted-history-jiri-prochazka-has-no-regrets-over-carlos-ulberg-loss/",
+          "title": "“Accepted History”: Jiri Prochazka Has No Regrets Over Carlos Ulberg Loss",
+          "publisher": "MMA Sucka",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLAWeI4cMJkaVs6rIOY4JXCsMejFY6DCBSaFjfdMEfiKP5pm4GCqJKUNYJjg"
+        },
+        {
+          "url": "https://bloodyelbow.com/2026/11/21/jiri-prochazka-is-surprised-ufc-let-carlos-ulberg-stay-champ-after-telling-him-to-vacate-in-2022/",
+          "title": "Jiri Prochazka is ‘surprised’ UFC let Carlos Ulberg stay champ after telling him to vacate in 2022",
+          "publisher": "Bloody Elbow",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2HGQfVJ8PywsAxInNNY8sfo9sR-ByywXNPVcsfwQdek5Ztnfll2dIIVD8E9M"
+        },
+        {
+          "url": "https://www.ufc.com/news/ufc-qatar-official-scorecards-prochazka-vs-stirling",
+          "title": "Official Scorecards | UFC Qatar",
+          "publisher": "UFC.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAc5-lCHmTacBl-45afGRZj3F-kmWtJUDcjruUO-lx_nofvqwOv8TkEalKixc"
+        }
+      ]
+    },
+    {
+      "query": "nebraska football coach",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T20:30:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/nebraska/longformarticle/husker-football-game-notes-against-ohio-state-buckeyes--293015942/",
+        "https://www.on3.com/teams/nebraska-cornhuskers/news/radio-notebook-e-j-barthel-on-jamal-rules-rise-isaiah-mozee-and-emmett-johnson/",
+        "https://www.si.com/college/nebraska/football/huskers-interim-oc-glenn-thomas-praises-jamal-rule-previews-ohio-state-01m7ndgnhx6d"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOuRwAJYRwV1W3pxxQr2rvwzr2L6hKuIy_vxLLhqpHLoT6lOcelqLIW2KahiE",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/nebraska/longformarticle/husker-football-game-notes-against-ohio-state-buckeyes--293015942/",
+          "title": "Husker Gameday Wrap: Notable NFL voices saw in Rule what Barthel did; Saturday's tale of the tape; Odem's turn",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOuRwAJYRwV1W3pxxQr2rvwzr2L6hKuIy_vxLLhqpHLoT6lOcelqLIW2KahiE"
+        },
+        {
+          "url": "https://www.on3.com/teams/nebraska-cornhuskers/news/radio-notebook-e-j-barthel-on-jamal-rules-rise-isaiah-mozee-and-emmett-johnson/",
+          "title": "Radio Notebook: E.J. Barthel on Jamal Rule’s rise, and Emmett Johnson's NFL career so far",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPVZOhysIKeST3lyw4nbeGbjboXkP8bxj7S3c_4eaXXxHkxuXXHw7MfrJdAwk"
+        },
+        {
+          "url": "https://www.si.com/college/nebraska/football/huskers-interim-oc-glenn-thomas-praises-jamal-rule-previews-ohio-state-01m7ndgnhx6d",
+          "title": "'He's Really Turned the Corner': Nebraska Interim OC Glenn Thomas Praises Jamal Rule, Previews Ohio State",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq7PkoELULcIMZFcH5OZUqxfVs4RyJdbUrjPqEeaqQwroj1OoCLb-RTuwNAvs"
+        }
+      ]
+    },
+    {
+      "query": "nebraska football game",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T20:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/",
+        "https://bleacherreport.com/liveblogs/25536112-college-football-week-12-live-cfb-updates-highlights-recap-and-reaction-nov-21",
+        "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkTJOXKJhSggr6UHiyrCHTsJNhmuyldgM47DQ-k0jiZNviMmnHAuZX3ahOsN4",
       "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/bucks-brayden-burries-coming-off-bench-saturday/",
-          "title": "Bucks' Brayden Burries: Coming off bench Saturday",
+          "url": "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/",
+          "title": "College football picks: Predictions against the spread, odds, betting lines for top 25 games in Week 12",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGNk90_TVw3F4K9CC8xxUI7G6F1WqU5leW8DsCj9s7JvOZhm30arygVJg6CGU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkTJOXKJhSggr6UHiyrCHTsJNhmuyldgM47DQ-k0jiZNviMmnHAuZX3ahOsN4"
         },
         {
-          "url": "https://www.kvue.com/video/sports/locked-on/lo-wisconsin/bucks-show/young-bucks-keep-showing-promisebut-cant-execute-down-the-stretch-against-the-trail-blazers/535-b8a04a64-e788-4623-aee9-fb95159c6925",
-          "title": "Young Bucks Keep Showing Promise...But Can't Execute Down The Stretch Against The Trail Blazers",
-          "publisher": "KVUE",
+          "url": "https://bleacherreport.com/liveblogs/25536112-college-football-week-12-live-cfb-updates-highlights-recap-and-reaction-nov-21",
+          "title": "College Football Week 12: Live CFB Updates, Highlights, Recap and Reaction for Nov. 21",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPqV_-2n4zd9ODIHXpQo7AwRJ1H-D4uZU8ugVDjjKlj0gWAjMnp8yhm732N6A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLuJw6VZ7XkIIJOBNDaMJw-orvTY_egc13RiyKj8z8kyO6GekK-eYuH5P2T3U"
         },
         {
-          "url": "https://madison.com/sports/professional/nba/bucks/article_291598c5-8934-4c6d-9b87-57ff996d5042.html",
-          "title": "These Bucks rookies ‘lean on each other’ as they settle into NBA roles",
-          "publisher": "Wisconsin State Journal",
+          "url": "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights",
+          "title": "Week 12 live: Tracking top moments and best highlights",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9F6_MDpN8AFgwKZDX0pe638gtxhrNp48FzzZDE0FX-beOt7kuciMvqU2YBmM"
-        }
-      ]
-    },
-    {
-      "query": "colton joseph",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T20:00:00Z",
-      "related_news_urls": [
-        "https://www.jsonline.com/story/sports/college/uw/2026/11/20/status-of-wisconsins-quarterback-ryan-hopkins-upgraded-but-colton-joseph-expected-to-start/92888506007/",
-        "https://www.buckys5thquarter.com/wisconsin-badgers-football/91729/wisconsin-badgers-football-news-start-colton-joseph-at-quarterback-vs-purdue-boilermakers-ryan-hopkins-injury",
-        "https://247sports.com/college/wisconsin/article/multiple-badgers-cleared-in-game-day-injury-report-wisconsin-football-2026-293046696/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9wJwMSMd_I7LBm-W9NMuCleSdt_12aHZ1J_8r6P6cOV-es9ZnrM_OdK0S0s",
-      "image_credit": "Milwaukee Journal Sentinel",
-      "news": [
-        {
-          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/20/status-of-wisconsins-quarterback-ryan-hopkins-upgraded-but-colton-joseph-expected-to-start/92888506007/",
-          "title": "Status of Wisconsin's Ryan Hopkins upgraded, but will Colton Joseph start vs. Purdue?",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9wJwMSMd_I7LBm-W9NMuCleSdt_12aHZ1J_8r6P6cOV-es9ZnrM_OdK0S0s"
-        },
-        {
-          "url": "https://www.buckys5thquarter.com/wisconsin-badgers-football/91729/wisconsin-badgers-football-news-start-colton-joseph-at-quarterback-vs-purdue-boilermakers-ryan-hopkins-injury",
-          "title": "Badgers to start Colton Joseph at QB vs. Purdue",
-          "publisher": "Bucky's 5th Quarter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-vrbnYWTyOjFsEiJ5YGsFMnQX66HvXWywg5igbRQpuavbU5tGhKufdmLyyYo"
-        },
-        {
-          "url": "https://247sports.com/college/wisconsin/article/multiple-badgers-cleared-in-game-day-injury-report-wisconsin-football-2026-293046696/",
-          "title": "Multiple Badgers cleared in game day injury report",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRME3irDSVnjiMm8GSig7ftcyEM_12LflbbIJHLy7QfvD6uYSkUMIpeEzeeH6c"
-        }
-      ]
-    },
-    {
-      "query": "texas a&m vs oklahoma",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-21T19:50:00Z",
-      "related_news_urls": [
-        "https://soonersports.com/news/2026/11/20/football-game-primer-ou-vs-texas-am",
-        "https://sports.yahoo.com/articles/watch-texas-m-vs-oklahoma-194500492.html",
-        "https://247sports.com/college/oklahoma/article/sooners-illustrated-staff-picks-no-22-oklahoma-vs-texas-am-293017451/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdAMBpvTebz6gL2jybR5gI6FTs9i8Y6gG5iNxfOotWDnaODYKeFijncBN0GZA",
-      "image_credit": "Soonersports.com",
-      "news": [
-        {
-          "url": "https://soonersports.com/news/2026/11/20/football-game-primer-ou-vs-texas-am",
-          "title": "Game Primer: OU vs. Texas A&M - University of Oklahoma",
-          "publisher": "Soonersports.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdAMBpvTebz6gL2jybR5gI6FTs9i8Y6gG5iNxfOotWDnaODYKeFijncBN0GZA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-texas-m-vs-oklahoma-194500492.html",
-          "title": "How to watch Texas A&M vs Oklahoma: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyLSQ9TozAgDRqYq_szxRd2pU2_30RMDcyZWOsxis2-TkJLI0mBaLtFuPuX00"
-        },
-        {
-          "url": "https://247sports.com/college/oklahoma/article/sooners-illustrated-staff-picks-no-22-oklahoma-vs-texas-am-293017451/",
-          "title": "Sooners Illustrated Staff Picks: No. 22 Oklahoma vs Texas A&M",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDLEf1MqNm7jWwaqKUdkjKXEZiAV3ErUpYK_WX6fQoDylhwXn5UDLXJkImcEY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCFviRF0uCFDdQN4XdAlWWtLlSUMcuBqGBPqJkSHmOlhvv0VAxCArfJa4uRmc"
         }
       ]
     }
