@@ -66,7 +66,7 @@ test('video cards use only approved click-to-play YouTube embeds and retain dire
 
 test('owner-linked YouTube video becomes a separate source-backed public Oracle carousel card, not a family or 21+ placement',async()=>{
  const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
- assert.equal(REVIEWED_OWNER_VIDEO_LINKS.length,3);
+ assert.equal(REVIEWED_OWNER_VIDEO_LINKS.length,5);
  const v=REVIEWED_OWNER_VIDEO_LINKS[0];
  assert.equal(v.videoId,'PyUwXoTabPA');
  assert.equal(v.title,'REFRESHING! 6-2-2014');
@@ -139,4 +139,36 @@ test('Argo Mill owner Short is indexed in Oracle media without inventing its cha
  assert.ok(ACTIVE_SOURCE_CARDS.some(card=>card.id===c.id));
  assert.ok(ALL_FEED_CARDS.some(card=>card.id===c.id));
  assert.equal(departmentFor(c),'media');
+});
+
+test('additional owner-linked wrestling videos remain separate Oracle media cards, not attributed to Argo or an unverified channel',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const originals=[
+  ['XBZA2NJU2UQ','Mom vs daughter wrestling match'],
+  ['_A5x0pVktw8','Wrestling: Mother vs Daughter']
+ ];
+ assert.equal(REVIEWED_OWNER_VIDEO_LINKS.length,5);
+ for(const [id,title] of originals){
+  const row=REVIEWED_OWNER_VIDEO_LINKS.find(item=>item.videoId===id);
+  assert.ok(row,'Video must be indexed by canonical 11-character ID');
+  assert.equal(row.title,title);
+  assert.equal(row.sourceUrl,'https://www.youtube.com/watch?v='+id);
+  assert.equal(row.observedAt,'2026-11-21');
+  assert.equal(row.publisherVerified,false);
+  assert.equal(row.publishedAt,null);
+  assert.equal(row.contentBoundary,'general-media');
+  assert.equal(row.shortsRoute,undefined,'Do not claim Shorts route without source evidence');
+  assert.ok(validateOwnerYouTubeLink(row));
+  const card=REVIEWED_OWNER_VIDEO_CARDS.find(item=>item.reviewedYouTubeVideoId===id);
+  assert.ok(card);
+  assert.equal(card.name,title);
+  assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+  assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+  assert.ok(ACTIVE_SOURCE_CARDS.some(item=>item.id===card.id));
+  assert.ok(ALL_FEED_CARDS.some(item=>item.id===card.id));
+  assert.equal(departmentFor(card),'media');
+  assert.doesNotMatch(card.details,/Argo Mill tour video/);
+ }
+ const unique=new Set(REVIEWED_OWNER_VIDEO_LINKS.map(row=>row.videoId));
+ assert.equal(unique.size,5,'Do not duplicate owner video records');
 });
