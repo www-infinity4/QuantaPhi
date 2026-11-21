@@ -95,6 +95,8 @@ test('mixed channel Quick Card is a Public/Media Oracle card with one click-to-p
  assert.match(ui,/Stop playback/);
  assert.match(ui,/localStorage/);
  assert.match(experience,/mountMixedCreatorCard\(root,card\)/);
- assert.match(worker,/creatorUploadsApi\(request\)/);
+ assert.match(worker,/if\(incoming\.pathname==='\/api\/creator-uploads'\)return videoAPI\(request,env\)/);
+ const api=readFileSync(new URL('../workers/quantaphi-site/video-api.mjs',import.meta.url),'utf8');
+ assert.match(api,/if\(path==='\/api\/creator-uploads'\)return creatorUploadsApi\(request,fetcher\)/);
  assert.doesNotMatch(ui,/autoplay=1/);
 });
