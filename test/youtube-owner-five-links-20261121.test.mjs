@@ -72,3 +72,30 @@ test('new 2NLr5ND7BkY YouTube source is a public Media Quick Card with verified 
   assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
   assert.equal(departmentFor(card),'media');
 });
+
+
+test('two further owner video URLs become distinct Public/Media Quick Cards with honest source provenance',()=>{
+  for(const id of ['mrhL0sUO4j0','KOhR7s-lXVY']){
+    const matches=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+    assert.equal(matches.length,1,'Each submitted video ID appears once: '+id);
+    const v=matches[0];
+    assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+    assert.equal(v.observedAt,'2026-11-21');
+    assert.match(v.title,/title unverified/i);
+    assert.equal(v.titleVerified,false);
+    assert.equal(v.publisherVerified,false);
+    assert.equal(v.publishedAt,null);
+    assert.equal(v.contentBoundary,'general-media');
+    assert.ok(validateOwnerYouTubeLink(v));
+    assert.equal(validateOwnerYouTubeLink({...v,sourceUrl:'https://youtube.com.evil.test/watch?v='+id}),false);
+    const c=REVIEWED_OWNER_VIDEO_CARDS.find(row=>row.reviewedYouTubeVideoId===id);
+    assert.ok(c,'Owner link creates a Quick Card for '+id);
+    assert.equal(c.featureUrl,v.sourceUrl);
+    assert.equal(c.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+    assert.match(c.details,/not independently verified/i);
+    assert.ok(isPublicSourceCard(c) && validSourceCard(c));
+    assert.equal(findSourceCard(c.id)?.id,c.id);
+    assert.ok(ALL_FEED_CARDS.some(row=>row.id===c.id));
+    assert.equal(departmentFor(c),'media');
+  }
+});
