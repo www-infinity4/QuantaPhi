@@ -11,6 +11,7 @@ let activeFrame=null;
 function stopPlayer(){
  if(activeFrame){activeFrame.remove();activeFrame=null;}
 }
+if(typeof window!=='undefined')window.addEventListener('quantaphi:youtube-player-stop',stopPlayer);
 export function mountYouTubeCreatorCard(root,card){
  const isJulie=card?.youtubeChannelId===JULIE_DERU_CHANNEL.channelId;
  if(!isJulie&&card?.youtubeChannelId!==YOUTUBE_CHANNEL.channelId)return false;
@@ -71,6 +72,7 @@ export function mountYouTubeCreatorCard(root,card){
   const actions=el('div','qcx-controls');
   actions.append(link('Read original on YouTube',video.sourceUrl));
   const play=button('Play video in card',()=>{
+   window.dispatchEvent(new Event('quantaphi:youtube-player-stop'));
    stopPlayer();
    playback.replaceChildren();
    const frame=el('iframe','qcx-video');
