@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T19:01:21.418597Z",
+  "checked_at": "2026-11-21T19:30:40.407331Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "palmeiras vs flamengo",
+      "query": "real madrid - celta de vigo",
       "approx_searches": "2000+",
-      "published_at": "2026-11-21T18:40:00Z",
+      "published_at": "2026-11-21T19:10:00Z",
       "related_news_urls": [
-        "https://ge.globo.com/futebol/brasileirao-serie-a/noticia/2026/11/21/palmeiras-x-flamengo-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/21/real-da-shopee-provocacao-de-leila-pode-render-vinganca-de-bap-no-nubank.ghtm",
-        "https://www.terra.com.br/esportes/flamengo/como-foi-o-dia-do-titulo-relembre-as-conquistas-do-fla-desde-2019,330177d7a437c7bebc8ababcb266b604qcc3ue6m.html"
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17539962/real-madrid-vs-celta-alineacion-probabilidades-laliga",
+        "https://elpais.com/deportes/futbol/2026-11-21/real-madrid-celta-en-directo-el-partido-de-la-liga-en-vivo.html",
+        "https://www.azcentral.com/story/deportes/futbol/2026/11/20/real-madrid-vs-celta-de-vigo-hora-donde-ver-como-llegan-laliga/92862454007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLHHTlRWtPwhCrcy5VpCFzO1LgVAgaCjtMgXC9gHX5enR6QAhoeD1QTaxdu5A",
-      "image_credit": "ge",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGOQJfnqBrpP6Iv0NomRE5upCRYkYoG127rgp8D5PvI8UjNOHJilPSbALQtNQ",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://ge.globo.com/futebol/brasileirao-serie-a/noticia/2026/11/21/palmeiras-x-flamengo-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-          "title": "Palmeiras x Flamengo: onde assistir ao vivo, horário e escalações",
-          "publisher": "ge",
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17539962/real-madrid-vs-celta-alineacion-probabilidades-laliga",
+          "title": "Real Madrid: posible alineación y probabilidades vs Celta",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLHHTlRWtPwhCrcy5VpCFzO1LgVAgaCjtMgXC9gHX5enR6QAhoeD1QTaxdu5A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGOQJfnqBrpP6Iv0NomRE5upCRYkYoG127rgp8D5PvI8UjNOHJilPSbALQtNQ"
         },
         {
-          "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/21/real-da-shopee-provocacao-de-leila-pode-render-vinganca-de-bap-no-nubank.ghtm",
-          "title": "Real da Shopee? Provocação de Leila pode render vingança de Bap no Nubank",
-          "publisher": "UOL",
+          "url": "https://elpais.com/deportes/futbol/2026-11-21/real-madrid-celta-en-directo-el-partido-de-la-liga-en-vivo.html",
+          "title": "Real Madrid - Celta en directo | Mourinho deja a Vinicius en el banquillo",
+          "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8_eVBGSvBgoX6AKrFa0DgyoR0xE-VgLp08wAIAQvv0AdB_Q8hL2dv1RqGRus"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlaiiDJcXSHxMfeoFQuUNldmz3Uwg-RevArA_FE-LrDsEOIr5BrRpQOF9rBKU"
         },
         {
-          "url": "https://www.terra.com.br/esportes/flamengo/como-foi-o-dia-do-titulo-relembre-as-conquistas-do-fla-desde-2019,330177d7a437c7bebc8ababcb266b604qcc3ue6m.html",
-          "title": "Como foi o dia do título? Relembre as conquistas do Fla desde 2019",
-          "publisher": "Terra",
+          "url": "https://www.azcentral.com/story/deportes/futbol/2026/11/20/real-madrid-vs-celta-de-vigo-hora-donde-ver-como-llegan-laliga/92862454007/",
+          "title": "¿Cuándo juega Real Madrid vs Celta de Vigo? Hora y dónde ver",
+          "publisher": "azcentral.com and The Arizona Republic",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyTog6-j_y0Oi0aLR0ixgP8ZH1hzQGF6sP5hZUv2ulk08usHeJxFZIfn5Q7YE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToC5EBOpNF4EdiwOSHfjY9sbFWJjeWFXmTECbpkN4Xs3UfvphE5T_5MHDuYqQ"
         }
       ]
     },
     {
-      "query": "south florida vs fl atlantic",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T18:40:00Z",
+      "query": "real madrid vs celta",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T19:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-south-florida-vs-florida-183000201.html",
-        "https://gousfbulls.com/news/2026/11/21/football-keys-to-the-game-bulls-vs-owls",
-        "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/21/usf-fau-week-12-betting-odds-prediction/92858166007/"
+        "https://sports.yahoo.com/articles/real-madrid-vs-celta-vigo-080350698.html",
+        "https://www.si.com/soccer/real-madrid-vs-celta-vigo-predictions-vinicius-junior-returns-madrid-ninth-consecutive-win",
+        "https://www.cnet.com/tech/services-and-software/real-madrid-vs-celta-vigo-how-to-livestream-la-liga-soccer/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaljvWtEPym7lNvF9-n2nfXNyWot99pP_EyamPaZwaoxo9e38pTL8lsJSd-70",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMcC9332x38MvZpvwLPzouhoO6KmyNhTsylHv4N3mPKFW9aq0vCh29q8QN4dc",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-south-florida-vs-florida-183000201.html",
-          "title": "How to watch South Florida vs Florida Atlantic: Live stream NCAA College Football, TV channel",
+          "url": "https://sports.yahoo.com/articles/real-madrid-vs-celta-vigo-080350698.html",
+          "title": "Real Madrid vs Celta Vigo, 2026 La Liga: Predicted lineups",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaljvWtEPym7lNvF9-n2nfXNyWot99pP_EyamPaZwaoxo9e38pTL8lsJSd-70"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMcC9332x38MvZpvwLPzouhoO6KmyNhTsylHv4N3mPKFW9aq0vCh29q8QN4dc"
         },
         {
-          "url": "https://gousfbulls.com/news/2026/11/21/football-keys-to-the-game-bulls-vs-owls",
-          "title": "Keys to the Game: Bulls vs. Owls",
-          "publisher": "USF Athletics",
+          "url": "https://www.si.com/soccer/real-madrid-vs-celta-vigo-predictions-vinicius-junior-returns-madrid-ninth-consecutive-win",
+          "title": "Real Madrid vs. Celta Vigo Predictions: Vinicius Junior Returns As Madrid Seek Ninth Consecutive Win",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpmKb5oslaykTtcvflE7zW0lmqooVEumfutTfhQgh-5tICAD_gt_RFYkfOuRE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQa2CZcIzr_z0-BxrUTDbypsk_UxPLGR9ghIWEiVkZF19UJIE3NV4tT3mS4TyA"
         },
         {
-          "url": "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/21/usf-fau-week-12-betting-odds-prediction/92858166007/",
-          "title": "USF vs. FAU: Week 12 Betting Odds, Prediction",
-          "publisher": "College Sports Wire",
+          "url": "https://www.cnet.com/tech/services-and-software/real-madrid-vs-celta-vigo-how-to-livestream-la-liga-soccer/",
+          "title": "Real Madrid vs. Celta Vigo: How to Livestream La Liga Soccer",
+          "publisher": "CNET",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZpKGLvsA2uB6_uYi6ao5NkJREeNVfki5KO68eertthHx-ShoDTUW4PSxFGg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiGRuLdJLDPMqoOnNqyVA2qBrKbuyp6ncHMbrr5PdJYJwkru5SWDYjmpBTxSQ"
         }
       ]
     },
     {
-      "query": "liberty football",
+      "query": "jackson state vs alcorn state",
       "approx_searches": "500+",
-      "published_at": "2026-11-21T18:40:00Z",
+      "published_at": "2026-11-21T19:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/player/_/id/4879276/bryce-lance",
-        "https://sports.yahoo.com/articles/watch-western-kentucky-vs-liberty-165500806.html",
-        "https://www.covers.com/sport/basketball/ncaab/matchup/390717/picks"
+        "https://sports.yahoo.com/articles/jackson-state-football-vs-alcorn-110106154.html",
+        "https://grindcitymedia.com/2026/11/19/jackson-states-swac-championship-chances-d2-hbcu-football-makes-history-again-hbcu-huddle/",
+        "https://alcornsports.com/news/2026/11/20/football-alcorn-state-set-to-host-jackson-state-in-annual-soul-bowl.aspx"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLRDBm5eW--vjO7cAXLEGwRtT_IemUz7g7B-Ex2xO3TEfJ5BlB3PcHgRDvDv8",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjEK6pfmYlLPDPwmaNKpFKoN5t7An1gPNokV7mWAnB4JpSDCoLwcEeb361QIE",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/player/_/id/4879276/bryce-lance",
-          "title": "Bryce Lance",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLRDBm5eW--vjO7cAXLEGwRtT_IemUz7g7B-Ex2xO3TEfJ5BlB3PcHgRDvDv8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-western-kentucky-vs-liberty-165500806.html",
-          "title": "How to watch Western Kentucky vs Liberty: Live stream NCAA College Football, TV channel",
+          "url": "https://sports.yahoo.com/articles/jackson-state-football-vs-alcorn-110106154.html",
+          "title": "Jackson State football vs Alcorn State start time, predictions, live updates, score, TV",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUir_520DAwVRypxLrw7KVQXEHiEOQiydid1a212CrDM1bRcNjZxEjvwLkaA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjEK6pfmYlLPDPwmaNKpFKoN5t7An1gPNokV7mWAnB4JpSDCoLwcEeb361QIE"
         },
         {
-          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/390717/picks",
-          "title": "Richmond Spiders vs Western Kentucky Hilltoppers Picks, Prop Bets For November 20, 2026 - NCAAB Predictions",
-          "publisher": "Covers.com",
+          "url": "https://grindcitymedia.com/2026/11/19/jackson-states-swac-championship-chances-d2-hbcu-football-makes-history-again-hbcu-huddle/",
+          "title": "Jackson State’s SWAC Championship Chances + D2 HBCU Football Makes History Again | HBCU Huddle",
+          "publisher": "Grind City Media",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5sfU6paYPZ5Xu9BUlH1MxvfmQDBPhC0YS77L4UeH6af8pOtJ0hv0h_IdpibQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jAMPovhOQwnQnZlx5AJqpfNE2AruoArpYRAW_4Ol_uV8V6kizyPFDA6Fudc"
+        },
+        {
+          "url": "https://alcornsports.com/news/2026/11/20/football-alcorn-state-set-to-host-jackson-state-in-annual-soul-bowl.aspx",
+          "title": "Alcorn State Set to Host Jackson State in Annual Soul Bowl",
+          "publisher": "Alcorn State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBuFjCUfA2jAMmhdKXPQcTZGUiYN6cgskijAoFvCqIz4XhxpuvyyroyVpo3U"
         }
       ]
     },
     {
-      "query": "south carolina vs providence",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T18:30:00Z",
+      "query": "coastal carolina vs louisiana",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T19:10:00Z",
       "related_news_urls": [
-        "https://gamecocksonline.com/news/2026/11/20/gamecocks-back-on-the-road-saturday/",
-        "https://247sports.com/college/south-carolina/article/gamecocks-womens-basketball-dawn-staley-providence--292991906/",
-        "https://www.greenvilleonline.com/story/sports/college/usc/2026/11/21/south-carolina-womens-basketball-providence-score-updates-highlights-stats--live/92882707007/"
+        "https://sports.yahoo.com/articles/louisiana-football-vs-coastal-carolina-160922467.html",
+        "https://www.theadvocate.com/acadiana/sports/ul_lafayette/garry-brodhead-malaya-jones-amijah-price-cajuns/article_4790d7bc-dbc5-4b8e-a9a2-e962d9408418.html",
+        "https://goccusports.com/news/2026/11/20/football-chanticleers-seek-third-straight-sbc-road-win-at-louisiana"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK972hvT76e_Li-XqB-f0bKvKsBrX6zDd1X2QczcNkmSdfMTQvHIV5tTBbbPY",
-      "image_credit": "University of South Carolina Athletics",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSL_KiY6xBXPk-3qfEzEhrOroEaC2cQjqlzNTEqBxkmaLYtqKdvIz5u6z9buaY",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://gamecocksonline.com/news/2026/11/20/gamecocks-back-on-the-road-saturday/",
-          "title": "Gamecocks Back on the Road Saturday",
-          "publisher": "University of South Carolina Athletics",
+          "url": "https://sports.yahoo.com/articles/louisiana-football-vs-coastal-carolina-160922467.html",
+          "title": "Louisiana football vs Coastal Carolina, live score, game updates from Week 12",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK972hvT76e_Li-XqB-f0bKvKsBrX6zDd1X2QczcNkmSdfMTQvHIV5tTBbbPY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSL_KiY6xBXPk-3qfEzEhrOroEaC2cQjqlzNTEqBxkmaLYtqKdvIz5u6z9buaY"
         },
         {
-          "url": "https://247sports.com/college/south-carolina/article/gamecocks-womens-basketball-dawn-staley-providence--292991906/",
-          "title": "South Carolina vs. Providence preview: Gamecocks take their show up North",
+          "url": "https://www.theadvocate.com/acadiana/sports/ul_lafayette/garry-brodhead-malaya-jones-amijah-price-cajuns/article_4790d7bc-dbc5-4b8e-a9a2-e962d9408418.html",
+          "title": "Cajuns' new point guard sparks home win over Tarleton State",
+          "publisher": "The Advocate",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFJos-MsmSqPn5exZHuOA441HRJRNsBdcqONFAqwXdhi6EDOxsq51TBi8xORA"
+        },
+        {
+          "url": "https://goccusports.com/news/2026/11/20/football-chanticleers-seek-third-straight-sbc-road-win-at-louisiana",
+          "title": "Chanticleers Seek Third Straight SBC Road Win At Louisiana",
+          "publisher": "Coastal Carolina University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXU2-Kyma5YkKAHrukzfk8GLoPcKJYTxnO3yFQaf934qT5G3i3W5vv2-SlZxs"
+        }
+      ]
+    },
+    {
+      "query": "bo jackson ohio state",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T19:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/bo-jackson-getting-hot-just-160100154.html",
+        "https://247sports.com/college/ohio-state/video/cfb-week-12-preview-ohio-state-rb-bo-jackson-14708560",
+        "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-bo-jackson-problem-quietly-tells-whole-story/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1W8HgG3b7KBrGQIv1WR-JDQ2RHNIXI7s4oBGSmcCP7z8fvdKH6WY0OlrwiTg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/bo-jackson-getting-hot-just-160100154.html",
+          "title": "Bo Jackson is getting hot just in time for Michigan",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1W8HgG3b7KBrGQIv1WR-JDQ2RHNIXI7s4oBGSmcCP7z8fvdKH6WY0OlrwiTg"
+        },
+        {
+          "url": "https://247sports.com/college/ohio-state/video/cfb-week-12-preview-ohio-state-rb-bo-jackson-14708560",
+          "title": "CFB Week 12 Preview: Ohio State RB Bo Jackson",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxZ-xGzXbMGZMCdP76tDm0tFnWel33cb92MZCTMAtTAfRFSpvc-dfBOmPyfLs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8wAOENaN9texNA7cBIHBbYgaRi_-GjuKGBIt2VK7FwDndAdLUeVL8sD3dYeU"
         },
         {
-          "url": "https://www.greenvilleonline.com/story/sports/college/usc/2026/11/21/south-carolina-womens-basketball-providence-score-updates-highlights-stats--live/92882707007/",
-          "title": "South Carolina women's basketball vs Providence live updates, score, highlights, TV",
-          "publisher": "Greenville Online",
+          "url": "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-bo-jackson-problem-quietly-tells-whole-story/",
+          "title": "Ohio State’s Bo Jackson Problem Quietly Tells Whole Story",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQraqaH7wV9bXAPRlUR6p43YO0kxR5mo4vu27nrtyHLwSKDg9DcNh-R-GJFBI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTZUIIZf2Jmf_y4bH0X9EjP8zWnFTTFy76TbpUrFmhwZ1ndBAkbZNbS_sRxU4"
         }
       ]
     },
     {
-      "query": "southern il vs north dakota",
+      "query": "austin mack",
       "approx_searches": "500+",
-      "published_at": "2026-11-21T18:20:00Z",
+      "published_at": "2026-11-21T19:10:00Z",
       "related_news_urls": [
-        "https://www.grandforksherald.com/sports/college/where-does-und-sit-in-the-fcs-playoff-picture",
-        "https://www.fubo.tv/news/ncaaf/north-dakota-vs-southern-illinois-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
-        "https://knoxradio.com/2026/11/20/und-football-senior-linebacker-ethan-boll-previews-saturdays-game-against-southern-illinois/"
+        "https://www.al.com/alabamafootball/2026/11/alabama-makes-starting-quarterback-change-for-chattanooga-game.html",
+        "https://sports.yahoo.com/college-football/breaking-news/article/no-3-alabama-starting-backup-qb-austin-mack-against-chattanooga-as-keelon-russell-sits-184054761.html",
+        "https://www.saturdaydownsouth.com/news/college-football/alabama-makes-decision-on-starting-quarterback-vs-chattanooga/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVfjOnESJHIh8xA7xz4t5kaLQCcuCXo1s-WOfZhtXcKV-U4cRgtG5ZlDtaO2A",
-      "image_credit": "Grand Forks Herald",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ThJeo_O6jaMHZ9DEFOtFdI8bITsWofSMynDXeVv1jcdI7GVegz3Q6A4shAk",
+      "image_credit": "AL.com",
       "news": [
         {
-          "url": "https://www.grandforksherald.com/sports/college/where-does-und-sit-in-the-fcs-playoff-picture",
-          "title": "Where does UND sit in the FCS playoff picture?",
-          "publisher": "Grand Forks Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVfjOnESJHIh8xA7xz4t5kaLQCcuCXo1s-WOfZhtXcKV-U4cRgtG5ZlDtaO2A"
-        },
-        {
-          "url": "https://www.fubo.tv/news/ncaaf/north-dakota-vs-southern-illinois-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
-          "title": "North Dakota vs Southern Illinois - Where to Watch, Stream Info, TV Channel, and Live Updates (November 21, 2026)",
-          "publisher": "Fubo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXi1J6xhBop2MMSucRSFauJFj_7uKuHVjjuyvXnZncaYT2OxLh3-y1cTYBKM"
-        },
-        {
-          "url": "https://knoxradio.com/2026/11/20/und-football-senior-linebacker-ethan-boll-previews-saturdays-game-against-southern-illinois/",
-          "title": "UND Football Senior Linebacker Ethan Boll Previews Saturday’s Game Against Southern Illinois",
-          "publisher": "knoxradio",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJmbv5m2PSR4meHAvbaWzySXsmP0iwn2rJEPLRfc9PBE4SEFKtRTnlLco_05c"
-        }
-      ]
-    },
-    {
-      "query": "colandrea",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T18:20:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/video/6408705691112",
-        "https://www.foxsports.com/watch/fmc-qb1msaru8jdusio3",
-        "https://www.dispatch.com/story/sports/college/football/2026/11/21/ohio-state-football-nebraska-highlights-score-stats-updates--live/92831634007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR4EpbvCsHxmEyE-Pi2NpDu22VSOxy4k4uCVToYroHxDzzdPAbFicjGx_Q-xk",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/video/6408705691112",
-          "title": "Anthony Colandrea TAKES IT HIMSELF for 13-yard TD, extending Nebraska's lead over Ohio State",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR4EpbvCsHxmEyE-Pi2NpDu22VSOxy4k4uCVToYroHxDzzdPAbFicjGx_Q-xk"
-        },
-        {
-          "url": "https://www.foxsports.com/watch/fmc-qb1msaru8jdusio3",
-          "title": "Anthony Colandrea connects with Kwazi Gilmer for seven-yard TD, giving Nebraska lead over Ohio State",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGGAyOSv4uKU9rmYdZOqsJwi23W80NNjOWZSvQR2jH7TAMVTXN0mlqP8XOrxw"
-        },
-        {
-          "url": "https://www.dispatch.com/story/sports/college/football/2026/11/21/ohio-state-football-nebraska-highlights-score-stats-updates--live/92831634007/",
-          "title": "Ohio State football at Nebraska: Jeremiah Smith battles cramps then makes 2nd TD catch",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtsjdv1LEBzZBnBJJP9icx_GWZuuCT2QKlFj296h7oW9OV1Z0LHBYD3wu6OTw"
-        }
-      ]
-    },
-    {
-      "query": "philadelphia vs new england",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T18:10:00Z",
-      "related_news_urls": [
-        "https://www.mlssoccer.com/playoffs/2026/news/cavan-sullivan-philadelphia-union-superstar-2026-mls-cup-playoffs",
-        "https://www.bostonglobe.com/2026/11/20/sports/soccer-mls-cup-playoffs-revolution-union-marko-mitrovic-carles-gil/",
-        "https://sports.yahoo.com/articles/revolution-gear-playoff-series-against-144319526.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjLIyfqPygDNFlOwl1UUUT0USWDEcCYpxQoH7DxSyybvpltZCsVSnakdtN74",
-      "image_credit": "MLSsoccer.com",
-      "news": [
-        {
-          "url": "https://www.mlssoccer.com/playoffs/2026/news/cavan-sullivan-philadelphia-union-superstar-2026-mls-cup-playoffs",
-          "title": "Cavan Sullivan leads Philadelphia Union into playoffs: \"He's not afraid\" | MLSSoccer.com",
-          "publisher": "MLSsoccer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjLIyfqPygDNFlOwl1UUUT0USWDEcCYpxQoH7DxSyybvpltZCsVSnakdtN74"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/20/sports/soccer-mls-cup-playoffs-revolution-union-marko-mitrovic-carles-gil/",
-          "title": "Despite their history, Revolution coach Marko Mitrovic, captain Carles Gil confidently enter MLS playoffs",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOMixMUTYup2ZGTZYKBES4XHckvQKWI5gEfTvJF3vx6fm9vG_q7wE6pi6c3SA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/revolution-gear-playoff-series-against-144319526.html",
-          "title": "Revolution gear up for playoff series against Philadelphia Union",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtWEoQnpXWE6oaMXvM8kn6POfOkfFYmM4p3t9_DpHzIwBbEglLLlZnMVVPUEg"
-        }
-      ]
-    },
-    {
-      "query": "conner weigman",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T18:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50550966/sources-houston-qb-conner-weigman-henderson-start",
-        "https://sports.yahoo.com/articles/uh-quarterback-conner-weigman-ruled-175908339.html",
-        "https://www.foxsports.com/articles/cfb/houston-qb-conner-weigman-out-with-undisclosed-injury-for-no-20-cougars-game-at-west-virginia"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2YXTIpUDWg62EGllyZWQTf0vxC8GtEz6xmhlwMT2SpyzsCXRmqR-kh7MkKPw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50550966/sources-houston-qb-conner-weigman-henderson-start",
-          "title": "Sources - Houston QB Conner Weigman out; Henderson to start",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2YXTIpUDWg62EGllyZWQTf0vxC8GtEz6xmhlwMT2SpyzsCXRmqR-kh7MkKPw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/uh-quarterback-conner-weigman-ruled-175908339.html",
-          "title": "UH quarterback Conner Weigman ruled out for Cougars' game at West VIrginia",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0uwZ5IstEWRsHRoDqoeGS1BeSFGt66g15-me4P1COFClK4DwEFiWtVWKvXZw"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/cfb/houston-qb-conner-weigman-out-with-undisclosed-injury-for-no-20-cougars-game-at-west-virginia",
-          "title": "Houston QB Conner Weigman out with undisclosed injury for No. 20 Cougars' game at West Virginia",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
-        }
-      ]
-    },
-    {
-      "query": "mo state vs jax state",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T18:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/ncaaf/missouri-state-bears-vs-jacksonville-state-gamecocks-prediction-odds-2026-11-21/",
-        "https://sports.yahoo.com/articles/missouri-state-football-vs-jacksonville-110310759.html",
-        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-jax-states-matchup-with-missouri-state.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoe_ST0TyyZgv2bhEkZPRi1qEb7ls3PUIS9URgQYxrrxKWJUt32dAINl8mQFo",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/missouri-state-bears-vs-jacksonville-state-gamecocks-prediction-odds-2026-11-21/",
-          "title": "Missouri State vs Jacksonville State Prediction, Picks & Odds | 21 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoe_ST0TyyZgv2bhEkZPRi1qEb7ls3PUIS9URgQYxrrxKWJUt32dAINl8mQFo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/missouri-state-football-vs-jacksonville-110310759.html",
-          "title": "Missouri State football vs Jacksonville State live score updates",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTm6XWAEDAJKEBGZi8X-xKFs8YSxG8HlFt8pEJDcb7slFD4KrzZ5vsZ_JVKJv4"
-        },
-        {
-          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-jax-states-matchup-with-missouri-state.html",
-          "title": "Scouting report: What you need to know for Jax State’s matchup with Missouri State",
+          "url": "https://www.al.com/alabamafootball/2026/11/alabama-makes-starting-quarterback-change-for-chattanooga-game.html",
+          "title": "Alabama makes starting quarterback change for Chattanooga game",
           "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMkYDLWh8cio4B_BiL-aDZyHofik4uGCDO1MdclLHfBcyG42sG33MVIQh6xes"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ThJeo_O6jaMHZ9DEFOtFdI8bITsWofSMynDXeVv1jcdI7GVegz3Q6A4shAk"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/breaking-news/article/no-3-alabama-starting-backup-qb-austin-mack-against-chattanooga-as-keelon-russell-sits-184054761.html",
+          "title": "No. 3 Alabama starting backup QB Austin Mack against Chattanooga as Keelon Russell sits",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjsNg7g9wT83WkBCsI8Zy95EBtSHbvL9epMK7K5XxJKakIYRHR8HC6-9dS1YQ"
+        },
+        {
+          "url": "https://www.saturdaydownsouth.com/news/college-football/alabama-makes-decision-on-starting-quarterback-vs-chattanooga/",
+          "title": "Alabama makes decision on starting quarterback vs. Chattanooga",
+          "publisher": "Saturday Down South",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnc1z3k53qs61Izb8uc-jvWSYa2HxPw6Q8tt42WoozUhZK0b5n0VQ1YtAkUNQ"
         }
       ]
     },
     {
-      "query": "charlotte vs tulsa",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T18:10:00Z",
+      "query": "prairie view vs alabama state",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T19:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/charlotte-vs-tulsa-prediction-pick-103103432.html",
-        "https://www.on3.com/sites/inside-tulsa-sports/news/tulsa-football-tre-lamb-notebook/",
-        "https://thestute.com/2026/11/21/%F0%9D%9A%86%F0%9D%99%B0%F0%9D%9A%83%F0%9D%99%B2%F0%9D%99%B7-tulsa-golden-hurricane-vs-charlotte-49ers-%F0%9D%90%8B%F0%9D%90%88%F0%9D%90%95%F0%9D%90%84-%EF%BD%93%EF%BD%94%EF%BD%92%EF%BD%85%EF%BD%81/"
+        "https://sports.yahoo.com/articles/watch-alabama-state-football-vs-120139988.html",
+        "https://www.reutersconnect.com/item/the-buffalo-soldiers-motorcycle-club-escort-alabama-state-players-during-the-hornet-walk-before-asus-swac-football-matchup/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MTMwMzQ",
+        "https://www.thescore.com/ncaab/event/2474246?source=league_page"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTud3LWbghXDLMnDQewS8hZLh8fQAIb7_Q_BShY25MBHzFNVw3699FklQbgMRc",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-9YPP7NWEDZpZBAz9eal_zAvsIlX8sA0vo3Vm0W9XbP--wpiefN0nGeHonpc",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/charlotte-vs-tulsa-prediction-pick-103103432.html",
-          "title": "Charlotte vs Tulsa Prediction, Pick, College Football Odds for Saturday, Nov. 21",
+          "url": "https://sports.yahoo.com/articles/watch-alabama-state-football-vs-120139988.html",
+          "title": "How to watch Alabama State football vs Prairie View A&M",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTud3LWbghXDLMnDQewS8hZLh8fQAIb7_Q_BShY25MBHzFNVw3699FklQbgMRc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-9YPP7NWEDZpZBAz9eal_zAvsIlX8sA0vo3Vm0W9XbP--wpiefN0nGeHonpc"
         },
         {
-          "url": "https://www.on3.com/sites/inside-tulsa-sports/news/tulsa-football-tre-lamb-notebook/",
-          "title": "Tre Lamb eyes 8-win mark, praises defensive grit",
-          "publisher": "On3",
+          "url": "https://www.reutersconnect.com/item/the-buffalo-soldiers-motorcycle-club-escort-alabama-state-players-during-the-hornet-walk-before-asus-swac-football-matchup/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MTMwMzQ",
+          "title": "Licensable picture: The Buffalo Soldiers Motorcycle Club escort Alabama State players during the Hornet Walk before ASU’s SWAC football matchup",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVfA4pqKRhFvPGvEVQaSLPPoaE5JbJsjMh7z7dVZW5dfxDMzOcodY0vE0vtKI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQz9AHTK5hc_IZvQR4G0gAPqr4JqNhttl3LHY7biuGW2uGcx2ynQNtre8FfVIw"
         },
         {
-          "url": "https://thestute.com/2026/11/21/%F0%9D%9A%86%F0%9D%99%B0%F0%9D%9A%83%F0%9D%99%B2%F0%9D%99%B7-tulsa-golden-hurricane-vs-charlotte-49ers-%F0%9D%90%8B%F0%9D%90%88%F0%9D%90%95%F0%9D%90%84-%EF%BD%93%EF%BD%94%EF%BD%92%EF%BD%85%EF%BD%81/",
-          "title": "𝚆𝙰𝚃𝙲𝙷 Tulsa Golden Hurricane vs. Charlotte 49ers 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ!NCAAF",
-          "publisher": "The Stute",
+          "url": "https://www.thescore.com/ncaab/event/2474246?source=league_page",
+          "title": "Alabama State Hornets vs Fresno State Bulldogs | November 21, 2026 | NCAAB Matchup",
+          "publisher": "theScore",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFFqhiqDXerYmU--7nYkXuOf6IwoSS4dbDBN47lKKIAE4ooEDQITpe1zhUCHA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEOn_qapX3RE2ZqrhQbfrtQe7aoISrmiYqvpI6_jIToI1JGISopngxuaujCw"
+        }
+      ]
+    },
+    {
+      "query": "delaware vs nm state",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T19:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/delaware-vs-mexico-state-prediction-103905328.html",
+        "https://athlonsports.com/college-football/delaware-fightin-blue-hens-at-new-mexico-state-aggies-ncaaf-prediction-picks-odds-week12-2026",
+        "https://www.wdel.com/sports/new-mexico-state-hosts-delaware-in-cusa-matchup/article_3bbba9c2-07d5-5150-9e9c-bc7d5a74b013.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyAOy07hXzdzZ-wD7ZcO66fvL_UGT3ftABwkWi3-5dcyTnJ0N65OA7Lw3uLNI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/delaware-vs-mexico-state-prediction-103905328.html",
+          "title": "Delaware vs New Mexico State Prediction, Pick, College Football Odds for Saturday, Nov. 21",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyAOy07hXzdzZ-wD7ZcO66fvL_UGT3ftABwkWi3-5dcyTnJ0N65OA7Lw3uLNI"
+        },
+        {
+          "url": "https://athlonsports.com/college-football/delaware-fightin-blue-hens-at-new-mexico-state-aggies-ncaaf-prediction-picks-odds-week12-2026",
+          "title": "Delaware Fightin' Blue Hens Arrive off a Win as New Mexico State Aggies are Looking to Bounce Back",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStvIVlawRqryqC3PK7UBKrTG2THGk1aTVMf93VNpV3kpySmLqyVkUYidBTz3w"
+        },
+        {
+          "url": "https://www.wdel.com/sports/new-mexico-state-hosts-delaware-in-cusa-matchup/article_3bbba9c2-07d5-5150-9e9c-bc7d5a74b013.html",
+          "title": "New Mexico State hosts Delaware in CUSA matchup",
+          "publisher": "WDEL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS38Xl6B32JUfPFOa81pLbXQ8rxR08oMtNx_YMIWQAtE9wJJm-jz265FpmZGEY"
+        }
+      ]
+    },
+    {
+      "query": "indiana state vs sd state",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T19:10:00Z",
+      "related_news_urls": [
+        "https://www.argusleader.com/story/sports/college/south-dakota-state-university/2026/11/21/south-dakota-state-vs-indiana-state-time-tv-score-live-updates--live/92899559007/",
+        "https://www.cnhinews.com/indiana/sports/article_efe0ac16-3c65-5c8d-88d7-783b6fbbc980.html",
+        "https://www.siouxfallslive.com/sports/zim-happy-hour-jacks-yotes-playoff-positions-how-oj-made-augie-a-winner"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYn2ANGRjp2nYOwdj8bivmY2pA6yCXNXfqxksP7iaLWJ4JGt0gFUYjE5YoWUE",
+      "image_credit": "Argus Leader",
+      "news": [
+        {
+          "url": "https://www.argusleader.com/story/sports/college/south-dakota-state-university/2026/11/21/south-dakota-state-vs-indiana-state-time-tv-score-live-updates--live/92899559007/",
+          "title": "South Dakota State vs Indiana State live updates, score, highlights",
+          "publisher": "Argus Leader",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYn2ANGRjp2nYOwdj8bivmY2pA6yCXNXfqxksP7iaLWJ4JGt0gFUYjE5YoWUE"
+        },
+        {
+          "url": "https://www.cnhinews.com/indiana/sports/article_efe0ac16-3c65-5c8d-88d7-783b6fbbc980.html",
+          "title": "MARK BENNETT: Short-, long-term futures part of ISU football's finale; men's hoops faces SFA Friday",
+          "publisher": "cnhinews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcXMglzUcgIUXcatx1-MObVbs__k35hluvm2yMKjUN_rNjOMihfxLRingNZIk"
+        },
+        {
+          "url": "https://www.siouxfallslive.com/sports/zim-happy-hour-jacks-yotes-playoff-positions-how-oj-made-augie-a-winner",
+          "title": "Zim Happy Hour: Jacks & Yotes playoff positions, how \"OJ\" made Augie a winner",
+          "publisher": "Sioux Falls Live",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbKW2Qy9HG0XMQfR1ibd20ITlTNB4XVKONr-Pzj_82o3XGkoBdQY6xq5Uygz8"
+        }
+      ]
+    },
+    {
+      "query": "david raya",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T19:00:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/soccer/epl/2026/11/21/david-raya-injury-arsenal-update-news-newcastle/92899330007/",
+        "https://sports.yahoo.com/articles/arsenal-hammer-injury-blow-david-190056707.html",
+        "https://www.besoccer.com/new/live-newcastle-v-arsenal-1442613"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR44wX3qsskrgg7BeaTEZ8zQPN29xY9VDDmCOKwgTbQXn-P6SxAlra-KFXkIA0",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/soccer/epl/2026/11/21/david-raya-injury-arsenal-update-news-newcastle/92899330007/",
+          "title": "David Raya injury update: Arsenal dealt massive blow losing star goalkeeper",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR44wX3qsskrgg7BeaTEZ8zQPN29xY9VDDmCOKwgTbQXn-P6SxAlra-KFXkIA0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/arsenal-hammer-injury-blow-david-190056707.html",
+          "title": "Arsenal get hammer injury blow as David Raya forced off against Newcastle",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9Yf9ducU6Hez2KUVhhW5mdH_rRMog4-8YSyWTou1cE3cdsNqOicF54pne-qc"
+        },
+        {
+          "url": "https://www.besoccer.com/new/live-newcastle-v-arsenal-1442613",
+          "title": "NINE MINUTES OF STOPPAGE TIME",
+          "publisher": "BeSoccer Livescore",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRofI1WJGuPpeapui1wBx6ddtTFhGi0CdOQ8LmcEz3SHjWvB36lfSndNRisV2c"
         }
       ]
     }
