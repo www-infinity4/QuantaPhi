@@ -358,3 +358,16 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-family-tv .qcx-family-thumbnail{display:block;width:100%;max-width:100%;height:auto;max-height:260px;object-fit:cover;border-radius:12px}
 .qcx-family-tv .qcx-video{width:100%;max-width:100%;aspect-ratio:16/9}
 .qcx-family-tv h4{font-size:clamp(18px,4vw,24px);line-height:1.25;margin:8px 0}
+
+/* Mixed YouTube creator index: readable and containment-safe on 320px Android. */
+.youtube-creator-mixed-card{min-width:0;max-width:100%;width:100%;overflow-wrap:anywhere}
+.youtube-creator-mixed-card :is(.qcx-mix-controls,.qcx-mix-feed,.qcx-mix-entry,.qcx-mix-add,.qcx-controls,.qcx-mix-channels,.qcx-player){min-width:0;max-width:100%}
+.youtube-creator-mixed-card .qcx-mix-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px}
+.youtube-creator-mixed-card :is(input,select){width:100%;min-width:0;max-width:100%;min-height:48px;font-size:16px}
+.youtube-creator-mixed-card .qcx-mix-add{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}
+.youtube-creator-mixed-card .qcx-mix-entry{border:1px solid #dfd5e5;background:#fff;border-radius:13px;padding:12px;display:grid;gap:8px;margin:0 0 12px}
+.youtube-creator-mixed-card .qcx-mix-entry img{width:100%;max-width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px}
+.youtube-creator-mixed-card .qcx-mix-entry h4{margin:0;font-size:17px;line-height:1.35;overflow-wrap:anywhere}
+.youtube-creator-mixed-card :is(button,.qcx-link){min-height:44px;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.youtube-creator-mixed-card .qcx-mix-channels{display:flex;flex-wrap:wrap;gap:8px}
+.youtube-creator-mixed-card iframe{max-width:100%;aspect-ratio:16/9}
