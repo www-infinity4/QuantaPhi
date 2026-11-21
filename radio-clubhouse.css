@@ -196,3 +196,9 @@
 #radioClubhouse [hidden] { display: none !important; }
 #radioClubhouse .rc-topic-body { margin-top: 10px; }
 #radioClubhouse .rc-actions button { min-height: 44px; border-radius: 999px; }
+
+/* Archive is a visitor-selected historical source, never a false live feed. */
+#radioClubhouse .rc-archive-toggle{background:#fff;color:#174d70;border:1px solid #afcbdc}
+#radioClubhouse .rc-archive-toggle[hidden]{display:none!important}
+#radioClubhouse .rc-header .rc-archive-toggle:focus-visible{outline:3px solid #1980bb;outline-offset:2px}
+@media(max-width:540px){#radioClubhouse .rc-archive-toggle{flex:1 1 100%;font-size:14px;min-height:46px}}
