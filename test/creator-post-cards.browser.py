@@ -259,6 +259,26 @@ def run():
                 assert page.locator('#oracleCardChooser option[value="source-youtube-creator-mix"]').count()==1
                 checks.append(f'{width}px: 3-channel creator mix, Load More, single player, saved owner link, Oracle/media and no overflow')
 
+                # LANDing Autism: independently selectable original publisher card.
+                page.goto(base+'/source-quick-card.html?card=landing-autism-youtube',wait_until='domcontentloaded')
+                landing=page.locator('.youtube-creator-mixed-card')
+                expect(landing).to_be_visible()
+                expect(landing).to_contain_text('LANDing Autism · Full channel Quick Card')
+                expect(landing.get_by_role('combobox',name='Filter by video channel')).to_have_value('landing')
+                expect(landing.locator('.qcx-mix-entry')).to_have_count(6)
+                expect(landing.locator('iframe')).to_have_count(0)
+                landing.get_by_role('searchbox',name='Search loaded creator videos').fill('Penelope')
+                expect(landing).to_contain_text('Penelope Takes Her FIRST STEPS!!')
+                landing.get_by_role('button',name='Play in card').click()
+                expect(landing.locator('iframe')).to_have_attribute('src','https://www.youtube-nocookie.com/embed/QR_c5m1RLtk')
+                landing.get_by_role('button',name='Stop playback').click()
+                expect(landing.locator('iframe')).to_have_count(0)
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'LANDing Autism Quick Card overflow'
+                page.goto(base+'/?card=landing-autism-youtube',wait_until='domcontentloaded')
+                expect(page.locator('#oracleCardStage [data-source-id="landing-autism-youtube"] .youtube-creator-mixed-card')).to_be_visible(timeout=20000)
+                assert page.locator('#oracleCardChooser option[value="source-landing-autism-youtube"]').count()==1
+                checks.append(f'{width}px: LANDing Autism source channel in Oracle, Play/Stop, mobile no overflow')
+
                 context.close()
             browser.close()
     finally:
