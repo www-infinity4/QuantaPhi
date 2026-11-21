@@ -3,6 +3,8 @@
 Read [README](README.md) and root [AGENTS.md](../../AGENTS.md) before editing code. Entries below are routing pointers, **not** verified current percent-complete estimates. Each ticket's issue comments and latest exact-head PR/CI are authoritative. Agents must verify and update after each work session.
 
 | Project | Canonical issue | Linked source | Dot | Progress | Sessions spent / remaining | Next verified action |
+
+| Bubbles / Robot Brain research evidence server | [#1489](https://github.com/www-infinity4/QuantaPhi/issues/1489) | [TICKET-1489](TICKET-1489.md) · isolated live D1 / Worker | 🟡 | 55% estimated; 8 curated entries, 11 categories, read API live | 1 / 2–4 estimate | Exact-head CI/review; verify first cron ingest; then wire read-only tool into Bubbles and Robot Brain |
 | --- | --- | --- | --- | --- | --- | --- |
 | Family & Parenting TV · Cloudflare D1 backed childcare resources | [#1603](https://github.com/www-infinity4/QuantaPhi/issues/1603) | [TICKET-1603](TICKET-1603.md) · D1 `quantaphi-family-parenting-tv` · 21 verified public videos | 🟡 | DB created and 21 unique records read back; Quick Card/Worker merge and live readback pending | 1 / unknown (new subset) | Verify exact-head branch tests, deploy read-only Worker, merge approved Quick Card, browser/Android acceptance |
 | Julie Deru YouTube · original channel and two verified source Quick Cards | [#1603](https://github.com/www-infinity4/QuantaPhi/issues/1603) | [TICKET-1603](TICKET-1603.md) · [PR #2045](https://github.com/www-infinity4/QuantaPhi/pull/2045) | 🔴 | Scoped, source integration and exact-head acceptance pending | 1 / unknown | Inspect source tests, browser, guarded merge and live Android readback |

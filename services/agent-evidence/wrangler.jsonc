@@ -1,0 +1,12 @@
+{
+  "name": "quantaphi-agent-evidence",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "triggers": { "crons": ["0 */6 * * *"] },
+  "d1_databases": [{
+    "binding": "EVIDENCE_DB",
+    "database_name": "quantaphi-agent-evidence",
+    "database_id": "43773316-4fbb-4a00-8911-88ca08d2bed3"
+  }]
+}
