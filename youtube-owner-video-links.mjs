@@ -15,6 +15,7 @@ const reviewedLinks=[{
  contentBoundary:'general-media'
 },{
  videoId:'bzvtKRteavs',title:'#idahosprings #goldmill #goldmine $goldmining #gold',
+ displayTitle:'Argo Mill Tour · Idaho Springs',
  sourceUrl:'https://www.youtube.com/watch?v=bzvtKRteavs',
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  contentBoundary:'general-media',shortsRoute:true
@@ -27,6 +28,7 @@ export function validateOwnerYouTubeLink(row){
     row.title!==row.title.trim()||/[<>\u0000-\u001f]/.test(row.title))return false;
  if(row.publishedAt!==null||row.publisherVerified!==false||row.contentBoundary!=='general-media')return false;
  if(row.shortsRoute!==undefined&&row.shortsRoute!==true)return false;
+ if(row.displayTitle!==undefined&&(typeof row.displayTitle!=='string'||row.displayTitle.trim()!==row.displayTitle||row.displayTitle.length>120||/[<>\\u0000-\\u001f]/.test(row.displayTitle)))return false;
  return /^\d{4}-\d\d-\d\d$/.test(row.observedAt||'')&&
   Number.isFinite(Date.parse(row.observedAt+'T00:00:00Z'));
 }
@@ -35,7 +37,7 @@ export const REVIEWED_OWNER_VIDEO_LINKS=Object.freeze(reviewedLinks.filter(valid
 const key=id=>[...id].map(c=>c.charCodeAt(0).toString(16).padStart(2,'0')).join('');
 export const REVIEWED_OWNER_VIDEO_CARDS=Object.freeze(REVIEWED_OWNER_VIDEO_LINKS.map(v=>Object.freeze({
  id:'youtube-reviewed-'+key(v.videoId),
- name:v.title,kind:'Video · YouTube',category:'Video · YouTube',
+ name:v.displayTitle||v.title,kind:'Video · YouTube',category:'Video · YouTube',
  feature:'Watch the source-identified original YouTube video',
  official:v.sourceUrl,featureUrl:v.sourceUrl,sourceUrl:v.sourceUrl,
  image:'https://i.ytimg.com/vi/'+v.videoId+'/hqdefault.jpg',
