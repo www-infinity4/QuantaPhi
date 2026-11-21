@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T03:31:26.514303Z",
+  "checked_at": "2026-11-21T04:01:33.322288Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nba cup standings",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T03:10:00Z",
+      "query": "amen thompson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T03:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/nba-cup-scores-standings-scenarios-175145886.html",
-        "https://www.nba.com/news/starting-5-november-20-2026",
-        "https://www.nytimes.com/athletic/7792472/2026/11/20/nba-cup-standings-update-magic-nets-knicks/"
+        "https://sports.yahoo.com/articles/25-under-25-amen-thompson-154600944.html",
+        "https://www.houstonchronicle.com/sports/rockets/article/houston-early-season-trends-22536012.php",
+        "https://raptorsrapture.com/raptors-fans-recognize-amen-thompson-s-struggles-alongside-fred-vanvleet-all-too-well"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeuMLVHpuY_ox4kTGZr7asYOS46uCdJe1WmNe46398FO55DpkYlafh-jaU6_g",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQUXfLphGI78czal451TX97t3dtnu9Rk8Q4HSEQXqXn6FwwDCC7lGq6dSf_XA",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/nba-cup-scores-standings-scenarios-175145886.html",
-          "title": "NBA Cup scores, standings, and scenarios: Who can clinch and who's nearly toast?",
+          "url": "https://sports.yahoo.com/articles/25-under-25-amen-thompson-154600944.html",
+          "title": "25-under-25: Amen Thompson doesn't need a 3-point shot to be a star",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeuMLVHpuY_ox4kTGZr7asYOS46uCdJe1WmNe46398FO55DpkYlafh-jaU6_g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQUXfLphGI78czal451TX97t3dtnu9Rk8Q4HSEQXqXn6FwwDCC7lGq6dSf_XA"
         },
         {
-          "url": "https://www.nba.com/news/starting-5-november-20-2026",
-          "title": "Starting 5: Emirates NBA Cup 2026 ‘Moving Day’ is here",
-          "publisher": "NBA.com",
+          "url": "https://www.houstonchronicle.com/sports/rockets/article/houston-early-season-trends-22536012.php",
+          "title": "Real or fake: Which early trends this season are legit for the Rockets?",
+          "publisher": "Houston Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTUxdINKqlZRcx5RMYMoawHbci0b66OEYZCqcFZpYdRoE2vb5OQk_WzGzBCwk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3P0OKZp0zWkwR-bMOosg93__-mro6uDBu9WlqQ8MubcMWy-hj1QQkgo2Emy4"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7792472/2026/11/20/nba-cup-standings-update-magic-nets-knicks/",
-          "title": "Knicks’ NBA Cup chances could take a major hit Friday night",
-          "publisher": "The New York Times",
+          "url": "https://raptorsrapture.com/raptors-fans-recognize-amen-thompson-s-struggles-alongside-fred-vanvleet-all-too-well",
+          "title": "Raptors fans recognize Amen Thompson's struggles alongside Fred VanVleet all too well",
+          "publisher": "Raptors Rapture",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL9s_HuCctyj6bEQdJM5AKLK6J6XUtAV4bRebnIM55BWuKt0jIA9txGE1GmEQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-RVoKkFrupNZbMnk27amkCz8BGOd5M2VmHvFpIlGwzWznKrLTOPr5cQ2ptmo"
         }
       ]
     },
     {
-      "query": "aday mara",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T03:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/thunder-start-shai-ajay-mccain-peavy-i-hart",
-        "https://www.espn.com/video/clip/_/id/50546025/aday-mara-takes-flight-alley-oop-jam",
-        "https://www.newsbreak.com/last-word-on-basketball-327945860/5000107142452-aday-mara-s-strong-development-defends-against-okc-injuries"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/thunder-start-shai-ajay-mccain-peavy-i-hart",
-          "title": "Thunder start Shai, Ajay, McCain, Mara, I-Hart",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50546025/aday-mara-takes-flight-alley-oop-jam",
-          "title": "Aday Mara takes flight for alley-oop jam",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgTSTNuue7AF9yPpMu7y3vsSa-LNZ_G45R4Nrcg4cedrWU5urTaDoupAo-iDE"
-        },
-        {
-          "url": "https://www.newsbreak.com/last-word-on-basketball-327945860/5000107142452-aday-mara-s-strong-development-defends-against-okc-injuries",
-          "title": "Aday Mara’s Strong Development Defends Against OKC Injuries",
-          "publisher": "NewsBreak: Local News & Alerts",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsQlVjksRBZPZylSY-dLJuyaRyAska4hR-mDIy1L-0wUk8IFDhNfn36E0jRQg"
-        }
-      ]
-    },
-    {
-      "query": "cher",
+      "query": "zach lavine",
       "approx_searches": "500+",
-      "published_at": "2026-11-21T03:10:00Z",
+      "published_at": "2026-11-21T03:40:00Z",
       "related_news_urls": [
-        "https://www.syracuse.com/entertainment/2026/11/actress-reveals-cher-still-holds-a-grudge-against-her-nearly-30-years-later.html",
-        "https://www.eonline.com/news/1438210/christina-ricci-details-chers-decades-long-grudge-against-her",
-        "https://www.yahoo.com/entertainment/celebrity/articles/christina-ricci-just-detailed-caused-173537828.html"
+        "https://www.cbssports.com/fantasy/basketball/news/kings-zach-lavine-scores-18-points-in-loss-wednesday/",
+        "https://aroyalpain.com/zach-lavine-says-kings-still-looking-for-identity",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/zach-lavine-scores-18-points-in-return-wednesday"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3ZLR32cEr1UErDQizWDQgZYRW2ttlXOHHDIo39NN0Iahb0GEvBXS-YuOhoEY",
-      "image_credit": "Syracuse.com",
-      "news": [
-        {
-          "url": "https://www.syracuse.com/entertainment/2026/11/actress-reveals-cher-still-holds-a-grudge-against-her-nearly-30-years-later.html",
-          "title": "Actress reveals Cher still ‘holds a grudge’ against her nearly 30 years later",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3ZLR32cEr1UErDQizWDQgZYRW2ttlXOHHDIo39NN0Iahb0GEvBXS-YuOhoEY"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438210/christina-ricci-details-chers-decades-long-grudge-against-her",
-          "title": "Why Christina Ricci Says Cher \"Holds a Grudge\" Against Her After Years-Long Rift",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPSmUYMPPxw35JaOIlWi8avh3PuOPJAJwB1eL5Z02nAYeksaTSC_Rwgj6agWk"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/christina-ricci-just-detailed-caused-173537828.html",
-          "title": "Christina Ricci Just Detailed What Caused Her Abrupt Falling Out With Cher",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS-DUTfRH-0FFqI9ieEeSmRI101Zw3N3Wjbdm93lkT_45qGZfYQtQp4xyQG38"
-        }
-      ]
-    },
-    {
-      "query": "scottie barnes",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T03:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/scottie-barnes-claims-best-defender-000000922.html",
-        "https://basketnews.com/news-259885-raptors-all-star-calls-out-nba-over-major-award-snub-im-the-best-in-the-world.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/19/scottie-barnes-i-feel-like-im-the-best-defender-in-the-world/92868842007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVjNfv0eetvkbPk33tMmqlEArgO26VvlygAE5MAj_vedjpbdKPuvh18uk44ss",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/scottie-barnes-claims-best-defender-000000922.html",
-          "title": "Scottie Barnes Claims He’s The Best Defender In The World Despite All-Defensive First Team Snub",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVjNfv0eetvkbPk33tMmqlEArgO26VvlygAE5MAj_vedjpbdKPuvh18uk44ss"
-        },
-        {
-          "url": "https://basketnews.com/news-259885-raptors-all-star-calls-out-nba-over-major-award-snub-im-the-best-in-the-world.html",
-          "title": "Raptors All-Star calls out NBA over major award snub: 'I'm the best in the world'",
-          "publisher": "BasketNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP6SRPsoR-bTiiEO8JtpO4hjGcvy_-StXw0Mk2NSo3IQ-7-ziiXCY0PbTf2VM"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/19/scottie-barnes-i-feel-like-im-the-best-defender-in-the-world/92868842007/",
-          "title": "Scottie Barnes: 'I feel like I'm the best defender in the world'",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhMYlpeAaXmyruSCK0_hC_-SGY_SIAB7PqEhDgnx7Dhw3HYu0ZWyVgZXgn4aw"
-        }
-      ]
-    },
-    {
-      "query": "courtney clenney",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T03:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/news/us-news/onlyfans-courtney-clenney-christian-obumseli-death-rcna610149",
-        "https://www.nbcmiami.com/video/nbc-6-news/onlyfans-model-murder-case-to-be-featured-on-nbcs-dateline/3890740/",
-        "https://www.rollingstone.com/culture/culture-news/courtney-clenney-christian-obumseli-dateline-1235661517/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFj7qC-kchV__kqMt1NsYIQ97AnOhWzBfzCCuH-Z06rHywVDnfphR2hnhG2zU",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/news/us-news/onlyfans-courtney-clenney-christian-obumseli-death-rcna610149",
-          "title": "They shared their glamorous life online. Then one was killed — and the other was charged.",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFj7qC-kchV__kqMt1NsYIQ97AnOhWzBfzCCuH-Z06rHywVDnfphR2hnhG2zU"
-        },
-        {
-          "url": "https://www.nbcmiami.com/video/nbc-6-news/onlyfans-model-murder-case-to-be-featured-on-nbcs-dateline/3890740/",
-          "title": "OnlyFans model murder case to be featured on NBC's Dateline",
-          "publisher": "NBC 6 South Florida",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-A45KLSZDsn-KtrMN77RgUYpyV8dYgzoK17EEOKBUmpXaYl0kx_6yKfTOsTE"
-        },
-        {
-          "url": "https://www.rollingstone.com/culture/culture-news/courtney-clenney-christian-obumseli-dateline-1235661517/",
-          "title": "‘A Lot of Fighting’: What Happened Before Courtney Clenney Killed Christian Obumseli?",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW_ecBkfVzn71C9Zn659FzOgG2qJj3Z7zPueatOxeQnTAfXN4-C-9U-wzYPt0"
-        }
-      ]
-    },
-    {
-      "query": "boston blue",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T03:00:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1304937/sheriff-country-fire-country-boston-blue-not-airing-november-december-2026/",
-        "https://sg.news.yahoo.com/fire-country-fans-ll-absolutely-110200892.html",
-        "https://collider.com/fire-country-no-new-episodes-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2B587V1Lb_RBXLUV7nZXaFtiMJzIUzSLs5ZqZtdnLN-8PW5_U3WCZUxxO4vw",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1304937/sheriff-country-fire-country-boston-blue-not-airing-november-december-2026/",
-          "title": "Why ‘Sheriff Country,’ ‘Fire Country’ & ‘Boston Blue’ Aren’t New Tonight",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2B587V1Lb_RBXLUV7nZXaFtiMJzIUzSLs5ZqZtdnLN-8PW5_U3WCZUxxO4vw"
-        },
-        {
-          "url": "https://sg.news.yahoo.com/fire-country-fans-ll-absolutely-110200892.html",
-          "title": "‘Fire Country’ Fans, You’ll Be Absolutely Devastated by This Season 5 Episode News",
-          "publisher": "Yahoo News Singapore",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZjawTT1mWeUWYOmNxR4aGE34Yp1GB__K-8G091n68Z4wh3qEQSEZUILufx9c"
-        },
-        {
-          "url": "https://collider.com/fire-country-no-new-episodes-november-2026/",
-          "title": "'Fire Country’ Officially Pulled From CBS’ Schedule Until Next Month",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmFRcKfcdYVAdNuslwyTf4YcnepPUVIt9KuvKko7xVMx-tx6m_pGgQa68d4bA"
-        }
-      ]
-    },
-    {
-      "query": "danny wolf",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T03:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/nets-start-nolan-wolf-porter-randle-sharpe",
-        "https://www.fantasypros.com/nba/news/619505/danny-wolf-delivers-double-double-wednesdays-win.php",
-        "https://roundtable.io/sports/nba/nets/community/players/jordi-fernandez-praises-danny-wolfs-expanded-role-with-nets"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScbh8QEeKM5wq25eOTzMFbWJ4j-60v8IjMKZKktJb1AruJv-JOIrF8ecWzt7U",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/nets-start-nolan-wolf-porter-randle-sharpe",
-          "title": "Nets start Nolan, Wolf, Porter, Randle, Sharpe",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScbh8QEeKM5wq25eOTzMFbWJ4j-60v8IjMKZKktJb1AruJv-JOIrF8ecWzt7U"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/619505/danny-wolf-delivers-double-double-wednesdays-win.php",
-          "title": "Danny Wolf delivers double-double in Wednesday's win",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6Z57vsNWKRx_dPo1CrbgPKjQgbvucOdnQl-G7ypvY-75lm5IulmSWuAjjJKs"
-        },
-        {
-          "url": "https://roundtable.io/sports/nba/nets/community/players/jordi-fernandez-praises-danny-wolfs-expanded-role-with-nets",
-          "title": "Jordi Fernández Praises Danny Wolf's Expanded Role With Nets",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKdkumH5sg4FVeeASXq4Zct1BipL4SLyMZvE5kf-gMRZmtUebwTxxNkbjkT6M"
-        }
-      ]
-    },
-    {
-      "query": "oklahoma state wrestling",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T03:00:00Z",
-      "related_news_urls": [
-        "https://okstate.com/news/2026/11/19/cowboy-wrestling-prepped-for-first-road-trip-of-season",
-        "https://www.flowrestling.org/articles/16420129-previewing-oklahoma-state-against-stanford-arizona-state",
-        "https://pistolsfiringblog.com/the-top-5-potential-matches-of-oklahoma-states-dual-against-arizona-state/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnwdbgHtDxyjCwb3-gqpyP6GmmV5RZNzUhVnsYKMqqg6AYrUpRyjS4fKXmF4M",
-      "image_credit": "Oklahoma State University Athletics",
-      "news": [
-        {
-          "url": "https://okstate.com/news/2026/11/19/cowboy-wrestling-prepped-for-first-road-trip-of-season",
-          "title": "Cowboy Wrestling prepped for first road trip of season",
-          "publisher": "Oklahoma State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnwdbgHtDxyjCwb3-gqpyP6GmmV5RZNzUhVnsYKMqqg6AYrUpRyjS4fKXmF4M"
-        },
-        {
-          "url": "https://www.flowrestling.org/articles/16420129-previewing-oklahoma-state-against-stanford-arizona-state",
-          "title": "Previewing Oklahoma State's Duals Against Stanford & Arizona State",
-          "publisher": "FloWrestling",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNtYLBQ8lwMWwwcs83Pmsyrvuswf4EpOpBg-kJvo6NXii_7ZA4uchYLS7Yp4w"
-        },
-        {
-          "url": "https://pistolsfiringblog.com/the-top-5-potential-matches-of-oklahoma-states-dual-against-arizona-state/",
-          "title": "The Top 5 Potential Matches of Oklahoma State’s Dual Against Arizona State",
-          "publisher": "Pistols Firing",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSysgOnBKP3dO-QO8m6KThWWgwjQwWxTktxqpDlIK7WNJgxOho5uICistUuNtw"
-        }
-      ]
-    },
-    {
-      "query": "javonte green",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T03:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/pistons-javonte-green-headed-to-bench/",
-        "https://detroitjockcity.com/pistons-bargain-offseason-signing-has-been-secret-weapon-all-season-01m7tbzttj2s"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgT5tGXj8gaP7CNrotnuG46zMSw9Pf_IvE93ONA2G7W-gdtpTC8LTZeLX5RA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5KxqHcBFE_i0Lb9vhHkqHciap72MZaKIy3BJOx72jnspw9tehCKhCDz1YjDM",
       "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/pistons-javonte-green-headed-to-bench/",
-          "title": "Pistons' Javonte Green: Headed to bench",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/kings-zach-lavine-scores-18-points-in-loss-wednesday/",
+          "title": "Kings' Zach LaVine: Scores 18 points in loss Wednesday",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgT5tGXj8gaP7CNrotnuG46zMSw9Pf_IvE93ONA2G7W-gdtpTC8LTZeLX5RA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5KxqHcBFE_i0Lb9vhHkqHciap72MZaKIy3BJOx72jnspw9tehCKhCDz1YjDM"
         },
         {
-          "url": "https://detroitjockcity.com/pistons-bargain-offseason-signing-has-been-secret-weapon-all-season-01m7tbzttj2s",
-          "title": "Pistons' bargain offseason signing has been a secret weapon all season",
-          "publisher": "Detroit Jock City",
+          "url": "https://aroyalpain.com/zach-lavine-says-kings-still-looking-for-identity",
+          "title": "Zach LaVine says the Kings are still looking for an identity",
+          "publisher": "A Royal Pain",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRE1xYaC635biooVBL9B1MhdQAQiwmyOnYHAxYTZ2PCOu-U-LmyFWTtq_aMZK8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9dJakM9lgy0-HY-uyIURX70k3Dkni6ETP8T0F_smwPsaFaGgg2g-azKmjNI0"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/zach-lavine-scores-18-points-in-return-wednesday",
+          "title": "Zach LaVine scores 18 points in return Wednesday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1KqSxFPwMSfQTFPOuMrqegEcXci34k3-FXNrzZ8ivpmgI9yfrPyL8wIqq1BM"
         }
       ]
     },
     {
-      "query": "nc state basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T02:50:00Z",
+      "query": "keegan murray",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T03:30:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/north-carolina-state/article/nc-state-seton-hall-baha-mar-championship-game-thread-paul-mcneil-293027225/",
-        "https://sports.yahoo.com/articles/game-thread-seton-hall-vs-021823012.html",
-        "https://www.sportsgambler.com/betting-tips/basketball/seton-hall-pirates-vs-nc-state-wolfpack-prediction-odds-2026-11-20/"
+        "https://www.espn.com/video/clip/_/id/50527422/keegan-murray-throws-big-flush-vs-phoenix-suns",
+        "https://sports.yahoo.com/articles/kings-murray-140-million-contract-024204361.html",
+        "https://www.rotowire.com/basketball/headlines/keegan-murray-news-steady-minutes-but-limited-scoring-impact-539993"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFvZHX4WBjajVU6BqwLGS0o73SH5rcrrq4T_xteu-W0nHHscPQUd3Mv9kWztE",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaAUHFvFDzfQ_jzjcnHUIdGjOWt0-odB9EKNkWrpB45et6jf1-DHRjHgm8UBw",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://247sports.com/college/north-carolina-state/article/nc-state-seton-hall-baha-mar-championship-game-thread-paul-mcneil-293027225/",
-          "title": "NC State vs. Seton Hall in 2026 Baha Mar Championship game thread",
-          "publisher": "247Sports",
+          "url": "https://www.espn.com/video/clip/_/id/50527422/keegan-murray-throws-big-flush-vs-phoenix-suns",
+          "title": "Keegan Murray throws down big flush vs. Phoenix Suns",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFvZHX4WBjajVU6BqwLGS0o73SH5rcrrq4T_xteu-W0nHHscPQUd3Mv9kWztE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaAUHFvFDzfQ_jzjcnHUIdGjOWt0-odB9EKNkWrpB45et6jf1-DHRjHgm8UBw"
         },
         {
-          "url": "https://sports.yahoo.com/articles/game-thread-seton-hall-vs-021823012.html",
-          "title": "Game thread: Seton Hall vs. NC State",
+          "url": "https://sports.yahoo.com/articles/kings-murray-140-million-contract-024204361.html",
+          "title": "Is Kings’ Murray’s $140 Million Contract One of NBA’s Worst?",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl2dxU_zsKJKoXj7stJCHeRbOMhtJk-2_u3huREQ5cqH36heZSln4BGS_oF-U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQowsVf-4mCWE9PIT3jz069BnHdYt9UQv1Kck0xh_841XG25CXabfLUEMZtEjM"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/seton-hall-pirates-vs-nc-state-wolfpack-prediction-odds-2026-11-20/",
-          "title": "Seton Hall vs NC State Prediction, Picks & Odds | 20 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.rotowire.com/basketball/headlines/keegan-murray-news-steady-minutes-but-limited-scoring-impact-539993",
+          "title": "Keegan Murray News: Steady minutes but limited scoring impact",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMaB5z2esIyaqMEZiWyNNPV9sCd5JEt5zjvCLzpm4NhL1yFo6G4uvm5thwJcE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFr1vRDvGooBunVI2BckBw1txf0wRtLYh-Wz2tVMMCKPvTljAI4oenOvof3bk"
+        }
+      ]
+    },
+    {
+      "query": "sierra canyon football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T03:30:00Z",
+      "related_news_urls": [
+        "https://www.maxpreps.com/news/LfRS-JIYqk-7v4mPc4bXGA/high-school-football-top-10-games-this-week-on-the-nfhs-network.htm",
+        "https://www.latimes.com/sports/highschool/story/2026-11-18/jaden-walk-green-return-makes-centennial-different-team-for-semifinals",
+        "https://sports.yahoo.com/articles/live-coverage-high-school-football-020214651.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsoyszvANIHrvza__UVMxr35GP1kApOD8Xof4P0zl3c-zfSQ4OQ_TuowCN4OA",
+      "image_credit": "MaxPreps",
+      "news": [
+        {
+          "url": "https://www.maxpreps.com/news/LfRS-JIYqk-7v4mPc4bXGA/high-school-football-top-10-games-this-week-on-the-nfhs-network.htm",
+          "title": "High school football: Top 10 games this week on the NFHS Network",
+          "publisher": "MaxPreps",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsoyszvANIHrvza__UVMxr35GP1kApOD8Xof4P0zl3c-zfSQ4OQ_TuowCN4OA"
+        },
+        {
+          "url": "https://www.latimes.com/sports/highschool/story/2026-11-18/jaden-walk-green-return-makes-centennial-different-team-for-semifinals",
+          "title": "Commentary: The return of Jaden Walk-Green makes Corona Centennial a different team for semifinals",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRncwLlpeQdYl6aDZtycjKZdVbIwtcuUbWB4SSjT35kR-MA0hd0YWyqrB85JwM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/live-coverage-high-school-football-020214651.html",
+          "title": "LIVE coverage of the high school football semifinals",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC9aAdcXp2Uq0dUt56Y6MtwU8N1QJnJ-1833y0uuan8xp91ABygjztjRY1wvk"
+        }
+      ]
+    },
+    {
+      "query": "uil football playoffs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T03:30:00Z",
+      "related_news_urls": [
+        "https://www.ksat.com/sports/big-game-coverage/2026/11/19/bgc-scores-and-schedule-week-2-playoffs-2026/",
+        "https://www.kens5.com/article/sports/high-school/hs-football/kens5-high-school-football-playoff-roundup-round-2-november-19-21-2026/273-604ba929-8702-4301-a27b-74ac38315ca5",
+        "https://www.davecampbells.com/articles/2026/11/19/txhsfb-computer-projections-for-all-193-area-round-games"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0A3BJQhxu6maZCBQGloB3wUFQNEPTn_GJrl_nkPY0nT34kzQdYOJMlxwBNH0",
+      "image_credit": "KSAT",
+      "news": [
+        {
+          "url": "https://www.ksat.com/sports/big-game-coverage/2026/11/19/bgc-scores-and-schedule-week-2-playoffs-2026/",
+          "title": "BGC Scores and Schedule: Week 2 Playoffs, 2026",
+          "publisher": "KSAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0A3BJQhxu6maZCBQGloB3wUFQNEPTn_GJrl_nkPY0nT34kzQdYOJMlxwBNH0"
+        },
+        {
+          "url": "https://www.kens5.com/article/sports/high-school/hs-football/kens5-high-school-football-playoff-roundup-round-2-november-19-21-2026/273-604ba929-8702-4301-a27b-74ac38315ca5",
+          "title": "KENS 5 High School Football Playoff Roundup - Round 2 | November 19-21, 2026",
+          "publisher": "kens5.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhVJyDXHDKtYHqfFs0R-8tl6VVHlUn7h20K6NK5-htx0xUi4qTvnd6NXWQonQ"
+        },
+        {
+          "url": "https://www.davecampbells.com/articles/2026/11/19/txhsfb-computer-projections-for-all-193-area-round-games",
+          "title": "TXHSFB Computer Projections for All 193 Area Round Games",
+          "publisher": "Dave Campbell's",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR4k-tnGw7oxTQnLrqgXha5HedUb5lpERiq_Phj7bAZ1mOOS-n0ZegRRR3voo"
+        }
+      ]
+    },
+    {
+      "query": "sam elliott",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T03:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/entertainment/landman-star-ali-larter-sizzles-low-cut-mini-dress-behind-the-scenes-season-three-photos",
+        "https://www.imdb.com/news/ni66116430/?ref_=ttnw_art_perm",
+        "https://www.yahoo.com/entertainment/tv/articles/landman-season-3-set-photos-205332961.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1XXyNAe0HJsyhkvCOnW5nqpWOnYeKzJ7PYgeQxan-jx9d8zEoloSmITa6pi4",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/entertainment/landman-star-ali-larter-sizzles-low-cut-mini-dress-behind-the-scenes-season-three-photos",
+          "title": "‘Landman’ star Ali Larter sizzles in low-cut mini dress in behind-the-scenes Season 3 photos",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1XXyNAe0HJsyhkvCOnW5nqpWOnYeKzJ7PYgeQxan-jx9d8zEoloSmITa6pi4"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66116430/?ref_=ttnw_art_perm",
+          "title": "‘Landman’ Season 3 Officially Enters ‘Yellowstone’ Territory",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSdPWue09pvUqcNXGJxQBGakXNCqBGD6w9wWTXnUF0KoryDnWv-IlnEGz3YfI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/landman-season-3-set-photos-205332961.html",
+          "title": "Landman Season 3 Set Photos Reveal A Major Ainsley Norris Spoiler",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjspWsi46xr642ujj6VhtaDIGa1tm5GNi8Ro-uOQaoaUEuIrwNA04mBqTWJA"
+        }
+      ]
+    },
+    {
+      "query": "al qaeda",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T03:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/20/politics/security-officials-warn-us-aviation-al-qaeda",
+        "https://avi-go.com/news/articles/79d2887431bfaefe43bd29235e352523",
+        "https://www.dailymail.com/news/article-16310707/US-security-al-Qaeda-hijacking-threats.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzVvLgnXjs9eZ2O67u-roDT5bYq1y_fppr82AFwzUTtE-PJbUqFt_LvbOpaZE",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/20/politics/security-officials-warn-us-aviation-al-qaeda",
+          "title": "Security officials warn the US aviation industry of recent calls for attack by Al Qaeda",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzVvLgnXjs9eZ2O67u-roDT5bYq1y_fppr82AFwzUTtE-PJbUqFt_LvbOpaZE"
+        },
+        {
+          "url": "https://avi-go.com/news/articles/79d2887431bfaefe43bd29235e352523",
+          "title": "FBI, DHS and TSA Warn US Aviation Industry of Al Qaeda Calls for Attacks Modeled on Flydubai Hijacking Attempt",
+          "publisher": "Avi-Go",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST-u6HsqrjSZVTCrRBTk7_zcdye2aOB0t4tQaJrIiW1C4NpxV4-GDR5KN1mjY"
+        },
+        {
+          "url": "https://www.dailymail.com/news/article-16310707/US-security-al-Qaeda-hijacking-threats.html",
+          "title": "US security officials sound alarm over chilling al-Qaeda-linked airline hijacking plots",
+          "publisher": "Daily Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm6_YcWjox1rP1E724lK81Cl1hlmGeWUFIaTrR7o-3JL-eh8LW4pkQ7YvSmFA"
+        }
+      ]
+    },
+    {
+      "query": "5th circuit proxy voting ruling",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T03:20:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/legal/government/us-house-unconstitutionally-passed-spending-bill-2022-court-rules-2026-11-21/",
+        "https://news.bloomberglaw.com/us-law-week/congress-proxy-voting-found-unconstitutional-by-fifth-circuit",
+        "https://reason.com/volokh/2026/11/20/en-banc-fifth-circuit-declares-house-covid-proxy-voting-rule-unconstitutional/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoeQEfUAX-F5Qq2YiiIdyInMr6TmNqpDBo66Yz8WxA4HzI4YdaTX6gZ1DdJAs",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/legal/government/us-house-unconstitutionally-passed-spending-bill-2022-court-rules-2026-11-21/",
+          "title": "US House unconstitutionally passed spending bill in 2022, court rules",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoeQEfUAX-F5Qq2YiiIdyInMr6TmNqpDBo66Yz8WxA4HzI4YdaTX6gZ1DdJAs"
+        },
+        {
+          "url": "https://news.bloomberglaw.com/us-law-week/congress-proxy-voting-found-unconstitutional-by-fifth-circuit",
+          "title": "Congress Proxy-Voting Found Unconstitutional by Fifth Circuit",
+          "publisher": "Bloomberg Law News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTinYTqNcRJi0j_2kPNJvymW3izRkQNZsj3HvZoBGHOHEgAQTS5fGPOsM9ypNc"
+        },
+        {
+          "url": "https://reason.com/volokh/2026/11/20/en-banc-fifth-circuit-declares-house-covid-proxy-voting-rule-unconstitutional/",
+          "title": "En Banc Fifth Circuit Declares House COVID Proxy Voting Rule Unconstitutional",
+          "publisher": "Reason Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5CHQ8QCBl2tbkNFWhNWuqvd8ev6AvAmRWAf5iWK0MTx4EdLZ0y-E5lZjz6sA"
+        }
+      ]
+    },
+    {
+      "query": "jaylin williams",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T03:20:00Z",
+      "related_news_urls": [
+        "https://www.fantasypros.com/nfl/news/621377/puka-nacua-mcl-could-miss-remainder-season.php",
+        "https://sports.yahoo.com/articles/vikings-sign-former-green-bay-000140617.html",
+        "https://www.cbssports.com/fantasy/football/news/damon-bankston-staying-in-nfc-north-with-minnesota/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTc_yimxQXpFM3UE5k7H6OOemghRhhRi3pFGS-KiFrfapxioTwrVSvkKxRTytg",
+      "image_credit": "FantasyPros",
+      "news": [
+        {
+          "url": "https://www.fantasypros.com/nfl/news/621377/puka-nacua-mcl-could-miss-remainder-season.php",
+          "title": "Puka Nacua (MCL) could miss remainder of season",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTc_yimxQXpFM3UE5k7H6OOemghRhhRi3pFGS-KiFrfapxioTwrVSvkKxRTytg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/vikings-sign-former-green-bay-000140617.html",
+          "title": "Vikings sign former Green Bay Packer",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKCnrTcU18Kt2XrRN6UB363AWx-nP22c8Id9pLBx6sGX5fJL2jF1V9g8ZW41Q"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/damon-bankston-staying-in-nfc-north-with-minnesota/",
+          "title": "Damon Bankston: Staying in NFC North with Minnesota",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw8Bxcs78XEKWBqsrpUPHzqX7maM5BhBDjW_ovucbaKWTdjAanaRVm7xqeiOg"
+        }
+      ]
+    },
+    {
+      "query": "josh giddey",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T03:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/25-under-25-victor-wembanyama-155804477.html",
+        "https://fansided.com/nba/vdylan-harper-nba-player-rankings-spurs-2027",
+        "https://sports.yahoo.com/articles/25-under-25-fansideds-ranking-163222654.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3ZIR11pby_4UO-VXbcJuulmEnjRBEcb0HQDjgkCkCsN_QL3kPpEKuA4wST-s",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/25-under-25-victor-wembanyama-155804477.html",
+          "title": "25-under-25: Victor Wembanyama is here to stretch your imagination",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3ZIR11pby_4UO-VXbcJuulmEnjRBEcb0HQDjgkCkCsN_QL3kPpEKuA4wST-s"
+        },
+        {
+          "url": "https://fansided.com/nba/vdylan-harper-nba-player-rankings-spurs-2027",
+          "title": "25-under-25: Dylan Harper has all the makings of a superstar guard",
+          "publisher": "FanSided",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvZswxN0KkspAbc27sWlwIvSoHhzyTpKVdyg820eXnOxQ0w2k6C_pPAXhzeiU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/25-under-25-fansideds-ranking-163222654.html",
+          "title": "25-under-25: FanSided's ranking of the best young players in the NBA",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkAlbC1SF7tetnZP33dcZs0fMAGxeEhus76I_7z56tJdAWmrcDF-cuqZ-Y3X0"
         }
       ]
     }
