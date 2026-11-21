@@ -1,11 +1,11 @@
 ---
 issue: 1923
 project: "Infinity OS Cart 003/004 · Nuance Discovery"
-state: source_staged
+state: source_tested
 dot: "🟡"
-progress_percent: 44
-progress_basis: "44% estimate applies only to initial Nuance source-card phase; overall five-thread Avatar AI pilot and production acceptance remain incomplete. Public prompt and owner-scoped audit source integrated pending CI, independent review and live checks."
-sessions_spent: 4
+progress_percent: unknown
+progress_basis: "Earlier Avatar/Nuance cards merged in PR #1924. Visual builder source and 51 focused Node checks pass in this session. Browser CI, review, merge and live acceptance of the addition remain pending; overall agent-product completion is unknown."
+sessions_spent: 5
 sessions_remaining_estimate: unknown
 agent: GPT
 lease_id: null
@@ -13,12 +13,12 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feat/infinity-os-nuance-discovery-1923
+branch: feat/avatar-visual-builder-1923
 merged: false
 deployed: false
 live_verified: false
-blocker: "Full original transcript not yet authorized/imported; combined exact-head CI, independent review, production and Android checks pending."
-next_action: "Read the full exact-head browser CI after pinning supported runners, then obtain independent GitHub review before guarded merge and live Android/Cloudflare checks."
+blocker: "Visual builder browser CI, independent review and production readback pending. Full live job imagery and original transcript import remain separate incomplete acceptance tracks."
+next_action: "Inspect the visual builder browser CI and independent review, repair findings, then merge with expected head and verify the Bubbles page and assets."
 ---
 # Ticket 1923 · Infinity OS Cart 003/004 → Nuance Discovery
 
@@ -77,3 +77,35 @@ Check the PR's exact-head CI, especially `test/avatar-ai-card.test.mjs`, `test/s
 - **Firmware source:** original ESP32 DevKit/WROOM pushbutton BLE notification demonstration on GPIO27 and corresponding UUIDs. Only public, non-sensitive button events; no EEG, mental-state inference, cellular network access or device microphone.
 - **Source tests:** local RED missing-module run; after implementing protocol/parser and UI hook, focused Node v22 tests 6/6 passed locally, syntax checks passed. Hardware flash, firmware compile, real Android Chrome BLE pairing, encrypted pairing, Android APK native bridging and Cloudflare production remain unverified.
 - **Gate:** exact-head GitHub CI and independent review of this PR, 320/360/393px Android Chrome pairing with user-controlled disconnect, actual ESP32 bench receipt, then governed merge and deployed readback. Do not claim a tested physical device or an autonomous Avatar project builder. No active executor lease claimed in chat.
+
+## Visual builder on the Bubbles page · November 20, 2026 UTC
+
+- Owner accepted the in-conversation Autonomy preview and requested the same builder on the actual Bubbles page. Continue canonical #1923. Earlier public card/Nuance PR #1924 is confirmed merged as 250c28a4fc68bab3aa8bbc5ce4eae880a34842a3, so this is the next bounded addition.
+- Source base acfd3c9aac055a9fd8c960851885e1da324e37f0, isolated branch feat/avatar-visual-builder-1923. Existing ticket has null lease/fence; this connected GitHub source session claims no signed executor lease.
+- Added /bubbles.html#avatarBuilder, scoped style, deterministic replay core and controller. Starts with a white canvas, shows eight task markers, a separate search preview, four discoverable layout alternatives, pause/reverse/seek/speed/latest controls, and layout choices saved in browser-local storage. History retains its original layouts after a new choice.
+- The visible Demo replay label identifies sample activity. Layout selection edits this local preview. Live runner frames, concurrent source writers and autonomous production editing require actual executor integration and receipts.
+- Improve with Bubbles prepares a bounded request in the existing QuantaBubbles work editor. The existing Start work action owns submission. The adapter rejects embedded callers, oversized requests and replacement of an unsent work draft. No new scheduler, provider subscription, credential or wallet operation was added.
+- Regression-first local run failed because the new core module did not exist. After implementation, 51 focused Node checks passed, including eight builder regressions plus existing APK draft-safety, fresh-chat, embed and ledger contracts. Source syntax and whitespace checks passed.
+- Browser CI covers the real Bubbles page at 320/360/393/1024 pixels, sample replay, persistent choices, historical frames, storage failure, actual work editor handoff and hidden orb embedding. Browser execution is pending on GitHub's supported Ubuntu runner. Local browser launch is restricted by this executor's Unix socket permissions.
+- Independent Pink review is in progress. Merge, deployment, live response and physical Android verification are pending for this addition. The broader Avatar AI job stream, five-thread reconstruction and hardware acceptance remain on the same canonical issue.
+- Next action is to inspect browser CI on the pushed head, fix actionable review findings, merge when policy permits and read back the live Bubbles page and builder assets.
+
+### Browser-driven integration corrections
+
+- PR #1991, first corrected source head af2b030a40eeaf7fd60396c352049927e277f6fd. Browser run https://github.com/www-infinity4/QuantaPhi/actions/runs/44660280392 passed the four viewport groups, unavailable-storage group and orb embedding group. It exposed a real work-editor visibility defect: the existing Notes/tools viewer now owns the editor, so opening the older details element alone leaves it hidden.
+- The existing prepareWorkDraft adapter now opens the existing Notes/tools viewer before focusing the request. Its regression checks the viewer opening. The browser test closes that viewer before testing unsent-draft preservation.
+- Actual CI screenshots showed the floating orb over the latest-frame control. While this builder is onscreen, its observer now suppresses that launcher. Chat and the existing tools viewer remain available through their normal actions. The new browser test checks that the playback button receives the actual pointer hit.
+- Script cache revisions and five existing revision assertions now match across all four Bubbles entry points. The initial cache-parity failures were repaired on the same PR. All 142 expanded Node/gateway checks pass locally after the corrections.
+- Independent source review on prior tree eb6b0729c52a01773bf9b93f3599a96f437b7fac found no remaining source issues. Final review and CI must cover these browser-driven corrections before merge. Live runner imagery and physical Android remain unverified.
+
+
+## November 20, 2026 · structured real activity lane and failing browser repair
+
+- Owner requested immediate Avatar AI agent-loop implementation and the previously shown Autonomy viewer, with a 54-second mobile recording of the desired white-canvas playback. Continue canonical #1923, branch `feat/avatar-visual-builder-1923`, PR #1991. No new issue, owner grant or signed executor lease was created.
+- Existing real backend is the owner-authenticated Bubbles/Infinity Brain D1 ticket and leased repository runner; this patch **does not invent another model, webhook recursion, persistent private thought store or executor**. Internal model reasoning is not stored/displayed; only bounded state and public decision summaries may be shown.
+- TDD additions on the existing branch: RED test commit `a6cff7a0b24d446da58af6564f696593a2525bd8` exercised missing real-ticket projection; `avatar-ai-agent-loop-core.mjs` now filters and caps owner-ticket statuses and runner phases, deduplicates polls, enforces ticket/repository boundaries and accepts only allowlisted GitHub receipt URLs. Real work data comes from the existing `bubbles:iteration` owner-ticket polling, not the animated demo.
+- Bubbles visual builder now contains a separately labeled **Real Bubbles jobs** panel with text-only status/links and resets on owner loss, owner re-pair and conversation change. No previous owner's activity survives in the view after these events. A milestone summary field is a display string, not an audio or external tool call.
+- Repair for CI run https://github.com/www-infinity4/QuantaPhi/actions/runs/44660750583: its browser test incorrectly queried a textbox by accessible role after the Notes viewer was intentionally closed, making the control inaccessible. The regression now inspects the retained textarea DOM value without reopening that viewer or changing the product logic.
+- Added browser regression for received ticket stages, allowed GitHub links, exclusion of model `thought` fields, and owner loss. Existing demo view continues replay/rewind choices and labels its eight workers as simulated activity.
+- Source changes and tests are committed on PR #1991. **Current exact-head CI, guarded merge, Cloudflare release, signed live two-job receipt and physical Android acceptance are not yet verified**. This implementation connects the UI to existing owner-ticket notifications; it does not prove that an autonomous job actually ran in this session.
+- Next single executable action: inspect the latest exact-head Avatar AI visual builder GitHub Actions test; repair only actual red checks, then perform permitted guarded merge and independent release/browser/Android readback with separate receipts.
