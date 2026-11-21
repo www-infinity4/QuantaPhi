@@ -213,3 +213,29 @@ test('girls make a treat original video is linked once as an Oracle Public/Media
   assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
   assert.equal(departmentFor(card),'media');
 });
+
+
+test('owner YouTube Short o5ErK3nEpKU creates one Public Media Quick Card without unsupported creator claims',()=>{
+  const id='o5ErK3nEpKU';
+  const matches=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+  assert.equal(matches.length,1,'Keep the owner-submitted Short once');
+  const video=matches[0];
+  assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+  assert.equal(video.observedAt,'2026-11-21');
+  assert.match(video.title,/title unverified/i);
+  assert.equal(video.titleVerified,false);
+  assert.equal(video.publisherVerified,false);
+  assert.equal(video.publishedAt,null);
+  assert.equal(video.contentBoundary,'general-media');
+  assert.ok(validateOwnerYouTubeLink(video));
+  assert.equal(validateOwnerYouTubeLink({...video,sourceUrl:'https://youtube.com.evil.test/watch?v='+id}),false);
+  const card=REVIEWED_OWNER_VIDEO_CARDS.find(c=>c.reviewedYouTubeVideoId===id);
+  assert.ok(card,'Use the existing Oracle source-card factory');
+  assert.equal(card.featureUrl,video.sourceUrl);
+  assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+  assert.match(card.details,/not independently verified/i);
+  assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+  assert.equal(findSourceCard(card.id)?.id,card.id);
+  assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+  assert.equal(departmentFor(card),'media');
+});
