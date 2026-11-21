@@ -803,7 +803,11 @@ public final class MainActivity extends Activity {
             picker.setType("*/*");
             picker.putExtra(Intent.EXTRA_MIME_TYPES,
                     new String[]{"application/json", "text/plain", "application/octet-stream"});
-        } else picker.setType("image/*");
+        } else {
+            picker.setType("*/*");
+            picker.putExtra(Intent.EXTRA_MIME_TYPES, new String[]{"image/*", "video/*"});
+            picker.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+        }
         picker.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         try { startActivityForResult(picker, IMAGE_REQUEST); }
         catch (RuntimeException error) {
@@ -948,7 +952,15 @@ public final class MainActivity extends Activity {
             return;
         }
         if (requestCode == IMAGE_REQUEST) {
-            BubblesService.completeImagePicker(resultCode == RESULT_OK && data != null ? data.getData() : null);
+            android.net.Uri[] selected = null;
+            if (resultCode == RESULT_OK && data != null) {
+                android.content.ClipData clips = data.getClipData();
+                if (clips != null) {
+                    selected = new android.net.Uri[clips.getItemCount()];
+                    for (int i = 0; i < selected.length; i++) selected[i] = clips.getItemAt(i).getUri();
+                } else if (data.getData() != null) selected = new android.net.Uri[]{data.getData()};
+            }
+            BubblesService.completeImagePicker(selected);
             moveTaskToBack(true);
             return;
         }

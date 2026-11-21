@@ -6,6 +6,15 @@ const ui=readFileSync('bubbles-ai.js','utf8');
 const native=readFileSync('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/FloatingOracleWindow.java','utf8');
 const THREAD_KEY='quantaphi:bubbles:threads:v2';
 const SHARED='bubbles_shared_main_v1';
+
+// Reuse production attachment cleanup when exercising extracted History functions.
+const mediaCleanup=ui.slice(ui.indexOf('function clearAttachments(){'),ui.indexOf('function updateMediaPreview(){'));
+function runMediaContext(source,state){
+ state.pendingVideos??=[];
+ state.photoThumb??={removeAttribute:()=>{}};
+ return vm.runInNewContext(mediaCleanup+source,state);
+}
+
 function startup({local=new Map(),session=new Map(),embedded=false,navigation='navigate'}={}){
  const ctx={
   bubbleId:'',embedded,HISTORY:'old-history',keepChat:true,
@@ -24,7 +33,7 @@ function startup({local=new Map(),session=new Map(),embedded=false,navigation='n
  const end=ui.indexOf("let greeted=messages.length>0",start);
  assert.ok(start>0&&end>start);
  const helpers=ui.slice(ui.indexOf('function workRefs()'),ui.indexOf('async function pollBrainProgress('));
- const result=vm.runInNewContext(ui.slice(start,end)+'\n'+helpers+
+ const result=runMediaContext(ui.slice(start,end)+'\n'+helpers+
   '\n({activeThread,threadIndex,messages,SHARED_MAIN_THREAD,TAB_THREAD,UPDATE_RELOAD_THREAD})',ctx);
  return {...result,local,session};
 }
@@ -94,7 +103,7 @@ test('automatic reopened chat preserves old turns but does not create empty clou
   chatsPanel:{open:true},status:{textContent:''},nativeOverlay:true,
   cleared:false
  };
- const start=vm.runInNewContext(ui.slice(a,b)+'; startConversation',ctx);
+ const start=runMediaContext(ui.slice(a,b)+'; startConversation',ctx);
  const protectedResult=await start({automatic:true});
  assert.equal(protectedResult,false,'automatic reopen must not erase unsent text/photos');
  assert.deepEqual(saved,[]);
@@ -123,7 +132,7 @@ test('active requests do not reset the chat when a panel is reopened',async()=>{
  const state={busy:true,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   chatsMessage:{textContent:''},messages:['existing'],keepChat:true,
   saveThread:()=>{throw Error('must not save while busy')}};
- const f=vm.runInNewContext(ui.slice(a,b)+';startConversation',state);
+ const f=runMediaContext(ui.slice(a,b)+';startConversation',state);
  assert.equal(await f({automatic:true}),false);
  assert.deepEqual(state.messages,['existing']);
  assert.match(state.chatsMessage.textContent,/must finish/);
@@ -157,7 +166,7 @@ test('history storage failure blocks both automatic and confirmed New chat witho
   conversation:{replaceChildren:()=>{clears++}},
   freshThreadId:()=>{throw Error('must not create a thread when saving fails')}
  };
- const start=vm.runInNewContext(ui.slice(a,b)+';startConversation',ctx);
+ const start=runMediaContext(ui.slice(a,b)+';startConversation',ctx);
  assert.equal(await start({automatic:true}),false);
  assert.equal(saves,1);
  assert.equal(confirms,0);
@@ -187,7 +196,7 @@ test('conversation index storage failure blocks History saves even when the thre
   threadIndex:[{id:'old',title:'New conversation',updated:1}],
   save:(key)=>{writes.push(key);return key!=='threads'}
  };
- const result=vm.runInNewContext(ui.slice(a,b)+';saveThread()',ctx);
+ const result=runMediaContext(ui.slice(a,b)+';saveThread()',ctx);
  assert.equal(result,false,'a saved message blob is not enough without its History index');
  assert.deepEqual(writes,['threads:old','threads']);
 });
@@ -208,7 +217,7 @@ test('new chat preserves the active session when the new History index cannot be
   sessionStorage:{setItem:()=>events.push('session')},
   conversation:{replaceChildren:()=>events.push('cleared')}
  };
- const start=vm.runInNewContext(ui.slice(a,b)+';startConversation',ctx);
+ const start=runMediaContext(ui.slice(a,b)+';startConversation',ctx);
  assert.equal(await start({automatic:true}),false);
  assert.deepEqual(events,['save:threads'],'failed index must not change session or clear chat');
  assert.equal(ctx.activeThread,'old');
@@ -234,7 +243,7 @@ test('native recovery reports index persistence failures without mutating Histor
    save:key=>{writes.push(key);return !(indexFails&&key==='threads')},
    renderConversationFolders:()=>writes.push('render')
   };
-  const restore=vm.runInNewContext('({'+ui.slice(begin,end)+'}).restoreNativeHistory',ctx);
+  const restore=runMediaContext('({'+ui.slice(begin,end)+'}).restoreNativeHistory',ctx);
   const result=restore(backup);
   return {result,writes,index:ctx.threadIndex,initial};
  };
@@ -265,7 +274,7 @@ test('History refresh discards stale cloud folder list after the verified owner 
   },
   save:()=>events.push('save'),renderConversationFolders:()=>events.push('render'),THREAD_INDEX:'threads'
  };
- const refresh=vm.runInNewContext(ui.slice(begin,end)+';refreshConversationFolders',ctx);
+ const refresh=runMediaContext(ui.slice(begin,end)+';refreshConversationFolders',ctx);
  await refresh();
  assert.deepEqual(ctx.threadIndex.map(x=>x.id),['chat_current']);
  assert.deepEqual(events,['clear'],'stale owner response must not be saved or rendered');
@@ -276,7 +285,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  const begin=ui.indexOf('async function openConversation(id){');
  const end=ui.indexOf('function startConversation(',begin);
  assert.ok(begin>0&&end>begin,'actual History switch handler exists');
- async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false,cloudEmpty=false,cloudMessages=false,cloudSessionId='chat_target',ownerSwitchDuringCloud=false,ownerSwitchInPlace=false}={}){
+ async function run({draft='',photo=false,videos=0,lateVideo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false,cloudEmpty=false,cloudMessages=false,cloudSessionId='chat_target',ownerSwitchDuringCloud=false,ownerSwitchInPlace=false,localSavedText='Saved earlier turn',remoteSavedText=null,remoteSavedRole='assistant'}={}){
   let confirmations=0,saves=0,clears=0;
   const original={id:'old_message',role:'user',text:'Important current chat',at:100};
   const ctx={
@@ -285,17 +294,18 @@ test('History switching never discards unsent photos, typed work or an unsaved c
    threadIndex:[{id:'chat_old',title:'Current chat',updated:100},{id:'chat_target',title:'Earlier chat',updated:10}],
    keepChat:!historyOff,messages:[original],activeThread:'chat_old',
    input:{value:draft,focus:()=>{}},pendingImage:photo?{id:'photo'}:null,
-   pendingImages:photo?[{id:'photo'}]:[],photoInput:{value:'selected'},photoPreview:{hidden:false},
+   pendingImages:photo?[{id:'photo'}]:[],pendingVideos:Array.from({length:videos},()=>({name:'unsent.webm'})),photoInput:{value:'selected'},photoPreview:{hidden:false},
    saveThread:()=>{saves++;return saveOk},
-   readThread:()=>[{id:'saved_123',role:'assistant',text:'Saved earlier turn',at:10}],
-   ownerReady:lateDraft!==null||latePhoto||cloudEmpty||cloudMessages||ownerSwitchDuringCloud||ownerSwitchInPlace,
-   ownerHeaders:(lateDraft!==null||latePhoto||cloudEmpty||cloudMessages||ownerSwitchDuringCloud||ownerSwitchInPlace)?{Authorization:'Bearer old-verified-owner'}:null,
+   readThread:()=>[{id:'saved_123',role:'assistant',text:localSavedText,at:10}],
+   ownerReady:remoteSavedText!==null||lateDraft!==null||latePhoto||lateVideo||cloudEmpty||cloudMessages||ownerSwitchDuringCloud||ownerSwitchInPlace,
+   ownerHeaders:(remoteSavedText!==null||lateDraft!==null||latePhoto||lateVideo||cloudEmpty||cloudMessages||ownerSwitchDuringCloud||ownerSwitchInPlace)?{Authorization:'Bearer old-verified-owner'}:null,
    conversationApi:async()=>{
     if(ownerSwitchDuringCloud)ctx.ownerHeaders={Authorization:'Bearer different-verified-owner'};
     if(ownerSwitchInPlace)ctx.ownerHeaders.Authorization='Bearer rotated-to-different-owner';
     if(lateDraft!==null)ctx.input.value=lateDraft;
     if(latePhoto)ctx.pendingImages.push({id:'new-photo'});
-    return {session:{id:cloudSessionId,title:ownerSwitchDuringCloud?'Stale other-wallet title':undefined},messages:cloudMessages?[{id:'cloud_123',role:'assistant',text:'Verified cloud turn',at:20}]:[]};
+    if(lateVideo)ctx.pendingVideos.push({name:'late.webm'});
+    return {session:{id:cloudSessionId,title:ownerSwitchDuringCloud?'Stale other-wallet title':undefined},messages:remoteSavedText!==null?[{id:'saved_123',role:remoteSavedRole,text:remoteSavedText,at:20}]:cloudMessages?[{id:'cloud_123',role:'assistant',text:'Verified cloud turn',at:20}]:[]};
    },
    confirm:()=>{confirmations++;return approve},
    sessionStorage:{setItem:()=>{}},TAB_THREAD:'tab',EXPLICIT_THREAD:'explicit',
@@ -305,8 +315,8 @@ test('History switching never discards unsent photos, typed work or an unsaved c
    renderConversationFolders:()=>{},chatsPanel:{open:true},
    crypto:{randomUUID:()=> 'uuid'},greeted:true
   };
-  const source=vm.runInNewContext(ui.slice(begin,end)+
-   ';({openConversation,getState:()=>({activeThread,pendingImage,pendingImages,messages,input,threadIndex})})',ctx);
+  const source=runMediaContext(ui.slice(begin,end)+
+   ';({openConversation,getState:()=>({activeThread,pendingImage,pendingImages,pendingVideos,messages,input,threadIndex})})',ctx);
   const result=await source.openConversation('chat_target');
   return {result,confirmations,saves,clears,state:source.getState(),notice:ctx.chatsMessage.textContent};
  }
@@ -341,6 +351,14 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  const cloudWithTurns=await run({cloudMessages:true});
  assert.equal(cloudWithTurns.result,true);
  assert.equal(cloudWithTurns.state.messages[0]?.text,'Verified cloud turn','nonempty cloud History remains authoritative');
+ const longLocal='Long original turn: '+('x'.repeat(9000))+' END-OF-LOCAL-TEXT';
+ const prefix=await run({localSavedText:longLocal,remoteSavedText:longLocal.slice(0,6000)});
+ assert.equal(prefix.result,true);
+ assert.equal(prefix.state.messages[0].text,longLocal,'a verified cloud excerpt must not truncate matching full device text');
+ const conflict=await run({localSavedText:longLocal,remoteSavedText:'Different verified cloud content'});
+ assert.equal(conflict.state.messages[0].text,'Different verified cloud content','conflicting cloud content is not overwritten by local guesses');
+ const changedRole=await run({localSavedText:longLocal,remoteSavedText:longLocal.slice(0,6000),remoteSavedRole:'user'});
+ assert.equal(changedRole.state.messages[0].text,longLocal.slice(0,6000),'a role mismatch must not merge local text into a different turn');
  const switchedWallet=await run({ownerSwitchDuringCloud:true,cloudMessages:true});
  assert.equal(switchedWallet.result,false,'a different owner session arriving during History fetch must abort the switch');
  assert.equal(switchedWallet.clears,0,'stale cloud History must not replace the active chat');
@@ -365,6 +383,20 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  assert.equal(latePhoto.result,false);
  assert.equal(latePhoto.clears,0);
  assert.equal(latePhoto.state.pendingImages.length,1);
+ const videoOnly=await run({videos:20});
+ assert.equal(videoOnly.result,false,'video-only drafts require a deliberate discard decision');
+ assert.equal(videoOnly.confirmations,1);
+ assert.equal(videoOnly.clears,0);
+ assert.equal(videoOnly.state.pendingVideos.length,20);
+ assert.equal(videoOnly.state.activeThread,'chat_old');
+ const acceptedVideos=await run({videos:20,approve:true});
+ assert.equal(acceptedVideos.result,true);
+ assert.equal(acceptedVideos.state.pendingVideos.length,0,'confirmed History switch clears the old video batch');
+ const lateVideo=await run({lateVideo:true});
+ assert.equal(lateVideo.result,false,'video selected during the cloud wait must invalidate the earlier switch decision');
+ assert.equal(lateVideo.clears,0);
+ assert.equal(lateVideo.state.pendingVideos.length,1);
+ assert.equal(lateVideo.state.activeThread,'chat_old');
  const historyOff=await run({historyOff:true});
  assert.equal(historyOff.result,false,'History-off turns require explicit consent before switching');
  assert.equal(historyOff.confirmations,1);
@@ -390,7 +422,7 @@ test('History-off turns survive automatic website and Android reopen without uns
   freshThreadId:()=>{throw Error('must not create a new chat')},
   conversation:{replaceChildren:()=>{clears++}}
  };
- const start=vm.runInNewContext(ui.slice(a,b)+';startConversation',state);
+ const start=runMediaContext(ui.slice(a,b)+';startConversation',state);
  assert.equal(await start({automatic:true}),false,'automatic reopen must preserve unsaved History-off turns');
  assert.equal(state.activeThread,'chat_live');
  assert.equal(state.messages[0].text,'History disabled but still active');
@@ -399,7 +431,7 @@ test('History-off turns survive automatic website and Android reopen without uns
  const e=ui.indexOf(' // The native Android foreground service',n);
  assert.ok(n>0&&e>n,'real Android reopen bridge exists');
  let starts=0;
- const native=vm.runInNewContext('({'+ui.slice(n,e)+'}).startFreshOnReopen',{
+ const native=runMediaContext('({'+ui.slice(n,e)+'}).startFreshOnReopen',{
   nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   keepChat:false,messages:state.messages,input:{value:''},noteText:{value:''},workText:{value:''},
   pendingImage:null,pendingImages:[],startConversation:()=>{starts++}
@@ -431,7 +463,7 @@ test('explicit New chat requires confirmation before discarding History-off conv
    renderConversationFolders:()=>{},chatsPanel:{open:true},status:{textContent:''},
    nativeOverlay:true,ownerReady:false
   };
-  const start=vm.runInNewContext(ui.slice(a,b)+';startConversation',ctx);
+  const start=runMediaContext(ui.slice(a,b)+';startConversation',ctx);
   const result=await start({automatic:false});
   return {result,confirms,clears,warning,thread:ctx.activeThread,messages:ctx.messages};
  }
@@ -475,15 +507,15 @@ test('Android RecordB, live mic and speech block History switch, New chat and na
    freshThreadId:()=> 'next',status:{textContent:''},nativeOverlay:true
   };
   state[media]=true;
-  const open=vm.runInNewContext(ui.slice(openStart,freshStart)+';openConversation',state);
+  const open=runMediaContext(ui.slice(openStart,freshStart)+';openConversation',state);
   assert.equal(await open('target'),false,media+' must block History switch');
   assert.equal(state.activeThread,'old');
   assert.equal(cleared,0);
-  const fresh=vm.runInNewContext(ui.slice(freshStart,freshEnd)+';startConversation',state);
+  const fresh=runMediaContext(ui.slice(freshStart,freshEnd)+';startConversation',state);
   assert.equal(await fresh({automatic:false}),false,media+' must block New chat');
   assert.equal(state.activeThread,'old');
   assert.equal(cleared,0);
-  const native=vm.runInNewContext('({'+ui.slice(nativeStart,nativeEnd)+'}).startFreshOnReopen',{
+  const native=runMediaContext('({'+ui.slice(nativeStart,nativeEnd)+'}).startFreshOnReopen',{
    nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
    nativeRecordingActive:media==='nativeRecordingActive',
    voiceStarting:media==='voiceStarting',voiceEnabled:media==='voiceEnabled',speaking:media==='speaking',

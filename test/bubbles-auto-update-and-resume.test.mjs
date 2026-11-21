@@ -15,13 +15,13 @@ test('auto-update checks on app launch, focus, visibility return and interval wi
 });
 test('existing safe update guards preserve drafts, photos, unsaved history and listening',()=>{
  const src=file('bubbles-ai.js');
- assert.match(src,/if\(input\.value\.length\|\|noteText\.value\.length\|\|workText\.value\.length\|\|pendingImage\|\|pendingImages\.length\)return false;/);
+ assert.match(src,/if\(input\.value\.length\|\|noteText\.value\.length\|\|workText\.value\.length\|\|pendingImage\|\|pendingImages\.length\|\|pendingVideos\.length\)return false;/);
  assert.match(src,/if\(!keepChat&&messages\.length\)return false;/);
  assert.match(src,/if\(nativeRecordingActive\|\|voiceStarting\|\|voiceEnabled\|\|speaking\)return false;/);
 });
 test('reloaded first-party apps request the current Bubbles build revision',()=>{
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html'])
-  assert.match(file(path),/\/bubbles-ai\.js\?v=20261108-native-bubbles3/);
+  assert.match(file(path),/\/bubbles-ai\.js\?v=20261121-media16-video20-v1/);
 });
 test('a work receipt can resume only with a verified same-thread ticket',()=>{
  const src=file('bubbles-ai.js');
